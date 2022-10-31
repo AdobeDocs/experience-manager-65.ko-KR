@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1842'
 ht-degree: 2%
@@ -41,9 +41,9 @@ ContextHub는 컨텍스트 데이터를 저장, 조작 및 제공하기 위한 �
 >
 >[AEM 6.4의 저장소 구조 변경으로 인해](/help/sites-deploying/repository-restructuring.md) ContextHub 구성 위치가 `/etc/cloudsettings` 변환:
 >
-> * `/libs/settings/cloudsettings`
-> * `/conf/global/settings/cloudsettings`
-> * `/conf/<tenant>/settings/cloudsettings`
+>* `/libs/settings/cloudsettings`
+>* `/conf/global/settings/cloudsettings`
+>* `/conf/<tenant>/settings/cloudsettings`
 
 
 ## ContextHub UI 표시 및 숨기기 {#showing-and-hiding-the-contexthub-ui}

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 4%
+source-wordcount: '794'
+ht-degree: 3%
 
 ---
 
@@ -82,11 +82,11 @@ ht-degree: 4%
 
    ![스크린샷_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
-   >[메모!]
+   >[!NOTE]
    >
-   > 권한 탭의 CUG는 블루프린트에서 라이브 카피로 롤아웃할 수 없습니다. 라이브 카피를 구성할 때 이를 염두에 두고 계획을 세우십시오.
+   >권한 탭의 CUG는 블루프린트에서 라이브 카피로 롤아웃할 수 없습니다. 라이브 카피를 구성할 때 이를 염두에 두고 계획을 세우십시오.
    >
-   > 자세한 내용은 [이 페이지](closed-user-groups.md#aem-livecopy).
+   >자세한 내용은 [이 페이지](closed-user-groups.md#aem-livecopy).
 
 1. 다음 창에서 CUG를 찾아 추가합니다. 이 경우 라는 그룹을 추가합니다 **cug_access**. 마지막으로 **저장**.
 1. 클릭 **활성화됨** 이 페이지(및 모든 하위 페이지)가 CUG에 속하도록 정의합니다.

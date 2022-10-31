@@ -11,7 +11,7 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 923ee0e20a6e41c9493a77b179f93dd81ff91020
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3683'
 ht-degree: 1%
@@ -39,8 +39,8 @@ JEE 서버의 AEM Forms은 지원되는 운영 체제, 애플리케이션 서버
 
 >[!NOTE]
 >
-> - 지원되는 서버 플랫폼에 대한 전체 예외 목록은 다음을 참조하십시오 [지원되는 서버 플랫폼에 대한 예외](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
-> - AEM Forms on JEE는 지원되는 운영 체제 및 응용 프로그램의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
+>- 지원되는 서버 플랫폼에 대한 전체 예외 목록은 다음을 참조하십시오 [지원되는 서버 플랫폼에 대한 예외](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
+>- AEM Forms on JEE는 지원되는 운영 체제 및 응용 프로그램의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
 
 
 ### 권장 구성 {#recommendedconfigurations}
@@ -77,15 +77,16 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 
 >[!NOTE]
 >
-> AEM Forms 고객이 TCO 절감, 배포 아키텍처 간소화 및 개발 스택 현대화를 수행할 수 있도록 지원하기 위해 Adobe Experience Manager 엔터프라이즈 플랫폼은 독립 실행형 OSGi 기반 배포를 위해 애플리케이션 서버 기반 배포에서 벗어납니다. Adobe은 인프라 구성 요소의 매트릭스 감소된 상태로 AEM Forms JEE 스택을 계속 지원합니다.
+>AEM Forms 고객이 TCO 절감, 배포 아키텍처 간소화 및 개발 스택 현대화를 수행할 수 있도록 지원하기 위해 Adobe Experience Manager 엔터프라이즈 플랫폼은 독립 실행형 OSGi 기반 배포를 위해 애플리케이션 서버 기반 배포에서 벗어납니다. Adobe은 인프라 구성 요소의 매트릭스 감소된 상태로 AEM Forms JEE 스택을 계속 지원합니다.
 >
-> 6.5 릴리스를 통해 고객 중 사용량이 가장 적은 인프라 구성 요소는 다음과 같이 더 이상 지원되지 않습니다.
-> ・ IBM DB2 데이터베이스
-> ・ IBM AIX 및 Sun Solaris 운영 체제
+>6.5 릴리스를 통해 고객 중 사용량이 가장 적은 인프라 구성 요소는 다음과 같이 더 이상 지원되지 않습니다.
 >
-> 새로운 설치의 경우 양식 데이터 모델을 사용하여 모바일, 다중 채널 인터랙티브 통신 및 백엔드 데이터 통합을 위한 응답형 Forms을 활용하는 데 최신 혁신을 위해 최신 OSGi 스택에 AEM Forms을 배포하는 것이 좋습니다.
+>- IBM DB2 데이터베이스
+>- IBM AIX 및 Sun Solaris 운영 체제
 >
-> 기존 사용자가 JEE 스택에 AEM Forms을 계속 배포해야 한다는 것을 알고 있습니다. 이러한 시나리오에서 Adobe은 이 설명서에 설명된 대로 지원되는 인프라에 AEM Forms JEE를 배포해야 합니다. AEM 6.5 Forms으로 업그레이드하고 이전 AEM Forms 릴리스에서 지원되지 않는 플랫폼을 사용하는 경우 Adobe 지원 센터에 문의하여 지원되는 플랫폼으로 업그레이드하는 방법에 대한 도움말을 볼 수 있습니다.
+>새로운 설치의 경우 양식 데이터 모델을 사용하여 모바일, 다중 채널 인터랙티브 통신 및 백엔드 데이터 통합을 위한 응답형 Forms을 활용하는 데 최신 혁신을 위해 최신 OSGi 스택에 AEM Forms을 배포하는 것이 좋습니다.
+>
+>기존 사용자가 JEE 스택에 AEM Forms을 계속 배포해야 한다는 것을 알고 있습니다. 이러한 시나리오에서 Adobe은 이 설명서에 설명된 대로 지원되는 인프라에 AEM Forms JEE를 배포해야 합니다. AEM 6.5 Forms으로 업그레이드하고 이전 AEM Forms 릴리스에서 지원되지 않는 플랫폼을 사용하는 경우 Adobe 지원 센터에 문의하여 지원되는 플랫폼으로 업그레이드하는 방법에 대한 도움말을 볼 수 있습니다.
 
 ### JVM(Java Virtual Machine) {#java-virtual-machines-jvm}
 
@@ -133,8 +134,8 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
 
 >[!NOTE]
 >
-> - 프로덕션 환경의 안전과 보안을 유지하고 최신 Java 업데이트를 설치하려면 Java 공급업체에서 제공하는 보안 게시판을 추적하는 것이 좋습니다.
-> - AEM Forms on JEE는 프로덕션 환경에서 64비트 JVM만 지원합니다.
+>- 프로덕션 환경의 안전과 보안을 유지하고 최신 Java 업데이트를 설치하려면 Java 공급업체에서 제공하는 보안 게시판을 추적하는 것이 좋습니다.
+>- AEM Forms on JEE는 프로덕션 환경에서 64비트 JVM만 지원합니다.
 
 
 ### 데이터베이스 및 CRX 지속성 {#databases-and-crx-persistence}
@@ -281,7 +282,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
 
 >[!NOTE]
 >
-> IBM® WebSphere® 클러스터는 Network Deployment Edition에서만 지원됩니다.
+>IBM® WebSphere® 클러스터는 Network Deployment Edition에서만 지원됩니다.
 
 ### 서버 운영 체제 {#server-operating-systems}
 
@@ -517,18 +518,18 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되�
 
 >[!NOTE]
 >
-> PDF 생성기는 지원되는 운영 체제 및 응용 프로그램의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
+>PDF 생성기는 지원되는 운영 체제 및 응용 프로그램의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
 >
-> 또한
+>또한
 >
-> - PDF 생성기를 사용하려면 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 또는 Acrobat 2017 버전 17.011.30078에서 전환을 수행합니다.
-> - PDF 생성기는 전환에 필요한 32비트 Retail 버전의 Microsoft Office Professional Plus와 기타 소프트웨어만 지원합니다.
-> - PDF 생성기는 Microsoft Office 365를 지원하지 않습니다.
-> - OpenOffice용 PDF 생성기 전환은 Windows 및 Linux에서만 지원됩니다.
-> - OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
-> - Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>- PDF 생성기를 사용하려면 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 또는 Acrobat 2017 버전 17.011.30078에서 전환을 수행합니다.
+>- PDF 생성기는 전환에 필요한 32비트 Retail 버전의 Microsoft Office Professional Plus와 기타 소프트웨어만 지원합니다.
+>- PDF 생성기는 Microsoft Office 365를 지원하지 않습니다.
+>- OpenOffice용 PDF 생성기 전환은 Windows 및 Linux에서만 지원됩니다.
+>- OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
+>- Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
-> - PDF 생성기 서비스는 Microsoft Windows 10을 지원하지 않습니다.
+>- PDF 생성기 서비스는 Microsoft Windows 10을 지원하지 않습니다.
 
 
 ### 액세스 가능성 지원 예외 {#exceptions-to-accessibility-support}
@@ -642,7 +643,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 
 >[!NOTE]
 >
-> Acrobat DC 제품군에서는 기본적으로 다른 제품인 Acrobat과 Reader 모두에 대한 두 가지 트랙을 소개합니다. &quot;Classic&quot; 및 &quot;Continuous.&quot; 자세한 내용 및 두 트랙 비교에 대해서는 [https://www.adobe.com/go/acrobatdctracks](https://www.adobe.com/go/acrobatdctracks)
+>Acrobat DC 제품군에서는 기본적으로 다른 제품인 Acrobat과 Reader 모두에 대한 두 가지 트랙을 소개합니다. &quot;Classic&quot; 및 &quot;Continuous.&quot; 자세한 내용 및 두 트랙 비교에 대해서는 [https://www.adobe.com/go/acrobatdctracks](https://www.adobe.com/go/acrobatdctracks)
 
 ### 브라우저 {#browsers}
 
@@ -695,13 +696,13 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 
 >[!NOTE]
 >
-> 데스크탑에 대한 일부 브라우저 관련 예외는 다음과 같습니다.
+>데스크탑에 대한 일부 브라우저 관련 예외는 다음과 같습니다.
 >
-> - Safari는 Macintosh OS X에서만 지원됩니다.
-> - Workspace는 Acrobat DC 이상 버전의 Macintosh OS X 10.6 및 10.7에서 Safari 5.1을 지원합니다. Safari 5.1 Adobe Reader, Acrobat과의 호환성에 대한 자세한 내용은 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
-> - Safari에서는 관리 콘솔이 지원되지 않습니다.
-> - 서신 관리는 AEM 6.1 Forms용 Windows® Internet Explorer 9.0을 지원하지 않습니다.
-> - Forms 포털은 Internet Explorer 11에서 접근성을 위해 JAWS 14.0 화면 판독기 소프트웨어를 지원합니다.
+>- Safari는 Macintosh OS X에서만 지원됩니다.
+>- Workspace는 Acrobat DC 이상 버전의 Macintosh OS X 10.6 및 10.7에서 Safari 5.1을 지원합니다. Safari 5.1 Adobe Reader, Acrobat과의 호환성에 대한 자세한 내용은 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>- Safari에서는 관리 콘솔이 지원되지 않습니다.
+>- 서신 관리는 AEM 6.1 Forms용 Windows® Internet Explorer 9.0을 지원하지 않습니다.
+>- Forms 포털은 Internet Explorer 11에서 접근성을 위해 JAWS 14.0 화면 판독기 소프트웨어를 지원합니다.
 
 
 #### 모바일 클라이언트 {#mobile-clients}
@@ -733,7 +734,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 
 >[!NOTE]
 >
-> - Forms Portal은 iPad의 Safari에서만 지원됩니다.
+>- Forms Portal은 iPad의 Safari에서만 지원됩니다.
 
 
 ### AEM Forms 앱 {#aem-forms-workspace-app}
@@ -800,7 +801,7 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
 
 >[!NOTE]
 >
-> 플랫폼은 [AEM Forms 6.5.12.0 및 6.5.10.0에서 더 이상 사용되지 않는 항목은 AEM Forms 6.5 서비스 팩 18(6.5.18.0) 릴리스까지 지원 상태로 유지됩니다](https://helpx.adobe.com/support/programs/eol-matrix.html).
+>플랫폼은 [AEM Forms 6.5.12.0 및 6.5.10.0에서 더 이상 사용되지 않는 항목은 AEM Forms 6.5 서비스 팩 18(6.5.18.0) 릴리스까지 지원 상태로 유지됩니다](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## 개정 내역 {#revision-history}
 

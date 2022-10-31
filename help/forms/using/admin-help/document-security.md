@@ -12,7 +12,7 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3286'
 ht-degree: 0%
@@ -276,4 +276,4 @@ Adobe Acrobat® Pro 및 Acrobat Standard을 사용하여 PDF 문서에 정책 �
 
    >[!NOTE]
    >
-   > 를 사용할 수 있습니다 [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) 최대 1000개의 정책 세트 이름을 검색할 API입니다. 내부적으로 API는 API 호출자가 문서 게시자 권한을 가지고 있는 최대 1000개의 정책을 검색한 다음 검색된 정책과 연관된 고유한 정책 세트 이름 목록을 만들고 반환합니다. 예를 들어 API가 1000개의 정책을 검색하고 검색된 정책이 총 200개의 정책 세트와 연결된 경우 API는 200개의 정책 세트 이름만 반환합니다.
+   >를 사용할 수 있습니다 [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) 최대 1000개의 정책 세트 이름을 검색할 API입니다. 내부적으로 API는 API 호출자가 문서 게시자 권한을 가지고 있는 최대 1000개의 정책을 검색한 다음 검색된 정책과 연관된 고유한 정책 세트 이름 목록을 만들고 반환합니다. 예를 들어 API가 1000개의 정책을 검색하고 검색된 정책이 총 200개의 정책 세트와 연결된 경우 API는 200개의 정책 세트 이름만 반환합니다.

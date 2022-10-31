@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 1%
@@ -161,9 +161,8 @@ https://[*호스트*]:[*포트*]/system/console/configMgr.
 
 >[!NOTE]
 >
-> * MySQL용 JDBC 드라이버는 샘플과 함께 제공되지 않습니다. 프로비전되었는지 확인하고 JDBC 접속 풀을 구성하는 데 필요한 정보를 제공합니다.
-> * 동일한 데이터베이스를 사용하도록 작성자 및 게시 인스턴스를 가리킵니다. 모든 작성자 및 게시 인스턴스에 대해 JDBC 연결 URI 필드의 값이 동일해야 합니다.
-   >
+>* MySQL용 JDBC 드라이버는 샘플과 함께 제공되지 않습니다. 프로비전되었는지 확인하고 JDBC 접속 풀을 구성하는 데 필요한 정보를 제공합니다.
+>* 동일한 데이터베이스를 사용하도록 작성자 및 게시 인스턴스를 가리킵니다. 모든 작성자 및 게시 인스턴스에 대해 JDBC 연결 URI 필드의 값이 동일해야 합니다.
 
 
 1. 다른 구성을 그대로 두고 를 클릭합니다. **[!UICONTROL 저장]**.

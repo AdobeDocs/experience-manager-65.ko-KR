@@ -7,7 +7,7 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3802'
 ht-degree: 96%
@@ -365,9 +365,9 @@ AEM은 [Apache Sling 사이트 맵 모듈](https://github.com/apache/sling-org-a
 
 >[!NOTE]
 >
-> Adobe Experience Manager 버전 6.5.11.0 이후 제품 기능으로 사용할 수 있습니다.
+>Adobe Experience Manager 버전 6.5.11.0 이후 제품 기능으로 사용할 수 있습니다.
 > 
-> 이전 버전의 경우 Sling 서블릿을 직접 등록하여 을 수신 대기할 수 있습니다 `sitemap.xml` 서블릿 API를 통해 제공된 리소스를 사용하여 현재 페이지와 해당 하위 페이지를 조회하여 sitemap.xml 파일을 출력합니다.
+>이전 버전의 경우 Sling 서블릿을 직접 등록하여 을 수신 대기할 수 있습니다 `sitemap.xml` 서블릿 API를 통해 제공된 리소스를 사용하여 현재 페이지와 해당 하위 페이지를 조회하여 sitemap.xml 파일을 출력합니다.
 
 Apache Sling 사이트 맵 모듈은 최상위 수준의 사이트 맵과 중첩된 사이트 맵을 구별하며, 두 사이트 맵은 모두 `sling:sitemapRoot` 속성이 `true`로 설정된 모든 리소스에 대해 생성됩니다. 일반적으로 사이트 맵은 선택기를 사용하여 트리의 최상위 수준 사이트 맵(다른 사이트 맵 루트 상위 요소가 없는 리소스)의 경로에 렌더링됩니다. 이 최상위 수준의 사이트 맵 루트는 일반적으로 사이트 소유자가 검색 엔진의 구성 포털에서 구성하거나 사이트의 `robots.txt`에 추가하는 사이트 맵 인덱스를 노출하기도 합니다.
 
@@ -379,7 +379,7 @@ Apache Sling 사이트 맵 모듈은 최상위 수준의 사이트 맵과 중첩
 
 >[!NOTE]
 >
-> 선택기 `sitemap` 및 `sitemap-index`는 맞춤형 구현에 방해가 될 수 있습니다. 제품 기능을 사용하지 않으려면 이들 선택기에 0보다 높은 `service.ranking`을 제공하는 나만의 서블릿을 구성하십시오.
+>선택기 `sitemap` 및 `sitemap-index`는 맞춤형 구현에 방해가 될 수 있습니다. 제품 기능을 사용하지 않으려면 이들 선택기에 0보다 높은 `service.ranking`을 제공하는 나만의 서블릿을 구성하십시오.
 
 기본 구성에서 [페이지 속성] 대화 상자는 페이지를 사이트맵 루트로 표시하여 위에서 설명한 대로 사이트맵과 그 하위 항목을 생성하는 옵션을 표시합니다. 해당 비헤이비어는 `SitemapGenerator` 인터페이스의 구현을 통해 구현되며, 대체 구현 추가를 통해 확장될 수 있습니다. 단, XML 사이트맵 재생성 빈도가 콘텐츠 작성 워크플로 및 워크로드에 따라 크게 변동되기 때문에 제품에는 `SitemapScheduler` 구성이 제공되지 않습니다. 이를 통해 기능을 효과적으로 옵트인할 수 있습니다.
 

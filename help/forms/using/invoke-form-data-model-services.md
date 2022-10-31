@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 feature: Adaptive Forms
 exl-id: cf037174-3153-486f-85b1-c974cd5a1ace
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -129,7 +129,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, c
 
 >[!NOTE]
 >
-> 를 사용하는 경우 `success` 콜백 함수에서 출력 값이 지정된 양식 필드에 채워지지 않습니다.
+>를 사용하는 경우 `success` 콜백 함수에서 출력 값이 지정된 양식 필드에 채워지지 않습니다.
 
 ```javascript
 var operationInfo = {

@@ -2,7 +2,7 @@
 title: IMS를 사용하여 Adobe Target과 통합
 description: IMS를 사용하여 AEM과 Adobe Target을 통합하는 방법에 대해 알아봅니다.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: eb05fb92491932e4c2489c5adb533bbbae1d2870
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 55%
@@ -278,9 +278,9 @@ AEM으로 돌아가면 Target을 위한 Adobe Developer 콘솔 통합에서 필�
 
 >[!NOTE]
 >
-> 기존 Target 구성을 변경하고자 하는 경우:
+>기존 Target 구성을 변경하고자 하는 경우:
 >
-> 1. 테넌트 ID를 다시 입력합니다.
-> 2. Target에 다시 연결합니다.
-> 3. 구성을 저장합니다.
+>1. 테넌트 ID를 다시 입력합니다.
+>2. Target에 다시 연결합니다.
+>3. 구성을 저장합니다.
 

@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 2%
@@ -493,11 +493,12 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
 >클러스터형 또는 공유 데이터 저장소 설정(Mongo 또는 Segment Tar 사용)에서 가비지 수집을 수행할 때 로그에 특정 Blob ID를 삭제할 수 없다는 경고가 표시될 수 있습니다. 이 문제는 이전 가비지 수집에서 삭제된 Blob ID가 ID 삭제에 대한 정보가 없는 다른 클러스터 또는 공유 노드에서 다시 잘못 참조되기 때문에 발생합니다. 따라서 가비지 수집이 수행되면 마지막 실행에서 이미 삭제된 ID를 삭제하려고 하면 경고가 기록됩니다. 이 동작은 성능이나 기능에 영향을 미치지 않습니다.
 
 >[!NOTE]
-> 공유 데이터 저장소 설정을 사용하고 데이터 저장소 가비지 수집이 비활성화되어 있으면 Lucene 이진 정리 작업을 실행하면 사용되는 디스크 공간이 갑자기 늘어날 수 있습니다. 이를 방지하려면 다음과 같이 모든 작성자 및 게시 인스턴스에서 BlobTracker를 비활성화해야 합니다.
 >
-> 1. AEM 인스턴스를 중지합니다.
-> 2. 추가 `blobTrackSnapshotIntervalInSecs=L"0"` 의 매개 변수 `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` 파일. 이 매개 변수에는 Oak 1.12.0, 1.10.2 이상이 필요합니다.
-> 3. AEM 인스턴스를 다시 시작합니다.
+>공유 데이터 저장소 설정을 사용하고 데이터 저장소 가비지 수집이 비활성화되어 있으면 Lucene 이진 정리 작업을 실행하면 사용되는 디스크 공간이 갑자기 늘어날 수 있습니다. 이를 방지하려면 다음과 같이 모든 작성자 및 게시 인스턴스에서 BlobTracker를 비활성화해야 합니다.
+>
+>1. AEM 인스턴스를 중지합니다.
+>2. 추가 `blobTrackSnapshotIntervalInSecs=L"0"` 의 매개 변수 `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` 파일. 이 매개 변수에는 Oak 1.12.0, 1.10.2 이상이 필요합니다.
+>3. AEM 인스턴스를 다시 시작합니다.
 
 
 최신 버전의 AEM을 사용하면 두 개 이상의 저장소에서 공유한 데이터 저장소에서 데이터 저장소 가비지 수집을 실행할 수도 있습니다. 공유 데이터 저장소에서 데이터 저장소 가비지 수집을 실행하려면 다음 단계를 수행합니다.

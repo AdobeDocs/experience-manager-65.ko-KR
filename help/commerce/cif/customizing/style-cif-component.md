@@ -9,7 +9,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 >[!TIP]
 >
-> 를 사용하십시오 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype) 고유한 상거래 구현을 시작할 때.
+>를 사용하십시오 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype) 고유한 상거래 구현을 시작할 때.
 
 ## 빌드할 내용
 
@@ -40,7 +40,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> **기존 프로젝트를 자유롭게 사용** (CIF가 포함된 AEM Project Archetype에 따라) 이 섹션을 건너뜁니다.
+>**기존 프로젝트를 자유롭게 사용** (CIF가 포함된 AEM Project Archetype에 따라) 이 섹션을 건너뜁니다.
 
 1. 다음 git 명령을 실행하여 프로젝트를 복제합니다.
 
@@ -137,7 +137,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   > 이러한 파일은 빌드 시간 동안 생성되어야 하므로 소스 제어에서 무시됩니다.
+   >이러한 파일은 빌드 시간 동안 생성되어야 하므로 소스 제어에서 무시됩니다.
 
 1. Inspect 파일 `ui.frontend/clientlib.config.js`.
 
@@ -168,7 +168,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   > 이와 같은 파일은 빌드 시간 동안 생성해야 하므로 소스 제어에서도 무시됩니다.
+   >이와 같은 파일은 빌드 시간 동안 생성해야 하므로 소스 제어에서도 무시됩니다.
 
 1. 다음으로 프로젝트에서 생성된 다른 클라이언트 라이브러리를 검사합니다.
 
@@ -190,7 +190,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   > 기본 라이브러리만 페이지 스크립트의 일부로 &quot;하드 코딩됨&quot;입니다. `venia.site` 는 이러한 파일에 포함되지 않으며 대신 보다 유연하게 대처할 수 있도록 페이지 템플릿의 일부로 포함됩니다. 이것은 나중에 검사할 것입니다.
+   >기본 라이브러리만 페이지 스크립트의 일부로 &quot;하드 코딩됨&quot;입니다. `venia.site` 는 이러한 파일에 포함되지 않으며 대신 보다 유연하게 대처할 수 있도록 페이지 템플릿의 일부로 포함됩니다. 이것은 나중에 검사할 것입니다.
 
 1. 터미널에서 전체 프로젝트를 빌드하고 AEM의 로컬 인스턴스에 배포합니다.
 
@@ -265,7 +265,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   > AEM 시작 화면에서 사용 가능한 모든 템플릿을 보려면 로 이동합니다. **도구** > **일반** > **템플릿**.
+   >AEM 시작 화면에서 사용 가능한 모든 템플릿을 보려면 로 이동합니다. **도구** > **일반** > **템플릿**.
 
 1. 왼쪽 상단 모서리에서 을(를) 선택합니다. **페이지 정보** 아이콘을 클릭하고 **페이지 정책**.
 
@@ -328,7 +328,7 @@ webpack-dev-server 프록시 이미지 및 일부 CSS/JavaScript는 AEM의 로�
 
    >[!CAUTION]
    >
-   > Sass 관련 오류가 발생하면 서버를 중지하고 명령을 실행합니다 `npm rebuild node-sass` 위의 단계를 반복합니다. 이 문제는 의 다른 버전이 있을 경우 발생할 수 있습니다 `npm` 및 `node` 그런 다음 프로젝트에 지정합니다 `aem-cif-guides-venia/pom.xml`.
+   >Sass 관련 오류가 발생하면 서버를 중지하고 명령을 실행합니다 `npm rebuild node-sass` 위의 단계를 반복합니다. 이 문제는 의 다른 버전이 있을 경우 발생할 수 있습니다 `npm` 및 `node` 그런 다음 프로젝트에 지정합니다 `aem-cif-guides-venia/pom.xml`.
 
 1. 로 이동합니다 [http://localhost:8080/](http://localhost:8080/) AEM의 로그인한 인스턴스와 동일한 브라우저를 사용하는 새 탭에서 다음을 수행합니다. webpack-dev-server를 통해 Venia 홈 페이지가 표시됩니다.
 

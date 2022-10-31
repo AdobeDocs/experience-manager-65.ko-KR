@@ -10,7 +10,7 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '4128'
 ht-degree: 0%
@@ -199,10 +199,10 @@ Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하지 �
 
    >[!NOTE]
    >
-   > * 정적 템플릿을 사용하는 경우 다음 위치에서 head.jsp를 오버레이합니다.
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
-   > * 편집 가능한 템플릿을 사용하는 경우 다음 위치에서 aftemplatedpage.jsp를 오버레이합니다.
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+   >* 정적 템플릿을 사용하는 경우 다음 위치에서 head.jsp를 오버레이합니다.
+      >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >* 편집 가능한 템플릿을 사용하는 경우 다음 위치에서 aftemplatedpage.jsp를 오버레이합니다.
+      >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. 설정 [!DNL paramMap] 요청 속성에 대해 사용할 수 없습니다. 예를 들어 apps 폴더의 .jsp 파일에 다음 코드를 포함합니다.

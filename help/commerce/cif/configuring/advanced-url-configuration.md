@@ -9,7 +9,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: 014731aa9c5c4d7d419ff8b037142b47e7b7da01
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 많은 AEM 프로젝트에서 SEO 문제를 해결해야 합니다. 자세한 내용 [SEO 및 URL 관리 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) 추가 정보.
+>SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 많은 AEM 프로젝트에서 SEO 문제를 해결해야 합니다. 자세한 내용 [SEO 및 URL 관리 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) 추가 정보.
 
 [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components) 제품 및 카테고리 페이지의 URL을 사용자 지정하는 고급 구성을 제공합니다. 많은 구현이 SEO(검색 엔진 최적화) 목적으로 이러한 URL을 사용자 지정합니다. 다음 비디오에서는 을 구성하는 방법을 자세히 설명합니다 `UrlProvider` 의 서비스 및 기능 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 제품 및 카테고리 페이지의 URL을 사용자 지정하는 방법.
 
@@ -32,7 +32,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> AEM CIF 코어 구성 요소 의 릴리스 2.0.0부터 URL 공급자 구성에서는 1.x 릴리스에서 제공되는 자유 텍스트 구성 가능 형식 대신 미리 정의된 URL 형식만 제공합니다. 또한 URL에서 데이터를 전달하는 선택기를 사용하여 접미사로 대체되었습니다.
+>AEM CIF 코어 구성 요소 의 릴리스 2.0.0부터 URL 공급자 구성에서는 1.x 릴리스에서 제공되는 자유 텍스트 구성 가능 형식 대신 미리 정의된 URL 형식만 제공합니다. 또한 URL에서 데이터를 전달하는 선택기를 사용하여 접미사로 대체되었습니다.
 
 ### 제품 페이지 URL 형식 {#product}
 
@@ -73,7 +73,7 @@ ht-degree: 4%
 
 >[!NOTE]
 > 
-> 다음 `url_path` 는 `url_keys` 제품 또는 카테고리의 상위 항목 및 제품 또는 카테고리의 `url_key` 분리 `/` 슬래시.
+>다음 `url_path` 는 `url_keys` 제품 또는 카테고리의 상위 항목 및 제품 또는 카테고리의 `url_key` 분리 `/` 슬래시.
 
 ### 특정 카테고리-/제품 페이지 {#specific-pages}
 

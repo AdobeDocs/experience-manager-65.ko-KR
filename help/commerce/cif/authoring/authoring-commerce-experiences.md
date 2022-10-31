@@ -2,7 +2,7 @@
 title: 상거래 경험 작성
 description: 작동하는 상거래 경험
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -71,7 +71,7 @@ CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입�
 
     >[!NOTE]
     >
-    > 카테고리와 제품을 모두 선택하면 제품이 선택됩니다.
+    >카테고리와 제품을 모두 선택하면 제품이 선택됩니다.
 
 페이지가 렌더링될 때 실제 링크로 대체되는 자리 표시자 링크가 만들어집니다.
 
@@ -101,4 +101,4 @@ Omnisearch를 사용하면 전문가가 전체 텍스트 검색을 사용하여 
 
     >[!NOTE]
     >
-    > Omnisearch의 전체 텍스트 검색은 관련 컨텐츠 조각을 지원하지 않습니다. SKU 또는 UID를 사용하여 관련 컨텐츠 조각을 찾습니다.
+    >Omnisearch의 전체 텍스트 검색은 관련 컨텐츠 조각을 지원하지 않습니다. SKU 또는 UID를 사용하여 관련 컨텐츠 조각을 찾습니다.

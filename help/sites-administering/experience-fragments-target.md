@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 72012fa441edb01deb7e557b707fb068d8e9892e
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 81%
@@ -131,9 +131,9 @@ AEM 경험 구성요소를 Adobe Target의 기본 작업 공간으로 내보내�
    >
    >외부화 도메인은 선택 사항입니다.
    >
-   > 내보낸 콘텐츠가 특정 *게시* 도메인을 가리키도록 하면 AEM 외부화가 구성됩니다. 자세한 내용은 [AEM 링크 외부화 구성](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)을 참조하십시오.
+   >내보낸 콘텐츠가 특정 *게시* 도메인을 가리키도록 하면 AEM 외부화가 구성됩니다. 자세한 내용은 [AEM 링크 외부화 구성](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)을 참조하십시오.
    >
-   > 또한 외부화 도메인은 오퍼 콘텐츠 보기와 같은 메타데이터가 아닌 Target에 전송되는 경험 조각의 콘텐츠에만 관련이 있습니다.
+   >또한 외부화 도메인은 오퍼 콘텐츠 보기와 같은 메타데이터가 아닌 Target에 전송되는 경험 조각의 콘텐츠에만 관련이 있습니다.
 
    폴더의 경우 그 예는 다음과 같습니다.
 

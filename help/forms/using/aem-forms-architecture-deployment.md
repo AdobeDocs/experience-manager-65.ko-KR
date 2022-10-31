@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2460'
 ht-degree: 0%
@@ -76,7 +76,7 @@ AEM Forms on OSGi 및 JEE의 AEM Forms에는 모두 워크플로우 기능이 �
 
    >[!NOTE]
    >
-   > Adobe은 AEM 저장소를 사용하는 대신 타사 데이터 저장소를 사용하여 최종 처리된 데이터를 저장하는 것을 권장합니다.
+   >Adobe은 AEM 저장소를 사용하는 대신 타사 데이터 저장소를 사용하여 최종 처리된 데이터를 저장하는 것을 권장합니다.
 
 * **게시 인스턴스에서 도착하는 서신 데이터의 저장 및 사후 처리:** AEM 워크플로우에서는 해당 편지 정의(옵션)의 사후 처리를 수행합니다. 이러한 워크플로우는 최종 처리된 데이터를 적절한 외부 데이터 저장소에 저장할 수 있습니다.
 

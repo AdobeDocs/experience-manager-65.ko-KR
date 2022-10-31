@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: b80886f1e45e0ed65ce2309ef6ea43bfa373a52b
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5529'
 ht-degree: 2%
@@ -252,7 +252,7 @@ Acrobat을 설치한 후 Microsoft® Word를 엽니다. 설정 **Acrobat** 탭, 
 >* UNIX 기반 플랫폼에서 OpenOffice를 /root로 설치합니다. OpenOffice가 루트로 설치되어 있지 않으면 PDF 생성기 서비스가 OpenOffice 문서를 PDF 문서로 변환하지 못합니다. 루트가 아닌 사용자로 OpenOffice를 설치하고 실행해야 하는 경우 루트가 아닌 사용자에게 sudo 권한을 제공합니다.
 >* UNIX 기반 플랫폼에서 OpenOffice를 사용하는 경우 다음 명령을 실행하여 경로 변수를 설정합니다.
 >
-> `export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (IBM® WebSphere®에만 해당) IBM® SSL 소켓 공급자를 구성합니다 {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -415,7 +415,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
    >[!NOTE]
    >
    >Adobe 이외의 당사자가 제공하는 글꼴을 사용할 수 있는 권리는 해당 글꼴이 있는 해당 당사자가 제공한 사용권 계약에 따라 다르며, Adobe 소프트웨어를 사용할 수 있는 라이센스에 따라 적용되지 않습니다. Adobe은 Adobe 소프트웨어와 함께 비Adobe 글꼴을 사용하기 전에, 특히 서버 환경에서 글꼴의 사용과 관련하여 해당 비Adobe 사용권 계약을 모두 검토하고 준수하도록 권장합니다.
-   > 글꼴 폴더에 새 글꼴을 설치하면 AEM Forms 인스턴스를 다시 시작합니다.
+   >글꼴 폴더에 새 글꼴을 설치하면 AEM Forms 인스턴스를 다시 시작합니다.
 
 ### PDF 생성기 서비스를 실행하도록 로컬 사용자 계정 구성  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
@@ -596,7 +596,8 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
 
    >[!NOTE]
    >
-   > * 시스템 준비 도구에서 Acrobat 플러그인 폴더에서 pdfgen.api 파일을 사용할 수 없다고 보고하는 경우 의 pdfgen.api 파일을 복사합니다 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` 디렉토리 `[Acrobat_root]\Acrobat\plug_ins` 디렉토리.
+   >* 시스템 준비 도구에서 Acrobat 플러그인 폴더에서 pdfgen.api 파일을 사용할 수 없다고 보고하는 경우 의 pdfgen.api 파일을 복사합니다 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` 디렉토리 `[Acrobat_root]\Acrobat\plug_ins` 디렉토리.
+
 
 1. 다음으로 이동 `[Path_of_reports_folder]`. SystemReadinessTool.html 파일을 엽니다. 보고서를 확인하고 언급된 문제를 수정합니다.
 

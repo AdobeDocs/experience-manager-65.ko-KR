@@ -4,7 +4,7 @@ description: AEM Content and Commerce 프로젝트를 배포하는 방법을 알
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 4%
@@ -70,17 +70,22 @@ CIF 추가 기능은에서 GraphQL 프록시 서블릿을 제공합니다. `/api
 - GraphQL 클라이언트 - 상거래 백엔드 통신을 위해 구성된 GraphQL 클라이언트를 선택합니다. 이 기능은 일반적으로 기본적으로 유지됩니다.
 - 저장소 보기 - 저장소 보기 식별자입니다. 비어 있으면 기본 저장소 보기가 사용됩니다.
 - GraphQL 프록시 경로 - AEM의 URL 경로 GraphQL 프록시가 상거래 백엔드 GraphQL 끝점에 요청을 프록시할 때 사용합니다.
+
    >[!NOTE]
    >
-   > 대부분의 설정에서 기본값을 설정합니다 `/api/graphql` 변경할 수 없습니다. 제공된 GraphQL 프록시를 사용하지 않는 고급 설정만 이 설정을 변경해야 합니다.
+   >대부분의 설정에서 기본값을 설정합니다 `/api/graphql` 변경할 수 없습니다. 제공된 GraphQL 프록시를 사용하지 않는 고급 설정만 이 설정을 변경해야 합니다.
+
 - 카탈로그 UID 지원 활성화 - 상거래 백엔드 GraphQL 호출에서 ID 대신 UID에 대한 지원을 활성화합니다.
+
    >[!NOTE]
    >
-   > Adobe Commerce 2.4.2에서 UID에 대한 지원이 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화하십시오.
+   >Adobe Commerce 2.4.2에서 UID에 대한 지원이 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화하십시오.
+
 - 카탈로그 루트 카테고리 식별자 - 저장소 카탈로그 루트의 식별자(UID 또는 ID)입니다
+
    >[!CAUTION]
    >
-   > CIF 코어 구성 요소 버전 2.0.0부터 지원 `id` 가 제거되어 `uid`. 프로젝트에서 CIF 코어 구성 요소 버전 2.0.0을 사용하는 경우 카탈로그 UID 지원을 활성화하고 유효한 카테고리 UID를 &quot;카탈로그 루트 카테고리 식별자&quot;로 사용해야 합니다.
+   >CIF 코어 구성 요소 버전 2.0.0부터 지원 `id` 가 제거되어 `uid`. 프로젝트에서 CIF 코어 구성 요소 버전 2.0.0을 사용하는 경우 카탈로그 UID 지원을 활성화하고 유효한 카테고리 UID를 &quot;카탈로그 루트 카테고리 식별자&quot;로 사용해야 합니다.
 
 위에 표시된 구성은 참조용입니다. 프로젝트는 자체 구성을 제공해야 합니다.
 

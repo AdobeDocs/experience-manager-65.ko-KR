@@ -12,7 +12,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: b9a3db4144a571291bdf1c9a9f0e841f284df0c8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5972'
 ht-degree: 1%
@@ -448,11 +448,12 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >| `'.'yyyy-MM-dd-HH-mm` | 매 분 초에 회전하세요. |
    >
    >참고: 시간/날짜를 지정할 때:
-   > 1. 한 쌍의 작은 따옴표(&#39; &#39;) 내에 &quot;이스케이프&quot; 리터럴 텍스트를 포함해야 합니다.
-      >
-      >     이는 특정 문자가 패턴 문자로 해석되지 않도록 하기 위한 것입니다.
    >
-   >  1. 옵션의 아무 곳에나 유효한 파일 이름에 사용할 수 있는 문자만 사용하십시오.
+   >1. 한 쌍의 작은 따옴표(&#39; &#39;) 내에 &quot;이스케이프&quot; 리터럴 텍스트를 포함해야 합니다.
+      >
+      >    이는 특정 문자가 패턴 문자로 해석되지 않도록 하기 위한 것입니다.
+   >
+   >1. 옵션의 아무 곳에나 유효한 파일 이름에 사용할 수 있는 문자만 사용하십시오.
 
 
 1. 선택한 도구로 새 로그 파일을 읽습니다.

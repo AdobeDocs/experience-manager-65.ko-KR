@@ -7,7 +7,7 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 1%
@@ -127,7 +127,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 >[!NOTE]
 >
-> 위의 인덱스 정의 작성 프로세스는 `oak-run-1.12.0` 버전 섹션을 참조하십시오. Granite 저장소 번들을 사용하여 타깃팅이 수행됩니다 `com.adobe.granite.repository-x.x.xx.jar`.
+>위의 인덱스 정의 작성 프로세스는 `oak-run-1.12.0` 버전 섹션을 참조하십시오. Granite 저장소 번들을 사용하여 타깃팅이 수행됩니다 `com.adobe.granite.repository-x.x.xx.jar`.
 
 위의 단계에서 라는 JSON 파일을 만듭니다. `merge-index-definitions_target.json` 인덱스 정의입니다.
 
@@ -141,7 +141,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 >[!NOTE]
 >
-> 이 체크포인트는 인덱스를 나중에 가져올 때 삭제됩니다.
+>이 체크포인트는 인덱스를 나중에 가져올 때 삭제됩니다.
 
 자세한 내용은 [체크포인트 생성](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) Oak 설명서에서 링크를 클릭하십시오.
 

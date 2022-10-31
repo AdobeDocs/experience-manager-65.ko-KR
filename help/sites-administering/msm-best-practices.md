@@ -4,9 +4,9 @@ description: AEM 다중 사이트 관리자를 시작하고 실행하는 데 도
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: c6ccd204dbd514d6195424aff495bc38f1f31bce
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1616'
 ht-degree: 41%
 
 ---
@@ -56,9 +56,9 @@ Live Copy는 다음 중 하나를 사용하여 만들 수 있습니다 [일반 �
 
 Live Copy를 사용하여 새 사이트를 만들 때 전체 MSM 기능 세트의 가용성을 보장하기 위해 블루프린트 구성을 만드는 것이 좋습니다.
 
->[메모!]
+>[!NOTE]
 >
-> 권한 탭의 CUG는 블루프린트에서 라이브 카피로 롤아웃할 수 없습니다. 라이브 카피를 구성할 때 이를 염두에 두고 계획을 세우십시오.
+>권한 탭의 CUG는 블루프린트에서 라이브 카피로 롤아웃할 수 없습니다. 라이브 카피를 구성할 때 이를 염두에 두고 계획을 세우십시오.
 
 ## 구성 요소 및 컨테이너 동기화 {#components-and-container-synchronization}
 

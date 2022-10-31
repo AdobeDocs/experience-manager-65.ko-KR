@@ -10,7 +10,7 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 98854fa3b852f511cf95adc13b945c06b1afff96
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2011'
 ht-degree: 1%
@@ -190,7 +190,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. AEM 클라우드 서
 
 >[!NOTE]
 >
-> 양식 데이터 모델은 [OData 버전 4](https://www.odata.org/documentation/).
+>양식 데이터 모델은 [OData 버전 4](https://www.odata.org/documentation/).
 >Microsoft Dynamics 365, 온라인 또는 온프레미스 구성을 위한 단계별 안내서는 를 참조하십시오 [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 탭합니다.

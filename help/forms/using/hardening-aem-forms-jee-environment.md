@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: d2661ee6614261179b5e8d2d9ffb7c240ce676dc
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 1%
@@ -204,9 +204,11 @@ AEM Forms on JEE는 기본적으로 LocalSystem 계정을 사용하여 서비스
 
    >[!NOTE]
    >
-   > JBoss Application Server의 기본 설치 위치:
-   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
-   > * Linux: /opt/jboss/
+   >JBoss Application Server의 기본 설치 위치:
+   >
+   >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   >* Linux: /opt/jboss/
+
 
 1. 응용 프로그램 서버를 시작합니다.
 
@@ -899,7 +901,7 @@ CSRF 필터에 의해 올바른 서버 요청이 차단되는 경우 다음 중 
 <table> 
  <thead> 
   <tr> 
-   <th><p>목적</p> </th> 
+   <th><p>용도</p> </th> 
    <th><p>포트</p> </th> 
   </tr> 
  </thead> 
@@ -920,7 +922,7 @@ CSRF 필터에 의해 올바른 서버 요청이 차단되는 경우 다음 중 
 <table> 
  <thead> 
   <tr> 
-   <th><p>목적</p> </th> 
+   <th><p>용도</p> </th> 
    <th><p>포트</p> </th> 
   </tr> 
  </thead> 
@@ -1024,9 +1026,10 @@ JEE의 AEM Forms 턴키 설치는 기본적으로 로컬 시스템 계정을 사
 
    >[!NOTE]
    >
-   > JBoss Application Server의 기본 설치 위치:
-   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
-   > * Linux: /opt/jboss/.
+   >JBoss Application Server의 기본 설치 위치:
+   >
+   >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   >* Linux: /opt/jboss/.
 
 
 1. 응용 프로그램 서버 서비스를 시작합니다.

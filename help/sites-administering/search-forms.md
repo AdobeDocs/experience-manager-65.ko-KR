@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 12%
@@ -105,7 +105,7 @@ A [조건자 범위](#predicates-and-their-settings)기본적으로 제공됩니
  <tbody>
   <tr>
    <th>조건자</th>
-   <th>목적</th>
+   <th>용도</th>
    <th>설정</th>
   </tr>
   <tr>
@@ -331,9 +331,8 @@ A [조건자 범위](#predicates-and-their-settings)기본적으로 제공됩니
 >* 일반적인 검색 조건은에서 정의됩니다.
    >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->
 >* siteadmin(클래식 UI)과 관련된 검색 조건자는 다음 위치에 있습니다.
-   > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * 이러한 템플릿은 더 이상 사용되지 않으며 이전 버전과의 호환성을 위해서만 사용할 수 있습니다.
 >
 >이 정보는 참조용이므로 변경할 수 없습니다 `/libs`.
