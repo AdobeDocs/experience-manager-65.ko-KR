@@ -12,9 +12,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: bc3dd7d229a75323b98a96d60dcbb3ae2b8c09ab
 workflow-type: tm+mt
-source-wordcount: '5475'
+source-wordcount: '5469'
 ht-degree: 2%
 
 ---
@@ -87,7 +87,7 @@ AEM WCM은 많은 사용자 및 그룹을 설치합니다. 설치 후 보안 콘
    <td>관리자</td>
    <td>그룹</td>
    <td><p>모든 해당 구성원에게 관리자 권한을 부여하는 그룹입니다. 관리자만 이 그룹을 편집할 수 있습니다.</p> <p>전체 액세스 권한이 있습니다.</p> </td>
-   <td>노드에 'deny-everyone'을 설정하면 관리자는 해당 그룹에 대해 다시 활성화되는 경우에만 액세스할 수 있습니다.</td>
+   <td>노드에서 'deny-everyone'을 설정하더라도 관리자는 여전히 노드에 액세스할 수 있습니다</td>
   </tr>
   <tr>
    <td>content-authors</td>
