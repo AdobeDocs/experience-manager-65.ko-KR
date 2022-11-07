@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 40434fc8f2e0fd4b66102cdd5779dc578330d7b4
+source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
 workflow-type: tm+mt
-source-wordcount: '3808'
+source-wordcount: '3811'
 ht-degree: 4%
 
 ---
@@ -19,8 +19,9 @@ ht-degree: 4%
 
 + [AEM 6.5 Forms 안내서](home.md)
 + 릴리스 노트 {#release-notes-new-features}
-   + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
+   + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
    + [새로운 기능 요약](using/whats-new.md)
+   + [FAQ](/help/forms/using/frequently-asked-questions-faq.md)
    + [이제 사용되지 않는 기능](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + 시작하기 {#getting-started}
    + [AEM Forms 소개](using/introduction-aem-forms.md)
