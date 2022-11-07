@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
+source-git-commit: 1cd63d2ce5c5caf408b11eb6bac9b1a54dae0b25
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1886'
 ht-degree: 90%
 
 ---
@@ -368,7 +368,7 @@ From the **Sites** console you can select several pages then use **View Properti
 
       * **완료**&#x200B;를 선택하면 선택한 모든 페이지에 새 값이 적용됩니다.
       * 필드가 다중 값(예: 태그)이면 새 값을 추가하거나 공통 값을 제거할 수 있습니다.
-   * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다. 이러한 필드를 편집할 때는 데이터가 손실되지 않도록 주의해야 합니다.
+   * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다. 
 
 
 >[!NOTE]
