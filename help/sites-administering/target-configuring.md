@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 813441a61baa560c9d317a5519b9e0c0d1da7a6e
+source-git-commit: f64319e88687ba1f53c98d4768492a0b4f4b08b8
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2210'
 ht-degree: 44%
 
 ---
@@ -126,9 +126,9 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
 다음 절차를 통해 AEM에서 Target 클라우드 구성을 만드십시오.
 
-1. 다음으로 이동 **Cloud Services** 사용 **AEM 로고** > **도구** > **배포** > **Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. 다음으로 이동 **Cloud Services** 사용 **AEM 로고** > **도구** > **Cloud Services** > **기존 Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   다음 **Adobe Marketing Cloud** 개요 페이지가 열립니다.
+   다음 **Cloud Services** 개요 페이지가 열립니다.
 
 1. **Adobe Target** 섹션에서 **지금 구성**&#x200B;을 클릭합니다.
 1. **구성 만들기** 대화 상자에서
