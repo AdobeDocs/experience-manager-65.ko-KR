@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 08a6777bf1ff3abf62f45fe1e164ef2027996848
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2364'
 ht-degree: 2%
 
 ---
@@ -237,7 +237,7 @@ Apache Sling Job Consumer Manager 서비스는 주제 허용 목록 및 차단 �
 
 >[!CAUTION]
 >
->자동 생성된 복제 에이전트 관련 알려진 문제를 해결하려면 새 복제 에이전트를 수동으로 만들어야 합니다. 다음 절차를 따르십시오. [자동 생성된 복제 에이전트를 사용하는 문제](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) 오프로드용 에이전트를 만들기 전에
+>자동 생성된 복제 에이전트 관련 알려진 문제를 해결하려면 새 복제 에이전트를 수동으로 만들어야 합니다.
 
 오프로드용 인스턴스 간에 작업 페이로드를 전송하는 복제 에이전트를 만듭니다. 다음 그림은 작성자에서 작업자 인스턴스로 오프로드하는 데 필요한 에이전트를 보여줍니다. 작성자는 Sling ID가 1이고 작업자 인스턴스는 Sling ID가 2입니다.
 
@@ -263,13 +263,13 @@ Apache Sling Job Consumer Manager 서비스는 주제 허용 목록 및 차단 �
 
 `offloading_<slingid>`, 위치 `<slingid>` 는 작업자 인스턴스의 Sling ID입니다.
 
-예제: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
+예: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **작성자 인스턴스에서 역방향 에이전트의 이름을 지정합니다.**
 
 `offloading_reverse_<slingid>`, 위치 `<slingid>` 는 작업자 인스턴스의 Sling ID입니다.
 
-예제: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
+예: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **작업자 인스턴스에서 보낸 편지함의 이름을 지정합니다.**
 
