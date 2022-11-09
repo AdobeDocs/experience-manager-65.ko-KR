@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 exl-id: 7ccd67a7-9945-48c1-9986-f4eaf0f2b961
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,15 +40,15 @@ Livefyre를 사용자 지정 AEM 구성 요소나 WordPress, Sitecore 또는 Dem
 **방법 1: 디자이너 앱 구현**
 
 * **내용:** Livefyre 앱을 통합하는 가장 간편하고 빠른 방법입니다. 사용자 지정된 JavaScript 포함 코드를 디자인, 구성 및 생성하여 페이지에 미디어 월 앱을 몇 분 내에 통합할 수 있습니다.
-* **방법:**  [미디어 월 앱 만들기, 미리 보기, 게시 및 포함](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
+* **방법:**  [미디어 월 앱 만들기, 미리 보기, 게시 및 포함](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
 * **예:** [https://codepen.io/dharafyre/pen/bvGrLo](https://codepen.io/dharafyre/pen/bvGrLo)
 
 **방법 2: SDK 구현**
 
-* **내용:** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) 는 사이트에서 앱과 인증을 제어하는 핵심 라이브러리입니다. 글로벌 변수를 정의합니다 *window.Livefyre* 개체 및 단일 공용 메서드, *Livefyre.require*: Livefyre 앱을 내장하고 타사 사용자 인증 플랫폼과 통합하는 데 도움이 되는 다른 Livefyre JavaScript 라이브러리를 로드하는 데 사용할 수 있습니다.
+* **내용:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) 는 사이트에서 앱과 인증을 제어하는 핵심 라이브러리입니다. 글로벌 변수를 정의합니다 *window.Livefyre* 개체 및 단일 공용 메서드, *Livefyre.require*: Livefyre 앱을 내장하고 타사 사용자 인증 플랫폼과 통합하는 데 도움이 되는 다른 Livefyre JavaScript 라이브러리를 로드하는 데 사용할 수 있습니다.
 
-* **방법**: [Livefyre JavaScript SDK의 streamhub-wallpackage 사용](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-media-wall-integration.html)
+* **방법**: [Livefyre JavaScript SDK의 streamhub-wallpackage 사용](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-media-wall-integration.html)
 
 * **예**: [https://codepen.io/dharafyre/pen/KZKBNv?editors=1010](https://codepen.io/dharafyre/pen/KZKBNv?editors=1010)
 
@@ -56,7 +56,7 @@ SDK를 사용하는 고급 사용자 지정에 대해서는 [StreamHub SDK](http
 
 **방법 3: API 구현**
 
-* 사용자 지정된 경험 및 데이터 시각화를 만들기 위해 를 사용하여 Livefyre 및 소셜 데이터를 사용하여 Livefyre 앱을 처음부터 만들 수 있습니다. [Bootstrap 및 스트림 API](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+* 사용자 지정된 경험 및 데이터 시각화를 만들기 위해 를 사용하여 Livefyre 및 소셜 데이터를 사용하여 Livefyre 앱을 처음부터 만들 수 있습니다. [Bootstrap 및 스트림 API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
 꼭 따르세요 [Twitter](https://developer.twitter.com/en/developer-terms/display-requirements.html), [Facebook](https://en.facebookbrand.com/guidelines/brand), 및 [Instagram](https://en.instagram-brand.com/) UGC용 UI를 작성할 때 지침을 표시합니다.
 
@@ -65,7 +65,7 @@ SDK를 사용하는 고급 사용자 지정에 대해서는 [StreamHub SDK](http
 인증이 필요한 미디어 월 통합에 대해서는 다음을 참조하십시오.
 
 * [단일 사인온 통합 사용자 지정](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) AEM Identity Management
-* [ID 통합](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼
+* [ID 통합](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼
 
 ### 사용 사례 개요 {#use-case-overview}
 
@@ -76,7 +76,7 @@ AEM 고객의 경우 기본 제공 Livefyre AEM 구성 요소를 사용하여 UG
 1. [시작하기](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
 1. [Livefyre를 사용하도록 AEM 구성](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
 1. [AEM Media Wall 구성 요소를 페이지에 드래그하여 놓습니다](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
-1. [Streams 구성 및 규칙을 추가하여 UGC를 조정하고 Media Wall 구성 요소에 표시](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html)
+1. [Streams 구성 및 규칙을 추가하여 UGC를 조정하고 Media Wall 구성 요소에 표시](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html)
 
 스트리밍 UGC에 대한 교육 비디오가 필요하면 [Adobe Experience Manager Livefyre에서 자동 컨텐츠 스트림 만들기 및 소셜 컨텐츠 검색](https://helpx.adobe.com/experience-manager/tutorials.html).
 
@@ -85,9 +85,9 @@ AEM 고객의 경우 기본 제공 Livefyre AEM 구성 요소를 사용하여 UG
 * [CNN 미디어 월](https://edition.cnn.com/specials/nepal-earthquake-media-wall)
 * [PGA 투어 미디어 월](https://www.pgatour.com/social-hub.html)
 
-사용자 지정된 경험 및 데이터 시각화를 만들기 위해 를 사용하여 Livefyre 및 소셜 데이터를 사용하여 Livefyre 앱을 처음부터 만들 수 있습니다. [Bootstrap 및 스트림 API](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+사용자 지정된 경험 및 데이터 시각화를 만들기 위해 를 사용하여 Livefyre 및 소셜 데이터를 사용하여 Livefyre 앱을 처음부터 만들 수 있습니다. [Bootstrap 및 스트림 API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-인증이 필요한 Livefyre 앱의 경우 다음을 참조하십시오. [ID 통합](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼용.
+인증이 필요한 Livefyre 앱의 경우 다음을 참조하십시오. [ID 통합](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼용.
 
 * [PGA 투어 미디어 월](https://www.pgatour.com/social-hub.html)
 * [시간 초과](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
@@ -105,18 +105,18 @@ Livefyre Comments 앱을 사용자 지정 AEM 구성 요소나 WordPress, Siteco
 **방법 1: 디자이너 앱 구현**
 
 * **내용:** Livefyre 앱을 통합하는 가장 간편하고 빠른 방법입니다. 사용자 지정된 JavaScript 포함 코드를 디자인, 구성 및 생성하여 페이지에 미디어 월 앱을 몇 분 내에 통합할 수 있습니다.
-* **방법:** [주석 앱 만들기, 미리 보기, 게시 및 포함](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
+* **방법:** [주석 앱 만들기, 미리 보기, 게시 및 포함](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
 * **예:** [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
 **방법 2: SDK 구현**
 
-* **내용:** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) 는 사이트에서 앱과 인증을 제어하는 핵심 라이브러리입니다. 글로벌 변수를 정의합니다 *window.Livefyre* 개체 및 단일 공용 메서드, *Livefyre.require*: Livefyre 앱을 내장하고 타사 사용자 인증 플랫폼과 통합하는 데 도움이 되는 다른 Livefyre JavaScript 라이브러리를 로드하는 데 사용할 수 있습니다.
+* **내용:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) 는 사이트에서 앱과 인증을 제어하는 핵심 라이브러리입니다. 글로벌 변수를 정의합니다 *window.Livefyre* 개체 및 단일 공용 메서드, *Livefyre.require*: Livefyre 앱을 내장하고 타사 사용자 인증 플랫폼과 통합하는 데 도움이 되는 다른 Livefyre JavaScript 라이브러리를 로드하는 데 사용할 수 있습니다.
 
 * **방법:**
 
-   * 을 사용하여 컬렉션/앱 만들기 [CollectionMeta 토큰](https://docs.adobe.com/content/help/en/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
-   * 통합 [댓글 앱](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/comments/c-comments-integration.html) Livefyre.js 포함 코드 구조를 사용하여 사이트에 추가할 수 있습니다.
+   * 을 사용하여 컬렉션/앱 만들기 [CollectionMeta 토큰](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
+   * 통합 [댓글 앱](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/comments/c-comments-integration.html) Livefyre.js 포함 코드 구조를 사용하여 사이트에 추가할 수 있습니다.
 
 * **예:**  [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
@@ -124,12 +124,12 @@ SDK를 사용하는 고급 사용자 지정에 대해서는 다음을 참조하�
 
 **방법 3: API 구현**
 
-* 사용자 지정된 경험 및 데이터 시각화를 만들기 위해 를 사용하여 Livefyre 및 소셜 데이터를 사용하여 Livefyre 앱을 처음부터 만들 수 있습니다. [Bootstrap 및 스트림 API](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+* 사용자 지정된 경험 및 데이터 시각화를 만들기 위해 를 사용하여 Livefyre 및 소셜 데이터를 사용하여 Livefyre 앱을 처음부터 만들 수 있습니다. [Bootstrap 및 스트림 API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
 ### 댓글 앱 인증 통합 {#comments-app-authentication-integration}
 
 * [단일 사인온 통합 사용자 지정](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) AEM Identity Management
-* [ID 통합](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼
+* [ID 통합](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼
 
 ### 고객 예 {#customer-examples-1}
 
@@ -139,15 +139,15 @@ SDK를 사용하는 고급 사용자 지정에 대해서는 다음을 참조하�
 
 **Livefyre 설정(UGC 큐레이션 및 Rights Management용):**
 
-1. [Livefyre 자산 라이브러리 폴더에 UGC를 조정하도록 스트림 구성 및 규칙 추가](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html).
+1. [Livefyre 자산 라이브러리 폴더에 UGC를 조정하도록 스트림 구성 및 규칙 추가](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html).
 
    1. 스트리밍 UGC에 대한 교육 비디오가 필요하면 [Adobe Experience Manager Livefyre에서 자동 컨텐츠 스트림 만들기 및 소셜 컨텐츠 검색](https://helpx.adobe.com/experience-manager/tutorials.html).
 
-1. [Livefyre 자산 라이브러리 폴더에서 조정된 UGC를 수집, 구성 및 관리합니다](https://docs.adobe.com/content/help/en/livefyre/using/library/assets/c-assets.html).
+1. [Livefyre 자산 라이브러리 폴더에서 조정된 UGC를 수집, 구성 및 관리합니다](https://experienceleague.adobe.com/docs/livefyre/using/library/assets/c-assets.html).
 
    1. Livefyre Studio 자산 라이브러리에서 폴더 만들기 및 관리에 대한 교육 비디오가 필요하면 를 참조하십시오 [Adobe Experience Manager Livefyre에서 Assets 작업](https://helpx.adobe.com/experience-manager/tutorials.html).
 
-1. [Livefyre Studio를 사용하여 조정된 UGC에 대한 요청 권한](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html).
+1. [Livefyre Studio를 사용하여 조정된 UGC에 대한 요청 권한](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html).
 
 **AEM 설정(AEM Assets으로 UGC를 가져오는 경우):**
 
@@ -171,12 +171,12 @@ Livefyre Reviews 앱을 사용자 지정 AEM 구성 요소나 WordPress, Sitecor
 
 **방법 1: SDK 구현**
 
-* **내용:** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) 는 사이트에서 앱과 인증을 제어하는 핵심 라이브러리입니다. 글로벌 변수를 정의합니다 *window.Livefyre* 개체 및 단일 공용 메서드, *Livefyre.require*: Livefyre 앱을 내장하고 타사 사용자 인증 플랫폼과 통합하는 데 도움이 되는 다른 Livefyre JavaScript 라이브러리를 로드하는 데 사용할 수 있습니다.
+* **내용:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) 는 사이트에서 앱과 인증을 제어하는 핵심 라이브러리입니다. 글로벌 변수를 정의합니다 *window.Livefyre* 개체 및 단일 공용 메서드, *Livefyre.require*: Livefyre 앱을 내장하고 타사 사용자 인증 플랫폼과 통합하는 데 도움이 되는 다른 Livefyre JavaScript 라이브러리를 로드하는 데 사용할 수 있습니다.
 
 * **방법:**
 
-   * 검토 만들기 [CollectionMeta 토큰](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-reviews-integration.html) 를 눌러 검토 모음 내에 저장할 메타데이터를 지정합니다.
-   * 통합 [앱 검토](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-reviews-integration.html) 를 사용하여 사이트에 추가 *Livefyre.js* 포함 코드 구조
+   * 검토 만들기 [CollectionMeta 토큰](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) 를 눌러 검토 모음 내에 저장할 메타데이터를 지정합니다.
+   * 통합 [앱 검토](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) 를 사용하여 사이트에 추가 *Livefyre.js* 포함 코드 구조
 
 * **예:**  [https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
 
@@ -191,7 +191,7 @@ SDK를 사용하는 고급 사용자 지정에 대해서는 다음을 참조하�
 ### 댓글 앱 인증 통합 {#comments-app-authentication-integration-1}
 
 * [단일 사인온 통합 사용자 지정](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) AEM Identity Management
-* [ID 통합](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼
+* [ID 통합](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼
 
 ### 고객 예 {#customer-examples-2}
 

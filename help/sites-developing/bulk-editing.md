@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >이 예에서는 인스턴스에 코어 구성 요소가 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 컨텐츠로 실행 중입니다. 자세한 내용은 [핵심 구성 요소 설명서](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html) 추가 정보.
+   >이 예에서는 인스턴스에 코어 구성 요소가 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 컨텐츠로 실행 중입니다. 자세한 내용은 [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 추가 정보.
 
 1. 내에서 필요한 필드로 이동합니다 `cq:dialog` 정의.
 1. 필드 노드에서 다음 속성을 정의합니다.

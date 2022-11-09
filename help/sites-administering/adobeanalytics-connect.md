@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -87,7 +87,7 @@ AEM에서는 기본적으로 San Jose (https://api.omniture.com/admin/1.4/rest/)
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->다음 [Adobe Analytics에서 제공하는 ActivityMap 플러그인](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 이제 를 사용해야 합니다.
+>다음 [Adobe Analytics에서 제공하는 ActivityMap 플러그인](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 이제 를 사용해야 합니다.
 
 ## Activity Map 구성 {#configuring-for-the-activity-map}
 
@@ -95,7 +95,7 @@ AEM에서는 기본적으로 San Jose (https://api.omniture.com/admin/1.4/rest/)
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->다음 [Adobe Analytics에서 제공하는 ActivityMap 플러그인](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 이제 를 사용해야 합니다.
+>다음 [Adobe Analytics에서 제공하는 ActivityMap 플러그인](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 이제 를 사용해야 합니다.
 
 ## Adobe Analytics 프레임워크 만들기 {#creating-a-adobe-analytics-framework}
 
@@ -184,7 +184,7 @@ AEM에서는 기본적으로 San Jose (https://api.omniture.com/admin/1.4/rest/)
 1. 선택 **저장 및 닫기**.
 1. **[게시](/help/sites-authoring/publishing-pages.md)** 페이지와 연결된 구성/파일을 활성화하는 페이지입니다.
 1. 마지막 단계는 게시 인스턴스의 페이지를 방문하여 을 사용하여 키워드(예: egplant)를 검색하는 것입니다 **검색** 구성 요소.
-1. 그런 다음 적절한 도구를 사용하여 Adobe Analytics에 대한 호출을 확인할 수 있습니다. 예 [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+1. 그런 다음 적절한 도구를 사용하여 Adobe Analytics에 대한 호출을 확인할 수 있습니다. 예 [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 1. 제공된 예제를 사용하여 호출에는 eVar7에 입력한 값(즉, 계기)이 포함되어야 하며 이벤트 목록에는 event3이 포함되어야 합니다.
 
 ### 페이지 조회수 {#page-views}

@@ -8,10 +8,10 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '4703'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 3%
    1. 선택 **[!UICONTROL Forms]** 에서 **[!UICONTROL 솔루션]** 드롭다운 목록.
    2. 패키지의 버전 및 유형을 선택합니다. 를 사용할 수도 있습니다 **[!UICONTROL 다운로드 검색]** 결과를 필터링하는 옵션.
 1. 탭하기 **we-gov-forms.pkg.all-&lt;version>.zip** 패키지 이름, 선택 **[!UICONTROL EULA 약관 동의]**, 탭 **[!UICONTROL 다운로드]**.
-1. [패키지 관리자](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
    ![gov forms 패키지](assets/wegov_forms_package.jpg)
@@ -225,7 +225,7 @@ ht-degree: 3%
 
 **참조:**
 
-1. [Microsoft Dynamics OData 구성](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
+1. [Microsoft Dynamics OData 구성](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
 1. [AEM Forms용 Microsoft Dynamics 구성](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
 
 #### MS Dynamics OData 클라우드 서비스 {#ms-dynamics-odata-cloud-service}
@@ -472,7 +472,7 @@ Adobe Forms을 사용하여 AEM Forms을 설치하고 구성하려면 전환 도
 
 추가 지침을 읽기 전에 다음 사항을 검토하십시오.
 
-* [자동 양식 전환 서비스 구성](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html)
+* [자동 양식 전환 서비스 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 #### IMS 구성 만들기 1부 {#creating-ims-config}
 
@@ -569,7 +569,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 검토할 수
 
 1. 이 구성의 경우 두 개의 확인란 값을 비워둡니다.
 
-   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
+   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### 클라우드 구성 구성(We.Finance AFC 프로덕션) {#configure-cloud-configuration-wefinance}
 
@@ -599,7 +599,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 1. 이 구성의 경우 두 개의 확인란 값을 비워둡니다.
 
-   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
+   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### 양식 변환 테스트(We.Gov 등록 애플리케이션) {#test-forms-conversion}
 
@@ -639,7 +639,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 #### 알려진 문제 및 참고 사항 {#known-issues-notes}
 
-automated forms conversion 서비스에는 [우수 사례, 알려진 복잡한 패턴](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html), 및 [알려진 문제](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html). AEM Forms Automated forms conversion 서비스 사용을 시작하기 전에 이러한 사항을 검토하십시오.
+automated forms conversion 서비스에는 [우수 사례, 알려진 복잡한 패턴](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html), 및 [알려진 문제](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html). AEM Forms Automated forms conversion 서비스 사용을 시작하기 전에 이러한 사항을 검토하십시오.
 
 1. 변환 후 양식을 FDM에 바인딩하려면 데이터 바인딩 없이 적응형 양식 생성을 사용하는 양식을 생성합니다.
 

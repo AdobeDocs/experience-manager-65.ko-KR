@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Geometrixx Outdoors App config.xml은 */content/phonegap/geometrixx-outdoors/she
 
 ### 전체 앱 추적을 위해 코드 인스트루먼트 {#instrument-your-code-for-full-app-tracking}
 
-에는 몇 가지 추적 API가 제공됩니다 [AMS Phonegap 플러그인 API.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
+에는 몇 가지 추적 API가 제공됩니다 [AMS Phonegap 플러그인 API.](https://experienceleague.adobe.com/docs/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
 이렇게 하면 사용자가 앱에서 탐색하는 페이지, 가장 많이 사용되는 제어와 같은 상태 및 작업을 추적할 수 있습니다. 추적을 위해 앱을 계측하는 가장 쉬운 방법은 AMS 플러그인에서 제공하는 Analytics API를 사용하는 것입니다.
 

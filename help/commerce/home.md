@@ -2,10 +2,10 @@
 title: AEM Content and Commerce
 description: 통합 및 AEM Storefront 사용을 시작하는 방법에 대한 유용한 문서를 통해 AEM Content and Commerce를 사용하고 관리하는 방법을 이해합니다.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: 3ac32e5a2a1b2b266e2fc9f4ba8c7393a0566ff4
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,20 +33,20 @@ ht-degree: 79%
 | [관리 안내서](/help/sites-administering/home.md) | AEM 관리 방법 이해 |
 | [작성 안내서](/help/sites-authoring/home.md) | 이 안내서에서는 AEM의 작성 개념을 설명합니다. |
 | [클래식 UI 작성 안내서](/help/sites-classic-ui-authoring/home.md) | 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 설명합니다. |
-| [Screens 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html) | 동적이고 대화형 디지털 경험을 게시할 수 있는 디지털 서명 솔루션에 대해 알아봅니다. |
+| [Screens 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | 동적이고 대화형 디지털 경험을 게시할 수 있는 디지털 서명 솔루션에 대해 알아봅니다. |
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
-| [AEM Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
+| [AEM Livefyre](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 
 ## 주요 AEM 리소스
 
 * [AEM 자습서](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
-* [Dispatcher 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)
-* [HTL 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
-* [코어 구성 요소 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
+* [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

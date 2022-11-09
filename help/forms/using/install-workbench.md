@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2244'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -189,7 +189,7 @@ Workbench를 사용하려면 일반적으로 별도의 컴퓨터에서 실행되
 
 ### 시간 초과 설정 구성 {#configuring-timeout-settings}
 
-기본적으로 Workbench는 활동 또는 비활동과 관계없이 2시간 후에 시간 초과됩니다. 시간 초과 설정을 편집하려면 의 &quot;사용자 관리 구성 > 고급 시스템 속성 구성&quot;을 참조하십시오. <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">관리 콘솔 도움말</a>.
+기본적으로 Workbench는 활동 또는 비활동과 관계없이 2시간 후에 시간 초과됩니다. 시간 초과 설정을 편집하려면 의 &quot;사용자 관리 구성 > 고급 시스템 속성 구성&quot;을 참조하십시오. <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">관리 콘솔 도움말</a>.
 
 ### HTTPS를 통해 연결하도록 Workbench 구성 {#configuring-workbench-to-connect-over-HTTPS}
 

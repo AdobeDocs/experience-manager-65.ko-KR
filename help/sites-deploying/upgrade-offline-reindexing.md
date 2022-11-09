@@ -7,10 +7,10 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -178,7 +178,7 @@ AEM 6.4 이상 버전을 사용하는 AEM에는 시작 시퀀스에서 디스크
 
 ### Runbook 및 평가판 실행 준비 {#prepare-a-runbook-and-trial-run}
 
-을 준비하는 것이 좋습니다 [runbook](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) 프로덕션 환경에서 업그레이드를 실행하기 전에 몇 가지 테스트를 수행합니다.
+을 준비하는 것이 좋습니다 [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) 프로덕션 환경에서 업그레이드를 실행하기 전에 몇 가지 테스트를 수행합니다.
 
 ### 오프라인 색인화가 있는 문서 순회 모드 {#doc-traversal-mode-with-offline-indexing}
 

@@ -4,10 +4,10 @@ description: Fluid Experiences 기능 목록
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Adobe Experience Manager Fluid Experiences는 헤드리스 컨텐츠 게재를 위한 탄탄한 솔루션을 제공하기 위해 AEM Sites, AEM Dynamic Media 및 AEM Assets의 강력한 기능 세트에서 도출됩니다.
 
-AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점에서 기존의 AEM과 차별화됩니다. 제목이 많은 컨텐츠 제작 및 게재와 하이브리드 사용 사례에 대한 AEM의 강력한 지원은 [전체 AEM Sites, Assets 및 Dynamic Media 솔루션](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/user-guide/home.html)에서 사용할 수 있습니다.
+AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점에서 기존의 AEM과 차별화됩니다. 제목이 많은 컨텐츠 제작 및 게재와 하이브리드 사용 사례에 대한 AEM의 강력한 지원은 [전체 AEM Sites, Assets 및 Dynamic Media 솔루션](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=ko-KR)에서 사용할 수 있습니다.
 
 다음 표에서는 AEM Fluid Experiences의 기능을 정의하고 적절한 지원 설명서에 연결합니다.
 
@@ -53,7 +53,7 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 | [경험 조각](/help/sites-authoring/experience-fragments.md) |
 | 구조화된 컨텐츠를 위한 HTTP API(읽기) |
 | 구조화된 컨텐츠를 위한 HTTP API(CRUD) |
-| [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) |
+| [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## 관리 및 통합 기능 {#admin-and-integration-features}
@@ -66,7 +66,7 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 | [컨텐츠 번역](/help/sites-administering/translation.md) |
 | [모니터링](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [백업](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
+| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
 | [PIM 통합](/help/sites-authoring/managing-product-information.md) |
 | [프로젝트 및 작업](/help/sites-authoring/projects.md) |
 | [워크플로우](/help/sites-administering/workflows-starting.md) |
@@ -80,12 +80,12 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 | Adobe Analytics 기반의 Enhanced Insights |
 | Adobe Target 기반의 Enhanced Insights |
 
-## 추가 정보 {#learn-more}
+## 자세히 알아보기 {#learn-more}
 
 * [헤드리스 사용 사례를 위한 Fluid Experiences](https://helpx.adobe.com/kr/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
 * [AEM 컨텐츠 서비스: 무엇을, 왜, 어떻게?](https://helpx.adobe.com/kr/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [컨텐츠 서비스 사용](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
-* [모바일 앱 개발](https://docs.adobe.com/content/help/ko-KR/experience-manager-64/mobile/developing/developing-content-services.html)
+* [모바일 앱 개발](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/developing/developing-content-services.html)
 * [타사 액세스에 대한 FAQ](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
 * [어디에서나 Fluid Experiences](https://helpx.adobe.com/kr/experience-manager/using/using-sling-apis.html)
 * [Sling API 사용](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)

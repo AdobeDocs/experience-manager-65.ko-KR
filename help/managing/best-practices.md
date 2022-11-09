@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '3264'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -628,7 +628,7 @@ Go Live가 가능한 한 부드러워지기를 원하는 것입니다. 마지막
 
       * [개발 - 기본 사항](/help/sites-developing/the-basics.md)
       * [MSM 개념](/help/sites-administering/msm.md)
-      * [HTL(HTML 템플릿 언어)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+      * [HTL(HTML 템플릿 언어)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 * 관련 설명서
 

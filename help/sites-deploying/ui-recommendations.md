@@ -11,10 +11,10 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -62,7 +62,7 @@ Adobe은 고객이 2018/19에서 새 UI로 전환할 것을 권장합니다. 이
  <tbody>
   <tr>
    <th>내 프로젝트...</th>
-   <th>추천</th>
+   <th>권장 사항</th>
   </tr>
   <tr>
    <td>이제 Adobe Experience Manager을 사용하기 시작합니다.</td>
@@ -131,5 +131,4 @@ AEM 6.5에서 터치 지원 UI에 대한 개선 사항에 대한 자세한 내�
 
 * [터치 지원 UI에서 페이지 작성 사용자 지정](/help/sites-developing/customizing-page-authoring-touch.md) (샘플 코드 포함).
 
-* [터치 지원 사용자 지정에 대한 AEM Gem 세션](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 * [Granite UI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).

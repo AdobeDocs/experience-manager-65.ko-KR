@@ -12,10 +12,10 @@ discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
 role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +31,11 @@ AEM Communities은 사용자 프로필을 관리하고 사용자 생성 콘텐�
 
 >[!NOTE]
 >
->구성한 경우 [AEM Communities의 Adobe Analytics](/help/communities/analytics.md) 사이트에서 캡처된 사용자 데이터는 Adobe Analytics 서버로 전송됩니다. Adobe Analytics은 사용자 데이터에 액세스, 내보내기 및 삭제하고 GDPR을 준수하는 데 사용할 수 있는 API를 제공합니다. 자세한 내용은 [액세스 및 삭제 요청 제출](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+>구성한 경우 [AEM Communities의 Adobe Analytics](/help/communities/analytics.md) 사이트에서 캡처된 사용자 데이터는 Adobe Analytics 서버로 전송됩니다. Adobe Analytics은 사용자 데이터에 액세스, 내보내기 및 삭제하고 GDPR을 준수하는 데 사용할 수 있는 API를 제공합니다. 자세한 내용은 [액세스 및 삭제 요청 제출](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 이러한 API를 사용하려면 `/services/social/ugcmanagement` UserUgcManagement 서비스를 활성화하여 끝점입니다. 이 서비스를 활성화하려면 [샘플 서블릿](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) 사용 가능 [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). 그런 다음 http 요청을 사용하여 커뮤니티 사이트의 게시 인스턴스에 있는 엔드포인트를 다음과 같이 히트합니다.
 
-`https://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation=<getUgc>`. 그러나 UI(사용자 인터페이스)를 작성하여 시스템에서 사용자 프로필과 사용자 생성 컨텐츠를 관리할 수도 있습니다.
+`https://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation=<getUgc>`을 따르지 않는 경우입니다. 그러나 UI(사용자 인터페이스)를 작성하여 시스템에서 사용자 프로필과 사용자 생성 컨텐츠를 관리할 수도 있습니다.
 
 이러한 API를 사용하면 다음 기능을 수행할 수 있습니다.
 
@@ -63,7 +63,7 @@ AEM Communities은 사용자 프로필을 관리하고 사용자 생성 콘텐�
 
 ### Adobe Analytics에서 UGC 삭제 {#delete-ugc-from-adobe-analytics}
 
-Adobe Analytics에서 사용자 데이터를 삭제하려면 [GDPR Analytics 워크플로우](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html); api는 Adobe Analytics에서 사용자 데이터를 삭제하지 않습니다.
+Adobe Analytics에서 사용자 데이터를 삭제하려면 [GDPR Analytics 워크플로우](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html); api는 Adobe Analytics에서 사용자 데이터를 삭제하지 않습니다.
 
 AEM Communities에서 사용하는 Adobe Analytics 변수 매핑에 대해서는 다음 이미지를 참조하십시오.
 

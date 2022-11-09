@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '3811'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 4%
    + [적응형 양식 작성 소개](using/introduction-forms-authoring.md)
    + [대화형 통신 소개](using/interactive-communications-overview.md)
    + [양식 관리 소개](using/introduction-managing-forms.md)
-   + [자동 양식 전환 서비스 소개](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
+   + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
    + 자습서: 첫 번째 적응형 양식 만들기 {#create-first-adaptive-form}
       + [자습서: 첫 번째 적응형 양식 만들기](using/create-your-first-adaptive-form.md)
       + [자습서: 적응형 양식 만들기](using/create-adaptive-form.md)
@@ -57,12 +57,12 @@ ht-degree: 4%
    + [AEM Forms을 위한 아키텍처 및 배포 토폴로지](using/aem-forms-architecture-deployment.md)
    + [AEM Forms 설치에 대한 지속성 유형 선택](using/choosing-persistence-type-for-aem-forms.md)
    + OSGi에 AEM Forms 설치 {#osgi-installation}
-      + [OSGi에서 AEM 양식에 대해 지원되는 플랫폼](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
+      + [OSGi에서 AEM 양식에 대해 지원되는 플랫폼](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html)
       + [문서 서비스 설치 및 구성](using/install-configure-document-services.md)
       + [데이터 캡처 기능 설치 및 구성](using/installing-configuring-aem-forms-osgi.md)
       + [OSGi에서 Forms 중심의 워크플로우 설치 및 구성](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [대화형 통신 설치 및 구성](using/installing-configuring-intreactive-communication-correspondence-management.md)
-      + [automated forms conversion 서비스 설치 및 구성](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+      + [automated forms conversion 서비스 설치 및 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + JEE에 AEM Forms 설치 {#jee-installation}
       + [JEE에서 AEM Forms에 대해 지원되는 플랫폼](using/aem-forms-jee-supported-platforms.md)
       + [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
@@ -578,8 +578,8 @@ ht-degree: 4%
    + [프로세스 보고의 임시 쿼리](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [프로세스 보고 문제 해결](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + 개발자 참조 {#developer-reference}
-   + [개발자 기본 사항](https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html)
-   + [HTML 템플릿 언어](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+   + [개발자 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+   + [HTML 템플릿 언어](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
    + [적응형 양식을 디버깅하는 AEM 플러그인](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
    + [JEE Java API 참조의 AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)

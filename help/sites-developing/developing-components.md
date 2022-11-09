@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: f2a208acfa28f23cbf63d055c5d28698df476892
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '3485'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +81,7 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저�
 
 ### HTML 템플릿 언어 사용 {#using-the-html-template-language}
 
-다음 [HTL(HTML 템플릿 언어)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)에서는 AEM 6.0에서 도입되었으며 HTML을 위한 서버측 템플릿 시스템으로 JSP(Java 서버 페이지) 대신 선호되고 권장됩니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTL을 사용하면 보안 및 개발 효율성이 향상됩니다.
+다음 [HTL(HTML 템플릿 언어)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)에서는 AEM 6.0에서 도입되었으며 HTML을 위한 서버측 템플릿 시스템으로 JSP(Java 서버 페이지) 대신 선호되고 권장됩니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTL을 사용하면 보안 및 개발 효율성이 향상됩니다.
 
 >[!NOTE]
 >
@@ -433,7 +433,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 >[!NOTE]
 >
->이제 를 사용할 때 UI 내에서 구성 요소 인스턴스의 자동 만들기를 쉽게 구성할 수 있습니다 [핵심 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html) 및 편집 가능한 템플릿. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 정보를 제공합니다.
+>이제 를 사용할 때 UI 내에서 구성 요소 인스턴스의 자동 만들기를 쉽게 구성할 수 있습니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 편집 가능한 템플릿. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 정보를 제공합니다.
 
 ## AEM Brackets 확장 사용 {#using-the-aem-brackets-extension}
 
@@ -442,7 +442,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 확장:
 
 * Maven 또는 File Vault가 필요 없는 간편한 동기화를 통해 개발자 효율성을 높이고 제한된 AEM 지식을 갖춘 프런트 엔드 개발자도 프로젝트에 참여할 수 있습니다.
-* 일부 제공 [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) 구성 요소 개발을 단순화하고 보안을 강화하기 위해 고안된 템플릿 언어인 지원.
+* 일부 제공 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 구성 요소 개발을 단순화하고 보안을 강화하기 위해 고안된 템플릿 언어인 지원.
 
 >[!NOTE]
 >
@@ -454,7 +454,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 * HTL
 
-   * 사용 [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) 는 필수가 아니지만, 구성 요소를 업데이트해야 하는 경우 고려해야 할 최적의 시간입니다 [JSP에서 HTL로 마이그레이션](/help/sites-developing/components-basics.md#htl-vs-jsp).
+   * 사용 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 는 필수가 아니지만, 구성 요소를 업데이트해야 하는 경우 고려해야 할 최적의 시간입니다 [JSP에서 HTL로 마이그레이션](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * 구성 요소
 

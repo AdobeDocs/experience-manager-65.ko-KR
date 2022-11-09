@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ AEM을 Adobe Target과 통합하려면 유효한 Adobe Target 계정이 있어�
 >
 >통합을 사용하려면 Target 팀이 계정을 활성화해야 합니다.
 >
->그렇지 않은 경우 [고객 지원 Adobe](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html).
+>그렇지 않은 경우 [고객 지원 Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
 
 ## Target 복제 에이전트 활성화 {#enabling-the-target-replication-agent}
 

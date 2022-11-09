@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Best Practices
 description: AEM 6.5에 대한 우수 사례, 문제 해결 및 교육을 위한 리소스
 seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 54%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +46,7 @@ AEM은 조직에서 다양한 용도로 사용할 수 있으며, 회사 전반�
 * [AEM Communities 시작하기](/help/communities/getting-started.md)
 * [AEM Livefyre 시작하기](https://answers.livefyre.com/developers/getting-started/)
 
-새 것도 있습니다 [AEM을 사용하여 첫 번째 웹 사이트 만들기를 단계별로 안내하는 WKND 자습서입니다](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 뿐만 아니라 [Digital Foundation 솔루션 배포를 위한 단계별 지침](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html): AEM이 주요 빌딩 블록인 경우
+새 것도 있습니다 [AEM을 사용하여 첫 번째 웹 사이트 만들기를 단계별로 안내하는 WKND 자습서입니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR) 뿐만 아니라 [Digital Foundation 솔루션 배포를 위한 단계별 지침](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html): AEM이 주요 빌딩 블록인 경우
 
 ## AEM에 대한 권장 배포 {#deployments}
 

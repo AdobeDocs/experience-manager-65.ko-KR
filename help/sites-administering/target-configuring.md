@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: f64319e88687ba1f53c98d4768492a0b4f4b08b8
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 44%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ A4T Analytics Cloud 구성을 구성하여 컨텐츠를 타깃팅할 때 Adobe T
 
 >[!NOTE]
 >
->AEM 6.3에서 Target 라이브러리 파일을 선택할 수 있습니다. [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html): 일반적인 웹 구현과 단일 페이지 애플리케이션 둘 다에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
+>AEM 6.3에서 Target 라이브러리 파일을 선택할 수 있습니다. [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html): 일반적인 웹 구현과 단일 페이지 애플리케이션 둘 다에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
 >
 >AT.js는 mbox.js 라이브러리에 비해 몇 가지 개선점을 제공합니다.
 >
@@ -107,7 +107,7 @@ A4T Analytics Cloud 구성을 구성하여 컨텐츠를 타깃팅할 때 Adobe T
 옵트인 마법사를 사용하는 대신 Adobe Target과 수동으로 통합합니다.
 
 >[!NOTE]
-Target 라이브러리 파일인 [AT.js](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다. mbox.js 대신 AT.js를 클라이언트 라이브러리로 사용하는 것이 좋습니다.
+Target 라이브러리 파일인 [AT.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다. mbox.js 대신 AT.js를 클라이언트 라이브러리로 사용하는 것이 좋습니다.
 AT.js는 mbox.js 라이브러리에 비해 몇 가지 개선점을 제공합니다.
 * 웹 구현에 대한 페이지 로드 시간 개선
 * 보안 개선
@@ -209,7 +209,7 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 
 ### 활동을 Target 클라우드 구성과 연결  {#associating-activities-with-the-target-cloud-configuration}
 
-연결 [AEM 활동](/help/sites-authoring/activitylib.md) 의 활동을 미러링할 수 있도록 Target 클라우드 구성 사용 [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html).
+연결 [AEM 활동](/help/sites-authoring/activitylib.md) 의 활동을 미러링할 수 있도록 Target 클라우드 구성 사용 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 사용 가능한 활동 유형은 다음 방법으로 결정됩니다.

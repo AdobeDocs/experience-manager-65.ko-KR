@@ -1,7 +1,7 @@
 ---
 title: 대상자 관리
 seo-title: Managing Audiences
-description: 대상자 콘솔을 사용하면 Adobe Target 계정용 대상자를 생성, 구성 및 관리하거나 ContextHub 또는 Client Context용 세그먼트를 관리할 수 있습니다.
+description: 대상자 콘솔을 사용하여 Adobe Target 계정에 대한 대상자를 만들고, 구성하고 관리하거나 ContextHub용 세그먼트를 관리할 수 있습니다. 또는 Client Context
 seo-description: The Audiences console enables you to create, organize, and manage audiences for your Adobe Target account or manage segments for ContextHub or Client Context
 uuid: 76408a8c-25db-4e9f-8a69-27e820a2a7cf
 contentOwner: msm-service
@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
 docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -91,13 +91,13 @@ Adobe Target 대상자를 만들려면 다음 작업을 수행하십시오.
 
 | **특성** | **설명** | **추가 정보** |
 |---|---|---|
-| **모바일** | 모바일 디바이스, 디바이스 유형, 디바이스 공급업체, 화면 차원(픽셀) 등의 매개변수를 기반으로 하는 Target 모바일 디바이스입니다. | Adobe Target에서 [모바일 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/audiences/create-audiences/categories-audiences/mobile.html)를 참조하십시오. |
-| **사용자 정의** | 사용자 정의 매개변수는 mbox 매개변수입니다. 임의의 mbox 매개변수를 mbox에 전달하거나 targetPageParams 함수를 사용하는 경우 이러한 매개변수는 대상자에서 사용할 수 있도록 여기에 표시됩니다. | Adobe Target에서 [사용자 정의 매개변수 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)를 참조하십시오. |
+| **모바일** | 모바일 디바이스, 디바이스 유형, 디바이스 공급업체, 화면 차원(픽셀) 등의 매개변수를 기반으로 하는 Target 모바일 디바이스입니다. | Adobe Target에서 [모바일 설명서](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html)를 참조하십시오. |
+| **사용자 정의** | 사용자 정의 매개변수는 mbox 매개변수입니다. 임의의 mbox 매개변수를 mbox에 전달하거나 targetPageParams 함수를 사용하는 경우 이러한 매개변수는 대상자에서 사용할 수 있도록 여기에 표시됩니다. | Adobe Target에서 [사용자 정의 매개변수 설명서](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)를 참조하십시오. |
 | **OS** | 특정 운영 체제를 사용하는 방문자를 타겟팅할 수 있습니다. | Linux, Macintosh 또는 Windows를 사용하는 사용자를 타겟팅합니다. |
-| **사이트 페이지** | 특정 페이지에 있거나 특정 mbox 매개변수를 가진 방문자를 타겟팅합니다. | Adobe Target에서 [사이트 페이지 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/audiences/create-audiences/categories-audiences/site-pages.html)를 참조하십시오. |
+| **사이트 페이지** | 특정 페이지에 있거나 특정 mbox 매개변수를 가진 방문자를 타겟팅합니다. | Adobe Target에서 [사이트 페이지 설명서](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html)를 참조하십시오. |
 | **브라우저** | 페이지를 방문할 때 특정 브라우저나 특정 브라우저 선택 사항을 사용하는 사용자를 타깃팅할 수 있습니다. | Adobe Target에서 [브라우저 옵션 설명서](https://docs.adobe.com/help/ko-KR/target/using/audiences/create-audiences/categories-audiences/browser.html)를 참조하십시오. |
-| **방문자 프로필** | 특정 프로필 매개변수를 충족하는 Target 방문자입니다. | Adobe Target에서 [방문자 프로필 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/audiences/visitor-profiles/visitor-profile.html)를 참조하십시오. |
-| **트래픽 소스** | 사이트 방문 시 사용한 검색 엔진 또는 랜딩 페이지에 따라 방문자를 타겟팅합니다. | Adobe Target에서 [트래픽 소스 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)를 참조하십시오. |
+| **방문자 프로필** | 특정 프로필 매개변수를 충족하는 Target 방문자입니다. | Adobe Target에서 [방문자 프로필 설명서](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html)를 참조하십시오. |
+| **트래픽 소스** | 사이트 방문 시 사용한 검색 엔진 또는 랜딩 페이지에 따라 방문자를 타겟팅합니다. | Adobe Target에서 [트래픽 소스 설명서](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)를 참조하십시오. |
 
 ## 대상자 콘솔에서 대상자 수정 {#modifying-an-audience-in-the-audiences-console}
 

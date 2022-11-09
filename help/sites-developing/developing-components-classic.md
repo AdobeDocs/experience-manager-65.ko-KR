@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '2394'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 >
 >클래식 UI용 구성 요소를 개발하는 데 HTL(HTML 템플릿 언어)과 JSP를 모두 사용할 수 있지만 이 페이지에서는 JSP를 사용한 개발에 대해 설명합니다. 이는 클래식 UI 내에서 JSP를 사용한 내역이 기인한 것입니다.
 >
->이제 HTL이 AEM에 권장되는 스크립팅 언어입니다. 자세한 내용은 [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md) 를 사용하여 메서드를 비교할 수 있습니다.
+>이제 HTL이 AEM에 권장되는 스크립팅 언어입니다. 자세한 내용은 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md) 를 사용하여 메서드를 비교할 수 있습니다.
 
 ## 구조 {#structure}
 
@@ -95,13 +95,13 @@ AEM WCM의 컨텐츠에 액세스하는 방법에는 세 가지가 있습니다.
 
    다음 `currentPage` 개체는 페이지의 인스턴스입니다. [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). 페이지 클래스는 컨텐츠에 액세스하는 몇 가지 방법을 제공합니다.
 
-   예제: `String pageTitle = currentPage.getTitle();`
+   예: `String pageTitle = currentPage.getTitle();`
 
 * Via `currentNode` 에 도입된 객체 `global.jsp`:
 
    다음 `currentNode` 개체는 노드의 인스턴스입니다. [JCR API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). 노드의 속성은 `getProperty()` 메서드를 사용합니다.
 
-   예제: `String pageTitle = currentNode.getProperty("jcr:title");`
+   예: `String pageTitle = currentNode.getProperty("jcr:title");`
 
 ## JSP 태그 라이브러리 {#jsp-tag-libraries}
 

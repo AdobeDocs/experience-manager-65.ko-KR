@@ -10,10 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## 개요 {#overview}
 
-AEM Brackets 확장은 AEM 구성 요소와 클라이언트 라이브러리를 편집하는 원활한 워크플로우를 제공하고 의 기능을 활용합니다 [대괄호](https://brackets.io/) 코드 편집기: 코드 편집기 내에서 Photoshop 파일 및 레이어에 대한 액세스 권한을 제공합니다. 확장에서 제공하는 간편한 동기화(Maven 또는 File Vault 필요 없음)는 개발자 효율성을 높이고 제한된 AEM 지식을 갖춘 프런트 엔드 개발자도 프로젝트에 참여할 수 있도록 지원합니다. 이 확장은 또한 [HTL(HTML 템플릿 언어)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)에서는 구성 요소를 보다 쉽고 안전하게 개발할 수 있도록 JSP의 복잡성을 줄입니다.
+AEM Brackets 확장은 AEM 구성 요소와 클라이언트 라이브러리를 편집하는 원활한 워크플로우를 제공하고 의 기능을 활용합니다 [대괄호](https://brackets.io/) 코드 편집기: 코드 편집기 내에서 Photoshop 파일 및 레이어에 대한 액세스 권한을 제공합니다. 확장에서 제공하는 간편한 동기화(Maven 또는 File Vault 필요 없음)는 개발자 효율성을 높이고 제한된 AEM 지식을 갖춘 프런트 엔드 개발자도 프로젝트에 참여할 수 있도록 지원합니다. 이 확장은 또한 [HTL(HTML 템플릿 언어)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)에서는 구성 요소를 보다 쉽고 안전하게 개발할 수 있도록 JSP의 복잡성을 줄입니다.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 

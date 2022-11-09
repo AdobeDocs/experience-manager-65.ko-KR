@@ -10,10 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
-source-git-commit: e1536c370b37d82d4d7890dcc063af85145730bb
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -141,7 +141,7 @@ UGC 가져오기를 사용하여 Livefyre Studio에서 AEM Assets으로 Twitter 
 
 >[!NOTE]
 >
->Assets를 사용하여 UGC를 가져오기 전에 Livefyre Studio에서 Social 계정 및 권한 요청 계정을 설정해야 합니다. 자세한 내용은 [설정: 권한 요청](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) 추가 정보.
+>Assets를 사용하여 UGC를 가져오기 전에 Livefyre Studio에서 Social 계정 및 권한 요청 계정을 설정해야 합니다. 자세한 내용은 [설정: 권한 요청](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) 추가 정보.
 
 UGC를 AEM Assets에 가져오려면 다음을 수행하십시오.
 

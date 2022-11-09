@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: 4df14f837569997c3e4da8161ac2b099c39d89a6
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '1942'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->이 문서는 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) ( 클래식 UI) 아래에 그룹화됩니다. Adobe은 [핵심 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md) 터치 지원 UI에서 양식 개발을 위한 무료.
+>이 문서는 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) ( 클래식 UI) 아래에 그룹화됩니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md) 터치 지원 UI에서 양식 개발을 위한 무료.
 
 ## 양식 값 미리 로드 {#preloading-form-values}
 

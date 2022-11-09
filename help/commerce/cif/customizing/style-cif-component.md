@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 3%
 
 이러한 클라이언트 라이브러리에서 관리하는 CSS를 추가 및 재정의하여 AEM CIF 코어 구성 요소에 브랜드별 스타일을 적용할 수 있습니다. 클라이언트 라이브러리가 구조화되고 페이지에 포함되는 방식을 이해하는 것이 중요합니다.
 
-다음 [ui.frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/uifrontend.html) 은(는) [웹 팩](https://webpack.js.org/) 프로젝트에 대한 모든 프런트 엔드 자산을 관리하는 프로젝트입니다. 이를 통해 프런트 엔드 개발자는 다양한 언어 및 기술을 사용할 수 있습니다. [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) 더 많은 것을 제공합니다.
+다음 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 은(는) [웹 팩](https://webpack.js.org/) 프로젝트에 대한 모든 프런트 엔드 자산을 관리하는 프로젝트입니다. 이를 통해 프런트 엔드 개발자는 다양한 언어 및 기술을 사용할 수 있습니다. [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) 더 많은 것을 제공합니다.
 
 다음 `ui.frontend` 모듈도 Maven 모듈이며, NPM 모듈을 사용하여 더 큰 프로젝트와 통합됩니다 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). 빌드 중에 `aem-clientlib-generator` 는 컴파일된 CSS 및 JavaScript 파일을 `ui.apps` 모듈.
 
@@ -79,7 +79,7 @@ ht-degree: 3%
 
 ## 티저 스타일 업데이트 {#ui-frontend-module}
 
-그런 다음 Teaser 스타일을 약간 변경하여 `ui.frontend` 모듈 및 클라이언트 라이브러리가 작동합니다. 사용 [원하는 IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) 벤 프로젝트를 가져오기 위해 사용된 스크린샷은 [Visual Studio 코드 IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+그런 다음 Teaser 스타일을 약간 변경하여 `ui.frontend` 모듈 및 클라이언트 라이브러리가 작동합니다. 사용 [원하는 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) 벤 프로젝트를 가져오기 위해 사용된 스크린샷은 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
 1. 탐색 및 확장 **ui.frontend** 폴더 계층 구조를 모듈로 확장하고 다음을 수행합니다. `ui.frontend/src/main/styles/commerce`:
 
@@ -176,7 +176,7 @@ ht-degree: 3%
 
    이러한 클라이언트 라이브러리는 `ui.frontend` 모듈. 대신 이러한 클라이언트 라이브러리에는 Adobe에서 제공하는 CSS 및 JavaScript 종속성이 포함됩니다. 이러한 클라이언트 라이브러리에 대한 정의는 `.content.xml` 각 폴더 아래의 파일.
 
-   **clientlib-base** - 필요한 종속성을 단순히 포함하는 빈 클라이언트 라이브러리입니다. [AEM 코어 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html). 카테고리는 다음과 같습니다 `venia.base`.
+   **clientlib-base** - 필요한 종속성을 단순히 포함하는 빈 클라이언트 라이브러리입니다. [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 카테고리는 다음과 같습니다 `venia.base`.
 
    **clientlib-cif** - 또한 필요한 종속성을 단순히 포함하는 빈 클라이언트 라이브러리입니다. [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components). 카테고리는 다음과 같습니다 `venia.cif`.
 
@@ -443,7 +443,7 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
    ```
 
    >[!NOTE]
-   >추가 항목이 있습니다 [IDE 설정 및 도구](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) 전체 Maven 빌드를 수행하지 않고도 프로젝트 파일을 로컬 AEM 인스턴스에 직접 동기화할 수 있습니다.
+   >추가 항목이 있습니다 [IDE 설정 및 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) 전체 Maven 빌드를 수행하지 않고도 프로젝트 파일을 로컬 AEM 인스턴스에 직접 동기화할 수 있습니다.
 
 ## 업데이트된 제품 티저 보기 {#view-updated-product-teaser}
 
@@ -471,7 +471,7 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
 
 ## 보너스 챌린지 {#bonus-challenge}
 
-를 사용하십시오 [AEM 스타일 시스템](/help/sites-authoring/style-system.md) 컨텐츠 작성자가 설정/해제할 수 있는 두 개의 스타일을 만들려면 [스타일 시스템을 사용한 개발](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) 이 작업을 수행하는 방법에 대한 자세한 단계 및 정보가 포함되어 있습니다.
+를 사용하십시오 [AEM 스타일 시스템](/help/sites-authoring/style-system.md) 컨텐츠 작성자가 설정/해제할 수 있는 두 개의 스타일을 만들려면 [스타일 시스템을 사용한 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) 이 작업을 수행하는 방법에 대한 자세한 단계 및 정보가 포함되어 있습니다.
 
 ![보너스 챌린지 - 스타일 시스템](../assets/style-cif-component/bonus-challenge.png)
 
@@ -479,7 +479,7 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
 
 * [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components)
-* [로컬 AEM 개발 환경 설정](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [로컬 AEM 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [클라이언트측 라이브러리](/help/sites-developing/clientlibs.md)
-* [AEM Sites 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-* [스타일 시스템을 사용한 개발](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [스타일 시스템을 사용한 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html)

@@ -11,10 +11,10 @@ discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 role: Admin
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -62,10 +62,10 @@ ht-degree: 1%
 
 Dispatcher에서 캐싱 적응형 양식을 활성화하고 구성하려면 아래 단계를 수행하십시오.
 
-1. 환경의 모든 게시 인스턴스에 대해 다음 URL을 엽니다. [환경의 게시 인스턴스에 대해 플러시 에이전트 활성화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. 환경의 모든 게시 인스턴스에 대해 다음 URL을 엽니다. [환경의 게시 인스턴스에 대해 플러시 에이전트 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [dispatcher.any 파일에 다음 내용을 추가합니다](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
+1. [dispatcher.any 파일에 다음 내용을 추가합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
 
    ```JSON
       /invalidate
@@ -94,7 +94,7 @@ Dispatcher에서 캐싱 적응형 양식을 활성화하고 구성하려면 아�
    * 적응형 양식은 업데이트된 버전의 양식이 게시되지 않을 때까지 캐시에 남아 있습니다.
 
    * 적응형 양식에서 참조되는 최신 버전의 리소스가 게시되면 영향을 받는 적응형 양식이 자동으로 무효화됩니다. 참조된 리소스의 자동 무효화에 대한 몇 가지 예외가 있습니다. 예외에 대한 해결 방법은 다음을 참조하십시오 [문제 해결](#troubleshooting) 섹션을 참조하십시오.
-1. [아래 rules dispatcher.any 또는 custom rules 파일을 추가합니다.](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). 캐싱을 지원하지 않는 URL은 제외합니다. 예를 들어 대화형 커뮤니케이션이 있습니다.
+1. [아래 rules dispatcher.any 또는 custom rules 파일을 추가합니다.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). 캐싱을 지원하지 않는 URL은 제외합니다. 예를 들어 대화형 커뮤니케이션이 있습니다.
 
    ```JSON
       /0000 {
@@ -118,7 +118,7 @@ Dispatcher에서 캐싱 적응형 양식을 활성화하고 구성하려면 아�
       }
    ```
 
-1. [다음 매개 변수를 URL 매개 변수 무시 목록에 추가합니다](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
+1. [다음 매개 변수를 URL 매개 변수 무시 목록에 추가합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
 
    ```JSON
       /ignoreUrlParams {
@@ -128,7 +128,7 @@ Dispatcher에서 캐싱 적응형 양식을 활성화하고 구성하려면 아�
       }
    ```
 
-AEM 환경은 적응형 양식을 캐시하도록 구성되어 있습니다. 모든 유형의 적응형 양식을 캐시합니다. 캐시된 페이지를 제공하기 전에 페이지에 대한 사용자 액세스 권한을 확인해야 하는 요구 사항이 있는 경우 다음을 참조하십시오 [보안 콘텐츠 캐싱](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+AEM 환경은 적응형 양식을 캐시하도록 구성되어 있습니다. 모든 유형의 적응형 양식을 캐시합니다. 캐시된 페이지를 제공하기 전에 페이지에 대한 사용자 액세스 권한을 확인해야 하는 요구 사항이 있는 경우 다음을 참조하십시오 [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## 문제 해결 {#troubleshooting}
 

@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -36,10 +36,10 @@ We.Retail은 AEM 표준 참조 구현으로서 AEM의 가장 강력한 기능 �
 | [세계화된 사이트 구조](/help/sites-administering/tc-bp.md) | We.Retail에는 국가별 사이트에 라이브로 복사된 언어 마스터가 포함되어 있습니다. | [해 봐!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) | 모든 페이지에는 화면 및 장치 크기에 맞게 동적으로 조정되는 응답형 레이아웃이 포함되어 있습니다. | [해 봐!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md) | 모든 페이지는 편집 가능한 템플릿을 기반으로 하므로 개발자가 아닌 사용자가 템플릿을 조정하고 사용자 지정할 수 있습니다. | [해 봐!](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML 템플릿 언어](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html) | 모든 구성 요소는 HTL을 기반으로 합니다 |  |
+| [HTML 템플릿 언어](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | 모든 구성 요소는 HTL을 기반으로 합니다 |  |
 | [eCommerce 기능](/help/commerce/cif-classic/developing/ecommerce.md) | 제품 카탈로그 기능 |  |
 | [커뮤니티 사이트](/help/communities/overview.md) | 방문자가 커뮤니티 토론, 블로그 읽기 등에 참여할 수 있도록 허용 |  |
-| [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며 보다 편리하게 사용할 수 있으며 사용자가 즉시 구성할 수 있습니다 | [해 봐!](/help/sites-developing/we-retail-core-components.md) |
+| [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며 보다 편리하게 사용할 수 있으며 사용자가 즉시 구성할 수 있습니다 | [해 봐!](/help/sites-developing/we-retail-core-components.md) |
 | [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) | We.Retail 경험 섹션에서는 컨텐츠 조각을 통해 컨텐츠를 재사용하는 기능을 보여줍니다. | [한번 해봐!](/help/sites-developing/we-retail-content-fragments.md) |
 | [경험 조각](/help/sites-authoring/experience-fragments.md) | 경험 조각은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. | [한번 해봐!](/help/sites-developing/we-retail-experience-fragments.md) |
 
@@ -88,7 +88,7 @@ We.Retail은 기술적으로 더 강력하며 최신 AEM 기술을 활용하여 
 | 편집 가능한 템플릿 | 모든 페이지에 대해 | 사용할 수 없음 |
 | HTL | 모든 구성 요소 | 제한적 |
 | 타깃팅 | 모든 페이지에 대해 | Geometrixx Outdoors 전용 |
-| 스크린 | 사용 가능 | 사용할 수 없음 |
+| Screens | 사용 가능 | 사용할 수 없음 |
 | 모바일 | 사용할 수 없음 | 사용 가능 |
 | 원고 | 사용할 수 없음 | 사용 가능 |
 | 회전판, 다운로드, 차트 구성 요소 | 사용할 수 없음 | 사용 가능 |

@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Implementation User Guide
 description: AEM 6.5를 구현하는 방법에 대한 개요입니다
 seo-description: An overview of how to implement AEM 6.5
 exl-id: 33404f0d-c04c-4720-8a24-ded6738ec7d4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 42%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,16 +19,16 @@ AEM 개발자입니까? [AEM에서 개발을 시작합니다.](/help/sites-devel
 
 ## AEM용 핵심 구성 요소 {#core-components-for-aem}
 
-[확장 가능한 핵심 구성 요소를 사용하여 작성자가 콘텐츠를 쉽게 만들 수 있습니다.](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)
+[확장 가능한 핵심 구성 요소를 사용하여 작성자가 콘텐츠를 쉽게 만들 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
 ## AEM용 HTL(HTML 템플릿 언어) {#htl-for-aem}
 
-[AEM용으로 개발하려면 HTML 템플릿 언어 를 사용하십시오.](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+[AEM용으로 개발하려면 HTML 템플릿 언어 를 사용하십시오.](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 ## AEM용 Cloud Manager {#cloud-manager-for-aem}
 
-[AEM에서 Cloud Manager를 사용하는 방법을 이해합니다.](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+[AEM에서 Cloud Manager를 사용하는 방법을 이해합니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
 ## Dispatcher 구성 {#dispatcher-configuration}
 
-[AEM을 사용하여 디스패처 구성](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+[AEM을 사용하여 디스패처 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)

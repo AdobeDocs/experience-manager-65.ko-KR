@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +68,7 @@ AEM 경험 구성요소를 Adobe Target의 기본 작업 공간으로 내보내�
 >또한 자세한 내용은 다음을 참조하십시오.
 >
 >* [Adobe Target 개발](https://www.adobe.io/apis/experiencecloud/target.html)
->* [핵심 구성 요소 - 경험 조각](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
+>* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
 >
 
 
@@ -118,7 +118,7 @@ AEM 경험 구성요소를 Adobe Target의 기본 작업 공간으로 내보내�
    >
    >핵심 구성 요소를 참조하십시오.
    >
-   >[핵심 구성 요소 - 경험 조각](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
+   >[핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
 
    **Adobe Target**&#x200B;에서 다음을 선택합니다.
 

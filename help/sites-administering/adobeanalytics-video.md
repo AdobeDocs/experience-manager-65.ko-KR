@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1751'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -140,7 +140,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
 
 1. CQ 변수를 Adobe Analytics 속성에 매핑하려면 구성 요소의 CQ 변수 옆에 있는 ContentFinder에서 Adobe Analytics 속성을 드래그합니다.
 
-   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) 안내서.
+   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) 안내서.
 
 1. [프레임워크 추가](/help/sites-administering/adobeanalytics.md) 페이지를 클릭합니다.
 1. 에서 설정을 테스트하려면 **미리 보기 모드**&#x200B;에서 비디오를 재생하여 트리거할 Adobe Analytics 호출을 가져옵니다.
@@ -275,7 +275,7 @@ eventdata.events.milestoneXX
 
 1. CQ 변수를 Adobe Analytics 속성에 매핑하려면 구성 요소의 CQ 변수 옆에 있는 ContentFinder에서 Adobe Analytics 속성을 드래그합니다.
 
-   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) 안내서.
+   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) 안내서.
 
 1. [프레임워크 추가](/help/sites-administering/adobeanalytics.md) 페이지를 클릭합니다.
 1. 에서 설정을 테스트하려면 **미리 보기 모드**&#x200B;에서 비디오를 재생하여 트리거할 Adobe Analytics 호출을 가져옵니다.
@@ -383,4 +383,4 @@ eventdata.events.milestoneXX
 
 **이 자습서에 사용된 참조:**
 
-[0] [https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)

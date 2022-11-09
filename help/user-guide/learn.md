@@ -4,10 +4,10 @@ seo-title: Learn About AEM 6.5 Capabilities
 description: AEM 6.5의 필수 기능에 대한 설명입니다
 seo-description: An description of the essential capabilities of AEM 6.5
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: 52385af23b04cda33a88ec42bb150650eb58fe4e
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 30%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ AEM Forms는 해당 관리 기능, 문서 보안 및 통합된 분석과 함께 
 
 ## AEM Screens {#aem-screens}
 
-Screens는 포괄적인 디지털 마케팅 플랫폼과 함께 다양한 유형의 화면을 포함하는 동적 및 대화형 디지털 경험과 상호 작용을 게시할 수 있는 Adobe Experience Manager 기능입니다.  [추가 정보.](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)
+Screens는 포괄적인 디지털 마케팅 플랫폼과 함께 다양한 유형의 화면을 포함하는 동적 및 대화형 디지털 경험과 상호 작용을 게시할 수 있는 Adobe Experience Manager 기능입니다.  [추가 정보.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 

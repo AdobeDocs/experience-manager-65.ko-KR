@@ -2,10 +2,10 @@
 title: Adobe 컨텐츠 패키지 Maven 플러그인
 description: Content Package Maven 플러그인을 사용하여 AEM 응용 프로그램을 배포합니다.
 exl-id: 002c00ba-eda1-4481-bc35-1f4d972e4073
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ AEM에 구축된 패키지의 배포는 Adobe Content Package Maven 플러그인
 >자세한 내용은 다음을 참조하십시오.
 >
 >* 다음 [Adobe 컨텐츠 패키지 Maven 플러그인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) AEM 애플리케이션을 배포하는 방법에 대한 AEM as a Cloud Service 설명서의 문서 입니다.
->* 다음 [AEM 프로젝트 구조](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 최신 AEM 프로젝트를 구성하는 방법에 대한 AEM as a Cloud Service 설명서의 문서 입니다.
->* 다음 [AEM 프로젝트 원형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html) archetype을 사용하여 새 AEM 프로젝트를 시작하는 방법에 대한 설명서입니다.
+>* 다음 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 최신 AEM 프로젝트를 구성하는 방법에 대한 AEM as a Cloud Service 설명서의 문서 입니다.
+>* 다음 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) archetype을 사용하여 새 AEM 프로젝트를 시작하는 방법에 대한 설명서입니다.
 >
 >세 문서 모두 AEM 6.5에 적용됩니다.

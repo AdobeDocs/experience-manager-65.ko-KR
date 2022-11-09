@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '5355'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -296,7 +296,7 @@ When an experience is selected and the targeted component does not include an of
    >
    >
    >관리자는 **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**&#x200B;에서 이 구성을 설정해야 하는지 결정할 수 있습니다.
-   >사용자가 위치를 입력하도록 하려면 **위치 강제 적용** 확인란을 선택하십시오.
+   사용자가 위치를 입력하도록 하려면 **위치 강제 적용** 확인란을 선택하십시오.
 
 1. 오퍼를 생성할 경험을 선택합니다.
 1. 다음과 같이 오퍼를 생성합니다.
@@ -529,7 +529,7 @@ A/B 테스트 활동이 있는 경우, 대상은 왼쪽에 있고, 각 경험이
  </tbody>
 </table>
 
-성공 지표에 대한 자세한 내용은 [Adobe Target 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
+성공 지표에 대한 자세한 내용은 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
 
 ### 설정 구성(AEM 타겟팅) {#configuring-settings-aem-targeting}
 
@@ -568,28 +568,28 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. **목표 지표** 영역의 **기본 목표** 아래에서 추적하려는 성공 지표(전환, 수입, 참여)를 선택하고 지표를 측정하는 방법(또는 목표에 도달했음을 나타내기 위해 대상자가 취하는 조치)을 입력합니다. See definition of the goal metrics in the previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) on success metrics.
+1. **목표 지표** 영역의 **기본 목표** 아래에서 추적하려는 성공 지표(전환, 수입, 참여)를 선택하고 지표를 측정하는 방법(또는 목표에 도달했음을 나타내기 위해 대상자가 취하는 조치)을 입력합니다. See definition of the goal metrics in the previous table and see [Adobe Target documentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) on success metrics.
 
    오른쪽 상단에 있는 세 개의 점을 클릭하고 **이름 변경**&#x200B;을 선택하여 목표의 이름을 변경할 수 있습니다.
 
    모든 필드를 지워야 하는 경우 오른쪽 상단에 있는 세 개의 점을 클릭하고 **모든 필드 지우기**&#x200B;를 선택하십시오.
 
-   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. 이전 표에서 성공 지표를 카운트하는 방법에 대한 정의를 참조하고 [Adobe Target 설명서](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
+   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. 이전 표에서 성공 지표를 카운트하는 방법에 대한 정의를 참조하고 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
 
    >[!NOTE]
-   >정의된 목표가 하나 이상 있어야 합니다.
+   정의된 목표가 하나 이상 있어야 합니다.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
-   >지표에 누락된 정보가 있으면 빨간색 선이 지표를 둘러쌉니다.
+   지표에 누락된 정보가 있으면 빨간색 선이 지표를 둘러쌉니다.
 
 1. 성공 지표를 더 구성하려면 **새 지표 추가**&#x200B;를 클릭합니다.
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
    >[!NOTE]
-   >세 개의 점을 클릭하거나 탭하고 **삭제**&#x200B;를 클릭하거나 탭하여 목표를 추가로 제거할 수 있습니다. AEM을 사용하려면 정의된 목표가 하나 이상 있어야 합니다.
+   세 개의 점을 클릭하거나 탭하고 **삭제**&#x200B;를 클릭하거나 탭하여 목표를 추가로 제거할 수 있습니다. AEM을 사용하려면 정의된 목표가 하나 이상 있어야 합니다.
 
 1. 성공 지표를 카운트하는 방법을 추가로 제어하려면 **고급 설정**&#x200B;을 클릭하거나 탭하여 고급 설정에 액세스하십시오.
 1. **저장**&#x200B;을 클릭합니다.
@@ -611,7 +611,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
 프로필을 로드할 때 페이지에 예기치 않은 콘텐츠가 나타나면 이 목록에 있는 각 항목의 구성을 확인하십시오.
 
 >[!NOTE]
->A/B 테스트를 사용하는 경우에는 시뮬레이션할 때 경험이 트래픽 비율을 기반으로 표시됩니다. 이는 Adobe Target에 의해 제어되므로 이로 인해 작성자가 예상하지 못한 결과가 발생할 수 있습니다. (작성자 활동은 시뮬레이션 중에 재평가를 허용하는 특정 설정과 동기화됩니다.) 작성자가 트래픽 설정에 따라 다른 경험을 보려면 새로 고침을 해야 할 수 있습니다.
+A/B 테스트를 사용하는 경우에는 시뮬레이션할 때 경험이 트래픽 비율을 기반으로 표시됩니다. 이는 Adobe Target에 의해 제어되므로 이로 인해 작성자가 예상하지 못한 결과가 발생할 수 있습니다. (작성자 활동은 시뮬레이션 중에 재평가를 허용하는 특정 설정과 동기화됩니다.) 작성자가 트래픽 설정에 따라 다른 경험을 보려면 새로 고침을 해야 할 수 있습니다.
 
 방문자의 경험을 시뮬레이션하려면 다음 도구를 사용하십시오.
 
@@ -704,7 +704,7 @@ Adobe Target을 엔진으로 선택하는 경우:
 </table>
 
 >[!NOTE]
->구성 요소를 선택하여 이를 타겟팅이 가능하도록 만들면 AEM도 이 구성 요소를 교체하고 Adobe Target 구성 요소를 주입합니다. (Adobe Target 구성 요소는 수동으로 페이지에 추가할 때에만 사용되는 것이 아니라, 기존 구성 요소를 타겟팅할 때에도 사용됩니다.)
+구성 요소를 선택하여 이를 타겟팅이 가능하도록 만들면 AEM도 이 구성 요소를 교체하고 Adobe Target 구성 요소를 주입합니다. (Adobe Target 구성 요소는 수동으로 페이지에 추가할 때에만 사용되는 것이 아니라, 기존 구성 요소를 타겟팅할 때에도 사용됩니다.)
 
 Client Context(클라이언트측)를 엔진으로 선택하는 경우:
 

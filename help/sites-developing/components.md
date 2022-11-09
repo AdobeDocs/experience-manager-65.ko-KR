@@ -10,10 +10,10 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 17%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 17%
 * 표준화된 사용자 인터페이스를 사용합니다.
 * 구성할 수 있는 편집 동작이 있습니다.
 * Granite UI 구성 요소를 기반으로 하위 요소를 사용하여 빌드된 대화 상자 사용
-* 를 사용하여 개발 [HTL](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html) (권장) 또는 JSP입니다.
+* 를 사용하여 개발 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (권장) 또는 JSP입니다.
 * 기본 기능을 확장하는 사용자 지정된 구성 요소를 만들기 위해 개발할 수 있습니다.
 
 구성 요소는 모듈이므로 다음 작업을 수행할 수 있습니다.
@@ -64,7 +64,7 @@ AEM에는 다음과 같은 다양한 기능이 포함되어 있습니다 [즉시
 
 사용할 수 있는 Adobe 제공 AEM 구성 요소 세트에는 두 가지가 있습니다.
 
-* [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
+* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)
 
 **핵심 구성 요소** 는 AEM 6.3에서 도입되었으며 유연하고 기능이 풍부한 작성 기능을 제공합니다. 다음 [We.Retail 참조 사이트](/help/sites-developing/we-retail.md) 는 핵심 구성 요소를 사용할 수 있는 방법을 설명하고 구성 요소 개발의 현재 모범 사례를 나타냅니다.
@@ -73,7 +73,7 @@ AEM에는 다음과 같은 다양한 기능이 포함되어 있습니다 [즉시
 
 >[!NOTE]
 >
->[핵심 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) 구성 요소 디자인 및 개발에 대한 현재 모범 사례를 나타내며 참조 구현으로 사용됩니다.
+>[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 구성 요소 디자인 및 개발에 대한 현재 모범 사례를 나타내며 참조 구현으로 사용됩니다.
 >
 >[AEM 현대화 도구](modernization-tools.md) 핵심 구성 요소로의 마이그레이션에 도움이 될 수 있습니다.
 
@@ -106,7 +106,7 @@ AEM 인스턴스에서 사용 가능한 모든 구성 요소에 대한 개요를
 * [컨텐츠 조각용 구성 요소](/help/sites-developing/components-content-fragments.md)
 * [JSON 형식으로 페이지 정보 얻기](/help/sites-developing/pageinfo.md)
 * [구성 요소 다국어화](/help/sites-developing/i18n.md)
-* [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [조건 숨기기 사용](/help/sites-developing/hide-conditions.md)
 * 클래식 UI
 

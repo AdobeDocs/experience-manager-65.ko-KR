@@ -10,10 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,7 @@ JSON Exporter 프레임워크에서 고려하려면 모델 인터페이스가 �
 
 ## 예 {#example}
 
-핵심 구성 요소는 릴리스 이후 JSON 내보내기를 지원했습니다 [핵심 구성 요소의 1.1.0](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html) 및 를 참조로 사용할 수 있습니다.
+핵심 구성 요소는 릴리스 이후 JSON 내보내기를 지원했습니다 [핵심 구성 요소의 1.1.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 를 참조로 사용할 수 있습니다.
 
 예를 들어 이미지 코어 구성 요소의 Sling 모델 구현과 주석으로 구성된 인터페이스를 참조하십시오.
 
@@ -98,4 +98,4 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [콘텐츠 서비스에 대한 JSON 내보내기](/help/sites-developing/json-exporter.md)
-* [핵심 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) 그리고 [컨텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 그리고 [컨텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

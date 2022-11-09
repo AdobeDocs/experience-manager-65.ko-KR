@@ -2,10 +2,10 @@
 title: 장식 태그
 description: 웹 페이지의 구성 요소를 렌더링할 때 HTML 요소를 생성하여 자체에 렌더링된 구성 요소를 둘러쌀 수 있습니다. 개발자를 위해 AEM에서는 포함된 구성 요소를 감싸는 데코레이션 태그를 제어하는 분명하고 단순한 로직을 제공합니다.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 10%
 * 구성 요소 자체는 속성 세트로 장식 태그를 구성할 수 있습니다.
 * 구성 요소(HTL, JSP, 디스패처 등)를 포함하는 스크립트는 포함 매개 변수로 장식 태그의 측면을 정의할 수 있습니다.
 
-## 추천 {#recommendations}
+## 권장 사항 {#recommendations}
 
 다음은 예기치 않은 문제가 발생하지 않도록 하는 데 도움이 되는 래퍼 요소를 포함할 시기에 대한 일반적인 권장 사항입니다.
 
@@ -62,7 +62,7 @@ ht-degree: 10%
 
 HTL 스크립트에서 래퍼 태그의 동작 및 관련 로직을 완전히 제어할 수 있습니다.
 
-HTL에서의 개발에 대한 자세한 내용은 [HTL 설명서](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
+HTL에서의 개발에 대한 자세한 내용은 [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
 
 #### 의사 결정 트리 {#decision-tree}
 

@@ -11,10 +11,10 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 25%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -121,7 +121,7 @@ ht-degree: 25%
 1. 열기 **[!UICONTROL Forms 일반 구성 서비스].**
 1. 에서 **[!UICONTROL 허용]** 필드, **선택** 모든 사용자 - 익명 또는 로그인한 모든 사용자는 첨부 파일을 미리 보고, 양식을 확인 및 서명하고, **[!UICONTROL 저장].** 작성자 인스턴스가 을 사용하도록 구성되었습니다 [!DNL Adobe Sign].
 1. 구성을 게시합니다.
-1. 사용 [복제](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) 해당 게시 인스턴스에 동일한 구성을 만들려면
+1. 사용 [복제](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=ko-KR) 해당 게시 인스턴스에 동일한 구성을 만들려면
 
 자, [!DNL Adobe Sign] 는 AEM과 통합됩니다 [!DNL Forms] 적응형 양식에 사용할 수 있습니다. 종료 [적응형 양식에서 Adobe Sign 서비스 사용](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)적응형 양식 속성에서 위에 만든 구성 컨테이너를 지정합니다.
 
