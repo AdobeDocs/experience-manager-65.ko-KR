@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85895215904b8706830d20f7714de5512b2c3ec2
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 14%
+source-wordcount: '375'
+ht-degree: 13%
 
 ---
 
@@ -58,3 +58,7 @@ ht-degree: 14%
    * AJAX을 사용하여 컨텐츠를 포함하는 구성 요소
    * SPA (Single Page Applications)
    * 사용자 상호 작용 시 DOM을 조작하는 Javascript 기반 구성 요소입니다.
+
+>[!NOTE]
+>
+>페이지 비교 비교는 유효한 cq:editConfig 노드가 있는 구성 요소에만 작동합니다.
