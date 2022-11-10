@@ -10,16 +10,16 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '2042'
 ht-degree: 1%
 
 ---
 
 # 데이터 소스 구성{#configure-data-sources}
 
-![](do-not-localize/data-integeration.png)
+![데이터 통합](do-not-localize/data-integeration.png)
 
 AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다. 그러나 사용자 지정이 거의 없는 경우에도 다른 데이터 소스를 통합할 수 있습니다.
 
@@ -35,7 +35,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 
 AEM Web Console 구성을 사용하여 관계형 데이터베이스를 구성할 수 있습니다. 다음을 수행합니다.
 
-1. https://server:host/system/console/configMgr에서 AEM 웹 콘솔로 이동합니다.
+1. 의 AEM 웹 콘솔로 이동합니다. `https://server:host/system/console/configMgr`.
 1. 찾기 **[!UICONTROL Apache Sling 연결의 풀링된 데이터 소스]** 구성. 편집 모드에서 구성을 열려면 탭합니다.
 1. 구성 대화 상자에서 다음과 같이 구성할 데이터베이스에 대한 세부 정보를 지정합니다.
 
@@ -49,14 +49,10 @@ AEM Web Console 구성을 사용하여 관계형 데이터베이스를 구성할
    >
    >데이터 소스를 구성하기 전에 암호와 같은 중요한 정보를 암호화해야 합니다. 암호화하려면:
    >
-   >    
-   >    
-   >    1. https://&#39;으로 이동합니다.[server]:[포트]&#39;/system/console/crypto.
-   >    1. 에서 **[!UICONTROL 일반 텍스트]** 필드에서는 암호화할 암호나 문자열을 지정하고 탭합니다 **[!UICONTROL Protect]**.
+   > 1. https://&#39;으로 이동합니다.[server]:[포트]&#39;/system/console/crypto.
+   > 1. 에서 **[!UICONTROL 일반 텍스트]** 필드에서는 암호화할 암호나 문자열을 지정하고 탭합니다 **[!UICONTROL Protect]**.
 
-   >    
-   >    
-   >    
+   >
    >암호화된 텍스트는 구성에서 지정할 수 있는 보호된 텍스트 필드에 나타납니다.
 
 1. 활성화 **[!UICONTROL 차입 시 테스트]** 또는 **[!UICONTROL 반환 테스트]** 객체를 빌리거나 풀에서 각각 반환하기 전에 검증하도록 지정합니다.
@@ -66,6 +62,10 @@ AEM Web Console 구성을 사용하여 관계형 데이터베이스를 구성할
    * 이중(Oracle)에서 1을 선택합니다
 
 1. 탭 **[!UICONTROL 저장]** 구성을 저장합니다.
+
+   >[!NOTE]
+   >
+   > Forms 데이터 모델에 관계형 데이터베이스에 대해 예약된 키워드인 개체가 포함되어 있으면 데이터 추가, 업데이트 또는 검색 문제가 발생할 수 있습니다. 따라서 양식 데이터 모델에서 이러한 개체를 사용하지 마십시오.
 
 ## AEM 사용자 프로필 구성 {#configure-aem-user-profile}
 
@@ -161,7 +161,6 @@ RESTful 서비스를 구성하려면 다음을 수행하십시오.
 
    * 에서 두 데이터 패킷 간에 비활성 상태에 대한 최대 기간을 지정합니다 **[!UICONTROL 소켓 시간 제한]** 필드. 기본값은 30초입니다.
 
-
 ## SOAP 웹 서비스 구성 {#configure-soap-web-services}
 
 SOAP 기반 웹 서비스는 [WSDL(웹 서비스 설명 언어) 사양](https://www.w3.org/TR/wsdl). AEM 클라우드 서비스에서 SOAP 기반 웹 서비스를 구성하려면 웹 서비스용 WSDL URL이 있는지 확인하고 다음을 수행하십시오.
@@ -224,4 +223,4 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. AEM 클라우드 서
 
 ## 다음 단계 {#next-steps}
 
-데이터 소스를 구성했습니다. 다음으로 양식 데이터 모델을 만들거나 데이터 소스 없이 양식 데이터 모델을 이미 만든 경우 방금 구성한 데이터 소스와 연결할 수 있습니다. 자세한 내용은 [양식 데이터 모델 만들기](/help/forms/using/create-form-data-models.md) 자세한 내용
+데이터 소스를 구성했습니다. 다음으로 양식 데이터 모델을 만들거나 데이터 소스 없이 양식 데이터 모델을 이미 만든 경우 구성한 데이터 소스와 연결할 수 있습니다. 자세한 내용은 [양식 데이터 모델 만들기](/help/forms/using/create-form-data-models.md) 자세한 내용

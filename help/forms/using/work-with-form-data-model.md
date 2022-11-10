@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '4128'
+source-wordcount: '4165'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,10 @@ Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하지 �
    ![선택한 객체](assets/selected-objects.png)
 
    선택한 데이터 모델 개체 및 서비스
+
+   >[!NOTE]
+   >
+   > Forms 데이터 모델에 관계형 데이터베이스에 대해 예약된 키워드인 개체가 포함되어 있으면 데이터 추가, 업데이트 또는 검색 문제가 발생할 수 있습니다. 따라서 양식 데이터 모델에서 이러한 개체를 사용하지 마십시오.
 
    모델(Model) 탭에는 양식 데이터 모델에 추가된 모든 데이터 모델 객체와 해당 속성의 그래픽 표현이 표시됩니다. 각 데이터 모델 개체는 양식 데이터 모델의 상자로 표시됩니다.
 
