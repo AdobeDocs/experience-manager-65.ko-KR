@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 55e9344c088a38bc4c9f916a13c310a029b3b2f4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3819'
+ht-degree: 4%
 
 ---
 
@@ -685,6 +685,7 @@ ht-degree: 0%
    + [특정 버전의 Oracle JDK에서 일부 양식 기능을 사용할 수 없습니다](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
    + [JEE 버전의 응용 Forms에 대한 첨부 파일이 포함된 이메일을 가져오는 추가 단계](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
    + [Windows Server에서 Word 또는 Excel 파일을 PDF으로 변환할 수 없습니다.](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
+   + [Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer 또는 Apple Safari에서 XFA 기반 PDF forms을 열 수 없습니다](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
 + 이전 설명서 {#legacy-documentation}
    + [JEE Workbench의 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 작성](developing/building-xml.md)
    + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](developing/compressing-decompressing-custom-dsc.md)
