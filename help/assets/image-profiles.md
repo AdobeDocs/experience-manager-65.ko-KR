@@ -10,7 +10,7 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
+source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
 workflow-type: tm+mt
 source-wordcount: '2831'
 ht-degree: 10%
@@ -21,13 +21,10 @@ ht-degree: 10%
 
 이미지를 업로드할 때 폴더에 이미지 프로필을 적용하여 업로드 시 이미지를 자동으로 자릅니다.
 
->[!NOTE]
->
->스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
-
 >[!IMPORTANT]
 >
->이미지 프로필은 PDF, 애니메이션 GIF 또는 INDD(Adobe InDesign) 파일에는 적용할 수 없습니다.
+>・ 스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+・ 이미지 프로필은 PDF, 애니메이션 GIF 또는 INDD(Adobe InDesign) 파일에 적용할 수 없습니다.
 
 ## 자르기 옵션 {#crop-options}
 
@@ -58,8 +55,7 @@ ht-degree: 10%
 You use **[!UICONTROL Unsharp mask]** to fine-tune a sharpening filter effect on the final downsampled image. 효과의 강도, 효과의 반경(픽셀 단위 측정) 및 무시되는 조명의 임계값을 제어할 수 있습니다. 이 효과는 Adobe Photoshop의 옵션과 동일한 옵션을 사용합니다 *언샵 마스크* 필터.
 
 >[!NOTE]
->
->언샵 마스크는 50% 이상 다운샘플링된 PTIFF(피라미드형 tiff) 내의 축소된 표현물에만 적용됩니다. 즉, ptiff 내에서 가장 큰 크기의 표현물은 언샵 마스크의 영향을 받지 않지만 축소판과 같은 작은 크기의 표현물은 변경됩니다(그리고 언샵 마스크 표시).
+언샵 마스크는 50% 이상 다운샘플링된 PTIFF(피라미드형 tiff) 내의 축소된 표현물에만 적용됩니다. 즉, ptiff 내에서 가장 큰 크기의 표현물은 언샵 마스크의 영향을 받지 않지만 축소판과 같은 작은 크기의 표현물은 변경됩니다(그리고 언샵 마스크 표시).
 
 in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 옵션이 있습니다.
 
@@ -163,9 +159,8 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 ## 단일 이미지의 스마트 자르기 또는 스마트 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
->[!NOTE]
->
->스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+>[!IMPORTANT]
+스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 
 이미지의 스마트 자르기 창을 수동으로 다시 정렬하거나 크기를 조정하여 초점을 더 세분화할 수 있습니다.
 
