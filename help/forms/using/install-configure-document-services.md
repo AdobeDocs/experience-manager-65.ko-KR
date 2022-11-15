@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 3a745e8255580778e30abaa72d7d0453e574f341
 workflow-type: tm+mt
-source-wordcount: '5529'
+source-wordcount: '5531'
 ht-degree: 2%
 
 ---
@@ -89,7 +89,7 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 
 ### UNIX 기반 운영 체제에 대한 추가 요구 사항 {#extrarequirements}
 
-UNIX 기반 운영 체제를 사용하는 경우 각 운영 체제의 설치 미디어에서 다음 패키지를 설치합니다.
+UNIX 기반 운영 체제를 사용하는 경우 각 운영 체제의 설치 미디어에서 다음 32비트 버전 패키지를 설치하십시오.
 
 <table>
  <tbody>
