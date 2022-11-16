@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
+source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2835'
 ht-degree: 10%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 10%
 
 이미지에서 스마트 자르기를 구현할 때 Adobe은 다음 모범 사례를 권장하고 다음 제한을 적용합니다.
 
-| 제한 유형 | 우수 사례 | 제한 적용 | 2022년 12월 31일에 제한하는 것으로 변경 |
-| --- | --- | --- | --- |
-| 이미지당 스마트 자르기 수 | 5 | 100 | 20 |
+| 제한 유형 | 우수 사례 | 제한 적용 |
+| --- | --- | --- |
+| 이미지당 스마트 자르기 수 | 5 | 100 |
 
 참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
@@ -160,7 +160,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 ## 단일 이미지의 스마트 자르기 또는 스마트 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+・ 스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 
 이미지의 스마트 자르기 창을 수동으로 다시 정렬하거나 크기를 조정하여 초점을 더 세분화할 수 있습니다.
 
@@ -188,6 +188,9 @@ Folders that have a profile already assigned to it are indicated by the display 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 저장]**&#x200B;를 선택하고 을 선택합니다. **[!UICONTROL 닫기]** 를 입력하여 자산의 폴더로 돌아갑니다.
 
 ## 여러 이미지의 스마트 자르기 또는 스마트 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+・ 스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 
 스마트 자르기가 포함된 이미지 프로필을 폴더에 적용하면 해당 폴더의 모든 이미지에 자르기가 적용됩니다. 원하는 경우 다음을 수행할 수 있습니다 *수동* 여러 이미지에서 스마트 자르기 창을 재정렬하거나 크기를 조정하여 초점을 더 세분화합니다.
 
