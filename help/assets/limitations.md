@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: 7c0d5f7d1286bdcc0189f3c6ffecbd2149d6a78a
+source-git-commit: cd4342740a09cb5315c640768bf24af6c7788a48
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 5%
 
 ---
@@ -30,8 +30,8 @@ ht-degree: 5%
 
 | 자산 - 제한 유형 | 우수 사례 | 제한 적용 | 2022년 12월 31일에 제한하는 것으로 변경 |
 | --- | --- | --- | --- |
-| **이미지** - 이미지당 스마트 자르기 수 | 5 | 100 | 20 |
-| **모든 세트** - 세트당 중복 자산 수 | 중복 없음 | 20년 | 해당되지 않음 |
+| **이미지** - 이미지당 스마트 자르기 수 | 5 | 100 | 해당되지 않음 |
+| **모든 세트** - 세트당 중복 자산 수 | 중복 없음 | 20 | 해당되지 않음 |
 | **모든 세트** - 세트당 최대 자산 수 | 세트당 5-10개 이미지 | 1000 | 해당되지 않음 |
 | **스핀 세트** - 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000년 | 해당되지 않음 |
 | **PDF** - 추출할 PDF에 대한 최대 페이지 수 |  | 5000(새 업로드의 경우) | 100(모든 PDF에 대해) |
