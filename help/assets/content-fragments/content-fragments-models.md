@@ -4,10 +4,10 @@ description: 컨텐츠 조각 모델 이 AEM에서 헤드리스 컨텐츠의 기
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 9b3e30f7523ff86fd1ed1b5fc55ce22b8e9f3429
+source-git-commit: 6b9eb1a6df7cc4a8afab1c83d93d8a53bd94f6f5
 workflow-type: tm+mt
-source-wordcount: '2338'
-ht-degree: 98%
+source-wordcount: '2332'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ AEM의 컨텐츠 조각 모델은 컨텐츠 구조를 정의합니다 [컨텐츠
 
 1. [인스턴스에 대해 콘텐츠 조각 모델 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. 콘텐츠 조각 모델 [생성](#creating-a-content-fragment-model) 및 [구성](#defining-your-content-fragment-model)
-1. 콘텐츠 조각 생성 시 사용할 [콘텐츠 조각 모델](#enabling-disabling-a-content-fragment-model) 활성화
+1. [컨텐츠 조각 모델 활성화](#enabling-disabling-a-content-fragment-model) 컨텐츠 조각을 만들 때 사용할 수 있습니다.
 1. **정책**&#x200B;을 구성하여 [필요한 에셋 폴더에서 콘텐츠 조각 모델 허용](#allowing-content-fragment-models-assets-folder)
 
 ## 콘텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
