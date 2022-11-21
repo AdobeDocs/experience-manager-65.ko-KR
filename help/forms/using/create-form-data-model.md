@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c3178eefb5aca3afea2f3df8381b52461247d6f3
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1518'
 ht-degree: 1%
 
 ---
@@ -57,6 +57,7 @@ AEM [!DNL Forms] 데이터 통합 모듈을 사용하면 AEM 사용자 프로필
 
 1. JDBC 드라이버 설치 대상 [!DNL MySQL] 데이터베이스를 OSGi 번들로 사용:
 
+   1. 다운로드 [[!DNL MySQL] JDBC 드라이버 OSGi 번들](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
    1. AEM에 로그인 [!DNL Forms] 관리자로 인스턴스를 작성하고 AEM 웹 콘솔 번들로 이동합니다. 기본 URL은 [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. 탭 **[!UICONTROL 설치/업데이트]**. An [!UICONTROL 번들 업로드/설치] 대화 상자가 나타납니다.
@@ -73,8 +74,18 @@ AEM [!DNL Forms] 데이터 통합 모듈을 사용하면 AEM 사용자 프로필
       * **DataSource 서비스 속성 이름**: DataSource 이름이 포함된 서비스 속성의 이름을 지정합니다. 데이터 소스 인스턴스를 OSGi 서비스로 등록하는 동안 지정됩니다. 예, **datasource.name**.
       * **JDBC 드라이버 클래스**: JDBC 드라이버의 Java 클래스 이름을 지정합니다. 대상 [!DNL MySQL] 데이터베이스, 지정 **com.mysql.jdbc.Driver**.
       * **JDBC 연결 URI**: 데이터베이스의 연결 URL을 지정합니다. 대상 [!DNL MySQL] port 3306 및 schema weretail에서 실행되는 데이터베이스 URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+
+      >[!NOTE]
+      >
+      > 이 [!DNL MySQL] 데이터베이스가 방화벽 뒤에 있으면 데이터베이스 호스트 이름이 공개 DNS가 아닙니다. 데이터베이스의 IP 주소는 */etc/hosts* AEM 호스트 시스템의 파일입니다.
+
       * **사용자 이름:** 데이터베이스의 사용자 이름입니다. 데이터베이스와 연결을 설정하려면 JDBC 드라이버를 활성화해야 합니다.
       * **암호:** 데이터베이스의 암호입니다. 데이터베이스와 연결을 설정하려면 JDBC 드라이버를 활성화해야 합니다.
+
+      >[!NOTE]
+      >
+      >AEM Forms은 다음에 대한 NT 인증을 지원하지 않습니다 [!DNL MySQL]. 의 AEM 웹 콘솔로 이동합니다. [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 및 &quot;Apache Sling 연결 풀링된 데이터 소스&quot;를 검색합니다.&quot;JDBC 연결 URI&quot; 속성 설정 값이 &quot;integratedSecurity&quot;인 False인 경우 생성된 사용자 이름과 암호를 사용하여 [!DNL MySQL] 데이터베이스.
+
       * **차입 테스트:** 를 활성화합니다 **[!UICONTROL 차입 시 테스트]** 선택 사항입니다.
       * **반환 테스트:** 를 활성화합니다 **[!UICONTROL 반환 테스트]** 선택 사항입니다.
       * **유효성 검사 쿼리:** 풀에서 연결을 검증할 SQL SELECT 쿼리를 지정합니다. 쿼리는 하나 이상의 행을 반환해야 합니다. 예, **선택 &#42; 고객 세부 사항에서**.
@@ -85,6 +96,8 @@ AEM [!DNL Forms] 데이터 통합 모듈을 사용하면 AEM 사용자 프로필
          다음과 유사한 구성이 만들어집니다.
 
          ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
+
+
 
 ## 2단계: 양식 데이터 모델 만들기 {#create-fdm}
 
