@@ -4,10 +4,10 @@ description: AEM Headless 솔루션을 구현할 때 콘텐츠 조각의 JSON �
 feature: Content Fragments
 role: User
 exl-id: c58a3cfd-6348-4a2e-996a-5fdb96415adb
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 88%
+source-wordcount: '113'
+ht-degree: 100%
 
 ---
 
@@ -23,4 +23,6 @@ AEM Headless 구현의 일부로 콘텐츠 조각용 모델을 개발할 때, �
 
 ![콘텐츠 조각 편집기 - 조각 미리보기](assets/cfm-preview-02.png)
 
-**URL 복사** 작성자나 게시를 위해 URL을 클립보드에 복사할 수 있습니다.
+<!--
+**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+-->

@@ -4,10 +4,10 @@ description: 변형에서 조각에 대한 컨텐츠를 작성한 다음 목적�
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 95%
+source-wordcount: '2426'
+ht-degree: 87%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 * 조각에 사용할 [콘텐츠 입력](#authoring-your-content),
 * [마스터](#managing-variations) 콘텐츠의 **변형 만들기 및 관리**
 
-편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행하십시오. 예를 들면 다음과 같습니다.
+편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행하십시오. 예:
 
 * [조각에 시각적 에셋 삽입](#inserting-assets-into-your-fragment)(이미지)
 
@@ -40,24 +40,37 @@ ht-degree: 95%
 
 ## 콘텐츠 작성 {#authoring-your-content}
 
-편집할 콘텐츠 조각을 열면 기본적으로 **변형** 탭이 열립니다. 보유하고 있는 마스터 또는 변형에 사용할 콘텐츠를 여기에서 작성할 수 있습니다. 구조화된 조각은 콘텐츠 모델에서 정의된 다양한 데이터 유형의 다양한 필드를 포함합니다.
+편집할 콘텐츠 조각을 열면 기본적으로 **변형** 탭이 열립니다. 보유하고 있는 마스터 또는 변형에 사용할 콘텐츠를 여기에서 작성할 수 있습니다. 구조화된 조각은 컨텐츠 모델에서 정의된 다양한 데이터 유형의 다양한 필드를 포함합니다.
 
 예:
 
 ![전체 화면 편집기](assets/cfm-variations-02.png)
+
 다음과 같은 작업을 수행할 수 있습니다.
 
-* **변형** 탭에서 바로 편집
+* 에서 직접 콘텐츠를 편집합니다 **변형** 탭; 각 데이터 유형은 다음과 같은 다양한 편집 옵션을 제공합니다.
 
-   * 각 데이터 유형은 다양한 편집 옵션을 제공합니다.
+   * **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 열어 다음과 같은 작업을 수행할 수 있습니다.
 
-* **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 열어 다음과 같은 작업을 수행할 수 있습니다.
+      * [형식](#formats) 선택
+      * 더 많은 편집 옵션 보기([리치 텍스트](#rich-text) 형식)
+      * 다양한 [작업](#actions) 액세스
+   * **조각 참조** 필드의 경우 모델 정의에 따라 [콘텐츠 조각 편집](#fragment-references-edit-content-fragment) 옵션을 사용할 수 있습니다.
 
-   * [형식](#formats) 선택
-   * 더 많은 편집 옵션 보기([리치 텍스트](#rich-text) 형식)
-   * 다양한 [작업](#actions) 액세스
 
-* **조각 참조** 필드의 경우 모델 정의에 따라 **[콘텐츠 조각 편집](#fragment-references-edit-content-fragment)** 옵션을 사용할 수 있습니다.
+* 지정 **태그** 현재 변형으로 이동합니다. 태그를 추가, 업데이트 및 제거할 수 있습니다
+
+   * [태그](/help/sites-authoring/tags.md)는 콘텐츠 분류 및 분류법에 사용될 수 있으므로 조각을 구성할 때 특히 유용합니다. 태그는 태그별로 콘텐츠를 찾고 일괄 작업을 적용하는 데 사용할 수 있습니다.
+
+      * 태그를 검색하면 태그가 지정된 변형이 강조 표시된 채 조각이 반환됩니다.
+      * 변형 태그는 변형 이름을 사용하는 대신 특정 CDN(Content Delivery Network) 프로필(CDN 캐싱)의 변형을 그룹화하는 데 사용할 수도 있습니다.
+
+      예를 들어 관련 조각에 &quot;크리스마스 시작&quot;으로 태그를 지정하여 하위 집합으로 검색할 수 있도록 하거나, 새 폴더에서 다른 향후 실행 시 사용할 수 있도록 복사할 수 있습니다.
+   >[!NOTE]
+   >
+   >**태그** (에) **기본** 변형)을 [메타데이터](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [마스터](#managing-variations) 컨텐츠의 **변형 만들기 및 관리.**
 
 ### 전체 화면 편집기 {#full-screen-editor}
 
@@ -389,6 +402,9 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
    >[!NOTE]
    새 변형을 만들 때 새 변형은 현재 열려 있는 변형이 아니라 항상 복사되어 있는 **마스터**&#x200B;입니다.
 
+   >[!NOTE]
+   새 변형을 만들면 **태그** 현재 **기본** 변형이 새 변형에 복사됩니다.
+
 ### 변형 편집 {#editing-a-variation}
 
 다음 작업 중 하나를 수행한 후 변형 콘텐츠를 변경할 수 있습니다.
@@ -435,7 +451,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 >[!CAUTION]
 *동기화는&#x200B;**마스터**의 변경 내용을*&#x200B;변형에 복사하는 데에만 사용할 수 있습니다.
 변형의 현재 요소만 동기화됩니다.
-동기화는 **여러 줄 텍스트** 데이터 유형에서만 작동합니다.
+동기화는 **여러 줄 텍스트** 데이터 유형.
 *변형의 변경 내용을&#x200B;**마스터***에 전송하는 선택은 할 수 없습니다.
 
 <!-- needs new screenshot for synchronize effect -->
@@ -460,4 +476,4 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    ![마스터와 동기화](assets/cfm-variations-11c.png)
 
-1. **동기화**&#x200B;를 선택하면 변형이 업데이트되고 표시됩니다.
+1. 선택 **동기화**&#x200B;변형이 업데이트되고 표시됩니다.

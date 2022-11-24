@@ -3,10 +3,10 @@ title: AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐
 description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 1a3d5a6b3b4f7af67d6a62cdaab484daa536cb63
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 100%
+source-wordcount: '1530'
+ht-degree: 93%
 
 ---
 
@@ -348,6 +348,58 @@ query {
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### 샘플 쿼리 - 모든 도시의 이름 City Break로 태그가 지정됨 {#sample-names-all-cities-tagged-city-breaks}
+
+다음과 같은 경우:
+
+* 이름이 지정된 다양한 태그 만들기 `Tourism` : `Business`, `City Break`, `Holiday`
+* 그리고 이것을 다양한 종류의 기본 변형에 할당해 `City` 인스턴스
+
+그런 다음 쿼리를 사용하여 `name` 및 `tags`의 City Break로 태그가 지정된 모든 항목 `city`스키마.
+
+**샘플 쿼리**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**샘플 결과**:
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
           ]
         }
       ]
@@ -1477,6 +1529,62 @@ query {
         markdown
         plaintext
         json
+      }
+    }
+  }
+}
+```
+
+### 주어진 모델의 여러 컨텐츠 조각 및 변형에 대한 샘플 쿼리 {#sample-wknd-multiple-fragment-variations-given-model}
+
+이 쿼리는 다음에 대한 정보를 얻습니다.
+
+* 컨텐츠 조각 유형의 경우 `article` 및 모든 변형
+
+**샘플 쿼리**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### 특정 태그가 첨부된 주어진 모델의 컨텐츠 조각 변형에 대한 샘플 쿼리{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+이 쿼리는 다음에 대한 정보를 얻습니다.
+
+* 컨텐츠 조각 유형의 경우 `article` 하나 이상의 태그와 함께 `WKND : Activity / Hiking`
+
+**샘플 쿼리**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
       }
     }
   }

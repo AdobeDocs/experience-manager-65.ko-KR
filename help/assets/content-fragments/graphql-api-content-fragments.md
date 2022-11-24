@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: 헤드리스 컨텐츠 전달을 위해 AEM(Adobe Experience Manager)에서 AEM GraphQL API와 함께 컨텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 6f3f88ea0f07c97fa8d7ff3bdd1c89114d12a8a1
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '3986'
-ht-degree: 91%
+source-wordcount: '4089'
+ht-degree: 88%
 
 ---
 
@@ -543,6 +543,11 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
    * 모델 이름에 `List`를 추가하십시오. 예: `cityList`
    * [샘플 쿼리 - 모든 도시에 대한 모든 정보](#sample-all-information-all-cities)를 참조하십시오
 
+* 필터 `includeVariations` 에 포함되어 있습니다 `List` 쿼리 유형.  쿼리 결과에서 컨텐츠 조각 변형을 검색하려면 `includeVariations` 필터를 로 설정해야 합니다. `true`.
+
+   >[!CAUTION]
+   >필터 `includeVariations` 시스템 생성 필드와 함께 사용할 수 없습니다. `_variation`.
+
 * 논리적 OR을 사용하려는 경우:
    * ` _logOp: OR` 사용
    * [샘플 쿼리 - 이름이 “Jobs” 또는 “Smith”인 모든 사람](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)을 참조하십시오
@@ -572,7 +577,18 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
          >
          >지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
 
+         >[!CAUTION]
+         >시스템 생성 필드 `_variation` 필터와 함께 사용할 수 없습니다. `includeVariations`.
+
          * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)를 참조하십시오
+      * `_tags` : 를 클릭하여 태그를 포함하는 컨텐츠 조각 또는 변형의 ID를 표시합니다. 이것은 `cq:tags` 식별자.
+
+         * 자세한 내용은 [샘플 쿼리 - 도시 분할로 태그가 지정된 모든 도시의 이름](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+         * 자세한 내용은 [특정 태그가 첨부된 주어진 모델의 컨텐츠 조각 변형에 대한 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+
+         >[!NOTE]
+         >
+         >컨텐츠 조각의 메타데이터를 나열하여 태그를 쿼리할 수도 있습니다.
    * 작업:
 
       * `_operator`: 특정 연산자 적용 - `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -582,6 +598,8 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
          * [샘플 쿼리 - 적어도 한 번은 발생해야 하는 항목이 있는 배열 필터링](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)을 참조하십시오
       * `_ignoreCase`: 쿼리할 때 대소문자 무시
          * [샘플 쿼리 - 대소문자에 관계없이 이름에 SAN이 있는 모든 도시](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)를 참조하십시오
+
+
 
 
 
