@@ -2,9 +2,9 @@
 title: Reader 확장 인증서 만료 및 영향
 description: Reader 확장 인증서 만료 및 영향
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: bbc8fdf2eb7dd35600e2e2a87550e9de557f0eb0
+source-git-commit: f35a35577f06686558bb1277b0d9bb17f6f0b7bf
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1114'
 ht-degree: 2%
 
 ---
@@ -26,9 +26,8 @@ Adobe은 PKI(공개 키 인프라)를 활용하여 라이센스 및 기능 활�
 
 A. Adobe 루트 CA는 Acrobat Reader 확장 인증서가 발급되는 인증 기관입니다. 2023년 1월 7일에 &quot;Adobe 루트 CA&quot; 및 그로부터 발행된 모든 인증서가 만료됩니다.
 
-**Q. Adobe의 인증서 만료 및 PDF 사용/오픈에 미치는 영향에 대한 이전 통신이 있었습니까? 그 의사소통은 무시되어야 할까?**
-A. 상황 재평가를 기준으로 2023년 1월 7일 이전에 종전의 &#39;Adobe 루트 CA&#39;에서 발급한 프로덕션 인증서를 사용하여 연장된 모든 PDF 문서는 2023년 1월 7일 이후에도 아무런 변경 없이 계속 작동합니다. 이미 PDF을 업데이트한 경우에는 경험이 변경되지 않습니다
-
+**Q. Adobe의 이전 통신에서 인증서 만료 및 PDF 문서 사용/열기 영향을 받았습니다. 그 의사소통은 무시되어야 할까?**
+A. 상황을 재평가한 결과 2023년 1월 7일 이전에 종전의 &quot;Adobe 루트 CA&quot;에서 발급한 프로덕션 인증서를 사용하여 연장된 모든 PDF 문서는 2023년 1월 7일 이후에도 아무런 변경 없이 계속 작동합니다. 이미 PDF을 업데이트한 경우에는 경험이 변경되지 않습니다
 
 **Q. 추가 질문이 있는 경우 누구에게 문의해야 합니까?**
 
@@ -46,9 +45,9 @@ A. 새 Acrobat Reader 확장 인증서에 대한 설명 **G3-P24** 를 프로그
 
 A. 권한이 있는 모든 Forms 고객(활성 라이센스가 있는)은 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/). Adobe 라이선스 웹 사이트에서 인증서를 찾을 수 없는 경우 [Adobe 지원](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) 또는 지원 티켓을 인상합니다.
 
-**Q. &#39;Adobe 루트 CA&#39;(이전 인증 기관)에서 발급한 인증서를 사용하여 PDF 문서가 2023년 1월 7일 이후에도 계속 작동합니까?**
+**Q. 이전 인증 기관(Adobe 루트 CA)에서 발급한 인증서를 사용하여 PDF 문서가 2023년 1월 7일 이후에도 계속 작동합니까?**
 
-A. 예, 2023년 1월 7일 이전에 &#39;Adobe 루트 CA&#39;(이전 인증 기관)에서 발급한 프로덕션 인증서를 사용하여 연장된 모든 PDF 문서는 2023년 1월 7일 이후 변경 없이 계속 작동합니다. 평가 인증서로 확장된 PDF 문서가 만료 날짜 이후에 작동하지 않습니다.
+A. 예, 2023년 1월 7일 이전에 &quot;Adobe 루트 CA&quot;(이전 인증 기관)에서 발급한 프로덕션 인증서를 사용하여 연장된 모든 PDF 문서는 2023년 1월 7일 이후 변경 없이 계속 작동합니다. 평가 인증서로 확장된 PDF 문서가 만료 날짜 이후에 작동하지 않습니다.
 
 **Q. &quot;Adobe 루트 CA&quot;(이전 인증 기관)에서 발급한 인증서와 함께 확장된 PDF 문서를 계속 사용하려면 Adobe Acrobat Reader 버전은 무엇입니까?**
 
