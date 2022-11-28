@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b33c42edb44617d26ead0df3a9de7bdb39c2e9f4
+source-git-commit: 89bb9223bb5e1e1d8719c5d957ec380872ed3e96
 workflow-type: tm+mt
-source-wordcount: '6282'
+source-wordcount: '6489'
 ht-degree: 3%
 
 ---
@@ -154,7 +154,9 @@ Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더�
    자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 실시간으로 게시됩니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보기 위해 Experience Manager 작성자는 토큰 기반 유효성 검사를 사용하므로 기본적으로 Experience Manager 작성자는 Dynamic Media 컨텐츠를 미리 봅니다. 그러나 사용자에게 안전하게 콘텐츠를 미리 볼 수 있는 액세스 권한을 제공하기 위해 허용 목록에 추가하다 더 많은 IP를 검색할 수 있습니다. Experience Manager에서 이 작업을 설정하려면 다음을 참조하십시오 [이미지 서버에 대한 Dynamic Media 게시 설정 구성 - 보안 탭](/help/assets/dm-publish-settings.md#security-tab).
+1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보기 위해 Experience Manager 작성자는 토큰 기반 유효성 검사를 사용하므로 기본적으로 Experience Manager 작성자는 Dynamic Media 컨텐츠를 미리 봅니다. 그러나 IP를 더 &quot;&quot;하여 사용자에게 컨텐츠를 안전하게 미리 볼 수 있는 액세스 권한을 제공할 허용 목록에 추가하다 수 있습니다. Experience Manager에서 이 작업을 설정하려면 다음을 참조하십시오 [이미지 서버에 대한 Dynamic Media 게시 설정 구성 - 보안 탭](/help/assets/dm-publish-settings.md#security-tab).
+
+ACL(액세스 제어 목록) 권한 활성화와 같이 구성을 추가로 사용자 정의하려면 [(선택 사항) Dynamic Media - Scene7 모드에서 고급 설정 구성](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -165,8 +167,6 @@ Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더�
     * In the upper-right corner of the page, select **[!UICONTROL Save]**. -->
 
 이제 기본 구성을 완료했습니다. Dynamic Media - Scene7 모드를 사용할 준비가 되었습니다.
-
-구성을 추가로 사용자 지정하려면 아래의 작업을 선택적으로 완료할 수 있습니다 [(선택 사항) Dynamic Media - Scene7 모드에서 고급 설정 구성](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ### 암호를 Dynamic Media으로 변경 {#change-dm-password}
 
@@ -203,6 +203,8 @@ Dynamic Media의 암호 만료는 현재 시스템 날짜로부터 100년으로 
 
 Dynamic Media - Scene7 모드의 구성 및 설정을 추가 사용자 지정하거나 성능을 최적화하려는 경우 다음 중 하나 이상을 완료할 수 있습니다 *옵션* 작업:
 
+* [(선택 사항) Dynamic Media - Scene7 모드에서 ACL 권한을 활성화합니다](#optional-enable-acl)
+
 * [(선택 사항) 2GB보다 큰 자산을 업로드할 Dynamic Media - Scene7 모드 구성](#optional-config-dms7-assets-larger-than-2gb)
 
 * [(선택 사항) Dynamic Media 설정 및 구성 - Scene7 모드 설정](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
@@ -210,6 +212,33 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가 사용자 지정하
 * [(선택 사항) Dynamic Media - Scene7 모드의 성능 조정](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(선택 사항) 복제할 자산을 필터링합니다](#optional-filtering-assets-for-replication)
+
+### (선택 사항) Dynamic Media - Scene7 모드에서 액세스 제어 목록 권한을 활성화합니다 {#optional-enable-acl}
+
+AEM에서 Dynamic Media - Scene7 모드를 실행하면 현재 전달됩니다 `/is/image` platformServerServlet에 대한 ACL(액세스 제어 목록) 권한을 확인하지 않고 보안 미리 보기 이미지 제공 요청을 수행합니다. 하지만, *활성화* ACL 권한. 그렇게 하면 권한이 부여된 `/is/image` 요청. 사용자에게 자산에 대한 액세스 권한이 없는 경우 &quot;403 - 금지됨&quot; 오류가 표시됩니다.
+
+**Dynamic Media - Scene7 모드에서 ACL 권한을 활성화하려면**
+
+1. Experience Manager에서 로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**.
+
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+
+1. 새 브라우저 탭이 **[!UICONTROL Adobe Experience Manager 웹 콘솔 구성]** 페이지.
+
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+
+1. 페이지에서 이름으로 스크롤합니다 *Adobe CQ Scene7 PlatformServer*.
+
+1. 이름 오른쪽에서 연필 아이콘(**[!UICONTROL 구성 값 편집]**).
+
+1. 설정 **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** 페이지에서 다음 두 가지 설정에 대한 확인란을 선택합니다.
+
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - 활성화되면 이 설정은 권한 결과를 2분(기본값) 동안 캐시하여 저장합니다.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - 이 옵션이 활성화되면 Dynamic Media Image Server를 통해 자산을 미리 보는 동안 사용자의 액세스를 확인합니다.
+
+   ![Dynamic Media - Scene7 모드에서 액세스 제어 목록 설정 활성화](/help/assets/assets-dm/acl.png)
+
+1. 페이지의 오른쪽 아래 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 저장]**.
 
 ### (선택 사항) 2GB보다 큰 자산을 업로드할 Dynamic Media - Scene7 모드 구성 {#optional-config-dms7-assets-larger-than-2gb}
 
