@@ -2,9 +2,9 @@
 title: Reader 확장 인증서 만료 및 영향
 description: Reader 확장 인증서 만료 및 영향
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: bcbfdcd305b7319506a11677909895c38f92a6cf
+source-git-commit: 5f8061ebd2143f11567ac5b78162bdd02106d2e3
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1115'
 ht-degree: 2%
 
 ---
@@ -28,8 +28,7 @@ A. Adobe 루트 CA는 Acrobat Reader 확장 인증서가 발급되는 인증 기
 
 **Q. Adobe의 이전 통신에서 인증서 만료 및 PDF 문서 사용/열기 영향을 받았습니다. 그 의사소통은 무시되어야 할까?**
 
-A. 상황을 재평가한 결과 2023년 1월 7일 이전에 종전의 &quot;Adobe 루트 CA&quot;에서 발급한 프로덕션 인증서를 사용하여 연장된 모든 PDF 문서는 2023년 1월 7일 이후에도 아무런 변경 없이 계속 작동합니다. 이미 PDF을 업데이트한 경우 경험에 변경 사항이 없습니다.
-
+A. 상황을 재평가한 결과 2023년 1월 7일 이전에 종전의 &quot;Adobe 루트 CA&quot;에서 발급한 프로덕션 인증서를 사용하여 연장된 모든 PDF 문서는 2023년 1월 7일 이후에도 아무런 변경 없이 계속 작동합니다. 이미 PDF 문서를 업데이트한 경우 경험에 변경 사항이 없습니다.
 
 **Q. 추가 질문이 있는 경우 누구에게 문의해야 합니까?**
 
