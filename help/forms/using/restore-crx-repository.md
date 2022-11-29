@@ -2,9 +2,9 @@
 title: JEE 클러스터 서버에 적용할 수 있는 손상된 CRX 저장소를 복원할 수 없습니다.
 description: 손상된 CRX 저장소를 복원하는 절차
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: cf034e8765317ee022aad4693ced37c3fa793ff2
+source-git-commit: c4f776b08cb8cc8c6eea78a3757735e063bec20c
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '179'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 1. 을(를) 찾습니다 `oak-core` 번들로 구성되어 있는지 확인하고 실행 중인지 확인하십시오.
 
-1. 를 다시 시작합니다. `oak-core` 실행 중이 아니면 번들입니다. If  ![일시 중지 단추](/help/forms/using/assets/stop.png) 아이콘이 앞에 있습니다. `oak-core` 번들이면 번들이 실행 중인 상태임을 나타냅니다.
+1. 를 다시 시작합니다. `oak-core` 실행 중이 아니면 번들입니다. If  ![일시 중지 단추](/help/forms/using/assets/stop.png) 아이콘이 앞에 있습니다. `oak-core` 번들로 묶은 다음 번들이 실행 중임을 나타냅니다.
 
 1. 문제가 아직 해결되지 않으면 백업에서 CRX 저장소에서 복원하거나 백업을 사용할 수 없는 경우 CRX 저장소를 다시 빌드하십시오.
 
@@ -35,4 +35,4 @@ ht-degree: 2%
 
 이 솔루션은 다음과 같은 경우에 적용됩니다.
 
-* JEE 클러스터 환경의 AEM Forms
+* JEE 클러스터의 AEM Forms
