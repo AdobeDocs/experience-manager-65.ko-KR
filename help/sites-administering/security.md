@@ -12,9 +12,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: bc3dd7d229a75323b98a96d60dcbb3ae2b8c09ab
+source-git-commit: 97b0cec1c8091bbc5736bd68bdee257ca423f93e
 workflow-type: tm+mt
-source-wordcount: '5469'
+source-wordcount: '5454'
 ht-degree: 2%
 
 ---
@@ -215,16 +215,17 @@ AEM WCM은 ACL(액세스 제어 목록)을 사용하여 다양한 페이지에 �
 
 >[!NOTE]
 >
->샘플에 포함된 ACL이 있습니다. 애플리케이션에 적합한 사항을 검토하고 결정하는 것이 좋습니다. 포함된 ACL을 검토하려면 **CRXDE **로 이동하여 **액세스 제어** 탭:
+>샘플에 포함된 ACL이 있습니다. 애플리케이션에 적합한 사항을 검토하고 결정하는 것이 좋습니다. 포함된 ACL을 검토하려면 **CRXDE** 을(를) 선택하고 을(를) 선택합니다. **액세스 제어** 탭:
 >
->`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`: 모든 사용자가 액세스할 수 있습니다.
->`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: 모든 사용자가 액세스할 수 있습니다.
->`/home/users/geometrixx-outdoors`: 모든 사용자가 다음에 대한 읽기 권한을 사용할 수 있도록 허용합니다. `*/profile*` 및
->`*/social/relationships/following/*`.
+>* `/etc/cloudservices`
+>* `/home/users/we-retail`
 >
->사용자 정의 응용 프로그램은 다음과 같은 다른 관계에 대한 액세스를 설정할 수 있습니다 `*/social/relationships/friend/*` 또는 `*/social/relationships/pending-following/*`.
+>사용자 정의 응용 프로그램은 다음과 같은 다른 관계에 대한 액세스를 설정할 수 있습니다.
 >
->커뮤니티에 대한 ACL을 만들면 해당 커뮤니티에 참여하는 구성원에게 추가 권한이 부여될 수 있습니다. 예를 들어 사용자가 의 커뮤니티에 참여할 때 이러한 문제가 발생할 수 있습니다 `/content/geometrixx-outdoors/en/community/hiking` 또는 `/content/geometrixx-outdoors/en/community/winter-sports`.
+>* `*/social/relationships/friend/*`
+>* 또는 `*/social/relationships/pending-following/*`.
+>
+>커뮤니티에 대한 ACL을 만들면 해당 커뮤니티에 참여하는 구성원에게 추가 권한이 부여될 수 있습니다. 예를 들어 사용자가 다음 위치에서 커뮤니티에 참여할 때 이러한 문제가 발생할 수 있습니다. `/content/we-retail/us/en/community`
 
 ### 권한 상태 {#permission-states}
 
