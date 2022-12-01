@@ -2,9 +2,9 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3858'
 ht-degree: 10%
 
 ---
@@ -107,9 +107,9 @@ ht-degree: 10%
 
 ### 주요 기능 {#keyfeatures}
 
-* 이제 스페인어 로캘로 AEM Forms 디자이너를 사용할 수 있습니다. (LC-3920051)
-* 이제 OAuth2를 사용하여 Microsoft Office 365 메일 서버 프로토콜(SMTP 및 IMAP)을 인증할 수 있습니다. (NPR-35177)
-* 다음을 설정할 수 있습니다 [서버에서 유효성 검사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) 서버 쪽의 레코드 문서에서 제외하기 위해 숨겨진 필드를 식별하는 true 속성입니다. (NPR-38149)
+* 이제 AEM Forms 디자이너를 사용할 수 있습니다. [스페인어 로케일](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). (LC-3920051)
+* 이제 다음을 사용할 수 있습니다 [Microsoft Office 365 메일 서버 프로토콜(SMTP 및 IMAP)을 인증하는 OAuth2](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* 다음을 설정할 수 있습니다 [서버에서 유효성 검사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) 서버 쪽의 레코드 문서에서 제외하기 위해 숨겨진 필드를 식별하는 true 속성입니다. (NPR-38149)
 * AEM Forms Designer에는 32비트 버전의 Visual C++ 2019 재배포 가능(x86)이 필요합니다.  (NPR-36690)
 
 ### 수정 사항 {#fixes}

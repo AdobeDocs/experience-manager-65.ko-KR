@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3830'
+source-wordcount: '3827'
 ht-degree: 4%
 
 ---
@@ -371,7 +371,6 @@ ht-degree: 4%
    + [Portable Protection Library를 사용하여 정책으로 보호된 PDF 문서 Reader 확장](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [AEM에서 문서 보안 보호 PDF 및 Microsoft Office 문서를 검색할 수 있도록 설정](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [다른 사용자를 대신하여 Protect 문서](using/protect-document-on-behalf-of-another-user.md)
-   + [Microsoft 메일 서비스에 대한 oAuth2.0 지원](/help/forms/using/oauth2-support-for-mail-service.md)
 + Forms 디자이너 {#use-forms-designer}
    + [Forms 디자이너 도움말](using/forms-designer-help.md)
    + [디자이너 사용](https://www.adobe.com/go/learn_aemforms_designer_65)
@@ -453,6 +452,7 @@ ht-degree: 4%
    + 끝점 관리 {#manage-endpoints}
       + [끝점 추가, 활성화, 수정 또는 제거](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [전자 메일 끝점 구성](/help/forms/using/admin-help/configuring-email-endpoints.md)
+      + [oAuth2.0 인증 구성](/help/forms/using/oauth2-support-for-mail-service.md)
       + [원격 끝점 구성](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [감시 폴더 엔드포인트 구성](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [작업 관리자 끝점 구성](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)

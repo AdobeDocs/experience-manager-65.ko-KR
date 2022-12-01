@@ -1,18 +1,16 @@
 ---
-title: Microsoft® Office 365 메일 서버 프로토콜에 대한 OAuth2 지원
-description: Microsoft® Office 365 메일 서버 프로토콜에 대한 Oauth2 지원
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+title: Microsoft® Office 365 메일 서버 프로토콜에 대한 OAuth2 기반 인증 구성
+description: Microsoft® Office 365 메일 서버 프로토콜에 대한 OAuth2 기반 인증 구성
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '938'
 ht-degree: 3%
 
 ---
 
-# Microsoft® Office 365 메일 서버 프로토콜에 대한 OAuth 2.0 지원 {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# Microsoft® Office 365 메일 서버 프로토콜과 통합 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-AEM Forms은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 Microsoft® Office 365 메일 서버 프로토콜과의 통합을 위해 OAuth 2.0 지원을 제공합니다. Azure Active Directory(Azure AD)에서는 응용 프로그램이 IMAP, POP 또는 SMTP와 같은 다양한 프로토콜과 연결하고 Office 365 사용자를 위한 전자 메일 데이터에 액세스할 수 있는 OAuth 2.0 인증 서비스를 제공합니다.
-
-다음은 OAuth 2.0 서비스를 통해 인증하도록 Microsoft® Office 365 메일 서버 프로토콜을 구성하는 단계별 지침입니다.
+조직에서 보안 이메일 요구 사항을 준수할 수 있도록 AEM Forms은 Microsoft® Office 365 메일 서버 프로토콜과의 통합을 위해 OAuth 2.0 지원을 제공합니다. Azure Active Directory(Azure AD) OAuth 2.0 인증 서비스를 사용하여 IMAP, POP 또는 SMTP와 같은 다양한 프로토콜과 연결하고 Office 365 사용자의 전자 메일 데이터에 액세스할 수 있습니다. 다음은 OAuth 2.0 서비스를 통해 인증하도록 Microsoft® Office 365 메일 서버 프로토콜을 구성하는 단계별 지침입니다.
 
 1. 로그인 [https://portal.azure.com/](https://portal.azure.com/) 및 검색 **Azure Active Directory** 검색 막대에서 결과를 클릭합니다.
 또는 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)에서 바로 검색할 수 있습니다.
@@ -22,9 +20,8 @@ AEM Forms은 조직이 보안 이메일 요구 사항을 준수할 수 있도록
 
 1. 요구 사항에 따라 정보를 입력한 다음 **등록**.
    ![지원되는 계정](/help/forms/using/assets/azure_suuportedaccountype.png)
-
-
-   위의 경우 **조직 디렉터리(모든 Azure AD 디렉터리 - 다중 임차인)와 개인 Microsoft® 계정(예: Skype, Xbox)의 계정** 옵션이 선택되어 있습니다.
+위의 경우 
+**조직 디렉터리(모든 Azure AD 디렉터리 - 다중 임차인)와 개인 Microsoft® 계정(예: Skype, Xbox)의 계정** 옵션이 선택되어 있습니다.
 
    >[!NOTE]
    >
@@ -88,7 +85,9 @@ AEM Forms은 조직이 보안 이메일 요구 사항을 준수할 수 있도록
 ## 새로 고침 토큰 생성 {#generating-the-refresh-token}
 
 다음으로 다음 단계에 설명된 새로 고침 토큰을 생성해야 합니다.
+
 1. 명령 프롬프트를 열고 다음 cURL 명령을 사용하여 refreshToken을 가져옵니다.
+
 1. 바꾸기 `clientID`, `client_secret` 및 `redirect_uri` 와 함께 응용 프로그램의 값과 `<code>`:
 
    `curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/common/oauth2/v2.0/token`
@@ -163,9 +162,4 @@ AEM Forms은 조직이 보안 이메일 요구 사항을 준수할 수 있도록
 * 이메일 서비스가 제대로 작동하지 않는 경우 를 다시 생성해 보십시오 `Refresh Token` 위에 설명된 대로, 새 값을 배포하려면 몇 분이 걸립니다.
 
 * Workbench를 사용하여 전자 메일 끝점에서 전자 메일 서버 세부 사항을 구성하는 동안 오류가 발생했습니다.Workbench 대신 Admin UI를 통해 끝점을 구성하세요.
-
-
-
-
-
 
