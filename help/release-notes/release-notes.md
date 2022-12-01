@@ -2,10 +2,10 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 937af2df46b93aab6c9010814175d72a9bd583db
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3176'
-ht-degree: 11%
+source-wordcount: '3853'
+ht-degree: 10%
 
 ---
 
@@ -105,9 +105,44 @@ ht-degree: 11%
 
 ## [!DNL Forms] {#forms-6515}
 
->[!NOTE]
->
->의 수정 사항 [!DNL Experience Manager] Forms은 예약된 후 1주일 후에 별도의 추가 기능 패키지를 통해 전달됩니다 [!DNL Experience Manager] 서비스 팩 릴리스 날짜입니다. 이 경우 추가 기능 패키지는 2022년 12월 1일 목요일에 릴리스됩니다. 또한 Forms 수정 사항 및 개선 사항 목록이 이 섹션에 추가됩니다.
+### 주요 기능 {#keyfeatures}
+
+* 이제 스페인어 로캘로 AEM Forms 디자이너를 사용할 수 있습니다. (LC-3920051)
+* 이제 OAuth2를 사용하여 Microsoft Office 365 메일 서버 프로토콜(SMTP 및 IMAP)을 인증할 수 있습니다. (NPR-35177)
+* 다음을 설정할 수 있습니다 [서버에서 유효성 검사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) 서버 쪽의 레코드 문서에서 제외하기 위해 숨겨진 필드를 식별하는 true 속성입니다. (NPR-38149)
+* AEM Forms Designer에는 32비트 버전의 Visual C++ 2019 재배포 가능(x86)이 필요합니다.  (NPR-36690)
+
+### 수정 사항 {#fixes}
+
+* 적응형 양식의 데이터 비활성화 속성이 전환되면 라디오 단추 및 확인란 그룹의 모양이 변경되지 않습니다. (NPR-39368)
+* 적응형 양식이 번역되면 일부 번역이 누락되고 올바르게 표시되지 않습니다. (NPR-39367)
+* 페이지의 속성을 숨김으로 설정하면 페이지가 양식 세트에서 제거되지 않습니다. (NPR-39325)
+* [기록 문서]에서 페이지 끝에 있는 동적 각주 섹션이 없습니다. (NPR-39322)
+* 적응형 양식에 대해 레코드 문서가 생성되면 라디오 단추와 확인란에 세로 정렬만 허용됩니다. 라디오 단추와 확인란에 대한 가로 정렬을 설정할 수 없습니다. (NPR-39321)
+* Correspondence Management를 배포한 후 여러 사용자가 양식에 액세스하려고 하면 org.apache.sling.i18n.impl.JcrResourceBundle.loadPotentialLanguageRoot가 병목 현상을 일으켜 스레드의 대다수가 타격을 받습니다. 서버의 로드가 매우 적은 경우에도 종종 다양한 양식 페이지 요청이 각각 로드되는 데 1분 이상 걸립니다. (NPR-39176, CQ-4347710)
+* 적응형 양식의 지연 로드 적응형 양식 조각에서 리치 텍스트 필드를 사용하는 경우 다음 오류 중 일부가 발생합니다.
+   * 컨텐츠를 편집하거나 리치 텍스트 필드에 아무 것도 추가할 수 없습니다.
+   * 리치 텍스트에 적용된 표시 패턴이 적용되지 않습니다. 
+   * 양식 제출 시 최소 필드 길이에 대한 오류 메시지가 표시되지 않습니다.
+   * 이 리치 텍스트 필드의 컨텐츠는 생성된 제출-XML에 여러 번 포함됩니다. (NPR-39168)
+* 적응형 양식에서 날짜 선택기 옵션을 사용하면 값을 올바른 형식으로 변환하지 못합니다. (NPR-39156)
+* 적응형 양식을 HTML 양식으로 미리 보는 동안 일부 하위 양식이 상위 양식과 겹치기 때문에 제대로 렌더링되지 않습니다. (NPR-39046)
+* 패널에 숨겨진 테이블이 있고 적응형 양식이 표 형식으로 렌더링되는 경우 첫 번째 탭의 필드가 올바르게 표시되지 않습니다. (NPR-39025)
+* 다음 `Body` 태그가 OOTB(기본 제공) 템플릿에 없습니다. (NPR-39022)
+* 기록 문서는 적응형 양식의 언어로 생성되지 않습니다. 항상 영어로 생성됩니다. (NPR-39020)
+* 적응형 양식에 여러 패널이 있고 일부 패널이 기본 제공 패널을 사용하는 경우 **파일 첨부** 구성 요소, `Error occurred while draft saving` 오류가 발생합니다. (NPR-38978)
+* When `=` 적응형 양식의 확인란, 드롭다운 목록 또는 라디오 단추 필드에 기호가 사용되고 레코드 문서가 생성됩니다 `=` 생성된 기록 문서에 기호가 표시되지 않습니다.(NPR-38859)
+* 6.5.11.0 서비스 팩 업그레이드 후 알림 배치 처리 오류 수가 여러 배로 증가합니다. (NPR-39636)
+* 테스트 데이터를 제공하지 않으면 에이전트 UI에서 서신 관리 문자가 로드되지 않습니다. (CQ-4348702)
+* 사용자가 IBM® WebSphere®를 사용하여 배포된 AEM Forms에서 AEM Forms 서비스 팩 14(SP14)를 적용하면 데이터베이스를 초기화하는 동안 부트스트래핑이 실패하고 `java.lang.NoClassDefFoundError:org/apache/log4j/Logger` 오류가 발생합니다.(NPR-39414)
+* OSGi 서버의 AEM Form에서 문서 서비스 API를 사용하여 PDF을 인증하면 오류가 발생하여 실패합니다. com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311-003. (NPR-38855)
+* 사용자가 AEM 6.3 Forms에서 문자를 렌더링하기 위해 래퍼 서비스를 사용하려고 하면 `java.lang.reflect.UndeclaredThrowableException` 오류가 발생합니다. (CQ-4347259)
+* XDP를 HTML5 양식으로 렌더링하면 마스터 페이지의 컨텐츠가 적응형 양식의 개체 배치와 관계없이 먼저 렌더링됩니다. (CQ-4345218)
+* 대상 서버의 응용 프로그램 구성은 **가져오기가 완료되면 구성을 덮어씁니다.** 응용 프로그램을 가져올 때 옵션이 선택되어 있지 않습니다. (NPR-39044)
+* 사용자가 구성 관리자를 사용하여 커넥터 구성을 업데이트하려고 하면 실패합니다.(CQ-4347077)
+* 사용자가 관리자 사용자의 기본 암호를 변경한 후 JEE 패치에서 AEM Forms을 실행하려고 하면 예외가 발생합니다 `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` 발생합니다. (CQ-4348277)
+* AEM 디자이너에서 캡션이 없는 양식 필드는 확인란을 포함하는 테이블 셀에 배치됩니다.(LC-3920410)
+* 사용자가 AEM Forms 디자이너에서 도움말을 열려고 하면 제대로 표시되지 않습니다. (CQ-4341996)
 
 ## [!DNL Sites] {#sites-6515}
 
@@ -285,7 +320,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 다음을 참조하십시오
  -->
 
 * [GraphQL 색인 패키지 1.0.5가 있는 AEM 컨텐츠 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
-이 패키지는 GraphQL을 사용하는 고객에게 필요합니다. 따라서 실제로 사용하는 기능을 기반으로 필요한 인덱스 정의를 추가할 수 있습니다.
+이 패키지는 GraphQL을 사용하는 고객을 위해 필요합니다. 따라서 실제로 사용하는 기능을 기반으로 필요한 인덱스 정의를 추가할 수 있습니다.
 
 * 로서의 [!DNL Microsoft® Windows Server 2019] 을 지원하지 않음 [!DNL MySQL 5.7] 및 [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] 에 대한 턴키 설치를 지원하지 않습니다. [!DNL AEM Forms 6.5.10.0].
 

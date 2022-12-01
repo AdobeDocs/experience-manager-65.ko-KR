@@ -11,9 +11,9 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3466'
 ht-degree: 2%
 
 ---
@@ -298,10 +298,10 @@ ht-degree: 2%
 기록 문서 탭에 입력하는 브랜딩 정보를 현지화하려면 브라우저의 로케일이 적절하게 설정되도록 해야 합니다. 레코드 문서의 브랜딩 정보를 사용자 정의하려면 다음 단계를 완료하십시오.
 
 1. 레코드 문서에서 패널(루트 패널)을 선택한 다음 ![구성](assets/configure.png).
-1. 탭 ![도트](assets/dortab.png). 기록 문서 탭이 나타납니다.
+1. 탭 ![도트](/help/forms/using/assets/dortab.png). 기록 문서 탭이 나타납니다.
 1. 기본 템플릿 또는 레코드 문서를 렌더링하기 위한 사용자 지정 템플릿을 선택합니다. 기본 템플릿을 선택하면 템플릿 드롭다운 아래에 레코드 문서의 축소판 미리 보기가 나타납니다.
 
-   ![브랜딩 템플릿](assets/brandingtemplate.png)
+   ![브랜딩 템플릿](/help/forms/using/assets/brandingtemplate.png)
 
    사용자 지정 템플릿을 선택하도록 선택하는 경우 AEM Forms 서버에서 XDP를 탐색합니다. AEM Forms 서버에 아직 없는 템플릿을 사용하려면 먼저 XDP를 AEM Forms 서버에 업로드해야 합니다.
 
@@ -396,7 +396,7 @@ ht-degree: 2%
 **양식 수준 설정**
 
 * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 레코드 문서에서 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
-* **숨겨진 경우 DoR에서 필드 제외:** 속성이 true가 아닌 경우 속성을 설정하면 &quot;레코드의 문서에서 제외&quot; 필드 수준 속성의 동작이 무시됩니다. 양식 제출 시 필드가 숨겨져 있으면 속성이 true로 설정되어 있으면 레코드 문서에서 제외됩니다. &quot;레코드의 문서에서 제외&quot; 속성이 설정되지 않은 경우 이 필드가 제외됩니다.
+* **숨겨진 경우 DoR에서 필드 제외:** 숨김 필드를 제외하려면 속성을 설정하십시오. [!UICONTROL 기록 문서] 형식으로 제출합니다. 사용 설정 시 [서버에서 유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)에서 해당 필드를 제외하기 전에 숨겨진 필드를 다시 계산합니다 [!UICONTROL 기록 문서].
 
 ## 기록 문서에 페이지 나누기 적용 {#apply-page-breaks-in-dor}
 
@@ -404,13 +404,12 @@ ht-degree: 2%
 
 기록 문서에 페이지 나누기를 적용하려면
 
-1. 패널을 탭하고 을 선택합니다 ![구성](assets/configure-icon.svg).
-
+1. 패널을 탭하고 을 선택합니다 ![구성](/help/forms/using/assets/configure.png)
 1. 확장 **[!UICONTROL 기록 문서]** 를 클릭하여 속성을 확인합니다.
 
-1. 에서 **[!UICONTROL 페이지 매김]** 섹션, 탭 ![폴더](assets/folder-icon.svg) 에서 **[!UICONTROL 장소]** 필드.
+1. 에서 **[!UICONTROL 페이지 매김]** 섹션, 탭 ![폴더](/help/forms/using/assets/folder-icon.png) 에서 **[!UICONTROL 장소]** 필드.
 1. 탭 **[!UICONTROL 다음 페이지 상단]** 탭 **[!UICONTROL 선택]**. 탭할 수도 있습니다 **[!UICONTROL 페이지 상단]**&#x200B;를 클릭하고 마스터 페이지를 선택한 다음 를 누릅니다 **[!UICONTROL 선택]** 페이지 나누기를 적용하려면
-1. 탭 ![저장](assets/save_icon.svg) 속성을 저장합니다.
+1. 탭 ![저장](/help/forms/using/assets/save_icon.png) 속성을 저장합니다.
 
 선택한 패널이 다음 페이지로 이동합니다.
 
@@ -424,13 +423,13 @@ ht-degree: 2%
 
 두 번째 마스터 페이지 속성을 패널에 적용하고 다음에 오는 패널에 세 번째 마스터 페이지 속성을 적용하려면 다음 단계를 수행합니다.
 
-1. 패널을 눌러 두 번째 마스터 페이지를 적용하고 선택합니다 ![구성](assets/configure-icon.svg).
-1. 에서 **[!UICONTROL 페이지 매김]** 섹션, 탭 ![폴더](assets/folder-icon.svg) 에서 **[!UICONTROL 장소]** 필드.
+1. 패널을 눌러 두 번째 마스터 페이지를 적용하고 선택합니다 ![구성](assets/cmppr.png).
+1. 에서 **[!UICONTROL 페이지 매김]** 섹션, 탭 ![폴더](/help/forms/using/assets/folder-icon.png) 에서 **[!UICONTROL 장소]** 필드.
 1. 탭 **[!UICONTROL 페이지]**&#x200B;두 번째 마스터 페이지를 선택하고 을(를) 탭합니다 **[!UICONTROL 선택]**.
 AEM Forms에서는 두 번째 마스터 페이지를 패널에 적용하고 적응형 양식의 모든 후속 패널을 적용합니다.
-1. 에서 **[!UICONTROL 페이지 매김]** 섹션, 탭 ![폴더](assets/folder-icon.svg) 에서 **[!UICONTROL 후]** 필드.
+1. 에서 **[!UICONTROL 페이지 매김]** 섹션, 탭 ![폴더](/help/forms/using/assets/folder-icon.png) 에서 **[!UICONTROL 후]** 필드.
 1. 탭 **[!UICONTROL 페이지로 이동]**&#x200B;세 번째 마스터 페이지를 선택하고 탭합니다 **[!UICONTROL 선택]**.
-1. 탭 ![저장](assets/save_icon.svg) 속성을 저장합니다.
+1. 탭 ![저장](/help/forms/using/assets/save_icon.png) 속성을 저장합니다.
 AEM Forms은 세 번째 마스터 페이지를 패널에 적용하고 적응형 양식의 모든 후속 패널에 적용합니다.
 
 

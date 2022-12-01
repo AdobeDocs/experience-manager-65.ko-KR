@@ -12,10 +12,10 @@ discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: a3cf926bde4a4b3a0810058e84ac01012a4a3a57
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 3%
+source-wordcount: '290'
+ht-degree: 1%
 
 ---
 
@@ -23,19 +23,20 @@ ht-degree: 3%
 
 ## 전제 조건 {#pre-requisites}
 
-AEM Forms Designer 설치 프로그램에는 32비트 버전의 가 필요합니다 [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) 및 [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). 설치를 시작하기 전에 이전에 언급된 재배포 가능 런타임 패키지가 설치되어 있는지 확인하십시오.
-
-디자이너를 설치하거나 제거하려면 관리자 권한이 필요합니다.
+* 32비트 버전 설치  [Visual C++ 2019 재배포 가능(x86)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). 설치를 시작하기 전에 이전에 언급된 재배포 가능 런타임 패키지가 설치되어 있는지 확인하십시오.
+* 디자이너를 설치 또는 제거할 관리자 권한이 있는 사용자입니다.
 
 ## Designer 설치 {#install-designer}
 
 디자이너는 독립 실행형 설치 프로그램으로 사용할 수 있으며 WorkBench와 함께 번들로 제공됩니다. Designer용 독립형 설치 프로그램을 사용하는 경우 다음 단계를 수행하십시오.
 
-1. Adobe에서 디자이너 다운로드 [라이선스 웹 사이트](https://licensing.adobe.com/).
+1. 이전 버전의 AEM Forms Designer가 이미 설치되어 있으면 제거합니다.
+1. 디자이너 다운로드 위치 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/).
 
    >[!NOTE]
    >
-   >이전 버전의 Designer가 설치되어 있는 경우 계속하기 전에 이전 버전을 제거하십시오.
+   > * Adobe Experience Manager 6.5 Forms 서비스 팩 15(6.5.15.0) 버전의 Forms Designer에도 서비스 팩 버전이 포함되어 있습니다. 예를 들어 서비스 팩 15의 경우 버전 번호는 6.5.15.20221112.1.0입니다. 이 예에서 6.5.15는 서비스 팩 버전입니다.
+
 
 1. setup.exe를 두 번 클릭하여 Designer 설치 프로그램을 시작합니다.
 1. 계속 진행하여 개인화 화면에서 세부 사항 및 일련 번호를 제공합니다.
@@ -57,5 +58,3 @@ msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-*
 ```shell
 msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
 ```
-
-
