@@ -12,10 +12,10 @@ discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 002b9035f37a1379556378686b64d26bbbc30288
 workflow-type: tm+mt
-source-wordcount: '2427'
-ht-degree: 3%
+source-wordcount: '2445'
+ht-degree: 2%
 
 ---
 
@@ -47,13 +47,13 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터가 팜�
 
 >[!NOTE]
 >
->세션이 필요한 경우 SSO 솔루션을 사용하거나 고정 세션을 사용하고, 고객이 다른 게시자로 전환되면 로그인하도록 하는 것이 좋습니다.
+>세션이 필요한 경우 SSO 솔루션을 사용하거나 고정 세션을 사용하고, 고객이 다른 게시 인스턴스로 전환되면 로그인하도록 하는 것이 좋습니다.
 
 >[!CAUTION]
 >
->의 동기화 ***관리자*** 사용자 동기화가 활성화되어 있어도 그룹은 지원되지 않습니다. 대신 &#39;diff 가져오기&#39;에 대한 오류가 오류 로그에 기록됩니다.
+>의 동기화 **관리자** 사용자 동기화가 활성화되어 있어도 그룹은 지원되지 않습니다. 대신 &#39;diff 가져오기&#39;에 대한 오류가 오류 로그에 기록됩니다.
 >
->따라서 배포가 게시 팜인 경우 *에서 사용자를 추가하거나 제거할 경우&#x200B;**관리자** 그룹, 각 게시 인스턴스에서 수동으로 수정해야 합니다.
+>따라서 배포가 게시 팜인 경우 사용자가 추가 또는 제거되는 경우 **관리자** 그룹, 각 게시 인스턴스에서 수동으로 수정해야 합니다.
 
 ## 사용자 동기화 활성화 {#enable-user-sync}
 
@@ -71,7 +71,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터가 팜�
 
 ### 사전 요구 사항 {#prerequisites}
 
-1. 사용자 및 사용자 그룹이 이미 하나의 게시자에서 생성된 경우 [수동 동기화](#manually-syncing-users-and-user-groups) 사용자 동기화를 구성 및 활성화하기 전에 모든 게시자에게 사용자 데이터를 제공합니다.
+1. 사용자 및 사용자 그룹이 이미 하나의 게시 인스턴스에 생성된 경우 다음을 수행하는 것이 좋습니다 [수동 동기화](#manually-syncing-users-and-user-groups) 사용자 동기화를 구성 및 활성화하기 전에 모든 게시 인스턴스에 사용자 데이터를 제공합니다.
 
 사용자 동기화가 활성화되면 새로 만든 사용자와 그룹만 동기화됩니다.
 
@@ -159,7 +159,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터가 팜�
 
 **권한 구성**
 
-권한이 부여된 사용자가 되면 **`administrators`**모든 게시 인스턴스에 사용자 그룹이 생성되었으며, 이 권한이 있는 사용자는 작성자에서 게시로 사용자 데이터를 동기화할 수 있는 권한이 있는 작성자에서 식별되어야 합니다.
+권한이 있는 사용자가 **`administrators`** 모든 게시 인스턴스에 사용자 그룹이 생성되었으며, 이 권한이 있는 사용자는 작성자에서 게시로 사용자 데이터를 동기화할 수 있는 권한이 있는 것으로 작성자가 식별되어야 합니다.
 
 * **작성자**
 
@@ -181,7 +181,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터가 팜�
 
 **사용자 동기화 사용**
 
-* **게시**:
+* **각 게시 인스턴스**:
 
    * 관리자 권한으로 로그인
    * 액세스 [웹 콘솔](/help/sites-deploying/configuring-osgi.md)
@@ -193,7 +193,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터가 팜�
 
       * 선택 `Enabled` 확인란
       * 선택 `Save`
-   * **각 게시 인스턴스에 대해 **를 반복합니다
+   * **반복** 각 게시 인스턴스에 대해
 
 
 
@@ -267,13 +267,13 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터가 팜�
 ![](assets/chlimage_1-25.png)
 
 * **내보내기 끝점**
-각 게시자에 대한 내보내기 끝점이 있어야 합니다. 예를 들어 두 개의 게시자인 localhost:4503 및 4504가 있는 경우 두 개의 항목이 있어야 합니다.
+각 게시 인스턴스에 대한 내보내기 끝점이 있어야 합니다. 예를 들어 localhost:4503과 4504의 게시 인스턴스가 2개 있는 경우 2개의 항목이 있어야 합니다.
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **가져오기 끝점**
-각 게시자에 대한 가져오기 끝점이 있어야 합니다. 예를 들어 두 개의 게시자인 localhost:4503 및 4504가 있는 경우 두 개의 항목이 있어야 합니다.
+각 게시 인스턴스에 대한 가져오기 끝점이 있어야 합니다. 예를 들어 localhost:4503과 4504의 게시 인스턴스가 2개 있는 경우 2개의 항목이 있어야 합니다.
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -400,7 +400,7 @@ Sling ID가 게시 팜의 여러 게시 인스턴스에 대해 동일하면 사�
 
 디자인적으로 게시 환경(자체 등록)에서 만든 사용자 및 프로필은 작성 환경에 표시되지 않습니다.
 
-토폴로지가 [팜 게시](/help/sites-deploying/recommended-deploys.md#tarmk-farm) 및 사용자 동기화가 올바르게 구성되었습니다. *사용자 *와 *사용자 프로필* 는 Sling 배포를 사용하여 게시 팜 간에 동기화됩니다.
+토폴로지가 [팜 게시](/help/sites-deploying/recommended-deploys.md#tarmk-farm) 그리고 사용자 동기화가 올바르게 구성되었습니다. *사용자* 및 *사용자 프로필* 는 Sling 배포를 사용하여 게시 팜 간에 동기화됩니다.
 
 ### 사용자 또는 사용자 그룹은 보안 콘솔을 사용하여 만들어집니다 {#users-or-user-groups-are-created-using-security-console}
 
@@ -412,7 +412,7 @@ Sling ID가 게시 팜의 여러 게시 인스턴스에 대해 동일하면 사�
 
 ### 사용자 동기화를 오프라인으로 전환하는 방법 {#how-to-take-user-sync-offline}
 
-사용자 동기화를 오프라인으로 전환하려면 다음을 수행하십시오. [게시자 제거](#how-to-remove-a-publisher) 또는 [데이터 수동 동기화](#manually-syncing-users-and-user-groups): 배포 큐가 비어 있고 조용해야 합니다.
+사용자 동기화를 오프라인으로 설정하려면 다음을 수행하십시오 [게시 인스턴스 제거](#how-to-remove-a-publish-instance) 또는 [데이터 수동 동기화](#manually-syncing-users-and-user-groups): 배포 큐가 비어 있고 조용해야 합니다.
 
 분배 큐의 상태를 확인하려면:
 
@@ -455,7 +455,7 @@ User Sync Diagnostics 콘솔을 입력하면 결과가 표시됩니다.
 
 ![](assets/chlimage_1-28.png)
 
-#### 게시자에 대한 진단 실행 방법 {#how-to-run-diagnostics-for-publishers}
+#### 게시 인스턴스에 대한 진단을 실행하는 방법 {#how-to-run-diagnostics-for-publish-instances}
 
 작성 환경에서 진단 프로그램이 실행되면 전달/실패 결과에 [정보] 확인을 위해 구성된 게시 인스턴스 목록을 표시하는 섹션을 참조하십시오.
 
@@ -531,7 +531,7 @@ Sling ID가 둘 이상의 게시 인스턴스 간에 일치하는 경우 사용�
 
 ### 사용자 및 사용자 그룹 수동 동기화 {#manually-syncing-users-and-user-groups}
 
-* 사용자 및 사용자 그룹이 있는 게시자에서:
+* 사용자 및 사용자 그룹이 있는 게시 인스턴스:
 
    * [활성화되어 있으면 사용자 동기화를 사용하지 않습니다.](#how-to-take-user-sync-offline)
    * [패키지 만들기](/help/sites-administering/package-manager.md#creating-a-new-package) 의 `/home`
@@ -549,13 +549,13 @@ Sling ID가 둘 이상의 게시 인스턴스 간에 일치하는 경우 사용�
 
 사용자 동기화를 구성하거나 활성화하려면 1단계로 이동하십시오. [Apache Sling Distribution Agent - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory)
 
-### 게시자를 사용할 수 없게 되는 경우 {#when-a-publisher-becomes-unavailable}
+### 게시 인스턴스를 사용할 수 없게 되는 경우 {#when-a-publish-instance-becomes-unavailable}
 
-게시 인스턴스를 사용할 수 없게 되면 나중에 다시 온라인으로 전환될 경우 해당 인스턴스를 제거하지 않아야 합니다. 변경 사항이 게시자에 대해 대기열에 추가되고, 다시 온라인 상태가 되면 변경 사항이 처리됩니다.
+게시 인스턴스를 사용할 수 없게 되면 나중에 다시 온라인으로 전환될 경우 해당 인스턴스를 제거하지 않아야 합니다. 변경 사항이 게시 인스턴스에 대해 큐에 추가되며 다시 온라인 상태가 되면 변경 사항이 처리됩니다.
 
 게시 인스턴스가 온라인 상태가 되지 않을 경우, 오프라인 상태가 영구적으로 되면 큐 증가로 인해 작성 환경에서 눈에 띄는 디스크 공간 사용이 발생하므로 이 인스턴스를 제거해야 합니다.
 
-게시자가 다운되면 작성자 로그에는 다음과 유사한 예외가 발생합니다.
+게시 인스턴스가 종료되면 작성자 로그에는 다음과 유사한 예외가 발생합니다.
 
 ```
 28.01.2016 15:57:48.475 ERROR
@@ -565,14 +565,14 @@ Sling ID가 둘 이상의 게시 인스턴스 간에 일치하는 경우 사용�
  org.apache.sling.distribution.packaging.DistributionPackageImportException: failed in importing package ...
 ```
 
-### 게시자 제거 방법 {#how-to-remove-a-publisher}
+### 게시 인스턴스를 제거하는 방법 {#how-to-remove-a-publish-instance}
 
-게시자를 [Apache Sling Distribution Agent - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory): 배포 큐가 비어 있고 조용해야 합니다.
+에서 게시 인스턴스를 제거하려면 [Apache Sling Distribution Agent - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory): 배포 큐가 비어 있고 조용해야 합니다.
 
 * 작성자:
 
    * [사용자 동기화를 오프라인으로 전환](#how-to-take-user-sync-offline)
-   * 팔로우 [7단계](#apache-sling-distribution-agent-sync-agents-factory) 두 서버 목록에서 게시자를 제거하려면
+   * 팔로우 [7단계](#apache-sling-distribution-agent-sync-agents-factory) 두 서버 목록에서 게시 인스턴스를 제거하려면 다음을 수행하십시오.
 
       * `Exporter Endpoints`
       * `Importer Endpoints`
