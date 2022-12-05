@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f841e3886771fb00eee6e476d7111d4a335a9d51
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '260'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ Apache Sling Referrer Filter 외에도 Adobe은 이러한 유형의 공격으로
 
 ### 암호화 키 복제 {#replicating-crypto-keys}
 
-토큰을 사용하려면 토큰을 복제해야 합니다 `/etc/keys/hmac` 바이너리를 배포의 모든 인스턴스에 연결합니다. HMAC 키를 모든 인스턴스에 복사하는 편리한 방법은 키가 포함된 패키지를 만들어 모든 인스턴스에 패키지 관리자를 통해 설치하는 것입니다.
+토큰을 사용하려면 HMAC 바이너리를 배포의 모든 인스턴스에 복제해야 합니다. 자세한 내용은 [HMAC 키 복제](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) 자세한 내용
 
 >[!NOTE]
 >

@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 32e2a30d9f3327d26b81a07730ace04e4e68b0d1
+source-git-commit: f8d249f5d3fac243b4989c3eca4be2730dcf16ec
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -68,16 +68,12 @@ ht-degree: 0%
 
 ### HMAC 키 복제 {#replicating-the-hmac-key}
 
-HMAC 키는 `/etc/key` 로그인합니다. 을 눌러 별도로 다운로드할 수 있습니다 **보기** 옆에 링크:
-
-![chlimage_1-35](assets/chlimage_1-35a.png)
-
 인스턴스 간에 키를 복제하려면 다음을 수행해야 합니다.
 
 1. 복사할 주요 자료가 포함된 AEM 인스턴스(일반적으로 작성자 인스턴스)에 액세스합니다.
 1. 을(를) 찾습니다 `com.adobe.granite.crypto.file` 로컬 파일 시스템에 번들로 구성합니다. 예를 들어, 이 경로 아래에서:
 
-   * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
    다음 `bundle.info` 각 폴더 내의 파일은 번들 이름을 식별합니다.
 
