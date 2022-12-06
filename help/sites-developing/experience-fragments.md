@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 6e54073a0c1d67218283b096db3f2e5597f10376
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1784'
 ht-degree: 3%
 
 ---
@@ -57,6 +57,19 @@ ht-degree: 3%
 일반 표현물 선택기는 추가 스크립트와 반대로 변압기를 사용합니다. a [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) 는 변압기로 사용됩니다. 다음 위치에서 구성됩니다.
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### HTML 표현물 생성 구성 {#configuring-html-rendition-generation}
+
+HTML 표현물은 Sling 재작성기 파이프라인을 사용하여 생성됩니다. 파이프라인은에서 정의됩니다. `/libs/experience-fragments/config/rewriter/experiencefragments`. HTML 변압기는 다음 옵션을 지원합니다.
+
+* `allowedCssClasses`
+   * 최종 변환에 두어야 하는 CSS 클래스와 일치하는 RegEx 표현식입니다.
+   * 이 기능은 고객이 일부 특정 CSS 클래스를 제거하려는 경우에 유용합니다
+* `allowedTags`
+   * 최종 변환에서 허용할 HTML 태그 목록입니다.
+   * 기본적으로 다음 태그가 허용됩니다(구성이 필요 없음). html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link 및 script
+
+오버레이를 사용하여 재작성기를 구성하는 것이 좋습니다. 자세한 내용은 [AEM as a Cloud Service의 오버레이](/help/sites-developing/overlays.md)
 
 ## 소셜 변형 {#social-variations}
 
