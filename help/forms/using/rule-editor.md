@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 84ae92f889661a639e931b2a7ba9a999d5258841
+source-git-commit: 26403941129f3a80fdb3e9b964cb943a04b3bfa1
 workflow-type: tm+mt
-source-wordcount: '6794'
+source-wordcount: '6888'
 ht-degree: 0%
 
 ---
@@ -572,6 +572,9 @@ forms-power-users 그룹에 추가된 사용자는 코드 편집기를 사용할
    1. 문자열
    1. 개수
    1. 부울
+   1. 범위
+
+   범위는 적응형 양식의 참조 필드에 사용됩니다. 양식에서 레이지 로드를 사용하는 경우 `scope` 을 눌러 해당 필드에 액세스합니다. 필드가 로드되거나 필드가 전역 것으로 표시된 경우 필드에 액세스할 수 있습니다.
 
    다른 모든 매개 변수 유형은 위의 중 하나에 따라 분류됩니다. 어떤 것도 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 유형은 대/소문자를 구분하지 않습니다. 매개 변수에는 공백을 사용할 수 없습니다 `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
@@ -586,6 +589,29 @@ forms-power-users 그룹에 추가된 사용자는 코드 편집기를 사용할
    1. 부울
 
    다른 모든 반환 유형은 위의 중 하나에 분류됩니다. 어떤 것도 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 반환 유형은 대/소문자를 구분하지 않습니다.
+
+* **이**
+구문: 
+`@this currentComponent`
+
+   @this을 사용하여 규칙이 작성된 적응형 양식 구성 요소를 참조합니다.
+
+   다음 예는 필드 값을 기반으로 합니다. 다음 예제에서는 규칙이 양식의 필드를 숨깁니다. 다음 `this` 부분 `this.value` 는 규칙이 작성된 기본 적응형 양식 구성 요소를 나타냅니다.
+
+   ```
+      /**
+      * @function myTestFunction
+      * @this currentComponent
+      * @param {scope} scope in which code inside function will be executed.
+      */
+      myTestFunction = function (scope) {
+         if(this.value == "O"){
+               scope.age.visible = true;
+         } else {
+            scope.age.visible = false;
+         }
+      }
+   ```
 
 >[!NOTE]
 >
