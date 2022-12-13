@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 02afc4eb78acaacc40d3ba1830ccb1e9c3907d0f
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1877'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Client Context가 ContextHub로 대체되었습니다. 자세한 내용은 관련 [구성]ch-configuring.md) 및 [개발자](/help/sites-developing/contexthub.md) 설명서입니다.
+>Client Context가 ContextHub로 대체되었습니다. 자세한 내용은 관련 [구성](/help/sites-developing/ch-configuring.md) 및 [개발자](/help/sites-developing/contexthub.md) 설명서입니다.
 
 Client Context 는 현재 페이지 및 방문자에 대한 특정 정보를 제공하는 메커니즘입니다. 다음 아이콘을 사용하여 열 수 있습니다 **Ctrl-Alt-c** (windows) 또는 **control-option-c** (Mac):
 
