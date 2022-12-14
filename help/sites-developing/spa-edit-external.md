@@ -2,9 +2,9 @@
 title: AEM에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업로드하고 편집 가능한 컨텐츠 섹션을 추가하고 작성을 활성화하기 위한 권장 단계에 대해 설명합니다.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 237de641ba02705f8171b1526946a4dc1b60b6a3
+source-git-commit: 90f3fb05581820167ea0dcf50fb23048609af31d
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2446'
 ht-degree: 1%
 
 ---
@@ -358,6 +358,10 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 1. AEM에서 페이지 편집을 확인합니다.
 
    * 프로젝트를 AEM에 배포하고 새로 만든 페이지로 이동합니다 `test` 페이지. 이제 페이지 컨텐츠가 렌더링되고 AEM 구성 요소를 편집할 수 있습니다.
+
+## 프레임워크 제한 사항 {#framework-limitations}
+
+RemotePage 구성 요소는 구현에서 다음과 같은 자산 매니페스트를 제공할 것으로 예상됩니다 [여기에서 찾을 수 있습니다.](https://github.com/shellscape/webpack-manifest-plugin) 그러나 RemotePage 구성 요소는 React 프레임워크(및 원격 페이지-다음 구성 요소를 통해 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 애플리케이션을 원격으로 로드하는 것을 지원하지 않습니다.
 
 ## 추가 리소스 {#additional-resources}
 
