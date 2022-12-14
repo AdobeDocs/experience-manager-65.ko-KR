@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 2801ef5ec5ed7b01f4eb046baa439f6d5de56b75
+source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
 workflow-type: tm+mt
-source-wordcount: '3249'
+source-wordcount: '3252'
 ht-degree: 10%
 
 ---
@@ -435,7 +435,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 1. 편집 가능한 템플릿과 마찬가지로 템플릿을 만듭니다 [여기에 설명된 대로](/help/sites-authoring/templates.md#creating-a-new-template-template-author): 템플릿 유형의 기반이 됩니다.
 1. CRXDE Lite을 사용하여 새 템플릿을 `templates` 노드 `template-types` 아래의 노드 [템플릿 폴더](/help/sites-developing/page-templates-editable.md#template-folders).
 1. 에서 템플릿을 삭제합니다. `templates` 아래의 노드 [템플릿 폴더](/help/sites-developing/page-templates-editable.md#template-folders).
-1. 의 아래에 있는 템플릿의 복사본에서 `template-types` 노드, 모두 삭제 `cq:template` 및 `cq:templateType` `jcr:content` 속성을 사용합니다.
+1. 의 아래에 있는 템플릿의 복사본에서 `template-types` 노드, 모두 삭제 `cq:template` 및 `cq:templateType` 모든 속성의 등록 정보 `jcr:content` 노드 아래에 나열됩니다.
 
 GitHub에서 사용할 수 있는 편집 가능한 템플릿 예제 를 사용하여 고유한 템플릿 유형을 개발할 수도 있습니다.
 
