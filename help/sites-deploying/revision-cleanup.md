@@ -1,8 +1,8 @@
 ---
 title: 개정 정리
 seo-title: Revision Cleanup
-description: AEM 6.3에서 개정 정리 기능을 사용하는 방법을 알아봅니다.
-seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.3.
+description: AEM 6.5에서 개정 정리 기능을 사용하는 방법을 알아봅니다.
+seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.5.
 uuid: 321f5038-44b0-4f1e-a1aa-2d29074eed70
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
+source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
 workflow-type: tm+mt
-source-wordcount: '5912'
+source-wordcount: '5918'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 저장소에 대한 각 업데이트에서는 새 컨텐츠 개정을 만듭니다. 따라서 각 업데이트 시 저장소의 크기가 증가합니다. 저장소 증가를 제어하지 않으려면 사용 가능한 디스크 리소스를 위해 이전 버전을 정리해야 합니다. 이 유지 관리 기능을 개정 정리라고 합니다. AEM 6.0 이후 오프라인 루틴으로 사용할 수 있습니다.
 
-AEM 6.3에서는 온라인 개정 정리 라는 이 기능의 온라인 버전이 도입되었습니다. AEM 인스턴스를 종료해야 하는 오프라인 개정 정리 와 비교하여 AEM 인스턴스가 온라인 상태인 동안 온라인 개정 정리를 실행할 수 있습니다. 온라인 개정 정리 는 기본적으로 켜져 있으며 개정 정리를 수행하는 권장 방법입니다.
+AEM 6.3 이상에서는 온라인 개정 정리 라는 이 기능의 온라인 버전이 도입되었습니다. AEM 인스턴스를 종료해야 하는 오프라인 개정 정리 와 비교하여 AEM 인스턴스가 온라인 상태인 동안 온라인 개정 정리를 실행할 수 있습니다. 온라인 개정 정리 는 기본적으로 켜져 있으며 개정 정리를 수행하는 권장 방법입니다.
 
 **참고**: [비디오를 참조하십시오](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) 를 참조하십시오.
 
@@ -34,7 +34,7 @@ AEM 6.3에서는 온라인 개정 정리 라는 이 기능의 온라인 버전�
 
 * [온라인 개정 정리 실행 방법](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup)
 * [온라인 개정 정리 FAQ](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions)
-* [오프라인 개정 정리를 실행하는 방법](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)
+* [오프라인 개정 정리 실행 방법](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)
 
 또한 [공식 Oak 문서입니다.](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html)
 
@@ -162,7 +162,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>이전 Tar 형식이 계속 지원됩니까?</strong></td>
-   <td>새 Oak 세그먼트 Tar만 AEM 6.3에서 지원됩니다.</td>
+   <td>새 Oak Segment Tar만 AEM 6.3 이상에서 지원됩니다.</td>
    <td> </td>
   </tr>
   <tr>
@@ -171,7 +171,7 @@ TarMK GC: no base state available, running full compaction instead
    <td> </td>
   </tr>
   <tr>
-   <td><strong>6.3으로 업그레이드하고 나중에 마이그레이션을 수행할 수 있습니까(예: 다른 유지 관리 창 사용)?</strong></td>
+   <td><strong>6.3 이상으로 업그레이드하고 나중에 마이그레이션을 수행할 수 있습니까(예: 다른 유지 관리 창 사용)?</strong></td>
    <td>아니요. 위에서 설명한 대로 컨텐츠 마이그레이션은 필수입니다.</td>
    <td> </td>
   </tr>
@@ -249,7 +249,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>온라인 개정 정리를 실행하기 전에 사전 요구 사항이 있습니까?</strong></td>
-   <td><p>온라인 개정 정리 는 AEM 6.3 이상 릴리스에서만 사용할 수 있습니다. 또한 이전 버전의 AEM을 사용하는 경우 새 버전으로 마이그레이션해야 합니다 <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak 세그먼트 Tar</a>.</p> </td>
+   <td><p>온라인 개정 정리 는 AEM 6.3 이상의 릴리스에서만 사용할 수 있습니다. 또한 이전 버전의 AEM을 사용하는 경우 새 버전으로 마이그레이션해야 합니다 <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak 세그먼트 Tar</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -533,7 +533,7 @@ TarMK GC: no base state available, running full compaction instead
   </td>
   </tr>
   <tr>
-    <td>해당 없음</td>
+    <td>N/A</td>
     <td>TarMK GC #2: 중단된 항목: ${REASON}. 압축을 건너뜁니다.</td>
     <td>추정 단계가 너무 빨리 종료되었습니다. 추정 단계를 방해할 수 있는 이벤트의 일부 예: 호스트 시스템의 메모리 또는 디스크 공간이 부족합니다.</td>
     <td>주어진 이유에 따라 다릅니다.</td>
@@ -570,7 +570,7 @@ TarMK GC: no base state available, running full compaction instead
   </tbody>
 </table>
 
-## 오프라인 개정 정리를 실행하는 방법 {#how-to-run-offline-revision-cleanup}
+## 오프라인 개정 정리 실행 방법 {#how-to-run-offline-revision-cleanup}
 
 >[!CAUTION]
 >
