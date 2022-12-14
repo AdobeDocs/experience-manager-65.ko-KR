@@ -2,10 +2,10 @@
 title: RemotePage 구성 요소
 description: RemotePage 구성 요소는 AEM 내에서 원격 React SPA을 편집하는 사용자 지정 페이지 구성 요소입니다.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-source-git-commit: a92358d187aa78e05dd9b5a7bd4ae14bf0972f62
+source-git-commit: 41aac3b4ea3b100e9d927bef161929477d667a95
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 3%
+source-wordcount: '394'
+ht-degree: 2%
 
 ---
 
@@ -39,7 +39,7 @@ RemotePage 구성 요소는 애플리케이션에서 생성된 모든 필수 자
 
 ## 제한 사항 {#limitations}
 
-* RemotePage 구성 요소의 현재 구현은 원격 React 응용 프로그램만 지원합니다.
+* RemotePage 구성 요소는 구현에서 다음과 같은 자산 매니페스트를 제공할 것으로 예상됩니다 [여기에서 찾을 수 있습니다.](https://github.com/shellscape/webpack-manifest-plugin) 그러나 RemotePage 구성 요소는 React 프레임워크(및 원격 페이지-다음 구성 요소를 통해 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 애플리케이션을 원격으로 로드하는 것을 지원하지 않습니다.
 * AEM에서 원격 렌더링을 수행할 때 애플리케이션의 루트 HTML 파일과 루트 DOM 노드의 인라인 CSS에 정의된 내부 CSS를 사용할 수 없습니다.
 
 ## 기술 세부 사항 {#technical-details}
