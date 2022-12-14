@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 461424de9158e14e251037004ea3590ed35bb4a0
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3584'
 ht-degree: 2%
 
 ---
@@ -121,7 +121,7 @@ customBlobStore=B"false"
 
 ### 파일 데이터 저장소 {#file-data-store}
 
-구현입니다 [파일 데이터 저장소](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/core/data/FileDataStore.html) Jackrabbit 2에. 이진 데이터를 파일 시스템에 일반 파일로 저장하는 방법을 제공합니다. 이 템플릿은 를 사용합니다 `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
+구현입니다 [파일 데이터 저장소](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) Jackrabbit 2에. 이진 데이터를 파일 시스템에 일반 파일로 저장하는 방법을 제공합니다. 이 템플릿은 를 사용합니다 `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
 
 다음 구성 옵션을 사용할 수 있습니다.
 
