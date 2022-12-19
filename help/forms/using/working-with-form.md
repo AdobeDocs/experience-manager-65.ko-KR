@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
+source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -32,7 +32,7 @@ AEM Forms 앱에서 양식을 동기화하려면 다음을 수행하십시오.
 
 AFA(AEM Form Application) Android 앱이 동기화되지 않는 경우 다음 단계를 수행하여 동기화 문제를 해결하십시오.
 
-1. 로 이동합니다. **https://&#39;[server]:[포트]&#39;system/console/configMgr**.
+1. 로 이동합니다. **https://[server]:[포트]/system/console/configMgr**.
 1. 을 검색합니다. **[!UICONTROL Adobe Granite 토큰 인증 핸들러]** 을(를) 클릭합니다. **[!UICONTROL 편집]**.
 1. 을(를) 선택합니다 **[!UICONTROL 없음]** 드롭다운 메뉴의 옵션 **[!UICONTROL 로그인 토큰 쿠키에 대한 SameSite 속성]** 속성을 사용합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
