@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
 exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a4183bb9d72763ebea3b464c77fce978c723e053
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '258'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,16 @@ AEM 설치가 가능한 한 안전한지 확인하기 위해 보안 체크리스
 
 이 권장 사항은 공격 표면을 최대한 줄이기 위한 것이지만, 시스템 관리자는 경우에 따라 컨텐츠를 검색하거나 프로덕션 인스턴스에서 문제를 디버깅하기 위해 CRXDE Lite에 액세스해야 할 수 있습니다.
 
+다음 중 하나를 사용하여 CRXDE Lite을 활성화할 수 있습니다 [OSGi 설정](#enabling-crxde-lite-osgi) 또는 [cURL 명령](#enabling-crxde-lite-curl).
+
+>[!WARNING]
+>
+>이러한 방법 작동 방식에 약간의 차이로 인해 사용해야 합니다 ***둘 중 하나*** OSGI ***또는*** cURL.
+>
+>두 가지 방법은 다음과 같습니다 ***not*** 서로 바꿔서 사용할 수 있습니다.
+
+## OSGI를 사용하여 CRXDE Lite 활성화 {#enabling-crxde-lite-osgi}
+
 비활성화된 경우 아래 절차에 따라 CRXDE Lite을 설정할 수 있습니다.
 
 1. 의 OSGi 구성 요소 콘솔로 이동합니다. `http://localhost:4502/system/console/components`
@@ -48,6 +58,8 @@ AEM 설치가 가능한 한 안전한지 확인하기 위해 보안 체크리스
    * 아래의 상자에 확인 표시 **절대 URI 사용**.
 
 1. CRXDE Lite 사용을 마치면 WebDAV를 다시 비활성화해야 합니다.
+
+## cURL을 사용하여 CRXDE Lite 활성화 {#enabling-crxde-lite-curl}
 
 다음 명령을 실행하여 cURL을 통해 CRXDE Lite을 활성화할 수도 있습니다.
 
