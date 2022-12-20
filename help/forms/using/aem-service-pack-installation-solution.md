@@ -1,7 +1,7 @@
 ---
 title: 최신 6.5.15.0 서비스 팩이 설치되면 CRX/bundle 및 시작 페이지 서비스를 사용할 수 없는 오류가 발생합니다
 description: 최신 6.5.15.0 서비스 팩이 설치되면 CRX/bundle 및 시작 페이지 서비스를 사용할 수 없는 오류가 발생합니다
-source-git-commit: 4e4dca8ae8ed49c5b81934f22572c84938f4f676
+source-git-commit: be7a9cfc226537ab4b360064220fa03bf2045310
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 16%
@@ -31,9 +31,9 @@ AEM 6.5.15.0 서비스 팩을 설치한 후 CRX/bundle을 설치하고 시작 �
 1. 을(를) 찾습니다 `bundle.info` 파일.
 1. 를 엽니다. `bundle.info` 파일(ant text editor)로 파일을 검색하고 번들 이름을 `org.apache.felix.http.bridge`.
 
->[!NOTE]
->
->경우에 따라 `bundle.info` 아래에 `bundle52` 에 이 포함되어 있지 않음 `org.apache.felix.http.bridge` 번들 옆의 대괄호 안에 있는 번들 번호를 확인합니다 `org.apache.felix.http.bridge`. 그런 다음 로 이동합니다. [aem forms 루트]\crx-repository\launchpad\felix\bundle[x] 이 위치에서 다음 단계를 수행합니다.
+   >[!NOTE]
+   >
+   >경우에 따라 `bundle.info` 아래에 `bundle52` 에 이 포함되어 있지 않음 `org.apache.felix.http.bridge` 번들 옆의 대괄호 안에 있는 번들 번호를 확인합니다 `org.apache.felix.http.bridge`. 그런 다음 로 이동합니다. [aem forms 루트]\crx-repository\launchpad\felix\bundle[x] 이 위치에서 다음 단계를 수행합니다.
 
 1. URL로 이동: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. 검색 대상 `bundle.jar` 이름을 바꿀 수 있습니다 `bundle.jar` to `bundle.jar.bak`.
