@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
+source-git-commit: 29b283970f2c37782700b69302715e8404ce83ae
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3835'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 + [AEM 6.5 Forms 안내서](home.md)
 + 릴리스 노트 {#release-notes-new-features}
-   + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
+   + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
    + [새로운 기능 요약](using/whats-new.md)
    + [FAQ](/help/forms/using/frequently-asked-questions-faq.md)
    + [이제 사용되지 않는 기능](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
@@ -688,6 +688,7 @@ ht-degree: 4%
    + [Windows Server에서 Word 또는 Excel 파일을 PDF으로 변환할 수 없습니다.](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
    + [Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer 또는 Apple Safari에서 XFA 기반 PDF forms을 열 수 없습니다](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
    + [CRX 저장소를 복원할 수 없습니다.](/help/forms/using/restore-crx-repository.md)
+   + [AEM 6.5.15.0 서비스 팩을 설치한 후 서비스를 사용할 수 없는 오류가 발생했습니다](/help/forms/using/aem-service-pack-installation-solution.md)
 + 이전 설명서 {#legacy-documentation}
    + [JEE Workbench의 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 작성](developing/building-xml.md)
    + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](developing/compressing-decompressing-custom-dsc.md)

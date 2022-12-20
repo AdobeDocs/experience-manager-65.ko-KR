@@ -2,10 +2,11 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
+exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
+source-git-commit: a0e9bfd4bcbf7091d5537c6d88025ef4d6046b4d
 workflow-type: tm+mt
-source-wordcount: '3858'
-ht-degree: 10%
+source-wordcount: '3989'
+ht-degree: 11%
 
 ---
 
@@ -220,6 +221,15 @@ ht-degree: 10%
 
 ### 서비스 팩 설치 [!DNL Experience Manager] 6.5 {#install-service-pack}
 
+>[!NOTE]
+>
+> 최신 버전을 설치하기 전 [AEM 6.5.15.0 서비스 팩](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)에서 다음 단계를 수행합니다.
+> 1. 설치 [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) 서블릿 조각.
+> 1. Application Server가 안정화될 때까지 기다립니다.
+> 1. 설치 [AEM 6.5.15.0 서비스 팩](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip).
+
+
+
 1. 인스턴스가 업데이트 모드(이전 버전에서 인스턴스가 업데이트되었을 때)인 경우 설치하기 전에 인스턴스를 다시 시작합니다. Adobe은 인스턴스에 대한 현재 가동 시간이 높은 경우 다시 시작할 것을 권장합니다.
 
 1. 설치하기 전에 스냅샷 또는 새 백업 [!DNL Experience Manager] 인스턴스.
@@ -257,6 +267,11 @@ ht-degree: 10%
 
 1. OSGi 번들 `org.apache.jackrabbit.oak-core` 버전 1.22.13 이상(웹 콘솔 사용: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
+>[!NOTE]
+>
+>최신 버전을 설치하는 경우 [AEM 서비스 팩(6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), CRX/bundle 및 시작 페이지에 사용할 수 없는 오류가 표시됩니다. [여기를 클릭하십시오.](/help/forms/using/aem-service-pack-installation-solution.md).
+
+
 ### 설치 [!DNL Experience Manager] Forms 추가 기능 패키지 {#install-aem-forms-add-on-package}
 
 >[!NOTE]
@@ -282,7 +297,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 >[!NOTE]
 >
->누적 설치 관리자를 설치한 후 [!DNL Experience Manager] Forms on JEE에서, 최신 Forms 추가 기능 패키지를 설치하고, Forms 추가 기능 패키지를 목록에서 삭제합니다 `crx-repository\install` 폴더를 만들고 서버를 다시 시작합니다.
+>누적 설치 관리자를 설치한 후 [!DNL Experience Manager] Forms on JEE에서 최신 서비스 팩을 설치합니다. 서비스 팩을 설치한 후 최신 Forms 추가 기능 패키지를 설치하고 의 `crx-repository\install` 폴더를 만들고 서버를 다시 시작합니다.
 
 ### UberJar {#uber-jar}
 
