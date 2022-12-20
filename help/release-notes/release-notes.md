@@ -3,10 +3,10 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: a0e9bfd4bcbf7091d5537c6d88025ef4d6046b4d
+source-git-commit: 214c5e27567a515837c0ab52601f3491a9144120
 workflow-type: tm+mt
-source-wordcount: '3989'
-ht-degree: 11%
+source-wordcount: '3946'
+ht-degree: 10%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 11%
 ### 주요 기능 {#keyfeatures}
 
 * 이제 AEM Forms 디자이너를 사용할 수 있습니다. [스페인어 로케일](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). (LC-3920051)
-* 이제 다음을 사용할 수 있습니다 [Microsoft Office 365 메일 서버 프로토콜(SMTP 및 IMAP)을 인증하는 OAuth2](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* 이제 다음을 사용할 수 있습니다 [Microsoft® Office 365 메일 서버 프로토콜(SMTP 및 IMAP)을 인증하는 OAuth2](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
 * 다음을 설정할 수 있습니다 [서버에서 유효성 검사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) 서버 쪽의 레코드 문서에서 제외하기 위해 숨겨진 필드를 식별하는 true 속성입니다. (NPR-38149)
 * AEM Forms Designer에는 32비트 버전의 Visual C++ 2019 재배포 가능(x86)이 필요합니다.  (NPR-36690)
 
@@ -141,7 +141,7 @@ ht-degree: 11%
 * XDP를 HTML5 양식으로 렌더링하면 마스터 페이지의 컨텐츠가 적응형 양식의 개체 배치와 관계없이 먼저 렌더링됩니다. (CQ-4345218)
 * 대상 서버의 응용 프로그램 구성은 **가져오기가 완료되면 구성을 덮어씁니다.** 응용 프로그램을 가져올 때 옵션이 선택되어 있지 않습니다. (NPR-39044)
 * 사용자가 구성 관리자를 사용하여 커넥터 구성을 업데이트하려고 하면 실패합니다.(CQ-4347077)
-* 사용자가 관리자 사용자의 기본 암호를 변경한 후 JEE 패치에서 AEM Forms을 실행하려고 하면 예외가 발생합니다 `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` 발생합니다. (CQ-4348277)
+* 사용자가 관리자 사용자의 기본 암호를 변경한 후 JEE 패치에서 AEM Form을 실행하려고 하면 예외가 발생합니다 `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` 발생합니다. (CQ-4348277)
 * AEM 디자이너에서 캡션이 없는 양식 필드는 확인란을 포함하는 테이블 셀에 배치됩니다.(LC-3920410)
 * 사용자가 AEM Forms 디자이너에서 도움말을 열려고 하면 제대로 표시되지 않습니다. (CQ-4341996)
 
@@ -221,15 +221,6 @@ ht-degree: 11%
 
 ### 서비스 팩 설치 [!DNL Experience Manager] 6.5 {#install-service-pack}
 
->[!NOTE]
->
-> 최신 버전을 설치하기 전 [AEM 6.5.15.0 서비스 팩](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)에서 다음 단계를 수행합니다.
-> 1. 설치 [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) 서블릿 조각.
-> 1. Application Server가 안정화될 때까지 기다립니다.
-> 1. 설치 [AEM 6.5.15.0 서비스 팩](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip).
-
-
-
 1. 인스턴스가 업데이트 모드(이전 버전에서 인스턴스가 업데이트되었을 때)인 경우 설치하기 전에 인스턴스를 다시 시작합니다. Adobe은 인스턴스에 대한 현재 가동 시간이 높은 경우 다시 시작할 것을 권장합니다.
 
 1. 설치하기 전에 스냅샷 또는 새 백업 [!DNL Experience Manager] 인스턴스.
@@ -269,7 +260,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->최신 버전을 설치하는 경우 [AEM 서비스 팩(6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), CRX/bundle 및 시작 페이지에 사용할 수 없는 오류가 표시됩니다. [여기를 클릭하십시오.](/help/forms/using/aem-service-pack-installation-solution.md).
+>최신 버전을 설치하는 경우 [AEM 서비스 팩(6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), CRX/bundle 및 시작 페이지에 사용할 수 없는 오류가 표시됩니다. [여기를 클릭하십시오.](/help/forms/using/aem-service-pack-installation-solution.md) 문제 해결 단계를 알고 있어야 합니다.
 
 
 ### 설치 [!DNL Experience Manager] Forms 추가 기능 패키지 {#install-aem-forms-add-on-package}
@@ -293,11 +284,13 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 >
 >JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 의 수정 사항 [!DNL Experience Manager] 별도의 설치 프로그램을 통해 JEE의 Forms이 전달됩니다.
 
-용 누적 설치 프로그램 설치에 대한 자세한 정보 [!DNL Experience Manager] JEE의 Forms 및 배포 후 구성은 다음을 참조하십시오. [릴리스 노트](jee-patch-installer-65.md).
+JBoss EAP 7.4.0 이외의 애플리케이션 서버를 사용하는 JEE 환경의 모든 AEM Forms에 대해 다음 단계를 수행합니다.
 
->[!NOTE]
->
->누적 설치 관리자를 설치한 후 [!DNL Experience Manager] Forms on JEE에서 최신 서비스 팩을 설치합니다. 서비스 팩을 설치한 후 최신 Forms 추가 기능 패키지를 설치하고 의 `crx-repository\install` 폴더를 만들고 서버를 다시 시작합니다.
+1. 용 누적 설치 프로그램 설치 [!DNL Experience Manager] JEE의 Forms 및 배포 후 구성은 다음을 참조하십시오. [릴리스 노트](jee-patch-installer-65.md).
+
+1. 설치 [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) 서블릿 조각을 제거하고 애플리케이션 서버가 안정화될 때까지 기다립니다.
+1. 설치 [AEM 6.5.15.0 서비스 팩](#install-service-pack).
+1. 설치 [최신 Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에서 Forms 추가 기능 패키지를 삭제합니다. `crx-repository\install` 폴더를 만들고 서버를 다시 시작합니다.
 
 ### UberJar {#uber-jar}
 
