@@ -3,7 +3,7 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: e73a65569963a5f60f7a4670998ada29deeb26b8
+source-git-commit: a27e460a19d3f986ee87b33263b8db1e45897497
 workflow-type: tm+mt
 source-wordcount: '4036'
 ht-degree: 10%
@@ -288,6 +288,7 @@ JBoss EAP 7.4.0 이외의 애플리케이션 서버를 사용하는 JEE 환경�
    >[!NOTE]
    >
    >최신 버전을 설치하는 경우 [AEM 서비스 팩(6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)설치하기 전에 [JEE 서비스 팩 15의 AEM 6.5 Forms용 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) jee 환경의 AEM 6.5 Forms에서 CRX/bundle 및 시작 페이지의 작동이 중지되고 서비스를 사용할 수 없는 오류가 발생합니다. 문제를 해결하려면 작업을 수행합니다 [여기에 나열됨](/help/forms/using/aem-service-pack-installation-solution.md).
+
 1. 설치 [최신 Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에서 Forms 추가 기능 패키지를 삭제합니다. `crx-repository\install` 폴더를 만들고 서버를 다시 시작합니다.
 
 ### UberJar {#uber-jar}
