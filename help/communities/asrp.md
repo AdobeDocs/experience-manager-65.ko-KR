@@ -12,7 +12,7 @@ discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 42feafa381c129117dae5345255702f0b0951a17
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
@@ -97,7 +97,7 @@ ASRP는 모든 작성자 및 게시 인스턴스에서 공용 저장소로 식�
 
 AEM 작성자 인스턴스에서:
 
-* 기본 메뉴에서 로 이동합니다 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 복제]**
+* 기본 메뉴에서 로 이동합니다 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]**
 * 선택 **트리 활성화**
 * **시작 경로**: 찾아보기 `/conf/global/settings/communities/srpc/`
 * 선택 취소 **수정된 항목만**
