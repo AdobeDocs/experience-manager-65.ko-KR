@@ -3,9 +3,9 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: 5d04a479001c5ea6423599969b39a4697a2da590
+source-git-commit: 3e0380e85c300305cbb97e4d0a0918a60542610b
 workflow-type: tm+mt
-source-wordcount: '3974'
+source-wordcount: '3970'
 ht-degree: 10%
 
 ---
@@ -258,10 +258,6 @@ ht-degree: 10%
 
 1. OSGi 번들 `org.apache.jackrabbit.oak-core` 버전 1.22.13 이상(웹 콘솔 사용: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
->[!NOTE]
->
->최신 버전을 설치하는 경우 [AEM 서비스 팩(6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)- 조각 서블릿 전에 `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` jee 환경의 AEM Forms에 대해 CRX/bundle 및 시작 페이지에 사용할 수 없는 오류가 표시됩니다. [여기를 클릭하십시오.](/help/forms/using/aem-service-pack-installation-solution.md) 문제 해결 단계를 알고 있어야 합니다.
-
 ### 설치 [!DNL Experience Manager] Forms 추가 기능 패키지 {#install-aem-forms-add-on-package}
 
 >[!NOTE]
@@ -289,6 +285,11 @@ JBoss EAP 7.4.0 이외의 애플리케이션 서버를 사용하는 JEE 환경�
 
 1. 설치 [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) 서블릿 조각을 제거하고 애플리케이션 서버가 안정화될 때까지 기다립니다.
 1. 설치 [AEM 6.5.15.0 서비스 팩](#install-service-pack).
+
+   >[!NOTE]
+   >
+   >최신 버전을 설치하는 경우 [AEM 서비스 팩(6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)- 조각 서블릿 전에 `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` jee 환경에서 CRX/bundle 및 시작 페이지에 사용할 수 없는 서비스 오류가 표시됩니다. [여기를 클릭하십시오.](/help/forms/using/aem-service-pack-installation-solution.md) 문제 해결 단계를 알고 있어야 합니다.
+
 1. 설치 [최신 Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에서 Forms 추가 기능 패키지를 삭제합니다. `crx-repository\install` 폴더를 만들고 서버를 다시 시작합니다.
 
 ### UberJar {#uber-jar}
@@ -327,7 +328,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 다음을 참조하십시오
  -->
 
 * [GraphQL 색인 패키지 1.0.5가 있는 AEM 컨텐츠 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
-이 패키지는 GraphQL을 사용하는 고객에게 필요합니다. 따라서 실제로 사용하는 기능을 기반으로 필요한 인덱스 정의를 추가할 수 있습니다.
+이 패키지는 GraphQL을 사용하는 고객을 위해 필요합니다. 따라서 실제로 사용하는 기능을 기반으로 필요한 인덱스 정의를 추가할 수 있습니다.
 
 * 로서의 [!DNL Microsoft® Windows Server 2019] 을 지원하지 않음 [!DNL MySQL 5.7] 및 [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] 에 대한 턴키 설치를 지원하지 않습니다. [!DNL AEM Forms 6.5.10.0].
 
