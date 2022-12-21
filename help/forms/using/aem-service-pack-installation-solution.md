@@ -1,10 +1,10 @@
 ---
 title: 최신 6.5.15.0 서비스 팩이 설치되면 CRX/bundle 및 시작 페이지 서비스를 사용할 수 없는 오류가 발생합니다
 description: 최신 6.5.15.0 서비스 팩이 설치되면 CRX/bundle 및 시작 페이지 서비스를 사용할 수 없는 오류가 발생합니다
-source-git-commit: be7a9cfc226537ab4b360064220fa03bf2045310
+source-git-commit: f5bf33e0a2ff73b8884a55bbe77e87ee991aeef9
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 16%
+source-wordcount: '344'
+ht-degree: 15%
 
 ---
 
@@ -37,10 +37,9 @@ AEM 6.5.15.0 서비스 팩을 설치한 후 CRX/bundle을 설치하고 시작 �
 
 1. URL로 이동: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. 검색 대상 `bundle.jar` 이름을 바꿀 수 있습니다 `bundle.jar` to `bundle.jar.bak`.
-1. 복사 `bundle.jar` 여기서 [소프트웨어 배포](https://jira.corp.adobe.com/secure/attachment/9402702/bundle.jar).
-1. Application Server를 시작하고 로그가 안정화될 때까지 기다렸다가 번들 상태를 확인합니다.
-1. 모든 번들이 활성화 상태에 있으면 를 설치합니다. `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` 에서 서블릿 조각 `system/console/bundles` 에서 다운로드 [소프트웨어 배포.](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
-1. Application Server가 안정화될 때까지 기다립니다.
+1. 복사 `bundle.jar` 여기서 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
+1. 애플리케이션 서버를 시작하고 로그가 안정화될 때까지 기다렸다가 번들 상태를 확인합니다.
+1. 모든 번들이 활성화 상태에 있으면 를 설치합니다. `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` 에서 서블릿 조각 `system/console/bundles` 에서 다운로드 [소프트웨어 배포.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) 그리고 애플리케이션 서버가 안정화될 때까지 기다립니다.
 1. 응용 프로그램 서버를 중지합니다.
 1. 다음으로 이동 `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1` 삭제 `bundle.jar`.
 1. 이름 바꾸기 `bundle.jar.bak` 변환 후 `bundle.jar`.

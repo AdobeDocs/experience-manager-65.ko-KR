@@ -3,9 +3,9 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: 214c5e27567a515837c0ab52601f3491a9144120
+source-git-commit: 9b7321d7fbac46966876540b4ad9355ce33ab54e
 workflow-type: tm+mt
-source-wordcount: '3946'
+source-wordcount: '3974'
 ht-degree: 10%
 
 ---
@@ -260,8 +260,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->최신 버전을 설치하는 경우 [AEM 서비스 팩(6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), CRX/bundle 및 시작 페이지에 사용할 수 없는 오류가 표시됩니다. [여기를 클릭하십시오.](/help/forms/using/aem-service-pack-installation-solution.md) 문제 해결 단계를 알고 있어야 합니다.
-
+>최신 버전을 설치하는 경우 [AEM 서비스 팩(6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)- 조각 서블릿 전에 `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` jee 환경의 AEM Forms에 대해 CRX/bundle 및 시작 페이지에 사용할 수 없는 오류가 표시됩니다. [여기를 클릭하십시오.](/help/forms/using/aem-service-pack-installation-solution.md) 문제 해결 단계를 알고 있어야 합니다.
 
 ### 설치 [!DNL Experience Manager] Forms 추가 기능 패키지 {#install-aem-forms-add-on-package}
 
@@ -288,7 +287,7 @@ JBoss EAP 7.4.0 이외의 애플리케이션 서버를 사용하는 JEE 환경�
 
 1. 용 누적 설치 프로그램 설치 [!DNL Experience Manager] JEE의 Forms 및 배포 후 구성은 다음을 참조하십시오. [릴리스 노트](jee-patch-installer-65.md).
 
-1. 설치 [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) 서블릿 조각을 제거하고 애플리케이션 서버가 안정화될 때까지 기다립니다.
+1. 설치 [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) 서블릿 조각을 제거하고 애플리케이션 서버가 안정화될 때까지 기다립니다. —>
 1. 설치 [AEM 6.5.15.0 서비스 팩](#install-service-pack).
 1. 설치 [최신 Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에서 Forms 추가 기능 패키지를 삭제합니다. `crx-repository\install` 폴더를 만들고 서버를 다시 시작합니다.
 
