@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: f8d249f5d3fac243b4989c3eca4be2730dcf16ec
+source-git-commit: ed2cb35593780cd627c15f493e58d3b68c55519b
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 0%
@@ -73,18 +73,18 @@ ht-degree: 0%
 1. 복사할 주요 자료가 포함된 AEM 인스턴스(일반적으로 작성자 인스턴스)에 액세스합니다.
 1. 을(를) 찾습니다 `com.adobe.granite.crypto.file` 로컬 파일 시스템에 번들로 구성합니다. 예를 들어, 이 경로 아래에서:
 
-   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 
    다음 `bundle.info` 각 폴더 내의 파일은 번들 이름을 식별합니다.
 
 1. 데이터 폴더로 이동합니다. 예:
 
-   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. HMAC 및 마스터 파일을 복사합니다.
 1. 그런 다음 HMAC 키를 복제할 대상 인스턴스로 이동하여 데이터 폴더로 이동합니다. 예:
 
-   * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+   * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. 이전에 복사한 두 파일을 붙여넣습니다.
 1. [암호화 번들 새로 고침](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) target 인스턴스가 이미 실행 중인 경우.
