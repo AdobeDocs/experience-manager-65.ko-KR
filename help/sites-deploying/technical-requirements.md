@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 33b8cf60e2a6ae13c103040d96b0e2db487ddd99
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3452'
+source-wordcount: '3488'
 ht-degree: 1%
 
 ---
@@ -451,10 +451,6 @@ Windows x86의 경우:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office Visio 2016(지원 중단됨)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
@@ -465,10 +461,6 @@ Windows x86의 경우:
   <tr>
    <td>Microsoft® Publisher 2016(지원 중단됨)<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® 프로젝트 2019<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>Microsoft® Project 2016(지원 중단됨)<br /> </td>
@@ -499,6 +491,8 @@ Windows x86의 경우:
 >* OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
 >* Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF 생성기 서비스는 Microsoft Windows 10을 지원하지 않습니다.
+>* PDF 생성기가 Microsoft Visio 2019를 사용하여 파일을 변환하지 못했습니다. Microsoft Visio 2016을 사용하여 .VSD 및 .VSDX 파일을 계속 변환할 수 있습니다.
+>* PDF 생성기가 Microsoft Project 2019를 사용하여 파일을 변환하지 못했습니다. Microsoft Project 2016을 사용하여 .VSD 및 .VSDX 파일을 계속 변환할 수 있습니다.
 >
 
 

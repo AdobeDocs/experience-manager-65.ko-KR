@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3683'
+source-wordcount: '3720'
 ht-degree: 1%
 
 ---
@@ -482,10 +482,6 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되�
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office Visio 2016(지원 중단됨)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
@@ -530,6 +526,9 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되�
 >- Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 >- PDF 생성기 서비스는 Microsoft Windows 10을 지원하지 않습니다.
+>- PDF 생성기가 Microsoft Visio 2019를 사용하여 파일을 변환하지 못했습니다. Microsoft Visio 2016을 사용하여 .VSD 및 .VSDX 파일을 계속 변환할 수 있습니다.
+>- PDF 생성기가 Microsoft Project 2019를 사용하여 파일을 변환하지 못했습니다. Microsoft Project 2016을 사용하여 .MPP 파일을 계속 변환할 수 있습니다.
+>
 
 
 ### 액세스 가능성 지원 예외 {#exceptions-to-accessibility-support}
@@ -801,7 +800,7 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
 
 >[!NOTE]
 >
->플랫폼은 [AEM Forms 6.5.12.0 및 6.5.10.0에서 더 이상 사용되지 않는 항목은 AEM Forms 6.5 서비스 팩 18(6.5.18.0) 릴리스까지 지원 상태로 유지됩니다](https://helpx.adobe.com/support/programs/eol-matrix.html).
+>플랫폼은 [AEM Forms 6.5.12.0 및 6.5.10.0에서 더 이상 사용되지 않는 항목은 AEM Forms 6.5 서비스 팩 18(6.5.18.0) 릴리스까지 지원 상태로 유지됩니다](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
 
 ## 개정 내역 {#revision-history}
 
