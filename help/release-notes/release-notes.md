@@ -3,9 +3,9 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: a27e460a19d3f986ee87b33263b8db1e45897497
+source-git-commit: d3b830730ef06fb9968a46d6f26a275417cf36f0
 workflow-type: tm+mt
-source-wordcount: '4036'
+source-wordcount: '4046'
 ht-degree: 10%
 
 ---
@@ -144,6 +144,7 @@ ht-degree: 10%
 * 사용자가 관리자 사용자의 기본 암호를 변경한 후 JEE 패치에서 AEM Form을 실행하려고 하면 예외가 발생합니다 `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` 발생합니다. (CQ-4348277)
 * AEM 디자이너에서 캡션이 없는 양식 필드는 확인란을 포함하는 테이블 셀에 배치됩니다.(LC-3920410)
 * 사용자가 AEM Forms 디자이너에서 도움말을 열려고 하면 제대로 표시되지 않습니다. (CQ-4341996)
+* 여러 로케일을 사용하는 적응형 Forms의 로드 속도가 느려집니다. (NPR-39176)
 
 ## [!DNL Sites] {#sites-6515}
 
