@@ -8,10 +8,10 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: 9604d950d33e1b5d32ba8141a35059c6e5787aeb
+source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 6%
+source-wordcount: '235'
+ht-degree: 3%
 
 ---
 
@@ -28,13 +28,13 @@ ht-degree: 6%
 
 스핀 세트 또는 이미지 세트를 만들거나 페이지 추출을 위해 PDF을 업로드할 때 Adobe은 다음 우수 사례를 권장하고 다음 제한을 적용합니다.
 
-| 자산 - 제한 유형 | 우수 사례 | 제한 적용 | 2022년 12월 31일에 제한하는 것으로 변경 |
-| --- | --- | --- | --- |
-| **이미지** - 이미지당 스마트 자르기 수 | 5 | 100 | 해당되지 않음 |
-| **모든 세트** - 세트당 중복 자산 수 | 중복 없음 | 20 | 해당되지 않음 |
-| **모든 세트** - 세트당 최대 자산 수 | 세트당 5-10개 이미지 | 1000 | 해당되지 않음 |
-| **스핀 세트** - 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000년 | 해당되지 않음 |
-| **PDF** - 추출할 PDF에 대한 최대 페이지 수 |  | 5000(새 업로드의 경우) | 100(모든 PDF에 대해) |
+| 자산 - 제한 유형 | 우수 사례 | 제한 적용 |
+| --- | --- | --- |
+| **이미지** - 이미지당 스마트 자르기 수 | 5 | 100 |
+| **모든 세트** - 세트당 중복 자산 수 | 중복 없음 | 20 |
+| **모든 세트** - 세트당 최대 자산 수 | 세트당 5-10개 이미지 | 1000 |
+| **스핀 세트** - 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000 |
+| **PDF** - 추출할 PDF에 대한 최대 페이지 수 |  | 100(모든 PDF에 대해) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 

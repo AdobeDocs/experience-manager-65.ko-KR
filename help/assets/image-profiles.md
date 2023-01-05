@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
+source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
 workflow-type: tm+mt
-source-wordcount: '2835'
-ht-degree: 10%
+source-wordcount: '3005'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,20 @@ ht-degree: 10%
 
 생성하는 각 스마트 자르기 생성에는 추가 처리가 필요합니다. 예를 들어 5개 이상의 스마트 자르기 종횡비를 추가하면 자산 수집률이 느려질 수 있습니다. 또한 시스템에 대한 부하가 증가합니다. 폴더 수준에서 스마트 자르기를 적용할 수 있으므로 폴더에서 사용하는 것이 좋습니다 *전용* 필요한 위치
 
-선택할 수 있는 두 가지 이미지 자르기 옵션이 있습니다. 색상 및 이미지 색상 견본 만들기를 자동화하는 옵션도 있습니다.
+**이미지 프로필에서 스마트 자르기 정의 지침**
+스마트 자르기 사용을 제어하고 자르기의 처리 시간 및 저장을 위해 다음 지침 및 팁을 권장합니다.
+
+* 폭과 높이 값이 동일한 중복 스마트 자르기 프로필을 만들면 안 됩니다.
+* 최종 사용이 아닌 자르기 차원을 기반으로 스마트 자르기에 이름을 지정합니다. 이렇게 하면 단일 차원이 여러 페이지에서 사용되는 중복 항목을 최적화할 수 있습니다.
+* 모든 폴더 또는 모든 자산에 적용되는 일반적인 스마트 자르기 프로필 대신 특정 폴더 및 하위 폴더에 대한 페이지 기반/자산 유형 기반 이미지 프로필을 만듭니다.
+* 하위 폴더에 적용하는 이미지 프로필은 폴더에 적용되는 이미지 프로필을 무시합니다.
+* 이상적으로는 이미지당 10~15개의 스마트 자르기를 사용하여 화면 비율과 처리 시간을 최적화합니다.
+
+선택할 이미지 자르기 옵션이 두 개 있습니다. 색상 및 이미지 색상 견본 만들기를 자동화하거나 대상 해상도의 자르기 컨텐츠를 보존하도록 선택할 수도 있습니다.
+
+>[!IMPORTANT]
+・ Adobe은 생성된 농작물과 견본이 브랜드와 값에 적절하고 적절한지 확인하기 위해 모든 농작물과 견본을 검토할 것을 권장합니다.
+・ 스마트 자르기에서 CMYK 이미지 형식이 지원되지 않습니다.
 
 | 옵션 | 사용 시기 | 설명 |
 | --- | --- | --- |
@@ -127,13 +140,13 @@ Folders that have a profile already assigned to it are indicated by the display 
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. 선택 **[!UICONTROL 폴더에 처리 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 을(를) 선택합니다 **[!UICONTROL 적용]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 선택 **[!UICONTROL 폴더에 처리 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 을(를) 선택합니다 **[!UICONTROL 적용]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
 #### 속성의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-properties}
 
 1. Experience League 로고를 선택하고 **[!UICONTROL 자산]**. 그런 다음 이미지 프로필을 적용할 폴더의 상위 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 선택하여 선택한 다음 선택합니다 **[!UICONTROL 속성]**.
-1. 을(를) 선택합니다 **[!UICONTROL 이미지 프로필]** 탭. 에서 **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 프로파일을 선택한 다음 **[!UICONTROL 저장 및 닫기]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 을(를) 선택합니다 **[!UICONTROL 이미지 프로필]** 탭. 에서 **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 프로파일을 선택한 다음 **[!UICONTROL 저장 및 닫기]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -262,4 +275,4 @@ You can remove an image profile from a folder from within the **[!UICONTROL Tool
 1. 을(를) 선택합니다 **[!UICONTROL 이미지 프로필]** 탭.
 1. 에서 **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 **[!UICONTROL 없음]**&#x200B;를 선택하고 을 선택합니다. **[!UICONTROL 저장 및 닫기]**.
 
-   프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+   Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
