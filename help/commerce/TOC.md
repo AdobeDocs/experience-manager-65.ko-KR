@@ -2,7 +2,7 @@
 sub-product: AEM Content and Commerce
 user-guide-title: AEM Content and Commerce
 breadcrumb-title: Commerce 안내서
-user-guide-description: AEM 콘텐츠 및 상거래를 사용하고 관리하는 방법을 이해합니다.
+user-guide-description: AEM Content and Commerce를 사용하고 관리하는 방법을 이해합니다.
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
 source-wordcount: '123'
@@ -40,10 +40,10 @@ ht-degree: 76%
 + [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [마이그레이션](cif/migration.md)
 + 릴리스 정보 {#release-notes}
-   + [2022년](cif/release-notes/release-notes-2022.md)
-   + [2021년](cif/release-notes/release-notes-2021.md)
-   + [2020년](cif/release-notes/release-notes-2020.md)
-   + [2019년](cif/release-notes/release-notes-2019.md)
+   + [2022](cif/release-notes/release-notes-2022.md)
+   + [2021](cif/release-notes/release-notes-2021.md)
+   + [2020](cif/release-notes/release-notes-2020.md)
+   + [2019](cif/release-notes/release-notes-2019.md)
 + [FAQ](cif/faq.md)
 + AEM CIF Classic {#classic}
    + [개요](/help/commerce/cif-classic/home.md)

@@ -22,7 +22,7 @@ ht-degree: 94%
    + [AEM 헤드리스 시작하기](developer/getting-started.md)
    + [AEM Headless를 사용한 첫 번째 경험으로의 경로](developer/path-to-first-experience.md)
    + [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](developer/model-your-content.md)
-   + [AEM 배달 API를 통해 콘텐츠에 액세스하는 방법](developer/access-your-content.md)
+   + [AEM 게재 API를 통해 콘텐츠에 액세스하는 방법](developer/access-your-content.md)
    + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](developer/update-your-content.md)
    + [결합 방법](developer/put-it-all-together.md)
    + [Headless 애플리케이션 실행 방법](developer/go-live.md)

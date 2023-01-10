@@ -3,8 +3,8 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: AEM 6.5 Deploying 안내서
-breadcrumb-title: Deploying 안내서
+user-guide-title: AEM 6.5 배포 안내서
+breadcrumb-title: 배포 안내서
 user-guide-description: Adobe Managed Services 클라우드 배포를 포함하여 Adobe Experience Manager 6.5의 설치, 배포 및 아키텍처에 대해 자세히 알아봅니다.
 feature: Deploying
 role: Architect

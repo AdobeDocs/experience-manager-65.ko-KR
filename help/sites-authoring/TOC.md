@@ -83,9 +83,9 @@ ht-degree: 94%
 + 개인 맞춤화 {#personalization}
    + [개인화](personalization.md)
    + [ContextHub 데이터를 사용하여 페이지 미리보기](ch-previewing.md)
-   + [타겟팅 모드를 사용하여 대상 콘텐츠 작성](content-targeting-touch.md)
-   + [다중 사이트에서 대상 콘텐츠를 사용하여 작업](multisite-support-targeted-content.md)
-   + [대상 콘텐츠에 대한 다중 사이트 관리 구성 방식](technical-multisite-targeted.md)
+   + [타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성](content-targeting-touch.md)
+   + [다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업](multisite-support-targeted-content.md)
+   + [타겟팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식](technical-multisite-targeted.md)
    + [활동 관리](activitylib.md)
    + [대상자 관리](managing-audiences.md)
    + [오퍼 생성 및 관리](offerlib.md)

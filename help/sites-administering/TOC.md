@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -101,7 +101,7 @@ ht-degree: 37%
    + [동일한 사이트 쿠키 지원](same-site-cookie-support.md)
 + 개인 맞춤화 {#personalization}
    + [개인화](personalization.md)
-   + [ContextHub 구성](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
+   + [ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html) 구성
    + [Client Context](client-context.md)
    + [캠페인](campaigns.md)
    + [ContextHub를 사용하여 세그먼테이션 구성](segmentation.md)
@@ -119,7 +119,7 @@ ht-degree: 37%
    + [Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑](adobeanalytics-mapping.md)
    + [Adobe Analytics를 위한 비디오 추적 구성](adobeanalytics-video.md)
    + [IMS를 사용하여 Adobe Analytics과 통합](integration-analytics-ims.md)
-   + [콘텐츠 FAQ의 HTTP2 전송](scene7-http2faq.md)
+   + [콘텐츠 FAQ의 HTTP2 게재](scene7-http2faq.md)
    + [Adobe Campaign 통합 문제 해결](troubleshooting-campaignintegration.md)
    + [SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책조항](sharepoint-connector-licenses.md)
    + [SharePoint 커넥터](sharepoint-connector.md)
