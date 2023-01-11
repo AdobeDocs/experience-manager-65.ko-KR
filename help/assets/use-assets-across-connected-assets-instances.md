@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 0df4bce6651517c6049578d0a1434726ab04e240
+source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
 workflow-type: tm+mt
-source-wordcount: '3837'
+source-wordcount: '3877'
 ht-degree: 17%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 17%
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS에서 | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]로서의[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
+   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]6.5 [!DNL Assets] AMS에서** | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]6.5 [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
@@ -64,7 +64,7 @@ ht-degree: 17%
 | [!DNL Sites] administrator | 로컬 | [!DNL Experience Manager] `administrators` | `admin` | 설정 [!DNL Experience Manager] 원격 사이트와의 통합 구성 [!DNL Assets] 배포. |
 | DAM 사용자 | 로컬 | `Authors` | `ksaner` | `/content/DAM/connectedassets/`에서 가져온 자산을 보고 복제하는 데 사용됩니다. |
 | [!DNL Sites] 작성자 | 로컬 | <ul><li>`Authors` (원격 DAM에 대한 읽기 권한과 로컬 작성자 액세스 사용) [!DNL Sites]) </li> <li>`dam-users` 로컬 [!DNL Sites]</li></ul> | `ksaner` | 최종 사용자는 [!DNL Sites] 이 통합을 사용하여 콘텐츠 속도를 향상시키는 작성자 작성자는 [!UICONTROL 컨텐츠 파인더] 로컬 웹 페이지에서 필요한 이미지를 사용하는 중입니다. `ksaner` DAM 사용자의 자격 증명이 사용됩니다. |
-| [!DNL Assets] 관리자 | 원격 | [!DNL Experience Manager] `administrators` | `admin` 원격 [!DNL Experience Manager] | CORS(원본 간 리소스 공유)를 구성합니다. |
+| [!DNL Assets] administrator | 원격 | [!DNL Experience Manager] `administrators` | `admin` 원격 [!DNL Experience Manager] | CORS(원본 간 리소스 공유)를 구성합니다. |
 | DAM 사용자 | 원격 | `Authors` | `ksaner` 원격 [!DNL Experience Manager] | 원격에서 작성자 역할 [!DNL Experience Manager] 배포. 를 사용하여 연결된 자산에서 자산을 검색하고 찾아봅니다. [!UICONTROL 컨텐츠 파인더]. |
 | DAM 배포자(기술 사용자) | 원격 | [!DNL Sites] `Authors` | `ksaner` 원격 [!DNL Experience Manager] | 원격 배포에 있는 이 사용자는 [!DNL Experience Manager] 로컬 서버(아님) [!DNL Sites] 작성자 역할) 을 대신하여 원격 자산을 가져옵니다. [!DNL Sites] 작성자. 이 역할은 위의 두 `ksaner` 역할과 동일하지 않으며 다른 사용자 그룹에 속합니다. |
 
@@ -336,7 +336,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 * 라이센스 [!DNL Assets] 원격 저장소로 작업해야 합니다.
 * 하나 이상의 [!DNL Sites] 로컬 작성 배포로 작업해야 합니다.
 
-### 사용량 {#usage}
+### 사용 {#usage}
 
 * 사용자는 원격 자산을 검색하고 작성할 때 로컬 페이지에서 드래그할 수 있습니다. 다른 기능은 지원되지 않습니다.
 * 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. 작성자가 원격 자산을 [!UICONTROL 컨텐츠 파인더] to [!UICONTROL 페이지 편집기].
@@ -356,6 +356,13 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 * 로컬에서 원격 DAM 배포에 액세스할 수 없는 경우 [!DNL Sites] 배포, 사이트 간 쿠키가 허용되고 [동일한 사이트 쿠키 지원](/help/sites-administering/same-site-cookie-support.md) 가 구성되어 있습니다. 사이트 간 쿠키가 차단되면 [!DNL Experience Manager] 인증할 수 없습니다. 예, [!DNL Google Chrome] Incognito 모드에서는 타사 쿠키를 차단할 수 있습니다. 쿠키를에서 허용하려면 [!DNL Chrome] 브라우저에서 주소 표시줄에서 &#39;눈&#39; 아이콘을 클릭하고 **사이트가 작동하지 않음** > **차단됨**&#x200B;원격 DAM URL을 선택하고 로그인 토큰 쿠키를 허용합니다 를 선택합니다. 또는 다음을 참조하십시오 [타사 쿠키를 활성화하는 방법](https://support.google.com/chrome/answer/95647).
 
    ![Incognito 모드의 Chrome 브라우저에서 쿠키 오류](assets/chrome-cookies-incognito-dialog.png)
+
+* Experience Manager Sites as a Cloud Service 사이트 배포에서 Adobe Managed Services 원격 DAM 배포에 액세스할 수 없는 경우 `aem_author.vhost` 파일, 다음 위치에서 사용 가능 `"/etc/httpd/conf.d/available_vhosts`: Dispatcher 구성에 다음 헤더를 포함하도록 원격 DAM을 요청합니다.
+
+   ```xml
+   Header Set Access-Control-Allow-Origin <Local Sites instance host>
+   Header Set Access-Control-Allow-Credentials true
+   ```
 
 * 원격 참조가 검색되지 않고 오류 메시지가 나타나면 [!DNL Sites] 배포를 사용할 수 있으며 네트워크 연결 문제를 확인합니다. 나중에 다시 시도하여 확인합니다. [!DNL Assets] 배포는 [!DNL Sites] 배포를 수행한 다음 오류를 보고합니다.
 
