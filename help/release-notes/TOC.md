@@ -7,10 +7,10 @@ breadcrumb-title: 릴리스 정보
 user-guide-description: 릴리스 노트에서 AEM 6.5의 최신 새로운 기능에 대해 알아보십시오.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 25d871998ad9fd2c3abe7c6050ff81642a8a4b17
+source-git-commit: b52e050ffbda8c38a5ba53d1c72218c21a64d0b9
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 50%
+source-wordcount: '67'
+ht-degree: 46%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 50%
 
 + [AEM 6.5 릴리스 노트](home.md)
 + [최신 릴리스 정보](release-notes.md)
++ [AEM Forms 서비스 팩 설치 지침](aem-forms-current-service-pack-installation-instructions.md)
 + [이전 릴리스 노트]{#service-pack}
    + [6.5.14](previous/6.5.14.md)
    + [6.5.13](previous/6.5.13.md)
