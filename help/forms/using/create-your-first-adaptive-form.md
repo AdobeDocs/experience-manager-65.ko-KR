@@ -9,10 +9,10 @@ discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+source-git-commit: 318347178fd626dea8e5a15caa7cdad8fe353eba
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 0%
+source-wordcount: '965'
+ht-degree: 9%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ### 전제 조건 {#prerequisite}
 
-* AEM 작성자 인스턴스를 설정합니다.
+* 설정 [AEM 작성자 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
 * 설치 [AEM Forms 추가 기능](../../forms/using/installing-configuring-aem-forms-osgi.md) 작성자 인스턴스에서 사용됩니다.
 * 데이터베이스 공급자에서 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 자습서의 예는 를 기반으로 합니다 [!DNL MySQL] 데이터베이스 및 사용 [!DNL Oracle's] [MySQL JDBC 데이터베이스 드라이버](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
