@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 88763b318e25efb16f61bc16530082877392c588
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1553'
+ht-degree: 65%
 
 ---
 
@@ -210,3 +210,85 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
       * 경험 조각 HTML이 Target으로 푸시되었으므로 해당 오퍼는 여전히 렌더링될 수 있습니다.
       * AEM에서 참조된 에셋을 삭제해도 경험 조각의 참조가 올바르게 작동하지 않을 수 있습니다.
    * 물론, AEM에 경험 조각이 더 이상 존재하지 않으므로 이후에 경험 조각을 수정할 수 없습니다.
+
+
+
+## Target으로 내보낸 경험 조각에서 ClientLibs 제거 {#removing-clientlibs-from-fragments-exported-target}
+
+경험 조각은 전체 html 태그와 필요한 모든 클라이언트 라이브러리(CSS/JS)를 포함하여 경험 조각 컨텐츠 작성자가 만든 것처럼 조각을 정확히 렌더링합니다. 이것은 디자인이 있습니다.
+
+AEM에서 전달하는 페이지에서 Adobe Target과 함께 경험 조각 오퍼를 사용하는 경우 타깃팅된 페이지에 이미 필요한 모든 클라이언트 라이브러리가 포함되어 있습니다. 또한 경험 조각 오퍼에서 외부 html도 필요하지 않습니다(참조) [고려 사항](#considerations)).
+
+다음은 경험 조각 오퍼에서 html의 의사 예입니다.
+
+```html
+<!DOCTYPE>
+<html>
+   <head>
+      <title>…</title>
+      <!-- all of the client libraries (css/js) -->
+      …
+   </head>
+   <body>
+        <!--/* Actual XF Offer content would appear here... */-->
+   </body>
+</html>
+```
+
+높은 수준에서 AEM이 경험 조각을 Adobe Target으로 내보낼 때 여러 개의 추가 Sling 선택기를 사용합니다. 예를 들어 내보낸 경험 조각의 URL은 다음과 같을 수 있습니다(알림) `nocloudconfigs.atoffer`):
+
+* http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
+
+다음 `nocloudconfigs` 선택기는 HTL을 사용하여 정의되며, 다음 위치에서 복사하여 오버레이할 수 있습니다.
+
+* /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
+
+다음 `atoffer` 선택기는 실제로 을 사용하여 사후 처리에 적용됩니다 [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). 둘 중 하나를 사용하여 클라이언트 라이브러리를 제거할 수 있습니다.
+
+### 예 {#example}
+
+이를 위해 다음을 사용하여 이 작업을 수행하는 방법을 설명하겠습니다 `nocloudconfigs`.
+
+>[!NOTE]
+>
+>자세한 내용은 [편집 가능한 템플릿](/help/sites-developing/templates.md#editable-templates) 자세한 내용
+
+#### 오버레이 {#overlays}
+
+이 특정 예에서는 [오버레이](/help/sites-developing/overlays.md) 포함되면 클라이언트 라이브러리가 제거됩니다 *및* 외부 html. 경험 조각 템플릿 유형을 이미 작성했다고 가정합니다. 복사해야 하는 필수 파일 `/libs/cq/experience-fragments/components/xfpage/` 포함:
+
+* `nocloudconfigs.html`
+* `head.nocloudconfigs.html`
+* `body.nocloudconfigs.html`
+
+#### 템플릿 유형 오버레이 {#template-type-overlays}
+
+이 예제에서는 다음 구조를 사용합니다.
+
+![템플릿 유형 오버레이](assets/xf-target-integration-02.png "템플릿 유형 오버레이")
+
+이러한 파일의 내용은 다음과 같습니다.
+
+* `body.nocloudconfigs.html`
+
+   ![body.nocloudconfigs.html](assets/xf-target-integration-03.png "body.nocloudconfigs.html")
+
+* `head.nocloudconfigs.html`
+
+   ![head.nocloudconfigs.html](assets/xf-target-integration-04.png "head.nocloudconfigs.html")
+
+* `nocloudconfigs.html`
+
+   ![nocloudconfigs.html](assets/xf-target-integration-05.png "nocloudconfigs.html")
+
+>[!NOTE]
+>
+>를 사용하려면 `data-sly-unwrap` body 태그를 제거하려면 `nocloudconfigs.html`.
+
+### 고려 사항 {#considerations}
+
+Adobe Target에서 경험 조각 오퍼를 사용하여 AEM 사이트와 비 AEM 사이트를 모두 지원해야 하는 경우 두 개의 경험 조각(두 개의 다른 템플릿 유형)을 만들어야 합니다.
+
+* clientlibs/extra html을 제거하는 오버레이가 있는 항목
+
+* 오버레이가 없으므로 필수 clientlibs를 포함하는 것
