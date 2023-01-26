@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 85a0c578a2cf57e2b4d65123cffe3816624211c8
+source-git-commit: 2a350548674ff3f8dc49defa47ac2b028da76f4b
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 7%
@@ -165,7 +165,7 @@ AEM 소프트웨어 패키지는 다음 두 가지 방법으로 사용할 수 �
 
    *파일 디렉토리의 경로는 US ASCII 문자로만 구성되어야 합니다.*
 
-1. 배치 **jar** 및 **라이선스**&#x200B;이 디렉터리에 있는 파일:
+1. 배치 **jar** 및 **라이선스** 이 디렉터리에 있는 파일:
 
    ```shell
    <aem-install>/
