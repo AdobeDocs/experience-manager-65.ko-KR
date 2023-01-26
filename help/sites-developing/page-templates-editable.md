@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
+source-git-commit: ae56ffafff38fe60530a8850732de58ba8c8f8f9
 workflow-type: tm+mt
 source-wordcount: '3252'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -539,7 +539,7 @@ When [템플릿 편집 레이아웃을 정의할 수 있습니다](/help/sites-a
 
 ### 컨텐츠 정책 {#content-policies}
 
-콘텐츠(또는 디자인) 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다. 템플릿 편집기에서 컨텐츠 정책을 만들고 선택할 수 있습니다.
+컨텐츠(또는 디자인) 정책은 구성 요소의 가용성 또는 최소/최대 차원과 같은 구성 요소의 디자인 속성을 정의합니다. 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다. 템플릿 편집기에서 컨텐츠 정책을 만들고 선택할 수 있습니다.
 
 * 속성 `cq:policy`, `root` 노드
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
