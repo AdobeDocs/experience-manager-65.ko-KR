@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
+source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 1%
@@ -150,7 +150,7 @@ npm 모듈: [@adobe/aem-angular-editable-components](https://www.npmjs.com/packa
 
 컨테이너는 하위 구성 요소를 포함하고 렌더링하기 위한 구성 요소입니다. 이를 위해 컨테이너는 `:itemsOrder`, `:items` 및 `:children` 모델의 속성입니다.
 
-컨테이너는 의 저장소에서 하위 구성 요소를 동적으로 가져옵니다 ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)` 라이브러리. 그런 다음 컨테이너는 모델 공급자 기능을 사용하여 하위 구성 요소를 확장하고 최종적으로 인스턴스화합니다.
+컨테이너는 의 저장소에서 하위 구성 요소를 동적으로 가져옵니다 [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) 라이브러리. 그런 다음 컨테이너는 모델 공급자 기능을 사용하여 하위 구성 요소를 확장하고 최종적으로 인스턴스화합니다.
 
 ### 페이지 {#page}
 

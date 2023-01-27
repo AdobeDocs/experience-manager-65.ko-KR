@@ -10,9 +10,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 509ea0945e6c80e50f6f5bffd4c68282d586504a
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '491'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ AEM의 단일 페이지 애플리케이션의 경우, 앱은 라우팅을 담당
 
 >[!NOTE]
 >
->현재 We.Retail Journal 샘플 React 프로젝트는 자동화된 접근 방식을 보여주고 Angular 프로젝트는 수동 접근 방식을 보여줍니다. 반자동화된 접근 방식 또한 유효한 사용 사례입니다.
+>다음 [We.Retail 저널](https://github.com/adobe/aem-sample-we-retail-journal) 샘플 React 프로젝트는 자동화된 접근 방식을 보여주고 Angular 프로젝트는 수동 접근 방식을 보여줍니다. 반자동화된 접근 방식 또한 유효한 사용 사례입니다.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ AEM의 단일 페이지 애플리케이션의 경우, 앱은 라우팅을 담당
 기본적으로 이 동작은 자동으로 활성화됩니다. 비활성화하려면 SPA에서 다음 메타 속성을 렌더링해야 합니다.
 
 ```
-<meta property="cq:pagemodel_router" content="disable"\>
+<meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
 SPA의 모든 경로는 AEM에서 액세스할 수 있는 리소스(예: &quot;)에 해당해야 합니다. `/content/mysite/mypage"`) 이후 `PageModelManager` 경로가 선택되면 은 자동으로 해당 페이지 모델을 로드합니다. 그러나 필요한 경우 SPA에서 무시해야 하는 경로의 &quot;차단 목록&quot;도 정의할 수 있습니다 `PageModelManager`:

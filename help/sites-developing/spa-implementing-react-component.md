@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '546'
+ht-degree: 9%
 
 ---
 
@@ -37,7 +37,7 @@ AEM에 필요하고 SPA과 SPA 편집기 간에 설정된 간단하고 가벼운
 당신은 [AEM용 SPA 애플리케이션의 구조](/help/sites-developing/spa-getting-started-react.md) 이 문서를 읽기 전에
 
 >[!CAUTION]
->이 문서에서는 [We.Retail 저널 앱](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) 를 사용하십시오. 프로젝트 작업에 사용해서는 안 됩니다.
+>이 문서에서는 [We.Retail 저널 앱](https://github.com/adobe/aem-sample-we-retail-journal) 를 사용하십시오. 프로젝트 작업에 사용해서는 안 됩니다.
 >
 >모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html): React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용합니다.
 
