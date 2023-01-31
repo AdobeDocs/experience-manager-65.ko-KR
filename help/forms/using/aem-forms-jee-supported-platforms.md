@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: b2c8cf2fbc4db1d9f1b013fb93d71ed5c08eab59
+source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
 workflow-type: tm+mt
-source-wordcount: '3717'
+source-wordcount: '3699'
 ht-degree: 1%
 
 ---
@@ -509,21 +509,17 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되�
 </table>
 
 >[!NOTE]
->
->PDF 생성기는 지원되는 운영 체제 및 응용 프로그램의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
->
->또한
->
->- PDF 생성기를 사용하려면 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 또는 Acrobat 2017 버전 17.011.30078에서 전환을 수행합니다.
->- PDF 생성기는 전환에 필요한 32비트 Retail 버전의 Microsoft Office Professional Plus와 기타 소프트웨어만 지원합니다.
->- PDF 생성기는 Microsoft Office 365를 지원하지 않습니다.
->- OpenOffice용 PDF 생성기 전환은 Windows 및 Linux에서만 지원됩니다.
->- OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
->- Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
->
->- PDF 생성기 서비스는 Microsoft Windows 10을 지원하지 않습니다.
->- PDF 생성기가 Microsoft Visio 2019를 사용하여 파일을 변환하지 못했습니다. Microsoft Visio 2016을 사용하여 .VSD 및 .VSDX 파일을 계속 변환할 수 있습니다.
->- PDF 생성기가 Microsoft Project 2019를 사용하여 파일을 변환하지 못했습니다. Microsoft Project 2016을 사용하여 .MPP 파일을 계속 변환할 수 있습니다.
+PDF 생성기는 지원되는 운영 체제 및 응용 프로그램의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
+또한
+- PDF 생성기를 사용하려면 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 또는 Acrobat 2017 버전 17.011.30078에서 전환을 수행합니다.
+- PDF 생성기는 전환에 필요한 32비트 Retail 버전의 Microsoft Office Professional Plus와 기타 소프트웨어만 지원합니다.
+- PDF 생성기는 Microsoft Office 365를 지원하지 않습니다.
+- OpenOffice용 PDF 생성기 전환은 Windows 및 Linux에서만 지원됩니다.
+- OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
+- Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+- PDF 생성기 서비스는 Microsoft Windows 10을 지원하지 않습니다.
+- PDF 생성기가 Microsoft Visio 2019를 사용하여 파일을 변환하지 못했습니다. Microsoft Visio 2016을 사용하여 .VSD 및 .VSDX 파일을 계속 변환할 수 있습니다.
+- PDF 생성기가 Microsoft Project 2019를 사용하여 파일을 변환하지 못했습니다. Microsoft Project 2016을 사용하여 .MPP 파일을 계속 변환할 수 있습니다.
 >
 
 
@@ -637,8 +633,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 </table>
 
 >[!NOTE]
->
->Acrobat DC 제품군에서는 기본적으로 다른 제품인 Acrobat과 Reader 모두에 대한 두 가지 트랙을 소개합니다. &quot;Classic&quot; 및 &quot;Continuous.&quot; 자세한 내용 및 두 트랙 비교에 대해서는 [https://www.adobe.com/go/acrobatdctracks](https://www.adobe.com/go/acrobatdctracks)
+Acrobat DC 제품군에서는 기본적으로 다른 제품인 Acrobat과 Reader 모두에 대한 두 가지 트랙을 소개합니다. &quot;Classic&quot; 및 &quot;Continuous.&quot; 자세한 내용 및 두 트랙 비교에 대해서는 [https://www.adobe.com/go/acrobatdctracks](https://www.adobe.com/go/acrobatdctracks)
 
 ### 브라우저 {#browsers}
 
@@ -672,17 +667,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
    <td>모든 업데이트</td>
   </tr>
   <tr>
-   <td>MAC OS X의 Google Chrome 및 Firefox</td>
-   <td>A: 지원됨<br /> <br /> </td>
-   <td>모든 업데이트</td>
-  </tr>
-  <tr>
-   <td>Apple Safari 11.x</td>
-   <td>A: 지원됨</td>
-   <td>모든 업데이트</td>
-  </tr>
-  <tr>
-   <td>Apple Safari 12.x<br /> <br /> </td>
+   <td>macOS의 Apple Safari</td>
    <td>A: 지원됨</td>
    <td>모든 업데이트</td>
   </tr>
@@ -690,14 +675,12 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 </table>
 
 >[!NOTE]
->
->데스크탑에 대한 일부 브라우저 관련 예외는 다음과 같습니다.
->
->- Safari는 Macintosh OS X에서만 지원됩니다.
->- Workspace는 Acrobat DC 이상 버전의 Macintosh OS X 10.6 및 10.7에서 Safari 5.1을 지원합니다. Safari 5.1 Adobe Reader, Acrobat과의 호환성에 대한 자세한 내용은 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
->- Safari에서는 관리 콘솔이 지원되지 않습니다.
->- 서신 관리는 AEM 6.1 Forms용 Windows® Internet Explorer 9.0을 지원하지 않습니다.
->- Forms 포털은 Internet Explorer 11에서 접근성을 위해 JAWS 14.0 화면 판독기 소프트웨어를 지원합니다.
+데스크탑에 대한 일부 브라우저 관련 예외는 다음과 같습니다.
+- Safari는 Macintosh OS X에서만 지원됩니다.
+- Workspace는 Acrobat DC 이상 버전의 Macintosh OS X 10.6 및 10.7에서 Safari 5.1을 지원합니다. Safari 5.1 Adobe Reader, Acrobat과의 호환성에 대한 자세한 내용은 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
+- Safari에서는 관리 콘솔이 지원되지 않습니다.
+- 서신 관리는 AEM 6.1 Forms용 Windows® Internet Explorer 9.0을 지원하지 않습니다.
+- Forms 포털은 Internet Explorer 11에서 접근성을 위해 JAWS 14.0 화면 판독기 소프트웨어를 지원합니다.
 
 
 #### 모바일 클라이언트 {#mobile-clients}
@@ -728,8 +711,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 </table>
 
 >[!NOTE]
->
->- Forms Portal은 iPad의 Safari에서만 지원됩니다.
+- Forms Portal은 iPad의 Safari에서만 지원됩니다.
 
 
 ### AEM Forms 앱 {#aem-forms-workspace-app}
@@ -795,8 +777,7 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
 - OpenOffice 4.1.2
 
 >[!NOTE]
->
->플랫폼은 [AEM Forms 6.5.12.0 및 6.5.10.0에서 더 이상 사용되지 않는 항목은 AEM Forms 6.5 서비스 팩 18(6.5.18.0) 릴리스까지 지원 상태로 유지됩니다](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+플랫폼은 [AEM Forms 6.5.12.0 및 6.5.10.0에서 더 이상 사용되지 않는 항목은 AEM Forms 6.5 서비스 팩 18(6.5.18.0) 릴리스까지 지원 상태로 유지됩니다](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
 
 ## 개정 내역 {#revision-history}
 
