@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 2a889134943d75d147af6d06ea67397f75158d40
+source-git-commit: 6fa3679429527e026313b22d953267503598d1a9
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '850'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,15 @@ SAML 어설션은 서명되며 선택적으로 암호화할 수 있습니다. �
 >
 >아래 단계는 처리기가 메시지를 서명하거나 해독할 수 있어야 하는 경우에만 필요합니다.
 
-1. 을 클릭하여 개인 키 파일을 업로드합니다. **개인 키 파일 선택**. 키는 DER 인코딩이 있는 PKCS#8 형식이어야 합니다.
+1. AEM용 인증서/키쌍을 만듭니다. openssl을 통해 생성하는 명령은 아래 예와 유사해야 합니다.
+
+   `openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out certificate.crt -keyout key.pem`
+
+1. 키를 DER 인코딩으로 PKCS#8 형식으로 변환합니다. AEM 키 저장소에 필요한 형식입니다.
+
+   `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
+
+1. 을 클릭하여 개인 키 파일을 업로드합니다. **개인 키 파일 선택**.
 1. 을 클릭하여 인증서 파일을 업로드합니다. **인증서 체인 파일 선택**.
 1. 아래와 같이 별칭을 할당합니다.
 
