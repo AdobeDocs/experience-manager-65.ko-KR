@@ -3,10 +3,10 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: d3b830730ef06fb9968a46d6f26a275417cf36f0
+source-git-commit: ec9094f25cfbcd1497a6bbc87cce9754e247a770
 workflow-type: tm+mt
-source-wordcount: '4046'
-ht-degree: 10%
+source-wordcount: '3759'
+ht-degree: 9%
 
 ---
 
@@ -218,7 +218,9 @@ ht-degree: 10%
 
 >[!IMPORTANT]
 >
->Adobe은 제거 또는 제거를 권장하지 않습니다 [!DNL Experience Manager] 6.5.15.0 패키지. 따라서 팩을 설치하기 전에 `crx-repository` 반납해야 할 경우를 대비해서 <!-- UPDATE FOR EACH NEW RELEASE -->
+> * Adobe은 제거 또는 제거를 권장하지 않습니다 [!DNL Experience Manager] 6.5.15.0 패키지. 따라서 팩을 설치하기 전에 `crx-repository` 반납해야 할 경우를 대비해서 <!-- UPDATE FOR EACH NEW RELEASE -->
+> * AEM Forms용 서비스 팩 설치 지침은 [AEM Forms 서비스 팩 설치 지침](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+
 
 ### 서비스 팩 설치 [!DNL Experience Manager] 6.5 {#install-service-pack}
 
@@ -259,38 +261,9 @@ ht-degree: 10%
 
 1. OSGi 번들 `org.apache.jackrabbit.oak-core` 버전 1.22.13 이상(웹 콘솔 사용: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
-### 설치 [!DNL Experience Manager] Forms 추가 기능 패키지 {#install-aem-forms-add-on-package}
+### 서비스 팩 설치 [!DNL Experience Manager] Forms {#install-service-pack-on-aemforms}
 
->[!NOTE]
->
->을 사용하지 않는 경우 건너뜁니다 [!DNL Experience Manager] Forms.
-
-<!-- 
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
--->
-
-1. 를 설치했는지 확인합니다. [!DNL Experience Manager] 서비스 팩.
-1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
-1. [AEM Forms 추가 기능 패키지 설치](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
-1. Experience Manager 6.5 Forms에서 문자를 사용하는 경우 [최신 AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
-
-### 설치 [!DNL Experience Manager] JEE의 Forms {#install-aem-forms-jee-installer}
-
->[!NOTE]
->
->JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 의 수정 사항 [!DNL Experience Manager] 별도의 설치 프로그램을 통해 JEE의 Forms이 전달됩니다.
-
-JBoss EAP 7.4.0 이외의 애플리케이션 서버를 사용하는 JEE 환경의 모든 AEM Forms에 대해 다음 단계를 수행합니다.
-1. 설치 [AEM Forms JEE 패치](jee-patch-installer-65.md). 에는 JEE에서 AEM 6.5 Forms의 모든 구성 요소에 대한 모든 고정 문제가 포함되어 있습니다.
-1. 설치 [JEE 서비스 팩 15의 AEM 6.5 Forms용 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar). 조각은 AEM 서비스 팩 15(6.5.15.0)을 설치하는 데 필요한 종속성을 추가합니다.
-1. 조각을 설치한 후 애플리케이션 서버가 안정화될 때까지 기다립니다.
-1. [Experience Manager 6.5에 서비스 팩 설치](#install-service-pack).
-
-   >[!NOTE]
-   >
-   >최신 버전을 설치하는 경우 [AEM 서비스 팩(6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)설치하기 전에 [JEE 서비스 팩 15의 AEM 6.5 Forms용 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) jee 환경의 AEM 6.5 Forms에서 CRX/bundle 및 시작 페이지의 작동이 중지되고 서비스를 사용할 수 없는 오류가 발생합니다. 문제를 해결하려면 작업을 수행합니다 [여기에 나열됨](/help/forms/using/aem-service-pack-installation-solution.md).
-
-1. 설치 [최신 Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에서 Forms 추가 기능 패키지를 삭제합니다. `crx-repository\install` 폴더를 만들고 서버를 다시 시작합니다.
+AEM Forms에 서비스 팩을 설치하는 방법은 [AEM Forms 서비스 팩 설치 지침](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 ### UberJar {#uber-jar}
 
