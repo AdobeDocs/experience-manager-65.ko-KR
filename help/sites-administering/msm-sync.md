@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2696'
 ht-degree: 87%
 
 ---
@@ -134,7 +134,7 @@ Live Copy가 소스 컨텐츠와 동기화되는 방법 및 시기를 제어하�
   <tr>
    <th>작업 이름</th>
    <th>설명</th>
-   <th>속성<br /> </th>
+   <th>속성<br />을 따르지 않는 경우입니다 </th>
   </tr>
   <tr>
    <td>contentCopy</td>
