@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
+source-git-commit: 1759b6b2a0360b6fc173e711aaf88484c554eae8
 workflow-type: tm+mt
-source-wordcount: '3005'
+source-wordcount: '3000'
 ht-degree: 9%
 
 ---
@@ -78,7 +78,7 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 | 반경 | 선명하게 하기가 적용되는 가장자리 픽셀 주위의 픽셀 수를 결정합니다. 고대비 이미지의 경우 1~2를 입력합니다. 작은 값은 가장자리 픽셀만 선명하게 하고 큰 값은 넓은 폭의 픽셀을 선명하게 합니다. 정확한 값은 이미지의 크기에 따라 다릅니다. 기본값은 0.2이고, 범위는 0-250입니다. |
 | 임계값 | 언샵 마스크 필터를 적용할 때 무시할 대비 범위를 결정합니다. 즉, 이 옵션은 가장자리 픽셀로 간주되고 선명하게 되기 전에 선명하게 된 픽셀이 주변 영역과 얼마나 다른지를 결정합니다. 노이즈가 발생하지 않도록 0~255 사이의 값을 사용해 보십시오. |
 
-선명하게 하기는 [이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf)
+선명하게 하기는 [이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf).
 
 ## Dynamic Media 이미지 프로필 만들기 {#creating-image-profiles}
 
