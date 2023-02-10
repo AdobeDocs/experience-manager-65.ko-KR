@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: d3045e1a68d05eb257a6444f75a30faae4950db1
+source-git-commit: a8db862b4a90ee6679de44df9508caf75a4c3eec
 workflow-type: tm+mt
 source-wordcount: '6489'
 ht-degree: 3%
@@ -56,7 +56,7 @@ ht-degree: 3%
 
 Dynamic Media을 활성화하려면 `dynamicmedia_scene7` 터미널 창에 다음을 입력하여 명령줄에서 모드를 실행합니다(사용된 예제 포트는 4502).
 
-```shell
+```shell {.line-numbers}
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
@@ -533,7 +533,7 @@ Dynamic Media은 일괄처리 집합 사전 설정을 사용하여 뷰어에 표
 
 예를 들어 이름이 인 다중 축 스핀 세트를 만든다고 가정합니다. `spin-2dspin`. 3개의 행을 포함하는 스핀 세트 이미지 세트와 행당 12개의 이미지가 있습니다. 이미지의 이름은 다음과 같습니다.
 
-```
+```xml {.line-numbers}
 spin-01-01
  spin-01-02
  …

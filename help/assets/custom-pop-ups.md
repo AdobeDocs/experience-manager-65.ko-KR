@@ -1,9 +1,6 @@
 ---
 title: 빠른 보기를 사용하여 맞춤형 팝업 제작
-seo-title: Use Quickview to create custom pop-ups
 description: 기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다.
-seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
-uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,9 +9,9 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1052'
 ht-degree: 2%
 
 ---
@@ -35,7 +32,7 @@ ht-degree: 2%
 
 1. 업로드된 자산에 대한 빠른 보기를 만듭니다.
 
-   일반적으로 사용 중인 뷰어와 함께 사용할 자산을 편집할 때 빠른 보기를 만듭니다.
+   일반적으로 사용 중인 뷰어와 함께 사용할 자산을 편집하는 것과 동시에 빠른 보기를 만듭니다.
 
    <table>
     <tbody>

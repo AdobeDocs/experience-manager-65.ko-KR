@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
+source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
 workflow-type: tm+mt
 source-wordcount: '7792'
 ht-degree: 2%
@@ -161,13 +161,13 @@ Dynamic Media을 활성화하려면 명령줄에서 또는 빠른 시작 파일 
 
    * 추가 `-r dynamicmedia` jar 파일을 시작할 때 명령줄 끝
 
-   ```shell
+   ```shellsession {.line-numbers}
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -r dynamicmedia
    ```
 
    s7delivery에 게시하는 경우 다음 trustStore 인수도 포함해야 합니다.
 
-   ```
+   ```shellsession {.line-numbers}
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
    
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
@@ -216,7 +216,7 @@ Dynamic Media을 활성화한 후 비활성화하려면 `-r dynamicmedia` 실행
 
    * 추가 안 함 `-r dynamicmedia` jar 파일을 시작할 때 명령줄로 이동합니다.
 
-   ```shell
+   ```shellsession {.line-numbers}
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar
    ```
 
@@ -1079,7 +1079,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
    <td>일본 웹 코팅(광고)</td>
   </tr>
   <tr>
-   <td>NewslettrintSNAP2007</td>
+   <td>NewsprintSNAP2007</td>
    <td>CMYK</td>
    <td>미국 신문(SNAP 2007)</td>
   </tr>
