@@ -1,20 +1,11 @@
 ---
 title: 번역 프로젝트 관리
-seo-title: Managing Translation Projects
 description: AEM에서 번역 프로젝트를 관리하는 방법을 알아봅니다.
-seo-description: Learn how to manage translation projects in AEM.
-uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
-feature: Language Copy
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 57%
+source-wordcount: '3536'
+ht-degree: 56%
 
 ---
 
@@ -418,6 +409,16 @@ AEM은 번역 작업이 콘텐츠의 초기 작업을 위해 생성되는지 또
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
 1. 시작을 클릭하거나 탭합니다.
+
+## 소스 페이지 이동 또는 이름 바꾸기 {#move-source}
+
+이미 번역된 소스 페이지를 [이름이 변경되거나 이동됨](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)를 클릭하고 이동한 후 페이지를 다시 변환하면 새 페이지 이름/위치를 기반으로 새 언어 복사본이 만들어집니다. 이전 이름/위치를 기반으로 한 이전 언어 사본은 계속 있습니다.
+
+이 시나리오에서 가장 좋은 방법은 다음 절차를 수행하는 것입니다.
+1. 이동할 소스 페이지와 연결된 언어 사본 게시를 취소합니다.
+1. 삭제할 수 있습니다.
+1. 새로 이동한 소스 페이지에서 새 언어 사본을 만듭니다.
+1. 새로 만든 언어 사본을 게시합니다.
 
 ## 프로젝트 콘솔을 사용하여 번역 프로젝트 만들기 {#creating-a-translation-project-using-the-projects-console}
 
