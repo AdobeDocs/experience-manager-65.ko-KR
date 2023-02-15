@@ -2,9 +2,9 @@
 title: AEM Forms용 AEM Forms 패치 설치 지침
 description: OSGi 및 JEE 환경을 위한 AEM Forms 서비스 팩 설치 지침
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 72e4d6372a013acde1c2cf7e46cc36e3525e53bf
+source-git-commit: 0083de8ba459662d04ba80d8c63f21735d82ac82
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1797'
 ht-degree: 19%
 
 ---
@@ -91,7 +91,8 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
       >[!NOTE]
       >
-      > 사용 **ConfigurationManager.bat** 파일을 사용하면 .lax 파일의 이름을 수동으로 업데이트하지 않아도 됩니다.
+      >* 업데이트 또는 바꾸기 **ConfigurationManager.bat** 파일을 사용하면 .lax 파일의 이름을 수동으로 업데이트하지 않아도 됩니다.
+
 
 1. **[Unix 기반 전용]:** 다음 **구성 관리자 시작** 기본적으로 확인란이 선택됩니다. 클릭 **[!UICONTROL 완료]** 구성 관리자를 즉시 실행하거나 **구성 관리자** 나중에 선택을 취소합니다 **구성 관리자 시작** 누르기 전에 옵션 **[!UICONTROL 완료]**. 시작할 수 있습니다 **구성 관리자** 나중에 에서 적절한 스크립트를 사용하여 `[AEM_forms_root]/configurationManager/bin` 디렉토리.
 
@@ -104,7 +105,6 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
    * [WebSphere® 클러스터용 AEM Forms 설치 및 배포](https://helpx.adobe.com/content/dam/help/kr/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
    * [WebLogic 클러스터용 AEM Forms 설치 및 배포](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
-그렇습니다
 
 >[!NOTE]
 >
@@ -245,8 +245,6 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 +++
 
 ## 문제 해결
-
-* 설치하는 동안 오류가 발생하는 경우 AEM Forms 서비스 팩을 다시 설치합니다. 문제가 계속되면 Adobe 지원 센터에 문의하십시오.
 
 * If **패키지 관리자 UI의 대화 상자** 서비스 팩을 설치하는 동안 종료되고 배포에 액세스하기 전에 오류 로그가 안정될 때까지 기다립니다. 업데이터 번들 제거와 관련된 특정 로그를 기다린 후 설치가 성공했는지 확인합니다. 일반적으로 이 문제는 Safari 브라우저에서 발생하지만 모든 브라우저에서 간헐적으로 발생할 수 있습니다.
 
