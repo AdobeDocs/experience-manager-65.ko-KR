@@ -2,10 +2,10 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: d07b87532fe84f4729d4769ad5a178d3b2830e4f
+source-git-commit: 156e83ad9f73e200da70f824b598a713c0e2e97f
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 14%
+source-wordcount: '2195'
+ht-degree: 13%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 14%
 | 버전 | 6.5.16.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2023년 2월 23일 목요일 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]be/packages/cq650/servicepack/aem-service-pkg-6.5.16.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## 에 포함된 사항 [!DNL Experience Manager] 6.5.16.0 {#what-is-included-in-aem-6516}
 

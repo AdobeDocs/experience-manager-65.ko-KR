@@ -2,10 +2,10 @@
 title: AEM Forms용 AEM Forms 패치 설치 지침
 description: OSGi 및 JEE 환경을 위한 AEM Forms 서비스 팩 설치 지침
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 0083de8ba459662d04ba80d8c63f21735d82ac82
+source-git-commit: c4584e34b5b12f29dc995bd5483bcbad476a82ef
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 19%
+source-wordcount: '1767'
+ht-degree: 17%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 19%
 |---|---|
 | 버전 | 6.5.15.0 |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2022년 12월 01일 |
+| 날짜 | 2023년 12월 1일 |
 | 다운로드 URL | [최신 AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -114,7 +114,12 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 +++4. 서블릿 조각 설치
 
-반드시 설치해야 합니다. **서블릿 조각** JBoss® EAP 7.4.0에서 실행 중인 서버를 제외한 모든 애플리케이션 서버에 대해. 서블릿 조각을 다운로드하여 설치하려면 다음을 수행하십시오.
+>[!NOTE]
+>
+> 을(를) 설치해야 합니다. **서블릿 조각** 모든 응용 프로그램 서버에서 **JBoss® EAP 7.4.0**.
+
+
+서블릿 조각을 다운로드하여 설치하려면 다음을 수행하십시오.
 
 1. 조각을 다운로드하지 않은 경우 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
 
@@ -132,7 +137,7 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 1. 인스턴스가 업데이트 모드(이전 버전에서 인스턴스가 업데이트되었을 때)인 경우 설치하기 전에 인스턴스를 다시 시작합니다. Adobe은 인스턴스에 대한 현재 가동 시간이 높은 경우 다시 시작할 것을 권장합니다.
 1. 설치하기 전에 스냅샷 또는 새 백업 [!DNL Experience Manager] 인스턴스.
-1. 에서 서비스 팩 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 에서 서비스 팩 다운로드 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). <!-- UPDATE FOR EACH NEW RELEASE -->
 1. 패키지 관리자를 연 다음 **[!UICONTROL 패키지 업로드]** 를 눌러 패키지를 업로드합니다. 자세한 내용은 [패키지 관리자](/help/sites-administering/package-manager.md).
 1. 패키지를 선택한 다음 을 선택합니다 **[!UICONTROL 설치]**.
 1. S3 커넥터를 업데이트하려면 서비스 팩을 설치한 후 인스턴스를 중지하고 기존 커넥터를 설치 폴더에 제공된 새 이진 파일로 바꾸고 인스턴스를 다시 시작합니다. 자세한 내용은 [Amazon S3 데이터 저장소](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
@@ -169,18 +174,6 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 +++
 
-
-<!-- 1. (JBoss only) After installing the patch and configuring the server, delete  tmp  and work directories of JBoss application server.
-
->[!IMPORTANT]
->
->Before installing [AEM 6.5.15.0 service pack](#install-the-aem-service-pack-install-aem-service-pack), for all the AEM Forms on JEE environments using any application servers other than JBoss EAP 7.4.0: 
-> * Install  the [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet fragment and wait for the application server to stabilize.
->* If you install the latest [AEM service pack (6.5.15.0)](#install-the-aem-service-pack-install-aem-service-pack), prior to the fragment servlet `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` on JEE environment, the CRX/bundle and the start page show service unavailable errors, [click here](/help/forms/using/aem-service-pack-installation-solution.md) to know the troubleshooting steps. 
-
-### !-->
-
-
 ## OSGi 환경의 AEM 양식에 서비스 팩을 다운로드하여 설치합니다 {#download-and-install-for-osgi-service-pack}
 
 ![OSGi 설치 단계](/help/forms/using/assets/osgiinstallation.png)
@@ -207,7 +200,7 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 1. 인스턴스가 업데이트 모드(이전 버전에서 인스턴스가 업데이트되었을 때)인 경우 설치하기 전에 인스턴스를 다시 시작합니다. Adobe은 인스턴스에 대한 현재 가동 시간이 높은 경우 다시 시작할 것을 권장합니다.
 1. 설치하기 전에 스냅샷 또는 새 백업 [!DNL Experience Manager] 인스턴스.
-1. 에서 서비스 팩 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 에서 서비스 팩 다운로드 [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). <!-- UPDATE FOR EACH NEW RELEASE -->
 1. 패키지 관리자를 연 다음 **[!UICONTROL 패키지 업로드]** 를 눌러 패키지를 업로드합니다. 자세한 내용은 [패키지 관리자](/help/sites-administering/package-manager.md).
 1. 패키지를 선택한 다음 을 선택합니다 **[!UICONTROL 설치]**.
 1. S3 커넥터를 업데이트하려면 서비스 팩을 설치한 후 인스턴스를 중지하고 기존 커넥터를 설치 폴더에 제공된 새 이진 파일로 바꾸고 인스턴스를 다시 시작합니다. 자세한 내용은 [Amazon S3 데이터 저장소](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
@@ -250,4 +243,4 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 * 설치가 완료되면 모니터 로그(error.log)를 확인합니다. 로그에 활동이 없을 때까지 몇 분 동안 기다립니다. AEM 인스턴스를 다시 시작합니다.
 
-* 혹시라도 **서비스를 사용할 수 없는 오류** 최신 AEM Forms 6.5.15.0 서비스 팩을 설치한 후, [서블릿 조각 및 번들 설치](/help/forms/using/aem-service-pack-installation-solution.md) 오류를 수정하려면 다음을 수행합니다.
+* 혹시라도 **서비스를 사용할 수 없는 오류** AEM Forms 6.5.15.0 서비스 팩을 설치한 후, [서블릿 조각 및 번들 설치](/help/forms/using/aem-service-pack-installation-solution.md) 오류를 수정하려면 다음을 수행합니다.
