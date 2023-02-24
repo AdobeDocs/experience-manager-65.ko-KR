@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 2c4be989decbac2a4109e7c02cd9d6231c1d0753
+source-git-commit: 86394ab7e7de89615218d6ddd6843ec9276275cd
 workflow-type: tm+mt
-source-wordcount: '12541'
+source-wordcount: '12734'
 ht-degree: 5%
 
 ---
@@ -231,17 +231,17 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
   <tr>
    <td>데스크톱</td>
    <td>Firefox 45 이상</td>
-   <td>DASH* 또는 HLS</td>
+   <td>DASH* 또는 HLS 응용 스트리밍입니다.</td>
   </tr>
   <tr>
    <td>데스크톱</td>
    <td>Chrome</td>
-   <td>DASH* 또는 HLS</td>
+   <td>DASH* 또는 HLS 응용 스트리밍입니다.</td>
   </tr>
   <tr>
    <td>데스크톱</td>
    <td>Safari(Mac)</td>
-   <td>HLS</td>
+   <td>HLS 적응형 스트리밍.</td>
   </tr>
   <tr>
    <td>모바일</td>
@@ -251,7 +251,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
   <tr>
    <td>모바일</td>
    <td>Chrome(Android™ 7 이상)</td>
-   <td>DASH* 또는 HLS</td>
+   <td>DASH* 또는 HLS 응용 스트리밍입니다.</td>
   </tr>
   <tr>
    <td>모바일</td>
@@ -261,17 +261,17 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
   <tr>
    <td>모바일</td>
    <td>Safari(iOS)</td>
-   <td>HLS</td>
+   <td>HLS 적응형 스트리밍.</td>
   </tr>
   <tr>
    <td>모바일</td>
    <td>Chrome(iOS)</td>
-   <td>DASH* 또는 HLS</td>
+   <td>HLS 적응형 스트리밍.</td>
   </tr>
   <tr>
    <td>모바일</td>
    <td>BlackBerry®</td>
-   <td>DASH* 또는 HLS</td>
+   <td>DASH* 또는 HLS 응용 스트리밍입니다./td&gt;
   </tr>
  </tbody>
 </table>
@@ -432,7 +432,7 @@ Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하�
 
 ### 계정에서 DASH 사용 {#enable-dash}
 
-DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍을 위한 국제 표준이며, 다양한 비디오 뷰어에서 광범위하게 채택됩니다. DASH를 활성화하면 응용 비디오 스트리밍을 위한 HLS 또는 DASH 중에서 선택할 수 있는 옵션이 제공됩니다. 플레이어 간에 자동 전환을 사용하여 둘 다 선택할 수도 있습니다.
+DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍을 위한 국제 표준이며, 다양한 비디오 뷰어에서 광범위하게 채택됩니다. 계정에 DASH가 활성화되면 응용 비디오 스트리밍을 위한 DASH 또는 HLS에서 선택할 수 있는 옵션이 제공됩니다. 또는 플레이어 간에 자동 전환을 선택할 수 있습니다. **[!UICONTROL 자동]** 뷰어 사전 설정에서 재생 유형으로 선택됩니다.
 
 계정에서 DASH를 활성화하면 다음과 같은 주요 이점이 있습니다.
 
@@ -447,12 +447,28 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍을 위한 �
    >
    >현재 계정의 DASH 활성화는 북아메리카에서만 사용할 수 있습니다.
 
+계정에서 DASH를 활성화하려면 다음 두 단계가 필요합니다.
+
+* DASH를 사용하도록 Dynamic Media 구성 을 직접 수행할 수 있습니다.
+* DASH를 사용하도록 Experience Manager 6.5를 구성하되, 이 작업은 사용자가 만들고 제출하는 Adobe 고객 지원 사례를 통해 수행됩니다.
+
 **계정에서 DASH를 사용하려면**
 
-1. 다음으로 이동 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. **Dynamic Media 구성** - Experience Manager 6.5의 Dynamic Media에서 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. 검색 대상 **AEM Assets Dynamic Media Video Advanced Streaming** 기능 플래그.
 1. DASH를 활성화(켜기)하려면 확인란을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+1. **Experience Manager 6.5 구성** - [Admin Console을 사용하여 새 지원 사례 만들기를 시작합니다](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
+1. 다음 정보를 제공하는지 확인하면서 지원 사례를 만들려면 지침을 따르십시오.
+
+   * 기본 연락처 이름, 이메일, 전화
+   * Dynamic Media 계정 이름입니다.
+   * Experience Manager 6.5에서 DASH를 활성화하도록 지정합니다.
+
+1. Adobe 고객 지원에서는 요청을 제출하는 순서에 따라 DASH 고객 대기 목록에 사용자를 추가합니다.
+1. Adobe이 요청을 처리할 준비가 되면 고객 지원에서 DASH 활성화를 위한 대상 날짜를 조정하고 설정할 수 있도록 사용자에게 연락합니다.
+1. 고객 지원 센터에서 완료 후 알림을 받습니다.
+1. 만들기 [비디오 뷰어 사전 설정](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) 평소대로요
 
 ## YouTube에 비디오 게시 {#publishing-videos-to-youtube}
 
