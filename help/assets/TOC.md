@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '681'
 ht-degree: 74%
 
 ---
@@ -97,6 +97,8 @@ ht-degree: 74%
    + [[!DNL Assets] HTTP API](mac-api-assets.md)
    + [에서 컨텐츠 조각 지원 [!DNL Assets] HTTP API](assets-api-content-fragments.md)
    + [콘텐츠 조각용 GraphQL API](content-fragments/graphql-api-content-fragments.md)
+   + [GraphiQL IDE 사용](content-fragments/graphiql-ide.md)
+   + [지속되는 쿼리](content-fragments/persisted-queries.md)
    + [콘텐츠 조각의 원격 GraphQL 구문 인증](content-fragments/graphql-authentication-content-fragments.md)
    + [콘텐츠 조각이 있는 GraphQL API - 샘플 콘텐츠 및 구문](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] 프록시 개발](proxy.md)

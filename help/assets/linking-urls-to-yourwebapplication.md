@@ -10,9 +10,9 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: dacbfbc8b4677ac7b63b92c45602e030031de3a1
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1278'
 ht-degree: 7%
 
 ---
@@ -158,7 +158,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
    이 예는 게시된 비디오 표현물을 위한 전체 비디오 URL입니다.
 
-## 적응형 스트리밍(HLS)용 비디오 URL 가져오기 {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## 응용 스트리밍을 위한 비디오 URL(DASH 또는 HLS)을 얻습니다 {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**.
 1. 설정 **[!UICONTROL Cloud Services]** 페이지에서 아래로 스크롤하여 **[!UICONTROL Dynamic Media Cloud Services]** 제목을 선택한 후 **[!UICONTROL 구성 표시]**.

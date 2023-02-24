@@ -4,10 +4,10 @@ description: AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: 8dc8eff86ff25534a578dd227033aa185853d930
+source-git-commit: da41f48d08b7629a734e2f60077af6190a7fee8f
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 72%
+source-wordcount: '271'
+ht-degree: 78%
 
 ---
 
@@ -43,10 +43,6 @@ AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 구성 브라
 >
 >또한 자세한 내용은 [구성 브라우저](/help/sites-administering/configurations.md#using-configuration-browser)를 참조하십시오.
 
->[!CAUTION]
->
->하위 구성(구성 내에 중첩된 구성)은 컨텐츠 조각에서 사용할 수 있지만 GraphQL 쿼리에 사용할 수 없습니다.
-
 1. **도구**, **일반**&#x200B;으로 이동한 다음 **구성 브라우저**&#x200B;를 엽니다.
 
 1. **만들기**&#x200B;를 사용하여 대화 상자를 열고 여기에서
@@ -63,7 +59,7 @@ AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 구성 브라
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### 자산 폴더에 구성 적용 {#apply-the-configuration-to-your-assets-folder}
+### 에셋 폴더에 구성 적용 {#apply-the-configuration-to-your-assets-folder}
 
 구성 시 **글로벌** 컨텐츠 조각 기능에 대해 활성화되어 있으면 모든 자산 폴더에 적용됩니다.
 

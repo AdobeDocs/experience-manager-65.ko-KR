@@ -12,9 +12,9 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: dacbfbc8b4677ac7b63b92c45602e030031de3a1
 workflow-type: tm+mt
-source-wordcount: '3689'
+source-wordcount: '3727'
 ht-degree: 9%
 
 ---
@@ -70,30 +70,30 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
    <td>auto</td>
    <td>360</td>
    <td>예</td>
-   <td>730년</td>
+   <td>730</td>
    <td>30</td>
    <td>Dolby HE-AAC</td>
-   <td>128년</td>
+   <td>128</td>
   </tr>
   <tr>
    <td><p>MP4 H.264(mp4)</p> </td>
-   <td>자동</td>
-   <td>540년</td>
+   <td>auto</td>
+   <td>540</td>
    <td>예</td>
-   <td>2000년<br /> </td>
+   <td>2000<br /> </td>
    <td>30</td>
-   <td>돌비 HE-AAC</td>
-   <td>128년</td>
+   <td>Dolby HE-AAC</td>
+   <td>128</td>
   </tr>
   <tr>
    <td><p>MP4 H.264(mp4)</p> </td>
-   <td>자동</td>
-   <td>720년<br /> </td>
+   <td>auto</td>
+   <td>720<br /> </td>
    <td>예</td>
-   <td>3000년<br /> </td>
+   <td>3000<br /> </td>
    <td>30</td>
-   <td>돌비 HE-AAC</td>
-   <td>128년</td>
+   <td>Dolby HE-AAC</td>
+   <td>128</td>
   </tr>
  </tbody>
 </table>
@@ -284,7 +284,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
    <td><code>keyframe</code></td>
    <td>키프레임 사이의 대상 프레임 수입니다. 2-10초마다 키프레임을 생성할 수 있도록 이 값을 계산합니다. 예를 들어, 초당 30프레임에서 키프레임 간격은 60-300이어야 합니다.<br /> <br /> 키프레임 간격이 낮을수록 적응형 비디오 인코딩에 대한 스트림 찾기 및 스트림 전환 동작이 향상되며, 동작이 많은 비디오의 품질이 향상됩니다. 그러나 키프레임은 파일의 크기를 늘리므로 키프레임 간격이 낮을수록 일반적으로 지정된 비트율이 전체 비디오 품질이 저하됩니다.</td>
    <td><code>String</code></td>
-   <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>HLS(HTTP Live Streaming)에 권장되는 값은 60-90입니다.</p> </td>
+   <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>DASH 또는 HLS의 권장 값은 60-90입니다. 비디오에 DASH를 사용하려면 먼저 계정에 DASH를 활성화해야 합니다. 자세한 내용은 <a href="/help/assets/video.md#enable-dash">계정에서 DASH 사용</a>)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -302,7 +302,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
    <td><code>audioBitrateCustom</code></td>
    <td>값을 다음으로 설정 <code>true</code> 오디오 코덱에서 지원하는 경우 오디오 스트림에 대해 일정한 비트율을 강제 적용합니다.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>기본값은 입니다. <code>false</code>.</p> <p>HLS(HTTP Live Streaming)에 권장되는 값은 다음과 같습니다 <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>기본값은 입니다. <code>false</code>.</p> <p>DASH 또는 HLS에 권장되는 값은 다음과 같습니다 <code>false</code>. 비디오에 DASH를 사용하려면 먼저 계정에 DASH를 활성화해야 합니다. 자세한 내용은 <a href="/help/assets/video.md#enable-dash">계정에서 DASH 사용</a>)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -347,7 +347,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 1. 비디오 프로필 페이지에서 비디오 프로필 이름 하나를 선택합니다.
 1. 도구 모음에서 를 선택합니다 **[!UICONTROL 복사]**.
 1. 비디오 인코딩 프로필 페이지에서 프로필의 새 이름을 입력합니다.
-1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. 적응형 스트리밍에 대한 설명은 정보 아이콘을 선택합니다. (점진적 비디오 프로필을 복사하는 경우 확인란을 선택하지 마십시오.)
+1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. 적응형 스트리밍에 대한 설명은 정보 아이콘을 선택합니다. (If you are copying a progressive video profile, do not select the check box.)
 
    Dynamic Media - 하이브리드 모드에서 WebM 비디오 사전 설정이 비디오 프로필의 일부인 경우 **[!UICONTROL 적응형 스트리밍을 위한 인코딩]** 모든 사전 설정은 MP4여야 하므로 사용할 수 없습니다.
 1. 비디오 인코딩 사전 설정 제목 아래에서 프로필을 구성하는 비디오 인코딩 사전 설정을 추가, 편집 또는 삭제합니다.
@@ -396,7 +396,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL 자산]** 비디오 프로필을 적용할 폴더로 드래그합니다.
 1. 폴더에서 확인 표시를 선택하여 선택한 다음 선택합니다 **[!UICONTROL 속성]**.
-1. 을(를) 선택합니다 **[!UICONTROL 비디오 프로필]** 탭을 클릭하고 드롭다운 메뉴에서 프로필을 선택한 다음 를 선택합니다 **[!UICONTROL 저장 및 닫기]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 을(를) 선택합니다 **[!UICONTROL 비디오 프로필]** 탭을 클릭하고 드롭다운 메뉴에서 프로필을 선택한 다음 를 선택합니다 **[!UICONTROL 저장 및 닫기]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 다음을 수행할 수 있습니다 [비디오 프로필 처리 작업 진행 상태 모니터링](#monitoring-the-progress-of-an-encoding-job).
@@ -438,4 +438,4 @@ You can remove a video profile from a folder from within the **[!UICONTROL Tools
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL 자산]** 비디오 프로필을 제거할 폴더로 드래그합니다.
 1. 폴더에서 확인 표시를 선택한 다음 **[!UICONTROL 속성]**.
-1. 을(를) 선택합니다 **[!UICONTROL 비디오 프로필]** 탭을 선택하고 **[!UICONTROL 없음]** 드롭다운 메뉴에서 을(를) 선택하고 **[!UICONTROL 저장 및 닫기]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 을(를) 선택합니다 **[!UICONTROL 비디오 프로필]** 탭을 선택하고 **[!UICONTROL 없음]** 드롭다운 메뉴에서 을(를) 선택하고 **[!UICONTROL 저장 및 닫기]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
