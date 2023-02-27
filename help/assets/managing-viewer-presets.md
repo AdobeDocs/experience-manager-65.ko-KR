@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 40ae6c06f3296bfd4affe3e862d57df747d9bb82
+source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
 workflow-type: tm+mt
-source-wordcount: '4520'
+source-wordcount: '4522'
 ht-degree: 9%
 
 ---
@@ -459,7 +459,7 @@ Experience Manager에서 자산을 볼 때 광범위한 뷰어 사전 설정이 
 
 1. (선택 사항) [뷰어 사전 설정 편집] 페이지의 맨 위에서 다음을 선택합니다 **[!UICONTROL 데스크탑]**, **[!UICONTROL 태블릿]**, 또는 **[!UICONTROL 전화]** 다양한 장치 및 화면 유형에 대한 시각적 스타일을 고유하게 정의하기 위한 .
 1. 뷰어 사전 설정 편집기 페이지에서 **[!UICONTROL 비헤이비어]** 탭. 또는 뷰어에서 시각적 요소를 선택하여 구성에 대해 선택할 수 있습니다.
-예를 들어 *VideoPlayer* 유형, 다음 **[!UICONTROL 수정자]** > **[!UICONTROL 재생]**&#x200B;에서는 세 가지 적응형 스트리밍 옵션 중 하나를 선택할 수 있습니다.
+예를 들어 *VideoPlayer* 유형, 다음 **[!UICONTROL 수정자]** > **[!UICONTROL 재생]**&#x200B;를 선택하는 경우, 세 가지 적응형 비트율 스트리밍 옵션 중 하나를 선택할 수 있습니다.
 
    * **[!UICONTROL 대시]** - 비디오 스트림은 대시로만 표시됩니다. 그러나 Safari/iOS 장치에서 선택해야 합니다 **[!UICONTROL hls]** 를 입력합니다.
    * **[!UICONTROL hls]** - 비디오만 hls로 스트리밍됩니다.
@@ -492,7 +492,7 @@ Experience Manager에서 자산을 볼 때 광범위한 뷰어 사전 설정이 
 
    >[!IMPORTANT]
    >
-   >적응형 스트리밍 프로필을 사용하는 이전 비디오의 경우, HLS 스트리밍을 사용하면 사용자가 계속 URL을 재생할 수 있습니다 [비디오 자산 재처리](/help/assets/processing-profiles.md#reprocessing-assets). 재처리 후 동일한 URL이 계속 작동하지만 이제는 *둘 다* DASH 및 HLS 스트리밍이 활성화되었습니다.
+   >적응형 비트율 스트리밍 프로필을 사용하는 이전 비디오의 경우, 사용자가 HLS 스트리밍을 사용할 때까지 URL은 평소대로 계속 재생됩니다 [비디오 자산 재처리](/help/assets/processing-profiles.md#reprocessing-assets). 재처리 후 동일한 URL이 계속 작동하지만 이제는 *둘 다* DASH 및 HLS 스트리밍이 활성화되었습니다.
 
 ### 대화형 뷰어 사전 설정을 만들기 위한 특수 고려 사항 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
