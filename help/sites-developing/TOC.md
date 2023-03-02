@@ -8,10 +8,10 @@ breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 feature: Developing
 role: Developer
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: c5bc743f845281bdbad522053c0e57791921ffd2
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 79%
+source-wordcount: '1317'
+ht-degree: 78%
 
 ---
 
@@ -139,8 +139,10 @@ ht-degree: 79%
       + [자산 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
       + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
       + [콘텐츠 조각 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
-      + [콘텐츠 조각이 있는 AEM GraphQL API - 샘플 콘텐츠 및 구문](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
+      + [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphiql-ide.html)
+      + [지속 쿼리](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/persisted-queries.html)
       + [콘텐츠 조각의 원격 AEM GraphQL 구문 인증](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)
+      + [콘텐츠 조각이 있는 AEM GraphQL API - 샘플 콘텐츠 및 구문](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
 + 하이브리드 및 SPA AEM 개발{#spas}
    + [AEM을 통한 하이브리드 및 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [SPA 소개 및 워크스루](spa-walkthrough.md)
@@ -153,7 +155,7 @@ ht-degree: 79%
    + [SPA 편집기 개요](spa-overview.md)
    + [SPA 블루프린트](spa-blueprint.md)
    + [SPA 페이지 구성 요소](spa-page-component.md)
-   + [구성 요소 매핑을 위한 동적 모델 SPA](spa-dynamic-model-to-component-mapping.md)
+   + [구성 요소 매핑을 위한 동적 모델 SPA용](spa-dynamic-model-to-component-mapping.md)
    + [SPA 모델 라우팅](spa-routing.md)
    + [RemotePage 구성 요소](spa-remote-page.md)
    + [AEM에서 외부 SPA 편집](spa-edit-external.md)
