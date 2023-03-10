@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 28046104e75a833736f53b0e9d1edf4c8fbe6249
+source-git-commit: 5c26a043d735921d91044156f2749dc761dbb566
 workflow-type: tm+mt
-source-wordcount: '5898'
+source-wordcount: '5901'
 ht-degree: 0%
 
 ---
@@ -574,7 +574,7 @@ TarMK GC: no base state available, running full compaction instead
 
 >[!CAUTION]
 >
->AEM 설치의 Oak 코어 버전과 일치하는 버전 번호(주 버전 및 부 버전)가 있는 Oak-run 도구 릴리스를 사용하십시오. 예를 들어 AEM 인스턴스에 Oak 코어 버전 1.22.x가 있는 경우 Oak-run 도구 버전 1.22.x를 사용해야 합니다.
+>AEM 설치의 Oak 코어 버전과 일치하는 버전 번호(주 버전 및 부 버전)가 있는 Oak-run 도구 릴리스를 사용하십시오. 예를 들어 AEM 인스턴스에 Oak 코어 버전 1.22.x가 있는 경우 최신 버전의 Oak-run tool 1.22.x를 사용해야 합니다.
 
 Adobe은 라는 도구를 제공합니다. **Oak-run** 를 클릭하여 개정 버전 정리를 수행합니다. 다음 위치에서 다운로드할 수 있습니다.
 
