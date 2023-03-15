@@ -4,9 +4,9 @@ description: 가장 일반적인 MSM 관련 문제를 해결하는 방법을 찾
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
-source-git-commit: 289c4644063504ec3c8e02d930933ad7260600f0
+source-git-commit: a323e6c30bf2c226f6613d1b9b037a0beedbfc0d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 100%
 
 ---
@@ -26,8 +26,14 @@ MSM은 리소스 URL의 선택기를 통해 요청할 수 있는 여러 서블�
 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * 블루프린트 페이지에서 이를 사용하여 연결된 모든 라이브 카피 목록을 추가 라이브 카피 상태 정보와 함께 가져올 수 있습니다.
+   * 예:
+      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+
+
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * 라이브 카피 페이지에서 이를 사용하여 블루프린트 페이지와의 연결에 대한 고급 정보를 가져올 수 있습니다. 페이지가 라이브 카피가 아닌 경우 아무것도 반환되지 않습니다.
+   * 예:
+      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 이들 서블릿은 `com.day.cq.wcm.msm` 로거를 통해 유용하게 사용할 수 있는 디버그 로그 메시지를 생성합니다.
 
