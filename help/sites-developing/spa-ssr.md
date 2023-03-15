@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: 1ee82589ca9284a8ad5ecf3ca156fe10f314846a
+source-git-commit: f923a3b7d6821f63d059f310de783b11bf3e8ec3
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1751'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ Adobe I/O Runtime에 대한 자세한 내용은
 
 >[!NOTE]
 >
->Adobe은 환경(스테이지, 제품, 테스트 등)별로 별도의 Adobe I/O Runtime 작업 공간을 권장합니다. 이렇게 하면 다른 환경에 배포된 단일 애플리케이션의 다른 버전을 사용하는 일반적인 SDLC(시스템 개발 수명 주기) 패턴을 사용할 수 있습니다. 문서를 참조하십시오 [Project Firefly 애플리케이션용 CI/CD](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) 추가 정보.
+>Adobe은 환경(스테이지, 제품, 테스트 등)별로 별도의 Adobe I/O Runtime 작업 공간을 권장합니다. 이렇게 하면 다른 환경에 배포된 단일 애플리케이션의 다른 버전을 사용하는 일반적인 SDLC(시스템 개발 수명 주기) 패턴을 사용할 수 있습니다. 문서를 참조하십시오 [Project App Builder 애플리케이션용 CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) 추가 정보.
 >
 >인스턴스 유형별 런타임 구현에 차이가 없으면 인스턴스(작성자, 게시)당 별도의 작업 공간이 필요하지 않습니다.
 
