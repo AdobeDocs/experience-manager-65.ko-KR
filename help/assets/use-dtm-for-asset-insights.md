@@ -32,7 +32,7 @@ Adobe Dynamic Tag Management 는 디지털 마케팅 도구를 활성화하는 �
 
    * 을(를) 선택합니다 **[!UICONTROL 웹 속성]** 탭을 클릭한 다음 **[!UICONTROL 속성 추가]**.
 
-   * 필드를 적절하게 업데이트한 다음 **[!UICONTROL 속성 만들기]**. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * 필드를 적절하게 업데이트한 다음 **[!UICONTROL 속성 만들기]**. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR).
 
    ![웹 속성 편집 만들기](assets/Create-edit-web-property.png)
 

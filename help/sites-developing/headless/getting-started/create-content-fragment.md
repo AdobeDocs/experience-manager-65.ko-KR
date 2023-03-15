@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 조각 만들기 헤드리스 빠른 시작 안내서
 description: Headless 전달을 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독립적 콘텐츠를 디자인하고 만들고 선별하고 사용하는 방법을 알아봅니다.
-exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 91%

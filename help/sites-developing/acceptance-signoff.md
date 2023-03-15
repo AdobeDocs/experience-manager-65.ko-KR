@@ -1,7 +1,7 @@
 ---
 title: 수락 및 승인
 seo-title: Acceptance and Sign-off
-description: 수락 테스트는 프로젝트가 고객의 요구 사항을 충족하고 고객이 프로젝트를 수락하는지 확인하는 데 사용되는 특별 테스트 범주입니다
+description: 수락 테스트는 프로젝트가 고객의 요구 사항을 충족하는지 그리고 고객이 프로젝트를 수락하는지 확인하는 데 사용되는 특별한 테스트 범주입니다
 seo-description: Acceptance Tests are a special category of test used to verify that the project fulfils the customer's requirements and that the customer accepts the project
 uuid: 6bdd2a99-d141-43ef-9102-99e65aba02d3
 contentOwner: Guillaume Carlino
@@ -19,15 +19,15 @@ ht-degree: 5%
 
 # 수락 및 승인{#acceptance-and-sign-off}
 
-언급했듯이 [수락 테스트](/help/sites-developing/planning.md) 는 다음을 확인하는 데 사용되는 특별 테스트 카테고리입니다.
+언급된 바와 같이, [승인 테스트](/help/sites-developing/planning.md) 는 다음을 확인하는 데 사용되는 특별한 테스트 범주입니다.
 
 * 프로젝트는 고객의 요구 사항을 충족합니다.
 * 고객이 프로젝트를 수락합니다.
 
-고객 및 프로젝트 관리자가 정의해야 합니다. 최종 송장 발행과 종종 관련되므로 특별한 의미가 있습니다.
+고객 및 프로젝트 관리자가 정의해야 합니다. 그들은 종종 최종 청구서 발행과 관련이 있기 때문에 특별한 중요성을 가진다.
 
-이러한 이유로 다음 항목이 필요합니다.
+이러한 이유로 다음 조건을 충족해야 합니다.
 
-* 가능한 한 빨리 정의되었습니다.
+* 가능한 한 빨리 정의합니다.
 * 필요할 때마다 업데이트됩니다.
-* 모든 변경 사항은 두 당사자(파트너 및 고객)가 공식적으로 수락 및 서명해야 합니다.
+* 모든 변경 사항은 공식 승인을 받고 양 당사자(파트너와 고객)가 서명해야 합니다.

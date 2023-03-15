@@ -1,11 +1,11 @@
 ---
 title: CIF(Commerce Integration Framework) 추가 기능의 주요 변경 사항
 description: 이전 CIF 버전과 비교하여 CIF(Commerce Integration Framework) 추가 기능의 주요 변경 사항입니다.
-exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
+exl-id: 41dee21a-9ae2-4067-a32a-2d4633323fc4
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ AEM CIF 추가 기능 패키지가 설치되고 AEM Package Manager로 업데이
 
 ## 제품 카탈로그 데이터
 
-필요한 GraphQL API를 지원하는 외부 엔드포인트에 대한 실시간 호출을 통해 제품 카탈로그 데이터가 요청 시 수신됩니다. 이러한 API는 지정된 날짜에 라이브 또는 스테이징된 데이터에 대한 액세스를 지원합니다. 복제가 필요하지 않습니다.
+제품 카탈로그 데이터는 필요한 GraphQL API를 지원하는 외부 엔드포인트에 대한 실시간 호출을 통해 요청 시 수신됩니다. 이러한 API는 지정된 날짜에 라이브 또는 스테이징된 데이터에 대한 액세스를 지원합니다. 복제가 필요하지 않습니다.
 
 **이전 CIF 버전**
 

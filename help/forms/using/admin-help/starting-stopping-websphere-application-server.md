@@ -1,7 +1,7 @@
 ---
 title: WebSphere Application Server 시작 및 중지
 seo-title: Starting and stopping WebSphere Application Server
-description: AEM Forms 제품을 배포하려는 WebSphere 인스턴스를 중지하거나 시작해야 하는 몇 가지 절차가 있습니다. 이 문서에서는 WebSphere Application Server를 시작하고 정지하는 방법을 설명합니다.
+description: 몇 가지 절차를 수행하려면 AEM Forms 제품을 배포하려는 WebSphere 인스턴스를 중지하거나 시작해야 합니다. 이 문서에서는 WebSphere Application Server를 시작 및 정지하는 방법에 대해 설명합니다.
 seo-description: Several procedures require you to stop or start the instance of WebSphere where you want to deploy AEM forms products. This document describes how to start and stop the WebSphere Application Server.
 uuid: e0373197-aa57-4087-933d-92a86840a11a
 contentOwner: admin
@@ -19,28 +19,28 @@ ht-degree: 0%
 
 # WebSphere Application Server 시작 및 중지 {#starting-and-stopping-websphere-application-server}
 
-AEM Forms 제품을 배포하려는 WebSphere 인스턴스를 중지하거나 시작해야 하는 몇 가지 절차가 있습니다. 응용 프로그램 서버가 시작되었는지 확실하지 않은 경우 먼저 WebSphere 응용 프로그램 서버의 상태를 볼 수 있습니다.
+몇 가지 절차를 수행하려면 AEM Forms 제품을 배포하려는 WebSphere 인스턴스를 중지하거나 시작해야 합니다. 응용 프로그램 서버가 시작되었는지 확실하지 않은 경우 먼저 WebSphere Application Server의 상태를 볼 수 있습니다.
 
-## WebSphere 응용 프로그램 서버의 상태 보기 {#view-the-status-of-websphere-application-server}
+## WebSphere Application Server 상태 보기 {#view-the-status-of-websphere-application-server}
 
 1. 명령 프롬프트에서 `[appserver root]/bin` 디렉토리.
-1. 다음 명령을 입력하고 *server_name* WebSphere Application Server의 이름을 사용하여 다음을 수행합니다.
+1. 다음 명령을 입력하여 을 바꿉니다. *server_name* WebSphere Application Server의 이름:
 
    * (Windows) `serverStatus.bat`*server_name*
    * (Linux, UNIX) 를 참조하십시오./ `serverStatus.sh`*server_name*
 
-## WebSphere 응용 프로그램 서버 시작 {#start-websphere-application-server}
+## WebSphere 애플리케이션 서버 시작 {#start-websphere-application-server}
 
 1. 명령 프롬프트에서 `[appserver root]/bin` 디렉토리.
-1. 다음 명령을 입력하고 *server_name* WebSphere Application Server의 이름을 사용하여 다음을 수행합니다.
+1. 다음 명령을 입력하여 을 바꿉니다. *server_name* WebSphere Application Server의 이름:
 
    * (Windows) `startServer.bat`*server_name*
    * (Linux, UNIX) 를 참조하십시오./ `startServer.sh`*server_name*
 
-## WebSphere 응용 프로그램 서버 중지 {#stop-websphere-application-server}
+## WebSphere 애플리케이션 서버 중지 {#stop-websphere-application-server}
 
 1. 명령 프롬프트에서 `[appserver root]/bin` 디렉토리.
-1. 다음 명령을 입력하고 *server_name* WebSphere Application Server의 이름을 사용하여 다음을 수행합니다.
+1. 다음 명령을 입력하여 을 바꿉니다. *server_name* WebSphere Application Server의 이름:
 
    * (Windows) `stopServer.bat`*server_name*
    * (Linux, UNIX) 를 참조하십시오./ `stopServer.sh`*server_name*

@@ -24,7 +24,7 @@ ht-degree: 2%
 *감시 폴더* 는 감시 폴더 계층 구조의 다음 폴더 중 하나 내에서 파일을 조작하는 구성 서비스 작업을 호출하는 파일 시스템 기반 응용 프로그램입니다.
 
 * 입력
-* 단계
+* 스테이징
 * 출력
 * 실패
 * 유지
@@ -62,20 +62,20 @@ ht-degree: 2%
    <td><p>file1, file2, file3, file4</p></td>
    <td><p>file2, file3, file4</p></td>
    <td><p>file3, file4</p></td>
-   <td><p>파일4</p></td>
+   <td><p>file4</p></td>
    <td><p>비어 있음</p></td>
-   <td><p>파일5</p></td>
+   <td><p>file5</p></td>
    <td><p>비어 있음</p></td>
   </tr>
   <tr>
-   <td><p>단계</p></td>
+   <td><p>스테이징</p></td>
    <td><p>비어 있음</p></td>
-   <td><p>파일1</p></td>
-   <td><p>파일2</p></td>
+   <td><p>file1</p></td>
+   <td><p>file2</p></td>
    <td><p>file3</p></td>
-   <td><p>파일4</p></td>
+   <td><p>file4</p></td>
    <td><p>비어 있음</p></td>
-   <td><p>파일5</p></td>
+   <td><p>file5</p></td>
   </tr>
   <tr>
    <td><p>출력</p></td>
@@ -101,7 +101,7 @@ ht-degree: 2%
    <td><p>유지</p></td>
    <td><p>비어 있음</p></td>
    <td><p>비어 있음</p></td>
-   <td><p>파일1 </p></td>
+   <td><p>file1 </p></td>
    <td><p>file1, file2 </p></td>
    <td><p>file1, file2 </p></td>
    <td><p>file1, file2, file4 </p></td>

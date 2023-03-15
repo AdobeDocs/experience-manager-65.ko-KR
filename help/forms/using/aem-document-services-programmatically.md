@@ -30,7 +30,7 @@ ht-degree: 1%
 
 * DocAssurance 서비스 API를 사용하기 전에 [docAssurance 서비스 구성](/help/forms/using/install-configure-document-services.md).
 
-* 다운로드 및 구성 [AEM Forms 클라이언트 SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) AEM maven 프로젝트 사용. AEM Document Services를 사용하여 Maven 프로젝트를 만드는 데 필요한 클라이언트 클래스는 [AEM Forms 클라이언트 SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* 다운로드 및 구성 [AEM Forms 클라이언트 SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) AEM maven 프로젝트 사용. AEM Document Services를 사용하여 Maven 프로젝트를 만드는 데 필요한 클라이언트 클래스는 [AEM Forms 클라이언트 SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
 
 * 학습 [Maven을 사용하여 AEM 프로젝트를 빌드하는 방법](/help/sites-developing/ht-projects-maven.md)
 

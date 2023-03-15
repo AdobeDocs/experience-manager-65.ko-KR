@@ -750,7 +750,7 @@ Authorization Manager Service API(웹 서비스)를 사용하여 역할 및 권�
    <td><p>사용자는 웹 사이트에 액세스하여 사용자 이름과 암호를 지정합니다. 이 정보는 AEM Forms을 호스팅하는 J2EE 애플리케이션 서버에 제출됩니다.</p></td>
   </tr>
   <tr>
-   <td><p>2개</p></td>
+   <td><p>2</p></td>
    <td><p>사용자 자격 증명은 인증 관리자 서비스로 인증됩니다. 사용자 자격 증명이 유효하면 워크플로우가 3단계로 진행합니다. 그렇지 않으면 사용자가 인증된 사용자가 아니라는 메시지가 사용자에게 전송됩니다.</p></td>
   </tr>
   <tr>
@@ -876,7 +876,7 @@ Authentication Manager Service API(Java)를 사용하여 사용자 인증:
    <td><p>클라이언트 애플리케이션은 AEM Forms에서 동기화 작업을 수행하도록 요청합니다.</p></td>
   </tr>
   <tr>
-   <td><p>2개</p></td>
+   <td><p>2</p></td>
    <td><p>AEM Forms에서 동기화 작업을 수행합니다.</p></td>
   </tr>
   <tr>

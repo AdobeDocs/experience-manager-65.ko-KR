@@ -1,6 +1,6 @@
 ---
 title: 관련 콘텐츠
-description: AEM 관련 컨텐츠 기능이 연결을 제공하여 컨텐츠 페이지에 자산을 추가할 때 조각과 함께 선택적으로 사용할 수 있도록 함으로써 헤드리스 컨텐츠 전달에 추가 유연성을 추가하는 방법을 이해합니다.
+description: AEM 관련 콘텐츠 기능이 연결을 제공하여 콘텐츠 페이지에 에셋을 추가할 때 조각과 함께 해당 에셋을 선택적으로 사용할 수 있도록 함으로써 Headless 콘텐츠 전달에 유연성을 더하는 방법을 이해합니다.
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
@@ -13,7 +13,7 @@ ht-degree: 60%
 
 # 관련 콘텐츠{#associated-content}
 
-AEM 관련 컨텐츠 기능은 조각이 컨텐츠 페이지에 추가될 때 자산을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다. 따라서 헤드리스 컨텐츠를 [페이지에서 컨텐츠 조각을 사용할 때 액세스할 수 있는 다양한 자산 제공,](/help/sites-authoring/content-fragments.md#using-associated-content) 를 사용하여 적절한 자산을 검색하는 데 필요한 시간을 줄일 수도 있습니다.
+AEM 관련 콘텐츠 기능은 조각이 콘텐츠 페이지에 추가될 때 에셋을 조각과 함께 선택적으로 사용할 수 있도록 연결을 제공합니다. Headless 콘텐츠 전달을 위한 유연성 제공 [페이지에서 콘텐츠 조각을 사용할 때 액세스할 수 있는 다양한 에셋 제공](/help/sites-authoring/content-fragments.md#using-associated-content) 적절한 에셋을 검색하는 데 필요한 시간을 줄이는 데도 도움이 됩니다.
 
 ## 관련 콘텐츠 추가 {#adding-associated-content}
 

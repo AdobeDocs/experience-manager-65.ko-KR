@@ -161,11 +161,11 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
  <tbody>
   <tr>
    <td><p>JBoss</p> </td>
-   <td><p>8080년</p> </td>
+   <td><p>8080</p> </td>
   </tr>
   <tr>
    <td><p>WebLogic</p> </td>
-   <td><p>7001년</p> </td>
+   <td><p>7001</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>WebLogic 관리 서버</p> </td>
@@ -173,23 +173,23 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
   </tr>
   <tr>
    <td>&gt;<p>WebSphere</p> </td>
-   <td><p>9060에서 전역 보안이 활성화되어 있으면 기본 SSL 포트 값은 9043입니다.</p> <p>9080년</p> </td>
+   <td><p>9060에서 전역 보안이 활성화되어 있으면 기본 SSL 포트 값은 9043입니다.</p> <p>9080</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>BAM 서버</p> </td>
-   <td><p>7001년</p> </td>
+   <td><p>7001</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>SOAP</p> </td>
-   <td><p>888년</p> </td>
+   <td><p>8880</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>MySQL</p> </td>
-   <td><p>3306년</p> </td>
+   <td><p>3306</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>Oracle</p> </td>
-   <td><p>1521년</p> </td>
+   <td><p>1521</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>DB2</p> </td>
@@ -197,7 +197,7 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
   </tr>
   <tr>
    <td>&gt;<p>SQL Server</p> </td>
-   <td><p>1433년</p> </td>
+   <td><p>1433</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>LDAP</p> </td>

@@ -192,7 +192,7 @@ ht-degree: 4%
    + [대화형 통신 구성 속성](using/interactive-communication-configuration-properties.md)
    + [여러 대화형 통신 생성](using/generate-multiple-interactive-communication-using-batch-api.md)
    + [레이아웃 모드를 사용하여 구성 요소 크기 변경](using/resize-using-layout-mode-interactive-communication.md)
-+ 워크플로우 {#workflows}
++ 워크플로 {#workflows}
    + [OSGi의 Forms 중심 워크플로우](using/aem-forms-workflow.md)
    + [OSGi의 Forms 중심 워크플로우 - 단계 참조](using/aem-forms-workflow-step-reference.md)
    + [AEM Forms 중심 워크플로우 단계에 대해 사용자 또는 그룹을 동적으로 선택합니다.](using/dynamically-select-a-user-or-group-for-aem-workflow.md)

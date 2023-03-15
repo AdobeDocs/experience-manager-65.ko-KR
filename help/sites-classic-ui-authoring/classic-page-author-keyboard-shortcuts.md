@@ -112,7 +112,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-I</code></strong><br /> </td>
-   <td>기울임체<br /> </td>
+   <td>기울임체<br />을 따르지 않는 경우입니다 </td>
   </tr>
   <tr>
    <td> </td>

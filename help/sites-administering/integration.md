@@ -1,7 +1,7 @@
 ---
 title: 솔루션 통합
 seo-title: Solutions Integration
-description: AEM의 솔루션 통합에 대해 자세히 알아보십시오.
+description: AEM의 솔루션 통합에 대해 자세히 알아보십시오 .
 seo-description: Learn more about Solutions Integration in AEM.
 uuid: 3bf56b1b-284d-4f14-8974-0a595ece5028
 contentOwner: Guillaume Carlino
@@ -25,11 +25,11 @@ ht-degree: 32%
 * [카탈로그 제작자](/help/sites-administering/catalog-producer.md)
 * [SharePoint 커넥터](/help/sites-administering/sharepoint-connector.md)
 
-AEM을 다른 Adobe 또는 타사 서비스와 통합하는 방법에 대해 다음 정보를 사용할 수 있습니다.
+다른 Adobe 또는 타사 서비스와 AEM 통합에 대해 다음 정보를 사용할 수 있습니다.
 
 >[!NOTE]
 >
->통합과 함께 사용자 지정 프록시 구성을 사용하는 경우 AEM의 일부 기능에서 3.x API를 사용하고 4.x API를 사용하는 것과 같은 HTTP 클라이언트 프록시 구성을 구성해야 합니다.
+>통합과 함께 사용자 정의 프록시 구성을 사용하는 경우 AEM의 일부 기능은 3.x API를 사용하고 다른 일부 기능은 4.x API를 사용하므로 HTTP 클라이언트 프록시 구성을 모두 구성해야 합니다.
 >
 >* 3.x은(는) [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)로 구성됩니다.
 >* 4.x은(는) [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)로 구성됩니다.

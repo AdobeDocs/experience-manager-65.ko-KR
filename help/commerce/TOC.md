@@ -14,7 +14,7 @@ ht-degree: 76%
 # 상거래 {#commerce}
 
 + [AEM Content and Commerce](/help/commerce/home.md)
-+ [AEM 컨텐츠 및 상거래에 대한 주요 변경 사항](cif/changes.md)
++ [AEM Content 및 Commerce의 주요 변경 내용](cif/changes.md)
 + [소개 및 개요](cif/introduction.md)
 + 통합 {#integrations}
    + [Adobe Commerce](cif/integrating/magento.md)
@@ -33,7 +33,7 @@ ht-degree: 76%
       + [캐싱 옵션](cif/configuring/caching.md)
       + [맞춤형 HTTP 헤더](/help/commerce/cif/configuring/custom-http-headers.md)
    + 개발 {#developing}
-      + [AEM을 사용한 개발](cif/develop.md)
+      + [AEM을 사용하여 개발](cif/develop.md)
       + [CIF 구성 요소 스타일링](cif/customizing/style-cif-component.md)
       + [CIF 구성 요소 맞춤화](cif/customizing/customize-cif-components.md)
       + [CIF 카탈로그 선택기 사용](cif/customizing/use-cif-pickers.md)
@@ -45,16 +45,16 @@ ht-degree: 76%
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
 + [FAQ](cif/faq.md)
-+ AEM CIF Classic {#classic}
++ AEM CIF 클래식 {#classic}
    + [개요](/help/commerce/cif-classic/home.md)
    + 배포 {#deploying}
       + [eCommerce 개요](/help/commerce/cif-classic/deploying/ecommerce.md)
-      + [SAP Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
+      + [SAP COMMERCE CLOUD](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
    + 관리 {#administering}
       + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
       + [개념](/help/commerce/cif-classic/administering/concepts.md)
-      + [일반 eCommerce 관리](/help/commerce/cif-classic/administering/generic.md)
-      + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
+      + [일반 전자 상거래 관리](/help/commerce/cif-classic/administering/generic.md)
+      + [SAP COMMERCE CLOUD](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
    + 개발 {#developing}
       + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
       + [개발(일반)](/help/commerce/cif-classic/developing/generic.md)

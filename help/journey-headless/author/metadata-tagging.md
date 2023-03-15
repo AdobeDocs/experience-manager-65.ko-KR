@@ -1,46 +1,46 @@
 ---
 title: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 description: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
-exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 15%
+ht-degree: 97%
 
 ---
 
 # 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기 {#author-headless-metadata-tagging}
 
-## 지금까지 이야기 {#story-so-far}
+## 지금까지의 스토리 {#story-so-far}
 
-의 시작 [AEM Headless Content Author 여정](overview.md) a [소개](introduction.md) 헤드리스용 작성과 관련된 기본 개념 및 용어를 다룹니다.
+[AEM Headless 콘텐츠 작성자 여정](overview.md) 시작 부분의 [소개](introduction.md)에서는 Headless 작성과 관련된 기본 개념 및 용어를 다룹니다.
 
-이전 단계에서는 헤드리스 CMS 작성에 대한 참조를 사용하라는 지침을 도입했습니다. 여러분은 어떤 종류의 참조들을 이용할 수 있는지, 그리고 그들의 목적은 무엇인지 배웠습니다. 컨텐츠 참조, 자산/미디어 참조 및 조각 참조.
+이전 단계에서 Headless CMS 작성에 대한 참조 사용을 소개했습니다. 콘텐츠 참조, 에셋/미디어 참조, 조각 참조 등 사용 가능한 참조의 종류와 참조 목적에 대해 알아보았습니다.
 
-이 문서는 이러한 단원을 기반으로 하여 AEM 헤드리스 프로젝트에 대한 메타데이터 및 태깅을 사용하여 자신만의 컨텐츠를 작성하는 방법을 이해합니다.
+이 문서는 해당 사항을 기본으로 하며, 이를 통해 메타데이터 및 태그 지정을 사용하여 자체 AEM Headless 프로젝트의 콘텐츠를 작성하는 방법을 이해할 수 있습니다.
 
 ## 목표 {#objective}
 
-* **Audience**: 고급
-* **목표**: 헤드리스 CMS 작성에 대한 메타데이터 및 태깅을 도입합니다.
+* **대상자**: 고급
+* **목표**: Headless CMS 작성에 대한 메타데이터 및 태그 지정 사용을 소개합니다.
 
 ## 메타데이터 및 태그 추가 {#adding-metadata-and-tags}
 
-메타데이터 및 태그를 추가하는 데 사용할 수 있는 방법에는 세 가지가 있습니다.
+메타데이터 및 태그 추가에 사용할 수 있는 방법이 세 가지 있습니다.
 
 * 조각을 처음 만들 때:
 
-   ![컨텐츠 조각 만들기 - 제공 이름](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+   ![새 콘텐츠 조각 만들기 - 이름 입력](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* 다음 **메타데이터** 컨텐츠 조각 편집기의 탭에서는 메타데이터의 다양한 필드와 사전 정의된 필드를 모두 추가할 수 있습니다 **태그** 프로젝트에서 다음을 수행하십시오.
+* 콘텐츠 조각 편집기의 **메타데이터** 탭을 사용하여 프로젝트에서 다양한 메타데이터 필드와 사전 정의된 **태그**&#x200B;를 추가할 수 있습니다.
 
-   ![컨텐츠 조각 편집기 - 메타데이터](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+   ![콘텐츠 조각 편집기 - 메타데이터](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * 또한 **속성** 옵션을 클릭합니다.
+   * 에셋 콘솔의 도구 모음에 있는 **속성** 옵션을 사용하여 직접 액세스할 수도 있습니다.
 
 ## 다음 단계 {#whats-next}
 
-이제 이 모든 지식을 사용하여 프로젝트에 대한 컨텐츠 조각 만들기를 시작할 수 있습니다.
+이제 이 모든 지식을 사용하여 프로젝트에 대한 콘텐츠 조각 만들기를 시작할 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
@@ -48,4 +48,4 @@ ht-degree: 15%
 
 * [태그 사용](/help/sites-authoring/tags.md)
 
-* [컨텐츠 조각 모델 - 자산 폴더에서 컨텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [콘텐츠 조각 모델 - 에셋 폴더에서 콘텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

@@ -1,7 +1,7 @@
 ---
 title: 브랜딩 사용자 지정
 seo-title: Branding Customization
-description: 애플리케이션 아이콘, 애플리케이션 이름, 시작 이미지 및 로그인 페이지를 사용자 지정하여 AEM Forms 앱에 대해 조직별 모양과 느낌을 제공할 수 있습니다.
+description: 애플리케이션 아이콘, 애플리케이션 이름, 실행 이미지 및 로그인 페이지를 사용자 정의하여 AEM Forms 앱에 고유한 조직별 모양과 느낌을 제공합니다.
 seo-description: Customize the application icon, application name, launch images, and login page to provide a distinct organization-specific look and feel to AEM Forms app.
 uuid: fece0fa8-c417-45eb-93f1-a91b49835fa0
 contentOwner: robhagat
@@ -19,37 +19,37 @@ ht-degree: 2%
 
 # 브랜딩 사용자 지정 {#branding-customization}
 
-애플리케이션 아이콘, 애플리케이션 이름, 시작 이미지 및 로그인 페이지를 사용자 지정하여 AEM Forms 앱에 조직별 모양을 제공할 수 있습니다. 예를 들어, 조직의 로고를 사용하도록 이미지를 변경할 수 있습니다. AEM Forms 앱은 다음 사용자 지정을 지원합니다.
+애플리케이션 아이콘, 애플리케이션 이름, 론치 이미지 및 로그인 페이지를 사용자 정의하여 AEM Forms 앱에 고유한 조직별 모양을 제공할 수 있습니다. 예를 들어 조직의 로고를 사용하도록 이미지를 변경할 수 있습니다. AEM Forms 앱은 다음과 같은 사용자 지정을 지원합니다.
 
-* 애플리케이션 아이콘 및 실행 이미지 사용자 정의
+* 애플리케이션 아이콘 및 론치 이미지 맞춤화
 * 앱 이름 사용자 지정
-* 로그인 페이지에서 이미지 사용자 지정
+* 로그인 페이지에서 이미지 사용자 정의
 * 앱 메뉴에서 로고 사용자 지정
 
-## 아이콘 및 실행 이미지 사용자 지정 {#customizing-icon-and-launch-images}
+## 아이콘 및 론치 이미지 맞춤화 {#customizing-icon-and-launch-images}
 
-다음 단계를 수행하여 AEM Forms 앱의 기본 앱 아이콘과 실행 이미지를 사용자 지정합니다.
+기본 앱 아이콘과 AEM Forms 앱의 시작 이미지를 사용자 정의하려면 다음 단계를 수행하십시오.
 
 >[!NOTE]
 >
->모든 아이콘 및 이미지에 대해 비인터레이스 PNG 형식을 사용합니다.
+>모든 아이콘과 이미지에 비인터레이스 PNG 형식을 사용합니다.
 
-### 아이콘 및 launch 이미지를 사용자 지정하려면 {#to-customize-icon-and-launch-images}
+### 아이콘 및 론치 이미지를 사용자 정의하려면 {#to-customize-icon-and-launch-images}
 
 #### iOS용 {#for-ios}
 
-1. 를 엽니다. `Capture.xcodeproj` 프로젝트에 포함되어 있습니다.
-1. (***사용자 정의 아이콘***) 캡처의 네비게이터 보기에서 **[!UICONTROL 캡처 > 캡처 > 지원 파일 > Capture-info.plist]**. 아이콘 파일 옆에 있는 드롭다운을 클릭합니다. 아이콘 파일(.png)의 이름을 지정하고 다음 위치에 파일을 업로드합니다 **[!UICONTROL 캡처 > 캡처 > 리소스 > 아이콘]**. 현재 지원되는 차원은 다음과 같습니다. 29x29, 50x50, 58x58, 72x72, 100x100 및 144x144.
-1. (***Launch 이미지 사용자 지정***) 이미지의 파일 이름이 다음 파일인지 확인합니다.
+1. 를 엽니다. `Capture.xcodeproj` xcode의 프로젝트입니다.
+1. (***사용자 지정 아이콘***) 캡처의 네비게이터 보기에서 다음 위치로 이동합니다. **[!UICONTROL 캡처 > 캡처 > 지원 파일 > Capture-info.plist]**. 아이콘 파일 옆에 있는 드롭다운을 클릭합니다. 아이콘 파일(.png)의 이름을 지정하고 다음 위치에 파일을 업로드합니다. **[!UICONTROL 캡처 > 캡처 > 리소스 > 아이콘]**. 현재 지원되는 차원은 29x29, 50x50, 58x58, 72x72, 100x100 및 144x144입니다.
+1. (***Launch 이미지 사용자 정의용***) 이미지의 파일 이름이 다음과 같은지 확인합니다.
 
    * 세로: `Default-Portrait~ipad.png` 및 `Default-Portrait@2x~ipad.png`
    * 가로: `Default-Landscape~ipad.png` 및 `Default-Landscape@2x~ipad.png`
 
-   이들을 캡처 프로젝트에 업로드하여 프로젝트의 기존 파일을 바꿉니다.
+   Capture 프로젝트에 업로드하여 프로젝트의 기존 파일을 바꿉니다.
 
    >[!NOTE]
    >
-   >이미지의 이름과 해상도가 프로젝트에서 바꿀 이미지와 일치하는지 확인합니다.
+   >이미지의 이름 및 해상도가 프로젝트에서 교체하는 이미지와 일치하는지 확인합니다.
 
 1. iOS 장치 또는 iOS 시뮬레이터에서 AEM Forms 앱을 빌드하고 실행합니다.
 
@@ -69,23 +69,23 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >이미지의 이름과 해상도가 프로젝트에서 바꿀 이미지와 일치하는지 확인합니다.
+   >이미지의 이름 및 해상도가 프로젝트에서 교체하는 이미지와 일치하는지 확인합니다.
 
 1. AEM Forms 앱을 다시 빌드합니다.
 
 ### Windows용 {#for-windows}
 
-1. 경로에서 아이콘을 바꿉니다.
+1. 경로의 아이콘을 바꿉니다.
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\icons\windows`
 
-1. 경로에서 시작 관리자 이미지를 바꿉니다.
+1. 경로의 런처 이미지를 바꿉니다.
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\screens\windows`
 
    >[!NOTE]
    >
-   >이미지의 이름과 해상도가 프로젝트에서 바꿀 이미지와 일치하는지 확인합니다.
+   >이미지의 이름 및 해상도가 프로젝트에서 교체하는 이미지와 일치하는지 확인합니다.
 
 1. AEM Forms 앱을 다시 빌드합니다.
 
@@ -93,14 +93,14 @@ ht-degree: 2%
 
 ### iOS용 {#for-ios-1}
 
-1. 를 엽니다. `Capture.xcodeproj` 프로젝트에 포함되어 있습니다.
-1. 캡처의 네비게이터 보기에서 **[!UICONTROL 캡처 > 캡처 > 지원 파일 > InfoPlist.strings]**.
+1. 를 엽니다. `Capture.xcodeproj` xcode의 프로젝트입니다.
+1. 캡처의 네비게이터 보기에서 다음 위치로 이동합니다. **[!UICONTROL 캡처 > 캡처 > 지원 파일 > InfoPlist.strings]**.
 
-   에 대한 값 업데이트 `CFBundleDisplayName` 속성에 대한 설명을 추가합니다.
+   에 대한 값 업데이트 `CFBundleDisplayName` 앱에 표시할 이름의 속성입니다.
 
 1. iOS 장치 또는 iOS 시뮬레이터에서 AEM Forms 앱을 빌드하고 실행합니다.
 
-   iOS용 앱 빌드에 대한 자세한 내용은 [Xcode 프로젝트를 설정하고 iOS 앱을 빌드합니다.](/help/forms/using/setup-xcode-project-build-installer.md).
+   iOS용 앱 빌드에 대한 자세한 내용은 [Xcode 프로젝트 설정 및 iOS 앱 빌드](/help/forms/using/setup-xcode-project-build-installer.md).
 
 ### Android용 {#for-android-1}
 
@@ -119,18 +119,18 @@ ht-degree: 2%
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\config.xml`
 
-1. 에서 값을 업데이트합니다. `<name>...</name>` 태그에 가깝게 포함했습니다.
+1. 에서 값 업데이트 `<name>...</name>` 태그에 가깝게 배치하십시오.
 1. AEM Forms 앱을 다시 빌드합니다.
 
-   Windows용 앱 빌드에 대한 자세한 내용은 [Visual Studio 프로젝트를 설정하고 Windows 앱을 빌드합니다.](/help/forms/using/setup-visual-studio-project-build-installer.md).
+   Windows용 앱 빌드에 대한 자세한 내용은 [Visual Studio 프로젝트 설정 및 Windows 앱 빌드](/help/forms/using/setup-visual-studio-project-build-installer.md).
 
-## 로그인 페이지에서 이미지 사용자 지정 {#customizing-images-on-the-login-page}
+## 로그인 페이지에서 이미지 사용자 정의 {#customizing-images-on-the-login-page}
 
-AEM Forms 앱의 로그인 페이지에 로고와 배경 이미지가 있습니다. 로고는 로그인 대화 상자 위에 있고 배경 이미지는 로그인 대화 상자 아래에 있습니다. 로그인 페이지에서 기본 이미지를 사용자 지정하려면 다음 단계를 수행하십시오.
+AEM Forms 앱의 로그인 페이지에는 로고와 배경 이미지가 있습니다. 로고는 로그인 대화 상자 위에 있고 배경 이미지는 로그인 대화 상자 아래에 있습니다. 로그인 페이지에서 기본 이미지를 사용자 정의하려면 다음 단계를 수행하십시오.
 
 **시작하기 전**
 
-다음 이미지가 있는지 확인하십시오.
+다음 이미지가 있는지 확인합니다.
 
 <table>
  <tbody>
@@ -154,34 +154,34 @@ AEM Forms 앱의 로그인 페이지에 로고와 배경 이미지가 있습니�
 
 **Xcode를 사용하여 로그인 페이지에서 이미지를 사용자 지정하려면**
 
-1. 를 엽니다. `Capture.xcodeproj` 프로젝트에 포함되어 있습니다.
+1. 를 엽니다. `Capture.xcodeproj` xcode의 프로젝트입니다.
 
-1. 로 이동합니다 `www/wsmobile/images`폴더를 입력합니다.
-1. 로고를 변경하려면 기본값을 바꾸십시오 `LC-logo.png` 사용자 지정 파일이 있는 파일 `LC-logo.png` 파일.
-1. 배경을 변경하려면 기본값을 바꿉니다 `Landing_bg.jpeg` 사용자 지정 파일이 있는 파일 `Landing_bg.jpeg`파일.
+1. 다음 위치로 이동 `www/wsmobile/images`폴더를 삭제합니다.
+1. 로고를 변경하려면 기본값을 바꿉니다. `LC-logo.png` 사용자 지정 파일이 있는 파일 `LC-logo.png` 파일.
+1. 배경을 변경하려면 기본값을 바꿉니다. `Landing_bg.jpeg` 사용자 지정 파일이 있는 파일 `Landing_bg.jpeg`파일.
 1. iOS 장치 또는 iOS 시뮬레이터에서 AEM Forms 앱을 빌드하고 실행합니다.
 
-### Eclipse를 사용하여 로그인 페이지에서 이미지를 사용자 지정하려면 {#to-customize-images-on-the-login-pages-using-eclipse}
+### Eclipse를 사용하여 로그인 페이지에서 이미지 사용자 정의하기 {#to-customize-images-on-the-login-pages-using-eclipse}
 
 1. Eclipse에서 Android 프로젝트를 엽니다.
 
-1. 로 이동합니다 `assets/www/wsmobile/images`폴더를 입력합니다.
-1. 로고를 변경하려면 기본값을 바꾸십시오 `LC-logo.png` 사용자 지정 파일이 있는 파일 `LC-logo.png` 파일.
-1. 배경을 변경하려면 기본값을 바꿉니다 `Landing_bg.jpeg` 사용자 지정 파일이 있는 파일 `Landing_bg.jpeg`파일.
+1. 다음 위치로 이동 `assets/www/wsmobile/images`폴더를 삭제합니다.
+1. 로고를 변경하려면 기본값을 바꿉니다. `LC-logo.png` 사용자 지정 파일이 있는 파일 `LC-logo.png` 파일.
+1. 배경을 변경하려면 기본값을 바꿉니다. `Landing_bg.jpeg` 사용자 지정 파일이 있는 파일 `Landing_bg.jpeg`파일.
 1. Android 장치에서 AEM Forms 앱을 빌드하고 실행합니다.
 
-### Visual Studio를 사용하여 로그인 페이지에서 이미지를 사용자 정의하려면 {#to-customize-images-on-the-login-pages-using-visual-studio}
+### Visual Studio를 사용하여 로그인 페이지의 이미지를 사용자 지정하려면 {#to-customize-images-on-the-login-pages-using-visual-studio}
 
-1. 를 엽니다. `MWSWindows.sln` Visual Studio에서 프로젝트를 실행합니다.
+1. 를 엽니다. `MWSWindows.sln` visual Studio의 프로젝트입니다.
 
-1. 로 이동합니다 `MWSWindows\www\wsmobile\images`폴더를 입력합니다.
-1. 로고를 변경하려면 기본값을 바꾸십시오 `LC-logo.png` 사용자 지정 파일이 있는 파일 `LC-logo.png` 파일.
-1. 배경을 변경하려면 기본값을 바꿉니다 `Landing_bg.jpeg` 사용자 지정 파일이 있는 파일 `Landing_bg.jpeg`파일.
+1. 다음 위치로 이동 `MWSWindows\www\wsmobile\images`폴더를 삭제합니다.
+1. 로고를 변경하려면 기본값을 바꿉니다. `LC-logo.png` 사용자 지정 파일이 있는 파일 `LC-logo.png` 파일.
+1. 배경을 변경하려면 기본값을 바꿉니다. `Landing_bg.jpeg` 사용자 지정 파일이 있는 파일 `Landing_bg.jpeg`파일.
 1. Windows 장치에서 AEM Forms 앱을 빌드하고 실행합니다.
 
 ## 앱 메뉴에서 로고 사용자 지정 {#customizing_images_on_the_login_page-1}
 
-AEM Forms 앱에 로그인하고 메뉴 단추를 탭하면 메뉴 위에 로고가 표시됩니다. 기본 로고를 사용자 정의하려면 다음 단계를 수행합니다.
+AEM Forms 앱에 로그인하고 메뉴 버튼을 탭하면 메뉴 위에 로고가 표시됩니다. 기본 로고를 사용자 지정하려면 다음 단계를 수행하십시오.
 
 **시작하기 전**
 
@@ -204,24 +204,24 @@ AEM Forms 앱에 로그인하고 메뉴 단추를 탭하면 메뉴 위에 로고
 
 **Xcode를 사용하여 로그인 페이지에서 이미지를 사용자 지정하려면**
 
-1. 를 엽니다. `Capture.xcodeproj` 프로젝트에 포함되어 있습니다.
+1. 를 엽니다. `Capture.xcodeproj` xcode의 프로젝트입니다.
 
-1. 로 이동합니다 `www/wsmobile/images`폴더를 입력합니다.
-1. 로고를 변경하려면 기본값을 바꾸십시오 `aem_icon.png` 사용자 지정 파일이 있는 파일 `aem_icon.png` 파일.
+1. 다음 위치로 이동 `www/wsmobile/images`폴더를 삭제합니다.
+1. 로고를 변경하려면 기본값을 바꿉니다. `aem_icon.png` 사용자 지정 파일이 있는 파일 `aem_icon.png` 파일.
 1. iOS 장치 또는 iOS 시뮬레이터에서 AEM Forms 앱을 빌드하고 실행합니다.
 
-### Eclipse를 사용하여 로그인 페이지에서 이미지를 사용자 지정하려면 {#to-customize-images-on-the-login-pages-using-eclipse-1}
+### Eclipse를 사용하여 로그인 페이지에서 이미지 사용자 정의하기 {#to-customize-images-on-the-login-pages-using-eclipse-1}
 
 1. Eclipse에서 Android 프로젝트를 엽니다.
 
-1. 로 이동합니다 `assets/www/wsmobile/images`폴더를 입력합니다.
-1. 로고를 변경하려면 기본값을 바꾸십시오 `aem_icon.png` 사용자 지정 파일이 있는 파일 `aem_icon.png` 파일.
+1. 다음 위치로 이동 `assets/www/wsmobile/images`폴더를 삭제합니다.
+1. 로고를 변경하려면 기본값을 바꿉니다. `aem_icon.png` 사용자 지정 파일이 있는 파일 `aem_icon.png` 파일.
 1. Android 장치에서 AEM Forms 앱을 빌드하고 실행합니다.
 
-### Visual Studio를 사용하여 로그인 페이지에서 이미지를 사용자 정의하려면 {#to-customize-images-on-the-login-pages-using-visual-studio-1}
+### Visual Studio를 사용하여 로그인 페이지의 이미지를 사용자 지정하려면 {#to-customize-images-on-the-login-pages-using-visual-studio-1}
 
-1. 를 엽니다. `MWSWindows.sln` Visual Studio에서 프로젝트를 실행합니다.
+1. 를 엽니다. `MWSWindows.sln` visual Studio의 프로젝트입니다.
 
-1. 로 이동합니다 `MWSWindows\www\wsmobile\images`폴더를 입력합니다.
-1. 로고를 변경하려면 기본값을 바꾸십시오 `aem_icon.png` 사용자 지정 파일이 있는 파일 `aem_icon.png` 파일.
+1. 다음 위치로 이동 `MWSWindows\www\wsmobile\images`폴더를 삭제합니다.
+1. 로고를 변경하려면 기본값을 바꿉니다. `aem_icon.png` 사용자 지정 파일이 있는 파일 `aem_icon.png` 파일.
 1. Windows 장치에서 AEM Forms 앱을 빌드하고 실행합니다.

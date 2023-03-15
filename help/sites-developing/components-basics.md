@@ -13,8 +13,8 @@ legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4948'
+ht-degree: 1%
 
 ---
 
@@ -79,7 +79,7 @@ HTL과 JSP는 클래식 및 터치 지원 UI 모두에 대한 구성 요소를 �
 
 >[!NOTE]
 >
->예외는 Granite UI Foundation 양식 필드(대화 상자에서 사용됨)입니다. JSP를 사용해야 합니다.
+>예외는 Granite UI Foundation 양식 필드(대화 상자에 사용됨)입니다. JSP를 사용해야 합니다.
 
 ### 고유한 구성 요소 개발 {#developing-your-own-components}
 

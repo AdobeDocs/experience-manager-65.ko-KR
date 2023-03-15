@@ -1,7 +1,7 @@
 ---
-title: 경로 작업에 사용되는 이미지 사용자 지정
+title: 경로 작업에 사용된 이미지 사용자 지정
 seo-title: Customize images used in route actions
-description: AEM Forms 작업 영역에서 경로 작업에 사용되는 이미지를 사용자 지정하는 방법
+description: AEM Forms 작업 영역 LiveCycle에서 경로 작업에 사용되는 이미지를 사용자 지정하는 방법.
 seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 ---
 
-# 경로 작업에 사용되는 이미지 사용자 지정 {#customize-images-used-in-route-actions}
+# 경로 작업에 사용된 이미지 사용자 지정 {#customize-images-used-in-route-actions}
 
-경로 작업에 사용되는 이미지를 사용자 지정하려면 [사용자 지정의 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md) 다음에 이 문서에 설명된 단계를 따릅니다.
+경로 작업에 사용되는 이미지를 사용자 정의하려면 다음에 설명된 단계를 수행합니다 [사용자 지정의 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md) 이 문서에 설명된 단계를 따릅니다.
 
-## 경로 지정 작업에 대한 이미지 {#images-for-route-actions}
+## 경로 작업에 대한 이미지 {#images-for-route-actions}
 
-1. CSS에서 이미지를 정의하는 스타일을 새 경로 작업의 다음 위치에 추가합니다.
+1. CSS의 이미지를 정의하는 스타일을 새 경로 작업의 다음 위치에 추가합니다.
 
    `/apps/ws/css/newStyle.css`
 
-   예: 새 스타일을 추가합니다. `myStyle1`아래에 표시된 대로 이미지 파일을 업로드합니다 `myStyleIcon1.png` 변환 후 `/apps/ws/image`WebDAV 클라이언트를 사용하는 폴더입니다.
+   예: 라는 새 스타일 추가 `myStyle1`아래 그림과 같이 이미지 파일을 업로드합니다 `myStyleIcon1.png` (으)로 `/apps/ws/image`WebDAV 클라이언트를 사용하는 폴더입니다.
 
    >[!NOTE]
    >
@@ -34,7 +34,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >경로 작업 이름과 같도록 스타일 이름을 사용하는 것이 좋습니다.
+   >스타일 이름을 경로 작업 이름과 동일하게 사용하십시오.
 
    ```css
    .myStyle1{
@@ -46,11 +46,11 @@ ht-degree: 0%
 
 ## 작업 목록 작업 작업 팝업 {#task-list-task-action-popup}
 
-1. 작업 목록 작업 팝업 만들기 [AEM Forms 작업 공간 코드 작성](introduction-customizing-html-workspace.md#building-html-workspace-code). 개발 패키지를 사용해야 합니다.
+1. 작업 목록 작업 팝업을 만듭니다. 다음을 참조하십시오. [AEM Forms 작업 공간 코드 작성](introduction-customizing-html-workspace.md#building-html-workspace-code). 개발 패키지를 사용해야 합니다.
 
-1. 복사 `/libs/ws/js/runtime/templates/task.html` to `/apps/ws/js/runtime/templates/task.html`.
+1. 복사 `/libs/ws/js/runtime/templates/task.html` 끝 `/apps/ws/js/runtime/templates/task.html`.
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 동일한 경우 다음 코드를에서 수정합니다 `/apps/ws/js/runtime/templates/task.html`:
+1. CSS 스타일의 이름이 서버에서 들어오는 경로 작업 이름과 같으면 다음 코드를에서 수정합니다 `/apps/ws/js/runtime/templates/task.html`:
 
    ```jsp
    <%if(routeList == null){%>
@@ -80,7 +80,7 @@ ht-degree: 0%
                <%}%>
    ```
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 다른 경우 다음 코드를에서 수정합니다. `/apps/ws/js/runtime/templates/task.html`. 이렇게 하면 `if-else` 스타일을 경로 작업 이름과 매핑할 서블릿 조건.
+1. CSS 스타일의 이름이 서버에서 들어오는 경로 작업 이름과 다른 경우 `/apps/ws/js/runtime/templates/task.html`. 이 옵션은 `if-else` 스타일을 경로 작업 이름과 매핑하는 서블릿 조건
 
 ```jsp
 <%if(routeList == null){%>
@@ -118,9 +118,9 @@ To
 
 ## 작업 세부 사항 작업 작업 팝업 {#task-details-task-action-popup}
 
-1. 복사 `/libs/ws/js/runtime/templates/taskdetails.html` to `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. 복사 `/libs/ws/js/runtime/templates/taskdetails.html` 끝 `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 동일한 경우 다음 코드를에서 수정합니다 `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. CSS 스타일의 이름이 서버에서 들어오는 경로 작업 이름과 같으면 다음 코드를에서 수정합니다 `/apps/ws/js/runtime/templates/taskdetails.html`:
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -140,7 +140,7 @@ To
                        <%}%>
    ```
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 다른 경우 다음 코드를에서 수정합니다. `/apps/ws/js/runtime/templates/taskdetails.html`. 이렇게 하면 `if-else` 스타일을 경로 작업 이름과 매핑할 서블릿 조건.
+1. CSS 스타일의 이름이 서버에서 들어오는 경로 작업 이름과 다른 경우 `/apps/ws/js/runtime/templates/taskdetails.html`. 다음을 추가합니다. `if-else` 스타일을 경로 작업 이름과 매핑하는 서블릿 조건
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -168,8 +168,8 @@ To
                <%}%>
    ```
 
-1. 열기 `/apps/ws/js/registry.js` 를 편집하려면 다음 텍스트를 찾습니다.
+1. 열기 `/apps/ws/js/registry.js` 를 편집하고 다음 텍스트를 찾습니다.
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
-1. 텍스트를 다음으로 바꿉니다.
+1. 텍스트를 다음과 같이 바꿉니다.
    `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`

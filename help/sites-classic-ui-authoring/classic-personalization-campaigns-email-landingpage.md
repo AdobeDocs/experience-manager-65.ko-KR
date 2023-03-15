@@ -32,7 +32,7 @@ ht-degree: 92%
 >[!NOTE]
 >
 >Adobe는 이 기능(리드 및 목록 관리)을 추가로 개선할 계획이 없습니다.
->활용 [Adobe Campaign과 AEM 통합](/help/sites-administering/campaign.md).
+>권장 사항은 [Adobe Campaign 및 AEM에 통합](/help/sites-administering/campaign.md).
 
 ## 뉴스레터 목록 만들기 {#creating-a-list-for-the-newsletter}
 
@@ -58,7 +58,7 @@ MCM에서 사람들이 가입할 수 있는 **Geometrixx 뉴스레터**&#x200B;�
 
 1. 양식 구성 요소에서 **편집**&#x200B;을 클릭하여 양식이 감사 인사 페이지로 이동하도록 구성합니다([감사 인사 페이지 만들기](#creating-a-thank-you-page) 참조).
 
-   ![dc_formstart_confirm](assets/dc_formstart_thankyou.png)
+   ![dc_formstart_thankyou](assets/dc_formstart_thankyou.png)
 
 1. 양식 작업(양식을 전송할 때 발생하는 작업)을 설정하고 그룹을 구성하여 등록한 사용자를 앞에서 만든 목록(예: geometrixx-newsletter)에 지정합니다.
 
@@ -70,7 +70,7 @@ MCM에서 사람들이 가입할 수 있는 **Geometrixx 뉴스레터**&#x200B;�
 
 요청을 전송하면 사용자에게 **감사 인사** 페이지가 표시된 후 이메일이 발송됩니다. 이 감사 인사 페이지가 만들어진 위치는 /content/geometrixx/kr/toolbar/newsletter/thank_you입니다.
 
-![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
+![mcm_newsletter_thankyupage](assets/mcm_newsletter_thankyoupage.png)
 
 ### 티저 추가 {#adding-teasers}
 
@@ -80,7 +80,7 @@ MCM에서 사람들이 가입할 수 있는 **Geometrixx 뉴스레터**&#x200B;�
 
 1. 등록 선물에 대한 Teaser 단락을 만듭니다. 전략으로 **처음**&#x200B;을 선택하고 등록 시 증정되는 선물에 대한 텍스트를 포함합니다.
 
-   ![dc_teaser_confirm](assets/dc_teaser_thankyou.png)
+   ![dc_teaser_thankyou](assets/dc_teaser_thankyou.png)
 
 1. 감사 인사 페이지에 티저 단락을 만듭니다. 전략으로 **처음**&#x200B;을 선택하고 선물이 배송되었다는 텍스트를 포함합니다.
 

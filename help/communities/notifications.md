@@ -100,7 +100,7 @@ AEM Communities에서는 로그인한 커뮤니티 구성원에게 관심 이벤
 
 이메일 채널은 기본적으로 꺼져 있습니다.
 
-![알림2](assets/notifications2.png)
+![notifications2](assets/notifications2.png)
 
 구성원에 의해 설정될 수 있지만 구성된 이메일에 따라 다릅니다.
 
@@ -114,13 +114,13 @@ A [마법사가 만든 커뮤니티 사이트](/help/communities/sites-console.m
 
 게시된 사이트를 방문할 때 `Notifications` 링크에 구성원의 모든 알림이 표시됩니다.
 
-![알림4](assets/notifications4.png)
+![notifications4](assets/notifications4.png)
 
 ### 이메일 알림 {#email-notifications}
 
 이메일 채널이 활성화되면 구성원은 웹의 컨텐츠에 대한 링크가 포함된 이메일을 수신하게 됩니다.
 
-![알림5](assets/notifications5.png)
+![notifications5](assets/notifications5.png)
 
 ## 이메일 알림 사용자 지정 {#customize-email-notifications}
 

@@ -86,7 +86,7 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 옵트인할 
 
 자세한 내용은 [AEM 업그레이드 이유 이해하기](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) 에서는 최신 버전의 Adobe Experience Manager으로 업그레이드하려는 고객을 위한 주요 기능에 대한 높은 수준의 분류를 설명합니다.
 
-## 에셋 {#assets}
+## Assets {#assets}
 
 ### MP4 파일을 업로드하는 동안(예를 들어 드래그 앤 드롭 방법 사용) 자산 워크플로우가 반복되는 이유는 무엇입니까? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 

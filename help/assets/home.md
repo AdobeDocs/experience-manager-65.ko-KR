@@ -8,7 +8,7 @@ exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
 source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 66%
 
 Experience Manager에서 디지털 자산을 생성, 관리, 처리 및 배포할 수 있습니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산을 사용하는 방법에 대해 설명합니다.
 
-## 키 [!DNL Experience Manager] 문서
+## 주요 [!DNL Experience Manager] 문서
 
 * [Experience Manager 6.5 릴리스 노트](/help/release-notes/home.md)
 * [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)

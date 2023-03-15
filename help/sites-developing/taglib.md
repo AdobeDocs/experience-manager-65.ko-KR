@@ -599,7 +599,7 @@ Sling 태그 라이브러리에는 유용한 Sling 함수가 포함되어 있습
 
 * 스크립트에 대한 편의 메서드를 포함하는 SlingScriptHelper 개체이며, 주로 이 응답(예: header html 코드 조각)과 sling.getService(foo.bar.Service.class)를 포함하여 Sling에서 사용할 수 있는 OSGi 서비스를 검색합니다(스크립팅 언어에 따라 클래스 표기법).
 
-**리소스**
+**resource**
 
 * 요청의 URL에 따라 처리할 현재 Resource 개체입니다. slingRequest.getResource()와 동일합니다.
 

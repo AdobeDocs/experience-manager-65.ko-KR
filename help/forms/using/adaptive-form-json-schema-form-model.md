@@ -425,7 +425,7 @@ aem:afproperties 속성을 사용하여 적응형 양식 구성 요소에 대한
    <td> </td>
   </tr>
   <tr>
-   <td>라디오 단추</td>
+   <td>라디오 버튼</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -513,7 +513,7 @@ aem:afproperties 속성을 사용하여 적응형 양식 구성 요소에 대한
    <td> </td>
   </tr>
   <tr>
-   <td>날짜 선택</td>
+   <td>날짜 선택기</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -642,7 +642,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul>
      <li>숫자 상자</li>
      <li>숫자 스텝퍼<br /> </li>
-     <li>날짜 선택</li>
+     <li>날짜 선택기</li>
     </ul> </td>
   </tr>
   <tr>
@@ -653,7 +653,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul>
      <li>숫자 상자</li>
      <li>숫자 스텝퍼</li>
-     <li>날짜 선택</li>
+     <li>날짜 선택기</li>
     </ul> </td>
   </tr>
   <tr>
@@ -664,7 +664,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul>
      <li>숫자 상자</li>
      <li>숫자 스텝퍼</li>
-     <li>날짜 선택</li>
+     <li>날짜 선택기</li>
     </ul> </td>
   </tr>
   <tr>
@@ -675,7 +675,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul>
      <li>숫자 상자</li>
      <li>숫자 스텝퍼</li>
-     <li>날짜 선택</li>
+     <li>날짜 선택기</li>
     </ul> </td>
   </tr>
   <tr>

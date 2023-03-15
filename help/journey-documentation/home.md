@@ -87,7 +87,7 @@ AEM 설명서 여정의 주요 목표는 AEM을 처음 사용하는 독자들이
 |---|---|
 | [Headless 개발자 여정](/help/journey-headless/developer/overview.md) | 여기에서 AEM이 Headless 개발 모델을 지원하는 방법 및 계획 수립에서 구현, 라이브 실행까지 프로젝트를 시작하는 방법을 살펴보십시오. |
 | [Headless 제작 여정](/help/journey-headless/author/overview.md) | AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 귀하의 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오. |
-| [Headless 설계 여정](/help/journey-headless/architect/overview.md) | Adobe Experience Manager의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법에 대해 소개합니다. |
+| [Headless 설계 여정](/help/journey-headless/architect/overview.md) | 여기에서 Adobe Experience Manager의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아보십시오. |
 | [Headless 번역 여정](/help/journey-headless/translation/overview.md) | 여기에서 AEM에서 Headless 번역 프로젝트를 설정하고 관리하는 방법을 살펴보십시오. |
 
 <!--

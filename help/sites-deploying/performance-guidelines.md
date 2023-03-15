@@ -60,7 +60,7 @@ ht-degree: 6%
    <td><p>대상</p> </td>
   </tr>
   <tr>
-   <td><p>에셋</p> </td>
+   <td><p>Assets</p> </td>
    <td><p>Publish-HA</p> </td>
    <td><p>Solaris</p> </td>
    <td><p>WebLogic</p> </td>
@@ -127,7 +127,7 @@ ht-degree: 6%
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
-   <td><p>에셋</p> </td>
+   <td><p>Assets</p> </td>
   </tr>
   <tr>
    <td><p>상거래</p> </td>
@@ -200,7 +200,7 @@ ht-degree: 6%
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>스크린</p> </td>
+   <td><p>Screens</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -584,7 +584,7 @@ MongoMK를 사용할 때 좋은 성능을 설정하려면 다음 아키텍처에
   <tr>
    <td>DocumentNodeStoreService</td>
    <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td>
-   <td><p>2048년</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4. 4</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
+   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
    <td><p>캐시의 기본 크기가 256MB로 설정되어 있습니다.</p> <p>캐시 무효화를 수행하는 데 걸리는 시간에 영향을 줍니다.</p> </td>
   </tr>
   <tr>
@@ -609,11 +609,11 @@ MongoMK를 사용할 때 좋은 성능을 설정하려면 다음 아키텍처에
 | CPU/코어 | Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8개 코어 | Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8개 코어 |
 | RAM | 32GB | 32GB |
 | 디스크 | 마그네틱 - 1k IOPS 이상 | 마그네틱 - 1k IOPS 이상 |
-| Java | Oracle JRE 버전 8 | 해당 없음 |
-| JVM Heap | 16GB | 해당 없음 |
+| Java | Oracle JRE 버전 8 | N/A |
+| JVM Heap | 16GB | N/A |
 | 제품 | AEM 6.2 | MongoDB 3.2 WiredTiger |
-| 노데스토르 | MongoMK | 해당 없음 |
-| 데이터 저장소 | 파일 DS | 해당 없음 |
+| 노데스토르 | MongoMK | N/A |
+| 데이터 저장소 | 파일 DS | N/A |
 | 시나리오 | 단일 제품: 자산 / 30개의 동시 스레드 | 단일 제품: 자산 / 30개의 동시 스레드 |
 
 ### 성능 벤치마크 결과 {#performance-benchmark-results-1}
@@ -699,13 +699,13 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
   <tr>
    <td>Java</td>
    <td>Oracle JRE 버전 8</td>
-   <td>해당 없음</td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
    <td>JVM Heap16GB</td>
    <td>16GB</td>
-   <td>해당 없음</td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
@@ -717,13 +717,13 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
   <tr>
    <td>노데스토르</td>
    <td>TarMK 또는 MongoMK</td>
-   <td>해당 없음</td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
    <td>데이터 저장소</td>
    <td>파일 DS </td>
-   <td>해당 없음</td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
@@ -787,13 +787,13 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
    <td>Java</td>
    <td>Oracle JRE 버전 8</td>
    <td><br /> Oracle JRE 버전 8</td>
-   <td>해당 없음</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>JVM Heap16GB</td>
    <td>30GB</td>
    <td>30GB</td>
-   <td>해당 없음</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>제품 </td>
@@ -805,13 +805,13 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
    <td>노데스토르</td>
    <td>TarMK </td>
    <td>MongoMK</td>
-   <td><br /> 해당 없음</td>
+   <td><br /> N/A</td>
   </tr>
   <tr>
    <td>데이터 저장소</td>
    <td>파일 DS </td>
    <td><br /> 파일 DS</td>
-   <td><br /> 해당 없음</td>
+   <td><br /> N/A</td>
   </tr>
   <tr>
    <td>시나리오</td>

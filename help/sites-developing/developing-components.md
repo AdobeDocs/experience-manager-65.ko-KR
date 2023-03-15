@@ -14,8 +14,8 @@ legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimiz
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3477'
+ht-degree: 2%
 
 ---
 
@@ -141,7 +141,7 @@ WCM 모드에 민감한 렌더링을 사용하는 구성 요소의 경우 특별
 
    * 모든 클라우드 솔루션에서 일관된 UI 제공
    * [AEM 터치 지원 UI의 개념 - Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Coral UI 안내서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Coral UI 안내서](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Granite UI
 
@@ -269,7 +269,7 @@ newComponent (cq:Component)
 1. 필드를 주어진 CSS 클래스( *후크*).
 1. 클라이언트 라이브러리에서 해당 CSS 클래스 이름에 연결된 JS 리스너를 정의합니다. 이렇게 하면 사용자 지정 논리 범위가 필드에만 적용되며 동일한 유형의 다른 필드에 영향을 주지 않습니다.
 
-이를 위해서는 상호 작용할 기본 위젯 라이브러리에 대해 알고 있어야 합니다. 자세한 내용은 [Coral UI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 반응할 이벤트를 식별하기 위해 사용됩니다. 이는 이전에 ExtJS를 사용하여 수행해야 했던 프로세스와 매우 유사합니다. 주어진 위젯의 설명서 페이지를 찾은 다음 해당 이벤트 API의 세부 사항을 확인합니다.
+이를 위해서는 상호 작용할 기본 위젯 라이브러리에 대해 알고 있어야 합니다. 자세한 내용은 [Coral UI 설명서](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 반응할 이벤트를 식별하기 위해 사용됩니다. 이는 이전에 ExtJS를 사용하여 수행해야 했던 프로세스와 매우 유사합니다. 주어진 위젯의 설명서 페이지를 찾은 다음 해당 이벤트 API의 세부 사항을 확인합니다.
 
 예를 보려면 다음을 참조하십시오.
 

@@ -8,7 +8,7 @@ role: Developer, Architect
 source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 # AEM Headless 여정 {#headless-journey}
 
 + [AEM Headless 여정](/help/journey-headless/home.md)
-+ AEM Headless Developer 여정 {#developer}
++ AEM Headless 개발자 여정 {#developer}
    + [AEM Headless 이해](developer/overview.md)
    + [CMS Headless 개발에 대해 알아보기](developer/learn-about.md)
    + [AEM 헤드리스 시작하기](developer/getting-started.md)
@@ -32,13 +32,13 @@ ht-degree: 94%
    + [AEM을 통한 Headless용 콘텐츠 모델링 - 소개](architect/introduction.md)
    + [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항 알아보기](architect/basics.md)
    + [AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기](architect/model-structure.md)
-+ AEM Headless Content Author 여정 {#author}
++ AEM Headless 콘텐츠 작성자 여정 {#author}
    + [AEM Headless 콘텐츠 작성 여정 - 개요](author/overview.md)
    + [AEM을 통한 Headless 작성 - 소개](author/introduction.md)
    + [AEM을 통한 Headless 작성 기본 사항 - 소개](author/basics.md)
    + [콘텐츠 조각의 참조 사용에 대해 알아보기](author/references.md)
    + [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](author/metadata-tagging.md)
-+ AEM 헤드리스 번역 여정 {#translation}
++ AEM Headless 번역 여정 {#translation}
    + [AEM에서의 Headless 번역 이해](translation/overview.md)
    + [AEM Headless 번역 시작하기](translation/getting-started.md)
    + [Headless 콘텐츠 및 AEM에서의 번역 방법에 대해 알아보기](translation/learn-about.md)

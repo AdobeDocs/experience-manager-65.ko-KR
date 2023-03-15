@@ -25,12 +25,12 @@ ht-degree: 70%
 
 >[!NOTE]
 >
->론치 이면의 이론은 아래에 자세히 설명되어 있습니다 [론치](/help/sites-authoring/launches.md) 를 참조하십시오.
+>발사 이론은 아래에 자세히 설명되어 있습니다. [론치](/help/sites-authoring/launches.md) 를 참조하십시오.
 >
->클래식 UI에서 론치를 사용하는 것과 관련된 정보는 다음 설명서와 함께 제공됩니다 [론치 만들기](/help/sites-classic-ui-authoring/classic-launches-creating.md), [론치 편집](/help/sites-classic-ui-authoring/classic-launches-editing.md), 및 [론치 홍보](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>클래식 UI에서 론치 사용에 대한 정보는 다음 설명서에서 와 함께 확인할 수 있습니다. [론치 만들기](/help/sites-classic-ui-authoring/classic-launches-creating.md), [론치 편집](/help/sites-classic-ui-authoring/classic-launches-editing.md), 및 [론치 홍보](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >클래식 UI에서는 하나의 론치에 대해 여러 소스 분기가 사용될 수 없습니다.
 
-론치 콘솔은 [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+론치 콘솔은 를 사용하여 직접 액세스할 수 있습니다. [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)

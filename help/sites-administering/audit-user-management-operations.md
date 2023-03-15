@@ -23,21 +23,21 @@ ht-degree: 1%
 
 ## 소개 {#introduction}
 
-AEM에서는 권한 변경 사항을 로그하여 나중에 감사할 수 있도록 하는 기능을 도입했습니다.
+AEM은 나중에 감사할 수 있도록 권한 변경 사항을 기록하는 기능을 도입했습니다.
 
-개선 사항으로 사용자 권한 및 그룹 지정에 대한 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 감사할 수 있습니다. 구체적으로 설명하면 다음과 같이 기록됩니다.
+향상된 기능을 통해 사용자의 권한 및 그룹 할당에 대한 감사 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 수행할 수 있습니다. 특히 다음과 같이 기록됩니다.
 
-* 새 사용자 만들기
-* 그룹에 추가되는 사용자
+* 새 사용자를 만드는 중
+* 사용자를 그룹에 추가 중입니다.
 * 기존 사용자 또는 그룹의 권한 변경
 
-기본적으로 항목이 `error.log` 파일. 모니터링을 쉽게 하려면 별도의 로그 파일로 리디렉션하는 것이 좋습니다. 아래 단락에서 이 작업을 수행하는 방법에 대한 자세한 정보를 제공합니다.
+기본적으로 항목이 `error.log` 파일. 모니터링을 더 쉽게 수행하려면 별도의 로그 파일로 리디렉션하는 것이 좋습니다. 아래 단락에서 이 작업을 수행하는 방법에 대한 자세한 정보입니다.
 
-## 출력을 별도의 로그 파일로 리디렉션 {#redirecting-the-output-to-a-separate-log-file}
+## 출력을 별도의 로그 파일로 리디렉션합니다. {#redirecting-the-output-to-a-separate-log-file}
 
-로깅 출력을 별도의 로그 파일로 리디렉션하려면 새 로그를 만들어야 합니다 **Apache Sling Logging Logger** 구성. 우리는 `useraudit.log` 를 아래 예에서 별도의 파일 이름으로 지정합니다.
+로깅 출력을 별도의 로그 파일로 리디렉션하려면 새 파일을 만들어야 합니다 **Apache Sling 로깅 로거** 구성. 다음을 사용합니다. `useraudit.log` (아래 예에서 개별 파일의 이름)
 
-1. 로 이동하여 웹 콘솔로 이동합니다. *https://serveraddress:serverport/system/console/configMgr*
+1. 을 찾아 웹 콘솔로 이동 *https://serveraddress:serverport/system/console/configMgr*
 1. 검색 대상 **Apache Sling 로깅 로거 구성**. 그런 다음 항목 오른쪽의 &quot;+&quot;를 눌러 새 공장 구성을 만듭니다.
 1. 다음 구성을 만듭니다.
 
@@ -46,11 +46,11 @@ AEM에서는 권한 변경 사항을 로그하여 나중에 감사할 수 있도
    * **메시지 패턴:** 수준 기본값
    * **로거:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   두 로거를 모두 **로거** 필드 이름을 입력한 다음 &quot;+&quot; 버튼을 누르고 두 번째 로거의 이름을 입력하여 다른 필드를 만들어야 합니다.
+   두 로거를 모두 **Logger** 필드에서는 첫 번째 로거의 이름을 입력한 다음 &quot;+&quot; 단추를 누르고 두 번째 로거의 이름을 입력하여 다른 필드를 만들어야 합니다.
 
 ## 출력 예 {#example-output}
 
-올바르게 구성된 경우 출력은 다음과 같습니다.
+올바르게 구성된 경우 출력은 다음과 같아야 합니다.
 
 ```xml
 19.05.2017 15:15:08.933 *INFO* [0:0:0:0:0:0:0:1 [1495196108932] POST /libs/granite/security/post/authorizables.html HTTP/1.1] com.adobe.granite.security.user.internal.servlets.AuthorizableServlet Create Group 'group1' operation initiated by User 'admin' (administrator)
@@ -84,7 +84,7 @@ AEM에서는 권한 변경 사항을 로그하여 나중에 감사할 수 있도
 
 ## 클래식 UI {#classic-ui}
 
-클래식 UI에서 사용자 추가 및 삭제와 관련된 감사 로그에 기록된 CRUD 작업에 대한 정보는 영향을 받는 사용자의 ID와 변경된 사항이 발생한 시기로 제한됩니다.
+클래식 UI에서, 사용자 추가 및 삭제와 관련하여 감사 로그에 기록된 CRUD 작업에 대한 정보는 영향을 받은 사용자 ID 및 변경된 시간으로 제한됩니다.
 
 예:
 

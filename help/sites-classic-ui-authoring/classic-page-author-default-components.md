@@ -34,7 +34,7 @@ ht-degree: 92%
 
 * [페이지 작성용 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   표준 페이지 컨텐츠를 만드는 데 사용되는 구성 요소는 주로 그룹에 포함됩니다 **일반**, **열** 및 **Forms**.
+   표준 페이지 콘텐츠를 만드는 데 사용되는 구성 요소는 주로 그룹에 포함됩니다 **일반**, **열** 및 **Forms**.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 

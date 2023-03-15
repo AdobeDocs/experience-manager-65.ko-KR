@@ -206,7 +206,7 @@ Experience Manager을 웹 컨텐츠 관리 시스템으로 사용하는 경우 3
 
 1. 사이드 패널에서 더하기 기호 아이콘을 선택하여 **[!UICONTROL 구성 요소]** 목록.
 
-   ![3d media-component-drag-drop](/help/assets/assets-dm/3d-assets-filter.png)
+   ![3d-media-component-drag-drop](/help/assets/assets-dm/3d-assets-filter.png)
 
 1. 을(를) 드래그합니다. **[!UICONTROL 3D 미디어]** 구성 요소 **[!UICONTROL 구성 요소]** 3D 뷰어를 표시할 페이지의 위치로 표시합니다.
 

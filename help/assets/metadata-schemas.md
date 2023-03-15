@@ -233,7 +233,7 @@ The schema editor lets you add or delete a tab. The default schema form includes
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. 아래 **[!UICONTROL 요구 사항]**&#x200B;을(를) 선택하고 을(를) 선택합니다. **[!UICONTROL 필수, 새 규칙 기반]** 선택 사항입니다.
-1. 클릭 **[!UICONTROL 규칙 추가]** 그리고 **[!UICONTROL 자산 유형]** 종속성을 만드는 필드입니다. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. 클릭 **[!UICONTROL 완료]** 변경 사항을 저장하려면 을 클릭합니다.
+1. 클릭 **[!UICONTROL 규칙 추가]** 그리고 **[!UICONTROL 자산 유형]** 종속성을 만드는 필드입니다. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. **[!UICONTROL 완료]**&#x200B;를 클릭하여 변경 내용을 저장합니다.
 
    ![define_rule](assets/define_rule.png)
 
@@ -241,9 +241,9 @@ The schema editor lets you add or delete a tab. The default schema form includes
    >
    >수동으로 사전 정의된 값이 있는 드롭다운을 규칙과 함께 사용할 수 있습니다. 구성된 JSON 경로가 있는 드롭다운 메뉴는 사전 정의된 값을 사용하여 조건을 적용하는 규칙과 함께 사용할 수 없습니다. 런타임 시 JSON에서 값이 로드되는 경우 사전 정의된 규칙을 적용할 수 없습니다.
 
-1. 아래 **[!UICONTROL 가시성]**&#x200B;을(를) 선택하고 을(를) 선택합니다. **[!UICONTROL 표시, 새 규칙에 따라]** 선택 사항입니다.
+1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
 
-1. 클릭 **[!UICONTROL 규칙 추가]** 그리고 **[!UICONTROL 자산 유형]** 종속성을 만드는 필드입니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 **[!UICONTROL 비디오]**. 클릭 **[!UICONTROL 완료]** 변경 사항을 저장하려면 을 클릭합니다.
+1. 클릭 **[!UICONTROL 규칙 추가]** 그리고 **[!UICONTROL 자산 유형]** 종속성을 만드는 필드입니다. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. **[!UICONTROL 완료]**&#x200B;를 클릭하여 변경 내용을 저장합니다.
 
    ![define_visityrule](assets/define_visibilityrule.png)
 
@@ -360,7 +360,7 @@ Create a form under the appropriate form type. For example, to add a template fo
 >
 >메타데이터 필드는 다른 필드의 값을 기준으로 필수로 정의할 수 있습니다. 카드 보기에서 [!DNL Experience Manager] 이러한 필수 메타데이터 필드에 대해 누락된 메타데이터에 대한 경고 메시지가 표시되지 않습니다.
 
-1. in [!DNL Experience Manager] 인터페이스, 탐색 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**. 다음 **[!UICONTROL 메타데이터 스키마 Forms]** 페이지가 표시됩니다.
+1. in [!DNL Experience Manager] 인터페이스, 탐색 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. 기본 메타데이터 양식을 사용자 지정 양식으로 저장합니다. 예를 들어 다른 이름으로 저장합니다 `my_default`.
 
 1. 사용자 지정 양식을 편집합니다. 필수 필드를 추가합니다. 예를 들어 **[!UICONTROL 카테고리]** 필드를 필수 필드로 만듭니다.

@@ -1,7 +1,7 @@
 ---
-title: 테마 사용자 지정
+title: 테마 맞춤화
 seo-title: Theme Customization
-description: AEM Forms 앱의 테마를 사용자 지정하는 방법.
+description: AEM Forms 앱의 테마를 맞춤화하는 방법
 seo-description: How to customize the theme of your AEM Forms app.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
@@ -17,27 +17,27 @@ ht-degree: 0%
 
 ---
 
-# 테마 사용자 지정 {#theme-customization}
+# 테마 맞춤화 {#theme-customization}
 
-HTML 코드와 CSS 파일을 사용자 지정하여 AEM Forms 앱에 대해 고유한 조직별 모양과 느낌을 제공할 수 있습니다. 예를 들어 작업의 배경색 및 높이나 시작점을 변경할 수 있습니다. 다음 예에서는 변경에 대한 지침을 제공합니다.
+HTML 코드 및 CSS 파일을 사용자 정의하여 AEM Forms 앱에 고유한 조직별 모양과 느낌을 제공할 수 있습니다. 예를 들어 작업 또는 시작점의 배경색 및 높이를 변경할 수 있습니다. 다음 예에서는 변경 지침을 제공합니다.
 
 * 설명 대신 지침 표시
 * 표시 경로 수
-* 배경색
+* 배경 그라데이션 색상
 
 ## 단계 {#steps}
 
 1. 프로젝트를 엽니다.
 
-   * iOS의 경우 `Capture.xcodeproj` in Xcode
+   * iOS의 경우 를 엽니다. `Capture.xcodeproj` Xcode에서
    * Android의 경우 Eclipse에서 Android 프로젝트를 엽니다.
-   * Windows의 경우 `MWSWindows.sln` 입니다.
+   * Windows의 경우 열기 `MWSWindows.sln` Visual Studio에서.
 
 1. 템플릿 폴더로 이동합니다.
 
-   * Xcode에서 **Capture > www > mobile > js > runtime > 템플릿** 폴더를 입력합니다.
-   * Eclipse에서 **assets > www > mobile > js > runtime > 템플릿** 폴더를 입력합니다.
-   * Visual Studio에서 **MWSWindows > www > webmobile > js > runtime > templates** 폴더를 입력합니다.
+   * Xcode에서 **캡처 > www > wsmobile > js > 런타임 > 템플릿** 폴더를 삭제합니다.
+   * Eclipse에서 **assets > www > wsmobile > js > 런타임 > 템플릿** 폴더를 삭제합니다.
+   * Visual Studio에서 **MWSWindows > www > wsmobile > js > 런타임 > 템플릿** 폴더를 삭제합니다.
 
 1. 를 엽니다. `template.html` 편집할 파일입니다.
 1. 다음 문자열을 찾습니다.
@@ -64,7 +64,7 @@ HTML 코드와 CSS 파일을 사용자 지정하여 AEM Forms 앱에 대해 고�
                                    </li>
    ```
 
-1. 다음 행에 주석을 달고 파일을 저장합니다.
+1. 다음 줄을 주석 처리하고 파일을 저장합니다.
 
    ```jsp
    task.availableCommands.directCommands[1]%>">
@@ -74,13 +74,13 @@ HTML 코드와 CSS 파일을 사용자 지정하여 AEM Forms 앱에 대해 고�
 
 1. css 폴더로 이동합니다.
 
-   * Xcode에서 로 이동합니다. **캡처 > www > 모바일 > css**.
-   * Eclipse에서 **assets > www > webmobile > css**.
-   * Visual Studio에서 **MWSWindows > www > webmobile > css**.
+   * Xcode에서 다음으로 이동합니다. **Capture > www > wsmobile > css**.
+   * Eclipse에서 다음으로 이동 **assets > www > wsmobile > css**.
+   * Visual Studio에서 다음으로 이동합니다. **MWSWindows > www > wsmobile > css**.
 
 1. 를 엽니다. `_style.css` 편집할 파일입니다.
-1. 배경 이미지의 경우 `#323232` to `#fff`.
-1. 변경 내용을 저장하고 닫습니다. `_style.css` 파일.
+1. 배경 이미지의 경우 변경 `#323232` 끝 `#fff`.
+1. 변경 내용을 저장하고 닫기 `_style.css` 파일.
 1. AEM Forms 앱을 엽니다.
 
    이제 AEM Forms 앱에 설명 대신 지침이 표시됩니다.

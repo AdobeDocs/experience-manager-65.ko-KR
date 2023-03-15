@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4472da2e9aa0b45e0d5f03bfdc53a2748d82cdb3
 workflow-type: tm+mt
-source-wordcount: '5317'
+source-wordcount: '5351'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 1%
 >[!NOTE]
 >
 >단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다(예: ) _React_). [추가 정보](/help/sites-developing/spa-overview.md).
+
+>[!NOTE]
+>
+>다양한 예는 AEM과 함께 더 이상 제공되지 않으며 We.Retail으로 대체된 Geometrixx 샘플 컨텐츠를 기반으로 합니다. 문서를 참조하십시오 [We.Retail 참조 구현](/help/sites-developing/we-retail.md#we-retail-geometrixx) Geometrixx 다운로드 및 설치 방법에 대해 설명합니다.
 
 웹 페이지가 표시되는 클라이언트 뷰포트에 적용되도록 디자인합니다. 응답형 디자인을 사용하면 두 방향 모두에서 동일한 페이지를 여러 장치에 효과적으로 표시할 수 있습니다. 다음 이미지는 페이지가 뷰포트 크기 변경에 응답하는 몇 가지 방법을 보여줍니다.
 
@@ -95,12 +99,12 @@ We.Retail Media 샘플은 이 전략을 사용하여 사이트 디자인에서 �
   <tr>
    <td>style.css</td>
    <td>일반적인 스타일.</td>
-   <td>해당 없음</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>bootstrap.css</td>
    <td>twitter Bootstrap으로 정의된 일반적인 스타일</td>
-   <td>해당 없음</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>responsive-1200px.css</td>

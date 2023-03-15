@@ -41,11 +41,11 @@ ht-degree: 2%
 
 즉석 업그레이드를 수행한 경우 업그레이드된 인스턴스에 이미 자산 및 문서가 있습니다. 그러나 자산 및 문서를 사용하려면 먼저 를 설치해야 합니다 [AEMFD 호환성 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) (서신 관리 호환성 패키지 포함)
 
-그런 다음 다음을 기준으로 자산 및 문서를 업데이트해야 합니다 [마이그레이션 유틸리티 실행](#runningmigrationutility).
+그런 다음 다음을 수행하여 자산 및 문서를 업데이트해야 합니다. [마이그레이션 유틸리티 실행](#runningmigrationutility).
 
 **부재 설치 시**
 
-자산 및 문서를 사용하기 전에(새로 고친) 제대로 설치되어 있지 않은 경우 먼저 설치해야 합니다 [AEMFD 호환성 패키지](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (서신 관리 호환성 패키지 포함).
+자산 및 문서를 사용하기 전에(새로 고친) 제대로 설치되어 있지 않은 경우 먼저 설치해야 합니다 [AEMFD 호환성 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) (서신 관리 호환성 패키지 포함).
 
 그런 다음 새 설정에서 자산 패키지(zip 또는 cmp)를 가져온 다음, 다음과 같이 자산과 문서를 업데이트해야 합니다 [마이그레이션 유틸리티 실행](#runningmigrationutility). Adobe은 마이그레이션 유틸리티를 실행한 후에만 새 설정에 새 자산을 만들 것을 권장합니다.
 

@@ -7,7 +7,7 @@ exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -39,17 +39,17 @@ AEM 6.5용 AEM Commerce 추가 기능을 [소프트웨어 배포](https://experi
 
 ### 전자 상거래 시스템에 AEM 연결 {#connect}
 
-AEM은 AEM용 GraphQL 엔드포인트가 있는 모든 상거래 시스템에 연결할 수 있습니다. 이러한 종단점은 일반적으로 공개적으로 사용할 수 있거나 개별 프로젝트 설정에 따라 개인 VPN 또는 로컬 연결을 통해 연결할 수 있습니다.
+AEM은 AEM용 액세스 가능한 GraphQL 종단점이 있는 모든 상거래 시스템에 연결할 수 있습니다. 이러한 종단점은 일반적으로 공개적으로 사용할 수 있거나 개별 프로젝트 설정에 따라 개인 VPN 또는 로컬 연결을 통해 연결할 수 있습니다.
 
 선택적으로 인증을 필요로 하는 추가 CIF 기능을 사용하기 위해 인증 헤더를 제공할 수 있습니다.
 
 에서 생성한 프로젝트 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype), 및 [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia) 에 이미 포함되어 있는 [기본 구성](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) 조정해야 합니다.
 
-의 값 바꾸기 `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` ( 상거래 시스템의 GraphQL 종단점 사용). 이 구성은 OSGI 콘솔을 통해 또는 프로젝트를 통해 OSGI 구성을 배포하여 수행할 수 있습니다. 스테이징 및 프로덕션 시스템에 대한 다양한 구성은 다른 AEM 실행 모드를 사용하여 지원됩니다.
+의 값 바꾸기 `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` ( 상거래 시스템의 GraphQL 종단점 사용) 이 구성은 OSGI 콘솔을 통해 또는 프로젝트를 통해 OSGI 구성을 배포하여 수행할 수 있습니다. 스테이징 및 프로덕션 시스템에 대한 다양한 구성은 다른 AEM 실행 모드를 사용하여 지원됩니다.
 
 AEM Content and Commerce Add-On 및 CIF 핵심 구성 요소는 AEM 서버측 및 클라이언트측 연결을 모두 사용합니다. 클라이언트측 CIF 코어 구성 요소 및 CIF 추가 기능 작성 도구는 기본적으로 `/api/graphql`. 필요한 경우 CIF Cloud Service 구성을 통해 이 문제를 조정할 수 있습니다(아래 참조).
 
-CIF 추가 기능은에서 GraphQL 프록시 서블릿을 제공합니다. `/api/graphql` 선택적으로 사용할 수 있는 [지역 개발](develop.md). 프로덕션 배포의 경우 AEM Dispatcher를 통해 또는 다른 네트워크 계층(예: CDN)에서 상거래 GraphQL 종단점에 역방향 프록시를 설정하는 것이 좋습니다.
+CIF 추가 기능은에서 GraphQL 프록시 서블릿을 제공합니다. `/api/graphql` 선택적으로 사용할 수 있는 [지역 개발](develop.md). 프로덕션 배포의 경우 AEM Dispatcher를 통해 또는 다른 네트워크 레이어(예: CDN)에서 상거래 GraphQL 종단점에 역방향 프록시를 설정하는 것이 좋습니다.
 
 ## 저장소 및 카탈로그 구성 {#catalog}
 
@@ -67,9 +67,9 @@ CIF 추가 기능은에서 GraphQL 프록시 서블릿을 제공합니다. `/api
 
 다음 속성을 구성할 수 있습니다.
 
-- GraphQL 클라이언트 - 상거래 백엔드 통신을 위해 구성된 GraphQL 클라이언트를 선택합니다. 이 기능은 일반적으로 기본적으로 유지됩니다.
+- GraphQL 클라이언트 - 상거래 백엔드 통신용으로 구성된 GraphQL 클라이언트를 선택합니다. 이 기능은 일반적으로 기본적으로 유지됩니다.
 - 저장소 보기 - 저장소 보기 식별자입니다. 비어 있으면 기본 저장소 보기가 사용됩니다.
-- GraphQL 프록시 경로 - AEM의 URL 경로 GraphQL 프록시가 상거래 백엔드 GraphQL 끝점에 요청을 프록시할 때 사용합니다.
+- GraphQL 프록시 경로 - AEM의 URL 경로 GraphQL 프록시는 상거래 백엔드 GraphQL 종단점에 대한 요청을 프록시하는 데 사용됩니다.
 
    >[!NOTE]
    >

@@ -22,22 +22,22 @@ ht-degree: 65%
 
 >[!CAUTION]
 >
->이 페이지의 일부 기능을 사용하려면 AEM 6.5.3.0 이상을 적용해야 합니다.
+>이 페이지의 일부 기능을 사용하려면 AEM 6.5.3.0(또는 이상)을 적용해야 합니다.
 >
 >6.5.3.0:
 >
->* **외부자 도메인** 이제 을(를) 선택할 수 있습니다.
-   >  **참고:** 외부자 도메인은 Target으로 전송되는 경험 조각의 컨텐츠와만 관련되며 오퍼 컨텐츠 보기와 같은 메타데이터는 연관되지 않습니다.
+>* **Externalizer 도메인** 이제 을(를) 선택할 수 있습니다.
+   >  **참고:** 외부화 도메인은 오퍼 콘텐츠로 전송되는 Target 조각의 콘텐츠에만 해당되며, 오퍼 콘텐츠 보기와 같은 메타데이터에는 해당되지 않습니다.
 >
 >6.5.2.0:
 >
 >* 경험 조각을 다음 중 하나로 내보낼 수 있습니다.
    >
    >   * 기본 작업 영역입니다.
-   >   * 클라우드 구성에 지정된 명명된 작업 공간입니다.
+   >   * 클라우드 구성에 지정된 이름이 지정된 작업 영역입니다.
    >   * **참고:** 특정 작업 공간으로 내보내려면 Adobe Target Premium이 필요합니다.
 >
->* AEM이 있어야 함 [ims를 사용하여 Adobe Target과 통합](/help/sites-administering/integration-target-ims.md).
+>* AEM은(는) 다음과 같아야 합니다. [ims를 사용하여 Adobe Target과 통합](/help/sites-administering/integration-target-ims.md).
 >
 >AEM 6.5.0.0 및 6.5.1.0:
 >
@@ -45,19 +45,19 @@ ht-degree: 65%
 >* [Adobe Target과 통합](/help/sites-administering/target.md)의 지침에 따라 Adobe Target과 AEM을 통합해야 합니다.
 
 
-내보낼 수 있습니다 [경험 조각](/help/sites-authoring/experience-fragments.md): Adobe Experience Manager(AEM)에서 만든 Adobe Target(Target)으로 이동합니다. 그런 다음 Target 활동의 오퍼로 사용하여 경험을 대규모로 테스트하고 개인화할 수 있습니다.
+내보낼 수 있습니다. [경험 조각](/help/sites-authoring/experience-fragments.md): Adobe Experience Manager(AEM)에서 만든 다음 Adobe Target(Target)로 복사합니다. 그런 다음 Target 활동의 오퍼로 사용하여 경험을 대규모로 테스트하고 개인화할 수 있습니다.
 
-Adobe Target으로 경험 조각을 내보내는 데 사용할 수 있는 세 가지 형식 옵션이 있습니다.
+경험 조각을 Adobe Target으로 내보내는 데 사용할 수 있는 세 가지 형식 옵션은 다음과 같습니다.
 
 * HTML(기본값): 웹 및 하이브리드 콘텐츠 전송 지원
 * JSON: 헤드리스 콘텐츠 전송 지원
 * HTML 및 JSON
 
-AEM 경험 구성요소를 Adobe Target의 기본 작업 공간으로 내보내거나 Adobe Target의 사용자 지정 작업 공간으로 내보낼 수 있습니다. 이 작업은 Adobe Developer 콘솔을 사용하여 수행됩니다. 이 경우 AEM이 [ims를 사용하여 Adobe Target과 통합](/help/sites-administering/integration-target-ims.md).
+AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Target의 사용자 정의 작업 영역으로 내보낼 수 있습니다. 이 작업은 Adobe Developer 콘솔을 사용하여 수행되며, AEM은 다음과 같아야 합니다. [ims를 사용하여 Adobe Target과 통합](/help/sites-administering/integration-target-ims.md).
 
 >[!NOTE]
 >
->Adobe Target 작업 영역은 Adobe Target 자체에 존재하지 않습니다. Adobe IMS(Identity Management 시스템)에서 정의 및 관리된 다음, Adobe Developer 콘솔의 통합을 사용하여 솔루션 간에 사용하도록 선택됩니다.
+>Adobe Target 작업 영역은 Adobe Target 자체에 존재하지 않습니다. Adobe IMS(Identity Management System)에서 정의되고 관리된 다음 Adobe Developer 콘솔의 통합을 사용하여 솔루션 전체에 걸쳐 사용하도록 선택됩니다.
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ AEM 경험 구성요소를 Adobe Target의 기본 작업 공간으로 내보내�
 
 다음과 같은 다양한 작업을 수행해야 합니다.
 
-1. 당신은 [ims를 사용하여 AEM과 Adobe Target 통합.](/help/sites-administering/integration-target-ims.md).
+1. 다음을 수행해야 합니다. [ims를 사용하여 AEM과 Adobe Target 통합](/help/sites-administering/integration-target-ims.md).
 2. AEM 작성자 인스턴스에서 경험 조각을 내보내므로, 경험 조각 내의 모든 참조가 웹 전송에 대해 외부화되도록 작성자 인스턴스에서 [AEM 링크 외부화를 구성](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)해야 합니다.
 
    >[!NOTE]
@@ -213,13 +213,13 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
 
 
 
-## Target으로 내보낸 경험 조각에서 ClientLibs 제거 {#removing-clientlibs-from-fragments-exported-target}
+## Target으로 내보낸 경험 조각에서 ClientLib 제거 {#removing-clientlibs-from-fragments-exported-target}
 
-경험 조각은 전체 html 태그와 필요한 모든 클라이언트 라이브러리(CSS/JS)를 포함하여 경험 조각 컨텐츠 작성자가 만든 것처럼 조각을 정확히 렌더링합니다. 이것은 디자인이 있습니다.
+경험 조각에는 전체 html 태그와 경험 조각 콘텐츠 작성자가 만든 대로 조각을 렌더링하는 데 필요한 모든 클라이언트 라이브러리(CSS/JS)가 포함되어 있습니다. 이건 부차적인 디자인이에요
 
-AEM에서 전달하는 페이지에서 Adobe Target과 함께 경험 조각 오퍼를 사용하는 경우 타깃팅된 페이지에 이미 필요한 모든 클라이언트 라이브러리가 포함되어 있습니다. 또한 경험 조각 오퍼에서 외부 html도 필요하지 않습니다(참조) [고려 사항](#considerations)).
+AEM에서 제공 중인 페이지에서 Adobe Target과 함께 경험 조각 오퍼를 사용할 때 타깃팅된 페이지에는 이미 필요한 모든 클라이언트 라이브러리가 포함되어 있습니다. 또한 경험 조각 오퍼의 관련 없는 html도 필요하지 않습니다(참조) [고려 사항](#considerations)).
 
-다음은 경험 조각 오퍼에서 html의 의사 예입니다.
+다음은 경험 조각 오퍼의 html에 대한 의사 예시입니다.
 
 ```html
 <!DOCTYPE>
@@ -235,27 +235,27 @@ AEM에서 전달하는 페이지에서 Adobe Target과 함께 경험 조각 오�
 </html>
 ```
 
-높은 수준에서 AEM이 경험 조각을 Adobe Target으로 내보낼 때 여러 개의 추가 Sling 선택기를 사용합니다. 예를 들어 내보낸 경험 조각의 URL은 다음과 같을 수 있습니다(알림) `nocloudconfigs.atoffer`):
+높은 수준에서 AEM이 경험 조각을 Adobe Target으로 내보낼 때 몇 가지 추가 Sling 선택기를 사용하여 수행됩니다. 예를 들어 내보낸 경험 조각의 URL은 다음과 같을 수 있습니다(참고: `nocloudconfigs.atoffer`):
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
-다음 `nocloudconfigs` 선택기는 HTL을 사용하여 정의되며, 다음 위치에서 복사하여 오버레이할 수 있습니다.
+다음 `nocloudconfigs` 선택기는 HTL을 사용하여 정의되며 다음 위치에서 복사하여 오버레이할 수 있습니다.
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
-다음 `atoffer` 선택기는 실제로 을 사용하여 사후 처리에 적용됩니다 [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). 둘 중 하나를 사용하여 클라이언트 라이브러리를 제거할 수 있습니다.
+다음 `atoffer` 선택기는 실제로 다음을 사용하여 후처리에 적용됩니다. [Sling 재작성기](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). 둘 중 하나를 사용하여 클라이언트 라이브러리를 제거할 수 있습니다.
 
 ### 예 {#example}
 
-이를 위해 다음을 사용하여 이 작업을 수행하는 방법을 설명하겠습니다 `nocloudconfigs`.
+여기에서는 을 사용하여 이 작업을 수행하는 방법에 대해 설명합니다 `nocloudconfigs`.
 
 >[!NOTE]
 >
->자세한 내용은 [편집 가능한 템플릿](/help/sites-developing/templates.md#editable-templates) 자세한 내용
+>다음을 참조하십시오. [편집 가능한 템플릿](/help/sites-developing/templates.md#editable-templates) 을 참조하십시오.
 
 #### 오버레이 {#overlays}
 
-이 특정 예에서는 [오버레이](/help/sites-developing/overlays.md) 포함되면 클라이언트 라이브러리가 제거됩니다 *및* 외부 html. 경험 조각 템플릿 유형을 이미 작성했다고 가정합니다. 복사해야 하는 필수 파일 `/libs/cq/experience-fragments/components/xfpage/` 포함:
+이 특정 예에서는 [오버레이](/help/sites-developing/overlays.md) 포함되면 클라이언트 라이브러리가 제거됩니다 *및* 관련 없는 html입니다. 경험 조각 템플릿 유형을 이미 생성했다고 가정합니다. 에서 복사해야 하는 필수 파일 `/libs/cq/experience-fragments/components/xfpage/` 포함:
 
 * `nocloudconfigs.html`
 * `head.nocloudconfigs.html`
@@ -283,12 +283,12 @@ AEM에서 전달하는 페이지에서 Adobe Target과 함께 경험 조각 오�
 
 >[!NOTE]
 >
->를 사용하려면 `data-sly-unwrap` body 태그를 제거하려면 `nocloudconfigs.html`.
+>사용 `data-sly-unwrap` 필요한 본문 태그를 제거하려면 `nocloudconfigs.html`.
 
 ### 고려 사항 {#considerations}
 
-Adobe Target에서 경험 조각 오퍼를 사용하여 AEM 사이트와 비 AEM 사이트를 모두 지원해야 하는 경우 두 개의 경험 조각(두 개의 다른 템플릿 유형)을 만들어야 합니다.
+Adobe Target에서 경험 조각 오퍼를 사용하여 AEM 사이트와 비 AEM 사이트를 모두 지원해야 하는 경우 두 개의 경험 조각(두 개의 서로 다른 템플릿 유형)을 만들어야 합니다.
 
-* clientlibs/extra html을 제거하는 오버레이가 있는 항목
+* clientlibs/추가 html을 제거하기 위한 오버레이가 있는 1개
 
-* 오버레이가 없으므로 필수 clientlibs를 포함하는 것
+* 오버레이가 없으므로 필요한 clientlib을 포함하는 것

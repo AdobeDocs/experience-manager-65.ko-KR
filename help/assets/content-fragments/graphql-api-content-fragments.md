@@ -1,6 +1,6 @@
 ---
 title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
-description: 헤드리스 컨텐츠 전달을 위해 AEM(Adobe Experience Manager)에서 AEM GraphQL API와 함께 컨텐츠 조각을 사용하는 방법을 알아봅니다.
+description: Headless 콘텐츠 전달을 위해 AEM(Adobe Experience Manager)의 콘텐츠 조각을 AEM GraphQL API와 함께 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: 42ef4694a3301ae1cd34766ce4c19f4b0e2f2c38
@@ -12,7 +12,7 @@ ht-degree: 91%
 
 # 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
 
-헤드리스 컨텐츠 전달을 위해 AEM(Adobe Experience Manager)에서 AEM GraphQL API와 함께 컨텐츠 조각을 사용하는 방법을 알아봅니다.
+Headless 콘텐츠 전달을 위해 AEM(Adobe Experience Manager)의 콘텐츠 조각을 AEM GraphQL API와 함께 사용하는 방법에 대해 알아봅니다.
 
 Content Fragments와 함께 사용되는 AEM GraphQL API는 표준 오픈 소스 GraphQL API를 기반으로 합니다.
 
@@ -24,7 +24,7 @@ AEM에서 GraphQL API를 사용하면 Headless CMS 구현에서 JavaScript 클�
 
 >[!NOTE]
 >
->GraphQL은 현재 Adobe Experience Manager(AEM)의 두 가지(별도) 시나리오에서 사용됩니다.
+>GraphQL은 현재 Adobe Experience Manager(AEM)의 두 가지 (개별) 시나리오에서 사용됩니다.
 >
 >* [AEM Commerce는 GraphQL을 통해 상거래 플랫폼의 데이터를 사용합니다](/help/commerce/cif/integrating/magento.md).
 >* AEM 콘텐츠 조각은 AEM GraphQL API(표준 GraphQL 기반의 맞춤화된 구현)와 함께 작동하여 애플리케이션에서 사용할 구조화된 콘텐츠를 제공합니다.
@@ -107,7 +107,7 @@ AEM은 쿼리(두 유형 모두)를 Dispatcher 및 CDN에서 [](/help/assets/con
 [지속 쿼리](/help/assets/content-fragments/persisted-queries.md)는 게시 인스턴스에서 다음과 같이 사용하도록 권장되는 방법입니다.
 
 * 캐시됩니다.
-* AEM에서 중앙 집중식으로 관리합니다
+* AEM을 통해 중앙 집중식으로 관리됩니다.
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 >
 >직접 쿼리를 수행하는 기능은 향후의 어느 시점에서 더 이상 사용되지 않을 수 있습니다.
 
-## AEM용 GraphQL 종단점 {#graphql-aem-endpoint}
+## AEM용 GraphQL 엔드포인트 {#graphql-aem-endpoint}
 
 끝점은 AEM용 GraphQL에 액세스하는 데 사용되는 경로입니다. 이 경로를 사용하여 사용자(또는 앱)는 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -211,11 +211,11 @@ GraphQL 끝점을 활성화하려면 먼저 적절한 구성이 필요합니다.
 
 >[!NOTE]
 >
->GraphiQL은 AEM의 모든 환경에 포함되어 있지만 끝점을 구성할 때만 액세스/볼 수 있습니다.
+>GraphiQL은 AEM의 모든 환경에 포함되어 있지만 엔드포인트를 구성할 때만 액세스/볼 수 있습니다.
 >
 >이전 릴리스에서는 GraphiQL IDE를 설치하려면 패키지가 필요했습니다. 이를 설치했다면 이제 제거할 수 있습니다.
 
-이 인터페이스를 사용하면 쿼리를 직접 입력 및 테스트할 수 있습니다.
+이 인터페이스를 사용하면 쿼리를 직접 입력하고 테스트할 수 있습니다.
 
 예:
 
@@ -227,14 +227,14 @@ GraphQL 끝점을 활성화하려면 먼저 적절한 구성이 필요합니다.
 
 >[!NOTE]
 >
->자세한 내용은 [GraphiQL IDE 사용](/help/assets/content-fragments/graphiql-ide.md).
+>자세한 내용은 을 참조하십시오. [GraphiQL IDE 사용](/help/assets/content-fragments/graphiql-ide.md).
 
 ## Author 및 Publish 환경의 사용 사례 {#use-cases-author-publish-environments}
 
-사용 사례는 AEM 환경의 유형에 따라 달라질 수 있습니다.
+사용 사례는 AEM 환경 유형에 따라 달라질 수 있습니다.
 
 * Publish 환경, 다음과 같은 작업을 수행하는 데 사용됨:
-   * JS 애플리케이션용 쿼리 데이터(표준 사용 사례)
+   * JS 애플리케이션용 쿼리 데이터 (표준 사용 사례)
 
 * Author 환경, 다음과 같은 작업을 수행하는 데 사용됨:
    * “콘텐츠 관리 목적”용 쿼리 데이터:
@@ -560,7 +560,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
    * 모델 이름에 `List`를 추가하십시오. 예: `cityList`
    * [샘플 쿼리 - 모든 도시에 대한 모든 정보](#sample-all-information-all-cities)를 참조하십시오
 
-* 필터 `includeVariations` 에 포함되어 있습니다 `List` 쿼리 유형.  쿼리 결과에서 컨텐츠 조각 변형을 검색하려면 `includeVariations` 필터를 로 설정해야 합니다. `true`.
+* 필터 `includeVariations` 다음에 포함됩니다. `List` 쿼리 유형.  쿼리 결과에서 콘텐츠 조각 변형을 검색하려면 `includeVariations` 필터를 다음으로 설정해야 함: `true`.
 
    >[!CAUTION]
    >필터 `includeVariations` 시스템 생성 필드와 함께 사용할 수 없습니다. `_variation`.
@@ -595,17 +595,17 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
          >지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
 
          >[!CAUTION]
-         >시스템 생성 필드 `_variation` 필터와 함께 사용할 수 없습니다. `includeVariations`.
+         >시스템 생성 필드 `_variation` 은(는) 필터와 함께 사용할 수 없습니다 `includeVariations`.
 
          * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)를 참조하십시오
-      * `_tags` : 를 클릭하여 태그를 포함하는 컨텐츠 조각 또는 변형의 ID를 표시합니다. 이것은 `cq:tags` 식별자.
+      * `_tags` : 태그가 포함된 콘텐츠 조각 또는 변형의 ID를 표시합니다. 이 배열은 `cq:tags` 식별자.
 
-         * 자세한 내용은 [샘플 쿼리 - 도시 분할로 태그가 지정된 모든 도시의 이름](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
-         * 자세한 내용은 [특정 태그가 첨부된 주어진 모델의 컨텐츠 조각 변형에 대한 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+         * 다음을 참조하십시오 [샘플 쿼리 - 구/군/시 구분으로 태그가 지정된 모든 구의 이름](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+         * 다음을 참조하십시오 [특정 태그가 첨부된 특정 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
 
          >[!NOTE]
          >
-         >컨텐츠 조각의 메타데이터를 나열하여 태그를 쿼리할 수도 있습니다.
+         >콘텐츠 조각의 메타데이터를 나열하여 태그를 쿼리할 수도 있습니다.
    * 작업:
 
       * `_operator`: 특정 연산자 적용 - `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -633,7 +633,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
 * 중첩된 조각 쿼리 시 대체:
 
-   * 요청된 변형이 중첩 조각에 없는 경우 **기본** 변형이 반환됩니다.
+   * 요청된 변형이 중첩된 조각에 없는 경우 **기본** 변형이 반환됩니다.
 
 <!--
 ## Persisted Queries (Caching) {#persisted-queries-caching}
@@ -866,9 +866,9 @@ To access the GraphQL endpoint from an external website you need to configure th
 >
 >AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 [CORS(원본 간 리소스 공유) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko-KR#understand-cross-origin-resource-sharing-(cors))를 참조하십시오.
 
-GraphQL 종단점에 액세스하려면 고객 Git 리포지토리에서 CORS 정책을 구성해야 합니다. 원하는 끝점에 대한 적절한 OSGi CORS 구성 파일 추가를 통해 수행됩니다. 
+GraphQL 엔드포인트에 액세스하려면 고객 Git 저장소에 CORS 정책을 구성해야 합니다. 원하는 끝점에 대한 적절한 OSGi CORS 구성 파일 추가를 통해 수행됩니다. 
 
-이 구성은 신뢰할 수 있는 웹 사이트 원본을 지정해야 합니다 `alloworigin` 또는 `alloworiginregexp` 액세스 권한을 부여해야 하는 대상.
+이 구성은 신뢰할 수 있는 웹 사이트 출처를 지정해야 합니다. `alloworigin` 또는 `alloworiginregexp` 액세스 권한을 부여해야 합니다.
 
 예를 들어 GraphQL 끝점  및 `https://my.domain`의 지속 쿼리 끝점에 대한 액세스 권한을 부여하려면 다음을 사용할 수 있습니다.
 
@@ -909,7 +909,7 @@ GraphQL 종단점에 액세스하려면 고객 Git 리포지토리에서 CORS �
 
 ### 레퍼러 필터 {#referrer-filter}
 
-CORS 구성 외에 타사 호스트에서 액세스할 수 있도록 레퍼러 필터를 구성해야 합니다.
+CORS 구성 외에도 타사 호스트의 액세스를 허용하도록 레퍼러 필터를 구성해야 합니다.
 
 이 작업은 다음과 같은 적절한 OSGi 레퍼러 필터 구성 파일을 추가하여 수행합니다.
 
@@ -983,4 +983,4 @@ CORS 구성 외에 타사 호스트에서 액세스할 수 있도록 레퍼러 �
 
 ## 튜토리얼 - AEM Headless 및 GraphQL 시작하기 {#tutorial}
 
-실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서, AEM의 GraphQL API를 사용하여 콘텐츠를 구축하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) 엔드투엔드 튜토리얼을 확인하십시오.
+실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 빌드하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) 엔드투엔드 튜토리얼을 확인하십시오.

@@ -270,7 +270,7 @@ ht-degree: 90%
 
 페이지의 게시 상태를 확인할 수 있습니다.
 
-* ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)사이트 콘솔의 리소스 개요 정보[에서
+* [사이트 콘솔의 리소스 개요 정보](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)에서
 
    ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
 

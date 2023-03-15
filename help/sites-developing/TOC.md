@@ -140,7 +140,7 @@ ht-degree: 78%
       + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
       + [콘텐츠 조각 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
       + [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphiql-ide.html)
-      + [지속 쿼리](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/persisted-queries.html)
+      + [지속되는 쿼리](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/persisted-queries.html)
       + [콘텐츠 조각의 원격 AEM GraphQL 구문 인증](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)
       + [콘텐츠 조각이 있는 AEM GraphQL API - 샘플 콘텐츠 및 구문](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
 + 하이브리드 및 SPA AEM 개발{#spas}
@@ -155,7 +155,7 @@ ht-degree: 78%
    + [SPA 편집기 개요](spa-overview.md)
    + [SPA 블루프린트](spa-blueprint.md)
    + [SPA 페이지 구성 요소](spa-page-component.md)
-   + [구성 요소 매핑을 위한 동적 모델 SPA용](spa-dynamic-model-to-component-mapping.md)
+   + [구성 요소 매핑을 위한 동적 모델 SPA](spa-dynamic-model-to-component-mapping.md)
    + [SPA 모델 라우팅](spa-routing.md)
    + [RemotePage 구성 요소](spa-remote-page.md)
    + [AEM에서 외부 SPA 편집](spa-edit-external.md)

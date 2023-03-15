@@ -1,6 +1,6 @@
 ---
 title: Flash 뷰어 지원 중단 알림
-description: 2017년 1월 31일부터 Adobe Dynamic Media Classic이 Flash 뷰어 플랫폼에 대한 지원을 공식적으로 종료했습니다.
+description: 2017년 1월 31일부터 Adobe Dynamic Media Classic은 Flash 뷰어 플랫폼에 대한 지원을 공식적으로 종료했습니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -15,7 +15,7 @@ ht-degree: 21%
 
 # Flash 뷰어 지원 중단 알림{#flash-viewers-end-of-life-notice}
 
-*2017년 1월 31일부터 Adobe Dynamic Media Classic(이전 Scene7)은 공식적으로 Flash 뷰어 플랫폼에 대한 지원을 종료했습니다.*
+*2017년 1월 31일부터 Adobe Dynamic Media Classic(이전 Scene7)는 공식적으로 Flash 뷰어 플랫폼에 대한 지원을 종료했습니다.*
 
 <!-- *For more information about this important change, see the following FAQ website:*
 

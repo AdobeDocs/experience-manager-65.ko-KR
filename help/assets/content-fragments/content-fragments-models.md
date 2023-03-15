@@ -7,7 +7,7 @@ exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 source-git-commit: 6b9eb1a6df7cc4a8afab1c83d93d8a53bd94f6f5
 workflow-type: tm+mt
 source-wordcount: '2332'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ AEM의 컨텐츠 조각 모델은 컨텐츠 구조를 정의합니다 [컨텐츠
 
 1. [인스턴스에 대해 콘텐츠 조각 모델 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. 콘텐츠 조각 모델 [생성](#creating-a-content-fragment-model) 및 [구성](#defining-your-content-fragment-model)
-1. [컨텐츠 조각 모델 활성화](#enabling-disabling-a-content-fragment-model) 컨텐츠 조각을 만들 때 사용할 수 있습니다.
+1. 콘텐츠 조각 생성 시 사용할 [콘텐츠 조각 모델 활성화](#enabling-disabling-a-content-fragment-model)
 1. **정책**&#x200B;을 구성하여 [필요한 에셋 폴더에서 콘텐츠 조각 모델 허용](#allowing-content-fragment-models-assets-folder)
 
 ## 콘텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
@@ -224,7 +224,7 @@ AEM의 컨텐츠 조각 모델은 컨텐츠 구조를 정의합니다 [컨텐츠
 
       >[!NOTE]
       >
-      >이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 전달](/help/assets/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
+      >이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재](/help/assets/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
    * 최종 조각에서 하나 이상의 참조에 대해 구성할 수 있습니다.
 
 >[!NOTE]
@@ -278,7 +278,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->이는 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 전달](/help/assets/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
+>이는 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재](/help/assets/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
 
 표준 속성 외에 다음을 정의할 수 있습니다.
 

@@ -1,19 +1,19 @@
 ---
 title: AEM 6.5 작성 사용 안내서
 seo-title: AEM 6.5 Authoring User Guide
-description: AEM 6.5에서 컨텐츠 작성 및 작성에 대한 주요 개념을 알아봅니다. 태그, 템플릿 및 기타 페이지 기능 사용에 대한 정보도 찾을 수 있습니다.
+description: AEM 6.5에서 컨텐츠 만들기 및 작성의 주요 개념을 살펴보십시오. 태그, 템플릿 및 기타 페이지 기능 사용에 대한 정보도 확인할 수 있습니다.
 seo-description: Explains the concepts of authoring in AEM.
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '362'
+ht-degree: 79%
 
 ---
 
 # AEM 6.5 작성 사용 안내서
 
-AEM 6.5에서 컨텐츠 작성 및 작성에 대한 주요 개념을 알아봅니다. 태그, 템플릿 및 기타 페이지 기능 사용에 대한 정보도 찾을 수 있습니다.
+AEM 6.5에서 컨텐츠 만들기 및 작성의 주요 개념을 살펴보십시오. 태그, 템플릿 및 기타 페이지 기능 사용에 대한 정보도 확인할 수 있습니다.
 
 ## 주요 AEM 문서
 
@@ -37,7 +37,7 @@ AEM 6.5에서 컨텐츠 작성 및 작성에 대한 주요 개념을 알아봅�
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
-| [Commerce 사용 안내서](/help/commerce/home.md) | AEM에서 Commerce Integration Framework에 대해 알아봅니다. |
+| [Commerce 사용 안내서](/help/commerce/home.md) | AEM의 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 

@@ -34,10 +34,10 @@ ht-degree: 1%
 
 | 이미지(URL) | 썸네일 | 크기(JPEG) | 스마트 이미징을 사용한 크기(WebP) | 스마트 이미징을 사용한 크기(AVIF) | WebP를 사용한 % 감소 | AVIF를 사용한 % 감소 |
 |---|---|---|---|---|---|---|
-| [이미지 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![그림1](/help/assets/assets-dm/picture1.png) | 145KB | 106KB | 90.2KB | 26.89% | 37.79% |
-| [이미지 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![그림2](/help/assets/assets-dm/picture2.png) | 412KB | 346KB | 113KB | 16.01% | 72.57% |
-| [이미지 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![그림3](/help/assets/assets-dm/picture3.png) | 221KB | 189KB | 87.1KB | 14.47% | 60.58% |
-| [이미지 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![그림 4](/help/assets/assets-dm/picture4.png) | 594KB | 545KB | 286KB | 8.25% | 51.85% |
+| [이미지 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 145KB | 106KB | 90.2KB | 26.89% | 37.79% |
+| [이미지 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 412KB | 346KB | 113KB | 16.01% | 72.57% |
+| [이미지 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 221KB | 189KB | 87.1KB | 14.47% | 60.58% |
+| [이미지 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 594KB | 545KB | 286KB | 8.25% | 51.85% |
 
 위와 유사하게, Adobe은 더 큰 샘플 세트를 사용하여 테스트를 실행하기도 했습니다. AVIF 형식은 WebP에 비해 20% 더 큰 크기 감소를 제공했는데, 이는 JPEG에 비해 27% 더 줄어든 것이다. 모두 동일한 시각적 품질입니다. 총 AVIF는 JPEG에 비해 최대 41%의 평균 크기 감소를 제공합니다.
 
@@ -317,7 +317,7 @@ WebP에서 이미 스마트 이미징을 활성화했지만 위에 나열된 다
 * [장치 픽셀 비율](#dpr)
 * [네트워크 대역폭](#network)
 
-## Chrome 웹 브라우저에 fmt=tif가 있는 URL이 있습니다. 그러나 ImageServer 오류로 인해 내 요청이 실패합니다. 왜? {#fmt-tif}
+## Chrome 웹 브라우저에 fmt=tif가 있는 URL이 있습니다. 그러나 ImageServer 오류로 인해 내 요청이 실패합니다. 왜일까요? {#fmt-tif}
 
 계정에 스마트 이미징이 활성화되지 않은 경우에는 이 오류가 발생하지 않습니다. 스마트 이미징은 JPEG 또는 PNG 형식에서만 작동합니다.
 

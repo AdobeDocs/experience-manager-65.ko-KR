@@ -1,7 +1,7 @@
 ---
 title: Adobe Creative Cloud과 폴더 공유
 seo-title: Folder sharing with Adobe Creative Cloud
-description: Adobe Creative Cloud과 폴더 공유에 대해 알아보기
+description: Adobe Creative Cloud과의 폴더 공유에 대해 알아보기
 seo-description: Learn about sharing folder with Adobe Creative Cloud
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
@@ -22,7 +22,7 @@ ht-degree: 15%
 
 >[!CAUTION]
 >
->AEM-Creative Cloud 폴더 공유 기능은 더 이상 사용되지 않습니다. 고객은 다음과 같은 최신 기능을 사용해야 합니다 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [AEM 데스크탑 앱](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html). 추가 정보 [AEM 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md).
+>Creative Cloud 폴더 공유 AEM 기능은 더 이상 사용되지 않습니다. 고객은 다음과 같은 새로운 기능을 사용하는 것이 좋습니다. [Adobe 에셋 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [AEM 데스크탑 앱](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html). 다음에서 자세히 알아보기 [AEM 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

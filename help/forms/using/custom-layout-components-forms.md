@@ -1,7 +1,7 @@
 ---
-title: 적응형 양식을 위한 사용자 지정 레이아웃 구성 요소 만들기
+title: 적응형 양식을 위한 사용자 정의 레이아웃 구성 요소 만들기
 seo-title: Creating custom layout components for adaptive forms
-description: 적응형 양식의 사용자 지정 레이아웃 구성 요소를 만드는 절차입니다.
+description: 적응형 양식에 대한 사용자 정의 레이아웃 구성 요소를 만드는 절차.
 seo-description: Procedure to create custom layout components for adaptive forms.
 uuid: f0bb5fcd-3938-4804-ad0c-d96d3083fd01
 content-type: reference
@@ -17,21 +17,21 @@ ht-degree: 1%
 
 ---
 
-# 적응형 양식을 위한 사용자 지정 레이아웃 구성 요소 만들기{#creating-custom-layout-components-for-adaptive-forms}
+# 적응형 양식을 위한 사용자 정의 레이아웃 구성 요소 만들기{#creating-custom-layout-components-for-adaptive-forms}
 
 ## 전제 조건 {#prerequisite}
 
-사용자 정의 레이아웃을 만들거나 사용할 수 있는 레이아웃에 대한 지식입니다. 자세한 내용은 [패널 레이아웃 변경](../../forms/using/layout-capabilities-adaptive-forms.md).
+사용자 정의 레이아웃을 만들기/사용할 수 있는 레이아웃에 대한 지식입니다. 다음을 참조하십시오 [패널 레이아웃 변경](../../forms/using/layout-capabilities-adaptive-forms.md).
 
 ## 적응형 양식 패널 레이아웃 구성 요소 {#adaptive-form-panel-layout-component}
 
-적응형 양식 패널 레이아웃 구성 요소는 사용자 인터페이스에 따라 패널에서 적응형 양식 구성 요소를 배치하는 방법을 제어합니다.
+적응형 양식 패널 레이아웃 구성 요소는 적응형 양식 구성 요소가 사용자 인터페이스를 기준으로 패널에서 배치되는 방식을 제어합니다.
 
-## 사용자 지정 패널 레이아웃 만들기 {#creating-a-custom-panel-layout}
+## 사용자 정의 패널 레이아웃 만들기 {#creating-a-custom-panel-layout}
 
-1. 위치로 이동합니다. `/crx/de`.
-1. 위치에서 패널 레이아웃 복사 `/libs/fd/af/layouts/panel` (예: `tabbedPanelLayout`) `/apps` (예: `/apps/af-custom-layout`).
-1. 복사한 레이아웃의 이름을 변경합니다 `customPanelLayout`. 노드의 속성 변경 `qtip` 및 `jcr:description`. 예를 들어 `Custom layout - Toggle tabs`.
+1. 위치로 이동 `/crx/de`.
+1. 위치에서 패널 레이아웃 복사 `/libs/fd/af/layouts/panel` (예: `tabbedPanelLayout`) 받는 사람 `/apps` (예: `/apps/af-custom-layout`).
+1. 복사한 레이아웃 이름 바꾸기 `customPanelLayout`. 노드의 속성 변경 `qtip` 및 `jcr:description`. 예를 들어 다음 항목으로 변경합니다. `Custom layout - Toggle tabs`.
 
 qtip
 
@@ -39,10 +39,10 @@ qtip
 
 >[!NOTE]
 >
->속성 설정 `guideComponentType`값 `fd/af/layouts/panel` 레이아웃이 패널 레이아웃인지 확인합니다.
+>속성 설정 `guideComponentType`값: `fd/af/layouts/panel` 레이아웃이 패널 레이아웃인지 확인합니다.
 
-1. 파일 이름 바꾸기 `tabbedPanelLayout.jsp` 새 레이아웃 아래에서 customPanelLayout.jsp에 추가합니다.
-1. 새로운 스타일과 동작을 도입하려면 `etc` 노드 아래에 있어야 합니다. 예를 들어 /etc/af-custom-layout-clientlib 위치에서 node client-library를 만듭니다. 노드에 카테고리 속성을 af.panel.custom으로 지정하도록 합니다. 여기에는 다음 .css 및 .js 파일이 있습니다.
+1. 파일 이름 바꾸기 `tabbedPanelLayout.jsp` 를 추가합니다.
+1. 새 스타일 및 비헤이비어를 도입하려면 `etc` 노드. 예를 들어 /etc/af-custom-layout-clientlib 위치에서 client-library 노드를 만듭니다. 노드에 categories 속성 af.panel.custom 을 갖게 합니다. 여기에는 다음 .css 및 .js 파일이 있습니다.
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -114,9 +114,9 @@ qtip
    });
    ```
 
-1. 모양과 동작을 향상시키기 위해 `client library`.
+1. 모양과 비헤이비어를 개선하기 위해 `client library`.
 
-   또한 .jsp 파일에 포함된 스크립트의 경로를 업데이트합니다. 예를 들어 `customPanelLayout.jsp` 파일:
+   또한 .jsp 파일에 포함된 스크립트의 경로를 업데이트합니다. 예를 들어 `customPanelLayout.jsp` 파일을 다음과 같이 지정합니다.
 
    ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -174,7 +174,7 @@ qtip
    </ul>
    ```
 
-   업데이트된 내용 `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
+   업데이트됨 `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
    ```html
    <%-- jsp governing the panel content --%>
@@ -201,10 +201,10 @@ qtip
    </div>
    ```
 
-1. 작성 모드에서 적응형 양식을 엽니다. 정의한 패널 레이아웃이 패널 레이아웃 구성 목록에 추가됩니다.
+1. 작성 모드에서 적응형 양식을 엽니다. 정의한 패널 레이아웃이 패널 레이아웃을 구성하기 위해 목록에 추가됩니다.
 
-   ![사용자 지정 패널 레이아웃이 패널 레이아웃 목록에 표시됩니다](assets/auth-layt.png) ![사용자 지정 패널 레이아웃을 사용하는 적응형 양식의 스크린샷](assets/s1.png) ![사용자 지정 레이아웃의 전환 기능을 보여주는 스크린샷](assets/s2.png)
+   ![사용자 정의 패널 레이아웃이 패널 레이아웃 목록에 표시됩니다.](assets/auth-layt.png) ![적응형 양식의 스크린샷, 사용자 정의 패널 레이아웃 사용](assets/s1.png) ![사용자 지정 레이아웃의 전환 기능을 보여 주는 스크린샷](assets/s2.png)
 
-사용자 지정 패널 레이아웃과 이를 사용하는 적응형 양식에 대한 샘플 ZIP.
+사용자 정의 패널 레이아웃 및 이를 사용하는 적응형 양식에 대한 샘플 ZIP.
 
 [파일 가져오기](assets/af-custom-layout.zip)

@@ -1,6 +1,6 @@
 ---
 title: 변형 - 조각 콘텐츠 작성
-description: 변형에서 조각에 대한 컨텐츠를 작성한 다음 목적에 따라 해당 컨텐츠의 변형을 만들 수 있도록 함으로써 AEM에서 헤드리스 컨텐츠를 더욱 유연하게 만드는 방법을 이해합니다.
+description: 변형에서 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만들 수 있으므로 AEM의 Headless 콘텐츠를 어떻게 더 유연하게 만들 수 있는지 이해합니다.
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
@@ -13,14 +13,14 @@ ht-degree: 87%
 
 # 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
-[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 특정 채널 및/또는 시나리오에서 사용할 마스터 컨텐츠의 사본을 만들고 편집할 수 있으므로 AEM 컨텐츠 조각의 중요한 기능으로, 헤드리스 컨텐츠 게재를 보다 유연하게 만듭니다.
+[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 는 특정 채널 및/또는 시나리오에서 사용할 마스터 콘텐츠의 사본을 만들고 편집할 수 있는 AEM 콘텐츠 조각의 중요한 기능으로, headless 콘텐츠 전달을 보다 유연하게 해 줍니다.
 
 **변형** 탭에서는 다음 작업을 수행할 수 있습니다.
 
 * 조각에 사용할 [콘텐츠 입력](#authoring-your-content),
 * [마스터](#managing-variations) 콘텐츠의 **변형 만들기 및 관리**
 
-편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행하십시오. 예:
+편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행합니다. 예를 들면 다음과 같습니다.
 
 * [조각에 시각적 에셋 삽입](#inserting-assets-into-your-fragment)(이미지)
 
@@ -48,7 +48,7 @@ ht-degree: 87%
 
 다음과 같은 작업을 수행할 수 있습니다.
 
-* 에서 직접 콘텐츠를 편집합니다 **변형** 탭; 각 데이터 유형은 다음과 같은 다양한 편집 옵션을 제공합니다.
+* 에서 바로 콘텐츠를 편집합니다. **변형** 탭: 각 데이터 유형은 다음과 같은 다양한 편집 옵션을 제공합니다.
 
    * **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 열어 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -58,17 +58,17 @@ ht-degree: 87%
    * **조각 참조** 필드의 경우 모델 정의에 따라 [콘텐츠 조각 편집](#fragment-references-edit-content-fragment) 옵션을 사용할 수 있습니다.
 
 
-* 지정 **태그** 현재 변형으로 이동합니다. 태그를 추가, 업데이트 및 제거할 수 있습니다
+* 할당 **태그** 현재 변형에 태그를 추가, 업데이트 및 제거할 수 있습니다.
 
    * [태그](/help/sites-authoring/tags.md)는 콘텐츠 분류 및 분류법에 사용될 수 있으므로 조각을 구성할 때 특히 유용합니다. 태그는 태그별로 콘텐츠를 찾고 일괄 작업을 적용하는 데 사용할 수 있습니다.
 
-      * 태그를 검색하면 태그가 지정된 변형이 강조 표시된 채 조각이 반환됩니다.
-      * 변형 태그는 변형 이름을 사용하는 대신 특정 CDN(Content Delivery Network) 프로필(CDN 캐싱)의 변형을 그룹화하는 데 사용할 수도 있습니다.
+      * 태그를 검색하면 태그가 지정된 변형이 강조 표시된 조각이 반환됩니다.
+      * 변형 태그는 변형 이름을 사용하는 대신 특정 CDN(Content Delivery Network) 프로필(CDN 캐싱용)에 대한 변형을 그룹화하는 데 사용할 수도 있습니다.
 
-      예를 들어 관련 조각에 &quot;크리스마스 시작&quot;으로 태그를 지정하여 하위 집합으로 검색할 수 있도록 하거나, 새 폴더에서 다른 향후 실행 시 사용할 수 있도록 복사할 수 있습니다.
+      예를 들어 관련 조각에 &quot;크리스마스 시작&quot;으로 태그를 지정하여 하위 집합으로만 검색할 수 있도록 하거나, 새 폴더에서 향후 시작에 사용할 수 있도록 복사할 수 있습니다.
    >[!NOTE]
    >
-   >**태그** (에) **기본** 변형)을 [메타데이터](/help/assets/content-fragments/content-fragments-metadata.md)
+   >**태그** 을(를)에 추가할 수도 있습니다. **기본** 변형)을 의 일부로 [메타데이터](/help/assets/content-fragments/content-fragments-metadata.md)
 
 * [마스터](#managing-variations) 컨텐츠의 **변형 만들기 및 관리.**
 
@@ -179,7 +179,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 #### 콘텐츠 조각 편집 {#fragment-references-edit-content-fragment}
 
-옵션 **컨텐츠 조각 편집** 새 창 탭에서 해당 조각을 엽니다.
+옵션 **컨텐츠 조각 편집** 는 새 창 탭에서 해당 조각을 엽니다.
 
 <!--
 The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
@@ -403,7 +403,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
    새 변형을 만들 때 새 변형은 현재 열려 있는 변형이 아니라 항상 복사되어 있는 **마스터**&#x200B;입니다.
 
    >[!NOTE]
-   새 변형을 만들면 **태그** 현재 **기본** 변형이 새 변형에 복사됩니다.
+   새 변형을 만들 때 **태그** (으)로 현재 할당됨 **기본** 변형이 새 변형에 복사됩니다.
 
 ### 변형 편집 {#editing-a-variation}
 
@@ -476,4 +476,4 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    ![마스터와 동기화](assets/cfm-variations-11c.png)
 
-1. 선택 **동기화**&#x200B;변형이 업데이트되고 표시됩니다.
+1. 선택 **동기화**, 변형이 업데이트되고 표시됩니다.

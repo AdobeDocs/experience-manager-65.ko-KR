@@ -1,5 +1,5 @@
 ---
-title: 랜딩 페이지와 Adobe Analytics 통합
+title: Adobe Analytics과 랜딩 페이지 통합
 seo-title: Integrating Landing Pages with Adobe Analytics
 description: 랜딩 페이지를 Adobe Analytics과 통합하는 방법을 알아봅니다.
 seo-description: Learn how to integrate landing pages with Adobe Analytics.
@@ -17,30 +17,30 @@ ht-degree: 26%
 
 ---
 
-# 랜딩 페이지와 Adobe Analytics 통합{#integrating-landing-pages-with-adobe-analytics}
+# Adobe Analytics과 랜딩 페이지 통합{#integrating-landing-pages-with-adobe-analytics}
 
-AEM은 랜딩 페이지 솔루션을 [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) 다음의 클릭유도문안(CTA) 구성 요소를 사용하여 다음을 수행하십시오.
+AEM은 랜딩 페이지 솔루션을 와 통합했습니다. [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) 다음 CTA(콜 투 액션) 구성 요소를 사용하여
 
 1. 클릭스루 구성 요소
 1. 그래픽 링크 구성 요소
 
-이러한 구성 요소는 Adobe Analytics 변수(트래픽, 전환 변수)와 정보를 Adobe Analytics에 보내는 성공 이벤트를 통해 매핑할 수 있는 특정 특성을 노출합니다.
+이러한 구성 요소는 Adobe Analytics 변수(트래픽, 전환 변수) 및 성공 이벤트를 통해 매핑하여 정보를 Adobe Analytics에 보낼 수 있는 특정 속성을 표시합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
-Adobe은 [기존 AEM-Adobe Analytics 통합](/help/sites-administering/adobeanalytics.md) 이 통합이 작동하는 방식을 이해하려면 다음을 수행하십시오.
+Adobe은 다음을 수행하는 것을 권장합니다. [기존 AEM-Adobe Analytics 통합](/help/sites-administering/adobeanalytics.md) 이 통합이 작동하는 방식을 이해합니다.
 
 ## 매핑에 사용할 수 있는 구성 요소 {#components-available-for-mapping}
 
-AEM에서 **클릭유도문안** 구성 요소 - **ClickThroughLink** 및 **GraphicalLink** - 사이드킥에 여기에 표시되는 를 Adobe Analytics 변수에 매핑할 수 있습니다.
+AEM에서 **클릭 유도 문안** 구성 요소 - **클릭스루 링크** 및 **GraphicalLink** - 여기 사이드 킥에 표시되며, Adobe Analytics 변수에 매핑할 수 있습니다.
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
-### 랜딩 페이지 구성 요소를 Adobe Analytics에 매핑 {#mapping-landing-page-components-to-adobe-analytics}
+### Adobe Analytics에 랜딩 페이지 구성 요소 매핑 {#mapping-landing-page-components-to-adobe-analytics}
 
-랜딩 페이지 구성 요소를 Adobe Analytics에 매핑하려면
+랜딩 페이지 구성 요소를 Adobe Analytics에 매핑하려면 다음을 수행하십시오.
 
-1. Adobe Analytics 구성을 만들고 새 프레임워크를 만든 후 드롭다운 메뉴에서 적절한 보고 세트를 선택합니다. 따라서 Adobe Analytics 변수가 가져와서 콘텐츠 파인더에 표시됩니다.
+1. Adobe Analytics 구성을 만들고 새 프레임워크를 만든 후 드롭다운 메뉴에서 적절한 보고 세트를 선택합니다. 그러면 Adobe Analytics 변수를 가져와 컨텐츠 파인더에 표시됩니다.
 1. 사이드킥의 클릭유도문안(CTA) 구성 요소를 페이지의 중앙에 있는 매핑 영역으로 적절히 드래그 드롭합니다.
 
 <table>
@@ -58,7 +58,7 @@ AEM에서 **클릭유도문안** 구성 요소 - **ClickThroughLink** 및 **Grap
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td>
-   <td>링크를 클릭하면 이동하는 대상 </td>
+   <td>링크를 클릭할 때 이동하는 대상 </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
@@ -88,9 +88,9 @@ AEM에서 **클릭유도문안** 구성 요소 - **ClickThroughLink** 및 **Grap
  </tbody>
 </table>
 
-1. 이러한 노출된 특성을 콘텐츠 파인더의 모든 Adobe Analytics 변수와 매핑합니다. 이제 프레임워크를 사용할 준비가 되었습니다.
-1. 이제 새 랜딩 페이지를 만들거나 기존 CTA 구성 요소가 있는 기존 랜딩 페이지를 열고 를 클릭할 수 있습니다 **Cloud Services** 탭 **페이지 속성** 사이드 킥에서(터치에 적합한 UI에서) **속성 열기** 을(를) 클릭합니다. **Cloud Services**)을 설정하고 랜딩 페이지에 사용할 프레임워크를 구성합니다. 드롭다운 목록에서 프레임워크를 선택합니다.
+1. 노출된 이러한 속성을 컨텐츠 파인더의 모든 Adobe Analytics 변수와 매핑합니다. 이제 프레임워크를 사용할 준비가 되었습니다.
+1. 이제 새 랜딩 페이지를 만들거나 기존 CTA 구성 요소로 기존 랜딩 페이지를 열고 **Cloud Services** 의 탭 **페이지 속성** 터치에 적합한 UI의 사이드 킥에서 을 선택합니다 **속성 열기** 및 클릭 **Cloud Services**) 랜딩 페이지에서 사용할 프레임워크를 구성합니다. 드롭다운 목록에서 프레임워크를 선택합니다.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 
-1. 랜딩 페이지로 프레임워크를 구성한 후 구현된 구성 요소를 사용할 수 있으며 CTA에 대한 모든 클릭이 Adobe Analytics에 기록됩니다.
+1. 이제 랜딩 페이지로 프레임워크를 구성한 후 계측된 구성 요소를 사용할 수 있으며 CTA에 대한 모든 클릭이 Adobe Analytics에 기록됩니다.

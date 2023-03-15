@@ -389,7 +389,7 @@ AEM Communities의 경우 리소스 콘솔은 다음과 같습니다. [지원 �
 
 ### 설정 {#settings-1}
 
-![learning path-settings1](assets/learningpath-settings1.png)
+![learningpath-settings1](assets/learningpath-settings1.png)
 
 * **[!UICONTROL 등록 추가]**
 

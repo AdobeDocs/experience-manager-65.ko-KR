@@ -40,7 +40,7 @@ Imaging Transcoding Library는 다양한 파일 형식 및 프로필을 지원�
 >
 >Mac OS 및 기타 *nix 배포(예: Debian 및 Ubuntu)는 지원되지 않습니다.
 
-## 사용량 {#usage}
+## 사용 {#usage}
 
 이미징 코드 변환 라이브러리에 대한 명령줄 인수에는 다음을 포함할 수 있습니다.
 

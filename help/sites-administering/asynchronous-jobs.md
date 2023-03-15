@@ -145,7 +145,7 @@ AEM에 대한 자산, 페이지 또는 참조의 임계값 수를 구성하여 �
 >* [페이지 생성 및 구성](/help/sites-authoring/managing-pages.md)
 >* [라이브 카피 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
 >* [Experience Manager에서 이메일 구성](/help/sites-administering/notification.md).
->* [자산 메타데이터 가져오기](/help/assets/metadata.md#import-metadata).
+>* [에셋 메타데이터 가져오기](/help/assets/metadata.md#import-metadata).
 >* [자산 메타데이터 내보내기](/help/assets/metadata.md#export-metadata).
 >* [연결된 자산을 사용하여 원격 배포에서 DAM 자산을 공유할 수 있습니다](/help/assets/use-assets-across-connected-assets-instances.md).
 

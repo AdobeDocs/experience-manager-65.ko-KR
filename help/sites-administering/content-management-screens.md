@@ -1,5 +1,5 @@
 ---
-title: 화면을 위한 컨텐츠 관리
+title: Screens용 콘텐츠 관리
 seo-title: Content Management for Screens
 description: Screens용 콘텐츠 관리의 기본 사항에 대해 알아봅니다.
 seo-description: Learn about the basics of Content Management for Screens.
@@ -17,15 +17,15 @@ ht-degree: 1%
 
 ---
 
-# 화면을 위한 컨텐츠 관리{#content-management-for-screens}
+# Screens용 콘텐츠 관리{#content-management-for-screens}
 
-A ***컨텐츠 관리자*** AEM Screens의 경우 마케팅과 긴밀하게 작업하고 캠페인, 대상자 및 원하는 포커스를 알고 있는 크리에이티브 전문가입니다. 컨텐츠 관리자는 서로 다른 채널을 개발하고 시퀀스를 시간 지정 채널 환경에 할당하여 최종 사용자 경험을 만들고 오케스트레이션할 책임이 있습니다.
+A ***콘텐츠 관리자*** for AEM Screens은 마케팅과 긴밀히 협력하고 캠페인, 대상자 및 원하는 포커스를 잘 알고 있는 창의적인 전문가입니다. 콘텐츠 관리자는 다양한 채널을 개발하고 시퀀스를 적절한 채널 경험으로 할당하여 최종 사용자 경험을 만들고 오케스트레이션할 책임이 있습니다.
 
-Screens용 Content Manager는 위치 및 일정을 디자인하고, 채널 무결성을 유지하고, 분석 및 보고를 수행하고, 비디오 프로필을 유지 관리합니다.
+Screens용 Content Manager는 위치 및 일정을 디자인하고, 채널 무결성을 유지하고, 분석 및 보고를 수행하고, 비디오 프로필을 관리합니다.
 
-AEM Screens 컨텐츠 관리자는 다음 작업을 수행합니다.
+AEM Screens 콘텐츠 관리자는 다음 작업을 담당합니다.
 
 * 디자인 위치
-* 디자인 일정
+* 일정 디자인
 * 채널 무결성 유지
 * 비디오 프로필

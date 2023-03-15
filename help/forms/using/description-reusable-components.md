@@ -1,7 +1,7 @@
 ---
 title: 재사용 가능한 구성 요소에 대한 설명
 seo-title: Description of reusable components
-description: 웹 애플리케이션에서 AEM Forms 작업 공간 구성 요소를 통합하는 데 도움이 되는 파일 이름 및 종속성이 있는 재사용 가능한 구성 요소의 전체 목록입니다.
+description: 파일 이름과 종속성이 포함된 재사용 가능한 구성 요소의 전체 목록으로, 웹 애플리케이션에서 AEM Forms 작업 공간 구성 요소를 통합할 수 있습니다.
 seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 # 재사용 가능한 구성 요소에 대한 설명 {#description-of-reusable-components}
 
-AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html-ws-components-web.md) 특정 구성 요소로 구성된 구성 요소 [폴더 구조](/help/forms/using/folder-structure.md) CRX™. 각 구성 요소에는 폴더 구조에 지정된 위치에 모델, 보기 및 템플릿 파일이 있으며, 다른 구성 요소 파일에 대한 JavaScript™ 종속성, 구성 요소에서 수신한 이벤트 및 AEM Forms 작업 영역에서 이러한 이벤트를 트리거하는 JavaScript 개체가 있습니다. 구성 파일 이름 및 종속성이 있는 재사용 가능한 구성 요소의 전체 목록이 여기에 제공됩니다.
+AEM Forms 작업 영역은 다음으로 구성됩니다. [재사용 가능](/help/forms/using/integrating-html-ws-components-web.md) 특정 구성 요소로 구성된 구성 요소 [폴더 구조](/help/forms/using/folder-structure.md) CRX™. 각 구성 요소에는 폴더 구조에 지정된 위치에 모델, 보기 및 템플릿 파일이 있으며, JavaScript™은 다른 구성 요소 파일에 대한 종속성, 구성 요소가 수신하는 이벤트 및 AEM Forms 작업 영역에서 이러한 이벤트를 트리거하는 JavaScript 개체가 있습니다. 여기에 구성 파일 이름 및 종속성을 포함하여 재사용 가능한 구성 요소의 전체 목록이 제공됩니다.
 
 ## 작업 목록 {#tasklist}
 
@@ -41,9 +41,9 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>구성 요소 필요</p></td>
    <td>
     <ul>
-     <li><p>UserSearch</p></li>
+     <li><p>사용자 검색</p></li>
      <li><p>작업</p></li>
-     <li><p>팀 작업</p></li>
+     <li><p>Teamtask</p></li>
     </ul></td>
   </tr>
   <tr>
@@ -51,16 +51,16 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td>
     <ul>
      <li><p>작업 모델</p></li>
-     <li><p>팀 작업 모델</p></li>
+     <li><p>teamtask 모델</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
-     <li><p>filterSelected - tasklist 모델</p></li>
-     <li><p>제거 - tasklist 모델</p></li>
-     <li><p>updateQueue - tasklist 모델</p></li>
+     <li><p>filterSelected - 작업 목록 모델</p></li>
+     <li><p>제거 - 작업 목록 모델</p></li>
+     <li><p>updateQueue - 작업 목록 모델</p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -68,7 +68,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->사용자 지정 애플리케이션에서 이 구성 요소에 대해 filterSelected 이벤트를 트리거하는 경우, 이 구성 요소는 AEM Forms 작업 공간과 독립적으로 사용할 수 있습니다.
+>사용자 지정 애플리케이션에서 이 구성 요소에 대한 filterSelected 이벤트를 트리거하는 경우 이 구성 요소는 AEM Forms 작업 영역과 독립적으로 사용할 수 있습니다.
 
 ## 작업 {#task}
 
@@ -99,7 +99,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
     </ul></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
      <li><p>submitComplete - 작업 모델</p></li>
@@ -111,7 +111,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->작업 공간에서 이 구성 요소에 대한 작업 모델을 만들기 위해 TaskList 모델의 fetchTasks 함수를 호출합니다.
+>작업 영역은 TaskList 모델의 fetchTasks 함수를 호출하여 이 구성 요소에 대한 작업 모델을 생성합니다.
 
 ## 필터 목록 {#filterlist}
 
@@ -138,14 +138,14 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
-     <li><p>가져오기 - 작업 목록 모델 </p></li>
-     <li><p>제거 - tasklist 모델 </p></li>
-     <li><p>updateQueue - tasklist 모델 </p></li>
-     <li><p>새로 고침큐 - 작업 목록 모델 </p></li>
-     <li><p>filterSelected - tasklist 모델</p></li>
+     <li><p>가져옴 - 작업 목록 모델 </p></li>
+     <li><p>제거 - 작업 목록 모델 </p></li>
+     <li><p>updateQueue - 작업 목록 모델 </p></li>
+     <li><p>refreshedQueue - 작업 목록 모델 </p></li>
+     <li><p>filterSelected - 작업 목록 모델</p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -171,21 +171,21 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>JS 종속성</p> </td>
    <td>
     <ul>
-     <li><p>필드: 큐: { name, qid, isDefault, type}</p> </li>
-     <li><p>필드: 쿼리: string</p> </li>
+     <li><p>필드: 대기열: { name, qid, isDefault, type}</p> </li>
+     <li><p>필드: 쿼리: 문자열</p> </li>
      <li><p>필드: parentView: 필터 목록 보기</p> </li>
-     <li><p>필드: parentModel: 작업 목록 모델</p> </li>
+     <li><p>필드: parentModel: tasklist 모델</p> </li>
      <li><p>필드: 유틸리티</p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>이벤트가 수신됨</p> </td>
+   <td><p>이벤트 청취됨</p> </td>
    <td><p>NA</p> </td>
   </tr>
  </tbody>
 </table>
 
-## TeamQueues {#teamqueues}
+## 팀 큐 {#teamqueues}
 
 <table>
  <tbody>
@@ -210,13 +210,13 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
-     <li><p>가져오기 - 작업 목록 모델 </p></li>
-     <li><p>제거 - tasklist 모델 </p></li>
-     <li><p>updateQueue - tasklist 모델 </p></li>
-     <li><p>teamQueuesConverted - tasklist 모델 </p></li>
+     <li><p>가져옴 - 작업 목록 모델 </p></li>
+     <li><p>제거 - 작업 목록 모델 </p></li>
+     <li><p>updateQueue - 작업 목록 모델 </p></li>
+     <li><p>teamQueuesFetched - 작업 목록 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -247,15 +247,15 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td>
     <ul>
      <li><p>확장 : 필터 보기</p> </li>
-     <li><p>필드 : queue :{ name, qid, isDefault, type }</p> </li>
-     <li><p>필드 : 쿼리 : string</p> </li>
-     <li><p>필드 : parentView : 필터 목록 보기</p> </li>
-     <li><p>필드 : parentModel : 작업 목록 모델</p> </li>
+     <li><p>필드 : 큐 :{ name, qid, isDefault, type }</p> </li>
+     <li><p>필드 : 쿼리 : 문자열</p> </li>
+     <li><p>필드 : parentView : 필터링 목록 보기</p> </li>
+     <li><p>필드 : parentModel : tasklist 모델</p> </li>
      <li><p>필드 : 유틸리티</p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>이벤트가 수신됨</p> </td>
+   <td><p>이벤트 청취됨</p> </td>
    <td><p>NA</p> </td>
   </tr>
  </tbody>
@@ -263,9 +263,9 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->TeamFilter는 TaskList 구성 요소에서 선택한 작업을 나타내는 이벤트를 가져옵니다. 이러한 구성 요소가 모델 클래스를 공유하지만 다른 종속성은 없습니다.
+>TeamFilter는 TaskList 구성 요소에서 선택한 작업을 나타내는 이벤트를 가져옵니다. 이러한 구성 요소는 모델 클래스를 공유하지만 다른 종속성은 없습니다.
 
-## 작업 세부 사항 {#taskdetails}
+## 작업 세부 정보 {#taskdetails}
 
 <table>
  <tbody>
@@ -291,31 +291,31 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
     <ul>
      <li><p>processinstancehistory.html</p> </li>
      <li><p>formrendering 유틸리티</p> </li>
-     <li><p>참고 유틸리티</p> </li>
+     <li><p>notes 유틸리티</p> </li>
      <li><p>첨부 파일 유틸리티</p> </li>
      <li><p>작업 유틸리티</p> </li>
      <li><p>기록 유틸리티</p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p> </td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p> </td>
    <td>
     <ul>
-     <li><p>전달 - 작업 모델</p> </li>
+     <li><p>전달됨 - 작업 모델</p> </li>
      <li><p>공유 - 작업 모델</p> </li>
-     <li><p>상담 - 작업 모델</p> </li>
-     <li><p>거부 - 작업 모델</p> </li>
-     <li><p>포기 - 작업 모델</p> </li>
-     <li><p>unlocked - 작업 모델</p> </li>
-     <li><p>잠긴 - 작업 모델</p> </li>
-     <li><p>클레임 - 작업 모델</p> </li>
-     <li><p>변경:taskselected - tasklist 모델</p> </li>
+     <li><p>참조 - 작업 모델</p> </li>
+     <li><p>거부됨 - 작업 모델</p> </li>
+     <li><p>중단됨 - 작업 모델</p> </li>
+     <li><p>잠금 해제됨 - 작업 모델</p> </li>
+     <li><p>잠김 - 작업 모델</p> </li>
+     <li><p>클레임됨 - 작업 모델</p> </li>
+     <li><p>변경:taskselected - 작업 목록 모델</p> </li>
      <li><p>change:formUrl - 작업 모델</p> </li>
-     <li>attachmentURLFenzed - 작업 모델</li>
+     <li>attachmentURLFetched - 작업 모델</li>
     </ul>
     <ul>
      <li>newAttachment - 작업 모델</li>
-     <li><p>taskHistoryContated - 작업 모델</p> </li>
+     <li><p>taskHistoryFetch - 작업 모델</p> </li>
      <li>prepareForSubmitComplete - 작업 모델</li>
      <li><p>submitComplete - 작업 모델</p> </li>
     </ul> </td>
@@ -337,7 +337,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>템플릿</p></td>
-   <td><p>startprocess.html(경로 폴더)</p></td>
+   <td><p>startprocess.html(경로 폴더 내)</p></td>
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
@@ -347,16 +347,16 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>JS 종속성</p></td>
    <td>
     <ul>
-     <li><p>favoritecoryfactory 모델</p></li>
+     <li><p>즐겨찾기범주팩토리 모델</p></li>
      <li><p>allcategoryfactory 모델</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
-     <li><p>allStartpointsForceed - categorylist 모델 </p></li>
-     <li><p>add - categorylist 모델 </p></li>
+     <li><p>allStartpointsFetch - categorylist 모델 </p></li>
+     <li><p>추가 - categorylist 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -364,7 +364,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->이 구성 요소는 StartPointList, StartPoint 및 Task와 같은 일부 다른 구성 요소의 모델 클래스를 사용합니다. 이 종속성 외에 CategoryList를 독립적으로 사용할 수 있습니다.
+>이 구성 요소는 StartPointList, StartPoint 및 Task와 같은 다른 구성 요소의 모델 클래스를 사용합니다. 이 종속성 외에 CategoryList는 독립적으로 사용할 수 있습니다.
 
 ## 범주 {#category}
 
@@ -395,12 +395,12 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
     </ul></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
-     <li><p>변경됨 - 카테고리 모델 </p></li>
-     <li><p>childrenConverted - 카테고리 모델 </p></li>
-     <li><p>카테고리:선택됨 - 카테고리목록 모델 </p></li>
+     <li><p>변경됨 - 범주 모델 </p></li>
+     <li><p>childrenFetch - 범주 모델 </p></li>
+     <li><p>category:selected - categorylist 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -420,7 +420,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>템플릿</p></td>
-   <td><p>startprocess.html(경로 폴더)</p></td>
+   <td><p>startprocess.html(경로 폴더 내)</p></td>
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
@@ -431,7 +431,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td>
     <ul>
      <li><p>범주 모델</p></li>
-     <li><p>favoritecoryfactory 모델</p></li>
+     <li><p>즐겨찾기범주팩토리 모델</p></li>
      <li><p>allcategoryfactory 모델</p></li>
      <li><p>시작 지점 보기</p></li>
      <li><p>startpointlist 모델</p></li>
@@ -439,15 +439,15 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
      <li><p>작업 모델</p></li>
      <li><p>작업 모델</p></li>
      <li><p>작업 목록 모델</p></li>
-     <li><p>팀 작업 모델</p></li>
+     <li><p>teamtask 모델</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
-     <li><p>카테고리:선택됨 - 카테고리목록 모델 </p></li>
-     <li><p>allStartpointsForceed - categorylist 모델 </p></li>
+     <li><p>category:selected - categorylist 모델 </p></li>
+     <li><p>allStartpointsFetch - categorylist 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -455,7 +455,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->StartPointList 및 CategoryList 구성 요소는 모델 클래스를 공유하므로 모델 클래스는 후자에 따라 다릅니다. 카테고리 목록 은 표시되는 카테고리의 시작 지점에 대한 정보에 액세스합니다. StartPointList를 독립적으로 사용하려면 CategoryList에서 이벤트 트리거를 시뮬레이션합니다.
+>StartPointList 및 CategoryList 구성 요소는 모델 클래스를 공유하므로 전자는 후자에 따라 다릅니다. CategoryList는 표시되는 카테고리의 시작 지점에 대한 정보에 액세스합니다. StartPointList를 독립적으로 사용하려면 CategoryList에서 이벤트 트리거를 시뮬레이션합니다.
 
 ## 시작 지점 {#startpoint}
 
@@ -482,7 +482,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>작업 모델</p></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td><p>변경 - 시작점 모델 </p></td>
   </tr>
  </tbody>
@@ -509,7 +509,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td>
     <ul>
      <li><p>대부분의 유틸리티 클래스</p> </li>
-     <li><p>UserSearch</p> </li>
+     <li><p>사용자 검색</p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -517,31 +517,31 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td>
     <ul>
      <li><p>범주 모델</p> </li>
-     <li><p>favoritecoryfactory 모델</p> </li>
+     <li><p>즐겨찾기범주팩토리 모델</p> </li>
      <li><p>allcategoryfactory 모델</p> </li>
      <li><p>formrendering 유틸리티</p> </li>
-     <li><p>참고 유틸리티</p> </li>
+     <li><p>notes 유틸리티</p> </li>
      <li><p>첨부 파일 유틸리티</p> </li>
      <li><p>작업 유틸리티</p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p> </td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p> </td>
    <td>
     <ul>
-     <li><p>카테고리:선택됨 - 카테고리목록 모델</p> </li>
-     <li><p>change:claikedTask - startpointlist 모델</p> </li>
+     <li><p>category:selected - categorylist 모델</p> </li>
+     <li><p>change:invokedTask - startpointlist 모델</p> </li>
      <li><p>change:formUrl - 작업 모델</p> </li>
-     <li><p>시작점:선택됨 - 시작점 목록 모델</p> </li>
-     <li><p>전달 - 작업 모델</p> </li>
-     <li><p>포기 - 작업 모델</p> </li>
-     <li><p>unlocked - 작업 모델</p> </li>
-     <li><p>잠긴 - 작업 모델</p> </li>
-     <li>attachmentURLFenzed - 작업 모델</li>
+     <li><p>startpoint:selected - startpointlist 모델</p> </li>
+     <li><p>전달됨 - 작업 모델</p> </li>
+     <li><p>중단됨 - 작업 모델</p> </li>
+     <li><p>잠금 해제됨 - 작업 모델</p> </li>
+     <li><p>잠김 - 작업 모델</p> </li>
+     <li>attachmentURLFetched - 작업 모델</li>
      <li>newAttachment - 작업 모델</li>
      <li>prepareForSubmitComplete - 작업 모델 </li>
      <li><p>submitComplete - 작업 모델</p> </li>
-     <li><p>allStartpointsForceed - categorylist 모델</p> </li>
+     <li><p>allStartpointsFetch - categorylist 모델</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -549,9 +549,9 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->StartProcess 및 StartPointList 구성 요소가 모델 클래스를 공유합니다. 이 구성 요소는 StartPointList에서 시작점을 선택하는 것과 관련이 있습니다.
+>StartProcess 및 StartPointList 구성 요소는 모델 클래스를 공유합니다. 이 구성 요소는 StartPointList에서 시작점을 선택하는 것과 관련이 있습니다.
 
-## ProcessNameList {#processnamelist}
+## 프로세스 이름 목록 {#processnamelist}
 
 <table>
  <tbody>
@@ -565,7 +565,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>템플릿</p></td>
-   <td><p>tracking.html(경로 폴더)</p></td>
+   <td><p>tracking.html (route 폴더)</p></td>
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
@@ -573,15 +573,15 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
-   <td><p>프로세스 이름 모델</p></td>
+   <td><p>processname 모델</p></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
      <li><p>add - processnamelist 모델 </p></li>
      <li><p>가져온:processnames - processnamelist 모델 </p></li>
-     <li><p>변경 - processnamist 모델 </p></li>
+     <li><p>변경 - processnamelist 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -589,9 +589,9 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->ProcessNameList는 다른 구성 요소에 종속되지 않습니다. 그러나 내부적으로 ProcessInstanceList 모델 클래스에 따라 ProcessInstanceList 모델 클래스와 다른 구성 요소에 따라 달라집니다. 따라서 ProcessNameList는 ProcessInstanceList, ProcessInstance, TaskList, Teamtask 및 Task와 같은 많은 모델 클래스를 사용합니다. 이러한 종속성 외에도 ProcessNameList를 독립적으로 사용할 수 있습니다.
+>ProcessNameList는 다른 구성 요소에 종속되지 않습니다. 그러나 내부적으로 ProcessInstanceList 모델 클래스에 따라 다르며, 이 클래스는 다른 구성 요소에 따라 다릅니다. 따라서 ProcessNameList는 ProcessInstanceList, ProcessInstance, TaskList, Teamtask 및 Task와 같은 많은 모델 클래스를 사용합니다. 이러한 종속성 외에 ProcessNameList는 독립적으로 사용할 수 있습니다.
 
-## ProcessName {#processname}
+## 프로세스 이름 {#processname}
 
 <table>
  <tbody>
@@ -601,7 +601,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>보기</p></td>
-   <td><p>processname(processnamelist.js에서)</p></td>
+   <td><p>processname(processnamelist.js)</p></td>
   </tr>
   <tr>
    <td><p>템플릿</p></td>
@@ -613,16 +613,16 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
-   <td><p>processincelist 모델</p></td>
+   <td><p>processinstancelist 모델</p></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td><p>변경 - processname 모델 </p></td>
   </tr>
  </tbody>
 </table>
 
-## ProcessInstanceList {#processinstancelist}
+## 프로세스 인스턴스 목록 {#processinstancelist}
 
 <table>
  <tbody>
@@ -636,7 +636,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>템플릿</p></td>
-   <td><p>tracking.html(경로 폴더)</p></td>
+   <td><p>tracking.html (route 폴더)</p></td>
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
@@ -644,14 +644,14 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
-   <td><p>프로세스 이름 모델</p></td>
+   <td><p>processname 모델</p></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
      <li><p>processname:selected - processnamelist 모델 </p></li>
-     <li><p>processname:instanespeduded - processnamelist 모델 </p></li>
+     <li><p>processname:instancesefetch - processnamelist 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -659,9 +659,9 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->ProcessInstanceList에는 인스턴스를 가져오고 표시하는 프로세스 이름을 나타내는 ProcessNameList의 이벤트가 필요합니다. ProcessInstanceList를 독립적으로 사용하려면 이벤트 트리거를 별도로 시뮬레이션합니다.
+>ProcessInstanceList에는 인스턴스를 가져오고 표시할 프로세스 이름을 나타내는 ProcessNameList의 이벤트가 필요합니다. ProcessInstanceList를 독립적으로 사용하려면 이벤트 트리거를 개별적으로 시뮬레이트합니다.
 
-## ProcessInstance {#processinstance}
+## 프로세스 인스턴스 {#processinstance}
 
 <table>
  <tbody>
@@ -671,7 +671,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>보기</p></td>
-   <td><p>processnamist.js 내의 processname</p></td>
+   <td><p>processnamelist.js 내의 processname</p></td>
   </tr>
   <tr>
    <td><p>템플릿</p></td>
@@ -686,13 +686,13 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>작업 목록 모델</p></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
-   <td><p>변경 - 처리 인스턴스 모델 </p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
+   <td><p>변경 - 프로세스 인스턴스 모델 </p></td>
   </tr>
  </tbody>
 </table>
 
-## ProcessInstanceHistory {#processinstancehistory}
+## 프로세스 인스턴스 내역 {#processinstancehistory}
 
 <table>
  <tbody>
@@ -716,17 +716,17 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>JS 종속성</p></td>
    <td>
     <ul>
-     <li><p>프로세스 이름 모델</p></li>
+     <li><p>processname 모델</p></li>
      <li><p>기록 유틸리티</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
      <li><p>processname:selected - processnamelist 모델 </p></li>
-     <li><p>처리 인스턴스:선택됨 - processincelist 모델 </p></li>
-     <li><p>tasksConverted - processinstance 모델 </p></li>
+     <li><p>processinstance:selected - processinstancelist 모델 </p></li>
+     <li><p>tasksFetch - processinstance 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -734,7 +734,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->ProcessInstanceHistory는 ProcessInstanceList의 이벤트를 사용하여 어떤 프로세스 인스턴스의 기록을 표시할지를 지정합니다. 이 종속성 외에, 구성 요소는 독립적으로 사용할 수 있습니다.
+>ProcessInstanceHistory에서는 표시할 프로세스 인스턴스의 내역을 나타내는 ProcessInstanceList의 이벤트가 필요합니다. 이 종속성 외에 구성 요소를 독립적으로 사용할 수 있습니다.
 
 ## OutofOffice {#outofoffice}
 
@@ -754,20 +754,20 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>구성 요소 필요</p> </td>
-   <td><p>UserSearch</p> </td>
+   <td><p>사용자 검색</p> </td>
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
    <td><p>사용자 검색 보기</p> </td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p> </td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p> </td>
    <td>
     <ul>
-     <li><p>outOfOfficeSettingsConverted - office 모델</p> </li>
-     <li><p>outOfOfficeSettingsSaved - office 모델</p> </li>
-     <li><p>processesConverted - Outlook 모델</p> </li>
-     <li><p>principalSelected - principalsearch view</p> </li>
+     <li><p>outOfOfficeSettingsFetched - outofoffice 모델</p> </li>
+     <li><p>outOfOfficeSettingsSaved - outofoffice 모델</p> </li>
+     <li><p>processesFetched - outofoffice 모델</p> </li>
+     <li><p>principalSelected - principalsearch 보기</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -777,7 +777,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 >
 >OutofOffice는 독립적으로 사용할 수 있습니다.
 
-## 공유 큐 {#sharequeue}
+## ShareQueue {#sharequeue}
 
 <table>
  <tbody>
@@ -795,23 +795,23 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>구성 요소 필요</p> </td>
-   <td><p>UserSearch</p> </td>
+   <td><p>사용자 검색</p> </td>
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
    <td><p>사용자 검색 보기</p> </td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p> </td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p> </td>
    <td>
     <ul>
-     <li><p>queueAccessGranted - 공유 큐 모델</p> </li>
-     <li><p>queueAccessRequested - 공유 큐 모델</p> </li>
-     <li><p>grantedUsersConverted - sharequeue 모델</p> </li>
-     <li>accessibleUsersConverted - sharequeue 모델</li>
-     <li><p>queueAccessRevocted - 공유 큐 모델</p> </li>
-     <li><p>queueAccessRemoved - 공유 큐 모델</p> </li>
-     <li><p>principalSelected - principalsearch view</p> </li>
+     <li><p>queueAccessGranted - 공유 모델</p> </li>
+     <li><p>queueAccessRequested - 공유 모델</p> </li>
+     <li><p>grantedUsersFetch - 공유 모델</p> </li>
+     <li>accessibleUsersFetch - 공유 모델</li>
+     <li><p>queueAccessRevocated - 공유 모델</p> </li>
+     <li><p>queueAccessRemoved - 공유 모델</p> </li>
+     <li><p>principalSelected - principalsearch 보기</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -819,7 +819,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->ShareQueue 는 독립적으로 사용할 수 있습니다.
+>ShareQueue는 독립적으로 사용할 수 있습니다.
 
 ## UISettings {#uisettings}
 
@@ -846,11 +846,11 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
-     <li><p>preferencesConverted - 설정 모델 </p></li>
-     <li><p>settingUpdated - 설정 모델 </p></li>
+     <li><p>preferencesFetch - uisettings 모델 </p></li>
+     <li><p>settingUpdated - uisettings 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -858,9 +858,9 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->UISettings 는 독립적으로 사용할 수 있습니다.
+>UISettings는 독립적으로 사용할 수 있습니다.
 
-## 앱 탐색 {#appnavigation}
+## AppNavigation {#appnavigation}
 
 <table>
  <tbody>
@@ -885,7 +885,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>이벤트가 수신됨</p></td>
+   <td><p>이벤트 청취됨</p></td>
    <td><p>NA</p></td>
   </tr>
  </tbody>
@@ -895,7 +895,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 >
 >AppNavigation은 독립적으로 사용할 수 있습니다.
 
-## UserInfo {#userinfo}
+## 사용자 정보 {#userinfo}
 
 <table>
  <tbody>
@@ -920,12 +920,12 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>NA</p> </td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p> </td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p> </td>
    <td>
     <ul>
-     <li>userImageUrlPeded - userinfo 모델</li>
-     <li>sessionResolified - userinfo 모델 <br /> </li>
-     <li>sessionExpired - userinfo 모델 </li>
+     <li>userImageUrlFetch - userinfo 모델</li>
+     <li>sessionRenewed - 사용자 정보 모델 <br /> </li>
+     <li>sessionExpired - 사용자 정보 모델 </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -935,7 +935,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
 >
 >UserInfo는 독립적으로 사용할 수 있습니다.
 
-## WSError {#wserror}
+## WSEerror {#wserror}
 
 <table>
  <tbody>
@@ -960,13 +960,13 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p></td>
-   <td><p>newWsError - 미러 모델 </p></td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p></td>
+   <td><p>newWsError - wserror 모델 </p></td>
   </tr>
  </tbody>
 </table>
 
-## UserSearch {#usersearch}
+## 사용자 검색 {#usersearch}
 
 <table>
  <tbody>
@@ -991,11 +991,11 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>NA</p> </td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p> </td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p> </td>
    <td>
     <ul>
-     <li>principalSearch - principalsearch 모델</li>
-     <li>outOfOfficeInfoPeded - usersearch 모델</li>
+     <li>principalSearched - principalsearch 모델</li>
+     <li>outOfOfficeInfoFetch - usersearch 모델</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -1011,7 +1011,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>보기</p> </td>
-   <td><p>searchtemplate(searchtemplatelist.js에서) </p> </td>
+   <td><p>searchtemplate (searchtemplatelist.js) </p> </td>
   </tr>
   <tr>
    <td><p>템플릿</p> </td>
@@ -1026,8 +1026,8 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td><p>NA</p> </td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p> </td>
-   <td><p>templateConverted-searchtemplate 모델</p> </td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p> </td>
+   <td><p>templateFetched- searchtemplate 모델</p> </td>
   </tr>
  </tbody>
 </table>
@@ -1046,7 +1046,7 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>템플릿</p> </td>
-   <td><p>tracking.html(경로 폴더)</p> </td>
+   <td><p>tracking.html (route 폴더)</p> </td>
   </tr>
   <tr>
    <td><p>구성 요소 필요</p> </td>
@@ -1054,10 +1054,10 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
-   <td><p>검색 템플릿 모델</p> </td>
+   <td><p>searchtemplate 모델</p> </td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p> </td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p> </td>
    <td><p>변경 - searchtemplatelist 모델</p> </td>
   </tr>
  </tbody>
@@ -1088,8 +1088,8 @@ AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html
    <td>NA<br /> </td>
   </tr>
   <tr>
-   <td><p>수신한 이벤트(이벤트 이름 - 트리거)</p> </td>
-   <td><p>searchTemplate:selected - searchtemplate model</p> </td>
+   <td><p>이벤트 수신(이벤트 이름 - 트리거)</p> </td>
+   <td><p>searchTemplate:selected - searchtemplate 모델</p> </td>
   </tr>
  </tbody>
 </table>

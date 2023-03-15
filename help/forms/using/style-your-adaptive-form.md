@@ -204,7 +204,7 @@ ht-degree: 8%
      <tr> 
       <td>텍스트</td> 
       <td>글꼴 모음</td> 
-      <td>굴림</td> 
+      <td>Arial</td> 
      </tr> 
      <tr> 
       <td>텍스트</td> 
@@ -273,12 +273,12 @@ ht-degree: 8%
      <tr> 
       <td>텍스트<br /> </td> 
       <td>글꼴 모음</td> 
-      <td>굴림</td> 
+      <td>Arial</td> 
      </tr> 
      <tr> 
       <td>텍스트</td> 
       <td>글꼴 색상</td> 
-      <td>FFFF</td> 
+      <td>FFFFFF</td> 
      </tr> 
      <tr> 
       <td>텍스트</td> 
@@ -352,7 +352,7 @@ ht-degree: 8%
      <tr> 
       <td>배경</td> 
       <td>배경색</td> 
-      <td>FFFF</td> 
+      <td>FFFFFF</td> 
      </tr> 
      <tr> 
       <td>테두리</td> 
@@ -377,7 +377,7 @@ ht-degree: 8%
      <tr> 
       <td>텍스트</td> 
       <td>글꼴 모음</td> 
-      <td>굴림</td> 
+      <td>Arial</td> 
      </tr> 
      <tr> 
       <td>텍스트</td> 

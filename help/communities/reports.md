@@ -126,7 +126,7 @@ When [Adobe Analytics이 활성화되어 있습니다](/help/communities/sites-c
 
 보고서 기준을 선택합니다.
 
-* **[!UICONTROL 사이트]**
+* **[!UICONTROL Site]**
 
    커뮤니티 사이트를 선택합니다.
 
@@ -155,7 +155,7 @@ When [Adobe Analytics이 활성화되어 있습니다](/help/communities/sites-c
 
 보고서 기준을 선택합니다.
 
-* **[!UICONTROL 사이트]**
+* **[!UICONTROL Site]**
 
    커뮤니티 사이트를 선택합니다.
 

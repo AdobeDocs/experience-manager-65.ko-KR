@@ -14,8 +14,8 @@ legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-usin
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '438'
+ht-degree: 86%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 >
 >업데이트 기간을 변경하려면 [가져오기 간격을 구성](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval)하십시오.
 
-1. 를 엽니다. **Sites** console; 예 [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. 를 엽니다. **사이트** 콘솔 - 예 [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
 1. 도구 모음의 맨 오른쪽에 있는(오른쪽 위 모서리) 아이콘을 클릭하거나 탭하여 **목록 보기**&#x200B;를 선택합니다(표시되는 아이콘은 [현재 보기](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)에 따라 달라집니다.).
 
 1. 다시 도구 모음의 맨 오른쪽에 있는(오른쪽 위 모서리) 아이콘을 클릭하거나 탭한 다음, **설정 보기**&#x200B;를 선택합니다. **열 구성** 대화 상자가 열립니다. 필요한 변경 작업을 수행하고 **업데이트**&#x200B;를 확인하십시오.
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 현재 보고 기간은 사이트 콘솔의 도구 모음에 표시됩니다(맨 위 도구 모음의 오른쪽). 드롭다운을 사용하여 필요한 보고 기간을 선택하십시오.
 
-![aa-05](assets/aa-05.png)
+![aa-5](assets/aa-05.png)
 
 ### 사용 가능한 데이터 열 구성 {#configuring-available-data-columns}
 
@@ -66,7 +66,7 @@ analytics-administrators 사용자 그룹의 구성원은 작성자가 추가 An
 >
 >페이지 트리에 다른 Adobe Analytics 클라우드 구성과 연관된 하위가 있는 경우 페이지에 사용 가능한 데이터 열을 구성할 수 없습니다.
 
-1. 목록 보기에서 보기 선택기(도구 모음의 오른쪽)를 사용하여 **설정 보기** 그리고 **사용자 지정 분석 데이터 추가**.
+1. 목록 보기에서 보기 선택기(도구 모음의 오른쪽)를 사용하여 **설정 보기** 그런 다음 **사용자 지정 Analytics 데이터 추가**.
 
    ![spad-03](assets/spad-03.png)
 
@@ -74,11 +74,11 @@ analytics-administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
    표시되는 열은 Adobe Analytics에서 검색됩니다.
 
-   ![aa-16](assets/aa-16.png)
+   ![aa-](assets/aa-16.png)
 
 ### 사이트에서 컨텐츠 인사이트 열기 {#opening-content-insights-from-sites}
 
-열기 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md) 페이지 효과를 자세히 조사하려면 사이트 콘솔에서 를 클릭하십시오.
+열기 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md) 를 클릭하여 페이지 효과를 추가로 조사하십시오.
 
 1. 사이트 콘솔에서 컨텐츠 인사이트를 보려는 페이지를 선택합니다.
 1. 도구 모음에서 [분석 및 권장 사항] 아이콘을 클릭합니다.

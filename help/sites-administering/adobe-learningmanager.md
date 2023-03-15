@@ -1,5 +1,5 @@
 ---
-title: Adobe Adobe Learning Manager와 통합 사용
+title: Adobe Adobe Learning Manager와 통합
 seo-title: Integrating with Adobe Learning Manager
 description: AEM을 Adobe Learning Manager와 통합하는 방법을 알아봅니다.
 seo-description: Learn how to integrate AEM Adobe Learning Manager.

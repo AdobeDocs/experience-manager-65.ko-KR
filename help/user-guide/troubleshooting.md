@@ -15,16 +15,16 @@ ht-degree: 6%
 
 ## 다른 인스턴스 성능 문제 해결 {#performance}
 
-[AEM 작성자 인스턴스 문제 해결에 대한 이 안내서 및 팁을 참조하십시오.](/help/sites-authoring/troubleshooting.md)
+[AEM 작성자 인스턴스 문제 해결을 위한 팁과 이 안내서를 참조하십시오.](/help/sites-authoring/troubleshooting.md)
 
 ## 관리 문제 해결 {#administering}
 
-[AEM에서 관리 문제를 해결하기 위한 이 안내서와 팁을 참조하십시오.](/help/sites-administering/troubleshoot.md)
+[AEM의 관리 문제 해결을 위한 팁과 안내서를 참조하십시오.](/help/sites-administering/troubleshoot.md)
 
 ## AEM 로그 문제 해결 {#logs}
 
-[AEM 로그 문제 해결에 대한 이 안내서 및 팁을 참조하십시오.](/help/sites-administering/troubleshooting.md)
+[AEM 로그 문제를 해결하는 방법은 이 안내서와 팁을 참조하십시오.](/help/sites-administering/troubleshooting.md)
 
 ## 복제 문제 해결 {#replication}
 
-[AEM의 복제 문제 해결에 대한 이 안내서와 팁을 참조하십시오.](/help/sites-deploying/troubleshoot-rep.md)
+[AEM에서 복제 문제를 해결하기 위한 팁과 안내서를 참조하십시오.](/help/sites-deploying/troubleshoot-rep.md)

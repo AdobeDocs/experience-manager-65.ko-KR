@@ -9,7 +9,7 @@ exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -32,18 +32,18 @@ ht-degree: 9%
 | 형식 | 스토리지 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | 편집 | 메타데이터 원본에 쓰기 | 인사이트 |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
-| PNM | ✓ | ✓ | - | - | - | - | ✓ |
-| PGM | ✓ | ✓ | - | - | - | - | ✓ |
-| PBM | ✓ | ✓ | - | - | - | - | ✓ |
-| PPM | ✓ | ✓ | - | - | - | - | ✓ |
-| PSD ‡ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
-| PICT | - | - | - | - | - | - | ✓ |
-| PSB | ✓ | ✓ | ✓ | ✓ | - | - | - |
+| BMP | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| PNM | ✓ | ✓ | − | − | − | − | ✓ |
+| PGM | ✓ | ✓ | − | − | − | − | ✓ |
+| PBM | ✓ | ✓ | − | − | − | − | ✓ |
+| PPM | ✓ | ✓ | − | − | − | − | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | − | ✓ | − |
+| PICT | − | − | − | − | − | − | ✓ |
+| PSB | ✓ | ✓ | ✓ | ✓ | − | − | − |
 
 병합된 ‡ 이미지가 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
@@ -63,12 +63,12 @@ ht-degree: 9%
 
 | 형식 | 스토리지 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ |  | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | − | − |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ | − | ✓ | − |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
 
 ## 지원되는 PDF 래스터라이저 라이브러리 {#supported-pdf-rasterizer-library}
 
@@ -98,47 +98,47 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 | 형식 | 스토리지 | [메타데이터 관리](metadata.md) | 전체 텍스트<br> 추출 | [메타데이터 추출](metadata.md) | 축소판<br> 세대 | [하위 자산 추출](managing-linked-subassets.md) | [메타데이터 원본에 쓰기](xmp-writeback.md) | [연결된 자산](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
-| DOC | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
-| ODT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
+| DOC | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| ODT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
-| RTF | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
-| TXT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
-| XLS | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
-| ODS | ✓ | ✓ | ✓ | - | - | - | - | - |
-| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
-| ODP | ✓ | ✓ | ✓ | - | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
-| PS | ✓ | ✓ | - | - | - | - | - | - |
-| QXP | ✓ | ✓ | - | - | - | - | - | - |
-| ePub | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
+| HTML | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| RTF | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| TXT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| XLS | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| ODS | ✓ | ✓ | ✓ | − | − | − | − | − |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| ODP | ✓ | ✓ | ✓ | − | − | − | − | − |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
+| PS | ✓ | ✓ | − | − | − | − | − | − |
+| QXP | ✓ | ✓ | − | − | − | − | − | − |
+| ePub | ✓ | ✓ | − | ✓ | ✓ | − | − | − |
 
 ## 지원되는 멀티미디어 형식 {#supported-multimedia-formats}
 
 |  | 스토리지 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | FFmpeg 코드 변환 |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ | - | - | &#42; |
-| MIDI | ✓ | ✓ | - | - | &#42; |
-| 3GP | ✓ | ✓ | - | - | &#42; |
-| MP3 | ✓ | ✓ | ✓ | - | &#42; |
-| MPG | ✓ | ✓ | - | - | &#42; |
-| OGA | ✓ | ✓ | - | - | &#42; |
-| OGG | ✓ | ✓ | - | - | &#42; |
-| RA | ✓ | ✓ | - | - | &#42; |
-| WAV | ✓ | ✓ | - | - | &#42; |
-| WMA | ✓ | ✓ | - | - | &#42; |
-| DVI | ✓ | ✓ | - | &#42; | &#42; |
-| FLV | ✓ | ✓ | - | &#42; | &#42; |
-| M4V | ✓ | ✓ | - | &#42; | &#42; |
-| MPEG | ✓ | ✓ | - | &#42; | &#42; |
-| OGV | ✓ | ✓ | - | &#42; | &#42; |
-| 이동 | ✓ | ✓ | - | &#42; | &#42; |
-| WMV | ✓ | ✓ | - | &#42; | &#42; |
-| SWF | ✓ | ✓ | - | - | - |
+| AAC | ✓ | ✓ | − | − | &#42; |
+| MIDI | ✓ | ✓ | − | − | &#42; |
+| 3GP | ✓ | ✓ | − | − | &#42; |
+| MP3 | ✓ | ✓ | ✓ | − | &#42; |
+| MPG | ✓ | ✓ | − | − | &#42; |
+| OGA | ✓ | ✓ | − | − | &#42; |
+| OGG | ✓ | ✓ | − | − | &#42; |
+| RA | ✓ | ✓ | − | − | &#42; |
+| WAV | ✓ | ✓ | − | − | &#42; |
+| WMA | ✓ | ✓ | − | − | &#42; |
+| DVI | ✓ | ✓ | − | &#42; | &#42; |
+| FLV | ✓ | ✓ | − | &#42; | &#42; |
+| M4V | ✓ | ✓ | − | &#42; | &#42; |
+| MPEG | ✓ | ✓ | − | &#42; | &#42; |
+| OGV | ✓ | ✓ | − | &#42; | &#42; |
+| 이동 | ✓ | ✓ | − | &#42; | &#42; |
+| WMV | ✓ | ✓ | − | &#42; | &#42; |
+| SWF | ✓ | ✓ | − | − | − |
 
 ## 지원되는 아카이브 형식 {#supported-archive-formats}
 
@@ -146,10 +146,10 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 | 형식 | 스토리지 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| JAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| RAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| TAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| JAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| RAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| TAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | ZIP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## 기타 지원되는 형식 {#other-supported-formats}
@@ -158,11 +158,11 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 | 형식 | 스토리지 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| SVG | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| SVG | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JavaScript(자체 게재 도메인으로 구성된 경우) | - | - | - | - | - | ✓ |
+| JavaScript(자체 게재 도메인으로 구성된 경우) | − | − | − | − | − | ✓ |
 
 >[!NOTE]
 >
@@ -186,7 +186,7 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 | AVI | video/x-msvideo |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | BMP | image/bmp |  |  |
 | CSS | 텍스트/css |  |  |
-| 문서 | application/msword |  |  |
+| DOC | application/msword |  |  |
 | EPS | <ul><li>application/postscript</li><li>애플리케이션/eps</li><li>application/x-eps</li><li>이미지/eps</li><li>이미지/x-eps</li></ul> |  |  |
 | F4V | video/x-f4v |  | ExcludeMasterVideoFromAVS |
 | FLA | application/x-shockwave-flash |  |  |
@@ -197,7 +197,7 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 | ICM | application/vnd.iccprofile |  |  |
 | INDD | application/x-indesign |  |  |
 | JPEG | image/jpeg |  |  |
-| JPG | 이미지/jpeg |  |  |
+| JPG | image/jpeg |  |  |
 | M2V | video/mpeg |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | M4V | video/x-m4v |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | 이동 | video/quicktime |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
@@ -238,14 +238,14 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 |---|---|---|---|
 | AVI | A/V 인터리브 | XVID, DIVX, HDV, MiniDV(DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3(IV30), MJPEG, Microsoft® 비디오 1(MS-CRAM) |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF(벡터 애니메이션 파일) |
-| M4V | Apple iTunes | H264/AVC | - |
-| MKV | 마트로스카 | H264/AVC | - |
+| M4V | Apple iTunes | H264/AVC | − |
+| MKV | 마트로스카 | H264/AVC | − |
 | 이동, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV(DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
-| MP4 | MPEG-4 | H264/AVC(모든 프로필) | - |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| WebM | WebM | Google VP8 | - |
+| MP4 | MPEG-4 | H264/AVC(모든 프로필) | − |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
+| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
+| WebM | WebM | Google VP8 | − |
 | WMV | Windows Media 9 | WMV3(v9), WMV2(v8), WMV1(v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® 화면(MSS2), Microsoft® 사진 스토리(WVP2) |
 
 이 ‡ 비디오 형식은 아직 Dynamic Media의 대화형 비디오에서 사용하거나 Experience Manager Assets의 주석에서 사용할 수 없습니다.
@@ -254,8 +254,8 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 | 형식 | 업로드<br> (입력 형식) | 만들기<br> 이미지<br> 사전 설정<br> (출력 형식) | 미리 보기<br> 동적<br> 렌디션 | 배달<br> 동적<br> 렌디션 | 다운로드<br> 동적<br> 렌디션 |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | − | − | − |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (아래 참고 참조) | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
@@ -275,13 +275,13 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 | 형식 | 업로드<br> (입력 형식) | 만들기<br> 이미지<br> 사전 설정<br> (출력 형식) | 미리 보기<br> 동적<br> 렌디션 | 배달<br> 동적<br> 렌디션 | 다운로드<br> 동적<br> 렌디션 | 이 형식을 지원하는 형식 설정 |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
-| BMP | ✓ | - | - | - | - | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
-| PSD ‡ | ✓ | - | - | - | - | - |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| PICT | ✓ | - | - | - | - | - |
+| BMP | ✓ | − | − | − | − | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
+| PSD ‡ | ✓ | − | − | − | − | − |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| PICT | ✓ | − | − | − | − | − |
 
 병합된 ‡ 이미지가 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 

@@ -12,8 +12,8 @@ discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '750'
+ht-degree: 12%
 
 ---
 
@@ -39,7 +39,7 @@ We.Retail은 AEM 표준 참조 구현으로서 AEM의 가장 강력한 기능 �
 | [HTML 템플릿 언어](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | 모든 구성 요소는 HTL을 기반으로 합니다 |  |
 | [eCommerce 기능](/help/commerce/cif-classic/developing/ecommerce.md) | 제품 카탈로그 기능 |  |
 | [커뮤니티 사이트](/help/communities/overview.md) | 방문자가 커뮤니티 토론, 블로그 읽기 등에 참여할 수 있도록 허용 |  |
-| [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며 보다 편리하게 사용할 수 있으며 사용자가 즉시 구성할 수 있습니다 | [해 봐!](/help/sites-developing/we-retail-core-components.md) |
+| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며 보다 편리하게 사용할 수 있으며 사용자가 즉시 구성할 수 있습니다 | [해 봐!](/help/sites-developing/we-retail-core-components.md) |
 | [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) | We.Retail 경험 섹션에서는 컨텐츠 조각을 통해 컨텐츠를 재사용하는 기능을 보여줍니다. | [한번 해봐!](/help/sites-developing/we-retail-content-fragments.md) |
 | [경험 조각](/help/sites-authoring/experience-fragments.md) | 경험 조각은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. | [한번 해봐!](/help/sites-developing/we-retail-experience-fragments.md) |
 

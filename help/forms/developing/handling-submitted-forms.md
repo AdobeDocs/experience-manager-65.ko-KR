@@ -93,7 +93,7 @@ Forms 서비스를 호출하는 웹 애플리케이션을 고려합니다. Forms
    <td><p>웹 페이지에는 Forms 서비스를 호출하는 Java 서블릿에 액세스하는 링크가 포함되어 있습니다.</p></td>
   </tr>
   <tr>
-   <td><p>2개</p></td>
+   <td><p>2</p></td>
    <td><p>Forms 서비스는 대화형 PDF 양식을 클라이언트 웹 브라우저에 렌더링합니다.</p></td>
   </tr>
   <tr>
@@ -219,7 +219,7 @@ Forms API(Java)를 사용하여 제출된 양식을 처리합니다.
 
       * 다음 `com.adobe.idp.Document` 양식 데이터를 포함하는 객체입니다.
       * 모든 관련 HTTP 헤더를 포함하는 환경 변수를 지정하는 문자열 값입니다. 처리할 콘텐츠 유형을 지정합니다. XML 데이터를 처리하려면 이 매개 변수에 다음 문자열 값을 지정합니다. `CONTENT_TYPE=text/xml`. PDF 데이터를 처리하려면 이 매개 변수에 다음 문자열 값을 지정합니다. `CONTENT_TYPE=application/pdf`.
-      * 를 지정하는 문자열 값 `HTTP_USER_AGENT` 헤더 값(예: ). `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. 이 매개 변수 값은 선택 사항입니다.
+      * 를 지정하는 문자열 값 `HTTP_USER_AGENT` 헤더 값(예: ). `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`을 따르지 않는 경우입니다. 이 매개 변수 값은 선택 사항입니다.
       * A `RenderOptionsSpec` 런타임 옵션을 저장하는 개체입니다.
 
       다음 `processFormSubmission` 메서드 반환 `FormsResult` 양식 제출 결과가 포함된 객체입니다.

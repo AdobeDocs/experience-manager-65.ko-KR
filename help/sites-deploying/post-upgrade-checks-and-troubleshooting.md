@@ -201,6 +201,6 @@ grep -v UnrelatedErrorString
 
 이 상태로 이어지는 유효한 사례가 있을 수 있고 응용 프로그램에서 이 오류가 실제 오류인지 확인할 수 없으므로 몇 가지 오류도 WARN 메시지를 찾을 수 있습니다. 이 메시지들도 반드시 참고하세요.
 
-### Adobe 지원에 문의 {#contacting-adobe-support}
+### Adobe 지원 센터 문의 {#contacting-adobe-support}
 
 이 페이지의 조언 내용을 완료했지만 여전히 문제가 표시되는 경우 Adobe 지원에 문의하십시오. 지원 엔지니어가 사용 중인 경우 최대한 많은 정보를 제공하려면 업그레이드의 upgrade.log 파일을 포함해야 합니다.

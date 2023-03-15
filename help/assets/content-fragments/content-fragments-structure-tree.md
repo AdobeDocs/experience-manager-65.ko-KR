@@ -7,7 +7,7 @@ exl-id: 1cf8d3a3-1d9a-42fc-9da0-a20c65f021e4
 source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,6 +23,6 @@ AEM의 콘텐츠 조각 편집기의 구조 트리 기능을 사용하여 Headle
 
 >[!NOTE]
 >
->기본 패널에서 탐색 표시를 사용하여 시작 지점으로 다시 이동할 수 있습니다.
+>기본 패널에서 탐색 표시를 사용하여 시작점으로 돌아갈 수 있습니다.
 
 ![콘텐츠 조각 구조 트리](assets/cfm-structuretree-02.png)

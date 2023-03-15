@@ -1,7 +1,7 @@
 ---
 title: 페이지 작성
 seo-title: Authoring Pages
-description: AEM으로 작성하는 방법에 대한 두 가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 페이지 작성에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(높은 수준)
+description: AEM을 사용한 작성에는 두 가지 개요가 있습니다. (1) 작성자의 첫 번째 단계 - 새로운 작성자를 위한 소개 및 (2) 페이지 작성에 대한 빠른 안내 - 주요 작업에 대한 빠른 안내(높은 수준).
 seo-description: There are two overviews to authoring with AEM. (1) First Steps for Authors - an introduction for new authors, and (2) Quick Guide to Authoring Pages - a quick guide (high-level) to the main actions.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
@@ -19,7 +19,7 @@ ht-degree: 86%
 
 # 페이지 작성{#authoring-pages}
 
-다음은 AEM을 사용한 작성에 대한 개요를 제공합니다.
+다음은 AEM을 사용하여 작성하는 방법에 대한 개요입니다.
 
 * [작성을 위한 첫 번째 단계](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - 새 작성자를 위한 소개
 

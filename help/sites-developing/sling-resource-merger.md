@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # AEM에서 Sling Resource Merger 사용{#using-the-sling-resource-merger-in-aem}
 
-## 목적 {#purpose}
+## 용도 {#purpose}
 
 Sling Resource Merger는 리소스에 액세스하고 병합하는 서비스를 제공합니다. 이 플러그인은 두 가지 모두에 대한 차이(차이점) 메커니즘을 제공합니다.
 

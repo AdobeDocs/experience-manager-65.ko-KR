@@ -12,8 +12,8 @@ discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '414'
+ht-degree: 11%
 
 ---
 
@@ -21,32 +21,32 @@ ht-degree: 0%
 
 [페이지 속성의 벌크 편집](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) 여러 페이지의 속성을 한 번에 편집할 수 있습니다.
 
-다른 값이 있을 수 있으므로 페이지 속성이 기본값으로 벌크 편집용으로 활성화되지 않습니다. 명시적으로 허용되어야 합니다(활성화됨). 벌크 편집에 사용할 수 있는 페이지 속성을 정의할 때는 다음과 같은 특정 의미를 고려해야 합니다.
+값이 다를 수 있으므로 페이지 속성은 기본값으로 벌크 편집을 활성화하지 않습니다. 명시적으로 허용(활성화)되어야 합니다. 벌크 편집에 사용할 수 있는 페이지 속성을 정의할 때는 다음과 같은 특정 의미를 고려해야 합니다.
 
-* 특정 필드는 일반적으로 고유합니다. 예: 페이지 제목. 이러한 필드를 벌크 편집에 사용할 수 있도록 하는 것이 어떤 의미인지 결정해야 합니다. 이때 하나의 값이 적용됩니다.
-* 특정 필드에는 여러 값이 있을 수 있습니다. 이 경우 렌더링 시 의미 있는 표현이 필요합니다.
+* 특정 필드는 일반적으로 고유합니다(예: 페이지 제목). 하나의 값이 적용될 때 일괄 편집에 이러한 필드를 활성화하는 것이 의미가 있는지 여부를 결정해야 합니다.
+* 특정 필드에는 여러 값이 있을 수 있습니다. 렌더링할 때 의미 있는 표현이 필요합니다.
 
-   예를 들어 &quot;게시 준비&quot;를 나타내는 확인란이 있습니다. 벌크 편집 전에 여러 값이 있을 수 있습니다(예: 준비, 검토 중, 진행 중).
+   예를 들어 &quot;게시 준비&quot;를 나타내는 확인란입니다. 이 값에는 벌크 편집 전에 여러 값이 있을 수 있습니다(예: 준비, 검토 중, 진행 중).
 
 >[!CAUTION]
 >
->페이지 속성의 벌크 편집은 다음과 같습니다.
+>페이지 속성의 벌크 편집:
 >
 >* 클래식 UI에서는 사용할 수 없습니다.
->* Live Copy 내의 페이지에는 사용할 수 없습니다.
+>* 라이브 카피 내의 페이지에는 사용할 수 없습니다.
 >* 리소스 유형이 동일한 페이지에만 사용할 수 있습니다.
 >
 
 
 >[!NOTE]
 >
->벌크 편집은 자산에 대해서도 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 [다중 자산의 속성 편집](/help/assets/metadata.md)을 참조하십시오. 을 사용하여 자산에 대한 벌크 메타데이터 편집기에서 필드를 사용자 지정할 수 있습니다. [스키마 편집기](/help/assets/metadata-schemas.md).
+>에셋에 대해서도 벌크 편집을 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 [다중 자산의 속성 편집](/help/assets/metadata.md)을 참조하십시오. 에셋용 벌크 메타데이터 편집기에서 필드를 사용자 지정하려면 [스키마 편집기](/help/assets/metadata-schemas.md).
 
 ## 필드 활성화 {#enabling-a-field}
 
 >[!NOTE]
 >
->특정 필드에는 여러 값이 있을 수 있습니다. 이 경우 렌더링 시 의미 있는 표현이 필요합니다. 이러한 이유로 다음 필드 유형만 활성화해야 합니다.
+>특정 필드에는 여러 값이 있을 수 있습니다. 렌더링할 때 의미 있는 표현이 필요합니다. 이러한 이유로 다음 필드 유형만 활성화해야 합니다.
 >
 >* `/libs/granite/ui/components/foundation/form/textfield`
 >* `/libs/granite/ui/components/foundation/form/textarea`
@@ -57,41 +57,41 @@ ht-degree: 0%
 >
 
 
-페이지 구성 요소에서 필드가 활성화되어 있습니다(*not* 템플릿):
+필드는 페이지 구성 요소에서 활성화됩니다(*아님* (템플릿에서):
 
-1. CRXDE Lite(또는 그에 상응하는 메서드)를 사용하여 페이지 구성 요소를 엽니다.
+1. CRXDE Lite(또는 이와 동등한 방법)를 사용하여 페이지 구성 요소를 엽니다.
 
    예를 들어`/apps/core/wcm/components/page/v1/page`
 
    >[!NOTE]
    >
-   >이 예에서는 인스턴스에 코어 구성 요소가 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 컨텐츠로 실행 중입니다. 자세한 내용은 [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 추가 정보.
+   >이 예제에서는 핵심 구성 요소가 인스턴스에 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 콘텐츠로 실행되는 경우입니다. 다음을 참조하십시오. [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 추가 정보.
 
-1. 내에서 필요한 필드로 이동합니다 `cq:dialog` 정의.
+1. 내에서 필요한 필드로 이동합니다. `cq:dialog` 정의.
 1. 필드 노드에서 다음 속성을 정의합니다.
 
    * **이름**: `allowBulkEdit`
    * **유형**: `Boolean`
    * **값**: `true`
 
-   예를 들어, 표준 페이지의 경우 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md):
+   (예: 표준 페이지) [기초 구성 요소](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
 
-   속성은 다음에 정의되어 있습니다.
+   속성은 다음에 정의됩니다.
 
    `cq:dialog/content/items/tabs/items/basic/items/column/items/onofftime/items/ondate`
 
    >[!CAUTION]
    >
-   >사용자 ***반드시*** 에서 아무것도 변경하지 않음 `/libs` 경로.
+   >본인 ***필수*** 의 아무 것도 변경하지 마십시오. `/libs` 경로.
    >
-   >왜냐하면 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰여지며, 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있습니다.
+   >이는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수도 있음).
    >
-   >구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
+   >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
    >
-   >    1. 필요한 항목(즉, 가 존재함에 따라)을 다시 만듭니다 `/libs`) 아래의 `/apps`
-   >    1. 내에서 변경 `/apps`
+   >    1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
+   >    1. 다음 범위 내에서 변경 `/apps`
 
 
-1. 선택 **모두 저장** 업데이트를 유지합니다.
+1. 선택 **모두 저장** 을 클릭하여 업데이트를 유지합니다.

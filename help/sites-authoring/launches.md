@@ -104,9 +104,9 @@ ht-degree: 94%
 
 >[!CAUTION]
 >
->Launch 페이지에서 구성 요소 순서 재지정은 지원되지 않습니다.
+>Launch 페이지에서 구성 요소의 순서를 변경할 수 없습니다.
 >
->페이지가 홍보되면 모든 컨텐츠 변경 사항이 반영되지만 구성 요소 위치는 변경되지 않습니다.
+>페이지가 홍보되면 콘텐츠 변경 사항이 반영되지만 구성 요소 위치는 변경되지 않습니다.
 
 
 ### 론치 콘솔 {#the-launches-console}
@@ -115,11 +115,11 @@ ht-degree: 94%
 
 * **도구** 콘솔: **도구**, **사이트**, **론치**
 
-* 또는 [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* 또는 을 사용하여 직접 [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
-## 참조의 론치(사이트 콘솔) {#launches-in-references-sites-console}
+## 참조의 론치 (Sites 콘솔) {#launches-in-references-sites-console}
 
-1. **사이트** 콘솔에서 론치의 소스로 이동합니다.
+1. **Sites** 콘솔에서 론치의 소스로 이동합니다.
 1. **참조** 레일을 열고 소스 페이지를 선택합니다.
 1. **론치**&#x200B;를 선택합니다. 그러면 기존 론치가 나열됩니다.
 

@@ -20,16 +20,16 @@ ht-degree: 0%
 
 ## 개요 {#overview}
 
-PDF 변환 서비스는 PDF 문서를 PostScript 또는 이미지 파일(JPEG, JPEG 2000, PNG 및 TIFF)으로 변환합니다. PDF 문서를 PostScript로 변환하는 것은 모든 PostScript 프린터에서 자동 서버 기반 인쇄에 유용합니다. PDF 문서를 지원하지 않는 컨텐츠 관리 시스템에서 문서를 아카이빙할 때 PDF 문서를 다중 페이지 TIFF 파일로 변환하는 것이 실용적입니다.
+PDF 변환 서비스는 PDF 문서를 PostScript 또는 이미지 파일(JPEG, JPEG 2000, PNG 및 TIFF)로 변환합니다. PDF 문서를 PostScript로 변환하면 모든 PostScript 프린터에서 무인 서버 기반 인쇄에 유용합니다. PDF 문서를 다중 페이지 TIFF 파일로 변환하는 것은 PDF 문서를 지원하지 않는 컨텐츠 관리 시스템에 문서를 보관할 때 실용적입니다.
 
-변환 PDF 서비스를 사용하여 다음을 수행할 수 있습니다.
+PDF 변환 서비스를 사용하여 다음을 수행할 수 있습니다.
 
-* PDF 문서를 PostScript로 변환합니다. PostScript로 변환할 때 변환 작업을 사용하여 소스 문서와 PostScript 수준 2 또는 3으로 변환할지 여부를 지정할 수 있습니다. PostScript 파일로 변환하는 PDF 문서는 비대화형 문서여야 합니다.
-* PDF 문서를 JPEG, JPEG 2000, PNG 및 TIFF 이미지 형식으로 변환합니다. 이러한 이미지 형식으로 변환할 때 변환 작업을 사용하여 소스 문서와 이미지 옵션 사양을 지정할 수 있습니다. 사양에는 이미지 변환 형식, 이미지 해상도 및 색상 변환과 같은 다양한 기본 설정이 포함되어 있습니다.
+* PDF 문서를 PostScript로 변환합니다. PostScript로 변환할 때 변환 작업을 사용하여 소스 문서를 지정하고 PostScript 레벨 2로 변환할지 또는 3으로 변환할지 여부를 지정할 수 있습니다. PostScript 파일로 변환하는 PDF 문서는 비대화형이어야 합니다.
+* PDF 문서를 JPEG, JPEG 2000, PNG 및 TIFF 이미지 형식으로 변환합니다. 이러한 이미지 형식으로 변환할 때 변환 작업을 사용하여 소스 문서와 이미지 옵션 사양을 지정할 수 있습니다. 명세서에는 영상 변환 포맷, 영상 해상도, 색 변환 등과 같은 다양한 선호도가 포함된다.
 
 ## 서비스의 속성 구성   {#properties}
 
-를 사용할 수 있습니다 **AEMFD ConvertPDF 서비스** AEM 콘솔에서 이 서비스에 대한 속성을 구성하십시오. AEM 콘솔의 기본 URL은 `https://[host]:'port'/system/console/configMgr`.
+다음을 사용할 수 있습니다. **AEMFD ConvertPDF 서비스** AEM 콘솔에서 이 서비스에 대한 속성을 구성합니다. AEM 콘솔의 기본 URL은 입니다. `https://[host]:'port'/system/console/configMgr`.
 
 ## 서비스 사용 {#using-the-service}
 
@@ -37,7 +37,7 @@ ConvertPDF 서비스는 다음 두 가지 API를 제공합니다.
 
 * **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: PDF 문서를 PostScript 파일로 변환합니다.
 
-* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: PDF 문서를 이미지 파일로 변환합니다. 지원되는 이미지 형식은 JPEG, JPEG2000, PNG 및 TIFF입니다.
+* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: PDF 문서를 이미지 파일로 변환합니다. 지원되는 이미지 형식은 JPEG, JPEG 2000, PNG 및 TIFF 입니다.
 
 ### JSP 또는 서블릿에서 toPS API 사용 {#using-tops-api-with-a-jsp-or-servlets}
 
@@ -83,7 +83,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### JSP 또는 서블릿에 toImage API 사용 {#using-toimage-api-with-a-jsp-or-servlets}
+### JSP 또는 서블릿에서 toImage API 사용 {#using-toimage-api-with-a-jsp-or-servlets}
 
 ```jsp
 <%@ page import="java.util.List, java.io.File,
@@ -130,13 +130,13 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### AEM 워크플로우에서 ConvertPDF 서비스 사용 {#using-convertpdf-service-with-aem-workflows}
+### AEM 워크플로에서 ConvertPDF 서비스 사용 {#using-convertpdf-service-with-aem-workflows}
 
-워크플로우에서 ConvertPDF 서비스를 실행하는 것은 JSP/서블릿에서 실행되는 것과 비슷합니다.
+워크플로우에서 ConvertPDF 서비스를 실행하는 것은 JSP/Servlet에서 실행하는 것과 비슷합니다.
 
-유일한 차이는 JSP/Servlet에서 서비스를 실행하는 것입니다. 문서 객체는 ResourceResolverHelper 개체에서 ResourceResolver 개체의 인스턴스를 자동으로 검색합니다. 코드가 워크플로우에서 호출되면 이 자동 메커니즘이 작동하지 않습니다. 워크플로의 경우 ResourceResolver 개체의 인스턴스를 Document 클래스 생성자에 명시적으로 전달합니다. 그런 다음 Document 개체는 제공된 ResourceResolver 개체를 사용하여 저장소에서 콘텐츠를 읽습니다.
+유일한 차이점은 JSP/Servlet에서 서비스를 실행한다는 것입니다. 문서 개체는 ResourceResolverHelper 개체에서 ResourceResolver 개체의 인스턴스를 자동으로 검색합니다. 워크플로우에서 코드가 호출될 때 이 자동 메커니즘이 작동하지 않습니다. 워크플로의 경우 ResourceResolver 개체의 인스턴스를 Document 클래스 생성자에 명시적으로 전달합니다. 그런 다음 Document 개체는 제공된 ResourceResolver 개체를 사용하여 저장소의 콘텐츠를 읽습니다.
 
-다음 샘플 워크플로우 프로세스는 입력 문서를 PostScript 문서로 변환합니다. 코드가 ECMAScript로 작성되고 문서가 워크플로우 페이로드로 전달됩니다.
+다음 샘플 워크플로 프로세스는 입력 문서를 PostScript 문서로 변환합니다. 코드는 ECMAScript에 기록되며 문서는 워크플로 페이로드로 전달됩니다.
 
 ```javascript
 /*

@@ -25,7 +25,7 @@ Adobe Analytics과 AEM을 통합하여 웹 페이지 활동을 추적할 수 있
 * Adobe Analytics 구성을 사용하면 AEM에서 Adobe Analytics를 인증할 수 있습니다.
 * 프레임워크는 Adobe Analytics 보고서 세트로 전송되는 데이터를 식별합니다.
 
-이 데이터에는 페이지 및 사용자 데이터가 포함됩니다. 예:
+데이터에는 페이지 및 사용자 데이터가 포함됩니다. 예를 들면 다음과 같습니다.
 
 * AEM 구성 요소가 수집하는 데이터
 * 링크 클릭
@@ -34,13 +34,13 @@ Adobe Analytics과 AEM을 통합하여 웹 페이지 활동을 추적할 수 있
 
 다음 페이지는 통합을 구성하는 데 도움이 됩니다.
 
-* [Adobe Analytics 연결 및 프레임워크 생성](/help/sites-administering/adobeanalytics-connect.md)
+* [Adobe Analytics 연결 및 프레임워크 만들기](/help/sites-administering/adobeanalytics-connect.md)
 * [Adobe Analytics를 위한 링크 추적 구성](/help/sites-administering/adobeanalytics-link.md)
 * [Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑](/help/sites-administering/adobeanalytics-mapping.md)
 * [Adobe Analytics를 위한 비디오 추적 구성](/help/sites-administering/adobeanalytics-video.md)
 * [Adobe 분류](/help/sites-administering/adobeanalytics-classifications.md)
 
-를 사용할 수도 있습니다 [옵트인 마법사](/help/sites-administering/opt-in.md) 통합을 쉽게 수행할 수 있습니다.
+다음을 사용할 수도 있습니다 [옵트인 마법사](/help/sites-administering/opt-in.md) 통합을 쉽게 수행할 수 있습니다.
 
 >[!NOTE]
 >

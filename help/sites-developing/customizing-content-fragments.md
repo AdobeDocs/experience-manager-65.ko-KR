@@ -477,7 +477,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
    * 편집 세션이 있고 변경 사항이 지속되지 않은 경우 손실된 컨텐츠를 사용자에게 알리고 해당 컨텐츠를 페이지에 유지할 수 있도록 양식 확인 대화 상자가 표시됩니다.
 
-## 예제 {#examples}
+## 예 {#examples}
 
 ### 예: 기존 컨텐츠 조각 액세스 {#example-accessing-an-existing-content-fragment}
 

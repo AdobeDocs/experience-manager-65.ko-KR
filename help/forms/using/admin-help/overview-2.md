@@ -1,5 +1,5 @@
 ---
-title: 인증서 및 자격 증명 관리 기본 사항
+title: 인증서 및 자격 증명 관리의 기본 사항
 seo-title: Basics of managing certificates and credentials
 description: 인증서 및 자격 증명 관리의 기본 사항에 대해 알아봅니다.
 seo-description: Learn about the basics of managing certificates and credentials.
@@ -17,19 +17,19 @@ ht-degree: 0%
 
 ---
 
-# 인증서 및 자격 증명 관리 기본 사항 {#basics-of-managing-certificates-and-credentials}
+# 인증서 및 자격 증명 관리의 기본 사항 {#basics-of-managing-certificates-and-credentials}
 
-A *자격 증명* 문서에 서명하거나 식별하는 데 필요한 개인 키 정보를 포함합니다. A *인증서* 는 신뢰에 대해 구성하는 공개 키 정보입니다. AEM Forms는 여러 용도로 인증서 및 자격 증명을 사용합니다.
+A *자격 증명* 문서에 서명하거나 문서를 식별하는 데 필요한 개인 키 정보를 포함합니다. A *인증서* 는 트러스트에 대해 구성하는 공개 키 정보입니다. AEM forms에서는 여러 가지 용도로 인증서 및 자격 증명을 사용합니다.
 
-* Acrobat Reader DC 확장은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. (자세한 내용은 [Acrobat Reader DC 확장에서 사용할 자격 증명 구성](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions))
-* 신뢰할 수 있는 발행자의 자격 증명으로만 Acrobat에 사용할 자격 증명을 표시하도록 Rights Management을 구성할 수 있습니다. (자세한 내용은 [Rights Management 표시 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)) 인증서에 일반 이름(CN)이 있어야 합니다.
+* Acrobat Reader DC 확장은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. (참조: [Acrobat Reader DC 확장에 사용할 자격 증명 구성](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
+* 신뢰할 수 있는 발급자에서만 Acrobat에서 사용할 자격 증명을 표시하도록 Rights Management을 구성할 수 있습니다. (참조: [Rights Management 표시 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) 인증서에 CN(일반 이름)이 있어야 합니다.
 * 서명 서비스는 인증서 및 자격 증명에 액세스합니다. 서명 서비스에 대한 자세한 내용은 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_65).
 
 **쌍 키 생성**
 
-AEM forms에서는 Trust Store를 사용하여 인증서, 자격 증명 및 CRL(인증서 해지 목록)을 저장하고 관리합니다. 또한 독립적인 HSM(하드웨어 보안 모듈) 장치를 사용하여 개인 키를 저장할 수 있습니다.
+AEM forms는 Trust Store를 사용하여 인증서, 자격 증명 및 CRL(인증서 해지 목록)을 저장하고 관리합니다. 또한 독립 하드웨어 보안 모듈(HSM) 장치를 사용하여 개인 키를 저장할 수 있습니다.
 
-AEM Forms에서는 키 쌍을 생성하는 옵션을 제공하지 않습니다. 그러나 Java 키 도구와 같은 도구를 사용하여 생성한 다음 AEM Forms Trust Store에서 가져올 수 있습니다. Java 키 도구에 대한 자세한 내용은 다음을 참조하십시오.
+AEM forms는 키 쌍을 생성하는 옵션을 제공하지 않습니다. 그러나 Java 키 도구와 같은 도구를 사용하여 생성하고 AEM Forms Trust Store에서 가져올 수 있습니다. Java 키 도구에 대한 자세한 내용은 다음을 참조하십시오.
 
 [https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html](https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html)
 
@@ -37,7 +37,7 @@ AEM Forms에서는 키 쌍을 생성하는 옵션을 제공하지 않습니다. 
 
 [https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
-지원되는 서명 유형은 AEM Forms에서 가져올 수 있습니다.
+지원되는 서명 유형은 다음과 같습니다. AEM Forms로 가져올 수 있습니다.
 
 * XML 서명
 * XMLTimeStampToken
@@ -46,10 +46,10 @@ AEM Forms에서는 키 쌍을 생성하는 옵션을 제공하지 않습니다. 
 * PKCS#1
 * DSA 서명
 
-**분실되거나 손상된 키 처리**
+**분실 또는 손상된 키 처리**
 
-키가 손실되었거나 손상되었다고 의심되는 경우 다음 조치를 수행하십시오.
+키가 손실되었거나 손상된 것으로 의심되는 경우 다음 조치를 취하십시오.
 
-1. 인증서 해지 목록에 손상된 키를 추가하여 키를 취소하도록 인증 기관에 알립니다.
-1. 인증 기관에서 새 키 및 인증서를 받습니다.
-1. 새 키를 사용하여 손상된 키를 사용하여 서명된 문서에 다시 서명합니다.
+1. 인증 기관이 인증서 취소 목록에 손상된 키를 추가하여 키를 취소하도록 인증 기관에 알립니다.
+1. 인증 기관에서 새 키와 해당 인증서를 받습니다.
+1. 손상된 키를 사용하여 서명한 문서에 새 키를 사용하여 다시 서명합니다.

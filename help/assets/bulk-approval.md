@@ -97,7 +97,7 @@ ht-degree: 5%
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. 클릭 **[!UICONTROL 제출]**&#x200B;를 클릭한 다음 **[!UICONTROL 완료]** 확인 메시지를 닫습니다. 새 작업에 대한 알림이 승인자에게 전송됩니다.
+1. 클릭 **[!UICONTROL 제출]**&#x200B;를 클릭한 다음 **[!UICONTROL 완료]** 확인 메시지를 닫습니다. A notification for the new task is sent to the approver.
 1. 에 로그인합니다. [!DNL Assets] 승인자로 이동하여 [!DNL Assets] 콘솔. 자산을 승인하려면 **[!UICONTROL 알림 을 참조하십시오]** 그런 다음 목록에서 검토 작업을 선택합니다.
 1. 에서 **[!UICONTROL 작업 검토]** 페이지에서 검토 작업의 세부 사항을 검토한 다음 **[!UICONTROL 검토]**.
 1. 컬렉션의 모든 자산이 검토 페이지에 표시됩니다. 자산을 선택하고 을(를) 클릭합니다 **[!UICONTROL 승인/거부]** 자산을 승인하거나 거부하려면 적절하게 사용하십시오.

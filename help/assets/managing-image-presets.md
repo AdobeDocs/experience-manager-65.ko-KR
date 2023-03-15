@@ -128,12 +128,12 @@ PDF 또는 AI 워크플로우를 래스터화하는 인수
   </tr>
   <tr>
    <td>최대 너비</td>
-   <td>2048년</td>
+   <td>2048</td>
    <td>생성된 미리 보기 표현물의 최대 너비(픽셀 단위)입니다.<br /> </td>
   </tr>
   <tr>
    <td>최대 높이</td>
-   <td>2048년</td>
+   <td>2048</td>
    <td>생성된 미리 보기 표현물의 최대 높이(픽셀 단위)입니다.<br /> </td>
   </tr>
   <tr>
@@ -214,7 +214,7 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
 
    ![6_5_dynamicmediaprocesseassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Tap the **[!UICONTROL Process Thumbnails]** step, then tap the **[!UICONTROL Thumbnails]** tab. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인]**.
+1. Tap the **[!UICONTROL Process Thumbnails]** step, then tap the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
 
    >[!NOTE]
    >

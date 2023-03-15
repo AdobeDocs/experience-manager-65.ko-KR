@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # PDF 파일의 사용 권한 검토 {#review-the-usage-rights-of-a-pdf-file}
 
-PDF 파일을 Acrobat Reader DC Extensions 웹 애플리케이션에 업로드할 때 다음 정보를 볼 수 있습니다. 확장 여부, 적용된 사용 권한 및 만료 날짜를 확인합니다.
+PDF 파일을 Acrobat Reader DC 확장 웹 애플리케이션에 업로드할 때 이 정보를 확인하여 확장 Reader 여부, 적용된 사용 권한 및 만료 날짜를 확인할 수 있습니다.
 
-1. 에서 Acrobat Reader DC 확장 웹 애플리케이션에 로그인합니다. `http://[localhost]:[port]/ReaderExtensions` (다음과 같은 경우) *[포트]* 은 애플리케이션 서버의 포트 번호입니다.)
-1. 찾아보기 를 클릭하여 PDF 파일을 업로드한 다음 정보를 클릭합니다. 정보는 파일 이름 아래에 나타납니다.
+1. 에서 Acrobat Reader DC 확장 웹 애플리케이션에 로그인합니다. `http://[localhost]:[port]/ReaderExtensions` (여기서 *[포트]* 는 애플리케이션 서버의 포트 번호입니다.
+1. 찾아보기 를 클릭하여 PDF 파일을 업로드한 다음 정보 를 클릭합니다. 파일 이름 아래에 정보가 표시됩니다.
 
    파일의 사용 권한 수정에 대한 자세한 내용은 Acrobat Reader DC 확장 도움말 을 참조하십시오.

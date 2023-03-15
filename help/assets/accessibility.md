@@ -227,5 +227,5 @@ CRUD 작업, 자산 다운로드, 메타데이터 추가와 같은 많은 자산
 >* [의 접근성 기능 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [각 서비스 팩 릴리스에서 수행된 개선 사항에 대한 릴리스 노트입니다](/help/release-notes/release-notes.md).
 >* [[!DNL Adobe Experience Manager] 액세스 가능성 지침](/help/managing/web-accessibility.md).
->* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/accessibility/compliance.html).
+>* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/kr/accessibility/compliance.html).
 

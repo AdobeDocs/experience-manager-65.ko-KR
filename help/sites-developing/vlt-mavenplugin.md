@@ -4,8 +4,8 @@ description: Content Package Maven 플러그인을 사용하여 AEM 응용 프�
 exl-id: 002c00ba-eda1-4481-bc35-1f4d972e4073
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '159'
+ht-degree: 9%
 
 ---
 

@@ -48,14 +48,14 @@ Apache Solr 다운로드 및 설치:
 
 ## SolrCloud 모드 {#solrcloud-mode}
 
-[SolrCloud](https://solr.apache.org/guide/6_6/solrcloud.html) 프로덕션 환경에는 모드가 권장됩니다. SolrCloud 모드에서 실행 중인 경우 MLS(다국어 검색)를 설치하기 전에 SolrCloud를 설치 및 구성해야 합니다.
+[SolrCloud](https://solr.apache.org/guide/6_6/solrcloud.html) 모드는 프로덕션 환경에 권장됩니다. SolrCloud 모드에서 실행하는 경우 MLS(다국어 검색)를 설치하기 전에 SolrCloud를 설치하고 구성해야 합니다.
 
 SolrCloud 지침에 따라 설치하는 것이 좋습니다.
 
-* 동일한 서버에 SolrCloud 노드 3개.
-* 외부 Apache 동물원은 키퍼입니다.
+* 동일한 서버에 SolrCloud 노드 3개
+* 외부 Apache Zookeeper.
 
-메모리 사용 및 가비지 수집을 조정하도록 JVM을 구성하는 것도 좋습니다.
+또한 메모리 사용량 및 가비지 수집을 조정하도록 JVM을 구성하는 것이 좋습니다.
 
 ### JVM 구성 예 {#jvm-configuration-example}
 
@@ -63,20 +63,20 @@ SolrCloud 지침에 따라 설치하는 것이 좋습니다.
 JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
 ```
 
-### SolrCloud 설치 명령 {#solrcloud-setup-commands}
+### SolrCloud 설정 명령 {#solrcloud-setup-commands}
 
 SolrCloud 모드에서 실행할 때 MLS 설치 전에 다음 SolrCloud 설정 명령에 대한 사용 및 지식이 필요합니다.
 
-#### 1. 구성을 동물원은 Keeper에 업로드합니다 {#upload-a-configuration-to-zookeeper}
+#### 1. ZooKeeper에 구성 업로드 {#upload-a-configuration-to-zookeeper}
 
 참조:
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
 
-사용: sh ./scripts/cloud-scripts/zkcli.sh \
+사용법: sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd upconfig \
 -zkhost *server:port* \
 -confname *myconfig-name *\
--solhome *solr-home-path* \
+-solrhome *solr-home-path* \
 -confdir *config-dir*
 
 #### 2. 컬렉션 만들기 {#create-a-collection}
@@ -84,23 +84,23 @@ SolrCloud 모드에서 실행할 때 MLS 설치 전에 다음 SolrCloud 설정 �
 참조:
 [https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
-사용량:
+사용:
 ./bin/solr 만들기 \
 -c *mycollection-name*\
 -d *config-dir* \
 -n *myconfig-name* \
 -p *포트*\
--s *표준 수* \
+-s *샤드 수* \
 -rf *복제본 수*
 
-#### 3. 구성 세트에 컬렉션을 연결합니다 {#link-a-collection-to-a-configuration-set}
+#### 3. 구성 세트에 컬렉션 연결 {#link-a-collection-to-a-configuration-set}
 
-컬렉션을 동물원은 Keeper에 이미 업로드한 구성에 연결합니다.
+ZooKeeper에 이미 업로드된 구성에 컬렉션을 연결합니다.
 
 참조:
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
 
-사용: sh ./scripts/cloud-scripts/zkcli.sh \
+사용법: sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd linkconfig \
 -zkhost *server:port* \
 -collection *mycollection-name* \
@@ -142,26 +142,26 @@ AEM 커뮤니티용 MLS는 표준 MLS 또는 고급 MLS로 사용할 수 있습�
 
 #### AEM 6.1 Solr 검색, 표준 MLS 및 고급 MLS 비교 {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**참고**: AEM 6.1은 AEM 6.1 Communities FP3 및 이전 버전을 참조합니다.
+**참고**: AEM 6.1은 AEM 6.1 커뮤니티 FP3 및 이전 버전을 나타냅니다.
 
-![solr-mls 비교](assets/compare-solr-mls.png)
+![compare-solr-mls](assets/compare-solr-mls.png)
 
 ### 표준 MLS 설치 {#installing-standard-mls}
 
-SRP 컬렉션(MSRP 또는 DSRP)의 경우, 표준 MLS(다국어 검색)를 지원하려면 솔러의 구성 파일 중 두 개를 수정해야 합니다.
+SRP 컬렉션(MSRP 또는 DSRP)의 경우 표준 다국어 검색(MLS)을 지원하려면 Solr의 구성 파일 중 두 개를 수정해야 합니다.
 
 * **schema.xml**
 * **solrconfig.xml**
 
 Solr 4.10용 표준 MLS 파일(schema.xml, solrconfig.xml)
 
-Solr 5.x용 표준 MLS 파일(schema.xml, solrconfig.xml)
+Solr 5.x용 표준 MLS 파일(schema.xml, solrconfig.xml)입니다.
 
 표준 MLS 파일은 AEM 저장소에 저장됩니다.
 
-**참고**: Solr 파일은 msrp/ 폴더에 저장되지만 DSRP에도 사용됩니다(변경 사항이 필요하지 않음).
+**참고**: Solr 파일이 msrp/ 폴더에 저장되는 반면 DSRP용입니다(변경 필요 없음).
 
-**다운로드 지침**: 바꾸기 `solrX` with `solr4` 또는 `solr5` 적절한 경우입니다.
+**다운로드 지침**: 바꾸기 `solrX` 포함 `solr4` 또는 `solr5` 적절합니다.
 
 1. CRXDE|Lite를 사용하여 다음을 찾습니다.
 
@@ -207,16 +207,16 @@ Solr 5.x용 표준 MLS 파일(schema.xml, solrconfig.xml)
 1. 백업 **schema.xml** 및 **solrconfig.xml** Solr 구성 디렉토리에서 다음 작업을 수행합니다.
 
    * Solr4: `solr-install-dir/example/solr/collection1/conf/`
-   * Solr5에 대해 만들어짐: `solr-install-dir/server/solr/collection1/conf/`
+   * Solr5에 대해 작성됨: `solr-install-dir/server/solr/collection1/conf/`
 
-1. 다운로드한 컨텐츠 복사 **schema.xml** 및 **solrconfig.xml** 동일한 디렉토리에 추가합니다.
+1. 다운로드한 항목 복사 **schema.xml** 및 **solrconfig.xml** 동일한 디렉토리에 추가합니다.
 
-1. 솔러를 다시 시작합니다.
-1. MSRP의 경우 [MSRP 재색인 도구](#msrpreindextool)새 설치가 아닌 한.
+1. Solr을 다시 시작합니다.
+1. MSRP의 경우 다음을 실행합니다. [MSRP 색인 재지정 도구](#msrpreindextool)새 설치가 아닌 경우
 
 ### 고급 MLS 설치 {#installing-advanced-mls}
 
-고급 MLS를 지원하기 위해 SRP 컬렉션(MSRP 또는 DSRP)의 경우 사용자 지정 스키마 및 솔루션 구성 외에 새로운 솔루션 플러그인이 필요합니다. 필요한 모든 항목은 다운로드 가능한 zip 파일에 패키지됩니다. 또한 솔러가 독립형 모드로 배포될 때 사용할 설치 스크립트가 포함됩니다.
+SRP 컬렉션(MSRP 또는 DSRP)이 고급 MLS를 지원하려면 사용자 지정 스키마 및 Solr 구성 외에 새로운 Solr 플러그인이 필요합니다. 모든 필수 항목은 다운로드 가능한 zip 파일로 패키지됩니다. 또한 Solr이 독립형 모드로 배포될 때 사용할 설치 스크립트가 포함됩니다.
 
 고급 MLS 패키지를 가져오려면 다음을 참조하십시오 [AEM 고급 MLS](deploy-communities.md#aem-advanced-mls) 를 클릭합니다.
 
@@ -234,7 +234,7 @@ SolrCloud 또는 독립형 모드에 대한 설치를 시작하려면 다음을 
 
    * **schema.xml**
    * **solrconfig.xml**
-   * **stopwords/** 폴더
+   * **중지 단어/** 폴더
    * **프로필/** 폴더
    * **extra-libs/** 폴더
 
@@ -242,28 +242,28 @@ SolrCloud 또는 독립형 모드에 대한 설치를 시작하려면 다음을 
 
    1. 만들기 *new-config-dir*
 
-      * 예 `solr-install-dir/myconfig/`
+      * 과 같은 `solr-install-dir/myconfig/`
       * 하위 폴더 만들기 `stopwords/` 및 `lang/`
-   1. 기존 Solr 구성 디렉토리의 내용을 *new-config-dir*
+   1. 기존 Solr 구성 디렉터리의 내용을 *new-config-dir*
 
       * Solr4: 복사 `solr-install-dir/example/solr/collection1/conf/`
-      * Solr5의 경우: 복사 `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
-   1. 추출된 을 복사합니다. **schema.xml** 및 **solrconfig.xml** to *new-config-dir* 를 눌러 기존 파일을 덮어씁니다.
-   1. Solr5의 경우: 복사 `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` to `new-config-dir/lang/`
-   1. 추출된 을 복사합니다. **stopwords/** 폴더 대상 *new-config-dir* 결과 `new-config-dir/stopwords/*.txt`
+      * Solr5: 복사 `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
+   1. 추출된 항목 복사 **schema.xml** 및 **solrconfig.xml** 끝 *new-config-dir* 기존 파일을 덮어씁니다.
+   1. Solr5: 복사 `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` 끝 `new-config-dir/lang/`
+   1. 추출된 항목 복사 **중지 단어/** 폴더 위치: *new-config-dir* 의 결과로 `new-config-dir/stopwords/*.txt`
 
 
 
-1. [새 구성 업로드](#upload-a-configuration-to-zookeeper) 동물원 관리자
-1. 새 복사본 **프로필/** 폴더...
+1. [새 구성 업로드](#upload-a-configuration-to-zookeeper) ZooKeeper에게
+1. 새 항목 복사 **프로필/** 폴더 ...
 
    * Solr4: 각 노드의 리소스/폴더에 복사
-   * Solr5의 경우: 각 Solr 설치의 서버/리소스/폴더에 복사합니다. 모든 노드가 동일한 Solr 설치 디렉터리에 있는 경우 이 단계는 한 번만 수행됩니다.
+   * Solr5의 경우: 각 Solr 설치의 서버/리소스/ 폴더로 복사합니다. 모든 노드가 동일한 Solr 설치 디렉토리에 있는 경우 이 단계는 한 번만 수행됩니다.
 
-1. 만들기 **lib/** SolrCloud에 있는 각 노드의 solr-home 디렉토리(solr.xml 포함)에 있는 폴더입니다. 다음 위치의 jar을 각 노드의 새 lib/폴더로 복사합니다.
+1. 만들기 **lib/** solrCloud에 있는 각 노드의 solr-home 디렉터리(solr.xml 포함)에 있는 폴더입니다. 다음 위치에서 각 노드의 새 라이브러리/폴더로 jar를 복사합니다.
 
    * **extra-libs/** 고급 MLS 패키지에서 추출됨
-   * *solr-install-dir/contribb/extraction/lib/*.jar
+   * *solr-install-dir/contrib/extraction/lib/*.jar
    * *solr-install-dir/dist/solr-cell*.jar
    * *solr-install-dir/contribub/clustering/lib/*.jar
    * *solr-install-dir/dist/solr-clustering*.jar

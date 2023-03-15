@@ -32,7 +32,7 @@ Granite 옵트아웃 서비스 Adobe을 구성하여 웹 페이지에서 쿠키�
 
 서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성 추가](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). 다음 표에서는 두 방법 중 하나에 필요한 속성에 대해 설명합니다. OSGi 구성의 경우 서비스 PID는 다음과 같습니다 `com.adobe.granite.optout`.
 
-| 속성 이름(웹 콘솔) | OSGi 속성 이름 | 설명 |
+| 속성 이름 (웹 콘솔) | OSGi 속성 이름 | 설명 |
 |---|---|---|
 | 옵트아웃 쿠키 | optout.cookies | 사용자의 장치에 있을 때 사용자가 쿠키 사용에 동의하지 않았음을 나타내는 쿠키의 이름입니다. |
 | 옵트아웃 HTTP 헤더 | optout.headers | 사용자가 쿠키 사용에 동의하지 않았음을 나타내는 HTTP 헤더의 이름입니다. |

@@ -13,14 +13,14 @@ docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2072'
+ht-degree: 8%
 
 ---
 
 # AEM용 SPA 개발{#developing-spas-for-aem}
 
-SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭한 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 작성하려고 하며 작성자는 이러한 프레임워크를 사용하여 작성된 사이트의 AEM 내에서 컨텐츠를 원활하게 편집하려고 합니다.
+SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 적합한 멋진 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 작성하려고 하며 작성자는 해당 프레임워크를 통해 빌드된 사이트의 AEM 내에서 콘텐츠를 원활하게 편집하려고 합니다.
 
 이 문서에서는 프런트엔드 개발자에게 AEM for SPA을 개발하도록 권유할 때 고려해야 할 중요한 질문을 제시하며 AEM에서 SPA 배포과 관련된 AEM 아키텍처에 대한 개요를 제공합니다.
 
@@ -30,12 +30,12 @@ SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭
 
 ## AEM 개발 원칙 {#spa-development-principles-for-aem}
 
-AEM에서 단일 페이지 애플리케이션을 개발하는 경우 프런트 엔드 개발자는 SPA을 만들 때 표준 우수 사례를 관찰한다고 가정합니다. 프런트 엔드 개발자로서 이러한 일반 모범 사례와 AEM 관련 원칙을 따르는 경우 SPA은 [AEM 및 컨텐츠 작성 기능](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
+AEM을 통해 단일 페이지 애플리케이션을 개발하면 프론트엔드 개발자가 SPA를 제작하는 도중 표준 모범 사례를 준수하는 것으로 간주됩니다. 프런트 엔드 개발자로서 이러한 일반 모범 사례와 AEM 관련 원칙을 따르는 경우 SPA은 [AEM 및 컨텐츠 작성 기능](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
-* **[휴대성](/help/sites-developing/spa-architecture.md#portability) -** 모든 구성 요소와 마찬가지로 구성 요소를 가능한 한 휴대용으로 만들어야 합니다. SPA은 휴대용 및 재사용 가능한 구성 요소로 구축되어야 합니다.
-* **[AEM 드라이브 사이트 구조](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - 프런트 엔드 개발자는 구성 요소를 만들고 내부 구조를 소유하지만, AEM을 사용하여 사이트의 컨텐츠 구조를 정의합니다.
-* **[동적 렌더링](/help/sites-developing/spa-architecture.md#dynamic-rendering)** - 모든 렌더링은 동적이여야 합니다.
-* **[동적 라우팅](#dynamic-routing) -** SPA은 라우팅을 담당하고 AEM은 이를 바탕으로 라우트와 페치를 수신합니다. 모든 라우팅도 동적이여야 합니다.
+* **[휴대성](/help/sites-developing/spa-architecture.md#portability) -** 모든 구성 요소와 마찬가지로 구성 요소를 가능한 한 휴대용으로 만들어야 합니다. SPA는 이동 및 재사용할 수 있는 구성 요소로 빌드해야 합니다.
+* **[AEM 실행 사이트 구조](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - 프론트엔드 개발자는 구성 요소를 만들고 내부 구조를 가지고 있지만 AEM을 사용하여 사이트의 콘텐츠 구조를 정의할 수 있습니다.
+* **[동적 렌더링](/help/sites-developing/spa-architecture.md#dynamic-rendering)** - 모든 렌더링은 동적이어야 합니다.
+* **[동적 라우팅](#dynamic-routing) -** SPA은 라우팅을 담당하고 AEM은 이를 바탕으로 라우트와 페치를 수신합니다. 모든 라우팅 또한 동적이어야 합니다.
 
 SPA을 개발할 때 이러한 원칙을 염두에 두는 경우 지원되는 모든 AEM 작성 기능을 활성화하면서 가능한 한 유연하고 향후 증거입니다.
 
@@ -67,7 +67,7 @@ SPA은 컨텐츠의 동적 렌더링만 사용해야 합니다. 이는 AEM이 �
 
 ## AEM Project Archetype {#aem-project-archetype}
 
-모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html): React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용합니다.
+AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
 
 ## SPA 디자인 모델 {#spa-design-models}
 

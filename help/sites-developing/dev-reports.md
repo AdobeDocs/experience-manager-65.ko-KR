@@ -654,7 +654,7 @@ N:definitions
 
          추가할 경로를 정의합니다.
 
-      * `propertyName` (필수입니다)
+      * `propertyName` (mandatory)
 
          실제 값이 있는 확인된 경로에서 속성을 정의합니다.
 

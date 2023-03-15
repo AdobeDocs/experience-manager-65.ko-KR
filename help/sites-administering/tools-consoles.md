@@ -59,7 +59,7 @@ ht-degree: 44%
   </tr>
   <tr>
    <td> </td>
-   <td>태깅</td>
+   <td>태그 지정</td>
   </tr>
   <tr>
    <td> </td>
@@ -139,7 +139,7 @@ ht-degree: 44%
   </tr>
   <tr>
    <td> </td>
-   <td>작업</td>
+   <td>Jobs</td>
   </tr>
   <tr>
    <td>사이트</td>
@@ -291,7 +291,7 @@ ht-degree: 44%
   </tr>
   <tr>
    <td> </td>
-   <td>Dynamic Media 구성<br /> </td>
+   <td>Dynamic Media 구성<br />을 따르지 않는 경우입니다 </td>
   </tr>
   <tr>
    <td> </td>
@@ -370,7 +370,7 @@ ht-degree: 44%
  <tbody>
   <tr>
    <th>페이지 또는 폴더</th>
-   <th>목적</th>
+   <th>용도</th>
   </tr>
   <tr>
    <td>MSM Control Center</td>
@@ -445,7 +445,7 @@ ht-degree: 44%
    <td>계정을 만들거나 암호를 재설정할 때 사용자가 자동으로 받는 이메일을 구성하고, 재설정된 암호를 확인할 수 있습니다.</td>
   </tr>
   <tr>
-   <td>세그멘테이션</td>
+   <td>세분화</td>
    <td>사이트 방문자가 갖는 관심사와 목표는 매우 다양합니다. 이러한 목표를 이해하고 방문자의 기대를 충족할 수 있어야 온라인 마케팅의 성공이 보장됩니다. 세그멘테이션은 방문자의 세부 사항을 분석하고 특성을 지정하여 이를 달성하는 데 도움이 됩니다.<br /> </td>
   </tr>
   <tr>

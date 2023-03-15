@@ -328,20 +328,20 @@ AEM에서 사용 가능한 모든 위젯에 대한 전체 참고는 [위젯 API 
 를 사용하려면 **임의** 대화 상자:
 
 1. 대화 상자 바꾸기 **동적 대화 상자** 구성 요소를 **임의** 대화 상자: 다음에 설명된 단계를 수행합니다. [예제 2: 단일 패널 대화 상자](#example-single-panel-dialog)
-1. 구성 요소를 편집합니다. 대화 상자는 다음과 같이 표시됩니다.
+1. Edit the component: the dialog displays as follows:
 
-![screen_shot_2012-02-01at115300am](assets/screen_shot_2012-02-01at115300am.png)
+![](assets/screen_shot_2012-02-01at115300am.png)
 
-#### 예제 3: 필드 전환 대화 상자 {#example-toggle-fields-dialog}
+#### Example 3: Toggle Fields Dialog {#example-toggle-fields-dialog}
 
-다음 **필드 전환** 대화 상자에 탭이 한 개 있는 창이 표시됩니다. 탭에는 다음과 같은 확인란이 있습니다. 이 필드를 선택하면 두 개의 텍스트 필드가 있는 필드 세트가 표시됩니다.
+**** 탭에는 다음과 같은 확인란이 있습니다. 이 필드를 선택하면 두 개의 텍스트 필드가 있는 필드 세트가 표시됩니다.
 
 주요 특징은 다음과 같습니다.
 
 * 노드에 의해 정의됩니다(노드 유형 = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
 * 1개의 탭 패널 위젯을 표시합니다(노드 유형 = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#textpanel)`) with 1 panel (node type = ) `cq:Panel`).
 * 패널에 선택/확인란 위젯(노드 유형 =)이 있습니다 `cq:Widget`, xtype = ` [selection](/help/sites-developing/xtypes.md#selection)`, 유형 = ` [checkbox](/help/sites-developing/xtypes.md#checkbox)`) 및 축소 가능한 dialogfieldset 위젯(노드 유형 = `cq:Widget`, xtype = ` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)`) 기본적으로 숨겨지는 텍스트필드 위젯(노드 유형 =)이 2개 있는 `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`).
-* 는 `togglefields` 노드 위치:
+* `togglefields`
    `/apps/extjstraining/components/dynamicdialogs/togglefields`
 * 를 요청하여 json 형식으로 렌더링됩니다.
    `https://localhost:4502/apps/extjstraining/components/dynamicdialogs/togglefields.-1.json`
@@ -355,7 +355,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 전체 참고는 [위젯 API 
 * 다음 `Ejst.x2` 개체는 `exercises.js` 파일 위치:
    `/apps/extjstraining/clientlib/js/exercises.js`
 * 에서 `Ejst.x2.toggleFieldSet()` 메서드:
-   `box` 은 선택 객체입니다
+   `box`
    `panel` 는 선택 항목 및 대화 상자 필드세트 위젯이 포함된 패널입니다
    `fieldSet` dialogfieldset 개체입니다.
    `show` 은 &#39;을(를) 기반으로 하는 선택 값(true 또는 false)입니다. `show`&#39; dialogfieldset이 표시되거나 표시되지 않습니다.
@@ -414,10 +414,10 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
    * `otherField` is [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField) 개체
 * 메서드를 재정의합니다. `setValue`, `getValue` 및 `getRawValue` 의 [CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) 형식으로 CustomWidget의 값을 설정하고 검색하려면 다음을 수행합니다.
    `<allowField value>/<otherField value>, e.g.: 'Bla1/hello'`.
-* 자신을 &#39;(으)로 등록 `ejstcustom`` xtype:
+* `ejstcustom`
    `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
 
-다음 **사용자 지정 다중 필드** 위젯 기반 대화 상자는 다음과 같이 표시됩니다.
+****
 
 ![screen_shot_2012-02-01at115840am](assets/screen_shot_2012-02-01at115840am.png)
 
@@ -428,7 +428,7 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 사용자 지정 트리찾아보기 대화 상자:
 
 * 노드에 의해 정의됩니다(노드 유형 = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
-* 1개의 탭 패널 위젯을 표시합니다(노드 유형 = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`) 패널을 포함하는 경우(노드 유형 = `cq:Widget`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`).
+* `cq:Widget`` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)``cq:Widget`` [panel](/help/sites-developing/xtypes.md#panel)`
 * 패널에 사용자 지정 위젯이 있습니다(노드 유형 = `cq:Widget`, xtype = `ejstbrowse`)
 * 는 `treebrowse` 노드 위치:
    `/apps/extjstraining/components/customwidgets/treebrowse`
@@ -503,11 +503,11 @@ RTE 플러그인:
 
 >[!NOTE]
 >
->이 예는 로직의 클라이언트측 부분을 구현하는 방법만 보여줍니다. 자리 표시자(*[텍스트]*)를 서버 측에서 명시적으로 구문 분석해야 합니다(예: 구성 요소 JSP).
+>*[]*
 
-### 트리 개요 {#tree-overview}
+### Tree Overview {#tree-overview}
 
-즉시 사용 가능한 ` [CQ.Ext.tree.TreePanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` 개체는 트리 구조화된 데이터의 트리 구조 UI 표현을 제공합니다. 에 포함된 트리 개요 구성 요소 **ExtJS 위젯 사용** 패키지는 `TreePanel` 지정된 경로 아래에 JCR 트리를 표시하는 개체입니다. 창 자체는 도킹/도킹 해제할 수 있습니다. 이 예제에서 창 논리는 구성 요소 jsp 사이에 포함됩니다 &lt;script>&lt;/script> 태그 사이에 Analytics JavaScript 코드를 배치했습니다.
+` [CQ.Ext.tree.TreePanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` ****`TreePanel` 창 자체는 도킹/도킹 해제할 수 있습니다. In this example, the window logic is embedded in the component jsp between &lt;script>&lt;/script> tags.
 
 를 포함하려면 **트리 개요** 구성 요소를 샘플 페이지에 추가합니다.
 
@@ -592,12 +592,12 @@ RTE 플러그인:
 
 기본 버전에서는 **그리드 개요** 구성 요소는 정적 데이터가 있는 창을 테이블 형식으로 표시합니다. 이 예에서 논리는 다음 두 가지 방법으로 구성 요소 jsp에 포함됩니다.
 
-* 제네릭 로직은 다음 사이에 정의됩니다 &lt;script>&lt;/script> 태그
-* 특정 로직은 별도의 .js 파일에서 사용할 수 있으며 jsp에서 연결되어 있습니다. This setup enables to easily switch between the two logic (static/dynamic) by commenting the desired &lt;script> tags.
+* the generic logic is defined between &lt;script>&lt;/script> tags
+* the specific logic is available in a separate .js file and is linked to in the jsp. This setup enables to easily switch between the two logic (static/dynamic) by commenting the desired &lt;script> tags.
 
-그리드 개요 구성 요소:
+The Grid Overview component:
 
-* 다음에서 정의됩니다.
+* Is defined at:
    `/apps/extjstraining/components/gridoverview`
 * 이 대화 상자에서는 창 크기를 설정하고 창을 도킹/도킹 해제할 수 있습니다.
 
@@ -605,10 +605,10 @@ RTE 플러그인:
 
 * 저장소에서 너비, 높이 및 도킹 속성을 검색합니다.
 * 일부 텍스트를 그리드 개요 데이터 형식의 소개로 표시합니다.
-* GridPanel 개체를 정의하는 javascript 코드를 참조합니다.
+* References javascript code that defines the GridPanel object:
    `<script type="text/javascript" src="/apps/extjstraining/components/gridoverview/defaultgrid.js"></script>`
 
-   `defaultgrid.js` 에서는 일부 정적 데이터를 GridPanel 개체의 기반으로 정의합니다.
+   `defaultgrid.js`
 * GridPanel 개체를 사용하는 Window 개체를 정의하는 Javascript 태그 사이에 Javascript 코드를 포함합니다.
 * 다음에서 정의됩니다.
    `apps/extjstraining/components/gridoverview/content.jsp`

@@ -87,4 +87,4 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 * 문서 보안
 * Foundation JEE
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
+[지원 문의](https://www.adobe.com/kr/account/sign-in.supportportal.html)

@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1884'
+ht-degree: 90%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
    이 페이지에 대한 별칭 URL을 입력할 수 있으므로 더 짧고 구체적인 URL을 사용할 수 있습니다.
 
-   예를 들어 별칭 URL이 `welcome`경로별로 식별된 페이지로 `/v1.0/startpage`웹 사이트용 `http://example.com,` 그런 다음 `http://example.com/welcome`의 별칭 URL이 됩니다. `http://example.com/content/v1.0/startpage`
+   예를 들어 별칭 URL이 로 설정된 경우 `welcome`경로로 식별되는 페이지에 대한 `/v1.0/startpage`웹 사이트용 `http://example.com,` 그러면 `http://example.com/welcome`은(는) 의 별칭 URL입니다. `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -103,7 +103,7 @@ ht-degree: 0%
    >* 기존 페이지로 설정하면 안 됩니다.
 
 
-   별칭 URL에 액세스할 수 있도록 Dispatcher를 구성해야 합니다. 자세한 내용은 [별칭 URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) 자세한 내용
+   vanity URL에 대한 액세스를 활성화하도록 Dispatcher를 구성해야 합니다. 다음을 참조하십시오 [vanity URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) 을 참조하십시오.
 
 * **별칭 URL 리디렉션**
 
@@ -134,7 +134,7 @@ ht-degree: 0%
    * 예를 들어 페이지 `/content/wknd/us/en/magazine/members-only`에 대한 `private`의 별칭을 정의하면 `/content/wknd/us/en/magazine/private`을 통해서도 이 페이지에 액세스할 수 있습니다.
    * 별칭을 만들면 페이지 노드의 `sling:alias` 속성이 설정되며, 이는 저장소 경로가 아닌 리소스에만 영향을 미칩니다.
    * 편집기의 별칭을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시 옵션](/help/sites-authoring/publishing-pages.md)은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
-   * 자세한 내용은 [SEO 및 URL 관리 우수 사례에서 현지화된 페이지 이름](/help/managing/seo-and-url-management.md#localized-page-names).
+   * 자세한 내용은 을 참조하십시오. [SEO 및 URL 관리 우수 사례에서 현지화된 페이지 이름](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **&lt;*경로*>에서 상속됨**
 
@@ -158,7 +158,7 @@ ht-degree: 0%
 
    >[!CAUTION]
    >
-   >다음 **[권한](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 `granite:AuthenticationRequired` 믹신 이제 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 페이지의 존재 여부에 따라 `cq:cugEnabled` 속성, 경고 메시지가 **인증 요구 사항** 및 옵션은 편집할 수 없고 [권한](/help/sites-authoring/editing-page-properties.md#permissions) 편집 가능합니다.
+   >다음 **[권한](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 의 존재 여부에 따라 CUG 구성을 편집할 수 있습니다. `granite:AuthenticationRequired` mixin. 페이지 권한이 더 이상 사용되지 않는 CUG 구성을 사용하여 구성된 경우, 의 존재 여부에 따라 `cq:cugEnabled` 속성이에 경고 메시지가 표시됩니다. **인증 요구 사항** 옵션을 편집할 수 없고 [권한](/help/sites-authoring/editing-page-properties.md#permissions) 편집할 수 있습니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
@@ -199,8 +199,7 @@ ht-degree: 0%
 
    * **Facebook에 대한 사용자 공유 활성화**
    * **Pinterest에 대한 사용자 공유 활성화**
-   * **선호하는 XF 변형**
-페이지에 대한 메타데이터를 생성하는 데 사용되는 경험 조각 변형을 정의합니다.
+   * **선호하는 XF 변형** 페이지에 대한 메타데이터를 생성하는 데 사용되는 경험 조각 변형을 정의
 
 ### 클라우드 서비스 {#cloud-services}
 
@@ -233,14 +232,14 @@ ht-degree: 0%
    * [유효 권한](/help/sites-administering/user-group-ac-admin.md) 보기
    >[!CAUTION]
    >
-   >다음 **권한** 탭에서는 `granite:AuthenticationRequired` 믹신 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
+   >다음 **권한** 탭에서는 의 존재 여부에 따라 CUG 구성을 편집할 수 있습니다. `granite:AuthenticationRequired` mixin. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
 
    >[!NOTE]
    >
-   >[권한] 탭에서는 비어 있는 CGU 그룹 생성을 허용하지 않으며, 모든 사용자에 대한 액세스를 거부하는 간단한 방법으로 유용할 수 있습니다. 이를 위해서는 CRX 탐색기를 사용해야 합니다. 문서를 참조하십시오 [사용자, 그룹 및 액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md) 추가 정보.
+   >[권한] 탭에서는 비어 있는 CGU 그룹 생성을 허용하지 않으며, 모든 사용자에 대한 액세스를 거부하는 간단한 방법으로 유용할 수 있습니다. 이를 위해서는 CRX 탐색기를 사용해야 합니다. 문서 보기 [사용자, 그룹 및 액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md) 추가 정보.
 
 ### 블루프린트 {#blueprint}
 
@@ -302,7 +301,7 @@ ht-degree: 0%
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. 선택 **속성 열기** 해당 탭별로 정렬된 속성을 편집할 수 있는 대화 상자가 열립니다. The following buttons are also available at the right of the toolbar:
+1. 선택 **속성 열기** 또한 해당 탭별로 정렬된 속성을 편집할 수 있는 대화 상자가 열립니다. The following buttons are also available at the right of the toolbar:
 
    * **취소**
    * **저장 및 닫기**
@@ -345,7 +344,7 @@ From the **Sites** console you can select several pages then use **View Properti
 
    * 영향 받는 페이지 목록
 
-      * 필요한 경우 선택/선택 취소할 수 있습니다.
+      * 필요한 경우 선택/선택 해제할 수 있습니다.
    * 탭
 
       * 단일 페이지의 속성을 볼 때처럼 탭 아래에 속성이 정렬됩니다.
@@ -368,7 +367,7 @@ From the **Sites** console you can select several pages then use **View Properti
 
       * **완료**&#x200B;를 선택하면 선택한 모든 페이지에 새 값이 적용됩니다.
       * 필드가 다중 값(예: 태그)이면 새 값을 추가하거나 공통 값을 제거할 수 있습니다.
-   * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다. 
+   * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다.
 
 
 >[!NOTE]

@@ -123,7 +123,7 @@ Scaffold는 작성할 페이지를 이루는 각 컨텐트 부분에 대한 필�
 
 두 번째 숨김 필드를 보려면 다음과 같이 클릭합니다.
 
-![숨겨진2](assets/hidden2.png)
+![hidden2](assets/hidden2.png)
 
 이 숨김 필드의 속성은 다음과 같습니다.
 

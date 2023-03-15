@@ -42,69 +42,69 @@ AEM Forms 서비스를 프로그래밍 방식으로 호출하는 데 다음 빠�
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">호출 API를 사용하여 단기 프로세스 호출</a></p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">빠른 시작: 호출 API를 사용하여 단기 프로세스 호출</a></p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Base64 인코딩을 사용하여 AEM Forms 호출</a> (Java 웹 서비스 프록시)</p></td>
-   <td><p>해당 없음</p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_java_proxy_files_and_base64_encoding">빠른 시작: Java 프록시 파일 및 Base64 인코딩을 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Base64 인코딩을 사용하여 AEM Forms 호출</a> (.NET 웹 서비스 프록시)</p></td>
-   <td><p>해당 없음</p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_base64_in_a_microsoft_net_project">빠른 시작: Microsoft .NET 프로젝트에서 base64를 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom">MTOM을 사용하여 AEM Forms 호출</a> (.NET 웹 서비스 예제)</p></td>
-   <td><p>해당 없음</p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_mtom_in_a_net_project">빠른 시작: .NET 프로젝트에서 MTOM을 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref">SwaRef를 사용하여 AEM Forms 호출</a> (Java 웹 서비스 예제)</p></td>
-   <td><p>해당 없음</p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_swaref_in_a_java_project">빠른 시작: Java 프로젝트에서 SwaRef를 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">HTTP에서 BLOB 데이터를 사용하여 AEM Forms 호출</a> (Java 웹 서비스 예제)</p></td>
-   <td><p>해당 없음</p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_net_project">빠른 시작: .NET 프로젝트에서 HTTP를 통해 BLOB 데이터를 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">HTTP에서 BLOB 데이터를 사용하여 AEM Forms 호출</a> (.NET 웹 서비스 예제)</p></td>
-   <td><p>해당 없음</p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_java_project">빠른 시작: Java 프로젝트에서 HTTP를 통해 BLOB 데이터를 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime">DIME를 사용하여 AEM Forms 호출</a> (Java 웹 서비스 예제)</p></td>
-   <td><p>해당 없음</p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_dime_in_a_java_project">빠른 시작: Java 프로젝트에서 DIME를 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">AEM Forms Remoting을 사용하여 AEM Forms 호출(AEM Forms에서 더 이상 사용되지 않음)</a></p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">빠른 시작: AEM Forms Remoting을 사용하여 (AEM Forms에서 더 이상 사용되지 않음) 비보안 문서를 전달하여 단기 프로세스 호출</a></p></td>
-   <td><p>해당 없음</p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#passing_secure_documents_to_invoke_processes_using_remoting">Remoting을 사용하여 프로세스를 호출하는 보안 문서 전달</a></p></td>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">빠른 시작: AEM Forms Remoting을 사용하여 보안 문서를 전달하여 단기 프로세스를 호출하는 중(AEM Forms에서 더 이상 사용되지 않음)</a></p></td>
-   <td><p>해당 없음</p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking_custom_component_services_using_remoting">원격을 사용하여 사용자 지정 구성 요소 서비스 호출</a></p></td>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">빠른 시작: AEM Forms Remoting을 사용하여 고객 사용자 지정 서비스 호출(AEM Forms에서 더 이상 사용되지 않음)</a></p></td>
-   <td><p>해당 없음</p></td>
-   <td><p>해당 없음</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
   </tr>
  </tbody>
 </table>

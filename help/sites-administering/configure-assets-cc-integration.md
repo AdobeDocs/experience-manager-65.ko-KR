@@ -99,7 +99,7 @@ Adobe Experience Cloud 고객의 경우 Adobe Experience Manager Assets 내의 �
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
-1. 클릭 **[!UICONTROL 업데이트]**. 지금 자산을 AEM Assets 인스턴스와 동기화합니다.
+1. **[!UICONTROL 업데이트]**&#x200B;를 클릭합니다. 지금 자산을 AEM Assets 인스턴스와 동기화합니다.
 
 ## 동기화 테스트 {#test-the-synchronization}
 

@@ -1,7 +1,7 @@
 ---
 title: Adobe Campaign Classic과 통합
 seo-title: Integrating with Adobe Campaign Classic
-description: AEM을 Adobe Campaign Classic과 통합하는 방법을 알아봅니다
+description: AEM을 Adobe Campaign Classic과 통합하는 방법 알아보기
 seo-description: Learn how to integrate AEM with Adobe Campaign Classic
 uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
@@ -10,19 +10,19 @@ topic-tags: integration
 content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 7fed5ce55f6ee7638d2578ee7ef2d84deb24277f
+source-git-commit: 4712f57808ae769646b00d1098648686815121b6
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 70%
+source-wordcount: '1556'
+ht-degree: 67%
 
 ---
 
 
 # Adobe Campaign Classic과 통합 {#integrating-campaign-classic}
 
-AEM을 Adobe Campaign과 통합하여 AEM에서 직접 이메일 게재, 콘텐츠 및 양식을 관리할 수 있습니다. 솔루션 간 양방향 통신이 가능하려면 Adobe Campaign Classic과 AEM 모두에서 구성 단계를 수행해야 합니다.
+AEM을 Adobe Campaign과 통합하여 AEM에서 이메일 게재, 콘텐츠 및 양식을 직접 관리할 수 있습니다. 솔루션 간 양방향 통신이 가능하려면 Adobe Campaign Classic과 AEM 모두에서 구성 단계를 수행해야 합니다.
 
-이 통합을 사용하면 AEM 및 Adobe Campaign Classic을 독립적으로 사용할 수 있습니다. 마케터는 캠페인을 만들고 Adobe Campaign에서 타깃팅을 사용할 수 있지만 동시에 컨텐츠 작성자는 AEM에서 컨텐츠 디자인에서 작업할 수 있습니다. 통합을 통해 AEM에서 캠페인의 콘텐츠와 디자인을 Adobe Campaign에서 타깃팅하고 전달할 수 있습니다.
+이 통합을 통해 AEM 및 Adobe Campaign Classic을 독립적으로 사용할 수 있습니다. 마케터는 Adobe Campaign에서 캠페인을 만들고 타깃팅을 사용할 수 있으며, 동시에 콘텐츠 크리에이터는 AEM에서 콘텐츠 디자인 작업을 할 수 있습니다. 통합을 사용하여 AEM에서 만든 캠페인의 콘텐츠와 디자인을 Adobe Campaign에서 타겟팅하고 전달할 수 있습니다.
 
 ## 통합 단계 {#integration-steps}
 
@@ -44,7 +44,7 @@ AEM과 Campaign 간 통합을 위해서는 두 솔루션 모두에서 몇 가지
    * Adobe Campaign Classic 설정 및 구성 방법에 관한 자세한 정보가 필요한 경우 [Adobe Campaign Classic 문서](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html)를 참조하시고 특히 설치 및 구성 안내서를 참조하십시오.
 * AEM에 대한 관리자 액세스
 
-## Campaign에서 AEM 통합 패키지 설치 {#install-package}
+## Campaign에 AEM 통합 패키지 설치 {#install-package}
 
 Adobe Campaign의 **AEM 통합** 패키지는 AEM에 연결하는 데 필요한 다양한 표준 구성을 포함하고 있습니다.
 
@@ -150,54 +150,54 @@ AEM은 [Campaign에서 사용자가 이미 설정해 둔 연산자](#create-oper
 
 >[!NOTE]
 >
->Adobe Campaign 서버가 인터넷을 통해 접근 가능해야 합니다. AEM이 개인 네트워크에 액세스할 수 없습니다.
+>Adobe Campaign 서버가 인터넷을 통해 접근 가능해야 합니다. AEM에서 개인 네트워크에 액세스할 수 없습니다.
 
-## AEM 게시 인스턴스에 복제 구성 {#replication}
+## AEM 게시 인스턴스에 대한 복제 구성 {#replication}
 
-캠페인 컨텐츠는 AEM 작성 인스턴스의 컨텐츠 작성자가 만듭니다. 이 인스턴스는 일반적으로 조직에서만 사용할 수 있습니다. 캠페인 수신자가 액세스할 수 있는 이미지 및 자산 등의 컨텐츠의 경우 해당 컨텐츠를 게시해야 합니다.
+캠페인 콘텐츠는 AEM 작성 인스턴스의 콘텐츠 작성자가 작성합니다. 이 인스턴스는 일반적으로 조직 내부에서만 사용할 수 있습니다. 이미지 및 에셋과 같은 콘텐츠를 캠페인 수신자가 액세스할 수 있도록 하려면 해당 콘텐츠를 게시해야 합니다.
 
-복제 에이전트는 AEM 작성자 인스턴스의 컨텐츠를 게시 인스턴스에 게시할 책임이 있으며 통합이 제대로 작동하려면 설정되어야 합니다. 이 단계는 특정 작성 인스턴스 구성을 게시 인스턴스에 복제하는 데도 필요합니다.
+복제 에이전트는 AEM 작성자 인스턴스에서 게시 인스턴스로 콘텐츠를 게시하는 역할을 하며 통합이 제대로 작동하도록 설정되어야 합니다. 이 단계는 특정 작성 인스턴스 구성을 게시 인스턴스로 복제하는 데에도 필요합니다.
 
-AEM 작성자 인스턴스에서 게시 인스턴스로 복제를 구성하려면:
+AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하려면 다음 작업을 수행하십시오.
 
 1. 관리자 자격으로 AEM 제작 인스턴스에 로그인합니다.
 
-1. 전역 탐색 사이드 레일에서 를 선택합니다. **도구** > **배포** > **복제** > **작성자의 에이전트**&#x200B;를 탭하거나 클릭합니다 **기본 에이전트(게시)**.
+1. 전역 탐색 측면 레일에서 을 선택합니다. **도구** > **배포** > **복제** > **작성자의 에이전트**&#x200B;을 클릭한 다음 을 탭하거나 클릭합니다 **기본 에이전트(게시)**.
 
    ![복제 에이전트 구성](assets/acc-replication-config.png)
 
 1. 탭 또는 클릭 **편집** 그런 다음 **전송** 탭.
 
-1. 구성 **URI** 필드를 기본 값으로 바꿉니다 `localhost` 값을 AEM 게시 인스턴스의 IP 주소로 할 수도 있습니다.
+1. 구성 **URI** 기본값을 대체한 필드 `localhost` AEM 게시 인스턴스의 IP 주소가 있는 값입니다.
 
    ![전송 탭](assets/acc-transport-tab.png)
 
-1. 탭 또는 클릭 **확인** 에이전트 설정에 대한 변경 사항을 저장하려면 다음을 수행합니다.
+1. 탭 또는 클릭 **확인** 에이전트 설정에 대한 변경 사항을 저장합니다.
 
 캠페인 수신자가 콘텐츠에 액세스할 수 있도록 AEM 게시 인스턴스에 대한 복제를 구성했습니다.
 
 >[!NOTE]
 >
->복제 URL을 사용하지 않고 대신 공개 URL을 사용하는 경우 OSGi를 통해 다음 구성 설정에서 공개 URL을 설정할 수 있습니다
+>복제 URL을 사용하지 않고 대신 공개 URL을 사용하려는 경우 OSGi를 통해 다음 구성 설정에서 공개 URL을 설정할 수 있습니다
 >
->전역 탐색 사이드 레일에서 를 선택합니다. **도구** > **작업** > **웹 콘솔** > **OSGi 구성** 및 검색 **AEM Campaign 통합 - 구성**. 구성 편집 및 필드 변경 **공개 URL** (`com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl`).
+>전역 탐색 측면 레일에서 을 선택합니다. **도구** > **작업** > **웹 콘솔** > **OSGi 구성** 및 검색 **AEM Campaign 통합 - 구성**. 구성 편집 및 필드 변경 **공개 URL** (`com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl`).
 
 ## AEM 외부화 구성 {#externalizer}
 
 [외부화는 AEM의 OSGi 서비스로, 리소스 경로를 외부 및 절대 URL로 변환합니다. 이는 Campaign에서 사용 가능한 콘텐츠를 AEM이 제공하는 데 필요합니다. ](/help/sites-developing/externalizer.md) Campaign 통합이 작동하려면 구성해야 합니다.
 
 1. 관리자 자격으로 AEM 제작 인스턴스에 로그인합니다.
-1. 전역 탐색 사이드 레일에서 를 선택합니다. **도구** > **작업** > **웹 콘솔** > **OSGi 구성** 및 검색 **Day CQ link Externalizer**.
-1. 기본적으로 **도메인** 게시 인스턴스에 대한 필드입니다. 기본값에서 URL 변경 `http://localhost:4503` 을 사용 가능한 게시 인스턴스에 업로드합니다.
+1. 전역 탐색 측면 레일에서 을 선택합니다. **도구** > **작업** > **웹 콘솔** > **OSGi 구성** 및 검색 **일별 CQ 링크 외부화**.
+1. 기본적으로 의 마지막 항목은 **도메인** 필드는 게시 인스턴스를 위한 것입니다. 기본값에서 URL 변경 `http://localhost:4503` 을 클릭하여 공개적으로 사용할 수 있는 게시 인스턴스에 게시합니다.
 
-   ![외부 도우미 구성](assets/acc-externalizer-config.png)
+   ![외부화 구성](assets/acc-externalizer-config.png)
 
 1. **저장**&#x200B;을 탭하거나 클릭합니다.
 
-Externalizer를 구성했으며 Adobe Campaign이 콘텐츠에 액세스할 수 없습니다.
+외부화를 구성했으므로 Adobe Campaign에서 이제 콘텐츠에 액세스할 수 있습니다.
 
 >[!NOTE]
-게시 인스턴스는 Adobe Campaign 서버에서 접근 가능해야 합니다. 이 URL이 `localhost:4503` 또는 Adobe Campaign이 연결할 수 없는 다른 서버는 AEM의 이미지가 Adobe Campaign 콘솔에 표시되지 않습니다.
+게시 인스턴스는 Adobe Campaign 서버에서 접근 가능해야 합니다. 다음을 가리킬 경우 `localhost:4503` 또는 Adobe Campaign에서 연결할 수 없는 다른 서버에서는 AEM의 이미지가 Adobe Campaign 콘솔에 표시되지 않습니다.
 
 ## AEM에서 캠페인 원격 사용자 구성 {#configure-user}
 
@@ -215,7 +215,7 @@ Campaign에서 AEM과 통신하려면 AEM에서 `campaign-remote` 사용자에 �
 
 ## Campaign에서 AEM 외부 계정 구성 {#acc-setup}
 
-[**AEM 통합** 패키지를 Campaign에 설치할 때,](#install-package) AEM에 대한 외부 계정이 생성됩니다. 이 외부 계정을 구성하면 Adobe Campaign이 AEM에 연결하여 솔루션 간에 양방향 통신을 사용할 수 있습니다.
+[**AEM 통합** 패키지를 Campaign에 설치할 때,](#install-package) AEM에 대한 외부 계정이 생성됩니다. Adobe Campaign은 이 외부 계정을 구성하여 AEM에 연결할 수 있으며, 이를 통해 솔루션 간에 양방향 통신이 가능합니다.
 
 1. 클라이언트 콘솔을 사용해 관리자 자격으로 Adobe Campaign에 로그인합니다.
 
@@ -247,6 +247,6 @@ Campaign에서 AEM과 통신하려면 AEM에서 `campaign-remote` 사용자에 �
 
 ## 다음 단계 {#next-steps}
 
-Adobe Campaign Classic과 AEM이 모두 구성되어 이제 통합이 완료됩니다.
+Adobe Campaign Classic과 AEM이 모두 구성되면 통합이 완료된 것입니다.
 
 이번에는 [이 문서](/help/sites-authoring/campaign.md)를 계속 읽으며 Adobe Experience Manager에서 뉴스레터를 생성하는 방법에 대해 알아볼 수 있습니다.

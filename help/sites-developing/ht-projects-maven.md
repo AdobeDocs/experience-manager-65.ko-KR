@@ -4,8 +4,8 @@ description: 이 문서에서는 Apache Maven을 기반으로 AEM 프로젝트�
 exl-id: 451913bf-bb1e-4444-aee5-968ac30b5c9d
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '149'
+ht-degree: 20%
 
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: Distiller 서비스 Java API QuickStart(SOAP)
+title: Distiller 서비스 Java API 빠른 시작(SOAP)
 seo-title: Distiller Service Java API QuickStart(SOAP)
-description: Distiller 서비스 Java API QuickStart(SOAP)
+description: Distiller 서비스 Java API 빠른 시작(SOAP)
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
 contentOwner: admin
 content-type: reference
@@ -19,19 +19,19 @@ ht-degree: 0%
 
 # Distiller 서비스 Java API 빠른 시작(SOAP) {#distiller-service-java-api-quickstart-soap}
 
-Distiller® 서비스에 SOAP(Java API Quick Start)를 사용할 수 있습니다.
+Java API 빠른 시작(SOAP)은 Distiller® 서비스에 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 PostScript 파일을 PDF 문서로 변환](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms로 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 자세한 내용은 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms를 사용한 프로그래밍에 있는 빠른 시작은 JBoss 애플리케이션 서버 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PostScript 파일을 PDF 문서로 변환 {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
-다음 코드 예제에서는 *Loan.ps* PDF 파일 *Loan.pdf*. (자세한 내용은 [PostScript를 PDF 문서로 변환](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents))
+다음 코드 예제에서는 이라는 PostScript 파일을 *Loan.ps* 을(를) PDF 파일로 *Loan.pdf*. (참조: [포스트스크립트를 PDF 문서로 변환](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 
 ```java
  /*

@@ -21,26 +21,26 @@ ht-degree: 1%
 
 ## 시맨틱 버전 관리 사용 {#use-semantic-versioning}
 
-시맨틱 버전 번호 매기기를 위한 합의된 우수 사례는 다음 위치에서 찾을 수 있습니다. [https://semver.org/](https://semver.org/).
+의미 체계 버전 번호 매기기에 대해 합의된 우수 사례는 다음에서 찾을 수 있습니다. [https://semver.org/](https://semver.org/).
 
-## OSGi 번들에 엄격하게 필요한 것보다 더 많은 클래스와 jar을 포함하지 마십시오 {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
+## OSGi 번들에 반드시 필요한 것보다 더 많은 클래스와 jar를 포함하지 마십시오 {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-공통 라이브러리는 별도의 번들로 분리해야 합니다. 이렇게 하면 번들에서 다시 사용할 수 있습니다. 래핑할 때 *JAR* osgi 번들에서 온라인 소스를 확인하여 누군가 전에 이 작업을 이미 수행했는지 확인하십시오. 기존 번들 래퍼를 찾기 위한 몇 가지 일반적인 위치는 다음과 같습니다. Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse 번들 Recipes 및 SpringSource Enterprise 번들 저장소.
+일반 라이브러리는 별도의 번들로 팩터링해야 합니다. 이렇게 하면 번들 전체에서 재사용할 수 있습니다. 줄바꿈 시 *JAR* osgi 번들에서 온라인 소스를 확인하여 누군가가 이전에 이미 이 작업을 수행했는지 확인해야 합니다. 기존 번들 래퍼를 찾는 일반적인 위치는 Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse 번들 레서피 및 SpringSource Enterprise 번들 저장소입니다.
 
 ## 가장 필요한 번들 버전에 따라 다름 {#depend-on-the-lowest-needed-bundle-versions}
 
-POM 파일의 컴파일 시간 종속성의 경우 는 항상 필요한 API를 표시하는 가장 필요한 버전에 따라 다릅니다. 이렇게 하면 이전 버전과의 호환성을 더 높일 수 있고 이전 릴리스에 대한 백업 수정 사항을 더 쉽게 만들 수 있습니다.
+POM 파일의 컴파일 시간 종속성의 경우 필요한 API를 표시하는 필요한 가장 낮은 버전에 항상 의존합니다. 이렇게 하면 이전 버전과의 호환성이 향상되고 이전 릴리스에 대한 지원 수정 사항이 더 쉬워집니다.
 
-## OSGi 번들에서 최소한의 패키지 세트를 내보냅니다. {#export-a-minimal-set-of-packages-from-osgi-bundles}
+## OSGi 번들에서 최소 패키지 세트 내보내기 {#export-a-minimal-set-of-packages-from-osgi-bundles}
 
-패키지를 내보내는 즉시 다른 사람이 사용할 수 있는 API를 만들었습니다. 가능한 한 적게 내보내고 내보내는 것이 API인지 확인합니다. 개인 메서드/클래스를 가져와서 공개하기 더 쉽습니다. 이전에 내보낸 내용을 가져와서 비공개로 만드는 것보다 더 쉽습니다.
+패키지를 내보내는 즉시 다른 사용자가 사용할 수 있는 API를 만들었습니다. 가능한 한 적게 내보내고 내보낼 항목이 API인지 확인하십시오. 기존에 수출하던 것을 가져와서 비공개로 하는 것보다 개인 방식/클래스를 가져와서 공개로 하는 것이 훨씬 쉽다.
 
-구현은 항상 별도의 *impl* 패키지. 기본적으로 *maven-bundle-plugin* 프로젝트에 가 없는 것은 모두 내보냅니다 *impl* 이름으로.
+구현은 항상 별도의 위치에 배치되어야 합니다 *impl* 패키지. 기본적으로 *maven-bundle-plugin* 이(가) 없는 프로젝트의 모든 을(를) 내보냅니다. *impl* 이름을 입력합니다.
 
-## 내보낸 각 패키지에 대해 항상 시맨틱 버전을 명시적으로 정의합니다 {#always-explicitly-define-a-semantic-version-for-each-package-exported}
+## 내보낸 각 패키지에 대해 항상 의미 체계 버전을 명시적으로 정의 {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 
-이렇게 하면 API 소비자가 사용자와 함께 진화할 수 있습니다. 이때 항상 시맨틱 버전 관리 우수 사례를 따라야 합니다. 이렇게 하면 API 소비자가 새 버전에서 기대할 변경 사항 유형을 알 수 있습니다.
+이렇게 하면 API 소비자가 귀하와 함께 발전할 수 있습니다. 그렇게 할 때는 항상 시맨틱 버전 관리 모범 사례를 따르십시오. 이를 통해 API 소비자는 새 버전에서 예상할 변경 유형을 알 수 있습니다.
 
-## 노출되는 메타데이터 유형 정보 포함 {#include-metatype-information-where-exposed}
+## 노출된 위치에 메타타입 정보 포함 {#include-metatype-information-where-exposed}
 
-의미 있는 메타데이터 유형 정보를 지정하면 Felix 콘솔에서 서비스와 구성 요소를 쉽게 이해할 수 있습니다. SCR 주석 및 속성 목록은 다음 위치에서 찾을 수 있습니다. [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
+의미 있는 메타타입 정보를 지정하면 Felix 콘솔에서 서비스 및 구성 요소를 더 쉽게 이해할 수 있습니다. SCR 주석 및 속성 목록은 다음 위치에서 찾을 수 있습니다. [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).

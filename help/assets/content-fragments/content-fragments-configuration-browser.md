@@ -1,6 +1,6 @@
 ---
 title: 콘텐츠 조각 - 구성 브라우저
-description: AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 구성 브라우저에서 특정 컨텐츠 조각 기능을 활성화하는 방법을 알아봅니다.
+description: AEM의 강력한 Headless 게재 기능을 활용하기 위해 구성 브라우저에서 특정 콘텐츠 조각 기능을 활성화하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
@@ -13,7 +13,7 @@ ht-degree: 78%
 
 # 콘텐츠 조각 - 구성 브라우저{#content-fragments-configuration-browser}
 
-AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 구성 브라우저에서 특정 컨텐츠 조각 기능을 활성화하는 방법을 알아봅니다.
+AEM의 강력한 Headless 게재 기능을 활용하기 위해 구성 브라우저에서 특정 콘텐츠 조각 기능을 활성화하는 방법에 대해 알아봅니다.
 
 ## 인스턴스에 대해 콘텐츠 조각 기능 활성화 {#enable-content-fragment-functionality-instance}
 
@@ -61,7 +61,7 @@ AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 구성 브라
 
 ### 에셋 폴더에 구성 적용 {#apply-the-configuration-to-your-assets-folder}
 
-구성 시 **글로벌** 컨텐츠 조각 기능에 대해 활성화되어 있으면 모든 자산 폴더에 적용됩니다.
+구성 시 **글로벌** 가 콘텐츠 조각 기능에 대해 활성화된 후 모든 에셋 폴더에 적용됩니다.
 
 비슷한 에셋 폴더와 함께 다른 구성(전역 제외)을 사용하려면 연결을 정의해야 합니다. This is done by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
 

@@ -63,7 +63,7 @@ ht-degree: 94%
    <td>많은 경우, 매우 많은 사람이 워크플로우 하위 작업에 관련되어 있고, 각자는 다음 사람에게 작업을 넘겨주기 전에 자신의 단계를 완료해야 합니다. 받은 편지함에서 그러한 작업과 관련된 알림을 볼 수 있습니다. 자세한 내용은 <a href="/help/sites-administering/workflows.md">워크플로우 작업</a>을 참조하십시오. <br /> </td>
   </tr>
   <tr>
-   <td><strong>태깅</strong></td>
+   <td><strong>태그 지정</strong></td>
    <td>[태깅] 콘솔에서는 태그를 관리할 수 있습니다. 태그는 컨텐츠를 분류하고 컨텐츠에 주석을 다는 데 사용할 수 있는 간단한 이름 또는 구로서 컨텐츠를 찾고 구성하는 작업을 더 쉽게 해줍니다. 자세한 내용은 <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">태그 사용 및 관리</a>를 참조하십시오.</td>
   </tr>
   <tr>

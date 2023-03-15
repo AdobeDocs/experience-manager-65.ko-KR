@@ -11,8 +11,8 @@ role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1612'
+ht-degree: 7%
 
 ---
 
@@ -161,7 +161,7 @@ Dispatcher가 AEM에 대해 캐싱 및 로드 밸런싱 도구를 제공합니�
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   파일을 저장하고 닫습니다. 필터에 대한 자세한 내용은 [Dispatcher 설명서](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   파일을 저장하고 닫습니다. 필터에 대한 자세한 내용은 [Dispatcher 설명서](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. 레퍼러 필터 서비스를 구성합니다.
 
@@ -171,7 +171,7 @@ Dispatcher가 AEM에 대해 캐싱 및 로드 밸런싱 도구를 제공합니�
 
 캐싱은 데이터 액세스 시간을 단축하고, 지연을 줄이고, 입출력(I/O) 속도를 향상시키는 메커니즘입니다. 적응형 양식 캐시는 사전 채워진 데이터를 저장하지 않고 적응형 양식의 HTML 콘텐츠과 JSON 구조만 저장합니다. 적응형 양식을 렌더링하는 데 필요한 시간을 줄이는 데 도움이 됩니다.
 
-* 적응형 양식 캐시를 사용하는 경우 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) 를 눌러 적응형 양식의 클라이언트 라이브러리(CSS 및 JavaScript)를 캐시합니다.
+* 적응형 양식 캐시를 사용하는 경우 [AEM Dispatcher](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html) 를 눌러 적응형 양식의 클라이언트 라이브러리(CSS 및 JavaScript)를 캐시합니다.
 * 사용자 지정 구성 요소를 개발하는 동안 개발에 사용되는 서버에서 적응형 양식 캐시를 사용하지 않도록 설정하십시오.
 
 적응형 양식 캐시를 구성하려면 다음 단계를 수행하십시오.

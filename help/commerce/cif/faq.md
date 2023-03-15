@@ -1,8 +1,8 @@
 ---
 title: AEM - Commerce Integration Framework를 사용하여 상거래 통합 FAQ
 description: AEM - Commerce Integration Framework를 사용하여 상거래 통합 FAQ
-exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+exl-id: d541607f-c4c9-4dd5-aadf-64d4cb5f9f2a
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # AEM - Commerce Integration Framework를 사용하여 상거래 통합 FAQ
 
-## 1. CIF GraphQL은 상거래에 대해서만 사용되거나 AEM에서 작성된 콘텐츠를 쿼리하는 데 사용할 수 있습니까? JCR?
+## 1. CIF GraphQL은 상거래에 대해서만 사용됩니까, 아니면 AEM에서 작성된 콘텐츠를 쿼리하는 데 사용할 수 있습니까? JCR
 
-Adobe은 모든 상거래 관련 데이터에 대한 공식 상거래 API로 Adobe Commerce의 GraphQL API를 채택했습니다. 따라서 AEM은 GraphQL을 사용하여 I/O Runtime을 통해 Adobe Commerce 및 모든 상거래 엔진과 상거래 데이터를 교환합니다. 이 GraphQL API는 AEM GraphQL API와 독립적으로 컨텐츠 조각에 액세스합니다.
+Adobe은 모든 상거래 관련 데이터에 대한 공식 상거래 API로 Adobe Commerce의 GraphQL API를 채택했습니다. 따라서 AEM은 GraphQL을 사용하여 I/O Runtime을 통해 Adobe Commerce 및 모든 상거래 엔진과 상거래 데이터를 교환합니다. 이 GraphQL API는 컨텐츠 조각에 액세스할 수 있도록 AEM GraphQL API와 독립적입니다.
 
 ## 2. 제품 자산(이미지)을 Adobe Commerce 관리자를 통해 AEM에서 저장 및 참조할 수 있습니까? Dynamic Media의 자산을 어떻게 사용할 수 있습니까?
 

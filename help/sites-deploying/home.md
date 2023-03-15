@@ -1,12 +1,12 @@
 ---
 title: AEM 6.5 배포 사용 안내서
 seo-title: AEM 6.5 Deploying User Guide
-description: Adobe Experience Manager 6.5 설치 및 배포, Adobe Managed Services 클라우드 배포를 포함한 해당 아키텍처에 대해 알아봅니다.
+description: Adobe Managed Services 클라우드 배포를 포함하여 Adobe Experience Manager 6.5 설치 및 배포와 그 아키텍처에 대해 알아봅니다.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '380'
+ht-degree: 88%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
-| [Commerce 사용 안내서](/help/commerce/home.md) | AEM에서 Commerce Integration Framework에 대해 알아봅니다. |
+| [Commerce 사용 안내서](/help/commerce/home.md) | AEM의 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 

@@ -23,7 +23,7 @@ ht-degree: 23%
 
 다음 영역에는 우수 사례에 관해 참조할 수 있는 문서가 있습니다.
 
-* [에셋](#assets)
+* [Assets](#assets)
 * [Sites](#sites)
 
 작성, 배포, 유지 관리 또는 개발에 대한 우수 사례가 필요하면 다음 중 하나를 참조하십시오.
@@ -34,7 +34,7 @@ ht-degree: 23%
 
 관련된 구체적인 문서에 대한 설명과 링크는 다음 표에 나와 있습니다.
 
-## 에셋 {#assets}
+## Assets {#assets}
 
 Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함한 Assets에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
 

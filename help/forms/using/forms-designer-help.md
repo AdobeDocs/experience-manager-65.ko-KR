@@ -1,7 +1,7 @@
 ---
-title: Forms 디자이너 도움말
+title: Forms Designer 도움말
 seo-title: Forms Designer help
-description: Forms Designer는 사용자가 양식 제출 시 도움을 줍니다.
+description: Forms Designer는 사용자가 양식을 제출할 수 있도록 지원합니다.
 seo-description: Forms Designer help
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 ---
 
-# Forms 디자이너 도움말 {#form-designer-help}
+# Forms Designer 도움말 {#form-designer-help}
 
-[디자이너 사용](https://www.adobe.com/go/learn_aemforms_designer_65)
-[디자이너 빠른 시작 Tutorials](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+[Designer 사용](https://www.adobe.com/go/learn_aemforms_designer_65)
+[Designer 빠른 시작 Tutorials](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 [디자이너 샘플](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-[디자이너 스크립팅 기본 사항](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
+[Designer 스크립팅 기본 사항](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
 [디자이너 스크립팅 참조](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-[디자이너 양식 계산 참조](https://www.adobe.com/go/learn_aemforms_formCalc_65)
+[디자이너 FormCalc 참조](https://www.adobe.com/go/learn_aemforms_formCalc_65)

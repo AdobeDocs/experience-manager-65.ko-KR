@@ -14,7 +14,7 @@ exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
 source-git-commit: 1ee82589ca9284a8ad5ecf3ca156fe10f314846a
 workflow-type: tm+mt
 source-wordcount: '1754'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -180,7 +180,7 @@ AEM이 Angular 및 React SPA 프레임워크을 기본적으로 지원하는 것
 
 >[!NOTE]
 >
->모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html): React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용합니다.
+>AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
 
 ## Node.js 사용 {#using-node-js}
 

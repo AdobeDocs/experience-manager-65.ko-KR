@@ -12,8 +12,8 @@ docset: aem65
 exl-id: 78ce6107-8821-47d6-86ab-7ab968945e7c
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '811'
+ht-degree: 6%
 
 ---
 
@@ -45,7 +45,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
  <tbody>
   <tr>
    <th><p>디렉토리</p> </th>
-   <th><p>컨텐트</p> </th>
+   <th><p>콘텐츠</p> </th>
   </tr>
   <tr>
    <td><p><code>CordovaLib</code></p> </td>

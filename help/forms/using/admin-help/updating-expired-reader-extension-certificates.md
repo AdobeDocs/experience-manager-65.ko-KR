@@ -12,69 +12,69 @@ ht-degree: 2%
 
 # Reader 확장 인증서 만료 및 영향 {#expiration-of-reader-extensions-certificates-and-its-impact}
 
-Adobe Managed Services 또는 온-프레미스 엔터프라이즈 기본 라이선스를 사용하는 Adobe Experience Manager Forms(AEM Forms) 고객은 Acrobat Reader DC 확장 서비스를 사용할 수 있습니다. 이 서비스를 사용하면 조직에서 추가 사용 권한과 함께 Acrobat Reader의 기능을 확장하여 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 PDF 문서에 사용 권한을 추가하고 Adobe Acrobat Reader을 사용하여 PDF 문서를 열 때 사용할 수 없는 기능(예: 문서에 주석 추가, 양식 채우기, 문서 저장)을 활성화합니다. 타사 사용자는 권한이 활성화된 문서에서 작업할 추가 소프트웨어 또는 플러그인이 필요하지 않습니다. 사용 권한이 추가된 PDF 문서를 권한 사용 문서라고 합니다. Acrobat Reader에서 권한이 활성화된 PDF 문서를 여는 사용자는 해당 문서에 대해 활성화된 작업을 수행할 수 있습니다.
+Adobe Experience Manager Forms(AEM Forms) 고객 중 Adobe Managed Services 또는 On-Premise Enterprise Base 라이선스를 보유한 고객은 Acrobat Reader DC 확장 서비스를 사용할 수 있습니다. 이 서비스를 통해 조직은 추가적인 사용 권한과 함께 Acrobat Reader의 기능을 확장하여 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 PDF 문서에 사용 권한을 추가하고, Adobe Acrobat Reader을 사용하여 PDF 문서를 열 때 사용할 수 없는 기능(문서에 주석 추가, 양식 채우기, 문서 저장 등)을 활성화합니다. 서드파티 사용자는 권한이 활성화된 문서에서 작동하는 데 추가 소프트웨어나 플러그인이 필요하지 않습니다. 사용 권한이 추가된 PDF 문서를 권한 사용 문서라고 합니다. Acrobat Reader에서 권한이 활성화된 PDF 문서를 여는 사용자는 해당 문서에 대해 활성화된 작업을 수행할 수 있습니다.
 
-Adobe은 PKI(공개 키 인프라)를 활용하여 라이센스 및 기능 활성화에서 사용할 디지털 인증서를 발행합니다. Adobe이 인증 기관에서 인증서를 발급했습니다. **Adobe 루트 CA**: 2023년 1월 7일에 만료될 예정입니다. 인증서 만료는 **Adobe 루트 CA** 기반 인증서(이전 인증서) 모든 PDF 문서, 고객이 다운로드한 인증서를 포함하여 2023년 1월 7일 이전에 이전 인증서를 사용하여 확장된 Reader은 해당 문서에 적용되는 모든 사용 권한을 계속 사용할 것이며 업데이트가 필요하지 않습니다.
+Adobe은 PKI(공개 키 인프라)를 활용하여 라이선싱 및 기능 활성화에 사용할 디지털 인증서를 발행합니다. Adobe이 인증 기관에서 인증서를 발급하고 있습니다. **Adobe 루트 CA**, 2023년 1월 7일에 만료되도록 설정되었습니다. 인증서 만료는 인증서에서 발급된 프로덕션 인증서를 사용하여 확장된 PDF 문서에는 영향을 주지 않습니다 **Adobe 루트 CA** 기반 인증서(이전 인증서). 2023년 1월 7일 이전에 이전 인증서를 사용하여 확장된 모든 PDF 문서 및 고객이 다운로드한 문서를 포함하여 Reader은 적용되는 모든 사용 권한으로 계속 작동하며 업데이트가 필요하지 않습니다.
 
-새로운 인증 기관 **Adobe 루트 CA G2**&#x200B;이제 새 인증 기관을 기반으로 한 인증서 및 를 사용할 수 있습니다. 2023년 1월 7일 또는 그 이전에, **Adobe 루트 CA G2** — 새 PDF 문서를 Reader으로 확장합니다.  다음을 수행할 수 있습니다 [Adobe 라이선스 웹 사이트에서 새 인증서 받기](https://licensing.adobe.com/) 또는 Adobe 지원.
+새 인증 기관 **Adobe 루트 CA G2**&#x200B;이제 새 인증 기관을 기반으로 하는 인증서를 사용할 수 있습니다. 2023년 1월 7일 또는 그 이전에 새 인증서(를 기반으로 하는 인증서) 사용을 시작합니다 **Adobe 루트 CA G2** — Reader으로 새 PDF 문서를 확장합니다.  다음을 수행할 수 있습니다. [Adobe 라이선스 웹 사이트에서 새 인증서 받기](https://licensing.adobe.com/) 또는 Adobe 지원.
 
 ## FAQ
 
-**Q. Adobe 루트 인증서와 Acrobat Reader 확장 인증서의 차이점은 무엇입니까? Adobe 루트 인증서가 Acrobat Reader 확장 인증서에 종속됩니까? 이 두 인증서 모두 2023년 1월에 만료됩니까?**
+**Q. Adobe 루트 인증서와 Acrobat Reader 확장 인증서 간의 차이점은 무엇입니까? Adobe 루트 인증서가 Acrobat Reader 확장 인증서에 종속됩니까? 이 두 인증서 모두 2023년 1월에 만료됩니까?**
 
-A. Adobe 루트 CA는 Acrobat Reader 확장 인증서가 발급되는 인증 기관입니다. 2023년 1월 7일에 &quot;Adobe 루트 CA&quot; 및 그로부터 발행된 모든 인증서가 만료됩니다.
+A. Adobe 루트 CA는 Acrobat Reader 확장 인증서를 발급하는 인증 기관입니다. 2023년 1월 7일, &quot;Adobe 루트 CA&quot; 및 그로부터 발행된 모든 인증서가 만료됩니다.
 
-**Q. Adobe의 이전 통신에서 인증서 만료 및 PDF 문서 사용/열기 영향을 받았습니다. 그 의사소통은 무시되어야 할까?**
+**Q. 인증서 만료 및 PDF 문서 사용/열기에 미치는 영향에 대해 이전에 Adobe에서 설명한 내용이 있습니다. 이러한 커뮤니케이션은 무시되어야 합니까?**
 
-A. 상황을 재평가한 결과 2023년 1월 7일 이전에 종전의 &quot;Adobe 루트 CA&quot;에서 발급한 프로덕션 인증서를 사용하여 연장된 모든 PDF 문서는 2023년 1월 7일 이후에도 아무런 변경 없이 계속 작동합니다. 이미 PDF 문서를 업데이트한 경우 경험에 변경 사항이 없습니다.
+A. 상황 재평가에 따라 2023년 1월 7일 이전에 구 &quot;Adobe 루트 CA&quot;에서 발급한 생산 인증서를 사용하여 확장된 모든 PDF 문서는 2023년 1월 7일 이후에도 변경 없이 계속 작동합니다. PDF 문서를 이미 업데이트했다면 경험에는 변경 사항이 없습니다.
 
-**Q. 추가 질문 사항은 누구에게 문의해야 합니까?**
+**Q. 열차에 탑승할 수 있나요?**
 
-A. [Adobe 지원](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) 또는 지원 티켓을 인상합니다.
+A. 다음으로 문의할 수 있습니다. [Adobe 지원](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) 또는 지원 티켓을 높입니다.
 
-**Q. 2023년 1월 7일 이전에 인증서를 업데이트하지 않으면 어떻게 됩니까?**
+**Q. 열차 티켓을 예약할 때 특정 목적지에 대해서는 알아볼 수 있습니다.**
 
-A. 2023년 1월 7일 이전에 이전의 &#39;Adobe 루트 CA&#39;에서 발급한 프로덕션 인증서를 사용하여 확장된 모든 PDF 문서는 2023년 1월 7일 이후에도 아무런 변경 없이 계속 작동합니다. 만료 날짜 이후에는 평가 인증서로 확장된 PDF이 작동하지 않습니다.
+A. 2023년 1월 7일 이전에 기존 &#39;Adobe 루트 CA&#39;에서 발급한 프로덕션 인증서를 사용하여 확장된 모든 PDF 문서는 2023년 1월 7일 이후에도 변경 없이 계속 작동합니다. 평가 인증서로 확장된 PDF은 만료일 이후 작동하지 않습니다.
 
-**Q. 새 인증서에 대한 설명은 이전 인증서와 다른 것입니까?**
+**Q. 레일프로텍션플랜TM을 통해 어떻게 교환을 요청할 수 있나요?**
 
-A. 새 Acrobat Reader 확장 인증서에 대한 설명 **G3-P24** 를 프로그램 이름으로 지정합니다. 이전 인증서(&quot;Adobe 루트 CA&quot;를 기반으로 함)에 대한 설명에서 **P24** 은 프로그램 이름으로 언급됩니다.
+A. 새 Acrobat Reader 확장 인증서에 대한 설명 **G3-P24** 를 프로그램 이름으로 사용하십시오. 이전 인증서(&quot;Adobe 루트 CA&quot; 기반 인증서)에 대한 설명에서 **P24** 프로그램 이름으로 가 언급되어 있습니다.
 
-**Q. 최신 인증서를 가져오려면 어떻게 해야 합니까?**
+**Q. 열차 티켓을 예약할 때 특정 목적의 티켓을 선택할 수 있나요?**
 
-A. 권한이 있는 모든 Forms 고객(활성 라이센스가 있는)은 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/). Adobe 라이선스 웹 사이트에서 인증서를 찾을 수 없는 경우 [Adobe 지원](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) 또는 지원 티켓을 인상합니다.
+A. 권한이 있는 모든 Forms 고객 (활성 라이선스 포함)은 (으)로부터 새 인증서 (&quot;Adobe 루트 CA G2&quot;에 기반한 인증서)를 다운로드할 수 있습니다. [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/). Adobe 라이선스 웹 사이트에서 인증서를 찾을 수 없는 경우 [Adobe 지원](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) 또는 지원 티켓을 높입니다.
 
-**Q. 이전 인증 기관(Adobe 루트 CA)에서 발급한 인증서를 사용하여 PDF 문서가 2023년 1월 7일 이후에도 계속 작동합니까?**
+**Q. &quot;Adobe 루트 CA&quot;(이전 인증 기관)에서 발급한 인증서를 사용하여 확장된 내 PDF 문서가 2023년 1월 7일 이후에도 계속 작동합니까?**
 
-A. 예, 2023년 1월 7일 이전에 &quot;Adobe 루트 CA&quot;(이전 인증 기관)에서 발급한 프로덕션 인증서를 사용하여 연장된 모든 PDF 문서는 2023년 1월 7일 이후 변경 없이 계속 작동합니다. 평가 인증서로 확장된 PDF 문서가 만료 날짜 이후에 작동하지 않습니다.
+A. 예. 2023년 1월 7일 이전에 &quot;Adobe 루트 CA&quot;(이전 인증 기관)에서 발급한 프로덕션 인증서를 사용하여 확장된 모든 PDF 문서는 2023년 1월 7일 이후에도 변경 없이 계속 작동합니다. 평가 인증서로 확장된 PDF 문서가 만료 날짜 이후에 작동하지 않습니다.
 
-**Q. &quot;Adobe 루트 CA&quot;(이전 인증 기관)에서 발급한 인증서와 함께 확장된 PDF 문서를 계속 사용하려면 Adobe Acrobat Reader 버전은 무엇입니까?**
+**Q. &quot;Adobe 루트 CA&quot;(이전 인증 기관)에서 발급한 인증서로 확장된 PDF 문서를 계속 사용하려면 어떤 버전의 Adobe Acrobat Reader이 필요합니까?**
 
-A. Adobe Acrobat Reader 2020 이상은 &quot;Adobe 루트 CA&quot;(이전 인증 기관)로 확장된 PDF 문서를 사용해야 합니다. 이 문서를 게시할 때 지원되는 Acrobat Reader 버전입니다. 를 사용 중인 경우 [지원되지 않는 Adobe Acrobat 버전](https://helpx.adobe.com/kr/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader을 다운로드하여 설치합니다.](https://get.adobe.com/reader/).
+A. Adobe Acrobat Reader 2020 이상 버전은 &quot;Adobe 루트 CA&quot;(이전 인증 기관)로 확장된 PDF 문서를 사용해야 합니다. 이 문서를 게시할 때 지원되는 Acrobat Reader 버전입니다. 를 사용하는 경우 [지원되지 않는 Adobe Acrobat 버전](https://helpx.adobe.com/kr/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader 다운로드 및 설치](https://get.adobe.com/reader/).
 
-**Q. &quot;Adobe 루트 CA 2&quot;(새 인증 기관)에서 발급한 인증서로 확장된 PDF 문서를 계속 사용하려면 Adobe Acrobat Reader 버전은 무엇입니까?**
+**Q. &quot;Adobe 루트 CA 2&quot;(새 인증 기관)에서 발급한 인증서로 확장된 PDF 문서를 계속 사용하려면 어떤 버전의 Adobe Acrobat Reader이 필요합니까?**
 
-A. Adobe Acrobat Reader 2020 이상은 &quot;Adobe 루트 CA 2&quot;(새 인증 기관)로 확장된 PDF 문서를 사용해야 합니다. 를 사용 중인 경우 [지원되지 않는 Adobe Acrobat Reader 버전](https://helpx.adobe.com/kr/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader을 다운로드하여 설치합니다.](https://get.adobe.com/reader/).
+A. &quot;Adobe 루트 CA 2&quot;(새 인증 기관)를 사용하여 확장된 PDF 문서를 사용하려면 Adobe Acrobat Reader 2020 이상이 필요합니다. 를 사용하는 경우 [지원되지 않는 Adobe Acrobat Reader 버전](https://helpx.adobe.com/kr/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader 다운로드 및 설치](https://get.adobe.com/reader/).
 
-**Q. 기존 별칭을 계속 사용하면서 Adobe Experience Manager Forms 서버에 이전 Acrobat Reader 확장 인증서를 삭제하고 새 인증서를 추가할 수 있습니까?**
+**Q. 기존 별칭을 계속 사용하면서 이전 Acrobat Reader 확장 인증서를 삭제하고 Adobe Experience Manager Forms Server에 새 인증서를 추가할 수 있습니까?**
 
-A. 예, 이전 Acrobat Reader 확장 인증서를 삭제하고 기존 별칭이 있는 새 인증서를 Adobe Experience Manager Forms 서버에 추가할 수 있습니다.
+A. 예. 이전 Acrobat Reader 확장 인증서를 삭제하고 기존 별칭이 있는 새 인증서를 Adobe Experience Manager Forms 서버에 추가할 수 있습니다.
 
-**Q. Adobe Experience Manager Forms 서버에 새 인증서와 이전 Acrobat Reader 확장 인증서를 모두 유지할 수 있습니까?**
+**Q. Acrobat Reader Adobe Experience Manager Forms 서버에 새 Extension 인증서와 이전 Extension 인증서를 모두 유지할 수 있습니까?**
 
-A. 예, 두 인증서를 모두 유지할 수 있지만 Adobe Experience Manager Forms 서버에서 다른 별칭을 사용합니다. 2023년 1월 7일 이후에는 새 인증서만 사용하여 PDF 문서를 확장할 수 있습니다.
+A. 예. 두 인증서를 모두 유지할 수 있지만 Adobe Experience Manager Forms 서버에 서로 다른 별칭을 사용할 수 있습니다. 2023년 1월 7일 이후, 새 인증서만 사용하여 PDF 문서를 Reader 확장할 수 있습니다.
 
-**Q. 동일한 Acrobat Reader 확장 인증서를 모든 Adobe Experience Manager Forms 환경에 가져올 수 있습니까?**
+**Q. 모든 Adobe Experience Manager Forms 환경에 동일한 Acrobat Reader 확장 인증서를 가져올 수 있습니까?**
 
-A. 예, 여러 환경에서 동일한 Acrobat Reader 확장 인증서를 사용할 수 있습니다.
+A. 예. 동일한 Acrobat Reader 확장 인증서를 여러 환경에서 사용할 수 있습니다.
 
-**Q. PDF 문서에 적용된 사용 권한을 확인하려면 어떻게 합니까?**
+**Q. PDF 문서에 적용되는 사용 권한을 어떻게 확인할 수 있습니까?**
 
-A. [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) PDF 문서에 적용된 사용 권한에 대한 정보를 검색할 수 있는 API입니다.
+A. 다음을 사용할 수 있습니다 [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) PDF 문서에 적용된 사용 권한에 대한 정보를 검색하기 위한 API입니다.
 
 **Q. Acrobat Reader 확장 인증서 파일의 암호를 변경하려면 어떻게 해야 합니까?**
 
-A. Microsoft Windows에서 인증서 암호를 변경하려면 MMC(Microsoft Management Console)를 사용하여 인증서를 설치하고 를 선택합니다 **키를 내보낼 수 있도록 표시합니다**. 설치되면 개인 키로 인증서를 내보내고 PFX 파일에 다른 암호를 사용합니다.
+A. Microsoft Windows에서 인증서 암호를 변경하려면 MMC(Microsoft Management Console)를 사용하여 인증서를 설치하고 를 선택합니다 **키를 내보낼 수 있도록 표시**. 설치 후 개인 키로 인증서를 내보내고 PFX 파일에 다른 암호를 사용합니다.
 
 
 <!-- 

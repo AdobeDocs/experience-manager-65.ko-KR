@@ -1,7 +1,7 @@
 ---
-title: Ideation Essentials
+title: 관념화 기본 사항
 seo-title: Ideation Essentials
-description: 이미지 기능 개요
+description: 관념화 기능 개요
 seo-description: Ideation feature overview
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
 contentOwner: msm-service
@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ---
 
-# Ideation Essentials {#ideation-essentials}
+# 관념화 기본 사항 {#ideation-essentials}
 
-이 페이지에서는 포럼과 유사하지만 초안으로 저장하는 기능 및 보다 공동 작업 느낌을 갖는 아이디어 기능 작업에 필요한 정보를 제공합니다.
+이 페이지는 포럼과 유사하지만 초안으로 저장할 수 있는 기능과 공동 작업 환경을 갖춘 관념화 기능 작업에 필요한 필수 정보를 제공합니다.
 
 ## 클라이언트측 핵심 사항 {#essentials-for-client-side}
 
@@ -27,15 +27,15 @@ ht-degree: 3%
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>소셜/관념화/구성 요소/hbs/관념화</td>
+   <td>social/ideation/components/hbs/ideation</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함하기 쉬워</strong></a></td>
    <td>아니요</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.hbs.voting<br /> cq.social.hbs.linking<br /> cq.social.hbs.ideation</td>
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td>cq.social.hbs.voting<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
   </tr>
   <tr>
    <td> <strong>템플릿</strong></td>
@@ -47,7 +47,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td>자세한 내용은 <a href="ideation-feature.md">이미지 기능</a></td>
+   <td>다음을 참조하십시오 <a href="ideation-feature.md">관념화 기능</a></td>
   </tr>
  </tbody>
 </table>

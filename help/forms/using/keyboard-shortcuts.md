@@ -1,7 +1,7 @@
 ---
 title: AEM Forms 키보드 단축키
 seo-title: AEM Forms Keyboard Shortcuts
-description: 이 문서에서는 Windows 및 Macintosh 운영 체제에 대한 적응형 양식 편집기, 테마 편집기, 컨텐츠 브라우저 및 서신 관리와 함께 사용할 수 있는 키보드 단축키를 나열합니다.
+description: 이 문서에서는 적응형 양식 편집기, 테마 편집기, 콘텐츠 브라우저 및 Windows 및 Macintosh 운영 체제용 서신 관리와 함께 사용할 수 있는 키보드 단축키를 나열합니다.
 seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -19,39 +19,39 @@ ht-degree: 5%
 
 # AEM Forms 키보드 단축키 {#aem-forms-keyboard-shortcuts}
 
-이 문서에서는 Windows 및 Macintosh 운영 체제에 대한 적응형 양식 편집기, 테마 편집기, 컨텐츠 브라우저 및 서신 관리와 함께 사용할 수 있는 키보드 단축키를 나열합니다.
+이 문서에서는 적응형 양식 편집기, 테마 편집기, 콘텐츠 브라우저 및 Windows 및 Macintosh 운영 체제용 서신 관리와 함께 사용할 수 있는 키보드 단축키를 나열합니다.
 
 ## 적응형 양식 편집기 {#adaptiveformeditor}
 
 | **작업** | **Windows의 바로 가기** | **Mac OS의 바로 가기** |
 |---|---|---|
-| 선택한 적응형 양식 구성 요소에 대한 속성 브라우저를 엽니다 | Alt+Enter | Alt+Return |
-| 선택한 적응형 양식 구성 요소에 대한 속성 브라우저를 닫습니다 | Ctrl+Alt+W | Command+Alt+W |
-| 선택한 적응형 양식 구성 요소에 대한 속성 브라우저에 변경 내용을 저장합니다 | Ctrl+S | Command+S |
+| 선택한 적응형 양식 구성 요소에 대한 속성 브라우저 열기 | Alt+Enter | Alt+Return |
+| 선택한 적응형 양식 구성 요소의 속성 브라우저 닫기 | Ctrl+Alt+W | Command+Alt+W |
+| 선택한 적응형 양식 구성 요소에 대한 속성 브라우저에서 변경 사항 저장 | Ctrl+S | Command+S |
 | 선택한 적응형 양식 구성 요소에 대한 규칙 편집 | Ctrl+Alt+Enter | Command+Alt+Return |
-| 미리 보기 와 현재 선택한 모드(예: 편집, 스캐폴딩 등) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&amp;Ast; |
+| 미리보기 와 현재 선택한 모드 (예: 편집, 스캐폴딩 등) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&amp;Ast; |
 | 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Ast; |
-| 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;Ast; |
+| 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;ast; |
 | 여러 구성 요소 선택 | Shift+클릭 | Shift+클릭 |
 | 선택한 구성 요소 복사 | Ctrl+C | Ctrl-C&amp;ast; |
-| 선택한 구성 요소를 잘라냅니다. 잘라낸 구성 요소는 새 위치로 붙여넣을 때까지 사라지지 않습니다. | Ctrl+X | Ctrl-X&amp;Ast; |
+| 선택한 구성 요소를 잘라냅니다. 잘라낸 구성 요소는 새 위치에 붙여넣을 때까지 사라지지 않습니다. | Ctrl+X | Ctrl-X&amp;ast; |
 | 구성 요소 붙여넣기 | Ctrl+V | Ctrl+V |
-| 선택한 구성 요소 삭제 | Ctrl+Del | Ctrl+Del&amp;Ast; |
-| 선택한 구성 요소 삭제 | Ctrl+백스페이스 | Ctrl+백스페이스&amp;Ast; |
-| 미리 보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 만들기 | Ctrl+B | Ctrl+B&amp;Ast; |
-| 미리 보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시 | Ctrl+I | Ctrl+I&amp;Ast; |
-| 미리 보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 만들기 | Ctrl+U | Ctrl+U&amp;Ast; |
+| 선택한 구성 요소 삭제 | Ctrl+Del | Ctrl+Del&amp;ast; |
+| 선택한 구성 요소 삭제 | Ctrl+백스페이스 | Ctrl+백스페이스(&amp;A); |
+| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+B | Ctrl+B&amp;ast; |
+| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시 | Ctrl+I | Ctrl+I&amp;Ast; |
+| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+U | Ctrl+U&amp;Ast; |
 
 >[!NOTE]
 >
->&#39;&amp;ast;&#39;로 표시된 단축키는 Mac OS의 Ctrl 및 Command 키와 함께 작동합니다.
+>&#39;&amp;ast;&#39;로 표시된 바로 가기는 Mac OS의 Ctrl 키와 Command 키에서 모두 작동합니다.
 
 >[!NOTE]
 >
 >데스크톱 장치에서의 다중 선택:
 >
 >* Windows: 필요한 구성 요소를 Ctrl+클릭합니다.
->* Mac OS: Command+필요한 구성 요소를 클릭합니다.
+>* MAC OS: 필요한 구성 요소를 Command+클릭합니다.
 >
 
 
@@ -59,33 +59,33 @@ ht-degree: 5%
 
 | **작업** | **Windows의 바로 가기** | **Mac OS의 바로 가기** |
 |---|---|---|
-| 선택한 구성 요소의 속성 브라우저를 테마에서 엽니다. | Alt+Enter | Alt+Return |
-| 선택한 구성 요소의 속성 브라우저를 테마에서 닫습니다 | Ctrl+Alt+W | Command+Alt+W |
+| 테마에서 선택한 구성 요소의 속성 브라우저 열기 | Alt+Enter | Alt+Return |
+| 테마에서 선택한 구성 요소의 속성 브라우저 닫기 | Ctrl+Alt+W | Command+Alt+W |
 | 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Ast; |
-| 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;Ast; |
-| 선택한 구성 요소의 테마 브라우저에서 변경 내용을 저장합니다 | Ctrl+S | Ctrl+S&amp;Ast; |
+| 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;ast; |
+| 선택한 구성 요소의 속성 브라우저에서 변경 내용을 테마에 저장 | Ctrl+S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
->&#39;&amp;ast;&#39;로 표시된 단축키는 Mac OS의 Ctrl 및 Command 키와 함께 작동합니다.
+>&#39;&amp;ast;&#39;로 표시된 바로 가기는 Mac OS의 Ctrl 키와 Command 키에서 모두 작동합니다.
 
 ## 컨텐츠 브라우저  {#contentbrowser}
 
 | **작업** | **Windows의 바로 가기** | **Mac OS의 바로 가기** |
 |---|---|---|
-| 포커스가 있을 때 컨텐츠 브라우저의 양식 객체 트리에서 모든 아코디언을 확장합니다 | 확장할 아코디언을 모두 선택하려면 Ctrl+A를 누르고 확장하려면 오른쪽 화살표를 누릅니다 | Command+A를 눌러 확장할 모든 아코디언을 선택하고 오른쪽 화살표를 누릅니다 |
-| 포커스가 있을 때 컨텐츠 브라우저의 양식 객체 트리에서 모든 아코디언을 축소합니다 | 축소하려면 Ctrl+A를 누르고 왼쪽 화살표를 누릅니다 | Command+A를 눌러 모든 아코디언을 선택하고 왼쪽 화살표를 클릭하여 축소합니다 |
-| 양식 객체 트리에서 선택한 아코디언을 확장합니다 | 오른쪽 화살표 | 오른쪽 화살표 |
-| 양식 객체 트리에서 선택한 아코디언 축소 | 왼쪽 화살표 | 왼쪽 화살표 |
-| Forms 개체 트리에서 다음 항목을 선택합니다 | 아래쪽 화살표 | 아래쪽 화살표 |
-| Forms 개체 트리에서 이전 항목을 선택합니다 | 위쪽 화살표 | 위쪽 화살표 |
+| 포커스가 있을 때 컨텐츠 브라우저의 양식 개체 트리에서 모든 아코디언을 확장합니다. | 모든 아코디언을 선택하려면 Ctrl+A를 누르고 확장하려면 오른쪽 화살표 클릭 | Command+A를 눌러 모든 아코디언을 선택한 다음 오른쪽 화살표를 눌러 확장 |
+| 포커스가 있을 때 컨텐츠 브라우저의 양식 개체 트리에서 모든 아코디언을 축소합니다 | 축소할 왼쪽 화살표 뒤에 모든 아코디언을 선택하려면 Ctrl+A를 클릭 | Command+A를 눌러 모든 아코디언을 선택한 다음 왼쪽 화살표를 눌러 축소합니다. |
+| 양식 개체 트리에서 선택한 아코디언 확장 | 오른쪽 화살표 | 오른쪽 화살표 |
+| 양식 개체 트리에서 선택한 아코디언 축소 | 왼쪽 화살표 | 왼쪽 화살표 |
+| Forms 개체 트리에서 다음 항목 선택 | 아래쪽 화살표 | 아래쪽 화살표 |
+| Forms 개체 트리에서 이전 항목 선택 | 위쪽 화살표 | 위쪽 화살표 |
 
-[1] Windows의 경우 Ctrl + 오른쪽 화살표, Mac OS의 경우 Command + 오른쪽 화살표 를 대체합니다.\
-[2개] Windows의 경우 Ctrl + 왼쪽 화살표, Mac OS의 경우 Command + 왼쪽 화살표 를 대체합니다.
+[1] Windows의 경우 Ctrl + 오른쪽 화살표, Mac OS의 경우 Command + 오른쪽 화살표를 대체합니다.\
+[2] Windows의 경우 Ctrl + 왼쪽 화살표, Mac OS의 경우 Command + 왼쪽 화살표를 대체합니다.
 
 ## 서신 관리 {#correspondence-management}
 
-이 섹션에는 서신 관리 텍스트 편집기에서 사용할 수 있는 다양한 키보드 및 접근성 단축키가 나열됩니다. 다음과 같은 경우 다음 단축키를 사용할 수 있습니다.
+이 섹션에는 서신 관리 텍스트 편집기에서 사용할 수 있는 다양한 키보드와 액세스 가능성 단축키가 나열되어 있습니다. 다음과 같은 상태에서 이러한 단축키를 사용할 수 있습니다.
 
 * 만들기 또는 편집 [텍스트](texts-interactive-communications.md) 자산
 * 관련 편집 아이콘( )을 탭한 후 텍스트 모듈 편집 ![edittextmodule](assets/edittextmodule.png)) [서신 만들기](/help/forms/using/create-correspondence.md).
@@ -110,17 +110,17 @@ ht-degree: 5%
    <td>Command+Shift+왼쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>선택 영역을 단락의 시작 부분까지 확장합니다.</p> </td> 
+   <td><p>선택 영역을 단락의 시작으로 확장</p> </td> 
    <td><p>Ctrl+Shift+위쪽 화살표</p> </td> 
    <td>Command+Shift+위쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>선택 영역을 단락의 끝까지 확장합니다.</p> </td> 
+   <td><p>선택 영역을 단락 끝까지 확장</p> </td> 
    <td><p>Ctrl+Shift+아래쪽 화살표</p> </td> 
    <td>Command+Shift+아래쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>텍스트 편집기에서 모든 텍스트를 선택합니다</p> </td> 
+   <td><p>텍스트 편집기에서 모든 텍스트 선택</p> </td> 
    <td><p>Ctrl+A</p> </td> 
    <td>Command+A</td> 
   </tr>
@@ -135,73 +135,73 @@ ht-degree: 5%
    <td>Option+왼쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>다음 단락으로 커서를 이동합니다.</p> </td> 
+   <td><p>커서를 다음 단락으로 이동합니다.</p> </td> 
    <td><p>Ctrl+아래쪽 화살표</p> </td> 
    <td>Option+아래쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>이전 단락에 커서를 이동합니다.</p> </td> 
+   <td><p>커서를 이전 단락으로 이동합니다.</p> </td> 
    <td><p>Ctrl+위쪽 화살표</p> </td> 
    <td>Option+위쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>텍스트를 한 문자씩 뒤 방향으로 선택합니다</p> </td> 
+   <td><p>뒤로 한 문자씩 텍스트 선택</p> </td> 
    <td><p>Shift+왼쪽 화살표</p> </td> 
    <td>Shift+왼쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>텍스트를 한 문자씩 정방향 선택</p> </td> 
+   <td><p>앞으로 한 문자씩 텍스트 선택</p> </td> 
    <td><p>Shift+오른쪽 화살표</p> </td> 
    <td>Shift+오른쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>텍스트를 한 단락씩 뒤 방향으로 선택합니다</p> </td> 
+   <td><p>뒤쪽 방향으로 한 단락씩 텍스트 선택</p> </td> 
    <td><p>Shift+위쪽 키</p> </td> 
    <td>Shift+위쪽 키</td> 
   </tr>
   <tr>
-   <td><p>텍스트를 한 단락씩 앞으로 선택합니다</p> </td> 
-   <td><p>Shift+아래쪽 키</p> </td> 
-   <td>Shift+아래쪽 키</td> 
+   <td><p>앞으로 한 단락씩 텍스트 선택</p> </td> 
+   <td><p>Shift+Down 키</p> </td> 
+   <td>Shift+Down 키</td> 
   </tr>
   <tr>
-   <td><p>페이지의 현재 위치에서 시작할 때까지 텍스트를 선택합니다</p> </td> 
-   <td><p>Shift+페이지 위로</p> </td> 
+   <td><p>페이지의 현재 위치에서 시작할 때까지 텍스트 선택</p> </td> 
+   <td><p>Shift+Page Up</p> </td> 
    <td>Fn+Shift+위쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>페이지의 끝 위치에서 끝까지 텍스트를 선택합니다</p> </td> 
-   <td><p>Shift+Page Down</p> </td> 
+   <td><p>페이지의 끝 위치에서 끝날 때까지 텍스트 선택</p> </td> 
+   <td><p>Shift+페이지 아래로</p> </td> 
    <td>Fn+Shift+아래쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>페이지 끝으로 커서 이동</p> </td> 
+   <td><p>커서를 페이지 끝으로 이동</p> </td> 
    <td><p>페이지 아래로</p> </td> 
    <td>Fn+아래쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>페이지 시작으로 커서 이동</p> </td> 
-   <td><p>페이지 업</p> </td> 
+   <td><p>커서를 페이지 시작 부분으로 이동</p> </td> 
+   <td><p>페이지 위로</p> </td> 
    <td>Fn+위쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>현재 위치에서 모듈 끝까지 텍스트를 선택합니다</p> </td> 
-   <td><p>Shift+Ctrl+끝</p> </td> 
+   <td><p>현재 위치에서 (모듈의) 끝까지 텍스트 선택</p> </td> 
+   <td><p>Shift+Ctrl+End</p> </td> 
    <td>Command+Shift+아래쪽 화살표<br /> </td> 
   </tr>
   <tr>
-   <td><p>현재 위치에서 시작(모듈)까지의 텍스트를 선택합니다</p> </td> 
+   <td><p>현재 위치에서 모듈의 시작 위치까지 텍스트 선택</p> </td> 
    <td><p>Shift+Ctrl+Home</p> </td> 
    <td>Command+Shift+위쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>시작 위치로 커서 이동</p> </td> 
-   <td><p>Ctrl+Home</p> </td> 
+   <td><p>커서를 시작 위치로 이동</p> </td> 
+   <td><p>Ctrl+홈</p> </td> 
    <td>Command+위쪽 화살표</td> 
   </tr>
   <tr>
    <td><p>커서를 끝 위치로 이동</p> </td> 
-   <td><p>Ctrl+끝</p> </td> 
+   <td><p>Ctrl+End</p> </td> 
    <td>Command+아래쪽 화살표</td> 
   </tr>
  </tbody>
@@ -223,24 +223,24 @@ ht-degree: 5%
    <td>Ctrl+Command+E</td> 
   </tr>
   <tr>
-   <td><p>단락을 왼쪽 정렬로 만들기</p> </td> 
+   <td><p>단락을 왼쪽으로 정렬합니다</p> </td> 
    <td><p>Ctrl+L</p> </td> 
    <td>Ctrl+Command+L</td> 
   </tr>
   <tr>
-   <td><p>단락을 오른쪽으로 정렬</p> </td> 
+   <td><p>단락을 오른쪽으로 정렬합니다.</p> </td> 
    <td><p>Ctrl+R</p> </td> 
    <td>Ctrl+Command+R</td> 
   </tr>
   <tr>
-   <td><p>단락을 정당화하다</p> </td> 
+   <td><p>단락을 정렬합니다.</p> </td> 
    <td><p>Ctrl+J</p> </td> 
    <td>Ctrl+Command+J</td> 
   </tr>
  </tbody>
 </table>
 
-### 작업 실행 취소 및 다시 실행 {#undo-and-redo-actions}
+### 작업 실행 취소 및 재실행 {#undo-and-redo-actions}
 
 <table> 
  <tbody>
@@ -255,7 +255,7 @@ ht-degree: 5%
    <td>Command+Z / Ctrl+Command+Z</td> 
   </tr>
   <tr>
-   <td><p>재실행 </p> </td> 
+   <td><p>다시 실행 </p> </td> 
    <td><p>Ctrl+Y</p> </td> 
    <td>Command+Y</td> 
   </tr>
@@ -294,14 +294,14 @@ ht-degree: 5%
    <th><strong>Mac OS의 바로 가기</strong></th> 
   </tr>
   <tr>
-   <td><p>커서 왼쪽에 있는 단어 삭제</p> </td> 
+   <td><p>커서 왼쪽에 단어 삭제</p> </td> 
    <td><p>Ctrl+백스페이스</p> </td> 
    <td>Option+Delete</td> 
   </tr>
   <tr>
-   <td><p>커서 오른쪽에 있는 단어 삭제</p> </td> 
-   <td><p>Ctrl+삭제</p> </td> 
-   <td>Ctrl+삭제</td> 
+   <td><p>커서 오른쪽의 단어 삭제</p> </td> 
+   <td><p>Ctrl+Delete</p> </td> 
+   <td>Ctrl+Delete</td> 
   </tr>
  </tbody>
 </table>
@@ -317,7 +317,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>텍스트 붙여넣기 </p> </td> 
-   <td><p>Ctrl+V / Shift + 삽입</p> </td> 
+   <td><p>Ctrl+V/Shift+삽입</p> </td> 
    <td>Command+V</td> 
   </tr>
   <tr>
@@ -343,12 +343,12 @@ ht-degree: 5%
    <th><strong>Mac OS의 바로 가기</strong></th> 
   </tr>
   <tr>
-   <td><p>굵은 글자로 만들기</p> </td> 
+   <td><p>글자를 굵게 만들기</p> </td> 
    <td><p>Ctrl+Alt+B / Ctrl+B</p> </td> 
    <td>Command+B</td> 
   </tr>
   <tr>
-   <td><p>글자를 기울임체로 만들기</p> </td> 
+   <td><p>문자를 기울임체로 만들기</p> </td> 
    <td><p>Ctrl+Alt+I / Ctrl+I </p> </td> 
    <td>Command+I</td> 
   </tr>

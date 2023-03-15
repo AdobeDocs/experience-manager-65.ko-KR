@@ -22,19 +22,19 @@ ht-degree: 61%
 
 ## AEM Foundation GDPR 지원 {#aem-foundation-gdpr-support}
 
-AEM Foundation 수준에서 저장된 개인 데이터는 사용자 프로필입니다. 따라서 이 문서의 정보에서는 주로 사용자 프로필에 액세스하여 삭제하고 GDPR 액세스 및 삭제 요청을 각각 처리하는 방법을 다룹니다.
+AEM Foundation 수준에서 저장되는 개인 데이터는 사용자 프로필입니다. 따라서 이 문서의 정보는 주로 사용자 프로필에 액세스하고 삭제하는 방법과 GDPR 액세스 및 삭제 요청을 처리하는 방법에 대해 각각 다룹니다.
 
 ## 사용자 프로필에 액세스 {#accessing-a-user-profile}
 
 ### 설명서 단계 {#manual-steps}
 
-1. 로 이동하여 사용자 관리 콘솔을 엽니다. **[!UICONTROL 설정 - 보안 - 사용자]** 또는 직접 `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. 을 찾아 사용자 관리 콘솔을 엽니다. **[!UICONTROL 설정 - 보안 - 사용자]** 또는 을 바로 탐색하여 `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
 1. 그런 다음 페이지 상단의 검색 창에서 해당 사용자의 이름을 입력하여 검색합니다.
 
-   ![usersearch](assets/usersearch.png)
+   ![사용자 검색](assets/usersearch.png)
 
 1. 마지막으로 사용자 프로필을 클릭하여 연 다음 **[!UICONTROL 세부 정보]** 탭을 선택합니다.
 
@@ -82,13 +82,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![userdisable](assets/userdisable.png)
 
-1. 마지막으로 작업을 확인합니다.
+1. 마지막으로 다음 작업을 확인합니다.
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   그러면 사용자 인터페이스에 프로필 카드에 잠금을 로그아웃하고 추가하여 사용자가 비활성화되었음을 나타냅니다.
+   그러면 사용자 인터페이스는 사용자가 회색으로 바뀌고 프로필 카드에 잠금을 추가하여 비활성화되었음을 나타냅니다.
 
-   ![비활성화된 사용자](assets/disableduser.png)
+   ![disableduser](assets/disableduser.png)
 
 ### 사용자 프로필 정보 삭제 {#delete-user-profile-information}
 
@@ -96,14 +96,14 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. 아래에 있는 사용자 노드를 엽니다. `[!UICONTROL /home/users]` 기본적으로
+1. 아래에 있는 사용자 노드를 엽니다. `[!UICONTROL /home/users]` 기본적으로:
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. 프로필 노드 및 모든 해당 하위 노드를 삭제합니다. AEM 버전에 따라 프로필 노드에 두 가지 형식이 있습니다.
+1. 프로필 노드 및 모든 하위 항목을 삭제합니다. 프로필 노드에는 AEM 버전에 따라 두 가지 형식이 있습니다.
 
    1. 아래의 기본 개인 프로필 `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`: AEM 6.5를 사용하여 만든 새 프로필의 경우.
+   1. `[!UICONTROL /profiles]`AEM 6.5를 사용하여 만든 새 프로필의 경우.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 

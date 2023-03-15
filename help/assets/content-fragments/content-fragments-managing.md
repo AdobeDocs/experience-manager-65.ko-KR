@@ -1,6 +1,6 @@
 ---
 title: 컨텐츠 조각 관리
-description: 자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
+description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # 콘텐츠 조각 관리 {#managing-content-fragments}
 
-자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
+Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 
 [콘텐츠 조각 모델](#creating-a-content-model)을 정의한 후 이를 사용하여 [콘텐츠 조각을 작성할](#creating-a-content-fragment) 수 있습니다.
 
@@ -32,7 +32,7 @@ ht-degree: 93%
 >다음과 같은 경우 콘텐츠 조각을 사용할 수 있습니다.
 >
 >* 페이지 작성 시([콘텐츠 조각을 사용하여 페이지 작성](/help/sites-authoring/content-fragments.md) 참조)
->* [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 전달](/help/assets/content-fragments/content-fragments-graphql.md) 시
+>* [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재](/help/assets/content-fragments/content-fragments-graphql.md) 시
 
 
 >[!NOTE]
@@ -53,7 +53,7 @@ ht-degree: 93%
 1. **만들기**&#x200B;를 선택한 후 **컨텐츠 조각**&#x200B;을 선택하여 마법사를 엽니다.
 1. 마법사의 첫 번째 단계에서는 새 조각의 기준을 지정해야 합니다.
 
-   * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다. 예 **모험** 모델
+   * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다. 예: **모험** 모델
 
       * 사용 가능한 모든 모델이 표시됩니다.
 
@@ -86,9 +86,9 @@ ht-degree: 93%
 1. **만들기**&#x200B;를 선택하여 작업을 완료한 후 편집할 조각을 **열거나** **완료**&#x200B;를 사용하여 콘솔로 돌아갑니다.
 
    >[!NOTE]
-   >in **목록** 콘솔의 모드에서 **설정 보기** 를 **컨텐츠 조각 모델** 열.
+   >위치 **목록** 콘솔의 모드 **설정 보기** 을(를) 활성화하려면 **콘텐츠 조각 모델** 열.
 
-## 자산 콘솔의 컨텐츠 조각에 대한 작업 {#actions-for-a-content-fragment-assets-console}
+## 에셋 콘솔의 콘텐츠 조각에 대한 작업 {#actions-for-a-content-fragment-assets-console}
 
 **자산** 콘솔에서 컨텐츠 조각에 다양한 작업을 사용할 수 있습니다.
 
@@ -359,8 +359,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 게시 환경에서 사용하려면 콘텐츠 조각을 게시해야 합니다. 게시할 수 있는 시점:
 
-* 생성 후; 사용 [자산 콘솔에서 사용할 수 있는 작업](#actions-for-a-content-fragment-assets-console).
-* 에서 [컨텐츠 조각 편집기](#toolbar-actions-in-the-content-fragment-editor).
+* 생성 후, 사용 [자산 콘솔에서 사용할 수 있는 작업](#actions-for-a-content-fragment-assets-console).
+* 다음에서 [콘텐츠 조각 편집기](#toolbar-actions-in-the-content-fragment-editor).
 * [조각을 사용하는 페이지를 게시](/help/sites-authoring/content-fragments.md#publishing)할 때. 페이지 참조에 조각이 나열됩니다.
 
 >[!CAUTION]

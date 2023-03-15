@@ -73,7 +73,7 @@ ht-degree: 100%
 
    * [론치 콘솔](/help/sites-authoring/launches.md#the-launches-console):
 
-      * **편집**&#x200B;을 선택하십시오.
+      * **편집**&#x200B;을 선택합니다.
    * 사용 가능한 작업을 표시하려면 [참조(사이트 콘솔)](/help/sites-authoring/launches.md#launches-in-references-sites-console)를 사용하십시오.
 
       * **론치 편집**&#x200B;을 선택하십시오.

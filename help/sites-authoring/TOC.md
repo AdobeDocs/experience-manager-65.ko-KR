@@ -28,7 +28,7 @@ ht-degree: 94%
    + [검색](search.md)
    + [계정 환경 구성](user-properties.md)
    + [받은 편지함](inbox.md)
-   + [키보드 단축키 콘솔](keyboard-shortcuts.md)
+   + [키보드 단축키 콘솔용](keyboard-shortcuts.md)
    + [UI 선택](select-ui.md)
 + 작성 {#authoring}
    + [작성 환경 및 도구](author-environment-tools.md)

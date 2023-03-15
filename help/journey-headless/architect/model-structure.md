@@ -1,26 +1,26 @@
 ---
 title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
-description: 컨텐츠 조각 모델을 사용하여 헤드리스 CMS용 컨텐츠 모델링 컨텐츠의 개념과 역학에 대해 알아봅니다.
+description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 13%
+ht-degree: 92%
 
 ---
 
 # AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기 {#architect-headless-content-fragment-models}
 
-## 지금까지 이야기 {#story-so-far}
+## 지금까지의 스토리 {#story-so-far}
 
-의 시작 [AEM Headless Content Author 여정](overview.md) a [AEM을 사용한 헤드리스의 컨텐츠 모델링 기본 사항](basics.md) 헤드리스용 작성과 관련된 기본 개념 및 용어를 다룹니다.
+[AEM Headless 콘텐츠 작성자 여정](overview.md) 시작 부분의 [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항](basics.md)에서는 Headless 작성과 관련된 기본 개념 및 용어를 다룹니다.
 
-이 문서는 AEM 헤드리스 프로젝트에 대한 자체 컨텐츠 조각 모델을 만드는 방법을 이해할 수 있도록 이러한 조각을 기반으로 합니다.
+이 문서는 해당 사항을 기본으로 하며, 이를 통해 자체 AEM Headless 프로젝트의 콘텐츠 조각 모델을 만드는 방법을 이해할 수 있습니다.
 
 ## 목표 {#objective}
 
-* **Audience**: 초보
-* **목표**: 컨텐츠 조각 모델을 사용하여 헤드리스 CMS용 컨텐츠 모델링 컨텐츠의 개념 및 역학을 참조하십시오.
+* **대상자**: 초급
+* **목표**: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 
 <!-- which persona does this? -->
 <!-- and who allows the configuration on the folders? -->
@@ -37,56 +37,56 @@ At the very start you need to enable Content Fragment Models for your site, this
 >See Additional Resources - Content Fragments in the Configuration Browser
 -->
 
-## 컨텐츠 조각 모델 만들기 {#creating-content-fragment-models}
+## 콘텐츠 조각 모델 만들기 {#creating-content-fragment-models}
 
-그런 다음 컨텐츠 조각 모델 을 만들고 구조를 정의할 수 있습니다. 도구 -> 자산 -> 컨텐츠 조각 모델에서 이 작업을 수행할 수 있습니다.
+그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. 이 작업은 도구 -> 에셋 -> 콘텐츠 조각 모델에서 수행할 수 있습니다.
 
-![도구의 컨텐츠 조각 모델](assets/cfm-tools.png)
+![도구의 콘텐츠 조각 모델](assets/cfm-tools.png)
 
-이 옵션을 선택한 후 모델의 위치로 이동하고 을 선택합니다 **만들기**. 여기에서 다양한 주요 세부 정보를 입력할 수 있습니다.
+이를 선택하면 모델 위치로 이동하고 **만들기**&#x200B;를 선택합니다. 여기에서 여러 주요 세부 정보를 입력할 수 있습니다.
 
-옵션 **모델 활성화** 은 기본적으로 활성화됩니다. 즉, 컨텐츠 조각을 저장하자마자 모델을 사용할 수 있습니다(컨텐츠 조각 만들기에서). 원할 경우 이 모델을 비활성화할 수 있습니다. 나중에 기존 모델을 활성화(또는 비활성화)할 기회가 있습니다.
+**모델 활성화** 옵션은 기본적으로 활성화됩니다. 즉, 모델은 저장하는 즉시 사용할 수 있습니다(콘텐츠 조각 생성 시). 필요한 경우 비활성화할 수 있음. 나중에 기존 모델을 활성화(또는 비활성화)할 수 있는 기회가 있습니다.
 
-![컨텐츠 조각 모델 만들기](/help/assets/content-fragments/assets/cfm-models-02.png)
+![콘텐츠 조각 모델 만들기](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-다음으로 확인 **만들기** 그러면 **열기** 구조 정의를 시작할 모델입니다.
+**만들기**&#x200B;를 사용하여 확인한 다음 모델을 **열어**&#x200B;서 구조 정의를 시작할 수 있습니다.
 
-## 컨텐츠 조각 모델 정의 {#defining-content-fragment-models}
+## 콘텐츠 조각 모델 정의 {#defining-content-fragment-models}
 
-새 모델을 처음 열면 왼쪽에 큰 공백, 긴 목록 등이 표시됩니다 **데이터 유형** 오른쪽:
+새 모델을 처음 열면 왼쪽에는 큰 공백이, 오른쪽에는 긴 **데이터 유형** 목록이 표시됩니다.
 
 ![빈 모델](/help/assets/content-fragments/assets/cfm-models-03.png)
 
-그럼 어떻게 해야 하죠?
+그럼 어떤 작업을 수행해야 합니까?
 
-인스턴스를 **데이터 유형** 왼쪽 공간에 있습니다. 이미 모델을 정의하고 있습니다.
+**데이터 유형** 인스턴스를 왼쪽 공간으로 드래그하여 모델을 미리 정의할 수 있습니다.
 
 ![필드 정의](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-데이터 유형을 추가하면 다음을 정의해야 합니다 **속성** 해당 필드에 대해 입력합니다. 사용 유형에 따라 다릅니다. 예:
+데이터 유형이 추가되면 해당 필드에 대한 **속성**&#x200B;을 정의해야 합니다. 이는 사용 중인 유형에 따라 다릅니다. 예:
 
 ![데이터 속성](/help/assets/content-fragments/assets/cfm-models-05.png)
 
-필요한 만큼 필드를 추가할 수 있습니다. 예:
+필요에 따라 여러 필드를 추가할 수 있습니다. 예:
 
 ![콘텐츠 조각 모델](/help/assets/content-fragments/assets/cfm-models-07.png)
 
-### 컨텐츠 작성자 {#your-content-authors}
+### 콘텐츠 작성자 {#your-content-authors}
 
-컨텐츠 작성자는 모델을 만드는 데 사용한 실제 데이터 유형 및 속성을 볼 수 없습니다. 즉, 특정 필드를 완료하는 방법에 대한 도움말 및 정보를 제공해야 할 수 있습니다. 기본 정보에 대해서는 필드 레이블 및 기본값을 사용할 수 있지만 프로젝트별 설명서를 고려해야 할 수도 있습니다.
+콘텐츠 작성자는 모델 생성에 사용된 실제 데이터 유형 및 속성을 확인할 수 없습니다. 즉, 특정 필드를 완료하는 방법에 대한 도움말 및 정보를 제공해야 할 수도 있습니다. 기본 정보에는 필드 레이블 및 기본값을 사용할 수 있지만 복잡한 정보에는 프로젝트 관련 설명서를 고려해야 합니다.
 
 >[!NOTE]
 >
->추가 리소스 - 컨텐츠 조각 모델 을 참조하십시오.
+>추가 리소스 - 콘텐츠 조각 모델을 참조하십시오.
 
-## 컨텐츠 조각 모델 관리 {#managing-content-fragment-models}
+## 콘텐츠 조각 모델 관리 {#managing-content-fragment-models}
 
 <!-- needs more details -->
 
-컨텐츠 조각 모델 관리에 다음이 포함됩니다.
+콘텐츠 조각 모델 관리에는 다음 내용이 포함됩니다.
 
-* 활성화(또는 비활성화) - 컨텐츠 조각을 만들 때 작성자가 사용할 수 있습니다.
-* 삭제 - 삭제가 항상 필요하지만, 이미 게시된 특정 조각과 같은 컨텐츠 조각에 이미 사용된 모델을 삭제하는 것을 알고 있어야 합니다.
+* 모델 활성화(또는 비활성화) - 콘텐츠 조각을 만들 때 작성자는 모델을 사용할 수 있습니다.
+* 삭제 - 삭제는 항상 필요하지만 콘텐츠 조각(특히 이미 게시된 조각)에 이미 사용된 모델의 삭제에 대해 알고 있어야 합니다.
 
 ## 게시 {#publishing}
 
@@ -96,21 +96,21 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->작성자가 모델이 아직 게시되지 않은 컨텐츠 조각을 게시하려고 하면 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+>작성자가 모델이 아직 게시되지 않은 콘텐츠 조각을 게시하려는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
-모델이 게시되는 즉시 게시됩니다 *잠김* 작성자의 읽기 전용 모드로 전환합니다. 이는 기존 GraphQL 스키마 및 쿼리, 특히 게시 환경에서 오류가 발생하는 변경을 방지하기 위한 것입니다. 콘솔에서 다음과 같이 표시됩니다. **잠김**.
+모델이 게시되는 즉시 작성자의 읽기 전용 모드로 *잠깁니다*. 목표는 특히 게시 환경에서 기존 GraphQL 스키마 및 쿼리에 오류를 발생시킬 수 있는 변경 사항을 방지하는 것입니다. 콘솔에 **잠김**&#x200B;으로 표시됩니다.
 
-모델이 인 경우 **잠김** (읽기 전용 모드에서) 모델의 내용 및 구조를 볼 수 있지만 직접 편집할 수는 없습니다. 관리 **잠김** 콘솔 또는 모델 편집기에서 모델을 생성합니다.
+모델이 읽기 전용 모드에서 **잠금**&#x200B;인 경우 모델의 콘텐츠 및 구조를 볼 수 있지만 이를 편집할 수는 없습니다. 단, 콘솔 또는 모델 편집기에서 **잠금** 모델을 관리할 수 있습니다.
 
 ## 다음 단계 {#whats-next}
 
-기본 사항을 배웠으므로 다음 단계는 고유한 컨텐츠 조각 모델 만들기를 시작하는 것입니다.
+이제 기본 사항을 배웠으므로 다음 단계는 자체 콘텐츠 조각 모델 만들기 시작입니다.
 
 ## 추가 리소스 {#additional-resources}
 
 * [작성 개념](/help/sites-authoring/author.md)
 
-* [기본 처리](/help/sites-authoring/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔의 대부분/대부분 기능은 이동 및 작업 수행에도 관련이 있습니다. **컨텐츠 조각 모델** 아래에 **자산** 콘솔.
+* [기본 처리](/help/sites-authoring/basic-handling.md) - 이 페이지는 주로 다음을 기반으로 합니다. **사이트** 콘솔이지만 많은/대부분의 기능은 로 이동하고 조치를 취하는 데에도 관련이 있습니다. **컨텐츠 조각 모델** 다음 아래에 **에셋** 콘솔.
 
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
 
@@ -132,4 +132,4 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * 시작 안내서
 
-   * [컨텐츠 조각 모델 만들기 헤드리스 빠른 시작 안내서](/help/sites-developing/headless/getting-started/create-content-model.md)
+   * [콘텐츠 조각 모델 만들기 Headless 빠른 시작 안내서](/help/sites-developing/headless/getting-started/create-content-model.md)

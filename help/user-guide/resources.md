@@ -15,16 +15,16 @@ ht-degree: 17%
 
 ## AEM 6.5 릴리스 노트 {#aem-64-release-notes}
 
-[릴리스 노트에서 AEM 6.5의 최신 새로운 기능에 대해 알아보십시오.](/help/release-notes/home.md)
+[릴리스 정보에서 AEM 6.5의 최신 새로운 기능에 대해 알아봅니다.](/help/release-notes/home.md)
 
-## AEM 6.5 튜토리얼 비디오 {#aem-64-tutorial-videos}
+## AEM 6.5 자습서 비디오 {#aem-64-tutorial-videos}
 
 * [AEM 6.5 교육 비디오](https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-4-videos.html)
 * [AEM 자습서](https://helpx.adobe.com/experience-manager/tutorials.html)
 
 ## 클래스 및 인증 {#classes-and-certification}
 
-[강의실 및 가상 수업 서비스를 통해 학습 범위를 확대합니다.](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)
+[강의실 및 가상 수업 서비스를 통해 학습 범위를 넓힐 수 있습니다.](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)
 
 ## GDPR 준비 {#gdpr-readiness}
 

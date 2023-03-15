@@ -1,5 +1,5 @@
 ---
-title: GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 전달
+title: GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재
 description: 헤드리스 컨텐츠 전달을 위해 GraphQL에서 AEM 컨텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments
 role: User
@@ -11,9 +11,9 @@ ht-degree: 89%
 
 ---
 
-# GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 전달 {#headless-content-delivery-using-content-fragments-with-graphQL}
+# GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-AEM(Adobe Experience Manager)을 사용하여 AEM GraphQL API(표준 GraphQL을 기반으로 하는 사용자 정의 구현)와 함께 컨텐츠 조각을 사용하여 애플리케이션에서 사용할 수 있도록 구조화된 컨텐츠를 헤드리도록 할 수 있습니다. 단일 API 쿼리 맞춤화 기능을 사용하면 렌더링하려는 단일 API 쿼리에 대한 응답으로서 특정 콘텐츠를 검색하고 전달할 수 있습니다.
+AEM(Adobe Experience Manager)을 사용하면 AEM GraphQL API(표준 GraphQL을 기반으로 한 사용자 지정 구현)와 함께 컨텐츠 조각을 사용하여 애플리케이션에서 사용할 수 있도록 구조화된 컨텐츠를 헤드리도록 할 수 있습니다. 단일 API 쿼리 맞춤화 기능을 사용하면 렌더링하려는 단일 API 쿼리에 대한 응답으로서 특정 콘텐츠를 검색하고 전달할 수 있습니다.
 
 <!--
 >[!NOTE]
@@ -55,7 +55,7 @@ GraphQL은
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-Adobe Experience Platform에서 표준 GraphQL API의 사용자 정의된 구현 이 개발되었습니다. 자세한 내용은 [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)를 참조하십시오.
+Adobe Experience Platform에 표준 GraphQL API의 사용자 지정 구현이 개발되었습니다. 자세한 내용은 [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)를 참조하십시오.
 
 AEM GraphQL API 구현은 [GraphQL Java 라이브러리](https://graphql.org/code/#java)를 기반으로 합니다.
 
@@ -111,4 +111,4 @@ AEM GraphQL API 사용에 대한 소개는 [AEM을 통해 GraphQL을 사용하�
 
 ## 튜토리얼 - AEM Headless 및 GraphQL 시작하기
 
-실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서, AEM의 GraphQL API를 사용하여 콘텐츠를 구축하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 엔드투엔드 튜토리얼을 확인하십시오.
+실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 빌드하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 엔드투엔드 튜토리얼을 확인하십시오.

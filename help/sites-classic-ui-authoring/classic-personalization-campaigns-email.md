@@ -62,7 +62,7 @@ ht-degree: 96%
 
    만들 경험의 **제목**, **이름** 및 유형을 지정합니다(이 경우에는 Newsletter).
 
-   ![mcm_createnewsletter](assets/mcm_createnewsletter.png)
+   ![mcm_createnewsleter](assets/mcm_createnewsletter.png)
 
 1. **만들기**&#x200B;를 클릭합니다.
 
@@ -132,7 +132,7 @@ Newsletter를 개인화하고 결과를 시뮬레이션하는 방법은 다음�
 
 >[!NOTE]
 >
->Newsletter를 발송하기 전에 OSGi 구성에서 Day CQ Link Externalizer 를 선택합니다. `https://localhost:4502/system/console/configMgr`.
+>뉴스레터를 전송하기 전에 다음에서 Day CQ 링크 외부화에 대한 OSGi 구성을 확인하십시오. `https://localhost:4502/system/console/configMgr`.
 >
 >기본적으로 이 매개 변수의 값은 `localhost:4502`이며 인스턴스 실행을 위한 포트가 바뀌면 작업을 완료할 수 없습니다.
 
@@ -220,7 +220,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 
 >[!NOTE]
 >
->Newsletter를 발송하기 전에 OSGi 구성에서 Day CQ Link Externalizer 를 선택합니다. `https://localhost:4502/system/console/configMgr`.
+>뉴스레터를 전송하기 전에 다음에서 Day CQ 링크 외부화에 대한 OSGi 구성을 확인하십시오. `https://localhost:4502/system/console/configMgr`.
 >
 >기본적으로 이 매개 변수의 값은 `localhost:4502`이며 인스턴스 실행을 위한 포트가 바뀌면 작업을 완료할 수 없습니다.
 

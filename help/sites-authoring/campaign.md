@@ -38,7 +38,7 @@ AEM에서 이메일 컨텐츠를 만들고 Adobe Campaign 이메일에서 처리
 
 AEM 및 Adobe Campaign을 구성한 후에는 AEM에서 직접 이메일 게재 컨텐츠를 만든 후 Adobe Campaign에서 처리할 수 있습니다.
 
-AEM에서 Adobe Campaign 컨텐츠를 만들 때 모든 기능에 액세스하려면 컨텐츠를 편집하기 전에 Adobe Campaign 서비스에 연결해야 합니다.
+AEM에서 Adobe Campaign 콘텐츠를 만들 때 모든 기능에 액세스하려면 콘텐츠를 편집하기 전에 Adobe Campaign 서비스에 연결해야 합니다.
 
 다음 두 가지 경우가 가능합니다.
 
@@ -51,11 +51,11 @@ AEM에서 Adobe Campaign 컨텐츠를 만들 때 모든 기능에 액세스하�
 
 >[!NOTE]
 >
->전자 메일 템플릿을 추가할 때는 아래에 추가하십시오 **/content/campaigns** 사용할 수 있도록 합니다.
+>이메일 템플릿을 추가할 때는 아래에 추가해야 합니다. **/content/campaigns** 사용할 수 있도록 설정합니다.
 
 #### 새 이메일 컨텐츠 만들기 {#creating-new-email-content-1}
 
-1. AEM에서 을 선택합니다. **Sites** 그런 다음 **캠페인**&#x200B;을 클릭한 다음 이메일 캠페인이 관리되는 위치로 이동합니다. 다음 예에서 경로는 입니다. **Sites** > **캠페인** > **Geometrixx Outdoors** > **이메일 캠페인**.
+1. AEM에서 선택 **사이트** 그러면 **캠페인**&#x200B;그런 다음 이메일 캠페인이 관리되는 위치로 이동합니다. 다음 예제에서 경로는 **사이트** > **캠페인** > **Geometrixx Outdoors** > **이메일 캠페인**.
 
    >[!NOTE]
    >
@@ -69,7 +69,7 @@ AEM에서 Adobe Campaign 컨텐츠를 만들 때 모든 기능에 액세스하�
    * **Adobe Campaign Classic 이메일**: 배달할 Adobe Campaign Classic에 컨텐츠를 보내기 전에 미리 정의된 템플릿(열 2개)에 컨텐츠를 추가할 수 있습니다.
    * **Adobe Campaign Standard 이메일**: 배달할 Adobe Campaign Standard에 컨텐츠를 보내기 전에 미리 정의된 템플릿(열 2개)에 컨텐츠를 추가할 수 있습니다.
 
-1. 을 입력합니다. **제목** 원할 경우 **설명** 을(를) 클릭합니다. **만들기**. 제목은 이메일을 편집하는 동안 덮어쓰지 않을 경우, 뉴스레터/이메일의 제목으로 사용됩니다.
+1. 다음을 입력합니다. **제목** 및 선택적으로 **설명** 및 클릭 **만들기**. 제목은 이메일을 편집하는 동안 덮어쓰지 않을 경우, 뉴스레터/이메일의 제목으로 사용됩니다.
 
 ### Adobe Campaign 클라우드 서비스 및 템플릿 선택 {#selecting-the-adobe-campaign-cloud-service-and-template}
 
@@ -87,14 +87,14 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
-1. 선택 **편집** 그리고 **클라우드 서비스** 탭을 클릭하고 아래로 스크롤한 다음 + 기호를 클릭하여 구성을 추가한 다음 을 선택합니다 **Adobe Campaign**.
+1. 선택 **편집** 그리고 **클라우드 서비스** tab을 누른 채 아래쪽으로 스크롤하여 + 기호를 클릭하여 구성을 추가한 다음 을 선택합니다. **Adobe Campaign**.
 
    ![chlimage_1-17](assets/chlimage_1-17a.png)
 
 1. 드롭다운 목록에서 Adobe Campaign 인스턴스와 일치하는 구성을 선택하고 **저장**&#x200B;을 클릭하여 확인합니다.
 1. **Adobe Campaign** 탭을 클릭하여 이메일이 적용된 템플릿을 볼 수 있습니다. 다른 템플릿을 선택하려면 편집하는 동안 이메일 내에서 템플릿에 액세스할 수 있습니다.
 
-   기본 메일 템플릿 이외의 특정 이메일 게재 템플릿(Adobe Campaign의)을에서 적용하려면 **속성**&#x200B;에서 을(를) 선택합니다. **Adobe Campaign** 탭. 관련된 Adobe Campaign 인스턴스에 이메일 게재 템플릿의 내부 이름을 입력합니다.
+   기본 메일 템플릿 이외의 특정 이메일 게재 템플릿(Adobe Campaign)을 **속성**&#x200B;를 선택하고 **Adobe Campaign** 탭. 관련된 Adobe Campaign 인스턴스에 이메일 게재 템플릿의 내부 이름을 입력합니다.
 
    선택한 템플릿에 따라 Adobe Campaign에서 사용할 수 있는 개인화 필드가 결정됩니다.
 
@@ -106,13 +106,13 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. 선택 **클라우드 서비스** 을(를) 클릭합니다. **+** 구성을 추가합니다. 표시되는 아무 구성이나 선택합니다. **+** 기호를 탭하거나 클릭하여 다른 구성을 추가한 후, **Adobe Campaign**&#x200B;을 선택합니다.
+1. 선택 **클라우드 서비스** 및 클릭 **+** 구성을 추가합니다. 표시되는 아무 구성이나 선택합니다. **+** 기호를 탭하거나 클릭하여 다른 구성을 추가한 후, **Adobe Campaign**&#x200B;을 선택합니다.
 
    >[!NOTE]
    >
    >또는 **사이트** 탭에서 **속성 보기**&#x200B;를 선택하여 클라우드 서비스를 선택할 수 있습니다.
 
-1. 드롭다운 목록에서 Adobe Campaign 인스턴스와 일치하는 구성을 선택하고, Adobe Campaign용으로 만든 구성이 아닌 첫 번째 구성을 삭제한 다음, 확인 표시를 클릭하여 확인합니다.
+1. 드롭다운 목록에서 Adobe Campaign 인스턴스와 일치하는 구성을 선택하고, Adobe Campaign에 대해 작성되지 않은 첫 번째 구성을 삭제한 다음 확인 표시를 클릭하여 확인합니다.
 1. 이전 절차의 4단계를 계속하여 템플릿을 선택하고 일반 텍스트를 추가합니다.
 
 ### 이메일 컨텐츠 편집 {#editing-email-content}
@@ -123,7 +123,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
    ![chlimage_1-20](assets/chlimage_1-20a.png)
 
-1. 전자 메일의 제목을 변경하거나 HTML에서 전자 메일을 보지 않는 사용자를 위해 일반 텍스트를 추가하려면 을(를) 선택합니다 **이메일** 제목과 텍스트를 추가합니다. HTML에서 일반 텍스트 버전을 자동 생성하려면 페이지 아이콘을 선택합니다. 완료되면 확인 표시를 클릭합니다.
+1. HTML에서 이메일을 보지 않을 사용자에 대해 이메일 제목을 변경하거나 일반 텍스트를 추가하려면 **이메일** 제목과 텍스트를 추가합니다. HTML에서 일반 텍스트 버전을 자동 생성하려면 페이지 아이콘을 선택합니다. 완료되면 확인 표시를 클릭합니다.
 
    Adobe Campaign 개인화 필드를 사용하여 뉴스레터를 개인화할 수 있습니다. 개인화 필드를 추가하려면 Adobe Campaign 로고를 표시하는 단추를 클릭하여 개인화 필드 선택기를 엽니다. 그런 다음 이 뉴스레터에 사용 가능한 모든 필드 중에서 선택할 수 있습니다.
 
@@ -133,7 +133,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. 화면 왼쪽에서 구성 요소 패널을 열고 을 선택합니다 **Adobe Campaign 뉴스레터** 드롭다운 메뉴에서 해당 구성 요소를 찾습니다.
+1. 화면 왼쪽에서 구성 요소 패널을 열고 을(를) 선택합니다 **Adobe Campaign 뉴스레터** 을 클릭하여 해당 구성 요소를 찾을 수 있습니다.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
@@ -141,7 +141,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
    ![chlimage_1-23](assets/chlimage_1-23a.png)
 
-   자세한 내용은 [Adobe Campaign 구성 요소](/help/sites-authoring/adobe-campaign-components.md) 를 참조하십시오.
+   다음을 참조하십시오 [Adobe Campaign 구성 요소](/help/sites-authoring/adobe-campaign-components.md) 각 구성 요소에 대한 자세한 설명.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
@@ -149,20 +149,20 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
 컨텐츠를 편집할 때 다음을 삽입할 수 있습니다.
 
-* Adobe Campaign 컨텍스트 필드. 이러한 필드는 텍스트 내에 삽입할 수 있는 필드로, 수신자 데이터(예: 이름, 성 또는 대상 차원의 데이터)에 따라 조정됩니다.
-* Adobe Campaign 개인화 블록. 브랜드 로고 또는 미러 페이지에 대한 링크와 같이, 수신자의 데이터와 관련이 없는 사전 정의된 컨텐츠 블록입니다.
+* Adobe Campaign 컨텍스트 필드. 받는 사람의 데이터(예: 이름, 성 또는 대상 차원의 데이터)에 따라 조정될 텍스트 내에 삽입할 수 있는 필드입니다.
+* Adobe Campaign 개인화 블록. 브랜드 로고나 미러 페이지 링크와 같이 수신자의 데이터와 관련이 없는 사전 정의된 콘텐츠 블록입니다.
 
 캠페인 구성 요소에 대한 전체 설명을 보려면 [Adobe Campaign 구성 요소](/help/sites-authoring/adobe-campaign-components.md)를 참조하십시오.
 
 >[!NOTE]
 >
 >* Adobe Campaign **프로필** 타깃팅 차원의 필드만 고려됩니다.
->* 등록 정보를 볼 때 **Sites** Adobe Campaign 컨텍스트 필드에 액세스할 수 없습니다. 편집하는 동안 이메일에서 직접 액세스할 수 있습니다.
+>* 다음에서 속성을 볼 때 **사이트**, Adobe Campaign 컨텍스트 필드에 대한 액세스 권한이 없습니다. 편집하는 동안 이메일에서 직접 액세스할 수 있습니다.
 
 
 개인화를 삽입하려면:
 
-1. 새 항목 삽입 **뉴스레터** > **텍스트 및 개인화(캠페인)** 구성 요소를 페이지로 드래그하여 추가합니다.
+1. 새 항목 삽입 **뉴스레터** > **텍스트 및 개인화(캠페인)** 구성 요소를 페이지로 끌어 옵니다.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 
@@ -175,14 +175,14 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
    >**Adobe Campaign Standard:**
    >
    >* 사용 가능한 컨텍스트 필드는 Adobe Campaign의 **프로필** 타깃팅 차원에 해당합니다.
-   >* 자세한 내용은 [Adobe Campaign 이메일에 AEM 페이지 연결](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
+   >* 다음을 참조하십시오 [Adobe Campaign 이메일에 AEM 페이지 연결](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
 
    >
    >**Adobe Campaign Classic:**
    >
-   >* 사용 가능한 컨텍스트 필드는 Adobe Campaign에서 동적으로 복구됩니다 **nms:seedMember** 스키마. 대상 확장 데이터는 컨텐츠와 동기화된 게재를 포함하는 워크플로우에서 동적으로 복구됩니다. (자세한 내용은 [AEM에서 만든 컨텐츠를 Adobe Campaign의 게재와 동기화](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic) 섹션).
+   >* 사용 가능한 컨텍스트 필드는 Adobe Campaign에서 동적으로 복구됩니다 **nms:seedMember** 스키마. 대상 확장 데이터는 컨텐츠와 동기화된 게재를 포함하는 워크플로우에서 동적으로 복구됩니다. (다음을 참조하십시오. [AEM에서 만든 콘텐츠를 Adobe Campaign의 게재와 동기화](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic) 섹션에 있는 마지막 항목이 될 필요가 없습니다.
    >
-   >* 개인화 요소를 추가하거나 숨기려면 다음을 참조하십시오 [개인화 필드 및 블록 관리](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
+   >* 개인화 요소를 추가하거나 숨기려면 다음을 참조하십시오. [개인화 필드 및 블록 관리](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **중요**: 모든 시드 테이블 필드가 수신자 테이블(또는 해당 연락처 테이블)에도 있어야 합니다.
 
 
@@ -190,7 +190,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
    ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-   컨텍스트 필드 또는 개인화 블록을 삽입한 후 뉴스레터를 미리 보고 필드를 테스트할 수 있습니다. 자세한 내용은 [뉴스레터 미리 보기](#previewing-a-newsletter).
+   컨텍스트 필드 또는 개인화 블록을 삽입한 후 뉴스레터를 미리 보고 필드를 테스트할 수 있습니다. 다음을 참조하십시오 [뉴스레터 미리 보기](#previewing-a-newsletter).
 
 ### 뉴스레터 미리 보기 {#previewing-a-newsletter}
 
@@ -214,13 +214,13 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
 ### AEM에서 컨텐츠 승인 {#approving-content-in-aem}
 
-컨텐츠가 완료되면 승인 프로세스를 시작할 수 있습니다. 로 이동합니다. **워크플로우** 도구 상자의 탭을 선택하고 **Adobe Campaign 승인** 워크플로우.
+컨텐츠가 완료되면 승인 프로세스를 시작할 수 있습니다. 로 이동 **워크플로** 도구 상자의 탭을 클릭하고 **Adobe Campaign 승인** 워크플로입니다.
 
 곧바로 사용할 수 있는 이 워크플로우에는 개정 후 개정 또는 개정 후 거부의 두 단계가 포함되어 있습니다. 그렇지만 이 워크플로우를 확장하고 좀 더 복잡한 프로세스에 맞게 조정할 수 있습니다.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-Adobe Campaign에 대한 컨텐츠를 승인하려면 을(를) 선택하여 워크플로우를 적용합니다 **워크플로우** 및 선택 **Adobe Campaign 승인** 을(를) 클릭합니다. **워크플로우 시작**. 을 클릭합니다. 해당 단계를 진행한 후 컨텐츠를 승인합니다. 마지막 워크플로우 단계에서 **승인** 대신 **거부**&#x200B;를 선택하여 컨텐츠를 거부할 수도 있습니다.
+Adobe Campaign에 대한 콘텐츠를 승인하려면 다음을 선택하여 워크플로를 적용합니다. **워크플로** 및 선택 **Adobe Campaign 승인** 및 클릭 **워크플로우 시작**. 을 클릭합니다. 해당 단계를 진행한 후 컨텐츠를 승인합니다. 마지막 워크플로우 단계에서 **승인** 대신 **거부**&#x200B;를 선택하여 컨텐츠를 거부할 수도 있습니다.
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
@@ -258,11 +258,11 @@ Adobe Campaign Standard에서는 AEM에서 만든 컨텐츠를 복구하고 다�
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
-뉴스레터가 여러 게재에 연결된 경우 연결된 게재 수입니다(모든 ID가 표시되지는 않음).
+뉴스레터가 여러 게재에 연결된 경우 연결된 게재 수(일부 ID는 표시되지 않음)가 표시됩니다.
 
 AEM에서 만든 페이지를 Adobe Campaign의 이메일에 연결하려면:
 
-1. AEM 특정 이메일 템플릿을 기준으로 새 이메일을 만듭니다. 을(를) 참조하십시오. [Adobe Campaign Standard에서 이메일 만들기](https://helpx.adobe.com/kr/campaign/standard/channels/using/creating-an-email.html) 추가 정보.
+1. AEM 특정 이메일 템플릿을 기준으로 새 이메일을 만듭니다. 을(를) 참조하십시오 [Adobe Campaign Standard에서 이메일 만들기](https://helpx.adobe.com/kr/campaign/standard/channels/using/creating-an-email.html) 추가 정보.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -270,10 +270,10 @@ AEM에서 만든 페이지를 Adobe Campaign의 이메일에 연결하려면:
 
    ![chlimage_1-37](assets/chlimage_1-37a.png)
 
-1. 선택 **Adobe Experience Manager 콘텐츠과 연결** 도구 모음에서 AEM에서 사용할 수 있는 컨텐츠 목록에 액세스합니다.
+1. 선택 **Adobe Experience Manager 콘텐츠와 연결** 을 클릭하여 AEM에서 사용할 수 있는 콘텐츠 목록에 액세스합니다.
 
    >[!NOTE]
-   만약 **Adobe Experience Manager과 연결** 옵션이 작업 모음에 나타나지 않으면 **컨텐츠 편집 모드** 가 로 올바르게 구성되어 있음 **Adobe Experience Manager** 을 입력합니다.
+   다음과 같은 경우 **Adobe Experience Manager에 연결** 옵션이 작업 표시줄에 나타나지 않으면 **컨텐츠 편집 모드** 이(가) (으)로 올바르게 구성되었습니다. **Adobe Experience Manager** 이메일 속성에서.
 
    ![chlimage_1-38](assets/chlimage_1-38a.png)
 
@@ -315,20 +315,20 @@ AEM에서, 뉴스레터가 단일 게재에 연결된 경우 게재 코드가 �
 ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
-뉴스레터가 여러 게재에 연결된 경우 연결된 게재 수(하지만 모든 ID가 표시되지 않음)입니다.
+뉴스레터가 여러 게재에 연결된 경우 연결된 게재 수(일부 ID는 표시되지 않음)가 표시됩니다.
 [!NOTE]
 워크플로우 단계 **Adobe Campaign에 게시**&#x200B;는 AEM 6.1에서 더 이상 사용되지 않습니다. 이 단계는 AEM 6.0과 Adobe Campaign 통합의 일부로 제공되었으며 더 이상 필요하지 않습니다.
 
 AEM에서 만든 컨텐츠를 Adobe Campaign의 게재와 동기화하려면:
 
-1. 게재를 만들거나 **AEM 컨텐츠가 포함된 이메일 전달(mailAEMContent)** 게재 템플릿.
+1. 게재를 만들거나 을 선택하여 캠페인 워크플로우에 게재 활동을 추가합니다. **AEM 콘텐츠를 사용한 이메일 게재(mailAEMContent)** 게재 템플릿.
 
    ![chlimage_1-40](assets/chlimage_1-40a.png)
 
-1. 선택 **동기화** 도구 모음에서 AEM에서 사용할 수 있는 컨텐츠 목록에 액세스합니다.
+1. 선택 **동기화** 을 클릭하여 AEM에서 사용할 수 있는 콘텐츠 목록에 액세스합니다.
 
    >[!NOTE]
-   만약 **동기화** 옵션이 게재 도구 모음에 표시되지 않고 **컨텐츠 편집 모드** 필드는에 올바르게 구성되어 있습니다. **AEM** 선택 **속성** > **고급**.
+   다음과 같은 경우 **동기화** 옵션이 게재 도구 모음에 표시되지 않는지 확인하고 **컨텐츠 편집 모드** 다음에서 필드가 올바르게 구성됨: **AEM** 을(를) 선택하여 **속성** > **고급**.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
 
@@ -352,8 +352,8 @@ AEM에서 만든 컨텐츠를 Adobe Campaign의 게재와 동기화하려면:
 
    >[!NOTE]
    * 게재 및 컨텐츠가 동기화된 후에, Adobe Campaign의 게재 컨텐츠는 읽기 전용이 됩니다. 이메일 제목과 해당 컨텐츠를 더 이상 수정할 수 없습니다.
-   * AEM에서 Adobe Campaign의 게재와 연결된 컨텐츠가 업데이트되면 게재 분석 동안 게재에서 자동으로 업데이트됩니다. 동기화는 **지금 컨텐츠 새로 고침** 버튼을 클릭합니다.
-   * 를 사용하여 게재와 AEM 컨텐츠 간의 동기화를 취소할 수 있습니다 **동기화 취소** 버튼을 클릭합니다. 컨텐츠가 게재와 이미 동기화된 경우에만 사용할 수 있습니다. 다른 컨텐츠를 게재와 동기화하려면 새 링크를 설정하기 전에 현재 컨텐츠 동기화를 취소해야 합니다.
+   * AEM에서 Adobe Campaign의 게재와 연결된 컨텐츠가 업데이트되면 게재 분석 동안 게재에서 자동으로 업데이트됩니다. 동기화를 다음을 사용하여 수동으로 실행할 수도 있습니다. **지금 콘텐츠 새로 고침** 단추를 클릭합니다.
+   * 를 사용하여 게재 및 AEM 콘텐츠 간의 동기화를 취소할 수 있습니다. **동기화 해제** 단추를 클릭합니다. 컨텐츠가 게재와 이미 동기화된 경우에만 사용할 수 있습니다. 다른 컨텐츠를 게재와 동기화하려면 새 링크를 설정하기 전에 현재 컨텐츠 동기화를 취소해야 합니다.
    * 동기화가 취소될 경우 로컬 컨텐츠는 보관되며 Adobe Campaign에서 편집할 수 있게 됩니다. 컨텐츠를 수정한 후 다시 동기화하면 모든 변경 사항이 손실됩니다.
    * 반복 및 연속 게재의 경우, 게재가 실행될 때마다 AEM 컨텐츠와의 동기화가 중지됩니다.
 

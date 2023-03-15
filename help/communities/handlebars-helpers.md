@@ -63,7 +63,7 @@ safeString을 true로 설정하면 반환된 문자열이 SafeString입니다.
 
    (선택 사항) true이면 Handlebars.SafeString() 을 반환합니다. 기본값은 false입니다.
 
-### 예제 {#examples}
+### 예 {#examples}
 
 ```
 {{abbreviate subject maxWords=2}}
@@ -143,7 +143,7 @@ Then content-loadmore would return
 
    (선택 사항) 적용할 날짜 형식입니다. 기본값은 &quot;YYYY-MM-DDHH입니다.:mm:s.sssZ&quot;로 표시되고 결과는 &quot;2015-03-18T18&quot;으로 표시됩니다:17:13-07:00&quot;
 
-### 예제 {#examples-1}
+### 예 {#examples-1}
 
 ```
 {{dateUtil this.memberSince format="dd MMM yyyy, hh:mm"}}
@@ -300,7 +300,7 @@ js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라
 
    (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리의 모든 CSS 라이브러리가 포함됩니다.
 
-### 예제 {#examples-2}
+### 예 {#examples-2}
 
 ```
 // all: js + theme (theme-js + css)

@@ -12,8 +12,8 @@ discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '598'
+ht-degree: 66%
 
 ---
 
@@ -69,8 +69,8 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 AEM을 Adobe Target과 통합하려면 Adobe Target, AEM 활동 관리 및 AEM 대상 관리에 대해 알고 있어야 합니다. 다음과 같은 정보를 숙지해야 합니다.
 
 * Adobe Target ([Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/target-home.html) 참조)
-* AEM 활동 콘솔(참조) [활동 관리](/help/sites-authoring/activitylib.md)).
-* AEM 대상(참조) [대상자 관리](/help/sites-authoring/managing-audiences.md)).
+* AEM 활동 콘솔([활동 관리](/help/sites-authoring/activitylib.md) 참조)
+* AEM 대상자([대상자 관리](/help/sites-authoring/managing-audiences.md) 참조)
 
 >[!NOTE]
 >

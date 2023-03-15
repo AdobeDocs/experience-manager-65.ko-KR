@@ -39,7 +39,7 @@ ht-degree: 6%
 
 CQ 분석 `access.log` 다양한 정보를 추출하고 Markdown 출력을 `stdout`.
 
-## 사용량 {#usage}
+## 사용 {#usage}
 
 `./analyse-access.sh access.log.2013-&ast;`
 

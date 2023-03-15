@@ -13,7 +13,7 @@ exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1787'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -81,24 +81,24 @@ AEM을 사용하면 사용자의 경험을 쉽게 개인화할 수 있습니다.
 <table>
  <tbody>
   <tr>
-   <td>속성-값<br /> </td>
+   <td>속성-값<br />을 따르지 않는 경우입니다 </td>
    <td>저장소 속성을 정의된 값과 비교<br /> </td>
   </tr>
   <tr>
    <td>속성-속성</td>
-   <td>저장소 속성을 다른 속성과 비교<br /> </td>
+   <td>저장소 속성을 다른 속성과 비교<br />을 따르지 않는 경우입니다 </td>
   </tr>
   <tr>
    <td>속성-세그먼트 참조</td>
-   <td>저장소 속성을 다른 참조된 세그먼트와 비교<br /> </td>
+   <td>저장소 속성을 다른 참조된 세그먼트와 비교<br />을 따르지 않는 경우입니다 </td>
   </tr>
   <tr>
    <td>속성-스크립트 참조</td>
-   <td>저장소 속성을 스크립트 결과와 비교<br /> </td>
+   <td>저장소 속성을 스크립트 결과와 비교<br />을 따르지 않는 경우입니다 </td>
   </tr>
   <tr>
    <td>세그먼트 참조-스크립트 참조</td>
-   <td>참조된 세그먼트를 스크립트 결과와 비교<br /> </td>
+   <td>참조된 세그먼트를 스크립트 결과와 비교<br />을 따르지 않는 경우입니다 </td>
   </tr>
  </tbody>
 </table>
@@ -120,7 +120,7 @@ AEM을 사용하면 사용자의 경험을 쉽게 개인화할 수 있습니다.
 <table>
  <tbody>
   <tr>
-   <td>세그먼트 참조<br /> </td>
+   <td>세그먼트 참조<br />을 따르지 않는 경우입니다 </td>
    <td>참조된 세그먼트를 평가합니다.</td>
   </tr>
   <tr>
@@ -134,7 +134,7 @@ AEM을 사용하면 사용자의 경험을 쉽게 개인화할 수 있습니다.
 
 새 세그먼트를 정의하려면 다음 작업을 수행하십시오.
 
-1. 후 [세그먼트 액세스](/help/sites-administering/segmentation.md#accessing-segments), [폴더로 이동합니다](#organizing-segments) 세그먼트를 만들 위치.
+1. [세그먼트에 액세스](/help/sites-administering/segmentation.md#accessing-segments)한 후 세그먼트를 만들고자 하는 [폴더로 이동](#organizing-segments)합니다.
 
 1. 만들기 단추를 클릭하거나 탭하고 선택합니다 **ContextHub 세그먼트 만들기**.
 

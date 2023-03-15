@@ -43,7 +43,7 @@ ht-degree: 90%
 
 작성 환경에서 작성자는 페이지 속성에 액세스하고 **태그/키워드** 필드에 하나 이상의 태그를 입력하여 태그를 적용할 수 있습니다.
 
-적용하려면 [사전 정의된 태그](/help/sites-administering/tags.md)에서 **페이지 속성** 창 사용 `Tags/Keywords` 필드 풀다운 을 사용하여 페이지에 대해 허용되는 태그 목록에서 선택합니다. 다음 **표준 태그** tab은 기본 네임스페이스이며, 이는 가 없음을 의미합니다 `namespace-string:` 접두사로 분류됩니다.
+적용하려면 [사전 정의된 태그](/help/sites-administering/tags.md), **페이지 속성** 창 사용 `Tags/Keywords` 필드 풀다운 : 페이지에 허용된 태그 목록에서 선택합니다. 다음 **표준 태그** tab 은 기본 네임스페이스이며, 즉, `namespace-string:` 분류 접두사가 추가되었습니다.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -77,6 +77,6 @@ ht-degree: 90%
 
 ### 검색 구성 요소 사용 {#using-search-component}
 
-추가 [검색 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) 페이지 - 태그를 포함하는 검색 기능을 제공하며 작성 환경과 게시 환경 모두에서 사용할 수 있습니다.
+추가 [구성 요소 검색](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) 페이지에 대한 는 태그를 포함하는 검색 기능을 제공하며 작성자 및 게시 환경 모두에서 사용할 수 있습니다.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)

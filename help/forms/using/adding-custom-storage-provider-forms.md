@@ -1,7 +1,7 @@
 ---
 title: 초안 및 제출 구성 요소에 대한 사용자 지정 저장소
 seo-title: Custom storage for drafts and submissions component
-description: 초안 및 제출용 사용자 데이터의 저장소를 사용자 지정하는 방법을 참조하십시오.
+description: 초안 및 제출용 사용자 데이터 저장소를 사용자 지정하는 방법을 참조하십시오.
 seo-description: See how to customize the storage of user data for drafts and submissions.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
@@ -21,20 +21,20 @@ ht-degree: 0%
 
 ## 개요 {#overview}
 
-AEM Forms에서 양식을 초안으로 저장할 수 있습니다. 초안 기능을 사용하면 작업 진행 중인 양식을 유지 관리할 수 있으며, 이 양식은 모든 장치에서 나중에 완료하고 제출할 수 있습니다.
+AEM Forms을 사용하면 양식을 초안으로 저장할 수 있습니다. 초안 기능을 사용하면 모든 장치에서 나중에 작성 및 제출할 수 있는 진행 중인 양식 을 유지 관리할 수 있습니다.
 
-기본적으로 AEM Forms은 양식 초안 및 제출과 연관된 사용자 데이터를 `/content/forms/fp` 노드 아래에 있어야 합니다. 또한 AEM Forms 포털 구성 요소는 초안 및 제출용 사용자 데이터 저장 구현을 사용자 지정하는 데 사용할 수 있는 데이터 서비스를 제공합니다. 예를 들어 데이터 저장소에 사용자 데이터를 저장할 수 있습니다.
+기본적으로 AEM Forms은 양식 초안 및 제출과 관련된 사용자 데이터를 `/content/forms/fp` 게시 인스턴스의 노드 또한 AEM Forms 포털 구성 요소는 데이터 서비스를 제공합니다. 이 데이터 서비스를 사용하여 초안 및 제출에 대한 사용자 데이터 저장 구현을 사용자 지정할 수 있습니다. 예를 들어 데이터 저장소에 사용자 데이터를 저장할 수 있습니다.
 
 ## 사전 요구 사항  {#prerequisites}
 
-* 활성화 [forms 포털 구성 요소](/help/forms/using/enabling-forms-portal-components.md)
+* 사용 [forms 포털 구성 요소](/help/forms/using/enabling-forms-portal-components.md)
 * 만들기 [forms 포털 페이지](/help/forms/using/creating-form-portal-page.md)
-* 활성화 [forms 포털용 적응형 양식](/help/forms/using/draft-submission-component.md)
-* 학습 [사용자 지정 스토리지 구현 세부 정보](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* 사용 [forms 포털용 적응형 양식](/help/forms/using/draft-submission-component.md)
+* 학습 [사용자 정의 스토리지의 구현 세부 정보](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## 초안 데이터 서비스 {#draft-data-service}
 
-초안의 사용자 데이터 저장소를 사용자 지정하려면 `DraftDataService` 인터페이스. 다음 샘플 코드는 메서드와 인수를 설명합니다.
+초안에 대한 사용자 데이터 저장소를 사용자 지정하려면 의 모든 메서드를 구현해야 합니다 `DraftDataService` 인터페이스. 다음 샘플 코드에서는 메서드와 인수에 대해 설명합니다.
 
 ```java
 /**
@@ -99,11 +99,11 @@ public interface DraftDataService {
 
 >[!NOTE]
 >
->초안 ID 필드 길이의 최소값은 26자입니다. Adobe은 초안 ID 길이를 26자 이상으로 설정하는 것이 좋습니다.
+>초안 ID 필드의 최소 값은 26자입니다. Adobe은 초안 ID 길이를 26자 이상으로 설정할 것을 권장합니다.
 
-## 데이터 서비스 제출 {#submission-data-service}
+## 제출 데이터 서비스 {#submission-data-service}
 
-제출할 사용자 데이터 저장소를 사용자 지정하려면 `SubmitDataService` 인터페이스. 다음 샘플 코드는 메서드와 인수를 설명합니다.
+제출을 위해 사용자 데이터의 저장을 사용자 정의하려면 의 모든 메서드를 구현해야 합니다 `SubmitDataService` 인터페이스. 다음 샘플 코드에서는 메서드와 인수에 대해 설명합니다.
 
 ```java
 /**
@@ -188,7 +188,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms 포털은 UUID(Universally Unique Identifier) 개념을 사용하여 모든 초안 및 제출된 양식에 대해 고유한 ID를 생성합니다. 고유한 ID를 생성할 수도 있습니다. 인터페이스 FPKeyGeneratorService를 구현하고, 메서드를 재정의하고, 사용자 지정 논리를 개발하여 모든 초안 및 제출된 양식에 대해 사용자 지정 고유 ID를 생성할 수 있습니다. 또한 사용자 지정 ID 생성 구현의 서비스 등급을 0보다 높게 설정합니다. 이렇게 하면 기본 구현 대신 사용자 지정 구현이 사용됩니다.
+Forms 포털은 UUID(범용 고유 식별자) 개념을 사용하여 모든 초안 및 제출된 양식에 대한 고유 ID를 생성합니다. 고유한 고유 ID를 생성할 수도 있습니다. FPKeyGeneratorService 인터페이스를 구현하고, 해당 메서드를 재정의하고, 사용자 지정 로직을 개발하여 모든 초안 및 제출된 양식에 대해 사용자 지정 고유 ID를 생성할 수 있습니다. 또한 사용자 지정 ID 생성 구현의 서비스 등급을 0보다 높게 설정합니다. 기본 구현 대신 사용자 지정 구현이 사용되도록 합니다.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -207,7 +207,7 @@ public interface FPKeyGeneratorService {
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-위의 주석을 사용하려면 다음을 프로젝트에 가져옵니다.
+위의 주석을 사용하려면 다음 내용을 프로젝트로 가져옵니다.
 
 ```java
 import org.apache.felix.scr.annotations.Properties;

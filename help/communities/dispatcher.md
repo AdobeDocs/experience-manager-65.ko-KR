@@ -60,7 +60,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - 최대 연령*
 * 찾기 `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * 새 연결 구성을 만들려면 &#39;+&#39; 아이콘을 선택합니다
 
-   ![Dispatcher](assets/dispatcher.png)
+   ![dispatcher](assets/dispatcher.png)
 
 * **필터 패턴**
 
@@ -86,7 +86,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - 최대 연령*
 
 또한 Headless 개념 및 용어 소개가 포함되어 있는
 
-* [Dispatcher 보안 검사 목록](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Dispatcher 보안 검사 목록](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
 >

@@ -81,7 +81,7 @@ ht-degree: 96%
 
    이 페이지의 별칭 URL을 입력할 수 있습니다. 이를 통해 더 간단하고 기억에 남는 URL을 만들 수 있습니다.
 
-   예를 들어 별칭 URL이 w로 설정된 경우 `elcome`경로 / 로 식별된 페이지로 `v1.0/startpage`웹 사이트 h `ttp://example.com,` h `ttp://example.com/welcome`h의 별칭 URL이 됩니다. `ttp://example.com/content/v1.0/startpage`
+   예를 들어 별칭 URL이 w로 설정된 경우 `elcome`경로 / `v1.0/startpage`웹 사이트용 h `ttp://example.com,` 그 다음 h `ttp://example.com/welcome`은 h의 단축 URL입니다. `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >

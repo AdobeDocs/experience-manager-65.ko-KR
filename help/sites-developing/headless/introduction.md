@@ -1,6 +1,6 @@
 ---
 title: AEM 6.5 Sites용 헤드리스 개발
-description: 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 AEM 6.5의 강력한 헤드리스 기능이 함께 작동하여 경험을 중앙에서 관리하고 여러 채널에서 제공하는 방법을 살펴볼 수 있습니다.
+description: 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 AEM 6.5의 강력한 헤드리스 기능이 함께 작동하여 경험을 중앙에서 관리하고 여러 채널에서 제공할 수 있는 방법을 알아봅니다.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 38%
 
 # AEM 6.5 Sites용 헤드리스 개발 {#headless-development}
 
-컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 AEM 6.5의 강력한 헤드리스 기능이 함께 작동하여 경험을 중앙에서 관리하고 여러 채널에서 제공하는 방법을 살펴볼 수 있습니다.
+컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 AEM 6.5의 강력한 헤드리스 기능이 함께 작동하여 경험을 중앙에서 관리하고 여러 채널에서 제공할 수 있는 방법을 알아봅니다.
 
 ## 개요 {#overview}
 
 헤드리스 구현은 어디에 있든 채널에 관계없이 고객에게 경험을 전달하는 데 점점 중요해지고 있습니다.
 
-Headless 구현은 전체 스택 및 하이브리드 솔루션의 기존 방식과 마찬가지로 페이지 및 구성 요소 관리를 생략하고 채널 중립적이고 재사용 가능한 콘텐츠 조각 생성 및 크로스 채널 전달에 중점을 둡니다. 웹 경험을 구현하기 위한 현대적이고 동적인 개발 패턴입니다.
+Headless 구현은 전체 스택 및 하이브리드 솔루션의 기존 방식과 마찬가지로 페이지 및 구성 요소 관리를 생략하고 채널 중립적이고 재사용 가능한 콘텐츠 조각 생성 및 크로스 채널 게재에 중점을 둡니다. 웹 경험을 구현하기 위한 현대적이고 동적인 개발 패턴입니다.
 
 ![AEM 구현 모델](assets/aem-implementation-models.png)
 
@@ -41,8 +41,8 @@ AEM 6.5는 세 가지 강력한 서비스를 제공하여 헤드리스 구현 �
    * 컨텐츠 조각은 컨텐츠 모델을 인스턴스화합니다.
    * 이러한 템플릿은 AEM 컨텐츠 조각 편집기를 사용하여 컨텐츠 작성자가 만듭니다.
    * AEM Assets에 저장되고 Assets 관리 UI에서 관리됩니다.
-1. 전달을 위한 콘텐츠 API
-   * AEM GraphQL API는 콘텐츠 조각 전달을 지원합니다.
+1. 게재를 위한 콘텐츠 API
+   * AEM GraphQL API는 콘텐츠 조각 게재를 지원합니다.
    * AEM Assets REST API는 콘텐츠 조각 CRUD 작업을 지원합니다.
    * 또한 [컨텐츠 조각 코어 구성 요소의 JSON 내보내기.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko-KR)
 

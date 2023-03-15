@@ -9,7 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
+source-git-commit: 45ca98ffb68e1e31e2f45f352e86f5aa1b6f0f00
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 2%
@@ -140,7 +141,7 @@ AEM에서는 대상을 만들고 A/B 테스트에 사용할 수 있습니다. AE
 1. 클릭 **자세히** 그런 다음 **A/B 테스트 편집**. A/B 테스트 업데이트 페이지가 열립니다.
 
 1. 필요에 따라 대상 및 경험 배포를 업데이트합니다.
-1. 클릭 **업데이트**.
+1. **업데이트**&#x200B;를 클릭합니다.
 
 ## A/B 테스트 보고서 보기 및 분석 {#view-and-analyze-a-b-test-report}
 

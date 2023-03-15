@@ -4,8 +4,8 @@ description: 통합 및 AEM Storefront 사용을 시작하는 방법에 대한 �
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
 source-git-commit: 3ac32e5a2a1b2b266e2fc9f4ba8c7393a0566ff4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '355'
+ht-degree: 75%
 
 ---
 

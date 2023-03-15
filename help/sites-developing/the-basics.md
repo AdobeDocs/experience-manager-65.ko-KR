@@ -244,7 +244,7 @@ AEM의 특정 인스턴스에서 지원하는 스크립트 엔진 목록은 Feli
 
 * /
 
-   * 관리
+   * a
    * b
 
       * sling:resourceSuperType = a

@@ -1,7 +1,7 @@
 ---
 title: 적응형 양식 키워드
 seo-title: Adaptive forms keywords
-description: 적응형 양식에서는 이러한 예약된 단어를 식별자로 사용할 수 없습니다.
+description: 이러한 예약어는 적응형 양식에서 식별자로 사용할 수 없습니다.
 seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,12 +18,12 @@ ht-degree: 5%
 
 # 적응형 양식 키워드 {#adaptive-forms-keywords}
 
-적응형 양식 키워드는 적응형 양식에 특별한 의미가 있는 사전 정의된 예약된 식별자입니다. 적응형 양식에서는 이러한 키워드를 식별자로 사용할 수 없습니다. 다음 표에는 적응형 양식에 대해 예약된 식별자인 모든 키워드가 나열되어 있습니다.
+적응형 양식 키워드는 적응형 양식에 대해 특별한 의미가 있는 사전 정의된 예약된 식별자입니다. 이러한 키워드는 적응형 양식에서 식별자로 사용할 수 없습니다. 다음 표에는 적응형 양식에 대해 예약된 식별자인 모든 키워드가 나열되어 있습니다.
 
 <table>
  <tbody>
   <tr>
-   <td><p>부각</p> </td>
+   <td><p>초기화</p> </td>
    <td><p>getOnOffValues</p> </td>
    <td><p>minOccurs</p> </td>
   </tr>
@@ -49,12 +49,12 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>resetData</p> </td>
-   <td><p>runPendingExpressions</p> </td>
+   <td><p>runPendingExpression</p> </td>
    <td><p>반복 가능</p> </td>
   </tr>
   <tr>
-   <td><p>calcExp</p> </td>
-   <td><p>queueExpressions</p> </td>
+   <td><p>계산 표현식</p> </td>
+   <td><p>queueExpression</p> </td>
    <td><p>인스턴스</p> </td>
   </tr>
   <tr>
@@ -69,7 +69,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>validateExp</p> </td>
-   <td><p>enableAutoSave</p> </td>
+   <td><p>enableAutosave</p> </td>
    <td><p>getElement</p> </td>
   </tr>
   <tr>
@@ -83,22 +83,22 @@ ht-degree: 5%
    <td><p>setAttribute</p> </td>
   </tr>
   <tr>
-   <td><p>formatValue</p> </td>
+   <td><p>formattedValue</p> </td>
    <td><p>xdpRef</p> </td>
    <td><p>getGuideProp</p> </td>
   </tr>
   <tr>
-   <td><p>displayPictureClause</p> </td>
+   <td><p>displayPictureSection</p> </td>
    <td><p>dorTemplateRef</p> </td>
    <td><p>getXFAProp</p> </td>
   </tr>
   <tr>
-   <td><p>validatePictureClause</p> </td>
+   <td><p>validatePictureSection</p> </td>
    <td><p>actionType</p> </td>
    <td><p>getAttribute</p> </td>
   </tr>
   <tr>
-   <td><p>editPictureClause</p> </td>
+   <td><p>editPictureSection</p> </td>
    <td><p>xsdRef</p> </td>
    <td><p>이름</p> </td>
   </tr>
@@ -109,7 +109,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>mandatoryMessage</p> </td>
-   <td><p>multiSelect</p> </td>
+   <td><p>다중 선택</p> </td>
    <td>&gt;<p>id</p> </td>
   </tr>
   <tr>
@@ -118,13 +118,13 @@ ht-degree: 5%
    <td><p>somExpression</p> </td>
   </tr>
   <tr>
-   <td><p>validatePictureClauseMessage</p> </td>
+   <td><p>validatePictureSectionMessage</p> </td>
    <td><p>항목</p> </td>
-   <td><p>nonLocalizedTitle</p> </td>
+   <td><p>지역화되지 않은 제목</p> </td>
   </tr>
   <tr>
    <td><p>validationState</p> </td>
-   <td><p>multiSelection</p> </td>
+   <td><p>다중 선택</p> </td>
    <td><p>viewVisited</p> </td>
   </tr>
   <tr>
@@ -160,7 +160,7 @@ ht-degree: 5%
   <tr>
    <td><p>showLink</p> </td>
    <td><p>insertInstance</p> </td>
-   <td><p>frcDigits</p> </td>
+   <td><p>fracDigits</p> </td>
   </tr>
   <tr>
    <td><p>clickStatus</p> </td>
@@ -168,14 +168,14 @@ ht-degree: 5%
    <td><p>maxChars</p> </td>
   </tr>
   <tr>
-   <td><p>showAsPopUp</p> </td>
-   <td><p>shortDescription</p> </td>
+   <td><p>showAs팝업</p> </td>
+   <td><p>간단한 설명</p> </td>
    <td><p>execNavigationChangeExpression</p> </td>
   </tr>
   <tr>
-   <td><p>multiLine</p> </td>
+   <td><p>다중 라인</p> </td>
    <td><p>longDescription</p> </td>
-   <td><p>executeExpression</p> </td>
+   <td><p>execute표현식</p> </td>
   </tr>
   <tr>
    <td><p>visibleExp</p> </td>
@@ -219,25 +219,25 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>submitPassword</p> </td>
-   <td><p>initializeChildren</p> </td>
-   <td><p>sectionFields</p> </td>
+   <td><p>initializeChild</p> </td>
+   <td><p>섹션 필드</p> </td>
   </tr>
   <tr>
-   <td><p>brainedFromService</p> </td>
-   <td><p>repeablePanelId</p> </td>
+   <td><p>fetchFromService</p> </td>
+   <td><p>repeatablePanelId</p> </td>
    <td><p>getSelectedIndex</p> </td>
   </tr>
   <tr>
-   <td><p>repeablePanelPath</p> </td>
+   <td><p>repeatablePanelPath</p> </td>
    <td><p>getItemIdentifier</p> </td>
-   <td><p>mobileLayout</p> </td>
+   <td><p>모바일 레이아웃</p> </td>
   </tr>
   <tr>
-   <td><p>columnWidth</p> </td>
+   <td><p>열 너비</p> </td>
    <td> </td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-위에 나열된 키워드 외에도 다음과 유사한 이름을 사용하지 마십시오 [적응형 양식 JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).
+위에 나열된 키워드 외에도 와 유사한 이름을 사용하지 마십시오. [적응형 양식 JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).

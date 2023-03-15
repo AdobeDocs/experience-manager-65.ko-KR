@@ -1,7 +1,7 @@
 ---
 title: 애플리케이션 서버 웹 사이트
 seo-title: Application server websites
-description: 이 문서에는 지원되는 모든 응용 프로그램 서버에 대한 제조업체 웹 사이트에 대한 링크가 포함되어 있습니다.
+description: 이 문서에는 지원되는 모든 애플리케이션 서버의 제조업체 웹 사이트에 대한 링크가 포함되어 있습니다.
 seo-description: This document contains links to the manufacturer websites for all supported application servers.
 uuid: a5db777e-646a-4f12-9705-6ca50d9339d4
 contentOwner: admin
@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # 애플리케이션 서버 웹 사이트 {#application-server-websites}
 
-이 목록에는 지원되는 모든 애플리케이션 서버에 대한 제조업체 웹 사이트에 대한 링크가 포함되어 있습니다.
+이 목록에는 지원되는 모든 애플리케이션 서버의 제조업체 웹 사이트에 대한 링크가 포함되어 있습니다.
 
-**JBoss:** https://www.jboss.com/products/platforms/application
+**JBos:** https://www.jboss.com/products/platforms/application
 
 **Oracle WebLogic:** www.oracle.com/us/products/middleware/application-server/index.html
 
-**IBM WebSphere:** www-01.ibm.com/software/websphere/
+**IBM WebSphere** www-01.ibm.com/software/websphere/

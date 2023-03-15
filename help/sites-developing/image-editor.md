@@ -1,7 +1,7 @@
 ---
 title: 이미지 편집기
 seo-title: Image Editor
-description: 이미지 편집기는 AEM의 핵심 부분이며 구성 요소에서 활용하여 컨텐츠 작성자가 이미지를 쉽게 조작할 수 있습니다.
+description: 이미지 편집기는 AEM의 핵심 부분이며 구성 요소에서 활용하여 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있습니다.
 seo-description: The Image Editor is a core piece of AEM and can be leveraged by components to facilitate the manipulation of images by content authors.
 uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
@@ -19,21 +19,21 @@ ht-degree: 14%
 
 # 이미지 편집기{#image-editor}
 
-이미지 편집기는 AEM의 핵심 부분이며 구성 요소에서 활용하여 컨텐츠 작성자가 이미지를 쉽게 조작할 수 있습니다.
+이미지 편집기는 AEM의 핵심 부분이며 구성 요소에서 활용하여 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있습니다.
 
 >[!CAUTION]
 >
->이 문서에 설명된 이미지 편집기의 기능을 사용하려면 [기능 팩 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) 설치해야 합니다.
+>이 문서에 설명된 이미지 편집기의 기능을 사용하려면 [기능 팩 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) 을(를) 설치해야 합니다.
 
-## 이미지 맵에 대한 상대 단위 {#relative-units-for-image-map}
+## 이미지 맵의 상대 단위 {#relative-units-for-image-map}
 
-이미지 편집기는 이미지 맵 영역을 절대 단위와 상대 단위로 유지합니다. 상대 단위는 응답형 이미지 구성 요소에서 클라이언트측에서 이미지 맵(이미지 크기에 상대적인)의 크기를 동적으로 조정하는 데이터 속성으로 제공되는 경우 유용합니다.
+이미지 편집기는 이미지 맵 영역을 절대 단위와 상대 단위로 유지합니다. 상대 단위는 응답형 이미지 구성 요소에서 클라이언트측의 이미지 맵(이미지 크기에 상대적)의 크기를 동적으로 조정하기 위한 데이터 속성으로 제공될 때 유용합니다.
 
 ### imageMap 속성 {#imagemap-property}
 
-이미지 맵 좌표는 JCR로 유지됩니다 `imageMap` 속성(이미지 편집기)을 기반으로 합니다. 형식은 다음과 같습니다.
+이미지 맵 좌표는 JCR에 로 유지됩니다. `imageMap` 이미지 편집기의 속성입니다. 형식은 다음과 같습니다.
 
-속성은 맵 영역을 다음과 같이 저장합니다.
+이 속성은 다음과 같이 맵 영역을 저장합니다.
 
 `[area1][area2][...]`
 
@@ -48,21 +48,21 @@ ht-degree: 14%
 
 ## SVG 이미지 지원 {#support-for-svg-images}
 
-확장 가능한 벡터 그래픽(SVG)은 이미지 편집기에서 지원합니다.
+이미지 편집기에서 확장 가능한 벡터 그래픽(SVG)을 지원합니다.
 
 * DAM에서의 SVG 에셋 드래그 앤 드롭과 로컬 파일 시스템에서의 SVG 파일 업로드를 모두 지원합니다.
 
-## MIME 유형별로 플러그인 활성화 {#enabling-plugins-by-mime-type}
+## MIME 유형별 플러그인 활성화 {#enabling-plugins-by-mime-type}
 
-특정 MIME 유형에 대해 작성 작업을 제한해야 하는데, 이는 서버측 처리에서 지원이 없기 때문입니다. 예를 들어 SVG 이미지를 편집할 수 없습니다.
+특정 상황에서 서버측 처리를 지원하지 않기 때문에 특정 MIME 유형에 대해 작성 작업을 제한해야 합니다. 예를 들어 SVG 이미지 편집이 허용되지 않을 수 있습니다.
 
-이미지 편집기의 플러그인은 MIME 유형으로 `supportedMimeTypes` 개별 플러그인의 구성 노드에 대한 속성입니다.
+이미지 편집기의 플러그인은 다음을 설정하여 MIME 유형별로 선택적으로 활성화할 수 있습니다. `supportedMimeTypes` 개별 플러그인의 구성 노드의 속성입니다.
 
 ### 예 {#example}
 
-예를 들어 자르기 기능은 GIF, JPEG, PNG, WEBP 및 TIFF 이미지만 허용해야 한다고 가정해 보겠습니다.
+예를 들어 자르기 기능은 GIF, JPEG, PNG, WEBP 및 TIFF 이미지에 대해서만 허용되어야 한다고 가정해 보겠습니다.
 
-다음 `supportedMimeTypes` 그런 다음 속성을 `cq:editConfig` 노드 아래에 나열된 상태로 남아 있습니다.
+다음 `supportedMimeTypes` 그런 다음 플러그인의 구성 노드에서 속성을 허용된 MIME 유형의 문자열로 설정해야 합니다. `cq:editConfig` 이미지 구성 요소의 노드
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

@@ -65,7 +65,7 @@ Document Security SDK, Adobe Acrobat, Document Security Extension for Microsoft 
 
    위와 함께 Promotable Protection Library에는 Document Security SDK의 모든 기능이 있습니다. Document Security SDK를 사용하여 문서 서버 기능에 액세스하고, 정책으로 보호된 문서를 열고, 사용자 정의 확장, 플러그인 또는 응용 프로그램을 개발할 수 있습니다. 또한 PPL(Portable Protection Library)에서는 AEM Forms CSDK(Document Security Client SDK)를 사용하여 보호된 문서를 보호하거나 그 반대로 보호할 수 없습니다.
 
-   Portable Protection Library는 32비트 및 64비트 버전에서 Java 및 C++ 언어로 제공됩니다. OSGi에서 AEM Forms용 OSGi 번들로 사용할 수 있습니다. C++ PPL은 Microsoft Visual Studio 2013으로 컴파일할 수 있습니다. AEM Forms Document Security 추가 기능의 라이센스가 있는 경우 [AEM Forms 문서 보안](https://helpx.adobe.com/marketing-cloud/contact-support.html) 지원 팀이 휴대용 보호 라이브러리를 확보합니다. 나중에 Portable Protection Library Help (라이브러리와 함께 번들로 제공)를 사용하여 Portable Protection Library를 설정하고 사용할 수 있습니다.
+   Portable Protection Library는 32비트 및 64비트 버전에서 Java 및 C++ 언어로 제공됩니다. OSGi에서 AEM Forms용 OSGi 번들로 사용할 수 있습니다. C++ PPL은 Microsoft Visual Studio 2013으로 컴파일할 수 있습니다. AEM Forms Document Security 추가 기능의 라이센스가 있는 경우 [AEM Forms 문서 보안](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html) 지원 팀이 휴대용 보호 라이브러리를 확보합니다. 나중에 Portable Protection Library Help (라이브러리와 함께 번들로 제공)를 사용하여 Portable Protection Library를 설정하고 사용할 수 있습니다.
 
 ### 보호된 문서 보기 또는 편집 {#view-or-edit-protected-documents}
 

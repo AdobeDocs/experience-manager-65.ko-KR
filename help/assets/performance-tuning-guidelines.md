@@ -64,9 +64,9 @@ Adobe은 배포를 권장합니다. [!DNL Experience Manager Assets] 최적의 �
 다음 JVM 매개 변수를 설정합니다.
 
 * `-XX:+UseConcMarkSweepGC`
-* `-Doak.queryLimitInMemory`= 500000
-* `-Doak.queryLimitReads`= 100000
-* `-Dupdate.limit`= 250000
+* `-Doak.queryLimitInMemory`=500000
+* `-Doak.queryLimitReads`=100000
+* `-Dupdate.limit`=250000
 * `-Doak.fastQuerySize`=true
 
 ## 데이터 저장소 및 메모리 구성 {#data-store-and-memory-configuration}

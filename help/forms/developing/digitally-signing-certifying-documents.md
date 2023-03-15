@@ -827,7 +827,7 @@ Forms 서비스에서 만드는 대화형 양식에 서명할 수 있습니다. 
 >
 >대화형 양식에 디지털 서명을 하려면 먼저 AEM Forms에 인증서를 추가해야 합니다. 관리 콘솔을 사용하거나 Trust Manager API를 사용하여 프로그래밍 방식으로 인증서가 추가됩니다. (자세한 내용은 [Trust Manager API를 사용하여 자격 증명을 가져오는 중](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api))
 
-Forms 서비스 API를 사용할 때 `GenerateServerAppearance` 에 대한 런타임 옵션 `true`. 이 런타임 옵션을 사용하면 Acrobat 또는 Adobe Reader에서 연 후에도 서버에서 생성된 양식의 모양이 그대로 유지됩니다. Forms API를 사용하여 서명할 대화형 양식을 생성할 때 이 런타임 옵션을 설정하는 것이 좋습니다.
+Forms 서비스 API를 사용할 때 `GenerateServerAppearance` 에 대한 런타임 옵션 `true`. 이 런타임 옵션을 사용하면 Acrobat 또는 Adobe Reader에서 열면 서버에서 생성된 양식의 모양이 그대로 유지됩니다. Forms API를 사용하여 서명할 대화형 양식을 생성할 때 이 런타임 옵션을 설정하는 것이 좋습니다.
 
 >[!NOTE]
 >

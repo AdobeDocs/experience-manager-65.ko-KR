@@ -1,7 +1,7 @@
 ---
 title: 양식 이벤트 추적 사용자 지정
 seo-title: Customizing form event tracking
-description: 사용자가 한 필드에서 60초 이상을 소비하면 필드 방문 이벤트가 트리거되고 필드의 세부 사항이 Adobe SiteCatalyst으로 전송됩니다.
+description: 사용자가 필드에서 60초 이상 시간을 보내는 경우 필드 방문 이벤트가 트리거되고 필드의 세부 정보가 Adobe SiteCatalyst으로 전송됩니다.
 seo-description: If a user spends more than 60 seconds on a field, a fieldvisit event is triggered and the details of the field are sent to Adobe SiteCatalyst.
 uuid: 2f790085-2f1a-45be-9a69-6100c76dcae0
 content-type: reference
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 양식 이벤트 추적 사용자 지정 {#customizing-form-event-tracking}
 
-기본적으로 다음 이벤트는 analytics가 활성화된 적응형 양식에서 추적됩니다.
+기본적으로 다음 이벤트는 Analytics가 활성화된 적응형 양식에서 추적됩니다.
 
 <table>
  <tbody>
@@ -31,7 +31,7 @@ ht-degree: 1%
    <td>formName, formTitle, formInstance, source</td>
   </tr>
   <tr>
-   <td>포기</td>
+   <td>중단</td>
    <td>formName, formTitle, formInstance, panelName, panelTitle</td>
   </tr>
   <tr>
@@ -63,23 +63,23 @@ ht-degree: 1%
 
 ## 필드 방문 이벤트 시간 제한 사용자 지정 {#customizing-the-field-visit-event-timeout}
 
-기본 AEM 양식 설정에서 사용자가 필드에서 60초 이상 보내는 경우 `fieldvisit` 이벤트가 트리거되고 필드 세부 사항이 Adobe Analytics으로 전송됩니다. AEM 구성 콘솔(/system/console/configMgr)의 AEM Forms Analytics 구성 아래에서 필드 시간 추적 기준을 사용자 지정하여 시간 제한 제한을 늘리거나 줄일 수 있습니다.
+기본 AEM 양식 설정에서 사용자가 필드에서 60초 이상 시간을 보내는 경우 `fieldvisit` 이벤트가 트리거되고 필드의 세부 사항이 Adobe Analytics으로 전송됩니다. AEM 구성 콘솔(/system/console/configMgr)의 AEM Forms Analytics 구성 아래에서 필드 시간 추적 기준선을 사용자 정의하여 시간 초과 제한을 늘리거나 줄일 수 있습니다.
 
 ## 추적 이벤트 사용자 지정 {#customizing-the-tracking-events}
 
-을 수정할 수 있습니다 `trackEvent`함수 사용 가능 `/libs/afanalytics/js/custom.js` 파일을 사용하여 이벤트 추적을 사용자 지정합니다. 추적되는 이벤트가 적응형 양식에서 발생할 때마다 `trackEvent`함수가 호출될 때 다음 `trackEvent` 함수는 두 가지 매개 변수를 허용합니다. `eventName`및 `variableValueMap`.
+다음을 수정할 수 있습니다. `trackEvent`다음에서 사용 가능한 함수 `/libs/afanalytics/js/custom.js` 이벤트 추적을 사용자 지정하는 파일입니다. 추적 중인 이벤트가 적응형 양식에서 발생할 때마다 `trackEvent`함수가 호출됩니다. 다음 `trackEvent` 함수는 다음 두 매개 변수를 허용합니다. `eventName`및 `variableValueMap`.
 
-의 값을 평가할 수 있습니다. *eventName* 및 *variableValueMap* 이벤트의 추적 동작을 변경하는 인수입니다. 예를 들어 특정 수의 오류 이벤트가 발생한 후 정보를 analytics 서버로 보내도록 선택할 수 있습니다. 다음 사용자 지정을 수행하도록 선택할 수도 있습니다.
+다음 값 중 하나를 평가할 수 있습니다 *eventName* 및 *변수 값 맵* 이벤트의 추적 동작을 변경하기 위한 인수 예를 들어 특정 수의 오류 이벤트가 발생한 후 Analytics 서버로 정보를 보내도록 선택할 수 있습니다. 다음 사용자 지정을 수행하도록 선택할 수도 있습니다.
 
 * 이벤트를 보내기 전에 임계값 시간을 설정할 수 있습니다.
-* 상태를 유지 관리하여 작업을 결정할 수 있습니다. 예를 들면 다음과 같습니다. *fieldVisit* 마지막 이벤트의 타임스탬프를 기반으로 더미 이벤트를 푸시합니다.
-* 를 사용할 수 있습니다 `pushEvent` analytics 서버로 이벤트를 전송하는 함수 *.*
+* 상태를 유지 관리하여 작업을 결정할 수 있습니다(예: ). *fieldVisit* 마지막 이벤트의 타임스탬프를 기반으로 더미 이벤트를 푸시합니다.
+* 다음을 사용할 수 있습니다. `pushEvent` 이벤트를 analytics 서버로 전송하는 기능 *.*
 
-* 이벤트를 Analytics 서버에 전혀 푸시하지 않도록 선택할 수 있습니다.
+* 이벤트를 분석 서버에 전혀 푸시하지 않도록 선택할 수 있습니다.
 
 ### 샘플 {#sample}
 
-다음 예에서는 *오류* 각 이벤트 *fieldName* 속성이 유지됩니다. 오류가 다시 발생하는 경우에만 이벤트가 Analytics 서버로 전송됩니다.
+다음 예에서 을(를) 위해 로 설정합니다. *오류* 각 이벤트 *fieldName* 속성은 유지됩니다. 오류가 다시 발생하는 경우에만 이벤트가 Analytics 서버로 전송됩니다.
 
 ```javascript
 case 'error':
@@ -92,10 +92,10 @@ case 'error':
 
 ## 패널 방문 이벤트 사용자 지정 {#customizing-the-panelvisit-event}
 
-기본 AEM Forms 설정에서 60초마다 적응형 양식이 포함된 창이 활성 상태인지 확인합니다. 창이 활성화되어 있으면 `panelVisit`이벤트가 Adobe Analytics에 트리거됩니다. 문서 또는 양식이 활성 상태인지 확인하고 해당 양식 또는 문서에서 보낸 시간을 계산하는 데 도움이 됩니다.
+기본 AEM Forms 설정에서 60초마다 적응형 양식이 포함된 창이 활성화되어 있는지 확인합니다. 창이 활성화된 경우 `panelVisit`이벤트가 Adobe Analytics에 트리거됩니다. 문서 또는 양식이 활성 상태인지 확인하고 해당 양식 또는 문서에 소요된 시간을 계산하는 데 도움이 됩니다.
 
 >[!NOTE]
 >
->활동을 가져오고 체류 시간을 계산하는 데 사용되는 이벤트 이름은 &quot;panelVisit&quot;입니다. 이 이벤트는 위에 나열된 표에 나열된 패널 방문 이벤트와 다릅니다.
+>특정 활동 및 체류 시간 계산에 사용되는 이벤트 이름은 &quot;panelVisit&quot;입니다. 이 이벤트는 위에 나열된 표에 나열된 패널 방문 이벤트와 다릅니다.
 
-에서 사용할 수 있는 scheduleHeatBeatCheck 함수를 수정할 수 있습니다 `/libs/afanalytics/js/custom.js` 정기적으로 Adobe Analytics에 전송된 이 이벤트를 변경하거나 중지할 파일입니다.
+다음에서 사용할 수 있는 scheduleHeartBeatCheck 함수를 수정할 수 있습니다. `/libs/afanalytics/js/custom.js` 정기적인 간격으로 Adobe Analytics에 전송된 이 이벤트를 변경하거나 중지할 파일입니다.

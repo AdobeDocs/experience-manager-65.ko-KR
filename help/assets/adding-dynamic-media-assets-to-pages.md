@@ -95,7 +95,7 @@ Adobe Experience Manager을 WCM으로 사용하는 경우 페이지에 Dynamic M
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
-* 사이트 선택기에서 원하는 페이지 또는 페이지 그룹을 선택합니다. 선택 **[!UICONTROL 속성]** 을(를) 선택하고 을(를) 선택합니다. **[!UICONTROL 고급]** 탭. 현지화를 위해 원하는 언어를 선택합니다.
+* 사이트 선택기에서 원하는 페이지 또는 페이지 그룹을 선택합니다. 선택 **[!UICONTROL 속성]** 을(를) 선택하고 을(를) 선택합니다. **[!UICONTROL 고급]** 탭. Select the desired language for localization.
 
    >[!NOTE]
    >
@@ -237,7 +237,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 >[!NOTE]
 >
->기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. 고정 크기로 설정하려면 **[!UICONTROL 고급]** 탭 **[!UICONTROL 너비]** 및 **[!UICONTROL 높이]**.
+>기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
 
 * **[!UICONTROL 이미지 수정자]** - 추가적인 이미지 명령을 제공하여 이미지 효과를 적용할 수 있습니다. 이러한 효과는 이미지 사전 설정 및 이미지 제공 명령 참조에 설명되어 있습니다.
 

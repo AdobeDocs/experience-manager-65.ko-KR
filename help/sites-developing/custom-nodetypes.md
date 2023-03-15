@@ -54,7 +54,7 @@ AEM은 Sling을 기반으로 하며 JCR 저장소를 사용하므로 두 노드 
 * `- cq:category (string)`
 * `- cq:properties (binary)`
 
-## 댓글 {#comment}
+## 설명 {#comment}
 
 ### cq:주석 {#cq-comment}
 
@@ -764,7 +764,7 @@ AEM 5.4의 경우 목록 끝에 를 추가합니다.
 
 `[cq:ComponentExtractorSource] mixin`
 
-## 태깅 {#tagging}
+## 태그 지정 {#tagging}
 
 ### cq:태그 {#cq-tag}
 
