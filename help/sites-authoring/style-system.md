@@ -156,7 +156,6 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 >1. HTL이 모든 것에 우선합니다. `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 그런 다음 여러 활성 스타일 중에서 구성 요소의 정책에 구성된 스타일 목록의 첫 번째 스타일이 적용됩니다.
 >1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
-
 >
 
 
