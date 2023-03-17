@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 32ff13dbf8fbf17258a3df21b86575fa65c4ceeb
+source-git-commit: bbb64f44c80e96bafcd53277f6d753d84acf5189
 workflow-type: tm+mt
-source-wordcount: '3008'
-ht-degree: 7%
+source-wordcount: '3047'
+ht-degree: 6%
 
 ---
 
@@ -45,12 +45,21 @@ ht-degree: 7%
 **이미지 프로필에서 스마트 자르기 정의 지침**
 스마트 자르기 사용을 제어하고 자르기의 처리 시간 및 저장을 위해 다음 지침 및 팁을 권장합니다.
 
-* 스마트 자르기가 적용될 이미지 자산은 최소 50 x 50픽셀 이상이어야 합니다. <!-- CQDOC-20087 -->
-* 중복 스마트 자르기 차원이 포함된 이미지 프로필은 허용되지 않습니다. <!-- CQDOC-20087 -->
-* 스마트 자르기 옵션이 설정된 중복된 이름이 있는 이미지 프로필은 허용되지 않습니다. <!-- CQDOC-20087 -->
+* 폭과 높이 값이 동일한 중복 스마트 자르기 프로필을 만들면 안 됩니다.
+* 최종 사용이 아닌 자르기 차원을 기반으로 스마트 자르기에 이름을 지정합니다. 이렇게 하면 단일 차원이 여러 페이지에서 사용되는 중복 항목을 최적화할 수 있습니다.
+* 모든 폴더 또는 모든 자산에 적용되는 일반적인 스마트 자르기 프로필 대신 특정 폴더 및 하위 폴더에 대한 페이지 기반/자산 유형 기반 이미지 프로필을 만듭니다.
+* 하위 폴더에 적용하는 이미지 프로필은 폴더에 적용되는 이미지 프로필을 무시합니다.
 * 모든 폴더 또는 모든 자산에 적용되는 일반적인 스마트 자르기 프로필 대신 특정 폴더 및 하위 폴더에 대한 페이지 기반/자산 유형 기반 이미지 프로필을 만듭니다.
 * 하위 폴더에 적용하는 이미지 프로필은 폴더에 적용되는 이미지 프로필을 무시합니다.
 * 이상적으로는 이미지당 10~15개의 스마트 자르기를 사용하여 화면 비율과 처리 시간을 최적화합니다.
+
+<!--
+* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
+* An Image Profile that contains duplicate smart crop dimensions is not permitted. CQDOC-20087
+* Duplicate named Image Profiles that have smart crop options set are not permitted. CQDOC-20087
+* Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
+* An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
+* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time. -->
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
@@ -157,7 +166,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 폴더에 프로필을 적용하는 것 외에도 Experience Manager 자산에 업로드된 모든 컨텐츠가 선택한 프로필이 적용되도록 전체적으로 프로필을 적용할 수도 있습니다.
 
-나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
+나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. 자세한 내용은 [처리 중인 프로필을 편집한 후 폴더에서 자산 재처리](processing-profiles.md#reprocessing-assets).
 
 **Dynamic Media 이미지 프로필을 전체적으로 적용하려면**
 
