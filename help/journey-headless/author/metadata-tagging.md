@@ -2,10 +2,10 @@
 title: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 description: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: d33abafa0478de1f7b637a14df6d2b7712000c03
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,6 +31,10 @@ ht-degree: 97%
 * 조각을 처음 만들 때:
 
    ![새 콘텐츠 조각 만들기 - 이름 입력](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+* 다음 **변형** 컨텐츠 조각 편집기의 탭에서는 사전 정의된 을 추가할 수 있습니다 **태그** 프로젝트에서 다음을 수행하십시오.
+
+   ![콘텐츠 조각 편집기 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 * 콘텐츠 조각 편집기의 **메타데이터** 탭을 사용하여 프로젝트에서 다양한 메타데이터 필드와 사전 정의된 **태그**&#x200B;를 추가할 수 있습니다.
 
