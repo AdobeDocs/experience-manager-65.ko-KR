@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ AEM의 많은 성능 측정(예: 쿼리 응답 시간)은 시스템의 컨텐츠
 
 **Touch UI의 개발자 모드**
 
-AEM 6의 터치 UI에 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리 보기 모드 간을 전환할 수 있듯이 개발자는 작성자 UI에서 개발자 모드로 전환하여 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류 스택의 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 다음을 참조하십시오 [CQ Gems 프레젠테이션](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+AEM 6의 터치 UI에 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리 보기 모드 간을 전환할 수 있듯이 개발자는 작성자 UI에서 개발자 모드로 전환하여 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류 스택의 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 다음을 참조하십시오 [CQ Gems 프레젠테이션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
 
 **rlog.jar를 사용하여 요청 로그를 읽습니다.**
 

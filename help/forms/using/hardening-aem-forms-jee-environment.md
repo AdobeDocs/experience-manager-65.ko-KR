@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: d2661ee6614261179b5e8d2d9ffb7c240ce676dc
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 1%
@@ -519,7 +519,7 @@ JEE 웹 애플리케이션의 각 AEM Forms에 대한 다음 애플리케이션 
    <td><p>예</p> </td> 
   </tr> 
   <tr> 
-   <td><p>/전달하는 경우/*</p> </td> 
+   <td><p>/workspace/*</p> </td> 
    <td><p>작업 공간 최종 사용자 웹 애플리케이션</p> </td> 
    <td><p>예</p> </td> 
    <td><p>예</p> </td> 
@@ -958,7 +958,7 @@ JEE의 AEM Forms에 필요한 WebSphere 포트에 대한 자세한 내용은 Web
 
 JBoss, WebLogic 및 WebSphere에서 SSL을 구성하는 방법에 대한 지침은 [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-AEM Forms 서버에 대해 구성된 JVM(Java Virtual Machine)으로 인증서를 가져오는 방법에 대한 지침은 [AEM Forms Workbench 도움말](http://www.adobe.com/go/learn_aemforms_workbench_65).
+AEM Forms 서버에 대해 구성된 JVM(Java Virtual Machine)으로 인증서를 가져오는 방법에 대한 지침은 [AEM Forms Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### SSL 리디렉션 구성 {#configuring-ssl-redirect}
 

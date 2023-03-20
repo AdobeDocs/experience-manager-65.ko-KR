@@ -10,10 +10,10 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 5%
+source-wordcount: '462'
+ht-degree: 7%
 
 ---
 
@@ -292,7 +292,7 @@ css.newLoginContentArea {
 1. 에서 새 이미지 추가 `/apps/livecycle/core/content/login`. 이미지를 추가하려면 다음을 수행하십시오.
 
    1. WebDAV 클라이언트를 설치합니다.
-   1. 다음으로 이동 `/apps/livecycle/core/content/login` 폴더(webDAV 클라이언트 사용) 자세한 내용은 다음을 참조하십시오. [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. 다음으로 이동 `/apps/livecycle/core/content/login` 폴더(webDAV 클라이언트 사용) 자세한 내용은 다음을 참조하십시오. [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR).
 
    1. 새 이미지를 추가합니다.
 
