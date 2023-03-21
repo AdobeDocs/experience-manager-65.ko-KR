@@ -11,10 +11,10 @@ discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 2%
+source-wordcount: '1355'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 * CRX
 * JavaScript
-* Java
+* Java™
 
 ## 시나리오: 편지 목록 사용자 인터페이스에 명령을 추가하여 일반 PDF 버전의 문자를 다운로드합니다 {#addcommandtoletters}
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 
       >[!NOTE]
       >
-      >이 경로는 하나 이상의 자산/문자 중 하나를 선택하여 작동하는 작업을 만드는 용도로만 사용됩니다. 선택 없이 작동하는 작업을 만들려면 대신 다음 경로에 대한 오버레이 노드를 만들고 그에 따라 나머지 단계를 완료해야 합니다.
+      >이 경로는 하나 이상의 자산/문자 중 하나를 선택하여 작동하는 작업을 만드는 용도로만 사용됩니다. 선택 없이 작동하는 작업을 만들려면 대신 다음 경로에 대한 오버레이 노드를 만들고 그에 따라 나머지 단계를 완료합니다.
       >
       >
       >`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/default/items`
@@ -110,7 +110,7 @@ ht-degree: 2%
         <tr>
         <td>아이콘</td>
         <td>문자열</td>
-        <td>icon-download<br /> <br /> Correspondence Management가 명령/메뉴의 왼쪽에 표시되는 아이콘입니다. 사용 가능한 다양한 아이콘 및 설정에 대해서는 다음을 참조하십시오 <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">CoralUI 아이콘 설명서</a>.<br /> </td>
+        <td>icon-download<br /> <br /> Correspondence Management가 명령/메뉴의 왼쪽에 표시되는 아이콘입니다. 사용 가능한 다양한 아이콘 및 설정에 대해서는 다음을 참조하십시오 <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html" target="_blank">CoralUI 아이콘 설명서</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -279,7 +279,7 @@ ht-degree: 2%
    1. 를 두 번 클릭합니다. **POST.jsp** 파일을 클릭하여 CRX에서 엽니다.
    1. POST.jsp 파일에 다음 코드를 추가하고 **모두 저장**:
 
-      이 코드는 편지 렌더링 서비스에만 사용할 수 있습니다. 다른 자산의 경우 해당 자산의 Java 라이브러리를 이 코드에 추가합니다. AEM Forms API에 대한 자세한 내용은 [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en).
+      이 코드는 편지 렌더링 서비스에만 사용할 수 있습니다. 다른 자산의 경우, 해당 자산의 Java™ 라이브러리를 이 코드에 추가합니다. AEM Forms API에 대한 자세한 내용은 [AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
 
       AEM 라이브러리에 대한 자세한 내용은 AEM 를 참조하십시오 [구성 요소](/help/sites-developing/components.md).
 

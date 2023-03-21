@@ -12,10 +12,10 @@ discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 feature: Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
 source-wordcount: '2011'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,9 +33,9 @@ HTML5 양식 기능은 포함된 AEM 인스턴스 내에 패키지로 배포되�
 
 REST 엔드포인트 및 지원되는 요청 매개 변수에 대한 자세한 내용은 [양식 템플릿 렌더링](/help/forms/using/rendering-form-template.md).
 
-사용자가 iOS 또는 Android 브라우저와 같은 클라이언트 장치에서 요청을 수행하면 Sling이 먼저 요청 URL을 기반으로 프로필 노드를 확인합니다. 이 프로필 노드에서 **sling:resourceSuperType** 및 **sling:resourceType** 이 양식 렌더링 요청을 처리할 수 있는 사용 가능한 스크립트를 모두 확인하려면 그런 다음 요청 메서드와 함께 Sling 요청 선택기를 사용하여 이 요청을 처리하는 데 가장 적합한 스크립트를 식별합니다. 요청이 프로필 렌더러 JSP에 도달하면 JSP가 Forms OSGi 서비스를 호출합니다.
+사용자가 iOS 또는 Android™ 브라우저과 같은 클라이언트 장치에서 요청을 수행하면 Sling이 먼저 요청 URL을 기반으로 프로필 노드를 확인합니다. 이 프로필 노드에서 **sling:resourceSuperType** 및 **sling:resourceType** 이 양식 렌더링 요청을 처리할 수 있는 사용 가능한 스크립트를 모두 확인하려면 그런 다음 요청 메서드와 함께 Sling 요청 선택기를 사용하여 이 요청을 처리하는 데 가장 적합한 스크립트를 식별합니다. 요청이 프로필 렌더러 JSP에 도달하면 JSP가 Forms OSGi 서비스를 호출합니다.
 
-Sling 스크립트 해상도에 대한 자세한 내용은 [AEM Sling 치트 시트](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) 또는 [Apache Sling Url 제거](https://sling.apache.org/site/url-decomposition.html).
+Sling 스크립트 해상도에 대한 자세한 내용은 [AEM Sling 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 또는 [Apache Sling Url 제거](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
 #### 일반적인 양식 처리 호출 흐름 {#typical-form-processing-call-flow}
 
@@ -179,8 +179,8 @@ Sling 패키지에는 프로필 및 프로필 렌더러와 관련된 컨텐츠�
 * **xfaforms.I18N.&lt;locale>**: 이 라이브러리에는 현지화된 데이터가 포함되어 있습니다.
 * **xfaforms.profile**: 이 라이브러리에는 XFA 스크립팅 및 레이아웃 엔진에 대한 구현이 포함되어 있습니다.
 
-이러한 라이브러리는 CQ 프레임워크 JavaScript 라이브러리의 자동 연결, 축소 및 압축 기능을 사용하는 CQ 클라이언트 라이브러리로 모델링됩니다.
-CQ Client Libs에 대한 자세한 내용은 [CQ Clientlib 설명서](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).
+이러한 라이브러리는 CQ 프레임워크 JavaScript 라이브러리의 자동 연결, 축소 및 압축 기능을 이용할 수 있는 CQ 클라이언트 라이브러리로 모델링됩니다.
+CQ Client Libs에 대한 자세한 내용은 [CQ Clientlib 설명서](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR).
 
 위에서 설명한 대로 프로필 렌더러 JSP는 sling을 통해 Forms 서비스를 호출합니다. 또한 이 JSP는 관리 구성 또는 요청 매개 변수에 따라 다양한 디버그 옵션을 설정합니다.
 

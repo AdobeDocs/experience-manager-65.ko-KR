@@ -1,7 +1,7 @@
 ---
 title: AEM 코어 개념
 seo-title: The Basics
-description: AEM 구성 방식에 대한 핵심 개념과 JCR, Sling, OSGi, 디스패처, 워크플로우 및 MSM을 이해하는 것을 포함하여 JCR 구성 방법과 이를 위에서 개발하는 방법에 대한 개요입니다
+description: AEM 구성 방식에 대한 핵심 개념과 JCR, Sling, OSGi, Dispatcher, 워크플로우 및 MSM을 이해하는 것을 포함하여 이 구성 요소를 위에서 개발하는 방법에 대한 개요입니다
 seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3324'
 ht-degree: 1%
 
 ---
@@ -39,25 +39,25 @@ AEM을 기반으로 개발하는 데 다음 기술이 필요합니다.
 
 또한 을 읽고 따르는 것이 좋습니다 [지침 및 우수 사례](/help/sites-developing/dev-guidelines-bestpractices.md).
 
-## Java Content Repository {#java-content-repository}
+## Java™ Content Repository {#java-content-repository}
 
-JCR(Java Content Repository) 표준, [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)를 지정하는 경우, 컨텐츠 리포지토리 내의 세부 수준에서 양방향 컨텐츠에 액세스할 수 있는 공급업체와 독립적이고 구현에 독립적인 방법을 지정합니다.
+JCR(Java™ Content Repository) 표준, [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)를 지정하는 경우, 컨텐츠 리포지토리 내의 세부 수준에서 양방향 컨텐츠에 액세스할 수 있는 공급업체와 독립적이고 구현에 독립적인 방법을 지정합니다.
 
 Specification Lead는 Adobe Research(스위스) AG에 의해 소유됩니다.
 
-다음 [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지, javax.jcr.&amp;ast; 저장소 컨텐츠에 대한 직접 액세스 및 조작에 사용됩니다.
+다음 [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지, javax.jcr.&amp;ast; 저장소 컨텐츠에 대한 직접 액세스 및 조작에 사용됩니다.
 
 ## Experience Server(CRX) 및 Jackrabbit {#experience-server-crx-and-jackrabbit}
 
-Experience Server는 AEM이 빌드되고 사용자 지정 애플리케이션을 작성하는 데 활용할 수 있는 Experience Services를 제공하며 Jackrabbit을 기반으로 컨텐츠 저장소를 내장합니다.
+Experience Server는 AEM이 빌드되고 사용자 지정 애플리케이션을 작성하는 데 사용할 수 있는 Experience Services를 제공하며, Jackrabbit을 기반으로 컨텐츠 저장소를 포함합니다.
 
-[Apache Jackrabbit](https://jackrabbit.apache.org/) 는 JCR API 2.0의 구현을 완벽하게 따르는 오픈 소스입니다.
+[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) 는 JCR API 2.0의 구현을 완벽하게 따르는 오픈 소스입니다.
 
 ## Sling 요청 처리 {#sling-request-processing}
 
 ### Sling 소개 {#introduction-to-sling}
 
-AEM이 [Sling](https://sling.apache.org/site/index.html)은 컨텐츠 중심 애플리케이션을 쉽게 개발할 수 있도록 REST 원칙을 기반으로 하는 웹 애플리케이션 프레임워크입니다. Sling은 Apache Jackrabbit와 같은 JCR 저장소 또는 AEM의 경우 CRX 컨텐츠 저장소를 데이터 저장소로 사용합니다. Sling은 Apache Software Foundation에 기여하여 Apache에서 추가 정보를 찾을 수 있습니다.
+AEM이 [Sling](https://sling.apache.org/index.html)은 컨텐츠 중심 애플리케이션을 쉽게 개발할 수 있도록 REST 원칙을 기반으로 하는 웹 애플리케이션 프레임워크입니다. Sling은 Apache Jackrabbit와 같은 JCR 저장소를 사용하거나 AEM의 경우 CRX Content Repository를 데이터 저장소로 사용합니다. Sling은 Apache Software Foundation에 기여하여 Apache에서 추가 정보를 찾을 수 있습니다.
 
 Sling을 사용하면 렌더링할 컨텐츠의 유형이 첫 번째 처리 고려 사항이 아닙니다. 대신 기본 고려 사항은 URL이 렌더링을 수행할 스크립트를 찾을 수 있는 콘텐츠 개체로 확인되는지 여부입니다. 이 기능은 웹 컨텐츠 작성자가 요구 사항에 맞게 쉽게 사용자 지정된 페이지를 작성할 수 있도록 지원합니다.
 
@@ -78,7 +78,7 @@ Sling을 사용하면 렌더링할 컨텐츠의 유형이 첫 번째 처리 고�
 Sling은 *콘텐츠 중심*. 즉, 각(HTTP) 요청이 JCR 리소스(저장소 노드) 형식의 컨텐츠에 매핑될 때 처리에 중점을 둡니다.
 
 * 첫 번째 타겟은 컨텐츠를 포함하는 리소스(JCR 노드)입니다
-* 둘째, 표현 또는 스크립트는 요청의 특정 부분(예: 선택기 및/또는 확장)과 함께 리소스 속성에서 배치됩니다
+* 둘째, 표현 또는 스크립트는 요청의 특정 부분(예: 선택기 및/또는 확장)과 결합된 리소스 속성에서 배치됩니다
 
 ### RESTful Sling {#restful-sling}
 
@@ -158,13 +158,13 @@ Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 
 
 주목할 다른 몇 가지 사항은 다음과 같습니다.
 
-* 메서드(GET, POST)이 필요한 경우 HTTP 사양(예: jobs.POST.esp)에 따라 대문자로 지정됩니다(아래 참조)
+* 메서드(GET, POST)이 필요한 경우 jobs.POST.esp(아래 참조)와 같은 HTTP 사양에 따라 대문자로 지정됩니다.
 * 다양한 스크립트 엔진이 지원됩니다.
 
    * HTL(HTML 템플릿 언어 - Adobe Experience Manager의 기본 및 권장 HTML 서버측 템플릿 시스템): `.html`
    * ECMAScript(JavaScript) 페이지(서버측 실행): `.esp, .ecma`
-   * Java Server 페이지(서버측 실행): `.jsp`
-   * Java 서블릿 컴파일러(서버측 실행): `.java`
+   * Java™ 서버 페이지(서버측 실행): `.jsp`
+   * Java™ 서블릿 컴파일러(서버측 실행): `.java`
    * JavaScript 템플릿(클라이언트측 실행): `.jst`
 
 AEM의 특정 인스턴스에서 지원하는 스크립트 엔진 목록은 Felix Management Console( `http://<host>:<port>/system/console/slingscripting`).
@@ -181,11 +181,11 @@ AEM의 특정 인스턴스에서 지원하는 스크립트 엔진 목록은 Feli
 
    POST은 스크립트 이름에 사용됩니다.
 
-   스크립트가 `/apps/hr/jobs/jobs.POST.esp`.
+   스크립트는 `/apps/hr/jobs/jobs.POST.esp`.
 
 * .html로 끝나지 않고 다른 형식의 URL
 
-   예 `../content/corporate/jobs/developer.pdf`
+   예, `../content/corporate/jobs/developer.pdf`
 
    스크립트가 `/apps/hr/jobs/jobs.pdf.esp`; 접미사가 스크립트 이름에 추가됩니다.
 
@@ -317,7 +317,7 @@ OSGi는 모듈식 애플리케이션 및 라이브러리(Java용 Dynamic Module 
 >
 >특히, 기본 교육 페이지에는 프레젠테이션 및 자습서 컬렉션이 포함되어 있습니다.
 
-이 아키텍처를 통해 Sling을 애플리케이션별 모듈로 확장할 수 있습니다. Sling에서 CQ5에서는 [Apache Felix](https://felix.apache.org/) OSGI(Open Services Gateway Initiative) 구현 및 OSGi Service Platform 릴리스 4 버전 4.2 사양을 기반으로 합니다. 둘 다 OSGi 프레임워크 내에서 실행되는 OSGi 번들 컬렉션입니다.
+이 아키텍처를 통해 Sling을 애플리케이션별 모듈로 확장할 수 있습니다. Sling에서 CQ5에서는 [Apache Felix](https://felix.apache.org/documentation/index.html) OSGI(Open Services Gateway Initiative) 구현 및 OSGi Service Platform 릴리스 4 버전 4.2 사양을 기반으로 합니다. 둘 다 OSGi 프레임워크 내에서 실행되는 OSGi 번들 컬렉션입니다.
 
 이렇게 하면 설치 내의 패키지에 대해 다음 작업을 수행할 수 있습니다.
 
@@ -337,7 +337,7 @@ OSGi는 모듈식 애플리케이션 및 라이브러리(Java용 Dynamic Module 
 
 **항목** 항목은 노드 또는 속성입니다.
 
-항목 객체 조작에 대한 자세한 내용은 [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) 인터페이스 javax.jcr.Item의
+항목 객체 조작에 대한 자세한 내용은 [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) 인터페이스 javax.jcr.Item의
 
 **노드(및 해당 속성)** 노드 및 해당 속성은 JCR API 2.0 사양(JSR 283)에서 정의됩니다. 컨텐츠, 개체 정의, 렌더링 스크립트 및 기타 데이터를 저장합니다.
 
@@ -353,7 +353,7 @@ JCR 이름인 노드를 Sling 환경에서도 리소스라고 합니다.
 
 currentNode가 현재 노드 개체인 경우
 
-노드 객체 조작에 대한 자세한 내용은 [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+노드 객체 조작에 대한 자세한 내용은 [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **위젯** AEM에서 모든 사용자 입력은 위젯에 의해 관리됩니다. 종종 컨텐츠 편집을 제어하는 데 사용됩니다.
 
@@ -392,7 +392,7 @@ AEM 내에서 구성 요소는 종종 리소스의 컨텐츠를 렌더링하는 
 
 S`tring pageName = currentPage.getName();`
 
-currentPage가 현재 페이지 개체인 경우 페이지 개체 조작에 대한 자세한 내용은 [Javadocs](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
+currentPage가 현재 페이지 개체인 경우 페이지 개체 조작에 대한 자세한 내용은 [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **페이지 관리자** 페이지 관리자는 페이지 수준 작업에 대한 메서드를 제공하는 인터페이스입니다.
 
@@ -400,7 +400,7 @@ currentPage가 현재 페이지 개체인 경우 페이지 개체 조작에 대�
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체인 경우. 페이지 관리자에서 제공하는 방법에 대한 자세한 내용은 [Javadocs](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체인 경우. 페이지 관리자에서 제공하는 방법에 대한 자세한 내용은 [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## 리포지토리 내의 구조 {#structure-within-the-repository}
 
@@ -414,7 +414,7 @@ pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체�
 
 >[!CAUTION]
 >
->에서는 아무 것도 변경하지 마십시오 `/libs` 경로. 구성 및 기타 변경 사항에 대해 `/libs` to `/apps` 내에서 변경할 수 있습니다 `/apps`.
+>에서 아무 것도 변경하지 마십시오 `/libs` 경로. 구성 및 기타 변경 사항에 대해 `/libs` to `/apps` 내에서 변경할 수 있습니다 `/apps`.
 
 * `/apps`
 
@@ -432,7 +432,7 @@ pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체�
 
 * `/libs`
 
-   AEM의 핵심에 속하는 라이브러리 및 정의. 의 하위 폴더 `/libs` 검색 또는 복제와 같이 즉시 사용 가능한 AEM 기능을 나타냅니다. 의 콘텐츠 `/libs` AEM 작동 방식에 영향을 주므로 수정하면 안 됩니다. 웹 사이트에 대한 기능은 `/apps` 자세한 내용은 [구성 요소 및 기타 요소 사용자 지정](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+   AEM의 핵심에 속하는 라이브러리 및 정의. 의 하위 폴더 `/libs` 검색 또는 복제와 같은 기본 AEM 기능을 나타냅니다. 의 콘텐츠 `/libs` AEM 작동 방식에 영향을 주므로 수정하면 안 됩니다. 웹 사이트에 대한 기능은 `/apps` 자세한 내용은 [구성 요소 및 기타 요소 사용자 지정](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -448,7 +448,7 @@ AEM을 사용하는 프로덕션 환경은 종종 두 가지 유형의 인스턴
 
 ## 디스패처 {#the-dispatcher}
 
-Dispatcher는 캐싱 및/또는 로드 밸런싱 모두를 위한 Adobe의 도구입니다. 자세한 내용은 [디스패처](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html).
+Dispatcher는 캐싱 및/또는 로드 밸런싱 모두를 위한 Adobe의 도구입니다. 자세한 내용은 [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko).
 
 ## FileVault(소스 수정 시스템) {#filevault-source-revision-system}
 
@@ -466,7 +466,7 @@ FileVault는 JCR 저장소에 파일 시스템 매핑 및 버전 제어를 제�
 
 MSM(Multi Site Manager)을 사용하면 공통 컨텐츠를 공유하는 여러 웹 사이트를 쉽게 관리할 수 있습니다. MSM을 사용하면 한 사이트의 컨텐츠 변경 사항이 다른 사이트에 자동으로 복제되도록 사이트 간의 관계를 정의할 수 있습니다.
 
-예를 들어, 웹 사이트는 국제 대상을 위해 여러 언어로 제공되는 경우가 많습니다. 동일한 언어의 사이트 수가 낮으면(3~5개) 사이트 간에 컨텐츠를 동기화하는 수동 프로세스를 수행할 수 있습니다. 그러나 사이트 수가 증가하거나 여러 언어가 사용되는 즉시 프로세스를 자동화하는 것이 더 효율적입니다.
+예를 들어, 웹 사이트는 국제 대상을 위해 여러 언어로 제공되는 경우가 많습니다. 동일한 언어의 사이트 수가 낮으면(3~5) 사이트 간에 컨텐츠를 동기화하는 수동 프로세스를 수행할 수 있습니다. 그러나 사이트 수가 증가하거나 여러 언어를 사용하는 경우 프로세스를 자동화하는 것이 더 효율적입니다.
 
 * 웹 사이트의 다양한 언어 버전을 효율적으로 관리할 수 있습니다.
 * 소스 사이트를 기반으로 하나 이상의 사이트를 자동으로 업데이트합니다.

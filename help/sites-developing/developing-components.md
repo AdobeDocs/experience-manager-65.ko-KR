@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '3477'
+source-wordcount: '3456'
 ht-degree: 2%
 
 ---
@@ -51,9 +51,9 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저�
 
 ## 기존 구성 요소 및 대화 상자 확장 {#extending-existing-components-and-dialogs}
 
-구현하려는 구성 요소에 따라 전체 인스턴스를 정의하고 개발하는 대신 기존 인스턴스를 확장하거나 사용자 지정할 수 있습니다 [구조](#structure) 처음부터
+구현할 구성 요소에 따라 전체 인스턴스를 정의하고 개발하지 않고 기존 인스턴스를 확장하거나 사용자 지정할 수 있습니다 [구조](#structure) 처음부터
 
-기존 구성 요소나 대화 상자를 확장하거나 사용자 정의할 때 변경 작업을 수행하기 전에 전체 구조 또는 대화 상자에 필요한 구조를 복사하거나 복제할 수 있습니다.
+기존 구성 요소나 대화 상자를 확장하거나 사용자 지정할 때 변경 작업을 수행하기 전에 전체 구조 또는 대화 상자에 필요한 구조를 복사하거나 복제할 수 있습니다.
 
 ### 기존 구성 요소 확장 {#extending-an-existing-component}
 
@@ -61,7 +61,7 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저�
 
 >[!NOTE]
 >
->검색 경로 로직을 기반으로 오버레이로 구성 요소를 재정의할 수도 있습니다. 하지만 이런 경우에는 [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) 은 트리거되지 않으며 `/apps` 전체 오버레이를 정의해야 합니다.
+>검색 경로 로직을 기반으로 오버레이로 구성 요소를 재정의할 수도 있습니다. 그러나 이러한 경우 [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) 가 트리거되지 않고 `/apps` 전체 오버레이를 정의해야 합니다.
 
 >[!NOTE]
 >
@@ -95,11 +95,11 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저�
 
 ### Java 사용 {#using-java}
 
-[HTL Java Use-API를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 보조 메서드에 액세스하도록 설정할 수 있습니다](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html). 구성 요소 컨텐츠를 선택하고 구성하는 로직을 구현하는 데 Java 코드를 사용할 수 있습니다.
+[HTL Java Use-API를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 보조 메서드에 액세스하도록 설정할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). 이렇게 하면 Java 코드를 사용하여 구성 요소 컨텐츠를 선택하고 구성하는 로직을 구현할 수 있습니다.
 
 ### JavaScript 사용 {#using-javascript}
 
-[HTL JavaScript Use-API를 사용하면 HTL 파일이 JavaScript로 작성된 도우미 코드에 액세스할 수 있습니다](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). 이렇게 하면 JavaScript 코드를 사용하여 구성 요소 컨텐츠를 선택하고 구성하는 로직을 구현할 수 있습니다.
+[HTL JavaScript Use-API를 사용하면 HTL 파일이 JavaScript로 작성된 도우미 코드에 액세스할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). 이렇게 하면 JavaScript 코드를 사용하여 구성 요소 컨텐츠를 선택하고 구성하는 로직을 구현할 수 있습니다.
 
 ### 클라이언트측 HTML 라이브러리 사용 {#using-client-side-html-libraries}
 
@@ -117,13 +117,13 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저�
 
 ## 미리 보기 동작 구성 {#configuring-the-preview-behavior}
 
-다음 [WCM 모드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키는 **미리 보기** 페이지를 새로 고치지 않아도 모드 로 전환합니다.
+다음 [WCM 모드](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키는 **미리 보기** 페이지를 새로 고치지 않아도 모드 로 전환합니다.
 
 WCM 모드에 민감한 렌더링을 사용하는 구성 요소의 경우 특별히 새로 고친 다음, 쿠키의 값에 의존하도록 정의해야 합니다.
 
 >[!NOTE]
 >
->터치가 활성화된 UI에서는 값만 사용합니다 `EDIT` 및 `PREVIEW` 에 사용됩니다 [WCM 모드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키 .
+>터치가 활성화된 UI에서는 값만 사용합니다 `EDIT` 및 `PREVIEW` 에 사용됩니다 [WCM 모드](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키 .
 
 ## 대화 상자 만들기 및 구성 {#creating-and-configuring-a-dialog}
 
@@ -131,9 +131,9 @@ WCM 모드에 민감한 렌더링을 사용하는 구성 요소의 경우 특별
 
 ### Coral UI 및 Granite UI {#coral-ui-and-granite-ui}
 
-[Coral UI](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 및 [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) AEM의 현대적인 모양과 느낌을 정의합니다.
+[Coral UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) 및 [Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) AEM의 현대적인 모양과 느낌을 정의합니다.
 
-[Granite UI는 다양한 기본 구성 요소(위젯)를 제공합니다](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) 작성 환경에서 대화 상자를 만드는 데 필요합니다. 필요한 경우 이 선택 항목을 확장하고 [자신만의 위젯 만들기](#creatinganewwidget).
+[Granite UI는 다양한 기본 구성 요소(위젯)를 제공합니다](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 작성 환경에서 대화 상자를 만드는 데 필요합니다. 필요한 경우 이 선택 항목을 확장하고 [자신만의 위젯 만들기](#creatinganewwidget).
 
 자세한 내용은 다음을 참조하십시오.
 
@@ -141,13 +141,13 @@ WCM 모드에 민감한 렌더링을 사용하는 구성 요소의 경우 특별
 
    * 모든 클라우드 솔루션에서 일관된 UI 제공
    * [AEM 터치 지원 UI의 개념 - Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Coral UI 안내서](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Coral UI 안내서](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * Granite UI
 
    * UI 콘솔 및 대화 상자 작성을 위해 Sling 구성 요소에 래핑된 Coral UI 마크업을 제공합니다
    * [AEM 터치 지원 UI의 개념 - Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Granite UI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+   * [Granite UI 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ newComponent (cq:Component)
 >
 >다음을 참조하십시오.
 >
->* 의 AEM Gems 세션 [대화 상자 필드 사용자 지정](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+>* 의 AEM Gems 세션 [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
 >* 다음에 적용되는 관련 샘플 코드 [코드 샘플 - 대화 상자 필드를 사용자 지정하는 방법](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -211,13 +211,13 @@ newComponent (cq:Component)
 
 >[!NOTE]
 >
->Granite UI에 대한 자세한 내용은 [Granite UI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Granite UI에 대한 자세한 내용은 [Granite UI 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 대화 상자를 양식 요소의 단순 컨테이너로 간주하는 경우 대화 상자 컨텐츠의 기본 컨텐츠를 양식 필드로 볼 수도 있습니다. 새 양식 필드를 만들려면 리소스 유형을 만들어야 합니다. 이는 새 구성 요소를 만드는 것과 같습니다. 해당 작업을 지원하기 위해 Granite UI는 을 사용하여 상속할 일반 필드 구성 요소를 제공합니다 `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-특히 Granite UI는 대화 상자(또는 일반적으로, [forms](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
+특히 Granite UI는 대화 상자(또는 일반적으로, [forms](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
 
 >[!NOTE]
 >
@@ -269,7 +269,7 @@ newComponent (cq:Component)
 1. 필드를 주어진 CSS 클래스( *후크*).
 1. 클라이언트 라이브러리에서 해당 CSS 클래스 이름에 연결된 JS 리스너를 정의합니다. 이렇게 하면 사용자 지정 논리 범위가 필드에만 적용되며 동일한 유형의 다른 필드에 영향을 주지 않습니다.
 
-이를 위해서는 상호 작용할 기본 위젯 라이브러리에 대해 알고 있어야 합니다. 자세한 내용은 [Coral UI 설명서](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 반응할 이벤트를 식별하기 위해 사용됩니다. 이는 이전에 ExtJS를 사용하여 수행해야 했던 프로세스와 매우 유사합니다. 주어진 위젯의 설명서 페이지를 찾은 다음 해당 이벤트 API의 세부 사항을 확인합니다.
+이를 위해서는 상호 작용할 기본 위젯 라이브러리에 대해 알고 있어야 합니다. 자세한 내용은 [Coral UI 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) 반응할 이벤트를 식별하기 위해 사용됩니다. 이는 이전에 ExtJS를 사용하여 수행해야 했던 프로세스와 매우 유사합니다. 주어진 위젯의 설명서 페이지를 찾은 다음 해당 이벤트 API의 세부 사항을 확인합니다.
 
 예를 보려면 다음을 참조하십시오.
 
@@ -308,7 +308,7 @@ ExtJS를 사용하는 클래식 UI에서는 콘텐츠 구조에 주어진 위젯
 
 #### 필드 유효성 검사(Granite UI) {#field-validation-granite-ui}
 
-Granite UI 및 Granite UI 구성 요소(위젯과 같음)의 필드 유효성 검사는 `foundation-validation` API. [자세한 내용은 `foundation-valdiation` Granite 설명서 를 참조하십시오.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
+Granite UI 및 Granite UI 구성 요소(위젯과 같음)의 필드 유효성 검사는 `foundation-validation` API. [자세한 내용은 `foundation-valdiation` Granite 설명서 를 참조하십시오.](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
 예를 보려면 다음을 참조하십시오.
 
@@ -428,8 +428,8 @@ GITHUB의 코드
 
 GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
-* [GitHub에서 aem-project-archetype 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
-* 다음 이름으로 프로젝트를 다운로드합니다 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/archive/master.zip)
+* [GitHub에서 aem-project-archetype 프로젝트 열기](https://github.com/adobe/aem-project-archetype)
+* 다음 이름으로 프로젝트를 다운로드합니다 [ZIP 파일](https://github.com/adobe/aem-project-archetype/archive/master.zip)
 
 >[!NOTE]
 >
@@ -464,12 +464,12 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 * 대화 상자
 
-   * 터치 지원 UI에서 사용할 새 대화 상자를 만들어야 합니다. 그러나 호환성을 위해 터치 지원 UI에 대해 대화 상자가 정의되지 않은 경우 터치 지원 UI가 클래식 UI 대화 상자의 정의를 사용할 수 있습니다.
+   * 터치 지원 UI에서 사용할 대화 상자를 만듭니다. 그러나 호환성을 위해 터치 지원 UI에 대해 대화 상자가 정의되지 않은 경우 터치 지원 UI가 클래식 UI 대화 상자의 정의를 사용할 수 있습니다.
    * 다음 [AEM 현대화 도구](/help/sites-developing/modernization-tools.md) 기존 구성 요소를 확장하는 데 도움이 되도록 제공됩니다.
    * [Granite UI 구성 요소에 ExtJS 매핑](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) 는 동일한 Granite UI 리소스 유형을 사용하는 ExtJS xtype 및 노드 유형에 대한 편리한 개요를 제공합니다.
-   * 필드 사용자 지정. 자세한 내용은 AEM Gems 세션 을 참조하십시오. [대화 상자 필드 사용자 지정](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
-   * 유형에서 다음으로 마이그레이션 [Granite UI 유효성 검사](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * JS 리스너 사용 을 참조하십시오. [필드 이벤트 처리](#handling-field-events) 및 AEM Gems 세션 [대화 상자 필드 사용자 지정](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+   * 필드 사용자 지정. 자세한 내용은 AEM Gems 세션 을 참조하십시오. [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+   * 유형에서 다음으로 마이그레이션 [Granite UI 유효성 검사](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+   * JS 리스너 사용 을 참조하십시오. [필드 이벤트 처리](#handling-field-events) 및 AEM Gems 세션 [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
 
 ### cq:listener 코드 마이그레이션 {#migrating-cq-listener-code}
 
@@ -499,9 +499,9 @@ if (Granite.author) {
 * 노출된 API 및 확장 지점
 * 기타
 
-이러한 이유로 구성 요소 자체 내에서 사용 가능한 모든 기존 설명서 Markdown을 만드는 것은 매우 쉽습니다.
+이러한 이유로 구성 요소 자체 내에서 사용 가능한 기존 설명서 Markdown을 쉽게 만들 수 있습니다.
 
-필요한 것은 `README.md` 파일 을 구성 요소 구조에 지정합니다. 그러면 이 markdown이 [구성 요소 콘솔](/help/sites-authoring/default-components-console.md).
+배치 `README.md` 파일 을 구성 요소 구조에 지정합니다. 이 markdown은 [구성 요소 콘솔](/help/sites-authoring/default-components-console.md).
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
