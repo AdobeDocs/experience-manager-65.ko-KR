@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Managing User Guide
 description: 주요 리소스와 AEM 6.5 사용 안내서의 포괄적인 컬렉션을 통해 AEM 프로젝트를 성공적으로 관리하는 방법을 알아봅니다.
 seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 81%
+source-wordcount: '337'
+ht-degree: 85%
 
 ---
 
@@ -39,7 +39,6 @@ ht-degree: 81%
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
 | [Commerce 사용 안내서](/help/commerce/home.md) | AEM에서 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 
 ## 주요 AEM 리소스
 

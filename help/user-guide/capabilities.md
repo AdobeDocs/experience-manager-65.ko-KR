@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Capabilities User Guide
 description: AEM 6.5의 필수 기능에 대한 개요
 seo-description: An overview of the essential capabilities of AEM 6.5
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 91%
+source-wordcount: '129'
+ht-degree: 95%
 
 ---
 
@@ -44,10 +44,6 @@ Adobe Managed Services 클라우드 배포를 포함하여 [Adobe Experience Man
 ## AEM Communities {#aem-communities}
 
 [포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다.](/help/communities/home.md)
-
-## AEM Livefyre {#aem-livefyre}
-
-[AEM Livefyre와 사용자 생성 컨텐츠를 공유합니다.](https://experienceleague.adobe.com/docs/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 

@@ -10,190 +10,196 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 exl-id: 7ccd67a7-9945-48c1-9986-f4eaf0f2b961
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '1503'
-ht-degree: 4%
+source-wordcount: '33'
+ht-degree: 51%
 
 ---
 
 # AEM Livefyre Recipes{#aem-livefyre-recipes}
 
-Adobe Experience Manager Livefyre의 공통 사용 사례에 대한 단계별 지침입니다.
+>[!IMPORTANT]
+>
+>[Livefyre Adobe은 2021년 11월 30일부터 공식적으로 서비스를 종료합니다.](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
 
-## 즉시 사용 가능한 Livefyre AEM 구성 요소를 사용하여 UGC를 큐레이션하고 Livefyre Media Wall을 사용하여 표시합니다. {#curate-ugc-using-the-out-of-the-box-livefyre-aem-components-and-display-using-livefyre-media-wall}
+<!--
+Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.
 
-Media Wall은 소셜 및 기본 Livefyre 콘텐츠를 실시간 소셜 월로 스트리밍합니다. 사용 사례 및 요구 사항에 따라 AEM에서 Media Wall을 구현하는 방법은 여러 가지가 있습니다.
+## Curate UGC using the out-of-the-box Livefyre AEM components and display using Livefyre Media Wall {#curate-ugc-using-the-out-of-the-box-livefyre-aem-components-and-display-using-livefyre-media-wall}
 
-AEM Livefyre 패키지는 즉시 사용 가능한 구현을 제공하는 반면, 기존 통합은 사용자 지정 Livefyre AEM 구성 요소를 만드는 기능을 제공합니다.
+Media Wall streams social and native Livefyre content into a real-time social wall. There are multiple ways to implement Media Wall in AEM depending on your use case and requirements.
 
-### AEM 통합 {#aem-integration}
+The AEM Livefyre Package provides an out-of-box implementation, whereas the traditional integration provides the ability to create custom Livefyre AEM components.
 
-Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2 SP1, 6.3, 6.4 및 6.4 SP1에 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 지침은 [Livefyre와 통합 사용](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
+### AEM Integration {#aem-integration}
 
-지원되는 Livefyre 앱을 보려면 [Livefyre 앱용 AEM Support Matrix](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+The Livefyre Adobe Experience Manager Package is available for AEM 6.1, 6.2SP1, 6.3, ,6.4 and 6.4 SP1. AEM 5.x and 6.0 are not supported. For detailed instructions, see [Integrating with Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-### 기존 구현(사용자 지정된 AEM 구성 요소의 경우) {#traditional-implementation-for-customized-aem-components}
+To see which Livefyre Apps are supported, see the [AEM Support Matrix for Livefyre Apps](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
-Livefyre를 사용자 지정 AEM 구성 요소 또는 WordPress, Sitecore 또는 DemandWare와 같은 기타 CMS에 구현하는 방법에는 세 가지가 있습니다. 기존 Livefyre 통합은 CMS에 영향을 주지 않습니다.
+### Traditional Implementation (for customized AEM components) {#traditional-implementation-for-customized-aem-components}
 
-**방법 1: Designer 앱 구현**
+There are three ways to implement Livefyre into a custom AEM component or other CMSs like WordPress, Sitecore, or DemandWare. A traditional Livefyre integration is CMS agnostic.
 
-* **내용:** Livefyre 앱을 통합하는 가장 간단하고 빠른 방법입니다. 사용자 지정된 JavaScript 포함 코드를 디자인, 구성 및 생성하여 페이지에 Media Wall 앱을 몇 분 만에 통합할 수 있습니다.
-* **방법:**  [Media Wall 앱 만들기, 미리보기, 게시 및 포함](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
+**Method 1: Designer App Implementation**
 
-* **예:** [https://codepen.io/dharafyre/pen/bvGrLo](https://codepen.io/dharafyre/pen/bvGrLo)
+* **What:** Simplest and fastest way of integrating a Livefyre App. You can design, configure, and generate a customized JavaScript embed code to integrate a Media Wall App on a page in minutes.
+* **How:**  [Create, Preview, Publish, and Embed a Media Wall App](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
-**방법 2: SDK 구현**
+* **Example:** [https://codepen.io/dharafyre/pen/bvGrLo](https://codepen.io/dharafyre/pen/bvGrLo)
 
-* **내용:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) 는 사이트에서 앱 및 인증을 활성화하는 핵심 라이브러리입니다. 이는 전세계를 정의합니다 *window.Livefyre* 개체와 단일 공용 메서드, *Livefyre.require*: Livefyre 앱 임베드 및 타사 사용자 인증 플랫폼과의 통합을 지원하는 다른 Livefyre JavaScript 라이브러리를 로드하는 데 사용할 수 있습니다.
+**Method 2: SDK Implementation**
 
-* **방법**: [Livefyre JavaScript SDK의 streamhub-wallpackage 사용](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-media-wall-integration.html)
+* **What:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) is the core library that powers Apps and Auth on a site. It defines the global *window.Livefyre* object and a single public method, *Livefyre.require*, which can be used to load other Livefyre JavaScript libraries that help with embedding Livefyre Apps and integrating with third party User Auth platforms.
 
-* **예**: [https://codepen.io/dharafyre/pen/KZKBNv?editors=1010](https://codepen.io/dharafyre/pen/KZKBNv?editors=1010)
+* **How**: [Use the Livefyre JavaScript SDK's streamhub-wallpackage](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-media-wall-integration.html)
 
-SDK를 사용한 고급 사용자 지정에 대해서는 다음을 참조하십시오. [StreamHub SDK](https://github.com/Livefyre/streamhub-sdk).
+* **Example**: [https://codepen.io/dharafyre/pen/KZKBNv?editors=1010](https://codepen.io/dharafyre/pen/KZKBNv?editors=1010)
 
-**방법 3: API 구현**
+For advanced customizations using the SDK, please refer to [StreamHub SDKs](https://github.com/Livefyre/streamhub-sdk).
 
-* 사용자 지정된 경험과 데이터 시각화를 만들기 위해 Livefyre 앱은 다음을 사용하여 Livefyre 및 소셜 데이터를 소모함으로써 처음부터 만들 수 있습니다. [Bootstrap 및 스트림 API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+**Method 3: API Implementation**
 
-다음을 따르세요 [Twitter](https://developer.twitter.com/en/developer-terms/display-requirements.html), [Facebook](https://en.facebookbrand.com/guidelines/brand), 및 [Instagram](https://en.instagram-brand.com/) ugc에 대한 UI를 작성할 때 지침을 표시합니다.
+* For creating customized experiences and data visualizations, Livefyre Apps can be created from scratch by consuming Livefyre and social data using the [Bootstrap and Stream API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-### Media Wall 인증 통합 {#media-wall-authentication-integration}
+Make sure you follow [Twitter](https://developer.twitter.com/en/developer-terms/display-requirements.html), [Facebook](https://en.facebookbrand.com/guidelines/brand), and [Instagram](https://en.instagram-brand.com/) display guidelines when building the UI for UGC.
 
-인증이 필요한 Media Wall 통합의 경우 다음을 참조하십시오.
+### Media Wall Authentication Integration {#media-wall-authentication-integration}
 
-* [단일 사인온 통합 사용자 지정](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) AEM Identity Management용
-* [ID 통합](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼용
+For Media Wall Integrations requiring authentication, please refer to:
 
-### 사용 사례 개요 {#use-case-overview}
+* [Customize Single Sign on Integration](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) for AEM Identity Management
+* [Identity Integration](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) for third party authentication platforms
 
-AEM 고객인 경우 기본 제공 Livefyre AEM 구성 요소를 사용하여 UGC를 큐레이션하고 Livefyre Media Wall을 사용하여 표시하려고 합니다.
+### Use Case Overview {#use-case-overview}
 
-구현 단계:
+As an AEM customer, I want to curate UGC using the out-of-the-box Livefyre AEM components and display using Livefyre Media Wall:
 
-1. [시작하기](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [Livefyre를 사용하도록 AEM 구성](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [AEM Media Wall 구성 요소를 페이지로 끌어다 놓기](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
-1. [스트림을 구성하고 규칙을 추가하여 UGC를 조정하고 미디어 월 구성 요소에 표시합니다](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html)
+Steps to implement:
 
-스트리밍 UGC에 대한 교육 비디오는 다음을 참조하십시오. [Adobe Experience Manager Livefyre에서 자동 컨텐츠 스트림 만들기 및 소셜 컨텐츠 검색](https://helpx.adobe.com/experience-manager/tutorials.html).
+1. [Getting Started](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [Configure AEM to use Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [Drag and drop AEM Media Wall component onto your page](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
+1. [Configure Streams and add rules to curate UGC and display on the Media Wall component](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html)
 
-### 고객 예 {#customer-examples}
+For training videos on streaming UGC, see [Create Automatic Content Streams and Search Social Content in Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html).
 
-* [미디어 월](https://edition.cnn.com/specials/nepal-earthquake-media-wall)
-* [투어 미디어 월](https://www.pgatour.com/social-hub.html)
+### Customer Examples {#customer-examples}
 
-사용자 지정된 경험과 데이터 시각화를 만들기 위해 Livefyre 앱은 다음을 사용하여 Livefyre 및 소셜 데이터를 소모함으로써 처음부터 만들 수 있습니다. [Bootstrap 및 스트림 API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+* [CNN Media Wall](https://edition.cnn.com/specials/nepal-earthquake-media-wall)
+* [PGA Tour Media Wall](https://www.pgatour.com/social-hub.html)
 
-인증이 필요한 Livefyre 앱의 경우 다음을 참조하십시오. [ID 통합](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼용.
+For creating customized experiences and data visualizations, Livefyre Apps can be created from scratch by consuming Livefyre and social data using the [Bootstrap and Stream API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-* [투어 미디어 월](https://www.pgatour.com/social-hub.html)
-* [시간 초과](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
+For Livefyre Apps requiring authentication, please see [Identity Integration](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) for third party authentication platforms.
 
-## AEM 구성 요소 또는 기존 Livefyre 통합을 사용하여 Livefyre 주석 통합 {#integrate-livefyre-comments-using-aem-components-or-traditional-livefyre-integration}
+* [PGA Tour Media Wall](https://www.pgatour.com/social-hub.html)
+* [TimeOut](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
 
-### AEM 통합 {#aem-integration-1}
+## Integrate Livefyre Comments using AEM Components or traditional Livefyre integration {#integrate-livefyre-comments-using-aem-components-or-traditional-livefyre-integration}
 
-Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2 SP1, 6.3, 6.4 및 6.4 SP1에 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 지침은 [Livefyre와 통합 사용](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
+### AEM Integration {#aem-integration-1}
 
-### 기존 구현(사용자 지정된 AEM 구성 요소의 경우) {#traditional-implementation-for-customized-aem-components-1}
+The Livefyre Adobe Experience Manager Package is available for AEM 6.1, 6.2SP1, 6.3, ,6.4 and 6.4 SP1. AEM 5.x and 6.0 are not supported. For detailed instructions, see [Integrating with Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-Livefyre 댓글 앱을 사용자 지정 AEM 구성 요소 또는 WordPress, Sitecore 또는 DemandWare와 같은 기타 CMS에 구현하는 방법에는 세 가지가 있습니다. 기존 Livefyre 통합은 CMS에 영향을 주지 않습니다.
+### Traditional Implementation (for customized AEM components) {#traditional-implementation-for-customized-aem-components-1}
 
-**방법 1: Designer 앱 구현**
+There are three ways to implement Livefyre Comments App into a custom AEM component or other CMSs like WordPress, Sitecore, or DemandWare. A traditional Livefyre integration is CMS agnostic.
 
-* **내용:** Livefyre 앱을 통합하는 가장 간단하고 빠른 방법입니다. 사용자 지정된 JavaScript 포함 코드를 디자인, 구성 및 생성하여 페이지에 Media Wall 앱을 몇 분 만에 통합할 수 있습니다.
-* **방법:** [주석 앱 만들기, 미리 보기, 게시 및 포함](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
+**Method 1: Designer App Implementation**
 
-* **예:** [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
+* **What:** Simplest and fastest way of integrating a Livefyre App. You can design, configure, and generate a customized JavaScript embed code to integrate a Media Wall App on a page in minutes.
+* **How:** [Create, Preview, Publish, and Embed a Comments App](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
-**방법 2: SDK 구현**
+* **Example:** [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
-* **내용:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) 는 사이트에서 앱 및 인증을 활성화하는 핵심 라이브러리입니다. 이는 전세계를 정의합니다 *window.Livefyre* 개체와 단일 공용 메서드, *Livefyre.require*: Livefyre 앱 임베드 및 타사 사용자 인증 플랫폼과의 통합을 지원하는 다른 Livefyre JavaScript 라이브러리를 로드하는 데 사용할 수 있습니다.
+**Method 2: SDK Implementation**
 
-* **방법:**
+* **What:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) is the core library that powers Apps and Auth on a site. It defines the global *window.Livefyre* object and a single public method, *Livefyre.require*, which can be used to load other Livefyre JavaScript libraries that help with embedding Livefyre Apps and integrating with third party User Auth platforms.
 
-   * 다음을 사용하여 컬렉션/앱 만들기 [CollectionMeta 토큰](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
-   * 통합 [댓글 앱](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/comments/c-comments-integration.html) livefyre.js 포함 코드 구조를 사용하는 사이트에 로그인합니다.
+* **How:**
 
-* **예:**  [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
+    * Create a collection/App using [CollectionMeta token](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
+    * Integrate [Comments App](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/comments/c-comments-integration.html) into sites using the Livefyre.js embed code structure.
 
-SDK를 사용한 고급 사용자 지정에 대해서는 다음을 참조하십시오. [StreamHub SDK](https://github.com/Livefyre/streamhub-sdk).
+* **Example:**  [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
-**방법 3: API 구현**
+For advanced customizations using the SDK, please see [StreamHub SDKs](https://github.com/Livefyre/streamhub-sdk).
 
-* 사용자 지정된 경험과 데이터 시각화를 만들기 위해 Livefyre 앱은 다음을 사용하여 Livefyre 및 소셜 데이터를 소모함으로써 처음부터 만들 수 있습니다. [Bootstrap 및 스트림 API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+**Method 3: API Implementation**
 
-### 댓글 앱 인증 통합 {#comments-app-authentication-integration}
+* For creating customized experiences and data visualizations, Livefyre Apps can be created from scratch by consuming Livefyre and social data using the [Bootstrap and Stream API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-* [단일 사인온 통합 사용자 지정](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) AEM Identity Management용
-* [ID 통합](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼용
+### Comments App Authentication Integration {#comments-app-authentication-integration}
 
-### 고객 예 {#customer-examples-1}
+* [Customize Single Sign on Integration](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) for AEM Identity Management
+* [Identity Integration](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) for third party authentication platforms
 
-* [푸아즈(킴벌리 클라크)](https://www.poise.com/en-us/advice-and-support/blog-and-podcast/blog/5-holiday-party-tips-for-managing-lbl)
+### Customer Examples {#customer-examples-1}
 
-## Livefyre AEM Assets 통합을 사용하여 AEM Assets에서 UGC를 가져옵니다 {#use-livefyre-aem-assets-integration-to-import-ugc-in-aem-assets}
+* [Poise (Kimberly Klark)](https://www.poise.com/en-us/advice-and-support/blog-and-podcast/blog/5-holiday-party-tips-for-managing-lbl)
 
-**Livefyre 설정(UGC 큐레이션 및 Rights Management):**
+## Use Livefyre AEM Assets integration to import UGC in AEM Assets {#use-livefyre-aem-assets-integration-to-import-ugc-in-aem-assets}
 
-1. [Livefyre 자산 라이브러리 폴더에 UGC를 조정하기 위해 스트림 구성 및 규칙 추가](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html).
+**Livefyre Setup (for UGC Curation and Rights Management):**
 
-   1. 스트리밍 UGC에 대한 교육 비디오는 다음을 참조하십시오. [Adobe Experience Manager Livefyre에서 자동 컨텐츠 스트림 만들기 및 소셜 컨텐츠 검색](https://helpx.adobe.com/experience-manager/tutorials.html).
+1. [Configure Streams and Add Rules to curate UGC to Livefyre Asset Library Folders](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html).
 
-1. [Livefyre 자산 라이브러리 폴더에서 엄선된 UGC를 수집, 구성 및 관리합니다.](https://experienceleague.adobe.com/docs/livefyre/using/library/assets/c-assets.html).
+    1. For training videos on streaming UGC, see [Create Automatic Content Streams and Search Social Content in Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html).
 
-   1. Livefyre Studio 자산 라이브러리에서 폴더를 만들고 관리하는 방법에 대한 교육 비디오는 를 참조하십시오. [Adobe Experience Manager Livefyre에서 에셋으로 작업](https://helpx.adobe.com/experience-manager/tutorials.html).
+1. [Gather, organize, and manage curated UGC in Livefyre Asset Library folders](https://experienceleague.adobe.com/docs/livefyre/using/library/assets/c-assets.html).
 
-1. [Livefyre Studio를 사용하여 조정된 UGC에 대한 권한 요청](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html).
+    1. For training videos on creating and managing folders in the Livefyre Studio Asset Library, see [Work with Assets in Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html).
 
-**AEM 설정(UGC를 AEM Assets으로 가져오는 경우):**
+1. [Request Rights for curated UGC using Livefyre Studio](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html).
 
-1. [시작하기](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
-1. [Livefyre를 사용하도록 AEM 구성](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
-1. [Livefyre에서 큐레이션한 UGC를 AEM Assets으로 가져오기](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
+**AEM Setup (for importing UGC to AEM Assets):**
 
-* [호주정부관광청](https://www.australia.com/en-us)
+1. [Getting Started](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
+1. [Configure AEM to use Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
+1. [Import UGC curated by Livefyre in to AEM Assets](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
 
-## AEM 구성 요소 또는 기존 Livefyre 통합을 사용하여 Livefyre 리뷰 통합 {#integrate-livefyre-reviews-using-aem-components-or-traditional-livefyre-integration}
+* [Tourism Australia](https://www.australia.com/en-us)
 
-### AEM 통합 {#aem-integration-2}
+## Integrate Livefyre Reviews using AEM Components or traditional Livefyre integration {#integrate-livefyre-reviews-using-aem-components-or-traditional-livefyre-integration}
 
-Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2 SP1, 6.3, 6.4 및 6.4 SP1에 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 지침은 [Livefyre와 통합 사용](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
+### AEM Integration {#aem-integration-2}
 
-리뷰 구성 요소는 AEM 6.1에서 지원되는 구성 요소가 아닙니다. 다음을 확인하십시오. [모든 Livefyre 앱에 대한 AEM 지원 매트릭스](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+The Livefyre Adobe Experience Manager Package is available for AEM 6.1, 6.2SP1, 6.3, ,6.4 and 6.4 SP1. AEM 5.x and 6.0 are not supported. For detailed instructions, see [Integrating with Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-### 기존 구현(사용자 지정된 AEM 구성 요소의 경우) {#traditional-implementation-for-customized-aem-components-2}
+Reviews Component is not a supported component for AEM 6.1. Please check the [AEM support matrix for all Livefyre Apps](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
-두 가지 방법으로 Livefyre 리뷰 앱을 사용자 지정 AEM 구성 요소나 WordPress, Sitecore 또는 DemandWare와 같은 기타 CMS에 구현할 수 있습니다. 기존 Livefyre 통합은 CMS에 영향을 주지 않습니다.
+### Traditional Implementation (for customized AEM components) {#traditional-implementation-for-customized-aem-components-2}
 
-**방법 1: SDK 구현**
+There are two ways to implement Livefyre Reviews App into a custom AEM component or other CMSs like WordPress, Sitecore, or DemandWare. A traditional Livefyre integration is CMS agnostic.
 
-* **내용:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) 는 사이트에서 앱 및 인증을 활성화하는 핵심 라이브러리입니다. 이는 전세계를 정의합니다 *window.Livefyre* 개체와 단일 공용 메서드, *Livefyre.require*: Livefyre 앱 임베드 및 타사 사용자 인증 플랫폼과의 통합을 지원하는 다른 Livefyre JavaScript 라이브러리를 로드하는 데 사용할 수 있습니다.
+**Method 1: SDK Implementation**
 
-* **방법:**
+* **What:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) is the core library that powers Apps and Auth on a site. It defines the global *window.Livefyre* object and a single public method, *Livefyre.require*, which can be used to load other Livefyre JavaScript libraries that help with embedding Livefyre Apps and integrating with third party User Auth platforms.
 
-   * 리뷰 만들기 [CollectionMeta 토큰](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) 리뷰 컬렉션 내에 저장할 메타데이터를 지정합니다.
-   * 통합 [리뷰 앱](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) 를 사용하여 사이트에 *Livefyre.js* 포함 코드 구조
+* **How:**
 
-* **예:**  [https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
+    * Create the Reviews [CollectionMeta token](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) to specify metadata to store within the Reviews Collection.
+    * Integrate [Reviews App](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) into Sites using the *Livefyre.js* embed code structure
 
-SDK를 사용한 고급 사용자 지정에 대해서는 다음을 참조하십시오. [StreamHub SDK](https://github.com/Livefyre/streamhub-sdk).
+* **Example:**  [https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
 
-**방법 2: API 구현**
+For advanced customizations using the SDK, please see [StreamHub SDKs](https://github.com/Livefyre/streamhub-sdk).
 
-* 사용자 지정된 경험과 데이터 시각화를 만들기 위해 Livefyre 앱은 Bootstrap 및 스트림 API를 사용하여 Livefyre 및 소셜 데이터를 소모함으로써 처음부터 만들 수 있습니다.
+**Method 2: API Implementation**
 
-추가 평점 및 리뷰 API를 찾을 수 있습니다. [여기](https://api.livefyre.com/docs/apis/by-category/ratings-and-reviews).
+* For creating customized experiences and data visualizations, Livefyre Apps can be created from scratch by consuming Livefyre and social data using the Bootstrap and Stream API.
 
-### 댓글 앱 인증 통합 {#comments-app-authentication-integration-1}
+Additional Ratings and Reviews APIs can be found [here](https://api.livefyre.com/docs/apis/by-category/ratings-and-reviews).
 
-* [단일 사인온 통합 사용자 지정](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) AEM Identity Management용
-* [ID 통합](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 타사 인증 플랫폼용
+### Comments App Authentication Integration {#comments-app-authentication-integration-1}
 
-### 고객 예 {#customer-examples-2}
+* [Customize Single Sign on Integration](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) for AEM Identity Management
+* [Identity Integration](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) for third party authentication platforms
 
-* [시간 초과](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
-* [내 레시피](https://www.myrecipes.com/recipe/shrimp-florentine-pasta)
+### Customer Examples {#customer-examples-2}
+
+* [TimeOut](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
+* [myrecipes](https://www.myrecipes.com/recipe/shrimp-florentine-pasta)
+-->

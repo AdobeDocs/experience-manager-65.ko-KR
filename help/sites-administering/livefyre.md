@@ -10,224 +10,225 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 2%
+source-wordcount: '50'
+ht-degree: 12%
 
 ---
 
 # Livefyre와 통합하기{#integrating-with-livefyre}
 
-Livefyre의 업계 선도적인 큐레이션 기능을 AEM 6.5 인스턴스와 통합하여 소셜 네트워크에서 몇 분 안에 사이트에 중요한 사용자 생성 콘텐츠(UGC)를 게시하는 방법을 알아봅니다.
+>[!IMPORTANT]
+>
+>[Livefyre Adobe은 2021년 11월 30일부터 공식적으로 서비스를 종료합니다.](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
 
-## 시작하기 {#getting-started}
+<!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 
-### AEM용 Livefyre 패키지 설치 {#install-livefyre-package-for-aem}
+## Getting Started {#getting-started}
 
-AEM 6.5에는 Livefyre 기능 패키지 1.2.6이 사전 설치되어 있습니다. 이 패키지에는 AEM Sites과의 제한된 Livefyre 통합만 포함되며 업데이트된 패키지를 설치하기 전에 제거해야 합니다. 최신 패키지를 사용하면 Sites, Assets 및 Commerce 등 AEM과 Livefyre의 전체 통합을 경험할 수 있습니다.
+### Install Livefyre Package for AEM {#install-livefyre-package-for-aem}
+
+AEM 6.5 comes with Livefyre feature package 1.2.6 pre-installed. This package only includes limited Livefyre integration with AEM Sites and must be uninstalled before installing an updated package. With the latest package, you can experience the full integration of Livefyre with AEM, including Sites, Assets, and Commerce.
 
 >[!NOTE]
 >
->AEM-LF 패키지의 일부 기능은 SCF(소셜 구성 요소 프레임워크)에 따라 다릅니다. Livefyre 기능 팩을 비커뮤니티 사이트의 일부로 사용하는 경우 선언해야 합니다 *cq.social.scf* 웹 사이트의 작성자 clientlibs에 대한 종속으로서. LF 기능 팩을 커뮤니티 웹 사이트의 일부로 사용하는 경우 이 종속성은 이미 선언되어야 합니다.
+>Some features of the AEM-LF package depend on Social Component Framework (SCF). If you are using the Livefyre feature pack as part of a non-communities site, you must declare *cq.social.scf* as a dependency in the author clientlibs of the website. If you are using the LF feature pack as part of a communities website, this dependency should already be declared.
 
-1. AEM 홈페이지에서 **도구** 아이콘을 클릭합니다.
-1. 다음으로 이동 **배포 > 패키지**.
-1. 패키지 관리자에서 사전 설치된 Livefyre 기능 패키지가 표시될 때까지 스크롤한 다음 패키지 제목을 클릭합니다 **cq-social-livefyre-pkg-1.2.6.zip** 옵션을 확장하려면 다음을 수행하십시오.
-1. 클릭 **자세히 > 제거**.
+1. From the AEM homepage, click the **Tools** icon on the left rail.
+1. Navigate to **Deployment &gt; Packages**.
+1. In the Package Manager, scroll until you see the pre-installed Livefyre feature package, then click the package title **cq-social-livefyre-pkg-1.2.6.zip** to expand the options.
+1. Click **More &gt; Uninstall**.
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Livefyre 패키지 다운로드 위치 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+1. Download Livefyre package from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-1. 패키지 관리자에서 다운로드한 패키지를 설치합니다. 자세한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md) AEM에서 소프트웨어 배포 및 패키지 사용에 대한 자세한 정보
+1. From the Package Manager, install the downloaded package. See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Software Distribution and packages in AEM
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
-   이제 Livefyre-AEM 패키지가 설치되었습니다. 통합 기능을 사용하기 전에 Livefyre를 사용하도록 AEM을 구성해야 합니다.
+   Your Livefyre-AEM package is now installed. Before you can begin using the integration features, you must Configure AEM to use Livefyre.
 
-   기능 팩에 대한 자세한 내용 및 릴리스 정보는 [기능 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/home.html).
+   For more information and release notes on feature packs, see [Feature Packs](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/home.html).
 
-### Livefyre를 사용하도록 AEM 구성: 구성 폴더 만들기 {#configure-aem-to-use-livefyre-create-a-configuration-folder}
+### Configure AEM to use Livefyre: Create a Configuration Folder {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
-1. AEM 홈페이지에서 **도구** 왼쪽 레일의 아이콘을 클릭한 다음 **일반 > 구성 브라우저**.
-   * 자세한 내용은 [구성 브라우저](/help/sites-administering/configurations.md) 설명서 를 참조하십시오.
-1. 클릭 **만들기** 구성 만들기 대화 상자를 엽니다.
-1. 구성에 이름을 지정하고 을(를) 확인합니다. **클라우드 구성** 확인란을 선택합니다.
+1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **General &gt; Configuration Browser**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
+1. Click **Create** to open the Create Configuration dialog.
+1. Name your configuration and check the **Cloud Configurations** checkbox.
 
-   이 옵션을 선택하면 **도구 > 배포 > Livefyre 구성** 사용할 수 있습니다.
+   This will create a folder under **Tools &gt; Deployment &gt; Livefyre Configuration** with the name provided.
 
    ![livefyre-aem-create-config-folder](assets/livefyre-aem-create-config-folder.png)
 
-### Livefyre를 사용하도록 AEM 구성: Livefyre 구성 만들기 {#configure-aem-to-use-livefyre-create-a-livefyre-configuration}
+### Configure AEM to use Livefyre: Create a Livefyre Configuration {#configure-aem-to-use-livefyre-create-a-livefyre-configuration}
 
-조직의 Livefyre 라이선스 자격 증명을 사용하도록 AEM을 구성하여 Livefyre와 AEM 간에 통신할 수 있습니다.
+Configure AEM to use your organization's Livefyre license credentials, allowing communication between Livefyre and AEM.
 
-1. AEM 홈페이지에서 **도구** 왼쪽 레일의 아이콘을 클릭한 다음 **배포 > Livefyre 구성**.
-1. 새 Livefyre 구성을 만들 구성 폴더를 선택한 다음 를 클릭합니다 **만들기**.
+1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **Deployment &gt; Livefyre Configuration**.
+1. Select the configuration folder in which you want to create a new Livefyre configuration, then click **Create**.
 
    ![create-livefyre-configuration1](assets/create-livefyre-configuration1.png)
 
    >[!NOTE]
    >
-   >폴더에 Livefyre 구성을 추가하기 전에 폴더에는 해당 속성에서 클라우드 구성이 활성화되어 있어야 합니다. 구성 폴더는 [구성 브라우저.](/help/sites-administering/configurations.md)
+   >Folders must have Cloud Configurations enabled in their properties before Livefyre configurations can be added to them. Configuration folders are created and managed in the [Configuration Browser.](/help/sites-administering/configurations.md)
    >
-   >구성에 대한 이름을 만들 수 없습니다. 이 이름은 구성 폴더가 있는 폴더의 경로에 의해 참조됩니다. 폴더당 하나의 구성만 가질 수 있습니다.
+   >You cannot create a name for a configuration—it is referenced by the path of the folder it is in. You can only have one configuration per folder.
 
-1. 새로 만든 Livefyre 구성 카드를 선택한 다음 를 클릭합니다 **속성**.
+1. Select the newly created Livefyre configuration card, then click **Properties**.
 
    ![create-livefyre-configuration2](assets/create-livefyre-configuration2.png)
 
-1. 조직의 Livefyre 자격 증명을 입력하고 **확인**.
+1. Enter your organization's Livefyre credentials, then click **OK**.
 
    ![configure-aem2](assets/configure-aem2.png)
 
-   이 정보에 액세스하려면 Livefyre Studio를 열고 다음 위치로 이동하십시오 **설정 > 통합 설정 > 자격 증명**.
+   To access this information, open Livefyre studio and navigate to **Settings &gt; Integration Settings &gt; Credentials**.
 
-   이제 AEM 인스턴스가 Livefyre를 사용하도록 구성되었으며 통합 기능을 사용할 수 있습니다.
+   Your AEM instance is now configured to use Livefyre and you can use the integration features.
 
-### 단일 사인온 통합 사용자 지정 {#customize-single-sign-on-integration}
+### Customize Single Sign-on Integration {#customize-single-sign-on-integration}
 
-Livefyre for AEM 패키지에는 AEM Communities 프로필과 Livefyre의 SSO 서비스 간에 기본 통합이 포함되어 있습니다.
+The Livefyre for AEM package includes an out-of-the-box integration between AEM Communities profiles and Livefyre's SSO service.
 
-사용자가 AEM 사이트에 로그인하면 Livefyre 소셜 구성 요소에도 기록됩니다. 로그아웃한 사용자가 인증이 필요한 Livefyre 구성 요소 기능(예: 사진 업로드)을 사용하려고 하면 Livefyre 구성 요소가 사용자 인증을 시작합니다.
+When users log into your AEM site, they are also logged into Livefyre social components. When a logged-out user attempts to use a Livefyre component feature that requires authentication (like uploading a photo), the Livefyre component initiates user authentication.
 
-모든 사이트에 기본 인증 통합이 완벽하지는 않을 수 있습니다. 사이트 템플릿의 인증 흐름과 가장 잘 일치하도록 기본 Livefyre 인증 위임을 무시해도 됩니다. 다음 단계를 사용합니다.
+The default authentication integration may not be perfect for every site. To best match the authentication flow in your site templates, you can override the default Livefyre Authentication Delegate to meet your needs. Use these steps:
 
-1. CRXDE Lite 사용, 복사 */libs/social/integrations/livefyre/components/authorizablecomponent/authclientlib* to */apps/social/integrations/livefyre/components/authorizableconent/authclientlib*.
-1. 편집 및 저장 */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib/auth.js* 요구 사항을 충족하는 Livefyre 인증 위임을 구현하려면 다음을 수행하십시오.
+1. Using CRXDE Lite, copy */libs/social/integrations/livefyre/components/authorizablecomponent/authclientlib* to */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib*.
+1. Edit and save */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib/auth.js* to implement a Livefyre Auth Delegate that meets your needs.
 
-   인증 위임 사용자 지정에 대한 자세한 내용은 [ID 통합](https://answers.livefyre.com/developers/identity-integration/).
+   For more information on AEM Clientlibs, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html).
 
-   AEM Clientlibs에 대한 자세한 내용은 [클라이언트측 라이브러리 사용](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html).
+## Use Livefyre with AEM Sites {#use-livefyre-with-aem-sites}
 
-## AEM Sites과 Livefyre 사용 {#use-livefyre-with-aem-sites}
+### Add Livefyre Components to a Page {#add-livefyre-components-to-a-page}
 
-### 페이지에 Livefyre 구성 요소 추가 {#add-livefyre-components-to-a-page}
+Before adding Livefyre components to a page within Sites, you must enable Livefyre for the page by either inheriting a Livefyre cloud configuration from a parent page or by adding the configuration directly to the page. Refer to your implementation for how to include cloud services on your site.
 
-Livefyre 구성 요소를 Sites 내의 페이지에 추가하기 전에 상위 페이지에서 Livefyre 클라우드 구성을 상속하거나 구성을 페이지에 직접 추가하여 페이지에 대해 Livefyre를 활성화해야 합니다. 사이트에 클라우드 서비스를 포함하는 방법이 필요하면 구현 을 참조하십시오.
-
-페이지에 대해 Livefyre가 활성화되면 Livefyre 구성 요소를 허용하도록 컨테이너를 구성해야 합니다. 자세한 내용은 [디자인 모드에서 구성 요소 구성](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-designmode.html) 를 참조하십시오.
+Once Livefyre is enabled for the page, containers must be configured to allow Livefyre components. See [Configuring Components in Design Mode](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-designmode.html) for instructions on how to enable different components.
 
 >[!NOTE]
 >
->Single Sign-on 통합 사용자 지정에 인증이 구성되어 있을 때까지 게시하기 위해 인증이 필요한 앱은 작동하지 않습니다.
+>Apps requiring authentication to post do not function until authentication is configured in Customize Single Sign-on Integration.
 
-1. 에서 **구성 요소** 디자인 모드에서 사이드 패널 을 선택합니다. **Livefyre** 목록을 사용 가능한 Livefyre 구성 요소로 제한하려면 메뉴에서 를 선택합니다.
+1. From the **Components** side panel in design mode, select **Livefyre** from the menu to limit the list to available Livefyre components.
 
-   ![livefyre 추가](assets/livefyre-add.png)
+   ![livefyre-add](assets/livefyre-add.png)
 
-1. Livefyre 구성 요소를 선택하고 페이지에서 위치로 드래그합니다.
-1. 새 Livefyre 앱을 만들지 기존 앱을 포함할지 선택합니다.
+1. Select a Livefyre component, and drag it into position on your page.
+1. Select whether to create a new Livefyre app or to embed an existing one.
 
-   기존 앱을 포함하는 경우 AEM에서 앱을 선택하라는 메시지를 표시합니다. 새 앱을 만들 경우, 컨텐츠가 표시되기 전에 앱을 채워야 합니다. 페이지에 대해 Livefyre 클라우드 구성이 활성화되면 선택한 Livefyre 사이트 및 네트워크에 앱이 만들어집니다.
+   If embedding an existing app, AEM asks you to select the App. If creating a new App, the App will need to be populated before any content appears. The App will be created in the Livefyre site and network selected when Livefyre cloud configuration was enabled for the page.
 
-   구성 요소 삽입에 대한 자세한 내용은 [페이지 컨텐츠 편집](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html).
+   For more information on inserting components, see [Editing Page Content](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html).
 
-### AEM 페이지에 대한 Livefyre 구성 요소 편집. {#edit-a-livefyre-component-for-an-aem-page}
+### Edit a Livefyre Component for an AEM Page. {#edit-a-livefyre-component-for-an-aem-page}
 
-Livefyre Studio에서 Livefyre 구성 요소만 구성하고 편집할 수 있습니다. AEM에서:
+You can only configure and edit a Livefyre component in Livefyre Studio. From AEM:
 
-1. 구성할 Livefyre 구성 요소를 클릭합니다.
-1. 을(를) 클릭합니다. **구성** 아이콘(공구모양)을 클릭하여 구성 대화 상자를 엽니다.
-1. 클릭 **이 구성 요소를 편집하려면 Livefyre Studio로 이동합니다**.
-1. Livefyre Studio에서 앱을 편집합니다.
+1. Click the Livefyre component to configure.
+1. Click the **Configure** icon (wrench) to open the configuration dialog.
+1. Click **To edit this component, go to Livefyre Studio**.
+1. Edit the App in Livefyre Studio.
 
-## AEM Assets과 Livefyre 사용 {#use-livefyre-with-aem-assets}
+## Use Livefyre with AEM Assets {#use-livefyre-with-aem-assets}
 
-### 권한 요청 및 AEM Assets으로 UGC 가져오기 {#request-rights-and-import-ugc-into-aem-assets}
+### Request Rights and Import UGC into AEM Assets {#request-rights-and-import-ugc-into-aem-assets}
 
-UGC 가져오기를 사용하여 Livefyre Studio에서 AEM Assets으로 Twitter 및 Instagram 사용자 생성 콘텐츠(UGC)를 가져올 수 있습니다. 가져올 컨텐츠를 선택한 후 가져오기를 완료하기 전에 콘텐츠에 대한 권한을 요청해야 합니다.
+You can import Twitter and Instagram user-generated content (UGC) from Livefyre Studio to AEM Assets using the UGC Importer. After selecting the content to import, you must then request rights to the content before the import can be completed.
 
 >[!NOTE]
 >
->Assets를 사용하여 UGC를 가져오기 전에 Livefyre Studio에서 Social 계정 및 권한 요청 계정을 설정해야 합니다. 자세한 내용은 [설정: 권한 요청](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) 추가 정보.
+>Before using Assets to import UGC, you must set up Social Accounts and Rights Requests accounts in Livefyre Studio. See [Setting: Rights Requests](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) for more information.
 
-UGC를 AEM Assets에 가져오려면 다음을 수행하십시오.
+To import UGC into AEM Assets:
 
-1. AEM 홈페이지에서 **자산 > 파일**.
-1. 클릭 **만들기**&#x200B;를 클릭한 다음 **UGC 가져오기**
+1. From the AEM homepage, navigate to **Assets &gt; Files**.
+1. Click **Create**, then click **Import UGC.**
 
    ![livefyre-aem-import-ugc](assets/livefyre-aem-import-ugc.png)
 
-1. 컨텐츠 찾기:
+1. Find content:
 
-   * Livefyre에서 UGC 라이브러리 탭을 클릭합니다. 필터 및 검색을 사용하여 UGC 라이브러리에서 콘텐츠를 찾습니다.
-   * twitter 및 Instagram에서 Twitter 또는 Instagram 탭을 클릭하여 선택합니다. 검색 또는 필터를 사용하여 콘텐츠를 찾습니다.
+    * From Livefyre by clicking the UGC Library tab. Use the filters and search to find content from the UGC Library.
+    * From Twitter and Instagram by clicking the Twitter or Instagram tab. Use the search or filters to find content.
 
-1. 가져올 자산을 선택합니다. 선택하는 자산은 자동으로 계산되고 아래에 저장됩니다 **선택됨** 탭.
-1. **선택 사항입니다**: 을(를) 클릭합니다. **선택됨** 가져올 선택한 UGC 컨텐츠를 탭 및 검토합니다.
-1. **다음**&#x200B;을 클릭합니다.
+1. Select the assets you want to import. The assets you select are automatically counted and saved under the **Selected** tab.
+1. **Optional**: Click the **Selected** tab and review your selected UGC content to import.
+1. Click **Next**.
 
    ![livefyre-aem-import-ugc2](assets/livefyre-aem-import-ugc2.png)
 
-1. 권한 요청에 대해 각 자산에 대해 다음 옵션 중 하나를 선택합니다.
+1. For rights requests, choose one of the following options for each asset:
 
-   instagram의 경우:
+   For Instagram:
 
-   * **수동으로 권한 요청** instagram을 통해 복사하여 붙여넣고 컨텐츠 소유자에게 수동으로 전송할 수 있는 메시지를 받으려면 다음을 수행하십시오.
-   * **수동으로 속성 컨텐츠 권한** 개별 자산에 대한 권한을 재정의합니다.
+    * **Manually Request Rights** to get a message that can be copied and pasted and manually sent to the content owners via Instagram.
+    * **Manually Attribute Content Rights** to override the rights for individual assets.
 
    >[!NOTE]
    >
-   >비비즈니스 사용자 계정의 콘텐츠 집계에 영향을 주는 업데이트로 인해 Adobe에서는 더 이상 사용자를 대신하여 댓글을 게시하거나 작성자의 답글을 자동으로 확인할 수 없습니다. [자세한 내용을 보려면 여기를 클릭하십시오.](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
+   >Due to updates affecting the aggregation of content from non-business user accounts, we can no longer post comments on your behalf or automatically check for replies from the author. [Click here to find out more](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
 
    ![livefyre-aem-import-ugc3-6-4](assets/livefyre-aem-import-ugc3-6-4.png)
 
-   twitter:
+   For Twitter:
 
-   * **메시지 작성자** 자산에 대한 권한을 요청하는 컨텐츠 소유자에게 메시지를 보내려면
-   * **수동으로 속성 컨텐츠 권한** 개별 자산에 대한 권한을 재정의합니다.
+    * **Message Author** to send a message to the content owner requesting rights to the asset.
+    * **Manually Attribute Content Rights** to override the rights for individual assets.
 
+1. Click **Import**.
 
-1. **가져오기**&#x200B;를 클릭합니다. 
-
-   twitter 권한 요청을 보낸 경우 콘텐츠 소유자는 해당 계정에 권한 요청 메시지를 보게 됩니다.
+   If you sent a Twitter rights request, the content owner will see the rights request message on their account:
 
    ![livefyre-aem-rights-request-twitter](assets/livefyre-aem-rights-request-twitter.png)
 
    >[!NOTE]
    >
-   >Twitter은 동일한 계정에서 발생하는 동일한 요청에 대해 제한을 갖습니다. 두 개 이상의 자산을 가져올 때 플래그가 지정되지 않도록 메시지를 개별적으로 수정합니다.
+   >Twitter has limits on identical requests coming from the same account. When importing more than a couple assets, modify the messages individually to avoid being flagged.
 
-1. 클릭 **완료** 오른쪽 상단 모서리에서 권한 요청 워크플로우를 완료합니다.
+1. Click **Done** in the top-right corner to finish the Rights Request workflow.
 
-   Livefyre Studio에서 자산에 대한 보류 중인 권한 요청 상태를 볼 수 있습니다. 컨텐츠가 권한 요청을 보류 중인 경우 권한이 부여될 때까지 자산이 AEM Assets에 표시되지 않습니다. 권한 요청이 부여되면 자산이 AEM Assets에 자동으로 표시됩니다.
+   You can see the status of a pending Rights Request for an asset in Livefyre Studio. If content is pending a rights request, the asset will not display in AEM Assets until rights are granted. The asset automatically appears in AEM Assets when a Rights Request is granted.
 
-   instagram의 경우 컨텐츠 소유자의 응답을 추적하고 해당 컨텐츠에 대한 권한이 제공된 경우 수동으로 권한을 부여해야 합니다.
+   For Instagram, you must track the content owner's response and manually grant rights if given rights to the content.
 
-## Livefyre와 AEM Commerce 사용 {#use-livefyre-with-aem-commerce}
+## Use Livefyre with AEM Commerce {#use-livefyre-with-aem-commerce}
 
-### AEM Commerce를 사용하여 Livefyre에 제품 카탈로그 가져오기 {#import-product-catalogs-into-livefyre-with-aem-commerce}
+### Import Product Catalogs into Livefyre with AEM Commerce {#import-product-catalogs-into-livefyre-with-aem-commerce}
 
-AEM Commerce 사용자는 기존 제품 카탈로그를 Livefyre에 원활하게 통합하여 Livefyre의 시각화 앱에서 사용자 참여를 유도할 수 있습니다.
+AEM Commerce users can seamlessly integrate their existing product catalog into Livefyre to drive user engagement in Livefyre's visualization Apps.
 
-제품 카탈로그를 가져오면 제품이 Livefyre 인스턴스에 실시간으로 표시됩니다. AEM Commerce 제품 카탈로그에서 항목을 편집하거나 삭제하면 변경 사항이 Livefyre에서 자동으로 업데이트됩니다.
+After you import the product catalog, the products show up in real time in your Livefyre instance. If you edit or delete items in your AEM Commerce Product Catalog, the changes automatically update in Livefrye.
 
-1. AEM 인스턴스에 최신 Livefyre for AEM 패키지가 설치되어 있는지 확인합니다.
-1. AEM 홈페이지에서 **AEM Commerce**.
-1. 새 컬렉션을 만들거나 기존 컬렉션을 사용합니다.
-1. 마우스를 컬렉션 위로 가져간 다음 를 클릭합니다. **컬렉션 속성** (연필 아이콘).
-1. 확인 **Livefyre에 동기화**.
-1. 채우기 **Livefyre 페이지 접두사** 이 컬렉션을 AEM의 특정 페이지에 연결하려면
+1. Ensure you have the latest Livefyre for AEM package installed on your AEM instance.
+1. From the AEM homepage, navigate to **AEM Commerce**.
+1. Create a new collection or use an existing collection.
+1. Hover over the collection and click **Collection Properties** (pencil icon).
+1. Check **Sync to Livefyre**.
+1. Fill in **Livefyre Page Prefix** to link this collection to a specific page in AEM.
 
-   페이지 접두사는 제품 페이지 검색이 시작되는 환경의 루트 경로를 정의합니다. Livefyre에서 연결된 해당 제품이 있는 첫 번째 페이지를 선택합니다. 다른 제품에 대해 다른 페이지를 가져오려면 여러 개의 컬렉션이 필요합니다.
+   The page prefix defines the root path in your environment where searching for product pages begins. Livefyre chooses the first page that has a corresponding product associated to it. To get different pages for different products, multiple collections are needed.
 
-## Livefyre 앱에 대한 AEM 지원 매트릭스 {#aem-support-matrix-for-livefyre-apps}
+## AEM Support Matrix for Livefyre Apps {#aem-support-matrix-for-livefyre-apps}
 
-| Livefyre 앱 | AEM 6.1 | AEM 6.2 | AEM 6.3 | AEM 6.4 |
+| Livefyre Apps |AEM 6.1 |AEM 6.2 |AEM 6.3 |AEM 6.4 |
 |---|---|---|---|---|
-| 슬라이드 | X | X | X | X |
-| 채팅 | X | X | X | X |
-| 댓글 | X | X | X | X |
-| 필름 스트립 |  | X | X | X |
-| LiveBlog | X | X | X | X |
-| 맵 | X | X | X | X |
-| 미디어 월 | X | X | X | X |
-| 모자이크 | X | X | X | X |
-| 투표 |  | X | X | X |
-| 검토 |  | X | X | X |
-| 단일 카드 | X | X | X | X |
-| Storify 2 |  | X | X | X |
-| 트렌드 |  | X | X | X |
-| 업로드 버튼 |  | X | X | X |
+| Carousel |X |X |X |X |
+| Chat |X |X |X |X |
+| Comments |X |X |X |X |
+| Filmstrip |  |X |X |X |
+| LiveBlog |X |X |X |X |
+| Map |X |X |X |X |
+| Media Wall |X |X |X |X |
+| Mosaic |X |X |X |X |
+| Poll |  |X |X |X |
+| Reviews |  |X |X |X |
+| Single Card |X |X |X |X |
+| Storify 2 |  |X |X |X |
+| Trending |  |X |X |X |
+| Upload Button |  |X |X |X | -->
