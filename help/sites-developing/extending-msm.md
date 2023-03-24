@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 0caaa4b5de519567df4a527f62a2583abd7ed937
+source-git-commit: 7bed185be14938f1165d56f9b758961ae0f5c479
 workflow-type: tm+mt
-source-wordcount: '2593'
+source-wordcount: '2579'
 ht-degree: 2%
 
 ---
@@ -45,8 +45,8 @@ ht-degree: 2%
 
 다중 사이트 관리는 다음 패키지로 구성됩니다.
 
-* [com.day.cq.wcm.msm.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 기본 MSM API 개체는 다음과 같이 상호 작용합니다(참조: [사용된 용어](/help/sites-administering/msm.md#terms-used)):
 
@@ -105,8 +105,8 @@ ht-degree: 2%
 
 롤아웃 구성에 사용할 사용자 지정 동기화 작업을 만듭니다. 동기화 작업 만들기 [설치된 작업](/help/sites-administering/msm-sync.md#installed-synchronization-actions) 특정 애플리케이션 요구 사항을 충족하지 않습니다. 이렇게 하려면 두 클래스를 만듭니다.
 
-* 의 구현 [ `com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 작업을 수행하는 인터페이스입니다.
-* 를 구현하는 OSGI 구성 요소 [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 인터페이스 및 생성 `LiveAction` 클래스 이름을 지정합니다.
+* 의 구현 [ `com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 작업을 수행하는 인터페이스입니다.
+* 를 구현하는 OSGI 구성 요소 [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 인터페이스 및 생성 `LiveAction` 클래스 이름을 지정합니다.
 
 다음 `LiveActionFactory` 는 `LiveAction` 지정된 구성에 대한 클래스:
 
@@ -129,7 +129,7 @@ ht-degree: 2%
 
 예: `LiveAction` 블루프린트 작성자의 이름을 저장해야 합니다. 구성 노드의 속성은 정보를 저장하는 블루프린트 페이지의 속성 이름을 포함합니다. 런타임 시 `LiveAction` 구성에서 속성 이름을 검색한 다음 속성 값을 가져옵니다.
 
-의 매개 변수 ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` 메서드는 `Resource` 개체. 이 `Resource` 객체는 `cq:LiveSyncAction` 롤아웃 구성에서 이 라이브 작업에 대한 노드. 참조 [롤아웃 구성 만들기](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). 구성 노드를 사용할 때는 다음과 같이 조정해야 합니다 `ValueMap` 개체:
+의 매개 변수 [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 메서드는 `Resource` 개체. 이 `Resource` 객체는 `cq:LiveSyncAction` 롤아웃 구성에서 이 라이브 작업에 대한 노드. 참조 [롤아웃 구성 만들기](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). 구성 노드를 사용할 때는 다음과 같이 조정해야 합니다 `ValueMap` 개체:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -147,9 +147,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 다음 개체는 `execute` 의 방법 `LiveAction` 개체:
 
-* A [ `Resource`](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) Live Copy 소스를 나타내는 객체입니다.
+* A [ `Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) Live Copy 소스를 나타내는 객체입니다.
 * A `Resource` Live Copy 대상을 나타내는 개체입니다.
-* 다음 [ `LiveRelationship`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) live copy에 대한 객체입니다.
+* 다음 [ `LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) live copy에 대한 객체입니다.
 * 다음 `autoSave` 값은 `LiveAction` 저장소에 수행된 변경 사항을 저장해야 합니다.
 
 * 재설정 값은 롤아웃 재설정 모드를 나타냅니다.
@@ -166,7 +166,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->다음 `Resource` 인수는 수 있습니다. `null` 또는 `Resources` 적응하지 못하는 객체 `Node` 개체(예: [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 개체.
+>다음 `Resource` 인수는 수 있습니다. `null` 또는 `Resources` 적응하지 못하는 객체 `Node` 개체(예: [ `NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 개체.
 
 ## 새 롤아웃 구성 만들기 {#creating-a-new-rollout-configuration}
 
@@ -198,12 +198,12 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
    >[!NOTE]
    >
-   >/libs 경로에서 아무 것도 변경하면 안 됩니다.
-   >이는 다음 번에 인스턴스를 업그레이드할 때 /libs 컨텐츠를 덮어쓰게 되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있음).
+   >에서는 아무 것도 변경하지 마십시오 `/libs` 경로.
+   >왜냐하면 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰여지며, 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있습니다.
    >구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
    >
-   >* /apps 아래의 필요한 항목(즉, /libs에 있는 항목)을 다시 만듭니다
-   >* /apps 내에서 변경
+   >* 필요한 항목(즉, 가 존재함에 따라)을 다시 만듭니다 `/libs`) 아래의 `/apps`
+   >* 내에서 변경 `/apps`
 
 
 1. 이 아래에서 **만들기** 다음 속성을 갖는 노드:
