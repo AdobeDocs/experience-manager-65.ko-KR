@@ -1,8 +1,8 @@
 ---
 title: AEM Headful 및 Headless
-description: AEM 프로젝트는 headful과 headless 모델로 구현할 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
+description: AEM 프로젝트는 headful 및 headless 모델로 구현할 수 있지만 선택은 바이너리가 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 94%
@@ -11,7 +11,7 @@ ht-degree: 94%
 
 # AEM Headful 및 Headless {#headful-headless}
 
-Adobe Experience Manager 프로젝트는 headful과 headless 모델 모두에서 구현할 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다. 이 문서에서는 다양한 모델에 대한 개요를 제공하고 SPA 통합 수준에 대해 설명합니다.
+Adobe Experience Manager 프로젝트는 제목이 많은 모델과 헤드리스 모델 모두에서 구현할 수 있지만 선택할 수 있는 것은 바이너리가 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다. 이 문서에서는 다른 모델에 대한 개요를 제공하며 SPA 통합 수준을 설명합니다.
 
 ## 개요 {#overview}
 
@@ -21,7 +21,7 @@ AEM을 사용하여 간단히 콘텐츠를 관리할 수도 있고, 다른 플�
 
 그러나 양자택일이 될 필요는 없습니다. AEM은 프로젝트에 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 
-![AEM 구현 모델](headless/assets/aem-implementation-models.png)
+![AEM 구현 모델](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
 Headful 또는 전체 스택 모델에서 콘텐츠는 Java, HTL 등을 기반으로 하는 AEM 저장소와 AEM 구성 요소에서 관리합니다. 사용자 경험에 필요한 콘텐츠를 렌더링하는 데 사용됩니다. 이 모델에서는 콘텐츠 생성, 스타일 지정, 프레젠테이션과 게재가 모두 AEM에서 이뤄집니다.
 
@@ -54,18 +54,18 @@ SPA 통합은 AEM에서 네 가지 수준의 스펙트럼에 속합니다.
    * 콘텐츠는 두 개의 시스템에서 독립적으로 생성, 관리 및 게재됩니다.
 * **수준 1: 콘텐츠 조각 통합**
    * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 제한된 콘텐츠를 만들고 관리합니다.
-   * SPA는 AEM의 [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
+   * SPA는 AEM의 [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
    * 일부 콘텐츠는 AEM에서 관리되고, 일부 콘텐츠는 외부 시스템에서 관리됩니다.
    * 콘텐츠는 SPA에서만 볼 수 있습니다.
 * **수준 2: AEM에 SPA 임베드**
    * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 콘텐츠를 만들고 관리합니다.
-   * SPA는 AEM의 [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
+   * SPA는 AEM의 [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
    * 일부 콘텐츠는 AEM에서 관리되고, 일부 콘텐츠는 외부 시스템에서 관리됩니다.
    * 콘텐츠는 AEM 내 컨텍스트에서 볼 수 있습니다.
    * 제한된 콘텐츠는 AEM 내에서 편집할 수 있습니다.
 * **수준 3: AEM의 SPA 임베드 및 전체 활성화**
    * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 콘텐츠를 만들고 관리합니다.
-   * SPA는 AEM의 [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
+   * SPA는 AEM의 [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
    * 콘텐츠는 AEM 내 컨텍스트에서 볼 수 있습니다.
    * 대부분의 콘텐츠는 AEM 내에서 편집할 수 있습니다.
 

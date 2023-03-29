@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
-source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 74%
+source-wordcount: '723'
+ht-degree: 70%
 
 ---
 
@@ -96,11 +96,11 @@ ht-degree: 74%
    + [자산 편집기 확장](asseteditorx.md)
    + [[!DNL Assets] HTTP API](mac-api-assets.md)
    + [에서 컨텐츠 조각 지원 [!DNL Assets] HTTP API](assets-api-content-fragments.md)
-   + [콘텐츠 조각용 GraphQL API](content-fragments/graphql-api-content-fragments.md)
-   + [GraphiQL IDE 사용](content-fragments/graphiql-ide.md)
-   + [지속되는 쿼리](content-fragments/persisted-queries.md)
-   + [콘텐츠 조각의 원격 GraphQL 구문 인증](content-fragments/graphql-authentication-content-fragments.md)
-   + [콘텐츠 조각이 있는 GraphQL API - 샘플 콘텐츠 및 구문](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [콘텐츠 조각용 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html)
+   + [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html)
+   + [지속되는 쿼리](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html)
+   + [콘텐츠 조각의 원격 GraphQL 구문 인증](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
+   + [콘텐츠 조각이 있는 GraphQL API - 샘플 콘텐츠 및 구문](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/content-fragments-graphql-samples.html)
    + [[!DNL Assets] 프록시 개발](proxy.md)
 + 자산 관리 {#administer}
    + [지원되는 파일 형식](assets-formats.md)

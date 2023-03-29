@@ -8,10 +8,10 @@ breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 feature: Developing
 role: Developer
-source-git-commit: c5bc743f845281bdbad522053c0e57791921ffd2
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 78%
+source-wordcount: '1285'
+ht-degree: 80%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 78%
    + [벌크 편집기 개발](dev-bulk-editor.md)
    + [보고서 개발](dev-reports.md)
 + 구성 요소{#components}
-   + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+   + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
    + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
    + [구성 요소 개요](components.md)
    + [AEM 구성 요소 - 기본 사항](components-basics.md)
@@ -138,11 +138,12 @@ ht-degree: 78%
    + 배달 API{#delivery-api}
       + [자산 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
       + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
-      + [콘텐츠 조각 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
-      + [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphiql-ide.html)
-      + [지속되는 쿼리](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/persisted-queries.html)
-      + [콘텐츠 조각의 원격 AEM GraphQL 구문 인증](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)
-      + [콘텐츠 조각이 있는 AEM GraphQL API - 샘플 콘텐츠 및 구문](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
+      + [콘텐츠 조각 GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+      + [GraphQL 끝점 관리](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
+      + [GraphiQL IDE 사용](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
+      + [지속되는 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [콘텐츠 조각의 원격 AEM GraphQL 쿼리 인증](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
+      + [콘텐츠 조각이 있는 AEM GraphQL API - 샘플 콘텐츠 및 구문](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + 하이브리드 및 SPA AEM 개발{#spas}
    + [AEM을 통한 하이브리드 및 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [SPA 소개 및 워크스루](spa-walkthrough.md)

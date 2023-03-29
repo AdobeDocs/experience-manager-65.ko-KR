@@ -2,7 +2,7 @@
 title: Headless 애플리케이션 실행 방법
 description: AEM Headless Developer 여정의 이 부분에서 헤드리스 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 53%
@@ -104,7 +104,7 @@ AEM 헤드리스 프로젝트를 시작할 수 있도록 준비하려면 프로�
 
 ### Launch 전에 헤드리스 애플리케이션 보안 {#secure-and-scale-before-launch}
 
-1. 준비 [인증](/help/assets/content-fragments/graphql-authentication-content-fragments.md) GraphQL 요청
+1. 준비 [인증](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) GraphQL 요청
 
 ### 모델 구조와 GraphQL 출력 비교 {#structure-vs-output}
 

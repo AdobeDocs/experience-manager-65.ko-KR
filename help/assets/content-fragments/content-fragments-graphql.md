@@ -4,7 +4,7 @@ description: 헤드리스 컨텐츠 전달을 위해 GraphQL에서 AEM 컨텐츠
 feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 89%
@@ -26,7 +26,7 @@ AEM(Adobe Experience Manager)을 사용하면 AEM GraphQL API(표준 GraphQL을 
 >GraphQL은 현재 Adobe Experience Manager(AEM)의 두 가지(별도) 시나리오에서 사용됩니다.
 >
 >* [AEM Commerce는 GraphQL을 통해 상거래 플랫폼의 데이터를 사용합니다](/help/commerce/cif/integrating/magento.md).
->* [AEM 콘텐츠 조각은 AEM GraphQL API(표준 GraphQL 기반의 맞춤화된 구현)와 함께 작동하여 애플리케이션에서 사용할 구조화된 콘텐츠를 제공합니다](/help/assets/content-fragments/graphql-api-content-fragments.md).
+>* [AEM 콘텐츠 조각은 AEM GraphQL API(표준 GraphQL 기반의 맞춤화된 구현)와 함께 작동하여 애플리케이션에서 사용할 구조화된 콘텐츠를 제공합니다](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
 
 ## Headless CMS {#headless-cms}
@@ -55,7 +55,7 @@ GraphQL은
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-Adobe Experience Platform에 표준 GraphQL API의 사용자 지정 구현이 개발되었습니다. 자세한 내용은 [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)를 참조하십시오.
+Adobe Experience Platform에 표준 GraphQL API의 사용자 지정 구현이 개발되었습니다. 자세한 내용은 [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 참조하십시오.
 
 AEM GraphQL API 구현은 [GraphQL Java 라이브러리](https://graphql.org/code/#java)를 기반으로 합니다.
 
@@ -107,7 +107,7 @@ AEM GraphQL API 구현은 [GraphQL Java 라이브러리](https://graphql.org/cod
 
 ## AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
 
-AEM GraphQL API 사용에 대한 소개는 [AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)를 참조하십시오.
+AEM GraphQL API 사용에 대한 소개는 [AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)를 참조하십시오.
 
 ## 튜토리얼 - AEM Headless 및 GraphQL 시작하기
 

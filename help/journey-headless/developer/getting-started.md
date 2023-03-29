@@ -2,7 +2,7 @@
 title: AEM 헤드리스 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 40e81b63e28a75c769507654d7f1d75da82f0bd6
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 100%
@@ -287,7 +287,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) - 콘텐츠 조각에 대한 기술 설명서.
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서.
 * [GraphQL 기술 설명서](https://graphql.org) - GraphQL 정의 (외부 링크)
-* [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) - 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만드는 방법에 대한 기술 설명서
+* [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만드는 방법에 대한 기술 설명서
 * [Assets REST API](/help/assets/assets-api-content-fragments.md) - 콘텐츠 조각(및 기타 에셋)을 만들고 수정하는 방법에 대한 기술 설명서
-* [지속 쿼리](/help/assets/content-fragments/persisted-queries.md) - AEM의 지속 쿼리에 대한 기술 설명서
+* [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md) - AEM의 지속 쿼리에 대한 기술 설명서
 * [AEM의 Headful 및 Headless](/help/sites-developing/headful-headless.md) - AEM에서 사용 가능한 Headless 통합 수준에 대한 전체 설명

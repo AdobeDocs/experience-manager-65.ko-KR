@@ -1,15 +1,15 @@
 ---
-title: 에셋 폴더 헤드리스 빠른 시작 안내서 만들기
+title: 자산 폴더 헤드리스 빠른 시작 안내서 만들기
 description: AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되는 콘텐츠 조각의 구조를 정의합니다.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 87%
 
 ---
 
-# 에셋 폴더 헤드리스 빠른 시작 안내서 만들기 {#creating-an-assets-folder}
+# 자산 폴더 헤드리스 빠른 시작 안내서 만들기 {#creating-an-assets-folder}
 
 AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되는 콘텐츠 조각의 구조를 정의합니다. 그런 다음 콘텐츠 조각은 에셋 폴더에 저장됩니다.
 
@@ -25,7 +25,7 @@ AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되�
 
 관리자는 콘텐츠가 만들어질 때 콘텐츠를 구성하기 위해 가끔씩만 폴더를 만들면 됩니다. 이 시작 안내서에서는 폴더를 하나만 만들면 됩니다.
 
-1. AEM에 로그인하고 메인 메뉴에서 를 선택합니다. **탐색 -> 에셋 -> 파일**.
+1. AEM에 로그인하고 기본 메뉴에서 를 선택합니다 **탐색 -> 자산 -> 파일**.
 1. **만들기 -> 폴더**&#x200B;를 탭하거나 클릭합니다.
 1. 폴더의 **제목** 및 **이름**&#x200B;을 입력합니다.
    * **제목**&#x200B;은 설명적이어야 합니다.
@@ -33,16 +33,16 @@ AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되�
       * 제목을 기반으로 자동으로 생성되고 [AEM 명명 규칙](/help/sites-developing/naming-conventions.md)에 따라 조정됩니다.
       * 필요한 경우 조정할 수 있습니다.
 
-   ![폴더 만들기](../assets/assets-folder-create.png)
-1. 방금 만든 폴더를 선택한 다음 을 선택합니다. **속성** 도구 모음에서 (또는 를 사용하여) `p` [키보드 단축키.](/help/sites-authoring/keyboard-shortcuts.md))
+   ![폴더 만들기](assets/assets-folder-create.png)
+1. 방금 만든 폴더를 선택하고 을 선택합니다 **속성** 도구 모음에서(또는 `p` [키보드 단축키.](/help/sites-authoring/keyboard-shortcuts.md))
 1. **속성** 창에서 **Cloud Services** 탭을 선택합니다.
 1. **클라우드 구성**&#x200B;의 경우 [이전에 생성한 구성](create-configuration.md)을 선택합니다.
 
-   ![에셋 폴더 구성](../assets/assets-folder-configure.png)
+   ![에셋 폴더 구성](assets/assets-folder-configure.png)
 1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
 1. 확인 창에서 **확인**&#x200B;을 탭하거나 클릭합니다.
 
-   ![확인 창](../assets/assets-folder-confirmation.png)
+   ![확인 창](assets/assets-folder-confirmation.png)
 
 방금 만든 폴더 내에 추가 하위 폴더를 만들 수 있습니다. 하위 폴더는 상위 폴더의 **클라우드 구성**&#x200B;을 상속합니다. 그러나 다른 구성의 모델을 사용하려는 경우 재정의할 수 있습니다.
 

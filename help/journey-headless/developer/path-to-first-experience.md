@@ -2,7 +2,7 @@
 title: AEM Headless를 사용한 첫 번째 경험으로의 경로
 description: 이 AEM Headless 개발자 여정의 부분에서는 계획 고려 사항을 비롯해 AEM에서 첫 번째 Headless 경험을 구현하는 단계를 이해하고, 경로를 최대한 원활하게 만드는 모범 사례에 대해 알아보기도 합니다.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1982'
 ht-degree: 96%
@@ -150,4 +150,4 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [헤드리스 시작 안내서](/help/sites-developing/headless/introduction.md#getting-started) - AEM에 대해 이미 잘 알고 있는 사용자를 위한 AEM 헤드리스 기능에 대한 빠른 소개입니다.
 * [콘텐츠 조각 모델 만들기](/help/assets/content-fragments/content-fragments-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서
 * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments.md) - 콘텐츠 조각에 대한 기술 설명서
-* [GraphQL로 콘텐츠 쿼리](/help/assets/content-fragments/graphql-api-content-fragments.md) - GraphQL API에 대한 기술 설명서
+* [GraphQL로 콘텐츠 쿼리](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - GraphQL API에 대한 기술 설명서

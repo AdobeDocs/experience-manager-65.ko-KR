@@ -2,7 +2,7 @@
 title: AEM 6.5 Sites용 헤드리스 개발
 description: 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 AEM 6.5의 강력한 헤드리스 기능이 함께 작동하여 경험을 중앙에서 관리하고 여러 채널에서 제공할 수 있는 방법을 알아봅니다.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 38%
@@ -19,7 +19,7 @@ ht-degree: 38%
 
 Headless 구현은 전체 스택 및 하이브리드 솔루션의 기존 방식과 마찬가지로 페이지 및 구성 요소 관리를 생략하고 채널 중립적이고 재사용 가능한 콘텐츠 조각 생성 및 크로스 채널 게재에 중점을 둡니다. 웹 경험을 구현하기 위한 현대적이고 동적인 개발 패턴입니다.
 
-![AEM 구현 모델](assets/aem-implementation-models.png)
+![AEM 구현 모델](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
 ## Headful과 Headless 비교 {#headful-headless}
 
