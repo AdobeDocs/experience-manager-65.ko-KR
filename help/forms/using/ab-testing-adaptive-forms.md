@@ -10,15 +10,16 @@ topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: 5fdd76a907c444a90fdda76ffb314888fe92e839
+source-git-commit: ccbb6a33c2ee8029d2e82d9098c07de18af166ac
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1569'
 ht-degree: 2%
 
 ---
 
 # 적응형 양식에 대한 A/B 테스트 만들기 및 관리{#create-and-manage-a-b-test-for-adaptive-forms}
 
+|제외|[!BADGE 중단됨]{type=negative tooltip="이 기능은 이제 수명이 종료되었습니다"}
 <div class="preview"> 적응형 양식 기능에 대한 A/B 테스트 기능은 수명이 종료되었으며 더 이상 지원되지 않습니다. </div>
 
 ## 개요 {#overview-br}
