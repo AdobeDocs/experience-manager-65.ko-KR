@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
 workflow-type: tm+mt
-source-wordcount: '6065'
+source-wordcount: '6053'
 ht-degree: 2%
 
 ---
@@ -138,9 +138,9 @@ A **복합 상태 검사** 은 여러 개별 수표의 정보를 집계하는 �
 
 ### 복합 상태 검사 만들기 {#creating-a-composite-health-check}
 
-복합 상태 확인의 역할은 일련의 공통 기능을 공유하는 여러 개의 개별 상태 검사를 집계하는 것입니다. 예를 들어 보안 복합 상태 확인은 보안 관련 확인을 수행하는 모든 개별 상태 검사를 그룹화합니다. 복합 검사를 만드는 첫 번째 단계는 OSGI 구성을 추가하는 것입니다. 작업 대시보드에 표시하려면 간단한 검사를 위해 수행한 것과 동일한 방식으로 새 구성 노드를 추가해야 합니다.
+복합 상태 확인의 역할은 일련의 공통 기능을 공유하는 여러 개의 개별 상태 검사를 집계하는 것입니다. 예를 들어 보안 복합 상태 확인은 보안 관련 확인을 수행하는 모든 개별 상태 검사를 그룹화합니다. 복합 검사를 만드는 첫 번째 단계는 OSGI 구성을 추가하는 것입니다. 작업 대시보드에 표시하려면 단순 확인과 동일한 방법으로 새 구성 노드를 추가해야 합니다.
 
-1. OSGI 콘솔의 웹 구성 관리자로 이동합니다. 이렇게 하려면 `https://serveraddress:port/system/console/configMgr`
+1. OSGI 콘솔의 웹 구성 관리자로 이동합니다. 액세스 `https://serveraddress:port/system/console/configMgr`
 1. 이라는 항목을 검색합니다. **Apache Sling 복합 상태 검사**. 찾은 후에는 두 가지 구성을 이미 사용할 수 있습니다. 하나는 시스템 확인 이고 다른 하나는 보안 확인을 위한 것입니다.
 1. 구성 오른쪽의 &quot;+&quot; 단추를 눌러 구성을 만듭니다. 아래와 같이 새 창이 나타납니다.
 
@@ -153,7 +153,7 @@ A **복합 상태 검사** 은 여러 개별 수표의 정보를 집계하는 �
    * **이름(hc.name):** 복합 상태 확인의 이름입니다. 의미 있는 이름이 권장됩니다.
    * **태그(hc.tags):** 이 상태 확인의 태그입니다. 이 복합 상태 검사가 다른 복합 상태 확인의 일부(예: 상태 검사 계층)인 경우 이 복합체와 관련된 태그를 추가합니다.
    * **MBean 이름(hc.mbean.name):** 이 복합 상태 확인의 JMX MBean에 제공되는 Mbean의 이름입니다.
-   * **태그 필터링(filter.tags):** 복합 상태 확인과 관련된 속성입니다. 합성이 집계해야 하는 태그입니다. 복합 상태 확인은 이 컴포지션의 필터 태그와 일치하는 태그가 있는 모든 상태 검사를 그룹 아래에 집계합니다. 예를 들어 필터 태그가 있는 복합 상태 확인입니다 **테스트** 및 **check**&#x200B;는 모든 개별 및 복합 상태 검사를 집계하며 **테스트** 및 **check** 태그 속성에 태그( `hc.tags`).
+   * **태그 필터링(filter.tags):** 복합 상태 확인과 관련된 속성입니다. 이러한 태그는 복합체에 의해 집계됩니다. 복합 상태 확인은 이 컴포지션의 필터 태그와 일치하는 태그가 있는 모든 상태 검사를 그룹 아래에 집계합니다. 예를 들어 필터 태그가 있는 복합 상태 확인입니다 **테스트** 및 **check**&#x200B;는 모든 개별 및 복합 상태 검사를 집계하며 **테스트** 및 **check** 태그 속성에 태그( `hc.tags`).
 
    >[!NOTE]
    >
@@ -309,11 +309,11 @@ A **복합 상태 검사** 은 여러 개별 수표의 정보를 집계하는 �
   </tr>
   <tr>
    <td>코드 캐시 확인</td>
-   <td><p>Java 7에 있는 CodeCache 버그를 트리거할 수 있는 여러 JVM 조건을 확인하는 상태 검사입니다.</p>
+   <td><p>Java™ 7에 있는 CodeCache 버그를 트리거할 수 있는 몇 가지 JVM 조건을 확인하는 상태 확인입니다.</p>
     <ul>
-     <li>인스턴스가 Java 7에서 실행되고 코드 캐시 플러시가 활성화된 경우 경고 반환</li>
-     <li>인스턴스가 Java 7에서 실행 중이고 예약된 코드 캐시 크기가 최소 임계값보다 작은 경우 경고 반환(기본값은 90MB)</li>
-    </ul> <p>다음 <code>minimum.code.cache.size</code> 임계값은 구성할 수 있습니다. 버그에 대한 자세한 내용은 <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">이 페이지 확인</a>.</p> <p>이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>인스턴스가 Java™ 7에서 실행되고 코드 캐시 플러시가 활성화된 경우 경고 반환</li>
+     <li>인스턴스가 Java™ 7에서 실행 중이고 예약된 코드 캐시 크기가 최소 임계값보다 작은 경우 경고 반환(기본값은 90MB)</li>
+    </ul> <p>다음 <code>minimum.code.cache.size</code> 임계값은 구성할 수 있습니다. 버그에 대한 자세한 내용은 <a href="https://bugs.java.com/bugdatabase/"> 버그 ID를 검색한 후 8012547</a>.</p> <p>이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>리소스 검색 경로 오류</td>
@@ -630,7 +630,7 @@ Lucene 이진 파일 정리 작업을 사용하여 lucene 바이너리를 제거
 
 ## 사용자 지정 유지 관리 작업 {#custom-maintenance-tasks}
 
-사용자 지정 유지 관리 작업은 OSGi 서비스로 구현할 수 있습니다. 유지 관리 작업 인프라는 Apache Sling의 작업 처리를 기반으로 하므로 유지 관리 작업은 java 인터페이스를 구현해야 합니다 ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. 또한 다음과 같이 몇 가지 서비스 등록 속성을 유지 관리 작업으로 인식해야 합니다.
+사용자 지정 유지 관리 작업은 OSGi 서비스로 구현할 수 있습니다. 유지 관리 작업 인프라는 Apache Sling의 작업 처리를 기반으로 하므로 유지 관리 작업은 Java™ 인터페이스를 구현해야 합니다 ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. 또한 다음과 같이 몇 가지 서비스 등록 속성을 유지 관리 작업으로 인식해야 합니다.
 
 <table>
  <tbody>
@@ -767,7 +767,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
    <td>시스템</td>
    <td>
     <ul>
-     <li>운영 체제 및 OS 버전(예: Mac OS X)</li>
+     <li>운영 체제 및 OS 버전(예: macOS X)</li>
      <li>시스템 로드 평균(다음에서 검색됨) <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeusable</a></li>
      <li>디스크 공간(홈 디렉터리가 있는 파티션에서)</li>
      <li>최대 힙이 반환되는 경우 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
