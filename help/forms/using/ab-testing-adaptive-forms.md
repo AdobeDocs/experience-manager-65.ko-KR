@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # 적응형 양식에 대한 A/B 테스트 만들기 및 관리{#create-and-manage-a-b-test-for-adaptive-forms}
 
-|제외|[!BADGE 중단됨]{type=negative tooltip="이 기능은 이제 수명이 종료되었습니다"}
+|제외|[!BADGE 중단됨]{type=negative tooltip="이 기능은 이제 수명이 종료되었습니다"}|
 <div class="preview"> 적응형 양식 기능에 대한 A/B 테스트 기능은 수명이 종료되었으며 더 이상 지원되지 않습니다. </div>
 
 ## 개요 {#overview-br}
