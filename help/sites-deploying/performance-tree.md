@@ -1,8 +1,7 @@
 ---
 title: 성능 트리
 seo-title: Performance Tree
-description: AEM의 성능 문제를 해결하기 위해 수행해야 하는 단계에 대해 알아봅니다.
-seo-description: Learn about the steps that need to be taken in order to troubleshoot performance issues in AEM.
+description: AEM의 성능 문제를 해결하는 데 필요한 단계에 대해 알아봅니다.
 uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +9,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: e147605ff4d5c3d2403632285956559db235c084
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 5%
+source-wordcount: '1198'
+ht-degree: 9%
 
 ---
 
@@ -21,7 +20,7 @@ ht-degree: 5%
 
 ## 범위 {#scope}
 
-아래 다이어그램은 성능 문제를 해결하기 위해 수행해야 하는 단계에 대한 지침을 제공하기 위한 것입니다. 읽기 쉽도록 5개 섹션으로 나누어져 있습니다.
+다음 다이어그램은 성능 문제를 해결하는 단계에 대한 지침을 제공하기 위한 것입니다. 그것은 읽기 쉽도록 5개 부분으로 나누어져 있습니다.
 
 다이어그램의 각 단계는 설명서 리소스 또는 권장 사항에 연결됩니다.
 
@@ -29,7 +28,7 @@ ht-degree: 5%
 
 성능 문제가 주어진 페이지(AEM 콘솔 또는 웹 페이지)에서 관찰되어 일관되게 재현될 수 있다고 가정합니다. 테스트를 시작하기 전에, 성능을 테스트하거나 모니터링하는 방법을 알고 있어야 합니다.
 
-분석은 0단계에서 시작됩니다. 목표는 성능 문제를 담당하는 엔터티(디스패처, 외부 호스트 또는 AEM)을 확인하고 어떤 영역(서버 또는 네트워크)을 조사해야 하는지 결정하는 것입니다.
+분석은 0단계에서 시작됩니다. 목표는 성능 문제를 담당하는 엔티티(Dispatcher, 외부 호스트 또는 AEM)을 확인하고 어떤 영역(서버 또는 네트워크)을 조사해야 하는지 결정하는 것입니다.
 
 ### 섹션 1 {#section}
 
@@ -63,12 +62,12 @@ ht-degree: 5%
   <tr>
    <td><strong>0단계</strong></td>
    <td>요청 흐름 분석</td>
-   <td><p>브라우저에서 표준 HTTP 요청 분석을 사용하여 요청 흐름을 분석할 수 있습니다. Chrome에서 이 작업을 수행하는 방법에 대한 자세한 내용은 다음을 참조하십시오.<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
+   <td><p>브라우저에서 표준 HTTP 요청 분석을 사용하여 요청 흐름을 분석할 수 있습니다. Chrome에서 이 분석을 수행하는 방법에 대한 자세한 내용은 다음을 참조하십시오.<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>2단계</strong></td>
    <td>외부 호스트에서 요청이 오고 있습니까?</td>
-   <td>브라우저에서 표준 HTTP 요청 분석을 사용하여 요청 흐름을 분석할 수 있습니다. Chrome에서 이 작업을 수행하는 방법에 대한 위의 링크를 참조하십시오.<br /> </td>
+   <td>브라우저에서 표준 HTTP 요청 분석을 사용하여 요청 흐름을 분석할 수 있습니다. Chrome에서 이 분석을 수행하는 방법에 대해서는 위의 링크를 참조하십시오.<br /> </td>
   </tr>
   <tr>
    <td><strong>3단계</strong></td>
@@ -78,12 +77,12 @@ ht-degree: 5%
   <tr>
    <td><strong>4단계</strong></td>
    <td>Dispatcher에서 요청이 오고 있습니까?</td>
-   <td><p>을(를) 확인합니다. <a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">Dispatcher 디버깅 설명서</a> 요청이 제대로 캐시되는지 확인합니다.<br /> </p> </td>
+   <td><p>요청이 제대로 캐시되는지 확인하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#debugging">Dispatcher 디버깅 설명서</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>5단계</strong></td>
    <td>Dispatcher가 AEM을 통해 각 요청을 인증하려고 합니까?</td>
-   <td>디스패처가 전송하는지 확인 <code>HEAD</code> 캐시된 리소스를 제공하기 전에 AEM에 인증을 요청합니다. 찾아보시면 됩니다 <code>HEAD</code> AEM의 요청 <code>access.log</code>. 자세한 내용은 <a href="/help/sites-deploying/configure-logging.md">로깅</a>.<br /> </td>
+   <td>Dispatcher가 를 전송하는지 확인 <code>HEAD</code> 캐시된 리소스를 제공하기 전에 AEM에 인증을 요청합니다. 찾기 <code>HEAD</code> AEM의 요청 <code>access.log</code>. 자세한 내용은 <a href="/help/sites-deploying/configure-logging.md">로깅</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>6단계</strong></td>
@@ -98,7 +97,7 @@ ht-degree: 5%
   <tr>
    <td><strong>8단계</strong></td>
    <td>로컬 인스턴스에서 느림이 재현됩니까?</td>
-   <td><br /> <p>사용 <a href="/help/sites-developing/tough-day.md">Tough Day</a> 운영 인스턴스에서 "실제" 조건을 복제하기 위해 개발 환경에 적합하지 않은 경우 다른 네트워크 컨텍스트에서 프로덕션 인스턴스(또는 동일한 스테이징 인스턴스)를 테스트해야 합니다.<br /> </p> </td>
+   <td><br /> <p>사용 <a href="/help/sites-developing/tough-day.md">Tough Day</a> 운영 인스턴스에서 "실제" 조건을 복제하기 위해 개발 공간에 대해 이 시나리오가 현실적이지 않은 경우 다른 네트워크 컨텍스트에서 프로덕션 인스턴스(또는 동일한 스테이징 인스턴스)를 테스트해야 합니다.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>9단계</strong></td>
@@ -108,7 +107,7 @@ ht-degree: 5%
   <tr>
    <td><strong>10단계 및 29단계</strong></td>
    <td>네트워크 계층 조사</td>
-   <td><p>네트워크 계층에서 채도 및 지연 문제를 조사합니다.</p> <p>작성 계층의 경우 지연이 100밀리초를 넘지 않는 것이 좋습니다.</p> <p>성능 최적화 팁에 대한 자세한 내용은 <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">이 페이지</a>.</p> </td>
+   <td><p>네트워크 계층에서 채도 및 지연 문제를 조사합니다.</p> <p>작성 계층의 경우 지연이 100밀리초를 넘지 않는 것이 좋습니다.</p> <p>성능 최적화 팁에 대한 자세한 내용은 <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">이 페이지</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>11단계</strong></td>
@@ -133,7 +132,7 @@ ht-degree: 5%
   <tr>
    <td><strong>15단계</strong></td>
    <td>느린 요청 찾기</td>
-   <td><p>를 분석하여 느린 요청을 확인할 수 있습니다 <code>request.log</code> 또는 <code>rlog.jar</code>.</p> <p>rlog.jar 사용에 대한 자세한 내용은 이 페이지를 참조하십시오.</p> <p>자세한 내용은 <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">rlog.jar를 사용하여 오랜 기간 동안 요청을 찾습니다</a>.<br /> </p> <p> </p> </td>
+   <td><p>를 분석하여 느린 요청을 확인할 수 있습니다 <code>request.log</code> 또는 <code>rlog.jar</code>.</p> <p>rlog.jar 사용에 대한 자세한 내용은 이 페이지를 참조하십시오.</p> <p>자세한 내용은 <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">rlog.jar를 사용하여 장기간 동안 요청을 찾습니다.</a>.<br /> </p> <p> </p> </td>
   </tr>
   <tr>
    <td><strong>16단계</strong></td>
@@ -153,7 +152,7 @@ ht-degree: 5%
   <tr>
    <td><strong>19단계</strong></td>
    <td>100% CPU</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://helpx.adobe.com/experience-manager/6-3/sites-deploying/monitoring-and-maintaining.html#MonitoringPerformance</a></td>
+   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html</a></td>
   </tr>
   <tr>
    <td><strong>20단계</strong></td>
@@ -162,7 +161,7 @@ ht-degree: 5%
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">메모리 부족</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">내 애플리케이션에서 메모리 부족 오류가 발생합니다</a></li>
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html">Helpx에서 메모리 문제를 분석합니다.</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko">메모리 문제를 분석합니다.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -185,7 +184,7 @@ ht-degree: 5%
    <td>저장소 조정</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">성능 조정 팁</a></li>
+     <li><a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">성능 조정 팁</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">성능 구성</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">저장소 성능 조정</a></li>
     </ul> </td>
@@ -213,7 +212,7 @@ ht-degree: 5%
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">자산 동기화 서비스</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">여러 DAM 인스턴스</a></li>
-     <li>성능 조정 팁 문서 <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">여기</a> 및 <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">여기</a>.<br /> </li>
+     <li>성능 조정 팁 문서 <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">여기</a> 및 <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">여기</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -223,29 +222,29 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><strong>30단계</strong></td>
-   <td>디스패처를 더 가깝게 이동("지역"당 하나 추가)</td>
+   <td>Dispatcher를 더 가깝게 이동("지역"당 하나 추가)</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>31단계</strong></td>
    <td>Dispatcher 앞에 CDN 사용</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">CDN에 Dispatcher 사용</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn">CDN에 Dispatcher 사용</a><br /> </td>
   </tr>
   <tr>
    <td><strong>32단계</strong></td>
-   <td>디스패처 수준에서 세션 관리를 사용하여 AEM 서버 오프로드 사용</td>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">보안 세션 활성화</a></p> </td>
+   <td>AEM 서버의 로드를 줄이려면 Dispatcher 수준에서 세션 관리를 사용하십시오</td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement">보안 세션 활성화</a></p> </td>
   </tr>
   <tr>
    <td><strong>33단계</strong></td>
    <td>요청 캐시 가능</td>
    <td>
     <ol>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">일반 Dispatcher 구성</a></li>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Dispatcher 캐시 구성</a></li>
-    </ol> <p>캐시 비율 개선 방법 요청 캐시 가능(Dispatcher 우수 사례)</p> <p>또한 캐싱 구성을 최적화하려면 아래 설정을 고려하십시오<br /> </p>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko">일반 Dispatcher 구성</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">Dispatcher 캐시 구성</a></li>
+    </ol> <p>캐시 비율 개선 방법 요청 캐시 가능(Dispatcher 우수 사례)</p> <p>또한 아래 설정을 사용하여 캐싱 구성을 최적화합니다<br /> </p>
     <ol>
-     <li>GET이 아닌 HTTP 요청에 대해 no-cache 규칙 설정</li>
+     <li>GET이 아닌 HTTP 요청에 대해 캐시 없음 규칙을 설정합니다</li>
      <li>쿼리 문자열을 캐시할 수 없도록 구성</li>
      <li>확장이 없는 URL을 캐시하지 마십시오</li>
      <li>캐시 인증 헤더(Dispatcher 버전 4.1.10 이후 가능)</li>
@@ -254,20 +253,20 @@ ht-degree: 5%
   <tr>
    <td><strong>34단계</strong></td>
    <td>Dispatcher 버전 업그레이드</td>
-   <td><p>이 위치에서 최신 Dispatcher 버전을 다운로드할 수 있습니다.</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">팔로우 링크</a></p> </td>
+   <td><p>이 위치에서 최신 Dispatcher 버전을 다운로드할 수 있습니다.</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en">팔로우 링크</a></p> </td>
   </tr>
   <tr>
    <td><strong>35단계</strong></td>
    <td>Dispatcher 구성</td>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html">Dispatcher 구성</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR">Dispatcher 구성</a><br /> </td>
   </tr>
   <tr>
    <td><strong>36단계</strong></td>
    <td>캐시 무효화 확인</td>
    <td><br />
     <ul>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">작성자 계층의 캐시 무효화;</a></li>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">게시 계층의 캐시 무효화.</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-the-authoring-environment">작성자 계층의 캐시 무효화;</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance">게시 계층의 캐시 무효화.</a></li>
     </ul> </td>
   </tr>
   <tr>
@@ -278,7 +277,7 @@ ht-degree: 5%
   <tr>
    <td><strong>39단계</strong></td>
    <td>연결 오버헤드를 줄이려면 연결 미리 연결 사용</td>
-   <td>위에 표시된 Gem 세션을 참조하십시오. 또한 W3c에서 추가 설명서 사전 연결:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td>
+   <td>위의 Gem Session 을 참조하십시오. 또한 W3c에서 추가 설명서 사전 연결:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
   </tr>
   <tr>
    <td><strong>40단계 및 41단계</strong><br /> </td>
@@ -310,7 +309,7 @@ ht-degree: 5%
    <td>요청 수 감소</td>
    <td>
     <ol>
-     <li>리소스(이미지, CSS 스프라이트, JSON 등)를<br /> </li>
+     <li>리소스(이미지, CSS 스프라이트, JSON)를 연결합니다<br /> </li>
      <li>Clientlibs 포함:
       <ol>
        <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">클라이언트 라이브러리 폴더 만들기</a> - 요청을 최소화하기 위해 포함 사용 머리글을 참조하십시오</li>
