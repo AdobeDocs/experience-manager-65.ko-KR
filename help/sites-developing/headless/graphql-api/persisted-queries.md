@@ -1,10 +1,10 @@
 ---
 title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 방법을 사용하여 클라이언트 응용 프로그램에서 지속되는 쿼리를 요청할 수 있으며 이 응답을 Dispatcher 및 CDN 레이어에서 캐시할 수 있으므로 궁극적으로 클라이언트 응용 프로그램의 성능을 향상시킬 수 있습니다.
-source-git-commit: d87b226d846c6d144e8dfe0b06ec4c296edcad05
+source-git-commit: f4a3b7edc9187c1984afedb4e3b4c558354a4d84
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 73%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -271,6 +271,8 @@ query getAdventuresByActivity($activity: String!) {
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` |
+
+{style="table-layout:auto"}
 
 ### 작성자 인스턴스 {#author-instances}
 
