@@ -1,7 +1,7 @@
 ---
 title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 방법을 사용하여 클라이언트 응용 프로그램에서 지속되는 쿼리를 요청할 수 있으며 이 응답을 Dispatcher 및 CDN 레이어에서 캐시할 수 있으므로 궁극적으로 클라이언트 응용 프로그램의 성능을 향상시킬 수 있습니다.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: d87b226d846c6d144e8dfe0b06ec4c296edcad05
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 73%
@@ -266,7 +266,7 @@ query getAdventuresByActivity($activity: String!) {
 기본적으로 AEM은 TTL(Time To Live) 정의에 따라 캐시를 무효화합니다. 이러한 TTL은 다음 매개 변수로 정의할 수 있습니다. 이러한 매개 변수는 사용된 메커니즘에 따라 이름에 대한 변형을 사용하여 다양한 방법으로 액세스할 수 있습니다.
 
 | 캐시 유형 | [HTTP 헤더](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi 구성  |
-|--- |--- |--- |--- |--- |
+|--- |--- |--- |--- |
 | 브라우저 | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` |
