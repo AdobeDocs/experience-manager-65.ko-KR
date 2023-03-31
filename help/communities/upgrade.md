@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 2%
+source-wordcount: '624'
+ht-degree: 1%
 
 ---
 
@@ -33,12 +33,6 @@ MSRP로 구성된 배포에 새 커뮤니티 기능 팩을 설치할 때 다음�
 1. 설치 [최신 기능 팩](/help/communities/deploy-communities.md#latestfeaturepack).
 1. 설치 [최신 솔루션 구성 파일](/help/communities/msrp.md#upgrading).
 1. MSRP 다시 색인화 참조 섹션 [MSRP 재색인 도구](/help/communities/msrp.md#msrp-reindex-tool).
-
-### 사용 2.0 {#enablement}
-
-AEM 6.3부터 사용 기능은 더 이상 MySQL에 보고 정보를 저장하지 않습니다. MySQL 종속성은 SCORM 컨텐츠를 추적하기 위해서만 있습니다.
-
-연락처 [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html) 을 참조하십시오.
 
 ## AEM 6.0에서 업그레이드 {#upgrading-from-aem}
 

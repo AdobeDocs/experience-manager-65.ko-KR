@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 2%
+source-wordcount: '311'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +55,7 @@ When [UGC 스토리지](working-with-srp.md) 는 작성 및 게시 환경에서 
 
    사이트 콘솔은 커뮤니티 사이트 및 해당 사이트를 만들고 관리하기 위해 작성 환경에서 액세스할 수 있습니다 [그룹](groups.md).
 
-* [중재](moderation.md)
+* [관리](moderation.md)
 
    중재 콘솔은 UGC 및 작성자 환경에서 대량으로 중재합니다. 게시 환경에서 역할 할당 커뮤니티 구성원에게 유사한 벌크 중재 콘솔에 액세스할 수 있습니다. [커뮤니티 중재자](users.md#publishenvironmentusersandgroups) 하나 이상의 커뮤니티 사이트에 대한.
 
@@ -66,10 +66,6 @@ When [UGC 스토리지](working-with-srp.md) 는 작성 및 게시 환경에서 
 * [보고서](reports.md)
 
    보고서 콘솔은 커뮤니티 사이트에 있을 때 할당, 페이지 보기 및 게시된 컨텐츠(UGC)에 대한 보고서를 생성할 수 있는 곳입니다 [Adobe Analytics 활성화](sites-console.md#analytics). 콘솔은 작성 환경에서만 사용할 수 있습니다.
-
-* [리소스](resources.md)
-
-   리소스 콘솔은 [사용 관리자](enablement.md#communitymanagers) 자원 생성, 관리 및 자원 할당 [지원 커뮤니티 사이트](overview.md#enablement-community). 콘솔은 작성 환경에서만 사용할 수 있습니다.
 
 ## 도구 콘솔 {#tools-console}
 

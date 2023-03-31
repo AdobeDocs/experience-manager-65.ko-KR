@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 4a2ac67b-d2c9-4703-a1cb-d454786f9e6b
 docset: aem65
 exl-id: 14ecaef7-d9fc-45ea-8feb-16ad8946508e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 11%
+source-wordcount: '90'
+ht-degree: 2%
 
 ---
 
@@ -23,8 +23,6 @@ ht-degree: 11%
 AEM Communities을 사용하면 회사에서 사이트 템플릿 라이브러리에서 브랜딩된 전용 커뮤니티 경험을 만들 수 있습니다. 포럼, 그룹, 블로그, 파일 공유, 달력, 활동 피드 및 확장 사용자 프로필을 웹 사이트에 통합하여 프로필, 고객 및 회사 간의 상호 작용을 촉진할 수 있습니다.
 
 다음은 를 빠르게 설정하는 방법에 대한 자습서입니다 [참여 커뮤니티](/help/communities/overview.md#engagement-community) 를 사용하도록 선택할 수 있습니다.
-
-를 빠르게 설정하는 방법에 대한 자습서가 필요하면 [지원 커뮤니티](/help/communities/overview.md#enablement-community), 방문 [AEM Communities for Enablement 시작하기](/help/communities/getting-started-enablement.md).
 
 * [초기 설정](/help/communities/setup.md)
 

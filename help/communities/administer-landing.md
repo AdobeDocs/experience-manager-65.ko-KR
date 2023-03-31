@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 5%
+source-wordcount: '430'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,6 @@ ht-degree: 5%
 
 * [AEM Communities 개요](overview.md)
 * [AEM Communities 시작하기](getting-started.md)
-* [AEM Communities for Enablement 시작하기](getting-started-enablement.md)
 
 ## 관리 및 구성 항목 {#administration-and-configuration-topics}
 
@@ -39,9 +38,8 @@ ht-degree: 5%
    * [Sites](sites-console.md)
 
       * [그룹(하위 커뮤니티)](groups.md)
-   * [중재](moderation.md)
+   * [관리](moderation.md)
    * [구성원 및 그룹 관리](members.md)
-   * [사용 리소스](resources.md)
    * [보고서](reports.md)
 
 
@@ -77,12 +75,6 @@ AEM Communities의 주요 기능은 로그인한 사이트 방문자(구성원)�
 * [알림 을 참조하십시오](notifications.md): 구성원이 따르는 활동에 대한 알림을 받을 수 있는 기능.
 * [구독](subscriptions.md): 구성원이 외부 이메일을 사용하여 커뮤니티와 상호 작용할 수 있는 기능입니다.
 * [메시징](messaging.md): 내부 메시지를 사용하여 구성원이 커뮤니티와 상호 작용할 수 있는 기능.
-
-### 사용 기능 {#enablement-features}
-
-* [활성화 구성](enablement.md): 사용 기능을 올바르게 설정하는 데 필요한 정보입니다.
-* [Analytics 구성](analytics.md): communities용 Adobe Analytics 기능을 활성화하는 데 필요한 정보입니다.
-* [태깅 지원 리소스](tag-resources.md): 활성화 카탈로그를 만드는 데 필요합니다.
 
 ### 배포 {#deployment}
 
