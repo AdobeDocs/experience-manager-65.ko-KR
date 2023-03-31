@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '673'
 ht-degree: 2%
 
 ---
@@ -51,8 +51,6 @@ AEM Communities의 경우,
 최신 기능 팩이 설치되어 있는지 확인하려면 다음을 방문하십시오.
 
 * [최신 릴리스](deploy-communities.md#latest-releases)
-
-를 만드는 자습서용 [지원 커뮤니티 사이트](overview.md#enablement-community), 방문 [AEM Communities for Enablement 시작하기](getting-started-enablement.md).
 
 ## Analytics 구성 {#configure-analytics}
 
@@ -130,7 +128,7 @@ facebook 및 Twitter을 사용한 소셜 로그인 데모 버전을 사용하려
 
 ## 자습서 태그 만들기 {#create-tutorial-tags}
 
-의 태그 네임스페이스를 사용하여 참여 및 지원 자습서에 사용할 태그를 만듭니다. `Tutorial`.
+의 태그 네임스페이스를 사용하여 참여 자습서에 사용할 태그를 만듭니다. `Tutorial`.
 
 를 사용하십시오 [태깅 콘솔](../../help/sites-administering/tags.md#tagging-console) 다음 태그를 만들려면:
 

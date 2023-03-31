@@ -11,20 +11,16 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 4%
+source-wordcount: '1273'
+ht-degree: 1%
 
 ---
 
 # AEM Communities 개요 {#aem-communities-overview}
 
-AEM(Adobe Experience Manager) Communities는 성능 및 사이트 관리를 향상시키고 사이트 방문자가 중요한 커뮤니티 구성원으로 전환할 수 있도록 권장하는 On-Premise 커뮤니티 사이트를 빠르게 생성하는 기능을 제공합니다.
-
-<!--
-Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
--->
+Adobe Experience Manager (AEM) Communities는 성능 향상, 사이트 관리 개선 사항을 포함한 온-프레미스 커뮤니티 사이트를 빠르게 생성하고 사이트 방문자를 중요한 커뮤니티 구성원으로 전환할 수 있도록 권장하는 기능을 제공합니다.
 
 ## 커뮤니티 기능 {#communities-features}
 
@@ -40,7 +36,6 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 개발할 �
 * **파일 공유**,
 * **알림 을 참조하십시오** 및 **활동 스트림**,
 * 허용 **태그 지정** (@mention) User Generated Content에 등록된 다른 구성원에게 관심을 유도합니다.
-* 지원 **키보드 탐색** 지원 구성 요소(예: 카탈로그 및 코스 재생, 할당, 파일 라이브러리)에서 참조할 수 있습니다.
 
 커뮤니티 기능은 [AEM 데모 컴퓨터](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) GitHub.com 또는 새로운 We.Retail 참조 구현에서 공개적으로 제공됩니다.
 
@@ -98,7 +93,7 @@ SRP(Storage Resource Provider)를 통해 쉽게 액세스할 수 있습니다. S
 
 작성 환경에서 전역 탐색 콘솔은 [커뮤니티 콘솔](/help/communities/consoles.md):
 
-* [사이트](/help/communities/sites-console.md) 콘솔
+* [Sites](/help/communities/sites-console.md) 콘솔
 
    * 사이트 만들기
    * 사이트 편집
@@ -119,11 +114,6 @@ SRP(Storage Resource Provider)를 통해 쉽게 액세스할 수 있습니다. S
 * [보고서](/help/communities/reports.md) 콘솔
 
    * 할당, 게시물 및 보기에 대한 보고서를 생성할 수 있는 기능을 제공합니다.
-
-* [리소스](/help/communities/resources.md) 콘솔
-
-   * 지원 리소스 및 학습 경로를 만드는 기능을 제공합니다.
-   * 지원 리소스 및 학습 경로에 대한 보고서에 대한 액세스 권한을 제공합니다.
 
 전역 도구 콘솔에서는 다음 커뮤니티 도구에 액세스할 수 있습니다.
 
@@ -183,9 +173,7 @@ SRP(Storage Resource Provider)를 통해 쉽게 액세스할 수 있습니다. S
 
 다음 [커뮤니티 구성 요소 안내서](/help/communities/components-guide.md) 구성 요소의 대화형 탐색에 사용할 수 있습니다.
 
-## 커뮤니티 유형 {#types-of-communities}
-
-### 참여 커뮤니티 {#engagement-community}
+## 참여 커뮤니티 {#engagement-community}
 
 참여 커뮤니티는 고객이 커뮤니티의 구성원으로서 상호 작용할 수 있도록 알리고, 피드백을 요청하고, 참여하도록 하는 데 중점을 둔 커뮤니티 사이트입니다.
 
@@ -195,36 +183,19 @@ SRP(Storage Resource Provider)를 통해 쉽게 액세스할 수 있습니다. S
 * 메시지
 * 포럼
 * 댓글
-* 검토
+* 리뷰
 * 등급
 * 투표
 * 블로그
 * 그룹
 * 달력
 * 번역
-* 중재
+* 관리
 * 알림
 * 점수 및 배지
 * Analytics 보고
 
 새 참여 커뮤니티를 빠르게 만들 수 있는 편리한 기능을 경험해 보려면 를 방문하십시오. [AEM Communities 시작하기](/help/communities/getting-started.md).
-
-### 지원 커뮤니티 {#enablement-community}
-
-지원 커뮤니티는 온라인 학습을 위한 기능을 포함하는 커뮤니티 사이트입니다.
-
-지원 커뮤니티의 기능은 다음과 같습니다.
-
-* 의 모든 기능 [참여 커뮤니티](#engagement-community).
-* 컨텐츠 및 학습을 할당하는 기능. 구성원 및 구성원 그룹에 대한 리소스
-* 퀴즈 및 테스트와 같은 SCORM 콘텐츠를 지원합니다.
-* 지정 완료 추적.
-* 보고 및 분석에 대한 액세스 권한.
-* 포럼, 메시징, 댓글 및 등급을 통해 학습 리소스에 대한 대화를 수행할 수 있습니다.
-
-사용 커뮤니티는 [사용 추가 기능이 구성되었습니다](/help/communities/enablement.md): 프로덕션 환경에서 사용할 추가 라이센스가 필요합니다. 지원 커뮤니티 사이트에는 [지정 함수](#community-functions).
-
-새 지원 커뮤니티를 쉽게 만들려면 [AEM Communities for Enablement 시작하기](/help/communities/getting-started-enablement.md).
 
 ## AEM 데모 컴퓨터 {#aem-demo-machine}
 
