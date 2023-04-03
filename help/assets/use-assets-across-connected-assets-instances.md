@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
+source-git-commit: b10b7d957ef3a28b5eeb05383a7504c6516f7aa7
 workflow-type: tm+mt
-source-wordcount: '3877'
+source-wordcount: '3856'
 ht-degree: 17%
 
 ---
@@ -247,10 +247,6 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 [!DNL Sites] 작성자는 [!DNL Sites] 배포 후 다시 게시하여 [!DNL Experience Manager] 게시 인스턴스.
 
 [!DNL Experience Manager] 의 자산에 대해 만료된 상태 시각적 표시기를 표시합니다. `Remote Assets Content Finder` 사이트 작성자가 [!DNL Sites] 페이지. 에서 만료된 상태의 자산을 사용하는 경우 [!DNL Sites] 페이지에 자산이 표시되지 않습니다 [!DNL Experience Manager] 게시 인스턴스.
-
->[!NOTE]
->
->원격 DAM의 자산에 대한 업데이트를 [!DNL Sites] 원격 DAM과 [!DNL Sites] 배포 [!DNL Experience Manager].
 
 ## FAQ {#frequently-asked-questions}
 
