@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 74535a6ad78abf795f55f1ba4e1123b58802aefe
+source-git-commit: 64a15e970bc72114c14ed60e4bec3e694584eb16
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3546'
 ht-degree: 1%
 
 ---
@@ -89,7 +89,7 @@ Adobe Experience Manager은 다음 버전의 Java Virtual Machine을 사용하�
 >
 >프로덕션 환경의 안전과 보안을 보장하고 최신 Java 업데이트를 설치하려면 Java 공급업체의 보안 게시판을 추적하는 것이 좋습니다.
 
-| **플랫폼** | **지원 수준** | **링크** |
+| **Platform** | **지원 수준** | **링크** |
 |---|---|---|
 | Oracle Java SE 11 JDK - 64비트 | A: 지원됨 `[1]` | [다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | Oracle Java SE 10 JDK | Z: 지원되지 않음 `[1]` |
@@ -100,8 +100,8 @@ Adobe Experience Manager은 다음 버전의 Java Virtual Machine을 사용하�
 | 아줄 줄루 오픈JDK 11 - 64비트 | A: 지원됨 `[3]` |  |
 | 아줄 줄루 오픈JDK 8 - 64비트 | A: 지원됨 `[3]` |  |
 
-1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle에 의한 비 LTS 릴리스입니다(참조) [Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html)). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다. 공개 업데이트 종료 이후 LTS 릴리스의 모든 유지 관리 업데이트를 포함하여 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술을 사용하는 모든 AEM 고객을 위해 Adobe에서 직접 지원합니다. 자세한 내용은 [Adobe Experience Manager에 대한 Java 지원 정책](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) 추가 정보.
-
+1. Oracle이 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle에 의한 비 LTS 릴리스입니다(참조) [Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html)). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다. 공개 업데이트 종료 이후 LTS 릴리스의 모든 유지 관리 업데이트를 포함하여 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술을 사용하는 모든 AEM 고객을 위해 Adobe에서 직접 지원합니다. 자세한 내용은 [Adobe Experience Manager에 대한 Java 지원 정책](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) 추가 정보.
+   **중요 사항: Java 11은 최소 2026년 9월까지 계속 지원됩니다.**
 
 1. IBM JRE는 WebSphere Application Server에서만 지원됩니다.
 
@@ -112,7 +112,7 @@ Adobe Experience Manager은 다음 버전의 Java Virtual Machine을 사용하�
 
 Adobe Experience Manager 리포지토리를 배포하는 다양한 옵션이 있습니다. 지원되는 기술 및 스토리지 옵션에 대해서는 다음 목록을 참조하십시오.
 
-| **플랫폼** | **설명** | **지원 수준** |
+| **Platform** | **설명** | **지원 수준** |
 |---|---|---|
 | **TAR 파일이 있는 파일 시스템** `[1]` | 저장소 | A: 지원됨 |
 | **데이터 저장소가 있는 파일 시스템** `[1]` | 바이너리 | A: 지원됨 |
@@ -168,7 +168,7 @@ Adobe Experience Manager은 독립형 서버(quickstart JAR 파일)나 타사 �
 
 필요한 최소 서블릿 API 버전은 서블릿 3.1입니다.
 
-| 플랫폼 | 지원 수준 |
+| Platform | 지원 수준 |
 |---|---|
 | **빠른 시작 내장 서블릿 엔진(Jetty 9.4)** | A: 지원됨 |
 | Oracle WebLogic Server 12.2(12cR2) | Z: 지원되지 않음 |
@@ -186,7 +186,7 @@ Adobe Experience Manager은 독립형 서버(quickstart JAR 파일)나 타사 �
 
 Adobe Experience Manager은 프로덕션 환경에 대해 다음 서버 플랫폼에서 작동합니다.
 
-| **플랫폼** | **지원 수준** |
+| **Platform** | **지원 수준** |
 |---|---|
 | **Red Hat 배포 기반 Linux** | A: 지원됨 `[1]` `[3]` |
 | Debian 배포 incl 기반 Linux. 우분투 | A: 지원됨 `[1]` `[2]` |
@@ -232,7 +232,7 @@ Dispatcher는 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispat
 
 다음 웹 서버는 Dispatcher 버전 4.3.2에서 사용할 수 있습니다.
 
-| 플랫폼 | 지원 수준 |
+| Platform | 지원 수준 |
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A: 지원됨 |
 | Microsoft IIS 10(인터넷 정보 서버) | A: 지원됨 |
@@ -391,7 +391,7 @@ Linux에서 Dynamic Media을 사용하는 경우 다음 사전 요구 사항을 
 >
 >**SELinux 비활성화:** 이미지 제공이 SELinux를 켜면 작동하지 않습니다. 이 옵션은 기본적으로 활성화되어 있습니다. 이 문제를 해결하려면 **/etc/selinux/config** 파일 및 SELinux 값을 다음으로 변경합니다.
 >
->`SELINUX=enforcing` **끝** `SELINUX=disabled`
+>`SELINUX=enforcing` **to** `SELINUX=disabled`
 
 >[!NOTE]
 >
