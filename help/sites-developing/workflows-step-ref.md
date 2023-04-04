@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
 workflow-type: tm+mt
-source-wordcount: '3284'
+source-wordcount: '3246'
 ht-degree: 2%
 
 ---
@@ -53,13 +53,12 @@ ht-degree: 2%
 
 * **시간 초과**
 
-   단계가 &quot;시간 초과&quot;될 이후 기간입니다.
+   단계가 &quot;시간 초과&quot;인 이후 기간.
 다음 중 하나를 선택할 수 있습니다. **해제**, **즉시**, **1시간**, **6h**, **12시간**, **24시간**.
 
 * **시간 초과 핸들러**
 
-   단계가 시간 초과될 때 워크플로우를 제어하는 핸들러 예:
-   `Auto Advancer`
+   단계가 시간 초과될 때 워크플로우를 제어하는 처리기입니다. 예, `Auto Advancer`
 
 * **핸들러 진행**
 
@@ -72,18 +71,18 @@ ht-degree: 2%
 * **사용자에게 이메일로 알립니다**
 
    * 워크플로우가 단계에 도달하면 참가자에게 이메일을 보내어 참가자에게 알릴 수 있습니다.
-   * 활성화된 경우 속성으로 정의된 사용자에게 이메일이 전송됩니다 **사용자/그룹** 또는 그룹을 정의한 경우 해당 그룹의 각 구성원에게 제공할 수 있습니다.
+   * 활성화된 경우 속성으로 정의된 사용자에게 이메일이 전송됩니다 **사용자/그룹**&#x200B;또는 그룹을 정의한 경우 해당 그룹의 각 구성원에게 표시됩니다.
 
 * **사용자/그룹**
 
    * 드롭다운 선택 상자를 사용하여 사용자 또는 그룹을 탐색하고 선택할 수 있습니다.
-   * 특정 사용자에게 단계를 지정하는 경우 이 사용자만 단계에서 작업을 수행할 수 있습니다.
-   * 단계를 전체 그룹에 지정하는 경우, 워크플로우가 이 단계에 도달하면 이 그룹의 모든 사용자가 해당 작업을 수행합니다 **워크플로우 받은 편지함**.
+   * 특정 사용자에게 단계를 지정하는 경우 이 사용자만 해당 단계에서 작업할 수 있습니다.
+   * 단계를 전체 그룹에 지정한 경우 워크플로우가 이 단계에 도달하면 이 그룹의 모든 사용자가 해당 작업을 수행합니다 **워크플로우 받은 편지함**.
    * 자세한 내용은 [워크플로우에 참여](/help/sites-authoring/workflows-participating.md) 추가 정보.
 
 ## AND 분할 {#and-split}
 
-다음 **AND 분할** 워크플로우에서 분할을 만듭니다. 이 두 분기가 활성화됩니다. 필요에 따라 각 분기에 워크플로우 단계를 추가합니다. 이 단계를 통해 워크플로우에 여러 처리 경로를 도입할 수 있습니다. 예를 들어 특정 검토 단계를 동시에 수행하도록 허용하여 시간을 절약할 수 있습니다.
+다음 **AND 분할** 워크플로우에서 분할을 만듭니다. 이 두 분기가 활성화됩니다. 필요에 따라 각 분기에 워크플로우 단계를 추가합니다. 이 단계에서는 워크플로우에 여러 처리 경로를 도입할 수 있습니다. 예를 들어 특정 검토 단계를 동시에 수행하도록 허용하여 시간을 절약할 수 있습니다.
 
 ![wf-26](assets/wf-26.png)
 
@@ -142,12 +141,12 @@ ht-degree: 2%
 
 #### 루프 시뮬레이션 {#simulating-a-for-loop}
 
-for 루프를 시뮬레이션하려면 발생한 루프 반복 횟수 개수를 유지해야 합니다.
+&quot;for 루프&quot;를 시뮬레이션하려면 발생한 루프 반복 횟수 개수를 유지해야 합니다.
 
 * 개수는 일반적으로 워크플로우에서 작동하는 항목의 인덱스를 나타냅니다.
 * 개수는 루프의 종료 기준으로 평가됩니다.
 
-예를 들어 여러 JCR 노드에서 작업을 수행하는 워크플로우를 구현하려면 루프 카운터를 노드의 인덱스로 사용할 수 있습니다. 카운트를 유지하려면 `integer` 워크플로우 인스턴스의 데이터 맵에 있는 값. 의 스크립트 사용 **이동 단계** 카운트를 증가시키고 카운트를 종료 기준과 비교하려면 를 참조하십시오.
+예를 들어 여러 JCR 노드에서 작업을 수행하는 워크플로우를 구현하려면 루프 카운터를 노드의 인덱스로 사용할 수 있습니다. 카운트를 유지하려면 `integer` 워크플로우 인스턴스의 데이터 맵에 있는 값. 카운트를 증가시키고 카운트를 종료 기준과 비교하려면 **이동 단계**.
 
 ```
 function check(){
@@ -183,15 +182,15 @@ function check(){
 
 ![for 루프 시뮬레이션 조건](assets/variable_use_case_count1_new.png)
 
-다음 **변수 설정** 단계는 의 값을 반복적으로 증가시킵니다. **count** 변수에 값을 1씩 추가하여 값이 5가 될 때까지 실행되도록 합니다.
+다음 **변수 설정** 단계가 반복적으로 실행되며 값이 증가합니다. **count** 값이 5에 도달할 때까지 각 실행에서 1씩 변수입니다.
 
 ## OR 분할 {#or-split}
 
-다음 **또는 분할** 워크플로우에서 분할을 만들며 그 뒤에는 하나의 분기만 활성화됩니다. 이 단계를 통해 워크플로우에 조건부 처리 경로를 도입할 수 있습니다. 필요에 따라 각 분기에 워크플로우 단계를 추가합니다.
+다음 **또는 분할** 워크플로우에서 분할을 만들며, 그 뒤에는 하나의 분기만 활성화됩니다. 이 단계를 통해 워크플로우에 조건부 처리 경로를 도입할 수 있습니다. 필요에 따라 각 분기에 워크플로우 단계를 추가합니다.
 
 >[!NOTE]
 >
->OR 분할 생성에 대한 자세한 내용은 다음을 참조하십시오. [https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html)
+>자세한 내용은 [또는 분할 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=en#use-a-variable)
 
 ![OR 분할을 사용하여 분기](assets/variables_orsplit_new.png)
 
@@ -207,11 +206,11 @@ function check(){
    * **분기 (*x)***
 
       * **분기 추가:** 단계에 분기를 더 추가합니다.
-      * **라우팅 표현식 선택**: 활성 분기를 평가할 라우팅 표현식을 선택합니다. 가능한 값은 다음과 같습니다. 규칙 정의, 외부 스크립트 및 ECMA 스크립트.
+      * **라우팅 표현식 선택**: 활성 분기를 평가하려면 공정순서 표현식을 선택합니다. 가능한 값은 다음과 같습니다. 규칙 정의, 외부 스크립트 및 ECMA 스크립트.
       * **표현식을 추가하려면 클릭합니다**: 선택한 경우 활성 분기를 평가할 표현식을 추가합니다 **규칙 정의** 를 라우팅 표현식으로 사용합니다.
       * **스크립트 경로**: 선택한 경우 활성 분기를 평가하는 스크립트가 포함된 파일의 경로입니다 **외부 스크립트** 를 라우팅 표현식으로 사용합니다.
       * **스크립트**: 확인란을 선택하면 활성 분기를 평가할 스크립트를 추가합니다 **ECMA Script** 를 라우팅 표현식으로 사용합니다.
-      * **기본 경로**: 여러 분기의 경우 기본 분기 뒤에 옵니다. 하나의 분기만 기본값으로 지정할 수 있습니다.
+      * **기본 경로**: 여러 분기가 있는 경우 기본 분기가 뒤따릅니다. 하나의 분기만 기본값으로 지정할 수 있습니다.
 
    >[!NOTE]
    >
@@ -231,7 +230,7 @@ function check(){
 
 ### 참가자 단계 {#participant-step}
 
-A **참가자 단계** 특정 작업에 대한 소유권을 할당할 수 있습니다. 워크플로우는 사용자가 단계를 수동으로 인식하는 경우에만 진행됩니다. 다른 사람이 워크플로우에서 작업을 수행하도록 할 때 사용됩니다. 예를 들어, 검토 단계입니다.
+A **참가자 단계** 특정 작업에 대한 소유권을 할당할 수 있습니다. 워크플로우는 사용자가 단계를 수동으로 인식하는 경우에만 진행됩니다. 이 워크플로우는 누군가 워크플로우에 대해 행동하도록 할 때 사용됩니다. 예를 들어, 검토 단계입니다.
 
 직접 관련되지는 않지만 작업을 지정할 때 사용자 인증을 고려해야 합니다. 사용자는 워크플로우 페이로드인 페이지에 액세스할 수 있어야 합니다.
 
@@ -253,7 +252,7 @@ A **참가자 단계** 특정 작업에 대한 소유권을 할당할 수 있습
 
 >[!NOTE]
 >
->이메일 알림을 활성화하려면 일부 속성을 구성해야 합니다. 이메일 템플릿을 사용자 정의하거나 새 언어의 이메일 템플릿을 추가할 수도 있습니다. 자세한 내용은 [전자 메일 알림 구성](/help/sites-administering/notification.md#configuringemailnotification) AEM에서 이메일 알림을 구성하려면 다음을 수행하십시오.
+>일부 속성을 이메일 알림을 사용하도록 구성해야 합니다. 이메일 템플릿을 사용자 정의하거나 새 언어의 이메일 템플릿을 추가할 수도 있습니다. AEM에서 전자 메일 알림을 구성하려면 를 참조하십시오. [전자 메일 알림 구성](/help/sites-administering/notification.md#configuringemailnotification).
 
 ### 대화 상자 참가자 단계 {#dialog-participant-step}
 
@@ -278,7 +277,7 @@ A **참가자 단계** 특정 작업에 대한 소유권을 할당할 수 있습
 대화 상자를 만들려면 대화 상자를 만들어야 합니다.
 
 * 결과 데이터의 위치를 결정합니다 [페이로드에 저장](#dialog-participant-step-storing-data-in-the-payload).
-* [대화 상자를 정의합니다. 여기에는 데이터를 수집(및 저장하는 데 사용되는 필드를 정의하는 작업이 포함됩니다](#dialog-participant-step-dialog-definition).
+* [대화 상자를 정의합니다. 에는 데이터를 수집하고 저장하는 데 사용되는 필드를 정의하는 작업이 포함됩니다](#dialog-participant-step-dialog-definition).
 
 #### 대화 상자 참가자 단계 - 페이로드에 데이터 저장 {#dialog-participant-step-storing-data-in-the-payload}
 
@@ -290,14 +289,14 @@ A **참가자 단계** 특정 작업에 대한 소유권을 할당할 수 있습
       `./jcr:content/nodename`
 
    * 데이터는 `nodename` 페이로드 노드의 속성입니다. 노드에 해당 속성이 없으면 속성이 만들어집니다.
-   * 페이로드로 저장할 때 동일한 페이로드로 대화 상자를 계속 사용하면 속성 값을 덮어씁니다.
+   * 페이로드와 함께 저장될 때 페이로드가 동일한 대화 상자의 후속 사용은 속성 값을 덮어씁니다.
 
 * **작업 항목으로 데이터 저장**
 
    * 위젯 데이터를 작업 항목 메타데이터의 속성으로 저장하려면 이름 속성 값에 다음 형식을 사용하십시오.
       `nodename`
 
-   * 데이터는 `nodename` 작업 항목의 속성 `metadata`. 나중에 동일한 페이로드와 함께 대화 상자가 사용되는 경우 데이터가 유지됩니다.
+   * 데이터는 `nodename` 작업 항목의 속성 `metadata`. 나중에 동일한 페이로드에서 대화 상자를 사용하는 경우 데이터가 유지됩니다.
 
 #### 대화 상자 참가자 단계 - 대화 상자 정의 {#dialog-participant-step-dialog-definition}
 
@@ -342,7 +341,7 @@ A **참가자 단계** 특정 작업에 대한 소유권을 할당할 수 있습
 
 1. **예제 대화 상자 정의**
 
-   다음 XML 코드 조각은 `String` 값에서 `watchEmail` 페이로드 콘텐츠의 노드입니다. 제목 노드는 [텍스트 필드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) 구성 요소:
+   다음 XML 코드 조각은 `String` 값에서 `watchEmail` 페이로드 콘텐츠의 노드입니다. 제목 노드는 [텍스트 필드](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) 구성 요소:
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -370,7 +369,7 @@ A **참가자 단계** 특정 작업에 대한 소유권을 할당할 수 있습
    </cq:dialog>
    ```
 
-   이 예는 터치 지원 UI의 경우 다음과 같은 대화 상자가 표시됩니다.
+   터치 활성화 UI에서 이 예는 다음과 같은 대화 상자가 표시됩니다.
 
    ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -411,10 +410,10 @@ A **참가자 단계** 특정 작업에 대한 소유권을 할당할 수 있습
 
    >[!CAUTION]
    >
-   >사용자 ***반드시*** 에서 아무것도 변경하지 않음 `/libs` 경로.
+   >에서 아무 것도 변경하지 마십시오 `/libs` 경로.
    >
    >
-   >왜냐하면 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰여지며, 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있습니다.
+   >이유는 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰여지며, 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있습니다.
 
    이 스크립트는 워크플로우 개시자를 참가자로 선택합니다.
 
@@ -430,19 +429,19 @@ A **참가자 단계** 특정 작업에 대한 소유권을 할당할 수 있습
 
 * **OSGi 서비스**
 
-   서비스는 [com.day.cq.workflow.exec.ParticipantStepSelector](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 인터페이스. 인터페이스는 다음 멤버를 정의합니다.
+   서비스는 [com.day.cq.workflow.exec.ParticipantStepSelector](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 인터페이스. 인터페이스는 다음 멤버를 정의합니다.
 
    * `SERVICE_PROPERTY_LABEL` 필드: 이 필드를 사용하여 참가자 선택기의 이름을 지정합니다. 이 이름은 사용 가능한 참가자 선택기 목록에 나타납니다 **동적 참가자 단계** 속성을 사용합니다.
 
    * `getParticipant` 메서드: 동적으로 확인된 주체 ID를 `String` 값.
    >[!CAUTION]
    >
-   >다음 `getParticipant` 메서드는 동적으로 확인된 주체 id를 반환합니다. 그룹 ID 또는 사용자 ID일 수 있습니다.
+   >다음 `getParticipant` 메서드는 동적으로 확인된 주체 id를 반환합니다. 이 ID는 그룹 ID 또는 사용자 ID일 수 있습니다.
    >
    >
-   >그러나 그룹 ID는 **참가자 단계**&#x200B;를 입력하면 참가자 목록이 반환됩니다. 대상 **동적 참가자 단계** 빈 목록이 반환되며 위임에 사용할 수 없습니다.
+   >그러나 그룹 ID는 **참가자 단계**&#x200B;를 입력하면 참가자 목록이 반환됩니다. 대상 **동적 참가자 단계**&#x200B;를 입력하면 빈 목록이 반환되고 위임에는 사용할 수 없습니다.
 
-   구현을 사용 가능하게 하려면 **동적 참가자 단계** 구성 요소를 사용하여 Java 클래스를 서비스를 내보내는 OSGi 번들에 추가하고, 번들을 AEM 서버에 배포합니다.
+   구현을 사용 가능하게 하려면 **동적 참가자 단계** 구성 요소를 사용하여 Java™ 클래스를 서비스를 내보내는 OSGi 번들에 추가하고 해당 번들을 AEM 서버에 배포합니다.
 
    >[!NOTE]
    >
@@ -450,7 +449,7 @@ A **참가자 단계** 특정 작업에 대한 소유권을 할당할 수 있습
 
 #### 동적 참가자 단계 - 예제 참가자 선택기 서비스 {#dynamic-participant-step-example-participant-chooser-service}
 
-다음 Java 클래스는 `ParticipantStepChooser` 인터페이스. 클래스는 워크플로우를 시작한 참가자의 이름을 반환합니다. 코드는 샘플 스크립트(`initiator-participant-chooser.ecma`)에서 사용할 수 있습니다.
+다음 Java™ 클래스는 `ParticipantStepChooser` 인터페이스. 클래스는 워크플로우를 시작한 참가자의 이름을 반환합니다. 코드는 샘플 스크립트(`initiator-participant-chooser.ecma`)에서 사용할 수 있습니다.
 
 다음 `@Property` 주석을 사용하여 `SERVICE_PROPERTY_LABEL` 필드 대상 `Workflow Initiator Participant Chooser`.
 
@@ -583,14 +582,14 @@ A **프로세스 단계** 는 ECMAScript를 실행하거나 OSGi 서비스를 �
 
       * 표준 ECMAScript 및 OSGi 서비스에서는 [프로세스 단계를 위한 기본 프로세스](/help/sites-developing/workflows-process-ref.md).
       * 프로세스 단계를 위한 ECMAScript 생성 [ECMAScript를 사용하여 프로세스 단계 구현](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
-      * 프로세스 단계를 위한 OSGi 서비스 만들기는 다음을 참조하십시오 [Java 클래스를 사용한 프로세스 단계 구현](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+      * 프로세스 단계를 위한 OSGi 서비스 만들기는 다음을 참조하십시오 [Java™ 클래스를 사용한 프로세스 단계 구현](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
    * **핸들러 고급**: 실행 후 워크플로우를 다음 단계로 자동으로 이동하려면 이 옵션을 선택합니다. 선택하지 않으면 구현 스크립트가 워크플로우 선진화를 처리해야 합니다.
    * **인수**: 프로세스에 전달할 인수.
 
 
 ## 변수 설정 {#set-variable}
 
-변수 설정 단계를 사용하면 변수의 값을 설정하고 값이 설정되는 순서를 정의할 수 있습니다. 변수는 변수 매핑이 변수 설정 단계에서 나열된 순서로 설정됩니다.
+변수 설정 단계를 사용하면 변수의 값을 설정하고 값이 설정되는 순서를 정의할 수 있습니다. 변수는 변수 매핑이 변수 설정 단계에서 나열되는 순서로 설정됩니다.
 
 ![매핑을 추가하여 변수 설정](assets/set_variable_addmappingnew.png)
 
@@ -602,7 +601,7 @@ A **프로세스 단계** 는 ECMAScript를 실행하거나 OSGi 서비스를 �
 * **매핑**
 
    * **변수 선택:** 이 옵션을 사용하여 값을 설정할 변수를 선택합니다.
-   * **매핑 모드 선택:** 매핑 모드를 선택하여 변수에 대한 값을 설정합니다. 변수의 데이터 유형에 따라 다음 옵션을 사용하여 변수의 값을 설정할 수 있습니다.
+   * **매핑 모드 선택:**  변수에 대한 값을 설정하려면 매핑 모드를 선택합니다. 변수의 데이터 유형에 따라 다음 옵션을 사용하여 변수의 값을 설정할 수 있습니다.
 
       * **리터럴:** 지정할 정확한 값을 알고 있는 경우 옵션을 사용합니다.
       * **표현식:** 표현식을 기반으로 사용할 값이 계산되는 경우 옵션을 사용합니다. 표현식은 제공된 표현식 편집기에서 만들어집니다.
@@ -610,5 +609,5 @@ A **프로세스 단계** 는 ECMAScript를 실행하거나 OSGi 서비스를 �
       * **XPATH:** XML 유형 변수에서 값을 검색하려면 옵션을 사용합니다.
       * **페이로드에 대해:** 페이로드를 기준으로 하는 경로에서 변수에 저장할 값을 사용할 수 있는 경우 옵션을 사용합니다.
       * **절대 경로:** 절대 경로에서 변수에 저장할 값을 사용할 수 있는 경우 옵션을 사용합니다.
-   * **값 지정:** 변수에 매핑할 값을 지정합니다. 이 필드에서 지정하는 값은 매핑 모드에 따라 다릅니다.
+   * **값 지정:** 변수에 매핑하려면 값을 지정합니다. 이 필드에서 지정하는 값은 매핑 모드에 따라 다릅니다.
    * **매핑 추가:** 이 옵션을 사용하여 변수에 대한 값을 설정할 매핑을 더 추가합니다.
