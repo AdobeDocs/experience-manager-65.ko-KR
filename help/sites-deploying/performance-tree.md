@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1178'
 ht-degree: 9%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 9%
   <tr>
    <td><strong>0단계</strong></td>
    <td>요청 흐름 분석</td>
-   <td><p>브라우저에서 표준 HTTP 요청 분석을 사용하여 요청 흐름을 분석할 수 있습니다. Chrome에서 이 분석을 수행하는 방법에 대한 자세한 내용은 다음을 참조하십시오.<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
+   <td><p>브라우저에서 표준 HTTP 요청 분석을 사용하여 요청 흐름을 분석할 수 있습니다. Chrome에서 이 분석을 수행하는 방법에 대한 자세한 내용은 다음을 참조하십시오.<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>2단계</strong></td>
@@ -97,7 +97,7 @@ ht-degree: 9%
   <tr>
    <td><strong>8단계</strong></td>
    <td>로컬 인스턴스에서 느림이 재현됩니까?</td>
-   <td><br /> <p>사용 <a href="/help/sites-developing/tough-day.md">Tough Day</a> 운영 인스턴스에서 "실제" 조건을 복제하기 위해 개발 공간에 대해 이 시나리오가 현실적이지 않은 경우 다른 네트워크 컨텍스트에서 프로덕션 인스턴스(또는 동일한 스테이징 인스턴스)를 테스트해야 합니다.<br /> </p> </td>
+   <td><br /> <p>사용 <a href="/help/sites-developing/tough-day.md">Tough Day</a> 운영 인스턴스에서 "실제" 조건을 복제하려면 개발 공간에 대해 이 시나리오가 현실적이지 않은 경우 다른 네트워크 컨텍스트에서 프로덕션 인스턴스(또는 동일한 스테이징 인스턴스)를 테스트해야 합니다.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>9단계</strong></td>
@@ -212,7 +212,7 @@ ht-degree: 9%
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">자산 동기화 서비스</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">여러 DAM 인스턴스</a></li>
-     <li>성능 조정 팁 문서 <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">여기</a> 및 <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">여기</a>.<br /> </li>
+     <li>성능 조정 팁 문서 <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">여기</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -277,7 +277,7 @@ ht-degree: 9%
   <tr>
    <td><strong>39단계</strong></td>
    <td>연결 오버헤드를 줄이려면 연결 미리 연결 사용</td>
-   <td>위의 Gem Session 을 참조하십시오. 또한 W3c에서 추가 설명서 사전 연결:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
+   <td>위의 Gem Session 을 참조하십시오. 또한 W3c에 대한 추가 사전 연결 설명서입니다.<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
   </tr>
   <tr>
    <td><strong>40단계 및 41단계</strong><br /> </td>

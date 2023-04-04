@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2913'
 ht-degree: 6%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 6%
    <td><p><strong>색인 생성</strong></p> </td>
    <td><p><strong>웹 서버</strong></p> </td>
    <td><p><strong>브라우저</strong></p> </td>
-   <td><p><strong>Marketing Cloud</strong></p> </td>
+   <td><p><strong>Experience Cloud</strong></p> </td>
   </tr>
   <tr>
    <td><p>Sites</p> </td>
@@ -62,9 +62,9 @@ ht-degree: 6%
   <tr>
    <td><p>Assets</p> </td>
    <td><p>Publish-HA</p> </td>
-   <td><p>Solaris</p> </td>
+   <td><p>Solaris™</p> </td>
    <td><p>WebLogic</p> </td>
-   <td><p>IBM</p> </td>
+   <td><p>IBM®</p> </td>
    <td><p>SAML</p> </td>
    <td><p>MongoDB</p> </td>
    <td><p>파일</p> </td>
@@ -76,8 +76,8 @@ ht-degree: 6%
   <tr>
    <td><p>커뮤니티</p> </td>
    <td><p>Author-CS</p> </td>
-   <td><p>빨간색 모자</p> </td>
-   <td><p>WebSphere</p> </td>
+   <td><p>빨간색 모자®</p> </td>
+   <td><p>WebSphere®</p> </td>
    <td><p>HP</p> </td>
    <td><p>Oauth</p> </td>
    <td><p>RDB/Oracle</p> </td>
@@ -104,8 +104,8 @@ ht-degree: 6%
   <tr>
    <td><p>모바일</p> </td>
    <td><p>Author-Cluster</p> </td>
-   <td><p>IBM AIX</p> </td>
-   <td><p>JBoss</p> </td>
+   <td><p>IBM® AIX®</p> </td>
+   <td><p>JBoss®</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p>RDB/MySQL</p> </td>
@@ -118,7 +118,7 @@ ht-degree: 6%
   <tr>
    <td><p>다중 사이트</p> </td>
    <td><p>ASRP</p> </td>
-   <td><p>SUSE</p> </td>
+   <td><p>SUSE®</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -264,13 +264,13 @@ ht-degree: 6%
 
 ## 성능 지침을 사용해야 하는 경우 {#when-to-use-the-performance-guidelines}
 
-다음과 같은 경우에는 성능 지침을 사용해야 합니다.
+다음 상황에서 성능 지침을 사용하십시오.
 
-* **최초 배포**: 처음으로 AEM Sites 또는 자산을 배포하려고 할 때 마이크로 커널, 노드 저장소 및 데이터 저장소를 구성할 때 사용할 수 있는 옵션을 이해하는 것이 중요합니다(기본 설정과 비교). 예를 들어 TarMK용 데이터 저장소의 기본 설정을 파일 데이터 저장소로 변경하는 경우가 있습니다.
+* **최초 배포**: AEM Sites 또는 자산을 처음으로 배포하려는 경우 사용 가능한 옵션을 이해하는 것이 중요합니다. 특히 마이크로 커널, 노드 저장소 및 데이터 저장소를 구성할 때(기본 설정과 비교) 예를 들어 TarMK용 데이터 저장소의 기본 설정을 파일 데이터 저장소로 변경하는 경우가 있습니다.
 * **새 버전으로 업그레이드**: 새 버전으로 업그레이드할 때는 실행 중인 환경과 비교하여 성능 차이를 이해하는 것이 중요합니다. 예를 들어, AEM 6.1에서 6.2로 업그레이드 하거나 AEM 6.0 CRX2에서 6.2 OAK로 업그레이드
-* **응답 시간이 느립니다.**: 선택한 Nodestore 아키텍처가 요구 사항을 충족하지 않는 경우 다른 토폴로지 옵션과 비교하여 성능 차이를 이해하는 것이 중요합니다. 예를 들어 MongoMK 대신 TarMK를 배포하거나 Amazon S3 또는 Microsoft Azure 데이터 저장소 대신 파일 데이터 저장소를 사용하는 경우가 있습니다.
-* **추가 작성자**: 권장 TarMK 토폴로지가 성능 요구 사항을 충족하지 않고 작성자 노드를 업사이징하면 사용 가능한 최대 용량이 되면 3개 이상의 작성자 노드에서 MongoMK를 사용하는 것과 비교하여 성능 차이점을 이해하는 것이 중요합니다. 예를 들어 TarMK 대신 MongoMK를 배포합니다.
-* **추가 콘텐츠**: 권장 데이터 저장소 아키텍처가 요구 사항을 충족하지 않는 경우 다른 데이터 저장소 옵션과 비교하여 성능 차이를 이해하는 것이 중요합니다. 예: 파일 데이터 저장소 대신 Amazon S3 또는 Microsoft Azure 데이터 저장소 사용.
+* **응답 시간이 느립니다.**: 선택한 Nodestore 아키텍처가 요구 사항을 충족하지 않는 경우 다른 토폴로지 옵션과 비교하여 성능 차이를 이해하는 것이 중요합니다. 예를 들어 MongoMK 대신 TarMK를 배포하거나 Amazon S3 또는 Microsoft® Azure 데이터 저장소 대신 파일 데이터 저장소를 사용하는 경우가 있습니다.
+* **추가 작성자**: 권장 TarMK 토폴로지가 성능 요구 사항을 충족하지 않고 작성자 노드를 업사이징하면 사용 가능한 최대 용량이 되면 성능 차이점을 파악합니다. 3개 이상의 작성자 노드에서 MongoMK를 사용하는 것과 비교합니다. 예를 들어 TarMK 대신 MongoMK를 배포합니다.
+* **추가 콘텐츠**: 권장 데이터 저장소 아키텍처가 요구 사항을 충족하지 않는 경우 다른 데이터 저장소 옵션과 비교하여 성능 차이를 이해하는 것이 중요합니다. 예: 파일 데이터 저장소 대신 Amazon S3 또는 Microsoft® Azure 데이터 저장소 사용.
 
 ## 소개 {#introduction}
 
@@ -292,7 +292,7 @@ AEM 배포에는 세 가지 중요한 구성 요소가 있습니다. 다음 **�
 
 ### 마이크로 커널들 {#micro-kernels}
 
-Micro Kernels는 AEM에서 지속성 관리자 역할을 합니다. AEM에 사용되는 세 가지 유형의 마이크로 커널이 있습니다. TarMK, MongoDB 및 관계형 데이터베이스(제한된 지원 아래). 고려하고 있는 인스턴스의 목적 및 배포 유형에 따라 본인의 요구에 맞는 것을 하나 선택합니다. 마이크로 커널에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md) 페이지.
+Micro Kernels는 AEM에서 지속성 관리자 역할을 합니다. AEM에 사용되는 세 가지 유형의 마이크로 커널이 있습니다. TarMK, MongoDB 및 관계형 데이터베이스(제한된 지원 아래). 필요에 맞게 하나를 선택하는 것은 인스턴스의 목적과 고려하고 있는 배포 유형에 따라 다릅니다. 마이크로 커널에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md) 페이지.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -306,37 +306,37 @@ AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 
 
 >[!CAUTION]
 >
->관계형 데이터베이스 마이크로 커널은 제한된 지원 하에 있습니다. 연락처 [고객 지원 Adobe](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html) 이러한 유형의 마이크로 커널을 사용하기 전에
+>관계형 데이터베이스 마이크로 커널은 제한된 지원 하에 있습니다. 연락처 [고객 지원 Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) 이러한 유형의 마이크로 커널을 사용하기 전에
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
 ### 데이터 저장소 {#data-store}
 
-많은 바이너리를 처리할 때 성능을 최대화하기 위해 기본 노드 저장소 대신 외부 데이터 저장소를 사용하는 것이 좋습니다. 예를 들어 프로젝트에 많은 미디어 자산이 필요한 경우 파일 또는 Azure/S3 데이터 저장소 아래에 저장하면 MongoDB에 직접 저장하는 것보다 더 빠르게 미디어 자산에 액세스할 수 있습니다.
+많은 바이너리를 처리할 때는 성능을 최대화하기 위해 기본 노드 저장소 대신 외부 데이터 저장소를 사용하는 것이 좋습니다. 예를 들어 프로젝트에 많은 미디어 자산이 필요한 경우 파일 또는 Azure/S3 데이터 저장소 아래에 저장하면 MongoDB에 직접 저장하는 것보다 빠르게 미디어 자산에 액세스할 수 있습니다.
 
 사용 가능한 구성 옵션에 대한 자세한 내용은 [노드 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md).
 
 >[!NOTE]
 >
->Adobe은 Adobe Managed Services를 사용하여 AEM을 Azure에 배포하거나 Amazon Web Services(AWS)에 배포하는 옵션을 선택할 것을 권장합니다. 이 경우 고객은 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포하고 운영하는 경험과 기술을 갖춘 팀으로부터 혜택을 받을 수 있습니다. 다음을 확인하십시오 [Adobe Managed Services에 대한 추가 설명서](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+>Adobe은 Adobe Managed Services를 사용하여 Azure 또는 Amazon Web Services(AWS)에서 AEM을 배포하는 옵션을 선택할 것을 권장합니다. 고객은 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포 및 운영하는 경험과 기술을 갖춘 팀으로부터 혜택을 받습니다. 자세한 내용은 [Adobe Managed Services에 대한 추가 설명서](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 >
->Adobe Managed Services의 외부에서 Azure 또는 AWS에 AEM을 배포하는 방법에 대한 권장 사항을 제공하려면 클라우드 제공업체 또는 선택한 클라우드 환경에서 AEM을 배포하도록 지원하는 Adobe 파트너 중 하나와 직접 작업하는 것이 좋습니다. 선택한 클라우드 제공업체 또는 파트너는 특정 성능, 로드, 확장성 및 보안 요구 사항을 충족하기 위해 지원할 아키텍처의 크기 조정 사양, 디자인 및 구현을 책임집니다.
+>Adobe Managed Services 외부의 Azure 또는 AWS에서 AEM을 배포하는 방법에 대한 권장 사항을 보려면 클라우드 공급자와 직접 작업하는 것이 좋습니다. 또는 원하는 클라우드 환경에서 AEM 배포를 지원하는 Adobe 파트너 중 하나와 작업하십시오. 선택한 클라우드 제공업체 또는 파트너는 특정 성능, 로드, 확장성 및 보안 요구 사항을 충족하기 위해 지원하는 아키텍처의 크기 조정 사양, 디자인 및 구현을 담당합니다.
+>다음을 참조하십시오. [기술 요구 사항](/help/sites-deploying/technical-requirements.md#supported-platforms) 페이지.
 >
->자세한 내용은 [기술 요구 사항](/help/sites-deploying/technical-requirements.md#supported-platforms) 페이지.
-
+>
+>
 ### 검색 {#search-features}
 
 이 섹션에 나열된 항목은 AEM과 함께 사용되는 사용자 지정 인덱스 공급자입니다. 색인에 대한 자세한 내용은 [Oak 쿼리 및 색인 지정](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
->
->대부분의 배포의 경우 Lucene 인덱스를 사용하는 것이 좋습니다. 특수 및 복잡한 배포에 Solr만 사용해야 합니다.
+대부분의 배포의 경우 Lucene 인덱스를 사용하는 것이 좋습니다. 특수 및 복잡한 배포에 Solr만 사용합니다.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
 ### 개발 지침 {#development-guidelines}
 
-타겟 AEM용으로 개발해야 합니다 **성능 및 확장성**. 다음은 따라야 할 많은 모범 사례입니다.
+AEM용 개발 **성능 및 확장성**. 다음은 따라야 할 모범 사례입니다.
 
 **DO**
 
@@ -354,7 +354,7 @@ AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 
 * 가능하면 JCR API를 직접 사용하지 마십시오
 * /libs를 변경하지 말고 오버레이를 사용하십시오
 * 가능하면 쿼리를 사용하지 마십시오
-* Sling 바인딩을 사용하여 Java 코드에서 OSGi 서비스를 가져오지 않고 를 사용합니다.
+* Java™ 코드에서 OSGi 서비스를 가져오기 위해 Sling 바인딩을 사용하지 말고 대신 다음을 사용합니다.
 
    * @Reference in a DS 구성 요소
    * @Inject 모델
@@ -368,8 +368,7 @@ AEM 개발에 대한 자세한 내용은 [개발 - 기본 사항](/help/sites-de
 ### 벤치마크 시나리오 {#benchmark-scenarios}
 
 >[!NOTE]
->
->이 페이지에 표시되는 모든 벤치마크 테스트는 실험 설정에서 수행되었습니다.
+이 페이지에 표시되는 모든 벤치마크 테스트는 실험 설정에서 수행되었습니다.
 
 아래에 자세히 설명된 테스트 시나리오는 TarMK, MongoMk 및 TarMK 및 MongoMk 장의 벤치마크 섹션에 사용됩니다. 특정 벤치마크 테스트에 사용된 시나리오를 보려면 [기술 사양](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) 테이블.
 
@@ -392,7 +391,7 @@ AEM Sites + 자산:
 
 미디어:
 
-* 문서 페이지 읽기(27.4%), 읽기 페이지(10.9%), 세션 만들기(2.6%), 컨텐츠 페이지 활성화(1.7%), 컨텐츠 페이지 작성(0.4%), 단락 만들기(4.3%), 단락 편집(0.9%), 이미지 구성 요소(0.9%), 자산 읽기(20%), 자산 다운로드(4.5%), 자산 다운로드(4.2%), 자산 업데이트(2.0%), 자산 검색(2.0%), 자산 업데이트(2.0%) (2.4%), 자산 업로드(1.2%), 탐색 프로젝트(4.9%), 프로젝트 읽기(6.6%), 프로젝트 추가 자산(1.2%), 프로젝트 추가 사이트(1.2%), 프로젝트 만들기(0.1%), 작성자 검색(0.4%)
+* `Read Article Page (27.4%), Read Page (10.9%), Create Session (2.6%), Activate Content Page (1.7%), Create Content Page (0.4%), Create Paragraph (4.3%), Edit Paragraph (0.9%), Image Component (0.9%), Browse Assets (20%), Read Asset Metadata (8.5%), Download Asset (4.2%), Search Asset (0.2%), Update Asset Metadata (2.4%), Upload Asset (1.2%), Browse Project (4.9%), Read Project (6.6%), Project Add Asset (1.2%), Project Add Site (1.2%), Create Project (0.1%), Author Search (0.4%)`
 * 실행 모드: 동시 사용자, 사용자당 혼합 상호 작용
 
 ## TarMK {#tarmk}
@@ -406,8 +405,7 @@ TarMK에 대한 자세한 내용은 [배포 시나리오](/help/sites-deploying/
 ### TarMK 최소 아키텍처 지침 {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
->
->아래에 나와 있는 최소 아키텍처 지침은 프로덕션 환경과 높은 트래픽 사이트에 대한 것입니다. 이것들은 **not** a [최소 사양](/help/sites-deploying/technical-requirements.md#prerequisites) AEM을 실행하는 데 필요합니다.
+아래에 나와 있는 최소 아키텍처 지침은 프로덕션 환경 및 높은 트래픽 사이트에 대한 것입니다. 다음 지침은 **not** a [최소 사양](/help/sites-deploying/technical-requirements.md#prerequisites) AEM을 실행하려면
 
 TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처에서 시작해야 합니다.
 
@@ -418,8 +416,7 @@ TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처�
 아래 그림은 AEM Sites 및 AEM Assets에 대한 아키텍처 지침입니다.
 
 >[!NOTE]
->
->바이너리 없는 복제 기능 사용 **설정** 파일 데이터 저장소가 공유되는 경우
+바이너리 없는 복제 기능 사용 **설정** 파일 데이터 저장소가 공유되는 경우
 
 **AEM Sites에 대한 Tar 아키텍처 지침**
 
@@ -431,7 +428,7 @@ TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처�
 
 ### TarMK 설정 지침 {#tarmk-settings-guideline}
 
-성능을 향상시키기 위해 아래에 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지 보기](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+성능을 향상시키기 위해 아래에 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지 보기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko-KR).
 
 <table>
  <tbody>
@@ -457,7 +454,7 @@ TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처�
    <td>JVM 매개 변수</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> </td>
    <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> </td>
-   <td>AEM 시작 스크립트에 이러한 JVM 매개 변수를 추가하여 광범위한 쿼리가 시스템을 오버로드하지 못하도록 합니다.</td>
+   <td>광범위한 쿼리가 시스템을 오버로드하지 않도록 하려면 AEM 시작 스크립트에 이러한 JVM 매개 변수를 추가하십시오.</td>
   </tr>
   <tr>
    <td>Lucene 인덱스 구성</td>
@@ -495,11 +492,11 @@ TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처�
 |  | **작성자 노드** |
 |---|---|
 | 서버 | 베어 메탈 하드웨어(HP) |
-| 운영 체제 | RedHat Linux |
+| 운영 체제 | Red Hat® Linux® |
 | CPU/코어 | Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8개 코어 |
 | RAM | 32GB |
 | 디스크 | 자석 |
-| Java | Oracle JRE 버전 8 |
+| Java™ | Oracle JRE 버전 8 |
 | JVM Heap | 16GB |
 | 제품 | AEM 6.2 |
 | 노데스토르 | TarMK |
@@ -509,14 +506,13 @@ TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처�
 #### 성능 벤치마크 결과 {#performance-benchmark-results}
 
 >[!NOTE]
->
->아래 표시된 숫자는 기준 요소로 1로 표준화되었으며 실제 처리량 숫자는 아닙니다.
+아래 표시된 숫자는 기준 요소로 1로 표준화되었으며 실제 처리량 숫자는 아닙니다.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png) ![chlimage_1-8](assets/chlimage_1-8a.png)
 
 ## MongoMK {#mongomk}
 
-TarMK보다 MongoMK 지속성 백엔드를 선택하는 주된 이유는 인스턴스를 가로로 크기 조절하기 위한 것입니다. 즉, 두 개 이상의 활성 작성자 인스턴스가 항상 실행되고 MongoDB를 지속성 스토리지 시스템으로 사용합니다. 일반적으로 두 개 이상의 작성 인스턴스를 실행해야 하는 이유는 모든 동시 작성 활동을 지원하는 단일 서버의 CPU 및 메모리 용량이 더 이상 지속되지 않기 때문입니다.
+TarMK보다 MongoMK 지속성 백엔드를 선택하는 주된 이유는 인스턴스를 가로로 크기 조절하기 위한 것입니다. 이 기능은 항상 두 개 이상의 활성 작성자 인스턴스가 실행되고 지속성 스토리지 시스템으로 MongoDB를 사용하는 것을 의미합니다. 일반적으로 두 개 이상의 작성 인스턴스를 실행해야 하는 이유는 모든 동시 작성 활동을 지원하는 단일 서버의 CPU 및 메모리 용량이 더 이상 지속되지 않기 때문입니다.
 
 TarMK에 대한 자세한 내용은 [배포 시나리오](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 및 [Mongo 저장소](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage).
 
@@ -530,18 +526,16 @@ MongoMK를 사용할 때 좋은 성능을 설정하려면 다음 아키텍처에
 * Dispatcher 2명
 
 >[!NOTE]
->
->운영 환경에서 MongoDB는 항상 운영 및 2개의 보조 복제본이 있는 복제 세트로 사용됩니다. 읽기 및 쓰기 작업은 운영 사이트로 이동하고 읽기는 보조 스토리지로 이동할 수 있습니다. 스토리지를 사용할 수 없는 경우 보조 노드 중 하나를 중재자로 교체할 수 있지만 MongoDB 복제본 세트는 항상 인스턴스 수가 홀수로 구성되어야 합니다.
+운영 환경에서 MongoDB는 항상 운영 및 2개의 보조 복제본이 있는 복제 세트로 사용됩니다. 읽기 및 쓰기 작업은 운영 사이트로 이동하고 읽기는 보조 스토리지로 이동할 수 있습니다. 스토리지를 사용할 수 없는 경우 보조 노드 중 하나를 중재자로 교체할 수 있지만 MongoDB 복제본 세트는 항상 인스턴스 수가 홀수로 구성되어야 합니다.
 
 >[!NOTE]
->
->바이너리 없는 복제 기능 사용 **설정** 파일 데이터 저장소가 공유되는 경우
+바이너리 없는 복제 기능 사용 **설정** 파일 데이터 저장소가 공유되는 경우
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
 ### MongoMK 설정 지침 {#mongomk-settings-guidelines}
 
-성능을 향상시키기 위해 아래에 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지 보기](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+성능을 향상시키기 위해 아래에 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지 보기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko-KR).
 
 <table>
  <tbody>
@@ -567,7 +561,7 @@ MongoMK를 사용할 때 좋은 성능을 설정하려면 다음 아키텍처에
    <td>JVM 매개 변수</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> <p><code>Doak.mongo.maxQueryTimeMS</code></p> </td>
    <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> <p>60000</p> </td>
-   <td>AEM 시작 스크립트에 이러한 JVM 매개 변수를 추가하여 광범위한 쿼리가 시스템을 오버로드하지 못하도록 합니다.</td>
+   <td>광범위한 쿼리가 시스템을 오버로드하지 않도록 하려면 AEM 시작 스크립트에 이러한 JVM 매개 변수를 추가하십시오.</td>
   </tr>
   <tr>
    <td>Lucene 인덱스 구성</td>
@@ -605,11 +599,11 @@ MongoMK를 사용할 때 좋은 성능을 설정하려면 다음 아키텍처에
 |  | **작성자 노드** | **MongoDB 노드** |
 |---|---|---|
 | 서버 | 베어 메탈 하드웨어(HP) | 베어 메탈 하드웨어(HP) |
-| 운영 체제 | RedHat Linux | RedHat Linux |
+| 운영 체제 | Red Hat® Linux® | Red Hat® Linux® |
 | CPU/코어 | Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8개 코어 | Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8개 코어 |
 | RAM | 32GB | 32GB |
 | 디스크 | 마그네틱 - 1k IOPS 이상 | 마그네틱 - 1k IOPS 이상 |
-| Java | Oracle JRE 버전 8 | N/A |
+| Java™ | Oracle JRE 버전 8 | N/A |
 | JVM Heap | 16GB | N/A |
 | 제품 | AEM 6.2 | MongoDB 3.2 WiredTiger |
 | 노데스토르 | MongoMK | N/A |
@@ -619,16 +613,15 @@ MongoMK를 사용할 때 좋은 성능을 설정하려면 다음 아키텍처에
 ### 성능 벤치마크 결과 {#performance-benchmark-results-1}
 
 >[!NOTE]
->
->아래 표시된 숫자는 기준 요소로 1로 표준화되었으며 실제 처리량 숫자는 아닙니다.
+아래 표시된 숫자는 기준 요소로 1로 표준화되었으며 실제 처리량 숫자는 아닙니다.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
 
 ## TarMK와 MongoMK 비교 {#tarmk-vs-mongomk}
 
-두 가지 중 하나를 선택할 때 고려해야 하는 기본 규칙은 TarMK가 성능용으로 설계된 반면 MongoMK는 확장성을 위해 사용됩니다. Adobe은 TarMK를 AEM 작성자 및 게시 인스턴스 모두에 대해 모든 배포 시나리오에서 고객이 사용하는 기본 지속성 기술로 권장합니다.
+두 가지 중 하나를 선택할 때 고려해야 할 기본 규칙은 TarMK가 성능용으로 설계된 반면 MongoMK는 확장성에 사용됩니다. Adobe은 TarMK를 AEM 작성자 및 게시 인스턴스 모두에 대해 모든 배포 시나리오에서 고객이 사용하는 기본 지속성 기술로 권장합니다.
 
-TarMK보다 MongoMK 지속성 백엔드를 선택하는 주된 이유는 인스턴스를 가로로 크기 조절하기 위한 것입니다. 즉, 두 개 이상의 활성 작성자 인스턴스가 항상 실행되고 MongoDB를 지속성 스토리지 시스템으로 사용합니다. 일반적으로 두 개 이상의 작성 인스턴스를 실행해야 하는 이유는 모든 동시 작성 활동을 지원하는 단일 서버의 CPU 및 메모리 용량이 더 이상 지속되지 않기 때문입니다.
+TarMK보다 MongoMK 지속성 백엔드를 선택하는 주된 이유는 인스턴스를 가로로 크기 조절하기 위한 것입니다. 이 기능은 항상 두 개 이상의 활성 작성자 인스턴스가 실행되고 지속성 스토리지 시스템으로 MongoDB를 사용하는 것을 의미합니다. 일반적으로 두 개 이상의 작성 인스턴스를 실행해야 하는 이유는 모든 동시 작성 활동을 지원하는 단일 서버의 CPU 및 메모리 용량이 더 이상 지속되지 않기 때문입니다.
 
 TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md#microkernels-which-one-to-use).
 
@@ -653,8 +646,7 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
 ### TarMK와 MongoMK 벤치마크 비교 {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
->
->아래 표시된 숫자가 기준 요소로 1로 표준화되었으며 실제 처리량 숫자는 아닙니다.
+아래 표시된 숫자가 기준 요소로 1로 표준화되었으며 실제 처리량 숫자는 아닙니다.
 
 ### 시나리오 1 기술 사양 {#scenario-technical-specifications}
 
@@ -674,8 +666,8 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
   </tr>
   <tr>
    <td>운영 체제</td>
-   <td>RedHat Linux</td>
-   <td>RedHat Linux</td>
+   <td>Red Hat® Linux®</td>
+   <td>Red Hat® Linux®</td>
    <td> </td>
   </tr>
   <tr>
@@ -697,7 +689,7 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
    <td> </td>
   </tr>
   <tr>
-   <td>Java</td>
+   <td>Java™</td>
    <td>Oracle JRE 버전 8</td>
    <td>N/A</td>
    <td> </td>
@@ -742,8 +734,7 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
 ### 시나리오 2 기술 사양 {#scenario-technical-specifications-1}
 
 >[!NOTE]
->
->MongoDB와 TarMK 시스템 한 대와 동일한 수의 작성자를 활성화하려면 두 개의 AEM 노드가 있는 클러스터가 필요합니다. 네 개의 노드 MongoDB 클러스터는 Author의 1.8배를 TarMK 인스턴스보다 처리할 수 있습니다. 8개의 노드 MongoDB 클러스터는 Authors 수의 2.3배를 TarMK 인스턴스보다 처리할 수 있습니다.
+MongoDB와 TarMK 시스템 한 대와 동일한 수의 작성자를 활성화하려면 두 개의 AEM 노드가 있는 클러스터가 필요합니다. 네 개의 노드 MongoDB 클러스터는 Author의 1.8배를 TarMK 인스턴스보다 처리할 수 있습니다. 8개의 노드 MongoDB 클러스터는 Authors 수의 2.3배를 TarMK 인스턴스보다 처리할 수 있습니다.
 
 <table>
  <tbody>
@@ -761,9 +752,9 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
   </tr>
   <tr>
    <td>운영 체제</td>
-   <td>RedHat Linux</td>
-   <td>RedHat Linux</td>
-   <td>RedHat Linux</td>
+   <td>Red Hat® Linux®</td>
+   <td>Red Hat® Linux®</td>
+   <td>Red Hat® Linux®</td>
   </tr>
   <tr>
    <td>CPU/코어</td>
@@ -784,7 +775,7 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
    <td>SSD - 10k IOPS</td>
   </tr>
   <tr>
-   <td>Java</td>
+   <td>Java™</td>
    <td>Oracle JRE 버전 8</td>
    <td><br /> Oracle JRE 버전 8</td>
    <td>N/A</td>
@@ -834,27 +825,27 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
 
 이 페이지에 제시된 지침은 다음과 같이 요약할 수 있습니다.
 
-* **파일 데이터 저장소가 있는 TarMK** 대부분의 고객을 위한 권장 아키텍처입니다.
+* **파일 데이터 저장소가 있는 TarMK** - 대부분의 고객을 위한 권장 아키텍처:
 
    * 최소 토폴로지: 작성자 인스턴스 1개, 게시 인스턴스 2개, Dispatcher 2개
    * 파일 데이터 저장소가 공유되면 바이너리 없는 복제가 켜집니다
 
-* **파일 데이터 저장소가 있는 MongoMK** 작성 계층의 수평 확장성을 위한 권장 아키텍처입니다.
+* **파일 데이터 저장소가 있는 MongoMK** - 작성자 계층의 수평 확장성을 위한 권장 아키텍처:
 
    * 최소 토폴로지: 작성자 인스턴스 3개, MongoDB 인스턴스 3개, 게시 인스턴스 2개, Dispatcher 2개
    * 파일 데이터 저장소가 공유되면 바이너리 없는 복제가 켜집니다
 
-* **노데스토르** NAS(Network Attached Storage)가 아니라 로컬 디스크에 저장해야 합니다.
+* **노데스토르** - 로컬 디스크에 저장되고 NAS(Network Attached Storage)가 아님
 * 사용 시 **Amazon S3**:
 
    * Amazon S3 데이터 저장소는 작성자와 게시 계층 간에 공유됩니다
    * 바이너리 없는 복제를 설정해야 합니다.
    * 데이터 저장소 가비지 수집에서는 모든 작성자 및 게시 노드에서 먼저 실행한 다음 작성자에서 두 번째 실행이 필요합니다
 
-* **기본 색인과 함께 사용자 지정 색인을 만들어야 합니다** 가장 일반적인 검색 기준
+* **기본 색인과 함께 사용자 지정 색인을 만들어야 합니다** - 가장 일반적인 검색 기준
 
    * Lucene 인덱스는 사용자 지정 인덱스에 사용해야 합니다
 
-* **워크플로우를 사용자 지정하여 성능을 크게 향상시킬 수 있습니다**&#x200B;예를 들어 &quot;자산 업데이트&quot; 워크플로우에서 비디오 단계를 제거하여 사용하지 않는 수신기를 비활성화하는 등의 작업을 수행합니다.
+* **워크플로우를 사용자 지정하여 성능을 크게 향상시킬 수 있습니다** - &quot;자산 업데이트&quot; 워크플로우에서 비디오 단계를 제거하고, 사용되지 않는 수신기를 비활성화하는 등의 작업을 수행합니다.
 
 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md) 페이지.
