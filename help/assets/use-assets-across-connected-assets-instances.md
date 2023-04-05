@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b10b7d957ef3a28b5eeb05383a7504c6516f7aa7
+source-git-commit: 8d4ff8bcb7df4770bc1ed7e7c2cad27befe3d175
 workflow-type: tm+mt
-source-wordcount: '3856'
+source-wordcount: '3909'
 ht-degree: 17%
 
 ---
@@ -364,5 +364,5 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
    ![자산 원격 참조를 검색하지 못했습니다.](assets/reference-report-failure.png)
 
-
+* Sites 서버에서 Google Chrome의 Assets 서버로 쿠키가 전송되지 않은 경우 Assets 연결이 HTTPS를 통해 전송되지 않기 때문입니다. Assets 인스턴스에서 HTTPS를 사용하지 않는 경우 `SameSite=None` Assets 서버를 인증한 후에는 헤더를 응답에 추가할 수 없습니다.
 
