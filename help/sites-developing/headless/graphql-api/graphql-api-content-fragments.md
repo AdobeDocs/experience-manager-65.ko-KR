@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: 헤드리스 컨텐츠 전달을 위해 AEM(Adobe Experience Manager)에서 AEM GraphQL API와 함께 컨텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: ea90bd913b437a564fb50e01af7719510fa22e74
 workflow-type: tm+mt
-source-wordcount: '3204'
-ht-degree: 90%
+source-wordcount: '3224'
+ht-degree: 89%
 
 ---
 
@@ -21,6 +21,12 @@ AEM에서 GraphQL API를 사용하면 Headless CMS 구현에서 JavaScript 클�
 * REST에서처럼 반복적인 API 요청 방지,
 * 게재가 특정 요구 사항으로 제한되는지 확인,
 * 단일 API 쿼리에 대한 응답으로 렌더링에 필요한 것을 정확히 대량으로 게재할 수 있도록 허용.
+
+>[!CAUTION]
+>
+>GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.0.5가 있는 AEM 컨텐츠 조각을 설치해야 합니다.
+>
+>자세한 내용은 [릴리스 노트](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) 자세한 내용
 
 >[!NOTE]
 >
