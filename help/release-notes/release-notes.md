@@ -2,9 +2,9 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: ea90bd913b437a564fb50e01af7719510fa22e74
+source-git-commit: 99a2167fa1eaee8111ad4e3bd7cdd36ad47a9a4c
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2705'
 ht-degree: 11%
 
 ---
@@ -226,7 +226,11 @@ AEM Forms에 서비스 팩을 설치하는 방법은 [AEM Forms 서비스 팩 �
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치 {#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 [GraphQL 색인 패키지 1.0.5가 있는 AEM 컨텐츠 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip). 따라서 실제로 사용하는 기능을 기반으로 필요한 인덱스 정의를 추가할 수 있습니다.
+GraphQL을 사용하는 고객은 [GraphQL 색인 패키지 1.0.5가 있는 AEM 컨텐츠 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip).
+
+이렇게 하면 실제로 사용하는 기능을 기반으로 필요한 인덱스 정의를 추가할 수 있습니다.
+
+이 패키지를 설치하지 못하면 GraphQL 쿼리가 느려지거나 실패할 수 있습니다.
 
 >[!NOTE]
 >
