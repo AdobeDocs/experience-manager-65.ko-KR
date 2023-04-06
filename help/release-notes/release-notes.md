@@ -2,7 +2,7 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 99a2167fa1eaee8111ad4e3bd7cdd36ad47a9a4c
+source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
 workflow-type: tm+mt
 source-wordcount: '2705'
 ht-degree: 11%
@@ -80,7 +80,7 @@ Dynamic Media 비디오 게재에서 적응형 비트율 스트리밍을 위해(
 
 ### [!DNL Forms] 주요 기능 {#forms-features-6516}
 
-* [헤드리스 적응형 Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 개발자는 기존의 그래픽 사용자 인터페이스를 사용하지 않고 API를 통해 액세스 및 상호 작용할 수 있는 대화형 양식을 작성, 게시 및 관리할 수 있습니다.
+* [헤드리스 적응형 Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 개발자는 기존의 그래픽 사용자 인터페이스를 사용하지 않고 API를 통해 액세스 및 상호 작용할 수 있는 대화형 양식을 작성, 게시 및 관리할 수 있습니다.
 
 * [응용 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) 는 Adobe Experience Manager WCM 코어 구성 요소의 기초 위에 구축된 24개의 오픈 소스 BEM 준수 구성 요소 세트입니다. 이러한 구성 요소는 오픈 소스이며 개발자들이 조직의 특정 요구 사항에 맞게 이러한 구성 요소를 쉽게 사용자 지정하고 확장할 수 있는 기능을 제공합니다. 사용자 지정 능력을 가진 모든 사용자 [WCM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=en) 이러한 구성 요소를 쉽게 사용자 지정하고 스타일을 지정할 수 있습니다.
 
@@ -100,7 +100,7 @@ Dynamic Media 비디오 게재에서 적응형 비트율 스트리밍을 위해(
    * Microsoft® Excel이 자주 충돌합니다.
    * 보안 문서를 여는 동안 **문서 보안 사무소** 확장이 컴퓨터에 설치되어 있지 않습니다. 사용자에게 보안 확장을 다운로드하고 설치하도록 지시합니다. (NPR-39768)
 * 사용자가 AEM 6.5.15.0 서비스 팩으로 업그레이드한 후 PostScript-to-Pdf 변환이 작동하지 않습니다. (NPR-39765), (NPR-39764)
-* 사용자가 적응형 양식을 연 후 투어 화면을 열려고 하면 NullPointer 예외로 인해 실패합니다.`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:”` (NPR-39654)
+* 사용자가 적응형 양식을 연 후 투어 화면을 열려고 하면 NullPointer 예외로 인해 실패합니다.`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
 * Windows에서는 사용자가 고대비 검정 설정을 활성화하면 브라우저에서 HTML 미리 보기로 렌더링될 때 HTML5 Forms 컨텐츠가 불명확해집니다. (NPR-39018)
 
 ## 통합 {#integrations-6516}
