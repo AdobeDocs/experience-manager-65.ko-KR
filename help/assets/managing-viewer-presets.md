@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4523'
 ht-degree: 9%
 
 ---
@@ -372,7 +372,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
    <td><p>확대(iOS 및 Android™ 3x만 해당)</p> </td>
   </tr>
   <tr>
-   <td><p><strong>밀기</strong></p> </td>
+   <td><p><strong>살짝 밀기</strong></p> </td>
    <td><p>견본 막대 스크롤</p> </td>
    <td><p>이미지 스크롤</p> </td>
    <td><p>회전</p> </td>
@@ -463,7 +463,7 @@ Experience Manager에서 자산을 볼 때 광범위한 뷰어 사전 설정이 
 
    * **[!UICONTROL 대시]** - 비디오 스트림은 대시로만 표시됩니다. 그러나 Safari/iOS 장치에서 선택해야 합니다 **[!UICONTROL hls]** 를 입력합니다.
    * **[!UICONTROL hls]** - 비디오만 hls로 스트리밍됩니다.
-   * **[!UICONTROL 자동]** - 우수 사례. DASH 및 HLS 스트림 생성은 저장 영역에 최적화되어 있습니다. 따라서 Adobe은 항상 **[!UICONTROL 자동]** 재생 유형으로 사용할 수 있습니다. 비디오 스트림은 다음과 같이 대시, hls 또는 progressive로 스트리밍됩니다.
+   * **[!UICONTROL 자동]** - 우수 사례. DASH 및 HLS 스트림 생성은 저장 영역에 최적화되어 있습니다. 따라서 Adobe은 항상 **[!UICONTROL 자동]** 재생 유형으로 사용할 수 있습니다. 비디오 스트림은 다음 재생 순서와 같이 대시, hls 또는 점진적 순서로 스트리밍됩니다.
       * 브라우저가 DASH를 지원하는 경우 먼저 DASH 스트리밍이 사용됩니다.
       * 브라우저가 DASH를 지원하지 않으면 HLS 스트리밍이 사용됩니다.
       * 브라우저가 DASH 또는 HLS를 지원하지 않으면 마지막으로 점진적 재생이 사용됩니다.

@@ -2,9 +2,9 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: f53dbe7d51ff976f8d79702a86527f984aa00997
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '2983'
+source-wordcount: '2986'
 ht-degree: 10%
 
 ---
@@ -36,7 +36,7 @@ Dynamic Media 비디오 게재에서 적응형 비트율 스트리밍을 위해(
 
 * 응용 스트리밍(DASH/HLS)을 사용하면 비디오에 대한 최종 사용자 보기 환경을 향상시킬 수 있습니다.
 * DASH는 응용 비디오 스트리밍을 위한 국제 표준 프로토콜이며 업계에서 널리 사용되고 있습니다.
-* 현재 북미에서(지원 티켓을 통해 지원 가능) 제공되며, 아시아 태평양 및 유럽-중동 지역에서 곧 제공될 예정입니다.
+* 현재 아시아 태평양 및 북미 지역에서 사용 가능(지원 티켓을 통해 사용 가능); 곧 유럽-중동-아프리카에 도착합니다.
 
 자세한 내용은 [계정에서 DASH 사용](/help/assets/video.md#enable-dash).
 
