@@ -2,10 +2,10 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
+source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 11%
+source-wordcount: '2967'
+ht-degree: 10%
 
 ---
 
@@ -88,7 +88,7 @@ Dynamic Media 비디오 게재에서 적응형 비트율 스트리밍을 위해(
 
 ### [!DNL Forms] 수정 사항 {#forms-fixes-6516}
 
-* 작업 할당** 단계를 사용하여 지정된 작업에 대한 알림을 전송하는 경우 지정된 개인에게 하나의 전자 메일이 아닌 두 개의 전자 메일이 전송됩니다. (NPR-40078)
+* 사용 시 **작업 할당** 지정된 작업에 대한 알림을 전송하는 단계에는 지정된 개인에게 1개 대신 2개의 이메일이 전송됩니다. (NPR-40078)
 * 사용자가 표 헤더를 숨기면 이전에 설정한 열 너비가 설정 해제되고 모든 열이 동일한 너비를 유지합니다. (NPR-40063)
 * 관리 사용자의 기본 암호를 `admin`를 호출하고 `Prepare Adobe Experience Manager Server For DSC deployment` AEM Forms JEE 서비스 팩 확인 시 실패합니다. (NPR-40062), (NPR-39387)
 * OutputService 및 AssemblerService API에서 PDF 양식을 PDF/A로 변환하지 못했습니다(NPR-39990)
@@ -102,6 +102,18 @@ Dynamic Media 비디오 게재에서 적응형 비트율 스트리밍을 위해(
 * 사용자가 AEM 6.5.15.0 서비스 팩으로 업그레이드한 후 PostScript-to-Pdf 변환이 작동하지 않습니다. (NPR-39765), (NPR-39764)
 * 사용자가 적응형 양식을 연 후 투어 화면을 열려고 하면 NullPointer 예외로 인해 실패합니다.`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
 * Windows에서는 사용자가 고대비 검정 설정을 활성화하면 브라우저에서 HTML 미리 보기로 렌더링될 때 HTML5 Forms 컨텐츠가 불명확해집니다. (NPR-39018)
+* 사용자가 메타데이터를 추가하려고 하면 초안 구성 요소와 제출 구성 요소 모두에 대해 저장 단추가 작동하지 않습니다.(CQ-4349601)
+* AEM 6.5.15.0 서비스 팩으로 업그레이드한 후 상대 URL의 리디렉션이 더 이상 시각적 편집기에서 작동하지 않습니다. (NPR-39947)
+* 사용자가 AEM 6.5.15.0 서비스 팩으로 업그레이드할 때 리디렉션이 Internet Explorer에서 작동하지 않습니다. (CQ-4351745)
+* 사용자가 AEM 6.5.15.0 서비스 팩으로 업그레이드하면 HTML 제목 태그가 인식되지 않습니다. 제목 태그의 HTML 코드는 HTML 양식에 텍스트로 표시됩니다. (NPR-39915)
+* 사용자가 적응형 양식을 제출하려고 하면 일반적으로 오류가 발생합니다. `ERROR [10.207.64.167 [1668589530607] POST /app/LS4/content/forms/af/revalidate/jcr:content/guideContainer.af.submit.jsp HTTP/1.1]`( NPR-39809)
+* 사용자가 를 사용하여 기록 문서를 미리 볼 때 **이메일 보내기** 제출 작업이 올바르게 표시되지 않습니다. 편지 템플릿은 레코드 문서의 미리 보기에 포함됩니다. (CQ-4352155)
+* 사용자가 Microsoft Edge 브라우저에서 적응형 양식을 IE 호환성 모드로 HTML으로 미리 보면 제대로 표시되지 않습니다.(CQ-4352216)
+* 사전은 변환을 사용하려면 밑줄 또는 하이픈과 같은 특수 문자가 있는 새 로케일을 포함해야 합니다. (NPR-40088)
+
+AEM 6.5.16.0 Forms 추가 기능 서비스 팩을 설치한 후 고객에게 다음 문제가 발생했습니다. 따라서 업데이트된 버전의 AEM 6.5.16.0 Forms 추가 기능 서비스 팩이 출시되었습니다.
+* 사용자가 forms-users 그룹에 있는 사용자로 적응형 양식을 작성하려고 하면 템플릿을 선택하는 옵션이 표시되지 않고 다음과 유사한 오류가 발생합니다. 내부 서버 오류: java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176) at.java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)at.adobe.aem.formsyndocuments.servlet.테마ClientDataSourceServlet.lambda$getThemeClientLibCategoryListList$3(JointJava.3ReferenceReatorReteratorReferenceReator3.3Java.3ReferenceReteratorName.3Name(ReferenceReferenceReferenceReferenceReferenceReferenceReferenceReferenceReferenceReferenceHostReferenceReferenceReferenceReator)의 javaReferenceReferenceName.3) (FORMS-7629)
+* 코드 편집기 규칙에서 변경한 사항이 저장되지 않습니다.(FORMS.-7532)
 
 ## 통합 {#integrations-6516}
 
