@@ -2,9 +2,9 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
+source-git-commit: f53dbe7d51ff976f8d79702a86527f984aa00997
 workflow-type: tm+mt
-source-wordcount: '2967'
+source-wordcount: '2983'
 ht-degree: 10%
 
 ---
@@ -111,7 +111,7 @@ Dynamic Media 비디오 게재에서 적응형 비트율 스트리밍을 위해(
 * 사용자가 Microsoft Edge 브라우저에서 적응형 양식을 IE 호환성 모드로 HTML으로 미리 보면 제대로 표시되지 않습니다.(CQ-4352216)
 * 사전은 변환을 사용하려면 밑줄 또는 하이픈과 같은 특수 문자가 있는 새 로케일을 포함해야 합니다. (NPR-40088)
 
-AEM 6.5.16.0 Forms 추가 기능 서비스 팩을 설치한 후 고객에게 다음 문제가 발생했습니다. 따라서 업데이트된 버전의 AEM 6.5.16.0 Forms 추가 기능 서비스 팩이 출시되었습니다.
+AEM 6.5.16.0 Forms 추가 기능 서비스 팩을 설치한 후 고객은 아래에 나열된 문제에 직면했습니다. 따라서, [AEM 6.5.16.0 Forms 추가 기능 서비스 팩 - 6.0.914](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 가 출시되었습니다. Adobe은 업데이트된 서비스 팩을 사용할 것을 권장합니다.
 * 사용자가 forms-users 그룹에 있는 사용자로 적응형 양식을 작성하려고 하면 템플릿을 선택하는 옵션이 표시되지 않고 다음과 유사한 오류가 발생합니다. 내부 서버 오류: java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176) at.java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)at.adobe.aem.formsyndocuments.servlet.테마ClientDataSourceServlet.lambda$getThemeClientLibCategoryListList$3(JointJava.3ReferenceReatorReteratorReferenceReator3.3Java.3ReferenceReteratorName.3Name(ReferenceReferenceReferenceReferenceReferenceReferenceReferenceReferenceReferenceReferenceHostReferenceReferenceReferenceReator)의 javaReferenceReferenceName.3) (FORMS-7629)
 * 코드 편집기 규칙에서 변경한 사항이 저장되지 않습니다.(FORMS.-7532)
 
