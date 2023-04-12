@@ -10,9 +10,9 @@ topic-tags: content
 content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1097'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 KDE와 WebDAV를 통해 AEM에 연결하려면 다음을 수행하십시오.
 
-AEM에서는 저장소 컨텐츠를 표시하고 편집할 수 있는 WebDAV 지원을 제공합니다. WebDAV를 통해 연결하면 데스크탑을 통해 콘텐츠 저장소에 직접 액세스할 수 있습니다. WebDAV 연결을 통해 저장소에 추가된 텍스트 및 PDF 파일은 자동으로 전체 텍스트 인덱싱되며 표준 검색 인터페이스와 표준 Java API를 통해 검색할 수 있습니다.
+AEM에서는 저장소 컨텐츠를 표시하고 편집할 수 있는 WebDAV 지원을 제공합니다. WebDAV를 통해 연결하면 데스크탑을 통해 콘텐츠 저장소에 직접 액세스할 수 있습니다. WebDAV 연결을 통해 저장소에 추가된 텍스트 및 PDF 파일은 자동으로 전체 텍스트 인덱싱되며 표준 검색 인터페이스와 표준 Java™ API를 통해 검색할 수 있습니다.
 
 ## 일반 {#general}
 
@@ -98,7 +98,7 @@ http://localhost:4502/crx/repository/staging
 
 ## WebDAV를 통해 연결 {#connecting-via-webdav}
 
-[위에서 언급한 대로](/help/sites-administering/webdav-access.md#general)WebDAV 프로토콜을 사용하여 저장소에 연결하려면 WebDAV 클라이언트를 저장소 위치에 지정합니다. 그러나 OS에 따라 클라이언트를 연결하는 단계가 다르며 필요한 OS가 구성되어 있을 수 있습니다.
+[위에서 언급한 대로](/help/sites-administering/webdav-access.md#general)WebDAV 프로토콜을 사용하여 저장소에 연결하려면 WebDAV 클라이언트를 저장소 위치에 지정합니다. 그러나 OS에 따라 클라이언트를 연결하는 단계가 다르며 OS에 필요한 구성이 있을 수 있습니다.
 
 다음 운영 체제를 연결하는 방법에 대한 지침이 제공됩니다.
 
@@ -108,7 +108,7 @@ http://localhost:4502/crx/repository/staging
 
 ### Windows {#windows}
 
-SSL을 사용하여 안전하지 않은 AEM 인스턴스에 Microsoft Windows 7 이상 시스템을 성공적으로 연결하려면 비보안 네트워크를 통해 기본 인증을 설정하는 옵션을 Windows에서 명시적으로 활성화해야 합니다. 이렇게 하려면 WebClient의 Windows 레지스트리를 변경해야 합니다.
+Microsoft® Windows 7 이상 시스템을 SSL로 보안되지 않은 AEM 인스턴스에 성공적으로 연결하려면 비보안 네트워크를 통해 기본 인증을 설정할 수 있는 옵션을 Windows에서 명시적으로 활성화해야 합니다. 이 기능을 사용하려면 WebClient의 Windows 레지스트리를 변경해야 합니다.
 
 레지스트리가 업데이트되면 AEM 인스턴스를 드라이브로 매핑할 수 있습니다.
 
@@ -126,11 +126,7 @@ SSL을 사용하여 안전하지 않은 AEM 인스턴스에 Microsoft Windows 7 
 
    없는 경우 하위 키를 추가합니다.
 
-1. 레지스트리 변경 사항을 적용하려면 시스템을 다시 시작해야 합니다.
-
-자세한 내용은 [Microsoft 지원 KB 841215](https://support.microsoft.com/default.aspx/kb/841215) 레지스트리 변경에 대한 자세한 정보
-
-자세한 내용은 [Microsoft 지원 KB 2445570](https://support.microsoft.com/kb/2445570) windows에서 WebDav 클라이언트의 책임을 향상시키는 방법에 대한 정보.
+1. 레지스트리 변경 사항을 적용하려면 시스템을 다시 시작하십시오.
 
 >[!NOTE]
 >
@@ -138,11 +134,11 @@ SSL을 사용하여 안전하지 않은 AEM 인스턴스에 Microsoft Windows 7 
 
 #### Windows 8 구성 {#windows-configuration}
 
-Windows 8의 경우 레지스트리 항목을 변경해야 합니다 [Windows 7 이상](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). 그러나 레지스트리 항목을 보려면 먼저 Desktop Experience Cloud를 활성화해야 합니다.
+Windows 8의 경우 레지스트리 항목을 변경합니다 [Windows 7 이상](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). 그러나 이 작업을 수행하기 전에 레지스트리 항목을 보려면 Desktop Experience Cloud를 활성화해야 합니다.
 
 데스크탑 경험을 활성화하려면 **서버 관리자**, 그런 다음 **기능**, 그런 다음 **기능 추가**, 그런 다음 **데스크탑 경험**.
 
-Windows 7 이상에 대해 설명된 레지스트리 항목을 재부팅한 후 사용할 수 있습니다. Windows 7 이상에 대해 설명된 대로 수정합니다.
+재부팅한 후 Windows 7 이상에 대해 설명하는 레지스트리 항목을 사용할 수 있습니다. Windows 7 이상에 대해 설명된 대로 수정합니다.
 
 #### Windows에서 연결 {#connecting-in-windows}
 
@@ -152,7 +148,7 @@ Windows 환경에서 WebDAV를 통해 AEM에 연결하려면
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
-1. 클릭 **네트워크 드라이브 매핑** 마법사를 시작하려면 다음을 수행하십시오.
+1. 마법사를 시작하려면 **네트워크 드라이브 매핑**.
 1. 매핑 세부 정보를 입력합니다.
 
    * **드라이브**: 사용 가능한 편지 선택
@@ -179,7 +175,7 @@ Windows 환경에서 WebDAV를 통해 AEM에 연결하려면
 
 ### macOS {#macos}
 
-macOS에서 WebDAV를 통해 연결하는 데 필요한 구성 단계는 없습니다. WebDAV 서버에 연결해야 합니다.
+macOS에서 WebDAV를 통해 연결하는 데 필요한 구성 단계는 없습니다. WebDAV 서버에 연결할 수 있습니다.
 
 1. 원하는 위치로 이동 **파인더** 을(를) 클릭하고 **이동** 및 **서버에 연결**&#x200B;또는 누르기 **Command+k**.
 1. 에서 **서버에 연결** 창에서 AEM 위치를 입력합니다.
@@ -193,9 +189,9 @@ macOS에서 WebDAV를 통해 연결하는 데 필요한 구성 단계는 없습�
 
 이제 macOS이 WebDAV를 통해 AEM에 연결되었으며 Mac의 다른 폴더로 사용할 수 있습니다.
 
-### Linux {#linux}
+### Linux® {#linux}
 
-Linux에서 WebDAV를 통해 연결하면 구성이 필요 없지만, 데스크탑 환경에 따라 다르게 연결하는 몇 가지 단계가 필요합니다.
+Linux®에서 WebDAV를 통해 연결하면 구성이 필요 없지만, 데스크탑 환경에 따라 다르게 연결하는 몇 가지 단계가 필요합니다.
 
 #### 그놈 {#gnome}
 

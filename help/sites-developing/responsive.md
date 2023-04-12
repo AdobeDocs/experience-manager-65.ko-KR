@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 4472da2e9aa0b45e0d5f03bfdc53a2748d82cdb3
+source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
 workflow-type: tm+mt
-source-wordcount: '5351'
+source-wordcount: '5336'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다(예: ) _React_). [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다(예: ) _React_). [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->다양한 예는 AEM과 함께 더 이상 제공되지 않으며 We.Retail으로 대체된 Geometrixx 샘플 컨텐츠를 기반으로 합니다. 문서를 참조하십시오 [We.Retail 참조 구현](/help/sites-developing/we-retail.md#we-retail-geometrixx) Geometrixx 다운로드 및 설치 방법에 대해 설명합니다.
+>다양한 예는 AEM(Adobe Experience Manager)과 함께 더 이상 제공되지 않으며 We.Retail으로 대체된 Geometrixx 샘플 컨텐츠를 기반으로 합니다. 문서를 참조하십시오 [We.Retail 참조 구현](/help/sites-developing/we-retail.md#we-retail-geometrixx) Geometrixx 다운로드 및 설치 방법에 대해 설명합니다.
 
 웹 페이지가 표시되는 클라이언트 뷰포트에 적용되도록 디자인합니다. 응답형 디자인을 사용하면 두 방향 모두에서 동일한 페이지를 여러 장치에 효과적으로 표시할 수 있습니다. 다음 이미지는 페이지가 뷰포트 크기 변경에 응답하는 몇 가지 방법을 보여줍니다.
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 * 최대 너비 767픽셀(휴대폰, 가로)
 * 768픽셀과 979픽셀 사이의 너비(태블릿, 세로)
 * 980픽셀과 1199픽셀 사이의 너비(태블릿, 가로)
-* 너비 1200px 이상(데스크탑)
+* 너비 1200픽셀 이상(데스크탑)
 
 반응형 디자인 동작을 구현하는 방법은 다음 항목을 참조하십시오.
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 미디어 쿼리를 사용하면 페이지 렌더링을 위해 선택적 CSS 스타일을 사용할 수 있습니다. AEM 개발 도구 및 기능을 사용하면 애플리케이션에서 미디어 쿼리를 효과적이고 효율적으로 구현할 수 있습니다.
 
-W3C 그룹은 [미디어 쿼리](https://www.w3.org/TR/css3-mediaqueries/) 이 CSS3 기능 및 구문을 설명하는 권장 사항입니다.
+W3C 그룹은 [미디어 쿼리](https://www.w3.org/TR/mediaqueries-3/) 이 CSS3 기능 및 구문을 설명하는 권장 사항입니다.
 
 ### CSS 파일 만들기 {#creating-the-css-file}
 
@@ -85,7 +85,7 @@ CSS 파일에서 타깃팅하는 장치의 속성을 기반으로 미디어 쿼�
 * 별도의 CSS 파일에서 모든 장치에 공통되는 스타일을 정의합니다.
 * ClientLibraryFolder의 css.txt 파일에서 어셈블된 CSS 파일에 필요한 목록 CSS 파일의 순서를 지정합니다.
 
-We.Retail Media 샘플은 이 전략을 사용하여 사이트 디자인에서 스타일을 정의합니다. We.Retail에서 사용하는 CSS 파일은 `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
+다음 `We.Retail` 미디어 샘플은 이 전략을 사용하여 사이트 디자인에서 스타일을 정의합니다. 에 사용되는 CSS 파일입니다. `We.Retail` 다음 위치에 있음 `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
 
 다음 표에는 css 하위 폴더의 파일이 나와 있습니다.
 
@@ -129,7 +129,7 @@ We.Retail Media 샘플은 이 전략을 사용하여 사이트 디자인에서 �
   <tr>
    <td>responsive-480px.css</td>
    <td>너비가 481픽셀 미만인 모든 미디어의 스타일입니다.</td>
-   <td>@media (최대 너비: 480) {<br /> ...<br /> }</td>
+   <td>@media (최대 너비: 480px) {<br /> ...<br /> }</td>
   </tr>
  </tbody>
 </table>
@@ -155,7 +155,7 @@ responsive-1200px.css
 
 ### AEM 페이지에 미디어 쿼리 사용 {#using-media-queries-with-aem-pages}
 
-페이지 구성 요소의 JSP 스크립트에 클라이언트 라이브러리 폴더를 포함시켜 미디어 쿼리를 포함하는 CSS 파일을 생성하고 파일을 참조합니다.
+페이지 구성 요소의 JSP 스크립트에 클라이언트 라이브러리 폴더를 포함합니다. 이렇게 하면 미디어 쿼리를 포함하는 CSS 파일을 생성하고 파일을 참조하는 데 도움이 됩니다.
 
 ```xml
 <ui:includeClientLib categories="apps.weretail.all"/>
@@ -174,7 +174,7 @@ JSP 스크립트는 스타일 시트를 참조하는 다음 HTML 코드를 생�
 
 ## 특정 장치에 대한 미리 보기 {#previewing-for-specific-devices}
 
-반응형 디자인의 동작을 테스트하려면 다양한 뷰포트 크기로 페이지 미리 보기 를 참조하십시오. in **[!UICONTROL 미리 보기]** 모드, **[!UICONTROL 사이드킥입니다]** 포함 **[!UICONTROL 장치]** 장치를 선택하는 데 사용하는 드롭다운 메뉴 장치를 선택하면 페이지가 뷰포트 크기에 맞게 변경됩니다.
+반응형 디자인의 동작을 테스트할 수 있도록 다양한 뷰포트 크기로 페이지 미리 보기를 참조하십시오. in **[!UICONTROL 미리 보기]** 모드, **[!UICONTROL 사이드킥입니다]** 포함 **[!UICONTROL 장치]** 장치를 선택하는 데 사용하는 드롭다운 메뉴 장치를 선택하면 페이지가 뷰포트 크기에 맞게 변경됩니다.
 
 ![chlimage_1-5](assets/chlimage_1-5a.png)
 
@@ -230,37 +230,37 @@ AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설
 * 유형: `String[]`
 * 값: `/etc/mobile/groups/responsive`
 
-도구 콘솔을 사용하여 다음을 수행하십시오 [장치 그룹 만들기 및 편집](/help/sites-developing/groupfilters.md).
+도구 콘솔을 사용하여 다음을 수행할 수 있습니다 [장치 그룹 만들기 및 편집](/help/sites-developing/groupfilters.md).
 
 >[!NOTE]
 >
->응답형 디자인에 사용하는 장치 그룹의 경우 장치 그룹을 편집하고 일반 탭에서 에뮬레이터 비활성화를 선택합니다. 이 옵션은 응답형 디자인과는 관련이 없는 에뮬레이터 회전판이 표시되지 않도록 합니다.
+>응답형 디자인에 사용하는 장치 그룹의 경우 장치 그룹을 편집하고 일반 탭에서 에뮬레이터 비활성화를 선택합니다. 이 옵션은 에뮬레이터 회전판이 반응형 디자인과는 관련이 없는 것을 방지합니다.
 
 ## 응용 이미지 사용 {#using-adaptive-images}
 
 미디어 쿼리를 사용하여 페이지에 표시할 이미지 리소스를 선택할 수 있습니다. 그러나 미디어 쿼리를 사용하여 사용을 조건부 구현하는 모든 리소스는 클라이언트에 다운로드됩니다. 미디어 쿼리는 다운로드한 리소스가 표시되는지 여부만 결정합니다.
 
-이미지와 같은 큰 리소스의 경우 모든 리소스를 다운로드하는 것은 클라이언트의 데이터 파이프라인을 효율적으로 사용하지 않습니다. 리소스를 선택적으로 다운로드하려면 미디어 쿼리가 선택을 수행한 후 javascript를 사용하여 리소스 요청을 시작합니다.
+이미지와 같은 큰 리소스의 경우 모든 리소스를 다운로드하는 것은 클라이언트의 데이터 파이프라인을 효율적으로 사용하지 않습니다. 리소스를 선택적으로 다운로드하려면 미디어 쿼리가 선택을 수행한 후 JavaScript를 사용하여 리소스 요청을 시작합니다.
 
 다음 전략은 미디어 쿼리를 사용하여 선택한 단일 리소스를 로드합니다.
 
 1. 리소스의 각 버전에 대해 DIV 요소를 추가합니다. 리소스의 URI를 속성 값의 값으로 포함합니다. 브라우저가 속성을 리소스로 해석하지 않습니다.
 1. 리소스에 적합한 각 DIV 요소에 미디어 쿼리를 추가합니다.
-1. 문서가 로드되거나 창 크기가 변경되면 javascript 코드는 각 DIV 요소의 미디어 쿼리를 테스트합니다.
+1. 문서가 로드되거나 창 크기가 변경되면 JavaScript 코드는 각 DIV 요소의 미디어 쿼리를 테스트합니다.
 1. 쿼리 결과를 기반으로 포함할 리소스를 결정합니다.
 1. 리소스를 참조하는 HTML 요소를 DOM에 삽입합니다.
 
-### Javascript를 사용하여 미디어 쿼리 평가 {#evaluating-media-queries-using-javascript}
+### JavaScript를 사용하여 미디어 쿼리 평가 {#evaluating-media-queries-using-javascript}
 
-의 구현 [MediaQueryList 인터페이스](https://dev.w3.org/csswg/cssom-view/#the-mediaquerylist-interface) w3C에서 정의하는 기능을 사용하여 javascript를 사용하여 미디어 쿼리를 평가할 수 있습니다. 미디어 쿼리 결과에 논리를 적용하고 현재 창에 대해 타깃팅된 스크립트를 실행할 수 있습니다.
+의 구현 [MediaQueryList 인터페이스](https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface) w3C에서 정의하는 기능을 사용하여 JavaScript를 사용하여 미디어 쿼리를 평가할 수 있습니다. 미디어 쿼리 결과에 논리를 적용하고 현재 창에 대해 타깃팅된 스크립트를 실행할 수 있습니다.
 
 * MediaQueryList 인터페이스를 구현하는 브라우저는 `window.matchMedia()` 함수 위에 있어야 합니다. 이 함수는 지정된 문자열에 대해 미디어 쿼리를 테스트합니다. 함수는 `MediaQueryList` 쿼리 결과에 대한 액세스를 제공하는 개체입니다.
 
-* 인터페이스를 구현하지 않는 브라우저의 경우 `matchMedia()` 폴리필과 같은 [matchMedia.js](https://github.com/paulirish/matchMedia.js): 무료 javascript 라이브러리입니다.
+* 인터페이스를 구현하지 않는 브라우저의 경우 `matchMedia()` 폴리채우기(예: [matchMedia.js](https://github.com/paulirish/matchMedia.js): 무료 JavaScript 라이브러리입니다.
 
 #### 미디어별 리소스 선택 {#selecting-media-specific-resources}
 
-W3C 제안 [그림 요소](https://picture.responsiveimages.org/) 미디어 쿼리를 사용하여 이미지 요소에 사용할 소스를 결정합니다. 그림 요소는 요소 속성을 사용하여 미디어 쿼리를 이미지 경로와 연결합니다.
+W3C [그림 요소](https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element) 미디어 쿼리를 사용하여 이미지 요소에 사용할 소스를 결정합니다. 그림 요소는 요소 속성을 사용하여 미디어 쿼리를 이미지 경로와 연결합니다.
 
 무료 제공 [picturefill.js 라이브러리](https://github.com/scottjehl/picturefill) 는 제안된 과 유사한 기능을 제공합니다 `picture` 요소를 사용하고 유사한 전략을 사용합니다. picturefill.js 라이브러리 호출 `window.matchMedia` 세트에 대해 정의된 미디어 쿼리를 평가하려면 `div` 요소를 생성하지 않습니다. 각 `div` 요소 는 이미지 소스도 지정합니다. 소스는 `div` 요소 반환 `true`.
 
@@ -291,11 +291,11 @@ AEM 페이지에서 의 값 `data-src` 속성은 저장소에 있는 리소스�
 
 ### AEM에서 응용 이미지 구현 {#implementing-adaptive-images-in-aem}
 
-AEM 애플리케이션에서 응용 이미지를 구현하려면 필요한 Javascript 라이브러리를 추가하고 페이지에 필요한 HTML 마크업을 포함해야 합니다.
+AEM 애플리케이션에서 응용 이미지를 구현하려면 필요한 JavaScript 라이브러리를 추가하고 페이지에 필요한 HTML 마크업을 포함해야 합니다.
 
 **라이브러리**
 
-다음 javascript 라이브러리를 가져와 클라이언트 라이브러리 폴더에 포함합니다.
+다음 JavaScript 라이브러리를 가져와 클라이언트 라이브러리 폴더에 포함합니다.
 
 * [matchMedia.js](https://github.com/paulirish/matchMedia.js) (MediaQueryList 인터페이스를 구현하지 않는 브라우저의 경우)
 * [picturefill.js](https://github.com/scottjehl/picturefill)
@@ -308,7 +308,7 @@ AEM 애플리케이션에서 응용 이미지를 구현하려면 필요한 Javas
 
 picturefill.js 코드에 필요한 div 요소를 생성하는 구성 요소를 만듭니다. AEM 페이지에서 data-src 속성의 값은 저장소에 있는 리소스의 경로입니다. 예를 들어 페이지 구성 요소는 DAM에서 이미지 표현물에 대한 미디어 쿼리 및 관련 경로를 하드 코딩할 수 있습니다. 또는 작성자가 이미지 표현물을 선택하거나 런타임 렌더링 옵션을 지정할 수 있는 사용자 지정 이미지 구성 요소를 만듭니다.
 
-다음 예제 HTML은 동일한 이미지의 DAM 표현물 2개 중에서 선택합니다.
+다음 예제 HTML은 동일한 이미지의 두 DAM 표현물 중에서 선택합니다.
 
 ```xml
 <div data-picture>
@@ -329,7 +329,7 @@ picturefill.js 코드에 필요한 div 요소를 생성하는 구성 요소를 �
 
 ### AEM의 이미지 렌더링 이해 {#understanding-image-rendering-in-aem}
 
-이미지 렌더링을 사용자 지정하려면 기본 AEM 정적 이미지 렌더링 구현을 이해해야 합니다. AEM은 웹 페이지에 대한 이미지를 렌더링하기 위해 함께 작동하는 이미지 구성 요소 및 이미지 렌더링 서블릿을 제공합니다. 이미지 구성 요소가 페이지의 단락 시스템에 포함될 때 다음과 같은 이벤트 순서가 발생합니다.
+이미지 렌더링을 사용자 지정하려면 기본 AEM 정적 이미지 렌더링 구현을 이해해야 합니다. AEM은 웹 페이지에 대한 이미지를 렌더링하기 위해 함께 작동하는 이미지 구성 요소 및 이미지 렌더링 서블릿을 제공합니다. 이미지 구성 요소가 페이지의 단락 시스템에 포함될 때 다음과 같은 이벤트 시퀀스가 발생합니다.
 
 1. 작성: 작성자는 이미지 구성 요소를 편집하여 HTML 페이지에 포함할 이미지 파일을 지정합니다. 파일 경로는 이미지 구성 요소 노드의 속성 값으로 저장됩니다.
 1. 페이지 요청: 페이지 구성 요소의 JSP가 HTML 코드를 생성합니다. 이미지 구성 요소의 JSP는 페이지에 img 요소를 생성하여 추가합니다.
@@ -365,7 +365,7 @@ picturefill.js 코드에 필요한 div 요소를 생성하는 구성 요소를 �
 
 >[!NOTE]
 >
->웹 클라이언트는 matchMedia 및 Picturefill Javascript 라이브러리(또는 유사한 라이브러리)를 사용하여 미디어 선택기를 평가합니다.
+>웹 클라이언트는 matchMedia 및 Picturefill JavaScript 라이브러리(또는 유사한 라이브러리)를 사용하여 미디어 선택기를 평가합니다.
 
 이미지 요청을 처리하는 서블릿은 다음 작업을 수행해야 합니다.
 
@@ -384,7 +384,7 @@ AEM은 사용하거나 확장할 수 있는 다음 구현을 설치합니다.
 응용 이미지 구성 요소는 장치 화면에 따라 크기가 조정된 이미지를 렌더링하기 위해 응용 이미지 구성 요소 서블릿에 대한 호출을 생성합니다. 구성 요소에는 다음 리소스가 포함되어 있습니다.
 
 * JSP: 미디어 쿼리를 응용 이미지 구성 요소 서블릿에 대한 호출과 연결하는 div 요소를 추가합니다.
-* 클라이언트 라이브러리: clientlibs 폴더는 `cq:ClientLibraryFolder` matchMedia polyfill javascript 라이브러리와 수정된 Picturefill javascript 라이브러리를 결합합니다.
+* 클라이언트 라이브러리: clientlibs 폴더는 `cq:ClientLibraryFolder` matchMedia polyfill JavaScript 라이브러리와 수정된 Picturefill JavaScript 라이브러리를 결합합니다.
 * 편집 대화 상자: 다음 `cq:editConfig` 노드는 CQ 기초 이미지 구성 요소를 재정의하여, 드롭 대상이 기초 이미지 구성 요소가 아닌 응용 이미지 구성 요소를 만듭니다.
 
 #### DIV 요소 추가 {#adding-the-div-elements}
@@ -506,7 +506,7 @@ AEM 서비스 구성 방법에 대한 자세한 내용은 [OSGi 구성](/help/si
 
 #### 구현 세부 사항 {#implementation-details}
 
-다음 `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` class는 extends [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 클래스 이름을 지정합니다. AdaptiveImageComponentServlet 소스 코드는 `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` 폴더를 입력합니다.
+다음 `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` class는 extends [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 클래스 이름을 지정합니다. AdaptiveImageComponentServlet 소스 코드는 `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` 폴더를 입력합니다.
 
 이 클래스는 Felix SCR 주석을 사용하여 서블릿이 연결된 리소스 유형 및 파일 확장자와 첫 번째 선택기의 이름을 구성합니다.
 
@@ -539,11 +539,11 @@ AEM 서비스 구성 방법에 대한 자세한 내용은 [OSGi 구성](/help/si
             description = "List of widths this component is permitted to generate.")
 ```
 
-다음 `AbstractImageServlet` 클래스는 `doGet` HTTP 요청을 처리하는 메서드입니다. 이 메서드는 요청과 연결된 리소스를 결정하고 저장소에서 리소스 속성을 검색하고 [ImageContext](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) 개체.
+다음 `AbstractImageServlet` 클래스는 `doGet` HTTP 요청을 처리하는 메서드입니다. 이 메서드는 요청과 연결된 리소스를 결정하고 저장소에서 리소스 속성을 검색하고 [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) 개체.
 
 >[!NOTE]
 >
->다음 [com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) 클래스는 `getFileReference method`: 리소스의 값을 검색합니다. `fileReference` 속성을 사용합니다.
+>다음 [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) 클래스는 `getFileReference method`: 리소스의 값을 검색합니다. `fileReference` 속성을 사용합니다.
 
 다음 `AdaptiveImageComponentServlet` 클래스는 를 무시합니다 `createLayer` 메서드를 사용합니다. 상기 방법은 상기 영상 리소스의 경로 및 상기 요청된 영상 폭을 상기 정보로부터 획득한다 `ImageContext` 개체. 그런 다음 `info.geometrixx.commons.impl.AdaptiveImageHelper` 실제 이미지 크기 조정을 수행하는 클래스입니다.
 
@@ -611,7 +611,7 @@ AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설
 
 #### 구현 세부 사항 {#implementation-details-1}
 
-info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet 클래스는 [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 클래스 이름을 지정합니다. cq-geometrixx-commons-pkg 패키지가 설치된 경우 ImageReferenceModificationServlet 소스 코드는 `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` 폴더를 입력합니다.
+info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet 클래스는 [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 클래스 이름을 지정합니다. cq-geometrixx-commons-pkg 패키지가 설치된 경우 ImageReferenceModificationServlet 소스 코드는 `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` 폴더를 입력합니다.
 
 이 클래스는 Felix SCR 주석을 사용하여 서블릿이 연결된 리소스 유형 및 파일 확장자와 첫 번째 선택기의 이름을 구성합니다.
 
@@ -651,16 +651,16 @@ info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet 클래�
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-다음 `AbstractImageServlet` 클래스는 `doGet` HTTP 요청을 처리하는 메서드입니다. 이 메서드는 호출과 연결된 리소스를 결정하고 저장소에서 리소스 속성을 검색하여 [ImageContext](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) 개체.
+다음 `AbstractImageServlet` 클래스는 `doGet` HTTP 요청을 처리하는 메서드입니다. 이 메서드는 호출과 연결된 리소스를 결정하고 저장소에서 리소스 속성을 검색하여 [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) 개체.
 
-다음 `ImageReferenceModificationServlet` 클래스는 를 무시합니다 `createLayer` 렌더링할 이미지 리소스를 결정하는 논리를 구현합니다. 메서드는 페이지의 하위 노드를 검색합니다 `jcr:content` 노드 이름 `image`. An [이미지](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/Image.html) 이 개체를 사용하여 개체를 만듭니다 `image` 노드 및 `getFileReference` 메서드는 `fileReference` 이미지 노드의 속성입니다.
+다음 `ImageReferenceModificationServlet` 클래스는 를 무시합니다 `createLayer` 렌더링할 이미지 리소스를 결정하는 논리를 구현합니다. 메서드는 페이지의 하위 노드를 검색합니다 `jcr:content` 노드 이름 `image`. An [이미지](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) 이 개체를 사용하여 개체를 만듭니다 `image` 노드 및 `getFileReference` 메서드는 `fileReference` 이미지 노드의 속성입니다.
 
 >[!NOTE]
->다음 [com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) 클래스는 getFileReferencmethod를 제공합니다.
+>다음 [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) 클래스는 getFileReferencmethod를 제공합니다.
 
 ## 유체 그리드 개발 {#developing-a-fluid-grid}
 
-AEM을 사용하면 유체 그리드를 효율적이고 효과적으로 구현할 수 있습니다. 이 페이지에서는 Fluid Grid 또는 기존 그리드 구현을 통합하는 방법(예: [Bootstrap](https://twitter.github.com/bootstrap/))을 AEM 애플리케이션에 사용해야 합니다.
+AEM을 사용하면 유체 그리드를 효율적이고 효과적으로 구현할 수 있습니다. 이 페이지에서는 Fluid Grid 또는 기존 그리드 구현을 통합하는 방법(예: [Bootstrap](https://github.com/topics/twitter-bootstrap?l=css))을 AEM 애플리케이션에 사용해야 합니다.
 
 유체 그리드에 익숙하지 않다면 [유체 그리드 소개](/help/sites-developing/responsive.md#developing-a-fluid-grid) 섹션에 있는 마지막 항목이 될 필요가 없습니다. 이 소개에서는 유체 그리드에 대한 개요와 이를 디자인하기 위한 지침을 제공합니다.
 
@@ -711,7 +711,7 @@ geometrixx-media 페이지 구성 요소(`/etc/designs/geometrixx-media`)에 다
 
 >[!NOTE]
 >
->Geometrixx Media 샘플은 [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) javascript 프레임워크를 fluid grid 구현으로 전환합니다. Bootstrap 프레임워크은 bootstrap.css 파일을 제공합니다.
+>Geometrixx Media 샘플은 [Bootstrap](https://getbootstrap.com/2.0.2/) JavaScript 프레임워크를 fluid grid 구현으로 변환합니다. Bootstrap 프레임워크은 bootstrap.css 파일을 제공합니다.
 
 ```xml
 /* default styles (no media queries) */
@@ -766,7 +766,7 @@ geometrixx-media 페이지 구성 요소(`/etc/designs/geometrixx-media`)에 다
 
 #### 페이지 구성 요소 모듈화 {#tip-modularize-your-page-components}
 
-구성 요소를 모듈화하여 코드를 효율적으로 사용합니다. 사이트에서는 시작 페이지, 문서 페이지 또는 제품 페이지와 같은 여러 유형의 페이지를 사용할 수 있습니다. 각 유형의 페이지에는 서로 다른 유형의 컨텐츠가 포함되어 있으며 서로 다른 레이아웃을 사용할 수 있습니다. 그러나 각 레이아웃의 특정 요소가 여러 페이지에서 공통된 경우에는 레이아웃의 해당 부분을 구현하는 코드를 다시 사용할 수 있습니다.
+코드를 효율적으로 사용할 수 있도록 구성 요소를 모듈화합니다. 사이트에서는 시작 페이지, 문서 페이지 또는 제품 페이지와 같은 여러 유형의 페이지를 사용할 수 있습니다. 각 유형의 페이지에는 서로 다른 유형의 컨텐츠가 포함되어 있으며 서로 다른 레이아웃을 사용할 수 있습니다. 그러나 각 레이아웃의 특정 요소가 여러 페이지에서 공통된 경우에는 레이아웃의 해당 부분을 구현하는 코드를 다시 사용할 수 있습니다.
 
 **페이지 구성 요소 오버레이 사용**
 
@@ -776,7 +776,7 @@ geometrixx-media 페이지 구성 요소(`/etc/designs/geometrixx-media`)에 다
 
 예를 들어 Geometrixx-media 응용 프로그램에는 페이지 구성 요소( `sling:resourceSuperType` 는 기초 페이지 구성 요소입니다.) 여러 하위 구성 요소(예: 문서, 카테고리 및 media-home)는 이 페이지 구성 요소를 `sling:resourceSuperType`. 각 하위 구성 요소에는 페이지 구성 요소의 content.jsp 파일을 무시하는 content.jsp 파일이 포함되어 있습니다.
 
-**스크립트 다시 사용**
+**스크립트 재사용**
 
 여러 페이지 구성 요소에 공통인 행 및 열 조합을 생성하는 여러 JSP 스크립트를 생성합니다. 예: `content.jsp` 문서 및 media-home 구성 요소의 스크립트는 모두 `8x4col.jsp` 스크립트.
 
@@ -788,15 +788,15 @@ geometrixx-media 페이지 구성 요소(`/etc/designs/geometrixx-media`)에 다
 
 구성 요소가 단일 컨텐츠 블록을 생성할 때 일반적으로 페이지 구성 요소가 설정한 격자는 컨텐츠의 배치를 제어합니다.
 
-작성자는 콘텐츠 블록을 다양한 크기와 상대적 위치로 렌더링할 수 있어야 합니다. 콘텐츠 텍스트는 다른 콘텐츠 블록을 참조할 때 상대 방향을 사용하지 않아야 합니다.
+작성자는 콘텐츠 블록을 다양한 크기와 상대적 위치로 렌더링할 수 있습니다. 콘텐츠 텍스트는 다른 콘텐츠 블록을 참조할 때 상대 방향을 사용하지 않아야 합니다.
 
-필요한 경우 구성 요소는 생성하는 HTML 코드에 필요한 CSS 또는 Javascript 라이브러리를 제공해야 합니다. 구성 요소 내의 클라이언트 라이브러리 폴더를 사용하여 CSS 및 JS 파일을 생성합니다. 파일을 노출하려면 [종속성 만들기 또는 라이브러리 포함](/help/sites-developing/clientlibs.md#creating-client-library-folders) /etc 폴더 아래에 있는 다른 클라이언트 라이브러리 폴더에서 을 참조하십시오.
+필요한 경우 구성 요소는 생성하는 HTML 코드에 필요한 CSS 또는 JavaScript 라이브러리를 제공해야 합니다. CSS 및 JS 파일이 생성되도록 구성 요소 내에서 클라이언트 라이브러리 폴더를 사용하십시오. 파일을 노출하려면 [종속성 만들기 또는 라이브러리 포함](/help/sites-developing/clientlibs.md#creating-client-library-folders) /etc 폴더 아래에 있는 다른 클라이언트 라이브러리 폴더에서 을 참조하십시오.
 
 **하위 그리드**
 
 구성 요소에 여러 개의 컨텐츠 블록이 포함되어 있는 경우 행 내에 컨텐츠 블록을 추가하여 페이지에서 하위 그리드를 설정합니다.
 
-* 포함된 페이지 구성 요소와 동일한 클래스 이름을 사용하여 div 요소를 행 및 컨텐츠 블록으로 표현하십시오.
+* div 요소를 행과 컨텐츠 블록으로 나타낼 수 있도록 포함된 페이지 구성 요소와 동일한 클래스 이름을 사용하십시오.
 * 페이지 디자인의 CSS가 구현하는 동작을 무시하려면 행 div 요소에 두 번째 클래스 이름을 사용하고 클라이언트 라이브러리 폴더에 연결된 CSS를 제공합니다.
 
 예: `/apps/geometrixx-media/components/2-col-article-summary` 구성 요소는 두 개의 컨텐츠 열을 생성합니다. 생성되는 HTML의 구조는 다음과 같습니다.
@@ -851,16 +851,16 @@ geometrixx-media 페이지 구성 요소(`/etc/designs/geometrixx-media`)에 다
 
 HTML5 기술을 사용하여 격자를 구현하고 조작하여 다양한 뷰포트 크기에 맞게 페이지 레이아웃을 조정할 수 있습니다.
 
-* HTML `div` 요소에는 특정 개수의 열에 걸쳐 있는 콘텐츠 블록이 포함되어 있습니다.
-* 이러한 div 요소 중 하나 이상은 공통 상위 차원을 공유할 때 행이 포함됩니다.
+* HTML `div` 요소에는 일부 열에 걸쳐 있는 콘텐츠 블록이 포함되어 있습니다.
+* 이러한 div 요소 중 하나 이상은 공통 상위 div 요소를 공유할 때 행이 포함됩니다.
 
 ### 개별 너비 사용 {#using-discrete-widths}
 
-타깃팅하는 각 뷰포트 너비 범위에 대해 정적 페이지 너비와 일정한 너비의 컨텐츠 블록을 사용합니다. 브라우저 창의 크기를 수동으로 조정할 때, 컨텐츠 크기에 대한 변경 사항은 개별 창 너비(중단점이라고도 함)에서 발생합니다. 따라서 페이지 디자인이 더 밀접하게 부착되어 사용자 경험을 극대화할 수 있습니다.
+타깃팅하는 각 뷰포트 너비 범위에 대해 정적 페이지 너비와 일정한 너비의 컨텐츠 블록을 사용합니다. 브라우저 창의 크기를 수동으로 조정할 때, 컨텐츠 크기에 대한 변경 사항은 개별 창 너비(중단점이라고도 함)에서 발생합니다. 따라서 페이지 디자인이 더 밀접하게 연결되어 사용자 경험을 극대화할 수 있습니다.
 
 #### 그리드 크기 조절 {#scaling-the-grid}
 
-그리드를 사용하여 다양한 뷰포트 크기에 맞게 컨텐츠 블록의 크기를 조정할 수 있습니다. 콘텐츠 블록은 특정 개수의 열에 걸쳐 있습니다. 열 너비가 다른 뷰포트 크기에 맞게 증가 또는 감소하면 콘텐츠 블록의 너비가 그에 따라 증가 또는 감소합니다. 크기 조절은 컨텐츠 블록의 나란히 배치할 수 있을 만큼 충분히 큰 뷰포트 및 중간 크기의 뷰포트를 모두 지원할 수 있습니다.
+그리드를 사용하여 다양한 뷰포트 크기에 맞게 컨텐츠 블록의 크기를 조정할 수 있습니다. 콘텐츠 블록은 특정 개수의 열에 걸쳐 있습니다. 열 너비가 다른 뷰포트 크기에 맞게 증가 또는 감소하면 컨텐츠 블록의 너비가 그에 따라 증가 또는 감소합니다. 크기 조절은 컨텐츠 블록의 나란히 배치할 수 있을 만큼 충분히 큰 뷰포트 및 중간 크기의 뷰포트를 모두 지원할 수 있습니다.
 
 ![](do-not-localize/chlimage_1-1a.png)
 
@@ -876,7 +876,7 @@ HTML5 기술을 사용하여 격자를 구현하고 조작하여 다양한 뷰�
 
 **열 수**
 
-모든 뷰포트 크기에 맞게 모든 레이아웃에 컨텐츠 블록을 가로로 배치할 수 있는 충분한 열을 포함합니다. 향후 페이지 디자인을 수용하기 위해 현재 필요한 것보다 더 많은 열을 사용해야 합니다.
+모든 뷰포트 크기에 맞게 모든 레이아웃에 컨텐츠 블록을 가로로 배치할 수 있는 충분한 열을 포함합니다. 향후 페이지 디자인을 수용할 수 있도록 현재 필요한 것보다 많은 열을 사용하십시오.
 
 **행 콘텐츠**
 
@@ -887,7 +887,7 @@ HTML5 기술을 사용하여 격자를 구현하고 조작하여 다양한 뷰�
 
 ### 그리드 구현 {#grid-implementations}
 
-CSS 클래스와 스타일을 만들어 페이지에서 컨텐츠 블록의 레이아웃을 제어합니다. 페이지 디자인은 뷰포트 내의 콘텐츠 블록의 상대적 크기와 위치를 기반으로 하는 경우가 많습니다. 뷰포트는 콘텐츠 블록의 실제 크기를 결정합니다. CSS는 상대적 크기와 절대 크기를 고려해야 합니다. 다음 세 가지 유형의 CSS 클래스를 사용하여 유체 그리드를 구현할 수 있습니다.
+페이지에서 콘텐츠 블록의 레이아웃을 제어할 수 있도록 CSS 클래스와 스타일을 만듭니다. 페이지 디자인은 뷰포트 내의 콘텐츠 블록의 상대적 크기와 위치를 기반으로 하는 경우가 많습니다. 뷰포트는 콘텐츠 블록의 실제 크기를 결정합니다. CSS는 상대적 및 절대 크기를 고려해야 합니다. 다음 세 가지 유형의 CSS 클래스를 사용하여 유체 그리드를 구현할 수 있습니다.
 
 * 클래스 `div` 모든 행의 컨테이너인 요소. 이 클래스는 그리드의 절대 너비를 설정합니다.
 * 클래스 `div` 행을 나타내는 요소. 이 클래스는 포함된 콘텐츠 블록의 가로 또는 세로 위치를 제어합니다.
@@ -897,9 +897,9 @@ CSS 클래스와 스타일을 만들어 페이지에서 컨텐츠 블록의 레�
 
 #### 콘텐츠 블록 너비 {#widths-of-content-blocks}
 
-일반적으로 `width` 컨텐츠 블록 클래스 스타일은 다음과 같은 페이지 및 격자의 특성을 기반으로 합니다.
+일반적으로 `width` 컨텐츠 블록 클래스의 스타일은 페이지 및 격자의 다음 특성을 기반으로 합니다.
 
-* 타깃팅된 각 뷰포트 크기에 사용하는 절대 페이지 너비입니다. 알려진 값입니다.
+* 타깃팅된 각 뷰포트 크기에 사용하는 절대 페이지 너비입니다. 알려진 값.
 * 각 페이지 너비에 대한 그리드 열의 절대 너비입니다. 이 값을 결정합니다.
 * 각 열의 상대적 너비는 총 페이지 너비의 백분율로 표시됩니다. 이 값을 계산합니다.
 
@@ -927,7 +927,7 @@ CSS에는 다음 구조를 사용하는 일련의 미디어 쿼리가 포함되�
 
 1. 모든 행을 포함하는 div 요소에 대한 클래스 이름을 정의합니다(예: ). `content.`
 1. 다음과 같이 행을 나타내는 div 요소에 대한 CSS 클래스를 정의합니다. `row-fluid`.
-1. 콘텐츠 블록 요소의 클래스 이름을 정의합니다. 열 범위 측면에서 가능한 모든 너비에 클래스가 필요합니다. 예를 들어, `span3` 클래스 `div` 3열에 걸쳐 있는 요소 `span4` 4열 범위의 클래스 그리드에 열이 있을 만큼 클래스를 정의합니다.
+1. 콘텐츠 블록 요소의 클래스 이름을 정의합니다. 열 범위 측면에서 가능한 모든 너비에 클래스가 필요합니다. 예를 들어, `span3` 클래스 `div` 세 열에 걸쳐 있는 요소 `span4` 4개 열 범위의 클래스 그리드에 열이 있을 만큼 클래스를 정의합니다.
 
 1. 타깃팅하는 각 뷰포트 크기에 대해 해당 미디어 쿼리를 CSS 파일에 추가합니다. 각 미디어 쿼리에 다음 항목을 추가합니다.
 
@@ -940,12 +940,12 @@ CSS에는 다음 구조를 사용하는 일련의 미디어 쿼리가 포함되�
 
    1. 너비 설정 `content` 페이지의 절대 크기에 대한 선택기(예: `width:480px`.
    1. 모든 행-유체 선택기의 너비를 100%로 설정합니다.
-   1. 모든 범위 선택기의 너비를 컨텐츠 블록의 절대 너비로 설정합니다. 작은 격자에서는 동일한 너비의 균일하게 분포된 열을 사용합니다. `(absolute width of page)/(number of columns)`.
+   1. 모든 범위 선택기의 너비를 컨텐츠 블록의 절대 너비로 설정합니다. 작은 격자는 동일한 너비의 균일한 분포된 열을 사용합니다. `(absolute width of page)/(number of columns)`.
    1. 너비 설정 `.row-fluid .span` 전체 너비의 백분율로 선택기 다음 아이콘을 사용하여 이 너비 계산 `(absolute span width)/(absolute page width)*100` 공식.
 
 #### 행에 컨텐츠 블록 위치 지정 {#positioning-content-blocks-in-rows}
 
-의 부동 스타일을 사용합니다 `.row-fluid` 행의 콘텐츠 블록이 가로로 배치되는지 세로로 배치되는지를 제어하는 클래스입니다.
+의 부동 스타일을 사용합니다 `.row-fluid` 클래스에 대한 클래스를 사용하여 행의 콘텐츠 블록이 가로로 배치되는지 세로로 배치되는지를 제어할 수 있습니다.
 
 * 다음 `float:left` 또는 `float:right` 스타일로 인해 하위 요소(콘텐츠 블록)가 가로 분포됩니다.
 
