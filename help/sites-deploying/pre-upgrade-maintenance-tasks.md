@@ -12,10 +12,10 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '2148'
-ht-degree: 0%
+source-wordcount: '2030'
+ht-degree: 1%
 
 ---
 
@@ -50,11 +50,11 @@ AEM은 업그레이드를 시작하기 전에 완전히 백업해야 합니다. 
 
 ## /etc에 변경 내용 백업 {#backup-changes-etc}
 
-업그레이드 프로세스는 의 `/apps` 및 `/libs` 저장소의 경로입니다. 에 대한 변경 사항 `/etc` Context Hub 구성을 포함한 경로는 업그레이드 후 이러한 변경 사항을 다시 적용해야 하는 경우가 많습니다. 업그레이드는 병합할 수 없는 변경 내용의 백업 복사본을 만듭니다. `/var`를 설정하는 것이 좋습니다. 업그레이드를 시작하기 전에 이러한 변경 사항을 수동으로 백업하는 것이 좋습니다.
+업그레이드 프로세스는 의 `/apps` 및 `/libs` 저장소의 경로입니다. 에 대한 변경 사항 `/etc` Context Hub 구성을 포함한 경로는 업그레이드 후 이러한 변경 사항을 다시 적용해야 하는 경우가 많습니다. 업그레이드는 병합할 수 없는 변경 내용의 백업 복사본을 만드는 동안 `/var`, Adobe은 업그레이드를 시작하기 전에 이러한 변경 사항을 수동으로 백업하는 것을 권장합니다.
 
 ## quickstart.properties 파일 생성 {#generate-quickstart-properties}
 
-jar 파일에서 AEM을 시작할 때 `quickstart.properties` 파일은 `crx-quickstart/conf`. AEM이 이전에 시작 스크립트로만 시작된 경우 이 파일이 존재하지 않으며 업그레이드가 실패합니다. 이 파일이 있는지 확인하고 jar 파일이 없으면 jar 파일에서 AEM을 다시 시작하십시오.
+jar 파일에서 AEM을 시작할 때 `quickstart.properties` 파일은에 생성됩니다. `crx-quickstart/conf`. AEM이 이전에 시작 스크립트로만 시작된 경우 이 파일이 없으며 업그레이드가 실패합니다. 이 파일이 있는지 확인하고 jar 파일이 없으면 jar 파일에서 AEM을 다시 시작하십시오.
 
 ## 워크플로우 및 감사 로그 삭제 구성 {#configure-wf-audit-purging}
 
@@ -64,9 +64,9 @@ AEM 6.0에서 감사 로그 삭제뿐만 아니라 CQ 5.6에서 워크플로우 
 
 ## 업그레이드 전 작업 설치, 구성 및 실행 {#install-configure-run-pre-upgrade-tasks}
 
-AEM에서 허용하는 사용자 지정 수준 때문에 일반적으로 환경은 업그레이드를 수행하는 동일한 방법을 준수하지 않습니다. 따라서 업그레이드 절차가 까다롭도록 표준화된 절차가 생성됩니다.
+AEM에서 허용하는 사용자 지정 수준 때문에 일반적으로 환경은 업그레이드를 수행하는 동일한 방법을 준수하지 않습니다. 그만큼 업그레이드 절차가 까다롭다는 것이다.
 
-이전 버전에서는 AEM 업그레이드가 중지되었거나 안전하게 다시 시작되지 않은 경우도 있었습니다. 이로 인해 전체 업그레이드 절차를 다시 시작해야 하거나 경고를 트리거하지 않고 결함이 있는 업그레이드를 수행한 상황이 발생했습니다.
+이전 버전에서는 AEM 업그레이드가 중지되었거나 안전하게 다시 시작하지 못한 경우도 있었습니다. 이 문제로 인해 전체 업그레이드 절차를 다시 시작해야 하거나 경고를 트리거하지 않고 결함이 있는 업그레이드를 수행한 문제가 발생했습니다.
 
 이러한 문제를 해결하기 위해 Adobe은 업그레이드 프로세스에 몇 가지 개선 사항을 추가하여 보다 탄력적이고 사용자 친화적으로 만듭니다. 수동으로 수행해야 했던 사전 업그레이드 유지 관리 작업은 최적화 및 자동화되어 있습니다. 또한 업그레이드 후 보고서가 추가되어 모든 문제가 보다 쉽게 해결되기를 희망하면서 프로세스를 완전히 검토할 수 있습니다.
 
@@ -76,15 +76,19 @@ AEM에서 허용하는 사용자 지정 수준 때문에 일반적으로 환경�
 
 ### 설정 방법 {#how-to-set-it-up}
 
-AEM 6.3 이상에서는 업그레이드 전 유지 관리 최적화 작업이 quickstart jar에 포함됩니다. 이전 버전의 AEM 6에서 업그레이드하는 경우 패키지 관리자에서 다운로드할 수 있는 별도의 패키지를 통해 사용할 수 있습니다.
+AEM 6.3 이상에서는 업그레이드 전 유지 관리 최적화 작업이 quickstart jar에 포함됩니다.
 
-패키지는 다음 위치에서 찾을 수 있습니다.
+<!-- URLs below are all 404s. This content should probably be removed because it is entirely obsolete.
 
-* [AEM 6.0에서 업그레이드하는 경우](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq600/product/pre-upgrade-tasks-content-cq60)
+If you are upgrading from an older version of AEM 6, they are made available through separate packages that you can download from the Package Manager.
 
-* [AEM 6.1에서 업그레이드하는 경우](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq610/product/pre-upgrade-tasks-content-cq61)
+You can find the packages at these locations:
 
-* [AEM 6.2에서 업그레이드하는 경우](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62)
+* [For upgrading from AEM 6.0](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq600/product/pre-upgrade-tasks-content-cq60)
+
+* [For upgrading from AEM 6.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq610/product/pre-upgrade-tasks-content-cq61)
+
+* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62) -->
 
 ### 사용 방법 {#how-to-use-it}
 
@@ -92,7 +96,7 @@ AEM 6.3 이상에서는 업그레이드 전 유지 관리 최적화 작업이 qu
 
 1. 로 이동하여 웹 콘솔로 이동합니다. *https://serveraddress:serverport/system/console/configMgr*
 
-1. &quot; 검색&#x200B;**업그레이드 요청**&quot; 를 클릭한 다음 첫 번째 일치하는 구성 요소를 클릭합니다. 구성 요소의 전체 이름은 `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
+1. &quot; 검색&#x200B;**업그레이드 요청**&quot;를 클릭한 다음 첫 번째 일치하는 구성 요소를 클릭합니다. 구성 요소의 전체 이름은 `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
 
 1. 아래와 같이 실행해야 하는 유지 관리 작업 목록을 수정합니다.
 
@@ -115,7 +119,7 @@ AEM 6.3 이상에서는 업그레이드 전 유지 관리 최적화 작업이 qu
   <tr>
    <td><code>DataStoreGarbageCollectionTask</code></td>
    <td>crx2</td>
-   <td>마크와 쓸어 공유 데이터 저장소의 경우 이 단계를 제거하고 를 실행합니다<br /> 수동으로 또는 올바르게 인스턴스 준비 를 한 후에 실행할 수 있습니다.</td>
+   <td>표시를 실행하고 쓸어라. 공유 데이터 저장소의 경우 이 단계를 제거하고 를 실행합니다<br /> 수동으로 또는 올바르게 인스턴스 준비 를 한 후에 실행할 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>ConsistencyCheckTask</code></td>
@@ -147,7 +151,7 @@ AEM 6.3 이상에서는 업그레이드 전 유지 관리 최적화 작업이 qu
 
 >[!CAUTION]
 >
->`DataStoreGarbageCollectionTask` 이(가) 표시 및 쓸기 단계를 사용하여 데이터 저장소 가비지 수집 작업을 호출하는 경우 공유 데이터 저장소를 사용하는 배포의 경우 다시 구성하거나 인스턴스를 준비하여 다른 인스턴스에서 참조하는 항목이 삭제되지 않도록 해야 합니다. 이 경우 이 사전 업그레이드 작업을 트리거하기 전에 모든 인스턴스에서 표시 단계를 수동으로 실행해야 할 수 있습니다.
+>다음 `DataStoreGarbageCollectionTask` 사용하면 데이터 저장소 가비지 수집 작업을 표시 및 제거 단계로 호출합니다. 공유 데이터 저장소를 사용하는 배포의 경우 제대로 다시 구성하거나 다른 인스턴스에서 참조하는 항목이 삭제되지 않도록 인스턴스를 준비하십시오. 이 프로세스는 이 사전 업그레이드 작업을 트리거하기 전에 모든 인스턴스에서 표시 단계를 수동으로 실행해야 할 수 있습니다.
 
 ### 업그레이드 전 상태 확인의 기본 구성 {#default-configuration-of-the-pre-upgrade-health-checks}
 
@@ -155,7 +159,7 @@ AEM 6.3 이상에서는 업그레이드 전 유지 관리 최적화 작업이 qu
 
 * **시스템** - granite 유지 관리 상태 확인에서 사용하는 태그
 
-* **사전 업그레이드** - 업그레이드 전에 실행하도록 설정할 수 있는 모든 상태 검사에 추가할 수 있는 사용자 지정 태그입니다
+* **사전 업그레이드** - 업그레이드 전에 실행하도록 설정할 수 있는 모든 상태 검사에 추가할 수 있는 사용자 지정 태그
 
 목록을 편집할 수 있습니다. 플러스를 이용하시면 됩니다 **(+)** 및 빼기 **(-)** 태그 옆에 있는 버튼을 클릭하여 사용자 지정 태그를 추가하거나 기본 태그를 제거합니다.
 
@@ -202,12 +206,12 @@ AEM 6.3 이상에서는 업그레이드 전 유지 관리 최적화 작업이 qu
   <tr>
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>다음을 확인하는지 확인합니다. <code>runAllPreUpgradeTasksmaintenance</code> 작업이 현재 실행 중입니다.</td>
+   <td>다음을 확인하는지 확인합니다. <code>runAllPreUpgradeTasksmaintenance</code> 작업이 실행 중입니다.</td>
   </tr>
   <tr>
    <td><code>getAnyPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>업그레이드 전 유지 관리 작업이 현재 실행 중인지 확인하고<br /> 현재 실행 중인 작업의 이름이 들어 있는 배열을 반환합니다.</td>
+   <td>업그레이드 전 유지 관리 작업이 실행 중인지 확인하고<br /> 현재 실행 중인 작업의 이름이 들어 있는 배열을 반환합니다.</td>
   </tr>
   <tr>
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td>
@@ -222,12 +226,12 @@ AEM 6.3 이상에서는 업그레이드 전 유지 관리 최적화 작업이 qu
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
    <td>작업</td>
-   <td><p>모든 업그레이드 전 상태 검사를 실행하고 해당 상태를 라는 파일에 저장합니다 <code>preUpgradeHCStatus.properties</code> sling 홈 경로에 있습니다. 만약 <code>shutDownOnSuccess</code> 매개 변수가 <code>true</code>로 설정되면 AEM 인스턴스가 종료되지만, 모든 업그레이드 전 상태 검사가 확인 상태인 경우에만 종료됩니다.</p> <p>속성 파일은 향후 업그레이드를 위한 전제 조건으로 사용됩니다<br /> 및 업그레이드 전 상태 검사가 있을 경우 업그레이드 프로세스가 중지됩니다<br /> 실행하지 못했습니다. 사전 업그레이드 결과를 무시하려면<br /> 상태 점검 및 업그레이드를 실행하면 파일을 삭제할 수 있습니다.</p> </td>
+   <td><p>모든 업그레이드 전 상태 검사를 실행하고 해당 상태를 라는 파일에 저장합니다 <code>preUpgradeHCStatus.properties</code> sling 홈 경로에 있습니다. 만약 <code>shutDownOnSuccess</code> 매개 변수가 <code>true</code>로 설정되면 AEM 인스턴스가 종료되지만, 모든 업그레이드 전 상태 검사가 OK 상태인 경우에만 해당됩니다.</p> <p>속성 파일은 향후 업그레이드를 위한 전제 조건으로 사용됩니다<br /> 업그레이드 전 상태 확인의 경우 업그레이드 프로세스가 중지됩니다<br /> 실행하지 못했습니다. 사전 업그레이드 결과를 무시하려면<br /> 상태 점검 및 업그레이드를 실행하면 파일을 삭제할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
    <td>작업</td>
-   <td>다음 상황에서 더 이상 만족하지 않을 모든 가져온 패키지를 나열합니다<br /> 지정된 AEM 버전으로 업그레이드하는 중입니다. target AEM 버전은<br /> 매개 변수로 제공됩니다.</td>
+   <td>다음과 같은 경우 더 이상 만족하지 않는 가져온 모든 패키지를 나열합니다<br /> 지정된 AEM 버전으로 업그레이드하는 중입니다. target AEM 버전은<br /> 매개 변수로 제공됩니다.</td>
   </tr>
  </tbody>
 </table>
@@ -254,7 +258,7 @@ AEM 버전에서 CRX2 구성을 사용한 는 `repository.xml` 파일(AEM 6 이�
 
 따라서 업그레이드 후 Apache Oak에 대해 기존 구성을 비활성화하고 다시 만들어야 합니다.
 
-JAAS 구성에 정의된 사용자 지정 모듈을 비활성화하려면 `repository.xml`을 지정하는 경우 구성을 수정하여 기본값을 사용해야 합니다 `LoginModule`와 같습니다.
+JAAS 구성에 정의된 사용자 지정 모듈을 비활성화하려면 `repository.xml`를 지정하는 경우, 기본값을 사용하려면 구성을 편집해야 합니다 `LoginModule`다음 예와 같이,
 
 ```xml
 <Security >
@@ -283,13 +287,13 @@ JAAS 구성에 정의된 사용자 지정 모듈을 비활성화하려면 `repos
 
 >[!NOTE]
 >
->AEM 인스턴스를 종료한 후 crx-quickstart/install 디렉토리에서 패키지만 제거합니다. 이 작업은 즉각적인 업그레이드 절차를 시작하기 전에 마지막 단계 중 하나입니다.
+>AEM 인스턴스를 종료한 후 crx-quickstart/install 디렉토리에서 패키지만 제거합니다. 이 단계는 즉각적인 업그레이드 절차를 시작하기 전의 마지막 단계 중 하나입니다.
 
-를 통해 배포된 서비스 팩, 기능 팩 또는 핫픽스를 제거합니다. `crx-quickstart/install` 로컬 파일 시스템의 디렉토리입니다. 이렇게 하면 업데이트가 완료된 후 새 AEM 버전 위에 이전 핫픽스 및 서비스 팩을 실수로 설치하지 못합니다.
+를 통해 배포된 서비스 팩, 기능 팩 또는 핫픽스를 제거합니다. `crx-quickstart/install` 로컬 파일 시스템의 디렉토리입니다. 이렇게 하면 업데이트가 완료된 후 새 AEM 버전 위에 이전 핫픽스 및 서비스 팩을 실수로 설치하지 않습니다.
 
 ## 콜드 대기 인스턴스 정지 {#stop-tarmk-coldstandby-instance}
 
-TarMK 콜드 대기기를 사용하는 경우, 콜드 대기 인스턴스를 중지합니다. 이는 업그레이드 시 문제가 발생할 경우 온라인으로 돌아가는 효율적인 방법을 보장합니다. 업그레이드가 성공적으로 완료되면 업그레이드된 기본 인스턴스에서 콜드 대기 인스턴스를 다시 빌드해야 합니다.
+TarMK 콜드 대기기를 사용하는 경우, 콜드 대기 인스턴스를 중지합니다. 이렇게 하면 업그레이드에 문제가 있을 경우 온라인 상태로 전환하는 효율적인 방법이 보장됩니다. 업그레이드가 성공적으로 완료되면 업그레이드된 기본 인스턴스에서 콜드 대기 인스턴스를 다시 빌드해야 합니다.
 
 ## 사용자 지정 예약 작업 비활성화 {#disable-custom-scheduled-jobs}
 
@@ -301,7 +305,7 @@ TarMK 콜드 대기기를 사용하는 경우, 콜드 대기 인스턴스를 중
 >
 >이 단계는 TarMK 설치에만 필요합니다
 
-TarMK를 사용하는 경우 업그레이드하기 전에 오프라인 개정 정리를 실행해야 합니다. 이렇게 하면 저장소 마이그레이션 단계 및 후속 업그레이드 작업이 훨씬 더 빨리 실행되며 업그레이드가 완료된 후 온라인 개정 정리를 성공적으로 실행할 수 있도록 할 수 있습니다. 오프라인 개정 정리 실행에 대한 자세한 내용은 [오프라인 개정 정리 수행](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+TarMK를 사용하는 경우 업그레이드하기 전에 오프라인 개정 정리를 실행해야 합니다. 이렇게 하면 저장소 마이그레이션 단계와 후속 업그레이드 작업이 훨씬 더 빨리 실행되며 업그레이드가 완료된 후 온라인 개정 정리를 성공적으로 실행할 수 있도록 할 수 있습니다. 오프라인 개정 정리 실행에 대한 자세한 내용은 [오프라인 개정 정리 수행](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
 
 ## 데이터 저장소 가비지 수집 실행 {#execute-datastore-garbage-collection}
 
@@ -313,14 +317,14 @@ CRX3 인스턴스에서 개정 정리를 실행한 후 데이터 저장소 가�
 
 ## 필요한 경우 데이터베이스 스키마 업그레이드 {#upgrade-the-database-schema-if-needed}
 
-일반적으로 지속성을 위해 사용하는 기본 Apache Oak 스택 AEM은 필요한 경우 데이터베이스 스키마를 업그레이드하도록 처리합니다.
+일반적으로 지속성을 위해 AEM에서 사용하는 기본 Apache Oak 스택은 필요한 경우 데이터베이스 스키마를 업그레이드합니다.
 
-그러나 스키마를 자동으로 업그레이드할 수 없을 때 사례가 발생할 수 있습니다. 이러한 환경은 데이터베이스가 매우 제한된 개인 정보 보호 환경에서 실행되는 높은 보안 환경입니다. 이렇게 되면 AEM에서는 이전 스키마를 계속 사용합니다.
+그러나 스키마를 자동으로 업그레이드할 수 없을 때 사례가 발생할 수 있습니다. 이러한 경우는 대부분 제한된 권한이 있는 사용자에게 데이터베이스가 실행되는 높은 보안 환경입니다. 이러한 상황이 발생하면 AEM에서는 이전 스키마를 계속 사용합니다.
 
-이러한 문제가 발생하지 않도록 하려면 아래 절차에 따라 스키마를 업그레이드해야 합니다.
+이러한 시나리오가 발생하지 않도록 하려면 다음을 수행하여 스키마를 업그레이드하십시오.
 
 1. 업그레이드해야 하는 AEM 인스턴스를 종료합니다.
-1. 데이터베이스 스키마를 업그레이드합니다. 이 작업을 수행하기 위해 사용해야 하는 도구를 확인하려면 데이터베이스 유형에 대한 설명서를 참조하십시오.
+1. 데이터베이스 스키마를 업그레이드합니다. 결과를 얻으려면 데이터베이스 유형에 대한 설명서를 참조하십시오.
 
    Oak가 스키마 업그레이드를 처리하는 방법에 대한 자세한 내용은 [Apache 웹 사이트의 이 페이지](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
 
@@ -339,7 +343,7 @@ CRX3 인스턴스에서 개정 정리를 실행한 후 데이터 저장소 가�
 
 서비스 사용자가 이전 AEM 버전에서 일반 사용자로 잘못 태그가 지정된 경우 예외적인 경우가 있습니다.
 
-이러한 경우 다음과 같은 메시지가 표시되면서 업그레이드가 실패합니다.
+이러한 상황이 발생하면 다음과 같은 메시지와 함께 업그레이드가 실패합니다.
 
 ```
 ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
@@ -349,8 +353,8 @@ java.lang.RuntimeException: Unable to create service user [communities-utility-r
 이 문제를 해결하려면 다음을 수행하십시오.
 
 1. 프로덕션 트래픽에서 인스턴스 분리
-1. 문제를 일으키는 사용자의 백업을 만듭니다. 패키지 관리자를 통해 이 작업을 수행할 수 있습니다. 자세한 내용은 [패키지 작업 방법.](/help/sites-administering/package-manager.md)
-1. 문제를 일으키는 사용자를 삭제합니다. 다음은 이 카테고리에 속할 수 있는 사용자 목록입니다.
+1. 문제를 일으키는 사용자를 한 명 이상 백업하십시오. 이 작업은 패키지 관리자를 통해 수행할 수 있습니다. 자세한 내용은 [패키지 작업 방법.](/help/sites-administering/package-manager.md)
+1. 문제를 일으키는 사용자를 한 명 이상 삭제합니다. 다음은 이 카테고리에 속할 수 있는 사용자 목록입니다.
 
    1. `dynamic-media-replication`
    1. `communities-ugc-writer`
@@ -361,4 +365,4 @@ java.lang.RuntimeException: Unable to create service user [communities-utility-r
 
 ## 로그 파일 회전 {#rotate-log-files}
 
-업그레이드를 시작하기 전에 현재 로그 파일을 보관하는 것이 좋습니다. 이렇게 하면 업그레이드 도중 및 업그레이드 후에 로그 파일을 보다 쉽게 모니터링 및 스캔하여 발생할 수 있는 모든 문제를 식별하고 해결할 수 있습니다.
+Adobe은 업그레이드를 시작하기 전에 현재 로그 파일을 보관하도록 권장합니다. 이렇게 하면 업그레이드 도중 및 이후에 로그 파일을 보다 손쉽게 모니터링하고 스캔하여 발생할 수 있는 문제를 식별하고 해결할 수 있습니다.

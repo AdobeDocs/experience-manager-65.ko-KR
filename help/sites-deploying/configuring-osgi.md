@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 55f6aab3e41159735e332b2740e3a21c563c1157
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '1949'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 OSGi &quot;*작은 구성 요소, 재사용 가능한 공동 작업 구성 요소를 통해 응용 프로그램을 구축할 수 있는 표준화된 프리미티브(primitives)를 제공합니다. 이러한 구성 요소는 응용 프로그램으로 작성하고 배포할 수 있습니다*&quot;.
 
-이렇게 하면 번들을 중단, 설치 및 개별적으로 시작할 수 있으므로 번들을 쉽게 관리할 수 있습니다. 상호 종속성은 자동으로 처리됩니다. 각 OSGi 구성 요소( [OSGi 사양](https://www.osgi.org/Specifications/HomePage))은 다양한 번들 중 하나에 포함되어 있습니다.
+이렇게 하면 번들을 중단, 설치 및 개별적으로 시작할 수 있으므로 번들을 쉽게 관리할 수 있습니다. 상호 종속성은 자동으로 처리됩니다. 각 OSGi 구성 요소( [OSGi 사양](https://docs.osgi.org/specification/))은 다양한 번들 중 하나에 포함되어 있습니다.
 
 다음 방법 중 하나로 이러한 번들에 대한 구성 설정을 관리할 수 있습니다.
 
@@ -194,7 +194,7 @@ OSGi &quot;*작은 구성 요소, 재사용 가능한 공동 작업 구성 요�
    * `config` - 모든 실행 모드
    * `config.author` - 작성 환경용
    * `config.publish` - 게시 환경의 경우
-   * `config.<run-mode>` - 적절하
+   * `config.<run-mode>` - 적절히
 
 1. 는 **구성** 또는 **출하 시 구성** 필요한 경우
 1. 구성해야 하는 기존 매개 변수 정의를 비롯하여 구성할 개별 매개 변수입니다.
