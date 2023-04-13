@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: f23adcf200b625e2ab2a766460c41fd7e38fae83
+source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
 workflow-type: tm+mt
-source-wordcount: '2986'
+source-wordcount: '3025'
 ht-degree: 2%
 
 ---
@@ -262,7 +262,7 @@ AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설
 * 외부 소스의 요청이 많습니다.
 * 시스템이 성공적으로 전달할 수 있는 것보다 더 많은 정보를 요청하는 요청.
 
-   예를 들어 전체 저장소의 JSON 표현입니다.
+   예를 들어 전체 리포지토리의 JSON 표현입니다.
 
 * URL은 URL이 무제한으로 포함된 컨텐츠 페이지를 요청하여 핸들, 일부 선택기, 확장 및 접미사를 포함할 수 있으며 이 모든 것은 수정할 수 있습니다.
 
@@ -396,7 +396,17 @@ AEM 6.1 이후, 사용자(인증 가능이라고도 함) ID 노드 이름이 저
 
 모든 저장소 데이터와 마찬가지로 이러한 속성은 Oak 인증 스택에 의해 조정됩니다. 최소한의 특권 원칙에 따라 접근이 제한돼야 한다.
 
-이를 지원하기 위해 Adobe은 고객이 빌드할 수 있도록 권한 강화 패키지를 제공합니다. 저장소 루트에 &quot;거부&quot; 액세스 제어 항목을 설치하여 일반적으로 사용되는 시스템 속성에 대한 익명 액세스를 제한함으로써 작동합니다. 패키지를 다운로드할 수 있습니다 [여기](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) 지원되는 모든 AEM 버전에 설치할 수 있습니다. 자세한 내용은 릴리스 노트 를 참조하십시오.
+이를 지원하기 위해 Adobe은 고객이 빌드할 수 있도록 권한 강화 패키지를 제공합니다. 저장소 루트에 &quot;거부&quot; 액세스 제어 항목을 설치하여 일반적으로 사용되는 시스템 속성에 대한 익명 액세스를 제한함으로써 작동합니다. 패키지를 다운로드할 수 있습니다 [여기](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) 지원되는 모든 AEM 버전에 설치할 수 있습니다.
+
+변경 사항을 보여주기 위해 패키지를 설치하기 전에 익명으로 볼 수 있는 노드 속성을 비교할 수 있습니다.
+
+![패키지 설치 전](/help/sites-administering/assets/before_resized.png)
+
+패키지 설치 후 볼 수 있는 상태로 `jcr:createdBy` 및 `jcr:lastModifiedBy` 표시되지 않음:
+
+![패키지 설치 후](/help/sites-administering/assets/after_resized.png)
+
+자세한 내용은 패키지 릴리스 정보를 참조하십시오.
 
 ### 클릭재킹 방지 {#prevent-clickjacking}
 
