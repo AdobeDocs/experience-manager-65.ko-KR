@@ -12,7 +12,7 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: e44480535ea7058dc41fc747351446b670d03b7f
+source-git-commit: f23adcf200b625e2ab2a766460c41fd7e38fae83
 workflow-type: tm+mt
 source-wordcount: '2986'
 ht-degree: 2%
@@ -390,7 +390,7 @@ AEM 6.1 이후, 사용자(인증 가능이라고도 함) ID 노드 이름이 저
 >
 >자세한 내용은 [작성 가능한 노드 이름 생성](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
 
-**익명 권한 강화 패키지**
+### 익명 권한 강화 패키지 {#anonymous-permission-hardening-package}
 
 기본적으로 AEM은 다음과 같은 시스템 메타데이터를 저장합니다. `jcr:createdBy` 또는 `jcr:lastModifiedBy` 저장소에서 일반 컨텐츠 옆에 있는 노드 등록 정보입니다. 구성 및 액세스 제어 설정에 따라, 경우에 따라 이러한 노드가 원시 JSON 또는 XML로 렌더링되는 경우와 같이 개인 식별 정보(PII)가 노출될 수 있습니다.
 
