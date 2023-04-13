@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 70c2d7c910f61169869aab9fdcbff4c4564ea9bd
+source-git-commit: e44480535ea7058dc41fc747351446b670d03b7f
 workflow-type: tm+mt
-source-wordcount: '2818'
+source-wordcount: '2986'
 ht-degree: 2%
 
 ---
@@ -389,6 +389,14 @@ AEM 6.1 이후, 사용자(인증 가능이라고도 함) ID 노드 이름이 저
 >[!NOTE]
 >
 >자세한 내용은 [작성 가능한 노드 이름 생성](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
+
+**익명 권한 강화 패키지**
+
+기본적으로 AEM은 다음과 같은 시스템 메타데이터를 저장합니다. `jcr:createdBy` 또는 `jcr:lastModifiedBy` 저장소에서 일반 컨텐츠 옆에 있는 노드 등록 정보입니다. 구성 및 액세스 제어 설정에 따라, 경우에 따라 이러한 노드가 원시 JSON 또는 XML로 렌더링되는 경우와 같이 개인 식별 정보(PII)가 노출될 수 있습니다.
+
+모든 저장소 데이터와 마찬가지로 이러한 속성은 Oak 인증 스택에 의해 조정됩니다. 최소한의 특권 원칙에 따라 접근이 제한돼야 한다.
+
+이를 지원하기 위해 Adobe은 고객이 빌드할 수 있도록 권한 강화 패키지를 제공합니다. 저장소 루트에 &quot;거부&quot; 액세스 제어 항목을 설치하여 일반적으로 사용되는 시스템 속성에 대한 익명 액세스를 제한함으로써 작동합니다. 패키지를 다운로드할 수 있습니다 [여기](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) 지원되는 모든 AEM 버전에 설치할 수 있습니다. 자세한 내용은 릴리스 노트 를 참조하십시오.
 
 ### 클릭재킹 방지 {#prevent-clickjacking}
 
