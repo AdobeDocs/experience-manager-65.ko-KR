@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '4628'
+source-wordcount: '4599'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Workbench에서 만든 프로세스는 원격을 사용하여 호출할 수 있�
 
 [HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
 
-Flex 그래프 컨트롤에서 프로세스 데이터를 표시하는 방법에 대한 자세한 내용은 [Flex 그래프에 AEM Forms 프로세스 데이터 표시](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html).
+<!-- For information on how to display process data in a Flex graph control, see [Displaying AEM Forms process data in Flex graphs](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
 >[!NOTE]
 >
@@ -98,9 +98,9 @@ Remoting을 사용하여 AEM Forms 프로세스를 프로그래밍 방식으로 
 
 ## 원격을 사용하여 문서 처리 {#handling-documents-with-remoting}
 
-AEM Forms에서 사용되는 가장 중요한 비원시 Java 유형 중 하나는 `com.adobe.idp.Document` 클래스 이름을 지정합니다. AEM Forms 작업을 호출하는 데에는 일반적으로 문서가 필요합니다. 주로 PDF 문서이지만 SWF, HTML, XML 또는 DOC 파일과 같은 다른 문서 유형을 포함할 수 있습니다. (자세한 내용은 [Java API를 사용하여 AEM Forms 서비스에 데이터 전달](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api))
+AEM Forms에서 사용되는 가장 중요한 비원시 Java™ 유형 중 하나는 `com.adobe.idp.Document` 클래스 이름을 지정합니다. AEM Forms 작업을 호출하는 데에는 일반적으로 문서가 필요합니다. 주로 PDF 문서이지만 SWF, HTML, XML 또는 DOC 파일과 같은 다른 문서 유형을 포함할 수 있습니다. (자세한 내용은 [Java API를 사용하여 AEM Forms 서비스에 데이터 전달](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api))
 
-Flex으로 빌드된 클라이언트 응용 프로그램은 문서를 직접 요청할 수 없습니다. 예를 들어 Adobe Reader을 실행하여 PDF 파일을 생성하는 URL을 요청할 수 없습니다. PDF 및 Microsoft Word 문서와 같은 문서 유형에 대한 요청은 URL인 결과를 반환합니다. URL의 컨텐츠를 표시하는 것은 클라이언트의 책임입니다. 문서 관리 서비스는 URL 및 콘텐츠 유형 정보를 생성하는 데 도움이 됩니다. XML 문서에 대한 요청은 결과에 있는 전체 XML 문서를 반환합니다.
+Flex으로 빌드된 클라이언트 응용 프로그램은 문서를 직접 요청할 수 없습니다. 예를 들어 Adobe Reader을 실행하여 PDF 파일을 생성하는 URL을 요청할 수 없습니다. PDF 및 Microsoft® Word 문서와 같은 문서 유형에 대한 요청은 URL인 결과를 반환합니다. URL의 컨텐츠를 표시하는 것은 클라이언트의 책임입니다. 문서 관리 서비스는 URL 및 콘텐츠 유형 정보를 생성하는 데 도움이 됩니다. XML 문서에 대한 요청은 결과에 있는 전체 XML 문서를 반환합니다.
 
 ### 문서를 입력 매개 변수로 전달 {#passing-a-document-as-an-input-parameter}
 
@@ -127,7 +127,7 @@ docRef.url = "https://companyserver:8080/DocumentManager/116/7855"; ...
 ```java
 ... var docRef: DocumentReference = new DocumentReference(); 
 docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
-docRef.text = "Text for my document";  // Optionally, you can override the server’s default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
+docRef.text = "Text for my document";  // Optionally, you can override the server's default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
 * 문서가 서버에 없는 경우 원격 업로드 서블릿을 사용하여 문서를 AEM Forms에 업로드하십시오. AEM Forms의 새로운 기능은 보안 문서를 업로드할 수 있는 기능입니다. 보안 문서를 업로드할 때 *문서 업로드 응용 프로그램 사용자* 역할. 이 역할이 없으면 보안 문서를 업로드할 수 없습니다. 단일 사인온을 사용하여 보안 문서를 업로드하는 것이 좋습니다. (자세한 내용은 [Remoting을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting))
@@ -732,7 +732,7 @@ AEM Forms이 보안 문서를 업로드하고 사용자에게 *문서 업로드 
       // Called once the file is completely uploaded.
       private function completeHandler(event:DataEvent):void {
  
-        // Set the docRef’s url and referenceType parameters
+        // Set the docRef's url and referenceType parameters
         docRef.url = event.data as String;
         docRef.referenceType=DocumentReference.REF_TYPE_URL;
         executeInvokeProcess();
@@ -939,7 +939,7 @@ AEM Forms이 보안 문서를 업로드하고 사용자에게 *문서 업로드 
 
 ### AEM Forms 복합 데이터 유형 매핑 {#mapping-aem-forms-complex-data-types}
 
-일부 AEM Forms 작업에는 입력 값으로 복잡한 데이터 유형이 필요합니다. 이러한 복잡한 데이터 유형은 작업에 사용되는 런타임 값을 정의합니다. 예를 들어 고객 서비스의 `createCustomer` 작업을 수행하려면 `Customer` 서비스에 필요한 런타임 값을 포함하는 인스턴스입니다. 복잡한 유형이 없으면 고객 서비스에서 예외가 발생하고 작업을 수행하지 않습니다.
+일부 AEM Forms 작업에는 입력 값으로 복잡한 데이터 유형이 필요합니다. 이러한 복잡한 데이터 유형은 작업에 사용되는 런타임 값을 정의합니다. 예를 들어 고객 서비스의 `createCustomer` 작업을 수행하려면 `Customer` 서비스에 필요한 런타임 값을 포함하는 인스턴스입니다. 복잡한 유형이 없으면 고객 서비스에서는 예외가 발생하고 작업을 수행하지 않습니다.
 
 AEM Forms 서비스를 호출할 때 필요한 AEM Forms 복합 유형에 매핑되는 ActionScript 개체를 만드십시오. 작업에 필요한 각 복잡한 데이터 유형에 대해 별도의 ActionScript 개체를 만듭니다.
 
@@ -977,7 +977,7 @@ Forms 복합 유형에 속하는 필드 이름을 확인하는 좋은 방법은 
 
 ### 빠른 시작: Remoting을 사용하여 고객 사용자 지정 서비스 호출 {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
-다음 코드 예는 고객 서비스를 호출하고 새 고객을 만듭니다. 이 코드 예제를 실행할 때는 모든 텍스트 상자를 입력해야 합니다. 또한 Customer.as 파일이 `com.adobe.livecycle.sample.customer.Customer`.
+다음 코드 예는 고객 서비스를 호출하고 고객을 생성합니다. 이 코드 예제를 실행할 때는 모든 텍스트 상자를 입력해야 합니다. 또한 Customer.as 파일이 `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 이 빠른 시작을 실행하려면 먼저 Bank 사용자 지정 구성 요소를 만들고 배포해야 합니다.

@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ JEE에서 AEM Forms이 지원하는 운영 체제에 대한 보안 정보는 표
   </tr>
   <tr>
    <td>Oracle Linux® 7 업데이트 3</td>
-   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">릴리스 7에 대한 보안 안내서</a><br /> </td>
+   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">릴리스 7에 대한 보안 안내서</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -245,8 +245,8 @@ lc_[데이터베이스].xml 파일에는 암호를 일반 텍스트 형식으로
 >
 >JEE JBoss® 턴키 설치 프로그램의 AEM Forms은 데이터베이스 암호를 암호화합니다.
 
-IBM® WebSphere® Application Server 및 WebLogic Server는 기본적으로 데이터 소스 암호를 암호화할 수 있습니다. 그러나 애플리케이션 서버 설명서에서 이 문제가 발생하는지 확인합니다.
+IBM® WebSphere® Application Server 및 WebLogic Server는 기본적으로 데이터 소스 암호를 암호화할 수 있습니다. 그러나 애플리케이션 서버 설명서로 확인해야 문제가 발생하는지 확인할 수 있습니다.
 
 ### Trust Store에 저장된 개인 키 보호 {#protecting-the-private-key-stored-in-trust-store}
 
-Trust Store에 가져온 개인 키 또는 자격 증명은 JEE 데이터베이스의 AEM Forms에 저장됩니다. 데이터베이스를 안전하게 보호하고 지정된 관리자에게만 액세스를 제한하는 데 적절한 조치를 취하십시오.
+Trust Store에 가져온 개인 키 또는 자격 증명은 JEE 데이터베이스의 AEM Forms에 저장됩니다. 데이터베이스를 보호하고 지정된 관리자에게만 대한 액세스를 제한하려면 적절한 조치를 취하십시오.

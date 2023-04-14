@@ -1,8 +1,6 @@
 ---
 title: 프로세스 보고 시작하기
-seo-title: Getting Started with Process Reporting
-description: JEE 프로세스 보고에서 AEM Forms을 시작하기 위해 따라야 하는 절차
-seo-description: The steps you need to follow to get started with AEM Forms on JEE Process Reporting
+description: JEE 프로세스 보고에서 AEM Forms을 시작하는 절차
 uuid: 685cad39-da2c-411d-a0b0-201917438bcf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +8,9 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1693'
 ht-degree: 0%
 
 ---
@@ -29,13 +27,13 @@ ht-degree: 0%
 
 현재 Forms Workflow을 사용 중인 경우 AEM Forms 데이터베이스에 상당한 양의 데이터가 포함될 수 있습니다
 
-Process Reporting publishing Services가 현재 데이터베이스에서 사용할 수 있는 모든 AEM Forms 데이터를 게시합니다. 이것은 데이터베이스에 보고서와 쿼리를 실행하지 않으려는 기존 데이터가 포함되어 있는 경우 보고에 필요하지 않더라도 해당 데이터가 모두 리포지토리에 게시된다는 것을 의미합니다. 서비스를 실행하여 데이터를 Process Reporting 저장소에 게시하기 전에 이 데이터를 삭제하는 것이 좋습니다. 이렇게 하면 게시자 서비스와 보고를 위해 데이터를 쿼리하는 서비스의 성능이 모두 향상됩니다.
+Process Reporting publishing Services는 현재 데이터베이스에서 사용할 수 있는 모든 AEM Forms 데이터를 게시합니다. 이것은 데이터베이스에 보고서와 쿼리를 실행하지 않으려는 기존 데이터가 포함되어 있는 경우 보고에 필요하지 않더라도 해당 모든 데이터가 리포지토리에 게시된다는 것을 의미합니다. 서비스를 실행하여 데이터를 Process Reporting 저장소에 게시하기 전에 이 데이터를 삭제하는 것이 좋습니다. 이렇게 하면 게시자 서비스와 보고를 위해 데이터를 쿼리하는 서비스의 성능이 모두 개선됩니다.
 
-AEM Forms 프로세스 데이터 삭제에 대한 자세한 내용은 [프로세스 데이터 삭제](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html).
+AEM Forms 프로세스 데이터 삭제에 대한 자세한 내용은 [프로세스 데이터 삭제](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
 
 >[!NOTE]
 >
->Purge Utility에 대한 팁과 트릭은 다음 방법으로 Adobe Developer Connection 문서를 참조하십시오. [프로세스 및 작업 삭제](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
+>Purge Utility에 대한 팁과 트릭은 다음 방법으로 Adobe Developer Connection 문서를 참조하십시오. [프로세스 및 작업 삭제](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
 
 ## 프로세스 보고 서비스 구성 {#configuring-process-reporting-services}
 
@@ -43,7 +41,7 @@ AEM Forms 프로세스 데이터 삭제에 대한 자세한 내용은 [프로세
 
 Process Reporting Services는 예약된 기준에 따라 AEM Forms 데이터베이스의 데이터를 Process Reporting 저장소에 게시합니다.
 
-이 작업은 리소스를 많이 사용할 수 있으며 AEM Forms 서버의 성능에 영향을 줄 수 있습니다. AEM Forms 서버 사용 시간 슬롯 외부에서 예약하는 것이 좋습니다.
+이 작업은 리소스를 많이 사용할 수 있으며 AEM Forms 서버의 성능에 영향을 줄 수 있습니다. AEM Forms 서버 사용 시간 슬롯 외부에서 이 일정을 예약하는 것이 좋습니다.
 
 기본적으로 데이터 게시는 매일 오전 2시에 실행되도록 예약됩니다.
 
@@ -57,7 +55,7 @@ Process Reporting Services는 예약된 기준에 따라 AEM Forms 데이터베�
 1. &#x200B;
 
    * (Windows의 경우) `[JBoss root]/bin/run.conf.bat` 파일을 편집기에 저장합니다.
-   * (Linux, AIX 및 Solaris의 경우) `[JBoss root]/bin/run.conf.sh` 파일을 편집기에 저장합니다.
+   * (Linux®, AIX® 및 Solaris™의 경우) `[JBoss root]/bin/run.conf.sh` 파일을 편집기에 저장합니다.
 
 1. JVM 인수 추가 `-Dreporting.publisher.cron = <expression>.`
 
@@ -70,11 +68,11 @@ Process Reporting Services는 예약된 기준에 따라 AEM Forms 데이터베�
 1. AEM Forms 서버 인스턴스를 다시 시작합니다.
 
 1. AEM Forms 서버 인스턴스를 중지합니다.
-1. WebSphere 관리 콘솔에 로그인합니다. 탐색 트리에서 **서버** > **애플리케이션 서버** 오른쪽 창에서 서버 이름을 클릭합니다.
+1. WebSphere® 관리 콘솔에 로그인합니다. 탐색 트리에서 **서버** > **애플리케이션 서버** 오른쪽 창에서 서버 이름을 클릭합니다.
 
-1. Server Infrastructure에서 **Java 및 프로세스 관리** > **프로세스 정의**.
+1. Server Infrastructure에서 **Java™ 및 프로세스 관리** > **프로세스 정의**.
 
-1. 추가 속성에서 **Java 가상 컴퓨터**.
+1. 추가 속성에서 **Java™ 가상 컴퓨터**.
 
    일반 JVM 인수 상자에서 인수를 추가합니다 `-Dreporting.publisher.cron = <expression>.`
 
@@ -139,7 +137,7 @@ ReportConfiguration 서비스는 프로세스 보고 쿼리 서비스를 구성�
 1. 를 엽니다. **보고 구성** 서비스.
 1. **레코드 수**
 
-   저장소에서 쿼리를 실행할 때 결과에는 많은 수의 레코드가 포함될 수 있습니다. 결과 세트가 큰 경우 쿼리 실행에서 서버 리소스를 사용할 수 있습니다.
+   저장소에서 쿼리를 실행할 때 결과에 여러 레코드가 포함될 수 있습니다. 결과 세트가 큰 경우 쿼리 실행에서 서버 리소스를 사용할 수 있습니다.
 
    큰 결과 세트를 처리하기 위해 ReportConfiguration 서비스는 쿼리 처리를 레코드 배치로 분할합니다. 이렇게 하면 시스템 로드가 줄어듭니다.
 
@@ -153,7 +151,7 @@ ReportConfiguration 서비스는 프로세스 보고 쿼리 서비스를 구성�
 
    >[!NOTE]
    >
-   >ProcessDataStorage 구성 옵션에 지정된 위치와 동일합니다 **루트 폴더**.
+   >이 위치는 ProcessDataStorage 구성 옵션에 지정된 위치와 동일합니다 **루트 폴더**.
    >
    >
    >ProcessDataStorage 구성에서 루트 폴더 옵션을 업데이트하는 경우 ReportConfiguration 서비스에서 CRX 저장소 경로 위치를 업데이트해야 합니다.
@@ -186,9 +184,7 @@ Process Reporting 구성 요소와 관련된 모든 구성이 적절하게 설�
 
 **배치 간격(초)**
 
-ProcessDataPublisher 서비스가 실행될 때마다 서비스가 먼저 배치 간격별로 서비스를 마지막으로 실행한 이후 시간을 분할합니다. 그런 다음 서비스는 AEM Forms 데이터의 각 간격을 별도로 처리합니다.
-
-이렇게 하면 순환 내에서 각 실행(배치)하는 동안 게시자가 처리하는 데이터의 크기를 제어하는 데 도움이 됩니다.
+ProcessDataPublisher 서비스가 실행될 때마다 서비스가 먼저 배치 간격별로 서비스를 마지막으로 실행한 이후 시간을 분할합니다. 그런 다음 이 서비스는 각 AEM Forms 데이터 간격을 별도로 처리하여 게시자가 주기 내에서 각 실행(배치)하는 동안 끝까지 처리하는 데이터의 크기를 제어하는 데 도움이 됩니다.
 
 예를 들어 게시자가 매일 실행되는 경우 한 번의 실행으로 하루 전체 데이터를 처리하는 대신 기본적으로 처리를 각각 1시간의 24개의 배치로 분할합니다.
 
@@ -230,7 +226,7 @@ Process Reporting을 설정한 후에는 AEM Forms 설치의 다음 위치에서
 
 프로세스 보고 URL(https://)으로 이동하는 경우&lt;server>:&lt;port>/lc/pr), 로그인 화면이 표시됩니다.
 
-프로세스 보고 모듈에 로그인할 자격 증명을 지정합니다.
+프로세스 보고 모듈에 로그온하려면 자격 증명을 지정합니다.
 
 >[!NOTE]
 >
