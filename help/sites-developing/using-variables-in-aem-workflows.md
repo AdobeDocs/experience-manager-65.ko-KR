@@ -1,8 +1,6 @@
 ---
 title: AEM 워크플로우의 변수
-seo-title: Variables in AEM Workflows
 description: 변수를 만들고 변수 값을 설정한 다음 OR 분할 및 이동 AEM 워크플로우 단계에서 사용합니다.
-seo-description: Create a variable, set a value for the variable, and use it in OR Split and  Goto AEM workflow steps.
 uuid: cc62ff11-51d4-4db4-9c6d-5dc2caa1da52
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,9 +8,9 @@ content-type: reference
 discoiquuid: bbb9936e-ecd2-44b3-b4ae-dd62a3160641
 docset: aem65
 exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2048'
 ht-degree: 0%
 
 ---
@@ -25,28 +23,30 @@ AEM 워크플로우 모델에서 다음을 수행할 수 있습니다.
 
 * [변수 만들기](/help/sites-developing/using-variables-in-aem-workflows.md#create-a-variable) 저장할 정보 유형을 기반으로 한 데이터 유형입니다.
 * [변수에 대한 값 설정](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable) 변수 설정 워크플로우 단계를 사용합니다.
-* [변수 사용](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) 또는 분할 및 이동 AEM 워크플로우 단계에서 라우팅 결정을 수행할 표현식을 정의합니다. 모든 AEM Forms 워크플로우 단계에서 변수를 사용할 수도 있습니다.
+* [변수 사용](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) 또는 분할 및 이동 AEM 워크플로우 단계에서 라우팅 결정을 수행할 표현식을 정의할 수 있습니다. 모든 AEM Forms 워크플로우 단계에서 변수를 사용할 수도 있습니다.
 
 다음 비디오에서는 AEM 워크플로우 모델에서 변수를 만들고, 설정하고, 사용하는 방법을 보여 줍니다.
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
-변수는 [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 인터페이스. 다음을 사용할 수 있습니다 [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 변수를 사용하여 저장된 메타데이터에 액세스할 수 있습니다.
+변수는 [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 인터페이스. 다음을 사용할 수 있습니다 [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 변수를 사용하여 저장된 메타데이터에 액세스할 수 있습니다.
 
 ## 변수 만들기 {#create-a-variable}
 
 워크플로우 모델의 사이드 킥에서 사용할 수 있는 변수 섹션을 사용하여 변수를 만듭니다. AEM 워크플로우 변수는 다음 데이터 유형을 지원합니다.
 
 * **기본 데이터 유형**: Long, Double, Boolean, Date 및 String
-* **복잡한 데이터 유형**: [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html) 및 [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)
+* **복잡한 데이터 유형**: [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html) 및 [JSON](https://www.javadoc.io/doc/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)
 
 >[!NOTE]
 >
 >워크플로우는 날짜 유형 변수에 대해서만 ISO8601 형식만 지원합니다.
 
-AEM Forms 워크플로우에서 사용할 수 있는 추가적인 복잡한 데이터 유형에 대해서는 다음을 참조하십시오 [AEM Forms 워크플로우의 변수](/help/forms/using/variable-in-aem-workflows.md).  ArrayList 데이터 유형을 사용하여 변수 컬렉션을 만듭니다. 모든 기본 데이터 유형과 복잡한 데이터 유형에 대해 ArrayList 변수를 만들 수 있습니다. 예를 들어 ArrayList 변수를 만들고 String을 하위 형식으로 선택하여 변수를 사용하여 여러 문자열 값을 저장합니다.
+AEM Forms 워크플로우에서 사용할 수 있는 추가적인 복잡한 데이터 유형에 대해서는 다음을 참조하십시오 [AEM Forms 워크플로우의 변수](/help/forms/using/variable-in-aem-workflows.md). ArrayList 데이터 유형을 사용하여 변수 컬렉션을 만듭니다. 모든 기본 데이터 유형과 복잡한 데이터 유형에 대해 ArrayList 변수를 만들 수 있습니다. 예를 들어 ArrayList 변수를 만들고 String을 하위 유형으로 선택하여 변수를 사용하여 여러 문자열 값을 저장합니다.
 
-다음 단계를 실행하여 변수를 만듭니다.
+변수를 만들려면,
 
 1. AEM 인스턴스에서 도구 > 워크플로우 > 모델로 이동합니다.
 1. 탭 **[!UICONTROL 만들기]** 워크플로우 모델의 제목과 선택적 이름을 지정합니다. 모델을 선택하고 탭합니다 **[!UICONTROL 편집]**.
@@ -72,9 +72,9 @@ AEM Forms 워크플로우에서 사용할 수 있는 추가적인 복잡한 데�
 
 ## 변수 설정 {#set-a-variable}
 
-변수 설정 단계를 사용하여 변수의 값을 설정하고 값이 설정되는 순서를 정의할 수 있습니다. 변수는 변수 매핑이 변수 설정 단계에서 나열된 순서로 설정됩니다.
+변수 설정 단계를 사용하여 변수의 값을 설정하고 값이 설정되는 순서를 정의할 수 있습니다. 변수는 변수 매핑이 변수 설정 단계에서 나열되는 순서로 설정됩니다.
 
-변수 값에 대한 변경 사항은 변경 사항이 발생하는 프로세스의 인스턴스에만 영향을 줍니다. 예를 들어 워크플로우가 시작되고 변수 데이터가 변경되면 변경 사항은 워크플로우의 해당 인스턴스에만 영향을 줍니다. 변경 사항은 이전에 시작되었거나 이후에 시작된 워크플로우의 다른 인스턴스는 영향을 주지 않습니다.
+변수 값에 대한 변경 사항은 변경 사항이 발생하는 프로세스의 인스턴스에만 영향을 줍니다. 예를 들어 워크플로우가 시작되고 변수 데이터가 변경되면 변경 사항은 워크플로우의 해당 인스턴스에만 영향을 줍니다. 변경 사항은 이전에 시작되었거나 나중에 시작된 워크플로우의 다른 인스턴스는 영향을 주지 않습니다.
 
 변수의 데이터 유형에 따라 다음 옵션을 사용하여 변수의 값을 설정할 수 있습니다.
 
@@ -89,17 +89,17 @@ JSON 점 표기법 또는 XPATH 표기법을 사용하여 JSON 또는 XML 유형
 
 ### 변수 간에 매핑 추가 {#add-mapping-between-variables}
 
-다음 단계를 실행하여 변수 간에 매핑을 추가합니다.
+변수 간에 매핑을 추가하려면 다음을 수행하십시오.
 
 1. 워크플로우 편집 페이지에서 워크플로우 모델의 사이드 킥에서 사용할 수 있는 단계 아이콘을 탭합니다.
-1. 드래그 앤 드롭 **변수 설정** 워크플로우 편집기 단계로 이동하여 단계를 탭하고 을(를) 선택합니다 ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (구성).
+1. 드래그 앤 드롭 **변수 설정** 워크플로우 편집기로 이동하고 단계를 탭한 다음 을 선택합니다 ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (구성).
 1. 변수 설정 대화 상자에서 를 선택합니다. **[!UICONTROL 매핑]** > **[!UICONTROL 매핑 추가]**.
 1. 에서 **맵 변수** 섹션에서 데이터를 저장할 변수를 선택하고 매핑 모드를 선택한 다음 변수에 저장할 값을 지정합니다. 매핑 모드는 변수 유형에 따라 달라집니다.
-1. 의미 있는 표현식을 만들기 위해 더 많은 변수를 매핑합니다. 탭 ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) 변경 사항을 저장하려면 을 클릭합니다.
+1. 의미 있는 표현식을 만들 수 있도록 더 많은 변수를 매핑합니다. 탭 ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) 변경 사항을 저장하려면 을 클릭합니다.
 
 ### 예제 1: 문자열 변수의 값을 설정할 XML 변수를 질의합니다 {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
-XML 파일을 저장할 XML 유형의 변수를 선택합니다. XML 변수를 쿼리하여 XML 파일에서 사용할 수 있는 속성의 문자열 변수 값을 설정합니다. 사용 **XML 변수에 대한 XPATH 지정** 문자열 변수에 저장할 속성을 정의하는 필드입니다.
+XML 파일을 저장할 XML 형식의 변수를 선택합니다. XML 변수를 쿼리하여 XML 파일에서 사용할 수 있는 속성의 문자열 변수 값을 설정합니다. 사용 **XML 변수에 대한 XPATH 지정** 문자열 변수에 저장할 속성을 정의하는 필드입니다.
 
 이 예에서 **양식 데이터** 저장할 XML 변수 **cc-app.xml** 파일. 쿼리 **양식 데이터** 변수에 대한 값을 설정할 수 있습니다. **emailaddress** 값을 저장할 문자열 변수 **emailAddress** 에서 사용할 수 있는 속성 **cc-app.xml** 파일.
 
@@ -111,6 +111,8 @@ XML 파일을 저장할 XML 유형의 변수를 선택합니다. XML 변수를 �
 
 이 예에서 표현식 편집기를 사용하여 표현식을 정의하여 **assetscost** 및 **잔액** 변수와 결과를 **totalvalue** 변수를 채우는 방법을 설명합니다.
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## 표현식 편집기 사용 {#use-expression-editor}
@@ -121,7 +123,7 @@ XML 파일을 저장할 XML 유형의 변수를 선택합니다. XML 변수를 �
 
 * 다른 워크플로우 변수, 숫자 또는 수학 표현식을 사용하여 변수의 값을 설정합니다.
 * 수식 내에서 워크플로우 변수, 문자열, 숫자 또는 표현식을 사용합니다
-* 변수 값을 설정하려면 조건을 추가하십시오.
+* 변수 값을 설정할 수 있도록 조건을 추가합니다.
 * 조건 사이에 연산자를 추가합니다.
 
 ![표현식 편집기](assets/variables_expression_editor_new.png)
@@ -158,6 +160,8 @@ OR 분할은 워크플로우에서 분할을 만들며, 그 뒤에는 하나의 
 
 이 예에서 라우팅 표현식을 정의하기 전에 [예제 2](/help/sites-developing/using-variables-in-aem-workflows.md#example2) 에 대한 값을 설정하려면 **totalvalue** 변수를 채우는 방법을 설명합니다. 분기 1은 **totalvalue** 변수가 50000보다 큼. 마찬가지로, **totalvalue** 변수가 50000 보다 작습니다.
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 마찬가지로, 외부 스크립트 경로를 선택하거나 라우팅 표현식에 대한 ECMA 스크립트를 지정하여 활성 분기를 평가합니다. 탭 **[!UICONTROL 분기 이름 바꾸기]** 분기의 대체 이름을 지정합니다.
@@ -166,7 +170,7 @@ OR 분할은 워크플로우에서 분할을 만들며, 그 뒤에는 하나의 
 
 #### 단계로 이동 {#go-to-step}
 
-다음 **이동 단계** 라우팅 표현식 결과에 따라 실행할 워크플로우 모델의 다음 단계를 지정할 수 있습니다.
+다음 **이동 단계** 라우팅 표현식 결과에 따라 워크플로우 모델에서 실행할 다음 단계를 지정할 수 있습니다.
 
 OR 분할(OR Split) 단계와 마찬가지로 규칙 정의, ECMA 스크립트 또는 외부 스크립트를 사용하여 이동 단계에 대한 라우팅 표현식을 정의할 수 있습니다.
 
@@ -184,11 +188,11 @@ OR 분할(OR Split) 단계와 마찬가지로 규칙 정의, ECMA 스크립트 �
 
 ### 변수를 지원하지 않는 워크플로우 단계 {#workflow-steps-without-support-for-variables}
 
-다음을 사용할 수 있습니다 [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 변수를 지원하지 않는 워크플로우 단계의 변수에 액세스할 수 있는 인터페이스.
+다음을 사용할 수 있습니다 [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 변수를 지원하지 않는 워크플로우 단계의 변수에 액세스할 수 있는 인터페이스.
 
 #### 변수 값을 검색합니다 {#retrieve-the-variable-value}
 
-ECMA Script에서 다음 API를 사용하여 데이터 유형을 기반으로 기존 변수의 값을 검색합니다.
+데이터 유형을 기반으로 기존 변수의 값을 검색하려면 ECMA Script에서 다음 API를 사용하십시오.
 
 | 변수 데이터 유형 | API |
 |---|---|
@@ -208,7 +212,7 @@ workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.Stri
 
 #### 변수 값 업데이트 {#update-the-variable-value}
 
-ECMA Script에서 다음 API를 사용하여 변수 값을 업데이트합니다.
+변수 값을 업데이트하려면 ECMA Script에서 다음 API를 사용하십시오.
 
 ```
 workItem.getWorkflowData().getMetaDataMap().put(variableName, value)
@@ -220,13 +224,13 @@ workItem.getWorkflowData().getMetaDataMap().put(variableName, value)
 workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 ```
 
-는 다음 항목의 값을 업데이트합니다. **임금** 변수를 50000.
+의 값을 업데이트합니다 **임금** 변수를 50000.
 
 ### 워크플로우를 호출하는 변수 설정 {#apiinvokeworkflow}
 
 API를 사용하여 변수를 설정하고 이를 전달하여 워크플로우 인스턴스를 호출할 수 있습니다.
 
-[workflowSession.startWorkflow](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) 는 모델, wfData 및 metaData를 인수로 사용합니다. MetaDataMap을 사용하여 변수에 대한 값을 설정합니다.
+[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) 는 모델, wfData 및 metaData를 인수로 사용합니다. MetaDataMap을 사용하여 변수에 대한 값을 설정합니다.
 
 이 API에서는 **variableName** 변수를으로 설정합니다. **value** metaData.put(variableName, value) 사용;
 
@@ -253,7 +257,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 변수를 삭제하기 전에 워크플로우에서 변수의 모든 참조를 제거합니다. 변수가 워크플로우에서 사용되지 않는지 확인합니다.
 
-다음 단계를 실행하여 변수를 삭제합니다.
+변수를 삭제하려면
 
 1. 워크플로우 편집 페이지에서 워크플로우 모델의 사이드 킥에서 사용할 수 있는 변수 아이콘을 탭합니다. 왼쪽 창의 변수 섹션에는 모든 기존 변수가 표시됩니다.
 1. 삭제할 변수 이름 옆에 있는 삭제 아이콘을 탭합니다.
