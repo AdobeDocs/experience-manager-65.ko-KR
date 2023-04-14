@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1060'
 ht-degree: 1%
 
 ---
@@ -49,18 +49,18 @@ JEE에서 AEM Forms이 지원하는 운영 체제에 대한 보안 정보는 표
  <tbody>
   <tr>
    <td><p>IBM® AIX® 7.2</p> </td>
-   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM AIX 보안 이점</a></p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM® AIX® 보안 이점</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft Windows Server® 2016 </p> </td>
+   <td><p>Microsoft® Windows Server® 2016 </p> </td>
    <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Windows Server 2016 보안 안내서</a></p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® Linux® AP 또는 ES</p> </td>
-   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat Enterprise Linux 보안 안내서</a></p> </td>
+   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat® Enterprise Linux® 보안 안내서</a></p> </td>
   </tr>
   <tr>
-   <td><p>Sun Solaris 11</p> </td>
+   <td><p>Sun Solaris™ 11</p> </td>
    <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">보안 및 강화 지침</a></p> </td>
   </tr>
   <tr>
@@ -98,15 +98,15 @@ JEE에서 AEM Forms이 지원하는 애플리케이션 서버에 대한 보안 �
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>에서 WebLogic Security 이해 검색 <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
+   <td><p>에서 WebLogic Security 이해 검색 <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
   </tr>
   <tr>
-   <td><p>IBM WebSphere®</p> </td>
+   <td><p>IBM® WebSphere®</p> </td>
    <td><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">애플리케이션 및 환경 보호</a></p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® JBoss®</p> </td>
-   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security+subsystem+configuration">보안 하위 시스템 구성</a></p> </td>
+   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security%20subsystem%20configuration.html">보안 하위 시스템 구성</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -131,11 +131,11 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
  </thead>
  <tbody>
   <tr>
-   <td><p>IBM DB2® 11.1</p> </td>
-   <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">DB2 제품군 라이브러리</a></p> </td>
+   <td><p>IBM® DB2® 11.1</p> </td>
+   <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">DB2® 제품군 라이브러리</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
+   <td><p>Microsoft® SQL Server 2016</p> </td>
    <td>웹에서 "SQL Server 2016: 보안"</td>
   </tr>
   <tr>
@@ -160,7 +160,7 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
  </thead>
  <tbody>
   <tr>
-   <td><p>JBoss</p> </td>
+   <td><p>JBoss®</p> </td>
    <td><p>8080</p> </td>
   </tr>
   <tr>
@@ -172,7 +172,7 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
    <td><p>구성 중에 관리자가 설정</p> </td>
   </tr>
   <tr>
-   <td>&gt;<p>WebSphere</p> </td>
+   <td>&gt;<p>WebSphere®</p> </td>
    <td><p>9060에서 전역 보안이 활성화되어 있으면 기본 SSL 포트 값은 9043입니다.</p> <p>9080</p> </td>
   </tr>
   <tr>
@@ -192,7 +192,7 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
    <td><p>1521</p> </td>
   </tr>
   <tr>
-   <td>&gt;<p>DB2</p> </td>
+   <td>&gt;<p>DB2®</p> </td>
    <td><p>50000</p> </td>
   </tr>
   <tr>
@@ -206,22 +206,22 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
  </tbody>
 </table>
 
-### 기본이 아닌 HTTP 포트를 사용하도록 JBoss 구성 {#configuring-jboss-to-use-a-non-default-http-port}
+### 기본이 아닌 HTTP 포트를 사용하도록 JBoss® 구성 {#configuring-jboss-to-use-a-non-default-http-port}
 
-JBoss Application Server는 기본 HTTP 포트로 8080을 사용합니다. 또한 JBoss에는 jboss-service.xml 파일에 주석 처리된 사전 구성된 포트 8180, 8280 및 8380도 있습니다. 컴퓨터에 이미 이 포트를 사용하는 애플리케이션이 있는 경우 다음 단계에 따라 JEE에서 AEM Forms이 사용하는 포트를 변경합니다.
+JBoss® Application Server는 8080을 기본 HTTP 포트로 사용합니다. JBoss®에는 jboss-service.xml 파일에 주석 처리된 사전 구성된 포트 8180, 8280 및 8380도 있습니다. 컴퓨터에 이미 이 포트를 사용하는 애플리케이션이 있는 경우 다음 단계에 따라 JEE에서 AEM Forms이 사용하는 포트를 변경합니다.
 
 1. 편집할 다음 파일을 엽니다.
 
-   단일 서버 설치: [JBoss 루트]/standalone/configuration/standalone.xml
+   단일 서버 설치: [JBoss® 루트]/standalone/configuration/standalone.xml
 
-   클러스터 설치: [JBoss 루트]/domain/configuration/domain.xml
+   클러스터 설치: [JBoss® 루트]/domain/configuration/domain.xml
 
 1. 값 변경 **포트** 의 속성 **&lt;socket-binding>** 태그로 지정합니다. 예를 들어, 다음은 포트 8090을 사용합니다.
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. 파일을 저장하고 닫습니다.
-1. JBoss 애플리케이션 서버를 다시 시작합니다.
+1. JBoss® 애플리케이션 서버를 다시 시작합니다.
 
 ## JEE의 AEM Forms 보안 고려 사항 {#aem-forms-on-jee-security-considerations}
 
@@ -243,9 +243,9 @@ lc_[데이터베이스].xml 파일에는 암호를 일반 텍스트 형식으로
 
 >[!NOTE]
 >
->JEE JBoss 턴키 설치 프로그램의 AEM Forms은 데이터베이스 암호를 암호화합니다.
+>JEE JBoss® 턴키 설치 프로그램의 AEM Forms은 데이터베이스 암호를 암호화합니다.
 
-IBM WebSphere Application Server 및 WebLogic Server는 기본적으로 데이터 소스 암호를 암호화할 수 있습니다. 그러나 애플리케이션 서버 설명서에서 이 문제가 발생하는지 확인합니다.
+IBM® WebSphere® Application Server 및 WebLogic Server는 기본적으로 데이터 소스 암호를 암호화할 수 있습니다. 그러나 애플리케이션 서버 설명서에서 이 문제가 발생하는지 확인합니다.
 
 ### Trust Store에 저장된 개인 키 보호 {#protecting-the-private-key-stored-in-trust-store}
 

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '734'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 패키지를 설치하는 동안 오류가 발생하면 `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`에서 다음 단계를 수행합니다.
 
-1. CRX DE Lite에 로그인합니다. 기본 URL은 `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. CRXDE Lite에 로그인합니다. 기본 URL은 `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. 다음 노드를 삭제합니다.
 
    `/home/groups/P/PERM_WORKSPACE_USER`
@@ -155,9 +155,9 @@ AEM Forms 작업 공간에서:
 
 스크립트 및 스타일은 다른 브라우저에서 디버깅할 수 있습니다.
 
-* **IE의 디버깅**: IE에서 AEM Forms 작업 영역을 디버깅하려면 다음을 참조하십시오. [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **IE의 디버깅**: IE에서 AEM Forms 작업 영역을 디버깅하려면 다음을 참조하십시오. [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Chrome에서 디버깅**: Chrome에서 디버거를 열려면 바로 가기를 사용합니다. Ctrl+Shift+I. 자세한 내용은 다음을 참조하십시오. [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Chrome에서 디버깅**: Chrome에서 디버거를 열려면 바로 가기를 사용합니다. Ctrl+Shift+I. 자세한 내용은 다음을 참조하십시오. [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
 * **Firefox에서 디버깅**: Firefox에서 스크립트 및 스타일을 디버깅하는 데 몇 가지 추가 기능을 사용할 수 있습니다. 예를 들어 Firebug는 그와 같은 디버깅 유틸리티([https://getfirebug.com](https://getfirebug.com)).
 
