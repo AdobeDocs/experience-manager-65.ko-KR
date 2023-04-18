@@ -1,6 +1,6 @@
 ---
-title: 기본적으로 SSL
-seo-title: SSL By Default
+title: 기본적으로 SSL/TLS
+seo-title: SSL/TLS By Default
 description: AEM에서 기본적으로 SSL을 사용하는 방법을 알아봅니다.
 seo-description: Learn how to use SSL by Default in AEM.
 uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
@@ -11,54 +11,54 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 252924afb70dd311a27d04278fbe363db15e9519
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
-# 기본적으로 SSL{#ssl-by-default}
+# 기본적으로 SSL/TLS{#ssl-tls-by-default}
 
-AEM의 보안을 지속적으로 개선하기 위해 Adobe은 기본적으로 SSL이라는 기능을 도입했습니다. 목적은 AEM 인스턴스에 연결하기 위해 HTTPS를 사용하도록 권장하는 것입니다.
+AEM의 보안을 지속적으로 개선하기 위한 노력의 일환으로 Adobe은 기본적으로 SSL이라는 기능을 도입했습니다. 목적은 AEM 인스턴스에 연결하기 위해 HTTPS를 사용하도록 권장하는 것입니다.
 
-## 기본적으로 SSL 활성화 {#enabling-ssl-by-default}
+## 기본적으로 SSL/TLS 활성화 {#enabling-ssl-tls-by-default}
 
-AEM 홈 화면에서 관련 받은 편지함 메시지를 클릭하여 기본적으로 SSL 구성을 시작할 수 있습니다. 받은 편지함에 도달하려면 화면의 오른쪽 상단에 있는 벨 아이콘을 누릅니다. 그런 다음 을(를) 클릭합니다 **모두 보기**. 이렇게 하면 목록 보기에서 정렬된 모든 경고 목록이 표시됩니다.
+AEM 홈 화면에서 관련 받은 편지함 메시지를 클릭하여 기본적으로 SSL/TLS 구성을 시작할 수 있습니다. 받은 편지함에 연결하려면 화면의 오른쪽 상단 모서리에 있는 벨 아이콘을 누릅니다. 그런 다음 **모두 보기**. 그러면 목록 보기에 정렬된 모든 경고 목록이 표시됩니다.
 
-목록에서 을(를) 선택하고 **HTTPS 구성** 경고:
+목록에서 을(를) 선택하고 을(를) 엽니다. **HTTPS 구성** 경고:
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
->다음과 같은 경우 **HTTPS 구성** 받은 편지함에 경고가 없으면 다음 위치로 이동하여 HTTPS 마법사로 직접 이동할 수 있습니다. *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>만약 **HTTPS 구성** 알림이 받은 편지함에 없으면 HTTPS 마법사로 바로 이동할 수 있습니다. *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
-서비스 사용자 호출 **ssl 서비스** 이 기능에 대해 만들어졌습니다. 경고를 열면 다음 구성 마법사 가 표시됩니다.
+서비스 사용자 **ssl 서비스** 이 기능을 위해 만들어졌습니다. 경고를 열면 다음 구성 마법사를 통해 표시됩니다.
 
-1. 먼저 저장소 자격 증명을 설정합니다. 다음에 대한 자격 증명입니다. **ssl 서비스** https 수신자에 대한 개인 키 및 트러스트 스토어를 포함하는 시스템 사용자의 키 저장소입니다.
+1. 먼저 저장소 자격 증명을 설정합니다. 다음은 의 자격 증명입니다 **ssl 서비스** HTTPS 리스너에 대한 개인 키 및 트러스트 저장소가 포함된 시스템 사용자의 키 저장소입니다.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. 자격 증명을 입력한 후 을(를) 클릭합니다. **다음** 페이지의 오른쪽 상단에 있습니다. 그런 다음 SSL 연결에 연결된 개인 키와 인증서를 업로드합니다.
+1. 자격 증명을 입력한 후 **다음** 페이지 오른쪽 상단 모서리에서 을(를) 클릭합니다. 그런 다음 SSL 연결을 위한 관련 개인 키 및 인증서를 업로드합니다.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    >[!NOTE]
    >
-   >마법사에서 사용할 개인 키 및 인증서를 생성하는 방법에 대한 자세한 내용은 [이 절차](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) 아래요.
+   >마법사에서 사용할 개인 키 및 인증서를 생성하는 방법에 대한 자세한 내용은 [이 절차](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) 아래의 제품에서 사용할 수 있습니다.
 
-1. 마지막으로 HTTPS 수신자에 대한 HTTPS 호스트 이름과 TCP 포트를 지정합니다.
+1. 마지막으로 HTTPS 리스너에 대한 HTTPS 호스트 이름 및 TCP 포트를 지정합니다.
 
    ![screen_shot_2018-07-25at31658pm](assets/screen_shot_2018-07-25at31658pm.png)
 
-## 기본적으로 SSL 자동화 {#automating-ssl-by-default}
+## 기본적으로 SSL/TLS 자동화 {#automating-ssl-tls-by-default}
 
-기본적으로 SSL을 자동화하는 방법에는 세 가지가 있습니다.
+기본적으로 SSL/TLS를 자동화하는 방법에는 세 가지가 있습니다.
 
 ### HTTP POST 사용 {#via-http-post}
 
-첫 번째 방법은 구성 마법사에서 사용 중인 SSLSetup 서버에 게시하는 것입니다.
+첫 번째 방법에는 구성 마법사에서 사용 중인 SSLSetup 서버에 게시하는 작업이 포함됩니다.
 
 ```shell
 POST /libs/granite/security/post/sslSetup.html
@@ -93,9 +93,9 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-모든 sling POST 서블릿과 마찬가지로 서블릿은 200 OK 또는 오류 HTTP 상태 코드로 응답합니다. 응답의 HTML 본문에서 상태에 대한 세부 정보를 찾을 수 있습니다.
+sling POST 서블릿과 마찬가지로 서블릿은 200 OK 또는 오류 HTTP 상태 코드로 응답합니다. 응답의 HTML 본문에 상태에 대한 세부 사항을 찾을 수 있습니다.
 
-다음은 성공적인 응답과 오류 모두에 대한 예입니다.
+다음은 성공적인 응답과 오류에 대한 예입니다.
 
 **성공 예** (상태 = 200):
 
@@ -150,20 +150,20 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-### 패키지 통과 {#via-package}
+### 패키지 사용 {#via-package}
 
-또는 다음 필수 항목이 이미 들어 있는 패키지를 업로드하여 SSL 설정을 자동화할 수 있습니다.
+또는 다음 필수 항목이 이미 포함되어 있는 패키지를 업로드하여 SSL 설정을 자동화할 수 있습니다.
 
-* ssl 서비스 사용자의 키 저장소입니다. 다음 위치에 있습니다. */home/users/system/security/ssl-service/keystore* 저장소에서 입니다.
+* ssl 서비스 사용자의 키 저장소입니다. 이것은 아래에 있습니다 */home/users/system/security/ssl-service/keystore* 로그인합니다.
 * 다음 `GraniteSslConnectorFactory` 구성
 
-### 마법사에서 사용할 개인 키/인증서 쌍 생성 {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
+### 마법사에 사용할 개인 키/인증서 쌍 생성 {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-아래에서는 SSL 마법사가 사용할 수 있는 DER 형식의 자체 서명된 인증서를 만드는 예를 보여 줍니다. 운영 체제를 기반으로 OpenSSL을 설치하고 OpenSSL 명령 프롬프트를 열고 디렉터리를 개인 키/인증서를 생성할 폴더로 변경합니다.
+아래에서는 SSL/TLS 마법사에서 사용할 수 있는 DER 형식으로 자체 서명된 인증서를 생성하는 예를 찾을 수 있습니다. 운영 체제에 따라 OpenSSL을 설치하고 OpenSSL 명령 프롬프트를 열고 개인 키/인증서를 생성할 폴더로 디렉토리를 변경합니다.
 
 >[!NOTE]
 >
->자체 서명된 인증서의 사용은 예제로만 사용되며 프로덕션에서 사용해서는 안 됩니다.
+>자체 서명된 인증서의 사용은 예시용으로만 사용되며 프로덕션에서 사용되어서는 안 됩니다.
 
 1. 먼저 개인 키를 만듭니다.
 
@@ -178,27 +178,27 @@ it for any subsequent updating of the private key or certificate.</dd>
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. SSL 인증서를 생성하고 개인 키로 서명합니다. 이 예에서 은 지금부터 1년 후에 만료됩니다.
+1. SSL 인증서를 생성하고 개인 키로 서명합니다. 이 예에서는 이 1년 후에 만료됩니다.
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
    ```
 
-개인 키를 DER 형식으로 변환합니다. 이는 SSL 마법사에서 키가 DER 형식이어야 하기 때문입니다.
+개인 키를 DER 형식으로 변환합니다. 이것은 SSL 마법사에서 키가 DER 형식이어야 하기 때문입니다.
 
 ```shell
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-마지막으로 **localhostprivate.der** 개인 키로 및 **localhost.crt** 그래픽 SSL 마법사의 2단계에서 이 페이지의 시작 부분에 설명되어 있는 SSL 인증서입니다.
+마지막으로, **localhostprivate.der** 개인 키로 **localhost.crt** 는 이 페이지의 시작 부분에 설명된 그래픽 SSL/TLS 마법사 2단계의 SSL/TLS 인증서로 사용됩니다.
 
-### cURL을 통해 SSL 구성 업데이트 {#updating-the-ssl-configuration-via-curl}
+### cURL을 통해 SSL/TLS 구성 업데이트 {#updating-the-ssl-tls-configuration-via-curl}
 
 >[!NOTE]
 >
->다음을 참조하십시오 [AEM에서 cURL 사용](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) AEM에서 유용한 cURL 명령의 중앙 집중식 목록입니다.
+>자세한 내용은 [AEM에서 cURL 사용](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) AEM에서 유용한 cURL 명령의 중앙 집중식 목록입니다.
 
-cURL 도구를 사용하여 SSL 구성을 자동화할 수도 있습니다. 이 URL에 구성 매개 변수를 게시하여 이 작업을 수행할 수 있습니다.
+cURL 도구를 사용하여 SSL/TLS 구성을 자동화할 수도 있습니다. 구성 매개 변수를 이 URL에 게시하여 이렇게 할 수 있습니다.
 
 *https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
@@ -210,32 +210,44 @@ cURL 도구를 사용하여 SSL 구성을 자동화할 수도 있습니다. 이 
 
 * `-F "truststorePassword=password"` - truststore 암호;
 
-* `-F "truststorePasswordConfirm=password"` - truststore 암호 확인
+* `-F "truststorePasswordConfirm=password"` - truststore 암호를 확인합니다.
 
 * `-F "privatekeyFile=@localhostprivate.der"` - 개인 키를 지정합니다.
 
 * `-F "certificateFile=@localhost.crt"` - 인증서를 지정합니다.
 
 * `-F "httpsHostname=host.example.com"`- 호스트 이름을 지정합니다.
-* `-F "httpsPort=8443"` - HTTPS 수신자가 작동할 포트입니다.
+* `-F "httpsPort=8443"` - HTTPS 리스너가 작동하는 포트입니다.
 
 >[!NOTE]
 >
->cURL을 실행하여 SSL 구성을 자동화하는 가장 빠른 방법은 DER 및 CRT 파일이 있는 폴더에서 가져옵니다. 또는 `privatekeyFile` 및 certificateFile 인수
+>SSL/TLS 구성을 자동화하는 cURL을 실행하는 가장 빠른 방법은 DER 및 CRT 파일이 있는 폴더에서 가져옵니다. 또는, `privatekeyFile` 및 certificateFile 인수
 >
->또한 업데이트를 수행하려면 인증을 받아야 하므로 cURL 명령을 `-u user:passeword` 매개 변수.
+>또한 업데이트를 수행하려면 인증을 받아야 하므로 다음을 사용하여 cURL 명령을 추가해야 합니다 `-u user:passeword` 매개 변수.
 >
->올바른 cURL post 명령은 다음과 같아야 합니다.
+>올바른 cURL post 명령은 다음과 같습니다.
 
 ```shell
 curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm=password" -F "truststorePassword=password" -F "truststorePasswordConfirm=password" -F "privatekeyFile=@localhostprivate.der" -F "certificateFile=@localhost.crt" -F "httpsHostname=host.example.com" -F "httpsPort=8443" https://host:port/libs/granite/security/post/sslSetup.html
 ```
 
-#### cURL을 사용하는 여러 인증서 {#multiple-certificates-using-curl}
+#### cURL을 사용한 여러 인증서 {#multiple-certificates-using-curl}
 
 다음과 같이 certificateFile 매개 변수를 반복하여 서블릿에 인증서 체인을 보낼 수 있습니다.
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-명령을 실행한 후에는 모든 인증서가 키 저장소에 대해 작업을 수행했는지 확인합니다. 다음에서 키 저장소를 확인합니다.
+명령을 실행했으면 키 저장소에 수행된 모든 인증서가 있는지 확인합니다. 다음 위치에서 키 저장소를 확인합니다.
 [http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)
+
+### TLS 1.3 연결 활성화 {#enabling-tls-connection}
+
+1. 웹 콘솔로 이동
+1. 그런 다음 로 이동합니다. **OSGi** - **구성** - **Adobe Granite SSL Connector Factory**
+1. 로 이동합니다. **포함된 암호 세트** 필드를 추가하고 다음 항목을 추가합니다. 각 추가를 확인하려면&#x200B;**+**&#x200B;에 각 을 추가한 후 필드 왼쪽에 있는 &quot; 버튼을 클릭합니다.
+
+   * `TLS_AES_256_GCM_SHA384`
+   * `TLS_AES_128_GCM_SHA256`
+   * `TLS_CHACHA20_POLY1305_SHA256`
+   * `TLS_AES_128_CCM_SHA256`
+   * `TLS_AES_128_CCM_8_SHA256`
