@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 252924afb70dd311a27d04278fbe363db15e9519
+source-git-commit: 9273282b26aeab5f65f0f05aa8ad754962dc59ec
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ AEM 홈 화면에서 관련 받은 편지함 메시지를 클릭하여 기본적
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. 자격 증명을 입력한 후 **다음** 페이지 오른쪽 상단 모서리에서 을(를) 클릭합니다. 그런 다음 SSL 연결을 위한 관련 개인 키 및 인증서를 업로드합니다.
+1. 자격 증명을 입력한 후 **다음** 페이지 오른쪽 상단 모서리에서 을(를) 클릭합니다. 그런 다음 SSL/TLS 연결에 대해 연결된 개인 키 및 인증서를 업로드합니다.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -152,7 +152,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 ### 패키지 사용 {#via-package}
 
-또는 다음 필수 항목이 이미 포함되어 있는 패키지를 업로드하여 SSL 설정을 자동화할 수 있습니다.
+또는 다음 필수 항목이 이미 포함되어 있는 패키지를 업로드하여 SSL/TLS 설정을 자동화할 수 있습니다.
 
 * ssl 서비스 사용자의 키 저장소입니다. 이것은 아래에 있습니다 */home/users/system/security/ssl-service/keystore* 로그인합니다.
 * 다음 `GraniteSslConnectorFactory` 구성
@@ -178,7 +178,7 @@ it for any subsequent updating of the private key or certificate.</dd>
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. SSL 인증서를 생성하고 개인 키로 서명합니다. 이 예에서는 이 1년 후에 만료됩니다.
+1. SSL/TLS 인증서를 생성하고 개인 키로 서명합니다. 이 예에서는 이 1년 후에 만료됩니다.
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
