@@ -1,8 +1,6 @@
 ---
-title: 경험 조각
-seo-title: Experience Fragments
+title: AEM Sites 개발의 경험 구성요소
 description: 경험 조각 사용자 지정에 대해 알아봅니다.
-seo-description: Learn about customizing Experience Fragments.
 uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 6e54073a0c1d67218283b096db3f2e5597f10376
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 3%
+source-wordcount: '1787'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +20,7 @@ ht-degree: 3%
 
 ## 기본 사항 {#the-basics}
 
-[경험 조각](/help/sites-authoring/experience-fragments.md)은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다.
+An [경험 조각](/help/sites-authoring/experience-fragments.md) 는 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다.
 
 경험 조각 기본 및/또는 변형은 다음을 사용합니다.
 
@@ -131,7 +129,7 @@ HTML 표현물은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
 유일한 추가 구성은 구성 요소가 [템플릿에 대해 허용되는 경우 컨텐츠 정책을 사용하여 수행됩니다](/help/sites-developing/page-templates-editable.md#content-policies).
 
-## 경험 조각 링크 재작성자 공급자 - HTML {#the-experience-fragment-link-rewriter-provider-html}
+## 경험 조각 링크 재작성기 공급자 - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 AEM에서는 경험 조각을 만들 수 있습니다. 경험 조각:
 

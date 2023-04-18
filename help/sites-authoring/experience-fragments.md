@@ -1,8 +1,6 @@
 ---
-title: 경험 조각
-seo-title: Experience Fragments
+title: AEM Sites 작성의 경험 조각
 description: 경험 조각
-seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,33 +9,33 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: 2f635d5c856b35794ef2d62c15bc7cf4f4e57773
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 96%
+source-wordcount: '1444'
+ht-degree: 68%
 
 ---
 
 # 경험 조각{#experience-fragments}
 
-경험 조각은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
+경험 조각 은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
 
 경험 조각:
 
 * 경험(페이지)의 일부입니다.
 * 여러 페이지에서 사용할 수 있습니다.
-* 구조 및 구성 요소를 정의하기 위한 템플릿(편집만 가능)을 기반으로 합니다.
+* 구조 및 구성 요소를 정의하기 위한 템플릿(편집 가능 전용)을 기반으로 합니다.
 * 이 템플릿을 사용하여 경험 조각의 *루트 페이지*&#x200B;를 제작할 수 있습니다.
-* 단락 시스템에서 레이아웃이 있는 하나 이상의 구성 요소로 구성되어 있습니다.
+* 단락 시스템에서 레이아웃이 있는 하나 이상의 구성 요소로 구성됩니다.
 * 다른 경험 조각을 포함할 수 있습니다.
-* 다른 조각(다른 경험 조각 포함)과 결합하여 전체 페이지(경험)를 형성할 수 있습니다.
+* 다른 구성 요소(다른 경험 조각 포함)와 결합하여 전체 페이지(경험)를 구성할 수 있습니다.
 * 루트 페이지를 기반으로 하나 이상의 변형을 만들 수 있습니다.
 * 이러한 변형은 콘텐츠 및/또는 구성 요소를 공유할 수 있습니다.
 * 조각의 여러 변형에서 사용할 수 있는 빌딩 블록으로 분할할 수 있습니다.
 
 경험 조각을 사용할 수 있습니다.
 
-* 작성자가 페이지의 일부(경험 조각)를 재사용하려는 경우 해당 조각을 복사하여 붙여넣어야 합니다. 이러한 복사/붙여넣기 경험을 생성하고 유지 관리하는 데는 시간이 오래 걸리고 사용자 오류가 발생합니다. 경험 조각은 복사/붙여넣기가 필요하지 않습니다.
+* 작성자가 페이지의 일부(경험 조각)를 다시 사용하려는 경우 해당 조각을 복사하여 붙여넣어야 합니다. 이러한 복사/붙여넣기 경험을 생성하고 유지 관리하는 데는 시간이 오래 걸리고 사용자 오류가 발생합니다. 경험 조각은 복사/붙여넣기가 필요하지 않습니다.
 * 경험 조각을 사용하여 Headless CMS 사용 사례를 지원할 수 있습니다. 작성자는 작성에만 AEM을 사용하고 고객에게 게재하는 데에는 사용하지 않습니다. 서드파티 시스템/터치포인트는 이러한 경험을 소모한 다음 최종 사용자에게 게재합니다.
 
 >[!NOTE]
@@ -47,9 +45,9 @@ ht-degree: 96%
 >    `experience-fragments-editors`
 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
 
-## 언제 경험 조각을 사용해야 합니까? {#when-should-you-use-experience-fragments}
+## 경험 조각은 언제 사용해야 합니까? {#when-should-you-use-experience-fragments}
 
-경험 조각은 다음과 같은 경우 사용해야 합니다.
+경험 조각은 다음 경우에 사용해야 합니다.
 
 * 경험을 재사용하고자 할 때
 
@@ -60,10 +58,10 @@ ht-degree: 96%
    * AEM을 콘텐츠 게재 플랫폼으로 사용하려는 솔루션
    * 서드파티 터치포인트에 콘텐츠 임베드
 
-* 다양한 변형 또는 표현물에 대한 경험이 있는 경우
+* 다른 변형 또는 표현물을 사용하는 경험이 있는 경우.
 
    * 채널 또는 컨텍스트별 변형
-   * 그룹에 의미가 있는 경험(예: 채널 간에 다양한 경험이 있는 캠페인)
+   * 그룹에 의미가 있는 경험(예: 여러 채널 간에 경험이 다른 캠페인)
 
 * Omnichannel Commerce를 사용하는 경우
 
@@ -173,7 +171,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. **경험 조각**&#x200B;에 대한 **속성**&#x200B;을 입력합니다.
 
-   **제목**&#x200B;은 필수입니다. **이름**&#x200B;을 비워 두면 **제목**&#x200B;에서 파생됩니다.
+   A **제목** 는 필수입니다. 만약 **이름** 이 비어 있으면 **제목**.
 
    ![xf-04](assets/xf-04.png)
 
@@ -196,42 +194,42 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 >[!NOTE]
 페이지 편집기 사용 방법에 대한 자세한 내용은 [페이지 콘텐츠 편집](/help/sites-authoring/editing-content.md)을 참조하십시오.
 
-다음 예제 프로시저는 제품에 대한 티저를 작성하는 방법을 보여 줍니다.
+다음 예제 절차에서는 제품에 대한 티저를 만드는 방법을 보여 줍니다.
 
-1. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)에서 **티저**&#x200B;를 끌어다 놓습니다.
+1. 끌어서 놓기 **티저** 에서 [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-05](assets/xf-05.png)
 
-1. 구성 요소 도구 모음에서 **[구성](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**&#x200B;을 선택합니다.
+1. 선택 **[구성](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** 구성 요소 도구 모음에서 를 클릭합니다.
 1. Add the **Asset** and define the **Properties** as required.
-1. **완료**(틱 아이콘)로 정의를 확인합니다.
+1. 로 정의를 확인합니다. **완료** (확인 표시 아이콘)
 1. 필요에 따라 구성 요소를 더 추가합니다.
 
 ## 경험 조각 변형 만들기 {#creating-an-experience-fragment-variation}
 
 필요에 따라 경험 조각의 변형을 만들 수 있습니다.
 
-1. [편집](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment)할 조각을 엽니다.
+1. 조각을 열어서 [편집](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
 1. **변형** 탭을 엽니다.
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **만들기**&#x200B;를 사용하여 다음을 생성할 수 있습니다.
+1. **만들기** 다음을 만들 수 있습니다.
 
    * **변형**
    * **[변형을 Live Copy로](/help/sites-administering/msm.md#live-copies)**.
 
-1. 필수 속성을 정의합니다.
+1. 필요한 속성을 정의합니다.
 
    * **템플릿**
    * **제목**
-   * **이름**(비워 두면 제목에서 파생됨)
+   * **이름**; 비워 두면 제목에서 파생됩니다.
    * **설명**
    * **변형 태그**
 
    ![xf-06](assets/xf-06.png)
 
-1. **완료**(틱 아이콘)로 확인하면 새 변형이 패널에 표시됩니다.
+1. 다음으로 확인 **완료** (확인 표시 아이콘) 새 변형이 패널에 표시됩니다.
 
    ![xf-07](assets/xf-07.png)
 
@@ -243,14 +241,14 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    예: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
-1. 구성 요소 브라우저에서 페이지 단락 시스템으로 구성 요소를 끌어 와서 경험 조각 구성 요소의 인스턴스를 생성합니다.
+1. 구성 요소 브라우저에서 페이지 단락 시스템으로 구성 요소를 끌어 와서 경험 조각 구성 요소의 인스턴스를 만듭니다.
 
    ![xf-08](assets/xf-08.png)
 
 1. 다음 중 한 방법으로 실제 경험 조각을 구성 요소 인스턴스에 추가합니다.
 
    * 에셋 브라우저에서 필요한 조각을 구성 요소에 끌어다 놓기
-   * 구성 요소 도구 모음에서 **구성**&#x200B;을 선택하고 사용할 조각을 지정한 다음 **완료**(틱)로 확인
+   * 선택 **구성** 구성 요소 도구 모음에서 사용할 조각을 지정하고 **완료** (틱)
 
    ![xf-09](assets/xf-09.png)
 
@@ -265,7 +263,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 새 빌딩 블록을 작성하려면 다음 작업을 수행하십시오.
 
-1. 경험 조각 편집기에서 재사용할 구성 요소를 선택합니다.
+1. 경험 조각 편집기에서 다시 사용할 구성 요소를 선택합니다.
 
    ![xf-10](assets/xf-10.png)
 
@@ -283,7 +281,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 #### 빌딩 블록 관리 {#managing-a-building-block}
 
-빌딩 블록은 **빌딩 블록** 탭에서 볼 수 있습니다. 각 블록에서 다음 작업을 수행할 수 있습니다.
+빌딩 블록은 **빌딩 블록** 탭. 각 블록에 대해 다음 작업을 사용할 수 있습니다.
 
 * 마스터로 이동: 새 탭에서 루트 페이지 변형 열기
 * 이름 변경
@@ -324,7 +322,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
       * **총 변형 수** - 정보만
 
       * **웹 변형 수** - 정보만
-      * **웹이 아닌 변형 수** - **정보만**
+      * **웹이 아닌 변형 수** - inf **정보만**
 
       * **이 조각을 사용하는 페이지 수** - 정보만
    * **클라우드 서비스**
@@ -352,6 +350,6 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌
 
 ## 경험 조각 내보내기 {#exporting-experience-fragments}
 
-기본적으로 경험 조각은 HTML 형식으로 제공됩니다. 이는 AEM과 서드파티 채널에서 모두 동일하게 사용할 수 있습니다.
+기본적으로 경험 조각은 HTML 형식으로 전달됩니다. 이는 AEM과 서드파티 채널에서 모두 동일하게 사용할 수 있습니다.
 
-Adobe Target으로 내보내기 위해 JSON을 사용할 수도 있습니다. 자세한 내용은 [경험 조각과 Target 통합](/help/sites-administering/experience-fragments-target.md)을 참조하십시오.
+Adobe Target으로 내보내기 위해 JSON을 사용할 수도 있습니다. 자세한 내용은 [경험 조각과 Target 통합](/help/sites-administering/experience-fragments-target.md) 자세한 내용

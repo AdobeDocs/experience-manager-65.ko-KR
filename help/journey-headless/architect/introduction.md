@@ -1,17 +1,17 @@
 ---
-title: AEM Headless 콘텐츠 설계자 여정
-description: Adobe Experience Manager의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아봅니다.
+title: Adobe Experience Manager Headless Content Architect 여정
+description: Adobe Experience Manager의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법을 소개합니다.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 89%
+source-wordcount: '704'
+ht-degree: 88%
 
 ---
 
 # AEM을 통한 Headless용 콘텐츠 모델링 - 소개 {#architect-headless-introduction}
 
-의 이 부분에서 [AEM Headless 콘텐츠 설계 여정](overview.md), Adobe Experience Manager(AEM)를 사용한 headless 콘텐츠 전달을 위한 콘텐츠 모델링을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
+의 이 부분에서 [AEM Headless Content Architect 여정](overview.md), AEM(Adobe Experience Manager)을 사용하여 헤드리스 컨텐츠 전달을 위한 컨텐츠 모델링을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
 
 이 문서는 Headless 콘텐츠 게재, AEM이 Headless를 지원하는 방법 및 콘텐츠를 Headless용으로 모델링하는 방법을 이해하는 데 도움이 됩니다. 문서를 읽고 나면
 
@@ -68,7 +68,7 @@ AEM의 경우 콘텐츠 설계자는 콘텐츠 모델링을 수행하여 다양�
 
 콘텐츠 조각 모델을 만들고 작성자가 이를 사용하여 콘텐츠를 생성하면 Headless 애플리케이션은 이 콘텐츠에 액세스해야 합니다.
 
-AEM(Adobe Experience Manager)은 AEM GraphQL API를 사용하여 콘텐츠 조각에 선택적으로 액세스하여 필요한 콘텐츠만 반환할 수 있습니다. API를 사용하여 개발자는 특정 콘텐츠를 선택하는 쿼리를 만들 수 있습니다. 이 선택 프로세스는 *사용자의* 콘텐츠 조각 모델을 기반으로 합니다.
+AEM(Adobe Experience Manager)에서는 AEM GraphQL API를 사용하여 컨텐츠 조각에 선택적으로 액세스하여 필요한 컨텐츠만 반환할 수 있습니다. API를 사용하여 개발자는 특정 콘텐츠를 선택하는 쿼리를 만들 수 있습니다. 이 선택 프로세스는 *사용자의* 콘텐츠 조각 모델을 기반으로 합니다.
 
 즉, 프로젝트는 애플리케이션에 사용할 구조화된 콘텐츠의 Headless 게재를 실현할 수 있습니다.
 

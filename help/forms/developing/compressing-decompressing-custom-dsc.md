@@ -1,10 +1,10 @@
 ---
-title: WS-security 헤더를 사용하여 자격 증명을 전달하는 방법
-description: WS-security 헤더를 사용하여 자격 증명을 전달하는 방법을 알아봅니다.
+title: JEE 사용자 지정 DSC의 AEM Forms을 사용하여 파일을 압축 및 압축 해제할 수 있습니다
+description: JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일을 압축 및 압축 해제하는 방법을 알아봅니다
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---

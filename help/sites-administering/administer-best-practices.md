@@ -1,8 +1,6 @@
 ---
-title: 모범 사례
-seo-title: Best Practices
+title: 관리자가 설치 및 실행하는 데 도움이 되는 우수 사례
 description: 관리자가 시작하고 실행할 수 있도록 Adobe 엔지니어링 및 컨설팅 팀이 컴파일한 우수 사례를 찾아보십시오.
-seo-description: Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +8,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 23%
+source-wordcount: '531'
+ht-degree: 12%
 
 ---
 
 # 모범 사례{#best-practices}
 
-우수 사례에서는 가장 효율적이고 효과적인 방법으로 AEM을 개발, 관리 또는 사용하는 방법을 설명합니다. 계속 증가하고 있는 주제 목록에는 AEM의 다양한 영역이 포함되어 있습니다.
+우수 사례에서는 가장 효율적이고 효과적인 방법으로 AEM을 개발, 관리 또는 사용하는 방법을 설명합니다. 이러한 증가하고 있는 주제 목록에는 AEM의 다양한 영역이 포함되어 있습니다.
 
-다음 영역에는 우수 사례에 관해 참조할 수 있는 문서가 있습니다.
+다음 영역에는 우수 사례에 대해 사용 가능한 설명서가 있습니다.
 
 * [Assets](#assets)
 * [Sites](#sites)
@@ -32,7 +30,7 @@ ht-degree: 23%
 * [개발 우수 사례](/help/sites-developing/best-practices.md)
 * [배포 우수 사례](/help/sites-deploying/best-practices.md)
 
-관련된 구체적인 문서에 대한 설명과 링크는 다음 표에 나와 있습니다.
+특정 문서는 다음에 나오는 표에 설명되고 연결됩니다.
 
 ## Assets {#assets}
 
@@ -70,7 +68,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함한 Assets에 대
 
 ## Sites {#sites}
 
-웹 사이트 컨텐츠 관리 및 작성에는 다음과 같은 몇 가지 우수 사례가 요약되어 있습니다.
+웹 사이트 컨텐츠 관리 및 작성에는 다음과 같이 요약된 몇 가지 우수 사례가 있습니다.
 
 <table>
  <tbody>

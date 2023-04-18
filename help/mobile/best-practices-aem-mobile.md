@@ -1,8 +1,6 @@
 ---
-title: 모범 사례
-seo-title: Best Practices
-description: 모바일 앱 템플릿 및 구성 요소를 빌드하려는 sites에 대한 숙련된 AEM 개발자에게 도움이 되는 모범 사례 및 지침을 알려면 이 페이지를 따르십시오.
-seo-description: Follow this page to  learn best practices and guidelines that will help experienced AEM developers for sites, who want to build mobile app templates and components.
+title: AEM Mobile On-demand Services 우수 사례
+description: 모바일 앱 템플릿 및 구성 요소를 구축하려는 숙련된 AEM for sites 개발자에게 도움이 되는 모범 사례 및 지침에 대해 알아보십시오.
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap) 셸에서 직접 실행되는 앱을 빌드하는 것과 다릅니다. 개발자는 다음 사항에 익숙해야 합니다.
 

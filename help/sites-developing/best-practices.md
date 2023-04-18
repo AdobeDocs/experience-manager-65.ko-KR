@@ -1,8 +1,6 @@
 ---
-title: 모범 사례
-seo-title: Best Practices
-description: Adobe 엔지니어링 및 컨설팅 팀은 AEM 개발자를 위한 포괄적인 모범 사례 세트를 개발했습니다
-seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
+title: AEM 개발자를 위한 우수 사례
+description: Adobe 엔지니어링 및 컨설팅 팀은 AEM 개발자를 위한 포괄적인 모범 사례 세트를 개발했습니다.
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 22%
+source-wordcount: '466'
+ht-degree: 15%
 
 ---
 
@@ -42,7 +40,7 @@ AEM 개발 프로젝트를 시작하기 전에 먼저 다음 우수 사례를 �
 * [커뮤니티](/help/sites-developing/best-practices.md#communities)
 * [도구/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
-관련된 구체적인 문서에 대한 설명과 링크는 다음 표에 나와 있습니다.
+특정 문서는 다음에 나오는 표에 설명되고 연결됩니다.
 
 관리, 배포, 유지 관리 또는 작성에 대한 우수 사례는 다음 중 하나를 참조하십시오.
 
@@ -52,7 +50,7 @@ AEM 개발 프로젝트를 시작하기 전에 먼저 다음 우수 사례를 �
 
 ## Sites {#sites}
 
-웹 사이트 컨텐츠 관리 및 작성에는 다음과 같은 몇 가지 우수 사례가 요약되어 있습니다.
+웹 사이트 컨텐츠 관리 및 작성에는 다음과 같이 요약된 몇 가지 우수 사례가 있습니다.
 
 <table>
  <tbody>

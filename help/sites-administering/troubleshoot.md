@@ -1,8 +1,6 @@
 ---
-title: AEM 문제 해결
-seo-title: Troubleshooting AEM
+title: Adobe Experience Manager 문제 해결
 description: AEM의 문제 해결에 대해 알아봅니다.
-seo-description: Learn about troubleshooting issues with AEM.
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +9,16 @@ content-type: reference
 discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 6%
+source-wordcount: '545'
+ht-degree: 5%
 
 ---
 
-# AEM 문제 해결 {#troubleshooting-aem}
+# Adobe Experience Manager 문제 해결 {#troubleshooting-aem}
 
-다음 섹션에서는 AEM을 사용할 때 발생할 수 있는 몇 가지 문제와 이러한 문제를 해결하는 방법에 대한 제안 사항을 다룹니다.
+다음 섹션에서는 AEM(Adobe Experience Manager)을 사용할 때 발생할 수 있는 몇 가지 문제와 이러한 문제를 해결하는 방법에 대한 제안 사항을 다룹니다.
 
 >[!NOTE]
 >

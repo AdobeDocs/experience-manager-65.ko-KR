@@ -1,8 +1,6 @@
 ---
-title: 문서 단편
-seo-title: Document Fragments
+title: AEM의 문서 조각
 description: Correspondence Management에서 텍스트, 목록, 조건 및 레이아웃 조각과 같은 문서 조각을 사용하여 고객 서신의 정적, 동적 및 반복 가능한 구성 요소를 구성할 수 있습니다.
-seo-description: Document Fragments, such as Text, lists, conditions, and layout fragments, in Correspondence Management let you form the static, dynamic, and repeatable components of customer correspondence.
 uuid: 4273323d-14f5-4b3b-8fed-80beef641efe
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '6906'
+source-wordcount: '6908'
 ht-degree: 0%
 
 ---
@@ -298,9 +296,12 @@ ht-degree: 0%
 
 조건 편집기에 [표현식 빌더](/help/forms/using/expression-builder.md) 여러 자리 표시자와 데이터 사전 요소를 모두 사용하여 표현식 만들기를 지원하는 사용자 인터페이스입니다. 이러한 표현식에서 공통 피연산자와 로컬/전역 함수를 사용할 수 있습니다. 각 표현식은 일부 컨텐츠와 연결될 수 있으며 선택적으로 표현식이 true로 평가되지 않는 경우 기본 섹션이 있을 수 있습니다. 모든 표현식은 정의된 시퀀스에서 평가되며 true를 반환하는 첫 번째 표현식이 선택되고 해당 조건부 모듈에서 관련 컨텐츠가 반환됩니다.
 
-예를 들어, 편지의 약관 텍스트가 고객의 상태에 따라 다르며 데이터 사전에 &quot;state&quot;라는 요소가 포함되어 있는 경우 다음과 같이 조건을 추가할 수 있습니다. ・ state = NY, T&amp;C_NY 텍스트 단락 선택 ・ state = NC, T&amp;C_NC 텍스트 단락 선택
+예를 들어, 편지의 약관 텍스트가 고객의 상태에 따라 다르며 데이터 사전에 &quot;state&quot;라는 요소가 포함되어 있는 경우 다음과 같이 조건을 추가할 수 있습니다.
+* state = NY, T&amp;C_NY 텍스트 단락 선택
+* state = NC, T&amp;C_NC 텍스트 단락을 선택합니다.
 
-조건 편집기를 사용하면 기본 조건을 지정할 수 있습니다. 컨트롤 변수의 값이 조건과 일치하지 않으면 기본 조건과 연결된 컨텐츠가 사용됩니다. 앞의 예를 따라 이 조건 행을 추가할 수 있습니다. ・ T&amp;C_Rest 선택
+조건 편집기를 사용하면 기본 조건을 지정할 수 있습니다. 컨트롤 변수의 값이 조건과 일치하지 않으면 기본 조건과 연결된 컨텐츠가 사용됩니다. 앞의 예를 따라 이 조건 행을 추가할 수 있습니다.
+* 기본적으로 T&amp;C_Rest 선택
 
 ### 조건 만들기 {#create-a-condition}
 
