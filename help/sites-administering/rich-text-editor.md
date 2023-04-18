@@ -3,10 +3,10 @@ title: Adobe Experience Manager에서 컨텐츠를 작성하도록 리치 텍스
 description: Adobe Experience Manager에서 컨텐츠를 작성하도록 Adobe Experience Manager 리치 텍스트 편집기를 구성하는 방법을 알아봅니다.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 1%
+source-wordcount: '3021'
+ht-degree: 0%
 
 ---
 
@@ -259,7 +259,7 @@ AEM에서는 다양한 편집 모드에 대해 리치 텍스트 편집기의 인
 * RTE의 사용자 인터페이스 구성이 제거되었거나 항목을 활성화하지 않으면 컨텐츠 정책에서 구성할 수 없습니다.
 * 작성자는 사용자 인터페이스 구성 및 컨텐츠 정책에 의해 사용 가능한 기능에만 액세스할 수 있습니다.
 
-예를 들어 [텍스트 코어 구성 요소 설명서](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+예를 들어 [텍스트 코어 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=en#the-text-component-and-the-rich-text-editor).
 
 ## 도구 모음 아이콘과 명령 간 매핑 사용자 정의 {#iconstoolbar}
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
 exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1275'
 ht-degree: 4%
 
 ---
@@ -222,7 +222,7 @@ Target 구성에 사용자 지정 mbox.js 파일이 포함되어 있습니다. [
 컨텍스트 메뉴에서 Target 명령을 제거하려면 구성 요소의 cq:editConfig 노드에 다음 속성을 추가하십시오.
 
 * 이름: cq:disableTargeting
-* Type: Boolean
+* 유형: 부울
 * 값: True
 
 예를 들어 Geometrixx 데모 사이트 페이지의 제목 구성 요소에 대한 타깃팅을 비활성화하려면 속성을 /apps/geometrixx/components/title/cq:editConfig 노드에 추가합니다.
@@ -235,7 +235,7 @@ Target 구성에 사용자 지정 mbox.js 파일이 포함되어 있습니다. [
 >
 >DTM을 사용하지 않는 경우 주문 확인을 Adobe Target에 보냅니다.
 
-웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 Adobe Target으로 구매 정보를 보내십시오. (자세한 내용은 [orderConfirmPage Mbox 만들기](https://experienceleague.adobe.com/docs/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) ( Adobe Target 설명서) Adobe Target은 MBox 이름이 인 경우 mbox 데이터를 주문 확인 데이터로 인식합니다 `orderConfirmPage` 에서는 다음과 같은 특정 매개 변수 이름을 사용합니다.
+웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 Adobe Target으로 구매 정보를 보내십시오. (자세한 내용은 [orderConfirmPage Mbox 만들기](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) 및 [주문 확인 Mbox - 사용자 지정 매개 변수를 추가합니다.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target은 MBox 이름이 인 경우 mbox 데이터를 주문 확인 데이터로 인식합니다 `orderConfirmPage` 에서는 다음과 같은 특정 매개 변수 이름을 사용합니다.
 
 * productPurchasedId: 구입한 제품을 식별하는 ID 목록입니다.
 * orderId: 주문 ID입니다.
