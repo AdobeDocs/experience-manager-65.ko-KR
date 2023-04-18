@@ -1,17 +1,17 @@
 ---
-title: AEM Headless 콘텐츠 작성자 여정
-description: Adobe Experience Manager의 강력하고 유연한 Headless 기능에 대한 소개와 프로젝트 콘텐츠를 작성하는 방법을 알아봅니다.
+title: Adobe Experience Manager을 사용하여 헤드리스용 작성
+description: Adobe Experience Manager의 강력하고 유연한 헤드리스 기능 및 프로젝트용 컨텐츠를 작성하는 방법에 대한 소개입니다.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 91%
+source-wordcount: '632'
+ht-degree: 90%
 
 ---
 
 # AEM을 통한 Headless 작성 - 소개 {#author-headless-introduction}
 
-의 이 부분에서 [AEM Headless 콘텐츠 작성 여정](overview.md), Adobe Experience Manager(AEM)를 사용하여 headless 콘텐츠 전달을 위한 콘텐츠 작성을 이해하는 데 필요한 (기본) 개념 및 용어를 배울 수 있습니다.
+의 이 부분에서 [AEM Headless Content Author 여정](overview.md), AEM(Adobe Experience Manager)을 사용하여 헤드리스 컨텐츠 전달을 위한 컨텐츠 작성을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
 
 ## 목표 {#objective}
 

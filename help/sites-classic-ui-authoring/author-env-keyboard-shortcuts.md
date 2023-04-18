@@ -1,8 +1,6 @@
 ---
 title: 콘솔용 키보드 단축키
-seo-title: Keyboard Shortcuts for Consoles
 description: AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 콘솔에 사용되는 키보드 단축키도 있고 페이지 편집에 사용되는 키보드 단축키도 있습니다.
-seo-description: Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to page editing.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 100%
+ht-degree: 33%
 
 ---
 
@@ -23,11 +21,11 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 >[!NOTE]
 >
->데스크톱 장치에서의 다중 선택:
+>데스크톱 장치에서 다중 선택:
 >
->* Windows: **Ctrl****을 클릭한 채**&#x200B;필수 구성 요소를 클릭합니다.
+>* Windows: **Ctrl**+**click** 필요한 구성 요소에 한합니다.
 >
->* Mac: **Cmd****를 클릭한 채**&#x200B;필수 구성 요소를 클릭합니다.
+>* Mac: **Cmd**+**click** 필요한 구성 요소에 한합니다.
 >
 
 
@@ -37,16 +35,15 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
  <tbody>
   <tr>
    <th>위치</th>
-   <th>단축키</th>
+   <th>바로 가기</th>
    <th>설명</th>
   </tr>
   <tr>
    <td>콘솔</td>
-   <td><strong><code>Shift-Double-Click</code></strong><br /> (필요한 페이지)</td>
-   <td>페이지를 새 창에서 엽니다.<br />
-<strong>참고:</strong> 이 단축키는 <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">사용자 속성</a>이 단일 창으로 설정된 경우에 작동합니다. 여러 창을 선택한 경우 이 동작이 기본 동작입니다.</td>
+   <td><strong><code>Shift-Double-Click</code></strong><br /> (필요한 페이지에서)</td>
+   <td>페이지를 새 창에서 엽니다.<br /> <strong>참고:</strong> 이 기능은 <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">사용자 속성</a> 단일 창으로 설정되어 있습니다. 창이 여러 개일 경우 기본 동작입니다.</td>
   </tr>
  </tbody>
 </table>
 
-데스크톱 사용자가 [페이지 편집기](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)를 사용하여 페이지를 작성할 때도 다양한 키보드 단축키를 사용할 수 있습니다.
+데스크톱 사용자는 [페이지 편집기](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) 페이지를 작성하도록 했습니다.

@@ -1,8 +1,6 @@
 ---
 title: 컨텐츠 조각으로 페이지 작성
-seo-title: Page Authoring with Content Fragments
-description: 컨텐츠 조각은 페이지와 독립된 자산으로 작성 및 관리됩니다. 이 구성 요소와 여러 변형을 함께 사용하면 채널 중립적인 컨텐츠를 만들 수 있습니다.
-seo-description: Content fragments are created and managed as page-independent assets. They allow you to create channel-neutral content, together with variations.
+description: 컨텐츠 조각은 페이지와 독립된 자산으로 작성 및 관리됩니다. 이 조각을 사용하면 변형과 함께 채널 중립적인 컨텐츠를 만들 수 있습니다.
 page-status-flag: de-activated
 uuid: 8e3bb1bc-8720-48e2-8d06-98fbab4dd4fd
 contentOwner: Chris Bohnert
@@ -11,10 +9,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
 exl-id: b55d9edc-a210-407a-aa4b-a91bb358be7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 100%
+source-wordcount: '109'
+ht-degree: 50%
 
 ---
 
@@ -26,6 +24,6 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
 
 >[!CAUTION]
 >
->[컨텐츠 조각 관리]의 전체 기능은 클래식 UI에서 사용할 수 없습니다. 표준 작성 문서에서 [컨텐츠 조각으로 페이지 작성](/help/sites-authoring/content-fragments.md)을 참조하십시오.
+>컨텐츠 조각 관리의 전체 기능은 클래식 UI에서 사용할 수 없습니다. 표준 작성 문서에서 [컨텐츠 조각으로 페이지 작성](/help/sites-authoring/content-fragments.md)을 참조하십시오.
 >
 >컨텐츠 조각 구성 요소는 클래식 UI 사이드 킥에서 볼 수 있지만, 세부 기능은 사용할 수 없습니다.

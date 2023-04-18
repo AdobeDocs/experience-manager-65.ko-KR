@@ -1,8 +1,6 @@
 ---
-title: 태그 사용
-seo-title: Using Tags
+title: 태그를 사용하여 웹 사이트에서 컨텐츠 분류
 description: 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다.
-seo-description: Tags are a quick and easy method of classifying content within a website
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 100%
+source-wordcount: '575'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +34,7 @@ ht-degree: 100%
 1. **SEO 사용** - 페이지 속성으로 적용된 태그는 페이지의 메타태그에 자동으로 표시되므로 검색 엔진에서 확인 가능합니다.
 1. **단순한 정교성** - 단순히 단어와 버튼 터치만으로 태그를 만들 수 있습니다. 그런 다음, 제목, 설명 및 무제한 레이블을 추가하여 태그에 더 많은 의미 체계를 제공할 수 있습니다.
 1. **핵심 일관성** - 태깅 시스템은 AEM의 핵심 구성 요소로서 모든 AEM 기능에서 콘텐츠를 분류하는 데 사용됩니다. 또한 태깅 API는 개발자가 동일한 분류법에 액세스할 수 있는 태깅 지원 애플리케이션을 작성하는 데 사용할 수 있습니다.
-1. **구조 및 유연성 조합** - AEM은 페이지 및 경로 중첩으로 인해 구조화된 정보로 작업하는 데 이상적입니다. 전체 텍스트 검색 기능이 내장되어 있으므로 비구조적인 정보로 작업할 때에도 동일한 성능을 발휘합니다. 태깅은 구조 및 유연성의 장점을 결합합니다.
+1. **구조 및 유연성 조합** - AEM은 페이지 및 경로 중첩으로 인해 구조화된 정보로 작업하는 데 이상적입니다. 전체 텍스트 검색 기능이 내장되어 있으므로 비구조적인 정보로 작업할 때에도 동일한 성능을 발휘합니다. 태깅은 구조와 유연성의 장점을 결합합니다.
 
 사이트의 콘텐츠 구조 및 에셋의 메타데이터 스키마를 디자인할 때는 태깅이 제공하는 액세스 가능한 간단한 접근 방법을 고려하십시오.
 

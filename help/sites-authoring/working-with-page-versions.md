@@ -1,8 +1,6 @@
 ---
-title: 페이지 버전을 사용하여 작업
-seo-title: Working with Page Versions
-description: 페이지 버전 생성, 비교 및 복원
-seo-description: Create, compare, and restore versions of a page
+title: 컨텐츠 페이지 버전 사용
+description: 페이지 버전 만들기, 비교 및 복원
 uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,39 +9,39 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: b11a97b9b00e6f80fb0243e234ed1dc2c004ed3a
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 97%
+source-wordcount: '1492'
+ht-degree: 74%
 
 ---
 
 # 페이지 버전을 사용하여 작업{#working-with-page-versions}
 
-버전 관리를 통해 특정 시점의 페이지 &quot;스냅샷&quot;을 만들 수 있습니다. 버전 관리로 다음과 같은 작업을 수행할 수 있습니다.
+버전 매기기를 통해 특정 시점의 페이지 &quot;스냅샷&quot;을 만들 수 있습니다. 버전 관리를 사용하여 다음 작업을 수행할 수 있습니다.
 
-* 페이지의 버전을 생성합니다.
+* 페이지 버전을 만듭니다.
 * 예를 들어 페이지의 변경을 취소하려면 페이지를 이전 버전으로 복원합니다.
-* 강조 표시된 텍스트와 이미지에 차이점을 보이는 현재 버전의 페이지를 이전 버전과 비교합니다.
+* 강조 표시된 텍스트 및 이미지의 차이점을 사용하여 페이지의 현재 버전을 이전 버전과 비교합니다.
 
 ## 새 버전 만들기 {#creating-a-new-version}
 
 다음에서 리소스 버전을 만들 수 있습니다.
 
-* [타임라인 레일](#creating-a-new-version-timeline)
-* [만들기](#creating-a-new-version-create-with-a-selected-resource) 옵션(리소스를 선택한 경우)
+* a [타임라인 레일](#creating-a-new-version-timeline)
+* a [만들기](#creating-a-new-version-create-with-a-selected-resource) 옵션(리소스를 선택한 경우)
 
 ### 새 버전 만들기 - 타임라인 {#creating-a-new-version-timeline}
 
 1. 버전을 만들 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
-1. **타임라인** 열을 엽니다.
+1. 를 엽니다. **타임라인** 열.
 1. 주석 필드 옆에 있는 화살표 머리를 클릭/탭하여 옵션을 나열합니다.
 
    ![screen-shot_2019-03-05at112335](assets/screen-shot_2019-03-05at112335.png)
 
-1. **다른 버전으로 저장**&#x200B;을 선택합니다.
-1. 필요한 경우 **레이블** 및 **댓글**&#x200B;을 입력합니다.
+1. 선택 **다른 버전으로 저장**.
+1. 을(를) 입력합니다. **레이블** 및 **댓글** 필요한 경우.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -55,7 +53,7 @@ ht-degree: 97%
 
 1. 버전을 만들 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
-1. 도구 모음에서 **만들기** 옵션을 선택합니다.
+1. 을(를) 선택합니다 **만들기** 옵션 을 클릭합니다.
 1. 대화 상자가 열립니다. 필요한 경우 **레이블** 및 **댓글**&#x200B;을 입력할 수 있습니다:
 
    ![screen_shot_2012-02-15at105050am](assets/screen_shot_2012-02-15at105050am.png)
@@ -91,7 +89,7 @@ ht-degree: 97%
 >1. 페이지의 버전을 임의로 만듭니다.
 >1. 초기 레이블 및 버전 노드 이름은 1.0, 1.1, 1.2 등이 됩니다.
 >1. 첫 번째 버전 1.0을 복원합니다.
->1. 다시 새 버전을 만듭니다.
+>1. 새 버전을 다시 만듭니다.
 >1. 생성된 레이블 및 노드 이름은 이제 1.0.0, 1.0.1, 1.0.2 등이 됩니다.
 
 
@@ -195,7 +193,7 @@ ht-degree: 97%
 
    ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. **현재와 비교**&#x200B;를 선택합니다. [페이지 차이](/help/sites-authoring/page-diff.md)가 열리고 차이점이 표시됩니다.
+1. 선택 **현재 항목에 비교**. 다음 [페이지 비교](/help/sites-authoring/page-diff.md) 가 열리고 차이점이 표시됩니다.
 
 ## 타임워프 {#timewarp}
 
@@ -209,16 +207,16 @@ ht-degree: 97%
 
 이를 위해 진행되는 작업:
 
-* 시스템은 선택한 시간에 활성화되어 있던 페이지 버전을 찾습니다.
-* 즉, 표시되는 버전은 Timewarp에서 선택한 시점 *이전에* 생성/활성화되었음을 의미합니다.
+* 시스템이 선택한 시간에 활성 상태인 페이지 버전을 찾습니다.
+* 즉, 표시된 버전이 생성/활성화되었음을 의미합니다 *이전* 타임워프에서 선택한 시점입니다.
 * 삭제된 페이지로 이동하더라도 페이지의 이전 버전이 보관소에서 남아 있어 사용할 수 있는 경우에는 해당 페이지가 렌더링됩니다.
 * 게시된 버전을 찾을 수 없으면 타임워프는 작성 환경의 현재 페이지 상태로 돌아갑니다. 그래야만 더 이상 검색할 수 없음을 의미하는 오류/404 페이지가 나타나지 않기 때문입니다.
 
 ### 타임워프 사용 {#using-timewarp}
 
-타임워프는 페이지 편집기의 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)입니다. 이를 시작하려면 다른 모드처럼 전환하면 됩니다.
+타임워프는 [모드](/help/sites-authoring/author-environment-tools.md#page-modes) 페이지 편집기: 시작하려면 다른 모드처럼 전환하면 됩니다.
 
-1. 타임워프를 시작하려는 페이지 편집기를 시작한 다음 [모드 선택]에서 **타임워프**&#x200B;를 선택합니다.
+1. 타임워프를 시작할 페이지의 편집기를 시작한 다음 을 선택합니다 **타임워프** 모드 선택
 
    ![wwpv-01](assets/wwpv-01.png)
 
@@ -226,7 +224,7 @@ ht-degree: 97%
 
    ![wwpv-02](assets/wwpv-02.png)
 
-1. 이 페이지는 날짜 설정에 따라 표시됩니다. 창 상단에 파란색 상태 표시줄이 표시되면 타임워프 모드입니다. 상태 표시줄의 링크를 사용하여 새 대상 날짜를 선택하거나 타임워프 모드를 종료합니다.
+1. 날짜 세트를 기준으로 페이지가 표시됩니다. 창 상단에 있는 파란색 상태 표시줄을 통해 타임워프 모드가 표시됩니다. 상태 표시줄의 링크를 사용하여 새 대상 날짜를 선택하거나 타임워프 모드를 종료합니다.
 
    ![wwpv-03](assets/wwpv-03.png)
 

@@ -1,8 +1,6 @@
 ---
-title: 모바일 앱
-seo-title: Mobile Apps
+title: 모바일 앱 관리
 description: 이 페이지는 모바일 앱의 작성, 개발 및 관리를 시작하는 랜딩 페이지 역할을 합니다.
-seo-description: This page serves as a landing page to get started with authoring, developing, and administering mobile apps.
 uuid: 0cc9e6d6-c6ea-48f9-9b7f-9ead0f2d199e
 contentOwner: msm-service
 content-type: reference
@@ -10,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 discoiquuid: f73bfa98-df2d-4b0f-93a2-1337f783e4bc
 exl-id: ffd2d029-b81a-4768-8e58-66aa5cf3772d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 4%
+source-wordcount: '137'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) Mobile은 AEM Assets, Sites, Screens, Workflow, User Manager, Commerce 및 Forms을 활용하는 Adobe Experience Manager 멀티채널 디지털 플랫폼의 일부입니다. AEM Mobile은 뛰어난 배포 유연성을 제공하여 기업은 다양한 컨텐츠 소스를 사용할 수 있습니다.
 

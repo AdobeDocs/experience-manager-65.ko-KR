@@ -1,8 +1,6 @@
 ---
 title: 페이지 속성 편집
-seo-title: Editing Page Properties
-description: 페이지 속성은 페이지의 특성에 따라 달라질 수 있습니다. 예를 들어 일부 페이지는 Live Copy에 연결되어 있을 수 있지만 어떤 페이지는 연결되지 않고 Live Copy 정보를 적절하게 사용할 수 있습니다.
-seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
+description: 페이지의 속성은 페이지의 특성에 따라 달라질 수 있습니다. 예를 들어, 일부 페이지는 Live Copy에 연결되어 있을 수 있지만 다른 페이지는 연결되지 않고 Live Copy 정보를 적절하게 사용할 수 있습니다.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 96%
+ht-degree: 29%
 
 ---
 
@@ -29,7 +27,7 @@ ht-degree: 96%
 
 * **제목**
 
-   페이지 제목은 다양한 위치에 표시됩니다. **웹 사이트** 탭 목록 및 **사이트** 카드/목록 보기 등 다양한 위치에 표시됩니다.
+   페이지 제목은 다양한 위치에 표시됩니다. 예: **웹 사이트** 탭 목록 및 **Sites** 카드/목록 보기.
 
    필수 필드입니다.
 
@@ -40,22 +38,22 @@ ht-degree: 96%
    * 태그를 선택하면 선택 상자 아래에 나열됩니다. 이 목록에서 x를 사용하여 태그를 제거할 수 있습니다.
    * 빈 선택 상자에 이름을 입력하여 완전히 새로운 태그를 입력할 수 있습니다.
 
-      Enter 키를 누르면 새 태그가 실제로 생성됩니다. 그러면 상자에 새 태그가 표시되고 태그 오른쪽에는 새 태그임을 가리키는 작은 별이 표시됩니다.
+      Enter 키를 누르면 새 태그가 실제로 생성됩니다. 그러면 상자에 새 태그가 표시되고 태그 오른쪽에는 새 태그임을 나타내는 작은 별이 표시됩니다.
 
    * 드롭다운 기능을 통해 기존 태그에서 선택할 수 있습니다.
-   * 선택 상자에서 태그 항목을 마우스로 가리키면 x가 표시됩니다. 이를 통해 이 페이지에서 해당 태그를 제거할 수 있습니다.
+   * 선택 상자에서 태그 항목을 마우스로 가리키면 x가 표시됩니다. 이 태그는 이 페이지에서 해당 태그를 제거하는 데 사용할 수 있습니다.
 
 * **탐색 시 숨김**
 
-   페이지 탐색 시 페이지를 표시할지 아니면 숨길지를 나타내는 전환 스위치입니다.
+   페이지 탐색에서 페이지를 표시할지 아니면 숨길지를 나타내는 전환 스위치입니다.
 
 * **페이지 제목**
 
-   페이지에 사용할 제목입니다.
+   페이지에서 사용할 제목입니다.
 
 * **탐색 제목**
 
-   탐색에 사용할 별도의 제목을 지정할 수 있습니다(예를 들어 더욱 간결한 제목을 원할 경우). 비어 있으면 **제목**&#x200B;이 사용됩니다.
+   탐색에 사용할 별도의 제목을 지정할 수 있습니다(예를 들어 더욱 간결한 제목을 원할 경우). 비어 있으면 **제목** 이 사용됩니다.
 
 * **소제목**
 
@@ -67,9 +65,9 @@ ht-degree: 96%
 
 * **시간**
 
-   게시된 페이지를 활성화할 날짜와 시간입니다. 이 페이지를 게시하면 지정된 시간까지 비활성 상태로 유지됩니다. 
+   게시된 페이지를 활성화할 날짜와 시간입니다. 이 페이지를 게시하면 지정된 시간까지 비활성 상태로 유지됩니다.
 
-   이 필드를 비워 두면 페이지가 즉시 게시됩니다(일반적인 시나리오).
+   페이지를 즉시 게시하려는 경우(일반적인 시나리오) 이 필드를 비워 둡니다.
 
 * **해제 시간**
 
@@ -81,14 +79,14 @@ ht-degree: 96%
 
    이 페이지의 별칭 URL을 입력할 수 있습니다. 이를 통해 더 간단하고 기억에 남는 URL을 만들 수 있습니다.
 
-   예를 들어 별칭 URL이 w로 설정된 경우 `elcome`경로 / `v1.0/startpage`웹 사이트용 h `ttp://example.com,` 그 다음 h `ttp://example.com/welcome`은 h의 단축 URL입니다. `ttp://example.com/content/v1.0/startpage`
+   예를 들어 별칭 URL이 w로 설정된 경우 `elcome`경로 / 로 식별된 페이지로 `v1.0/startpage`웹 사이트 h `ttp://example.com,` h `ttp://example.com/welcome`h의 별칭 URL이 됩니다. `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
    >별칭 URL:
    >
-   >* 이 URL은 고유해야 하므로 이 값이 다른 페이지에 이미 사용되고 있지는 않은지 주의해야 합니다.
-   >* 정규식 패턴을 지원하지 않습니다.
+   >* 는 고유해야 하므로 이 값이 다른 페이지에 이미 사용되고 있지는 않은지 주의해야 합니다.
+   >* 정규 표현식 패턴을 지원하지 않습니다.
 
 
 * **별칭 URL 리디렉션**
@@ -107,7 +105,7 @@ ht-degree: 96%
 
 * **디자인**
 
-   이 페이지에 사용할 [디자인](/help/sites-developing/designer.md)을 나타냅니다.
+   을(를) 지정합니다. [디자인](/help/sites-developing/designer.md) 이 페이지에 사용할 대상.
 
 * **별칭**
 
@@ -115,7 +113,7 @@ ht-degree: 96%
 
 * **폐쇄된 사용자 그룹 활성화**
 
-   CUG([폐쇄된 사용자 그룹](/help/sites-administering/cug.md))를 사용하거나 사용하지 않습니다.
+   을 사용(또는 사용 안 함) [폐쇄된 사용자 그룹](/help/sites-administering/cug.md) (CUG).
 
 * **로그인 페이지**
 
@@ -137,21 +135,21 @@ ht-degree: 96%
 
 * **페이지 썸네일**
 
-   페이지 썸네일 이미지를 보여 줍니다. 다음을 작업을 수행할 수 있습니다.
+   페이지 축소판 이미지를 표시합니다. 다음을 작업을 수행할 수 있습니다.
 
    * **미리 보기 생성**
 
-      썸네일로 사용할 페이지의 미리 보기를 생성합니다.
+      축소판으로 사용할 페이지의 미리 보기를 생성합니다.
 
    * **이미지 업로드**
 
-      썸네일로 사용할 이미지를 업로드합니다.
+      축소판으로 사용할 이미지를 업로드합니다.
 
 ### 클라우드 서비스 {#cloud-services}
 
 * **클라우드 서비스**
 
-   [클라우드 서비스](/help/sites-developing/extending-cloud-config.md)에 대한 속성을 정의합니다.
+   에 대한 속성 정의 [클라우드 서비스](/help/sites-developing/extending-cloud-config.md).
 
 ### 개인화 {#personalization}
 
@@ -163,19 +161,19 @@ ht-degree: 96%
 
 * **권한** (터치에 적합한 UI)
 
-   유효 권한을 보고 [새 권한을 추가합니다](/help/sites-administering/user-group-ac-admin.md).
+   보기 [유효 권한 및 새 권한 추가](/help/sites-administering/user-group-ac-admin.md).
 
 ### 블루프린트 {#blueprint}
 
 * **블루프린트**
 
-   [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 [블루프린트] 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
+   내에서 블루프린트 페이지에 대한 속성을 정의합니다 [다중 사이트 관리](/help/sites-administering/msm.md). 수정 사항이 Live Copy에 전파되는 환경을 제어합니다.
 
-### 라이브 카피 {#live-copy}
+### Live Copy {#live-copy}
 
 * **Livecopy**
 
-   [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 Live Copy 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
+   내에서 Live Copy 페이지에 대한 속성을 정의합니다 [다중 사이트 관리](/help/sites-administering/msm.md). 수정 사항이 블루프린트에서 전파되는 상황을 제어합니다.
 
 ### 사이트 구조 {#site-structure}
 
@@ -183,14 +181,14 @@ ht-degree: 96%
 
 ## 페이지 속성 편집 {#editing-page-properties-2}
 
-### 특정 페이지의 페이지 속성 편집 {#editing-page-properties-for-a-specific-page}
+### 특정 페이지에 대한 페이지 속성 편집 {#editing-page-properties-for-a-specific-page}
 
-페이지 속성은 페이지가 웹 사이트 등에 표시될 때 적용되는 페이지의 제목과 같은 다양한 속성을 정의합니다.
+페이지 속성은 페이지가 웹 사이트 등에 표시될 때 제목과 같은 페이지의 다양한 속성을 정의합니다.
 
 1. 편집할 페이지를 엽니다.
 
-1. 사이드 킥에서 **페이지** 탭을 연 다음 **페이지 속성...**&#x200B;을 선택합니다.
+1. 사이드 킥에서 **페이지** 탭을 선택하고 **페이지 속성...**
 
    탭이 여러 개 있는 대화 상자가 열립니다.
 
-1. 필요한 변경 작업을 수행하고 **확인**&#x200B;을 클릭하여 저장합니다.
+1. 필요한 변경 작업을 수행한 다음 **확인** 저장

@@ -1,8 +1,6 @@
 ---
-title: 페이지에 워크플로 적용
-seo-title: Applying Workflows to Pages
+title: 컨텐츠 페이지에 워크플로우 적용
 description: 작성 시 페이지에서 수행할 워크플로를 불러올 수 있습니다. 하나 이상의 워크플로를 적용할 수도 있습니다.
-seo-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
 uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 100%
+source-wordcount: '649'
+ht-degree: 88%
 
 ---
 
@@ -38,14 +36,14 @@ You can apply any workflow (that you have access to, as assigned by your AEM adm
 >
 >추가 참조:
 >
->* [워크플로우를 DAM 자산에 적용하는 방법](/help/assets/assets-workflow.md)
+>* [DAM 자산에 워크플로우를 적용하는 방법](/help/assets/assets-workflow.md).
 >* [프로젝트 워크플로를 사용하여 작업](/help/sites-authoring/projects-with-workflows.md)
 >
 
 
 >[!NOTE]
 >
->AEM 관리자는 [몇 가지 다른 방법](/help/sites-administering/workflows-starting.md)을 사용하여 워크플로우를 시작할 수 있습니다.
+>AEM 관리자는 [몇 가지 다른 방법을 사용하여 워크플로우 시작](/help/sites-administering/workflows-starting.md).
 
 ## 사이트 콘솔에서 워크플로 시작 {#starting-a-workflow-from-the-sites-console}
 
@@ -97,7 +95,7 @@ You can apply any workflow (that you have access to, as assigned by your AEM adm
    * **워크플로 모델**
    * **워크플로 제목**
 
-      * 나중 단계에서 식별할 수 있도록 이 인스턴스의 제목을 지정할 수 있습니다.
+      * 이 인스턴스에 대한 제목을 지정하여 이후 단계에서 식별할 수 있습니다.
 
    워크플로 모델에 따라 다음 선택 사항도 사용할 수 있습니다. 이 선택 사항을 사용하면 워크플로가 완료된 후에도 페이로드로 만들어진 패키지를 유지할 수 있습니다.
 
@@ -136,10 +134,10 @@ You can apply any workflow (that you have access to, as assigned by your AEM adm
    >
    >추가 리소스를 추가하면 **뒤로**&#x200B;를 사용하여 **속성** 단계의 **워크플로 패키지 유지** 설정을 조정할 수 있습니다.
 
-1. **만들기**&#x200B;를 사용하여 마법사를 닫고 워크플로 인스턴스를 만듭니다. 알림은 사이트 콘솔에 표시됩니다.
+1. **만들기**&#x200B;를 사용하여 마법사를 닫고 워크플로 인스턴스를 만듭니다. 알림이 사이트 콘솔에 표시됩니다.
 
 ## 페이지 편집기에서 워크플로 시작 {#starting-a-workflow-from-the-page-editor}
 
-페이지를 편집할 때 도구 모음에서 **페이지 정보**&#x200B;를 선택할 수 있습니다. 드롭다운 메뉴에는 **워크플로에서 시작** 선택 사항이 있습니다. 이 옵션을 선택하면 필요한 경우 제목과 함께 필요한 워크플로를 지정할 수 있는 대화 상자가 열립니다.
+페이지를 편집할 때 선택할 수 있습니다 **페이지 정보** 를 클릭합니다. 드롭다운 메뉴에는 **워크플로에서 시작** 선택 사항이 있습니다. 이 옵션을 선택하면 필요한 경우 제목과 함께 필요한 워크플로를 지정할 수 있는 대화 상자가 열립니다.
 
 ![wf-54](assets/wf-54.png)
