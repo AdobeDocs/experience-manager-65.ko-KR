@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 61%
+source-wordcount: '2230'
+ht-degree: 59%
 
 ---
 
@@ -264,7 +264,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ## 페이지 정보 {#page-information}
 
-페이지 정보(이퀄라이저 아이콘)에서는 마지막 편집과 마지막 게시에 대한 세부 사항을 보여 주는 메뉴가 열립니다. 페이지, 사이트 및 인스턴스의 특성에 따라 다음 옵션을 사용할 수 있습니다.
+[페이지 정보] 단추(이퀄라이저 아이콘)에서는 마지막 편집과 마지막 게시에 대한 세부 사항을 보여 주는 메뉴가 열립니다. 페이지, 사이트 및 인스턴스의 특성에 따라 다음 옵션을 사용할 수 있습니다.
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -277,7 +277,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 * [템플릿 편집](/help/sites-authoring/templates.md); 페이지가 [편집 가능한 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)
 
 * [게시됨으로 보기](/help/sites-authoring/editing-content.md#view-as-published)
-* [관리자로 보기](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* 관리자로 봅니다. 에서 페이지를 엽니다. [사이트 콘솔](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [도움말](/help/sites-authoring/basic-handling.md#accessing-help)
 
 예를 들어, 적절한 경우 **페이지 정보** 옵션도 있습니다.
