@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: d0233ba5358f961339317bc1d63d51f1826d8c13
 workflow-type: tm+mt
-source-wordcount: '4677'
+source-wordcount: '4670'
 ht-degree: 3%
 
 ---
@@ -748,7 +748,7 @@ automated forms conversion 서비스에는 [우수 사례, 알려진 복잡한 �
 
 ### 접근성 테스트 Chrome 추가 기능 활성화 {#enable-chrome-add-on}
 
-액세스 가능성 테스트를 수행하려면 찾은 Chrome 플러그인을 설치하십시오 [여기](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en). <!-- This URL is a 404. Please fix and update this topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
+액세스 가능성 테스트를 수행하려면 다음을 참조하십시오. `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
 설치된 후 Chrome 브라우저 내에서 테스트할 페이지를 로드합니다(참고: 탭이 여러 개 있으면 점수가 달라질 수 있으므로 탭을 한 개만 여는 것이 좋습니다. 페이지가 로드되면
 **마우스 오른쪽 버튼으로 클릭** 페이지에서 을(를) 선택하고 을(를) 선택합니다. **감사** 탭 . 개발자는 액세스 가능성 플러그인으로 수행할 감사 유형을 선택할 수 있습니다. 원하는 옵션을 모두 선택한 후 사용자는 보고서 생성 버튼을 클릭할 수 있습니다. 이렇게 하면 전체 액세스 가능성 등급을 표시하고 전체 액세스 가능성 등급을 높이는 데 사용할 수 있는 PDF 문서가 생성됩니다.
