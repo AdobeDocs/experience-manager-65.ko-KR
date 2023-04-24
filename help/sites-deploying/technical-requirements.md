@@ -1,10 +1,9 @@
 ---
 title: 기술 요구 사항
 description: Adobe Experience Manager에 대해 지원되는 클라이언트 및 서버 플랫폼 목록입니다.
-content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 32af8ee1680bb0a357e64d614f22234ed331d314
+source-git-commit: fe9c77644daf3669df8cca18e65fb0f6918f853b
 workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 1%
@@ -100,7 +99,7 @@ Adobe Experience Manager은 다음 버전의 Java™ 가상 시스템으로 작�
 | 아줄 줄루 오픈JDK 8 - 64비트 | A: 지원됨 `[3]` |  |
 
 1. Oracle이 Oracle Java™ SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동했습니다. Java™ 9, Java™ 10 및 Java™ 12는 Oracle에 의한 비 LTS 릴리스입니다(참조) [Oracle Java™ SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html)). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java™의 LTS 릴리스에 대해서만 지원을 제공합니다. 공개 업데이트 종료 이후 릴리스의 모든 유지 관리 업데이트를 포함하여 Oracle Java™ SE JDK의 지원 및 배포는 Oracle Java™ SE 기술을 사용하는 모든 AEM 고객을 위해 Adobe에서 직접 지원합니다. 자세한 내용은 [Adobe Experience Manager에 대한 Java™ 지원 정책](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-**중요: Oracle Java™ 11은 최소 2026년 9월까지 지원됩니다. oracle Java™ 17에 대한 지원이 준비중입니다. **
+   **중요 사항: Oracle Java™ 11은 최소 2026년 9월까지 지원됩니다. oracle Java™ 17에 대한 지원이 준비중입니다.**
 
 1. IBM® JRE는 WebSphere® Application Server에서만 지원됩니다.
 
