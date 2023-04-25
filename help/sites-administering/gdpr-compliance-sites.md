@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: d8ae63edd71c7d27fe93d24b30fb00a29332658d
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 99%
+source-wordcount: '831'
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ Adobe Analytics와 관련된 GDPR 데이터 주체 요청 관리에 대한 자�
 
 AEM Sites에는 Adobe Target 온디맨드 서비스 내에서 기능을 사용하는 Target의 Enhanced Personalization과의 선택적 통합이 포함되어 있습니다.
 
-Adobe Target과 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인 정보 보호 및 일반 데이터 보호 규정](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)을 참조하십시오.
+Adobe Target과 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인 정보 보호 및 일반 데이터 보호 규정](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)을 참조하십시오.
 
 ## ContextHub {#contexthub}
 
