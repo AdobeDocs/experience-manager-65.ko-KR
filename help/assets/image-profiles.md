@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: bbb64f44c80e96bafcd53277f6d753d84acf5189
+source-git-commit: bb0658ef33736587fbc191738d57cf586e5cba9d
 workflow-type: tm+mt
-source-wordcount: '3047'
+source-wordcount: '3045'
 ht-degree: 6%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 6%
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
-선택할 이미지 자르기 옵션이 두 개 있습니다. 색상 및 이미지 색상 견본 만들기를 자동화하거나 대상 해상도의 자르기 컨텐츠를 보존하도록 선택할 수도 있습니다.
+선택할 수 있는 두 가지 이미지 자르기 옵션이 있습니다. 픽셀 자르기 또는 스마트 자르기. 색상 및 이미지 색상 견본 만들기를 자동화할 수도 있습니다.
 
 >[!IMPORTANT]
 ・ Adobe은 생성된 농작물과 견본이 브랜드와 값에 적절하고 적절한지 확인하기 위해 모든 농작물과 견본을 검토할 것을 권장합니다.
