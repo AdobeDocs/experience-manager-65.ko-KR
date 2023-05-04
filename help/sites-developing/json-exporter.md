@@ -10,10 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 36%
+source-wordcount: '431'
+ht-degree: 38%
 
 ---
 
@@ -79,7 +79,7 @@ AEM 내에서 선택기를 사용하여 게재를 수행합니다 `model` 및 `.
 
 ### 추가 정보 {#further-information}
 
-또한 Headless 개념 및 용어 소개가 포함되어 있는
+또한 다음 문서도 참조할 수 있습니다.
 
 * Assets HTTP API
 
@@ -97,10 +97,10 @@ AEM 내에서 선택기를 사용하여 게재를 수행합니다 `model` 및 `.
 
 자세한 내용은 다음을 참조하십시오.
 
-* 다음 [자산 사용 안내서의 컨텐츠 조각 항목](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html?lang=en&amp;topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* 다음 [자산 사용 안내서의 컨텐츠 조각 항목](/help/assets/content-fragments/content-fragments.md)
 
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
 
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 그리고 [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 그리고 [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

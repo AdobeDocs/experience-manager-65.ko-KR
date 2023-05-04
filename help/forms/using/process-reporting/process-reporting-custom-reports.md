@@ -10,9 +10,9 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: bd33c0884be55b76ef526c8c938236e743dc3dc6
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '953'
 ht-degree: 8%
 
 ---
@@ -632,7 +632,7 @@ response.setCharacterEncoding("utf-8");
 
 ## 기존 Process Reporting UI에서 보고서 UI 통합  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-결과를 표시하기 위해 별도의 UI를 만들기 위한 사전 요구 사항은 다음과 같습니다 [Sling 기본 사항](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [CRX 노드 만들기](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html?lang=en#creating-a-node) 적절한 [액세스 권한](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html?lang=en#access-control).
+결과를 표시하기 위해 별도의 UI를 만들기 위한 사전 요구 사항은 다음과 같습니다 [Sling 기본 사항](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [CRX 노드 만들기](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) 적절한 [액세스 권한](/help/sites-developing/developing-with-crxde-lite.md#access-control).
 
 1. 별도의 UI를 만듭니다.
 1. 하위 만들기 `nt:unstructured` 노드 위치 `/content/process-reporting-runtime/custom-reports` 노드 아래에 배치하십시오.

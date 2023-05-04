@@ -10,10 +10,10 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: 02fc145d5ec1458d1f71a2f353b56b944a267f3e
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
@@ -70,7 +70,6 @@ AEM에서 최근 [패턴 탐지기](/help/sites-deploying/pattern-detector.md) �
 
 최신 AEM 버전에서 변경된 내용에 대한 자세한 내용은 전체 릴리스 노트를 참조하십시오.
 
-* [Adobe Experience Manager 6.4의 일반적인 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/release-notes.html?lang=ko-KR)
 * [Adobe Experience Manager 6.5 최신 서비스 팩 릴리스 노트](/help/release-notes/release-notes.md)
 
 ## 업그레이드 개요 {#upgrade-overview}

@@ -4,10 +4,10 @@ seo-title: Resources for New AEM Users
 description: AEM을 처음 사용하는 사용자를 위한 질문, 답변 및 리소스
 seo-description: Questions, answers, and resources for users new to AEM
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 29%
+source-wordcount: '298'
+ht-degree: 10%
 
 ---
 
@@ -34,23 +34,9 @@ Adobe Experience Manager(AEM)은 상업용 웹 사이트 및 관련 서비스를
 
 ## AEM의 다른 버전에 대한 설명서는 어디에 있습니까? {#versions}
 
-AEM 6.5에 대한 최신 설명서를 적합한 위치에 있습니다.
+AEM 6.5 설명서에 적합한 위치에 있습니다.
 
-또한 Adobe에는 이전 버전의 Adobe Experience Manager에 대한 설명서도 있습니다. 어떤 페이지에서든 버전 구성 요소를 사용하여 버전 간에 이동하거나 이 목록에서 선택할 수 있습니다.
-
-* [AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64.html)
-* [AEM 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
-* [AEM 6.2](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)**
-* [AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)**
-* [AEM 6.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)**
-* [AEM 5.6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)**
-* [AEM 5.6](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)**
-* [CQ 5.5](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)**
-* [CQ 5.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)**
-* [CQ 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)**
-* [CRX 2.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)**
-
-** 버전이 더 이상 Adobe에서 공식적으로 지원되지 않음을 나타냅니다.
+또한 Adobe에는 이전 버전의 Adobe Experience Manager에 대한 설명서도 있습니다. 한번 보세요 [이전 버전의 Adobe Experience Manager, CQ 및 CRX 설명서](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) 추가 정보.
 
 ## AEM 6.5 릴리스 노트는 어디에 있습니까? {#release-notes}
 

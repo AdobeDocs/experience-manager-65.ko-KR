@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2746'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ An [!DNL Experience Manager Assets] 설치 프로그램에는 많은 수의 하�
 
 다음은 성능 문제가 사용자에게 영향을 주기 전에 발견하여 해결하는 특정 주요 포커스 영역입니다.
 
-## 플랫폼 {#platform}
+## Platform {#platform}
 
 Experience Manager은 많은 플랫폼에서 지원되지만 Adobe은 Linux 및 Windows에서 기본 도구에 대한 가장 많은 지원을 발견하여 최적의 성능과 구현의 편의성을 제공합니다. 가장 좋은 방법은 64비트 운영 체제를 배포하여 [!DNL Experience Manager Assets] 배포. 모든 Experience Manager 배포과 마찬가지로 TarMK를 가능한 모든 곳에서 구현해야 합니다. TarMK는 단일 작성자 인스턴스를 넘어 확장할 수 없지만 MongoMK보다 성능이 뛰어난 것으로 나타났습니다. TarMK 오프로드 인스턴스를 추가하여 워크플로우의 처리 능력을 높일 수 있습니다 [!DNL Experience Manager Assets] 배포.
 
@@ -222,7 +222,7 @@ XMP 원본에 쓰기 는 메타데이터가 [!DNL Experience Manager]를 입력�
 * 자산의 버전이 만들어집니다
 * [!UICONTROL DAM 자산 업데이트] 자산에 대해 실행됩니다
 
-나열된 결과는 상당한 자원을 소모한다. 따라서 Adobe은 필요하지 않은 경우 XMP 원본에 쓰기 기능을 사용하지 않도록 설정하는 것이 좋습니다. 자세한 내용은 [XMP 원본에 쓰기](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html).
+나열된 결과는 상당한 자원을 소모한다. 따라서 Adobe은 필요하지 않은 경우 XMP 원본에 쓰기 기능을 사용하지 않도록 설정하는 것이 좋습니다. 자세한 내용은 [XMP 원본에 쓰기](/help/assets/xmp-writeback.md).
 
 워크플로우 실행 플래그를 선택하면 대량의 메타데이터를 가져오면 리소스 집약적인 XMP 원본에 쓰기 활동이 발생할 수 있습니다. 다른 사용자의 성능에 영향을 주지 않도록 서버 사용 공간을 적게 사용하는 동안 이러한 가져오기를 계획합니다.
 

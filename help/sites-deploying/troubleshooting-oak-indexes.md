@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1465'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ AEM 내부 재인덱싱 프로세스는 저장소 데이터를 수집하여 Oak 
 1. 허용 가능한 관찰 큐 제한을 초과하지 않도록 하려면 다음을 수행하는 것이 좋습니다.
 
    * 커밋 상수 비율을 낮춥니다. 커밋 의 짧은 스파이크는 허용되지만 상수 속도를 줄여야 합니다.
-   * 의 크기를 늘립니다 `DiffCache` 에 설명된 대로 [성능 조정 팁 > Mongo Storage 조정 > 문서 캐시 크기](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/configuring-performance.html?lang=ko-KR).
+   * 의 크기를 늘립니다 `DiffCache` 에 설명된 대로 [성능 조정 팁 > Mongo Storage 조정 > 문서 캐시 크기](/help/sites-deploying/configuring-performance.md).
 
 ## 중단된 재인덱싱 프로세스 식별 및 수정 {#identifying-and-remediating-a-stuck-re-indexing-process}
 

@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -57,10 +57,10 @@ AEM Forms는 다음 오류에서 안정적으로 복구되어야 합니다.
 1. (WebSphere® Application Server) WebSphere® Application Server의 새 인스턴스로 복구하는 경우 restoreConfig.bat/sh 명령을 실행합니다.
 1. 먼저 데이터베이스 백업 파일을 사용하여 데이터베이스 복원 작업을 실행한 다음 복구된 데이터베이스에 트랜잭션 리두 로그를 적용하여 AEM Forms 데이터베이스를 복구합니다. (자세한 내용은 [AEM forms 데이터베이스](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)) 자세한 내용은 다음 기술 자료 문서 중 하나를 참조하십시오.
 
-   * [AEM Forms용 DB2® 백업 및 복구](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#db2)
-   * [AEM Forms용 백업 및 복구 oracle](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#oracle)
-   * [Microsoft® AEM Forms용 SQL Server 백업 및 복구](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#sql-server)
-   * [AEM Forms용 MySQL 백업 및 복구](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#mysql)
+   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [AEM Forms용 백업 및 복구 oracle](/help/forms/using/admin-help/files-back-recover.md#oracle)
+   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [AEM Forms용 MySQL 백업 및 복구](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. 기존 AEM Forms 설치 시 GDS 디렉토리의 내용을 삭제한 다음 백업된 GDS에서 GDS 디렉토리의 내용을 복사하여 GDS 디렉토리를 복구합니다. GDS 디렉토리 위치를 변경한 경우 다음을 참조하십시오 [복구 중 GDS 위치 변경](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. 다음 예와 같이 복원할 GDS 백업 디렉토리의 이름을 바꿉니다.

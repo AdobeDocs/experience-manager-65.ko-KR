@@ -8,9 +8,9 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1673'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 Process Reporting publishing Services는 현재 데이터베이스에서 사용할 수 있는 모든 AEM Forms 데이터를 게시합니다. 이것은 데이터베이스에 보고서와 쿼리를 실행하지 않으려는 기존 데이터가 포함되어 있는 경우 보고에 필요하지 않더라도 해당 모든 데이터가 리포지토리에 게시된다는 것을 의미합니다. 서비스를 실행하여 데이터를 Process Reporting 저장소에 게시하기 전에 이 데이터를 삭제하는 것이 좋습니다. 이렇게 하면 게시자 서비스와 보고를 위해 데이터를 쿼리하는 서비스의 성능이 모두 개선됩니다.
 
-AEM Forms 프로세스 데이터 삭제에 대한 자세한 내용은 [프로세스 데이터 삭제](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+AEM Forms 프로세스 데이터 삭제에 대한 자세한 내용은 [프로세스 데이터 삭제](/help/forms/using/admin-help/purging-process-data.md).
 
 >[!NOTE]
 >
->Purge Utility에 대한 팁과 트릭은 다음 방법으로 Adobe Developer Connection 문서를 참조하십시오. [프로세스 및 작업 삭제](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+>Purge Utility에 대한 팁과 트릭은 다음 방법으로 Adobe Developer Connection 문서를 참조하십시오. [프로세스 및 작업 삭제](/help/forms/using/admin-help/purging-process-data.md).
 
 ## 프로세스 보고 서비스 구성 {#configuring-process-reporting-services}
 

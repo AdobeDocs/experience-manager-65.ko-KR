@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2207'
 ht-degree: 3%
 
 ---
@@ -79,7 +79,7 @@ API를 쉽게 경험할 수 있도록 AEM Forms은 즉시 배치 API를 사용�
 
 JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들려면:
 
-1. 만들기 [감시 폴더](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) 일괄 처리 API를 사용하도록 구성합니다.
+1. 만들기 [감시 폴더](/help/forms/using/creating-configure-watched-folder.md) 일괄 처리 API를 사용하도록 구성합니다.
    1. AEM Forms 작성자 인스턴스에 로그인합니다.
    1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 감시 폴더 구성]**. 탭 **[!UICONTROL 새로 만들기]**.
    1. 을(를) 지정합니다. **[!UICONTROL 이름]** 및 물리적 **[!UICONTROL 경로]** 섹션에 있는 마지막 항목이 될 필요가 없습니다. (예: `c:\batchprocessing`)
@@ -109,7 +109,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
 
 #### 외부 데이터 소스에 저장되고 양식 데이터 모델을 통해 액세스되는 입력 데이터를 사용하여 대화형 커뮤니케이션을 생성할 수 있습니다. {#use-fdm-as-data-source}
 
-외부 데이터 소스에 저장된 데이터(레코드)를 대화형 통신 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. 대화형 커뮤니케이션을 생성할 때 FDM(양식 데이터 모델)을 통해 외부 데이터 소스에 연결하여 데이터에 액세스합니다. 외부 데이터 소스에서 동일한 양식 데이터 모델을 사용하여 데이터를 가져오도록 감시 폴더 배치 프로세스 서비스를 구성할 수 있습니다. 종료 [외부 데이터 소스에 저장된 레코드에서 대화형 통신 만들기](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
+외부 데이터 소스에 저장된 데이터(레코드)를 대화형 통신 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. 대화형 커뮤니케이션을 생성할 때 FDM(양식 데이터 모델)을 통해 외부 데이터 소스에 연결하여 데이터에 액세스합니다. 외부 데이터 소스에서 동일한 양식 데이터 모델을 사용하여 데이터를 가져오도록 감시 폴더 배치 프로세스 서비스를 구성할 수 있습니다. 종료 [외부 데이터 소스에 저장된 레코드에서 대화형 통신 만들기](/help/forms/using/work-with-form-data-model.md):
 
 1. 템플릿의 양식 데이터 모델 구성:
    1. 대화형 통신 템플릿에 연결된 양식 데이터 모델을 엽니다.
@@ -141,7 +141,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
 
    1. 파일을 저장하고 닫습니다.
 
-1. 만들기 [감시 폴더](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) 일괄 처리 API 서비스를 사용하도록 구성합니다.
+1. 만들기 [감시 폴더](/help/forms/using/creating-configure-watched-folder.md) 일괄 처리 API 서비스를 사용하도록 구성합니다.
    1. AEM Forms 작성자 인스턴스에 로그인합니다.
    1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 감시 폴더 구성]**. 탭 **[!UICONTROL 새로 만들기]**.
    1. 을(를) 지정합니다. **[!UICONTROL 이름]** 및 물리적 **[!UICONTROL 경로]** 섹션에 있는 마지막 항목이 될 필요가 없습니다. (예: `c:\batchprocessing`)

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2203'
 ht-degree: 14%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 14%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
 | AEM 6.5 | 이 문서 |
-| AEM 6.4 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-collections-touch-ui.html?lang=en) |
 
 컬렉션은 내의 자산 세트입니다 [!DNL Adobe Experience Manager Assets]. 컬렉션을 사용하여 사용자 간에 에셋을 공유합니다. 이 집합은 검색 결과를 기반으로 하는 정적 컬렉션 또는 동적 컬렉션일 수 있습니다.
 
@@ -233,7 +232,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
    >
    >가장 최근에 업데이트된 컬렉션은 기본적으로 **[!UICONTROL 컬렉션에 추가]** 페이지.
 
-1. **[!UICONTROL 추가]**&#x200B;를 클릭합니다. 컬렉션이 **[!UICONTROL 대상 선택]** 페이지. 메시지를 닫고 프로세스를 완료합니다.
+1. 클릭 **[!UICONTROL 추가]**. 컬렉션이 **[!UICONTROL 대상 선택]** 페이지. 메시지를 닫고 프로세스를 완료합니다.
 
 >[!NOTE]
 >
