@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 모바일 애플리케이션 사용자를 위한 매력적인 경험을 구축하시겠습니까? Mobile Services SDK를 사용하여 애플리케이션 라이프사이클 및 사용량을 모니터링하고 측정하지 않는 경우 사용자의 결정을 기반으로 합니까? 가장 충성스런 고객은 어디입니까? 연관성을 유지하고 전환을 최적화하는 데 어떻게 보장할 수 있습니까?
 
@@ -67,7 +67,7 @@ Analytics 계정이 설정되면 컨텐츠를 모바일 애플리케이션에 �
 
 PhoneGap CLI로 빌드하는 경우 cordova 빌드 후크 스크립트로 이 작업을 수행할 수 있습니다. Geometrixx Outdoors 앱에서 볼 수 있는 위치:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js*
 
-iOS의 경우 파일을 XCode 프로젝트의 **리소스** 디렉토리(예: &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;) 앱이 Android용 타겟팅되면 복사할 경로는 &quot;platforms/android/assets/ADBMobileConfig.json&quot;입니다. PhoneGap CLI 빌드 중 후크를 사용하는 방법에 대한 자세한 내용은 [Cordova/PhoneGap 프로젝트 요구 사항을 3개 후크합니다](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/).
+iOS의 경우 파일을 XCode 프로젝트의 **리소스** 디렉토리(예: &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;) 앱이 Android용 타겟팅되면 복사할 경로는 &quot;platforms/android/assets/ADBMobileConfig.json&quot;입니다. PhoneGap CLI 빌드 중 후크를 사용하는 방법에 대한 자세한 내용은 [Cordova/PhoneGap 프로젝트 요구 사항을 3개 후크합니다](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

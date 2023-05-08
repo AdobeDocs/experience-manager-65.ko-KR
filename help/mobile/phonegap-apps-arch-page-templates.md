@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '2650'
+source-wordcount: '2657'
 ht-degree: 0%
 
 ---
@@ -308,7 +308,7 @@ www/
 
 ### .cordova/hooks/ {#cordova-hooks}
 
-이 디렉토리에는 다음이 포함됩니다. [CLI 후크](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/). 후크 디렉토리의 폴더에 빌드 중에 정확한 지점에서 실행되는 node.js 스크립트가 있습니다.
+이 디렉토리에는 다음이 포함됩니다. [CLI 후크](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c). 후크 디렉토리의 폴더에 빌드 중에 정확한 지점에서 실행되는 node.js 스크립트가 있습니다.
 
 ### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '259'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 다음 작업은 응용 프로그램 전체에서 수행됩니다.
 
@@ -45,9 +45,7 @@ Mobile On Demand Preflight 앱을 사용하면 액세스 권한이 있는 모든
 
 >[!NOTE]
 >
->AEM Preflight 앱은 콘텐츠를 미리 보고 페이지를 검색하는 데 사용됩니다. Preflight 앱에 대해 자세히 알아보려면 [여기](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html).
->
->AEM Preflight 앱은 [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8), [Google Play 스토어](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en), 및 [Windows 스토어](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq).
+>AEM Preflight 앱은 콘텐츠를 미리 보고 페이지를 검색하는 데 사용됩니다. Preflight 앱에 대해 자세히 알아보려면 [여기](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 
 ### 앞으로 나아가기 {#getting-ahead}
 

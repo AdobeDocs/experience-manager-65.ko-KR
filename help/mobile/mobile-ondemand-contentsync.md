@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 8fb70ca4-86fc-477d-9773-35b84d5e85a8
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2995'
 ht-degree: 0%
 
 ---
@@ -255,7 +255,7 @@ AEM 서비스가 **PathRewriterTransformerFactory** 다시 작성할 특정 html
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - 모든 업데이트 핸들러가 구현해야 하는 인터페이스
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Sling을 사용하여 리소스를 렌더링하는 추상 클래스입니다
 
-클래스를 OSGi 구성 요소 팩토리로 등록하고 번들의 OSGi 컨테이너에 배포합니다. 이 작업은 를 사용하여 수행할 수 있습니다. [Maven SCR 플러그인](https://felix.apache.org/site/apache-felix-maven-scr-plugin.html) JavaDoc 태그 또는 주석 사용 다음 예는 JavaDoc 버전을 보여 줍니다.
+클래스를 OSGi 구성 요소 팩토리로 등록하고 번들의 OSGi 컨테이너에 배포합니다. 이 작업은 를 사용하여 수행할 수 있습니다. [Maven SCR 플러그인](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) JavaDoc 태그 또는 주석 사용 다음 예는 JavaDoc 버전을 보여 줍니다.
 
 ```java
 /*

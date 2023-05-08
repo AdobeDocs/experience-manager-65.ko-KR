@@ -1,12 +1,10 @@
 ---
-title: 새 AEM 사용자를 위한 리소스
-seo-title: Resources for New AEM Users
-description: AEM을 처음 사용하는 사용자를 위한 질문, 답변 및 리소스
-seo-description: Questions, answers, and resources for users new to AEM
+title: 새 Adobe Experience Manager 사용자를 위한 리소스
+description: Adobe Experience Manager을 처음 사용하는 사용자를 위한 질문, 답변 및 리소스
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '300'
 ht-degree: 10%
 
 ---
@@ -30,7 +28,7 @@ Adobe Experience Manager(AEM)은 상업용 웹 사이트 및 관련 서비스를
 
 ## AEM에 대한 공식적인 지원을 받으려면 어떻게 해야 합니까? {#official-support}
 
-라이선스가 있는 고객은 [고객 지원 팀](https://experienceleague.adobe.com/?support-solution=General#support). 또한 [AEM 커뮤니티](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) 또는 [@AdobeExpCare](https://twitter.com/adobeexpcare) Twitter 핸들.
+라이선스가 있는 고객은 [고객 지원 팀](https://experienceleague.adobe.com/?support-solution=General#support). 또한 [AEM 커뮤니티](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) 또는 의 AdobeExpCare Twitter 핸들에서 `https://twitter.com/adobeexpcare`.
 
 ## AEM의 다른 버전에 대한 설명서는 어디에 있습니까? {#versions}
 
@@ -45,4 +43,4 @@ AEM의 모든 릴리스 노트는 다음 위치에서 찾을 수 있습니다.
 * [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
 * [AEM 6.5에서 제거되고 더 이상 사용되지 않는 기능 목록](/help/release-notes/deprecated-removed-features.md)
 
-질문이 있는 경우 [AEM 커뮤니티 팀](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) 또는 Twitter에서 묻기 [@AdobeExpCare](https://twitter.com/adobeexpcare).
+질문이 있는 경우 [AEM 커뮤니티 팀](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) 또는 의 AdobeExpCare Twitter 핸들로 문의하십시오 `https://twitter.com/adobeexpcare`.

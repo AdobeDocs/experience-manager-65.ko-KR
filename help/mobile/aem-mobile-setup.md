@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '928'
 ht-degree: 2%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
->AEM 6.2 또는 6.3에서 AEM 6.5로 마이그레이션하는 기존 AEM Mobile 앱 고객은 다음을 다운로드하여 AEM Mobile 앱을 계속 사용할 수 있습니다. [PackageShare의 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). 그러나 AEM 6.5의 새 설치는 AEM Mobile 앱 기능을 지원하지 않습니다.
+>AEM 6.2 또는 6.3에서 AEM 6.5로 마이그레이션하는 기존 AEM Mobile 앱 고객은 PackageShare에서 패키지를 다운로드하여 AEM Mobile 앱을 계속 사용할 수 있습니다. 그러나 AEM 6.5의 새 설치는 AEM Mobile 앱 기능을 지원하지 않습니다.
 
 AEM을 사용하여 AEM Mobile 앱용 컨텐츠를 만들려면 AEM 인스턴스를 클라우드 기반 AEM Mobile On-demand Services 계정 및 프로젝트와 통합해야 합니다.
 
@@ -35,9 +35,9 @@ AEM Mobile을 설정하여 사용자가 AEM 내에서 컨텐츠를 만들고 관
 
 AEM Mobile을 설정하려면 다음을 수행해야 합니다.
 
-* **API 키 요청**: On-Demand Services API에 액세스하려면 API 키를 요청해야 합니다. API 키를 요청하려면 [PDF 양식](https://helpx.adobe.com/digital-publishing-solution/help/integrating-dps.html). 완료된 양식을 Adobe Developer 지원 센터로 전송: [wwds@adobe.com](mailto:wwds@adobe.com)
+* **API 키 요청**: On-Demand Services API에 액세스하려면 API 키를 요청해야 합니다. API 키를 요청하려면 [PDF 양식](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). 완료된 양식을 Adobe Developer 지원 센터로 전송: [wwds@adobe.com](mailto:wwds@adobe.com)
 
-* **장치 ID 및 장치 토큰 생성**: API 키를 수신하면 장치 ID와 장치 토큰을 생성할 수 있습니다. 이동 [https://aex.aemmobile.adobe.com](https://aex.aemmobile.adobe.com/) 다음을 수행합니다.
+* **장치 ID 및 장치 토큰 생성**: API 키를 수신하면 장치 ID와 장치 토큰을 생성할 수 있습니다. 이동 `https://aex.aemmobile.adobe.com` 다음을 수행합니다.
 
    * API 키 제공
    * 다음 권한을 사용하여 AEM Mobile 프로젝트에 추가한 Adobe ID으로 로그인합니다(프로젝트를 만드는 아래 단계 참조)
@@ -49,7 +49,7 @@ AEM Mobile을 설정하려면 다음을 수행해야 합니다.
 
 >[!NOTE]
 >
->필요한 Adobe ID에 AEM Mobile 프로젝트에 대한 액세스 권한이 부여되어야 합니다. 자세한 내용은 [AEM Mobile 계정 관리](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) 을 참조하십시오.
+>필요한 Adobe ID에 AEM Mobile 프로젝트에 대한 액세스 권한이 부여되어야 합니다. 자세한 내용은 [AEM Mobile 계정 관리](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) 을 참조하십시오.
 
 ## AEM Mobile용 프로젝트 만들기 {#creating-projects-for-aem-mobile}
 
