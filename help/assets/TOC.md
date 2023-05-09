@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
-user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
+user-guide-description: 디지털 자산을 제작하고, 관리하고, 처리하고, 배포합니다.
 source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '723'
@@ -73,8 +73,8 @@ ht-degree: 70%
    + [대화형 비디오](interactive-videos.md)
    + [360 VR 비디오](/help/assets/360-video.md)
    + [Dynamic Media 뷰어를 Adobe Analytics 및 Adobe Experience Platform 태그와 통합](/help/assets/tags.md)
-   + [빠른 보기를 사용하여 맞춤형 팝업 제작](custom-pop-ups.md)
-   + [반응형 사이트에 최적화된 이미지 제공](responsive-site.md)
+   + [빠른 보기를 사용하여 사용자 정의 팝업 제작](custom-pop-ups.md)
+   + [반응형 사이트에 최적화된 이미지 게재](responsive-site.md)
    + [Dynamic Media 에셋 미리보기](previewing-assets.md)
    + [페이지에 Dynamic Media 에셋 추가](adding-dynamic-media-assets-to-pages.md)
    + [페이지에 Dynamic Media Classic 기능 추가](scene7.md)
@@ -98,7 +98,7 @@ ht-degree: 70%
    + [에서 컨텐츠 조각 지원 [!DNL Assets] HTTP API](assets-api-content-fragments.md)
    + [콘텐츠 조각용 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html)
    + [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html)
-   + [지속되는 쿼리](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html)
+   + [지속 쿼리](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html)
    + [콘텐츠 조각의 원격 GraphQL 구문 인증](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
    + [콘텐츠 조각이 있는 GraphQL API - 샘플 콘텐츠 및 구문](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/content-fragments-graphql-samples.html)
    + [[!DNL Assets] 프록시 개발](proxy.md)
