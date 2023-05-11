@@ -10,7 +10,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: bb27c7dfedd5a16728674f7584b0c462a92646e6
 workflow-type: tm+mt
 source-wordcount: '5934'
 ht-degree: 2%
@@ -247,9 +247,9 @@ AEM WCM과 저장소에 대한 모든 액세스 요청이 여기에 등록됩니
 에서 실행되는 모든 업그레이드 작업의 로그를 제공합니다. 
 `com.day.compat.codeupgrade` 및 `com.adobe.cq.upgradesexecutor` 패키지.
 
-* `<cq-installation-dir>/crx-quickstart/repository`
+* `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
-   * `revision.log`
+   * `journal.log`
 저널링 정보 개정.
 
 >[!NOTE]

@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: e803fde42cfb7b7c9d3fb6483ca661ce386d6464
+source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2019'
 ht-degree: 12%
 
 ---
@@ -150,57 +150,6 @@ This is an automatically generated message. Please do not reply.
 
    PageModified => /content/geometrixx/en/products
 
-### 포럼 알림용 이메일 템플릿 {#email-templates-for-forum-notification}
-
-포럼 알림용 이메일 템플릿은 다음 위치에 있습니다.
-
-`/etc/notification/email/default/com.day.cq.collab.forum`
-
-기본 영어 템플릿( `en.txt`)은 다음과 같이 정의됩니다.
-
-```xml
-subject=[CQ Forum Notification]
-
-header=-------------------------------------------------------------------------------------\n \
-Time: Time: ${time}\n \
-Forum Page Path: ${forum.path}\n \
--------------------------------------------------------------------------------------\n\n
-
-message=Page: ${host.prefix}${forum.path}.html\n
-
-footer=\n \
--------------------------------------------------------------------------------------\n \
-This is an automatically generated message. Please do not reply.
-```
-
-#### 포럼 알림용 이메일 템플릿 사용자 정의 {#customizing-email-templates-for-forum-notification}
-
-포럼 알림에 대한 영어 이메일 템플릿을 사용자 지정하려면 다음을 수행하십시오.
-
-1. CRXDE에서 파일을 엽니다.
-
-   `/etc/notification/email/default/com.day.cq.collab.forum/en.txt`
-
-1. 필요에 따라 파일을 수정합니다.
-1. 변경 사항을 저장합니다.
-
-템플릿에는 다음 형식이 있어야 합니다.
-
-```
- subject=<text_1>
- header=<text_2>
- message=<text_3>
- footer=<text_4>
-```
-
-위치 `<text_x>` 정적 텍스트와 동적 문자열 변수를 혼합하여 사용할 수 있습니다.
-
-포럼 알림에 대해 이메일 템플릿 내에서 다음 변수를 사용할 수 있습니다.
-
-* `${time}`, 이벤트 날짜 및 시간을 지정합니다.
-
-* `${forum.path}`를 채울 수 있습니다.
-
 ### 워크플로우 알림용 이메일 템플릿 {#email-templates-for-workflow-notification}
 
 워크플로우 알림에 대한 이메일 템플릿(영어)은 다음 위치에 있습니다.
@@ -293,7 +242,6 @@ subject=<text_1>
 1. CRXDE에서 파일을 추가합니다 `<language-code>.txt` 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래 아래
 
    * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : 페이지 알림용
-   * `/etc/notification/email/default/com.day.cq.collab.forum` : 포럼 알림용
    * `/libs/settings/workflow/notification/email/default` : 워크플로우 알림용
 
 1. 언어에 맞게 파일을 조정합니다.
