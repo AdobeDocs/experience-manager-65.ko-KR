@@ -3,10 +3,10 @@ title: Adobe Experience Manager에서 컨텐츠를 작성하도록 리치 텍스
 description: Adobe Experience Manager에서 컨텐츠를 작성하도록 Adobe Experience Manager 리치 텍스트 편집기를 구성하는 방법을 알아봅니다.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: 53a18ec48331f1c25c15e8f7a59bd57e95639895
 workflow-type: tm+mt
-source-wordcount: '3021'
-ht-degree: 0%
+source-wordcount: '2924'
+ht-degree: 1%
 
 ---
 
@@ -109,14 +109,14 @@ RTE의 기본 기능은 `features` 적절한 플러그인과 관련된 노드의
 | 플러그인 ID | 기능 | 설명 |
 |--- |--- |--- |
 | 편집 | 잘라내기 복사 붙여넣기-기본 붙여넣기-plaintext 붙여넣기-wordhtml | [잘라내기, 복사 및 세 가지 붙여넣기 모드](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [칠드레플레이스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | 찾기 바꾸기 | 찾기 및 바꾸기. |
-| [포맷](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | 굵게 기울임꼴 밑줄 | [기본 텍스트 서식](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [이미지](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | 이미지 | 기본 이미지 지원(컨텐츠 또는 컨텐츠 파인더에서 드래그). 브라우저에 따라 작성자를 위한 다양한 동작이 지원됩니다 |
-| [키](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | 이 값을 정의하려면 [탭 크기](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
-| [정당화](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justfyleft justfycenter justfyright | 단락 맞춤. |
-| [링크](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink 연결 해제 앵커 | [하이퍼링크 및 앵커](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [목록](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | 순서가 없는 무순서 들여쓰기 내어쓰기 | 이 플러그인은 모두 제어합니다 [들여쓰기 및 목록](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); 중첩된 목록을 포함합니다. |
-| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | 기타 도구를 사용하여 작성자가 입력할 수 있습니다 [특수 문자](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) 또는 HTML 소스를 편집합니다. 또한 전체 [특수 문자 범위](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) 나만의 목록을 정의하려는 경우. |
+| 칠드레플레이스 | 찾기 바꾸기 | 찾기 및 바꾸기. |
+| 포맷 | 굵게 기울임꼴 밑줄 | [기본 텍스트 서식](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| 이미지 | 이미지 | 기본 이미지 지원(컨텐츠 또는 컨텐츠 파인더에서 드래그). 브라우저에 따라 작성자를 위한 다양한 동작이 지원됩니다 |
+| 키 |  | 이 값을 정의하려면 [탭 크기](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
+| 정당화 | justfyleft justfycenter justfyright | 단락 맞춤. |
+| 링크 | modifylink 연결 해제 앵커 | [하이퍼링크 및 앵커](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
+| 목록 | 순서가 없는 무순서 들여쓰기 내어쓰기 | 이 플러그인은 모두 제어합니다 [들여쓰기 및 목록](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); 중첩된 목록을 포함합니다. |
+| misctools | specialchars sourceedit | 기타 도구를 사용하여 작성자가 입력할 수 있습니다 [특수 문자](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) 또는 HTML 소스를 편집합니다. 또한 전체 [특수 문자 범위](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) 나만의 목록을 정의하려는 경우. |
 | Paraformat | paraformat | 기본 단락 형식은 단락, 제목 1, 제목 2 및 제목 3(`<p>`, `<h1>`, `<h2>`, 및 `<h3>`). 다음을 수행할 수 있습니다 [단락 서식 추가](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) 또는 목록을 확장합니다. |
 | 맞춤법 검사 | 체크 텍스트 | [언어 인식 맞춤법 검사기](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
 | 스타일 | 스타일 | CSS 클래스를 사용하는 스타일링을 지원합니다. [새 텍스트 스타일 추가](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) 텍스트에 사용할 고유한 스타일 범위를 추가(또는 확장)하려면 다음을 수행합니다. |
@@ -323,12 +323,12 @@ RTE 도구 모음에 표시되는 Coral 아이콘과 사용 가능한 명령 간
 
 ## 추가 정보 {#further-information}
 
-RTE 구성에 대한 자세한 내용은 [AEM 위젯 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) 참조.
+RTE 구성에 대한 자세한 내용은 [AEM 위젯 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) 참조.
 
 특히 사용 가능한 플러그인 및 관련 옵션을 보려면 다음을 수행하십시오.
 
-* 다음 [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) 구성 요소는 스타일이 지정된 텍스트 정보(리치 텍스트)를 편집하는 양식 필드를 제공합니다. 리치 텍스트 양식에 사용할 수 있는 모든 매개 변수를 확인하려면 구성 옵션 을 참조하십시오.
-* RichText 구성 요소는 아래에 나열된 플러그인을 사용하여 광범위한 기능을 제공합니다 [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). 각 플러그인에 대해:
+* 다음 [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) 구성 요소는 스타일이 지정된 텍스트 정보(리치 텍스트)를 편집하는 양식 필드를 제공합니다. 리치 텍스트 양식에 사용할 수 있는 모든 매개 변수를 확인하려면 구성 옵션 을 참조하십시오.
+* RichText 구성 요소는 아래에 나열된 플러그인을 사용하여 광범위한 기능을 제공합니다 [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). 각 플러그인에 대해:
 
    * 기능을 활성화하거나 비활성화할 수 있는 기능에 대한 자세한 내용은 기능 을 참조하십시오
    * 해당 플러그인의 세부 구성에 사용할 수 있는 모든 매개 변수에 대해서는 구성 옵션 을 참조하십시오
