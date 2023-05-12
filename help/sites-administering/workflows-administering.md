@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 1b57fca352457e973bd7395e060e3d0495a9d920
+source-git-commit: 25f7218355b7715949273c84eb72ddde3d6a0a65
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '994'
 ht-degree: 84%
 
 ---
@@ -41,26 +41,27 @@ ht-degree: 84%
 
    ![wf-96](assets/wf-96.png)
 
+<!--
+## Search Workflow Instances {#search-workflow-instances}
 
-## 워크플로 인스턴스 검색 {#search-workflow-instances}
-
-1. 탐색을 사용하여 **도구**&#x200B;를 선택한 다음 **워크플로**&#x200B;를 선택합니다.
-1. **인스턴스**&#x200B;를 선택하여 현재 진행 중인 워크플로 인스턴스 목록을 표시합니다. 상단 레일의 왼쪽 모퉁이에서 **필터**&#x200B;를 선택합니다. 또는 Alt+1을 사용할 수 있습니다. 다음과 같은 대화 상자가 표시됩니다.
+1. Using Navigation select **Tools**, then **Workflow**.
+1. Select **Instances** to display the list of workflow instances currently in progress. On the top rail, in the left corner, select **Filters**. Alternatively, you can use the keystrokes alt+1. The following dialog is displayed:
 
    ![wf-99-1](assets/wf-99-1.png)
 
-1. 필터 대화 상자에서 워크플로 검색 기준을 선택합니다. 이러한 입력을 기반으로 다음을 검색할 수 있습니다.
+1. In the Filter dialog, select the workflow search criteria. You can search based on these inputs:
 
-   * 페이로드 경로: 특정 경로 선택
-   * 워크플로 모델: 워크플로 모델 선택
-   * 할당자: 워크플로 할당자 선택
-   * 유형: 작업, 워크플로 항목 또는 워크플로 실패
-   * 작업 상태: 활성, 완료 또는 종료됨
-   * 사용자 위치: 소유자 및 할당자, 소유자만 해당, 할당자만 해당
-   * 시작 일자: 지정된 날짜 이전 또는 이후의 시작일
-   * 종료 일자: 지정된 날짜 이전 또는 이후의 종료일
-   * 만기 일자: 지정된 날짜 이전 또는 이후의 만기일
-   * 업데이트 일자: 지정된 날짜 이전 또는 이후의 업데이트일
+   * Payload path: Select a specific path
+   * Workflow model: Select a workflow model
+   * Assignee: Select a workflow Assignee
+   * Type: Task, Workflow item, or Workflow Failure
+   * Task Status: Active, Complete, or Terminated
+   * Where I Am: Owner AND Assignee, Owner only, Assignee only
+   * Start Date: Start date before or after a specified date
+   * End Date: End date before or after a specified date
+   * Due Date: Due date before or after a specified date
+   * Updated Date: Updated date before or after a specified date
+-->
 
 ## 워크플로 인스턴스 일시 중단, 재시작 및 종료 {#suspending-resuming-and-terminating-a-workflow-instance}
 
