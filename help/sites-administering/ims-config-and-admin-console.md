@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 11db7c44853f95380fa5200efaf5691ad08b3729
+source-git-commit: fff35031eaf55b185870da56a0b66f9145b1ec41
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 13%
+source-wordcount: '1676'
+ht-degree: 12%
 
 ---
 
@@ -133,10 +133,10 @@ UST(User Sync Tool)를 사용하면 기업 고객은 Active Directory 또는 기
 >
 >사용자 동기화 도구는 설명된 절차를 사용하여 Adobe I/O 클라이언트 UMAPI로 등록해야 합니다 [여기](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->Adobe I/O 콘솔 설명서를 찾을 수 있습니다 [여기](https://www.adobe.io/apis/cloudplatform/console.html).
+>Adobe I/O 콘솔 설명서를 찾을 수 있습니다 [여기](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
->다음 [!DNL User Management] 사용자 동기화 도구에서 사용하는 API는 여기에서 다룹니다 [위치](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>다음 [!DNL User Management] 사용자 동기화 도구에서 사용하는 API는 여기에서 다룹니다 [위치](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >
