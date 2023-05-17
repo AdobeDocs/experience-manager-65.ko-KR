@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: bb42b5990993b0f8cea95cf1f6c033aed2713c1c
+source-git-commit: 164b3745c5bddf6ec77f9ac2ada19cfa10c6d266
 workflow-type: tm+mt
-source-wordcount: '3519'
+source-wordcount: '3624'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,17 @@ ht-degree: 1%
 >
 >스마트 이미징을 사용하려면 Adobe Experience Manager - Dynamic Media과 번들로 제공되는 기본 CDN(Content Delivery Network)을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
+>[!TIP]
+>
+>Dynamic Media을 사용하여 Dynamic Media 이미지 수정자 및 스마트 이미징의 이점을 확인하고 살펴봅니다 [_스냅샷_](https://snapshot.scene7.com/).
+>
+> 스냅샷은 최적화 및 동적 이미지 전달을 위해 Dynamic Media의 강력한 기능을 보여주기 위해 설계된 시각적 데모 도구입니다. 다양한 Dynamic Media 이미지 수정자의 출력을 시각적으로 관찰하고 다음에 대한 스마트 이미징 최적화를 사용하여 테스트 이미지 또는 Dynamic Media URL을 실험합니다.
+>* 파일 크기(WebP 및 AVIF 전달 포함)
+>* 네트워크 대역폭
+>* DPR (장치 픽셀 비율)
+>
+>스냅샷 사용 용이성을 알아보려면 [스냅샷 교육 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en) (3분 17초).
+
 스마트 이미징은 Adobe의 동급 최강의 프리미엄 CDN(Content Delivery Network) 서비스와 완벽하게 통합되는 향상된 성능 증대의 이점을 제공합니다. 이 서비스는 서버, 네트워크 및 피어링 지점 간의 최적의 인터넷 경로를 찾습니다. 인터넷에서 기본 경로를 사용하는 대신 지연 시간이 가장 짧고 패킷 손실률이 가장 낮은 경로를 찾습니다.
 
 다음 이미지 자산 예는 추가된 스마트 이미징 최적화를 보여줍니다.
@@ -43,7 +54,7 @@ ht-degree: 1%
 
 WebP 및 AVIF를 PNG와 비교하면 WebP에 84%, AVIF에 87%의 크기를 줄일 수 있습니다. 또한 WebP와 AVIF 형식은 투명도와 여러 이미지 애니메이션을 모두 지원하므로 투명한 PNG 및 GIF 파일에 적합합니다.
 
-참조 - [차세대 이미지 형식을 사용한 이미지 최적화(WebP 및 AVIF)](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+참조 - [차세대 이미지 형식을 사용한 이미지 최적화(WebP 및 AVIF)](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
 <!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
@@ -76,7 +87,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실제 픽셀과 논리 픽셀 간의 관계입니다. 특히 최신 모바일 기기들의 화소 해상도는 망막 스크린의 출현으로 빠른 속도로 높아지고 있다.
 
-장치 픽셀 비율 최적화를 활성화하면 이미지가 화면의 기본 해상도로 렌더링되므로 선명하게 표시됩니다.
+장치 픽셀 비율 최적화를 활성화하면 이미지를 선명하게 하는 화면의 기본 해상도로 렌더링합니다.
 
 현재 디스플레이의 픽셀 밀도는 Akamai CDN 헤더 값에서 가져옵니다.
 
@@ -155,7 +166,7 @@ PNG와 같은 투명도를 지원하는 이미지 파일 형식의 경우, 손�
 
 스마트 이미징은 기존 이미지 사전 설정에서 작동하며 모든 이미지 설정을 준수합니다. 변경 사항은 이미지 형식, 품질 설정 또는 둘 다입니다. 형식 변환을 위해 스마트 이미징은 이미지 사전 설정 설정에 정의된 대로 전체 시각적 품질을 유지하지만 더 작은 파일 크기로 유지합니다.
 
-예를 들어, 이미지 사전 설정이 JPEG 형식, 크기 500 x 500, quality=85, 언샵 마스크=0.1,1,5로 정의된다고 가정합니다. 스마트 이미징에서 사용자가 Chrome 브라우저에 있음을 감지하면 이미지가 500 x 500의 WebP 형식으로 변환되고, WebP 품질에서 가능한 한 가까운 JPEG 품질과 일치하는 WebP 품질에서 0.1,1,5로 변환됩니다. 해당 WebP 전환의 사용 풋프린트와 JPEG이 비교되고 두 항목 중 작은 부분이 반환됩니다.
+예를 들어, 이미지 사전 설정이 JPEG 형식, 크기 500 x 500, quality=85, 언샵 마스크=0.1,1,5로 정의된다고 가정합니다. 스마트 이미징에서 사용자가 Chrome 브라우저에 있음을 감지하면 이미지가 500 x 500의 WebP 형식으로 변환됩니다. 그리고 언샵 마스크=0.1,1,5는 가능한 한 85의 JPEG 품질과 일치하는 WebP 품질입니다. 해당 WebP 전환의 사용 풋프린트와 JPEG이 비교되고 두 항목 중 작은 부분이 반환됩니다.
 
 ## URL, 이미지 사전 설정을 변경하거나 스마트 이미징을 위해 내 사이트에 새 코드를 배포해야 합니까? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
