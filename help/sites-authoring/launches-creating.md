@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 7f595bec8ea138d5a73a17d0548320a31544dcd1
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 59%
+source-wordcount: '1018'
+ht-degree: 57%
 
 ---
 
@@ -66,6 +66,8 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
    >페이지 및/또는 분기를 론치에 추가하려면 사이트 내에 있어야 합니다. 즉, 일반적인 최상위 루트 아래에 있습니다.
    >
    >사이트에 최상위 수준 아래의 언어 루트가 포함되어 있는 경우 론치에 대한 페이지 및 분기는 일반 언어 루트 아래에 있어야 합니다.
+   >
+   >소스 경로에 상위 또는 하위 페이지가 있는 론치를 만들려고 하면 실패합니다. &quot;대상에 페이지 경로가 이미 있습니다.&quot; 오류를 반환합니다.
 
 1. 각 항목에 대해 다음 여부를 지정할 수 있습니다.
 
