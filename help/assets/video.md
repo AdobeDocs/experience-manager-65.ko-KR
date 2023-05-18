@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c704397f08e163a58ee6ac1dbaefc3171298864e
+source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
-source-wordcount: '8086'
+source-wordcount: '8066'
 ht-degree: 3%
 
 ---
@@ -155,8 +155,6 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android™, BlackBerry® 및 Wi
 Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 BlackBerry® 장치를 찾을 수 있습니다. [BlackBerry®에서 지원되는 비디오 형식](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 다음 위치에서 이 비디오 형식을 지원하는 Windows 장치를 찾을 수 있습니다. [Windows Phone 8용 지원되는 미디어 코덱입니다](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
-
-
 
 * 다음을 포함하여 Dynamic Media 비디오 뷰어 사전 설정을 사용하여 비디오를 재생합니다.
 
@@ -442,10 +440,6 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍을 위한 �
 * 고객이 보다 쉽게 비디오를 게재할 수 있도록 지원합니다.
 * API를 통해 스트리밍 URL도 가져옵니다.
 
-   >[!IMPORTANT]
-   >
-   >현재 계정의 DASH 활성화는 아시아 태평양 및 북아메리카에서만 사용할 수 있습니다. 곧 유럽-중동-아프리카에 도착합니다.
-
 계정에서 DASH를 활성화하려면 다음 두 단계가 필요합니다.
 
 * DASH를 사용하도록 Dynamic Media 구성 을 직접 수행할 수 있습니다.
@@ -455,10 +449,10 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍을 위한 �
 
 1. **Dynamic Media 구성** - Experience Manager 6.5의 Dynamic Media에서 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. 검색 대상 **AEM Assets Dynamic Media Video Advanced Streaming** 기능 플래그.
-1. DASH를 활성화(켜기)하려면 확인란을 선택합니다.
+1. DASH를 활성화(설정)하려면 확인란을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. **Experience Manager 6.5 구성** - [Admin Console을 사용하여 새 지원 사례 만들기를 시작합니다](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
-1. 다음 정보를 제공하는지 확인하면서 지원 사례를 만들려면 지침을 따르십시오.
+1. 지원 사례를 만들려면 다음 정보를 제공하는지 확인하는 동안 지침을 따르십시오.
 
    * 기본 연락처 이름, 이메일, 전화
    * Dynamic Media 계정 이름입니다.
@@ -720,7 +714,7 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
 
 ## Dynamic Media - Scene7 모드의 비디오 축소판 정보 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
-비디오 축소판은 고객에게 비디오를 나타내는 이미지 자산 또는 비디오 프레임의 축소된 버전입니다. 축소판은 고객이 비디오를 클릭하도록 권장하는 데 사용됩니다.
+비디오 축소판은 고객에게 비디오를 나타내는 이미지 자산 또는 비디오 프레임의 축소된 버전입니다. 축소판은 고객이 비디오를 선택하도록 권장하는 데 사용됩니다.
 
 Experience Manager의 모든 비디오에는 연결된 축소판이 있어야 합니다. 축소판을 바꾸지 않으면 삭제할 수 없습니다. 기본적으로 비디오를 Experience Manager에 업로드할 때 첫 번째 프레임이 축소판으로 사용됩니다. 그러나 브랜딩 용도나 시각적 검색 등을 위해 축소판을 사용자 지정할 수 있습니다. 비디오 축소판을 사용자 지정할 때 비디오를 재생하고 사용할 프레임에서 일시 정지할 수 있습니다. 또는 이미 업로드한 이미지 자산을 선택할 수 있습니다 *게시됨* 참조하십시오.
 

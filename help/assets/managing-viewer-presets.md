@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
-source-wordcount: '4523'
+source-wordcount: '4519'
 ht-degree: 9%
 
 ---
@@ -60,7 +60,7 @@ Adobe Experience Manager에서 을 탭하여 뷰어 사전 설정을 추가, 편
 
 >[!NOTE]
 >
->처음 사용하기 전에 모든 기본 제공 뷰어를 게시해야 합니다.
+>처음 사용하기 전에 모든 기본 제공 뷰어를 게시합니다.
 >자세한 내용은 [뷰어 사전 설정 게시].(#publishing-viewer-presets)
 
 ### 뷰어 사전 설정 시스템 호환성 {#viewer-preset-system-compatibility}
@@ -72,7 +72,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 * Apple iPad
 * Android™ Smartphone
 * Android™ 태블릿
-* 비디오의 경우, MP4 재생에 대한 추가 지원이 제공됩니다 [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) 및 [Windows Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
+* 비디오의 경우, MP4 재생에 대한 추가 지원이 제공됩니다 [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) 및 [Windows Phone](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 ### 뷰어 사전 설정에 대한 리치 미디어 유형 {#rich-media-types-for-viewer-presets}
 
@@ -552,7 +552,7 @@ When you enable (select) **[!UICONTROL Auto Scroll]** in the viewer preset, duri
 
 회전 배너 뷰어 사전 설정을 만들 때 다음과 같이 핫스팟 스타일을 변경할 수 있습니다.
 
-|  | **설명** | **액션** |
+|  | **설명** | **작업** |
 |---|---|---|
 | **[!UICONTROL 핫스팟 아이콘]** | 핫스팟에 사용되는 아이콘 변경 | 핫스팟 아이콘 이미지를 변경하려면 **[!UICONTROL 모양]** 탭, **[!UICONTROL 선택한 구성 요소]**, 선택 **[!UICONTROL ImageMapEffect]**. Under **[!UICONTROL Icon]**, select **[!UICONTROL Background]** and in the **[!UICONTROL Image]** field navigate to the background image you want. |
 
