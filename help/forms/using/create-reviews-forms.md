@@ -11,9 +11,9 @@ discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4edfc51227607b4fb3ee4b97443d2040015b6a65
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,6 @@ ht-degree: 0%
    * **검토 기한**: 편집할 수 있습니다. 마감일을 현재 날짜 및 시간 이외의 날짜 및 시간으로 수정할 수 있습니다.
 
    * **검토자**: 편집할 수 있습니다. 검토자를 추가하거나 제거할 수 있습니다. 작업 기한이 지난 경우 현재 날짜 이상으로 기한을 연장한 후에만 검토자를 추가할 수 있습니다.
-
-1. 필요한 필드를 편집한 다음 업데이트를 클릭합니다.
-
-   ![작업 관리자에서 업데이트된 상태 검토](assets/tskmgr.png)
-
-   작업 관리자에서 업데이트된 상태 검토
 
 1. 검토를 종료하려면 종료를 누릅니다.
 
