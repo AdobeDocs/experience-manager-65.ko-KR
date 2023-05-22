@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
 exl-id: ee5e8ebb-773f-4aa6-9c3e-2cc3bf4a3bbd
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: ce9969c8dd1961ebb2bef69559f8ee13864a90f5
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 32%
+source-wordcount: '118'
+ht-degree: 27%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 32%
 * [외부 공급자의 Analytics](/help/sites-administering/external-providers.md)
 * [카탈로그 제작자](/help/sites-administering/catalog-producer.md)
 * [SharePoint 커넥터](/help/sites-administering/sharepoint-connector.md)
+* [스마트 태그 이해, 적용 및 조정](/help/assets/enhanced-smart-tags.md)
 
 다른 Adobe 또는 타사 서비스와 AEM 통합에 대해 다음 정보를 사용할 수 있습니다.
 
