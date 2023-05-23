@@ -1,8 +1,6 @@
 ---
 title: 솔루션 통합
-seo-title: Solutions Integration
 description: AEM의 솔루션 통합에 대해 자세히 알아보십시오 .
-seo-description: Learn more about Solutions Integration in AEM.
 uuid: 3bf56b1b-284d-4f14-8974-0a595ece5028
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +8,21 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
 exl-id: ee5e8ebb-773f-4aa6-9c3e-2cc3bf4a3bbd
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 97dc62303e0174b44b5d776ce11e2ca2ad31b42c
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 28%
+source-wordcount: '117'
+ht-degree: 27%
 
 ---
 
 # 솔루션 통합{#solutions-integration}
 
-* [Adobe Marketing Cloud과 통합](/help/sites-administering/marketing-cloud.md)
+* [Adobe Experience Cloud과 통합](/help/sites-administering/marketing-cloud.md)
 * [타사 서비스와 통합](/help/sites-administering/third-party-services.md)
 * [외부 공급자의 Analytics](/help/sites-administering/external-providers.md)
 * [카탈로그 제작자](/help/sites-administering/catalog-producer.md)
 * [SharePoint 커넥터](/help/sites-administering/sharepoint-connector.md)
+* [스마트 태그 이해, 적용 및 조정](/help/assets/enhanced-smart-tags.md)
 
 다른 Adobe 또는 타사 서비스와 AEM 통합에 대해 다음 정보를 사용할 수 있습니다.
 
