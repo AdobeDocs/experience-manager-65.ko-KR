@@ -39,7 +39,7 @@ ht-degree: 1%
    <td>예 - 다음 위치에서 편집 가능한 속성 <i>디자인 </i>모드</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs를</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td> cq.social.hbs.liking</td>
   </tr>
   <tr>

@@ -1,7 +1,7 @@
 ---
 title: 사용자 이름 및 암호 자격 증명 추가 및 제거
 seo-title: Adding and removing user name and password credentials
-description: 사용자 이름 및 암호 자격 증명을 추가하고 제거하는 방법을 알아봅니다.
+description: 사용자 이름 및 암호 자격 증명을 추가 및 제거하는 방법에 대해 알아봅니다.
 seo-description: Learn how to add and remove user name and password credentials.
 uuid: f1d083b5-ba48-4b02-b40b-969f03732e36
 contentOwner: admin
@@ -19,16 +19,16 @@ ht-degree: 0%
 
 # 사용자 이름 및 암호 자격 증명 추가 및 제거 {#adding-and-removing-user-name-and-password-credentials}
 
-Trust Store Management 페이지에서 SOAP 수준 보안으로 요청을 받을 때 Forms 서비스에서 사용하는 사용자 이름 및 암호 자격 증명을 추가하고 제거할 수 있습니다.
+[Trust Store 관리] 페이지에서 Forms 서비스가 SOAP 수준 보안을 사용한 요청을 받을 때 이 서비스에서 사용하는 사용자 이름 및 암호 자격 증명을 추가하거나 제거할 수 있습니다.
 
 ## 사용자 이름 및 암호 자격 증명 추가 {#add-a-user-name-and-password-credential}
 
-1. 관리 콘솔에서 **[!UICONTROL 설정 > Trust Store Management > 사용자 및 암호 자격 증명]** 을 클릭한 다음 **[!UICONTROL 추가]**.
-1. 에서 **[!UICONTROL 프로필 이름]** 상자에 자격 증명 이름을 입력합니다.
-1. 에서 **[!UICONTROL 사용자 이름]** 상자에 고유한 사용자 이름을 입력합니다.
-1. 에서 **[!UICONTROL 암호]** 상자에 사용자의 암호를 입력한 다음 **[!UICONTROL 확인]**.
+1. 관리 콘솔에서 다음을 클릭합니다. **[!UICONTROL 설정 > Trust Store 관리 > 사용자 및 암호 자격 증명]** 그런 다음 을 클릭합니다. **[!UICONTROL 추가]**.
+1. 다음에서 **[!UICONTROL 프로필 이름]** 상자에서 자격 증명의 이름을 입력합니다.
+1. 다음에서 **[!UICONTROL 사용자 이름]** 상자에 고유한 사용자 이름을 입력합니다.
+1. 다음에서 **[!UICONTROL 암호]** 상자에서 사용자의 암호를 입력한 다음 **[!UICONTROL 확인]**.
 
 ## 사용자 이름 및 암호 자격 증명 삭제 {#delete-a-user-name-and-password-credential}
 
-1. 관리 콘솔에서 **[!UICONTROL 설정 > Trust Store Management > 사용자 및 암호 자격 증명]**.
-1. 삭제할 자격 증명에 대한 확인란을 선택하고 **[!UICONTROL 삭제]**&#x200B;를 클릭한 다음 **[!UICONTROL 확인]**.
+1. 관리 콘솔에서 다음을 클릭합니다. **[!UICONTROL 설정 > Trust Store 관리 > 사용자 및 암호 자격 증명]**.
+1. 삭제할 자격 증명의 확인란을 선택하고 **[!UICONTROL 삭제]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL 확인]**.

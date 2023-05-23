@@ -261,7 +261,7 @@ IBM® SSL 소켓 공급자를 구성하려면 다음 단계를 수행하십시�
 1. 복사한 java.security 파일을 열어 편집합니다.
 1. 기본 IBM® WebSphere® 공장 대신 JSSE2 공장을 사용하도록 기본 SSL 소켓 공장을 변경합니다.
 
-   **기본 컨텐트입니다:**
+   **기본 컨텐츠:**
 
    ```shell
    #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl

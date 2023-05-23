@@ -13,7 +13,7 @@ exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1096'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -62,7 +62,7 @@ AEM에서 사용자 지정 데이터 가져오기 서비스를 만드는 방법�
 
 ### PollingImporter로 인해 종료가 오래 걸립니다. {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analytics는 상속 메커니즘을 염두에 두고 설계되었습니다. 일반적으로 페이지 속성 내에 Analytics 구성에 대한 참조를 추가하여 사이트에 대한 Analytics를 활성화합니다 [Cloud Services](/help/sites-developing/extending-cloud-config.md) 탭. 그런 다음 페이지에 다른 구성이 필요하지 않으면 다시 참조할 필요 없이 구성이 모든 하위 페이지에 자동으로 상속됩니다. 사이트에 참조를 추가하면 유형의 여러 노드(AEM 6.3 및 이전 버전에서는 12개, AEM 6.4 이상에서는 6개)도 자동으로 만들어집니다 `cq;PollConfig` Analytics 데이터를 AEM으로 가져오는 데 사용되는 PollingImporters를 인스턴스화합니다. 그 결과는 다음과 같습니다.
+Analytics는 상속 메커니즘을 고려하여 설계되었습니다. 일반적으로 페이지 속성 내에 Analytics 구성에 대한 참조를 추가하여 사이트에 대한 Analytics를 활성화합니다 [Cloud Services](/help/sites-developing/extending-cloud-config.md) 탭. 그런 다음 페이지에 다른 구성이 필요하지 않으면 다시 참조할 필요 없이 구성이 모든 하위 페이지에 자동으로 상속됩니다. 사이트에 참조를 추가하면 유형의 여러 노드(AEM 6.3 및 이전 버전에서는 12개, AEM 6.4 이상에서는 6개)도 자동으로 만들어집니다 `cq;PollConfig` Analytics 데이터를 AEM으로 가져오는 데 사용되는 PollingImporters를 인스턴스화합니다. 그 결과는 다음과 같습니다.
 
 * Analytics를 참조하는 페이지가 많으면 PollingImporter가 많습니다.
 * 또한 Analytics 구성을 참조하여 페이지를 복사하고 붙여넣으면 해당 PollingImporter가 중복됩니다.

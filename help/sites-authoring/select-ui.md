@@ -1,6 +1,6 @@
 ---
 title: AEM에서 사용자 인터페이스 선택
-description: AEM에서 작업하는 데 사용하는 인터페이스를 구성합니다.
+description: AEM에서 작동하는 데 사용하는 인터페이스를 구성합니다.
 uuid: ab127f2f-2f8a-4398-90dd-c5d48eed9e53
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,123 +18,123 @@ ht-degree: 1%
 
 # UI 선택{#selecting-your-ui}
 
-터치 활성화 UI가 이제 표준 UI이고 사이트의 관리 및 편집에서 기능 패리티에 거의 도달했지만 사용자가 로 전환하려고 할 수 있습니다 [클래식 UI](/help/sites-classic-ui-authoring/classicui.md). 이를 위해 몇 가지 옵션이 있습니다.
+이제 터치 지원 UI가 표준 UI이며 사이트 관리 및 편집과 기능 패리티에 거의 도달했지만 사용자가 로 전환하려는 경우가 있을 수 있습니다. [클래식 UI](/help/sites-classic-ui-authoring/classicui.md). 이 작업을 수행하는 데에는 몇 가지 옵션이 있습니다.
 
 >[!NOTE]
 >
->클래식 UI의 기능 패리티 상태에 대한 자세한 내용은 [터치 UI 기능 패리티](/help/release-notes/touch-ui-features-status.md) 문서.
+>클래식 UI를 사용하는 기능 패리티의 상태에 대한 자세한 내용은 [Touch UI 기능 패리티](/help/release-notes/touch-ui-features-status.md) 문서.
 
-사용할 UI를 정의할 수 있는 다양한 위치가 있습니다.
+사용할 UI를 정의할 수 있는 위치는 다양합니다.
 
 * [인스턴스에 대한 기본 UI 구성](#configuring-the-default-ui-for-your-instance)
-이 경우 사용자가 이 설정을 재정의하고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만, 사용자 로그인 시 기본 UI가 표시되도록 설정됩니다.
+사용자가 기본 UI를 재정의하고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만 이렇게 하면 사용자 로그인 시 표시되는 기본 UI가 설정됩니다.
 
-* [계정용 클래식 UI 작성 설정](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)
-이 경우 사용자가 이 설정을 재정의하고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만, 페이지를 편집할 때 기본적으로 사용할 UI가 설정됩니다.
+* [계정에 대한 클래식 UI 작성 설정](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)
+사용자가 이를 무시하고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만, 이렇게 하면 페이지를 편집할 때 기본값으로 사용될 UI가 설정됩니다.
 
-* [현재 세션에 대한 클래식 UI로 전환](#switching-to-classic-ui-for-the-current-session)
-이 설정은 현재 세션에 대한 클래식 UI로 전환합니다.
+* [현재 세션의 클래식 UI로 전환](#switching-to-classic-ui-for-the-current-session)
+이 옵션은 현재 세션의 클래식 UI로 전환됩니다.
 
-* 의 경우 [시스템을 작성하는 페이지는 UI와 관련하여 특정 항목을 무시합니다](#ui-overrides-for-the-editor).
+* 의 경우에 [페이지 작성 시스템은 UI와 관련하여 특정 무시를 수행합니다](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >
->클래식 UI로 전환하는 다양한 옵션은 즉시 사용할 수 없습니다. 인스턴스에 대해 특별히 구성되어 있어야 합니다.
+>클래식 UI로 전환하는 다양한 옵션은 즉시 사용할 수 없으며, 인스턴스에 맞게 구체적으로 구성해야 합니다.
 >
->자세한 내용은 [클래식 UI에 대한 액세스 활성화](/help/sites-administering/enable-classic-ui.md) 추가 정보.
+>다음을 참조하십시오 [클래식 UI에 대한 액세스 활성화](/help/sites-administering/enable-classic-ui.md) 추가 정보.
 
 >[!NOTE]
 >
->이전 버전에서 업그레이드된 인스턴스는 페이지 작성을 위해 클래식 UI를 유지합니다.
+>이전 버전에서 업그레이드된 인스턴스는 페이지 작성을 위한 클래식 UI를 유지합니다.
 >
->업그레이드 후에 페이지 작성이 터치 지원 UI로 자동 전환되지 않지만 [OSGi 구성](/help/sites-deploying/configuring-osgi.md) 의 **WCM 작성 UI 모드 서비스** ( `AuthoringUIMode` 서비스). 자세한 내용은 [편집기에 대해 UI 무시](#ui-overrides-for-the-editor).
+>업그레이드 후에는 페이지 작성이 터치 지원 UI로 자동으로 전환되지 않지만 다음을 사용하여 이를 구성할 수 있습니다. [OSGi 구성](/help/sites-deploying/configuring-osgi.md) / **WCM 작성 UI 모드 서비스** ( `AuthoringUIMode` service). 다음을 참조하십시오 [편집기에 대한 UI 무시](#ui-overrides-for-the-editor).
 
 ## 인스턴스에 대한 기본 UI 구성 {#configuring-the-default-ui-for-your-instance}
 
-시스템 관리자는 를 사용하여 시작 및 로그인 시 표시되는 UI를 구성할 수 있습니다 [루트 매핑](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping).
+시스템 관리자는 를 사용하여 시작 및 로그인 시 표시되는 UI를 구성할 수 있습니다. [루트 매핑](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping).
 
-사용자 기본값이나 세션 설정에 의해 대체할 수 있습니다.
+사용자 기본값이나 세션 설정으로 재정의할 수 있습니다.
 
-## 계정용 클래식 UI 작성 설정 {#setting-classic-ui-authoring-for-your-account}
+## 계정에 대한 클래식 UI 작성 설정 {#setting-classic-ui-authoring-for-your-account}
 
-각 사용자가 자신의 액세스 권한을 갖습니다 [사용자 환경 설정](/help/sites-authoring/user-properties.md#userpreferences) 페이지 작성에 클래식 UI를 사용할지 여부를 정의합니다(기본 UI 대신).
+각 사용자는 해당 사용자에 액세스할 수 있습니다. [사용자 환경 설정](/help/sites-authoring/user-properties.md#userpreferences) 페이지 작성에 기본 UI 대신 클래식 UI를 사용할지 여부를 정의합니다.
 
-세션 설정에 의해 무시될 수 있습니다.
+세션 설정으로 재정의할 수 있습니다.
 
-## 현재 세션에 대한 클래식 UI로 전환 {#switching-to-classic-ui-for-the-current-session}
+## 현재 세션의 클래식 UI로 전환 {#switching-to-classic-ui-for-the-current-session}
 
-터치 지원 UI를 사용할 때 데스크톱 사용자는 클래식(데스크톱 전용) UI로 되돌릴 수 있습니다. 현재 세션에 대한 클래식 UI로 전환하는 방법에는 몇 가지가 있습니다.
+터치 사용 UI를 사용하는 경우 데스크탑 사용자는 클래식(데스크탑 전용) UI로 되돌릴 수 있습니다. 현재 세션에 대한 클래식 UI로 전환하는 방법에는 몇 가지가 있습니다.
 
 * **탐색 링크**
 
    >[!CAUTION]
    >
-   >클래식 UI로 전환하는 이 옵션은 즉시 사용할 수 없습니다. 인스턴스에 대해 특별히 구성되어 있어야 합니다.
+   >클래식 UI로 전환하는 이 옵션은 즉시 사용할 수 없으며, 인스턴스에 대해 특별히 구성해야 합니다.
    >
    >
-   >자세한 내용은 [클래식 UI에 대한 액세스 활성화](/help/sites-administering/enable-classic-ui.md) 추가 정보.
+   >다음을 참조하십시오 [클래식 UI에 대한 액세스 활성화](/help/sites-administering/enable-classic-ui.md) 추가 정보.
 
-   이 옵션이 활성화되어 있으면 적용 가능한 콘솔 위에 마우스를 올려 놓을 때마다 아이콘(모니터 기호)이 나타나고, 이 아이콘을 탭/클릭하면 클래식 UI에서 해당 위치가 열립니다.
+   이 기능이 활성화되어 있으면 해당 콘솔 위로 마우스를 가져갈 때마다 아이콘(모니터의 기호)이 표시되며, 이 아이콘을 탭하거나 클릭하면 클래식 UI에서 적절한 위치가 열립니다.
 
-   예를 들어 의 링크가 **Sites** to **siteadmin**:
+   (예: 링크) **사이트** 끝 **siteadmin**:
 
    ![syui-01](assets/syui-01.png)
 
 * **URL**
 
-   클래식 UI는 시작 화면의 URL을 사용하여 액세스할 수 있습니다. `welcome.html`. 예:
+   의 시작 화면에 대한 URL을 사용하여 클래식 UI에 액세스할 수 있습니다. `welcome.html`. 예:
 
    `https://localhost:4502/welcome.html`
 
    >[!NOTE]
    >
-   >터치 지원 UI는 를 통해 액세스할 수 있습니다 `sites.html`. 예:
+   >터치 지원 UI는 를 통해 액세스할 수 있습니다. `sites.html`. 예:
    >
    >
    >`https://localhost:4502/sites.html`
 
-### 페이지를 편집할 때 클래식 UI로 전환 {#switching-to-classic-ui-when-editing-a-page}
+### 페이지 편집 시 클래식 UI로 전환 {#switching-to-classic-ui-when-editing-a-page}
 
 >[!CAUTION]
 >
->클래식 UI로 전환하는 이 옵션은 즉시 사용할 수 없습니다. 인스턴스에 대해 특별히 구성되어 있어야 합니다.
+>클래식 UI로 전환하는 이 옵션은 즉시 사용할 수 없으며, 인스턴스에 대해 특별히 구성해야 합니다.
 >
->자세한 내용은 [클래식 UI에 대한 액세스 활성화](/help/sites-administering/enable-classic-ui.md) 추가 정보.
+>다음을 참조하십시오 [클래식 UI에 대한 액세스 활성화](/help/sites-administering/enable-classic-ui.md) 추가 정보.
 
-활성화된 경우 **클래식 UI 열기** 다음에서 사용 가능합니다. **페이지 정보** 대화 상자:
+활성화된 경우 **클래식 UI 열기** 다음에서 사용할 수 있습니다. **페이지 정보** 대화 상자:
 
 ![syui-02](assets/syui-02.png)
 
-### 편집기에 대해 UI 무시 {#ui-overrides-for-the-editor}
+### 편집기에 대한 UI 무시 {#ui-overrides-for-the-editor}
 
-사용자 또는 시스템 관리자가 정의한 설정은 페이지 작성의 경우 시스템에 의해 덮어쓸 수 있습니다.
+페이지 작성의 경우 사용자 또는 시스템 관리자가 정의한 설정을 시스템에서 재정의할 수 있습니다.
 
-* 페이지를 작성할 때:
+* 페이지 작성 시:
 
-   * 클래식 편집기는 `cf#` 를 입력합니다. 예:
+   * 를 사용하여 페이지에 액세스할 때 클래식 편집기를 사용해야 합니다. `cf#` 를 입력합니다. 예:
       `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * 사용할 때는 터치 지원 편집기를 사용할 수 밖에 없습니다 `/editor.html` 를 클릭하거나 터치 장치를 사용할 때 사용됩니다. 예:
+   * 을 사용할 때는 터치 지원 편집기를 사용해야 합니다 `/editor.html` URL에서 또는 터치 장치를 사용할 때. 예:
       `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
-* 이러한 강제성은 모두 일시적이며 브라우저 세션에 대해서만 유효합니다
+* 모든 강제 작업은 일시적이며 브라우저 세션에만 유효합니다
 
-   * 설정된 쿠키는 터치 활성화( `editor.html`) 또는 classic( `cf#`사용)
+   * 쿠키 세트는 터치 활성화 여부에 따라 설정됩니다( `editor.html`) 또는 classic ( `cf#`)가 사용됩니다.
 
-* 페이지를 통과할 때 `siteadmin`은(는) 다음 항목이 있는지 확인하게 됩니다.
+* 페이지를 여는 중 `siteadmin`이(가) 있는지 확인합니다.
 
    * 쿠키
    * 사용자 환경 설정
-   * 어느 쪽도 없을 경우에는, 기본적으로 [OSGi 구성](/help/sites-deploying/configuring-osgi.md) 의 **WCM 작성 UI 모드 서비스** ( `AuthoringUIMode` 서비스).
+   * 둘 다 존재하지 않는 경우 기본적으로 [OSGi 구성](/help/sites-deploying/configuring-osgi.md) / **WCM 작성 UI 모드 서비스** ( `AuthoringUIMode` service).
 
 >[!NOTE]
 >
->If [사용자가 페이지 작성에 대한 환경 설정을 이미 정의했습니다.](#settingthedefaultauthoringuiforyouraccount): OSGi 속성을 변경하여 재정의되지 않습니다.
+>If [사용자가 페이지 작성에 대한 기본 설정을 이미 정의했습니다.](#settingthedefaultauthoringuiforyouraccount)OSGi 속성을 변경하여 재정의되지 않습니다.
 
 >[!CAUTION]
 >
->이미 설명한 대로 쿠키의 사용으로 인해 다음 중 하나를 사용하지 않는 것이 좋습니다.
+>이미 설명한 대로 쿠키를 사용하므로 다음 중 하나를 수행하는 것은 권장되지 않습니다.
 >
->* URL 수동 편집 - 비표준 URL은 알 수 없는 상황과 기능 부족을 초래할 수 있습니다.
->* 두 편집기를 동시에 열기. 예를 들어 별도의 창으로 엽니다.
+>* URL을 수동으로 편집 - 비표준 URL은 알 수 없는 상황과 기능 부재를 초래할 수 있습니다.
+>* 두 편집기를 동시에 엽니다(예: 별도의 창에서).
 

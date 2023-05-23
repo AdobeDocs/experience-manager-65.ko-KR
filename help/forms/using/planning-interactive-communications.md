@@ -12,7 +12,7 @@ exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -135,7 +135,7 @@ ht-degree: 3%
      <li>날짜</li>
      <li>시간</li>
      <li>숫자</li>
-     <li>기간</li>
+     <li>지속 시간</li>
      <li>청구</li>
     </ul> </td>
    <td><p>모든 값</p> <p>테이블 - 호출</p> </td>

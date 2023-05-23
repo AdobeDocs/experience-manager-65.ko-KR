@@ -12,7 +12,7 @@ exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 5%
    <td><p>하위</p> </td>
   </tr>
   <tr>
-   <td><p>정렬 단추</p> </td>
+   <td><p>값</p> </td>
    <td><p>autoSaveInfo</p> </td>
    <td><p>setAttribute</p> </td>
   </tr>
@@ -103,7 +103,7 @@ ht-degree: 5%
    <td><p>이름</p> </td>
   </tr>
   <tr>
-   <td><p>mandatory</p> </td>
+   <td><p>필수</p> </td>
    <td><p>패널</p> </td>
    <td><p>templateId</p> </td>
   </tr>
@@ -128,7 +128,7 @@ ht-degree: 5%
    <td><p>viewVisited</p> </td>
   </tr>
   <tr>
-   <td><p>너비</p> </td>
+   <td><p>폭</p> </td>
    <td><p>buttonText</p> </td>
    <td><p>index</p> </td>
   </tr>

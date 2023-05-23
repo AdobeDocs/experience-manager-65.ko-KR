@@ -12,13 +12,13 @@ exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 참조 테마{#reference-themes}
 
-[테마](../../forms/using/themes.md) css에 대한 깊은 지식 없이 양식을 스타일링할 수 있습니다. 기본 테마 외에도 다음을 설치하여 가져올 수 있습니다. [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
+[테마](../../forms/using/themes.md) css에 대한 깊은 지식 없이 양식을 스타일링할 수 있습니다. 기본 테마 외에도 다음을 설치하여 가져올 수 있습니다. [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko):
 
 * 베릴
 * 실행

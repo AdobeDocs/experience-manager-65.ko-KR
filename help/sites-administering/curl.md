@@ -1,7 +1,7 @@
 ---
 title: AEM에서 cURL 사용
 seo-title: Using cURL with AEM
-description: AEM에서 cURL을 사용하는 방법을 알아봅니다.
+description: AEM에서 cURL을 사용하는 방법에 대해 알아봅니다.
 seo-description: Learn how to use cURL with AEM.
 uuid: 771b9acc-ff3a-41c9-9fee-7e5d2183f311
 contentOwner: Silviu Raiman
@@ -19,64 +19,64 @@ ht-degree: 2%
 
 # AEM에서 cURL 사용{#using-curl-with-aem}
 
-관리자는 종종 모든 시스템 내에서 일반적인 작업을 자동화하거나 단순화해야 합니다. 예를 들어 AEM에서 사용자 관리, 패키지 설치 및 OSGi 번들 관리는 일반적으로 수행해야 하는 작업입니다.
+관리자는 어떤 시스템에서든 일반적인 작업을 자동화하거나 단순화해야 하는 경우가 많습니다. 예를 들어 AEM에서 사용자 관리, 패키지 설치 및 OSGi 번들 관리는 일반적으로 수행해야 하는 작업입니다.
 
-AEM이 빌드되는 Sling 프레임워크의 RESTful 특성으로 인해 대부분의 작업을 URL 호출로 수행할 수 있습니다. cURL을 사용하여 이러한 URL 호출을 실행할 수 있으며 AEM 관리자에게 유용한 도구가 될 수 있습니다.
+AEM이 빌드되는 Sling 프레임워크의 RESTful 특성으로 인해 대부분의 작업은 URL 호출로 수행할 수 있습니다. cURL은 이러한 URL 호출을 실행하는 데 사용할 수 있으며 AEM 관리자에게 유용한 도구가 될 수 있습니다.
 
-## cURL이란? {#what-is-curl}
+## cURL이란 {#what-is-curl}
 
-cURL은 URL 조작을 수행하는 데 사용되는 오픈 소스 명령줄 툴입니다. HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, DAP, DICT, TELNET, FILE, IMAP, POP3, SMTP 및 RTSP를 비롯한 다양한 인터넷 프로토콜을 지원합니다.
+cURL은 URL 조작을 수행하는 데 사용되는 오픈 소스 명령줄 도구입니다. HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, DAP, DICT, TELNET, FILE, IMAP, POP3, SMTP, RTSP 등 다양한 인터넷 프로토콜을 지원합니다.
 
-cURL은 URL 구문을 사용하여 데이터를 가져오거나 전송하는 데 잘 설정되어 있고 널리 사용되는 도구이며 원래 1997년에 릴리스되었습니다. 원래 cURL이라는 이름은 &quot;URL 보기&quot;였습니다.
+cURL은 URL 구문을 사용하여 데이터를 가져오거나 보내는 데 널리 사용되는 도구로서 1997년에 처음 출시되었습니다. cURL이라는 이름은 원래 &quot;URL 참조&quot;를 의미했습니다.
 
-AEM이 빌드되는 Sling 프레임워크의 RESTful 특성으로 인해 대부분의 작업을 cURL로 실행할 수 있는 URL 호출로 줄일 수 있습니다. [컨텐츠 조작 작업](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) 페이지 활성화 및 워크플로우 시작 [작업](/help/sites-administering/curl.md#common-operational-aem-curl-commands) 패키지 관리 및 사용자 관리와 같은 는 cURL을 사용하여 자동화할 수 있습니다. 또한 다음을 수행할 수 있습니다 [자신만의 cURL을 만듭니다](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) AEM의 대부분의 작업에 대한 명령입니다.
+AEM이 빌드되는 Sling 프레임워크의 RESTful 특성으로 인해 대부분의 작업은 cURL로 실행할 수 있는 URL 호출로 줄일 수 있습니다. [컨텐츠 조작 작업](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) 페이지 활성화, 워크플로우 시작 등 과 같은 작업을 수행하는 것이 좋습니다. [운영 작업](/help/sites-administering/curl.md#common-operational-aem-curl-commands) 패키지 관리 및 사용자 관리와 같은 기능은 cURL을 사용하여 자동화할 수 있습니다. 또한 다음을 수행할 수 있습니다. [자신만의 cURL 만들기](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) AEM의 대부분의 작업에 대한 명령입니다.
 
 >[!NOTE]
 >
->cURL을 통해 실행되는 모든 AEM 명령은 AEM에 대한 모든 사용자처럼 인증을 받아야 합니다. 모든 ACL 및 액세스 권한은 cURL을 사용하여 AEM 명령을 실행할 때 적용됩니다.
+>cURL을 통해 실행되는 모든 AEM 명령은 AEM에 대한 모든 사용자와 마찬가지로 인증되어야 합니다. cURL을 사용하여 AEM 명령을 실행할 때는 모든 ACL 및 액세스 권한이 유지됩니다.
 
-## cURL 다운로드 {#downloading-curl}
+## cURL 다운로드 중 {#downloading-curl}
 
-cURL은 macOS 및 일부 Linux 도메인의 표준 부분입니다. 그러나 대부분의 모든 운영 체제에 사용할 수 있습니다. 최신 다운로드는 다음에서 찾을 수 있습니다. [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
+cURL은 macOS 및 일부 Linux 배포판의 표준 부분입니다. 그러나 대부분의 모든 운영 체제에서 사용할 수 있습니다. 최신 다운로드 목록은 다음에서 확인할 수 있습니다. [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
 
-URL의 소스 저장소는 GitHub에서도 찾을 수 있습니다.
+cURL의 소스 리포지토리는 GitHub에서도 찾을 수 있습니다.
 
 ## cURL 준비 AEM 명령 작성 {#building-a-curl-ready-aem-command}
 
-워크플로우 트리거, OSGi 구성 확인, JMX 명령 트리거, 복제 에이전트 만들기 등과 같은 AEM의 대부분의 작업에 대해 cURL 명령을 작성할 수 있습니다.
+워크플로우 트리거, OSGi 구성 확인, JMX 명령 트리거, 복제 에이전트 생성 등과 같은 AEM의 대부분의 작업을 위해 cURL 명령을 작성할 수 있습니다.
 
 특정 작업에 필요한 정확한 명령을 찾으려면 브라우저에서 개발자 도구를 사용하여 AEM 명령을 실행할 때 서버에 대한 POST 호출을 캡처해야 합니다.
 
-다음 단계는 Chrome 브라우저 내에서 새 페이지를 만드는 작업을 예로 사용하여 이 작업을 수행하는 방법을 설명합니다.
+다음 단계에서는 Chrome 브라우저 내에서 새 페이지를 만드는 방법을 예로 들어 설명합니다.
 
-1. AEM 내에서 호출할 작업을 준비합니다. 이 경우, 우리는 **페이지 만들기** 마법사 **만들기**.
+1. AEM 내에서 호출할 작업을 준비합니다. 이 경우 의 끝까지 진행했습니다. **페이지 만들기** 마법사지만 아직 클릭하지 않음 **만들기**.
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
-1. 개발자 도구를 시작하고 을(를) 선택합니다. **네트워크** 탭. 을(를) 클릭합니다. **로그 유지** 옵션을 선택합니다.
+1. 개발자 도구를 시작하고 다음을 선택합니다. **네트워크** 탭. 다음을 클릭합니다. **로그 유지** 옵션을 선택한 다음 콘솔을 지웁니다.
 
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-1. 클릭 **만들기** 에서 **페이지 만들기** 실제로 워크플로우를 만드는 마법사입니다.
-1. 결과 POST 작업을 마우스 오른쪽 단추로 클릭하고 를 선택합니다 **복사** -> **cURL로 복사**.
+1. 클릭 **만들기** 다음에서 **페이지 만들기** 실제로 워크플로를 만드는 마법사.
+1. 결과 POST 작업을 마우스 오른쪽 버튼으로 클릭하고 다음을 선택합니다. **복사** -> **cURL로 복사**.
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. 텍스트 편집기에 cURL 명령을 복사하고 명령에서 모든 헤더를 제거합니다. 이 명령은 `-H` (아래 이미지에서 파란색으로 강조 표시됨) 및 다음과 같은 적절한 인증 매개 변수를 추가합니다. `-u <user>:<password>`.
+1. cURL 명령을 텍스트 편집기에 복사하고 명령에서 시작하는 모든 헤더를 제거합니다. `-H` (아래 이미지에서 파란색으로 강조 표시됨) 및 과 같은 적절한 인증 매개 변수를 추가합니다. `-u <user>:<password>`.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
-1. 명령줄에서 cURL 명령을 실행하고 응답을 확인합니다.
+1. 명령줄을 통해 cURL 명령을 실행하고 응답을 확인합니다.
 
    ![chlimage_1-70](assets/chlimage_1-70a.png)
 
-## 일반적인 작동 AEM cURL 명령 {#common-operational-aem-curl-commands}
+## 일반적인 운영 AEM cURL 명령 {#common-operational-aem-curl-commands}
 
-다음은 일반적인 관리 및 작업 작업을 위한 AEM cURL 명령 목록입니다.
+다음은 일반적인 관리 및 운영 작업에 대한 AEM cURL 명령 목록입니다.
 
 >[!NOTE]
 >
->다음 예에서는 AEM이 실행 중이라고 가정합니다. `localhost` 포트 `4502` 및 은 사용자를 사용합니다 `admin` 암호 `admin`. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
+>다음 예에서는 AEM이에서 실행 중이라고 가정합니다. `localhost` 포트 내 `4502` 및 사용자를 사용합니다 `admin` 암호 포함 `admin`. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
 
 ### 패키지 관리 {#package-management}
 
@@ -98,13 +98,13 @@ curl -u <user>:<password> -X POST http://localhost:4502/crx/packmgr/service/.jso
 curl -u <user>:<password> -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycontent.zip?cmd=preview
 ```
 
-#### 패키지 컨텐츠 나열 {#list-package-content}
+#### 패키지 콘텐츠 나열 {#list-package-content}
 
 ```shell
 curl -u <user>:<password> -X POST http://localhost:4502/crx/packmgr/service/console.html/etc/packages/mycontent.zip?cmd=contents
 ```
 
-#### 패키지 작성 {#build-a-package}
+#### 패키지 빌드 {#build-a-package}
 
 ```shell
 curl -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycontent.zip?cmd=build
@@ -202,7 +202,7 @@ curl -u <user>:<password> -FaddMembers=testuser1 http://localhost:4502/home/grou
 curl -u <user>:<password> -FremoveMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
 ```
 
-#### 사용자 그룹 구성원 설정 {#set-a-user-s-group-membership}
+#### 사용자의 그룹 멤버십 설정 {#set-a-user-s-group-membership}
 
 ```shell
 curl -u <user>:<password> -Fmembership=contributor -Fmembership=testgroup http://localhost:4502/home/users/t/testuser.rw.html
@@ -222,7 +222,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 ### 백업 {#backup}
 
-자세한 내용은 [백업 및 복원](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) 자세한 내용
+다음을 참조하십시오 [백업 및 복원](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) 을 참조하십시오.
 
 ### OSGi {#osgi}
 
@@ -289,41 +289,41 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 #### 배지 할당 및 취소 {#assign-and-revoke-badges}
 
-자세한 내용은 [커뮤니티 점수 및 배지](/help/communities/implementing-scoring.md#assign-and-revoke-badges) 자세한 내용
+다음을 참조하십시오 [커뮤니티 점수 및 배지](/help/communities/implementing-scoring.md#assign-and-revoke-badges) 을 참조하십시오.
 
-자세한 내용은 [점수 책정 및 배지 핵심 사항](/help/communities/configure-scoring.md#example-setup) 자세한 내용
+다음을 참조하십시오 [채점 및 배지 핵심 사항](/help/communities/configure-scoring.md#example-setup) 을 참조하십시오.
 
-#### MSRP 재인덱싱 {#msrp-reindexing}
+#### MSRP 리인덱싱 {#msrp-reindexing}
 
-자세한 내용은 [MSRP - MongoDB 저장소 리소스 공급자](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) 자세한 내용
+다음을 참조하십시오 [MSRP - MongoDB 저장소 리소스 공급자](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) 을 참조하십시오.
 
 ### 보안 {#security}
 
 #### CRX DE Lite 활성화 및 비활성화 {#enabling-and-disabling-crx-de-lite}
 
-자세한 내용은 [AEM에서 CRXDE Lite 활성화](/help/sites-administering/enabling-crxde-lite.md) 자세한 내용
+다음을 참조하십시오 [AEM에서 CRXDE Lite 활성화](/help/sites-administering/enabling-crxde-lite.md) 을 참조하십시오.
 
 ### 데이터 저장소 가비지 컬렉션 {#data-store-garbage-collection}
 
-자세한 내용은 [데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) 자세한 내용
+다음을 참조하십시오 [데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) 을 참조하십시오.
 
-### Analytics 및 Target 통합 {#analytics-and-target-integration}
+### Analytics와 Target 통합 {#analytics-and-target-integration}
 
-자세한 내용은 [Adobe Analytics 및 Adobe Target 선택](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) 자세한 내용
+다음을 참조하십시오 [Adobe Analytics 및 Adobe Target 선택](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) 을 참조하십시오.
 
 ### 단일 사인온 {#single-sign-on}
 
 #### 테스트 헤더 보내기 {#send-test-header}
 
-자세한 내용은 [단일 사인온](/help/sites-deploying/single-sign-on.md) 자세한 내용
+다음을 참조하십시오 [단일 사인온](/help/sites-deploying/single-sign-on.md) 을 참조하십시오.
 
-## 일반적인 컨텐츠 조작 AEM cURL 명령 {#common-content-manipulation-aem-curl-commands}
+## 일반 컨텐츠 조작 AEM cURL 명령 {#common-content-manipulation-aem-curl-commands}
 
 다음은 컨텐츠 조작을 위한 AEM cURL 명령 목록입니다.
 
 >[!NOTE]
 >
->다음 예에서는 AEM이 실행 중이라고 가정합니다. `localhost` 포트 `4502` 및 은 사용자를 사용합니다 `admin` 암호 `admin`. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
+>다음 예에서는 AEM이에서 실행 중이라고 가정합니다. `localhost` 포트 내 `4502` 및 사용자를 사용합니다 `admin` 암호 포함 `admin`. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
 
 ### 페이지 관리 {#page-management}
 
@@ -365,9 +365,9 @@ curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination
 
 ### 워크플로 {#workflows}
 
-자세한 내용은 [프로그래밍 방식으로 워크플로우와 상호 작용](/help/sites-developing/workflows-program-interaction.md) 자세한 내용
+다음을 참조하십시오 [프로그래밍 방식으로 워크플로우와 상호 작용](/help/sites-developing/workflows-program-interaction.md) 을 참조하십시오.
 
-### Sling 컨텐츠 {#sling-content}
+### Sling 콘텐츠 {#sling-content}
 
 #### 폴더 만들기 {#create-a-folder}
 
@@ -413,4 +413,4 @@ curl -u <user>:<password> -F "*=@test.properties;type=text/plain" http://localho
 
 ### 자산 조작 {#asset-manipulation}
 
-자세한 내용은 [자산 HTTP API](/help/assets/mac-api-assets.md) 자세한 내용
+다음을 참조하십시오 [Assets HTTP API](/help/assets/mac-api-assets.md) 을 참조하십시오.

@@ -15,7 +15,7 @@ exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -46,7 +46,7 @@ HTML5 양식에는 이미지, JavaScript 및 CSS 파일과 같은 여러 외부 
 
 * 사용 [압축된 이미지](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). 양식을 렌더링하는 데 필요한 네트워크 활동 및 메모리의 양을 줄입니다. 따라서, 폼 로드 시간이 크게 줄어들게 된다.
 * AEM 구성 관리자(일별 CQ HTML 라이브러리 관리자)의 축소 옵션을 사용하여 JavaScript 및 CSS 파일을 압축합니다. 자세한 내용은 [OSGi 구성 설정](/help/sites-deploying/osgi-configuration-settings.md).
-* 웹 압축을 활성화합니다. 양식에서 시작된 요청 및 응답의 크기를 줄입니다. 자세한 내용은 [AEM Forms 서버의 성능 조정](https://helpx.adobe.com/kr/aem-forms/6-3/performance-tuning-aem-forms.html).
+* 웹 압축을 활성화합니다. 양식에서 시작된 요청 및 응답의 크기를 줄입니다. 자세한 내용은 [AEM Forms 서버의 성능 조정](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## 관심 영역 유지, 필수 필드만 표시  {#keep-the-interest-alive-show-only-required-fields}
 
@@ -77,7 +77,7 @@ Adobe Experience Manager(AEM) forms를 사용하면 복잡한 트랜잭션을 �
 * [콘텐츠 작성 모범 사례](/help/sites-authoring/best-practices.md)
 * [AEM 관리에 대한 우수 사례](/help/sites-administering/administer-best-practices.md)
 * [솔루션 개발을 위한 모범 사례](/help/sites-developing/best-practices.md)
-* [적응형 양식 작업을 위한 우수 사례](/help/forms/using/adaptive-forms-best-practices.md)
+* [적응형 양식 작업 모범 사례](/help/forms/using/adaptive-forms-best-practices.md)
 * [AEM Forms 서버는 동적 PDF 양식에 글꼴을 포함하지 않습니다](https://helpx.adobe.com/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
 
 ## 빠른 참조 카드 {#quick-reference-card}

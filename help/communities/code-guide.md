@@ -21,24 +21,24 @@ ht-degree: 0%
 
 ## 지침, 팁 및 요령 {#guidelines-tips-and-tricks}
 
-AEM Communities과 함께 작업하는 것은 비즈니스 논리, 스타일 및 페이지 컨텐츠가 서로 구별되는 템플릿 스크립팅 언어를 선택할 때 유연성에 따라 Java Server 페이지에 크게 의존하지 않게 발전했습니다.
+AEM Communities을 사용한 작업은 Java Server Pages에 크게 의존하는 방식에서 비즈니스 논리, 스타일 및 페이지 콘텐츠가 서로 구별되는 템플릿 스크립팅 언어를 선택할 수 있는 유연성으로 발전해 왔습니다.
 
-UGC(사용자 생성 컨텐츠)를 사용할 때 보다 유연하게 작업할 수 있는 것은 SocialResourceProvider API를 통해 제공되는 유연성이며, 이를 통해 알아야 할 필요가 없습니다 [SRP](srp.md) 배포에 대해 옵션이 선택되었습니다.
+UGC(사용자 생성 컨텐츠)를 사용하여 보다 유연하게 작업할 수 있으려면 SocialResourceProvider API를 통해 다음 사항에 대한 인식이 필요하지 않습니다. [SRP](srp.md) 배포에 대한 옵션이 선택되었습니다.
 
-다음은 AEM Communities 개발자를 위한 다양한 코딩 지침 및 우수 사례입니다.
+다음은 AEM Communities 개발자를 위한 다양한 코딩 지침 및 모범 사례입니다.
 
 ### 코드 {#code}
 
-* [SRP를 사용하여 UGC 액세스](accessing-ugc-with-srp.md) - JSRP(JCR)에 UGC를 저장할 때만 작동하는 애플리케이션을 작성하지 않는 방법입니다.
-* [SocialUtils 리팩터링](socialutils.md) - SocialUtils를 대체하는 SRP에 대한 유틸리티 메서드입니다.
-* [이름 지정 규칙](naming-conventions.md) - 사용자 지정 Java 클래스에 대한 이름 지정 규칙.
+* [SRP를 사용하여 UGC에 액세스](accessing-ugc-with-srp.md) - UGC가 JCR(JSRP)에 저장된 경우에만 작동하는 애플리케이션을 작성하지 않는 방법.
+* [SocialUtils 리팩터링](socialutils.md) - SocialUtils를 대체하는 SRP의 유틸리티 메서드.
+* [이름 지정 규칙](naming-conventions.md) - 사용자 지정 Java 클래스에 대한 이름 지정 규칙입니다.
 
 ### 스크립트 {#scripts}
 
-* [커뮤니티 구성 요소 테스트하기](sideloading.md) - 페이지가 로드된 후 구성 요소를 동적으로 추가하는 방법.
-* [리치 텍스트 편집기 핵심 사항](rte.md) - 컨텐츠 게시를 위해 구성원에게 제공된 리치 텍스트 UI를 사용자 지정하는 방법.
+* [Communities 구성 요소 사이드로드](sideloading.md) - 페이지가 로드된 후 구성 요소를 동적으로 추가하는 방법
+* [리치 텍스트 편집기 핵심 사항](rte.md) - 콘텐츠를 게시하기 위해 구성원에게 제공되는 서식 있는 텍스트 UI를 사용자 지정하는 방법.
 
 ### IDE {#ide}
 
-* [커뮤니티에 Maven 사용](maven.md) - Communities API jar를 포함하는 방법.
-* [SocialUtils 리팩터링](socialutils.md) - SocialUtils를 대체하는 SRP에 대한 유틸리티 메서드입니다.
+* [Maven for Communities 사용](maven.md) - Communities API jar를 포함하는 방법
+* [SocialUtils 리팩터링](socialutils.md) - SocialUtils를 대체하는 SRP의 유틸리티 메서드.

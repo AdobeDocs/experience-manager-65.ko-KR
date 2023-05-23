@@ -1,5 +1,5 @@
 ---
-title: 컨텐츠 조각 모델 만들기 헤드리스 빠른 시작 안내서
+title: 콘텐츠 조각 모델 만들기 Headless 빠른 시작 안내서
 description: 콘텐츠 조각 모델을 사용하여 AEM의 Headless 기능으로 만들고 제공할 콘텐츠의 구조를 정의합니다.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
@@ -9,7 +9,7 @@ ht-degree: 93%
 
 ---
 
-# 컨텐츠 조각 모델 만들기 헤드리스 빠른 시작 안내서 {#creating-content-fragment-models}
+# 콘텐츠 조각 모델 만들기 Headless 빠른 시작 안내서 {#creating-content-fragment-models}
 
 콘텐츠 조각 모델을 사용하여 AEM의 Headless 기능으로 만들고 제공할 콘텐츠의 구조를 정의합니다.
 
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 정보 설계자는 새 모델이 필요할 때 가끔씩만 콘텐츠 조각 모델을 만듭니다. 이 시작 안내서에서는 모델을 하나만 만들면 됩니다.
 
-1. AEM에 로그인하고 기본 메뉴에서 를 선택합니다 **도구 -> 자산 -> 컨텐츠 조각 모델**.
+1. AEM에 로그인하고 메인 메뉴에서 를 선택합니다. **도구 -> 에셋 -> 콘텐츠 조각 모델**.
 1. 구성을 생성하여 만들어진 폴더를 탭하거나 클릭합니다.
 
    ![모델 폴더](assets/models-folder.png)

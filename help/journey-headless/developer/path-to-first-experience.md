@@ -44,7 +44,7 @@ AEM Headless 번역 여정의 이전 문서인 [AEM Headless 시작하기](getti
 
 첫 번째 AEM Headless 프로젝트를 시작하려면 모든 채널에서 수행할 개인화와 업데이트를 지원하는 콘텐츠 모델이 있는지 확인해야 합니다.
 
-AEM과 별도로, AEM에 대한 API 호출에 대해 클라이언트를 테스트할 수 있도록 클라이언트측 애플리케이션을 빌드하는 경우 적절한 개발 환경이 설정되었는지 확인해야 합니다.
+AEM과 별도로, AEM에 대한 API 호출에 대해 클라이언트를 테스트할 수 있도록 클라이언트측 애플리케이션을 빌드하는 경우 적절한 개발 환경을 설정하도록 하려는 경우도 있습니다.
 
 ### 콘텐츠 조각 모델 및 API 정의 {#defining-models}
 
@@ -143,11 +143,11 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 다음 문서인 [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](model-your-content.md)을 검토하여 Headless 개발 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
-* [AEM Sites용 헤드리스 개발](/help/sites-developing/headless/introduction.md) - 필요한 기능을 갖춘 AEM Headless 개발자를 안내하는 빠른 소개
+* [AEM Sites용 헤드리스 개발](/help/sites-developing/headless/introduction.md) - AEM Headless 개발자에게 필요한 기능을 간단히 소개합니다
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 튜토리얼을 사용하여 AEM을 통해 콘텐츠를 Headless 엔드포인트를 게재하는 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택합니다.
 * [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. AdobeID를 통한 인증이 필수입니다.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM의 GraphQL API를 강조 표시하는 예제 애플리케이션이 포함됩니다.
-* [헤드리스 시작 안내서](/help/sites-developing/headless/introduction.md#getting-started) - AEM에 대해 이미 잘 알고 있는 사용자를 위한 AEM 헤드리스 기능에 대한 빠른 소개입니다.
+* [Headless 시작 안내서](/help/sites-developing/headless/introduction.md#getting-started) - AEM에 대해 이미 알고 있는 사용자를 위한 AEM Headless 기능을 간략하게 소개합니다.
 * [콘텐츠 조각 모델 만들기](/help/assets/content-fragments/content-fragments-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서
 * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments.md) - 콘텐츠 조각에 대한 기술 설명서
 * [GraphQL로 콘텐츠 쿼리](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - GraphQL API에 대한 기술 설명서

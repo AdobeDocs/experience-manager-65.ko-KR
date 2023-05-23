@@ -1,5 +1,5 @@
 ---
-title: 라이브 카피 생성 및 동기화
+title: Live Copy 생성 및 동기화
 description: 라이브 카피를 만들고 동기화하는 방법을 알아봅니다.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
@@ -10,7 +10,7 @@ ht-degree: 47%
 
 ---
 
-# 라이브 카피 생성 및 동기화{#creating-and-synchronizing-live-copies}
+# Live Copy 생성 및 동기화{#creating-and-synchronizing-live-copies}
 
 페이지 또는 블루프린트 구성으로 라이브 카피를 만든 다음 상속 및 동기화를 관리할 수 있습니다.
 
@@ -589,7 +589,7 @@ Live Copy 내용을 변경하려면 다음을 수행할 수 있습니다.
 
 1. 두 페이지(Live Copy 및 블루프린트)가 나란히 열립니다.
 
-   이 기능의 사용에 대한 자세한 내용은 [페이지 비교](/help/sites-authoring/page-diff.md)를 참조하십시오.
+   이 기능 사용에 대한 전체 정보는 다음을 참조하십시오. [페이지 비교](/help/sites-authoring/page-diff.md).
 
 ## 라이브 카피 분리 {#detaching-a-live-copy}
 

@@ -1,7 +1,7 @@
 ---
 title: 클라우드 구성
 seo-title: Cloud Configuration
-description: AEM(Adobe Experience Manager)은 클라우드 구성에 온디맨드 앱을 연결하면 양방향 링크를 설정하여 Mobile On-Demand 호스팅 프로젝트와 직접 통신할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
+description: 온디맨드 앱을 클라우드 구성에 연결하면 Adobe Experience Manager(AEM)가 양방향 링크를 설정하여 Mobile On-Demand 호스팅 프로젝트와 직접 통신할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
 seo-description: Associating an On-Demand App to a Cloud Configuration allows Adobe Experience Manager (AEM) to communicate directly with a Mobile On-Demand hosted project by establishing a two way link. Follow this page to learn more.
 uuid: f377f2af-864b-43df-9d42-4a5fd6cd70d5
 contentOwner: User
@@ -21,23 +21,23 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-AEM(Adobe Experience Manager)은 클라우드 구성에 온디맨드 앱을 연결하면 양방향 링크를 설정하여 Mobile On-Demand 호스팅 프로젝트와 직접 통신할 수 있습니다. 앱을 Mobile On-Demand 프로젝트에 연결하면 AEM 내에서 문서, 배너 및 컬렉션과 같은 콘텐츠 만들기를 수행할 수 있을 뿐만 아니라, 해당 콘텐츠를 Mobile On-Demand에 제공할 수도 있습니다.
+온디맨드 앱을 클라우드 구성에 연결하면 Adobe Experience Manager(AEM)가 양방향 링크를 설정하여 Mobile On-Demand 호스팅 프로젝트와 직접 통신할 수 있습니다. 앱을 Mobile On-Demand 프로젝트에 연결하면 AEM 내에서 문서, 배너 및 컬렉션과 같은 콘텐츠 작성을 수행할 수 있지만 해당 콘텐츠를 Mobile On-Demand에 제공할 수도 있습니다.
 
-여기에서 컨텐츠를 게시, 미리 보기 및 관리할 수 있습니다. 기존 Mobile On-Demand 컨텐츠를 AEM으로 가져와 컨텐츠 편집을 수행할 수도 있습니다.
+거기서부터 콘텐츠 게시, 미리보기, 관리 등이 가능해진다. 기존 Mobile On-Demand 콘텐츠를 AEM으로 가져오고 콘텐츠 편집을 수행할 수도 있습니다.
 
 ## 클라우드 구성 설정 {#setting-up-cloud-configuration}
 
 >[!CAUTION]
 >
->온디맨드 앱에 대한 클라우드 구성 구성을 시작하기 전에 AEM Mobile Provisioning 및 AEM Mobile On-demand Services Client 구성에 익숙해야 합니다.
+>온디맨드 앱에 대한 클라우드 구성 구성을 시작하기 전에 AEM Mobile 프로비저닝 및 AEM Mobile On-demand Services 클라이언트 구성에 익숙해야 합니다.
 >
->자세한 내용은 [AEM Mobile On-demand Services 설정](/help/mobile/aem-mobile-setup.md) 관리 섹션에 있습니다.
+>자세한 내용은 [AEM Mobile On-demand Services 설정](/help/mobile/aem-mobile-setup.md) 을 참조하십시오.
 
-Mobile On-Demand Cloud Services을 구성하려면 오른쪽 상단 모서리에서 상단 톱니바퀴를 클릭합니다. **연결 관리** 앱 대시보드에서 타일을 만들 수 있습니다.
+Mobile On-Demand Cloud Services을 구성하려면 **연결 관리** 앱 대시보드에서 타일을 지정합니다.
 
-앱 대시보드와 사용 가능한 타일에 익숙해야 합니다. 자세한 내용은 [AEM Mobile 애플리케이션 대시보드](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 자세한 내용
+앱 대시보드 및 사용 가능한 타일에 익숙해야 합니다. 다음을 참조하십시오 [AEM Mobile 애플리케이션 대시보드](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 을 참조하십시오.
 
 ### 클라우드 구성에 대한 링크 설정 {#setting-up-link-to-cloud-configuration}
 
@@ -45,26 +45,26 @@ Mobile On-Demand Cloud Services을 구성하려면 오른쪽 상단 모서리에
 >
 >기존 온디맨드 클라이언트 및 클라우드 구성이 있는지 확인합니다.
 >
->자세한 내용은 [AEM Mobile On-demand Services 설정](/help/mobile/aem-mobile-setup.md) 관리 섹션에 있습니다.
+>자세한 내용은 [AEM Mobile On-demand Services 설정](/help/mobile/aem-mobile-setup.md) 을 참조하십시오.
 
-다음 단계는 클라우드 구성에 대한 링크를 설정하는 방법에 대해 설명합니다.
+다음 단계에서는 클라우드 구성 링크 설정에 대해 설명합니다.
 
-1. From **모바일**, 선택 **앱** 그런 다음 카탈로그에서 Mobile On-Demand 앱을 사용할 수 있습니다.
-1. 에서 톱니바퀴 아이콘을 클릭합니다 **연결 관리** 타일.
+1. 출처: **모바일**, 선택 **앱** 그런 다음 카탈로그에서 Mobile On-Demand 앱을 실행합니다.
+1. 에서 톱니바퀴 아이콘을 클릭합니다. **연결 관리** 타일.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. 기존 구성을 입력하거나 **구성 제목**, **장치 Id**, 및 **장치 토큰**.
+1. 기존 구성을 입력하거나 **구성 제목**, **장치 ID**, 및 **장치 토큰**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. 한 번 **장치 Id** 및 **장치 토큰** 확인되면 목록에서 온디맨드 프로젝트를 선택합니다.
+1. 한 번 **장치 ID** 및 **장치 토큰** 이(가) 확인되면 목록에서 온디맨드 프로젝트를 선택합니다.
 
    클릭 **제출**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   다음 **연결 관리** 타일에 클라우드 구성이 표시됩니다.
+   다음 **연결 관리** 타일은 클라우드 구성을 보여 줍니다.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -76,11 +76,11 @@ Mobile On-Demand Cloud Services을 구성하려면 오른쪽 상단 모서리에
 
 ### 다음 단계 {#the-next-steps}
 
-앱에 대한 클라우드 구성을 구성했으면 콘텐츠 관리에 대한 다음 리소스를 참조하십시오.
+앱에 대한 클라우드 구성을 구성한 후에는 콘텐츠 관리를 위한 다음 리소스를 참조하십시오.
 
 * [문서 관리](/help/mobile/mobile-on-demand-managing-articles.md)
 * [배너 관리](/help/mobile/mobile-on-demand-managing-banners.md)
 * [컬렉션 관리](/help/mobile/mobile-on-demand-managing-collections.md)
 * [공유 리소스 업로드](/help/mobile/mobile-on-demand-shared-resources.md)
-* [컨텐츠 게시/게시 취소](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
-* [프리플라이트 사용 미리 보기](/help/mobile/aem-mobile-manage-ondemand-services.md)
+* [콘텐츠 게시/게시 취소](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Preflight로 미리 보기](/help/mobile/aem-mobile-manage-ondemand-services.md)

@@ -153,7 +153,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 승인 가능한 React 구성 요소가 생성되면 애플리케이션 전체에서 사용할 수 있습니다.
 
-WKND SPA 프로젝트에서 텍스트를 추가해야 하는 예제 페이지를 예로 들어 보겠습니다. 이 예제에서는 &quot;Hello World!&quot; 텍스트를 표시하려고 합니다. on `/content/wknd-spa-react/us/en/home.html`.
+WKND SPA 프로젝트에서 텍스트를 추가해야 하는 예제 페이지를 예로 들어 보겠습니다. 이 예제에서는 &quot;Hello World!&quot; 텍스트를 표시하려고 합니다. 켜짐 `/content/wknd-spa-react/us/en/home.html`.
 
 1. 표시할 노드의 경로를 결정합니다.
 

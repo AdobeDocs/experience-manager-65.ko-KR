@@ -1,6 +1,6 @@
 ---
 title: 콘텐츠 조각 모델
-description: 컨텐츠 조각 모델 이 AEM에서 헤드리스 컨텐츠의 기초로서 사용되는 방법과 구조화된 컨텐츠로 컨텐츠 조각을 생성하는 방법을 알아봅니다.
+description: 콘텐츠 조각 모델이 AEM에서 Headless 콘텐츠의 기반 역할을 하는 방법과 구조화된 콘텐츠로 콘텐츠 조각을 만드는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 # 콘텐츠 조각 모델 {#content-fragment-models}
 
-AEM의 컨텐츠 조각 모델은 컨텐츠 구조를 정의합니다 [컨텐츠 조각,](/help/assets/content-fragments/content-fragments.md) 헤드리스 컨텐츠의 기초 역할을 합니다.
+AEM의 콘텐츠 조각 모델은 의 콘텐츠 구조를 정의합니다. [콘텐츠 조각,](/help/assets/content-fragments/content-fragments.md) headless 콘텐츠의 기반 역할을 합니다.
 
 콘텐츠 조각 모델을 사용하려면 다음 작업을 수행하십시오.
 

@@ -1,5 +1,5 @@
 ---
-title: 편집자
+title: 편집기
 seo-title: Editor
 description: 클래식 UI 편집기로 다시 전환하는 방법에 대해 알아봅니다.
 seo-description: Learn how to switch back to the Classic UI Editor.
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 ---
 
-# 편집자{#editor}
+# 편집기{#editor}
 
 편집기에서 클래식 UI로 전환하는 기능이 기본적으로 비활성화되었습니다.
 

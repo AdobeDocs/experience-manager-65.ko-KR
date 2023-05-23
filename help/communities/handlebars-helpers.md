@@ -1,7 +1,7 @@
 ---
-title: SCF Handlebars Helpers
+title: SCF Handlebars 도우미
 seo-title: SCF Handlebars Helpers
-description: Handlebars 도우미 메서드를 사용하여 SCF와 작업할 수 있습니다
+description: SCF와 작업할 수 있도록 Handlebars 도우미 메서드
 seo-description: Handlebars Helper methods to facilitate work with SCF
 uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
@@ -17,33 +17,33 @@ ht-degree: 2%
 
 ---
 
-# SCF Handlebars Helpers {#scf-handlebars-helpers}
+# SCF Handlebars 도우미 {#scf-handlebars-helpers}
 
-| **[⇐ 기능 핵심 사항](essentials.md)** | **[서버 측 사용자 지정 ⇒](server-customize.md)** |
+| **[⇐ 기능 기본 사항](essentials.md)** | **[서버측 사용자 지정 ⇒](server-customize.md)** |
 |---|---|
 |  | **[클라이언트측 사용자 지정 ⇒](client-customize.md)** |
 
-Handlebars Helper(helper)는 SCF 구성 요소 작업을 용이하게 하기 위해 Handlebars 스크립트에서 호출할 수 있는 메서드입니다.
+Handlebars 도우미(도우미)는 SCF 구성 요소로 작업할 수 있도록 Handlebars 스크립트에서 호출할 수 있는 메서드입니다.
 
-구현에는 클라이언트측 및 서버측 정의가 포함됩니다. 개발자가 사용자 지정 helper를 만들 수도 있습니다.
+구현에는 클라이언트측과 서버측 정의가 포함됩니다. 개발자가 사용자 정의 도우미를 만드는 것도 가능합니다.
 
-AEM Communities과 함께 제공되는 사용자 지정 SCF 도움말은 [클라이언트 라이브러리](../../help/sites-developing/clientlibs.md):
+AEM Communities과 함께 제공되는 사용자 지정 SCF 도우미는 [클라이언트 라이브러리](../../help/sites-developing/clientlibs.md):
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
->를 반드시 설치하십시오 [최신 커뮤니티 기능 팩](deploy-communities.md#latestfeaturepack).
+>다음을 설치하십시오. [최신 Communities 기능 팩](deploy-communities.md#latestfeaturepack).
 
-## 생략 {#abbreviate}
+## 약어 {#abbreviate}
 
-maxWords 및 maxLength 속성을 따르는 약식 문자열을 반환하는 도우미.
+maxWords 및 maxLength 속성을 따르는 축약된 문자열을 반환하는 도우미입니다.
 
-축약할 문자열은 컨텍스트로 제공됩니다. 제공된 컨텍스트가 없으면 빈 문자열이 반환됩니다.
+축약할 문자열이 컨텍스트로 제공됩니다. 제공된 컨텍스트가 없으면 빈 문자열이 반환됩니다.
 
-먼저 컨텍스트를 maxLength로 트리밍한 다음 컨텍스트를 단어로 잘라서 maxWords로 줄입니다.
+먼저 컨텍스트를 maxLength로 트림한 다음 컨텍스트를 단어로 잘라내고 maxWords로 줄입니다.
 
-safeString을 true로 설정하면 반환된 문자열이 SafeString입니다.
+safeString이 true로 설정되면 반환되는 문자열은 SafeString입니다.
 
 ### 매개변수 {#parameters}
 
@@ -61,7 +61,7 @@ safeString을 true로 설정하면 반환된 문자열이 SafeString입니다.
 
 * **safeString**: 부울
 
-   (선택 사항) true이면 Handlebars.SafeString() 을 반환합니다. 기본값은 false입니다.
+   (선택 사항) true인 경우 Handlebars.SafeString()을 반환합니다. 기본값은 false입니다.
 
 ### 예 {#examples}
 
@@ -89,9 +89,9 @@ Then abbreviate would return
 */
 ```
 
-## 컨텐츠 로드 자세히 {#content-loadmore}
+## Content-loadmore {#content-loadmore}
 
-두 개의 범위를 div 아래에 추가하는 도우미가, 전체 텍스트에 대해 하나씩, 덜 사용되는 텍스트에 대해 하나씩, 두 보기 간에 전환할 수 있습니다.
+두 보기 사이를 전환할 수 있는 기능을 사용하여 div 아래에 두 개의 범위를 추가하는 도우미. 하나는 전체 텍스트에, 다른 하나는 덜 텍스트에.
 
 ### 매개변수 {#parameters-1}
 
@@ -103,17 +103,17 @@ Then abbreviate would return
 
    (선택 사항) 전체 텍스트를 표시하지 않을 때 표시할 문자 수입니다. 기본값은 100입니다.
 
-* **moreText**: 문자열
+* **추가 텍스트**: 문자열
 
-   (선택 사항) 표시할 텍스트가 더 있음을 나타내는 텍스트입니다. 기본값은 &quot;자세히&quot;입니다.
+   (선택 사항) 표시할 텍스트가 더 있음을 나타내는 표시할 텍스트입니다. 기본값은 &quot;more&quot;입니다.
 
 * **줄임표 텍스트**: 문자열
 
-   (선택 사항) 숨겨진 텍스트가 있음을 나타내는 텍스트입니다. 기본값은 &quot;...&quot;입니다.
+   (선택 사항) 숨겨진 텍스트를 나타내는 표시할 텍스트입니다. 기본값은 &quot;...&quot;입니다.
 
 * **safeString**: 부울
 
-   (선택 사항) 결과를 반환하기 전에 Handlebars.SafeString()을 적용할지 여부를 나타내는 부울 값입니다. 기본값은 false입니다.
+   (선택 사항) 결과를 반환하기 전에 Handlebars.SafeString() 적용 여부를 나타내는 부울 값. 기본값은 false입니다.
 
 ### 예 {#example}
 
@@ -131,17 +131,17 @@ Then content-loadmore would return
 
 ## DateUtil {#dateutil}
 
-형식이 지정된 날짜 문자열을 반환하는 도우미.
+형식이 지정된 날짜 문자열을 반환하는 도우미입니다.
 
 ### 매개변수 {#parameters-2}
 
 * **컨텍스트**: 숫자
 
-   (선택 사항) 1970년 1월 1일부터 오프셋(epoch)인 밀리초 값입니다. 기본값은 현재 날짜입니다.
+   (선택 사항) 1970년 1월 1일부터 오프셋된 밀리초 값(epoch). 기본값은 현재 날짜입니다.
 
-* **포맷**: 문자열
+* **형식**: 문자열
 
-   (선택 사항) 적용할 날짜 형식입니다. 기본값은 &quot;YYYY-MM-DDHH입니다.:mm:s.sssZ&quot;로 표시되고 결과는 &quot;2015-03-18T18&quot;으로 표시됩니다:17:13-07:00&quot;
+   (선택 사항) 적용할 날짜 형식입니다. 기본값은 &quot;YYYY-MM-DDTHH&quot;입니다.:mm:ss.sssZ와 결과는 &quot;2015-03-18T18로 표시됩니다:17:13-07:00형
 
 ### 예 {#examples-1}
 
@@ -159,7 +159,7 @@ Then content-loadmore would return
 
 ## 다음과 같음 {#equals}
 
-같음 조건자에 따라 콘텐츠를 반환하는 도우미.
+같음 조건에 따라 콘텐츠를 반환할 도우미.
 
 ### 매개변수 {#parameters-3}
 
@@ -169,7 +169,7 @@ Then content-loadmore would return
 
 * **rvalue**: 문자열
 
-   비교할 오른쪽 값입니다.
+   비교할 오른쪽 값.
 
 ### 예 {#example-1}
 
@@ -181,19 +181,19 @@ Then content-loadmore would return
 {{/equals}}
 ```
 
-## If-wcm-mode {#if-wcm-mode}
+## If-wcm 모드 {#if-wcm-mode}
 
-의 현재 값을 테스트하는 블록 도우미 [WCM 모드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) 문자열로 구분된 모드 목록을 표시합니다.
+의 현재 값을 테스트하는 블록 도우미 [WCM 모드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) 문자열로 구분된 모드 목록.
 
 ### 매개변수 {#parameters-4}
 
 * **컨텍스트**: 문자열
 
-   (선택 사항) 번역할 문자열입니다. 기본값이 제공되지 않을 경우 필수입니다.
+   (선택 사항) 번역할 문자열입니다. 기본값이 제공되지 않은 경우 필수입니다.
 
 * **모드**: 문자열
 
-   (선택 사항) 쉼표로 구분된 목록 [WCM 모드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) 를 입력하여 가 설정되었는지 확인합니다.
+   (선택 사항) 쉼표로 구분된 목록 [WCM 모드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) 을 클릭하여 테스트를 수행합니다.
 
 ### 예 {#example-2}
 
@@ -207,23 +207,23 @@ Then content-loadmore would return
 
 ## i18n {#i-n}
 
-이 도우미는 Handlebars 도우미 &#39;i18n&#39;을 무시합니다.
+이 헬퍼는 Handlebars 도우미 &#39;i18n&#39;을 재정의합니다.
 
-참조 - [JavaScript 코드에서 문자열 다국어화](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
+참조: [JavaScript 코드의 문자열 다국어화](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
 
 ### 매개변수 {#parameters-5}
 
 * **컨텍스트**: 문자열
 
-   (선택 사항) 번역할 문자열입니다. 기본값이 제공되지 않을 경우 필수입니다.
+   (선택 사항) 번역할 문자열입니다. 기본값이 제공되지 않은 경우 필수입니다.
 
-* **기본**: 문자열
+* **기본값**: 문자열
 
-   (선택 사항) 번역할 기본 문자열입니다. 제공된 컨텍스트가 없는 경우 필요합니다.
+   (선택 사항) 번역할 기본 문자열입니다. 제공된 컨텍스트가 없는 경우 필수입니다.
 
 * **댓글**: 문자열
 
-   (선택 사항) 번역 힌트입니다
+   (선택 사항) 번역 힌트
 
 ### 예 {#example-3}
 
@@ -234,23 +234,23 @@ Then content-loadmore would return
 
 ## 포함 {#include}
 
-템플릿에 구성 요소를 존재하지 않는 리소스로 포함할 도우미.
+구성 요소를 템플릿에 존재하지 않는 리소스로 포함하는 도우미.
 
-이를 통해 JCR 노드로 추가된 리소스에 대해 가능한 것보다 프로그래밍 방식으로 리소스를 사용자 지정할 수 있습니다. 자세한 내용은 [커뮤니티 구성 요소 추가 또는 포함](scf.md#add-or-include-a-communities-component).
+이렇게 하면 JCR 노드로 추가된 리소스에 대해 가능한 것보다 쉽게 리소스를 프로그래밍 방식으로 사용자 지정할 수 있습니다. 다음을 참조하십시오 [커뮤니티 구성 요소 추가 또는 포함](scf.md#add-or-include-a-communities-component).
 
-일부 Communities 구성 요소만 포함할 수 있습니다. AEM 6.1의 경우, 포함된 항목은 다음과 같습니다 [댓글](essentials-comments.md), [등급](rating-basics.md), [검토](reviews-basics.md), 및 [투표](essentials-voting.md).
+일부 Communities 구성 요소만 포함할 수 있습니다. AEM 6.1의 경우 포함할 수 있는 것은 다음과 같습니다 [댓글](essentials-comments.md), [등급](rating-basics.md), [리뷰](reviews-basics.md), 및 [투표](essentials-voting.md).
 
-이 도우미는 서버측에서만 적절한 것으로, 와 유사한 기능을 제공합니다 [cq:include](../../help/sites-developing/taglib.md) JSP 스크립트용.
+서버측에만 적합한 이 도우미는 다음과 유사한 기능을 제공합니다. [cq:include](../../help/sites-developing/taglib.md) jsp 스크립트용
 
 ### 매개변수 {#parameters-6}
 
 * **컨텍스트**: 문자열 또는 개체
 
-   (상대 경로를 제공하지 않는 한 선택 사항입니다)
+   (상대 경로를 제공하지 않는 경우 선택 사항)
 
-   사용 `this` 를 눌러 현재 컨텍스트를 전달합니다.
+   사용 `this` 를 클릭하여 현재 컨텍스트를 전달합니다.
 
-   사용 `this.id` 에서 리소스를 가져오려면 `id` 요청된 resourceType을 렌더링하기 위해 입니다.
+   사용 `this.id` 다음 위치에 리소스를 획득하려면 `id` 요청한 resourceType 렌더링에 사용됩니다.
 
 * **resourceType**: 문자열
 
@@ -258,15 +258,15 @@ Then content-loadmore would return
 
 * **템플릿**: 문자열
 
-   구성 요소 스크립트의 경로입니다.
+   구성 요소 스크립트 경로.
 
 * **경로**: 문자열
 
-   (필수) 리소스의 경로입니다. 경로가 상대적이면 컨텍스트를 제공해야 하며, 그렇지 않으면 빈 문자열이 반환됩니다.
+   (필수) 리소스 경로입니다. 경로가 상대적인 경우 컨텍스트를 제공해야 하며, 그렇지 않으면 빈 문자열이 반환됩니다.
 
-* **authoringDisabled**: 부울
+* **작성 사용 안 함**: 부울
 
-   (선택 사항) 기본값은 false입니다. 내부용입니다.
+   (선택 사항) 기본값은 false입니다. 내부 전용입니다.
 
 ### 예 {#example-4}
 
@@ -274,31 +274,31 @@ Then content-loadmore would return
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-여기에는 새 주석 구성 요소가 포함됩니다. `this.id` + /comments.
+다음 위치에 새 주석 구성 요소가 포함됩니다. `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
-js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리를 포함하는 도우미. js 및 css와 같은 다양한 유형의 여러 포함을 위해 이 태그를 Handlebars 스크립트에서 여러 번 사용해야 합니다.
+js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리를 포함하는 도우미입니다. 다른 유형의 여러 포함(예: js 및 css)의 경우 이 태그는 Handlebars 스크립트에서 여러 번 사용해야 합니다.
 
-이 도우미는 서버측에서만 적절한 것으로, 와 유사한 기능을 제공합니다 [ui:includeClientLib](../../help/sites-developing/taglib.md) JSP 스크립트용.
+서버측에만 적합한 이 도우미는 다음과 유사한 기능을 제공합니다. [ui:includeClientLib](../../help/sites-developing/taglib.md) jsp 스크립트용
 
 ### 매개변수 {#parameters-7}
 
 * **카테고리**: 문자열
 
-   (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 및 CSS 라이브러리가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
+   (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 여기에는 해당 범주에 대한 모든 Javascript 및 CSS 라이브러리가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
 * **테마**: 문자열
 
-   (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 테마 관련 라이브러리(CSS와 JS 모두)가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
+   (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 여기에는 지정된 카테고리에 대한 모든 테마 관련 라이브러리(CSS 및 JS 모두)가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
 * **js**: 문자열
 
-   (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 라이브러리가 포함됩니다.
+   (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 여기에는 지정된 범주에 대한 모든 Javascript 라이브러리가 포함됩니다.
 
 * **css**: 문자열
 
-   (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리의 모든 CSS 라이브러리가 포함됩니다.
+   (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 여기에는 해당 카테고리의 모든 CSS 라이브러리가 포함됩니다.
 
 ### 예 {#examples-2}
 
@@ -340,9 +340,9 @@ js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라
     <link href="/etc/clientlibs/social/hbs/comments.css" rel="stylesheet" type="text/css">
 ```
 
-## 꽤 {#pretty-time}
+## 프리타임 {#pretty-time}
 
-시간 도우미에서 일정 날짜 형식이 표시되는 마감 지점까지 경과된 시간을 표시합니다.
+컷오프 시점까지 경과된 시간을 표시하는 헬퍼이며, 그 후 정규 날짜 형식이 표시됩니다.
 
 예:
 
@@ -353,11 +353,11 @@ js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라
 
 * **컨텍스트**: 숫자
 
-   과거에 &#39;지금&#39;에 비교할 시간입니다. 시간은 1970년 1월 1일(epoch)부터 오프셋된 밀리초 값으로 표시됩니다.
+   &#39;지금&#39;에 비교하기 위한 과거의 시간. 시간은 1970년 1월 1일(epoch)부터 오프셋된 밀리초의 값으로 표현된다.
 
-* **daysCutoff**: 숫자
+* **daysCut**: 숫자
 
-   실제 날짜로 전환하기 전 일 수입니다. 기본값은 60입니다.
+   실제 날짜로 전환하기 전 일 수. 기본값은 60입니다.
 
 ### 예 {#example-5}
 
@@ -377,9 +377,9 @@ Depending on how long in the past, may return
 
 ## Xss-html {#xss-html}
 
-XSS를 방지하는 데 도움이 되도록 HTML 요소 컨텐츠에 대한 소스 문자열을 인코딩하는 도우미.
+XSS를 방지하는 데 도움이 되도록 HTML 요소 컨텐츠에 대한 소스 문자열을 인코딩하는 도우미입니다.
 
-참고: 유효성 검사기가 아니며, 특성 값을 쓰는 데 사용할 수 없습니다.
+참고: 유효성 검사기가 아니므로 속성 값 작성에 사용할 수 없습니다.
 
 ### 매개변수 {#parameters-9}
 
@@ -395,9 +395,9 @@ XSS를 방지하는 데 도움이 되도록 HTML 요소 컨텐츠에 대한 소�
 
 ## Xss-htmlAttr {#xss-htmlattr}
 
-XSS를 방지하기 위해 HTML 속성 값에 쓸 소스 문자열을 인코딩하는 도우미입니다.
+XSS를 방지하기 위해 HTML 속성 값에 쓰기 위한 소스 문자열을 인코딩하는 도우미입니다.
 
-참고: 이것은 유효성 검사기가 아니며, 실행 가능한 속성(href, src, 이벤트 핸들러)을 쓰는 데 사용할 수 없습니다.
+참고: 유효성 검사기가 아니므로 실행 가능한 특성(href, src, 이벤트 핸들러)을 작성하는 데 사용할 수 없습니다.
 
 ### 매개변수 {#parameters-10}
 
@@ -413,9 +413,9 @@ XSS를 방지하기 위해 HTML 속성 값에 쓸 소스 문자열을 인코딩�
 
 ## Xss-jsString {#xss-jsstring}
 
-XSS를 방지하기 위해 JavaScript 문자열 컨텐츠에 쓸 소스 문자열을 인코딩하는 도우미.
+XSS를 방지하는 데 도움이 되도록 JavaScript 문자열 컨텐츠에 작성하기 위한 소스 문자열을 인코딩하는 도우미입니다.
 
-참고: 유효성 검사기가 아니며, 임의 JavaScript에 쓰는 데 사용할 수 없습니다.
+참고: 유효성 검사기가 아니며 임의의 JavaScript에 쓰는 데 사용할 수 없습니다.
 
 ### 매개변수 {#parameters-11}
 
@@ -431,15 +431,15 @@ var input = {{xss-jsString topic-title}}
 
 ## Xss-validHref {#xss-validhref}
 
-XSS를 방지하기 위해 HTML href 또는 srce 속성 값으로 쓸 URL을 정리하는 도우미입니다.
+XSS를 방지하기 위해 HTML href 또는 소스 속성 값으로 작성하기 위한 URL을 살균하는 도우미입니다.
 
-참고: 빈 문자열을 반환할 수 있습니다
+참고: 빈 문자열을 반환할 수 있습니다.
 
 ### 매개변수 {#parameters-12}
 
 * **컨텍스트**: 개체
 
-   가릴 URL입니다.
+   살균할 URL입니다.
 
 ### 예 {#example-9}
 
@@ -449,26 +449,26 @@ XSS를 방지하기 위해 HTML href 또는 srce 속성 값으로 쓸 URL을 정
 
 ## Handlebars.js 기본 개요 {#handlebars-js-basic-overview}
 
-* Handlebars 도우미 호출은 간단한 식별자(즉, *이름* 뒤에 0개 이상의 공백으로 구분된 매개 변수가 옵니다.
-* 매개 변수는 간단한 문자열, 숫자, 부울 또는 JSON 개체일 수 있으며, 마지막 매개 변수로서 선택적 키-값 쌍(해시 인수) 시퀀스가 있을 수 있습니다.
+* Handlebars 도우미 호출은 단순 식별자입니다(다음 식별자). *이름* 뒤에 0개 이상의 공백으로 구분된 매개 변수가 옵니다.
+* 매개 변수는 간단한 문자열, 숫자, 부울 또는 JSON 개체일 수 있으며 마지막 매개 변수로서 키-값 쌍의 선택적 시퀀스(해시 인수)일 수도 있습니다.
 * 해시 인수의 키는 단순 식별자여야 합니다.
-* 해시 인수의 값은 Handlebars 표현식입니다. 단순 식별자, 경로 또는 문자열
-* 현재 컨텍스트 `this`은 항상 Handlebars 도우미가 사용할 수 있습니다.
+* 해시 인수의 값은 단순 식별자, 경로 또는 문자열과 같은 Handlebars 표현식입니다.
+* 현재 컨텍스트, `this`는 Handlebars 도우미에서 항상 사용할 수 있습니다.
 * 컨텍스트는 문자열, 숫자, 부울 또는 JSON 데이터 개체일 수 있습니다.
-* 다음과 같이 현재 컨텍스트 내에 중첩된 개체를 컨텍스트로 전달할 수 있습니다 `this.url` 또는 `this.id` ( 단순 및 블록 도움말에 대한 다음 예제 참조).
+* 현재 컨텍스트 내에 중첩된 객체를 컨텍스트로 전달할 수 있습니다. 예: `this.url` 또는 `this.id` (단순 및 블록 도우미의 다음 예 참조)
 
-* 블록 도우미는 템플릿의 모든 위치에서 호출할 수 있는 함수입니다. 매번 다른 컨텍스트에서 템플릿 블록을 0회 이상 호출할 수 있습니다. 여기에는 다음 사이의 컨텍스트가 포함됩니다 {{#*name*}} and {{/*name*}}.
+* 블록 도우미는 템플릿의 어디에서든 호출할 수 있는 함수입니다. 매번 다른 컨텍스트로 템플릿의 블록을 0회 이상 호출할 수 있습니다. 다음 사이에 컨텍스트가 포함됩니다. {{#*name*}} and {{/*name*}}.
 
-* Handlebars는 &#39;options&#39;라는 이름의 지원자에게 최종 매개 변수를 제공합니다. 특수 개체 &#39;options&#39;에는 다음이 포함됩니다
+* Handlebars는 &#39;options&#39;라는 도우미에 최종 매개 변수를 제공합니다. &quot;options&quot; 특수 객체에는 다음이 포함됩니다
 
-   * 선택적 개인 데이터(options.data)
-   * 호출에서 선택적 키-값 속성(options.hash)
+   * 개인 데이터(선택 사항)(options.data)
+   * 호출의 선택적 키 값 속성(options.hash)
    * 자체 호출 기능(options.fn())
-   * 자체의 역수를 호출하는 기능(options.inverse())
+   * 자신의 역(options.inverse())을 호출하는 기능
 
 * 도우미에서 반환된 HTML 문자열 콘텐츠는 SafeString인 것이 좋습니다.
 
-### Handlebars.js 설명서의 간단한 도우미 예제: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
+### Handlebars.js 설명서의 간단한 도우미의 예: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
 
 ```
 Handlebars.registerHelper('link_to', function(title, options) {
@@ -488,10 +488,10 @@ var template = Handlebars.compile(source);
 template(context);
 ```
 
-이 렌더링됩니다.
+렌더링됨:
 
 &lt;ul>
-&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>포스트!&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>게시물!&lt;/a>&lt;/li>
 &lt;/ul>
 
 ### Handlebars.js 설명서의 블록 도우미의 예: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
@@ -514,19 +514,19 @@ var template = Handlebars.compile(source);
 template(data);
 ```
 
-이 렌더링됩니다.
+렌더링됨:
 &lt;ul>
 &lt;li>&lt;a href=&quot;/people/1&quot;>앨런&lt;/a>&lt;/li>
 &lt;li>&lt;a href=&quot;/people/2&quot;>예후다&lt;/a>&lt;/li>
 &lt;/ul>
 
-## 사용자 지정 SCF 도움말 {#custom-scf-helpers}
+## 사용자 지정 SCF 도우미 {#custom-scf-helpers}
 
-사용자 지정 도우미는 특히 데이터를 전달할 때 서버측뿐만 아니라 클라이언트측에도 구현해야 합니다. SCF의 경우, 서버가 페이지가 요청될 때 지정된 구성 요소에 대한 HTML을 생성하므로 대부분의 템플릿은 서버 측에서 컴파일되고 렌더링됩니다.
+특히 데이터를 전달할 때 서버측과 클라이언트측에서 사용자 정의 도우미를 구현해야 합니다. SCF의 경우, 페이지가 요청될 때 서버가 주어진 구성 요소에 대한 HTML을 생성하므로 대부분의 템플릿이 서버측에서 컴파일되고 렌더링됩니다.
 
-### 서버측 사용자 지정 도우미 {#server-side-custom-helpers}
+### 서버측 사용자 정의 도우미 {#server-side-custom-helpers}
 
-서버 측에 사용자 지정 SCF 도우미를 구현하고 등록하려면 Java 인터페이스를 구현하면 됩니다 [TemplateHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), make it [OSGi 서비스](../../help/sites-developing/the-basics.md#osgi) OSGi 번들의 일부로 설치합니다.
+서버측에서 사용자 지정 SCF 도우미를 구현하고 등록하려면 Java 인터페이스를 구현하면 됩니다 [TemplateHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), 다음 항목으로 설정 [OSGi 서비스](../../help/sites-developing/the-basics.md#osgi) OSGi 번들의 일부로 설치합니다.
 
 예:
 
@@ -568,13 +568,13 @@ public class FooTextHelper implements TemplateHelper<String>{
 
 >[!NOTE]
 >
->서버측을 위해 만들어진 도우미도 클라이언트측에 대해 만들어야 합니다.
+>서버측에서 생성된 도우미는 클라이언트측에서도 생성되어야 합니다.
 >
->구성 요소는 로그인한 사용자에 대해 클라이언트측에서 다시 렌더링되고, 클라이언트측 도우미가 없으면 구성 요소가 사라집니다.
+>로그인한 사용자에 대해 구성 요소가 클라이언트측에서 다시 렌더링되고, 클라이언트측 헬퍼를 찾을 수 없는 경우 구성 요소가 사라집니다.
 
-### 클라이언트측 사용자 지정 도우미 {#client-side-custom-helpers}
+### 클라이언트측 사용자 정의 도우미 {#client-side-custom-helpers}
 
-클라이언트측 도움말은 를 호출하여 등록된 Handlebars 스크립트입니다 `Handlebars.registerHelper()`.
+클라이언트측 헬퍼는 를 호출하여 등록된 Handlebars 스크립트입니다 `Handlebars.registerHelper()`.
 예:
 
 ### custom-helpers.js {#custom-helpers-js}
@@ -592,15 +592,15 @@ function(Handlebars, SCF, $CQ) {
 })(Handlebars, SCF, $CQ);
 ```
 
-사용자 지정 클라이언트측 도움말을 사용자 지정 클라이언트 라이브러리에 추가해야 합니다.
-clientlib은 다음 조건을 충족해야 합니다.
+사용자 지정 클라이언트 라이브러리에 사용자 지정 클라이언트측 도우미를 추가해야 합니다.
+clientlib은 다음과 같아야 합니다.
 
-* 종속성 포함 `cq.social.scf`.
+* 다음에 대한 종속성 포함 `cq.social.scf`.
 * Handlebars가 로드된 후 로드합니다.
-* Be [포함](clientlibs.md).
+* Be [포함됨](clientlibs.md).
 
 참고: SCF 도우미는 `/etc/clientlibs/social/commons/scf/helpers.js`.
 
-| **[⇐ 기능 핵심 사항](essentials.md)** | **[서버 측 사용자 지정 ⇒](server-customize.md)** |
+| **[⇐ 기능 기본 사항](essentials.md)** | **[서버측 사용자 지정 ⇒](server-customize.md)** |
 |---|---|
 |  | **[클라이언트측 사용자 지정 ⇒](client-customize.md)** |

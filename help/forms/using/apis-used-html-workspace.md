@@ -1,7 +1,7 @@
 ---
-title: AEM Forms 작업 공간에 사용되는 API
+title: AEM Forms 작업 영역에서 사용되는 API
 seo-title: APIs used in AEM Forms workspace
-description: 사용자 지정 및 자동화를 위해 노출되는 AEM Forms 작업 영역의 공개 Java 및 JavaScript API 및 메서드.
+description: 사용자 지정 및 자동화에 노출된 AEM Forms 작업 공간 LiveCycle의 공개 Java 및 JavaScript API 및 메서드입니다.
 seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
 uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
 content-type: reference
@@ -16,9 +16,9 @@ ht-degree: 1%
 
 ---
 
-# AEM Forms 작업 공간에 사용되는 API {#apis-used-in-aem-forms-workspace}
+# AEM Forms 작업 영역에서 사용되는 API {#apis-used-in-aem-forms-workspace}
 
-다음 API는 AEM Forms 작업 영역에서 사용됩니다.
+AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
 
 <table>
  <tbody>
@@ -30,27 +30,27 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>getGroups</td>
-   <td>ProcessManagementUserProxyService</td>
+   <td>프로세스 관리 사용자 프록시 서비스</td>
    <td>getGroups</td>
-   <td>그룹을 검색합니다. 지정하지 않은 경우 모든 그룹의 목록을 반환하고 지정된 이름을 가진 그룹을 반환합니다.</td>
+   <td>그룹을 검색합니다. 지정하지 않으면 모든 그룹의 목록을 반환하고, 지정하지 않으면 지정한 이름의 그룹을 반환합니다.</td>
   </tr>
   <tr>
    <td>getUsersAndGroups</td>
-   <td>ProcessManagementUserProxyService</td>
+   <td>프로세스 관리 사용자 프록시 서비스</td>
    <td>getUsersAndGroups</td>
-   <td>사용자 및 그룹을 검색합니다. 아무 것도 지정하지 않은 경우 모든 사용자 및 그룹 목록을 반환하고, 지정된 이름을 가진 사용자 및 그룹을 반환합니다.</td>
+   <td>사용자 및 그룹을 검색합니다. 지정된 내용이 없는 경우 모든 사용자 및 그룹 목록을 반환하고, 지정된 이름의 사용자 및 그룹을 반환합니다.</td>
   </tr>
   <tr>
    <td>prepareForSubmit</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>prepareForSubmit</td>
-   <td>이 호출은 DocumentSubmitServlet을 통해 양식을 제출하기 전에 호출됩니다. 실제 제출 중에 검색된 세션 변수(만료 시간 및 함께)에 작업 ID를 설정합니다.</td>
+   <td>DocumentSubmitServlet을 통해 양식을 제출하기 전에 호출됩니다. 실제 제출 중에 검색되는 세션 변수(만료 시간과 함께)에 작업 ID를 설정합니다.</td>
   </tr>
   <tr>
    <td>submitTask</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>제출</td>
-   <td>작업과 연관된 문서 객체를 제출합니다(그리고 프로세스를 차례로 제출).</td>
+   <td>작업과 연결된 문서 객체를 제출합니다(및 제출 프로세스를 차례로).</td>
   </tr>
   <tr>
    <td>getRootEndpointCategories</td>
@@ -62,25 +62,25 @@ ht-degree: 1%
    <td>getDirectChildCategories</td>
    <td>ProcessManagementStartpointService</td>
    <td>getDirectChildCategories2</td>
-   <td>카테고리의 모든 직접 하위를 가져옵니다.</td>
+   <td>카테고리에 대한 모든 직접 하위 항목을 가져옵니다.</td>
   </tr>
   <tr>
    <td>getAllStartpoints</td>
    <td>ProcessManagementStartpointService</td>
    <td>getAllStartpoints</td>
-   <td>모든 카테고리의 서버에 있는 모든 시작점을 가져옵니다.</td>
+   <td>모든 카테고리의 서버에 있는 모든 시작 지점을 가져옵니다.</td>
   </tr>
   <tr>
    <td>invokeStartpoint</td>
    <td>ProcessManagementStartpointService</td>
    <td>invokeStartpoint</td>
-   <td>이렇게 하면 시작점이 호출되고 시작점에 해당하는 새 작업이 만들어집니다</td>
+   <td>시작점을 호출하고 시작점에 해당하는 새 작업을 만듭니다.</td>
   </tr>
   <tr>
-   <td>getAllTasks</td>
+   <td>getAllTask</td>
    <td>ProcessManagementTaskService</td>
-   <td>getAllActionableTasks</td>
-   <td>이 플러그인은 로그인된 사용자를 위해 작성 및 전달, 상담, 저장, 할당, 할당 및 저장된 모든 작업을 가져옵니다.</td>
+   <td>getAllActionTasks</td>
+   <td>로그인한 사용자에 대해 생성 및 전달 또는 상담, 저장, 할당, 할당 및 저장되는 모든 작업을 가져옵니다.</td>
   </tr>
   <tr>
    <td>getTask</td>
@@ -92,40 +92,40 @@ ht-degree: 1%
    <td>renderTask</td>
    <td>ProcessManagementTaskService</td>
    <td>렌더링</td>
-   <td>이 메서드는 작업을 렌더링하고 양식 url, 양식 유형, 필요한 경우 데이터 url과 같은 양식을 렌더링하는 데 필요한 정보를 반환합니다.</td>
+   <td>작업을 렌더링하고 필요한 경우 양식 url, 양식 유형, 데이터 url 등과 같은 양식을 렌더링하는 데 필요한 정보를 반환합니다.</td>
   </tr>
   <tr>
    <td>submitWithPriorData</td>
    <td>ProcessManagementTaskService</td>
    <td>submitWithPriorData</td>
-   <td>결과 키를 사용하여 TaskManager의 제출 API 결과를 반환합니다.</td>
+   <td>결과 키를 사용하여 TaskManager의 제출 API의 결과를 반환합니다.</td>
   </tr>
   <tr>
-   <td>submitWithData</td>
+   <td>submitWithdata</td>
    <td>ProcessManagementTaskService</td>
-   <td>submitWithData</td>
-   <td>TaskManager의 제출 API를 사용하여 작업과 연결된 양식 데이터(문자열로 전달됨)를 제출합니다. TaskManager의 제출 API를 호출하지 않는 Flex 양식에 사용됩니다.</td>
+   <td>submitWithdata</td>
+   <td>이 코드는 TaskManager의 submit API를 사용하여 작업과 연결된 양식 데이터(문자열로 전달됨)를 제출합니다. 이 변수는 callTaskManager의 submit API가 아닌 flex forms에 사용됩니다.</td>
   </tr>
   <tr>
    <td>저장</td>
    <td>ProcessManagementTaskService</td>
    <td>저장</td>
-   <td>서버에 작업을 저장합니다.</td>
+   <td>서버에 작업이 저장됩니다.</td>
   </tr>
   <tr>
-   <td>complete</td>
+   <td>완료</td>
    <td>ProcessManagementTaskService</td>
-   <td>complete</td>
-   <td>작업을 완료하고 프로세스 설계에 따라 다음 단계로 작업이 전달됩니다.</td>
+   <td>완료</td>
+   <td>작업이 완료되고 프로세스 설계에 따라 다음 단계로 작업이 전달됩니다.</td>
   </tr>
   <tr>
    <td>getAttachment</td>
    <td>ProcessManagementTaskService</td>
    <td>getAttachment</td>
-   <td>첨부 파일을 사용할 수 있는 첨부 파일의 URL을 반환합니다.</td>
+   <td>첨부 파일이 있는 첨부 파일의 URL을 반환합니다.</td>
   </tr>
   <tr>
-   <td>getAllAttachments</td>
+   <td>모든 첨부 파일 가져오기</td>
    <td>ProcessManagementTaskService</td>
    <td>getAllActionableAttachments</td>
    <td>작업에 대한 모든 첨부 파일과 메모를 가져옵니다.</td>
@@ -134,7 +134,7 @@ ht-degree: 1%
    <td>공유</td>
    <td>ProcessManagementTaskService</td>
    <td>공유</td>
-   <td>다른 사용자와 작업을 공유합니다. 다른 사용자가 작업을 요청하고 작업 소유자가 될 수 있습니다.</td>
+   <td>다른 사용자와 작업을 공유합니다. 다른 사용자가 작업을 요청할 수 있으며 작업의 소유자가 됩니다.</td>
   </tr>
   <tr>
    <td>앞으로</td>
@@ -146,25 +146,25 @@ ht-degree: 1%
    <td>참조</td>
    <td>ProcessManagementTaskService</td>
    <td>참조</td>
-   <td>다른 사용자와 작업을 협의합니다.</td>
+   <td>다른 사용자와 작업을 참조합니다.</td>
   </tr>
   <tr>
-   <td>청구</td>
+   <td>클레임</td>
    <td>ProcessManagementTaskService</td>
-   <td>청구</td>
-   <td>공유 큐에서 사용할 수 있는 작업이 요청됩니다.</td>
+   <td>클레임</td>
+   <td>공유 큐에서 사용할 수 있는 작업이 필요합니다.</td>
   </tr>
   <tr>
    <td>잠금 해제</td>
    <td>ProcessManagementTaskService</td>
    <td>잠금 해제</td>
-   <td>작업이 잠금 해제됩니다.</td>
+   <td>작업의 잠금을 해제합니다.</td>
   </tr>
   <tr>
    <td>잠금</td>
    <td>ProcessManagementTaskService</td>
    <td>잠금</td>
-   <td>공유된 경우 작업을 잠금으로 설정하여 다른 사용자가 작업을 요구할 수 없습니다.</td>
+   <td>작업을 잠그고 다른 사용자가 작업을 요청할 수 없습니다(공유된 경우).</td>
   </tr>
   <tr>
    <td>거부</td>
@@ -173,82 +173,82 @@ ht-degree: 1%
    <td>작업의 이전 소유자에게 작업을 반환합니다.</td>
   </tr>
   <tr>
-   <td>포기</td>
+   <td>중단</td>
    <td>ProcessManagementTaskService</td>
-   <td>포기</td>
+   <td>중단</td>
    <td>작업이 삭제됩니다.</td>
   </tr>
   <tr>
-   <td>setVisibility</td>
+   <td>setVisible</td>
    <td>ProcessManagementTaskService</td>
-   <td>setVisibility</td>
-   <td>작업의 가시성을 설정합니다. 가시성을 false 로 설정하면 나중에 작업이 표시되지 않습니다.</td>
+   <td>setVisible</td>
+   <td>작업의 가시성을 설정합니다. 가시성이 false로 설정된 경우 나중에 사용자에게 작업이 표시되지 않습니다.</td>
   </tr>
   <tr>
    <td>getUsers</td>
-   <td>ProcessManagementUserProxyService</td>
+   <td>프로세스 관리 사용자 프록시 서비스</td>
    <td>getUsers</td>
-   <td>사용자 검색에 사용됩니다. 이름이 지정되지 않은 경우 모든 사용자가 반환되고, 지정된 이름의 사용자가 반환됩니다.</td>
+   <td>사용자 검색에 사용됩니다. 지정된 이름이 없으면 모든 사용자를 반환하고 지정된 이름의 사용자를 반환합니다.</td>
   </tr>
   <tr>
    <td>getUsersInGroup</td>
-   <td>ProcessManagementUserProxyService</td>
+   <td>프로세스 관리 사용자 프록시 서비스</td>
    <td>getUsersInGroupByName</td>
-   <td>그룹에 있는 모든 사용자를 반환합니다.</td>
+   <td>그룹의 모든 사용자를 반환합니다.</td>
   </tr>
   <tr>
    <td>grantQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>grantQueueAccess</td>
-   <td>지정된 사용자에게 로그인한 사용자의 큐에 대한 액세스 권한을 부여합니다. 기본적으로 다른 사용자와 자체 큐를 공유합니다.</td>
+   <td>로그인한 사용자의 대기열에 대한 액세스 권한을 지정된 사용자에게 부여합니다. 기본적으로 자신의 큐를 다른 사용자와 공유하고 있습니다.</td>
   </tr>
   <tr>
    <td>requestQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>requestQueueAccess</td>
-   <td>로그인한 사용자에 대해 지정된 사용자의 큐에 대한 액세스 요청을 수행합니다. 사용자가 요청을 승인하면 사용자의 큐는 로그인한 사용자와 공유됩니다.</td>
+   <td>로그인한 사용자에 대해 지정된 사용자의 큐에 대한 액세스 요청을 수행합니다. 사용자가 요청을 승인하면 사용자의 큐가 로그인한 사용자와 공유됩니다.</td>
   </tr>
   <tr>
    <td>getGrantedUsers</td>
    <td>ProcessManagementQueueService</td>
    <td>getGrantedUsers</td>
-   <td>로그인한 사용자의 큐에 액세스할 수 있는 모든 사용자를 반환합니다.</td>
+   <td>로그인한 사용자의 대기열에 액세스할 수 있는 모든 사용자가 반환됩니다.</td>
   </tr>
   <tr>
    <td>getUsersForAccessibleQueues</td>
    <td>ProcessManagementQueueService</td>
    <td>getUsersForAccessibleQueues</td>
-   <td>사용자가 큐에 액세스할 수 있는 모든 사용자를 반환합니다.</td>
+   <td>사용자가 대기열에 액세스할 수 있는 모든 사용자가 반환됩니다.</td>
   </tr>
   <tr>
    <td>revokeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>revokeQueueAccess</td>
-   <td>로그인한 사용자 큐에 액세스할 수 있는 사용자 목록에서 사용자를 제거합니다.</td>
+   <td>로그인한 사용자의 대기열에 액세스할 수 있는 사용자 목록에서 사용자를 제거합니다.</td>
   </tr>
   <tr>
    <td>removeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>removeQueueAccess</td>
-   <td>로그인한 사용자가 큐에 액세스할 수 있는 사용자 목록에서 사용자를 제거합니다.</td>
+   <td>로그인한 사용자가 대기열에 액세스할 수 있는 사용자 목록에서 사용자를 제거합니다.</td>
   </tr>
   <tr>
    <td>getAllQueues<br /> </td>
    <td>ProcessManagementQueueService<br /> </td>
    <td>getAllQueues<br /> </td>
-   <td>로그인한 사용자가 액세스할 수 있는 모든 큐(자체, 공유 및 그룹 큐)를 가져옵니다.<br /> </td>
+   <td>로그인한 사용자가 액세스할 수 있는 모든 대기열(소유, 공유 및 그룹 대기열)을 가져옵니다.<br /> </td>
   </tr>
   <tr>
    <td>getOutOfOfficeSettings</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>getOutOfOfficeSettings</td>
-   <td>사용자의 사무실 설정을 벗어납니다.</td>
+   <td>사용자의 부재 설정입니다.</td>
   </tr>
   <tr>
    <td>saveOutOfOfficeSettingsJson</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>saveOutOfOfficeSettingsJson</td>
-   <td>사용자의 부재 설정을 저장합니다.</td>
+   <td>사용자의 부재 중 설정이 저장됩니다.</td>
   </tr>
   <tr>
    <td>getAllProcesses</td>
@@ -257,16 +257,16 @@ ht-degree: 1%
    <td>모든 프로세스 목록을 반환합니다.</td>
   </tr>
   <tr>
-   <td>getParticipatedProcesses</td>
+   <td>getParticipedProcesses</td>
    <td>ProcessManagementProcessService</td>
-   <td>getParticipatedProcesses</td>
+   <td>getParticipedProcesses</td>
    <td>로그인한 사용자가 참여한 모든 프로세스 이름의 목록을 반환합니다.</td>
   </tr>
   <tr>
    <td>getProcessInstance<br /> </td>
    <td>ProcessManagementProcessService<br /> </td>
    <td>getProcessInstance<br /> </td>
-   <td>프로세스 인스턴스의 세부 사항을 가져옵니다.<br /> </td>
+   <td>프로세스 인스턴스의 세부 정보를 가져옵니다.<br /> </td>
   </tr>
   <tr>
    <td>getProcessInstances</td>
@@ -308,7 +308,7 @@ ht-degree: 1%
    <td>getAssignmentsForTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getAssignmentsForTask</td>
-   <td>작업에 대한 모든 과제를 가져옵니다. 예: - 사용자가 작업을 전달하거나 다른 사용자와 협의한 경우 작업에 대한 할당입니다.</td>
+   <td>작업에 대한 모든 할당을 가져옵니다. 예를 들어 :- 사용자가 작업을 다른 사용자와 전달하거나 협의하는 경우, 작업이 할당됩니다.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>
@@ -320,67 +320,67 @@ ht-degree: 1%
    <td>초기화</td>
    <td>ProcessManagementClientSessionService</td>
    <td>초기화</td>
-   <td>그것은 필요하다면 주장을 다시 보도한다. 사용자를 인증합니다. 서버/클라이언트 정보에 대한 세션 매개 변수를 설정합니다. 사용자 정보 및 폴링 간격을 반환합니다.</td>
+   <td>필요하면 어설션을 갱신한다. 사용자를 인증합니다. 서버/클라이언트 정보에 대한 세션 매개 변수를 설정합니다. 사용자 정보 및 폴링 간격을 반환합니다.</td>
   </tr>
   <tr>
    <td>getTasksForDirectReports</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getTasksForDirectReports</td>
-   <td>로그인한 관리자의 모든 직접 보고서 작업을 반환합니다.</td>
+   <td>로그인한 관리자에 대한 직접 보고서의 모든 작업을 반환합니다.</td>
   </tr>
   <tr>
    <td>getTaskOfDirectReport<br /> </td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getDirectReportTask</td>
-   <td>로그인한 관리자의 지정된 직접 보고서 작업을 반환합니다.</td>
+   <td>로그인한 관리자에 대해 지정된 직접 보고서의 작업을 반환합니다.</td>
   </tr>
   <tr>
-   <td>forwardTaskOfDirectReport</td>
+   <td>정방향 작업</td>
    <td>ProcessManagementTeamTasksService</td>
-   <td>forwardTaskOfDirectReport</td>
-   <td>다른 사용자에게 직접 보고서 작업을 전달합니다.</td>
+   <td>정방향 작업</td>
+   <td>직접 보고서의 작업을 다른 사용자에게 전달합니다.</td>
   </tr>
   <tr>
    <td>rejectTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>rejectTaskOfDirectReport</td>
-   <td>이전 사용자에게 직접 보고서의 작업을 반환합니다.</td>
+   <td>이전 사용자에게 직접 보고서 작업을 반환합니다.</td>
   </tr>
   <tr>
    <td>getProperty</td>
-   <td>작업 공간 속성 서비스</td>
+   <td>WorkspacePropertyService</td>
    <td>getProperty</td>
-   <td>사용자에 대한 Workspace 속성을 가져옵니다.</td>
+   <td>사용자의 작업 영역 속성을 가져옵니다.</td>
   </tr>
   <tr>
    <td>removeProperty</td>
-   <td>작업 공간 속성 서비스</td>
+   <td>WorkspacePropertyService</td>
    <td>삭제</td>
-   <td>사용자의 Workspace 속성을 제거합니다.</td>
+   <td>사용자의 작업 영역 속성을 제거합니다.</td>
   </tr>
   <tr>
    <td>getProperties</td>
-   <td>작업 공간 속성 서비스</td>
+   <td>WorkspacePropertyService</td>
    <td>getPropertiesAsMap</td>
-   <td>사용자에 대한 모든 작업 공간 속성을 반환합니다.</td>
+   <td>사용자의 모든 작업 영역 속성을 반환합니다.</td>
   </tr>
   <tr>
    <td>setProperty</td>
-   <td>작업 공간 속성 서비스</td>
+   <td>WorkspacePropertyService</td>
    <td>setProperty</td>
-   <td>사용자에 대한 작업 공간 속성을 설정합니다.</td>
+   <td>사용자의 작업 영역 속성을 설정합니다.</td>
   </tr>
   <tr>
    <td>getCurrentUserImageUrl</td>
    <td>ProcessManagementClientSessionService</td>
    <td>getCurrentUserImageUrl</td>
-   <td>로그인한 사용자의 이미지 URL을 가져옵니다.</td>
+   <td>로그인한 사용자에 대한 사용자의 이미지 URL을 가져옵니다.</td>
   </tr>
   <tr>
    <td>getUserImageUrl</td>
    <td>ProcessManagementClientSessionService</td>
    <td>getUserImageUrl</td>
-   <td>지정된 사용자의 이미지 URL을 가져옵니다.</td>
+   <td>지정된 사용자에 대한 사용자의 이미지 URL을 가져옵니다.</td>
   </tr>
   <tr>
    <td>uploadNote</td>
@@ -389,16 +389,16 @@ ht-degree: 1%
    <td>작업에 대한 메모를 서버에 업로드합니다.</td>
   </tr>
   <tr>
-   <td>uploadRMAToServer(html 템플릿에서 직접 호출되기도 함)<br /> </td>
+   <td>uploadRMAToServer(html 템플릿에서도 직접 호출됩니다.)<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
-   <td>작업을 위해 서버에 첨부 파일을 업로드합니다.</td>
+   <td>서버에 작업에 대한 첨부 파일을 업로드합니다.</td>
   </tr>
   <tr>
    <td>getImageURL(html 템플릿에서도 직접 호출됨)</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>getImage</td>
-   <td>프로세스에 대한 이미지를 가져옵니다.</td>
+   <td>프로세스에 대한 이미지를 얻습니다.</td>
   </tr>
  </tbody>
 </table>

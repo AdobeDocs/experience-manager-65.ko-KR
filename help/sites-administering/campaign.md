@@ -13,18 +13,18 @@ exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 32%
+ht-degree: 5%
 
 ---
 
 # Adobe Campaign과 통합{#integrating-with-adobe-campaign}
 
-Adobe Campaign은 온라인과 오프라인 채널에서 모두 캠페인을 개인화하고 전달할 수 있는 솔루션 집합입니다.
+Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 개인화하고 게재할 수 있는 솔루션 세트입니다.
 
 이 AEM 버전을 다음 Adobe Campaign 버전 중 하나와 통합할 수 있습니다.
 
-* Adobe Campaign 6.1 - 온-프레미스 솔루션입니다.
-* Adobe Campaign Standard - 가입 기반 솔루션입니다.
+* Adobe Campaign 6.1 - 온프레미스 솔루션
+* Adobe Campaign Standard - 구독 기반 솔루션
 
 이 설명서에서는 AEM을 Adobe Campaign과 통합하는 방법을 설명합니다. 구독 기반 솔루션과 온프레미스 솔루션 중 어느 것을 사용하는지에 따라 통합 단계는 약간 달라집니다.
 

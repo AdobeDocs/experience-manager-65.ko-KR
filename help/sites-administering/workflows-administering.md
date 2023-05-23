@@ -23,7 +23,7 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->다음 [JMX 콘솔](/help/sites-administering/jmx-console.md#workflow-maintenance) 추가 워크플로우 유지 관리 작업을 제공합니다.
+>다음 [JMX 콘솔](/help/sites-administering/jmx-console.md#workflow-maintenance) 에서는 추가적인 워크플로우 유지 관리 작업을 제공합니다.
 
 다양한 콘솔을 사용하여 워크플로를 관리할 수 있습니다. [전역 탐색](/help/sites-authoring/basic-handling.md#global-navigation)을 사용하여 **도구** 창을 연 다음 **워크플로**&#x200B;를 선택합니다.
 
@@ -98,7 +98,7 @@ ht-degree: 84%
 워크플로가 실패하면 AEM은 **실패** 콘솔을 제공하므로 원래 원인을 처리하고 나면 이를 조사하고 적절한 조치를 취할 수 있습니다.
 
 * **실패 세부 정보** - 창을 열어 다음을 표시합니다. 
-**오류 메시지**, **단계**, 및 **실패 스택**.
+**실패 메시지**, **단계**, 및 **실패 스택**.
 
 * **내역 열기** - 워크플로 내역의 세부 정보를 표시합니다.
 
@@ -118,11 +118,11 @@ ht-degree: 84%
 
 워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다.
 
-구성 **Adobe Granite 워크플로우 제거 구성** 나이 및 상태에 따라 워크플로우 인스턴스를 삭제합니다. 또한 모든 모델 또는 특정 모델의 워크플로 인스턴스를 제거할 수 있습니다.
+구성 **Adobe Granite 워크플로우 삭제 구성** 수명 및 상태에 따라 워크플로 인스턴스를 제거합니다. 또한 모든 모델 또는 특정 모델의 워크플로 인스턴스를 제거할 수 있습니다.
 
 여러 서비스 구성을 생성하여 서로 다른 기준을 충족하는 워크플로 인스턴스를 제거할 수도 있습니다. 예를 들어 특정 워크플로 모델의 인스턴스가 예상 시간보다 오래 실행될 때 해당 인스턴스를 제거하는 구성을 생성할 수 있습니다. 저장소 크기를 최소화하기 위해 특정 일수가 지난 후 완료된 모든 워크플로를 제거하는 다른 구성을 생성할 수도 있습니다.
 
-서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성 추가](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). 다음 표에서는 두 방법 중 하나에 필요한 속성에 대해 설명합니다.
+서비스를 구성하려면 다음을 사용합니다. [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성 추가](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). 다음 표에서는 두 방법 중 하나에 필요한 속성을 설명합니다.
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ ht-degree: 84%
   <tr>
    <td>제거 모델</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>제거할 워크플로 모델의 ID입니다. ID는 모델 노드의 경로입니다(예:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>여러 모델을 지정하려면 웹 콘솔에서 “+” 버튼을 클릭하십시오. </p> <p>모든 워크플로우 모델의 인스턴스를 삭제할 값을 지정하지 마십시오.</p> </td>
+   <td><p>제거할 워크플로 모델의 ID입니다. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>여러 모델을 지정하려면 웹 콘솔에서 “+” 버튼을 클릭하십시오. </p> <p>모든 워크플로우 모델의 인스턴스를 제거할 값을 지정하지 마십시오.</p> </td>
   </tr>
   <tr>
    <td>워크플로 수명</td>
@@ -170,7 +170,7 @@ ht-degree: 84%
 
 ## 받은 편지함의 최대 크기 설정 {#setting-the-maximum-size-of-the-inbox}
 
-를 구성하여 받은 편지함의 최대 크기를 설정할 수 있습니다 **Granite Workflow 서비스 Adobe**&#x200B;를 사용 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성 추가](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). 다음 표에서는 두 방법 중 하나에 대해 구성하는 속성에 대해 설명합니다.
+를 구성하여 받은 편지함의 최대 크기를 설정할 수 있습니다. **Adobe Granite 워크플로 서비스**, 사용 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성 추가](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). 다음 표에서는 두 메서드에 대해 구성하는 속성을 설명합니다.
 
 >[!NOTE]
 >
@@ -184,7 +184,7 @@ ht-degree: 84%
 
 ## 고객 소유 데이터 스토어에 워크플로 변수 사용 {#using-workflow-variables-customer-datastore}
 
-워크플로에서 처리된 데이터는 Adobe 제공 스토리지(JCR)에 저장됩니다. 이 데이터는 기본적으로 중요할 수 있습니다. 모든 사용자 정의 메타데이터/데이터를 Adobe 제공 스토리지가 아닌 자체 관리 스토리지에 저장할 수 있습니다. 이러한 섹션에서는 외부 스토리지에 대해 이러한 변수를 설정하는 방법을 설명합니다.
+워크플로에서 처리된 데이터는 Adobe 제공 스토리지(JCR)에 저장됩니다. 이 데이터는 기본적으로 중요할 수 있습니다. 모든 사용자 정의 메타데이터/데이터를 Adobe 제공 스토리지가 아닌 자체 관리 스토리지에 저장할 수 있습니다. 이 섹션에서는 이러한 변수를 외부 스토리지로 설정하는 방법에 대해 설명합니다.
 
 ### 메타데이터의 외부 스토리지를 사용하도록 모델 설정 {#set-model-for-external-storage}
 
@@ -192,7 +192,7 @@ ht-degree: 84%
 
 *userMetadataPersistenceEnabled* 속성은 워크플로 모델의 *jcr:content 노드*&#x200B;에 저장됩니다. 이 플래그는 워크플로 메타데이터에서 *cq:userMetaDataCustomPersistenceEnabled*&#x200B;로 유지됩니다.
 
-아래 그림은 워크플로우에 플래그를 설정하는 방법을 보여줍니다.
+아래 그림은 워크플로우에 플래그를 설정하는 방법을 보여 줍니다.
 
 ![workflow-externalize-config](assets/workflow-externalize-config.png)
 

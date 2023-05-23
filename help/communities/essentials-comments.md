@@ -36,7 +36,7 @@ comments 구성 요소는 각 개별 게시물이 댓글 구성 요소 (단수)�
    <td>예 - 다음 위치에서 편집 가능한 속성 <i>디자인 </i>모드</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs를</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.voting</td>
   </tr>
   <tr>
@@ -67,7 +67,7 @@ comments 구성 요소는 각 개별 게시물이 댓글 구성 요소 (단수)�
 * [파일 라이브러리](essentials-file-library.md)
 * [포럼](essentials-forum.md)
 * [QnA](qna-essentials.md)
-* [검토](reviews-basics.md)
+* [리뷰](reviews-basics.md)
 
 ### 플래그 이유 목록 {#flag-reason-list}
 

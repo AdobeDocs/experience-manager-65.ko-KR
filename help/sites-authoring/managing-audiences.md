@@ -22,16 +22,16 @@ ht-degree: 61%
 
 대상자 콘솔을 사용하면 Adobe Target 계정용 대상자를 생성, 구성 및 관리하거나 ContextHub 또는 Client Context용 세그먼트를 관리할 수 있습니다.
 
-* 대상 추가 - Adobe Target 대상 또는 ContextHub 세그먼트 중 하나.
+* 대상 추가 - Adobe Target 대상 또는 ContextHub 세그먼트.
 * 대상자 관리.
 
-ContextHub와 Client Context에서 *세그먼트*&#x200B;라고 하는 대상자는 특정 기준에 정의된 방문자 클래스로, 타깃팅된 활동을 보는 사용자를 결정합니다. 활동을 타깃팅할 때 타깃팅 프로세스에서 바로 대상을 선택하거나 대상 콘솔에서 더 만들 수 있습니다.
+ContextHub와 Client Context에서 *세그먼트*&#x200B;라고 하는 대상자는 특정 기준에 정의된 방문자 클래스로, 타깃팅된 활동을 보는 사용자를 결정합니다. 활동을 타깃팅할 때 타깃팅 프로세스에서 직접 대상을 선택하거나 대상 콘솔에서 더 많은 대상을 만들 수 있습니다.
 
-대상 콘솔에서 대상은 브랜드별로 구성됩니다.
+대상자 콘솔에서 대상자는 브랜드별로 구성됩니다.
 
-대상은에 대한 타깃팅 모드에서 사용할 수 있습니다 [타깃팅된 컨텐츠 작성](/help/sites-authoring/content-targeting-touch.md)- 대상자를 만들 수도 있지만 대상자 콘솔에서 Adobe Target 대상자를 만들어야 합니다. 타겟팅 모드에서 만드는 대상은 대상 콘솔에 표시됩니다.
+대상자는 타깃팅 모드에서 다음 용도로 사용할 수 있습니다. [타깃팅된 컨텐츠 작성](/help/sites-authoring/content-targeting-touch.md), 대상자를 만들 수도 있습니다(하지만 대상자 콘솔에서 Adobe Target 대상자를 만들어야 함). 타겟팅 모드에서 만드는 대상은 대상 콘솔에 표시됩니다.
 
-대상은 정의된 대상 종류를 설명하는 레이블로 표시됩니다.
+대상은 정의된 대상 유형을 설명하는 레이블과 함께 표시됩니다.
 
 * CH - ContextHub 세그먼트
 * CC - Client Context 세그먼트
@@ -54,15 +54,15 @@ ContextHub와 Client Context에서 *세그먼트*&#x200B;라고 하는 대상�
    >
    >**수정됨**&#x200B;을 탭하거나 클릭하여 수정된 목록을 정렬하면 새로 만들어진 대상자를 내림차순으로 정렬하여 볼 수 있습니다.
 
-ContextHub을 사용하여 세그먼트를 만드는 방법에 대한 자세히 알려면 다음을 참조하십시오. [ContextHub로 세그멘테이션 구성](/help/sites-administering/segmentation.md) 설명서.
+ContextHub를 사용하여 세그먼트를 만드는 방법에 대한 자세한 내용은 [ContextHub를 사용하여 세그먼테이션 구성](/help/sites-administering/segmentation.md) 설명서를 참조하십시오.
 
-## Audience Console을 사용하여 Adobe Target 대상자 만들기 {#creating-an-adobe-target-audience-using-the-audience-console}
+## 대상자 콘솔을 사용한 Adobe Target 대상자 만들기 {#creating-an-adobe-target-audience-using-the-audience-console}
 
 대상 콘솔을 사용하여 AEM에서 직접 Adobe Target 대상을 만들 수 있습니다.
 
-대상은 타겟 활동에 포함된 사용자를 결정하는 규칙으로 정의됩니다. 대상 정의는 여러 규칙을 포함할 수 있으며 각 규칙은 여러 개의 매개변수를 포함할 수 있습니다.
+대상은 타겟 활동에 포함되는 사용자를 결정하는 규칙으로 정의됩니다. 대상 정의는 여러 규칙을 포함할 수 있으며 각 규칙은 여러 개의 매개변수를 포함할 수 있습니다.
 
-두 개 이상의 규칙을 사용하는 경우 이러한 규칙은 부울 연산자 AND로 결합됩니다. 즉, 잠재적 대상 멤버는 활동에 포함할 정의된 모든 조건을 충족해야 합니다. 예를 들어 &#39;OS 규칙 AND 브라우저 규칙&#39;을 정의하는 경우 정의된 OS와(AND) 정의된 브라우저를 모두 사용하는 방문자만 활동에 포함됩니다.
+두 개 이상의 규칙을 사용하는 경우 이러한 규칙은 부울 연산자 AND에 의해 결합됩니다. 즉, 잠재적 대상 멤버가 활동에 포함되도록 정의된 모든 조건을 충족해야 합니다. 예를 들어 &#39;OS 규칙 AND 브라우저 규칙&#39;을 정의하는 경우 정의된 OS와(AND) 정의된 브라우저를 모두 사용하는 방문자만 활동에 포함됩니다.
 
 >[!NOTE]
 >
@@ -78,11 +78,11 @@ Adobe Target 대상자를 만들려면 다음 작업을 수행하십시오.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. 에서 **Adobe Target 구성** 대화 상자에서 target 구성을 선택하고 탭하거나 클릭합니다 **확인**.
-1. 규칙#1 영역에서 속성 유형을 탭하거나 클릭하고 사용 가능한 필드에 속성 정보를 입력합니다. 완료되면 속성 오른쪽에 있는 확인 표시를 선택하여 저장합니다. 자세한 내용은 [속성 및 해당 옵션](#attributes-and-their-options) 를 참조하십시오.
+1. 다음에서 **Adobe Target 구성** 대화 상자에서 target 구성을 선택한 다음 을 탭하거나 클릭합니다. **확인**.
+1. Rule#1 영역에서 속성 유형을 탭하거나 클릭하고 사용 가능한 필드에 속성 정보를 입력합니다. 완료되면 속성 오른쪽에 있는 확인 표시를 선택하여 저장합니다. 다음을 참조하십시오 [속성 및 해당 옵션](#attributes-and-their-options) 를 참조하십시오.
 1. Click **Add Rule** to add another rule. Enter as many rules as needed. Rules are combined with the boolean operator AND, which means that the audience must meet all the requirements of each rule to be eligible for an activity.
 1. **다음**&#x200B;을 탭하거나 클릭합니다.
-1. 대상자의 이름을 입력하고 을(를) 탭하거나 클릭합니다 **저장**.
+1. 대상자의 이름을 입력하고 탭하거나 클릭합니다 **저장**.
 1. **저장**&#x200B;을 탭하거나 클릭합니다. 대상이 대상 목록에 나열됩니다.
 
 ### 속성 및 해당 옵션 {#attributes-and-their-options}
@@ -103,10 +103,10 @@ Adobe Target 대상자를 만들려면 다음 작업을 수행하십시오.
 
 >[!NOTE]
 >
->편집 중인 동일한 AEM 인스턴스에서 만들어진 Adobe Target 대상만 편집할 수 있습니다. 다른 AEM 환경에서 만들어진 Target 대상은 편집할 수 없습니다.
+>편집 중인 동일한 AEM 인스턴스에서 생성된 Adobe Target 대상만 편집할 수 있습니다. 다른 AEM 환경에서 만든 Target 대상은 편집할 수 없습니다.
 
-대상자 콘솔에서 모든 ContextHub 또는 Client Context 대상자를 편집할 수 있습니다. Adobe Target 대상을 편집할 수도 있지만 AEM에서 만들어진 대상만 편집할 수 있습니다.
+대상자 콘솔에서 모든 ContextHub 또는 Client Context 대상자를 편집할 수 있습니다. Adobe Target 대상자를 편집할 수도 있지만 AEM에서 생성된 대상자만 편집할 수 있습니다.
 
 1. 탐색 콘솔에서 **개인화**&#x200B;를 클릭하거나 탭합니다. **대상자**&#x200B;를 클릭하거나 탭합니다.
-1. 편집할 ContextHub 또는 Client Context 세그먼트 옆에 있는 아이콘을 탭하거나 클릭하고 탭하거나 클릭합니다 **편집**.
-1. 세그먼트 편집기에서 편집을 수행합니다. 자세한 내용은 [Client Context](/help/sites-administering/campaign-segmentation.md) 또는 [ContextHub](/help/sites-developing/ch-configuring.md) 설명서.
+1. 편집할 ContextHub 또는 Client Context 세그먼트 옆에 있는 아이콘을 탭하거나 클릭한 다음 탭하거나 클릭합니다 **편집**.
+1. 세그먼트 편집기에서 편집을 수행합니다. 다음을 참조하십시오 [Client Context](/help/sites-administering/campaign-segmentation.md) 또는 [컨텍스트 허브](/help/sites-developing/ch-configuring.md) 설명서를 참조하십시오.

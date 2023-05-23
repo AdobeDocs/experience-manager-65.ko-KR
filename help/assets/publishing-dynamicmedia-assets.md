@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ---
 
-# Dynamic Media 에셋 게시 {#publishing-dynamic-media-assets}
+# Dynamic Media 자산 게시 {#publishing-dynamic-media-assets}
 
 이미 업로드한 자산을 선택하고 탭하여 Dynamic Media 자산을 게시합니다 **[!UICONTROL 게시]** 또는 **[!UICONTROL 빠른 게시]**. Dynamic Media 자산이 게시된 후 URL을 통해 또는 페이지에 코드를 포함하여 웹 페이지에 포함할 수 있습니다.
 

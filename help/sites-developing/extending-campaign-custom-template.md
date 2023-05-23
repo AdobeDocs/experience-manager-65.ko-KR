@@ -13,7 +13,7 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 13%
+ht-degree: 10%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->[이메일 및 양식 샘플은 Geometrixx에서만 사용할 수 있습니다.](/help/sites-developing/we-retail.md). 패키지 공유에서 샘플 Geometrixx 컨텐츠를 다운로드하십시오.
+>[이메일 및 양식 샘플은 Geometrixx에서만 사용할 수 있습니다.](/help/sites-developing/we-retail.md). 패키지 공유에서 샘플 Geometrixx 콘텐츠를 다운로드하십시오.
 
 Adobe Campaign Form 구성 요소를 사용하여 사용자 지정 AEM 페이지 템플릿을 만들려면 다음을 수행해야 합니다.
 

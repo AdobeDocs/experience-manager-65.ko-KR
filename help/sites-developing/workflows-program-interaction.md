@@ -91,7 +91,7 @@ REST API에서는 다음 작업이 지원됩니다.
  <tbody>
   <tr>
    <td>HTTP 요청 메서드</td>
-   <td>액션</td>
+   <td>작업</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -110,7 +110,7 @@ REST API에서는 다음 작업이 지원됩니다.
 
 `http://localhost:4502/etc/workflow/instances.{state}`
 
-| HTTP 요청 메서드 | 액션 |
+| HTTP 요청 메서드 | 작업 |
 |---|---|
 | `GET` | 사용 가능한 워크플로우 인스턴스 및 해당 상태( `RUNNING`, `SUSPENDED`, `ABORTED` 또는 `COMPLETED`) |
 
@@ -124,7 +124,7 @@ REST API에서는 다음 작업이 지원됩니다.
  <tbody>
   <tr>
    <td>HTTP 요청 메서드</td>
-   <td>액션</td>
+   <td>작업</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -147,7 +147,7 @@ REST API에서는 다음 작업이 지원됩니다.
  <tbody>
   <tr>
    <td>HTTP 요청 메서드</td>
-   <td>액션</td>
+   <td>작업</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -232,7 +232,7 @@ REST API에서는 다음 작업이 지원됩니다.
  <tbody>
   <tr>
    <td>HTTP 요청 메서드</td>
-   <td>액션</td>
+   <td>작업</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -337,7 +337,7 @@ REST API에서는 다음 작업이 지원됩니다.
 
 `http://localhost:4502/etc/workflow/models/{id}.{version}`
 
-| HTTP 요청 메서드 | 액션 |
+| HTTP 요청 메서드 | 작업 |
 |---|---|
 | `GET` | 지정된 버전(있는 경우)의 모델 데이터를 가져옵니다. |
 
@@ -351,7 +351,7 @@ REST API에서는 다음 작업이 지원됩니다.
  <tbody>
   <tr>
    <td>HTTP 요청 메서드</td>
-   <td>액션</td>
+   <td>작업</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -370,7 +370,7 @@ REST API에서는 다음 작업이 지원됩니다.
 
 `http://localhost:4502/bin/workflow/inbox/{id}`
 
-| HTTP 요청 메서드 | 액션 |
+| HTTP 요청 메서드 | 작업 |
 |---|---|
 | `GET` | 받은 편지함의 데이터(정의 및 메타데이터)를 가져옵니다 `WorkItem` ID로 식별됩니다. |
 

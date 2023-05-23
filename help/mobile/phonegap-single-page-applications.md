@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 [단일 페이지 애플리케이션](https://en.wikipedia.org/wiki/Single-page_application) (SPA)는 웹 기술을 사용하여 원활한 경험을 구축하는 데 가장 효과적인 패턴으로 널리 간주되는 중요한 수준에 도달했습니다. SPA 패턴을 따라 데스크탑 또는 모바일 애플리케이션과 동일하게 수행되지만 개방형 웹 표준에서의 기반 때문에 다양한 디바이스 플랫폼 및 폼 팩터에 도달하는 애플리케이션을 만들 수 있습니다.
 

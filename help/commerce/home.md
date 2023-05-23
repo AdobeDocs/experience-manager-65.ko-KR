@@ -1,6 +1,6 @@
 ---
 title: AEM Content and Commerce
-description: 통합 및 AEM Storefront 사용을 시작하는 방법에 대한 유용한 문서를 통해 AEM Content and Commerce를 사용하고 관리하는 방법을 이해합니다.
+description: 통합에 대한 유용한 문서와 AEM Storefront를 사용하여 시작하는 방법을 사용하여 AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해합니다.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 77%
 
 # AEM Content and Commerce {#commerce-guide}
 
-통합 및 AEM Storefront 사용을 시작하는 방법에 대한 유용한 문서를 통해 AEM Content and Commerce를 사용하고 관리하는 방법을 이해합니다.
+통합에 대한 유용한 문서와 AEM Storefront를 사용하여 시작하는 방법을 사용하여 AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해합니다.
 
 >[!NOTE]
 >
->AEM as a Cloud Service이 있는 AEM 컨텐츠 및 Commerce의 경우 를 참조하십시오. [AEM Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html).
+>AEM AEM Content 및 Commerce에 as a Cloud Service을 사용하는 경우 다음을 참조하십시오. [AEM Content 및 Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html).
 
 ## 주요 상거래 문서 {#key-articles}
 
@@ -44,8 +44,8 @@ ht-degree: 77%
 * [AEM 자습서](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
-* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

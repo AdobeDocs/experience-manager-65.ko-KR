@@ -14,7 +14,7 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 source-git-commit: 9052ed3e89fdc67d94fc60bbff64d42255565767
 workflow-type: tm+mt
 source-wordcount: '1802'
-ht-degree: 7%
+ht-degree: 3%
 
 ---
 
@@ -43,8 +43,8 @@ ht-degree: 7%
 
 * [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
 * [권장 배포](/help/sites-deploying/recommended-deploys.md)
-* [사용자 지정 독립형 설치](/help/sites-deploying/custom-standalone-install.md)
-* [애플리케이션 서버 설치](/help/sites-deploying/application-server-install.md)
+* [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server 설치](/help/sites-deploying/application-server-install.md)
 * [문제 해결](/help/sites-deploying/troubleshooting.md)
 * [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
 * [구성](/help/sites-deploying/configuring.md)
@@ -64,7 +64,7 @@ ht-degree: 7%
 
 ### AEM란? {#what-is-aem}
 
-Adobe Experience Manager는 웹 사이트 및 관련 서비스를 구축, 관리 및 배포하는 웹 기반 클라이언트 서버 시스템입니다. 여러 가지 인프라 수준 및 애플리케이션 수준의 기능을 통합된 단일 패키지에 결합합니다.
+Adobe Experience Manager은 상업용 웹 사이트 및 관련 서비스를 구축, 관리 및 배포하기 위한 웹 기반 클라이언트 서버 시스템입니다. 여러 인프라 수준 및 애플리케이션 수준 기능을 하나의 통합 패키지로 결합합니다.
 
 인프라 수준에서 AEM은 다음을 제공합니다.
 
@@ -78,7 +78,7 @@ AEM은 이 기반을 기반으로 다음 작업을 관리하기 위한 다양한
 * **모바일 애플리케이션**
 * **디지털 발행물**
 * **양식**
-* **디지털 에셋**
+* **디지털 자산**
 * **커뮤니티**
 * **온라인 상거래**
 
@@ -143,7 +143,7 @@ AEM에 익숙해지고 개발하기 위해 Apple OS X를 실행하는 로컬 시
 
 AEM 유효한 유지 관리 및 지원 계약이 있는 고객은 코드가 있는 메일 알림을 받았어야 하며 [**Adobe 라이선스 웹 사이트**](https://licensing.adobe.com/). 비즈니스 파트너는 다음에서 다운로드 액세스를 요청할 수 있습니다. [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
-AEM 소프트웨어 패키지는 두 가지 형식으로 제공됩니다.
+AEM 소프트웨어 패키지는 다음 두 가지 형식으로 제공됩니다.
 
 * **cq-quickstart-6.5.0.jar:** 독립 실행형 실행 파일 *단지* 설치 및 실행에 필요한 모든 내용이 포함된 파일입니다.
 
@@ -221,7 +221,7 @@ AEM에서 jar 파일의 압축을 풀고 직접 설치하고 시작하는 데 �
 
 설치 사용자 정의에 대한 자세한 내용은 다음을 참조하십시오.
 
-* [사용자 지정 독립형 설치](/help/sites-deploying/custom-standalone-install.md)
+* [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
 * [실행 모드](/help/sites-deploying/configure-runmodes.md)
 
 ### 압축을 푼 설치 디렉토리 {#unpacked-install-directory}
@@ -298,8 +298,8 @@ AEM은 웹 브라우저를 시작하고 자동으로 적절한 페이지(일반�
 
 * [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
 * [권장 배포](/help/sites-deploying/recommended-deploys.md)
-* [사용자 지정 독립형 설치](/help/sites-deploying/custom-standalone-install.md)
-* [애플리케이션 서버 설치](/help/sites-deploying/application-server-install.md)
+* [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server 설치](/help/sites-deploying/application-server-install.md)
 * [문제 해결](/help/sites-deploying/troubleshooting.md)
 * [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
 * [구성](/help/sites-deploying/configuring.md)

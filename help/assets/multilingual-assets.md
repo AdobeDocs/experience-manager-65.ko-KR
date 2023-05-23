@@ -1,6 +1,6 @@
 ---
 title: 다국어 자산
-description: 이진, 메타데이터 및 태그를 포함한 자산을 여러 언어로 번역하는 워크플로우를 자동화하는 방법을 알아봅니다.
+description: 바이너리, 메타데이터 및 태그를 비롯한 에셋을 여러 언어로 번역하기 위한 워크플로를 자동화하는 방법에 대해 알아봅니다.
 contentOwner: AG
 feature: Asset Management
 role: Admin
@@ -20,22 +20,22 @@ ht-degree: 12%
 | AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
-[!DNL Adobe Experience Manager Assets] 자산(바이너리, 메타데이터 및 태그 포함)에 대한 번역 워크플로우를 자동화하여 다국어 프로젝트에서 사용할 다른 언어로 자산을 생성할 수 있습니다.
+[!DNL Adobe Experience Manager Assets] 를 사용하면 에셋(바이너리, 메타데이터 및 태그 포함)의 번역 워크플로를 자동화하여 다국어 프로젝트에서 사용할 다른 언어의 에셋을 생성할 수 있습니다.
 
-번역 워크플로우를 자동화하기 위해 번역 서비스 공급자를 [!DNL Experience Manager] 자산을 여러 언어로 번역할 프로젝트를 만들 수 있습니다. [!DNL Experience Manager] 은 사람 및 기계 번역 워크플로우를 지원합니다.
+번역 워크플로를 자동화하려면 번역 서비스 공급업체를 와 통합합니다 [!DNL Experience Manager] 에셋을 여러 언어로 번역하기 위한 프로젝트를 만들 수 있습니다. [!DNL Experience Manager] 는 사람 번역 및 기계 번역 워크플로를 지원합니다.
 
-인간 번역: 번역된 자산이 반환되고 [!DNL Experience Manager]. 번역 공급자가 [!DNL Experience Manager], 자산이 다음 사이 자동으로 전송됩니다. [!DNL Experience Manager] 그리고 번역 공급자입니다.
+사람 번역: 번역된 에셋을 반환하고에 가져옵니다. [!DNL Experience Manager]. 번역 공급업체를 와 통합하는 경우 [!DNL Experience Manager], 자산은 다음 기간 동안 자동으로 전송됩니다. [!DNL Experience Manager] 번역 공급업체
 
-기계 번역: 기계 번역 서비스는 자산의 메타데이터와 태그를 즉시 변환합니다.
+기계 번역: 기계 번역 서비스는 에셋의 메타데이터와 태그를 즉시 번역합니다.
 
-자산을 번역하면 다음 사항이 포함됩니다.
+에셋 번역에는 다음이 포함됩니다.
 
-1. [번역 서비스 공급자와 Experience Manager 연결](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [번역 서비스 공급업체에 Experience Manager 연결](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [번역 통합 프레임워크 구성 만들기](/help/sites-administering/tc-tic.md)
 1. [자산 번역 준비](preparing-assets-for-translation.md)
 1. [폴더에 번역 클라우드 서비스 적용](transition-cloud-services.md)
 1. [번역 프로젝트 만들기](translation-projects.md)
 
-번역 서비스 공급자가 [!DNL Experience Manager]를 사용하려면 [대체 프로세스](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+번역 서비스 공급업체에서 통합할 커넥터를 제공하지 않는 경우 [!DNL Experience Manager], 사용 [대체 과정](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-또한, [컨텐츠 조각에 대한 번역 프로젝트 만들기](creating-translation-projects-for-content-fragments.md).
+다음을 참조하십시오. [콘텐츠 조각에 대한 번역 프로젝트 만들기](creating-translation-projects-for-content-fragments.md).

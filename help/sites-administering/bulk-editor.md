@@ -80,7 +80,7 @@ ht-degree: 1%
    <td>벌크 편집기가 검색하는 루트 경로를 나타냅니다.<br /> 예, <code>/content/geometrixx/en</code>. 벌크 편집기는 모든 하위 노드를 검색합니다.</td>
   </tr>
   <tr>
-   <td>쿼리 매개 변수</td>
+   <td>쿼리 매개변수</td>
    <td>GQL 매개변수를 사용하여 벌크 편집기가 저장소에서 검색할 검색 문자열을 입력합니다(예: ). <code>type:Page</code> 루트 경로에서 모든 페이지를 찾습니다. <code>text:professional</code> 에서 "professional"이라는 단어가 포함된 모든 페이지를 찾습니다. <code>"jcr:title":English</code> 제목으로 "영어"가 있는 모든 페이지를 찾습니다. 문자열만 검색할 수 있습니다.</td>
   </tr>
   <tr>
@@ -157,5 +157,5 @@ ht-degree: 1%
 1. 벌크 편집기를 엽니다.
 1. 추가 `?hib=false` 를 URL에 추가합니다. 예:
    `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
-1. **가져오기**&#x200B;를 클릭합니다. 
+1. 클릭 **가져오기**.
 1. 다음 항목 선택 `.tsv` 파일. 데이터를 저장소로 가져옵니다.

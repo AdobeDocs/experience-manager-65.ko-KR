@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 클라이언트측 핵심 사항 {#essentials-for-client-side}
 
-### 검토 {#reviews}
+### 리뷰 {#reviews}
 
 <table>
  <tbody>

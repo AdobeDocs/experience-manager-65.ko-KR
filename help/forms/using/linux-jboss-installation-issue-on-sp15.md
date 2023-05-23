@@ -1,13 +1,13 @@
 ---
 title: JBoss® Linux® 환경의 AEM Forms JEE 6.5.15.0 서비스 팩 설치 문제
 description: AEM Forms JEE 6.5.15.0 서비스 팩이 JBoss® Linux® 환경에 제대로 설치되지 않아 패치 변경 사항이 애플리케이션 서버에 적용되지 않습니다. XML 디렉토리에 'RUP_BOM.xml' 파일을 추가합니다.
-source-git-commit: 76a3a87408ceb13023737379c20fb44ce5fb180a
+exl-id: 96ecbe58-a859-4432-a2d8-3d5dc0eaf989
+source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 1%
 
 ---
-
 
 # JBoss® 환경의 AEM Forms 6.5.15.0 JEE 서비스 팩 설치 문제 {#aem-forms-installation-issue-environment}
 

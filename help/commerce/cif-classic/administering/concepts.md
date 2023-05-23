@@ -270,7 +270,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 
       SKU(Stock Keeping Unit) 정보.
 
-   * **색상**
+   * **컬러**
    * **크기**
    * **가격**
 

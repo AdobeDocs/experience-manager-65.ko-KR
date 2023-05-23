@@ -3,13 +3,13 @@ cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 사용 안내서
-user-guide-description: AEM 6.5를 이해, 설치, 관리 및 사용하는 데 필요한 모든 리소스에 대한 개요입니다
+user-guide-description: AEM 6.5의 이해, 설치, 관리 및 사용에 필요한 모든 필수 리소스에 대한 개요입니다.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '60'
-ht-degree: 13%
+ht-degree: 8%
 
 ---
 
@@ -24,6 +24,6 @@ ht-degree: 13%
 + 문제 해결 및 도움말{#troubleshooting}
    + [새 AEM 사용자를 위한 리소스](new.md)
    + [AEM 기능에 대해 알아보기](learn.md)
-   + [우수 사례, 방법 및 교육](best-practice.md)
-   + [AEM Community](community.md)
+   + [모범 사례, 방법 및 교육](best-practice.md)
+   + [AEM 커뮤니티](community.md)
    + [문제 해결](troubleshooting.md)

@@ -1,7 +1,7 @@
 ---
 title: 원격 끝점 구성
 seo-title: Configuring Remoting endpoints
-description: 원격 끝점을 구성하는 방법을 알아봅니다.
+description: 원격 끝점을 구성하는 방법에 대해 알아봅니다.
 seo-description: Learn how to configure remoting endpoints.
 uuid: 4d4f9274-dcae-4b9f-975a-575376c2f89c
 contentOwner: admin
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 # 원격 끝점 구성 {#configuring-remoting-endpoints}
 
-원격 끝점을 사용하면 Flex으로 빌드된 응용 프로그램이 AEM Forms에서 사용되지 않는 AEM Forms Remoting을 사용하여 서비스를 호출할 수 있습니다. 활성화된 각 서비스에 대해 원격 끝점이 자동으로 만들어집니다. 종단점과 동일한 이름을 갖는 Flex 대상이 생성되며 Flex 클라이언트는 해당 대상을 가리키는 원격 개체를 만들어 관련 서비스에서 작업을 호출할 수 있습니다.
+원격 끝점을 사용하면 Flex으로 빌드된 응용 프로그램에서 (AEM Forms의 경우 더 이상 사용되지 않음) AEM Forms Remoting을 사용하여 서비스를 호출할 수 있습니다. 원격 끝점은 활성화된 각 서비스에 대해 자동으로 만들어집니다. 끝점과 이름이 같은 Flex 대상이 만들어지고 Flex 클라이언트는 이 대상을 가리키는 원격 개체를 만들어 관련 서비스에서 작업을 호출할 수 있습니다.
 
 ## 원격 끝점 설정 {#remoting-endpoint-settings}
 
-**Flex 클라이언트 인증 방법:** 호출된 서비스가 보안된 경우 서버가 클라이언트로 다시 보내는 응답 유형을 결정하고, 호출된 작업은 익명 호출을 지원하지 않으며, 클라이언트가 아무 자격 증명도 없거나 잘못된 자격 증명을 전달합니다.
+**Flex 클라이언트 인증 방법:** 호출된 서비스가 보안을 사용하도록 설정되어 있고 호출된 작업이 익명 호출을 지원하지 않으며 클라이언트가 no 또는 invalid 자격 증명을 전달할 때 서버가 클라이언트로 다시 보내는 응답 유형을 결정합니다.

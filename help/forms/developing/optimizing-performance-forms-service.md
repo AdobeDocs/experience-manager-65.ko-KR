@@ -99,7 +99,7 @@ Forms API(Java)를 사용하여 최적화된 성능의 양식을 렌더링합니
 1. 성능 런타임 옵션 설정
 
    * 만들기 `PDFFormRenderSpec` 개체를 만들 때 사용됩니다.
-   * 다음을 호출하여 양식 캐시 옵션을 설정합니다. `PDFFormRenderSpec` 개체 `setCacheEnabled` 방법 및 전달 `true`.
+   * 다음을 호출하여 양식 캐시 옵션 설정 `PDFFormRenderSpec` 개체 `setCacheEnabled` 방법 및 전달 `true`.
    * 를 호출하여 선형 옵션을 설정합니다. `PDFFormRenderSpec` 개체 `setLinearizedPDF` 방법 및 전달 `true.`
 
 1. 양식 렌더링
@@ -146,7 +146,7 @@ Forms API(웹 서비스)를 사용하여 최적화된 성능의 양식을 렌더
 1. 성능 런타임 옵션 설정
 
    * 만들기 `PDFFormRenderSpec` 개체를 만들 때 사용됩니다.
-   * 다음을 호출하여 양식 캐시 옵션을 설정합니다. `PDFFormRenderSpec` 개체 `setCacheEnabled` 메서드 및 전달에 사용할 수 있습니다.
+   * 다음을 호출하여 양식 캐시 옵션 설정 `PDFFormRenderSpec` 개체 `setCacheEnabled` 메서드 및 전달에 사용할 수 있습니다.
    * 를 호출하여 독립형 옵션을 설정합니다. `PDFFormRenderSpec` 개체 `setStandAlone` 메서드 및 전달에 사용할 수 있습니다.
    * 를 호출하여 선형 옵션을 설정합니다. `PDFFormRenderSpec` 개체 `setLinearizedPDF` 메서드 및 전달에 사용할 수 있습니다.
 

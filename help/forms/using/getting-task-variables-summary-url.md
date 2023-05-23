@@ -1,7 +1,7 @@
 ---
-title: 요약 URL에서 작업 변수 가져오기
+title: 요약 URL에서 작업 변수를 가져오는 중
 seo-title: Getting Task Variables in Summary URL
-description: 작업에 대한 정보를 다시 사용하고 요약 URL을 생성하여 작업을 요약하거나 설명하는 방법입니다.
+description: 작업 정보를 재사용하고 요약 URL을 생성하여 작업을 요약하거나 설명하는 방법.
 seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
 uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
 content-type: reference
@@ -16,26 +16,26 @@ ht-degree: 0%
 
 ---
 
-# 요약 URL에서 작업 변수 가져오기 {#getting-task-variables-in-summary-url}
+# 요약 URL에서 작업 변수를 가져오는 중 {#getting-task-variables-in-summary-url}
 
-요약 페이지에 작업 관련 정보가 표시됩니다. 이 문서에서는 요약 페이지에서 작업 관련 정보를 다시 사용할 수 있는 방법에 대해 설명합니다.
+요약 페이지에는 작업 관련 정보가 표시됩니다. 이 문서에서는 요약 페이지에서 작업 관련 정보를 재사용하는 방법에 대해 설명합니다.
 
-이 샘플 오케스트레이션에서 직원이 Leave 애플리케이션 양식을 제출합니다. 그러면 신청서가 승인을 위해 직원 관리자에게 전달됩니다.
+이 샘플 오케스트레이션에서는 직원이 휴가 신청 양식을 제출합니다. 그러면 지원서는 승인을 위해 직원의 관리자에게 제출됩니다.
 
-1. resourceType에 대한 샘플 HTML 렌더러(html.esp)를 만듭니다 **사원/PtoApplication**.
+1. resourseType용 샘플 HTML 렌더러(html.esp) 만들기 **직원/PtoApplication**.
 
-   렌더러는 노드에서 설정할 다음 속성을 가정합니다.
+   렌더러는 노드에 설정할 다음 속성을 가정합니다.
 
    * 이름
    * empid
    * 이유
-   * 기간
+   * 지속 시간
 
    >[!NOTE]
    >
    >이 렌더러는 요약 페이지 템플릿입니다.
 
-   이 렌더러에 대한 다음 샘플 코드는에 포함되어 있습니다.
+   이 렌더러에 대한 다음 샘플 코드가에 포함되어 있습니다.
 
    `apps/Employees/PtoApplication/html.esp`
 
@@ -58,33 +58,33 @@ ht-degree: 0%
    </html>
    ```
 
-1. 오케스트레이션을 수정하여 제출된 양식 데이터에서 4개의 속성을 추출할 수 있습니다. 그런 다음 유형의 CRX에서 노드를 만듭니다 **사원/PtoApplication**: 속성이 채워지는 상태로
+1. 오케스트레이션을 수정하여 제출된 양식 데이터에서 4가지 속성을 추출합니다. 이 작업 후 유형의 CRX에 노드 만들기 **직원/PtoApplication**, 속성 채워짐
 
-   1. 프로세스 만들기 **유급휴가 요약 생성** 그리고 이전 하위 프로세스로 사용합니다 **작업 할당** 오케스트레이션에서 작업을 수행할 수 있습니다.
-   1. 정의 **employeeName**, **employeeID**, **ptoReason**, **totalDays**, 및 **nodeName** 를 새 프로세스에서 입력 변수로 사용하십시오. 이러한 변수는 제출된 양식 데이터로 전달됩니다.
+   1. 프로세스 만들기 **PTO 요약 생성** 및 를 다음 앞에 하위 프로세스로 사용: **작업 할당** 오케스트레이션에서 작업합니다.
+   1. 정의 **employeeName**, **직원 ID**, **ptoReason**, **totalDays**, 및 **nodeName** 를 새 프로세스의 입력 변수로 사용합니다. 이러한 변수는 제출된 양식 데이터로 전달됩니다.
 
-      출력 변수도 정의합니다 **ptoNodePath** 요약 URL을 설정하는 동안 사용됩니다.
+      출력 변수 정의 **ptoNodePath** 요약 URL을 설정하는 동안 사용됩니다.
 
-   1. 에서 **유급휴가 요약 생성** 프로세스, 사용 **값 설정** 구성 요소를 사용하여 **nodeProperty**(**nodeProps**) 맵.
+   1. 다음에서 **PTO 요약 생성** 프로세스, 사용 **값 설정** 에서 입력 세부 사항을 설정할 구성 요소 **nodeProperty**(**nodeProps**) 맵.
 
       이 맵의 키는 이전 단계에서 HTML 렌더러에 정의된 키와 동일해야 합니다.
 
-      또한 **sling:resourceType** 값이 있는 키 **사원/PtoApplication** 입니다.
+      또한 **sling:resourceType** 값이 있는 키 **직원/PtoApplication** 지도에서.
 
-   1. 하위 프로세스 사용 **storeContent** 에서 **ContentRepositoryConnector** 의 서비스 **유급휴가 요약 생성** 프로세스. 이 하위 프로세스는 CRX 노드를 만듭니다.
+   1. 하위 프로세스 사용 **storeContent** 다음에서 **ContentRepositoryConnector** 의 서비스 **PTO 요약 생성** 프로세스. 이 하위 프로세스는 CRX 노드를 만듭니다.
 
-      이렇게 하려면 세 개의 입력 변수가 필요합니다.
+      세 개의 입력 변수가 필요합니다.
 
-      * **폴더 경로**: 새 CRX 노드가 만들어지는 경로입니다. 경로를 로 설정합니다. **/content**.
-      * **노드 이름**: 이 필드에 입력 변수 nodeName을 지정합니다. 고유한 노드 이름 문자열입니다.
-      * **노드 유형**: 유형을 (으)로 정의합니다 **nt:구조화되지 않음**. 이 프로세스의 출력은 nodePath입니다. nodePath 는 새로 만든 노드의 CRX 경로입니다. ndoePath 는 의 최종 출력입니다 **유급휴가 생성** 요약 프로세스.
-   1. 제출된 양식 데이터 전달(**employeeName**, **employeeID**, **ptoReason**, 및 **totalDays**)을 새 프로세스에 대한 입력으로 사용할 수 있습니다. **유급휴가 요약 생성**. 출력을 다음으로 가져오기 **ptoSummaryNodePath**.
+      * **폴더 경로**: 새 CRX 노드가 생성되는 경로입니다. 경로를 다음으로 설정 **/content**.
+      * **노드 이름**: 이 필드에 입력 변수 nodeName을 할당합니다. 고유한 노드 이름 문자열입니다.
+      * **노드 유형**: 유형을 다음과 같이 정의합니다. **nt:unstructured**. 이 프로세스의 출력은 nodePath입니다. nodePath는 새로 만든 노드의 CRX 경로입니다. NodePath는 **pto 생성** 요약 프로세스.
+   1. 제출된 양식 데이터 전달(**employeeName**, **직원 ID**, **ptoReason**, 및 **totalDays**)를 새 프로세스에 대한 입력으로 **PTO 요약 생성**. 출력을 다음으로 가져오기 **ptoSummaryNodePath**.
 
 
-1. 요약 URL을 서버 세부 정보를 포함하는 XPath 식으로 정의합니다. **ptoSummaryNodePath**.
+1. 요약 URL을 과 함께 서버 세부 사항이 포함된 XPath 표현식으로 정의합니다. **ptoSummaryNodePath**.
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-AEM Forms 작업 공간에서 작업을 열면 요약 Url이 CRX 노드에 액세스하며 HTML 렌더러에 요약이 표시됩니다.
+AEM Forms 작업 영역에서 작업을 열면 요약 URL이 CRX 노드에 액세스하고 HTML 렌더러가 요약을 표시합니다.
 
-요약 레이아웃은 프로세스를 수정하지 않고 변경할 수 있습니다. HTML 렌더러는 요약을 적절하게 표시합니다.
+요약 레이아웃은 프로세스를 수정하지 않고 변경할 수 있습니다. HTML 렌더러는 요약을 적절히 표시합니다.

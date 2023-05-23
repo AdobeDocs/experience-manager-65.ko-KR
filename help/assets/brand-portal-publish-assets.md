@@ -1,7 +1,7 @@
 ---
 title: 자산을 Brand Portal에 게시
 seo-title: Publish assets to Brand Portal
-description: Brand Portal에 자산을 게시하고 게시 취소하는 방법을 알아봅니다.
+description: Brand Portal에 에셋을 게시하고 게시 취소하는 방법을 알아봅니다.
 seo-description: Learn how to publish and unpublish assets to Brand Portal.
 uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
@@ -28,35 +28,35 @@ ht-degree: 46%
 | AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
-Adobe Experience Manager(AEM) Assets 관리자는 자산 및 폴더를 조직의 AEM Assets Brand Portal 인스턴스에 게시(또는 게시 워크플로우를 나중 날짜/시간으로 예약)할 수 있습니다. 하지만 먼저 Brand Portal에서 AEM Assets를 구성해야 합니다. 자세한 내용은 [Brand Portal에서 AEM Assets 구성](/help/assets/configure-aem-assets-with-brand-portal.md)을 참조하십시오.
+Adobe Experience Manager(AEM) Assets 관리자는 에셋 및 폴더를 조직의 AEM Assets Brand Portal 인스턴스에 게시(또는 게시 워크플로우를 나중 날짜/시간으로 예약)할 수 있습니다. 하지만 먼저 Brand Portal에서 AEM Assets를 구성해야 합니다. 자세한 내용은 [Brand Portal에서 AEM Assets 구성](/help/assets/configure-aem-assets-with-brand-portal.md)을 참조하십시오.
 
-복제가 성공하면 자산, 폴더 및 컬렉션을 Brand Portal에 게시할 수 있습니다. Brand Portal에 자산을 게시하려면 다음 단계를 수행합니다.
+복제가 성공하면 에셋, 폴더 및 컬렉션을 Brand Portal에 게시할 수 있습니다. 자산을 Brand Portal에 게시하려면 다음 단계를 따르십시오.
 
 >[!NOTE]
 >
 >AEM 작성자가 초과 리소스를 차지하지 않도록 가급적이면 피크가 아닌 시간에, 시차 게시를 수행하는 것이 좋습니다.
 
-1. Assets 콘솔에서 게시하려는 자산/폴더를 선택하고 을(를) 클릭합니다 **[!UICONTROL 빠른 게시]** 옵션 을 클릭합니다.
+1. 자산 콘솔에서 게시하려는 자산/폴더를 선택하고 을 클릭합니다 **[!UICONTROL 빠른 게시]** 도구 모음의 옵션입니다.
 
    또는 Brand Portal에 게시할 자산을 선택합니다.
 
    ![publish2bp-2](assets/publish2bp.png)
 
 1. 자산을 Brand Portal에 게시하려면 다음 두 가지 옵션을 사용할 수 있습니다.
-   * [자산을 즉시 게시](#publish-to-bp-now)
+   * [자산을 즉시 게시합니다.](#publish-to-bp-now)
    * [나중에 자산 게시](#publish-to-bp-now)
 
 ## 지금 자산 게시 {#publish-to-bp-now}
 
 선택한 자산을 Brand Portal에 게시하려면 다음 중 하나를 수행하십시오.
 
-* 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 선택합니다. 그런 다음 메뉴에서 **[!UICONTROL Brand Portal에 게시]**.
+* 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 선택합니다. 그런 다음 메뉴에서 을(를) 선택합니다 **[!UICONTROL Brand Portal에 게시]**.
 
 * 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 선택합니다.
 
-   1. 그런 다음 **[!UICONTROL 작업]** 선택 **[!UICONTROL Brand Portal에 게시]**, 및에서 **[!UICONTROL 예약]** 선택 **[!UICONTROL 지금]**. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+   1. 그런 다음 **[!UICONTROL 작업]** 선택 **[!UICONTROL Brand Portal에 게시]**, 및 시작 **[!UICONTROL 예약]** 선택 **[!UICONTROL 지금]**. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-   2. 내 **[!UICONTROL 범위]**, 선택 사항을 확인하고 를 클릭합니다. **[!UICONTROL Brand Portal에 게시]**.
+   2. 다음 범위 내 **[!UICONTROL 범위]**, 선택 내용을 확인하고 **[!UICONTROL Brand Portal에 게시]**.
 
 자산이 Brand Portal에 게시하기 위한 큐에 올라갔음을 나타내는 메시지가 나타납니다. Brand Portal 인터페이스에 로그인하여 게시된 자산을 확인합니다.
 
@@ -64,9 +64,9 @@ Adobe Experience Manager(AEM) Assets 관리자는 자산 및 폴더를 조직의
 
 나중 날짜 또는 시간에 Brand Portal에 자산을 게시하는 일정을 예약하려면,
 
-1. 게시할 자산/폴더를 선택한 후 을 선택합니다. **[!UICONTROL 게시 관리]** 맨 위에 있는 도구 모음에서 를 클릭합니다.
+1. 게시할 에셋/폴더를 선택한 후 을 선택합니다. **[!UICONTROL 게시 관리]** 을 클릭합니다.
 
-1. 설정 **[!UICONTROL 게시 관리]** 페이지를 선택하고 **[!UICONTROL Brand Portal에 게시]** 변환 전: **[!UICONTROL 작업]** 을(를) 선택합니다. **[!UICONTROL 나중에]** 변환 전: **[!UICONTROL 예약]**.
+1. 날짜 **[!UICONTROL 게시 관리]** 페이지, 선택 **[!UICONTROL Brand Portal에 게시]** 출처: **[!UICONTROL 작업]** 및 선택 **[!UICONTROL 나중에]** 출처: **[!UICONTROL 예약]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 

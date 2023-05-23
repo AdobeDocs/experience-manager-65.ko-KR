@@ -937,7 +937,7 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
    * 관련 리소스를 검색할 리소스의 URI입니다. 이 예에서 소스 리소스( `"/testFolder/testResource1"`)를 지정합니다.
    * A `boolean` 지정된 리소스가 관계의 원본 리소스인지 여부를 나타내는 값입니다. 이 예에서 값은 `true` 이 경우 이므로 가 지정됩니다.
-   * 에서 정적 상수 중 하나인 관계 유형 `Relation` 클래스. 이 예제에서 종속 관계는 앞에서 사용한 것과 동일한 값을 사용하여 지정됩니다. `Relation.TYPE_DEPENDANT_OF`.
+   * 에서 정적 상수 중 하나인 관계 유형 `Relation` 클래스. 이 예에서 종속 관계는 앞에서 사용한 것과 동일한 값을 사용하여 지정됩니다. `Relation.TYPE_DEPENDANT_OF`.
 
    다음 `getRelated` 메서드가 을 반환합니다. `java.util.List` / `Resource` 에 포함된 객체를 캐스팅하여 각 관련 리소스를 검색하기 위해 반복할 수 있는 객체 `List` 끝 `Resource` 그렇게 하잖아요. 이 예에서는 `testResource2` 은(는) 반환된 리소스 목록에 있어야 합니다.
 

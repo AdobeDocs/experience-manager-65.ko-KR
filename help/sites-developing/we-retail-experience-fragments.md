@@ -13,7 +13,7 @@ exl-id: e17ff611-122a-4d17-97af-071d0234dd16
 source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 50%
+ht-degree: 39%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 50%
 
 We.Retail에서 경험 조각 시험 사용
 
-[경험 조각](/help/sites-authoring/experience-fragments.md)은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
+An [경험 조각](/help/sites-authoring/experience-fragments.md) 는 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
 
 이를 통해 작성자는 콘텐츠를 복사하여 붙여넣을 필요 없이 페이지의 일부(경험 조각)를 다시 사용할 수 있습니다.
 

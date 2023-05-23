@@ -14,7 +14,7 @@ exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 81%
+ht-degree: 83%
 
 ---
 
@@ -39,7 +39,7 @@ AEM 개발이 처음이십니까? 모범 사례에 리프레셔가 필요하십�
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
 * [Touch UI](/help/sites-developing/touch-ui-concepts.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)
 
 위의 개념으로 자세히 들어가기 전에 자습서를 진행하십시오.

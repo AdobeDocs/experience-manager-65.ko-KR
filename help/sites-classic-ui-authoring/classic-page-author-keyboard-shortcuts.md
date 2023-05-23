@@ -1,6 +1,6 @@
 ---
 title: 페이지 편집 시 키보드 단축키
-description: AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지 편집에 적용되고 일부는 콘솔 사용에 적용됩니다.
+description: AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지 편집 시 적용되고 일부는 콘솔 사용에 적용됩니다.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,18 +17,18 @@ ht-degree: 19%
 
 # 페이지 편집 시 키보드 단축키{#keyboard-shortcuts-when-editing-pages}
 
-AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지를 편집할 때 적용되고 일부는 [콘솔 사용](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지 편집 시 적용되고 일부는 [콘솔 사용](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->다음 테이블에서 **바로 가기** 열에서 Ctrl 및 Command 키가 모두 macOS에서 작동합니다.
+>다음 표에서 의 키 조합에 대해 **단축키** 열, Ctrl 키와 Command 키가 모두 macOS에서 작동합니다.
 
 >[!NOTE]
 >
->데스크톱 장치에서 다중 선택:
+>데스크탑 장치에서 다중 선택:
 >
->* Windows: 필요한 구성 요소를 Ctrl 키를 누른 채로 클릭합니다.
->* Mac: Cmd를 클릭한 채 필수 구성 요소를 클릭합니다.
+>* Windows: 필요한 구성 요소를 Ctrl+클릭합니다.
+>* Mac: 필요한 구성 요소를 Cmd+클릭합니다.
 >
 
 
@@ -38,7 +38,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
  <tbody>
   <tr>
    <th>위치</th>
-   <th>바로 가기</th>
+   <th>단축키</th>
    <th>설명</th>
   </tr>
   <tr>
@@ -69,7 +69,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>선택한 단락을 잘라냅니다.<strong><br /> 참고:</strong> 잘라낸 단락은 새 위치로 붙여넣을 때까지 사라지지 않습니다.</td>
+   <td>선택한 단락을 잘라냅니다.<strong><br /> 참고:</strong> 잘라낸 단락은 새 위치에 붙여넣을 때까지 사라지지 않습니다.</td>
   </tr>
   <tr>
    <td> </td>
@@ -79,7 +79,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   <tr>
    <td> </td>
    <td><strong><code>Alt-Ctrl-V</code></strong></td>
-   <td>참조로 붙여넣습니다.</td>
+   <td>참조로 붙여 넣습니다.</td>
   </tr>
   <tr>
    <td> </td>
@@ -94,12 +94,12 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>기본(브라우저) 컨텍스트 메뉴를 표시합니다.<br /> <strong>참고:</strong> AEM 컨텍스트 메뉴는 클래식 UI에만 나타납니다.</td>
+   <td>기본(브라우저) 상황에 맞는 메뉴 강제 적용.<br /> <strong>참고:</strong> AEM 컨텍스트 메뉴는 클래식 UI에서만 제공됩니다.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Alt-c</code></strong></td>
-   <td>를 표시합니다 <a href="/help/sites-administering/client-context.md">클라이언트 컨텍스트</a>.</td>
+   <td>다음을 표시합니다. <a href="/help/sites-administering/client-context.md">client context</a>.</td>
   </tr>
   <tr>
    <td>리치 텍스트 편집기<br /> </td>
@@ -117,19 +117,19 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
    <td>밑줄</td>
   </tr>
   <tr>
-   <td>컨텐츠 파인더 - 검색 상자</td>
+   <td>콘텐츠 파인더 - 검색 상자</td>
    <td><strong><code>down-arrow</code></strong></td>
-   <td>제안 목록을 트리거합니다. 입력한 문자 수가 적어서 목록이 자동으로 열리지 않은 경우에 필요합니다. 2개 이상의 문자를 입력하면 목록이 자동으로 열립니다.</td>
+   <td>제안 목록을 트리거합니다. 목록을 자동으로 트리거하기 위해 너무 적은 문자가 입력된 경우 필요합니다(2개 이상의 문자를 입력한 경우).</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>right-arrow</code></strong><br /> (추천 경로에서)</td>
-   <td>항목을 선택하고 선택한 경로에 대한 제안 사항을 트리거합니다.</td>
+   <td>항목을 선택하고 선택한 경로에 대한 제안을 트리거합니다.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>left-arrow</code></strong><br /> (추천 경로에서)</td>
-   <td>항목을 선택하고 상위 항목에 대한 제안 사항을 트리거합니다(상위의 동일 수준 항목에서와 마찬가지임).</td>
+   <td>항목을 선택하고 상위 항목에 대한 제안을 트리거합니다(상위 항목의 형제).</td>
   </tr>
   <tr>
    <td> </td>
@@ -139,12 +139,12 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   <tr>
    <td> </td>
    <td><strong><code>Esc</code></strong></td>
-   <td>제안 사항 레이어를 닫습니다.</td>
+   <td>제안 레이어 닫기.</td>
   </tr>
   <tr>
-   <td>컨텐츠 파인더<br /> </td>
+   <td>콘텐츠 파인더<br /> </td>
    <td><strong><code>Alt+drag</code></strong></td>
-   <td><p>자산을 드래그하여 대상에 놓습니다.</p> <p>드롭 작업으로 새 단락이 만들어집니다. 대상에서 자산을 바꾸는 대신</p> </td>
+   <td><p>자산을 드래그하여 대상에 놓습니다.</p> <p>놓기 작업을 수행하면 대상에서 에셋을 바꾸는 대신 새 단락이 생성됩니다.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -153,19 +153,19 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 ## 개발을 위한 키보드 단축키 {#keyboard-shortcuts-for-development}
 
-데스크톱 개발자는 페이지 편집기를 사용하여 추가 키보드 단축키를 사용할 수 있습니다.
+데스크탑 개발자는 페이지 편집기를 사용할 때 추가 키보드 단축키를 사용할 수 있습니다.
 
 <table>
  <tbody>
   <tr>
    <th>위치</th>
-   <th>바로 가기</th>
+   <th>단축키</th>
    <th>설명</th>
   </tr>
   <tr>
    <td>편집 모드</td>
-   <td>URL에 다음 접미사를 설정합니다.<br /> <code>?debugClientLibs=true</code><br /> 그런 다음 를 사용합니다.<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
-   <td>페이지 로드 시간 통계를 보려면</td>
+   <td>URL에 다음 접미사를 설정합니다.<br /> <code>?debugClientLibs=true</code><br /> 그런 다음 다음을 사용합니다.<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>페이지 로드에 대한 타이밍 통계를 보려면 다음을 수행합니다.</td>
   </tr>
  </tbody>
 </table>

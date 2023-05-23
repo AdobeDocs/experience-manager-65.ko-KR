@@ -14,7 +14,7 @@ exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
 source-wordcount: '667'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 10%
  <tbody>
   <tr>
    <td>클래식 UI</td>
-   <td>터치 활성화 UI</td>
+   <td>터치 지원 UI</td>
   </tr>
   <tr>
    <td>는 JCR 저장소에 노드 구조로 설명되어 있습니다. UI의 요소를 나타내는 모든 노드를 라고 합니다. <em>ExtJS 위젯</em> 클라이언트측에서 렌더링한 <code>ExtJS</code>.</td>
@@ -137,7 +137,7 @@ Touch UI 개발의 기본 사항은 견고한 기반을 제공합니다.
 Touch UI로의 마이그레이션과 직접 관련이 없지만, 권장되는 연습 방법이므로 동시에 고려할 만한 관련 문제가 있습니다.
 
 * [템플릿](/help/sites-developing/templates.md) - [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)
-* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]

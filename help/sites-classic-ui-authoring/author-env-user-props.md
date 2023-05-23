@@ -14,7 +14,7 @@ exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 76%
+ht-degree: 27%
 
 ---
 
@@ -22,17 +22,18 @@ ht-degree: 76%
 
 AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
 
-[계정 설정](#account-settings) 및 [사용자 환경 설정](#user-preferences)을 사용하여 다음 옵션 및 환경 설정을 정의할 수 있습니다:
+사용 [계정 설정](#account-settings) 및 [사용자 환경 설정](#user-preferences) 다음과 같은 옵션과 기본 설정을 정의할 수 있습니다.
 
-* **편집 도구 모음** 전역 편집 도구 모음 사용 여부를 선택합니다. 브라우저 창 맨 위에 표시되는 이 도구 모음에서는 
+* **도구 모음 편집**
+전역 편집 도구 모음을 사용할지 여부를 선택합니다. 브라우저 창 맨 위에 표시되는 이 도구 모음에서는 
 **복사**, **잘라내기**, **붙여넣기**, **삭제** 해당 페이지의 단락 구성 요소와 함께 사용하기 위한 단추:
 
    * 필요 시 표시(기본값)
    * 항상 표시
    * 숨김 상태로 유지
 
-* **가장 대상**
- [가장 대상](/help/sites-administering/security.md#impersonating-another-user) 기능을 사용하면 사용자는 다른 사용자를 대신하여 작업할 수 있습니다.
+* **다음 사용자로 가장**
+포함 [다음 사용자로 가장](/help/sites-administering/security.md#impersonating-another-user) 사용자가 다른 사용자를 대신하여 작업할 수 있는 기능입니다.
 
 * **언어**
 작성 환경의 UI에 사용할 언어입니다. 사용 가능한 목록에서 필요한 언어를 선택합니다.
@@ -40,28 +41,26 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 * **창 관리**
 다음 중 하나를 선택합니다.
 
-   * 여러 창(기본값)
-새 창에 페이지가 열립니다.
-   * 단일 창
-현재 창에 페이지가 열립니다.
+   * 여러 창(기본값) 페이지가 새 창에서 열립니다.
+   * 단일 창 페이지가 현재 창에서 열립니다.
 
 ## 계정 설정 {#account-settings}
 
-사용자 아이콘은 다음 옵션에 따라 다양한 액세스 권한을 제공합니다.
+사용자 아이콘을 사용하면 다음 옵션에 대한 다양한 액세스 권한을 얻을 수 있습니다.
 
 * 로그아웃
 * [가장 대상](/help/sites-administering/security.md#impersonating-another-user)
 * [사용자 환경 설정](#user-preferences)
-* [알림 수신함](/help/sites-classic-ui-authoring/author-env-inbox.md)
+* [알림 받은 편지함](/help/sites-classic-ui-authoring/author-env-inbox.md)
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### 사용자 환경 설정 {#user-preferences}
 
-각 사용자는 특정 속성을 직접 설정할 수 있습니다. 이러한 아이콘은 콘솔의 오른쪽 상단 모서리에 있는 **환경 설정** 대화 상자에서 사용할 수 있습니다.
+각 사용자는 자신에 대한 특정 속성을 설정할 수 있습니다. 다음에서 사용할 수 있습니다. **환경 설정** 콘솔의 오른쪽 상단 모서리에 있는 대화 상자입니다.
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 
-이 대화 상자에서는 다음 옵션을 제공합니다.
+이 대화 상자에는 다음과 같은 옵션이 있습니다.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)

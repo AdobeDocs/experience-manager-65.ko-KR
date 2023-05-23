@@ -1,6 +1,6 @@
 ---
 title: 지속 GraphQL 쿼리
-description: 성능을 최적화하기 위해 Adobe Experience Manager에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 방법을 사용하여 클라이언트 응용 프로그램에서 지속되는 쿼리를 요청할 수 있으며 이 응답을 Dispatcher 및 CDN 레이어에서 캐시할 수 있으므로 궁극적으로 클라이언트 응용 프로그램의 성능을 향상시킬 수 있습니다.
+description: 성능을 최적화하기 위해 Adobe Experience Manager에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 91%
 
 # 지속 GraphQL 쿼리 {#persisted-queries-caching}
 
-지속되는 쿼리는 Adobe Experience Manager(AEM) 서버에 만들고 저장하는 GraphQL 쿼리입니다. 클라이언트 애플리케이션에서 GET 요청을 사용하여 요청할 수 있습니다. GET 요청의 응답은 Dispatcher 및 CDN(Content Delivery Network) 레이어에서 캐시할 수 있으므로 궁극적으로 요청 클라이언트 애플리케이션의 성능을 향상시킬 수 있습니다. 이 경우 응답을 쉽게 캐시할 수 없는 POST 요청을 사용하여 실행되는 표준 GraphQL 쿼리와는 다릅니다.
+지속 쿼리는 Adobe Experience Manager(AEM) 서버에서 생성 및 저장되는 GraphQL 쿼리입니다. 클라이언트 애플리케이션에서 GET 요청을 사용하여 요청할 수 있습니다. GET 요청의 응답은 Dispatcher 및 CDN(Content Delivery Network) 계층에서 캐시될 수 있으므로 궁극적으로 요청하는 애플리케이션의 성능이 향상됩니다. 이 경우 응답을 쉽게 캐시할 수 없는 POST 요청을 사용하여 실행되는 표준 GraphQL 쿼리와는 다릅니다.
 
 <!--
 >[!NOTE]
@@ -286,8 +286,8 @@ query getAdventuresByActivity($activity: String!) {
 
 이들:
 
-* OSGi 구성으로 덮어쓸 수 없습니다.
-* cURL을 사용하여 HTTP 헤더 설정을 정의하는 요청으로 덮어쓸 수 있습니다. 에는 `cache-control` 및/또는 `surrogate-control`; 예를 보려면 [지속되는 쿼리 수준에서 캐시 관리](#cache-persisted-query-level)
+* osgi 구성으로 덮어쓸 수 없습니다.
+* cURL을 사용하여 HTTP 헤더 설정을 정의하는 요청으로 덮어쓸 수 있습니다. 여기에는 적합한 설정이 포함되어야 합니다. `cache-control` 및/또는 `surrogate-control`; 예를 들면 다음과 같습니다 [지속 쿼리 수준에서 캐시 관리](#cache-persisted-query-level)
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->

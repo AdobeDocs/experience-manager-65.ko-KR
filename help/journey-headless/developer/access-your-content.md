@@ -36,7 +36,7 @@ AEM Headless 여정의 이전 문서인 [콘텐츠를 모델링하는 방법](mo
 
 추가적인 처리가 필요하면 특정 콘텐츠를 타겟팅하고 필요한 사항을 선택한 다음 앱으로 반환해야 합니다.
 
-Adobe Experience Manager(AEM)을 사용하면 AEM GraphQL API를 사용하여 컨텐츠 조각에 선택적으로 액세스하여 필요한 컨텐츠만 반환할 수 있습니다. 즉, 애플리케이션에 사용할 구조화된 콘텐츠의 Headless 게재를 실현할 수 있습니다.
+AEM(Adobe Experience Manager)을 사용하면 AEM GraphQL API를 사용하여 콘텐츠 조각에 선택적으로 액세스하여 필요한 콘텐츠만 반환할 수 있습니다. 즉, 애플리케이션에 사용할 구조화된 콘텐츠의 Headless 게재를 실현할 수 있습니다.
 
 >[!NOTE]
 >
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 콘텐츠에 대한 쿼리를 시작하기 전에 다음 사항을 수행해야 합니다.
 
 * 엔드포인트 활성화
-   * 도구 사용 -> 자산 -> GraphQL
+   * 도구 -> 에셋 -> GraphQL 사용
    * [GraphQL 엔드포인트 활성화하기](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * GraphiQL 액세스(필요한 경우)
@@ -269,7 +269,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 ### 쿼리를 테스트할 위치 {#where-to-test-your-queries}
 
-질의는 [GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphiql-ide.md)예:
+쿼리는 다음에 입력할 수 있습니다. [GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphiql-ide.md), 예를 들면 다음과 같습니다.
 
 * `http://localhost:4502/aem/graphiql.html`
 

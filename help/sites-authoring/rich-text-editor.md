@@ -12,7 +12,7 @@ exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-다시 탭/클릭하거나 처음에 구성 요소를 두 번 탭/클릭하여 선택하면 자체 도구 모음이 있는 즉석 편집이 열립니다. 여기에서 컨텐츠를 편집하고 기본적인 서식 변경을 수행할 수 있습니다.
+다시 탭/클릭하거나 구성 요소를 느리게 더블 탭/클릭하여 처음 선택하면 도구 모음이 있는 즉석 편집이 열립니다. 여기에서 컨텐츠를 편집하고 기본적인 서식 변경을 수행할 수 있습니다.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

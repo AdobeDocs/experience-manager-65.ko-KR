@@ -416,7 +416,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>온라인 개정 정리가 완료된 후 저장소의 무결성을 확인하는 방법</strong></td>
-   <td><p>온라인 개정 정리 후에는 저장소 무결성 검사가 필요하지 않습니다. </p> <p>하지만 정리 후 저장소 상태를 확인하기 위해 다음 작업을 수행할 수 있습니다.</p>
+   <td><p>온라인 개정 정리 후에는 저장소 무결성 검사가 필요하지 않습니다. </p> <p>그러나 정리 후 저장소 상태를 확인하기 위해 다음 작업을 수행할 수 있습니다.</p>
     <ul>
      <li>저장소 <a href="/help/sites-deploying/consistency-check.md" target="_blank">순회 점검</a></li>
      <li>정리 프로세스가 완료된 후 oak-run 도구를 사용하여 불일치를 확인합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache 설명서.</a> 도구를 실행하기 위해 AEM을 종료할 필요는 없습니다.</li>

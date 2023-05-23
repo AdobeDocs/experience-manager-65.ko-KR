@@ -95,7 +95,7 @@ Adobe Experience Manager Forms을 실행하려면 JDK(Java Development Kit) 배�
 <table>
  <tbody>
   <tr>
-   <th><p><strong>플랫폼</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>지원 수준</strong></p> </th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
@@ -143,7 +143,7 @@ Adobe Experience Manager Forms을 실행하려면 JDK(Java Development Kit) 배�
 <table>
  <tbody>
   <tr>
-   <td><p><strong>플랫폼</strong></p> </td>
+   <td><p><strong>Platform</strong></p> </td>
    <td><p><strong> 설명</strong></p> </td>
    <td><p><strong>지원 수준</strong></p> </td>
   </tr>
@@ -217,7 +217,7 @@ Adobe Experience Manager Forms을 실행하려면 JDK(Java Development Kit) 배�
  <tbody>
   <tr>
    <th>데이터베이스 </th>
-   <th><p><strong>플랫폼</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
   <tr>
@@ -253,7 +253,7 @@ Adobe Experience Manager Forms을 실행하려면 JDK(Java Development Kit) 배�
 <table>
  <tbody>
   <tr>
-   <td><p><strong> 플랫폼</strong></p> </td>
+   <td><p><strong> Platform</strong></p> </td>
    <td><p><strong>지원 수준</strong></p> </td>
    <td><p><strong>지원되는 패치 정의</strong></p> </td>
   </tr>
@@ -291,7 +291,7 @@ Adobe Experience Manager Forms을 실행하려면 JDK(Java Development Kit) 배�
 <table>
  <tbody>
   <tr>
-   <th><p><strong> 플랫폼</strong></p> </th>
+   <th><p><strong> Platform</strong></p> </th>
    <th><p><strong>지원 수준</strong></p> </th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
@@ -539,7 +539,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 준�
 <table>
  <tbody>
   <tr>
-   <td>플랫폼</td>
+   <td>Platform</td>
    <td>최소 하드웨어 요구 사항</td>
   </tr>
   <tr>
@@ -577,7 +577,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 준�
 <table>
  <tbody>
   <tr>
-   <th><p><strong>플랫폼</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
   <tr>
@@ -720,7 +720,7 @@ Acrobat DC 제품군에서는 본질적으로 다른 제품인 &quot;클래식&q
 
 AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 
-| **플랫폼** | **지원되는 장치** |
+| **Platform** | **지원되는 장치** |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Apple iOS | Apple iPhone, iPad, iPad Air 및 iPad mini(iOS 15.1 이상 실행) |
 | Google Android | Android 5.1 이상. AEM Forms 앱은 7, 10인치 삼성 갤럭시 태블릿과 인기 있는 스마트폰에서 인증을 받았습니다. |
@@ -770,14 +770,14 @@ Adobe은 JEE 릴리스의 AEM Forms에서 지원하는 타사 참조 플랫폼�
 
 다음 플랫폼은 2021년 9월 7일에 AEM Forms 6.5.10.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
 
-- Adobe Acrobat 2017 - [Adobe Acrobat 2017에 대한 핵심 지원은 2022년 6월 6일에 종료됩니다](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Adobe Acrobat 2017에 대한 핵심 지원은 2022년 6월 6일에 종료됩니다](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Microsoft Windows Server 2016(64비트)
 - Red Hat Enterprise Linux 7(Kernel 3.x)(64비트)
 - Microsoft® Office 2016
 - OpenOffice 4.1.2
 
 >[!NOTE]
-다음으로 표시된 플랫폼 [AEM Forms 6.5.12.0 및 6.5.10.0에서 더 이상 사용되지 않으며, AEM Forms 6.5 서비스 팩 18(6.5.18.0) 릴리스까지 지원 상태가 유지됩니다](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+다음으로 표시된 플랫폼 [AEM Forms 6.5.12.0 및 6.5.10.0에서 더 이상 사용되지 않으며, AEM Forms 6.5 서비스 팩 18(6.5.18.0) 릴리스까지 지원 상태가 유지됩니다](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## 개정 내역 {#revision-history}
 

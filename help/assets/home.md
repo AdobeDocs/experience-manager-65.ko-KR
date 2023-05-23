@@ -1,6 +1,6 @@
 ---
 title: Assets 안내서
-description: Experience Manager에서 디지털 자산을 생성, 관리, 처리 및 배포할 수 있습니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산을 사용하는 방법에 대해 설명합니다.
+description: Experience Manager에서 디지털 에셋을 만들고, 관리하고, 처리하고, 배포합니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산 사용 방법에 대해 설명합니다.
 user-guide-title: Assets 안내서
 feature: Asset Management
 role: User, Architect, Admin
@@ -14,7 +14,7 @@ ht-degree: 67%
 
 # Assets 안내서
 
-Experience Manager에서 디지털 자산을 생성, 관리, 처리 및 배포할 수 있습니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산을 사용하는 방법에 대해 설명합니다.
+Experience Manager에서 디지털 에셋을 만들고, 관리하고, 처리하고, 배포합니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산 사용 방법에 대해 설명합니다.
 
 ## 주요 [!DNL Experience Manager] 문서
 
@@ -36,7 +36,7 @@ Experience Manager에서 디지털 자산을 생성, 관리, 처리 및 배포�
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 Experience Manager의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | Experience Manager 배포를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 Experience Manager 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
-| [Commerce 사용 안내서](/help/commerce/home.md) | Experience Manager에서 Commerce Integration Framework에 대해 알아봅니다. |
+| [Commerce 사용 안내서](/help/commerce/home.md) | Experience Manager의 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 
 

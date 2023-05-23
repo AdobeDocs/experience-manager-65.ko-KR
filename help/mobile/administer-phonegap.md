@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 An ***AEM 관리자*** 는 생성 마법사를 사용하여 새 앱을 만들거나 기존 애플리케이션을 가져와서 AEM Mobile 카탈로그에 새 애플리케이션을 추가하는 역할을 합니다. AEM Mobile을 사용하여 새 앱을 만드는 AEM 관리자 *만들기 마법사* 일반적으로 기본 제공 참조 샘플 또는 (대부분의 경우)에서 만든 사용자 지정 앱 템플릿에서 원하는 앱 템플릿 중 하나를 선택합니다. *AEM 개발자.*
 

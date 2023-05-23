@@ -735,7 +735,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td>런타임 시 값 설정은 지원되지 않습니다</td>
   </tr>
   <tr>
-   <td>정렬 단추</td>
+   <td>값</td>
    <td>값 개체는 데이터 컨텐츠의 단일 단위를 포함합니다.<br /> </td>
    <td> </td>
   </tr>
@@ -908,7 +908,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td>없음</td>
   </tr>
   <tr>
-   <td>mandatory</td>
+   <td>필수</td>
    <td>필드에 대한 nullTest 값을 지정합니다.</td>
    <td>없음</td>
   </tr>

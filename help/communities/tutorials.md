@@ -13,7 +13,7 @@ exl-id: 061d3b1b-7ceb-4e57-8183-2062a76173f1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## 클라이언트측 사용자 정의 {#client-side-customization}
 
-또한 Headless 개념 및 용어 소개가 포함되어 있는
+또한 다음 문서도 참조할 수 있습니다.
 
 * [SCF 클라이언트측 사용자 정의](client-customize.md)
 

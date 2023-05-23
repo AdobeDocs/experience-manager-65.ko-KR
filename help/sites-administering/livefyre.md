@@ -1,7 +1,7 @@
 ---
 title: Livefyre와 통합하기
 seo-title: Integrating with Livefyre
-description: Livefyre의 업계 선도적인 큐레이션 기능을 AEM 6.5 인스턴스와 통합하여 소셜 네트워크에서 몇 분 안에 사이트에 중요한 사용자 생성 콘텐츠(UGC)를 게시하는 방법을 알아봅니다.
+description: Livefyre의 업계 최고 큐레이션 기능을 AEM 6.5 인스턴스와 통합하여 소셜 네트워크에서 중요한 사용자 생성 콘텐츠(UGC)를 몇 분 만에 사이트에 게시할 수 있는 방법을 알아봅니다.
 seo-description: Learn how to integrate and use Livefyre with AEM 6.5.
 uuid: c355705d-6e0f-4a33-aa1f-d2d1c818aac0
 contentOwner: ind14750
@@ -21,7 +21,7 @@ ht-degree: 12%
 
 >[!IMPORTANT]
 >
->[Livefyre Adobe은 2021년 11월 30일부터 공식적으로 서비스를 종료합니다.](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
+>[Adobe Livefyre는 2021년 11월 30일부로 공식적으로 서비스가 종료됩니다](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
 
 <!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 

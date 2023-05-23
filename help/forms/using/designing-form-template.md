@@ -14,13 +14,13 @@ exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # HTML5 양식용 양식 템플릿 디자인{#designing-form-templates-for-html-forms}
 
-AEM의 HTML5 양식 구성 요소는 XFA 양식 템플릿을 HTML5 형식으로 렌더링합니다. 양식 디자이너는 다음을 사용하여 양식 템플릿을 디자인할 수 있습니다. [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63) HTML5 렌디션 기능을 사용하십시오. 이러한 양식 템플릿은 자산과 함께 AEM 저장소, 파일 시스템에 있거나 http를 통해 노출될 수 있습니다. 그러나 Forms Manager를 사용하여 양식을 관리하려는 경우 템플릿과 에셋이 AEM 저장소에 있어야 합니다.
+AEM의 HTML5 양식 구성 요소는 XFA 양식 템플릿을 HTML5 형식으로 렌더링합니다. 양식 디자이너는 다음을 사용하여 양식 템플릿을 디자인할 수 있습니다. [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63_kr) HTML5 렌디션 기능을 사용하십시오. 이러한 양식 템플릿은 자산과 함께 AEM 저장소, 파일 시스템에 있거나 http를 통해 노출될 수 있습니다. 그러나 Forms Manager를 사용하여 양식을 관리하려는 경우 템플릿과 에셋이 AEM 저장소에 있어야 합니다.
 
 HTML5 양식은 PDF forms의 동작과 거의 일치하지만 두 형식 모두에는 다른 형식에는 적용할 수 없는 몇 가지 기능이 있습니다. 예를 들어 Adobe Reader의 PDF 양식에 바코드를 적용하는 방법은 모바일 양식이나 양식에 디지털 서명을 하는 방법도 형식마다 다릅니다. 이러한 변형에 대한 자세한 내용은 [HTML 5 양식과 PDF forms 간의 차별화된 기능](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 

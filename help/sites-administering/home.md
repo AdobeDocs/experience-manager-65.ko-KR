@@ -1,6 +1,6 @@
 ---
 title: AEM 6.5 관리 사용 안내서
-description: AEM 6.5 관리에 대해 알아봅니다. 이러한 안내서에서는 사이트 기능, 배포 작업, 보안 기능, 개인화, 통합 등을 다룹니다.
+description: AEM 6.5 관리에 대해 알아봅니다. 이 안내서에서는 사이트 기능, 배포 작업, 보안 기능, 개인화, 통합 등을 다룹니다.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 87%
 
 # AEM 6.5 관리 사용 안내서
 
-AEM 6.5 관리에 대해 알아봅니다. 이러한 안내서에서는 사이트 기능, 배포 작업, 보안 기능, 개인화, 통합 등을 다룹니다.
+AEM 6.5 관리에 대해 알아봅니다. 이 안내서에서는 사이트 기능, 배포 작업, 보안 기능, 개인화, 통합 등을 다룹니다.
 
 ## 주요 문서
 
@@ -35,7 +35,7 @@ AEM 6.5 관리에 대해 알아봅니다. 이러한 안내서에서는 사이트
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
-| [Commerce 사용 안내서](/help/commerce/home.md) | AEM에서 Commerce Integration Framework에 대해 알아봅니다. |
+| [Commerce 사용 안내서](/help/commerce/home.md) | AEM의 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 
 ## 주요 AEM 리소스
@@ -43,7 +43,7 @@ AEM 6.5 관리에 대해 알아봅니다. 이러한 안내서에서는 사이트
 * [AEM 자습서](https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-4-videos.html)
 * [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
-* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 * [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

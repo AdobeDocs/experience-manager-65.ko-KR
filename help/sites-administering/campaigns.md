@@ -1,7 +1,7 @@
 ---
 title: 캠페인
 seo-title: Campaigns
-description: AEM 캠페인 사용의 기본 사항을 알아봅니다.
+description: AEM 캠페인 사용의 기본 사항에 대해 알아봅니다.
 seo-description: Learn the basics of using AEM Campaigns.
 uuid: f4be814f-8b0f-4089-88bb-0141227bce02
 contentOwner: Guillaume Carlino
@@ -23,12 +23,12 @@ ht-degree: 1%
 
 캠페인(랜딩 페이지 포함)을 관리하는 경우, 다음을 수행해야 할 수 있습니다.
 
-* **세그먼트 정의** - 타깃팅된 컨텐츠에 대한 세그먼트와 전략을 정의해야 합니다.
-* **랜딩 페이지용 HTML 준비** - 랜딩 페이지를 통해 작성자는 디자인과 컨텐츠를 빠르고 쉽게 AEM 페이지로 가져올 수 있습니다. 자산을 제대로 가져올 수 있도록 HTML을 준비해야 합니다. 랜딩 페이지는 제한된 시간 동안만 활성화되고 빠르게 만들어야 하는 마케팅 랜딩 페이지를 만들 때 유용합니다.
+* **세그먼트 정의** - 타겟팅된 콘텐츠에 대한 세그먼트 및 전략을 정의해야 합니다.
+* **랜딩 페이지 HTML 준비** - 랜딩 페이지를 사용하여 작성자가 디자인과 콘텐츠를 AEM 페이지로 빠르고 쉽게 가져올 수 있습니다. 자산을 제대로 가져올 수 있도록 HTML을 준비해야 합니다. 랜딩 페이지는 제한된 시간 동안만 활성화되고 빠르게 생성해야 하는 마케팅 랜딩 페이지를 만들 때 유용합니다.
 * **SiteCatalyst과 통합** - 랜딩 페이지를 SiteCatalyst과 통합할 수 있습니다.
 
 다음 페이지를 참조하십시오.
 
-* [세그멘테이션 구성](/help/sites-administering/campaign-segmentation.md)
+* [세그먼테이션 구성](/help/sites-administering/campaign-segmentation.md)
 * [랜딩 페이지용 디자인 Importer 확장 및 구성](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
-* [랜딩 페이지와 Adobe Analytics 통합](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+* [Adobe Analytics과 랜딩 페이지 통합](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)

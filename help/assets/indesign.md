@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 통합 [!DNL Adobe Experience Manager Assets] 포함 [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
-[!DNL Adobe Experience Manager Assets] CFP 패키지를:
+[!DNL Adobe Experience Manager Assets] 사용:
 
 * 특정 처리 작업의 로드를 분산하는 프록시입니다. 프록시는 [!DNL Experience Manager] 프록시 작업자와 통신하여 특정 작업을 수행하는 인스턴스 및 기타 [!DNL Experience Manager] 인스턴스: 결과를 전달합니다.
 * 특정 작업을 정의하고 관리하는 프록시 작업자입니다.
@@ -163,7 +163,7 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
    * **IDS 풀**
 와 통신하는 데 사용할 SOAP 끝점 [!DNL InDesign Server]. 항목을 추가, 제거 및 주문해야 합니다.
 
-1. 확인을 클릭하여 저장합니다.
+1. 확인 을 클릭하여 저장합니다.
 
 ### 일별 CQ 링크 외부화 구성 {#configuring-day-cq-link-externalizer}
 

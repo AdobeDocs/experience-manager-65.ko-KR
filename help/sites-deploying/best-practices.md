@@ -13,13 +13,13 @@ exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 16%
+ht-degree: 9%
 
 ---
 
 # 모범 사례 배포{#deploying-best-practices}
 
-배포 모범 사례에서는 가능한 가장 효율적이고 효과적인 방법으로 AEM을 배포하거나 유지 관리하는 방법을 설명합니다. 계속 증가하고 있는 주제 목록에는 AEM의 다양한 영역이 포함되어 있습니다.
+배포 모범 사례에서는 가능한 가장 효율적이고 효과적인 방법으로 AEM을 배포하거나 유지 관리하는 방법을 설명합니다. 이렇게 늘어나는 주제 목록은 AEM의 다양한 영역을 포함합니다.
 
 다음 영역에는 모범 사례 및 권장 사항의 배포 및 유지에 대한 설명서가 제공됩니다.
 
@@ -30,11 +30,11 @@ ht-degree: 16%
 
 관리, 개발 또는 작성에 대한 우수 사례는 다음 중 하나를 참조하십시오.
 
-* [관리 우수 사례](/help/sites-administering/administer-best-practices.md)
-* [개발 우수 사례](/help/sites-developing/best-practices.md)
+* [모범 사례 관리](/help/sites-administering/administer-best-practices.md)
+* [모범 사례 개발](/help/sites-developing/best-practices.md)
 * [작성 모범 사례](/help/sites-authoring/best-practices.md)
 
-관련된 구체적인 문서에 대한 설명과 링크는 다음 표에 나와 있습니다.
+특정 문서는 다음에 나오는 표에 설명되어 있고 연결됩니다.
 
 ## OAK {#oak}
 
@@ -100,7 +100,7 @@ AEM에는 현재 동일한 릴리스에 클래식 UI와 터치에 적합한 UI�
   <tr>
    <td>CDN에 Dispatcher 사용</td>
    <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">CDN에 Dispatcher 사용</a></td>
-   <td>Akamai Edge Delivery 또는 Amazon Cloud Front와 같은 CDN(콘텐츠 전달 네트워크)은 최종 사용자에게 가까운 위치에서 콘텐츠를 제공합니다.</td>
+   <td>Akamai Edge Delivery 또는 Amazon Cloud Front와 같은 CDN(콘텐츠 게재 네트워크)은 최종 사용자에게 가까운 위치에서 콘텐츠를 제공합니다.</td>
   </tr>
   <tr>
    <td>성능 최적화</td>

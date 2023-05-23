@@ -1,6 +1,6 @@
 ---
 title: 워크플로우 작업
-description: Adobe Experience Manager의 워크플로우를 사용하면 페이지 또는 자산에서 수행되는 일련의 단계를 자동화할 수 있습니다.
+description: Adobe Experience Manager의 워크플로에서는 페이지나 에셋에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
 uuid: c4442d2a-c6b0-49d4-a1ce-384017c45bf0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,7 +17,7 @@ ht-degree: 60%
 
 # 워크플로우 작업{#working-with-workflows}
 
-AEM 워크플로우를 사용하면 (하나 이상의) 페이지 및/또는 자산에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
+AEM 워크플로에서는 (하나 이상의) 페이지 및/또는 에셋에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
 
 예를 들어 편집자는 게시할 때 사이트 관리자가 페이지를 활성화하기 전에 콘텐츠를 검토해야 합니다. 이 예제를 자동화하는 워크플로는 필요한 작업을 수행할 때가 되면 각 참가자에게 알립니다.
 
@@ -30,7 +30,7 @@ AEM 워크플로우를 사용하면 (하나 이상의) 페이지 및/또는 자�
 * 콘텐츠 작성자는 워크플로에 참여할 뿐만 아니라 페이지에 워크플로를 적용합니다.
 * 사용하는 워크플로는 조직의 비즈니스 프로세스마다 고유합니다.
 
-다음 페이지에 나와 있습니다.
+다음 페이지는 다음 내용을 다룹니다.
 
 * [페이지에 워크플로 적용](/help/sites-authoring/workflows-applying.md)
 * [워크플로에 참여](/help/sites-authoring/workflows-participating.md)

@@ -1,6 +1,6 @@
 ---
-title: 빠른 보기를 사용하여 맞춤형 팝업 제작
-description: 기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다.
+title: 빠른 보기를 사용하여 사용자 정의 팝업 제작
+description: 기본 빠른 보기는 팝업이 제품 정보와 함께 표시되어 구매를 유도하는 전자 상거래 경험에 사용됩니다. 팝업에 표시할 사용자 지정 콘텐츠를 트리거할 수 있습니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,27 +12,27 @@ exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
 workflow-type: tm+mt
 source-wordcount: '1052'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# 빠른 보기를 사용하여 맞춤형 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
+# 빠른 보기를 사용하여 사용자 정의 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
 
-기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 그러나 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다. 뷰어에 따라 이 기능을 사용하여 핫스팟이나 축소판 이미지 또는 이미지 맵에서 선택하여 정보나 관련 컨텐츠를 볼 수 있습니다.
+기본 빠른 보기는 팝업이 제품 정보와 함께 표시되어 구매를 유도하는 전자 상거래 경험에 사용됩니다. 하지만 사용자 지정 콘텐츠를 트리거하여 팝업에 표시할 수 있습니다. 이 기능을 사용하면 뷰어에 따라 핫스팟, 썸네일 이미지 또는 이미지 맵에서 선택하여 정보 또는 관련 콘텐츠를 볼 수 있습니다.
 
 빠른 보기는 Dynamic Media의 다음 뷰어에서 지원됩니다.
 
 * 대화형 이미지(클릭 가능한 핫스팟)
-* 대화형 비디오(비디오 재생 중 클릭 가능한 축소판 이미지)
+* 대화형 비디오(비디오 재생 중 클릭 가능한 썸네일 이미지)
 * 회전 배너(클릭 가능한 핫스팟 또는 이미지 맵)
 
-각 뷰어의 기능은 다르지만, 빠른 보기를 만드는 프로세스는 지원되는 세 뷰어 모두에서 동일합니다.
+각 뷰어의 기능은 다르지만 빠른 보기를 만드는 프로세스는 지원되는 세 개의 뷰어 모두에서 동일합니다.
 
-**빠른 보기를 사용하여 사용자 지정 팝업을 만들려면 다음을 수행하십시오.**
+**빠른 보기를 사용하여 사용자 지정 팝업을 만들려면 다음 작업을 수행하십시오.**
 
-1. 업로드된 자산에 대한 빠른 보기를 만듭니다.
+1. 업로드된 에셋에 대한 빠른 보기를 만듭니다.
 
-   일반적으로 사용 중인 뷰어와 함께 사용할 자산을 편집하는 것과 동시에 빠른 보기를 만듭니다.
+   일반적으로 빠른 보기는 사용 중인 뷰어와 함께 사용할 자산을 편집할 때 만듭니다.
 
    <table>
     <tbody>
@@ -46,7 +46,7 @@ ht-degree: 2%
     </tr>
     <tr>
     <td>대화형 비디오</td>
-    <td><a href="/help/assets/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">비디오에 인터랙티브한 추가</a>.</td>
+    <td><a href="/help/assets/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">비디오에 인터랙티브 추가</a>.</td>
     </tr>
     <tr>
     <td>회전 배너</td>
@@ -55,7 +55,7 @@ ht-degree: 2%
     </tbody>
    </table>
 
-1. 웹 사이트 내에서 뷰어를 통합하기 위한 뷰어 포함 코드 가져오기.
+1. 웹 사이트 내에서 뷰어를 통합하려면 뷰어 포함 코드를 가져옵니다.
 
    <table>
     <tbody>
@@ -73,25 +73,25 @@ ht-degree: 2%
     </tr>
     <tr>
     <td>회전 배너</td>
-    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">웹 사이트 페이지에 회전 배너 추가</a>.<br /> </td>
+    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">웹 사이트 페이지에 슬라이드 배너 추가</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
 
-1. 이제 사용 중인 뷰어는 빠른 보기를 사용하는 방법을 알고 있어야 합니다.
+1. 현재 사용 중인 뷰어는 빠른 보기를 사용하는 방법을 알고 있어야 합니다.
 
-   뷰어는 `QuickViewActive`.
+   뷰어는 라는 핸들러를 사용합니다. `QuickViewActive`.
 
    **예**
-웹 페이지에서 대화형 이미지에 다음 샘플 포함 코드를 사용한다고 가정해 보십시오.
+대화형 이미지에 대해 웹 페이지에서 다음 샘플 포함 코드를 사용한다고 가정해 보십시오.
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
-   핸들러가 를 사용하여 뷰어에 로드됩니다 `setHandlers`:
+   처리기는 를 사용하여 뷰어에 로드됩니다. `setHandlers`:
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **위의 샘플 포함 코드 예를 사용하여 다음 코드가 있습니다.**
+   **위의 샘플 포함 코드 예를 사용하면 다음 코드가 있습니다.**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -104,17 +104,17 @@ ht-degree: 2%
    })
    ```
 
-   추가 정보 `setHandlers()` 메서드를 사용합니다.
+   자세히 알아보기 `setHandlers()` 메서드 위치:
 
    * 대화형 이미지 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 대화형 비디오 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. 이제 를 구성해야 합니다 `quickViewActivate` 핸들러.
+1. 이제 를 구성해야 합니다. `quickViewActivate` 핸들러입니다.
 
-   다음 `quickViewActivate` 처리기는 뷰어의 Quickview를 제어합니다. 처리기에는 Quickview에 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 Quickview에 설정된 SKU 변수와 샘플에 대한 매핑을 제공합니다 `loadQuickView` 함수 호출.
+   다음 `quickViewActivate` 처리기는 뷰어의 빠른 보기를 제어합니다. 처리기에는 빠른 보기와 함께 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 빠른 보기에 설정된 SKU 변수와 샘플에 대한 매핑을 제공합니다 `loadQuickView` 함수 호출.
 
    **변수 매핑**
-웹 페이지에서 사용할 변수를 SKU 값 및 빠른 보기에 포함된 일반 변수에 매핑합니다.
+웹 페이지에서 사용할 변수를 빠른 보기에 포함된 SKU 값 및 일반 변수에 매핑합니다.
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -122,7 +122,7 @@ ht-degree: 2%
 
    `var sku=inData.sku`
 
-   다음과 같이 Quickview의 추가 변수도 매핑합니다.
+   다음과 같이 빠른 보기에서 추가 변수를 매핑합니다.
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
@@ -130,27 +130,27 @@ ht-degree: 2%
    ```
 
    **함수 호출**
-또한 처리기에서는 Quickview가 작동하려면 함수 호출이 필요합니다. 함수는 호스트 페이지에서 액세스할 수 있다고 가정합니다. 포함 코드는 샘플 함수 호출을 제공합니다.
+처리기가 작동하려면 Quickview에 대한 함수 호출도 필요합니다. 함수는 호스트 페이지에서 액세스할 수 있는 것으로 간주됩니다. 포함 코드는 샘플 함수 호출을 제공합니다.
 
    `loadQuickView(sku)`
 
-   샘플 함수 호출에서는 함수를 가정합니다 `loadQuickView()` 존재하며 액세스할 수 있습니다.
+   샘플 함수 호출은 함수를 가정합니다 `loadQuickView()` 존재하는데다가 액세스할 수 있습니다.
 
-   추가 정보 `quickViewActivate` 메서드를 사용합니다.
+   자세히 알아보기 `quickViewActivate` 메서드 위치:
 
    * 대화형 이미지 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
    * 대화형 비디오 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
    * 대화형 비디오 뷰어에서 대화형 데이터 지원: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
-1. 다음을 수행합니다.
+1. 다음 작업을 수행합니다.
 
-   * 포함 코드의 setHandlers 섹션의 주석을 해제합니다.
-   * Quickview에 포함된 모든 추가 변수를 매핑합니다.
+   * 포함 코드의 setHandlers 섹션의 주석 처리를 제거합니다.
+   * 빠른 보기에 포함된 모든 추가 변수를 매핑합니다.
 
-      * 업데이트 `loadQuickView(sku,*var1*,*var2*)` 변수를 더 추가할 경우 를 호출합니다.
-   * 간단한 만들기 `loadQuickView` () 함수를 뷰어 외부에서 페이지에 추가합니다.
+      * 업데이트 `loadQuickView(sku,*var1*,*var2*)` 변수를 더 추가하는 경우 를 호출합니다.
+   * 단순 만들기 `loadQuickView` () 함수가 표시기를 벗어났습니다.
 
-      예를 들어, 다음은 SKU 값을 브라우저 콘솔에 씁니다.
+      예를 들어 다음 은 브라우저 콘솔에 SKU 값을 기록합니다.
 
    ```xml
    function loadQuickView(sku){
@@ -158,14 +158,14 @@ ht-degree: 2%
    }
    ```
 
-   * 테스트 HTML 페이지를 웹 서버에 업로드하고 엽니다.
+   * 웹 서버에 테스트 HTML 페이지를 업로드하고 엽니다.
 
-      Quickview의 변수가 매핑되고 함수 호출이 배치되면 브라우저 콘솔은 제공된 샘플 함수를 사용하여 브라우저 콘솔에 변수 값을 기록합니다.
+      Quickview의 변수가 매핑되고 함수 호출이 있는 경우 브라우저 콘솔은 제공된 샘플 함수를 사용하여 브라우저 콘솔에 변수 값을 기록합니다.
 
 
 
-1. 이제 함수를 사용하여 Quickview에서 간단한 팝업을 호출할 수 있습니다. 다음 예제에서는 `DIV` 팝업에 사용됩니다.
-1. 팝업 스타일 지정 `DIV` 아래와 같이 변경하는 것을 의미합니다. 원하는 대로 자신만의 스타일을 추가합니다.
+1. 이제 함수를 사용하여 빠른 보기에서 간단한 팝업을 호출할 수 있습니다. 다음 예제에서는 `DIV` 팝업용
+1. 팝업 스타일 지정 `DIV` 다음 방식으로. 원하는 대로 나만의 스타일을 추가합니다.
 
    ```xml
    <style type="text/css">
@@ -177,9 +177,9 @@ ht-degree: 2%
    </style>
    ```
 
-1. 팝업 배치 `DIV` HTML 페이지 본문 아래에 표시됩니다.
+1. 팝업 배치 `DIV` HTML 페이지의 본문에서 확인할 수 있습니다.
 
-   요소 중 하나는 사용자가 Quickview를 호출할 때 SKU 값으로 업데이트된 ID로 설정됩니다. 또한 팝업이 표시된 후 팝업을 다시 숨기기 위한 간단한 단추도 포함되어 있습니다.
+   요소 중 하나는 사용자가 빠른 보기를 호출할 때 SKU 값으로 업데이트되는 ID로 설정됩니다. 이 예에는 팝업이 표시된 후 다시 숨길 수 있는 간단한 버튼도 포함되어 있습니다.
 
    ```xml
    <div id="quickview_div" >
@@ -190,7 +190,7 @@ ht-degree: 2%
    </div>
    ```
 
-1. 팝업에서 SKU 값을 업데이트할 수 있도록 함수를 추가합니다. 5단계에서 만든 단순 함수를 대체하여 팝업을 표시합니다. 사용:
+1. 팝업에서 SKU 값을 업데이트할 수 있도록 함수를 추가합니다. 5단계에서 만든 간단한 함수를 교체하여 팝업을 표시할 수 있습니다. 다음을 사용하여:
 
    ```xml
    <script type="text/javascript">
@@ -201,25 +201,25 @@ ht-degree: 2%
    </script>
    ```
 
-1. 테스트 HTML 페이지를 웹 서버에 업로드하고 엽니다. 뷰어에 팝업이 표시됩니다 `DIV` 사용자가 빠른 보기를 호출하는 경우.
-1. **전체 화면 모드로 사용자 지정 팝업을 표시하는 방법**
+1. 웹 서버에 테스트 HTML 페이지를 업로드하고 엽니다. 뷰어에 팝업이 표시됩니다 `DIV` 사용자가 빠른 보기를 호출하는 경우.
+1. **전체 화면 모드에서 사용자 지정 팝업을 표시하는 방법**
 
-   대화형 비디오 뷰어와 같은 일부 뷰어는 전체 화면 모드로 표시를 지원합니다. 그러나 이전 단계에서 설명한 대로 팝업을 사용하면 전체 화면 모드에 있는 동안 뷰어 뒤에 표시됩니다.
+   대화형 비디오 뷰어와 같은 일부 뷰어는 전체 화면 모드의 표시를 지원합니다. 그러나 이전 단계에서 설명한 대로 팝업을 사용하면 전체 화면 모드에 있는 동안 뷰어 뒤에 팝업이 표시됩니다.
 
-   팝업을 표준 모드와 전체 화면 모드 모두에서 표시하려면 팝업을 뷰어 컨테이너에 첨부합니다. 두 번째 처리기 메서드 사용, `initComplete`.
+   팝업이 표준 및 전체 화면 모드로 모두 표시되도록 하려면 팝업을 뷰어 컨테이너에 첨부합니다. 두 번째 핸들러 메서드를 사용합니다. `initComplete`.
 
-   다음 `initComplete` 뷰어가 초기화되면 처리기가 호출됩니다.
+   다음 `initComplete` 뷰어가 초기화된 후 핸들러가 호출됩니다.
 
    ```xml
    "initComplete":function() { code block }
    ```
 
-   추가 정보 `init()` 메서드를 사용합니다.
+   자세히 알아보기 `init()` 메서드 위치:
 
    * 대화형 이미지 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
    * 대화형 비디오 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
-1. 이전 단계에서 설명한 팝업을 뷰어에 연결하려면 다음 코드를 사용하십시오.
+1. 이전 단계에서 설명한 팝업을 뷰어에 첨부하려면 다음 코드를 사용합니다.
 
    ```xml
    "initComplete":function() {
@@ -231,12 +231,12 @@ ht-degree: 2%
    }
    ```
 
-   위의 코드에서는 다음 작업이 수행되었습니다.
+   위의 코드에서 다음을 수행했습니다.
 
-   * 사용자 지정 팝업을 확인했습니다.
+   * 사용자 지정 팝업을 식별했습니다.
    * DOM에서 제거했습니다.
    * 뷰어 컨테이너를 식별했습니다.
-   * 뷰어 컨테이너에 팝업을 첨부했습니다.
+   * 팝업을 뷰어 컨테이너에 첨부했습니다.
 
 1. 전체 setHandlers 코드가 다음과 유사하게 표시됩니다(대화형 비디오 뷰어가 사용됨).
 
@@ -257,13 +257,13 @@ ht-degree: 2%
    });
    ```
 
-1. 핸들러가 로드되면 뷰어를 초기화합니다.
+1. 처리기가 로드되면 뷰어를 초기화합니다.
 
    `*viewerInstance.*init()`
 
    **예**
-이 예에서는 대화형 이미지 뷰어를 사용합니다.
+이 예제에서는 대화형 이미지 뷰어를 사용합니다.
 
    `s7interactiveimageviewer.init()`
 
-   뷰어를 호스트 페이지에 포함시킨 후에는 뷰어를 사용하여 호출하기 전에 뷰어 인스턴스가 생성되고 처리기가 로드되었는지 확인하십시오 `init()`.
+   뷰어를 호스트 페이지에 포함시킨 후에는 를 사용하여 뷰어를 호출하기 전에 뷰어 인스턴스가 만들어지고 핸들러가 로드되는지 확인하십시오. `init()`.

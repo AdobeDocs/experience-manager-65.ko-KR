@@ -8,7 +8,7 @@ exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
 source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 3%
 1. 다음에서 **[!UICONTROL Camera Raw/DNG 핸들러]** 단계에 다음 구성을 추가합니다. **[!UICONTROL 인수]** 탭:
 
    * **[!UICONTROL Mime 유형]**: `image/dng` 및 `image/x-raw-(.*)`
-   * **[!UICONTROL Command]**:
+   * **[!UICONTROL 명령]**:
 
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`

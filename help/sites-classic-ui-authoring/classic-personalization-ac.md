@@ -1,6 +1,6 @@
 ---
 title: Adobe Campaign을 사용한 작업
-description: Adobe Campaign은 온라인과 오프라인 채널에서 모두 캠페인을 개인화하고 전달할 수 있는 솔루션 집합입니다.
+description: Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 개인화하고 게재할 수 있는 솔루션 세트입니다.
 uuid: d216ce8d-c9e5-4a3c-bd25-a922770f5b6c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,12 +17,12 @@ ht-degree: 20%
 
 # Adobe Campaign을 사용한 작업{#working-with-adobe-campaign}
 
-Adobe Campaign은 온라인과 오프라인 채널에서 모두 캠페인을 개인화하고 전달할 수 있는 솔루션 집합입니다.
+Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 개인화하고 게재할 수 있는 솔루션 세트입니다.
 
-이 설명서에서는 Adobe Campaign 사용 방법을 설명합니다.
+이 설명서에서는 Adobe Campaign을 사용하여 작업하는 방법을 설명합니다.
 
-* 온-프레미스 솔루션인 Adobe Campaign 6.1.
-* Adobe Campaign Standard 는 구독 기반 솔루션입니다.
+* Adobe Campaign 6.1 - 온프레미스 솔루션
+* Adobe Campaign Standard - 구독 기반 솔루션
 
 다음을 참조하십시오.
 
@@ -30,9 +30,9 @@ Adobe Campaign은 온라인과 오프라인 채널에서 모두 캠페인을 개
 * [Adobe Campaign 구성 요소](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
 * [Adobe Campaign 타깃팅](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
-이전에 [Adobe Campaign과 AEM 통합](/help/sites-administering/campaign.md).
+이전에 다음을 수행해야 합니다. [Adobe Campaign과 통합 AEM](/help/sites-administering/campaign.md).
 
-또한 통합을 사용자 지정하려면 다음 주제를 참조하십시오.
+또한 통합을 사용자 정의하려면 다음 항목을 참조하십시오.
 
 * [사용자 지정 확장 프로그램 만들기](/help/sites-developing/extending-campaign-extensions.md)
 * [사용자 지정 양식 매핑 만들기](/help/sites-developing/extending-campaign-form-mapping.md)

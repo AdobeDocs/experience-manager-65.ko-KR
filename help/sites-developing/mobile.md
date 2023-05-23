@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 모바일 사이트를 만드는 것은 템플릿 및 구성 요소를 만드는 작업도 포함하므로 표준 사이트를 만드는 것과 비슷합니다. 템플릿 및 구성 요소 만들기에 대한 자세한 내용은 다음 페이지를 참조하십시오. [템플릿](/help/sites-developing/templates.md), [구성 요소](/help/sites-developing/components.md) 및 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md). 주요 차이점은 사이트 내에서 AEM의 내장 모바일 기능을 활성화하는 것입니다. 모바일 페이지 구성 요소에 의존하는 템플릿을 만들어 이를 수행할 수 있습니다.
 
@@ -208,7 +208,7 @@ AEM 모바일 프레임워크를 사용하면 요청을 실행하는 장치에 �
 
 장치 그룹을 사이트에 할당하려면 다음 작업을 수행하십시오.
 
-1. 브라우저에서 **Siteadmin** 콘솔로 이동합니다.
+1. 브라우저에서 **Siteadmin** 콘솔.
 1. 아래에서 모바일 사이트의 루트 페이지를 엽니다. **웹 사이트**.
 1. 페이지 속성을 엽니다.
 1. 다음 항목 선택 **모바일** 탭:
@@ -344,7 +344,7 @@ AEM은 다음을 자동으로 구문 분석합니다 `wurfl.xml` 아래 노드 �
 1. 위치 **CRXDE Lite**, /apps/wcm/mobile/devicesecs/regexp 아래에 노드를 만듭니다(예: apple_ipad_ver1).
 1. 노드에 다음 속성을 추가합니다.
 
-   * **regexp**: 사용자 에이전트를 정의하는 정규 표현식(예: ).&#42;모질라&#42;iPad)에 대해 활성 마커 보기.&#42;AppleWebkit.&#42;Safari.&#42;
+   * **regexp**: 사용자 에이전트를 정의하는 정규 표현식(예: ).&#42;모질라&#42;iPad.&#42;AppleWebkit.&#42;Safari.&#42;
    * **deviceId**: wurfl.xml에 정의된 디바이스 ID(예: apple_ipad_ver1)
 
 위의 구성은 사용자 에이전트가 제공된 정규 표현식과 일치하는 장치가 apple_ipad_ver1 WURFL™ 장치 ID(있는 경우)에 매핑되도록 합니다.

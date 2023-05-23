@@ -317,7 +317,7 @@ REST 호출에 보안 전송을 제공하기 위해 AEM Forms 관리자는 AEM F
 
 **Acrobat에서 MyApplication/EncryptDocument 프로세스 호출** {#invoke-process-acrobat}
 
-REST 요청을 사용하여 Acrobat에서 Forms 프로세스를 호출할 수 있습니다. 예를 들어 를 호출할 수 있습니다. *MyApplication/EncryptDocument* 프로세스. Acrobat에서 Forms 프로세스를 호출하려면 Designer 내의 XDP 파일에 제출 단추를 넣습니다. (참조: [디자이너 도움말](https://www.adobe.com/go/learn_aemforms_designer_63).)
+REST 요청을 사용하여 Acrobat에서 Forms 프로세스를 호출할 수 있습니다. 예를 들어 를 호출할 수 있습니다. *MyApplication/EncryptDocument* 프로세스. Acrobat에서 Forms 프로세스를 호출하려면 Designer 내의 XDP 파일에 제출 단추를 넣습니다. (참조: [디자이너 도움말](https://www.adobe.com/go/learn_aemforms_designer_63_kr).)
 
 단추의 내에서 프로세스를 호출할 URL을 지정합니다. *URL에 제출* 다음 그림과 같은 필드입니다.
 

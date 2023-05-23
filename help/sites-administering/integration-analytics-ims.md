@@ -1,6 +1,6 @@
 ---
 title: IMS를 사용하여 Adobe Analytics과 통합
-description: IMS를 사용하여 AEM과 Adobe Analytics을 통합하는 방법에 대해 알아봅니다.
+description: IMS를 사용하여 AEM과 Adobe Analytics 통합에 대해 알아보기
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 66%
 
 # IMS를 사용하여 Adobe Analytics과 통합 {#integration-with-adobe-analytics-using-ims}
 
-Analytics Standard API를 통해 AEM과 Adobe Analytics을 통합하려면 Adobe Developer 콘솔을 사용하여 Adobe IMS(Identity Management 시스템)를 구성해야 합니다.
+Analytics Standard API를 통해 Adobe Analytics과 AEM을 통합하려면 Adobe Developer 콘솔을 사용하여 Adobe IMS(Identity Management 시스템)를 구성해야 합니다.
 
 >[!NOTE]
 >
->Adobe Analytics Standard API 2.0에 대한 지원은 AEM 6.5.12.0에서 새로 추가되었습니다. 이 API 버전은 IMS 인증을 지원합니다.
+>Adobe Analytics Standard API 2.0 지원은 AEM 6.5.12.0의 새로운 기능입니다. 이 API 버전은 IMS 인증을 지원합니다.
 >
->AEM에서 Adobe Analytics Classic API 1.4를 사용하는 것은 여전히 이전 버전과의 호환성을 위해 지원됩니다. 다음 [Analytics Classic API는 사용자 자격 증명 인증을 사용합니다](/help/sites-administering/adobeanalytics-connect.md).
+>이전 버전과의 호환성을 위해 AEM에서 Adobe Analytics Classic API 1.4 사용이 여전히 지원됩니다. 다음 [Analytics Classic API는 사용자 자격 증명 인증을 사용합니다](/help/sites-administering/adobeanalytics-connect.md).
 >
 >API 선택은 AEM/Analytics 통합에 사용되는 인증 방법에 따라 결정됩니다.
 >
@@ -34,7 +34,7 @@ Analytics Standard API를 통해 AEM과 Adobe Analytics을 통합하려면 Adobe
    * Adobe Analytics 및
    * Adobe IMS(ID 관리 시스템)
 
-* 조직의 시스템 관리자는 Admin Console을 사용하여 조직의 필수 개발자를 관련 제품 프로필에 추가해야 합니다.
+* 조직의 시스템 관리자는 Admin Console을 사용하여 필요한 조직 개발자를 관련 제품 프로필에 추가해야 합니다.
 
    * 이렇게 하면 특정 개발자에게 Adobe Developer 콘솔 내에서 통합을 활성화할 수 있는 권한이 제공됩니다.
    * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
@@ -89,7 +89,7 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하�
 
    >[!NOTE]
    >
-   >Adobe Analytics을 구독했지만 목록에 표시되지 않으면 [사전 요구 사항](#prerequisites).
+   >Adobe Analytics을 구독하지만 나열되지 않는 경우 [전제 조건](#prerequisites).
 
    ![API 추가](assets/integration-analytics-io-12.png)
 
@@ -141,16 +141,16 @@ Adobe Developer 프로젝트 콘솔에서 모든 통합 프로젝트 목록을 �
 * API
    * (예: Adobe Analytics)
 
-이러한 중 일부는 AEM에서 Adobe Analytics 통합을 완료해야 합니다.
+이 중 일부는 AEM에서 Adobe Analytics에 대한 통합을 완료해야 합니다.
 
 ## AEM에서 IMS 구성 완료 {#completing-the-ims-configuration-in-aem}
 
-AEM으로 돌아가면 Analytics에 대한 통합 프로젝트에서 필수 값을 추가하여 IMS 구성을 완료할 수 있습니다.
+AEM으로 돌아가 Analytics용 통합 프로젝트에서 필요한 값을 추가하여 IMS 구성을 완료할 수 있습니다.
 
 1. [AEM에서 열려 있는 IMS 구성](#configuring-an-ims-configuration-generating-a-public-key)으로 돌아갑니다.
 1. **다음**&#x200B;을 선택합니다.
 
-1. 여기에서 을 사용할 수 있습니다 [Adobe Developer 콘솔 통합 프로젝트에 대해 저장된 세부 사항](#details-stored-for-the-ims-integration-project):
+1. 여기에서 [Adobe Developer 콘솔 통합 프로젝트에 대해 저장된 세부 정보](#details-stored-for-the-ims-integration-project):
 
    * **제목**: 텍스트를 입력하십시오.
    * **인증 서버**: 아래 **페이로드** 섹션의 `aud` 줄에서 이 인증 서버를 복사하여 붙여넣습니다(아래 예에서 `https://ims-na1.adobelogin.com`).
@@ -190,12 +190,12 @@ AEM으로 돌아가면 Analytics에 대한 통합 프로젝트에서 필수 값�
 
 이제 Cloud Service이 Analytics Standard API를 사용하도록 구성을 참조할 수 있습니다.
 
-1. 를 엽니다. **도구** 메뉴 아래의 제품에서 사용할 수 있습니다. 그런 다음 **Cloud Services** 섹션, **기존 Cloud Services**.
-1. 아래로 스크롤하여 **Adobe Analytics** 을(를) 선택합니다. **지금 구성**.
+1. 를 엽니다. **도구** 메뉴 아래의 제품에서 사용할 수 있습니다. 그런 다음 **Cloud Services** 섹션, 선택 **이전 Cloud Services**.
+1. 아래로 스크롤하여 **Adobe Analytics** 및 선택 **지금 구성**.
 
    다음 **구성 만들기** 대화 상자가 열립니다.
 
-1. 을(를) 입력합니다. **제목** 원한다면 **이름** (비워 두면 제목에서 생성됩니다).
+1. 입력 **제목** 그리고, 원한다면 **이름** (비워 두면 제목에서 생성됩니다.)
 
    필요한 템플릿을 선택할 수도 있습니다(둘 이상의 템플릿을 사용할 수 있는 경우).
 
@@ -203,18 +203,18 @@ AEM으로 돌아가면 Analytics에 대한 통합 프로젝트에서 필수 값�
 
    다음 **구성 요소 편집** 대화 상자가 열립니다.
 
-1. 에 세부 사항을 입력합니다. **Analytics 설정** 탭:
+1. 다음에 세부 정보를 입력합니다. **Analytics 설정** 탭:
 
    * **인증**: IMS
 
-   * **IMS 구성**: ims 구성 이름을 선택합니다.
+   * **IMS 구성**: IMS 구성의 이름을 선택합니다
 
-1. 클릭 **Analytics에 연결** 를 눌러 Adobe Analytics과의 연결을 초기화합니다.
+1. 클릭 **Analytics에 연결** Adobe Analytics에 대한 연결을 초기화합니다.
 
    정상적으로 연결되면 **연결 성공**&#x200B;이라는 메시지가 표시됩니다.
 
 1. 선택 **확인** 메시지를 표시합니다.
 
-1. 필요에 따라 다른 매개 변수를 작성한 후 **확인** 대화 상자에서 구성을 확인합니다.
+1. 필요에 따라 다른 매개 변수를 완료하고 다음을 수행합니다. **확인** 대화 상자에서 구성을 확인합니다.
 
-1. 이제 다음을 수행할 수 있습니다 [Analytics 프레임워크 추가](/help/sites-administering/adobeanalytics-connect.md) Adobe Analytics으로 전송할 매개 변수를 구성하려면 다음을 수행하십시오.
+1. 이제 다음으로 진행할 수 있습니다. [Analytics 프레임워크 추가](/help/sites-administering/adobeanalytics-connect.md) Adobe Analytics으로 전송할 매개 변수를 구성합니다.

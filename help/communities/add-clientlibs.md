@@ -20,15 +20,15 @@ ht-degree: 2%
 
 # Clientlibs 추가 {#add-clientlibs}
 
-## ClientLibraryFolder(clientlibs) 추가 {#add-a-clientlibraryfolder-clientlibs}
+## ClientLibraryFolder 추가(clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
 이름이 인 ClientLibraryFolder 만들기 `clientlibs` 에는 사이트의 페이지를 렌더링하는 데 사용되는 JS 및 CSS가 포함됩니다.
 
-다음 `categories` 이 클라이언트 라이브러리에 제공되는 속성 값은 콘텐츠 페이지에서 이 clientlib을 직접 포함하거나 다른 clientlibs에 포함하는 데 사용되는 식별자입니다.
+다음 `categories` 이 클라이언트 라이브러리에 제공된 속성 값은 콘텐츠 페이지에서 이 clientlib을 직접 포함하거나 다른 clientlib에 임베드하는 데 사용되는 식별자입니다.
 
 1. 사용 **CRXDE Lite**, 확장 `/etc/designs`
 
-1. 마우스 오른쪽 단추 클릭 `an-scf-sandbox` 을(를) 선택합니다. `Create Node`
+1. 마우스 오른쪽 버튼 클릭 `an-scf-sandbox` 및 선택 `Create Node`
 
    * 이름 : `clientlibs`
    * 유형 : `cq:ClientLibraryFolder`
@@ -37,35 +37,35 @@ ht-degree: 2%
 
 ![add-client-library](assets/add-client-library.png)
 
-에서 **속성** 새 `clientlibs` 노드, enter 키 **카테고리** 속성:
+다음에서 **속성** 새 항목 탭 `clientlibs` 노드를 입력하고 **카테고리** 속성:
 
 * 이름 : **카테고리**
 * 유형 : **문자열**
 * 값 : **apps.an-scf-sandbox**
-* **추가**&#x200B;를 클릭합니다
+* 클릭 **추가**
 * 클릭 **모두 저장**
 
-참고 : &#39;apps&#39;로 카테고리 값 앞에 는 &#39;소유 응용 프로그램&#39;이 /apps 폴더에 있는 것으로 식별하기 위한 것으로서, /libs가 아닙니다.  중요 : 자리 표시자 추가 `js.tx`t 및 **`css.txt`** 파일. (공식적으로 cq:ClientLibraryFolder가 없는 것은 아닙니다.)
+참고 : &#39;앱&#39;으로 카테고리 값 앞에 표시. 는 &#39;소유 애플리케이션&#39;을 /libs가 아닌 /apps 폴더에 있는 것으로 식별하는 규칙입니다.  중요 : 자리 표시자 추가 `js.tx`t 및 **`css.txt`** 파일. (이러한 폴더가 없는 cq:ClientLibraryFolder는 공식적으로 아닙니다.)
 
-1. 마우스 오른쪽 단추 클릭 **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. 마우스 오른쪽 버튼 클릭 **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. 선택 **파일 만들기...**
-1. Enter 키 **이름:** `css.txt`
+1. 입력 **이름:** `css.txt`
 1. 선택 **파일 만들기...**
-1. Enter 키 **이름:** `js.txt`
+1. 입력 **이름:** `js.txt`
 1. 클릭 **모두 저장**
 
 ![clientlibs-css](assets/clientlibs-css.png)
 
-css.txt 및 js.txt의 첫 번째 줄은 다음 파일 목록을 찾을 기본 위치를 식별합니다.
+css.txt 및 js.txt의 첫 번째 행은 다음 파일 목록을 찾을 기본 위치를 식별합니다.
 
-css.txt의 내용을 로 설정해 보십시오.
+css.txt의 콘텐츠를 다음으로 설정
 
 ```
 #base=.
  style.css
 ```
 
-그런 다음 style.css라는 clientlibs 아래에 파일을 만들고 이 컨텐츠를 로 설정합니다.
+그런 다음 style.css라는 clientlibs 아래에 파일을 만들고 컨텐츠를 로 설정합니다.
 
 `body {`
 
@@ -75,22 +75,22 @@ css.txt의 내용을 로 설정해 보십시오.
 
 ### SCF Clientlibs 포함 {#embed-scf-clientlibs}
 
-에서 **속성** 탭 `clientlibs` 노드, 다중 값 String 속성 입력 **포함**. 필요한 사항을 포함합니다 [SCF 구성 요소용 클라이언트 측 라이브러리(clientlibs)](/help/communities/client-customize.md#clientlibs-for-scf). 이 자습서에서는 커뮤니티 구성 요소에 필요한 많은 clientlibs를 추가합니다.
+다음에서 **속성** 탭 `clientlibs` 노드에서 다중 값 String 속성을 입력합니다. **임베드**. 필요한 사항을 포함합니다. [scf 구성 요소용 클라이언트측 라이브러리(clientlibs)](/help/communities/client-customize.md#clientlibs-for-scf). 이 자습서에서는 Communities 구성 요소에 필요한 많은 clientlib이 추가됩니다.
 
-**참고** 모든 페이지에 대해 다운로드한 clientlibs의 크기/속도에 대한 편의성 고려 사항이 있으므로 프로덕션 사이트에서 사용하려는 접근 방식이 될 수도 있고 아닐 수도 있습니다.
+**참고** 모든 페이지에 대해 다운로드한 clientlib의 크기/속도에 대한 편의성 고려 사항이 있으므로 프로덕션 사이트에 사용하려는 접근법일 수도 있고 아닐 수도 있습니다.
 
-한 페이지에서 하나의 기능만 사용하는 경우 페이지에 해당 기능의 complete clientlib을 직접 포함할 수 있습니다(예: ).
+한 페이지에서 하나의 기능만 사용하는 경우 해당 기능의 전체 clientlib을 페이지에 직접 포함할 수 있습니다(예: ).
 
 `% ui:includeClientLib categories=cq.social.hbs.forum" %`
 
-이 경우, 이러한 모든 항목을 포함함으로써 작성 clientlibs인 보다 기본적인 SCF clientlibs 가 선호됩니다.
+이 경우 이들 모두를 포함하여 작성자 clientlib인 보다 기본적인 SCF clientlib이 선호됩니다.
 
 * 이름 : **`embed`**
 * 유형 : **`String`**
 * 클릭 **`Multi`**
 * 값: **`cq.social.scf`**
 
-   * 대화 상자가 표시되며 **`+`** 각 항목 다음에 다음 clientlib 카테고리를 추가합니다.
+   * 대화 상자가 표시되며, **`+`** 각 항목 뒤에 다음 clientlib 범주를 추가합니다.
 
       * **`cq.ckeditor`**
       * **`cq.social.author.hbs.comments`**
@@ -104,31 +104,31 @@ css.txt의 내용을 로 설정해 보십시오.
 
 ![scf-clientlibs](assets/scf-clientlibs.png)
 
-다음은 이러한 방식입니다 `/etc/designs/an-scf-sandbox/clientlibs` 이제 가 저장소에 표시됩니다.
+방법은 다음과 같습니다 `/etc/designs/an-scf-sandbox/clientlibs` 은 이제 저장소에 표시됩니다.
 
 ![scf-clientlibs-view](assets/scf-clientlibs1.png)
 
-### PlayPage 템플릿에 Clientlibs 포함 {#include-clientlibs-in-playpage-template}
+### PlayPage 템플릿에 Clientlib 포함 {#include-clientlibs-in-playpage-template}
 
-다음을 포함하지 않음 `apps.an-scf-sandbox` 페이지의 ClientLibraryFolder 카테고리에는 SCF 구성 요소가 작동하지 않거나 필요한 Javascript 및 스타일로 스타일이 지정되지 않습니다.
+를 포함하지 않는 것 `apps.an-scf-sandbox` 페이지의 ClientLibraryFolder 범주, 필요한 Javascript 및 스타일을 사용할 수 없으므로 SCF 구성 요소가 작동하지 않거나 스타일이 지정되지 않습니다.
 
-예를 들어 clientlibs를 포함하지 않으면 SCF 주석 구성 요소가 스타일이 지정되지 않은 것으로 표시됩니다.
+예를 들어 clientlibs를 포함하지 않으면 SCF 주석 구성 요소가 스타일이 지정되지 않은 상태로 표시됩니다.
 
 ![clientlibs-comment](assets/clientlibs-comment.png)
 
-apps.an-scf-sandbox clientlibs가 포함되면 SCF 주석 구성 요소가 스타일이 지정된 것으로 표시됩니다.
+apps.an-scf-sandbox clientlibs가 포함되면 SCF 주석 구성 요소 스타일이 지정됩니다.
 
 ![clientlibs-comment-styled](assets/clientlibs-comment1.png)
 
-include 문은 `head` 섹션 `html` 스크립트. 기본값 **`foundation head.jsp`** 에는 오버레이할 수 있는 스크립트가 포함되어 있습니다. **`headlibs.jsp`**.
+include 문은에 포함됩니다. `head` 의 섹션 `html` 스크립트. 기본값 **`foundation head.jsp`** 는 오버레이할 수 있는 스크립트를 포함합니다. **`headlibs.jsp`**.
 
-**headlibs.jsp 복사 및 clientlibs 포함:**
+**headlibs.jsp를 복사하고 clientlibs를 포함합니다.**
 
 1. 사용 **CRXDE Lite**, 선택 **`/libs/foundation/components/page/headlibs.jsp`**
 
-1. 마우스 오른쪽 단추를 클릭하고 을 선택합니다 **복사** (또는 도구 모음에서 복사 를 선택합니다.)
+1. 마우스 오른쪽 단추를 클릭하고 선택 **복사** (또는 도구 모음에서 복사 선택)
 1. 선택 **`/apps/an-scf-sandbox/components/playpage`**
-1. 마우스 오른쪽 단추를 클릭하고 을 선택합니다 **붙여넣기** (또는 도구 모음에서 붙여넣기 선택)
+1. 마우스 오른쪽 단추를 클릭하고 선택 **붙여넣기** (또는 도구 모음에서 붙여넣기 선택)
 1. 두 번 클릭 **`headlibs.jsp`** 열다
 1. 파일 끝에 다음 줄을 추가합니다
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
@@ -145,17 +145,17 @@ include 문은 `head` 섹션 `html` 스크립트. 기본값 **`foundation head.j
 <ui:includeClientLib categories="apps.an-scf-sandbox"/>
 ```
 
-브라우저에서 웹 사이트를 로드하고 배경이 파란색 음영이 아닌지 확인합니다.
+브라우저에 웹 사이트를 로드하고 배경이 파란색 음영이 아닌지 확인합니다.
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![커뮤니티 재생](assets/community-play.png)
+![커뮤니티 플레이](assets/community-play.png)
 
 ### 지금까지 작업 저장 {#saving-your-work-so-far}
 
-이 시점에서 최소 샌드박스가 있으며 패키지로 저장할 가치가 있으므로 재생하는 동안 저장소가 손상되어 다시 시작하려는 경우 서버를 끄거나 crx-quickstart/ 폴더의 이름을 바꾸거나 삭제하고 서버를 켜고 이 저장된 패키지를 업로드하고 설치할 수 있으며 이러한 가장 기본적인 단계를 반복하지 않아도 됩니다.
+이 시점에는 최소한의 샌드박스가 존재하며 재생하는 동안 저장소가 손상되어 다시 시작하려는 경우 서버를 끄고 crx-quickstart/ 폴더의 이름을 바꾸거나 삭제하고 서버를 켜고 저장된 패키지를 업로드 및 설치할 수 있도록 패키지로 저장할 가치가 있을 수 있으므로 이러한 가장 기본적인 단계를 반복하지 않아도 됩니다.
 
-이 패키지는 [샘플 페이지 만들기](/help/communities/create-sample-page.md) 빨리 뛰어들어 재생을 시작하는 사용자를 위한 튜토리얼...
+이 패키지는 [샘플 페이지 만들기](/help/communities/create-sample-page.md) 어서 뛰어들어 게임을 시작하는 사람들을 위한 자습서!..
 
 패키지를 만들려면 다음을 수행하십시오.
 
@@ -167,22 +167,22 @@ include 문은 `head` 섹션 `html` 스크립트. 기본값 **`foundation head.j
    * 그룹: `leave as default`
    * **확인**&#x200B;을 클릭합니다
 
-* **편집**&#x200B;을 클릭합니다
+* 클릭 **편집**
 
    * 선택 **필터** 탭
 
       * 클릭 **필터 추가**
-      * 루트 경로: 찾아보기 `/apps/an-scf-sandbox`
+      * 루트 경로: 다음으로 이동 `/apps/an-scf-sandbox`
       * 클릭 **완료**
       * 클릭 **필터 추가**
-      * 루트 경로: 찾아보기 `/etc/designs/an-scf-sandbox`
+      * 루트 경로: 다음으로 이동 `/etc/designs/an-scf-sandbox`
       * 클릭 **완료**
       * 클릭 **필터 추가**
-      * 루트 경로: 찾아보기 `/content/an-scf-sandbox**`
+      * 루트 경로: 다음으로 이동 `/content/an-scf-sandbox**`
       * 클릭 **완료**
    * **저장**&#x200B;을 클릭합니다
 
 
 * 클릭 **빌드**
 
-이제 다음을 선택할 수 있습니다 **다운로드** 디스크에 저장하고 **패키지 업로드** 다른 곳에서 선택할 수 있습니다. **자세히 > 복제** 샌드박스를 localhost 게시 인스턴스에 푸시하여 샌드박스의 영역을 확장하려면
+이제 다음을 선택할 수 있습니다. **다운로드** 디스크에 저장하고 **패키지 업로드** 다른 곳과 일부 **자세히 > 복제** 샌드박스를 localhost 게시 인스턴스로 푸시하여 샌드박스의 영역을 확장합니다.

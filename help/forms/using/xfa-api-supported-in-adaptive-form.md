@@ -248,7 +248,7 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
   </tr>
   <tr>
    <td><p>필수(nullTest)</p> </td>
-   <td><p>mandatory </p> </td>
+   <td><p>필수 </p> </td>
   </tr>
   <tr>
    <td><p>빈 메시지(nullTestMessage) </p> </td>

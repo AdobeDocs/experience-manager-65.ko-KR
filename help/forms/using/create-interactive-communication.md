@@ -249,7 +249,7 @@ ht-degree: 1%
 
    ![첨부 파일](assets/attachfiles.png)
 
-1. **[!UICONTROL Done]**&#x200B;을 누릅니다.
+1. 누르기 **[!UICONTROL 완료]**.
 
 ### XDP/레이아웃 필드 속성 {#xdplayoutfieldproperties}
 

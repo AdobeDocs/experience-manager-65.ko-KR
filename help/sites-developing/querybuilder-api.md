@@ -75,7 +75,7 @@ path=/content
 orderby=path
 ```
 
-동일한 쿼리(매개 변수 사용) `p.limit=-1`) **모든 결과 반환** (인스턴스에 따라 높은 숫자가 될 수 있습니다.)
+동일한 쿼리(매개 변수 포함) `p.limit=-1`) **모든 결과 반환** (인스턴스에 따라 높은 숫자가 될 수 있습니다.)
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.limit=-1&orderby=path`
 

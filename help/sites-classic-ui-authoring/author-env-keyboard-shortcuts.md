@@ -1,6 +1,6 @@
 ---
 title: 콘솔용 키보드 단축키
-description: AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 콘솔에 사용되는 키보드 단축키도 있고 페이지 편집에 사용되는 키보드 단축키도 있습니다.
+description: AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 콘솔 사용에 적용되고 일부는 페이지 편집에 적용됩니다.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -21,11 +21,11 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 >[!NOTE]
 >
->데스크톱 장치에서 다중 선택:
+>데스크탑 장치에서 다중 선택:
 >
->* Windows: **Ctrl**+**click** 필요한 구성 요소에 한합니다.
+>* Windows: **Ctrl**+**클릭** 필수 구성 요소.
 >
->* Mac: **Cmd**+**click** 필요한 구성 요소에 한합니다.
+>* Mac: **Cmd**+**클릭** 필수 구성 요소.
 >
 
 
@@ -35,15 +35,15 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
  <tbody>
   <tr>
    <th>위치</th>
-   <th>바로 가기</th>
+   <th>단축키</th>
    <th>설명</th>
   </tr>
   <tr>
    <td>콘솔</td>
-   <td><strong><code>Shift-Double-Click</code></strong><br /> (필요한 페이지에서)</td>
-   <td>페이지를 새 창에서 엽니다.<br /> <strong>참고:</strong> 이 기능은 <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">사용자 속성</a> 단일 창으로 설정되어 있습니다. 창이 여러 개일 경우 기본 동작입니다.</td>
+   <td><strong><code>Shift-Double-Click</code></strong><br /> (필수 페이지에서)</td>
+   <td>새 창에서 페이지를 엽니다.<br /> <strong>참고:</strong> 다음과 같은 경우 작동 <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">사용자 속성</a> 단일 창으로 설정됩니다. 다중 창인 경우 기본 동작입니다.</td>
   </tr>
  </tbody>
 </table>
 
-데스크톱 사용자는 [페이지 편집기](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) 페이지를 작성하도록 했습니다.
+데스크탑 사용자는 를 사용할 때 다양한 키보드 단축키를 사용할 수 있습니다. [페이지 편집기](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) 을 클릭하여 페이지를 작성합니다.

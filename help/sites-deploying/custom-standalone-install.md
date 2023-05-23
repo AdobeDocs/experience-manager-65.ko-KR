@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 독립형 설치
+title: 사용자 지정 독립 실행형 설치
 seo-title: Custom Standalone Install
 description: 독립 실행형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 알아봅니다.
 seo-description: Learn about the options available when installing a standalone AEM instance.
@@ -9,11 +9,11 @@ exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
 source-wordcount: '1622'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# 사용자 지정 독립형 설치{#custom-standalone-install}
+# 사용자 지정 독립 실행형 설치{#custom-standalone-install}
 
 이 섹션에서는 독립형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 설명합니다. 다음을 읽을 수도 있습니다. [저장소 요소](/help/sites-deploying/storage-elements-in-aem-6.md) AEM 6을 새로 설치한 후 백엔드 스토리지 유형을 선택하는 방법에 대한 자세한 정보.
 

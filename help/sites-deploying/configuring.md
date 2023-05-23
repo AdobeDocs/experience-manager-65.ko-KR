@@ -281,7 +281,7 @@ AEM 프로세스가 이 최대값을 초과하는 경우 &quot; `too many open f
 
 다음 [비디오 구성 요소](/help/sites-authoring/default-components-foundation.md#video) 에서는 사전 정의된 기본 비디오 요소를 페이지에 배치할 수 있습니다.
 
-변환이 올바르게 수행되려면 관리자가 별도로 [FFmpeg를 설치](/help/sites-administering/config-video.md#install-ffmpeg)해야 합니다. 또한 다음과 같은 작업을 수행할 수 있습니다. [비디오 프로필 구성](/help/sites-administering/config-video.md#configure-video-profiles) html5 요소와 함께 사용됩니다.
+적절한 코드 변환이 수행되려면 관리자가 수행해야 합니다 [FFmpeg 설치](/help/sites-administering/config-video.md#install-ffmpeg) 별도로. 또한 다음과 같은 작업을 수행할 수 있습니다. [비디오 프로필 구성](/help/sites-administering/config-video.md#configure-video-profiles) html5 요소와 함께 사용됩니다.
 
 ### 보고서 구성 및 사용자 지정 {#configuring-and-customizing-reports}
 

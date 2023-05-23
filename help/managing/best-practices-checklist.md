@@ -1,7 +1,7 @@
 ---
 title: 검사 목록
 seo-title: The Checklist
-description: 프로젝트 확인 목록은 프로젝트 전달에 대한 모범 사례 세트로 제공됩니다. 프로젝트 라이프 사이클의 모든 단계를 안내하고 현재 상태에 대한 높은 수준의 모니터링을 제공합니다.
+description: 프로젝트 체크리스트는 프로젝트 게재를 위한 모범 사례 세트입니다. 프로젝트 수명 주기의 모든 단계를 안내하고 현재 상태에 대한 높은 수준의 모니터링을 제공합니다.
 seo-description: The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
 uuid: e8ab9042-4d54-445d-b104-23d5d38f58b6
 contentOwner: User
@@ -19,9 +19,9 @@ ht-degree: 2%
 
 # 검사 목록{#the-checklist}
 
-프로젝트 확인 목록은 프로젝트 전달에 대한 모범 사례 세트로 제공됩니다. 프로젝트 라이프 사이클의 모든 단계를 안내하고 현재 상태에 대한 높은 수준의 모니터링을 제공합니다.
+프로젝트 체크리스트는 프로젝트 게재를 위한 모범 사례 세트입니다. 프로젝트 수명 주기의 모든 단계를 안내하고 현재 상태에 대한 높은 수준의 모니터링을 제공합니다.
 
-프로젝트에 포함된 각 사용자(역할)에 대한 확인 목록이 있습니다. 이러한 내용은 단계 및 이정표별로 분류된 결과물을 자세히 설명합니다. 산출물 생성에 필요한 문서도 표시됩니다. 문서의 상태 및 품질을 추적하여 프로젝트의 상태를 전체적으로 모니터링할 수 있으므로 투명성과 신뢰성을 제공합니다.
+프로젝트에 관련된 각 담당자(역할)에 대한 확인 목록이 있습니다. 결과물에 대한 세부 정보는 단계 및 이정표별로 분류됩니다. 산출물을 생성하는 데 필요한 문서도 표시됩니다. 문서의 상태와 품질을 추적하여 프로젝트 전체의 상태를 모니터링할 수 있으므로 투명성과 신뢰성을 확보할 수 있습니다.
 
 ## 다운로드 {#download}
 
@@ -34,24 +34,24 @@ AEM 프로젝트 우수 사례 검사 목록 v2
 스프레드시트는 다음 워크시트를 제공합니다.
 
 * **지침**
-   * 사용된 메커니즘에 대한 설명과 함께 스프레드시트를 사용하는 방법에 대한 지침을 제공합니다.
+   * 사용된 메커니즘에 대한 설명과 함께 스프레드시트 사용 방법에 대한 지침을 제공합니다.
 * **[프로젝트 하트비트](/help/managing/best-practices.md#project-heartbeat-dashboard)**
 * **[역할별 상태](/help/managing/best-practices.md#status-by-role)**
-* 에 따라 일련의 확인 목록이 표시됩니다. [페르소나](/help/managing/best-practices.md#persona), [단계 및 이정표](/help/managing/best-practices.md#phases-and-milestones)
+* 에 따른 일련의 체크리스트 [담당자](/help/managing/best-practices.md#persona), [단계 및 이정표](/help/managing/best-practices.md#phases-and-milestones)
 * **용어 설명**
-   * 용어집에서는 프로젝트 체크리스트에 있는 모든 산출물 문서의 상세내역을 나열합니다.
-   * 다음 [용어 설명](/help/managing/best-practices-glossary.md) 은 설명서의 일부로 사용할 수도 있습니다.
-* **[성향 정의](/help/managing/best-practices.md#persona)**
+   * 용어집에는 프로젝트 체크리스트의 모든 산출물 문서의 세부내용이 나열됩니다.
+   * 다음 [용어집](/help/managing/best-practices-glossary.md) 는 설명서의 일부로도 사용할 수 있습니다.
+* **[사용자 정의](/help/managing/best-practices.md#persona)**
 
-## 확인 목록 사용 {#using-the-checklists}
+## 체크리스트 사용 {#using-the-checklists}
 
-고품질 프로젝트를 성공적으로 게재하려면 체크목록의 모든 항목을 가급적 순서대로 완료해야 합니다.
+고품질 프로젝트를 성공적으로 게재하려면 체크목록의 모든 항목을 다음 순서로 완료해야 합니다.
 
-1. 확인 목록은 **[페르소나](/help/managing/best-practices.md#persona)** (역할)에 포함될 수도 있습니다. 각 사용자는 프로젝트에서 해당 역할에 적합한 검사 목록을 사용해야 합니다.
-1. 확인 목록은 **[필수 문서](/help/managing/best-practices.md#required-documents)** 및 **[결과물](/help/managing/best-practices.md#deliverables)** 각 이정표에 대해 - 관련 성향은 상태 및 품질 필드를 적절하게 설정해야 합니다.
+1. 체크리스트는 다음에 따라 정의됩니다. **[담당자](/help/managing/best-practices.md#persona)** (역할)이 포함됩니다. 각 사용자는 프로젝트에서 자신의 역할에 적합한 체크리스트를 사용해야 합니다.
+1. 체크리스트에는 다음이 포함됩니다. **[필수 문서](/help/managing/best-practices.md#required-documents)** 및 **[결과물](/help/managing/best-practices.md#deliverables)** 각 이정표에 대해 관련 담당자는 상태 및 품질 필드를 적절하게 설정해야 합니다.
 
    >[!NOTE]
    >
-   >개별 필수 문서와 결과물 간에 직접 1:1 관계가 없습니다.
+   >개별 필수 문서와 결과물 간에 직접적인 1:1 관계는 없습니다.
 
-1. 상태 기준 **[필수 문서](/help/managing/best-practices.md#required-documents)** 및 **[결과물](/help/managing/best-practices.md#deliverables)**, 워크시트 **[프로젝트 하트비트](/help/managing/best-practices.md#project-heartbeat-dashboard)** 및 **[역할별 상태](/help/managing/best-practices.md#status-by-role)** 은 프로젝트의 진행 상황과 상태를 최신 정보로 표시하도록 자동으로 업데이트됩니다.
+1. 의 상태에 따라 **[필수 문서](/help/managing/best-practices.md#required-documents)** 및 **[결과물](/help/managing/best-practices.md#deliverables)**, 워크시트 **[프로젝트 하트비트](/help/managing/best-practices.md#project-heartbeat-dashboard)** 및 **[역할별 상태](/help/managing/best-practices.md#status-by-role)** 는 프로젝트의 진행 상황과 상태를 최신 상태로 표시하도록 자동으로 업데이트됩니다.

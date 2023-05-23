@@ -6,7 +6,7 @@ exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 source-git-commit: 85f8da2a30e1bb5b78cbb36cd9b79939dd913251
 workflow-type: tm+mt
 source-wordcount: '1586'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -356,14 +356,14 @@ query {
 }
 ```
 
-### 샘플 쿼리 - 모든 도시의 이름 City Break로 태그가 지정됨 {#sample-names-all-cities-tagged-city-breaks}
+### 샘플 쿼리 - 모든 도시의 이름 City Break로 태그 지정됨 {#sample-names-all-cities-tagged-city-breaks}
 
 다음과 같은 경우:
 
-* 이름이 지정된 다양한 태그 만들기 `Tourism` : `Business`, `City Break`, `Holiday`
-* 그리고 이것을 다양한 종류의 기본 변형에 할당해 `City` 인스턴스
+* 다음과 같은 다양한 태그를 만듭니다. `Tourism` : `Business`, `City Break`, `Holiday`
+* 다양한 유형의 기본 변형에 할당 `City` 인스턴스
 
-그런 다음 쿼리를 사용하여 `name` 및 `tags`의 City Break로 태그가 지정된 모든 항목 `city`스키마.
+그런 다음 쿼리를 사용하여 `name` 및 `tags`의 모든 게시물에 도시 브레이크로 태그가 지정됨 `city`스키마.
 
 **샘플 쿼리**
 
@@ -1323,16 +1323,16 @@ query {
 
 ### 중첩된 콘텐츠 조각에 대한 샘플 쿼리 - 복수 모델 유형{#sample-wknd-nested-fragment-multiple-model}
 
-#### 단일 참조 모델 유형
+#### 단일 참조된 모델 유형
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * `bookmark` 유형의 복수 콘텐츠 조각
-   * 조각 참조 를 사용하여 특정 모델 유형의 다른 조각에 대한 참조 `Article`
+   * 특정 모델 유형 `Article`의 다른 조각에 대한 조각 참조 포함
 
 >[!NOTE]
 >
->필드 `fragments` 에는 데이터 유형이 있습니다 `fragment-reference`, 모델 사용 `Article` 선택됨. 쿼리 전달 `fragments` 일련의 `[Article]`.
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리는 `fragments`의 배열로 `[Article]` 제공.
 
 ```graphql
 {
@@ -1347,7 +1347,7 @@ query {
 }
 ```
 
-#### 여러 참조 모델 유형
+#### 다중 참조된 모델 유형
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
@@ -1356,7 +1356,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 필드에는 `fragment-reference` 데이터 유형이 있습니다. `Article`, `Adventure` 모델이 선택되어 있습니다. 쿼리 전달 `fragments` 일련의 `[AllFragmentModels]`- 공용 구조체 유형으로 참조되지 않습니다.
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article`, `Adventure` 모델이 선택됩니다. 쿼리는 공용 구조체 형식으로 참조되지 않은 `[AllFragmentModels]`의 배열로 `fragments`을 제공합니다.
 
 ```graphql
 {
@@ -1561,11 +1561,11 @@ query {
 }
 ```
 
-### 주어진 모델의 여러 컨텐츠 조각 및 변형에 대한 샘플 쿼리 {#sample-wknd-multiple-fragment-variations-given-model}
+### 주어진 모델의 여러 콘텐츠 조각 및 해당 변형에 대한 샘플 쿼리 {#sample-wknd-multiple-fragment-variations-given-model}
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 컨텐츠 조각 유형의 경우 `article` 및 모든 변형
+* 유형의 콘텐츠 조각 `article` 및 모든 변형
 
 **샘플 쿼리**
 
@@ -1588,11 +1588,11 @@ query {
 }
 ```
 
-### 특정 태그가 첨부된 주어진 모델의 컨텐츠 조각 변형에 대한 샘플 쿼리{#sample-wknd-fragment-variations-given-model-specific-tag}
+### 특정 태그가 첨부된 특정 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 컨텐츠 조각 유형의 경우 `article` 하나 이상의 태그와 함께 `WKND : Activity / Hiking`
+* 유형의 콘텐츠 조각 `article` 하나 이상의 변형 포함(태그 포함) `WKND : Activity / Hiking`
 
 **샘플 쿼리**
 

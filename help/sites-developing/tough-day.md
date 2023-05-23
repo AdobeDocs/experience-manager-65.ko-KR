@@ -51,7 +51,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >
 >Tough Day 2에는 정리 단계가 없습니다. 따라서 주 프로덕션 인스턴스가 아닌 복제된 스테이징 인스턴스에서 Tough Day 2를 실행하는 것이 좋습니다. 테스트 후에 스테이징 인스턴스를 삭제해야 합니다.
 
-### 도움 받기 {#getting-help}
+### 도움말 보기 {#getting-help}
 
 Tough Day 2는 명령줄에서 액세스할 수 있는 다양한 도움말 옵션을 제공합니다. 예:
 

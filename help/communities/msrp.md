@@ -14,7 +14,7 @@ exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1191'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -100,7 +100,7 @@ Solr 컬렉션 이름입니다.
 
          *기본값*: collection1
 
-* **[!UICONTROL 제출]**&#x200B;을 선택합니다
+* 선택 **[!UICONTROL 제출]**
 
 >[!NOTE]
 >
@@ -128,13 +128,13 @@ mongodb://mongoserver1:<mongoport1>,mongoserver2:<mongoport2>,mongoserver3:<mong
 
 Solr 설치는 다른 컬렉션을 사용하여 노드 저장소(Oak)와 공통 저장소(MSRP) 간에 공유할 수 있습니다.
 
-Oak 및 MSRP 컬렉션을 모두 집중적으로 사용하는 경우 성능상의 이유로 두 번째 Solr을 설치할 수 있습니다.
+Oak 컬렉션과 MSRP 컬렉션을 모두 집중적으로 사용하는 경우 성능상의 이유로 두 번째 Solr을 설치할 수 있습니다.
 
 프로덕션 환경의 경우 [SolrCloud 모드](solr.md#solrcloud-mode) 는 독립형 모드(단일 로컬 Solr 설정)보다 향상된 성능을 제공합니다.
 
 구성에 대한 자세한 내용은 [SRP에 대한 Solr 구성](solr.md).
 
-### 업그레이드 {#upgrading}
+### 업그레이드 중 {#upgrading}
 
 MSRP로 구성된 이전 버전에서 업그레이드하는 경우 다음을 수행해야 합니다.
 

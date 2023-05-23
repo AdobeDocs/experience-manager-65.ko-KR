@@ -245,7 +245,7 @@ Experience Manager - Dynamic Media을 6.3에서 6.5로 업그레이드하는 경
 
 Dynamic Media 이미지 게재는 Experience Manager 작성자로부터 비디오 썸네일을 포함한 이미지 에셋을 게시하고 Adobe의 온디맨드 복제 서비스(복제 서비스 URL)에 복제하여 작동합니다. 그런 다음 에셋은 온디맨드 이미지 제공 서비스(이미지 서비스 URL)를 통해 전달됩니다.
 
-다음을 수행합니다.
+다음 작업을 수행합니다.
 
 1. [인증 설정](#setting-up-authentication).
 1. [복제 에이전트 구성](#configuring-the-replication-agent).
@@ -1178,7 +1178,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 을 12445.
 * RGB 출력을 반환하고 *sRGB *색상 공간으로 반환하는 동적 변환입니다.
 * CMYK 출력을 반환하는 동적 변환은에서 반환합니다. *웹 코팅* 색상 공간.
 
-## 자산 제공 {#delivering-assets}
+## 에셋 제공 {#delivering-assets}
 
 위의 모든 작업을 완료하면 이미지 또는 비디오 서비스에서 활성화된 Dynamic Media 자산이 제공됩니다. Experience Manager에서 이 기능은 **[!UICONTROL 이미지 URL 복사]**, **[!UICONTROL 뷰어 URL 복사]**, **[!UICONTROL 포함 뷰어 코드]** WCM의 , 및 입니다.
 

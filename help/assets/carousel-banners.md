@@ -406,7 +406,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 캐러셀을 만들기 위해 배너 이미지를 업로드하고, 배너에 핫스팟 및/또는 이미지 맵을 추가하고, 캐러셀 세트를 게시하면 이제 기존 웹 사이트 페이지에 추가할 준비가 된 것입니다.
 
 >[!NOTE]
-Experience Manager Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 회전식 배너를 페이지에 바로 추가할 수 있습니다. 다음을 참조하십시오 [페이지에 Dynamic Media 에셋 추가](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 회전식 배너를 페이지에 바로 추가할 수 있습니다. 다음을 참조하십시오 [페이지에 Dynamic Media 에셋 추가](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 그러나 독립형 Experience Manager 에셋 고객의 경우 이 섹션에 설명된 대로 웹 사이트 랜딩 페이지에 슬라이드 배너를 수동으로 추가할 수 있습니다.
 
@@ -453,6 +453,6 @@ Quickview URL을 구성하는 프로세스는 이전에 설명한 핫스팟 및 
 
 빠른 보기 URL을 트리거하고 빠른 보기 패널을 활성화하는 마지막 단계는 IT 부서의 프론트엔드 IT 직원의 지원이 필요할 수 있습니다. 바로 사용 가능한 빠른 보기 URL을 가지고 적절한 단계에서 빠른 보기 구현을 정확하게 트리거하는 방법을 가장 잘 알고 있는 지식을 보유하고 있습니다.
 
-## 빠른 보기를 사용하여 맞춤형 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
+## 빠른 보기를 사용하여 사용자 정의 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
 
 다음을 참조하십시오 [빠른 보기를 사용하여 사용자 지정 팝업 만들기](/help/assets/custom-pop-ups.md).

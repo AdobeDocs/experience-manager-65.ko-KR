@@ -19,7 +19,7 @@ AEM 받은 편지함을 사용하여 OSGi에서 Forms 중심의 AEM 워크플로
 <table>
  <tbody>
   <tr>
-   <td>액션</td>
+   <td>작업</td>
    <td>AEM 받은 편지함</td>
    <td>HTML 작업 영역</td>
   </tr>
@@ -403,7 +403,7 @@ Forms 중심 워크플로우를 시작하는 두 가지 두드러진 방법은 �
 <table>
  <tbody>
   <tr>
-   <td><p><strong>액션</strong></p> </td>
+   <td><p><strong>작업</strong></p> </td>
    <td><p><strong>AEM 받은 편지함</strong></p> </td>
    <td><p><strong>AEM Forms 앱</strong></p> </td>
   </tr>

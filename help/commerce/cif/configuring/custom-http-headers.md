@@ -1,5 +1,5 @@
 ---
-title: 맞춤형 HTTP 헤더
+title: 사용자 정의 HTTP 헤더
 description: 사용자 지정 HTTP 헤더 구성
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
@@ -9,7 +9,7 @@ ht-degree: 5%
 
 ---
 
-# 맞춤형 HTTP 헤더 {#custom-http-headers}
+# 사용자 정의 HTTP 헤더 {#custom-http-headers}
 
 ## 개요 {#overview}
 

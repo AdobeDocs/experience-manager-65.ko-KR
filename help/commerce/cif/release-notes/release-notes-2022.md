@@ -1,6 +1,6 @@
 ---
-title: AEM Content and Commerce 릴리스 노트 2022
-description: AEM Content and Commerce 릴리스 노트 2022
+title: 2022년 AEM Content and Commerce 릴리스 노트
+description: 2022년 AEM Content and Commerce 릴리스 노트
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
 source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
 workflow-type: tm+mt
@@ -13,12 +13,12 @@ ht-degree: 48%
 
 ## 시스템 요구 사항 개요
 
-현재 사용 중인 CIF 버전 또는 향후 사용할 예정인 최소 시스템 요구 사항을 아래 표에서 검토하십시오.
+현재 사용 중이거나 향후 사용할 CIF 버전에 대한 아래 표의 최소 시스템 요구 사항을 검토하십시오.
 
 | 구성 요소 | 시스템 요구 사항 |
 |:-------|:-----:|
 | CIF 추가 기능 | 최소: AEM 6.5.7, Magento 2.3.5 GraphQL 스키마 |
-| CIF 코어 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
+| CIF 핵심 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM Project Archetype | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
 ## 릴리스 날짜: 2022년 9월
@@ -26,15 +26,15 @@ ht-degree: 48%
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
 | CIF 추가 기능 | 2022.09.20.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.09.20.00.zip) |
-| CIF 코어 구성 요소 | 2.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
+| CIF 핵심 구성 요소 | 2.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
 | CIF Venia 참조 사이트 | 2022.09.02 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.09.02) |
 
 ### 새로운 기능 {#what-is-new-september}
 
-* 작성자는 경험 조각으로 제품 목록을 동적으로 보강할 수 있습니다(예: 제품 목록 사이에 배너 배치)
-* 목록 구성 요소는 관련 페이지를 동적으로 표시하도록 관련 제품/카테고리 페이지를 지원합니다
-* Pergrine 12.5 구성 요소 지원
-* 제품 티저 및 회전판에서 클라이언트측 가격 로드 지원
+* 작성자는 경험 조각을 사용하여 제품 목록을 동적으로 보강할 수 있습니다(예: 제품 목록 사이에 배너 배치)
+* 목록 구성 요소는 관련 페이지를 동적으로 표시하는 관련 제품/카테고리 페이지를 지원합니다.
+* Peregrine 12.5 구성 요소 지원
+* 제품 티저 및 캐러셀의 클라이언트측 가격 로드 지원
 
 ## 릴리스 날짜: 2022년 7월
 
@@ -52,7 +52,7 @@ ht-degree: 48%
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
 | CIF 추가 기능 | 2022.07.05.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
-| CIF 코어 구성 요소 | 2.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
+| CIF 핵심 구성 요소 | 2.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
 | CIF Venia 참조 사이트 | 2022.07.04 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
 
 ### 새로운 기능 {#what-is-new-june}
@@ -72,7 +72,7 @@ ht-degree: 48%
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
 | CIF 추가 기능 | 2022.05.31.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.05.31.00.zip) |
-| CIF 코어 구성 요소 | 2.9.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.9.0) |
+| CIF 핵심 구성 요소 | 2.9.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.9.0) |
 | CIF Venia 참조 사이트 | 2022.05.30 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.05.30) |
 
 ### 새로운 기능 {#what-is-new-may}
@@ -83,7 +83,7 @@ ht-degree: 48%
 
 * I/O Runtime의 서드파티 커넥터에 대한 호환성 및 견고함이 개선되었습니다.
 
-* GQL 클라이언트 구성 덮어쓰기(예: 사용자 지정 캐싱 동작 설정)에 대한 지원을 개선합니다
+* GQL 클라이언트 구성 덮어쓰기(예: 사용자 지정 캐싱 비헤이비어 설정)에 대한 지원 개선
 
 ### 버그 수정 {#bug-fixes-may}
 
@@ -96,7 +96,7 @@ ht-degree: 48%
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
 | CIF 추가 기능 | 2022.04.28.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.04.28.00.zip) |
-| CIF 코어 구성 요소 | 2.8.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
+| CIF 핵심 구성 요소 | 2.8.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
 | CIF Venia 참조 사이트 | 2022.04.28 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28) |
 
 ### 새로운 기능 {#what-is-new-april}
@@ -114,7 +114,7 @@ ht-degree: 48%
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
 | CIF 추가 기능 | 2022.02.24.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.02.24.00.zip) |
-| CIF 코어 구성 요소 | 2.6.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) |
+| CIF 핵심 구성 요소 | 2.6.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) |
 | CIF Venia 참조 사이트 | 2022.02.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.02.24) |
 
 ### 새로운 기능 {#what-is-new-march}
@@ -130,7 +130,7 @@ ht-degree: 48%
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
 | CIF 추가 기능 | 2022.01.20.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.01.20.00.zip) |
-| CIF 코어 구성 요소 | 2.5.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.5.0) |
+| CIF 핵심 구성 요소 | 2.5.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.5.0) |
 | CIF Venia 참조 사이트 | 2022.01.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.01.27) |
 
 ### 새로운 기능 {#what-is-new-january}

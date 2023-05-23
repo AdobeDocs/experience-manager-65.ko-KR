@@ -5,7 +5,7 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
 workflow-type: tm+mt
 source-wordcount: '3536'
-ht-degree: 59%
+ht-degree: 58%
 
 ---
 
@@ -374,9 +374,9 @@ AEM은 번역 작업이 콘텐츠의 초기 작업을 위해 생성되는지 또
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
-1. 두 페이지(론치와 소스)가 나란히 열립니다.
+1. 두 페이지(launch 및 source)가 나란히 열립니다.
 
-   이 기능의 사용에 대한 자세한 내용은 [페이지 비교](/help/sites-authoring/page-diff.md)를 참조하십시오.
+   이 기능 사용에 대한 전체 정보는 다음을 참조하십시오. [페이지 비교](/help/sites-authoring/page-diff.md).
 
 ## 번역 작업 완료 및 보관 {#completing-and-archiving-translation-jobs}
 

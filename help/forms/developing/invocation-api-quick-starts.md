@@ -1,7 +1,7 @@
 ---
 title: 호출 API 빠른 시작
 seo-title: Invocation API Quick Starts
-description: Quick Starts를 사용하여 AEM Forms 서비스를 프로그래밍 방식으로 호출합니다.
+description: 빠른 시작을 사용하여 AEM Forms 서비스를 프로그래밍 방식으로 호출합니다.
 seo-description: Use the Quick Starts to programmatically invoke AEM Forms services.
 uuid: acf67177-98a4-4c99-95a5-3086907d7c2c
 contentOwner: admin
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 # 호출 API 빠른 시작 {#invocation-api-quick-starts}
 
-**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms용입니다.**
+**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
-AEM Forms 서비스를 프로그래밍 방식으로 호출하는 데 다음 빠른 시작을 사용할 수 있습니다.
+다음 빠른 시작은 프로그래밍 방식으로 AEM Forms 서비스를 호출하는 데 사용할 수 있습니다.
 
 <table>
  <thead>
@@ -35,10 +35,10 @@ AEM Forms 서비스를 프로그래밍 방식으로 호출하는 데 다음 빠�
  </thead>
  <tbody>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking_human_centric_long_lived_processes">인간 중심 장기 프로세스 호출</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking-a-long-lived-process-using-remoting">AEM Forms Remoting에서 (AEM Forms에서 더 이상 사용되지 않음) 을 사용하여 오래 지속된 프로세스 호출</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_invocation_api">빠른 시작: Invocation API를 사용하여 장기 프로세스 호출</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_web_service_api">빠른 시작: 웹 서비스 API를 사용하여 장기간 프로세스 호출</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking_human_centric_long_lived_processes">인간 중심의 장기 프로세스 호출</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking-a-long-lived-process-using-remoting">(AEM Forms에서 더 이상 사용되지 않는 기능)AEM Forms Remoting을 사용하여 오래 지속되는 프로세스 호출</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_invocation_api">빠른 시작: 호출 API를 사용하여 장기 프로세스 호출</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_web_service_api">빠른 시작: 웹 서비스 API를 사용하여 오래 지속되는 프로세스 호출</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">호출 API를 사용하여 단기 프로세스 호출</a></p></td>
@@ -65,59 +65,59 @@ AEM Forms 서비스를 프로그래밍 방식으로 호출하는 데 다음 빠�
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_mtom_in_a_net_project">빠른 시작: .NET 프로젝트에서 MTOM을 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref">SwaRef를 사용하여 AEM Forms 호출</a> (Java 웹 서비스 예제)</p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref">SwaRef를 사용하여 AEM Forms 호출</a> (Java 웹 서비스 예)</p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_swaref_in_a_java_project">빠른 시작: Java 프로젝트에서 SwaRef를 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">HTTP에서 BLOB 데이터를 사용하여 AEM Forms 호출</a> (Java 웹 서비스 예제)</p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">HTTP를 통해 BLOB 데이터를 사용하여 AEM Forms 호출</a> (Java 웹 서비스 예)</p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_net_project">빠른 시작: .NET 프로젝트에서 HTTP를 통해 BLOB 데이터를 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">HTTP에서 BLOB 데이터를 사용하여 AEM Forms 호출</a> (.NET 웹 서비스 예제)</p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">HTTP를 통해 BLOB 데이터를 사용하여 AEM Forms 호출</a> (.NET 웹 서비스 예제)</p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_java_project">빠른 시작: Java 프로젝트에서 HTTP를 통해 BLOB 데이터를 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime">DIME를 사용하여 AEM Forms 호출</a> (Java 웹 서비스 예제)</p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime">DIME를 사용하여 AEM Forms 호출</a> (Java 웹 서비스 예)</p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_dime_in_a_java_project">빠른 시작: Java 프로젝트에서 DIME를 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">AEM Forms Remoting을 사용하여 AEM Forms 호출(AEM Forms에서 더 이상 사용되지 않음)</a></p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">빠른 시작: AEM Forms Remoting을 사용하여 (AEM Forms에서 더 이상 사용되지 않음) 비보안 문서를 전달하여 단기 프로세스 호출</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">(AEM Forms에서 더 이상 사용되지 않는 기능)AEM Forms 원격을 사용하여 AEM Forms 호출</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">빠른 시작: (AEM Forms에서는 더 이상 사용되지 않음) AEM Forms Remoting을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출</a></p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#passing_secure_documents_to_invoke_processes_using_remoting">Remoting을 사용하여 프로세스를 호출하는 보안 문서 전달</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">빠른 시작: AEM Forms Remoting을 사용하여 보안 문서를 전달하여 단기 프로세스를 호출하는 중(AEM Forms에서 더 이상 사용되지 않음)</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#passing_secure_documents_to_invoke_processes_using_remoting">원격을 사용하여 프로세스를 호출하는 보안 문서 전달</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">빠른 시작: (AEM Forms에서는 더 이상 사용되지 않음) AEM Forms Remoting을 사용하여 보안 문서를 전달하여 단기 프로세스 호출</a></p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking_custom_component_services_using_remoting">원격을 사용하여 사용자 지정 구성 요소 서비스 호출</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">빠른 시작: AEM Forms Remoting을 사용하여 고객 사용자 지정 서비스 호출(AEM Forms에서 더 이상 사용되지 않음)</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">빠른 시작: (AEM Forms에서는 더 이상 사용되지 않음) AEM Forms 원격을 사용하여 고객 사용자 지정 서비스 호출</a></p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
   </tr>
  </tbody>
 </table>
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms로 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 자세한 내용은 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms를 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## 빠른 시작: 호출 API를 사용하여 단기 프로세스 호출 {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
 
-다음 Java 코드 예는 이름이 인 단기 프로세스를 호출합니다 `MyApplication/EncryptDocument`. 이 프로세스가 동기식으로 호출됩니다. 이 프로세스에 대한 입력 매개 변수의 이름은 다음과 같습니다 `inDoc`. 이 프로세스에 대한 출력 매개 변수의 이름은 다음과 같습니다 `outDoc`. 암호로 암호화된 PDF 문서는 이름이 인 PDF 파일로 저장됩니다. `EncryptLoan.pdf`. (자세한 내용은 [호출 API를 사용하여 단기 프로세스 호출](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api))
+다음 Java 코드 예제는 이라는 단기 프로세스를 호출합니다 `MyApplication/EncryptDocument`. 이 프로세스는 동기적으로 호출됩니다. 이 프로세스에 대한 입력 매개 변수의 이름은 입니다. `inDoc`. 이 프로세스에 대한 출력 매개 변수의 이름은 입니다. `outDoc`. 암호로 암호화된 PDF 문서는 라는 PDF 파일로 저장됩니다. `EncryptLoan.pdf`. (참조: [호출 API를 사용하여 단기 프로세스 호출](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api).)
 
 ```java
  /*
@@ -231,9 +231,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작: Microsoft .NET 프로젝트에서 base64를 사용하여 서비스 호출 {#quick-start-invoking-a-service-using-base64-in-a-microsoft-net-project}
 
-다음 C# 코드 예제에서는 이름이 인 프로세스를 호출합니다 `MyApplication/EncryptDocument` Base64 인코딩을 사용하여 Microsoft .NET 프로젝트에서 편집할 수 있습니다. (자세한 내용은 [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding))
+다음 C# 코드 예제에서는 `MyApplication/EncryptDocument` Base64 인코딩을 사용하는 Microsoft .NET 프로젝트입니다. (참조: [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
-이름이 지정된 PDF 파일을 기반으로 한 비보안 PDF 문서 *Loan.pdf* 이 AEM Forms 프로세스에 전달됩니다. 이 프로세스는 이름이 지정된 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedPDF.pdf*.
+다음 이름의 PDF 파일을 기반으로 하는 비보안 PDF 문서 *Loan.pdf* AEM Forms 프로세스로 전달됩니다. 이 프로세스는 이라는 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedPDF.pdf*.
 
 ```java
  /*
@@ -312,9 +312,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작: Java 프록시 파일 및 Base64 인코딩을 사용하여 서비스 호출 {#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding}
 
-다음 Java 코드 예는 라는 프로세스를 호출합니다 `MyApplication/EncryptDocument` JAX-WS 및 Base64 인코딩을 사용하여 작성된 Java 프록시 파일 사용. (자세한 내용은 [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding))
+다음 Java 코드 예제에서는 라는 프로세스를 호출합니다 `MyApplication/EncryptDocument` jax-WS 및 Base64 인코딩을 사용하여 만든 Java 프록시 파일을 사용합니다. (참조: [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
-이름이 지정된 PDF 파일을 기반으로 한 비보안 PDF 문서 *Loan.pdf* 이 AEM Forms 프로세스에 전달됩니다. 이 프로세스는 이름이 지정된 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedDocument.pdf*.
+다음 이름의 PDF 파일을 기반으로 하는 비보안 PDF 문서 *Loan.pdf* AEM Forms 프로세스로 전달됩니다. 이 프로세스는 이라는 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedDocument.pdf*.
 
 ```java
  /**
@@ -396,9 +396,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작: AEM Forms Remoting을 사용하여 (AEM Forms에서 더 이상 사용되지 않음) 비보안 문서를 전달하여 단기 프로세스 호출 {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
+## 빠른 시작: (AEM Forms에서는 더 이상 사용되지 않음) AEM Forms Remoting을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출 {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
 
-다음 Flex 코드 예는 이름이 인 단기 프로세스를 호출합니다 `MyApplication/EncryptDocument`. (자세한 내용은 [AEM Forms Remoting을 사용하여 AEM Forms 호출(AEM Forms에서 더 이상 사용되지 않음)](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting))
+다음 Flex 코드 예제는 이라는 이름의 단기 프로세스를 호출합니다 `MyApplication/EncryptDocument`. (참조: [(AEM Forms에서 더 이상 사용되지 않는 기능)AEM Forms 원격을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 >[!NOTE]
 >
@@ -555,9 +555,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작: .NET 프로젝트에서 DIME를 사용하여 서비스 호출 {#quick-start-invoking-a-service-using-dime-in-a-net-project}
 
-다음 C# 코드 예제에서는 이름이 인 프로세스를 호출합니다 `MyApplication/EncryptDocument` Dime을 사용하여 Microsoft .NET 프로젝트에서 사용할 수 있습니다. (자세한 내용은 [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding))
+다음 C# 코드 예제에서는 `MyApplication/EncryptDocument` Dime을 사용하는 Microsoft .NET 프로젝트입니다. (참조: [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
-이름이 지정된 PDF 파일을 기반으로 한 비보안 PDF 문서 *map.pdf* 은 DIME를 사용하여 AEM Forms 프로세스에 전달됩니다. 이 프로세스는 이름이 지정된 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *mapEncrypt.pdf*.
+다음 이름의 PDF 파일을 기반으로 하는 비보안 PDF 문서 *map.pdf* 는 DIME를 사용하여 AEM Forms 프로세스로 전달됩니다. 이 프로세스는 이라는 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *mapEncrypt.pdf*.
 
 ```java
  /**
@@ -660,9 +660,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작: Java 프로젝트에서 DIME를 사용하여 서비스 호출 {#quick-start-invoking-a-service-using-dime-in-a-java-project}
 
-다음 Java 코드 예는 라는 프로세스를 호출합니다 `MyApplication/EncryptDocument` 다임 사용. (자세한 내용은 [DIME를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime))
+다음 Java 코드 예제에서는 라는 프로세스를 호출합니다 `MyApplication/EncryptDocument` DIME를 사용합니다. (참조: [DIME를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime).)
 
-이름이 지정된 PDF 파일을 기반으로 한 비보안 PDF 문서 *Loan.pdf* 은 DIME를 사용하여 AEM Forms 프로세스에 전달됩니다. 이 프로세스는 이름이 지정된 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptLoan.pdf*.
+다음 이름의 PDF 파일을 기반으로 하는 비보안 PDF 문서 *Loan.pdf* 는 DIME를 사용하여 AEM Forms 프로세스로 전달됩니다. 이 프로세스는 이라는 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptLoan.pdf*.
 
 ```java
  /**
@@ -761,9 +761,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작: Java 프로젝트에서 HTTP를 통해 BLOB 데이터를 사용하여 서비스 호출 {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-java-project}
 
-다음 Java 코드 예는 라는 프로세스를 호출합니다 `MyApplication/EncryptDocument` http에서 데이터를 사용 중입니다. (자세한 내용은 [HTTP에서 BLOB 데이터를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http))
+다음 Java 코드 예제에서는 라는 프로세스를 호출합니다 `MyApplication/EncryptDocument` HTTP를 통해 데이터를 사용합니다. (참조: [HTTP를 통해 BLOB 데이터를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
-이름이 지정된 PDF 파일을 기반으로 한 비보안 PDF 문서 *Loan.pdf* HTTP를 통해 SOAP를 사용하여 AEM Forms 프로세스에 전달됩니다. PDF 파일은 다음 URL에 있습니다. `https://'[server]:[port]'/FormsQS`. 이 프로세스는 이름이 지정된 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedDocument.pdf*.
+다음 이름의 PDF 파일을 기반으로 하는 비보안 PDF 문서 *Loan.pdf* 는 HTTP를 통해 SOAP를 사용하여 AEM Forms 프로세스로 전달됩니다. PDF 파일은 다음 URL에 있습니다. `https://'[server]:[port]'/FormsQS`. 이 프로세스는 이라는 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedDocument.pdf*.
 
 ```java
  /**
@@ -836,9 +836,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작: .NET 프로젝트에서 HTTP를 통해 BLOB 데이터를 사용하여 서비스 호출 {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project}
 
-다음 C# 코드 예제에서는 이름이 인 프로세스를 호출합니다 `MyApplication/EncryptDocument` http를 통해 데이터를 사용하여 Microsoft .NET 프로젝트에서 편집할 수 있습니다. (자세한 내용은 [HTTP에서 BLOB 데이터를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http))
+다음 C# 코드 예제에서는 `MyApplication/EncryptDocument` HTTP를 통해 데이터를 사용하는 Microsoft .NET 프로젝트입니다. (참조: [HTTP를 통해 BLOB 데이터를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
-이름이 지정된 PDF 파일을 기반으로 한 비보안 PDF 문서 *Loan.pdf* HTTP를 통해 BLOB을 사용하여 AEM Forms 프로세스에 전달됩니다. 이 프로세스는 이름이 지정된 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedPDF.pdf*.
+다음 이름의 PDF 파일을 기반으로 하는 비보안 PDF 문서 *Loan.pdf* 은 HTTP를 통해 BLOB를 사용하여 AEM Forms 프로세스로 전달됩니다. 이 프로세스는 이라는 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedPDF.pdf*.
 
 ```java
  /*
@@ -936,9 +936,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작: .NET 프로젝트에서 MTOM을 사용하여 서비스 호출 {#quick-start-invoking-a-service-using-mtom-in-a-net-project}
 
-다음 C# 코드 예제에서는 이름이 인 프로세스를 호출합니다 `MyApplication/EncryptDocument` MTOM을 사용하여 Microsoft .NET 프로젝트에서 다음을 수행하십시오. (자세한 내용은 [MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom))
+다음 C# 코드 예제에서는 `MyApplication/EncryptDocument` MTOM을 사용하는 Microsoft .NET 프로젝트입니다. (참조: [MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
 
-이름이 지정된 PDF 파일을 기반으로 한 비보안 PDF 문서 *loan.pdf* 은 MTOM을 사용하여 AEM Forms 프로세스에 전달됩니다. 이 프로세스는 이름이 지정된 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedDocument.pdf*.
+다음 이름의 PDF 파일을 기반으로 하는 비보안 PDF 문서 *loan.pdf* 는 MTOM을 사용하여 AEM Forms 프로세스로 전달됩니다. 이 프로세스는 이라는 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedDocument.pdf*.
 
 ```java
  ???/**
@@ -1022,13 +1022,13 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms 서비스 작업을 수행하는 방법을 보여주는 빠른 시작에는 MTOM 코드 예가 포함됩니다.
+>AEM Forms 서비스 작업을 수행하는 방법을 보여 주는 많은 빠른 시작에는 MTOM 코드 예제가 포함됩니다.
 
 ## 빠른 시작: Java 프로젝트에서 SwaRef를 사용하여 서비스 호출 {#quick-start-invoking-a-service-using-swaref-in-a-java-project}
 
-다음 Java 코드 예는 라는 프로세스를 호출합니다 `MyApplication/EncryptDocument` Java 프로젝트에서 이유다. 이 Java 프로젝트는 JAX-WS 및 SwaRef를 인코딩 유형으로 사용하여 만든 프록시 클래스를 사용합니다. (자세한 내용은 [SwaRef를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref))
+다음 Java 코드 예제에서는 라는 프로세스를 호출합니다 `MyApplication/EncryptDocument` Java 프로젝트입니다. JAX-WS 및 SwaRef를 인코딩 유형으로 사용하여 만든 프록시 클래스를 사용하는 이 Java 프로젝트입니다. (참조: [SwaRef를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref).)
 
-이름이 지정된 PDF 파일을 기반으로 한 비보안 PDF 문서 *Loan.pdf* 은 SwaRef를 사용하여 AEM Forms 프로세스에 전달됩니다. 암호화된 PDF 문서는 이름이 인 PDF 파일로 저장됩니다. *EncryptedDocument.pdf*.
+다음 이름의 PDF 파일을 기반으로 하는 비보안 PDF 문서 *Loan.pdf* 는 SwaRef를 사용하여 AEM Forms 프로세스로 전달됩니다. 암호화된 PDF 문서는 라는 PDF 파일로 저장됩니다. *EncryptedDocument.pdf*.
 
 ```java
  /**
@@ -1115,4 +1115,4 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->서비스 작업을 수행하는 방법을 보여주는 빠른 시작에는 SwaRef 코드 예가 포함됩니다.
+>서비스 작업을 수행하는 방법을 보여 주는 많은 빠른 시작에는 SwaRef 코드 예가 포함됩니다.

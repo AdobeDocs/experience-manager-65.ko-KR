@@ -50,11 +50,11 @@ A. 예. 2023년 1월 7일 이전에 &quot;Adobe 루트 CA&quot;(이전 인증 �
 
 **Q. &quot;Adobe 루트 CA&quot;(이전 인증 기관)에서 발급한 인증서로 확장된 PDF 문서를 계속 사용하려면 어떤 버전의 Adobe Acrobat Reader이 필요합니까?**
 
-A. Adobe Acrobat Reader 2020 이상 버전은 &quot;Adobe 루트 CA&quot;(이전 인증 기관)로 확장된 PDF 문서를 사용해야 합니다. 이 문서를 게시할 때 지원되는 Acrobat Reader 버전입니다. 를 사용하는 경우 [지원되지 않는 Adobe Acrobat 버전](https://helpx.adobe.com/kr/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader 다운로드 및 설치](https://get.adobe.com/reader/).
+A. Adobe Acrobat Reader 2020 이상 버전은 &quot;Adobe 루트 CA&quot;(이전 인증 기관)로 확장된 PDF 문서를 사용해야 합니다. 이 문서를 게시할 때 지원되는 Acrobat Reader 버전입니다. 를 사용하는 경우 [지원되지 않는 Adobe Acrobat 버전](https://helpx.adobe.com/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader 다운로드 및 설치](https://get.adobe.com/reader/).
 
 **Q. &quot;Adobe 루트 CA 2&quot;(새 인증 기관)에서 발급한 인증서로 확장된 PDF 문서를 계속 사용하려면 어떤 버전의 Adobe Acrobat Reader이 필요합니까?**
 
-A. &quot;Adobe 루트 CA 2&quot;(새 인증 기관)를 사용하여 확장된 PDF 문서를 사용하려면 Adobe Acrobat Reader 2020 이상이 필요합니다. 를 사용하는 경우 [지원되지 않는 Adobe Acrobat Reader 버전](https://helpx.adobe.com/kr/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader 다운로드 및 설치](https://get.adobe.com/reader/).
+A. &quot;Adobe 루트 CA 2&quot;(새 인증 기관)를 사용하여 확장된 PDF 문서를 사용하려면 Adobe Acrobat Reader 2020 이상이 필요합니다. 를 사용하는 경우 [지원되지 않는 Adobe Acrobat Reader 버전](https://helpx.adobe.com/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader 다운로드 및 설치](https://get.adobe.com/reader/).
 
 **Q. 기존 별칭을 계속 사용하면서 이전 Acrobat Reader 확장 인증서를 삭제하고 Adobe Experience Manager Forms Server에 새 인증서를 추가할 수 있습니까?**
 

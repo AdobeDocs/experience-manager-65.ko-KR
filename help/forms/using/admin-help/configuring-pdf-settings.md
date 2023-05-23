@@ -143,7 +143,7 @@ PDF 설정은 파일이 변환되는 방식과 그 결과 PDF 구조 및 기능�
   </tr>
   <tr>
    <td><p>Acrobat 3.0 및 Acrobat Reader 3.0 이상에서 열 수 있습니다.</p> </td>
-   <td><p>Acrobat 3.0 및 Acrobat Reader 3.0 이상에서 열 수 있습니다. 이후 버전과 관련된 기능은 손실되거나 표시되지 않을 수 있습니다.</p> </td>
+   <td><p>Acrobat 3.0 및 Acrobat Reader 3.0 이상에서 열 수 있습니다. 이후 버전에 해당하는 기능은 손실되거나 보이지 않을 수 있습니다.</p> </td>
    <td><p>대부분은 Acrobat 4 및 Acrobat Reader 4.0 이상에서 열 수 있습니다. 이후 버전과 관련된 기능은 손실되거나 표시되지 않을 수 있습니다.</p> </td>
    <td><p>대부분은 Acrobat 4 및 Acrobat Reader 4.0 이상에서 열 수 있습니다. 이후 버전과 관련된 기능은 손실되거나 표시되지 않을 수 있습니다.</p> </td>
   </tr>

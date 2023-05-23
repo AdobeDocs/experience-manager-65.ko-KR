@@ -34,6 +34,6 @@ ht-degree: 0%
 
 상태 모니터 웹 페이지는 Gemfire API를 통해 수집된 통계로 채워집니다. 이 API는 클러스터의 모든 노드를 자동으로 검색합니다. 또한 프록시 서버나 로드 밸런서에서 통계를 수집할 때 발생하는 보안 문제도 해결합니다. Java 옵션을 사용하여 상태 모니터를 미세 조정할 수 있으므로 AEM Forms 환경의 성능에 미치는 영향을 줄일 수 있습니다. (참조: [상태 모니터 성능 미세 조정](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance).)
 
-**상태 모니터 액세스**
+**액세스 상태 모니터**
 
 1. 관리 콘솔에서 페이지의 오른쪽 상단에 있는 상태 모니터 를 클릭합니다.

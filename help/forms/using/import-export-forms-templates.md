@@ -14,7 +14,7 @@ exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2516'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -254,7 +254,7 @@ AEM Forms UI를 통해 콘텐츠를 검색할 수 있습니다. 상단 막대를
 
 * 검색 디렉터리
 * 태그
-* 검색 기준(예: 수정한 날짜, 게시 상태, Live Copy 상태).
+* 검색 기준(예: 수정된 날짜, 게시 상태, 라이브 카피 상태).
 
 사이드 패널에서는 검색 설정을 선택한 이름으로 저장할 수도 있습니다.
 

@@ -1,6 +1,6 @@
 ---
-title: JEE 사용자 지정 DSC의 AEM Forms을 사용하여 파일을 압축 및 압축 해제할 수 있습니다
-description: JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일을 압축 및 압축 해제하는 방법을 알아봅니다
+title: JEE Custom DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제
+description: JEE Custom DSC에서 AEM Forms을 사용하여 파일을 압축하고 압축 해제하는 방법에 대해 알아봅니다
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
@@ -13,29 +13,29 @@ ht-degree: 0%
 
 ## 전제 조건 지식 {#prerequisites}
 
-JEE Process Management에서 AEM Forms을 사용하고, 기본 Java 프로그래밍을 사용하며, 사용자 지정 구성 요소를 만듭니다.
+JEE 프로세스 관리, 기본 Java 프로그래밍 및 사용자 지정 구성 요소 만들기에서 AEM Forms을 사용해 보십시오.
 
-**기타 필수 추가 제품**
+**추가 필수 기타 제품**
 
-와 같은 Java 편집기 [Eclipse](https://www.eclipse.org/) 또는 [Netbeans IDE](https://netbeans.apache.org/)
+와 같은 Java 편집기 [Eclipse](https://www.eclipse.org/) 또는 [넷빈스](https://netbeans.apache.org/)
 
 ## 사용자 수준 {#user-level}
 
 중간
 
-AEM Forms on JEE를 통해 개발자는 사용자 정의 DSC(문서 서비스 컨테이너)를 만들어 즉시 보강된 기능을 만들 수 있습니다. 이러한 구성 요소를 만들면 JEE 런타임 환경의 AEM Forms에 플러그인이 지원되며 의도한 목적을 제공합니다. 이 문서에서는 파일 목록을 .zip 파일로 압축하고 .zip을 문서 목록으로 압축을 푸는 데 사용할 수 있는 사용자 지정 ZIP 서비스를 만드는 방법에 대해 설명합니다.
+AEM Forms on JEE를 사용하면 개발자가 사용자 지정 DSC(Document Service Container)를 만들어 기본 제공 기능을 강화할 수 있습니다. 이러한 구성 요소 만들기는 JEE의 AEM Forms 런타임 환경에 플러그인할 수 있으며 의도된 목적을 수행합니다. 이 문서에서는 파일 목록을 .zip 파일로 압축하고 .zip 을 문서 목록으로 압축 해제하는 데 사용할 수 있는 사용자 지정 ZIP 서비스를 만드는 방법을 설명합니다.
 
 ## 사용자 지정 DSC 구성 요소 만들기 {#create-custom-dsc-component}
 
-두 개의 서비스 작업으로 사용자 정의 DSC 구성 요소를 만들어 문서 목록을 압축 및 압축 해제할 수 있습니다. 이 구성 요소는 압축 및 압축을 풀기 위해 java.util.zip 패키지를 사용합니다. 아래 단계에 따라 사용자 지정 구성 요소를 만듭니다.
+문서 목록을 압축 및 압축 해제할 수 있는 두 가지 서비스 작업으로 사용자 지정 DSC 구성 요소를 만듭니다. 이 구성 요소는 압축 및 압축 해제에 java.util.zip 패키지를 사용합니다. 사용자 지정 구성 요소를 만들려면 아래 단계를 수행하십시오.
 
-1. adobe-livecycle-client.jar 파일을 라이브러리에 추가합니다
+1. adobe-livecycle-client.jar 파일을 라이브러리에 추가합니다.
 1. 필요한 아이콘 추가
 1. 공용 클래스 만들기
-1. UnzipDocument 및 ZipDocuments라는 두 개의 공개 메서드를 만듭니다
-1. 압축 및 압축 풀기 논리를 작성합니다
+1. UnzipDocument 및 ZipDocuments라는 두 가지 공용 메서드 만들기
+1. 압축 및 압축 해제에 대한 논리 작성
 
-코드는 다음과 같습니다.
+코드는 여기에서 찾을 수 있습니다.
 
 ```java
 /*
@@ -122,9 +122,9 @@ public class ZIPService {
 
 ## Component.XML 파일 만들기 {#create-component-xml-file}
 
-서비스 작업 및 해당 매개 변수를 정의한 패키지의 루트 폴더 내에 component.xml 파일을 만들어야 합니다.
+서비스 작업과 해당 매개 변수를 정의한 패키지의 루트 폴더 내에 component.xml 파일을 만들어야 합니다.
 
-component.xml 파일은 다음과 같습니다.
+구성 요소.xml 파일이 여기에 표시됩니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -188,34 +188,34 @@ component.xml 파일은 다음과 같습니다.
 ## 구성 요소 패키징 및 배포 {#packaging-deploying-component}
 
 1. Java 프로젝트를 컴파일하고 .JAR 파일을 만듭니다.
-1. Workbench를 통해 JEE 런타임의 AEM Forms에 구성 요소(.JAR 파일)를 배포합니다.
+1. Workbench를 통해 구성 요소(.JAR 파일)를 JEE on AEM Forms 런타임에 배포합니다.
 1. Workbench에서 서비스를 시작합니다(아래 그림 참조).
 
-![프로세스 설계](assets/process-design.jpg)
+![프로세스 디자인](assets/process-design.jpg)
 
 ## 워크플로우에서 ZIP 서비스 사용 {#using-zip-service-in-workflows}
 
-이제 사용자 지정 서비스의 UnzipDocument 작업에서 문서 변수를 입력으로 수락하고 문서 변수 목록을 출력으로 반환할 수 있습니다.
+이제 사용자 지정 서비스의 UnzipDocument 작업을 통해 문서 변수를 입력으로 수락하고 문서 변수 목록을 출력으로 반환할 수 있습니다.
 
-![문서 압축 해제](assets/unzip-doc.jpg)
+![문서 압축 풀기](assets/unzip-doc.jpg)
 
-마찬가지로 사용자 정의 구성 요소의 ZipDocuments 작업에서는 문서 목록을 입력으로 적용하고 zip 파일로 압축한 다음 압축된 문서를 반환할 수 있습니다.
+마찬가지로 사용자 지정 구성 요소의 ZipDocuments 작업은 문서 목록을 입력으로 받아 zip 파일로 압축하고 압축된 문서를 반환할 수 있습니다.
 
 ![Zip 문서](assets/zip-doc.jpg)
 
-다음 워크플로우 오케스트레이션은 주어진 ZIP 파일의 압축을 풀고, 파일을 다시 다른 ZIP 파일로 압축하고 출력을 반환하는 방법을 보여 줍니다(아래 그림 참조).
+다음 워크플로우 오케스트레이션은 주어진 ZIP 파일의 압축을 풀고 다른 ZIP 파일로 다시 압축하여 출력을 반환하는 방법을 보여 줍니다(아래 그림 참조).
 
-![Zip 압축 해제 워크플로우](assets/unzip-zip-process.jpg)
+![압축 풀기 워크플로우](assets/unzip-zip-process.jpg)
 
 ## 일부 비즈니스 사용 사례 {#business-use-cases}
 
 다음 사용 사례에 이 ZIP 서비스를 사용할 수 있습니다.
 
-* 지정된 폴더에서 모든 파일을 찾아 압축 문서로 반환합니다.
+* 주어진 폴더에서 모든 파일을 찾아 압축 문서로 반환합니다.
 
-* 압축을 해제한 후 판독기를 확장할 수 있는 많은 PDF 문서가 포함된 ZIP 파일을 제공합니다. 이렇게 하려면 JEE Reader 확장 모듈에 있는 AEM Forms이 필요합니다.
+* 압축을 푼 후에 리더를 확장할 수 있는 여러 PDF 문서가 포함된 ZIP 파일을 제공하십시오. 이를 위해서는 AEM Forms on JEE Reader 확장 모듈이 필요합니다.
 
-* PDF 서비스 생성을 사용하여 PDF 문서로 압축 및 변환할 수 있는 이기종 유형의 문서가 포함된 ZIP 파일을 제공합니다.
+* PDF 생성 서비스를 사용하여 압축 풀기 및 PDF 문서로 변환할 수 있는 유형이 다른 문서가 포함된 ZIP 파일을 제공합니다.
 
 * 정책은 문서 목록을 보호하고 ZIP 파일로 반환합니다.
 

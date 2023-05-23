@@ -15,7 +15,7 @@ exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
 source-git-commit: 7c24379c01f247f5ad45e3ecd40f3edef4ac3cfb
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -72,7 +72,7 @@ URL을 리소스에 매핑하기 위해 ResourceResolver.resolve 메서드에서
 
 이(가) 다음을 트리거합니다.
 
-**대체** `/libs/cq/core/content/welcome.html`.
+**교체** `/libs/cq/core/content/welcome.html`.
 
 요청을 리디렉션하려면:
 

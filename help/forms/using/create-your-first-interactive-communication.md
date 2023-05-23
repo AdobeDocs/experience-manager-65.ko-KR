@@ -29,7 +29,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 다음 이미지는 대화형 통신을 만드는 데 필요한 구성 요소를 보여 줍니다.
 
-![workflow](assets/workflow.gif)
+![워크플로우](assets/workflow.gif)
 
 이 자습서를 마치면 다음을 수행할 수 있습니다.
 

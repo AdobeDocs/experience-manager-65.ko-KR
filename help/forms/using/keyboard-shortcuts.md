@@ -13,7 +13,7 @@ exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
@@ -33,8 +33,8 @@ ht-degree: 5%
 | 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Ast; |
 | 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;ast; |
 | 여러 구성 요소 선택 | Shift+클릭 | Shift+클릭 |
-| 선택한 구성 요소 복사 | Ctrl+C | Ctrl-C&amp;ast; |
-| 선택한 구성 요소를 잘라냅니다. 잘라낸 구성 요소는 새 위치에 붙여넣을 때까지 사라지지 않습니다. | Ctrl+X | Ctrl-X&amp;ast; |
+| 선택한 구성 요소 복사 | Ctrl-C | Ctrl-C&amp;ast; |
+| 선택한 구성 요소를 잘라냅니다. 잘라낸 구성 요소는 새 위치에 붙여넣을 때까지 사라지지 않습니다. | Ctrl-X | Ctrl-X&amp;ast; |
 | 구성 요소 붙여넣기 | Ctrl+V | Ctrl+V |
 | 선택한 구성 요소 삭제 | Ctrl+Del | Ctrl+Del&amp;ast; |
 | 선택한 구성 요소 삭제 | Ctrl+백스페이스 | Ctrl+백스페이스(&amp;A); |
@@ -48,7 +48,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->데스크톱 장치에서의 다중 선택:
+>데스크탑 장치에서 다중 선택:
 >
 >* Windows: 필요한 구성 요소를 Ctrl+클릭합니다.
 >* MAC OS: 필요한 구성 요소를 Command+클릭합니다.

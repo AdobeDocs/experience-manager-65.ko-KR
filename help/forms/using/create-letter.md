@@ -230,7 +230,7 @@ ht-degree: 2%
 
 * [호환성 패키지](compatibility-package.md). 호환성 패키지를 설치하여 다음을 확인하십시오. **편지** 옵션 **Forms** 페이지를 가리키도록 업데이트하는 중입니다.
 * 문자 XDP([레이아웃](/help/forms/using/document-fragments.md)).
-* 기타 XDP([레이아웃 단편](document-fragments.md#document-fragments)) 편지의 일부를 형성합니다. XDPs\레이아웃은 [디자이너](https://www.adobe.com/go/learn_aemforms_designer_65).
+* 기타 XDP([레이아웃 단편](document-fragments.md#document-fragments)) 편지의 일부를 형성합니다. XDPs\레이아웃은 [디자이너](https://www.adobe.com/go/learn_aemforms_designer_65_kr).
 * 관련 항목 [데이터 사전](/help/forms/using/data-dictionary.md) (선택 사항).
 * 다음 [데이터 모듈](/help/forms/using/document-fragments.md) 서신에 을(를) 사용합니다.
 * [테스트 데이터](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) 는 테스트 데이터가 포팅된 XML 파일입니다. 데이터 사전을 사용하는 경우 테스트 데이터가 필요합니다.
@@ -344,7 +344,7 @@ ht-degree: 2%
 1. 선택 **자산 추가**.
 1. 에셋 선택 화면에서 편지와 함께 첨부할 에셋을 탭하고 을 누릅니다 **완료**. 에셋을 에셋에 먼저 업로드해야 합니다. PDF 및 Microsoft Office 문서만 첨부하는 것이 좋지만 이미지를 첨부할 수도 있습니다. DAM의 에셋 업로드에 대한 자세한 내용은 [에셋 업로드](/help/assets/manage-assets.md).
 1. 클레임 조정자가 순서를 변경할 수 없도록 목록에서 에셋의 순서를 잠그려면 을 누릅니다 **순서 잠금**. 이 옵션을 선택하지 않으면 청구 조정자가 목록 항목의 순서를 변경할 수 있습니다.
-1. 에셋의 순서를 변경하려면 에셋에 대한 순서 바꾸기 아이콘 이 있는 에셋을 드래그 앤 드롭합니다( ![드래그드롭](assets/dragndrop.png)).
+1. 에셋의 순서를 변경하려면 에셋에 대한 순서 변경 아이콘 이 있는 에셋을 드래그 앤 드롭합니다( ![드래그드롭](assets/dragndrop.png)).
 1. 누르기 **편집** 첨부 파일 앞에 을 추가하고 작성자가 삭제하지 못하도록 하려면 첨부 파일을 필수 로 지정합니다. CCR 인터페이스에서 미리 선택하려면 첨부를 선택됨으로 지정합니다.
 1. 선택 **라이브러리 액세스** 라이브러리에 대한 액세스 권한을 부여합니다. 라이브러리 액세스가 활성화된 경우 청구 조정자는 편지를 작성하고 첨부 파일을 삽입하는 동안 컨텐츠 라이브러리에 액세스할 수 있습니다.
 1. 선택 **첨부 파일 구성** 첨부 파일의 최대 수를 지정합니다.
@@ -386,7 +386,7 @@ ht-degree: 2%
    <td>N/A</td> 
   </tr> 
   <tr> 
-   <td><strong>시간</strong></td> 
+   <td><strong>time</strong></td> 
    <td>예</td> 
    <td>아니요</td> 
    <td>예</td> 

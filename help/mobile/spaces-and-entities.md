@@ -20,7 +20,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 스페이스는 Content Services REST API를 통해 노출되는 엔터티를 저장하기 편리한 위치입니다. 이 기능은 앱(또는 모든 채널)이 많은 엔티티와 연결될 수 있으므로 특히 유용합니다. 엔티티를 공간 내에 강제 포함하면 앱 요구 사항을 그룹화하는 모범 사례가 강제 적용됩니다. 선택적으로 AEM의 앱을 적은 수의 공백과 연결할 수 있습니다.
 

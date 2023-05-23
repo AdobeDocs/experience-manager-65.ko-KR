@@ -13,7 +13,7 @@ exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 26%
+ht-degree: 0%
 
 ---
 
@@ -41,19 +41,19 @@ AEM에서 **클릭 유도 문안** 구성 요소 - **클릭스루 링크** 및 *
 랜딩 페이지 구성 요소를 Adobe Analytics에 매핑하려면 다음을 수행하십시오.
 
 1. Adobe Analytics 구성을 만들고 새 프레임워크를 만든 후 드롭다운 메뉴에서 적절한 보고 세트를 선택합니다. 그러면 Adobe Analytics 변수를 가져와 컨텐츠 파인더에 표시됩니다.
-1. 사이드킥의 클릭유도문안(CTA) 구성 요소를 페이지의 중앙에 있는 매핑 영역으로 적절히 드래그 드롭합니다.
+1. 필요에 따라 사이드 킥에서 CTA(콜 투 액션) 구성 요소를 페이지 중간에 있는 매핑 영역으로 끌어서 놓습니다.
 
 <table>
  <tbody>
   <tr>
    <td><strong>구성 요소 이름</strong></td>
-   <td><strong>노출된 특성</strong></td>
-   <td><strong>특성의 의미</strong></td>
+   <td><strong>속성 노출됨</strong></td>
+   <td><strong>속성의 의미</strong></td>
   </tr>
   <tr>
    <td><strong>CTA 클릭스루 링크</strong></td>
    <td><i>eventdata.clickthroughLinkLabel</i> <br /> </td>
-   <td>링크에 있는 레이블이나 링크의 텍스트 </td>
+   <td>링크의 레이블 또는 링크 텍스트 </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
@@ -73,12 +73,12 @@ AEM에서 **클릭 유도 문안** 구성 요소 - **클릭스루 링크** 및 *
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clicktroughImageTarget</i> <br /> </td>
-   <td>링크가 들어 있는 이미지를 클릭하면 이동하는 대상</td>
+   <td>링크가 포함된 이미지를 클릭할 때 이동되는 대상</td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clicktroughImageAsset</i> <br /> </td>
-   <td>보관소에 있는 이미지 자산 경로 </td>
+   <td>저장소의 이미지 에셋 경로 </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>

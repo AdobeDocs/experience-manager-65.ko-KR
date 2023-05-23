@@ -1,6 +1,6 @@
 ---
 title: AEM Headful 및 Headless
-description: AEM 프로젝트는 headful 및 headless 모델로 구현할 수 있지만 선택은 바이너리가 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
+description: AEM 프로젝트는 headful과 headless 모델로 구현할 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 94%
 
 # AEM Headful 및 Headless {#headful-headless}
 
-Adobe Experience Manager 프로젝트는 제목이 많은 모델과 헤드리스 모델 모두에서 구현할 수 있지만 선택할 수 있는 것은 바이너리가 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다. 이 문서에서는 다른 모델에 대한 개요를 제공하며 SPA 통합 수준을 설명합니다.
+Adobe Experience Manager 프로젝트는 headful과 headless 모델 모두에서 구현할 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다. 이 문서에서는 다양한 모델에 대한 개요를 제공하고 SPA 통합 수준에 대해 설명합니다.
 
 ## 개요 {#overview}
 

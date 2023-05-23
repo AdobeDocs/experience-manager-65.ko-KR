@@ -1,7 +1,7 @@
 ---
 title: 커뮤니티에 대한 Dispatcher 구성
 seo-title: Configuring Dispatcher for Communities
-description: AEM Communities에 대한 디스패처 구성
+description: AEM Communities에 대한 Dispatcher 구성
 seo-description: Configure the dispatcher for AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
@@ -21,29 +21,29 @@ ht-degree: 11%
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities의 경우 Dispatcher가 제대로 작동하도록 구성해야 합니다 [커뮤니티 사이트](overview.md#community-sites). 소셜 로그인과 같은 기능을 포함할 때에는 추가 구성이 필요합니다.
+AEM Communities의 경우 가 제대로 작동하도록 Dispatcher를 구성해야 합니다 [커뮤니티 사이트](overview.md#community-sites). 소셜 로그인과 같은 기능을 포함할 때 추가 구성이 필요합니다.
 
 특정 배포 및 사이트 디자인에 필요한 사항을 알아보려면
 
 * [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html) 문의
 
-기본 [Dispatcher 설명서](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+메인 페이지 참조 [Dispatcher 설명서](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 ## Dispatcher 캐싱 {#dispatcher-caching}
 
 ### 개요 {#overview}
 
-AEM Communities에 대한 디스패처 캐싱은 디스패처가 커뮤니티 사이트 페이지의 완전히 캐시된 버전을 제공하는 기능입니다.
+AEM Communities용 Dispatcher 캐싱은 Dispatcher가 커뮤니티 사이트 페이지의 전체 캐시 버전을 제공하는 기능입니다.
 
-현재 커뮤니티 사이트를 탐색하거나 검색 결과로 커뮤니티 페이지에 도착하는 사용자와 페이지를 인덱싱하는 검색 엔진 등 익명의 사이트 방문자에 대해서만 지원됩니다. 그 이점은 익명의 사용자와 검색 엔진이 향상된 성능을 경험할 것이라는 점입니다.
+현재는 커뮤니티 사이트를 탐색하는 사용자, 검색 결과 커뮤니티 페이지에 도착하는 사용자와 같은 익명 사이트 방문자 및 색인 페이지를 표시하는 검색 엔진에 대해서만 지원됩니다. 익명의 사용자 및 검색 엔진이 향상된 성능을 경험한다는 이점이 있습니다.
 
-로그인한 구성원의 경우 디스패처는 캐시를 건너뛰고 모든 페이지가 동적으로 생성되어 전달되도록 요청을 게시자에게 직접 전달합니다.
+로그인한 멤버의 경우 Dispatcher가 캐시를 우회하여 요청을 게시자에게 직접 전달하므로 모든 페이지가 동적으로 생성되고 전달됩니다.
 
-디스패처 캐싱을 지원하도록 구성된 경우, TTL 기반 &quot;최대 연령&quot; 만료가 헤더에 추가되어 디스패처 캐시된 페이지가 최신 상태인지 확인합니다.
+Dispatcher 캐싱을 지원하도록 구성된 경우, TTL 기반 &quot;최대 기간&quot; 만료가 헤더에 추가되어 Dispatcher 캐시된 페이지가 최신 상태가 되도록 합니다.
 
 ### 요구 사항 {#requirements}
 
-* Dispatcher 버전 4.1.2 이상(참조) [Dispatcher 설치](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) 최신 버전용)
+* Dispatcher 버전 4.1.2 이상(참조 [Dispatcher 설치](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) (최신 버전용)
 * [ACS AEM Commons 패키지](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * 버전 3.3.2 이상
@@ -51,14 +51,14 @@ AEM Communities에 대한 디스패처 캐싱은 디스패처가 커뮤니티 �
 
 ### 구성 {#configuration}
 
-OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - 최대 연령** 지정된 경로 아래에 표시되는 캐시된 페이지의 만료를 설정합니다.
+OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 기간** 지정된 경로에 나타나는 캐시된 페이지의 만료를 설정합니다.
 
-* 에서 [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)
+* 다음에서 [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)
 
-   * 예, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * 예를 들어, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * 찾기 `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
-* 새 연결 구성을 만들려면 &#39;+&#39; 아이콘을 선택합니다
+* 새 연결 구성을 만들려면 &#39;+&#39; 아이콘을 선택하십시오.
 
    ![dispatcher](assets/dispatcher.png)
 
@@ -66,34 +66,34 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - 최대 연령*
 
    *(필수)* 커뮤니티 페이지에 대한 하나 이상의 경로. (예: `/content/sites/engage/(.*)`)
 
-* **캐시 제어 최대 연령**
+* **Cache-Control 최대 수명**
 
-   *(필수)* 캐시 제어 헤더에 추가할 최대 페이지(초)입니다. 값은 0보다 커야 합니다(0).
+   *(필수)* 캐시 제어 헤더에 추가할 최대 기간(초)입니다. 값은 0보다 커야 합니다.
 
-## 디스패처 필터 {#dispatcher-filters}
+## Dispatcher 필터 {#dispatcher-filters}
 
-의 /filter 섹션 `dispatcher.any` 파일은에 설명되어 있습니다. [컨텐츠에 대한 액세스 구성 - /filter](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+의 /filter 섹션 `dispatcher.any` 파일은에 문서화되어 있습니다. [콘텐츠에 대한 액세스 구성 - /filter](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
-이 섹션에서는 Communities 기능의 적절한 기능을 수행하는 데 필요한 항목을 설명합니다.
+이 섹션에서는 Communities 기능이 제대로 작동하는 데 필요한 항목에 대해 설명합니다.
 
-필터 속성 이름은 4자리 숫자를 사용하여 필터 패턴을 적용할 순서를 나타내는 규칙을 따릅니다. 여러 필터 패턴이 요청에 적용되는 경우 마지막으로 적용되는 필터 패턴이 유효합니다. 따라서, 가장 첫 번째 필터 패턴은 모든 것을 부인하는 데 종종 사용되어, 다음 패턴은 제어된 방식으로 액세스를 복원한다.
+필터 속성 이름은 필터 패턴을 적용할 순서를 나타내기 위해 4자리 숫자를 사용하는 규칙을 따릅니다. 여러 필터 패턴이 요청에 적용되는 경우 마지막으로 적용되는 필터 패턴이 유효합니다. 따라서 첫 번째 필터 패턴은 종종 모든 것을 거부하는 데 사용되므로 다음 패턴은 제어된 방식으로 액세스를 복원하는 역할을 합니다.
 
 다음 샘플은 특정 dispatcher.any 파일에 맞게 수정해야 하는 속성 이름을 사용합니다.
 
-또한 Headless 개념 및 용어 소개가 포함되어 있는
+또한 다음 문서도 참조할 수 있습니다.
 
 * [Dispatcher 보안 검사 목록](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
 >
 >**속성 이름 예**
->다음과 같이 표시되는 모든 속성 이름 **/0050** 및 **/0170**&#x200B;를 기존 dispatcher.any 구성 파일에 맞게 조정해야 합니다.
+>다음과 같은 모든 속성 이름이 표시됩니다. **/0050** 및 **/0170**&#x200B;는 기존 dispatcher.any 구성 파일에 맞게 조정해야 합니다.
 
 >[!CAUTION]
 >
->Dispatcher를 사용하여 액세스를 제한할 때 추가 고려 사항은 [Dispatcher 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)를 참조하십시오. 또한, [AEM 보안 검사 목록](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/security-checklist.html) AEM 설치에 대한 추가 보안 세부 정보입니다.
+>Dispatcher를 사용하여 액세스를 제한할 때 추가 고려 사항은 [Dispatcher 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)를 참조하십시오. 또한 [AEM 보안 확인 목록](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/security-checklist.html) AEM 설치에 대한 추가 보안 세부 정보를 보려면 여기를 클릭하십시오.
 
-다음 항목을 /filter 섹션의 끝에 추가해야 합니다. 특히 모든 거부 항목 뒤에 추가합니다.
+/filter 섹션의 끝에 특히 모든 거부 항목 뒤에 다음 항목을 추가해야 합니다.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -225,7 +225,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - 최대 연령*
 
 ## Dispatcher 규칙 {#dispatcher-rules}
 
-의 규칙 섹션 `dispatcher.any` 은 요청된 URL을 기반으로 캐시해야 하는 응답을 정의합니다. Communities에서 규칙 섹션을 사용하여 캐시하면 안 되는 항목을 정의합니다.
+의 규칙 섹션 `dispatcher.any` 요청된 URL을 기반으로 캐시할 응답을 정의합니다. Communities에서는 규칙 섹션을 사용하여 캐시해서는 안 되는 항목을 정의합니다.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -273,13 +273,13 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - 최대 연령*
 
 ## 문제 해결 {#troubleshooting}
 
-문제의 주요 원인은 이전 규칙에 대한 영향을 고려하지 않고 필터 규칙을 삽입하는 것입니다(특히 액세스를 거부하는 규칙을 추가할 때).
+특히 액세스를 거부하는 규칙을 추가할 때 이전 규칙에 대한 영향에 유의하지 않고 필터 규칙을 삽입하는 것이 문제의 주요 원인입니다.
 
-첫 번째 필터 패턴은 종종 모든 것을 거부하는 데 사용되므로 다음 필터가 제어된 방식으로 액세스를 복원합니다. 여러 필터가 요청에 적용되면 마지막으로 적용되는 필터가 적용됩니다.
+첫 번째 필터 패턴은 다음 필터가 제어된 방식으로 액세스를 복원하도록 모든 것을 거부하는 데 종종 사용됩니다. 여러 필터가 요청에 적용되는 경우 마지막으로 적용되는 필터가 적용됩니다.
 
 ## 샘플 dispatcher.any {#sample-dispatcher-any}
 
-다음은 샘플입니다 `dispatcher.any` 커뮤니티 /filters 및 /rules가 포함된 파일입니다.
+다음은 샘플입니다 `dispatcher.any` 커뮤니티 /filters 및 /rules를 포함하는 파일입니다.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->

@@ -13,7 +13,7 @@ exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '481'
-ht-degree: 16%
+ht-degree: 14%
 
 ---
 
@@ -27,7 +27,7 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
 
 1. 언어 마스터 분기의 장비 페이지를 편집합니다.
 
-   http://localhost:4502/editor.html/content/we-retail/language-masters/kr/equipment.html
+   http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. 모드 선택기에서 더 이상 디자인 모드를 제공하지 않습니다. We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하며 편집 가능한 템플릿의 디자인을 변경하려면 템플릿 편집기에서 편집해야 합니다.
 1. 다음에서 **페이지 정보** 메뉴 선택 **템플릿 편집**.
@@ -71,8 +71,8 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
 
    **레이아웃** 모드는 일반 페이지에서 그대로 사용하여 템플릿의 레이아웃을 정의할 수 있습니다.
 
-## 추가 정보 {#more-information}
+## 자세한 내용 {#more-information}
 
 자세한 내용은 작성 문서를 참조하십시오. [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md) 편집 가능한 템플릿에 대한 전체 기술 세부 정보.
 
-조사를 원할 수도 있습니다. [핵심 구성 요소](/help/sites-developing/we-retail-core-components.md). 작성 문서 참조 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 기술 개요를 참조하십시오.
+조사를 원할 수도 있습니다. [핵심 구성 요소](/help/sites-developing/we-retail-core-components.md). 작성 문서 참조 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 기술 개요를 참조하십시오.

@@ -123,7 +123,7 @@ ht-degree: 4%
    * 사용자 지정 댓글 구성 요소를 포함하도록 수정합니다(~75행).
 
       * 바꾸기 `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
-      * 사용 `{{include this resourceType='/apps/custom/components/comments/comment'}}`
+      * 포함 `{{include this resourceType='/apps/custom/components/comments/comment'}}`
 
 
 * 복사 `comment.hbs`

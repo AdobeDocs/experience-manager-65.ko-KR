@@ -77,7 +77,7 @@ ht-degree: 3%
 
 ![리뷰 수](assets/configure-review3.png)
 
-* **[!UICONTROL 답글 허용]**
+* **[!UICONTROL 답변 허용]**
 
    선택하면 리뷰에 답글을 허용합니다. 기본값은 선택 취소되어 있습니다.
 

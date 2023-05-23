@@ -1,5 +1,5 @@
 ---
-title: AEM 헤드리스 시작하기
+title: AEM Headless 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
 source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# AEM 헤드리스 시작하기 {#getting-started}
+# AEM Headless 시작하기 {#getting-started}
 
 이 [AEM Headless 개발자 여정](overview.md)의 부분에서는 AEM Headless로 자체 프로젝트 시작하기에 필요한 사항에 대해 알아봅니다.
 

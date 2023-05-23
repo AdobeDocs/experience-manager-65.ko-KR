@@ -28,7 +28,7 @@ ht-degree: 61%
 
 * **제목**
 
-   페이지 제목은 다양한 위치에 표시됩니다. 예: **웹 사이트** 탭 목록 및 **Sites** 카드/목록 보기.
+   페이지 제목은 여러 위치에 표시됩니다. 예를 들어 **웹 사이트** 탭 목록 및 **사이트** 카드/목록 보기.
 
    필수 필드입니다.
 
@@ -64,33 +64,33 @@ ht-degree: 61%
 
 * **탐색 제목**
 
-   탐색에 사용할 별도의 제목을 지정할 수 있습니다(예를 들어 더욱 간결한 제목을 원할 경우). 비어 있으면 **제목** 이 사용됩니다.
+   탐색에서 사용할 별도의 제목을 지정할 수 있습니다(예: 간결하게 나타내고자 하는 경우). 비어 있는 경우 **제목** 이 사용됩니다.
 
 * **소제목**
 
-   페이지에서 사용할 소제목입니다.
+   페이지에서 사용할 부제입니다.
 
 * **설명**
 
-   페이지 설명, 목적 또는 추가하고 싶은 기타 모든 세부 사항입니다.
+   페이지, 페이지 용도 또는 추가하고자 하는 기타 세부 정보에 대한 설명입니다.
 
 * **시간**
 
-   게시된 페이지를 활성화할 날짜와 시간입니다. 이 페이지를 게시하면 지정된 시간까지 비활성 상태로 유지됩니다.
+   게시된 페이지가 활성화되는 날짜 및 시간입니다. 이 페이지는 게시되면 지정된 시간까지 휴면 상태로 유지됩니다.
 
-   페이지를 즉시 게시하려는 경우(일반적인 시나리오) 이 필드를 비워 둡니다.
+   즉시 게시하려는 페이지의 경우 이러한 필드를 비워 두십시오(일반적인 시나리오).
 
 * **해제 시간**
 
-   게시된 페이지를 비활성화할 시간입니다.
+   게시된 페이지가 비활성화되는 시간.
 
-   즉각적인 조치를 취할 수 있도록 이러한 필드를 다시 비워 둡니다.
+   즉각적인 조치를 취할 수 있도록 이 필드를 비워 두십시오.
 
 * **별칭 URL**
 
    이 페이지에 대한 별칭 URL을 입력할 수 있으므로 더 짧고 구체적인 URL을 사용할 수 있습니다.
 
-   예를 들어 별칭 URL이 `welcome`경로별로 식별된 페이지로 `/v1.0/startpage`웹 사이트용 `http://example.com,` 그런 다음 `http://example.com/welcome`의 별칭 URL이 됩니다. `http://example.com/content/v1.0/startpage`
+   예를 들어 별칭 URL이 로 설정된 경우 `welcome`경로로 식별되는 페이지에 대한 `/v1.0/startpage`웹 사이트용 `http://example.com,` 그러면 `http://example.com/welcome`은(는) 의 별칭 URL입니다. `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -101,7 +101,7 @@ ht-degree: 61%
    >* 기존 페이지로 설정하면 안 됩니다.
 
 
-   별칭 URL에 액세스할 수 있도록 Dispatcher를 구성해야 합니다. 자세한 내용은 [별칭 URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) 자세한 내용
+   vanity URL에 대한 액세스를 활성화하도록 Dispatcher를 구성해야 합니다. 다음을 참조하십시오 [vanity URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) 을 참조하십시오.
 
 * **별칭 URL 리디렉션**
 
@@ -119,36 +119,36 @@ ht-degree: 61%
 
 * **리디렉션**
 
-   이 페이지에서 자동으로 리디렉션할 페이지를 지정합니다.
+   이 페이지를 자동으로 리디렉션할 페이지를 지정합니다.
 
 * **디자인**
 
-   을(를) 지정합니다. [디자인](/help/sites-developing/designer.md) 이 페이지에 사용할 대상.
+   다음 표시: [디자인](/help/sites-developing/designer.md) 이 페이지에 사용됩니다.
 
 * **별칭**
 
-   이 페이지에 사용할 별칭을 지정합니다.
+   이 페이지에서 사용할 별칭을 지정합니다.
 
    * 예를 들어 페이지 `/content/wknd/us/en/magazine/members-only`에 대한 `private`의 별칭을 정의하면 `/content/wknd/us/en/magazine/private`을 통해서도 이 페이지에 액세스할 수 있습니다.
    * 별칭을 만들면 페이지 노드의 `sling:alias` 속성이 설정되며, 이는 저장소 경로가 아닌 리소스에만 영향을 미칩니다.
    * 편집기의 별칭을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시 옵션](/help/sites-authoring/publishing-pages.md)은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
    * 자세한 내용은 [SEO 및 URL 관리 모범 사례 아래의 로컬라이제이션된 페이지 이름](/help/managing/seo-and-url-management.md#localized-page-names)을 참조하십시오.
 
-* **&lt;*경로*>**
+* **다음에서 상속: &lt;*경로*>**
 
-   페이지가 상속되었는지 여부를 나타냅니다. 및 위치
+   페이지가 상속되는지 여부를 나타냅니다. 및 출처:
 
 * **클라우드 구성**
 
-   구성에 대한 경로입니다.
+   구성의 경로입니다.
 
 * **허용된 템플릿**
 
-   [사용할 수 있는 템플릿 목록을 정의합니다](/help/sites-authoring/templates.md#allowingatemplate) 이 하위 분기 내에서
+   [사용할 수 있는 템플릿 목록 정의](/help/sites-authoring/templates.md#allowingatemplate) 이 하위 분기 내에서.
 
-* **활성화** (인증 요구 사항)
+* **사용** (인증 요구 사항)
 
-   페이지에 액세스할 때 인증을 활성화(또는 비활성화) 합니다.
+   인증 사용을 활성화(또는 비활성화)하여 페이지에 액세스합니다.
 
    >[!NOTE]
    >
@@ -156,10 +156,10 @@ ht-degree: 61%
 
    >[!CAUTION]
    >
-   >다음 **[권한](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 `granite:AuthenticationRequired` 믹신 이제 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 페이지의 존재 여부에 따라 `cq:cugEnabled` 속성, 경고 메시지가 **인증 요구 사항** 및 옵션은 편집할 수 없고 [권한](/help/sites-authoring/editing-page-properties.md#permissions) 편집 가능합니다.
+   >다음 **[권한](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 의 존재 여부에 따라 CUG 구성을 편집할 수 있습니다. `granite:AuthenticationRequired` mixin. 페이지 권한이 더 이상 사용되지 않는 CUG 구성을 사용하여 구성된 경우, 의 존재 여부에 따라 `cq:cugEnabled` 속성이에 경고 메시지가 표시됩니다. **인증 요구 사항** 옵션을 편집할 수 없고 [권한](/help/sites-authoring/editing-page-properties.md#permissions) 편집할 수 있습니다.
    >
    >
-   >이 경우 CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+   >이러한 경우 CUG 권한은에서 편집해야 합니다. [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
 * **로그인 페이지**
 
@@ -171,46 +171,46 @@ ht-degree: 61%
 
 ### 썸네일 {#thumbnail}
 
-페이지 축소판 이미지를 표시합니다. 다음을 작업을 수행할 수 있습니다.
+페이지 썸네일 이미지를 표시합니다. 다음을 작업을 수행할 수 있습니다.
 
 * **미리 보기 생성**
 
-   축소판으로 사용할 페이지의 미리 보기를 생성합니다.
+   썸네일로 사용할 페이지의 미리보기를 생성합니다.
 
 * **이미지 업로드**
 
-   축소판으로 사용할 이미지를 업로드합니다.
+   썸네일로 사용할 이미지를 업로드합니다.
 
 * **이미지 선택**
 
-   축소판으로 사용할 기존 자산을 선택합니다.
+   썸네일로 사용할 기존 에셋을 선택합니다.
 
 * **되돌리기**
 
-   축소판을 변경한 후에는 이 옵션을 사용할 수 있습니다. 변경 사항을 유지하지 않으려면 저장하기 전에 해당 변경 사항을 되돌릴 수 있습니다.
+   이 옵션은 썸네일을 변경한 후에 사용할 수 있습니다. 변경 사항을 유지하지 않으려면 저장하기 전에 해당 변경 사항을 되돌릴 수 있습니다.
 
 ### 소셜 미디어 {#social-media}
 
 * **소셜 미디어 공유**
 
-   페이지에서 사용할 수 있는 공유 옵션을 정의합니다. 에서 사용할 수 있는 옵션을 표시합니다 [코어 구성 요소 공유](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
+   페이지에서 사용할 수 있는 공유 옵션을 정의합니다. 에 사용할 수 있는 옵션을 표시합니다. [핵심 구성 요소 공유](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
 
    * **facebook에 대한 사용자 공유 활성화**
    * **pinterest에 대한 사용자 공유 활성화**
    * **선호하는 XF 변형**
-페이지에 대한 메타데이터를 생성하는 데 사용되는 경험 조각 변형을 정의합니다.
+페이지의 메타데이터 생성에 사용되는 경험 조각 변형을 정의합니다.
 
 ### 클라우드 서비스 {#cloud-services}
 
 * **클라우드 서비스**
 
-   에 대한 속성 정의 [클라우드 서비스](/help/sites-developing/extending-cloud-config.md).
+   다음에 대한 속성 정의 [클라우드 서비스](/help/sites-developing/extending-cloud-config.md).
 
 ### 개인화 {#personalization}
 
 * **ContextHub 구성**
 
-   을(를) 선택합니다 [ContextHub 구성](/help/sites-developing/ch-configuring.md) 및 [세그먼트 경로](/help/sites-administering/segmentation.md).
+   다음 항목 선택 [ContextHub 구성](/help/sites-developing/ch-configuring.md) 및 [세그먼트 경로](/help/sites-administering/segmentation.md).
 
 * **타겟팅 구성**
 
@@ -223,7 +223,7 @@ ht-degree: 61%
 
 * **권한**
 
-   이 탭에서 다음 작업을 수행할 수 있습니다.
+   이 탭에서는 다음 작업을 수행할 수 있습니다.
 
    * [권한 추가](/help/sites-administering/user-group-ac-admin.md)
    * [폐쇄된 사용자 그룹 편집](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
@@ -231,26 +231,26 @@ ht-degree: 61%
    * [유효 권한](/help/sites-administering/user-group-ac-admin.md) 보기
    >[!CAUTION]
    >
-   >다음 **권한** 탭에서는 `granite:AuthenticationRequired` 믹신 이제 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 페이지의 존재 여부에 따라 `cq:cugEnabled` 속성을 사용하면 경고 메시지가 표시되고 CUG 권한은 편집할 수 없으며 인증 요구 사항도 편집할 수 없습니다 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭을 편집할 수 있습니다.
+   >다음 **권한** 탭에서는 의 존재 여부에 따라 CUG 구성을 편집할 수 있습니다. `granite:AuthenticationRequired` mixin. 페이지 권한이 더 이상 사용되지 않는 CUG 구성을 사용하여 구성된 경우, 의 존재 여부에 따라 `cq:cugEnabled` 속성, 경고 메시지가 표시되고 CUG 권한은 편집할 수 없으며 의 인증 요구 사항도 편집할 수 없습니다. [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭을 편집할 수 있습니다.
    >
    >
-   >이 경우 CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+   >이러한 경우 CUG 권한은에서 편집해야 합니다. [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >권한 탭에서는 빈 CUG 그룹을 만들 수 없습니다. 이 그룹은 모든 사용자에 대한 액세스를 거부하는 간단한 방법으로 유용할 수 있습니다. 이 작업을 수행하려면 CRX 탐색기를 사용해야 합니다. 문서를 참조하십시오 [사용자, 그룹 및 액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md) 추가 정보.
+   >권한 탭에서는 빈 CUG 그룹을 만들 수 없으며, 이는 모든 사용자의 액세스를 거부하는 간단한 방법으로 유용할 수 있습니다. 이 작업을 수행하려면 CRX 탐색기를 사용해야 합니다. 문서 보기 [사용자, 그룹 및 액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md) 추가 정보.
 
 ### 블루프린트 {#blueprint}
 
 * **블루프린트**
 
-   내에서 블루프린트 페이지에 대한 속성을 정의합니다 [다중 사이트 관리](/help/sites-administering/msm.md). 수정 사항이 Live Copy에 전파되는 환경을 제어합니다.
+   내에서 블루프린트 페이지에 대한 속성을 정의합니다. [다중 사이트 관리](/help/sites-administering/msm.md). 수정 사항이 라이브 카피에 반영되는 상황을 제어합니다.
 
 ### Live Copy {#live-copy}
 
 * **Livecopy**
 
-   내에서 Live Copy 페이지에 대한 속성을 정의합니다 [다중 사이트 관리](/help/sites-administering/msm.md). 수정 사항이 블루프린트에서 전파되는 상황을 제어합니다.
+   내에서 라이브 카피 페이지에 대한 속성을 정의합니다. [다중 사이트 관리](/help/sites-administering/msm.md). 블루프린트에서 수정 사항이 반영되는 상황을 제어합니다.
 
 ### 사이트 구조 {#site-structure}
 
@@ -300,7 +300,7 @@ ht-degree: 61%
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. 선택 **속성 열기** 해당 탭별로 정렬된 속성을 편집할 수 있는 대화 상자가 열립니다. The following buttons are also available at the right of the toolbar:
+1. 선택 **속성 열기** 또한 해당 탭별로 정렬된 속성을 편집할 수 있는 대화 상자가 열립니다. The following buttons are also available at the right of the toolbar:
 
    * **취소**
    * **저장 및 닫기**
@@ -313,9 +313,9 @@ From the **Sites** console you can select several pages then use **View Properti
 
 >[!NOTE]
 >
->속성의 벌크 편집은 에셋에 대해서도 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 [여러 자산의 속성 편집](/help/assets/metadata.md) 자세한 내용
+>속성의 벌크 편집은 에셋에 대해서도 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 다음을 참조하십시오 [여러 에셋의 속성 편집](/help/assets/metadata.md) 을 참조하십시오.
 >
->또한 [대량 편집기](/help/sites-administering/bulk-editor.md)GQL(Google 쿼리 언어)을 사용하여 여러 페이지에서 컨텐츠를 검색한 다음 변경 사항을 원래 페이지에 저장하기 전에 벌크 편집기에서 직접 컨텐츠를 편집할 수 있습니다.
+>또한 [벌크 편집기](/help/sites-administering/bulk-editor.md): GQL(Google 쿼리 언어)을 사용하여 여러 페이지에서 컨텐츠를 검색한 다음 변경 사항을 원래 페이지에 저장하기 전에 벌크 편집기에서 직접 컨텐츠를 편집할 수 있습니다.
 
 다음을 비롯하여 다양한 방법으로 벌크 편집할 여러 페이지를 선택할 수 있습니다.
 
@@ -339,7 +339,7 @@ From the **Sites** console you can select several pages then use **View Properti
 
 * **보기**
 
-   여러 페이지에 대한 페이지 속성 을 볼 때 다음을 볼 수 있습니다.
+   여러 페이지에 대한 페이지 속성 을 볼 때 다음과 같은 내용을 볼 수 있습니다.
 
    * 영향 받는 페이지 목록
 
@@ -360,7 +360,7 @@ From the **Sites** console you can select several pages then use **View Properti
 
 * **편집**
 
-   여러 페이지에 대한 페이지 속성 을 편집할 때:
+   여러 페이지에 대한 페이지 속성을 편집할 때:
 
    * 사용 가능한 필드의 값을 업데이트할 수 있습니다.
 
@@ -371,4 +371,4 @@ From the **Sites** console you can select several pages then use **View Properti
 
 >[!NOTE]
 >
->벌크 편집에 사용할 수 있는 필드를 지정하도록 페이지 구성 요소를 구성할 수 있습니다. 자세한 내용은 [페이지 속성의 벌크 편집을 위한 페이지 구성](/help/sites-developing/bulk-editing.md).
+>벌크 편집에 사용할 수 있는 필드를 지정하도록 페이지 구성 요소를 구성할 수 있습니다. 다음을 참조하십시오 [페이지 속성의 벌크 편집을 위한 페이지 구성](/help/sites-developing/bulk-editing.md).

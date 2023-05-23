@@ -424,13 +424,13 @@ ht-degree: 4%
 
 [정보 열](#selecting-and-positioning-the-data-columns) (가능한 경우) 정보:
 
-* 연령
+* 나이
 * 국가
 * 도메인
 * 이메일
 * 성
 * 성별
-* [일반](#generic-column)
+* [범용](#generic-column)
 * 이름
 * 정보
 * 관심
@@ -491,7 +491,7 @@ ht-degree: 4%
 [정보 열](#selecting-and-positioning-the-data-columns) 정보:
 
 * 완료됨
-* 기간
+* 지속 시간
 * 개시자
 * 모델
 * 페이로드

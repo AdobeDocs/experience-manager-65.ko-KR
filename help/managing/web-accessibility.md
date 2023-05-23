@@ -11,9 +11,9 @@ ht-degree: 70%
 
 # AEM 및 웹 접근성 지침{#aem-and-the-web-accessibility-guidelines}
 
-웹 콘텐츠를 장애나 제한 사항에 관계없이 타겟 대상자가 가능한 한 쉽게 액세스할 수 있도록 설계하기 위한 많은 사회적, 경제적 및 법적 동기가 있습니다. 따라서 AEM(Adobe Experience Manager)을 사용한 웹 액세스 가능성은 좋은 웹 디자인에서 점점 더 중요해지고 있습니다.
+웹 콘텐츠를 장애나 제한 사항에 관계없이 타겟 대상자가 가능한 한 쉽게 액세스할 수 있도록 설계하기 위한 많은 사회적, 경제적 및 법적 동기가 있습니다. 따라서 Adobe Experience Manager(AEM)를 통한 웹 접근성은 좋은 웹 디자인에서 점점 더 중요해지고 있습니다.
 
-AEM에 영향을 주는 액세스 가능한 웹 사이트 및 컨텐츠 제작:
+AEM을 사용하여 액세스 가능한 웹 사이트 및 컨텐츠를 만드는 것은 다음과 같은 사용자에게 영향을 줍니다.
 
 * 접근성 기능이 올바로 활성화되도록 AEM을 구성할 책임이 있는 관리자
 
@@ -23,7 +23,7 @@ AEM에 영향을 주는 액세스 가능한 웹 사이트 및 컨텐츠 제작:
 
 * 템플릿 개발자도 웹 사이트 디자인을 구현할 때 이러한 문제를 알고 있어야 합니다.
 
-Adobe Experience Manager과 함께 작동합니다. [지침](#wcag-accessibility-guidelines) 제공 [World Wide Web Consortium](#world-wide-web-consortium).
+Adobe Experience Manager은 [지침](#wcag-accessibility-guidelines) 에서 제공 [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
@@ -47,11 +47,11 @@ WCAG 2.1은 [접근성 수준과 이를 준수하는 방법에 대한 지침(관
 
 * [액세스 가능한 콘텐츠 만들기](/help/sites-authoring/creating-accessible-content.md)에서는 AEM과 어떻게 관련되는지를 자세히 설명합니다.
 
-* [액세스 가능한 사이트를 만들려면 리치 텍스트 편집기 구성 참조](/help/sites-administering/rte-accessible-content.md)
-관리자가 액세스 가능한 컨텐츠를 만들려면 AEM을 구성하는 방법에 대한 지침입니다.
+* [액세스 가능한 사이트를 제작하기 위한 리치 텍스트 편집기 구성](/help/sites-administering/rte-accessible-content.md)
+관리자가 액세스 가능한 컨텐츠를 생성하도록 AEM을 구성하는 방법에 대한 지침입니다.
 
-* [액세스 가능한 응용 Forms 만들기](/help/forms/using/creating-accessible-adaptive-forms.md)
-Adobe Experience Manager(AEM)에는 다양한 기능을 가진 사용자를 위해 적응형 양식의 유용성을 향상시키는 많은 기능이 포함되어 있습니다. 또한 이 솔루션은 양식 작성자가 액세스 가능한 적응형 양식을 만드는 데 도움이 됩니다.
+* [액세스 가능한 적응형 Forms 만들기](/help/forms/using/creating-accessible-adaptive-forms.md)
+Adobe Experience Manager(AEM)에는 다양한 기능을 보유한 사용자를 위해 적응형 양식의 유용성을 개선하는 다양한 기능이 포함되어 있습니다. 또한 이 솔루션은 양식 작성자가 액세스 가능한 적응형 양식을 만들 수 있도록 지원합니다.
 
 >[!NOTE]
 >

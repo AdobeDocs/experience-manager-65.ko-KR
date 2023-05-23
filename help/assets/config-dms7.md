@@ -367,7 +367,7 @@ Dynamic Media에서 처리하는 자산 유형을 정의하고 고급 자산 처
 * Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated PostScript ® 파일(.EPS)을 래스터화합니다.
 * [비디오 프로필](/help/assets/video-profiles.md) 및 [이미징 프로필](/help/assets/image-profiles.md) 를 사용하여 비디오와 이미지의 처리를 각각 정의할 수 있습니다.
 
-[자산 업로드](/help/assets/manage-assets.md#uploading-assets)를 참조하십시오.
+다음을 참조하십시오 [에셋 업로드](/help/assets/manage-assets.md#uploading-assets).
 
 **지원되는 형식의 MIME 유형을 편집하려면:**
 

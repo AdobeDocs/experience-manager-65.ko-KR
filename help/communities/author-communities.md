@@ -22,26 +22,26 @@ ht-degree: 27%
 
 ## 소개 {#introduction}
 
-AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 있을 뿐만 아니라 표준 AEM 작성 도구를 사용하여 모든 AEM 사이트에 커뮤니티 기능을 추가할 수도 있습니다.
+AEM Communities에 라이센스가 부여되면 커뮤니티 사이트를 만들 수 있을 뿐만 아니라 표준 AEM 작성 도구를 사용하여 AEM 사이트에 커뮤니티 기능을 추가할 수 있습니다.
 
-커뮤니티 사이트 생성에 대한 자세한 내용은 다음을 참조하십시오.
+커뮤니티 사이트 만들기에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [AEM Communities 개요](/help/communities/overview.md)
 * [AEM Communities 시작하기](/help/communities/getting-started.md)
 
 >[!NOTE]
 >
->작성 환경을 잘 모를 경우 다음 문서를 참조하십시오. [기본 처리](/help/sites-authoring/basic-handling.md) 그리고 [페이지 작성에 대한 빠른 안내](/help/sites-authoring/qg-page-authoring.md).
+>작성 환경에 익숙하지 않은 경우 [기본 처리](/help/sites-authoring/basic-handling.md) 및 a [페이지 작성에 대한 빠른 안내](/help/sites-authoring/qg-page-authoring.md).
 
 ## 사용 가능한 커뮤니티 구성 요소 {#available-communities-components}
 
-다음 표에는 구성 요소 브라우저(사이드 킥에서 활성화될 때 작성자가 볼 수 있는 커뮤니티 구성 요소가 나열되어 있습니다.
+다음 표에는 구성 요소 브라우저(사이드 킥)에서 활성화된 경우 작성자가 볼 수 있는 커뮤니티 구성 요소가 나열되어 있습니다.
 
-대화형 [커뮤니티 구성 요소 안내서](/help/communities/components-guide.md).
+대화형도 참조하십시오 [커뮤니티 구성 요소 안내서](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->읽기 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md) 커뮤니티 구성 요소로 작성하는 데 필요한 정보가 포함되어 있으므로
+>읽기 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md) 커뮤니티 구성 요소로 작성하는 데 필요한 정보가 포함되어 있습니다.
 
 | **구성 요소 제목** | **특별 포함** |
 |---|---|
@@ -59,7 +59,7 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 | 팔로잉 | [소셜 그래프](/help/communities/socialgraph.md) |
 | 포럼 | [포럼](/help/communities/forum.md) |
 | 관념화 | [관념화](/help/communities/ideation-feature.md) |
-| 리더보드 | [점수 및 배지](/help/communities/enabling-leaderboard.md) |
+| 리더보드 | [채점 및 배지](/help/communities/enabling-leaderboard.md) |
 | 연결 | [연결](/help/communities/liking.md) |
 | 메시지 | [메시지](/help/communities/configure-messaging.md) |
 | 메시지 목록 | [메시지](/help/communities/configure-messaging.md) |
@@ -76,12 +76,12 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 >[!NOTE]
 >
->투표 구성 요소는 더 이상 사용할 수 없으며 Experience Manager 커뮤니티에서 지원되지 않습니다.
+>투표 구성 요소는 Experience Manager 커뮤니티에서 더 이상 사용할 수 없고 지원되지 않습니다.
 
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
 
-* 방문 [커뮤니티 배포](/help/communities/deploy-communities.md) 권장 배포에 대해 자세히 알아보십시오 .
+* 방문 [커뮤니티 배포](/help/communities/deploy-communities.md) 권장 배포에 대해 알아봅니다.
 
-* 방문 [커뮤니티 사이트 관리](/help/communities/administer-landing.md) 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시징 구성에 대해 알아보려면.
+* 방문 [커뮤니티 사이트 관리](/help/communities/administer-landing.md) 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시지 구성에 대해 알아봅니다.
 
-* 방문 [커뮤니티 개발](/help/communities/communities.md) SCF(소셜 구성 요소 프레임워크) 및 커뮤니티 구성 요소 및 기능 사용자 지정에 대해 알아봅니다.
+* 방문 [개발 커뮤니티](/help/communities/communities.md) 소셜 구성 요소 프레임워크(SCF)와 커뮤니티 구성 요소 및 기능 사용자 지정에 대해 알아봅니다.

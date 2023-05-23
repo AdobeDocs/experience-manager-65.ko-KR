@@ -32,7 +32,7 @@ DevOps는 다음과 같은 문제를 방지하는 것을 목표로 합니다.
 
 ## 환경 {#environments}
 
-AEM(Adobe Experience Manager) 배포는 일반적으로 여러 수준에서 다른 용도로 사용되는 여러 환경으로 구성됩니다.
+AEM(Adobe Experience Manager) 배포는 일반적으로 서로 다른 수준에서 다른 용도로 사용되는 여러 환경으로 구성됩니다.
 
 * [개발](#development)
 * [품질 보증](#quality-assurance)
@@ -62,7 +62,7 @@ AEM(Adobe Experience Manager) 배포는 일반적으로 여러 수준에서 다�
 
 ### 품질 보증 {#quality-assurance}
 
-이 환경은 품질 보증 팀이 종합적으로 사용하여 사용됩니다 [테스트](/help/sites-developing/test-plan.md) 새로운 시스템 디자인과 기능 모두. 적절한 콘텐츠를 사용한 작성자 및 게시 환경이 모두 있어야 하며, 전체 테스트를 활성화하는 데 필요한 모든 서비스를 제공해야 합니다.
+이 환경은 품질 보증 팀에서 종합적으로 사용하는 것입니다. [테스트](/help/sites-developing/test-plan.md) 새로운 시스템, 디자인과 기능 모두. 적절한 콘텐츠를 사용한 작성자 및 게시 환경이 모두 있어야 하며, 전체 테스트를 활성화하는 데 필요한 모든 서비스를 제공해야 합니다.
 
 ### 스테이징 {#staging}
 
@@ -140,6 +140,6 @@ AEM 프로젝트는 종종 코드 배포를 트리거합니다.
 콘텐츠를 다음과 같이 전송할 수 있습니다.
 
 * 다른 환경 간에 패키지를 내보내고 가져옵니다.
-* 다른 인스턴스 간에 직접 복제([AEM 복제](/help/sites-deploying/replication.md)) 컨텐츠(HTTP 또는 HTTPS 연결 사용)를 가져올 수 있습니다.
+* 다른 인스턴스 간 - 직접 복제 ([AEM 복제](/help/sites-deploying/replication.md)) 컨텐츠(HTTP 또는 HTTPS 연결 사용)입니다.
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

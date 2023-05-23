@@ -14,7 +14,7 @@ exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
       * 번역됨
    * 분석
       * 페이지 조회수
-      * 고유 방문자 수
+      * 고유 방문자
       * 페이지 시간
 * 깊이
    * 상위 경로

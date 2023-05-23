@@ -42,7 +42,7 @@ RTE는 다음 커뮤니티 구성 요소에 사용할 수 있습니다.
 * [포럼](forum.md)
 * [메시지](configure-messaging.md)
 * [QnA](working-with-qna.md)
-* [검토](reviews.md)
+* [리뷰](reviews.md)
 
 ## 사용자 지정 {#customization}
 

@@ -16,7 +16,7 @@ Adobe Experience Manager 콘텐츠 및 상거래를 통해 브랜드 확장과 �
 
 ## Content and Commerce를 통해 고객의 성공적인 여정을 지원하는 방법
 
-온라인 상거래 경험에 대한 고객 기대가 높아지면서 브랜드는 차별화된 경험과 더 많은 콘텐츠를 신속하게 제공해야 한다는 압박에 시달리고 있습니다. 하지만 콘텐츠 관리 플랫폼을 구현하려면 사용자 지정 구성 요소와 저작 도구 등 기본 요소 개발에 막대한 시간과 예산을 투자해야 하고 유지 관리 및 업그레이드 시 비용이 발생하는 경우가 있습니다. Experience Manager Sites은 기본 제공 상거래 핵심 구성 요소, 제작 도구 및 참조 스토어를 제공하는 Experience Manager의 추가 기능 모듈로 컨텐츠 및 상거래를 제공하여 go-live를 가속화하고 팀 간의 원활한 공동 작업을 가능하게 하며 전환을 유도합니다.
+온라인 상거래 경험에 대한 고객 기대가 높아지면서 브랜드는 차별화된 경험과 더 많은 콘텐츠를 신속하게 제공해야 한다는 압박에 시달리고 있습니다. 하지만 콘텐츠 관리 플랫폼을 구현하려면 사용자 지정 구성 요소와 저작 도구 등 기본 요소 개발에 막대한 시간과 예산을 투자해야 하고 유지 관리 및 업그레이드 시 비용이 발생하는 경우가 있습니다. Experience Manager Sites은 Experience Manager을 위한 추가 모듈로서 컨텐츠 및 상거래를 제공하여 즉시 사용 가능한 상거래 핵심 구성 요소, 작성 도구 및 참조 스토어를 제공하여 go-live를 가속화하고, 팀 간의 원활한 공동 작업을 가능하게 하며, 전환을 유도합니다.
 
 브랜드는 Experience Manager를 Adobe Experience Cloud에 포함된 Adobe Commerce 및 선택한 모든 상거래 엔진과 통합할 수 있습니다. Experience Manager Content and Commerce를 통해 브랜드는 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -28,7 +28,7 @@ Adobe Experience Manager 콘텐츠 및 상거래를 통해 브랜드 확장과 �
 
 ## AEM 전자 상거래 통합 프레임워크(CIF) 소개 {#cif-intro}
 
-해당 프로젝트가 복잡한 상거래 솔루션 통합을 처리해야 하기 때문입니다. 상거래 솔루션은 Adobe Commerce과 같은 상업 솔루션에서 사용자 지정 상거래 서비스 세트에 이르기까지 모든 것이 될 수 있습니다. 통합은 사용 사례와 생태계에 따라 크게 달라집니다. 일반적으로 여러 위치를 다루며 느낌이 매우 다양합니다.
+해당 프로젝트가 복잡한 상거래 솔루션 통합을 처리해야 하기 때문입니다. 상거래 솔루션은 Adobe Commerce과 같은 상거래 솔루션에서 사용자 지정 상거래 서비스 세트에 이르는 모든 것이 될 수 있습니다. 통합은 사용 사례와 생태계에 따라 크게 달라집니다. 일반적으로 여러 위치를 다루며 느낌이 매우 다양합니다.
 
 * 복잡하고 동적인 생태계 통합 (예: 제품 카탈로그)
 * 기업은 효율적인 옴니채널 방식으로 자체 라이프사이클로 제품 콘텐츠 관리해야 함
@@ -58,13 +58,13 @@ AEM의 강력한 CIF 도구를 통해 콘텐츠 제작자는 확장 가능하고
 
 ### 가치 창출 시간 (TTV)
 
-을(를) 사용하여 프로젝트 개발 가속화 [AEM 코어 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 상점](https://github.com/adobe/aem-cif-guides-venia), [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), 및 PWA 통합 패턴 (헤드리스 컨텐츠 및 상거래).
+을 통해 프로젝트 개발 가속화 [AEM 핵심 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 상점](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)및 PWA의 통합 패턴(Headless Content 및 Commerce)입니다.
 
 지속적인 혁신을 위해 CIF를 항상 최신 상태를 유지하는 추가 기능으로 빌드하면 고객은 새로운 기능과 개선 사항에 액세스할 수 있습니다.
 
 ### 통합
 
-을 사용하여 에코시스템(예: 상거래 솔루션)과 Experience Cloud 연결  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), 마이크로 서비스 기반 PaaS 및 [CIF의 참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+을 사용하여 에코시스템(예: 상거래 솔루션)을 Experience Cloud과 연결합니다.  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), 마이크로 서비스 기반 서버 비저장 PaaS 및 [CIF 참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## 입증된 패턴 및 모범 사례
 

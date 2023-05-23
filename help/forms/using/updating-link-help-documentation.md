@@ -1,7 +1,7 @@
 ---
-title: 설명서에 대한 링크 업데이트
+title: 설명서 링크 업데이트
 seo-title: Updating the link to the documentation
-description: AEM Forms 작업 공간에서 Workspace 도움말 링크의 대상을 업데이트하여 사용자 지정 설명서 링크를 가리키는 방법
+description: 사용자 지정 설명서 링크를 가리키도록 AEM Forms 작업 공간에서 작업 공간 도움말 링크의 대상을 업데이트하는 방법.
 seo-description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
 uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
@@ -17,18 +17,18 @@ ht-degree: 3%
 
 ---
 
-# 설명서에 대한 링크 업데이트 {#updating-the-link-to-the-documentation}
+# 설명서 링크 업데이트 {#updating-the-link-to-the-documentation}
 
-AEM Forms 작업 공간의 기본 도움말 콘텐츠에 액세스하려면 **도움말 > 작업 공간 도움말**. Adobe 웹 사이트의 온라인 설명서를 가리킵니다. 그러나 다른 URL을 가리키도록 업데이트할 수 있습니다.
+을 선택하여 AEM Forms 작업 영역에 대한 기본 도움말 콘텐츠에 액세스할 수 있습니다. **도움말 > 작업 공간 도움말**. Adobe 웹 사이트의 온라인 설명서를 가리킵니다. 그러나 다른 URL을 가리키도록 업데이트할 수 있습니다.
 
-기본 도움말 URL을 변경할 수 있는 다음 사용 사례를 고려하십시오.
+기본 도움말 URL을 변경하려는 경우 다음 사용 사례를 고려하십시오.
 
-* 원하는 언어로 현지화된 도움말 제공
-* 사용자 지정된 작업 공간에 대한 사용자 지정 도움말 컨텐츠를 제공하는 경우.
+* 원하는 언어로 현지화된 도움말을 제공합니다.
+* 맞춤화된 작업 영역에 맞춤화된 도움말 콘텐츠를 제공하기 위한 것입니다.
 
-온라인 설명서의 URL을 업데이트하려면 [사용자 지정의 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md) 그리고 다음 단계를 수행합니다.
+온라인 설명서의 URL을 업데이트하려면 다음을 따르십시오. [사용자 지정의 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md) 그런 다음 다음 다음 단계를 수행합니다.
 
-1. 를 복사합니다. `userinfo.html` 파일 위치 `/libs/ws/js/runtime/templates` to `/apps/ws/js/runtime/templates`.
+1. 다음을 복사합니다. `userinfo.html` 파일 출처: `/libs/ws/js/runtime/templates` 끝 `/apps/ws/js/runtime/templates`.
 1. 변경:
 
    ```html
@@ -47,7 +47,7 @@ AEM Forms 작업 공간의 기본 도움말 콘텐츠에 액세스하려면 **�
      </li>
    ```
 
-1. 다음을 수행합니다.
+1. 다음 작업을 수행합니다.
 
-   1. /apps/ws/js/registry.js 을 열어 편집합니다.
-   1. 검색 및 바꾸기 `text!/lc/libs/ws/js/runtime/templates/userinfo.html` with `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
+   1. 편집하려면 /apps/ws/js/registry.js을 여십시오.
+   1. 검색 및 바꾸기 `text!/lc/libs/ws/js/runtime/templates/userinfo.html` 포함 `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.

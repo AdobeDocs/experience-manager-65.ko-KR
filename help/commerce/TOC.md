@@ -6,7 +6,7 @@ user-guide-description: AEM Content and Commerce를 사용하고 관리하는 �
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 76%
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 76%
    + [Adobe Commerce](cif/integrating/magento.md)
    + [서드파티 상거래 솔루션](cif/integrating/third-party.md)
 + AEM Storefront {#storefront}
-   + [시작하기](cif/getting-started.md)
+   + [시작](cif/getting-started.md)
    + 작성 {#authoring}
       + [상거래 경험](cif/authoring/authoring-commerce-experiences.md)
       + [제품 관리실](cif/authoring/product-cockpit.md)
@@ -31,7 +31,7 @@ ht-degree: 76%
       + [다중 템플릿 사용](cif/configuring/multi-template-usage.md)
       + [SEO에 대한 URL 구성](cif/configuring/advanced-url-configuration.md)
       + [캐싱 옵션](cif/configuring/caching.md)
-      + [맞춤형 HTTP 헤더](/help/commerce/cif/configuring/custom-http-headers.md)
+      + [사용자 정의 HTTP 헤더](/help/commerce/cif/configuring/custom-http-headers.md)
    + 개발 {#developing}
       + [AEM을 사용하여 개발](cif/develop.md)
       + [CIF 구성 요소 스타일링](cif/customizing/style-cif-component.md)

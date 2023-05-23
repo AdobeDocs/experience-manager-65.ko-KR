@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식 작업을 위한 우수 사례
+title: 적응형 양식 작업 모범 사례
 seo-title: Best practices for working with adaptive forms
 description: AEM Forms 프로젝트 설정, 적응형 양식 개발 및 AEM Forms 시스템 성능 최적화를 위한 모범 사례에 대해 설명합니다.
 seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# 적응형 양식 작업을 위한 우수 사례 {#best-practices-for-working-with-adaptive-forms}
+# 적응형 양식 작업 모범 사례 {#best-practices-for-working-with-adaptive-forms}
 
 ## 개요 {#overview}
 
@@ -100,7 +100,7 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 
 에서 활성화된 양식 템플릿을 사용하여 적응형 양식을 만들 수 있습니다 **구성 브라우저**. 양식 템플릿을 활성화하려면 다음을 참조하십시오. [적응형 양식 템플릿 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
 
-다른 작성자 컴퓨터에서 만든 적응형 양식 패키지에서 양식 템플릿을 업로드할 수도 있습니다. 양식 템플릿은 다음을 설치하여 사용할 수 있습니다. [aemforms-references-* 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 권장되는 몇 가지 모범 사례는 다음과 같습니다.
+다른 작성자 컴퓨터에서 만든 적응형 양식 패키지에서 양식 템플릿을 업로드할 수도 있습니다. 양식 템플릿은 다음을 설치하여 사용할 수 있습니다. [aemforms-references-* 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko). 권장되는 몇 가지 모범 사례는 다음과 같습니다.
 * 다음 **nosamplecontent** 실행 모드는 작성자에게만 권장되며 게시 노드에는 권장되지 않습니다.
 * 적응형 양식, 테마, 템플릿 또는 클라우드 구성과 같은 에셋 작성은 구성된 게시 노드에 게시할 수 있는 작성자 노드에서만 수행됩니다.
 자세한 내용은 [양식 및 문서 게시 및 게시 취소](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)

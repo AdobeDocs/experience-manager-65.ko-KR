@@ -78,7 +78,7 @@ serialize할 메서드를 정의하려면 모델 인터페이스에 적절한 �
 
 ## 예 {#example}
 
-릴리스 이후 핵심 구성 요소는 JSON 내보내기를 지원합니다. [1.1.0 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 를 참조로 사용할 수 있습니다.
+릴리스 이후 핵심 구성 요소는 JSON 내보내기를 지원합니다. [1.1.0 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 를 참조로 사용할 수 있습니다.
 
 예를 들어 이미지 핵심 구성 요소의 슬링 모델 구현 및 주석이 달린 인터페이스를 참조하십시오.
 
@@ -98,4 +98,4 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [콘텐츠 서비스에 대한 JSON 내보내기](/help/sites-developing/json-exporter.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [콘텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

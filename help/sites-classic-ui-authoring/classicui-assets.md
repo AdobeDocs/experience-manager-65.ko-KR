@@ -1,7 +1,7 @@
 ---
-title: 자산 사용
+title: 자산 작업
 seo-title: Working with Assets
-description: 작성 환경 및 도구 섹션에서는 페이지를 편집할 때 컨텐츠 파인더를 사용하여 자산을 찾고 자산을 사용하는 방법에 대한 정보를 제공합니다. AEM Assets는 자산 작업을 위한 다른 방법을 제공합니다.
+description: 작성 환경 및 도구 섹션에서는 페이지 편집 시 콘텐츠 파인더를 사용하여 에셋을 찾고 사용하는 방법에 대한 정보를 제공합니다. AEM Assets은 에셋 작업을 위한 다른 방법을 제공합니다.
 seo-description: The Author Environment and Tools section provides information about using Content Finder to find and use assets when editing pages. AEM Assets provides other methods for working with assets.
 uuid: 65d1e593-9957-45b7-8831-45055aa41a1d
 contentOwner: Chris Bohnert
@@ -13,14 +13,14 @@ exl-id: daf5c934-8a98-4891-94a1-029056d87931
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 90%
+ht-degree: 12%
 
 ---
 
-# 자산 사용{#working-with-assets}
+# 자산 작업{#working-with-assets}
 
-[작성 환경 및 도구](/help/sites-authoring/author-environment-tools.md) 섹션에서는 페이지를 편집할 때 컨텐츠 파인더를 사용하여 자산을 찾고 자산을 사용하는 방법에 대한 정보를 제공합니다.  AEM Assets는 자산 작업을 위한 다른 방법을 제공합니다.
+다음 [작성 환경 및 도구](/help/sites-authoring/author-environment-tools.md) 섹션은 사용에 대한 정보를 제공합니다. [!UICONTROL 콘텐츠 파인더] 를 클릭하여 페이지를 편집할 때 에셋을 찾고 사용합니다. AEM Assets에서는 에셋 작업을 위한 다른 방법을 제공합니다.
 
 * [페이지에 Dynamic Media Classic 기능 추가](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Dynamic Media 작업](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
-* [자산에 대한 이름 지정 규칙](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
+* [에셋에 대한 이름 지정 규칙](/help/sites-classic-ui-authoring/asset-naming-conventions.md)

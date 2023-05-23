@@ -7,7 +7,7 @@ exl-id: 51788662-6214-408e-98d9-692950c366be
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 24%
+ht-degree: 14%
 
 ---
 
@@ -27,10 +27,10 @@ ht-degree: 24%
 
 ## 문제 해결 및 도움말 {#troubleshooting-and-help}
 
-* [AEM을 처음 사용하십니까](new.md)
+* [AEM의 새로운 기능](new.md)
 * [AEM 기능에 대해 알아보기](learn.md)
 * [AEM용 우수 사례, 방법 및 교육](best-practice.md)
-* [AEM Community](community.md)
+* [AEM 커뮤니티](community.md)
 * [AEM의 문제 해결](troubleshooting.md)
 
 ## 연락처 옵션 {#contact-options}

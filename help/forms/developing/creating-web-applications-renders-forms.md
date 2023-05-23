@@ -47,7 +47,7 @@ Java 서블릿을 사용하여 고객이 데이터를 보고 양식에 입력할
 
 >[!NOTE]
 >
->조각을 기반으로 양식 디자인을 만드는 방법에 대한 자세한 내용은 [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63).
+>조각을 기반으로 양식 디자인을 만드는 방법에 대한 자세한 내용은 [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63_kr).
 
 **샘플 파일**
 

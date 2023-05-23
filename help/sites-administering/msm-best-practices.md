@@ -38,7 +38,7 @@ MSM은 콘텐츠 배포 자동화를 위한 구성 가능 프레임워크입니�
 >다음을 사용할 수도 있습니다 [참조 구성 요소](/help/sites-authoring/default-components-foundation.md#reference) 한 페이지나 단락을 재사용합니다. 그러나 다음 사항에 유의하십시오.
 >
 >* MSM은 보다 유연하고 동기화된 콘텐츠 및 시기를 세부적으로 제어할 수 있습니다.
->* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 이제 foundation 구성 요소보다 권장됩니다.
+>* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 는 이제 foundation 구성 요소보다 권장됩니다.
 >
 
 
@@ -194,7 +194,7 @@ MSM 롤아웃 구성은 맞춤화가 매우 용이합니다. 롤아웃을 자동
 
 이 페이지와 다음 페이지에서는 관련 문제를 다룹니다.
 
-* [라이브 카피 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
-* [라이브 카피 개요 콘솔](/help/sites-administering/msm-livecopy-overview.md)
+* [Live Copy 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
+* [Live Copy 개요 콘솔](/help/sites-administering/msm-livecopy-overview.md)
 * [라이브 카피 동기화 구성](/help/sites-administering/msm-sync.md)
 * [MSM 롤아웃 충돌](/help/sites-administering/msm-rollout-conflicts.md)

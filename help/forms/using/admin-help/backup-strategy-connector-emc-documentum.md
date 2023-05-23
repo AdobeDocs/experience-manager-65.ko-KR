@@ -1,7 +1,7 @@
 ---
 title: EMC Documentum 사용자를 위한 Connector 백업 전략
 seo-title: Backup strategy for Connector for EMC Documentum users
-description: Connector for EMC Documentum 사용자를 위한 백업 전략을 작성하는 방법을 확인하십시오.
+description: Connector for EMC Documentum 사용자를 위한 백업 전략을 만드는 방법을 확인하십시오.
 seo-description: Check how to create a backup strategy for Connector for EMC Documentum users.
 uuid: 5d8a0476-5231-4e1d-96c4-ae3df68e09f0
 contentOwner: admin
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # EMC Documentum 사용자를 위한 Connector 백업 전략 {#backup-strategy-for-connector-for-emc-documentum-users}
 
-이 장의 지침 외에 EMC Documentum용 커넥터가 설치되어 있는 경우 백업 및 복구 전략에는 각 ECM 시스템이 설치된 컴퓨터를 백업(또는 복구)해야 합니다. ECM Documentum 설명서를 참조하십시오.
+Connector for EMC Documentum을 설치한 경우 이 장의 지침 외에도 백업 및 복구 전략에는 각 ECM 시스템이 설치된 컴퓨터를 백업(또는 복구)하는 작업이 포함되어야 합니다. ECM Documentum 설명서를 참조하십시오.
 
-ECM 저장소를 사용하여 AEM Forms 환경을 백업하고 다음 작업을 수행합니다.
+ECM 저장소를 사용하고 다음 작업을 수행하여 AEM Forms 환경을 백업합니다.
 
 * 이 문서에 설명된 지침에 따라 AEM 양식을 백업합니다.
-* 다음 지침에 따라 ECM Documentum 시스템을 백업합니다. [EMC Documentum Content Server 백업](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
+* 의 지침에 따라 ECM Documentum 시스템 백업 [EMC Documentum Content Server 백업](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
 
-ECM 저장소를 사용하여 AEM Forms 환경을 복원하고 다음 작업을 수행합니다.
+ECM 저장소를 사용하고 다음 작업을 수행하여 AEM Forms 환경을 복원합니다.
 
-* 다음 지침에 따라 각각의 ECM 시스템을 복원합니다. [EMC Documentum Content Server 복구](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server).
+* 의 지침에 따라 각 ECM 시스템을 복원합니다. [EMC Documentum Content Server 복구](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server).
 * 이 문서에 설명된 지침에 따라 AEM 양식을 복원합니다.

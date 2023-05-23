@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ---
 
-# 반응형 사이트에 최적화된 이미지 제공 {#delivering-optimized-images-for-a-responsive-site}
+# 반응형 사이트에 최적화된 이미지 게재 {#delivering-optimized-images-for-a-responsive-site}
 
 반응형 서비스용 코드를 웹 개발자와 공유하려면 반응형 코드 기능을 사용하십시오. 응답형(**[!UICONTROL RESS]**)를 클릭하여 웹 개발자와 공유할 수 있습니다.
 

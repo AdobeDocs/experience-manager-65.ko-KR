@@ -1,7 +1,7 @@
 ---
-title: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책조항
+title: SharePoint 커넥터 라이선스, 저작권 공지 및 면책조항
 seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
-description: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책 사항에 대해 알아봅니다.
+description: SharePoint 커넥터 라이선스, 저작권 공지 및 면책조항에 대해 알아봅니다.
 seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
 contentOwner: User
@@ -18,54 +18,54 @@ ht-degree: 19%
 
 ---
 
-# SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책조항{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# SharePoint 커넥터 라이선스, 저작권 공지 및 면책조항{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-이 섹션에는 MS SharePoint용 Day JCR Connector와 관련하여 명시적으로 기재해야 하는 모든 라이센스, 저작권 고지 및 면책 사항이 나와 있습니다.
+이 섹션에는 MS SharePoint용 Day JCR Connector와 관련하여 명시적으로 명시해야 하는 모든 라이선스, 저작권 공지 및 면책조항이 나열되어 있습니다.
 
 ## 커넥터 타사 라이브러리 개요 {#overview-of-connector-rd-party-libraries}
 
-다음 표에는 SharePoint Connector 핵심 라이브러리 내에서 사용되는 타사 라이브러리와 그러한 라이브러리 적용되는 라이센스, 저작권 고지 또는 면책 사항이 나와 있습니다.
+다음 표에는 SharePoint Connector 핵심 라이브러리 내에서 사용되는 타사 라이브러리와 함께 해당 라이브러리를 다루는 라이선스, 저작권 공지 또는 면책조항이 나열되어 있습니다.
 
 | 라이브러리 | 라이센스 유형 |
 |---|---|
-| 주석 | [Apache](#apache) |
-| axiom api | [Apache](#apache) |
-| 축족 | [Apache](#apache) |
-| 축방향 | [Apache](#apache) |
+| annogen | [Apache](#apache) |
+| 공리 | [Apache](#apache) |
+| axiom-dom | [Apache](#apache) |
+| axiom-impl | [Apache](#apache) |
 | axis2-adb | [Apache](#apache) |
-| axis2-커널 | [Apache](#apache) |
+| axis2-kernel | [Apache](#apache) |
 | Backport-util-concurrent | 공용 도메인 |
-| commons-codec | [Apache](#apache) |
-| commons-collections | [Apache](#apache) |
+| commons-코덱 | [Apache](#apache) |
+| commons-collection | [Apache](#apache) |
 | commons-fileupload | [Apache](#apache) |
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| 동시 실행 | [동시 실행](#concurrent) (공용 도메인) |
+| 동시 실행 | [동시 실행](#concurrent) (공개 도메인) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
 | jackrabbit-jcr2spi | [Apache](#apache) |
 | jackrabbit-jcr-commons | [Apache](#apache) |
 | jackrabbit-spi-commons | [Apache](#apache) |
-| jackrabbit spi | [Apache](#apache) |
-| 야센 | BSD |
+| jackrabbit-spi | [Apache](#apache) |
+| 자센 | BSD |
 | log4j | [Apache](#apache) |
 | lucene-core | [Apache](#apache) |
-| 네티 | [Apache](#apache) |
+| 니티 | [Apache](#apache) |
 | slf4j-api | [SLF4J.ORG](#slf-j-org) |
 | slf4j-jdk14 | [SLF4J.ORG](#slf-j-org) |
-| stax api | [Apache](#apache) |
+| stax-api | [Apache](#apache) |
 | wsdl4j | [Apache](#apache) |
 | wstx-asl | [Apache](#apache) |
-| xalan | [Apache](#apache) |
+| 잘란 | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml api | [Apache](#apache) (Public Domain 및 W3C 소프트웨어 라이센스에서 적용되는 부분을 포함함) |
+| xml-api | [Apache](#apache) (공용 도메인 및 W3C 소프트웨어 라이선스가 적용되는 부분 포함) |
 | XmlSchema | [Apache](#apache) |
 
 ## CRX 타사 라이브러리 개요 {#overview-of-crx-rd-party-libraries}
 
-다음 표에는 CRX에서 사용되는 타사 라이브러리와 그러한 라이브러리 적용되는 라이센스, 저작권 고지 또는 면책 사항이 나와 있습니다.
+다음 표에는 CRX에서 사용되는 타사 라이브러리와 함께 이러한 라이브러리가 적용되는 라이센스, 저작권 공지 또는 면책조항이 나열되어 있습니다.
 
 <table>
  <colgroup>
@@ -106,7 +106,7 @@ ht-degree: 19%
   </tr>
   <tr>
    <td>hsqldb-1.8.0.4.jar</td>
-   <td><a href="#hypersonic-sql-group">극초음파 SQL 그룹</a></td>
+   <td><a href="#hypersonic-sql-group">극초음속 SQL 그룹</a></td>
   </tr>
   <tr>
    <td>jaxen-1.1-beta-6.jar</td>
@@ -133,7 +133,7 @@ ht-degree: 19%
    <td><a href="#pdfbox">PDFBox</a></td>
   </tr>
   <tr>
-   <td>poi-2.5.1day.jar</td>
+   <td>poi-2.5.1-day.jar</td>
    <td><a href="#apache">Apache</a></td>
   </tr>
   <tr>
@@ -157,7 +157,7 @@ ht-degree: 19%
 
 ## CQSE 타사 라이브러리 개요 {#overview-of-cqse-rd-party-libraries}
 
-다음 표에는 Cookie Servlet Engine에서 사용되는 타사 라이브러리와 적용되는 라이센스, 저작권 고지 또는 면책 사항이 나와 있습니다.
+다음 표에는 Communiqué Servlet Engine 내에서 사용되는 서드파티 라이브러리와 해당 라이브러리가 적용되는 라이선스, 저작권 공지 또는 면책조항이 나열되어 있습니다.
 
 <table>
  <colgroup>
@@ -194,11 +194,11 @@ ht-degree: 19%
    <td><a href="#apache">Apache</a></td>
   </tr>
   <tr>
-   <td>portlet api-1.0.jar</td>
+   <td>portlet-api-1.0.jar</td>
    <td><a href="#apache">Sun 포틀릿</a></td>
   </tr>
   <tr>
-   <td>servlet-api-2.3.jar</td>
+   <td>servletapi-2.3.jar</td>
    <td><a href="#sun-servlet">Sun 서블릿</a></td>
   </tr>
   <tr>
@@ -207,7 +207,7 @@ ht-degree: 19%
   </tr>
   <tr>
    <td><br /> </td>
-   <td><a href="#sax">SAX</a></td>
+   <td><a href="#sax">색스</a></td>
   </tr>
   <tr>
    <td><br /> </td>
@@ -215,7 +215,7 @@ ht-degree: 19%
   </tr>
   <tr>
    <td><br /> </td>
-   <td><a href="#w-c-software">W3C 소프트웨어</a></td>
+   <td><a href="#w-c-software">W3 소프트웨어</a></td>
   </tr>
  </tbody>
 </table>
@@ -567,7 +567,7 @@ ht-degree: 19%
      implementations, and test suites thereof.
 ```
 
-## 극초음파 SQL 그룹 {#hypersonic-sql-group}
+## 극초음속 SQL 그룹 {#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
@@ -727,7 +727,7 @@ ht-degree: 19%
      <a href="https://www.pdfbox.org" TARGET="_blank" >https://www.pdfbox.org</a>
 ```
 
-## SAX {#sax}
+## 색스 {#sax}
 
 ```xml
      This license came from: <a href="https://www.saxproject.org/copying.html" TARGET="_blank" >https://www.saxproject.org/copying.html</a>
@@ -1180,7 +1180,7 @@ ht-degree: 19%
      (last updated by reagle on 1999/04/99.)
 ```
 
-## W3C 소프트웨어 {#w-c-software}
+## W3 소프트웨어 {#w-c-software}
 
 ```xml
      This license came from: <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>

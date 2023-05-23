@@ -4,7 +4,7 @@ product: experience manager
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.5 릴리스 노트
 breadcrumb-title: 릴리스 정보
-user-guide-description: 릴리스 노트에서 AEM 6.5의 최신 새로운 기능에 대해 알아보십시오.
+user-guide-description: 릴리스 정보에서 AEM 6.5의 최신 새로운 기능에 대해 알아봅니다.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: dbe13e38861486b0b7d82e860fa6a3ff52b03a07
@@ -37,6 +37,6 @@ ht-degree: 47%
    + [6.5.2](previous/6.5.2.md)
    + [6.5.1](previous/6.5.1.md)
    + [6.5.0](previous/ga.md)
-+ [AEM Forms JEE 패치 설치 프로그램](jee-patch-installer-65.md)
++ [AEM Forms JEE 패치 설치 관리자](jee-patch-installer-65.md)
 + [더 이상 사용되지 않는/제거된 기능](deprecated-removed-features.md)
 + [Touch UI 기능 상태](touch-ui-features-status.md)

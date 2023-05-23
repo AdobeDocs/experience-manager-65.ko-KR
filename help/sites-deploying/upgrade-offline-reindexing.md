@@ -28,9 +28,9 @@ Adobe Experience Manager을 업그레이드할 때 발생하는 주요 문제 �
 
 업그레이드 중 대부분의 고객이 직면한 문제는 가동 중지 시간 창을 줄이는 것입니다. 해결 방법은 다음과 같습니다. **건너뛰기** 업그레이드 중 리인덱싱 활동. 이는 새로운 인데스를 생성함으로써 달성될 수 있다 **이전** 업그레이드를 수행하는 경우 업그레이드 중에 가져오기만 하면 됩니다.
 
-## 접근 방법 {#approach}
+## 접근 방식 {#approach}
 
-![오프라인 리인덱싱 - 업그레이드 - 텍스트 추출](assets/offline-reindexing-upgrade-process.png)
+![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-process.png)
 
 를 사용하여 대상 AEM 버전의 색인 정의에 대해 업그레이드 전에 색인을 만드는 것이 좋습니다. [Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md) 도구. 위의 다이어그램은 오프라인 리인덱싱 접근 방식을 보여 줍니다.
 
@@ -45,7 +45,7 @@ Adobe Experience Manager을 업그레이드할 때 발생하는 주요 문제 �
 
 AEM에서 전체 인덱싱을 활성화하려면 PDF과 같은 바이너리의 텍스트가 추출되어 인덱스에 추가됩니다. 이는 일반적으로 인덱싱 프로세스의 많은 비용이 드는 단계입니다. 텍스트 추출은 많은 수의 바이너리를 저장할 때 자산 저장소를 리인덱싱하는 데 특히 권장되는 최적화 단계입니다.
 
-![오프라인 리인덱싱 - 업그레이드 - 텍스트 추출](assets/offline-reindexing-upgrade-text-extraction.png)
+![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-text-extraction.png)
 
 시스템에 저장된 바이너리의 텍스트는 tika 라이브러리와 함께 oak-run 도구를 사용하여 추출할 수 있습니다. 업그레이드 전에 프로덕션 시스템의 클론을 가져와 이 텍스트 추출 프로세스에 사용할 수 있습니다. 그런 다음 다음 다음 단계를 수행하여 텍스트 저장소를 만듭니다.
 

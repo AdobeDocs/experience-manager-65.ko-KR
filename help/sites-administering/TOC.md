@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 38%
+ht-degree: 36%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 38%
    + [웹 사이트 관리](msm-and-translation.md)
    + [비동기 작업](asynchronous-jobs.md)
    + [콘텐츠 재사용: 다중 사이트 관리자 및 라이브 카피](msm.md)
-   + [라이브 카피 개요 콘솔](msm-livecopy-overview.md)
-   + [라이브 카피 동기화 구성](msm-sync.md)
-   + [라이브 카피 생성 및 동기화](msm-livecopy.md)
+   + [Live Copy 개요 콘솔](msm-livecopy-overview.md)
+   + [Live Copy 동기화 구성](msm-sync.md)
+   + [Live Copy 생성 및 동기화](msm-livecopy.md)
    + [MSM 롤아웃 충돌](msm-rollout-conflicts.md)
    + [MSM 문제 해결 및 FAQ](troubleshoot-msm.md)
    + [MSM 모범 사례](msm-best-practices.md)
@@ -68,7 +68,7 @@ ht-degree: 38%
    + [도구 콘솔](tools-consoles.md)
    + [보고](reporting.md)
    + [레이아웃 컨테이너 및 레이아웃 모드 구성](configuring-responsive-layout.md)
-   + [편집자](enable-classic-ui-editor.md)
+   + [편집기](enable-classic-ui-editor.md)
    + [클래식 UI에 대한 액세스 활성화](enable-classic-ui.md)
    + [Admin Console](enable-classic-ui-admin.md)
 + 보안 {#security}
@@ -156,7 +156,7 @@ ht-degree: 38%
    + [AEM Sites - GDPR 준비 완료](gdpr-compliance-sites.md)
    + [AEM Foundation에 대한 GDPR 요청 처리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce - GDPR 준비 완료](gdpr-compliance-commerce.md)
-+ 컨텐츠 관리 {#contentmanagement}
++ 콘텐츠 관리 {#contentmanagement}
    + [패키지 관리자](package-manager.md)
    + [태그 관리](tags.md)
    + [페이지 내보내기](page-exporter.md)

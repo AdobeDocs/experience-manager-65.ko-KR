@@ -13,7 +13,7 @@ exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 11%
+ht-degree: 9%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->에셋에 대해서도 벌크 편집을 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 [다중 자산의 속성 편집](/help/assets/metadata.md)을 참조하십시오. 에셋용 벌크 메타데이터 편집기에서 필드를 사용자 지정하려면 [스키마 편집기](/help/assets/metadata-schemas.md).
+>에셋에 대해서도 벌크 편집을 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 다음을 참조하십시오 [여러 에셋의 속성 편집](/help/assets/metadata.md) 전체 정보. 에셋용 벌크 메타데이터 편집기에서 필드를 사용자 지정하려면 [스키마 편집기](/help/assets/metadata-schemas.md).
 
 ## 필드 활성화 {#enabling-a-field}
 
@@ -65,7 +65,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >이 예제에서는 핵심 구성 요소가 인스턴스에 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 콘텐츠로 실행되는 경우입니다. 다음을 참조하십시오. [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 추가 정보.
+   >이 예제에서는 핵심 구성 요소가 인스턴스에 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 콘텐츠로 실행되는 경우입니다. 다음을 참조하십시오. [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 추가 정보.
 
 1. 내에서 필요한 필드로 이동합니다. `cq:dialog` 정의.
 1. 필드 노드에서 다음 속성을 정의합니다.

@@ -19,23 +19,23 @@ ht-degree: 2%
 
 # 샘플 페이지 만들기 {#create-a-sample-page}
 
-AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 페이지 기능만으로 구성된 간단한 커뮤니티 사이트를 만드는 것입니다.
+AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 페이지 함수로 구성된 간단한 커뮤니티 사이트를 만드는 것입니다.
 
-여기에는 parsys 구성 요소가 포함되므로 다음 작업을 수행할 수 있습니다 [작성을 위한 구성 요소 활성화](basics.md#accessing-communities-components).
+여기에 parsys 구성 요소가 포함되므로 [작성을 위한 구성 요소 활성화](basics.md#accessing-communities-components).
 
-샘플 구성 요소를 사용하여 탐색하기 위한 또 다른 옵션은 [커뮤니티 구성 요소 안내서](components-guide.md).
+샘플 구성 요소를 사용하여 탐색하는 또 다른 옵션은 [커뮤니티 구성 요소 안내서](components-guide.md).
 
 ## 커뮤니티 사이트 만들기 {#create-a-community-site}
 
-이는 에 설명된 새 사이트를 만드는 것과 매우 유사합니다 [AEM Communities 시작하기](getting-started.md).
+이에 설명된 새 사이트를 만드는 것과 매우 유사합니다 [AEM Communities 시작하기](getting-started.md).
 
-가장 큰 차이점은 이 자습서에서는 만 포함된 새 커뮤니티 사이트 템플릿을 만들 것이라는 것입니다 [페이지 함수](functions.md#page-function) 모든 커뮤니티 사이트에 대해 기본적으로 유선 전 기능 이외의 다른 기능이 없는 간단한 커뮤니티 사이트를 만들 수 있습니다.
+주요 차이점은 이 자습서가 만 포함하는 새 커뮤니티 사이트 템플릿을 만들 것이라는 것입니다. [페이지 기능](functions.md#page-function) 다른 기능이 없는 간단한 커뮤니티 사이트를 만들기 위해 (모든 커뮤니티 사이트에 기본이 되는 사전 연결된 기능 제외).
 
 ### 새 사이트 템플릿 만들기 {#create-new-site-template}
 
 시작하려면 간단한 [커뮤니티 사이트 템플릿](sites.md).
 
-작성자 인스턴스의 전역 탐색에서 를 선택합니다 **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 사이트 템플릿]**.
+작성자 인스턴스의 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 사이트 템플릿]**.
 
 ![create-site-template](assets/create-site-template1.png)
 
@@ -43,15 +43,15 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
 * 기본 정보
 
    * `Name`: 단일 페이지 템플릿
-   * `Description`: 단일 페이지 함수로 구성된 템플릿.
+   * `Description`: 단일 페이지 함수로 구성된 템플릿입니다.
    * 선택 `Enabled`
 
 ![site-template-editor](assets/site-template-editor.png)
 
 * 구조
 
-   * 드래그 `Page` 함수 내에 있어야 합니다
-   * 구성 함수 세부 정보에 대해 다음을 입력합니다.
+   * 드래그 `Page` 템플릿 빌더에 함수 추가
+   * 구성 기능 세부 사항에 대해 다음을 입력합니다.
 
       * `Title`: 단일 페이지
       * `URL`: 페이지
@@ -59,22 +59,22 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
 ![site-template-editor-structure](assets/site-template-editor1.png)
 
 * 선택 **`Save`** 구성
-* 선택 **`Save`** 사이트 템플릿의 경우
+* 선택 **`Save`** 사이트 템플릿용
 
 ### 새 커뮤니티 사이트 만들기 {#create-new-community-site}
 
-이제 단순 사이트 템플릿을 기반으로 새 커뮤니티 사이트를 만듭니다.
+이제 간단한 사이트 템플릿을 기반으로 새 커뮤니티 사이트를 만듭니다.
 
-사이트 템플릿을 만든 후 전역 탐색에서 를 선택합니다 **[!UICONTROL 커뮤니티 > 사이트]**.
+사이트 템플릿을 만든 후 전역 탐색에서 을 선택합니다. **[!UICONTROL 커뮤니티 > 사이트]**.
 
-![create-community-site](assets/create-community-site1.png)
+![커뮤니티 사이트 만들기](assets/create-community-site1.png)
 
 * 선택 **`Create`** 아이콘
 
 * 단계 `1 - Site Template`
 
-   * `Title`: 단순 커뮤니티 사이트
-   * `Description`: 실험용 단일 페이지로 구성된 커뮤니티 사이트.
+   * `Title`: 간단한 커뮤니티 사이트
+   * `Description`: 실험을 위한 단일 페이지로 구성된 커뮤니티 사이트
    * `Community Site Root: (leave blank)`
    * `Community Site Base Language: English`
    * `Name`: 샘플
@@ -89,7 +89,7 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
 * 선택 `Next`
 * 단계 `2 - Design`
 
-   * 디자인 선택
+   * 원하는 디자인 선택
 
 * 선택 `Next`
 * 선택 `Next`
@@ -98,26 +98,26 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
 
 * 선택 `Create`
 
-   ![create-community-site](assets/create-community-site.png)
+   ![커뮤니티 사이트 만들기](assets/create-community-site.png)
 
 ## 사이트 게시 {#publish-the-site}
 
 ![publish-site](assets/publish-site.png)
 
-에서 [커뮤니티 사이트 콘솔](sites-console.md)를 클릭하고 게시 아이콘을 선택하여 사이트를 기본적으로 http://localhost:4503으로 게시합니다.
+다음에서 [커뮤니티 사이트 콘솔](sites-console.md)를 클릭하고 게시 아이콘을 선택하여 사이트를 게시합니다. 기본적으로 http://localhost:4503입니다.
 
-## 편집 모드에서 작성자에 있는 사이트 열기 {#open-the-site-on-author-in-edit-mode}
+## 편집 모드로 작성자의 사이트 열기 {#open-the-site-on-author-in-edit-mode}
 
-![오픈 사이트](assets/open-site.png)
+![공개 사이트](assets/open-site.png)
 
 사이트 열기 아이콘을 선택하여 편집 모드로 사이트를 확인합니다.
 
 URL은 [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
-![작성자 사이트](assets/author-site.png)
+![author-site](assets/author-site.png)
 
-간단한 홈 페이지에서는 커뮤니티 기능 및 템플릿을 통해 미리 연결된 항목을 확인하고 커뮤니티 구성 요소 추가 및 구성으로 재생할 수 있습니다.
+간단한 홈 페이지에서는 커뮤니티 기능과 템플릿을 통해 미리 배선된 항목을 확인하고 커뮤니티 구성 요소를 추가 및 구성하는 작업을 수행할 수 있습니다.
 
-## 게시에서 사이트 보기 {#view-site-on-publish}
+## 게시할 때 사이트 보기 {#view-site-on-publish}
 
-페이지를 게시한 후 페이지에서 페이지를 엽니다. [게시 인스턴스](http://localhost:4503/content/sites/sample/en.html) 익명 사이트 방문자, 로그인 구성원 또는 관리자로 기능을 실험하기 위해 작성자 환경에 표시되는 관리 링크는 관리자가 로그인하지 않는 한 게시 환경에 표시되지 않습니다.
+페이지를 게시한 후에서 페이지를 엽니다 [게시 인스턴스](http://localhost:4503/content/sites/sample/en.html) 익명의 사이트 방문자, 로그인한 멤버 또는 관리자로서 기능을 실험해 보십시오. 작성 환경에 표시되는 관리 링크는 관리자가 로그인하지 않는 한 게시 환경에 표시되지 않습니다.

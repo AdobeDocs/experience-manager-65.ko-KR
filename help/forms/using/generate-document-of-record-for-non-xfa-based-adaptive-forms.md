@@ -160,7 +160,7 @@ ht-degree: 2%
    <td> </td>
   </tr>
   <tr>
-   <td>약관</td>
+   <td>사용 약관</td>
    <td> </td>
    <td>true</td>
    <td> </td>

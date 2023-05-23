@@ -1,7 +1,7 @@
 ---
 title: 번역 모범 사례
 seo-title: Translation Best Practices
-description: 번역 프로젝트를 시작하고 실행하는 데 도움이 되는 Adobe 엔지니어링 및 컨설팅 팀이 컴파일한 우수 사례를 찾아보십시오.
+description: 번역 프로젝트를 시작하고 실행하는 데 도움이 되는 Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 모범 사례를 확인하십시오.
 seo-description: Find best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.
 uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
 contentOwner: msm-service
@@ -37,7 +37,7 @@ ht-degree: 96%
 
 * 사이트 구조를 설계할 때는 먼저 콘텐츠를 검사하고 언어 콘텐츠를 작성할 위치를 결정해야 합니다. 이 위치는 사이트의 최상위 수준이어야 합니다.
 * 가장 좋은 방법은 최상위 수준의 작성 및 국가 사이트 간에 최대 3단계의 **언어 기반 구조**&#x200B;를 사용하는 것입니다.
-* 다음과 같은 언어/국가 사이트 이름 지정 규칙을 사용합니다 **W3C 표준**.
+* 다음 언어/국가 사이트 명명 규칙 사용 **W3C 표준**.
 * 지역 및 국가에서 콘텐츠를 배포하는 방법을 결정합니다. 동일한 언어를 공유하는 국가들을 고려합니다. 번역된 콘텐츠를 검토하고 수정한 다음 해당 언어를 공유하는 국가 사이트에 푸시하거나 가져올 수 있는 비활성 페이지 계층인 언어 마스터를 만드는 것이 좋습니다.
 * 언어 사본을 사용하거나 MSM/라이브 카피를 사용하여 언어 마스터를 만들 수 있습니다.
 

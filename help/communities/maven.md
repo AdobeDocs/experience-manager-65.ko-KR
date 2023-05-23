@@ -1,5 +1,5 @@
 ---
-title: 커뮤니티에 Maven 사용
+title: Maven for Communities 사용
 seo-title: Using Maven for Communities
 description: AEM Uber API jar
 seo-description: AEM Uber API jar
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ---
 
-# 커뮤니티에 Maven 사용 {#using-maven-for-communities}
+# Maven for Communities 사용 {#using-maven-for-communities}
 
 ## 개요 {#overview}
 
-AEM Communities 설명서의 이 섹션은 다음 항목 외에도 있습니다.
+AEM Communities 설명서의 이 섹션은 다음 항목 외에 추가로 제공됩니다.
 
-* [Apache Maven을 사용하여 AEM 프로젝트 제작](../../help/sites-developing/ht-projects-maven.md).
+* [Apache Maven을 사용하여 AEM 프로젝트 빌드](../../help/sites-developing/ht-projects-maven.md).
 
 개별 아티팩트를 대체하는 &quot;uber&quot; 아티팩트는 하나만 있습니다.
 
@@ -31,11 +31,11 @@ AEM Communities 설명서의 이 섹션은 다음 항목 외에도 있습니다.
 
 >[!NOTE]
 >
->AEM 6.4 이상에서 커뮤니티 API는 명시적으로 릴리스되지 않습니다. 이제 모든 Communities API가 Uber jar 자체에 포함됩니다.
+>AEM 6.4 이상에서는 커뮤니티 API가 명시적으로 릴리스되지 않습니다. 이제 모든 Communities API가 Uber jar 자체에 포함됩니다.
 >
 >최신 Communities 릴리스를 최신 상태로 유지하는 것이 좋습니다.
 >
->자세한 내용은 [최신 릴리스](deploy-communities.md#latest-releases) 섹션을 참조하십시오.
+>다음을 참조하십시오 [최신 릴리스](deploy-communities.md#latest-releases) 섹션을 통해 최신 버전을 식별할 수 있습니다.
 
 ## Maven 종속성 예 {#maven-dependency-example}
 
@@ -50,7 +50,7 @@ AEM Communities 설명서의 이 섹션은 다음 항목 외에도 있습니다.
 
 >[!NOTE]
 >
->자세한 내용은 [AEM Uber jar 저장소](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) 최신 Uber jar 아티팩트를 식별하기 위한 것입니다.
+>다음을 참조하십시오 [AEM Uber jar 저장소](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) 최신 Uber jar 아티팩트를 식별합니다.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

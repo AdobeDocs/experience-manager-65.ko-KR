@@ -131,7 +131,7 @@ ht-degree: 4%
    + [양식 데이터 모델 작업](using/work-with-form-data-model.md)
    + [양식 데이터 모델 사용](using/using-form-data-model.md)
 + 적응형 Forms - 기본 작성 {#adaptive-forms-basic-authoring}
-   + [적응형 양식 작업을 위한 우수 사례](using/adaptive-forms-best-practices.md)
+   + [적응형 양식 작업 모범 사례](using/adaptive-forms-best-practices.md)
    + [적응형 양식 만들기](using/creating-adaptive-form.md)
    + [적응형 양식 단편](using/adaptive-form-fragments.md)
    + [제출 액션 구성](using/configuring-submit-actions.md)
@@ -373,7 +373,7 @@ ht-degree: 4%
    + [다른 사용자를 대신하여 문서 Protect](using/protect-document-on-behalf-of-another-user.md)
 + Forms 디자이너 {#use-forms-designer}
    + [Forms Designer 도움말](using/forms-designer-help.md)
-   + [Designer 사용](https://www.adobe.com/go/learn_aemforms_designer_65)
+   + [Designer 사용](https://www.adobe.com/go/learn_aemforms_designer_65_kr)
    + [Designer 빠른 시작 Tutorials](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
    + [디자이너 샘플](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
    + [Designer 스크립팅 기본 사항](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)

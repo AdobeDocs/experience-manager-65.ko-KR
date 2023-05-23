@@ -15,7 +15,7 @@ exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1882'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -90,7 +90,7 @@ Forms 서비스는 사용자가 양식에 입력하는 값을 계산하고 결�
 
 >[!NOTE]
 >
->양식 디자인 스크립트 만들기에 대한 자세한 내용은 [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63).
+>양식 디자인 스크립트 만들기에 대한 자세한 내용은 [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63_kr).
 
 >[!NOTE]
 >

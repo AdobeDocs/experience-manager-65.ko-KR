@@ -1,6 +1,6 @@
 ---
 title: 컨텐츠 페이지 게시
-description: 컨텐츠 페이지를 게시하는 방법을 알아봅니다.
+description: 콘텐츠 페이지를 게시하는 방법을 알아봅니다.
 uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,9 +18,9 @@ ht-degree: 65%
 
 # 페이지 게시 {#publishing-pages}
 
-작성 환경에서 컨텐츠를 작성 및 검토한 후, [공개 웹 사이트에서 사용 가능](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (게시 환경).
+작성 환경에서 콘텐츠를 작성 및 검토한 후 [공개 웹 사이트에서 사용할 수 있도록 설정](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (게시 환경).
 
-이를 페이지 게시라고 합니다. 게시 환경에서 페이지를 제거하려는 경우 게시 취소라고 합니다. 페이지를 게시 및 게시 취소할 때 작성 환경에서 페이지를 삭제할 때까지 추가 변경을 수행할 수 있습니다.
+이를 페이지 게시라고 합니다. 게시 환경에서 페이지를 제거하려는 경우 게시 취소라고 합니다. 페이지를 게시 및 게시 취소할 때는 삭제할 때까지 추가 변경 사항에 대해 작성 환경에서 사용할 수 있습니다.
 
 페이지를 즉시 또는 미래의 미리 정의된 날짜/시간에 게시/게시 취소할 수도 있습니다.
 
@@ -44,14 +44,14 @@ ht-degree: 65%
 >특정 페이지를 게시하는 데 필요한 권한이 없는 경우:
 >
 >* 게시할 요청을 적절한 사람에게 알리도록 워크플로가 트리거됩니다.
->* 이 [워크플로우가 사용자 지정되었을 수 있습니다](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) 개발 팀에서 공유할 수 있습니다.
+>* 이 [워크플로우가 사용자 지정되었을 수 있습니다.](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) 개발팀별.
 >* 워크플로가 트리거되었음을 알리는 메시지가 짧게 표시됩니다.
 >
 
 
 ## 페이지 게시 {#publishing-pages-1}
 
-위치에 따라 게시할 수 있습니다.
+위치에 따라 다음을 게시할 수 있습니다.
 
 * [페이지 편집기에서](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
 * [사이트 콘솔에서](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
@@ -85,7 +85,7 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->편집기에서 게시하면 약식 공개가 아닙니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
+>편집기에서 게시하면 약식 게시가 됩니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
 
 >[!NOTE]
 >
@@ -93,14 +93,14 @@ ht-degree: 65%
 
 ### 콘솔에서 게시 {#publishing-from-the-console}
 
-사이트 콘솔에는 게시할 수 있는 두 가지 옵션이 있습니다.
+사이트 콘솔에는 두 가지 게시 옵션이 있습니다.
 
 * [빠른 게시](/help/sites-authoring/publishing-pages.md#quick-publish)
 * [게시 관리](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### 빠른 게시 {#quick-publish}
 
-**빠른 게시**&#x200B;는 간단한 사례에 해당하며 추가적인 상호 작용 없이 선택한 페이지를 즉시 게시합니다. 이로 인해 게시되지 않은 참조도 자동으로 게시됩니다.
+**빠른 게시**&#x200B;는 간단한 사례에 해당하며 추가적인 상호 작용 없이 선택한 페이지를 즉시 게시합니다. 이러한 이유로 게시되지 않은 모든 참조도 자동으로 게시됩니다.
 
 빠른 게시로 페이지를 게시하려면 다음 작업을 수행하십시오.
 
@@ -108,15 +108,15 @@ ht-degree: 65%
 
    ![pp-02](assets/pp-02.png)
 
-1. 빠른 게시 대화 상자에서 을 클릭하여 게시를 확인합니다. **게시** 또는 을 클릭하여 취소할 수 있습니다. **취소**. 게시되지 않은 참조도 자동으로 게시됩니다.
+1. 빠른 게시 대화 상자에서 를 클릭하여 게시를 확인합니다. **게시** 또는 을 클릭하여 취소 **취소**. 게시되지 않은 참조도 자동으로 게시됩니다.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
-1. 페이지가 게시되면 게시를 확인하는 알림이 표시됩니다.
+1. 페이지가 게시되면 게시 확인 경고가 표시됩니다.
 
 >[!NOTE]
 >
->빠른 게시는 약식 공개가 아닙니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
+>빠른 게시는 약식 게시입니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
 
 #### 게시 관리 {#manage-publication}
 
@@ -141,7 +141,7 @@ ht-degree: 65%
 
    계속하려면 **다음**&#x200B;을 클릭하십시오.
 
-1. 게시 관리 마법사의 다음 단계에서 **범위**&#x200B;하위 페이지 포함 여부, 참조 포함 등과 같이 게시/게시 취소 범위를 정의할 수 있습니다.
+1. 게시 관리 마법사의 다음 단계에서 **범위**, 하위 페이지를 포함하는 범위 및/또는 참조를 포함하는 등 게시/게시 취소 범위를 정의할 수 있습니다.
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
@@ -175,9 +175,9 @@ ht-degree: 65%
 
    ![pp-04](assets/pp-04.png)
 
-   다음 **게시된 참조** 대화 상자에는 선택한 컨텐츠에 대한 참조가 표시됩니다. 기본적으로 모든 항목이 선택되어 있고 게시/게시 취소되지만 선택을 해제하여 취소하면 작업에 포함되지 않습니다.
+   다음 **게시된 참조** 대화 상자에 선택한 콘텐츠에 대한 참조가 표시됩니다. 기본적으로 모두 선택되어 있으며 게시/게시 취소되지만 선택 해제하여 작업에 포함되지 않도록 선택 취소할 수 있습니다.
 
-   클릭 **완료** 변경 내용을 저장하려면 또는 **취소** 을 클릭하여 선택 항목을 취소하고 마법사로 돌아갑니다.
+   클릭 **완료** 변경 사항을 저장하거나 **취소** 을 클릭하여 선택을 취소하고 마법사로 돌아갑니다.
 
    마법사로 돌아가면 **참조** 열이 업데이트되어 게시되거나 게시되지 않을 참조에 대한 선택을 반영합니다.
 
@@ -191,12 +191,12 @@ ht-degree: 65%
 
    >[!NOTE]
    >
-   >**워크플로우** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 자세한 내용은 [이 페이지의 이전 메모](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) 게시 권한에 대한 정보 [워크플로우에 대한 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) 자세한 내용
+   >**워크플로우** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 다음을 참조하십시오. [이 페이지의 이전 메모](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) 게시 권한에 대해서도 [워크플로우에 대한 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) 을 참조하십시오.
 
    참조는 트리거된 워크플로 및 지정된 옵션별로 그룹화되어 다음 작업을 수행할 수 있습니다.
 
    * 워크플로의 제목을 정의합니다.
-   * 워크플로우가 다음과 같은 경우 워크플로우 패키지를 유지합니다 [다중 리소스 지원](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+   * 워크플로우에 있는 경우 워크플로우 패키지를 유지합니다. [다중 리소스 지원](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * 워크플로 패키지를 유지하는 옵션이 선택된 경우 워크플로 패키지의 제목을 정의합니다.
 
    **게시** 또는 **나중에 게시**&#x200B;를 클릭하여 게시를 완료할 수 있습니다.
@@ -214,7 +214,7 @@ ht-degree: 65%
 
 ### 편집기에서 게시 취소 {#unpublishing-from-the-editor}
 
-페이지를 편집할 때 해당 페이지의 게시를 취소하려면 **페이지 게시 취소** 에서 **페이지 정보** 메뉴판이요 [페이지 게시](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor).
+페이지를 편집할 때 해당 페이지의 게시를 취소하려면 을 선택합니다 **페이지 게시 취소** 다음에서 **페이지 정보** 메뉴, 원하는 대로 [페이지 게시](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -233,7 +233,7 @@ ht-degree: 65%
 
    나중에 게시/게시 취소를 취소하려면 [워크플로 콘솔](/help/sites-administering/workflows.md)로 이동하여 해당 워크플로를 종료합니다.
 
-1. 게시 취소를 완료하려면 처럼 마법사를 계속 사용하십시오 [페이지 게시](/help/sites-authoring/publishing-pages.md#manage-publication).
+1. 게시 취소를 완료하려면 다음과 같이 마법사를 계속 사용하십시오 [페이지 게시](/help/sites-authoring/publishing-pages.md#manage-publication).
 
 ## 트리 게시 및 게시 취소 {#publishing-and-unpublishing-a-tree}
 
@@ -242,27 +242,27 @@ ht-degree: 65%
 사이트 콘솔에서 [게시 관리](/help/sites-authoring/publishing-pages.md#manage-publication) 옵션을 사용하여 이 작업을 수행할 수 있습니다.
 
 1. 사이트 콘솔에서 게시 또는 게시 취소하려는 트리의 루트 페이지를 선택하고 **게시 관리**&#x200B;를 선택합니다.
-1. **게시 관리** 마법사가 시작됩니다. 게시 또는 게시 취소를 선택하고 게시 또는 게시 취소가 발생한 시점을 선택하고 을(를) 선택합니다 **다음** 계속하십시오.
-1. 에서 **범위** step, root 페이지를 선택하고 을 선택합니다. **하위 포함**.
+1. **게시 관리** 마법사가 시작됩니다. 게시 또는 게시 취소를 선택하고 언제 게시해야 하는지 선택한 다음 **다음** 계속합니다.
+1. 다음에서 **범위** 단계, 루트 페이지를 선택 하 고 선택 **하위 항목 포함**.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-1. 에서 **하위 포함** 대화 상자에서 다음 옵션을 선택 취소합니다.
+1. 다음에서 **하위 항목 포함** 대화 상자에서 옵션을 선택 취소합니다.
 
    * 바로 아래 하위 항목만 포함
    * 이미 게시된 페이지만 포함
 
-   이러한 옵션은 기본적으로 선택되므로 선택 취소해야 합니다. 클릭 **추가** 게시/게시 취소할 컨텐츠를 확인하고 추가합니다.
+   이러한 옵션은 기본적으로 선택되어 있으므로 선택을 취소해야 합니다. 클릭 **추가** 게시/게시 취소에 콘텐츠를 확인하고 추가합니다.
 
    ![chlimage_1-7](assets/chlimage_1-7.png)
 
-1. 다음 **게시 관리** 마법사에 검토할 트리 컨텐츠가 나열됩니다. 페이지를 추가하거나 선택한 페이지를 제거하여 선택 사항을 추가로 사용자 지정할 수 있습니다.
+1. 다음 **게시 관리** 검토할 트리의 콘텐츠가 마법사에 나열됩니다. 페이지를 추가하거나 선택한 페이지를 제거하여 선택 사항을 추가로 사용자 지정할 수 있습니다.
 
    ![screen_shot_2018-03-21at154237](assets/screen_shot_2018-03-21at154237.png)
 
    **게시된 참조** 옵션을 통해 게시되는 참조 자료도 검토할 수 있습니다.
 
-1. [게시 관리 마법사를 정상적으로 계속 진행합니다](#manage-publication) 트리 게시 또는 게시 취소를 완료하려면
+1. [게시 관리 마법사를 정상적으로 계속 진행](#manage-publication) 트리 게시 또는 게시 취소를 완료합니다.
 
 ## 게시 상태 확인 {#determining-publication-status}
 

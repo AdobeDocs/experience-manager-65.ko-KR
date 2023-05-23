@@ -91,7 +91,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>N/A<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -121,7 +121,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>N/A<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -306,7 +306,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>N/A<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>

@@ -1,6 +1,6 @@
 ---
 title: Markdown
-description: 컨텐츠 조각 편집기에서 Markdown 구문을 사용하여 헤드리스 컨텐츠를 쉽게 만들 수 있는 방법을 이해합니다.
+description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 Headless 콘텐츠를 쉽게 만들 수 있는 방법을 이해합니다.
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
@@ -13,7 +13,7 @@ ht-degree: 91%
 
 # Markdown {#markdown}
 
-있을 때 [작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), 컨텐츠 조각 편집기에서는 을 사용합니다 *markdown* 헤드리스 컨텐츠를 쉽게 작성할 수 있는 구문:
+다음과 같은 경우: [작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), 콘텐츠 조각 편집기는 *Markdown* headless 콘텐츠를 쉽게 작성할 수 있는 구문:
 
 ![Markdown 편집기](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

@@ -1,7 +1,7 @@
 ---
 title: AEM 현대화 도구
 seo-title: AEM Modernization Tools
-description: AEM 현대화 도구를 사용하면 기존 AEM 기능을 최신 기술로 변환할 수 있습니다
+description: AEM 현대화 도구 를 사용하면 기존 AEM 기능을 최신 기술로 변환할 수 있습니다
 seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

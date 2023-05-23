@@ -29,7 +29,7 @@ ht-degree: 5%
 
 다음을 참조하십시오. [콘텐츠 조각 관리 API - 클라이언트측](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
-## 페이지 작성용 구성 요소 {#components-for-page-authoring}
+## 페이지 작성을 위한 구성 요소 {#components-for-page-authoring}
 
 >[!CAUTION]
 >

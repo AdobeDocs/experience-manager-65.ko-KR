@@ -8,7 +8,7 @@ exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
 source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
 source-wordcount: '693'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ ImageMagic 설치 파일의 여러 버전은 다양한 운영 체제에서 사�
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 변경 사항을 저장합니다.
+1. 클릭 **[!UICONTROL 확인]** 변경 내용을 저장합니다.
 
    >[!NOTE]
    >
@@ -69,7 +69,7 @@ ImageMagic 설치 파일의 여러 버전은 다양한 운영 체제에서 사�
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. 다음에서 **[!UICONTROL 웹 사용 이미지]** 탭에서 MIME 유형 추가 `image/jpeg` 다음 아래에 **[!UICONTROL 목록 건너뛰기]**. **[!UICONTROL 확인]**&#x200B;을 클릭하여 변경 사항을 저장합니다.
+1. 다음에서 **[!UICONTROL 웹 사용 이미지]** 탭에서 MIME 유형 추가 `image/jpeg` 다음 아래에 **[!UICONTROL 목록 건너뛰기]**. 클릭 **[!UICONTROL 확인]** 변경 내용을 저장합니다.
 
    ![web_enabled](assets/web_enabled.png)
 

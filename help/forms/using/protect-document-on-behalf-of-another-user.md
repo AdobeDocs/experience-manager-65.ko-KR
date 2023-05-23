@@ -10,7 +10,7 @@ exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Forms Document Security Java SDK는 문서 편집 권한을 획득하지 않
 1. 정책 집합을 만듭니다. 예: PolicySet1.
 1. 새로 만든 정책 집합에 정책을 만듭니다. 예: PolicySet1의 Policy1.
 1. 최종 사용자 역할을 가진 Rights Management을 만듭니다. 예: User1. 새로 만든 사용자에게 Policy1로 보호된 문서를 볼 수 있는 권한을 제공합니다.
-1. 새 역할을 만듭니다. 예를 들어 Role1입니다. 새로 만든 역할에 서비스 호출 권한을 제공합니다. 새로 생성된 역할을 가진 사용자를 만듭니다. 예를 들어 User2.User2 또는 관리자를 사용하여 SDK 연결을 만들고 protectDocument 서비스를 호출할 수 있습니다.
+1. 새 역할 만들기. 예를 들어 Role1입니다. 새로 만든 역할에 서비스 호출 권한을 제공합니다. 새로 생성된 역할을 가진 사용자를 만듭니다. 예를 들어 User2.User2 또는 관리자를 사용하여 SDK 연결을 만들고 protectDocument 서비스를 호출할 수 있습니다.
 
    이제 문서를 보호하는 사용자에게 문서를 편집할 권한을 제공하지 않고 다음 샘플 코드를 실행하여 문서를 보호할 수 있습니다.
 

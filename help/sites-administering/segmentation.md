@@ -1,7 +1,7 @@
 ---
 title: ContextHub를 사용하여 세그먼테이션 구성
 seo-title: Configuring Segmentation with ContextHub
-description: Context Hub을 사용하여 세그멘테이션을 구성하는 방법을 알아봅니다.
+description: Context Hub를 사용하여 세그먼테이션을 구성하는 방법에 대해 알아봅니다.
 seo-description: Learn how to configure segmentation with Context Hub.
 uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
@@ -21,33 +21,33 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->이 섹션에서는 ContextHub를 사용할 때 세그멘테이션을 구성하는 방법에 대해 설명합니다. Client Context 기능을 사용하는 경우 관련 설명서를 참조하십시오. [Client Context에 대한 세그멘테이션 구성](/help/sites-administering/campaign-segmentation.md).
+>이 섹션에서는 ContextHub 사용 시 세그먼테이션을 구성하는 방법에 대해 설명합니다. Client Context 기능을 사용하는 경우 관련 설명서를 참조하십시오. [Client Context에 대한 세그먼테이션 구성](/help/sites-administering/campaign-segmentation.md).
 
-세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다. 자세한 내용은 [대상자 관리](/help/sites-authoring/managing-audiences.md) 세그먼테이션 작동 방식 및 주요 용어에 대한 자세한 내용을 참조하십시오.
+세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다. 다음을 참조하십시오 [대상자 관리](/help/sites-authoring/managing-audiences.md) 세그먼테이션의 작동 방식 및 주요 용어에 대한 정보입니다.
 
 사이트 방문자 및 달성하고자 하는 목표에 대해 이전에 수집한 정보에 따라 타겟팅된 콘텐츠에 필요한 세그먼트 및 전략을 정의해야 합니다.
 
-그런 다음 이러한 세그먼트를 사용하여 방문자에게 특별히 타겟팅된 콘텐츠를 제공할 수 있습니다. 이 컨텐츠는 [개인화](/help/sites-authoring/personalization.md) 섹션을 참조하십시오. 여기에 정의된 [활동](/help/sites-authoring/activitylib.md)은 모든 페이지에 포함될 수 있으며 특정 콘텐츠가 적용될 수 있는 방문자 세그먼트를 정의할 수 있습니다.
+그런 다음 이러한 세그먼트를 사용하여 방문자에게 특별히 타겟팅된 콘텐츠를 제공할 수 있습니다. 이 콘텐츠는 다음에서 유지됩니다. [개인화](/help/sites-authoring/personalization.md) 섹션을 참조하십시오. 여기에 정의된 [활동](/help/sites-authoring/activitylib.md)은 모든 페이지에 포함될 수 있으며 특정 콘텐츠가 적용될 수 있는 방문자 세그먼트를 정의할 수 있습니다.
 
-AEM을 사용하면 사용자의 경험을 쉽게 개인화할 수 있습니다. 또한 세그먼트 정의의 결과를 확인할 수도 있습니다.
+AEM을 사용하면 사용자 경험을 손쉽게 개인화할 수 있습니다. 또한 세그먼트 정의의 결과를 확인할 수도 있습니다.
 
 ## 세그먼트 할당 {#accessing-segments}
 
-다음 [대상](/help/sites-authoring/managing-audiences.md) 콘솔은 Adobe Target 계정의 대상뿐만 아니라 ContextHub 또는 Client Context용 세그먼트를 관리하는 데 사용됩니다. 이 설명서에서는 ContextHub용 세그먼트 관리 방법에 대해 다룹니다. 대상 [Client Context 세그먼트](/help/sites-administering/campaign-segmentation.md) 및 Adobe Target 세그먼트 은 관련 설명서를 참조하십시오.
+다음 [대상](/help/sites-authoring/managing-audiences.md) 콘솔을 사용하여 ContextHub 또는 Client Context용 세그먼트와 더불어 Adobe Target 계정의 대상자를 관리할 수 있습니다. 이 설명서에서는 ContextHub용 세그먼트 관리 방법에 대해 다룹니다. 대상 [Client Context 세그먼트](/help/sites-administering/campaign-segmentation.md) 및 Adobe Target 세그먼트는 관련 설명서를 참조하십시오.
 
-세그먼트에 액세스하려면 구성을 선택해야 합니다. 전역 탐색에서 를 선택합니다 **탐색 > 개인화 > 대상**. 사용 가능한 구성이 표시됩니다.
+세그먼트에 액세스하려면 구성을 선택해야 합니다. 전역 탐색에서 을 선택합니다. **탐색 > 개인화 > 대상자**. 사용 가능한 구성이 표시됩니다.
 
 ![대상 - 구성](assets/segmentation-access-confs.png)
 
-구성을 선택하여 세그먼트를 확인합니다(예: WKND 사이트).
+세그먼트를 보려면 구성을 선택하십시오(예: WKND Site).
 
 ![대상 - 세그먼트](assets/segmentation-access-segments.png)
 
 ## 세그먼트 편집기 {#segment-editor}
 
-**세그먼트 편집기**&#x200B;를 사용하여 손쉽게 세그먼트를 수정할 수 있습니다. 세그먼트를 편집하려면 [세그먼트 목록](/help/sites-administering/segmentation.md#accessing-segments) 을 클릭하고 **편집** 버튼을 클릭합니다.
+**세그먼트 편집기**&#x200B;를 사용하여 손쉽게 세그먼트를 수정할 수 있습니다. 세그먼트를 편집하려면 [세그먼트 목록](/help/sites-administering/segmentation.md#accessing-segments) 을(를) 클릭하고 **편집** 단추를 클릭합니다.
 
-![세그먼트 편집기](assets/segmenteditor.png)
+![세그먼트화기](assets/segmenteditor.png)
 
 구성 요소 브라우저를 사용하여 **AND** 및 **OR** 컨테이너를 추가하여 세그먼트 논리를 정의한 다음, 추가 구성 요소를 추가하여 속성 및 값을 비교하거나 스크립트 및 기타 세그먼트를 참조하여 선택 기준을 정의하고([새 세그먼트 작성](#creating-a-new-segment) 참조), 이를 통해 세그먼트 선택을 위한 정확한 시나리오를 정의할 수 있습니다.
 
@@ -55,7 +55,7 @@ AEM을 사용하면 사용자의 경험을 쉽게 개인화할 수 있습니다.
 
 >[!CAUTION]
 >
->세그먼트 편집기는 순환 참조를 확인하지 않습니다. 예를 들어 세그먼트 A는 다른 세그먼트 B를 참조하며 이 세그먼트 A는 차례로 세그먼트 A를 참조합니다. 세그먼트에는 순환 참조가 포함되어 있지 않은지 확인해야 합니다.
+>세그먼트 편집기는 순환 참조를 확인하지 않습니다. 예를 들어 세그먼트 A는 다른 세그먼트 B를 참조하고, 이는 다시 세그먼트 A를 참조합니다. 세그먼트에 순환 참조가 포함되어 있지 않은지 확인해야 합니다.
 
 ### 컨테이너 {#containers}
 
@@ -136,7 +136,7 @@ AEM을 사용하면 사용자의 경험을 쉽게 개인화할 수 있습니다.
 
 1. [세그먼트에 액세스](/help/sites-administering/segmentation.md#accessing-segments)한 후 세그먼트를 만들고자 하는 [폴더로 이동](#organizing-segments)합니다.
 
-1. 만들기 단추를 클릭하거나 탭하고 선택합니다 **ContextHub 세그먼트 만들기**.
+1. 만들기 버튼을 클릭하거나 탭한 다음 을 선택합니다. **ContextHub 세그먼트 만들기**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -150,13 +150,13 @@ AEM을 사용하면 사용자의 경험을 쉽게 개인화할 수 있습니다.
    * 최댓값: `1000000`
 
 1. 비교 또는 참조를 세그먼트 편집기로 드래그하면 기본 AND 컨테이너에 표시됩니다.
-1. 새 참조 또는 세그먼트의 구성 옵션을 더블 클릭하거나 탭하여 특정 매개변수를 편집합니다. 이 예에서는 San Jose에 있는 사람들을 테스트하고 있습니다.
+1. 새 참조 또는 세그먼트의 구성 옵션을 더블 클릭하거나 탭하여 특정 매개변수를 편집합니다. 이 예에서는 산호세의 사람들을 테스트하고 있습니다.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
    비교가 올바르게 평가되도록 가능한 경우 항상 **데이터 유형**&#x200B;을 설정하십시오. 자세한 내용은 [비교](/help/sites-administering/segmentation.md#comparisons)를 참조하십시오.
 
-1. 클릭 **확인** 정의를 저장하려면
+1. 클릭 **확인** 정의를 저장하려면:
 1. 필요에 따라 구성 요소를 더 추가합니다. AND 및 OR 비교에 대한 컨테이너 구성 요소를 사용하여 부울 표현식을 만들 수 있습니다(아래 [AND 및 OR 컨테이너 사용](/help/sites-administering/segmentation.md#using-and-and-or-containers) 참조). 세그먼트 편집기를 사용하여 더 이상 필요하지 않은 구성 요소를 삭제하거나 구문 내의 새 위치로 드래그할 수 있습니다.
 
 ### AND 및 OR 컨테이너 사용 {#using-and-and-or-containers}
@@ -166,15 +166,15 @@ AND 및 OR 컨테이너 구성 요소를 사용하여 AEM에서 복잡한 세그
 * 정의의 최상위 수준은 항상 처음 생성되는 AND 컨테이너입니다. 이를 변경할 수 없지만 나머지 세그먼트 정의에는 영향을 미치지 않습니다.
 * 컨테이너의 중첩이 적절한지 확인하십시오. 컨테이너는 부울 표현식의 괄호로 확인할 수 있습니다.
 
-다음 예는 프라임 연령 그룹에서 고려되는 방문자를 선택하는 데 사용됩니다.
+다음 예제를 사용하여 황금기 그룹으로 간주되는 방문자를 선택합니다.
 
-남성 및 30세에서 59세 사이
+남성 및 30~59세 사이
 
 또는
 
-30~59세 사이의 여성
+30~59세 여성
 
-먼저 OR 컨테이너 구성 요소를 기본 AND 컨테이너 내에 배치합니다. OR 컨테이너 내에 AND 컨테이너 두 개를 추가하고 이 두 컨테이너 내에 속성 또는 참조 구성 요소를 추가할 수 있습니다.
+먼저 OR 컨테이너 구성 요소를 기본 AND 컨테이너 내에 배치합니다. OR 컨테이너 내에 두 개의 AND 컨테이너를 추가하고 두 컨테이너 모두 내에 속성이나 참조 구성 요소를 추가할 수 있습니다.
 
 ![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145ama.png)
 
@@ -308,7 +308,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 작성한 세그먼트와 일치하는 담당자를 선택합니다.
 1. ContextHub는 선택한 담당자에게 적합한 세그먼트를 결정합니다.
 
-예를 들어, 프라임 연령 그룹에서 사용자를 식별하기 위한 간단한 세그먼트 정의는 사용자의 연령 및 성별을 기반으로 합니다. 이러한 기준에 부합하는 특정 담당자를 로드하면 해당 세그먼트가 정상적으로 배정된 경우 다음과 같이 표시됩니다.
+예를 들어, 주요 연령 그룹의 사용자를 식별하기 위한 간단한 세그먼트 정의는 사용자의 연령 및 성별을 기반으로 하는 간단한 세그먼트 정의입니다. 이러한 기준에 부합하는 특정 담당자를 로드하면 해당 세그먼트가 정상적으로 배정된 경우 다음과 같이 표시됩니다.
 
 ![screen_shot_2012-02-02at105926am](assets/screen_shot_2012-02-02at105926am.png)
 
@@ -322,7 +322,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 이러한 테스트는 페이지 콘텐츠에서 타겟팅된 콘텐츠 및 관련 **활동** 및 **경험**&#x200B;과 함께 수행할 수도 잇습니다.
 
-위의 프라임 페이지 그룹 세그먼트 예를 사용하여 활동 및 경험을 설정한 경우 활동으로 세그먼트를 쉽게 테스트할 수 있습니다. 활동 설정에 대한 자세한 내용은 [타겟팅된 콘텐츠 작성에 대한 관련 설명서](/help/sites-authoring/content-targeting-touch.md)를 참조하십시오.
+위의 프라임 연령 그룹 세그먼트 예제를 사용하여 활동 및 경험을 설정한 경우 활동을 사용하여 세그먼트를 쉽게 테스트할 수 있습니다. 활동 설정에 대한 자세한 내용은 [타겟팅된 콘텐츠 작성에 대한 관련 설명서](/help/sites-authoring/content-targeting-touch.md)를 참조하십시오.
 
 1. 타겟팅된 콘텐츠를 설정한 페이지의 편집 모드에서 콘텐츠의 화살표 아이콘을 통해 해당 콘텐츠가 타겟팅되었음을 확인할 수 있습니다.
 
@@ -338,4 +338,4 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 ## 세그먼트 사용 {#using-your-segment}
 
-세그먼트는 특정 타겟 대상에 표시되는 실제 컨텐츠를 유도하는 데 사용됩니다. 대상자 및 세그먼트에 대한 자세한 내용은 [대상자 관리](/help/sites-authoring/managing-audiences.md)를, 콘텐츠를 타겟팅할 대상자 및 세그먼트 사용에 대한 자세한 내용은 [타겟팅된 콘텐츠 작성](/help/sites-authoring/content-targeting-touch.md)을 참조하십시오.
+세그먼트는 특정 타겟 대상자에게 표시되는 실제 콘텐츠를 제어하는 데 사용됩니다. 대상자 및 세그먼트에 대한 자세한 내용은 [대상자 관리](/help/sites-authoring/managing-audiences.md)를, 콘텐츠를 타겟팅할 대상자 및 세그먼트 사용에 대한 자세한 내용은 [타겟팅된 콘텐츠 작성](/help/sites-authoring/content-targeting-touch.md)을 참조하십시오.

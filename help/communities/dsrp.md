@@ -14,7 +14,7 @@ exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -103,7 +103,7 @@ Oak 컬렉션과 SRP 컬렉션을 모두 집중적으로 사용하는 경우 성
 
       *기본값*: collection1
 
-* **[!UICONTROL 제출]**&#x200B;을 선택합니다.
+* 선택 **[!UICONTROL 제출]**.
 
 ### defaultsrp에 대한 다운타임 없는 마이그레이션 단계 {#zerodt-migration-steps}
 
@@ -124,7 +124,7 @@ DSRP는 모든 작성자 및 게시 인스턴스에서 공통 저장소로 식�
 * 작성자:
 
    * 메인 메뉴에서 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 복제]**
-   * **[!UICONTROL 트리 활성화]**&#x200B;를 두 번 클릭합니다
+   * 두 번 클릭 **[!UICONTROL 트리 활성화]**
    * **시작 경로**:
 
       * 다음으로 이동 `/etc/socialconfig/srpc/`

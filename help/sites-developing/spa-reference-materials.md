@@ -1,7 +1,7 @@
 ---
 title: SPA 참조 자료
 seo-title: SPA Reference Materials
-description: 단일 페이지 애플리케이션 API 참조 및 소스 코드 리포지토리에 대한 개요입니다
+description: 단일 페이지 애플리케이션 API 참조 및 소스 코드 저장소에 대한 개요입니다
 seo-description: An overview of the single page application API references and source code repositories
 uuid: 503a1bec-da8b-4f5e-adcc-fe65c3c96034
 contentOwner: bohnert
@@ -32,9 +32,9 @@ ht-degree: 6%
 * [React 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Angular 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-## 소스 GitHub 저장소 열기 {#github-repositories}
+## 오픈 소스 GitHub 저장소 {#github-repositories}
 
-다음은 SPA 라이브러리를 위한 GitHub의 개방형 소스 리포지토리입니다.
+다음은 SPA 라이브러리용 GitHub의 오픈 소스 저장소입니다.
 
 * [구성 요소 매핑](https://github.com/adobe/aem-spa-component-mapping)
 * [페이지 모델 관리자](https://github.com/adobe/aem-spa-page-model-manager)

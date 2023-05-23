@@ -62,7 +62,7 @@ ht-degree: 2%
 >
 >AEM에 익숙하지 않은 경우 [기본 처리](../../help/sites-authoring/basic-handling.md).
 
-### 홈페이지 {#home-page}
+### 홈 페이지 {#home-page}
 
 안내서에서는 페이지 왼쪽의 미리보기 및 프로토타이핑에 사용할 수 있는 SCF 구성 요소 목록을 제공합니다.
 

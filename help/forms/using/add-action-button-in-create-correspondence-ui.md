@@ -368,7 +368,7 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 
    ![UI의 SendLetterForReview 애플리케이션](assets/12_applicationmanagementlc.png)
 
-1. **가져오기**&#x200B;를 클릭합니다. 
+1. 클릭 **가져오기**.
 
 1. 클릭 **파일 선택** SendLetterForReview.lca를 선택합니다.
 
@@ -378,7 +378,7 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 
 1. 선택 **가져오기가 완료되면 자산을 런타임에 배포**.
 
-1. **가져오기**&#x200B;를 클릭합니다. 
+1. 클릭 **가져오기**.
 
 #### ServiceName을 허용 목록에 추가하다 서비스 목록에 추가 {#adding-servicename-to-the-allowlist-service-list}
 

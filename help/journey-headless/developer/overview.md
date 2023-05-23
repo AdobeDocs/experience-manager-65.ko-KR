@@ -60,7 +60,7 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 |---|---|---|
 | 0 | AEM Headless 개발자 여정 | 이 문서 |
 | 1 | [CMS Headless 개발에 대해 알아보기](learn-about.md) | Headless 기술과 사용 시기에 대해 알아봅니다. |
-| 2 | [AEM 헤드리스 시작하기](getting-started.md) | AEM Headless 사전 요구 사항에 대해 알아보기 |
+| 2 | [AEM Headless 시작하기](getting-started.md) | AEM Headless 사전 요구 사항에 대해 알아보기 |
 | 3 | [AEM Headless를 사용한 첫 번째 경험으로의 경로](path-to-first-experience.md) | 개발 환경을 설정하고 간단한 앱을 AEM Headless와 통합하는 방법에 대해 알아보기 |
 | 4 | [콘텐츠를 모델링하는 방법](model-your-content.md) | 콘텐츠 구조를 모델링하는 방법에 대해 알아봅니다. 그런 다음 여러 채널에서 재사용할 수 있도록 콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 Adobe Experience Manager(AEM) 구조를 실현합니다. |
 | 5 | [AEM 게재 API를 통해 콘텐츠에 액세스하는 방법](access-your-content.md) | GraphQL 쿼리를 사용하여 콘텐츠 조각의 콘텐츠에 액세스하는 방법에 대해 알아봅니다. |

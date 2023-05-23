@@ -14,7 +14,7 @@ exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '6086'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -197,7 +197,7 @@ AEM 포틀릿을 실행하는 여러 포털 노드를 운영하는 경우 이 �
 
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
-1. **편집**&#x200B;을 클릭합니다.
+1. 클릭 **편집.**
 1. 다음에서 **설정** 탭에서 **활성화됨** 확인란, 선택 **Dispatcher 초기화** 직렬화 유형으로, 재시도 시간 초과(예: 60000)를 입력합니다.
 
    ![screen_shot_2012-02-15at42101pm](assets/screen_shot_2012-02-15at42101pm.png)

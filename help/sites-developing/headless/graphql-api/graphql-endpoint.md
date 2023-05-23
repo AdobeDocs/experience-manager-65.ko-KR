@@ -1,6 +1,6 @@
 ---
 title: AEM에서 GraphQL 끝점 관리
-description: 헤드리스 콘텐츠 전달을 위해 Adobe Experience Manager에서 GraphQL 종단점을 관리하는 방법을 알아봅니다.
+description: Headless 콘텐츠 전달을 위해 Adobe Experience Manager에서 GraphQL 엔드포인트를 관리하는 방법에 대해 알아봅니다.
 exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
 source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt

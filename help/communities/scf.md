@@ -163,7 +163,7 @@ AEM Communities 구성 요소 중 선택한 일부만 동적으로 포함될 수
 
 * [댓글](essentials-comments.md)
 * [등급](rating-basics.md)
-* [검토](reviews-basics.md)
+* [리뷰](reviews-basics.md)
 * [투표](essentials-voting.md)
 
 다음 [커뮤니티 구성 요소 안내서](components-guide.md) 포함 가능한 구성 요소를 추가에서 포함으로 전환할 수 있습니다.

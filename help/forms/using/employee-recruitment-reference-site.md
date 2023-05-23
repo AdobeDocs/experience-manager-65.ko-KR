@@ -45,7 +45,7 @@ ht-degree: 0%
 
 #### We Finance 직원 채용 워크플로우 {#we-finance-employee-recruiting-workflow}
 
-다음은 이 문서에서 따르는 We Finance 직원 채용 워크플로우의 모델입니다.
+다음은 이 문서에서 설명하는 We Finance 직원 채용 워크플로우의 모델입니다.
 
 ![we-finance-employee-recruiting-workflow](assets/we-finance-employee-recruiting-workflow.png)
 

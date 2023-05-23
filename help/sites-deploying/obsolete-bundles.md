@@ -1,7 +1,7 @@
 ---
 title: 업그레이드 후 제거된 오래된 번들 목록
 seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
-description: AEM 6.3으로 업그레이드할 때 자동으로 제거된 번들을 설명하는 목록입니다.
+description: AEM 6.3으로 업그레이드할 때 자동으로 제거되는 번들을 자세히 설명하는 목록입니다.
 seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
@@ -14,7 +14,7 @@ exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->코드가 이러한 번들을 사용하는 경우 Adobe 지원 센터에 문의하고 영향을 받는 영역에 대한 호환성 패키지를 요청하십시오.
+>코드가 이러한 번들을 사용하는 경우 Adobe 지원에 문의하고 영향을 받는 영역에 대한 호환성 패키지를 요청해야 합니다.
 
-AEM 6.3으로 업그레이드할 때 업그레이드가 수행된 AEM 버전에 따라 다음 번들이 자동으로 제거됩니다.
+AEM 6.3으로 업그레이드하면 업그레이드가 수행된 AEM 버전에 따라 다음 번들이 자동으로 제거됩니다.
 
 **AEM 6.1:**
 
@@ -45,14 +45,14 @@ AEM 6.3으로 업그레이드할 때 업그레이드가 수행된 AEM 버전에 
 **AEM 6.0:**
 
 * org.apache.sling.discovery.impl, 버전 1.1.6, 활성
-* com.adobe.granite.installer.patch, 버전 0.4.0, Active
+* com.adobe.granite.installer.patch, 버전 0.4.0, 활성
 * biz.aQute.bndlib, 버전 1.43.0, 활성
 * com.day.cq.cq-jobs-core, 버전 5.4.0, 활성
 * com.day.cq.cq-opensocial, 버전 5.7.2, 활성
 * com.day.cq.cq-pinauthhandler, 버전 1.1.2, 활성
 * com.day.cq.dam.commons.nekohtml, 버전 0.9.5, 활성
 * com.day.cq.mcm.cq-mcm-silverpop-integration, 버전 1.1.6, 활성
-* com.day.cq.wcm.cq-wcm-mobile-phonegap-build-integration, 버전 5.7.18, Active
+* com.day.cq.wcm.cq-wcm-mobile-phonegap-build-integration, 버전 5.7.18, 활성
 
 **CQ 5.6.1:**
 

@@ -54,14 +54,14 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 | # | 문서 | 설명 |
 |---|---|---|
 | 0 | AEM Headless 콘텐츠 작성자 여정 | 이 문서 |
-| 1 | [AEM Headless용 작성 - 소개](introduction.md) | Adobe Experience Manager의 헤드리스 기능 및 프로젝트용 컨텐츠를 작성하는 방법에 대한 소개입니다. |
+| 1 | [AEM Headless 작성 - 소개](introduction.md) | Adobe Experience Manager의 Headless 기능에 대한 소개 및 프로젝트 콘텐츠를 작성하는 방법. |
 | 2 | [AEM을 통한 Headless 작성 기본 사항 - 소개](basics.md) | 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다. |
 | 3 | [콘텐츠 조각의 참조 사용에 대해 알아보기](references.md) | 콘텐츠 조각의 참조를 사용하는 방법에 대해 알아봅니다. 또한 중첩된 조각을 사용하여 Headless CMS에 대한 여러 수준의 구조를 만들고 관리할 수 있습니다. |
 | 4 | [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](metadata-tagging.md) | 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기. |
 
 ## 다음 단계 {#what-is-next}
 
-이제 Adobe Headless 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 이동하여 문서를 읽어 보십시오 [AEM Headless용 작성 - 소개.](introduction.md)
+이제 Adobe Headless 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 진행하여 이 문서를 읽어보시기 바랍니다. [AEM Headless 작성 - 소개.](introduction.md)
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
@@ -80,6 +80,6 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
 * [AEM Headless 개발자 여정](/help/journey-headless/developer/overview.md) - 여기에서 AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 사용자의 첫 개발 프로젝트에서 이들 기능을 활용하는 방법에 대한 가이드 여정을 시작해 보십시오.
-* [헤드리스 아키텍트 여정](/help/journey-headless/architect/overview.md) - Adobe Experience Manager의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법을 소개합니다.
+* [Headless 설계 여정](/help/journey-headless/architect/overview.md) - 여기에서 Adobe Experience Manager의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아보십시오.
 * [AEM 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR) - AEM 및 Headless 기술에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 직접 해보면서 배우는 것을 선호하고 기술 관련 소양을 갖추고 있다면 API 및 프레임워크로 구성된 실습형 튜토리얼을 사용하여 AEM Headless에 구축된 애플리케이션을 만들고 사용해 보십시오.

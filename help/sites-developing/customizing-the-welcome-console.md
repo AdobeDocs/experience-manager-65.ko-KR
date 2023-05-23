@@ -1,7 +1,7 @@
 ---
 title: 시작 콘솔 사용자 지정(클래식 UI)
 seo-title: Customizing the Welcome Console (Classic UI)
-description: 시작 콘솔에서는 AEM 내의 다양한 콘솔 및 기능에 대한 링크 목록을 제공합니다
+description: 시작 콘솔은 AEM 내의 다양한 콘솔 및 기능에 대한 링크 목록을 제공합니다
 seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
 uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
@@ -13,7 +13,7 @@ exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 12%
+ht-degree: 10%
 
 ---
 
@@ -21,32 +21,32 @@ ht-degree: 12%
 
 >[!CAUTION]
 >
->이 페이지에서는 기존 UI에 대해 다룹니다.
+>이 페이지는 클래식 UI를 다룹니다.
 >
->자세한 내용은 [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md) 표준 터치 지원 UI에 대한 자세한 내용은.
+>다음을 참조하십시오 [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md) 표준, 터치 지원 UI에 대한 자세한 내용.
 
-시작 콘솔에서는 AEM 내의 다양한 콘솔 및 기능에 대한 링크 목록을 제공합니다.
+시작 콘솔은 AEM 내의 다양한 콘솔 및 기능에 대한 링크 목록을 제공합니다.
 
-![cq_welcomeesscreen](assets/cq_welcomescreen.png)
+![cq_welcomescreen](assets/cq_welcomescreen.png)
 
-표시되는 링크를 구성할 수 있습니다. 특정 사용자 및/또는 그룹에 대해 정의할 수 있습니다. 수행할 작업은 대상 유형(해당 작업이 있는 콘솔의 섹션과 상관 관계가 있음)에 따라 달라집니다.
+표시되는 링크를 구성할 수 있습니다. 특정 사용자 및/또는 그룹에 대해 정의할 수 있습니다. 수행할 작업은 대상 유형(대상 유형이 있는 콘솔의 섹션과 상관 관계가 있음)에 따라 다릅니다.
 
-* [기본 콘솔](#links-in-main-console-left-pane) - 기본 콘솔의 링크(왼쪽 창)
+* [주 콘솔](#links-in-main-console-left-pane) - 메인 콘솔의 링크(왼쪽 창)
 * [리소스, 설명서 및 참조, 기능](#links-in-sidebar-right-pane) - 사이드바의 링크(오른쪽 창)
 
-## 기본 콘솔의 링크(왼쪽 창) {#links-in-main-console-left-pane}
+## 메인 콘솔의 링크(왼쪽 창) {#links-in-main-console-left-pane}
 
-여기에는 AEM의 기본 콘솔이 나열됩니다.
+AEM의 기본 콘솔이 나열됩니다.
 
-![cq_welcomeescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
+![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
-### 기본 콘솔 링크가 표시되는지 여부 구성 {#configuring-whether-main-console-links-are-visible}
+### 기본 콘솔 링크 표시 여부 구성 {#configuring-whether-main-console-links-are-visible}
 
 노드 수준 권한은 링크를 볼 수 있는지 여부를 결정합니다. 해당 노드는 다음과 같습니다.
 
 * **웹 사이트:** `/libs/wcm/core/content/siteadmin`
 
-* **디지털 에셋:** `/libs/wcm/core/content/damadmin`
+* **디지털 자산:** `/libs/wcm/core/content/damadmin`
 
 * **커뮤니티:** `/libs/collab/core/content/admin`
 
@@ -62,21 +62,21 @@ ht-degree: 12%
 
 예:
 
-* 에 대한 액세스를 제한하려면 **도구**&#x200B;에서 읽기 액세스 권한을 제거합니다.
+* 액세스를 제한하려면 **도구**, 읽기 액세스 제거
 
    `/libs/wcm/core/content/misc`
 
-자세한 내용은 [보안 섹션](/help/sites-administering/security.md) 를 참조하십시오.
+다음을 참조하십시오. [보안 섹션](/help/sites-administering/security.md) 를 참조하십시오.
 
 ### 사이드바의 링크(오른쪽 창) {#links-in-sidebar-right-pane}
 
-![cq_welcomeescreensidebar](assets/cq_welcomescreensidebar.png)
+![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
-이러한 링크는 *및* 다음 경로 아래의 노드에 대한 읽기 액세스 권한:
+이러한 링크는 의 존재를 기반으로 합니다. *및* 다음 경로 아래의 노드에 대한 읽기 액세스:
 
 `/libs/cq/core/content/welcome`
 
-기본적으로 세 개의 섹션(약간 간격)이 제공됩니다.
+기본적으로 제공되는 세 개의 섹션(약간 간격)이 있습니다.
 
 <table>
  <tbody>
@@ -159,54 +159,54 @@ ht-degree: 12%
  </tbody>
 </table>
 
-#### 사이드바 링크가 표시되는지 여부 구성 {#configuring-whether-sidebar-links-are-visible}
+#### 사이드바 링크 표시 여부 구성 {#configuring-whether-sidebar-links-are-visible}
 
 링크를 나타내는 노드에 대한 읽기 액세스를 제거하여 특정 사용자 또는 그룹에서 링크를 숨길 수 있습니다.
 
-* 리소스 - 액세스 권한 제거:
+* 리소스 - 다음에 대한 액세스 제거:
 
    `/libs/cq/core/content/welcome/resources/<link-target>`
 
-* 문서 - 액세스 권한 제거:
+* 문서 - 다음에 대한 액세스 제거:
 
    `/libs/cq/core/content/welcome/docs/<link-target>`
 
-* 기능 - 액세스 권한 제거:
+* 기능 - 다음에 대한 액세스 제거:
 
    `/libs/cq/core/content/welcome/features/<link-target>`
 
 예:
 
-* 링크를 제거하려면 **보고서**&#x200B;에서 읽기 액세스 권한을 제거합니다.
+* 에 대한 링크를 제거하려면 **보고서**, 읽기 액세스 제거
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* 링크를 제거하려면 **패키지**&#x200B;에서 읽기 액세스 권한을 제거합니다.
+* 에 대한 링크를 제거하려면 **패키지**, 읽기 액세스 제거
 
    `/libs/cq/core/content/welcome/features/packages`
 
-자세한 내용은 [보안 섹션](/help/sites-administering/security.md) 를 참조하십시오.
+다음을 참조하십시오. [보안 섹션](/help/sites-administering/security.md) 를 참조하십시오.
 
 ### 링크 선택 메커니즘 {#link-selection-mechanism}
 
-in `/libs/cq/core/components/welcome/welcome.jsp` 사용 [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html): 속성이 있는 노드에 대해 쿼리를 실행합니다.
+위치 `/libs/cq/core/components/welcome/welcome.jsp` 사용은 다음으로 구성됩니다. [콘솔 유틸리티](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html)속성을 갖는 노드에 대해 쿼리를 실행합니다.
 
-* `jcr:mixinTypes` 값 사용: `cq:Console`
+* `jcr:mixinTypes` 값: `cq:Console`
 
 >[!NOTE]
 >
->다음 쿼리를 실행하여 기존 목록을 확인합니다.
+>기존 목록을 보려면 다음 쿼리를 실행하십시오.
 >
 >* `select * from cq:Console`
 >
 
 
-사용자 또는 그룹에 mixin이 있는 노드에 대한 읽기 권한이 없는 경우 `cq:Console`로 설정되면 해당 노드는 `ConsoleUtil` 검색하므로 콘솔에 나열되지 않습니다.
+사용자 또는 그룹에 mixin이 있는 노드에 대한 읽기 권한이 없는 경우 `cq:Console`로 설정되지 않은 경우 `ConsoleUtil` 검색하므로 콘솔에 나열되지 않습니다.
 
 ### 사용자 지정 항목 추가 {#adding-a-custom-item}
 
-다음 [링크 선택 메커니즘](#link-selection-mechanism) 링크 목록에 사용자 지정 항목을 추가하는 데 사용할 수 있습니다.
+다음 [링크 선택 메커니즘](#link-selection-mechanism) 를 사용하여 링크 목록에 사용자 지정 항목을 추가할 수 있습니다.
 
-을(를) 추가하여 목록에 사용자 지정 항목을 추가합니다. `cq:Console` 위젯 또는 리소스에 혼합합니다. 이 작업은 속성을 정의하여 수행됩니다.
+를 추가하여 사용자 지정 항목을 목록에 추가합니다. `cq:Console` 위젯 또는 리소스에 mixin합니다. 이 작업은 속성을 정의하여 수행합니다.
 
-* `jcr:mixinTypes` 값 사용: `cq:Console`
+* `jcr:mixinTypes` 값: `cq:Console`

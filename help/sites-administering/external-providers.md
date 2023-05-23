@@ -14,7 +14,7 @@ exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -80,7 +80,7 @@ _gaq.push(['_trackPageview']);
 
    ![](assets/analytics_snippet.png)
 
-1. **확인**&#x200B;을 클릭하여 저장합니다.
+1. 클릭 **확인** 저장.
 
 ## 페이지에서 새 서비스 사용 {#using-your-new-service-on-pages}
 
@@ -92,12 +92,12 @@ _gaq.push(['_trackPageview']);
 
    ![](assets/analytics_selectservice.png)
 
-1. **확인**&#x200B;을 클릭하여 저장합니다.
+1. 클릭 **확인** 저장.
 1. (으)로 반환됩니다. **Cloud Services** 탭. 다음 **범용 Analytics 코드 조각** 은(는) 이제 메시지와 함께 나열됩니다. `Configuration reference missing`. 드롭다운 목록을 사용하여 특정 서비스 인스턴스를 선택합니다(예: google-analytics).
 
    ![](assets/analytics_selectspecificservice.png)
 
-1. **확인**&#x200B;을 클릭하여 저장합니다.
+1. 클릭 **확인** 저장.
 
    이제 페이지의 페이지 소스를 보면 코드 조각을 볼 수 있습니다.
 

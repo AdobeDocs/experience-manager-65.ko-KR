@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 제한 사항
-description: 이미지 세트 또는 스핀 세트를 만들거나 PDF을 업로드할 때 모범 사례 및 강제 제한에 대해 알아봅니다. Dynamic Media용 지원되지 않는 웹 브라우저 및 운영 체제 조합에 대해서도 알아봅니다.
+description: 이미지 세트 또는 회전 세트를 만들거나 PDF을 업로드할 때 모범 사례 및 적용된 제한에 대해 알아봅니다. 또한 Dynamic Media에서 지원되지 않는 웹 브라우저 및 운영 체제 조합에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
@@ -19,26 +19,26 @@ ht-degree: 3%
 
 다음 섹션에서는 Dynamic Media의 제한 사항에 대해 설명합니다.
 
-이 주제에는 다음 섹션이 포함됩니다.
+이 항목에는 다음 섹션이 포함됩니다.
 
-* [자산 유형에 대한 Dynamic Media의 우수 사례 및 강제 제한](#best-practice-enforced-limits)
-* [Dynamic Media용 지원되지 않는 웹 브라우저 및 운영 체제 조합](#unsupported-browser-os)
+* [자산 유형에 대한 Dynamic Media의 모범 사례 및 강제 제한](#best-practice-enforced-limits)
+* [Dynamic Media에서 지원되지 않는 웹 브라우저 및 운영 체제 조합](#unsupported-browser-os)
 
-## 자산 유형에 대한 Dynamic Media의 우수 사례 및 강제 제한 {#best-practice-enforced-limits}
+## 자산 유형에 대한 Dynamic Media의 모범 사례 및 강제 제한 {#best-practice-enforced-limits}
 
-스핀 세트 또는 이미지 세트를 만들거나 페이지 추출을 위해 PDF을 업로드할 때 Adobe은 다음 우수 사례를 권장하고 다음 제한을 적용합니다.
+회전 집합 또는 이미지 집합을 만들거나 페이지 추출을 위해 PDF을 업로드할 때 Adobe은 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
 
-| 자산 - 제한 유형 | 우수 사례 | 제한 적용 |
+| 에셋 - 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
 | **이미지** - 이미지당 스마트 자르기 수 | 5 | 100 |
-| **모든 세트** - 세트당 중복 자산 수 | 중복 없음 | 20 |
-| **모든 세트** - 세트당 최대 자산 수 | 세트당 5-10개 이미지 | 1000 |
-| **스핀 세트** - 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000 |
-| **PDF** - 추출할 PDF에 대한 최대 페이지 수 |  | 100(모든 PDF에 대해) |
+| **모든 세트** - 세트당 중복 에셋 수 | 중복 항목 없음 | 20 |
+| **모든 세트** - 세트당 최대 에셋 수 | 세트당 5-10개 이미지 | 1000 |
+| **회전 집합** - 2D 세트당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000 |
+| **PDF** - 추출 시 고려할 PDF의 최대 페이지 수 |  | 100(모든 PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
-## Dynamic Media용 지원되지 않는 웹 브라우저 및 운영 체제 조합 {#unsupported-browser-os}
+## Dynamic Media에서 지원되지 않는 웹 브라우저 및 운영 체제 조합 {#unsupported-browser-os}
 
 Dynamic Media은 다음 웹 브라우저 및 운영 체제 조합을 지원하지 않습니다.
 

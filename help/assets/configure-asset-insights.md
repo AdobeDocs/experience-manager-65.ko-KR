@@ -8,7 +8,7 @@ exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 7%
    *그림: 구성 [!DNL Adobe Analytics] 의 Assets Insights 용 [!DNL Experience Manager].*
 
 1. 클릭 **[!UICONTROL 인증]**.
-1. 다음 이후 [!DNL Experience Manager] 에서 자격 증명을 인증합니다. **[!UICONTROL 보고서 세트]** 목록, 선택 [!DNL Adobe Analytics] 자산 통찰력이 데이터를 가져올 위치에 대한 보고서 세트입니다. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. 다음 이후 [!DNL Experience Manager] 에서 자격 증명을 인증합니다. **[!UICONTROL 보고서 세트]** 목록, 선택 [!DNL Adobe Analytics] 자산 통찰력이 데이터를 가져올 위치에 대한 보고서 세트입니다. 클릭 **[!UICONTROL 추가]**.
 1. 다음 이후 [!DNL Experience Manager] 보고서 세트를 설정하고 **[!UICONTROL 완료]**.
 
 ## 페이지 추적기 {#page-tracker}

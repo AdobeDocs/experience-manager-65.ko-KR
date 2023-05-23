@@ -1,7 +1,7 @@
 ---
-title: Forms 포털에서 제출된 양식을 사용하여 작업하는 API
+title: Forms 포털에서 제출된 양식으로 작동하는 API
 seo-title: APIs to work with submitted forms on forms portal
-description: AEM Forms은 forms 포털에서 제출된 양식 데이터를 쿼리하고 작업에 사용할 수 있는 API를 제공합니다.
+description: AEM Forms은 forms 포털에서 제출된 양식 데이터를 쿼리하고 작업을 수행하는 데 사용할 수 있는 API를 제공합니다.
 seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
@@ -17,25 +17,25 @@ ht-degree: 7%
 
 ---
 
-# Forms 포털에서 제출된 양식을 사용하여 작업하는 API {#apis-to-work-with-submitted-forms-on-forms-portal}
+# Forms 포털에서 제출된 양식으로 작동하는 API {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms은 forms 포털을 통해 제출된 양식 데이터를 쿼리하는 데 사용할 수 있는 API를 제공합니다. 또한 이 문서에 설명된 API를 사용하여 제출된 양식의 속성을 게시하거나 주석을 달 수 있습니다.
+AEM Forms은 forms 포털을 통해 제출된 양식 데이터를 쿼리하는 데 사용할 수 있는 API를 제공합니다. 또한 이 문서에 설명된 API를 사용하여 주석을 게시하거나 제출된 양식의 속성을 업데이트할 수 있습니다.
 
 >[!NOTE]
 >
->API를 호출할 사용자는 [제출 검토자를 양식에 연결](/help/forms/using/adding-reviewers-form.md).
+>API를 호출하는 사용자는에 설명된 대로 검토자 그룹에 추가해야 합니다. [제출 서류를 양식에 연결](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
-모든 적합한 양식 목록을 반환합니다.
+모든 적격 양식 목록을 반환합니다.
 
-### URL 매개 변수 {#url-parameters}
+### URL 매개변수 {#url-parameters}
 
 이 API에는 추가 매개 변수가 필요하지 않습니다.
 
 ### 응답 {#response}
 
-응답 개체에는 양식 이름과 저장소 경로가 포함된 JSON 배열이 포함되어 있습니다. 응답의 구조는 다음과 같습니다.
+응답 개체에는 양식 이름과 저장소 경로를 포함하는 JSON 배열이 포함되어 있습니다. 응답 구조는 다음과 같습니다.
 
 ```json
 [
@@ -63,7 +63,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 
 제출된 모든 양식의 세부 정보를 반환합니다. 그러나 URL 매개 변수를 사용하여 결과를 제한할 수 있습니다.
 
-### URL 매개 변수 {#url-parameters-1}
+### URL 매개변수 {#url-parameters-1}
 
 요청 URL에 다음 매개 변수를 지정합니다.
 
@@ -83,30 +83,30 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>limit</code> (옵션)</td>
-   <td>결과 수를 제한합니다. 기본값은 입니다. <strong>30</strong>.</td>
+   <td>결과 수 제한. 기본값은 입니다. <strong>30</strong>.</td>
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (옵션)</td>
-   <td>정렬 결과에 대한 속성을 지정합니다. 기본값은 입니다. <strong>jcr:lastModified</strong>: 마지막 수정 시간을 기준으로 결과를 정렬합니다.</td>
+   <td>정렬 결과에 대한 속성을 지정합니다. 기본값은 입니다. <strong>jcr:last수정됨</strong>마지막 수정 시간을 기준으로 결과를 정렬합니다.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (옵션)</td>
-   <td>결과 정렬 순서를 지정합니다. 기본값은 입니다. <strong>desc</strong>를 정렬하면 내림차순으로 정렬됩니다. 다음을 지정할 수 있습니다 <code>asc</code> 결과를 오름차순으로 정렬하려면 다음을 수행하십시오.</td>
+   <td>결과 정렬 순서를 지정합니다. 기본값은 입니다. <strong>desc</strong>을 반환합니다. 다음을 지정할 수 있습니다. <code>asc</code> 을 눌러 결과를 오름차순으로 정렬합니다.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (옵션)</td>
-   <td>결과에 포함할 쉼표로 구분된 양식 속성 목록을 지정합니다. 기본 속성은 다음과 같습니다.<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>결과에 포함할 양식 속성을 쉼표로 구분한 목록을 지정합니다. 기본 속성은 다음과 같습니다.<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (옵션)</td>
-   <td>양식 속성에서 지정된 값을 검색하고 값이 일치하는 양식을 반환합니다. 기본값은 입니다. <strong>""</strong>.</td>
+   <td>양식 속성에서 지정된 값을 검색하고 일치하는 값이 있는 양식을 반환합니다. 기본값은 입니다. <strong>""</strong>.</td>
   </tr>
  </tbody>
 </table>
 
 ### 응답 {#response-1}
 
-응답 개체에는 지정된 양식의 세부 사항이 포함된 JSON 배열이 포함되어 있습니다. 응답의 구조는 다음과 같습니다.
+응답 개체에는 지정된 양식의 세부 정보를 포함하는 JSON 배열이 포함되어 있습니다. 응답 구조는 다음과 같습니다.
 
 ```json
 {
@@ -133,18 +133,18 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 
 지정된 제출 인스턴스에 주석을 추가합니다.
 
-### URL 매개 변수 {#url-parameters-2}
+### URL 매개변수 {#url-parameters-2}
 
 요청 URL에 다음 매개 변수를 지정합니다.
 
 | 매개변수 | 설명 |
 |---|---|
 | `submitID` | 제출 인스턴스와 연결된 메타데이터 ID를 지정합니다. |
-| `Comment` | 지정한 제출 인스턴스에 추가할 주석에 대한 텍스트를 지정합니다. |
+| `Comment` | 지정한 제출 인스턴스에 추가할 설명 텍스트를 지정합니다. |
 
 ### 응답 {#response-2}
 
-댓글을 성공적으로 게시할 때 댓글 ID를 반환합니다.
+댓글을 성공적으로 게시하면 댓글 ID를 반환합니다.
 
 ### 예 {#example-2}
 
@@ -164,9 +164,9 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 
 지정된 제출 인스턴스에 게시된 모든 주석을 반환합니다.
 
-### URL 매개 변수 {#url-parameters-3}
+### URL 매개변수 {#url-parameters-3}
 
-요청 URL에 다음 매개 변수를 지정합니다.
+요청 URL에서 다음 매개 변수를 지정합니다.
 
 | 매개변수 | 설명 |
 |---|---|
@@ -174,7 +174,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 
 ### 응답 {#response-3}
 
-응답 개체에는 지정된 제출 ID와 연결된 모든 설명을 포함하는 JSON 배열이 포함되어 있습니다. 응답의 구조는 다음과 같습니다.
+응답 개체에는 지정된 제출 ID와 연결된 모든 주석이 포함된 JSON 배열이 포함되어 있습니다. 응답 구조는 다음과 같습니다.
 
 ```json
 [{
@@ -202,7 +202,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 
 지정된 제출된 양식 인스턴스의 지정된 속성 값을 업데이트합니다.
 
-### URL 매개 변수 {#url-parameters-4}
+### URL 매개변수 {#url-parameters-4}
 
 요청 URL에 다음 매개 변수를 지정합니다.
 

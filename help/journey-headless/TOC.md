@@ -19,7 +19,7 @@ ht-degree: 100%
 + AEM Headless 개발자 여정 {#developer}
    + [AEM Headless 이해](developer/overview.md)
    + [CMS Headless 개발에 대해 알아보기](developer/learn-about.md)
-   + [AEM 헤드리스 시작하기](developer/getting-started.md)
+   + [AEM Headless 시작하기](developer/getting-started.md)
    + [AEM Headless를 사용한 첫 번째 경험으로의 경로](developer/path-to-first-experience.md)
    + [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](developer/model-your-content.md)
    + [AEM 게재 API를 통해 콘텐츠에 액세스하는 방법](developer/access-your-content.md)

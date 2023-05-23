@@ -5,7 +5,7 @@ exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '703'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ CIF 추가 기능은 상업용 기능으로 AEM 작성을 확장합니다. 이�
 
 ![선택 영역이 있는 슬라이드 구성 요소](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 
-## 유니버설 편집기 {#universal-editor}
+## Universal Editor  {#universal-editor}
 
 범용 편집기는 실시간 제품 데이터 및 관련 제품 콘텐츠에 액세스할 수 있는 기능으로 확장되었습니다.
 

@@ -1,7 +1,7 @@
 ---
 title: 개발(일반)
 seo-title: Developing (generic)
-description: 통합 프레임워크에는 API와 통합 레이어가 포함되어 있으므로 eCommerce 기능을 위한 AEM 구성 요소를 작성할 수 있습니다
+description: 통합 프레임워크는 API와의 통합 계층을 포함하므로 eCommerce 기능을 위한 AEM 구성 요소를 빌드할 수 있습니다
 seo-description: The integration framework includes an integration layer with an API, allowing you to build AEM components for eCommerce capabilities
 uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[API 설명서](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 도 사용할 수 있습니다.
+>[API 설명서](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 을 사용할 수도 있습니다.
 
-통합 프레임워크는 API와 통합 레이어를 포함합니다. 이를 통해 특정 eCommerce 엔진과 별도로 eCommerce 기능을 위한 AEM 구성 요소를 작성할 수 있습니다. 또한 내부 CRX 데이터베이스를 사용하거나 eCommerce 시스템을 연결하고 제품 데이터를 AEM에 가져올 수도 있습니다.
+통합 프레임워크는 API와의 통합 계층을 포함합니다. 이를 통해 특정 eCommerce 엔진과 관계없이 eCommerce 기능을 위한 AEM 구성 요소를 빌드할 수 있습니다. 또한 내부 CRX 데이터베이스를 사용하거나 전자 상거래 시스템을 연결하고 제품 데이터를 AEM으로 가져올 수 있습니다.
 
-통합 레이어를 사용하기 위해 즉시 사용 가능한 여러 AEM 구성 요소가 제공됩니다. 현재는 다음과 같습니다.
+통합 레이어를 사용하기 위해 다양한 AEM 구성 요소가 제공됩니다. 현재는 다음과 같습니다.
 
 * 제품 표시 구성 요소
 * 장바구니
@@ -33,21 +33,21 @@ ht-degree: 0%
 * 체크아웃
 * 검색
 
-AEM 검색, 타사 검색 또는 이들의 조합을 사용할 수 있는 통합 후크가 제공됩니다.
+검색의 경우 AEM 검색, 타사 검색 또는 이들의 조합을 사용할 수 있는 통합 후크가 제공됩니다.
 
 ## 전자 상거래 엔진 선택 {#ecommerce-engine-selection}
 
-eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있으며, AEM 일반 엔진을 사용하는 경우에도 AEM에서 사용 중인 엔진을 식별해야 합니다.
+eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있으며, AEM 일반 엔진을 사용하는 경우에도 사용되는 엔진을 AEM에서 식별해야 합니다.
 
-* eCommerce Engine은 `CommerceService` 인터페이스
+* 전자 상거래 엔진은 다음을 지원하는 OSGi 서비스입니다. `CommerceService` 인터페이스
 
-   * 엔진은 `commerceProvider` 서비스 속성
+   * 엔진은 다음을 통해 구별될 수 있습니다. `commerceProvider` 서비스 속성
 
 * AEM 지원 `Resource.adaptTo()` 대상 `CommerceService` 및 `Product`
 
-   * 다음 `adaptTo` 구현에서 `cq:commerceProvider` 리소스 계층 구조의 속성:
+   * 다음 `adaptTo` 구현에서 다음을 찾습니다. `cq:commerceProvider` 리소스의 계층 구조에 있는 속성:
 
-      * 찾을 경우 이 값은 상거래 서비스 조회를 필터링하는 데 사용됩니다.
+      * 검색되면 이 값을 사용하여 상거래 서비스 조회를 필터링합니다.
       * 검색되지 않는 경우, 가장 높은 등급의 상거래 서비스가 사용됩니다.
    * A `cq:Commerce` mixin을 사용하여 `cq:commerceProvider` 강력한 형식의 리소스에 추가할 수 있습니다.
 
@@ -99,7 +99,7 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
 
       `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
-* 의 지속성을 소유합니다. **주문** 데이터:
+* 의 지속성 소유 **주문** 데이터:
 
    `CommerceSession.getUserContext()`
 
@@ -111,13 +111,13 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
 
 #### 제품 및 변형 아키텍처 {#architecture-of-product-and-variants}
 
-단일 제품에는 여러 변형이 있을 수 있습니다. 예를 들어 색상 및/또는 크기에 따라 달라질 수 있습니다. 제품은 변형이 시작되는 속성을 정의해야 합니다. 우리는 이것을 *변형 축*.
+단일 제품에는 여러 변형이 있을 수 있습니다. 예를 들어 색상 및/또는 크기에 따라 달라질 수 있습니다. 제품은 변형을 유도하는 속성을 정의해야 합니다. *변형 축*.
 
-그러나 일부 속성이 변형 축인 것은 아닙니다. 변형은 다른 속성에도 영향을 줄 수 있습니다. 예를 들어 가격은 크기에 따라 달라질 수 있습니다. 이러한 속성은 쇼퍼에서 선택할 수 없으므로 변형 축으로 간주되지 않습니다.
+그러나 모든 속성이 변형 축인 것은 아닙니다. 변형은 다른 속성에도 영향을 줄 수 있습니다. 예를 들어, 가격은 크기에 따라 달라질 수 있습니다. 이러한 속성은 구매자가 선택할 수 없으므로 변형 축으로 간주되지 않습니다.
 
-각 제품 및/또는 변형은 리소스로 표시되므로 1:1을 저장소 노드에 매핑합니다. 특정 제품 및/또는 변형을 해당 경로로 고유하게 식별할 수 있는 것은 당연한 귀결입니다.
+각 제품 및/또는 변형은 리소스로 표시되므로 1:1을 저장소 노드에 매핑합니다. 특정 제품 및/또는 변형이 해당 경로에 의해 고유하게 식별될 수 있다는 것이 중요합니다.
 
-모든 제품 리소스는 `Product API`. 제품 API의 대부분의 호출은 변형별로 고유하지만(변형은 조상에서 공유 값을 상속할 수 있지만), 변형 세트를 나열하는 호출도 있습니다( `getVariantAxes()`, `getVariants()`등)
+모든 제품 리소스는 `Product API`. 제품 API의 대부분의 호출은 변형별로 다르지만(변형이 상위 항목에서 공유 값을 상속할 수 있음), 변형 세트를 나열하는 호출도 있습니다( `getVariantAxes()`, `getVariants()`등).
 
 >[!NOTE]
 >
@@ -125,10 +125,10 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
 >
 >* 일반 구현의 경우 AEM은 제품 데이터의 속성에서 읽습니다( `cq:productVariantAxes`)
 >
->제품(일반적으로)은 많은 변형 축을 가질 수 있지만 기본적으로 제공되는 제품 구성 요소는 두 개만 처리합니다.
+>제품(일반적으로)에는 여러 변형 축이 있을 수 있지만 기본 제품 구성 요소는 다음 두 가지 요소만 처리합니다.
 >
 >1. `size`
->1. 하나 더
+>1. + 개 더
 
 >
 >   이 추가 변형은 `variationAxis` 제품 참조의 속성(일반적으로 `color` Geometrixx Outdoors).
@@ -155,7 +155,7 @@ etc
         shirt-l
 ```
 
-&quot;크고 긴&quot; 카탈로그만 있을 수 있지만
+반면 &quot;Big and Tall&quot; 카탈로그는 다음 항목만 포함할 수 있습니다.
 
 ```shell
 content
@@ -164,11 +164,11 @@ content
       shirt-l
 ```
 
-마지막으로, 제품 데이터를 사용할 필요는 없습니다. 모든 제품 데이터를 카탈로그의 참조 아래에 배치할 수 있습니다. 그러나 제품 데이터를 복제하지 않으면 실제로 여러 카탈로그를 가질 수는 없습니다.
+마지막으로 제품 데이터를 사용할 필요가 없습니다. 모든 제품 데이터를 카탈로그의 참조 아래에 배치할 수 있지만, 모든 제품 데이터를 복제하지 않으면 여러 개의 카탈로그를 가질 수 없습니다.
 
 **API**
 
-#### com.adobe.cq.commerce.api.Product interface {#com-adobe-cq-commerce-api-product-interface}
+#### com.adobe.cq.commerce.api.Product 인터페이스 {#com-adobe-cq-commerce-api-product-interface}
 
 ```java
 public interface Product extends Adaptable {
@@ -239,27 +239,27 @@ public class AxisFilter implements VariantFilter {
 }
 ```
 
-* **일반 스토리지 메커니즘**
+* **일반 저장 메커니즘**
 
-   * 제품 노드는 구조화되지 않습니다.
+   * 제품 노드는 구조화되지 않았습니다.
    * 제품 노드는 다음 중 하나일 수 있습니다.
 
-      * 제품 데이터가 다른 위치에 저장된 참조:
+      * 제품 데이터가 다른 곳에 저장된 참조:
 
          * 제품 참조에 `productData` 제품 데이터를 가리키는 속성(일반적으로 `/etc/commerce/products`).
          * 제품 데이터는 계층적입니다. 제품 속성은 제품 데이터 노드의 상위 항목에서 상속됩니다.
-         * 제품 참조에는 로컬 속성이 포함될 수도 있으며 이 속성이 제품 데이터에 지정된 속성을 재정의합니다.
+         * 제품 참조에는 제품 데이터에 지정된 속성을 재정의하는 로컬 속성도 포함될 수 있습니다.
       * 제품 자체:
 
-         * 없는 `productData` 속성을 사용합니다.
-         * 모든 속성을 로컬로 보유하며 productData 속성을 포함하지 않는 제품 노드는 고유한 상위 항목에서 직접 제품 속성을 상속합니다.
+         * 없이 `productData` 속성.
+         * 모든 속성을 로컬로 보유하는(productData 속성을 포함하지 않는) 제품 노드는 자체 상위 항목에서 직접 제품 속성을 상속합니다.
 
 
-* **AEM-일반 제품 구조**
+* **AEM 일반 제품 구조**
 
-   * 각 변형에는 고유한 리프 노드가 있어야 합니다.
-   * 제품 인터페이스는 제품 및 변형을 모두 나타내지만 관련 저장소 노드는 고유한 것입니다.
-   * 제품 노드는 제품 속성 및 변형 축을 설명합니다.
+   * 각 변형에는 자체 리프 노드가 있어야 합니다.
+   * 제품 인터페이스는 제품 및 변형을 모두 나타내지만 관련 저장소 노드는 제품 및 변형에 대해 구체적입니다.
+   * 제품 노드는 제품 속성 및 변형 축에 대해 설명합니다.
 
 #### 예 {#example-1}
 
@@ -304,7 +304,7 @@ public class AxisFilter implements VariantFilter {
         - price = 18.00
 ```
 
-#### 장바구니 아키텍처 {#architecture-of-the-shopping-cart}
+#### 장바구니의 아키텍처 {#architecture-of-the-shopping-cart}
 
 **구성 요소**
 
@@ -331,7 +331,7 @@ public class AxisFilter implements VariantFilter {
 
 * 스토리지
 
-   * AEM 일반 케이스 카트에서 의 [ClientContext](/help/sites-administering/client-context.md)
+   * AEM 일반적인 경우 의 카트는 [ClientContext](/help/sites-administering/client-context.md)
 
 **개인화**
 
@@ -375,7 +375,7 @@ public class AxisFilter implements VariantFilter {
 
 1. **주문 세부 사항**
 
-   그러나 주문 세부 사항은 다음과 같습니다 *not* api에 의해 수정되었습니다.
+   하지만 주문 세부 사항은 다음과 같습니다 *아님* api에 의해 수정됨:
 
    ```java
        public void updateOrderDetails(Map<String, String> orderDetails);
@@ -383,11 +383,11 @@ public class AxisFilter implements VariantFilter {
        public void submitOrder();
    ```
 
-**배송 계산**
+**운송 계산**
 
-* 주문 양식은 종종 여러 배송 옵션(및 가격)을 제공해야 합니다.
-* 가격은 중량 및/또는 배달 주소와 같은 주문 및 세부 사항을 기반으로 할 수 있습니다.
-* 다음 `CommerceSession` 는 모든 종속성에 액세스할 수 있으므로 제품 가격과 유사한 방식으로 처리할 수 있습니다.
+* 주문 양식에는 종종 여러 배송 옵션(및 가격)이 표시되어야 합니다.
+* 가격은 중량 및/또는 배송 주소와 같은 품목 및 주문 세부 사항을 기반으로 할 수 있습니다.
+* 다음 `CommerceSession` 은 모든 종속성에 액세스할 수 있으므로 제품 가격과 유사한 방식으로 처리할 수 있습니다.
 
    * 다음 `CommerceSession` 배송 가격을 소유합니다.
    * 사용 `updateOrder(Map<String, Object> delta)` 게재 세부 사항을 검색/업데이트하기 위해.
@@ -400,17 +400,17 @@ public class AxisFilter implements VariantFilter {
 >
 >현재는 hybris 엔진만 검색 API를 즉시 구현합니다.
 >
->그러나 검색 API는 제네릭이므로 각 CommerceService에서 개별적으로 구현할 수 있습니다.
+>그러나 검색 API는 일반적이며 각 CommerceService에서 개별적으로 구현할 수 있습니다.
 >
->따라서 기본적으로 제공되는 일반 구현에서 이 API를 구현하지 않지만, 이를 확장하고 검색 기능을 추가할 수 있습니다.
+>따라서 기본적으로 제공되는 일반 구현은 이 API를 구현하지 않지만 이를 확장하고 검색 기능을 추가할 수 있습니다.
 
-eCommerce 프로젝트에는 다음과 같은 기본 검색 구성 요소가 포함되어 있습니다.
+전자 상거래 프로젝트에는 다음 위치에 있는 기본 검색 구성 요소가 포함되어 있습니다.
 
 `/libs/commerce/components/search`
 
 ![chlimage_1-34](/help/sites-developing/assets/chlimage_1-34a.png)
 
-이렇게 하면 검색 API를 사용하여 선택한 상거래 엔진을 쿼리합니다(참조) [전자 상거래 엔진 선택](#ecommerce-engine-selection)):
+검색 API를 사용하여 선택한 상거래 엔진을 쿼리합니다(참조). [전자 상거래 엔진 선택](#ecommerce-engine-selection)):
 
 #### 검색 API {#search-api}
 
@@ -418,29 +418,29 @@ eCommerce 프로젝트에는 다음과 같은 기본 검색 구성 요소가 포
 
 1. `CommerceQuery`
 
-   검색 쿼리를 설명하는 데 사용됩니다(쿼리 텍스트, 현재 페이지, 페이지 크기, 정렬 및 선택한 패싯에 대한 정보가 포함됨). 검색 API를 구현하는 모든 eCommerce 서비스는 검색을 수행하기 위해 이 클래스의 인스턴스를 수신합니다. A `CommerceQuery` 요청 개체( `HttpServletRequest`).
+   검색 쿼리를 설명하는 데 사용됩니다(쿼리 텍스트, 현재 페이지, 페이지 크기, 정렬 및 선택한 패싯에 대한 정보를 포함). 검색 API를 구현하는 모든 전자 상거래 서비스는 검색을 수행하기 위해 이 클래스의 인스턴스를 받습니다. A `CommerceQuery` 은 요청 개체에서 인스턴스화할 수 있습니다( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   하나의 정적 메서드를 제공하는 유틸리티 클래스입니다. `toParams` - 생성용 `GET` 패싯 목록 및 전환된 값 중 하나의 매개변수 문자열 이 기능은 UI 측에서 각 패싯의 각 값에 대한 하이퍼링크를 표시해야 할 때 사용자가 하이퍼링크를 클릭하면 각 값이 전환됩니다(즉, 선택한 경우 쿼리에서 제거되고 그렇지 않으면 추가됨). 이렇게 하면 여러/단일 값을 갖는 패싯을 처리하고 값을 재정의하는 등의 모든 로직이 관리됩니다.
+   하나의 정적 메서드를 제공하는 유틸리티 클래스입니다. `toParams` - 를 생성하는 데 사용됩니다. `GET` 패싯 및 전환된 하나의 값 목록의 매개 변수 문자열. 이 기능은 UI측에서 각 패싯의 각 값에 대한 하이퍼링크를 표시해야 사용자가 하이퍼링크를 클릭할 때 해당 값이 전환됩니다(즉, 선택한 경우 쿼리에서 제거되고 다른 경우에는 추가됨). 이는 여러/단일 값 패싯을 처리하고 값을 재정의하는 등의 모든 논리를 처리합니다.
 
-검색 API의 시작 지점은 입니다 `CommerceService#search` 를 반환하는 메서드 `CommerceResult` 개체. 이 항목에 대한 자세한 내용은 API 설명서 를 참조하십시오.
+검색 API의 진입점은 입니다. `CommerceService#search` 를 반환하는 메서드 `CommerceResult` 개체. 이 항목에 대한 자세한 내용은 API 설명서 를 참조하십시오.
 
 ### 프로모션 및 바우처 개발 {#developing-promotions-and-vouchers}
 
 * 바우처:
 
-   * 바우처는 웹 사이트 콘솔로 작성/편집되며 아래에 저장되는 페이지 기반 구성 요소입니다.
+   * 바우처는 웹 사이트 콘솔로 생성/편집하고 아래에 저장되는 페이지 기반 구성 요소입니다.
 
       `/content/campaigns`
 
    * 바우처 공급:
 
-      * 구매 대행자가 장바구니에 입력할 바우처 코드.
-      * 구매자가 장바구니에 입력한 후 표시되는 바우처 레이블입니다.
-      * 프로모션 경로(바우처가 적용되는 작업을 정의합니다.)
-   * 바우처는 설정 및 해제 날짜/시간이 없지만 상위 캠페인의 바우처를 사용합니다.
-   * 외부 상거래 엔진도 바우처를 제공할 수 있습니다. 이를 위해서는 최소 다음 항목이 필요합니다.
+      * 바우처 코드(구매자가 장바구니에 입력).
+      * 바우처 레이블(쇼핑객이 장바구니에 입력한 후 표시됨).
+      * 프로모션 경로(바우처가 적용되는 작업을 정의함).
+   * 바우처는 날짜/시간 및 시간이 다르지만 부모 캠페인의 항목을 사용합니다.
+   * 외부 상거래 엔진은 바우처를 제공할 수도 있습니다. 여기에는 최소 다음 항목이 필요합니다.
 
       * 바우처 코드
       * An `isValid()` 방법
@@ -458,17 +458,17 @@ eCommerce 프로젝트에는 다음과 같은 기본 검색 구성 요소가 포
 
       `/content/campaigns`
 
-   * 프로모션 공급:
+   * 판촉 공급:
 
       * 우선 순위
-      * 프로모션 처리기 경로
-   * 프로모션을 캠페인에 연결하여 해당 설정/해제 날짜/시간을 정의할 수 있습니다.
+      * 프로모션 핸들러 경로
+   * 프로모션을 캠페인에 연결하여 설정/해제 날짜/시간을 정의할 수 있습니다.
    * 프로모션을 경험에 연결하여 세그먼트를 정의할 수 있습니다.
-   * 경험에 연결되어 있지 않은 프로모션은 자체적으로 실행되지 않지만 바우처가 여전히 실행할 수 있습니다.
-   * 프로모션 구성 요소( `/libs/commerce/components/promotion`)에는 다음이 포함되어 있습니다.
+   * 경험에 연결되지 않은 프로모션은 저절로 실행되지는 않지만 바우처로 실행할 수 있습니다.
+   * 프로모션 구성 요소( `/libs/commerce/components/promotion`) 다음 포함:
 
-      * 프로모션 관리를 위한 렌더러 및 대화 상자
-      * 프로모션 핸들러와 관련된 구성 매개 변수를 렌더링하고 편집하는 하위 구성 요소
+      * 프로모션 관리용 렌더러 및 대화 상자
+      * 프로모션 핸들러와 관련된 구성 매개 변수를 렌더링 및 편집하기 위한 하위 구성 요소
    * 두 개의 프로모션 핸들러가 즉시 제공됩니다.
 
       * `DiscountPromotionHandler`- 장바구니 전체 절대 또는 백분율 할인을 적용합니다.
@@ -514,11 +514,11 @@ public List<Voucher> getVouchers() throws CommerceException;
 
 * 바우처 코드
 * 간단한 설명
-* 할인 유형 및 값을 나타내는 관련 프로모션 참조
+* 할인 유형 및 값을 나타내는 관련 판촉 참조
 
-다음 `AbstractJcrCommerceSession` 바우처가 제공될 수 있습니다. 클래스에 의해 반환된 바우처가 `getVouchers()` 의 인스턴스입니다. `cq:Page` 는 다음 속성(그 외)을 사용하는 jcr:content 노드를 포함합니다.
+다음 `AbstractJcrCommerceSession` 바우처를 제공할 수 있습니다. 학급에서 반납한 상품권 `getVouchers()` 은(는) 의 인스턴스임 `cq:Page` 다음 속성(그 외)이 있는 jcr:content 노드 포함:
 
-* `sling:resourceType` (문자열) - 다음을 수행해야 합니다. `commerce/components/voucher`
+* `sling:resourceType` (문자열) - 다음이 필요합니다. `commerce/components/voucher`
 
 * `jcr:title` (문자열) - 바우처 설명에 사용됩니다.
 * `code` (문자열) - 이 바우처를 적용하려면 사용자가 입력해야 하는 코드
@@ -574,6 +574,6 @@ public void invalidateCaches();
 
 기본적으로 3개의 프로모션 핸들러가 제공됩니다.
 
-* `DiscountPromotionHandler` 장바구니 전체 절대 또는 백분율 할인 적용
-* `PerfectPartnerPromotionHandler` 제품 파트너가 장바구니에 있는 경우, 절대 또는 퍼센트 할인을 적용합니다
-* `FreeShippingPromotionHandler` 무료 배송
+* `DiscountPromotionHandler` 장바구니 전체 절대 또는 비율 할인 적용
+* `PerfectPartnerPromotionHandler` 제품 파트너가 장바구니에 있는 경우 제품 절대 또는 비율 할인을 적용합니다.
+* `FreeShippingPromotionHandler` 무료 배송 적용

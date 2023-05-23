@@ -483,7 +483,7 @@ Go-Live를 가능한 한 원활하게 진행해 보세요. 마지막 단계에�
 
 프로젝트 관리자는 다음과 같습니다.
 
-* 프로젝트 스폰서가 제공하는 요구 사항(예: 범위, KPI, 성공 기준 및 정의)에 따라 프로젝트의 전체 게재를 담당합니다.
+* 프로젝트 스폰서가 제공하는 요구 사항(예: 범위, KPI, 성공 기준 및 정의)을 기반으로 프로젝트의 전반적인 게재를 담당합니다.
 * 예산을 정의하고 해당 예산을 기반으로 프로젝트를 재구성할 책임이 있습니다.
 * 프로젝트에 참여하는 모든 담당자의 커뮤니케이션의 주요 지점입니다.
 
@@ -612,8 +612,8 @@ Go-Live를 가능한 한 원활하게 진행해 보세요. 마지막 단계에�
    * [SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md)
    * [AEM 및 웹 접근성 지침](/help/managing/web-accessibility.md)
    * [일반 데이터 보호 규정](/help/managing/data-protection-and-privacy.md)* [모범 사례 배포 및 유지 관리](/help/sites-deploying/best-practices.md)
-* [관리 우수 사례](/help/sites-administering/administer-best-practices.md)
-* [개발 우수 사례](/help/sites-developing/best-practices.md)
+* [모범 사례 관리](/help/sites-administering/administer-best-practices.md)
+* [모범 사례 개발](/help/sites-developing/best-practices.md)
 * [작성 모범 사례](/help/sites-authoring/best-practices.md)
 
 ## 주요 설명서 영역 {#key-documentation-areas}

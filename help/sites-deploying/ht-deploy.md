@@ -20,10 +20,10 @@ ht-degree: 10%
 
 # 구성 방법 문서{#configuration-how-to-articles}
 
-다음 항목에서는 특정 AEM 배포 작업을 수행하는 방법을 설명합니다.
+다음 항목에서는 특정 AEM 배포 작업을 수행하는 방법에 대해 설명합니다.
 
-* [로그 뷰어를 사용하는 방법](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
-* [워크플로우 및 감사 로그를 삭제하는 방법](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
+* [로그 뷰어 사용 방법](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
+* [워크플로우 및 감사 로그를 제거하는 방법](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
 * [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko-KR)
 * [시작 화면에서 기능을 제거하는 방법](/help/sites-developing/customizing-the-welcome-console.md)

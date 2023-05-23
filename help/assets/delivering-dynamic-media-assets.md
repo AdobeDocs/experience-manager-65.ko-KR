@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media 에셋 전송
+title: Dynamic Media 자산 전송
 description: Dynamic Media 에셋 제공 방법 알아보기
 uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
@@ -14,11 +14,11 @@ feature: Asset Management,Renditions
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '310'
-ht-degree: 25%
+ht-degree: 23%
 
 ---
 
-# Dynamic Media 에셋 전송{#delivering-dynamic-media-assets}
+# Dynamic Media 자산 전송{#delivering-dynamic-media-assets}
 
 Dynamic Media 에셋(비디오와 이미지 모두)을 전달하는 방법은 웹 사이트가 구현되는 방식에 따라 다릅니다.
 
@@ -41,7 +41,7 @@ Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 * [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)
 * [Dynamic Media의 핫링크 보호 활성화](/help/assets/hotlink-protection.md)
 * [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)
-* [반응형 사이트에 최적화된 이미지 제공](/help/assets/responsive-site.md)
+* [반응형 사이트에 최적화된 이미지 게재](/help/assets/responsive-site.md)
 * [컨텐츠의 HTTP2 전달](/help/assets/http2.md)
 * [Dynamic Media Classic을 통해 CDN 캐시 무효화](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [규칙 세트를 사용하여 URL 변환](/help/assets/using-rulesets-to-transform-urls.md)

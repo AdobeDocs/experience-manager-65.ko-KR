@@ -14,7 +14,7 @@ exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 4%
    * 다음에 대한 세부 사항 보기 [dsrp 선택](dsrp.md#select-dsrp)
    * 다음에 대한 세부 사항 보기 [ASRP 선택](asrp.md#select-asrp)
 
-* **[!UICONTROL 제출]**&#x200B;을 선택합니다.
+* 선택 **[!UICONTROL 제출]**.
 
 ### JCR 저장소 정보 {#about-jcr-storage}
 
