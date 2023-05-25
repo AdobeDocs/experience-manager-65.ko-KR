@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: be028f116ccb83853cd46dc742438babd2207314
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '903'
 ht-degree: 1%
 
 ---
@@ -199,3 +199,7 @@ AEM에서 언어는 페이지 언어 또는 사용자 언어에서 가져올 수
 >[!NOTE]
 >
 >새 언어는 AEM에서 인식하는 언어 중 하나여야 합니다. 즉, 아래 노드로 사용할 수 있어야 합니다 `/libs/wcm/core/resources/languages`.
+
+>[!CAUTION]
+>
+>서비스 팩을 설치하면 /content/cq:tags 노드의 언어 속성이 기본값으로 재설정됩니다. 따라서 설치하기 전에 속성에서 추가해야 합니다.
