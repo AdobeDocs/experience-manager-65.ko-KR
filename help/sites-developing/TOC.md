@@ -8,10 +8,10 @@ breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 feature: Developing
 role: Developer
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 80%
+source-wordcount: '1296'
+ht-degree: 79%
 
 ---
 
@@ -142,6 +142,8 @@ ht-degree: 80%
       + [GraphQL 엔드포인트 관리](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL IDE 사용](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [GraphQL 쿼리 최적화](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
+      + [최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [콘텐츠 조각의 원격 AEM GraphQL 쿼리 인증](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [콘텐츠 조각이 있는 AEM GraphQL API - 샘플 콘텐츠 및 구문](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + 하이브리드 및 SPA AEM 개발{#spas}
@@ -189,10 +191,10 @@ ht-degree: 80%
    + [샘플 ContextHub UI 모듈 유형](ch-samplemodules.md)
    + [ContextHub 진단](ch-diagnostics.md)
    + [타깃팅된 컨텐츠를 위한 개발](target.md)
-   + [ContextHub Javascript API 참조](contexthub-api.md)
+   + [ContextHub JavaScript API 참조](contexthub-api.md)
    + Client Context{#client-context}
       + [Client Context 관련 세부 사항](client-context.md)
-      + [Client Context Javascript API](ccjsapi.md)
+      + [Client Context JavaScript API](ccjsapi.md)
 + AEM 확장{#extending-aem}
    + [Adobe Developer App Builder를 사용하여 AEM 확장](app-builder.md)
    + [페이지 작성 사용자 지정](customizing-page-authoring-touch.md)

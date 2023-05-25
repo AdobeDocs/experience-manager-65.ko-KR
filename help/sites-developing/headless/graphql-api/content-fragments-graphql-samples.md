@@ -1,18 +1,18 @@
 ---
-title: AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리
-description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
+title: AEM과 함께 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리
+description: 샘플 콘텐츠 및 쿼리를 탐색하여 AEM과 함께 GraphQL을 사용하여 headless로 콘텐츠를 제공하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 85f8da2a30e1bb5b78cbb36cd9b79939dd913251
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
 source-wordcount: '1586'
-ht-degree: 94%
+ht-degree: 74%
 
 ---
 
 # AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
 
-AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
+샘플 콘텐츠 및 쿼리를 탐색하여 AEM과 함께 GraphQL을 사용하여 headless로 콘텐츠를 제공하는 방법을 알아봅니다.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 �
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 
-GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 작동하는 방법을 알아보려면 몇 가지 실제 사례를 살펴보는 것이 도움이 됩니다.
+GraphQL 쿼리를 시작하고 쿼리가 AEM 콘텐츠 조각과 함께 작동하는 방식을 살펴보려면 몇 가지 실제 사례를 살펴보는 것이 좋습니다.
 
 도움이 필요하면 다음을 참조하십시오.
 
@@ -38,7 +38,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 >[!NOTE]
 >
->인스턴스에 따라 쿼리를 제출하고 테스트하기 위해 [AEM GraphQL API에 포함되어 있는 GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)에 직접 액세스할 수 있습니다.
+>인스턴스에 따라 [AEM GraphQL API에 포함된 GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) 쿼리 제출 및 테스트용.
 >
 >예를 들어`http://localhost:4502/content/graphiql.html`
 
@@ -48,11 +48,11 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 ### 샘플 쿼리 - 사용 가능한 모든 스키마 및 데이터 형식 {#sample-all-schemes-datatypes}
 
-사용 가능한 모든 스키마에 대한 모든 `types`이 반환됩니다.
+이 샘플 쿼리는 모두 반환합니다 `types` 사용 가능한 모든 스키마.
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   __schema {
     types {
@@ -65,7 +65,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "__schema": {
@@ -141,10 +141,10 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 ### 샘플 쿼리 - 모든 도시에 대한 모든 정보 {#sample-all-information-all-cities}
 
-모든 도시에 대한 모든 정보를 검색하려면 다음과 같은 매우 기본적인 쿼리를 사용하면 됩니다.
+모든 도시에 대한 모든 정보를 검색하려면 다음과 같은 기본 쿼리를 사용하면 됩니다.
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   cityList {
     items
@@ -152,9 +152,9 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 }
 ```
 
-실행되면 시스템은 모든 필드를 포함하도록 쿼리를 자동으로 확장합니다.
+실행 시 시스템은 모든 필드를 포함하도록 쿼리를 자동으로 확장합니다.
 
-```xml
+```graphql
 {
   cityList {
     items {
@@ -169,7 +169,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -224,11 +224,11 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 ### 샘플 쿼리 - 모든 도시의 이름 {#sample-names-all-cities}
 
-`city` 스키마에 있는 모든 항목의 `name`을 반환하는 간단한 쿼리입니다.
+이 샘플 쿼리는 다음을 반환하는 간단한 쿼리입니다. `name`의 모든 항목 `city`스키마.
 
 **샘플 쿼리**
 
-```xml
+```xmgraphqll
 query {
   cityList {
     items {
@@ -240,7 +240,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -274,11 +274,11 @@ query {
 
 ### 샘플 쿼리 - 단일 특정 도시 조각 {#sample-single-specific-city-fragment}
 
-저장소의 특정 위치에 있는 단일 조각 항목의 세부 정보를 반환하는 쿼리입니다.
+이 샘플 쿼리는 저장소의 특정 위치에 있는 단일 조각 항목의 세부 정보를 반환하는 쿼리입니다.
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
     item {
@@ -294,7 +294,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityByPath": {
@@ -315,11 +315,11 @@ query {
 
 ### 샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시 {#sample-cities-named-variation}
 
-`city` Berlin에 대해 “Berlin Centre”(`berlin_centre`)라는 이름이 붙은 새 변형을 만드는 경우 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
+이름이 &quot;Berlin Center&quot;인 변형을 만드는 경우(`berlin_centre`), `city` Berlin에서는 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   cityList (variation: "berlin_center") {
     items {
@@ -335,7 +335,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -360,14 +360,14 @@ query {
 
 다음과 같은 경우:
 
-* 다음과 같은 다양한 태그를 만듭니다. `Tourism` : `Business`, `City Break`, `Holiday`
-* 다양한 유형의 기본 변형에 할당 `City` 인스턴스
+* 이름이 인 다양한 태그 만들기 `Tourism` : `Business`, `City Break`, `Holiday`
+* 및 이러한 태그를 다양한 의 기본 변형에 할당 `City` 인스턴스
 
 그런 다음 쿼리를 사용하여 `name` 및 `tags`의 모든 게시물에 도시 브레이크로 태그가 지정됨 `city`스키마.
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   cityList(
     includeVariations: true,
@@ -383,7 +383,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -414,7 +414,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   companyList {
     items {
@@ -443,7 +443,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -538,11 +538,11 @@ query {
 
 ### 샘플 쿼리 - 이름이 “Jobs” 또는 “Smith”인 모든 사람 {#sample-all-persons-jobs-smith}
 
-이름이 `Jobs` 또는 `Smith`인 모든 `persons`가 필터링됩니다.
+이 샘플 쿼리는 모두 필터링합니다. `persons` 를 나타내는 모든 단어 `Jobs`또는 `Smith`.
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -567,7 +567,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -592,11 +592,11 @@ query {
 
 ### 샘플 쿼리 - 이름이 “Jobs”가 아닌 모든 사람 {#sample-all-persons-not-jobs}
 
-이름이 `Jobs` 또는 `Smith`인 모든 `persons`가 필터링됩니다.
+이 샘플 쿼리는 모두 필터링합니다. `persons` 를 나타내는 모든 단어 `Jobs`또는 `Smith`.
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -618,7 +618,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -663,7 +663,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   adventureList(
     filter: {
@@ -685,7 +685,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "adventureList": {
@@ -702,13 +702,13 @@ query {
 }
 ```
 
-### 샘플 쿼리 - 독일 또는 스위스에 위치한 인구 400000~999999의 모든 도시 {#sample-all-cities-d-ch-population}
+### 샘플 쿼리 - 독일 또는 스위스의 인구 400000~999999인 모든 도시 {#sample-all-cities-d-ch-population}
 
-여기에서는 필드를 조합하여 필터링됩니다. An `AND`(묵시적)는 `population`범위를 선택하는 데 사용되며, `OR`(명시적)는 필요한 도시를 선택하는 데 사용됩니다.
+여기에서는 필드 조합이 필터링됩니다. An `AND`(묵시적)는 `population`범위를 선택하는 데 사용되며, `OR`(명시적)는 필요한 도시를 선택하는 데 사용됩니다.
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     population: {
@@ -744,7 +744,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -771,7 +771,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     name: {
@@ -795,7 +795,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -822,7 +822,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -846,7 +846,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -880,7 +880,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -906,7 +906,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -932,7 +932,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -964,7 +964,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -998,7 +998,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -1040,7 +1040,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -1090,7 +1090,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   awardList(filter: {
       id: {
@@ -1117,7 +1117,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "awardList": {
@@ -1146,7 +1146,7 @@ query {
 
 ## WKND 프로젝트를 사용하는 샘플 쿼리 {#sample-queries-using-wknd-project}
 
-이러한 샘플 쿼리는 WKND 프로젝트를 기반으로 합니다. 여기에는 다음이 있습니다.
+이러한 샘플 쿼리는 WKND 프로젝트를 기반으로 합니다. 여기에는 다음과 같은 항목이 있습니다.
 
 * 콘텐츠 조각 모델은 다음에서 사용할 수 있습니다.
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1156,7 +1156,7 @@ query {
 
 >[!NOTE]
 >
->결과가 광범위해질 수 있으므로 여기에서 재현하지는 않습니다.
+>결과가 광범위할 수 있으므로 여기에서 재현하지는 않습니다.
 
 ### 지정된 속성을 가진 특정 모델의 모든 콘텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-all-model-properties}
 
@@ -1167,7 +1167,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   articleList {
     items {
@@ -1187,7 +1187,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   adventureList {
     items {
@@ -1244,7 +1244,7 @@ query {
 이 샘플 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 특정 경로에서 `article` 유형의 단일 콘텐츠 조각
-   * 그 안에 있는 모든 형식의 콘텐츠:
+   * 해당 경로 내의 모든 컨텐츠 형식은 다음과 같습니다.
       * HTML
       * Markdown
       * 일반 텍스트
@@ -1252,7 +1252,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
@@ -1278,7 +1278,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
     item {
@@ -1298,7 +1298,7 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 특정 경로에서 `article` 유형의 단일 콘텐츠 조각
-   * 그 안에 있는 참조된(중첩된) 조각의 경로 및 작성자
+   * 해당 경로 내에서 참조된(중첩된) 조각의 경로 및 작성자
 
 >[!NOTE]
 >
@@ -1393,7 +1393,7 @@ query {
 
 다음 쿼리는 `_references`를 사용하여 모든 콘텐츠 참조를 반환합니다.
 
-```xml
+```graphql
 {
   bookmarkList {
      _references {
@@ -1427,13 +1427,13 @@ query {
 
 #### 첨부 파일이 포함된 복수 콘텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-multiple-fragments-attachments}
 
-다음 쿼리는 `content-reference` 유형의 특정 필드(하위 그룹)인 모든 `attachments`을 반환합니다.
+다음 쿼리는 모두 반환합니다 `attachments` - 유형의 특정 필드(하위 그룹) `content-reference`:
 
 >[!NOTE]
 >
 >`attachments` 필드에는 `content-reference` 데이터 형식이 있고, 다양한 형태가 선택되어 있습니다.
 
-```xml
+```graphql
 {
   bookmarkList {
     items {
@@ -1477,7 +1477,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
     item {
@@ -1515,11 +1515,11 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 특정 경로에서 `article` 유형의 단일 콘텐츠 조각
-   * 그 안에 있는 변형: `variation1`과 관련된 데이터
+   * 해당 경로 내에서 변형과 관련된 데이터는 `variation1`
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
@@ -1544,7 +1544,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   articleList (variation: "variation1") {
     items {
@@ -1569,7 +1569,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   articleList(
     includeVariations: true  ){
@@ -1596,7 +1596,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   articleList(
     includeVariations: true,
@@ -1625,7 +1625,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 { 
   articleList (_locale: "fr") {
     items {
@@ -1652,7 +1652,7 @@ query {
 
 ### 샘플 콘텐츠 조각 모델 (스키마) {#sample-content-fragment-models-schemas}
 
-샘플 쿼리의 경우 다음 콘텐츠 모델 및 해당 상호 관계를 사용합니다(참조 ->):
+샘플 쿼리의 경우 다음 콘텐츠 모델 및 해당 상호 관계를 사용합니다(참조 ->).
 
 * [회사](#model-company)
 -> [사람](#model-person)

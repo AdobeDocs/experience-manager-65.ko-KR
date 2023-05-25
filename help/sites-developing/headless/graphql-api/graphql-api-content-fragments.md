@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달을 위해 AEM(Adobe Experience Manager)의 콘텐츠 조각을 AEM GraphQL API와 함께 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: cf78742614fd2d35f59905895dfacb83190140cd
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
-source-wordcount: '3250'
-ht-degree: 89%
+source-wordcount: '4479'
+ht-degree: 56%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 89%
 
 Headless 콘텐츠 전달을 위해 AEM(Adobe Experience Manager)의 콘텐츠 조각을 AEM GraphQL API와 함께 사용하는 방법에 대해 알아봅니다.
 
-Content Fragments와 함께 사용되는 AEM GraphQL API는 표준 오픈 소스 GraphQL API를 기반으로 합니다.
+컨텐츠 조각과 함께 사용되는 AEM GraphQL API는 표준 오픈 소스 GraphQL API를 기반으로 합니다.
 
 AEM에서 GraphQL API를 사용하면 Headless CMS 구현에서 JavaScript 클라이언트에 콘텐츠 조각을 효율적으로 게재할 수 있습니다.
 
@@ -24,7 +24,7 @@ AEM에서 GraphQL API를 사용하면 Headless CMS 구현에서 JavaScript 클�
 
 >[!NOTE]
 >
->GraphQL은 현재 Adobe Experience Manager(AEM)의 두 가지 (개별) 시나리오에서 사용됩니다.
+>GraphQL은 Adobe Experience Manager(AEM)의 두 가지 (개별) 시나리오에서 사용됩니다.
 >
 >* [AEM Commerce는 GraphQL을 통해 상거래 플랫폼의 데이터를 사용합니다](/help/commerce/cif/integrating/magento.md).
 >* AEM 콘텐츠 조각은 AEM GraphQL API(표준 GraphQL 기반의 맞춤화된 구현)와 함께 작동하여 애플리케이션에서 사용할 구조화된 콘텐츠를 제공합니다.
@@ -38,23 +38,23 @@ GraphQL을 사용하는 고객은 AEM 콘텐츠 조각을 GraphQL 색인 패키�
 
 GraphQL은
 
-* “*...API용 쿼리 언어 및 기존 데이터로 이러한 쿼리를 수행하기 위한 런타임입니다. GraphQL은 API의 데이터에 대한 완전하고 이해하기 쉬운 설명을 제공하고, 클라이언트가 필요로 하는 것을 정확히 요청할 수 있는 권한을 주고, 시간이 지남에 따라 API를 더 쉽게 발전시킬 수 있으며, 강력한 개발자 도구를 지원합니다.*”.
+* “*...API용 쿼리 언어 및 기존 데이터로 이러한 쿼리를 수행하기 위한 런타임입니다. GraphQL은 API의 데이터에 대한 완전하고 이해하기 쉬운 설명을 제공합니다. 이를 통해 고객은 필요한 것을 정확히 요청할 수 있고 더 이상 요구 사항이 없으며 시간이 지남에 따라 API를 더 쉽게 발전시킬 수 있으며 강력한 개발자 도구를 지원합니다.*&quot;.
 
    [GraphQL.org](https://graphql.org)를 참조하십시오.
 
-* “*...유연한 API 계층을 위한 오픈 사양입니다. 기존 백엔드에 GraphQL을 추가하여 그 어느 때보다 빠르게 제품을 빌드할 수 있습니다.*”
+* “*...유연한 API 계층을 위한 오픈 사양입니다. 기존 백엔드에 GraphQL을 추가하여 그 어느 때보다 빠르게 제품을 구축할 수 있습니다....*&quot;.
 
-   [GraphQL 살펴보기](https://www.graphql.com)를 참조하십시오.
+   [GraphQL 살펴보기](https://graphql.com/)를 참조하십시오.
 
-* *“...2015년에 오픈 소스로 공개되기 전에 2012년 Facebook에서 내부적으로 개발한 데이터 쿼리 언어 및 사양입니다. 개발자 생산성을 높이고 전송되는 데이터 양을 최소화할 목적으로 REST 기반 아키텍처에 대한 대안을 제공합니다. GraphQL은 규모에 관계없이 수백 개의 조직에서 프로덕션에 사용됩니다.”*
+* *&quot;...2015년에 오픈 소스로 공개되기 전에 2012년 Facebook에서 내부적으로 개발한 데이터 쿼리 언어 및 사양입니다. 개발자 생산성을 높이고 전송되는 데이터 양을 최소화할 목적으로 REST 기반 아키텍처에 대한 대안을 제공합니다. GraphQL은 규모에 관계없이 수백 개의 조직에서 프로덕션에 사용됩니다.”*
 
-   [GraphQL Foundation](https://foundation.graphql.org/)을 참조하십시오.
+   [GraphQL Foundation](https://graphql.org/foundation)을 참조하십시오.
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-GraphQL API에 대한 추가 정보는 기타 여러 리소스 중에서도 특히 다음 섹션을 참조하십시오.
+GraphQL API에 대한 자세한 내용은 다음 섹션(기타 여러 리소스)을 참조하십시오.
 
 * [graphql.org](https://graphql.org):
 
@@ -64,17 +64,14 @@ GraphQL API에 대한 추가 정보는 기타 여러 리소스 중에서도 특�
 
 * [graphql.com](https://graphql.com):
 
-   * [안내서](https://www.graphql.com/guides/)
+   * [튜토리얼](https://graphql.com/tutorials/)
 
-   * [튜토리얼](https://www.graphql.com/tutorials/)
 
-   * [사례 연구](https://www.graphql.com/case-studies/)
-
-AEM용 GraphQL 구현은 표준 GraphQL Java 라이브러리를 기반으로 합니다. 다음을 참조하십시오.
+GraphQL for AEM 구현은 표준 GraphQL Java™ 라이브러리를 기반으로 합니다. 다음을 참조하십시오.
 
 * [graphQL.org - Java](https://graphql.org/code/#java)
 
-* [GitHub의 GraphQL Java](https://github.com/graphql-java)
+* [GraphQL Java™ at GitHub](https://github.com/graphql-java)
 
 ### GraphQL 용어 {#graphql-terminology}
 
@@ -104,7 +101,7 @@ GraphQL을 사용하여 다음 중 하나를 반환하는 쿼리를 수행할 �
 
 * **[항목 목록](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM은 쿼리(두 유형 모두)를 Dispatcher 및 CDN에서 [](/help/sites-developing/headless/graphql-api/persisted-queries.md)캐시할 수 있는 지속 쿼리로 변환하는 기능을 제공합니다.
+AEM은 쿼리(두 유형 모두)를 [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md) Dispatcher 및 CDN에 의해 캐시됩니다.
 
 ### GraphQL 쿼리 모범 사례(Dispatcher 및 CDN) {#graphql-query-best-practices}
 
@@ -120,7 +117,7 @@ AEM은 쿼리(두 유형 모두)를 Dispatcher 및 CDN에서 [](/help/sites-deve
 
 POST 요청을 사용하는 GraphQL 쿼리는 캐시되지 않으므로 권장되지 않습니다. 따라서 기본 인스턴스에서는 Dispatcher가 이러한 쿼리를 차단하도록 구성됩니다.
 
-GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 사용하면 피할 수 있는 제한(예: URL 길이)에 도달할 수 있습니다.
+GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 사용하여 피할 수 있는 제한(예: URL 길이)에 도달할 수 있습니다.
 
 >[!NOTE]
 >
@@ -132,9 +129,9 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 
 >[!NOTE]
 >
->GraphiQL은 AEM의 모든 환경에 포함되어 있지만 엔드포인트를 구성할 때만 액세스/볼 수 있습니다.
+>GraphiQL은 AEM의 모든 환경에 포함되어 있지만 끝점을 구성할 때만 액세스/볼 수 있습니다.
 >
->이전 릴리스에서는 GraphiQL IDE를 설치하려면 패키지가 필요했습니다. 이를 설치했다면 이제 제거할 수 있습니다.
+>이전 릴리스에서는 GraphiQL IDE를 설치하려면 패키지가 필요했습니다. 이 패키지를 설치한 경우 이제 제거할 수 있습니다.
 
 이 인터페이스를 사용하면 쿼리를 직접 입력하고 테스트할 수 있습니다.
 
@@ -142,13 +139,13 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 
 * `http://localhost:4502/content/graphiql.html`
 
-기록 및 온라인 설명서와 함께 구문 강조, 자동 완성, 자동 제안과 같은 기능을 제공합니다.
+기록 및 온라인 설명서와 함께 구문 강조, 자동 완성, 자동 제안과 같은 기능을 제공합니다:
 
 ![GraphiQL 인터페이스](assets/cfm-graphiql-interface.png "GraphiQL 인터페이스")
 
 >[!NOTE]
 >
->자세한 내용은 을 참조하십시오. [GraphiQL IDE 사용](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
+>다음을 참조하십시오 [GraphiQL IDE 사용](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
 
 ## Author 및 Publish 환경의 사용 사례 {#use-cases-author-publish-environments}
 
@@ -159,22 +156,22 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 
 * Author 환경, 다음과 같은 작업을 수행하는 데 사용됨:
    * “콘텐츠 관리 목적”용 쿼리 데이터:
-      * AEM의 GraphQL은 현재 읽기 전용 API입니다.
+      * AEM의 GraphQL은 읽기 전용 API입니다.
       * REST API는 CR(u)D 작업에 사용할 수 있습니다.
 
 ## 권한 {#permission}
 
-권한은 Assets에 액세스하는 데 필요한 권한입니다.
+에셋에 액세스하려면 권한이 필요합니다.
 
-GraphQL 쿼리는 기본 요청의 AEM 사용자 권한으로 실행됩니다. 사용자에게 일부 조각(에셋으로 저장됨)에 대한 읽기 액세스 권한이 없는 경우 이들 조각은 결과 세트의 일부가 되지 않습니다.
+GraphQL 쿼리는 기본 요청의 AEM 사용자 권한으로 실행됩니다. 사용자에게 일부 조각(자산으로 저장됨)에 대한 읽기 액세스 권한이 없는 경우 결과 세트의 일부가 되지 않습니다.
 
-또한 GraphQL 쿼리를 실행할 수 있으려면 사용자가 GraphQL 엔드포인트에 대한 액세스 권한을 보유해야 합니다.
+또한 GraphQL 쿼리를 실행할 수 있으려면 사용자에게 GraphQL 엔드포인트에 대한 액세스 권한이 있어야 합니다.
 
 ## 스키마 생성 {#schema-generation}
 
-GraphQL은 강력한 형식의 API입니다. 즉, 데이터는 유형별로 명확하게 구조화되고 구성되어야 합니다.
+GraphQL은 형식화된 API입니다. 즉, 데이터를 형식별로 명확하게 구조화하고 구성해야 합니다.
 
-GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해 강력한 API를 만드는 방법에 대한 일련의 지침을 제공합니다. 이렇게 하려면 클라이언트가 쿼리에 필요한 모든 유형을 포함하는 [스키마](#schema-generation)를 가져와야 합니다.
+GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해 강력한 API를 만드는 방법에 대한 일련의 지침을 제공합니다. 이 지침을 완료하려면 클라이언트가 [스키마](#schema-generation)쿼리에 필요한 모든 유형을 포함합니다.
 
 콘텐츠 조각의 경우 GraphQL 스키마(구조 및 유형)는 **활성화됨** 상태인 [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) 및 해당 데이터 형식을 기반으로 합니다.
 
@@ -182,9 +179,9 @@ GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해
 >
 >모든 GraphQL 스키마(**활성화됨**&#x200B;상태인 콘텐츠 조각 모델에서 파생)는 GraphQL 엔드포인트를 통해 읽을 수 있습니다.
 >
->즉, 이런 식으로 유출될 수 있기 때문에 민감한 데이터가 없는지 확인해야 합니다. 예를 들어 모델 정의에서 필드 이름으로 나타날 수 있는 정보가 여기에 포함됩니다.
+>이 기능은 이러한 방식으로 유출될 수 있으므로 민감한 데이터가 없는지 확인해야 함을 의미합니다. 예를 들어 모델 정의에서 필드 이름으로 존재할 수 있는 정보가 포함됩니다.
 
-예를 들어 사용자가 `Article`이라는 콘텐츠 조각 모델을 만든 경우 AEM은 `ArticleModel` 유형의 개체인 `article`을 생성합니다. 이 유형 내의 필드는 모델에서 정의된 필드 및 데이터 형식에 해당합니다.
+예를 들어 사용자가 `Article`이라는 콘텐츠 조각 모델을 만든 경우 AEM은 `ArticleModel`이라는 GraphQL 유형을 생성합니다. 이 유형 내의 필드는 모델에서 정의된 필드 및 데이터 유형에 해당합니다. 또한 `articleByPath` 또는 `articleList`와 같이 이 유형에서 작동하는 쿼리에 대한 일부 진입점을 생성합니다.
 
 1. 콘텐츠 조각 모델:
 
@@ -193,15 +190,15 @@ GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해
 1. 해당 GraphQL 스키마(GraphiQL 자동 문서에서 출력):
    ![콘텐츠 조각 모델 기반 GraphQL 스키마](assets/cfm-graphqlapi-02.png "콘텐츠 조각 모델 기반 GraphQL 스키마")
 
-   이는 생성된 유형 `ArticleModel`에 여러 [필드](#fields)가 포함되어 있음을 보여 줍니다.
+   이 이미지는 생성된 유형을 보여 줍니다 `ArticleModel` 여러 개 포함 [필드](#fields).
 
-   * 그 중 `author`, `main`, `referencearticle` 세 가지 필드는 사용자가 제어했습니다.
+   * 그 중 세 가지 필드는 사용자가 제어했습니다. `author`, `main`, 및 `referencearticle`.
 
-   * 다른 필드는 AEM에 의해 자동으로 추가되었으며 특정 콘텐츠 조각에 대한 정보를 제공하는 유용한 방법을 표시합니다. 이 예에서는 `_path`, `_metadata`, `_variations`입니다. 이 [도우미 필드](#helper-fields)는 사용자가 정의한 것과 자동 생성된 것을 구별하기 위해 앞에 `_` 로 표시됩니다.
+   * 다른 필드는 AEM에 의해 자동으로 추가되었으며 특정 콘텐츠 조각에 대한 정보를 제공하는 유용한 방법을 표시합니다. 이 예에서는 ( [도우미 필드](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. 사용자가 Article 모델을 기반으로 콘텐츠 조각을 만든 경우 GraphQL을 통해 정보를 얻을 수 있습니다. 예를 들어 [샘플 쿼리](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries)([GraphQL과 함께 사용하기 위한 샘플 콘텐츠 조각 구조](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql) 기반)를 참조하십시오.
 
-AEM용 GraphQL에서 스키마는 유연합니다. 즉, 콘텐츠 조각 모델이 만들어지거나 업데이트되거나 삭제될 때마다 자동 생성됩니다. 콘텐츠 조각 모델을 업데이트할 때도 데이터 스키마 캐시가 새로 고쳐집니다.
+AEM용 GraphQL에서 스키마는 유연합니다. 이러한 유연성은 콘텐츠 조각 모델이 생성, 업데이트 또는 삭제될 때마다 자동으로 생성됨을 의미합니다. 콘텐츠 조각 모델을 업데이트할 때도 데이터 스키마 캐시가 새로 고쳐집니다.
 
 Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 백그라운드에서 수신 대기합니다. 업데이트가 감지되면 스키마의 해당 부분만 다시 생성됩니다. 이 최적화는 시간을 절약하고 안정성을 제공합니다.
 
@@ -209,19 +206,19 @@ Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 �
 
 1. `Content-Fragment-Model-1` 및 `Content-Fragment-Model-2`가 포함된 패키지를 설치하는 경우:
 
-   1. `Model-1` 및 `Model-2` 에 대한 GraphQL 유형이 생성됩니다.
+   1. GraphQL 유형 `Model-1` 및 `Model-2` 생성됩니다.
 
 1. 그리고 `Content-Fragment-Model-2`를 수정하는 경우:
 
-   1. `Model-2` GraphQL 유형만 업데이트됩니다.
+   1. 만 `Model-2` GraphQL 유형이 업데이트됩니다.
 
-   1. `Model-1`은 그대로 유지됩니다.
+   1. 반면 `Model-1` 그대로 유지됩니다.
 
 >[!NOTE]
 >
->REST API 또는 다른 방법을 통해 콘텐츠 조각 모델에 대한 대량 업데이트를 수행하려는 경우에 주의해야 합니다.
+>REST api 또는 다른 방법을 통해 콘텐츠 조각 모델에 대한 대량 업데이트를 수행하려는 경우에만 이 세부 사항을 참고하십시오.
 
-스키마는 GraphQL 쿼리와 동일한 엔드포인트를 통해 제공되며 스키마가 확장자 `GQLschema`로 호출되는 것을 처리하는 클라이언트가 있습니다. 예를 들어 `/content/cq:graphql/global/endpoint.GQLschema`에 대해 간단한 `GET` 요청을 수행하면 콘텐츠 유형이 있는 스키마의 출력이 됩니다. `text/x-graphql-schema;charset=iso-8859-1`.
+스키마는 GraphQL 쿼리와 동일한 엔드포인트를 통해 제공되며 스키마가 확장자 `GQLschema`로 호출되는 것을 처리하는 클라이언트가 있습니다. 예를 들어 간단한 `GET` 요청 날짜: `/content/cq:graphql/global/endpoint.GQLschema` 콘텐츠 유형이 있는 스키마의 출력이 됩니다. `text/x-graphql-schema;charset=iso-8859-1`.
 
 ### 스키마 생성 - 게시되지 않은 모델 {#schema-generation-unpublished-models}
 
@@ -229,9 +226,9 @@ Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 �
 
 >[!NOTE]
 >
->AEM UI는 이러한 일이 발생하지 않도록 방지하지만 게시가 프로그래밍 방식으로 또는 콘텐츠 패키지를 사용하여 수행되는 경우 발생할 수 있습니다.
+>AEM 사용자 인터페이스는 이러한 문제가 발생하지 않도록 방지하지만 게시가 프로그래밍 방식으로 또는 콘텐츠 패키지를 사용하여 수행되는 경우에는 발생할 수 있습니다.
 
-이런 일이 발생하면 AEM은 상위 콘텐츠 조각 모델에 대해 *불완전* 스키마를 생성합니다. 즉, 게시되지 않은 모델에 종속된 조각 참조가 스키마에서 제거됩니다.
+이러한 경우 AEM은 *미완료* 상위 콘텐츠 조각 모델에 대한 스키마. 즉, 게시되지 않은 모델에 따라 달라지는 조각 참조가 스키마에서 제거됩니다.
 
 ## 필드 {#fields}
 
@@ -241,11 +238,11 @@ Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 �
 
    다양한 [데이터 유형](#data-types)은 콘텐츠 조각 모델을 구성하는 방법을 기반으로 필드를 만드는 데 사용됩니다. 필드 이름은 **데이터 형식**&#x200B;의 **속성 이름** 필드에서 가져옵니다.
 
-   * 사용자가 특정 데이터 형식을 구성할 수 있기 때문에(예를 들어 한 줄 텍스트 또는 다중 필드로) **Render As** 속성도 고려해야 합니다.
+   * 또한 **렌더링 형식** 사용자가 특정 데이터 유형을 구성할 때 고려할 설정. 예를 들어 를 선택하여 여러 개의 한 줄 텍스트를 포함하도록 한 줄 텍스트 필드를 구성할 수 있습니다 `multifield` 드롭다운에서 을 클릭합니다.
 
-* AEM용 GraphQL은 또한 여러 [도우미 필드](#helper-fields)를 생성합니다.
+* GraphQL for AEM에서도 여러 항목을 생성합니다 [도우미 필드](#helper-fields).
 
-   도우미 필드는 콘텐츠 조각을 식별하거나 콘텐츠 조각에 대한 자세한 정보를 얻는 데 사용됩니다.
+   이러한 필드는 콘텐츠 조각을 식별하거나 콘텐츠 조각에 대한 자세한 정보를 얻는 데 사용됩니다.
 
 ### 데이터 유형 {#data-types}
 
@@ -253,7 +250,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 | 콘텐츠 조각 모델 - 데이터 형식 | GraphQL 유형 | 설명 |
 |--- |--- |--- |
-| 한 줄 텍스트 | `String`, `[String]` |  작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됨 |
+| 한 줄 텍스트 | `String`, `[String]` |  작성자 이름 및 위치 이름과 같은 간단한 문자열에 사용됩니다. |
 | 여러 줄 텍스트 | `String` |  기사의 본문과 같은 텍스트 출력에 사용됨 |
 | 숫자 |  `Float`, `[Float]` | 부동 소수점 숫자 및 일반 숫자를 표시하는 데 사용됨 |
 | 부울 |  `Boolean` |  확인란을 표시하는 데 사용됨 → 간단한 참/거짓 진술 |
@@ -267,18 +264,20 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 ### 도우미 필드 {#helper-fields}
 
-사용자 생성 필드의 데이터 형식 외에도 AEM용 GraphQL은 콘텐츠 조각 식별을 돕거나 콘텐츠 조각에 대한 추가 정보를 제공하기 위해 많은 *도우미* 필드도 생성합니다.
+사용자 생성 필드의 데이터 형식 외에도 GraphQL for AEM에서 여러 데이터 형식을 생성합니다 *도우미* 콘텐츠 조각을 식별하는 데 도움이 되거나 콘텐츠 조각에 대한 추가 정보를 제공하는 필드입니다.
+
+이 [도우미 필드](#helper-fields)는 사용자가 정의한 것과 자동 생성된 것을 구별하기 위해 앞에 `_`로 표시됩니다.
 
 #### 경로 {#path}
 
-경로 필드는 GraphQL에서 식별자로 사용됩니다. AEM 저장소 내 콘텐츠 조각 에셋의 경로를 나타냅니다. 다음과 같은 이유로 콘텐츠 조각의 식별자로 선택되었습니다.
+경로 필드는 AEM GraphQL에서 식별자로 사용됩니다. AEM 저장소 내 콘텐츠 조각 에셋의 경로를 나타냅니다. 이 경로는 다음과 같은 이유로 콘텐츠 조각의 식별자로 선택됩니다.
 
 * AEM 내에서 고유합니다.
 * 쉽게 가져올 수 있습니다.
 
-다음 코드는 콘텐츠 조각 모델 `Person`을 기반으로 생성된 모든 콘텐츠 조각의 경로를 표시합니다.
+다음 코드는 콘텐츠 조각 모델을 기반으로 생성된 모든 콘텐츠 조각의 경로를 표시합니다 `Person`.
 
-```xml
+```graphql
 {
   personList {
     items {
@@ -290,9 +289,9 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 특정 유형의 단일 콘텐츠 조각을 검색하려면 먼저 해당 경로도 결정해야 합니다. 예:
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/path/to/fragment/john-doe") {
     item {
       _path
       firstName
@@ -306,9 +305,14 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 #### 메타데이터 {#metadata}
 
-AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합니다. 메타데이터는 콘텐츠 조각을 설명하는 정보이며, 예를 들어 콘텐츠 조각의 제목, 썸네일 경로, 콘텐츠 조각에 대한 설명, 생성 날짜 등이 있습니다.
+AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합니다. 메타데이터는 다음과 같이 컨텐츠 조각을 설명하는 정보입니다.
 
-메타데이터는 스키마 편집기를 통해 생성되기 때문에 특정한 구조를 가지고 있지 않으므로 콘텐츠 조각의 메타데이터를 노출하기 위해 `TypedMetaData` GraphQL 유형이 구현되었습니다. `TypedMetaData`은 다음 스칼라 유형으로 그룹화된 정보를 노출합니다.
+* 콘텐츠 조각의 제목
+* 썸네일 경로
+* 콘텐츠 조각에 대한 설명
+* 그리고 다른 날짜 중에서도 만들어진 날짜가 있습니다.
+
+메타데이터는 스키마 편집기를 통해 생성되기 때문에 특정한 구조를 가지고 있지 않으므로 콘텐츠 조각의 메타데이터를 노출하기 위해 `TypedMetaData` GraphQL 유형이 구현되었습니다. 다음 `TypedMetaData` 은 다음 스칼라 유형으로 그룹화된 정보를 노출합니다.
 
 | 필드 |
 |--- |
@@ -325,11 +329,11 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 각 스칼라 유형은 단일 이름-값 쌍 또는 이름-값 쌍의 배열을 표시하며, 여기서 해당 쌍의 값은 그룹화된 유형입니다.
 
-예를 들어 콘텐츠 조각의 제목을 검색하려는 경우 이 속성이 문자열 속성이라는 것을 알고 있으므로 모든 문자열 메타데이터를 쿼리합니다.
+예를 들어 콘텐츠 조각의 제목을 검색하려는 경우 이 속성은 문자열 속성이므로 모든 문자열 메타데이터를 쿼리합니다.
 
 메타데이터를 쿼리하려면:
 
-```xml
+```graphql
 {
   personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
     item {
@@ -352,7 +356,7 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 >**일반 메타데이터와 배열 메타데이터의 차이점**
 >`StringMetadata` 및 `StringArrayMetadata`는 둘 다 검색 방법을 참조하는 것이 아니라 저장소에 저장된 내용을 참조합니다.
 >
->따라서 예를 들어 `stringMetadata` 필드를 호출하면 저장소에 `String`으로 저장된 모든 메타데이터의 배열을 수신하고 `stringArrayMetadata`를 호출하면 저장소에 `String[]`으로 저장된 모든 메타데이터의 배열을 수신하게 됩니다.
+>예를 들어 `stringMetadata` 필드에서는 저장소에으로 저장된 모든 메타데이터의 배열을 수신합니다. `String`. 그리고 전화하면 `stringArrayMetadata`: 저장소에 저장된 모든 메타데이터의 배열을 로서 수신합니다. `String[]`.
 
 [메타데이터에 대한 샘플 쿼리 - GB라는 제목의 상에 대한 메타데이터 나열](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)을 참조하십시오.
 
@@ -360,7 +364,7 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 `_variations` 필드는 콘텐츠 조각에 있는 변형 쿼리를 단순화하기 위해 구현되었습니다. 예:
 
-```xml
+```graphql
 {
   personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
     item {
@@ -370,11 +374,15 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 }
 ```
 
+>[!NOTE]
+>
+>다음 `_variations` 필드에 다음이 포함되지 않음 `master` 기술적 측면에서 원본 데이터로서의 변형(참조: *기본* UI에서)는 명시적인 변형으로 간주되지 않습니다.
+
 [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)를 참조하십시오.
 
 >[!NOTE]
 >
->지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
+>지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 원본 데이터(마스터 변형이라고도 함)는 (대체) 기본값으로 반환됩니다.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -382,13 +390,13 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 ## GraphQL 변수 {#graphql-variables}
 
-GraphQL을 사용하면 쿼리에 변수를 배치할 수 있습니다. 보다 자세한 정보는 [변수에 대한 GraphQL 설명서](https://graphql.org/learn/queries/#variables)를 참조하십시오.
+GraphQL을 사용하면 쿼리에 변수를 배치할 수 있습니다. 자세한 내용은 [변수에 대한 GraphQL 설명서](https://graphql.org/learn/queries/#variables).
 
 예를 들어 특정 변형이 있는 `Article` 유형의 모든 콘텐츠 조각을 가져오려면 GraphiQL에서 `variation` 변수를 지정할 수 있습니다.
 
 ![GraphQL 변수](assets/cfm-graphqlapi-03.png "GraphQL 변수")
 
-```xml
+```graphql
 ### query
 query GetArticlesByVariation($variation: String!) {
     articleList(variation: $variation) {
@@ -414,7 +422,7 @@ GraphQL에서는 GraphQL 지시문이라고 하는 변수를 기반으로 쿼리
 
 ![GraphQL 지시문](assets/cfm-graphqlapi-04.png "GraphQL 지시문")
 
-```xml
+```graphql
 ### query
 query GetAdventureByType($includePrice: Boolean!) {
   adventureList {
@@ -437,30 +445,89 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 필터링은 논리 연산자 및 표현식을 기반으로 하는 구문을 사용합니다.
 
-예를 들어 다음(기본) 쿼리는 이름이 `Jobs` 또는 `Smith`인 모든 사람을 필터링합니다.
+가장 세밀한 부분은 특정 필드의 내용에 적용할 수 있는 단일 표현식입니다. 필드의 내용을 주어진 상수 값과 비교합니다.
 
-```xml
-query {
-  personList(filter: {
-    name: {
+예를 들어 다음 표현식은 필드의 내용을 값과 비교합니다 `some text`, 콘텐츠가 값과 같은 경우 성공합니다. 그렇지 않으면 표현식이 실패합니다.
+
+```graphql
+{
+  value: "some text"
+  _op: EQUALS
+}
+```
+
+연산자를 사용하여 필드를 특정 값과 비교할 수 있습니다.
+
+| 연산자 | 유형 | 다음은 표현식이 성공하는 경우입니다. |
+|--- |--- |--- |
+| `EQUALS` | `String`, `ID`, `Boolean` | ... 값이 필드의 내용과 동일한 경우 |
+| `EQUALS_NOT` | `String`, `ID` | ... 값이 필드의 내용과 정확히 동일하지 *않는* 경우 |
+| `CONTAINS` | `String` | ... 필드의 내용에 값( )이 포함되는 경우`{ value: "mas", _op: CONTAINS }` 일치 `Christmas`, `Xmas`, `master`, ...) |
+| `CONTAINS_NOT` | `String` | ... 필드의 내용에 값이 포함되지 *않는* 경우 |
+| `STARTS_WITH` | `ID` | ... ID가 특정 값으로 시작하는 경우 (`{ value: "/content/dam/", _op: STARTS_WITH` 일치 `/content/dam/path/to/fragment`, 그러나 아님 `/namespace/content/dam/something` |
+| `EQUAL` | `Int`, `Float` | ... 값이 필드의 내용과 동일한 경우 |
+| `UNEQUAL` | `Int`, `Float` | ... 값이 필드의 내용과 정확히 동일하지 *않는* 경우 |
+| `GREATER` | `Int`, `Float` | ... 필드의 내용이 값보다 큰 경우 |
+| `GREATER_EQUAL` | `Int`, `Float` | ... 필드의 내용이 값보다 크거나 같은 경우 |
+| `LOWER` | `Int`, `Float` | ... 필드의 내용이 값보다 작은 경우 |
+| `LOWER_EQUAL` | `Int`, `Float` | ... 필드의 내용이 값보다 작거나 같은 경우 |
+| `AT` | `Calendar`, `Date`, `Time` | ... 필드의 내용이 값과 동일한 경우 (시간대 설정 포함) |
+| `NOT_AT` | `Calendar`, `Date`, `Time` | ... 필드의 내용이 값과 정확히 동일하지 *않는* 경우 |
+| `BEFORE` | `Calendar`, `Date`, `Time` | ... 값으로 표시되는 시점이 필드의 내용으로 표시되는 시점 이전인 경우 |
+| `AT_OR_BEFORE` | `Calendar`, `Date`, `Time` | ... 값으로 표시되는 시점이 필드의 내용으로 표시되는 시점 이전이거나 동일한 경우 |
+| `AFTER` | `Calendar`, `Date`, `Time` | ... 값으로 표시되는 시점이 필드의 내용으로 표시되는 시점 이후인 경우 |
+| `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... 값으로 표시되는 시점이 필드의 내용으로 표시되는 시점 이후거나 동일한 경우 |
+
+일부 유형을 사용하면 표현식 평가 방법을 수정하는 추가 옵션을 지정할 수도 있습니다.
+
+| 옵션 | 유형 | 설명 |
+|--- |--- |--- |
+| `_ignoreCase` | `String` | 문자열의 대소문자를 무시합니다(예: 값). `time` 일치 `TIME`, `time`, `tImE`, ... |
+| `_sensitiveness` | `Float` | `float` 값의 내부 표현으로 인한 기술적 제한을 해결하기 위해 `float` 값의 특정 여백이 동일하게 간주되도록 합니다. 이 옵션을 사용하면 성능에 부정적인 영향을 미칠 수 있으므로 피해야 합니다. |
+
+표현식은 논리 연산자(`_logOp`)를 사용하여 세트로 결합할 수 있습니다.
+
+* `OR` - 하나 이상의 표현식이 성공하면 표현식 세트가 성공합니다.
+* `AND` - 모든 표현식이 성공하면 표현식 세트가 성공합니다(기본값).
+
+각 필드는 자체 표현식 세트로 필터링할 수 있습니다. 필터 인수에 언급된 모든 필드의 표현식 세트는 결국 자체 논리 연산자에 의해 결합됩니다.
+
+필터 정의(쿼리에 `filter` 인수로 전달됨)에는 다음이 포함됩니다.
+
+* 각 필드에 대한 하위 정의이며, 필드는 해당 이름을 통해 액세스할 수 있습니다. 예를 들어 `lastName` 필터 필드 `lastName` 데이터(필드) 유형의 필드
+* 각 하위 정의에는 `_expressions` 배열, 표현식 세트 제공 및 `_logOp` 표현식을 결합해야 하는 논리 연산자를 정의하는 필드
+* 각 표현식은 필드의 내용과 비교해야 하는 값(`value` 필드)과 연산자(`_operator` 필드)로 정의됩니다.
+
+다음을 생략할 수 있습니다. `_logOp` 항목을 와 결합하려면 `AND` 및 `_operator` 이 값은 기본값이므로 같은지 확인하려는 경우.
+
+다음 예는 `Provo`의 `lastName` 또는 `sjö`를 포함하는 모든 사람을 대소문자에 관계없이 필터링하는 전체 쿼리를 보여 줍니다.
+
+```graphql
+{
+  authorList(filter: {
+    lastname: {
       _logOp: OR
       _expressions: [
         {
-          value: "Jobs"
+          value: "sjö",
+          _operator: CONTAINS,
+          _ignoreCase: true
         },
         {
-          value: "Smith"
+          value: "Provo"
         }
       ]
     }
   }) {
     items {
-      name
+      lastName
       firstName
     }
   }
 }
 ```
+
+중첩된 필드를 필터링할 수도 있지만 성능 문제가 발생할 수 있으므로 권장되지 않습니다.
 
 더 많은 예는 다음을 참조하십시오.
 
@@ -472,18 +539,183 @@ query {
 
 * [WKND 프로젝트 기반 샘플 쿼리](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
+## 정렬 {#sorting}
+
+>[!NOTE]
+>
+>최상의 성능을 얻으려면 다음을 고려하십시오. [GraphQL 필터링에서 페이징 및 정렬을 위한 콘텐츠 조각 업데이트](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+
+이 기능을 사용하면 지정된 필드에 따라 쿼리 결과를 정렬할 수 있습니다.
+
+다음은 정렬 기준에 대한 설명입니다.
+
+* 필드 경로를 나타내는 쉼표로 구분된 값 목록입니다.
+   * 목록의 첫 번째 필드는 기본 정렬 순서를 정의합니다
+      * 두 번째 필드는 기본 정렬 기준의 두 값이 동일한 경우 사용됩니다
+      * 세 번째 필드는 처음 두 기준이 동일한 경우 사용됩니다.
+   * 점으로 구분된 표기법(예: field1.subfield.subfield 등)...
+* 선택적 정렬 방향
+   * (ASC(오름차순) 또는 DESC(내림차순))이 포함되며, 기본값 ASC가 적용됩니다.
+   * 방향은 필드별로 지정할 수 있습니다. 즉, 한 필드는 오름차순으로 정렬하고 다른 필드는 내림차순으로 정렬할 수 있습니다(name, firstName DESC)
+
+예:
+
+```graphql
+query {
+  authorList(sort: "lastName, firstName") {
+    items {
+      firstName
+      lastName
+    }
+  }
+}
+```
+
+또한
+
+```graphql
+{
+  authorList(sort: "lastName DESC, firstName DESC") {
+    items {
+        lastName
+        firstName
+    }
+  }
+}
+```
+
+`nestedFragmentname.fieldname` 형식을 사용하여 중첩된 조각 내의 필드를 정렬할 수도 있습니다.
+
+>[!NOTE]
+>
+>이 형식은 성능에 부정적인 영향을 줄 수 있습니다.
+
+예:
+
+```graphql
+query {
+  articleList(sort: "authorFragment.lastName")  {
+    items {
+      title
+      authorFragment {
+        firstName
+        lastName
+        birthDay
+      }
+      slug
+    }
+  }
+}
+```
+
+## 페이징 {#paging}
+
+>[!NOTE]
+>
+>최상의 성능을 얻으려면 다음을 고려하십시오. [GraphQL 필터링에서 페이징 및 정렬을 위한 콘텐츠 조각 업데이트](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+
+이 기능을 사용하면 목록을 반환하는 쿼리 유형에 대해 페이징을 수행할 수 있습니다. 제공되는 메서드는 두 가지가 있습니다.
+
+* `List` 쿼리의 `offset` 및 `limit`
+* `Paginated` 쿼리의 `first` 및 `after`
+
+### 목록 쿼리 - 오프셋 및 제한 {#list-offset-limit}
+
+`...List`쿼리에서 `offset` 및 `limit`을 사용하여 결과의 특정 하위 집합을 반환할 수 있습니다.
+
+* `offset`: 반환할 첫 번째 데이터 세트를 지정합니다.
+* `limit`: 반환할 최대 데이터 세트 수를 지정합니다.
+
+예를 들어 *전체* 결과 목록의 다섯 번째 문서부터 시작하여 최대 5개의 문서를 포함하는 결과 페이지를 출력하는 경우
+
+```graphql
+query {
+   articleList(offset: 5, limit: 5) {
+    items {
+      authorFragment {
+        lastName
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
+
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
+
+>[!NOTE]
+>
+>* 페이징이 동일한 결과 세트의 서로 다른 페이지를 요청하는 여러 쿼리에서 올바르게 작동하도록 하려면 안정적인 정렬 순서가 필요합니다. 기본적으로 결과 세트의 각 항목에 대한 저장소 경로를 사용하여 순서가 항상 동일하도록 합니다. 다른 정렬 순서를 사용하고 해당 정렬을 JCR 쿼리 수준에서 수행할 수 없는 경우 성능에 부정적인 영향을 줍니다. 그 이유는 페이지가 결정되기 전에 전체 결과 세트를 메모리에 로드해야 하기 때문입니다.
+>
+>* 오프셋이 높을수록 전체 JCR 쿼리 결과 세트에서 항목을 건너뛰는 데 더 많은 시간이 소요됩니다. 대용량 결과 세트에 대한 대체 솔루션은 페이지가 매겨진 쿼리를 `first` 및 `after` 메서드와 함께 사용하는 것입니다.
+
+
+### 페이지 매김된 쿼리 - 첫 번째 및 그 다음 페이지 {#paginated-first-after}
+
+`...Paginated` 쿼리 유형은 대부분의 `...List` 쿼리 유형 기능(필터링, 정렬)을 재사용하지만, `offset`/`limit` 인수를 사용하는 대신 [GraphQL 커서 연결 사양](https://relay.dev/graphql/connections.htm)에 정의된 대로 `first`/`after` 인수를 사용합니다. [GraphQL 소개](https://graphql.org/learn/pagination/#pagination-and-edges)에서 좀 더 친숙한 느낌의 소개를 찾을 수 있습니다.
+
+* `first`: 반환할 첫 번째 항목(`n`)입니다.
+기본값은 `50`입니다.
+최댓값은 `100`입니다.
+* `after`: 요청된 페이지의 시작을 결정하는 커서입니다. 커서가 나타내는 항목은 결과 세트에 포함되지 않습니다. 항목의 커서는 다음에 의해 결정됩니다. `cursor` 필드 `edges` 구조입니다.
+
+예를 들어 *전체* 결과 목록의 주어진 커서 항목부터 시작하여 최대 5개의 모험을 포함하는 결과 페이지를 출력하는 경우
+
+```graphql
+query {
+    adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
+        edges {
+          cursor
+          node {
+            title
+          }
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+    }
+}
+```
+
+<!-- When available link to BP -->
+<!-- Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. For more information, see the [Best Practices document](link). -->
+
+>[!NOTE]
+>
+>* 기본적으로 페이징은 결과의 순서가 항상 동일하도록 순서를 지정하는 조각을 나타내는 저장소 노드의 UUID를 사용합니다. `sort` 사용 시 고유한 정렬을 위해 UUID가 암묵적으로 사용됩니다. 정렬 키가 동일한 두 항목의 경우에도 마찬가지입니다.
+>
+>* 내부 기술적 제한으로 인해 중첩된 필드에 정렬 및 필터링을 적용하면 성능이 저하됩니다. 따라서 루트 수준에 저장된 필터/정렬 필드를 사용합니다. 페이지가 매겨진 대용량 결과 세트를 쿼리하려는 경우에도 이 방법이 권장됩니다.
+
+
 ## AEM용 GraphQL - 확장 요약 {#graphql-extensions}
 
-AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 따릅니다. AEM의 GraphQL 쿼리에 몇 가지 확장이 있습니다.
+AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 따릅니다. AEM이 있는 GraphQL 쿼리의 경우 몇 가지 확장이 있습니다.
 
 * 하나의 결과가 필요한 경우:
-   * 모델 이름을 사용하십시오. 예: 도시
+   * 모델 이름을 사용하십시오(예: 도시).
 
 * 결과 목록을 기대하는 경우:
    * 모델 이름에 `List`를 추가하십시오. 예: `cityList`
-   * [샘플 쿼리 - 모든 도시에 대한 모든 정보](#sample-all-information-all-cities)를 참조하십시오
+   * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)를 참조하십시오
 
-* 필터 `includeVariations` 다음에 포함됩니다. `List` 쿼리 유형.  쿼리 결과에서 콘텐츠 조각 변형을 검색하려면 `includeVariations` 필터를 다음으로 설정해야 함: `true`.
+   이후에 다음과 같은 작업을 수행할 수 있습니다.
+
+   * [결과 정렬](#sorting)
+
+      * `ASC`: 오름차순
+      * `DESC`: 내림차순
+   * 다음 중 하나를 사용하여 결과 페이지를 반환합니다.
+
+      * [오프셋 및 제한이 포함된 목록 쿼리](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#list-offset-limit)
+      * [첫 번째 및 그 다음 페이지가 포함된 페이지 매김된 쿼리](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#paginated-first-after)
+   * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)를 참조하십시오
+
+
+
+* 필터 `includeVariations` 다음에 포함됩니다. `List` 쿼리 유형. 쿼리 결과에서 콘텐츠 조각 변형을 검색하려면 `includeVariations` 필터를 다음으로 설정해야 함: `true`.
 
    >[!CAUTION]
    >필터 `includeVariations` 시스템 생성 필드와 함께 사용할 수 없습니다. `_variation`.
@@ -521,7 +753,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
          >시스템 생성 필드 `_variation` 은(는) 필터와 함께 사용할 수 없습니다 `includeVariations`.
 
          * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)를 참조하십시오
-      * `_tags` : 태그가 포함된 콘텐츠 조각 또는 변형의 ID를 표시합니다. 이 배열은 `cq:tags` 식별자.
+      * `_tags` : 태그가 포함된 콘텐츠 조각 또는 변형의 ID를 표시합니다. 이 목록은 의 배열입니다. `cq:tags` 식별자.
 
          * 다음을 참조하십시오 [샘플 쿼리 - 구/군/시 구분으로 태그가 지정된 모든 구의 이름](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
          * 다음을 참조하십시오 [특정 태그가 첨부된 특정 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
@@ -562,9 +794,9 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
 >[!NOTE]
 >
->AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 [CORS(원본 간 리소스 공유) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko-KR#understand-cross-origin-resource-sharing-(cors))를 참조하십시오.
+>AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 를 참조하십시오. [CORS(원본 간 리소스 공유) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko-KR#understand-cross-origin-resource-sharing-(cors)).
 
-GraphQL 엔드포인트에 액세스하려면 고객 Git 저장소에 CORS 정책을 구성해야 합니다. 원하는 끝점에 대한 적절한 OSGi CORS 구성 파일 추가를 통해 수행됩니다. 
+GraphQL 엔드포인트에 액세스하려면 고객 Git 저장소에서 CORS 정책을 구성합니다. 이 구성은 하나 이상의 원하는 끝점에 대한 적절한 OSGi CORS 구성 파일을 추가하여 수행됩니다.
 
 이 구성은 신뢰할 수 있는 웹 사이트 출처를 지정해야 합니다. `alloworigin` 또는 `alloworiginregexp` 액세스 권한을 부여해야 합니다.
 
@@ -607,9 +839,9 @@ GraphQL 엔드포인트에 액세스하려면 고객 Git 저장소에 CORS 정�
 
 ### 레퍼러 필터 {#referrer-filter}
 
-CORS 구성 외에도 타사 호스트의 액세스를 허용하도록 레퍼러 필터를 구성해야 합니다.
+CORS 구성 외에도 서드파티 호스트에서 액세스를 허용하도록 레퍼러 필터를 구성해야 합니다.
 
-이 작업은 다음과 같은 적절한 OSGi 레퍼러 필터 구성 파일을 추가하여 수행합니다.
+이 필터는 다음과 같은 적절한 OSGi 레퍼러 필터 구성 파일을 추가하여 수행됩니다.
 
 * 신뢰할 수 있는 웹 사이트 호스트 이름(`allow.hosts` 또는 `allow.hosts.regexp`)을 지정합니다.
 * 이 호스트 이름에 대한 액세스 권한을 부여합니다.
@@ -643,15 +875,15 @@ CORS 구성 외에도 타사 호스트의 액세스를 허용하도록 레퍼러
 >다음에 대한 책임은 고객에게 있습니다.
 >
 >* 신뢰할 수 있는 도메인에만 액세스 권한을 부여하는 것
->* 민감한 정보가 노출되지 않도록 하는 것
->* 와일드카드 [*] 구문을 사용하지 않는 것. 사용하면 GraphQL 엔드포인트에 대한 인증된 액세스가 비활성화되고 전 세계에 노출됩니다.
+>* 민감한 정보가 노출되지 않도록 해야 합니다
+>* 와일드카드 사용 안 함 [*] 구문; 이 기능은 GraphQL 엔드포인트에 대한 인증된 액세스를 비활성화하고 전 세계에 노출합니다.
 
 
 >[!CAUTION]
 >
 >모든 GraphQL [스키마](#schema-generation)(**활성화됨** 상태인 콘텐츠 조각 모델에서 파생)는 GraphQL 엔드포인트를 통해 읽을 수 있습니다.
 >
->즉, 이런 식으로 유출될 수 있기 때문에 민감한 데이터가 없는지 확인해야 합니다. 예를 들어 모델 정의에서 필드 이름으로 나타날 수 있는 정보가 여기에 포함됩니다.
+>이 기능은 이러한 방식으로 유출될 수 있으므로 민감한 데이터가 없는지 확인해야 함을 의미합니다. 예를 들어 모델 정의에서 필드 이름으로 존재할 수 있는 정보가 포함됩니다.
 
 ## 인증 {#authentication}
 
@@ -665,8 +897,8 @@ CORS 구성 외에도 타사 호스트의 액세스를 허용하도록 레퍼러
 
    * **A**:
 “*AEM GraphQL API는 JSON 출력에 대한 전체 제어를 제공하며 콘텐츠 쿼리를 위한 업계 표준입니다.
-앞으로 AEM은 AEM GraphQL API에 투자할 계획입니다.*”
+향후 AEM은 AEM GraphQL API에 투자할 계획입니다.*&quot;
 
 ## 튜토리얼 - AEM Headless 및 GraphQL 시작하기 {#tutorial}
 
-실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 빌드하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) 엔드투엔드 튜토리얼을 확인하십시오.
+실습형 튜토리얼을 찾고 계십니까? 체크아웃 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) headless CMS 시나리오에서, AEM GraphQL API를 사용하여 콘텐츠를 작성하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 종단간 튜토리얼입니다.
