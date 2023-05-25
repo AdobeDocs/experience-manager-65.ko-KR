@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: f8af806bbb78623d5ba12379fc547a2cffc03841
+source-git-commit: 0bce05571590bc09e2b65f6bd6c1f387c71fba3a
 workflow-type: tm+mt
-source-wordcount: '2606'
+source-wordcount: '2620'
 ht-degree: 12%
 
 ---
@@ -70,6 +70,7 @@ ht-degree: 12%
 * 검색 필터를 사용하여 발견된 여러 개의 선택한 자산에 대한 워크플로우를 트리거할 수 없습니다. (ASSETS-7689)
 * 검색 결과에서 에셋(또는 여러 에셋)을 선택하면 관련 또는 관계 해제 옵션이 표시되지 않습니다. 그러나 그렇지 않으면 옵션을 사용할 수 있습니다. (ASSETS-7679)
 * 검색 필터 패널은 로그인 후 한 번만 열리며 검색 페이지를 종료하고 검색을 다시 실행할 경우 열리지 않습니다. (ASSETS-7671)
+* 링크를 공유하는 동안 이메일 콤보 상자에 적절한 대비 비율이 표시되지 않습니다. (ASSETS-17349)
 
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST 
 * When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 
