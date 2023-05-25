@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: be028f116ccb83853cd46dc742438babd2207314
+source-git-commit: 325af649564d93beedfc762a8f5beacec47b1641
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '887'
 ht-degree: 1%
 
 ---
 
 # AEM 애플리케이션에 태깅 작성{#building-tagging-into-an-aem-application}
 
-사용자 지정 AEM 응용 프로그램 내에서 태그를 프로그래밍 방식으로 작업하거나 태그를 확장하기 위해 이 페이지에서는 의 사용에 대해 설명합니다.
+프로그래밍 방식으로 태그를 사용하거나 사용자 지정 AEM 응용 프로그램 내에서 태그를 확장하기 위해 이 페이지에서는
 
-* [태그 지정 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
+* [태그 지정 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
 
-와 상호 작용하는
+와 상호 작용합니다.
 
 * [태깅 프레임워크](/help/sites-developing/framework.md)
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 태깅 API 개요 {#overview-of-the-tagging-api}
 
-의 구현 [태깅 프레임워크](/help/sites-developing/framework.md) AEM에서는 JCR API 를 사용하여 태그 및 태그 컨텐츠를 관리할 수 있습니다. TagManager는 태그에 값으로 입력된 태그가 `cq:tags` 문자열 배열 속성은 복제되지 않으며, 존재하지 않는 태그를 가리키는 TagID를 제거하고, 이동되거나 병합된 태그에 대해 TagID를 업데이트합니다. TagManager는 잘못된 변경 사항을 모두 되돌리는 JCR 관찰 리스너를 사용합니다. 기본 클래스는 [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) 패키지:
+의 구현 [태깅 프레임워크](/help/sites-developing/framework.md) AEM에서는 JCR API 를 사용하여 태그 및 태그 컨텐츠를 관리할 수 있습니다. TagManager는 태그에 값으로 입력된 태그가 `cq:tags` 문자열 배열 속성은 복제되지 않으며, 존재하지 않는 태그를 가리키는 TagID를 제거하고, 이동되거나 병합된 태그에 대해 TagID를 업데이트합니다. TagManager는 잘못된 변경 사항을 모두 되돌리는 JCR 관찰 리스너를 사용합니다. 기본 클래스는 [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html) 패키지:
 
 * JcrTagManagerFactory - 의 JCR 기반 구현을 반환합니다. `TagManager`. 태깅 API의 참조 구현입니다.
 * `TagManager` - 경로 및 이름별로 태그를 해결하고 만들 수 있습니다.
@@ -60,7 +60,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Tag 개체 검색 {#retrieving-a-tag-object}
 
-A `Tag` 를 통해 검색할 수 있습니다. `TagManager`기존 태그를 해결하거나 새 태그를 만들어 다음을 수행합니다.
+A `Tag` 를 통해 검색할 수 있습니다. `TagManager`기존 태그를 해결하거나 태그를 만들어 다음을 수행합니다.
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -130,13 +130,13 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## 클라이언트측 태깅 {#tagging-on-the-client-side}
 
-`CQ.tagging.TagInputField` 는 태그를 입력하기 위한 양식 위젯입니다. 기존 태그에서 선택할 수 있는 팝업 메뉴가 있으며, 자동 완성 및 기타 다양한 기능을 포함합니다. xtype은 입니다. `tags`.
+양식 위젯 `CQ.tagging.TagInputField` 는 태그를 입력하기 위한 것입니다. 기존 태그에서 선택할 수 있는 팝업 메뉴가 있으며, 자동 완성 및 기타 다양한 기능을 포함합니다. xtype은 입니다. `tags`.
 
 ## 태그 가비지 수집기 {#the-tag-garbage-collector}
 
-태그 가비지 수집기는 숨겨진 태그와 사용되지 않은 태그를 정리하는 백그라운드 서비스입니다. 숨겨진 태그와 사용하지 않은 태그는 아래 태그입니다. `/content/cq:tags` 이(가) 있습니다. `cq:movedTo` 속성 및 는 콘텐츠 노드에서 사용되지 않으며, 카운트가 0입니다. 이러한 소극적 삭제 프로세스를 사용하여 콘텐츠 노드(즉, `cq:tags` 이동 또는 병합 작업의 일부로 업데이트할 필요가 없습니다. 의 참조 `cq:tags` 속성은 다음 경우에 자동으로 업데이트됩니다. `cq:tags` 속성은 페이지 속성 대화 상자를 통해 업데이트됩니다.
+태그 가비지 수집기는 숨겨진 태그와 사용되지 않은 태그를 정리하는 백그라운드 서비스입니다. 숨겨진 태그와 사용하지 않은 태그는 아래 태그입니다. `/content/cq:tags` 이(가) 있습니다. `cq:movedTo` 속성 및 는 콘텐츠 노드에서 사용되지 않으며, 카운트가 0입니다. 이 지연 삭제 프로세스를 사용하여 콘텐츠 노드(즉, `cq:tags` 이동 또는 병합 작업의 일부로 업데이트할 필요가 없습니다. 의 참조 `cq:tags` 속성은 다음 경우에 자동으로 업데이트됩니다. `cq:tags` 속성은 예를 들어 페이지 속성 대화 상자를 통해 업데이트됩니다.
 
-태그 가비지 수집기는 기본적으로 하루에 한 번 실행됩니다. 다음에서 구성할 수 있습니다.
+태그 가비지 수집기는 기본적으로 하루에 한 번 실행됩니다. 다음 위치에서 구성할 수 있습니다.
 
 ```xml
 http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbageCollector
@@ -152,13 +152,13 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
 
 ## 다른 언어로 된 태그 {#tags-in-different-languages}
 
-태그 관리 설명서의 섹션에 설명된 대로 [다른 언어로 태그 관리](/help/sites-administering/tags.md#managing-tags-in-different-languages), 태그 `title`다른 언어로 정의할 수 있습니다. 그런 다음 언어 구분 속성이 태그 노드에 추가됩니다. 이 속성은 형식을 갖습니다. `jcr:title.<locale>`, 예: `jcr:title.fr` 프랑스어 번역. `<locale>` 은(는) 소문자 ISO 로케일 문자열이어야 하며, &quot;-&quot; 대신 &quot;_&quot;를 사용합니다. 예: `de_ch`.
+태그 관리 설명서의 섹션에 설명된 대로 [다른 언어로 태그 관리](/help/sites-administering/tags.md#managing-tags-in-different-languages), 태그 `title`다른 언어로 정의할 수 있습니다. 그런 다음 언어 구분 속성이 태그 노드에 추가됩니다. 이 속성은 형식을 갖습니다. `jcr:title.<locale>`, 예: `jcr:title.fr` 프랑스어 번역. 다음 `<locale>` 은(는) 소문자 ISO 로케일 문자열이어야 하며, &quot;-&quot; 대신 &quot;_&quot;를 사용합니다. 예: `de_ch`.
 
 다음의 경우 **동물** 태그가 다음에 추가됩니다 **제품** 페이지, 값 `stockphotography:animals` 이 속성에 추가됩니다 `cq:tags` /content/geometrixx/en/products/jcr:content 노드의 입니다. 번역은 태그 노드에서 참조됩니다.
 
 서버측 API가 현지화되었습니다. `title`-관련 메서드:
 
-* [com.day.cq.tagging.Tag](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
    * getLocalizedTitle(로케일)
    * getLocalizedTitlePaths()
@@ -166,7 +166,7 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
    * getTitle(로케일)
    * getTitlePath(로케일)
 
-* [com.day.cq.tagging.TagManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
    * canCreateTagByTitle(String tagTitlePath, Locale)
    * createTagByTitle(String tagTitlePath, Locale)
@@ -182,13 +182,13 @@ AEM에서 언어는 페이지 언어 또는 사용자 언어에서 가져올 수
 
    * `slingRequest.getLocale()`
 
-`currentPage` 및 `slingRequest` 를 통해 JSP에서 사용할 수 있습니다. [&lt;cq:definedobjects>](/help/sites-developing/taglib.md) 태그에 가깝게 배치하십시오.
+다음 `currentPage` 및 `slingRequest` 를 통해 JSP에서 사용할 수 있습니다. [&lt;cq:definedobjects>](/help/sites-developing/taglib.md) 태그에 가깝게 배치하십시오.
 
 태깅의 경우 현지화는 컨텍스트에 따라 태그로 달라집니다 `titles`페이지 언어, 사용자 언어 또는 다른 언어로 표시할 수 있습니다.
 
 ### 태그 편집 대화 상자에 새 언어 추가 {#adding-a-new-language-to-the-edit-tag-dialog}
 
-다음 절차에서는 새 언어(핀란드어)를 **태그 편집** 대화 상자:
+다음 절차에서는 언어(핀란드어)를 **태그 편집** 대화 상자:
 
 1. 위치 **CRXDE**, 다중 값 속성 편집 `languages` 노드의 `/content/cq:tags`.
 
