@@ -6,9 +6,9 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 8bd103e392bf5630cb2db654dedcfe4f926b2c9d
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '808'
 ht-degree: 6%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 6%
 
 의 이 XMP 원본에 쓰기 기능 [!DNL Adobe Experience Manager Assets] 메타데이터 변경 사항을 원본 에셋의 렌디션에 복제합니다. Assets 내에서 또는 에셋을 업로드하는 동안 에셋의 메타데이터를 변경하면 변경 사항이 에셋 계층의 메타데이터 노드에 처음 저장됩니다.
 
-XMP 원본에 쓰기 기능을 사용하면 메타데이터 변경 내용을 에셋의 모든 또는 특정 표현물로 전파할 수 있습니다. 이 기능은 를 사용하는 메타데이터 속성만 기록합니다. `jcr` 네임스페이스, 즉 `dc:title` 은(는) 다시 기록되지만 라는 속성이 있습니다. `mytitle` 아님.
+XMP 원본에 쓰기 기능을 사용하면 메타데이터 변경 내용을 에셋의 모든 또는 특정 표현물로 전파할 수 있습니다. 이 기능은 등록된 네임스페이스를 사용하는 메타데이터 속성(즉, 이름이 인 속성)만 기록합니다 `dc:title` 은(는) 다시 기록되지만 라는 속성이 있습니다. `mytitle` 아님.
 
 을 수정하는 시나리오를 고려하십시오. [!UICONTROL 제목] 제목이 있는 자산의 속성 `Classic Leather` 끝 `Nylon`.
 
