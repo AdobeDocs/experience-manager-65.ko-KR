@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
 workflow-type: tm+mt
-source-wordcount: '9970'
+source-wordcount: '9993'
 ht-degree: 4%
 
 ---
@@ -403,6 +403,9 @@ Adobe Experience Manager에 많은 에셋을 업로드하는 경우 서버에 �
 
    *그림: 날짜 선택기를 사용하여 자산 활성화를 예약합니다.*
 
+1. 다음을 확인해야 합니다. **[!UICONTROL 설정/해제 시간 도달]** 메타데이터 속성에서 복제 에이전트 트리거를 업데이트하려는 경우 옵션입니다.
+   ![에이전트 설정](assets-dm/Agent-settings.png)
+
 1. 특정 기간 후에 에셋을 비활성화하려면 옆에 있는 날짜 선택기에서 비활성화 날짜/시간을 선택합니다. **[!UICONTROL 해제 시간]** 필드. 비활성화 날짜는 에셋의 활성화 날짜 이후여야 합니다. 다음 이후 [!UICONTROL 해제 시간], 에셋 및 해당 렌디션은 [!DNL Assets] 웹 인터페이스 또는 HTTP API를 통해.
 
 1. 다음에서 **[!UICONTROL 태그]** 필드에서 태그를 하나 이상 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그의 이름을 입력하고 를 선택합니다 `Enter`. 새 태그는에 저장됩니다. [!DNL Experience Manager]. [!DNL YouTube] 게시하려면 태그가 필요합니다. 다음을 참조하십시오 [YouTube에 비디오 게시](video.md#publishing-videos-to-youtube).
@@ -619,7 +622,7 @@ Adobe Experience Manager에 많은 에셋을 업로드하는 경우 서버에 �
 
 ## 폐쇄된 사용자 그룹 {#closed-user-group}
 
-CUG(폐쇄형 사용자 그룹)는에서 게시된 특정 에셋 폴더에 대한 액세스를 제한하는 데 사용됩니다 [!DNL Experience Manager]. 폴더에 대한 CUG를 생성하는 경우 폴더(폴더 자산 및 하위 폴더 포함)에 대한 액세스는 할당된 구성원 또는 그룹으로만 제한됩니다. 폴더에 액세스하려면 보안 자격 증명을 사용하여 로그인해야 합니다.
+CUG(폐쇄형 사용자 그룹)는에서 게시된 특정 에셋 폴더에 대한 액세스를 제한하는 데 사용됩니다 [!DNL Experience Manager]. 폴더에 대한 CUG를 생성하는 경우 폴더(폴더 에셋 및 하위 폴더 포함)에 대한 액세스는 할당된 구성원 또는 그룹으로만 제한됩니다. 폴더에 액세스하려면 보안 자격 증명을 사용하여 로그인해야 합니다.
 
 CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더의 로그인 페이지를 구성할 수도 있습니다.
 
@@ -937,7 +940,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 [!DNL Experience Manager] 데스크탑 앱을 사용하면 Windows 또는 Mac 데스크탑에서 DAM 저장소에 액세스할 수 있습니다. Adobe 에셋 링크를 사용하면 지원되는 내에서 에셋에 액세스할 수 있습니다. [!DNL Creative Cloud] 데스크탑 애플리케이션.
 
-내에서 에셋을 검색할 때 [!DNL Experience Manager] 사용자 인터페이스에서는 만료된 에셋이 표시되지 않습니다. 관리자는 데스크탑 앱 및 Asset Link에서 자산을 검색할 때 만료된 자산을 보고 검색하고 가져오지 않도록 다음 구성을 수행할 수 있습니다. 이 구성은 관리자 권한에 관계없이 모든 사용자에 대해 작동합니다.
+내에서 에셋을 검색할 때 [!DNL Experience Manager] 사용자 인터페이스에서는 만료된 에셋이 표시되지 않습니다. 관리자는 데스크탑 앱 및 Asset Link에서 자산을 검색할 때 만료된 자산을 보고 검색하고 가져오지 않도록 다음 구성을 수행할 수 있습니다. 이 구성은 관리자 권한과 관계없이 모든 사용자에 대해 작동합니다.
 
 다음 CURL 명령을 실행합니다. 에 대한 읽기 액세스 권한 확인 `/conf/global/settings/dam/acpapi/` 에셋에 액세스하는 사용자용입니다. 에 속한 사용자 `dam-user` 기본적으로 그룹에 권한이 있습니다.
 
