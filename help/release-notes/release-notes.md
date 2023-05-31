@@ -2,9 +2,10 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 0bce05571590bc09e2b65f6bd6c1f387c71fba3a
+exl-id: fed4e110-9415-4740-aba1-75da522039a9
+source-git-commit: efd2a41b6b53a72b941ac23386b6aa4c41c9da15
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2683'
 ht-degree: 12%
 
 ---
@@ -103,6 +104,36 @@ ht-degree: 12%
 * Adobe Target IMS 구성을 레거시 클라우드 구성에서 사용자 자격 증명 구성으로 전환할 때 `connectedWhen` 속성은 변경되지 않습니다. 이 문제는 구성이 여전히 IMS 기반인 것처럼 모든 호출을 실행합니다. (CQ-4352810)
 * 추가 중 `modifyProperties` 권한 대상 `fd-cloudservice` Adobe Sign 구성에 대한 시스템 사용자입니다. (FORMS-6164)
 * Adobe Target과 통합된 Experience Manager을 사용하여 AB 테스트 활동을 만들 때 이 활동과 연관된 대상을 Target에 동기화하지 않습니다. (NPR-40085)
+
+## Oak{#oak-6517}
+
+서비스 팩 13 이상부터 지속성 캐시에 영향을 주는 다음 오류 로그가 나타나기 시작했습니다.
+
+```shell
+org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+    at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+    at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+    at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+    at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+    at org.h2.mvstore.db.Store.<init>(Store.java:129)
+```
+
+또는
+
+```shell
+org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.1.214/5].
+```
+
+이 예외를 해결하려면 다음을 수행합니다.
+
+1. 에서 다음 두 폴더를 삭제합니다. `crx-quickstart/repository/`
+
+   * `cache`
+   * `diff-cache`
+
+1. 서비스 팩을 설치하거나 Experience Manager을 as a Cloud Service으로 다시 시작합니다.
+의 새 폴더 `cache` 및 `diff-cache` 이(가) 자동으로 만들어지므로 더 이상 과 관련된 예외가 발생하지 않습니다. `mvstore` 다음에서 `error.log`.
 
 ## Platform{#platform-6517}
 
