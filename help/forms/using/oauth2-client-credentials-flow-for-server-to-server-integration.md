@@ -3,9 +3,9 @@ title: OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 AEM For
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 description: OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 AEM Forms과 Salesforce 통합을 통합하는 절차
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
-source-git-commit: f03513c98455e00beef37819a5a47ba56dfa5028
+source-git-commit: cc0375f5b5616f82a73bd983a9da95225c51db99
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ OAuth 2.0 클라이언트 자격 증명 흐름과 조직에 대한 API 전용 �
 
 Swagger는 RESTful API를 개발하고 설명하는 규칙, 사양 및 도구의 오픈 소스 세트입니다. [Swagger 파일 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) AEM Forms과 Salesforce를 통합하기 전에
 
-    >[!NOTE]
-    >
-    > AEM 6.5는 Swagger 2.0 파일 사양만 지원합니다.
+>[!NOTE]
+>
+> AEM 6.5는 Swagger 2.0 파일 사양만 지원합니다.
 
 +++
 
