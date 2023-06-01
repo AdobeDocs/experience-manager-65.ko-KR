@@ -2,9 +2,9 @@
 title: AEM Forms용 AEM Forms 패치 설치 지침
 description: OSGi 및 JEE 환경에 대한 AEM Forms 서비스 팩 설치 지침
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 01bf12ec46966ab2c78e2e825840230ea1bd3395
+source-git-commit: 57ead48ba3211075ae4b85801ba8cf6394582a9d
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1728'
 ht-degree: 16%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 16%
 
 | 제품 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 버전 | 6.5.16.0 |
+| 버전 | 6.5.17.0 |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2023년 3월 2일 |
+| 날짜 | 2023년 6월 1일 |
 | 다운로드 URL | [최신 AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -240,4 +240,4 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 * 설치가 완료되면 모니터 로그(error.log)를 확인합니다. 로그에 활동이 없을 때까지 몇 분 동안 기다립니다. AEM 인스턴스를 다시 시작합니다.
 
-* If you get a **서비스 불가능 오류** AEM Forms 6.5.15.0 서비스 팩을 설치한 후 [서블릿 조각 및 번들 설치](/help/forms/using/aem-service-pack-installation-solution.md) 오류를 수정하기 위해
+* If you get a **서비스 불가능 오류** AEM Forms 6.5.15.0 이상 서비스 팩을 설치한 후 [서블릿 조각 및 번들 설치](/help/forms/using/aem-service-pack-installation-solution.md) 오류를 수정하기 위해

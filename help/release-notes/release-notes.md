@@ -3,10 +3,10 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: efd2a41b6b53a72b941ac23386b6aa4c41c9da15
+source-git-commit: 2391eb74979b7ee9ed148763ffebf125ef09fc88
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 12%
+source-wordcount: '3475'
+ht-degree: 9%
 
 ---
 
@@ -30,7 +30,9 @@ ht-degree: 12%
 
 ## 에 포함된 항목 [!DNL Experience Manager] 6.5.17.0 {#what-is-included-in-aem-6517}
 
-[!DNL Experience Manager] 6.5.17.0에는 2019년 4월 6.5의 최초 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. [이 서비스 팩 설치](#install) 날짜 [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.17.0에는 2019년 4월 6.5의 최초 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. [이 서비스 팩 설치](#install) 날짜 [!DNL Experience Manager] 6.5.
+
+<!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- Some of the key features and improvements are the following:
 
@@ -46,6 +48,13 @@ ht-degree: 12%
    이러한 작업을 수행하기 위해 에셋 위치로 이동하여 에셋 위치의 속성을 볼 필요가 없습니다.
 * **Dynamic Media _스냅샷_**- 테스트 이미지 또는 Dynamic Media URL을 실험하여 다양한 이미지 수정자의 출력을 확인하고, 파일 크기(WebP 및 AVIF 전달), 네트워크 대역폭 및 장치 픽셀 비율에 대해 스마트 이미징을 최적화합니다. 다음을 참조하십시오 [Dynamic Media 스냅샷](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 * **Dynamic Media을 사용한 DASH 스트리밍** - Dynamic Media 비디오 게재의 적응형 스트리밍을 위해 시작된 새로운 프로토콜(DASH - HTTP를 통한 동적 적응형 스트리밍) 지원(CMAF가 활성화됨). 현재 모든 지역에서 사용할 수 있습니다. [지원 티켓을 통해 활성화됨](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
+
+* **AEM 사이트 페이지의 적응형 Forms 통합**: - 적응형 Forms 컨테이너 및 적응형 AEM Sites - 임베드(v2) 구성 요소를 사용하여 Forms 편집기 내에서 적응형 Forms 구성 요소를 활용하여 디지털 등록 경험을 원활하게 만들 수 있습니다.
+* **AEM Forms에서 reCAPTCHA Enterprise 지원**: 기존 Google reCAPTCHA v2 지원 외에도 AEM Forms의 reCAPTCHA Enterprise 지원이 추가되어 사기 행위 및 스팸에 대한 보호 기능이 강화되었습니다.
+* **AEM Forms을 통한 Adobe Acrobat Sign for Government 지원**: AEM Forms과 Adobe Sign for Government(FedRAMP 호환)의 안전하고 호환 가능한 통합을 허용합니다.
+* **데이터 교환을 위해 AEM Forms과 Salesforce 통합 활성화**: Salesforce 애플리케이션에서 안전하고 직접적인 애플리케이션 인증 및 권한 부여를 위한 OAuth 2.0 클라이언트 자격 증명 흐름으로, 사용자가 개입하지 않고도 애플리케이션 간에 원활한 통신을 수행할 수 있습니다.
+* **워크플로우 엔진의 최적화 및 향상된 기능**: 워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상됩니다. 에 더하여 `COMPLETED` 및 `RUNNING` 상태 값, 워크플로우는 다음 세 가지 새 상태 값도 지원합니다. `ABORTED`, `SUSPENDED`, 및 `FAILED`.
+* ZPL 출력 형식은 문자, A4 및 A5와 같이 서로 다른 용지 크기를 지원합니다.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -95,9 +104,41 @@ ht-degree: 12%
 
 ## [!DNL Forms]{#forms-6517}
 
->[!NOTE]
->
->의 수정 사항 [!DNL Experience Manager] Forms은 예약한 후 1주일 후에 별도의 추가 기능 패키지를 통해 제공됩니다 [!DNL Experience Manager] 서비스 팩 릴리스 날짜. 이 경우 추가 기능 패키지는 2023년 6월 1일 목요일 릴리스됩니다. 또한 Forms 수정 사항 및 개선 사항 목록이 이 섹션에 추가됩니다.
+* 사용자가 AEM 6.5.16.0 서비스 팩으로 업그레이드할 때 첨부된 파일이 제대로 검색되지 않습니다. (FORMS-8906)
+* AEM 6.5.15.0 서비스 팩으로 업데이트한 후 HTML 5 양식이 작동하지 않거나 IE 호환성 모드의 Edge 브라우저에서 제대로 로드되지 않습니다. (FORMS-8526, FORMS-8523)
+* 사용자가 AEM 6.5.16.0 서비스 팩을 적용하면 규칙 편집기가 열리지 않습니다. (FORMS-8290)
+* Numeric Box 구성 요소에 최대 자릿수 유효성 검사가 적용되면 실패합니다. (FORMS-7938)
+* 대화형 통신 문을 만드는 동안 PDF의 차트 구성 요소가 제대로 생성되지 않습니다. (FORMS-7827, FORMS-8297)
+* Java 가비지 수집이 AEM Forms OSGi 서버에서 오래된 일반 힙을 지울 수 없습니다. (FORMS-8207)
+* 사용자가 AEM 6.5.16.0 서비스 팩으로 업그레이드할 때 제출 후 CRX 메타데이터 속성이 누락됩니다. (FORMS-8205)
+* 사용자가 적응형 양식에서 날짜 선택기 구성 요소를 비활성화해도 여전히 편집할 수 있습니다. (FORMS-7804)
+* AEM 6.5.16.0 Forms 서비스 팩에서 사용자가 정책 세트 코디네이터를 편집하려고 하면 관리자 문서 게시자가 항상 선택 취소된 상태로 유지됩니다. (FORMS-7775, FORMS-8599)
+* 사용자가 AEM 6.5.16.0 서비스 팩으로 업그레이드하면 변환해야 하는 문자열을 처리하는 &quot;GuideNode.externalize&quot; 메서드가 작동하지 않습니다. (FORMS-7709)
+* 다음에서 `Assign task` 단계: 사용자가 &quot;알림 이메일 보내기&quot;를 선택하고 워크플로우를 호출하면 수신된 이메일에 텍스트가 제대로 표시되지 않습니다. 수신된 이메일의 텍스트 대신 물음표가 수신됩니다. (FORMS-7675)
+* 기록 문서가 부분적으로 현지화되고 있습니다. (FORMS-7674, FORMS-7573)
+* 특정 권한이 할당된 경우에도 사용자는 정책 집합을 편집할 수 없습니다. (FORMS-7665)
+* 에서 사용자가 `forms-users` 그룹이 새 양식을 만들려고 하면 AEM Forms 인스턴스가 충돌합니다. (FORMS-7629)
+* 사용자가 적응형 양식에서 재설정, 저장 또는 제출 버튼을 클릭하면 화면에 메시지가 표시되지 않습니다. (FORMS-7524)
+* AEM 6.5.16.0 서비스 팩에서 PDFG 변환 성능을 개선하기 위해 절전 모드 간격을 구성할 수 있습니다. (FORMS-6752)
+* 전환 옵션은 동일하게 유지되지만 사용자가 커서를 약간 드래그해도 필드의 가시성이 변경됩니다. (FORMS-6728)
+* 사용자가 AEM 6.5.15.0 서비스 팩으로 업그레이드할 때 적응형 양식이 Internet Explorer에서 렌더링되면 리디렉션이 작동하지 않습니다. (FORMS-6725)
+* AEM Designer에서 만든 PDF 양식의 모든 배경 개체에 대한 PAC 2021 도구는 오류를 다음과 같이 반환합니다. `Path object not tagged`. (FORMS-6707)
+* 사용자가 받은 편지함에서 필터를 적용하면 오류가 발생합니다 `NullPointerException` 오류. (FORMS-6706)
+* 사용자가 참조된 조각이 있는 템플릿(.tds) 파일을 가져오면 AEM Designer가 충돌합니다.  (FORMS-6702)
+* AEM Forms Designer 6.5에서 출력 서비스를 사용하여 정적 PDF을 만드는 경우 다음과 같은 오류가 발생합니다. `OCCD (optional content configuration dictionary) contains AS key`. (FORMS-6691)
+* 사용자가 간단한 워크플로우를 만들고 간단한 변수를 추가하면 `set variable mapping` 오류가 발생했습니다. (FORMS-5819)
+* 사용자가 출력 서비스를 사용하여 PDF을 생성하려고 할 때 가 로 표시되더라도 `PDF/A-1a`, 를 사용한 준수 확인`Preflight` 서비스 실패. (LC-3920837)
+* AEM 6.5.16.0 서비스 팩을 설치한 후 AEM 디자이너가 열리지 않습니다. (LC-3921000)
+* 사용자가 확인란과 라디오 단추를 추가할 때 PDF 표준에 따라 태그 트리의 구조가 생성되지 않습니다. (LC-3920838)
+* 출력 서비스를 통해 PDF의 임베드 및 서브셋팅을 사용하여 정적 PDF을 생성하는 경우, 결과 글꼴에는 임베드된 글꼴만 포함됩니다. (LC-3920963)
+* 히브리어 텍스트가 RTL 형식으로 잘못 표시됩니다. (LC-3919632)
+* 사용자가 JBoss 턴키 서버에서 AEM 6.5.16.0 서비스 팩으로 업그레이드할 때 서명 서비스가 호출되지 않습니다. 발생한 오류는 다음과 같습니다. `java.lang.ClassCastException: com.adobe.xfa.TextNode cannot be cast to com.adobe.xfa.Element`. (FORMS-7833)
+* AEM 6.5.14.0 서비스 팩으로 업그레이드한 후 Workbench에서 한 위치에서 다른 위치로 CRX 노드를 이동하는 프로세스가 작동하지 않습니다. 오류는 다음과 같이 발생합니다 `ALC-CRX-30000-000: com.adobe.ep.crx.client.exceptions.CRCException: ALC-CRX-030-000-[Internal Server Error]`.(FORMS-7713)
+* 사용자가 AEM 6.5.16.0 서비스 팩으로 업데이트하면 `Usage Rights` 적용되지 않습니다. (FORMS-7892)
+* 사용자가 PDF 문서를 생성하려고 할 때 PDF/A-1b 유효성 검사가 실패합니다. (FORMS-7615)
+* 사용자가 `Configure` 옵션 `Form Container` 구성 요소에서 브라우저가 응답하지 않습니다(FORMS-7605).
+* 사용자가 AEM Forms 6.5.16.0 서비스 팩으로 업데이트하고 를 변경하려고 할 때 `LicenseType` 끝 `Production`, 변경 사항이 반영되지 않습니다. (FORMS-7594)
+* 사용자가 다음을 구성하는 PDF으로 LCA 프로세스를 호출하려고 하면 `Chinese Full Width Characters`에 문제가 발생합니다. `ValidateForm` 프로세스. (FORMS-7464)
 
 ## 통합{#integrations-6517}
 
@@ -351,8 +392,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    "refresh": true
    ```
 
-* AEM Forms에서 POP3 프로토콜은 Microsoft® Office 365의 이메일 엔드포인트와 작동하지 않습니다.
-* JBoss® 7.1.4 플랫폼에서 사용자가 AEM 6.5.16.0 서비스 팩을 설치하면 `adobe-livecycle-jboss.ear` 배포가 실패합니다.
+* JBoss® 7.1.4 플랫폼에서 사용자가 AEM 6.5.16.0 이상 서비스 팩을 설치하면 `adobe-livecycle-jboss.ear` 배포가 실패합니다.
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
