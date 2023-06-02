@@ -6,7 +6,7 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: d6587ef59332d6b4d419c7d7b6e29930f366d171
 workflow-type: tm+mt
 source-wordcount: '5499'
 ht-degree: 8%
@@ -524,9 +524,9 @@ Experience Manager에서 비디오 에셋의 게시를 취소하면 비디오가
    >
    >의 여러 워크플로우 구성으로 인해 실패/오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 출처: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), 예를 들면 다음과 같습니다.
    >
-   >    * Apache Sling 작업 큐 구성
-   >    * Adobe Granite 워크플로 외부 프로세스 작업 핸들러
-   >    * Granite 워크플로우 시간 초과 큐
+   >* Apache Sling 작업 큐 구성
+   >* Adobe Granite 워크플로 외부 프로세스 작업 핸들러
+   >* Granite 워크플로우 시간 초과 큐
 
    >
    >다음을 조정할 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 이러한 구성의 속성.
@@ -557,13 +557,10 @@ Experience Manager에서 비디오 에셋의 게시를 취소하면 비디오가
    >
    >의 여러 워크플로우 구성으로 인해 오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 출처: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), 예를 들면 다음과 같습니다.
    >
-   >
-   >
-   >    * Apache Sling 작업 큐 구성
-   >    * Adobe Granite 워크플로 외부 프로세스 작업 핸들러
-   >    * Granite 워크플로우 시간 초과 큐
+   >* Apache Sling 작업 큐 구성
+   >* Adobe Granite 워크플로 외부 프로세스 작업 핸들러
+   >* Granite 워크플로우 시간 초과 큐
 
-   >
    >
    >다음을 조정할 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 이러한 구성의 속성.
 
