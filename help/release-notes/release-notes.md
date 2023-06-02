@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 2391eb74979b7ee9ed148763ffebf125ef09fc88
+source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
 workflow-type: tm+mt
-source-wordcount: '3475'
+source-wordcount: '3499'
 ht-degree: 9%
 
 ---
@@ -52,9 +52,9 @@ ht-degree: 9%
 * **AEM 사이트 페이지의 적응형 Forms 통합**: - 적응형 Forms 컨테이너 및 적응형 AEM Sites - 임베드(v2) 구성 요소를 사용하여 Forms 편집기 내에서 적응형 Forms 구성 요소를 활용하여 디지털 등록 경험을 원활하게 만들 수 있습니다.
 * **AEM Forms에서 reCAPTCHA Enterprise 지원**: 기존 Google reCAPTCHA v2 지원 외에도 AEM Forms의 reCAPTCHA Enterprise 지원이 추가되어 사기 행위 및 스팸에 대한 보호 기능이 강화되었습니다.
 * **AEM Forms을 통한 Adobe Acrobat Sign for Government 지원**: AEM Forms과 Adobe Sign for Government(FedRAMP 호환)의 안전하고 호환 가능한 통합을 허용합니다.
-* **데이터 교환을 위해 AEM Forms과 Salesforce 통합 활성화**: Salesforce 애플리케이션에서 안전하고 직접적인 애플리케이션 인증 및 권한 부여를 위한 OAuth 2.0 클라이언트 자격 증명 흐름으로, 사용자가 개입하지 않고도 애플리케이션 간에 원활한 통신을 수행할 수 있습니다.
-* **워크플로우 엔진의 최적화 및 향상된 기능**: 워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상됩니다. 에 더하여 `COMPLETED` 및 `RUNNING` 상태 값, 워크플로우는 다음 세 가지 새 상태 값도 지원합니다. `ABORTED`, `SUSPENDED`, 및 `FAILED`.
-* ZPL 출력 형식은 문자, A4 및 A5와 같이 서로 다른 용지 크기를 지원합니다.
+* **데이터 교환을 위해 AEM Forms과 Salesforce 통합 활성화**: OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 AEM Forms와 Salesforce 애플리케이션 간의 통합을 구성합니다. 이는 애플리케이션의 안전하고 직접적인 인증 및 권한 부여를 가능하게 하며, 사용자의 개입 없이 원활한 통신을 가능하게 한다.
+* **워크플로우 엔진의 최적화 및 향상된 기능**: 워크플로 인스턴스 수를 최소화하여 워크플로 엔진의 성능을 높입니다. 에 더하여 `COMPLETED` 및 `RUNNING` 상태 값, 워크플로우는 다음 세 가지 새 상태 값도 지원합니다. `ABORTED`, `SUSPENDED`, 및 `FAILED`.
+* **ZPL 출력을 위한 용지 크기 지원**: AEM Forms Designer에서 XMLFM은 XDP 기반 템플릿에 대해 문자, A4 및 A5와 같이 서로 다른 용지 크기로 ZPL 출력을 생성합니다.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
