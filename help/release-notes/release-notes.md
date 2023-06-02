@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
+source-git-commit: 7f152c3b7b80c78bb73b45e83cc566e9bbb0c393
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3494'
 ht-degree: 9%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 9%
 * **AEM Forms을 통한 Adobe Acrobat Sign for Government 지원**: AEM Forms과 Adobe Sign for Government(FedRAMP 호환)의 안전하고 호환 가능한 통합을 허용합니다.
 * **데이터 교환을 위해 AEM Forms과 Salesforce 통합 활성화**: OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 AEM Forms와 Salesforce 애플리케이션 간의 통합을 구성합니다. 이는 애플리케이션의 안전하고 직접적인 인증 및 권한 부여를 가능하게 하며, 사용자의 개입 없이 원활한 통신을 가능하게 한다.
 * **워크플로우 엔진의 최적화 및 향상된 기능**: 워크플로 인스턴스 수를 최소화하여 워크플로 엔진의 성능을 높입니다. 에 더하여 `COMPLETED` 및 `RUNNING` 상태 값, 워크플로우는 다음 세 가지 새 상태 값도 지원합니다. `ABORTED`, `SUSPENDED`, 및 `FAILED`.
-* **ZPL 출력을 위한 용지 크기 지원**: AEM Forms Designer에서 XMLFM은 XDP 기반 템플릿에 대해 문자, A4 및 A5와 같이 서로 다른 용지 크기로 ZPL 출력을 생성합니다.
+
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -139,6 +139,7 @@ ht-degree: 9%
 * 사용자가 `Configure` 옵션 `Form Container` 구성 요소에서 브라우저가 응답하지 않습니다(FORMS-7605).
 * 사용자가 AEM Forms 6.5.16.0 서비스 팩으로 업데이트하고 를 변경하려고 할 때 `LicenseType` 끝 `Production`, 변경 사항이 반영되지 않습니다. (FORMS-7594)
 * 사용자가 다음을 구성하는 PDF으로 LCA 프로세스를 호출하려고 하면 `Chinese Full Width Characters`에 문제가 발생합니다. `ValidateForm` 프로세스. (FORMS-7464)
+* AEM Forms Designer에서 XMLFM은 XDP 기반 템플릿에 대해 문자, A4 및 A5와 같이 서로 다른 용지 크기로 ZPL 출력을 생성합니다.(FORMS-7898)
 
 ## 통합{#integrations-6517}
 
