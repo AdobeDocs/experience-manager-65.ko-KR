@@ -7,9 +7,9 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 56632bd6ce9fc90f0bc61f903f84f7ea8bbcd12d
 workflow-type: tm+mt
-source-wordcount: '3389'
+source-wordcount: '3288'
 ht-degree: 10%
 
 ---
@@ -287,22 +287,6 @@ However, you have the flexibility to make local modifications to a live copy to 
    ![라이브 카피 개요 콘솔에서 라이브 카피 폴더의 많은 에셋을 쉽게 업데이트할 수 있습니다](assets/livecopyconsole_update_many_assets.png)
 
    *그림: Live Copy 폴더의 많은 에셋을 [!UICONTROL 라이브 카피 개요] 콘솔.*
-
-## MSM 확장 대상 [!DNL Assets] {#extend-api}
-
-[!DNL Experience Manager] 에서는 MSM Java API를 사용하여 기능을 확장할 수 있습니다. 대상 [!DNL Assets], 확장은 용 MSM과 동일하게 작동합니다. [!DNL Sites]. 자세한 내용은 [MSM 확장](/help/sites-developing/extending-msm.md) 특정 작업에 대한 자세한 내용은 다음을 참조하십시오.
-
-* [API 개요](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [동기화 작업 만들기](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [롤아웃 구성 만들기](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
-* [간단한 LiveActionFactory 클래스 만들기 및 사용](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
-
->[!NOTE]
->
->* 용 MSM의 블루프린트 [!DNL Sites] 은 MSM에서 라이브 카피 소스라고 합니다. [!DNL Assets].
->* MSM에서는 사이트 생성 마법사에서 챕터 단계 제거가 지원되지 않습니다. [!DNL Assets].
->* 페이지 속성(터치 사용 UI)의 MSM 잠금 구성은 다음에 대한 MSM에서 지원되지 않습니다. [!DNL Assets].
-
 
 ## 자산 관리 작업이 라이브 카피에 미치는 영향 {#manage-assets}
 
