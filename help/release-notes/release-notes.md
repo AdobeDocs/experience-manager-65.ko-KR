@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 7f152c3b7b80c78bb73b45e83cc566e9bbb0c393
+source-git-commit: 206242583fcbf651dbc6234dc01be5140d0cfca7
 workflow-type: tm+mt
-source-wordcount: '3494'
+source-wordcount: '3537'
 ht-degree: 9%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 9%
    이러한 작업을 수행하기 위해 에셋 위치로 이동하여 에셋 위치의 속성을 볼 필요가 없습니다.
 * **Dynamic Media _스냅샷_**- 테스트 이미지 또는 Dynamic Media URL을 실험하여 다양한 이미지 수정자의 출력을 확인하고, 파일 크기(WebP 및 AVIF 전달), 네트워크 대역폭 및 장치 픽셀 비율에 대해 스마트 이미징을 최적화합니다. 다음을 참조하십시오 [Dynamic Media 스냅샷](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 * **Dynamic Media을 사용한 DASH 스트리밍** - Dynamic Media 비디오 게재의 적응형 스트리밍을 위해 시작된 새로운 프로토콜(DASH - HTTP를 통한 동적 적응형 스트리밍) 지원(CMAF가 활성화됨). 현재 모든 지역에서 사용할 수 있습니다. [지원 티켓을 통해 활성화됨](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
-
+* **AEM Sites 및 컨텐츠 조각과 AEM Assets 차세대 Dynamic Media 통합**: 이제 AEM Assets as a Cloud Service 차세대 Dynamic Media 사용자는 AEM Sites 6.5의 On-Premise 또는 Managed Services 인스턴스를 사용하여 해당 클라우드 호스팅 자산을 작성 및 게재에 사용할 수 있습니다.
 * **AEM 사이트 페이지의 적응형 Forms 통합**: - 적응형 Forms 컨테이너 및 적응형 AEM Sites - 임베드(v2) 구성 요소를 사용하여 Forms 편집기 내에서 적응형 Forms 구성 요소를 활용하여 디지털 등록 경험을 원활하게 만들 수 있습니다.
 * **AEM Forms에서 reCAPTCHA Enterprise 지원**: 기존 Google reCAPTCHA v2 지원 외에도 AEM Forms의 reCAPTCHA Enterprise 지원이 추가되어 사기 행위 및 스팸에 대한 보호 기능이 강화되었습니다.
 * **AEM Forms을 통한 Adobe Acrobat Sign for Government 지원**: AEM Forms과 Adobe Sign for Government(FedRAMP 호환)의 안전하고 호환 가능한 통합을 허용합니다.
