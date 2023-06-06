@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 206242583fcbf651dbc6234dc01be5140d0cfca7
+source-git-commit: 46e76c36db3396a013c8610b62f5cff9f1ea14d9
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3548'
 ht-degree: 9%
 
 ---
@@ -394,6 +394,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    ```
 
 * JBoss® 7.1.4 플랫폼에서 사용자가 AEM 6.5.16.0 이상 서비스 팩을 설치하면 `adobe-livecycle-jboss.ear` 배포가 실패합니다.
+* 1.8.0_281 이상의 JDK 버전은 WebLogic JEE 서버에서 지원되지 않습니다.
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
