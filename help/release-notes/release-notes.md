@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 9bf19cd21db185229d565d684dbac9e44f236532
+source-git-commit: 2c9337af99811d7b58712e1d0def7b5af5661c11
 workflow-type: tm+mt
-source-wordcount: '3586'
+source-wordcount: '3567'
 ht-degree: 9%
 
 ---
@@ -104,9 +104,8 @@ ht-degree: 9%
 
 ## [!DNL Forms]{#forms-6517}
 
-* 사용자가 Experience Manager 6.5.16.0 서비스 팩으로 업그레이드할 때 첨부된 파일이 제대로 검색되지 않습니다. (FORMS-8906)
-* Experience Manager 6.5.15.0 서비스 팩으로 업데이트한 후 HTML 5 양식이 작동하지 않거나 IE 호환성 모드의 Edge 브라우저에서 제대로 로드되지 않습니다. (FORMS-8526, FORMS-8523)
-* 사용자가 Experience Manager 6.5.16.0 서비스 팩을 적용하면 규칙 편집기가 열리지 않습니다. (FORMS-8290)
+* AEM 6.5.15.0 서비스 팩으로 업데이트한 후 HTML 5 양식이 작동하지 않거나 IE 호환성 모드의 Edge 브라우저에서 제대로 로드되지 않습니다. (FORMS-8526, FORMS-8523)
+* 사용자가 AEM 6.5.16.0 서비스 팩을 적용하면 규칙 편집기가 열리지 않습니다. (FORMS-8290)
 * Numeric Box 구성 요소에 최대 자릿수 유효성 검사가 적용되면 실패합니다. (FORMS-7938)
 * 대화형 통신 문을 만드는 동안 PDF의 차트 구성 요소가 제대로 생성되지 않습니다. (FORMS-7827, FORMS-8297)
 * Java™ 가비지 수집이 Experience Manager Forms OSGi 서버에서 오래된 일반 힙을 지울 수 없습니다. (FORMS-8207)
