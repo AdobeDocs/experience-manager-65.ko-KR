@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 2c9337af99811d7b58712e1d0def7b5af5661c11
+source-git-commit: 36edc2507d9acd7d5f94e433a654ccc1647bb58a
 workflow-type: tm+mt
-source-wordcount: '3567'
+source-wordcount: '3568'
 ht-degree: 9%
 
 ---
@@ -187,7 +187,7 @@ org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supporte
 * 페이지의 언어 사본이 예상대로 업데이트되지 않았습니다. (SITES-11191)
 * 캠페인이 아닌 페이지 호출 열기 `targeteditor.html` 불필요하게. 제거 `targeteditor` 필요하지 않은 경우 를 호출합니다. (SITES-12469)
 * 주석이 있는 페이지에 대해서는 라이브 카피를 만들 수 없습니다. (SITES-12154)
-* 페이지 롤아웃이 Experience Manager 6.5.16에서 작동 중입니다. (SITES-12008)
+* Experience Manager 6.5.16에서 페이지 롤아웃이 작동하지 않습니다. (SITES-12008)
 * 메모리 부족, 다음과 같은 이유로 높은 가비지 수집 활동 `NotificationManagerImpl`. `NotificationManager` Experience Manager 6.5로 번들 업그레이드. (SITES-11440)
 * 서비스 팩 17을 차단하던 WCM IT 테스트를 수정했습니다. (SITES-13089)
 * 서블릿에서 사이트 참조 검색이 실패합니다. (SITES-10901)
