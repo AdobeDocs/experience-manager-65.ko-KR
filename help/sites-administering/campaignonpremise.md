@@ -1,8 +1,6 @@
 ---
-title: Adobe Campaign Classic과 통합
-seo-title: Integrating with Adobe Campaign Classic
-description: AEM을 Adobe Campaign Classic과 통합하는 방법 알아보기
-seo-description: Learn how to integrate AEM with Adobe Campaign Classic
+title: AEM 6.5와 Adobe Campaign Classic 통합
+description: AEM 6.5를 Adobe Campaign Classic과 통합하는 방법 알아보기
 uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,19 +8,23 @@ topic-tags: integration
 content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 4712f57808ae769646b00d1098648686815121b6
+source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 67%
+source-wordcount: '1583'
+ht-degree: 66%
 
 ---
 
 
-# Adobe Campaign Classic과 통합 {#integrating-campaign-classic}
+# AEM 6.5와 Adobe Campaign Classic 통합 {#integrating-campaign-classic}
 
-AEM을 Adobe Campaign과 통합하여 AEM에서 이메일 게재, 콘텐츠 및 양식을 직접 관리할 수 있습니다. 솔루션 간 양방향 통신이 가능하려면 Adobe Campaign Classic과 AEM 모두에서 구성 단계를 수행해야 합니다.
+AEM을 ACC(Adobe Campaign Classic)와 통합하여 AEM에서 이메일 게재, 콘텐츠 및 양식을 직접 관리할 수 있습니다. 솔루션 간 양방향 통신이 가능하려면 Adobe Campaign Classic과 AEM 모두에서 구성 단계를 수행해야 합니다.
 
 이 통합을 통해 AEM 및 Adobe Campaign Classic을 독립적으로 사용할 수 있습니다. 마케터는 Adobe Campaign에서 캠페인을 만들고 타깃팅을 사용할 수 있으며, 동시에 콘텐츠 크리에이터는 AEM에서 콘텐츠 디자인 작업을 할 수 있습니다. 통합을 사용하여 AEM에서 만든 캠페인의 콘텐츠와 디자인을 Adobe Campaign에서 타겟팅하고 전달할 수 있습니다.
+
+>[!INFO]
+>
+>이 문서에서는 Adobe Campaign Classic을 AEM 6.5와 통합하는 방법에 대해 자세히 설명합니다. 다른 Campaign 통합에 대해서는 문서를 참조하십시오 [AEM 6.5와 Adobe Campaign 통합.](campaign.md)
 
 ## 통합 단계 {#integration-steps}
 
@@ -197,6 +199,7 @@ AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하�
 외부화를 구성했으므로 Adobe Campaign에서 이제 콘텐츠에 액세스할 수 있습니다.
 
 >[!NOTE]
+>
 게시 인스턴스는 Adobe Campaign 서버에서 접근 가능해야 합니다. 다음을 가리킬 경우 `localhost:4503` 또는 Adobe Campaign에서 연결할 수 없는 다른 서버에서는 AEM의 이미지가 Adobe Campaign 콘솔에 표시되지 않습니다.
 
 ## AEM에서 캠페인 원격 사용자 구성 {#configure-user}

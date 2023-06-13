@@ -1,8 +1,6 @@
 ---
-title: Adobe Campaign Standard과 통합
-seo-title: Integrating with Adobe Campaign Standard
-description: AEM을 Adobe Campaign Standard과 통합하는 방법을 알아봅니다.
-seo-description: Learn how to integrate AEM with Adobe Campaign Standard.
+title: AEM 6.5와 Adobe Campaign Standard 통합
+description: AEM 6.5를 Adobe Campaign Standard과 통합하는 방법을 알아봅니다.
 uuid: ef31339e-d925-499c-b8fb-c00ad01e38ad
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,19 +8,23 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: a0062ffbdd6477eca494fea4142d271f3015599a
+source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1834'
 ht-degree: 16%
 
 ---
 
 
-# Adobe Campaign Standard과 통합 {#integrating-with-adobe-campaign-standard}
+# AEM 6.5와 Adobe Campaign Standard 통합 {#integrating-with-adobe-campaign-standard}
 
-AEM을 Adobe Campaign과 통합하여 AEM에서 이메일 게재, 콘텐츠 및 양식을 직접 관리할 수 있습니다. 솔루션 간 양방향 통신이 가능하려면 Adobe Campaign Standard과 AEM 모두에서 구성 단계를 수행해야 합니다.
+AEM 6.5를 ACS(Adobe Campaign Standard)와 통합하여 AEM에서 이메일 게재, 콘텐츠 및 양식을 직접 관리할 수 있습니다. 솔루션 간 양방향 통신이 가능하려면 Adobe Campaign Standard과 AEM 모두에서 구성 단계를 수행해야 합니다.
 
 이 통합을 통해 AEM 및 Adobe Campaign Standard을 독립적으로 사용할 수 있습니다. 마케터는 Adobe Campaign에서 캠페인을 만들고 타깃팅을 사용할 수 있으며, 동시에 콘텐츠 크리에이터는 AEM에서 콘텐츠 디자인 작업을 할 수 있습니다. 통합을 사용하여 AEM에서 만든 캠페인의 콘텐츠와 디자인을 Adobe Campaign에서 타겟팅하고 전달할 수 있습니다.
+
+>[!INFO]
+>
+>이 문서에서는 Adobe Campaign Standard을 AEM 6.5와 통합하는 방법에 대해 자세히 설명합니다. 다른 Campaign 통합에 대해서는 문서를 참조하십시오 [AEM 6.5와 Adobe Campaign 통합.](campaign.md)
 
 ## 통합 단계 {#integration-steps}
 
@@ -189,7 +191,7 @@ AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하�
 
 1. 관리자 자격으로 AEM 제작 인스턴스에 로그인합니다.
 1. 전역 탐색 측면 레일에서 을 선택합니다. **도구** > **작업** > **웹 콘솔** > **OSGi 구성** 및 검색 **일별 CQ 링크 외부화**.
-1. 기본적으로 의 마지막 항목은 **도메인** 필드는 게시 인스턴스를 위한 것입니다. 기본값에서 URL 변경 `http://localhost:4503` 을 클릭하여 공개적으로 사용할 수 있는 게시 인스턴스로 만듭니다.
+1. 기본적으로 의 마지막 항목은 **도메인** 필드는 게시 인스턴스를 위한 것입니다. 기본값에서 URL 변경 `http://localhost:4503` 을 클릭하여 공개적으로 사용할 수 있는 게시 인스턴스에 게시합니다.
 
    ![외부화 구성](assets/acc-externalizer-config.png)
 
@@ -198,6 +200,7 @@ AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하�
 외부화를 구성했으므로 Adobe Campaign에서 이제 콘텐츠에 액세스할 수 있습니다.
 
 >[!NOTE]
+>
 게시 인스턴스는 Adobe Campaign 서버에서 접근 가능해야 합니다. 다음을 가리킬 경우 `localhost:4503` 또는 Adobe Campaign에서 연결할 수 없는 다른 서버에서는 AEM의 이미지가 Adobe Campaign 콘솔에 표시되지 않습니다.
 
 ## AEM에서 캠페인 원격 사용자 구성 {#campaign-remote-user}
