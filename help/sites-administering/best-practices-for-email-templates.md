@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 70be796a50a93267b965d00db1b359d9a809ec08
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1070'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->AEM 이메일 구성 요소는 더 이상 사용되지 않습니다. 콘텐츠와 스타일을 병합하는 이메일의 특성상 AEM에서 즉시 제공하는 이메일 구성 요소는 프로젝트에 필요한 모든 구성 요소로 사용자 정의 스타일을 구현해야 하므로 고객이 제한적으로 재사용할 수 있습니다.
+>이 문서는 더 이상 사용되지 않는 기초 구성 요소 기반 AEM 이메일 구성 요소에 적용됩니다.
 >
->이메일 구성 요소는 프로젝트 수준에서 구현할 수 있으며, 더 이상 사용되지 않는 AEM 이메일 구성 요소는 이를 구현하는 방법을 보여 줍니다. 단, 이렇게 사용되지 않는 구성 요소는 프로젝트에서 사용할 수 없습니다.
+>사용자는 최신 버전을 활용하는 것이 좋습니다 [핵심 구성 요소의 이메일 구성 요소.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 이 문서에서는 이메일 디자인 관련 모범 사례 중 일부를 설명합니다. 이렇게 하면 이메일 캠페인 템플릿이 제대로 개발됩니다.
 

@@ -1,8 +1,6 @@
 ---
 title: Adobe Campaign과 통합
-seo-title: Integrating with Adobe Campaign
-description: AEM을 Adobe Campaign과 통합하는 방법을 알아봅니다.
-seo-description: Learn how to integrate AEM with Adobe Campaign.
+description: Adobe Campaign과의 통합을 위한 AEM as a Cloud Service의 지원에 대해 알아보십시오.
 uuid: 6113279e-d1f5-46c3-ac94-50270fa55060
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,29 +8,48 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d02a8eaba853bf96c7f706e924b4286275d582aa
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 5%
+source-wordcount: '239'
+ht-degree: 14%
 
 ---
 
+
 # Adobe Campaign과 통합{#integrating-with-adobe-campaign}
+
+Adobe Campaign과의 통합을 위한 AEM as a Cloud Service의 지원에 대해 알아보십시오.
 
 Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 개인화하고 게재할 수 있는 솔루션 세트입니다.
 
-이 AEM 버전을 다음 Adobe Campaign 버전 중 하나와 통합할 수 있습니다.
+## Adobe Campaign Classic과 통합 {#acc}
 
-* Adobe Campaign 6.1 - 온프레미스 솔루션
-* Adobe Campaign Standard - 구독 기반 솔루션
+많은 ACC(Adobe Campaign Classic) 버전이 있습니다. AEM과의 통합에 대한 지원은 구현한 ACC 버전과 AEM이 AMS(Adobe 관리 서비스)의 온프레미스에 설치되어 있는지에 따라 다릅니다.
 
-이 설명서에서는 AEM을 Adobe Campaign과 통합하는 방법을 설명합니다. 구독 기반 솔루션과 온프레미스 솔루션 중 어느 것을 사용하는지에 따라 통합 단계는 약간 달라집니다.
+| ACC 버전 | AEM 6.5와 통합 <br>온-프레미스 | AEM 6.5와 통합<br>AMS |
+|---|---|---|
+| [v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 지원됨 | 지원됨 |
+| [v8](https://experienceleague.adobe.com/docs/campaign-v8.html) | 지원됨 | 지원됨 |
+| 웹 UI* | 지원됨 | 지원됨 |
 
-* [Adobe Campaign 6.1과 통합](/help/sites-administering/campaignonpremise.md)
+*Adobe Campaign Classic의 웹 UI는 2023년 말에 출시될 예정입니다.
+
+다음 설명서는 AEM을 Adobe Campaign Classic과 통합하는 방법을 설명합니다.
+
+* [Adobe Campaign Classic과 통합](/help/sites-administering/campaignonpremise.md)
+* [이메일 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+* [Adobe Campaign Classic 통합 문제 해결](/help/sites-administering/troubleshooting-campaignintegration.md)
+
+## Adobe Campaign Standard과 통합 {#acs}
+
+ACS(Adobe Campaign Standard)와 AEM의 통합은 AEM이 AMS(Adobe 관리 서비스)의 온프레미스에 설치되어 있는지 여부에 따라 다릅니다.
+
+| AEM 6.5와 통합 <br>온-프레미스 | AEM 6.5와 통합<br>AMS |
+|---|---|
+| 지원됨 | 지원됨 |
+| 지원됨 | 지원됨 |
+
+다음 설명서는 AEM을 Adobe Campaign Standard과 통합하는 방법을 설명합니다.
+
 * [Adobe Campaign Standard과 통합](/help/sites-administering/campaignstandard.md)
-* [이메일 템플릿에 대한 우수 사례](/help/sites-administering/best-practices-for-email-templates.md)
-* [Adobe Campaign 통합 문제 해결](/help/sites-administering/troubleshooting-campaignintegration.md)
-
->[!NOTE]
->
->관련 AEM Community 문서를 검토하려면 다음을 참조하십시오. [Adobe Experience Manager 및 Adobe Campaign Standard을 통합하여 뉴레터 만들기](https://helpx.adobe.com/experience-manager/using/aem_campaign.html).
+* [이메일 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
