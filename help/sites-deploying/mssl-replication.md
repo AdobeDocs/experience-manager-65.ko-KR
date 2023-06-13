@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1392'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 3%
 
 * 개인 키는 pkcs#12 또는 JKS 형식으로 포함해야 합니다.
 * 인증서는 pkcs#12 또는 JKS 형식이어야 합니다. &quot;CER&quot; 형식에 포함된 인증서를 Granite Truststore에 추가할 수도 있습니다.
-* 인증서는 자체 서명하거나 인증된 CA에 의해 서명될 수 있습니다.
+* 인증서는 자체 서명되거나 인증된 CA에 의해 서명될 수 있습니다.
 
 ### JKS 형식 {#jks-format}
 
@@ -202,8 +202,7 @@ pkcs#12 형식의 개인 키와 인증서를 생성합니다. 사용 [openSSL](h
 ### 작성자 인증서 설치 {#install-the-author-certificate}
 
 1. 게시 인스턴스에 대한 [사용자 관리] 페이지를 엽니다. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. 복제 요청을 실행하는 데 사용하는 사용자 계정을 찾은 다음 사용자 이름을 클릭하거나 탭합니다.
-1. [계정 설정] 영역에 [TrustStore 생성] 링크가 나타나면 링크를 클릭하고 TrustStore에 대한 암호를 만든 다음 [확인]을 클릭합니다.
+1. Create TrustStore 링크가 글로벌 Trust Store 영역에 나타나면 링크를 클릭하고 TrustStore에 대한 암호를 만든 다음 확인을 클릭합니다.
 1. 계정 설정 영역에서 TrustStore 관리를 클릭합니다.
 1. CER 파일에서 인증서 추가를 클릭합니다.
 1. 인증서를 사용자에게 매핑 옵션이 선택되어 있는지 확인합니다. 인증서 파일 선택 을 클릭하고 author.cer 를 선택한 다음 열기 를 클릭합니다.
