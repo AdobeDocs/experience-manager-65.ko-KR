@@ -1,8 +1,6 @@
 ---
 title: 블로그 기능
-seo-title: Blog Feature
 description: 저널링 형식의 커뮤니티 정보
-seo-description: Community information in a journaling format
 uuid: 7323063f-81e8-45c3-9035-bf7df6124830
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1652'
 ht-degree: 6%
 
 ---
@@ -59,13 +57,13 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md).
 
-다음의 경우 [필수 클라이언트측 라이브러리](/help/communities/blog-developer-basics.md#essentials-for-client-side) 포함됩니다. 이렇게 하면 `Blog` 구성 요소가 표시됩니다.
+다음의 경우 [필수 클라이언트측 라이브러리](/help/communities/blog-developer-basics.md#essentials-for-client-side) 포함됩니다. `Blog` 구성 요소는 다음과 같이 표시됩니다.
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### 블로그 구성 {#configuring-blog}
 
-배치된 을(를) 선택합니다 `Blog` 에 액세스하고 선택할 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 을(를) 선택합니다 `Blog` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
 
 ![구성](assets/configure-new.png)
 
@@ -147,7 +145,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 * **허용되는 파일 유형**
 
-  다음과 같은 경우에만 관련됨 `Allow File Uploads` 이(가) 선택되었습니다. &quot;점&quot; 분리자가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf 지정한 파일 유형이 있으면 지정하지 않은 파일 유형을 업로드할 수 없습니다. 기본값은 모든 파일 형식이 허용되도록 지정되지 않습니다.
+  다음과 같은 경우에만 관련됨 `Allow File Uploads` 이(가) 선택되었습니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf 지정된 파일 유형이 있으면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 기본값은 모든 파일 형식이 허용되도록 지정되지 않습니다.
 
 * **이미지 첨부 파일 최대 크기**
 
@@ -181,11 +179,11 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 * **특별 포함된 컨텐츠 허용**
 
-  선택하면 아이디어를 다음으로 식별할 수 있습니다. [특별 포함된 컨텐츠](/help/communities/featured.md). 기본값은 선택 취소되어 있습니다.
+  선택하면 해당 아이디어가 (으)로 식별됩니다. [특별 포함된 컨텐츠](/help/communities/featured.md). 기본값은 선택 취소되어 있습니다.
 
 * **언급 활성화**
 
-  활성화된 경우, 등록된 커뮤니티 사용자가 다른 등록된 구성원(이름, 성, 사용자 이름 사용)을 식별하고 일반 @user-name 구문을 사용하여 해당 구성원에 태그를 지정할 수 있도록 합니다. 태그 지정된 사용자가 해당 언급 내용에 대한 알림을 받습니다.
+  활성화된 경우, 등록된 커뮤니티 사용자가 다른 등록된 구성원(이름, 성, 사용자 이름 사용)을 식별하고 일반 @user-name 구문을 사용하여 해당 구성원에 태그를 지정할 수 있도록 합니다. 태그가 지정된 사용자는 자신의 언급에 대한 알림을 받습니다.
 
 * **최대 언급 수**
 
@@ -193,7 +191,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 * **UI 언급 패턴**
 
-  게시물에 등록된 사용자를 태그 지정(@mention)할 허용 패턴 문자열을 지정합니다. 예 `~{{familyName}}{{givenName}}`.
+  게시물에 등록된 사용자를 태그 지정(@mention)할 허용 패턴 문자열을 지정합니다. (예: `~{{familyName}}{{givenName}}`)
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
@@ -229,7 +227,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 #### 태그 필드 탭 {#tag-field-tab}
 
-아래 **태그 필드** 탭에서는 다음과 같은 경우에 적용할 태그를 지정합니다. **태깅 허용** 다음에서 확인: **설정** 탭 :
+아래 **태그 필드** 탭에서 적용할 수 있는 태그를 지정합니다. **태깅 허용** 다음에서 확인: **설정** 탭 :
 
 * **허용되는 네임스페이스**
 
@@ -249,7 +247,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 * **날짜 형식**
 
-  블로그 게시물 아카이브에 표시하는 데 사용되는 형식입니다. 이 형식은 Java 규칙에 따라 자리 표시자를 사용합니다.
+  블로그 게시물 아카이브에 표시하는 데 사용되는 형식입니다. 이 형식은 Java™ 규칙에 따라 자리 표시자를 사용합니다.
 
    * yyyy : &#39;2015&#39;와 같은 전체 연도
    * yy : &#39;15&#39;와 같은 간단한 연도
@@ -267,9 +265,9 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
    * 범주
    * 아카이브
 
-* **Blopg 구성 요소 경로**
+* **블로그 구성 요소 경로**
 
-  *(선택 사항)* 블로그 기사를 나열할 블로그 리소스의 위치입니다. 비워 두면 resourceType의 구성 요소를 사용합니다. `social/journal/components/hbs/journal` 동일한 페이지에 표시됩니다.
+  *(선택 사항)* 블로그 기사를 나열할 블로그 리소스의 위치입니다. 비워 두면 resourceType의 구성 요소가 사용됩니다 `social/journal/components/hbs/journal` 동일한 페이지에 표시됩니다.
 
    * 예, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -279,7 +277,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
-게시 환경에서 블로그 기능은 가장 최근의 블로그 기사, 그리고 오래된 블로그 기사를 내림차순으로 표시합니다. 블로그 사이드바를 통해 사이트 방문자는 필터를 적용하여 표시되는 블로그 기사 선택을 제한할 수 있습니다.
+게시 환경에서 블로그 기능은 가장 최근의 블로그 기사, 그리고 오래된 블로그 기사를 작성 순서대로 표시합니다. 블로그 사이드바를 통해 사이트 방문자는 필터를 적용하여 표시되는 블로그 기사 선택을 제한할 수 있습니다.
 
 블로그 기사 뒤에 댓글을 게시하거나 볼 수 있는 링크가 있습니다.
 
@@ -289,13 +287,13 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 ### 문서 작업 {#working-with-articles}
 
-새 블로그 문서를 만들 때 선택할 수 있는 옵션은 다음과 같습니다.
+블로그 문서를 만들 때 다음을 수행할 수 있습니다.
 
 1. 즉시 게시
 1. 초안 게시
 1. 예약된 날짜 및 시간에 게시
 
-블로그 기사는 게시할 때 작성할 수 있는 구성원에게 적절한 탭(게시됨, 초안 또는 예약됨) 아래에 표시됩니다.
+블로그 문서는 게시할 때 작성할 수 있는 구성원에게 적절한 탭(게시됨, 초안 또는 예약됨) 아래에 표시됩니다.
 
 #### 중재자 및 관리자 {#moderators-and-administrators}
 
@@ -309,7 +307,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 특히 다음과 같은 경우가 있습니다.
 
-* 새 블로그 문서 만들기
+* 블로그 문서 만들기
 * 다른 구성원을 대신하여 새 블로그 게시물
 * 블로그 기사에 댓글 게시
 * 자신의 블로그 기사 또는 댓글 편집

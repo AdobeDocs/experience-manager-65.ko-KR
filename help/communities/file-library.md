@@ -1,8 +1,6 @@
 ---
 title: 파일 라이브러리 기능
-seo-title: File Library Feature
 description: 파일 라이브러리 기능을 사용하면 로그인한 사이트 방문자가 파일을 업로드하고, 관리하고, 다운로드할 수 있습니다
-seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '733'
 ht-degree: 8%
 
 ---
@@ -35,17 +33,17 @@ ht-degree: 8%
 
 * `Communities / File Library`
 
-을 페이지에 끌어서 놓습니다.
+그리고 페이지에 있는 제자리에 드래그합니다.
 
 필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md).
 
-다음의 경우 [필수 클라이언트측 라이브러리](/help/communities/essentials-file-library.md#essentials-for-client-side) 포함됩니다. 이렇게 하면 `File Library` 구성 요소가 표시됩니다.
+다음의 경우 [필수 클라이언트측 라이브러리](/help/communities/essentials-file-library.md#essentials-for-client-side) 포함됩니다. 다음과 같은 방식으로 `File Library` 구성 요소가 표시됩니다.
 
 ![file-library1](assets/file-library1.png)
 
 ### 파일 라이브러리 구성 {#configuring-file-library}
 
-배치된 을(를) 선택합니다 `File Library` 에 액세스하고 선택할 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 을(를) 선택합니다 `File Library` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
 
 ![새로 구성](assets/configure-new.png)
 
@@ -65,7 +63,7 @@ ht-degree: 8%
 
 * **최대 파일 크기**
 
-  이 값은 업로드된 파일 크기를 제한합니다. 기본 제한은 104857600(10Mb)입니다.
+  이 값은 업로드되는 파일 크기를 제한합니다. 기본 제한은 104857600(10MB)입니다.
 
 * **최대 메시지 길이**
 
@@ -73,7 +71,7 @@ ht-degree: 8%
 
 * **허용되는 파일 유형**
 
-  &quot;점&quot; 분리자가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf 지정한 파일 형식이 있으면 지정하지 않은 파일 형식은 허용되지 않습니다. 모든 파일 형식이 허용되도록 기본값이 지정되지 않습니다.
+  &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정하면 지정되지 않은 파일 유형은 허용되지 않습니다. 모든 파일 형식이 허용되도록 기본값이 지정되지 않습니다.
 
 * **리치 텍스트 편집기**
 
@@ -89,7 +87,7 @@ ht-degree: 8%
 
 * **허용되는 네임스페이스**
 
-  태깅 허용이 선택되면, 사용 가능한 태그는 선택된 네임스페이스로 제한됩니다. 선택된 항목이 없으면 모두 허용됩니다. 기본값은 모든 네임스페이스입니다.
+  태깅 허용이 선택된 경우 사용 가능한 태그는 선택된 네임스페이스로 제한됩니다. 네임스페이스를 선택하지 않으면 모두 허용됩니다. 기본값은 모든 네임스페이스입니다.
 
 * **제안 한도**
 
@@ -97,7 +95,7 @@ ht-degree: 8%
 
 * **투표 허용**
 
-  선택하면 파일에 대해 투표할 수 있는 기능이 활성화됩니다. 기본값은 선택 취소되어 있습니다.
+  선택하면 파일에 투표할 수 있는 기능이 활성화됩니다. 기본값은 선택 취소되어 있습니다.
 
 * **다음 허용**
 
@@ -113,7 +111,7 @@ ht-degree: 8%
 
 * **UI 언급 패턴**
 
-  허용 패턴 문자열을 지정하여 게시물에 등록된 사용자@mention 태그 지정(삭제)합니다. 예 `~{{familyName}}{{givenName}}`.
+  게시물에 등록된 사용자를 태그 지정(@mention)할 수 있도록 허용된 패턴 문자열을 지정합니다. (예: `~{{familyName}}{{givenName}}`)
 
 * **스레드된 회신 허용**
 
@@ -129,7 +127,7 @@ ht-degree: 8%
 
 * **댓글 삭제**
 
-  선택하면 댓글을 게시한 방문자에게 댓글을 삭제할 수 있는 권한이 제공됩니다. 기본값은 선택되어 있습니다.
+  선택하면 댓글을 게시한 방문자가 원할 경우 삭제할 수 있습니다. 기본값은 선택되어 있습니다.
 
 * **댓글 거부**
 

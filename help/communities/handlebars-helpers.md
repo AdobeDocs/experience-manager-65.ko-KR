@@ -1,8 +1,6 @@
 ---
 title: SCF Handlebars 도우미
-seo-title: SCF Handlebars Helpers
 description: SCF와 작업할 수 있도록 Handlebars 도우미 메서드
-seo-description: Handlebars Helper methods to facilitate work with SCF
 uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +8,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1473'
 ht-degree: 2%
 
 ---
@@ -113,7 +111,7 @@ Then abbreviate would return
 
 * **safeString**: 부울
 
-  (선택 사항) 결과를 반환하기 전에 Handlebars.SafeString() 적용 여부를 나타내는 부울 값. 기본값은 false입니다.
+  (선택 사항) 결과를 반환하기 전에 Handlebars.SafeString()을 적용할지 여부를 나타내는 부울 값. 기본값은 false입니다.
 
 ### 예 {#example}
 
@@ -183,7 +181,7 @@ Then content-loadmore would return
 
 ## If-wcm 모드 {#if-wcm-mode}
 
-의 현재 값을 테스트하는 블록 도우미 [WCM 모드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) 문자열로 구분된 모드 목록.
+의 현재 값을 테스트하는 블록 도우미 [WCM 모드](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) 문자열로 구분된 모드 목록.
 
 ### 매개변수 {#parameters-4}
 
@@ -193,7 +191,7 @@ Then content-loadmore would return
 
 * **모드**: 문자열
 
-  (선택 사항) 쉼표로 구분된 목록 [WCM 모드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) 을 클릭하여 테스트를 수행합니다.
+  (선택 사항) 쉼표로 구분된 목록 [WCM 모드](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) 을 클릭하여 테스트를 수행합니다.
 
 ### 예 {#example-2}
 
@@ -236,9 +234,9 @@ Then content-loadmore would return
 
 구성 요소를 템플릿에 존재하지 않는 리소스로 포함하는 도우미.
 
-이렇게 하면 JCR 노드로 추가된 리소스에 대해 가능한 것보다 쉽게 리소스를 프로그래밍 방식으로 사용자 지정할 수 있습니다. 다음을 참조하십시오 [커뮤니티 구성 요소 추가 또는 포함](scf.md#add-or-include-a-communities-component).
+이 메서드를 사용하면 JCR 노드로 추가된 리소스에 대해 가능한 것보다 쉽게 리소스를 프로그래밍 방식으로 사용자 지정할 수 있습니다. 다음을 참조하십시오 [커뮤니티 구성 요소 추가 또는 포함](scf.md#add-or-include-a-communities-component).
 
-일부 Communities 구성 요소만 포함할 수 있습니다. AEM 6.1의 경우 포함할 수 있는 것은 다음과 같습니다 [댓글](essentials-comments.md), [등급](rating-basics.md), [리뷰](reviews-basics.md), 및 [투표](essentials-voting.md).
+일부 Communities 구성 요소만 포함할 수 있습니다. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
 서버측에만 적합한 이 도우미는 다음과 유사한 기능을 제공합니다. [cq:include](../../help/sites-developing/taglib.md) jsp 스크립트용
 
@@ -274,11 +272,11 @@ Then content-loadmore would return
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-다음 위치에 새 주석 구성 요소가 포함됩니다. `this.id` + /comments.
+다음 위치에 새 주석 구성 요소 포함 `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
-js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리를 포함하는 도우미입니다. 다른 유형의 여러 포함(예: js 및 css)의 경우 이 태그는 Handlebars 스크립트에서 여러 번 사용해야 합니다.
+js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리를 포함하는 도우미입니다. 다른 유형의 여러 포함(예: js 및 css)의 경우 Handlebars 스크립트에서 이 태그를 여러 번 사용해야 합니다.
 
 서버측에만 적합한 이 도우미는 다음과 유사한 기능을 제공합니다. [ui:includeClientLib](../../help/sites-developing/taglib.md) jsp 스크립트용
 
@@ -286,19 +284,19 @@ js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라
 
 * **카테고리**: 문자열
 
-  (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 여기에는 해당 범주에 대한 모든 Javascript 및 CSS 라이브러리가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
+  (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 지정된 범주에 대한 모든 JavaScript 및 CSS 라이브러리를 포함합니다. 요청에서 테마 이름이 추출됩니다.
 
 * **테마**: 문자열
 
-  (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 여기에는 지정된 카테고리에 대한 모든 테마 관련 라이브러리(CSS 및 JS 모두)가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
+  (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 지정된 카테고리에 대한 모든 테마 관련 라이브러리(CSS 및 JS 모두)를 포함합니다. 요청에서 테마 이름이 추출됩니다.
 
 * **js**: 문자열
 
-  (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 여기에는 지정된 범주에 대한 모든 Javascript 라이브러리가 포함됩니다.
+  (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 지정된 범주에 대한 모든 JavaScript 라이브러리를 포함합니다.
 
 * **css**: 문자열
 
-  (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 여기에는 해당 카테고리의 모든 CSS 라이브러리가 포함됩니다.
+  (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 범주의 목록입니다. 지정된 카테고리의 모든 CSS 라이브러리를 포함합니다.
 
 ### 예 {#examples-2}
 
@@ -379,7 +377,7 @@ Depending on how long in the past, may return
 
 XSS를 방지하는 데 도움이 되도록 HTML 요소 컨텐츠에 대한 소스 문자열을 인코딩하는 도우미입니다.
 
-참고: 유효성 검사기가 아니므로 속성 값 작성에 사용할 수 없습니다.
+참고: 이 헬퍼는 유효성 검사기가 아니므로 속성 값을 작성하는 데 사용할 수 없습니다.
 
 ### 매개변수 {#parameters-9}
 
@@ -397,7 +395,7 @@ XSS를 방지하는 데 도움이 되도록 HTML 요소 컨텐츠에 대한 소�
 
 XSS를 방지하기 위해 HTML 속성 값에 쓰기 위한 소스 문자열을 인코딩하는 도우미입니다.
 
-참고: 유효성 검사기가 아니므로 실행 가능한 특성(href, src, 이벤트 핸들러)을 작성하는 데 사용할 수 없습니다.
+참고: 이 헬퍼는 유효성 검사기가 아니므로 실행 가능한 속성(href, src, 이벤트 핸들러)을 작성하는 데 사용할 수 없습니다.
 
 ### 매개변수 {#parameters-10}
 
@@ -415,7 +413,7 @@ XSS를 방지하기 위해 HTML 속성 값에 쓰기 위한 소스 문자열을 
 
 XSS를 방지하는 데 도움이 되도록 JavaScript 문자열 컨텐츠에 작성하기 위한 소스 문자열을 인코딩하는 도우미입니다.
 
-참고: 유효성 검사기가 아니며 임의의 JavaScript에 쓰는 데 사용할 수 없습니다.
+참고: 이 헬퍼는 유효성 검사기가 아니며 임의의 JavaScript에 쓰는 데 사용할 수 없습니다.
 
 ### 매개변수 {#parameters-11}
 
@@ -433,7 +431,7 @@ var input = {{xss-jsString topic-title}}
 
 XSS를 방지하기 위해 HTML href 또는 소스 속성 값으로 작성하기 위한 URL을 살균하는 도우미입니다.
 
-참고: 빈 문자열을 반환할 수 있습니다.
+참고: 이 헬퍼는 빈 문자열을 반환할 수 있습니다.
 
 ### 매개변수 {#parameters-12}
 
@@ -450,7 +448,7 @@ XSS를 방지하기 위해 HTML href 또는 소스 속성 값으로 작성하기
 ## Handlebars.js 기본 개요 {#handlebars-js-basic-overview}
 
 * Handlebars 도우미 호출은 단순 식별자입니다(다음 식별자). *이름* 뒤에 0개 이상의 공백으로 구분된 매개 변수가 옵니다.
-* 매개 변수는 간단한 문자열, 숫자, 부울 또는 JSON 개체일 수 있으며 마지막 매개 변수로서 키-값 쌍의 선택적 시퀀스(해시 인수)일 수도 있습니다.
+* 매개 변수는 간단한 문자열, 숫자, 부울 또는 JSON 개체일 수 있으며 마지막 매개 변수로서 키-값 쌍의 선택적 시퀀스(해시 인수)입니다.
 * 해시 인수의 키는 단순 식별자여야 합니다.
 * 해시 인수의 값은 단순 식별자, 경로 또는 문자열과 같은 Handlebars 표현식입니다.
 * 현재 컨텍스트, `this`는 Handlebars 도우미에서 항상 사용할 수 있습니다.
@@ -522,11 +520,11 @@ template(data);
 
 ## 사용자 지정 SCF 도우미 {#custom-scf-helpers}
 
-특히 데이터를 전달할 때 서버측과 클라이언트측에서 사용자 정의 도우미를 구현해야 합니다. SCF의 경우, 페이지가 요청될 때 서버가 주어진 구성 요소에 대한 HTML을 생성하므로 대부분의 템플릿이 서버측에서 컴파일되고 렌더링됩니다.
+특히 데이터를 전달할 때 서버측과 클라이언트측에 사용자 정의 도우미를 구현해야 합니다. SCF의 경우, 페이지가 요청될 때 서버가 주어진 구성 요소에 대한 HTML을 생성하므로 대부분의 템플릿이 서버측에서 컴파일되고 렌더링됩니다.
 
 ### 서버측 사용자 정의 도우미 {#server-side-custom-helpers}
 
-서버측에서 사용자 지정 SCF 도우미를 구현하고 등록하려면 Java 인터페이스를 구현하면 됩니다 [TemplateHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), 다음 항목으로 설정 [OSGi 서비스](../../help/sites-developing/the-basics.md#osgi) OSGi 번들의 일부로 설치합니다.
+서버측에서 사용자 지정 SCF 도우미를 구현하고 등록하려면 Java™ 인터페이스를 구현하면 됩니다 [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), 다음 항목으로 설정 [OSGi 서비스](../../help/sites-developing/the-basics.md#osgi) OSGi 번들의 일부로 설치합니다.
 
 예:
 
