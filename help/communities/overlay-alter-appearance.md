@@ -1,8 +1,6 @@
 ---
 title: 모양 변경
-seo-title: Alter the Appearance
 description: 스크립트 수정
-seo-description: Modify the script
 uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -44,7 +42,7 @@ comment.hbs 스크립트는 각 댓글에 대한 전체 HTML을 작성합니다.
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-선을 삭제하거나 다음으로 둘러싸기 `<!--` 및 `-->` 코멘트를 달면 또한 아바타가 어디에 있었을 지에 대한 시각적 표시기로 &#39;xxx&#39; 문자가 추가되고 있습니다.
+선을 삭제하거나 다음으로 둘러싸기 `<!--` 및 `-->` 그래서 당신은 그들을 언급합니다. 또한 아바타가 어디에 있었을 지에 대한 시각적 표시기로 &#39;xxx&#39; 문자가 추가되고 있습니다.
 
 ```xml
    xxx
@@ -63,14 +61,14 @@ comment.hbs 스크립트는 각 댓글에 대한 전체 HTML을 작성합니다.
 
 전역 탐색에서 을 선택합니다. **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** 및 클릭 **[!UICONTROL 트리 활성화]**.
 
-시작 경로에 대해 를 입력합니다. `/apps/social/commons` 및 선택 **[!UICONTROL 활성화]**.
+시작 경로에 를 입력합니다. `/apps/social/commons` 및 선택 **[!UICONTROL 활성화]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
 ### 결과 보기 {#view-results}
 
-게시 인스턴스에 관리자로 로그인하는 경우(예: https://localhost:4503/crx/de as admin/admin) 오버레이된 구성 요소가 있는지 확인할 수 있습니다.
+게시 인스턴스에 관리자로 로그온하는 경우(예: https://localhost:4503/crx/de as admin/admin) 오버레이된 구성 요소가 있는지 확인할 수 있습니다.
 
-로그아웃했다가 로 다시 로그인하는 경우 `aaron.mcdonald@mailinator.com/password` 페이지를 새로 고치면 게시된 댓글이 더 이상 아바타와 함께 표시되지 않고, 대신 간단한 &#39;xxx&#39;가 표시됩니다.
+로그오프한 다음 다음으로 로그온하는 경우 `aaron.mcdonald@mailinator.com/password` 페이지를 새로 고치면 아바타가 게시된 댓글과 함께 표시되지 않습니다. 대신 간단한 &#39;xxx&#39;가 표시됩니다.
 
 ![create-template-component](assets/create-template-component.png)

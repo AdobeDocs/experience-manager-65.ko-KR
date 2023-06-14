@@ -1,8 +1,6 @@
 ---
 title: AEM Forms 앱을 위한 환경 설정
-seo-title: Set up environment for AEM Forms app
 description: AEM Forms 앱을 빌드하고 배포하기 위한 하드웨어, 소프트웨어 및 라이센스입니다.
-seo-description: Hardware, software, and licenses to build and deploy the AEM Forms app.
 uuid: 4123a6b7-5766-476c-9afb-f57029b148ad
 contentOwner: robhagat
 content-type: reference
@@ -11,9 +9,9 @@ topic-tags: forms-app
 discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
 docset: aem65
 exl-id: 1d1f9db2-83cf-4612-ac8c-d2638c3bbaea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
@@ -24,24 +22,24 @@ AEM Forms 앱을 빌드하고 배포하려면 다음 하드웨어, 소프트웨�
 
 ## Windows 디바이스용 {#for-windows-devices}
 
-* Microsoft 윈도우
-* Microsoft Visual Studio 2015
-* Microsoft Visual Studio Tools for Apache Cordova
+* Microsoft® 윈도우
+* Microsoft® Visual Studio 2015
+* Microsoft® Visual Studio Tools for Apache Cordova
 
 ## iOS 디바이스용 {#for-ios-devices}
 
-* Mac OS X 10.9.5 이상을 실행하는 인텔 기반 Apple Mac
+* macOS X 10.9.5 이상을 실행하는 인텔 기반 Apple Mac
 * iOS SDK 8.4 이상
 * Xcode 버전: OS X용 Xcode 6.4 이상
 * iOS Developer Enterprise 프로그램 멤버십
 * 사내 iOS 앱 배포를 위한 엔터프라이즈 인증서
 * Apple iPad 및 iOS 8.4 이상
 
-## Android 장치의 경우 {#for-android-devices}
+## Android™ 디바이스용 {#for-android-devices}
 
-* 에서 다운로드할 수 있는 Android 개발 툴킷(ADT 번들) [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
-* 환경이 MAC 시스템에 설정된 경우 Applications 폴더에 ADT를 설치해야 합니다.
-* ADT가 MAC의 다른 위치에 설치되었거나 환경이 Windows 시스템에 설정된 경우 ADT SDK 경로를에서 업데이트해야 합니다 `local.properties` 사용 가능한 파일 `src\android` 추출된 소스 아카이브의 폴더 `mobileworkspace-src.zip`. 이 파일에서 `sdk.dir` 변수를 데스크탑의 ADT SDK 위치에 매핑합니다.
+* 에서 다운로드할 수 있는 Android™ Development Toolkit(ADT 번들) [https://developer.android.com/studio](https://developer.android.com/studio)
+* 환경이 Mac 시스템에 설정된 경우 Applications 폴더에 ADT를 설치해야 합니다.
+* ADT가 Mac의 다른 위치에 설치되었거나 환경이 Windows 시스템에 설정된 경우 ADT SDK 경로를에서 업데이트해야 합니다 `local.properties` 파일. 이 파일은 다음에서 사용할 수 있습니다. `src\android` 추출된 소스 아카이브의 폴더 `mobileworkspace-src.zip`. 이 파일에서 `sdk.dir` 변수를 데스크탑의 ADT SDK 위치에 매핑합니다.
 
 >[!NOTE]
 >

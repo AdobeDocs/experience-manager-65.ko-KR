@@ -1,8 +1,6 @@
 ---
 title: QnA 기본 사항
-seo-title: QnA Essentials
 description: 질문 및 답변 포럼 기능
-seo-description: Questions and answers forum feature
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +8,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '239'
 ht-degree: 2%
 
 ---
@@ -30,7 +28,7 @@ ht-degree: 2%
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">포함하기 쉬워</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component">include</a></td>
    <td>아니요</td>
   </tr>
   <tr>
@@ -56,15 +54,15 @@ ht-degree: 2%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [QnA API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [QnA API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [QnA 엔드포인트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [QnA 엔드포인트](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 
 ### QnA 기능 {#qna-function}
 
-다음을 포함하는 커뮤니티 사이트 구조 [QnA 기능](functions.md#qna-function) 이(가) 을(를) 구성함 `QnA` 구성 요소 및 중재 및 태깅에 영향을 주는 설정입니다. QnA 기능은 [권한이 있는 구성원 사용자 그룹](users.md#privileged-members-group).
+다음을 포함하는 커뮤니티 사이트 구조 [QnA 기능](functions.md#qna-function) 이(가) 구성되었습니다. `QnA` 중재 및 태깅에 영향을 주는 구성 요소 및 설정입니다. QnA 기능은 [권한이 있는 구성원 사용자 그룹](users.md#privileged-members-group).
 
 ### QnA 포럼 게시물 액세스(UGC) {#accessing-qna-forum-posts-ugc}
 
