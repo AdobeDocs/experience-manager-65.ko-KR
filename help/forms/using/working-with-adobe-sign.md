@@ -11,9 +11,9 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 4714554609a10e58b1c7141696d694fac46887a6
+source-git-commit: 66674f0e2621d8786ab4d662cddad373122d8b51
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3855'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,8 @@ ht-degree: 0%
    >
    >    * 사용 [!DNL Adobe Sign] 블록은 필수가 아닙니다. [!DNL Adobe Sign] 를 입력합니다. 를 사용하지 않는 경우 [!DNL Adobe Sign] 서명자에 대한 필드를 차단한 후 서명 문서 하단에 기본 서명 필드가 표시됩니다.
    >    * 사용 [!DNL Adobe Sign] 기록 문서를 자동으로 생성하는 적응형 양식만 차단합니다. 기록 문서 또는 양식 템플릿 기반 적응형 양식을 생성하는 데 사용자 지정 XDP를 사용하는 경우 [!DNL Adobe Sign] 블록은 지원되지 않습니다.
-
+   >
+   >
 
 1. 다음 항목 선택 **[!UICONTROL Adobe Sign 차단]** 구성 요소 및 탭 **편집** ![aem_6_3_edit](assets/aem_6_3_edit.png) 아이콘. 필드를 추가하고 필드의 형식 지정을 지정하는 옵션을 표시합니다.
 
@@ -194,11 +195,13 @@ ht-degree: 0%
 
    * **[!UICONTROL 서명자 이메일 주소]:** 서명자의 이메일 주소를 지정합니다. 서명자는 지정된 이메일 주소에 서명된 문서/양식을 수신합니다. 양식 필드, 로그인한 사용자의 AEM 사용자 프로필에 제공된 이메일 주소를 사용하도록 선택하거나 이메일 주소를 수동으로 입력할 수 있습니다. 필수 단계입니다. 첫 번째 서명자 또는 유일한 서명자(단일 서명자의 경우)의 이메일 주소가 [!DNL Adobe Sign] aem 클라우드 서비스 구성에 사용되는 계정입니다.
 
-   * **[!UICONTROL 서명자 인증 방법]:** 서명할 양식을 열기 전에 사용자를 인증하는 방법을 지정하십시오. 전화, 기술 자료 및 소셜 ID 기반 인증 중에서 선택할 수 있습니다.
+   * **[!UICONTROL 서명자 인증 방법]:** 서명할 양식을 열기 전에 사용자를 인증하는 방법을 지정하십시오. 전화, 기술 자료 및 소셜 ID 기반 인증 중에서 선택할 수 있습니다. Adobe Acrobat Sign Solutions for Government의 경우 전화 및 지식 기반 인증 옵션만 사용할 수 있습니다.
+
    >[!NOTE]
    >
    >    * 기본적으로 소셜 ID 기반 인증은 Facebook, Google 및 LinkedIn을 사용하여 인증할 수 있는 옵션을 제공합니다. 다음으로 문의할 수 있습니다 [!DNL Adobe Sign] 다른 소셜 인증 공급자를 활성화하도록 지원합니다.
-
+   >
+   >
 
    * **[!DNL Adobe Sign]입력하거나 서명할 필드:** 선택 [!DNL Adobe Sign] 서명자용 필드. 적응형 양식에는 여러 개가 포함될 수 있습니다 [!DNL Adobe Sign] 필드. 서명자에 대해 특정 필드를 활성화하도록 선택할 수 있습니다. 필드에는 사용 가능한 모든 항목이 표시됩니다. [!DNL Adobe Sign] 블록. 블록을 선택하면 블록의 모든 필드가 선택됩니다. X 아이콘을 사용하여 필드를 선택 취소할 수 있습니다.
 
@@ -248,7 +251,8 @@ ht-degree: 0%
 
    다음을 사용하여 적응형 양식에 디지털 서명 적용:
 
-   * 클라우드 서명: [디지털 ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) 트러스트 서비스 공급자가 호스팅합니다.
+   * 클라우드 서명: [디지털 ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) 트러스트 서비스 공급자가 호스팅합니다. Adobe Acrobat Sign Solutions for Government에서는 클라우드 서명 옵션을 사용할 수 없습니다.
+
    * Adobe Acrobat 또는 Reader: Adobe Acrobat 또는 Reader으로 문서를 다운로드하여 열고 스마트 카드, USB 토큰 또는 파일 기반 디지털 ID를 사용하여 서명합니다.
 
    클라우드 서명 필드를 적응형 양식에 추가한 후 다음 단계를 수행하여 구성 프로세스를 완료합니다.
@@ -257,7 +261,6 @@ ht-degree: 0%
    * [적응형 양식에 대한 Adobe Sign Cloud Service 선택](../../forms/using/working-with-adobe-sign.md#selectadobesigncloudserviceforanadaptiveform)
    * [적응형 양식에 Adobe Sign 서명자 추가](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)
    * [적응형 양식에 대한 제출 액션 선택](../../forms/using/working-with-adobe-sign.md#selectsubmitactionforanadaptiveform)
-
 
 ## 양식 내 서명 경험 만들기 {#create-in-form-signing-experience}
 
@@ -297,7 +300,6 @@ ht-degree: 0%
    >
    >* 을(를) 드래그 앤 드롭할 때 **[!UICONTROL 서명 단계]** 구성 요소를 양식에 추가합니다. **[!UICONTROL 서명자와 양식 작성자가 동일합니까?]** 옵션이 자동으로 다음으로 설정됨 **예**. 양식 작동을 유지하는 것이 필요합니다.
    >* 최상의 경험을 위해 서명 단계 구성 요소 뒤에 요약 단계 구성 요소를 사용하십시오. 요약 단계는 서명 단계 구성 요소에서 양식 서명을 완료한 후 자동으로 즉시 양식을 제출합니다. 요약 단계를 사용하지 않는 경우 자동 제출은 를 사용하여 설정된 간격 이후에만 트리거됩니다 [Adobe Sign 구성 서비스](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
-
    >
    >몇 가지 모범 사례는 다음과 같습니다.
    >
@@ -306,7 +308,6 @@ ht-degree: 0%
    >* 서명 단계가 포함된 적응형 양식에는 제출 단추를 사용할 수 없습니다.
    >* 서명 단계를 포함하는 적응형 양식에 대한 제출은 백그라운드 서비스 또는 요약 단계를 통해 처리됩니다. 양식을 작성하는 구성된 서명자가 한 명 있는 경우 요약 단계를 사용하여 적응형 양식 제출을 처리할 때 서명자가 양식에 서명했음을 즉시 평가하고 제출 작업을 호출한다는 이점이 있습니다. 백그라운드 서비스는 구성된 모든 서명자가 양식에 서명했는지 여부를 평가하는 데 더 많은 시간이 소요되고 적응형 양식의 제출을 지연시킵니다.
    >* 사용자가 서명 또는 요약 단계가 포함된 패널에서 다시 탐색할 수 없도록 양식을 디자인합니다.
-
 
 
 ### 감사 페이지 또는 요약 단계 구성 요소 구성 {#configure-the-thank-you-page-or-summary-step-component}
