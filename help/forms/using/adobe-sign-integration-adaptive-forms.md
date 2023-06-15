@@ -11,10 +11,10 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 66674f0e2621d8786ab4d662cddad373122d8b51
+source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 18%
+source-wordcount: '1972'
+ht-degree: 19%
 
 ---
 
@@ -91,9 +91,9 @@ ht-degree: 18%
    1. 다음에서 **[!UICONTROL 리디렉션 URL]** 이전 단계에서 복사한 HTTPS URL을 추가합니다.
    1. 에 대해 다음 OAuth 설정을 활성화합니다. [!DNL Adobe Sign] 애플리케이션 및 클릭 **[!UICONTROL 저장]**.
 
-   * aggregation_read
-   * aggregation_write
-   * 집계 보내기
+   * agreement_read
+   * agreement_write
+   * agreement_send
    * widget_write
    * workflow_read
 
@@ -136,9 +136,6 @@ ht-degree: 18%
 
 ## AEM Forms과 Adobe Acrobat Sign Solutions for Government 연결 {#adobe-acrobat-sign-for-government}
 
-[!BADGE 베타 설명서]{type=Caution tooltip="노란색 상태"}
-<span class="preview"> 이 섹션에는 Beta 설명서와 변경 사항이 포함되어 있습니다.</span>
-
 AEM Forms과 Adobe Acrobat Sign Solutions for Government를 연결하는 것은 여러 단계로 구성됩니다. 여기에는 다음이 포함됩니다.
 
 * AEM 인스턴스에 대한 리디렉션 URL 만들기
@@ -168,25 +165,24 @@ AEM Forms과 Adobe Acrobat Sign 솔루션 연결을 시작하기 전에
 1. 구성 페이지에서 을 누릅니다. **[!UICONTROL 만들기]** 만들려면 [!DNL Adobe Acrobat Sign] AEM Forms의 구성
 1. URL에서 현재 브라우저 창의 URL을 메모장에 복사합니다. 이 URL을 라고 합니다. `re-direct URL`. 다음 섹션에서는 `re-direct URL` 및 `Scopes` Adobe Sign 팀 및 요청 자격 증명(클라이언트 ID 및 클라이언트 암호)과 함께 사용할 수 있습니다.
 
+>[!NOTE]
 >
 >
->
-* 사용 [최상위](https://en.wikipedia.org/wiki/Top-level_domain) 도메인 대상: `re-direct URL`. 예, `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
-* 로컬 URL을 (으)로 사용하지 않음 `re-direct URL`. (예: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/SignConfig`)
-> 
+* A `re-direct URL` 다음을 포함해야 함: [최상위](https://en.wikipedia.org/wiki/Top-level_domain) 도메인. 예, `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
+* 로컬 URL을 (으)로 사용하지 않음 `re-direct URL`. (예: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`)
 
 
 #### 리디렉션 URL 및 범위를 Adobe Sign 팀과 공유하고 자격 증명을 받습니다
 
 Adobe Acrobat Sign for Government Solutions 팀은 `re-direct URL` 또한 Adobe Acrobat Sign 애플리케이션(아래 나열됨)에 대해 활성화할 특정 범위를 사용하여 AEM Forms을 Adobe Acrobat Sign Solutions for Government에 연결할 수 있는 자격 증명(클라이언트 ID 및 클라이언트 암호)을 생성할 수 있습니다.
 
-공유 `scopes` (아래에 나열됨) 및 `re-direct URL` Adobe Acrobat Sign for Government Solution 담당자와 함께 이전 섹션의 마지막 단계를 만들고 기록했습니다([Adobe Professional Services 팀원](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password)).
+공유 `scopes` (아래에 나열됨) 및 `re-direct URL` Adobe Acrobat Sign for 정부 솔루션 담당자와 함께 이전 섹션의 마지막 단계를 만들고 기록했습니다. [Adobe Professional Services 팀원](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password).
 
 **_범위_**
 
-* [!DNL aggrement_read]
-* [!DNL aggrement_write]
-* [!DNL aggrement_send]
+* [!DNL agreement_read]
+* [!DNL agreement_write]
+* [!DNL agreement_send]
 * [!DNL widget_read]
 * [!DNL widget_write]
 * [!DNL workflow_read]
@@ -212,11 +208,11 @@ Adobe Acrobat Sign for Government Solutions 팀은 `re-direct URL` 또한 Adobe 
 
 1. 다음 항목 선택 **[!UICONTROL 첨부 파일에 Adobe Acrobat Sign 사용]** 적응형 양식에 첨부된 파일을 해당 파일에 추가하는 옵션 [!DNL Adobe Acrobat Sign] 서명을 위해 문서를 보냈습니다.
 
-1. 누르기 **[!UICONTROL Adobe Sign에 연결]**. 자격 증명을 입력하라는 메시지가 뜨면 [!DNL Adobe Acrobat Sign] 애플리케이션 생성 시 사용한 계정의 사용자 이름과 비밀번호를 입력합니다. 다음에 대한 액세스를 확인해달라는 메시지가 뜨는 경우 `your developer account`, 클릭 **[!UICONTROL 액세스 허용]**. 자격 증명이 올바르고 [!DNL Adobe Acrobat Sign] 개발자 계정에 대한 [!DNL AEM Forms]의 액세스를 허용하면 아래에 제시된 것과 비슷한 성공 메시지가 표시됩니다.
+1. 누르기 **[!UICONTROL Adobe Sign에 연결]**. 자격 증명을 입력하라는 메시지가 뜨면 [!DNL Adobe Acrobat Sign] 애플리케이션 생성 시 사용한 계정의 사용자 이름과 비밀번호를 입력합니다. 다음에 대한 액세스를 확인해달라는 메시지가 뜨는 경우 `Adobe Acrobat Sign for Government Solutions` 및 을 클릭합니다. **[!UICONTROL 액세스 허용]**. 자격 증명이 올바르고 [!DNL Adobe Acrobat Sign] 개발자 계정에 대한 [!DNL AEM Forms]의 액세스를 허용하면 아래에 제시된 것과 비슷한 성공 메시지가 표시됩니다.
 
    ![Adobe Acrobat Sign 클라우드 구성 성공](/help/forms/using/assets/adobe-sign-cloud-configuration-success.png)
 
-   <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
+   자격 증명을 입력하라는 메시지가 뜨면 [!DNL Adobe Acrobat Sign] 애플리케이션 생성 시 사용한 계정의 사용자 이름과 비밀번호를 입력합니다. 다음에 대한 액세스를 확인해달라는 메시지가 뜨는 경우 `your account`, 및 클릭 **[!UICONTROL 액세스 허용]**.
 
 1. 누르기 **[!UICONTROL 만들기]** 을 클릭하여 구성을 만듭니다.
 1. AEM 웹 콘솔을 엽니다. URL은 `https://'[server]:[port]'/system/console/configMgr`
@@ -245,4 +241,5 @@ An [!DNL Adobe Sign] 활성화된 적응형 양식은 모든 서명자가 서명
 ## 관련 문서 {#related-articles}
 
 * [적응형 양식에서 Adobe Sign 사용](../../forms/using/working-with-adobe-sign.md)
+* [양식 중심 워크플로가 포함된 Adobe Sign](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)
 * [AEM Forms과 함께 Adobe Sign 사용(비디오)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)

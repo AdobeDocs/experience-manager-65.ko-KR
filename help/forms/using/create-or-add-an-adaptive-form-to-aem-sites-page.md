@@ -2,19 +2,15 @@
 title: 적응형 양식을 만들거나 AEM Sites 페이지에 추가
 description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 원활하게 추가하는 방법을 알아봅니다. 동적 및 맞춤형 양식을 웹 사이트에 통합하는 단계별 기술과 모범 사례에 대해 알아보고 디지털 환경을 최적화하여 효과를 극대화합니다.
 feature: Adaptive Forms
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2862'
 ht-degree: 23%
 
 ---
 
 
 # 적응형 양식을 만들거나 AEM Sites 페이지에 추가 {#create-or-add-an-adaptive-form-to-aem-sites-page}
-
-[!BADGE 프리릴리스 설명서]{type=Caution tooltip="노란색 상태"}
-
-<span class="preview"> 이 설명서는 프리릴리스 설명서이며 변경될 수 있습니다.</span>
 
 AEM Forms를 사용하여 적응형 양식을 웹 페이지에 원활하게 통합할 수 있습니다. 이를 통해 방문자는 현재 페이지를 떠나지 않고 편리하게 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 방문자는 양식과 상호 작용하면서 웹 사이트의 다른 요소에 지속적으로 관심을 가질 수 있습니다.
 
@@ -236,8 +232,6 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/using/assets/configure-icon.svg) 아이콘. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
    ![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. 양식 데이터 모델 선택. 를 엽니다. **[!UICONTROL 기본]** 탭. 미리 채우기 서비스에서 다음을 선택합니다. **[!UICONTROL Forms 포털 초안 미리 채우기 서비스]**.
-
-
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 ## 양식 제출 시 사용자를 새 사용자로 리디렉션하거나 감사 메시지 표시
