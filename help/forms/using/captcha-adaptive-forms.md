@@ -11,9 +11,9 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1925'
 ht-degree: 0%
 
 ---
@@ -26,20 +26,25 @@ AEM Forms은 적응형 양식에서 CAPTCHA를 지원합니다. Google의 reCAPT
 
 >[!NOTE]
 >
->* AEM Forms은 reCaptcha v2만 지원합니다. 다른 버전은 지원되지 않습니다.
+>* AEM Forms은 reCaptcha v2 및 enterprise를 지원합니다. 다른 버전은 지원되지 않습니다.
+>* 기본 AEM CAPTCHA 서비스는 더 이상 사용되지 않습니다.
 >* 적응형 양식의 CAPTCHA는 AEM Forms 앱의 오프라인 모드에서 지원되지 않습니다.
 >
 
+## Google에서 reCAPTCHA 서비스 구성 {#google-recaptcha}
 
-## Google에서 ReCAPTCHA 서비스 구성 {#google-recaptcha}
+양식 작성자는 Google의 reCAPTCHA 서비스를 사용하여 적응형 양식에서 CAPTCHA를 구현할 수 있습니다. 사이트를 보호하기 위한 고급 CAPTCHA 기능을 제공합니다. reCAPTCHA 작동 방식에 대한 자세한 내용은 [Google recaptcha](https://developers.google.com/recaptcha/). reCAPTCHA v2 및 reCAPTCHA Enterprise를 포함하는 reCAPTCHA 서비스는 AEM forms에 통합됩니다. 요구 사항에 따라 reCAPTCHA 서비스를 구성하여 다음을 활성화할 수 있습니다.
 
-양식 작성자는 Google의 reCAPTCHA 서비스를 사용하여 적응형 양식에서 CAPTCHA를 구현할 수 있습니다. 사이트를 보호하기 위한 고급 CAPTCHA 기능을 제공합니다. reCAPTCHA 작동 방식에 대한 자세한 내용은 [Google recaptcha](https://developers.google.com/recaptcha/).
+* [AEM Forms의 reCAPTCHA enterprise](#steps-to-implement-recaptcha-enterprise-in-forms)
+* [AEM Forms의 reCAPTCHA v2](#steps-to-implement-recaptcha-v2-in-forms)
 
 ![Recaptcha](assets/recaptcha_new.png)
 
-AEM Forms에서 reCAPTCHA 서비스를 구현하려면 다음을 수행하십시오.
+## Forms에서 reCAPTCHA Enterprise를 구현하는 단계  {#steps-to-implement-recaptcha-enterprise-in-forms}
 
-1. 획득 [reCAPTCHA API 키 쌍](https://www.google.com/recaptcha/admin) Google에서. 여기에는 사이트 키 및 비밀이 포함되어 있습니다.
+1. 새로 만들기 [reCAPTCHA 엔터프라이즈 프로젝트](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) 사용 대상: [reCaptcha Enterprise API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
+1. [획득](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) 프로젝트 ID입니다.
+1. 만들기 [API 키](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) 및 a [웹 사이트에 대한 사이트 키](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. 클라우드 서비스에 대한 구성 컨테이너를 만듭니다.
 
    1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > 구성 브라우저]**.
@@ -50,23 +55,64 @@ AEM Forms에서 reCAPTCHA 서비스를 구현하려면 다음을 수행하십시
 
       1. 구성 속성 대화 상자에서 다음을 활성화합니다 **[!UICONTROL 클라우드 구성]**.
       1. 누르기 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
+
+   1. 구성 브라우저에서 **[!UICONTROL 만들기]**.
+   1. 구성 만들기 대화 상자에서 폴더의 제목을 지정하고 을 활성화합니다 **[!UICONTROL 클라우드 구성]**.
+   1. 누르기 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성에 대해 활성화된 폴더를 만듭니다.
+1. reCAPTCHA Enterprise용 클라우드 서비스를 구성합니다.
+
+   1. Experience Manager 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. 누르기 **[!UICONTROL reCAPT차]**. Configurations 페이지가 열립니다. 이전 단계에서 만든 구성 컨테이너를 선택하고 을 누릅니다 **[!UICONTROL 만들기]**.
+   1. 버전을 reCAPTCHA Enterprise로 선택하고 이름, 즉 reCAPTCHA Enterprise 서비스에 대한 프로젝트 ID, 사이트 키 및 API 키(2단계 및 3단계에서 획득)를 지정합니다.
+   1. 키 유형을 선택합니다. 키 유형은 Google Cloud 프로젝트에 구성된 사이트 키와 동일해야 합니다. 예: **확인란 사이트 키** 또는 **점수 기반 사이트 키**.
+   1. 0~1 범위의 임계값 점수를 지정합니다([점수에 대해 자세히 알아보려면 클릭](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). 임계값 점수보다 크거나 같은 점수는 인간 상호 작용을 식별하고, 그렇지 않으면 봇 상호 작용으로 간주됩니다.
+
+      > 메모:
+      >
+      > * 양식 작성자는 통합 양식 제출에 적합한 범위의 점수를 지정할 수 있습니다.
+
+   1. 누르기 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성을 생성합니다.
+
+   1. 구성 요소 편집 대화 상자에서 이름, 프로젝트 ID, 사이트 키, API 키(2단계 및 3단계에서 획득)를 지정하고 키 유형을 선택한 다음 임계값 점수를 입력합니다. 누르기 **[!UICONTROL 설정 저장]** 그런 다음 을 누릅니다 **[!UICONTROL 확인]** 구성을 완료합니다.
+
+reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용할 수 있습니다. 다음을 참조하십시오 [적응형 양식에서 CAPTCHA 사용](#using-recaptcha).
+
+![Recaptcha enterprise](assets/recaptcha1-enterprise.png)
+
+
+## 양식에 reCAPTCHA v2를 구현하는 단계 {#steps-to-implement-recaptcha-v2-in-forms}
+
+1. 획득 [reCAPTCHA API 키 쌍](https://www.google.com/recaptcha/admin) Google에서. 여기에는 다음이 포함됩니다 **사이트 키** 및 a **비밀 키**.
+1. 클라우드 서비스에 대한 구성 컨테이너를 만듭니다.
+
+   1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > 구성 브라우저]**.
+      * 다음을 참조하십시오. [구성 브라우저](/help/sites-administering/configurations.md) 설명서 를 참조하십시오.
+   1. 클라우드 구성에 대한 전역 폴더를 활성화하려면 다음을 수행하거나 클라우드 서비스 구성에 대한 다른 폴더를 만들고 구성하려면 이 단계를 건너뜁니다.
+
+      1. 구성 브라우저에서 **[!UICONTROL 글로벌]** 폴더 및 탭 **[!UICONTROL 속성]**.
+
+      1. 구성 속성 대화 상자에서 다음을 활성화합니다 **[!UICONTROL 클라우드 구성]**.
+      1. 누르기 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
+
    1. 구성 브라우저에서 **[!UICONTROL 만들기]**.
    1. 구성 만들기 대화 상자에서 폴더의 제목을 지정하고 을 활성화합니다 **[!UICONTROL 클라우드 구성]**.
    1. 누르기 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성에 대해 활성화된 폴더를 만듭니다.
 
-
-1. reCAPTCHA에 대한 클라우드 서비스를 구성합니다.
+1. reCAPTCHA v2에 대한 클라우드 서비스를 구성합니다.
 
    1. AEM 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **Cloud Services**.
    1. 누르기 **[!UICONTROL reCAPT차]**. Configurations 페이지가 열립니다. 이전 단계에서 만든 구성 컨테이너를 선택하고 을 누릅니다 **[!UICONTROL 만들기]**.
-   1. reCAPTCHA 서비스에 대한 이름, 사이트 키 및 비밀 키를 지정하고 을 누릅니다 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성을 생성합니다.
-   1. 구성 요소 편집 대화 상자에서 1단계에서 얻은 사이트 및 비밀 키를 지정합니다. 누르기 **설정 저장** 그런 다음 을 누릅니다 **확인** 구성을 완료합니다.
+   1. 버전을 reCAPTCHA v2로 선택하고 이름, 사이트 키 및 reCAPTCHA 서비스에 대한 비밀 키(1단계에서 획득)를 지정한 다음 을 누릅니다 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성을 생성합니다.
+   1. 구성 요소 편집 대화 상자에서 1단계에서 얻은 사이트 및 비밀 키를 지정합니다. 누르기 **[!UICONTROL 설정 저장]** 그런 다음 을 누릅니다 **확인** 구성을 완료합니다.
 
    reCAPTCHA 서비스가 구성되면 적응형 양식에서 사용할 수 있습니다. 자세한 내용은 [적응형 양식에서 CAPTCHA 사용](#using-captcha).
 
-## 적응형 양식에서 CAPTCHA 사용 {#using-captcha}
+![Recaptcha v2](assets/recaptcha-v2.png)
 
-적응형 양식에서 CAPTCHA를 사용하려면
+
+## 적응형 양식에서 reCAPTCHA 사용 {#using-recaptcha}
+
+적응형 양식에서 reCAPTCHA를 사용하려면:
 
 1. 편집 모드에서 적응형 양식을 엽니다.
 
@@ -86,15 +132,100 @@ AEM Forms에서 reCAPTCHA 서비스를 구현하려면 다음을 수행하십시
 
 1. 추가한 Captcha 구성 요소를 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png) 속성을 편집합니다.
 1. CAPTCHA 위젯의 제목을 지정합니다. 기본값은 입니다. **Captcha**. 선택 **제목 숨기기** 제목을 표시하지 않으려는 경우
-1. 다음에서 **Captcha 서비스** 드롭다운, 선택 **reCaptcha** 에 설명된 대로 구성한 경우 reCAPTCHA 서비스를 활성화하려면 다음을 수행하십시오 [Google의 ReCAPTCHA 서비스](#google-recaptcha). 설정 드롭다운에서 구성을 선택합니다. 또한 크기를 다음과 같이 선택합니다. **기본** 또는 **콤팩트** reCAPTCHA 위젯용
+1. 다음에서 **Captcha 서비스** 드롭다운, 선택 **reCaptcha** 에 설명된 대로 구성한 경우 reCAPTCHA 서비스를 활성화하려면 다음을 수행하십시오 [Google의 ReCAPTCHA 서비스](#google-recaptcha).
+1. 설정 드롭다운에서 구성을 선택합니다.
+1. **선택한 구성에 버전이 reCAPTCHA Enterprise인 경우**:
+   1. 다음을 사용하여 reCAPTCHA 클라우드 구성을 선택할 수 있습니다. **키 유형** 다음으로: **확인란**. 확인란 키에 사용자 지정된 오류 메시지가 captcha 유효성 검사에 실패하면 인라인 메시지로 표시됩니다. 다음과 같이 크기를 선택할 수 있습니다. **[!UICONTROL 기본]** 및 **[!UICONTROL 콤팩트]**.
+   1. 다음을 사용하여 reCAPTCHA 클라우드 구성을 선택할 수 있습니다. **키 유형** 다음으로: **점수 기준**. 점수 기반 키에서 사용자 지정된 오류 메시지는 captcha 유효성 검사가 실패하면 팝업 메시지로 표시됩니다.
+   1. 을(를) 선택하는 경우 **[!UICONTROL 바인드 참조]** 제출된 데이터는 바인딩된 데이터이며, 그렇지 않으면 바인딩되지 않은 데이터입니다. 다음은 양식 제출 시 바인딩되지 않은 데이터와 바인딩된 데이터(바인드 참조를 SSN으로 사용)의 XML 예입니다.
 
-   >[!NOTE]
-   >
-   >선택 안 함 **[!UICONTROL 기본값]** 기본 AEM CAPTCHA 서비스가 더 이상 사용되지 않으므로 CAPTCHA 서비스 드롭다운에서 을 사용하십시오.
+      ```xml
+          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+          <afData>
+          <afUnboundData>
+              <data>
+                  <captcha16820607953761>
+                      <captchaType>reCaptchaEnterprise</captchaType>
+                      <captchaScore>0.9</captchaScore>
+                  </captcha16820607953761>
+              </data>
+          </afUnboundData>
+          <afBoundData>
+              <Root
+                  xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <PersonalDetails>
+                      <SSN>371237912</SSN>
+                      <FirstName>Sarah </FirstName>
+                      <LastName>Smith</LastName>
+                  </PersonalDetails>
+                  <OtherInfo>
+                      <City>California</City>
+                      <Address>54 Residency</Address>
+                      <State>USA</State>
+                      <Zip>123112</Zip>
+                  </OtherInfo>
+              </Root>
+          </afBoundData>
+          <afSubmissionInfo>
+              <stateOverrides/>
+              <signers/>
+              <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
+              <afSubmissionTime>20230608034928</afSubmissionTime>
+          </afSubmissionInfo>
+          </afData>
+      ```
+
+
+      ```xml
+          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+          <afData>
+          <afUnboundData>
+              <data/>
+          </afUnboundData>
+          <afBoundData>
+              <Root
+                  xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <PersonalDetails>
+                      <SSN>
+                          <captchaType>reCaptchaEnterprise</captchaType>
+                          <captchaScore>0.9</captchaScore>
+                      </SSN>
+                      <FirstName>Sarah</FirstName>
+                      <LastName>Smith</LastName>
+                  </PersonalDetails>
+                  <OtherInfo>
+                      <City>California</City>
+                      <Address>54 Residency</Address>
+                      <State>USA</State>
+                      <Zip>123112</Zip>
+                  </OtherInfo>
+              </Root>
+          </afBoundData>
+          <afSubmissionInfo>
+              <stateOverrides/>
+              <signers/>
+              <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
+              <afSubmissionTime>20230608035111</afSubmissionTime>
+          </afSubmissionInfo>
+          </afData>
+      ```
+
+
+   **선택한 구성에 버전이 reCAPTCHA v2인 경우**:
+   1. 크기를 다음으로 선택 **[!UICONTROL 기본]** 또는 **[!UICONTROL 콤팩트]** reCAPTCHA 위젯용 다음을 선택할 수도 있습니다. **[!UICONTROL 숨김]** 의심되는 활동이 있는 경우에만 CAPTCHA 문제를 표시하는 옵션입니다. 다음 **reCAPTCHA로 보호됨** 아래 표시된 배지는 보호된 양식에 표시됩니다.
+
+      ![reCAPTCHA 배지로 보호된 Google](assets/google-recaptcha-v2.png)
+
+
+   reCAPTCHA 서비스가 적응형 양식에서 활성화됩니다. 양식을 미리 보고 CAPTCHA가 작동하는 것을 볼 수 있습니다.
 
 1. 속성을 저장합니다.
 
-reCAPTCHA 서비스가 적응형 양식에서 활성화됩니다. 양식을 미리 보고 CAPTCHA가 작동하는 것을 볼 수 있습니다.
+>[!NOTE]
+> 
+> 선택 안 함 **[!UICONTROL 기본값]** 기본 AEM CAPTCHA 서비스가 더 이상 사용되지 않으므로 CAPTCHA 서비스 드롭다운에서 을 사용하십시오.
 
 ### 규칙에 따라 CAPTCHA 구성 요소 표시 또는 숨기기 {#show-hide-captcha}
 
@@ -105,6 +236,10 @@ reCAPTCHA 서비스가 적응형 양식에서 활성화됩니다. 양식을 미�
 탭 **[!UICONTROL 통화 값]** 양식에 필드를 입력하고 다음 규칙을 만듭니다.
 
 ![규칙 표시 또는 숨기기](assets/rules-show-hide-captcha.png)
+
+>[!NOTE]
+>
+> * 크기가 다음과 같은 reCAPTCHA v2 구성을 선택하는 경우 **[!UICONTROL 숨김]** 또는 reCAPTCHA Enterprise 점수 기반 키를 선택한 다음 표시/숨기기 옵션을 적용할 수 없습니다.
 
 ### CAPTCHA 유효성 검사 {#validate-captcha}
 
@@ -125,6 +260,10 @@ reCAPTCHA 서비스가 적응형 양식에서 활성화됩니다. 양식을 미�
 1. CAPTCHA 구성 요소를 탭하고 을 선택합니다 ![cmppr](assets/configure-icon.svg) 구성 요소 속성을 봅니다.
 1. 다음에서 **[!UICONTROL CAPTCHA 유효성 검사]** 섹션, 선택 **[!UICONTROL 사용자 작업에 대한 CAPTCHA 유효성 검사]**.
 1. 누르기 ![완료](assets/save_icon.svg) 구성 요소 속성을 저장합니다.
+
+   > 메모:
+   >
+   > * 크기가 다음과 같은 reCAPTCHA v2 구성을 선택하는 경우 **[!UICONTROL 숨김]** 또는 reCAPTCHA Enterprise 점수 기반 키를 사용하는 경우 사용자 작업에 유효한 Captcha를 적용할 수 없습니다.
 
 [!DNL Experience Manager Forms] 다음을 제공합니다 `ValidateCAPTCHA` 사전 정의된 조건을 사용하여 CAPTCHA의 유효성을 검사하기 위한 API입니다. 사용자 지정 제출 액션을 사용하거나 적응형 양식의 구성 요소에 대한 규칙을 정의하여 API를 호출할 수 있습니다.
 

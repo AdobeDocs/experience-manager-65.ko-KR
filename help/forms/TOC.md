@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: f0ffa552bd4a5b8b20a58aed7847c4de07acc4f4
+source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
 workflow-type: tm+mt
-source-wordcount: '3860'
+source-wordcount: '3870'
 ht-degree: 4%
 
 ---
@@ -134,6 +134,7 @@ ht-degree: 4%
 + 적응형 Forms - 기본 작성 {#adaptive-forms-basic-authoring}
    + [적응형 양식 작업 모범 사례](using/adaptive-forms-best-practices.md)
    + [적응형 양식 만들기](using/creating-adaptive-form.md)
+   + [적응형 양식을 만들거나 AEM Sites 페이지에 추가](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
    + [적응형 양식 단편](using/adaptive-form-fragments.md)
    + [제출 액션 구성](using/configuring-submit-actions.md)
    + [적응형 양식에서 CAPTCHA 사용](using/captcha-adaptive-forms.md)
@@ -468,13 +469,13 @@ ht-degree: 4%
       + [Adobe Reader 웹 브라우저 플러그인에 대한 온라인 댓글 달기 활성화](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
       + [Acrobat Reader DC 확장에 사용할 시간 초과 값 설정](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
       + [만료된 Reader 확장 서비스 인증서 업데이트](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
-   + PDF 생성기 작업 {#work-with-pdf-generator}
-      + [PDF 생성기 작업 소개](/help/forms/using/admin-help/overview-5.md)
+   + PDF Generator 작업 {#work-with-pdf-generator}
+      + [PDF Generator 작업 소개](/help/forms/using/admin-help/overview-5.md)
       + [다중 스레드 파일 변환 활성화](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
       + [Adobe PDF 설정 구성](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [보안 설정 구성](/help/forms/using/admin-help/configuring-security-settings.md)
       + [파일 유형 설정 구성](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [PDF 생성기 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [PDF Generator 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [PDF/A 지원 활성화](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [PDFG 네트워크 프린터 설정(Windows에만 해당)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [대체 글꼴 구성](/help/forms/using/admin-help/configuring-fallback-fonts.md)
@@ -563,7 +564,7 @@ ht-degree: 4%
       + [AEM 양식 데이터 백업](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [백업 및 복구할 파일](/help/forms/using/admin-help/files-back-recover.md)
       + [AEM Forms를 위한 백업 및 복구 전략](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [PDF 생성기 백업 제한 사항](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [PDF Generator 백업 제한 사항](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [감시 폴더의 백업 전략](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [AEM 양식 데이터 복구](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [EMC Documentum 사용자를 위한 Connector 백업 전략](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
