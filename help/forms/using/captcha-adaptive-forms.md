@@ -11,7 +11,7 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 4e6521f0d40fc10e016bf197d5b31033192e3214
+source-git-commit: 031c683029c61f8f49c07d276c27e05b3fcfd5fc
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 0%
@@ -40,9 +40,9 @@ AEM Forms 사용자는 Google의 reCAPTCHA 서비스를 사용하여 적응형 �
 
 ### reCAPTCHA Enterprise 구성  {#steps-to-implement-reCAPTCHA-enterprise-in-forms}
 
-1. 만들기 [reCAPTCHA Enterprise 프로젝트](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) 사용 대상: [reCAPTCHA Enterprise API](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-reCAPTCHA-enterprise-api).
+1. 만들기 [reCAPTCHA Enterprise 프로젝트](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) 사용 대상: [reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
 1. [획득](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) 프로젝트 ID입니다.
-1. 만들기 [API 키](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) 및 a [웹 사이트에 대한 사이트 키](https://cloud.google.com/reCAPTCHA-enterprise/docs/create-key#create-key).
+1. 만들기 [API 키](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) 및 a [웹 사이트에 대한 사이트 키](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. 클라우드 서비스에 대한 구성 컨테이너를 만듭니다.
 
    1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > 구성 브라우저]**. 다음을 참조하십시오. [구성 브라우저](/help/sites-administering/configurations.md) 설명서 를 참조하십시오.
@@ -60,7 +60,7 @@ AEM Forms 사용자는 Google의 reCAPTCHA 서비스를 사용하여 적응형 �
    1. 누르기 **[!UICONTROL reCAPT차]**. Configurations 페이지가 열립니다. 이전 단계에서 만든 구성 컨테이너를 선택하고 을 누릅니다 **[!UICONTROL 만들기]**.
    1. 버전을 reCAPTCHA Enterprise로 선택하고 이름, 즉 reCAPTCHA Enterprise 서비스에 대한 프로젝트 ID, 사이트 키 및 API 키(2단계 및 3단계에서 획득)를 지정합니다.
    1. 키 유형을 선택합니다. 키 유형은 Google Cloud 프로젝트에 구성된 사이트 키와 동일해야 합니다. 예: **확인란 사이트 키** 또는 **점수 기반 사이트 키**.
-   1. 0~1 범위의 임계값 점수를 지정합니다([점수에 대해 자세히 알아보려면 클릭](https://cloud.google.com/reCAPTCHA-enterprise/docs/interpret-assessment#interpret_scores)). 임계값 점수보다 크거나 같은 점수는 인간 상호 작용을 식별하고, 그렇지 않으면 봇 상호 작용으로 간주됩니다.
+   1. 0~1 범위의 임계값 점수를 지정합니다([점수에 대해 자세히 알아보려면 클릭](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). 임계값 점수보다 크거나 같은 점수는 인간 상호 작용을 식별하고, 그렇지 않으면 봇 상호 작용으로 간주됩니다.
 
       > 메모:
       >
@@ -77,7 +77,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 
 ## Google reCAPTCHA v2 구성 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
-1. 획득 [reCAPTCHA API 키 쌍](https://www.google.com/reCAPTCHA/admin) Google에서. 여기에는 다음이 포함됩니다 **사이트 키** 및 a **비밀 키**.
+1. 획득 [reCAPTCHA API 키 쌍](https://www.google.com/recaptcha/admin) Google에서. 여기에는 다음이 포함됩니다 **사이트 키** 및 a **비밀 키**.
 1. 클라우드 서비스에 대한 구성 컨테이너를 만듭니다.
    1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > 구성 브라우저]**. 다음을 참조하십시오. [구성 브라우저](/help/sites-administering/configurations.md) 설명서 를 참조하십시오.
    1. 클라우드 구성에 대한 전역 폴더를 활성화하려면 다음을 수행하거나 클라우드 서비스 구성에 대한 다른 폴더를 만들고 구성하려면 이 단계를 건너뜁니다.
