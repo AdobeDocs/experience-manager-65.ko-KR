@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1022'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ PhoneGap CLI를 사용하여 빌드하려면 Node.js 및 PhoneGap 클라이언�
 
 ### PhoneGap CLI를 사용한 빌드 {#using-the-phonegap-cli-to-build}
 
-PhoneGap CLI를 사용하여 애플리케이션을 컴파일하고 설치합니다. PhoneGap CLI 사용 방법에 대한 자세한 내용은 PhoneGap 을 참조하십시오 [명령줄 인터페이스](https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html) 설명서를 참조하십시오.
+PhoneGap CLI를 사용하여 애플리케이션을 컴파일하고 설치합니다. PhoneGap CLI 사용 방법에 대한 자세한 내용은 PhoneGap 명령줄 인터페이스( )를 참조하십시오.`https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html`) 설명서를 참조하십시오.
 
 1. 터미널 또는 명령 프롬프트를 열고 현재 디렉터리를 다운로드한 응용 프로그램 ZIP 파일로 변경합니다. 예를 들어 다음 명령을 실행하면 디렉토리가 ng-app-cli.1392137825303.zip 파일로 변경됩니다.
 
@@ -162,7 +162,7 @@ AEM 내에서 PhoneGap Build 서비스를 사용할 수 있도록 PhoneGap Build
 
    **참고:** AEM Beta 베타 버전은 빌드가 성공적으로 완료될 때 받은 편지함 알림을 만들지 않습니다.
 
-1. 성공 대화 상자에서 PhoneGap Build 를 클릭하여 Adobe PhoneGap Build 페이지를 엽니다. [https://build.phonegap.com/apps](https://build.phonegap.com/apps). 앱이 표시되기를 기다리는 경우 [PhoneGap Build 상태](https://status.build.phonegap.com/) 페이지를 가리키도록 업데이트하는 중입니다.
+1. 성공 대화 상자에서 PhoneGap Build 를 클릭하여 Adobe PhoneGap Build 페이지를 엽니다. `https://build.phonegap.com/apps`. 앱이 나타날 때까지 기다리는 경우 다음에서 PhoneGap Build 상태를 확인할 수 있습니다. `https://status.build.phonegap.com/`.
 
    빌드 설치에 대한 자세한 내용은 [PhoneGap Build 설명서](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 

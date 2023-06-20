@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -93,9 +93,9 @@ AEM Sites 내에서 동일한 작업을 수행하는 것과 거의 동일한 방
 
 ### PhoneGap Build 타일 {#the-phonegap-build-tile}
 
-다음 **PhoneGap Build 타일** 연결 대상 [https://build.phonegap.com](https://build.phonegap.com) 원격 빌드를 빌드하고 호스팅합니다. 빌드가 빌드되면 다운로드로 사용하거나 QR 코드를 통해 디바이스에 직접 사용할 수 있습니다.
+다음 **PhoneGap Build 타일** 연결 대상 `https://build.phonegap.com` 원격 빌드를 빌드하고 호스팅합니다. 빌드가 빌드되면 다운로드로 사용하거나 QR 코드를 통해 디바이스에 직접 사용할 수 있습니다.
 
-또는 다음을 통해 로컬로 빌드할 장치 소스를 다운로드할 수 있습니다. [PhoneGap CLI](https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html).
+또는 PhoneGap CLI( 를 통해 로컬로 빌드할 장치 소스를 다운로드할 수 있습니다.`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
 ![PhoneGap Build 타일](assets/chlimage_1-140.png)
 

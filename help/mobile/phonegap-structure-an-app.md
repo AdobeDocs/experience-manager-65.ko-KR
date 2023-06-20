@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c614a7ff-0d13-4407-bda0-c0a402a13dcd
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ AngularJS를 활용하려는 작성 가능한 페이지 구성 요소에는 동�
 
 ## PhoneGap 구성 {#phonegap-configuration}
 
-각 AEM Mobile 앱에는 PhoneGap에서 사용하는 구성 파일을 호스팅하는 디렉토리가 있습니다 [명령줄 인터페이스](https://github.com/phonegap/phonegap-cli) 및 [PhoneGap Build](https://build.phonegap.com/) 웹 콘텐츠를 실행 가능한 애플리케이션으로 전환합니다. 예를 들어 Geometrixx 샘플에서 이 디렉터리(/content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-content)는 셸의 일부로 배치됩니다. 여기에는 장치 API 및 앱 자체의 구성을 처리하는 플러그인과 같이 공중으로 업데이트할 수 없는 콘텐츠만 포함되어 있으므로 디자인 결정이 내려졌습니다.
+각 AEM Mobile 앱에는 PhoneGap에서 사용하는 구성 파일을 호스팅하는 디렉토리가 있습니다 [명령줄 인터페이스](https://github.com/phonegap/phonegap-cli) 및 PhoneGap Build 위치 `https://build.phonegap.com/` 웹 콘텐츠를 실행 가능한 애플리케이션으로 전환합니다. 예를 들어 Geometrixx 샘플에서 이 디렉터리(/content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-content)는 셸의 일부로 배치됩니다. 여기에는 장치 API 및 앱 자체의 구성을 처리하는 플러그인과 같이 공중으로 업데이트할 수 없는 콘텐츠만 포함되어 있으므로 디자인 결정이 내려졌습니다.
 
 이 디렉터리에는 [코르도바 훅](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide) 플러그인 설치, 플랫폼별 위치에 리소스 파일 배치 및 빌드의 일부로 실행해야 하는 기타 작업에 사용할 수 있습니다. 참고: 빌드의 일부로 각 플러그인을 다운로드하는 대신 Kitchen Sink 앱의 패턴을 따라 할 수 있습니다. [플러그인 소스 코드 포함](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins) 와 함께 사용할 수 있습니다.
 

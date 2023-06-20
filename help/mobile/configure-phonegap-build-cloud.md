@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 3c84f4ec-d89b-4ad4-802e-ee3e2d49d916
 exl-id: d91a00d1-12fa-4c84-a426-49413f61c126
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '660'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 내에 정의된 모든 지원되는 플랫폼 **앱 관리** 타일은 원격 빌드를 푸시할 때 PhoneGap Build으로 빌드됩니다. **PhoneGap Build** 타일.
 
-원격 빌드를 푸시할 수 있습니다. [https://build.phonegap.com](https://build.phonegap.com) 또는 소스를 다운로드하여 로컬로 빌드 [PhoneGap CLI](https://docs.phonegap.com/references/phonegap-cli/).
+원격 빌드를 푸시할 수 있습니다. `https://build.phonegap.com` 또는 다음 위치에서 PhoneGap CLI를 사용하여 로컬로 빌드할 소스 다운로드 `https://docs.phonegap.com/references/phonegap-cli/`.
 
 ![PhoneGap Build 타일](assets/chlimage_1-60.png)
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 PhoneGap Build을 활용하려면 PhoneGap Build 계정 정보로 AEM PhoneGap Build Cloud Service을 구성해야 합니다.
 
-현재 계정이 없는 경우 다음으로 이동합니다. [https://build.phonegap.com](https://build.phonegap.com) 등록하십시오! Adobe Creative Cloud 멤버십이 있는 경우 최대 25개의 비공개 앱(비오픈 소스 앱)을 지원할 수 있습니다.
+현재 계정이 없는 경우 다음으로 이동합니다. `https://build.phonegap.com` 등록하십시오! Adobe Creative Cloud 멤버십이 있는 경우 최대 25개의 비공개 앱(비오픈 소스 앱)을 지원할 수 있습니다.
 
 PhoneGap Build 계정이 활성화되어 있는지 확인한 후 AEM Cloud Management Console로 이동합니다. 특히 [PhoneGap Build Cloud Service](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
@@ -73,7 +73,7 @@ Adobe PhoneGap Build으로 원격 빌드를 호출하려면 **원격 빌드**.
 
 >[!NOTE]
 >
->어떤 이유로든 빌드가 실패하는 경우(아래 빨간색 iOS 아이콘은 플랫폼 실패를 나타냄) 아이콘 위로 마우스를 가져가면 오류 메시지가 표시됩니다. 또는 타일 하단의 트리플 점 &#39;...&#39;을 클릭하여 https://build.phonegap.com으로 직접 이동하고(인증해야 함) 빌드를 직접 보고 관리할 수 있습니다.
+>어떤 이유로든 빌드가 실패하는 경우(아래 빨간색 iOS 아이콘은 플랫폼 실패를 나타냄) 아이콘 위로 마우스를 가져가면 오류 메시지가 표시됩니다. 또는 타일 하단의 세 개의 점 &#39;...&#39;을 클릭하여 로 바로 이동할 수 있습니다. `https://build.phonegap.com` (인증해야 합니다) 빌드를 직접 보고 관리하십시오.
 
 ### PhoneGap CLI를 사용하여 애플리케이션 구축 {#building-your-application-with-phonegap-cli}
 
@@ -86,7 +86,7 @@ PhoneGap의 명령줄 인터페이스를 활용하려면 다음을 포함하도�
 1. Platform SDK(iOS, Android, WindowsPhone, ...) 및,
 1. PhoneGap CLI
 
-자세한 내용은 [여기](https://docs.phonegap.com/references/phonegap-cli/).
+자세한 내용은 여기 를 참조하십시오. `https://docs.phonegap.com/references/phonegap-cli/`.
 
 사전 요구 사항을 설치한 후에는 간단한 앱을 만들어 시뮬레이터에서 실행하거나 장치에서 실행할 수 있도록 터미널에서 다음을 시도해 보십시오.
 

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
 source-wordcount: '2392'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -85,23 +85,23 @@ AEM WCM에서 콘텐츠에 액세스하는 방법에는 세 가지가 있습니�
 
 * 에 도입된 속성 개체를 통해 `global.jsp`:
 
-   속성 개체는 ValueMap의 인스턴스입니다( 참조). [Sling API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) 현재 리소스의 모든 속성을 포함합니다.
+  속성 개체는 ValueMap의 인스턴스입니다( 참조). [Sling API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) 현재 리소스의 모든 속성을 포함합니다.
 
-   예: `String pageTitle = properties.get("jcr:title", "no title");` 페이지 구성 요소의 렌더링 스크립트에 사용됩니다.
+  예: `String pageTitle = properties.get("jcr:title", "no title");` 페이지 구성 요소의 렌더링 스크립트에 사용됩니다.
 
-   예: `String paragraphTitle = properties.get("jcr:title", "no title");` 표준 단락 구성 요소의 렌더링 스크립트에 사용됩니다.
+  예: `String paragraphTitle = properties.get("jcr:title", "no title");` 표준 단락 구성 요소의 렌더링 스크립트에 사용됩니다.
 
 * 를 통해 `currentPage` 에 도입된 개체 `global.jsp`:
 
-   다음 `currentPage` 개체는 페이지의 인스턴스입니다( 참조). [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). 페이지 클래스는 콘텐츠에 액세스하는 몇 가지 메서드를 제공합니다.
+  다음 `currentPage` 개체는 페이지의 인스턴스입니다( 참조). [AEM API](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). 페이지 클래스는 콘텐츠에 액세스하는 몇 가지 메서드를 제공합니다.
 
-   예: `String pageTitle = currentPage.getTitle();`
+  예: `String pageTitle = currentPage.getTitle();`
 
 * 경유 `currentNode` 에 도입된 개체 `global.jsp`:
 
-   다음 `currentNode` 객체는 노드의 인스턴스입니다( 참조) [JCR API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). 노드의 속성은 다음을 통해 액세스할 수 있습니다. `getProperty()` 메서드를 사용합니다.
+  다음 `currentNode` 객체는 노드의 인스턴스입니다( 참조) [JCR API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). 노드의 속성은 다음을 통해 액세스할 수 있습니다. `getProperty()` 메서드를 사용합니다.
 
-   예: `String pageTitle = currentNode.getProperty("jcr:title");`
+  예: `String pageTitle = currentNode.getProperty("jcr:title");`
 
 ## JSP 태그 라이브러리 {#jsp-tag-libraries}
 
@@ -167,6 +167,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
       * `cq:dialog` - 터치 사용 UI 대화 상자
       * `dialog` - 클래식 UI 대화 상자
+
    * 바꾸기 `.jsp` 파일(새 구성 요소 뒤에 이름 지정)
    * 또는 원하는 경우 전체 구성 요소를 완전히 다시 작업
 
@@ -178,7 +179,6 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
    >
    >* 터치 지원 UI 사용 [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) 구성 요소
    >* 클래식 UI 사용 [ExtJS 위젯](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
-
 
    >[!NOTE]
    >
@@ -215,7 +215,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
    * 추가 `?wcmmode=design` 를 URL의 끝에 추가하고 다시 액세스합니다. 예:
 
-      `<contextPath>/ Test.html?wcmmode=design`
+     `<contextPath>/ Test.html?wcmmode=design`
 
    * 사이드 킥에서 디자인 클릭
 
@@ -275,16 +275,17 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
    >* 터치 지원 UI: `textimage/cq:dialog`
    >* 클래식 UI: `textimage/dialog`
 
-
 1. 구성 요소 메타데이터 편집:
 
    * 구성 요소 이름
 
       * 설정 `jcr:description` 끝 `Text Image Component (Extended)`
       * 설정 `jcr:title` 끝 `Text Image (Extended)`
+
    * 구성 요소가 사이드 킥에 나열되는 그룹(그대로 유지)
 
       * 나가기 `componentGroup` 을 로 설정 `General`
+
    * 새 구성 요소의 상위 구성 요소(표준 Textimage 구성 요소)
 
       * 설정 `sling:resourceSuperType` 끝 `foundation/components/textimage`
@@ -308,6 +309,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
       * xtype을 cqinclude(표준 구성 요소에서 상속)로 변경합니다.
       * 값이 있는 경로 속성 추가 `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`및 `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, 각각
       * 다른 모든 속성 또는 하위 노드를 제거합니다.
+
    * Tab3의 경우:
 
       * 속성 및 하위 노드를 변경하지 않고 그대로 둡니다.
@@ -318,9 +320,11 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
          * `xtype`: `selection`
          * `fieldLabel`: `Image Position`
          * `type`: `select`
+
       * 하위 노드 추가 `position/options` 유형 `cq:WidgetCollection` 를 사용하여 이미지 배치에 대한 두 가지 선택 사항을 나타내고, 아래에서 유형의 o1과 o2, 이렇게 두 개의 노드를 만듭니다 `nt:unstructured`.
       * 노드용 `position/options/o1` 속성을 설정합니다. `text` 끝 `Left` 및 `value` 끝 `left.`
       * 노드용 `position/options/o2` 속성을 설정합니다. `text` 끝 `Right` 및 `value` 끝 `right`.
+
    * Tab4를 삭제합니다.
 
    이미지 위치는 콘텐츠에서 로 유지됩니다. `imagePosition`을 나타내는 노드의 속성 `textimage` 단락. 이러한 단계를 수행하면 구성 요소 대화 상자가 다음과 같이 표시됩니다.
@@ -355,7 +359,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 구성 요소가 개발되면 단락 시스템에 구성 요소를 추가하여 작성자가 페이지를 편집할 때 구성 요소를 선택하고 사용할 수 있습니다. 이 단계를 통해 구성 요소를 테스트할 수 있습니다.
 
 1. 영어/회사와 같은 Geometrixx에서 페이지를 엽니다.
-1. 사이드 킥에서 디자인 을 클릭하여 디자인 모드로 전환합니다.
+1. Sidekick에서 디자인 을 클릭하여 디자인 모드로 전환합니다.
 1. 페이지 중간에 있는 단락 시스템에서 편집 을 클릭하여 단락 시스템 디자인을 편집합니다. 단락 시스템에 배치할 수 있는 구성 요소 목록이 표시되고 새로 개발된 구성 요소인 텍스트 이미지(확장) 가 포함되어야 합니다. 단락 시스템을 선택하고 확인 을 클릭하여 단락 시스템에 대해 활성화합니다.
 1. 편집 모드로 다시 전환합니다.
 1. 텍스트 이미지(확장) 단락을 단락 시스템에 추가하고 샘플 콘텐츠로 텍스트 및 이미지를 초기화합니다. 변경 사항을 저장합니다.

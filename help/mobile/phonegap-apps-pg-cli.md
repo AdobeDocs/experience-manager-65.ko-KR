@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '656'
 ht-degree: 1%
 
 ---
@@ -27,17 +27,17 @@ ht-degree: 1%
 
 ## 개발 환경 Bootstrap {#bootstrap-your-development-environment}
 
-[PhoneGap CLI 설정](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
+PhoneGap CLI 설정(`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface`)
 
 iOS의 경우: iPhone 및 iPad용으로 개발하려면 Apple의 Xcode IDE가 필요합니다.
 
 * 무료로 다운로드 [여기](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
-* [PhoneGap iOS 플랫폼 안내서](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
+* PhoneGap iOS 플랫폼 안내서 (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 Android™의 경우: iPhone 및 iPad용으로 개발하려면 Google의 Android™ Stuido IDE가 필요합니다.
 
 * 무료로 다운로드 [여기](https://developer.android.com/studio).
-* [PhoneGap Android™ 플랫폼 안내서](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+* PhoneGap Android™ 플랫폼 안내서 (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
 ## 소스 다운로드 {#download-the-source}
 
@@ -67,7 +67,7 @@ PhoneGap CLI는 단일 명령으로 플랫폼 프로젝트를 만들고, 소스�
 
 >[!NOTE]
 >
->이 모든 단계는 별도로 수행할 수 있습니다. 다음을 참조하십시오. [PhoneGap CLI 문서](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
+>이러한 모든 단계는 별도로 수행할 수 있습니다. PhoneGap CLI 문서(`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
 
 1. PhoneGap CLI를 설치했는지 확인하십시오. 위의 내용을 참조하십시오.
 1. 콘솔(또는 터미널) 창에서 추출한 소스의 루트 디렉토리로 이동합니다.

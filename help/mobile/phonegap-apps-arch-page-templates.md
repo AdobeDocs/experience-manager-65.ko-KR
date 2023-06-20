@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2653'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ ng-app="<c:out value='${applicationName}'/>"
 })
 ```
 
-이 코드는 &#39;/&#39;를 $routeProvider(angular-app-module.js.jsp에 정의됨)에 나타냅니다.&lt;path>&#39;은(는) 의 리소스에 의해 처리됩니다. `templateUrl`, 및 다음을 통해 연결: `controller` (다음으로 이동).
+이 코드는 &#39;/&#39;를 $routeProvider(angular-app-module.js.jsp에 정의됨)에 나타냅니다.&lt;path>&#39;은(는) 의 리소스에 의해 처리됩니다. `templateUrl`, 및 다음을 통해 연결: `controller` (다음으로 가져갈 수 있음).
 
 필요한 경우 이 스크립트를 재정의하여 변수가 있는 경로를 포함하여 더 복잡한 경로를 처리할 수 있습니다. 이에 대한 예는 AEM과 함께 설치된 /apps/weretail-app/components/angular/ng-template-page/angular-route-fragment.js.jsp 스크립트에서 확인할 수 있습니다.
 
@@ -369,7 +369,7 @@ www 디렉터리에는 앱의 모양과 동작을 구현하는 모든 웹 콘텐
 
 ### www/config.xml {#www-config-xml}
 
-다음 [PhoneGap 설명서](https://docs.phonegap.com) 은 이 파일을 &#39;전역 구성 파일&#39;로 참조합니다. config.xml에는 앱 이름, 앱 &#39;환경 설정&#39;(예: iOS 웹 보기에서 오버스크롤을 허용하는지 여부) 및 다음과 같은 플러그인 종속성과 같은 많은 앱 속성이 포함되어 있습니다. *전용* PhoneGap Build에서 사용됨.
+PhoneGap 설명서(`https://docs.phonegap.com`)은 이 파일을 &#39;전역 구성 파일&#39;로 참조합니다. config.xml에는 앱 이름, 앱 &#39;환경 설정&#39;(예: iOS 웹 보기에서 오버스크롤을 허용하는지 여부) 및 다음과 같은 플러그인 종속성과 같은 많은 앱 속성이 포함되어 있습니다. *전용* PhoneGap Build에서 사용됨.
 
 config.xml 파일은 AEM의 정적 파일이며 Content Sync를 통해 있는 그대로 내보냅니다.
 
@@ -381,7 +381,7 @@ config.xml 파일에 `content` 요소:
 
 `<content src="content/phonegap/weretail/apps/ng-we-retail/en.html" />`
 
-위치 [PhoneGap 설명서](https://docs.phonegap.com), 이 요소는 &quot;선택 사항&quot;으로 설명됩니다. &lt;content> 요소는 최상위 웹 자산 디렉토리에서 앱의 시작 페이지를 정의합니다. 기본값은 프로젝트의 최상위 www 디렉토리에 일반적으로 나타나는 index.html입니다.&quot;
+PhoneGap 설명서(`https://docs.phonegap.com`), 이 요소는 &quot;선택 사항&quot;으로 설명됩니다. &lt;content> 요소는 최상위 웹 자산 디렉토리에서 앱의 시작 페이지를 정의합니다. 기본값은 프로젝트의 최상위 www 디렉토리에 일반적으로 나타나는 index.html입니다.&quot;
 
 index.html 파일이 없으면 PhoneGap Build가 실패합니다. 따라서 이 파일이 포함됩니다.
 

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '3293'
+source-wordcount: '3280'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,6 @@ Amazon SNS를 사용하지 않으려면 이 단계를 건너뛸 수 있습니다
    1. 보안 자격 증명 탭을 클릭합니다.
    1. 여기에서 키를 보고 새 키를 만듭니다. 나중에 사용할 수 있도록 키를 저장합니다.
 
-
 1. **주제 만들기**
 
    1. 클릭 **주제 만들기** 주제 이름을 선택합니다. 항목 ARN, 항목 소유자, 영역, 표시 이름 등 모든 필드를 기록합니다.
@@ -150,8 +149,8 @@ Amazon SNS를 사용하지 않으려면 이 단계를 건너뛸 수 있습니다
 
       1. APNS의 경우 P12 파일, 암호, 인증서 및 개인 키를 모두 입력해야 합니다. 이러한 함수는 단계에서 가져와야 합니다. *Apple 푸시 알림 서비스(APNS) 사용* 위.
       1. GCM의 경우 API 키를 입력해야 합니다. 이 값은 단계에서 가져와야 합니다. *Google 클라우드 메시징(GCM) 서비스 사용* 위.
-   1. 지원할 각 플랫폼에 대해 위 단계를 한 번 반복합니다. iOS과 Android를 모두 푸시하려면 두 개의 Platform 애플리케이션을 만들어야 합니다.
 
+   1. 지원할 각 플랫폼에 대해 위 단계를 한 번 반복합니다. iOS과 Android를 모두 푸시하려면 두 개의 Platform 애플리케이션을 만들어야 합니다.
 
 1. **ID 풀 만들기**
 
@@ -178,7 +177,6 @@ Amazon SNS를 사용하지 않으려면 이 단계를 건너뛸 수 있습니다
     </table>
 
    1. 클릭 **정책 적용**
-
 
 #### Pushwoosh 메시징 서비스 사용 {#using-the-pushwoosh-messaging-service}
 
@@ -276,9 +274,9 @@ PhoneGap을 사용하여 앱을 빌드하고 배포하는 방법에는 두 가�
 
 **참고:** 푸시 알림 테스트의 경우 푸시 알림은 푸시 공급자(Apple 또는 Google)와 디바이스 간에 고유한 프로토콜을 사용하기 때문에 에뮬레이터로 충분하지 않습니다. 현재 Mac/PC 하드웨어 및 에뮬레이터는 이 기능을 지원하지 않습니다.
 
-1. *PhoneGap Build* 는 PhoneGap에서 제공하는 서비스로, 서버에 앱을 빌드하고 사용자가 장치에 직접 다운로드할 수 있습니다. 다음을 참조하십시오. [PhoneGap Build 설명서](https://build.phonegap.com/) PhoneGap Build 설정 및 사용 방법을 알아봅니다.
+1. *PhoneGap Build* 는 PhoneGap에서 제공하는 서비스로, 서버에 앱을 빌드하고 사용자가 장치에 직접 다운로드할 수 있습니다. 다음 PhoneGap Build 설명서를 참조하십시오. `https://build.phonegap.com/` PhoneGap Build 설정 및 사용 방법을 알아봅니다.
 
-1. *PhoneGap 명령줄 인터페이스* (CLI)를 사용하면 명령줄에서 다양한 PhoneGap 명령 집합을 사용하여 앱을 빌드하고 디버깅하고 배포할 수 있습니다. 다음을 참조하십시오. [PhoneGap 개발자 설명서](https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface) phoneGap CLI를 설정하고 사용하는 방법에 대해 알아봅니다.
+1. *PhoneGap 명령줄 인터페이스* (CLI)를 사용하면 명령줄에서 다양한 PhoneGap 명령 집합을 사용하여 앱을 빌드하고 디버깅하고 배포할 수 있습니다. PhoneGap 개발자 설명서 를 참조하십시오(`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) PhoneGap CLI를 설정하고 사용하는 방법을 알아봅니다.
 
 ### 7단계: 푸시 알림 보내기 {#step-send-a-push-notification}
 

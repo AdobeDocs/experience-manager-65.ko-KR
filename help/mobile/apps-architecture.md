@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2667'
 ht-degree: 0%
 
 ---
@@ -369,7 +369,7 @@ www 디렉터리에는 앱의 모양과 동작을 구현하는 모든 웹 콘텐
 
 #### www/config.xml {#www-config-xml}
 
-다음 [PhoneGap 설명서](https://docs.phonegap.com) 은 이 파일을 &#39;전역 구성 파일&#39;로 참조합니다. config.xml에는 앱 이름, 앱 &#39;환경 설정&#39;(예: iOS 웹 보기에서 오버스크롤을 허용하는지 여부) 및 다음과 같은 플러그인 종속성과 같은 많은 앱 속성이 포함되어 있습니다. *전용* PhoneGap Build에서 사용됨.
+PhoneGap 설명서(`https://docs.phonegap.com`)은 이 파일을 &#39;전역 구성 파일&#39;로 참조합니다. config.xml에는 앱 이름, 앱 &#39;환경 설정&#39;(예: iOS 웹 보기에서 오버스크롤을 허용하는지 여부) 및 다음과 같은 플러그인 종속성과 같은 많은 앱 속성이 포함되어 있습니다. *전용* PhoneGap Build에서 사용됨.
 
 config.xml 파일은 AEM의 정적 파일이며 Content Sync를 통해 있는 그대로 내보냅니다.
 
@@ -381,7 +381,7 @@ config.xml 파일에 `content` 요소:
 
 `<content src="content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en.html" />`
 
-위치 [PhoneGap 설명서](https://docs.phonegap.com), 이 요소는 &quot;선택 사항&quot;으로 설명됩니다. &lt;content> 요소는 최상위 웹 자산 디렉토리에서 앱의 시작 페이지를 정의합니다. 기본값은 프로젝트의 최상위 www 디렉토리에 일반적으로 나타나는 index.html입니다.&quot;
+PhoneGap 설명서(`https://docs.phonegap.com`), 이 요소는 &quot;선택 사항&quot;으로 설명됩니다. &lt;content> 요소는 최상위 웹 자산 디렉토리에서 앱의 시작 페이지를 정의합니다. 기본값은 프로젝트의 최상위 www 디렉토리에 일반적으로 나타나는 index.html입니다.&quot;
 
 index.html 파일이 없으면 PhoneGap Build가 실패합니다. 따라서 이 파일이 포함됩니다.
 

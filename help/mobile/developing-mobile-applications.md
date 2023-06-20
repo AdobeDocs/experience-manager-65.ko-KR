@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ AEM은 Adobe PhoneGap 및 Adobe 게시 솔루션을 활용하여 다양한 컨�
 * 신규 또는 기존 Webviews에 HTML5 소개 **기본** Cordova WebViews를 통한 애플리케이션.
 * 웹, 모바일 웹, 모바일 앱 및 인쇄를 포함한 모든 게재 채널에서 풍부한 멀티미디어 콘텐츠를 만들고, 선별하고 공유할 수 있습니다.
 
-AEM은 Adobe과 통합됩니다 **[PhoneGap Build 서비스](https://build.phonegap.com/)** 애플리케이션 빌드 및 배포 프로세스를 간소화합니다.
+AEM은 Adobe PhoneGap Build 서비스와 통합됩니다(`https://build.phonegap.com/`)을 클릭하여 애플리케이션 빌드 및 배포 프로세스를 단순화합니다.
 
 **Adobe ContentSync** 를 사용하면 앱을 다시 설치하거나 appStore, Google Play 또는 기타 앱 소스에서 다운로드할 필요 없이 OTA(Over-the-Air)로 페이지 및 콘텐츠 업데이트를 장치에 쉽게 다운로드할 수 있습니다.
 
