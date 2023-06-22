@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 1077aeabacb1dbb489dbc7222c45da0a35b8cf16
+source-git-commit: fa8ddf107e2cf19b4d162501a5fbb21cf48b8e66
 workflow-type: tm+mt
-source-wordcount: '3777'
+source-wordcount: '3798'
 ht-degree: 13%
 
 ---
@@ -145,6 +145,7 @@ ht-degree: 13%
 * 사용자가 Experience Manager Forms 6.5.16.0 서비스 팩으로 업데이트하고 를 변경하려고 할 때 `LicenseType` 끝 `Production`, 변경 사항이 반영되지 않습니다. (FORMS-7594)
 * 사용자가 다음을 구성하는 PDF으로 LCA 프로세스를 호출하려고 하면 `Chinese Full Width Characters`에 문제가 발생합니다. `ValidateForm` 프로세스. (FORMS-7464)
 * Experience Manager Forms Designer에서 XMLFM은 XDP 기반 템플릿에 대해 문자, A4 및 A5와 같이 서로 다른 용지 크기로 ZPL 출력을 생성합니다. (FORMS-7898)
+* 브라우저의 제한 사항으로, 양식의 자동 채우기 옵션은 Experience Manager Forms 6.5.14.0의 194개 양식 필드 후에서 작동하지 않습니다. (FORMS-9426)
 
 ## 통합{#integrations-6517}
 
