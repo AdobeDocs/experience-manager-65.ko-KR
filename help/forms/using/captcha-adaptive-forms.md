@@ -11,7 +11,7 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 031c683029c61f8f49c07d276c27e05b3fcfd5fc
+source-git-commit: 294a7de1c777c49acf8590ec0900b0342f01e7eb
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 0%
@@ -75,7 +75,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 ![reCAPTCHA 엔터프라이즈](/help/forms/using/assets/recaptcha1-enterprise.png)
 
 
-## Google reCAPTCHA v2 구성 {#steps-to-implement-reCAPTCHA-v2-in-forms}
+### Google reCAPTCHA v2 구성 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
 1. 획득 [reCAPTCHA API 키 쌍](https://www.google.com/recaptcha/admin) Google에서. 여기에는 다음이 포함됩니다 **사이트 키** 및 a **비밀 키**.
 1. 클라우드 서비스에 대한 구성 컨테이너를 만듭니다.
@@ -333,6 +333,6 @@ public interface GuideCaptchaValidator {
 }
 ```
 
-`captchaPropertyNodePath` 는 Sling 저장소에 있는 CAPTCHA 구성 요소의 리소스 경로를 나타냅니다. 이 속성을 사용하여 CAPTCHA 구성 요소와 관련된 세부 사항을 포함합니다. 예를 들어, `captchaPropertyNodePath` 에는 CAPTCHA 구성 요소에 구성된 reCAPTCHA 클라우드 구성에 대한 정보가 포함되어 있습니다. 클라우드 구성 정보는 다음을 제공합니다 **[!UICONTROL 사이트 키]** 및 **[!UICONTROL 비밀 키]** reCAPTCHA 서비스 구현 설정.
+`captchaPropertyNodePath` Sling 저장소에 있는 CAPTCHA 구성 요소의 리소스 경로를 나타냅니다. 이 속성을 사용하여 CAPTCHA 구성 요소와 관련된 세부 사항을 포함합니다. 예를 들어, `captchaPropertyNodePath` 에는 CAPTCHA 구성 요소에 구성된 reCAPTCHA 클라우드 구성에 대한 정보가 포함되어 있습니다. 클라우드 구성 정보는 다음을 제공합니다 **[!UICONTROL 사이트 키]** 및 **[!UICONTROL 비밀 키]** reCAPTCHA 서비스 구현 설정.
 
-`userResponseToken` 은(는) `g_reCAPTCHA_response` 폼에서 CAPTCHA를 푼 후에 생성됩니다.
+`userResponseToken` 다음 참조: `g_reCAPTCHA_response` 폼에서 CAPTCHA를 푼 후에 생성됩니다.
