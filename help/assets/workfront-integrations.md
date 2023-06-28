@@ -5,9 +5,9 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 39930967e2f423b7fbbc79bcb85f78d15809e97d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1155'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets-view/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Workfront]는 업무의 전체 라이프사이클을 한 곳에서 관리할 수 있도록 도와주는 작업 관리 애플리케이션입니다. 통합 대상 [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets] 에서는 작업과 디지털 에셋 관리를 본질적으로 연결하여 콘텐츠 속도와 마켓 출시 속도를 개선할 수 있습니다. Workfront에서 작업을 관리하는 맥락에서 사용자는 필요한 문서 및 이미지에 액세스할 수 있습니다.
@@ -39,10 +39,9 @@ ht-degree: 5%
 >
 >* Adobe은 다음에 대한 업데이트를 릴리스할 수 있습니다. [!DNL Adobe Workfront] 및 [!DNL Adobe Experience Manager] 따라서 이 커넥터가 이중화됩니다. 이 경우 고객은 이 커넥터를 사용하지 않도록 전환해야 할 수 있습니다.
 >
->* Adobe은 향상된 커넥터 버전 1.7.4 이상을 지원합니다. 이전 프리릴리스 및 사용자 지정 버전은 지원되지 않습니다. 향상된 커넥터 버전을 확인하려면 `digital.hoodoo` 의 왼쪽 창에서 사용할 수 있는 그룹 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko).
+>* Adobe은 향상된 커넥터 버전 1.7.4 이상을 지원합니다. 이전 프리릴리스 및 사용자 지정 버전은 지원되지 않습니다. 향상된 커넥터 버전을 확인하려면 `digital.hoodoo` 의 왼쪽 창에서 사용할 수 있는 그룹 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en).
 >
 >* 다음을 참조하십시오 [Workfront for Experience Manager Assets 강화 커넥터에 대한 파트너 인증 시험](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 시험에 대한 자세한 내용은 [시험 안내서](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
-
 
 ## 간의 다양한 통합 비교 [!DNL Assets] 및 [!DNL Workfront] {#feature-parity-matrix}
 
@@ -52,7 +51,7 @@ ht-degree: 5%
 |----|----|----|-----|-----|
 | 배포 메서드 | 다음에 적합 [!DNL Assets] 제공. | Assets Essentials | Adobe Managed Services, 온-프레미스 | 클라우드 서비스 |
 | **일반** |
-| 에서 디지털 파일 보내기 [!DNL Workfront] 끝 [!DNL Assets] | 최신 버전의 WF 문서를 AEM Assets에 업로드하여 새 버전의 문서로 연결할 수 있습니다. | ✓ | ✓ | ✓ |
+| 에서 디지털 파일 보내기 [!DNL Workfront] 끝 [!DNL Assets] | WF 문서의 최신 버전은 문서의 새 버전으로 연결된 AEM Assets에 업로드할 수 있습니다. | ✓ | ✓ | ✓ |
 | 수동으로 AEM 폴더에 Workfront 개체 연결 | 기존 AEM 폴더는 Workfront 폴더로 연결되고 하위 자산은 새 Workfront 문서로 연결됩니다. | ✓ | ✓ | ✓ |
 | 링크 [!DNL Assets] Workfront 개체로 | AEM의 기존 에셋을 새 Workfront 문서에 연결하거나 기존 문서의 새 버전으로 연결할 수 있습니다. | ✓ | ✓ | ✓ |
 | 연결된 폴더에 추가된 에셋은 자동으로 AEM으로 전송됩니다. | 연결된 폴더에 문서가 추가되면 연결된 에셋이 자동으로 새 에셋으로 AEM Assets에 업로드됩니다. | ✓ | ✓ | ✓ |
@@ -71,14 +70,14 @@ ht-degree: 5%
 | 단일 AEM 환경에 연결하는 여러 Workfront 환경 지원 | 여러 Workfront 환경의 사용자는 단일 AEM 환경에 연결할 수 있습니다. | ✓ | 아니요 | ✓ |
 | 단일 Workfront 환경에 연결하는 여러 AEM 환경 지원 | 단일 Workfront 환경 내의 사용자는 여러 AEM 환경 간에 에셋을 전송하거나 연결할 수 있습니다. | ✓ | ✓ | ✓ |
 | **메타데이터** |
-| Workfront 에셋 메타데이터를 AEM Assets에 매핑 | Workfront 개체 및 사용자 지정 양식 속성이 AEM 에셋 메타데이터 속성에 매핑될 수 있습니다. 값은 초기 업로드/링크 시 푸시됩니다. | ✓ | ✓ | ✓ |
+| Workfront 에셋 메타데이터를 AEM Assets에 매핑 | Workfront 개체 및 사용자 지정 양식 속성이 AEM 에셋 메타데이터 속성에 매핑될 수 있습니다. 값은 초기 업로드/링크에서 푸시됩니다. | ✓ | ✓ | ✓ |
 | Workfront에서 자동으로 문서 사용자 지정 Forms 만들기 | AEM 워크플로우를 사용하여 Workfront 문서, 작업 및 문제에 사용자 정의 양식을 첨부합니다. | 아니요 | ✓ | 아니요 |
 | AEM Assets과 Workfront 간 메타데이터의 양방향 자동 업데이트 | AEM Assets과 Workfront 간에 메타데이터를 자동으로 업데이트합니다. 에셋은 처음에 Workfront에서 AEM으로 푸시해야 하며 양방향 메타데이터 업데이트가 제대로 작동하려면 Workfront 에셋 메타데이터를 AEM assets에 매핑해야 합니다. | 아니요 | ✓ | 아니요 |
 | AEM에 매핑된 메타데이터에 대한 Workfront의 실시간 보기 | Workfront 문서 세부 정보 및 문서 요약 패널에서 AEM에 대해 업데이트된 매핑된 메타데이터를 봅니다. | ✓ | 아니요 | ✓ |
 | 업데이트된 Workfront 메타데이터를 AEM에 실시간으로 푸시 | 에셋 또는 에셋의 새 버전을 다시 푸시하지 않고 매핑된 Workfront 메타데이터를 AEM으로 자동으로 업데이트합니다. | ✓ | 아니요 | ✓ |
 | Workfront 메타데이터를 AEM Assets 폴더에 매핑 | Workfront 프로젝트 메타데이터를 연결된 AEM 폴더와 동기화합니다. | 아니요 | ✓ | ✓ |
 | 새 버전으로 AEM 메타데이터 업데이트 | AEM의 구성을 통해 Workfront에서 새로 버전이 지정된 에셋이 해당 메타데이터에 대한 변경 사항을 푸시하는지 여부를 확인할 수 있습니다. | 아니요 | ✓ | 아니요 |
-| Workfront에서 사용자 지정 Forms의 변경 사항에 대한 AEM 메타데이터 자동 업데이트 | AEM에서는 Workfront의 문서 양식에 대한 업데이트를 구독할 수 있습니다. 따라서 Workfront 문서 사용자 정의 양식 메타데이터에 대한 모든 업데이트는 매핑된 AEM 메타데이터 필드의 값을 수정합니다. | 아니요 | ✓ | 아니요 |
+| Workfront에서 사용자 지정 Forms의 변경 사항에 대한 AEM 메타데이터 자동 업데이트 | AEM에서는 Workfront의 문서 양식에 대한 업데이트를 구독할 수 있습니다. 따라서 Workfront 문서 사용자 정의 양식 메타데이터에 대한 모든 업데이트는 매핑된 AEM 메타데이터 필드의 값을 편집합니다. | 아니요 | ✓ | 아니요 |
 | **워크플로우(기본 제공)** |
 | 연결된 자산에 대한 새 증명 버전 만들기 | Workfront에서 자산을 연결할 때 증명을 자동으로 생성할 수 있습니다. | 아니요 | 사용자 정의 | 아니요 |
 | Workfront 개체의 상태 설정 | AEM 워크플로우를 사용하여 구성 가능한 조건에 따라 Workfront 객체 상태 설정 | 아니요 | ✓ | 예정 |
