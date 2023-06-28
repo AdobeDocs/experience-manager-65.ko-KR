@@ -2,15 +2,20 @@
 title: 적응형 양식을 만들거나 AEM Sites 페이지에 추가
 description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 원활하게 추가하는 방법을 알아봅니다. 동적 및 맞춤형 양식을 웹 사이트에 통합하는 단계별 기술과 모범 사례에 대해 알아보고 디지털 환경을 최적화하여 효과를 극대화합니다.
 feature: Adaptive Forms
-source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
+exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
+source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2883'
 ht-degree: 23%
 
 ---
 
-
 # 적응형 양식을 만들거나 AEM Sites 페이지에 추가 {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | 이 문서 |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 
 AEM Forms를 사용하여 적응형 양식을 웹 페이지에 원활하게 통합할 수 있습니다. 이를 통해 방문자는 현재 페이지를 떠나지 않고 편리하게 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 방문자는 양식과 상호 작용하면서 웹 사이트의 다른 요소에 지속적으로 관심을 가질 수 있습니다.
 
@@ -246,7 +251,3 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
    * 리디렉션 URL을 구성하려면 제출 시 옵션에서 URL로 리디렉션 옵션을 선택하고 절대 주소 또는 AEM Sites 페이지의 리디렉션 URL 또는 상대 경로를 제공합니다.
 
    * 사용자 정의 메시지 또는 감사 메시지를 구성하려면 제출 시 옵션에서 메시지 표시 옵션을 선택하고 메시지 콘텐츠 상자에 메시지를 제공합니다. 서식 있는 텍스트 상자입니다. 전체 화면 옵션을 사용하여 사용 가능한 모든 서식 있는 텍스트 항목을 볼 수 있습니다.
-
-
-
-
