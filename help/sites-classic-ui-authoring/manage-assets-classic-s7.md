@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '3511'
+source-wordcount: '3532'
 ht-degree: 13%
 
 ---
@@ -49,6 +49,7 @@ Experience Manager 시 비디오 구성 요소를 사용하는 방법에 대한 
 >[!NOTE]
 >
 >Experience Manager은 비동기적으로 Dynamic Media Classic(Scene7)에 게시합니다. 다음을 선택한 후 **[!UICONTROL 게시]**, 에셋이 Dynamic Media Classic(Scene7)에 게시되는 데 몇 초 정도 걸릴 수 있습니다.
+>
 
 ### 자산 콘솔에서 게시 {#publishing-from-the-assets-console}
 
@@ -56,7 +57,7 @@ Experience Manager 시 비디오 구성 요소를 사용하는 방법에 대한 
 
 1. Experience Manager Classic UI에서 **[!UICONTROL 디지털 자산]** 를 클릭하여 digital asset manager에 액세스합니다.
 
-1. Dynamic Media Classic(Scene7)에 게시할 대상 폴더 내에서 에셋 또는 폴더를 선택하고 마우스 오른쪽 단추로 클릭한 후 를 선택합니다 **[!UICONTROL Dynamic Media Classic(Scene7)에 게시]**. 또는 다음을 선택할 수 있습니다 **[!UICONTROL Dynamic Media Classic(Scene7)에 게시]** 다음에서 **[!UICONTROL 도구]** 메뉴 아래의 제품에서 사용할 수 있습니다.
+1. Dynamic Media Classic(Scene7)에 게시할 대상 폴더 내에서 자산 또는 폴더를 선택하고 마우스 오른쪽 단추로 클릭한 후 선택합니다 **[!UICONTROL Dynamic Media Classic(Scene7)에 게시]**. 또는 다음을 선택할 수 있습니다 **[!UICONTROL Dynamic Media Classic(Scene7)에 게시]** 다음에서 **[!UICONTROL 도구]** 메뉴 아래의 제품에서 사용할 수 있습니다.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -205,7 +206,7 @@ HTML5 확대/축소 구성 요소가 더 큰 이미지를 표시하려면 + 단�
 
 에셋 하단에는 확대/축소 도구가 있습니다. 선택 **[!UICONTROL +]** 확대하기 위해. 선택 **[!UICONTROL -]** 줄이려고. 선택 **[!UICONTROL x]** 또는 확대/축소 재설정 화살표를 사용하면 이미지가 가져온 원래 크기로 돌아갑니다. 전체 화면으로 만들 수 있도록 대각선 화살표를 선택합니다. 선택 **[!UICONTROL 편집]** 구성 요소를 구성할 수 있습니다. 이 구성 요소를 사용하여 다음을 구성할 수 있습니다. [모든 Dynamic Media Classic(Scene7) 구성 요소에 공통되는 설정](#settings-common-to-all-scene-components).
 
-![](do-not-localize/chlimage_1-3.png)
+![HTML5 확대/축소 구성 요소 내부의 튤립 꽃 이미지.](do-not-localize/chlimage_1-3.png)
 
 ### 플라이아웃 {#flyout}
 
@@ -223,7 +224,7 @@ HTML5 플라이아웃 구성 요소에서 자산은 분할 화면으로 표시�
 
 Dynamic Media Classic(Scene7) 이미지 구성 요소를 사용하여 Dynamic Media Classic(Scene7) 수정자, 이미지 또는 뷰어 사전 설정, 선명하게 하기 등의 이미지에 Dynamic Media Classic(Scene7) 기능을 추가할 수 있습니다. Dynamic Media Classic(Scene7) 이미지 구성 요소는 특별한 Dynamic Media Classic(Scene7) 기능이 있는 Experience Manager의 다른 이미지 구성 요소와 유사합니다. 이 예의 이미지에는 Dynamic Media Classic(Scene7) URL 수정자, `&op_invert=1` 적용됨.
 
-![](do-not-localize/chlimage_1-4.png)
+![Dynamic Media Classic(Scene 7) 이미지 구성 요소 내부의 구 이미지](do-not-localize/chlimage_1-4.png)
 
 **제목, 대체 텍스트** - 고급 탭에서 이미지에 제목을 추가하고, 그래픽을 해제한 사용자를 위한 대체 텍스트를 추가합니다.
 
@@ -312,7 +313,7 @@ Dynamic Media Classic(Scene7) **[!UICONTROL 비디오]** 구성 요소(사이드
 
 ### 비디오 구성 요소의 알려진 제한 사항 {#known-limitations-for-the-video-component}
 
-Adobe DAM 및 WCM은 기본 소스 비디오가 업로드되었는지를 표시합니다. 이러한 프록시 자산은 표시되지 않습니다.
+Adobe DAM 및 WCM은 기본 소스 비디오가 업로드되었는지 보여 줍니다. 이러한 프록시 자산은 표시되지 않습니다.
 
 * Dynamic Media Classic(Scene7) 인코딩 표현물
 * Dynamic Media Classic(Scene7) 응용 비디오 세트
@@ -331,10 +332,9 @@ Dynamic Media Classic(Scene7) 컨텐츠 브라우저를 사용하면 Dynamic Med
 >* 날짜 [보안 미리 보기가 활성화됨](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), Dynamic Media Classic(Scene7)에 게시된 자산과 게시되지 않은 자산은 모두 Dynamic Media Classic(Scene7) 컨텐츠 브라우저에 표시됩니다.
 >* 표시되지 않는 경우 **[!UICONTROL Dynamic Media Classic(Scene7)]** 또는 **[!UICONTROL S7]** 아이콘 을 컨텐츠 브라우저의 옵션으로 사용하여 다음을 수행해야 합니다. [Experience Manager에서 작동하도록 Dynamic Media Classic(Scene7) 구성](/help/sites-administering/scene7.md).
 >* 비디오의 경우 Dynamic Media Classic(Scene7) 컨텐츠 브라우저는 다음을 지원합니다.
-   >   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
-   >   * 단일 MP4 비디오
-   >   * 단일 F4V 동영상
-
+>   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
+>   * 단일 MP4 비디오
+>   * 단일 F4V 동영상
 
 ### 콘텐츠 검색 {#browsing-content-in-the-classic-ui}
 
@@ -357,7 +357,6 @@ Dynamic Media Classic(Scene7) 컨텐츠 브라우저를 사용하면 Dynamic Med
 >* 단일 F4V 동영상
 >
 
-
 ### 콘텐츠 브라우저를 사용하여 Dynamic Media Classic(Scene7) 에셋 검색 {#searching-for-scene-assets-with-the-content-browser}
 
 Dynamic Media Classic(Scene7) 에셋을 검색하는 것은 Experience Manager 에셋 검색과 유사합니다. 단, 검색할 때 에셋을 Experience Manager으로 직접 가져오는 대신 Dynamic Media Classic(Scene7) 시스템에 있는 에셋의 원격 보기가 실제로 표시됩니다.
@@ -366,7 +365,7 @@ Dynamic Media Classic(Scene7) 에셋을 검색하는 것은 Experience Manager �
 
 UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표시됨)에 따라 필터링할 수 있습니다.
 
-**키워드 입력** - 이름별로 자산을 검색할 수 있습니다. 키워드를 검색할 때 파일 이름의 시작 문자를 입력합니다. 예를 들어 &quot;swimming&quot;이라는 단어를 입력하면 해당 문자로 시작하는 모든 에셋 파일 이름을 해당 순서로 찾습니다. 자산을 찾을 용어를 입력한 후 enter를 선택해야 합니다.
+**키워드 입력** - 이름별로 자산을 검색할 수 있습니다. 키워드를 검색할 때 파일 이름의 시작 문자를 입력합니다. 예를 들어 &quot;swimming&quot;이라는 단어를 입력하면 해당 문자로 시작하는 모든 에셋 파일 이름을 해당 순서로 찾습니다. 다음을 선택하십시오. `Enter` 를 입력한 후 자산을 찾습니다.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -397,7 +396,6 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 >* 비디오를 검색할 때 단일 렌디션을 검색합니다. 원본 렌디션만 반환 &#42;.mp4) 및 인코딩된 렌디션
 >* 응용 비디오 세트를 검색할 때 폴더 및 모든 하위 폴더를 검색하게 되지만, 검색에 키워드를 추가한 경우에만 해당됩니다. 키워드를 추가하지 않은 경우 Experience Manager이 하위 폴더를 검색하지 않습니다.
 >
-
 
 **게시 상태** - 게시 상태(게시 취소됨 또는 게시됨)에 따라 자산을 필터링할 수 있습니다. 게시 상태를 선택하지 않으면 기본적으로 Experience Manager 는 모든 게시 상태를 검색합니다.
 

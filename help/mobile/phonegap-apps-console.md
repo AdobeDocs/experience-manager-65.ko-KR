@@ -1,8 +1,6 @@
 ---
 title: 앱 콘솔을 사용하여 앱 만들기 및 편집
-seo-title: Creating and Editing Apps Using the Apps Console
 description: 이 페이지를 따라 앱 콘솔을 사용하여 앱을 만들고 편집하는 방법에 대해 알아보십시오.
-seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '2615'
+source-wordcount: '2695'
 ht-degree: 1%
 
 ---
@@ -62,7 +60,7 @@ AEM에서 만드는 모바일 애플리케이션의 루트 페이지가 앱 콘�
 
 ### 홈 페이지 {#the-home-page}
 
-응용 프로그램을 열 때 홈 페이지 또는 응용 프로그램의 언어 변형의 index.html 페이지가 나타납니다.홈 페이지는 사용자에게 응용 프로그램의 다양한 페이지에 대한 링크 메뉴를 제공합니다. 단락 시스템을 사용하면 콘텐츠를 만들기 위한 페이지에 구성 요소를 추가할 수 있습니다.
+응용 프로그램을 열면 홈 페이지 또는 응용 프로그램 언어 변형의 index.html 페이지가 나타납니다. 홈 페이지는 사용자에게 애플리케이션의 다양한 페이지에 대한 링크 메뉴를 제공합니다. 단락 시스템을 사용하면 콘텐츠를 만들기 위한 페이지에 구성 요소를 추가할 수 있습니다.
 
 ## 모바일 애플리케이션 만들기 {#creating-a-mobile-application}
 
@@ -89,9 +87,9 @@ Adobe 클라우드 서비스를 빌드하고 Mobile Services SDK 플러그인을
 다음 절차에서는 Touch UI를 사용하여 모바일 애플리케이션을 만듭니다.
 
 1. 레일에서 앱 을 클릭합니다.
-1. 만들기 아이콘을 클릭하거나 탭합니다.
+1. 만들기 아이콘을 클릭합니다.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![사각형 안에 더하기 기호가 있는 만들기 아이콘](do-not-localize/chlimage_1-7.png)
 
 1. (선택 사항) 고급 탭에서 응용 프로그램에 대한 설명을 입력하고 필요한 경우 서버 URL을 변경합니다.
 1. (선택 사항) PhoneGap Build을 사용하여 응용 프로그램을 컴파일하는 경우 빌드 탭에서 사용할 구성을 선택합니다.
@@ -114,30 +112,30 @@ Adobe 클라우드 서비스를 빌드하고 Mobile Services SDK 플러그인을
 1. 레일에서 앱 을 클릭하거나 탭합니다.
 1. 구성할 애플리케이션을 선택하고 페이지 속성 보기 아이콘을 클릭합니다.
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![원 안에 있는 문자 I가 나타내는 페이지 속성 보기 아이콘.](do-not-localize/chlimage_1-8.png)
 
 1. 속성 값을 변경하려면 편집 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![연필로 표시된 편집 아이콘.](do-not-localize/chlimage_1-9.png)
 
 1. 기본 및 고급 속성을 구성한 다음 완료 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![확인 표시 기호가 표시된 완료 아이콘.](do-not-localize/chlimage_1-10.png)
 
 #### 응용 프로그램의 언어 변형 구성 {#configure-a-language-variation-of-the-application}
 
-1. 레일에서 앱 을 클릭하거나 탭합니다.
-1. 앱 관리 콘솔 내에서 편집할 모바일 애플리케이션을 드릴다운하려면 를 클릭합니다. 구성할 응용 프로그램의 언어 버전을 선택하고 응용 프로그램 속성 보기 아이콘을 클릭합니다.
+1. 레일에서 앱 을 클릭합니다.
+1. 을 클릭하여 앱 Admin Console 내에서 편집할 모바일 애플리케이션을 자세히 살펴봅니다. 구성할 응용 프로그램의 언어 버전을 선택하고 응용 프로그램 속성 보기 아이콘을 클릭합니다.
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![원 안에 문자 I가 표시된 응용 프로그램 등록 정보 보기 아이콘.](do-not-localize/chlimage_1-11.png)
 
 1. 속성 값을 변경하려면 편집 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-12.png)
+   ![연필로 표시된 편집 아이콘.](do-not-localize/chlimage_1-12.png)
 
 1. 기본, 고급, 빌드 및 Analytics 탭에서 속성을 구성한 다음 완료 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-13.png)
+   ![확인 표시 기호가 표시된 완료 아이콘.](do-not-localize/chlimage_1-13.png)
 
 ### 모바일 애플리케이션 콘텐츠 작성 {#authoring-the-content-of-a-mobile-application}
 
@@ -167,7 +165,7 @@ AEM 게시 인스턴스의 컨텐츠 동기화 캐시는 모바일 애플리케�
 1. 레일에서 앱 을 클릭하거나 탭한 다음 애플리케이션을 클릭하거나 탭합니다.
 1. 시작 페이지를 선택한 다음 캐시 업데이트 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-14.png)
+   ![캐시 업데이트 아이콘 위에 재활용 기호가 있는 줄무늬 바렐이 표시되었습니다.](do-not-localize/chlimage_1-14.png)
 
 ### 앱 템플릿 사용 {#using-app-templates}
 
@@ -187,7 +185,7 @@ AEM 게시 인스턴스의 컨텐츠 동기화 캐시는 모바일 애플리케�
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-1. 맨 위에 있는 + 만들기 버튼을 클릭하고 앱 만들기 를 선택합니다.
+1. 맨 위에 있는 + 만들기 단추를 클릭하고 앱 만들기를 선택합니다.
 1. 앱 템플릿 목록이 표시되면 다음 중 하나를 선택합니다.
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
@@ -222,7 +220,7 @@ Geometrixx Outdoors 앱은 기본 PhoneGap 애플리케이션 블루프린트 �
 모바일 앱의 각 페이지에는 다음 기능이 포함되어 있습니다.
 
 * 상위 페이지로 돌아가기 위한 뒤로 단추. 뒤로 단추는 홈 페이지에 나타나지 않습니다.
-* 명령 및 링크 메뉴를 제공하는 확장 가능한 레일:
+* 명령 및 링크 메뉴를 제공하는 소모성 레일:
 
    * 위치 페이지를 엽니다.
    * 장바구니를 엽니다.
@@ -251,7 +249,7 @@ Geometrixx Outdoors 앱은 기본 PhoneGap 애플리케이션 블루프린트 �
 
 ### 제품 페이지 - Geometrixx 모바일 앱 {#the-products-page-geometrixx-mobile-app}
 
-제품 페이지 및 하위 페이지 계층 구조는 제품 페이지에 대한 분류 시스템을 구현합니다. 계층의 각 분기에서 가장 낮은 페이지는 ng 제품 구성 요소를 포함하는 제품 페이지입니다.
+제품 페이지와 하위 페이지의 계층은 제품 페이지에 대한 분류 시스템을 구현합니다. 계층의 각 분기에서 가장 낮은 페이지는 ng 제품 구성 요소를 포함하는 제품 페이지입니다.
 
 애플리케이션 사용자는 제품 페이지를 사용할 수 없습니다. 톱니바퀴 페이지에서는 각 제품 페이지에 액세스할 수 있습니다.
 
@@ -269,7 +267,7 @@ Geometrixx Outdoors 앱은 기본 PhoneGap 애플리케이션 블루프린트 �
 
 ### 미국 정보 페이지 - Geometrixx 모바일 앱 {#the-about-us-page-geometrixx-mobile-app}
 
-정보 페이지에는 여러 개의 열 행 구성 요소가 포함되어 있습니다. 각 열에는 이미지 또는 텍스트 구성 요소가 포함됩니다. 구성 요소는 편집할 수 있으며 단락 시스템에서 구성 요소를 추가할 수 있습니다.
+정보 페이지에는 몇 가지 두 개의 열 행 구성 요소가 포함되어 있습니다. 각 열에는 이미지 또는 텍스트 구성 요소가 포함됩니다. 구성 요소는 편집할 수 있으며 단락 시스템에서 구성 요소를 추가할 수 있습니다.
 
 응용 프로그램을 사용하는 경우 영어 페이지의 캐러셀에서 미국 정보 페이지를 사용할 수 있습니다.
 
@@ -281,7 +279,7 @@ Geometrixx Outdoors 앱은 기본 PhoneGap 애플리케이션 블루프린트 �
 
 ## 샘플 모바일 구성 요소 {#sample-mobile-components}
 
-모바일 애플리케이션의 페이지를 작성할 때 사이드 킥에서 몇 가지 구성 요소를 즉시 사용할 수 있습니다. 구성 요소는 PhoneGap 구성 요소 그룹에 속합니다.
+모바일 애플리케이션의 페이지를 작성할 때 Sidekick에서 여러 구성 요소를 즉시 사용할 수 있습니다. 구성 요소는 PhoneGap 구성 요소 그룹에 속합니다.
 
 ### 회전판 밀기 {#swipe-carousel}
 

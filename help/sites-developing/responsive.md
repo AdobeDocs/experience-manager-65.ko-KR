@@ -1,8 +1,6 @@
 ---
 title: 웹 페이지를 위한 응답형 디자인
-seo-title: Responsive design for web pages
-description: 응답형 디자인을 사용하면 동일한 페이지를 여러 방향에서 여러 디바이스에 효과적으로 표시할 수 있습니다
-seo-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
+description: 응답형 디자인을 사용하면 동일한 페이지를 여러 방향에서 여러 디바이스에 효과적으로 표시할 수 있습니다.
 uuid: 3d324557-e7ff-4c82-920f-9b5a906925e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '5336'
+source-wordcount: '5375'
 ht-degree: 1%
 
 ---
@@ -23,6 +21,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >AdobeSPA 는 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: _반응_). [자세히 알아보기](/help/sites-developing/spa-overview.md).
+>
 
 >[!NOTE]
 >
@@ -52,7 +51,7 @@ ht-degree: 1%
 * [유체 격자](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [응용 이미지](/help/sites-developing/responsive.md#using-adaptive-images)
 
-디자인할 때 **[!UICONTROL 사이드 킥]** 를 클릭하여 다양한 화면 크기로 페이지를 미리 봅니다.
+디자인할 때 **[!UICONTROL Sidekick]** 를 클릭하여 다양한 화면 크기로 페이지를 미리 봅니다.
 
 ## 개발하기 전에 {#before-you-develop}
 
@@ -174,15 +173,15 @@ JSP 스크립트는 스타일 시트를 참조하는 다음 HTML 코드를 생�
 
 ## 특정 장치에 대한 미리 보기 {#previewing-for-specific-devices}
 
-반응형 디자인의 동작을 테스트할 수 있도록 다양한 뷰포트 크기로 페이지 미리보기 를 참조하십시오. 위치 **[!UICONTROL 미리 보기]** 모드, **[!UICONTROL 사이드 킥]** 다음 포함: **[!UICONTROL 장치]** 장치를 선택하는 데 사용하는 드롭다운 메뉴. 장치를 선택하면 페이지가 뷰포트 크기에 맞게 변경됩니다.
+반응형 디자인의 동작을 테스트할 수 있도록 다양한 뷰포트 크기로 페이지 미리보기 를 참조하십시오. 위치 **[!UICONTROL 미리 보기]** 모드, **[!UICONTROL Sidekick]** 다음 포함: **[!UICONTROL 장치]** 장치를 선택하는 데 사용하는 드롭다운 메뉴. 장치를 선택하면 페이지가 뷰포트 크기에 맞게 변경됩니다.
 
 ![chlimage_1-5](assets/chlimage_1-5a.png)
 
-에서 장치 미리 보기를 활성화하려면 **[!UICONTROL 사이드 킥]**, 페이지 및 를 구성해야 합니다. **[!UICONTROL MobileEmulatorProvider]** 서비스. 다른 페이지 구성은 다음에 나타나는 장치 목록을 제어합니다. **[!UICONTROL 장치]** 목록을 표시합니다.
+에서 장치 미리 보기를 활성화하려면 **[!UICONTROL Sidekick]**, 페이지 및 를 구성해야 합니다. **[!UICONTROL MobileEmulatorProvider]** 서비스. 다른 페이지 구성은 다음에 나타나는 장치 목록을 제어합니다. **[!UICONTROL 장치]** 목록을 표시합니다.
 
 ### 장치 목록 추가 {#adding-the-devices-list}
 
-다음 **[!UICONTROL 장치]** 목록이 다음 위치에 표시됨: **[!UICONTROL 사이드 킥]** 페이지에 를 렌더링하는 JSP 스크립트가 포함된 경우 **[!UICONTROL 장치]** 목록을 표시합니다. 을(를) 추가하려면 **[!UICONTROL 장치]** 나열 대상 **[!UICONTROL 사이드 킥]**, 다음을 포함 `/libs/wcm/mobile/components/simulator/simulator.jsp` 스크립트 `head` 섹션에 있는 마지막 항목이 될 필요가 없습니다.
+다음 **[!UICONTROL 장치]** 목록이 다음 위치에 표시됨: **[!UICONTROL 사이드 킥]** 페이지에 를 렌더링하는 JSP 스크립트가 포함된 경우 **[!UICONTROL 장치]** 목록을 표시합니다. 을(를) 추가하려면 **[!UICONTROL 장치]** 나열 대상 **[!UICONTROL Sidekick]**, 다음을 포함 `/libs/wcm/mobile/components/simulator/simulator.jsp` 스크립트 `head` 섹션에 있는 마지막 항목이 될 필요가 없습니다.
 
 다음을 정의하는 다음 코드를 JSP에 포함 `head` 섹션:
 
@@ -201,7 +200,7 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 * 상위 폴더: `/apps/application_name/config`
 * 이름: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
 
-   다음 - `*alias*` mobileEmulatorProvider 서비스가 공장 서비스이므로 접미사가 필요합니다. 이 팩토리에 대해 고유한 별칭을 사용합니다.
+  다음 - `*alias*` mobileEmulatorProvider 서비스가 공장 서비스이므로 접미사가 필요합니다. 이 팩토리에 대해 고유한 별칭을 사용합니다.
 
 * jcr:primaryType: `sling:OsgiConfig`
 
@@ -211,12 +210,12 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 * 유형: `String[]`
 * 값: 웹 페이지를 렌더링하는 페이지 구성 요소에 대한 경로입니다. 예를 들어 geometrixx-media 앱은 다음 값을 사용합니다.
 
-   ```
-   geometrixx-media/components/page
-    geometrixx-unlimited/components/pages/page
-    geometrixx-unlimited/components/pages/coverpage
-    geometrixx-unlimited/components/pages/issue
-   ```
+  ```
+  geometrixx-media/components/page
+   geometrixx-unlimited/components/pages/page
+   geometrixx-unlimited/components/pages/coverpage
+   geometrixx-unlimited/components/pages/issue
+  ```
 
 ### 장치 그룹 지정 {#specifying-the-device-groups}
 
@@ -235,6 +234,7 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 >[!NOTE]
 >
 >응답형 디자인에 사용하는 장치 그룹의 경우 장치 그룹을 편집하고 일반 탭에서 에뮬레이터 사용 안 함 을 선택합니다. 이 옵션은 응답형 디자인과 관련이 없는 에뮬레이터 회전 메뉴가 표시되지 않도록 합니다.
+>
 
 ## 적응형 이미지 사용 {#using-adaptive-images}
 
@@ -326,6 +326,7 @@ picturefill.js 코드에 필요한 div 요소를 생성하는 구성 요소를 �
 >* HTML을 생성하는 스크립트: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
 >
 >다음 섹션에서는 이 구성 요소에 대해 자세히 설명합니다.
+>
 
 ### AEM의 이미지 렌더링 이해 {#understanding-image-rendering-in-aem}
 
@@ -366,6 +367,7 @@ picturefill.js 코드에 필요한 div 요소를 생성하는 구성 요소를 �
 >[!NOTE]
 >
 >웹 클라이언트는 matchMedia 및 Picturepe JavaScript 라이브러리(또는 이와 유사한 라이브러리)를 사용하여 미디어 선택기를 평가합니다.
+>
 
 이미지 요청을 처리하는 서블릿은 다음 작업을 수행해야 합니다.
 
@@ -657,6 +659,7 @@ info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet 클래�
 
 >[!NOTE]
 >다음 [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) 클래스는 getFileReferencemethod를 제공합니다.
+>
 
 ## 유체 그리드 개발 {#developing-a-fluid-grid}
 
@@ -698,6 +701,7 @@ AEM을 사용하면 유체 그리드를 효율적이고 효과적으로 구현�
 >[!NOTE]
 >
 >구성 요소에 여러 개가 포함된 경우 `cq:include` parsys 구성 요소를 참조하는 요소, 각각 `path` 속성에는 다른 값이 있어야 합니다.
+>
 
 #### 페이지 구성 요소 격자 크기 조절 {#scaling-the-page-component-grid}
 
@@ -862,13 +866,13 @@ HTML5 기술을 사용하여 그리드를 구현하고 이를 조작하여 페�
 
 그리드를 사용하여 콘텐츠 블록의 크기를 다른 뷰포트 크기에 맞게 조정합니다. 콘텐츠 블록은 특정 수의 열에 걸쳐 있습니다. 서로 다른 뷰포트 크기에 맞게 열 너비가 증가 또는 감소하면 콘텐츠 블록의 너비도 그에 따라 증가 또는 감소합니다. 크기를 조정하면 콘텐츠 블록의 병렬 배치를 수용할 수 있을 만큼 넓은 대형 및 중간 크기의 뷰포트를 모두 지원할 수 있습니다.
 
-![](do-not-localize/chlimage_1-1a.png)
+![크기가 다른 두 격자보다 작은 두 격자선의 이미지입니다.](do-not-localize/chlimage_1-1a.png)
 
 #### 그리드에서 컨텐츠 위치 변경 {#repositioning-content-in-the-grid}
 
 콘텐츠 블록의 크기는 최소 너비에 의해 제한될 수 있으며, 이를 초과하는 스케일링은 더 이상 효과적이지 않다. 작은 뷰포트의 경우 격자를 사용하여 콘텐츠 블록을 가로가 아닌 세로로 배포할 수 있습니다.
 
-![](do-not-localize/chlimage_1-2a.png)
+![위치가 다른 격자보다 작은 두 격자선 이미지](do-not-localize/chlimage_1-2a.png)
 
 ### 격자 디자인 {#designing-the-grid}
 
@@ -953,7 +957,7 @@ CSS에는 다음 구조를 사용하는 일련의 미디어 쿼리가 포함되�
 
 에 스타일 추가 `.row-fluid` 각 미디어 쿼리 내의 선택기입니다. 해당 미디어 쿼리에 사용하는 페이지 레이아웃에 따라 값을 설정합니다. 예를 들어 다음 다이어그램은 넓은 뷰포트의 경우 가로, 좁은 뷰포트의 경우 세로 방향으로 컨텐츠를 배포하는 행을 보여 줍니다.
 
-![](do-not-localize/chlimage_1-3a.png)
+![행에 있는 콘텐츠 블록의 두 이미지이며, 행을 나타내는 두 번째 이미지입니다.](do-not-localize/chlimage_1-3a.png)
 
 다음 CSS는 이 동작을 구현할 수 있습니다.
 

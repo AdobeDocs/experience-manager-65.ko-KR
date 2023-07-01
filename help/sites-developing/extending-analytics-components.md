@@ -1,8 +1,6 @@
 ---
 title: 구성 요소에 Adobe Analytics 추적 추가
-seo-title: Adding Adobe Analytics Tracking to Components
 description: 구성 요소에 Adobe Analytics 추적 추가
-seo-description: null
 uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +8,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1267'
 ht-degree: 1%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 1%
 
 ## 페이지 구성 요소에 Adobe Analytics 모듈 포함 {#including-the-adobe-analytics-module-in-a-page-component}
 
-페이지 템플릿 구성 요소(예: `head.jsp, body.jsp`) ContextHub와 Adobe Analytics 통합(Cloud Services의 일부)을 로드하려면 JSP에 가 포함되어 있어야 합니다. 모두 로드 JavaScript 파일을 포함합니다.
+페이지 템플릿 구성 요소(예: `head.jsp, body.jsp`)에는 ContextHub 및 Adobe Analytics 통합(Cloud Services의 일부)을 로드하기 위해 JSP가 포함되어야 합니다. 모두 로드 JavaScript 파일을 포함합니다.
 
 ContextHub 항목은 `<head>` 태그에 Cloud Services이 포함되어야 하지만 `<head>` 및 다음 이전 `</body>` 섹션. 예:
 
@@ -42,7 +40,7 @@ ContextHub 항목은 `<head>` 태그에 Cloud Services이 포함되어야 하지
 
 다음 `cloudservices` 에 추가하는 스크립트 `<head>` 및 `<body>` 섹션은 페이지에 추가되는 클라우드 서비스 구성에 적용됩니다. (페이지가 두 개 이상의 Cloud Services 구성을 사용하는 경우 ContextHub jsp 및 Cloud Services jsp를 한 번만 포함해야 합니다.)
 
-Adobe Analytics 프레임워크를 페이지에 추가하면 `cloudservices` 스크립트는 다음 예제와 유사한 Adobe Analytics 관련 javascript 및 클라이언트측 라이브러리에 대한 참조를 생성합니다.
+Adobe Analytics 프레임워크가 페이지에 추가되면 `cloudservices` 스크립트는 다음 예제와 유사하게 Adobe Analytics 관련 JavaScript 및 클라이언트측 라이브러리에 대한 참조를 생성합니다.
 
 ```xml
 <div class="sitecatalyst cloudservice">
@@ -130,16 +128,16 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 
 AEM 구성 요소가 Adobe Analytics 프레임워크와 상호 작용할 수 있도록 합니다. 그런 다음 Adobe Analytics이 구성 요소 데이터를 추적하도록 프레임워크를 구성합니다.
 
-Adobe Analytics 프레임워크와 상호 작용하는 구성 요소는 프레임워크를 편집할 때 SideKick에 표시됩니다. 구성 요소를 프레임워크로 드래그하면 구성 요소 속성이 나타나고 이를 Adobe Analytics 속성에 매핑할 수 있습니다. (참조: [기본 추적을 위한 프레임워크 설정](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
+Adobe Analytics 프레임워크와 상호 작용하는 구성 요소는 프레임워크를 편집할 때 Sidekick에 표시됩니다. 구성 요소를 프레임워크로 드래그하면 구성 요소 속성이 나타나고 이를 Adobe Analytics 속성에 매핑할 수 있습니다. (참조: [기본 추적을 위한 프레임워크 설정](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
 
 구성 요소에 라는 하위 노드가 있으면 구성 요소가 Adobe Analytics 프레임워크와 상호 작용할 수 있습니다 `analytics`. 다음 `analytics` 노드에는 다음 속성이 있습니다.
 
 * `cq:trackevents`: 구성 요소가 노출하는 CQ 이벤트를 식별합니다. 사용자 지정 이벤트 를 참조하십시오.
 * `cq:trackvars`: Adobe Analytics 속성으로 매핑된 CQ 변수의 이름을 지정합니다.
-* `cq:componentName`: 사이드 킥에 표시되는 구성 요소의 이름입니다.
-* `cq:componentGroup`: 구성 요소를 포함하는 사이드 킥의 그룹입니다.
+* `cq:componentName`: Sidekick에 표시되는 구성 요소의 이름입니다.
+* `cq:componentGroup`: 구성 요소를 포함하는 Sidekick 내 그룹입니다.
 
-구성 요소 JSP의 코드는 추적을 트리거하는 페이지에 JavaScript를 추가하고 추적되는 데이터를 정의합니다. Javascript에 사용된 이벤트 이름 및 데이터 이름은 의 해당 값과 일치해야 합니다. `analytics` 노드 속성.
+구성 요소 JSP의 코드는 추적을 트리거하는 페이지에 JavaScript를 추가하고 추적되는 데이터를 정의합니다. JavaScript에 사용되는 이벤트 이름 및 데이터 이름은 의 해당 값과 일치해야 합니다. `analytics` 노드 속성.
 
 * 페이지가 로드될 때 이벤트 데이터를 추적하려면 데이터 추적 속성을 사용하십시오. (참조: [페이지 로드 시 사용자 지정 이벤트 추적](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
 * CQ_Analytics.record 함수를 사용하여 사용자가 페이지 기능과 상호 작용할 때 이벤트 데이터를 추적합니다. (참조: [페이지 로드 후 사용자 지정 이벤트 추적](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
@@ -184,13 +182,13 @@ topnav 구성 요소를 구성하고 JSP 파일을 편집하여 추적 이벤트
    * 유형: 문자열
    * 값: topnavTarget,topnavLocation
 
-1. 다음 속성을 analytics 노드에 추가하여 사이드 킥에 대한 구성 요소 이름을 지정합니다.
+1. 다음 속성을 analytics 노드에 추가하여 Sidekick 구성 요소의 이름을 지정합니다.
 
    * 이름: cq:componentName
    * 유형: 문자열
    * 값: topnav(추적)
 
-1. Sidekick에 대한 구성 요소 그룹의 이름을 지정하려면 다음 속성을 analytics 노드에 추가하십시오.
+1. 다음 속성을 analytics 노드에 추가하여 Sidekick 구성 요소 그룹의 이름을 지정합니다.
 
    * 이름: cq:componentGroup
    * 유형: 문자열
@@ -289,23 +287,23 @@ topnav 구성 요소를 구성하고 JSP 파일을 편집하여 추적 이벤트
 
 >[!NOTE]
 >
->ContextHub에서 데이터를 추적하는 것이 바람직한 경우가 많습니다. Javascript를 사용하여 이 정보를 얻는 방법에 대한 자세한 내용은 [ContextHub의 값 액세스](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
+>ContextHub에서 데이터를 추적하는 것이 바람직한 경우가 많습니다. JavaScript를 사용하여 이 정보를 가져오는 방법에 대한 자세한 내용은 [ContextHub의 값 액세스](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
 
-#### 사이드 킥에 추적 구성 요소 추가 {#adding-the-tracking-component-to-sidekick}
+#### Sidekick에 추적 구성 요소 추가 {#adding-the-tracking-component-to-sidekick}
 
-프레임워크에 추가할 수 있도록 Adobe Analytics을 사용하여 추적할 수 있는 구성 요소를 사이드 킥에 추가합니다.
+프레임워크에 추가할 수 있도록 Adobe Analytics을 사용하여 추적할 수 있는 구성 요소를 Sidekick에 추가합니다.
 
 1. Adobe Analytics 구성에서 Adobe Analytics 프레임워크를 엽니다. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
 1. 사이드 킥에서 디자인 단추를 클릭합니다.
 
-   ![](assets/chlimage_1a.png)
+   ![직각 사각형이 특징인 디자인 버튼.](assets/chlimage_1a.png)
 
 1. 링크 추적 구성 영역에서 상속 구성 을 클릭합니다.
 
    ![chlimage_1](assets/chlimage_1aa.png)
 
 1. 허용된 구성 요소 목록의 일반 섹션에서 topnav(tracking)를 선택한 다음 확인 을 클릭합니다.
-1. 사이드 킥을 확장하여 편집 모드로 들어갑니다. 이제 구성 요소를 일반 그룹에서 사용할 수 있습니다.
+1. Sidekick을 확장하여 편집 모드로 들어갑니다. 이제 구성 요소를 일반 그룹에서 사용할 수 있습니다.
 
 #### 프레임워크에 topnav 구성 요소 추가 {#adding-the-topnav-component-to-your-framework}
 
@@ -328,7 +326,7 @@ Adobe Analytics s.products 변수는 다음 구문을 사용합니다.
 s.products="category;product;quantity;price;eventY={value}|eventZ={value};evarA={value}|evarB={value}"
 ```
 
-Adobe Analytics 통합 모듈은 `s.products` 변수를 사용하는 중 `product` AEM 구성 요소가 생성하는 값입니다. 다음 `product` AEM 구성 요소가 생성하는 javascript의 값은 다음 구조를 갖는 값의 배열입니다.
+Adobe Analytics 통합 모듈은 `s.products` 변수를 사용하는 중 `product` AEM 구성 요소가 생성하는 값입니다. 다음 `product` AEM 구성 요소가 생성하는 JavaScript의 값은 다음 구조를 갖는 값의 배열입니다.
 
 ```
 "product": [{
@@ -347,7 +345,7 @@ Adobe Analytics 통합 모듈은 `s.products` 변수를 사용하는 중 `produc
 }]
 ```
 
-데이터 항목이 다음에서 생략되는 경우 `product` 값은 s.products에서 빈 문자열로 전송됩니다.
+데이터 항목이 다음에서 생략된 경우: `product` 값은 s.products에서 빈 문자열로 전송됩니다.
 
 >[!NOTE]
 >
@@ -364,7 +362,7 @@ Adobe Analytics 통합 모듈은 `s.products` 변수를 사용하는 중 `produc
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-eCommerce 모듈은 s.products 변수 데이터를 생성하는 여러 구성 요소를 제공합니다. 예: submitorder 구성 요소([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp))는 다음 예와 유사한 javascript를 생성합니다.
+eCommerce 모듈은 s.products 변수 데이터를 생성하는 여러 구성 요소를 제공합니다. 예: submitorder 구성 요소([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp))는 다음 예와 유사한 JavaScript를 생성합니다.
 
 ```
 <script type="text/javascript">

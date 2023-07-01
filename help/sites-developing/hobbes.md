@@ -1,8 +1,6 @@
 ---
 title: UI 테스트
-seo-title: Testing Your UI
 description: AEM은 AEM UI에 대한 테스트를 자동화하기 위한 프레임워크를 제공합니다
-seo-description: AEM provides a framework for automating tests for your AEM UI
 uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 3%
+source-wordcount: '771'
+ht-degree: 2%
 
 ---
 
@@ -28,11 +26,11 @@ ht-degree: 3%
 
 AEM은 AEM UI에 대한 테스트를 자동화하기 위한 프레임워크를 제공합니다. 프레임워크를 사용하여 웹 브라우저에서 직접 UI 테스트를 작성하고 실행합니다. 프레임워크는 테스트 생성을 위한 JavaScript API를 제공합니다.
 
-AEM 테스트 프레임워크는 Javascript로 작성된 테스트 라이브러리인 Hobbes.js를 사용합니다. Hobbes.js 프레임워크는 개발 프로세스의 일부로 AEM을 테스트하기 위해 개발되었습니다. 이제 프레임워크를 AEM 애플리케이션 테스트에 공개적으로 사용할 수 있습니다.
+AEM 테스트 프레임워크는 JavaScript로 작성된 테스트 라이브러리인 Hobbes.js를 사용합니다. Hobbes.js 프레임워크는 개발 프로세스의 일부로 AEM을 테스트하기 위해 개발되었습니다. 이제 프레임워크를 AEM 애플리케이션 테스트에 공개적으로 사용할 수 있습니다.
 
 >[!NOTE]
 >
->Hobbes.js를 참조하십시오 [설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) API에 대한 전체 세부 정보.
+>Hobbes.js를 참조하십시오 [설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) API에 대한 전체 세부 정보.
 
 ## 테스트 구조 {#structure-of-tests}
 
@@ -53,7 +51,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
-콘솔을 열면 테스트 세트 가 왼쪽의 목록과 함께 모든 테스트 세트를 순서대로 실행합니다. 우측의 공백은 체크무늬 배경으로 표시되며, 테스트가 실행될 때 페이지 콘텐츠를 표시하기 위한 자리 표시자입니다.
+콘솔을 열면 테스트 세트 가 왼쪽의 목록과 함께 모든 테스트 세트를 순서대로 실행합니다. 체크무늬 배경과 함께 표시되는 오른쪽의 공간은 테스트가 실행될 때 페이지 콘텐츠를 표시하기 위한 자리 표시자입니다.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -63,21 +61,21 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 확인 표시 아이콘은 합격한 테스트를 나타냅니다.
 
-![](do-not-localize/chlimage_1-2.png)
+![확인 표시 아이콘](do-not-localize/chlimage_1-2.png)
 
 &quot;X&quot; 아이콘은 실패한 테스트를 나타냅니다.
 
-![](do-not-localize/chlimage_1-3.png)
+![원형 안에 X가 표시된 테스트 실패 아이콘.](do-not-localize/chlimage_1-3.png)
 
 테스트 세트를 실행하려면:
 
-1. 테스트 패널에서 실행할 테스트 사례의 이름을 클릭하거나 탭하여 작업의 세부 사항을 확장합니다.
+1. 테스트 패널에서 실행할 테스트 사례의 이름을 클릭하거나 탭하여 작업의 세부 정보를 확장합니다.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. 을(를) 클릭하거나 탭합니다 **테스트 실행** 단추를 클릭합니다.
+1. 클릭 **테스트 실행**.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![테스트 실행 단추의 이미지로, 원 안에 있는 오른쪽 포인터로 표시됩니다.](do-not-localize/chlimage_1-4.png)
 
 1. 자리 표시자는 테스트가 실행될 때 페이지 콘텐츠로 대체됩니다.
 
@@ -95,9 +93,9 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 1. 테스트 패널에서 다음을 탭하거나 클릭합니다. **모든 테스트 실행** 단추 또는 **테스트 실행** 실행할 테스트 세트의 제목 아래에 있는 단추입니다.
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![원 안에 있는 오른쪽 포인터가 가리키는 모든 테스트 실행 단추와 테스트 실행 단추의 이미지입니다.](do-not-localize/chlimage_1-5.png)
 
-1. 각 테스트 사례의 결과를 보려면 테스트 사례의 제목을 탭하거나 클릭합니다. 에서 테스트 이름을 탭하거나 클릭합니다. **결과** 패널에 모든 세부 정보가 표시됩니다.
+1. 각 테스트 사례의 결과를 보려면 테스트 사례의 제목을 클릭합니다. 에서 테스트 이름 클릭 **결과** 패널에 모든 세부 정보가 표시됩니다.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -105,7 +103,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 다음 절차에서는 를 사용하여 테스트 세트를 만들고 실행하는 과정을 단계별로 안내합니다 [We.Retail 콘텐츠](/help/sites-developing/we-retail.md)다른 웹 페이지를 사용하도록 테스트를 쉽게 수정할 수 있습니다.
 
-고유한 테스트 세트 만들기에 대한 자세한 내용은 [Hobbes.js API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
+고유한 테스트 세트 만들기에 대한 자세한 내용은 [Hobbes.js API 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
 
 1. CRXDE Lite 열기. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. 마우스 오른쪽 단추 클릭 `/etc/clientlibs` 폴더 및 클릭 **만들기 > 폴더 만들기**. 유형 `myTests` 을(를) 클릭하고 을(를) 클릭합니다. **확인**.
@@ -118,8 +116,8 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
    | 이름 | 유형 | 값 |
    |---|---|---|
-   | `categories` | 문자열[] | `granite.testing.hobbes.tests` |
-   | `dependencies` | 문자열[] | `granite.testing.hobbes.testrunner` |
+   | `categories` | String[] | `granite.testing.hobbes.tests` |
+   | `dependencies` | String[] | `granite.testing.hobbes.testrunner` |
 
    >[!NOTE]
    >

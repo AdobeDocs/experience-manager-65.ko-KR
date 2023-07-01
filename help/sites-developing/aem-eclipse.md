@@ -1,8 +1,6 @@
 ---
 title: Eclipse용 AEM 개발자 도구
-seo-title: AEM Developer Tools for Eclipse
 description: Eclipse용 AEM 개발자 도구
-seo-description: null
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +8,16 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '788'
 ht-degree: 4%
 
 ---
 
 # Eclipse용 AEM 개발자 도구{#aem-developer-tools-for-eclipse}
 
-![](do-not-localize/chlimage_1-9.png)
+![Eclipse용 AEM 개발자 도구의 원형 이미지 모티프.](do-not-localize/chlimage_1-9.png)
 
 ## 개요 {#overview}
 
@@ -159,6 +157,6 @@ Eclipse용 공식 Apache Sling IDE 툴링 웹사이트는 유용한 정보를 �
 
 다음의 관리 [Eclipse](https://www.eclipse.org/) 설명서는 환경을 설정하는 데 도움이 될 수 있습니다.
 
-* [Eclipse 시작하기](https://www.eclipse.org/getting-started/)
+* [Eclipse 시작하기](https://eclipseide.org/getting-started/)
 * [이클립스 루나 도움말](https://help.eclipse.org/latest/index.jsp)
 * [Maven 통합(m2eclipse)](https://www.eclipse.org/m2e/)

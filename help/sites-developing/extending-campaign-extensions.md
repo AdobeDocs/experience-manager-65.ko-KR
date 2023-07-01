@@ -8,9 +8,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '525'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ AEM과 Campaign 간의 표준 통합은 JSON 및 JSSP(JavaScript Server Page)를
 
 1. Adobe Campaign에서 JSSP 파일을 만들려면 **신규** 아이콘.
 
-   ![](do-not-localize/chlimage_1-4a.png)
+   ![왼쪽 상단 모서리 근처에 별표가 있는 페이지에 표시된 새 아이콘.](do-not-localize/chlimage_1-4a.png)
 
 1. 이 JSSP 파일의 이름을 입력합니다. 이 예에서는 **cus:custom.jssp** 사용됨 (즉, 다음 내에 있음) **cus** namespace).
 

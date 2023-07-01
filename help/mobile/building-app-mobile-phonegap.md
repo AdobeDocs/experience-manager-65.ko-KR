@@ -1,8 +1,6 @@
 ---
 title: 모바일 애플리케이션 구축
-seo-title: Building Mobile Applications
-description: 이 페이지에서는 GitHub에서 사용할 수 있는 코드를 사용하여 모바일 애플리케이션을 빌드하는 방법에 대한 전체 단계별 문서를 제공합니다.테스트하거나 앱스토어에 게시하기 위해 장치 또는 시뮬레이터에 설치할 애플리케이션을 빌드합니다. PhoneGap 명령줄 인터페이스를 사용하여 로컬로 애플리케이션을 빌드하거나 PhoneGap Build을 사용하여 클라우드에서 애플리케이션을 빌드할 수 있습니다.
-seo-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
+description: 이 페이지에서는 GitHub에서 사용할 수 있는 코드를 사용하여 모바일 애플리케이션을 빌드하는 방법에 대한 전체 단계별 문서를 여기에서 확인할 수 있습니다. 테스트하거나 앱스토어에 게시하기 위해 장치 또는 시뮬레이터에 설치할 애플리케이션을 빌드합니다. PhoneGap 명령줄 인터페이스를 사용하여 로컬로 애플리케이션을 빌드하거나 PhoneGap Build을 사용하여 클라우드에서 애플리케이션을 빌드할 수 있습니다.
 uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1058'
 ht-degree: 1%
 
 ---
@@ -59,14 +57,14 @@ PhoneGap 명령줄 인터페이스(CLI)를 사용하여 컴퓨터에서 PhoneGap
 
 PhoneGap CLI를 사용하여 빌드하려면 Node.js 및 PhoneGap 클라이언트 유틸리티를 설치해야 합니다. 다음 절차를 수행하려면 인터넷 연결이 필요합니다.
 
-1. 다운로드 및 설치 [Node.js](https://nodejs.org/).
+1. 다운로드 및 설치 [Node.js](https://nodejs.org/en).
 1. 터미널 또는 명령 프롬프트를 열고 다음 노드 명령을 입력하여 PhoneGap 유틸리티를 설치합니다.
 
    ```shell
    npm install -g phonegap
    ```
 
-   Unix 또는 Linux 시스템에서 명령 접두사를 사용해야 할 수도 있습니다 `sudo`.
+   UNIX® 또는 Linux® 시스템에서 명령 접두사를 사용해야 할 수 있습니다 `sudo`.
 
    터미널은 일련의 HTTP GET 명령의 결과를 보여줍니다. 설치가 완료되면 터미널에 다음 예와 같이 라이브러리가 설치된 위치가 표시됩니다.
 
@@ -88,16 +86,16 @@ PhoneGap CLI를 사용하여 빌드하려면 Node.js 및 PhoneGap 클라이언�
 1. (선택 사항) 타깃팅하는 모바일 플랫폼용 SDK를 얻습니다.
 
    * iOS 플랫폼용 앱을 빌드하려면 의 최신 버전을 설치합니다. [Xcode](https://developer.apple.com/xcode/).
-   * Android 앱을 빌드하려면 [Android SDK](https://developer.android.com/).
+   * Android™ 앱을 빌드하려면 [Android™ SDK](https://developer.android.com/).
 
 ### 콘텐츠 ZIP 파일 다운로드 {#downloading-the-content-zip-file}
 
 모바일 애플리케이션의 컨텐츠를 파일 시스템으로 이동합니다.
 
 1. 모바일 애플리케이션 페이지에서 애플리케이션을 선택합니다.
-1. (선택 사항) 전체 설치를 위해 응용 프로그램을 빌드하려면 도구 모음에서 캐시 지우기 아이콘을 클릭하거나 탭합니다.
+1. (선택 사항) 전체 설치를 위해 응용 프로그램을 빌드하려면 도구 모음에서 캐시 지우기 아이콘 을 누릅니다.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![끊어진 링크 기호로 표시된 캐시 아이콘 지우기.](do-not-localize/chlimage_1.png)
 
    >[!NOTE]
    >
@@ -105,7 +103,7 @@ PhoneGap CLI를 사용하여 빌드하려면 Node.js 및 PhoneGap 클라이언�
 
 1. 도구 모음에서 CLI Assets 다운로드 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![중복 태블릿 기호로 표시된 CLI Assets 아이콘을 다운로드하십시오.](do-not-localize/chlimage_1-1.png)
 
 1. ZIP 파일을 저장한 후 성공 대화 상자에서 닫기 를 클릭합니다.
 1. ZIP 파일의 컨텐츠를 추출합니다.
@@ -120,7 +118,7 @@ PhoneGap CLI를 사용하여 애플리케이션을 컴파일하고 설치합니�
    cd ~/Downloads/ng-app-cli.1392137825303
    ```
 
-1. 타깃팅하는 플랫폼에 대한 phonegap 명령을 입력합니다. 예를 들어 다음 명령은 Android용 앱을 빌드합니다.
+1. 타깃팅하는 플랫폼에 대한 phonegap 명령을 입력합니다. 예를 들어 다음 명령은 Android™용 앱을 빌드합니다.
 
    ```shell
    phonegap build android
@@ -150,7 +148,7 @@ AEM 내에서 PhoneGap Build 서비스를 사용할 수 있도록 PhoneGap Build
 1. 모바일 애플리케이션 페이지에서 모바일 애플리케이션을 엽니다. ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
 1. (선택 사항) 전체 설치를 위해 응용 프로그램을 빌드하려면 응용 프로그램을 선택하고 캐시 지우기 아이콘을 누릅니다.
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![끊어진 링크 기호로 표시된 캐시 아이콘 지우기.](do-not-localize/chlimage_1-2.png)
 
    >[!NOTE]
    >
@@ -158,7 +156,7 @@ AEM 내에서 PhoneGap Build 서비스를 사용할 수 있도록 PhoneGap Build
 
 1. 시작 페이지를 선택한 다음 원격 빌드 아이콘을 클릭합니다.
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![2개의 라운드 기어로 표시되는 Build Remote 아이콘.](do-not-localize/chlimage_1-3.png)
 
    **참고:** AEM Beta 베타 버전은 빌드가 성공적으로 완료될 때 받은 편지함 알림을 만들지 않습니다.
 

@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 18%
+source-wordcount: '1836'
+ht-degree: 17%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 18%
 >
 >문제가 발생하면 시스템 관리자에게 문의하십시오.
 
-## 사이드 킥 {#sidekick}
+## Sidekick {#sidekick}
 
 사이드 킥은 페이지를 작성할 때의 주요 도구입니다. 페이지를 작성할 때 부동 되므로 항상 표시됩니다.
 
@@ -207,19 +207,19 @@ ht-degree: 18%
 
 사이드 킥의 하단 테두리에 페이지를 미리 보는 데 중요한 두 가지 아이콘이 있습니다.
 
-![](do-not-localize/chlimage_1-5.png)
+![7개 아이콘의 가로 행이 있는 사이드 킥의 아래쪽 테두리. 행의 시작 부분에 있는 두 아이콘 편집 아이콘과 미리보기 모드 아이콘은 각각 연필 기호와 돋보기 기호로 표시됩니다.](do-not-localize/chlimage_1-5.png)
 
 * 연필 아이콘은 콘텐츠를 추가, 수정, 이동 또는 삭제할 수 있는 편집 모드에 있음을 보여 줍니다.
 
-   ![](do-not-localize/chlimage_1-6.png)
+  ![연필 기호로 표시된 편집 아이콘.](do-not-localize/chlimage_1-6.png)
 
 * 돋보기 아이콘을 사용하면 페이지가 게시 환경에 표시될 상태로 표시되는 미리보기 모드를 선택할 수 있습니다(경우에 따라 페이지 새로 고침이 필요함).
 
-   ![](do-not-localize/chlimage_1-7.png)
+  ![돋보기 기호로 표시된 미리 보기 모드 아이콘.](do-not-localize/chlimage_1-7.png)
 
-   미리보기 모드에서 사이드 킥이 줄어들게 됩니다. 아래 화살표 아이콘을 클릭하여 편집 모드로 돌아갑니다.
+  미리보기 모드에서 사이드 킥이 줄어들게 됩니다. 아래 화살표 아이콘을 클릭하여 편집 모드로 돌아갑니다.
 
-   ![](do-not-localize/chlimage_1-8.png)
+  ![제목 AEM이 있는 막대 및 아래쪽 화살표 기호로 표시된 제목 오른쪽에 있는 편집 모드 아이콘.](do-not-localize/chlimage_1-8.png)
 
 ## 찾기 및 바꾸기 {#find-replace}
 
@@ -286,7 +286,6 @@ AEM은 사용자가 수행한 작업 내역과 해당 작업을 수행한 순서
 >* 최대 20개의 편집 작업을 실행 취소합니다(기본 설정).
 >* 또한 [키보드 단축키](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) 실행 취소 및 다시 실행의 경우.
 >
-
 
 다음 유형의 페이지 변경 사항에 대해 실행 취소 및 재실행을 사용할 수 있습니다.
 

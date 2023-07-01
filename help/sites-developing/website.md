@@ -1,8 +1,6 @@
 ---
 title: 모든 기능을 갖춘 웹 사이트(JSP) 만들기
-seo-title: Create a Fully-Featured Website (JSP)
 description: 이 자습서를 통해 AEM에서 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다
-seo-description: This tutorial enables you to create a fully featured website with AEM
 uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ content-type: reference
 discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
 source-wordcount: '4935'
 ht-degree: 3%
@@ -24,7 +22,7 @@ ht-degree: 3%
 >
 >이 문서에서는 JSP를 사용하고 클래식 UI를 기반으로 하는 웹 사이트를 만드는 방법을 설명합니다. Adobe은 문서에 자세히 설명된 대로 웹 사이트에 최신 AEM 기술을 활용할 것을 권장합니다 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md).
 
-이 자습서를 통해 Adobe Experience Manager(AEM)를 사용하여 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다. 웹 사이트는 일반 웹 사이트를 기반으로 하며 주로 웹 개발자를 대상으로 합니다. 모든 개발은 작성 환경 내에서 수행됩니다.
+이 자습서를 통해 Adobe Experience Manager(AEM)를 사용하여 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다. 웹 사이트는 일반 웹 사이트를 기반으로 하며 주로 웹 개발자를 대상으로 합니다. 모든 개발은 작성자 환경 내에서 수행됩니다.
 
 이 튜토리얼에서는 다음 방법을 설명합니다.
 
@@ -293,8 +291,8 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
       * **이름:** sling:resourceSuperType
       * **유형:** 문자열
       * **값:** foundation/components/page
-   1. 모두 저장을 클릭합니다.
 
+   1. 모두 저장을 클릭합니다.
 
 1. 를 엽니다. `contentpage.jsp` 파일: `/apps/mywebsite/components/contentpage` 기존 코드를 다음 코드로 바꿉니다.
 
@@ -313,7 +311,7 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   페이지 소스를 열어 head.jsp 및 body.jsp 스크립트가 생성한 Javascript 및 HTML 요소를 확인합니다. 페이지를 열면 다음 스크립트 코드 조각이 사이드 킥을 엽니다.
+   페이지 소스를 열어 head.jsp 및 body.jsp 스크립트가 생성한 Javascript 및 HTML 요소를 확인합니다. 페이지를 열면 다음 스크립트 코드 조각이 Sidekick에 열립니다.
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -524,9 +522,9 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
 
 1. 다음 코드를에 복사합니다 `navimage.png.java.`이 코드는 AbstractImageServlet 클래스를 확장합니다.
 
-   * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 현재 리소스의 속성을 저장하는 ImageContext 개체를 만듭니다.
+   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 현재 리소스의 속성을 저장하는 ImageContext 개체를 만듭니다.
    * 리소스의 상위 페이지는 ImageContext 개체에서 추출됩니다. 그런 다음 페이지 제목과 자막을 얻습니다.
-   * [이미지 도우미](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) 사이트 디자인, 페이지 제목 및 페이지 부제의 navimage_bg.jpg 파일에서 이미지를 생성하는 데 사용됩니다.
+   * [이미지 도우미](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) 사이트 디자인, 페이지 제목 및 페이지 부제의 navimage_bg.jpg 파일에서 이미지를 생성하는 데 사용됩니다.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -679,6 +677,7 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
       * 이름: `jcr:description`
       * 유형: `String`
       * 값: `This is a description of the Product 1!.`
+
    1. 클릭 **추가**.
    1. 다음에서 **속성** 탭에서 다음 값을 사용하여 다른 속성을 만듭니다.
 
@@ -686,9 +685,8 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
       * 유형: 문자열
       * 값: 2008/02/14
       * 추가를 클릭합니다.
+
    1. 모두 저장을 클릭합니다.
-
-
 
 1. CRXDE Lite에서 제품 2 페이지에 대한 설명 및 날짜를 설정합니다.
 
@@ -698,6 +696,7 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
       * 이름: jcr:description
       * 유형: 문자열
       * 값: 제품 2에 대한 설명입니다.
+
    1. 클릭 **추가**.
    1. 동일한 텍스트 상자에서 이전 값을 다음 값으로 바꿉니다.
 
@@ -705,9 +704,8 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
       * 유형: 문자열
       * 값: 2012/05/11
       * 추가를 클릭합니다.
+
    1. 모두 저장을 클릭합니다.
-
-
 
 #### 하위 목록 구성 요소 만들기 {#creating-the-list-children-component-1}
 
@@ -939,7 +937,7 @@ listchildren 구성 요소를 contentpage 구성 요소에 포함하려면 다�
 
 로고 이미지를 검색하고 페이지에 작성하는 스크립트를 만듭니다.
 
-1. 로고 구성 요소 노드를 마우스 오른쪽 단추로 클릭하고 만들기 > 파일 만들기 를 클릭하여 img.GET.java라는 스크립트 파일을 만듭니다.
+1. 로고 구성 요소 노드를 마우스 오른쪽 버튼으로 클릭하고 만들기 > 파일 만들기 를 클릭하여 img.GET.java라는 스크립트 파일을 만듭니다.
 1. 파일을 열고 다음 코드를 파일에 복사한 다음 모두 저장을 클릭합니다.
 
 ```java
@@ -1031,16 +1029,16 @@ public class img_GET extends AbstractImageServlet {
 
 이 섹션에서는 디자인 모드 대화 상자를 사용하여 이미지를 로고로 설정하는 방법에 대해 설명합니다.
 
-1. 브라우저에서 제품 페이지를 연 상태에서 사이드 킥 하단에 있는 디자인 버튼을 클릭하여 디자인 모드로 전환합니다.
+1. 브라우저에서 제품 페이지를 연 상태에서 Sidekick 하단의 디자인 단추를 클릭하여 디자인 모드로 전환합니다.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![오른쪽 사각형으로 표시된 디자인 단추.](do-not-localize/chlimage_1-1.png)
 
 1. 로고 표시줄의 디자인에서 편집 을 클릭하여 대화 상자를 통해 로고 구성 요소의 설정을 편집합니다.
 1. 대화 상자에서 이미지 탭의 패널을 클릭하고 mywebsite.zip 파일에서 추출한 logo.png 이미지를 찾은 다음 확인 을 클릭합니다.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
-1. 사이드 킥 제목 표시줄에서 삼각형을 클릭하여 편집 모드로 돌아갑니다.
+1. 편집 모드로 돌아가려면 Sidekick 제목 표시줄에서 삼각형을 클릭합니다.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -1124,7 +1122,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 #### 이미지 구성 요소 만들기 {#creating-the-image-component-1}
 
-1. 을(를) 마우스 오른쪽 단추로 클릭합니다. `/apps/mywebsite/components/logo` 노드를 클릭하고 복사를 클릭합니다.
+1. 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components/logo` 노드를 클릭하고 복사를 클릭합니다.
 1. 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components` 노드를 클릭하고 붙여넣기를 클릭합니다.
 1. 마우스 오른쪽 단추 클릭 `Copy of logo` 노드를 클릭하고 이름 바꾸기를 클릭한 다음 기존 텍스트와 유형을 삭제합니다. `image`.
 
@@ -1206,7 +1204,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 #### 아이콘 추가 {#adding-the-icon}
 
-이 섹션에서는 이미지 구성 요소가 사이드 킥에 나열될 때 옆에 표시할 아이콘을 추가합니다.
+이 섹션에서는 Sidekick에 나열될 때 이미지 구성 요소 옆에 표시되는 아이콘을 추가합니다.
 
 1. CRXDE Lite에서 파일을 마우스 오른쪽 단추로 클릭합니다 `/libs/foundation/components/image/icon.png` 및 선택 **알았다.**
 1. 노드를 마우스 오른쪽 버튼으로 클릭합니다. `/apps/mywebsite/components/image` 및 클릭 **붙여넣기**&#x200B;을 클릭한 다음 을 클릭합니다 **모두 저장**.
@@ -1216,11 +1214,11 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 이 섹션에서는 **제품** 페이지를 만들고 이미지 구성 요소를 단락 시스템에 추가합니다.
 
 1. 브라우저에서 **제품** 페이지를 가리키도록 업데이트하는 중입니다.
-1. 사이드 킥에서 **디자인 모드** 아이콘.
+1. Sidekick에서 **디자인 모드** 아이콘.
 1. 편집(Edit) 단추를 눌러 파트의 설계(Design) 대화상자를 편집합니다.
 1. 대화 상자에서 **허용된 구성 요소** 이 표시됩니다. 다음으로 이동 **내 웹 사이트**&#x200B;를 선택하고 **내 이미지 구성 요소** 및 클릭 **좋아.**
 1. 다음으로 돌아가기: **편집 모드입니다.**
-1. parsys 프레임을 두 번 클릭합니다(켜기 **여기에 구성 요소 또는 자산을 끌어 놓으십시오.**). 다음 **새 구성 요소 삽입** 및 **사이드 킥** 선택기는 다음과 같습니다.
+1. parsys 프레임을 두 번 클릭합니다(켜기 **여기에 구성 요소 또는 자산을 끌어 놓으십시오.**). 다음 **새 구성 요소 삽입** 및 **Sidekick** 선택기는 다음과 같습니다.
 
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
@@ -1281,10 +1279,10 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
       * 제목: 내 검색 구성 요소
       * 설명: 내 검색 구성 요소입니다
       * 그룹: 내 웹 사이트
+
    1. 다음 을 클릭한 후 다음 을 다시 클릭합니다.
    1. [허용된 상위] 패널에서 + 단추를 클릭하고 을 입력합니다 `*/parsys`.
    1. 다음 을 클릭한 다음 확인 을 클릭합니다.
-
 
 1. 모두 저장을 클릭합니다.
 1. 다음 노드를 복사하여 apps/mywebsite/components/search 노드에 붙여넣습니다.
@@ -1500,11 +1498,11 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 이 섹션에서는 검색 구성 요소를 단락 시스템에 추가합니다.
 
 1. 브라우저에서 검색 페이지를 엽니다.
-1. 사이드 킥에서 디자인 모드 아이콘을 클릭합니다.
+1. Sidekick에서 디자인 모드 아이콘을 클릭합니다.
 1. 검색 제목 아래의 조각 블록 디자인에서 편집 을 클릭합니다.
 1. 대화 상자에서 아래로 스크롤하여  **내 웹 사이트** 그룹, 선택 **내 검색 구성 요소** 및 클릭 **확인**.
-1. 사이드 킥에서 삼각형을 클릭하여 편집 모드로 돌아갑니다.
-1. Sidekick에서 My Search Component 를 parsys 프레임으로 드래그합니다. 이는 다음과 같습니다.
+1. Sidekick 시 삼각형을 클릭하여 편집 모드로 돌아갑니다.
+1. Sidekick에서 내 검색 구성 요소를 parsys 프레임으로 드래그합니다. 이는 다음과 같습니다.
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 

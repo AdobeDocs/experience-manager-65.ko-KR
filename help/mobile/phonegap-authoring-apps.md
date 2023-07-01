@@ -1,8 +1,6 @@
 ---
 title: 모바일 애플리케이션 작성
-seo-title: Authoring Mobile Applications
 description: AEM Mobile 대시보드를 사용하면 모바일 애플리케이션을 만들고, 빌드하고, 배포하고, 애플리케이션 메타데이터를 만들고, 삭제하고, 편집할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
-seo-description: he AEM Mobile Dashboard allows you to create, build and deploy your mobile application, create, delete and edit application metadata. Follow this page to learn more.
 uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -87,7 +85,7 @@ AEM Sites 내에서 동일한 작업을 수행하는 것과 거의 동일한 방
 
 이 아이콘은 앱 셸의 콘텐츠 릴리스 패키지를 나타냅니다
 
-![](do-not-localize/chlimage_1-6.png)
+![두 개의 사각형으로 겹치는 패키지 기호로 표시된 컨텐츠 릴리스 패키지 아이콘.](do-not-localize/chlimage_1-6.png)
 
 이러한 아이콘은 앱 컨텐츠에 대한 컨텐츠 릴리스 패키지를 나타냅니다
 

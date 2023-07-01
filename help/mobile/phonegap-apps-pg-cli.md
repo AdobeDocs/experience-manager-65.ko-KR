@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '666'
 ht-degree: 1%
 
 ---
@@ -89,10 +89,10 @@ phonegap run ios
 >1. 이 새 폴더로 이동(cd 테스트)
 >1. 실행 `phonegap create helloWorld`
 >1. helloWorld(cd helloWorld)로 이동
->1. 실행 `phonegap run android` (또는 위와 같이 android를 iOS으로 바꾸십시오).
->1. JavaScript Bridge to Native가 작동 중인 경우 에뮬레이터가 &#39;장치 준비&#39;라고 말하며 새로 만든 PhoneGap 앱을 실행하도록 열립니다.
+>1. 실행 `phonegap run android` (또는 위와 같이 Android™을 iOS으로 바꾸십시오.)
+1. JavaScript Bridge to Native가 작동 중인 경우 에뮬레이터가 &#39;장치 준비&#39;라고 말하며 새로 만든 PhoneGap 앱을 실행하도록 열립니다.
 >
->이 문제 해결은 PhoneGap CLI 개발 환경이 올바르게 실행되고 있는지 확인합니다.
+이 문제 해결은 PhoneGap CLI 개발 환경이 올바르게 실행되고 있는지 확인합니다.
 
 ## Safari 및 IOS 디버그로 JavaScript 디버그 {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -149,11 +149,11 @@ phonegap run <platform> --emulator
 
 * 제어 단추를 사용하여 메서드 실행, 스텝 오버, 스텝 인 및 스텝 아웃을 계속합니다.
 
-![](do-not-localize/chlimage_1-4.png)
+![5개의 서로 다른 기능 제어 버튼이 가로 행에 정렬됩니다.](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >
->변수 값을 보려면 현재 메서드에서 마우스를 가져갑니다.
+변수 값을 보려면 현재 메서드에서 마우스를 가져갑니다.
 
 ## 다음 단계 {#the-next-steps}
 

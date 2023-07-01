@@ -1,8 +1,6 @@
 ---
 title: 구성원 및 그룹 관리 콘솔
-seo-title: Members & Groups Management Consoles
 description: 멤버 및 그룹 관리 콘솔에 액세스하는 방법
-seo-description: How to access Members and Groups Management consoles
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '942'
 ht-degree: 4%
 
 ---
@@ -55,7 +53,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
 왼쪽의 사이드 패널 아이콘을 선택합니다. `Members` 헤더를 클릭하여 검색 사이드 패널을 엽니다.
 
-![](assets/leftpanel-icon.png)
+![검색 사이드 패널 아이콘](assets/leftpanel-icon.png)
 
 
 ![member-console2](assets/member-console2.png)
@@ -76,7 +74,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
 ## 새 구성원 만들기 {#create-new-member}
 
-선택 `Create Member` 게시 환경에서 사용자를 만들려면.
+선택 `Create Member` 게시 환경에서 사용자를 만듭니다.
 
 ![create-member1](assets/create-member1.png)
 
@@ -97,19 +95,19 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
 * **[!UICONTROL 암호]**
 
-   (*필수*) 로그인 암호입니다.
+  (*필수*) 로그인 암호입니다.
 
 * **[!UICONTROL 암호 재입력]**
 
-   (*필수*) 확인을 위해 암호를 다시 입력합니다.
+  (*필수*) 확인을 위해 암호를 다시 입력합니다.
 
 * **[!UICONTROL 사이트에 구성원 추가]**
 
-   (*선택 사항*) 커뮤니티 사이트의 구성원 그룹에 구성원을 추가하려면 기존 커뮤니티 사이트에서 선택합니다.
+  (*선택 사항*) 기존 커뮤니티 사이트에서 선택하여 커뮤니티 사이트의 구성원 그룹에 구성원을 추가합니다.
 
 * **[!UICONTROL 그룹에 구성원 추가]**
 
-   (*선택 사항*) 기존 구성원 그룹에서 선택하여 해당 그룹에 구성원을 추가합니다.
+  (*선택 사항*) 기존 구성원 그룹에서 선택하여 해당 그룹에 구성원을 추가합니다.
 
 * **[!UICONTROL 저장]**&#x200B;을 선택합니다
 
@@ -122,17 +120,17 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
    * 금지되지 않음 구성원이 커뮤니티 사이트에 전체 액세스할 수 있습니다.
 
-   기본값은 입니다 `Not Banned`.
+  기본값은 입니다 `Not Banned`.
 
 * **[!UICONTROL 기여도 제한]**
 
-   선택하면 콘텐츠를 게시할 수 있는 구성원의 기능이 제한됩니다.
+  선택하면 콘텐츠를 게시할 수 있는 구성원의 기능이 제한됩니다.
 기본값은 기여도 제한의 구성에 따라 다릅니다.
 다음을 참조하십시오 [구성원 기여도 제한](limits.md).
 
 * **[!UICONTROL 암호 변경]**
 
-   기존 멤버를 수정할 때 표시되는 링크 커뮤니티 관리자가 구성원의 암호를 재설정할 수 있는 기능을 제공합니다.
+  기존 멤버를 수정할 때 표시되는 링크 커뮤니티 관리자가 구성원의 암호를 재설정할 수 있는 기능을 제공합니다.
 
 ### 일반 - 사진 {#general-photo}
 
@@ -173,7 +171,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
 ### 새 그룹 만들기 {#create-new-group}
 
-선택 `Add Group` 게시 환경에서 그룹을 만들려면.
+선택 `Add Group` 게시 환경에서 그룹을 만듭니다.
 
 ![group-console1](assets/group-console1.png)
 
@@ -181,23 +179,23 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
 * **[!UICONTROL ID]**
 
-   (*필수*) 그룹 고유 ID입니다.
+  (*필수*) 그룹 고유 ID입니다.
 
-   *만든 ID는 수정할 수 없습니다.*
+  *만든 ID는 수정할 수 없습니다.*
 
 * **[!UICONTROL 이름]**
 
-   (*선택 사항*) 그룹의 표시 이름입니다.
+  (*선택 사항*) 그룹의 표시 이름입니다.
 
-   기본값은 ID입니다.
+  기본값은 ID입니다.
 
 * **[!UICONTROL 설명]**
 
-   (*선택 사항*) 그룹의 목적 및 권한에 대한 설명입니다.
+  (*선택 사항*) 그룹의 목적 및 권한에 대한 설명입니다.
 
 * **[!UICONTROL 그룹에 구성원 추가]**
 
-   (*선택 사항*) 그룹의 초기 멤버로 포함할 게시측 멤버를 선택합니다.
+  (*선택 사항*) 그룹의 초기 멤버로 포함할 게시측 멤버를 선택합니다.
 
 * **[!UICONTROL 저장]**&#x200B;을 선택합니다
 

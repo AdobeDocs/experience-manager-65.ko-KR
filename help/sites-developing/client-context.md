@@ -1,8 +1,6 @@
 ---
 title: Client Context 관련 세부 사항
-seo-title: Client Context in Detail
 description: Client Context는 동적으로 조립된 사용자 데이터의 컬렉션을 나타냅니다
-seo-description: The Client Context represents a dynamically assembled collection of user data
 uuid: 95b08fbd-4f50-44a1-80fb-46335fe04a40
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +10,9 @@ discoiquuid: c881ad66-bcc3-4f99-b77f-0944c23e2d29
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -31,7 +29,7 @@ Client Context는 주로 다음 측면으로 구성됩니다.
 
 * 사용자 데이터를 포함하는 세션 저장소입니다.
 * 사용자 데이터를 표시하고 사용자 경험을 시뮬레이션하는 도구를 제공하는 UI.
-* A [javascript API](/help/sites-developing/ccjsapi.md) 세션 저장소와 상호 작용할 수 있습니다.
+* A [JavaScript API](/help/sites-developing/ccjsapi.md) 세션 저장소와 상호 작용할 수 있습니다.
 
 독립 실행형 세션 저장소를 만들어 Client Context에 추가하거나 Context Store 구성 요소에 연결된 세션 저장소를 만듭니다. AEM은 바로 사용할 수 있는 여러 Context Store 구성 요소를 설치합니다. 이러한 구성 요소를 구성 요소의 기반으로 사용할 수 있습니다.
 
@@ -44,7 +42,7 @@ Client Context에는 사용자 데이터를 포함하는 다양한 세션 저장
 * 클라이언트 웹 브라우저입니다.
 * 서버(참조) [JSONP 저장소](/help/sites-administering/client-context.md#main-pars-variable-8) 타사 소스의 정보를 저장하는 경우)
 
-Client Context 프레임워크는 [javascript API](/help/sites-developing/ccjsapi.md) 를 사용하여 세션 저장소와 상호 작용하여 사용자 데이터를 읽고 쓰고, 저장 이벤트를 수신하고 반응할 수 있습니다. 콘텐츠 타겟팅 또는 다른 용도로 사용하는 사용자 데이터에 대한 세션 저장소를 만들 수도 있습니다.
+Client Context 프레임워크는 [JavaScript API](/help/sites-developing/ccjsapi.md) 를 사용하여 세션 저장소와 상호 작용하여 사용자 데이터를 읽고 쓰고, 저장 이벤트를 수신하고 반응할 수 있습니다. 콘텐츠 타겟팅 또는 다른 용도로 사용하는 사용자 데이터에 대한 세션 저장소를 만들 수도 있습니다.
 
 세션 저장소 데이터는 클라이언트에 유지됩니다. Client Context는 서버에 데이터를 다시 쓰지 않습니다. 데이터를 서버로 보내려면 양식을 사용하거나 사용자 지정 JavaScript를 개발하십시오.
 
@@ -77,7 +75,7 @@ Client Context 프레임워크는 [javascript API](/help/sites-developing/ccjsap
 컨텍스트 저장소 구성 요소에는 다음 항목이 포함될 수 있습니다.
 
 * Client Context에서 모양을 정의하는 JSP 스크립트입니다.
-* 사이드 킥에서 구성 요소를 나열하기 위한 속성입니다.
+* Sidekick에 구성 요소를 나열하기 위한 속성입니다.
 * 구성 요소 인스턴스 구성을 위한 편집 대화 상자
 * 세션 저장소를 초기화하는 JavaScript.
 
@@ -103,7 +101,7 @@ Client Context 구성 요소를 웹 페이지의 본문 섹션에 포함시켜 C
 
 clientcontext 구성 요소를 사용하면 페이지에서 Client Context를 구현하는 클라이언트 라이브러리를 로드할 수 있습니다.
 
-* Client Context Javascript API.
+* Client Context JavaScript API입니다.
 * 세션 저장소, 이벤트 관리 등을 지원하는 Client Context 프레임워크
 * 정의된 세그먼트입니다.
 * Client Context에 추가된 각 컨텍스트 저장소 구성 요소에 대해 생성된 init.js 스크립트입니다.
@@ -128,19 +126,19 @@ Client Context에서 추가하고 검색해야 하는 데이터에 대한 세션
 
 1. 다음 항목이 있는 클라이언트 라이브러리 폴더 만들기 `categories` 속성 값: `personalization.stores.kernel`. Client Context는 이 범주의 클라이언트 라이브러리를 자동으로 로드합니다.
 
-1. 클라이언트 라이브러리 폴더가에 종속되도록 클라이언트 라이브러리 폴더 구성 `personalization.core.kernel` 클라이언트 라이브러리 폴더입니다. 다음 `personalization.core.kernel` 클라이언트 라이브러리는 Client Context javascript API를 제공합니다.
+1. 클라이언트 라이브러리 폴더가에 종속되도록 클라이언트 라이브러리 폴더 구성 `personalization.core.kernel` 클라이언트 라이브러리 폴더입니다. 다음 `personalization.core.kernel` 클라이언트 라이브러리는 Client Context JavaScript API를 제공합니다.
 
 1. 세션 저장소를 생성하고 초기화하는 JavaScript를 추가합니다.
 
-personalization.stores.kernel 클라이언트 라이브러리에 javascript를 포함하면 Client Context 프레임워크가 로드될 때 저장소가 생성됩니다.
+personalization.stores.kernel 클라이언트 라이브러리에 JavaScript를 포함하면 Client Context 프레임워크가 로드될 때 저장소가 생성됩니다.
 
 >[!NOTE]
 >
->컨텍스트 저장소 구성 요소의 일부로 세션 저장소를 만드는 경우, 또는 구성 요소의 init.js.jsp 파일에 javascript를 배치할 수 있습니다. 이 경우 구성 요소가 Client Context에 추가되는 경우에만 세션 저장소가 생성됩니다.
+>세션 저장소를 컨텍스트 저장소 구성 요소의 일부로 만드는 경우 또는 구성 요소의 init.js.jsp 파일에 JavaScript를 배치할 수 있습니다. 이 경우 구성 요소가 Client Context에 추가되는 경우에만 세션 저장소가 생성됩니다.
 
 #### 세션 저장소 유형 {#types-of-session-stores}
 
-세션 저장소는 브라우저 세션 중에 생성되어 사용할 수 있거나 브라우저 저장소 또는 쿠키에서 유지됩니다. Client Context Javascript API는 두 가지 유형의 데이터 저장소를 나타내는 여러 클래스를 정의합니다.
+세션 저장소는 브라우저 세션 중에 생성되어 사용할 수 있거나 브라우저 저장소 또는 쿠키에서 유지됩니다. Client Context JavaScript API는 두 가지 유형의 데이터 저장소를 나타내는 여러 클래스를 정의합니다.
 
 * ` [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)`: 이러한 개체는 페이지 DOM에만 있습니다. 데이터는 페이지 수명 동안 만들어지고 지속됩니다.
 * ` [CQ_Analytics.PerstistedSessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore)`: 이러한 개체는 페이지 DOM에 있으며 브라우저 스토리지 또는 쿠키에 유지됩니다. 데이터는 페이지 및 사용자 세션에서 사용할 수 있습니다.
@@ -153,7 +151,7 @@ API는 JSON 데이터 또는 JSONP 데이터 저장에 특화된 다음 클래�
 
 #### 세션 저장소 개체 만들기 {#creating-the-session-store-object}
 
-클라이언트 라이브러리 폴더의 javascript는 세션 저장소를 생성하고 초기화합니다. 그런 다음 컨텍스트 저장소 관리자를 사용하여 세션 저장소를 등록해야 합니다. 다음 예제에서는 를 만들고 등록합니다 [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) 개체.
+클라이언트 라이브러리 폴더의 JavaScript는 세션 저장소를 생성하고 초기화합니다. 그런 다음 컨텍스트 저장소 관리자를 사용하여 세션 저장소를 등록해야 합니다. 다음 예제에서는 를 만들고 등록합니다 [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) 개체.
 
 ```
 //Create the session store
@@ -206,11 +204,11 @@ AEM에서는 확장할 수 있는 genericstore 및 genericstoreproperties 컨텍
 >
 >모든 Client Context 구성 요소는 일반 저장소 또는 일반 저장소 속성 구성 요소의 확장입니다. 에 몇 가지 예가 설치됩니다. `/libs/cq/personalization/components/contextstores` 폴더를 삭제합니다.
 
-#### 사이드 킥의 모양 구성 {#configuring-the-appearance-in-sidekick}
+#### Sidekick에서 모양 구성 {#configuring-the-appearance-in-sidekick}
 
-Client Context를 편집할 때 컨텍스트 저장소 구성 요소가 사이드 킥에 나타납니다. 모든 구성 요소와 마찬가지로 `componentGroup` 및 `jcr:title` client context 구성 요소의 속성은 구성 요소의 그룹 및 이름을 결정합니다.
+Client Context를 편집할 때 컨텍스트 저장소 구성 요소가 Sidekick에 나타납니다. 모든 구성 요소와 마찬가지로 `componentGroup` 및 `jcr:title` client context 구성 요소의 속성은 구성 요소의 그룹 및 이름을 결정합니다.
 
-가 있는 모든 구성 요소 `componentGroup` 속성 값: `Client Context` 기본적으로 사이드 킥에 나타납니다. 에 다른 값을 사용하는 경우 `componentGroup` 속성을 사용하려면 디자인 모드를 사용하여 구성 요소를 사이드 킥에 수동으로 추가해야 합니다.
+가 있는 모든 구성 요소 `componentGroup` 속성 값: `Client Context` 기본적으로 Sidekick에 나타납니다. 에 다른 값을 사용하는 경우 `componentGroup` 속성을 사용하려면 디자인 모드를 사용하여 Sidekick에 구성 요소를 수동으로 추가해야 합니다.
 
 #### 컨텍스트 저장소 구성 요소 인스턴스 {#context-store-component-instances}
 
@@ -220,9 +218,9 @@ Client Context가 초기화되면 이러한 노드가 처리됩니다.
 
 #### 연결된 세션 저장소 초기화 {#initializing-the-associated-session-store}
 
-init.js.jsp 파일을 구성 요소에 추가하여 컨텍스트 저장소 구성 요소가 사용하는 세션 저장소를 초기화하는 javascript 코드를 생성합니다. 예를 들어 초기화 스크립트를 사용하여 구성 요소에 대한 구성 속성을 검색하고 이를 사용하여 세션 저장소를 채웁니다.
+init.js.jsp 파일을 구성 요소에 추가하여 컨텍스트 저장소 구성 요소가 사용하는 세션 저장소를 초기화하는 JavaScript 코드를 생성합니다. 예를 들어 초기화 스크립트를 사용하여 구성 요소에 대한 구성 속성을 검색하고 이를 사용하여 세션 저장소를 채웁니다.
 
-생성된 Javascript는 작성자 및 게시 인스턴스 모두에서 페이지 로드 시 Client Context가 초기화될 때 페이지에 추가됩니다. 이 JSP는 컨텍스트 저장소 구성 요소 인스턴스가 로드되고 렌더링되기 전에 실행됩니다.
+작성자와 게시 인스턴스 모두에서 페이지 로드 시 클라이언트 컨텍스트가 초기화되면 생성된 JavaScript가 페이지에 추가됩니다. 이 JSP는 컨텍스트 저장소 구성 요소 인스턴스가 로드되고 렌더링되기 전에 실행됩니다.
 
 코드는 파일의 mime 유형을 다음으로 설정해야 합니다. `text/javascript`또는 실행되지 않습니다.
 
@@ -325,12 +323,12 @@ genericstore 구성 요소를 사용하여 저장소 데이터를 렌더링하�
 
 그런 다음 세션 저장소에는 구성 요소를 렌더링해야 할 때마다 호출되는 &quot;렌더러&quot; 메서드가 필요합니다. renderer 함수는 두 개의 매개 변수를 사용하여 호출됩니다.
 
-* @param {String} 저장소 렌더링할 저장소
-* @param을 렌더링해야 하는 div의 {String} divId입니다.
+* @param {String} 렌더링할 저장소
+* @param {String} 저장소를 렌더링해야 하는 div의 divId입니다.
 
 ## 세션 저장소와 상호 작용 {#interacting-with-session-stores}
 
-Javascript를 사용하여 세션 스토어와 상호 작용합니다.
+JavaScript를 사용하여 세션 스토어와 상호 작용합니다.
 
 ### 세션 저장소 액세스 {#accessing-session-stores}
 
@@ -353,7 +351,7 @@ function getName(){
 
 세션은 실행 이벤트를 저장하므로 이러한 이벤트를 기반으로 리스너를 추가하고 이벤트를 트리거할 수 있습니다.
 
-세션 저장소는 `Observable` 패턴. 확장됩니다 [ `CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) 다음을 제공합니다. ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)` 메서드를 사용합니다.
+세션 저장소는 `Observable` 패턴. 확장됩니다 [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) 다음을 제공합니다. ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)` 메서드를 사용합니다.
 
 다음 예에서는 리스너를 `update` 이벤트 `profile` 세션 저장소입니다.
 
@@ -482,7 +480,7 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
 이 예제에서는 외부 서비스에서 데이터를 검색하고 이를 세션 저장소에 저장하는 컨텍스트 저장소 구성 요소를 만듭니다.
 
 * genericstoreproperties 구성 요소를 확장합니다.
-* CQ_Analytics.JSONPStore javascript 개체를 사용하여 저장소를 초기화합니다.
+* CQ_Analytics.JSONPStore JavaScript 개체를 사용하여 저장소를 초기화합니다.
 * 데이터를 검색하고 저장소에 추가하려면 JSONP 서비스를 호출합니다.
 * Client Context에서 데이터를 렌더링합니다.
 
@@ -536,7 +534,7 @@ CQ 응용 프로그램을 만들고 geoloc 구성 요소를 추가합니다.
 
 geoloc 구성 요소에 init.js.jsp 파일을 추가하고, 이 파일을 사용하여 세션 저장소를 생성하고 위치 데이터를 검색한 다음 저장소에 추가합니다.
 
-init.js.jsp 파일은 Client Context가 페이지에 의해 로드될 때 실행됩니다. 이 시간까지 Client Context Javascript API가 로드되어 스크립트에 사용할 수 있습니다.
+init.js.jsp 파일은 Client Context가 페이지에 의해 로드될 때 실행됩니다. 이 시간까지 Client Context JavaScript API가 로드되어 스크립트에 사용할 수 있습니다.
 
 1. /apps/myapp/contextstores/geoloc 노드를 마우스 오른쪽 단추로 클릭하고 만들기 > 파일 만들기를 클릭합니다. init.js.jsp의 이름을 지정하고 [확인]을 클릭합니다.
 1. 페이지 맨 위에 다음 코드를 추가한 다음 모두 저장을 클릭합니다.
@@ -599,7 +597,7 @@ Client Context에서 스토어 데이터를 렌더링하도록 geoloc 구성 요
 1. Ctrl-Alt-c(windows) 또는 control-option-c(Mac)를 클릭하여 Client Context를 엽니다.
 1. Client Context 상단에 있는 편집 아이콘을 클릭하여 Client Context Designer를 엽니다.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![사각형 안에 연필로 표시된 편집 아이콘.](do-not-localize/chlimage_1.png)
 
 1. 위치 저장소 구성 요소를 Client Context로 드래그합니다.
 
@@ -617,11 +615,11 @@ Client Context에서 스토어 데이터를 렌더링하도록 geoloc 구성 요
 `/etc/clientcontext/default`
 
 * 하위 폴더:
-   `/content`
+  `/content`
 는 사용자 지정된 클라이언트 컨텍스트의 콘텐츠를 포함합니다.
 
 * 폴더:
-   `/contextstores`
+  `/contextstores`
 컨텍스트 저장소에 대해 서로 다른 구성을 정의할 수 있습니다.
 
 사용자 지정된 클라이언트 컨텍스트를 사용하려면 속성을 편집합니다
