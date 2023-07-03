@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
-source-wordcount: '3047'
-ht-degree: 61%
+source-wordcount: '3082'
+ht-degree: 60%
 
 ---
 
@@ -46,51 +46,51 @@ ht-degree: 61%
 
 * **사이드 패널 전환**
 
-   [에셋 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser), [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser) 및 [콘텐츠 트리](/help/sites-authoring/author-environment-tools.md#content-tree)를 보유하는 사이드 패널을 열고 닫습니다.
+  [에셋 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser), [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser) 및 [콘텐츠 트리](/help/sites-authoring/author-environment-tools.md#content-tree)를 보유하는 사이드 패널을 열고 닫습니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111425.png)
+  ![사이드 패널 전환](do-not-localize/screen_shot_2018-03-22at111425.png)
 
 * **페이지 정보**
 
-   에 대한 액세스 권한 제공 [페이지 정보](/help/sites-authoring/author-environment-tools.md#page-information) 메뉴(페이지 세부 사항 및 페이지 정보 보기 및 편집, 페이지 속성 보기, 페이지 게시/게시 취소 등 페이지에서 수행할 수 있는 작업 포함).
+  에 대한 액세스 권한 제공 [페이지 정보](/help/sites-authoring/author-environment-tools.md#page-information) 메뉴(페이지 세부 사항 및 페이지 정보 보기 및 편집, 페이지 속성 보기, 페이지 게시/게시 취소 등 페이지에서 수행할 수 있는 작업 포함).
 
-   ![](do-not-localize/screen_shot_2018-03-22at111437.png)
+  ![페이지 정보](do-not-localize/screen_shot_2018-03-22at111437.png)
 
 * **에뮬레이터**
 
-   다른 디바이스에서 페이지의 디자인을 에뮬레이트하는 데 사용되는 [에뮬레이터 도구 모음](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)을 전환합니다. 이는 레이아웃 모드에서 자동으로 전환됩니다.
+  다른 디바이스에서 페이지의 디자인을 에뮬레이트하는 데 사용되는 [에뮬레이터 도구 모음](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)을 전환합니다. 이는 레이아웃 모드에서 자동으로 전환됩니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111442.png)
+  ![에뮬레이터](do-not-localize/screen_shot_2018-03-22at111442.png)
 
 * **ContextHub**
 
-   다음을 엽니다. [컨텍스트 허브](/help/sites-authoring/ch-previewing.md). [미리보기 모드]에서만 사용 가능합니다.
+  다음을 엽니다. [컨텍스트 허브](/help/sites-authoring/ch-previewing.md). [미리보기 모드]에서만 사용 가능합니다.
 
-   ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
 
 * **페이지 제목**
 
-   이는 순전히 정보 제공용입니다.
+  이는 순전히 정보 제공용입니다.
 
-   ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
 
 * **모드 선택기**
 
-   현재 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)를 표시하고 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
+  현재 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)를 표시하고 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![chlimage_1-120](assets/chlimage_1-120.png)
 
 * **미리보기**
 
-   [미리보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 활성화합니다. 이렇게 하면 페이지가 게시될 때 표시되는 것과 같이 표시됩니다.
+  [미리보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 활성화합니다. 이렇게 하면 페이지가 게시될 때 표시되는 것과 같이 표시됩니다.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![chlimage_1-121](assets/chlimage_1-121.png)
 
 * **주석**
 
-   다음을 추가할 수 있습니다. [주석](/help/sites-authoring/annotations.md) 페이지를 검토할 때 페이지로 이동합니다. 첫 번째 주석 다음에 아이콘은 페이지의 주석 수를 나타내는 숫자로 전환됩니다.
+  다음을 추가할 수 있습니다. [주석](/help/sites-authoring/annotations.md) 페이지를 검토할 때 페이지로 이동합니다. 첫 번째 주석 다음에 아이콘은 페이지의 주석 수를 나타내는 숫자로 전환됩니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111638.png)
+  ![주석](do-not-localize/screen_shot_2018-03-22at111638.png)
 
 ### 상태 알림 {#status-notification}
 
@@ -122,11 +122,11 @@ ht-degree: 61%
 
 * 페이지에 새 구성 요소를 추가할 때(구성 요소 브라우저에서 드래그):
 
-   ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
 
 * 기존 구성 요소를 이동할 때:
 
-   ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
 
 ## 구성 요소 삽입 {#inserting-a-component}
 
@@ -230,77 +230,77 @@ ht-degree: 61%
 
 * **편집**
 
-   [편집 구성 요소 유형에 따라](/help/sites-authoring/default-components.md) [구성 요소의 콘텐츠를 편집](#edit-content)할 수 있게 됩니다. 종종 도구 모음이 제공됩니다.
+  [편집 구성 요소 유형에 따라](/help/sites-authoring/default-components.md) [구성 요소의 콘텐츠를 편집](#edit-content)할 수 있게 됩니다. 종종 도구 모음이 제공됩니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112936.png)
+  ![편집](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **구성**
 
-   [구성 요소 유형에 따라](/help/sites-authoring/default-components.md) 구성 요소의 속성을 편집 및 구성할 수 있게 됩니다. 종종 대화 상자가 열립니다.
+  [구성 요소 유형에 따라](/help/sites-authoring/default-components.md) 구성 요소의 속성을 편집 및 구성할 수 있게 됩니다. 종종 대화 상자가 열립니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112955.png)
+  ![구성](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **복사**
 
-   구성 요소가 클립보드에 복사됩니다. 붙여넣기 작업 후에는 원래 구성 요소가 유지됩니다.
+  구성 요소가 클립보드에 복사됩니다. 붙여넣기 작업 후에는 원래 구성 요소가 유지됩니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113000.png)
+  ![복사](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **잘라내기**
 
-   구성 요소가 클립보드에 복사됩니다. 붙여넣기 작업 후 원래 구성 요소가 제거됩니다.
+  구성 요소가 클립보드에 복사됩니다. 붙여넣기 작업 후 원래 구성 요소가 제거됩니다.
 
-   ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
 
 * **삭제**
 
-   이 경우 확인 표시가 있는 페이지에서 구성 요소가 삭제됩니다.
+  이 경우 확인 표시가 있는 페이지에서 구성 요소가 삭제됩니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113012.png)
+  ![삭제](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **구성 요소 삽입**
 
-   그러면 대화 상자가 열립니다 [새 구성 요소 추가](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  그러면 대화 상자가 열립니다 [새 구성 요소 추가](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![](do-not-localize/screen_shot_2018-03-22at113017.png)
+  ![구성 요소 삽입](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **붙여넣기**
 
-   구성 요소를 클립보드에서 페이지로 붙여넣게 됩니다. 원본이 남아 있는지 여부는 복사 또는 잘라내기 중 어느 것을 사용했는지 여부에 따라 달라집니다.
+  구성 요소를 클립보드에서 페이지로 붙여넣게 됩니다. 원본이 남아 있는지 여부는 복사 또는 잘라내기 중 어느 것을 사용했는지 여부에 따라 달라집니다.
 
    * 동일한 페이지나 다른 페이지에 붙여넣을 수 있습니다.
    * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣습니다.
    * 클립보드에 콘텐츠가 있는 경우에만 붙여넣기 작업이 표시됩니다.
 
-   ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
-   >[!NOTE]
-   >
-   >잘라내기/복사 작업 전에 이미 열려 있는 다른 페이지에 붙여넣으면 해당 페이지를 새로 고쳐 붙여넣은 콘텐츠를 볼 수 있습니다.
+  >[!NOTE]
+  >
+  >잘라내기/복사 작업 전에 이미 열려 있는 다른 페이지에 붙여넣으면 해당 페이지를 새로 고쳐 붙여넣은 콘텐츠를 볼 수 있습니다.
 
 * **그룹**
 
-   여러 구성 요소를 한 번에 선택할 수 있도록 해 줍니다. **Control+Click** 또는 **Command+Click**&#x200B;하여 데스크탑 디바이스에서도 동일한 작업을 수행할 수 있습니다.
+  여러 구성 요소를 한 번에 선택할 수 있도록 해 줍니다. **Control+Click** 또는 **Command+Click**&#x200B;하여 데스크탑 디바이스에서도 동일한 작업을 수행할 수 있습니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113240.png)
+  ![그룹](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **상위**
 
-   선택한 구성 요소의 상위 구성 요소를 선택할 수 있습니다.
+  선택한 구성 요소의 상위 구성 요소를 선택할 수 있습니다.
 
-   ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
 
 * **레이아웃**
 
-   이를 통해 다음을 수정할 수 있습니다. [레이아웃](/help/sites-authoring/editing-content.md#edit-component-layout) 선택한 구성 요소. 이 기능은 선택한 구성 요소에만 적용되며 [레이아웃 모드](/help/sites-authoring/author-environment-tools.md#page-modes) 전체 페이지.
+  이를 통해 다음을 수정할 수 있습니다. [레이아웃](/help/sites-authoring/editing-content.md#edit-component-layout) 선택한 구성 요소. 이 기능은 선택한 구성 요소에만 적용되며 [레이아웃 모드](/help/sites-authoring/author-environment-tools.md#page-modes) 전체 페이지.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113044.png)
+  ![레이아웃](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **경험 조각 변형으로 변환**
 
-   이 작업에서는 선택한 구성 요소에서 새 [경험 조각](/help/sites-authoring/experience-fragments.md)을 생성하거나 기존 경험 조각에 추가할 수 있습니다.
+  이 작업에서는 선택한 구성 요소에서 새 [경험 조각](/help/sites-authoring/experience-fragments.md)을 생성하거나 기존 경험 조각에 추가할 수 있습니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113033.png)
+  ![경험 조각 변형으로 변환](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## 편집(컨텐츠) {#edit-content}
 
@@ -317,28 +317,28 @@ ht-degree: 61%
 
 * [텍스트 구성 요소](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-   ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
 
 * 이미지 구성 요소
 
-   ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
 
-   >[!NOTE]
-   >
-   >빈 이미지 구성 요소에서는 편집기가 작동하지 않습니다.
-   >
-   >
-   >다음을 수행해야 합니다. [이미지 드래그 또는 업로드(구성 사용)](/help/sites-authoring/default-components-foundation.md#image) 편집을 시작하기 전에
+  >[!NOTE]
+  >
+  >빈 이미지 구성 요소에서는 편집기가 작동하지 않습니다.
+  >
+  >
+  >다음을 수행해야 합니다. [이미지 드래그 또는 업로드(구성 사용)](/help/sites-authoring/default-components-foundation.md#image) 편집을 시작하기 전에
 
 * 이미지 구성 요소 - 전체 화면
 
-   [Entering full screen mode](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) for the image component allows for more space to edit the image as well as showing extra editing options such as **Launch Map** and **Reset Zoom**. In addition, full screen allows for crop presets to be selected.
+  [Entering full screen mode](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) for the image component allows for more space to edit the image as well as showing extra editing options such as **Launch Map** and **Reset Zoom**. In addition, full screen allows for crop presets to be selected.
 
-   ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
 
 * 둘 이상의 기본 구성 요소로 구성된 구성 요소(예: [텍스트 및 이미지 기초 구성 요소](/help/sites-authoring/default-components-foundation.md#text-image), 먼저 원하는 편집 옵션 세트를 확인할 것을 요청합니다.
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![chlimage_1-123](assets/chlimage_1-123.png)
 
 ### 구성 요소로 에셋 드래그 앤 드롭 {#drag-and-drop-assets-into-component}
 
@@ -356,7 +356,7 @@ ht-degree: 61%
 
 모든 구성 요소에 대해 다음 아이콘으로 전체 화면 모드에 액세스(및 액세스 종료)할 수 있습니다.
 
-![](do-not-localize/chlimage_1-20.png)
+![전체 화면 모드 편집](do-not-localize/chlimage_1-20.png)
 
 예를 들어 **텍스트** 구성 요소:
 
@@ -391,7 +391,7 @@ ht-degree: 61%
 
    **레이아웃** 작업을 클릭하거나 탭하여 구성 요소의 레이아웃을 조정합니다.
 
-   ![](do-not-localize/chlimage_1-21.png)
+   ![구성 요소 도구 모음](do-not-localize/chlimage_1-21.png)
 
 1. 레이아웃 작업을 선택하면 다음 작업을 수행합니다.
 
@@ -405,7 +405,7 @@ ht-degree: 61%
 
 1. 필요한 레이아웃 변경을 만든 후 구성 요소 작업 메뉴에서 **닫기** 버튼을 클릭하여 구성 요소 레이아웃 수정을 중지할 수 있습니다. 구성 요소의 도구 모음이 일반적인 편집 상태로 돌아갑니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at133920.png)
+   ![닫기](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
@@ -425,27 +425,27 @@ ht-degree: 61%
 
 * **Live Copy**
 
-   구성 요소가 Live Copy 또는 론치의 일부인 페이지에 있는 경우(Live Copy 기반) 구성 요소 도구 모음 예:
+  구성 요소가 Live Copy 또는 론치의 일부인 페이지에 있는 경우(Live Copy 기반) 구성 요소 도구 모음 예:
 
-   ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
 
-   상속 취소 옵션을 사용할 수 있습니다.
+  상속 취소 옵션을 사용할 수 있습니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at134406.png)
+  ![상속 취소](do-not-localize/screen_shot_2018-03-22at134406.png)
 
-   또는 이미 취소된 경우 상속을 다시 활성화합니다.
+  또는 이미 취소된 경우 상속을 다시 활성화합니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at134417.png)
+  ![상속 다시 활성화](do-not-localize/screen_shot_2018-03-22at134417.png)
 
-   롤아웃 작업은 블루프린트 또는 라이브 카피 소스에서도 사용할 수 있습니다.
+  롤아웃 작업은 블루프린트 또는 라이브 카피 소스에서도 사용할 수 있습니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at134516.png)
+  ![롤아웃](do-not-localize/screen_shot_2018-03-22at134516.png)
 
 * **상속된 단락 시스템**
 
-   구성 대화 상자 예를 들어 상속된 단락 시스템에서처럼:
+  구성 대화 상자 예를 들어 상속된 단락 시스템에서처럼:
 
-   ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ## 페이지 템플릿 편집 {#editing-the-page-template}
 
@@ -485,7 +485,6 @@ ht-degree: 61%
 >* [키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M`을 사용하여 미리보기와 마지막에 선택한 모드 간에 전환할 수 있습니다.
 >
 
-
 >[!NOTE]
 >
 >WCM 모드 쿠키는 두 옵션 모두에 대해 설정됩니다.
@@ -517,7 +516,7 @@ AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 
    1. 다음을 사용하여 페이지 선택 [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. 잠금 아이콘을 선택합니다.
 
-   ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **페이지 편집기**
 
@@ -552,7 +551,7 @@ AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 
 
 다음 아이콘을 사용하여 작업을 실행 취소하거나 재실행할 수 있습니다. 이 아이콘들은 때에 따라 도구 모음에도 표시됩니다.
 
-![](do-not-localize/screen_shot_2018-03-23at093614.png)
+![실행 취소 및 다시 실행](do-not-localize/screen_shot_2018-03-23at093614.png)
 
 >[!NOTE]
 >
@@ -584,7 +583,6 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 >* 최대 20개의 편집 작업을 실행 취소합니다(기본 설정).
 >* 사용 [키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) 실행 취소 및 다시 실행의 경우.
 >
-
 
 다음 유형의 페이지 변경 사항에 대해 실행 취소 및 재실행을 사용할 수 있습니다.
 
