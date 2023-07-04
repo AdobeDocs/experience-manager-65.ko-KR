@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 54903f3a-1e7e-4083-a2c9-b2ea4555d7fc
 docset: aem65
 exl-id: 8540e1f0-22d7-4f48-85d9-7c44eb7185df
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab6399d2d3b4ea0e77a017a34b953864ecadb10c
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 7%
+source-wordcount: '108'
+ht-degree: 6%
 
 ---
 
@@ -44,4 +44,4 @@ ht-degree: 7%
 
 1. 다음 **클래식 UI에서 열기** 옵션은에서 다시 사용할 수 있습니다. **페이지 정보** 페이지를 편집할 때 메뉴 아래의 제품에서 사용할 수 있습니다.
 
-   ![](assets/syui-03-2019-02-27-15-19-48.png)
+   ![페이지 정보에서 클래식 UI로 열기 옵션](assets/syui-03-2019-02-27-15-19-48.png)

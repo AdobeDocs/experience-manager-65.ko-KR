@@ -8,10 +8,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 6ebcc7bd5c72c01672244fdfba353a8949f6e331
 workflow-type: tm+mt
-source-wordcount: '2910'
-ht-degree: 3%
+source-wordcount: '2979'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,7 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
 
 각각의 개별 제품 유형에 대한 스캐폴드가 필요합니다. 적절한 스캐폴드는 다음 중 하나를 통해 제품과 연계됩니다.
 
-* 경로
+* path
 * 제품은 스캐폴드를 참조할 수 있습니다
 
 >[!NOTE]
@@ -66,21 +66,22 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
 1. 사용 **제품** 콘솔이 필요한 위치로 이동합니다.
 1. 사용 **제품 가져오기** 아이콘을 클릭하여 마법사를 엽니다.
 
-   ![chlimage_1-1](/help/sites-administering/do-not-localize/chlimage_1-13.png)
+   ![제품 가져오기 아이콘](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
 1. 지정:
 
    * **가져오기**
 
-      특정 항목 가져오기 [상거래 공급자](/help/commerce/cif-classic/administering/concepts.md#commerce-providers), 기본적으로 `Geometrixx`.
+     특정 항목 가져오기 [상거래 공급자](/help/commerce/cif-classic/administering/concepts.md#commerce-providers), 기본적으로 `Geometrixx`.
 
    * **소스**
 
-      가져올 파일로, 브라우저를 사용하여 파일을 선택할 수 있습니다.
+     가져올 파일로, 브라우저를 사용하여 파일을 선택할 수 있습니다.
 
    * **증분 가져오기**
 
-      증분 가져오기인지 여부를 나타냅니다(전체와 반대).
+     증분 가져오기인지 여부를 나타냅니다(전체와 반대).
+
    >[!NOTE]
    >
    >(샘플 geometrixx-outdoor 가져오기의) 증분 가져오기는 제품 수준에서 작동합니다.
@@ -104,27 +105,27 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
 1. 사용 **도구** 콘솔 열기 **상거래** 폴더를 삭제합니다.
 1. 두 번 클릭하여 열기 **제품 가져오기**:
 
-   ![chlimage_1-22](/help/sites-administering/assets/chlimage_1-22.jpeg)
+   ![제품 Importer 콘솔](/help/sites-administering/assets/chlimage_1-22.jpeg)
 
 1. 지정:
 
    * **저장소 이름**
 
-      제품을 가져올 위치:
+     제품을 가져올 위치:
 
-      `/etc/commerce/products/<*store name*>/`
+     `/etc/commerce/products/<*store name*>/`
 
    * **상거래 공급자**
 
-      에 대한 가져오기 [상거래 공급자](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); 기본적으로 Geometrixx.
+     에 대한 가져오기 [상거래 공급자](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); 기본적으로 Geometrixx.
 
    * **소스 파일**
 
-      가져오려는 파일의 저장소 위치입니다.
+     가져오려는 파일의 저장소 위치입니다.
 
    * **증분 가져오기**
 
-      증분 가져오기인지 여부를 나타냅니다(전체와 반대).
+     증분 가져오기인지 여부를 나타냅니다(전체와 반대).
 
 1. 클릭 **제품 가져오기**.
 
@@ -142,7 +143,7 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
    * **제품 만들기**
    * **제품 변형 만들기**
 
-   ![chlimage_1-14](/help/sites-administering/do-not-localize/chlimage_1-14.png)
+   ![플러스 모양 만들기 아이콘](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
 1. 마법사가 열립니다. 사용 **기본** 및 **제품 탭** 을(를) 입력하려면 [제품 속성](/help/commerce/cif-classic/administering/concepts.md#product-attributes) (새 제품 또는 제품 변형)
 
@@ -166,7 +167,7 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
 >
 >`/etc/commerce/products/...`
 >
->즉, 기본적으로 [dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR)필요한 경우 를 구성합니다.
+>즉, 기본적으로 [dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)필요한 경우 를 구성합니다.
 
 #### 제품 정보 편집 - 터치에 적합한 UI {#editing-product-information-touch-optimized-ui}
 
@@ -178,7 +179,7 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
 
    다음 항목 선택 **제품 데이터 보기** 아이콘:
 
-   ![chlimage_1-3](/help/sites-administering/do-not-localize/chlimage_1-15.png)
+   ![제품 데이터 보기 아이콘 - 정보 아이콘](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
 1. 다음 [제품 속성](/help/commerce/cif-classic/administering/concepts.md#product-attributes) 이 표시됩니다. 사용 **편집** 및 **완료** 원하는 대로 변경할 수 있습니다.
 
@@ -189,11 +190,11 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
 1. 사용 **제품** 콘솔(를 통해) **상거래**) 제품 정보로 이동합니다.
 1. 아이콘을 사용하여 참조에 대한 보조 레일을 엽니다.
 
-   ![chlimage_1-4](/help/sites-administering/do-not-localize/chlimage_1-16.png)
+   ![이중 화살표 아이콘](/help/sites-administering/do-not-localize/chlimage_1-16.png)
 
 1. 필요한 제품을 선택하십시오. 사용 가능한 참조 유형을 표시하기 위해 보조 레일이 업데이트됩니다.
 
-   ![chlimage_1-88](/help/sites-administering/assets/chlimage_1-88.png)
+   ![참조가 열려 있는 제품 콘솔](/help/sites-administering/assets/chlimage_1-88.png)
 
 1. 참조 유형(예: 제품 페이지)을 클릭/탭하여 목록을 확장합니다.
 1. 옵션을 표시할 특정 참조를 선택합니다.
@@ -201,18 +202,18 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
    * 제품 페이지로 이동
    * 제품 페이지 편집
 
-   ![chlimage_1-89](/help/sites-administering/assets/chlimage_1-89.png)
+   ![제품 콘솔 참조 패널](/help/sites-administering/assets/chlimage_1-89.png)
 
 ### 제품 검색 {#search-for-products}
 
 1. 다음 위치로 이동 **제품** 콘솔, 를 통해 **상거래**.
 1. 아이콘을 사용하여 검색할 보조 레일을 엽니다.
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-17.png)
+   ![돋보기 아이콘](/help/sites-administering/do-not-localize/chlimage_1-17.png)
 
 1. 몇 가지 패싯을 사용하여 제품을 검색할 수 있습니다. 검색에 하나 또는 여러 패싯만 사용할 수 있습니다. 발견된 제품이 표시됩니다.
 
-   ![chlimage_1-90](/help/sites-administering/assets/chlimage_1-90.png)
+   ![제품 콘솔의 제품 데이터](/help/sites-administering/assets/chlimage_1-90.png)
 
 1. 제품을 클릭/탭하면 제품이 열립니다. 게시하거나 제품 데이터를 볼 수도 있습니다.
 
@@ -250,7 +251,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
 1. 편집 아이콘을 탭/클릭합니다.
 1. 다음으로 스크롤 **추가**.
 
-   ![chlimage_1-91](/help/sites-administering/assets/chlimage_1-91.png)
+   ![제품 데이터 스크린샷 추가](/help/sites-administering/assets/chlimage_1-91.png)
 
 1. 탭/클릭 **추가**. 새 자산 자리 표시자가 나타납니다.
 1. 탭/클릭**변경**자산을 선택할 수 있는 대화 상자를 엽니다.
@@ -337,7 +338,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
 
    다음 항목 선택 **게시** 또는 **게시 취소** 아이콘(필요한 경우):
 
-   ![chlimage_1-6](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![chlimage_1-7](/help/sites-administering/do-not-localize/chlimage_1-19.png)
+   ![세계 아이콘](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![십자가가 있는 세계 아이콘 - 기호 없음](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
    제품 정보는 적절하게 게시되거나 게시 취소됩니다.
 
@@ -367,7 +368,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
 
 OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( `/system/console/events`) 예를 들면 다음과 같습니다.
 
-![](/help/sites-administering/do-not-localize/chlimage_1-20.png)
+![OSGI 이벤트 예](/help/sites-administering/do-not-localize/chlimage_1-20.png)
 
 >[!NOTE]
 >
@@ -389,15 +390,15 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 
 1. 전체 화면 아이콘을 클릭합니다.
 
-   ![chlimage_1-92](/help/sites-administering/assets/chlimage_1-92.png)
+   ![전체 화면 아이콘](/help/sites-administering/assets/chlimage_1-92.png)
 
 1. Launch Map 아이콘을 클릭합니다.
 
-   ![chlimage_1-93](/help/sites-administering/assets/chlimage_1-93.png)
+   ![맵 시작 아이콘](/help/sites-administering/assets/chlimage_1-93.png)
 
 1. 모양 아이콘 중 하나를 클릭합니다.
 
-   ![chlimage_1-21](/help/sites-administering/do-not-localize/chlimage_1-21.png)
+   ![모양 아이콘](/help/sites-administering/do-not-localize/chlimage_1-21.png)
 
 1. 필요에 따라 모양을 수정하고 이동합니다.
 1. 모양을 클릭합니다.
@@ -407,17 +408,17 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
    >
    >또는 변형 수준이 아닌 제품 수준에 있어야 하는 제품 경로를 직접 입력할 수 있습니다.
 
-   ![chlimage_1-94](/help/sites-administering/assets/chlimage_1-94.png)
+   ![경로 입력](/help/sites-administering/assets/chlimage_1-94.png)
 
 1. 확인 아이콘을 두 번 클릭한 다음 전체 화면 종료 를 클릭합니다.
 1. 구성 요소 옆에 있는 페이지의 아무 곳이나 클릭합니다. 페이지가 새로 고침되고 이미지에 다음 기호가 표시됩니다.
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-22.png)
+   ![더하기 기호](/help/sites-administering/do-not-localize/chlimage_1-22.png)
 
 1. 다음으로 전환 [미리보기](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) 모드.
 1. + 핫스팟을 클릭합니다. 입력한 제품의 크기와 수량을 선택할 수 있는 대화 상자가 열립니다 **경로**.
 
-   ![chlimage_1-95](/help/sites-administering/assets/chlimage_1-95.png)
+   ![제품 예: poncho](/help/sites-administering/assets/chlimage_1-95.png)
 
 1. 크기와 수량을 입력합니다.
 1. 장바구니에 추가 단추를 클릭합니다. 대화 상자가 닫힙니다.
@@ -429,15 +430,15 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 
 1. 구성 요소를 클릭하고 구성 아이콘을 클릭합니다.
 
-   ![chlimage_1-96](/help/sites-administering/assets/chlimage_1-96.png)
+   ![구성 아이콘](/help/sites-administering/assets/chlimage_1-96.png)
 
 1. 아래로 스크롤. 다음 항목이 있습니다. **장바구니에 추가** 탭.
 
-   ![chlimage_1-97](/help/sites-administering/assets/chlimage_1-97.png)
+   ![장바구니에 추가 탭](/help/sites-administering/assets/chlimage_1-97.png)
 
 1. 클릭 **장바구니에 추가**. 사용할 수 있는 구성 옵션은 3가지가 있습니다.
 
-   ![chlimage_1-98](/help/sites-administering/assets/chlimage_1-98.png)
+   ![구성 옵션](/help/sites-administering/assets/chlimage_1-98.png)
 
 1. 완료 아이콘을 클릭합니다.
 
@@ -461,18 +462,18 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 
 1. 목록에서 를 선택합니다. **카탈로그 만들기**, 카탈로그 만들기 마법사가 열립니다.
 
-   ![chlimage_1-99](/help/sites-administering/assets/chlimage_1-99.png)
+   ![카탈로그 만들기 마법사](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. 필요한 카탈로그 블루프린트로 이동합니다.
 1. 탭/클릭 **선택** 버튼을 클릭하고 필요한 카탈로그 블루프린트를 탭/클릭합니다.
 1. 탭/클릭 **다음**.
 
-   ![chlimage_1-100](/help/sites-administering/assets/chlimage_1-100.png)
+   ![카탈로그 속성 마법사](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Type a **제목** 및 a **이름**.
 1. 탭/클릭 **만들기** 단추를 클릭합니다. 카탈로그가 생성되고 대화 상자가 열립니다.
 
-   ![chlimage_1-101](/help/sites-administering/assets/chlimage_1-101.png)
+   ![카탈로그 생성 대화 상자](/help/sites-administering/assets/chlimage_1-101.png)
 
 1. 탭/클릭 **완료** 버튼을 클릭하면 카탈로그를 볼 수 있는 사이트 콘솔로 돌아갑니다.
 
@@ -548,11 +549,11 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 1. 카탈로그 블루프린트를 가져올 위치로 이동합니다.
 1. 탭/클릭 **블루프린트 가져오기** 아이콘.
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-13.png)
+   ![블루프린트 가져오기 아이콘](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
 1. 마법사에서 필요에 따라 소스를 선택하고 탭/클릭합니다 **다음**.
 
-   ![chlimage_1-340](/help/sites-administering/assets/chlimage_1-102.png)
+   ![블루프린트 마법사](/help/sites-administering/assets/chlimage_1-102.png)
 
 1. 탭/클릭 **완료** 가져오기가 완료되면.
 
@@ -661,7 +662,7 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 1. 사용 **주문 수** 콘솔이 필요한 위치로 이동합니다.
 1. 사용 **만들기** 선택할 아이콘 **주문 만들기**.
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
+   ![플러스 모양 만들기 아이콘](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
 1. 마법사가 열립니다. 사용 **기본**, **콘텐츠**, **결제** 및 **이행** 탭 입력 [새 주문에 대한 정보](/help/commerce/cif-classic/administering/concepts.md#order-information).
 
@@ -679,7 +680,7 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 
    다음 항목 선택 **주문 데이터 보기** 아이콘:
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-15.png)
+   ![정보 아이콘](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
 1. 다음 [주문 정보](/help/commerce/cif-classic/administering/concepts.md#order-information) 이 표시됩니다. 사용 **편집** 및 **완료** 원하는 대로 변경할 수 있습니다.
 

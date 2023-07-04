@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '751'
 ht-degree: 2%
 
 ---
@@ -137,11 +137,11 @@ AEM eCommerce는 다음을 제공합니다.
    * 바우처
    * 외
 
-   ![](/help/sites-administering/assets/chlimage_1-130.png)
+  ![geometrixx 구성 요소 예제](/help/sites-administering/assets/chlimage_1-130.png)
 
-   >[!NOTE]
-   >
-   >AEM에서 제공하는 통합 프레임워크를 사용하면 특정 eCommerce 엔진과 관계없이 상거래 기능을 위한 추가 AEM 구성 요소를 빌드할 수도 있습니다.
+  >[!NOTE]
+  >
+  >AEM에서 제공하는 통합 프레임워크를 사용하면 특정 eCommerce 엔진과 관계없이 상거래 기능을 위한 추가 AEM 구성 요소를 빌드할 수도 있습니다.
 
 * **검색** - 다음 중 하나를 사용합니다.
 
@@ -150,28 +150,28 @@ AEM eCommerce는 다음을 제공합니다.
    * 서드파티 검색
    * 또는 둘의 조합.
 
-   ![](/help/sites-administering/assets/chlimage_1-131.png)
+  ![검색 예](/help/sites-administering/assets/chlimage_1-131.png)
 
 * AEM 기능을 사용하여 다음을 수행합니다 **여러 채널에서 콘텐츠 제공**, 전체 브라우저 창 또는 모바일 디바이스이어야 합니다. 방문자가 필요로 하는 형식으로 콘텐츠를 제공합니다.
 
-   ![](/help/sites-administering/assets/chlimage_1-132.png)
+  ![모바일 보기 예](/help/sites-administering/assets/chlimage_1-132.png)
 
 * 다음에 대한 기능: **를 기반으로 자체 통합 구현 개발 [AEM eCommerce 프레임워크](#the-framework)**.
 
-   현재 사용할 수 있는 두 구현은 모두 일반 API(프레임워크)를 기반으로 동일한 기반으로 구축됩니다. 새 통합 구현에는 통합에 필요한 기능 구현만 포함됩니다. 프론트엔드 구성 요소는 인터페이스를 사용하기 때문에 새로운 구현에서 사용할 수 있습니다(따라서 구현과 독립적).
+  현재 사용할 수 있는 두 구현은 모두 일반 API(프레임워크)를 기반으로 동일한 기반으로 구축됩니다. 새 통합 구현에는 통합에 필요한 기능 구현만 포함됩니다. 프론트엔드 구성 요소는 인터페이스를 사용하기 때문에 새로운 구현에서 사용할 수 있습니다(따라서 구현과 독립적).
 
 * 개발 가능성 **쇼퍼 데이터 및 활동을 기반으로 한 경험 기반 상거래**. 이를 통해 다음과 같은 많은 시나리오를 실현할 수 있습니다.
 
    * 예를 들어 총 주문이 특정 금액을 초과할 경우 배송 비용을 절감할 수 있습니다.
    * 다른 옵션을 사용하면 프로필 데이터(예: 위치)를 사용하는 시즌 오퍼를 제공할 수 있습니다. 그런 다음 필요할 때 다른 요인에 따라 다시 강조할 수 있습니다.
 
-   아래 예에는 장바구니의 콘텐츠가 $75 미만인 하나의 티저가 표시됩니다.
+  아래 예에는 장바구니의 콘텐츠가 $75 미만인 하나의 티저가 표시됩니다.
 
-   ![](/help/sites-administering/assets/chlimage_1-133.png)
+  ![클라이언트 컨텍스트가 있는 장바구니](/help/sites-administering/assets/chlimage_1-133.png)
 
-   장바구니의 콘텐츠가 $75를 초과하는 경우 변경할 수 있습니다.
+  장바구니의 콘텐츠가 $75를 초과하는 경우 변경할 수 있습니다.
 
-   ![](/help/sites-administering/assets/chlimage_1-134.png)
+  ![변경 후 클라이언트 컨텍스트가 있는 장바구니](/help/sites-administering/assets/chlimage_1-134.png)
 
 * 및 다음을 포함한 기타 기능:
 

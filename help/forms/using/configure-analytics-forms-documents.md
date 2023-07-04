@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: 66631fd0813f623f3321072fc00fd90f7fa33d21
+source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1533'
 ht-degree: 3%
 
 ---
@@ -112,7 +112,7 @@ Analytics 데이터는 보고서 세트라는 고객별 저장소에 저장됩�
 Cloud Service 구성은 Adobe Analytics 계정에 대한 정보입니다. 이 구성을 통해 Adobe Experience Manager(AEM)가 Adobe Analytics에 연결할 수 있습니다. 사용하는 각 Analytics 계정에 대해 별도의 구성을 만듭니다.
 
 1. 관리자로 AEM 작성자 인스턴스에 로그인합니다.
-1. 왼쪽 상단 모서리에서 을(를) 클릭합니다 **Adobe Experience Manager** > **도구** ![](/help/forms/using/assets/tools.png) > **Cloud Services** > **이전 Cloud Services**.
+1. 왼쪽 상단 모서리에서 을(를) 클릭합니다 **Adobe Experience Manager** > **도구** ![망치 아이콘](/help/forms/using/assets/tools.png) > **Cloud Services** > **이전 Cloud Services**.
 1. 찾기 **Adobe Analytics** 아이콘. 클릭 **구성 표시** 그런 다음 을(를) 클릭하여 **[+]** 새 구성을 추가합니다.
 
    처음 사용하는 경우 **지금 구성**.
@@ -145,7 +145,7 @@ Adobe Analytics 프레임워크는 Adobe Analytics 변수와 AEM 변수 간의 �
 
    ![information_to_send_to_report_suite](assets/information_to_send_to_report_suite.png)
 
-1. 드래그 **양식 분석 구성 요소** 다음에서 **기타** 카테고리로 사이드 킥을 프레임워크에 추가합니다.
+1. 드래그 **양식 분석 구성 요소** 다음에서 **기타** Sidekick에서 프레임워크로의 범주입니다.
 1. Analytics 변수를 구성 요소에 정의된 변수와 매핑하려면 AEM Content Finder에서 추적 구성 요소의 필드로 변수를 드래그합니다.
 
    ![AEM 변수와 Adobe Analytics 변수 매핑](assets/analytics_new.png)
@@ -169,6 +169,7 @@ Adobe Analytics 프레임워크는 Adobe Analytics 변수와 AEM 변수 간의 �
    * **Analytics 보고서 동기화 cron**: Adobe Analytics에서 보고서를 가져오기 위한 cron 표현식을 지정합니다. 기본값은 0 0 2 입니다. &#42; &#42;.
 
    * **보고서 가져오기 시간 제한:** 서버가 분석 보고서에 응답할 때까지 대기할 기간(초)을 지정합니다. 기본 시간은 120초입니다.
+
    >[!NOTE]
    >
    >보고서 가져오기 작업을 시간 초과한 후 지정된 시간(초)까지 최대 10초가 더 걸릴 수 있습니다.

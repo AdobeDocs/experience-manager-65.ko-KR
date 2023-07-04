@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b4370d23c7b1bd43e1f02a862f11952d04892eb3
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 2%
 
    예
 
-   [ `https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
+   [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
 1. 클래식 UI를 다시 활성화할 콘솔에 해당하는 노드를 선택합니다. 이 예제에서는 사이트 콘솔에 대한 클래식 UI를 다시 활성화합니다.
 
@@ -50,6 +50,6 @@ ht-degree: 2%
 
 1. 다음 **클래식 UI** 옵션은 admin console에서 팝오버 옵션으로 다시 사용할 수 있습니다.
 
-   ![](assets/syui-01-2019-02-27-15-16-55.png)
+   ![클래식 UI 팝오버 옵션](assets/syui-01-2019-02-27-15-16-55.png)
 
 클래식 UI 버전에 대한 액세스를 다시 활성화하려는 모든 콘솔에 대해 이 단계를 반복합니다.
