@@ -12,9 +12,9 @@ discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 002b9035f37a1379556378686b64d26bbbc30288
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2527'
 ht-degree: 3%
 
 ---
@@ -90,6 +90,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 액세스 [웹 콘솔](/help/sites-deploying/configuring-osgi.md)
 
       * 예를 들어, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * 찾기 `Apache Sling Distribution Agent - Sync Agents Factory`
 
       * 편집을 위해 열 기존 구성 선택(연필 아이콘) 확인 `name`: **`socialpubsync`**
@@ -97,8 +98,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
       * 선택 `Enabled` 확인란
       * 선택 `Save`
 
-
-![](assets/chlimage_1-20.png)
+![Apache Sling 배포 에이전트](assets/chlimage_1-20.png)
 
 ### 2. 인증된 사용자 만들기 {#createauthuser}
 
@@ -111,15 +111,15 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 액세스 [보안 콘솔](/help/sites-administering/security.md)
 
       * 예를 들어, [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
+
    * 새 사용자 만들기
 
       * 예, `usersync-admin`
+
    * 에 이 사용자 추가 **`administrators`** 사용자 그룹
    * [/home에 이 사용자에 대한 ACL 추가](#howtoaddacl)
 
       * `Allow jcr:all` 제한적으로 `rep:glob=*/activities/*`
-
-
 
 >[!CAUTION]
 >
@@ -128,7 +128,6 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 >* 할당된 기본 사용자는 **`admin`**.
 >* 사용하지 않음 `communities-user-admin user.`
 >
-
 
 #### ACL을 추가하는 방법 {#addacls}
 
@@ -148,7 +147,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 * 선택 **모두 저장**
 
-![](assets/chlimage_1-21.png)
+![ACL 추가 창](assets/chlimage_1-21.png)
 
 참고 항목
 
@@ -167,6 +166,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 액세스 [웹 콘솔](/help/sites-deploying/configuring-osgi.md)
 
       * 예를 들어, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * 찾기 `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * 편집을 위해 열 기존 구성 선택(연필 아이콘) 확인 `property name`: **`socialpubsync-publishUser`**
 
@@ -174,8 +174,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
       * 예, `usersync-admin`
 
-
-![](assets/chlimage_1-22.png)
+![암호화된 전송 비밀 공급자](assets/chlimage_1-22.png)
 
 ### 4. Apache Sling 배포 에이전트 - 큐 에이전트 팩토리 {#apache-sling-distribution-agent-queue-agents-factory}
 
@@ -187,17 +186,17 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 액세스 [웹 콘솔](/help/sites-deploying/configuring-osgi.md)
 
       * 예를 들어, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+
    * 찾기 `Apache Sling Distribution Agent - Queue Agents Factory`
 
       * 편집을 위해 열 기존 구성 선택(연필 아이콘) 확인 `Name`: `socialpubsync-reverse`
 
       * 선택 `Enabled` 확인란
       * 선택 `Save`
+
    * **repeat** 각 게시 인스턴스용
 
-
-
-![](assets/chlimage_1-23.png)
+![큐 에이전트 팩토리](assets/chlimage_1-23.png)
 
 ### 5. Adobe Social 동기화 - 차이점 옵저버 팩토리 {#diffobserver}
 
@@ -209,17 +208,17 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 액세스 [웹 콘솔](/help/sites-deploying/configuring-osgi.md)
 
       * 예를 들어, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+
    * 찾기 **`Adobe Social Sync - Diff Observer Factory`**
 
       * 편집을 위해 열 기존 구성 선택(연필 아이콘)
 
-         확인 `agent name`: `socialpubsync-reverse`
+        확인 `agent name`: `socialpubsync-reverse`
 
       * 선택 `Enabled` 확인란
       * 선택 `Save`
 
-
-![](assets/screen-shot_2019-05-24at090809.png)
+![비교 옵저버 팩토리](assets/screen-shot_2019-05-24at090809.png)
 
 ### 6. Apache Sling 배포 트리거 - 예약된 트리거 팩토리 {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
@@ -233,17 +232,17 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 액세스 [웹 콘솔](/help/sites-deploying/configuring-osgi.md)
 
       * 예를 들어, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * 찾기 `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
       * 편집을 위해 열 기존 구성 선택(연필 아이콘)
 
          * 확인 `Name`: `socialpubsync-scheduled-trigger`
+
       * 설정 `Interval in Seconds` 원하는 간격으로
       * 선택 `Save`
 
-
-
-![](assets/chlimage_1-24.png)
+![예약된 트리거 팩토리](assets/chlimage_1-24.png)
 
 ## 여러 게시 인스턴스에 대한 구성 {#configure-for-multiple-publish-instances}
 
@@ -259,12 +258,12 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 액세스 [웹 콘솔](/help/sites-deploying/configuring-osgi.md)
 
       * 예를 들어, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * 찾기 `Apache Sling Distribution Agent - Sync Agents Factory`
 
       * 편집을 위해 열 기존 구성 선택(연필 아이콘) 확인 `Name`: `socialpubsync`
 
-
-![](assets/chlimage_1-25.png)
+![동기화 에이전트 팩토리](assets/chlimage_1-25.png)
 
 * **내보내기 종단점**
 각 게시 인스턴스에 대한 내보내기 종단점이 있어야 합니다. 예를 들어 2개의 게시 인스턴스인 localhost:4503 및 4504가 있는 경우 2개의 항목이 있어야 합니다.
@@ -292,11 +291,11 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 액세스 [웹 콘솔](/help/sites-deploying/configuring-osgi.md)
 
       * 예, `https://localhost:4503/system/console/configMgr`
+
    * 찾기 `AEM Communities User Sync Listener`
    * 편집을 위해 열 기존 구성 선택(연필 아이콘) 확인 `Name`: `socialpubsync-scheduled-trigger`
 
-
-![](assets/chlimage_1-26.png)
+![AEM Communities 사용자 동기화 수신기](assets/chlimage_1-26.png)
 
 * **노드 유형**
 동기화할 노드 유형 목록입니다. sling:Folder 이외의 모든 노드 유형은 여기에 나열되어야 합니다(sling:folder는 별도로 처리됨).
@@ -340,7 +339,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 1. 다음으로 이동 `http://<host>:<port>/system/console/status-slingsettings`
 1. 값 확인 **Sling ID**
 
-![](assets/chlimage_1-27.png)
+![Sling ID 값 확인](assets/chlimage_1-27.png)
 
 게시 인스턴스의 Sling ID가 다른 게시 인스턴스의 Sling ID와 일치하는 경우:
 
@@ -350,10 +349,10 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 다음 파일을 검색하고 삭제합니다. *sling.id.file*
 
       * 예를 들어 Linux 시스템의 경우:
-         `rm -i $(find . -type f -name sling.id.file)`
+        `rm -i $(find . -type f -name sling.id.file)`
 
       * 예를 들어 Windows 시스템의 경우:
-         `use windows explorer and search for *sling.id.file*`
+        `use windows explorer and search for *sling.id.file*`
 
 1. 게시 인스턴스 시작
 
@@ -387,10 +386,10 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 기존 rep:policy 노드를 새 노드로 덮어쓰려면 세 번째 패키지 필터를 추가합니다.
 
       * `/home/users|+.*/rep:policy`
+
    * 정책이 배포되지 않도록 하려면 다음을 설정하십시오.
 
       * `Acl Handling:` `IGNORE`
-
 
 ![Vault 패키지 빌더 팩토리](assets/vault-package-builder-factory.png)
 
@@ -423,13 +422,13 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
       * 에서 항목을 찾습니다. `/var/sling/distribution/packages`
 
          * 패턴이 있는 폴더 노드 `distrpackage_*`
+
    * 사용 [패키지 관리자](/help/sites-administering/package-manager.md)
 
       * 보류 중인 패키지 찾기(아직 설치되지 않음)
 
          * 패턴을 사용하여 이름이 지정됨 `socialpubsync-vlt*`
          * 작성자: `communities-user-admin`
-
 
 배포 큐가 비어 있는 경우 사용자 동기화를 비활성화합니다.
 
@@ -453,7 +452,7 @@ User Sync Diagnostics 콘솔로 들어오면 결과가 표시됩니다.
 
 사용자 동기화가 활성화되지 않은 경우 표시되는 항목은 다음과 같습니다.
 
-![](assets/chlimage_1-28.png)
+![사용자 동기화 진단을 사용할 수 없다는 경고](assets/chlimage_1-28.png)
 
 #### 게시 인스턴스에 대한 진단을 실행하는 방법 {#how-to-run-diagnostics-for-publish-instances}
 
@@ -463,7 +462,7 @@ User Sync Diagnostics 콘솔로 들어오면 결과가 표시됩니다.
 
 **참고**: URL을 시작하기 전에 *승인된 동기화 사용자* 은(는) 이미 해당 게시 인스턴스에 로그인되어 있어야 합니다.
 
-![](assets/chlimage_1-29.png)
+![게시 인스턴스에 대한 진단](assets/chlimage_1-29.png)
 
 ### 구성이 잘못 추가됨 {#configuration-improperly-added}
 
@@ -473,23 +472,23 @@ User Sync Diagnostics 콘솔로 들어오면 결과가 표시됩니다.
 
 #### (작성자) Apache Sling 배포 에이전트 1개 - 동기화 에이전트 팩토리 {#author-one-apache-sling-distribution-agent-sync-agents-factory}
 
-![](assets/chlimage_1-30.png)
+![웹 콘솔에서 편집된 기본 구성 보기](assets/chlimage_1-30.png)
 
 #### (작성자) Apache Sling 배포 전송 자격 증명 - 사용자 자격 증명 기반 배포TransportSecretProvider {#author-one-apache-sling-distribution-transport-credentials-user-credentials-based-distributiontransportsecretprovider}
 
-![](assets/chlimage_1-31.png)
+![웹 콘솔에서 편집된 기본 구성 보기](assets/chlimage_1-31.png)
 
 #### (게시) Apache Sling 배포 에이전트 1개 - 큐 에이전트 팩토리 {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
-![](assets/chlimage_1-32.png)
+![웹 콘솔에서 편집된 기본 구성 보기](assets/chlimage_1-32.png)
 
 #### (게시) 하나의 Adobe Social 동기화 - 차이점 옵저버 팩토리 {#publish-one-adobe-social-sync-diff-observer-factory}
 
-![](assets/chlimage_1-33.png)
+![웹 콘솔에서 편집된 기본 구성 보기](assets/chlimage_1-33.png)
 
 #### (작성자) Apache Sling 배포 트리거 1개 - 예약된 트리거 팩토리 {#author-one-apache-sling-distribution-trigger-scheduled-triggers-factory}
 
-![](assets/chlimage_1-34.png)
+![웹 콘솔에서 편집된 기본 구성 보기](assets/chlimage_1-34.png)
 
 ### 응답을 처리하는 동안 작업 예외 수정 {#modify-operation-exception-during-response-processing}
 
@@ -507,7 +506,7 @@ User Sync Diagnostics 콘솔로 들어오면 결과가 표시됩니다.
 
 승인된 사용자는 모든 게시 인스턴스에 대해 명시적으로 다음 권한 및 제한을 보유해야 합니다.
 
-| **경로** | **jcr:all** | **rep:glob** |
+| **path** | **jcr:all** | **rep:glob** |
 |---|---|---|
 | /home | X | &#42;/활동/&#42; |
 | /home/users | X | &#42;/활동/&#42; |
@@ -515,7 +514,7 @@ User Sync Diagnostics 콘솔로 들어오면 결과가 표시됩니다.
 
 의 멤버로서 `administrators` 그룹, 인증된 사용자는 모든 게시 인스턴스에 대해 다음 권한을 가져야 합니다.
 
-| **경로** | **jcr:all** | **jcr:read** | **rep:write** |
+| **path** | **jcr:all** | **jcr:read** | **rep:write** |
 |---|---|---|---|
 | /etc/packages/sling/distribution |  |  | X |
 | /libs/sling/distribution |  | X |  |
@@ -540,8 +539,8 @@ Sling ID가 둘 이상의 게시 인스턴스 간에 일치하는 경우 사용�
 
          * 필터 탭: 필터 추가: 루트 경로: `/home`
          * 고급 탭: AC 처리: `Overwrite`
-   * [패키지 내보내기](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
+   * [패키지 내보내기](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
 * 다른 게시 인스턴스:
 
@@ -576,6 +575,7 @@ Sling ID가 둘 이상의 게시 인스턴스 간에 일치하는 경우 사용�
 
       * `Exporter Endpoints`
       * `Importer Endpoints`
+
    * 사용자 동기화 다시 활성화
 
       * 다음을 확인: `Enabled` 에 대한 확인란 [Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리](#apache-sling-distribution-agent-sync-agents-factory)

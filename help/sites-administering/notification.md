@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2026'
 ht-degree: 12%
 
 ---
@@ -144,11 +144,11 @@ This is an automatically generated message. Please do not reply.
 * `${userId}`: 이벤트를 트리거한 사용자의 ID입니다.
 * `${modifications}`에서는 페이지 이벤트 유형 및 페이지 경로를 다음 형식으로 설명합니다.
 
-   &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
+  &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
 
-   예:
+  예:
 
-   PageModified => /content/geometrixx/en/products
+  PageModified => /content/geometrixx/en/products
 
 ### 워크플로우 알림용 이메일 템플릿 {#email-templates-for-workflow-notification}
 
@@ -342,7 +342,7 @@ AEM은 조직의 이메일 요구 사항 보호 준수를 위해 통합 Mailer �
 1. 검색창에서 **Azure Active Directory**&#x200B;를 검색한 다음 결과를 클릭합니다. 또는 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)에서 바로 검색할 수 있습니다.
 1. **앱 등록** - **신규 등록**&#x200B;을 클릭합니다.
 
-   ![](assets/oauth-outlook1.png)
+   ![Microsoft Outlook 구성](assets/oauth-outlook1.png)
 
 1. 요구 사항에 따라 정보를 입력한 다음 **등록**&#x200B;을 클릭합니다.
 1. 새로 생성된 앱으로 이동하여 **API 권한**&#x200B;을 선택합니다.
@@ -397,7 +397,7 @@ AEM은 조직의 이메일 요구 사항 보호 준수를 위해 통합 Mailer �
 
 구성이 완료되면 설정은 다음과 같이 표시됩니다.
 
-![](assets/oauth-outlook-smptconfig.png)
+![AEM 측 구성 보기](assets/oauth-outlook-smptconfig.png)
 
 이제 OAuth 구성 요소를 활성화합니다. 다음을 통해 이 작업을 수행할 수 있습니다.
 

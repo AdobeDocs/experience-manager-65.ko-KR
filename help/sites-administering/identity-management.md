@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1226'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 * [AEM Communities](/help/communities/overview.md)사이트 방문자가 커뮤니티에 콘텐츠를 게시하려면 로그인해야 합니다.
 * [폐쇄된 사용자 그룹](/help/sites-administering/cug.md)
 
-   웹 사이트(또는 웹 사이트 섹션)에 대한 액세스를 특정 방문자로 제한해야 할 수 있습니다.
+  웹 사이트(또는 웹 사이트 섹션)에 대한 액세스를 특정 방문자로 제한해야 할 수 있습니다.
 
 * [개인화](/help/sites-administering/personalization.md) 방문자가 웹 사이트에 액세스하는 방법의 특정 측면을 구성할 수 있습니다.
 
@@ -33,15 +33,15 @@ ht-degree: 2%
 
 * 웹 사이트에서 자가 등록
 
-   A [커뮤니티 사이트](/help/communities/sites-console.md) 방문자가 자신의 Facebook 또는 Twitter 계정으로 자가 등록하거나 로그인할 수 있도록 를 구성할 수 있습니다.
+  A [커뮤니티 사이트](/help/communities/sites-console.md) 방문자가 자신의 Facebook 또는 Twitter 계정으로 자가 등록하거나 로그인할 수 있도록 를 구성할 수 있습니다.
 
 * 웹 사이트에 등록 요청
 
-   폐쇄된 사용자 그룹의 경우 방문자가 등록을 요청할 수 있도록 허용하지만 워크플로우를 통해 인증을 적용합니다.
+  폐쇄된 사용자 그룹의 경우 방문자가 등록을 요청할 수 있도록 허용하지만 워크플로우를 통해 인증을 적용합니다.
 
 * 작성 환경에서 각 계정 등록
 
-   프로필의 수가 적어 권한 부여가 필요한 경우 각 프로필을 직접 등록할 수 있습니다.
+  프로필의 수가 적어 권한 부여가 필요한 경우 각 프로필을 직접 등록할 수 있습니다.
 
 방문자가 등록할 수 있도록 하기 위해 일련의 구성 요소와 양식을 사용하여 필요한 식별 정보를 수집한 다음 추가(종종 선택 사항) 프로필 정보를 수집할 수 있습니다. 등록하면 제출한 세부 사항을 확인하고 업데이트할 수도 있습니다.
 
@@ -106,7 +106,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 1. 누르기 **control-alt-C** 를 클릭하여 클라이언트 컨텍스트를 엽니다.
 1. Client Context의 왼쪽 상단 모서리에서 **프로필 로드** 단추를 클릭합니다.
 
-   ![](do-not-localize/loadprofile.png)
+   ![프로필 로드 단추](do-not-localize/loadprofile.png)
 
 1. 대화 상자 창의 드롭다운 목록에서 다른 프로필을 선택합니다. 예를 들면 다음과 같습니다. **앨리슨 파커**.
 1. **확인**&#x200B;을 클릭합니다.
@@ -156,11 +156,11 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 * [상태 공급자](#state-providers)
 
-   특정 속성의 두 상태 및 두 상태 간의 전환을 관리하려면 다음을 수행합니다.
+  특정 속성의 두 상태 및 두 상태 간의 전환을 관리하려면 다음을 수행합니다.
 
 * [워크플로](#workflows)
 
-   상태와 관련된 작업을 관리합니다.
+  상태와 관련된 작업을 관리합니다.
 
 여러 상태를 정의할 수 있습니다. 예를 들어 Geometrixx에서 다음과 같은 상태를 정의할 수 있습니다.
 

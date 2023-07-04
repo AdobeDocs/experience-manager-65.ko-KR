@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---
@@ -30,41 +30,41 @@ AEM 6.5에는 사용자 및 그룹에 대한 권한 관리가 도입되었습니
 
 새 UI 기반 권한 관리는 아래와 같이 보안 아래의 권한 카드를 통해 액세스할 수 있습니다.
 
-![](assets/screen_shot_2019-03-17at63333pm.png)
+![권한 관리 UI](assets/screen_shot_2019-03-17at63333pm.png)
 
 새 보기를 사용하면 명시적으로 권한이 부여된 모든 경로에서 특정 주체에 대한 전체 권한 및 제한 사항을 보다 쉽게 볼 수 있습니다. 이렇게 하면 (으)로 이동할 필요가 없습니다.
 
 고급 권한 및 제한 사항을 관리하는 CRXDE입니다. 동일한 보기로 통합되었습니다. 보기의 기본값은 그룹 &quot;everyone&quot;입니다.
 
-![](assets/unu-1.png)
+![&quot;모든 사용자&quot; 그룹 보기](assets/unu-1.png)
 
 사용자가 확인할 주도자 유형을 선택할 수 있는 필터가 있습니다 **사용자**, **그룹**, 또는 **모두**&#x200B;모든 사용자를 검색합니다.**.**
 
-![](assets/image2019-3-20_23-52-51.png)
+![주체 유형 검색](assets/image2019-3-20_23-52-51.png)
 
 ### 주체에 대한 권한 보기 {#viewing-permissions-for-a-principal}
 
 왼쪽의 프레임을 사용하면 아래와 같이 아래로 스크롤하여 주체를 찾거나 선택한 필터를 기반으로 그룹 또는 사용자를 검색할 수 있습니다.
 
-![](assets/doi-1.png)
+![사용자에 대한 권한 보기](assets/doi-1.png)
 
 이름을 클릭하면 오른쪽에 할당된 권한이 표시됩니다. 권한 창에는 구성된 제한 사항과 함께 특정 경로의 액세스 제어 항목 목록이 표시됩니다.
 
-![](assets/trei-1.png)
+![ACL 목록 보기](assets/trei-1.png)
 
 ### 주체에 대한 새 액세스 제어 항목 추가 {#adding-new-access-control-entry-for-a-principal}
 
 ACE 추가 단추를 클릭하여 새 액세스 제어 항목을 추가하여 새 권한을 추가할 수 있습니다.
 
-![](assets/patru.png)
+![주체에 대한 새 ACL 추가](assets/patru.png)
 
 이렇게 하면 아래에 표시된 창이 나타나며, 다음 단계는 권한을 구성해야 하는 경로를 선택하는 것입니다.
 
-![](assets/cinci-1.png)
+![권한 경로 구성](assets/cinci-1.png)
 
 여기에서는 권한을 구성할 경로를 선택합니다 **dam-users**:
 
-![](assets/sase-1.png)
+![dam 사용자에 대한 구성 예](assets/sase-1.png)
 
 경로를 선택하면 워크플로가 이 화면으로 돌아갑니다. 그러면 사용자는 사용 가능한 네임스페이스에서 하나 이상의 권한을 선택할 수 있습니다(예: `jcr`, `rep` 또는 `crx`)을 참조하십시오.
 
@@ -74,17 +74,17 @@ ACE 추가 단추를 클릭하여 새 액세스 제어 항목을 추가하여 �
 >
 >권한 및 설명의 전체 목록은 다음을 참조하십시오. [이 페이지](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![주어진 경로에 대한 검색 권한](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
 
 권한 목록을 선택한 후 사용자는 아래와 같이 권한 유형: 거부 또는 허용 을 선택할 수 있습니다.
 
-![](assets/screen_shot_2019-03-17at63938pm.png) ![](assets/screen_shot_2019-03-17at63947pm.png)
+![권한 선택](assets/screen_shot_2019-03-17at63938pm.png) ![권한 선택](assets/screen_shot_2019-03-17at63947pm.png)
 
 ### 제한 사용 {#using-restrictions}
 
 지정된 경로에 대한 권한 및 권한 유형 목록 외에도 이 화면에서는 아래와 같이 세분화된 액세스 제어에 대한 제한을 추가할 수 있습니다.
 
-![](assets/image2019-3-21_1-4-14.png)
+![제한 추가](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ ACE 추가 단추를 클릭하여 새 액세스 제어 항목을 추가하여 �
 
 제한 유형을 선택하고 값을 입력한 다음 을 눌러 아래와 같이 제한을 추가할 수 있습니다. **+** 아이콘.
 
-![](assets/sapte-1.png) ![](assets/opt-1.png)
+![제한 유형 추가](assets/sapte-1.png) ![제한 유형 추가](assets/opt-1.png)
 
 새 ACE는 아래와 같이 액세스 제어 목록에 반영됩니다. 참고: `jcr:write` 은 다음을 포함하는 집계 권한입니다. `jcr:removeNode` 위에서 추가되었지만, 다음에서 다루는 것처럼 아래에 표시되지 않습니다. `jcr:write`.
 
@@ -110,17 +110,17 @@ ACE 추가 단추를 클릭하여 새 액세스 제어 항목을 추가하여 �
 
 여기에 을(를) 추가합니다. `addChildNodes` 다음에 대한 권한: **dam-users** 지정한 경로에서.
 
-![](assets/image2019-3-21_0-45-35.png)
+![권한 추가](assets/image2019-3-21_0-45-35.png)
 
-변경 사항은 다음을 클릭하여 저장할 수 있습니다. **저장** 오른쪽 상단의 단추를 클릭하면 변경 사항이 **dam-users에 대한 새 권한에 반영됩니다**아래 참조:
+변경 사항은 다음을 클릭하여 저장할 수 있습니다. **저장** 오른쪽 상단의 단추를 클릭하면 변경 사항이 다음에 대한 새 권한에 반영됩니다. **dam-users** 아래와 같이:
 
-![](assets/zece-1.png)
+![변경 내용 저장](assets/zece-1.png)
 
 ### ACE 삭제 {#deleting-aces}
 
 액세스 제어 항목을 삭제하여 특정 경로의 사용자에게 부여된 모든 권한을 제거할 수 있습니다. ACE 옆에 있는 X 아이콘을 사용하여 아래와 같이 삭제할 수 있습니다.
 
-![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
+![ACE 삭제](assets/image2019-3-21_0-53-19.png) ![ACE 삭제](assets/unspe.png)
 
 ### 클래식 UI 권한 조합 {#classic-ui-privilege-combinations}
 
