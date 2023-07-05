@@ -13,12 +13,13 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 14988b55c21131391fdcb033373774ee170f5305
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 48%
+source-wordcount: '2124'
+ht-degree: 47%
 
 ---
+
 
 # Brand Portal에서 AEM Assets 구성 {#configure-integration-65}
 
@@ -103,6 +104,7 @@ Brand Portal을 사용하여 AEM Assets을 구성하려면 AEM Assets 작성자 
 >AEM Assets 작성자 인스턴스는 한 개의 Brand Portal 테넌트로만 구성해야 합니다.
 
 Brand Portal을 사용하여 AEM Assets을 처음 구성하는 경우 나열된 순서로 다음 단계를 수행하십시오.
+
 1. [공개 인증서 받기](#public-certificate)
 1. [서비스 계정(JWT) 연결 만들기](#createnewintegration)
 1. [IMS 계정 구성](#create-ims-account-configuration)
@@ -274,7 +276,7 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
    대화 상자에서 **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 구성이 성공하면 *토큰이 성공적으로 검색되었습니다.*&#x200B;라는 메시지가 나타납니다.
 
-   ![](assets/create-new-integration5.png)
+   ![정상 구성 확인 대화 상자](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
@@ -298,7 +300,7 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 
    다음에서 **[!UICONTROL 서비스 URL]** 필드에 Brand Portal 테넌트 URL을 지정합니다.
 
-   ![](assets/create-cloud-service.png)
+   ![Brand Portal 구성 창](assets/create-cloud-service.png)
 
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 클라우드 구성이 만들어집니다.
 
@@ -312,17 +314,17 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 
 1. **도구** ![도구](assets/do-not-localize/tools.png) 패널에서 **[!UICONTROL 배포]** > **[!UICONTROL 복제]**&#x200B;로 이동합니다.
 
-   ![](assets/test-integration1.png)
+   ![도구 패널](assets/test-integration1.png)
 
 1. 복제 페이지에서 **[!UICONTROL 작성자의 에이전트]**&#x200B;를 클릭합니다.
 
-   ![](assets/test-integration2.png)
+   ![복제 페이지](assets/test-integration2.png)
 
    Brand Portal 테넌트에 대해 생성된 4개의 복제 에이전트를 볼 수 있습니다.
 
    Brand Portal 테넌트의 복제 에이전트를 찾고 복제 에이전트 URL을 클릭합니다.
 
-   ![](assets/test-integration3.png)
+   ![자산 복제 구성](assets/test-integration3.png)
 
    >[!NOTE]
    >
@@ -330,11 +332,11 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 
 1. AEM Assets과 Brand Portal 간의 연결을 확인하려면 **[!UICONTROL 연결 테스트]** 아이콘.
 
-   ![](assets/test-integration4.png)
+   ![에셋 복제 설정 확인](assets/test-integration4.png)
 
    다음과 같은 메시지가 나타납니다. *테스트 패키지가 정상적으로 전달되었습니다.*.
 
-   ![](assets/test-integration5.png)
+   ![테스트 확인 출력](assets/test-integration5.png)
 
 1. 4개의 복제 에이전트 모두에서 테스트 결과를 확인합니다.
 
@@ -362,6 +364,7 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 ## 구성 업그레이드 {#upgrade-integration-65}
 
 나열된 순서로 다음 단계를 수행하여 기존 구성을 Adobe Developer 콘솔로 업그레이드합니다.
+
 1. [실행 중인 작업 확인](#verify-jobs)
 1. [기존 구성 삭제](#delete-existing-configuration)
 1. [구성 만들기](#configure-new-integration-65)
@@ -376,13 +379,13 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 
 1. 복제 페이지에서 **[!UICONTROL 작성자의 에이전트]**&#x200B;를 클릭합니다.
 
-   ![](assets/test-integration2.png)
+   ![에셋용 복제 에이전트](assets/test-integration2.png)
 
 1. Brand Portal 임차인의 복제 에이전트를 찾습니다.
 
    모든 복제 에이전트에 대해 **큐가 유휴 상태**&#x200B;인지, 활성 상태인 게시 작업이 없는지 확인합니다.
 
-   ![](assets/test-integration3.png)
+   ![복제 큐 설정](assets/test-integration3.png)
 
 ### 기존 구성 삭제 {#delete-existing-configuration}
 
@@ -395,15 +398,15 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 
 1. `/etc/replications/agents.author`로 이동하고 Brand Portal 임차인의 4개 복제 에이전트를 모두 삭제합니다.
 
-   ![](assets/delete-replication-agent.png)
+   ![CRXDE의 복제 에이전트](assets/delete-replication-agent.png)
 
 1. 다음으로 이동 `/etc/cloudservices/mediaportal` Brand Portal 클라우드 서비스 구성을 삭제합니다.
 
-   ![](assets/delete-cloud-service.png)
+   ![CRXDE의 복제 에이전트 세부 정보](assets/delete-cloud-service.png)
 
 1. `/home/users/mac`로 이동하고 Brand Portal 임차인의 **MAC 사용자**&#x200B;를 삭제합니다.
 
-   ![](assets/delete-mac-user.png)
+   ![CRXDE의 복제 에이전트에 대한 자세한 정보](assets/delete-mac-user.png)
 
 
 이제 다음을 수행할 수 있습니다. [구성 만들기](#configure-new-integration-65) AEM 6.5 작성자 인스턴스의 Adobe Developer 콘솔을 통해 액세스합니다.

@@ -11,24 +11,25 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 02afc4eb78acaacc40d3ba1830ccb1e9c3907d0f
+source-git-commit: aaeef8fcc0ed5f205aeb7ab40cc61f60912c9869
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1973'
 ht-degree: 0%
 
 ---
+
 
 # Client Context{#client-context}
 
 >[!NOTE]
 >
->Client Context가 ContextHub로 대체되었습니다. 자세한 내용은 관련 항목 을 참조하십시오. [구성](/help/sites-developing/ch-configuring.md) 및 [개발자](/help/sites-developing/contexthub.md) 문서화입니다.
+>Client Context가 ContextHub로 대체되었습니다. 자세한 내용은 관련 항목 을 참조하십시오. [구성](/help/sites-developing/ch-configuring.md) 및 [개발자](/help/sites-developing/contexthub.md) 설명서를 참조하십시오.
 
 Client Context는 현재 페이지 및 방문자에 대한 특정 정보를 제공하는 메커니즘입니다. 다음을 사용하여 열 수 있습니다. **Ctrl-Alt-c** (windows) 또는 **control-option-c** (Mac):
 
-![](assets/clientcontext_alisonparker.png)
+![Client Context 창의 샘플](assets/clientcontext_alisonparker.png)
 
-두 가지 모두 [정보를 표시하는 게시 및 작성 환경](#propertiesavailableintheclientcontext) 정보:
+게시 및 작성 환경 모두에 다음에 대한 정보가 표시됩니다.
 
 * 방문자. 인스턴스에 따라 특정 정보가 요청되거나 파생됩니다.
 * 페이지 태그 및 현재 방문자가 이러한 태그에 액세스한 횟수(마우스를 특정 태그 위로 이동할 때 표시됨) .
@@ -38,7 +39,7 @@ Client Context는 현재 페이지 및 방문자에 대한 특정 정보를 제�
 
 아이콘(작성자 환경에서만 사용 가능)을 사용하면 클라이언트 컨텍스트의 세부 사항을 구성할 수 있습니다.
 
-![](do-not-localize/clientcontext_icons.png)
+![Client Context 창의 편집, 로드 및 재설정 아이콘](do-not-localize/clientcontext_icons.png)
 
 * **편집**
 다음 작업을 수행할 수 있는 새 페이지가 열립니다. [프로필 속성 편집, 추가 또는 제거](#editingprofiledetails).
@@ -116,6 +117,7 @@ JSONP 저장소는 다른 저장소와 유사하지만 현재 도메인에서 �
 **태그 클라우드** 현재 페이지에 설정된 태그와 사이트를 검색하는 동안 수집된 태그를 표시합니다. 태그 위로 마우스를 이동하면 현재 사용자가 특정 태그가 들어 있는 페이지에 액세스한 횟수가 표시됩니다.
 
 >[!NOTE]
+>
 방문한 페이지에 표시되는 DAM 에셋에 설정된 태그는 계산되지 않습니다.
 
 **테크노그래픽스 저장소** 이 구성 요소는 설치에 따라 다릅니다.
@@ -127,6 +129,7 @@ JSONP 저장소는 다른 저장소와 유사하지만 현재 도메인에서 �
 자세한 내용은 [Client Context 관련 세부 사항](/help/sites-developing/client-context.md).
 
 >[!NOTE]
+>
 페이지 데이터는 더 이상 클라이언트 컨텍스트에 기본 구성 요소로 포함되어 있지 않습니다. 필요한 경우 클라이언트 컨텍스트를 편집하고 **범용 저장소 속성** 구성 요소를 선택한 다음, 구성 요소를 구성하여 **저장** 다음으로: `pagedata`.
 
 ## Client Context 프로필 변경 {#changing-the-client-context-profile}
@@ -149,11 +152,11 @@ Client Context를 사용하면 대화식으로 세부 사항을 변경할 수 �
 
 1. Load Profile 아이콘을 클릭합니다.
 
-   ![](do-not-localize/clientcontext_loadprofile.png)
+   ![Client Context의 프로필 로드 아이콘](do-not-localize/clientcontext_loadprofile.png)
 
 1. 대화 상자가 열리고 여기서 로드할 프로필을 선택할 수 있습니다.
 
-   ![](assets/clientcontext_profileloader.png)
+   ![프로필을 선택하는 드롭다운을 표시하는 프로필 로더 대화 상자](assets/clientcontext_profileloader.png)
 
 1. 클릭 **확인** 로드합니다.
 
@@ -163,7 +166,7 @@ Client Context를 사용하면 대화식으로 세부 사항을 변경할 수 �
 
 1. 현재 사용자를 나타내는 아이콘을 두 번 클릭합니다. 선택기가 열리고 화살표를 사용하여 탐색하고 사용 가능한 프로필을 확인합니다.
 
-   ![](assets/clientcontext_profileselector.png)
+   ![사용자 선택기](assets/clientcontext_profileselector.png)
 
 1. 로드할 프로필을 클릭합니다. 세부 정보가 로드되면 선택기 외부를 클릭하여 닫습니다.
 
@@ -171,13 +174,13 @@ Client Context를 사용하면 대화식으로 세부 사항을 변경할 수 �
 
 1. 재설정 아이콘을 사용하여 Client Context의 프로필을 현재 사용자의 프로필로 반환합니다.
 
-   ![](do-not-localize/clientcontext_resetprofile.png)
+   ![재설정 아이콘](do-not-localize/clientcontext_resetprofile.png)
 
 ### 브라우저 플랫폼 변경 {#changing-the-browser-platform}
 
 1. 브라우저 플랫폼을 나타내는 아이콘을 두 번 클릭합니다. 선택기가 열리고 화살표를 사용하여 사용 가능한 플랫폼/브라우저를 탐색하고 확인합니다.
 
-   ![](assets/clientcontext_browserplatform.png)
+   ![브라우저 플랫폼 선택기](assets/clientcontext_browserplatform.png)
 
 1. 로드할 플랫폼 브라우저를 클릭합니다. 세부 정보가 로드되면 선택기 외부를 클릭하여 닫습니다.
 
@@ -185,7 +188,7 @@ Client Context를 사용하면 대화식으로 세부 사항을 변경할 수 �
 
 1. 지리적 위치 아이콘을 두 번 클릭합니다. 확장된 맵이 열리고 여기서 마커를 새 위치로 드래그할 수 있습니다.
 
-   ![](assets/clientcontext_geomocationrelocate.png)
+   ![지리적 위치 세부 정보](assets/clientcontext_geomocationrelocate.png)
 
 1. 닫으려면 맵 바깥쪽을 클릭합니다.
 
@@ -193,7 +196,7 @@ Client Context를 사용하면 대화식으로 세부 사항을 변경할 수 �
 
 1. Client Context의 Tag Cloud 섹션을 두 번 클릭합니다. 대화 상자가 열리고 여기서 태그를 선택할 수 있습니다.
 
-   ![](assets/clientcontext_tagselection.png)
+   ![태그 클라우드 대화 상자](assets/clientcontext_tagselection.png)
 
 1. 확인을 눌러 Client Context로 로드합니다.
 
@@ -205,13 +208,13 @@ Client Context를 사용하면 대화식으로 세부 사항을 변경할 수 �
 
 클라이언트 컨텍스트를 편집하여 특정 속성의 값을 설정(또는 재설정)할 수 있습니다. 이를 통해 특정 시나리오를 테스트할 수 있습니다(특히 [세분화](/help/sites-administering/campaign-segmentation.md) 및 [캠페인](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
-![](assets/clientcontext_alisonparker_edit.png)
+![Client Context 편집](assets/clientcontext_alisonparker_edit.png)
 
 ### 속성 구성 요소 추가 {#adding-a-property-component}
 
 을(를) 연 후 **ClientContext 디자인 페이지**, 다음과 같은 작업을 수행할 수도 있습니다 **추가** 사용 가능한 구성 요소를 사용하는 완전히 새로운 속성(구성 요소는 사이드 킥 또는 의 **새 구성 요소 삽입** 을 두 번 클릭한 후 열리는 대화 상자 **여기에 구성 요소 또는 자산을 끌어 놓으십시오.** box):
 
-![](assets/clientcontext_alisonparker_new.png)
+![Client Context 창에 속성 추가](assets/clientcontext_alisonparker_new.png)
 
 ### 속성 구성 요소 제거 {#removing-a-property-component}
 
@@ -231,11 +234,11 @@ JSONP 저장소 구성 요소를 Client Context에 추가하고 이를 사용하
 1. Client Context를 열려면 Ctrl-Alt-c(windows) 또는 control-option-c(Mac)를 누릅니다.
 1. Client Context 상단에 있는 편집 아이콘을 클릭하여 Client Context Designer를 엽니다.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![링크 아이콘](do-not-localize/chlimage_1.png)
 
 1. JSONP 저장소 구성 요소를 Client Context로 드래그합니다.
 
-   ![](assets/chlimage_1-4.jpeg)
+   ![JSONP 저장소 구성 요소를 Client Context로 드래그 앤 드롭](assets/chlimage_1-4.jpeg)
 
 1. 구성 요소를 두 번 클릭하여 편집 대화 상자를 엽니다.
 1. JSONP 서비스 URL 상자에 다음 URL을 입력한 다음 저장소 가져오기를 클릭합니다.
@@ -244,12 +247,12 @@ JSONP 저장소 구성 요소를 Client Context에 추가하고 이를 사용하
 
    구성 요소는 JSONP 서비스를 호출하고 반환된 데이터에 포함된 모든 속성을 나열합니다. 목록에 있는 속성은 Client Context에서 사용할 수 있는 속성입니다.
 
-   ![](assets/chlimage_1-40.png)
+   ![JSONP 서비스 속성](assets/chlimage_1-40.png)
 
 1. 확인을 클릭합니다.
 1. Geometrixx Outdoors 홈 페이지로 돌아가서 페이지를 새로 고칩니다. 이제 Client Context에 JSONP 저장소 구성 요소의 정보가 포함됩니다.
 
-   ![](assets/chlimage_1-41.png)
+   ![데이터로 채워진 JSONP 구성 요소의 예](assets/chlimage_1-41.png)
 
 ### 세그먼트 만들기 {#create-the-segment}
 
@@ -270,7 +273,7 @@ JSONP 저장소 구성 요소를 사용하여 만든 세션 저장소의 데이�
 1. 겨울 세그먼트를 마우스 오른쪽 버튼으로 클릭하고 열기 를 클릭합니다.
 1. 일반 저장소 속성을 기본 AND 컨테이너로 드래그합니다.
 
-   ![](assets/chlimage_1-5.jpeg)
+   ![세그먼트 편집기에 구성 요소 추가](assets/chlimage_1-5.jpeg)
 
 1. 구성 요소를 두 번 클릭하여 편집 대화 상자를 열고 다음 속성 값을 지정한 다음 확인을 클릭합니다.
 

@@ -9,12 +9,13 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '961'
 ht-degree: 4%
 
 ---
+
 
 # 구성원 및 그룹 관리 콘솔 {#members-groups-management-consoles}
 
@@ -47,7 +48,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 >
 >다음과 같은 경우에는 구성원 콘솔을 사용할 수 없습니다. [터널 업무](deploy-communities.md#tunnel-service-on-author) 이(가) 활성화되지 않았습니다.
 
-![member-console1](assets/member-console1.png)
+![구성원 콘솔](assets/member-console1.png)
 
 ### 검색 {#search-features}
 
@@ -56,7 +57,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 ![검색 사이드 패널 아이콘](assets/leftpanel-icon.png)
 
 
-![member-console2](assets/member-console2.png)
+![구성원 콘솔에 대한 필터 옵션](assets/member-console2.png)
 
 왼쪽의 검색 아이콘을 선택합니다. `Members` 머리글 : 검색 사이드 패널이 닫혀 있는 것을 전환합니다.
 
@@ -76,7 +77,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
 선택 `Create Member` 게시 환경에서 사용자를 만듭니다.
 
-![create-member1](assets/create-member1.png)
+![새 멤버 생성 창](assets/create-member1.png)
 
 ### 일반 - 멤버 세부 정보 {#general-member-details}
 
@@ -150,7 +151,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
 참조: [채점 및 배지](implementing-scoring.md).
 
-![create-member2](assets/create-member2.png)
+![멤버십 설정 편집 창](assets/create-member2.png)
 
 * **[!UICONTROL 배지 추가]**
    * 다음에서 선택하려면 입력을 시작합니다. [사용 가능한 배지](badges.md). 배지를 선택한 후에는 각 사이트 또는 배지가 멤버의 아바타와 함께 표시되어야 하는 모든 사이트를 선택합니다.
@@ -173,7 +174,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
 선택 `Add Group` 게시 환경에서 그룹을 만듭니다.
 
-![group-console1](assets/group-console1.png)
+![새 그룹 만들기 창](assets/group-console1.png)
 
 새 게시측 구성원 그룹을 만드는 데 필요한 필드는 다음과 같습니다.
 

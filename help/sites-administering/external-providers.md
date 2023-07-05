@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ec4f24528089fe3de639b974ff4ab6f8807fc7fc
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 0%
+source-wordcount: '448'
+ht-degree: 1%
 
 ---
+
 
 # 외부 공급자의 Analytics {#analytics-with-external-providers}
 
@@ -70,15 +71,15 @@ _gaq.push(['_trackPageview']);
 1. 왼쪽 창에서 를 확장합니다. **Cloud Services 구성**.
 1. 두 번 클릭 **범용 Analytics 코드 조각** 페이지를 열려면 다음을 수행하십시오.
 
-   ![](assets/analytics_genericoverview.png)
+   ![범용 Analytics 코드 조각](assets/analytics_genericoverview.png)
 
 1. 대화 상자를 사용하여 새 구성을 추가하려면 +를 클릭합니다. 최소한 다음과 같이 google analytics와 같은 이름을 할당합니다.
 
-   ![](assets/analytics_addconfig.png)
+   ![구성 만들기](assets/analytics_addconfig.png)
 
 1. 클릭 **만들기**, 코드 조각 대화 상자가 즉시 열립니다. 해당 javascript 코드 조각을 필드에 붙여 넣으십시오.
 
-   ![](assets/analytics_snippet.png)
+   ![구성 요소 편집](assets/analytics_snippet.png)
 
 1. 클릭 **확인** 저장.
 
@@ -90,12 +91,12 @@ _gaq.push(['_trackPageview']);
 1. 를 엽니다. **페이지 속성** 사이드 킥에서 **Cloud Services** 탭.
 1. 클릭 **서비스 추가**&#x200B;필요한 서비스를 선택합니다. 예를 들면 다음과 같습니다. **범용 Analytics 코드 조각**:
 
-   ![](assets/analytics_selectservice.png)
+   ![클라우드 서비스 추가](assets/analytics_selectservice.png)
 
 1. 클릭 **확인** 저장.
 1. (으)로 반환됩니다. **Cloud Services** 탭. 다음 **범용 Analytics 코드 조각** 은(는) 이제 메시지와 함께 나열됩니다. `Configuration reference missing`. 드롭다운 목록을 사용하여 특정 서비스 인스턴스를 선택합니다(예: google-analytics).
 
-   ![](assets/analytics_selectspecificservice.png)
+   ![클라우드 서비스 구성 추가 중](assets/analytics_selectspecificservice.png)
 
 1. 클릭 **확인** 저장.
 

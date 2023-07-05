@@ -9,12 +9,13 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: 3f48e059ec8b0b255caf7d29749930e0534a37f7
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1081'
 ht-degree: 1%
 
 ---
+
 
 # 이메일 템플릿에 대한 우수 사례 {#best-practices-for-email-templates}
 
@@ -141,7 +142,7 @@ AEM에는 캠페인 뉴스레터를 생성할 수 있는 몇 가지 템플릿과
 
 모두 이(가) 있음 **머리글**, a **꼬리말**, 및 **본문** 섹션. 본문 섹션 아래에서 각 템플릿은 **열 디자인** (1열, 2열 또는 3열)
 
-![](assets/chlimage_1-69.png)
+![가능한 뉴스레터의 변형](assets/chlimage_1-69.png)
 
 ### 구성 요소 {#components}
 

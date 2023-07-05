@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1770'
 ht-degree: 1%
 
 ---
+
 
 # 이메일 마케팅{#e-mail-marketing}
 
@@ -56,13 +57,13 @@ ht-degree: 1%
 
 1. 아이콘을 사용하여 목록 보기를 선택합니다.
 
-   ![목록 보기](do-not-localize/mcm_icon_listview-1.png)
+   ![목록 보기 아이콘](do-not-localize/mcm_icon_listview-1.png)
 
 1. 클릭 **새로 만들기...**
 
    다음을 지정할 수 있습니다. **제목**, **이름** 생성할 경험 유형(이 경우 뉴스레터)입니다.
 
-   ![mcm_createnewsleter](assets/mcm_createnewsletter.png)
+   ![경험 만들기 대화 상자](assets/mcm_createnewsletter.png)
 
 1. **만들기**&#x200B;를 클릭합니다.
 
@@ -70,7 +71,7 @@ ht-degree: 1%
 
    다음 **기본 수신자 목록** 뉴스레터의 터치포인트를 형성하므로 필수 필드입니다( 참조). [목록 작업](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) 목록)에 대한 자세한 내용을 참조하십시오.
 
-   ![mcm_newsletterdialog](assets/mcm_newnewsletterdialog.png)
+   ![페이지 속성 대화 상자](assets/mcm_newnewsletterdialog.png)
 
    * **보낸 사람 이름**
 뉴스레터 발송자로 표시되는 이름입니다.
@@ -110,7 +111,7 @@ AEM 구성 요소에서처럼 뉴스레터에 다이내믹 콘텐츠를 포함�
    >
    >변수를 사용하여 뉴스레터를 개인화할 수 있습니다. Geometrixx 뉴스레터에서 텍스트 구성 요소에서 변수를 사용할 수 있습니다. 변수의 값은 사용자 프로필의 정보에서 상속됩니다.
 
-   ![mcm_newsletter_content](assets/mcm_newsletter_content.png)
+   ![뉴스레터 콘텐츠 편집](assets/mcm_newsletter_content.png)
 
 1. 변수를 삽입하려면 목록에서 변수를 선택하고 **삽입**. 변수는 프로필에서 채워집니다.
 
@@ -128,13 +129,13 @@ Geometrixx의 뉴스레터 텍스트 구성 요소에 사전 정의된 변수를
 
 1. 변수를 표시할 위치에 커서를 놓고 드롭다운 목록에서 변수를 선택한 다음 를 클릭합니다 **삽입**. 필요한 수만큼 변수에 대해 이 작업을 수행하고 을 클릭합니다. **확인**.
 
-   ![mcm_newsletter_variables](assets/mcm_newsletter_variables.png)
+   ![변수 추가](assets/mcm_newsletter_variables.png)
 
 1. 전송 시 변수가 표시되는 방식을 시뮬레이션하려면 Ctrl+Alt+c를 눌러 클라이언트 컨텍스트를 열고 을 선택합니다 **로드**. 목록에서 로드할 프로필을 가진 사용자를 선택하고 을(를) 클릭합니다 **확인**.
 
    로드한 프로필의 정보가 변수를 채웠습니다.
 
-   ![mc_newsletter_testvariables](assets/mc_newsletter_testvariables.png)
+   ![변수 테스트](assets/mc_newsletter_testvariables.png)
 
 ## 다른 이메일 클라이언트의 뉴스레터 테스트 {#testing-newsletters-in-different-e-mail-clients}
 
@@ -161,11 +162,11 @@ Geometrixx의 뉴스레터 텍스트 구성 요소에 사전 정의된 변수를
 
 1. 상단 표시줄에서 이메일 클라이언트를 클릭하여 해당 클라이언트의 뉴스레터 모양을 확인합니다.
 
-   ![chlimage_1-119](assets/chlimage_1-119.png)
+   ![이메일 클라이언트 전환](assets/chlimage_1-119.png)
 
 1. 보려는 추가 이메일 클라이언트에 대해 이 단계를 반복합니다.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+   ![이메일 클라이언트 변경](assets/chlimage_1-120.png)
 
 ## 뉴스레터 설정 사용자 지정 {#customizing-newsletter-settings}
 
@@ -178,11 +179,11 @@ Geometrixx의 뉴스레터 텍스트 구성 요소에 사전 정의된 변수를
 
 1. MCM에서 설정을 사용자 지정할 뉴스레터를 엽니다.
 
-   ![mcm_newsletter_open](assets/mcm_newsletter_open.png)
+   ![뉴스레터 열기](assets/mcm_newsletter_open.png)
 
 1. 뉴스레터 상단에서 **설정**.
 
-   ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
+   ![뉴스레터 설정 편집](assets/mcm_newsletter_settings.png)
 1. 다음을 입력합니다. **출처:** 이메일 주소
 
 1. 수정 **제목** 필요한 경우 이메일.
@@ -213,7 +214,7 @@ Geometrixx의 뉴스레터 텍스트 구성 요소에 사전 정의된 변수를
 
 1. 뉴스레터 상단에서 **테스트** 보내기 전에 테스트합니다.
 
-   ![mcm_newsletter_testsettings](assets/mcm_newsletter_testsettings.png)
+   ![뉴스레터 테스트 설정](assets/mcm_newsletter_testsettings.png)
 
 1. 뉴스레터를 전송할 테스트 메일 주소를 입력하고 **보내기**. 프로파일을 변경하려면 클라이언트 컨텍스트에서 다른 프로파일을 로드합니다. 이렇게 하려면 Ctrl+Alt+C를 누르고 프로파일 로드 및 로드를 선택합니다.
 
@@ -253,11 +254,11 @@ Geometrixx의 뉴스레터 텍스트 구성 요소에 사전 정의된 변수를
 
 1. 받는 사람 목록에서 뉴스레터를 받을 목록을 선택하고 **다음**.
 
-   ![mcm_newslettersend](assets/mcm_newslettersend.png)
+   ![뉴스레터 보내기](assets/mcm_newslettersend.png)
 
 1. 설치 완료가 확인되었습니다. 클릭 **보내기** 뉴스레터를 실제로 전송합니다.
 
-   ![mcm_newslettersendconfirm](assets/mcm_newslettersendconfirm.png)
+   ![뉴스레터 전송 확인](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
@@ -277,15 +278,15 @@ Geometrixx의 뉴스레터 텍스트 구성 요소에 사전 정의된 변수를
 
 1. 다음에서 **도구** 메뉴, 선택 **뉴스레터 전송**. 다음 **뉴스레터 전송** 창이 열립니다.
 
-   ![mcm_newslettersendfromlist](assets/mcm_newslettersendfromlist.png)
+   ![Newletter 콘솔](assets/mcm_newslettersendfromlist.png)
 
 1. 다음에서 **뉴스레터** 필드에서 전송할 뉴스레터를 선택하고 **다음**.
 
-   ![mcm_newslettersenddialog](assets/mcm_newslettersenddialog.png)
+   ![뉴스레터 전송 대화 상자](assets/mcm_newslettersenddialog.png)
 
 1. 설치 완료가 확인되었습니다. 클릭 **보내기** 선택한 뉴스레터를 지정된 잠재 고객 목록으로 보냅니다.
 
-   ![mcm_newslettersenddialog_confirmation](assets/mcm_newslettersenddialog_confirmation.png)
+   ![전송 확인](assets/mcm_newslettersenddialog_confirmation.png)
 
    선택한 수신자에게 뉴스레터가 전송됩니다.
 
@@ -299,6 +300,6 @@ Geometrixx의 뉴스레터 텍스트 구성 요소에 사전 정의된 변수를
 
 1. 클릭 **웹 사이트** Geometrixx으로 이동 **도구 모음** 열어봐
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+   ![구독 샘플](assets/chlimage_1-121.png)
 
 1. Geometrixx 뉴스레터 **등록** 필드에 전자 메일 주소를 입력하고 **등록**. 이제 뉴스레터를 구독합니다.

@@ -10,12 +10,13 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1612'
 ht-degree: 1%
 
 ---
+
 
 # Adobe Analytics를 위한 링크 추적 구성{#configuring-link-tracking-for-adobe-analytics}
 
@@ -28,7 +29,7 @@ ht-degree: 1%
 1. 사용 **구성 표시**&#x200B;필요한 Adobe Analytics 프레임워크를 엽니다.
 1. 확장 **링크 추적 구성** 섹션 및 필요에 따라 구성(이 페이지에서는 자세한 내용을 제공합니다.)
 
-   ![aa-8](assets/aa-08.png)
+   ![Analytics 프레임워크](assets/aa-08.png)
 
 ## 파일 다운로드 추적 {#tracking-file-downloads}
 
@@ -80,19 +81,19 @@ Adobe Analytics 프레임워크에 대한 외부 링크를 추적하려면 다�
 * **외부 필터**
 (선택 사항) 링크 대상의 외부 URL과 일치하는 필터를 정의합니다. 링크 대상이 필터와 일치하면 링크가 추적됩니다. 외부 필터는 페이지에서 일부 외부 링크만 추적하는 데 유용합니다.
 
-   추적할 외부 링크를 지정하려면 링크 대상의 URL의 전체 또는 일부를 입력합니다. 여러 필터는 쉼표로 구분하십시오. 문자열 리터럴을 작은 따옴표로 묶습니다. 값 없음(기본값) `''`를 두 개의 작은 따옴표로 묶으면 모든 외부 링크가 추적됩니다.
+  추적할 외부 링크를 지정하려면 링크 대상의 URL의 전체 또는 일부를 입력합니다. 여러 필터는 쉼표로 구분하십시오. 문자열 리터럴을 작은 따옴표로 묶습니다. 값 없음(기본값) `''`를 두 개의 작은 따옴표로 묶으면 모든 외부 링크가 추적됩니다.
 
 * **내부 필터**
 내부 링크의 URL과 일치하는 필터를 정의합니다. 링크가 이 필터와 일치하는 URL을 타겟팅하면 링크가 추적되지 않습니다. 기본값은 현재 창 주소에 대한 URL의 호스트 이름을 반환하는 javascript 명령입니다.
 
-   추적되지 않는 내부 링크를 지정하려면 링크 대상의 내부 URL의 전부 또는 일부를 입력합니다. 여러 필터는 쉼표로 구분하십시오. 문자열 리터럴을 작은 따옴표로 묶습니다.
+  추적되지 않는 내부 링크를 지정하려면 링크 대상의 내부 URL의 전부 또는 일부를 입력합니다. 여러 필터는 쉼표로 구분하십시오. 문자열 리터럴을 작은 따옴표로 묶습니다.
 
-   기본값은 입니다.`'javascript:,'+window.location.hostname`
+  기본값은 입니다. `'javascript:,'+window.location.hostname`
 
 * **쿼리 문자열 남기기**
 내부 및 외부 필터와의 일치 항목을 평가할 때 URL 매개 변수를 포함합니다.
 
-   외부 및 내부 필터에 대해 링크 대상 URL을 평가할 때 URL 매개 변수를 포함할 수 있도록 활성화합니다.
+  외부 및 내부 필터에 대해 링크 대상 URL을 평가할 때 URL 매개 변수를 포함할 수 있도록 활성화합니다.
 
 외부 링크 추적 속성은 `analytics.sitecatalyst.js` 페이지에 대해 생성된 파일입니다. 다음 예제 코드는 다음 구성으로 외부 링크 추적을 활성화하는 프레임워크와 연결된 페이지에 대해 생성됩니다.
 
@@ -123,14 +124,14 @@ s.linkLeaveQueryString= false;
 * **링크 추적 이벤트**
 링크 클릭 수를 계산하는 데 사용할 Adobe Analytics 이벤트 변수를 입력합니다.
 
-   여러 변수 이름은 쉼표로 구분하십시오.
+  여러 변수 이름은 쉼표로 구분하십시오.
 
-   기본값 `None` 은(는) 이벤트 추적을 발생시키지 않습니다.
+  기본값 `None` 은(는) 이벤트 추적을 발생시키지 않습니다.
 
 * **링크 추적 변수**
 링크를 클릭할 때 Adobe Analytics으로 보낼 Adobe Analytics 변수를 입력합니다. 여러 변수 이름은 쉼표로 구분하십시오.
 
-   기본값 `None` 은(는) 변수 데이터를 전송하지 않습니다.
+  기본값 `None` 은(는) 변수 데이터를 전송하지 않습니다.
 
 전송할 이벤트 및 변수를 지정하면 구성이 `analytics.sitecatalyst.js` 페이지에 대해 생성된 파일입니다. 다음 예제 코드는 프레임워크가 `event10` 이벤트 및 `prop4` 속성:
 
@@ -148,7 +149,7 @@ Adobe Analytics 통합의 링크 추적 동작을 살펴보려면 다음 절차�
 다음 예에서는 추적 및 디버거의 컨텍스트에서 매핑이 작동하는 방식을 보여 줍니다.
 
 1. 웹 페이지와 연결된 프레임워크를 엽니다.
-1. 드래그 **페이지** 구성 요소를 프레임워크의 매핑 영역에 추가합니다. 다음 **페이지** 구성 요소가 다음에 속함 **일반** 사이드 킥의 구성 요소 그룹입니다.
+1. 드래그 **페이지** 구성 요소를 프레임워크의 매핑 영역에 추가합니다. 다음 **페이지** 구성 요소가 다음에 속함 **일반** Sidekick의 구성 요소 그룹
 
    >[!NOTE]
    >
@@ -178,7 +179,7 @@ Adobe Analytics 통합의 링크 추적 동작을 살펴보려면 다음 절차�
  </tbody>
 </table>
 
-1. 검색 구성 요소를 프레임워크의 매핑 영역으로 드래그합니다. 검색 구성 요소는 사이드 킥의 일반 구성 요소 그룹에 속합니다. 왼쪽 사이드 패널에서 Analytics(SiteCatalyst) 변수를 끌어 다음 표에 따라 매핑을 구성합니다.
+1. 검색 구성 요소를 프레임워크의 매핑 영역으로 드래그합니다. 검색 구성 요소는 Sidekick의 일반 구성 요소 그룹에 속합니다. 왼쪽 사이드 패널에서 Analytics(SiteCatalyst) 변수를 끌어 다음 표에 따라 매핑을 구성합니다.
 
 <table>
  <tbody>
@@ -236,7 +237,7 @@ Adobe Analytics 통합의 링크 추적 동작을 살펴보려면 다음 절차�
 
 Adobe Marketing Cloud Debugger에서 볼 때 수행된 호출은 다음과 같이 표시됩니다.
 
-![aa-leavequerysearch-blank](assets/aa-leavequerysearch-blank.png)
+![Adobe Marketing Cloud 디버거](assets/aa-leavequerysearch-blank.png)
 
 >[!NOTE]
 >
@@ -250,7 +251,7 @@ Adobe Marketing Cloud Debugger에서 볼 때 수행된 호출은 다음과 같�
 
 Adobe Marketing Cloud Debugger에 표시되는 호출 세부 사항은 다음 예와 유사합니다.
 
-![aa-leavequerysearch-active](assets/aa-leavequerysearch-active.png)
+![Adobe Marketing Cloud Debugger 다시 시작](assets/aa-leavequerysearch-active.png)
 
 >[!NOTE]
 >
@@ -323,7 +324,7 @@ Adobe Marketing Cloud Debugger에 표시되는 호출 세부 사항은 다음 �
 
 1. 하이퍼텍스트로 사용할 텍스트를 선택하고 하이퍼링크 단추를 클릭합니다.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![링크 아이콘](do-not-localize/chlimage_1.png)
 
 1. 링크 대상 상자에 대상 URL을 추가한 다음 링크 추적 영역을 확장합니다.
 
@@ -333,7 +334,7 @@ Adobe Marketing Cloud Debugger에 표시되는 호출 세부 사항은 다음 �
    >
    >RTE에서 유효한 링크를 선택한 경우에만 활성화됩니다.
 
-   ![aa-](assets/aa-17.png)
+   ![링크 추적 활성화](assets/aa-17.png)
 
 1. 사용 **사용자 지정 링크 추적** Adobe Analytics 프레임워크의 링크 추적 구성을 재정의하고 현재 링크에 대한 링크 추적을 활성화합니다.
 

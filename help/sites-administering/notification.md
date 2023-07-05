@@ -10,12 +10,13 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 93dfac20bbb761abd580a004741ade20dc4ee2fe
 workflow-type: tm+mt
-source-wordcount: '2026'
+source-wordcount: '2068'
 ht-degree: 12%
 
 ---
+
 
 # 이메일 알림 구성{#configuring-email-notification}
 
@@ -54,7 +55,7 @@ AEM에서 이메일을 보낼 수 있도록 **일별 CQ 메일 서비스** 을(�
 
 웹 콘솔에서 구성은 다음과 같습니다.
 
-![chlimage_1-276](assets/chlimage_1-276.png)
+![일별 CQ 메일 서비스 OSGi 구성 창](assets/chlimage_1-276.png)
 
 ## 이메일 알림 채널 구성 {#configuring-the-email-notification-channel}
 
@@ -88,7 +89,7 @@ AEM에서 이메일을 보낼 수 있도록 **일별 CQ 메일 서비스** 을(�
 
 기본 구성은 웹 콘솔에서 다음과 같이 표시됩니다.
 
-![chlimage_1-277](assets/chlimage_1-277.png)
+![일별 CQ 워크플로우 이메일 알림 서비스 구성 창](assets/chlimage_1-277.png)
 
 ### 페이지 알림용 이메일 템플릿 {#email-templates-for-page-notification}
 
@@ -233,7 +234,7 @@ subject=<text_1>
 
 * `${payload.type}`, 페이로드 유형
 * `${payload.path}`, 페이로드 경로
-* `${host.prefix}`, 호스트 접두사(예: http://localhost:4502)
+* `${host.prefix}`, 호스트 접두사(예: `http://localhost:4502`
 
 ### 새 언어에 대한 이메일 템플릿 추가 {#adding-an-email-template-for-a-new-language}
 
@@ -310,11 +311,11 @@ AEM은 조직의 이메일 요구 사항 보호 준수를 위해 통합 Mailer �
    * 새로 고침 토큰 만료: 절대 안 함
 1. **저장**&#x200B;을 클릭합니다.
 
-<!-- clarify refresh token expiry, currrently not present in the UI -->
+<!-- clarify refresh token expiry, currently not present in the UI -->
 
 구성이 완료되면 설정은 다음과 같이 표시됩니다.
 
-![oauth smtp 공급자](assets/oauth-smtpprov2.png)
+![CQ Mailer SMTP Oauth2 공급자 구성 창](assets/oauth-smtpprov2.png)
 
 이제 OAuth 구성 요소를 활성화합니다. 다음을 통해 이 작업을 수행할 수 있습니다.
 
@@ -324,7 +325,7 @@ AEM은 조직의 이메일 요구 사항 보호 준수를 위해 통합 Mailer �
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. 구성 요소 왼쪽에 있는 재생 아이콘을 누릅니다
 
-   ![구성 요소](assets/oauth-components-play.png)
+   ![OAuthCodeGenerateServlet 및 OAuthCodeAccessTokenGenerator를 보여 주는 구성 요소 목록](assets/oauth-components-play.png)
 
 마지막으로 다음 방법으로 구성을 확인합니다.
 
@@ -342,7 +343,7 @@ AEM은 조직의 이메일 요구 사항 보호 준수를 위해 통합 Mailer �
 1. 검색창에서 **Azure Active Directory**&#x200B;를 검색한 다음 결과를 클릭합니다. 또는 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)에서 바로 검색할 수 있습니다.
 1. **앱 등록** - **신규 등록**&#x200B;을 클릭합니다.
 
-   ![Microsoft Outlook 구성](assets/oauth-outlook1.png)
+   ![Microsoft Outlook 구성 시 새 등록 버튼](assets/oauth-outlook1.png)
 
 1. 요구 사항에 따라 정보를 입력한 다음 **등록**&#x200B;을 클릭합니다.
 1. 새로 생성된 앱으로 이동하여 **API 권한**&#x200B;을 선택합니다.
@@ -397,7 +398,7 @@ AEM은 조직의 이메일 요구 사항 보호 준수를 위해 통합 Mailer �
 
 구성이 완료되면 설정은 다음과 같이 표시됩니다.
 
-![AEM 측 구성 보기](assets/oauth-outlook-smptconfig.png)
+![완료된 CQ Mailer SMTP OAuth2 구성](assets/oauth-outlook-smptconfig.png)
 
 이제 OAuth 구성 요소를 활성화합니다. 다음을 통해 이 작업을 수행할 수 있습니다.
 
@@ -407,7 +408,7 @@ AEM은 조직의 이메일 요구 사항 보호 준수를 위해 통합 Mailer �
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. 구성 요소 왼쪽에 있는 재생 아이콘을 누릅니다
 
-![components2](assets/oauth-components-play.png)
+![OAuthCodeGenerateServlet 및 OAuthCodeAccessTokenGenerator가 포함된 구성 요소 목록의 코드 조각](assets/oauth-components-play.png)
 
 마지막으로 다음 방법으로 구성을 확인합니다.
 

@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 1036127ae508ec76c868db5fb67709c104c51123
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1250'
 ht-degree: 2%
 
 ---
+
 
 # ID 관리{#identity-management}
 
@@ -61,11 +62,11 @@ A [양식](/help/sites-authoring/default-components.md#form-component) 를 사�
 예를 들어 사용자는 Geometrixx 페이지를 사용하여 새 프로필을 요청할 수 있습니다
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![등록 양식](assets/registerform.png)
+![샘플 등록 양식](assets/registerform.png)
 
 요청을 제출하면 사용자가 개인 세부 정보를 제공할 수 있는 프로필 페이지가 열립니다.
 
-![profilepage](assets/profilepage.png)
+![샘플 프로필 페이지](assets/profilepage.png)
 
 새 계정도 [사용자 콘솔](/help/sites-administering/security.md).
 
@@ -79,7 +80,7 @@ A [양식](/help/sites-authoring/default-components.md#form-component) 를 사�
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![로그인](assets/login.png)
+![샘플 로그인 페이지](assets/login.png)
 
 ## 로그아웃 {#logging-out}
 
@@ -106,13 +107,13 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 1. 누르기 **control-alt-C** 를 클릭하여 클라이언트 컨텍스트를 엽니다.
 1. Client Context의 왼쪽 상단 모서리에서 **프로필 로드** 단추를 클릭합니다.
 
-   ![프로필 로드 단추](do-not-localize/loadprofile.png)
+   ![프로필 아이콘 로드](do-not-localize/loadprofile.png)
 
 1. 대화 상자 창의 드롭다운 목록에서 다른 프로필을 선택합니다. 예를 들면 다음과 같습니다. **앨리슨 파커**.
 1. **확인**&#x200B;을 클릭합니다.
 1. 다음에 대해 다시 클릭: **내 프로필**. Alison의 세부 사항이 포함된 양식이 업데이트됩니다.
 
-   ![profilealison](assets/profilealison.png)
+   ![Alison의 샘플 프로필](assets/profilealison.png)
 
 1. 이제 다음을 사용할 수 있습니다. **프로필 편집** 또는 **암호 변경** 을 클릭하여 세부 정보를 업데이트합니다.
 
@@ -136,11 +137,11 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
    다음에 프로필을 볼 때 즐겨찾는 색상을 선택할 수 있습니다.
 
-   ![aparkerfavcolor](assets/aparkerfavcolour.png)
+   ![앨리슨 파커가 좋아하는 색상 샘플 필드](assets/aparkerfavcolour.png)
 
    필드는 아래에 저장됩니다. **프로필** 관련 사용자 계정의 섹션:
 
-   ![aparkercrxdelite](assets/aparkercrxdelite.png)
+   ![CRXDE에 있는 앨리슨 파커의 데이터](assets/aparkercrxdelite.png)
 
 ## 프로필 상태 {#profile-states}
 
@@ -188,7 +189,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 프로필은 다음에서 찾을 수 있습니다. `/home/users/geometrixx`:
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![CRXDE에 표시되는 프로필](assets/chlimage_1-138.png)
 
 표준 설치(작성자 또는 게시)에서 모든 사용자는 모든 사용자의 전체 프로필 정보에 대한 읽기 액세스 권한을 갖습니다. 모든 사용자가 &quot;*기본 제공 그룹은 자동으로 모든 기존 사용자 및 그룹을 포함합니다. 구성원 목록을 편집할 수 없습니다.*&quot;.
 
@@ -205,7 +206,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 다음을 사용하여 이 작업을 수행할 수 있습니다. **[액세스 제어](/help/sites-administering/user-group-ac-admin.md#access-right-management)** 탭:
 
-![aclmanager](assets/aclmanager.png)
+![CRXDE에서 ACL 관리](assets/aclmanager.png)
 
 ## 프로필 구성 요소 {#profile-components}
 
@@ -220,22 +221,22 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 기본 설정을 사용하면 구성 요소가 다음과 같이 표시됩니다.
 
-![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
+![암호 확인 대화 상자](assets/dc_profiles_checkedpassword.png)
 
 ### 프로필 아바타 사진 {#profile-avatar-photo}
 
 이 구성 요소는 사용자에게 아바타 사진 파일을 선택하고 업로드하는 메커니즘을 제공합니다.
 
-![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png)
+![아바타 선택기](assets/dc_profiles_avatarphoto.png)
 
 ### 프로필 세부 이름 {#profile-detailed-name}
 
 이 구성 요소를 사용하여 자세한 이름을 입력할 수 있습니다.
 
-![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
+![세부 이름 대화 상자](assets/dc_profiles_detailedname.png)
 
 ### 프로필 성별 {#profile-gender}
 
 이 구성 요소를 사용하여 사용자가 성별을 입력할 수 있습니다.
 
-![dc_profiles_gender](assets/dc_profiles_gender.png)
+![성별 선택기](assets/dc_profiles_gender.png)

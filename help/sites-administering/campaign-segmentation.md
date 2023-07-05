@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8f98d018518f2491f29211552863d3fa005cc0b7
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 18%
+source-wordcount: '1140'
+ht-degree: 17%
 
 ---
+
 
 # 세그먼테이션 구성 {#configuring-segmentation}
 
@@ -34,7 +35,7 @@ AEM을 사용하면 세그먼트, 티저 및 캠페인을 쉽게 만들고 업�
 
 다음 **세그먼트 편집기** 를 사용하면 세그먼트를 쉽게 정의할 수 있습니다.
 
-![](assets/segmenteditor.png)
+![세그먼트 편집기 창](assets/segmenteditor.png)
 
 다음을 수행할 수 있습니다. **편집** 을(를) 지정할 각 세그먼트 **제목**, **설명** 및 **증폭** 요소. 사이드 킥을 사용하여 다음을 추가할 수 있습니다. **및** 및 **또는** 컨테이너를 사용하여 **세그먼트 논리**&#x200B;를 클릭한 다음 필요한 을(를) 추가합니다 **세그먼트 트레이트** 선택 기준을 정의합니다.
 
@@ -130,17 +131,17 @@ AEM을 사용하면 세그먼트, 티저 및 캠페인을 쉽게 만들고 업�
 1. 만들기 [새 페이지](/help/sites-authoring/editing-content.md#creatinganewpage) 사용 **세그먼트** 템플릿.
 1. 새 페이지를 열어 세그먼트 편집기를 확인합니다.
 
-   ![](assets/screen_shot_2012-02-02at101726am.png)
+   ![세그먼트 편집기에서 새 세그먼트를 만드는 첫 번째 단계입니다](assets/screen_shot_2012-02-02at101726am.png)
 
 1. 사이드 킥 또는 컨텍스트 메뉴를 사용합니다(일반적으로 마우스 오른쪽 버튼을 클릭한 다음 선택). **새로 만들기...** 새 구성 요소 삽입 창을 열어 필요한 세그먼트 트레이트를 찾습니다. 그런 다음 로 드래그합니다. **세그먼트 편집기** 기본값으로 나타납니다. **및** 컨테이너.
 1. 새 트레이트를 두 번 클릭하여 특정 매개 변수를 편집합니다(예: 마우스 위치).
 
-   ![](assets/screen_shot_2012-02-02at103135am.png)
+   ![세그먼트 편집기에서 구성 요소 편집](assets/screen_shot_2012-02-02at103135am.png)
 
 1. 클릭 **확인** 정의를 저장하려면:
 1. 다음을 수행할 수 있습니다. **편집** 세그먼트를 정의하는 방법 **제목**, **설명** 및 **[증폭](#boost-factor)** 요소:
 
-   ![](assets/screen_shot_2012-02-02at103547am.png)
+   ![세그먼트 편집기에서 세그먼트 설정 편집](assets/screen_shot_2012-02-02at103547am.png)
 
 1. 필요한 경우 트레이트를 더 추가합니다. 를 사용하여 부울 표현식을 만들 수 있습니다. **AND 컨테이너** 및 **OR 컨테이너** 구성 요소가에 있음 **세그먼트 논리**. 세그먼트 편집기를 사용하여 더 이상 필요하지 않은 트레이트 또는 컨테이너를 삭제하거나 문 내의 새 위치로 드래그할 수 있습니다.
 
@@ -161,7 +162,7 @@ AEM에서 복잡한 세그먼트를 구성할 수 있습니다. 몇 가지 기�
 
 main 연산자는 OR이므로 **OR 컨테이너**. 이 내에 2개의 AND 문이 있습니다. 이러한 각 문에 대해 **AND 컨테이너**&#x200B;를 사용하여 개별 트레이트를 추가할 수 있습니다.
 
-![](assets/screen_shot_2012-02-02at105145am.png)
+![세그먼트 편집기의 AND 및 OR 연산자의 예](assets/screen_shot_2012-02-02at105145am.png)
 
 ## 세그먼트 애플리케이션 테스트 {#testing-the-application-of-a-segment}
 
@@ -174,11 +175,11 @@ main 연산자는 OR이므로 **OR 컨테이너**. 이 내에 2개의 AND 문이
 
 예를 들어 간단한 세그먼트 정의는 사용자의 연령 및 성별을 기반으로 할 수 있습니다. 특정 프로필을 로드하면 세그먼트가 정상적으로 해결되었음을 보여 줍니다.
 
-![](assets/screen_shot_2012-02-02at105926am.png)
+![Client Context 창을 사용하여 AND 세그먼테이션 작업 테스트](assets/screen_shot_2012-02-02at105926am.png)
 
 또는 아님:
 
-![](assets/screen_shot_2012-02-02at110019am.png)
+![Client Context 창을 사용하여 NOT 세그멘테이션 작업 테스트](assets/screen_shot_2012-02-02at110019am.png)
 
 >[!NOTE]
 >
@@ -188,7 +189,7 @@ main 연산자는 OR이므로 **OR 컨테이너**. 이 내에 2개의 AND 문이
 
 티저 단락의 마우스오버에는 적용된 세그먼트가 현재 해결되었는지 여부와 상관없이 현재 티저 인스턴스가 선택된 이유가 표시됩니다.
 
-![](assets/chlimage_1-47.png)
+![세그먼트의 예제 마우스를 위에 놓습니다.](assets/chlimage_1-47.png)
 
 ### 세그먼트 사용 {#using-your-segment}
 

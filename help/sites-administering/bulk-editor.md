@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: feef7362b832f2ddef1902ef2a25d55323b6be26
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1167'
 ht-degree: 1%
 
 ---
+
 
 # 벌크 편집기{#the-bulk-editor}
 
@@ -46,11 +47,11 @@ ht-degree: 1%
 1. 다음 위치로 이동 **지원** 페이지를 만든 다음 **고객 서비스 만족도** 설문 조사.
 1. **편집** 다음 **양식 시작** 단락. 대화 상자에서 **고급** 탭을 확장하고 **작업 구성**&#x200B;을 클릭한 다음 을 클릭합니다 **데이터 보기...**.
 
-   ![](assets/custsatsurvey.png)
+   ![고객 만족도 조사 예](assets/custsatsurvey.png)
 
 1. 벌크 편집기는 사용자 정의가 가능합니다. 그러나 이 예에서 벌크 편집기는 사용자가 컨텐츠를 편집할 수 없고 정보를 스프레드시트로 내보낼 수만 있습니다.
 
-   ![](assets/bulkeditor.png)
+   ![벌크 편집기 콘솔](assets/bulkeditor.png)
 
 ## 벌크 편집기 사용 방법 {#how-to-use-the-bulk-editor}
 
@@ -100,16 +101,16 @@ ht-degree: 1%
 
 예:
 
-![](assets/searchfilter.png)
+![벌크 편집기 필터 옵션](assets/searchfilter.png)
 
 1. 클릭 **검색**. 벌크 편집기(Bulk Editor)에 결과가 표시됩니다.
 위의 예에서 검색 기준을 충족하는 모든 페이지가 반환되고 요청된 열과 함께 표시됩니다.
 
-   ![](assets/chlimage_1-39.png)
+   ![벌크 편집기 결과](assets/chlimage_1-39.png)
 
 1. 셀을 두 번 클릭하여 원하는 대로 변경합니다.
 
-   ![](assets/srchresultedit.png)
+   ![일괄 편집](assets/srchresultedit.png)
 
 1. 클릭 **저장** 변경 사항을 저장하려면 ( **저장** 셀을 편집하면 버튼이 활성화됩니다.)
 
@@ -137,12 +138,12 @@ ht-degree: 1%
    >
    >기본적으로 변경 사항은에 인코딩됩니다. [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (CP-1252라고도 함) UTF-8을 선택하여 변경 사항을 UTF-8로 내보낼 수 있습니다.
 
-   ![](assets/srchrsesultexport.png)
+   ![결과 내보내기](assets/srchrsesultexport.png)
 
 1. 위치를 선택하고 파일을 다운로드할 것인지 확인합니다.
 1. 파일을 다운로드한 후 스프레드시트 프로그램(예: Microsoft Excel)에서 파일을 열 수 있습니다. 스프레드시트 프로그램은 파일을 가져와 스프레드시트 형식으로 변환합니다.
 
-   ![](assets/exportinexcel.png)
+   ![스프레드시트로 결과를 내보냄](assets/exportinexcel.png)
 
 ### 콘텐트 가져오기 {#importing-content}
 

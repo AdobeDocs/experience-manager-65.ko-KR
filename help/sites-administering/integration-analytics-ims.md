@@ -2,12 +2,13 @@
 title: IMS를 사용하여 Adobe Analytics과 통합
 description: IMS를 사용하여 AEM과 Adobe Analytics 통합에 대해 알아보기
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 5789954afea2d42444b6f6f9f185d7926624e7f0
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 66%
+source-wordcount: '1056'
+ht-degree: 65%
 
 ---
+
 
 # IMS를 사용하여 Adobe Analytics과 통합 {#integration-with-adobe-analytics-using-ims}
 
@@ -51,7 +52,7 @@ Analytics Standard API를 통해 Adobe Analytics과 AEM을 통합하려면 Adobe
 1. **새 인증서 만들기**&#x200B;를 활성화한 다음 새 별칭을 입력합니다.
 1. **인증서 만들기**&#x200B;를 사용하여 확인합니다.
 
-   ![](assets/integrate-analytics-io-01.png)
+   ![Adobe IMS 기술 계정 구성 마법사](assets/integrate-analytics-io-01.png)
 
 1. **다운로드**(또는 **공개 키 다운로드**)를 선택하여 [AEM과의 Adobe Analytics 통합에 대해 IMS를 구성](#configuring-ims-for-adobe-analytics-integration-with-aem)할 때 사용할 수 있도록 파일을 로컬 드라이브에 다운로드합니다.
 
@@ -59,7 +60,7 @@ Analytics Standard API를 통해 Adobe Analytics과 AEM을 통합하려면 Adobe
    >
    >[AEM에서 IMS 구성을 완료](#completing-the-ims-configuration-in-aem)할 때 다시 필요하므로 이 구성을 열어 두십시오.
 
-   ![](assets/integrate-analytics-io-02.png)
+   ![Adobe I/O 키를 추가하는 정보 대화 상자](assets/integrate-analytics-io-02.png)
 
 ## AEM과의 Adobe Analytics 통합에 대해 IMS 구성 {#configuring-ims-for-adobe-analytics-integration-with-aem}
 
@@ -76,9 +77,9 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하�
 1. 보유 중인 모든 프로젝트가 표시됩니다. **새 프로젝트 만들기**&#x200B;를 선택합니다. 위치 및 사용량은 다음에 따라 달라집니다.
 
    * 보유 중인 프로젝트가 없는 경우 **새 프로젝트 만들기**는 중앙 하단에 표시됩니다.
-      ![새 프로젝트 만들기 - 첫 번째 프로젝트](assets/integration-analytics-io-02.png)
+     ![새 프로젝트 만들기 - 첫 번째 프로젝트](assets/integration-analytics-io-02.png)
    * 기존 프로젝트가 있는 경우 이들 프로젝트가 나열되며 **새 프로젝트 만들기**는 오른쪽 상단에 표시됩니다.
-      ![새 프로젝트 만들기 - 여러 프로젝트](assets/integration-analytics-io-03.png)
+     ![새 프로젝트 만들기 - 여러 프로젝트](assets/integration-analytics-io-03.png)
 
 
 1. **프로젝트에 추가**&#x200B;를 선택한 다음 **API**&#x200B;를 선택합니다.
@@ -177,7 +178,6 @@ AEM으로 돌아가 Analytics용 통합 프로젝트에서 필요한 값을 추�
    예:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. 구성을 선택합니다.
 1. 도구 모음에서 **상태 확인**&#x200B;을 선택한 다음 **확인**&#x200B;을 선택합니다.
