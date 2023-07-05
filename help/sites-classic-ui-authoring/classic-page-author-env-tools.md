@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '902'
 ht-degree: 8%
 
 ---
@@ -40,11 +40,11 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 및 액세스 [콘솔 도구 모음의 도움말](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), 사이드 킥의 도움말에 액세스할 수도 있습니다( ? 아이콘)을 클릭하여 페이지를 편집합니다.
 
-![](do-not-localize/sidekick-collapsed-2.png)
+![Sidekick 축소됨](do-not-localize/sidekick-collapsed-2.png)
 
 또는 를 사용하여 **도움말** 특정 구성 요소의 편집 대화 상자 버튼. 상황에 맞는 도움말이 표시됩니다.
 
-## 사이드 킥 {#sidekick}
+## Sidekick {#sidekick}
 
 다음 **구성 요소** 사이드 킥의 탭에서는 현재 페이지에 추가할 수 있는 구성 요소를 찾아볼 수 있습니다. 필요한 그룹을 확장한 다음 구성 요소를 페이지의 필요한 위치로 드래그할 수 있습니다.
 
@@ -165,10 +165,10 @@ AEM을 사용하면 현재 작업 중인 페이지에 연결된 페이지를 볼
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-특정 상황에서 Sidekick은 다음을 포함하여 추가 작업을 사용할 수 있습니다.
+특정 상황에서 다음 작업을 포함하여 Sidekick에서 추가 작업을 사용할 수 있습니다.
 
 * [론치](/help/sites-classic-ui-authoring/classic-launches.md)
-* [라이브 카피](/help/sites-administering/msm.md)
+* [Live Copy](/help/sites-administering/msm.md)
 
 * [블루프린트](/help/sites-administering/msm-best-practices.md)
 
@@ -188,9 +188,9 @@ AEM을 사용하면 현재 작업 중인 페이지에 연결된 페이지를 볼
 
 클래식 UI로 페이지를 편집할 때 사이드 킥 하단에 있는 아이콘을 사용하여 액세스할 수 있는 모드는 다양합니다.
 
-![](do-not-localize/chlimage_1-12.png)
+![페이지 모드](do-not-localize/chlimage_1-12.png)
 
-사이드 킥 하단의 아이콘 행은 페이지 작업 모드를 전환하는 데 사용됩니다.
+Sidekick 하단에 있는 아이콘 행은 페이지 작업에 대한 모드를 전환하는 데 사용됩니다.
 
 * [편집](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 기본 모드이며 페이지를 편집하고 구성 요소를 추가 또는 삭제하며 기타 변경할 수 있습니다.
@@ -209,7 +209,6 @@ AEM을 사용하면 현재 작업 중인 페이지에 연결된 페이지를 볼
 >* [Client Context](/help/sites-administering/client-context.md)
 >* 웹 사이트 - 웹 사이트 콘솔을 엽니다.
 >* 다시 로드 - 페이지를 새로 고칩니다.
-
 
 ## 키보드 단축키 {#keyboard-shortcuts}
 

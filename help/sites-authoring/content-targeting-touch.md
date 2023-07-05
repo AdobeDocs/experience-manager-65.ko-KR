@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '5349'
-ht-degree: 74%
+source-wordcount: '5390'
+ht-degree: 73%
 
 ---
 
@@ -253,9 +253,9 @@ When an experience is selected and the targeted component does not include an of
 
 1. Target 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![대상](do-not-localize/chlimage_1.png)
 
-   구성 요소 컨텐츠는 기본값 경험을 위한 오퍼입니다. 구성 요소를 타겟팅하면 이 구성 요소의 기본 노드가 각 경험에 대해 복제됩니다. 이러한 복제는 경험별 작성 중에 올바른 콘텐츠 노드를 편집하는 데 필요합니다. 기본값이 아닌 이러한 경험에 대해 [사용자 정의 오퍼를 추가](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)하거나 [라이브러리 오퍼를 추가](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)하십시오.
+   구성 요소 콘텐츠는 기본값 경험을 위한 오퍼입니다. 구성 요소를 타겟팅하면 이 구성 요소의 기본 노드가 각 경험에 대해 복제됩니다. 이러한 복제는 경험별 작성 중에 올바른 콘텐츠 노드를 편집하는 데 필요합니다. 기본값이 아닌 이러한 경험에 대해 [사용자 정의 오퍼를 추가](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)하거나 [라이브러리 오퍼를 추가](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)하십시오.
 
 #### 타겟 구성 요소를 추가하여 오퍼 생성 {#creating-an-offer-by-adding-a-target-component}
 
@@ -275,7 +275,7 @@ Target 구성 요소는 컨테이너이므로 다른 구성 요소에 대한 드
 
 편집 모드에서 타겟 구성 요소에는 과녁 중앙 모양의 아이콘이 있습니다.
 
-![](do-not-localize/chlimage_1-1.png)
+![편집 모드의 Target 구성 요소](do-not-localize/chlimage_1-1.png)
 
 구성 요소를 타겟 구성 요소로 드래그하면 이 구성 요소가 타겟팅된 구성 요소입니다.
 
@@ -296,6 +296,8 @@ Target 구성 요소는 컨테이너이므로 다른 구성 요소에 대한 드
    >
    >
    >관리자는 **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**&#x200B;에서 이 구성을 설정해야 하는지 결정할 수 있습니다.
+   >
+   >
    사용자가 위치를 입력하도록 하려면 **위치 강제 적용** 확인란을 선택하십시오.
 
 1. 오퍼를 생성할 경험을 선택합니다.
@@ -321,7 +323,7 @@ Target 구성 요소는 컨테이너이므로 다른 구성 요소에 대한 드
 
 1. 오퍼를 클릭하거나 탭하여 오퍼 메뉴를 표시한 다음, 편집 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![오퍼 메뉴](do-not-localize/chlimage_1-2.png)
 
 1. 구성 요소의 콘텐츠를 편집합니다.
 
@@ -338,7 +340,7 @@ Target 구성 요소는 컨테이너이므로 다른 구성 요소에 대한 드
 
 1. 폴더 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![폴더 아이콘](do-not-localize/chlimage_1-3.png)
 
 1. 라이브러리에서 오퍼를 선택한 다음 확인 표시 아이콘을 클릭하거나 탭합니다.
 
@@ -371,7 +373,7 @@ Target 구성 요소는 컨테이너이므로 다른 구성 요소에 대한 드
 1. 사용자 정의 오퍼를 표시할 경험을 선택합니다.
 1. 사용자 정의 오퍼를 클릭하거나 탭하여 오퍼 메뉴를 표시한 다음, **오퍼 라이브러리에 오퍼 저장** 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![오퍼 라이브러리에 오퍼 저장](do-not-localize/chlimage_1-4.png)
 
 1. 오퍼의 이름을 입력하고 오퍼를 추가할 라이브러리를 선택한 다음 확인 표시 아이콘을 클릭하거나 탭합니다.
 
@@ -382,7 +384,7 @@ Target 구성 요소는 컨테이너이므로 다른 구성 요소에 대한 드
 1. 사용자 정의 라이브러리를 표시할 경험을 선택합니다.
 1. 사용자 정의 라이브러리를 클릭하거나 탭하여 오퍼 메뉴를 표시한 다음, [인라인 오퍼로 전환] 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![인라인 오퍼로 전환](do-not-localize/chlimage_1-5.png)
 
 #### 라이브러리 오퍼 편집 {#editing-a-library-offer}
 
@@ -410,7 +412,7 @@ Target 구성 요소는 컨테이너이므로 다른 구성 요소에 대한 드
 
 한 대상자를 두 개 이상의 경험이 사용해서는 안 됩니다. 경험이 다른 경험에 매핑된 대상자에 매핑되면 경험 옆에 경고 기호가 나타납니다.
 
-![](do-not-localize/chlimage_1-6.png)
+![다른 경험에 매핑된 대상자에 매핑될 때 경고 기호](do-not-localize/chlimage_1-6.png)
 
 ### 경험을 대상자(AEM 또는 Adobe Target)와 연결 {#associating-experiences-with-audiences-aem-or-adobe-target}
 
@@ -577,11 +579,13 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
    모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 선택 **고급 설정** 액세스 권한. 이전 표에서 성공 지표를 카운트하는 방법에 대한 정의를 참조하고 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
 
    >[!NOTE]
+   >
    정의된 목표가 하나 이상 있어야 합니다.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
+   >
    지표에 누락된 정보가 있으면 빨간색 선이 지표를 둘러싸고 있습니다.
 
 1. 클릭 **새 지표 추가** 추가 성공 지표를 구성합니다.
@@ -589,6 +593,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
    >[!NOTE]
+   >
    세 점을 클릭하거나 탭하고 을 클릭하거나 탭하여 추가 목표를 제거할 수 있습니다 **삭제**. AEM을 사용하려면 하나 이상의 목표가 정의되어 있어야 합니다.
 
 1. 성공 지표를 카운트하는 방법을 추가로 제어하려면 **고급 설정**&#x200B;을 클릭하거나 탭하여 고급 설정에 액세스하십시오.
@@ -611,6 +616,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
 프로필을 로드할 때 페이지에 예기치 않은 콘텐츠가 나타나면 이 목록에 있는 각 항목의 구성을 확인하십시오.
 
 >[!NOTE]
+>
 A/B 테스트를 사용 중인 경우, 시뮬레이션 경험이 트래픽 비율에 따라 표시됩니다. 이는 Adobe Target에 의해 제어되므로 이로 인해 작성자가 예상하지 못한 결과가 발생할 수 있습니다. (작성자 활동은 시뮬레이션 중에 다시 평가할 수 있는 특정 설정과 동기화됩니다(_Author). 작성자가 트래픽 설정에 따라 다른 경험을 보려면 새로 고쳐야 할 수 있습니다.
 
 방문자의 경험을 시뮬레이션하려면 다음 도구를 사용합니다.
@@ -621,7 +627,7 @@ A/B 테스트를 사용 중인 경우, 시뮬레이션 경험이 트래픽 비�
 1. 미리보기 모드로 전환하려면 도구 모음에서 **미리보기**&#x200B;를 클릭하거나 탭합니다.
 1. 도구 모음에서 ContextHub 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![컨텍스트 허브](do-not-localize/chlimage_1-7.png)
 
 1. Context Hub를 사용하여 컨텍스트 속성을 변경합니다. 예를 들어, 페르소나 속성을 클릭하거나 탭하여 다른 사용자를 선택합니다.
 
@@ -637,7 +643,7 @@ A/B 테스트를 사용 중인 경우, 시뮬레이션 경험이 트래픽 비�
 
 1. Target 구성 요소에서 구성 요소를 타겟팅한 후 해당 구성 요소와 설정 아이콘(cog)을 차례로 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![Target 구성 요소 메뉴](do-not-localize/chlimage_1-8.png)
 
    AEM에 타겟 구성 요소 옵션 창이 표시됩니다.
 
@@ -645,7 +651,7 @@ A/B 테스트를 사용 중인 경우, 시뮬레이션 경험이 트래픽 비�
 
 1. 또는 전체 화면 모드에서 이러한 설정에 액세스하려면 타겟 구성 요소 옵션 창에서 전체 화면 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![Target 구성 요소 옵션 창](do-not-localize/chlimage_1-9.png)
 
    AEM에 전체 화면으로 타겟 구성 요소 옵션 창이 표시됩니다.
 
@@ -704,6 +710,7 @@ Adobe Target을 엔진으로 선택하는 경우:
 </table>
 
 >[!NOTE]
+>
 구성 요소를 선택하여 이를 타겟팅이 가능하도록 만들면 AEM도 이 구성 요소를 교체하고 Adobe Target 구성 요소를 주입합니다. (Adobe Target 구성 요소는 수동으로 페이지에 추가할 때에만 사용되는 것이 아니라, 기존 구성 요소를 타겟팅할 때에도 사용됩니다.)
 
 Client Context(클라이언트측)를 엔진으로 선택하는 경우:

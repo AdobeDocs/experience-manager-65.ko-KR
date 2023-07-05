@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '641'
 ht-degree: 42%
 
 ---
@@ -53,14 +53,13 @@ ht-degree: 42%
 >* [비디오 자산에 주석 달기](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 
-
 ### 구성 요소에 주석 추가 {#annotating-a-component}
 
 주석 모드에서는 콘텐츠의 주석을 만들기, 편집, 이동 또는 삭제할 수 있습니다.
 
 1. 페이지를 편집할 때 도구 모음(오른쪽 상단)의 아이콘을 사용하여 주석 모드에 들어갈 수 있습니다.
 
-   ![](do-not-localize/screen_shot_2018-03-22at110414.png)
+   ![주석](do-not-localize/screen_shot_2018-03-22at110414.png)
 
    이제 기존의 모든 주석을 볼 수 있습니다.
 
@@ -83,16 +82,17 @@ ht-degree: 42%
    * 주석 텍스트를 입력합니다.
    * 스케치(선과 모양)를 만들어 구성 요소 영역 강조 표시
 
-      스케치를 생성할 때 커서는 크로스와이어로 변경됩니다. 서로 구분되는 여러 선을 그릴 수 있습니다. 스케치 선은 주석 색상을 반영하며 화살표, 원 또는 타원 중 하나일 수 있습니다.
-   ![](do-not-localize/screen_shot_2018-03-22at110640.png)
+     스케치를 생성할 때 커서는 크로스와이어로 변경됩니다. 서로 구분되는 여러 선을 그릴 수 있습니다. 스케치 선은 주석 색상을 반영하며 화살표, 원 또는 타원 중 하나일 수 있습니다.
+
+     ![스케치 효과](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * 색상 선택/변경:
 
-   ![](do-not-localize/chlimage_1-19.png)
+     ![색상 선택/변경](do-not-localize/chlimage_1-19.png)
 
    * 주석 삭제
 
-   ![](do-not-localize/screen_shot_2018-03-22at110647.png)
+     ![주석 삭제](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. 대화 상자 외부를 클릭/탭하여 주석 대화 상자를 닫을 수 있습니다. 스케치와 함께 주석의 잘린 보기(첫 번째 단어)가 표시됩니다.
 
@@ -103,12 +103,12 @@ ht-degree: 42%
    * 텍스트 표시자를 클릭/탭하여 주석을 엽니다. 열면 전체 텍스트를 보고, 변경 내용을 적용하거나 주석을 삭제할 수 있습니다.
 
       * 스케치는 주석과 독립적으로 삭제할 수 없습니다.
+
    * 텍스트 마커 위치 변경.
    * 스케치 선을 클릭/탭하여 해당 스케치를 선택하고 원하는 위치로 드래그.
    * 구성 요소 이동 또는 복사
 
       * 모든 관련 주석과 해당 스케치가 이동 또는 복사되며 단락을 기준으로 해당 위치가 그대로 유지됩니다.
-
 
 1. 주석 모드를 종료하고 이전에 사용한 모드로 돌아가려면 상단 도구 모음 오른쪽에 있는 주석 아이콘(x 기호)을 탭/클릭합니다.
 

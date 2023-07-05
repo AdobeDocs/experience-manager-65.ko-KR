@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1760'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 1. 아이콘을 사용하여 목록 보기를 선택합니다.
 
-   ![](do-not-localize/mcm_icon_listview-1.png)
+   ![목록 보기](do-not-localize/mcm_icon_listview-1.png)
 
 1. 클릭 **새로 만들기...**
 
@@ -92,6 +92,7 @@ ht-degree: 1%
 
    * **기본 수신자 목록**
 뉴스레터를 수신할 기본 목록입니다.
+
    이러한 수정 사항은 의 이후 단계에서 업데이트할 수 있습니다. **속성...** 대화 상자.
 
 1. 클릭 **확인** 저장.

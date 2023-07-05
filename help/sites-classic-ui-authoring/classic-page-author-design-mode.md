@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -45,21 +45,21 @@ AEM 인스턴스를 즉시 설치하면 사이드 킥에서 다양한 구성 요
 
 1. 디자인 모드로 전환하려면 편집할 페이지를 열고 사이드 킥 아이콘을 사용합니다.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![디자인 모드](do-not-localize/chlimage_1.png)
 
 1. 클릭 **편집** 단락 시스템 (**파스 디자인**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
-1. 사이드 킥에 표시되는 구성 요소 그룹을 포함된 개별 구성 요소와 함께 나열하는 대화 상자가 열립니다.
+1. Sidekick에 표시되는 구성 요소 그룹을 포함된 개별 구성 요소와 함께 나열하는 대화 상자가 열립니다.
 
    필요에 따라 사이드 킥에서 사용할 수 있는 구성 요소를 추가하거나 제거합니다.
 
    ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
-1. 사이드 킥은 디자인 모드에서 를 최소화합니다. 화살표를 클릭하여 사이드 킥을 최대화하고 편집 모드로 돌아갈 수 있습니다.
+1. 디자인 모드에서 Sidekick이 최소화됩니다. 화살표를 클릭하여 Sidekick을 최대화하고 편집 모드로 돌아갈 수 있습니다.
 
-   ![](do-not-localize/sidekick-collapsed.png)
+   ![Sidekick 최소화](do-not-localize/sidekick-collapsed.png)
 
 ## 구성 요소 디자인 구성 {#configuring-the-design-of-a-component}
 
@@ -67,7 +67,7 @@ AEM 인스턴스를 즉시 설치하면 사이드 킥에서 다양한 구성 요
 
 1. 디자인 모드로 전환하려면 편집할 페이지를 열고 사이드 킥 아이콘을 사용합니다.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![디자인 모드 - Sidekick](do-not-localize/chlimage_1-1.png)
 
 1. 구성 요소 디자인을 구성할 수 있습니다.
 
@@ -77,6 +77,6 @@ AEM 인스턴스를 즉시 설치하면 사이드 킥에서 다양한 구성 요
 
 1. 클릭 **확인** 변경 사항을 저장합니다.
 
-1. 사이드 킥은 디자인 모드에서 를 최소화합니다. 화살표를 클릭하여 사이드 킥을 최대화하고 편집 모드로 돌아갈 수 있습니다.
+1. 디자인 모드에서 Sidekick이 최소화됩니다. 화살표를 클릭하여 Sidekick을 최대화하고 편집 모드로 돌아갈 수 있습니다.
 
-   ![](do-not-localize/sidekick-collapsed-1.png)
+   ![Sidekick 최소화](do-not-localize/sidekick-collapsed-1.png)

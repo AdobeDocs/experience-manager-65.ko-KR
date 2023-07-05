@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1841'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ WYSIWYG 편집 대화 상자는 다음과 같은 다양한 기능을 제공합�
 
 ### 기본 문자 형식 {#basic-character-formats}
 
-![](do-not-localize/cq55_rte_basicchars.png)
+![문자 형식 도구 모음](do-not-localize/cq55_rte_basicchars.png)
 
 여기에서 선택한(강조 표시된) 문자에 서식을 적용할 수 있습니다. 일부 옵션에는 단축키도 있습니다.
 
@@ -98,7 +98,7 @@ WYSIWYG 편집 대화 상자는 다음과 같은 다양한 기능을 제공합�
 
 ### 잘라내기, 복사, 붙여넣기 {#cut-copy-paste}
 
-![](do-not-localize/cq55_rte_cutcopypaste.png)
+![잘라내기, 복사, 붙여넣기 도구 모음](do-not-localize/cq55_rte_cutcopypaste.png)
 
 의 표준 함수 **[!UICONTROL 잘라내기]** 및 **[!UICONTROL 복사]** 사용할 수 있습니다. 여러 가지 맛 **[!UICONTROL 붙여넣기]** 다른 형식을 제공하기 위해 제공됩니다.
 
@@ -112,7 +112,7 @@ WYSIWYG 편집 대화 상자는 다음과 같은 다양한 기능을 제공합�
 
 ### 실행 취소, 다시 실행 {#undo-redo}
 
-![](do-not-localize/cq55_rte_undoredo.png)
+![실행 취소, 다시 실행 도구 모음](do-not-localize/cq55_rte_undoredo.png)
 
 AEM은 현재 구성 요소에 마지막 50개 작업에 대한 기록을 시간 순서대로 유지합니다. 이러한 작업은 필요한 경우 엄격한 순서로 실행 취소(그런 다음 다시 실행)할 수 있습니다.
 
@@ -126,7 +126,7 @@ AEM은 현재 구성 요소에 마지막 50개 작업에 대한 기록을 시간
 
 ### 정렬 {#alignment}
 
-![](do-not-localize/cq55_rte_alignment.png)
+![정렬 도구 모음](do-not-localize/cq55_rte_alignment.png)
 
 텍스트는 왼쪽, 가운데 또는 오른쪽으로 정렬할 수 있습니다.
 
@@ -134,7 +134,7 @@ AEM은 현재 구성 요소에 마지막 50개 작업에 대한 기록을 시간
 
 ### 들여쓰기 {#indentation}
 
-![](do-not-localize/cq55_rte_indent.png)
+![들여쓰기 도구 모음](do-not-localize/cq55_rte_indent.png)
 
 단락의 들여쓰기를 늘리거나 줄일 수 있습니다. 선택한 단락은 들여쓰기되며, 새로 입력한 텍스트는 현재 들여쓰기 수준을 유지합니다.
 
@@ -142,7 +142,7 @@ AEM은 현재 구성 요소에 마지막 50개 작업에 대한 기록을 시간
 
 ### 목록 {#lists}
 
-![](do-not-localize/cq55_rte_lists.png)
+![목록 도구 모음](do-not-localize/cq55_rte_lists.png)
 
 글머리 기호 및 번호 매기기 목록은 모두 텍스트 내에 만들 수 있습니다. 목록 유형을 선택하고 입력을 시작하거나 변환할 텍스트를 강조 표시합니다. 두 경우 모두 라인 피드가 새 목록 항목을 시작합니다.
 
@@ -154,11 +154,11 @@ AEM은 현재 구성 요소에 마지막 50개 작업에 대한 기록을 시간
 
 ### 링크 {#links}
 
-![](do-not-localize/cq55_rte_links.png)
+![링크 도구 모음](do-not-localize/cq55_rte_links.png)
 
 필요한 텍스트를 강조 표시한 다음 하이퍼링크 아이콘을 클릭하여 URL(웹 사이트 또는 외부 위치 내)에 대한 링크가 생성됩니다.
 
-![](do-not-localize/chlimage_1-9.png)
+![하이퍼링크 아이콘](do-not-localize/chlimage_1-9.png)
 
 대화 상자를 통해 대상 URL을 지정할 수 있습니다. 또한 새 창에서 열어야 하는지 여부도 지정할 수 있습니다.
 
@@ -178,11 +178,11 @@ AEM은 현재 구성 요소에 마지막 50개 작업에 대한 기록을 시간
 
 링크 텍스트 내의 아무 곳에나 커서를 놓고 [!UICONTROL 연결 해제] 아이콘:
 
-![](do-not-localize/chlimage_1-10.png)
+![링크 해제 아이콘](do-not-localize/chlimage_1-10.png)
 
 ### 앵커 {#anchors}
 
-![](do-not-localize/cq55_rte_anchor.png)
+![앵커 도구 모음](do-not-localize/cq55_rte_anchor.png)
 
 앵커는 커서의 위치나 일부 텍스트를 선택하여 텍스트 내의 어디에나 만들 수 있습니다. 그런 다음 **앵커** 대화 상자를 여는 아이콘
 
@@ -196,7 +196,7 @@ AEM은 현재 구성 요소에 마지막 50개 작업에 대한 기록을 시간
 
 ### 찾기 및 바꾸기 {#find-and-replace}
 
-![](do-not-localize/cq55_rte_findreplace.png)
+![찾기 및 바꾸기 도구 모음](do-not-localize/cq55_rte_findreplace.png)
 
 AEM에서 두 가지 모두 **찾기** 및 a **바꾸기** (찾기 및 바꾸기) 함수.
 
@@ -222,7 +222,7 @@ AEM에서 두 가지 모두 **찾기** 및 a **바꾸기** (찾기 및 바꾸기
 
 ### 맞춤법 검사기 {#spelling-checker}
 
-![](do-not-localize/cq55_rte_spellchecker.png)
+![맞춤법 검사기](do-not-localize/cq55_rte_spellchecker.png)
 
 맞춤법 검사기는 현재 구성 요소의 모든 텍스트를 검사합니다.
 
@@ -240,15 +240,15 @@ AEM에서 두 가지 모두 **찾기** 및 a **바꾸기** (찾기 및 바꾸기
 
 * 다음으로: **표** 구성 요소
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+  ![테이블 구성 요소](assets/chlimage_1-105.png)
 
 * 다음 범위 내에서 **텍스트** 구성 요소
 
-   ![](do-not-localize/chlimage_1-11.png)
+  ![텍스트 도구 모음](do-not-localize/chlimage_1-11.png)
 
-   >[!NOTE]
-   >
-   >표는 RTE에서 사용할 수 있지만 **표** 구성 요소를 사용하여 표를 만들 수 있습니다.
+  >[!NOTE]
+  >
+  >표는 RTE에서 사용할 수 있지만 **표** 구성 요소를 사용하여 표를 만들 수 있습니다.
 
 두 가지 모두 **텍스트** 및 **표** 구성 요소 테이블 기능은 테이블 내에서 클릭한 컨텍스트 메뉴(일반적으로 마우스 오른쪽 버튼)를 통해 사용할 수 있습니다. 예를 들면 다음과 같습니다.
 
@@ -362,7 +362,6 @@ AEM에서 두 가지 모두 **찾기** 및 a **바꾸기** (찾기 및 바꾸기
 >* Windows IE: Ctrl+기본-마우스-단추 클릭(보통 왼쪽)을 사용하여 여러 셀을 선택합니다.
 >* Firefox: 포인터를 드래그하여 셀 범위를 선택합니다.
 
-
 #### 테이블 제거 {#remove-table}
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
@@ -371,7 +370,7 @@ AEM에서 두 가지 모두 **찾기** 및 a **바꾸기** (찾기 및 바꾸기
 
 ### 특수 문자 {#special-characters}
 
-![](do-not-localize/cq55_rte_specialchars.png)
+![특수 문자 도구 모음](do-not-localize/cq55_rte_specialchars.png)
 
 특수 문자는 리치 텍스트 편집기에서 사용할 수 있습니다. 이러한 문자는 설치에 따라 달라질 수 있습니다.
 
@@ -381,7 +380,7 @@ AEM에서 두 가지 모두 **찾기** 및 a **바꾸기** (찾기 및 바꾸기
 
 ### 소스 편집 모드 {#source-editing-mode}
 
-![](do-not-localize/cq55_rte_sourceedit.png)
+![소스 편집 모드 도구 모음](do-not-localize/cq55_rte_sourceedit.png)
 
 소스 편집 모드에서는 구성 요소의 기본 HTML을 보고 편집할 수 있습니다.
 

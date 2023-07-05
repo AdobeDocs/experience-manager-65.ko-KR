@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1526'
 ht-degree: 63%
 
 ---
@@ -33,11 +33,11 @@ ht-degree: 63%
 
 * 사용자 [알림](/help/sites-authoring/inbox.md) 표시기(도구 모음)가 증가합니다.
 
-   ![](do-not-localize/wf-57.png)
+  ![알림 표시기](do-not-localize/wf-57.png)
 
 * 항목이 [받은 편지함](/help/sites-authoring/inbox.md)의 알림에 나열됩니다.
 
-   ![wf-58](assets/wf-58.png)
+  ![wf-58](assets/wf-58.png)
 
 * 페이지 편집기를 사용하는 경우 상태 표시줄에 다음이 표시됩니다.
 
@@ -48,18 +48,18 @@ ht-degree: 63%
       * 왼쪽/오른쪽 화살표를 사용하여 다양한 워크플로의 상태 정보를 탐색할 수 있습니다.
       * 실제 숫자를 클릭/탭하여 적용 가능한 모든 워크플로가 있는 드롭다운 목록을 연 다음, 상태 표시줄에 표시할 워크플로를 선택할 수 있습니다.
 
-   ![wf-59](assets/wf-59.png)
+  ![wf-59](assets/wf-59.png)
 
-   >[!NOTE]
-   >
-   >상태 표시줄은 워크플로 권한이 있는 사용자(예: `workflow-users` 그룹의 멤버)에게만 표시됩니다.
-   >
-   >
-   >현재 사용자가 워크플로의 현재 단계와 직접적으로 관련이 있으면 작업이 표시됩니다.
+  >[!NOTE]
+  >
+  >상태 표시줄은 워크플로 권한이 있는 사용자(예: `workflow-users` 그룹의 멤버)에게만 표시됩니다.
+  >
+  >
+  >현재 사용자가 워크플로의 현재 단계와 직접적으로 관련이 있으면 작업이 표시됩니다.
 
 * 리소스에 대해 **타임라인**&#x200B;이 열려 있으면 워크플로 단계가 표시됩니다. 경고 배너를 클릭/탭하면 사용 가능한 작업도 표시됩니다.
 
-   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
+  ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
 ### 참가자 단계 완료 {#completing-a-participant-step}
 
@@ -229,19 +229,19 @@ ht-degree: 63%
 
 * **작업 항목** 탭:
 
-   ![wf-72](assets/wf-72.png)
+  ![wf-72](assets/wf-72.png)
 
 * **워크플로 정보** 탭:
 
-   ![wf-73](assets/wf-73.png)
+  ![wf-73](assets/wf-73.png)
 
-   If [워크플로 단계](/help/sites-developing/workflows.md#workflow-stages) 모델에 대해 구성되었으므로 다음 사항에 따라 진행률을 볼 수 있습니다.
+  If [워크플로 단계](/help/sites-developing/workflows.md#workflow-stages) 모델에 대해 구성되었으므로 다음 사항에 따라 진행률을 볼 수 있습니다.
 
-   ![wf-107](assets/wf-107.png)
+  ![wf-107](assets/wf-107.png)
 
 * **주석** 탭:
 
-   ![wf-75](assets/wf-75.png)
+  ![wf-75](assets/wf-75.png)
 
 다음 중 하나에서 작업 항목 세부 정보를 열 수 있습니다.
 

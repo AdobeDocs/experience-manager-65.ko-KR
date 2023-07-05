@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 53%
+source-wordcount: '369'
+ht-degree: 52%
 
 ---
 
@@ -42,7 +42,7 @@ ContextHub 도구 모음은 미리보기 모드에서 사용할 수 있습니다
 
 1. 도구 모음을 표시하려면 ContextHub 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/screen_shot_2018-03-23at093621.png)
+   ![컨텍스트 허브](do-not-localize/screen_shot_2018-03-23at093621.png)
 
 ## UI 모듈 기능 {#ui-module-features}
 
@@ -68,4 +68,4 @@ UI 모듈은 도구 모음에 있는 하나 이상의 ContextHub 저장소에서
 
 팝업 오버레이는 클릭하거나 탭하여 전체 브라우저 창이나 화면을 덮도록 팝업 콘텐츠를 확장하는 아이콘을 포함할 수 있습니다.
 
-![](do-not-localize/chlimage_1-18.png)
+![전체 화면](do-not-localize/chlimage_1-18.png)

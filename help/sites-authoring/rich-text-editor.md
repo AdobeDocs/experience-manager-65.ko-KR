@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 86%
+source-wordcount: '264'
+ht-degree: 76%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 86%
 
 ## 전체 화면 편집 {#full-screen-editing}
 
-텍스트 기반 구성 요소의 경우 도구 모음 ![](do-not-localize/screen_shot_2018-03-21at163236.png)에서 전체 화면 모드를 탭하면 리치 텍스트 편집기가 열리고 나머지 페이지 컨텐츠는 표시되지 않습니다.
+텍스트 기반 구성 요소의 경우 도구 모음에서 전체 화면 모드 를 탭합니다 ![전체 화면 편집 모드](do-not-localize/screen_shot_2018-03-21at163236.png) 리치 텍스트 편집기를 열고 나머지 페이지 콘텐츠를 숨깁니다.
 
 전체 화면 모드에서는 작성에 사용할 수 있는 구성된 모든 옵션이 표시됩니다. 옵션 사용 가능 여부는 [구성에 따라 다릅니다](/help/sites-administering/rich-text-editor.md).
 

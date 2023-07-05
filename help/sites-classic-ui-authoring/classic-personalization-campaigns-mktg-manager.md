@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1179'
 ht-degree: 1%
 
 ---
@@ -148,7 +148,7 @@ AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 
 
    아이콘 사용:
 
-   ![](do-not-localize/mcm_iconcalendarview.png)
+   ![달력 보기](do-not-localize/mcm_iconcalendarview.png)
 
    여기에는 해당 터치포인트에 연결된 경험의 가로 시간대(녹색)가 있는 모든 터치포인트 목록(회색)이 표시됩니다.
 
@@ -166,7 +166,7 @@ AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 
 
    아이콘 사용:
 
-   ![](do-not-localize/mcm_icon_listview.png)
+   ![목록 보기](do-not-localize/mcm_icon_listview.png)
 
    선택한 캠페인에 대한 모든 경험(예: 티저 및 뉴스레터)이 나열됩니다.
 

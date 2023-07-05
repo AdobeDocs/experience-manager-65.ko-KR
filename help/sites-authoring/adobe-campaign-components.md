@@ -9,9 +9,9 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '2828'
+source-wordcount: '2839'
 ht-degree: 11%
 
 ---
@@ -85,7 +85,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 
 이미지가 업로드된 후(그 전은 아님) 다음을 사용할 수 있습니다. [즉석 편집](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) 필요에 따라 이미지를 자르기/회전하려면 다음을 수행하십시오.
 
-![](do-not-localize/chlimage_1-10.png)
+![즉석 편집 도구 모음](do-not-localize/chlimage_1-10.png)
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 
 맵 및 확대/축소와 같은 몇 가지 추가 옵션은 전체 화면 편집 모드에서 사용할 수 있습니다.
 
-![](do-not-localize/chlimage_1-11.png)
+![전체 화면 편집 모드](do-not-localize/chlimage_1-11.png)
 
 이미지가 로드되면 다음 항목을 구성할 수 있습니다.
 
@@ -132,6 +132,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 >다음에 정보를 입력해야 합니다. **대체 텍스트** 의 필드 **고급** 탭하거나 이미지를 저장할 수 없고 다음과 같은 오류 메시지가 표시됩니다.
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 다음 예는 표시되는 이미지(캠페인) 구성 요소를 보여 줍니다.
 
@@ -150,8 +151,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 링크 사용 방법에 대한 추가 정보를 추가합니다.
 
 * **링크 유형**
-드롭다운 목록에서 다음 중 하나를 선택합니다 
-**사용자 정의 URL** 및 **적응형 문서**. 이 필드는 필수입니다. 사용자 지정 URL을 선택하는 경우 링크 URL을 제공할 수 있습니다. 적응형 문서를 선택하면 문서 경로를 제공할 수 있습니다.
+드롭다운 목록에서 다음 중 하나를 선택합니다 **사용자 정의 URL** 및 **적응형 문서**. 이 필드는 필수입니다. 사용자 지정 URL을 선택하는 경우 링크 URL을 제공할 수 있습니다. 적응형 문서를 선택하면 문서 경로를 제공할 수 있습니다.
 
 * **추가 URL 매개 변수**
 추가 URL 매개 변수를 추가합니다. 항목 추가 를 클릭하여 여러 항목을 추가합니다.
@@ -161,6 +161,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 >다음에 정보를 입력해야 합니다. **링크 유형** 의 필드 **URL 정보** 탭하거나, 구성 요소를 저장할 수 없고 다음과 같은 오류 메시지가 표시됩니다.
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 다음 예는 표시되는 링크 (캠페인) 구성 요소를 보여 줍니다.
 
@@ -196,11 +197,11 @@ Dynamic Media Classic(Scene7) 이미지 템플릿은 계층화된 이미지 파�
 
 선택 **텍스트** 인라인 편집기를 표시합니다.
 
-![](do-not-localize/chlimage_1-12.png)
+![텍스트 도구 모음](do-not-localize/chlimage_1-12.png)
 
 선택 **이미지** 이미지의 즉석 편집기를 표시합니다.
 
-![](do-not-localize/chlimage_1-13.png)
+![이미지 도구 모음](do-not-localize/chlimage_1-13.png)
 
 다음을 참조하십시오 [이미지(캠페인) 구성 요소](#image-campaign) 이미지 작업에 대한 자세한 정보입니다. 다음을 참조하십시오 [텍스트 및 개인화(캠페인) 구성 요소](#text-personalization-campaign) 를 참조하십시오.
 
@@ -234,6 +235,7 @@ Dynamic Media Classic(Scene7) 이미지 템플릿은 계층화된 이미지 파�
 >다음 **대체 텍스트** 의 필드 **고급** 탭이 필요하거나 구성 요소를 저장할 수 없으며 다음 오류 메시지가 표시됩니다.
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 다음 예는 표시되는 텍스트 및 이미지(캠페인) 구성 요소를 보여 줍니다.
 
@@ -300,7 +302,7 @@ Adobe Campaign과 통합되도록 구성된 양식을 열면 **Adobe Campaign** 
   <tr>
    <td><p>확인란(캠페인)</p> </td>
    <td><p>부울</p> </td>
-   <td><p>더 이상 연락하지 않음(모든 채널에서)</p> </td>
+   <td><p>아니요 긴 연락처(모든 채널에서)</p> </td>
   </tr>
   <tr>
    <td><p>날짜 필드(캠페인)</p> <p>날짜 필드/HTML 5(캠페인)</p> </td>

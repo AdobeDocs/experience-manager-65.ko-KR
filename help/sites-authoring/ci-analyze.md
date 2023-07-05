@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '666'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Content Insight 페이지의 보고 기간을 변경하려면:
 
 1. 페이지 상단에 일정이 표시되지 않으면 일정 전환 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-22.png)
+   ![일정 전환](do-not-localize/chlimage_1-22.png)
 
 1. 보고 기간의 시작 날짜를 변경하려면 음영 처리된 영역의 왼쪽에 나타나는 원을 원하는 시작 날짜로 끕니다.
 
@@ -92,7 +92,7 @@ SEO 권장 사항의 상태는 작업이 생성되었지만 아직 완료되지 
 
 1. SEO 권장 사항에 대한 정보 아이콘을 클릭하거나 탭합니다.
 
-   ![](do-not-localize/chlimage_1-23.png)
+   ![정보 아이콘](do-not-localize/chlimage_1-23.png)
 
 1. 정보 아이콘 옆에 나타나는 둘러싸인 삼각형 아이콘을 클릭합니다.
 
