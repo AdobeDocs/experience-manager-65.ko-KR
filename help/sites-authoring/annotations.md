@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '642'
 ht-degree: 42%
 
 ---
@@ -120,4 +120,4 @@ ht-degree: 42%
 
 주석은 편집 모드에 나타나지는 않지만, 도구 모음 상단 오른쪽에 있는 배지에 현재 페이지에 대해 존재하는 주석의 수가 표시됩니다. 배지는 기본 [주석] 아이콘을 대신하며 주석 모드로/에서 전환하는 빠른 링크로 작동합니다.
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![주석 표시기](assets/chlimage_1-242.png)

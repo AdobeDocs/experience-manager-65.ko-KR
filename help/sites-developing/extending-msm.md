@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '2575'
-ht-degree: 2%
+source-wordcount: '2583'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,6 @@ ht-degree: 2%
 >* [다중 사이트 관리자 블루프린트 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
 >* [다중 사이트 관리자 롤아웃 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
-
 >[!CAUTION]
 >
 >다중 사이트 관리자 및 해당 API는 웹 사이트를 작성할 때 사용되므로 작성자 환경에서만 사용됩니다.
@@ -50,13 +49,13 @@ ht-degree: 2%
 
 기본 MSM API 개체는 다음과 같이 상호 작용합니다(또한 참조) [사용된 용어](/help/sites-administering/msm.md#terms-used)):
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![기본 MSM API 개체](assets/chlimage_1-73.png)
 
 * **`Blueprint`**
 
-   A `Blueprint` (에서와 같이) [블루프린트 구성](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) live copy가 콘텐츠를 상속할 수 있는 페이지를 지정합니다.
+  A `Blueprint` (에서와 같이) [블루프린트 구성](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) live copy가 콘텐츠를 상속할 수 있는 페이지를 지정합니다.
 
-   ![chlimage_1-74](assets/chlimage_1-74.png)
+  ![블루프린트](assets/chlimage_1-74.png)
 
    * 블루프린트 구성 사용( `Blueprint`)는 선택 사항이지만,
 
@@ -66,7 +65,7 @@ ht-degree: 2%
 
 * **`LiveRelationship`**
 
-   다음 `LiveRelationship` 라이브 카피 분기에 있는 리소스와 이에 상응하는 소스/블루프린트 리소스 간의 연결(관계)을 지정합니다.
+  다음 `LiveRelationship` 라이브 카피 분기에 있는 리소스와 이에 상응하는 소스/블루프린트 리소스 간의 연결(관계)을 지정합니다.
 
    * 관계는 상속 및 롤아웃을 실현할 때 사용됩니다.
    * `LiveRelationship` 개체는 롤아웃 구성에 대한 액세스(참조)를 제공합니다. ( `RolloutConfig`), `LiveCopy`, 및 `LiveStatus` 관계와 관련된 개체입니다.
@@ -75,7 +74,7 @@ ht-degree: 2%
 
 * **`LiveCopy`**
 
-   `LiveCopy` 관계에 대한 구성 세부 정보를 보유합니다( `LiveRelationship`) 라이브 카피 리소스와 소스/블루프린트 리소스 간의 매핑에 사용됩니다.
+  `LiveCopy` 관계에 대한 구성 세부 정보를 보유합니다( `LiveRelationship`) 라이브 카피 리소스와 소스/블루프린트 리소스 간의 매핑에 사용됩니다.
 
    * 사용 `LiveCopy` 클래스의 하위 페이지 포함 여부, 소스/블루프린트 페이지 경로, 롤아웃 구성 등을 확인할 수 있습니다. `LiveCopy`.
 
@@ -83,21 +82,21 @@ ht-degree: 2%
 
 * **`LiveStatus`**
 
-   `LiveStatus` 개체는 의 런타임 상태에 대한 액세스를 제공합니다. `LiveRelationship`. 라이브 카피의 동기화 상태를 쿼리하는 데 사용합니다.
+  `LiveStatus` 개체는 의 런타임 상태에 대한 액세스를 제공합니다. `LiveRelationship`. 라이브 카피의 동기화 상태를 쿼리하는 데 사용합니다.
 
 * **`LiveAction`**
 
-   A `LiveAction` 은 롤아웃과 관련된 각 리소스에서 실행되는 작업입니다.
+  A `LiveAction` 은 롤아웃과 관련된 각 리소스에서 실행되는 작업입니다.
 
    * LiveActions는 RolloutConfigs에서만 생성됩니다.
 
 * **`LiveActionFactory`**
 
-   만들기 `LiveAction` 지정된 오브젝트 `LiveAction` 구성. 구성은 저장소의 리소스로 저장됩니다.
+  만들기 `LiveAction` 지정된 오브젝트 `LiveAction` 구성. 구성은 저장소의 리소스로 저장됩니다.
 
 * **`RolloutConfig`**
 
-   다음 `RolloutConfig` 목록 보관 `LiveActions`: 트리거될 때 사용됩니다. 다음 `LiveCopy` 을 상속합니다. `RolloutConfig` 결과가 다음에 있습니다. `LiveRelationship`.
+  다음 `RolloutConfig` 목록 보관 `LiveActions`: 트리거될 때 사용됩니다. 다음 `LiveCopy` 을 상속합니다. `RolloutConfig` 결과가 다음에 있습니다. `LiveRelationship`.
 
    * 처음 Live Copy를 설정하는 경우에도 LiveActions를 트리거하는 RolloutConfig를 사용합니다.
 
@@ -105,8 +104,8 @@ ht-degree: 2%
 
 롤아웃 구성에 사용할 사용자 지정 동기화 작업을 만듭니다. 다음과 같은 경우에 동기화 작업 만들기 [설치된 작업](/help/sites-administering/msm-sync.md#installed-synchronization-actions) 특정 애플리케이션 요구 사항을 충족하지 않습니다. 이렇게 하려면 두 개의 클래스를 만듭니다.
 
-* 의 구현 [ `com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 작업을 수행하는 인터페이스입니다.
-* 를 구현하는 OSGI 구성 요소 [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 인터페이스 및 의 인스턴스 만들기 `LiveAction` 클래스.
+* 의 구현 [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 작업을 수행하는 인터페이스입니다.
+* 를 구현하는 OSGI 구성 요소 [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 인터페이스 및 의 인스턴스 만들기 `LiveAction` 클래스.
 
 다음 `LiveActionFactory` 의 인스턴스를 생성합니다. `LiveAction` 지정된 구성에 대한 클래스:
 
@@ -147,9 +146,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 다음 개체는 의 매개 변수로 제공됩니다. `execute` 방법 `LiveAction` 개체:
 
-* A [ `Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) 라이브 카피의 소스를 나타내는 개체입니다.
+* A [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) 라이브 카피의 소스를 나타내는 개체입니다.
 * A `Resource` 라이브 카피의 대상을 나타내는 개체입니다.
-* 다음 [ `LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) 라이브 카피에 대한 객체입니다.
+* 다음 [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) 라이브 카피에 대한 객체입니다.
 * 다음 `autoSave` 값은 다음 여부를 나타냅니다. `LiveAction` 저장소에 대한 변경 사항을 저장해야 합니다.
 
 * 재설정 값은 롤아웃 재설정 모드를 나타냅니다.
@@ -166,7 +165,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->다음 `Resource` 인수는 다음과 같습니다. `null` 또는 `Resources` 에 적응하지 않는 오브젝트 `Node` 오브젝트(예: ) [ `NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 개체.
+>다음 `Resource` 인수는 다음과 같습니다. `null` 또는 `Resources` 에 적응하지 않는 오브젝트 `Node` 오브젝트(예: ) [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 개체.
 
 ## 새 롤아웃 구성 만들기 {#creating-a-new-rollout-configuration}
 
@@ -205,7 +204,6 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    >* 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
    >* 다음 범위 내에서 변경 `/apps`
 
-
 1. 이 아래에 **만들기** 다음 속성을 가진 노드:
 
    * **이름**: 롤아웃 구성의 노드 이름입니다. md#installed-synchronization-actions)를 참조하십시오. 예 `contentCopy` 또는 `workflow`.
@@ -213,17 +211,14 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 이 노드에 다음 속성을 추가합니다.
    * **이름**: `jcr:title`
-
-      **유형**: `String`
-      **값**: UI에 표시되는 식별 제목입니다.
+     **유형**: `String`
+     **값**: UI에 표시되는 식별 제목입니다.
    * **이름**: `jcr:description`
-
-      **유형**: `String`
-      **값**: 선택적 설명입니다.
+     **유형**: `String`
+     **값**: 선택적 설명입니다.
    * **이름**: `cq:trigger`
-
-      **유형**: `String`
-      **값**: [롤아웃 트리거](/help/sites-administering/msm-sync.md#rollout-triggers) 사용합니다. 다음 중에서 선택:
+     **유형**: `String`
+     **값**: [롤아웃 트리거](/help/sites-administering/msm-sync.md#rollout-triggers) 사용합니다. 다음 중에서 선택:
       * `rollout`
       * `modification`
       * `publish`
@@ -639,7 +634,7 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 * 다음 `country` 노드의 속성은 코드에 대한 국가의 전체 이름을 저장합니다.
 * 노드 이름이 언어 코드로만 구성된 경우(예: `en`), 국가 속성은 다음과 같습니다 `*`및 추가 `defaultCountry` 속성은 사용할 국가를 나타내는 언어 국가의 코드를 저장합니다.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![언어 정의](assets/chlimage_1-76.png)
 
 언어를 수정하려면 다음을 수행합니다.
 
@@ -648,7 +643,7 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 
    새 폴더 이름 지정 `wcm`.
 
-1. 이전 단계를 반복하여 `/apps/wcm/core` 폴더 트리. 유형의 노드 만들기 `sling:Folder` 위치: `core` 호출됨 `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
+1. 이전 단계를 반복하여 `/apps/wcm/core` 폴더 트리. 유형의 노드 만들기 `sling:Folder` 위치: `core` 호출됨 `resources`. <!-- ![Resources](assets/chlimage_1-77.png) -->
 
 1. 마우스 오른쪽 단추 클릭 `/libs/wcm/core/resources/languages` 노드 및 클릭 **복사**.
 1. 마우스 오른쪽 단추 클릭 `/apps/wcm/core/resources` 폴더 및 클릭 **붙여넣기**. 필요에 따라 하위 노드를 수정합니다.
@@ -656,7 +651,7 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 1. 클릭 **도구**, **작업** 그러면 **웹 콘솔**. 이 콘솔에서 **OSGi**, 그런 다음 **구성**.
 1. 를 찾아 클릭합니다. **일별 CQ WCM 언어 관리자**, 값 변경 **언어 목록** 끝 `/apps/wcm/core/resources/languages`을 클릭한 다음 을 클릭합니다 **저장**.
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![일별 CQ WCM 언어 관리자](assets/chlimage_1-78.png)
 
 ## 페이지 속성에 대한 MSM 잠금 구성(터치 사용 UI) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
@@ -693,7 +688,7 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
       * **유형**: `String`
 
       * **값**: 고려 중인 속성의 이름을 보유하며 속성 값과 비슷합니다 `name`; 예를 들면 다음과 같습니다.
-         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+        `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 날짜 `cq-msm-lockable` 가 정의되었으므로 체인을 끊거나 닫는 것은 다음과 같은 방식으로 MSM과 상호 작용합니다.
 
@@ -702,12 +697,12 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
    * **상대** (예: `myProperty` 또는 `./myProperty`)
 
       * 속성을 추가하고 제거합니다. `cq:propertyInheritanceCancelled`.
+
    * **절대** (예: `/image`)
 
       * 체인을 끊으면 상속을 취소하고 `cq:LiveSyncCancelled` mixin 대상 `./image` 및 설정 `cq:isCancelledForChildren` 끝 `true`.
 
       * 체인을 닫으면 상속이 취소됩니다.
-
 
 >[!NOTE]
 >

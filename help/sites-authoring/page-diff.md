@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 98%
+source-wordcount: '578'
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 98%
 
 두 페이지의 소스는 브라우저 창의 맨 위에 있는 헤더 막대에 명확하게 표시됩니다.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![헤더에 표시된 소스](assets/chlimage_1-109.png)
 
 비교에서는 변경 사항이 구성 요소와 HTML 수준에서 감지되고, 변경된 항목은 다른 색상으로 강조 표시됩니다.
 
@@ -78,7 +78,7 @@ ht-degree: 98%
 
 선택한 쪽이 전체 창을 채우지만, 막대는 두 페이지 간에 전환할 수 있도록 맨 위에 남아 있습니다.
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![맨 위의 막대를 사용하면 페이지 간에 전환할 수 있습니다.](assets/chlimage_1-110.png)
 
 전체 화면 종료 아이콘을 클릭하여 전체 화면 보기를 닫을 수도 있습니다.
 

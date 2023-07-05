@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 15%
+source-wordcount: '915'
+ht-degree: 14%
 
 ---
 
@@ -149,7 +149,7 @@ AEM 인스턴스가 즉시 설치되면 구성 요소 브라우저에서 다양�
 
    사용 **추가** 다중 항목 대화 상자 목록에 항목을 추가하는 단추.
 
-   ![chlimage_1-94](assets/chlimage_1-94.png)
+   ![추가 항목 추가](assets/chlimage_1-94.png)
 
    사용 **삭제** 여러 항목 대화 상자 목록에서 항목을 제거하는 아이콘.
 

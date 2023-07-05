@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 43%
+source-wordcount: '348'
+ht-degree: 41%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 43%
 
 * MSM(다중 사이트 관리자)을 사용하면 여러 위치에서 동일한 사이트 콘텐츠를 사용할 수 있지만 변형은 가능합니다.
 
-   * [콘텐츠 재사용: 다중 사이트 관리자 및 라이브 카피](/help/sites-administering/msm.md)
+   * [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-administering/msm.md)
 
 * 번역을 통해 페이지 콘텐츠, 에셋 및 사용자 생성 콘텐츠의 번역을 자동화하여 다국어 웹 사이트를 만들고 관리할 수 있습니다.
 
@@ -45,7 +45,7 @@ ht-degree: 43%
 
 다음 다이어그램은 주요 개념이 어떻게 교차하는지를 보여 줍니다(모든 수준/요소를 포함하지는 않음).
 
-![chlimage_1-71](assets/chlimage_1-71a.png)
+![MSM 및 번역의 주요 개념을 보여 주는 다이어그램](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
@@ -61,9 +61,8 @@ ht-degree: 43%
 >모든 사용 사례는 다음 모범 사례를 읽어보시기 바랍니다.
 >
 >* [MSM 모범 사례](/help/sites-administering/msm-best-practices.md); 특히:
-   >
-   >   * [사이트 생성](/help/sites-administering/msm-best-practices.md#create-site)
-   >   * [MSM 및 다국어 웹 사이트](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>   * [사이트 생성](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [MSM 및 다국어 웹 사이트](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [번역 모범 사례](/help/sites-administering/tc-bp.md)
-

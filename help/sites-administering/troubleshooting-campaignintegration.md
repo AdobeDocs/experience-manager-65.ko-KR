@@ -8,9 +8,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Adobe Campaign Classic에서 다음 오류 메시지를 찾습니다.
 
 Adobe Campaign Classic에서 뒤쪽 슬래시()가 없는지 확인합니다.`/`)를 클릭하여 추가합니다.
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![Adobe Campaign Classic - 포트 번호 뒤에 슬래시가 없는지 확인](assets/chlimage_1-149.png)
 
 ## setlocale에 대한 경고를 받는 경우 {#if-you-get-a-warning-about-your-setlocale}
 

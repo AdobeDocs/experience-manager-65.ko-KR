@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '263'
 ht-degree: 58%
 
 ---
@@ -42,35 +42,37 @@ ht-degree: 58%
 
 * **속성**
 
-   ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
+  ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
 
-   [속성] 탭에서 다음 작업을 수행할 수 있습니다.
+  [속성] 탭에서 다음 작업을 수행할 수 있습니다.
 
    * 구성 요소의 일반 속성 확인
    * 다음 방법 보기 [아이콘 또는 약어가 정의되었습니다.](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) 구성 요소에 사용됩니다.
 
       * 아이콘 소스를 클릭하면 해당 구성 요소로 이동합니다.
+
    * 보기 **리소스 유형** 및 **리소스 슈퍼 유형** (정의된 경우).
 
       * 리소스 수퍼 유형 을 클릭하면 해당 구성 요소로 이동합니다.
-   >[!NOTE]
-   >
-   >`/apps`는 런타임 시 편집할 수 없으므로 구성 요소 콘솔은 읽기 전용입니다.
+
+  >[!NOTE]
+  >
+  >`/apps`는 런타임 시 편집할 수 없으므로 구성 요소 콘솔은 읽기 전용입니다.
 
 * **정책**
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+  ![정책](assets/chlimage_1-169.png)
 
 * **라이브 사용량**
 
-   ![chlimage_1-170](assets/chlimage_1-170.png)
+  ![라이브 사용량](assets/chlimage_1-170.png)
 
-   >[!CAUTION]
-   >
-   >이 보기에 대해 수집 중인 정보의 특성으로 인해 순서대로 구성하거나 표시하는 데 시간이 걸릴 수 있습니다.
+  >[!CAUTION]
+  >
+  >이 보기에 대해 수집 중인 정보의 특성으로 인해 순서대로 구성하거나 표시하는 데 시간이 걸릴 수 있습니다.
 
 * **설명서**
 
-   개발자가 다음을 제공한 경우 [구성 요소에 대한 설명서](/help/sites-developing/developing-components.md#documenting-your-component), 다음에 표시됩니다. **설명서** 탭. 사용 가능한 설명서가 없으면 **설명서** 탭이 표시되지 않습니다.
+  개발자가 다음을 제공한 경우 [구성 요소에 대한 설명서](/help/sites-developing/developing-components.md#documenting-your-component), 다음에 표시됩니다. **설명서** 탭. 사용 가능한 설명서가 없으면 **설명서** 탭이 표시되지 않습니다.
 
-   ![chlimage_1-171](assets/chlimage_1-171.png)
+  ![설명서](assets/chlimage_1-171.png)

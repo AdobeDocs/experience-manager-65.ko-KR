@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 35%
+source-wordcount: '553'
+ht-degree: 33%
 
 ---
 
@@ -30,21 +30,21 @@ ht-degree: 35%
 
 * 롤아웃 작업을 수행합니다
 
-## 라이브 카피 개요 열기 {#opening-the-live-copy-overview}
+## Live Copy 개요 열기 {#opening-the-live-copy-overview}
 
-다음 위치에서 라이브 카피 개요를 열 수 있습니다.
+다음 위치에서 Live Copy 개요를 열 수 있습니다.
 
 * [블루프린트 페이지의 참조 측면 패널(사이트 콘솔)](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [블루프린트 페이지 속성](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
 ### 라이브 카피 개요 열기 - 블루프린트 페이지에 대한 참조 {#opening-live-copy-overview-references-for-a-blueprint-page}
 
-**사이트** 콘솔의 **참조** 측면 패널에서 **라이브 카피 개요**&#x200B;를 열 수 있습니다.
+**사이트** 콘솔의 **참조** 측면 패널에서 **Live Copy 개요**&#x200B;를 열 수 있습니다.
 
 1. **사이트** 콘솔에서 [블루프린트 페이지를 검색한 다음 선택합니다](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. 를 엽니다. **[참조](/help/sites-authoring/basic-handling.md#references)** 패널 및 선택 **라이브 카피**.
 
-   ![chlimage_1-359](assets/chlimage_1-359.png)
+   ![참조 패널 - 라이브 카피](assets/chlimage_1-359.png)
 
    >[!NOTE]
    >
@@ -55,12 +55,12 @@ ht-degree: 35%
 
 ### 라이브 카피 개요 열기 - 블루프린트 페이지 속성 {#opening-live-copy-overview-properties-of-a-blueprint-page}
 
-블루프린트 페이지 속성을 볼 때 **라이브 카피 개요**&#x200B;를 열 수 있습니다.
+블루프린트 페이지 속성을 볼 때 **Live Copy 개요**&#x200B;를 열 수 있습니다.
 
 1. 적절한 블루프린트 페이지에 대한 **속성**&#x200B;을 엽니다.
 1. **블루프린트** 탭을 열면 **라이브 카피 개요** 옵션이 상단 도구 모음에 표시됩니다.
 
-   ![chlimage_1-360](assets/chlimage_1-360.png)
+   ![블루프린트 탭 - 라이브 카피 개요](assets/chlimage_1-360.png)
 
 1. 선택 **라이브 카피 개요** 을 클릭하여 현재 블루프린트와 관련된 모든 라이브 카피의 개요를 표시하고 사용합니다.
 
@@ -70,18 +70,18 @@ ht-degree: 35%
 
 1. 종료하고 **사이트** 콘솔로 돌아가려면 **닫기**&#x200B;를 사용합니다.
 
-## 라이브 카피 개요 사용 {#using-the-live-copy-overview}
+## Live Copy 개요 사용 {#using-the-live-copy-overview}
 
 다음 **라이브 카피 개요** 는 라이브 카피에서 작업을 수행하는 데 사용할 수도 있습니다.
 
-1. **라이브 카피 개요**&#x200B;를 엽니다.
+1. **Live Copy 개요**&#x200B;를 엽니다.
 1. 필요한 블루프린트 또는 라이브 카피 페이지를 선택합니다. 사용 가능한 작업을 표시하도록 도구 모음이 업데이트됩니다. 다음 [작업](/help/sites-administering/msm.md#terms-used) 사용 가능 여부는 다음 중 하나를 선택했는지 여부에 따라 다릅니다. [블루프린트](#actions-for-a-blueprint-page) 또는 [live copy](#actions-for-a-live-copy-page) 페이지:
 
 ### 블루프린트 페이지에 대한 작업 {#actions-for-a-blueprint-page}
 
 블루프린트 페이지를 선택하면 다음과 같은 작업을 사용할 수 있습니다.
 
-![chlimage_1-361](assets/chlimage_1-361.png)
+![블루프린트 선택됨 - 사용 가능한 작업](assets/chlimage_1-361.png)
 
 * 편집
 
@@ -91,11 +91,11 @@ ht-degree: 35%
 
    * 롤아웃을 수행하여 소스에서 라이브 카피로 변경 내용을 푸시합니다.
 
-### 라이브 카피 페이지에 대한 작업 {#actions-for-a-live-copy-page}
+### Live Copy 페이지에 대한 작업 {#actions-for-a-live-copy-page}
 
 라이브 카피 페이지를 선택하면 다음 작업을 사용할 수 있습니다.
 
-![chlimage_1-362](assets/chlimage_1-362.png)
+![Live Copy 페이지 선택됨 - 사용 가능한 작업](assets/chlimage_1-362.png)
 
 * 편집
 
@@ -136,10 +136,10 @@ ht-degree: 35%
 
 이 탭은 블루프린트와 라이브 카피 간의 관계 상태에 대한 자세한 정보를 제공합니다.
 
-![chlimage_1-363](assets/chlimage_1-363.png)
+![관계 상태 정보](assets/chlimage_1-363.png)
 
 ### Live Copy 정보 {#live-copy-information}
 
 이 탭에서는 라이브 카피 구성을 보고 편집할 수 있습니다.
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![Live Copy 정보](assets/chlimage_1-364.png)

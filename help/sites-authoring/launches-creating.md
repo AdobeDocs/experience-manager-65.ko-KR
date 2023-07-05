@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 7f595bec8ea138d5a73a17d0548320a31544dcd1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 57%
+source-wordcount: '1040'
+ht-degree: 55%
 
 ---
 
@@ -41,6 +41,7 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
    * **론치**:
 
       1. 선택 **시작 만들기** 을 클릭하여 마법사를 엽니다.
+
    * **사이트**:
 
       1. 도구 모음에서 **만들기**&#x200B;를 선택하여 선택 상자를 엽니다.
@@ -59,7 +60,7 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
 
    필요에 따라 반복하십시오.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![소스 선택 및 페이지 추가](assets/chlimage_1-225.png)
 
    >[!NOTE]
    >
@@ -77,7 +78,7 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
 
    **다음**&#x200B;을 선택하여 계속 진행합니다.
 
-   ![chlimage_1-226](assets/chlimage_1-226.png)
+   ![페이지 포함 여부 지정](assets/chlimage_1-226.png)
 
 1. 마법사의 **속성** 단계에서 다음을 지정할 수 있습니다.
 
@@ -86,37 +87,35 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
    * **새 템플릿을 사용하여 페이지 바꾸기**: 자세한 내용은 [새 템플릿을 사용하여 론치 만들기](#create-launch-with-new-template)를 참조하십시오.
    * **소스 페이지의 라이브 데이터 상속**: 이 옵션을 선택하면 소스 페이지를 변경할 때 론치 페이지 콘텐츠가 자동으로 업데이트됩니다. 이 옵션은 론치를 다음으로 만들어 이 작업을 수행합니다. [live copy](/help/sites-administering/msm.md).
 
-      기본적으로 이 옵션은 선택되어 있습니다.
+     기본적으로 이 옵션은 선택되어 있습니다.
 
    * **론치 날짜**: 론치 카피가 활성화될 날짜 및 시간입니다(**프로덕션 준비** 플래그에 따라 다름). [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)를 참조하십시오.
 
-   ![chlimage_1-227](assets/chlimage_1-227.png)
+   ![속성 지정](assets/chlimage_1-227.png)
 
 1. 사용 **만들기** 프로세스를 완료하고 새 론치를 만듭니다. 확인 대화 상자에 시작을 즉시 열지 여부를 묻는 메시지가 표시됩니다.
 
    콘솔을 반환하는 경우(와 함께) **완료**) 다음 중 하나에서 론치를 보고 액세스할 수 있습니다.
 
-   * 다음 [**론치** 콘솔](/help/sites-authoring/launches.md#the-launches-console)
+   * [****&#x200B;론치 콘솔](/help/sites-authoring/launches.md#the-launches-console)
    * 다음 [**참조** 다음에서 **사이트** 콘솔](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### 새 템플릿을 사용하여 론치 만들기 {#create-launch-with-new-template}
 
-날짜 [론치 만들기](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) 새 템플릿을 사용할지 여부를 선택할 수 있습니다.
-
-**새 템플릿을 사용하여 페이지 바꾸기**
+날짜 [론치 만들기](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) 옵션을 사용하여 새 템플릿을 사용할지 여부를 선택할 수 있습니다. **새 템플릿을 사용하여 페이지 바꾸기**
 
 >[!CAUTION]
 >
 >이 옵션은 **사이트** 콘솔에서 론치를 만들 때만 사용할 수 있습니다. **론치** 콘솔에서 론치를 만들 때는 사용할 수 없습니다.
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![새 템플릿을 사용하여 페이지 바꾸기](assets/chlimage_1-228.png)
 
 이 옵션을 선택하면 다음이 수행됩니다.
 
 * 사용 가능한 다른 옵션 업데이트,
 * 필요한 템플릿을 선택할 수 있는 새 단계를 포함합니다.
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![템플릿 선택](assets/chlimage_1-229.png)
 
 >[!CAUTION]
 >
@@ -139,11 +138,11 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
 1. **론치** 콘솔에서 **만들기**&#x200B;를 선택합니다.
 1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the filter. 필요한 론치를 선택하고 **선택**&#x200B;을 사용하여 확인합니다.
 
-   ![chlimage_1-230](assets/chlimage_1-230.png)
+   ![시작 선택](assets/chlimage_1-230.png)
 
 1. 다음으로 진행 **다음** 다음을 완료합니다. **속성** 다른 론치와 마찬가지로
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![속성 지정](assets/chlimage_1-231.png)
 
 #### 중첩 론치 만들기 - 사이트 콘솔 {#creating-a-nested-launch-sites-console}
 
