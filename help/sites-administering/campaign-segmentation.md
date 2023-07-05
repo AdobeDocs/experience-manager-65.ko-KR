@@ -108,7 +108,7 @@ AEM을 사용하면 세그먼트, 티저 및 캠페인을 쉽게 만들고 업�
  </tbody>
 </table>
 
-부울 연산자 OR 및 AND를 사용하여 이러한 트레이트를 결합할 수 있습니다( 참조) [새 세그먼트 만들기](#creating-a-new-segment))을 클릭하여 이 세그먼트를 선택하기 위한 정확한 시나리오를 정의합니다.
+부울 연산자 OR 및 AND를 사용하여 이러한 트레이트를 결합할 수 있습니다(참조) [새 세그먼트 만들기](#creating-a-new-segment))을 클릭하여 이 세그먼트를 선택하기 위한 정확한 시나리오를 정의합니다.
 
 전체 명령문이 true로 평가되면 이 세그먼트가 해결됩니다. 여러 세그먼트를 적용할 수 있는 경우 **[부스트](/help/sites-administering/campaign-segmentation.md#boost-factor)** 요소도 사용됩니다.
 
