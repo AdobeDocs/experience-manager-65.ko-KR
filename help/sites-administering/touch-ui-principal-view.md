@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: ddd908ed8287d77d9009633399c1e0bc1a12fe1b
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ ACE 추가 단추를 클릭하여 새 액세스 제어 항목을 추가하여 �
 >
 >권한 및 설명의 전체 목록은 다음을 참조하십시오. [이 페이지](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![주어진 경로에 대한 검색 권한](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![주어진 경로에 대한 검색 권한.](assets/image2019-3-21_0-5-47.png) ![세로 열에서 선택한 경로로 표시되는 대로 &#39;dam-users&#39;에 대한 새 항목을 추가합니다.](assets/image2019-3-21_0-6-53.png)
 
 권한 목록을 선택한 후 사용자는 아래와 같이 권한 유형: 거부 또는 허용 을 선택할 수 있습니다.
 

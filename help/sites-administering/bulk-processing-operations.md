@@ -8,9 +8,9 @@ uuid: 62a6c379-a460-4f8f-a909-03d04fa8944b
 contentOwner: sarchiz
 discoiquuid: 47c2a80f-78ac-4372-86b4-06351a1dd58f
 docset: aem65
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
@@ -43,42 +43,42 @@ ht-degree: 2%
 
 ### 카드 보기 {#card-view}
 
-![](assets/unu.png)
+![다양한 이미지 에셋의 썸네일 이미지를 보여 주는 카드 보기.](assets/unu.png)
 
 ### 카드 보기에서 일괄 선택 {#bulk-selection-in-card-view}
 
 에셋 또는 페이지는 다음을 사용하여 일괄적으로 선택할 수 있습니다. **모두 선택** 오른쪽 상단의 단추:
 
-![](assets/doi.png) ![](assets/trei.png)
+![카드 보기의 오른쪽 상단에 있는 모두 버튼을 선택합니다.](assets/doi.png) ![카드 보기에 있는 이미지 에셋의 모든 썸네일 이미지는 선택 표시와 함께 선택된 상태로 표시됩니다.](assets/trei.png)
 
 ### 목록 보기 {#list-view}
 
 목록 보기에도 마찬가지입니다.
 
-![](assets/patru_modified.png)
+![목록 보기(List View)의 오른쪽 위 모서리에 있는 모두 선택(Select All) 옵션이 강조 표시됩니다.](assets/patru_modified.png)
 
 ### 목록 보기의 일괄 선택 {#bulk-selection-in-list-view}
 
 목록 보기에서 **모두 선택** 버튼을 클릭하거나 왼쪽의 확인란을 사용하여 대량 선택을 하십시오.
 
-![](assets/cinci.png) ![](assets/sase.png)
+![이미지 에셋의 썸네일 이미지가 가로 행으로 표시되는 라이브 뷰](assets/cinci.png) ![이미지 에셋의 썸네일 이미지를 표시하는 목록 상자와 이름 왼쪽에 있는 확인란입니다.](assets/sase.png)
 
 ### 열 보기 {#column-view}
 
-![](assets/sapte.png)
+![세로 열에 표시된 이미지 에셋의 썸네일 이미지를 보여 주는 열 보기.](assets/sapte.png)
 
 ### 열 보기의 일괄 선택 {#bulk-selection-in-column-view}
 
-![](assets/opt.png)
+![열 보기에 있는 이미지 에셋의 모든 썸네일 이미지는 선택 표시와 함께 선택된 상태로 표시됩니다.](assets/opt.png)
 
 ## 대량 사용 작업 {#bulk-enabled-operations}
 
-선택 후 세 가지 일괄 활성화된 작업 중 하나를 수행할 수 있습니다. **이동**, **복사** 또는 **삭제**.
+선택 후 벌크로 활성화된 세 가지 작업 중 하나를 수행할 수 있습니다. **이동**, **복사** 또는 **삭제**.
 
 여기, **이동** 위에서 선택한 자산에 대해 작업이 수행됩니다. 모든 보기에서 화면에 로드된 자산뿐만 아니라 선택한 위치로 모든 자산이 이동됩니다.
 
-![](assets/noua.png)
+![열 보기에서 선택한 폴더를 표시하는 자산을 이동합니다.](assets/noua.png)
 
 대량 활성화되지 않은 기타 작업: **다운로드,** 브라우저에 로드된 요소만 작업에 포함된다는 경고만 표시됩니다.
 
-![](assets/zece.png)
+![선택한 이미지 에셋과 팝업 대화 상자 &quot;일괄 작업이 지원되지 않음&quot;을 표시하는 에셋 보기.](assets/zece.png)

@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 3802eb71dc6d17db4b1158d8d433ba1c516e54f2
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '3011'
+source-wordcount: '3024'
 ht-degree: 83%
 
 ---
@@ -178,7 +178,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 * [레일 선택기](/help/sites-authoring/basic-handling.md#rail-selector)
 
-  ![](do-not-localize/screen_shot_2018-03-23at103943.png)
+  ![Adobe Experience Manager 화면 왼쪽에 표시되는 레일 선택기 목록입니다.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
   제공된 옵션은 현재 콘솔에 따라 다릅니다. 예를 들어 **사이트**&#x200B;에서 컨텐츠 전용(기본값), 타임라인, 참조 또는 필터 사이드 패널을 선택할 수 있습니다.
 

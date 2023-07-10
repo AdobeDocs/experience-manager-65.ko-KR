@@ -5,9 +5,9 @@ description: AEM Communities 배포 방법
 seo-description: How to deploy AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1755'
 ht-degree: 2%
 
 ---
@@ -53,27 +53,27 @@ ht-degree: 2%
       * [MongoDB 설치 및 구성](/help/communities/msrp.md#mongodb-configuration)
       * [Solr 구성](/help/communities/solr.md)
       * [MSRP 선택](/help/communities/srp-config.md)
+
    * 관계형 데이터베이스 SRP인 경우 [(DSRP)](/help/communities/dsrp.md)
 
       * [MySQL용 JDBC 드라이버 설치](#jdbc-driver-for-mysql)
       * [DSRP용 MySQL 설치 및 구성](/help/communities/dsrp-mysql.md)
       * [Solr 구성](/help/communities/solr.md)
       * [DSRP 선택](/help/communities/srp-config.md)
+
    * Adobe SRP인 경우 [(ASRP)](/help/communities/asrp.md)
 
       * 계정 담당자에게 프로비저닝을 요청하십시오.
       * [ASRP 선택](/help/communities/srp-config.md)
+
    * JCR SRP인 경우 [(JSRP)](/help/communities/jsrp.md)
 
       * 공유 UGC 저장소가 아님:
 
          * UGC는 복제되지 않습니다.
          * UGC는 입력된 AEM 인스턴스 또는 클러스터에서만 볼 수 있습니다.
+
       * 기본값은 JSRP입니다.
-
-
-
-
 
 
 ## 최신 릴리스 {#latest-releases}
@@ -124,7 +124,7 @@ MySQL 커넥터를 별도로 가져와 설치해야 합니다.
 
 #### 예 : 설치된 MySQL 커넥터 번들 {#example-installed-mysql-connector-bundle}
 
-![](../assets/mysql-connector.png)
+![Adobe Experience Manager 웹 콘솔 MySQL 커넥터 번들](../assets/mysql-connector.png)
 
 ### AEM 고급 MLS {#aem-advanced-mls}
 
@@ -186,7 +186,7 @@ AEM Communities에서 일반 저장소는 UGC(사용자 생성 컨텐츠)를 저
 
 따라서 다음을 수행해야 합니다. **모든 보조 게시 인스턴스에서 구성 편집** 을(를) 선택 해제하려면 **`Primary Publisher`** 확인란.
 
-![](../assets/primary-publisher.png)
+![주 게시자 확인란을 표시하는 AEM Communities 게시자 구성 대화 상자](../assets/primary-publisher.png)
 
 게시 팜의 다른 모든(보조) 게시 인스턴스의 경우:
 
@@ -234,7 +234,7 @@ AEM Communities에서 일반 저장소는 UGC(사용자 생성 컨텐츠)를 저
 
 #### 역방향 복제 에이전트(게시 역방향) {#reverse-replication-agent-publish-reverse}
 
-![](../assets/reverse-replication-agent.png)
+![역방향 복제 에이전트(게시 취소)가 켜져 있거나 활성화되어 있음을 보여 줍니다.](../assets/reverse-replication-agent.png)
 
 ### 작성자의 터널 서비스 {#tunnel-service-on-author}
 
@@ -256,7 +256,7 @@ AEM Communities에서 일반 저장소는 UGC(사용자 생성 컨텐츠)를 저
 * 다음 항목 선택 **활성화** 확인란
 * 선택 **저장**
 
-![](../assets/tunnel-service.png)
+![선택 또는 선택된 &quot;활성화&quot; 확인란이 표시된 AEM Communities Publish 터널 서비스](../assets/tunnel-service.png)
 
 ### 암호화 키 복제 {#replicate-the-crypto-key}
 
@@ -270,25 +270,25 @@ AEM 6.3부터 주요 자료는 파일 시스템에 저장되며 더 이상 저�
 
    * 를 찾습니다. `com.adobe.granite.crypto.file` 로컬 파일 시스템의 번들
 
-      예를 들어
+     예를 들어
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * 다음 `bundle.info` 파일이 번들을 식별함
+
    * 데이터 폴더로 이동합니다. 예:
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+
    * hmac 및 기본 노드 파일을 복사합니다.
-
-
 
 * 각 대상 AEM 인스턴스에 대해
 
    * 데이터 폴더로 이동합니다. 예:
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+
    * 이전에 복사한 파일 2개 붙여넣기
    * 다음 작업을 수행해야 합니다. [granite Crypto 번들 새로 고침](#refresh-the-granite-crypto-bundle) 대상 AEM 인스턴스가 현재 실행 중인 경우.
-
 
 >[!CAUTION]
 >
@@ -315,7 +315,7 @@ AEM 6.2 및 이전 버전의 경우와 마찬가지로 주요 재료를 저장�
 
 * [granite Crypto 번들 새로 고침](#refresh-the-granite-crypto-bundle)
 
-![](../assets/replicare-repository.png)
+![왼쪽 패널의 경로 /etc/key와 오른쪽 하단 패널에서 선택한 복제 탭을 표시하는 CRXDE Lite.](../assets/replicare-repository.png)
 
 #### Granite Crypto 번들 새로 고침 {#refresh-the-granite-crypto-bundle}
 
@@ -326,10 +326,10 @@ AEM 6.2 및 이전 버전의 경우와 마찬가지로 주요 재료를 저장�
 * 찾기 `Adobe Granite Crypto Support` 번들 (com.adobe.granite.crypto)
 * 선택 **새로 고침**
 
-![](../assets/refresh-granite-bundle.png)
+![Adobe Granite Crypto 지원 번들을 새로 고치는 중입니다.](../assets/refresh-granite-bundle.png)
 
 * 잠시 후 **성공** 대화 상자가 표시됩니다.
-   `Operation completed successfully.`
+  `Operation completed successfully.`
 
 ### Apache HTTP 서버 {#apache-http-server}
 
