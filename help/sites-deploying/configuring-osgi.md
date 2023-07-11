@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: bf55fcb855cbdad72c669058662ca70fe57e6632
 workflow-type: tm+mt
-source-wordcount: '1949'
+source-wordcount: '1973'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
 
    * 웹 콘솔은 OSGi 구성을 위한 표준 인터페이스입니다. 사전 정의된 목록에서 가능한 값을 선택할 수 있는 다양한 속성을 편집하기 위한 UI를 제공합니다.
 
-      따라서 가장 사용하기 쉬운 방법입니다.
+     따라서 가장 사용하기 쉬운 방법입니다.
 
    * 웹 콘솔에서 수행된 모든 구성은 현재 실행 모드나 그 이후의 실행 모드 변경 사항에 관계없이 즉시 적용되며 현재 인스턴스에 적용할 수 있습니다.
 
@@ -86,11 +86,12 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
 
    * 의 링크에서 웹 콘솔 열기 **도구 -> 작업** 메뉴 아래의 제품에서 사용할 수 있습니다. 콘솔에 로그인하면 의 드롭다운 메뉴를 사용할 수 있습니다.
 
-      **OSGi >**
+     **OSGi >**
 
    * 직접 URL. 예:
 
-      `http://localhost:4502/system/console/configMgr`
+     `http://localhost:4502/system/console/configMgr`
+
    목록이 표시됩니다.
 
 1. 다음 중 하나로 구성할 번들을 선택합니다.
@@ -124,7 +125,9 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
 
 >[!NOTE]
 >
->구성 파일의 형식은 특정 - 다음을 참조하십시오. [Sling Apache 설명서](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) 전체 세부 정보.
+>구성 파일의 형식은 고유합니다. 다음에 대한 Sling Apache 설명서를 참조하십시오.
+>* 의 전체 세부 정보 [apache Sling 프로비저닝 모델 및 Apache SlingStart](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>* 의 튜토리얼 및 예제 [Sling에서 리소스 및 속성 가져오기](https://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html).
 >
 >따라서 웹 콘솔에서 실제 변경 작업을 수행하여 구성 파일을 만들고 유지 관리하는 것이 좋습니다.
 
@@ -206,7 +209,7 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. 구성이 다음 위치에 있습니까? `/libs`? 인스턴스의 모든 구성을 나열하려면 **쿼리** 다음 SQL 쿼리를 제출하는 CRXDE Lite의 도구:
+1. 구성 위치 `/libs`? 인스턴스의 모든 구성을 나열하려면 **쿼리** 다음 SQL 쿼리를 제출하는 CRXDE Lite의 도구:
 
    `select * from sling:OsgiConfig`
 
@@ -230,7 +233,8 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
    * 유형: `sling:OsgiConfig`
    * 이름: 영구 ID(PID);
 
-      예: AEM WCM 버전 관리자 사용 `com.day.cq.wcm.core.impl.VersionManagerImpl`
+     예: AEM WCM 버전 관리자 사용 `com.day.cq.wcm.core.impl.VersionManagerImpl`
+
    >[!NOTE]
    >
    >출하 시 구성 추가 `-<identifier>` 을(를) 이름입니다.
@@ -310,15 +314,15 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
 
 * 작성자 - AEM WCM 필터:
 
-   `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
+  `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
 
 * 게시 - AEM WCM 필터:
 
-   `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
+  `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
 
 * 게시 - AEM WCM 페이지 통계:
 
-   `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
+  `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
 
 >[!NOTE]
 >
@@ -332,25 +336,25 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
 
 * 웹 콘솔을 통해 구성을 변경하는 경우 이 구성은 (일반적으로) 다음 위치의 저장소에 기록됩니다.
 
-   `/apps/{somewhere}`
+  `/apps/{somewhere}`
 
    * 기본적으로 `{somewhere}` 은(는) `system/config` 구성을 (으)로 기록합니다.
 
-      `/apps/system/config`
+     `/apps/system/config`
 
    * 그러나 처음 저장소의 다른 위치에서 가져온 구성을 편집하는 경우: 예를 들면 다음과 같습니다.
 
-      /libs/foo/config/someconfig
+     /libs/foo/config/someconfig
 
-      그런 다음 업데이트된 구성이 원래 위치 아래에 기록됩니다. 예를 들면 다음과 같습니다.
+     그런 다음 업데이트된 구성이 원래 위치 아래에 기록됩니다. 예를 들면 다음과 같습니다.
 
-      `/apps/foo/config/someconfig`
+     `/apps/foo/config/someconfig`
 
 * 다음에 의해 변경된 설정 `admin` 저장 위치: `*.config` 아래에 있는 파일:
 
-   ```
-      /crx-quickstart/launchpad/config
-   ```
+  ```
+     /crx-quickstart/launchpad/config
+  ```
 
    * 이 영역은 OSGi 구성 관리자의 개인 데이터이며,에서 지정한 모든 구성 세부 정보를 포함합니다. `admin`로 식별됩니다.
    * 이 영역은 구현 세부 사항이므로 이 디렉터리를 직접 편집해서는 안 됩니다.
@@ -358,11 +362,11 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
 
       * Apache Felix OSGi 관리 콘솔
 
-         `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
+        `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
       * CRX Sling 클라이언트 저장소
 
-         `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
+        `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 
 >[!CAUTION]
 >
