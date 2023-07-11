@@ -1,18 +1,14 @@
 ---
 title: We.Retail 참조 구현
-seo-title: We.Retail Reference Implementation
 description: We.Retail은 AEM을 사용하여 온라인 상태를 설정하는 권장 방법을 보여 주는 참조 구현의 기술 미리 보기입니다
-seo-description: We.Retail is a technology preview of a reference implementation that illustrates the recommended way of setting up an online presence with AEM
-uuid: d8833192-b592-4812-bf9b-bd882e8ee7f0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '749'
 ht-degree: 10%
 
 ---
@@ -39,7 +35,7 @@ AEM 표준 참조 구현인 We.Retail에서는 AEM의 가장 강력한 기능 �
 | [HTML 템플릿 언어](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | 모든 구성 요소는 HTL을 기반으로 합니다. |  |
 | [eCommerce 기능](/help/commerce/cif-classic/developing/ecommerce.md) | 제품 카탈로그 기능 |  |
 | [커뮤니티 사이트](/help/communities/overview.md) | 방문자가 커뮤니티 토론에 참여하고 블로그를 읽는 등 다양한 활동을 할 수 있도록 허용 |  |
-| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며, 보다 유용하고 즉시 구성 가능한 구성 요소입니다 | [한번 해봐!](/help/sites-developing/we-retail-core-components.md) |
+| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며, 보다 유용하고 즉시 구성 가능한 구성 요소입니다 | [한번 해봐!](/help/sites-developing/we-retail-core-components.md) |
 | [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) | We.Retail 경험 섹션에서는 콘텐츠 조각을 통해 콘텐츠를 재사용할 수 있는 기능을 보여줍니다. | [한번 해봐!](/help/sites-developing/we-retail-content-fragments.md) |
 | [경험 조각](/help/sites-authoring/experience-fragments.md) | 경험 조각 은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. | [한번 해봐!](/help/sites-developing/we-retail-experience-fragments.md) |
 
@@ -49,7 +45,7 @@ We.Retail은 AEM 샘플 콘텐츠로 제공됩니다. 를 사용하려면 [평�
 
 >[!CAUTION]
 >
->We.Retail은 프로덕션 인스턴스에 설치하지 않아야 합니다. 프로덕션 인스턴스는 다음 위치에서 시작해야 합니다 `nosamplecontent` [실행 모드](/help/sites-deploying/configure-runmodes.md).
+>프로덕션 인스턴스에 We.Retail을 설치하지 마십시오. 프로덕션 인스턴스는 다음 위치에서 시작해야 합니다 `nosamplecontent` [실행 모드](/help/sites-deploying/configure-runmodes.md).
 
 >[!CAUTION]
 >
@@ -62,7 +58,7 @@ We.Retail은 AEM 릴리스와 함께 배포되지만 콘텐츠 및 해당 기능
 ### 첫 단계 {#first-steps}
 
 1. AEM이 시작(및/또는 We.Retail이 설치)되면 사이트가 표시됩니다 **We.Retail** 다음에서 사용할 수 있습니다. [사이트 콘솔](/help/sites-authoring/basic-handling.md#global-navigation).
-1. 예를 들어 다음 페이지를 열 수 있으며에 표시된 것과 같이 표시되어야 합니다. [부록](#appendix) 아래:
+1. 예를 들어 다음 페이지를 열 수 있으며에 표시된 대로 표시되어야 합니다. [부록](#appendix) 아래:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
 
@@ -109,11 +105,11 @@ GITHUB의 코드
 GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-sample-we-retail 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
-* 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip)
+* 다음으로 프로젝트 다운로드 [ZIP 파일](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
 
-최신 릴리스는 다음과 같을 수도 있습니다. [바로 다운로드됨](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) 를 설치 가능한 패키지로 만듭니다.
+최신 릴리스는 다음과 같을 수도 있습니다. [바로 다운로드됨](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) 를 설치 가능한 패키지로 만듭니다.
 
-문제가 발생하면 파일을 제출하십시오. [GitHub 문제](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+문제가 발생하면 다음 파일을 제출하십시오. [GitHub 문제](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
 자유롭게 포크하거나 기여 [가져오기 요청](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls).
 

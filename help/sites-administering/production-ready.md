@@ -1,27 +1,23 @@
 ---
 title: 프로덕션 준비 모드에서 AEM 실행
-seo-title: Running AEM in Production Ready Mode
 description: 프로덕션 준비 모드에서 AEM을 실행하는 방법에 대해 알아봅니다.
-seo-description: Learn how to run AEM in Production Ready Mode.
-uuid: f48c8bae-c72f-4772-967e-f1526f096399
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '378'
 ht-degree: 4%
 
 ---
 
 # 프로덕션 준비 모드에서 AEM 실행{#running-aem-in-production-ready-mode}
 
-AEM 6.1에서 Adobe은 새로운 `"nosamplecontent"` runmode는 프로덕션 환경에서 배포할 AEM 인스턴스를 준비하는 데 필요한 단계를 자동화하는 것을 목표로 합니다.
+AEM 6.1에서 Adobe은 새로운 `"nosamplecontent"` 실행 모드는 프로덕션 환경에서 배포할 AEM 인스턴스를 준비하는 데 필요한 단계를 자동화하는 데 목적이 있습니다.
 
-새 실행 모드는 보안 확인 목록에 설명된 보안 모범 사례를 준수하도록 인스턴스를 자동으로 구성할 뿐만 아니라 프로세스에서 모든 샘플 geometrixx 응용 프로그램 및 구성을 제거합니다.
+새 실행 모드는 보안 확인 목록에 설명된 보안 모범 사례를 준수하도록 인스턴스를 자동으로 구성할 뿐만 아니라 프로세스에서 모든 샘플 Geometrixx 애플리케이션 및 구성을 제거합니다.
 
 >[!NOTE]
 >
@@ -31,7 +27,7 @@ AEM 6.1에서 Adobe은 새로운 `"nosamplecontent"` runmode는 프로덕션 환
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-프로덕션 준비 모드에서 AEM을 실행하려면 를 추가하면 됩니다. `nosamplecontent` 를 통해 `-r` 실행 모드를 기존 시작 인수로 전환합니다.
+프로덕션 준비 모드에서 AEM을 실행하려면 를 추가해야 합니다. `nosamplecontent` 를 통해 `-r` 기존 시작 인수로 실행 모드 전환:
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -45,14 +41,14 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 ## 프로덕션 준비 모드의 일부 변경 {#changes-part-of-the-production-ready-mode}
 
-특히, AEM이 프로덕션 준비 모드에서 실행되면 다음 구성 변경이 수행됩니다.
+특히 AEM이 프로덕션 준비 모드에서 실행될 때 다음 구성 변경이 수행됩니다.
 
 1. 다음 **CRXDE 지원 번들** ( `com.adobe.granite.crxde-support`)는 프로덕션 준비 모드에서 기본적으로 비활성화됩니다. Adobe 공개 Maven 저장소에서 언제든지 설치할 수 있습니다. AEM 6.1에는 버전 3.0.0이 필요합니다.
 
 1. 다음 **저장소에 대한 Apache Sling 간단한 WebDAV 액세스** ( `org.apache.sling.jcr.webdav`) 번들은 다음에만 사용할 수 있습니다. **작성자** 인스턴스.
 
-1. 새로 생성된 사용자는 첫 번째 로그인 시 암호를 변경해야 합니다. 관리자 사용자에게는 적용되지 않습니다.
-1. **디버그 정보 생성** 이(가) 다음에 대해 비활성화되어 있습니다. **Apache Sling Java Script 핸들러**.
+1. 새로 생성된 사용자는 처음 로그인할 때 암호를 변경해야 합니다. 관리자 사용자에게는 적용되지 않습니다.
+1. **디버그 정보 생성** 이(가) 다음에 대해 비활성화되어 있습니다. **Apache Sling JavaScript 핸들러**.
 
 1. **매핑된 컨텐츠** 및 **디버그 정보 생성** 다음에 대해 비활성화됨 **Apache Sling JSP Script Handler**.
 

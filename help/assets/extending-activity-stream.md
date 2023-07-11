@@ -5,16 +5,16 @@ contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
 
 # 통합 [!DNL Assets] 활동 스트림 포함 {#integrating-assets-with-activity-stream}
 
-[!DNL Adobe Experience Manager Assets] 사용자는 에셋 생성, 업로드 및 삭제와 같은 다양한 작업을 수행합니다. 이러한 작업을 기록하여 사용자가 수행한 작업의 내역을 제공할 수 있습니다. 이 섹션에서는 의 기록 기능에 대해 설명합니다. [!DNL Experience Manager] 및 구성 방법 [!DNL Experience Manager] 특정 이벤트를 기록하기 위해
+[!DNL Adobe Experience Manager Assets] 사용자는 에셋 생성, 업로드 및 삭제와 같은 다양한 작업을 수행합니다. 이러한 작업을 기록하여 사용자가 수행한 작업의 내역을 제공할 수 있습니다. 이 섹션에서는 의 기록 기능에 대해 설명합니다. [!DNL Experience Manager] 및 구성 방법 [!DNL Experience Manager] 특정 이벤트를 기록합니다.
 
 ## 성능 고려 사항 및 기본 동작 {#performance-considerations-and-default-behavior}
 
@@ -52,10 +52,10 @@ ht-degree: 0%
 
 1. 확인 **[!UICONTROL 이 서비스 사용]**.
 
-1. 확인 **[!UICONTROL 이벤트 유형]** 사용자 활동 스트림에 기록하고자 합니다.
+1. 확인 **[!UICONTROL 이벤트 유형]** 사용자 활동 스트림에 기록할 것입니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ## 기록된 이벤트 읽기 {#reading-recorded-events}
 
-기록된 이벤트는 활동으로 저장됩니다. 다음을 사용하여 프로그래밍 방식으로 읽을 수 있습니다. [ActivityManager API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+기록된 이벤트는 활동으로 저장됩니다. 다음을 사용하여 프로그래밍 방식으로 읽을 수 있습니다. [ActivityManager API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

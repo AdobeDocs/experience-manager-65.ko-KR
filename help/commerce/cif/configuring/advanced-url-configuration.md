@@ -9,9 +9,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '898'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 많은 AEM 프로젝트에서 SEO 문제를 해결해야 합니다. 다음을 읽으십시오. [SEO 및 URL 관리 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) 추가 정보.
+>SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 많은 AEM 프로젝트에서 SEO 문제를 해결해야 합니다. 다음을 참조하십시오 [SEO 및 URL 관리 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) 추가 정보.
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) 는 제품 및 카테고리 페이지의 URL을 사용자 지정하는 고급 구성을 제공합니다. 많은 구현이 SEO(검색 엔진 최적화) 목적으로 이러한 URL을 사용자 지정합니다. 다음 비디오에서는 구성 방법에 대해 자세히 설명합니다. `UrlProvider` 의 서비스 및 기능 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 제품 및 카테고리 페이지의 URL을 사용자 지정합니다.
 
@@ -32,7 +32,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->AEM CIF 핵심 구성 요소 릴리스 2.0.0부터 URL 공급자 구성은 1.x 릴리스의 자유 텍스트 구성 가능 형식 대신 사전 정의된 URL 형식만 제공합니다. 또한 선택기를 사용하여 URL에 데이터를 전달하던 방식이 접미사로 대체되었습니다.
+>AEM CIF 핵심 구성 요소 릴리스 2.0.0부터 URL 공급자 구성은 1.x 릴리스에 알려진 자유 텍스트 구성 가능 형식 대신 사전 정의된 URL 형식만 제공합니다. 또한 선택기를 사용하여 URL에 데이터를 전달하던 방식이 접미사로 대체되었습니다.
 
 ### 제품 페이지 URL 형식 {#product}
 
@@ -46,13 +46,13 @@ ht-degree: 6%
 
 의 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` 이(가) (으)로 대체됩니다. `/content/venia/us/en/products/product-page`
-* `{{sku}}` 는 제품의 sku로 교체됩니다. 예: `VP09`
+* `{{page}}` 이(가) (으)로 대체됨 `/content/venia/us/en/products/product-page`
+* `{{sku}}` 는 제품의 SKU로 대체됩니다. 예: `VP09`
 * `{{url_key}}` 이(가) 제품의 (으)로 대체됩니다. `url_key` 속성(예: ) `lenora-crochet-shorts`
 * `{{url_path}}` 이(가) 제품의 (으)로 대체됩니다. `url_path`, 예: `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` 은 현재 선택된 변형으로 대체됩니다(예: ). `VP09-KH-S`
+* `{{variant_sku}}` 는 현재 선택한 변형(예: )으로 대체됩니다. `VP09-KH-S`
 
-다음 이후 `url_path` 더 이상 사용되지 않는 경우 사전 정의된 제품 URL 형식은 `url_rewrites` 다음과 같은 경우 대안으로 가장 많은 경로 세그먼트가 있는 세그먼트를 선택합니다. `url_path` 을(를) 사용할 수 없습니다.
+다음 이후 `url_path` 더 이상 사용되지 않는 경우 사전 정의된 제품 URL 형식은 `url_rewrites` 다음과 같은 경우 가장 많은 경로 세그먼트가 있는 세그먼트를 대안으로 선택하십시오. `url_path` 을(를) 사용할 수 없습니다.
 
 위의 예제 데이터를 사용하면 기본 URL 형식을 사용하여 형식이 지정된 제품 변형 URL이 다음과 같이 표시됩니다 `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
@@ -65,11 +65,11 @@ ht-degree: 6%
 
 의 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` 이(가) (으)로 대체됩니다. `/content/venia/us/en/products/category-page`
-* `{{url_key}}` 은(는) 범주의 `url_key` 속성
-* `{{url_path}}` 은(는) 범주의 `url_path`
+* `{{page}}` 이(가) (으)로 대체됨 `/content/venia/us/en/products/category-page`
+* `{{url_key}}` 이(가) 범주의 `url_key` 속성
+* `{{url_path}}` 이(가) 범주의 `url_path`
 
-위의 예제 데이터를 사용하면 기본 URL 형식을 사용하여 형식이 지정된 카테고리 페이지 URL이 다음과 같이 표시됩니다 `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
+위의 예제 데이터를 사용하면 기본 URL 형식을 사용하여 형식이 지정된 카테고리 페이지 URL이 다음과 같습니다 `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
 >[!NOTE]
 > 
@@ -85,13 +85,13 @@ ht-degree: 6%
 
 ## 사용자 정의 URL 형식 {#custom-url-format}
 
-사용자 지정 URL 형식을 제공하기 위해 프로젝트는 다음을 모두 구현할 수 있습니다. [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) 또는 [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) 서비스 인터페이스를 구현하고 구현을 OSGI 서비스로 등록합니다. 가능한 경우 이러한 구현은 구성된 사전 정의된 형식을 대체합니다. 등록된 구현이 여러 개일 경우, 서비스 등급이 높은 구현이 낮은 구현으로 대체됩니다.
+프로젝트에서 구현할 수 있는 사용자 정의 URL 형식을 제공하려면 [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) 또는 [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) 서비스 인터페이스를 구현하고 구현을 OSGI 서비스로 등록합니다. 이러한 구현은 사용 가능한 경우 구성된 사전 정의된 형식을 대체합니다. 등록된 구현이 여러 개일 경우 서비스 순위가 높은 구현이 서비스 순위가 낮은 구현을 대체합니다.
 
 사용자 지정 URL 형식 구현은 주어진 매개 변수에서 URL을 작성하고 URL을 구문 분석하여 동일한 매개 변수를 각각 반환하기 위한 메서드 쌍을 구현해야 합니다.
 
 ## Sling 매핑과 결합 {#sling-mapping}
 
-이외에도 `UrlProvider`를 설정하는 것도 가능합니다. [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) URL을 다시 작성하고 처리합니다. AEM Archetype 프로젝트에서는 [예제 구성](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 포트 4503(게시) 및 80(dispatcher)에 대해 일부 Sling 매핑을 구성합니다.
+이외에도 `UrlProvider`를 설정하는 것도 가능합니다. [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 를 클릭하여 URL을 다시 작성하고 처리합니다. AEM Archetype 프로젝트에서는 [예제 구성](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 포트 4503(게시) 및 80(Dispatcher)에 대해 일부 Sling 매핑을 구성합니다.
 
 ## AEM Dispatcher와 결합 {#dispatcher}
 

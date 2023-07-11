@@ -1,16 +1,14 @@
 ---
 title: xtype 사용(클래식 UI)
-description: AEM에서 사용할 수 있는 모든 xtype에 대해 알아보기
-uuid: 6497caa4-2f9b-4f21-9023-88d485fd1d78
+description: Adobe Experience Manager에서 사용할 수 있는 모든 xtype에 대해 알아봅니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: adb70b43-1b0b-4302-905a-c7612675dabb
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '6400'
+source-wordcount: '6384'
 ht-degree: 0%
 
 ---
@@ -35,13 +33,13 @@ AEM에서 사용 가능한 모든 위젯에 대한 전체 정보는 을 참조�
 
 ## xtypes {#xtypes}
 
-Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서 찾으십시오.
+다음은 Adobe Experience Manager에서 사용할 수 있는 xtype입니다.
 
 * 주석
 
   [CQ.wcm.Annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Annotation)
 
-  대화 상자는 본문에 양식이 있고 바닥글에 단추 그룹이 있는 특수한 종류의 창입니다. 일반적으로 콘텐츠를 편집하는 데 사용되지만 정보를 표시할 수도 있습니다.
+  대화 상자는 본문에 양식이 있고 바닥글에 단추 그룹이 있는 특수한 종류의 창입니다. 일반적으로 콘텐츠를 편집하는 데 사용되지만, 정보만 표시할 수도 있습니다.
 
 * arraystore
 
@@ -109,7 +107,7 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   BulkEditorForm은 [CQ.wcm.Bulk편집기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) HTML 양식으로 둘러싸여 있습니다. 독립 실행형 버전의 입니다. [CQ.wcm.Bulk편집기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor), 가져오기 단추에 HTML 양식이 필요합니다.
 
-* 단추
+* 추가할 수도 있습니다
 
   [CQ.Ext.Button](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)
 
@@ -181,7 +179,7 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.Ext.Component](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component)
 
-  모든 외부 구성 요소에 대한 기본 클래스입니다. Component의 모든 하위 클래스는 에서 제공하는 작성, 렌더링 및 삭제의 자동화된 Ext 구성 요소 라이프사이클에 참여할 수 있습니다. [컨테이너](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) 클래스. 구성 요소는 를 통해 컨테이너에 추가될 수 있습니다. [개 항목](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) 컨테이너를 만들 때 옵션을 구성합니다.
+  모든 외부 구성 요소에 대한 기본 클래스입니다. Component의 모든 하위 클래스는 에서 제공하는 작성, 렌더링 및 삭제의 자동 외부 구성 요소 라이프사이클에 참여할 수 있습니다. [컨테이너](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) 클래스. 구성 요소는 를 통해 컨테이너에 추가될 수 있습니다. [개 항목](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) 컨테이너를 만들 때 옵션을 구성합니다.
 
 * componentextractor
 
@@ -211,13 +209,13 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   임의의 기본 클래스 [CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent) 다른 구성 요소를 포함할 수 있습니다. 컨테이너는 포함 항목의 기본 동작, 즉 항목 추가, 삽입 및 제거를 처리합니다.
 
-  가장 일반적으로 사용되는 컨테이너 클래스는 다음과 같습니다 [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel), [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) 및 [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel).
+  가장 일반적으로 사용되는 컨테이너 클래스는 다음과 같습니다 [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel), [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window), 및 [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel).
 
 * 컨텐츠 파인더
 
   [CQ.wcm.ContentFinder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder)
 
-  ContentFinder는 전문화된 두 개의 열입니다 [뷰포트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Viewport) 왼쪽에는 실제 콘텐츠 파인더, 오른쪽에는 콘텐츠 프레임이 들어 있습니다.
+  ContentFinder는 전문화된 2열 구조입니다 [뷰포트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Viewport) 왼쪽에는 실제 콘텐츠 파인더, 오른쪽에는 콘텐츠 프레임이 들어 있습니다.
 
 * contentfindertab
 
@@ -295,7 +293,7 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)
 
-  대화 상자는 본문에 양식이 있고 바닥글에 단추 그룹이 있는 특수한 종류의 창입니다. 일반적으로 콘텐츠를 편집하는 데 사용되지만 정보를 표시할 수도 있습니다.
+  대화 상자는 본문에 양식이 있고 바닥글에 단추 그룹이 있는 특수한 종류의 창입니다. 일반적으로 콘텐츠를 편집하는 데 사용되지만, 정보만 표시할 수도 있습니다.
 
 * 대화 상자 세트
 
@@ -385,13 +383,13 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)
 
-  이 클래스는 데이터를 행과 열의 테이블 형식으로 나타내는 구성 요소 기반 표 컨트롤의 기본 인터페이스를 나타냅니다.
+  이 클래스는 데이터를 행과 열의 테이블 형식으로 나타내는 구성 요소 기반 그리드 컨트롤의 기본 인터페이스를 나타냅니다.
 
 * groupingstore
 
   [CQ.Ext.data.GroupingStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)
 
-  사용 가능한 필드 중 하나별로 레코드를 그룹화하는 기능을 제공하는 전문 스토어 구현입니다. 이 함수는 일반적으로 [CQ.Ext.grid.GroupingView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GroupingView) 그룹화된 GridPanel에 대한 데이터 모델을 증명합니다.
+  사용 가능한 필드 중 하나별로 레코드를 그룹화하는 기능을 제공하는 전문 스토어 구현입니다. 다음과함께 사용됩니다. [CQ.Ext.grid.GroupingView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GroupingView) 그룹화된 GridPanel에 대한 데이터 모델을 증명합니다.
 
 * heavymovedialog
 
@@ -429,7 +427,7 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.IframePanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.IframePanel)
 
-  iframe이 포함된 패널입니다. iframe의 쉬운 생성, iframe 로드 이벤트 및 iframe의 콘텐츠에 대한 쉬운 액세스를 제공합니다.
+  iframe이 포함된 패널입니다. iframe을 쉽게 만들고, iframe 로드 이벤트를 만들고, iframe 컨텐츠에 쉽게 액세스할 수 있습니다.
 
 * inlinetextfield
 
@@ -509,7 +507,7 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.Ext.menu.Menu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Menu)
 
-  메뉴 개체. 메뉴 항목을 추가할 수 있는 컨테이너입니다. 다른 구성 요소를 기반으로 특수 메뉴를 원하는 경우 Menu를 기본 클래스로 사용할 수도 있습니다(예: [CQ.Ext.menu.DateMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.DateMenu) 예).
+  메뉴 개체. 메뉴 항목을 추가할 수 있는 컨테이너입니다. 다른 구성 요소를 기반으로 특수 메뉴를 원하는 경우 Menu를 기본 클래스로 사용할 수도 있습니다 [CQ.Ext.menu.DateMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.DateMenu) 예).
 
   메뉴에는 다음 중 하나가 포함될 수 있습니다. [메뉴 항목](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Item)또는 일반 [구성 요소](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component)s.
 
@@ -541,13 +539,13 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.Ext.menu.TextItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.TextItem)
 
-  일반적으로 제목 또는 그룹 구분 기호로 사용되는 메뉴에 정적 텍스트 문자열을 추가합니다.
+  머리글 또는 그룹 구분 기호로 사용되는 메뉴에 정적 텍스트 문자열을 추가합니다.
 
 * 메타데이터
 
   [CQ.dam.form.Metadata](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.dam.form.Metadata)
 
-  메타데이터는 에셋 편집기 페이지와 같이 메타데이터 필드에 필요한 정보를 결정하기 위해 필드 집합을 제공합니다.
+  메타데이터는 에셋 편집기 페이지와 같이 사용되는 메타데이터 필드에 필요한 정보를 결정하기 위한 필드 집합을 제공합니다.
 
   이 변수는 다음 필드를 제공합니다.
 
@@ -561,7 +559,7 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.form.MVT](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.MVT)
 
-  다변량 테스트 구성 요소를 사용하여 배너를 교대로 표시하는 이미지 세트를 정의하고 편집할 수 있습니다. 클릭스루 비율 통계는 배너별로 수집됩니다.
+  Multivariate Testing 구성 요소를 사용하여 배너 교대용으로 표시되는 이미지 세트를 정의하고 편집할 수 있습니다. 클릭스루 비율 통계는 배너별로 수집됩니다.
 
 * notificationinbox
 
@@ -579,7 +577,7 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.wcm.OfflineImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.OfflineImporter)
 
-  OfflineImporter는 Microsoft Word 문서를 가져와서 AEM 페이지로 변환하는 도구입니다. 이 기능을 사용하면 워드 프로세서를 사용하여 콘텐츠를 오프라인으로 편집할 수 있습니다.
+  OfflineImporter는 Microsoft® Word 문서를 가져와 AEM 페이지로 변환하는 도구입니다. 이 기능을 사용하면 워드 프로세서를 사용하여 콘텐츠를 오프라인으로 편집할 수 있습니다.
 
 * ownerdraw
 
@@ -591,7 +589,7 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.Ext.PagingToolbar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.PagingToolbar)
 
-  레코드의 양이 증가하면 브라우저에서 레코드를 렌더링하는 데 필요한 시간이 증가합니다. 페이징은 클라이언트와 교환되는 데이터의 양을 줄이기 위해 사용됩니다.
+  레코드 수가 증가하면 브라우저에서 레코드를 렌더링하는 데 필요한 시간이 증가합니다. 페이징은 클라이언트와 교환되는 데이터의 양을 줄이기 위해 사용됩니다.
 
 * 패널
 
@@ -605,7 +603,7 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.form.ParagraphReference](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ParagraphReference)
 
-  단락 참조 필드를 사용하여 페이지를 탐색하고 단락 중 하나를 선택할 수 있습니다. 트리거 필드와 연결된 단락 찾아보기 대화 상자로 구성됩니다.
+  단락 참조 필드를 사용하면 페이지를 탐색하고 해당 단락 중 하나를 선택할 수 있습니다. 트리거 필드와 연결된 단락 찾아보기 대화 상자로 구성됩니다.
 
 * 암호
 
@@ -765,7 +763,7 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   SmartImage는 지능형 이미지 업로더입니다. 이 도구는 업로드된 이미지를 처리하는 도구, 예를 들어 이미지 맵과 이미지 크롭을 정의하는 도구를 제공합니다.
 
-  구성 요소는 주로 별도의 대화 상자 탭에서 사용하도록 설계되었습니다.
+  구성 요소는 별도의 대화 상자 탭에서 사용하도록 설계되었습니다.
 
 * 스페이서
 
@@ -807,7 +805,7 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.form.SuggestField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SuggestField)
 
-  SuggestField는 사용자가 입력한 내용에 따라 제안을 제공합니다.
+  SuggestField는 해당 항목에 따라 제안 사항을 사용자에게 제공합니다.
 
 * 전환기
 
@@ -875,13 +873,13 @@ Adobe Experience Manager에서 사용할 수 있는 xtype 목록을 아래에서
 
   [CQ.Ext.Tip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tip)
 
-  @xtype 팁 이것은 의 기본 클래스입니다. [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip) 및 [CQ.Ext.Tooltip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tooltip) 모든 팁 기반 클래스에 필요한 기본 레이아웃과 위치를 제공합니다. 이 클래스는 정적으로 배치된 간단한 팁에 직접 사용할 수 있습니다.
+  @xtype 팁 이것은 의 기본 클래스입니다. [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip) 및 [CQ.Ext.Tooltip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tooltip) 모든 팁 기반 클래스에 필요한 기본 레이아웃과 위치를 제공합니다. 이 클래스는 간단하고 정적으로 배치된 팁에 직접 사용할 수 있습니다.
 
 * titleseparator
 
   [CQ.menu.TitleSeparator](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.menu.TitleSeparator)
 
-  메뉴 항목의 논리적 그룹을 나누는 데 사용되는 메뉴에 구분 기호를 추가합니다. 구분 기호는 제목을 추가로 전달할 수 있습니다.
+  메뉴 항목의 논리적 그룹을 나누는 데 사용되는 메뉴에 구분 기호를 추가합니다. 구분 기호는 제목을 포함할 수도 있습니다.
 
 * 도구 모음
 

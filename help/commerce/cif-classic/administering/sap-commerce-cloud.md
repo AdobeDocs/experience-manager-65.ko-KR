@@ -1,14 +1,13 @@
 ---
 title: SAP와 함께 AEM 사용 Commerce Cloud
 description: SAP Commerce Cloud과 함께 AEM을 사용하는 방법에 대해 알아봅니다.
-uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1702'
 ht-degree: 2%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 2%
 
 설치 후 인스턴스를 구성할 수 있습니다.
 
-1. [Geometrixx Outdoors에 대한 팩트 검색 구성](#configure-the-facetted-search-for-geometrixx-outdoors).
+1. [Geometrixx Outdoors에 대한 면처리 검색 구성](#configure-the-facetted-search-for-geometrixx-outdoors).
 1. [카탈로그 버전 구성](#configure-the-catalog-version).
 1. [가져오기 구조 구성](#configure-the-import-structure).
 1. [로드할 제품 속성 구성](#configure-the-product-attributes-to-load).
@@ -25,7 +24,7 @@ ht-degree: 2%
 1. [카탈로그 Importer 구성](#configure-the-catalog-importer).
 1. 사용 [카탈로그를 가져오려면 가져오기](#catalog-import) 를 AEM의 특정 위치에 추가합니다.
 
-## Geometrixx Outdoors에 대한 팩트 검색 구성 {#configure-the-facetted-search-for-geometrixx-outdoors}
+## Geometrixx Outdoors에 대한 면처리 검색 구성 {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -56,23 +55,23 @@ ht-degree: 2%
 
    ![chlimage_1-36](/help/sites-administering/assets/chlimage_1-36a.png)
 
-1. 다음에서 **인덱싱된 형식** 탭 설정 **작성된 유형** 끝:
+1. 다음에서 **인덱싱된 형식** 탭에서 다음을 설정합니다. **작성된 유형** 끝:
 
    `Product - Product`
 
-1. 다음에서 **인덱싱된 형식** 탭 조정 **인덱서 쿼리** 대상 `full`:
+1. 다음에서 **인덱싱된 형식** 탭, 조정 **인덱서 쿼리** 대상 `full`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}})
    ```
 
-1. 다음에서 **인덱싱된 형식** 탭 조정 **인덱서 쿼리** 대상 `incremental`:
+1. 다음에서 **인덱싱된 형식** 탭, 조정 **인덱서 쿼리** 대상 `incremental`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}}) AND {modifiedtime} <= ?lastIndexTime
    ```
 
-1. 다음에서 **인덱싱된 형식** 탭 조정 `category` 패싯. 범주 목록의 마지막 항목을 두 번 클릭하여 **인덱싱된 속성** 탭:
+1. 다음에서 **인덱싱된 형식** 탭, 조정 `category` 패싯. 범주 목록의 마지막 항목을 두 번 클릭하여 **인덱싱된 속성** 탭:
 
    >[!NOTE]
    >
@@ -106,7 +105,7 @@ ht-degree: 2%
 **일별 CQ Commerce Hybris 구성**
 ( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
-**카탈로그 버전** 는 일반적으로 다음 중 하나로 설정됩니다. `Online` 또는 `Staged` (기본값).
+**카탈로그 버전** 다음 중 하나로 설정됩니다. `Online` 또는 `Staged` (기본값).
 
 >[!NOTE]
 >
@@ -207,7 +206,7 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
 
 1. 필요한 경우 CRXDE Lite을 사용하여 기존 제품 데이터를 모두 삭제합니다.
 
-   1. 제품 데이터가 있는 하위 트리로 이동합니다.
+   1. 제품 데이터를 포함하는 하위 트리로 이동합니다.
 
       `/etc/commerce/products`
 
@@ -244,7 +243,7 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
 
 ### 증분 가져오기 {#incremental-import}
 
-1. 아래 해당 하위 트리에서 AEM에 있는 관련 제품 정보를 확인하십시오.
+1. 아래의 해당 하위 트리에서 AEM에 있는 관련 제품 정보를 확인하십시오.
 
    `/etc/commerce/products`
 
@@ -252,7 +251,7 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. hybris에서 revelant 제품에 보관된 정보를 업데이트합니다.
+1. hybris에서 관련 제품에 대한 정보를 업데이트합니다.
 
 1. AEM에서 hybris importer를 엽니다.
 
@@ -262,7 +261,7 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. 클릭 상자 선택 **증분 가져오기**.
+1. 확인란 선택 **증분 가져오기**.
 1. 클릭 **카탈로그 가져오기** 가져오기를 시작합니다.
 
    완료되면 아래 AEM에서 업데이트된 데이터를 확인할 수 있습니다.
@@ -276,7 +275,7 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
 
 가져오기 프로세스에 시간이 오래 걸릴 수 있으므로 제품 동기화 를 확장하여 수동으로 트리거되는 빠른 업데이트에 대해 카탈로그의 특정 영역을 선택할 수 있습니다. 표준 속성 구성과 함께 내보내기 피드를 사용합니다.
 
-1. 아래 해당 하위 트리에서 AEM에 있는 관련 제품 정보를 확인하십시오.
+1. 아래의 해당 하위 트리에서 AEM에 있는 관련 제품 정보를 확인하십시오.
 
    `/etc/commerce/products`
 
@@ -284,9 +283,9 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. hybris에서 revelant 제품에 보관된 정보를 업데이트합니다.
+1. hybris에서 관련 제품에 대한 정보를 업데이트합니다.
 
-1. hybris에서 제품을 Express Queue에 추가합니다. 예를 들면 다음과 같습니다.
+1. hybris에서 Express Queue에 하나 이상의 제품을 추가합니다. 예를 들면 다음과 같습니다.
 
    ![chlimage_1-43](/help/sites-administering/assets/chlimage_1-43a.png)
 
@@ -298,7 +297,7 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. 클릭 상자 선택 **빠른 업데이트**.
+1. 확인란 선택 **빠른 업데이트**.
 1. 클릭 **카탈로그 가져오기** 가져오기를 시작합니다.
 
    완료되면 아래 AEM에서 업데이트된 데이터를 확인할 수 있습니다.
@@ -357,7 +356,7 @@ hybris에 구성된 기본 저장소의 식별자입니다.
 1. 두 번의 증분 업데이트를 수행하여 임포터를 초기화합니다(참조). [카탈로그 가져오기](#catalog-import)):
 
    * 처음 실행하면 변경된 제품 세트가 로그 목록에 표시됩니다.
-   * 두 번째는 어떤 제품도 업데이트해서는 안 됩니다.
+   * 두 번째로, 어떤 제품도 업데이트해서는 안 됩니다.
 
    >[!NOTE]
    >
@@ -379,22 +378,22 @@ hybris에 구성된 기본 저장소의 식별자입니다.
    * 이 제품을 선택하고 승인 상태를 다음으로 변경 `unapproved`
 
 1. 다른 증분 업데이트 수행(참조) [카탈로그 가져오기](#catalog-import)). 로그에는 삭제된 제품이 나열됩니다.
-1. [롤아웃](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) 적절한 카탈로그. 제품 및 제품 페이지가 AEM 내에서 제거됩니다.
+1. [롤아웃](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) 적절한 카탈로그. 제품 및 제품 페이지가 AEM 내에서 제거되었습니다.
 
    예:
 
    * 열기:
 
-      [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
+     [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
 
    * 롤아웃 `Hybris Base` 카탈로그
    * 열기:
 
-      [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
+     [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * 다음 `Cajamara` 제품이 다음에서 제거됨: `Bike` 범주
+   * 다음 `Cajamara` 제품이에서 제거됨 `Bike` 범주
 
-1. 제품을 다시 설치하려면
+1. 제품을 복원하려면 다음을 수행하십시오.
 
    1. hybris에서 승인 상태를 다시 다음으로 설정합니다. **승인됨**
    1. AEM:
@@ -409,7 +408,7 @@ hybris에 구성된 기본 저장소의 식별자입니다.
 
 1. 를 엽니다. [client context 디자인 페이지](/help/sites-administering/client-context.md), 다음 중 하나를 통해:
 
-   * 편집할 페이지를 연 다음 를 사용하여 클라이언트 컨텍스트를 엽니다. **Ctrl-Alt-c** (windows) 또는 **control-option-c** (Mac). 클라이언트 컨텍스트의 왼쪽 상단 모서리에 있는 연필 아이콘을 사용하여 다음을 수행합니다 **ClientContext 디자인 페이지를 엽니다.**.
+   * 편집할 페이지를 연 다음 를 사용하여 클라이언트 컨텍스트를 엽니다. **Ctrl-Alt-c** (windows) 또는 **control-option-c** (Mac). 클라이언트 컨텍스트의 왼쪽 상단 모서리에 있는 연필 아이콘을 사용하여 **ClientContext 디자인 페이지를 엽니다.**.
    * 다음으로 직접 이동 [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html)
 
 1. [추가 **주문 내역** 구성 요소](/help/sites-administering/client-context.md#adding-a-property-component) (으)로 **쇼핑카**&#x200B;클라이언트 컨텍스트의 구성 요소입니다.
@@ -433,7 +432,6 @@ hybris에 구성된 기본 저장소의 식별자입니다.
    >
    >  이 캠페인은 하나의 경험으로 구성됩니다.
    >
-   >* 세그먼트를 클릭합니다([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
+   >* 세그먼트 클릭([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
    >
    >* 세그먼트는 **주문 내역 속성** 트레이트.
-

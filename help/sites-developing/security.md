@@ -1,12 +1,10 @@
 ---
 title: 보안
-seo-title: Security
 description: 개발 단계에서 애플리케이션 보안 시작
-seo-description: Application Security starts during the development phase
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
-source-git-commit: c55b70ec11842d3f7d82adbf552b2624c1dcc599
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -25,15 +23,15 @@ XSS(크로스 사이트 스크립팅)를 사용하면 공격자가 다른 사용
 
 AEM은 출력 시 사용자가 제공한 모든 콘텐츠를 필터링하는 원칙을 적용합니다. XSS 예방은 개발 및 테스트 모두에서 가장 높은 우선순위가 부여됩니다.
 
-AEM에서 제공하는 XSS 보호 메커니즘은 [AntiSamy Java 라이브러리](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) 제공자 [OWASP(Open Web Application Security 프로젝트)](https://www.owasp.org/). 기본 AntiSamy 구성은 다음에서 찾을 수 있습니다.
+AEM에서 제공하는 XSS 보호 메커니즘은 [AntiSamy Java™ 라이브러리](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) 제공자 [OWASP(Open Web Application Security 프로젝트)](https://owasp.org/). 기본 AntiSamy 구성은 다음에서 찾을 수 있습니다.
 
 `/libs/cq/xssprotection/config.xml`
 
-구성 파일을 오버레이하여 이 구성을 자체 보안 요구 사항에 맞게 조정하는 것이 중요합니다. 공식 [AntiSamy 설명서](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) 은 보안 요구 사항을 구현하기 위해 필요한 모든 정보를 제공합니다.
+구성 파일을 오버레이하여 이 구성을 자체 보안 요구 사항에 맞게 조정하는 것이 중요합니다. 공식 [AntiSamy 설명서](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) 는 보안 요구 사항을 구현하는 데 필요한 모든 정보를 제공합니다.
 
 >[!NOTE]
 >
->다음을 사용하여 항상 XSS 보호 API에 액세스하는 것이 좋습니다. [AEM에서 제공한 XSSAPI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>Adobe은 다음을 사용하여 항상 XSS 보호 API에 액세스할 것을 권장합니다. [AEM에서 제공한 XSSAPI](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 또한 다음과 같은 웹 애플리케이션 방화벽도 [apache용 mod_security](https://www.modsecurity.org)를 사용하면 배포 환경의 보안을 안정적으로 중앙에서 제어할 수 있으며 이전에 탐지되지 않은 교차 사이트 스크립팅 공격으로부터 보호할 수 있습니다.
 
@@ -41,9 +39,9 @@ AEM에서 제공하는 XSS 보호 메커니즘은 [AntiSamy Java 라이브러리
 
 >[!NOTE]
 >
->인스턴스 보안에 필요한 OSGi 설정과 Cloud Service 정보에 대한 ACL은 의 일부로 자동화됩니다. [프로덕션 준비 모드](/help/sites-administering/production-ready.md). 즉, 구성을 수동으로 변경할 필요가 없지만 배포를 시작하기 전에 먼저 구성을 검토하는 것이 좋습니다.
+>인스턴스 보안에 필요한 OSGi 설정 및 Cloud Service 정보에 대한 ACL은 [프로덕션 준비 모드](/help/sites-administering/production-ready.md). 이는 구성을 수동으로 변경할 필요가 없음을 의미하지만 배포를 시작하기 전에 구성을 검토하는 것이 좋습니다.
 
-다음을 수행하는 경우 [AEM 인스턴스와 Adobe Marketing Cloud 통합](/help/sites-administering/marketing-cloud.md) 다음을 사용합니다. [Cloud Service 구성](/help/sites-developing/extending-cloud-config.md). 이러한 구성에 대한 정보는 수집된 모든 통계와 함께 저장소에 저장됩니다. 이 기능을 사용하는 경우 이 정보에 대한 기본 보안이 요구 사항과 일치하는지 검토하는 것이 좋습니다.
+다음을 수행하는 경우 [AEM 인스턴스와 Adobe Experience Cloud 통합](/help/sites-administering/marketing-cloud.md), 다음을 사용합니다. [Cloud Service 구성](/help/sites-developing/extending-cloud-config.md). 이러한 구성에 대한 정보는 수집된 모든 통계와 함께 저장소에 저장됩니다. Adobe은 이 기능을 사용하는 경우 이 정보에 대한 기본 보안이 요구 사항과 일치하는지 검토할 것을 권장합니다.
 
 webservicesupport 모듈은 아래에 통계 및 구성 정보를 기록합니다.
 

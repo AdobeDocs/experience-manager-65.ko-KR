@@ -1,18 +1,14 @@
 ---
 title: 커뮤니티에 대한 Dispatcher 구성
-seo-title: Configuring Dispatcher for Communities
 description: AEM Communities에 대한 Dispatcher 구성
-seo-description: Configure the dispatcher for AEM Communities
-uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '644'
 ht-degree: 11%
 
 ---
@@ -25,9 +21,9 @@ AEM Communities의 경우 가 제대로 작동하도록 Dispatcher를 구성해�
 
 특정 배포 및 사이트 디자인에 필요한 사항을 알아보려면
 
-* [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) 문의
 
-메인 페이지 참조 [Dispatcher 설명서](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+메인 페이지 참조 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko).
 
 ## Dispatcher 캐싱 {#dispatcher-caching}
 
@@ -35,15 +31,15 @@ AEM Communities의 경우 가 제대로 작동하도록 Dispatcher를 구성해�
 
 AEM Communities용 Dispatcher 캐싱은 Dispatcher가 커뮤니티 사이트 페이지의 전체 캐시 버전을 제공하는 기능입니다.
 
-현재는 커뮤니티 사이트를 탐색하는 사용자, 검색 결과 커뮤니티 페이지에 도착하는 사용자와 같은 익명 사이트 방문자 및 색인 페이지를 표시하는 검색 엔진에 대해서만 지원됩니다. 익명의 사용자 및 검색 엔진이 향상된 성능을 경험한다는 이점이 있습니다.
+현재, 커뮤니티 사이트를 탐색하거나 검색 결과로 커뮤니티 페이지에 도착하는 사용자와 같은 익명 사이트 방문자 및 페이지를 색인화하는 검색 엔진에 대해서만 지원됩니다. 익명의 사용자 및 검색 엔진이 향상된 성능을 경험한다는 이점이 있습니다.
 
 로그인한 멤버의 경우 Dispatcher가 캐시를 우회하여 요청을 게시자에게 직접 전달하므로 모든 페이지가 동적으로 생성되고 전달됩니다.
 
-Dispatcher 캐싱을 지원하도록 구성된 경우, TTL 기반 &quot;최대 기간&quot; 만료가 헤더에 추가되어 Dispatcher 캐시된 페이지가 최신 상태가 되도록 합니다.
+Dispatcher 캐싱을 지원하도록 구성된 경우, TTL 기반 &quot;최대 기간&quot; 만료가 헤더에 추가되어 Dispatcher 캐시된 페이지가 최신 상태인지 확인합니다.
 
 ### 요구 사항 {#requirements}
 
-* Dispatcher 버전 4.1.2 이상(참조 [Dispatcher 설치](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) (최신 버전용)
+* Dispatcher 버전 4.1.2 이상(참조 [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en) (최신 버전용)
 * [ACS AEM Commons 패키지](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * 버전 3.3.2 이상
@@ -53,45 +49,45 @@ Dispatcher 캐싱을 지원하도록 구성된 경우, TTL 기반 &quot;최대 �
 
 OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 기간** 지정된 경로에 나타나는 캐시된 페이지의 만료를 설정합니다.
 
-* 다음에서 [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)
+* 다음에서 [웹 콘솔](../../help/sites-deploying/configuring-osgi.md).
 
    * 예를 들어, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * 찾기 `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
-* 새 연결 구성을 만들려면 &#39;+&#39; 아이콘을 선택하십시오.
+* 연결 구성을 만들 수 있도록 &#39;+&#39; 아이콘을 선택합니다.
 
-   ![dispatcher](assets/dispatcher.png)
+  ![dispatcher](assets/dispatcher.png)
 
 * **필터 패턴**
-
-   *(필수)* 커뮤니티 페이지에 대한 하나 이상의 경로. (예: `/content/sites/engage/(.*)`)
+  *(필수)* 커뮤니티 페이지에 대한 하나 이상의 경로. (예: `/content/sites/engage/(.*)`)
 
 * **Cache-Control 최대 수명**
-
-   *(필수)* 캐시 제어 헤더에 추가할 최대 기간(초)입니다. 값은 0보다 커야 합니다.
+  *(필수)* 캐시 제어 헤더에 추가할 최대 기간(초)입니다. 값은 0보다 커야 합니다.
 
 ## Dispatcher 필터 {#dispatcher-filters}
 
-의 /filter 섹션 `dispatcher.any` 파일은에 문서화되어 있습니다. [콘텐츠에 대한 액세스 구성 - /filter](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+의 /filter 섹션 `dispatcher.any` 파일은에 문서화되어 있습니다. [콘텐츠에 대한 액세스 구성 - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR).
 
 이 섹션에서는 Communities 기능이 제대로 작동하는 데 필요한 항목에 대해 설명합니다.
 
-필터 속성 이름은 필터 패턴을 적용할 순서를 나타내기 위해 4자리 숫자를 사용하는 규칙을 따릅니다. 여러 필터 패턴이 요청에 적용되는 경우 마지막으로 적용되는 필터 패턴이 유효합니다. 따라서 첫 번째 필터 패턴은 종종 모든 것을 거부하는 데 사용되므로 다음 패턴은 제어된 방식으로 액세스를 복원하는 역할을 합니다.
+필터 속성 이름은 필터 패턴을 적용할 순서를 나타내기 위해 4자리 숫자를 사용하는 규칙을 따릅니다. 여러 필터 패턴이 요청에 적용되는 경우 마지막으로 적용된 필터 패턴이 유효합니다. 따라서 첫 번째 필터 패턴은 종종 모든 것을 거부하는 데 사용되므로 다음 패턴은 제어된 방식으로 액세스를 복원하는 역할을 합니다.
 
-다음 샘플은 특정 dispatcher.any 파일에 맞게 수정해야 하는 속성 이름을 사용합니다.
+다음 샘플은 특정 속성에 맞게 수정해야 하는 속성 이름을 사용합니다 `dispatcher.any` 파일.
 
 또한 다음 문서도 참조할 수 있습니다.
 
-* [Dispatcher 보안 검사 목록](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/security-checklist.html)
+* [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en)
 
 >[!NOTE]
 >
 >**속성 이름 예**
->다음과 같은 모든 속성 이름이 표시됩니다. **/0050** 및 **/0170**&#x200B;는 기존 dispatcher.any 구성 파일에 맞게 조정해야 합니다.
+>다음과 같은 모든 속성 이름이 표시됩니다. **/0050** 및 **/0170**&#x200B;를 기존 항목 내에 맞게 조정해야 합니다 `dispatcher.any` 구성 파일입니다.
+>
 
 >[!CAUTION]
 >
->Dispatcher를 사용하여 액세스를 제한할 때 추가 고려 사항은 [Dispatcher 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)를 참조하십시오. 또한 [AEM 보안 확인 목록](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/security-checklist.html) AEM 설치에 대한 추가 보안 세부 정보를 보려면 여기를 클릭하십시오.
+>Dispatcher를 사용하여 액세스를 제한할 때 추가 고려 사항은 [Dispatcher 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)를 참조하십시오. 또한 AEM 설치와 관련된 추가 보안 세부 정보는 [AEM 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)를 참조하십시오.
+>
 
 /filter 섹션의 끝에 특히 모든 거부 항목 뒤에 다음 항목을 추가해야 합니다.
 
@@ -273,9 +269,9 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 
 
 ## 문제 해결 {#troubleshooting}
 
-특히 액세스를 거부하는 규칙을 추가할 때 이전 규칙에 대한 영향에 유의하지 않고 필터 규칙을 삽입하는 것이 문제의 주요 원인입니다.
+특히 액세스를 거부하는 규칙을 추가할 때 이전 규칙에 미치는 영향에 유의하지 않고 필터 규칙을 삽입하는 것이 문제의 주요 원인입니다.
 
-첫 번째 필터 패턴은 다음 필터가 제어된 방식으로 액세스를 복원하도록 모든 것을 거부하는 데 종종 사용됩니다. 여러 필터가 요청에 적용되는 경우 마지막으로 적용되는 필터가 적용됩니다.
+첫 번째 필터 패턴은 종종 다음 필터가 제어된 방식으로 액세스를 복원하도록 모든 것을 거부하는 데 사용됩니다. 여러 필터가 요청에 적용되면 마지막으로 적용된 필터가 적용됩니다.
 
 ## 샘플 dispatcher.any {#sample-dispatcher-any}
 

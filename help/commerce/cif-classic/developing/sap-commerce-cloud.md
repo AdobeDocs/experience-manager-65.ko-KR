@@ -1,17 +1,14 @@
 ---
 title: SAP Commerce Cloud를 사용하여 개발
-seo-title: Developing with SAP Commerce Cloud
 description: SAP Commerce Cloud 통합 프레임워크는 API와 통합 계층을 포함합니다
-seo-description: The SAP Commerce Cloud integration framework includes an integration layer with an API
-uuid: a780dd17-027a-4a61-af8f-3e2f600524c7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2298'
 ht-degree: 1%
 
 ---
@@ -20,7 +17,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있습니다. 여기에서 다루는 특정 세부 사항 및 예는 다음을 참조합니다. [hybris](https://www.hybris.com/) 해결책.
+>eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있습니다. 여기에서 다루는 특정 세부 사항 및 예는 다음을 참조하십시오. [hybris](https://www.sap.com/products/crm.html) 해결책.
 
 통합 프레임워크는 API와의 통합 계층을 포함합니다. 이를 통해 다음을 수행할 수 있습니다.
 
@@ -34,7 +31,7 @@ ht-degree: 1%
 >
 >[API 설명서](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 을 사용할 수도 있습니다.
 
-통합 레이어를 사용하기 위해 다양한 AEM 구성 요소가 제공됩니다. 현재는 다음과 같습니다.
+통합 레이어를 사용할 수 있도록 몇 가지 기본 AEM 구성 요소가 제공됩니다. 현재는 다음과 같습니다.
 
 * 제품 표시 구성 요소
 * 장바구니
@@ -57,18 +54,18 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
       * 검색되면 이 값을 사용하여 상거래 서비스 조회를 필터링합니다.
 
       * 검색되지 않는 경우, 가장 높은 등급의 상거래 서비스가 사용됩니다.
-   * A `cq:Commerce` mixin을 사용하여 `cq:commerceProvider` 강력한 형식의 리소스에 추가할 수 있습니다.
 
+   * A `cq:Commerce` mixin을 사용하여 `cq:commerceProvider` 강력한 형식의 리소스에 추가할 수 있습니다.
 
 * 다음 `cq:commerceProvider` 속성을 사용하여 해당 상거래 공장 정의를 참조할 수도 있습니다.
 
-   * 예: `cq:commerceProvider` 값이 있는 속성 `hybris` 은(는) 의 OSGi 구성과 상호 연결됩니다. **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - 매개 변수 `commerceProvider` 값도 있습니다. `hybris`.
+   * 예: `cq:commerceProvider` 값이 있는 속성 `hybris` 에 대한 OSGi 구성과 관련이 있습니다. **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - 매개 변수 `commerceProvider` 값도 있습니다. `hybris`.
 
    * 여기에서 추가 속성, 예: **카탈로그 버전** 를 구성할 수 있습니다(적절한 경우 사용 가능).
 
 아래 예를 참조하십시오.
 
-| `cq:commerceProvider = geometrixx` | 표준 AEM 설치에서는 특정 구현이 필요합니다. 예를 들어 일반 API에 대한 최소 확장이 포함된 geometrixx 예제가 이에 해당합니다 |
+| `cq:commerceProvider = geometrixx` | 표준 AEM 설치에서 특정 구현이 필요합니다. 예를 들어 일반 API에 대한 최소 확장을 포함하는 Geometrixx 예입니다 |
 |--- |--- |
 | `cq:commerceProvider = hybris` | hybris 구현 |
 
@@ -110,9 +107,9 @@ Hybris 4를 위해 개발하려면 다음 사항이 필요합니다.
 
 * Maven을 호출할 때 다음 명령줄 인수를 명령에 추가합니다.
 
-   `-P hybris4`
+  `-P hybris4`
 
-   사전 구성된 Hybris 4 배포를 다운로드하고 번들에 임베드합니다 `cq-commerce-hybris-server`.
+  사전 구성된 Hybris 4 배포를 다운로드하고 번들에 임베드합니다 `cq-commerce-hybris-server`.
 
 * OSGi 구성 관리자에서:
 
@@ -122,9 +119,9 @@ Hybris 4를 위해 개발하려면 다음 사항이 필요합니다.
 
 ### 세션 처리 {#session-handling}
 
-hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정보를 저장합니다. 의 hybris에서 세션 ID가 반환됩니다. `JSESSIONID` hybris에 대한 후속 요청 시 전송해야 하는 쿠키입니다. 저장소에 세션 ID를 저장하지 않도록 하려면 쇼퍼의 브라우저에 저장된 다른 쿠키에 인코딩됩니다. 다음 단계를 수행합니다.
+hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정보를 저장합니다. 의 hybris에서 세션 ID가 반환됩니다. `JSESSIONID` hybris에 대한 후속 요청 시 전송해야 하는 쿠키입니다. 저장소에 세션 ID를 저장하지 않도록 하기 위해 쇼퍼의 브라우저에 저장된 다른 쿠키에 인코딩됩니다. 다음 단계를 수행합니다.
 
-* 첫 번째 요청에서 구매자 요청에 쿠키가 설정되지 않으므로 세션을 만들도록 hybris 인스턴스에 요청이 전송됩니다.
+* 첫 번째 요청에서 구매자의 요청에 쿠키가 설정되지 않으므로 세션을 만들도록 hybris 인스턴스에 요청이 전송됩니다.
 
 * 세션 쿠키는 응답에서 추출되고 새 쿠키로 인코딩됩니다(예: `hybris-session-rest`)을 설정하고 쇼핑객에 대한 응답을 설정합니다. 원래 쿠키는 특정 경로에 대해서만 유효하고, 그렇지 않으면 후속 요청에서 브라우저에서 다시 전송되지 않으므로 새 쿠키의 인코딩이 필요합니다. 경로 정보도 쿠키 값에 추가해야 합니다.
 
@@ -142,11 +139,11 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 
    * 장바구니에서 다양한 계산을 수행합니다.
 
-      `commerceSession.getProductPrice(Product product)`
+     `commerceSession.getProductPrice(Product product)`
 
 * 다음 소유 *저장소 위치* 대상: **주문** 데이터
 
-   `CommerceSession.getUserContext()`
+  `CommerceSession.getUserContext()`
 
 * 또한 을(를) 소유합니다. **결제** 연결 처리 중
 
@@ -154,12 +151,12 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 
 ### 제품 동기화 및 게시 {#product-synchronization-and-publishing}
 
-hybris에서 유지 관리되는 제품 데이터는 AEM에서 사용할 수 있어야 합니다. 다음 메커니즘이 구현되었습니다.
+하이브리드에서 유지 관리되는 제품 데이터는 AEM에서 사용할 수 있어야 합니다. 다음 메커니즘이 구현되었습니다.
 
 * ID의 초기 로드는 hybris에서 피드로 제공됩니다. 이 피드에 업데이트가 있을 수 있습니다.
 * hybris는 피드(AEM이 폴링함)를 통해 업데이트 정보를 제공합니다.
-* AEM이 제품 데이터를 사용할 때 현재 데이터에 대한 요청을 다시 hybris로 보냅니다(마지막 수정 날짜를 사용하는 조건부 get 요청).
-* hybris에서는 선언적 방식으로 피드 콘텐츠를 지정할 수 있습니다.
+* AEM은 제품 데이터를 사용할 때 현재 데이터에 대한 요청을 다시 hybris로 보냅니다(마지막 수정 날짜를 사용하는 조건부 get 요청).
+* Hybris에서는 선언적 방식으로 피드 콘텐츠를 지정할 수 있습니다.
 * 피드 구조를 AEM 콘텐츠 모델에 매핑하면 AEM 측의 피드 어댑터에서 수행됩니다.
 
 ![chlimage_1-12](/help/sites-developing/assets/chlimage_1-12a.png)
@@ -167,26 +164,26 @@ hybris에서 유지 관리되는 제품 데이터는 AEM에서 사용할 수 있
 * 가져오기(b)는 카탈로그용 AEM에서 페이지 트리 구조의 초기 설정에 사용됩니다.
 * hybris의 카탈로그 변경 사항은 피드를 통해 AEM에 표시된 다음 AEM으로 전파됩니다(b)
 
-   * 카탈로그 버전과 관련하여 제품이 추가/삭제/변경되었습니다.
+   * 카탈로그 버전에 대한 제품 추가/삭제/변경.
 
    * 제품이 승인되었습니다.
 
 * hybris 확장은 지정된 간격(예: 간격이 초 단위로 지정된 경우 24시간마다)으로 AEM에 변경 사항을 가져오도록 구성할 수 있는 폴링 가져오기(&quot;hybris&quot; 체계&quot;)를 제공합니다.
 
-   ```JavaScript
-       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
-        {
-        * "jcr:mixinTypes": ["cq:PollConfig"],
-        * "enabled": true,
-        * "source": "hybris:outdoors",
-        * "jcr:primaryType": "cq:PageContent",
-        * "interval": 86400
-        }
-   ```
+  ```JavaScript
+      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+       {
+       * "jcr:mixinTypes": ["cq:PollConfig"],
+       * "enabled": true,
+       * "source": "hybris:outdoors",
+       * "jcr:primaryType": "cq:PageContent",
+       * "interval": 86400
+       }
+  ```
 
 * AEM의 카탈로그 구성은 을 인식합니다 **스테이징됨** 및 **온라인** 카탈로그 버전.
 
-* 카탈로그 버전 간의 제품을 동기화하려면 해당 AEM 페이지의 (a, c)를 (비)활성화해야 합니다
+* 카탈로그 버전 간의 제품 동기화를 사용하려면 해당 AEM 페이지의 활성화 또는 비활성화가 필요합니다(a, c)
 
    * 에 제품 추가 **온라인** 카탈로그 버전을 사용하려면 제품 페이지를 활성화해야 합니다.
 
@@ -206,13 +203,13 @@ hybris에서 유지 관리되는 제품 데이터는 AEM에서 사용할 수 있
 
 #### 제품 및 변형 아키텍처 {#architecture-of-product-and-variants}
 
-단일 제품에는 여러 변형이 있을 수 있습니다. 예를 들어 색상 및/또는 크기에 따라 달라질 수 있습니다. 제품은 변형을 유도하는 속성을 정의해야 합니다. *변형 축*.
+단일 제품에는 여러 변형이 있을 수 있습니다. 예를 들어 색상 및/또는 크기에 따라 달라질 수 있습니다. 제품은 변형을 유도하는 속성을 정의해야 합니다. Adobe 용어는 다음과 같습니다 *변형 축*.
 
-그러나 모든 속성이 변형 축인 것은 아닙니다. 변형은 다른 속성에도 영향을 줄 수 있습니다. 예를 들어, 가격은 크기에 따라 달라질 수 있습니다. 이러한 속성은 구매자가 선택할 수 없으므로 변형 축으로 간주되지 않습니다.
+그러나 모든 속성이 변형 축인 것은 아닙니다. 변형은 다른 속성에도 영향을 줄 수 있습니다. 예를 들어 가격은 크기에 따라 달라질 수 있습니다. 이러한 속성은 구매자가 선택할 수 없으므로 변형 축으로 간주되지 않습니다.
 
 각 제품 및/또는 변형은 리소스로 표시되므로 1:1을 저장소 노드에 매핑합니다. 특정 제품 및/또는 변형이 해당 경로에 의해 고유하게 식별될 수 있다는 것이 중요합니다.
 
-제품/변형 리소스에 실제 제품 데이터가 항상 있는 것은 아닙니다. 다른 시스템(예: hybris)에 실제로 있는 데이터를 표현한 것일 수 있습니다. 예를 들어 제품 설명, 가격 책정 등은 AEM에 저장되지 않고 eCommerce 엔진에서 실시간으로 검색됩니다.
+제품/변형 리소스에 실제 제품 데이터가 항상 있는 것은 아닙니다. 다른 시스템에 보관된 데이터(예: hybris)를 나타냅니다. 예를 들어 제품 설명, 가격 책정 등은 AEM에 저장되지 않고 eCommerce 엔진에서 실시간으로 검색됩니다.
 
 모든 제품 리소스는 `Product API`. 제품 API의 대부분의 호출은 변형별로 다르지만(변형이 상위 항목에서 공유 값을 상속할 수 있음), 변형 세트를 나열하는 호출도 있습니다( `getVariantAxes()`, `getVariants()`등).
 
@@ -226,17 +223,12 @@ hybris에서 유지 관리되는 제품 데이터는 AEM에서 사용할 수 있
 >1. `size`
 >
 >1. + 개 더
-
 >
 >이 추가 변형은 `variationAxis` 제품 참조의 속성(일반적으로 `color` Geometrixx Outdoors).
 
 #### 제품 참조 및 제품 데이터 {#product-references-and-product-data}
 
-일반적으로
-
-* 제품 데이터는 아래에 있습니다. `/etc`
-
-* 및 제품 참조 `/content`.
+일반적으로 제품 데이터는 아래에 있습니다. `/etc`, 및 제품 참조 `/content`.
 
 제품 변형과 제품 데이터 노드 사이에 1:1 맵이 있어야 합니다.
 
@@ -349,12 +341,12 @@ public class AxisFilter implements VariantFilter {
          * 제품 데이터는 계층적입니다. 제품 속성은 제품 데이터 노드의 상위 항목에서 상속됩니다.
 
          * 제품 참조에는 제품 데이터에 지정된 속성을 재정의하는 로컬 속성도 포함될 수 있습니다.
+
       * 제품 자체:
 
          * 없이 `productData` 속성.
 
          * 모든 속성을 로컬로 보유하는(productData 속성을 포함하지 않는) 제품 노드는 자체 상위 항목에서 직접 제품 속성을 상속합니다.
-
 
 * **AEM 일반 제품 구조**
 
@@ -423,11 +415,11 @@ public class AxisFilter implements VariantFilter {
       * 수량 할인.
       * 다른 통화.
       * 부가세 부담 및 부가세 무료.
-   * 수정자는 다음 인터페이스로 완전히 오픈엔드됩니다.
+
+   * 수정자는 다음 인터페이스로 끝이 열립니다.
 
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
-
 
 **스토리지**
 
@@ -438,7 +430,7 @@ public class AxisFilter implements VariantFilter {
 
 **개인화**
 
-* 개인화는 항상 [ClientContext](/help/sites-administering/client-context.md).
+* 다음을 통해 항상 개인화 촉진 [ClientContext](/help/sites-administering/client-context.md).
 * ClientContext `/version/` 의 장바구니가 모든 경우에 만들어집니다.
 
    * 제품을 추가하려면 `CommerceSession.addCartEntry()` 메서드를 사용합니다.
@@ -492,7 +484,7 @@ public class AxisFilter implements VariantFilter {
 
 **운송 계산**
 
-* 주문 양식에는 종종 여러 배송 옵션(및 가격)이 표시되어야 합니다.
+* 주문 양식에는 종종 여러 배송 옵션(및 가격)이 있어야 합니다.
 * 가격은 중량 및/또는 배송 주소와 같은 품목 및 주문 세부 사항을 기반으로 할 수 있습니다.
 * 다음 `CommerceSession` 은 모든 종속성에 액세스할 수 있으므로 제품 가격과 유사한 방식으로 처리할 수 있습니다.
 
@@ -510,7 +502,6 @@ public class AxisFilter implements VariantFilter {
 >* 메서드를 사용할 수 있는지 확인
 >* 가격 정보 추가
 >* 관련 정보를 노출할 수 있는 제어권을 계속 보유하면서 구매자가 AEM에서 주문 페이지(운송 방법의 상위 집합과 이를 설명하는 텍스트 포함)를 업데이트할 수 있도록 합니다 `CommerceSession` 정보.
-
 
 **결제 처리**
 
@@ -547,11 +538,11 @@ public class AxisFilter implements VariantFilter {
 
 1. `CommerceQuery`
 
-   검색 쿼리를 설명하는 데 사용됩니다(쿼리 텍스트, 현재 페이지, 페이지 크기, 정렬 및 선택한 패싯에 대한 정보를 포함). 검색 API를 구현하는 모든 전자 상거래 서비스는 검색을 수행하기 위해 이 클래스의 인스턴스를 받습니다. A `CommerceQuery` 은 요청 개체에서 인스턴스화할 수 있습니다( `HttpServletRequest`).
+   검색 쿼리를 설명하는 데 사용됩니다(쿼리 텍스트, 현재 페이지, 페이지 크기, 정렬 및 선택한 패싯에 대한 정보를 포함). 검색 API를 구현하는 모든 전자 상거래 서비스는 이 클래스의 인스턴스를 수신하여 검색을 수행합니다. A `CommerceQuery` 은 요청 개체에서 인스턴스화할 수 있습니다( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   하나의 정적 메서드를 제공하는 유틸리티 클래스입니다. `toParams` - 를 생성하는 데 사용됩니다. `GET` 패싯 및 전환된 하나의 값 목록의 매개 변수 문자열. 이 기능은 UI측에서 각 패싯의 각 값에 대한 하이퍼링크를 표시해야 사용자가 하이퍼링크를 클릭할 때 해당 값이 전환됩니다(즉, 선택한 경우 쿼리에서 제거되고 다른 경우에는 추가됨). 이는 여러/단일 값 패싯을 처리하고 값을 재정의하는 등의 모든 논리를 처리합니다.
+   하나의 정적 메서드를 제공하는 유틸리티 클래스입니다. `toParams` - 를 생성하는 데 사용됩니다. `GET` 패싯 및 전환된 하나의 값 목록의 매개 변수 문자열. 이 기능은 UI 측면에서 각 패싯의 각 값에 대한 하이퍼링크를 표시해야 사용자가 하이퍼링크를 클릭할 때 해당 값이 전환됩니다(즉, 선택한 경우 쿼리에서 제거되고 다른 경우에는 추가됨). 이는 여러/단일 값 패싯을 처리하고 값을 재정의하는 등의 모든 논리를 처리합니다.
 
 검색 API의 진입점은 입니다. `CommerceService#search` 를 반환하는 메서드 `CommerceResult` 개체. 다음을 참조하십시오. [API 설명서](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 을 참조하십시오.
 
@@ -561,24 +552,24 @@ AEM과 다양한 eCommerce 시스템 간에 통합이 제공됩니다. 이를 �
 
 * 인증
 
-   AEM은 *전용* 웹 프런트엔드 및 따라서 *모두* 인증.
+  AEM은 *전용* 웹 프런트엔드 및 따라서 *모두* 인증.
 
 * Hybris의 계정
 
-   AEM은 각 쇼핑객에 대해 hybris에 해당 (하위) 계정을 만듭니다. 이 계정의 사용자 이름은 AEM 사용자 이름과 같습니다. 암호학적으로 무작위적인 암호는 AEM에서 자동 생성되고 저장(암호화)됩니다.
+  AEM은 각 쇼핑객에 대해 hybris에 해당 (하위) 계정을 만듭니다. 이 계정의 사용자 이름은 AEM 사용자 이름과 같습니다. 암호화 임의 암호는 AEM에서 자동 생성되고 저장(암호화)됩니다.
 
 #### 기존 사용자 {#pre-existing-users}
 
-AEM 프런트엔드는 기존 hybris 구현 앞에 배치할 수 있습니다. 또한 기존 AEM 설치에 hybris 엔진을 추가할 수 있습니다. 이렇게 하려면 시스템에서 다음 두 시스템 중 하나에서 기존 사용자를 정상적으로 처리할 수 있어야 합니다.
+AEM 프론트 엔드는 기존 hybris 구현 앞에 위치할 수 있습니다. 또한 기존 AEM 설치에 hybris 엔진을 추가할 수 있습니다. 이렇게 하려면 시스템에서 다음 두 시스템 중 하나에서 기존 사용자를 정상적으로 처리할 수 있어야 합니다.
 
 * AEM -> hybris
 
-   * hybris에 로그인할 때 AEM 사용자가 아직 없는 경우:
+   * hybris에 로그인할 때 AEM 사용자가 없는 경우:
 
       * 암호학적으로 임의 암호를 사용하여 새 hybris 사용자 만들기
       * AEM 사용자의 사용자 디렉토리에 hybris 사용자 이름을 저장합니다.
-   * 자세한 내용은: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
+   * 자세한 내용은: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
 * hybris -> AEM
 
@@ -586,10 +577,10 @@ AEM 프런트엔드는 기존 hybris 구현 앞에 배치할 수 있습니다. �
 
       * 제공된 사용자 이름/pwd로 hybris에 로그인 시도
       * 성공하면 AEM에서 동일한 암호로 새 사용자를 만듭니다(AEM 관련 솔트가 AEM 관련 해시로 이어짐).
+
    * 위의 알고리즘은 Sling으로 구현됩니다 `AuthenticationInfoPostProcessor`
 
       * 자세한 내용은: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
-
 
 ### 가져오기 프로세스 사용자 정의 {#customizing-the-import-process}
 
