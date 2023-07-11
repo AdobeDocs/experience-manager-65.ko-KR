@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 5%
+source-wordcount: '1718'
+ht-degree: 4%
 
 ---
 
@@ -393,163 +393,163 @@ aem:afproperties 속성을 사용하여 적응형 양식 구성 요소에 대한
   </tr>
   <tr>
    <td>텍스트 필드</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>숫자 필드</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>숫자 스텝퍼</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>라디오 버튼</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>전화 번호</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>전환</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>버튼</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
   </tr>
   <tr>
    <td>체크 상자</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>드롭다운</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>이미지 선택</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>데이터 입력 필드</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>날짜 선택기</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>이메일</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>첨부 파일</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>이미지</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -558,9 +558,9 @@ aem:afproperties 속성을 사용하여 적응형 양식 구성 요소에 대한
   </tr>
   <tr>
    <td>Draw</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -569,9 +569,9 @@ aem:afproperties 속성을 사용하여 적응형 양식 구성 요소에 대한
   </tr>
   <tr>
    <td>패널</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>

@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '3082'
-ht-degree: 60%
+source-wordcount: '3080'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 60%
 
 페이지 도구 모음에서는 페이지 구성에 따라 적절한 기능에 대한 액세스 권한을 제공합니다.
 
-![screen_shot_2018-03-22at111338](assets/screen_shot_2018-03-22at111338.png)
+![페이지 도구 모음](assets/screen_shot_2018-03-22at111338.png)
 
 도구 모음에서는 다양한 옵션에 액세스할 수 있습니다. 현재 컨텍스트 및 구성에 따라 일부 옵션을 사용할 수 없을 수도 있습니다.
 
@@ -66,25 +66,25 @@ ht-degree: 60%
 
   다음을 엽니다. [컨텍스트 허브](/help/sites-authoring/ch-previewing.md). [미리보기 모드]에서만 사용 가능합니다.
 
-  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![컨텍스트 허브](assets/screen_shot_2018-03-22at111543.png)
 
 * **페이지 제목**
 
   이는 순전히 정보 제공용입니다.
 
-  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![페이지 제목](assets/screen_shot_2018-03-22at111554.png)
 
 * **모드 선택기**
 
   현재 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)를 표시하고 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
 
-  ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![모드 선택기](assets/chlimage_1-120.png)
 
 * **미리보기**
 
   [미리보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 활성화합니다. 이렇게 하면 페이지가 게시될 때 표시되는 것과 같이 표시됩니다.
 
-  ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![미리보기 모드](assets/chlimage_1-121.png)
 
 * **주석**
 
@@ -96,7 +96,7 @@ ht-degree: 60%
 
 페이지가 [워크플로](/help/sites-authoring/workflows.md) 또는 다중 워크플로의 일부인 경우 페이지를 편집할 때 화면 맨 위에 있는 알림 표시줄에 이 정보가 표시됩니다.
 
-![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
+![워크플로우 알림](assets/screen_shot_2018-03-22at111739.png)
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ ht-degree: 60%
 
 페이지에 여러 개의 워크플로가 있는 경우 알림 오른쪽 끝에 화살표 버튼과 함께 워크플로 개수가 표시되어 워크플로를 스크롤할 수 있습니다.
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![워크플로 수에 대한 알림](assets/chlimage_1-122.png)
 
 ## 구성 요소 플레이스홀더 {#component-placeholder}
 
@@ -122,11 +122,11 @@ ht-degree: 60%
 
 * 페이지에 새 구성 요소를 추가할 때(구성 요소 브라우저에서 드래그):
 
-  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![새 구성 요소 추가](assets/screen_shot_2018-03-22at111928.png)
 
 * 기존 구성 요소를 이동할 때:
 
-  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![기존 구성 요소 이동](assets/screen_shot_2018-03-22at112445.png)
 
 ## 구성 요소 삽입 {#inserting-a-component}
 
@@ -153,13 +153,13 @@ ht-degree: 60%
 
    * 다음 항목 선택 **구성 요소 삽입** 기존 구성 요소의 도구 모음 또는 **여기에 구성 요소 드래그** 상자.
 
-   ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
+   ![구성 요소 선택 삽입](assets/screen_shot_2018-03-22at112536.png)
 
    * 데스크탑 디바이스를 사용하는 경우 **구성 요소를 여기로 드래그하십시오.** 상자를 더블 클릭합니다.
 
    필수 구성 요소를 선택할 수 있는 **새 구성 요소 삽입** 대화 상자가 열립니다.
 
-   ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
+   ![새 구성 요소 삽입](assets/screen_shot_2018-03-22at112650.png)
 
 1. 선택한 구성 요소가 페이지 하단에 추가됩니다. [편집](#editmovecopypastedelete) 필요한 구성 요소입니다.
 
@@ -218,7 +218,7 @@ ht-degree: 60%
 
 에셋을 검색할 때 에셋을 빠르게 변경해야 하는 경우, 에셋의 이름 옆에 있는 편집 아이콘을 클릭하여 [에셋 편집기](/help/assets/manage-assets.md)를 브라우저에서 직접 시작할 수 있습니다.
 
-![screen_shot_2018-03-22at112735](assets/screen_shot_2018-03-22at112735.png)
+![편집 아이콘](assets/screen_shot_2018-03-22at112735.png)
 
 ## 편집/구성/복사/잘라내기/삭제/붙여넣기 {#edit-configure-copy-cut-delete-paste}
 
@@ -226,7 +226,7 @@ ht-degree: 60%
 
 사용자가 사용할 수 있는 실제 작업은 상황에 따라 적절히 표시되며 일부 작업은 여기에서 설명되지 않을 수 있습니다.
 
-![screen_shot_2018-03-22at112909](assets/screen_shot_2018-03-22at112909.png)
+![구성 요소 도구 모음 옵션](assets/screen_shot_2018-03-22at112909.png)
 
 * **편집**
 
@@ -250,7 +250,7 @@ ht-degree: 60%
 
   구성 요소가 클립보드에 복사됩니다. 붙여넣기 작업 후 원래 구성 요소가 제거됩니다.
 
-  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![잘라내기](assets/screen_shot_2018-03-22at113007.png)
 
 * **삭제**
 
@@ -272,7 +272,7 @@ ht-degree: 60%
    * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣습니다.
    * 클립보드에 콘텐츠가 있는 경우에만 붙여넣기 작업이 표시됩니다.
 
-  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![붙여넣기](assets/screen_shot_2018-03-22at113553.png)
 
   >[!NOTE]
   >
@@ -288,7 +288,7 @@ ht-degree: 60%
 
   선택한 구성 요소의 상위 구성 요소를 선택할 수 있습니다.
 
-  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![상위](assets/screen_shot_2018-03-22at113028.png)
 
 * **레이아웃**
 
@@ -317,11 +317,11 @@ ht-degree: 60%
 
 * [텍스트 구성 요소](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![텍스트 구성 요소](assets/screen_shot_2018-03-22at120215.png)
 
 * 이미지 구성 요소
 
-  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![이미지 구성 요소](assets/screen_shot_2018-03-22at120252.png)
 
   >[!NOTE]
   >
@@ -334,11 +334,11 @@ ht-degree: 60%
 
   [Entering full screen mode](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) for the image component allows for more space to edit the image as well as showing extra editing options such as **Launch Map** and **Reset Zoom**. In addition, full screen allows for crop presets to be selected.
 
-  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![이미지 구성 요소 전체 화면](assets/screen_shot_2018-03-22at120529.png)
 
 * 둘 이상의 기본 구성 요소로 구성된 구성 요소(예: [텍스트 및 이미지 기초 구성 요소](/help/sites-authoring/default-components-foundation.md#text-image), 먼저 원하는 편집 옵션 세트를 확인할 것을 요청합니다.
 
-  ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![구성 요소 편집 옵션](assets/chlimage_1-123.png)
 
 ### 구성 요소로 에셋 드래그 앤 드롭 {#drag-and-drop-assets-into-component}
 
@@ -360,7 +360,7 @@ ht-degree: 60%
 
 예를 들어 **텍스트** 구성 요소:
 
-![screen_shot_2018-03-22at121616](assets/screen_shot_2018-03-22at121616.png)
+![텍스트 편집기](assets/screen_shot_2018-03-22at121616.png)
 
 >[!NOTE]
 >
@@ -373,7 +373,7 @@ ht-degree: 60%
 1. 탭한 상태로 유지하거나 클릭앤한 상태로 유지할 단락을 선택합니다.
 1. 단락을 새 위치로 드래그합니다. AEM에서 단락을 둘 수 있는 위치를 보여 줍니다. 단락을 원하는 위치에 놓습니다.
 
-   ![screen_shot_2018-03-22at121821](assets/screen_shot_2018-03-22at121821.png)
+   ![단락 구성 요소 이동](assets/screen_shot_2018-03-22at121821.png)
 
 1. 단락이 이동됩니다.
 
@@ -387,7 +387,7 @@ ht-degree: 60%
 
 1. Sites 콘솔의 **편집** 모드에 있는 경우 구성 요소를 선택하면 구성 요소의 도구 모음이 표시됩니다.
 
-   ![screen_shot_2018-03-22at133756](assets/screen_shot_2018-03-22at133756.png)
+   ![양식의 편집 모드](assets/screen_shot_2018-03-22at133756.png)
 
    **레이아웃** 작업을 클릭하거나 탭하여 구성 요소의 레이아웃을 조정합니다.
 
@@ -399,7 +399,7 @@ ht-degree: 60%
    * 에뮬레이터 도구 모음이 화면 맨 위에 표시됩니다.
    * 표준 편집 작업 대신 레이아웃 작업이 구성 요소 도구 모음에 표시됩니다.
 
-   ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
+   ![여러 장치에서 양식 미리 보기](assets/screen_shot_2018-03-22at133843.png)
 
    [레이아웃 모드](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)에서처럼 구성 요소의 레이아웃을 수정할 수 있습니다.
 
@@ -427,7 +427,7 @@ ht-degree: 60%
 
   구성 요소가 Live Copy 또는 론치의 일부인 페이지에 있는 경우(Live Copy 기반) 구성 요소 도구 모음 예:
 
-  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![Live Copy](assets/screen_shot_2018-03-22at134339.png)
 
   상속 취소 옵션을 사용할 수 있습니다.
 
@@ -445,7 +445,7 @@ ht-degree: 60%
 
   구성 대화 상자 예를 들어 상속된 단락 시스템에서처럼:
 
-  ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![상속된 단락 시스템](assets/chlimage_1-124.png)
 
 ## 페이지 템플릿 편집 {#editing-the-page-template}
 
@@ -464,7 +464,7 @@ ht-degree: 60%
 
 예:
 
-![screen_shot_2018-03-22at134820](assets/screen_shot_2018-03-22at134820.png)
+![Live Copy 상속 상태](assets/screen_shot_2018-03-22at134820.png)
 
 ## 주석 추가 {#adding-annotations}
 
@@ -499,7 +499,7 @@ ht-degree: 60%
 
 미리보기 모드는 작성할 때 페이지 편집기의 오른쪽 상단에 있는 아이콘을 사용하면 이용할 수 있습니다.
 
-![chlimage_1-125](assets/chlimage_1-125.png)
+![미리보기](assets/chlimage_1-125.png)
 
 ### 게시됨으로 보기 {#view-as-published}
 
@@ -516,7 +516,7 @@ AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 
    1. 다음을 사용하여 페이지 선택 [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. 잠금 아이콘을 선택합니다.
 
-  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![잠금 아이콘](assets/screen_shot_2018-03-22at134928.png)
 
 * **페이지 편집기**
 
@@ -525,7 +525,7 @@ AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 
 
 페이지가 잠기면 콘솔 보기 정보가 업데이트되며, 편집 시에는 잠금 기호가 도구 모음에 표시됩니다.
 
-![screen_shot_2018-03-22at135010](assets/screen_shot_2018-03-22at135010.png)
+![기호 잠금](assets/screen_shot_2018-03-22at135010.png)
 
 >[!CAUTION]
 >
@@ -539,7 +539,7 @@ AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 
 
 [페이지 정보] 메뉴에 **잠금 해제**&#x200B;가 옵션으로 표시되며 [사이트 콘솔]의 잠금 아이콘은 **잠금 해제** 아이콘으로 바뀝니다.
 
-![screen_shot_2018-03-22at134942](assets/screen_shot_2018-03-22at134942.png)
+![잠금 해제](assets/screen_shot_2018-03-22at134942.png)
 
 >[!CAUTION]
 >

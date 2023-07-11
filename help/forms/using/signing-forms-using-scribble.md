@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >서명은 항상 PNG 형식으로 저장됩니다.
+>
 
 ## 스크리블 서명을 사용하도록 적응형 양식 구성 {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -54,12 +55,14 @@ ht-degree: 0%
    >[!NOTE]
    >
    >서명 단계 구성 요소는 양식에 사용할 수 있는 전체 너비를 차지합니다. 서명 단계 구성 요소가 포함된 섹션에는 다른 구성 요소가 없는 것이 좋습니다.
+   >
 
-1. 콘텐츠 브라우저에서 을 누릅니다. **양식 컨테이너**&#x200B;을 누르고 **구성** ![](/help/forms/using/assets/configure.png) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다. 다음으로 이동 **적응형 양식 컨테이너** > **전자 서명** 및 선택 취소 **Adobe Sign 활성화** 옵션을 선택합니다. 완료 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘 을 클릭하여 변경 내용을 저장합니다.
+1. 콘텐츠 브라우저에서 을 누릅니다. **양식 컨테이너**&#x200B;을 누르고 **구성** ![구성](/help/forms/using/assets/configure.png) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다. 다음으로 이동 **적응형 양식 컨테이너** > **전자 서명** 및 선택 취소 **Adobe Sign 활성화** 옵션을 선택합니다. 완료 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘 을 클릭하여 변경 내용을 저장합니다.
 
    >[!NOTE]
    >
    >적응형 양식에 서명 단계 구성 요소를 추가하면 Adobe Sign 활성화 옵션이 자동으로 선택됩니다.
+   >
 
 1. 탭 **구성** ![구성](assets/configure.png) 아이콘. 속성 브라우저를 열고 서명 단계 속성을 표시합니다. 다음 속성을 구성합니다.
 

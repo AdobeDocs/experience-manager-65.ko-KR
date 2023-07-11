@@ -11,16 +11,16 @@ discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
 docset: aem65
 feature: Form Data Model
 exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
 
 # [!DNL AEM Forms] 데이터 통합 {#aem-forms-data-integration}
 
-![](do-not-localize/data-integeration.png)
+![영웅 이미지](do-not-localize/data-integration.png)
 
 엔터프라이즈 인프라스트럭처에는 데이터베이스, 웹 서비스, REST 서비스, OData 서비스, CRM 솔루션과 같이 서로 다른 백엔드 시스템 또는 데이터 소스가 포함됩니다. 이를 통합하여 엔터프라이즈 애플리케이션에 데이터를 제공하여 일상적인 업무를 수행하는 정보 시스템을 구축합니다. 반면에 애플리케이션은 데이터를 캡처하여 데이터 소스를 업데이트하기 위해 다시 전송합니다.
 

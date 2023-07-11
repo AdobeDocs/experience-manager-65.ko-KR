@@ -10,7 +10,7 @@ discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 feature: Interactive Communication
 exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 0%
@@ -93,6 +93,7 @@ ht-degree: 0%
 
       * 청구
       * 차트
+
    * ItemisedCalls
    * PayNow
    * ValueAddedServices
@@ -162,6 +163,7 @@ Forms Designer를 사용하여 XDP 템플릿을 만든 후에는 대화형 통�
    1. 선택 **.xdp** 다음에서 **유형으로 저장** 드롭다운 목록입니다.
 
    1. 누르기 **저장**.
+
    Forms Designer를 사용하여 레이아웃 조각에 대한 XDP 템플릿을 만들었으면 다음을 수행해야 합니다. [업로드](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) 레이아웃 조각을 만드는 동안 템플릿을 사용할 수 있도록 AEM Forms 서버에 연결합니다.
 
 ## 웹 채널용 템플릿 만들기 {#create-template-for-web-channel}
@@ -231,7 +233,7 @@ Forms Designer를 사용하여 XDP 템플릿을 만든 후에는 대화형 통�
    1. 지정 **청구 세부 정보** 제목 필드에서 참조할 수 있습니다.
    1. 선택 **1** 다음에서 **열 수** 드롭다운 목록입니다.
 
-   1. 누르기 ![](/help/forms/using/assets/done_icon.png) 속성을 저장합니다.
+   1. 누르기 ![저장](/help/forms/using/assets/done_icon.png) 속성을 저장합니다.
 
    패널 이름이 로 업데이트됩니다. **청구 세부 정보** 콘텐츠 트리에서.
 
@@ -275,4 +277,4 @@ Forms Designer를 사용하여 XDP 템플릿을 만든 후에는 대화형 통�
 
    ![허용된 구성 요소](assets/allowed_components_af_new.png)
 
-1. 누르기 ![done_icon](assets/done_icon.png) 속성을 저장합니다.
+1. 누르기 ![저장](assets/done_icon.png) 속성을 저장합니다.

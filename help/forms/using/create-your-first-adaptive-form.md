@@ -9,9 +9,9 @@ discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 318347178fd626dea8e5a15caa7cdad8fe353eba
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '966'
 ht-degree: 9%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 9%
 
 ## 4단계: 적응형 양식 스타일 지정 {#step-style-your-adaptive-form}
 
-![](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
+![적응형 양식 스타일 지정](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
 적응형 양식은 테마와 [편집자](../../forms/using/themes.md) 을 클릭하여 적용형 양식에 대한 테마를 만들 수 있습니다. 테마에는 구성 요소 및 패널의 스타일 지정 세부 정보가 포함되어 있으며 다른 양식에서 테마를 다시 사용할 수 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성이 포함됩니다. 테마를 양식에 적용하면 지정된 스타일이 양식의 해당 구성 요소를 반영합니다. 적응형 양식은 양식별 스타일에 대한 인라인 스타일링도 지원합니다.
 

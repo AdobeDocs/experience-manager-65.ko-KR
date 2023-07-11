@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 1a3e0f90bbe133a7b0fc383b997e69b10ca82478
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2068'
 ht-degree: 11%
 
 ---
@@ -397,7 +397,7 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
 ### 사용자 지정된 구성 만들기/열기 {#creating-opening-a-customized-configuration}
 
-1. 다음으로 이동 **도구**, **일반**, **Forms 검색**.
+1. 다음으로 이동 **도구** >>  **일반** >> **Forms 검색**.
 
 1. 사용자 지정할 구성을 선택합니다.
 1. 사용 **편집** 아이콘을 클릭하여 업데이트할 구성을 엽니다.
@@ -440,7 +440,7 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
 1. 미리 보기 아이콘을 선택합니다.
 
-   ![미리 보기 아이콘](do-not-localize/chlimage_1-31.png)
+   ![검색 양식 미리 보기](do-not-localize/chlimage_1-31.png)
 
 1. 검색 양식이 해당 콘솔의 검색 열에 표시(완전히 확장)될 때 표시됩니다.
 

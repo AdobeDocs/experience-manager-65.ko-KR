@@ -9,9 +9,9 @@ topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2038'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 8%
 
 사용자 지정 테마를 만들고, 개별 구성 요소의 스타일을 지정하고, 테마에서 웹 글꼴을 사용하는 방법을 알아봅니다
 
-![](do-not-localize/08-style_your_adaptiveformmain.png)
+![영웅 이미지](do-not-localize/08-style_your_adaptiveformmain.png)
 
 이 튜토리얼의 단계는 다음과 같습니다. [첫 번째 적응형 양식 만들기](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) 시리즈. 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하려면 연대순으로 시리즈를 따르는 것이 좋습니다.
 

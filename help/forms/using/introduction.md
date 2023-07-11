@@ -10,9 +10,9 @@ discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ HTML 5 forms는 Adobe Experience Manager 6.0(AEM 6.0) 소프트웨어의 새로�
 
 HTML5 forms는 표준 HTML5 구문을 기반으로 문서를 생성합니다. HTML5를 지원하는 모든 최신 브라우저에서 HTML5 양식을 볼 수 있습니다. 브라우저에 대한 추가 브라우저 플러그인을 설치할 필요가 없습니다. 지원되는 브라우저에 대한 자세한 내용은 [지원되는 클라이언트 플랫폼](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
-![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
+![HTML5 양식 미리 보기](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
 ## HTML 5 Forms의 주요 기능 {#key-capabilities-of-html-forms-br}
 

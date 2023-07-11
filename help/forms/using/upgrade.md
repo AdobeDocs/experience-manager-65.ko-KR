@@ -11,9 +11,9 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: a98550c11405e6d0f43ff7ed8905644a3aedd78c
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '333'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ AEM 6.5 Forms에는 양식 및 서신에 대한 생성, 관리 및 사용자 경
 
 다음 다이어그램은 OSGi에서 AEM Forms에 사용할 수 있는 업그레이드 경로를 표시합니다.
 
-![](do-not-localize/osgi-upgrade-path.png)
+![OSGi 업그레이드 흐름](do-not-localize/osgi-upgrade-path.png)
 
 다음 위치에서 직접 업그레이드를 수행할 수 있습니다.
 

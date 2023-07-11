@@ -9,9 +9,9 @@ topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: 415744ca5c46a1495fe90369c162158c7fc2f1d4
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 이 문서에는 개요, 샘플 사용 사례, 만들기 워크플로 및 대화형 커뮤니케이션과 편지 간의 차이점이 포함되어 있습니다.
 
-![](do-not-localize/correspondence-management.png)
+![영웅 이미지](do-not-localize/correspondence-management.png)
 
 Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공지, 마케팅 이메일, 청구서 및 환영 키트와 같은 안전하고 개인화된 인터랙티브한 통신의 작성, 수집 및 전달을 중앙 집중화하여 관리합니다.
 

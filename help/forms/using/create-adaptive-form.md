@@ -8,9 +8,9 @@ uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1380'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 3%
 * [적응형 양식 미리 보기 및 제출](/help/forms/using/create-adaptive-form.md)
 
 문서의 끝 부분에 다음과 유사한 양식이 표시됩니다.\
-[![](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
+[![모바일에서 양식 미리 보기](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
 
 ## 1단계: 적응형 양식 만들기 {#step-create-the-adaptive-form}
 

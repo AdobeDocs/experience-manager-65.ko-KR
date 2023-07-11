@@ -10,16 +10,16 @@ discoiquuid: 7c392909-ff84-4411-b44f-16f99dffac54
 docset: aem65
 feature: Form Data Model
 exl-id: 7f5978c3-6c9f-4ce4-b0fb-660ac1d49244
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
 
 # 양식 데이터 모델 만들기{#create-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![영웅 이미지](do-not-localize/data-integration.png)
 
 AEM Forms 데이터 통합은 양식 데이터 모델을 만들고 작업할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델은 데이터 교환을 위해 데이터 소스를 사용합니다. 그러나 데이터 소스를 사용하거나 사용하지 않고 양식 데이터 모델을 만들 수 있습니다. 데이터 소스를 구성했는지 여부에 따라 데이터 모델에서 를 만드는 두 가지 방법이 있습니다.
 

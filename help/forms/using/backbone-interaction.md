@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 뷰가 초기화되면 뷰는 해당 모델을 호출하여 서버에서 데이터를 가져옵니다. 뷰에 필요한 모든 데이터를 사용할 수 있으면 뷰는 HTML 템플릿에서 지정한 형식으로 데이터를 렌더링합니다. 다수의 뷰들이 통신을 위해 동일한 모델을 공유할 수 있다.
 
-![](do-not-localize/aem_forms_workflow.png)
+![AEM forms 백본 보기](do-not-localize/aem_forms_workflow.png)
 
 예:
 

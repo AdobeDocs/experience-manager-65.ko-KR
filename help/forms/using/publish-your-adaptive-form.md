@@ -10,16 +10,16 @@ discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
 
 # 자습서: 적응형 양식 게시 {#tutorial-publish-your-adaptive-form}
 
-![](do-not-localize/13-publish-your-adaptive-form-small.png)
+![영웅 이미지](do-not-localize/13-publish-your-adaptive-form-small.png)
 
 이 튜토리얼의 단계는 다음과 같습니다. [첫 번째 적응형 양식 만들기](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) 시리즈. 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하려면 연대순으로 시리즈를 따르는 것이 좋습니다.
 
@@ -69,7 +69,8 @@ AEM [!DNL Forms] 구성 요소 제공, AEM [!DNL Forms] 컨테이너, 적응형 
    * 게시된 사이트 페이지에 포함된 양식만 수정하는 경우 원래 양식을 게시하고 변경 사항은 게시된 사이트 페이지에 반영됩니다. 게시된 사이트 페이지에는 양식에 대한 참조가 포함되어 있으며 페이지를 다시 게시할 필요가 없습니다.
    * 을(를) 수정하는 경우 [!DNL Sites] 페이지 및 임베드된 양식, 다시 게시 [!DNL Sites] 페이지 및 양식입니다.
 
-      ![aem-sites에 포함](assets/embed-in-aem-sites.png)
+     ![aem-sites에 포함](assets/embed-in-aem-sites.png)
+
    AEM에 추가된 배송 및 청구 주소 변경 양식 [!DNL Sites] 페이지를 가리키도록 업데이트하는 중입니다.
 
 ## 외부 웹 페이지에 적응형 양식 포함 {#embed-the-adaptive-form-in-an-external-webpage}

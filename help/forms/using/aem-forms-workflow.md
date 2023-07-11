@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '3681'
+source-wordcount: '3682'
 ht-degree: 2%
 
 ---
 
 # OSGi의 Forms 중심 워크플로우{#forms-centric-workflow-on-osgi}
 
-![](do-not-localize/header.png)
+![영웅 이미지](do-not-localize/header.png)
 
 기업은 수백, 수천 개의 양식, 다양한 백엔드 시스템, 온라인 또는 오프라인 데이터 소스에서 데이터를 수집합니다. 또한 반복적인 검토 및 승인 프로세스를 포함하는 데이터에 대한 결정을 내리는 동적 사용자 집합이 있습니다.
 
@@ -236,7 +236,7 @@ fd-administrators 그룹의 구성원인 관리자는 사용자가 파일(예: P
   </tr>
   <tr>
    <td><span class="uicontrol">사용 중인 파일 처리</code></td>
-   <td>다음 항목 선택 <span class="uicontrol">워크플로 </code>옵션을 선택합니다. </code></td>
+   <td>다음 항목 선택 <span class="uicontrol">워크플로 </code>옵션을 선택합니다. </td>
   </tr>
   <tr>
    <td><span class="uicontrol">워크플로우 모델</code></td>

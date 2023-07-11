@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '894'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,7 @@ AEM Forms은 양식 작성, 관리 및 게시와 서신 관리 기능, 문서 �
 
 AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 에셋도 관리할 수 있는 양식 관리 도구를 제공합니다. 자세한 내용은 [양식 관리 소개](../../forms/using/introduction-managing-forms.md).
 
-![](do-not-localize/4th-draft.gif)
+![AEM forms 기능](do-not-localize/4th-draft.gif)
 
 ### 주요 기능 {#key-capabilities}
 

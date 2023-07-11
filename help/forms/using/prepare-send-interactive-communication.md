@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2022'
 ht-degree: 2%
 
 ---
@@ -75,6 +75,7 @@ ht-degree: 2%
 
       * [다른 응용 프로그램에서 붙여넣기 형식의 텍스트를 복사합니다.](#pasteformattedtext)
       * [텍스트 부분 강조 표시](#highlightemphasize)
+
    * [특수 문자](#specialcharacters)
    * [키보드 단축키](/help/forms/using/keyboard-shortcuts.md)
 
@@ -147,7 +148,7 @@ ht-degree: 2%
 
 ### 문서 단편 {#document-fragments}
 
-![](do-not-localize/contentoptionsdocfragments.png)
+![document-fragments-ui-operations](do-not-localize/contentoptionsdocfragments.png)
 
 * **위쪽/아래쪽 화살표**: 대화형 통신에서 문서 조각을 위아래로 이동하는 화살표입니다.
 * **삭제**: 허용되는 경우 대화형 통신에서 문서 조각을 삭제합니다.
@@ -187,7 +188,7 @@ Adobe은 대화형 커뮤니케이션을 초안으로 성공적으로 저장하�
 
    샘플 SPI 구현은 다음을 참조하십시오. [ccrDocumentInstance SPI 구현 예](#sample-ccrDocumentInstance-spi).
 1. 열기 `http://<hostname>:<port>/ system/console/bundles` 및 탭 **[!UICONTROL 설치/업데이트]** 를 클릭하여 OSGi 번들을 업로드하십시오. 업로드된 패키지의 상태가 (으)로 표시되는지 확인합니다. **활성**. 패키지의 상태가 로 표시되지 않으면 서버를 다시 시작합니다. **활성**.
-1. 이동 `https://'[server]:[port]'/system/console/configMgr`.
+1. `https://'[server]:[port]'/system/console/configMgr`로 이동합니다.
 1. 누르기 **[!UICONTROL 서신 구성 만들기]**.
 1. 선택 **[!UICONTROL CCRDocumentInstanceService를 사용하여 저장 활성화]** 및 탭 **[!UICONTROL 저장]**.
 
@@ -324,20 +325,20 @@ public class CCRDraftService implements CCRDocumentInstanceService {
   <td><p><strong>데이터베이스 서비스 예</strong></p></td> 
    </tr>
   <tr>
-   <td><p>대화형 커뮤니케이션용 초안을 만들거나 직접 제출할 수 있습니다. 저장 작업에 대한 API는 대화형 커뮤니케이션이 초안으로 제출되고 초안 이름이 포함되어 있는지 확인합니다. 그런 다음 API는 입력 메서드로 Save를 사용하여 mySQLDataBaseServiceCRUD 서비스를 호출합니다.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
-   <td><p>mySQLDataBaseServiceCRUD 서비스는 입력 메서드로 저장을 확인하고 자동 생성된 초안 ID를 생성하여 AEM에 반환합니다. 초안 ID를 생성하는 논리는 데이터베이스에 따라 달라질 수 있습니다.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   <td><p>대화형 커뮤니케이션용 초안을 만들거나 직접 제출할 수 있습니다. 저장 작업에 대한 API는 대화형 커뮤니케이션이 초안으로 제출되고 초안 이름이 포함되어 있는지 확인합니다. 그런 다음 API는 입력 메서드로 Save를 사용하여 mySQLDataBaseServiceCRUD 서비스를 호출합니다.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
+   <td><p>mySQLDataBaseServiceCRUD 서비스는 입력 메서드로 저장을 확인하고 자동 생성된 초안 ID를 생성하여 AEM에 반환합니다. 초안 ID를 생성하는 논리는 데이터베이스에 따라 달라질 수 있습니다.</p></br><img src="assets/save-operation-service.png"/></td>
    </tr>
   <tr>
-   <td><p>업데이트 작업에 대한 API는 대화형 통신 초안의 상태를 검색하고 대화형 통신에 초안 이름이 포함되어 있는지 확인합니다. API는 mySQLDataBaseServiceCRUD 서비스를 호출하여 데이터베이스의 해당 상태를 업데이트합니다.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>업데이트 작업에 대한 API는 대화형 통신 초안의 상태를 검색하고 대화형 통신에 초안 이름이 포함되어 있는지 확인합니다. API는 mySQLDataBaseServiceCRUD 서비스를 호출하여 데이터베이스의 해당 상태를 업데이트합니다.</p></br><img src="assets/save-as-draft-update-operation.png"/></td>
    <td><p>mySQLDataBaseServiceCRUD 서비스는 Update를 입력 방법으로 확인하고 대화형 통신 초안의 상태를 데이터베이스에 저장합니다.</br></p><img src="assets/update-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>가져오기 작업에 대한 API는 대화형 통신에 초안 ID가 포함되어 있는지 확인합니다. 그런 다음 API는 대화형 통신에 대한 데이터를 검색하기 위해 입력 메서드로 Get을 사용하여 mySQLDataBaseServiceCRUD 서비스를 호출합니다.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
-   <td><p>mySQLDataBaseServiceCRUD 서비스는 입력 메서드로 Get을 확인하고 초안 ID를 기반으로 대화형 통신에 대한 데이터를 검색합니다.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   <td><p>mySQLDataBaseServiceCRUD 서비스는 입력 메서드로 Get을 확인하고 초안 ID를 기반으로 대화형 통신에 대한 데이터를 검색합니다.</p></br><img src="assets/get-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>getAll 작업을 위한 API는 mySQLGetALLData 서비스를 호출하여 데이터베이스에 저장된 모든 대화형 통신에 대한 데이터를 검색합니다.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
-   <td><p>mySQLGetALLData 서비스는 데이터베이스에 저장된 모든 대화형 커뮤니케이션에 대한 데이터를 검색합니다.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   <td><p>mySQLGetALLData 서비스는 데이터베이스에 저장된 모든 대화형 커뮤니케이션에 대한 데이터를 검색합니다.</p></br><img src="assets/getall-operation-service.png"/></td>
    </tr>
   </tbody>
 </table>

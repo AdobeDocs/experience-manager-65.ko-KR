@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2209'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ AEM 워크플로 모델에서 다음을 수행할 수 있습니다.
 
 다음 단계를 실행하여 변수를 생성합니다.
 
-1. AEM 인스턴스에서 도구로 이동합니다 ![](/help/forms/using/assets/hammer.png) > 워크플로우 > 모델.
+1. AEM 인스턴스에서 도구로 이동합니다 ![도구](/help/forms/using/assets/hammer.png) > 워크플로우 > 모델.
 1. 누르기 **[!UICONTROL 만들기]** 워크플로우 모델의 제목과 선택적 이름을 지정합니다. 모델을 선택하고 을 누릅니다. **[!UICONTROL 편집]**.
 1. 워크플로우 모델의 사이드 킥에서 사용할 수 있는 변수 아이콘을 탭한 다음 을 누릅니다 **[!UICONTROL 변수 추가]**.
 

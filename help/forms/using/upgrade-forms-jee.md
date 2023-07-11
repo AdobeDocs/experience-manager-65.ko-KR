@@ -9,9 +9,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ AEM 6.5.12.0 Forms on JEE는 전체 설치 프로그램과 패치 설치 프로�
 
 다음 표에서는 전체 및 패치 설치 관리자를 사용하기 위한 시나리오를 보여 줍니다.
 
-![](assets/full-and-patch-installer.png)
+![전체 및 패치 설치 프로그램 시나리오](assets/full-and-patch-installer.png)
 
 전체 설치 관리자를 사용하여 기존 JEE의 AEM 6.3 Forms 또는 JEE의 AEM 6.4 Forms을 JEE의 AEM 6.5.12.0 Forms으로 업그레이드하려면 다음 절차를 수행하십시오.
 
