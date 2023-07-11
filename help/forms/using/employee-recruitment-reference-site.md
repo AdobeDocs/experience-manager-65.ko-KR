@@ -1,14 +1,10 @@
 ---
 title: 직원 채용 참조 사이트 안내
-seo-title: Employee recruitment
 description: AEM Forms 참조 사이트에서는 조직이 AEM Forms 기능을 사용하여 직원 채용 워크플로우를 구현하는 방법을 보여 줍니다.
-seo-description: AEM Forms reference site showcases how organizations can use AEM Forms features to implement employee recruitment workflow.
-uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 0%
@@ -45,7 +41,7 @@ ht-degree: 0%
 
 #### We Finance 직원 채용 워크플로우 {#we-finance-employee-recruiting-workflow}
 
-다음은 이 문서에서 설명하는 We Finance 직원 채용 워크플로우의 모델입니다.
+다음은 이 문서에서 따르는 We Finance 직원 채용 워크플로우의 모델입니다.
 
 ![we-finance-employee-recruiting-workflow](assets/we-finance-employee-recruiting-workflow.png)
 
@@ -88,11 +84,11 @@ We.Finance 홈 페이지와 커리어 페이지는 AEM Sites 페이지입니다.
 
 다음으로 이동 `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` 및 클릭 **[!UICONTROL 경력]**. 클릭 **[!UICONTROL 검색]** 작업 목록을 채운 다음 **[!UICONTROL 적용]** 일 때문에요 양식에 세부사항을 입력하고 신청서를 제출하세요.
 
-이 연습을 통한 모든 커뮤니케이션이 지정된 이메일 ID로 전송될 때 애플리케이션에 올바른 이메일 ID를 지정했는지 확인하십시오.
+이 연습을 통한 모든 통신이 지정된 이메일 ID로 전송될 때 애플리케이션에 올바른 이메일 ID를 지정해야 합니다.
 
 ## 존 제이콥스는 새라 로즈의 고용 매니저 심사 프로필을 후보 명단에 올렸다 {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-조직은 Sarah가 제출한 Job 지원서를 받습니다. 채용 담당자인 존 제이콥스는 사라의 프로필을 검토하는 임무를 맡게 된다. AEM 받은 편지함에서 작업을 검토하고 작업 요구 사항과 일치하는 프로필을 찾은 다음 후보 목록을 클릭합니다. 새라의 프로필은 그녀의 승인을 위해 고용 매니저, 글로리아 리오스에 전달됩니다.
+조직은 Sarah가 제출한 Job 지원서를 받습니다. 채용 담당자인 존 제이콥스는 사라의 프로필을 검토하는 임무를 맡게 된다. John은 AEM 받은 편지함에서 작업을 검토하고 작업 요구 사항과 일치하는 프로필을 찾은 다음 요약 목록을 클릭합니다. 새라의 프로필은 그녀의 승인을 위해 고용 매니저, 글로리아 리오스에 전달됩니다.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
@@ -116,7 +112,7 @@ Job 지원 화면의 제출 작업은 John Jacob의 받은 편지함에서 지�
 
 ![글로리안 박스](assets/gloriainbox.png)
 
-글로리아 AEM 받은 편지함
+Gloria&#39;s AEM 받은 편지함
 
 ![글로리아스케들인터뷰](assets/gloriaschedulesinterview.png)
 
@@ -146,7 +142,7 @@ John Doe는 인터뷰 일정을 잡고 Sarah Rose에게 세부 사항을 전송�
 
 ## Sarah Rose는 인터뷰 일정이 포함된 이메일을 받습니다 {#sarah-rose-receives-the-email-with-interview-schedule}
 
-Sarah Rose는 인터뷰 일정, 장소 및 기타 세부 정보가 포함된 이메일을 수신합니다. 수락 을 클릭하여 인터뷰 일정 및 장소가 적절함을 나타냅니다. 정확한 정보에 의해 안내된 대로, 사라는 인터뷰에 응한다.
+Sarah Rose는 인터뷰 일정, 장소 및 기타 세부 정보가 포함된 이메일을 수신합니다. Sarah가 Accept를 클릭하여 인터뷰 일정 및 장소에 이상이 없음을 나타냅니다. 정확한 정보에 의해 안내된 대로, 사라는 인터뷰에 응한다.
 
 ![sarahroseinterviewemail](assets/sarahroseinterviewemail.png)
 
@@ -158,7 +154,7 @@ Sarah Rose가 인터뷰 일정을 받습니다
 
 ![글로리아리오싱박스 오퍼](assets/gloriariosinboxoffer.png)
 
-글로리아 AEM 받은 편지함
+Gloria&#39;s AEM 받은 편지함
 
 ![글로리아리오스셀렉타민](assets/gloriariosselectcandidate.png)
 
@@ -166,7 +162,7 @@ Sarah Rose가 인터뷰 일정을 받습니다
 
 ## John Doe가 자세한 정보를 요청합니다. {#john-doe-requests-more-information}
 
-후보자에게 입단을 요청하기 전에 그녀의 경력을 살펴볼 필요가 있다. John Doe는 선택된 지원자의 세부 사항을 열어 검토하고 있으며, 그녀의 취업 및 교육 세부 사항 중 일부가 아직 채워지지 않은 것을 발견합니다. John Doe 클릭 수에 대한 자세한 정보가 필요합니다.
+지원자에게 이 조직에 가입하도록 요청하기 전에 사라의 경력을 확인해야 합니다. John Doe는 선택된 지원자의 세부 사항을 열어 검토하고 있으며, 그녀의 취업 및 교육 세부 사항 중 일부가 아직 채워지지 않은 것을 발견합니다. John Doe 클릭 수에 대한 자세한 정보가 필요합니다.
 
 ![johndoeinbox](assets/johndoeinbox.png) ![johndoenedmoreinformation](assets/johndoeneedmoreinformation.png)
 
@@ -234,7 +230,7 @@ Sarah Rose는 서명에 대한 회신을 받는다. Sarah가 여기를 클릭하
 
 Sarah Rose는 서명에 대한 가입 편지를 받습니다
 
-Sarah는 타이핑하거나, 손으로 쓰거나, 서명 이미지를 삽입하거나, 모바일 터치스크린을 사용하여 서명을 그리도록 선택할 수 있습니다. Sarah는 자신의 이름을 입력하고 Click To Sign을 클릭한 다음 서명된 조인 편지 사본을 다운로드합니다.
+Sarah는 타이핑하거나, 손으로 쓰거나, 서명 이미지를 삽입하거나, 모바일 터치스크린을 사용하여 서명을 그리도록 선택할 수 있습니다. Sarah는 자신의 이름을 입력하고 Click To Sign을 클릭한 다음, 가입 편지의 서명된 사본을 다운로드합니다.
 
 ![sarahrosejoininglettersign](assets/sarahrosejoininglettersign.png)
 

@@ -5,9 +5,9 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '714'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->이 페이지에는 hybris 웹 사이트에 대한 링크가 포함되어 있습니다. 특정 페이지의 경우 로그인하려면 계정이 필요합니다.
+>이 페이지에는 hybris 웹 사이트에 대한 링크가 포함되어 있습니다. 특정 페이지의 경우 로그인할 계정이 필요합니다.
 
 ## SAP Commerce Cloud을 사용하여 eCommerce 배포 {#deploying-ecommerce-with-sap-commerce-cloud}
 
@@ -44,14 +44,13 @@ ht-degree: 2%
 >[!NOTE]
 >
 >* 버전 18.11 이상을 지원합니다.
->* 를 실행하려면 Java 7이 필요합니다 [hybris 5 서버.](https://www.hybris.com/en/architecture-technology)
->* hybris 추가 기능, [Telco Accelerator](https://www.hybris.com/en/products/telecommunication)는 AEM 확장에서 지원되지 않습니다.
+>* 를 실행하려면 Java™ 7이 필요합니다. [hybris 5 서버.](https://www.sap.com/products/crm.html)
+* hybris 추가 기능, [Telco Accelerator](https://www.sap.com/products/crm.html)는 AEM 확장에서 지원되지 않습니다.
 >
-
 
 ### Hybris가 있는 전자 상거래에 필요한 패키지 {#packages-needed-for-ecommerce-with-hybris}
 
-전자 상거래 기능을 설치하려면 다음 작업을 수행해야 합니다.
+eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 
 * hybris 서버
 * AEM 전자 상거래 프레임워크:
@@ -92,29 +91,29 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->hybris 서버를 사용하려면 별도의 hybris 라이센스가 필요합니다.
+hybris 서버를 사용하려면 별도의 hybris 라이센스가 필요합니다.
 
 >[!NOTE]
 >
->개발자용 [API 설명서](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 을 다운로드할 수도 있습니다.
+개발자용 [API 설명서](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 을 다운로드할 수도 있습니다.
 
 ### hybris 서버 다운로드 및 구축 {#download-and-build-your-hybris-server}
 
-이 절차의 단계는 hybris 서버를 다운로드하고 빌드합니다. 또한 hybris와 cq 간의 연결에 필요한 초기 구성을 만들 것입니다. 그러면 기본 설정에서 확장을 사용할 수 있습니다.
+이 절차의 단계는 hybris 서버를 다운로드하고 빌드합니다. 또한 hybris와 cq 간의 연결에 필요한 초기 구성을 만듭니다. 그런 다음 확장 기능을 기본 설정과 함께 사용할 수 있습니다.
 
 >[!CAUTION]
 >
->5.5.1 이전 버전의 Hybris는 지원되지 않습니다.
+5.5.1 이전 버전의 Hybris는 지원되지 않습니다.
 
 >[!NOTE]
 >
->이 작업을 완료하려면 [그루비](https://groovy-lang.org/) 이(가) 시스템에 설치되었습니다.
+이 작업을 완료하려면 [그루비](https://groovy-lang.org/) 이(가) 시스템에 설치되었습니다.
 
 1. 다운로드 **hybris Commerce Suite** hybris 다운로드 사이트에서 배포
 
    >[!CAUTION]
    >
-   >이에 액세스하려면 (hybris의) 계정이 필요합니다.
+   이에 액세스하려면 (hybris에서) 계정이 필요합니다.
 
 1. 배포 파일을 필요한 위치에 압축 해제합니다(참조: &lt;hybris-root-directory>).
 1. 명령줄에서 다음을 실행합니다.
@@ -128,11 +127,11 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >실행 시:
+   실행 시:
    >
-   >`ant clean all`
+   `ant clean all`
    >
-   >누르기 `Return` 필요한 경우.
+   누르기 `Return` 필요한 경우.
 
 1. 다음 파일을 추출된 hybris 배포의 루트 폴더에 다운로드합니다.
 
@@ -145,7 +144,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >hybris 5.6.0 이상의 경우 다음 setup.groovy를 사용하십시오.
+   hybris 5.6.0 이상의 경우 setup.groovy를 사용합니다.
 
    5.6.0 이상
 
@@ -166,7 +165,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >시스템에 따라 이러한 몇 가지 단계를 완료하는 데 몇 분이 걸릴 수 있습니다.
+   시스템에 따라 이러한 몇 가지 단계를 완료하는 데 몇 분이 걸릴 수 있습니다.
 
 1. 브라우저에서 다음 위치로 이동합니다. **hybris 관리 콘솔** 위치:
 
@@ -174,13 +173,13 @@ ht-degree: 2%
 
 1. 클릭 **초기화** 그런 다음 초기화 작업을 확인합니다(기존 데이터가 삭제됨).
 
-   진행률이 콘솔에 표시되며, `FINISHED` 완료를 나타냅니다.
+   진행 상황이 콘솔에 표시되며, `FINISHED` 완료를 나타냅니다.
 
    >[!NOTE]
    >
-   >시스템에 따라 완료하는 데 몇 분 정도 걸릴 수 있습니다.
+   시스템에 따라 완료하는 데 몇 분 정도 걸릴 수 있습니다.
 
-### Geometrixx Outdoors 스토어 설정 {#setup-the-geometrixx-outdoors-store}
+### Geometrixx Outdoors 저장소 설정 {#setup-the-geometrixx-outdoors-store}
 
 이 절차에서는 데모 스토어 - Geometrixx 온라인을 업로드하고 구성합니다.
 
@@ -223,7 +222,7 @@ ht-degree: 2%
 
 [파일 가져오기](/help/sites-deploying/assets/base-store.csv)
 
-   hybris 5.7의 경우 다음을 사용하십시오.
+   hybris 5.7의 경우 다음을 사용합니다.
 
 [파일 가져오기](/help/sites-deploying/assets/base-store-5_7.csv)
 

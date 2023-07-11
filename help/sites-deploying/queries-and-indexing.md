@@ -1,21 +1,17 @@
 ---
 title: Oak 쿼리 및 색인 지정
-seo-title: Oak Queries and Indexing
 description: AEM에서 색인을 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure indexes in AEM.
-uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: b27a7a1cc2295b1640520dcb56be4f3eb4851499
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '2674'
-ht-degree: 2%
+source-wordcount: '2619'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +23,7 @@ ht-degree: 2%
 
 ## 소개 {#introduction}
 
-Jackrabbit 2와 달리 Oak는 기본적으로 콘텐츠를 인덱싱하지 않습니다. 기존 관계형 데이터베이스와 마찬가지로 필요할 때 사용자 정의 인덱스를 만들어야 합니다. 특정 쿼리에 대한 색인이 없으면 많은 노드가 트래버스될 수 있습니다. 쿼리가 여전히 작동할 수 있지만 매우 느릴 수 있습니다.
+Jackrabbit 2와 달리 Oak는 기본적으로 콘텐츠를 인덱싱하지 않습니다. 기존 관계형 데이터베이스와 마찬가지로 필요할 때 사용자 정의 인덱스를 만들어야 합니다. 특정 쿼리에 대한 색인이 없으면 많은 노드가 트래버스될 수 있습니다. 쿼리가 여전히 작동할 수 있지만, 상당히 느릴 수 있습니다.
 
 Oak에서 색인 없는 쿼리가 발견되면 경고 수준 로그 메시지가 인쇄됩니다.
 
@@ -70,18 +66,18 @@ Apache Oak 기반 백엔드를 사용하면 서로 다른 인덱서를 저장소
 >
 >대규모 저장소의 경우 색인 작성에는 많은 시간이 소요됩니다. 이는 색인의 초기 생성과 색인 재지정(정의를 변경한 후 색인 재구축) 모두에 적용됩니다. 참조: [Oak 색인 문제 해결](/help/sites-deploying/troubleshooting-oak-indexes.md) 및 [느린 리인덱싱 방지](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
-매우 큰 저장소에서 색인 재지정이 필요한 경우, 특히 MongoDB와 전체 텍스트 색인의 경우 텍스트 사전 추출을 고려하며 oak-run을 사용하여 초기 색인을 작성하고 색인을 재지정하는 것이 좋습니다.
+특히 MongoDB 및 전체 텍스트 색인의 경우 대규모 리포지토리에서 리색인화가 필요한 경우 텍스트 사전 추출을 고려하며, oak-run을 사용하여 초기 색인을 빌드하고 다시 색인화하는 것을 고려하십시오.
 
-색인은 아래의 저장소에 노드로 구성됩니다. **oak:index** 노드.
+색인은 아래의 저장소에 노드로 구성됩니다. **Oak:index** 노드.
 
 인덱스 노드의 유형은 다음과 같아야 합니다. **oak:QueryIndexDefinition.** 각 인덱서에 대해 노드 속성으로 몇 가지 구성 옵션을 사용할 수 있습니다. 자세한 내용은 아래 각 인덱서 유형에 대한 구성 세부 정보를 참조하십시오.
 
 ### 속성 색인 {#the-property-index}
 
-일반적으로 속성 인덱스는 속성 제약 조건이 있지만 전체 텍스트가 아닌 쿼리에 유용합니다. 다음 절차에 따라 구성할 수 있습니다.
+속성 인덱스는 속성 제약 조건이 있지만 전체 텍스트가 아닌 쿼리에 유용합니다. 다음 절차에 따라 구성할 수 있습니다.
 
 1. 로 이동하여 CRXDE 열기 `http://localhost:4502/crx/de/index.jsp`
-1. 아래에 새 노드 만들기 **oak:index**
+1. 아래에 노드 만들기 **oak:index**
 1. 노드 이름 지정 **PropertyIndex**&#x200B;을 클릭하고 노드 유형을 로 설정합니다. **oak:QueryIndexDefinition**
 1. 새 노드에 대해 다음 속성을 설정합니다.
 
@@ -101,11 +97,11 @@ Apache Oak 기반 백엔드를 사용하면 서로 다른 인덱서를 저장소
 * 다음 **고유** 로 설정된 경우 플래그 지정 **true** 속성 인덱스에 고유성 제약 조건을 추가합니다.
 
 * 다음 **선언 노드 유형** 속성을 사용하면 인덱스만 적용할 특정 노드 유형을 지정할 수 있습니다.
-* 다음 **색인 재지정** 로 설정된 경우 플래그 지정 **true**&#x200B;는 전체 콘텐츠 다시 색인을 트리거합니다.
+* 다음 **색인 재지정** 로 설정된 경우 플래그 지정 **true**&#x200B;는 전체 콘텐츠 색인 재지정을 트리거합니다.
 
 ### 순서가 지정된 색인 {#the-ordered-index}
 
-Ordered 인덱스는 속성 인덱스의 확장입니다. 하지만 더 이상 사용되지 않습니다. 이 유형의 인덱스는 다음으로 대체해야 합니다. [Lucene 속성 인덱스](#the-lucene-property-index).
+Ordered 인덱스는 속성 인덱스의 확장입니다. 하지만 더 이상 사용되지 않습니다. 이 유형의 인덱스는 (으)로 대체해야 합니다. [Lucene 속성 인덱스](#the-lucene-property-index).
 
 ### Lucene 전체 텍스트 색인 {#the-lucene-full-text-index}
 
@@ -115,11 +111,11 @@ Apache Lucene 기반의 전체 텍스트 인덱서는 AEM 6에서 사용할 수 
 
 전체 텍스트 색인이 구성되지 않은 경우 전체 텍스트 조건이 있는 쿼리가 예상대로 작동하지 않습니다.
 
-색인이 비동기 백그라운드 스레드를 통해 업데이트되므로 백그라운드 프로세스가 완료될 때까지 잠시 동안 일부 전체 텍스트 검색을 사용할 수 없습니다.
+색인이 비동기 백그라운드 스레드를 통해 업데이트되므로 백그라운드 프로세스가 완료될 때까지 짧은 시간 동안 일부 전체 텍스트 검색을 사용할 수 없습니다.
 
 아래 절차에 따라 Lucene 전체 텍스트 인덱스를 구성할 수 있습니다.
 
-1. CRXDE 를 열고 아래에 새 노드를 만듭니다. **oak:index**.
+1. CRXDE 를 열고 아래에 노드 만들기 **oak:index**.
 1. 노드 이름 지정 **LuceneIndex** 노드 유형을 로 설정합니다. **oak:QueryIndexDefinition**
 1. 노드에 다음 속성을 추가합니다.
 
@@ -130,17 +126,17 @@ Apache Lucene 기반의 전체 텍스트 인덱서는 AEM 6에서 사용할 수 
 
 Lucene 색인에는 다음과 같은 구성 옵션이 있습니다.
 
-* 다음 **유형** 인덱스 유형을 지정할 속성은 로 설정해야 합니다. **lucene**
+* 다음 **유형** 인덱스의 형식을 지정하는 속성을 **lucene**
 * 다음 **비동기** 로 설정해야 하는 속성 **비동기**. 이렇게 하면 인덱스 업데이트 프로세스가 백그라운드 스레드로 전송됩니다.
-* 다음 **includePropertyTypes** 속성에 포함될 속성 유형의 하위 집합을 정의합니다.
+* 다음 **includePropertyTypes** 속성에 대해 설명합니다. 이 속성은 인덱스에 포함된 속성 유형의 하위 집합을 정의합니다.
 * 다음 **excludePropertyName** 속성 이름 목록을 정의하는 속성 - 인덱스에서 제외해야 하는 속성.
-* 다음 **색인 재지정** 으로 설정된 경우 플래그 지정 **true**&#x200B;는 전체 콘텐츠 다시 색인을 트리거합니다.
+* 다음 **색인 재지정** 으로 설정된 경우 플래그 지정 **true**&#x200B;는 전체 콘텐츠 색인 재지정을 트리거합니다.
 
 ### Lucene 속성 색인 {#the-lucene-property-index}
 
 다음 이후 **Oak 1.0.8**, Lucene을 사용하여 전체 텍스트가 아닌 속성 제한을 포함하는 인덱스를 만들 수 있습니다.
 
-Lucene 속성 인덱스를 만들려면 **fulltextEnabled** 속성은 항상 false로 설정해야 합니다.
+Lucene 속성 색인을 만들려면 **fulltextEnabled** 속성은 항상 false로 설정해야 합니다.
 
 다음 예제 쿼리를 사용합니다.
 
@@ -148,7 +144,7 @@ Lucene 속성 인덱스를 만들려면 **fulltextEnabled** 속성은 항상 fal
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-위의 쿼리에 대한 Lucene 속성 인덱스를 정의하려면 아래에 새 노드를 만들어 다음 정의를 추가할 수 있습니다 **oak:index:**
+위의 쿼리에 대한 Lucene 속성 인덱스를 정의하려면 아래에 노드를 만들어 다음 정의를 추가할 수 있습니다 **oak:index:**
 
 * **이름:** `LucenePropertyIndex`
 * **유형:** `oak:QueryIndexDefinition`
@@ -157,21 +153,21 @@ select * from [nt:base] where [alias] = '/admin'
 
 * **유형:**
 
-   ```xml
-   lucene (of type String)
-   ```
+  ```xml
+  lucene (of type String)
+  ```
 
 * **비동기:**
 
-   ```xml
-   async (of type String)
-   ```
+  ```xml
+  async (of type String)
+  ```
 
 * **fulltextEnabled:**
 
-   ```xml
-   false (of type Boolean)
-   ```
+  ```xml
+  false (of type Boolean)
+  ```
 
 * **includePropertyNames:** `["alias"] (of type String)`
 
@@ -203,7 +199,7 @@ select * from [nt:base] where [alias] = '/admin'
 
 기본 제공 분석기를 사용하려면 아래 절차에 따라 구성할 수 있습니다.
 
-1. 아래에서 분석기를 사용할 인덱스를 찾습니다. `oak:index` 노드.
+1. 분석기를 사용할 인덱스를 아래에서 찾습니다. `oak:index` 노드.
 
 1. 인덱스 아래에 라는 하위 노드를 만듭니다. `default` 유형 `nt:unstructured`.
 
@@ -213,17 +209,17 @@ select * from [nt:base] where [alias] = '/admin'
    * **유형:** `String`
    * **값:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
 
-   값은 사용하려는 Analyzer 클래스의 이름입니다.
+   값은 사용할 Analyzer 클래스의 이름입니다.
 
-   옵션을 사용하여 분석기를 특정 Lucene 버전과 함께 사용하도록 설정할 수도 있습니다 `luceneMatchVersion` 문자열 속성. Lucene 4.7과 함께 사용할 수 있는 구문은 다음과 같습니다.
+   옵션을 사용하여 분석기를 특정 Lucene 버전과 함께 사용하도록 설정할 수도 있습니다 `luceneMatchVersion` 문자열 속성입니다. Lucene 4.7에서 사용할 수 있는 올바른 구문은 다음과 같습니다.
 
    * **이름:** `luceneMatchVersion`
    * **유형:** `String`
    * **값:** `LUCENE_47`
 
-   If `luceneMatchVersion` 제공되지 않습니다. Oak는 함께 제공되는 Lucene 버전을 사용합니다.
+   If `luceneMatchVersion` 는 제공되지 않으며 Oak는 함께 제공되는 Lucene 버전을 사용합니다.
 
-1. Analyzer 구성에 Stopwords 파일을 추가하려면 `default` 다음 속성을 가진 항목:
+1. Analyzer 구성에 중지 단어 파일을 추가하려면 `default` 다음 속성을 가진 항목:
 
    * **이름:** `stopwords`
    * **유형:** `nt:file`
@@ -243,12 +239,14 @@ select * from [nt:base] where [alias] = '/admin'
 
          * **이름:** `HTMLStrip`
          * **이름:** `Mapping`
+
       * **이름:** `tokenizer`
 
          * **속성 이름:** `name`
 
             * **유형:** `String`
             * **값:** `Standard`
+
       * **이름:** `filters`
       * **유형:** `nt:unstructured`
 
@@ -259,16 +257,14 @@ select * from [nt:base] where [alias] = '/admin'
 
                * **유형:** `String`
                * **값:** `stop1.txt, stop2.txt`
+
             * **이름:** `stop1.txt`
 
                * **유형:** `nt:file`
+
             * **이름:** `stop2.txt`
 
                * **유형:** `nt:file`
-
-
-
-
 
 공장 접미사를 제거하여 필터의 이름 charFilters 및 토큰라이저를 형성합니다. 따라서:
 
@@ -284,7 +280,7 @@ select * from [nt:base] where [alias] = '/admin'
 
 ### Solr 인덱스 {#the-solr-index}
 
-Solr 인덱스의 목적은 주로 전체 텍스트 검색이지만 경로, 속성 제한 및 기본 유형 제한으로 검색을 인덱싱하는 데 사용할 수도 있습니다. 즉, Oak의 Solr 인덱스를 모든 유형의 JCR 쿼리에 사용할 수 있습니다.
+Solr 인덱스의 목적은 전체 텍스트 검색이지만 경로, 속성 제한 및 기본 유형 제한 사항별로 검색을 인덱싱하는 데 사용할 수도 있습니다. 즉, Oak의 Solr 인덱스를 모든 유형의 JCR 쿼리에 사용할 수 있습니다.
 
 AEM의 통합은 저장소 수준에서 수행되므로 Solr은 AEM과 함께 제공되는 새 저장소 구현인 Oak에서 사용할 수 있는 색인 중 하나입니다.
 
@@ -294,7 +290,7 @@ AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 
 
 원격 Solr 서버 인스턴스에서 작동하도록 AEM을 구성할 수도 있습니다.
 
-1. 최신 버전의 Solr을 다운로드하여 추출하십시오. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Apache Solr 설치 설명서](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
+1. 최신 버전의 Solr을 다운로드하여 추출하십시오. 자세한 방법은 을 참조하십시오. [Apache Solr 설치 설명서](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
 1. 이제 두 개의 Solr 샤드를 만듭니다. 이렇게 하려면 Solr의 압축을 푼 폴더에 각 분할에 대한 폴더를 만들면 됩니다.
 
    * 첫 번째 분할에 대해 폴더를 만듭니다.
@@ -305,7 +301,7 @@ AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 
 
    `<solrunpackdirectory>\aemsolr2\node2`
 
-1. Solr 패키지에서 예제 인스턴스를 찾습니다. 일반적으로 라는 폴더에 있습니다. `example`패키지의 루트에 있는 &quot;&quot;입니다.
+1. Solr 패키지에서 예제 인스턴스를 찾습니다. &quot;&quot;라는 폴더에 있습니다. `example`패키지의 루트에 있는 &quot;&quot;입니다.
 1. 예제 인스턴스에서 다음 폴더를 두 개의 공유 폴더로 복사합니다( `aemsolr1\node1` 및 `aemsolr2\node2`):
 
    * `contexts`
@@ -317,7 +313,7 @@ AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 
    * `webapps`
    * `start.jar`
 
-1. &quot;&quot;라는 새 폴더 만들기 `cfg`&quot;각각의 공유 폴더에 있습니다.
+1. &quot;&quot;라는 폴더 만들기 `cfg`&quot;각각의 공유 폴더에 있습니다.
 1. Solr 및 Zookeeper 구성 파일을 새로 만든 `cfg` 개 폴더.
 
    >[!NOTE]
@@ -345,7 +341,7 @@ AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 
 1. 선택 **원격 Solr** 아래의 드롭다운 목록에서 **오크 솔** 서버 공급자입니다.
 
 1. CRXDE로 이동한 다음 관리자로 로그인합니다.
-1. 라는 새 노드 만들기 **solrIndex** 아래에 **oak:index**&#x200B;을 클릭하고 다음 속성을 설정합니다.
+1. 라는 노드 만들기 **solrIndex** 아래에 **oak:index**&#x200B;을 클릭하고 다음 속성을 설정합니다.
 
    * **유형:** solr(문자열 유형의)
    * **비동기:** 비동기(String 유형)
@@ -390,13 +386,13 @@ ACS Commons 패키지는 속성 인덱스를 만드는 데 사용할 수 있는 
 
 #### 분석을 위한 디버깅 정보 준비 {#preparing-debugging-info-for-analysis}
 
-실행 중인 쿼리에 필요한 정보를 얻는 가장 쉬운 방법은 [쿼리 설명 도구](/help/sites-administering/operations-dashboard.md#explain-query). 이렇게 하면 로그 수준 정보를 확인하지 않고도 느린 쿼리를 디버깅하는 데 필요한 정확한 정보를 수집할 수 있습니다. 디버깅 중인 쿼리를 알고 있는 경우 이 방법이 좋습니다.
+실행 중인 쿼리에 필요한 정보를 얻는 가장 쉬운 방법은 [쿼리 설명 도구](/help/sites-administering/operations-dashboard.md#explain-query). 이를 통해 로그 수준 정보를 확인하지 않고도 느린 쿼리를 디버깅하는 데 필요한 정확한 정보를 수집할 수 있습니다. 디버깅 중인 쿼리를 알고 있는 경우 이 방법이 좋습니다.
 
 어떤 이유로든 가능하지 않은 경우, 단일 파일에 인덱싱 로그를 수집하여 특정 문제를 해결하는 데 사용할 수 있습니다.
 
 #### 로깅 활성화 {#enable-logging}
 
-로깅을 활성화하려면 를 활성화해야 합니다 **디버그** oak 색인 지정 및 쿼리와 관련된 범주에 대한 레벨 로그입니다. 이러한 범주는 다음과 같습니다.
+로깅을 활성화하려면 다음을 활성화해야 합니다. **디버그** oak 색인 지정 및 쿼리와 관련된 범주에 대한 레벨 로그입니다. 이러한 범주는 다음과 같습니다.
 
 * org.apache.jackrabbit.oak.plugins.index
 * org.apache.jackrabbit.oak.query
@@ -406,7 +402,7 @@ ACS Commons 패키지는 속성 인덱스를 만드는 데 사용할 수 있는 
 
 >[!NOTE]
 >
->문제를 해결하려는 쿼리가 실행되는 기간 동안에만 로그를 DEBUG로 설정하는 것이 중요합니다. 그렇지 않으면 시간이 지남에 따라 로그에 많은 이벤트가 생성됩니다. 이러한 이유로 필요한 로그가 수집되면 위에서 언급한 범주에 대한 INFO 수준 로깅으로 다시 전환합니다.
+>문제를 해결하려는 쿼리가 실행되는 기간 동안에만 로그를 DEBUG로 설정하는 것이 중요합니다. 그렇지 않으면 시간이 지남에 따라 로그에 많은 양의 이벤트가 생성됩니다. 이러한 이유로 필요한 로그가 수집되면 위에서 언급한 범주에 대한 INFO 수준 로깅으로 다시 전환합니다.
 
 다음 절차에 따라 로깅을 활성화할 수 있습니다.
 
@@ -420,9 +416,9 @@ ACS Commons 패키지는 속성 인덱스를 만드는 데 사용할 수 있는 
 
 #### 색인 구성 {#index-configuration}
 
-쿼리가 평가되는 방식은 주로 색인 구성의 영향을 받습니다. 분석하거나 지원으로 보내려면 색인 구성을 가져오는 것이 중요합니다. 구성을 콘텐츠 패키지로 가져오거나 JSON 렌디션을 가져올 수 있습니다.
+쿼리가 평가되는 방식은 주로 색인 구성의 영향을 받습니다. 색인 구성을 분석하거나 지원으로 보내는 것이 중요합니다. 구성을 콘텐츠 패키지로 가져오거나 JSON 렌디션을 가져올 수 있습니다.
 
-대부분의 경우 인덱싱 구성은 `/oak:index` crxde의 노드에서는 다음 위치에서 JSON 버전을 가져올 수 있습니다.
+일반적으로 인덱싱 구성은 `/oak:index` crxde의 노드에서는 다음 위치에서 JSON 버전을 가져올 수 있습니다.
 
 `https://serveraddress:port/oak:index.tidy.-1.json`
 
@@ -455,7 +451,7 @@ ACS Commons 패키지는 속성 인덱스를 만드는 데 사용할 수 있는 
 
 #### 기타 세부 정보 {#other-details}
 
-문제를 해결하기 위해 다음과 같은 추가 세부 정보를 수집할 수 있습니다.
+다음과 같은 문제를 해결하는 데 도움이 되는 추가 세부 정보를 수집할 수 있습니다.
 
 1. 인스턴스가 실행 중인 Oak 버전입니다. CRXDE를 열고 시작 페이지의 오른쪽 아래 모서리에 있는 버전을 확인하거나 의 버전을 확인하여 이를 확인할 수 있습니다. `org.apache.jackrabbit.oak-core` 번들.
 1. 문제가 있는 쿼리의 QueryBuilder 디버거 출력입니다. 디버거는 다음 위치에서 액세스할 수 있습니다. `https://serveraddress:port/libs/cq/search/content/querydebug.html`
