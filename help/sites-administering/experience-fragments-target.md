@@ -1,20 +1,16 @@
 ---
 title: Adobe Target으로 경험 조각 내보내기
-seo-title: Exporting Experience Fragments to Adobe Target
 description: Adobe Target으로 경험 조각 내보내기
-seo-description: Exporting Experience Fragments to Adobe Target
-uuid: 2df0faab-5d5e-4fc1-93b3-28b7e6f3c306
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 88763b318e25efb16f61bc16530082877392c588
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 65%
+source-wordcount: '1533'
+ht-degree: 43%
 
 ---
 
@@ -27,15 +23,15 @@ ht-degree: 65%
 >6.5.3.0:
 >
 >* **Externalizer 도메인** 이제 을(를) 선택할 수 있습니다.
-   >  **참고:** 외부화 도메인은 오퍼 콘텐츠로 전송되는 Target 조각의 콘텐츠에만 해당되며, 오퍼 콘텐츠 보기와 같은 메타데이터에는 해당되지 않습니다.
+>  **참고:** 외부화 도메인은 오퍼 콘텐츠로 전송되는 Target 조각의 콘텐츠에만 해당되며, 오퍼 콘텐츠 보기와 같은 메타데이터에는 해당되지 않습니다.
 >
 >6.5.2.0:
 >
 >* 경험 조각을 다음 중 하나로 내보낼 수 있습니다.
-   >
-   >   * 기본 작업 영역입니다.
-   >   * 클라우드 구성에 지정된 이름이 지정된 작업 영역입니다.
-   >   * **참고:** 특정 작업 공간으로 내보내려면 Adobe Target Premium이 필요합니다.
+>
+>   * 기본 작업 영역입니다.
+>   * 클라우드 구성에 지정된 이름이 지정된 작업 영역입니다.
+>   * **참고:** 특정 작업 공간으로 내보내려면 Adobe Target Premium이 필요합니다.
 >
 >* AEM은(는) 다음과 같아야 합니다. [ims를 사용하여 Adobe Target과 통합](/help/sites-administering/integration-target-ims.md).
 >
@@ -44,8 +40,7 @@ ht-degree: 65%
 >* AEM 경험 조각은 Adobe Target의 기본 작업 영역으로 내보내집니다.
 >* [Adobe Target과 통합](/help/sites-administering/target.md)의 지침에 따라 Adobe Target과 AEM을 통합해야 합니다.
 
-
-내보낼 수 있습니다. [경험 조각](/help/sites-authoring/experience-fragments.md): Adobe Experience Manager(AEM)에서 만든 다음 Adobe Target(Target)로 복사합니다. 그런 다음 Target 활동의 오퍼로 사용하여 경험을 대규모로 테스트하고 개인화할 수 있습니다.
+내보낼 수 있습니다. [경험 조각](/help/sites-authoring/experience-fragments.md): Adobe Experience Manager(AEM)에서 만든 다음 Adobe Target(Target)로 복사합니다. 그런 다음 Target 활동에서 오퍼로 사용하여 경험을 대규모로 테스트하고 개인화할 수 있습니다.
 
 경험 조각을 Adobe Target으로 내보내는 데 사용할 수 있는 세 가지 형식 옵션은 다음과 같습니다.
 
@@ -67,10 +62,9 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 >
 >또한 자세한 내용은 다음을 참조하십시오.
 >
->* [Adobe Target 개발](https://www.adobe.io/apis/experiencecloud/target.html)
->* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
+>* [Adobe Target 개발](http://developers.adobetarget.com/)
+>* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 >
-
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -81,7 +75,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 다음과 같은 다양한 작업을 수행해야 합니다.
 
 1. 다음을 수행해야 합니다. [ims를 사용하여 AEM과 Adobe Target 통합](/help/sites-administering/integration-target-ims.md).
-2. AEM 작성자 인스턴스에서 경험 조각을 내보내므로, 경험 조각 내의 모든 참조가 웹 전송에 대해 외부화되도록 작성자 인스턴스에서 [AEM 링크 외부화를 구성](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)해야 합니다.
+2. 경험 조각은 AEM 작성자 인스턴스에서 내보내지므로 다음과 같이 해야 합니다. [AEM 링크 외부화 구성](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) 경험 조각 내의 모든 참조가 웹 전송에 대해 외부화되도록 작성자 인스턴스에서 를 참조하십시오.
 
    >[!NOTE]
    >
@@ -89,11 +83,11 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 
 ## 클라우드 구성 추가 {#add-the-cloud-configuration}
 
-조각을 내보내기 전에 **Adobe Target**&#x200B;용 **클라우드 구성**&#x200B;을 조각 또는 폴더에 추가해야 합니다. 이렇게 하면 다음과 같은 작업도 수행할 수 있습니다.
+조각을 내보내기 전에 **클라우드 구성** 대상 **Adobe Target** 조각 또는 폴더로. 이렇게 하면 다음과 같은 작업도 수행할 수 있습니다.
 
 * 내보내기에 사용할 형식 옵션 지정
 * Target 작업 영역을 대상으로 선택
-* 경험 조각의 참조 재작성을 위한 외부화 도메인 선택 (선택 사항)
+* 경험 조각의 참조 재작성을 위한 외부화 도메인 선택(선택 사항)
 
 필요한 옵션은 필요한 폴더 및/또는 조각의 **페이지 속성**&#x200B;에서 선택할 수 있습니다. 사양은 필요에 따라 상속됩니다.
 
@@ -106,7 +100,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
    >클라우드 구성을 경험 조각 상위 폴더에 추가하면 해당 구성은 모든 하위 폴더에 상속됩니다.
    >
    >
-   >클라우드 구성을 경험 조각에 추가하면 해당 구성은 모든 변형에 상속됩니다.
+   >클라우드 구성을 경험 조각 자체에 추가하면 해당 구성은 모든 변형에 상속됩니다.
 
 1. **클라우드 서비스** 탭을 선택합니다.
 
@@ -118,7 +112,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
    >
    >핵심 구성 요소를 참조하십시오.
    >
-   >[핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
+   >[핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 
    **Adobe Target**&#x200B;에서 다음을 선택합니다.
 
@@ -131,7 +125,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
    >
    >외부화 도메인은 선택 사항입니다.
    >
-   >내보낸 콘텐츠가 특정 *게시* 도메인을 가리키도록 하면 AEM 외부화가 구성됩니다. 자세한 내용은 [AEM 링크 외부화 구성](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)을 참조하십시오.
+   >내보낸 콘텐츠가 특정 콘텐츠를 가리키도록 하면 AEM 외부화가 구성됩니다 *게시* 도메인. 자세한 내용은 [AEM 링크 외부화 구성](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
    >
    >또한 외부화 도메인은 오퍼 콘텐츠 보기와 같은 메타데이터가 아닌 Target에 전송되는 경험 조각의 콘텐츠에만 관련이 있습니다.
 
@@ -147,9 +141,9 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 >
 >이미지와 같은 미디어 자산의 경우 하나의 참조만 Target으로 가져올 수 있습니다. 자산 자체는 AEM Assets 내에 저장되며 AEM 게시 인스턴스에서 전달됩니다.
 >
->이로 인해 경험 조각 및 관련된 모든 자산은 Target으로 내보내기 전에 게시되어야 합니다.
+>따라서 Target으로 내보내기 전에 모든 관련 에셋이 포함된 경험 조각을 게시해야 합니다.
 
-AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지정 이후):
+클라우드 구성을 지정한 후 AEM에서 Target으로 경험 조각을 내보내려면 다음을 수행하십시오.
 
 1. 경험 조각 콘솔로 이동합니다.
 1. Target으로 내보내고자 하는 경험 조각을 선택합니다.
@@ -168,11 +162,11 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
 
    >[!NOTE]
    >
-   >**게시**&#x200B;를 선택하면 경험 조각이 즉시 게시되며 Target에 전송됩니다.
+   >선택 **게시** 경험 조각을 즉시 게시하여 Target으로 전송합니다.
 
 1. 확인 대화 상자에서 **확인**&#x200B;을 탭/클릭합니다.
 
-   이제 경험 조각은 Target에 있게 됩니다.
+   이제 경험 조각이 Target 상태가 됩니다.
 
    >[!NOTE]
    >
@@ -188,7 +182,7 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
 
 ## Adobe Target에서 경험 조각 사용 {#using-your-experience-fragments-in-adobe-target}
 
-이전 작업을 수행하면 경험 조각이 Target의 오퍼 페이지에 표시됩니다. 여기에서 수행할 수 있는 작업에 대해 알아보려면 [관련 Target 설명서](https://experiencecloud.adobe.com/resources/help/ko_KR/target/target/aem-experience-fragments.html)를 살펴보십시오.
+앞의 작업을 수행하면 경험 조각이 Adobe Target의 오퍼 페이지에 표시됩니다. 다음을 살펴보십시오. [특정 Target 설명서](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=ko) 여기에서 달성할 수 있는 것에 대해 알아봅니다.
 
 >[!NOTE]
 >
@@ -196,21 +190,21 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
 
 ## 이미 Adobe Target으로 내보낸 경험 조각 삭제 {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
-이미 Target으로 내보낸 경험 조각을 삭제하면 Target의 오퍼에서 해당 조각을 사용 중인 경우 문제가 발생할 수 있습니다. AEM에서 조각 콘텐츠를 전달 중이므로 조각을 삭제하면 오퍼를 사용할 수 없습니다.
+이미 Target으로 내보낸 경험 조각을 삭제하면 Adobe Target의 오퍼에서 해당 조각을 사용 중인 경우 문제가 발생할 수 있습니다. AEM에서 조각 콘텐츠를 전달 중이므로 조각을 삭제하면 오퍼를 사용할 수 없습니다.
 
 이러한 상황을 방지하는 방법:
 
 * 경험 조각이 현재 활동에서 사용되고 있지 않은 경우, 사용자는 AEM을 통해 경고 메시지 없이 조각을 삭제할 수 있습니다.
-* 경험 조각이 현재 활동에서 사용되고 있는 경우, 조각 삭제가 활동에 미칠 수 있는 결과를 나타내는 경고 메시지가 AEM 사용자에게 표시됩니다.
+* 경험 조각이 Adobe Target에서 활동에서 사용 중인 경우, 조각 삭제가 활동에 미칠 수 있는 결과에 대해 AEM 사용자에게 경고 메시지가 표시됩니다.
 
-   AEM에 오류 메시지가 표시되어도 사용자는 경험 조각을 삭제할 수 있습니다. 경험 조각을 삭제하면 다음과 같은 결과가 발생합니다.
+  AEM에 오류 메시지가 표시되어도 사용자는 경험 조각을 삭제할 수 있습니다. 경험 조각을 삭제하면 다음과 같은 결과가 발생합니다.
 
    * AEM 경험 조각 및 Target 오퍼가 원하지 않은 동작을 수행할 수 있습니다.
 
       * 경험 조각 HTML이 Target으로 푸시되었으므로 해당 오퍼는 여전히 렌더링될 수 있습니다.
       * AEM에서 참조된 자산을 삭제해도 경험 조각의 참조가 올바르게 작동하지 않을 수 있습니다.
-   * 물론, AEM에 경험 조각이 더 이상 존재하지 않으므로 이후에 경험 조각을 수정할 수 없습니다.
 
+   * 경험 조각이 AEM에 더 이상 존재하지 않으므로 경험 조각을 더 이상 수정할 수 없습니다.
 
 
 ## Target으로 내보낸 경험 조각에서 ClientLib 제거 {#removing-clientlibs-from-fragments-exported-target}
@@ -235,23 +229,23 @@ AEM에서 제공 중인 페이지에서 Adobe Target과 함께 경험 조각 오
 </html>
 ```
 
-높은 수준에서 AEM이 경험 조각을 Adobe Target으로 내보낼 때 몇 가지 추가 Sling 선택기를 사용하여 수행됩니다. 예를 들어 내보낸 경험 조각의 URL은 다음과 같을 수 있습니다(참고: `nocloudconfigs.atoffer`):
+AEM이 경험 조각을 Adobe Target으로 내보낼 때 높은 수준에서 여러 개의 추가 Sling 선택기를 사용하여 내보내집니다. 예를 들어 내보낸 경험 조각의 URL은 다음과 같을 수 있습니다(참고: `nocloudconfigs.atoffer`):
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
-다음 `nocloudconfigs` 선택기는 HTL을 사용하여 정의되며 다음 위치에서 복사하여 오버레이할 수 있습니다.
+다음 `nocloudconfigs` 선택기는 HTL을 사용하여 정의되며 다음에서 복사하여 오버레이할 수 있습니다.
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
-다음 `atoffer` 선택기는 실제로 다음을 사용하여 후처리에 적용됩니다. [Sling 재작성기](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). 둘 중 하나를 사용하여 클라이언트 라이브러리를 제거할 수 있습니다.
+다음 `atoffer` 선택기는 다음을 사용하여 사후 처리에 적용됩니다. [Sling 재작성기](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). 둘 중 하나를 사용하여 클라이언트 라이브러리를 제거할 수 있습니다.
 
 ### 예 {#example}
 
-여기에서는 을 사용하여 이 작업을 수행하는 방법에 대해 설명합니다 `nocloudconfigs`.
+여기에서는 을 사용하여 이 작업을 수행하는 방법을 살펴보겠습니다 `nocloudconfigs`.
 
 >[!NOTE]
 >
->다음을 참조하십시오. [편집 가능한 템플릿](/help/sites-developing/templates.md#editable-templates) 을 참조하십시오.
+>다음을 참조하십시오 [편집 가능한 템플릿](/help/sites-developing/templates.md#editable-templates) 을 참조하십시오.
 
 #### 오버레이 {#overlays}
 
@@ -263,7 +257,7 @@ AEM에서 제공 중인 페이지에서 Adobe Target과 함께 경험 조각 오
 
 #### 템플릿 유형 오버레이 {#template-type-overlays}
 
-이 예제에서는 다음 구조를 사용합니다.
+이 예제를 위해 다음 구조를 살펴보겠습니다.
 
 ![템플릿 유형 오버레이](assets/xf-target-integration-02.png "템플릿 유형 오버레이")
 
@@ -271,23 +265,23 @@ AEM에서 제공 중인 페이지에서 Adobe Target과 함께 경험 조각 오
 
 * `body.nocloudconfigs.html`
 
-   ![body.nocloudconfigs.html](assets/xf-target-integration-03.png "body.nocloudconfigs.html")
+  ![body.nocloudconfigs.html](assets/xf-target-integration-03.png "body.nocloudconfigs.html")
 
 * `head.nocloudconfigs.html`
 
-   ![head.nocloudconfigs.html](assets/xf-target-integration-04.png "head.nocloudconfigs.html")
+  ![head.nocloudconfigs.html](assets/xf-target-integration-04.png "head.nocloudconfigs.html")
 
 * `nocloudconfigs.html`
 
-   ![nocloudconfigs.html](assets/xf-target-integration-05.png "nocloudconfigs.html")
+  ![nocloudconfigs.html](assets/xf-target-integration-05.png "nocloudconfigs.html")
 
 >[!NOTE]
 >
->사용 `data-sly-unwrap` 필요한 본문 태그를 제거하려면 `nocloudconfigs.html`.
+>사용 `data-sly-unwrap` 본문 태그를 제거하려면 `nocloudconfigs.html`.
 
 ### 고려 사항 {#considerations}
 
-Adobe Target에서 경험 조각 오퍼를 사용하여 AEM 사이트와 비 AEM 사이트를 모두 지원해야 하는 경우 두 개의 경험 조각(두 개의 서로 다른 템플릿 유형)을 만들어야 합니다.
+Adobe Target에서 경험 조각 오퍼를 사용하여 AEM sites 및 비 AEM sites를 모두 지원해야 하는 경우 두 개의 경험 조각(두 개의 서로 다른 템플릿 유형)을 만들어야 합니다.
 
 * clientlibs/추가 html을 제거하기 위한 오버레이가 있는 1개
 

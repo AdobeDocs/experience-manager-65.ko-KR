@@ -1,29 +1,25 @@
 ---
 title: 모범 사례 배포
-seo-title: Deploying Best Practices
 description: 모범 사례 배포 및 유지 관리
-seo-description: Deploying and maintaining best practices.
-uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 9%
+source-wordcount: '434'
+ht-degree: 12%
 
 ---
 
 # 모범 사례 배포{#deploying-best-practices}
 
-배포 모범 사례에서는 가능한 가장 효율적이고 효과적인 방법으로 AEM을 배포하거나 유지 관리하는 방법을 설명합니다. 이렇게 늘어나는 주제 목록은 AEM의 다양한 영역을 포함합니다.
+배포 모범 사례에서는 가능한 가장 효율적이고 효과적인 방법으로 Adobe Experience Manager(AEM)를 배포하거나 유지 관리하는 방법을 설명합니다. 이렇게 증가하는 주제 목록은 AEM의 다양한 영역을 포함합니다.
 
 다음 영역에는 모범 사례 및 권장 사항의 배포 및 유지에 대한 설명서가 제공됩니다.
 
-* [OAK](#oak)
+* [Oak](#oak)
 * [커뮤니티](#communities)
 * [UI](#ui)
 * [공연](#performance)
@@ -36,7 +32,7 @@ ht-degree: 9%
 
 특정 문서는 다음에 나오는 표에 설명되어 있고 연결됩니다.
 
-## OAK {#oak}
+## Oak {#oak}
 
 [Oak](/help/sites-deploying/platform.md) 는 AEM의 기반이 되는 확장 가능하고 성능이 뛰어난 계층적 콘텐츠 저장소입니다.
 
@@ -48,7 +44,7 @@ ht-degree: 9%
    <td>기술 민첩성, 고성능 및 건전한 재해 복구 기능에 대해 설명하는 백서를 제공합니다.</td>
   </tr>
   <tr>
-   <td>권장 OAK 배포</td>
+   <td>권장 Oak 배포</td>
    <td><a href="/help/sites-deploying/recommended-deploys.md">권장 배포</a></td>
    <td>배포 시나리오에 대해 설명합니다</td>
   </tr>
@@ -63,7 +59,7 @@ ht-degree: 9%
    <td>이 문서에서는 이진 데이터 및 콘텐츠 노드 저장과 관련된 모범 사례에 대해 설명합니다. Amazon S3 데이터 저장소 사용에 대한 정보를 포함합니다.</td>
   </tr>
   <tr>
-   <td>OAK에서 검색</td>
+   <td>Oak에서 검색</td>
    <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">쿼리 및 색인 생성에 대한 우수 사례</a><br /> </td>
    <td>콘텐츠를 색인화하는 방법에 대한 모범 사례를 설명합니다.</td>
   </tr>
@@ -99,7 +95,7 @@ AEM에는 현재 동일한 릴리스에 클래식 UI와 터치에 적합한 UI�
   </tr>
   <tr>
    <td>CDN에 Dispatcher 사용</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">CDN에 Dispatcher 사용</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn">CDN에 Dispatcher 사용</a></td>
    <td>Akamai Edge Delivery 또는 Amazon Cloud Front와 같은 CDN(콘텐츠 게재 네트워크)은 최종 사용자에게 가까운 위치에서 콘텐츠를 제공합니다.</td>
   </tr>
   <tr>

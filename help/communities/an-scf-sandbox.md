@@ -1,24 +1,19 @@
 ---
 title: SCF 샌드박스 만들기
-seo-title: Create An SCF Sandbox
-description: 이 자습서는 주로 SCF 구성 요소 사용에 관심이 있는 AEM을 처음 사용하는 개발자를 위한 것입니다.  SCF 샌드박스 사이트를 만드는 과정을 안내합니다
-seo-description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components.  It walks through the creation of An SCF Sandbox site
-uuid: ee52e670-e1e6-4bcd-9548-c963142e6704
+description: 이 자습서는 주로 SCF 구성 요소 사용에 관심이 있는 AEM을 처음 사용하는 개발자를 위한 것입니다. SCF 샌드박스 사이트를 만드는 과정을 안내합니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
 # SCF 샌드박스 만들기  {#create-an-scf-sandbox}
-
 
 AEM 6.1 Communities에서 샌드박스를 빠르게 생성하는 가장 쉬운 방법은 커뮤니티 사이트를 생성하는 것입니다. 다음을 참조하십시오 [AEM Communities 시작하기](getting-started.md).
 
@@ -80,7 +75,7 @@ CRXDE Lite으로 작업하려면 개발자 또는 관리자 권한으로 로그�
 * `password: admin`
 
 
-**주의하십시오.** 이 로그인의 시간이 초과되므로 CRXDe Lite 도구 모음의 오른쪽 끝에서 풀다운을 사용하여 주기적으로 다시 로그인해야 합니다.
+이 로그인은 시간 초과되므로 CRXDE Lite 도구 모음의 오른쪽 끝에 있는 풀다운 메뉴를 사용하여 정기적으로 다시 로그인해야 합니다.
 
 로그인하지 않은 경우 JCR 저장소를 탐색하거나 편집/저장 작업을 수행할 수 없습니다.
 
