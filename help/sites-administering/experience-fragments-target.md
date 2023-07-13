@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: c6eee2e647a0c5e6f5a8dd7a1a13d18218fdf10b
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 43%
@@ -62,7 +62,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 >
 >또한 자세한 내용은 다음을 참조하십시오.
 >
->* [Adobe Target 개발](http://developers.adobetarget.com/)
+>* [Adobe Target 개발](https://developers.adobetarget.com/)
 >* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 >
 
