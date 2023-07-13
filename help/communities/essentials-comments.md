@@ -1,18 +1,14 @@
 ---
 title: 댓글 기본 사항
-seo-title: Comments Essentials
 description: 주석 구성 요소 개요
-seo-description: Comments component overview
-uuid: 58b7bb58-f598-4bcb-93ae-b7795cab51cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '335'
 ht-degree: 3%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 3%
 
 이 페이지에서는 댓글 시스템(댓글 구성 요소) 작업의 기본 사항과 구성원이 댓글이나 댓글을 게시할 때 생성된 사용자 생성 콘텐츠(UGC)를 관리하는 옵션을 제공합니다.
 
-comments 구성 요소는 각 개별 게시물이 댓글 구성 요소 (단수)로 표시되도록 댓글 시스템 을 설정합니다. 그것은 페이지에 포함된 댓글 시스템입니다. 주석 시스템은 호출 시 개별 주석을 만듭니다.
+comments 구성 요소는 각 개별 게시물이 댓글 구성 요소 (단수)로 표시되도록 댓글 시스템 을 설정합니다. 그것은 페이지에 포함된 댓글 시스템입니다. 주석 시스템은 호출 시 개별 주석을 생성합니다.
 
 ## 클라이언트측 핵심 사항 {#essentials-for-client-side}
 
@@ -32,7 +28,7 @@ comments 구성 요소는 각 개별 게시물이 댓글 구성 요소 (단수)�
    <td> social/commons/components/hbs/comments</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함하기 쉬워</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함되</strong></a></td>
    <td>예 - 다음 위치에서 편집 가능한 속성 <i>디자인 </i>모드</td>
   </tr>
   <tr>
@@ -79,9 +75,9 @@ comments 구성 요소는 각 개별 게시물이 댓글 구성 요소 (단수)�
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [댓글 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
+* [댓글 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [주석 엔드포인트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [주석 엔드포인트](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 

@@ -1,25 +1,21 @@
 ---
 title: 프록시 서버 도구 사용 방법
-seo-title: How to use the Proxy Server Tool
 description: 프록시 서버는 클라이언트와 서버 간 요청을 중계하는 중간 서버 역할을 합니다
-seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
-uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
 
 # 프록시 서버 도구 사용 방법{#how-to-use-the-proxy-server-tool}
 
-프록시 서버는 클라이언트와 서버 간 요청을 중계하는 중간 서버 역할을 합니다. 프록시 서버는 모든 클라이언트-서버 상호 작용을 추적하고 전체 TCP 통신의 로그를 출력합니다. 이렇게 하면 주 서버에 액세스하지 않고도 진행 상황을 정확하게 모니터링할 수 있습니다.
+프록시 서버는 클라이언트와 서버 간 요청을 중계하는 중간 서버 역할을 합니다. 프록시 서버는 모든 클라이언트-서버 상호 작용을 추적하고 전체 TCP 통신의 로그를 출력합니다. 이렇게 하면 주 서버에 액세스하지 않고도 진행 중인 상황을 정확하게 모니터링할 수 있습니다.
 
 AEM 설치에서 프록시 서버는 다음 위치에서 찾을 수 있습니다.
 
@@ -32,7 +28,7 @@ AEM 설치에서 프록시 서버는 다음 위치에서 찾을 수 있습니다
 * 전자 메일 메시지용 SMTP
 * 사용자 관리를 위한 LDAP
 
-예를 들어 웹 브라우저와 AEM과 같이 TCP/IP 네트워크를 통해 통신하는 두 애플리케이션 사이에 프록시 서버를 배치할 수 있습니다. 이를 통해 CQ 페이지를 요청할 때 발생하는 상황을 정확하게 모니터링할 수 있습니다.
+예를 들어 웹 브라우저와 AEM과 같은 TCP/IP 네트워크를 통해 통신하는 두 애플리케이션 사이에 프록시 서버를 배치할 수 있습니다. 이를 통해 CQ 페이지를 요청할 때 발생하는 상황을 정확하게 모니터링할 수 있습니다.
 
 ## 프록시 서버 도구 시작 {#starting-the-proxy-server-tool}
 
@@ -52,7 +48,7 @@ AEM 설치에서 프록시 서버는 다음 위치에서 찾을 수 있습니다
 
 `<localport>`
 
-프록시를 통해 CRX 인스턴스에 액세스하기 위해 연결하려는 로컬 시스템의 포트입니다.
+프록시를 통해 CRX 인스턴스에 액세스하기 위해 연결하려는 로컬 컴퓨터의 포트입니다.
 
 **옵션**
 
@@ -98,7 +94,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-클라이언트 간에 전달된 바이트 수( `C`) 및 서버( `S`) 6번 연결에서 평균 속도로.
+클라이언트 간에 전달된 바이트 수( `C`) 및 서버( `S`)을 클릭하여 제품에서 사용할 수 있습니다.
 
 **로그 출력의 예**
 
@@ -106,11 +102,11 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 ### 예 {#example}
 
-예를 들어 다음 저장소에 있는 매우 간단한 html 문서를 고려해 보십시오.
+예를 들어 다음 저장소의 간단한 html 문서를 고려해 보십시오.
 
 `/content/test.html`
 
-다음 위치에 있는 이미지 파일과 함께 사용:
+다음 위치에 이미지 파일과 함께 제공
 
 `/content/test.jpg`
 
@@ -128,7 +124,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 </html>
 ```
 
-AEM 인스턴스가 실행 중인 경우 `localhost:4502` 다음과 같이 프록시를 시작합니다.
+AEM 인스턴스가 실행 중인 경우 `localhost:4502`, 프록시는 다음과 같이 시작됩니다.
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
@@ -143,11 +139,11 @@ starting proxy for localhost:4502 on port 4444
 using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 ```
 
-그런 다음 브라우저를 열고 테스트 페이지에 액세스합니다.
+이제 브라우저를 열고 테스트 페이지에 액세스합니다.
 
 `http://localhost:4444/content/test.html`
 
-그리고 우리는 브라우저가 `GET` 페이지 요청:
+브라우저가 다음을 수행하는 것을 볼 수 있습니다. `GET` 페이지 요청:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -208,7 +204,7 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 
 **Keep-Alive가 작동하는지 확인**
 
-Keep-alive는 클라이언트가 서버에 대한 TCP 연결을 다시 사용하여 여러 요청(페이지 코드, 그림, 스타일 시트 등)을 할 수 있는 HTTP의 기능입니다. keep-alive가 없으면 클라이언트는 각 요청에 대해 새 연결을 설정해야 합니다.
+Keep-alive는 클라이언트가 서버에 대한 TCP 연결을 재사용하여 여러 요청(페이지 코드, 그림, 스타일 시트 등)을 수행할 수 있도록 하는 HTTP의 기능입니다. keep-alive가 없으면 클라이언트는 각 요청에 대해 새 연결을 설정해야 합니다.
 
 keep-alive가 작동하는지 확인하려면:
 
@@ -219,7 +215,7 @@ keep-alive가 작동하는지 확인하려면:
 
 **손실 요청 찾기**
 
-방화벽 및 Dispatcher와 같은 복잡한 서버 설정에서 요청이 손실된 경우 프록시 서버를 사용하여 요청이 손실된 위치를 확인할 수 있습니다. 방화벽의 경우:
+방화벽 및 Dispatcher와 같은 복잡한 서버 설정에서 요청이 손실된 경우 프록시 서버를 사용하여 요청이 손실된 위치를 확인할 수 있습니다. 방화벽이 있는 경우:
 
 * 방화벽 전 프록시 시작
 * 방화벽 후에 다른 프록시 시작
@@ -231,4 +227,4 @@ keep-alive가 작동하는지 확인하려면:
 
 * 프록시를 시작합니다.
 * 각 항목에 타임스탬프가 있는 파일에 액세스 로그를 기다리거나 씁니다.
-* 요청이 정지되기 시작하면 얼마나 많은 연결이 열려 있는지 그리고 어떤 요청이 문제를 일으키는지 확인할 수 있습니다.
+* 요청이 걸리기 시작하면 얼마나 많은 연결이 열려 있는지, 어떤 요청이 문제를 일으키는지 확인할 수 있습니다.

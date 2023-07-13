@@ -1,19 +1,15 @@
 ---
 title: 사용자 지정 클라우드 서비스 만들기
-seo-title: Creating a Custom Cloud Service
 description: 사용자 지정 Cloud Service 유형을 사용하여 기본 Cloud Services 세트를 확장할 수 있습니다
-seo-description: The default set of Cloud Services can be extended with custom Cloud Service types
-uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 16%
+source-wordcount: '406'
+ht-degree: 13%
 
 ---
 
@@ -23,19 +19,19 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->새 Cloud Service 작성에 대한 이 단계별 안내서는 Google Analytics을 사용하는 예제입니다. 모든 항목이 사용 사례에 적용되지 않을 수 있습니다.
+>Cloud Service 만들기에 대한 이 단계별 안내서는 Google Analytics을 사용하는 예제입니다. 모든 항목이 사용 사례에 적용되지 않을 수 있습니다.
 
 1. CRXDE Lite에서 `/apps`:
 
    * **이름**: `acs`
    * **유형**: `nt:folder`
 
-1. 아래에 새 노드 만들기 `/apps/acs`:
+1. 아래에 노드 만들기 `/apps/acs`:
 
    * **이름**: `analytics`
    * **유형**: `sling:Folder`
 
-1. 아래에 2개의 새 노드를 만듭니다. `/apps/acs/analytics`:
+1. 아래에 두 개의 노드 만들기 `/apps/acs/analytics`:
 
    * **이름**: 구성 요소
    * **유형**: `sling:Folder`
@@ -44,7 +40,6 @@ ht-degree: 16%
 
    * **이름**: 템플릿
    * **유형**: `sling:Folder`
-
 
 1. 마우스 오른쪽 단추 클릭 `/apps/acs/analytics/components`. 선택 **만들기...** 뒤에 오는 **구성 요소 만들기...** 열리는 대화 상자에서 다음을 지정할 수 있습니다.
 
@@ -64,7 +59,7 @@ ht-degree: 16%
    * **이름:** `cq:defaultView`
    * **값:** `html`
 
-1. 이름이 인 새 파일 만들기 `content.jsp` 아래에 `/apps/acs/analytics/components/googleanalyticspage`, 다음 컨텐츠 포함:
+1. 이름이 인 파일 만들기 `content.jsp` 아래에 `/apps/acs/analytics/components/googleanalyticspage`, 다음 컨텐츠 포함:
 
    ```xml
    <%@page contentType="text/html"
@@ -79,7 +74,7 @@ ht-degree: 16%
    </div>
    ```
 
-1. 아래에 새 노드 만들기 `/apps/acs/analytics/components/googleanalyticspage/`:
+1. 아래에 노드 만들기 `/apps/acs/analytics/components/googleanalyticspage/`:
 
    * **이름**: `dialog`
    * **유형**: `cq:Dialog`
@@ -92,7 +87,7 @@ ht-degree: 16%
       * **유형**: `String`
       * **값**: `dialog`
 
-1. 아래에 새 노드 만들기 `/apps/acs/analytics/components/googleanalyticspage/dialog`:
+1. 아래에 노드 만들기 `/apps/acs/analytics/components/googleanalyticspage/dialog`:
 
    * **이름**: `items`
    * **유형**: `cq:Widget`
@@ -102,12 +97,12 @@ ht-degree: 16%
       * **유형**: `String`
       * **값**: `tabpanel`
 
-1. 아래에 새 노드 만들기 `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
+1. 아래에 노드 만들기 `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
 
    * **이름**: `items`
    * **유형**: `cq:WidgetCollection`
 
-1. 아래에 새 노드 만들기 `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
+1. 아래에 노드 만들기 `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
 
    * **이름**: tab1
    * **유형**: `cq:Panel`
@@ -117,7 +112,7 @@ ht-degree: 16%
       * **유형**: `String`
       * **값**: `Config`
 
-1. 아래에 새 노드 만들기 `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
+1. 아래에 노드 만들기 `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
    * **이름**: 항목
    * **유형**: `nt:unstructured`
@@ -142,7 +137,7 @@ ht-degree: 16%
       * **값**: `textfield`
 
 1. 복사 `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` 끝 `/apps/acs/analytics/components/googleanalyticspage/body.jsp` 및 변경 `libs` 끝 `apps` 34행에서 79행의 스크립트 참조를 정규화된 경로로 만듭니다.
-1. 아래에 새 템플릿 만들기 `/apps/acs/analytics/templates/`:
+1. 아래에 템플릿 만들기 `/apps/acs/analytics/templates/`:
 
    * 포함 **리소스 유형** = `acs/analytics/components/googleanalyticspage`
    * 포함 **레이블** = `googleanalytics`
@@ -152,7 +147,7 @@ ht-degree: 16%
    * 포함 **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (jcr:content 노드가 아닌 템플릿 노드에서)
    * 포함 **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (jcr:content)
 
-1. 새 구성 요소 만들기: `/apps/acs/analytics/components/googleanalytics`.
+1. 구성 요소 만들기: `/apps/acs/analytics/components/googleanalytics`.
 
    에 다음 콘텐츠 추가 `googleanalytics.jsp`:
 
@@ -195,7 +190,7 @@ ht-degree: 16%
 
    구성 속성을 기반으로 사용자 지정 마크업을 출력해야 합니다.
 
-1. 다음으로 이동 `http://localhost:4502/miscadmin#/etc/cloudservices` 새 페이지를 만듭니다.
+1. 다음으로 이동 `http://localhost:4502/miscadmin#/etc/cloudservices` 페이지를 만듭니다.
 
    * **제목**: `Google Analytics`
    * **이름**: `googleanalytics`
@@ -206,14 +201,13 @@ ht-degree: 16%
    * **유형**: `String`
    * **값**: `acs/analytics/components/googleanalytics`
 
-
-1. 새로 생성된 서비스 페이지 ( )로 이동합니다. `http://localhost:4502/etc/cloudservices/googleanalytics.html`)을 클릭하고 **+** 새 구성을 만들려면 다음 작업을 수행하십시오.
+1. 새로 생성된 서비스 페이지 ( )로 이동합니다. `http://localhost:4502/etc/cloudservices/googleanalytics.html`)을 클릭하고 **+** 구성을 만들려면 다음 작업을 수행하십시오.
 
    * **상위 구성**: `/etc/cloudservices/googleanalytics`
    * **제목:**  `My First GA Config`
 
    선택 **Google Analytics 구성** 및 클릭 **만들기**.
 
-1. 입력 **계정 ID**, 예 `AA-11111111-1`. **확인**&#x200B;을 클릭합니다.
+1. 다음을 입력하십시오. **계정 ID**, 예 `AA-11111111-1`. **확인**&#x200B;을 클릭합니다.
 1. 페이지로 이동하여 페이지 속성 아래의 새로 만든 구성을 추가합니다. **Cloud Services** 탭.
 1. 페이지에 사용자 지정 마크업이 추가됩니다.

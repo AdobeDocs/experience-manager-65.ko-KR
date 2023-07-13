@@ -1,16 +1,12 @@
 ---
 title: We.Gov 및 We.Finance 참조 사이트 설정 및 구성
-seo-title: Set up and configure We.Gov reference site
 description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 지정합니다.
-seo-description: Install, configure, and customize an AEM Forms demo package.
-uuid: 0a6ad8f9-0d38-40c3-ad8d-e705edef55f8
 contentOwner: anujkapo
-discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '4663'
+source-wordcount: '4622'
 ht-degree: 3%
 
 ---
@@ -34,7 +30,7 @@ ht-degree: 3%
 | 클라우드 공급자 | 서비스 버전 | 상태 |
 |---|---|---|
 | Adobe Sign | v5 API | **지원됨** |
-| Microsoft Dynamics 365 | 1710 (9.1.0.3020) | **지원됨** |
+| Microsoft® Dynamics 365 | 1710 (9.1.0.3020) | **지원됨** |
 | Adobe Analytics | v1.4 Rest API | **지원됨** |
 **패키지 설치 고려 사항:**
 
@@ -56,12 +52,12 @@ ht-degree: 3%
       * **core.wcm.components.all-2.0.4.zip** - *샘플 WCM 구성 요소 컬렉션*
 
       * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *사이트 페이지 열 컨트롤에 대한 AEM Sites 격자 레이아웃 패키지*
-   * **we-gov-forms.ui.content-&lt;version>.zip** - *모든 컨텐츠, 페이지, 이미지, 양식, 대화형 통신 자산 등을 포함합니다.*
+
+   * **we-gov-forms.ui.content-&lt;version>.zip** - *컨텐츠, 페이지, 이미지, 양식, 대화형 통신 자산 등을 모두 포함합니다.*
 
    * **we-gov-forms.ui.analytics-&lt;version>.zip** - *저장소 내에 저장할 모든 We.Gov Forms Analytics 데이터를 포함합니다.*
 
    * **we-gov-forms.config.public-&lt;version>.zip** - *양식 데이터 모델 및 서비스 바인딩 문제를 방지하기 위해 자리 표시자 클라우드 구성을 포함한 모든 기본 구성 노드를 포함합니다.*
-
 
 이 패키지에 포함된 자산은 다음과 같습니다.
 
@@ -69,7 +65,7 @@ ht-degree: 3%
 * AEM Forms 적응형 Forms
 * AEM Forms Interactive Communications(인쇄 및 웹 채널)
 * AEM Forms XDP 기록 문서
-* AEM Forms MS Dynamics Forms 데이터 모델
+* AEM Forms MS® Dynamics Forms 데이터 모델
 * Adobe Sign 통합
 * AEM 워크플로 모델
 * AEM Assets 샘플 이미지
@@ -115,7 +111,7 @@ ht-degree: 3%
 
 ### 새 패키지 버전 설치 {#installing-new-package-versions}
 
-새 패키지 버전을 설치하려면 4.1 및 4.2에 정의된 단계를 따릅니다. 다른 이전 패키지가 이미 설치되어 있는 동안 최신 패키지 버전을 설치할 수 있지만, 먼저 이전 패키지 버전을 제거하는 것이 좋습니다. 이렇게 하려면 아래 단계를 수행합니다.
+새 패키지 버전을 설치하려면 4.1 및 4.2에 정의된 단계를 따릅니다. 다른 이전 패키지가 이미 설치되어 있는 동안 최신 패키지 버전을 설치할 수도 있지만, 이전 패키지 버전을 먼저 제거하는 것이 좋습니다. 이렇게 하려면 아래 단계를 수행합니다.
 
 1. 다음으로 이동 *https://&lt;aemserver>:&lt;port>/crx/packmgr/index.jsp*
 1. 이전 항목 찾기 **we-gov-forms.pkg.all-&lt;version>.zip** 파일.
@@ -153,7 +149,7 @@ ht-degree: 3%
 1. 설정 설명서 검토 [이메일 알림 구성](/help/sites-administering/notification.md)
 1. 이 작업을 수행하려면 관리자로 로그인하십시오.
 1. 다음으로 이동 *https://&lt;aemserver>:&lt;port>/system/console/configMgr*
-1. 를 찾아 클릭합니다. **일별 CQ 메일 서비스** 구성할 서비스입니다.
+1. 을(를) 찾아 클릭합니다 **일별 CQ 메일 서비스** 구성할 서비스입니다.
 
    ![일별 CQ 메일 서비스 구성](assets/day_cq_mail_service.jpg)
 
@@ -178,13 +174,13 @@ ht-degree: 3%
 
 **메모:**
 
-1. https:// 로 이동합니다.&lt;aemserver>:&lt;port>/aem/inbox 를 사용하면 위의 참조 설명서 링크에 설명된 프로세스를 완료할 수 있습니다.
+1. https:// 로 이동합니다.&lt;aemserver>:&lt;port>위의 참조 설명서 링크에 설명된 프로세스를 완료할 수 있는 /aem/inbox
 1. 다음 `we-gov-forms.pkg.all-[version].zip` 패키지에는 를 추출하여 액세스할 수 있는 샘플 SSL 키와 인증서가 포함되어 있습니다. `we-gov-forms.pkg.all-[version].zip/ssl` 패키지의 일부인 폴더입니다.
 
 1. SSL 인증서 및 주요 세부 정보:
 
    1. &quot;CN=localhost&quot;에 발급됨
-   1. 10년 유효성
+   1. 10년 유효
    1. &quot;password&quot;의 암호 값
 1. 개인 키는 *localhostprivate.der*.
 1. 인증서는 *localhost.crt*.
@@ -219,24 +215,24 @@ ht-degree: 3%
 1. &quot;Adobe Sign에 연결&quot;을 클릭합니다.
 1. 연결에 성공하면 &quot;저장 및 닫기&quot;를 클릭하여 통합을 완료합니다.
 
-### (선택 사항) MS Dynamics 클라우드 구성 {#ms-dynamics-cloud-configuration}
+### (선택 사항) MS® Dynamics 클라우드 구성 {#ms-dynamics-cloud-configuration}
 
-이 섹션에는 MS Dynamics 클라우드 구성에 대한 세부 정보와 지침이 포함되어 있습니다.
+이 섹션에는 MS® Dynamics 클라우드 구성에 대한 세부 정보와 지침이 포함되어 있습니다.
 
 **참조:**
 
-1. [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [AEM Forms용 Microsoft Dynamics 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
+1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [AEM Forms용 Microsoft® Dynamics 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
 
-#### MS Dynamics OData 클라우드 서비스 {#ms-dynamics-odata-cloud-service}
+#### MS® Dynamics OData 클라우드 서비스 {#ms-dynamics-odata-cloud-service}
 
 1. 다음으로 이동합니다.
 
    https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
-   1. MS Dynamics 응용 프로그램 등록에 구성된 것과 동일한 리디렉션 URL을 사용하여 서버에 액세스하는지 확인하십시오.
+   1. MS® Dynamics 응용 프로그램 등록에 구성된 것과 동일한 리디렉션 URL을 사용하여 서버에 액세스하는지 확인하십시오.
 
-1. &quot;Microsoft Dynamics OData Cloud Service&quot; 구성을 선택합니다.
+1. &quot;Microsoft® Dynamics OData Cloud Service&quot; 구성을 선택합니다.
 1. &quot;속성&quot;을 클릭합니다.
 
    ![Microsoft OData Cloud Service 속성](assets/properties_odata_cloud_service.jpg)
@@ -246,24 +242,24 @@ ht-degree: 3%
 
    1. **서비스 루트:** 예: `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **인증 유형:** OAuth 2.0
-   1. **인증 설정** (참조 [MS Dynamics 클라우드 구성 설정](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) 이 정보를 수집하려면
+   1. **인증 설정** (참조 [MS® Dynamics 클라우드 구성 설정](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) 이 정보를 수집하려면
 
       1. 클라이언트 ID - 애플리케이션 ID라고도 함
       1. 클라이언트 암호
-      1. OAuth URL - 예: [https://login.windows.net/common/oauth2/authorize](https://login.windows.net/common/oauth2/authorize)
+      1. OAuth URL - 예: [https://login.microsoftonline.com/common/oauth2/authorize](https://login.microsoftonline.com/common/oauth2/authorize)
       1. 새로 고침 토큰 URL - 예: [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
-      1. 토큰 URL 액세스 - 예: [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
+      1. 액세스 토큰 URL - 예: [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. 인증 범위 - **openid**
       1. 인증 헤더 - **인증 전달자**
       1. 리소스 - 예 `https://msdynamicsserver.api.crm3.dynamics.com`
-   1. &quot;OAuth에 연결&quot;을 클릭합니다.
 
+   1. &quot;OAuth에 연결&quot;을 클릭합니다.
 
 1. 인증에 성공하면 &quot;저장 및 닫기&quot;를 클릭하여 통합을 완료합니다.
 
-#### MS Dynamics 클라우드 구성 설정 {#dynamicsconfig}
+#### MS® Dynamics 클라우드 구성 설정 {#dynamicsconfig}
 
-이 섹션에 설명된 단계는 MS Dynamics Cloud 인스턴스에서 클라이언트 ID, 클라이언트 암호 및 세부 정보를 찾는 데 도움이 됩니다.
+이 섹션에 설명된 단계는 MS® Dynamics Cloud 인스턴스에서 클라이언트 ID, 클라이언트 암호 및 세부 정보를 찾는 데 도움이 됩니다.
 
 1. 다음으로 이동 [https://portal.azure.com/](https://portal.azure.com/) 로그인합니다.
 1. 왼쪽 메뉴에서 &quot;모든 서비스&quot;를 선택합니다.
@@ -274,20 +270,20 @@ ht-degree: 3%
 
    1. 이 URL은 OData 서비스를 구성할 때 AEM 서버에 액세스하는 데 사용되는 URL과 일치해야 합니다.
 
-1. 설정 보기에서 &quot;키&quot;를 클릭하여 새 키 만들기를 확인합니다(AEM에서 클라이언트 암호로 사용됨).
+1. 설정 보기에서 &quot;키&quot;를 클릭하여 새 키(AEM에서 클라이언트 암호로 사용됨)를 봅니다.
 
    1. 나중에 Azure 또는 AEM에서 키를 볼 수 없으므로 키의 복사본을 유지해야 합니다.
 
-1. 리소스 URL/서비스 루트 URL을 찾으려면 MS Dynamics 인스턴스 대시보드로 이동합니다.
+1. 리소스 URL/서비스 루트 URL을 찾으려면 MS® Dynamics 인스턴스 대시보드로 이동합니다.
 1. 상단 탐색 막대에서 &quot;Sales&quot; 또는 고유한 인스턴스 유형을 클릭하고 &quot;Select Settings&quot;를 클릭합니다.
 1. 오른쪽 하단 근처에 있는 &quot;사용자 지정&quot; 및 &quot;개발자 리소스&quot;를 클릭합니다.
-1. 여기에서 서비스 루트 URL을 찾을 수 있습니다. 예:
+1. 여기에서 서비스 루트 URL을 찾을 수 있습니다. 예
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
 1. 새로 고침 및 액세스 토큰 URL에 대한 자세한 내용은 여기에서 확인할 수 있습니다.
 
-   *[https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
+   *[https://learn.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://learn.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
 
 #### Forms 데이터 모델 테스트(Dynamics) {#testing-the-form-data-model}
 
@@ -297,7 +293,7 @@ ht-degree: 3%
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
 
-1. &quot;We.gov Microsoft Dynamics CRM FDM&quot;을 선택하고 &quot;속성&quot;을 선택합니다.
+1. &quot;We.gov Microsoft® Dynamics CRM FDM&quot;을 선택하고 &quot;속성&quot;을 선택합니다.
 
    ![Dynamics CRM FDM의 속성](assets/properties_dynamics_crm.jpg)
 
@@ -311,9 +307,11 @@ ht-degree: 3%
 1. 서비스를 테스트하여 구성된 데이터 소스에 성공적으로 연결하십시오.
 
    >[!NOTE]
+   >
    서비스를 테스트한 후 다음을 클릭합니다. **취소** 비자발적 변경 사항이 양식 데이터 모델에 전파되지 않도록 합니다.
 
    >[!NOTE]
+   >
    데이터 소스가 FDM에 성공적으로 바인딩되려면 AEM Server를 다시 시작해야 한다고 보고되었습니다.
 
 #### Forms 데이터 모델 테스트(Derby) {#test-fdm-derby}
@@ -332,7 +330,7 @@ ht-degree: 3%
 
    ![Dynamics CRM FDM의 속성](assets/aftia-update-data-source.jpg)
 
-1. 클릭 **저장 및 닫기**.
+1. **저장 후 닫기**&#x200B;를 클릭합니다.
 
 1. [서비스 테스트](work-with-form-data-model.md#test-data-model-objects-and-services) 구성된 데이터 소스에 성공적으로 연결하십시오.
 
@@ -354,7 +352,7 @@ ht-degree: 3%
 
 * [AEM Forms 분석 보고서 보기 및 이해](view-understand-aem-forms-analytics-reports.md)
 
-### Adobe Analytics 클라우드 서비스 구성 {#adobe-analytics-cloud-service-configuration}
+### Adobe Analytics Cloud 서비스 구성 {#adobe-analytics-cloud-service-configuration}
 
 이 패키지는 Adobe Analytics에 연결하도록 사전 구성된 상태로 제공됩니다. 이 구성을 업데이트할 수 있도록 아래 단계가 제공됩니다.
 
@@ -364,7 +362,7 @@ ht-degree: 3%
 
    ![Analytics 클라우드 서비스 구성](assets/analytics_config.jpg)
 
-1. &quot;편집&quot; 버튼을 클릭하여 Adobe Analytics 구성을 업데이트합니다( 공유 암호를 제공해야 함). 연결하려면 &quot;Analytics에 연결&quot;을 클릭하고, 완료하려면 &quot;확인&quot;을 클릭하십시오.
+1. &quot;편집&quot; 단추를 클릭하여 Adobe Analytics 구성을 업데이트합니다( 공유 암호를 제공해야 함). 연결하려면 &quot;Analytics에 연결&quot;을 클릭하고, 완료하려면 &quot;확인&quot;을 클릭하십시오.
 
    ![We.Gov Adobe Analytics](assets/wegov_adobe_analytics.jpg)
 
@@ -372,7 +370,7 @@ ht-degree: 3%
 
 #### Adobe Analytics 사용자 자격 증명 찾기 {#analytics-locating-user-credentials}
 
-Adobe Analytics 계정에 대한 사용자 자격 증명을 찾으려면 계정 관리자가 다음 작업을 수행해야 합니다.
+계정 관리자가 다음 작업을 수행해야 하는 Adobe Analytics 계정에 대한 사용자 자격 증명을 찾으려면
 
 1. Adobe Experience Cloud 포털로 이동합니다.
    * 관리자 자격 증명으로 로그인
@@ -385,8 +383,8 @@ Adobe Analytics 계정에 대한 사용자 자격 증명을 찾으려면 계정 
 1. 사용자 목록에서 원하는 사용자를 선택합니다.
 1. 페이지 하단으로 스크롤하면 사용자 인증 정보가 페이지 하단에 나타납니다.
    ![액세스 관리](assets/aftia-admin-user-access.jpg)
-1. 사용자 이름 및 공유 암호 정보가 권한 상자 오른쪽에 나타납니다.
-1. 사용자 이름은 이름 내에 콜론이 있으며 콜론 왼쪽에 있는 모든 정보는 사용자 이름이며 콜론 오른쪽에 있는 모든 정보는 회사 이름이 됩니다.
+1. 사용 권한 상자 오른쪽에 사용자 이름과 공유 암호 정보가 나타납니다.
+1. 사용자 이름은 이름 내에 콜론이 있으며 콜론 왼쪽에 있는 모든 정보가 사용자 이름이며 콜론 오른쪽에 있는 모든 정보가 회사 이름이 됩니다.
    * 다음은 그 예입니다. *사용자 이름 : 회사 이름*
 
 #### Adobe Analytics에서 사용자 인증 설정 {#setup-user-authentication}
@@ -411,14 +409,15 @@ Adobe Analytics 계정에 대한 사용자 자격 증명을 찾으려면 계정 
 
    ![[편집] 권한](assets/aftia-admin-access-edit.jpg)
 
-1. 사용자가 로그인할 수 있는 기능에 대해 권한이 매핑되면 몇 시간이 걸릴 수 있습니다.
+1. 사용자가 로그인할 수 있는 기능에 대한 권한이 매핑되면 몇 시간이 걸릴 수 있습니다.
 
 ### Adobe Analytics 보고 {#adobe-analytics-reporting}
 
 #### Adobe Analytics 사이트 보고 보기 {#view-adobe-analytics-sites-reporting}
 
 >[!NOTE]
-AEM Forms Analytics 데이터는 오프라인에서 사용하거나 다음 경우에 Adobe Analytics 클라우드 구성 없이 사용할 수 있습니다. `we-gov-forms.ui.analytics-<version>.zip` 패키지가 설치되었지만, AEM Sites 데이터에 활성 클라우드 구성이 필요합니다.
+>
+AEM Forms Analytics 데이터는 오프라인에서 사용하거나 다음 경우에 Adobe Analytics Cloud 구성을 사용하지 않고 사용할 수 있습니다. `we-gov-forms.ui.analytics-<version>.zip` 패키지가 설치되었지만, AEM Sites 데이터에 활성 클라우드 구성이 필요합니다.
 
 1. 다음으로 이동 *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. 사이트 페이지를 보려면 &quot;AEM Forms We.Gov 사이트&quot;를 선택합니다.
@@ -446,7 +445,8 @@ AEM Forms Analytics 데이터는 오프라인에서 사용하거나 다음 경�
 #### Adobe Analytics 양식 보고 보기 {#view-adobe-analytics-forms-reporting}
 
 >[!NOTE]
-AEM Forms Analytics 데이터는 오프라인에서 사용하거나 다음 경우에 Adobe Analytics 클라우드 구성 없이 사용할 수 있습니다. `we-gov-forms.ui.analytics-<version>.zip` 패키지가 설치되었지만, AEM Sites 데이터에 활성 클라우드 구성이 필요합니다.
+>
+AEM Forms Analytics 데이터는 오프라인에서 사용하거나 다음 경우에 Adobe Analytics Cloud 구성을 사용하지 않고 사용할 수 있습니다. `we-gov-forms.ui.analytics-<version>.zip` 패키지가 설치되었지만, AEM Sites 데이터에 활성 클라우드 구성이 필요합니다.
 
 1. 다음으로 이동
 
@@ -464,13 +464,13 @@ AEM Forms Analytics 데이터는 오프라인에서 사용하거나 다음 경�
 
 Forms Adobe을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도구 사용자에게 다음이 있어야 합니다.
 
-1. Adobe I/O 액세스.
+1. Adobe Developer 액세스.
 
 1. Adobe Forms 전환 서비스와의 통합을 만들 수 있는 권한입니다.
 
 1. 작성자로 실행 중인 AEM 6.5 최신 서비스 팩 Adobe.
 
-자세한 지침을 읽기 전에 다음 사항을 검토하십시오.
+추가 지침을 읽기 전에 다음 사항을 검토하십시오.
 
 * [자동 양식 전환 서비스 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
@@ -491,13 +491,14 @@ Forms Adobe을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 1. 나머지 구성 - 검토 섹션은 진행하지 마십시오. [Adobe I/O에서 통합 만들기](#create-integration-adobeio)
 
 >[!NOTE]
+>
 이 섹션에서 만든 인증서는 Adobe I/O에서 통합 서비스를 만드는 데 사용됩니다. 사용자가 통합 서비스에서 생성하면 사용자는 Adobe I/O에서 해당 정보를 사용하여 구성을 완료할 수 있습니다.
 
 #### Adobe I/O에서 통합 만들기 {#create-integration-adobeio}
 
 시스템 관리자에게 연락하지 않은 경우 Adobe 도메인 내에서 통합을 생성할 수 있는지 확인하십시오.
 
-1. 다음 위치로 이동 [Adobe I/O 콘솔](https://console.adobe.io/).
+1. 다음 위치로 이동 [Adobe I/O 콘솔](https://developer.adobe.com/console/).
 
 1. 통합 만들기를 클릭합니다.
 
@@ -533,7 +534,7 @@ Forms Adobe을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 
 1. 클라이언트 암호를 입력합니다(클라이언트 암호를 표시하려면 Adobe I/O의 통합에 표시를 클릭해야 함).
 
-1. JWT 페이로드를 가져와서 IMS 구성의 페이로드에 붙여넣으려면 Adobe I/O의 JWT 탭을 클릭합니다.
+1. Adobe I/O의 JWT 탭을 클릭하여 JWT 페이로드를 가져오고 IMS 구성의 페이로드에 붙여넣습니다.
 
    ![페이로드 IMS 구성](assets/aftia-payload-ims-config.jpg)
 
@@ -543,7 +544,7 @@ Forms Adobe을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 
 #### 클라우드 구성(We.Gov AFC 프로덕션) {#configure-cloud-configuration}
 
-IMS 구성이 완료되면 AEM의 클라우드 구성을 검토할 수 있습니다. 구성이 없는 경우 다음 단계를 사용하여 AEM에서 클라우드 구성을 생성합니다.
+IMS 구성이 완료되면 AEM에서 클라우드 구성을 검토할 수 있습니다. 구성이 존재하지 않는 경우 다음 단계를 사용하여 AEM에서 클라우드 구성을 생성합니다.
 
 1. 브라우저를 열고 시스템 URL https:// 로 이동합니다.&lt;domain_name>:&lt;system_port>
 
@@ -611,7 +612,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 1. We.Gov 등록 응용 프로그램 PDF을 선택합니다.
 
-1. 을(를) 클릭합니다 **자동화된 변환 시작** 오른쪽 상단의 버튼입니다.
+1. 클릭 **자동화된 변환 시작** 오른쪽 상단 모서리입니다.
 
 1. 사용자는 아래와 같이 옵션을 볼 수 있습니다.
 
@@ -619,7 +620,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 1. 버튼을 선택하면 사용자에게 다음 옵션이 표시됩니다
 
-   * 사용자가 다음을 선택했는지 확인 *We.Gov AFC 프로덕션* 구성
+   * 사용자가 *We.Gov AFC 프로덕션* 구성
 
    ![전환 설정](assets/aftia-conversion-settings.jpg)
 
@@ -641,9 +642,9 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 automated forms conversion 서비스에는 특정 항목이 포함됩니다 [모범 사례, 알려진 복잡한 패턴](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html), 및 [알려진 문제](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html). AEM Forms Automated forms conversion 서비스 사용을 시작하기 전에 이러한 사항을 검토하십시오.
 
-1. 전환 후 양식을 FDM에 바인딩하려는 경우 데이터 바인딩을 활성화하지 않은 적응형 양식 생성으로 양식을 생성합니다.
+1. 전환 후 양식을 FDM에 바인딩하려면 데이터 바인딩 없이 적응형 양식 생성을 활성화하여 양식을 생성합니다.
 
-1. 템플릿 폴더에 jcr:read for everyone 권한이 활성화되어 있는지 확인하십시오. 그렇지 않으면 서비스 사용자가 저장소에서 템플릿을 읽을 수 없으며 전환이 실패합니다.
+1. 템플릿 폴더에 jcr:read for everyone 권한이 활성화되어 있는지 확인합니다. 그렇지 않으면 서비스 사용자가 저장소에서 템플릿을 읽을 수 없고 전환이 실패합니다.
 
 ## 데모 패키지 사용자 정의 {#demo-package-customizations}
 
@@ -665,7 +666,7 @@ automated forms conversion 서비스에는 특정 항목이 포함됩니다 [모
 
 *https://&lt;aemserver>:&lt;port>/crx/de/index.jsp#/apps/we-gov/clientlibs/clientlib-base/css/bootstrap*
 
-이 패키지에 포함된 편집 가능한 템플릿은 페이지 매김, 스타일 지정 등을 위해 Bootstrap 4 CSS 클래스를 사용하는 템플릿/페이지 정책으로 사전 구성된 상태로 제공됩니다. 모든 클래스가 템플릿 정책에 추가되지는 않았지만 Bootstrap 4에서 지원하는 모든 클래스를 정책에 추가할 수 있습니다. 사용 가능한 클래스 목록은 시작 페이지를 참조하십시오.
+이 패키지에 포함된 편집 가능한 템플릿에는 페이지 매김, 스타일 지정 등을 위해 Bootstrap 4 CSS 클래스를 사용하는 템플릿/페이지 정책으로 사전 구성된 템플릿도 포함되어 있습니다. 모든 클래스가 템플릿 정책에 추가되지는 않았지만 Bootstrap 4에서 지원하는 모든 클래스를 정책에 추가할 수 있습니다. 사용 가능한 클래스 목록은 시작 페이지를 참조하십시오.
 
 [https://getbootstrap.com/docs/4.1/getting-started/introduction/](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 
@@ -695,7 +696,7 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함됩니다. 이러�
 
 #### 스타일 시스템 {#style-system}
 
-이 패키지에 포함된 페이지는 스타일 시스템도 지원합니다.
+이 패키지에 포함된 페이지는 스타일 시스템 도 지원합니다.
 
 [스타일 시스템](../../sites-authoring/style-system.md)
 
@@ -711,9 +712,9 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함됩니다. 이러�
 
 **건강 보험 가입 신청서:**
 
-* contact_id - 제출 중 MS Dynamics 연락처 ID를 받는 데 사용되는 숨겨진 필드
-* 제출 - 제출 단추 로직에 콜백을 지원하는 데 필요한 사용자 지정이 필요합니다. 사용자 지정이 문서화되었지만 Forms 데이터 모델을 통해 MS Dynamics에 POST 및 GET 작업을 모두 수행하는 동안 양식을 제출하는 데 큰 스크립트가 필요했습니다.
-* 루트 패널 - 초기화 이벤트는 모든 AEM 받은 편지함 Granite UI 구성 요소를 수정할 수 없기 때문에 가능한 한 가장 적은 방법으로 AEM 받은 편지함에 MS Dynamics 단추를 추가하는 데 사용됩니다.
+* contact_id - 제출 중 MS® Dynamics 연락처 ID를 받는 데 사용되는 숨겨진 필드
+* 제출 - 제출 단추 로직에 콜백을 지원하는 데 필요한 사용자 지정이 필요합니다. 사용자 지정은 문서화되었지만 Forms 데이터 모델을 통해 MS® Dynamics에 POST 및 GET 작업을 모두 수행하는 동안 양식을 제출하려면 큰 스크립트가 필요합니다.
+* 루트 패널 - 초기화 이벤트는 모든 AEM 받은 편지함 Granite UI 구성 요소를 수정할 수 없기 때문에 가능한 한 적은 방식으로 AEM 받은 편지함에 MS® Dynamics 단추를 추가하는 데 사용됩니다.
 
 #### 적응형 양식 스타일 지정 {#adaptive-form-styling}
 
@@ -726,9 +727,9 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함됩니다. 이러�
 
 등록 적응형 양식이 처리를 위해 OSGI 워크플로우에 제출됩니다. 이 워크플로는에서 찾을 수 있습니다. *https://&lt;aemserver>:&lt;port>/conf/we-gov/settings/models/we-gov-process.html*.
 
-특정 제한 사항으로 인해 이 워크플로에는 몇 가지 스크립트와 사용자 지정 OSGI 워크플로 프로세스 단계가 포함되어 있습니다. 이러한 워크플로우 단계는 일반 단계로 생성되었으며 구성 대화 상자와 함께 생성되지 않았습니다. 현재 워크플로우 단계의 구성은 프로세스 인수를 사용합니다.
+특정 제한 사항으로 인해 이 워크플로에는 몇 가지 스크립트와 사용자 지정 OSGI 워크플로 프로세스 단계가 포함되어 있습니다. 이러한 워크플로우 단계는 일반 단계로 생성되었으며 구성 대화 상자와 함께 생성되지 않았습니다. 현재 워크플로우 단계 구성은 프로세스 인수를 사용합니다.
 
-모든 워크플로우 단계 Java 코드가 **we-gov-forms.core-&lt;version>.jar** 번들.
+모든 워크플로우 단계 Java™ 코드가 **we-gov-forms.core-&lt;version>.jar** 번들.
 
 ## 데모 고려 사항 및 알려진 문제 {#demo-considerations-and-known-issues}
 
@@ -741,8 +742,8 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함됩니다. 이러�
 
 ### 알려진 문제 {#known-issues}
 
-* (AGRS-120) 사이트 탐색 구성 요소는 현재 2개 수준 이상의 중첩된 하위 페이지를 지원하지 않습니다.
-* (AGRS-159) 현재 MS Dynamics FDM은 먼저 두 가지 작업을 수행하여 등록 적응형 양식 데이터를 Dynamics에 POST 한 다음 연락처 ID를 검색하기 위해 사용자 레코드를 가져와야 합니다. 현재 상태에서 Dynamics에 이름이 같은 사용자가 2명 이상 있으면 연락처 ID를 가져올 수 없어 등록 적응형 양식의 제출이 허용되지 않습니다.
+* (AGRS-120) 사이트 탐색 구성 요소는 현재 두 개 이상 깊이의 중첩된 하위 페이지를 지원하지 않습니다.
+* (AGRS-159) 현재 MS® Dynamics FDM은 먼저 등록 적응형 양식 데이터를 Dynamics에 POST 한 다음 사용자 레코드를 가져와 연락처 ID를 검색하기 위해 두 가지 작업을 수행해야 합니다. 현재 상태에서 이름이 같은 사용자가 Dynamics에 둘 이상 있으면 연락처 ID를 가져올 수 없으므로 등록 적응형 양식의 제출이 허용되지 않습니다.
 
 ## 접근성 테스트 구성 {#configure-accessibility-testing}
 
@@ -750,8 +751,7 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함됩니다. 이러�
 
 접근성 테스트를 수행하려면 여기에 있는 Chrome 플러그인을 설치하십시오. `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-페이지가 설치되면 Chrome 브라우저 내에서 테스트할 페이지를 로드합니다(참고: 여러 탭이 열려 있으면 점수에 영향을 줄 수 있으며 한 개의 탭만 열려 있는 것이 좋습니다.). 페이지가 로드되면
-**마우스 오른쪽 버튼 클릭** 페이지에서 을(를) 선택하고 **감사** 탭 . 개발자는 접근성 플러그인이 수행할 감사 유형을 선택할 수 있습니다. 원하는 옵션이 모두 선택되면 보고서 생성 버튼을 클릭할 수 있습니다. 이렇게 하면 전체 액세서빌러티 등급 및 액세서빌러티 등급을 전체적으로 높이는 데 사용할 수 있는 항목을 보여 주는 PDF 문서가 생성됩니다.
+페이지가 설치되면 Chrome 브라우저 내에서 테스트할 페이지를 로드합니다(참고: 여러 탭이 열려 있으면 점수에 영향을 줄 수 있으며 한 개의 탭만 열려 있는 것이 좋습니다.). 페이지가 로드되면 **마우스 오른쪽 버튼 클릭** 페이지에서 을(를) 선택하고 **감사** 탭. 개발자는 접근성 플러그인이 수행할 감사 유형을 선택할 수 있습니다. 원하는 옵션이 모두 선택되면 보고서 생성 버튼을 클릭할 수 있습니다. 이렇게 하면 전체 액세서빌러티 등급과 액세서빌러티 등급을 전체적으로 높이는 데 사용할 수 있는 항목을 보여 주는 PDF 문서가 생성됩니다.
 
 보고서가 실행되면 사용자는 다음을 볼 수 있습니다.
 
@@ -776,7 +776,7 @@ Adobe이 유지 관리하는 공개적으로 사용 가능한 Ultramarine 테마
 
 사용자는 다음과 같은 다양한 워크플로 서비스 옵션을 구성할 수 있습니다.
 
-1. Microsoft Dynamics 시작
+1. Microsoft® Dynamics 시작
 1. Adobe Sign
 1. AEM 사용자 지정 통신 관리
 1. Adobe Analytics
@@ -790,11 +790,12 @@ Adobe이 유지 관리하는 공개적으로 사용 가능한 Ultramarine 테마
 1. 서비스 정의를 열고 선택한 서비스를 워크플로우 내에서 호출할 수 있도록 설정합니다.
 
    >[!NOTE]
-   사용자가 Configuration Manager 페이지에서 서비스를 사용할 수 있도록 설정했기 때문에 요청한 외부 서비스와 통신하려면 서비스 구성을 설정해야 합니다.
+   >
+   사용자가 Configuration Manager 페이지에서 서비스를 활성화한다고 해도 요청한 외부 서비스와 통신할 수 있도록 서비스 구성을 설정해야 합니다.
 
    ![we gov forms 패키지](assets/aftia-configuration-options.jpg)
 
-1. 완료되면 저장 버튼을 클릭하여 설정을 저장합니다.
+1. 완료되면 저장 을 클릭하여 설정을 저장합니다.
 
 ## 다음 단계 {#next-steps}
 

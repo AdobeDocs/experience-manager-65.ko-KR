@@ -1,18 +1,14 @@
 ---
 title: AEM을 사용하여 Adobe PhoneGap Enterprise용 컨텐츠 관리
-seo-title: Administering Content for Adobe PhoneGap Enterprise with AEM
 description: 이 페이지는 Adobe PhoneGap Enterprise 관리를 위한 랜딩 페이지 역할을 합니다.
-seo-description: This page serves as landing page for administering Adobe PhoneGap Enterprise.
-uuid: 31bda96a-bc35-4f04-9107-7d575c04d761
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
-discoiquuid: cd080122-7ae5-4e6e-a8f6-b95dfbb0b511
 exl-id: 5a98eb3c-5c12-4a6c-8d76-eed44c7c3df5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '367'
 ht-degree: 1%
 
 ---
@@ -23,11 +19,11 @@ ht-degree: 1%
 >
 >Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-An ***AEM 관리자*** 는 생성 마법사를 사용하여 새 앱을 만들거나 기존 애플리케이션을 가져와서 AEM Mobile 카탈로그에 새 애플리케이션을 추가하는 역할을 합니다. AEM Mobile을 사용하여 새 앱을 만드는 AEM 관리자 *만들기 마법사* 일반적으로 기본 제공 참조 샘플 또는 (대부분의 경우)에서 만든 사용자 지정 앱 템플릿에서 원하는 앱 템플릿 중 하나를 선택합니다. *AEM 개발자.*
+An ***AEM 관리자*** 는 생성 마법사를 사용하여 앱을 생성하거나 기존 애플리케이션을 가져와서 AEM Mobile 카탈로그에 새 애플리케이션을 추가하는 작업을 담당합니다. AEM Mobile을 사용하여 앱을 생성하는 AEM 관리자 *만들기 마법사*, 일반적으로 Adobe의 기본 참조 샘플 또는 (일반적으로) 다음 사용자가 만든 사용자 지정 앱 템플릿에서 원하는 앱 템플릿 중 하나를 선택합니다. *AEM 개발자.*
 
-HTML5 및 PhoneGap을 사용하여 모바일 애플리케이션을 빌드하면 명령 센터에서 관리할 수 있습니다. 물론 Cordova 웹 보기를 사용하여 명령 센터에서 기본 앱에 대한 HTML5 콘텐츠를 관리할 수도 있습니다(PhoneGap 플러그인이 기본 기능에 액세스할 수 있도록 허용).
+HTML5 및 PhoneGap을 사용하여 모바일 애플리케이션을 빌드한 후에는 명령 센터에서 관리할 수 있습니다. Cordova 웹 보기를 사용하여 명령 센터에서 기본 앱에 대한 HTML5 콘텐츠를 관리할 수도 있습니다(PhoneGap 플러그인이 기본 기능에 액세스할 수 있도록 허용).
 
-AEM Apps Control Center를 사용하면 모바일 애플리케이션을 구축 및 배포하고, 모바일 애플리케이션을 게시하기 전에 애플리케이션 메타데이터를 생성 및 편집하고, 애플리케이션 스토어 제출 프로세스를 다시 방문할 필요 없이 신선하고 관련성이 높은 콘텐츠를 공동 선별하고, 자주 게시하고, 애플리케이션 수명주기 및 사용 지표를 분석하여 고객 전환율과 브랜드 충성도를 향상시킬 수 있습니다.
+AEM Apps Control Center를 사용하면 모바일 애플리케이션을 구축 및 배포하고, 모바일 애플리케이션을 게시하기 전에 애플리케이션 메타데이터를 생성 및 편집하고, 애플리케이션 스토어 제출 프로세스를 다시 방문하거나, 애플리케이션 수명주기 및 사용 지표를 분석하여 고객 전환 및 브랜드 충성도를 향상시킬 필요 없이 신선하고 관련성 있는 컨텐츠를 공동으로 선별하고, 자주 게시할 수 있습니다.
 
 AEM Mobile 애플리케이션을 빌드하려면 다음을 참조하십시오. [모바일 애플리케이션 구축](/help/mobile/building-app-mobile-phonegap.md) 페이지, 개발자 섹션.
 
@@ -42,7 +38,7 @@ Content Services에 대한 자세한 내용은 [Content Services 관리](/help/m
 
 >[!NOTE]
 >
->다음 *AEM Verify* 는 iOS 또는 Android 모바일 디바이스에서 AEM 모바일 애플리케이션을 빠르고 간편하게 실행할 수 있는 방법입니다. 다음 *AEM Verify* 는 장치에서 모바일 앱이며 빠른 시작을 실행하는 서버에 연결하여 볼 앱 목록을 가져옵니다. 클릭 [여기](/help/mobile/phonegap-mobile-quickstart.md) 을 눌러 세부 정보를 봅니다.
+>다음 *AEM Verify* 는 iOS 또는 Android™ 모바일 디바이스에서 AEM 모바일 애플리케이션을 빠르고 간편하게 실행할 수 있는 방법입니다. 다음 *AEM Verify* 는 장치에서 모바일 앱이며 빠른 시작을 실행하는 서버에 연결하여 볼 앱 목록을 가져옵니다. 클릭 [여기](/help/mobile/phonegap-mobile-quickstart.md) 을 눌러 세부 정보를 봅니다.
 
 ## 추가 리소스 {#additional-resources}
 
