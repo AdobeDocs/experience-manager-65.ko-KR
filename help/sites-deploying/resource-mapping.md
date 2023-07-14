@@ -1,27 +1,23 @@
 ---
 title: 리소스 매핑
-seo-title: Resource Mapping
-description: 리소스 매핑을 사용하여 AEM에 대한 리디렉션, vanity URL 및 가상 호스트를 정의하는 방법을 알아봅니다.
-seo-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
-uuid: 2ca2d0e4-6f90-4ecc-82db-26991f08c66f
+description: 리소스 매핑을 사용하여 Adobe Experience Manager에 대한 리디렉션, vanity URL 및 가상 호스트를 정의하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: 7c24379c01f247f5ad45e3ecd40f3edef4ac3cfb
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 3%
+source-wordcount: '522'
+ht-degree: 2%
 
 ---
 
 # 리소스 매핑{#resource-mapping}
 
-리소스 매핑은 AEM의 리디렉션, vanity URL 및 가상 호스트를 정의하는 데 사용됩니다.
+리소스 매핑은 AEM(Adobe Experience Manager)의 리디렉션, vanity URL 및 가상 호스트를 정의하는 데 사용됩니다.
 
 예를 들어 이러한 매핑을 사용하여 다음을 수행할 수 있습니다.
 
@@ -32,11 +28,11 @@ ht-degree: 3%
 
 `localhost:4503/content/we-retail/en/products.html`
 
-을 사용하여 액세스할 수 있습니다.
+다음을 사용하여 액세스:
 
 `localhost:4503/we-retail/en/products.html`
 
-를 매핑하면 접두사가 자동으로 추가됩니다 `/content` 끝 `/we-retail/en/products.html`.
+매핑이 접두사를 자동으로 추가함에 따라 `/content` 끝 `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -44,7 +40,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Sling 설명서 를 참조하고 [리소스 확인을 위한 매핑](https://sling.apache.org/site/resources.html) 및 [리소스](https://sling.apache.org/site/mappings-for-resource-resolution.html) 추가 정보.
+>Sling 설명서 를 참조하고 [리소스 확인을 위한 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 및 [리소스](https://sling.apache.org/documentation/the-sling-engine/resources.html) 추가 정보.
 
 ## 매핑 정의 보기 {#viewing-mapping-definitions}
 
@@ -62,7 +58,7 @@ URL을 리소스에 매핑하기 위해 ResourceResolver.resolve 메서드에서
 * **맵 항목 매핑**
 리소스 경로를 URL에 매핑하기 위해 ResourceResolver.map 메서드에서 사용하는 항목 목록입니다.
 
-두 목록에는 응용 프로그램에 의해 기본값으로 정의된 항목을 포함하여 다양한 항목이 표시됩니다. 이는 종종 사용자의 URL을 단순화하는 것을 목표로 합니다.
+두 목록에는 응용 프로그램에서 기본값으로 정의한 항목을 포함하여 다양한 항목이 표시됩니다. 이는 종종 사용자의 URL을 단순화하는 것을 목표로 합니다.
 
 목록은 a를 쌍으로 합니다. **패턴**, 요청과 일치하는 정규 표현식, **교체** 적용할 리디렉션을 정의합니다.
 
@@ -86,7 +82,7 @@ URL을 리소스에 매핑하기 위해 ResourceResolver.resolve 메서드에서
 
 >[!NOTE]
 >
->다음과 같이 정규 표현식을 정의하는 방법을 설명하는 데 도움이 되는 다양한 리소스가 있습니다 [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>정규 표현식을 정의하는 방법을 설명하는 데 도움이 되는 다양한 리소스가 있습니다. 예를 들어, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### AEM에서 매핑 정의 생성 {#creating-mapping-definitions-in-aem}
 
@@ -102,7 +98,7 @@ https://localhost:4503/에 대한 요청 앞에 를 붙이는 매핑을 만들�
 
 1. CRXDE를 사용하여 다음으로 이동 `/etc/map/http`.
 
-1. 새 노드 만들기:
+1. 노드 만들기:
 
    * **유형** `sling:Mapping`
 이 노드 유형은 그러한 매핑에 사용되지만 반드시 사용해야 하는 것은 아닙니다.
@@ -117,16 +113,16 @@ https://localhost:4503/에 대한 요청 앞에 를 붙이는 매핑을 만들�
       * **유형** `String`
 
       * **값** `localhost.4503/`
+
    * **이름** `sling:internalRedirect`
 
       * **유형** `String[]`
 
       * **값** `/content/`
 
-
 1. 클릭 **모두 저장**.
 
-이 작업은 다음과 같은 요청을 처리합니다.
+다음과 같은 요청을 처리합니다.
 `localhost:4503/geometrixx/en/products.html`
 다음과 같이:
 `localhost:4503/content/geometrixx/en/products.html`
@@ -134,8 +130,8 @@ https://localhost:4503/에 대한 요청 앞에 를 붙이는 매핑을 만들�
 
 >[!NOTE]
 >
->다음을 참조하십시오 [리소스](https://sling.apache.org/site/mappings-for-resource-resolution.html) 사용 가능한 슬링 속성 및 구성 방법에 대한 자세한 내용은 슬링 설명서 를 참조하십시오.
+>다음을 참조하십시오 [리소스](https://sling.apache.org/documentation/the-sling-engine/resources.html) 사용 가능한 슬링 속성 및 구성 방법에 대한 자세한 내용은 슬링 설명서 를 참조하십시오.
 
 >[!NOTE]
 >
->다음을 사용할 수 있습니다. `/etc/map.publish` 게시 환경에 대한 구성을 보류합니다. 그런 다음 복제해야 하며 새 위치( `/etc/map.publish`)에 대해 구성됨 **매핑 위치** / [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) 게시 환경의.
+>다음을 사용할 수 있습니다. `/etc/map.publish` 게시 환경에 대한 구성을 보류합니다. 이러한 파일은 복제해야 하며 새 위치( `/etc/map.publish`)에 대해 구성됨 **매핑 위치** / [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) 게시 환경의.

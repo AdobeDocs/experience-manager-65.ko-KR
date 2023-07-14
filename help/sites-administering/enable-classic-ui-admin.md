@@ -1,17 +1,13 @@
 ---
 title: Admin Console
-seo-title: Admin Consoles
 description: AEM에서 사용할 수 있는 Admin Console을 사용하는 방법을 알아봅니다.
-seo-description: Lear how to use the Admin Consoles available in AEM.
-uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: 729e5eb99b0c14f3d2fd8c3f4ec636f7fb52124f
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 2%
@@ -49,7 +45,7 @@ ht-degree: 2%
 
    `enableDesktopOnly = {Boolean}true`
 
-1. 다음 **클래식 UI** 옵션은 admin console에서 팝오버 옵션으로 다시 사용할 수 있습니다.
+1. 다음 **클래식 UI** 옵션은 Admin Console에서 팝오버 옵션으로 다시 사용할 수 있습니다.
 
    ![클래식 UI 팝오버 옵션](assets/syui-01-2019-02-27-15-16-55.png)
 

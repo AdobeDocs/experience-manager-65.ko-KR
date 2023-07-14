@@ -1,18 +1,14 @@
 ---
 title: 앱 타일 관리
-seo-title: Manage App Tile
 description: 이 페이지를 따라 애플리케이션에 대한 세부 정보를 수정하는 기능을 제공하는 앱 대시보드의 앱 관리 타일에 대해 알아보십시오.
-seo-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
-uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1252'
 ht-degree: 2%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 2%
 >
 >Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-다음 **앱 관리** 앱 대시보드의 타일은 애플리케이션에 대한 세부 정보를 수정하는 기능을 제공합니다. 세부 정보 페이지를 열려면 앱 관리 타일의 세부 정보 링크를 클릭합니다. 앱 관리 페이지에서 PhoneGap Application Configuration(config.xml) 설정을 편집하고 다양한 애플리케이션 스토어에 제출하기 위해 애플리케이션을 준비할 수 있습니다.
+다음 **앱 관리** 앱 대시보드의 타일은 애플리케이션에 대한 세부 정보를 수정하는 기능을 제공합니다. 세부 정보 페이지를 열려면 앱 관리 타일의 세부 정보 링크를 클릭합니다. [앱 관리] 페이지에서 PhoneGap Application Configuration(config.xml) 설정을 편집하고 응용 프로그램을 여러 응용 프로그램 스토어에 제출하도록 준비할 수 있습니다.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -50,7 +46,7 @@ ht-degree: 2%
 </widget>
 ```
 
-예를 들어 Apple App Store 또는 Google Play 스토어와 같은 각 공급업체 애플리케이션 스토어에서는 고객에게 애플리케이션 세부 사항을 표시하기 위해 모바일 애플리케이션의 스크린샷이 하나 이상 필요합니다. 이러한 스크린샷은 차원 및 콘텐츠에 대한 엄격한 요구 사항을 가질 수 있습니다(기본적으로 애플리케이션을 실제로 표시해야 함). AEM Apps에서는 각 공급업체의 애플리케이션 스토어에서 요구하는 대로 지원되는 플랫폼 및 보기 포트 차원에 대한 스크린샷을 선택하고 관리할 수 있습니다.
+Apple App Store 또는 Google Play 스토어와 같은 각 공급업체 애플리케이션 스토어는 고객에게 애플리케이션 세부 정보를 표시하기 위해 모바일 애플리케이션의 스크린샷을 하나 이상 필요로 합니다. 이러한 스크린샷은 차원 및 콘텐츠에 대한 엄격한 요구 사항을 가질 수 있습니다(기본적으로 애플리케이션을 실제로 표시해야 함). AEM Apps에서는 각 공급업체의 애플리케이션 스토어에서 요구하는 대로 지원되는 플랫폼 및 보기 포트 차원에 대한 스크린샷을 선택하고 관리할 수 있습니다.
 
 >[!NOTE]
 >
@@ -112,9 +108,9 @@ Apple 관련 메타데이터를 가져오려면 먼저 애플리케이션을 만
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
-#### Android 메타데이터 {#android-metadata}
+#### Android™ 메타데이터 {#android-metadata}
 
-Android 플랫폼을 선택하면 이 시점에서 설정할 수 있는 사용자 지정 메타데이터가 없습니다. 다운로드 버튼을 클릭하면 모든 메타데이터 및 관련 스크린샷이 포함된 속성 파일과 함께 zip 파일로 생성됩니다.
+Android™ 플랫폼을 선택할 때 이 시점에서 설정할 수 있는 사용자 지정 메타데이터가 없습니다. 다운로드 버튼을 클릭하면 모든 메타데이터 및 관련 스크린샷이 포함된 속성 파일과 함께 zip 파일이 생성됩니다.
 
 내보내기 기능은 공급업체별 애플리케이션 스토어에 입력하기 위해 애플리케이션 게시자에게 전달할 수 있는 스크린샷과 메타데이터를 편리하게 수집하는 방법을 제공하는 데 사용됩니다.
 
@@ -150,7 +146,7 @@ Content Update Server URL 속성은 게시 인스턴스를 가리켜야 하는 U
 
 ### 인증 탭 {#the-authentication-tab}
 
-다음 **인증** 탭에서는 응용 프로그램과 연결할 OAuth 클라이언트를 선택할 수 있고 개발자가 Adobe Experience Manager의 OAuth 인증을 활용할 수 있습니다.
+다음 **인증** 탭에서는 응용 프로그램과 연결할 OAuth 클라이언트를 선택할 수 있고 개발자가 Adobe Experience Manager의 OAuth 인증을 사용할 수 있습니다.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 

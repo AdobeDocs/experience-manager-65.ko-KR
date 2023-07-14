@@ -1,25 +1,21 @@
 ---
 title: 개발 사례
-seo-title: Development Practices
-description: AEM에서의 개발 우수 사례
-seo-description: Best practices for developing on AEM
-uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
+description: Adobe Experience Manager에서 개발하기 위한 우수 사례입니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
 # 개발 사례{#development-practices}
 
-## 완료의 정의에 따른 작업 {#work-according-to-a-definition-of-done}
+## 완료(DoD)의 정의에 따른 작업 {#work-according-to-a-definition-of-done}
 
 팀마다 &#39;완료&#39;가 의미하는 바에 대한 정의는 다르지만, 스토리가 받아들여지기 전에 이를 갖고 정의된 기준에 부합하는지 확인하는 것이 중요합니다.
 
@@ -32,7 +28,7 @@ ht-degree: 0%
 * QA 환경에서 확인됨
 * 현지화 구현
 
-잘 정립된 DoD가 없으면, 많은 일들이 반쯤 진행된 상황에서 끝나 진정한 완성이란 없는 일이 일어나기 쉽다.
+잘 정의된 DoD가 없으면 많은 작업이 반쯤 진행되어 실제로 완성되는 것이 없는 상황에서 끝나기 쉽다.
 
 ### 코딩 및 포맷 규칙 정의 및 준수 {#define-and-adhere-to-coding-and-formatting-conventions}
 
@@ -40,9 +36,9 @@ ht-degree: 0%
 
 ### 높은 테스트 적용 범위를 목표로 합니다.  {#aim-for-high-test-coverage}
 
-프로젝트 구현의 크기가 커지면 이를 테스트하는 데 필요한 시간도 늘어납니다. 좋은 테스트 범위 없이는 테스트 팀은 확장할 수 없으며 개발자는 결국 버그에 파묻힐 것입니다.
+프로젝트 구현의 규모가 커짐에 따라 이를 테스트하는 데 필요한 시간도 늘어납니다. 좋은 테스트 범위 없이는 테스트 팀은 확장할 수 없으며 개발자는 결국 버그에 파묻힐 수 있습니다.
 
-개발자는 요구 사항을 충족하는 프로덕션 코드 전에 실패한 단위 테스트를 작성하는 TDD를 연습해야 합니다. QA는 시스템이 높은 수준에서 예상대로 작동할 수 있도록 자동화된 수락 테스트 세트를 만들어야 합니다.
+개발자는 요구 사항을 충족하는 프로덕션 코드 전에 실패한 단위 테스트를 작성하는 테스트 주도 개발(TDD)을 연습해야 합니다. QA는 시스템이 높은 수준에서 예상대로 작동할 수 있도록 자동화된 수락 테스트 세트를 만들어야 합니다.
 
 Jackalope 및 Prosper와 같은 사용자 정의 프레임워크를 사용하여 JCR API를 조롱함으로써 개발자의 생산성을 보장하고 단위 테스트를 작성할 수 있습니다.
 
@@ -56,11 +52,11 @@ Jackalope 및 Prosper와 같은 사용자 정의 프레임워크를 사용하여
 
 ### 빌드 시간을 낮게 유지하여 개발 주기를 빠르게 유지 {#keep-the-development-cycle-fast-by-keeping-build-times-low}
 
-단위 테스트를 실행하는 데 시간이 오래 걸리는 경우 개발자는 단위 테스트를 실행하지 않고 가치를 잃게 됩니다. 코드를 빌드하고 배포하는 데 시간이 오래 걸리는 경우 사람들이 이를 수행하는 빈도가 줄어듭니다. 짧은 빌드 시간을 우선 순위로 설정하여 테스트 범위와 CI 인프라에 투자한 시간이 계속해서 팀을 더 생산적으로 만들 수 있도록 합니다.
+단위 테스트를 실행하는 데 시간이 오래 걸리는 경우 개발자는 단위 테스트를 실행하지 않고 가치를 잃게 됩니다. 코드를 빌드하고 배포하는 데 시간이 오래 걸리는 경우 사람들이 이를 수행하는 빈도가 줄어듭니다. 짧은 빌드 시간을 우선 순위로 설정하여 테스트 범위 및 CI 인프라에 투자한 시간이 지속적으로 팀의 생산성을 높일 수 있도록 합니다.
 
-### Sonar 및 기타 정적 코드 분석 도구를 미세 조정하고 해당 보고서에 작동합니다. {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### Sonar 및 기타 정적 코드 분석 도구를 미세 조정하고 보고서에 작동합니다. {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
-코드 분석 도구는 유용할 수 있지만 이로 인해 보고서가 개발 팀에서 조치를 취하는 경우에만 유용합니다. 이러한 도구에서 제공하는 분석을 미세 조정하지 않으면 생성되는 권장 사항이 관련성이 없어 가치를 잃게 됩니다.
+코드 분석 도구는 유용할 수 있지만 이로 인해 보고서가 개발 팀에서 조치를 취하는 경우에만 유용합니다. 이러한 도구가 제공하는 분석을 미세 조정하지 않으면 이러한 도구가 생성하는 권장 사항은 관련이 없게 되고 가치를 잃게 됩니다.
 
 ### 소년 Scout 규칙 준수 {#follow-the-boy-scout-rule}
 
@@ -68,4 +64,4 @@ Jackalope 및 Prosper와 같은 사용자 정의 프레임워크를 사용하여
 
 ### YAGNI 기능 구현 방지 {#avoid-implementing-yagni-features}
 
-YAGNI(또는 You Are Gonna Not Gonna Be Need It) 기능은 현재 필요하지 않지만 향후 필요한 것이 있을 것으로 예상할 때 구현되는 기능입니다. 이상적으로, 우리는 오늘날 작동할 가장 간단한 것을 구현하고 시스템의 아키텍처가 시간이 지남에 따라 요구 사항을 충족하도록 지속적인 리팩터링을 사용해야 합니다. 이를 통해 중요한 사항에 집중하고 코드 오류 및 기능 소동을 방지할 수 있습니다.
+YAGNI(You Are not Gonna Gonna Be Need It) 기능은 현재 필요하지 않지만 향후 필요한 것이 있을 것으로 예상할 때 구현되는 기능입니다. 이상적으로, 우리는 오늘날 작동할 가장 간단한 것을 구현하고 시스템의 아키텍처가 시간이 지남에 따라 요구 사항을 충족하도록 지속적인 리팩터링을 사용해야 합니다. 이를 통해 중요한 사항에 집중하고 코드 오류 및 기능 크리프를 방지할 수 있습니다.

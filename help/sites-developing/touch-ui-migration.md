@@ -1,28 +1,24 @@
 ---
 title: 터치 UI로 마이그레이션
-seo-title: Migration to the Touch UI
 description: 터치 UI로 마이그레이션
-seo-description: Migration to the Touch UI
-uuid: 47c43b56-532b-4ada-8503-04d66bab3564
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '659'
 ht-degree: 11%
 
 ---
 
 # 터치 UI로 마이그레이션{#migration-to-the-touch-ui}
 
-버전 6.0부터 Adobe Experience Manager(AEM)에 다음과 같은 새로운 사용자 인터페이스가 도입되었습니다. *터치 지원 UI* (간단히 다음과 같이 알려짐) *touch UI*). Adobe Marketing Cloud 및 전체 Adobe 사용자 인터페이스 지침에 맞게 조정됩니다. 이 UI는 이라는 레거시 데스크탑 기반 인터페이스를 사용하는 AEM의 표준 UI가 되었습니다. *클래식 UI*.
+버전 6.0부터 Adobe Experience Manager(AEM)에 다음과 같은 새로운 사용자 인터페이스가 도입되었습니다. *터치 지원 UI* (간단히 다음과 같이 알려짐) *touch UI*). Adobe Experience Cloud 및 전체 Adobe 사용자 인터페이스 지침에 맞게 조정됩니다. 이 UI는 이라는 레거시 데스크탑 기반 인터페이스를 사용하는 AEM의 표준 UI가 되었습니다. *클래식 UI*.
 
-클래식 UI가 있는 AEM을 사용하고 있는 경우 인스턴스를 마이그레이션하기 위한 조치를 취해야 합니다. 이 페이지는 개별 리소스에 대한 링크를 제공하여 발판 역할을 하기 위한 것입니다.
+클래식 UI가 있는 AEM을 사용 중인 경우, 작업을 수행하여 인스턴스를 마이그레이션합니다. 이 페이지는 개별 리소스에 대한 링크를 제공하여 발판 역할을 하기 위한 것입니다.
 
 >[!NOTE]
 >
@@ -30,7 +26,7 @@ ht-degree: 11%
 
 ## 기본 사항 {#the-basics}
 
-마이그레이션할 때 클래식 UI와 Touch UI의 다음(주요) 차이점에 유의해야 합니다.
+마이그레이션할 때 클래식 UI와 터치 UI 간의 다음과 같은 주요 차이점에 유의하십시오.
 
 <table>
  <tbody>
@@ -66,11 +62,11 @@ ht-degree: 11%
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Javascript 위치:</p>
+   <td><p>JavaScript 위치:</p>
     <ul>
      <li>명령형 부품은 리스너를 사용하여 직접 포함되거나 clientlibs에서 관리됩니다.</li>
     </ul> </td>
-   <td><p>Javascript 위치:</p>
+   <td><p>JavaScript 위치:</p>
     <ul>
      <li>필수 부분은 대화 상자 정의, 즉 책임 분리에 포함될 수 없습니다.</li>
     </ul> </td>
@@ -78,11 +74,11 @@ ht-degree: 11%
   <tr>
    <td><p>이벤트 처리:</p>
     <ul>
-     <li>대화 상자 위젯은 Javascript 코드를 직접 참조합니다.</li>
+     <li>대화 상자 위젯은 JavaScript 코드를 직접 참조합니다.</li>
     </ul> </td>
    <td><p>이벤트 처리:</p>
     <ul>
-     <li>Javascript는 대화 상자 이벤트를 관찰합니다.</li>
+     <li>JavaScript는 대화 상자 이벤트를 관찰합니다.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -128,7 +124,7 @@ Touch UI 개발의 기본 사항은 견고한 기반을 제공합니다.
 
 ## 콘솔 마이그레이션 {#migrating-consoles}
 
-콘솔을 구성할 수도 있습니다.
+콘솔을 사용자 지정할 수도 있습니다.
 
 * [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md) (터치 지원 UI의 경우)
 
@@ -137,7 +133,7 @@ Touch UI 개발의 기본 사항은 견고한 기반을 제공합니다.
 Touch UI로의 마이그레이션과 직접 관련이 없지만, 권장되는 연습 방법이므로 동시에 고려할 만한 관련 문제가 있습니다.
 
 * [템플릿](/help/sites-developing/templates.md) - [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)
-* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]
@@ -149,10 +145,10 @@ Touch UI로의 마이그레이션과 직접 관련이 없지만, 권장되는 �
 AEM 개발에 대한 전체 정보는 아래의 리소스 컬렉션을 참조하십시오.
 
 * [개발 사용 안내서](/help/sites-developing/home.md)
-* [Granite UI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Granite UI 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Sites Tutorials 및 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [AEM Sites 개발 시작하기 - WKND 튜토리얼](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en)
 * [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

@@ -1,18 +1,14 @@
 ---
 title: 적응형 템플릿 렌더링
-seo-title: Adaptive Template Rendering
 description: 적응형 템플릿 렌더링
-seo-description: null
-uuid: 97226ae1-e42a-40ae-a5e0-886cd77559d8
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '480'
 ht-degree: 3%
 
 ---
@@ -23,9 +19,9 @@ ht-degree: 3%
 
 ## 개요 {#overview}
 
-템플릿은 일반적으로 응답형 그리드 주위에 작성되며, 이러한 템플릿을 기반으로 작성된 페이지는 완전히 응답형이며, 클라이언트 장치의 뷰포트에 자동으로 조정됩니다. 페이지 편집기에서 에뮬레이터 도구 모음을 사용하여 작성자는 레이아웃을 특정 디바이스로 타깃팅할 수 있습니다.
+템플릿은 응답형 그리드 주위에 구축되며 이러한 템플릿을 기반으로 작성된 페이지는 완전히 응답형이므로 클라이언트 장치의 뷰포트에 자동으로 조정됩니다. 페이지 편집기에서 에뮬레이터 도구 모음을 사용하여 작성자는 레이아웃을 특정 디바이스로 타깃팅할 수 있습니다.
 
-적응형 렌더링을 지원하는 템플릿을 설정할 수도 있습니다. 장치 그룹이 올바르게 구성되면 에뮬레이터 모드에서 장치를 선택할 때 URL의 다른 선택기로 페이지가 렌더링됩니다. 선택기를 사용하여 URL을 통해 특정 페이지 렌더링을 직접 호출할 수 있습니다.
+적응형 렌더링을 지원하는 템플릿을 설정할 수도 있습니다. 장치 그룹이 올바르게 구성되면 에뮬레이터 모드에서 장치를 선택할 때 URL에 다른 선택기로 페이지가 렌더링됩니다. 선택기를 사용하여 URL을 통해 특정 페이지 렌더링을 직접 호출할 수 있습니다.
 
 장치 그룹을 설정할 때 기억하십시오.
 
@@ -36,7 +32,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->장치 그룹 **응답형 장치** 에서는 응답형 디자인을 지원하는 것으로 인식되는 장치에는 적응형 레이아웃이 필요하지 않다고 간주하므로 선택기를 사용할 수 없습니다
+>장치 그룹**반응형 장치에는 선택기가 없습니다. 반응형 디자인을 지원하는 것으로 인식되는 장치에는 적응형 레이아웃이 필요하지 않은 것으로 간주되기 때문입니다
 
 ## 구성 {#configuration}
 
@@ -50,11 +46,11 @@ ht-degree: 3%
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. 선택기는 다음에 사용할 수 있습니다. **Blackberry** 및 **IPHONE 4** 장치 그룹 제공 **스마트폰** 가 다음 단계에서 템플릿 및 페이지 구조에 추가됩니다.
+1. 선택기는 다음에 사용할 수 있습니다. **블랙베리®** 및 **IPHONE 4** 장치 그룹 제공 **스마트폰** 가 다음 단계에서 템플릿 및 페이지 구조에 추가됩니다.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. CRX DE Lite를 사용하면 장치 그룹을 다중 값 문자열 속성에 추가하여 템플릿에서 사용할 수 있습니다 `cq:deviceGroups` 템플릿의 구조에서 참조할 수 있습니다.
+1. CRXDE Lite을 사용하면 장치 그룹을 다중 값 문자열 속성에 추가하여 템플릿에서 사용할 수 있습니다 `cq:deviceGroups` 템플릿의 구조에서 참조할 수 있습니다.
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 
@@ -64,7 +60,7 @@ ht-degree: 3%
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. CRX DE Lite를 사용하면 장치 그룹을 다중 값 문자열 속성에 추가하여 사이트에서 사용할 수 있도록 합니다 `cq:deviceGroups` 사이트의 구조에서.
+1. CRXDE Lite을 사용하여 장치 그룹을 다중 값 문자열 속성에 추가하여 사이트에서 사용할 수 있도록 허용합니다 `cq:deviceGroups` 사이트의 구조에서.
 
    `/content/<your-site>/jcr:content`
 
@@ -76,7 +72,7 @@ ht-degree: 3%
 
 이제 을(를) 사용할 때 [에뮬레이터](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) 페이지 편집기 내(예: [레이아웃 수정](/help/sites-authoring/responsive-layout.md)) 구성된 장치 그룹의 장치를 선택하면 페이지가 URL의 일부로 선택기로 렌더링됩니다.
 
-이 예에서 를 기반으로 페이지를 편집할 때는 **경험 페이지** 템플릿을 선택하고 에뮬레이터에서 iPhone 4를 선택하면 다음과 같이 선택기가 포함된 페이지가 렌더링됩니다. `arctic-surfing-in-lofoten.smart.html` 대신 `arctic-surfing-in-lofoten.html`
+이 예에서 다음을 기반으로 페이지를 편집할 때 **경험 페이지** 템플릿을 선택하고 에뮬레이터에서 iPhone 4를 선택하면 다음과 같이 선택기가 포함된 페이지가 렌더링됩니다. `arctic-surfing-in-lofoten.smart.html` 대신 `arctic-surfing-in-lofoten.html`
 
 이 선택기를 사용하여 페이지를 직접 호출할 수도 있습니다.
 

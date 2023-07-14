@@ -1,16 +1,14 @@
 ---
 title: 구성 요소에 Adobe Analytics 추적 추가
 description: 구성 요소에 Adobe Analytics 추적 추가
-uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 1%
 
 ---
@@ -170,13 +168,13 @@ topnav 구성 요소를 구성하고 JSP 파일을 편집하여 추적 이벤트
    * 이름: `analytics`
    * 유형: `nt:unstructured`
 
-1. 다음 속성을 analytics 노드에 추가하여 추적 이벤트 이름을 지정합니다.
+1. 추적 이벤트의 이름을 지정할 수 있도록 analytics 노드에 다음 속성을 추가하십시오.
 
    * 이름: cq:trackevents
    * 유형: 문자열
    * 값: topnavClick
 
-1. 다음 속성을 analytics 노드에 추가하여 데이터 변수의 이름을 지정합니다.
+1. 데이터 변수의 이름을 지정할 수 있도록 다음 속성을 analytics 노드에 추가합니다.
 
    * 이름: cq:trackvars
    * 유형: 문자열
@@ -196,7 +194,7 @@ topnav 구성 요소를 구성하고 JSP 파일을 편집하여 추적 이벤트
 
 1. 모두 저장을 클릭합니다.
 1. 를 엽니다. `topnav.jsp` 파일.
-1. a 요소에서 다음 속성을 추가합니다.
+1. 요소에 다음 속성을 추가합니다.
 
    ```xml
    onclick = "tracknav('<%= child.getPath() %>.html')"
@@ -294,7 +292,7 @@ topnav 구성 요소를 구성하고 JSP 파일을 편집하여 추적 이벤트
 프레임워크에 추가할 수 있도록 Adobe Analytics을 사용하여 추적할 수 있는 구성 요소를 Sidekick에 추가합니다.
 
 1. Adobe Analytics 구성에서 Adobe Analytics 프레임워크를 엽니다. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
-1. 사이드 킥에서 디자인 단추를 클릭합니다.
+1. Sidekick에서 디자인 단추를 클릭합니다.
 
    ![직각 사각형이 특징인 디자인 버튼.](assets/chlimage_1a.png)
 
@@ -345,7 +343,7 @@ Adobe Analytics 통합 모듈은 `s.products` 변수를 사용하는 중 `produc
 }]
 ```
 
-데이터 항목이 다음에서 생략된 경우: `product` 값은 s.products에서 빈 문자열로 전송됩니다.
+데이터 항목이 다음에서 생략되는 경우 `product` 값은 s.products에서 빈 문자열로 전송됩니다.
 
 >[!NOTE]
 >
@@ -362,7 +360,7 @@ Adobe Analytics 통합 모듈은 `s.products` 변수를 사용하는 중 `produc
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-eCommerce 모듈은 s.products 변수 데이터를 생성하는 여러 구성 요소를 제공합니다. 예: submitorder 구성 요소([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp))는 다음 예와 유사한 JavaScript를 생성합니다.
+eCommerce 모듈은 s.products 변수 데이터를 생성하는 여러 구성 요소를 제공합니다. 예를 들어 `submitorder` 구성 요소([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp))는 다음 예와 유사한 JavaScript를 생성합니다.
 
 ```
 <script type="text/javascript">
@@ -440,4 +438,4 @@ eCommerce 모듈은 s.products 변수 데이터를 생성하는 여러 구성 �
 
 일반적으로 웹 브라우저는 GET 요청 크기를 제한합니다. CQ 제품 및 SKU 값은 저장소 경로이므로 여러 값을 포함하는 제품 배열이 요청 크기 제한을 초과할 수 있습니다. 따라서 구성 요소는 의 항목 수를 제한해야 합니다. `product` 각 배열 `CQ_Analytics.record function`. 추적해야 하는 항목 수가 한도를 초과할 수 있는 경우 여러 함수를 만듭니다.
 
-예를 들어, eCommerce submitorder 구성 요소는 `product` 4번 호출에 있는 항목들. 장바구니에 4개 이상의 제품이 포함되어 있으면 여러 개가 생성됩니다 `CQ_Analytics.record` 함수.
+(예: eCommerce) `submitorder` 구성 요소가 의 수를 제한합니다. `product` 4번 호출에 있는 항목들. 장바구니에 4개 이상의 제품이 포함되어 있으면 여러 개가 생성됩니다 `CQ_Analytics.record` 함수.

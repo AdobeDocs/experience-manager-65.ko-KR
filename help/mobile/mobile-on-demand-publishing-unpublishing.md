@@ -1,18 +1,14 @@
 ---
 title: 게시 취소 컨텐츠
-seo-title: Publish UnPublish Content
 description: 문서, 배너 및 컬렉션에 대한 콘텐츠 관리 작업에 익숙해지면 이 페이지에 따라 콘텐츠를 게시하는 방법에 대해 알아보십시오. 또한 콘텐츠 게시를 취소할 수 있습니다.
-seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
-uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '274'
 ht-degree: 2%
 
 ---
@@ -27,11 +23,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 다음을 참조하십시오. [AEM Mobile 앱에 대한 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 온라인 도움말에서 참조할 수 있습니다.
+>AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 다음을 참조하십시오. [AEM Mobile 앱에 대한 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) 온라인 도움말에서 참조할 수 있습니다.
 
 ## 콘텐츠 게시/게시 취소 {#publishing-unpublishing-the-content}
 
-이는 &quot;AEM 게시&quot;와 다릅니다. 콘텐츠를 공개적으로 볼 수 있도록 하기 위해 AEM Publish 서버 인스턴스로 푸시하지 않습니다. 여기에서는 선택한 콘텐츠를 라이브 Mobile On-Demand 앱 내에서 공개해야 함을 Mobile On-Demand에 알려드립니다.
+이는 &quot;AEM 게시&quot;와 다릅니다. 콘텐츠를 공개적으로 볼 수 있도록 하기 위해 AEM Publish 서버 인스턴스로 푸시하지 않습니다. 여기에서는 선택한 콘텐츠를 라이브 Mobile On-Demand 앱 내에서 공개해야 함을 Mobile On-Demand에 알립니다.
 
 >[!NOTE]
 >
@@ -53,11 +49,9 @@ ht-degree: 2%
 
 ### 다음 단계 {#the-next-steps}
 
-콘텐츠를 만들고 게시하는 방법에 대해 알아보았으면 다음을 참조하십시오.
+콘텐츠를 만들고 게시하는 방법에 대해 알아본 후에는 다음을 참조하십시오.
 
 * [AEM Mobile On-demand Services용 AEM 컨텐츠 개발](/help/mobile/aem-mobile-on-demand.md)
 * [AEM Mobile On-demand Services을 사용할 컨텐츠 관리](/help/mobile/aem-mobile.md)
 
-또는 작성 항목에 대한 자세한 내용은
-
-[AEM Mobile On-demand Services 앱용 AEM 컨텐츠 작성](/help/mobile/mobile-apps-ondemand.md)
+또는 작성 항목에 대해 자세히 알아보려면 다음을 참조하십시오. [AEM Mobile On-demand Services 앱용 AEM 컨텐츠 작성](/help/mobile/mobile-apps-ondemand.md).

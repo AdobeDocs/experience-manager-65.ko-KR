@@ -1,26 +1,22 @@
 ---
 title: 배포 및 유지 관리
-seo-title: Deploying and Maintaining
 description: AEM 설치를 시작하는 방법에 대해 알아봅니다.
-seo-description: Learn how to get started with the AEM installation.
-uuid: 4429ac4d-abd7-47d8-b19d-773accb7cc7a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 9052ed3e89fdc67d94fc60bbff64d42255565767
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1766'
 ht-degree: 3%
 
 ---
 
 # 배포 및 유지 관리{#deploying-and-maintaining}
 
-이 페이지에서는 다음 항목을 찾을 수 있습니다.
+이 페이지에서는 다음 정보를 찾을 수 있습니다.
 
 * [기본 개념](#basic-concepts)
 
@@ -39,7 +35,7 @@ ht-degree: 3%
    * [압축을 푼 설치 디렉토리](#unpacked-install-directory)
    * [시작 및 중지](#starting-and-stopping)
 
-이러한 기본 사항을 숙지하면 다음 하위 페이지에서 보다 고급 세부 정보를 확인할 수 있습니다.
+이러한 기본 사항을 숙지하면 다음 하위 페이지에서 보다 고급 세부 정보를 찾을 수 있습니다.
 
 * [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
 * [권장 배포](/help/sites-deploying/recommended-deploys.md)
@@ -70,9 +66,9 @@ Adobe Experience Manager은 상업용 웹 사이트 및 관련 서비스를 구�
 
 * **웹 애플리케이션 서버**: AEM은 독립 실행형 모드(통합 Jetty 웹 서버 포함)로 배포하거나 서드파티 애플리케이션 서버 내의 웹 애플리케이션으로 배포할 수 있습니다.
 * **웹 애플리케이션 프레임워크**: AEM에는 RESTful의 콘텐츠 지향 웹 애플리케이션 작성을 간소화하는 Sling 웹 애플리케이션 프레임워크가 통합되어 있습니다.
-* **콘텐츠 저장소**: AEM에는 비정형 및 반정형 데이터를 위해 특별히 설계된 계층형 데이터베이스 유형인 JCR(Java Content Repository)이 포함되어 있습니다. 저장소는 사용자 관련 콘텐츠뿐만 아니라 애플리케이션에서 사용하는 모든 코드, 템플릿 및 내부 데이터를 저장합니다.
+* **콘텐츠 저장소**: AEM에는 비정형 및 반정형 데이터를 위해 특별히 설계된 계층형 데이터베이스 유형인 JCR(Java™ Content Repository)이 포함되어 있습니다. 저장소는 사용자 대면 콘텐츠뿐만 아니라 애플리케이션에서 사용하는 모든 코드, 템플릿 및 내부 데이터를 저장합니다.
 
-AEM은 이 기반을 기반으로 다음 작업을 관리하기 위한 다양한 애플리케이션 수준 기능도 제공합니다.
+AEM은 또한 이 기반을 기반으로 다음 관리를 위한 여러 애플리케이션 수준 기능을 제공합니다.
 
 * **웹 사이트**
 * **모바일 애플리케이션**
@@ -88,16 +84,16 @@ AEM 서버는 **Java 기반** 및 는 해당 플랫폼을 지원하는 대부분
 
 ### 일반적인 배포 시나리오 {#typical-deployment-scenarios}
 
-AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행되는 AEM의 사본입니다. AEM 설치에는 일반적으로 별도의 컴퓨터에서 실행되는 최소 두 개의 인스턴스가 포함됩니다.
+AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행되는 AEM의 사본입니다. AEM 설치에는 일반적으로 별도의 컴퓨터에서 실행되는 최소한 두 개의 인스턴스가 포함됩니다.
 
 * **작성자**: 콘텐츠를 만들고, 업로드하고, 편집하고, 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 콘텐츠를 실행할 준비가 되면 게시 인스턴스에 복제됩니다.
 * **게시**: 게시된 콘텐츠를 일반에게 제공하는 AEM 인스턴스.
 
 이러한 인스턴스는 설치된 소프트웨어 측면에서 동일합니다. 구성 단위로만 구분됩니다. 또한 대부분의 설치에서는 Dispatcher를 사용합니다.
 
-* **디스패처**: 정적 웹 서버(Apache httpd, Microsoft IIS 등) AEM dispatcher 모듈로 보강됩니다. 게시 인스턴스에서 생성된 웹 페이지를 캐시하여 성능을 개선합니다.
+* **디스패처**: AEM Dispatcher 모듈로 보강된 정적 웹 서버(Apache httpd, Microsoft® IIS 등)입니다. 게시 인스턴스에서 생성된 웹 페이지를 캐시하여 성능을 개선합니다.
 
-이 설정에는 많은 고급 옵션과 정교함이 있지만 작성자, 게시 및 발송자의 기본 패턴은 대부분의 배포에서 핵심입니다. 우리는 비교적 간단한 설정에 초점을 맞추는 것으로 시작할 것이다. 다음은 고급 배포 옵션에 대한 설명입니다.
+이 설정에는 많은 고급 옵션과 정교함이 있지만 작성자, 게시 및 Dispatcher의 기본 패턴은 대부분의 배포에서 핵심입니다. 간단한 설정에 초점을 맞추어 시작하겠습니다. 고급 배포 옵션에 대한 논의는 다음과 같습니다.
 
 다음 섹션에서는 두 가지 시나리오를 설명합니다.
 
@@ -107,7 +103,7 @@ AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행되는 AEM의 �
 
 ### 온프레미스 {#on-premise}
 
-회사 환경의 서버에 AEM을 설치할 수 있습니다. 일반적인 설치 인스턴스는 개발, 테스트 및 게시 환경을 포함합니다. 다음을 참조하십시오. [시작](/help/sites-deploying/deploy.md#getting%20started) 섹션 을 참조하여 AEM 소프트웨어를 로컬에 설치하는 방법에 대해 자세히 알아보십시오.
+회사 환경의 서버에 AEM을 설치할 수 있습니다. 일반적인 설치 인스턴스는 개발, 테스트 및 게시 환경을 포함합니다. 다음을 참조하십시오 [시작](/help/sites-deploying/deploy.md#getting%20started) AEM 소프트웨어를 로컬에 설치하는 방법에 대한 기본 세부 정보를 보려면 여기를 클릭하십시오.
 
 일반적인 온-프레미스 배포에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md).
 
@@ -133,19 +129,19 @@ Cloud Manager 및 해당 리소스에 대한 자세한 내용은 다음을 참�
 
 ### 사전 요구 사항 {#prerequisites}
 
-프로덕션 인스턴스는 일반적으로 공식적으로 지원되는 OS를 실행하는 전용 시스템에서 실행됩니다(참조: [기술 요구 사항](/help/sites-deploying/technical-requirements.md)), Experience Manager 서버는 실제로 를 지원하는 모든 시스템에서 실행됩니다 [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+프로덕션 인스턴스는 공식적으로 지원되는 OS를 실행하는 전용 시스템에서 실행됩니다(참조: [기술 요구 사항](/help/sites-deploying/technical-requirements.md)), Experience Manager 서버는 실제로 를 지원하는 모든 시스템에서 실행됩니다 [**Java™ Standard Edition 8**](https://www.oracle.com/java/technologies/downloads/#java8).
 
-AEM에 익숙해지고 개발하기 위해 Apple OS X를 실행하는 로컬 시스템에 설치된 인스턴스 또는 Microsoft Windows 또는 Linux의 데스크탑 버전을 사용하는 것이 일반적입니다.
+AEM에 익숙해지고 개발하기 위해 Apple OS X를 실행하는 로컬 시스템이나 Microsoft® Windows 또는 Linux®의 데스크탑 버전을 실행하는 로컬 시스템에 설치된 인스턴스를 사용하는 것이 일반적입니다.
 
-클라이언트측에서 AEM은 모든 최신 브라우저(**Microsoft Edge**, **Internet Explorer** 11, **크롬 **51+** **, **Firefox **47+, **Safari** 8+) 데스크탑 및 태블릿 운영 체제 둘 다에서. 다음을 참조하십시오 [지원되는 클라이언트 플랫폼](/help/sites-deploying/technical-requirements.md#supported-client-platforms) 을 참조하십시오.
+클라이언트측에서 AEM은 모든 최신 브라우저(**Microsoft® Edge**, **Internet Explorer** 11, **크롬 **51+** **, **Firefox **47+, **Safari** 8+) 데스크탑 및 태블릿 운영 체제 둘 다에서. 다음을 참조하십시오 [지원되는 클라이언트 플랫폼](/help/sites-deploying/technical-requirements.md#supported-client-platforms) 을 참조하십시오.
 
 ### 소프트웨어 가져오기 {#getting-the-software}
 
 AEM 유효한 유지 관리 및 지원 계약이 있는 고객은 코드가 있는 메일 알림을 받았어야 하며 [**Adobe 라이선스 웹 사이트**](https://licensing.adobe.com/). 비즈니스 파트너는 다음에서 다운로드 액세스를 요청할 수 있습니다. [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
-AEM 소프트웨어 패키지는 다음 두 가지 형식으로 제공됩니다.
+AEM 소프트웨어 패키지는 다음 두 가지 형태로 제공됩니다.
 
-* **cq-quickstart-6.5.0.jar:** 독립 실행형 실행 파일 *단지* 설치 및 실행에 필요한 모든 내용이 포함된 파일입니다.
+* **cq-quickstart-6.5.0.jar:** 독립 실행형 실행 파일 *단지* 를 실행하는 데 필요한 모든 항목이 포함된 파일입니다.
 
 * **cq-quickstart-6.5.0.war:** A *전쟁* 타사 응용 프로그램 서버에 배포할 파일입니다.
 
@@ -155,15 +151,15 @@ AEM 소프트웨어 패키지는 다음 두 가지 형식으로 제공됩니다.
 
 1. 로컬 컴퓨터에 설치 디렉터리를 만듭니다. 예:
 
-   UNIX 설치 위치: **/opt/aem**
+   UNIX® 설치 위치: **/opt/aem**
 
    Windows 설치 위치: **`C:\Program Files\aem`**
 
-   마찬가지로, 바탕 화면의 오른쪽 폴더에 샘플 인스턴스를 설치하는 것이 일반적입니다. 어떤 경우든 우리는 일반적으로 이 위치를 다음과 같이 언급할 것이다:
+   마찬가지로, 바탕 화면의 오른쪽 폴더에 샘플 인스턴스를 설치하는 것이 일반적입니다. 어떤 경우든 일반적으로 이 위치를 다음과 같이 참조합니다.
 
    `<aem-install>`
 
-   *파일 디렉토리의 경로는 미국 ASCII 문자로만 구성되어야 합니다.*
+   *파일 디렉터리의 경로는 ASCII 문자로 구성되어야 합니다.*
 
 1. 배치 **단지** 및 **라이센스** 이 디렉터리의 파일:
 
@@ -173,7 +169,7 @@ AEM 소프트웨어 패키지는 다음 두 가지 형식으로 제공됩니다.
        license.properties
    ```
 
-   을(를) 제공하지 않는 경우 `license.properties` 파일, AEM에서 브라우저를 **시작** 라이센스 키를 입력할 수 있는 시작 시 화면 아직 라이센스 키가 없는 경우 Adobe에서 유효한 라이센스 키를 요청해야 합니다.
+   을(를) 제공하지 않는 경우 `license.properties` 파일, AEM이 브라우저를 로 리디렉션합니다. **시작** 라이센스 키를 입력할 수 있는 시작 시 화면 아직 라이선스 키가 없는 경우 Adobe에 유효한 라이선스 키를 요청해야 합니다.
 
 1. GUI 환경에서 인스턴스를 시작하려면 **`cq-quickstart-6.5.0.jar`** 파일.
 
@@ -183,7 +179,7 @@ AEM 소프트웨어 패키지는 다음 두 가지 형식으로 제공됩니다.
        java -Xmx1024M -jar cq-quickstart-6.5.0.jar
    ```
 
-AEM에서 jar 파일의 압축을 풀고 직접 설치하고 시작하는 데 몇 분 정도 소요됩니다. 위의 절차를 수행하면 다음과 같은 결과가 발생합니다.
+AEM에서 jar 파일의 압축을 풀고 자체적으로 설치한 다음 시작하는 데 몇 분이 소요됩니다. 위의 절차를 수행하면 다음과 같은 결과가 발생합니다.
 
 * an **AEM 작성자** 인스턴스
 * 실행 중 **localhost**
@@ -205,13 +201,13 @@ AEM에서 jar 파일의 압축을 풀고 직접 설치하고 시작하는 데 �
 
 **`cq-author-p4502.jar`**
 
-을 실행하면 작성자 인스턴스가 다음에 실행됩니다. **`localhost:4502`**.
+그리고 이 인스턴스를 실행하면 작성자 인스턴스가 실행됩니다. **`localhost:4502`**.
 
 마찬가지로 파일 이름 바꾸기 및 실행
 
 **`cq-publish-p4503.jar`**
 
-이(가) 다음에서 게시 인스턴스를 실행합니다. **`localhost:4503`**.
+에서 게시 인스턴스가 실행되고 있습니다. **`localhost:4503`**.
 
 예를 들어에 이 두 인스턴스를 설치합니다
 
@@ -226,7 +222,7 @@ AEM에서 jar 파일의 압축을 풀고 직접 설치하고 시작하는 데 �
 
 ### 압축을 푼 설치 디렉토리 {#unpacked-install-directory}
 
-quickstart jar를 처음 실행하면 이라는 새 하위 디렉토리의 동일한 디렉토리에 압축을 풉니다. `crx-quickstart`. 다음과 같은 결과가 표시됩니다.
+quickstart jar를 처음 실행하면 라는 새 하위 디렉터리의 동일한 디렉터리에 자동으로 압축이 해제됩니다. `crx-quickstart`. 다음이 필요합니다.
 
 ```xml
 <aem-install>/
@@ -250,7 +246,7 @@ quickstart jar를 처음 실행하면 이라는 새 하위 디렉토리의 동�
         readme.txt
 ```
 
-인스턴스가 UI에서 설치된 경우 브라우저 창이 자동으로 열리고 데스크탑 애플리케이션 창이 열리며 인스턴스의 호스트 및 포트와 온/오프 스위치를 표시합니다.
+인스턴스가 UI에서 설치된 경우 브라우저 창이 자동으로 열리고 인스턴스의 호스트 및 포트와 온/오프 스위치를 표시하는 데스크탑 애플리케이션 창도 열립니다.
 
 ![시작 화면](assets/screen_shot_.png)
 
@@ -260,15 +256,15 @@ quickstart jar를 처음 실행하면 이라는 새 하위 디렉토리의 동�
 
 ### 시작 및 중지 {#starting-and-stopping}
 
-AEM의 압축을 풀고 처음 시작한 후 설치 디렉토리에서 jar 파일을 두 번 클릭하면 인스턴스가 시작되고 다시 설치되지 않습니다.
+AEM의 압축을 풀고 처음 시작한 후 설치 디렉토리에서 jar 파일을 두 번 클릭하면 인스턴스가 시작되고 재설치되지 않습니다.
 
 GUI에서 인스턴스를 중지하려면 **설정/해제** 데스크탑 애플리케이션 창을 켭니다.
 
-명령줄에서 AEM을 중지하고 시작할 수도 있습니다. 인스턴스를 처음 설치했다고 가정할 경우 **명령줄 스크립트** 위치는 다음과 같습니다.
+명령줄에서 AEM을 중지하고 시작할 수도 있습니다. 인스턴스를 처음 설치했다고 가정할 경우 **명령줄 스크립트** 위치:
 
 **`<aem-install>/crx-quickstart/bin/`**
 
-이 폴더에는 다음과 같은 Unix bash 셸 스크립트가 포함되어 있습니다.
+이 폴더에는 다음과 같은 UNIX® bash 셸 스크립트가 포함되어 있습니다.
 
 * **`start`**: 인스턴스를 시작합니다
 * `stop`: 인스턴스를 중지합니다

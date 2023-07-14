@@ -1,18 +1,14 @@
 ---
 title: 초기 샌드박스 콘텐츠
-seo-title: Initial Sandbox Content
 description: 콘텐츠 만들기
-seo-description: Create content
-uuid: 9810fe47-8d1a-4238-9b9c-0cc47c63d97a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '462'
 ht-degree: 4%
 
 ---
@@ -21,17 +17,17 @@ ht-degree: 4%
 
 이 섹션에서는 다음 페이지를 만들어 모두 [페이지 템플릿](initial-app.md#createthepagetemplate):
 
-* SCF 샌드박스 사이트: 기본 페이지의 영어 버전으로 리디렉션됩니다.
+* SCF 샌드박스 사이트 - 기본 페이지의 영어 버전으로 리디렉션합니다.
 
    * SCF 샌드박스 - 사이트의 영어 버전에 대한 메인 페이지.
 
    * SCF 재생 - 재생할 기본 페이지의 하위 항목.
 
-이 자습서에서는 다음을 자세히 다루지 않습니다 [언어 복사](../../help/sites-administering/tc-prep.md), 루트 페이지가 HTML 헤더를 통해 사용자에 대한 기본 언어 감지를 구현하고 해당 언어에 대한 적절한 기본 페이지로 리디렉션할 수 있도록 설계되었습니다. 이 규칙은 페이지의 노드 이름에 두 글자로 된 국가 코드를 사용하는 것입니다(예: 영어의 경우 &quot;en&quot;, 프랑스어의 경우 &quot;fr&quot;).
+이 자습서에서는 다음을 자세히 다루지 않습니다 [언어 복사](../../help/sites-administering/tc-prep.md), 루트 페이지가 HTML 헤더를 통해 사용자에 대한 기본 언어 감지를 구현하고 해당 언어에 대한 적절한 기본 페이지로 리디렉션할 수 있도록 설계되었습니다. 이 규칙은 페이지의 노드 이름에 두 글자로 된 국가 코드를 사용하는 것입니다. 예를 들어 영어는 &quot;en&quot;, 프랑스어는 &quot;fr&quot;입니다.
 
 ## 첫 페이지 만들기 {#create-first-pages}
 
-이제 다음 항목이 있습니다. [페이지 템플릿](initial-app.md#createthepagetemplate)/content 디렉터리에 웹 사이트의 루트 페이지를 설정할 수 있습니다.
+이제 다음 항목이 있습니다. [페이지 템플릿](initial-app.md#createthepagetemplate)/content 디렉토리에서 웹 사이트의 루트 페이지를 설정할 수 있습니다.
 
 1. 표준 UI는 현재 사이트를 만들기 위한 블루프린트를 제공합니다. 이 자습서에서는 간단한 사이트를 만들 때 클래식 UI가 유용합니다.
 
@@ -58,14 +54,14 @@ ht-degree: 4%
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
-1. 탐색기 창에서 방금 만든 페이지를 선택합니다. `/Websites/SCF Sandbox Site`, 및 클릭 **[!UICONTROL 신규]** > **[!UICONTROL 새 페이지]**:
+1. 탐색기 창에서 만든 페이지를 선택합니다. `/Websites/SCF Sandbox Site`, 및 클릭 **[!UICONTROL 신규]** > **[!UICONTROL 새 페이지]**:
 
    * 제목: `SCF Sandbox`
    * 이름: `en`
    * 선택 **[!UICONTROL SCF 샌드박스 재생 템플릿]**
    * **[!UICONTROL 만들기]**&#x200B;를 클릭합니다
 
-1. 탐색기 창에서 방금 만든 페이지를 선택합니다. `/Websites/SCF Sandbox Site/SCF Sandbox`, 및 클릭 **[!UICONTROL 신규]** > **[!UICONTROL 새 페이지]**
+1. 탐색기 창에서 만든 페이지를 선택합니다. `/Websites/SCF Sandbox Site/SCF Sandbox`, 및 클릭 **[!UICONTROL 신규]** > **[!UICONTROL 새 페이지]**
 
    * 제목: `SCF Play`
    * 이름: `play`
@@ -103,7 +99,7 @@ ht-degree: 4%
 
 * 클릭 **[!UICONTROL 모두 저장]**
 
-구성을 저장하는 데 문제가 있는 경우 다시 로그인하고 다시 구성하십시오.
+구성을 저장하는 데 문제가 있으면 다시 로그인하고 다시 구성하십시오.
 
 >[!NOTE]
 >

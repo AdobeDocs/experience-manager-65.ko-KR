@@ -1,18 +1,14 @@
 ---
 title: 모바일 온디맨드
-seo-title: Mobile On-Demand
-description: 이 페이지를 따라 AEM Mobile On-Demand Services 작성자의 역할과 책임에 대해 알아보십시오.
-seo-description: Follow this page to learn about the roles and responsibilities for AEM mobile On-Demand services author.
-uuid: dd0184d8-1220-4f6a-96b2-acdb31caae17
+description: 이 페이지를 따라 Adobe Experience Manager mobile On-Demand Services 작성자에 대한 역할과 책임에 대해 알아보십시오.
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 2ae7ea8d-fc58-4647-bc83-915d9f4b7dd8
 exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '273'
 ht-degree: 4%
 
 ---
@@ -35,9 +31,9 @@ ht-degree: 4%
 
 ## AEM Mobile 작성자 {#aem-mobile-author}
 
-An ***AEM 작성자* (또는 *마케터*)**는 사용자 지정 개발 또는 즉시 사용 가능한 템플릿과 구성 요소를 사용하여 페이지를 추가 및 편집하고, 구성 요소를 드래그 앤 드롭하고, 이미지, 비디오 및 텍스트 조각(콘텐츠 조각)을 포함하여 DAM의 모든 유형의 미디어를 추가합니다. 그런 다음 AEM 기본 제공 콘텐츠 편집기를 *AEM 작성자* 를 사용하여 나머지 Adobe Marketing Cloud과의 통합을 포함하여 앱 내에서 풍부하고 관련 있는 경험을 만들 수 있습니다.
+An ***AEM 작성자* (또는 *마케터*)**는 사용자 지정 개발 또는 즉시 사용 가능한 템플릿과 구성 요소를 사용하여 페이지를 추가 및 편집하고, 구성 요소를 드래그 앤 드롭하고, 이미지, 비디오 및 텍스트 조각(콘텐츠 조각)을 포함하여 DAM의 모든 유형의 미디어를 추가합니다. 그런 다음 AEM 기본 제공 콘텐츠 편집기를 *AEM 작성자* Adobe Experience Cloud의 나머지 부분과의 통합을 포함하여 앱 내에서 풍부하고 관련 있는 경험을 만들 수 있습니다.
 
-AEM 작성자는 AEM Mobile On Demand Services를 사용하여 앱을 만드는 동안 다음 작업을 담당합니다.
+AEM 작성자는 AEM Mobile On-demand Services을 사용하여 앱을 만드는 동안 다음 작업을 담당합니다.
 
 **AEM Mobile On-demand Services 앱용 AEM 컨텐츠 작성** 에는 다음 작업이 포함됩니다.
 
@@ -55,7 +51,6 @@ AEM 작성자는 AEM Mobile On Demand Services를 사용하여 앱을 만드는 
 >* [템플릿](/help/sites-developing/templates.md)
 >* [구성 요소](/help/sites-developing/components.md)
 >
-
 
 ## 추가 리소스 {#additional-resources}
 

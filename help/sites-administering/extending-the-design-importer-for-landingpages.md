@@ -1,19 +1,15 @@
 ---
 title: 랜딩 페이지용 디자인 Importer 확장 및 구성
-seo-title: Extending and Configuring the Design Importer for Landing Pages
 description: 랜딩 페이지용 디자인 가져오기 도구를 구성하는 방법을 알아봅니다.
-seo-description: Learn how to configure the Design Importer for landing pages.
-uuid: a2dd0c30-03e4-4e52-ba01-6b0b306c90fc
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '3503'
+source-wordcount: '3502'
 ht-degree: 0%
 
 ---
@@ -28,12 +24,12 @@ ht-degree: 0%
 
 1. TagHandler 만들기
 
-   * 태그 처리기는 특정 종류의 HTML 태그를 처리하는 POJO입니다. TagHandler가 처리할 수 있는 HTML 태그의 &quot;종류&quot;는 TagHandlerFactory의 OSGi 속성 &quot;tagpattern.name&quot;을 통해 정의됩니다. 이 OSGi 속성은 기본적으로 처리하려는 입력 html 태그와 일치해야 하는 정규 표현식입니다. 중첩된 모든 태그는 처리를 위해 태그 처리기에 throw됩니다. 예를 들어 중첩된 가 포함된 div에 등록하는 경우 &lt;p> 태그, &lt;p> 태그는 TagHandler에도 던져지며, 처리 방법은 사용자가 결정합니다.
+   * 태그 처리기는 특정 종류의 HTML 태그를 처리하는 POJO입니다. TagHandler가 처리할 수 있는 HTML 태그의 &quot;종류&quot;는 TagHandlerFactory의 OSGi 속성 &quot;tagpattern.name&quot;을 통해 정의됩니다. 이 OSGi 속성은 기본적으로 처리하려는 입력 html 태그와 일치해야 하는 정규 표현식입니다. 중첩된 모든 태그는 처리를 위해 태그 처리기에 throw됩니다. 예를 들어 중첩된 가 포함된 div에 등록하는 경우 &lt;p> 태그, &lt;p> 태그는 또한 TagHandler에 던져지며, 처리 방법은 사용자가 결정합니다.
    * 태그 처리기 인터페이스는 SAX 콘텐츠 처리기 인터페이스와 유사합니다. 각 html 태그에 대한 SAX 이벤트를 수신합니다. 태그 처리기 공급자는 디자인 가져오기 프레임워크에서 자동으로 호출되는 특정 라이프사이클 메서드를 구현해야 합니다.
 
 1. 해당 TagHandlerFactory를 만듭니다.
 
-   * 태그 처리기 팩토리는 태그 처리기의 인스턴스 생성을 담당하는 OSGi 구성 요소(singleton)입니다.
+   * 태그 처리기 팩토리는 태그 처리기의 인스턴스 생성을 담당하는 OSGi 구성 요소(단일 항목)입니다.
    * 태그 처리기 팩터리에서는 이 값이 입력 html 태그에 대해 일치하는 &quot;tagpattern.name&quot;이라는 OSGi 속성을 노출해야 합니다.
    * 입력 html 태그와 일치하는 태그 처리기가 여러 개 있는 경우 순위가 더 높은 태그 처리기가 선택됩니다. 순위 자체가 OSGi 속성으로 노출됩니다 **service.ranking**.
    * TagHandlerFactory는 OSGi 구성 요소입니다. TagHandler에 제공하려는 모든 참조는 이 팩터리를 통해서만 가능합니다.
@@ -127,15 +123,15 @@ Internet Explorer 및 Firefox 버전 3.6 이하에서는 드래그/드롭 zip �
 
 ### 현대화는 지원되지 않습니다. {#modernizr-is-not-supported}
 
-`Modernizr.js` 는 브라우저의 기본 기능을 감지하고 html5 요소에 적합한지 여부를 감지하는 javascript 기반 도구입니다. 다른 브라우저의 이전 버전에서 지원을 강화하기 위해 Modernizr를 사용하는 디자인은 랜딩 페이지 솔루션에서 가져오기 문제를 일으킬 수 있습니다. `Modernizr.js` 스크립트는 디자인 임포터에서 지원되지 않습니다.
+`Modernizr.js` 는 브라우저의 기본 기능을 감지하고 html5 요소에 적합한지 여부를 감지하는 JavaScript 기반 도구입니다. 다른 브라우저의 이전 버전에서 지원을 강화하기 위해 Modernizr를 사용하는 디자인은 랜딩 페이지 솔루션에서 가져오기 문제를 일으킬 수 있습니다. `Modernizr.js` 스크립트는 디자인 임포터에서 지원되지 않습니다.
 
 ### 디자인 패키지를 가져올 때 페이지 속성이 유지되지 않습니다 {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
-모든 페이지 속성(예: 사용자 지정 도메인, HTTPS 적용 등) 디자인 패키지를 가져오기 전에 페이지에 대해 설정된 경우(빈 랜딩 페이지 템플릿을 사용하는 경우), 디자인을 가져온 후에는 손실됩니다. 따라서 디자인 패키지를 가져온 후 페이지 속성을 설정하는 것이 좋습니다.
+디자인 패키지를 가져오기 전에 페이지(빈 랜딩 페이지 템플릿을 사용)에 대해 설정된 모든 페이지 속성(예: 사용자 지정 도메인, HTTPS 적용 등)은 디자인을 가져온 후에 손실됩니다. 따라서 디자인 패키지를 가져온 후 페이지 속성을 설정하는 것이 좋습니다.
 
 ### HTML 전용 마크업 가정 {#html-only-markup-assumed}
 
-가져오기 시 보안상의 이유로 잘못된 마크업을 가져와서 게시하지 않도록 마크업이 정리됩니다. 이는 HTML 전용 마크업과 인라인 SVG 또는 웹 구성 요소와 같은 다른 모든 형식의 요소가 필터링된다고 가정합니다.
+가져올 때 보안상의 이유로 잘못된 마크업을 가져와서 게시하지 않도록 마크업이 정리됩니다. 이는 HTML 전용 마크업과 인라인 SVG 또는 웹 구성 요소와 같은 다른 모든 형식의 요소가 필터링된다고 가정합니다.
 
 ### 텍스트 {#text}
 
@@ -286,7 +282,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 * Target URL, 타사 및 AEM URL 지원
 * 페이지 렌더링 옵션(같은 창, 새 창 등)
 
-가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기서 href는 대상 URL에 매핑되고 img src는 렌더링 이미지가 되며, &quot;title&quot;은 가리킨 텍스트 등으로 간주됩니다.
+가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기서 href는 타겟 URL에 매핑되고, img src는 렌더링 이미지이며, &quot;title&quot;은 가리킨 텍스트 등으로 간주됩니다.
 
 ```xml
 <div id="cqcanvas">
@@ -304,7 +300,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 >
 >클릭스루 그래픽 링크를 만들려면 div 내의 앵커 태그와 이미지 태그를 줄바꿈해야 합니다. `data-cq-component="clickthroughgraphicallink"` 특성.
 >
->예: `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
+>예, `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
 >CSS를 사용하여 이미지를 앵커 태그와 연결하는 다른 방법은 지원되지 않습니다. 예를 들어 다음 마크업은 작동하지 않습니다.
 >
@@ -315,6 +311,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 >`</div>`
 >
 >와 관련 `css .hasbackground { background-image: pathtoimage }`
+>
 
 ### 리드 양식 {#lead-form}
 
@@ -329,13 +326,13 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 * 사용자는 &quot;label&quot; 태그를 사용하여 제목을 제공하고 스타일 속성 &quot;class&quot;(CTA 리드 양식 구성 요소에만 사용 가능)를 사용하여 스타일을 제공할 수 있습니다.
 * 감사 페이지 및 구독 목록은 양식의 숨겨진 매개 변수(index.htm에 있음)로 제공되거나 &quot;리드 양식 시작&quot;의 편집 막대에서 추가/편집할 수 있습니다.
 
-   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
 
-   &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
 
 * 각 구성 요소의 편집 구성에서 - 필수 와 같은 제한을 제공할 수 있습니다.
 
-가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기에서 &quot;firstName&quot;은 잠재 고객 양식 firstName 등에 매핑됩니다. 단, 확인란은 예외입니다. 이 두 확인란은 cq:form 드롭다운 구성 요소에 매핑됩니다.
+가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기서 &quot;firstName&quot;은 잠재 고객 양식 firstName에 매핑됩니다. 확인란 외에는 이 두 개의 확인란이 cq:form 드롭다운 구성 요소에 매핑됩니다.
 
 ```xml
 <div id="cqcanvas">
@@ -447,7 +444,7 @@ AEM에서 새 템플릿을 만드는 단계가 설명되어 있습니다 [여기
 
 ### 랜딩 페이지에서 구성 요소 참조 {#referring-a-component-from-landing-page}
 
-data-cq-component 속성을 사용하여 HTML에서 참조할 구성 요소가 있어서 디자인 임포터가 여기에 포함된 구성 요소를 렌더링한다고 가정해 보십시오. 예: 테이블 구성 요소( `resourceType = /libs/foundation/components/table`). HTML에 다음을 추가해야 합니다.
+data-cq-component 속성을 사용하여 HTML에서 참조할 구성 요소가 있어서 디자인 임포터가 여기에 포함된 구성 요소를 렌더링한다고 가정해 보십시오. 예를 들어 테이블 구성 요소( `resourceType = /libs/foundation/components/table`). HTML에 다음을 추가해야 합니다.
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -467,7 +464,7 @@ data-cq-component의 경로는 구성 요소의 resourceType이어야 합니다.
 | E:nth-of-type(n) | 해당 유형의 n 번째 형제 요소인 E 요소 | [구조적 의사 클래스](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-of-type(n) | E 원소, 즉 해당 유형의 n번째 형제, 마지막 원소로부터 계산 | [구조적 의사 클래스](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
-다음과 같은 추가 html 요소가 원인입니다. &lt;div> 태그는 가져오기 후에 생성된 Html에 추가됩니다.
+다음과 같은 추가 html 요소 때문입니다. &lt;div> 태그는 가져오기 후에 생성된 Html에 추가됩니다.
 
 * 위와 유사한 구조에 의존하는 스크립트도 AEM 구성 요소로 전환되도록 표시된 요소와 함께 사용하지 않는 것이 좋습니다.
 * 다음과 같은 구성 요소 전환을 위해 마크업 태그의 스타일 사용 &lt;div data-cq-component=&quot;&amp;ast;&quot;> 권장되지 않습니다.
@@ -519,7 +516,7 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
   <tr>
    <td> </td>
    <td>패턴 바꾸기</td>
-   <td>찾은 일치 항목을 대체하는 패턴입니다. $1, $2와 같은 정규 표현식 그룹 참조를 사용할 수 있습니다. 또한 이 패턴은 가져오는 동안 실제 값으로 확인되는 {designPath}와 같은 키워드를 지원합니다.</td>
+   <td>찾은 일치 항목을 대체하는 패턴입니다. $1, $2와 같은 정규 표현식 그룹 참조를 사용할 수 있습니다. 또한 이 패턴은 다음과 같은 키워드를 지원합니다 {designPath} 가져오는 동안 실제 값으로 확인됩니다.</td>
   </tr>
  </tbody>
 </table>
@@ -530,10 +527,12 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
 >검색 패턴을 변경해야 하는 경우 felix 속성 편집기를 열 때 regex 메타문자를 이스케이프하려면 백슬래시 문자를 수동으로 추가해야 합니다. 백슬래시 문자를 수동으로 추가하지 않으면 정규 표현식은 유효하지 않은 것으로 간주되며 이전 문자를 대체하지 않습니다.
 >
 >예를 들어 기본 구성이
->`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->다음을 교체해야 합니다. >`CQ_DESIGN_PATH` 포함 `VIPURL` 검색 패턴에서 검색 패턴은 다음과 같아야 합니다.
-`/\* *VIPURL *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>
+>다음을 교체해야 합니다. `CQ_DESIGN_PATH` 포함 `VIPURL` 검색 패턴에서 검색 패턴은 다음과 같아야 합니다.
+>
+>`/\* *VIPURL *\*/ *(['"])`
 
 ## 문제 해결 {#troubleshooting}
 
@@ -545,14 +544,14 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
 
 ### 가져오는 동안 오류 메시지가 표시됨 {#error-messages-displayed-during-import}
 
-오류가 있는 경우(예: 가져온 패키지가 유효한 zip이 아님) 디자인 가져오기로 패키지를 가져오지 않고, 대신 드래그 앤 드롭 상자 바로 위의 페이지 상단에 오류 메시지를 표시합니다. 오류 시나리오의 예는 여기에 설명되어 있습니다. 오류를 수정한 후 업데이트된 zip 파일을 동일한 빈 랜딩 페이지로 다시 가져올 수 있습니다. 오류가 발생하는 다양한 시나리오는 다음과 같습니다.
+오류가 있는 경우(예: 가져온 패키지가 유효한 zip이 아님) 디자인 가져오기에서 패키지를 가져오지 않습니다. 대신, 드래그 앤 드롭 상자 바로 위의 페이지 맨 위에 오류 메시지가 표시됩니다. 오류 시나리오의 예는 여기에 설명되어 있습니다. 오류를 수정한 후 업데이트된 zip 파일을 동일한 빈 랜딩 페이지로 다시 가져올 수 있습니다. 오류가 발생하는 다양한 시나리오는 다음과 같습니다.
 
 * 가져온 디자인 패키지는 유효한 zip 아카이브가 아닙니다.
 * 가져온 디자인 패키지에 최상위 수준의 index.html이 포함되어 있지 않습니다.
 
 ### 가져오기 후 표시되는 경고 {#warnings-displayed-after-import}
 
-경고(예: HTML은 패키지 내에 존재하지 않는 이미지를 나타냄)가 발생하면 디자인 임포터가 zip을 가져오지만 동시에 결과 창에 문제/경고 목록이 표시되고 문제 링크를 클릭하면 디자인 패키지 내에서 문제를 가리키는 경고 목록이 표시됩니다. 디자인 임포터에 의해 경고가 포착되고 표시되는 다양한 시나리오는 다음과 같습니다.
+경고(예: HTML은 패키지 내에 존재하지 않는 이미지를 참조)가 있는 경우 디자인 임포터는 zip을 가져오지만 동시에 결과 창에 문제/경고 목록이 표시됩니다. 문제 링크를 클릭하면 디자인 패키지 내에 문제가 있음을 나타내는 경고 목록이 표시됩니다. 디자인 임포터에 의해 경고가 포착되고 표시되는 다양한 시나리오는 다음과 같습니다.
 
 * HTML은 패키지 내에 존재하지 않는 이미지를 나타냅니다.
 * HTML은 패키지 내에 존재하지 않는 스크립트를 나타냅니다.
@@ -560,17 +559,17 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
 
 ### AEM에서 ZIP 파일의 파일은 어디에 저장되어 있습니까? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-랜딩 페이지를 가져온 후 파일(이미지, css, js 등)은 디자인 패키지 내에서 AEM의 다음 위치에 저장됩니다.
+랜딩 페이지를 가져오면 디자인 패키지 내의 파일(이미지, css, js 등)이 AEM의 다음 위치에 저장됩니다.
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-랜딩 페이지가 캠페인 We.Retail 아래에 생성되고 랜딩 페이지의 이름이 이라고 가정해 봅시다. **myBlank랜딩 페이지** Zip 파일이 저장된 위치는 다음과 같습니다.
+랜딩 페이지가 We.Retail 캠페인 아래에 생성되고 랜딩 페이지의 이름이 이라고 가정해 봅시다. **myBlank랜딩 페이지** Zip 파일이 저장된 위치는 다음과 같습니다.
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 
 ### 서식이 유지되지 않음 {#formatting-not-preserved}
 
-CSS를 생성할 때 다음 제한 사항에 유의하십시오.
+CSS를 만들 때는 다음 제한 사항에 유의하십시오.
 
 텍스트 및 (편집 가능한) 이미지가 다음과 같은 경우:
 
@@ -589,7 +588,7 @@ height="116" /></div>Some Text </p>
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-그러면 `box img` 는 디자인 Importer에서 사용되며 결과 랜딩 페이지의 서식이 유지되지 않은 것으로 표시됩니다. 이 문제를 해결하려면 AEM이 CSS에 div 태그를 추가하고 그에 따라 코드를 다시 작성하십시오. 그렇지 않으면 일부 CSS 규칙이 올바르지 않습니다.
+그러면 `box img` 는 디자인 Importer에서 사용되며 결과 랜딩 페이지의 서식이 유지되지 않은 것으로 표시됩니다. 이 문제를 해결하기 위해 AEM은 CSS에 div 태그를 추가하고 그에 따라 코드를 다시 작성합니다. 그렇지 않으면 일부 CSS 규칙이 올바르지 않습니다.
 
 ```xml
 .box img
@@ -598,4 +597,5 @@ height="116" /></div>Some Text </p>
 ```
 
 >[!NOTE]
-또한 디자이너는 내부에 있는 코드만 **id=cqcanvas** 태그가 가져오기에 의해 인식됩니다. 그렇지 않으면 디자인이 유지되지 않습니다.
+>
+>또한 디자이너는 내부에 있는 코드만 **id=cqcanvas** 태그가 가져오기에 의해 인식됩니다. 그렇지 않으면 디자인이 유지되지 않습니다.

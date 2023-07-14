@@ -1,26 +1,22 @@
 ---
 title: AEM Communities 개요
-seo-title: AEM Communities Overview
 description: AEM Communities 기능 및 설정에 대한 개요
-seo-description: An overview of AEM Communities features and setup
-uuid: 14405847-36ae-4958-bdc6-d799ecd05f06
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1265'
 ht-degree: 1%
 
 ---
 
 # AEM Communities 개요 {#aem-communities-overview}
 
-Adobe Experience Manager(AEM) 커뮤니티에서는 성능이 향상되고 사이트 관리가 개선된 온-프레미스 커뮤니티 사이트를 빠르게 만들고 사이트 방문자를 중요한 커뮤니티 구성원으로 전환할 수 있는 기능을 제공합니다.
+Adobe Experience Manager(AEM) 커뮤니티는 성능이 향상되고 사이트 관리가 개선된 온-프레미스 커뮤니티 사이트를 빠르게 만들고 사이트 방문자를 중요한 커뮤니티 구성원으로 전환할 수 있는 기능을 제공합니다.
 
 ## 커뮤니티 기능 {#communities-features}
 
@@ -35,7 +31,7 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 * **채점** 배지를 수여하려면
 * **파일 공유**,
 * **알림** 및 **활동 스트림**,
-* 허용 **태깅** (@mention) 그 밖에 사용자 생성 콘텐츠의 관심을 끌기 위한 등록된 회원
+* 허용 **태깅** (@mention) 그 밖에 이용자 제작 콘텐츠의 관심을 끌기 위하여 등록한 회원
 
 커뮤니티 기능은 다음을 사용하여 시연할 수 있습니다 [AEM 데모 컴퓨터](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) GitHub.com에서 공개적으로 사용하거나 새로운 We.Retail 참조 구현을 사용하여 사용할 수 있습니다.
 
@@ -75,7 +71,7 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
    * 브랜딩: 커뮤니티 사이트의 모든 페이지에 표시할 배너 이미지 업로드(선택 사항)
    * 탐색 메뉴: 커뮤니티 사이트 템플릿에 포함된 기능에 대한 탐색 링크가 제공됩니다.
 
-새 커뮤니티 사이트를 간편하게 만들려면 다음을 방문하십시오. [AEM Communities 시작하기](/help/communities/getting-started.md).
+커뮤니티 사이트를 간편하게 만들려면 다음을 방문하십시오. [AEM Communities 시작하기](/help/communities/getting-started.md).
 
 ## 커뮤니티 콘텐츠 지속성 {#community-content-persistence}
 
@@ -85,9 +81,9 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 커뮤니티 콘텐츠 지속성 및 권장 배포에 대한 자세한 내용은 다음을 참조하십시오.
 
-* [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md): UGC에 사용 가능한 SRP 스토리지 옵션에 대해 설명합니다.
-* [권장 토폴로지](/help/communities/topologies.md)사용 사례 및 SRP 선택에 따라 토폴로지에 대해 설명합니다.
-* [AEM 6.5 커뮤니티로 업그레이드](/help/communities/upgrade.md): AEM 6.5로 이동할 때 UGC에 대한 유용한 정보를 제공합니다.
+* [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md)—UGC에 사용 가능한 SRP 스토리지 옵션에 대해 설명합니다.
+* [권장 토폴로지](/help/communities/topologies.md)—사용 사례 및 SRP 선택에 따른 토폴로지에 대해 설명합니다.
+* [AEM 6.5 커뮤니티로 업그레이드](/help/communities/upgrade.md)- AEM 6.5로 이동할 때 UGC에 대한 유용한 정보를 제공합니다.
 
 ## 커뮤니티 콘솔 {#communities-consoles}
 
@@ -135,7 +131,7 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 * [구성 요소 가이드](/help/communities/components-guide.md)
 
-   * 샘플 사이트, [커뮤니티 구성 요소](https://localhost:4502/editor.html/content/community-components/en.html): 모든 Communities 구성 요소의 샘플과 기본 구성 및 이를 실험할 수 있는 기능을 제공합니다.
+   * 샘플 사이트, [커뮤니티 구성 요소](https://localhost:4502/editor.html/content/community-components/en.html) 는 모든 Communities 구성 요소의 샘플과 기본 구성 및 이를 실험할 수 있는 기능을 제공합니다.
 
 ## 커뮤니티 사이트 템플릿 {#community-site-templates}
 
@@ -157,9 +153,9 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 커뮤니티 그룹 기능은 승인된 사용자와 작성 및 게시 환경의 커뮤니티 멤버가 커뮤니티 사이트 내에서 하위 커뮤니티를 동적으로 만들 수 있는 기능입니다.
 
-작성 환경에서 템플릿 구조에 가 포함되어 있으면 커뮤니티 그룹(하위 커뮤니티)을 기존 커뮤니티 사이트 내에 만들거나 기존 그룹 내에 중첩할 수 있습니다. [그룹 기능](/help/communities/functions.md#groups-function).
+작성자 환경에서 템플릿 구조에 가 포함된 경우 커뮤니티 그룹(하위 커뮤니티)을 기존 커뮤니티 사이트 내에 만들거나 기존 그룹 내에 중첩할 수 있습니다. [그룹 기능](/help/communities/functions.md#groups-function).
 
-커뮤니티 그룹을 만들려면 커뮤니티 그룹 페이지의 디자인을 제공하는 커뮤니티 그룹 템플릿을 선택해야 합니다. 템플릿 구조에 그룹 기능이 추가되면 그룹 템플릿을 하나 지정하거나 새 커뮤니티 그룹을 만들 때 템플릿을 선택하도록 구성됩니다.
+커뮤니티 그룹을 생성하려면 커뮤니티 그룹 페이지의 디자인을 제공하는 커뮤니티 그룹 템플릿을 선택해야 합니다. 템플릿 구조에 그룹 기능이 추가되면 그룹 템플릿을 하나 지정하거나 새 커뮤니티 그룹을 만들 때 템플릿을 선택하도록 구성됩니다.
 
 또한 다음 문서도 참조할 수 있습니다.
 
@@ -195,7 +191,7 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 * 채점 및 배지
 * Analytics 보고
 
-새 참여 커뮤니티를 쉽게 만들 수 있도록 하려면 다음을 방문하십시오. [AEM Communities 시작하기](/help/communities/getting-started.md).
+참여 커뮤니티를 신속하게 쉽게 만들 수 있도록 하려면 다음을 방문하십시오. [AEM Communities 시작하기](/help/communities/getting-started.md).
 
 ## AEM 데모 컴퓨터 {#aem-demo-machine}
 
@@ -208,7 +204,7 @@ AEM 데모 시스템에는 다음이 포함됩니다.
 
 * 설치할 패키지.
 
-AEM 데모 머신은 Windows, MacOS 및 Linux에서 CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 및 AEM 6.4로 성공적으로 테스트되었습니다.
+AEM 데모 머신은 Windows, MacOS 및 Linux®에서 CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 및 AEM 6.4로 성공적으로 테스트되었습니다.
 
 AEM 데모 컴퓨터에는 유효한 AEM 라이센스가 필요합니다.
 

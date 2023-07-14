@@ -1,18 +1,14 @@
 ---
 title: 개발 커뮤니티
-seo-title: Developing Communities
-description: 포럼, 사용자 그룹 등과 같은 커뮤니티 기능 만들기 및 사용자 지정
-seo-description: Create and customize community features such as forums, user groups, and more
-uuid: 51dc54da-9090-4d36-adf9-72d5479062a5
+description: 포럼, 사용자 그룹 등과 같은 커뮤니티 기능을 만들고 사용자 지정합니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '391'
 ht-degree: 5%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 5%
 
 ## 개요 {#overview}
 
-AEM Communities을 사용하면 포럼, 사용자 그룹, 블로그, Q&amp;A, 캘린더, 댓글, 검토, 투표, 등급 및 할당과 같은 커뮤니티 기능을 간편하게 만들고 사용자 지정할 수 있습니다. 이러한 기능으로 인해 UGC(사용자 생성 컨텐츠)가 게시 환경에 입력됩니다.
+AEM(Adobe Experience Manager) 커뮤니티는 포럼, 사용자 그룹, 블로그, Q&amp;A, 캘린더, 댓글, 검토, 투표, 등급 및 할당과 같은 커뮤니티 기능을 간편하게 만들고 사용자 지정할 수 있습니다. 이러한 기능을 사용하면 UGC(사용자 생성 컨텐츠)가 게시 환경에 입력됩니다.
 
 의 기초 [커뮤니티 사이트](overview.md#communitiessites) 은(는) [소셜 구성 요소 프레임워크](scf.md) (SCF). 커뮤니티 사이트 만들기는 의 선택부터 시작됩니다. [커뮤니티 사이트 템플릿](sites-console.md) 다음으로 구성됩니다. [커뮤니티 기능](functions.md).
 
@@ -36,7 +32,7 @@ AEM Communities을 사용하면 포럼, 사용자 그룹, 블로그, Q&amp;A, �
 
 ## 권장 배포 {#recommended-deployments}
 
-* [커뮤니티 콘텐츠 저장소](working-with-srp.md): UGC 공통 저장소에 사용할 수 있는 SRP 선택 사항에 대해 설명합니다.
+* [커뮤니티 콘텐츠 저장소](working-with-srp.md): UGC 공통 저장소에 사용할 수 있는 SRP(소셜 리소스 제공자) 선택 사항에 대해 설명합니다.
 * [커뮤니티에 대해 권장되는 토폴로지](topologies.md): 사용 사례 및 SRP 선택에 따른 토폴로지에 대해 설명합니다.
 
 ## 소셜 구성 요소 프레임워크 {#social-component-framework}
@@ -62,7 +58,7 @@ AEM Communities 구성 요소, 기능 및 기능은 의 기본 요소를 [커뮤
 ## 커뮤니티 구성원 {#community-members}
 
 * [사용자 및 사용자 그룹 관리](users.md)
-* [facebook 및 Twitter을 사용한 소셜 로그인](social-login.md)
+* [facebook 및 Twitter으로 소셜 로그인](social-login.md)
 
 ## 커뮤니티 그룹 {#community-groups}
 
@@ -92,7 +88,7 @@ AEM Communities 구성 요소, 기능 및 기능은 의 기본 요소를 [커뮤
 
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
 
-* 방문 [커뮤니티 배포](deploy-communities.md) 권장 배포 및 dispatcher 구성에 대해 알아봅니다.
+* 방문 [커뮤니티 배포](deploy-communities.md) 권장 배포 및 Dispatcher 구성에 대해 알아봅니다.
 
 * 방문 [커뮤니티 사이트 관리](administer-landing.md) 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시지 구성에 대해 알아봅니다.
 

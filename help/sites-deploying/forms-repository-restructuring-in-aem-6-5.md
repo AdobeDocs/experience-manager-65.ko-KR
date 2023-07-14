@@ -1,18 +1,14 @@
 ---
 title: AEM 6.5에서 Forms 저장소 재구성
-seo-title: Forms Repository Restructuring in AEM 6.5
-description: AEM 6.5 for Forms에서 새 저장소 구조로 마이그레이션하기 위해 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Forms.
-uuid: e60830d4-23ca-4be9-941a-ee4abe4786a6
+description: AEM 6.5 for Forms에서 새 저장소 구조로 마이그레이션하는 데 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
 feature: Upgrading
 exl-id: d555422e-dc97-4d45-9525-4299d22315e2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '511'
 ht-degree: 7%
 
 ---
@@ -40,42 +36,42 @@ ht-degree: 7%
 |---|---|
 | **새 위치** | `/libs/fd/fp/components` |
 | **구조 조정 지침** | 이전 위치에 대한 사용자 지정 코드의 모든 명시적 참조는 새 위치로 업데이트해야 합니다. |
-| **메모** | 이러한 클라이언트 라이브러리는 수정하거나 확장해서는 안 됩니다. |
+| **메모** | 이러한 클라이언트 라이브러리는 편집하거나 확장해서는 안 됩니다. |
 
 | **이전 위치** | `/etc/clientlibs/fd/rte` |
 |---|---|
 | **새 위치** | `/libs/fd/rte` |
-| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스의 경우 새 에셋에서 새 경로를 사용해야 합니다. |
+| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
 | **메모** | N/A |
 
 | **이전 위치** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **새 위치** | `/libs/fd/af/authoring/clientlibs` |
-| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스의 경우 새 에셋에서 새 경로를 사용해야 합니다. |
+| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
 | **메모** | N/A |
 
 | **이전 위치** | `/etc/clientlibs/fd/xfaforms` |
 |---|---|
 | **새 위치** | `/libs/fd/xfaforms/clientlibs/` |
-| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스의 경우 새 에셋에서 새 경로를 사용해야 합니다. |
+| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
 | **메모** | N/A |
 
 | **이전 위치** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **새 위치** | `/libs/fd/af/runtime/clientlibs` |
-| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스의 경우 새 에셋에서 새 경로를 사용해야 합니다. |
+| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
 | **메모** | N/A |
 
 | **이전 위치** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **새 위치** | `/libs/fd/af/runtime/clientlibs` |
-| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스의 경우 새 에셋에서 새 경로를 사용해야 합니다. |
+| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
 | **메모** | N/A |
 
 | **이전 위치** | `/etc/clientlibs/fd/expeditor` |
 |---|---|
 | **새 위치** | `/libs/fd/expeditor/clientlibs` |
-| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스의 경우 새 에셋에서 새 경로를 사용해야 합니다. |
+| **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
 | **메모** | N/A |
 
 | **이전 위치** | `/etc/clientlibs/fd/fmaddon` |
@@ -127,5 +123,5 @@ ht-degree: 7%
 | **이전 위치** | `/etc/designs/fd/fp` |
 |---|---|
 | **새 위치** | `/libs/fd/fp` |
-| **구조 조정 지침** | /etc 템플릿에 대한 모든 참조는 결국 해당 템플릿을 가리키도록 업데이트되어야 합니다 `/libs` 대응 항목. |
+| **구조 조정 지침** | /etc 템플릿에 대한 참조를 업데이트하여 해당 템플릿을 가리킵니다 `/libs` 대응 항목. |
 | **메모** | N/A |

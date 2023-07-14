@@ -1,18 +1,16 @@
 ---
 title: 콘텐츠 페이지 버전 작업
 description: 페이지 버전 생성, 비교 및 복원
-uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 0a06837576e102d0e46f7afd0f5a197c292ddae7
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 57%
+source-wordcount: '1497'
+ht-degree: 56%
 
 ---
 
@@ -56,7 +54,7 @@ ht-degree: 57%
 1. 버전을 만들 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
 1. 다음 항목 선택 **만들기** 도구 모음의 옵션을 사용하여 대화 상자를 엽니다.
-1. 대화 상자에서 다음을 입력할 수 있습니다 **레이블** 및 a **댓글** 필요한 경우:
+1. 대화 상자에서 다음을 입력할 수 있습니다 **레이블** 및 a **댓글**, 필요한 경우:
 
    ![레이블 및 댓글 입력](assets/screen_shot_2012-02-15at105050am.png)
 

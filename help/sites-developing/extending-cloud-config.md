@@ -1,18 +1,14 @@
 ---
 title: 클라우드 서비스 구성
-seo-title: Cloud Service Configurations
 description: 기존 인스턴스를 확장하여 자체 구성을 만들 수 있습니다
-seo-description: You can extend the existing instances to create your own configurations
-uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '563'
 ht-degree: 3%
 
 ---
@@ -28,11 +24,11 @@ ht-degree: 3%
 구성 개발에 사용된 원칙은 다음 개념을 기반으로 합니다.
 
 * 서비스/어댑터는 구성을 검색하는 데 사용됩니다.
-* 구성(예: 속성/단락)은 상위에서 상속됩니다.
+* 구성(예: 속성/단락)은 상위 항목에서 상속됩니다.
 * 경로로 분석 노드에서 참조됩니다.
 * 쉽게 확장 가능.
 * 다음과 같이 보다 복잡한 구성을 유연하게 지원할 수 있습니다. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* 종속성 지원(예: [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) 플러그인에 필요한 사항: [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) 구성).
+* 종속성 지원(예: [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) 플러그인에는 [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) 구성).
 
 ## 구조 {#structure}
 
@@ -40,15 +36,15 @@ ht-degree: 3%
 
 `/etc/cloudservices`.
 
-각 구성 유형에 대해 템플릿과 구성 요소가 제공됩니다. 이를 통해 사용자 지정 후 대부분의 요구 사항을 충족할 수 있는 구성 템플릿을 가질 수 있습니다.
+각 구성 유형에 대해 템플릿과 구성 요소가 제공됩니다. 이를 통해 맞춤화된 후 대부분의 요구 사항을 충족할 수 있는 구성 템플릿을 가질 수 있습니다.
 
-새 서비스에 대한 구성을 제공하려면 다음 작업을 수행해야 합니다.
+새 서비스에 대한 구성을 제공하려면 다음 작업을 수행하십시오.
 
 * 에서 서비스 페이지 만들기
 
-   `/etc/cloudservices`
+  `/etc/cloudservices`
 
-* 이 아래에:
+* 이 아래에는 다음 항목이 있습니다.
 
    * 구성 템플릿
    * 구성 구성 요소
@@ -57,7 +53,7 @@ ht-degree: 3%
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-또는 각각 베이스 컴포넌트
+또는 베이스 컴포넌트 각각
 
 `cq/cloudserviceconfigs/components/configpage`
 
@@ -137,7 +133,7 @@ propertyname
 
 ### API {#api}
 
-API에 대한 참조 설명서는 를 참조하십시오. [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+API에 대한 참조 설명서는 다음을 참조하십시오. [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### AEM 통합 {#aem-integration}
 
@@ -152,7 +148,7 @@ API에 대한 참조 설명서는 를 참조하십시오. [com.day.cq.wcm.webser
 
 서비스에 대한 사용자 자격 증명을 저장할 때 모든 암호를 암호화해야 합니다.
 
-숨겨진 양식 필드를 추가하여 이를 수행할 수 있습니다. 이 필드에는 주석이 있어야 합니다. `@Encrypted` 속성 이름(예: 용) `password` 필드 이름은 다음과 같이 기록됩니다.
+숨겨진 양식 필드를 추가하여 이를 수행할 수 있습니다. 이 필드에는 주석이 있어야 합니다. `@Encrypted` 속성 이름: 즉, `password` 필드 이름은 다음과 같이 기록됩니다.
 
 `password@Encrypted`
 
@@ -176,7 +172,7 @@ API에 대한 참조 설명서는 를 참조하십시오. [com.day.cq.wcm.webser
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>페이지에 자동으로 포함될 구성 요소에 대한 참조 경로.<br /> 추가 기능 및 JS 포함에 사용됩니다.<br /> 여기에는 다음과 같은 페이지의 구성 요소가 포함됩니다.<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> 포함(일반적으로 다음 항목 앞에) <code>body</code> 태그).<br /> Analytics 및 Target의 경우 이를 사용하여 방문자 행동을 추적하기 위한 JavaScript 호출과 같은 추가 기능을 포함합니다.</td>
+   <td>페이지에 자동으로 포함될 구성 요소에 대한 참조 경로.<br /> 추가 기능 및 JS 포함에 사용됩니다.<br /> 여기에는 다음과 같은 페이지의 구성 요소가 포함됩니다.<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> 포함(일반적으로 다음 항목 앞에) <code>body</code> 태그).<br /> Adobe Analytics 및 Adobe Target의 경우 이를 사용하여 방문자 행동을 추적하기 위한 JavaScript 호출과 같은 추가 기능을 포함합니다.</td>
   </tr>
   <tr>
    <td>설명</td>
@@ -220,7 +216,6 @@ API에 대한 참조 설명서는 를 참조하십시오. [com.day.cq.wcm.webser
 * [추적기 코드 조각](/help/sites-administering/external-providers.md) (Google, WebTrend 등)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
-
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->
 * [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
