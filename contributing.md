@@ -1,62 +1,61 @@
 ---
-source-git-commit: 5f9fb08a59dd7cac5436b9c7836fb45de9cda007
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '530'
-ht-degree: 2%
+source-wordcount: '524'
+ht-degree: 84%
 
 ---
-# Adobe Experience Manager 문서에 기여
+# Adobe Experience Manager 설명서에 대한 기여
 
-Adobe Experience Manager 문서에 참여해주셔서 감사합니다! Adobe는 전체 리더 커뮤니티뿐만 아니라 다른 Adobe 직원의 컨텐츠 헌신을 환영합니다.
+Adobe Experience Manager 문서에 기여해 주셔서 감사합니다! Adobe은 전체 리더 커뮤니티와 동료 Adobe 직원의 콘텐츠 기고를 환영합니다.
 
-이 파일은 사용자가 기여할 수 있는 방법뿐만 아니라, 증여할 때 따라야 할 지침을 가리킵니다.
+이 파일은 설명서에 기여할 수 있는 방법을 설명하고 기여할 때 따라야 할 지침을 안내합니다.
 
-## Adobe 오픈 소스 행동수칙
+## Adobe 오픈 소스 행동 수칙
 
-이 프로젝트는 [Adobe 오픈 소스 행동 강령을 채택했다](code-of-conduct.md). AEM 문서에 증여하면 이 수칙을 준수하는 것에 동의하는 것입니다. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+이 프로젝트는 [Adobe 오픈 소스 행동 수칙](code-of-conduct.md)을 채택했습니다. AEM 설명서에 기여함으로써 귀하는 본 행동 수칙을 준수하는 것에 동의하게 됩니다. 부적절한 행동 보고 대상 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## 기여 지침
 
-AEM 문서 개선을 위한 모든 노력을 환영하지만 가능한 한 특정 지침 및 표준을 준수하는 것을 권장합니다. 자세한 내용은 [AEM 문서](guidelines.md) 기여 지침을 참조하십시오.
+AEM 설명서 개선을 위한 모든 기여를 환영하지만 당사에서는 기여 시 가능한 해당 지침과 표준을 준수하도록 요청하고 있습니다. 자세한 내용은 [AEM 설명서 기여 지침](guidelines.md)을 검토하십시오.
 
-## Contribute 방법
+## 기여 방법
 
-귀하의 기고를 가능한 한 쉽게 제출하고자 합니다. 다음과 같은 두 가지 방법으로 기여할 수 있습니다.
+당사는 기여를 가능한 쉽게 제출할 수 있게 지원하려고 합니다. 다음과 같은 두 가지 방법으로 기여할 수 있습니다.
 
 * [문제 만들기](#create-an-issue)
-* [끌어오기 요청 만들기](#create-a-pull-request)
+* [가져오기 요청 만들기](#create-a-pull-request)
 
-어떤 방법을 선택하느냐에 따라 GitHub에서 직접 설명서를 얼마나 편리하게 편집할 수 있는지 결정됩니다.
+GitHub에서 직접 설명서를 편집할 때의 편의성에 따라서 편한 방법을 선택할 수 있습니다.
 
 >[!NOTE]
 >
->제출한 기여도는 [Adobe 사용 약관의 적용을 받습니다.](https://www.adobe.com/legal/terms.html)
+>제출하는 기여는 [Adobe 사용 약관](https://www.adobe.com/kr/legal/terms.html).
 
 ### 문제 만들기 {#create-an-issue}
 
-현재 문서에 대한 제안, 관찰 또는 설명되는 방식에 의문을 가지고 있습니까? 그런 다음 문제를 만드십시오. 문제는 기여할 만한 점이 있다면 매우 뛰어나지만 문서를 편집하거나 직접 요청을 하는 것이 편하지 않습니다.
+현재 문서에 대한 제안 사항이나 관찰이 있거나 설명 방식에 대한 질문이 있습니까? 그런 다음 문제를 만듭니다. 기여할 내용이 있는 경우에도 문제를 사용하는 것이 좋지만 문서를 편집하거나 직접 가져오기 요청을 하는 것은 편하지 않습니다.
 
-문제를 통해 문서 및 AEM Docs Team 구성원이 검토할 수 있는 개선 사항에 대한 아이디어를 쉽게 설명할 수 있습니다. 문제 **를 만들려면 페이지의 오른쪽 탐색 패널 상단에 있는 문제** 기록 링크를 클릭하십시오.
+문제를 사용하면 설명서 개선을 위한 아이디어를 쉽게 설명할 수 있고 AEM 설명서 팀 구성원이 검토할 수 있습니다. 페이지의 오른쪽 탐색 패널 상단에 있는 **문제 기록** 링크를 클릭하여 문제를 만들면 됩니다.
 
-### 풀 요청 만들기 {#create-a-pull-request}
+### 가져오기 요청 만들기 {#create-a-pull-request}
 
-문제가 발생하여 이를 수정하는 방법을 정확히 알고 있다면 끌어오기 요청을 만드는 것이 좋습니다. 끌어오기 요청을 사용하면 문서를 직접 편집한 다음 AEM Docs Team 구성원이 이를 검토할 수 있습니다. 페이지의 **오른쪽 탐색 패널 상단에 있는 이 페이지** 편집 링크를 클릭하면 제안된 변경 사항을 적용하고 가져오기 요청을 만들 수 있습니다.
+문제를 확인할 수 있고 이를 수정하는 방법을 정확히 알고 있는 경우 가져오기 요청을 만드는 것이 좋습니다. 가져오기 요청을 사용하면 설명서를 직접 편집할 수 있고 이후 이 편집 내용을 AEM 설명서 팀 구성원이 포함 대상으로 검토합니다. 다음을 클릭하면 됩니다. **이 페이지 편집** 페이지의 오른쪽 탐색 패널 상단에 있는 링크를 클릭하여 제안된 변경 사항을 적용하고 가져오기 요청을 만듭니다.
 
-모든 가져오기 요청에는 서명된 [기고자 라이선스 계약 또는 CLA가 포함되어야 합니다.](https://opensource.adobe.com/cla.html)  이를 통해 Adobe에 프로젝트의 일부로 기여도를 재배포할 수 있는 권한을 부여합니다. 한 번만 Adobe CLA를 제출하면 되므로 이전에 제출한 CLA를 이용하는 것이 좋습니다.
+모든 가져오기 요청에는 서명한 [기여자 라이선스 계약 또는 CLA가 포함되어야 합니다](https://opensource.adobe.com/cla.html). 이를 통해 Adobe에 프로젝트의 일부로 기여도를 재배포할 수 있는 권한을 부여합니다. Adobe CLA를 한 번만 제출하면 됩니다. 따라서 이전에 제출한 적이 있는 경우에는 쉽게 이동할 수 있습니다.
 
 ### 빠른 비디오 소개
 
-다음 비디오를 통해 문제를 만들고 요청을 가져오는 방법에 대한 간단한 개요를 살펴보십시오.
+다음 비디오를 통해 문제 및 가져오기 요청을 만드는 방법에 대한 간단한 개요를 살펴보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27069)
 
 ### Adobe 직원의 기여
 
-Adobe 직원이고 기여도가 있는 경우 회사 git의 `AdobeDocs` 조직을 사용하십시오.
+Adobe 직원이고 기여가 있는 경우 `AdobeDocs` 회사 git의 조직
 
-물론 Adobe는 모든 기여에 만족하며, 공개 보관소에 게재되어 있는 경우 귀하의 기여도를 검토할 것이지만, Adobe 직원의 요청 수수는 처리하기가 더 쉽고 회사 보고에 대해 더 빠르게 승인할 수 있습니다. 회사 보고서로 독점적인 정보를 설명하도록 하십시오.
+Adobe에서는 물론 모든 기여를 환영하며 공개 보관소에 게재되어 있는 기여를 검토할 예정이지만, Adobe 직원의 가져오기 요청은 처리하기가 더 쉽고 회사 보고 시 더욱 빠르게 승인할 수 있습니다. 모든 독점 정보는 회사 보고서에만 논의해야 합니다.
 
 ## 추가 정보
 
-GitHub 저작 플랫폼을 사용하는 방법에 대한 자세한 내용은 [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 를 참조하십시오.
+GitHub 작성 플랫폼을 사용하는 방법에 대한 자세한 내용은 [Adobe 문서 기여 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko-KR)를 참조하십시오.

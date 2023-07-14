@@ -1,18 +1,14 @@
 ---
 title: We.Retail에서 세계화된 사이트 구조 시험 사용
-seo-title: Trying out the Globalized Site Structure in We.Retail
 description: We.Retail에서 세계화된 사이트 구조 시험 사용
-seo-description: null
-uuid: 5e5a809d-578f-4171-8226-cb65aa995754
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '415'
 ht-degree: 8%
 
 ---
@@ -24,11 +20,11 @@ We.Retail은 국가별 웹 사이트에 라이브 복사할 수 있는 언어 �
 ## 시험 사용 {#trying-it-out}
 
 1. 에서 사이트 콘솔을 엽니다. **전역 탐색 -> 사이트**.
-1. 열 보기(아직 활성화되지 않은 경우)로 전환하고 We.Retail을 선택합니다. 언어 마스터와 함께 스위스, 미국, 프랑스 등이 있는 예제 국가 구조를 참고하십시오.
+1. 열 보기(아직 활성화되지 않은 경우)로 전환하고 We.Retail을 선택합니다. 언어 기본과 함께 스위스, 미국, 프랑스 등이 있는 예제 국가 구조를 참고하십시오.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
-1. 스위스를 선택하고 해당 국가의 언어에 대한 언어 뿌리를 확인합니다. 이러한 루트 아래에 아직 컨텐츠가 없습니다.
+1. 스위스를 선택하고 해당 국가의 언어에 대한 언어 뿌리를 확인합니다. 아직 이러한 루트 아래에 컨텐츠가 없습니다.
 
    ![chlimage_1-88](assets/chlimage_1-88a.png)
 
@@ -54,7 +50,7 @@ We.Retail은 국가별 웹 사이트에 라이브 복사할 수 있는 언어 �
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. 번역 프로젝트의 세부 정보를 보려면 독일어를 클릭하십시오. 상태는 입니다. **초안**. Microsoft의 번역 서비스로 번역을 시작하려면 옆에 있는 V자형 화살표를 클릭합니다. **번역 작업** 제목 및 선택 **시작**.
+1. 번역 프로젝트의 세부 정보를 보려면 독일어를 클릭하십시오. 상태는 입니다. **초안**. Microsoft®의 번역 서비스로 번역을 시작하려면 옆에 있는 V자형 화살표를 클릭합니다. **번역 작업** 제목 및 선택 **시작**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -68,7 +64,7 @@ We.Retail은 국가별 웹 사이트에 라이브 복사할 수 있는 언어 �
 
 >[!NOTE]
 >
->이 절차에서는 Microsoft 기계 번역과의 내장된 통합을 보여 주었습니다. 사용 [AEM 번역 통합 프레임워크](/help/sites-administering/translation.md)를 여러 표준 번역 서비스와 통합하여 AEM 번역을 오케스트레이션할 수 있습니다.
+>이 절차에서는 Microsoft® 기계 번역과의 내장된 통합을 보여 주었습니다. 사용 [AEM 번역 통합 프레임워크](/help/sites-administering/translation.md)를 여러 표준 번역 서비스와 통합하여 AEM 번역을 오케스트레이션할 수 있습니다.
 
 ## 추가 정보 {#further-information}
 

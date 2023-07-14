@@ -1,25 +1,21 @@
 ---
 title: We.Retail에서 컨텐츠 조각 시험 사용
-seo-title: Trying out Content Fragments in We.Retail
 description: We.Retail에서 컨텐츠 조각 시험 사용
-seo-description: null
-uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 28%
+source-wordcount: '455'
+ht-degree: 23%
 
 ---
 
 # We.Retail에서 컨텐츠 조각 시험 사용{#trying-out-content-fragments-in-we-retail}
 
-변형(채널별로 가능)과 함께 콘텐츠 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. **We.Retail** (AEM의 기본 인스턴스에서 사용 가능한 경우) 조각을 제공합니다 **로포텐의 북극 서핑** 를 기본 샘플로 사용하십시오. 이는 다음을 보여 줍니다.
+변형(채널별로 가능)과 함께 콘텐츠 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. **We.Retail** (Adobe Experience Manager의 기본 인스턴스에서 사용 가능한 경우) 조각을 제공합니다 **로포텐의 북극 서핑** 를 기본 샘플로 사용하십시오. 이는 다음을 보여 줍니다.
 
 * Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md). 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다.
 
@@ -37,7 +33,7 @@ ht-degree: 28%
 >
 >**콘텐츠 조각** 및 **[경험 조각](/help/sites-authoring/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
 >
->* **콘텐츠 조각**&#x200B;은 편집 가능한 콘텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 콘텐츠입니다.
+>* **컨텐츠 조각** 는 편집 가능한 컨텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 콘텐츠입니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
@@ -48,7 +44,7 @@ We.Retail에는 몇 가지 샘플 콘텐츠 조각이 있습니다. 다음을 �
 
 여기에는 다음이 포함됩니다. **로포텐의 북극 서핑**: 관련 시각적 에셋과 함께 제공되는 조각:
 
-* 탐색 수단 **에셋**, **파일**, **We.Retail**, **영어**, **경험**, **로포텐에서 아틱 서핑**:
+* 다음을 통해 탐색 **에셋**, **파일**, **We.Retail**, **영어**, **경험**, **로포텐의 북극 서핑**:
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 

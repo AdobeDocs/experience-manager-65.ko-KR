@@ -1,19 +1,15 @@
 ---
 title: We.Retail에서 핵심 구성 요소 시험 사용
-seo-title: Trying out Core Components in We.Retail
 description: We.Retail에서 핵심 구성 요소 시험 사용
-seo-description: null
-uuid: 8d1cea0b-99d9-49b2-b275-41f14864b1ff
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 6%
+source-wordcount: '533'
+ht-degree: 8%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 6%
 
 ## 시험 사용 {#trying-it-out}
 
-1. We.Retail 샘플 콘텐츠로 AEM을 시작하고 [구성 요소 콘솔](/help/sites-authoring/default-components-console.md).
+1. We.Retail 샘플 콘텐츠로 Adobe Experience Manager(AEM)를 시작하고 [구성 요소 콘솔](/help/sites-authoring/default-components-console.md).
 
    **전역 탐색 -> 도구 -> 구성 요소**
 
@@ -36,14 +32,14 @@ ht-degree: 6%
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. 모든 핵심 구성 요소의 이름은 로 지정됩니다. **v1**: 이는 이 핵심 구성 요소의 첫 번째 버전임을 반영합니다. AEM과 호환되고 쉽게 업그레이드할 수 있게 되어 최신 기능을 활용할 수 있는 일반 버전이 출시될 예정입니다.
+1. 모든 핵심 구성 요소 이름은 로 지정됩니다. **v1**: 이는 이 핵심 구성 요소의 첫 번째 버전임을 반영합니다. AEM과 호환되고 쉽게 업그레이드할 수 있게 되어 최신 기능을 활용할 수 있는 일반 버전이 출시될 예정입니다.
 1. 클릭 **텍스트(v1)**.
 
    다음을 확인하십시오. **리소스 유형** 구성 요소 중 `/apps/core/wcm/components/text/v1/text`. 핵심 구성 요소는 `/apps/core/wcm/components` 구성 요소별로 버전이 관리됩니다.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. 을(를) 클릭합니다 **설명서** 탭으로 이동하여 구성 요소에 대한 개발자 설명서를 확인하십시오.
+1. 다음을 클릭합니다. **설명서** 탭으로 이동하여 구성 요소에 대한 개발자 설명서를 확인하십시오.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -52,7 +48,7 @@ ht-degree: 6%
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. 다음을 클릭합니다. **라이브 사용량** 탭으로 이동하여 이 구성 요소가 현재 사용 중인 페이지를 확인합니다. 첫 번째 **감사합니다.** 페이지를 편집할 페이지입니다.
+1. 다음을 클릭합니다. **라이브 사용량** 탭으로 이 구성 요소가 사용 중인 페이지를 확인할 수 있습니다. 첫 번째 **감사합니다.** 페이지를 편집할 페이지입니다.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -66,7 +62,7 @@ ht-degree: 6%
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. 상속이 취소되고 텍스트 구성 요소를 선택하면 더 많은 옵션을 사용할 수 있습니다. 클릭** 편집**.
+1. 상속이 취소되고 텍스트 구성 요소를 선택하면 더 많은 옵션을 사용할 수 있습니다. 클릭 **편집**.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -74,12 +70,12 @@ ht-degree: 6%
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. 다음에서 **페이지 정보** 메뉴 선택 **템플릿 편집**.
+1. 다음에서 **페이지 정보** 메뉴, 선택 **템플릿 편집**.
 1. 페이지의 템플릿 편집기에서 **정책** 아이콘: 텍스트 구성 요소 **레이아웃 컨테이너** 페이지의 입니다.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. 템플릿 작성자는 핵심 구성 요소를 통해 페이지 작성자가 사용할 수 있는 속성 을 구성할 수 있습니다. 이러한 기능에는 허용되는 붙여넣기 소스, 서식 옵션, 사용 가능한 단락 스타일 등과 같은 기능이 포함됩니다.
+1. 템플릿 작성자는 핵심 구성 요소를 통해 페이지 작성자가 사용할 수 있는 속성 을 구성할 수 있습니다. 이러한 기능에는 허용되는 붙여넣기 소스, 서식 옵션 및 사용 가능한 단락 스타일과 같은 기능이 포함됩니다.
 
    이러한 디자인 대화 상자는 많은 핵심 구성 요소에 사용할 수 있으며 템플릿 편집기와 함께 사용할 수 있습니다. 활성화되면 작성자는 구성 요소 편집기를 통해 사용할 수 있습니다.
 
@@ -87,6 +83,6 @@ ht-degree: 6%
 
 ## 추가 정보 {#further-information}
 
-핵심 구성 요소에 대한 자세한 내용은 작성 문서를 참조하십시오 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 기술 개요를 참조하십시오.
+핵심 구성 요소에 대한 자세한 내용은 작성 문서를 참조하십시오 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en) 기술 개요를 참조하십시오.
 
 또한 추가 조사를 원할 수 있습니다 [편집 가능한 템플릿](/help/sites-developing/we-retail-editable-templates.md). 작성 문서를 참조하십시오 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md) 편집 가능한 템플릿에 대한 자세한 내용을 살펴보십시오.

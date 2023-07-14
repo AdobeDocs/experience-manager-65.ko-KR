@@ -1,26 +1,22 @@
 ---
-title: AEM 터치 지원 UI의 개념
-seo-title: Concepts of the AEM Touch-Enabled UI
-description: AEM 5.6 Adobe에서 작성 환경을 위한 반응형 디자인이 포함된 새로운 터치에 최적화된 UI가 도입되었습니다
-seo-description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
-uuid: 401c5a65-6ddc-4942-ab8e-395016f9c629
+title: Adobe Experience Manager 터치 지원 UI의 개념
+description: Adobe Experience Manager 5.6에서 Adobe은 작성 환경을 위한 반응형 디자인이 포함된 터치에 최적화된 새 UI를 도입했습니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2167'
 ht-degree: 1%
 
 ---
 
-# AEM 터치 지원 UI의 개념{#concepts-of-the-aem-touch-enabled-ui}
+# Adobe Experience Manager 터치 지원 UI의 개념{#concepts-of-the-aem-touch-enabled-ui}
 
-AEM은 터치 지원 UI와 [반응형 디자인](/help/sites-authoring/responsive-layout.md) 터치 및 데스크탑 디바이스 모두에서 작동하도록 설계된 작성 환경용.
+Adobe Experience Manager(AEM)에는 터치 지원 UI와 [반응형 디자인](/help/sites-authoring/responsive-layout.md) 터치 및 데스크탑 디바이스 모두에서 작동하도록 설계된 작성 환경용.
 
 >[!NOTE]
 >
@@ -31,20 +27,20 @@ AEM은 터치 지원 UI와 [반응형 디자인](/help/sites-authoring/responsiv
 * 다음과 같은 세트 헤더입니다.
    * 로고 표시
    * 전역 탐색에 대한 링크를 제공합니다.
-   * 검색, 도움말, Marketing Cloud 솔루션, 알림 및 사용자 설정과 같은 다른 일반 작업에 대한 링크를 제공합니다.
+   * 검색, 도움말, Experience Cloud 솔루션, 알림 및 사용자 설정과 같은 다른 일반 작업에 대한 링크를 제공합니다.
 * 왼쪽 레일(필요할 때 표시되며 숨길 수 있음)은 다음과 같이 표시할 수 있습니다.
    * 타임라인
    * 참조
    * 필터
-* 탐색 헤더입니다. 이 헤더는 다시 문맥에 따라 달라지며 다음을 표시할 수 있습니다.
-   * 현재 사용 중인 콘솔 및/또는 해당 콘솔 내의 위치를 나타냅니다.
+* 탐색 헤더입니다. 이 헤더는 다시 문맥을 구분하며 다음을 표시할 수 있습니다.
+   * 현재 사용 중인 콘솔, 해당 콘솔 내 위치 또는 둘 다를 나타냅니다.
    * 왼쪽 레일 선택
-   * 탐색 표시
+   * 이동 경로
    * 적절한 액세스 권한 **만들기** 작업
    * 선택 항목 보기
 * 다음과 같은 콘텐츠 영역:
    * 콘텐츠 항목(페이지, 에셋, 포럼 게시물 등)을 나열합니다.
-   * 요청한 대로 형식을 지정할 수 있습니다(예: 열, 카드 또는 목록).
+   * 열, 카드 또는 목록과 같이 요청한 대로 형식을 지정할 수 있습니다.
    * 반응형 디자인 사용(디스플레이는 장치 및/또는 창 크기에 따라 자동으로 크기 조정)
    * 무한 스크롤링 사용(더 이상 페이지 매김을 하지 않음, 모든 항목이 하나의 창에 나열됨)
 
@@ -69,11 +65,11 @@ AEM은 터치 지원 UI와 [반응형 디자인](/help/sites-authoring/responsiv
 * 포함된 테스트 포함
 * 이러한 원칙이 모든 요소 및 구성 요소에 적용되도록 하는 상향식 설계
 
-터치 사용 UI 구조에 대한 자세한 개요는 문서 를 참조하십시오. [AEM 터치 지원 UI의 구조](/help/sites-developing/touch-ui-structure.md).
+터치 사용 UI 구조에 대한 자세한 개요는 를 참조하십시오. [AEM 터치 지원 UI의 구조](/help/sites-developing/touch-ui-structure.md).
 
 ## AEM 기술 스택 {#aem-technology-stack}
 
-AEM은 Granite 플랫폼을 기반으로 하며, Granite 플랫폼에는 Java Content Repository가 포함됩니다.
+AEM은 Granite 플랫폼을 기반으로 하며, Granite 플랫폼에는 특히 Java™ Content Repository가 포함됩니다.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -83,7 +79,7 @@ Granite는 Adobe의 오픈 웹 스택으로, 다음을 포함한 다양한 구�
 
 * 애플리케이션 런처
 * 모든 것이 배포되는 OSGi 프레임워크
-* 애플리케이션 구축을 지원하는 다양한 OSGi 표준 서비스
+* 애플리케이션 구축을 지원하는 여러 OSGi 표준 서비스
 * 다양한 로깅 API를 제공하는 포괄적인 로깅 프레임워크
 * JCR API 사양의 CRX 저장소 구현
 * Apache Sling 웹 프레임워크
@@ -93,7 +89,7 @@ Granite는 Adobe의 오픈 웹 스택으로, 다음을 포함한 다양한 구�
 >
 >Granite는 Adobe 내에서 개방형 개발 프로젝트로 운영됩니다. 코드, 토론 및 문제에 대한 기여는 회사 전체에서 이루어집니다.
 >
->그러나 Granite는 **아님** 오픈 소스 프로젝트. 여러 오픈 소스 프로젝트(특히 Apache Sling, Felix, Jackrabbit 및 Lucene)를 기반으로 하지만, Adobe은 공개 프로젝트와 내부 프로젝트 간에 명확한 선을 그립니다.
+>그러나 Granite는 **아님** 오픈 소스 프로젝트입니다. 여러 오픈 소스 프로젝트(특히 Apache Sling, Felix, Jackrabbit 및 Lucene)를 기반으로 하지만, Adobe은 공개 프로젝트와 내부 프로젝트 간에 명확한 선을 그립니다.
 
 ## Granite UI {#granite-ui}
 
@@ -201,7 +197,7 @@ Granite UI와 ExtJS(클래식 UI에 사용됨) 간의 차이점도 관심 대상
 
 ### Granite UI Foundation 구성 요소 {#granite-ui-foundation-components}
 
-다음 [Granite UI Foundation 구성 요소](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) 모든 UI 구축에 필요한 기본 구성 요소를 제공하십시오. 여기에는 특히 다음이 포함됩니다.
+다음 [Granite UI Foundation 구성 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 모든 UI 구축에 필요한 기본 구성 요소를 제공하십시오. 여기에는 다음과 같은 항목이 포함됩니다.
 
 * 버튼
 * 하이퍼링크
@@ -222,7 +218,7 @@ Granite UI와 ExtJS(클래식 UI에 사용됨) 간의 차이점도 관심 대상
 구현:
 
 * 저장소 기반 구성 및 구성
-* Granite 플랫폼에서 제공하는 테스트 시설 활용
+* Granite 플랫폼에서 제공하는 테스트 시설 사용
 * JSP 템플릿
 
 이 기초 구성 요소 라이브러리는 다른 라이브러리에서 사용하거나 확장할 수 있습니다.
@@ -258,7 +254,7 @@ Granite UI를 사용하도록 ExtJS 코드를 업그레이드할 때 다음 목�
 
 ### Granite UI 관리 구성 요소 {#granite-ui-administration-components}
 
-다음 [Granite UI 관리 구성 요소](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) 모든 관리 애플리케이션에서 구현할 수 있는 일반 구성 요소를 제공하기 위해 foundation 구성 요소를 기반으로 빌드합니다. 여기에는 특히 다음이 포함됩니다.
+다음 [Granite UI 관리 구성 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 모든 관리 애플리케이션에서 구현할 수 있는 일반 구성 요소를 제공하기 위해 foundation 구성 요소를 기반으로 빌드합니다. 여기에는 다음과 같은 것들이 포함됩니다.
 
 * 전역 탐색 막대
 * 레일(스켈레톤)
@@ -272,14 +268,14 @@ Granite UI를 사용하도록 ExtJS 코드를 업그레이드할 때 다음 목�
 구현:
 
 * 기초 구성 요소를 사용하여 사전 정의된 구성 요소
-* 구성 요소를 사용자 지정할 수 있습니다.
+* 구성 요소를 사용자 정의할 수 있습니다.
 
 ## Coral UI {#coral-ui}
 
 CoralUI.pdf
 
 [파일 가져오기](assets/coralui.pdf)
-Coral UI(CUI)는 터치 지원 UI에 대한 Adobe의 시각적 스타일 구현으로, 여러 제품에서 사용자 경험에 일관성을 제공하도록 설계되었습니다. Coral UI는 작성 환경에서 사용되는 시각적 스타일을 채택하는 데 필요한 모든 기능을 제공합니다.
+Coral UI(CUI)는 여러 제품에서 사용자 경험에 일관성을 제공하도록 설계된 터치 지원 UI에 대한 Adobe의 시각적 스타일 구현입니다. Coral UI는 작성 환경에서 사용되는 시각적 스타일을 채택하는 데 필요한 모든 기능을 제공합니다.
 
 >[!CAUTION]
 >
@@ -301,14 +297,13 @@ Coral UI(CUI)는 터치 지원 UI에 대한 Adobe의 시각적 스타일 구현�
 >* Adobe에 명확하게 연결되지 않은 응용 프로그램/구성 요소/웹 페이지.
 >
 
-
 Coral UI는 웹 애플리케이션 개발을 위한 빌딩 블록 모음입니다.
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
 처음부터 모듈식으로 설계되었으며, 각 모듈은 기본 역할을 기반으로 하여 별개의 레이어를 형성합니다. 비록 층들이 서로 지지하도록 설계되었지만, 필요하다면 독립적으로 사용될 수도 있다. 이를 통해 모든 HTML 가능 환경에서 Coral의 사용자 경험을 구현할 수 있습니다.
 
-Coral UI를 사용하면 특정 개발 모델 및/또는 플랫폼을 사용할 필요가 없습니다. Coral의 기본 목표는 이 마크업을 내보내는 데 사용되는 실제 방법에 관계없이 통일되고 깔끔한 HTML5 마크업을 제공하는 것입니다. 이는 클라이언트 또는 서버측 렌더링, 템플릿, JSP, PHP 또는 Adobe Flash RIA 애플리케이션에 사용될 수 있습니다.
+Coral UI를 사용하면 특정 개발 모델 및/또는 플랫폼을 사용해야 하는 것은 아닙니다. Coral의 기본 목표는 이 마크업을 내보내는 데 사용되는 실제 방법에 관계없이 통일되고 깔끔한 HTML5 마크업을 제공하는 것입니다. 이는 클라이언트 또는 서버측 렌더링, 템플릿, JSP, PHP 또는 Adobe Flash RIA 애플리케이션에 사용될 수 있습니다.
 
 ### HTML 요소 - 마크업 레이어 {#html-elements-the-markup-layer}
 
@@ -325,7 +320,7 @@ CSS를 사용하여 실제 모양과 느낌을 제공합니다. 모양과 느낌
 
 구현:
 
-* HTML에서 영감을 얻은 스타일 태그 [부트스트랩](https://twitter.github.com/bootstrap/)
+* HTML에서 영감을 얻은 스타일 태그 [Bootstrap](https://twitter.github.com/bootstrap/)
 * 클래스는 LESS 파일에 정의됩니다
 * 아이콘은 글꼴 스프라이트로 정의됩니다
 
@@ -371,7 +366,7 @@ CSS를 사용하여 실제 모양과 느낌을 제공합니다. 모양과 느낌
 
 플러그인 동작은 다음 중 하나를 수행하여 매개 변수를 사용하여 사용자 정의할 수 있습니다.
 
-* Javascript 호출을 통해 매개 변수 전달
+* JavaScript 호출을 사용하여 매개 변수 전달
 * 전용 사용 `data-*` HTML 마크업에 연결된 속성
 
 개발자는 모든 플러그인에 대해 최상의 접근 방식을 선택할 수 있지만 경험상 규칙은 다음과 같습니다.
@@ -424,7 +419,7 @@ CSS를 사용하여 실제 모양과 느낌을 제공합니다. 모양과 느낌
 jQuery 플러그인에 대한 호출:
 
 ```
-$(‘.cards’).cardlayout ();
+$('.cards').cardlayout ();
 ```
 
 이는 다음과 같이 표시됩니다.
@@ -435,19 +430,19 @@ $(‘.cards’).cardlayout ();
 
 ### HTML 요소 위젯 {#html-elements-widgets}
 
-위젯은 하나 이상의 기본 요소를 Javascript 플러그인과 결합하여 &quot;더 높은 수준의&quot; UI 요소를 형성합니다. 이렇게 하면 단일 요소가 전달할 수 있는 것보다 더 복잡한 비헤이비어와 더 복잡한 모양과 느낌을 구현할 수 있습니다. 태그 선택기 또는 레일 위젯이 좋은 예입니다.
+위젯은 하나 이상의 기본 요소를 JavaScript 플러그인과 결합하여 &quot;더 높은 수준의&quot; UI 요소를 형성합니다. 이렇게 하면 단일 요소가 전달할 수 있는 것보다 더 복잡한 비헤이비어와 더 복잡한 모양과 느낌을 구현할 수 있습니다. 태그 선택기 또는 레일 위젯이 좋은 예입니다.
 
-위젯은 사용자 정의 이벤트를 트리거하고 수신하여 페이지의 다른 위젯과 협력할 수 있습니다. 일부 위젯은 실제로 Coral HTML 요소를 사용하는 네이티브 jQuery 위젯입니다.
+위젯은 사용자 정의 이벤트를 트리거하고 수신하여 페이지의 다른 위젯과 협력할 수 있습니다. 일부 위젯은 Coral HTML 요소를 사용하는 기본 jQuery 위젯입니다.
 
 용도:
 
-* 복잡한 동작을 표시하는 높은 수준의 UI 요소 구현
+* 복잡한 동작을 나타내는 높은 수준의 UI 요소 구현
 * 이벤트 트리거 및 처리
 
 구현:
 
 * jQuery 플러그인 + HTML 마크업
-* 클라이언트/서버측 템플릿 활용 가능
+* 클라이언트/서버측 템플릿 사용 가능
 
 마크업의 예는 다음과 같습니다.
 
@@ -484,7 +479,7 @@ $(".tagManager").tagsManager({
 
 ### 유틸리티 라이브러리 {#utility-library}
 
-이 라이브러리는 다음과 같은 Javascript 도우미 플러그인 및/또는 함수의 컬렉션입니다.
+이 라이브러리는 다음과 같은 JavaScript 도우미 플러그인 및/또는 함수의 컬렉션입니다.
 
 * UI 독립적
 * 완벽한 기능을 갖춘 웹 애플리케이션을 구축하는 데 있어 매우 중요합니다.
