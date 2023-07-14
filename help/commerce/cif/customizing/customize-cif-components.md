@@ -1,6 +1,6 @@
 ---
 title: CIF 코어 구성 요소 사용자 지정
-description: AEM CIF 핵심 구성 요소를 사용자 지정하는 방법을 알아봅니다. 이 자습서에서는 비즈니스 특정 요구 사항을 충족하기 위해 CIF 핵심 구성 요소를 안전하게 확장하는 방법을 다룹니다. GraphQL 쿼리를 확장하여 사용자 지정 특성을 반환하고 CIF 핵심 구성 요소에 새 특성을 표시하는 방법을 알아봅니다.
+description: Adobe Experience Manager CIF 핵심 구성 요소를 사용자 지정하는 방법을 알아봅니다. 이 튜토리얼에서는 비즈니스별 요구 사항을 충족하도록 CIF 핵심 구성 요소를 안전하게 확장하는 방법을 다룹니다. GraphQL 쿼리를 확장하여 사용자 지정 특성을 반환하고 CIF 핵심 구성 요소에 새 특성을 표시하는 방법을 알아봅니다.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '2592'
-ht-degree: 2%
+source-wordcount: '2579'
+ht-degree: 3%
 
 ---
 
-# AEM CIF 핵심 구성 요소 사용자 지정 {#customize-cif-components}
+# Adobe Experience Manager CIF 핵심 구성 요소 사용자 지정 {#customize-cif-components}
 
-다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) Adobe Commerce에서 사용자 지정 특성을 표시할 구성 요소입니다. AEM과 Adobe Commerce 간의 GraphQL 통합 및 CIF 핵심 구성 요소에서 제공하는 확장 후크에 대해서도 자세히 알아봅니다.
+다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) Adobe Commerce에서 사용자 지정 특성을 표시할 구성 요소입니다. Adobe Experience Manager(AEM)와 Adobe Commerce 간의 GraphQL 통합 및 CIF 핵심 구성 요소에서 제공하는 확장 후크에 대해서도 자세히 알아봅니다.
 
 >[!TIP]
 >
@@ -34,9 +34,9 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 여기에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 중인 인스턴스가 포함됩니다. 에 대한 요구 사항 및 단계 검토 [AEM을 사용하여 로컬 개발 설정](../develop.md). 자습서를 완전히 따르려면 을 추가할 수 있는 권한이 필요합니다 [제품에 대한 속성](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Adobe Commerce.
+이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 여기에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 중인 인스턴스가 포함됩니다. 에 대한 요구 사항 및 단계 검토 [AEM을 사용하여 로컬 개발 설정](../develop.md). 자습서를 완전히 따르려면 을 추가할 권한이 필요합니다 [제품에 대한 속성](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Adobe Commerce.
 
-다음과 같은 GraphQL IDE도 필요합니다. [GraphiQL](https://github.com/graphql/graphiql) 또는 코드 샘플 및 튜토리얼을 실행하는 브라우저 확장입니다. 브라우저 확장을 설치하는 경우 요청 헤더를 설정할 수 있는지 확인하십시오. Google Chrome에서 [알테어 GraphQL 클라이언트](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) 는 작업을 수행할 수 있는 하나의 확장입니다.
+다음과 같은 GraphQL IDE도 필요합니다. [GraphiQL](https://github.com/graphql/graphiql) 또는 코드 샘플 및 튜토리얼을 실행하는 브라우저 확장입니다. 브라우저 확장을 설치하는 경우 요청 헤더를 설정할 수 있는지 확인합니다. Google Chrome에서 [알테어 GraphQL 클라이언트](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) 는 작업을 수행할 수 있는 하나의 확장입니다.
 
 ## Venia 프로젝트 복제 {#clone-venia-project}
 
@@ -97,7 +97,7 @@ AEM에 표시되는 제품 및 제품 데이터는 Adobe Commerce에 저장됩�
 >
 >이미 사용자 지정 항목 있음 **예/아니요** 속성 을 제품 속성 세트의 일부로 사용하시겠습니까? 자유롭게 사용하고 이 섹션을 건너뜁니다.
 
-1. Adobe Commerce 인스턴스에 로그인합니다.
+1. Adobe Commerce 인스턴스에 로그인.
 1. 다음으로 이동 **카탈로그** > **제품**.
 1. 검색 필터를 업데이트하여 **구성 가능한 제품** 이전 연습에서 티저 구성 요소에 추가될 때 사용됩니다. 제품을 편집 모드로 엽니다.
 
@@ -178,7 +178,7 @@ AEM 코드로 이동하기 전에 다음을 살펴보는 것이 좋습니다. [A
 
    ![샘플 GraphQL 응답](../assets/customize-cif-components/sample-graphql-query.png)
 
-   값: **예** 은(는) 의 정수입니다. **1**. 이 기능은 GraphQL 쿼리를 Java로 작성할 때 유용합니다.
+   값: **예** 은(는) 의 정수입니다. **1**. 이 기능은 Java™으로 GraphQL 쿼리를 작성할 때 유용합니다.
 
    >[!TIP]
    >
@@ -186,9 +186,9 @@ AEM 코드로 이동하기 전에 다음을 살펴보는 것이 좋습니다. [A
 
 ## 제품 티저의 슬링 모델 업데이트 {#updating-sling-model-product-teaser}
 
-다음으로, 슬링 모델을 구현하여 제품 티저의 비즈니스 논리를 확장하겠습니다. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)는 구성 요소에 필요한 비즈니스 논리를 구현하는 주석 기반의 &quot;POJO&quot;(일반 이전 Java 개체)입니다. 슬링 모드 는 구성 요소의 일부로 HTL 스크립트와 함께 사용됩니다. 다음 작업을 수행합니다. [Sling 모델의 전달 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) 기존 제품 티저 모델의 일부를 확장할 수 있습니다.
+그런 다음 Sling 모델을 구현하여 제품 티저의 비즈니스 논리를 확장합니다. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)는 구성 요소에 필요한 비즈니스 논리를 구현하는 주석 기반의 &quot;POJO&quot;(일반 이전 Java™ 개체)입니다. 슬링 모델은 HTL 스크립트와 함께 구성 요소의 일부로 사용됩니다. 다음을 따르십시오. [Sling 모델의 전달 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) 기존 제품 티저 모델의 일부를 확장할 수 있습니다.
 
-Sling 모델은 Java로 구현되며 는에서 찾을 수 있습니다. **코어** 생성된 프로젝트의 모듈입니다.
+Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **코어** 생성된 프로젝트의 모듈입니다.
 
 사용 [선택한 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#set-up-the-development-ide) Venia 프로젝트를 가져옵니다. 사용된 스크린샷은 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
 
@@ -196,7 +196,7 @@ Sling 모델은 Java로 구현되며 는에서 찾을 수 있습니다. **코어
 
    ![핵심 위치 IDE](../assets/customize-cif-components/core-location-ide.png)
 
-   `MyProductTeaser.java` 는 CIF를 확장하는 Java 인터페이스입니다 [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) 인터페이스.
+   `MyProductTeaser.java` 는 CIF를 확장하는 Java™ 인터페이스입니다 [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) 인터페이스.
 
    이름이 인 새 메서드가 이미 추가되었습니다. `isShowBadge()` 제품이 &quot;신규&quot;로 간주되는 경우 배지를 표시합니다.
 
@@ -213,7 +213,7 @@ Sling 모델은 Java로 구현되며 는에서 찾을 수 있습니다. **코어
    }
    ```
 
-   이것은 논리를 캡슐화하여 제품에 가 있는지 여부를 나타내기 위해 도입할 새로운 방법입니다. `eco_friendly` 속성이 로 설정됨 **예** 또는 **아니요**.
+   제품에 가 있는지 여부를 나타내기 위해 논리를 캡슐화하는 새로운 방법입니다. `eco_friendly` 속성이 로 설정됨 **예** 또는 **아니요**.
 
 1. 다음으로, 다음을 검사합니다. `MyProductTeaserImpl.java` 위치: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`.
 
@@ -225,7 +225,7 @@ Sling 모델은 Java로 구현되며 는에서 찾을 수 있습니다. **코어
    private ProductTeaser productTeaser;
    ```
 
-   재정의하거나 변경하지 않으려는 모든 메서드의 경우 `ProductTeaser` 를 반환합니다. 예:
+   재정의되거나 변경되지 않는 모든 메서드의 경우 `ProductTeaser` 를 반환합니다. 예:
 
    ```java
    @Override
@@ -234,7 +234,7 @@ Sling 모델은 Java로 구현되며 는에서 찾을 수 있습니다. **코어
    }
    ```
 
-   이렇게 하면 구현이 작성하는 데 필요한 Java 코드의 양을 최소화합니다.
+   이렇게 하면 구현에서 작성해야 하는 Java™ 코드의 양이 최소화됩니다.
 
 1. AEM CIF 코어 구성 요소에서 제공하는 추가 확장 지점 중 하나는 입니다. `AbstractProductRetriever` 특정 제품 속성에 대한 액세스를 제공합니다. Inspect `initModel()` 방법:
 
@@ -259,7 +259,7 @@ Sling 모델은 Java로 구현되며 는에서 찾을 수 있습니다. **코어
    ...
    ```
 
-   다음 `@PostConstruct` 주석은 Sling 모델이 초기화되는 즉시 이 메서드가 호출되도록 합니다.
+   다음 `@PostConstruct` 주석은 Sling 모델이 초기화될 때 이 메서드가 호출되도록 합니다.
 
    제품 GraphQL 쿼리가 을 사용하여 이미 확장되었습니다. `extendProductQueryWith` 추가 항목을 검색하는 메서드 `created_at` 특성. 이 속성은 나중에 의 일부로 사용됩니다 `isShowBadge()` 메서드를 사용합니다.
 
@@ -283,15 +283,15 @@ Sling 모델은 Java로 구현되며 는에서 찾을 수 있습니다. **코어
    }
    ```
 
-   에 추가 `extendProductQueryWith` 메서드는 모델의 나머지 부분에서 추가 제품 특성을 사용할 수 있도록 하는 강력한 방법입니다. 또한 실행되는 쿼리 수를 최소화합니다.
+   에 추가 `extendProductQueryWith` 메서드는 모델의 나머지 부분에서 추가 제품 속성을 사용할 수 있도록 하는 강력한 방법입니다. 또한 실행되는 쿼리 수를 최소화합니다.
 
    위의 코드에서`addCustomSimpleField` 를 검색하는 데 사용됩니다. `eco_friendly` 특성. 이는 Adobe Commerce 스키마의 일부인 사용자 지정 속성에 대해 쿼리하는 방법을 보여 줍니다.
 
    >[!NOTE]
    >
-   >다음 `createdAt()` 메서드는 실제로 [제품 인터페이스](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). 일반적으로 발견되는 대부분의 스키마 속성이 구현되었으므로 `addCustomSimpleField` 를 참조하십시오.
+   >다음 `createdAt()` 메서드는 의 일부로 구현되었습니다. [제품 인터페이스](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). 일반적으로 발견되는 대부분의 스키마 속성이 구현되었으므로 `addCustomSimpleField` 를 참조하십시오.
 
-1. Java 코드를 디버깅하는 데 도움이 되는 로거를 추가합니다.
+1. Java™ 코드를 디버깅하는 데 도움이 되는 로거를 추가합니다.
 
    ```java
    import org.slf4j.Logger;
@@ -324,15 +324,15 @@ Sling 모델은 Java로 구현되며 는에서 찾을 수 있습니다. **코어
    }
    ```
 
-   위의 메서드에서 `productRetriever` 제품 및 을 가져오는 데 사용됩니다. `getAsInteger()` 메서드는 의 값을 가져오는 데 사용됩니다 `eco_friendly` 특성. 이전에 실행한 GraphQL 쿼리를 기반으로 하면 `eco_friendly` 속성이 &quot;로 설정되어 있습니다.**예**&quot;은(는) 실제로 의 정수입니다. **1**.
+   위의 메서드에서 `productRetriever` 제품 및 을 가져오는 데 사용됩니다. `getAsInteger()` 메서드는 의 값을 가져오는 데 사용됩니다 `eco_friendly` 특성. 이전에 실행한 GraphQL 쿼리에 따르면, `eco_friendly` 속성이 &quot;로 설정되어 있습니다.**예**&quot;은(는) 실제로 의 정수입니다. **1**.
 
    슬링 모델이 업데이트되었으므로 의 표시기를 실제로 표시하려면 구성 요소 마크업을 업데이트해야 합니다. **환경 친화적** Sling 모델을 기반으로 합니다.
 
 ## 제품 티저의 마크업 맞춤화 {#customize-markup-product-teaser}
 
-AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크업을 수정하는 것입니다. 이 작업은 다음을 재정의하여 수행됩니다. [HTL 스크립트](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 구성 요소가 마크업을 렌더링하는 데 사용하는 경우입니다. HTML 템플릿 언어(HTL)는 AEM 구성 요소가 작성된 콘텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어이므로 구성 요소를 다시 사용할 수 있습니다. 예를 들어 제품 티저를 반복하여 다시 사용하여 다른 제품을 표시할 수 있습니다.
+AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크업을 수정하는 것입니다. 이 작업은 다음을 재정의하여 수행됩니다. [HTL 스크립트](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 구성 요소가 마크업을 렌더링하는 데 사용하는 경우입니다. HTML 템플릿 언어(HTL)는 AEM 구성 요소가 작성된 콘텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어이므로 구성 요소를 재사용할 수 있습니다. 예를 들어 제품 티저를 반복하여 재사용하여 다른 제품을 표시할 수 있습니다.
 
-이 예제에서는 티저 상단에 배너를 렌더링하여 사용자 지정 속성에 따라 제품이 &quot;친환경&quot;임을 표시하려고 합니다. 의 디자인 패턴 [마크업 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) 구성 요소 는 실제로 AEM CIF 핵심 구성 요소뿐만 아니라 모든 AEM 구성 요소에 대해 표준입니다.
+이 경우 티저의 맨 위에 배너를 렌더링하여 사용자 지정 속성에 따라 제품이 &quot;친환경적&quot;임을 표시하려고 합니다. 의 디자인 패턴 [마크업 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) 구성 요소 는 실제로 AEM CIF 핵심 구성 요소뿐만 아니라 모든 AEM 구성 요소에 대해 표준입니다.
 
 >[!NOTE]
 >
@@ -352,7 +352,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
        componentGroup="Venia - Commerce"/>
    ```
 
-   위는 프로젝트의 제품 티저 구성 요소에 대한 구성 요소 정의입니다. 속성에 주목합니다 `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. 다음은 를 만드는 예제입니다. [프록시 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). AEM CIF 핵심 구성 요소에서 모든 제품 티저 HTL 스크립트를 복사하여 붙여넣는 대신 `sling:resourceSuperType` 모든 기능을 상속합니다.
+   이 프로젝트의 제품 티저 구성 요소에 대한 구성 요소 정의는 위에 있습니다. 속성에 주목합니다 `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. 다음은 를 만드는 예제입니다. [프록시 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). AEM CIF 핵심 구성 요소에서 모든 제품 티저 HTL 스크립트를 복사하여 붙여넣는 대신 `sling:resourceSuperType` 모든 기능을 상속합니다.
 
 1. 파일 열기 `productteaser.html`. 다음은 의 사본입니다. `productteaser.html` 파일 위치: [CIF 제품 티저](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
@@ -417,7 +417,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    제품에 다음이 있는 경우 `eco_friendly` 속성이 로 설정됨 **예**, 페이지에 &quot;환경 친화적&quot;이라는 텍스트가 표시됩니다. 동작 변경을 확인하려면 다른 제품으로 전환해 보십시오.
 
-1. 다음 AEM 열기 `error.log` 추가한 로그 문을 확인합니다. 다음 `error.log` 다음 위치에 있음 `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
+1. 그런 다음 AEM을 엽니다. `error.log` 추가된 로그 문을 확인합니다. 다음 `error.log` 다음 위치에 있음 `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
 
    AEM 로그를 검색하여 Sling 모델에 추가된 로그 문을 확인합니다.
 
@@ -436,7 +436,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 이 시점에서 을(를) 표시할 시기에 대한 논리입니다 **환경 친화적** 배지가 작동하지만 일반 텍스트에서 일부 스타일을 사용할 수 있습니다. 그런 다음 아이콘과 스타일을 `ui.frontend` 구현을 완료하는 모듈입니다.
 
-1. 다운로드 [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) 파일. 이 이름은 로 사용됩니다. **환경 친화적** 배지.
+1. 다운로드 [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) 파일. 이 변수는 다음으로 사용됩니다. **환경 친화적** 배지.
 1. IDE로 돌아가서 `ui.frontend` 폴더를 삭제합니다.
 1. 추가 `eco_friendly.svg` 에 파일 `ui.frontend/src/main/resources/images` 폴더:
 
@@ -486,11 +486,11 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 ## 축하합니다 {#congratulations}
 
-첫 번째 AEM CIF 구성 요소를 맞춤화했습니다! 다운로드 [여기에서 솔루션 파일 완료됨](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+첫 번째 AEM CIF 구성 요소 맞춤화를 완료했습니다! 다운로드 [여기에서 솔루션 파일 완료됨](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## 보너스 챌린지 {#bonus-challenge}
 
-의 기능 검토 **신규** 제품 티저에 이미 구현된 배지입니다. 작성자가 제어할 수 있는 확인란을 더 추가해 보십시오. **환경 친화적** 배지가 표시됩니다. 다음 위치에서 구성 요소 대화 상자를 업데이트해야 합니다. `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+의 기능 검토 **신규** 제품 티저에 이미 구현된 배지입니다. 작성자가 다음을 실행할 시기를 제어할 수 있는 추가 확인란을 추가해 보십시오. **환경 친화적** 배지가 표시됩니다. 다음 위치에서 구성 요소 대화 상자를 업데이트해야 합니다. `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![새로운 배지 구현 과제](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 
@@ -498,7 +498,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 - [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)
-- [AEM CIF 핵심 구성 요소 맞춤화](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
+- [AEM CIF 핵심 구성 요소 맞춤화](https://github.com/adobe/aem-core-cif-components)
 - [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
-- [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
+- [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 - [CIF 제품 및 범주 선택기 사용](use-cif-pickers.md)

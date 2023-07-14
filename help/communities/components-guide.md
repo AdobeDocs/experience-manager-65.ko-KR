@@ -1,33 +1,29 @@
 ---
 title: 커뮤니티 구성 요소 안내서
-seo-title: Community Components Guide
 description: SCF(소셜 구성 요소 프레임워크) 시작을 위한 대화형 개발 도구입니다
-seo-description: An interactive development tool to get started with the social component framework (SCF)
-uuid: 120e56d1-b93c-4f92-bab4-6bb5e40e0ddf
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1181'
 ht-degree: 2%
 
 ---
 
 # 커뮤니티 구성 요소 안내서  {#community-components-guide}
 
-커뮤니티 구성 요소 안내서는 를 위한 대화형 개발 도구입니다 [소셜 구성 요소 프레임워크(SCF)](scf.md). 사용 가능한 AEM Communities 구성 요소 목록 또는 여러 구성 요소로 구성된 보다 복잡한 기능을 제공합니다.
+커뮤니티 구성 요소 안내서는 를 위한 대화형 개발 도구입니다 [소셜 구성 요소 프레임워크(SCF)](scf.md). 사용 가능한 AEM(Adobe Experience Manager) 커뮤니티 구성 요소 목록 또는 여러 구성 요소로 구성된 보다 복잡한 기능을 제공합니다.
 
 안내서에서는 각 구성 요소에 대한 기본 정보와 함께 SCF 구성 요소/기능의 작동 방식과 구성 또는 사용자 지정 방법에 대해 실험할 수 있습니다.
 
 각 구성 요소와 관련된 개발 필수 요소에 대한 자세한 내용은 다음을 참조하십시오. [기능 및 구성 요소 기본 사항](essentials.md).
 
-## 시작하기 {#getting-started}
+## 시작 {#getting-started}
 
-이 안내서는 작성자(localhost:4502) 및 게시(localhost:4503) 인스턴스의 개발 설치에 사용하도록 설계되었습니다.
+이 안내서는 작성자 인스턴스(localhost:4502) 및 게시 인스턴스(localhost:4503)의 개발 설치에 사용하기 위한 것입니다.
 
 커뮤니티 구성 요소 사이트는에서 액세스할 수 있습니다.
 
@@ -44,11 +40,11 @@ ht-degree: 2%
 
 * 표준 UI:
 
-   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
+  [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
 * 클래식 UI:
 
-   [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
+  [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
 >[!NOTE]
 >
@@ -106,15 +102,15 @@ ht-degree: 2%
 
 * **sling:include로 하위 구성 요소 포함**
 
-   선택하지 않으면 구성 요소 안내서에서 저장소의 기존 리소스(부분 노드의 하위 노드인 jcr 노드)를 사용합니다.
+  이 옵션을 선택하지 않으면 구성 요소 안내서는 저장소의 기존 리소스(부분 노드의 하위 노드인 jcr 노드)를 사용합니다.
 
    * 표시되는 텍스트: &quot;이 구성 요소는 par 노드를 통해 포함됩니다.&quot;
 
-   선택하면 구성 요소 안내서에서 sling을 사용하여 하위 노드의 resourceType(존재하지 않는 리소스)의 구성 요소를 동적으로 포함합니다.
+  선택하면 구성 요소 안내서에서 sling을 사용하여 하위 노드의 resourceType(존재하지 않는 리소스)의 구성 요소를 동적으로 포함합니다.
 
    * 표시되는 텍스트: &quot;이 구성 요소는 동적으로 포함됩니다.&quot;
 
-   기본값은 선택 취소되어 있습니다.
+  기본값은 선택 취소되어 있습니다.
 
 ### 상호 작용 게시 {#publish-interactions}
 
@@ -126,13 +122,13 @@ ht-degree: 2%
 
 ## 클라이언트측 라이브러리 {#client-side-libraries}
 
-각 구성 요소에 대해 나열된 클라이언트측 라이브러리(clientlib)는 다음과 같습니다 *필수* 구성 요소가 페이지에 배치되면 참조할 수 있습니다. clientlib은 브라우저에서 구성 요소를 렌더링하는 데 사용되는 Javascript 및 CSS의 다운로드를 관리하고 최적화하는 수단을 제공합니다.
+각 구성 요소에 대해 나열된 클라이언트측 라이브러리(clientlib)는 다음과 같습니다 *필수* 구성 요소가 페이지에 배치되면 참조할 수 있습니다. clientlib은 브라우저에서 구성 요소를 렌더링하는 데 사용되는 JavaScript 및 CSS의 다운로드를 관리하고 최적화하는 수단을 제공합니다.
 
 자세한 내용은 다음을 참조하십시오. [커뮤니티 구성 요소에 대한 Clientlibs](clientlibs.md).
 
 ## 가장 {#impersonation}
 
-관리자 또는 개발자로 로그인하는 경우가 많은 작성자 인스턴스에서는 다른 사용자로 로그인한 구성 요소를 경험하기 위해 의 왼쪽에 있는 텍스트 상자를 사용합니다. **[!UICONTROL 가장]** 버튼을 클릭하여 사용자 이름을 입력하거나 풀다운 목록에서 를 선택한 다음 버튼을 클릭합니다. 로그아웃하고 가장을 종료하려면 되돌리기 를 클릭합니다.
+관리자 또는 개발자로 로그인한 경우가 많은 작성자 인스턴스에서 다른 사용자로 로그인한 구성 요소를 경험하려면 왼쪽에 있는 텍스트 상자를 사용합니다. **[!UICONTROL 가장]** 버튼을 클릭하여 사용자 이름을 입력하거나 풀다운 목록에서 를 선택한 다음 버튼을 클릭합니다. 로그아웃하고 가장을 종료하려면 되돌리기 를 클릭합니다.
 
 게시 인스턴스는 가장할 필요가 없습니다. 로그인/로그아웃 링크를 사용하여 다음과 같은 다양한 사용자를 가장하면 됩니다. [데모 사용자](tutorials.md#demo-users).
 
@@ -169,7 +165,7 @@ ht-degree: 2%
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
 
-1. 이제 템플릿, CSS 및 데이터에 대한 3가지 탭이 있습니다.
+1. 이제 템플릿, CSS 및 데이터에 대한 세 가지 탭이 있습니다.
 
 ![community-component5](assets/community-component5.png)
 
@@ -197,4 +193,4 @@ CSS 편집기 를 사용하여 CSS를 수정하고 페이지 상단에 있는 �
 
 데이터 탭을 선택하여 .social.json 엔드포인트 데이터를 표시합니다. 이 데이터는 편집할 수 있으며 샘플 구성 요소 인스턴스에 적용됩니다.
 
-구문 오류는 거터에 표시될 수 있을 뿐만 아니라 편집기에 강조 표시될 수 있습니다.
+구문 오류는 거터에 표시되고 편집기에 강조 표시될 수 있습니다.

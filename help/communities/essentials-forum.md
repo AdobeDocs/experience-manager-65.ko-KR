@@ -1,19 +1,15 @@
 ---
 title: 포럼 기본 사항
-seo-title: Forum Essentials
 description: 포럼 개요
-seo-description: Forum overview
-uuid: 68849582-8742-40be-9e7e-0b574ae38815
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +26,7 @@ ht-degree: 1%
    <td>소셜/포럼/구성 요소/hbs/포럼<br /> 소셜/포럼/구성 요소/hbs/주제<br /> social/forum/components/hbs/post</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함하기 쉬워</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함되</strong></a></td>
    <td>아니요</td>
   </tr>
   <tr>
@@ -56,22 +52,22 @@ ht-degree: 1%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [포럼 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
+* [포럼 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
-* [포럼 엔드포인트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
+* [포럼 엔드포인트](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 
 ### 포럼 기능 {#forum-function}
 
-다음을 포함하는 커뮤니티 사이트 구조 [포럼 기능](functions.md#forum-function), 구성된 포함 `forum` 중재, 태깅 및 번역에 영향을 주는 설정뿐만 아니라 구성 요소입니다.
+다음을 포함하는 커뮤니티 사이트 구조 [포럼 기능](functions.md#forum-function), 구성된 포함 `forum` 중재, 태그 지정 및 번역에 영향을 주는 구성 요소 및 설정입니다.
 
 ### 포럼 게시물 액세스(UGC) {#accessing-forum-posts-ugc}
 
 UGC는 중재에 대한 표준 방법 중 하나를 사용하여 중재되어야 합니다.
 다음을 참조하십시오 [사용자 생성 컨텐츠 중재](moderate-ugc.md).
 
-AEM 6.1 커뮤니티에서 [공동 저장소](working-with-srp.md) ugc의 경우 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 관계없이 UGC에 프로그래밍 방식으로 액세스하는 기능이 포함됩니다.
+Adobe Experience Manager 6.1 커뮤니티에서 사용 [공동 저장소](working-with-srp.md) ugc의 경우 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 관계없이 UGC에 프로그래밍 방식으로 액세스하는 기능이 포함됩니다.
 
 **저장소에서 UGC의 위치 및 형식은 경고 없이 변경될 수 있습니다**.
 

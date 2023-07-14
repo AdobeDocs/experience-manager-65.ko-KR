@@ -1,18 +1,14 @@
 ---
 title: 커뮤니티 그룹 기본 사항
-seo-title: Community Group Essentials
 description: 동적으로 커뮤니티 사이트 만들기
-seo-description: Creating community sites dynamically
-uuid: 168e7aeb-6e9a-468d-8ac4-274007cea252
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -79,17 +75,17 @@ ht-degree: 1%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [커뮤니티 그룹 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [커뮤니티 그룹 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [커뮤니티 그룹 엔드포인트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [커뮤니티 그룹 엔드포인트](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 
 ### 그룹 기능 {#groups-function}
 
-다음을 포함하는 커뮤니티 사이트 구조 [그룹 기능](functions.md#groups-function) 은(는) 새 항목 만들기를 지원합니다. `community groups` 게시 및 작성 환경. 생성된 커뮤니티 그룹에는 `community groups member list` 그룹 구성원을 나열할 구성 요소입니다.
+다음을 포함하는 커뮤니티 사이트 구조 [그룹 기능](functions.md#groups-function) 는 새 항목 만들기를 지원합니다. `community groups` 게시 및 작성 환경. 생성된 커뮤니티 그룹에는 다음이 포함됩니다. `community groups member list` 그룹 구성원을 나열하는 구성 요소입니다.
 
-하나 이상 [커뮤니티 그룹 템플릿](tools-groups.md)커뮤니티 그룹 페이지(들)의 디자인을 제공하는 는 함수가 추가되면에 그룹 함수에 대해 구성될 수 있습니다. [커뮤니티 사이트 템플릿](sites.md) 또는 커뮤니티 그룹 템플릿 내에 중첩됩니다.
+하나 이상 [커뮤니티 그룹 템플릿](tools-groups.md)커뮤니티 그룹 페이지의 디자인을 제공하는 는에 함수를 추가할 때 그룹 함수에 대해 구성할 수 있습니다. [커뮤니티 사이트 템플릿](sites.md) 또는 커뮤니티 그룹 템플릿 내에 중첩됩니다.
 
 여러 커뮤니티 그룹 템플릿을 포함하면 의 섹션에 표시된 대로 커뮤니티 사이트에 대해 새 커뮤니티 그룹이 생성될 때 인증된 사용자에게 디자인 선택 사항이 표시됩니다 [커뮤니티 그룹](creating-groups.md) 작성자용.
 
