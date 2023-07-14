@@ -1,5 +1,5 @@
 ---
-title: Jave 콘텐츠 저장소의 노드 이름 지정 규칙
+title: Java Content Repository에 있는 노드의 이름 지정 규칙
 description: 저장소의 노드는 Java Content Repository의 이름 지정 규칙에 따릅니다
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
@@ -8,14 +8,14 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8cfc42dc8fdf4dc0bfd3f002385f100c81b15993
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 7%
 
 ---
 
-# 이름 지정 규칙{#naming-conventions}
+# 이름 지정 규칙 {#naming-conventions}
 
 저장소의 노드는 의 이름 지정 규칙에 따라 다릅니다. [Java 콘텐츠 저장소](/help/sites-developing/the-basics.md#java-content-repository). 그러나 AEM은 페이지 노드 이름에 대한 추가 규칙을 지정합니다.
 

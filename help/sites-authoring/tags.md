@@ -1,5 +1,5 @@
 ---
-title: 태그를 사용하여 웹 사이트의 컨텐츠 분류
+title: 태그 사용
 description: 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
@@ -9,14 +9,15 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 8dafa901bc628ee5e4823e9f8811bf4d09b7e072
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 92%
+source-wordcount: '569'
+ht-degree: 93%
 
 ---
 
-# 태그 사용{#using-tags}
+
+# 태그 사용 {#using-tags}
 
 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다. 태그는 검색을 통해 해당 콘텐츠 및 관련 콘텐츠를 찾을 수 있도록 하기 위해 페이지, 에셋 또는 콘텐츠에 첨부할 수 있는 키워드 또는 레이블이라고 할 수 있습니다.
 
@@ -54,7 +55,7 @@ ht-degree: 92%
 
 * 개별 태그를 활성화합니다.
 
-   페이지와 마찬가지로 새로 만든 태그를 활성화해야 게시 환경에서 사용할 수 있습니다.
+  페이지와 마찬가지로 새로 만든 태그를 활성화해야 게시 환경에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
