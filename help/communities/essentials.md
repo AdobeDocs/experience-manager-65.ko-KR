@@ -1,16 +1,12 @@
 ---
 title: 구성 요소, 기능 및 기능 핵심 사항
-seo-title: Component, Function and Feature Essentials
 description: 커뮤니티 사이트, 템플릿 및 그룹의 작동 방식
-seo-description: How community sites, templates, and groups function
-uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 17%
@@ -19,9 +15,9 @@ ht-degree: 17%
 
 # 구성 요소, 기능 및 기능 핵심 사항  {#component-function-and-feature-essentials}
 
-AEM Communities 기능을 사용하려면 사이트 방문자가 구성원이 되어 [커뮤니티 사이트](overview.md#communitiessites) 을 클릭하여 콘텐츠를 게시합니다. 따라서 [커뮤니티 사이트 템플릿](sites.md): 커뮤니티 사이트가 포함된 사이트 [생성됨](sites-console.md)는 로그인 기능뿐만 아니라 사용자 프로필, 메시지, 검색, 중재 및 번역을 포함하도록 설계되었습니다.
+Adobe Experience Manager(AEM) 커뮤니티 기능을 사용하려면 사이트 방문자가 구성원이 되어 [커뮤니티 사이트](overview.md#communitiessites) 을 클릭하여 콘텐츠를 게시합니다. 따라서 [커뮤니티 사이트 템플릿](sites.md): 커뮤니티 사이트가 포함된 사이트 [생성됨](sites-console.md)는 로그인 기능과 사용자 프로필, 메시지, 검색, 중재 및 번역을 포함하도록 설계되었습니다.
 
-커뮤니티 사이트는 다음과 같은 경우 커뮤니티 그룹을 만드는 구성원을 지원합니다. [커뮤니티 그룹 기능](functions.md#groups-function) 은(는) 선택한 커뮤니티 사이트 템플릿에 포함됩니다.
+커뮤니티 사이트는 다음과 같은 경우에 커뮤니티 그룹을 만드는 구성원을 지원합니다. [커뮤니티 그룹 기능](functions.md#groups-function) 은(는) 선택한 커뮤니티 사이트 템플릿에 포함됩니다.
 
 다음은 커뮤니티 구성 요소, 기능 및 기능에 대한 필수 정보에 대한 링크입니다.
 

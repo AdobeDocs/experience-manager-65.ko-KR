@@ -1,25 +1,23 @@
 ---
 title: Adobe Experience Manager 6.5 Communities 안내서
-seo-title: Adobe Experience Manager 6.5 Communities Guide
-description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다. 커뮤니티를 배포, 관리, 개발 및 작성하는 방법을 설명하는 안내서를 찾아보십시오.
-seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
+description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다. 커뮤니티를 배포, 관리, 개발 및 작성하는 방법을 설명하는 이 안내서를 찾아보십시오.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 87%
+source-wordcount: '352'
+ht-degree: 85%
 
 ---
 
-# Adobe Experience Manager 6.5 Communities 안내서
+# Adobe Experience Manager (AEM) 6.5 Communities 안내서
 
-포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다. 커뮤니티를 배포, 관리, 개발 및 작성하는 방법을 설명하는 안내서를 찾아보십시오.
+포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다. 커뮤니티를 배포, 관리, 개발 및 작성하는 방법을 설명하는 이 안내서를 찾아보십시오.
 
 ## 주요 AEM 문서
 
-* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
+* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
-* [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
+* [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.5 사용 안내서
@@ -42,11 +40,11 @@ ht-degree: 87%
 
 ## 주요 AEM 리소스
 
-* [AEM 자습서](https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM 자습서](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
-* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)
 * [GDPR 준비](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/#home)
+* [AEM 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)

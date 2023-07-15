@@ -9,9 +9,9 @@ topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2041'
 ht-degree: 8%
 
 ---
@@ -97,7 +97,7 @@ ht-degree: 8%
 
 테마는 적응형 양식과 같은 별도의 엔티티입니다. 여기에는 적응형 양식의 구성 요소 및 패널에 대한 스타일(CSS)이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 CSS 속성이 포함됩니다. 테마를 적용하면 지정된 스타일이 적응형 양식의 해당 구성 요소에 적용됩니다.
 
-이 자습서에서는 머리글 및 바닥글, 텍스트 및 숫자 구성 요소, 첨부 파일 구성 요소 및 단추에 스타일을 지정합니다. 테마 만들기부터 시작하겠습니다.
+이 자습서에서는 머리글 및 바닥글, 텍스트 및 숫자 구성 요소, 첨부 파일 구성 요소 및 단추에 스타일을 지정합니다. 테마 만들기로 시작하겠습니다.
 
 ### 테마 만들기 {#create-a-theme}
 
@@ -234,7 +234,7 @@ ht-degree: 8%
 
 1. 위의 빈 영역을 탭합니다. **[!UICONTROL 고객 ID]** 필드 및 탭 **[!UICONTROL 반응형 패널 컨테이너]**. 설정 **[!UICONTROL 배경]** > **[!UICONTROL 배경색]** F1F2F2로 이동합니다. 누르기 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-   ![](do-not-localize/responsive-panel-container.png)
+   ![반응형 패널 컨테이너](do-not-localize/responsive-panel-container.png)
 
 ### 단추 스타일 지정 {#style-the-buttons}
 

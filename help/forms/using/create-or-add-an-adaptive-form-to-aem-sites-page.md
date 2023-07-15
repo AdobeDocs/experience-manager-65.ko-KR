@@ -3,9 +3,9 @@ title: 적응형 양식을 만들거나 AEM Sites 페이지에 추가
 description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 원활하게 추가하는 방법을 알아봅니다. 동적 및 맞춤형 양식을 웹 사이트에 통합하는 단계별 기술과 모범 사례에 대해 알아보고 디지털 환경을 최적화하여 효과를 극대화합니다.
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '2883'
+source-wordcount: '2913'
 ht-degree: 23%
 
 ---
@@ -23,7 +23,7 @@ AEM 페이지 편집기 를 사용하여 여러 양식을 신속하게 만들고
 
 AEM Forms는 적응형 양식 컨테이너와 적응형 양식 – 임베드 구성 요소를 제공합니다. 적응형 양식 컨테이너를 사용하여 경험 조각 또는 AEM Sites 페이지에서 새 양식을 만들 수 있습니다. 적응형 Forms - 임베드 구성 요소를 사용하면 적응형 Forms 편집기를 사용하여 기존 적응형 양식을 추가하거나 새 양식을 만들 수 있습니다.
 
-![](/help/forms/using/assets/adaptive-form-in-sites-page.png)
+![사이트 페이지의 적응형 양식](/help/forms/using/assets/adaptive-form-in-sites-page.png)
 
 ## AEM 페이지 편집기 또는 경험 조각에서 적응형 양식 컨테이너 구성 요소 사용의 이점
 
@@ -177,7 +177,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 1. 편집 모드로 적응형 양식(적응형 Forms 컨테이너 구성 요소)이 포함된 AEM Sites 페이지를 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
 1. 메뉴 모음에서 ![경험 조각 변형으로 변환 아이콘](/help/forms/using/assets/Smock_FilingCabinet_18_N.svg) 경험 조각 변형 아이콘으로 변환합니다.
-   ![](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+   ![사이트 페이지의 양식을 경험 조각으로 변환](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    적응형 양식 컨테이너를 새 경험 조각으로 변환하거나 기존 경험 조각에 추가할 수 있는 대화 상자가 나타납니다
 1. 경험 조각 변형으로 변환 대화 상자에서 다음 옵션에 대한 값을 설정합니다.
@@ -195,7 +195,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 1. 적응형 양식이 포함된 AEM 페이지 편집기 또는 경험 조각을 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
 1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/using/assets/configure-icon.svg) 아이콘. 제출 액션을 구성할 수 있는 적응형 양식 컨테이너 대화 상자가 열립니다.
-   ![](/help/forms/using/assets/adaptive-forms-container.png)
+   ![적응형 양식 컨테이너](/help/forms/using/assets/adaptive-forms-container.png)
 1. 요구 사항에 따라 제출 액션을 선택하고 구성합니다. 제출 액션에 대한 자세한 내용은 [적응형 양식 제출 액션](configuring-submit-actions.md)
 
 
@@ -213,7 +213,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 1. 적응형 양식이 포함된 AEM 페이지 편집기 또는 경험 조각을 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
 1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/using/assets/configure-icon.svg) 아이콘. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
-   ![](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
+   ![양식 데이터 모델 적응형 양식 컨테이너](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
 1. 요구 사항에 따라 JSON 스키마 또는 양식 데이터 모델을 선택하고 구성합니다. 제출 액션에 대한 자세한 내용은 [적응형 양식 제출 액션](configuring-submit-actions.md).
 
    * 다음을 선택하면 **[!UICONTROL 양식 모델]** 옵션, 사용 **[!UICONTROL 양식 데이터 모델 선택]** 미리 구성된 양식 데이터 모델을 선택하는 옵션입니다.
@@ -235,7 +235,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 1. 적응형 양식이 포함된 AEM 페이지 편집기 또는 경험 조각을 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
 1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/using/assets/configure-icon.svg) 아이콘. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
-   ![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
+   ![미리 채우기 서비스 fdm aem sites 페이지 편집기](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. 양식 데이터 모델 선택. 를 엽니다. **[!UICONTROL 기본]** 탭. 미리 채우기 서비스에서 다음을 선택합니다. **[!UICONTROL Forms 포털 초안 미리 채우기 서비스]**.
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 

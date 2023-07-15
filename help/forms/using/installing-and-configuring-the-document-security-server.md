@@ -8,9 +8,9 @@ contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Adobe Experience Manager Forms document security는 인증된 사용자만 문�
 
 다음 다이어그램은 AEM Forms Document Security에 대한 일반적인 아키텍처를 보여 줍니다.
 
-![](do-not-localize/document-security-typical-environment.png)
+![문서 보안 일반 환경](do-not-localize/document-security-typical-environment.png)
 
 ## JEE에 AEM Forms 설치 {#installing-aem-forms-on-jee}
 

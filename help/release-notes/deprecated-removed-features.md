@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 6.5 릴리스에서 더 이상 사용되지 않거나 제거된 기능.
 description: Adobe Experience Manager 6.5에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 11e848d93964b5f8e45ccd7388a48953a3148e35
+source-git-commit: 9be9bb1706df750ede3f804012442bd73dc462ee
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1730'
 ht-degree: 33%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 33%
 
 Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속해서 평가합니다.
 
-AEM 기능의 제거 또는 교체가 임박했음을 알리기 위해 다음 규칙이 적용됩니다.
+Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 알리기 위해 다음 규칙이 적용됩니다.
 
 1. 사용 중지 공지가 먼저 표시됩니다. 사용 중단되는 동안에도 기능은 계속 사용할 수 있지만 더 이상 향상되지 않습니다.
 1. 사용 중단되는 기능은 빠른 시일 내에 다음 주요 릴리스에서 제거됩니다. 제거할 실제 목표 날짜는 발표됩니다.

@@ -1,19 +1,15 @@
 ---
 title: 커뮤니티 사이트 기본 사항
-seo-title: Community Site Essentials
 description: 커뮤니티 사이트 내보내기 및 삭제, 사용자 지정 사이트 템플릿 만들기
-seo-description: Exporting and deleting community sites and creating custom site templates
-uuid: f0ec0e71-64e9-415a-b14a-939a9b1611c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 2%
+source-wordcount: '497'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +52,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->사용자 지정 템플릿에 이름이 지정된 경우 *sitepage.hbs*&#x200B;를 입력하면 모든 커뮤니티 사이트가 사용자 지정됩니다.
+>사용자 지정 템플릿에 이름이 지정된 경우 *sitepage.hbs*&#x200B;을 선택한 다음 모든 커뮤니티 사이트를 사용자 지정합니다.
 
 ### 사용자 지정 사이트 템플릿 예 {#custom-site-template-example}
 
@@ -73,7 +69,7 @@ ht-degree: 2%
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-다음을 확인합니다. **모두 저장** 모든 AEM 인스턴스에 사용자 지정 코드를 복제합니다(커뮤니티 사이트 콘텐츠가 콘솔에서 게시되는 경우 사용자 지정 코드는 포함되지 않음).
+다음을 확인합니다. **모두 저장** 모든 AEM(Adobe Experience Manager) 인스턴스에 사용자 지정 코드를 복제합니다(콘솔에서 커뮤니티 사이트 콘텐츠를 게시하면 사용자 지정 코드가 포함되지 않음).
 
 사용자 지정 코드를 복제하는 데 권장되는 방법은 다음과 같습니다. [패키지 만들기](../../help/sites-administering/package-manager.md#creating-a-new-package) 모든 인스턴스에 배포합니다.
 
@@ -85,7 +81,7 @@ ht-degree: 2%
 
 UGC 및 사용자 지정 코드는 커뮤니티 사이트 패키지에 포함되지 않습니다.
 
-UGC를 내보내려면 [AEM Communities UGC 마이그레이션 도구](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration): GitHub에서 사용할 수 있는 오픈 소스 마이그레이션 도구입니다.
+UGC를 내보내려면 [AEM Communities UGC 마이그레이션 도구](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration): GitHub에서 사용할 수 있는 오픈 소스 마이그레이션 도구입니다.
 
 ## 커뮤니티 사이트 삭제 {#deleting-a-community-site}
 
@@ -105,17 +101,17 @@ CRXDE를 사용하여 커뮤니티 사이트와 연결된 고유한 사이트 ID
 
 * 사이트 ID는 의 세 번째 구성 요소입니다 `rep:principalName`
 
-   예를 들어 다음과 같습니다. `rep:principalName = community-enable-nrh9h-members`
+  예를 들어 다음과 같습니다. `rep:principalName = community-enable-nrh9h-members`
 
    * **사이트 이름** = *활성화*
    * **사이트 ID** = *nrh9h*
    * **고유 사이트 ID** = *enable-nrh9h*
 
-### 사용자 생성 콘텐츠 {#user-generated-content}
+### 사용자 생성 컨텐츠 {#user-generated-content}
 
-Github에서 communities-srp-tools 프로젝트 가져오기:
+GitHub에서 communities-srp-tools 프로젝트 가져오기:
 
-* [https://github.com/Adobe-Marketing-Cloud/communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/communities-srp-tools)
+* [https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 여기에는 SRP에서 모든 UGC를 삭제하는 서블릿이 포함되어 있습니다.
 
@@ -123,11 +119,11 @@ Github에서 communities-srp-tools 프로젝트 가져오기:
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-이렇게 하면 사용자가 생성한 콘텐츠(게시 시 입력)만 제거되고 작성된 콘텐츠(작성 시 입력)는 제거되지 않습니다. 따라서 [그림자 노드](srp.md#shadownodes) 영향을 받지 않습니다.
+이렇게 하면 사용자 생성 콘텐츠(게시 시 입력됨)만 제거되고 작성된 콘텐츠(작성 시 입력됨)는 제거되지 않습니다. 따라서 [그림자 노드](srp.md#shadownodes) 영향을 받지 않습니다.
 
 ### 커뮤니티 사용자 그룹 {#community-user-groups}
 
-모든 작성자 및 게시 인스턴스에서 [보안 콘솔](../../help/sites-administering/security.md), 를 찾아 제거합니다. [사용자 그룹](users.md) 즉,
+모든 작성자 및 게시 인스턴스에서 [보안 콘솔](../../help/sites-administering/security.md)를 찾아 제거합니다. [사용자 그룹](users.md) 즉,
 
 * 접두사 `community`
 * 뒤에 오는 [고유 사이트 id](#community-unique-site-id)
