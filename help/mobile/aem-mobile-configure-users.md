@@ -1,16 +1,14 @@
 ---
 title: 사용자 및 사용자 그룹 구성
-description: 이 페이지를 따라 사용자 역할과 모바일 On-Demand 서비스 앱의 작성 및 관리를 지원하도록 사용자 및 그룹을 구성하는 방법을 이해합니다.
-uuid: 461e1725-41dd-4883-92b9-a7e175660401
+description: 이 페이지를 따라 사용자 역할과 모바일 On-Demand 서비스 앱 작성 및 관리를 지원하도록 사용자 및 그룹을 구성하는 방법을 이해합니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '512'
 ht-degree: 1%
 
 ---
@@ -27,11 +25,11 @@ ht-degree: 1%
 
 ### AEM Mobile 애플리케이션 콘텐츠 작성자(앱 작성자 그룹) {#aem-mobile-application-content-authors-app-author-group}
 
-앱 작성자 그룹의 멤버는 페이지, 텍스트, 이미지 및 비디오 등 AEM 모바일 애플리케이션 콘텐츠를 작성합니다.
+앱 작성자 그룹의 멤버는 페이지, 텍스트, 이미지 및 비디오를 비롯한 AEM 모바일 애플리케이션 콘텐츠를 작성합니다.
 
 #### 그룹 구성 - app-authors {#group-configuration-app-authors}
 
-1. &#39;app-authors&#39;라는 새 사용자 그룹을 만듭니다.
+1. &#39;app-authors&#39;라는 사용자 그룹 만들기:
 
    사용 Admin Console으로 이동합니다. [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
@@ -43,7 +41,7 @@ ht-degree: 1%
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. 앱 작성자 사용자 그룹을 만들었으므로 이제 다음을 통해 개별 팀원을 이 새 그룹에 추가할 수 있습니다. [사용자 Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. 앱 작성자 사용자 그룹을 만들었으므로 이제 다음을 통해 개별 팀원을 이 새 그룹에 추가할 수 있습니다. [사용 Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -66,11 +64,11 @@ app-admins 그룹의 구성원은 app-authors에 포함된 것과 동일한 권�
 >
 >권한은 AEM 앱 명령 센터에서 일부 사용자 작업의 가용성을 결정합니다.
 >
->앱 관리자가 사용할 수 있는 일부 옵션은 앱 작성자에게 제공되지 않습니다.
+>앱 관리자가 사용할 수 있는 앱 작성자는 일부 옵션을 사용할 수 없습니다.
 
 ### 그룹 구성 - app-admins {#group-configuration-app-admins}
 
-1. app-admins라는 새 그룹을 만듭니다.
+1. app-admins라는 그룹을 만듭니다.
 1. 새 app-admins 그룹에 다음 그룹을 추가합니다.
 
    * content-authors
@@ -86,7 +84,7 @@ app-admins 그룹의 구성원은 app-authors에 포함된 것과 동일한 권�
 
    * /etc/cloudservices/mobileservices에서 (읽기, 수정, 만들기, 삭제, 복제)
 
-1. 동일한 권한 콘솔에서 앱 콘텐츠 업데이트를 스테이징, 게시 및 지우는 데 권한을 추가합니다.
+1. 동일한 권한 콘솔에서 앱 콘텐츠 업데이트를 스테이징하고 게시하고 지우는 권한을 추가합니다.
 
    * /etc/packages/mobileapp에서 (읽기, 수정, 만들기, 삭제, 복제)
    * /var/contentsync에서 (읽기)
@@ -104,9 +102,9 @@ app-admins 그룹의 구성원은 app-authors에 포함된 것과 동일한 권�
 1. 필요에 따라 이 그룹에 구성원 추가
 1. 컨텐츠를 내보내거나 업로드하려면
 
-   * 내보내기 템플릿에 액세스하기 위해으로 /etc/contentsync에 (읽기)
-   * (읽기) 읽기 시 경로 트래버스를 위해 /var에서 로
-   * ContentSync 캐시된 내보내기 컨텐츠를 작성, 읽기 및 정리하도록 /var/contentsync에 (읽기, 쓰기, 수정, 삭제)
+   * (읽기) /etc/contentsync에서 내보내기 템플릿에 액세스
+   * (읽기) on /var to path traversal on reads
+   * ContentSync 캐시된 내보내기 컨텐츠를 작성, 읽기 및 정리하려면 /var/contentsync에서 (읽기, 쓰기, 수정, 삭제)
 
 ### 추가 리소스 {#additional-resources}
 
