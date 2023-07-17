@@ -1,24 +1,20 @@
 ---
-title: AEM의 서비스 사용자
-seo-title: Service Users in AEM
-description: AEM의 서비스 사용자에 대해 알아봅니다.
-seo-description: Learn about Service Users in AEM.
-uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
+title: Adobe Experience Manager의 서비스 사용자
+description: Adobe Experience Manager의 서비스 사용자에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1766'
 ht-degree: 0%
 
 ---
 
-# AEM의 서비스 사용자{#service-users-in-aem}
+# Adobe Experience Manager(AEM)의 서비스 사용자 {#service-users-in-aem}
 
 ## 개요 {#overview}
 
@@ -66,7 +62,7 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 
 * **개인 정보 설정 준수**
 
-   * 비공개 프로필의 경우, 한 가지 예로 비공개 프로필에서 찾은 프로필 사진, 이메일 또는 전체 이름을 노출하지 않을 수 있습니다 `/profile` 노드.
+   * 비공개 프로필이 있는 경우, 한 가지 예를 들자면 비공개 프로필에 있는 프로필 사진, 이메일 또는 전체 이름을 노출하지 않는 것입니다 `/profile` 노드.
 
 ## 엄격한 액세스 제어 {#strict-access-control}
 
@@ -88,7 +84,7 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 * 사용자에게 매핑 서비스를 허용합니다.
 * 하위 서비스 사용자를 정의할 수 있습니다
 * 중앙 구성 지점은 다음과 같습니다. `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`
-* `service-id` = `service-name` [ &quot;:&quot; subservice-name ] 
+* `service-id` = `service-name` [&quot;:&quot; subservice-name]
 
 * `service-id` 인증용 리소스 확인자 및/또는 JCR 저장소 사용자 ID에 매핑됩니다.
 * `service-name` 는 서비스를 제공하는 번들의 기호 이름입니다
@@ -104,21 +100,21 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 관리 세션을 서비스 사용자로 바꾸려면 다음 단계를 수행해야 합니다.
 
 1. 최소 권한의 원칙을 고려하여 서비스에 필요한 권한을 식별합니다.
-1. 필요한 권한 설정을 정확히 가진 사용자가 이미 있는지 확인합니다. 기존 사용자가 요구 사항과 일치하지 않는 경우 새 시스템 서비스 사용자를 만듭니다. 새 서비스 사용자를 만들려면 RTC가 필요합니다. 경우에 따라 액세스를 더 구분하기 위해 여러 하위 서비스 사용자(예: 쓰기용 사용자 및 읽기용 사용자)를 만드는 것이 적절합니다.
-1. 사용자의 ACE를 설정하고 테스트합니다.
+1. 필요한 권한 설정을 정확히 가진 사용자가 이미 있는지 확인합니다. 기존 사용자가 요구 사항과 일치하지 않는 경우 시스템 서비스 사용자를 만듭니다. 서비스 사용자를 만들려면 RTC가 필요합니다. 경우에 따라 액세스를 더 구분하기 위해 여러 하위 서비스 사용자(예: 쓰기용 사용자 및 읽기용 사용자)를 만드는 것이 적절합니다.
+1. 사용자에 대한 ACE를 설정하고 테스트합니다.
 1. 추가 `service-user` 서비스 및 를 위한 매핑 `user/sub-users`
 
 1. 서비스 사용자 슬링 기능을 번들에서 사용할 수 있도록 설정: 의 최신 버전으로 업데이트 `org.apache.sling.api`.
 
 1. 바꾸기 `admin-session` 을 사용한 코드 내 `loginService` 또는 `getServiceResourceResolver` API.
 
-## 새 서비스 사용자 만들기 {#creating-a-new-service-user}
+## 서비스 사용자 만들기 {#creating-a-new-service-user}
 
 AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용자가 없고 해당 RTC 문제가 승인된 후에는 계속해서 기본 콘텐츠에 새 사용자를 추가할 수 있습니다.
 
 권장되는 접근 방법은 저장소 탐색기를 사용할 서비스 사용자를 만드는 것입니다. *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
 
-목표는 유효한 을 얻는 것입니다. `jcr:uuid` 콘텐츠 패키지 설치를 통해 사용자를 만들기 위해 필요한 속성입니다.
+목표는 유효한 을 얻는 것입니다. `jcr:uuid` 콘텐츠 패키지 설치를 통해 사용자를 만드는 데 필요한 속성입니다.
 
 다음을 수행하여 서비스 사용자를 만들 수 있습니다.
 
@@ -134,7 +130,7 @@ AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용�
 
    >[!NOTE]
    >
-   >서비스 사용자와 연결된 mixin 유형은 없습니다. 즉, 시스템 사용자에 대한 액세스 제어 정책이 없습니다.
+   >서비스 사용자와 연결된 mixin 유형이 없습니다. 즉, 시스템 사용자에 대한 액세스 제어 정책이 없습니다.
 
 해당 .content.xml을 번들의 내용에 추가할 때 `rep:authorizableId` 기본 유형이 `rep:SystemUser`. 다음과 같이 표시되어야 합니다.
 
@@ -149,13 +145,13 @@ AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용�
 
 ## ServiceUserMapper 구성에 구성 수정 사항 추가 {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-서비스에서 해당 시스템 사용자에 대한 매핑을 추가하려면 ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` 서비스. 이러한 모듈식 구성을 유지하려면 다음을 사용하여 제공할 수 있습니다. [Sling 수정 메커니즘](https://issues.apache.org/jira/browse/SLING-3578). 번들과 함께 이러한 구성을 설치하는 데 권장되는 방법은 [Sling 초기 컨텐츠 로드 중](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+서비스에서 해당 시스템 사용자에 대한 매핑을 추가하려면 ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` 서비스. 이러한 모듈화를 유지하기 위해, 이러한 구성은 다음을 사용하여 제공될 수 있다. [Sling 수정 메커니즘](https://issues.apache.org/jira/browse/SLING-3578). 번들과 함께 이러한 구성을 설치하는 데 권장되는 방법은 [Sling 초기 컨텐츠 로드 중](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. 번들의 src/main/resources 폴더 아래에 하위 폴더 SLING-INF/컨텐츠를 만듭니다
-1. 이 폴더에서 org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.revised-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>모든 하위 서비스 사용자 매핑을 포함하여 공장 구성 콘텐츠가 포함된 .xml 예:
+1. 이 폴더에서 org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.revised라는 파일을 만듭니다.&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>모든 하위 서비스 사용자 매핑을 포함하여 공장 구성 콘텐츠가 포함된 .xml 예:
 
 1. 만들기 `SLING-INF/content` 폴더 아래 `src/main/resources` 번들의 폴더
-1. 이 폴더에서 파일 만들기 `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` 모든 하위 서비스 사용자 매핑을 포함하여 공장 구성 콘텐츠가 포함된 구성
+1. 이 폴더에서 파일 만들기 `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` 모든 하위 서비스 사용자 매핑을 포함하여 공장 구성 콘텐츠 포함
 
    설명을 위해 라는 파일을 가져옵니다. `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`:
 
@@ -195,7 +191,7 @@ AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용�
 호출 대상 `loginAdministrative()` 공유 세션과 함께 표시되는 경우가 많습니다. 이러한 세션은 서비스 활성화 시 획득되며 서비스가 중지된 후에만 로그아웃됩니다. 일반적인 방법이지만 두 가지 문제로 이어집니다.
 
 * **보안:** 이러한 관리 세션은 공유 세션에 바인딩된 리소스 또는 기타 개체를 캐시하고 반환하는 데 사용됩니다. 나중에 호출 스택에서 이러한 개체는 높은 권한을 가진 세션 또는 리소스 확인자에 맞게 조정될 수 있으며, 종종 호출자가 이 개체를 사용 중인 관리 세션인지 명확하지 않습니다.
-* **성능:** Oak 공유 세션에서는 성능 문제가 발생할 수 있으므로 현재 사용하지 않는 것이 좋습니다.
+* **성능:** Oak에서 공유 세션은 성능 문제를 일으킬 수 있으므로 사용하지 않는 것이 좋습니다.
 
 보안 위험에 대한 가장 명백한 해결 방법은 `loginAdministrative()` 을 사용하여 호출 `loginService()` 하나는 제한된 권한을 가진 사용자에게 표시됩니다. 그러나 이는 잠재적인 성능 저하에는 영향을 주지 않습니다. 세션과 연관성이 없는 객체에서 모든 요청된 정보를 래핑하는 문제를 완화할 수 있습니다. 그런 다음 필요에 따라 세션을 생성(또는 제거)합니다.
 
@@ -214,19 +210,19 @@ JSP는 `loginService()`: 연결된 서비스가 없기 때문입니다. 그러�
 
 ## 이벤트, 복제 전처리기 및 작업 처리 {#processing-events-replication-preprocessors-and-jobs}
 
-이벤트 또는 작업을 처리할 때, 그리고 경우에 따라 워크플로우를 처리할 때 이벤트를 트리거한 해당 세션은 일반적으로 손실됩니다. 이렇게 되면 이벤트 처리기와 작업 처리기가 종종 관리 세션을 사용하여 작업을 수행하게 됩니다. 각각 장점과 단점이 있는 다음과 같이 이 문제를 해결하기 위해 생각할 수 있는 다양한 접근 방식이 있습니다.
+이벤트 또는 작업, 경우에 따라 워크플로우를 처리할 때 이벤트를 트리거한 해당 세션이 손실됩니다. 이렇게 되면 이벤트 처리기와 작업 처리기가 종종 관리 세션을 사용하여 작업을 수행하게 됩니다. 각각 장점과 단점을 가진 이 문제를 해결하기 위해 생각할 수 있는 접근 방식이 다릅니다.
 
 1. 전달 `user-id` 이벤트 페이로드에서 가장을 사용합니다.
 
    **장점:** 사용하기 쉽습니다.
 
-   **단점:** 여전히 사용 `loginAdministrative()`. 이미 인증된 요청을 다시 인증합니다.
+   **단점:** 여전히 사용 `loginAdministrative()`. 이미 인증된 요청을 재인증합니다.
 
 1. 데이터에 액세스할 수 있는 서비스 사용자를 만들거나 재사용합니다.
 
    **장점:** 현재 디자인과 일치합니다. 최소한의 변경이 필요합니다.
 
-   **단점:** 유연하고 권한 에스컬레이션으로 이어질 수 있는 매우 강력한 서비스 사용자가 필요합니다. 보안 모델을 우회합니다.
+   **단점:** 강력한 서비스 사용자가 유연하게 대처해야 하므로 권한 에스컬레이션이 쉽게 발생할 수 있습니다. 보안 모델을 우회합니다.
 
 1. 의 직렬화 전달 `Subject` 이벤트 페이로드에서 `ResourceResolver` 그 주제에 근거를 두었습니다. 한 가지 예는 JAAS를 사용하는 것입니다 `doAsPrivileged` 다음에서 `ResourceResolverFactory`.
 
@@ -234,13 +230,13 @@ JSP는 `loginService()`: 연결된 서비스가 없기 때문입니다. 그러�
 
    **단점:** 리팩터링이 필요합니다. 보안 관련 코드가 이벤트 소비자에게 투명하다는 점도 문제를 일으킬 수 있습니다.
 
-제3 접근법은 현재 바람직한 처리 기술이다.
+세 번째 접근법은 선호되는 처리 기술이다.
 
 ## 워크플로우 프로세스 {#workflow-processes}
 
-워크플로우 프로세스 구현 내에서 워크플로우를 트리거한 해당 사용자 세션은 일반적으로 손실됩니다. 이렇게 되면 관리 세션을 사용하여 작업을 수행하는 경우가 종종 있는 워크플로우 프로세스로 이어집니다.
+워크플로우 프로세스 구현 내에서 워크플로우를 트리거한 해당 사용자 세션이 손실됩니다. 이렇게 되면 관리 세션을 사용하여 작업을 수행하는 워크플로우 프로세스가 시작됩니다.
 
-이러한 문제를 해결하기 위해에 언급된 것과 동일한 접근 방식을 사용하는 것이 좋습니다. [이벤트, 복제 전처리기 및 작업 처리](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) 사용합니다.
+이러한 문제를 수정하려면에 언급된 것과 동일한 접근 방식을 사용하는 것이 좋습니다. [이벤트, 복제 전처리기 및 작업 처리](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) 사용합니다.
 
 ## Sling POST 프로세서 및 삭제된 페이지 {#sling-post-processors-and-deleted-pages}
 

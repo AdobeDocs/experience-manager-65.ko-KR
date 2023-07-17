@@ -1,16 +1,14 @@
 ---
 title: Adobe Experience Manager mobile On-Demand 서비스 시작
-description: AEM mobile On-Demand Services 앱 관리를 시작합니다. 이 섹션에서는 온디맨드 서비스를 위한 AEM 관리자의 역할과 책임에 대한 개요를 제공합니다.
-uuid: fd99c032-287a-489b-9690-b18980c55c29
+description: Adobe Experience Manager(AEM) mobile On-Demand Services 앱 관리를 시작합니다. 이 섹션에서는 온디맨드 서비스를 위한 AEM 관리자의 역할과 책임에 대한 개요를 제공합니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 content-type: reference
 topic-tags: administering-on-demand-services-app
-discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
-source-git-commit: ff7e37f24990a94510331a33cb05b7b44b3bfe85
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->AEM을 컨텐츠 관리 소스로 사용하지 않는 경우 다음을 참조하십시오. [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Adobe Experience Manager(AEM)를 콘텐츠 관리 소스로 사용하지 않는 경우에는 다음을 참조하십시오. [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## AEM 관리자 {#aem-administrator}
 
@@ -33,7 +31,7 @@ ht-degree: 2%
 >
 >AEM Mobile On-demand Services 환경 설정을 시작하기 전에 다음을 참조하십시오. [AEM Mobile 애플리케이션 대시보드 또는 Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-An ***AEM 관리자*** 는 생성 마법사를 사용하여 새 앱을 만들거나 기존 애플리케이션을 가져와서 AEM Mobile 카탈로그에 새 애플리케이션을 추가하는 역할을 합니다. AEM Mobile을 사용하여 새 앱을 만드는 AEM 관리자 *만들기 마법사* 일반적으로 기본 제공 참조 샘플 또는 (대부분의 경우)에서 만든 사용자 지정 앱 템플릿에서 원하는 앱 템플릿 중 하나를 선택합니다. *AEM 개발자.*
+An ***AEM 관리자*** 는 생성 마법사를 사용하여 앱을 생성하거나 기존 애플리케이션을 가져와서 AEM Mobile 카탈로그에 애플리케이션을 추가하는 역할을 합니다. AEM Mobile을 사용하여 앱을 생성하는 AEM 관리자 *만들기 마법사* 일반적으로 Adobe의 기본 참조 샘플 또는 (일반적으로) 다음 사용자가 만든 사용자 지정 앱 템플릿에서 원하는 앱 템플릿 중 하나를 선택합니다. *AEM 개발자.*
 
 >[!NOTE]
 >
@@ -41,7 +39,7 @@ An ***AEM 관리자*** 는 생성 마법사를 사용하여 새 앱을 만들거
 
 AEM 관리자는 AEM Mobile On-demand Services을 사용하여 앱을 만드는 동안 다음 작업을 담당합니다.
 
-* [AEM Mobile 설정](/help/mobile/aem-mobile-setup.md), 다음을 포함
+* [AEM Mobile 설정](/help/mobile/aem-mobile-setup.md) 다음의 것을 포함한다
 
    * AEM Mobile 프로비저닝
    * AEM Mobile에 대한 프로젝트 만들기

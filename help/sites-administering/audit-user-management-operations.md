@@ -1,29 +1,25 @@
 ---
-title: AEM에서 사용자 관리 작업을 감사하는 방법
-seo-title: How to Audit User Management Operations in AEM
-description: AEM에서 사용자 관리 작업을 감사하는 방법을 알아봅니다.
-seo-description: Learn how to audit User Management Operations in AEM.
-uuid: 9d177afb-172c-4858-a678-254c97cfa472
+title: Adobe Experience Manager에서 사용자 관리 작업을 감사하는 방법
+description: Adobe Experience Manager에서 사용자 관리 작업을 감사하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '300'
 ht-degree: 2%
 
 ---
 
-# AEM에서 사용자 관리 작업을 감사하는 방법{#how-to-audit-user-management-operations-in-aem}
+# Adobe Experience Manager(AEM)에서 사용자 관리 작업을 감사하는 방법 {#how-to-audit-user-management-operations-in-aem}
 
 ## 소개 {#introduction}
 
-AEM은 나중에 감사할 수 있도록 권한 변경 사항을 기록하는 기능을 도입했습니다.
+AEM에는 나중에 감사할 수 있도록 권한 변경 사항을 기록하는 기능이 도입되었습니다.
 
 향상된 기능을 통해 사용자의 권한 및 그룹 할당에 대한 감사 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 수행할 수 있습니다. 특히 다음과 같이 기록됩니다.
 
@@ -31,14 +27,14 @@ AEM은 나중에 감사할 수 있도록 권한 변경 사항을 기록하는 �
 * 사용자를 그룹에 추가 중입니다.
 * 기존 사용자 또는 그룹의 권한 변경
 
-기본적으로 항목이 `error.log` 파일. 모니터링을 더 쉽게 수행하려면 별도의 로그 파일로 리디렉션하는 것이 좋습니다. 아래 단락에서 이 작업을 수행하는 방법에 대한 자세한 정보입니다.
+기본적으로 항목은 `error.log` 파일. 모니터링을 더 쉽게 수행하려면 별도의 로그 파일로 리디렉션하는 것이 좋습니다. 아래 단락에서 이 작업을 수행하는 방법에 대한 자세한 정보입니다.
 
 ## 출력을 별도의 로그 파일로 리디렉션합니다. {#redirecting-the-output-to-a-separate-log-file}
 
-로깅 출력을 별도의 로그 파일로 리디렉션하려면 새 파일을 만들어야 합니다 **Apache Sling 로깅 로거** 구성. 다음을 사용합니다. `useraudit.log` (아래 예에서 개별 파일의 이름)
+로깅 출력을 별도의 로그 파일로 리디렉션하려면 **Apache Sling 로깅 로거** 구성. 사용 `useraudit.log` (아래 예에서 개별 파일의 이름)
 
 1. 을 찾아 웹 콘솔로 이동 *https://serveraddress:serverport/system/console/configMgr*
-1. 검색 대상 **Apache Sling 로깅 로거 구성**. 그런 다음 항목 오른쪽의 &quot;+&quot;를 눌러 새 공장 구성을 만듭니다.
+1. 검색 대상 **Apache Sling 로깅 로거 구성**. 그런 다음 항목의 오른쪽에 있는 &quot;+&quot;를 눌러 공장 구성을 만듭니다.
 1. 다음 구성을 만듭니다.
 
    * **로그 수준:** 정보

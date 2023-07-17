@@ -1,16 +1,14 @@
 ---
 title: 사용자 및 사용자 그룹 구성
 description: 이 페이지를 따라 사용자 역할과 모바일 앱의 작성 및 관리를 지원하도록 사용자 및 그룹을 구성하는 방법을 이해합니다.
-uuid: 55cea2b3-d7e6-4174-92b3-ee97e46b59c4
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
-discoiquuid: 167f3bd9-7dbc-4e6b-9868-3ee53935641b
 exl-id: 9f814204-8cd4-4ba9-9e25-3ff1b25c1955
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -36,7 +34,7 @@ AEM 앱에 대한 권한 모델을 구성하고 관리하는 데 도움이 되�
 
 #### 그룹 구성 - app-authors {#group-configuration-app-authors}
 
-1. &#39;app-authors&#39;라는 새 사용자 그룹을 만듭니다.
+1. &#39;app-authors&#39;라는 사용자 그룹 만들기:
 
    사용 Admin Console으로 이동합니다. [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
@@ -50,7 +48,7 @@ AEM 앱에 대한 권한 모델을 구성하고 관리하는 데 도움이 되�
 
    Authors 그룹에 앱 작성자 추가
 
-1. 앱 작성자 사용자 그룹을 만들었으므로 이제 다음을 통해 개별 팀원을 이 새 그룹에 추가할 수 있습니다. [사용자 Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. 앱 작성자 사용자 그룹을 만들었으므로 이제 다음을 통해 개별 팀원을 이 새 그룹에 추가할 수 있습니다. [사용 Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -59,9 +57,10 @@ AEM 앱에 대한 권한 모델을 구성하고 관리하는 데 도움이 되�
 1. 다음 위치로 이동 [권한 콘솔](http://localhost:4502/useradmin) 및 cloudservices 관리에 대한 권한 추가
 
    * (읽기) on /etc/cloudservices
+
    >[!NOTE]
    >
-   >앱 작성자는 AEM에서 기본 콘텐츠 작성자(Authors) 그룹을 확장하여 /content/phonegap에서 콘텐츠를 만드는 기능을 상속합니다
+   >앱 작성자는 /content/phonegap에서 콘텐츠를 만드는 기능을 상속받도록 AEM에서 기본 콘텐츠 작성자(작성자) 그룹을 확장합니다
 
 ### AEM Mobile 애플리케이션 관리자 그룹(app-admins 그룹) {#aem-mobile-application-administrators-group-app-admins-group}
 
@@ -74,11 +73,11 @@ app-admins 그룹의 구성원은 app-authors에 포함된 것과 동일한 권�
 >
 >권한은 AEM 앱 명령 센터에서 일부 사용자 작업의 가용성을 결정합니다.
 >
->앱 관리자가 사용할 수 있는 일부 옵션은 앱 작성자에게 제공되지 않습니다.
+>앱 관리자가 사용할 수 있는 앱 작성자는 일부 옵션을 사용할 수 없습니다.
 
 #### 그룹 구성 - app-admins {#group-configuration-app-admins}
 
-1. app-admins라는 새 그룹을 만듭니다.
+1. app-admins라는 그룹을 만듭니다.
 1. 새 app-admins 그룹에 다음 그룹을 추가합니다.
 
    * content-authors
@@ -91,7 +90,7 @@ app-admins 그룹의 구성원은 app-authors에 포함된 것과 동일한 권�
    * /etc/cloudservices/mobileservices에서 (읽기, 수정, 만들기, 삭제, 복제)
    * /etc/cloudservices/phonegap-build에서 (읽기, 수정, 만들기, 삭제, 복제)
 
-1. 동일한 권한 콘솔에서 앱 콘텐츠 업데이트를 스테이징, 게시 및 지우는 데 권한을 추가합니다.
+1. 동일한 권한 콘솔에서 앱 콘텐츠 업데이트를 스테이징하고 게시하고 지우는 권한을 추가합니다.
 
    * /etc/packages/mobileapp에서 (읽기, 수정, 만들기, 삭제, 복제)
    * /var/contentsync에서 (읽기)
@@ -112,7 +111,7 @@ app-admins 그룹의 구성원은 app-authors에 포함된 것과 동일한 권�
 
 대시보드 타일은 사용자가 보유한 권한에 따라 다른 작업을 노출할 수 있습니다. 다음은 각 타일에 사용할 수 있는 작업을 설명합니다.
 
-이러한 권한 외에도 현재 앱이 구성된 방식에 따라 작업을 표시하거나 숨길 수 있습니다. 예를 들어 PhoneGap 클라우드 구성이 앱에 할당되지 않은 경우 &#39;원격 빌드&#39; 작업을 노출하는 지점이 없습니다. 이러한 속성은 아래 &#39; 아래에 나열됩니다.**구성 조건**&#39; 섹션.
+이러한 권한 외에도 현재 앱이 구성된 방식에 따라 작업을 표시하거나 숨길 수 있습니다. 예를 들어 PhoneGap 클라우드 구성이 앱에 할당되지 않은 경우 &#39;원격 빌드&#39; 작업을 노출하는 지점이 없습니다. 이러한 속성은 아래 &#39;**구성 조건**&#39; 섹션.
 
 ### 앱 타일 관리 {#manage-app-tile}
 

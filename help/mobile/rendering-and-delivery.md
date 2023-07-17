@@ -1,17 +1,13 @@
 ---
 title: 렌더링 및 게재
-seo-title: Rendering and Delivery
 description: 렌더링 및 게재
-seo-description: null
-uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '580'
 ht-degree: 7%
 
 ---
@@ -22,11 +18,11 @@ ht-degree: 7%
 >
 >Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-AEM 콘텐츠는 을 통해 쉽게 렌더링할 수 있습니다. [Sling 기본 서블릿](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 렌더링하려면 [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) 및 기타 형식
+Adobe Experience Manager(AEM) 콘텐츠는 다음을 통해 쉽게 렌더링할 수 있습니다. [Sling 기본 서블릿](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 렌더링하려면 [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) 및 기타 형식
 
 기본 제공되는 렌더링은 일반적으로 저장소를 이동하고 콘텐츠를 그대로 반환합니다.
 
-또한 Sling을 통해 AEM은 사용자 지정 sling 렌더러를 개발 및 배포하여 렌더링된 스키마 및 콘텐츠를 완벽하게 제어할 수 있도록 지원합니다.
+AEM은 Sling을 통해 사용자 지정 sling 렌더러를 개발 및 배포하여 렌더링된 스키마 및 콘텐츠를 완벽하게 제어할 수 있도록 지원합니다.
 
 Content Services 기본 렌더러는 기본 제공 Sling 기본값과 사용자 지정 개발 간의 간격을 채우므로 개발 없이 렌더링된 콘텐츠의 여러 측면을 사용자 지정하고 제어할 수 있습니다.
 
@@ -120,14 +116,14 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
   </tr>
   <tr>
    <td>excludeChild</td>
-   <td>문자열[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>제외 안 함</td>
    <td>하위 이름</td>
    <td>json 내보내기에서 지정된 하위 항목만 포함, 기타 항목 제외</td>
   </tr>
   <tr>
    <td>renameProperties</td>
-   <td>문자열[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>이름 바꾸기 없음</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>대체 항목을 사용하여 등록 정보 이름 바꾸기</td>

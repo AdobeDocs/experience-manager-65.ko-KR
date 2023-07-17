@@ -1,20 +1,16 @@
 ---
-title: AEM Foundation에 대한 GDPR 요청 처리
-seo-title: Handling GDPR Requests for the AEM Foundation
-description: AEM Foundation에 대한 GDPR 요청 처리
-seo-description: null
-uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
+title: Adobe Experience Manager Foundation에 대한 GDPR 요청 처리
+description: Adobe Experience Manager Foundation에 대한 GDPR 요청 처리
 contentOwner: sarchiz
-discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 61%
+source-wordcount: '436'
+ht-degree: 55%
 
 ---
 
-# AEM Foundation에 대한 GDPR 요청 처리{#handling-gdpr-requests-for-the-aem-foundation}
+# AEM(Adobe Experience Manager) Foundation에 대한 GDPR 요청 처리{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
@@ -22,7 +18,7 @@ ht-degree: 61%
 
 ## AEM Foundation GDPR 지원 {#aem-foundation-gdpr-support}
 
-AEM Foundation 수준에서 저장되는 개인 데이터는 사용자 프로필입니다. 따라서 이 문서의 정보는 주로 사용자 프로필에 액세스하고 삭제하는 방법과 GDPR 액세스 및 삭제 요청을 처리하는 방법에 대해 각각 다룹니다.
+AEM Foundation 수준에서 저장되는 개인 데이터는 사용자 프로필입니다. 따라서 이 문서의 정보는 주로 사용자 프로필에 액세스하고 삭제하는 방법, GDPR 액세스 및 삭제 요청을 처리하는 방법에 대해 각각 다룹니다.
 
 ## 사용자 프로필에 액세스 {#accessing-a-user-profile}
 
@@ -42,7 +38,7 @@ AEM Foundation 수준에서 저장되는 개인 데이터는 사용자 프로필
 
 ### HTTP API {#http-api}
 
-앞에서 언급한 바와 같이, Adobe는 용이한 자동화를 위해 사용자 데이터 액세스에 대한 API를 제공합니다. 다음은 사용할 수 있는 여러 유형의 API입니다.
+앞에서 언급한 바와 같이 Adobe는 용이한 자동화를 위해 사용자 데이터 액세스에 대한 API를 제공합니다. 다음은 사용할 수 있는 여러 유형의 API입니다.
 
 **UserProperties API**
 
@@ -82,11 +78,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![userdisable](assets/userdisable.png)
 
-1. 마지막으로 다음 작업을 확인합니다.
+1. 마지막으로, 작업을 확인합니다:
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   그러면 사용자 인터페이스는 사용자가 회색으로 바뀌고 프로필 카드에 잠금을 추가하여 비활성화되었음을 나타냅니다.
+   사용자 인터페이스는 사용자가 회색으로 표시되고 프로필 카드에 잠금을 추가하여 비활성화되었음을 나타냅니다.
 
    ![disableduser](assets/disableduser.png)
 
@@ -109,7 +105,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### HTTP API {#http-api-1}
 
-다음 절차는 `curl` 명령줄 도구를 사용하여 **[!UICONTROL Cavery]** `userId`를 통해 사용자를 비활성화하고 기본 위치에서 사용 가능한 해당 사용자의 프로필을 삭제하는 방법에 대해 설명합니다.
+다음 절차는 `curl` 를 사용하여 사용자를 비활성화하는 방법을 보여 주는 명령줄 도구 **[!UICONTROL 은폐]** `userId` 및 프로필 삭제 `cavery` 기본 위치에서 사용할 수 있습니다.
 
 * *사용자 홈 탐색*
 
