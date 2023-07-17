@@ -1,51 +1,48 @@
 ---
 title: Application Manager 클라이언트 JavaAPI 빠른 시작(SOAP)
-seo-title: Application Manager Client JavaAPI Quick Start(SOAP)
 description: Application Manager 클라이언트 JavaAPI 빠른 시작(SOAP)
-uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 role: Developer
 exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
 
 # Application Manager 클라이언트 JavaAPI 빠른 시작(SOAP) {#application-manager-client-javaapi-quick-start-soap}
 
-Application Manager Client에서 다음 Java API 빠른 시작(SOAP)을 사용할 수 있습니다.
+Application Manager Client에 다음 Java™ API 빠른 시작(SOAP)을 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 버전 생성](#quick-start-soap-mode-creating-application-version-using-the-java-api)
+[빠른 시작(SOAP 모드): Java를 사용하여 응용 프로그램 버전 만들기](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 응용 프로그램 내보내기](#quick-start-soap-mode-exporting-applications-using-the-java-api)
+[빠른 시작(SOAP 모드): Java를 사용하여 응용 프로그램 내보내기](#quick-start-soap-mode-exporting-applications-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 가져오기](#quick-start-soap-mode-importing-applications-using-the-java-api)
+[빠른 시작(SOAP 모드): Java를 사용하여 응용 프로그램 가져오기](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 AEM Forms 애플리케이션 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[빠른 시작(SOAP 모드): Java를 사용하여 AEM Forms 애플리케이션 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[빠른 시작(SOAP 모드): Java를 사용하여 애플리케이션 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 상태 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
+[빠른 시작(SOAP 모드): Java를 사용하여 애플리케이션 상태 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 AEM Forms 및 이후 애플리케이션 아카이브 미리 보기](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[빠른 시작(SOAP 모드):Java를 사용하여 AEM Forms 및 이후 애플리케이션 아카이브 미리 보기](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 AEM Forms 애플리케이션 아카이브 삭제](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[빠른 시작(SOAP 모드):Java를 사용하여 AEM Forms 애플리케이션 아카이브 삭제](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍에 있는 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 Unix와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms을 사용한 프로그래밍의 빠른 시작은 JBoss® 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX®와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 버전 생성 {#quick-start-soap-mode-creating-application-version-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java™ API를 사용하여 애플리케이션 버전 만들기 {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
-다음 Java 코드 예제에서는 JAVA API를 사용하여 애플리케이션을 생성합니다.
+다음 Java™ 코드 예제에서는 Java™ API를 사용하여 애플리케이션을 만듭니다.
 
 ```java
 /*
@@ -142,9 +139,9 @@ public class CreateApplicationVersion_SOAP {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 응용 프로그램 내보내기 {#quick-start-soap-mode-exporting-applications-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java™ API를 사용하여 응용 프로그램 내보내기 {#quick-start-soap-mode-exporting-applications-using-the-java-api}
 
-다음 Java 코드 예제에서는 JAVA API를 사용하여 애플리케이션을 내보냅니다.
+다음 Java™ 코드 예제에서는 Java™ API를 사용하여 애플리케이션을 내보냅니다.
 
 ```java
 /*
@@ -245,13 +242,13 @@ public class ExportLCA_SOAP {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 가져오기 {#quick-start-soap-mode-importing-applications-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java™ API를 사용하여 애플리케이션 가져오기 {#quick-start-soap-mode-importing-applications-using-the-java-api}
 
-다음 Java 코드 예제에서는 JAVA API를 사용하여 애플리케이션을 가져옵니다.
+다음 Java™ 코드 예제에서는 Java™ API를 사용하여 애플리케이션을 가져옵니다.
 
 >[!NOTE]
 >
->Java API importApplication()은 동일한 이름의 기존 애플리케이션을 최신 애플리케이션으로 대체합니다. 기존 애플리케이션을 업데이트하려면 API updateApplication() 대신 API importApplication()을 사용하십시오.
+Java™ API importApplication()은 동일한 이름의 기존 애플리케이션을 최신 애플리케이션으로 대체합니다. 기존 애플리케이션을 업데이트하려면 API updateApplication() 대신 API importApplication()을 사용합니다.
 
 ```java
 /*
@@ -332,9 +329,9 @@ public class ImportLCA_SOAP {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 가져오기 {#quick-start-soap-mode-getting-a-application-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java™ API를 사용하여 애플리케이션 가져오기 {#quick-start-soap-mode-getting-a-application-using-the-java-api}
 
-다음 Java 코드 예제는 Java API를 사용하여 애플리케이션을 가져옵니다.
+다음 Java™ 코드 예제는 Java™ API를 사용하여 애플리케이션을 가져옵니다.
 
 ```java
 /*
@@ -439,9 +436,9 @@ public class GetApplication_SOAP {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 가져오기 {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java™ API를 사용하여 애플리케이션 가져오기 {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
 
-다음 Java 코드 예제는 Java API를 사용하여 애플리케이션을 가져옵니다.
+다음 Java™ 코드 예제는 Java™ API를 사용하여 애플리케이션을 가져옵니다.
 
 **참고**: AEM Forms 애플리케이션 API를 가져오는 중, getApplications()는 배포된 애플리케이션만 반환합니다.
 
@@ -538,7 +535,7 @@ public class GetApplications_SOAP {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 상태 가져오기 {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
+## 빠른 시작(SOAP 모드): Java™ API를 사용하여 애플리케이션 상태 가져오기 {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
 
 ```java
 /*
@@ -643,9 +640,9 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 LiveCycle ES2 이상 애플리케이션 아카이브 미리 보기 {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java™ API를 사용하여 LiveCycle ES2 이상 애플리케이션 아카이브 미리 보기 {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
-다음 Java 코드 예제는 Java API를 사용하여 AEM Forms 및 이후 애플리케이션 아카이브를 미리 보는 것입니다.
+다음 Java™ 코드 예제는 Java™ API를 사용하여 AEM Forms 및 이후 애플리케이션 아카이브를 미리 보는 것입니다.
 
 ```java
 /*
@@ -722,9 +719,9 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 애플리케이션 아카이브 삭제 {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java™ API를 사용하여 애플리케이션 아카이브 삭제 {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
-다음 Java 코드 예제는 애플리케이션 아카이브를 삭제하는 것입니다.
+다음 Java™ 코드 예제는 애플리케이션 아카이브를 삭제하는 것입니다.
 
 ```java
 /*

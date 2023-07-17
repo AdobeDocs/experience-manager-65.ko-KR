@@ -1,18 +1,14 @@
 ---
 title: 초안 및 제출 구성 요소에 대한 사용자 지정 저장소
-seo-title: Custom storage for drafts and submissions component
 description: 초안 및 제출용 사용자 데이터 저장소를 사용자 지정하는 방법을 참조하십시오.
-seo-description: See how to customize the storage of user data for drafts and submissions.
-uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -27,9 +23,9 @@ AEM Forms을 사용하면 양식을 초안으로 저장할 수 있습니다. 초
 
 ## 사전 요구 사항  {#prerequisites}
 
-* 사용 [forms 포털 구성 요소](/help/forms/using/enabling-forms-portal-components.md)
-* 만들기 [forms 포털 페이지](/help/forms/using/creating-form-portal-page.md)
-* 사용 [forms 포털용 적응형 양식](/help/forms/using/draft-submission-component.md)
+* 사용 [Forms 포털 구성 요소](/help/forms/using/enabling-forms-portal-components.md)
+* 만들기 [Forms 포털 페이지](/help/forms/using/creating-form-portal-page.md)
+* 사용 [Forms 포털용 적응형 양식](/help/forms/using/draft-submission-component.md)
 * 학습 [사용자 정의 스토리지의 구현 세부 정보](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## 초안 데이터 서비스 {#draft-data-service}
@@ -103,7 +99,7 @@ public interface DraftDataService {
 
 ## 제출 데이터 서비스 {#submission-data-service}
 
-제출을 위해 사용자 데이터의 저장을 사용자 정의하려면 의 모든 메서드를 구현해야 합니다 `SubmitDataService` 인터페이스. 다음 샘플 코드에서는 메서드와 인수에 대해 설명합니다.
+제출을 위해 사용자 데이터의 저장소를 사용자 정의하려면 `SubmitDataService` 인터페이스. 다음 샘플 코드에서는 메서드와 인수에 대해 설명합니다.
 
 ```java
 /**
@@ -188,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms 포털은 UUID(범용 고유 식별자) 개념을 사용하여 모든 초안 및 제출된 양식에 대한 고유 ID를 생성합니다. 고유한 고유 ID를 생성할 수도 있습니다. FPKeyGeneratorService 인터페이스를 구현하고, 해당 메서드를 재정의하고, 사용자 지정 로직을 개발하여 모든 초안 및 제출된 양식에 대해 사용자 지정 고유 ID를 생성할 수 있습니다. 또한 사용자 지정 ID 생성 구현의 서비스 등급을 0보다 높게 설정합니다. 기본 구현 대신 사용자 지정 구현이 사용되도록 합니다.
+Forms 포털은 UUID(Universally Unique Identifier) 개념을 사용하여 초안 및 제출된 모든 양식에 대한 고유 ID를 생성합니다. 고유한 고유 ID를 생성할 수도 있습니다. FPKeyGeneratorService 인터페이스를 구현하고, 해당 메서드를 재정의하고, 사용자 지정 로직을 개발하여 모든 초안 및 제출된 양식에 대해 사용자 지정 고유 ID를 생성할 수 있습니다. 또한 사용자 지정 ID 생성 구현의 서비스 등급을 0보다 높게 설정합니다. 기본 구현 대신 사용자 지정 구현이 사용되도록 합니다.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -207,7 +203,7 @@ public interface FPKeyGeneratorService {
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-위의 주석을 사용하려면 다음 내용을 프로젝트로 가져옵니다.
+위의 주석을 사용하려면 다음 사항을 프로젝트로 가져옵니다.
 
 ```java
 import org.apache.felix.scr.annotations.Properties;

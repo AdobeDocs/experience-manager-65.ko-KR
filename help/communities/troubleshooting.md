@@ -1,16 +1,14 @@
 ---
 title: 커뮤니티 문제 해결
 description: 알려진 문제를 포함한 커뮤니티 문제 해결
-uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -42,28 +40,28 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 문제는 com.day.cq.commons.date.RelativeTimeFormat의 형식 문자열이 5.4와 5.5 사이에서 변경되어 &quot;ago&quot;에 대한 &quot;a&quot;가 더 이상 허용되지 않는다는 것입니다.
 
-따라서 RelativeTimeFormat() API를 사용하는 코드는 다음과 같이 변경해야 합니다.
+따라서 RelativeTimeFormat() API를 사용하는 모든 코드는 변경해야 합니다.
 
 * 시작: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * 끝: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-실패는 작성자와 게시에서 다릅니다. 작성자의 경우 자동으로 실패하고 포럼 주제가 표시되지 않습니다. 게시할 때 페이지에 오류가 발생합니다.
+실패는 작성자와 게시에서 다릅니다. 작성자의 경우 이 작업은 자동으로 실패하고 포럼 주제를 표시하지 않습니다. 게시할 때 페이지에 오류가 발생합니다.
 
-다음을 참조하십시오. [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API를 참조하십시오.
+다음을 참조하십시오. [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API를 참조하십시오.
 
 ## 일반적인 문제 {#common-concerns}
 
 ### 로그의 경고: 핸들바가 더 이상 사용되지 않음 {#warning-in-logs-handlebars-deprecated}
 
-시작 중(첫 번째 시작 아님 - 그 이후 모든 시작) 로그에 다음 경고가 표시될 수 있습니다.
+시작할 때(처음이 아니라 그 이후마다) 다음 경고가 로그에 표시될 수 있습니다.
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` 이(가) (으)로 대체되었습니다. `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-이 경고는 다음과 같이 안전하게 무시할 수 있습니다. `jknack.handlebars.Handlebars`, 사용 주체 [SCF](scf.md#handlebarsjavascripttemplatinglanguage)는 자체 i18n 도우미 유틸리티와 함께 제공됩니다. 시작할 때 특정 AEM으로 대체됩니다 [i18n helper](handlebars-helpers.md#i-n). 이 경고는 타사 라이브러리에서 기존 도우미의 재정의를 확인하기 위해 생성됩니다.
+이 경고는 다음과 같이 안전하게 무시할 수 있습니다. `jknack.handlebars.Handlebars`, 사용 주체 [SCF](scf.md#handlebarsjavascripttemplatinglanguage)는 자체 i18n 도우미 유틸리티와 함께 제공됩니다. 시작 시 AEM 관련 로 대체됩니다. [i18n helper](handlebars-helpers.md#i-n). 이 경고는 기존 도우미의 재정의를 확인하기 위해 서드파티 라이브러리에서 생성됩니다.
 
 ### 로그의 경고: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
-많은 소셜 커뮤니티 포럼 주제를 게시하면 OakResourceListener processOsgiEventQueue에서 엄청난 양의 경고 및 정보 로그가 발생할 수 있습니다.
+여러 소셜 커뮤니티 포럼 주제를 게시하면 OakResourceListener processOsgiEventQueue에서 엄청난 양의 경고 및 정보 로그가 발생할 수 있습니다.
 
 이러한 경고는 무시해도 됩니다.
 
