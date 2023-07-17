@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
-source-wordcount: '3870'
+source-wordcount: '3881'
 ht-degree: 4%
 
 ---
@@ -127,10 +127,13 @@ ht-degree: 4%
    + [AEM Forms 데이터 통합 소개](using/data-integration.md)
    + [데이터 소스 구성](using/configure-data-sources.md)
    + [Microsoft Dynamics Odata 구성](using/ms-dynamics-odata-configuration.md)
-   + [OAuth 2.0 클라이언트 자격 증명 플로우를 사용한 Salesforce 통합](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [양식 데이터 모델 만들기](using/create-form-data-models.md)
    + [양식 데이터 모델 작업](using/work-with-form-data-model.md)
    + [양식 데이터 모델 사용](using/using-form-data-model.md)
++ 적응형 Forms - 핵심 구성 요소 {#adaptive-forms-core-components}
+   + [환경에 맞는 핵심 구성 요소 활성화](/help/forms/using/enable-adaptive-forms-core-components.md)
+   + [핵심 구성 요소 기반 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md)
+   + [적응형 Forms 기반의 핵심 구성 요소에 대한 테마 만들기](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
 + 적응형 Forms - 기본 작성 {#adaptive-forms-basic-authoring}
    + [적응형 양식 작업 모범 사례](using/adaptive-forms-best-practices.md)
    + [적응형 양식 만들기](using/creating-adaptive-form.md)
@@ -194,7 +197,7 @@ ht-degree: 4%
    + [대화형 통신 구성 속성](using/interactive-communication-configuration-properties.md)
    + [여러 대화형 통신 생성](using/generate-multiple-interactive-communication-using-batch-api.md)
    + [레이아웃 모드를 사용하여 구성 요소 크기 변경](using/resize-using-layout-mode-interactive-communication.md)
-+ 워크플로 {#workflows}
++ 워크플로우 {#workflows}
    + [OSGi의 Forms 중심 워크플로우](using/aem-forms-workflow.md)
    + [OSGi의 Forms 중심 워크플로우 - 단계 참조](using/aem-forms-workflow-step-reference.md)
    + [AEM Forms 중심 워크플로우 단계에 대해 사용자 또는 그룹을 동적으로 선택합니다.](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
@@ -475,7 +478,7 @@ ht-degree: 4%
       + [Adobe PDF 설정 구성](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [보안 설정 구성](/help/forms/using/admin-help/configuring-security-settings.md)
       + [파일 유형 설정 구성](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [PDF Generator 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [PDF 생성기 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [PDF/A 지원 활성화](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [PDFG 네트워크 프린터 설정(Windows에만 해당)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [대체 글꼴 구성](/help/forms/using/admin-help/configuring-fallback-fonts.md)
@@ -692,7 +695,6 @@ ht-degree: 4%
    + [CRX 저장소를 복원할 수 없음](/help/forms/using/restore-crx-repository.md)
    + [AEM 6.5.15.0 서비스 팩을 설치한 후 서비스를 사용할 수 없는 오류 발생](/help/forms/using/aem-service-pack-installation-solution.md)
    + [JBoss Linux 환경의 AEM Forms JEE 6.5.15.0 서비스 팩 설치 문제](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-   + [JEE WebLogic Server에서 EAR 배포 실패](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
 + 레거시 설명서 {#legacy-documentation}
    + [JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드](developing/building-xml.md)
    + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](developing/compressing-decompressing-custom-dsc.md)

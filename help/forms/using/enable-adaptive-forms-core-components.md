@@ -8,7 +8,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 20%
@@ -150,6 +150,6 @@ AEM Archetype 41을 생성하려면 [나중에](https://github.com/adobe/aem-pro
 ## 다음 단계
 
 * [핵심 구성 요소 기반 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [적응형 Forms 기반의 핵심 구성 요소에 대한 테마 만들기](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [적응형 Forms 기반의 핵심 구성 요소용 템플릿 만들기](template-editor.md)

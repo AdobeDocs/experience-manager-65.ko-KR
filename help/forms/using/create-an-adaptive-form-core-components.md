@@ -9,7 +9,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 4%
@@ -30,13 +30,13 @@ ht-degree: 4%
 
 * [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko): 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 사용자 지정 기능, 개발 시간 단축 및 디지털 등록 환경에 대한 유지 관리 비용 절감을 제공합니다. 개발자는 이러한 구성 요소를 손쉽게 맞춤화하고 스타일을 지정할 수 있습니다. Adobe은 이러한 현대적이고 확장 가능한 구성 요소를 활용하여 적응형 Forms을 개발할 것을 권장합니다.
 
-* [적응형 Forms Foundation 구성 요소](creating-adaptive-form.md): 클래식(이전) 데이터 캡처 구성 요소입니다. 적응형 양식 기반의 기존 기초 구성 요소를 편집하는 데 계속 사용할 수 있습니다. Adobe 양식을 만드는 경우 다음을 사용하는 것이 좋습니다.  [적응형 Forms 핵심 구성 요소](creating-adaptive-form-core-components.md) 를 클릭하여 적응형 Forms을 만듭니다.
+* [적응형 Forms Foundation 구성 요소](creating-adaptive-form.md): 클래식(이전) 데이터 캡처 구성 요소입니다. 적응형 양식 기반의 기존 기초 구성 요소를 편집하는 데 계속 사용할 수 있습니다. Adobe 양식을 만드는 경우 다음을 사용하는 것이 좋습니다.  [적응형 Forms 핵심 구성 요소](/help/forms/using/create-adaptive-form.md) 를 클릭하여 적응형 Forms을 만듭니다.
 
 ## 전제 조건
 
 적응형 양식을 만들려면 다음 항목이 필요합니다.
 
-* **환경에 맞는 적응형 Forms 핵심 구성 요소 활성화**: AEM Archetype 프로젝트 버전 41 이상은 다음 경우에 필요합니다. [환경에 맞는 핵심 구성 요소 활성화](/help/forms/using/installing-core-components.md). 환경에 대한 핵심 구성 요소 활성화 시 **적응형 Forms(핵심 구성 요소)** 템플릿 및 캔버스 테마가 환경에 추가됩니다.
+* **환경에 맞는 적응형 Forms 핵심 구성 요소 활성화**: AEM Archetype 프로젝트 버전 41 이상은 다음 경우에 필요합니다. [환경에 맞는 핵심 구성 요소 활성화](/help/forms/using/enable-adaptive-forms-core-components.md). 환경에 대한 핵심 구성 요소 활성화 시 **적응형 Forms(핵심 구성 요소)** 템플릿 및 캔버스 테마가 환경에 추가됩니다.
 
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 여기에는 특정 속성 및 콘텐츠 구조를 포함하는 미리 형식이 지정된 구성 요소가 있습니다. 또한 테마 및 제출 액션을 정의하는 옵션을 제공합니다. 테마는 모양과 느낌을 정의하고 제출 작업은 적응형 양식 제출 시 수행할 작업을 정의합니다. (예: 수집된 데이터를 데이터 소스로 전송) 템플릿 이름: `blank` 지원되는 OOTB:
 
@@ -46,7 +46,7 @@ ht-degree: 4%
 
   >[!NOTE]
   >
-  > 없으시면, **적응형 Forms(핵심 구성 요소)** 사용자 환경의 템플릿, [환경에 맞는 적응형 Forms 핵심 구성 요소 활성화](/help/forms/using/installing-core-components.md). 환경에 대한 핵심 구성 요소 활성화 시 **적응형 Forms(핵심 구성 요소)** 템플릿이 환경에 추가됩니다.
+  > 없으시면, **적응형 Forms(핵심 구성 요소)** 사용자 환경의 템플릿, [환경에 맞는 적응형 Forms 핵심 구성 요소 활성화](/help/forms/using/enable-adaptive-forms-core-components.md). 환경에 대한 핵심 구성 요소 활성화 시 **적응형 Forms(핵심 구성 요소)** 템플릿이 환경에 추가됩니다.
 
 * **적응형 양식 테마**: 테마에는 구성 요소 및 패널에 대한 스타일 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일이 해당 구성 요소에 반영됩니다.  다음 `Canvas` 환경에 대해 핵심 구성 요소를 활성화하면 기본적으로 테마가 추가됩니다. 다음을 수행할 수도 있습니다. [참조 테마 다운로드 및 사용자 지정](create-or-customize-themes-for-adaptive-forms-core-components.md).
 
@@ -91,7 +91,7 @@ ht-degree: 4%
 
    ![렌치 아이콘을 클릭하여 적응형 양식 컨테이너 대화 상자를 열고 제출 액션을 구성합니다](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
-1. 선택 및 구성 **[!UICONTROL 제출 액션]**&#x200B;을 참조하십시오. 제출 액션에 대한 자세한 내용은 [적응형 양식 제출 액션](/help/forms/configuring-submit-actions.md)
+1. 선택 및 구성 **[!UICONTROL 제출 액션]**&#x200B;을 참조하십시오. 제출 액션에 대한 자세한 내용은 [적응형 양식 제출 액션](/help/forms/using/configuring-submit-actions.md)
 
 <!--
     
@@ -117,8 +117,8 @@ ht-degree: 4%
 
 양식 데이터 모델을 사용하여 사용자 작업에 따라 데이터를 보내고 받기 위해 양식을 데이터 소스에 연결할 수 있습니다. 양식을 JSON 스키마에 연결하여 사전 정의된 형식으로 제출된 데이터를 받을 수도 있습니다. 요구 사항에 따라 양식을 JSON 스키마 또는 양식 데이터 모델에 연결합니다.
 
-* [JSON 스키마 만들기 및 환경에 업로드](/help/forms/adaptive-form-json-schema-form-model.md)
-* [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
+* [JSON 스키마 만들기 및 환경에 업로드](/help/forms/using/adaptive-form-json-schema-form-model.md)
+* [양식 데이터 모델 만들기](/help/forms/using/create-form-data-models.md)
 
 ### 양식에 대한 JSON 스키마 또는 양식 데이터 모델 구성
 
@@ -141,7 +141,7 @@ ht-degree: 4%
 
 미리 채우기 서비스를 사용하여 기존 데이터를 사용하는 적응형 양식의 필드를 자동으로 채울 수 있습니다. 사용자가 양식을 열면 해당 필드의 값이 미리 채워집니다. 다음과 같은 작업을 수행할 수 있습니다.
 
-* [사용자 지정 미리 채우기 서비스 만들기](/help/forms/prepopulate-adaptive-form-fields.md)
+* [사용자 지정 미리 채우기 서비스 만들기](/help/forms/using/prepopulate-adaptive-form-fields.md)
 * [양식 데이터 모델 미리 채우기 서비스 사용](#fdm-prefill-service)
 
 ### 양식 데이터 모델 미리 채우기 서비스를 사용하여 적응형 양식의 필드를 미리 채웁니다 {#fdm-prefill-service}
@@ -171,6 +171,6 @@ ht-degree: 4%
 
 ## 참고 항목
 
-* [핵심 구성 요소 기반 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [핵심 구성 요소 기반 적응형 양식 만들기](create-an-adaptive-form-core-components.md)
+* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 

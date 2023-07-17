@@ -3,7 +3,7 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: d244fb50ad0f165d31bc51ee671b80bdd13c860e
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '3777'
 ht-degree: 16%
@@ -41,7 +41,7 @@ ht-degree: 16%
 이 릴리스의 몇 가지 주요 기능 및 개선 사항은 다음과 같습니다.
 
 * **검색 환경 개선 사항** - 이제 검색 결과에 표시되는 자산에 대해 다음 작업을 빠르게 수행할 수 있습니다.
-   * 워크플로 만들기
+   * 워크플로우 만들기
    * 버전 만들기
    * 자산 연결 또는 연결 해제
 
@@ -54,11 +54,11 @@ ht-degree: 16%
 
 * **[AEM 페이지 편집기 내 적응형 양식](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)**: 이제 AEM 페이지 편집기를 사용하여 여러 양식을 빠르게 만들고 사이트 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 비헤이비어, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화 등 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지에서 원활한 데이터 캡처 경험을 만들 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
    * AEM Sites 편집기 또는 경험 조각에서 양식 구성 요소를 적응형 양식 컨테이너 구성 요소로 드래그 앤 드롭하여 적응형 양식을 만듭니다.
-   * AEM Sites 편집기 내에서 적응형 양식 마법사를 사용하여 Sites 페이지와는 별개로 양식을 만들게 되면, 여러 페이지에서 해당 양식을 자유롭게 재사용할 수 있습니다.
+   * AEM Sites 편집기 내에서 적응형 양식 마법사를 사용하여 Sites 페이지와는 별개로 양식을 만들게 되면 여러 페이지에서 해당 양식을 자유롭게 재사용할 수 있습니다.
    * Sites 페이지에 여러 양식을 추가하여 사용자 경험을 간소화하고 더 많은 유연성을 제공합니다.
 * **[Experience Manager Forms에서 reCAPTCHA Enterprise 지원](/help/forms/using/captcha-adaptive-forms.md)**: 기존 Google reCAPTCHA v2 지원 외에도 Experience Manager Forms의 reCAPTCHA Enterprise 지원이 추가되어 사기 행위 및 스팸에 대한 보호 기능이 강화되었습니다.
 * **[Experience Manager Forms을 통한 Adobe Acrobat Sign for Government 지원](/help/forms/using/adobe-sign-integration-adaptive-forms.md)**: 이제 AEM Forms이 Adobe Acrobat Sign for Government(FedRAMP 준수)와 통합되었습니다. 이 통합은 공공기관 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출과 함께 전자 서명의 고급 규정 준수 및 보안을 제공합니다. 공공기관용 Adobe Acrobat Sign과 통합하여 Adobe의 파트너와 공공기관 고객들은 가장 중요하고 민감한 비즈니스 라인에서 적응형 양식 전자 서명을 사용할 수 있습니다. 이 보안 계층이 추가되면 Adobe의 공공기관 고객들이 안심할 수 있도록 모든 전자 서명은 FedRAMP Moderate 규정을 완전히 준수해야 합니다.
-* **[데이터 교환을 위해 Experience Manager Forms과 Salesforce 통합 활성화](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)**: OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 Experience Manager Forms과 Salesforce 애플리케이션 간의 통합을 구성합니다. 이 기능을 통해 안전하고 직접적인 애플리케이션 인증 및 권한 부여가 가능하며 사용자 개입 없이 원활한 통신이 가능합니다.
+* **데이터 교환을 위해 Experience Manager Forms과 Salesforce 통합 활성화**: OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 Experience Manager Forms과 Salesforce 애플리케이션 간의 통합을 구성합니다. 이 기능을 통해 안전하고 직접적인 애플리케이션 인증 및 권한 부여가 가능하며 사용자 개입 없이 원활한 통신이 가능합니다.
 * **워크플로우 엔진의 최적화 및 향상된 기능**: 워크플로 인스턴스 수를 최소화하여 워크플로 엔진의 성능을 높입니다. 에 더하여 `COMPLETED` 및 `RUNNING` 상태 값, 워크플로우는 다음 세 가지 새 상태 값도 지원합니다. `ABORTED`, `SUSPENDED`, 및 `FAILED`.
 
 
@@ -243,7 +243,7 @@ org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supporte
 
 * TEXT -->
 
-## 워크플로{#workflow-6517}
+## 워크플로우{#workflow-6517}
 
 * 워크플로 콘솔 변경 사항. (NPR-40502)
 * `SegmentNotfound errors` 클래스에서 리소스 확인자가 닫히지 않아 발생하는 프로덕션 작성자 인스턴스의 로그 `com.day.cq.workflow.impl.email.EMailNotificationServic`. (NPR-40187)

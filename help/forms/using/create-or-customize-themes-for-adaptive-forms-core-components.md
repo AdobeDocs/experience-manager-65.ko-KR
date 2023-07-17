@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '2072'
 ht-degree: 4%
 
 ---
@@ -68,7 +68,7 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 ### 테마를 맞춤화하기 위한 사전 요구 사항 {#prerequisites}
 
-* [내 환경에 맞는 적응형 양식 핵심 구성 요소 활성화.](/help/forms/using/installing-core-components.md)
+* [내 환경에 맞는 적응형 양식 핵심 구성 요소 활성화.](/help/forms/using/enable-adaptive-forms-core-components.md)
 
 * 의 최신 릴리스 설치 [아파치 메이븐](https://maven.apache.org/download.cgi) Apache Maven은 Java™ 프로젝트에 일반적으로 사용되는 빌드 자동화 도구입니다. 최신 릴리스를 설치하면 테마 맞춤화에 필요한 종속성이 확보됩니다.
 
@@ -145,20 +145,17 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 1. 편집할 `<your-theme-sources>/src/site/_variables.scss` 페이지를 엽니다.
 1. 모든 속성의 값을 변경합니다. 예를 들어 기본 오류 색상은 빨간색입니다. 오류 색상을 빨간색에서 파란색으로 변경하려면 `$error`변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. (예: `$error: #196ee5`)
+
+   ![예: 오류 색상이 파란색으로 설정됨](/help/forms/using/assets/theme-level-changes.png)
+
 1. 파일을 저장하고 닫습니다.
 
-<!--
-
-![Example: Error color set to blue](/help/forms/using/assets/variable-customization.png)
-
--->
 
 마찬가지로 `variable.scss` 글꼴 모음 및 유형, 테마 및 글꼴 색상, 글꼴 크기, 테마 간격, 오류 아이콘, 테마 테두리 스타일 및 여러 적응형 양식 구성 요소에 영향을 주는 더 많은 변수를 설정할 파일입니다.
 
 ##### 구성 요소 수준 스타일 설정 {#component-based-customization}
 
 또한 글꼴, 색상, 크기 및 단추, 확인란, 컨테이너, 바닥글 등과 같은 특정 적응형 양식 핵심 구성 요소의 기타 CSS 속성을 사용자 지정하는 옵션이 있습니다. 특정 구성 요소와 연결된 CSS 파일을 편집하여 해당 스타일을 조직의 브랜딩에 맞출 수 있습니다. 구성 요소의 스타일을 사용자 지정하려면 다음 단계를 따르십시오.
-
 
 1. 파일 열기 `<your-theme-sources>/src/components/<component>/<component.scss>` 편집할 수 있습니다. 예를 들어 버튼 구성 요소의 글꼴 색상을 변경하려면 `<your-theme-sources>/src/components/button/button.scss`, 파일 을 참조하십시오.
 1. 요구 사항에 따라 의 값을 변경합니다. 예를 들어, 마우스 오버 시 버튼 구성 요소의 색상을 녹색으로 변경하려면 의 값을 변경합니다. `color: $white` 의 속성 `cmp-adaptiveform-button__widget:hover` 클래스에서 16진수 코드 #12b453 또는 다른 녹색 음영으로 변환할 수 있습니다. 최종 코드는 다음과 같습니다.
@@ -326,9 +323,9 @@ AEM 인스턴스에 테마를 배포하려면 클라이언트 라이브러리로
 
 ## 참고 항목
 
-* [핵심 구성 요소 기반 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [핵심 구성 요소 기반 적응형 양식 만들기](create-an-adaptive-form-core-components.md)
 * [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)
 * [적응형 Forms 기반의 핵심 구성 요소에 대한 테마 만들기 또는 사용자 지정](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [적응형 Forms 기반의 핵심 구성 요소용 템플릿 만들기](template-editor.md)
-* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
