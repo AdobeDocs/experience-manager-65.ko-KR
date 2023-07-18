@@ -11,14 +11,19 @@ discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 1%
+source-wordcount: '1995'
+ht-degree: 2%
 
 ---
 
 # 양식 메타데이터 관리{#manage-form-metadata}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html) |
+| AEM 6.5 | 이 문서 |
 
 ## 개요  {#overview-nbsp}
 
@@ -203,7 +208,6 @@ AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
    * 왼쪽 패널에 양식의 축소판이 포함됨
    * 오른쪽 패널에는 여러 탭에 분산되어 있는 읽기 전용 모드의 메타데이터 속성이 포함되어 있습니다.
 
-
 ## 양식 메타데이터 값 추가/업데이트 {#add-update-form-metadata-values}
 
 기존 메타데이터 속성의 값을 편집하거나 기존 메타데이터 속성 필드에 새 값을 추가할 수 있습니다(예: 메타데이터 필드가 비어 있는 경우).
@@ -240,7 +244,6 @@ AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
 >* 썸네일에 사각형 이미지를 사용합니다. 정사각형이 아닌 이미지를 사용하고 목록 보기에서 축소판을 보면 축소판이 잘린 상태로 나타납니다.
 >* 새 이미지가 업로드되거나 생성되면 썸네일이 이 이미지로 대체되며 이전 이미지로 재설정할 수 없습니다.
 >
-
 
 ## 사용자 지정 메타데이터 추가 {#add-custom-metadata}
 

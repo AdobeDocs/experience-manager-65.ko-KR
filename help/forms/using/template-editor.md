@@ -11,14 +11,21 @@ discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1964'
-ht-degree: 0%
+source-wordcount: '1987'
+ht-degree: 1%
 
 ---
 
 # 적응형 양식 템플릿{#adaptive-form-templates}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html) |
+| AEM 6.5 | 이 문서 |
+
+
 
 양식을 작성할 때 편집기에서 양식 구조, 콘텐츠 및 작업을 정의하는 필드 및 구성 요소를 추가합니다. 에서 필드 및 구성 요소를 추가합니다 `guideRootPanel` 양식 컨테이너. 템플릿 편집기를 사용하면 작성자가 양식을 만드는 데 사용할 수 있는 기본 구조와 초기 콘텐츠가 포함된 템플릿을 만들 수 있습니다.
 

@@ -11,14 +11,20 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '3466'
-ht-degree: 2%
+source-wordcount: '3488'
+ht-degree: 3%
 
 ---
 
 # 적응형 양식을 위한 기록 문서 생성{#generate-document-of-record-for-adaptive-forms}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM 6.5 | 이 문서 |
+
 
 ## 개요 {#overview}
 
@@ -287,7 +293,8 @@ ht-degree: 2%
    >
    >    * 적응형 양식은 스키마를 기반으로 합니다.
    >    * 을(를) 사용하고 있습니다. **양식 템플릿을 기록 문서 템플릿으로 연결** 기록 문서 옵션
-
+   >
+   >
 
 1. 클릭 **완료.**
 

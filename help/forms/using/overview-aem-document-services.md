@@ -10,14 +10,20 @@ topic-tags: document_services
 discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 0%
+source-wordcount: '1423'
+ht-degree: 1%
 
 ---
 
 # AEM Document Services 개요{#overview-of-aem-document-services}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html) |
+| AEM 6.5 | 이 문서 |
+
 
 AEM Document Services는 PDF 문서 생성, 어셈블 및 보안을 위한 일련의 OSGi 서비스입니다. 문서 서비스에는 다음 서비스가 포함됩니다.
 

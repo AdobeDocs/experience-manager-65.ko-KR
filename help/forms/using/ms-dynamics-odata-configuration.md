@@ -10,14 +10,19 @@ discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 0%
+source-wordcount: '1227'
+ht-degree: 1%
 
 ---
 
 # Microsoft Dynamics OData 구성{#microsoft-dynamics-odata-configuration}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM 6.5 | 이 문서 |
 
 ![데이터 통합](assets/data-integeration.png)
 
@@ -25,7 +30,7 @@ Microsoft Dynamics는 고객 계정, 연락처, 리드, 기회 및 사례를 만
 
 * Microsoft Dynamics 서버에 데이터를 쿼리하고 적응형 양식을 미리 채웁니다.
 * 적응형 양식 제출 시 Microsoft Dynamics에 데이터 쓰기
-* 양식 데이터 모델에 정의된 사용자 지정 엔터티를 통해 Microsoft Dynamics에서 데이터를 쓰고 그 반대의 경우도 마찬가지입니다
+* 양식 데이터 모델에 정의된 사용자 지정 엔터티를 통해 Microsoft Dynamics에서 데이터를 쓰고 반대로
 
 AEM Forms 추가 기능 패키지에는 Microsoft Dynamics를 AEM Forms과 빠르게 통합하는 데 활용할 수 있는 참조 OData 구성도 포함되어 있습니다.
 
@@ -100,7 +105,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 
    * `Client-ID` 는 GUID 생성기를 사용하여 생성할 수 있는 클라이언트 ID입니다.
    * `redirect-uri` 는 AEM Forms에서 Microsoft Dynamics OData 클라우드 서비스의 URL입니다. AEM Forms 패키지와 함께 설치된 기본 클라우드 서비스는 다음 URL에 배포됩니다.
-      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+     `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 다음 명령을 실행하여 AD FS 컴퓨터에 대한 액세스 권한을 부여합니다.
 

@@ -12,14 +12,19 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 0%
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
 # 적응형 양식 지역화를 위한 새 로케일 지원{#supporting-new-locales-for-adaptive-forms-localization}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
+| AEM 6.5 | 이 문서 |
 
 ## 로케일 사전 정보 {#about-locale-dictionaries}
 
@@ -38,9 +43,8 @@ ht-degree: 0%
 * 다음 매개 변수를 지정된 순서로 봅니다.
 
    * 요청 매개 변수 `afAcceptLang`
-사용자의 브라우저 로케일을 재정의하려면 
-`afAcceptLang` 로케일을 강제 적용하기 위한 매개 변수를 요청합니다. 예를 들어 다음 URL은 일본어 로케일로 양식을 강제로 렌더링합니다.
-      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+사용자의 브라우저 로케일을 재정의하려면 `afAcceptLang` 로케일을 강제 적용하기 위한 매개 변수를 요청합니다. 예를 들어 다음 URL은 일본어 로케일로 양식을 강제로 렌더링합니다.
+     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * 을 사용하여 요청에 지정된 사용자에 대한 브라우저 로케일 집합입니다. `Accept-Language` 머리글입니다.
 
@@ -73,7 +77,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 
 ### 가이드 현지화 서비스에 로케일 추가 {#add-a-locale-to-the-guide-localization-service-br}
 
-1. 이동 `https://'[server]:[port]'/system/console/configMgr`.
+1. `https://'[server]:[port]'/system/console/configMgr`로 이동합니다.
 1. 클릭하여 편집 **안내서 로컬라이제이션 서비스** 구성 요소.
 1. 추가할 로케일을 지원되는 로케일 목록에 추가합니다.
 

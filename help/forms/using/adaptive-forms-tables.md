@@ -10,14 +10,20 @@ discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2421'
 ht-degree: 0%
 
 ---
 
 # 적응형 양식의 표{#tables-in-adaptive-forms}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html) |
+| AEM 6.5 | 이 문서 |
+
 
 표를 사용하면 복잡한 데이터를 효과적이고 단순하며 체계적으로 나타낼 수 있습니다. 사용자가 정보를 쉽게 식별하고 행 및 열의 정렬된 배열로 입력을 제공하는 데 도움이 됩니다. 금융 서비스 및 정부 조직의 양식에서는 대부분 숫자를 입력하고 계산을 수행하기 위해 큰 데이터 테이블이 필요합니다.
 
@@ -75,7 +81,7 @@ AEM Forms은 구성 요소 브라우저의 사이드바에 적응형 양식에�
 
 1. 표를 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png) 를 클릭하여 사이드바에서 속성을 확인합니다.
 1. [액세스 가능성] 탭에서 요약을 지정합니다.
-1. 클릭 **완료**.
+1. **완료**&#x200B;를 클릭합니다.
 
 ### 테이블의 열 정렬 {#sortcolumnstable}
 
@@ -137,7 +143,7 @@ AEM Forms은 구성 요소 브라우저의 사이드바에 적응형 양식에�
 
 1. 테이블 행을 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png).
 1. 반복 설정 탭에서 테이블의 행 수를 제한할 최소 및 최대 개수를 지정합니다.
-1. 클릭 **완료**.
+1. **완료**&#x200B;를 클릭합니다.
 
 런타임 시 다음이 표시됩니다. **+** 및 *-* 단추를 클릭하여 행을 추가하거나 삭제합니다.
 
@@ -312,4 +318,4 @@ XFA 테이블 요소는 테이블 구성 요소에 매핑되고 적응형 양식
 * XSD 기반 테이블을 작성하는 동안 행을 위아래로 이동하면 양식 제출 시 생성된 데이터 XML에서 테이블 행의 일부 데이터 손실이 표시됩니다.
 * 기본 테이블의 각 본문 셀에는 사전 정의된 요소 이름이 연결되어 있습니다. 적응형 양식에 다른 표를 추가하면 새 표의 기본 본문 셀이 첫 번째 표와 동일한 요소 이름을 갖게 됩니다. 이러한 시나리오에서는 양식 제출 시 생성된 데이터에 테이블 중 하나의 기본 본문 셀에만 데이터가 포함됩니다. 따라서 기본 본문 셀의 요소 이름을 변경하여 테이블 간에 고유한 이름을 유지하고 데이터 손실을 방지해야 합니다.
 
-   기본 본문 셀에만 적용할 수 있습니다. 표에 행이나 열을 더 추가하면 기본값이 아닌 본문 셀에 대한 고유한 요소 이름이 자동으로 생성됩니다.
+  기본 본문 셀에만 적용할 수 있습니다. 표에 행이나 열을 더 추가하면 기본값이 아닌 본문 셀에 대한 고유한 요소 이름이 자동으로 생성됩니다.

@@ -3,15 +3,21 @@ title: OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 AEM For
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 description: OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 AEM Forms과 Salesforce 통합을 통합하는 절차
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
-source-git-commit: cc0375f5b5616f82a73bd983a9da95225c51db99
+exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 0%
+source-wordcount: '524'
+ht-degree: 4%
 
 ---
 
-
 # OAuth 2.0 클라이언트 자격 증명 플로우를 사용한 Salesforce 통합  {#configure-salesforce-with-ouath-2.0-client-credential}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html) |
+| AEM 6.5 | 이 문서 |
+
 
 AEM Forms을 Salesforce 애플리케이션과 통합하기 위해 OAuth 2.0 클라이언트 자격 증명 플로우가 사용됩니다. 사용자 관여 없이 직접 의사소통을 할 수 있는 표준화되고 안전한 방법이다. 이 흐름에서 클라이언트 애플리케이션(AEM Form)은 Salesforce 연결 애플리케이션에 정의된 클라이언트 자격 증명을 교환하여 액세스 토큰을 얻습니다. 필수 클라이언트 자격 증명에는 소비자 키 및 소비자 암호가 포함됩니다.
 
@@ -74,5 +80,3 @@ Swagger는 RESTful API를 개발하고 설명하는 규칙, 사양 및 도구의
 1. 연결이 성공하면 **[!UICONTROL 만들기]** 단추를 클릭합니다.
 
 이제 다음을 수행할 수 있습니다. [양식 데이터 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) 을 눌러 구성된 데이터 소스를 적응형 양식과 통합합니다.
-
-

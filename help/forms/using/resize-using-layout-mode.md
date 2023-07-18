@@ -3,14 +3,20 @@ title: 레이아웃 모드를 사용하여 적응형 양식의 구성 요소 크
 description: 레이아웃 모드에서 사용할 수 있는 응답형 그리드를 사용하여 구성 요소의 위치를 정의합니다.
 feature: Adaptive Forms
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 0%
+source-wordcount: '1068'
+ht-degree: 1%
 
 ---
 
 # 레이아웃 모드를 사용하여 구성 요소 크기 변경 {#use-layout-mode-to-resize-components}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/resize-using-layout-mode.html?) |
+| AEM 6.5 | 이 문서 |
+
 
 적응형 양식 작성 인터페이스를 사용하면 레이아웃 모드를 사용하여 구성 요소의 크기를 조정할 수 있습니다. 열 내에 파란색 점을 드래그 앤 드롭하여 구성 요소를 배치할 시작점과 끝점을 정의합니다. 응답형 격자 내에서 구성 요소를 탭하면 파란색 점이 표시됩니다. 응답형 격자는 12개의 동일한 열로 구성됩니다. 대체 열의 흰색과 파란색 색상 음영은 한 열을 다른 열과 구분합니다.
 

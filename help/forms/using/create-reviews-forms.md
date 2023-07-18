@@ -8,14 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 docset: aem65
 feature: Adaptive Forms
-source-git-commit: 0ca7d76d0f5a3e440e5df9c986e3bb0efec368c1
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 2%
 
 ---
 
 # 양식에 대한 리뷰 생성 및 관리{#creating-and-managing-reviews-to-forms}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html) |
+| AEM 6.5 | 이 문서 |
 
 ## 리뷰 {#review}
 
@@ -39,7 +45,6 @@ ht-degree: 0%
    >* 관리자는 양식 사용자와 관련된 모든 그룹에 액세스할 수 있습니다.
    >* [서비스 사용자] 그룹을 선택하여 검토할 수 없습니다.
 
-
 ### 검토를 설정할 때 발생하는 작업 {#actions-that-occur-when-a-review-is-set-up}
 
 이 섹션에서는 검토를 만들거나 설정할 때 수행되는 작업을 설명합니다.
@@ -59,7 +64,6 @@ ht-degree: 0%
 >
 >* 진행 중인 검토만 수정할 수 있습니다.
 >* 완료된 검토는 수정할 수 없습니다.
-
 
 1. 양식 탭으로 이동하여 양식을 선택합니다.
 
@@ -111,4 +115,5 @@ ht-degree: 0%
    1. **검토자**: 각 검토자에 대해 검토와 관련된 완료되지 않은 작업이 종료됩니다. 검토자의 알림 섹션에 작업이 더 이상 &#39;보류 중&#39;으로 표시되지 않습니다.
    1. **개시자**: 검토 개시자에게 할당된 작업이 완료된 것으로 표시됩니다. 작업이 검토 개시자의 알림 섹션에서 제거됩니다.
    1. **모두**: 리뷰가 이전 리뷰 섹션에 표시됩니다. 더 이상 댓글을 추가할 수 없습니다.
+
    ![검토 완료](assets/review-complete-imgg.png)

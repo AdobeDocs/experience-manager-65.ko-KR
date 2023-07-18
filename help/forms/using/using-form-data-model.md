@@ -10,14 +10,20 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 0%
+source-wordcount: '1275'
+ht-degree: 1%
 
 ---
 
 # 양식 데이터 모델 사용{#use-form-data-model}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html) |
+| AEM 6.5 | 이 문서 |
+
 
 ![영웅 이미지](do-not-localize/data-integration.png)
 
@@ -75,7 +81,7 @@ AEM Forms 데이터 통합을 사용하면 다양한 백엔드 데이터 소스�
 
 대화형 통신 만들기 대화 상자의 일반 탭
 
-자세한 내용은 다음을 참조하십시오.
+자세한 내용은 다음 문서를 참조하십시오.
 
 [대화형 통신 만들기](../../forms/using/create-interactive-communication.md)
 

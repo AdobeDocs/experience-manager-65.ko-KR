@@ -10,14 +10,19 @@ discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2191'
 ht-degree: 0%
 
 ---
 
 # 적응형 양식 필드 미리 채우기{#prefill-adaptive-form-fields}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html) |
+| AEM 6.5 | 이 문서 |
 
 ## 소개 {#introduction}
 
@@ -25,7 +30,7 @@ ht-degree: 0%
 
 ## 미리 채우기 데이터 구조 {#the-prefill-structure}
 
-적응형 양식에는 바인딩된 필드와 바인딩되지 않은 필드가 혼합되어 있을 수 있습니다. 바인딩된 필드는 콘텐츠 파인더 탭에서 드래그하고 비어 있지 않은 필드를 포함합니다 `bindRef` 필드 편집 대화 상자의 속성 값입니다. 바인딩되지 않은 필드는 사이드 킥의 구성 요소 브라우저에서 직접 드래그되며 비어 있습니다 `bindRef` 값.
+적응형 양식에는 바인딩된 필드와 바인딩되지 않은 필드가 혼합되어 있을 수 있습니다. 바인딩된 필드는 콘텐츠 파인더 탭에서 드래그하고 비어 있지 않은 필드를 포함합니다 `bindRef` 필드 편집 대화 상자의 속성 값입니다. 바인딩되지 않은 필드는 Sidekick의 구성 요소 브라우저에서 직접 드래그되며 비어 있음 `bindRef` 값.
 
 적응형 양식의 바인딩된 필드와 바인딩되지 않은 필드를 모두 미리 채울 수 있습니다. 미리 채우기 데이터에는 적응형 양식의 바인딩된 필드와 바인딩되지 않은 필드를 모두 미리 채우는 afBoundData 섹션과 afUnBoundData 섹션이 포함됩니다. 다음 `afBoundData` 섹션에는 바인딩된 필드 및 패널의 미리 채우기 데이터가 포함됩니다. 이 데이터는 연결된 양식 모델 스키마와 호환되어야 합니다.
 
@@ -92,7 +97,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 ### XML 스키마 기반 적응형 양식  {#xml-schema-af}
 
-XML 스키마를 기반으로 하는 적응형 양식을 위한 미리 채우기 XML 및 제출된 XML의 구조는 다음과 같습니다.
+XML 스키마를 기반으로 하는 적응형 양식에 대해 사전 작성된 XML 및 제출된 XML의 구조는 다음과 같습니다.
 
 * **XML 구조 미리 채우기**: 미리 채우기 XML이 연결된 XML 스키마를 준수해야 합니다. 바인딩되지 않은 필드를 미리 채우려면 미리 채우기 XML 구조를 /afData/afBoundData 태그로 래핑합니다.
 * **제출된 XML 구조**: 미리 채우기 XML을 사용하지 않으면 제출된 XML에 의 바인딩된 필드와 바인딩되지 않은 필드 모두에 대한 데이터가 포함됩니다. `afData` 래퍼 태그입니다. 미리 채우기 XML을 사용하는 경우 제출된 XML의 구조는 미리 채우기 XML과 동일합니다. 미리 채우기 XML이 `afData` 루트 태그입니다. 출력 XML의 형식은 동일합니다. 미리 채우기 XML에 `afData/afBoundData` 래퍼 및 대신 와 같은 스키마 루트 태그에서 직접 시작합니다. `employeeData`로 시작하는 경우 제출된 XML도 `employeeData` 태그에 가깝게 배치하십시오.
@@ -132,7 +137,7 @@ XML 스키마를 기반으로 하는 적응형 양식을 위한 미리 채우기
 
 >[!NOTE]
 >
->바인딩된 패널(비어 있지 않은 패널)에서는 바인딩되지 않은 필드를 사용하지 않는 것이 좋습니다 `bindRef` 사이드 킥 또는 데이터 소스 탭에서 구성 요소를 끌어 옵니다. 이로 인해 바인딩되지 않은 필드의 데이터가 손실될 수 있습니다. 또한 필드 이름은 양식 전체에서 고유하며 특히 바인딩되지 않은 필드에 대해 고유한 것이 좋습니다.
+>바인딩된 패널(비어 있지 않은 패널)에서는 바인딩되지 않은 필드를 사용하지 않는 것이 좋습니다 `bindRef` Sidekick 또는 데이터 소스 탭에서 구성 요소를 끌어 옵니다. 이로 인해 바인딩되지 않은 필드의 데이터가 손실될 수 있습니다. 또한 필드 이름은 양식 전체에서 고유하며 특히 바인딩되지 않은 필드에 대해 고유한 것이 좋습니다.
 
 #### afData 및 afBoundData 래퍼가 없는 예 {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -197,7 +202,7 @@ JSON 스키마 모델을 사용하는 필드의 경우, 데이터는 아래 샘�
 
 >[!NOTE]
 >
->바인딩된 패널(사이드 킥 또는 데이터 소스 탭에서 구성 요소를 드래그하여 만든 비어 있지 않은 bindRef가 있는 패널)에서 바인딩되지 않은 필드를 사용하는 것은 다음과 같습니다 **아님** 바인딩되지 않은 필드의 데이터가 손실될 수 있으므로 권장됩니다. 특히 바인딩되지 않은 필드의 경우 양식에서 고유한 필드 이름을 사용하는 것이 좋습니다.
+>바인딩된 패널(Sidekick 또는 데이터 소스 탭에서 구성 요소를 드래그하여 만든 비어 있지 않은 bindRef가 있는 패널)에서 바인딩되지 않은 필드를 사용하는 것은 다음과 같습니다 **아님** 바인딩되지 않은 필드의 데이터가 손실될 수 있으므로 권장됩니다. 특히 바인딩되지 않은 필드의 경우 양식에서 고유한 필드 이름을 사용하는 것이 좋습니다.
 
 ### 양식 모델이 없는 적응형 양식 {#adaptive-form-with-no-form-model}
 
@@ -244,6 +249,7 @@ JSON 스키마 모델을 사용하는 필드의 경우, 데이터는 아래 샘�
 
    * file:///C:/Users/public/Document/Prefill/입니다.&#42;
    * https://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
    >기본적으로 모든 유형의 적응형 Forms(XSD, XDP, JSON, FDM 및 양식 모델 기반 없음)에 대해 crx 파일을 통해 미리 채우기가 허용됩니다. 미리 채우기는 JSON 및 XML 파일에서만 허용됩니다.
@@ -384,8 +390,9 @@ prefill-page component.zip
    1. Configuration.af.clientside.datamerge.enabled.name 옵션을 활성화합니다
 * 명령줄에서 을 활성화하거나 비활성화하려면 다음을 수행합니다.
    * 활성화하려면 다음 cURL 명령을 실행합니다.
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
    * 비활성화하려면 다음 cURL 명령을 실행합니다.
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
-   클라이언트에서 데이터 미리 채우기 옵션을 최대한 활용하려면 미리 채우기 서비스를 업데이트하여 를 반환합니다 [파일 첨부 맵](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) 및 [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
+     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+  클라이언트에서 데이터 미리 채우기 옵션을 최대한 활용하려면 미리 채우기 서비스를 업데이트하여 를 반환합니다 [파일 첨부 맵](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) 및 [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)

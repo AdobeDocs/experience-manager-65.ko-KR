@@ -11,14 +11,19 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 1%
+source-wordcount: '1663'
+ht-degree: 2%
 
 ---
 
 # Forms 포털 페이지 만들기{#creating-a-forms-portal-page}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM 6.5 | 이 문서 |
 
 Forms 포털 구성 요소는 웹 개발자에게 Adobe Experience Manager(AEM)를 사용하여 작성된 웹 사이트에서 양식 포털을 만들고 사용자 지정할 수 있는 구성 요소를 제공합니다. Forms 포털에 대한 간략한 개요는 를 참조하십시오. [포털에 양식 게시 소개](../../forms/using/introduction-publishing-forms.md).
 
@@ -158,7 +163,7 @@ Forms 포털 구성 요소 범주
 
 ### 검색 창 {#search-pane}
 
-검색 창에서는 AEM Sidekick의 Document Services Predicates 카테고리에서 날짜 설명, 전체 텍스트 설명, 속성 설명 및 태그 설명 구성 요소를 추가할 수 있습니다. 이러한 구성 요소는 사용자가 나열된 양식에서 검색을 수행할 수 있는 검색 기능을 구현합니다.
+검색 창에서는 AEM Sidekick의 문서 서비스 술어 범주에서 날짜 술어, 전체 텍스트 술어, 속성 술어 및 태그 술어 구성 요소를 추가할 수 있습니다. 이러한 구성 요소는 사용자가 나열된 양식에서 검색을 수행할 수 있는 검색 기능을 구현합니다.
 
 **팁:** *사전 설정된 기준에 따라 양식 포털에 표시되는 양식 목록을 제어하고 최종 사용자를 위한 검색 기능을 숨길 수 있습니다. 양식 목록을 제어하려면 술어 구성 요소를 사용하여 검색 필터를 적용합니다. 구성 요소 편집 대화 상자의 디스플레이 탭에서 기본 필터 값을 지정하고 검색을 비활성화할 수도 있습니다.*
 

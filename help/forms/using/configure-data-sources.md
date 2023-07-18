@@ -10,14 +10,20 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: db4b432a95856302eb2e80b6386eee557d6afd17
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2112'
 ht-degree: 1%
 
 ---
 
 # 데이터 소스 구성{#configure-data-sources}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
+| AEM 6.5 | 이 문서 |
+
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 
@@ -51,7 +57,6 @@ AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 
    >
    > 1. https://&#39;으로 이동[server]:[포트]&#39;/system/console/crypto.
    > 1. 다음에서 **[!UICONTROL 일반 텍스트]** 필드, 암호화할 암호 또는 문자열을 지정하고 탭합니다. **[!UICONTROL Protect]**.
-
    >
    >암호화된 텍스트는 구성에 지정할 수 있는 보호된 텍스트 필드에 나타납니다.
 
@@ -131,7 +136,8 @@ RESTful 서비스를 구성하려면 다음을 수행합니다.
       * 체계: REST API에서 사용하는 전송 프로토콜입니다. 드롭다운 목록에 표시되는 구성표 유형의 수는 Swagger 소스에 정의된 구성표에 따라 다릅니다.
       * 호스트: REST API를 제공하는 호스트의 도메인 이름 또는 IP 주소입니다. 필수 필드입니다.
       * 기본 경로: 모든 API 경로의 URL 접두어. 선택 필드입니다.\
-         필요한 경우 이러한 필드에 대해 미리 채워진 값을 편집합니다.
+        필요한 경우 이러한 필드에 대해 미리 채워진 값을 편집합니다.
+
    * 인증 유형 선택 — 없음, OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증, API 키, 사용자 지정 인증 또는 상호 인증 - RESTful 서비스에 액세스하여 인증에 대한 세부 정보를 제공합니다.
 
    다음을 선택하는 경우 **[!UICONTROL API 키]** 인증 유형으로 API 키 값을 지정합니다. API 키는 요청 헤더 또는 쿼리 매개 변수로 전송될 수 있습니다. 다음에서 다음 옵션 중 하나를 선택합니다 **[!UICONTROL 위치]** 드롭다운 목록을 나열하고 헤더 이름 또는 쿼리 매개 변수를 **[!UICONTROL 매개 변수 이름]** 필드입니다.
@@ -176,10 +182,10 @@ SOAP 기반 웹 서비스는 다음을 사용하여 설명합니다. [WSDL(웹 �
    * 서비스 엔드포인트. WSDL에 언급된 서비스 끝점을 재정의하려면 이 필드에 값을 지정하십시오.
    * 인증 유형 선택 — 없음, OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증, 사용자 지정 인증, X509 토큰 또는 상호 인증 — SOAP 서비스에 액세스하여 인증에 대한 세부 정보를 제공합니다.
 
-      다음을 선택하는 경우 **[!UICONTROL X509 토큰]** 인증 유형으로 X509 인증서를 구성합니다. 자세한 내용은 [인증서 설정](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+     다음을 선택하는 경우 **[!UICONTROL X509 토큰]** 인증 유형으로 X509 인증서를 구성합니다. 자세한 내용은 [인증서 설정](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 에서 X509 인증서에 대한 KeyStore 별칭을 지정합니다. **[!UICONTROL 키 별칭]** 필드. 인증 요청이 유효한 상태로 유지될 때까지의 시간(초)을 **[!UICONTROL TTL(Time to Live)]** 필드. 메시지 본문 또는 타임스탬프 헤더 또는 둘 다에 서명하려면 선택합니다(선택적).
 
-      다음을 선택하는 경우 **[!UICONTROL 상호 인증]** 인증 유형으로 다음을 참조하십시오. [RESTful 및 SOAP 웹 서비스를 위한 인증서 기반 상호 인증](#mutual-authentication).
+     다음을 선택하는 경우 **[!UICONTROL 상호 인증]** 인증 유형으로 다음을 참조하십시오. [RESTful 및 SOAP 웹 서비스를 위한 인증서 기반 상호 인증](#mutual-authentication).
 
 1. 누르기 **[!UICONTROL 만들기]** 를 클릭하여 SOAP 웹 서비스에 대한 클라우드 구성을 만듭니다.
 

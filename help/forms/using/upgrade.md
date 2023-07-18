@@ -11,14 +11,20 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 2%
+source-wordcount: '356'
+ht-degree: 4%
 
 ---
 
 # AEM 6.5 Forms로 업그레이드{#upgrade-to-aem-forms}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html) |
+| AEM 6.5 | 이 문서 |
+
 
 AEM 6.5 Forms에는 양식 및 서신에 대한 생성, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다. AEM 6.5 Forms의 모든 새로운 기능과 향상된 기능에 대해 알아보려면 다음을 참조하십시오. [새로운 기능 요약 문서](../../forms/using/whats-new.md).
 

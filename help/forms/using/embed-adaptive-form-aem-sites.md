@@ -10,14 +10,20 @@ topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1105'
 ht-degree: 1%
 
 ---
 
 # AEM sites 페이지에 적응형 양식 또는 대화형 통신 포함 {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html) |
+| AEM 6.5 | 이 문서 |
+
 
 ## 개요 {#overview}
 
@@ -62,10 +68,10 @@ AEM Forms 컨테이너 구성 요소를 사용하여 적응형 양식 또는 대
       * **감사 인사 메시지**: 서식 있는 텍스트 편집기를 사용하여 메시지를 작성하여 양식 제출 시 표시하십시오. 이 옵션은 감사 메시지를 표시하도록 선택한 경우에만 사용할 수 있습니다.
       * **감사 인사 페이지**: 양식 제출에 표시할 페이지를 검색하여 선택합니다. 이 옵션은 감사 페이지를 표시하도록 선택한 경우에만 사용할 수 있습니다.
       * **제출 시 페이지 새로 고침**: 임베드된 적응형 양식이 포함된 페이지를 새로 고쳐 감사 페이지를 표시할 수 있습니다. 그렇지 않으면 감사 페이지가 페이지를 새로 고치지 않고 AEM Forms 컨테이너의 적응형 양식을 대체합니다. 이 옵션은 감사 페이지를 표시하도록 선택한 경우에만 사용할 수 있습니다.
+
    * **테마**: 적응형 양식 또는 대화형 통신의 구성 요소에 대한 스타일을 정의하는 테마를 선택합니다. 스타일링에는 글꼴 스타일, 배경색, 치수 및 정렬과 같은 모양 속성이 포함됩니다.
    * **높이**: 컨테이너의 높이를 지정합니다. 컨테이너의 크기를 자동으로 조정하려면 비워 둡니다.
    * **CSS 클라이언트 라이브러리**: CSS 클라이언트 라이브러리의 경로를 지정합니다.
-
 
 1. 설정을 저장합니다. 이제 적응형 양식 또는 대화형 통신이 페이지에 임베드됩니다.
 

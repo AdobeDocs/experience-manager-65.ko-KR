@@ -4,20 +4,26 @@ seo-title: AEM 6.5 Forms Guide
 description: 이 AEM 6.5 안내서를 사용하여 디지털 양식을 작성, 관리, 게시 및 업데이트합니다. 설치, 업그레이드 및 구성에 대한 도움말을 확인하고 적응형 양식 작성에 대해 알아봅니다.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 82%
+source-wordcount: '369'
+ht-degree: 80%
 
 ---
 
 # Adobe Experience Manager 6.5 Forms 안내서
 
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html) |
+| AEM 6.5 | 이 문서 |
+
+
 이 AEM 6.5 안내서를 사용하여 디지털 양식을 작성, 관리, 게시 및 업데이트합니다. 설치, 업그레이드 및 구성에 대한 도움말을 확인하고 적응형 양식 작성에 대해 알아봅니다.
 
 ## 주요 AEM 문서
 
-* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
+* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
 * [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
@@ -43,9 +49,9 @@ ht-degree: 82%
 ## 주요 AEM 리소스
 
 * [AEM 자습서](https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-5-videos.html)
-* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
+* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
-* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 * [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

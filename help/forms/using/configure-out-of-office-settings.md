@@ -4,14 +4,19 @@ seo-title: Configure Out of Office settings
 description: 부재 설정 구성
 seo-description: Configure Out of Office settings
 exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 6%
+source-wordcount: '820'
+ht-degree: 7%
 
 ---
 
 # 부재 중 설정 구성 {#configure-out-of-office-settings}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html) |
+| AEM 6.5 | 이 문서 |
 
 부재 예정인 경우 해당 기간 동안 자신에게 할당된 항목에 대한 처리 방법을 지정할 수 있습니다.
 
@@ -28,7 +33,6 @@ ht-degree: 6%
 >* 부재 중 설정을 끄면 위임된 항목이 자동으로 사용자에게 다시 할당되지 않습니다. 청구 기능을 사용하여 품목을 지정할 수 있습니다.
 >* 사용자 A가 항목을 사용자 B에게 위임하고 사용자 B가 추가로 사용자 C에게 위임하면 항목은 사용자 B가 아닌 사용자 C에게만 할당됩니다.
 >* 할당에 루프가 있는 경우 작업이 원래 사용자에게 유지됩니다. 예를 들어 사용자 A가 사용자 B에게 항목을 위임하고 사용자 B가 사용자 C에게 위임하고 사용자 C가 사용자 D에게 위임하고 사용자 D가 사용자 B에게 위임하면 루프가 생성됩니다. 이러한 경우 항목은 원래 사용자와 함께 유지됩니다. 사용자 A는 위의 예에서 원래 사용자입니다.
-
 
 ## 계정에 대한 부재 중 설정 활성화 {#enable-out-of-office}
 

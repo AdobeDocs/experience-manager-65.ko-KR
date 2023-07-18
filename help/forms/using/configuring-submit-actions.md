@@ -9,14 +9,20 @@ discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 0%
+source-wordcount: '1893'
+ht-degree: 1%
 
 ---
 
 # 제출 액션 구성{#configuring-the-submit-action}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html) |
+| AEM 6.5 | 이 문서 |
+
 
 ## 제출 액션 소개 {#introduction-to-submit-actions}
 
@@ -68,6 +74,7 @@ ht-degree: 0%
 Rest 끝점 제출 작업 구성
 
 >[!NOTE]
+>
 필드를 REST URL의 매개 변수로 전달하려면 필드가 다른 패널에 배치된 경우에도 모든 필드에 다른 요소 이름이 있어야 합니다.
 
 ### 제출된 데이터를 리소스 또는 외부 나머지 끝점에 게시  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
@@ -98,6 +105,7 @@ Rest 끝점 제출 작업 구성
 다음 **이메일 보내기** 제출 액션은 양식 제출 시 한 명 이상의 수신자에게 이메일을 전송합니다. 생성된 이메일에는 사전 정의된 형식의 양식 데이터가 포함될 수 있습니다.
 
 >[!NOTE]
+>
 이메일에 양식 데이터를 포함하기 위해서는 모든 양식 필드에 서로 다른 패널에 배치된 경우에도 서로 다른 요소 이름이 있어야 합니다.
 
 ## 이메일을 통해 PDF 보내기 {#send-pdf-via-email}
@@ -105,6 +113,7 @@ Rest 끝점 제출 작업 구성
 다음 **이메일을 통해 PDF 보내기** 제출 액션은 양식 데이터가 포함된 PDF이 포함된 이메일을 양식을 성공적으로 제출하면 한 명 이상의 수신자에게 보냅니다.
 
 >[!NOTE]
+>
 이 제출 액션은 기록 문서 템플릿이 있는 XFA 기반 적응형 양식 및 XSD 기반 적응형 양식에 사용할 수 있습니다.
 
 ## Forms Workflow 호출 {#invoke-a-forms-workflow}
@@ -138,6 +147,7 @@ Forms 포털 및 제출 작업에 대한 자세한 내용은 을 참조하십시
 * **데이터 파일**: 적응형 양식에 제출된 데이터가 포함되어 있습니다. 다음을 사용할 수 있습니다. **[!UICONTROL 데이터 파일 경로]** 페이로드를 기준으로 파일 이름 및 파일 경로를 지정하는 옵션입니다. 예를 들어 `/addresschange/data.xml` 경로는 라는 폴더를 만듭니다. `addresschange` 페이로드를 기준으로 배치합니다. 만 지정할 수도 있습니다. `data.xml` 폴더 계층 구조를 만들지 않고 제출된 데이터만 전송합니다. 변수 옵션을 사용하고 워크플로우 모델에 사용할 수 있는 변수 목록에서 변수를 선택합니다.
 
 >[!NOTE]
+>
 워크플로 모델이 외부 데이터 스토리지에 대해 표시되는지 여부에 관계없이 변수를 사용할 수 있습니다.
 
 * **첨부 파일**: 다음을 사용할 수 있습니다 **[!UICONTROL 첨부 파일 경로]** 적응형 양식에 업로드된 첨부 파일을 저장할 폴더 이름을 지정하는 옵션입니다. 폴더는 페이로드를 기준으로 생성됩니다. 워크플로가 외부 데이터 저장소로 표시된 경우 변수 옵션을 사용하고 워크플로 모델에 사용할 수 있는 변수 목록에서 변수를 선택합니다.
@@ -166,9 +176,10 @@ Forms 포털 및 제출 작업에 대한 자세한 내용은 을 참조하십시
 
 서버측 유효성 검사 활성화
 
-최종 사용자가 이러한 유효성 검사를 무시하고 양식을 제출하는 경우 서버에서 유효성 검사를 다시 수행합니다. 서버 끝에서 유효성 검사가 실패하면 제출 트랜잭션이 중지됩니다. 최종 사용자에게 다시 원래 양식이 표시됩니다. 캡처된 데이터 및 제출된 데이터는 오류로서 사용자에게 제시된다.
+최종 사용자가 이러한 유효성 검사를 무시하고 양식을 제출하는 경우 서버에서 유효성 검사를 다시 수행합니다. 서버 끝에서 유효성 검사가 실패하면 제출 트랜잭션이 중지됩니다. 최종 사용자에게 다시 원래 양식이 표시됩니다. 캡처된 데이터 및 제출된 데이터는 에러로서 사용자에게 제시된다.
 
 >[!NOTE]
+>
 서버 측 유효성 검사가 양식 모델의 유효성을 검사합니다. 유효성 검사를 위해 별도의 클라이언트 라이브러리를 만들고 동일한 클라이언트 라이브러리에서 HTML 스타일링 및 DOM 조작과 같은 다른 항목과 혼합하지 않는 것이 좋습니다.
 
 ### 유효성 검사 표현식에서 사용자 지정 함수 지원 {#supporting-custom-functions-in-validation-expressions-br}

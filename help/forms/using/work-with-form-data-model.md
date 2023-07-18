@@ -10,14 +10,19 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '4165'
+source-wordcount: '4187'
 ht-degree: 0%
 
 ---
 
 # 양식 데이터 모델 작업{#work-with-form-data-model}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html) |
+| AEM 6.5 | 이 문서 |
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 
@@ -204,10 +209,9 @@ Forms 데이터 통합을 처음 사용하지만 데이터 소스를 구성하�
    >[!NOTE]
    >
    >* 정적 템플릿을 사용하는 경우 다음 위치에 head.jsp를 오버레이합니다.
-      >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    >* 편집 가능한 템플릿을 사용하는 경우 다음 위치에 aftemplatedpage.jsp를 오버레이합니다.
-      >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. 설정 [!DNL paramMap] 요청 속성에 대해 설명합니다. 예를 들어 apps 폴더의 .jsp 파일에 다음 코드를 포함합니다.
 
