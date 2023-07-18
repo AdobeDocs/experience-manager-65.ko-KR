@@ -1,18 +1,16 @@
 ---
 title: Client Context 관련 세부 사항
-description: Client Context는 동적으로 조립된 사용자 데이터의 컬렉션을 나타냅니다
-uuid: 95b08fbd-4f50-44a1-80fb-46335fe04a40
+description: Client Context는 동적으로 조립된 사용자 데이터의 컬렉션을 나타냅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: c881ad66-bcc3-4f99-b77f-0944c23e2d29
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3001'
 ht-degree: 0%
 
 ---
@@ -31,7 +29,7 @@ Client Context는 주로 다음 측면으로 구성됩니다.
 * 사용자 데이터를 표시하고 사용자 경험을 시뮬레이션하는 도구를 제공하는 UI.
 * A [JavaScript API](/help/sites-developing/ccjsapi.md) 세션 저장소와 상호 작용할 수 있습니다.
 
-독립 실행형 세션 저장소를 만들어 Client Context에 추가하거나 Context Store 구성 요소에 연결된 세션 저장소를 만듭니다. AEM은 바로 사용할 수 있는 여러 Context Store 구성 요소를 설치합니다. 이러한 구성 요소를 구성 요소의 기반으로 사용할 수 있습니다.
+독립 실행형 세션 저장소를 만들어 Client Context에 추가하거나 Context Store 구성 요소에 연결된 세션 저장소를 만듭니다. Adobe Experience Manager(AEM)는 즉시 사용할 수 있는 여러 컨텍스트 스토어 구성 요소를 설치합니다. 이러한 구성 요소를 구성 요소의 기반으로 사용할 수 있습니다.
 
 Client Context 열기, 표시되는 정보 구성 및 사용자 경험 시뮬레이션에 대한 자세한 내용은 다음을 참조하십시오. [Client Context](/help/sites-administering/client-context.md).
 
@@ -46,7 +44,7 @@ Client Context 프레임워크는 [JavaScript API](/help/sites-developing/ccjsap
 
 세션 저장소 데이터는 클라이언트에 유지됩니다. Client Context는 서버에 데이터를 다시 쓰지 않습니다. 데이터를 서버로 보내려면 양식을 사용하거나 사용자 지정 JavaScript를 개발하십시오.
 
-각 세션 저장소는 속성-값 쌍의 컬렉션입니다. 세션 저장소는 데이터의 컬렉션(어떤 종류든)을 나타내며, 개념적인 의미는 디자이너 및/또는 개발자가 결정할 수 있습니다. 다음 예제 JavaScript 코드는 세션 저장소에 포함될 수 있는 프로필 데이터를 나타내는 개체를 정의합니다.
+각 세션 저장소는 속성-값 쌍의 컬렉션입니다. 세션 저장소는 데이터(모든 종류)의 컬렉션을 나타내며, 개념적인 의미는 디자이너, 개발자 또는 이 두 가지가 모두 결정할 수 있습니다. 다음 예제 JavaScript 코드는 세션 저장소에 포함될 수 있는 프로필 데이터를 나타내는 개체를 정의합니다.
 
 ```
 {
@@ -66,7 +64,7 @@ Client Context 프레임워크는 [JavaScript API](/help/sites-developing/ccjsap
 >
 >저장소 지속성은 브라우저 저장소 또는 쿠키( `SessionPersistence` cookie). 브라우저 스토리지가 더 일반적입니다.
 >
->브라우저를 닫고 다시 열면 세션 저장소는 지속 저장소의 값으로 로드될 수 있습니다. 브라우저 캐시를 지우면 이전 값이 제거됩니다.
+>브라우저를 닫고 다시 열면 세션 저장소는 지속 저장소의 값으로 로드될 수 있습니다. 이전 값을 제거하려면 브라우저 캐시를 지워야 합니다.
 
 ### 컨텍스트 저장소 구성 요소 {#context-store-components}
 
@@ -102,7 +100,7 @@ Client Context 구성 요소를 웹 페이지의 본문 섹션에 포함시켜 C
 clientcontext 구성 요소를 사용하면 페이지에서 Client Context를 구현하는 클라이언트 라이브러리를 로드할 수 있습니다.
 
 * Client Context JavaScript API입니다.
-* 세션 저장소, 이벤트 관리 등을 지원하는 Client Context 프레임워크
+* 세션 저장소, 이벤트 관리 등을 지원하는 Client Context 프레임워크입니다.
 * 정의된 세그먼트입니다.
 * Client Context에 추가된 각 컨텍스트 저장소 구성 요소에 대해 생성된 init.js 스크립트입니다.
 * (작성자 인스턴스만 해당) Client Context UI입니다.
@@ -118,7 +116,7 @@ Client Context를 확장하려면 세션 저장소를 작성하고 선택적으�
 
 >[!NOTE]
 >
->다음을 보유한(또는 만드는) 경우 `JSONP` 데이터를 제공할 수 있는 서비스에서는 `JSONP` 컨텍스트 저장소 구성 요소를 사용하여 JSONP 서비스에 매핑합니다. 이렇게 하면 세션 저장소가 처리됩니다.
+>다음을 보유한(또는 만드는) 경우 `JSONP` 데이터를 제공할 수 있는 서비스에서는 `JSONP` 컨텍스트 저장소 구성 요소를 사용하여 JSONP 서비스에 매핑합니다. 세션 저장소를 처리합니다.
 
 ### 세션 저장소 만들기 {#creating-a-session-store}
 
@@ -151,7 +149,7 @@ API는 JSON 데이터 또는 JSONP 데이터 저장에 특화된 다음 클래�
 
 #### 세션 저장소 개체 만들기 {#creating-the-session-store-object}
 
-클라이언트 라이브러리 폴더의 JavaScript는 세션 저장소를 생성하고 초기화합니다. 그런 다음 컨텍스트 저장소 관리자를 사용하여 세션 저장소를 등록해야 합니다. 다음 예제에서는 를 만들고 등록합니다 [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) 개체.
+클라이언트 라이브러리 폴더의 JavaScript는 세션 저장소를 생성하고 초기화합니다. 컨텍스트 저장소 관리자를 사용하여 세션 저장소를 등록해야 합니다. 다음 예제에서는 를 만들고 등록합니다 [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) 개체.
 
 ```
 //Create the session store
@@ -192,7 +190,7 @@ AEM에서는 확장할 수 있는 genericstore 및 genericstoreproperties 컨텍
 
    * `prolog.jsp` 및 `epilog.jsp`: 구성 요소 렌더링 전 또는 후에 서버측 로직을 추가할 수 있는 구성 요소 상호 작용
 
-* 복잡한 데이터: `GenericStore` 구성 요소. 그런 다음 세션 저장소에는 구성 요소를 렌더링해야 할 때마다 호출되는 &quot;렌더러&quot; 메서드가 필요합니다. renderer 함수는 두 개의 매개 변수를 사용하여 호출됩니다.
+* 복잡한 데이터: `GenericStore` 구성 요소. 세션 저장소에는 구성 요소를 렌더링해야 할 때마다 호출되는 &quot;renderer&quot; 메서드가 필요합니다. renderer 함수는 두 개의 매개 변수를 사용하여 호출됩니다.
 
    * `@param {String} store`
 렌더링할 스토어
@@ -321,7 +319,7 @@ genericstore 구성 요소를 사용하여 저장소 데이터를 렌더링하�
 
 #### 세션 저장소 렌더러 메서드 구현 {#implementing-the-session-store-renderer-method}
 
-그런 다음 세션 저장소에는 구성 요소를 렌더링해야 할 때마다 호출되는 &quot;렌더러&quot; 메서드가 필요합니다. renderer 함수는 두 개의 매개 변수를 사용하여 호출됩니다.
+세션 저장소에는 구성 요소를 렌더링해야 할 때마다 호출되는 &quot;renderer&quot; 메서드가 필요합니다. renderer 함수는 두 개의 매개 변수를 사용하여 호출됩니다.
 
 * @param {String} 렌더링할 저장소
 * @param {String} 저장소를 렌더링해야 하는 div의 divId입니다.
@@ -441,7 +439,7 @@ CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) 
 * 모바일 페이지의 DOM이 로드됩니다.
 * 기본 `div` (필수) 콘텐츠가 포함되어 있고 이 추출되어 현재 데스크탑 페이지에 삽입됩니다.
 
-* 로드해야 하는 CSS 및 본문 클래스는 수동으로 구성해야 합니다.
+* 로드되는 CSS 및 본문 클래스는 수동으로 구성해야 합니다.
 
 예:
 
@@ -503,7 +501,7 @@ CQ 응용 프로그램을 만들고 geoloc 구성 요소를 추가합니다.
 
 ### Geoloc 편집 대화 상자 만들기 {#create-the-geoloc-edit-dialog}
 
-컨텍스트 저장소 구성 요소에는 편집 대화 상자가 필요합니다. geoloc 편집 대화 상자에는 구성할 속성이 없음을 나타내는 정적 메시지가 포함됩니다.
+컨텍스트 저장소 구성 요소에는 편집 대화 상자가 필요합니다. geoloc 편집 대화 상자에는 구성할 속성이 없음을 나타내는 정적 메시지가 포함되어 있습니다.
 
 1. 마우스 오른쪽 단추 클릭 `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` 노드를 클릭하고 복사를 클릭합니다.
 1. 마우스 오른쪽 단추 클릭 `/apps/myapp/contextstores/geoloc` 노드를 클릭하고 붙여넣기를 클릭합니다.
@@ -610,7 +608,7 @@ Client Context에서 스토어 데이터를 렌더링하도록 geoloc 구성 요
 
 ## 사용자 지정된 클라이언트 컨텍스트 만들기 {#creating-a-customized-client-context}
 
-두 번째 클라이언트 컨텍스트를 만들려면 분기를 복제해야 합니다.
+두 번째 클라이언트 컨텍스트를 작성하려면 분기를 복제하십시오.
 
 `/etc/clientcontext/default`
 

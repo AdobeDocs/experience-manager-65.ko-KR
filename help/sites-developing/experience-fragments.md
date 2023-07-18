@@ -1,17 +1,15 @@
 ---
-title: AEM Sites 개발의 경험 조각
+title: Adobe Experience Manager Sites 개발의 경험 조각
 description: 경험 조각 사용자 지정에 대해 알아봅니다.
-uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1777'
 ht-degree: 1%
 
 ---
@@ -64,14 +62,14 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
    * 최종 렌디션에 남겨야 하는 CSS 클래스와 일치하는 RegEx 표현식입니다.
    * 이 기능은 고객이 일부 특정 CSS 클래스를 삭제하려는 경우 유용합니다
 * `allowedTags`
-   * 최종 렌디션에서 허용할 HTML 태그 목록입니다.
+   * 최종 렌디션에서 사용할 수 있는 HTML 태그 목록입니다.
    * 기본적으로 html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link 및 script 태그가 허용됩니다(구성 불필요).
 
 오버레이를 사용하여 재작성기를 구성하는 것이 좋습니다. 다음을 참조하십시오 [오버레이](/help/sites-developing/overlays.md)
 
 ## 소셜 변형 {#social-variations}
 
-소셜 변형은 소셜 미디어(텍스트 및 이미지)에 게시할 수 있습니다. AEM에서 이러한 소셜 변형은 구성 요소(예: 텍스트 구성 요소, 이미지 구성 요소)를 포함할 수 있습니다.
+소셜 변형은 소셜 미디어(텍스트 및 이미지)에 게시할 수 있습니다. Adobe Experience Manager(AEM)에서 이러한 소셜 변형은 구성 요소(예: 텍스트 구성 요소, 이미지 구성 요소)를 포함할 수 있습니다.
 
 소셜 게시물에 대한 이미지 및 텍스트는 원하는 수준의 깊이(빌딩 블록 또는 레이아웃 컨테이너 내)에서 이미지 리소스 유형 또는 텍스트 리소스 유형에서 가져올 수 있습니다.
 
@@ -109,11 +107,9 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
    1. 그리고 템플릿 이름은 다음으로 시작해야 합니다.
       `experience-fragments`
-이를 통해 사용자는 /content/experience-fragments에서 경험 조각을 로 만들 수 있습니다. 
-`cq:allowedTemplates` 이 폴더의 속성에는 다음으로 시작하는 이름이 있는 모든 템플릿이 포함됩니다. `experience-fragment`. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
+이를 통해 사용자는 /content/experience-fragments에서 경험 조각을 로 만들 수 있습니다. `cq:allowedTemplates` 이 폴더의 속성에는 다음으로 시작하는 이름이 있는 모든 템플릿이 포함됩니다. `experience-fragment`. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
 
 1. [허용된 템플릿](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) 경험 조각 콘솔에서 구성할 수 있습니다.
-
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
@@ -148,7 +144,7 @@ AEM에서는 경험 조각을 만들 수 있습니다. 경험 조각:
 
 이 기능은 다음과 같을 수 있습니다. [AEM의 작성자 인스턴스에서 활성화됨](/help/sites-administering/experience-fragments-target.md#Prerequisites). 유효한 Adobe Target 구성 및 링크 외부화에 대한 구성이 필요합니다.
 
-링크 외부화는 이후에 Adobe Target에 전송되는 Target 오퍼의 HTML 버전을 생성할 때 필요한 올바른 URL을 결정하는 데 사용됩니다. 이는 Adobe Target에서 Target HTML 오퍼 내의 모든 링크에 공개적으로 액세스할 수 있어야 하므로 필요합니다. 즉, 링크가 참조하는 모든 리소스 및 경험 조각을 사용하려면 먼저 게시해야 합니다.
+링크 외부화는 Target 오퍼의 HTML 버전을 생성할 때 필요한 올바른 URL을 결정하고 이를 Adobe Target으로 전송하는 데 사용됩니다. 이는 Adobe Target에서 Target HTML 오퍼 내의 모든 링크에 공개적으로 액세스할 수 있어야 하므로 필요합니다. 즉, 링크가 참조하는 모든 리소스 및 경험 조각을 사용하려면 먼저 게시해야 합니다.
 
 기본적으로 Target HTML 오퍼를 구성하면 AEM의 사용자 지정 Sling 선택기로 요청이 전송됩니다. 이 선택기를 호출합니다. `.nocloudconfigs.html`. 이름에서 알 수 있듯이, 경험 조각의 일반 HTML 렌더링을 만들지만, 클라우드 구성(불필요한 정보)은 포함하지 않습니다.
 
@@ -169,9 +165,9 @@ HTML 페이지를 생성한 후 Sling 재작성기 파이프라인이 출력을 
 
    >[!NOTE]
    >
-   >대부분의 경우 HTML의 내부 링크는 상대 링크이지만 사용자 지정 구성 요소가 HTML에 전체 URL을 제공하는 경우가 있을 수 있습니다. 기본적으로 AEM은 이러한 완전한 URL을 무시하고 수정하지 않습니다.
+   >일반적으로 HTML의 내부 링크는 상대 링크이지만 사용자 지정 구성 요소가 HTML에 전체 URL을 제공하는 경우가 있을 수 있습니다. 기본적으로 AEM은 이러한 완전한 URL을 무시하고 수정하지 않습니다.
 
-   이러한 속성의 링크는 AEM 링크 외부화를 통해 실행됩니다 `publishLink()` 게시된 인스턴스에 있는 것처럼 URL을 다시 만들기 위해 공개적으로 사용할 수 있습니다.
+   이러한 속성의 링크는 AEM 링크 외부화를 통해 실행됩니다 `publishLink()` 게시된 인스턴스에 있는 것처럼 URL을 다시 만들고 공개적으로 사용할 수 있도록 합니다.
 
 기본 구현을 사용하는 경우 위에 설명된 프로세스로 경험 조각에서 Target 오퍼를 생성한 다음 Adobe Target으로 내보내기에 충분해야 합니다. 그러나 이 프로세스에서 설명되지 않는 사용 사례는 다음과 같습니다.
 
@@ -281,7 +277,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 * `href` 속성만
 
 * 특정 경험 조각:
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Target으로 내보내기 시스템을 통과한 다른 경험 조각은 무시되며 이 서비스에서 구현한 변경 사항의 영향을 받지 않습니다.
 
@@ -294,16 +290,15 @@ Target으로 내보내기 시스템을 통과한 다른 경험 조각은 무시�
 이 메서드는 를 입력할 때 매개 변수를 수신합니다.
 
 * `link`
-다음 
-`String` 현재 처리 중인 링크의 표현입니다. 일반적으로 작성자 인스턴스의 리소스를 가리키는 상대 URL입니다.
+다음 `String` 처리 중인 링크의 표현입니다. 일반적으로 작성자 인스턴스의 리소스를 가리키는 상대 URL입니다.
 
 * `tag`
-현재 처리 중인 HTML 요소의 이름입니다.
+처리 중인 HTML 요소의 이름입니다.
 
 * `attribute`
 정확한 속성 이름입니다.
 
-예를 들어 Target 시스템으로 내보내기 시스템에서 현재 이 요소를 처리하고 있다면 `CSSInclude` 다음으로:
+예를 들어 Target 시스템으로 내보내기 시스템에서 이 요소를 처리하는 경우 `CSSInclude` 다음으로:
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
@@ -315,7 +310,7 @@ Target으로 내보내기 시스템을 통과한 다른 경험 조각은 무시�
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
 ```
 
-서비스를 만들 때 제공된 입력을 기반으로 결정을 내린 다음 그에 따라 링크를 다시 작성할 수 있습니다.
+서비스를 만들 때 주어진 입력을 기반으로 결정을 내린 다음 그에 따라 링크를 다시 작성할 수 있습니다.
 
 이 예제에서는 을(를) 제거하려고 합니다 `/etc.clientlibs` 을(를) url의 일부로 추가하고 적절한 외부 도메인을 추가합니다. 작업을 단순화하기 위해 다음과 같이 서비스용 Resource Resolver에 액세스할 수 있는 것으로 간주합니다. `rewriteLinkExample2`:
 
@@ -350,7 +345,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->위의 메서드가 를 반환하는 경우 `null`를 클릭하면 Target 시스템으로 내보내기 시스템이 리소스에 대한 상대 링크인 링크를 그대로 둡니다.
+>위의 메서드가 를 반환하는 경우 `null`를 클릭하면 Target으로 내보내기 시스템은 리소스에 대한 상대 링크인 링크를 그대로 둡니다.
 
 #### 우선 순위 - getPriority {#priorities-getpriority}
 

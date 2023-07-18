@@ -1,18 +1,14 @@
 ---
 title: 벌크 편집기 개발
-seo-title: Developing the Bulk Editor
 description: 태깅을 통해 컨텐츠를 분류하고 구성할 수 있습니다.
-seo-description: Tagging allows content to be categorized and organized
-uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1836'
 ht-degree: 2%
 
 ---
@@ -23,15 +19,15 @@ ht-degree: 2%
 
 ## 벌크 편집기 쿼리 매개 변수 {#bulk-editor-query-parameters}
 
-벌크 편집기로 작업할 때 특정 구성을 사용하여 벌크 편집기를 호출하기 위해 URL에 추가할 수 있는 쿼리 매개 변수가 몇 가지 있습니다. 벌크 편집기를 항상 특정 구성(예: 제품 목록 구성 요소에서와 같이)과 함께 사용하려면 bulkeditor.jsp( /libs/wcm/core/components/bulkeditor에 있음)를 수정하거나 특정 구성을 사용하여 구성 요소를 만들어야 합니다. 쿼리 매개 변수를 사용하여 변경한 내용은 영구적이지 않습니다.
+벌크 편집기로 작업할 때 URL에 추가하여 특정 구성으로 벌크 편집기를 호출할 수 있는 여러 쿼리 매개 변수가 있습니다. 예를 들어 제품 목록 구성 요소에서와 같이 벌크 편집기를 항상 특정 구성과 함께 사용하려면 다음을 편집해야 합니다 `bulkeditor.jsp` ( /libs/wcm/core/components/bulkeditor에서) 또는 특정 구성으로 구성 요소를 만듭니다. 쿼리 매개 변수를 사용하여 변경한 내용은 영구적이지 않습니다.
 
 예를 들어 브라우저의 URL에 다음을 입력하는 경우:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-벌크 편집기가 표시 안 함 **루트 경로** hrp=true인 필드는 필드를 숨깁니다. hrp=false 매개 변수를 사용하면 필드가 표시됩니다(기본값).
+벌크 편집기 가 **루트 경로** hrp=true인 필드는 필드를 숨깁니다. hrp=false 매개 변수를 사용하면 필드가 표시됩니다(기본값).
 
-다음은 벌크 편집기 쿼리 매개 변수의 목록입니다.
+다음은 벌크 편집기 쿼리 매개 변수 목록입니다.
 
 >[!NOTE]
 >
@@ -164,13 +160,13 @@ ht-degree: 2%
 
 ### 벌크 편집기 기반 구성 요소 개발: 제품 목록 구성 요소 {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-이 섹션에서는 벌크 편집기를 사용하는 방법에 대한 개요를 제공하고 벌크 편집기를 기반으로 하는 기존 Geometrixx 구성 요소인 제품 목록 구성 요소에 대해 설명합니다.
+이 섹션에서는 벌크 편집기 사용 방법에 대한 개요를 제공하고 벌크 편집기를 기반으로 하는 기존 Geometrixx 구성 요소인 제품 목록 구성 요소에 대해 설명합니다.
 
-제품 목록 구성 요소를 사용하여 데이터 테이블을 표시하고 편집할 수 있습니다. 예를 들어 제품 목록 구성 요소를 사용하여 카탈로그에 제품을 표시할 수 있습니다. 이 정보는 표준 HTML 테이블에 표시되며 모든 편집은 **편집** BulkEditor 위젯을 포함하는 대화 상자입니다. (이 벌크 편집기는 /etc/importers/bulkeditor.html 또는 도구 메뉴를 통해 액세스할 수 있는 편집기와 동일합니다.) 제품 목록 구성 요소는 제한된 특정 벌크 편집기 기능을 위해 구성되었습니다. 벌크 편집기의 모든 부분(또는 벌크 편집기에서 파생된 구성 요소)을 구성할 수 있습니다.
+제품 목록 구성 요소를 사용하여 데이터 테이블을 표시하고 편집할 수 있습니다. 예를 들어 제품 목록 구성 요소를 사용하여 카탈로그에 제품을 표시할 수 있습니다. 이 정보는 표준 HTML 테이블에 표시되며 모든 편집은 **편집** 대화 상자에 BulkEditor 위젯이 포함되어 있습니다. (이 벌크 편집기는 /etc/importers/bulkeditor.html 또는 도구 메뉴를 통해 액세스할 수 있는 편집기와 동일합니다.) 제품 목록 구성 요소는 제한된 특정 벌크 편집기 기능을 위해 구성되었습니다. 벌크 편집기의 모든 부분(또는 벌크 편집기에서 파생된 구성 요소)을 구성할 수 있습니다.
 
 벌크 편집기를 사용하여 행을 추가, 수정, 삭제, 필터링 및 내보내고, 수정 사항을 저장하고 행 집합을 가져올 수 있습니다. 모든 행은 제품 목록 구성 요소 인스턴스 아래의 노드로 저장됩니다. 모든 셀은 각 노드의 속성입니다. 이는 디자인적인 선택이며 쉽게 변경할 수 있습니다. 예를 들어 노드를 저장소의 다른 위치에 저장할 수 있습니다. 쿼리 서블릿의 역할은 표시할 노드 목록을 반환하는 것입니다. 검색 경로는 제품 목록 인스턴스로 정의됩니다.
 
-제품 목록 구성 요소의 소스 코드는 /apps/geometrixx/components/productlist의 저장소에서 사용할 수 있으며 모든 AEM 구성 요소와 같은 여러 부분으로 구성됩니다.
+제품 목록 구성 요소의 소스 코드는 /apps/geometrixx/components/productlist의 저장소에서 사용할 수 있으며 모든 Adobe Experience Manager(AEM) 구성 요소와 같은 여러 부분으로 구성됩니다.
 
 * HTML 렌더링: 렌더링은 JSP 파일(/apps/geometrixx/components/productlist/productlist.jsp)에서 수행됩니다. JSP는 현재 제품 목록 구성 요소의 하위 노드를 읽고 각각을 HTML 테이블의 행으로 표시합니다.
 * 편집 대화 상자 - 여기서 벌크 편집기 구성을 정의합니다. 구성 요소의 요구 사항과 일치하도록 대화 상자를 구성합니다. 열 사용 가능 및 그리드 또는 검색에서 수행되는 가능한 작업입니다. 다음을 참조하십시오 [벌크 편집기 구성 속성](#bulk-editor-configuration-properties) 모든 구성 속성에 대해 설명합니다.
@@ -277,7 +273,7 @@ ht-degree: 2%
    <td>정의</td>
   </tr>
   <tr>
-   <td>루트 경로</td>
+   <td>rootPath</td>
    <td>루트 경로 검색</td>
   </tr>
   <tr>
@@ -294,7 +290,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>extraCols</td>
-   <td>추가 검색 속성(텍스트 필드에 쉼표로 구분되어 표시됨)</td>
+   <td>추가 검색 속성(쉼표로 구분된 텍스트 필드에 표시됨)</td>
   </tr>
   <tr>
    <td>initialSearch</td>
@@ -533,7 +529,7 @@ checkbox 구성 속성이 true로 설정되면 열의 모든 셀이 확인란으
 * 쿼리: &quot;path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
 * cols: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
-및 반환된 JSON 스트림은 다음과 같습니다.
+JSON 스트림은 다음과 같이 반환됩니다.
 
 ```
 {
@@ -564,14 +560,14 @@ Save servlet 개념은 수정 사항이 각 노드에 직접 게시되지 않고
 
 * 매개 변수 이름: &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>
 
-   예: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
+  예: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
 
 * 값: &lt;value>
 
-   예: 12123
+  예: 12123
 
 서블릿은 catalogCode 속성이 저장된 위치를 알아야 합니다.
 
 기본 저장 서블릿 구현은 /libs/wcm/bulkeditor/save/POST.jsp에서 사용할 수 있으며 제품 목록 구성 요소에서 사용됩니다. 요청에서 모든 매개 변수를 가져옵니다( 사용). &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> format)을 참조하고 JCR API를 사용하여 노드에 속성을 기록합니다. 노드가 없는 경우(그리드가 삽입된 행) 노드도 생성합니다.
 
-기본 코드는 서버가 기본적으로 수행하는 작업(의 POST)을 다시 구현하는 것처럼 사용해서는 안 됩니다. &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) 따라서 속성 상속 모델을 관리하는 저장 서블릿을 빌드하는 좋은 시작점일 뿐입니다.
+기본 코드는 서버가 기본적으로 수행하는 작업(의 POST)을 재구현하기 때문에 그대로 사용해서는 안 됩니다. &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) 따라서 속성 상속 모델을 관리할 수 있는 저장 서블릿을 빌드하는 좋은 시작점입니다.

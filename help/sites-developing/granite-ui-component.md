@@ -1,18 +1,14 @@
 ---
 title: 새로운 Granite UI 필드 구성 요소 만들기
-seo-title: Creating a New Granite UI Field Component
 description: Granite UI는 필드라고 하는 양식에서 사용하도록 설계된 다양한 구성 요소를 제공합니다
-seo-description: Granite UI provides a range of components designed to be used in forms, called fields
-uuid: cf26e057-4b0c-45f4-8975-2c658517f20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '527'
 ht-degree: 2%
 
 ---
@@ -29,7 +25,7 @@ Granite UI는 양식에 사용하도록 설계된 다양한 구성 요소를 제
 
 >[!NOTE]
 >
->필드에 대한 자세한 내용은 [Granite UI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>필드에 대한 자세한 내용은 [Granite UI 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Granite UI Foundation 프레임워크를 사용하여 Granite 구성 요소를 개발 및/또는 확장합니다. 여기에는 두 가지 요소가 있습니다.
 
@@ -39,19 +35,19 @@ Granite UI Foundation 프레임워크를 사용하여 Granite 구성 요소를 �
 
       * 기초 - 모듈식, 구성 가능, 레이어 가능, 재사용 가능
       * 구성 요소 - Sling 구성 요소
-   * 애플리케이션 개발 지원 도우미
 
+   * 애플리케이션 개발 지원 도우미
 
 * 클라이언트측:
 
-   * 하이퍼미디어 기반 UI를 통해 일반적인 상호 작용 패턴을 달성하기 위해 일부 어휘(즉, HTML 언어의 확장)를 제공하는 clientlibs의 컬렉션입니다
+   * 하이퍼미디어 기반 사용자 인터페이스를 통해 일반적인 상호 작용 패턴을 달성하기 위해 일부 어휘(즉, HTML 언어의 확장)를 제공하는 clientlibs의 컬렉션입니다.
 
 일반 Granite UI 구성 요소 `field` 는 다음과 같은 두 개의 관심 파일로 구성됩니다.
 
-* `init.jsp`: 일반 처리를 처리하고, 필드를 렌더링할 때 필요한 레이블 지정, 설명을 지정하고, 양식 값을 제공합니다.
-* `render.jsp`: 여기에서 필드의 실제 렌더링이 수행되며 사용자 정의 필드에 대해 재정의해야 합니다. 여기에 포함됩니다. `init.jsp`.
+* `init.jsp`: 일반 처리를 처리하고, 필드를 렌더링할 때 필요한 레이블 지정, 설명을 제공하고, 양식 값을 제공합니다.
+* `render.jsp`: 여기에서 필드의 실제 렌더링이 수행되며 사용자 정의 필드에 대해 재정의해야 합니다. 이 필드는 다음에 의해 포함됩니다. `init.jsp`.
 
-다음을 참조하십시오. [Granite UI 설명서 - 필드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) 자세한 내용을 알고 싶다면
+다음을 참조하십시오 [Granite UI 설명서 - 필드](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) 을 참조하십시오.
 
 예를 보려면 다음을 참조하십시오.
 
@@ -63,15 +59,15 @@ Granite UI Foundation 프레임워크를 사용하여 Granite 구성 요소를 �
 
 >[!NOTE]
 >
->이 메커니즘은 JSP를 사용하므로 i18n 및 XSS는 즉시 사용할 수 없습니다. 즉, 문자열을 국제화하고 이스케이프 처리해야 합니다. 다음 디렉토리에는 표준 인스턴스의 일반 필드가 포함되어 있으므로 이를 참조로 사용할 수 있습니다.
+>이 메커니즘은 JSP를 사용하므로 i18n 및 XSS는 즉시 사용할 수 없습니다. 즉, 문자열을 인터내셔널리제이션하고 이스케이프 처리해야 합니다. 다음 디렉토리에는 표준 인스턴스의 일반 필드가 포함되어 있으므로 이를 참조로 사용할 수 있습니다.
 >
 >`/libs/granite/ui/components/foundation/form` 디렉터리
 
 ## 구성 요소에 대한 서버측 스크립트 만들기 {#creating-the-server-side-script-for-the-component}
 
-사용자 지정된 필드는 `render.jsp` 스크립트: 구성 요소에 태그를 제공합니다. JSP(즉, 렌더링 스크립트)를 마크업에 대한 래퍼로 간주할 수 있습니다.
+사용자 지정된 필드는 `render.jsp` 스크립트: 구성 요소에 태그를 제공합니다. JSP(즉, 렌더링 스크립트)는 마크업에 대한 래퍼로 간주할 수 있습니다.
 
-1. 를 사용하는 새 구성 요소 만들기 `sling:resourceSuperType` 상속할 속성:
+1. 다음을 사용하는 구성 요소 만들기 `sling:resourceSuperType` 상속할 속성:
 
    `/libs/granite/ui/components/foundation/form/field`
 
@@ -79,7 +75,7 @@ Granite UI Foundation 프레임워크를 사용하여 Granite 구성 요소를 �
 
    `render.jsp`
 
-   이 스크립트에서는 클라이언트가 생성된 요소와 상호 작용하는 방법을 알 수 있도록 하이퍼미디어 마크업(즉, 하이퍼미디어 어포던스가 포함된 강화된 마크업)을 생성해야 합니다. 이는 Granite UI 서버측 코딩 스타일을 따라야 합니다.
+   이 스크립트에서는 클라이언트가 생성된 요소와 상호 작용하는 방법을 알 수 있도록 하이퍼미디어 마크업(즉, 하이퍼미디어 어포던스가 포함된 강화된 마크업)을 생성합니다. 이는 Granite UI 서버측 코딩 스타일을 따라야 합니다.
 
    사용자 지정 시 다음과 같은 유일한 계약 *필수* 이행은 양식 값(에서 초기화됨)을 읽는 것입니다. `init.jsp`을 사용하여 요청에서 다음을 수행합니다.
 
@@ -93,7 +89,7 @@ Granite UI Foundation 프레임워크를 사용하여 Granite 구성 요소를 �
 
    >[!NOTE]
    >
-   >현재 JSP가 기본 스크립팅 방법인데, 이는 HTL에서 정보를 한 구성 요소에서 다른 구성 요소로 전달(양식/필드의 컨텍스트에서 매우 빈번함)하기 쉽지 않기 때문입니다.
+   >현재 JSP가 기본 스크립팅 방법인데, 이는 HTL에서 한 구성 요소에서 다른 구성 요소로 정보를 전달하는 것(양식/필드의 컨텍스트에서 자주 사용됨)이 쉽지 않기 때문입니다.
 
 ## 구성 요소에 대한 클라이언트 라이브러리 만들기 {#creating-the-client-library-for-the-component}
 

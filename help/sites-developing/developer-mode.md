@@ -1,30 +1,26 @@
 ---
 title: 개발자 모드
-seo-title: Developer Mode
-description: 개발자 모드에서는 현재 페이지에 대한 정보를 개발자에게 제공하는 몇 가지 탭이 있는 사이드 패널이 열립니다
-seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
-uuid: 8301ab51-93d6-44f9-a813-ba7f03f54485
+description: 개발자 모드에서는 현재 페이지에 대한 정보를 개발자에게 제공하는 몇 가지 탭이 있는 사이드 패널이 열립니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '686'
 ht-degree: 2%
 
 ---
 
 # 개발자 모드{#developer-mode}
 
-AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) 개발자 모드를 포함하여 을 사용할 수 있습니다. 이렇게 하면 개발자에게 현재 페이지에 대한 정보를 제공하는 몇 가지 탭이 있는 사이드 패널이 열립니다. 세 개의 탭은 다음과 같습니다.
+Adobe Experience Manager(AEM)에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) 개발자 모드를 포함하여 을 사용할 수 있습니다. 이렇게 하면 개발자에게 현재 페이지에 대한 정보를 제공하는 몇 가지 탭이 있는 사이드 패널이 열립니다. 세 개의 탭은 다음과 같습니다.
 
 * **[구성 요소](#components)** 구조 및 성능 정보를 볼 수 있습니다.
 * **[테스트](#tests)** 테스트 실행 및 결과 분석.
-* **[오류](#errors)** 문제가 발생하는 것을 확인합니다.
+* **[오류](#errors)** 발생하는 모든 문제를 확인합니다.
 
 이렇게 하면 개발자가 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -38,10 +34,9 @@ AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-authoring/a
 >
 >* 터치 지원 UI에서만 사용할 수 있습니다(페이지를 편집할 때).
 >* 공간 제약으로 인해 데스크톱의 작은 창이나 모바일 장치에서는 사용할 수 없습니다.
-   >
-   >   * 이 문제는 너비가 1024px 미만일 때 발생합니다.
+>
+>   * 이 문제는 너비가 1024px 미만일 때 발생합니다.
 >* 의 멤버인 사용자만 사용할 수 있습니다. `administrators` 그룹입니다.
-
 
 >[!CAUTION]
 >
@@ -59,9 +54,8 @@ AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-authoring/a
 >다음을 참조하십시오.
 >
 >* 기술 자료 문서, [AEM TouchUI 문제 해결](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)추가 팁 및 도구는 를 참조하십시오.
->* 에 대한 AEM Gems 세션 [AEM 6.0 개발자 모드](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
+>* 에 대한 AEM Gems 세션 [AEM 6.0 개발자 모드](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
 >
-
 
 ## 개발자 모드 열기 {#opening-developer-mode}
 
@@ -82,13 +76,13 @@ AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-authoring/a
 이 구성 요소 트리는 다음과 같습니다.
 
 * 페이지에 렌더링된 구성 요소 체인 및 템플릿(SLY, JSP 등)에 대해 설명합니다. 트리를 확장하여 계층 내에 컨텍스트를 표시할 수 있습니다.
-* 구성 요소를 렌더링하는 데 필요한 서버측 계산 시간을 표시합니다.
+* 구성 요소를 렌더링할 서버측 계산 시간을 표시합니다.
 * 트리를 확장하고 트리 내에서 특정 구성 요소를 선택할 수 있습니다. 선택 항목을 통해 다음과 같은 구성 요소 세부 사항에 액세스할 수 있습니다.
 
    * 저장소 경로
    * 스크립트 링크(CRXDE Lite에서 액세스)
 
-* 선택한 구성 요소(콘텐츠 흐름에서 파란색 테두리로 표시됨)가 콘텐츠 트리에서 강조 표시됩니다(또는 그 반대).
+* 선택한 구성 요소(컨텐츠 플로우에서 파란색 테두리로 표시됨)가 컨텐츠 트리에서 강조 표시됩니다(반대로 표시).
 
 이렇게 하면 다음과 같은 이점이 있습니다.
 
@@ -105,7 +99,7 @@ AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-authoring/a
    * 구성 요소를 렌더링하는 데 사용되는 모든 구성 요소 스크립트.
    * 특정 구성 요소에 대한 저장소 콘텐츠 경로입니다.
 
-   ![chlimage_1-14](assets/chlimage_1-14.png)
+  ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **스크립트 편집**: 다음 링크를 클릭합니다.
 
@@ -116,11 +110,11 @@ AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-authoring/a
    * 선택한 구성 요소 내의 계층입니다.
    * 선택한 구성 요소, 그 안에 중첩된 개별 구성 요소 및 결합된 합계의 렌더링 시간.
 
-   ![chlimage_1-15](assets/chlimage_1-15.png)
+  ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
 >
->일부 링크는 아래의 스크립트를 가리킵니다. `/libs`. 하지만 이것은 참조용입니다. **은(는) 해서는 안 됨** 아래의 모든 항목 편집 `/libs`를 변경할 경우 변경 사항이 손실될 수 있습니다. 이는 핫픽스/기능 팩을 업그레이드하거나 적용할 때마다 이 분기가 변경되기 쉽기 때문입니다. 필요한 모든 변경 사항은 아래에서 수행해야 합니다. `/apps`, 참조 [오버레이 및 무시](/help/sites-developing/overlays.md).
+>일부 링크는 아래의 스크립트를 가리킵니다. `/libs`. 하지만 이것은 참조용입니다. **은(는) 해서는 안 됨** 아래의 모든 항목 편집 `/libs`를 변경할 경우 변경 사항이 손실될 수 있습니다. 이는 이 분기가 핫픽스 또는 기능 팩을 업그레이드하거나 적용할 때마다 변경되기 쉽기 때문입니다. 아래에서 필요한 변경 작업을 수행합니다 `/apps`. 다음을 참조하십시오 [오버레이 및 무시](/help/sites-developing/overlays.md).
 
 ### 오류 {#errors}
 
@@ -141,6 +135,6 @@ AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-authoring/a
 
 >[!CAUTION]
 >
->AEM 6.2에서 개발자 모드의 테스트 기능은 독립 실행형 도구 애플리케이션으로 다시 구현되었습니다.
+>AEM 6.2에서는 개발자 모드의 테스트 기능이 독립 실행형 도구 애플리케이션으로 다시 구현되었습니다.
 >
->자세한 내용은 다음을 참조하십시오. [UI 테스트](/help/sites-developing/hobbes.md).
+>자세한 내용은 [UI 테스트](/help/sites-developing/hobbes.md).
