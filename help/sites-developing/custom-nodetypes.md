@@ -1,25 +1,21 @@
 ---
 title: 사용자 지정 노드 유형
-seo-title: Custom Node Types
-description: AEM은 Sling을 기반으로 하며 두 가지 모두에서 제공하는 노드 유형이 있는 JCR 저장소를 사용하지만 AEM은 다양한 사용자 지정 노드 유형을 제공합니다
-seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
-uuid: f2022504-e433-4b42-9cc1-eef41086483a
+description: Adobe Experience Manager(AEM)는 Sling을 기반으로 하며 두 가지 모두에서 제공하는 노드 유형이 있는 JCR 저장소를 사용하지만 AEM에서는 다양한 사용자 지정 노드 유형을 제공합니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1883'
 ht-degree: 9%
 
 ---
 
 # 사용자 지정 노드 유형{#custom-node-types}
 
-AEM은 Sling을 기반으로 하며 JCR 저장소를 사용하므로 다음 두 가지 모두에서 제공하는 노드 유형을 사용할 수 있습니다.
+Adobe Experience Manager(AEM)는 Sling을 기반으로 하며 JCR 저장소를 사용하므로 다음 두 가지 모두에서 제공하는 노드 유형을 사용할 수 있습니다.
 
 * [JCR 노드 유형](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling 노드 유형](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -986,7 +982,7 @@ Wiki 속성
    * `- wiki:isGlobal (boolean)`
    * `- * (undefined)`
 
-## 워크플로 {#workflow}
+## 워크플로우 {#workflow}
 
 ### cq:Workflow {#cq-workflow}
 

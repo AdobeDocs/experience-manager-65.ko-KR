@@ -1,18 +1,14 @@
 ---
 title: Campaign Management
-seo-title: Campaign Management
 description: 캠페인 관리는 디지털 마케터에게 개인화된 콘텐츠를 제공하여 방문자를 위한 전용 경험을 만들 수 있는 기회를 제공합니다. 이를 통해 웹, 이메일 및 모바일 서비스에서 마케팅 캠페인을 오케스트레이션하여 방문자를 참여시킬 수 있습니다.
-seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
-uuid: 202d614b-a607-45de-8c24-1ee66b230315
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '623'
 ht-degree: 1%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 1%
 
 캠페인 관리는 디지털 마케터에게 개인화된 콘텐츠를 제공하여 방문자를 위한 전용 경험을 만들 수 있는 기회를 제공합니다.
 
-이를 통해 웹, 이메일 및 모바일 서비스에서 마케팅 캠페인을 오케스트레이션하여 방문자를 참여시킬 수 있습니다. 콘텐츠를 만들고, 방문자를 세그먼트화하고, 특정 사용자 프로필에 대한 타겟팅된 콘텐츠를 푸시 및 홍보하고, 여러 채널에서 캠페인을 관리할 수 있습니다.
+이를 통해 웹, 이메일 및 모바일 서비스에서 마케팅 캠페인을 오케스트레이션하여 방문자를 참여시킬 수 있습니다. 콘텐츠를 만들고, 방문자를 세그먼트화하고, 특정 사용자 프로필에 대한 타겟팅된 콘텐츠를 푸시하고, 홍보하고, 여러 채널에서 캠페인을 관리할 수 있습니다.
 
 이 문서에서는 캠페인을 구성하는 다양한 요소에 대해 설명합니다. 자세한 내용은 다음 문서에서 확인할 수 있습니다.
 
@@ -37,7 +33,7 @@ ht-degree: 1%
 캠페인 관리는 다양한 요소로 구성됩니다.
 
 * **브랜드**
-AEM에서 브랜드는 최상위 수준의 단위이며 다음과 같은 컬렉션을 구성합니다. **캠페인**.
+Adobe Experience Manager(AEM)에서 브랜드는 최상위 수준의 단위이며 다음과 같은 컬렉션을 형성합니다. **캠페인**.
 
 * **캠페인**
 캠페인은 개인의 컬렉션입니다 **경험**.
@@ -51,13 +47,13 @@ AEM에서 브랜드는 최상위 수준의 단위이며 다음과 같은 컬렉�
      티저 페이지는 다음과 같은 작업을 수행할 수 있습니다.
 
       * 방문자가 선택할 수 있는 다양한 옵션을 제공합니다.
-      * 특정 방문자 세그먼트를 기반으로 하는 티저 단락을 하나만 표시합니다. 예를 들어, 표시되는 티저 단락은 방문자의 나이에 따라 달라질 수 있습니다.
+      * 특정 방문자 세그먼트를 기반으로 하는 티저 단락을 하나만 표시합니다. 예를 들어 표시되는 티저 단락은 방문자의 나이에 따라 달라질 수 있습니다.
 
      일반적으로 티저 페이지는 다음 티저 페이지로 대체될 때까지 특정 기간 동안 지속되는 임시 작업입니다.
 
    * **뉴스레터**
 
-     [전자 메일 통신](#emailmarketing) 는 사용자를 참여시키고 웹 사이트를 방문하도록 권장하는 데 사용됩니다. 일반적으로 뉴스레터 형식을 취하여 **잠재 고객** (보통 다음과 같이 그룹화됨) **목록**). **참고:** Adobe은 이 기능을 더 강화하지 않을 계획입니다. 권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 통합 활용](/help/sites-administering/campaign.md).
+     [전자 메일 통신](#emailmarketing) 는 사용자를 참여시키고 웹 사이트를 방문하도록 권장하는 데 사용됩니다. 일반적으로 뉴스레터 형식을 취하여 **잠재 고객** (다음 항목으로 그룹화됨: **목록**). **참고:** Adobe은 이 기능을 더 강화하지 않을 계획입니다. 권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 통합 사용](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -73,17 +69,17 @@ AEM에서 브랜드는 최상위 수준의 단위이며 다음과 같은 컬렉�
 
   방문자에 대해 수집한 정보와 연락하는 방법은 리드의 기초가 됩니다. **참고:** Adobe은 이 기능을 더 강화하지 않을 계획입니다.
 
-  권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 통합 활용](/help/sites-administering/campaign.md).
+  권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 통합 사용](/help/sites-administering/campaign.md).
 
 * **목록**
 
-  리드는 일반적으로 목록으로 그룹화되어 그에 대해 공동 작업을 수행할 수 있습니다. 참고: **참고:** Adobe은 이 기능을 더 강화하지 않을 계획입니다.
+  리드는 목록으로 그룹화되어 그에 대해 공동 작업을 수행할 수 있습니다. 참고: **참고:** Adobe은 이 기능을 더 강화하지 않을 계획입니다.
 
-  권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 대한 통합을 활용합니다.](/help/sites-administering/campaign.md)
+  권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 통합을 사용합니다.](/help/sites-administering/campaign.md)
 
 * **세그먼트**
 
-  사이트 방문자는 사이트를 방문할 때 서로 다른 관심사와 목표를 갖습니다. 웹 사이트에서의 활동, 등록된 프로필 정보 및 다른 웹 사이트에서의 활동 등의 요소에 따라 이를 분석하면 세그먼트를 정의하는 데 도움이 됩니다. 그런 다음 콘텐츠를 일치하는 세그먼트에 따라 방문자의 요구 사항 및 관심 분야에 구체적으로 타겟팅할 수 있습니다.
+  사이트 방문자는 사이트를 방문할 때 서로 다른 관심사와 목표를 갖습니다. 웹 사이트에서의 활동, 등록된 프로필 정보 및 다른 웹 사이트에서의 활동 등의 요소에 따라 이를 분석하면 세그먼트를 정의하는 데 도움이 됩니다. 그런 다음 콘텐츠를 일치하는 세그먼트에 따라 방문자의 요구 사항 및 관심사에 타기팅할 수 있습니다.
 
 * **MCM**
 

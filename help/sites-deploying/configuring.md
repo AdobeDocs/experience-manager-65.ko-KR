@@ -1,30 +1,26 @@
 ---
 title: 기본 구성 개념
-seo-title: Basic Configuration Concepts
-description: AEM 구성 방법을 알아봅니다.
-seo-description: Learn how to configure AEM.
-uuid: edcdd4bd-5917-417e-8913-40d488383ea9
+description: Adobe Experience Manager 구성 방법을 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 2%
+source-wordcount: '2112'
+ht-degree: 1%
 
 ---
 
 # 기본 구성 개념{#basic-configuration-concepts}
 
-Adobe Experience Manager(AEM)는 &quot;즉시&quot; 실행할 수 있도록 모든 매개 변수에 대한 기본 설정과 함께 설치됩니다. 하지만 고유한 특정 요구 사항에 맞게 AEM을 구성할 수 있습니다.
+Adobe Experience Manager(AEM)는 &quot;즉시 실행&quot;할 수 있도록 하는 모든 매개 변수에 대한 기본 설정과 함께 설치됩니다. 하지만 고유한 특정 요구 사항에 맞게 AEM을 구성할 수 있습니다.
 
 구성할 수 있는 AEM에는 다음과 같은 여러 측면이 있습니다.
 
-* 일부 [일반적으로 모든 프로젝트 설치에 대해 구성됨](#primary-configuration-considerations) 및 을(를) 검토하여 프로젝트에 적용되는지 여부를 확인해야 합니다.
+* 일부 [일반적으로 모든 프로젝트 설치에 대해 구성됨](#primary-configuration-considerations) 및 을(를) 검토하여 프로젝트에 적용할 수 있는지 확인해야 합니다.
 * [추가 구성](#further-configuration-considerations) 기능 또는 시스템 성능 및 안정성과 관련하여 필수적이지는 않지만 일반적일 수 있습니다.
 * 다른 요소는 AEM의 특정 선택적 기능에 대해서만 필요합니다(해당 기능과 함께 설명됨).
 
@@ -32,23 +28,23 @@ Adobe Experience Manager(AEM)는 &quot;즉시&quot; 실행할 수 있도록 모�
 
 * **Adobe CQ 웹 콘솔**
 
-   OSGi 번들 및 서비스를 구성하는 표준 위치입니다.
+  OSGi 번들 및 서비스를 구성하는 표준 위치입니다.
 
-   다음을 참조하십시오 [OSGi 구성](/help/sites-deploying/configuring-osgi.md) 추가 세부 정보 및 권장 사례를 확인하십시오.
+  다음을 참조하십시오 [OSGi 구성](/help/sites-deploying/configuring-osgi.md) 추가 세부 정보 및 권장 사례를 확인하십시오.
 
 * **저장소**
 
-   OSGi 구성의 하위 세트는 저장소에서 사용할 수 있습니다. 이렇게 하면 저장소 콘텐츠를 복사하거나 복제하는 것과 동일한 구성이 다시 생성됩니다. 실행 모드에 따라 자체 구성을 저장소에 추가할 수도 있습니다.
+  OSGi 구성의 하위 집합은 저장소에서 사용할 수 있습니다. 이렇게 하면 저장소 콘텐츠를 복사하거나 복제하는 것과 동일한 구성이 다시 생성됩니다. 실행 모드에 따라 자체 구성을 저장소에 추가할 수도 있습니다.
 
-   다음을 참조하십시오 [저장소의 OSGi 구성](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) 특히 [저장소에 새 구성 추가](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) 을 참조하십시오.
+  다음을 참조하십시오 [저장소의 OSGi 구성](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) 특히 [저장소에 새 구성 추가](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) 을 참조하십시오.
 
 * **파일 시스템**
 
-   몇 가지 구성 파일이 파일 시스템 내에 있습니다.
+  몇 가지 구성 파일이 파일 시스템 내에 있습니다.
 
 * **AEM WCM**
 
-   AEM WCM 자체 내에서 다양한 측면을 구성할 수 있으며, 많은 경우 [도구](/help/sites-administering/tools-consoles.md) 콘솔(예: 복제 에이전트)
+  AEM WCM 자체 내에서 다양한 측면을 구성할 수 있으며, 많은 경우 [도구](/help/sites-administering/tools-consoles.md) 콘솔(예: 복제 에이전트)
 
 >[!NOTE]
 >
@@ -58,9 +54,7 @@ Adobe Experience Manager(AEM)는 &quot;즉시&quot; 실행할 수 있도록 모�
 
 >[!NOTE]
 >
->AEM 구성은 간단하지만, 다음과 같은 점에 유의해야 합니다.
->
->특정 변경 사항은 애플리케이션에 중대한 영향을 줄 수 있습니다. 이러한 이유로 AEM 구성을 시작하기 전에 필요한 경험과 지식을 갖추고 있는지 확인하고 필요한 사항만 변경합니다. OSGi 콘솔을 통해 변경한 사항은 다음과 같습니다 **즉시** 실행 중인 시스템에 적용됩니다(다시 시작할 필요가 없음).
+>AEM 구성은 간단합니다. 그러나 특정 변경 사항은 애플리케이션에 중대한 영향을 미칠 수 있습니다. 이러한 이유로 AEM 구성을 시작하기 전에 필요한 경험과 지식을 갖추고 있는지 확인하고 필요한 사항만 변경합니다. OSGi 콘솔을 통해 변경한 사항은 다음과 같습니다 **즉시** 실행 중인 시스템에 적용됩니다(다시 시작할 필요가 없음).
 
 ## 기본 구성 고려 사항 {#primary-configuration-considerations}
 
@@ -70,7 +64,7 @@ Adobe Experience Manager(AEM)는 &quot;즉시&quot; 실행할 수 있도록 모�
 
 ### Security 검사 목록 {#security-checklist}
 
-몇 가지 주요 구성 문제가 다음에 나열됩니다. [보안 검사 목록](/help/sites-administering/security-checklist.md). 이 내용을 읽고 설치에 필요한 조치를 취했는지 확인하십시오.
+몇 가지 주요 구성 문제가 다음에 나열됩니다. [보안 검사 목록](/help/sites-administering/security-checklist.md). 이 문서를 읽고 설치에 필요한 조치를 취했는지 확인하십시오.
 
 ### 기본 UI 구성 - 터치에 적합한 또는 클래식 {#configuring-the-default-ui-touch-optimized-or-classic}
 
@@ -87,7 +81,7 @@ AEM에서 사용할 수 있는 UI는 두 가지입니다.
 
 ### IPv4 및 IPv6 {#ipv-and-ipv}
 
-AEM의 모든 요소(예: 저장소, Dispatcher 등)는 IPv4 및 IPv6 네트워크 모두에 설치할 수 있습니다.
+AEM의 모든 요소(예: 저장소 및 Dispatcher)는 IPv4 및 IPv6 네트워크 모두에 설치할 수 있습니다.
 
 필요한 경우 네트워크 유형에 적합한 형식을 사용하여 IP 주소를 지정할 수 있으므로 특별한 구성이 필요하지 않으므로 원활한 작업이 가능합니다.
 
@@ -95,23 +89,23 @@ AEM의 모든 요소(예: 저장소, Dispatcher 등)는 IPv4 및 IPv6 네트워�
 
 * IPv6 주소
 
-   예 `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  예 `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * IPv4 주소
 
-   예 `https://123.1.1.4:4502`
+  예 `https://123.1.1.4:4502`
 
 * 서버 이름
 
-   예, `https://www.yourserver.com:4502`
+  예, `https://www.yourserver.com:4502`
 
 * 의 기본 대/소문자 `localhost` 는 IPv4 및 IPv6 네트워크 설치 모두에 대해 해석됩니다.
 
-   예, `http://localhost:4502`
+  예, `http://localhost:4502`
 
 ### 버전 삭제 {#version-purging}
 
-표준 설치에서 AEM은 사용자가 컨텐츠를 업데이트한 후 페이지를 활성화할 때마다 페이지나 노드의 새 버전을 생성합니다. 또한 요청에 따라 다음을 사용하여 추가 버전을 생성할 수도 있습니다. **버전 관리** 사이드 킥의 탭 이러한 모든 버전은 저장소에 저장되며 필요한 경우 복원할 수 있습니다.
+표준 설치에서 AEM은 사용자가 콘텐츠를 업데이트한 후 페이지를 활성화할 때마다 페이지 또는 노드 버전을 생성합니다. 를 사용하여 요청에 대한 추가 버전을 생성할 수도 있습니다. **버전 관리** 사이드 킥의 탭 이러한 모든 버전은 저장소에 저장되며 필요한 경우 복원할 수 있습니다.
 
 이러한 버전은 삭제되지 않으므로 시간이 지남에 따라 저장소 크기가 커지므로 관리해야 합니다.
 
@@ -129,7 +123,7 @@ AEM에서는 다음을 구성할 수 있습니다.
 
 ### 실행 모드 {#run-modes}
 
-실행 모드를 사용하면 작성자나 게시, 테스트, 개발 또는 인트라넷 등과 같은 특정 목적을 위해 AEM 인스턴스를 조정할 수 있습니다.
+실행 모드를 사용하면 특정 목적을 위해 AEM 인스턴스를 조정할 수 있습니다. 예: 작성자 또는 게시, 테스트, 개발 또는 인트라넷 등.
 
 이 작업은 각 실행 모드에 대한 구성 매개 변수의 컬렉션을 정의하여 수행됩니다. 기본 구성 매개변수 세트가 모든 실행 모드에 적용됩니다. 그런 다음 특정 환경의 목적에 맞게 추가 세트를 조정할 수 있습니다. 그런 다음 필요에 따라 적용됩니다.
 
@@ -154,7 +148,7 @@ SSO(Single Sign-On)를 사용하면 인증 자격 증명(사용자 이름 및 �
 
 다음을 참조하십시오 [리소스 매핑](/help/sites-deploying/resource-mapping.md) 을 참조하십시오.
 
-### 복제, 역방향 복제 및 복제 에이전트 {#replication-reverse-replication-and-replication-agents}
+### 복제, 역복제 및 복제 에이전트 {#replication-reverse-replication-and-replication-agents}
 
 복제 에이전트는 다음과 같은 작업에 사용되는 메커니즘으로 AEM에 중심적입니다.
 
@@ -162,7 +156,7 @@ SSO(Single Sign-On)를 사용하면 인증 자격 증명(사용자 이름 및 �
 * Dispatcher 캐시에서 콘텐츠를 명시적으로 플러시합니다.
 * 게시 환경의 사용자 입력(예: 양식 입력)을 작성 환경(작성 환경의 제어 아래)으로 반환합니다.
 
-자세한 내용은 을 참조하십시오. [복제](/help/sites-deploying/replication.md).
+자세한 내용은 [복제](/help/sites-deploying/replication.md).
 
 ### OSGi 구성 설정 {#osgi-configuration-settings}
 
@@ -178,21 +172,21 @@ Active Directory와 같은 (중앙) LDAP 디렉터리에 저장된 사용자를 
 
 LDAP 인증은 저장소 수준에서 발생하므로 저장소에서 직접 처리됩니다. 자세한 내용은 [AEM을 사용하여 LDAP 구성](/help/sites-administering/ldap-config.md).
 
-AEM 내의 사용자 관리(액세스 권한 할당 포함)에 대해서는 를 참조하십시오. [사용자 관리 및 보안](/help/sites-administering/security.md).
+AEM 내의 사용자 관리(액세스 권한 할당 포함)에 대해서는 다음을 참조하십시오. [사용자 관리 및 보안](/help/sites-administering/security.md).
 
 ### Dispatcher 구성 {#configuring-the-dispatcher}
 
-Dispatcher는 엔터프라이즈급 웹 서버와 함께 사용할 수 있는 Adobe Experience Manager의 캐싱 및/또는 로드 밸런싱 도구입니다.
+Dispatcher는 캐싱, 로드 밸런싱 또는 둘 모두를 위한 Adobe Experience Manager의 도구입니다. 엔터프라이즈급 웹 서버와 함께 사용할 수 있습니다.
 
-다음을 참조하십시오 [디스패처](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) 특히 상세한 것은 [Dispatcher 구성](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html) 추가 구성 세부 정보.
+다음을 참조하십시오 [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko) 특히 상세한 것은 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR) 추가 구성 세부 정보.
 
 ### AEM LiveCycle 커넥터 구성 {#configuring-aem-livecycle-connector}
 
-AEM Doc Services 및 AEM Doc Security가 출시되면서 이제 LiveCycle Doc Services를 호출하여 XFA 양식을 렌더링하고 문서를 PDF으로 변환하며 문서를 정책으로 보호할 수 있습니다. 다음을 읽으십시오. [AEM LiveCycle 커넥터](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) 을 참조하십시오.
+AEM Doc Services 및 AEM Doc Security가 출시되면서 AEM은 이제 LiveCycle Doc Services를 호출하여 XFA 양식을 렌더링하고 문서를 PDF으로 변환하며 문서를 정책으로 보호하는 기능을 갖게 되었습니다. 다음을 참조하십시오 [AEM LiveCycle 커넥터](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) 을 참조하십시오.
 
 ### 작업 오프로딩 및 토폴로지 관리 {#job-offloading-and-topology-administration}
 
-[오프로드](/help/sites-deploying/offloading.md) 토폴로지에 Experience Manager 인스턴스를 포함하는 처리 작업을 배포합니다. 오프로딩을 사용하면 특정 유형의 처리를 수행하기 위해 특정 Experience Manager 인스턴스를 사용할 수 있습니다. 특화된 처리를 통해 사용 가능한 서버 리소스의 사용을 극대화할 수 있습니다.
+[오프로드](/help/sites-deploying/offloading.md) 토폴로지의 Experience Manager 인스턴스 간에 처리 작업을 배포합니다. 오프로딩을 사용하면 특정 유형의 처리를 수행하기 위해 특정 Experience Manager 인스턴스를 사용할 수 있습니다. 특화된 처리를 통해 사용 가능한 서버 리소스의 사용을 극대화할 수 있습니다.
 
 토폴로지는 오프로딩에 참여하는 느슨하게 결합된 Experience Manager 클러스터입니다. 클러스터는 하나 이상의 Experience Manager 서버 인스턴스로 구성됩니다(단일 인스턴스는 클러스터로 간주됨).
 
@@ -244,17 +238,17 @@ SSL을 통한 HTTP를 활성화하여 서버에 보다 안전한 연결을 사�
 
 다음을 참조하십시오 [정적 개체의 만료](/help/sites-deploying/expiration-static-objects.md) 을 참조하십시오.
 
-### Java 프로세스에서 FI 열기 {#open-files-in-the-java-process}
+### Java™ Process에서 FI 열기 {#open-files-in-the-java-process}
 
-각 Java 프로세스가 파일에 액세스할 수 있습니다. 이렇게 하려면 시스템 리소스가 필요합니다. 이러한 이유로 상한은 각 프로세스가 동시에 액세스할 수 있는 파일 수로 정의됩니다. 이를 초과하는 경우 예외 오류가 발생할 수 있습니다.
+각 Java™ 프로세스는 파일에 액세스할 수 있습니다. 이렇게 하려면 시스템 리소스가 필요합니다. 이러한 이유로, 상한은 각 프로세스가 동시에 액세스할 수 있는 파일 수로 정의됩니다. 이를 초과하는 경우 예외 오류가 발생할 수 있습니다.
 
-AEM 프로세스가 이 최대값을 초과하는 경우 &quot; `too many open files`&quot;다음에서 표시됨: `error.log`.
+AEM 프로세스가 이 최대값을 초과하는 경우 &quot; `too many open files`&quot;이(가)에 표시됨 `error.log`.
 
-이러한 예외를 방지하려면 다음을 수행해야 합니다.
+이러한 예외를 방지하려면 다음을 수행합니다.
 
 1. AEM 프로세스에서 사용 중인 열린 파일의 수를 확인합니다.
 
-   이 검사를 수행하는 방법은 인스턴스가 실행 중인 플랫폼에 따라 다릅니다. lsof(Unix) 또는 Process Explorer(Windows) 등의 유틸리티를 사용할 수 있습니다.
+   이 검사는 인스턴스가 실행 중인 플랫폼에 따라 다릅니다. lsof(UNIX®) 또는 프로세스 탐색기(Windows)와 같은 유틸리티를 사용할 수 있습니다.
 
    이 값은 다음 작업을 위한 개발 및 테스트 중에 모니터링해야 합니다.
 
@@ -281,7 +275,7 @@ AEM 프로세스가 이 최대값을 초과하는 경우 &quot; `too many open f
 
 다음 [비디오 구성 요소](/help/sites-authoring/default-components-foundation.md#video) 에서는 사전 정의된 기본 비디오 요소를 페이지에 배치할 수 있습니다.
 
-적절한 코드 변환이 수행되려면 관리자가 수행해야 합니다 [FFmpeg 설치](/help/sites-administering/config-video.md#install-ffmpeg) 별도로. 또한 다음과 같은 작업을 수행할 수 있습니다. [비디오 프로필 구성](/help/sites-administering/config-video.md#configure-video-profiles) html5 요소와 함께 사용됩니다.
+적절한 코드 변환이 일어나도록 하려면 관리자가 수행해야 합니다 [FFmpeg 설치](/help/sites-administering/config-video.md#install-ffmpeg) 별도로. 또한 다음과 같은 작업을 수행할 수 있습니다. [비디오 프로필 구성](/help/sites-administering/config-video.md#configure-video-profiles) html5 요소와 함께 사용됩니다.
 
 ### 보고서 구성 및 사용자 지정 {#configuring-and-customizing-reports}
 
@@ -301,7 +295,7 @@ CQ는 다음과 같은 사용자에게 이메일 알림을 보냅니다.
 
 ### 페이지 노출 횟수 활성화 {#enabling-page-impressions}
 
-페이지 노출 횟수는 **노출 횟수** 클래식 UI siteadmin 콘솔의 열입니다. 페이지 노출 횟수 캡처를 활성화하려면 다음을 구성해야 합니다.
+페이지 노출 횟수는 **노출 횟수** 클래식 UI siteadmin 콘솔의 열입니다. 페이지 노출 횟수 캡처를 활성화하려면 다음을 구성합니다.
 
 * 게시 인스턴스에서 다음을 수행합니다.
 
@@ -309,8 +303,8 @@ CQ는 다음과 같은 사용자에게 이메일 알림을 보냅니다.
 
 * 작성자 인스턴스에서 다음을 수행합니다.
 
-   * [Adobe 페이지 노출 횟수 추적](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Adobe 페이지 노출 횟수 추적기](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >
->작성 환경에서 Adobe 페이지 노출 횟수 추적기를 구성하면 추적 서비스에 대한 익명 요청이 허용됩니다.
+>작성 환경에서 Adobe 페이지 노출 횟수 추적기를 구성하면 추적 서비스에 대한 익명 요청을 수행할 수 있습니다.

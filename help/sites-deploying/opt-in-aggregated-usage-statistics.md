@@ -1,19 +1,15 @@
 ---
 title: 집계된 사용 통계 수집 선택
-seo-title: Opting Into Aggregated Usage Statistics Collection
 description: 집계된 사용 통계를 옵트인하는 방법을 알아봅니다.
-seo-description: Learn how to opt into aggregated usage statistics.
-uuid: 8bd0b870-4bea-42e1-8179-e900164591b6
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '300'
 ht-degree: 3%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 3%
 
 ## 소개 {#introduction}
 
-AEM과 상호 작용하는 방법에 대한 Adobe 통계를 전송하여 Adobe Marketing Cloud을 개선하는 데 도움이 될 수 있습니다. 이 정보에는 회사의 사이트 방문자에 대한 데이터가 포함되어 있지 않으며, 이는 Adobe이 사용자 경험을 제공, 지원 및 개선하는 데만 사용됩니다.
+AEM(Adobe Experience Cloud)과 상호 작용하는 방법에 대한 Adobe 통계를 전송하여 Adobe Experience Manager을 개선하는 데 도움이 될 수 있습니다. 이 정보에는 회사의 사이트 방문자에 대한 데이터가 포함되어 있지 않으며, Adobe이 사용자 경험을 제공, 지원 및 개선하는 데만 사용됩니다.
 
 Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수 있습니다.
 
@@ -30,11 +26,11 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수
 >
 >GDPR 및 CCPA와 같은 다양한 데이터 보호 및 개인 정보 보호 규정이 있습니다. AEM Sites은 데이터 보호 및 개인정보 보호 규정 준수 의무와 관련하여 고객을 지원할 준비가 되어 있습니다. 이 페이지는 고객에게 집계된 사용 통계 수집을 옵트인(또는 옵트아웃)하는 절차를 안내합니다.
 >
->자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html).
+>자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->을 사용하여 언제든지 옵트아웃할 수도 있습니다. [웹 콘솔](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) 또는 AEM 옵트인 화면에서 옵트인 옵션을 선택하지 않습니다.
+>다음을 사용하여 언제든지 옵트아웃할 수 있습니다. [웹 콘솔](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) 또는 AEM 옵트인 화면에서 옵트인 옵션을 선택하지 않습니다.
 
 ## Touch UI를 사용한 옵트인 {#opt-in-by-using-the-touch-ui}
 

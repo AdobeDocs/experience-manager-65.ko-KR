@@ -6,16 +6,16 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b759b936-5907-4311-a5cc-60f321476368
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
 
 # EMC Documentum® 사용자를 위한 Connector 백업 전략 {#backup-strategy-for-connector-for-emc-documentum-users}
 
-Connector for EMC Documentum®을 설치한 경우 이 장의 지침 외에 백업 및 복구 전략에는 각 ECM 시스템이 설치된 컴퓨터를 백업(또는 복구)하는 작업이 포함되어야 합니다. ECM Documentum® 설명서를 참조하십시오.
+Connector for EMC Documentum®을 설치한 경우 이 장의 지침 외에 백업 및 복구 전략에는 ECM 시스템이 설치된 컴퓨터를 백업하거나 복구하는 작업이 포함되어야 합니다. ECM Documentum® 설명서를 참조하십시오.
 
 ECM 저장소를 사용하고 다음 작업을 수행하여 AEM Forms 환경을 백업합니다.
 
