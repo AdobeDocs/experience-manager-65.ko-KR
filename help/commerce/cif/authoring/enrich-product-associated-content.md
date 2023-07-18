@@ -1,6 +1,6 @@
 ---
 title: 관련 AEM 콘텐츠를 사용하여 제품 데이터 강화
-description: 마케터가 Adobe Experience Manager의 관련 콘텐츠를 사용하여 제품 데이터를 강화하는 방법에 대해 알아봅니다. AEM의 에셋 및 경험 조각과 같은 콘텐츠는 상거래 제품과 연계될 수 있습니다. 이러한 콘텐츠 유형은 연결되면 제품 페이지나 카테고리 페이지 내의 자리 표시자에 동적으로 삽입할 수 있습니다. 이렇게 하면 마케터가 이미지 및 비디오와 같은 추가 콘텐츠로 특정 제품 페이지를 타깃팅할 수 있습니다.
+description: 마케팅 콘텐츠를 제품 페이지에 동적으로 추가하여 마케터가 Adobe Experience Manager의 관련 콘텐츠로 제품 데이터를 강화하는 방법에 대해 알아봅니다. 이렇게 하면 마케터가 이미지 및 비디오와 같은 추가 콘텐츠로 특정 제품 페이지를 타깃팅할 수 있습니다.
 sub-product: Commerce
 version: 6.5
 doc-type: feature-video
@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: 1a069fbc-c036-419a-b585-6aa43e15de16
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: a600acb7d65fbfa1806ef582642a6c5ac7859890
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '350'
 ht-degree: 2%
 
 ---
