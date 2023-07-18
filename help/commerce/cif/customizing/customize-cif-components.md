@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 1d914b12c3279bacaf5cabb3b1953e927c04bad1
 workflow-type: tm+mt
-source-wordcount: '2579'
+source-wordcount: '2571'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 ## 빌드할 내용
 
-Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품을 만들기 시작했으며 비즈니스는 다음을 전시하고자 합니다. **환경 친화적** 제품 티저의 일부로 배지 를 사용하십시오. 제품이 다음을 사용하는지 여부를 나타내기 위해 Adobe Commerce에 새 사용자 지정 특성이 만들어집니다. **환경 친화적** 재질. 그런 다음 이 사용자 지정 속성이 GraphQL 쿼리의 일부로 추가되고 지정된 제품의 제품 티저에 표시됩니다.
+Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품을 만들기 시작했으며 비즈니스는 다음을 전시하고자 합니다. **환경 친화적** 제품 티저의 일부로 배지 를 사용하십시오. 제품이 다음을 사용하는지 여부를 나타내기 위해 Adobe Commerce에 새 사용자 지정 특성이 만들어집니다. **환경 친화적** 재질. 이 사용자 지정 속성은 GraphQL 쿼리의 일부로 추가되고 지정된 제품의 제품 티저에 표시됩니다.
 
 ![친환경 배지 최종 구현](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -69,7 +69,7 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
 ## 제품 티저 작성 {#author-product-teaser}
 
-제품 티저 구성 요소는 이 자습서 전체에서 확장됩니다. 첫 번째 단계로, 제품 티저의 새 인스턴스를 홈 페이지에 추가하여 기본 기능을 이해합니다.
+제품 티저 구성 요소는 이 자습서 전체에서 확장됩니다. 첫 번째 단계로, 제품 티저의 인스턴스를 홈 페이지에 추가하여 기본 기능을 이해합니다.
 
 1. 다음 위치로 이동 **홈 페이지** 사이트: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
@@ -178,11 +178,11 @@ AEM 코드로 이동하기 전에 다음을 살펴보는 것이 좋습니다. [A
 
    ![샘플 GraphQL 응답](../assets/customize-cif-components/sample-graphql-query.png)
 
-   값: **예** 은(는) 의 정수입니다. **1**. 이 기능은 Java™으로 GraphQL 쿼리를 작성할 때 유용합니다.
+값: **예** 은(는) 의 정수입니다. **1**. 이 기능은 Java™으로 GraphQL 쿼리를 작성할 때 유용합니다.
 
-   >[!TIP]
-   >
-   >에 대한 자세한 설명서 [Adobe Commerce GraphQL은 여기에서 찾을 수 있습니다.](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+>[!TIP]
+>
+>에 대한 자세한 설명서 [Adobe Commerce GraphQL은 여기에서 찾을 수 있습니다.](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## 제품 티저의 슬링 모델 업데이트 {#updating-sling-model-product-teaser}
 
@@ -213,7 +213,7 @@ Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **
    }
    ```
 
-   제품에 가 있는지 여부를 나타내기 위해 논리를 캡슐화하는 새로운 방법입니다. `eco_friendly` 속성이 로 설정됨 **예** 또는 **아니요**.
+제품에 가 있는지 여부를 나타내기 위해 논리를 캡슐화하는 새로운 방법입니다. `eco_friendly` 속성이 로 설정됨 **예** 또는 **아니요**.
 
 1. 다음으로, 다음을 검사합니다. `MyProductTeaserImpl.java` 위치: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`.
 
@@ -486,7 +486,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 ## 축하합니다 {#congratulations}
 
-첫 번째 AEM CIF 구성 요소 맞춤화를 완료했습니다! 다운로드 [여기에서 솔루션 파일 완료됨](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+첫 번째 AEM CIF 구성 요소를 사용자 지정했습니다! 다운로드 [여기에서 솔루션 파일 완료됨](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## 보너스 챌린지 {#bonus-challenge}
 
