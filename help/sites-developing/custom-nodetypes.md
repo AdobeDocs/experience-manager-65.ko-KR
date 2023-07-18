@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
+source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1866'
 ht-degree: 9%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 9%
 
 Adobe Experience Manager(AEM)는 Sling을 기반으로 하며 JCR 저장소를 사용하므로 다음 두 가지 모두에서 제공하는 노드 유형을 사용할 수 있습니다.
 
-* [JCR 노드 유형](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [JCR 노드 유형](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling 노드 유형](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-이 외에도. AEM은 다양한 사용자 지정 노드 유형을 제공합니다.
+이러한 노드 유형 외에도 AEM에서는 다양한 사용자 지정 노드 유형을 제공합니다.
 
 ## 감사 {#audit}
 
@@ -145,7 +145,7 @@ Adobe Experience Manager(AEM)는 Sling을 기반으로 하며 JCR 저장소를 �
 
 **설명**
 
-노드를 의사 페이지로 표시하는 mixin 형식을 정의합니다. 즉, 페이지 및 WCM 편집 지원에 맞게 조정할 수 있습니다.
+노드를 의사 페이지로 표시하는 mixin 형식을 정의합니다. 즉, 페이지 및 WCM 편집 지원에 맞게 조정할 수 있음을 의미합니다.
 
 **정의**
 
@@ -160,9 +160,9 @@ WCM에서 사용되는 최소 속성으로 페이지 콘텐츠의 기본 노드�
 * `@prop jcr:title` - 페이지 제목
 * `@prop jcr:description` - 이 페이지에 대한 설명.
 * `@prop cq:template` - 페이지를 만드는 데 사용되는 템플릿 경로.
-* `@prop cq:allowedTemplates` - 허용된 템플릿에 대한 경로를 결정하는 데 사용되는 정규 표현식 목록입니다.
-* `@prop pageTitle` - 일반적으로 제목은 `<title>` 태그에 가깝게 배치하십시오.
-* `@prop navTitle` - 일반적으로 탐색에서 사용되는 제목입니다.
+* `@prop cq:allowedTemplates` - 허용된 템플릿 경로를 결정하는 데 사용되는 정규 표현식 목록입니다.
+* `@prop pageTitle` - 다음에 표시되는 제목 `<title>` 태그에 가깝게 배치하십시오.
+* `@prop navTitle` - 탐색에 사용되는 제목입니다.
 * `@prop hideInNav` - 탐색 시 페이지를 숨길지 여부를 지정합니다.
 * `@prop onTime` - 이 페이지가 유효해지는 시간.
 * `@prop offTime` - 이 페이지가 유효하지 않게 되는 시간.
@@ -202,8 +202,8 @@ CQ 템플릿을 정의합니다.
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` - 상위 템플릿으로 허용되는 템플릿에 대한 경로를 결정하는 정규 표현식 패턴입니다.
-* `@prop allowedChildren` - 하위 템플릿으로 허용되는 템플릿에 대한 경로를 결정하는 정규 표현식 패턴입니다.
+* `@prop allowedParents` - 상위 템플릿으로 허용되는 템플릿 경로를 결정하는 정규 표현식 패턴입니다.
+* `@prop allowedChildren` - 하위 템플릿으로 허용되는 템플릿 경로를 결정하는 정규 표현식 패턴입니다.
 * `@prop ranking` - 페이지 만들기 대화 상자에서 템플릿 목록 내에 배치합니다.
 
 **정의**
@@ -232,7 +232,7 @@ CQ 구성 요소를 정의합니다.
 * `@prop dialogPath` - 기본 대화 상자 경로(대화 상자 대체).
 * `@node design_dialog` - 디자인 대화 상자
 * `@prop cq:cellName` - 디자인 셀의 이름입니다.
-* `@prop cq:isContainer` - 컨테이너 구성 요소인지 여부를 나타냅니다. 이렇게 하면 경로 이름 대신 하위 구성 요소의 셀 이름이 사용됩니다. 예를 들어 `parsys` 는 컨테이너 구성 요소입니다. 이 값이 정의되지 않으면 확인은 `cq:childEditConfig`.
+* `@prop cq:isContainer` - 컨테이너 구성 요소인지 여부를 나타냅니다. 경로 이름 대신 하위 구성 요소의 셀 이름을 강제로 사용합니다. 예를 들어 `parsys` 는 컨테이너 구성 요소입니다. 이 값이 정의되지 않으면 확인은 `cq:childEditConfig`.
 * `@prop cq:noDecoration` - true이면 데코레이션 없음 `div` 이 구성 요소를 포함할 때 태그가 그려집니다.
 * `@node cq:editConfig` - 편집 막대의 매개 변수를 정의하는 구성입니다.
 * `@node cq:childEditConfig` - 하위 구성 요소에 상속된 편집 구성입니다.
@@ -444,7 +444,7 @@ DAM 자산을 나타내는 축소판입니다.
 
 **설명**
 
-`cq:attributes` 는 ContentBus 버전 태그에 대한 노드 유형입니다. 이 노드에는 일련의 속성만 있습니다. 이 속성 중 사전 정의된 &quot;created&quot;, &quot;csd&quot; 및 &quot;timestampe&quot;가 있습니다.
+노드 유형 `cq:attributes` 는 ContentBus 버전 태그용입니다. 이 노드에는 일련의 속성만 있으며 그 중 사전 정의된 &quot;created&quot;, &quot;csd&quot; 및 &quot;timestamp&quot;가 있습니다.
 
 * `@prop created (long) mandatory copy` - 버전 정보 생성 타임스탬프(일반적으로 이전 버전의 체크 인 시간 또는 페이지 생성 시간).
 * `@prop csd (string) mandatory copy` - csd 표준 속성, 페이지 노드의 cq:csd 속성 사본
@@ -485,9 +485,9 @@ DAM 자산을 나타내는 축소판입니다.
 
 폴 구성.
 
-* `@prop source (String) mandatory` - 데이터 소스 URI이며, 반드시 입력해야 합니다.
-* `@prop target (String)` - 데이터 소스에서 검색된 데이터가 저장되는 대상 위치입니다. 이 옵션은 선택 사항이며 기본값은 cq:PollConfig 노드로 설정됩니다.
-* `@prop interval (Long)` - 데이터 소스에서 새 데이터나 업데이트된 데이터를 폴링하는 간격(초)입니다. 이 옵션은 선택 사항이며 기본값은 30분(1800초)입니다.
+* `@prop source (String) mandatory` - 데이터 소스 URI. 필수이며 비워둘 수 없습니다.
+* `@prop target (String)` - 데이터 소스에서 검색된 데이터가 저장되는 대상 위치입니다. 선택 사항이며 기본값은 cq:PollConfig 노드로 설정됩니다.
+* `@prop interval (Long)` - 데이터 소스에서 새 데이터나 업데이트된 데이터를 폴링하는 간격(초)입니다. 선택 사항이며 기본값은 30분(1,800초)입니다.
 * [Adobe Experience Manager용 사용자 지정 데이터 가져오기 서비스 만들기](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **정의**
@@ -814,7 +814,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 
 **설명**
 
-를 추가합니다. `cq:userContent` 사용자가 수정할 수 있는 하위 노드. 각 사용자는 고유한 이름을 갖게 됩니다. `cq:userContent/<userid>` 일반적으로 mixin이 있는 하위 노드 `cq:UserTaggable`.
+를 추가합니다. `cq:userContent` 사용자가 수정할 수 있는 하위 노드. 각 사용자는 고유한 이름을 가집니다. `cq:userContent/<userid>` 일반적으로 mixin이 있는 하위 노드 `cq:UserTaggable`.
 
 **정의**
 

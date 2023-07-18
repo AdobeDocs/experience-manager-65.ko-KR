@@ -1,21 +1,17 @@
 ---
 title: 커뮤니티 점수 및 배지
-seo-title: Communities Scoring and Badges
 description: AEM Communities 채점 및 배지를 사용하면 커뮤니티 구성원을 식별하고 보상할 수 있습니다
-seo-description: AEM Communities scoring and badges lets you identify and reward community members
-uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
 workflow-type: tm+mt
-source-wordcount: '2868'
+source-wordcount: '2853'
 ht-degree: 2%
 
 ---
@@ -44,64 +40,58 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 
 회원들의 역할 또는 지역사회에서의 지위를 나타내기 위해 회원 이름 아래에 배지를 배치합니다. 배지는 이미지 또는 이름으로 표시될 수 있습니다. 이미지로 표시되는 경우 이 이름은 접근성을 위해 대체 텍스트로 포함됩니다.
 
-기본적으로 배지는 다음 저장소의 저장소에 있습니다.
+기본적으로 배지는 저장소의 다음 위치에 있습니다.
 
 * `/libs/settings/community/badging/images`
 
 다른 위치에 저장되는 경우 모든 사용자가 읽을 수 있어야 합니다.
 
-배지는 UGC에서 규칙에 따라 할당되었는지 혹은 습득되었는지에 대해 차별화된다. 현재 할당된 배지는 텍스트로 표시되고 획득한 배지는 이미지로 표시됩니다.
+배지는 UGC에서 규칙에 따라 할당되었는지 혹은 습득되었는지에 따라 차별화된다. 현재 할당된 배지는 텍스트로 표시되고 획득한 배지는 이미지로 표시됩니다.
 
 ### 배지 관리 UI {#badge-management-ui}
 
-커뮤니티 [배지 콘솔](/help/communities/badges.md) 은 획득(수상) 또는 커뮤니티에서 특정 역할을 수행할(할당) 때 멤버에 대해 표시할 수 있는 사용자 정의 배지를 추가하는 기능을 제공합니다.
+커뮤니티 [배지 콘솔](/help/communities/badges.md) 획득(수상) 또는 커뮤니티에서 특정 역할을 수행할(할당) 때 멤버에 대해 표시할 수 있는 사용자 정의 배지를 추가할 수 있습니다.
 
 ### 할당된 배지 {#assigned-badges}
 
 역할 기반 배지는 관리자가 커뮤니티에서의 역할에 따라 커뮤니티 구성원에게 할당합니다.
 
-할당된(및 인식된) 배지는 선택한 항목에 저장됩니다. [SRP](/help/communities/srp.md) 및 은 직접 액세스할 수 없습니다. GUI를 사용할 수 있을 때까지 역할 기반 배지를 할당하는 유일한 방법은 코드 또는 cURL을 사용하는 것입니다. cURL 지침은 제목이 있는 섹션을 참조하십시오. [배지 할당 및 취소](#assign-and-revoke-badges).
+할당된(및 부여된) 배지는 선택한 항목에 저장됩니다. [SRP](/help/communities/srp.md) 및 은 직접 액세스할 수 없습니다. GUI를 사용할 수 있을 때까지 역할 기반 배지를 할당하는 유일한 방법은 코드 또는 cURL을 사용하는 것입니다. cURL 지침은 제목이 있는 섹션을 참조하십시오. [배지 할당 및 취소](#assign-and-revoke-badges).
 
 릴리스에는 다음과 같은 세 가지 역할 기반 배지가 포함되어 있습니다.
 
 * **중재자**
-
-   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
+  `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **그룹 관리자**
-
-   `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
+  `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **권한이 있는 구성원**
+  `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
-
-   ![할당된 배지](assets/assigned-badges.png)
+  ![할당된 배지](assets/assigned-badges.png)
 
 ### 수여된 배지 {#awarded-badges}
 
 리워드 기반 배지는 커뮤니티 활동에서 적용된 규칙에 따라 커뮤니티 구성원에게 채점 서비스에서 부여됩니다.
 
-배지가 활동에 대한 보상으로 나타나기 위해서는 다음의 두 가지 상황이 일어나야 합니다.
+배지가 활동에 대한 보상으로 나타나려면 다음 두 가지 상황이 발생해야 합니다.
 
 * 배지는 다음과 같아야 합니다. [활성화됨](#enableforcomponent) 피쳐 컴포넌트
 * 채점 및 배지 규칙은 다음과 같아야 합니다. [적용됨](#applytopage) 구성 요소가 배치된 페이지(또는 상위 항목)로 이동합니다.
 
-이번 릴리스에는 3가지 보상 기반 배지가 포함됐다.
+이번 릴리스에는 3가지 보상 기반 배지가 포함됩니다.
 
 * **금**
-
-   `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
+  `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **실버**
-
-   `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
+  `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **브론즈**
+  `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
-
-   ![수여된 배지](assets/awarded-badges.png)
+  ![수여된 배지](assets/awarded-badges.png)
 
 >[!NOTE]
 >
@@ -129,13 +119,13 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 
 ### 콘텐츠에 규칙 적용 {#apply-rules-to-content}
 
-채점 및 배지를 활성화하려면 속성을 추가합니다 `scoringRules` 및 `badgingRules` 을 추가하여 사이트의 콘텐츠 트리에 있는 모든 노드에 연결할 수 있습니다.
+채점 및 배지를 활성화하려면 속성을 추가합니다 `scoringRules` 및 `badgingRules` 를 사이트의 콘텐츠 트리에 있는 모든 노드에 추가합니다.
 
 사이트가 이미 게시된 경우 모든 규칙을 적용하고 구성 요소를 활성화한 후 사이트를 다시 게시합니다.
 
 배지 활성화 구성 요소에 적용되는 규칙은 현재 노드 또는 해당 상위 요소에 대한 규칙입니다.
 
-노드가 유형인 경우 `cq:Page` (권장) 그런 다음, CRXDE|Lite를 사용하여 속성에 속성을 추가합니다 `jcr:content` 노드.
+노드가 유형인 경우 `cq:Page` (권장) 그런 다음 CRXDE|Lite를 사용하여 속성에 속성을 추가합니다 `jcr:content` 노드.
 
 | **속성** | **유형** | **설명** |
 |---|---|---|
@@ -150,7 +140,7 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 
 채점 및 배지 규칙은 의 구성 요소 구성을 편집하여 배지를 사용할 수 있도록 한 구성 요소 인스턴스에만 적용됩니다. [작성 모드](/help/communities/author-communities.md).
 
-부울 속성, `allowBadges`구성 요소 인스턴스에 대한 배지 표시를 활성화/비활성화합니다. 다음에서 구성할 수 있습니다. [구성 요소 편집 대화 상자](/help/communities/author-communities.md) 포럼, QnA 및 확인란으로 레이블이 지정된 확인란을 통해 구성 요소에 주석을 추가합니다. **배지 표시**.
+부울 속성, `allowBadges`구성 요소 인스턴스에 대한 배지 표시를 활성화/비활성화합니다. 다음에서 구성할 수 있습니다. [구성 요소 편집 대화 상자](/help/communities/author-communities.md) 포럼, QnA 및 확인란으로 레이블이 지정된 확인란을 통한 주석 구성 요소의 경우 **배지 표시**.
 
 #### 예 : 포럼 구성 요소 인스턴스에 대한 allowBadges {#example-allowbadges-for-forum-component-instance}
 
@@ -162,18 +152,18 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 
 ## 채점 규칙 {#scoring-rules}
 
-채점 규칙은 배지를 수여하는 목적으로 채점을 하는 기초입니다.
+채점 규칙은 배지를 수여하기 위한 채점의 기초입니다.
 
-매우 간단하게, 각 채점 규칙은 하나 이상의 하위 규칙 목록입니다. 채점 규칙은 커뮤니티 사이트 콘텐츠에 적용되어 배지가 활성화될 때 적용할 규칙을 식별합니다.
+각 채점 규칙은 하나 이상의 하위 규칙 목록입니다. 채점 규칙은 커뮤니티 사이트 콘텐츠에 적용되어 배지가 활성화될 때 적용할 규칙을 식별합니다.
 
 채점 규칙은 상속되지만 가산되지는 않습니다. 예:
 
 * page2에 채점 규칙2가 포함되어 있고 상위 page1에 채점 규칙1이 포함된 경우.
 * page2 구성 요소에 대한 작업은 rule1과 rule2를 모두 호출합니다.
-* 두 규칙 모두 동일한 항목에 적용 가능한 하위 규칙을 포함하는 경우 `topic/verb`:
+* 두 규칙 모두에 동일한 적용 가능한 하위 규칙이 포함된 경우 `topic/verb`:
 
-   * rule2의 하위 규칙만 점수에 영향을 미칩니다.
-   * 두 하위 규칙의 점수는 함께 추가되지 않습니다.
+   * rule2의 하위 규칙만 점수에 영향을 줍니다.
+   * 두 하위 규칙의 점수는 추가되지 않습니다.
 
 채점 규칙이 두 개 이상인 경우, 점수는 각 규칙마다 별도로 유지된다.
 
@@ -202,11 +192,11 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 * 어떤 특정 커뮤니티 기능이 관련됩니까?
 * 몇 점이 주어집니까?
 
-하위 규칙에서 콘텐츠의 소유자를 점을 받는 것으로 지정하지 않는 한 기본적으로 포인트를 작업을 수행하는 멤버에게 부여합니다( `forOwner`).
+하위 규칙이 콘텐츠의 소유자를 점을 받는 것으로 지정하지 않는 한 기본적으로 작업을 수행하는 멤버에 점이 부여됩니다( `forOwner`).
 
-각각의 서브-규칙은 하나 이상의 채점 규칙에 포함될 수 있다.
+각 하위 규칙은 하나 이상의 채점 규칙에 포함될 수 있습니다.
 
-하위 규칙의 이름은 일반적으로 를 사용하는 패턴을 따릅니다. *제목* , *오브젝트* 및 *verb*. 예:
+하위 규칙의 이름은 일반적으로 를 사용하는 패턴을 따릅니다. *제목*, *오브젝트*, 및 *verb*. 예:
 
 * member-comment-create
 * 회원 수신 투표
@@ -308,7 +298,7 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 배지 규칙은 다음을 지정하여 점수 규칙을 배지에 연결합니다.
 
 * 채점 규칙
-* 특정 배지를 얻는 데 필요한 점수
+* 특정 배지를 수여하는 데 필요한 점수
 
 배지 규칙은 유형의 노드입니다. `cq:Page` 속성 포함 `jcr:content` 채점 규칙을 점수 및 배지와 연관시키는 노드입니다.
 
@@ -316,7 +306,7 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   * 1점 획득으로 브론즈 배지가 수여됩니다.
+   * 브론즈 배지는 1점 획득으로 수여된다.
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
@@ -324,7 +314,7 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 
 * `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
-   * 골드 배지는 80점이 적립되면 받게 된다.
+   * 골드 배지는 80점이 적립되면 수여된다.
 
 배지 규칙은 점수가 누적되는 방법을 결정하는 점수 규칙과 쌍을 이룹니다. 제목이 있는 섹션 참조 [콘텐츠에 규칙 적용](#apply-rules-to-content).
 
@@ -411,7 +401,6 @@ cURL -i -X POST -H *머리글* -u *로그인* -F *작업* -F *배지* *member-pr
 >
 >* 다음과 같은 경우 작성자 인스턴스를 참조할 수 있습니다. [터널 서비스](/help/communities/users.md#tunnel-service) 이(가) 활성화되었습니다.
 >* 애매모호한 무작위 이름일 수 있음 - 다음을 참조하십시오. [보안 검사 목록](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) 승인 가능 ID에 대한 정보.
-
 
 ### 예: {#examples}
 
@@ -544,7 +533,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 | 부적절한 항목으로 플래그 해제 | 멤버의 컨텐츠에 플래그가 지정되지 않음 |
 | ACCEPT | 멤버의 컨텐츠가 중재자에 의해 승인됨 |
 | 닫기 | 구성원이 댓글을 닫아 편집하고 답글을 남깁니다. |
-| 열기 | 구성원 다시 열기 주석 |
+| 열기 | 구성원이 주석을 다시 엽니다. |
 
 ### 사용자 지정 구성 요소 이벤트 {#custom-component-events}
 
@@ -556,7 +545,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 ### 배지가 표시되지 않음 {#badges-are-not-appearing}
 
-채점 및 배지 규칙이 웹 사이트의 콘텐츠에 적용되었지만, 배지가 활동에 대해 인식되지 않는 경우 해당 구성 요소의 인스턴스에 대해 배지가 활성화되었는지 확인하십시오.
+채점 및 배지 규칙이 웹 사이트의 콘텐츠에 적용되었지만, 배지가 활동에 대해 부여되지 않는 경우 해당 구성 요소의 인스턴스에 대해 배지가 활성화되었는지 확인하십시오.
 
 다음을 참조하십시오 [구성 요소에 대한 배지 활성화](#enable-badges-for-component).
 
@@ -568,7 +557,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 ### 대/소문자 오타 {#case-sensitive-typo}
 
-대부분의 속성 및 값, 특히 동사는 대/소문자를 구분합니다. 채점 하위 규칙에 사용할 때 동사는 모두 대문자로 표시되어야 합니다.
+대부분의 속성 및 값, 특히 동사는 대/소문자를 구분합니다. 채점 하위 규칙에서 동사는 모두 대문자로 사용해야 합니다.
 
 기능이 예상대로 작동하지 않는 경우 데이터가 올바르게 입력되었는지 확인하십시오.
 
@@ -607,7 +596,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 ![시험 채점 배지](assets/test-scoring-badging.png)
 
-그런 다음 포럼 및 주석 구성 요소에서 배지를 표시할 수 있는지 확인합니다.
+그런 다음 포럼 및 댓글 구성 요소에서 배지를 표시할 수 있는지 확인합니다.
 
 * 다시 CRXDE Lite 사용.
 * 포럼 구성 요소 찾아보기
