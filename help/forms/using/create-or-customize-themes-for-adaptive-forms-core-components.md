@@ -8,17 +8,15 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
+source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
 workflow-type: tm+mt
-source-wordcount: '1988'
+source-wordcount: '1968'
 ht-degree: 4%
 
 ---
 
 
 # 적응형 양식 테마 만들기 또는 사용자 지정 {#introduction-to-theme}
-
-<span class="preview"> Adobe은 핵심 구성 요소를 사용하여 다음을 수행할 것을 권장합니다. [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 또는 종료 [독립 실행형 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -290,6 +288,7 @@ The selected theme is applied to the Adaptive Form.
 1. 클릭 **만들기** > **적응형 Forms**.
 1. 적응형 Forms 핵심 구성 요소 템플릿을 선택하고 **다음**. 다음 **속성 추가** 표시
 1. 다음을 지정합니다. **이름** 적응형 양식용.
+
 
    >[!NOTE]
    >
