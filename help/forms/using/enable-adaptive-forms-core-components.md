@@ -8,15 +8,24 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 20%
+source-wordcount: '911'
+ht-degree: 21%
 
 ---
 
 
 # AEM 6.5 Forms에서 적응형 Forms 핵심 구성 요소 활성화 {#enable-adaptive-forms-core-components}
+
+<span class="preview"> Adobe은 핵심 구성 요소를 사용하여 다음을 수행할 것을 권장합니다. [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 또는 종료 [독립 실행형 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | 이 문서 |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+
+**적용 대상:** ✅ 양식 핵심 구성 요소 ❎ 적응형 양식 기초 구성 요소
 
 적응형 Forms 핵심 구성 요소를 활성화하면 만들기, 게시 및 전달을 시작할 수 있습니다 [적응형 Forms 기반의 핵심 구성 요소](create-an-adaptive-form-core-components.md) 및 [헤드리스 적응형 Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) AEM 6.5 Forms 환경에서.
 

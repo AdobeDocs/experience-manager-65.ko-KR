@@ -8,26 +8,30 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '1988'
 ht-degree: 4%
 
 ---
 
 
-# 테마 소개 {#introduction-to-theme}
+# 적응형 양식 테마 만들기 또는 사용자 지정 {#introduction-to-theme}
+
+<span class="preview"> Adobe은 핵심 구성 요소를 사용하여 다음을 수행할 것을 권장합니다. [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 또는 종료 [독립 실행형 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | 이 문서 |
 | AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 
+**적용 대상:** ✅ 양식 핵심 구성 요소 ❎ [적응형 양식 기초 구성 요소](/help/forms/using/themes.md).
+
 AEM Forms 6.5에서 테마는 적응형 양식의 스타일(모양 및 느낌)을 정의하는 데 사용하는 AEM 클라이언트 라이브러리입니다. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일이 해당 구성 요소에 반영됩니다. 테마는 적응형 양식에 대한 참조 없이 독립적으로 관리되며 여러 적응형 Forms에서 재사용할 수 있습니다.
 
-## 사용 가능한 참조 테마 {#available-reference-theme}
+## 사용 가능한 테마 {#available-standard-theme}
 
-AEM 6.5 환경은 적응형 Forms 기반의 핵심 구성 요소에 대해 아래에 나열된 참조 테마를 제공합니다.
+AEM 6.5 환경은 적응형 Forms 기반의 핵심 구성 요소에 대해 아래에 나열된 테마를 제공합니다.
 
 * [캔버스 테마](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
@@ -49,13 +53,13 @@ AEM 6.5 환경은 적응형 Forms 기반의 핵심 구성 요소에 대해 아�
 
 ## 테마 만들기
 
-AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래에 나열된 참조 테마를 제공합니다.
+AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래에 나열된 표준 테마를 제공합니다.
 
 * [캔버스 테마](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
 * [이젤 테마](https://github.com/adobe/aem-forms-theme-easel)
 
-다음을 수행할 수 있습니다. [이러한 참조 테마를 맞춤화하여 테마 만들기](#customize-a-theme-core-components).
+다음을 수행할 수 있습니다. [이러한 표준 테마 중 하나를 맞춤화하여 테마 만들기](#customize-a-theme-core-components).
 
 ## 테마 맞춤화 {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -90,26 +94,27 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 테마를 만들거나 사용자 지정하는 프로세스는 여러 단계입니다. 테마를 만들거나 맞춤화하려면 나열된 순서로 단계를 수행하십시오.
 
-1. [참조 테마 복제](#clone-git-repo-of-theme)
+1. [표준 테마 복제](#clone-git-repo-of-theme)
 1. [테마 모양 사용자 지정](#customize-the-theme)
 1. [로컬 배포용 테마 준비](#generate-the-clientlib)
-1. [로컬 테스트 환경에 테마 배포](#deploy-the-theme-on-a-local-testing-environment)
-1. [로컬 적응형 양식으로 테마 테스트](#test-the-theme-with-a-local-adaptive-form)
-1. 프로덕션 환경에 테마 배포
+1. [로컬 환경에 테마 배포](#deploy-the-theme-on-a-local-environment)
+1. [프로덕션 환경에 테마 배포](#5-deploy-a-theme-on-your-production-environment)
 
-![테마 맞춤화 워크플로](/help/forms/using/assets/custom-theme-steps.png)
+<!--
+ ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
+-->
 
-이 문서에 제공된 예제는 **캔버스** 테마를 선택할 수 있지만, 모든 참조 테마를 복제하고 동일한 지침을 사용하여 사용자 지정할 수 있습니다. 이러한 지침은 모든 테마에 적용되므로 특정 요구 사항에 따라 테마를 수정할 수 있습니다.
+이 문서에 제공된 예제는 **캔버스** 테마이지만 표준 테마를 복제하고 동일한 지침을 사용하여 사용자 지정할 수 있습니다. 이러한 지침은 모든 테마에 적용되므로 특정 요구 사항에 따라 테마를 수정할 수 있습니다.
 
 #### 1. 테마의 Git 저장소 복제 {#clone-git-repo-of-theme}
 
-적응형 Forms 기반의 핵심 구성 요소에 대한 참조 테마를 복제하려면 다음 참조 테마 중 하나를 선택하십시오.
+적응형 Forms 기반의 핵심 구성 요소에 대한 표준 테마를 복제하려면 다음 표준 테마 중 하나를 선택하십시오.
 
 * [캔버스 테마](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
 * [이젤 테마](https://github.com/adobe/aem-forms-theme-easel)
 
-참조 테마를 복제하려면 다음 지침을 따르십시오.
+표준 테마를 복제하려면 다음 지침을 수행하십시오.
 
 1. 로컬 개발 환경에서 명령 프롬프트 또는 터미널 창을 엽니다.
 
@@ -206,7 +211,7 @@ AEM 인스턴스에 테마를 배포하려면 클라이언트 라이브러리로
 
    ![클라이언트 라이브러리 위치](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. 로컬 테스트 환경에 테마 배포 {#deploy-the-theme-on-a-local-testing-environment}
+#### 4. 로컬 환경에 테마 배포 {#deploy-the-theme-on-a-local-environment}
 
 테마를 로컬 개발 또는 테스트 환경에 배포하려면 다음 단계를 따르십시오.
 
@@ -222,38 +227,40 @@ AEM 인스턴스에 테마를 배포하려면 클라이언트 라이브러리로
 
    ![클라이언트 라이브러리 빌드](/help/forms/using/assets/mvndeploy.png)
 
-#### 5. 로컬 적응형 양식으로 테마 테스트 {#test-the-theme-with-a-local-adaptive-form}
+<!--
 
-적응형 양식으로 맞춤화된 테마를 적용하고 테스트하려면 다음을 수행하십시오.
+#### 5. Test the theme with a local Adaptive Form {#test-the-theme-with-a-local-adaptive-form}
 
-**적응형 양식을 만드는 동안 테마 적용**
+To apply and test the customized theme with an Adaptive Form:
 
-1. AEM Forms 작성자 인스턴스에 로그인합니다.
+**Apply theme while creating an Adaptive Form**
 
-1. 누르기 **Adobe Experience Manager** > **Forms** > **Forms 및 문서**.
+1. Log in to your AEM Forms author instance. 
 
-1. 클릭 **만들기** > **적응형 Forms**. 적응형 양식 만들기 마법사가 열립니다.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. 에서 핵심 구성 요소 템플릿 선택 **소스** 탭.
-1. 에서 테마 선택 **스타일** 탭.
-1. **만들기**&#x200B;를 클릭합니다.
+1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
-선택한 테마를 사용하는 적응형 양식이 만들어집니다.
+1. Select the core component template in the **Source** tab.
+1. Select the theme in the **Style** tab.
+1. Click **Create**.
 
-**기존 적응형 양식에 테마 적용**
+An Adaptive Form with the selected theme is created. 
 
-1. AEM Forms 작성자 인스턴스에 로그인합니다.
+**Apply theme to an existing Adaptive Form**
 
-1. 누르기 **Adobe Experience Manager** > **Forms** > **Forms 및 문서**.
+1. Log in to your AEM Forms author instance. 
 
-1. 적응형 양식을 선택하고 속성 을 클릭합니다.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. 의 경우 **테마 클라이언트 라이브러리** 옵션을 선택하고 테마를 선택합니다.
+1. Select an Adaptive Form and click Properties. 
 
-1. **저장 및 닫기**&#x200B;를 클릭합니다.
+1. For the **Theme Client Library** option, select the theme. 
 
-선택한 테마가 적응형 양식에 적용됩니다.
+1. Click **Save & Close**.
 
+The selected theme is applied to the Adaptive Form. 
+-->
 
 #### 5. 프로덕션 환경에 테마 배포 {#deploy-theme}
 
@@ -278,14 +285,17 @@ AEM 인스턴스에 테마를 배포하려면 클라이언트 라이브러리로
 
 적응형 양식에 테마를 적용하는 단계는 다음과 같습니다.
 
-1. AEM Forms 작성자 인스턴스에 로그인합니다.
+1. 로컬 AEM 작성자 인스턴스에 로그인합니다.
+1. Experience Manager 로그인 페이지에 자격 증명을 입력합니다. 누르기 **Adobe Experience Manager** > **Forms** > **Forms 및 문서**.
+1. 클릭 **만들기** > **적응형 Forms**.
+1. 적응형 Forms 핵심 구성 요소 템플릿을 선택하고 **다음**. 다음 **속성 추가** 표시
+1. 다음을 지정합니다. **이름** 적응형 양식용.
 
-1. 누르기 **Adobe Experience Manager** > **Forms** > **Forms 및 문서**.
+   >[!NOTE]
+   >
+   > * 기본적으로 `adaptiveform.theme.canvas3` 테마를 선택했습니다.
+   > * 다음에서 다른 테마를 선택할 수 있습니다. **테마 클라이언트 라이브러리** 드롭다운 메뉴.
 
-1. 클릭 **만들기** > **적응형 Forms**. 적응형 양식 만들기 마법사가 열립니다.
-
-1. 에서 핵심 구성 요소 템플릿 선택 **소스** 탭.
-1. 에서 테마 선택 **스타일** 탭.
 1. **만들기**&#x200B;를 클릭합니다.
 
 적응형 양식 테마는 적응형 양식을 작성하는 동안 스타일을 정의하는 적응형 양식 템플릿의 일부로 사용됩니다.

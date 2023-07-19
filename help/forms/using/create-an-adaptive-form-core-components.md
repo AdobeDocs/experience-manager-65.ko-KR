@@ -9,9 +9,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1725'
 ht-degree: 4%
 
 ---
@@ -19,10 +19,16 @@ ht-degree: 4%
 
 # 핵심 구성 요소 기반 적응형 양식 만들기 {#creating-an-adaptive-form-core-components}
 
+
+<span class="preview"> Adobe은 핵심 구성 요소를 사용하여 다음을 수행할 것을 권장합니다. [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 또는 종료 [독립 실행형 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
+
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | 이 문서 |
 | AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html) |
+
+**적용 대상:** ✅ 양식 핵심 구성 요소 ❎ [적응형 양식 기초 구성 요소](/help/forms/using/create-adaptive-form.md).
+
 
 적응형 양식을 사용하여 멋지고, 반응이 빠르고, 동적이고, 적응력이 뛰어난 양식을 만들 수 있습니다. AEM Forms은 적응형 Forms을 신속하게 만들 수 있는 비즈니스 사용자 친화적 UI를 제공합니다. UI에서는 사전 구성된 템플릿, 스타일, 필드 및 제출 옵션을 손쉽게 선택하여 적응형 양식을 만들 수 있는 빠른 탭 탐색 기능을 제공합니다.
 
@@ -38,17 +44,13 @@ ht-degree: 4%
 
 * **환경에 맞는 적응형 Forms 핵심 구성 요소 활성화**: AEM Archetype 프로젝트 버전 41 이상은 다음 경우에 필요합니다. [환경에 맞는 핵심 구성 요소 활성화](/help/forms/using/enable-adaptive-forms-core-components.md). 환경에 대한 핵심 구성 요소 활성화 시 **적응형 Forms(핵심 구성 요소)** 템플릿 및 캔버스 테마가 환경에 추가됩니다.
 
-* **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 여기에는 특정 속성 및 콘텐츠 구조를 포함하는 미리 형식이 지정된 구성 요소가 있습니다. 또한 테마 및 제출 액션을 정의하는 옵션을 제공합니다. 테마는 모양과 느낌을 정의하고 제출 작업은 적응형 양식 제출 시 수행할 작업을 정의합니다. (예: 수집된 데이터를 데이터 소스로 전송) 템플릿 이름: `blank` 지원되는 OOTB:
-
-   * 다음 `blank` 템플릿은 모든 최신 AEM Forms 온-프레미스 및 AMS 환경에 포함됩니다.
-   * 패키지 관리자를 통해 참조 패키지를 설치하여 `blank` AEM Forms 온-프레미스 및 AMS 환경에 대한 템플릿
-   * 다음을 수행할 수도 있습니다. [새 적응형 Forms 템플릿(핵심 구성 요소) 만들기](template-editor.md) 처음부터.
+* **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 여기에는 특정 속성 및 콘텐츠 구조를 포함하는 미리 형식이 지정된 구성 요소가 있습니다. 또한 테마 및 제출 액션을 정의하는 옵션을 제공합니다. 테마는 모양과 느낌을 정의하고 제출 작업은 적응형 양식 제출 시 수행할 작업을 정의합니다.
 
   >[!NOTE]
   >
   > 없으시면, **적응형 Forms(핵심 구성 요소)** 사용자 환경의 템플릿, [환경에 맞는 적응형 Forms 핵심 구성 요소 활성화](/help/forms/using/enable-adaptive-forms-core-components.md). 환경에 대한 핵심 구성 요소 활성화 시 **적응형 Forms(핵심 구성 요소)** 템플릿이 환경에 추가됩니다.
 
-* **적응형 양식 테마**: 테마에는 구성 요소 및 패널에 대한 스타일 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일이 해당 구성 요소에 반영됩니다.  다음 `Canvas` 환경에 대해 핵심 구성 요소를 활성화하면 기본적으로 테마가 추가됩니다. 다음을 수행할 수도 있습니다. [참조 테마 다운로드 및 사용자 지정](create-or-customize-themes-for-adaptive-forms-core-components.md).
+* **적응형 양식 테마**: 테마에는 구성 요소 및 패널에 대한 스타일 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일이 해당 구성 요소에 반영됩니다.  다음 `Canvas` 환경에 대해 핵심 구성 요소를 활성화하면 기본적으로 테마가 추가됩니다. 다음을 수행할 수도 있습니다. [표준 테마 다운로드 및 사용자 지정](create-or-customize-themes-for-adaptive-forms-core-components.md).
 
 * **권한**: 사용자 추가 [!DNL forms-users] 그룹입니다. 의 멤버 [!DNL forms-users] 그룹은 적응형 양식을 만들 수 있는 권한이 있습니다. 양식별 사용자 그룹의 자세한 목록은 [그룹 및 권한](forms-groups-privileges-tasks.md).
 
@@ -137,6 +139,10 @@ ht-degree: 4%
 
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
+>[!NOTE]
+>
+> 안내서 컨테이너 속성을 사용하여 적응형 양식에 대한 JSON 스키마 또는 양식 데이터 모델을 편집할 수 있습니다.
+
 ## 미리 채우기 서비스 구성  {#configure-prefill-service-for-form}
 
 미리 채우기 서비스를 사용하여 기존 데이터를 사용하는 적응형 양식의 필드를 자동으로 채울 수 있습니다. 사용자가 양식을 열면 해당 필드의 값이 미리 채워집니다. 다음과 같은 작업을 수행할 수 있습니다.
@@ -155,13 +161,15 @@ ht-degree: 4%
 1. 양식 데이터 모델 선택. 를 엽니다. **[!UICONTROL 기본]** 탭. 미리 채우기 서비스에서 다음을 선택합니다. **[!UICONTROL 양식 데이터 모델 미리 채우기 서비스]**.
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다. 이제 적응형 양식이 양식 데이터 모델 미리 채우기를 사용하도록 구성되었습니다. 이제 다음을 사용할 수 있습니다. [규칙 편집기](rule-editor.md) 을 클릭하여 양식의 필드를 미리 채우는 규칙을 만듭니다.
 
-## 적응형 양식의 양식 모델 속성 편집 {#edit-form-model}
+<!--
+## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
-1. 적응형 양식을 선택하고 을 누릅니다 ![페이지 정보](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL 속성 열기]**. 양식 속성 페이지가 열립니다.
+1. Select the Adaptive Form and tap ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
-1. 로 이동 **[!UICONTROL 양식 모델]** 을(를) 탭하고 양식 모델을 선택합니다. 적응형 양식에 양식 모델이 없는 경우 JSON 스키마 또는 양식 데이터 모델을 선택할 수 있습니다. 반면에 적응형 양식이 이미 양식 모델을 기반으로 하는 경우 동일한 유형의 다른 양식 모델로 전환할 수 있는 옵션이 있습니다. 예를 들어 양식이 JSON 스키마를 사용하는 경우 다른 JSON 스키마로 쉽게 전환할 수 있으며, 마찬가지로 양식이 양식 데이터 모델을 사용하는 경우 다른 양식 데이터 모델로 전환할 수 있습니다.
+1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
 
-1. 누르기 **[!UICONTROL 저장]** 속성을 저장합니다.
+1. Tap **[!UICONTROL Save]** to save the properties.
+-->
 
 ## 다음 단계
 
