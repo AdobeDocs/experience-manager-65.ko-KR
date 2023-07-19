@@ -8,7 +8,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
+source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 4%
@@ -179,10 +179,9 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 -->
 
->
+>[!NOTE]
 >
 > 스타일이 테마와 구성 요소 수준에서 모두 정의되면 구성 요소 수준에서 정의된 스타일이 우선합니다.
-
 
 #### 3. 배포할 테마 준비 {#generate-the-clientlib}
 
@@ -275,9 +274,10 @@ The selected theme is applied to the Adaptive Form.
 
 ![테마 클라이언트 라이브러리](/help/forms/using/assets/themeclientlibrary.png)
 
+>[!NOTE]
 >
 >
->패키지 관리자를 통해 패키지를 설치하기 위해 게시 인스턴스의 로그인 대화 상자에 액세스하는 데 문제가 발생하는 경우 다음 URL을 통해 로그인해 보십시오. `http://[Publish Server URL]:[PORT]/system/console`. 이렇게 하면 게시 인스턴스에 로그인할 수 있으므로 설치 프로세스를 진행할 수 있습니다.
+> 패키지 관리자를 통해 패키지를 설치하기 위해 게시 인스턴스의 로그인 대화 상자에 액세스하는 데 문제가 발생하는 경우 다음 URL을 통해 로그인해 보십시오. `http://[Publish Server URL]:[PORT]/system/console`. 이렇게 하면 게시 인스턴스에 로그인할 수 있으므로 설치 프로세스를 진행할 수 있습니다.
 
 ## 적응형 양식에 테마 적용 {#using-theme-in-adaptive-form}
 
