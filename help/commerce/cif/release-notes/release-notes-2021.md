@@ -1,10 +1,10 @@
 ---
-title: 2021년 AEM Content and Commerce 릴리스 노트
-description: 2021년 AEM Content and Commerce 릴리스 노트
+title: 2021년 Adobe Experience Manager Content and Commerce 릴리스 노트
+description: 2021년 Adobe Experience Manager Content and Commerce 릴리스 노트
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1318'
 ht-degree: 14%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 | 구성 요소 | 시스템 요구 사항 |
 |:-------|:-----:|
-| CIF 추가 기능 | 최소: AEM 6.5.7, Adobe Commerce 2.3.5 GraphQL 스키마 |
+| CIF 추가 기능 | 최소: Adobe Experience Manager(AEM) 6.5.7, Adobe Commerce 2.3.5 GraphQL 스키마 |
 | CIF 핵심 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM Project Archetype | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -71,11 +71,11 @@ ht-degree: 14%
 
 * 사이트 편집기의 새로운 &quot;연결된 상거래 콘텐츠&quot; 탭은 현재 컨텍스트에 대한 관련 AEM 제품 콘텐츠에 빠르게 액세스하여 작성자의 효율성을 높입니다
 
-   ![연계된 상거래 콘텐츠](/help/assets/CIF/associated-commerce-content.png)
+  ![연계된 상거래 콘텐츠](/help/assets/CIF/associated-commerce-content.png)
 
 * 향상된 사용자 경험, 향상된 효율성 및 복잡한 제품 카탈로그에 대한 지원을 위해 제품 선택기 UI가 개선되었습니다
 
-   ![새 제품 선택기](/help/assets/CIF/product-picker.png)
+  ![새 제품 선택기](/help/assets/CIF/product-picker.png)
 
 * 탐색 구성 요소에서 &quot;include_in_menu&quot; 속성 준수
 
@@ -99,7 +99,7 @@ ht-degree: 14%
 
 * 향상된 사용자 경험, 향상된 효율성 및 복잡한 제품 카탈로그에 대한 더 나은 지원을 위한 새로운 카테고리 선택기 UI
 
-   ![새 범주 선택기](/help/assets/CIF/category-picker.png)
+  ![새 범주 선택기](/help/assets/CIF/category-picker.png)
 
 * CIF 핵심 구성 요소에 대한 A11Y 지원 개선
 
@@ -175,7 +175,7 @@ ht-degree: 14%
 
 ### 새로운 기능 {#what-is-new-april}
 
-* 범주 UID 지원 - 범주 ID에 문자열을 사용하는 시스템에 대한 서드파티 상거래 통합을 잠금 해제합니다
+* 범주 UID 지원 - 범주 ID에 문자열을 사용하는 시스템에 대한 서드파티 상거래 통합을 잠금 해제합니다.
 
 * PWA Studio에 대한 AEM 확장에는 다음이 포함됩니다. 통합 예
 

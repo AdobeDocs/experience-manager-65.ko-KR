@@ -1,19 +1,15 @@
 ---
 title: 페이지 템플릿 - 정적
-seo-title: Page Templates - Static
 description: 템플릿을 사용하여 페이지를 만들고 선택한 범위 내에서 사용할 수 있는 구성 요소를 정의합니다
-seo-description: A Template is used to create a Page and defines which components can be used within the selected scope
-uuid: 7a473c19-9565-476e-9e54-ab179da04d71
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: cfd90e8f-9b9b-4d0b-be31-828469b961de
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1602'
 ht-degree: 3%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 3%
 
 템플릿은 페이지를 만드는 데 사용되며, 선택한 범위 내에서 사용할 수 있는 구성 요소를 정의합니다. 템플릿은 만들 페이지와 구조가 동일하지만 실제 컨텐츠는 없는 노드의 계층입니다.
 
-각 템플릿에는 사용할 수 있는 여러 구성 요소가 표시됩니다.
+각 템플릿에는 사용할 수 있는 구성 요소 선택 사항이 표시됩니다.
 
 * 템플릿은 다음으로 구성됩니다. [구성 요소](/help/sites-developing/components.md);
 * 구성 요소는 위젯을 사용하고 이에 대한 액세스를 허용하며, 위젯은 콘텐츠를 렌더링하는 데 사용됩니다.
@@ -142,7 +138,7 @@ ht-degree: 3%
 
 ### 기본 템플릿 {#default-templates}
 
-AEM에는 즉시 사용할 수 있는 여러 기본 템플릿이 제공됩니다. 경우에 따라 템플릿을 그대로 사용할 수 있습니다. 이 경우 웹 사이트에서 템플릿을 사용할 수 있는지 확인해야 합니다.
+AEM에는 즉시 사용할 수 있는 다양한 기본 템플릿이 제공됩니다. 경우에 따라 템플릿을 그대로 사용할 수 있습니다. 이 경우 웹 사이트에서 템플릿을 사용할 수 있는지 확인해야 합니다.
 
 예를 들어 AEM에는 contentpage 및 홈 페이지를 포함한 여러 템플릿이 제공됩니다.
 
@@ -164,7 +160,7 @@ AEM에는 즉시 사용할 수 있는 여러 기본 템플릿이 제공됩니다
 
 1. 클릭 **실행**. 목록이 결과 상자에 표시됩니다.
 
-대부분의 경우 기존 템플릿을 가져와 새로운 템플릿을 개발하여 사용할 수 있습니다. 다음을 참조하십시오 [페이지 템플릿 개발](#developing-page-templates) 추가 정보.
+일반적으로 기존 템플릿을 가져와 새로운 템플릿을 개발하여 사용할 수 있습니다. 다음을 참조하십시오 [페이지 템플릿 개발](#developing-page-templates) 추가 정보.
 
 웹 사이트에 대한 기존 템플릿을 활성화하고 이 템플릿을 **페이지 만들기** 페이지를 만들 때 아래에 있는 대화 상자 **웹 사이트** 다음에서 **웹 사이트** 콘솔에서 템플릿 노드의 allowedPaths 속성을 다음으로 설정합니다. **/content(/.&#42;)?**
 
@@ -176,13 +172,13 @@ UI에 스타일을 정의하는 경우 [디자인 모드](/help/sites-authoring/
 >
 >Adobe은 다음 작업을 통해서만 디자인을 적용할 것을 권장합니다. [디자인 모드](/help/sites-authoring/default-components-designmode.md).
 >
->예를 들어 CRX DE에서 디자인을 수정하는 것은 모범 사례가 아니며, 이러한 디자인의 적용은 예상되는 비헤이비어와 다를 수 있습니다.
+>예를 들어 CRXDE Lite에서 디자인을 수정하는 것은 모범 사례가 아니며, 이러한 디자인의 적용은 예상되는 비헤이비어와 다를 수 있습니다.
 
 디자인이 디자인 모드로만 적용되는 경우 다음 섹션을 참조하십시오. [디자인 경로 해상도](/help/sites-developing/page-templates-static.md#design-path-resolution), [의사 결정 트리](/help/sites-developing/page-templates-static.md#decision-tree)및 [예](/help/sites-developing/page-templates-static.md#example) 적용할 수 없습니다.
 
 ### 디자인 경로 해상도 {#design-path-resolution}
 
-정적 템플릿을 기반으로 콘텐츠를 렌더링하는 경우 AEM은 콘텐츠 계층 구조 순회를 기반으로 콘텐츠에 가장 관련 있는 디자인 및 스타일을 적용하려고 합니다.
+정적 템플릿을 기반으로 콘텐츠를 렌더링할 때 AEM은 콘텐츠 계층 구조 순회를 기반으로 콘텐츠에 가장 관련성이 높은 디자인과 스타일을 적용하려고 합니다.
 
 AEM은 콘텐츠 노드에 대해 가장 관련성이 높은 스타일을 다음 순서로 결정합니다.
 
@@ -212,7 +208,7 @@ AEM은 콘텐츠 노드에 대해 가장 관련성이 높은 스타일을 다음
    <td><strong>디자인 찾기<br /> </strong></td>
    <td><strong>설계 대상<br /> </strong></td>
    <td><strong>디자인 선택됨<br /> </strong></td>
-   <td><strong>설명</strong></td>
+   <td><strong>댓글</strong></td>
   </tr>
   <tr>
    <td><code class="code">leaf
@@ -265,13 +261,13 @@ AEM은 콘텐츠 노드에 대해 가장 관련성이 높은 스타일을 다음
 
 ## 페이지 템플릿 개발 {#developing-page-templates}
 
-AEM 페이지 템플릿은 단순히 새 페이지를 만드는 데 사용되는 모델입니다. 필요한 초기 콘텐츠를 필요한 만큼 적게 또는 많이 포함할 수 있습니다. 초기 콘텐츠의 역할은 올바른 초기 노드 구조를 만드는 것이며, 필요한 속성(주로 sling:resourceType)은 편집 및 렌더링을 허용하도록 설정됩니다.
+AEM 페이지 템플릿은 페이지를 만드는 데 사용되는 모델일 뿐입니다. 필요한 초기 콘텐츠를 필요한 만큼 적게 또는 많이 포함할 수 있습니다. 초기 콘텐츠의 역할은 올바른 초기 노드 구조를 만드는 것이며, 필요한 속성(주로 sling:resourceType)은 편집 및 렌더링을 허용하도록 설정됩니다.
 
-### 새 템플릿 만들기(기존 템플릿 기반) {#creating-a-new-template-based-on-an-existing-template}
+### 템플릿 만들기(기존 템플릿 기반) {#creating-a-new-template-based-on-an-existing-template}
 
-새 템플릿을 처음부터 완전히 만들 수는 있지만, 종종 기존 템플릿을 복사하고 업데이트하여 시간과 노력을 절약할 수 있습니다. 예를 들어 Geometrixx 내의 템플릿을 사용하여 시작할 수 있습니다.
+새 템플릿은 처음부터 완전히 만들 수 있지만, 종종 기존 템플릿을 대신 복사하고 업데이트하여 시간과 노력을 절약할 수 있습니다. 예를 들어 Geometrixx 내의 템플릿을 사용하여 시작할 수 있습니다.
 
-기존 템플릿을 기반으로 새 템플릿을 만들려면 다음 작업을 수행하십시오.
+기존 템플릿을 기반으로 템플릿을 만들려면 다음 작업을 수행하십시오.
 
 1. 기존 템플릿(달성하고자 하는 목표에 가능한 한 가까운 정의를 사용하는 것이 좋음)을 새 노드에 복사합니다.
 
@@ -289,30 +285,35 @@ AEM 페이지 템플릿은 단순히 새 페이지를 만드는 데 사용되는
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. 템플릿의 기반이 되는 구성 요소를 복사합니다( 는 로 나타남). **sling:resourceType** 의 속성 **jcr:content** 템플릿 내의 노드)를 사용하여 새 인스턴스를 만듭니다.
+1. 템플릿의 기반이 되는 구성 요소를 복사합니다( 는 로 나타남). **sling:resourceType** 의 속성 **jcr:content** 인스턴스를 생성할 수 있습니다.
 
    구성 요소는에 저장됩니다. **/apps/&lt;website-name>/components/&lt;component-name>**.
 
 1. 업데이트 **jcr:title** 및 **jcr:description** 새 구성 요소
 1. 템플릿 선택 목록(크기 128 x 98px)에 새 축소판 그림을 표시하려면 thumbnail.png를 바꿉니다.
 1. 업데이트 **sling:resourceType** / 템플릿 **jcr:content** 새 구성 요소를 참조할 노드입니다.
-1. 템플릿 및/또는 기본 구성 요소의 기능이나 디자인을 추가로 변경합니다.
+1. 템플릿, 기본 구성 요소 또는 둘 다의 기능이나 디자인을 추가로 변경합니다.
 
    >[!NOTE]
    >
    >에 대한 변경 사항 **/apps/&lt;website>/templates/&lt;template-name>** 노드는 선택 목록에서와 같이 템플릿 인스턴스에 영향을 줍니다.
-   에 대한 변경 사항 **/apps/&lt;website>/components/&lt;component-name>** 노드는 템플릿 사용 시 생성된 콘텐츠 페이지에 영향을 줍니다.
+   >
+   >
+   에 대한 변경 사항 **/apps/&lt;website>/components/&lt;component-name>** 노드는 템플릿 사용 시 작성된 콘텐츠 페이지에 영향을 줍니다.
 
    이제 새 템플릿을 사용하여 웹 사이트 내에서 페이지를 만들 수 있습니다.
 
 >[!NOTE]
-편집기 클라이언트 라이브러리는 `cq.shared` 컨텐츠 페이지의 네임스페이스 및 네임스페이스가 없는 경우 JavaScript 오류 `Uncaught TypeError: Cannot read property 'shared' of undefined` 이(가) 다음을 생성합니다.
+>
+편집기 클라이언트 라이브러리는 `cq.shared` 컨텐츠 페이지의 네임스페이스 및 네임스페이스가 없는 경우 JavaScript 오류가 발생합니다 `Uncaught TypeError: Cannot read property 'shared' of undefined` 결과.
+>
 모든 샘플 콘텐츠 페이지에는 다음이 포함되어 있습니다. `cq.shared`, 따라서 이를 기반으로 하는 모든 컨텐츠는 자동으로 다음을 포함합니다 `cq.shared`. 그러나 샘플 콘텐츠를 기반으로 하지 않고 처음부터 고유한 콘텐츠 페이지를 만들려는 경우에는 다음을 포함해야 합니다. `cq.shared` 네임스페이스입니다.
+>
 다음을 참조하십시오 [클라이언트측 라이브러리 사용](/help/sites-developing/clientlibs.md) 추가 정보.
 
 ## 기존 템플릿 사용 가능 {#making-an-existing-template-available}
 
-이 예에서는 특정 콘텐츠 경로에 템플릿을 사용할 수 있도록 허용하는 방법을 보여 줍니다. 새 페이지를 만들 때 페이지 작성자가 사용할 수 있는 템플릿은에 정의된 논리에 의해 결정됩니다. [템플릿 가용성](/help/sites-developing/templates.md#template-availability).
+이 예에서는 특정 콘텐츠 경로에 템플릿을 사용할 수 있도록 허용하는 방법을 보여 줍니다. 페이지를 만들 때 페이지 작성자가 사용할 수 있는 템플릿은에 정의된 논리에 의해 결정됩니다. [템플릿 가용성](/help/sites-developing/templates.md#template-availability).
 
 1. CRXDE Lite에서 페이지에 사용할 템플릿(예: 뉴스레터 템플릿)으로 이동합니다.
 1. 변경 `allowedPaths` 다음에 사용되는 속성 및 기타 속성 [템플릿 가용성](/help/sites-developing/templates.md#template-availability). 예를 들어, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` 은(는) 이 템플릿이 아래의 모든 경로에서 허용됨을 의미합니다 `/content/geometrixx-outdoors`.
