@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
+source-git-commit: a5d38ef6b3281992fd9ac3121cdb6c998631b205
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1961'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 AEM Forms 6.5에서 테마는 적응형 양식의 스타일(모양 및 느낌)을 정의하는 데 사용하는 AEM 클라이언트 라이브러리입니다. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일이 해당 구성 요소에 반영됩니다. 테마는 적응형 양식에 대한 참조 없이 독립적으로 관리되며 여러 적응형 Forms에서 재사용할 수 있습니다.
 
-## 사용 가능한 테마 {#available-standard-theme}
+## 사용 가능한 테마 {#available-theme}
 
 AEM 6.5 환경은 적응형 Forms 기반의 핵심 구성 요소에 대해 아래에 나열된 테마를 제공합니다.
 
@@ -51,13 +51,13 @@ AEM 6.5 환경은 적응형 Forms 기반의 핵심 구성 요소에 대해 아�
 
 ## 테마 만들기
 
-AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래에 나열된 표준 테마를 제공합니다.
+AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래에 나열된 테마를 제공합니다.
 
 * [캔버스 테마](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
 * [이젤 테마](https://github.com/adobe/aem-forms-theme-easel)
 
-다음을 수행할 수 있습니다. [이러한 표준 테마 중 하나를 맞춤화하여 테마 만들기](#customize-a-theme-core-components).
+다음을 수행할 수 있습니다. [테마를 만들려면 다음 테마 중 하나를 맞춤화하십시오](#customize-a-theme-core-components).
 
 ## 테마 맞춤화 {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -92,7 +92,7 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 테마를 만들거나 사용자 지정하는 프로세스는 여러 단계입니다. 테마를 만들거나 맞춤화하려면 나열된 순서로 단계를 수행하십시오.
 
-1. [표준 테마 복제](#clone-git-repo-of-theme)
+1. [테마 복제](#clone-git-repo-of-theme)
 1. [테마 모양 사용자 지정](#customize-the-theme)
 1. [로컬 배포용 테마 준비](#generate-the-clientlib)
 1. [로컬 환경에 테마 배포](#deploy-the-theme-on-a-local-environment)
@@ -102,17 +102,17 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
 -->
 
-이 문서에 제공된 예제는 **캔버스** 테마이지만 표준 테마를 복제하고 동일한 지침을 사용하여 사용자 지정할 수 있습니다. 이러한 지침은 모든 테마에 적용되므로 특정 요구 사항에 따라 테마를 수정할 수 있습니다.
+이 문서에 제공된 예제는 **캔버스** 테마를 선택할 수 있지만, 동일한 지침을 사용하여 모든 테마를 복제하고 맞춤화할 수 있습니다. 이러한 지침은 모든 테마에 적용되므로 특정 요구 사항에 따라 테마를 수정할 수 있습니다.
 
 #### 1. 테마의 Git 저장소 복제 {#clone-git-repo-of-theme}
 
-적응형 Forms 기반의 핵심 구성 요소에 대한 표준 테마를 복제하려면 다음 표준 테마 중 하나를 선택하십시오.
+적응형 Forms 기반의 핵심 구성 요소에 대한 테마를 복제하려면 다음 테마 중 하나를 선택하십시오.
 
 * [캔버스 테마](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
 * [이젤 테마](https://github.com/adobe/aem-forms-theme-easel)
 
-표준 테마를 복제하려면 다음 지침을 수행하십시오.
+테마를 복제하려면 다음 지침을 수행하십시오.
 
 1. 로컬 개발 환경에서 명령 프롬프트 또는 터미널 창을 엽니다.
 
