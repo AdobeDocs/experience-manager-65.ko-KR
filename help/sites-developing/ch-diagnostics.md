@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: b833c28b-76c6-42a2-b690-3e81ddf91bc2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 1%
@@ -63,8 +63,8 @@ URL 섹션에는 ContextHub 기능에 대한 링크가 포함되어 있습니다
 
 * **구성 편집기:** 다음을 엽니다. [ContextHub 구성 페이지](ch-configuring.md) 저장소, UI 모드 및 UI 모듈을 구성할 수 있습니다.
 
-* **ContextHub 모듈 구성:** ContextHub 저장소 구성의 Javascript 개체 표현이 포함된 /etc/cloudsettings/default/contexthub.config.kernel.js 파일을 엽니다.
-* **ContextHub UI 구성:** ContextHub UI 모드 구성의 Javascript 개체 표현이 포함된 /etc/cloudsettings/default/contexthub.config.ui.js 파일을 엽니다.
+* **ContextHub 모듈 구성:** ContextHub 저장소 구성의 JavaScript 개체 표현이 포함된 /etc/cloudsettings/default/contexthub.config.kernel.js 파일을 엽니다.
+* **ContextHub UI 구성:** ContextHub UI 모드 구성의 JavaScript 개체 표현이 포함된 /etc/cloudsettings/default/contexthub.config.ui.js 파일을 엽니다.
 * **kernel.js:** ContextHub 프레임워크, 세그먼트 엔진 및 저장소 유형을 구현하는 클라이언트 라이브러리의 소스 코드가 들어 있는 /etc/cloudsettings/default/contexthub.kernel.js 파일을 엽니다.
 * **ui.js:** ContextHub UI 및 UI 모듈 유형을 구현하는 클라이언트 라이브러리의 소스 코드가 포함된 /etc/cloudsettings/default/contexthub.ui.js 파일을 엽니다.
 * **style.css:** ContextHub UI 및 UI 모듈의 CSS 스타일이 포함된 /etc/cloudsettings/default/contexthub.styles.css 파일을 엽니다.

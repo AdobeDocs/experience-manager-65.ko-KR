@@ -3,9 +3,9 @@ title: Live Copy 생성 및 동기화
 description: 라이브 카피를 만들고 동기화하는 방법을 알아봅니다.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4230'
+source-wordcount: '4229'
 ht-degree: 46%
 
 ---

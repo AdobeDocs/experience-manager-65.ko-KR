@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 2%
@@ -41,7 +41,7 @@ contexthub.base UI 모듈 유형은 다른 모든 UI 모듈 유형의 기본 유
 
 ### 구성 {#configuration}
 
-JSON 형식의 Javascript 개체를 사용하여 contexthub.base UI 모듈을 구성합니다. 다음 속성 중 하나를 포함하여 UI 모듈 기능을 구성합니다.
+JSON 형식의 JavaScript 개체를 사용하여 contexthub.base UI 모듈을 구성합니다. 다음 속성 중 하나를 포함하여 UI 모듈 기능을 구성합니다.
 
 * **이미지:** 아이콘으로 표시할 이미지의 URL입니다.
 * **아이콘:** 의 이름 [Coral UI 아이콘](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 클래스. 아이콘과 이미지 속성 모두에 대한 값을 지정하면 이미지가 사용됩니다.

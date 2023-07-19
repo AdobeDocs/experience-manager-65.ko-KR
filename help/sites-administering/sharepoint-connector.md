@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1563'
 ht-degree: 3%
 
 ---
@@ -37,6 +37,7 @@ SharePoint 커넥터는 다음과 같은 기본 기능을 지원합니다.
 >SharePoint Connector도 AEM 6.1 서비스 팩 2에서 지원됩니다. 커넥터는 더 이상 가상 저장소 마운트를 지원하지 않으므로 마운트할 수 없습니다. Java API를 사용하여 Sharepoint 저장소에 액세스하려면 프로젝트에서 Sharepoint 커넥터의 JCR 저장소 구현을 사용하십시오.
 >
 >SharePoint 서버 및 관련 IT 인프라의 설치, 구성, 관리 및 IT 운영은 이 문서에서 다루지 않습니다. 에서 공급업체 설명서 참조 [SharePoint](https://www.microsoft.com/sharepoint) 을 참조하십시오. 커넥터는 인프라의 이러한 부분을 올바르게 설치, 구성 및 운영해야 합니다.
+>
 
 ## 시작 {#getting-started}
 
@@ -215,13 +216,13 @@ Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 AEM JCR �
 1. 다음으로 이동 [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 1. OSGI > 구성을 클릭합니다.
 1. 검색 대상 **Microsoft Sharepoint용 Day JCR 커넥터**.
-1. 클릭 `Edit the configuration values`.
+1. `Edit the configuration values`를 클릭합니다.
 1. Sharepoint Connection Factory의 값을 다음으로 설정 `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
 1. **저장**&#x200B;을 클릭합니다.
 
 AEM과 SharePoint 모두에서 인증된 사용자만 커넥터를 통해 SharePoint 콘텐츠에 액세스할 수 있습니다.
 
-인증에 커넥터 확장을 사용하여 사용자 지정 인증 모듈을 만들 수도 있습니다. 예를 들어, AEM 사용자의 액세스를 특정 SharePoint 사용자에게 매핑합니다. 커넥터 인스턴스에 매핑된 SharePoint 컨텐츠를 볼 수 있도록 SharePoint 사용자에 해당하는 AEM 사용자를 만듭니다(사용자 이름과 암호가 일치해야 함).
+또한 인증에 커넥터 확장을 사용하여 AEM 사용자의 액세스를 특정 SharePoint 사용자에게 매핑하는 사용자 지정 인증 모듈을 만들 수도 있습니다. 커넥터 인스턴스에 매핑된 SharePoint 컨텐츠를 볼 수 있도록 SharePoint 사용자에 해당하는 AEM 사용자를 만듭니다(사용자 이름과 암호가 일치해야 함).
 
 AEM에서 사용자를 만들려면 다음 작업을 수행하십시오.
 

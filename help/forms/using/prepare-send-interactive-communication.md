@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2020'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 1. 데이터 탭에서 필요에 따라 변수, 양식 데이터 모델 속성 및 인쇄 템플릿(XDP) 필드에 대한 데이터를 입력합니다. 별표(&amp;ast;)로 표시된 모든 필수 필드를 채워 **제출** 단추를 클릭합니다.
 
-   대화형 통신 미리 보기에서 데이터 필드 값을 탭하여 데이터 탭에서 해당 데이터 필드를 강조 표시하거나 그 반대로 합니다.
+   대화형 통신 미리 보기에서 데이터 필드 값을 탭하여 데이터 탭에서 또는 그 반대로 해당 데이터 필드를 강조 표시합니다.
 
 ### 컨텐츠 관리 {#manage-content}
 

@@ -3,10 +3,10 @@ title: 소개 및 개요
 description: 콘텐츠와 커머스 소개 및 개요. Experience Manager 전자 상거래 통합 프레임워크(CIF)는 Adobe의 권장 패턴으로 Experience Cloud를 사용하여 Adobe Commerce의 상거래 서비스와 기타 서드파티 상거래 솔루션을 통합하여 확장할 수 있습니다.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 87%
+source-wordcount: '871'
+ht-degree: 90%
 
 ---
 
@@ -64,7 +64,7 @@ AEM의 강력한 CIF 도구를 통해 콘텐츠 제작자는 확장 가능하고
 
 ### 통합
 
-을 사용하여 에코시스템(예: 상거래 솔루션)을 Experience Cloud과 연결합니다.  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), 마이크로 서비스 기반 서버 비저장 PaaS 및 [CIF 참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), 마이크로서비스 기반의 서버를 사용하지 않는 PaaS와 [CIF의 참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference)을 사용하여 생태계(예: 상거래 솔루션)을 Experience Cloud에 연결합니다.
 
 ## 입증된 패턴 및 모범 사례
 

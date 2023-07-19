@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ AEM Forms 데이터베이스로 MySQL을 사용하는 경우 Administration Cons
 ## 범주 편집 {#edit-a-category}
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 범주 관리 를 클릭합니다.
-1. 편집할 범주를 선택하고 편집을 누릅니다. 또는 편집할 카테고리를 두 번 클릭할 수 있습니다.
+1. 편집할 범주를 선택하고 편집을 누릅니다. 또는 범주를 두 번 클릭하여 편집할 수 있습니다.
 1. 이름 상자에서 카테고리 이름을 편집합니다.
 
 ## 범주 제거 {#remove-a-category}

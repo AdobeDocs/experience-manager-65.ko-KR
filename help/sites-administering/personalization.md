@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: d6b595b6b5477b5cad662e219f1abd483491897f
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1687'
 ht-degree: 2%
 
 ---
@@ -138,7 +138,7 @@ ht-degree: 2%
 
 개인화를 위해 AEM에는 다양한 구성 요소가 제공됩니다. 일부는 사용자가 로그인하여 프로필을 편집할 수 있도록 허용하고, 일부는 내 가젯과 같이 사용자가 특정 페이지를 구성할 수 있도록 허용합니다.
 
-| 사이드 킥의 제목 | 용도 |
+| Sidekick 내 제목 | 용도 |
 |---|---|
 | 확인된 암호 필드 | 암호 및 암호 확인을 요청합니다. |
 | 결합된 로그인 등록 | 사용자가 기존 계정에 로그인하거나 새 계정에 등록할 수 있도록 허용합니다. |

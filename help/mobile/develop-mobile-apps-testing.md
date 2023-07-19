@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,6 @@ ht-degree: 0%
 
 **젱킨스**
 
-* 테스트 도구는 아니지만 Jenkins는 자동화된 테스트의 중추를 제공하는 지속적인 통합 프레임워크입니다. 다양한 타사 플러그인을 사용하여 기능을 확장할 수 있습니다. 예를 들어 SeleniumGrid 플러그인은 Selenium 허브 및 노드를 관리하는 데 도움이 되는 UI를 제공합니다.
+* 테스트 도구는 아니지만 Jenkins는 자동화된 테스트를 위한 중추를 제공하는 지속적인 통합 프레임워크입니다. 다양한 타사 플러그인을 사용하여 기능을 확장할 수 있습니다. 예를 들어 SeleniumGrid 플러그인은 Selenium 허브 및 노드를 관리하는 데 도움이 되는 UI를 제공합니다.
 
 자세한 내용은 [https://jenkins-ci.org/](https://jenkins-ci.org/) 및 [https://wiki.jenkins-ci.org/display/JENKINS/Plugins](https://wiki.jenkins-ci.org/display/JENKINS/Plugins).

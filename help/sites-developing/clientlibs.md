@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 7ceee6819618d785f04029b9ac1c6f763995b3ac
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2861'
+source-wordcount: '2862'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ HTL은 AEM 사이트 개발을 위한 기본 기술이므로 AEM에 클라이언
 
 ### HTL 사용 {#using-htl}
 
-HTL에서 클라이언트 라이브러리는 를 통해 액세스할 수 있는 AEM에서 제공하는 도우미 템플릿을 통해 로드됩니다. [ `data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). 이 파일에는 을 통해 호출할 수 있는 세 가지 템플릿이 있습니다. [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
+HTL에서 클라이언트 라이브러리는 를 통해 액세스할 수 있는 AEM에서 제공하는 도우미 템플릿을 통해 로드됩니다. [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). 이 파일에는 을 통해 호출할 수 있는 세 가지 템플릿이 있습니다. [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - 참조된 클라이언트 라이브러리의 CSS 파일만 로드합니다.
 * **js** - 참조된 클라이언트 라이브러리의 JavaScript 파일만 로드합니다.
@@ -102,7 +102,7 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 속성을 포함
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`과거에는 클라이언트 라이브러리를 포함하는 데 일반적으로 사용되었던 가 AEM 5.6 이후 더 이상 사용되지 않습니다. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) 위에 자세히 설명된 대로 대신 를 사용해야 합니다.
+>`<cq:includeClientLib>`과거에는 클라이언트 라이브러리를 포함하는 데 일반적으로 사용되었던 가 AEM 5.6 이후 더 이상 사용되지 않습니다. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) 위에 자세히 설명된 대로 대신 를 사용해야 합니다.
 
 ## 클라이언트 라이브러리 폴더 만들기 {#creating-client-library-folders}
 
@@ -115,7 +115,7 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 속성을 포함
 * 병합할 JS 및/또는 CSS 소스 파일입니다.
 * 이미지 파일과 같이 CSS 스타일을 지원하는 리소스입니다.
 
-   **참고:** 하위 폴더를 사용하여 소스 파일을 구성할 수 있습니다.
+  **참고:** 하위 폴더를 사용하여 소스 파일을 구성할 수 있습니다.
 * 1개 `js.txt` 파일 및/또는 하나 `css.txt` 생성된 JS 및/또는 CSS 파일에서 병합할 소스 파일을 식별하는 파일입니다.
 
 ![clientlibarch](assets/clientlibarch.png)
@@ -399,7 +399,7 @@ AEM에서 YUI가 기본 축소기로 설정됩니다. GCC로 변경하려면 다
 1. 활성화 **축소** 옵션(아직 활성화되지 않은 경우)
 1. 값 설정 **JS 프로세서 기본 구성** 끝 `min:gcc`.
 
-   옵션을 세미콜론으로 구분하면 전달할 수 있습니다. 예: `min:gcc;obfuscate=true`.
+   예를 들어 옵션을 세미콜론으로 구분하면 전달할 수 있습니다. `min:gcc;obfuscate=true`.
 
 1. 클릭 **저장** 변경 내용을 저장합니다.
 

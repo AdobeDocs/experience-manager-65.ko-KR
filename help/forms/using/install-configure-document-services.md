@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 420b7f83939aef548501b4676ddca1ec9fc2aa03
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '5530'
 ht-degree: 2%
@@ -34,7 +34,7 @@ AEM Forms은 다양한 문서 수준 작업을 수행하기 위한 일련의 OSG
 
 * **출력 서비스:** PDF, 레이저 프린터 형식, 라벨 프린터 형식 등 다양한 형식의 문서를 만들 수 있습니다. 레이저 프린터 형식은 PostScript 및 PCL(Printer Control Language)입니다. 자세한 내용은 [출력 서비스](/help/forms/using/output-service.md).
 
-* **PDF 생성기 서비스:** PDF 생성기 서비스는 기본 파일 형식을 PDF으로 변환하는 API를 제공합니다. 또한 PDF을 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다. 자세한 내용은 [PDF 생성기 서비스](aem-document-services-programmatically.md#pdfgeneratorservice).
+* **PDF Generator 서비스:** PDF Generator 서비스는 기본 파일 형식을 PDF으로 변환하는 API를 제공합니다. 또한 PDF을 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다. 자세한 내용은 [PDF Generator 서비스](aem-document-services-programmatically.md#pdfgeneratorservice).
 
 * **Reader 확장 서비스:** 추가 사용 권한으로 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있도록 합니다. 이 서비스는 Adobe Reader을 사용하여 PDF 문서를 열 때 문서에 주석 추가, 양식 채우기, 문서 저장 등과 같은 사용할 수 없는 기능을 활성화합니다. 자세한 내용은 [Reader 확장 서비스](/help/forms/using/overview-aem-document-services.md#reader-extension-service).
 
@@ -44,7 +44,7 @@ AEM Forms은 다양한 문서 수준 작업을 수행하기 위한 일련의 OSG
    * AEM 서버는 Acrobat 또는 Adobe Reader을 사용하여 양식에 추가된 서명을 확인합니다.
    * AEM 서버는 공증인을 대신하여 양식에 서명합니다.
 
-   서명 서비스는 신뢰 저장소에 저장된 인증서 및 자격 증명에 액세스합니다. 자세한 내용은 [서명 서비스](/help/forms/using/aem-document-services-programmatically.md).
+  서명 서비스는 신뢰 저장소에 저장된 인증서 및 자격 증명에 액세스합니다. 자세한 내용은 [서명 서비스](/help/forms/using/aem-document-services-programmatically.md).
 
 AEM Forms은 강력한 엔터프라이즈급 플랫폼이며 문서 서비스는 AEM Forms의 기능 중 하나에 불과합니다. 전체 기능 목록은 다음을 참조하십시오. [AEM Forms 소개](/help/forms/using/introduction-aem-forms.md).
 
@@ -56,7 +56,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 
 >[!NOTE]
 >
->AEM Forms을 사용하면 단일 서버에서 모든 기능을 설정하고 실행할 수 있지만 프로덕션 환경에서는 특정 기능에 대해 용량 계획, 로드 밸런싱 및 전용 서버 설정을 수행해야 합니다. 예를 들어, PDF 생성기 서비스를 사용하여 하루에 수천 개의 페이지와 여러 적응형 양식을 변환하여 데이터를 캡처하는 환경의 경우, PDF 생성기 서비스와 적응형 양식 기능을 위해 별도의 AEM Forms 서버를 설정합니다. 최적의 성능을 제공하고 서로 독립적으로 서버를 확장할 수 있습니다.
+>AEM Forms을 사용하면 단일 서버에서 모든 기능을 설정하고 실행할 수 있지만 프로덕션 환경에서는 특정 기능에 대해 용량 계획, 로드 밸런싱 및 전용 서버 설정을 수행해야 합니다. 예를 들어, PDF Generator 서비스를 사용하여 하루에 수천 페이지의 데이터를 변환하고 여러 적응형 양식을 사용하여 데이터를 캡처하는 환경의 경우, PDF Generator 서비스 및 적응형 양식 기능을 위해 별도의 AEM Forms 서버를 설정하십시오. 최적의 성능을 제공하고 서로 독립적으로 서버를 확장할 수 있습니다.
 
 ## 시스템 요구 사항 {#system-requirements}
 
@@ -82,10 +82,9 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 
 >[!NOTE]
 >
->* Microsoft® Windows에서 PDF 생성기는 HTML 파일을 PDF 문서로 변환하는 WebKit, Acrobat WebCapture 및 PhantomJS 변환 경로를 지원합니다.
->* UNIX 기반 운영 체제에서 PDF 생성기는 WebKit 및 PhantomJS 변환 경로를 지원하여 HTML 파일을 PDF 문서로 변환합니다.
+>* Microsoft® Windows에서 PDF Generator은 HTML 파일을 PDF 문서로 변환하기 위한 WebKit, Acrobat WebCapture 및 PhantomJS 변환 경로를 지원합니다.
+>* UNIX 기반 운영 체제에서 PDF Generator은 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 PhantomJS 변환 경로를 지원합니다.
 >
-
 
 ### UNIX 기반 운영 체제에 대한 추가 요구 사항 {#extrarequirements}
 
@@ -167,13 +166,13 @@ UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 
  </tbody>
 </table>
 
-* **(PDF 생성기만**) 32비트 버전의 libcurl, libcrypto 및 libssl 라이브러리를 설치하고 아래 심볼릭 링크를 만듭니다. 심볼릭 링크는 해당 라이브러리의 최신 버전을 가리킵니다.
+* **(PDF Generator 전용**) 32비트 버전의 libcurl, libcrypto 및 libssl 라이브러리를 설치하고 아래 심볼릭 링크를 만듭니다. 심볼릭 링크는 해당 라이브러리의 최신 버전을 가리킵니다.
 
    * /usr/lib/libcurl.so
    * /usr/lib/libcrypto.so
    * /usr/lib/libssl.so
 
-* **(PDF 생성기만)** PDF 생성기 서비스는 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 PhantomJS 경로를 지원합니다. PhantomJS 경로에 대한 변환을 활성화하려면 아래에 나열된 64비트 라이브러리를 설치합니다. 일반적으로 이러한 라이브러리는 이미 설치되어 있습니다. 라이브러리가 누락된 경우 수동으로 설치합니다.
+* **(PDF Generator 전용)** PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 PhantomJS 경로를 지원합니다. PhantomJS 경로에 대한 변환을 활성화하려면 아래에 나열된 64비트 라이브러리를 설치합니다. 일반적으로 이러한 라이브러리는 이미 설치되어 있습니다. 라이브러리가 누락된 경우 수동으로 설치합니다.
 
    * linux-gate.so.1
    * libz.so.1
@@ -191,22 +190,21 @@ UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 
 
 ## 사전 설치 구성 {#preinstallationconfigurations}
 
-사전 설치 구성 섹션에 나열된 구성은 PDF 생성기 서비스에만 적용됩니다. PDF 생성기 서비스를 구성하지 않으면 사전 설치 구성 섹션을 건너뛸 수 있습니다.
+사전 설치 구성 섹션에 나열된 구성은 PDF Generator 서비스에만 적용됩니다. PDF Generator 서비스를 구성하지 않는 경우 사전 설치 구성 섹션을 건너뛸 수 있습니다.
 
 ### Adobe Acrobat 및 서드파티 애플리케이션 설치 {#install-adobe-acrobat-and-third-party-applications}
 
-PDF 생성기 서비스를 사용하여 Microsoft® Word, Microsoft® Excel, Microsoft® PowerPoint, OpenOffice, WordPerfect X7 및 Adobe Acrobat과 같은 기본 파일 형식을 PDF 문서로 변환하려는 경우 이러한 애플리케이션이 AEM Forms 서버에 설치되어 있는지 확인하십시오.
+PDF Generator 서비스를 사용하여 Microsoft® Word, Microsoft® Excel, Microsoft® PowerPoint, OpenOffice, WordPerfect X7 및 Adobe Acrobat과 같은 기본 파일 형식을 PDF 문서로 변환하려는 경우 이러한 애플리케이션이 AEM Forms 서버에 설치되어 있는지 확인하십시오.
 
 >[!NOTE]
 >
 >* AEM Forms 서버가 오프라인 또는 보안 환경에 있고 인터넷을 사용하여 Adobe Acrobat을 활성화할 수 없는 경우 다음을 참조하십시오. [오프라인 활성화](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) Adobe Acrobat의 이러한 인스턴스를 활성화하는 방법에 대해 설명합니다.
 >* Adobe Acrobat, Microsoft® Word, Excel 및 Powerpoint는 Microsoft® Windows에서만 사용할 수 있습니다. UNIX 기반 운영 체제를 사용하는 경우 OpenOffice를 설치하여 리치 텍스트 파일과 지원되는 Microsoft® Office 파일을 PDF 문서로 변환합니다.
->* PDF 생성기 서비스를 사용하도록 구성된 모든 사용자에 대해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 모든 대화 상자를 닫습니다.
->* 설치된 모든 소프트웨어를 한 번 이상 시작합니다. PDF 생성기 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 모두 닫습니다.
+>* PDF Generator 서비스를 사용하도록 구성된 모든 사용자에 대해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 모든 대화 상자를 닫습니다.
+>* 설치된 모든 소프트웨어를 한 번 이상 시작합니다. PDF Generator 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 모두 닫습니다.
 >* [Adobe Acrobat 일련 번호의 만료 날짜 확인](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) 라이선스 업데이트 또는 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) 만료일 기준.
 
-
-Acrobat을 설치한 후 Microsoft® Word를 엽니다. 다음에서 **Acrobat** 탭을 클릭하고 **PDF 만들기** 컴퓨터에서 사용할 수 있는 .doc 또는 .docx 파일을 PDF 문서로 변환합니다. 변환이 성공하면 AEM Forms은 PDF 생성기 서비스에서 Acrobat을 사용할 수 있습니다.
+Acrobat을 설치한 후 Microsoft® Word를 엽니다. 다음에서 **Acrobat** 탭을 클릭하고 **PDF 만들기** 컴퓨터에서 사용할 수 있는 .doc 또는 .docx 파일을 PDF 문서로 변환합니다. 전환이 성공하면 AEM Forms은 PDF Generator 서비스와 함께 Acrobat을 사용할 준비가 되었습니다.
 
 ### 환경 변수 설정 {#setup-environment-variables}
 
@@ -248,7 +246,7 @@ Acrobat을 설치한 후 Microsoft® Word를 엽니다. 다음에서 **Acrobat**
 >* JAVA_HOME, JAVA_HOME_32 및 Acrobat_PATH(Windows에만 해당)는 필수 환경 변수입니다.
 >* 환경 변수 OpenOffice_PATH가 실행 파일의 경로 대신 설치 폴더로 설정됩니다.
 >* Word, PowerPoint, Excel, 프로젝트 등 Microsoft® Office 애플리케이션이나 AutoCAD에 대한 환경 변수는 설정하지 마십시오. 이러한 응용 프로그램이 서버에 설치된 경우 PDF 생성 서비스가 이러한 응용 프로그램을 자동으로 시작합니다.
->* UNIX 기반 플랫폼에서 OpenOffice를 /root로 설치합니다. OpenOffice가 루트로 설치되지 않은 경우 PDF 생성기 서비스가 OpenOffice 문서를 PDF 문서로 변환하지 못합니다. 루트가 아닌 사용자로 OpenOffice를 설치하고 실행해야 하는 경우 루트가 아닌 사용자에게 sudo 권한을 제공합니다.
+>* UNIX 기반 플랫폼에서 OpenOffice를 /root로 설치합니다. OpenOffice가 루트로 설치되지 않은 경우 PDF Generator 서비스가 OpenOffice 문서를 PDF 문서로 변환하지 못합니다. 루트가 아닌 사용자로 OpenOffice를 설치하고 실행해야 하는 경우 루트가 아닌 사용자에게 sudo 권한을 제공합니다.
 >* UNIX 기반 플랫폼에서 OpenOffice를 사용하는 경우 다음 명령을 실행하여 경로 변수를 설정합니다.
 >
 >  `export OpenOffice_PATH=/opt/openoffice.org4`
@@ -288,13 +286,13 @@ IBM® SSL 소켓 공급자를 구성하려면 다음 단계를 수행하십시�
 
 ### (Windows 전용) Microsoft® Office용 파일 블록 설정 구성 {#configure-the-file-block-settings-for-microsoft-office}
 
-Microsoft® Office 트러스트 센터 설정을 변경하여 PDF 생성기 서비스가 이전 버전의 Microsoft® Office로 만든 파일을 변환할 수 있도록 합니다.
+Microsoft® Office 트러스트 센터 설정을 변경하여 PDF Generator 서비스가 이전 버전의 Microsoft® Office로 만든 파일을 변환할 수 있도록 합니다.
 
 1. Microsoft® Office 애플리케이션을 엽니다. 예를 들어 Microsoft® Word입니다. 다음으로 이동 **[!UICONTROL 파일]**> **[!UICONTROL 옵션]**. 옵션 대화 상자가 나타납니다.
 
 1. 클릭 **[!UICONTROL 트러스트 센터]**, 및 클릭 **[!UICONTROL 트러스트 센터 설정]**.
 1. 다음에서 **[!UICONTROL 트러스트 센터 설정]**, 클릭 **[!UICONTROL 파일 차단 설정]**.
-1. 다음에서 **[!UICONTROL 파일 유형]** 목록, 선택 해제 **[!UICONTROL 열기]** PDF 생성기 서비스에서 PDF 문서로 변환할 수 있도록 허용해야 하는 파일 유형입니다.
+1. 다음에서 **[!UICONTROL 파일 유형]** 목록, 선택 해제 **[!UICONTROL 열기]** PDF Generator 서비스가 PDF 문서로 변환할 수 있도록 허용해야 하는 파일 유형입니다.
 
 ### (Windows 전용) 프로세스 수준 토큰 바꾸기 권한을 부여합니다. {#grant-the-replace-a-process-level-token-privilege}
 
@@ -304,9 +302,9 @@ Microsoft® Office 트러스트 센터 설정을 변경하여 PDF 생성기 서�
 1. 다음으로 이동 **[!UICONTROL 로컬 컴퓨터 정책]** > **[!UICONTROL 컴퓨터 구성]** > **[!UICONTROL Windows 설정]** > **[!UICONTROL 보안 설정]** > **[!UICONTROL 로컬 정책]** > **[!UICONTROL 사용자 권한 할당]** 및 편집 **[!UICONTROL 프로세스 수준 토큰 바꾸기]** 정책을 참조하고 Administrators 그룹을 포함합니다.
 1. 프로세스 수준 토큰 바꾸기 항목에 사용자를 추가합니다.
 
-### (Windows 전용) 관리자가 아닌 사용자를 위해 PDF 생성기 서비스를 사용하도록 설정합니다. {#enable-the-pdf-generator-service-for-non-administrators}
+### (Windows 전용) 관리자가 아닌 사용자를 위해 PDF Generator 서비스를 사용하도록 설정합니다. {#enable-the-pdf-generator-service-for-non-administrators}
 
-관리자가 아닌 사용자가 PDF 생성기 서비스를 사용할 수 있도록 설정할 수 있습니다. 일반적으로 관리 권한이 있는 사용자만 서비스를 사용할 수 있습니다.
+관리자가 아닌 사용자가 PDF Generator 서비스를 사용할 수 있도록 설정할 수 있습니다. 일반적으로 관리 권한이 있는 사용자만 서비스를 사용할 수 있습니다.
 
 1. 환경 변수 PDFG_NON_ADMIN_ENABLED를 만듭니다.
 1. 환경 변수의 값을 TRUE로 설정합니다.
@@ -328,13 +326,13 @@ Microsoft® Office 트러스트 센터 설정을 변경하여 PDF 생성기 서�
 
 ### (Windows만 해당) 오류 보고 서비스 비활성화 {#disable-error-reporting-service}
 
-Windows Server에서 PDF 생성기 서비스를 사용하여 문서를 PDF으로 변환하는 동안 Windows Server에서 실행 파일에 문제가 발생하여 닫아야 한다고 보고하는 경우가 있습니다. 하지만 백그라운드에서 계속되므로 PDF 전환에는 영향을 주지 않습니다.
+Windows Server에서 PDF Generator 서비스를 사용하여 문서를 PDF으로 변환하는 동안 Windows Server에서 실행 파일에 문제가 발생하여 닫아야 한다고 보고하는 경우가 있습니다. 하지만 백그라운드에서 계속되므로 PDF 전환에는 영향을 주지 않습니다.
 
 오류를 수신하지 않도록 Windows 오류 보고를 비활성화할 수 있습니다. 오류 보고 비활성화에 대한 자세한 내용은 [https://technet.microsoft.com/en-us/library/cc754364.aspx](https://technet.microsoft.com/en-us/library/cc754364.aspx).
 
 ### (Windows만 해당) HTML에서 PDF 전환으로 구성 {#configure-html-to-pdf-conversion}
 
-PDF 생성기 서비스는 HTML 파일을 PDF 문서로 변환하는 WebKit, WebCapture 및 PhantomJS 경로 또는 메서드를 제공합니다. Windows에서 WebKit 및 Acrobat WebCapture 경로에 대한 변환을 활성화하려면 유니코드 글꼴을 %windir%\fonts 디렉터리에 복사합니다.
+PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 WebKit, WebCapture 및 PhantomJS 경로 또는 메서드를 제공합니다. Windows에서 WebKit 및 Acrobat WebCapture 경로에 대한 변환을 활성화하려면 유니코드 글꼴을 %windir%\fonts 디렉터리에 복사합니다.
 
 >[!NOTE]
 >
@@ -342,7 +340,7 @@ PDF 생성기 서비스는 HTML 파일을 PDF 문서로 변환하는 WebKit, Web
 
 ### (UNIX 기반 플랫폼만 해당) HTML-PDF 변환을 위한 추가 구성  {#extra-configurations-for-html-to-pdf-conversion}
 
-UNIX 기반 플랫폼에서 PDF 생성기 서비스는 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 PhantomJS 경로를 지원합니다. HTML-PDF 변환을 활성화하려면 원하는 변환 경로에 적용할 수 있는 다음 구성을 수행합니다.
+UNIX 기반 플랫폼에서 PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 PhantomJS 경로를 지원합니다. HTML-PDF 변환을 활성화하려면 원하는 변환 경로에 적용할 수 있는 다음 구성을 수행합니다.
 
 ### (UNIX 기반 플랫폼만 해당) 유니코드 글꼴 지원 활성화(WebKit만 해당) {#enable-support-for-unicode-fonts-webkit-only}
 
@@ -362,10 +360,9 @@ UNIX 기반 플랫폼에서 PDF 생성기 서비스는 HTML 파일을 PDF 문서
 >* Html2PdfSvc/bin 및 /usr/share/fonts 디렉토리에서 모든 .lst 글꼴 캐시 파일을 삭제합니다.
 >* /usr/lib/X11/fonts 디렉토리와 /usr/share/fonts 디렉토리가 있는지 확인합니다. 디렉토리가 없으면 ln 명령을 사용하여 /usr/share/X11/fonts에서 /usr/lib/X11/fonts로 심볼 링크를 생성하고 /usr/share/fonts에서 /usr/share/X11/fonts로 심볼 링크를 생성합니다. 또한 courier 글꼴이 /usr/lib/X11/fonts에서 사용 가능한지 확인하십시오.
 >* /usr/share/fonts 또는 /usr/share/X11/fonts 디렉토리에서 유니코드와 비유니코드를 모두 사용할 수 있는지 확인합니다.
->* 루트가 아닌 사용자로 PDF 생성기 서비스를 실행하는 경우 루트가 아닌 사용자에게 모든 글꼴 디렉터리에 대한 읽기 및 쓰기 액세스 권한을 제공합니다.
+>* 루트가 아닌 사용자로 PDF Generator 서비스를 실행할 때 루트가 아닌 사용자에게 모든 글꼴 디렉터리에 대한 읽기 및 쓰기 액세스 권한을 제공합니다.
 >* fonts 폴더에 새 글꼴을 설치할 때마다 AEM Forms 인스턴스를 다시 시작합니다.
 >
-
 
 ## AEM Forms 추가 기능 패키지 설치 {#install-aem-forms-add-on-package}
 
@@ -415,12 +412,13 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
    >
    >Adobe 이외의 당사자가 제공한 글꼴을 사용할 권리는 해당 글꼴과 함께 그러한 당사자가 제공한 라이선스 계약에 의해 적용되며, Adobe 소프트웨어 사용 라이선스에 따라 적용되지 않습니다. Adobe은 특히 서버 환경에서의 Adobe 사용에 관하여 Adobe 소프트웨어에서 비 Adobe 글꼴을 사용하기 전에 적용 가능한 모든 비 라이선스 계약을 검토하고 준수하는지 확인할 것을 권장합니다.
    >fonts 폴더에 새 글꼴을 설치하면 AEM Forms 인스턴스를 다시 시작합니다.
+   >
 
-### PDF 생성기 서비스를 실행하도록 로컬 사용자 계정을 구성합니다  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
+### PDF Generator 서비스를 실행하도록 로컬 사용자 계정 구성  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
-PDF 생성기 서비스를 실행하려면 로컬 사용자 계정이 필요합니다. 로컬 사용자를 만드는 단계는 [Windows에서 사용자 계정 만들기](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) 또는 UNIX 기반 플랫폼에서 사용자 계정을 만들 수 있습니다.
+PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합니다. 로컬 사용자를 만드는 단계는 [Windows에서 사용자 계정 만들기](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) 또는 UNIX 기반 플랫폼에서 사용자 계정을 만들 수 있습니다.
 
-1. 를 엽니다. [AEM Forms PDF 생성기 구성](http://localhost:4502/libs/fd/pdfg/config/ui.html) 페이지를 가리키도록 업데이트하는 중입니다.
+1. 를 엽니다. [AEM Forms PDF Generator 구성](http://localhost:4502/libs/fd/pdfg/config/ui.html) 페이지를 가리키도록 업데이트하는 중입니다.
 
 1. 다음에서 **[!UICONTROL 사용자 계정]** 탭에서 로컬 사용자 계정의 자격 증명을 제공하고 **[!UICONTROL 제출]**. Microsoft® Windows에 메시지가 표시되면 사용자에 대한 액세스를 허용합니다. 성공적으로 추가되면 구성된 사용자가 **[!UICONTROL 사용자 계정]** 의 섹션 **[!UICONTROL 사용자 계정]** 탭.
 
@@ -432,7 +430,7 @@ PDF 생성기 서비스를 실행하려면 로컬 사용자 계정이 필요합�
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
-1. AEM 작성자 인스턴스에 로그인하고 다음으로 이동합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL PDF 생성기 구성]**. 기본 URL은 <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. AEM 작성자 인스턴스에 로그인하고 다음으로 이동합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 구성 PDF Generator]**. 기본 URL은 <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
 
    를 엽니다. **[!UICONTROL 일반 구성]** 을(를) 탭하고 환경에 대해 다음 필드의 값을 수정합니다.
 
@@ -455,19 +453,19 @@ PDF 생성기 서비스를 실행하려면 로컬 사용자 계정이 필요합�
   </tr>
   <tr>
    <td>작업 만료 초</td>
-   <td>PDF 생성기 서비스에서 변환을 실행할 수 있는 기간입니다. 작업 만료 초 값이 PDFG 정리 스캔 초 값보다 큰지 확인합니다.</td>
+   <td>PDF Generator 서비스에서 변환을 실행할 수 있는 기간입니다. 작업 만료 초 값이 PDFG 정리 스캔 초 값보다 큰지 확인합니다.</td>
    <td>7200초</td>
   </tr>
  </tbody>
 </table>
 
-### (Windows만 해당) PDF 생성기 서비스에 대한 Acrobat 구성 {#configure-acrobat-for-the-pdf-generator-service}
+### (Windows만 해당) PDF Generator 서비스를 위한 Acrobat 구성 {#configure-acrobat-for-the-pdf-generator-service}
 
-Microsoft® Windows에서 PDF 생성기 서비스는 Adobe Acrobat을 사용하여 지원되는 파일 형식을 PDF 문서로 변환합니다. PDF 생성기 서비스를 위한 Adobe Acrobat을 구성하려면 다음 단계를 수행하십시오.
+Microsoft® Windows에서 PDF Generator 서비스는 Adobe Acrobat을 사용하여 지원되는 파일 형식을 PDF 문서로 변환합니다. PDF Generator 서비스를 위한 Adobe Acrobat을 구성하려면 다음 단계를 수행하십시오.
 
 1. Acrobat을 열고 다음을 선택합니다. **[!UICONTROL 편집]**> **[!UICONTROL 환경 설정]**> **[!UICONTROL Updater]**. 업데이트 확인에서 선택을 취소합니다 **[!UICONTROL 업데이트 자동 설치]**, 및 클릭 **[!UICONTROL 확인]**. Acrobat을 닫습니다.
-1. 시스템에서 PDF 문서를 두 번 클릭합니다. Acrobat이 처음 시작되면 로그인, 시작 화면 및 EULA에 대한 대화 상자가 나타납니다. PDF 생성기를 사용하도록 구성된 모든 사용자에 대해 이 대화 상자를 닫습니다.
-1. PDF 생성기 유틸리티 배치 파일을 실행하여 PDF 생성기 서비스에 대해 Acrobat을 구성합니다.
+1. 시스템에서 PDF 문서를 두 번 클릭합니다. Acrobat이 처음 시작되면 로그인, 시작 화면 및 EULA에 대한 대화 상자가 나타납니다. PDF Generator을 사용하도록 구성된 모든 사용자에 대해 이 대화 상자를 닫습니다.
+1. PDF Generator 유틸리티 배치 파일을 실행하여 PDF Generator 서비스에 대해 Acrobat을 구성합니다.
 
    1. 열기 [AEM 패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp) 및 다운로드 `adobe-aemfd-pdfg-common-pkg-[version].zip` 패키지 관리자에서 파일을 가져옵니다.
    1. 다운로드한 .zip 파일의 압축을 해제합니다. 관리자 권한으로 명령 프롬프트를 엽니다.
@@ -477,7 +475,7 @@ Microsoft® Windows에서 PDF 생성기 서비스는 Adobe Acrobat을 사용하�
 
       `Acrobat_for_PDFG_Configuration.bat`
 
-      Acrobat은 PDF 생성기 서비스로 실행되도록 구성되어 있습니다.
+      Acrobat은 PDF Generator 서비스로 실행되도록 구성되어 있습니다.
 
 1. 실행 [시스템 준비 도구(SRT)](#SRT) Acrobat 설치 여부를 확인합니다.
 
@@ -510,7 +508,7 @@ DocAssurance 서비스는 PDF 문서에 사용 권한을 적용할 수 있습니
 * 인증서와 함께 제공된 개인 키 암호.
 
 * 개인 키 별칭. Java keytool 명령을 실행하여 개인 키 별칭을 볼 수 있습니다.
-   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+  `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * 키 저장소 파일 암호입니다. Adobe의 Reader 확장 인증서를 사용하는 경우 Keystore 파일 암호는 항상 개인 키 암호와 동일합니다.
 
@@ -583,7 +581,7 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
 
 ## 시스템 준비 도구(SRT) {#SRT}
 
-다음 [시스템 준비 도구](#srt-configuration) 시스템이 PDF 생성기 변환을 실행하도록 올바르게 구성되었는지 확인합니다. 이 도구는 지정된 경로에서 보고서를 생성합니다. 도구를 실행하려면:
+다음 [시스템 준비 도구](#srt-configuration) 시스템이 PDF Generator 전환을 실행하도록 올바르게 구성되었는지 확인합니다. 이 도구는 지정된 경로에서 보고서를 생성합니다. 도구를 실행하려면:
 
 1. 명령 프롬프트를 엽니다. 다음 위치로 이동 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` 폴더를 삭제합니다.
 
@@ -597,7 +595,6 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
    >
    >* 시스템 준비 도구에서 pdfgen.api 파일을 Acrobat 플러그인 폴더에서 사용할 수 없다고 보고하면 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` 디렉토리 대상: `[Acrobat_root]\Acrobat\plug_ins` 디렉토리.
 
-
 1. 다음으로 이동 `[Path_of_reports_folder]`. SystemReadinessTool.html 파일을 엽니다. 보고서를 확인하고 언급된 문제를 해결합니다.
 
 ### SRT 도구에 대한 옵션 구성 {#srt-configuration}
@@ -609,7 +606,7 @@ srt_config.yaml 파일을 사용하여 SRT 도구에 대한 다양한 설정을 
    # SRT Configuration
    # =================================================================
    #Note - follow correct format to avoid parsing failures
-   #e.g. <param name>:<space><param value> 
+   #for example, <param name>:<space><param value> 
    #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
    locale: en
    
@@ -629,9 +626,9 @@ srt_config.yaml 파일을 사용하여 SRT 도구에 대한 다양한 설정을 
    outputDir:
 ```
 
-* **로케일:** 필수 매개 변수입니다. 영어(en), 독일어(de), 프랑스어(fr) 및 일본어(ja)를 지원합니다. 기본값은 en입니다. OSGi의 AEM Forms에서 실행되는 PDF 생성기 서비스에는 영향을 주지 않습니다.
+* **로케일:** 필수 매개 변수입니다. 영어(en), 독일어(de), 프랑스어(fr) 및 일본어(ja)를 지원합니다. 기본값은 en입니다. OSGi의 AEM Forms에서 실행되는 PDF Generator 서비스에는 영향을 주지 않습니다.
 * **aemTempDir:** 선택적 매개 변수입니다. Adobe Experience Manager의 임시 저장소 위치를 지정합니다.
-* **사용자:** 선택적 매개 변수입니다. 사용자에게 PDF 생성기를 실행하는 데 필요한 디렉터리에 대한 읽기/쓰기 권한과 필요한 권한이 있는지 확인할 사용자를 지정할 수 있습니다. 사용자를 지정하지 않으면 사용자별 검사를 건너뛰고 보고서에 실패로 표시됩니다.
+* **사용자:** 선택적 매개 변수입니다. 사용자에게 PDF Generator을 실행하는 데 필요한 디렉터리에 대한 읽기/쓰기 권한과 필요한 권한이 있는지 확인할 사용자를 지정할 수 있습니다. 사용자를 지정하지 않으면 사용자별 검사를 건너뛰고 보고서에 실패로 표시됩니다.
 * **outputDir:** SRT 보고서를 저장할 위치를 지정합니다. 기본 위치는 SRT 도구의 현재 작업 디렉토리입니다.
 
 ## 문제 해결
@@ -645,8 +642,8 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 * 확인만 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) Microsoft® Office(32비트) 및 Adobe Acrobat이 설치되고 대화 상자 열기가 취소됩니다.
 * Adobe Acrobat 업데이트 서비스가 비활성화되어 있는지 확인합니다.
 * 다음을 확인합니다. [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) 배치 파일이 관리자 권한으로 실행되었습니다.
-* PDF 구성 UI에 PDF 생성기 사용자가 추가되었는지 확인합니다.
-* 다음을 확인합니다. [프로세스 수준 토큰 바꾸기](#grant-the-replace-a-process-level-token-privilege) PDF 생성기 사용자에 대한 권한이 추가되었습니다.
+* PDF 구성 UI에 PDF Generator 사용자가 추가되었는지 확인합니다.
+* 다음을 확인합니다. [프로세스 수준 토큰 바꾸기](#grant-the-replace-a-process-level-token-privilege) PDF Generator 사용자에 대한 권한이 추가됩니다.
 * Microsoft Office 애플리케이션에 Acrobat PDFMaker Office COM 추가 기능을 사용할 수 있는지 확인합니다.
 
 +++
@@ -655,11 +652,11 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 **Microsoft® Windows**
 
-* 32비트 [지원되는 버전 ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 의 Microsoft Office가 설치되고 모든 애플리케이션에 대한 대화 상자 열기가 취소되었습니다.
-* PDF 구성 UI에 PDF 생성기 사용자가 추가되었는지 확인합니다.
-* PDF 생성기 사용자가 관리자 그룹의 구성원인지 및 [프로세스 수준 토큰 바꾸기](#grant-the-replace-a-process-level-token-privilege) 사용자에 대한 권한이 설정됩니다.
-* 사용자가 PDF 생성기 UI에 구성되어 있고 다음 작업을 수행하는지 확인합니다.
-   1. PDF 생성기 사용자로 Microsoft® Windows에 로그인합니다.
+* 32비트 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 의 Microsoft Office가 설치되고 모든 애플리케이션에 대한 대화 상자 열기가 취소되었습니다.
+* PDF 구성 UI에 PDF Generator 사용자가 추가되었는지 확인합니다.
+* PDF Generator 사용자가 관리자 그룹의 구성원인지 확인하고 [프로세스 수준 토큰 바꾸기](#grant-the-replace-a-process-level-token-privilege) 사용자에 대한 권한이 설정됩니다.
+* 사용자가 PDF Generator UI에 구성되어 있고 다음 작업을 수행하는지 확인합니다.
+   1. PDF Generator 사용자로 Microsoft® Windows에 로그인합니다.
    1. Microsoft® Office 또는 OpenOffice 애플리케이션을 열고 모든 대화 상자를 취소합니다.
    1. AdobePDF를 기본 프린터로 설정합니다.
    1. Acrobat을 PDF 파일의 기본 프로그램으로 설정합니다.
@@ -678,7 +675,7 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 +++HTML-PDF 전환 문제
 
-* PDF 생성기 구성 UI에 글꼴 디렉터리가 추가되었는지 확인합니다.
+* PDF Generator 구성 UI에 글꼴 디렉터리가 추가되었는지 확인합니다.
 
 **Linux 및 Solaris(PhantomJS 변환 경로)**
 
@@ -686,9 +683,9 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 * 다음 명령을 실행하여 phantomjs에 대해 누락된 라이브러리를 나열합니다.
 
-   ```
-   ldd phantomjs | grep not
-   ```
+  ```
+  ldd phantomjs | grep not
+  ```
 
 * JAVA_HOME_32 환경 변수가 올바른 위치를 가리키는지 확인합니다.
 
@@ -696,11 +693,11 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 * 디렉터리가 `/usr/lib/X11/fonts` 및 `/usr/share/fonts` 존재합니다. 디렉터리가 없는 경우 다음 위치에서 심볼 링크를 만듭니다. `/usr/share/X11/fonts` 끝 `/usr/lib/X11/fonts` 및 의 또 다른 심볼 링크 `/usr/share/fonts` 끝 `/usr/share/X11/fonts`.
 
-   ```
-   ln -s /usr/share/fonts /usr/share/X11/fonts
-   
-   ln -s /usr/share/X11/fonts /usr/lib/X11/fonts
-   ```
+  ```
+  ln -s /usr/share/fonts /usr/share/X11/fonts
+  
+  ln -s /usr/share/X11/fonts /usr/lib/X11/fonts
+  ```
 
 * IBM 글꼴이 usr/share/fonts 아래에 복사되었는지 확인합니다.
 * 컴퓨터에서 유령 취약성 수정 glibc를 사용할 수 있는지 확인합니다. 기본 패키지 관리자를 사용하여 최신 버전의 glibc로 업데이트합니다. 유령 취약성 수정 사항이 포함되어 있습니다.
@@ -733,7 +730,7 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 +++
 
-+++ PDFG(PDF 생성기) 사용자를 추가할 수 없음
++++ PDF Generator(PDFG) 사용자를 추가할 수 없음
 
 * Microsoft® Visual C++ 2012 x86 및 Microsoft® Visual C++ 2013 x86(32비트) 재배포 가능 패키지가 Windows에 설치되어 있는지 확인합니다.
 
@@ -751,9 +748,9 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 * 서버 로그를 확인하여 특정 사용자에 대한 전환이 실패하는지 확인합니다.(프로세스 탐색기를 사용하여 다양한 사용자에 대한 실행 중인 프로세스를 확인할 수 있습니다.)
 
-* PDF 생성자용으로 구성된 사용자에게 로컬 관리자 권한이 있는지 확인합니다.
+* PDF Generator에 대해 구성된 사용자에게 로컬 관리자 권한이 있는지 확인합니다.
 
-* PDF 생성기 사용자에게 LC 임시 사용자와 PDFG 임시 사용자에 대한 읽기, 쓰기 및 실행 권한이 있는지 확인합니다.
+* PDF Generator 사용자에게 LC 임시 사용자와 PDFG 임시 사용자에 대한 읽기, 쓰기 및 실행 권한이 있는지 확인합니다.
 
 * Microsoft® Office 및 OpenOffice의 경우 전환 중에 대화 상자가 나타나지 않도록 각 사용자별로 적어도 한 번 이상의 전환을 수동으로 수행하십시오. 대화 상자가 나타나면 해당 대화 상자를 닫습니다. 자동화된 변환 중에는 이러한 대화 상자가 나타나지 않아야 합니다.
 
@@ -767,19 +764,19 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
    * 다음 명령을 사용하여 prov.xml을 생성하고 여기에 제공된 명령 대신 prov.xml 파일을 사용하여 기존 설치를 예약합니다 [시리얼 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) 번호 문서.
 
-          &quot;
-          
-          adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;leid>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list of locales in xx_XX format or ALL>] [—provfile=&lt;absolute path=&quot;&quot; to=&quot;&quot; prov.xml=&quot;&quot;>]
-          
-          &quot;
-      
+         &quot;
+         
+         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;leid>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list of locales in xx_XX format or ALL>] [—provfile=&lt;absolute path=&quot;&quot; to=&quot;&quot; prov.xml=&quot;&quot;>]
+         
+         &quot;
+     
    * 볼륨 패키지 직렬화(prov.xml 파일 및 새 일련번호를 사용하여 기존 설치를 다시 직렬화): PRTK 설치 폴더에서 다음 명령을 관리자로 실행하여 클라이언트 컴퓨터에서 배포된 패키지를 직렬화하고 활성화합니다.
 
-          &quot;
-          adobe_prtk —tool=VolumeSerialize —provfile=C:\prov.xml -stream
-          
-          &quot;
-      
+         &quot;
+         adobe_prtk —tool=VolumeSerialize —provfile=C:\prov.xml -stream
+         
+         &quot;
+     
 * 대규모 설치의 경우 [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) 이전 버전의 Reader 및 Acrobat을 제거합니다. 설치 관리자를 사용자 지정하고 조직의 모든 컴퓨터에 배포합니다.
 
 +++

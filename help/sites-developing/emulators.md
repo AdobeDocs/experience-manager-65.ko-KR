@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ AEM 에뮬레이터 프레임워크:
 * ExtJS를 기반으로 합니다.
 * 페이지 DOM에서 작동합니다.
 * 해당 모양은 CSS를 통해 조절됩니다.
-* 플러그인(예: 모바일 디바이스 회전 플러그인)을 지원합니다.
+* 플러그인을 지원합니다(예: 모바일 디바이스 회전 플러그인).
 * 은(는) 작성자에서만 활성화됩니다.
 * 기본 구성 요소는 다음 위치에 있습니다. `/libs/wcm/emulator/components/base`.
 
@@ -110,26 +110,26 @@ AEM 에뮬레이터 프레임워크:
 * /libs/wcm/mobile/components/emulators 아래에 있습니다.
 * 다음 위치의 JSON 서블릿을 통해 사용할 수 있습니다.
 
-   http://localhost:4502/bin/wcm/mobile/emulators.json
+  http://localhost:4502/bin/wcm/mobile/emulators.json
 
 페이지 구성 요소가 모바일 페이지 구성 요소를 사용하는 경우( `/libs/wcm/mobile/components/page`) 에뮬레이터 기능은 다음 메커니즘을 통해 페이지에 자동으로 통합됩니다.
 
 * 모바일 페이지 구성 요소 `head.jsp` 에는 장치 그룹의 연결된 에뮬레이터 초기화 구성 요소(작성자 모드에서만) 및 장치 그룹의 렌더링 CSS가 포함되어 있습니다.
 
-   `deviceGroup.drawHead(pageContext);`
+  `deviceGroup.drawHead(pageContext);`
 
 * 메서드 `DeviceGroup.drawHead(pageContext)` 에뮬레이터의 init 구성 요소를 포함합니다. 즉, `init.html.jsp` 에뮬레이터 구성 요소. 에뮬레이터 구성 요소에 자체 자산이 없는 경우 `init.html.jsp` 모바일 기본 에뮬레이터( `wcm/mobile/components/emulators/base)`, 모바일 기본 에뮬레이터의 init 스크립트가 호출됩니다( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
-* 모바일 기본 에뮬레이터의 init 스크립트는 Javascript를 통해 다음을 정의합니다.
+* 모바일 기본 에뮬레이터의 init 스크립트는 JavaScript를 통해 다음을 정의합니다.
 
    * 페이지에 대해 정의된 모든 에뮬레이터에 대한 구성(emulatorConfigs)
    * 다음을 통해 페이지에서 에뮬레이터의 기능을 통합하는 에뮬레이터 관리자:
 
-      `emulatorMgr.launch(config)`;
+     `emulatorMgr.launch(config)`;
 
-      에뮬레이터 관리자는 다음으로 정의됩니다.
+     에뮬레이터 관리자는 다음으로 정의됩니다.
 
-      `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
 #### 사용자 지정 모바일 에뮬레이터 만들기 {#creating-a-custom-mobile-emulator}
 
@@ -152,4 +152,5 @@ AEM 에뮬레이터 프레임워크:
    * 이름 = `canRotate`, 유형 = `Boolean`, 값 = `true`: 순환 기능을 포함합니다.
 
    * 이름 = `touchScrolling`, 유형 = `Boolean`, 값 = `true`: 터치 스크롤 기능을 포함합니다.
+
    고유한 플러그인을 정의하여 더 많은 기능을 추가할 수 있습니다.

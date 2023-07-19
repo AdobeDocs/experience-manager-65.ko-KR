@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 82%
+source-wordcount: '219'
+ht-degree: 72%
 
 ---
 
@@ -33,8 +33,8 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 |  | `Ctrl-Click` | 여러 단락을 선택합니다 |
 |  | `Ctrl-c` | 선택한 단락을 복사합니다. |
 |  | `Ctrl-x` | 선택한 단락을 잘라냅니다. 잘라낸 단락은 붙여넣기 전까지 UI에서 사라지지 않습니다. |
-|  | `Ctrl-v` | 이전에 잘라내거나 복사한 단락을 붙여넣습니다. |
-|  | `Ctrl-Backspace` | 선택한 단락을 삭제합니다. |
+|  | `Ctrl-v` | 이전에 잘라내거나 복사한 단락 붙여넣기 |
+|  | `Ctrl-Backspace` | 선택한 단락 삭제 |
 | **편집** 모드 - 리치 텍스트 편집기 | `Ctrl-b` | 굵게 |
 |  | `Ctrl-I` | 기울임체 |
 |  | `Ctrl-u` | 밑줄 |

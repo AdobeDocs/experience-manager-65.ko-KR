@@ -2,9 +2,9 @@
 title: IMS를 사용하여 Adobe Analytics과 통합
 description: IMS를 사용하여 AEM과 Adobe Analytics 통합에 대해 알아보기
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: 5789954afea2d42444b6f6f9f185d7926624e7f0
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1057'
 ht-degree: 65%
 
 ---
@@ -28,7 +28,7 @@ Analytics Standard API를 통해 Adobe Analytics과 AEM을 통합하려면 Adobe
 
 이 절차를 시작하기 전에:
 
-* [Adobe 지원 팀](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)은 다음에 대한 계정을 프로비저닝해야 합니다.
+* [Adobe 지원 팀](https://helpx.adobe.com/contact/enterprise-support.ec.html)은 다음에 대한 계정을 프로비저닝해야 합니다.
 
    * Adobe Console
    * Adobe Developer Console
@@ -38,7 +38,7 @@ Analytics Standard API를 통해 Adobe Analytics과 AEM을 통합하려면 Adobe
 * 조직의 시스템 관리자는 Admin Console을 사용하여 필요한 조직 개발자를 관련 제품 프로필에 추가해야 합니다.
 
    * 이렇게 하면 특정 개발자에게 Adobe Developer 콘솔 내에서 통합을 활성화할 수 있는 권한이 제공됩니다.
-   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
+   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
 
 
 ## IMS 구성 - 공개 키 생성 {#configuring-an-ims-configuration-generating-a-public-key}
@@ -154,7 +154,7 @@ AEM으로 돌아가 Analytics용 통합 프로젝트에서 필요한 값을 추�
 1. 여기에서 [Adobe Developer 콘솔 통합 프로젝트에 대해 저장된 세부 정보](#details-stored-for-the-ims-integration-project):
 
    * **제목**: 텍스트를 입력하십시오.
-   * **인증 서버**: 아래 **페이로드** 섹션의 `aud` 줄에서 이 인증 서버를 복사하여 붙여넣습니다(아래 예에서 `https://ims-na1.adobelogin.com`).
+   * **인증 서버**: 아래 `aud`페이로드&#x200B;**섹션의** 줄에서 이 인증 서버를 복사하여 붙여넣습니다(아래 예에서 `https://ims-na1.adobelogin.com`).
    * **API 키**: [프로젝트 개요](#details-stored-for-the-ims-integration-project)의 **자격 증명** 섹션에서 이 API 키를 복사합니다.
    * **클라이언트 보안**: [서비스 계정(JWT) 섹션의 클라이언트 보안 탭](#details-stored-for-the-ims-integration-project)에서 이 클라이언트 보안을 생성한 다음 복사합니다.
    * **페이로드**: [서비스 계정(JWT) 섹션의 JWT 생성 탭](#details-stored-for-the-ims-integration-project)에서 이 페이로드를 복사합니다.

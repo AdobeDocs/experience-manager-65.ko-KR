@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1947'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 문서에서는 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) 클래식 UI에서. Adobe은 새 를 활용할 것을 권장합니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md) 터치 지원 UI에서 양식 개발용
+>이 문서에서는 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) 클래식 UI에서. Adobe은 새 를 활용할 것을 권장합니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md) 터치 지원 UI에서 양식 개발용
 
 ## 양식 값 미리 로드 {#preloading-form-values}
 
@@ -129,12 +129,12 @@ ht-degree: 1%
 
    1. 게시물 스크립트.
 스크립트 이름은 입니다. `post.POST.<extension>`, 예: `post.POST.jsp`
-게시 스크립트는 양식을 처리하기 위해 양식을 제출할 때 호출되며 여기에는 양식에서 오는 데이터를 처리하는 코드가 포함됩니다 
-`POST`.
+게시 스크립트는 양식을 처리하기 위해 양식을 제출할 때 호출되며 여기에는 양식에서 오는 데이터를 처리하는 코드가 포함됩니다 `POST`.
 
    1. 양식 제출 시 호출되는 전달 스크립트를 추가합니다.
 스크립트 이름은 입니다. `forward.<extension`>(예: ) `forward.jsp`
 이 스크립트는 경로를 정의할 수 있습니다. 그런 다음 현재 요청이 지정된 경로로 전달됩니다.
+
    필요한 호출은 입니다. `FormsHelper#setForwardPath` (2 변형). 일반적인 사례는 유효성 검사 또는 논리를 수행하여 대상 경로를 찾은 다음 해당 경로로 전달하여 기본 Sling POST 서블릿이 JCR에서 실제 저장소를 수행하도록 하는 것입니다.
 
    실제 처리를 수행하는 다른 서블릿(이 경우 양식 작업 및 )이 있을 수 있습니다. `forward.jsp` 은 &quot;접착제&quot; 코드로만 작동합니다. 예를 들자면 다음 위치의 메일 작업입니다. `/libs/foundation/components/form/actions/mail`: 세부 정보를 전달합니다. `<currentpath>.mail.html`메일 서블릿이 있는 위치입니다.
@@ -153,6 +153,7 @@ ht-degree: 1%
       1. 양식의 유효성 검사 RT: `clientvalidation.jsp`
       1. 설정된 경우 로드 리소스를 통해 양식이 로드됨
       1. `addfields.jsp` 렌더링 안에 있는 동안 `<form></form>`
+
    * 양식 처리 시 `POST`:
 
       1. `init.jsp`
@@ -163,15 +164,11 @@ ht-degree: 1%
 
       1. 정방향 경로가 설정되지 않은 경우 을 호출합니다. `post.POST.jsp` (여기서 끝남, 아니요 `cleanup.jsp` 호출됨)
 
-
-
-
 1. 폴더에서 다시 다음을 선택적으로 추가합니다.
 
    1. 필드를 추가하기 위한 스크립트.
 스크립트 이름은 입니다. `addfields.<extension>`, 예: `addfields.jsp`
-An 
-`addfields` 양식 시작에 대한 HTML이 작성된 직후에 스크립트가 호출됩니다. 이렇게 하면 작업에서 사용자 지정 입력 필드 또는 양식 내에 다른 HTML을 추가할 수 있습니다.
+An `addfields` 양식 시작에 대한 HTML이 작성된 직후에 스크립트가 호출됩니다. 이렇게 하면 작업에서 사용자 지정 입력 필드 또는 양식 내에 다른 HTML을 추가할 수 있습니다.
 
    1. 초기화 스크립트.
 스크립트 이름은 입니다. `init.<extension>`, 예: `init.jsp`
@@ -268,7 +265,7 @@ An
 
 ![쇼위디콘디션](assets/showhidecondition.png)
 
-Javascript에서 조건은 Element Name 속성의 값을 사용하여 필드를 참조합니다. 앞의 예에서 라디오 그룹 구성 요소의 요소 이름 속성은 다음과 같습니다. `contact`. 다음 코드는 해당 예제에 대한 동등한 Javascript 코드입니다.
+JavaScript에서 조건은 필드를 참조하기 위해 요소 이름 속성의 값을 사용합니다. 앞의 예에서 라디오 그룹 구성 요소의 요소 이름 속성은 다음과 같습니다. `contact`. 다음 코드는 해당 예제에 대한 동등한 JavaScript 코드입니다.
 
 `((contact == "Yes"))`
 
@@ -284,6 +281,7 @@ Javascript에서 조건은 Element Name 속성의 값을 사용하여 필드를 
 
       * **모두** - 구성 요소를 표시하거나 숨기기 위해 모든 조건이 true여야 하는 경우
       * **임의** - 구성 요소를 표시하거나 숨기기 위해 하나 이상의 조건만 true여야 하는 경우
+
    * 조건 줄(하나가 기본값으로 표시됨)에서 구성 요소, 연산자를 선택한 다음 값을 지정합니다.
    * 필요한 경우 다음을 클릭하여 조건을 추가합니다. **조건 추가**.
 
@@ -306,7 +304,6 @@ Javascript에서 조건은 Element Name 속성의 값을 사용하여 필드를 
    >* 위치: **미리 보기** 작성 환경의 모드(처음 미리보기로 전환할 때 페이지를 다시 로드해야 함)
    >
    >* 게시 환경에서
-
 
 #### 끊어진 컴포넌트 참조 처리 {#handling-broken-component-references}
 

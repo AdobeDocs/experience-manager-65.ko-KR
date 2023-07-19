@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '483'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 * 만들기 보기에서 숨겨짐(예: **페이지 만들기** wizard)
 
-* 편집 보기에서 사용할 수 있습니다(예: **속성 보기**)
+* 편집 뷰에서 사용할 수 있습니다(예: **속성 보기**)
 
 변경이 필요한 경우 필드를 구체적으로 구성해야 합니다. 이 작업은 적절한 노드 속성을 사용하여 수행됩니다.
 
@@ -71,12 +71,15 @@ ht-degree: 3%
    >참조로서 다음을 참조하십시오.
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
+   >
    하지만, 당신은 ***필수*** 의 아무 것도 변경하지 마십시오. `/libs` 경로.
+   >
    이는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수도 있음).
+   >
    구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
+   >
    1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
    1. 다음 범위 내에서 변경 `/apps`
-
 
 1. 설정 `path` 속성 `basic` 기본 탭의 재정의를 지정합니다(다음 단계도 참조). 예:
 
@@ -99,6 +102,7 @@ ht-degree: 3%
    다음 **기타 제목 및 설명** 섹션이 **페이지 만들기** 마법사.
 
 >[!NOTE]
+>
 라이브 카피와 함께 사용할 페이지 속성을 구성할 때에는 다음을 참조하십시오. [페이지 속성에서 MSM 잠금 구성](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) 을 참조하십시오.
 
 ## 페이지 속성의 샘플 구성 {#sample-configuration-of-page-properties}

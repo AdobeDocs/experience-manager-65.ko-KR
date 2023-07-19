@@ -2,10 +2,10 @@
 title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 91%
+source-wordcount: '1423'
+ht-degree: 90%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 91%
 예를 들어 Sites 구성 `my-conf`의 모델 `my-model`을 사용하는 `my-query`라는 특정 쿼리가 있는 경우:
 
 * `my-conf` 특정 엔드포인트를 사용하여 쿼리를 만들 수 있으며 쿼리는 다음과 같이 저장됩니다.
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+  `/conf/my-conf/settings/graphql/persistentQueries/my-query`
 * `global` 엔드포인트를 사용하여 동일한 쿼리를 생성할 수 있지만 쿼리는 다음과 같이 저장됩니다.
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+  `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
@@ -346,7 +346,7 @@ curl -u admin:admin -X POST \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-`cache-control`은 생성 시간(PUT) 또는 그 이후에 설정될 수 있습니다(예: 인스턴스의 POST 요청을 통해 설정). AEM에서 기본값을 제공하기 때문에 지속 쿼리 생성 시 캐시 제어는 선택 사항입니다. cURL을 사용하여 쿼리를 지속하는 사례는 [GraphQL 쿼리를 지속하는 방법](#how-to-persist-query)을 참조하십시오.
+`cache-control`은 생성 시간(PUT) 또는 그 이후에 설정될 수 있습니다(예: 인스턴스의 POST 요청을 통해 설정). AEM에서 기본값을 제공하기 때문에 지속 쿼리 생성 시 캐시 제어는 옵션입니다. cURL을 사용하여 쿼리를 지속하는 사례는 [GraphQL 쿼리를 지속하는 방법](#how-to-persist-query)을 참조하십시오.
 
 ### OSGi 구성으로 캐시 관리 {#cache-osgi-configration}
 

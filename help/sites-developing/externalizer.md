@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '501'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,7 @@ AEM에서 **Externalizer** 는 리소스 경로를 프로그래밍 방식으로 
 
       * 원하는 경우 https를 사용하여 https 링크를 적용합니다
       * URL의 외부화를 요청할 때 클라이언트 코드가 스키마를 재정의하지 않는 경우 사용됩니다.
+
    * **server** 는 호스트 이름입니다(도메인 이름 또는 ip 주소일 수 있음).
    * **포트** (선택 사항) 은 포트 번호입니다.
    * **contextpath** (선택 사항) AEM이 다른 컨텍스트 경로 아래에 웹 앱으로 설치된 경우에만 설정됩니다.
@@ -100,7 +101,6 @@ AEM에서 **Externalizer** 는 리소스 경로를 프로그래밍 방식으로 
 
    * `https://www.website.com/contextpath/my/page.html`
 
-
 1. **&quot;작성자&quot; 도메인으로 경로를 외부화하려면:**
 
    ```java
@@ -115,7 +115,6 @@ AEM에서 **Externalizer** 는 리소스 경로를 프로그래밍 방식으로 
 
    * `https://author.website.com/contextpath/my/page.html`
 
-
 1. **&#39;로컬&#39; 도메인으로 경로를 외부화하려면:**
 
    ```java
@@ -129,6 +128,5 @@ AEM에서 **Externalizer** 는 리소스 경로를 프로그래밍 방식으로 
    `myExternalizedUrl` 다음 값으로 끝납니다.
 
    * `https://publish-3.internal/contextpath/my/page.html`
-
 
 1. 다음에서 더 많은 예를 찾을 수 있습니다. [자바독스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).

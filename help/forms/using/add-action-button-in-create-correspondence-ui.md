@@ -11,9 +11,9 @@ discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: ba2c753cfd041ccfcd6ba7a45648234290b99d25
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1880'
 ht-degree: 1%
 
 ---
@@ -170,7 +170,7 @@ ACMExtensionsMessages.properties 파일에는 서신 작성 사용자 인터페�
 >
 >브라우저 캐시를 지워야 할 수 있습니다.
 
-1. 이동 `https://[host]:'port'/system/console/bundles`. 필요한 경우 관리자로 로그인합니다.
+1. `https://[host]:'port'/system/console/bundles`로 이동합니다. 필요한 경우 관리자로 로그인합니다.
 
 1. Adobe 에셋 작성기 빌딩 블록 번들을 찾습니다. 번들을 다시 시작합니다. [중지]를 클릭한 다음 [시작]을 클릭합니다.
 
@@ -192,7 +192,7 @@ Adobe 에셋 작성기 빌딩 블록 번들을 다시 시작하면 사용자 지
 * 새로 추가된 작업 활성화/비활성화: actionEnabled() 함수를 재정의하여 수행됩니다.
 * 사용자가 버튼을 클릭할 때의 실제 작업 처리: handleAction() 함수 구현을 재정의하여 수행됩니다.
 
-1. 이동 `https://'[server]:[port]'/[ContextPath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
+1. `https://'[server]:[port]'/[ContextPath]/crx/de`로 이동합니다. 필요한 경우 관리자로 로그인합니다.
 
 1. 앱 폴더에서 이라는 폴더를 만듭니다. `js` 다음 폴더와 유사한 구조를 사용하는 CRX의 /apps 분기:
 

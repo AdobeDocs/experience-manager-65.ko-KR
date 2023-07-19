@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '732'
 ht-degree: 9%
 
 ---
@@ -24,7 +24,7 @@ SPA에서 페이지 구성 요소는 하위 구성 요소의 HTML 요소를 제�
 
 >[!NOTE]
 >
->SPA 편집기는 SPA 프레임워크 기반 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
+>SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
 ## 소개 {#introduction}
 
@@ -32,7 +32,7 @@ SPA에 대한 페이지 구성 요소는 JSP 또는 HTL 파일 및 리소스 오
 
 ## 페이지 모델 관리 {#page-model-management}
 
-페이지 모델의 해결 및 관리는 제공된 에게 위임됩니다 [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) 모듈. SPA은 와 상호 작용해야 합니다. `PageModelManager` 초기 페이지 모델을 가져오고 모델 업데이트를 등록하기 위해 초기화될 때의 모듈입니다. 대부분 작성자가 페이지 편집기를 통해 페이지를 편집할 때 생성됩니다. 다음 `PageModelManager` 은 SPA 프로젝트에서 npm 패키지로 액세스할 수 있습니다. AEM과 SPA 사이의 인터프리터로서 `PageModelManager` SPA과 동행하기로 되어 있습니다.
+페이지 모델의 해결 및 관리는 제공된 에게 위임됩니다 [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) 모듈. SPA은 와 상호 작용해야 합니다. `PageModelManager` 초기 페이지 모델을 가져오고 모델 업데이트를 등록하기 위해 초기화될 때의 모듈입니다. 대부분 작성자가 페이지 편집기를 통해 페이지를 편집할 때 생성됩니다. 다음 `PageModelManager` 은 SPA 프로젝트에서 npm 패키지로 액세스할 수 있습니다. AEM과 SPA 사이의 인터프리터로서 `PageModelManager` SPA과 동행하기로 되어 있습니다.
 
 페이지를 작성할 수 있도록 클라이언트 라이브러리는 `cq.authoring.pagemodel.messaging` SPA과 페이지 편집기 간 통신 채널을 제공하려면 를 추가해야 합니다. SPA 페이지 구성 요소가 페이지 wcm/핵심 구성 요소에서 상속되는 경우 다음 옵션을 사용하여 다음을 수행할 수 있습니다. `cq.authoring.pagemodel.messaging` 사용 가능한 클라이언트 라이브러리 범주:
 

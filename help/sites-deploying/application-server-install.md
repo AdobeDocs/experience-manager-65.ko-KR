@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -241,7 +241,7 @@ conf 파일에서 메모리 인수 설정(예: `standalone.conf`)
       * sling.home 초기 매개 변수의 주석 처리를 제거하고 필요에 따라 이 경로를 설정합니다.
       * web.xml 파일 다시 압축
 
-   * AEM war 파일을 루트 웹 앱으로 배포하려면 이름을 ROOT.war로 바꾸고, 컨텍스트 루트로 aemaauthor를 포함하려면 이름을 aemaauthor.war로 바꿉니다
+   * AEM war 파일을 ROOT.war로 이름 바꾸기 루트 웹 앱으로 배포하려면 이름을 aemaauthor.war과 같이 컨텍스트 루트로 바꾸십시오
    * tomcat의 webapps 폴더에 복사
    * AEM이 설치될 때까지 대기
 

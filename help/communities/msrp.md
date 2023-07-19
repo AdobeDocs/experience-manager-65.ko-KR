@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1190'
 ht-degree: 1%
 
 ---
@@ -64,43 +64,41 @@ AEM Communities이 MSRP를 공통 저장소로 사용하도록 구성된 경우 
 
    * **[!UICONTROL mongoDB URI]**
 
-      *기본값*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
+     *기본값*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
    * **[!UICONTROL mongoDB 데이터베이스]**
 
-      *기본값*: 커뮤니티
+     *기본값*: 커뮤니티
 
    * **[!UICONTROL mongoDB UGC 컬렉션]**
 
-      *기본값*: 콘텐츠
+     *기본값*: 콘텐츠
 
    * **[!UICONTROL mongoDB 첨부 파일 컬렉션]**
 
-      *기본값*: 첨부 파일
+     *기본값*: 첨부 파일
 
 * **[!UICONTROL SolrConfiguration]**
 
    * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper 호스트**
 
-      에서 실행할 때 [SolrCloud 모드](solr.md#solrcloud-mode) 외부 ZooKeeper를 사용하여 이 값을 `HOST:PORT` ZooKeeper의 경우 다음과 같습니다. *my.server.com:2181*
+     에서 실행할 때 [SolrCloud 모드](solr.md#solrcloud-mode) 외부 ZooKeeper를 사용하여 이 값을 `HOST:PORT` ZooKeeper의 경우 다음과 같습니다. *my.server.com:2181*
 
-      Zookeeper Ensemble의 경우 쉼표로 구분하여 입력합니다. `HOST:PORT` 값(예: ) *host1:2181,host2:2181*
+     Zookeeper Ensemble의 경우 쉼표로 구분하여 입력합니다. `HOST:PORT` 값(예: ) *host1:2181,host2:2181*
 
-      내부 ZooKeeper를 사용하여 Solr을 독립 실행형 모드로 실행하는 경우 비워 둡니다.
-      *기본값*: *&lt;blank>*
+     내부 ZooKeeper를 사용하여 Solr을 독립 실행형 모드로 실행하는 경우 비워 둡니다.
+     *기본값*: *&lt;blank>*
 
       * **[!UICONTROL Solr URL]**
 독립 실행형 모드에서 Solr과 통신하는 데 사용되는 URL입니다.
 SolrCloud 모드에서 실행하는 경우 비워 둡니다.
-
-         *기본값*: https://127.0.0.1:8983/solr/
+        *기본값*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Solr 컬렉션]**
 Solr 컬렉션 이름입니다.
+        *기본값*: collection1
 
-         *기본값*: collection1
-
-* 선택 **[!UICONTROL 제출]**
+* **[!UICONTROL 제출]**&#x200B;을 선택합니다
 
 >[!NOTE]
 >
@@ -198,7 +196,7 @@ cURL -u *로그인* -d *데이터* *reindex-url*
 *경로* = 다시 인덱싱할 UGC 트리의 루트 위치
 
 * 모든 UGC를 다시 인덱싱하려면 `asipath`다음의 속성
-   `/etc/socialconfig/srpc/defaultconfiguration`
+  `/etc/socialconfig/srpc/defaultconfiguration`
 * 인덱스를 일부 UGC로 제한하려면 다음 중 하위 트리를 지정하십시오. `asipath`
 
 *reindex-url* = SRP 리인덱싱의 끝점

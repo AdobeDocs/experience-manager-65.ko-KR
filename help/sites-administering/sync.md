@@ -12,9 +12,9 @@ discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: f0acb130e1c68b927356c4e0ea625bbd88a6fc19
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2526'
 ht-degree: 3%
 
 ---
@@ -404,7 +404,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 ### 사용자 또는 사용자 그룹은 보안 콘솔을 사용하여 만들어집니다 {#users-or-user-groups-are-created-using-security-console}
 
-기본적으로 게시 환경에서 만든 사용자 데이터는 작성 환경에 표시되지 않으며 그 반대의 경우도 마찬가지입니다.
+기본적으로 게시 환경에서 생성된 사용자 데이터는 작성 환경에 표시되지 않으며 그 반대로 표시됩니다.
 
 다음의 경우 [사용자 관리 및 보안](/help/sites-administering/security.md) 콘솔은 게시 환경에 새 사용자를 추가하는 데 사용되며, 필요한 경우 사용자 동기화는 새 사용자와 해당 그룹 구성원을 다른 게시 인스턴스와 동기화합니다. 사용자 동기화는 보안 콘솔을 통해 만든 사용자 그룹도 동기화합니다.
 

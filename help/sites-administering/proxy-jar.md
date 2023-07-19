@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1162'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 * 전자 메일 메시지용 SMTP
 * 사용자 관리를 위한 LDAP
 
-예를 들어 웹 브라우저와 AEM과 같이 TCP/IP 네트워크를 통해 통신하는 두 애플리케이션 사이에 프록시 서버를 배치할 수 있습니다. 이를 통해 AEM 페이지를 요청할 때 발생하는 상황을 정확하게 모니터링할 수 있습니다.
+예를 들어 웹 브라우저와 AEM과 같은 TCP/IP 네트워크를 통해 통신하는 두 애플리케이션 사이에 프록시 서버를 배치할 수 있습니다. 이를 통해 AEM 페이지를 요청할 때 발생하는 상황을 정확하게 모니터링할 수 있습니다.
 
 ## 프록시 서버 도구 시작 {#starting-the-proxy-server-tool}
 

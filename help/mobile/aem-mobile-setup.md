@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '929'
 ht-degree: 2%
 
 ---
@@ -86,8 +86,8 @@ AEM Mobile 통합이 제대로 작동하려면 구성 단계를 완료해야 합
 
       1. 클라이언트 ID.
       1. 클라이언트 암호.
-   1. **(선택 사항)** 기존 값을 편집합니다.
 
+   1. **(선택 사항)** 기존 값을 편집합니다.
 
 1. 변경 사항을 저장합니다.
 1. 다음은 구성의 예입니다.

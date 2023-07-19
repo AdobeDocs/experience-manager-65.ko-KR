@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '753'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Adobe은 Commerce Integration Framework의 두 가지 버전을 제공합니다.
    <td>
     <ul>
      <li>Adobe Commerce</li>
-     <li>Java 및 Javascript</li>
+     <li>Java 및 JavaScript</li>
      <li>JCR 저장소에 저장된 상거래 데이터 없음</li>
     </ul> </td>
   </tr>
@@ -90,7 +90,7 @@ Adobe은 Commerce Integration Framework의 두 가지 버전을 제공합니다.
   </tr>
   <tr>
    <td>사용 시기</td>
-   <td>제한된 사용 사례: 예를 들어 작은 정적 카탈로그를 가져와야 하는 시나리오의 경우</td>
+   <td>제한된 사용 사례: 예를 들어 작은 정적 카탈로그를 가져와야 하는 시나리오가 이에 해당합니다</td>
    <td>대부분의 사용 사례에서 선호하는 솔루션</td>
   </tr>
  </tbody>

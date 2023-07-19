@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,7 @@ We.Unlimited 앱은 완벽하게 구성 가능하고 관리 가능한 AEM Mobile
 >다음 ***redirectTarget*** 는 앱 만들기 작업의 일부로 계산되며 앱 템플릿의 일부로 사용할 수 있는 redirectTarget 속성이 있고 redirectTarget의 값이 상대성으로 정의된 경우 경로를 확인하려고 합니다. 앱 만들기 프로세스에서 앱 템플릿에서 redirectTarget에 대한 상대 값을 찾으면 이 값이 앱이 만들어진 의 확인된 위치에 추가됩니다.
 >
 >예를 들어 앱 템플릿이 ***redirectTarget*** 값이 &quot;인&#x200B;*언어-마스터/en*&quot;및 앱이 &quot;&quot;에서 만들어졌습니다.*/content/mobileapps/fooApp*&quot;, 앱이 생성된 후 redirectTarget의 최종 값은 &quot;*/content/mobileapps/fooApp/language-masters/en*&quot;.
+>
 
 ## 콘텐츠 템플릿 만들기 {#creating-content-templates}
 
@@ -124,6 +125,7 @@ AEM 템플릿에 따라 기본 속성이나 하위 노드를 템플릿의 ***jcr
 >[!NOTE]
 >
 >현재 AEM Mobile에 제공되는 기본 구성 요소가 없습니다.
+>
 
 페이지에 구성 요소를 추가할 수 있습니다. 모든 구성 요소는 AEM Mobile 앱에서 사용할 수 있지만, 적용된 경우 제대로 렌더링되지 않을 수 있습니다.
 

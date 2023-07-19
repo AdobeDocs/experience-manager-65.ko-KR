@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Sites 콘솔 및 Content Insight에서 Analytics 보고서 데이터를 노출�
 
 * `pagedata.navTitle`: 이 서비스는 를 사용합니다 `page.getNavigationTitle()`
 
-다음 `page` 은(는) 입니다. [ `com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) 페이지에 대한 Java 개체입니다.
+다음 `page` 은(는) 입니다. [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) 페이지에 대한 Java 개체입니다.
 
 CQ 변수를 `s.pageName` 프레임워크의 속성, 값 `s.pageName` 은 페이지 경로에서 생성됩니다. 예를 들어 경로가 있는 페이지 `/content/geometrixx/en` 값 사용 `content:geometrixx:en` 대상 `s.pageName`.
 

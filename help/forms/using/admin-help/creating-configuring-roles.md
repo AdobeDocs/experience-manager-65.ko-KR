@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2525'
 ht-degree: 0%
 
 ---
@@ -85,9 +85,9 @@ ht-degree: 0%
 
 **출력 관리자:** 관리 콘솔의 출력 페이지에서 설정을 보고 수정할 수 있습니다
 
-**PDFG 관리자:** 관리 콘솔의 PDF 생성기 페이지에서 설정을 보고 수정할 수 있습니다
+**PDFG 관리자:** 관리 콘솔의 PDF Generator 페이지에서 설정을 보고 수정할 수 있습니다
 
-**PDFG 사용자:** PDF 생성기에 대한 모든 비관리 기능에 액세스할 수 있습니다.
+**PDFG 사용자:** PDF Generator을 위한 모든 비관리 기능에 액세스할 수 있습니다.
 
 **Acrobat Reader DC 확장 웹 애플리케이션:** Acrobat Reader DC 확장 웹 애플리케이션을 사용할 수 있습니다.
 

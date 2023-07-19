@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '4150'
 ht-degree: 0%
@@ -94,6 +94,7 @@ HTML 탐색 기능과 양식 스크립트를 모두 포함하는 페이지 양�
 form:ready 이벤트에 있는 양식 스크립트는 양식의 초기 렌더링 동안 한 번만 실행되며 후속 페이지 검색 시 실행되지 않습니다. 반면에 form:calculate 이벤트는 양식이 렌더링되는 각 페이지 탐색에 대해 실행됩니다.
 
 >[!NOTE]
+>
 다중 페이지 양식에서는 다른 페이지로 이동할 경우 페이지에 대한 JavaScript의 변경 사항이 유지되지 않습니다.
 
 양식을 제출하기 전에 사용자 지정 스크립트를 호출할 수 있습니다. 이 기능은 사용 가능한 모든 브라우저에서 작동합니다. 그러나 이 변수는 사용자가 가 있는 HTML 양식을 렌더링할 때만 사용할 수 있습니다 `Output Type` 속성이 로 설정됨 `Form Body`. 다음 경우에는 작동하지 않습니다. `Output Type` 은(는) `Full HTML`. 이 기능을 구성하는 단계는 관리 도움말의 양식 구성 을 참조하십시오.
@@ -167,6 +168,7 @@ HTML 페이지(패널) 간에 이동할 때 데이터의 상태만 유지됩니�
 ```
 
 >[!NOTE]
+>
 테이블 셀 내에 중첩된 정적 개체는 렌더링된 HTML 양식에 표시되지 않습니다. 예를 들어 표 셀 내부에 중첩된 원과 사각형은 렌더링 HTML 양식 내에 표시되지 않습니다. 그러나 표 외부에 있는 경우에는 동일한 정적 개체가 올바르게 표시됩니다.
 
 ## 디지털 서명 HTML 양식 {#digitally-signing-html-forms}
@@ -189,6 +191,7 @@ HTML 페이지(패널) 간에 이동할 때 데이터의 상태만 유지됩니�
 양식을 HTML 양식으로 렌더링할 때 양식 필드에 대한 유효성 검사 규칙 사용을 제한하는 것이 좋습니다. 일부 유효성 검사 규칙은 HTML 양식에 대해 지원되지 않을 수 있습니다. 예를 들어 MM-DD-YYYY라는 유효성 검사 패턴이 `Date/Time` HTML 양식으로 렌더링되는 양식 디자인에 있는 필드입니다. 날짜를 제대로 입력해도 제대로 작동하지 않습니다. 하지만 이 유효성 검사 패턴은 PDF으로 렌더링된 양식에 대해 제대로 작동합니다.
 
 >[!NOTE]
+>
 Forms 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## 단계 요약 {#summary-of-steps}
@@ -224,9 +227,11 @@ HTML 양식에 HTML 도구 모음이 표시되면 사용자는 양식 데이터�
 양식 데이터가 게시되는 HTTP URL은 Forms 서비스 클라이언트 API를 사용하여 대상 URL을 설정하여 지정하거나 XDP 양식 디자인에 포함된 제출 단추에 지정할 수 있습니다. 대상 URL이 양식 디자인에 지정된 경우 Forms 서비스 클라이언트 API를 사용하여 값을 설정하지 마십시오.
 
 >[!NOTE]
+>
 도구 모음을 사용하여 HTML 양식을 렌더링하는 것은 선택 사항입니다.
 
 >[!NOTE]
+>
 AHTML 양식을 렌더링하는 경우 양식에 도구 모음을 추가하지 않는 것이 좋습니다.
 
 **HTML 양식 렌더링**
@@ -278,6 +283,7 @@ Forms API(Java)를 사용하여 HTML 양식 렌더링:
    * 전체 HTML 태그 내에서 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체 `setOutputType` 방법 및 통과 `OutputType.FullHTMLTags`. (선택적 설정입니다.)
 
    >[!NOTE]
+   >
    다음과 같은 경우 Forms이 HTML에서 성공적으로 렌더링되지 않습니다. `StandAlone` 옵션은 다음과 같습니다. `true` 및 `ApplicationWebRoot` 는 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 참조합니다( `ApplicationWebRoot` 값은 다음을 사용하여 지정됩니다 `URLSpec` 에 전달되는 개체 `FormsServiceClient` 개체 `(Deprecated) renderHTMLForm` 메서드). 다음의 경우 `ApplicationWebRoot` 는 AEM Forms을 호스팅하는 서버의 다른 서버이며, 관리 콘솔의 웹 루트 URI 값을 양식의 웹 애플리케이션 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > Forms 를 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer 로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.
 
 1. HTML 양식 렌더링
@@ -335,6 +341,7 @@ Forms API(웹 서비스)를 사용하여 HTML 양식 렌더링:
    * 전체 HTML 태그 내에서 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체 `setOutputType` 방법 및 통과 `OutputType.FullHTMLTags`.
 
    >[!NOTE]
+   >
    다음과 같은 경우 Forms이 HTML에서 성공적으로 렌더링되지 않습니다. `StandAlone` 옵션은 다음과 같습니다. `true` 및 `ApplicationWebRoot` 는 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 참조합니다( `ApplicationWebRoot` 값은 다음을 사용하여 지정됩니다 `URLSpec` 에 전달되는 개체 `FormsServiceClient` 개체 `(Deprecated) renderHTMLForm` 메서드). 다음의 경우 `ApplicationWebRoot` 는 AEM Forms을 호스팅하는 서버의 다른 서버이며, 관리 콘솔의 웹 루트 URI 값을 양식의 웹 애플리케이션 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > Forms 를 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer 로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.
 
 1. HTML 양식 렌더링

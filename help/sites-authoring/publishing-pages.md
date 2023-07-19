@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1662'
-ht-degree: 65%
+source-wordcount: '1663'
+ht-degree: 75%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 65%
 
 작성 환경에서 콘텐츠를 작성 및 검토한 후 [공개 웹 사이트에서 사용할 수 있도록 설정](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (게시 환경).
 
-이를 페이지 게시라고 합니다. 게시 환경에서 페이지를 제거하려는 경우 게시 취소라고 합니다. 페이지를 게시 및 게시 취소할 때는 삭제할 때까지 추가 변경 사항에 대해 작성 환경에서 사용할 수 있습니다.
+이를 페이지 게시라고도 합니다. 게시 환경에서 페이지를 제거하려는 경우 게시 취소라고 합니다. 게시 및 게시 취소할 때 작성 환경에서 페이지를 삭제할 때까지 계속 변경할 수 있습니다.
 
 페이지를 즉시 또는 미래의 미리 정의된 날짜/시간에 게시/게시 취소할 수도 있습니다.
 
@@ -29,32 +29,30 @@ ht-degree: 65%
 >게시와 관련된 특정 용어는 혼동될 수 있습니다.
 >
 >* **게시/게시 취소**
-   >  이 용어는 콘텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
+>  이 용어는 콘텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
 >
 >* **활성화/비활성화**
-   >  게시/게시 취소와 동의어입니다.
+>  게시/게시 취소와 동의어입니다.
 >
 >* **복제**
-   >  사용자 댓글을 게시하거나 역복제할 때와 같이 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
+>  사용자 댓글을 게시하거나 역복제할 때와 같이 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
 >
-
 
 >[!NOTE]
 >
->특정 페이지를 게시하는 데 필요한 권한이 없는 경우:
+>특정 페이지 게시에 필요한 권한이 없는 경우:
 >
 >* 게시할 요청을 적절한 사람에게 알리도록 워크플로가 트리거됩니다.
 >* 이 [워크플로우가 사용자 지정되었을 수 있습니다.](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) 개발팀별.
 >* 워크플로가 트리거되었음을 알리는 메시지가 짧게 표시됩니다.
 >
 
-
 ## 페이지 게시 {#publishing-pages-1}
 
-위치에 따라 다음을 게시할 수 있습니다.
+다음 위치에 따라 게시할 수 있습니다.
 
 * [페이지 편집기에서](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
-* [사이트 콘솔에서](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
+* [Sites 콘솔에서](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
 
 ### 편집기에서 게시 {#publishing-from-the-editor}
 
@@ -93,14 +91,14 @@ ht-degree: 65%
 
 ### 콘솔에서 게시 {#publishing-from-the-console}
 
-사이트 콘솔에는 두 가지 게시 옵션이 있습니다.
+사이트 콘솔에는 게시에 대한 두 가지 옵션이 있습니다.
 
 * [빠른 게시](/help/sites-authoring/publishing-pages.md#quick-publish)
 * [게시 관리](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### 빠른 게시 {#quick-publish}
 
-**빠른 게시**&#x200B;는 간단한 사례에 해당하며 추가적인 상호 작용 없이 선택한 페이지를 즉시 게시합니다. 이러한 이유로 게시되지 않은 모든 참조도 자동으로 게시됩니다.
+**빠른 게시**&#x200B;는 간단한 사례에 해당하며 추가적인 상호 작용 없이 선택한 페이지를 즉시 게시합니다. 이로 인해 게시되지 않은 참조도 자동으로 게시됩니다.
 
 빠른 게시로 페이지를 게시하려면 다음 작업을 수행하십시오.
 
@@ -112,7 +110,7 @@ ht-degree: 65%
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
-1. 페이지가 게시되면 게시 확인 경고가 표시됩니다.
+1. 페이지가 게시되면 게시를 확인하는 알림이 표시됩니다.
 
 >[!NOTE]
 >
@@ -133,9 +131,9 @@ ht-degree: 65%
    * 선택한 페이지를 게시하거나 게시 취소하도록 선택합니다.
    * 지금 또는 나중에 해당 작업을 수행하도록 선택합니다.
 
-   나중에 게시하면 지정된 시간에 선택한 페이지를 게시하기 위한 워크플로를 시작합니다. 반대로 나중에 게시 취소하면 지정된 시간에 선택한 페이지를 게시 취소하기 위한 워크플로를 시작합니다.
+   나중에 게시하면 지정된 시간에 선택한 페이지를 게시하기 위한 워크플로우를 시작합니다. 반대로 나중에 게시 취소하면 지정된 시간에 선택한 페이지를 게시 취소하기 위한 워크플로우를 시작합니다.
 
-   나중에 게시/게시 취소를 취소하려면 [워크플로 콘솔](/help/sites-administering/workflows.md)로 이동하여 해당 워크플로를 종료합니다.
+   나중에 게시/게시 취소를 취소하려면 [워크플로우 콘솔](/help/sites-administering/workflows.md)로 이동하여 해당 워크플로우를 종료합니다.
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -185,7 +183,7 @@ ht-degree: 65%
 
 1. **게시**&#x200B;를 클릭하여 완료합니다.
 
-   사이트 콘솔로 돌아가면 알림 메시지가 표시되어 게시를 확인합니다.
+   Sites 콘솔로 돌아가면 알림 메시지가 표시되어 게시를 확인합니다.
 
 1. 게시된 페이지가 워크플로우와 연관되어 있으면 게시 마법사의 마지막 **워크플로우** 단계에 표시될 수 있습니다.
 
@@ -193,11 +191,11 @@ ht-degree: 65%
    >
    >**워크플로우** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 다음을 참조하십시오. [이 페이지의 이전 메모](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) 게시 권한에 대해서도 [워크플로우에 대한 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) 을 참조하십시오.
 
-   참조는 트리거된 워크플로 및 지정된 옵션별로 그룹화되어 다음 작업을 수행할 수 있습니다.
+   참조는 트리거된 워크플로우 및 지정된 옵션별로 그룹화되어 다음 작업을 수행할 수 있습니다.
 
-   * 워크플로의 제목을 정의합니다.
+   * 워크플로우의 제목을 정의합니다.
    * 워크플로우에 있는 경우 워크플로우 패키지를 유지합니다. [다중 리소스 지원](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
-   * 워크플로 패키지를 유지하는 옵션이 선택된 경우 워크플로 패키지의 제목을 정의합니다.
+   * 워크플로우 패키지를 유지하는 옵션이 선택된 경우 워크플로우 패키지의 제목을 정의합니다.
 
    **게시** 또는 **나중에 게시**&#x200B;를 클릭하여 게시를 완료할 수 있습니다.
 
@@ -210,11 +208,11 @@ ht-degree: 65%
 [게시와 유사한 방식으로](/help/sites-authoring/publishing-pages.md#publishing-pages) 하나 이상의 페이지에 대한 게시를 취소할 수 있습니다.
 
 * [페이지 편집기에서](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
-* [사이트 콘솔에서](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
+* [Sites 콘솔에서](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
 ### 편집기에서 게시 취소 {#unpublishing-from-the-editor}
 
-페이지를 편집할 때 해당 페이지의 게시를 취소하려면 을 선택합니다 **페이지 게시 취소** 다음에서 **페이지 정보** 메뉴, 원하는 대로 [페이지 게시](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor).
+페이지를 편집할 때 해당 페이지의 게시를 취소하려는 경우 [페이지를 게시](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)한 만큼 **페이지 정보** 메뉴에서 **페이지 게시 취소**&#x200B;를 선택합니다.
 
 >[!NOTE]
 >
@@ -229,9 +227,9 @@ ht-degree: 65%
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
-   나중에 게시를 사용하면 지정된 시간에 이 페이지 버전을 게시하는 워크플로가 시작됩니다. 나중에 비활성화를 사용하면 특정 시간에 선택한 페이지를 게시 취소하는 워크플로가 시작됩니다.
+   나중에 게시를 사용하면 지정된 시간에 이 페이지 버전을 게시하는 워크플로우가 시작됩니다. 나중에 비활성화를 사용하면 특정 시간에 선택한 페이지를 게시 취소하는 워크플로우가 시작됩니다.
 
-   나중에 게시/게시 취소를 취소하려면 [워크플로 콘솔](/help/sites-administering/workflows.md)로 이동하여 해당 워크플로를 종료합니다.
+   나중에 게시/게시 취소를 취소하려면 [워크플로우 콘솔](/help/sites-administering/workflows.md)로 이동하여 해당 워크플로우를 종료합니다.
 
 1. 게시 취소를 완료하려면 다음과 같이 마법사를 계속 사용하십시오 [페이지 게시](/help/sites-authoring/publishing-pages.md#manage-publication).
 
@@ -239,11 +237,11 @@ ht-degree: 65%
 
 동일한 루트 페이지 아래에서 수많은 콘텐츠 페이지를 입력하거나 업데이트한 경우 전체 트리를 한 번에 게시하면 더욱 편리할 수 있습니다.
 
-사이트 콘솔에서 [게시 관리](/help/sites-authoring/publishing-pages.md#manage-publication) 옵션을 사용하여 이 작업을 수행할 수 있습니다.
+Sites 콘솔에서 [게시 관리](/help/sites-authoring/publishing-pages.md#manage-publication) 옵션을 사용하여 이 작업을 수행할 수 있습니다.
 
-1. 사이트 콘솔에서 게시 또는 게시 취소하려는 트리의 루트 페이지를 선택하고 **게시 관리**&#x200B;를 선택합니다.
-1. **게시 관리** 마법사가 시작됩니다. 게시 또는 게시 취소를 선택하고 언제 게시해야 하는지 선택한 다음 **다음** 계속합니다.
-1. 다음에서 **범위** 단계, 루트 페이지를 선택 하 고 선택 **하위 항목 포함**.
+1. Sites 콘솔에서 게시 또는 게시 취소하려는 트리의 루트 페이지를 선택하고 **게시 관리**&#x200B;를 선택합니다.
+1. **게시 관리** 마법사가 시작됩니다. 게시 또는 게시 취소하도록 선택하고 해당 작업이 수행되면 **다음**&#x200B;을 클릭하여 계속 진행합니다.
+1. **범위** 단계에서 루트 페이지를 선택하고 **하위 포함**&#x200B;을 선택합니다.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
@@ -268,16 +266,16 @@ ht-degree: 65%
 
 페이지의 게시 상태를 확인할 수 있습니다.
 
-* [사이트 콘솔의 리소스 개요 정보](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)에서
+* [Sites 콘솔의 리소스 개요 정보](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)에서
 
-   ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
+  ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
 
-   게시 상태는 사이트 콘솔에 [카드](/help/sites-authoring/basic-handling.md#card-view), [열](/help/sites-authoring/basic-handling.md#column-view), [목록](/help/sites-authoring/basic-handling.md#list-view) 보기로 표시됩니다.
+  게시 상태는 Sites 콘솔에 [카드](/help/sites-authoring/basic-handling.md#card-view), [열](/help/sites-authoring/basic-handling.md#column-view), [목록](/help/sites-authoring/basic-handling.md#list-view) 보기로 표시됩니다.
 
 * [타임라인](/help/sites-authoring/basic-handling.md#timeline)에서
 
-   ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
+  ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
 
 * 페이지를 편집할 때 [페이지 정보 메뉴](/help/sites-authoring/author-environment-tools.md#page-information)에서
 
-   ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)
+  ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)

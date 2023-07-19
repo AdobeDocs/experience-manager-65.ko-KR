@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 exl-id: 50785534-5784-4354-b123-5e640b7c0242
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >두 개 이상의 앱에서 사용할 수 있으므로 모델은 앱 외부에 있습니다.
+>
 
 다음을 참조하십시오 **[모델](/help/mobile/administer-mobile-apps.md)** 대시보드 및 저장소에서 모델을 만들고 관리합니다.
 
@@ -65,6 +66,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >모델이 새 모델을 만든 고객과 같이 기존 AEM 콘텐츠에 해당하지 않는 경우 고객이 새 엔티티를 만들 수 있도록 UI가 있습니다.
+>
 
 ### 콘텐츠 모델의 공간 {#spaces-in-content-model}
 

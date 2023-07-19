@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '969'
 ht-degree: 1%
 
 ---
@@ -32,13 +32,13 @@ ht-degree: 1%
 
 Content Services가 제공하는 자료에는 세 가지 주요 유형이 있습니다.
 
-1. **Assets**
+1. **자산**
 1. **패키지된 HTML 컨텐츠(HTML/CSS/JS)**
 1. **채널 독립적인 콘텐츠**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
-## Assets {#assets}
+## 자산 {#assets}
 
 에셋 컬렉션은 다른 컬렉션에 대한 참조를 포함하는 AEM 구문입니다.
 

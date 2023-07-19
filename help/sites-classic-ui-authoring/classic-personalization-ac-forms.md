@@ -8,9 +8,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1227'
 ht-degree: 1%
 
 ---
@@ -50,6 +50,7 @@ Adobe Campaign에 고유한 양식을 만들려면 먼저 AEM 애플리케이션
 >[!NOTE]
 >
 >다음을 확인합니다. **acMapping** 페이지의 속성 **jcr:content** 노드가 (으)로 설정됨 **mapRecipient** 또는 **프로필** Adobe Campaign 6.1.x 또는 Adobe Campaign Standard 사용 시 각각
+>
 
 ### 양식 만들기 {#creating-a-form}
 

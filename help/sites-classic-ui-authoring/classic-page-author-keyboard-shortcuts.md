@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 19%
+source-wordcount: '308'
+ht-degree: 20%
 
 ---
 
@@ -30,7 +30,6 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 >* Windows: 필요한 구성 요소를 Ctrl+클릭합니다.
 >* Mac: 필요한 구성 요소를 Cmd+클릭합니다.
 >
-
 
 ## 키보드 단축키 편집 {#editing-keyboard-shortcuts}
 
@@ -109,7 +108,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-I</code></strong><br /> </td>
-   <td>기울임체<br />을 따르지 않는 경우입니다 </td>
+   <td>기울임체<br /> </td>
   </tr>
   <tr>
    <td> </td>

@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 42%
+source-wordcount: '643'
+ht-degree: 44%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 42%
 
 >[!CAUTION]
 >
->리소스(예: 단락)를 삭제하면 해당 리소스에 첨부된 모든 주석과 스케치가 페이지에서의 위치와 관계없이 모두 삭제됩니다.
+>리소스(예: 단락)를 삭제하면 해당 리소스에 첨부된 주석과 스케치가 페이지에서의 위치와 관계없이 모두 삭제됩니다.
 
 >[!NOTE]
 >
@@ -77,10 +77,10 @@ ht-degree: 42%
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
-   여기에서 적절한 필드 및/또는 아이콘을 사용하여 다음을 수행할 수 있습니다.
+   이 대화 상자에서는 적절한 필드 및/또는 아이콘을 사용하여 다음 작업을 할 수 있습니다.
 
    * 주석 텍스트를 입력합니다.
-   * 스케치(선과 모양)를 만들어 구성 요소 영역 강조 표시
+   * 스케치(선과 모양)를 만들어 구성 요소 영역을 강조 표시합니다.
 
      스케치를 생성할 때 커서는 크로스와이어로 변경됩니다. 서로 구분되는 여러 선을 그릴 수 있습니다. 스케치 선은 주석 색상을 반영하며 화살표, 원 또는 타원 중 하나일 수 있습니다.
 

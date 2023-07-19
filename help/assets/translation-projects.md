@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 18%
+source-wordcount: '1870'
+ht-degree: 16%
 
 ---
 
@@ -24,7 +24,6 @@ ht-degree: 18%
 >
 >* 번역 프로젝트를 만드는 사용자는 그룹의 구성원입니다 `projects-administrators`.
 >* 번역 서비스 공급업체는 바이너리 번역을 지원합니다.
-
 
 ## 워크플로우 만들기 및 번역 {#create-and-translate-workflow}
 
@@ -67,7 +66,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 1. 클릭 **[!UICONTROL 만들기 및 번역]** 맨 아래에
 
-1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
+1. 다음에서 **[!UICONTROL Target 언어]** 폴더 구조를 만들 언어를 선택합니다.
 
 1. 다음에서 **[!UICONTROL 프로젝트]** 목록, 선택 **[!UICONTROL 새 번역 프로젝트 만들기]**.
 
@@ -118,7 +117,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 1. 클릭 **[!UICONTROL 언어 복사]** 아래에 **[!UICONTROL 사본]**. A list of available translation copies is displayed.
 1. 클릭 **[!UICONTROL 만들기 및 번역]** 맨 아래에
 
-1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
+1. 다음에서 **[!UICONTROL Target 언어]** 폴더 구조를 만들 언어를 선택합니다.
 
 1. From the **[!UICONTROL Project]** list, select **[!UICONTROL Add to existing translation project]** to run the translation workflow on the folder.
 
@@ -137,7 +136,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
    ![chlimage_1-80](assets/chlimage_1-80.png)
 
-1. 아래쪽의 생략 부호를 클릭합니다. **번역 작업** 타일을 사용하여 번역 워크플로우에서 에셋을 볼 수 있습니다. 번역 작업 목록에는 에셋 메타데이터와 태그에 대한 항목도 표시됩니다. 이 항목들은 에셋의 메타데이터와 태그도 번역됨을 나타냅니다.
+1. 아래쪽의 생략 부호를 클릭합니다. **번역 작업** 타일을 사용하여 번역 워크플로우에서 에셋을 볼 수 있습니다. 번역 작업 목록에는 자산 메타데이터와 태그에 대한 항목도 표시됩니다. 이 항목들은 자산의 메타데이터와 태그도 번역됨을 나타냅니다.
 
    >[!NOTE]
    >

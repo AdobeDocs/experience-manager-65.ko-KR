@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1357'
 ht-degree: 1%
 
 ---
@@ -27,14 +27,14 @@ AEM은 페이지 작성 기능 및 [콘솔](/help/sites-developing/customizing-c
 
 * Clientlibs
 
-   Clientlib을 사용하면 기본 구현을 확장하여 새로운 기능을 구현하는 동시에 표준 함수, 개체 및 메서드를 재사용할 수 있습니다. 를 사용자 지정할 때 `/apps.` 새 clientlib은 다음 작업을 수행해야 합니다.
+  Clientlib을 사용하면 기본 구현을 확장하여 새로운 기능을 구현하는 동시에 표준 함수, 개체 및 메서드를 재사용할 수 있습니다. 를 사용자 지정할 때 `/apps.` 새 clientlib은 다음 작업을 수행해야 합니다.
 
    * authoring clientlib에 따라 다름 `cq.authoring.editor.sites.page`
    * 적절한 것의 일부가 되다 `cq.authoring.editor.sites.page.hook` 범주
 
 * 오버레이
 
-   오버레이는 노드 정의를 기반으로 하며, 를 사용하여 표준 기능을 오버레이할 수 있습니다. `/libs`)를 사용하십시오(에서). `/apps`). 오버레이를 만들 때 다음과 같이 원본의 1:1 사본이 필요하지 않습니다. [sling 리소스 병합](/help/sites-developing/sling-resource-merger.md) 상속을 허용합니다.
+  오버레이는 노드 정의를 기반으로 하며, 를 사용하여 표준 기능을 오버레이할 수 있습니다. `/libs`)를 사용하십시오(에서). `/apps`). 오버레이를 만들 때 다음과 같이 원본의 1:1 사본이 필요하지 않습니다. [sling 리소스 병합](/help/sites-developing/sling-resource-merger.md) 상속을 허용합니다.
 
 >[!NOTE]
 >
@@ -53,7 +53,6 @@ AEM은 페이지 작성 기능 및 [콘솔](/help/sites-developing/customizing-c
 >
 
 
-
 >[!CAUTION]
 >
 >본인 ***필수*** 의 아무 것도 변경하지 마십시오. `/libs` 경로.
@@ -64,7 +63,6 @@ AEM은 페이지 작성 기능 및 [콘솔](/help/sites-developing/customizing-c
 >
 >1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
 >1. 다음 범위 내에서 변경 `/apps`
-
 
 ## 새 레이어 추가(모드) {#add-new-layer-mode}
 
@@ -152,14 +150,14 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
    * `cq:inplaceEditing`
 
-      예:
+     예:
 
       * `/libs/foundation/components/text/cq:editConfig`
       * `/libs/foundation/components/image/cq:editConfig`
 
          * 속성: `editorType`
 
-            해당 구성 요소에 대해 즉석 편집이 트리거될 때 사용할 인라인 편집기 유형을 정의합니다. 예: `text`, `textimage`, `image`, `title`.
+           해당 구성 요소에 대해 즉석 편집이 트리거될 때 사용할 인라인 편집기 유형을 정의합니다. 예: `text`, `textimage`, `image`, `title`.
 
 1. 편집기의 추가 구성 세부 정보는 `config` 구성은 물론 추가 구성이 포함된 노드 `plugin` 필요한 플러그인 구성 세부 정보를 포함할 노드입니다.
 
@@ -260,4 +258,4 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
 1. 업데이트 [워크플로 모델](/help/sites-developing/workflows-models.md) 필요에 따라 관련 구성/스크립트를 작성합니다.
-1. 에 대한 권한 제거 [ `replicate` 작업](/help/sites-administering/security.md#actions) 모든 관련 페이지에 대한 모든 적절한 사용자로부터; 모든 사용자가 페이지를 게시(또는 복제)하려고 할 때 이 워크플로가 기본 작업으로 트리거되도록 하기 위한 것입니다.
+1. 에 대한 권한 제거 [`replicate` 작업](/help/sites-administering/security.md#actions) 모든 관련 페이지에 대한 모든 적절한 사용자로부터; 모든 사용자가 페이지를 게시(또는 복제)하려고 할 때 이 워크플로가 기본 작업으로 트리거되도록 하기 위한 것입니다.

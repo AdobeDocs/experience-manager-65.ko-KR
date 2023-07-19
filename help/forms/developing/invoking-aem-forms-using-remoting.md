@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4599'
+source-wordcount: '4597'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Remoting을 사용하여 AEM Forms 프로세스를 프로그래밍 방식으로 
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-   여기서 &lt;*install_directory*> 는 AEM Forms이 설치된 디렉토리입니다.
+  여기서 &lt;*install_directory*> 는 AEM Forms이 설치된 디렉토리입니다.
 
 **추가 참조**
 
@@ -133,6 +133,7 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 * 문서가 서버에 없는 경우 원격 업로드 서블릿을 사용하여 문서를 AEM Forms에 업로드합니다. AEM Forms의 새로운 기능은 보안 문서를 업로드하는 기능입니다. 보안 문서를 업로드할 때 다음 권한이 있는 사용자를 사용해야 합니다. *문서 업로드 애플리케이션 사용자* 역할. 이 역할이 없으면 사용자는 보안 문서를 업로드할 수 없습니다. 단일 사인온을 사용하여 보안 문서를 업로드하는 것이 좋습니다. (참조: [원격을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 >[!NOTE]
+>
 AEM Forms이 비보안 문서 업로드를 허용하도록 구성된 경우 문서 업로드 애플리케이션 사용자 역할이 없는 사용자를 사용하여 문서를 업로드할 수 있습니다. 사용자는 문서 업로드 권한도 보유할 수 있습니다. 그러나 AEM Forms이 보안 문서만 허용하도록 구성된 경우 사용자에게 문서 업로드 애플리케이션 사용자 역할 또는 문서 업로드 권한이 있는지 확인하십시오. (참조: [보안 및 비보안 문서를 수락하도록 AEM Forms 구성](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
 지정된 Flash URL에 대해 표준 업로드 업로드 기능을 사용합니다. `https://SERVER:PORT/remoting/lcfileupload`. 그런 다음 를 사용할 수 있습니다. `DocumentReference` 형식의 입력 매개 변수가 있는 모든 위치에 개체 `Document` 이(가) 필요합니다.
@@ -197,6 +198,7 @@ Flex으로 빌드된 응용 프로그램에서 AEM Forms 프로세스를 호출�
 1. 반환 값을 처리합니다.
 
 >[!NOTE]
+>
 이 섹션에서는 AEM Forms이 비보안 문서를 업로드하도록 구성된 경우 AEM Forms 프로세스를 호출하고 문서를 업로드하는 방법에 대해 설명합니다. AEM Forms 프로세스를 호출하고 보안 문서를 업로드하는 방법과 AEM Forms에서 보안 및 비보안 문서를 허용하도록 구성하는 방법에 대한 자세한 내용은 을 참조하십시오. [원격을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
 **mx:RemoteObject 인스턴스 만들기**
@@ -302,6 +304,7 @@ AEM Forms User Manager에서는 중앙 로그인 서비스를 통한 AEM Forms S
 사용자 지정 인증의 경우 서버에서 클라이언트에 오류를 보내 인증이 필요함을 나타냅니다.
 
 >[!NOTE]
+>
 HTTP 토큰을 사용하여 인증을 수행하는 방법에 대한 자세한 내용은 [HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
 
 ### 사용자 지정 인증 사용 {#using-custom-authentication}
@@ -309,6 +312,7 @@ HTTP 토큰을 사용하여 인증을 수행하는 방법에 대한 자세한 �
 원격 끝점에서 인증 방법을 기본에서 사용자 지정으로 변경하여 관리 콘솔에서 사용자 지정 인증을 사용하도록 설정합니다. 사용자 지정 인증을 사용하는 경우 클라이언트 응용 프로그램에서 `ChannelSet.login` 로그인 방법 및 `ChannelSet.logout` 로그아웃할 방법입니다.
 
 >[!NOTE]
+>
 이전 AEM Forms 릴리스에서는 를 호출하여 대상에 자격 증명을 보냈습니다. `RemoteObject.setCredentials` 메서드를 사용합니다. 다음 `setCredentials` 구성 요소가 서버에 연결을 처음 시도할 때까지 메서드가 실제로 자격 증명을 서버에 전달하지 않았습니다. 따라서 구성 요소에서 오류 이벤트를 발생시킨 경우 인증 오류 또는 다른 이유로 오류가 발생했는지 확인할 수 없습니다. 다음 `ChannelSet.login` 메서드를 호출하면 서버가 연결되므로 인증 문제를 즉시 처리할 수 있습니다. 를 계속 사용할 수 있지만 `setCredentials` 메서드를 사용하려면 다음을 사용하는 것이 좋습니다. `ChannelSet.login` 메서드를 사용합니다.
 
 여러 대상이 동일한 채널과 해당 ChannelSet 개체를 사용할 수 있으므로 한 대상에 로그인하면 동일한 채널을 사용하는 다른 대상에 사용자가 로그인됩니다. 두 구성 요소가 동일한 ChannelSet 객체에 서로 다른 자격 증명을 적용하는 경우 마지막으로 적용된 자격 증명이 사용됩니다. 여러 구성 요소가 동일한 인증된 ChannelSet 개체를 사용하는 경우 `logout` 메서드는 대상에서 모든 구성 요소를 기록합니다.
@@ -454,6 +458,7 @@ AEM Forms 개발자는 클라이언트 응용 프로그램을 작성하여 양�
 (AEM Forms에서 더 이상 사용되지 않는) AEM Forms 원격을 사용하여 AEM Forms 서비스가 호출되면 클라이언트 애플리케이션이 요청의 일부로 인증 쿠키를 전달합니다. 사용자가 이미 인증했으므로 클라이언트 애플리케이션에서 AEM Forms 서비스에 연결하는 데 추가 로그인이 필요하지 않습니다.
 
 >[!NOTE]
+>
 쿠키가 잘못되었거나 누락된 경우 로그인 페이지로 암시적으로 리디렉션되지 않습니다. 따라서 익명 서비스를 호출할 수 있습니다.
 
 스스로 로그인하고 로그아웃하는 클라이언트 애플리케이션을 작성하여 AEM Forms Single Sign-On 메커니즘을 우회할 수 있습니다. SSO(Single Sign-On) 메커니즘을 무시하는 경우 응용 프로그램에 기본 인증 또는 사용자 지정 인증을 사용할 수 있습니다.
@@ -548,6 +553,7 @@ Flex으로 빌드된 클라이언트 애플리케이션을 시작하고 중앙 �
 보안 문서를 전달할 때 SSO(Single Sign-On)를 사용하고 다음을 보유한 AEM Forms 사용자를 지정하십시오. *문서 업로드 애플리케이션 사용자* 역할. 이 역할이 없으면 사용자는 보안 문서를 업로드할 수 없습니다. 프로그래밍 방식으로 사용자에게 역할을 할당할 수 있습니다. (참조: [역할 및 권한 관리](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
+>
 새 역할을 만들 때 해당 역할의 멤버가 보안 문서를 업로드하도록 하려면 문서 업로드 권한을 지정해야 합니다.
 
 AEM Forms은 다음 작업을 지원합니다. `getFileUploadToken` : 업로드 서블릿에 전달되는 토큰을 반환합니다. 다음 `DocumentReference.constructRequestForUpload` 메서드에는 AEM Forms에 대한 URL과 다음에 의해 반환된 토큰이 필요합니다. `LC.FileUploadAuthenticator.getFileUploadToken` 메서드를 사용합니다. 이 메서드는 `URLRequest` 업로드 서블릿에 대한 호출에 사용되는 개체입니다. 다음 코드는 이 애플리케이션 논리를 보여 줍니다.
@@ -616,6 +622,7 @@ AEM Forms은 다음 작업을 지원합니다. `getFileUploadToken` : 업로드 
 1. Flex 애플리케이션에서 보안되지 않은 문서 업로드 허용 옵션이 선택 해제되어 있는지 확인합니다.
 
 >[!NOTE]
+>
 비보안 문서를 허용하도록 AEM Forms을 구성하려면 Flex 애플리케이션에서 비보안 문서 업로드 허용 옵션을 선택합니다. 그런 다음 응용 프로그램 또는 서비스를 다시 시작하여 설정이 적용되도록 합니다.
 
 ### 빠른 시작: 원격을 사용하여 보안 문서를 전달하여 단기 프로세스 호출 {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
@@ -969,6 +976,7 @@ AEM Forms 복합 유형의 정규화된 데이터 유형이 별칭 태그에 할
 ActionScript 클래스의 필드는 AEM Forms 복합 유형에 속하는 필드와 일치합니다. 고객 ActionScript 클래스에 있는 6개의 필드는 이 속한 필드와 일치합니다. `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
+>
 Forms 복합 유형에 속하는 필드 이름을 확인하는 좋은 방법은 웹 브라우저에서 서비스의 WSDL을 보는 것입니다. WSDL은 서비스의 복합 형식과 해당 데이터 멤버를 지정합니다. 다음 WSDL은 고객 서비스에 사용됩니다. `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 고객 ActionScript 클래스는 customer라는 패키지에 속합니다. 복잡한 AEM Forms 데이터 유형에 매핑되는 모든 ActionScript 클래스를 자체 패키지에 배치하는 것이 좋습니다. 다음 그림과 같이 Flex 프로젝트의 src 폴더에 폴더를 만들고 해당 폴더에 ActionScript 파일을 저장합니다.
@@ -980,6 +988,7 @@ Forms 복합 유형에 속하는 필드 이름을 확인하는 좋은 방법은 
 다음 코드 예제에서는 고객 서비스를 호출하고 고객을 만듭니다. 이 코드 예제를 실행할 때는 모든 텍스트 상자를 작성해야 합니다. 또한 로 매핑되는 Customer.as 파일을 만들어야 합니다 `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
+>
 이 빠른 시작을 실행하려면 먼저 Bank 사용자 지정 구성 요소를 만들고 배포해야 합니다.
 
 ```java

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '547'
 ht-degree: 15%
 
 ---
@@ -26,11 +26,11 @@ SPA 작성 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을
 
 >[!NOTE]
 >
->SPA 편집기는 SPA 프레임워크 기반 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
+>SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
 ## 소개 {#introduction}
 
-AEM에서 필요로 하고 SPA과 SPA 편집기 간에 설정된 간단하고 가벼운 계약 덕분에 기존 Javascript 애플리케이션을 AEM에서 SPA에 사용하도록 채택하는 것은 간단한 일입니다.
+AEM에서 필요로 하고 SPA과 SPA 편집기 간에 설정되는 간단하고 가벼운 계약 덕분에 기존 JavaScript 애플리케이션을 AEM에서 SPA에 사용하도록 채택하는 것은 간단한 일입니다.
 
 이 문서에서는 We.Retail 저널 샘플 SPA에 있는 날씨 구성 요소의 예를 보여줍니다.
 

@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 내에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 Adobe Experience Manager 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2440'
 ht-degree: 1%
 
 ---
@@ -343,7 +343,7 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 1. SPA 라우팅 내에 도우미를 추가합니다.
 
-   * 새로 만든 페이지는 아직 AEM에서 예상되는 콘텐츠를 렌더링하지 않습니다. 이는 라우터에 다음 경로가 필요하기 때문입니다. `/test` 반면 AEM 활성 경로는 `/wknd-spa-react/us/en/test`. URL의 AEM 관련 부분을 수용하려면 SPA 측에 몇 가지 도우미를 추가해야 합니다.
+   * 새로 만든 페이지는 아직 AEM의 예상 콘텐츠를 렌더링하지 않습니다. 이는 라우터에 다음 경로가 필요하기 때문입니다. `/test` 반면 AEM 활성 경로는 `/wknd-spa-react/us/en/test`. URL의 AEM 관련 부분을 수용하려면 SPA 측에 몇 가지 도우미를 추가해야 합니다.
 
    ![라우팅 도우미](assets/external-spa-router-helper.png)
 

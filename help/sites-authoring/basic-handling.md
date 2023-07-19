@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '3024'
+source-wordcount: '3025'
 ht-degree: 83%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 83%
 >* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-authoring/keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
 >
 
-## 시작하기 {#getting-started}
+## 시작 {#getting-started}
 
 ### 터치 지원 UI {#a-touch-enabled-ui}
 
@@ -154,7 +154,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
   [단축키](/help/sites-authoring/keyboard-shortcuts.md) `/`(슬래시)를 사용하여 모든 콘솔에서 검색을 호출할 수도 있습니다.
 
-* [솔루션](https://www.adobe.com/kr/experience-cloud.html)
+* [솔루션](https://www.adobe.com/experience-cloud.html)
 
   ![솔루션](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -269,7 +269,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ## 작업 도구 모음 {#actions-toolbar}
 
-리소스를 선택하면(예: 페이지 또는 에셋) 도구 모음에 설명 텍스트가 있는 아이콘으로 다양한 작업이 표시됩니다. 이러한 작업은 다음 항목에 따라 달라집니다.
+리소스를 선택하면(예: 페이지 또는 자산) 도구 모음에 설명 텍스트가 있는 아이콘으로 다양한 작업이 표시됩니다. 이러한 작업은 다음 항목에 따라 달라집니다.
 
 * 현재 콘솔.
 * 현재 컨텍스트.
@@ -291,7 +291,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 [카드 보기](#cardviewquickactions)에서는 특정 작업을 빠른 작업 아이콘으로 사용할 수 있을 뿐 아니라 도구 모음에 표시할 수도 있습니다. 빠른 작업 아이콘은 한 번에 단일 항목에 사용할 수 있으며 사전 선택할 필요가 없습니다.
 
-빠른 작업은(데스크탑 디바이스) 리소스 카드 위에 마우스를 올려 놓으면 표시됩니다. 사용 가능한 빠른 작업은 콘솔 및 컨텍스트에 따라 달라질 수 있습니다. 예를 들어 **사이트** 콘솔에서 페이지에 대한 빠른 작업은 다음과 같습니다.
+빠른 작업은(데스크탑 장치) 리소스 카드 위에 마우스를 올려 놓으면 표시됩니다. 사용 가능한 빠른 작업은 콘솔 및 컨텍스트에 따라 달라질 수 있습니다. 예를 들어 **사이트** 콘솔에서 페이지에 대한 빠른 작업은 다음과 같습니다.
 
 ![빠른 작업](assets/bh-13.png)
 
@@ -312,7 +312,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ### 리소스 선택 {#selecting-resources}
 
-특정 리소스를 선택하는 방법은 보기 및 디바이스 조합에 따라 다릅니다.
+특정 리소스를 선택하는 방법은 보기 및 장치 조합에 따라 다릅니다.
 
 <table>
  <tbody>
@@ -477,10 +477,10 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
    * **수정됨** - 마지막 수정 일자 및 수정자
    * **게시됨** - 게시 상태
    * **템플릿** - 페이지의 기반이 되는 템플릿
-   * **워크플로** - 페이지에 현재 적용된 워크플로입니다. 마우스오버로 또는 타임라인을 열면 더 많은 정보를 사용할 수 있습니다.
+   * **워크플로우** - 페이지에 현재 적용된 워크플로우입니다. 마우스오버로 또는 타임라인을 열면 더 많은 정보를 사용할 수 있습니다.
 
    * **페이지 분석**
-   * **고유 방문자 수**
+   * **고유 방문자**
    * **페이지 시간**
 
   ![설정 보기 - 열 구성](assets/bh-21.png)
@@ -548,7 +548,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
       * 활동
       * [론치](/help/sites-authoring/launches.md)
       * [버전](/help/sites-authoring/working-with-page-versions.md)
-      * [워크플로](/help/sites-authoring/workflows-applying.md)
+      * [워크플로우](/help/sites-authoring/workflows-applying.md)
 
          * 내역 정보가 저장되지 않는 [임시 워크플로우](/help/sites-developing/workflows.md#transient-workflows) 제외
 
@@ -556,7 +556,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 * [선택한 항목에 대한 댓글 추가/보기](#timelineaddingandviewingcomments) 이벤트 목록 맨 아래쪽에 **주석** 상자가 표시됩니다. 댓글을 입력(입력 후 Return 키)하면 댓글이 등록되고 이 댓글은 **댓글** 또는 **모두 표시**&#x200B;를 선택하면 표시됩니다.
 
-* 특정 콘솔에는 추가 기능이 있습니다. 예를 들면 [사이트 콘솔]에서 다음과 같은 작업을 수행할 수 있습니다.
+* 특정 콘솔에는 추가 기능이 있습니다. 예를 들면 [Sites 콘솔]에서 다음과 같은 작업을 수행할 수 있습니다.
 
    * [버전 저장](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [워크플로우 시작](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).

@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2080'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->SPA 편집기는 SPA 프레임워크 기반 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
+>SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
 ## 소개 {#introduction}
 
@@ -61,7 +61,7 @@ NPM 패키지 보기 [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/p
 
 #### 구성 요소 매핑을 위한 동적 모델 {#dynamic-model-to-component-mapping}
 
-AEM용 Javascript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 발생하는 방법에 대한 자세한 내용은 문서 를 참조하십시오 [SPA용 동적 모델과 구성 요소 간 매핑](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+AEM용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 발생하는 방법에 대한 자세한 내용은 문서 를 참조하십시오 [SPA용 동적 모델과 구성 요소 간 매핑](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### 프레임워크별 계층 {#framework-specific-layer}
 
@@ -185,7 +185,6 @@ SPA 구성 요소는 반응형 그리드 등의 그래픽 컨테이너에 매핑
 >* `"aem-Grid-newComponent"`: 레이아웃 작성을 위한 구성 요소를 표준화합니다.
 >
 
-
 #### 구성 요소 매핑 {#component-mapping}
 
 기본 [`Component Mapping`](/help/sites-developing/spa-blueprint.md#componentmapping) 라이브러리 및 해당 `MapTo` 현재 구성 요소 클래스와 함께 제공되는 편집 구성과 관련된 기능을 제공하도록 기능을 캡슐화하고 확장할 수 있습니다.
@@ -272,7 +271,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 앱은 라우팅을 소유합니다. 프론트엔드 개발자는 먼저 탐색 구성 요소(AEM 탐색 구성 요소에 매핑됨)를 구현해야 합니다. 이 구성 요소는 콘텐츠 조각을 표시하거나 숨기는 일련의 경로와 함께 사용할 URL 링크를 렌더링합니다.
 
-기본 [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) 라이브러리 및 해당 ` [ModelRouter](/help/sites-developing/spa-routing.md)` 모듈(기본적으로 활성화됨)은 주어진 리소스 경로와 연관된 모델을 미리 가져오고 액세스 권한을 제공합니다.
+기본 [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) 라이브러리 및 해당 ` [ModelRouter](/help/sites-developing/spa-routing.md)` 모듈(기본적으로 활성화됨)은 주어진 리소스 경로와 연관된 모델을 미리 가져오고 액세스 권한을 제공합니다.
 
 두 엔티티는 경로설정 개념과 관련이 있지만 ` [ModelRouter](/help/sites-developing/spa-routing.md)` 은(는) 다음을 보유하는 것에 대해서만 책임이 있습니다. ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` 현재 애플리케이션 상태와 동기화되는 구조화된 데이터 모델이 로드됩니다.
 

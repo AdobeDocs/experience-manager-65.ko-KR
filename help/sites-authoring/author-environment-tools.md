@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2245'
 ht-degree: 80%
 
 ---
@@ -61,13 +61,13 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 사이드 패널을 열 때는(왼쪽에서) 밀어서 열게 됩니다. 필요한 경우 **구성 요소** 탭을 선택하고 연 후에는 페이지에 대해 사용 가능한 모든 구성 요소를 찾아볼 수 있습니다.
 
-실제 모양 및 처리는 사용하는 디바이스 유형에 따라 달라집니다.
+실제 모양 및 처리는 사용하는 장치 유형에 따라 달라집니다.
 
 >[!NOTE]
 >
->폭이 1024px 미만이면 모바일 디바이스가 검색됩니다. 소형 데스크탑 창에 해당할 수도 있습니다.
+>폭이 1024px 미만이면 모바일 장치가 검색됩니다. 소형 데스크탑 창에 해당할 수도 있습니다.
 
-* **모바일 디바이스(예: iPad)**
+* **모바일 장치(예: iPad)**
 
   구성 요소 브라우저는 편집되는 페이지를 완전히 포함합니다.
 
@@ -75,7 +75,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
   ![ateat-04](assets/ateat-04.png)
 
-* **데스크탑 디바이스**
+* **데스크탑 장치**
 
   창의 왼쪽에 구성 요소 브라우저가 열립니다.
 
@@ -142,7 +142,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
    * 특정 자산 유형에만 사용할 수 있음
 
-실제 모양 및 처리는 사용하는 디바이스 유형에 따라 달라집니다.
+실제 모양 및 처리는 사용하는 장치 유형에 따라 달라집니다.
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
   ![ateat-09](assets/ateat-09.png)
 
-* **데스크탑 디바이스**
+* **데스크탑 장치**
 
   창의 왼쪽에 자산 브라우저가 열립니다.
 
@@ -190,7 +190,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 >[!NOTE]
 >
->모바일 디바이스(브라우저 폭이 1024px 미만인 경우)에서 페이지를 편집하는 경우, 콘텐츠 트리를 사용할 수 없습니다.
+>모바일 장치(브라우저 폭이 1024px 미만인 경우)에서 페이지를 편집하는 경우, 콘텐츠 트리를 사용할 수 없습니다.
 
 [구성 요소]를 클릭하면 페이지 편집기에서 구성 요소가 강조 표시됩니다. 사용 가능한 작업은 페이지 상태에 따라 다릅니다.
 
@@ -252,7 +252,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ## 이벤트 - 타임라인 {#events-timeline}
 
-해당 리소스(예: **사이트** 콘솔의 페이지 또는 **에셋**&#x200B;콘솔의 에셋)에 대해 타임라인을 사용하여 [선택한 항목에 대한 최근 활동을 표시할 수 있습니다](/help/sites-authoring/basic-handling.md#timeline).
+해당 리소스(예: **사이트** 콘솔의 페이지 또는 **자산**&#x200B;콘솔의 자산)에 대해 타임라인을 사용하여 [선택한 항목에 대한 최근 활동을 표시할 수 있습니다](/help/sites-authoring/basic-handling.md#timeline).
 
 필수 콘솔을 연 다음 필수 리소스로 이동하고 다음을 사용하여 **타임라인**&#x200B;을 엽니다.
 
@@ -270,7 +270,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 * [속성 열기](/help/sites-authoring/editing-page-properties.md)
 * [페이지 롤아웃](/help/sites-administering/msm.md#msm-from-the-ui)
-* [워크플로 시작](/help/sites-authoring/workflows-applying.md#starting-a-workflow-from-the-page-editor)
+* [워크플로우 시작](/help/sites-authoring/workflows-applying.md#starting-a-workflow-from-the-page-editor)
 * [페이지 잠금](/help/sites-authoring/editing-content.md#locking-a-page)
 * [페이지 게시](/help/sites-authoring/publishing-pages.md#main-pars-title-10)
 * [페이지 게시 취소](/help/sites-authoring/publishing-pages.md#main-pars-title-5)
@@ -292,7 +292,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 여러 작업을 허용하는 페이지를 편집할 때는 다음과 같은 다양한 모드가 있습니다.
 
 * [편집](/help/sites-authoring/editing-content.md) - 페이지 콘텐츠를 편집할 때 사용할 모드
-* [레이아웃](/help/sites-authoring/responsive-layout.md) - 디바이스에 따라 응답형 레이아웃을 만들고 편집할 수 있도록 허용(페이지가 레이아웃 컨테이너를 기반으로 하는 경우)
+* [레이아웃](/help/sites-authoring/responsive-layout.md) - 장치에 따라 응답형 레이아웃을 만들고 편집할 수 있도록 허용(페이지가 레이아웃 컨테이너를 기반으로 하는 경우)
 
 * [스캐폴딩](/help/sites-authoring/scaffolding.md) - 구조가 동일하지만 내용이 다른 대규모 페이지 세트를 만들 수 있습니다.
 * [개발자](/help/sites-developing/developer-mode.md) - 다양한 작업을 수행할 수 있습니다(권한 필요). 페이지 및 해당 구성 요소의 기술 세부 사항 검사가 포함됩니다.
@@ -316,7 +316,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 >
 >* 페이지의 특성에 따라 사용 가능한 일부 모드를 사용할 수 없습니다.
 >* 일부 모드에 액세스하려면 적절한 권한이 필요합니다.
->* 공간 제약으로 인해 [개발자 모드]는 모바일 디바이스에서 사용할 수 없습니다.
+>* 공간 제약으로 인해 [개발자 모드]는 모바일 장치에서 사용할 수 없습니다.
 >* [키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)(`Ctrl-Shift-M`)를 사용하여 **미리보기**&#x200B;와 현재 선택한 모드(예: **편집**, **레이아웃** 등) 간에 전환합니다.
 >
 
@@ -340,12 +340,12 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ### 경로 브라우저 {#path-browser}
 
-경로 브라우저는 [사이트 콘솔]의 [열 보기](/help/sites-authoring/basic-handling.md#column-view)와 같이 구성되어 리소스에 대한 상세한 선택 항목을 확인할 수 있습니다.
+경로 브라우저는 [Sites 콘솔]의 [열 보기](/help/sites-authoring/basic-handling.md#column-view)와 같이 구성되어 리소스에 대한 상세한 선택 항목을 확인할 수 있습니다.
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* 리소스를 선택하면 대화 상자의 오른쪽 상단에 **선택** 버튼이 활성화됩니다. 클릭하거나 탭하여 선택 사항을 확인하거나 **취소**&#x200B;를 선택하여 중단할 수 있습니다.
-* If the context allows for the selection of multiple resources, selecting a resource also activates the **Select** button, but also adds a count of the number of selected resources to the upper-right of the window. Click the **X** next to the number to deselect all.
+* 리소스를 선택하면 대화 상자의 오른쪽 상단에 **선택** 버튼이 활성화됩니다. 클릭하거나 탭하여 옵션을 확인하거나 **취소**&#x200B;를 선택하여 중단할 수 있습니다.
+* 컨텍스트에서 여러 리소스를 선택할 수 있는 경우, 리소스를 선택하면 **선택** 버튼이 활성화되지만, 선택한 리소스 수도 창의 오른쪽 상단에 추가됩니다. 번호 옆에 있는 **X**&#x200B;를 클릭하여 모두 선택 취소합니다.
 * 트리를 탐색할 때 위치는 대화 상자 상단의 이동 경로에 반영됩니다. 이러한 이동 경로를 사용하여 리소스 계층 구조 내에서 빠르게 이동할 수도 있습니다.
 * 언제든지 대화 상자 상단의 검색 필드를 사용할 수 있습니다. 검색을 지우려면 검색 필드에서 **X**&#x200B;를 클릭합니다.
 * 검색 범위를 좁히려면 필터 옵션을 표시하고 특정 경로에 따라 결과를 필터링할 수 있습니다.

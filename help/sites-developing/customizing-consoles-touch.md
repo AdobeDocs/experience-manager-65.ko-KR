@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '671'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,6 @@ AEM은 콘솔(및 [페이지 작성 기능](/help/sites-developing/customizing-p
 >
 
 
-
 >[!CAUTION]
 >
 >본인 ***필수*** 의 아무 것도 변경하지 마십시오. `/libs` 경로.
@@ -54,9 +53,7 @@ AEM은 콘솔(및 [페이지 작성 기능](/help/sites-developing/customizing-p
 >1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
 >
 >1. 다음 범위 내에서 변경 `/apps`
-
 >
-
 
 예를 들어 다음 위치 `/libs` 구조를 오버레이할 수 있습니다.
 
@@ -142,17 +139,18 @@ AEM은 콘솔(및 [페이지 작성 기능](/help/sites-developing/customizing-p
 
    * 노드에서 다음을 수행합니다.
 
-      ```
-             /apps/wcm/core/content/common/availablecolumns
-      ```
+     ```
+            /apps/wcm/core/content/common/availablecolumns
+     ```
 
    * 새 열을 추가하거나 기존 열을 제거합니다.
+
    다음을 참조하십시오 [오버레이(및 Sling 리소스 병합) 사용](/help/sites-developing/overlays.md) 추가 정보.
 
 1. 선택적으로:
 
    * 추가 데이터를 연결하려면 [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) 포함
-      `pageInfoProviderType` 속성.
+     `pageInfoProviderType` 속성.
 
    예를 들어 아래 (GitHub에서) 첨부된 클래스/번들을 참조하십시오.
 

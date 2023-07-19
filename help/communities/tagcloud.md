@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '557'
 ht-degree: 8%
 
 ---
@@ -57,19 +57,19 @@ ht-degree: 8%
    * `From page and child pages`
    * `All tags`
 
-   기본값은 입니다 `From page and child pages`, 여기서 &quot;페이지&quot;는 **페이지** 을(를) 아래에 설정합니다.
+  기본값은 입니다 `From page and child pages`, 여기서 &quot;페이지&quot;는 **페이지** 을(를) 아래에 설정합니다.
 
 * **[!UICONTROL 페이지]**
 
-   (그렇지 않은 경우 필수) `All tags)` 페이지의 UGC 경로. 기본값은 비워 두면 현재 페이지입니다.
+  (그렇지 않은 경우 필수) `All tags)` 페이지의 UGC 경로. 기본값은 비워 두면 현재 페이지입니다.
 
 * **[!UICONTROL 태그에 링크 없음]**
 
-   선택하면 태그가 태그 클라우드에 일반 텍스트로 표시됩니다. 선택하지 않으면 태그는 해당 태그가 적용되는 모든 콘텐츠를 검색하는 활성 링크로 표시됩니다. 기본값은 선택 취소되어 있으며 **[!UICONTROL 검색 결과 경로]** 설정할 수 있습니다.
+  선택하면 태그가 태그 클라우드에 일반 텍스트로 표시됩니다. 선택하지 않으면 태그는 해당 태그가 적용되는 모든 콘텐츠를 검색하는 활성 링크로 표시됩니다. 기본값은 선택 취소되어 있으며 **[!UICONTROL 검색 결과 경로]** 설정할 수 있습니다.
 
 * **[!UICONTROL 검색 결과 경로]**
 
-   가 있는 페이지의 경로 `Search Result` 구성 요소가 배치되었으며, 이 구성 요소는 **페이지** 설정.
+  가 있는 페이지의 경로 `Search Result` 구성 요소가 배치되었으며, 이 구성 요소는 **페이지** 설정.
 
 ## 소셜 태그 클라우드의 표시 변경 {#change-display-of-social-tag-cloud}
 
@@ -81,43 +81,43 @@ ht-degree: 8%
 
 * **[!UICONTROL 전체 제목 경로 표시]**
 
-   선택하면 상위 태그의 제목과 적용된 각 태그의 네임스페이스가 표시됩니다.
+  선택하면 상위 태그의 제목과 적용된 각 태그의 네임스페이스가 표시됩니다.
 
-   예:
+  예:
 
    * 선택됨: `Geometrixx Media: Gadgets / Cars`
    * 선택되지 않음: `Cars`
 
-   단순 태그는 차이가 없습니다.
+  단순 태그는 차이가 없습니다.
 
-   기본값은 선택 취소되어 있습니다.
+  기본값은 선택 취소되어 있습니다.
 
 * **[!UICONTROL 리프 태그만 표시]**
 
-   선택하면 다른 태그가 포함되지 않은 적용된 태그만 표시됩니다.
+  선택하면 다른 태그가 포함되지 않은 적용된 태그만 표시됩니다.
 
-   예를 들어 의 TagID가 지정된 경우:
+  예를 들어 의 TagID가 지정된 경우:
 
-   `Geometrixx Media: Gadgets / Cars`
+  `Geometrixx Media: Gadgets / Cars`
 
-   적용할 수 있는 태그는 3개입니다.
+  적용할 수 있는 태그는 3개입니다.
 
-   `Geometrixx Media (the namespace)`, `Gadgets`, 및 `Cars`
+  `Geometrixx Media (the namespace)`, `Gadgets`, 및 `Cars`
 
    * 선택됨: 만 `Cars` 적용되는 경우 이 표시됩니다.
    * 선택 취소됨: `Geometrixx Media` 및 `Gadgets`뿐만 아니라 `Cars` 적용되는 경우 이 표시됩니다.
 
-   단순 태그는 리프 태그입니다.
+  단순 태그는 리프 태그입니다.
 
-   기본값은 선택 취소되어 있습니다.
+  기본값은 선택 취소되어 있습니다.
 
 * **[!UICONTROL 링크 템플릿]**
 
-   구성 요소 편집 대화 상자를 통해 링크를 활성화하면 태그 클라우드에서 링크를 표시하는 데 사용되는 템플릿(기본값 제외)입니다.
+  구성 요소 편집 대화 상자를 통해 링크를 활성화하면 태그 클라우드에서 링크를 표시하는 데 사용되는 템플릿(기본값 제외)입니다.
 
 * **[!UICONTROL 모든 태그에 동일한 크기 사용]**
 
-   선택하면 태그 클라우드의 모든 단어 스타일이 동일합니다. 선택하지 않으면 단어 용법에 따라 다른 스타일이 지정됩니다. 기본값은 선택 취소되어 있습니다.
+  선택하면 태그 클라우드의 모든 단어 스타일이 동일합니다. 선택하지 않으면 단어 용법에 따라 다른 스타일이 지정됩니다. 기본값은 선택 취소되어 있습니다.
 
 ## 추가 정보 {#additional-information}
 

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2654'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ angular 페이지의 본문은 wcmMode의 감지 여부에 따라 다르게 렌�
 
 작성 모드에서는 각 개별 페이지가 개별적으로 렌더링됩니다. Angular은 페이지 간 라우팅을 처리하지 않으며 페이지의 구성 요소를 포함하는 부분 템플릿을 로드하는 데 사용되는 ng-view도 아닙니다. 대신 페이지 템플릿의 콘텐츠(template.jsp)는 `cq:include` 태그에 가깝게 배치하십시오.
 
-이 전략을 사용하면 작성자 기능(단락 시스템, 사이드 킥, 디자인 모드 등에서 구성 요소 추가 및 편집 등)을 사용할 수 있습니다. 수정 없이 작동합니다. 앱용 페이지와 같이 클라이언트측 렌더링에 의존하는 페이지는 AEM 작성자 모드에서 잘 작동하지 않습니다.
+이 전략을 사용하면 작성자 기능(단락 시스템, Sidekick, 디자인 모드 등에서 구성 요소 추가 및 편집 등)을 사용할 수 있습니다 수정 없이 작동합니다. 앱용 페이지와 같이 클라이언트측 렌더링에 의존하는 페이지는 AEM 작성자 모드에서 잘 작동하지 않습니다.
 
 template.jsp include는에 래핑됩니다. `div` 을 포함하는 요소 `ng-controller` 지시문입니다. 이 구조는 DOM 콘텐츠와 컨트롤러의 연결을 가능하게 합니다. 따라서 클라이언트측에서 자체 렌더링하는 페이지는 실패하지만 개별 구성 요소는 제대로 작동합니다(아래 구성 요소에 대한 섹션 참조).
 

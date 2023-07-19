@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 xgettext-maven-plugin을 사용하여 번역이 필요한 소스 코드에서 문자열을 추출합니다. Maven 플러그인은 번역하기 위해 전송하는 XLIFF 파일에 문자열을 추출합니다. 문자열은 다음 위치에서 추출됩니다.
 
 * Java 소스 파일
-* Javascript 소스 파일
+* JavaScript 소스 파일
 * SVN 리소스의 XML 표시(JCR 노드)
 
 ## 문자열 추출 구성 {#configuring-string-extraction}
@@ -49,7 +49,7 @@ xgettext-maven-plugin 도구가 프로젝트의 문자열을 추출하는 방법
 |---|---|
 | /filter | 구문 분석된 파일을 식별합니다. |
 | /parsers/vaultxml | Vault 파일의 구문 분석을 구성합니다. 외부화된 문자열 및 현지화 힌트가 포함된 JCR 노드를 식별합니다. 무시할 JCR 노드도 식별합니다. |
-| /parsers/javascript | 문자열을 외부화하는 Javascript 함수를 식별합니다. 이 섹션은 변경할 필요가 없습니다. |
+| /parsers/javascript | 문자열을 외부화하는 JavaScript 함수를 식별합니다. 이 섹션은 변경할 필요가 없습니다. |
 | /parsers/regexp | Java, JSP 및 ExtJS 템플릿 파일의 구문 분석을 구성합니다. 이 섹션은 변경할 필요가 없습니다. |
 | /potensions | 다국어화할 문자열을 감지하는 수식입니다. |
 

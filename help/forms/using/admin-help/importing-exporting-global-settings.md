@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 **client_pollingInterval:** (JEE에서 AEM Forms가 더 이상 사용되지 않음) Flex 작업 영역에서 새 작업 및 수정된 작업을 감지하는 데 사용되는 폴링 간격(초)을 설정합니다. 기본값은 3초입니다. AEM Forms 작업 영역에서는 작동하지 않습니다.
 
-**client_systemContext_name:** AEM Forms Workspace에서 작업의 첨부 파일에 대한 추가한 사람 필드(첨부 파일 탭)에 표시할 사용자 정의 이름(예: 시민)을 지정합니다.
+**client_systemContext_name:** AEM Forms Workspace에서 작업의 첨부 파일에 대한 추가자 필드(첨부 파일 탭)에 표시할 사용자 지정 이름(예: Citizen)을 지정합니다.
 
 사용자 정의 이름을 정의하려면
 

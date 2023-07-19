@@ -4,10 +4,10 @@ description: AEM Multi Site Manager를 시작하고 실행하는 데 도움이 �
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 41%
+source-wordcount: '1617'
+ht-degree: 42%
 
 ---
 
@@ -32,17 +32,15 @@ MSM은 콘텐츠 배포 자동화를 위한 구성 가능 프레임워크입니�
 >* [MSM 문제 해결 및 FAQ](troubleshoot-msm.md)
 >
 
-
 >[!NOTE]
 >
 >다음을 사용할 수도 있습니다 [참조 구성 요소](/help/sites-authoring/default-components-foundation.md#reference) 한 페이지나 단락을 재사용합니다. 그러나 다음 사항에 유의하십시오.
 >
 >* MSM은 보다 유연하고 동기화된 콘텐츠 및 시기를 세부적으로 제어할 수 있습니다.
->* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 는 이제 foundation 구성 요소보다 권장됩니다.
+>* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 이제 foundation 구성 요소보다 권장됩니다.
 >
 
-
-## 라이브 카피 소스 및 블루프린트 구성 {#live-copy-sources-and-blueprint-configurations}
+## Live Copy 소스 및 블루프린트 구성 {#live-copy-sources-and-blueprint-configurations}
 
 다음 중 하나를 사용하여 라이브 카피를 만들 수 있습니다 [일반 페이지](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) 또는 [블루프린트 구성](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). 두 가지 모두 유용한 사용 사례입니다.
 
@@ -58,7 +56,7 @@ MSM은 콘텐츠 배포 자동화를 위한 구성 가능 프레임워크입니�
 
 >[!NOTE]
 >
->권한 탭의 CUG는 블루프린트에서 라이브 카피로 롤아웃할 수 없습니다. 라이브 카피를 구성할 때 이를 염두에 두고 계획을 세우십시오.
+>권한 탭의 CUG는 블루프린트에서 Live Copy로 롤아웃할 수 없습니다. Live Copy를 구성할 때 이를 염두에 두고 계획을 세우십시오.
 
 ## 구성 요소 및 컨테이너 동기화 {#components-and-container-synchronization}
 
@@ -81,11 +79,11 @@ AEM에는 라이브 카피를 만들기 위한 두 가지 주요 접근 방식�
 
 * 날짜 [라이브 카피 만들기](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
-   이는 보다 일반적인 접근 방식으로 간주되며, 원하는 페이지에서 라이브 카피를 만들 수 있습니다. 라이브 카피의 콘텐츠 구조는 소스와 정확하게 일치합니다.
+  이는 보다 일반적인 접근 방식으로 간주되며, 원하는 페이지에서 라이브 카피를 만들 수 있습니다. 라이브 카피의 콘텐츠 구조는 소스와 정확하게 일치합니다.
 
 * 날짜 [사이트 생성](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
 
-   이는 보다 전문화된 접근 방식으로, 주로 다국어 구조를 사용하는 웹 사이트를 만들 때 사용됩니다.
+  이는 보다 전문화된 접근 방식으로, 주로 다국어 구조를 사용하는 웹 사이트를 만들 때 사용됩니다.
 
 다음은 사이트를 만들 때 염두에 두어야 할 몇 가지 고려 사항입니다.
 
@@ -93,7 +91,7 @@ AEM에는 라이브 카피를 만들기 위한 두 가지 주요 접근 방식�
 * 새 사이트에 생성할 언어 경로를 선택하려면 해당하는 언어 루트가 블루프린트(소스)에 존재해야 합니다.
 * 한 번 [새 사이트가 live copy로 생성되었습니다.](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (사용 **만들기**, 그런 다음 **Site**) 이 라이브 카피의 처음 두 가지 수준은 다음과 같습니다 *얕은*. 페이지의 하위 항목은 라이브 관계에 속하지 않지만, 트리거와 일치하는 라이브 관계가 있는 경우 롤아웃은 계속 적용됩니다.
 
-   이를 통해 다음을 방지할 수 있습니다.
+  이를 통해 다음을 방지할 수 있습니다.
 
    * 수동으로 블루프린트(첫 번째 수준 아래)에 언어 추가
    * 수동으로 언어 루트 바로 아래에 콘텐츠 추가,
@@ -110,7 +108,7 @@ MSM은 두 가지 방법으로 다국어 웹 사이트 생성을 지원할 수 �
       * MSM을 사용하면 페이지 및/또는 구성 요소 수준에서 상속을 취소할 수 있습니다. 이렇게 하면 다음 롤아웃 시 라이브 카피의 번역된 콘텐츠를 아직 번역되지 않은 블루프린트의 콘텐츠로 덮어쓰는 것을 방지할 수 있습니다.
       * 일부 서드파티 번역 커넥터는 이러한 MSM 상속 관리를 자동화합니다.
 
-         자세한 내용은 귀사의 번역 서비스 공급업체에 문의하십시오.
+        자세한 내용은 귀사의 번역 서비스 공급업체에 문의하십시오.
 
       * 언어 마스터를 만들고 번역하기 위한 또 다른 접근 방식은 AEM의 기본 번역 통합 프레임워크와 함께 언어 사본을 사용하는 것입니다.
 
@@ -118,7 +116,7 @@ MSM은 두 가지 방법으로 다국어 웹 사이트 생성을 지원할 수 �
 
    * 예를 들어 프랑스어 언어 마스터부터 프랑스어/프랑스어, 캐나다/프랑스어, 스위스/프랑스어 등 국가별 사이트까지 선택할 수 있습니다.
 
-자세한 내용은 [다국어 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md) 및 [번역 모범 사례](/help/sites-administering/tc-bp.md).
+자세한 내용은 [다국어 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md) 및 [번역 모범 사례](/help/sites-administering/tc-bp.md)를 참조하십시오.
 
 ## 구조 변경 및 롤아웃 {#structure-changes-and-rollouts}
 
@@ -142,9 +140,9 @@ MSM은 두 가지 방법으로 다국어 웹 사이트 생성을 지원할 수 �
 
    * 이 새 구성은 다음 작업을 포함해야 합니다.
 
-      `PageMoveAction`
+     `PageMoveAction`
 
-      이 구성에 다른 작업을 추가하지 마십시오.
+     이 구성에 다른 작업을 추가하지 마십시오.
 
 * 새 구성을 배치합니다:
 
@@ -152,13 +150,13 @@ MSM은 두 가지 방법으로 다국어 웹 사이트 생성을 지원할 수 �
 
       * 새로 생성된 구성을 표준 롤아웃 구성 앞에 배치합니다.
 
-         표준 롤아웃 구성은 이전 위치의 페이지 삭제를 처리합니다.
+        표준 롤아웃 구성은 이전 위치의 페이지 삭제를 처리합니다.
+
    * 각 페이지를 라이브 카피의 이전 위치에 유지하면서 페이지 이동을 롤아웃하려면(즉, 콘텐츠를 복제하려면) 다음 작업을 수행하십시오.
 
       * 새로 생성된 구성을 표준 롤아웃 구성 뒤에 배치합니다.
 
-         이렇게 하면 콘텐츠가 Live Copy에서 삭제되거나 게시에서 비활성화되지 않습니다.
-
+        이렇게 하면 콘텐츠가 Live Copy에서 삭제되거나 게시에서 비활성화되지 않습니다.
 
 ## 롤아웃 맞춤화 {#customizing-rollouts}
 
@@ -196,5 +194,5 @@ MSM 롤아웃 구성은 맞춤화가 매우 용이합니다. 롤아웃을 자동
 
 * [Live Copy 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
 * [Live Copy 개요 콘솔](/help/sites-administering/msm-livecopy-overview.md)
-* [라이브 카피 동기화 구성](/help/sites-administering/msm-sync.md)
+* [Live Copy 동기화 구성](/help/sites-administering/msm-sync.md)
 * [MSM 롤아웃 충돌](/help/sites-administering/msm-rollout-conflicts.md)

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1747'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 2%
    * 다음에 나오는 섹션의 예제에서는 다음 이름을 사용합니다 **my-sc-configuration** 구성 및 **videofw** 프레임워크에 사용됩니다.
 
 1. 프레임워크 페이지에서 RSID를 선택하고 사용을 모두로 설정합니다. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
-1. 사이드 킥의 일반 구성 요소 카테고리에서 비디오 구성 요소를 프레임워크로 드래그합니다.
+1. Sidekick의 일반 구성 요소 카테고리에서 비디오 구성 요소를 프레임워크로 드래그합니다.
 1. 추적 방법 선택:
 
    * [마일스톤](/help/sites-administering/adobeanalytics.md)
@@ -290,7 +290,7 @@ eventdata.events.milestoneXX
 
 1. 트랙 오프셋을 설정합니다.
 
-   * e.g.10,50,75,100
+   * (예: 10,50,75,100)
 
    또한 Adobe Analytics으로 전송된 정보는 사용자 지정이 줄어듭니다. 매핑에 사용할 수 있는 변수는 3개뿐입니다.
 
@@ -343,7 +343,8 @@ eventdata.events.milestoneXX
 
 1. 트랙 오프셋을 초 단위로 설정합니다.
 
-   * 예: 6
+   * 예, 6
+
    >[!NOTE]
    >
    >추적 오프셋 필드는 0보다 큰 정수만 허용합니다

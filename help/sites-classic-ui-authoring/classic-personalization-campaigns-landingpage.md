@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '3335'
 ht-degree: 3%
@@ -304,10 +304,10 @@ CTA 리드 양식은 다음과 같은 여러 구성 요소로 구성됩니다.
 전체 양식의 유효성을 검사하는 경우 다음 중 하나를 포함해야 합니다.
 
 * 클라이언트 유효성 검사용 스크립트:
-   ` /apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
 
 * 서버 쪽의 유효성 검사용 스크립트:
-   ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
 **작업 구성** [게시 옵션]에서 선택한 항목에 따라 [작업 구성]이 변경됩니다. 예를 들어 Create Lead 를 선택하면 Lead 가 추가되는 목록을 구성할 수 있습니다.
 
@@ -345,7 +345,7 @@ CTA 리드 양식은 다음과 같은 여러 구성 요소로 구성됩니다.
 
 >[!NOTE]
 >
->디자인 가져오기 도구는 다음에 대한 읽기, 쓰기, 만들기 및 삭제 권한이 필요한 관리 도구입니다. `/apps`, Adobe은 프로덕션 환경에서 디자인 임포터를 사용하지 않는 것이 좋습니다.
+>왜냐하면 디자인 임포터는 다음에 대한 읽기, 쓰기, 만들기 및 삭제 권한이 필요한 관리 도구이기 때문입니다 `/apps`, Adobe은 프로덕션 환경에서 디자인 임포터를 사용하지 않는 것이 좋습니다.
 
 Adobe은 스테이징 인스턴스에서 디자인 임포터를 사용하는 것을 권장합니다. 스테이징 인스턴스에서 개발자가 코드를 프로덕션 인스턴스에 배포하여 가져오기를 테스트하고 유효성을 검사할 수 있습니다.
 

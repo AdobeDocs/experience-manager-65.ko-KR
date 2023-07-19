@@ -1,7 +1,7 @@
 ---
 title: SPA 편집기 개요
 seo-title: SPA Editor Overview
-description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에서 SPA 편집기와 워크플로의 세부 상호 작용 포함)에 대한 포괄적인 개요를 제공합니다.
+description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에서 SPA 편집기와 워크플로우의 세부 상호 작용 포함)에 대한 포괄적인 개요를 제공합니다.
 seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
 uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
 contentOwner: bohnert
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: a547b2e24205c63284a0e77f2e7f5678ae24968b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 91%
+source-wordcount: '1659'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합
 
 >[!NOTE]
 >
->SPA 편집기는 SPA 프레임워크 기반 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
+>SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
 ## 소개 {#introduction}
 
@@ -67,7 +67,7 @@ SPA는 내보낸 모델의 각 리소스에 대한 렌더링을 수행할 실제
 
 ![screen_shot_2018-08-20at143628](assets/screen_shot_2018-08-20at143628.png)
 
-## 워크플로 {#workflow}
+## 워크플로우 {#workflow}
 
 SPA 편집기를 SPA와 AEM 간의 중재자로 간주하여 두 사이의 상호 작용 흐름을 이해할 수 있습니다.
 
@@ -78,9 +78,9 @@ SPA 편집기를 SPA와 AEM 간의 중재자로 간주하여 두 사이의 상�
 
 ![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
 
-### 기본 SPA 편집기 워크플로 {#basic-spa-editor-workflow}
+### 기본 SPA 편집기 워크플로우 {#basic-spa-editor-workflow}
 
-SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 높은 수준의 워크플로가 다음과 같이 작성자에게 나타납니다.
+SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 높은 수준의 워크플로우가 다음과 같이 작성자에게 표시됩니다.
 
 ![untitled1](assets/untitled1.gif)
 
@@ -102,8 +102,7 @@ SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 �
 >* 프로덕션(게시)에서는 SPA 편집기가 로드되지 않습니다.
 >
 
-
-### 클라이언트-서버 페이지 편집 워크플로 {#client-server-page-editing-workflow}
+### 클라이언트-서버 페이지 편집 워크플로우 {#client-server-page-editing-workflow}
 
 이는 SPA 편집 시 제공되는 클라이언트-서버 상호 작용에 대한 자세한 개요입니다.
 
@@ -137,7 +136,7 @@ SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 �
 
    **17c** SPA는 업데이트된 구성 요소 구성을 제공합니다.
 
-### 작성 워크플로 {#authoring-workflow}
+### 작성 워크플로우 {#authoring-workflow}
 
 작성 경험을 집중적으로 다루는 자세한 개요를 제공합니다.
 
@@ -176,14 +175,14 @@ AEM SPA Editor SDK와 구동할 수 있도록 추가 SPA 프레임워크를 구�
 
 ### 여러 선택기 사용 {#multiple-selectors}
 
-추가 사용자 지정 선택기를 AEM SPA SDK용으로 개발된 SPA의 일부로 정의하고 사용할 수 있습니다. 단, 이 지원을 생성하려면 `model`선택기는 첫 번째 선택기가 되고 확장자는 JSON 내보내기의 요구 사항에 `.json`[따라야 합니다.](json-exporter-components.md#multiple-selectors)
+추가 사용자 정의 선택기를 AEM SPA SDK용으로 개발된 SPA의 일부로 정의하고 사용할 수 있습니다. 단, 이 지원을 생성하려면 `model`선택기는 첫 번째 선택기가 되고 확장자는 JSON 내보내기의 요구 사항에 `.json`[따라야 합니다.](json-exporter-components.md#multiple-selectors)
 
 ### 텍스트 편집기 요구 사항 {#text-editor-requirements}
 
 SPA에 생성된 텍스트 구성 요소의 내부 편집기를 사용하려면 추가 구성이 필요합니다.
 
 1. 텍스트 HTML이 포함된 컨테이너 래퍼 요소의 속성(모든 속성일 수 있음)을 설정합니다. WKND Journal 샘플 콘텐츠의 경우 `<div>` 요소 및 사용된 선택기는 `data-rte-editelement`.
-1. 구성 설정 `editElementQuery` 해당 AEM 텍스트 구성 요소 `cq:InplaceEditingConfig` that points가리키기 that selector선택기 ... `data-rte-editelement`. 이를 통해 편집기는 HTML 텍스트를 래핑하는 HTML 요소를 인식할 수 있습니다.
+1. 해당 선택기(예: `data-rte-editelement`)를 가리키는 해당 AEM 텍스트 구성 요소의 `cq:InplaceEditingConfig`에서 구성 `editElementQuery`를 설정합니다. 이를 통해 편집기는 HTML 텍스트를 래핑하는 HTML 요소를 인식할 수 있습니다.
 
 이 작업을 수행하는 방법에 대한 예는 다음을 참조하십시오. [WKND 저널 샘플 콘텐츠입니다.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
@@ -201,4 +200,4 @@ AEM SPA Editor SDK는 AEM 6.4 서비스 팩 2와 함께 도입되었습니다. �
 * 페이지 비교 및 시간 비틀기
 * 링크 검사기, CDN 재작성 서비스, URL 단축 등 서버측 HTML 재작성 수행 기능
 * 개발자 모드
-* AEM 런치
+* AEM 론치

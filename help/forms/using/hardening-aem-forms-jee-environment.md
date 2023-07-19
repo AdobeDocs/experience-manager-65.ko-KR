@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7669'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ JEE에 AEM Forms을 설치하기 전에 보안 솔루션을 네트워크 계층 
 
 **Windows의 설치 및 구성**
 
-JBoss에서 JEE의 AEM Forms을 턴키 방식으로 설치하거나 PDF 생성기를 설치하는 경우 Windows에서 관리자 자격으로 설치를 수행해야 합니다. 또한 기본 응용 프로그램 지원을 사용하여 Windows에 PDF 생성기를 설치할 때 Microsoft Office를 설치한 동일한 Windows 사용자로 설치를 실행해야 합니다. 설치 권한에 대한 자세한 내용은 사용 중인 애플리케이션 서버용* JEE에 AEM Forms 설치 및 배포* 문서를 참조하십시오.
+턴키 방식을 사용하여 JBoss의 JEE에 AEM Forms을 설치하거나 PDF Generator을 설치하는 경우 Windows에서 관리자 자격으로 설치를 수행해야 합니다. 또한 기본 응용 프로그램 지원을 사용하여 Windows에 PDF Generator을 설치할 때 Microsoft Office를 설치한 동일한 Windows 사용자로 설치를 실행해야 합니다. 설치 권한에 대한 자세한 내용은 사용 중인 애플리케이션 서버용* JEE에 AEM Forms 설치 및 배포* 문서를 참조하십시오.
 
 ### 네트워크 계층 보안 {#network-layer-security}
 
@@ -151,7 +151,7 @@ JBoss에서 JEE의 AEM Forms을 턴키 방식으로 설치하거나 PDF 생성�
 
 ## 설치 후 단계 {#post-installation-steps}
 
-JEE에 AEM Forms을 성공적으로 설치한 후에는 보안 관점에서 환경을 정기적으로 유지 관리하는 것이 중요합니다.
+JEE에 AEM Forms을 성공적으로 설치한 후에는 보안 관점에서 환경을 주기적으로 유지 관리하는 것이 중요합니다.
 
 다음 섹션에서는 배포된 Forms 서버의 보안을 유지하기 위해 권장되는 다양한 작업에 대해 자세히 설명합니다.
 
@@ -176,7 +176,7 @@ AEM Forms on JEE는 기본적으로 LocalSystem 계정을 사용하여 서비스
 
    >[!NOTE]
    >
-   >PDF 생성기에 대해 이 설정을 변경할 수 없습니다.
+   >PDF Generator에 대해 이 설정을 변경할 수 없습니다.
 
 1. 선택 **시작** > **설정** > **관리 도구** > **서비스**.
 1. JEE의 AEM Forms용 JBoss를 두 번 클릭하고 서비스를 중지합니다.
@@ -208,7 +208,6 @@ AEM Forms on JEE는 기본적으로 LocalSystem 계정을 사용하여 서비스
    >
    >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
    >* Linux: /opt/jboss/
-
 
 1. 응용 프로그램 서버를 시작합니다.
 
@@ -460,9 +459,9 @@ LDAP를 사용하는 일반적인 공격에는 공격자가 의도적으로 여�
  </tbody> 
 </table>
 
-### 관리자가 아닌 사용자가 PDF 생성기를 실행할 수 있도록 설정
+### 관리자가 아닌 사용자가 PDF Generator을 실행할 수 있도록 설정
 
-관리자가 아닌 사용자가 PDF 생성기를 사용할 수 있도록 설정할 수 있습니다. 일반적으로 관리 권한이 있는 사용자만 PDF 생성기를 사용할 수 있습니다. 관리자가 아닌 사용자가 PDF 생성기를 실행할 수 있도록 하려면 다음 단계를 수행하십시오.
+관리자가 아닌 사용자가 PDF Generator을 사용할 수 있도록 설정할 수 있습니다. 일반적으로 관리 권한이 있는 사용자만 PDF Generator을 사용할 수 있습니다. 관리자가 아닌 사용자가 PDF Generator을 실행할 수 있도록 하려면 다음 단계를 수행하십시오.
 
 1. 환경 변수 이름 PDFG_NON_ADMIN_ENABLED를 생성합니다.
 
@@ -514,7 +513,7 @@ JEE 웹 애플리케이션의 각 AEM Forms에 대한 다음 애플리케이션 
   </tr> 
   <tr> 
    <td><p>/pdfgui/*</p> </td> 
-   <td><p>PDF 생성기 관리 웹 애플리케이션</p> </td> 
+   <td><p>PDF Generator 관리 웹 애플리케이션</p> </td> 
    <td><p>예</p> </td> 
    <td><p>예</p> </td> 
   </tr> 
@@ -1030,7 +1029,6 @@ AEM Forms on JEE 턴키 설치는 기본적으로 로컬 시스템 계정을 사
    >
    >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
    >* Linux: /opt/jboss/.
-
 
 1. 응용 프로그램 서버 서비스를 시작합니다.
 

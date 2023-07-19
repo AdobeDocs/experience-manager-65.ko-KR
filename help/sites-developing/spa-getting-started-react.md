@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,7 @@ SPA 작성 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을
 
 >[!NOTE]
 >
->SPA 편집기는 SPA 프레임워크 기반 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
+>SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
 ## 소개 {#introduction}
 
@@ -226,7 +226,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-AEM에서 SPA의 핵심 개념은 SPA 구성 요소를 AEM 구성 요소에 매핑하고 콘텐츠가 수정될 때(또는 그 반대) 구성 요소를 업데이트하는 것입니다. 문서 보기 [SPA 편집기 개요](/help/sites-developing/spa-overview.md) 이 커뮤니케이션 모델에 대한 요약 정보를 제공합니다.
+AEM에서 SPA의 핵심 아이디어는 SPA 구성 요소를 AEM 구성 요소에 매핑하고 콘텐츠가 수정될 때(그리고 그와 반대되게) 구성 요소를 업데이트하는 아이디어입니다. 문서 보기 [SPA 편집기 개요](/help/sites-developing/spa-overview.md) 이 커뮤니케이션 모델에 대한 요약 정보를 제공합니다.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 

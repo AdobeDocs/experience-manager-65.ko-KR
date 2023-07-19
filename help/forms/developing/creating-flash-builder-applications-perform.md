@@ -11,7 +11,7 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 0%
@@ -410,7 +410,7 @@ SSO 인증을 수행하는 클라이언트 애플리케이션을 만드는 방�
          /**
           * Constructs an SSOManager with the given server url.
           *
-          * @param serverUrl - The uri of the server to connect to. it must be without any context path e.g
+          * @param serverUrl - The uri of the server to connect to. it must be without any context path for example,
           * http://localhost:8080/. The SSOManager would directly append the path of UM exposed SSO url to it
           * for its operations
           */

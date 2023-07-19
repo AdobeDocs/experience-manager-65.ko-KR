@@ -7,9 +7,9 @@ feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '579'
 ht-degree: 8%
 
 ---
@@ -33,10 +33,10 @@ Experience Manager은 작성 프로세스의 일부로 3D 에셋의 업로드, �
 
 | 3D 파일 확장명 | 파일 형식 | MIME 유형 | 메모 |
 |---|---|---|---|
-| GLB | 이진 GL 전송 | model/gltf-binary |  |
+| GLB | 이진 GL 전송 | model/gltf-binary | |
 | GLTF | GL 전송 형식 | model/gltf+json | 다음을 참조하십시오 **참고** 아래요. |
-| OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
-| STL | 스테레오리소그래피 | application/vnd.ms-pki.stl |  |
+| OBJ | WaveFront 3D 개체 파일 | application/x-tgif | |
+| STL | 스테레오리소그래피 | application/vnd.ms-pki.stl | |
 | DN | Adobe Dimension | model/x-adobe-dn | 수집만 지원합니다. 미리 보기를 사용할 수 없습니다. |
 | USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | 수집만 지원합니다. 미리 보기를 사용할 수 없습니다. |
 
@@ -82,7 +82,7 @@ Experience Manager은 작성 프로세스의 일부로 3D 에셋의 업로드, �
    | **카메라 회전** | 보기를 왼쪽, 오른쪽, 위쪽 또는 아래쪽으로 회전합니다. | 마우스 오른쪽 단추를 클릭하고 드래그하십시오. | 두 손가락으로 + 드래그. |
    | **카메라 확대/축소** | 3D 장면의 영역 안과 밖으로 이동합니다. | 스크롤 휠입니다. | 손가락 두 개 조입니다. |
    | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 탭합니다. |
-   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |  |  |
-   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |  |  |
+   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |   |   |
+   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |   |   |
 
 1. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 닫기]**.

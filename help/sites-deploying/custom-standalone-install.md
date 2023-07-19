@@ -6,7 +6,7 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1622'
 ht-degree: 0%
@@ -38,7 +38,6 @@ quickstart jar 파일의 이름을 바꿀 때 따라야 할 다양한 규칙이 
 >* 파일 이름에 다른 숫자가 있는 경우 포트 번호 앞에 를 붙여야 합니다. `-p`
 >* 파일 이름의 시작 부분에 있는 &quot;cq5&quot; 접두사는 무시됩니다
 >
-
 
 >[!NOTE]
 >
@@ -231,7 +230,7 @@ Usage:
   Options for executing Quickstart extensions:
                                                                                 
     -xargs <arg> [<arg> ...]
-         Construct an arguments list for a Quickstart extension (e.g. -xargs -- 
+         Construct an arguments list for a Quickstart extension (for example, -xargs -- 
          -arg1 val1 -arg2 val2).                                                
 --------------------------------------------------------------------------------
 Quickstart filename options                                                     

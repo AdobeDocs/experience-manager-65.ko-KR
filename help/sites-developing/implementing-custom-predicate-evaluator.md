@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ef253905-87da-4fa2-9f6c-778f1b12bd58
 docset: aem65
 exl-id: 72cbe589-14a1-40f5-a7cb-8960f02e0ebb
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '776'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 술어 평가기는 쿼리의 정의 제약 조건인 특정 술어의 평가를 처리합니다.
 
-실제 콘텐츠 모델(예: 메타데이터/@width > 200)에 맞는 특정 JCR 쿼리에 더 높은 수준의 검색 제한(&quot;width > 200&quot; 등)이 매핑됩니다. 또는 수동으로 노드를 필터링하고 제약 조건을 확인할 수 있습니다.
+실제 콘텐츠 모델에 맞는 특정 JCR 쿼리(예: 메타데이터/@width > 200)에 더 높은 수준의 검색 제한(&quot;width > 200&quot;)을 매핑합니다. 또는 수동으로 노드를 필터링하고 제약 조건을 확인할 수 있습니다.
 
 >[!NOTE]
 >

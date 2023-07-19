@@ -11,9 +11,9 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,8 @@ ht-degree: 0%
       >    * 인스턴스에서 업그레이드
       >    * 핫픽스 적용
       >    * 기능 팩 설치
-
+      >    
+      >
 
    1. **확인**&#x200B;을 클릭합니다. 지정된 경로에 css 폴더가 만들어집니다.
 
@@ -115,7 +116,7 @@ ht-degree: 0%
 
 다음 단계를 사용하여 사용자 지정 로고 파일을 CRX에 업로드합니다.
 
-1. 이동 `https://'[server]:[port]'/[contextpath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
+1. `https://'[server]:[port]'/[contextpath]/crx/de`로 이동합니다. 필요한 경우 관리자로 로그인합니다.
 1. CRXDE에서 **imgs** 다음 경로에 있는 폴더를 선택하고 **만들기 > 파일 만들기**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -158,7 +159,7 @@ ht-degree: 0%
 
 다음 단계를 사용하여 로고 렌더링에 사용할 스타일 시트를 설정합니다.
 
-1. 이동 `https://'[server]:[port]'/[contextpath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
+1. `https://'[server]:[port]'/[contextpath]/crx/de`로 이동합니다. 필요한 경우 관리자로 로그인합니다.
 1. 다음 위치에 customcss.css라는 파일(다른 파일 이름을 사용할 수 없음)을 만듭니다.
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`

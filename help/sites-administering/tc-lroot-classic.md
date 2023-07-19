@@ -12,9 +12,9 @@ discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ ht-degree: 0%
 
       * 지원되는 언어 코드는 ISO-639-1에서 정의된 소문자 두 자리 코드입니다
       * 지원되는 국가 코드는 ISO 3166에서 정의된 소문자 또는 대문자 두 자리 코드입니다
+
    1. 템플릿을 선택하고 만들기 를 클릭합니다.
 
    ![newpagefr](assets/newpagefr.png)

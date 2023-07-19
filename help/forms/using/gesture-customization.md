@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -47,27 +47,27 @@ AEM Forms 앱에서 왼쪽 스와이프는 새 작업 또는 시작 지점을 �
 
    `"EventName Selector": "Function"`
 
-   라는 Javascript 이벤트를 트리거할 때 `EventName`에 지정된 HTML 요소에서 `Selector`, `Function`이(가) 호출되었습니다.
+   라는 JavaScript 이벤트를 트리거할 때 `EventName`에 지정된 HTML 요소에서 `Selector`, `Function`이(가) 호출되었습니다.
 
 1. 찾기
 
    * &quot;tap .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap .taskOpenArea&quot; : &quot;onTaskClick&quot;,
+     &quot;tap .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap .task-content&quot; : &quot;onTaskClick&quot;
+     &quot;tap .task-content&quot; : &quot;onTaskClick&quot;
 
-      &quot;tap .last_empty_div&quot; : &quot;onTaskClick&quot;,
+     &quot;tap .last_empty_div&quot; : &quot;onTaskClick&quot;,
+
    및 다음으로 바꾸기
 
    * &quot;swipe .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
+     &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .task-content&quot; : &quot;onTaskClick&quot;,
+     &quot;swipe .task-content&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
-
+     &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
 1. 저장 후 닫기 `task.js` 파일.
 1. AEM Forms 앱을 빌드하고 실행합니다. 이제 왼쪽 스와이프와 오른쪽 스와이프로 을(를) 열 수 있습니다.

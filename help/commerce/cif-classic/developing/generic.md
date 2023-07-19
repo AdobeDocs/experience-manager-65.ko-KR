@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -49,8 +49,8 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
 
       * 검색되면 이 값을 사용하여 상거래 서비스 조회를 필터링합니다.
       * 검색되지 않는 경우, 가장 높은 등급의 상거래 서비스가 사용됩니다.
-   * A `cq:Commerce` mixin을 사용하여 `cq:commerceProvider` 강력한 형식의 리소스에 추가할 수 있습니다.
 
+   * A `cq:Commerce` mixin을 사용하여 `cq:commerceProvider` 강력한 형식의 리소스에 추가할 수 있습니다.
 
 * 다음 `cq:commerceProvider` 속성을 사용하여 해당 상거래 공장 정의를 참조할 수도 있습니다.
 
@@ -97,11 +97,11 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
    * 추가/제거/등 수행
    * 장바구니에서 다양한 계산을 수행합니다.
 
-      `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
+     `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
 * 의 지속성 소유 **주문** 데이터:
 
-   `CommerceSession.getUserContext()`
+  `CommerceSession.getUserContext()`
 
 * 을 사용하여 게재 세부 사항을 검색/업데이트할 수 있습니다. `updateOrder(Map<String, Object> delta)`
 * 또한 을(를) 소유합니다. **결제** 연결 처리 중
@@ -129,7 +129,6 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
 >
 >1. `size`
 >1. + 개 더
-
 >
 >   이 추가 변형은 `variationAxis` 제품 참조의 속성(일반적으로 `color` Geometrixx Outdoors).
 
@@ -197,7 +196,7 @@ public interface Product extends Adaptable {
  * Interface for filtering variants and AxisFilter provided as common implementation
  *
  * The <code>VariantFilter</code> is used to filter variants,
- * e.g. when using {@link Product#getVariants(VariantFilter filter)}.
+ * for example, when using {@link Product#getVariants(VariantFilter filter)}.
  */
 public interface VariantFilter {
     public boolean includes(Product product);
@@ -249,11 +248,11 @@ public class AxisFilter implements VariantFilter {
          * 제품 참조에 `productData` 제품 데이터를 가리키는 속성(일반적으로 `/etc/commerce/products`).
          * 제품 데이터는 계층적입니다. 제품 속성은 제품 데이터 노드의 상위 항목에서 상속됩니다.
          * 제품 참조에는 제품 데이터에 지정된 속성을 재정의하는 로컬 속성도 포함될 수 있습니다.
+
       * 제품 자체:
 
          * 없이 `productData` 속성.
          * 모든 속성을 로컬로 보유하는(productData 속성을 포함하지 않는) 제품 노드는 자체 상위 항목에서 직접 제품 속성을 상속합니다.
-
 
 * **AEM 일반 제품 구조**
 
@@ -321,11 +320,11 @@ public class AxisFilter implements VariantFilter {
       * 수량 할인.
       * 다른 통화.
       * 부가세 부담 및 부가세 무료.
+
    * 수정자는 다음 인터페이스로 완전히 오픈엔드됩니다.
 
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
-
 
 **스토리지**
 
@@ -432,36 +431,37 @@ public class AxisFilter implements VariantFilter {
 
    * 바우처는 웹 사이트 콘솔로 생성/편집하고 아래에 저장되는 페이지 기반 구성 요소입니다.
 
-      `/content/campaigns`
+     `/content/campaigns`
 
    * 바우처 공급:
 
       * 바우처 코드(구매자가 장바구니에 입력).
       * 바우처 레이블(쇼핑객이 장바구니에 입력한 후 표시됨).
       * 프로모션 경로(바우처가 적용되는 작업을 정의함).
+
    * 바우처는 날짜/시간 및 시간이 다르지만 부모 캠페인의 항목을 사용합니다.
    * 외부 상거래 엔진은 바우처를 제공할 수도 있습니다. 여기에는 최소 다음 항목이 필요합니다.
 
       * 바우처 코드
       * An `isValid()` 방법
+
    * 다음 **바우처** 구성 요소( `/libs/commerce/components/voucher`) 는 다음을 제공합니다.
 
       * 바우처 관리를 위한 렌더러입니다. 현재 장바구니에 있는 바우처가 표시됩니다.
       * 바우처를 관리(추가/제거)하기 위한 편집 대화 상자(양식).
       * 장바구니에서 바우처를 추가/제거하는 데 필요한 작업입니다.
 
-
-
 * 프로모션:
 
    * 프로모션은 웹 사이트 콘솔로 생성/편집하고 다음 위치에 저장하는 페이지 기반 구성 요소입니다.
 
-      `/content/campaigns`
+     `/content/campaigns`
 
    * 판촉 공급:
 
       * 우선 순위
       * 프로모션 핸들러 경로
+
    * 프로모션을 캠페인에 연결하여 설정/해제 날짜/시간을 정의할 수 있습니다.
    * 프로모션을 경험에 연결하여 세그먼트를 정의할 수 있습니다.
    * 경험에 연결되지 않은 프로모션은 저절로 실행되지는 않지만 바우처로 실행할 수 있습니다.
@@ -469,17 +469,16 @@ public class AxisFilter implements VariantFilter {
 
       * 프로모션 관리용 렌더러 및 대화 상자
       * 프로모션 핸들러와 관련된 구성 매개 변수를 렌더링 및 편집하기 위한 하위 구성 요소
+
    * 두 개의 프로모션 핸들러가 즉시 제공됩니다.
 
       * `DiscountPromotionHandler`- 장바구니 전체 절대 또는 백분율 할인을 적용합니다.
       * `PerfectPartnerPromotionHandler`: 파트너 제품이 장바구니에 있는 경우 제품 절대 또는 비율 할인을 적용합니다.
+
    * ClientContext `SegmentMgr` 세그먼트 및 ClientContext 확인 `CartMgr` 프로모션을 해결합니다. 하나 이상의 해결된 세그먼트에 속하는 각 프로모션이 실행됩니다.
 
       * 실행된 프로모션은 AJAX 호출을 통해 서버로 다시 전송되어 장바구니를 다시 계산합니다.
       * 실행된 프로모션(및 추가된 바우처)도 ClientContext 패널에 표시됩니다.
-
-
-
 
 장바구니에서 바우처를 추가/제거하는 작업은 `CommerceSession` API:
 
@@ -522,7 +521,7 @@ public List<Voucher> getVouchers() throws CommerceException;
 
 * `jcr:title` (문자열) - 바우처 설명에 사용됩니다.
 * `code` (문자열) - 이 바우처를 적용하려면 사용자가 입력해야 하는 코드
-* `promotion` (문자열) - 적용할 프로모션입니다. 예: `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (문자열) - 적용할 판촉. 예: `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 프로모션 핸들러는 장바구니를 수정하는 OSGi 서비스입니다. 장바구니는에 정의될 여러 개의 후크를 지원합니다. `PromotionHandler` 인터페이스.
 

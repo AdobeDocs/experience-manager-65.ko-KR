@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5903'
+source-wordcount: '5902'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>실수로 잘못된 저장소 형식에 대해 를 실행하면 어떻게 됩니까?</strong></td>
-   <td>oak-segment-tar 저장소에 대해 oak-segment 모듈을 실행하려고 하면(또는 그 반대의 경우) <em>IllegalStateException</em> "잘못된 세그먼트 형식"이라는 메시지가 포함된 경우. 데이터 손상은 발생하지 않습니다.</td>
+   <td>oak-segment-tar 저장소에 대해 oak-segment 모듈을 실행하려고 하면 (또는 반대로) <em>IllegalStateException</em> "잘못된 세그먼트 형식"이라는 메시지가 포함된 경우. 데이터 손상은 발생하지 않습니다.</td>
    <td> </td>
   </tr>
   <tr>
@@ -400,7 +400,7 @@ TarMK GC: no base state available, running full compaction instead
       </ul> </li>
      <li>수정 버전 정리로 인해 디스크 공간이 증가했습니다.
       <ul>
-       <li>정리 단계가 완료될 때만 공간이 회수됩니다. 정리 단계 완료는 로그 메시지 "T"로 표시됩니다<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". 사후 정리 크기는 {}({}바이트)이고 공간 재확보 {}({}바이트)입니다. 압축 맵 두께/깊이는 {}/{}({}바이트/{})"입니다.</li>
+       <li>정리 단계가 완료될 때만 공간이 회수됩니다. 정리 단계 완료는 로그 메시지 "T"로 표시됩니다<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". 사후 정리 크기는 다음과 같습니다. {} ({} 바이트) 및 공간 재확보 {} ({} 바이트)입니다. 압축 맵 두께/깊이: {}/{} ({} 바이트/{})."</li>
       </ul> </li>
      <li>수정 정리 중에 문제가 발생했습니다.
       <ul>
@@ -548,7 +548,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
    <tr>
     <td>N/A</td>
-    <td>TarMK GC #2: 압축이 취소되었습니다. ${REASON}.</td>
+    <td>TarMK GC #2: 압축 취소됨: ${REASON}.</td>
     <td>압축 단계가 너무 빨리 종료되었습니다. 압축 단계를 방해할 수 있는 이벤트의 일부 예: 호스트 시스템의 메모리 또는 디스크 공간이 부족합니다. 또한 시스템을 종료하거나 작업 대시보드 내의 유지 관리 창과 같은 관리 인터페이스를 통해 명시적으로 취소하여 압축을 취소할 수도 있습니다.</td>
     <td>주어진 이유에 따라 다릅니다.</td>
   </td>

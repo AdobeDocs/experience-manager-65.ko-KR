@@ -12,9 +12,9 @@ discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2729'
 ht-degree: 0%
 
 ---
@@ -163,11 +163,13 @@ TarMK 콜드 대기 설정을 생성하려면 먼저 기본 설치 폴더의 전
 
       * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
       * `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
+
    1. (이)라는 이름의 새 폴더 만들기 `crx3` 아래에 `aem-standby/crx-quickstart/install`
 
    1. 데이터 저장소 구성을 만들고 아래에 배치합니다. `aem-standby/crx-quickstart/install/crx3`. 이 예제에서 만들어야 하는 파일은 다음과 같습니다.
 
       * org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
+
    1. 파일을 편집하고 필요한 구성을 만듭니다.
 
    다음은 일반적인 대기 인스턴스에 대한 샘플 구성 파일입니다.

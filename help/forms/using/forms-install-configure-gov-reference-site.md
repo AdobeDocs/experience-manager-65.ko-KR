@@ -4,9 +4,9 @@ description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 지정�
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4626'
 ht-degree: 3%
 
 ---
@@ -155,8 +155,8 @@ ht-degree: 3%
 
 1. 원하는 SMTP 서버에 연결하도록 서비스를 구성합니다.
 
-   1. **SMTP 서버 호스트 이름**: 예: (smtp.gmail.com)
-   1. **서버 포트**: 예: SSL을 사용하는 gmail용 (465)
+   1. **SMTP 서버 호스트 이름**: 예, (smtp.gmail.com)
+   1. **서버 포트**: 예를 들어 SSL을 사용하는 gmail의 경우 (465)
    1. **SMTP 사용자:** demo@ &lt;companyname> .com
    1. **&quot;보낸 사람&quot; 주소**: aemformsdemo@adobe.com
 
@@ -240,7 +240,7 @@ ht-degree: 3%
 1. &quot;인증 설정&quot; 탭으로 이동합니다.
 1. 다음 세부 정보를 입력합니다.
 
-   1. **서비스 루트:** 예: `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
+   1. **서비스 루트:** 예를 들어, `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **인증 유형:** OAuth 2.0
    1. **인증 설정** (참조 [MS® Dynamics 클라우드 구성 설정](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) 이 정보를 수집하려면
 
@@ -251,7 +251,7 @@ ht-degree: 3%
       1. 액세스 토큰 URL - 예: [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. 인증 범위 - **openid**
       1. 인증 헤더 - **인증 전달자**
-      1. 리소스 - 예 `https://msdynamicsserver.api.crm3.dynamics.com`
+      1. 리소스 - 예: `https://msdynamicsserver.api.crm3.dynamics.com`
 
    1. &quot;OAuth에 연결&quot;을 클릭합니다.
 
@@ -277,7 +277,7 @@ ht-degree: 3%
 1. 리소스 URL/서비스 루트 URL을 찾으려면 MS® Dynamics 인스턴스 대시보드로 이동합니다.
 1. 상단 탐색 막대에서 &quot;Sales&quot; 또는 고유한 인스턴스 유형을 클릭하고 &quot;Select Settings&quot;를 클릭합니다.
 1. 오른쪽 하단 근처에 있는 &quot;사용자 지정&quot; 및 &quot;개발자 리소스&quot;를 클릭합니다.
-1. 여기에서 서비스 루트 URL을 찾을 수 있습니다. 예
+1. 여기에서 서비스 루트 URL을 찾을 수 있습니다. 예:
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 

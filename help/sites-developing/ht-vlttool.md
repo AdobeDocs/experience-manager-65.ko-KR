@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2718'
+source-wordcount: '2716'
 ht-degree: 2%
 
 ---
@@ -781,7 +781,7 @@ VLT에서 사용하는 상태 코드는 다음과 같습니다.
 
 ## FileVault 동기화 설정 {#setting-up-filevault-sync}
 
-저장소 동기화 서비스는 저장소 콘텐츠를 로컬 파일 시스템 표시와 동기화하거나 그 반대로 동기화하는 데 사용됩니다. 저장소 변경 내용을 수신하고 파일 시스템 콘텐츠를 정기적으로 검사하는 OSGi 서비스를 설치하면 됩니다. 저장소 컨텐츠를 디스크에 매핑하기 위해 자격 증명 모음과 동일한 serialization 형식을 사용합니다.
+저장소 동기화 서비스는 저장소 콘텐츠를 로컬 파일 시스템 표시와 동기화하는 데 사용됩니다. 저장소 변경 내용을 수신하고 파일 시스템 콘텐츠를 정기적으로 검사하는 OSGi 서비스를 설치하면 됩니다. 저장소 컨텐츠를 디스크에 매핑하기 위해 자격 증명 모음과 동일한 serialization 형식을 사용합니다.
 
 >[!NOTE]
 >
@@ -944,7 +944,7 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
    ***
    ```
 
-이제 로컬 폴더가 저장소와 동기화됩니다. 동기화는 양방향이므로 저장소의 수정 사항이 로컬 동기화 폴더에 적용되며, 그 반대의 경우도 마찬가지입니다.
+이제 로컬 폴더가 저장소와 동기화됩니다. 동기화는 양방향이므로 리포지토리의 수정 사항이 로컬 동기화 폴더에 적용되며 반대로 적용됩니다.
 
 >[!NOTE]
 >

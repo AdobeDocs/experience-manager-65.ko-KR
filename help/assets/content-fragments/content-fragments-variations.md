@@ -4,10 +4,10 @@ description: 변형에서 조각에 대한 콘텐츠를 작성한 다음 목적�
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2426'
-ht-degree: 87%
+source-wordcount: '2428'
+ht-degree: 96%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 87%
 * 조각에 사용할 [콘텐츠 입력](#authoring-your-content),
 * [마스터](#managing-variations) 콘텐츠의 **변형 만들기 및 관리**
 
-편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행합니다. 예를 들면 다음과 같습니다.
+편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행하십시오. 예를 들면 다음과 같습니다.
 
-* [조각에 시각적 에셋 삽입](#inserting-assets-into-your-fragment)(이미지)
+* [조각에 시각적 자산 삽입](#inserting-assets-into-your-fragment)(이미지)
 
 * 편집을 위해 [리치 텍스트](#rich-text), [일반 텍스트](#plain-text) 및 [Markdown](#markdown) 중 선택
 
@@ -40,7 +40,7 @@ ht-degree: 87%
 
 ## 콘텐츠 작성 {#authoring-your-content}
 
-편집할 콘텐츠 조각을 열면 기본적으로 **변형** 탭이 열립니다. 보유하고 있는 마스터 또는 변형에 사용할 콘텐츠를 여기에서 작성할 수 있습니다. 구조화된 조각은 컨텐츠 모델에서 정의된 다양한 데이터 유형의 다양한 필드를 포함합니다.
+편집할 콘텐츠 조각을 열면 기본적으로 **변형** 탭이 열립니다. 보유하고 있는 마스터 또는 변형에 사용할 콘텐츠를 여기에서 작성할 수 있습니다. 구조화된 조각은 콘텐츠 모델에서 정의된 다양한 데이터 유형의 다양한 필드를 포함합니다.
 
 예:
 
@@ -48,29 +48,30 @@ ht-degree: 87%
 
 다음과 같은 작업을 수행할 수 있습니다.
 
-* 에서 바로 콘텐츠를 편집합니다. **변형** 탭: 각 데이터 유형은 다음과 같은 다양한 편집 옵션을 제공합니다.
+* **변형** 탭에서 직접 콘텐츠를 편집합니다. 각 데이터 유형은 다음 예와 같이 다양한 편집 옵션을 제공합니다.
 
    * **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 열어 다음과 같은 작업을 수행할 수 있습니다.
 
       * [형식](#formats) 선택
       * 더 많은 편집 옵션 보기([리치 텍스트](#rich-text) 형식)
       * 다양한 [작업](#actions) 액세스
+
    * **조각 참조** 필드의 경우 모델 정의에 따라 [콘텐츠 조각 편집](#fragment-references-edit-content-fragment) 옵션을 사용할 수 있습니다.
 
-
-* 할당 **태그** 현재 변형에 태그를 추가, 업데이트 및 제거할 수 있습니다.
+* 현재 변형에 **태그** 할당: 태그는 추가, 업데이트 및 제거될 수 있음
 
    * [태그](/help/sites-authoring/tags.md)는 콘텐츠 분류 및 분류법에 사용될 수 있으므로 조각을 구성할 때 특히 유용합니다. 태그는 태그별로 콘텐츠를 찾고 일괄 작업을 적용하는 데 사용할 수 있습니다.
 
-      * 태그를 검색하면 태그가 지정된 변형이 강조 표시된 조각이 반환됩니다.
-      * 변형 태그는 변형 이름을 사용하는 대신 특정 CDN(Content Delivery Network) 프로필(CDN 캐싱용)에 대한 변형을 그룹화하는 데 사용할 수도 있습니다.
+      * 태그를 검색하면 태그된 변형이 강조 표시되면서 조각이 반환됩니다.
+      * 변형 이름을 사용하는 대신 변형 태그를 사용하여 특정 CDN(Content Delivery Network) 프로필(CDN 캐싱용)의 변형을 그룹화할 수도 있습니다.
 
-      예를 들어 관련 조각에 &quot;크리스마스 시작&quot;으로 태그를 지정하여 하위 집합으로만 검색할 수 있도록 하거나, 새 폴더에서 향후 시작에 사용할 수 있도록 복사할 수 있습니다.
-   >[!NOTE]
-   >
-   >**태그** 을(를)에 추가할 수도 있습니다. **기본** 변형)을 의 일부로 [메타데이터](/help/assets/content-fragments/content-fragments-metadata.md)
+     예를 들어 관련 조각에 “크리스마스 론치“로 태그를 지정하여 하위 집합으로만 검색할 수 있도록 하거나, 새 폴더에서 향후 실행 시 사용할 수 있도록 복사할 수 있습니다.
 
-* [마스터](#managing-variations) 컨텐츠의 **변형 만들기 및 관리.**
+  >[!NOTE]
+  >
+  >[메타데이터](/help/assets/content-fragments/content-fragments-metadata.md)의 일부로 (**마스터** 변형에) **태그**&#x200B;가 추가될 수 있음
+
+* [마스터](#managing-variations) 콘텐츠의 **변형 만들기 및 관리.**
 
 ### 전체 화면 편집기 {#full-screen-editor}
 
@@ -126,7 +127,7 @@ ht-degree: 87%
 * 텍스트/Word에서 붙여넣기
 * 표 삽입
 * 단락 스타일: 단락, 제목 1/2/3
-* [에셋 삽입](#inserting-assets-into-your-fragment)
+* [자산 삽입](#inserting-assets-into-your-fragment)
 * 전체 화면 편집기를 엽니다. 여기에서 다음 형식 옵션을 사용할 수 있습니다.
    * 검색
    * 찾기/바꾸기
@@ -142,7 +143,7 @@ ht-degree: 87%
 
 >[!CAUTION]
 >
->**일반 텍스트**&#x200B;를 선택하면 형식 지정, Markdown 및/또는 **리치 텍스트**&#x200B;나 **Markdown**&#x200B;으로 삽입한 에셋을 잃을 수 있습니다.
+>**일반 텍스트**&#x200B;를 선택하면 형식 지정, Markdown 및/또는 **리치 텍스트**&#x200B;나 **Markdown**&#x200B;으로 삽입한 자산을 잃을 수 있습니다.
 
 ### Markdown {#markdown}
 
@@ -232,14 +233,16 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
+>
 영어는 즉시 이용 가능합니다.
+>
 다른 언어는 패키지 공유에서 언어 모델 패키지로 사용할 수 있습니다.
+>
 * [프랑스어(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 * [독일어(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [이탈리아어(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [스페인어(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
-
 
 1. **마스터** 또는 필요한 변형을 선택합니다.
 1. 전체 화면 편집기를 엽니다.
@@ -305,49 +308,53 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 * 편집기의 전체 화면과 일반 모드 모두에서 텍스트 상의 강조 표시로 표시됩니다. 그러면 강조 표시된 텍스트를 클릭하여 대화 상자가 다시 열고 주석의 전체 세부 사항을 보거나, 편집하거나, 삭제할 수 있습니다.
 
-   >[!NOTE]
-   여러 개의 주석이 하나의 텍스트에 적용된 경우 드롭다운 선택기가 제공됩니다.
+  >[!NOTE]
+  >
+  여러 개의 주석이 하나의 텍스트에 적용된 경우 드롭다운 선택기가 제공됩니다.
 
 * 주석이 적용된 전체 텍스트를 삭제하면 주석도 삭제됩니다.
 
 * 조각 편집기에서 **주석** 탭을 선택하여 나열하거나 삭제할 수 있습니다.
 
-   ![주석](assets/cfm-variations-08.png)
+  ![주석](assets/cfm-variations-08.png)
 
 * 선택한 조각에 대한 [타임라인](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)에서 보고 삭제할 수 있습니다.
 
-### 조각에 에셋 삽입 {#inserting-assets-into-your-fragment}
+### 조각에 자산 삽입 {#inserting-assets-into-your-fragment}
 
-콘텐츠 조각 작성 프로세스를 간소화하기 위해 [에셋](/help/assets/manage-assets.md)(이미지)을 조각에 바로 추가할 수 있습니다.
+콘텐츠 조각 작성 프로세스를 간소화하기 위해 [자산](/help/assets/manage-assets.md)(이미지)을 조각에 바로 추가할 수 있습니다.
 
-에셋은 형식을 지정하지 않고 조각의 단락 시퀀스에 추가됩니다. [페이지에서 조각을 사용/참조](/help/sites-authoring/content-fragments.md)할 때 형식을 지정할 수 있습니다.
+자산은 형식을 지정하지 않고 조각의 단락 시퀀스에 추가됩니다. [페이지에서 조각을 사용/참조](/help/sites-authoring/content-fragments.md)할 때 형식을 지정할 수 있습니다.
 
 >[!CAUTION]
-참조하는 페이지에서 이러한 에셋을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
-그러나 에셋의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-authoring/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 에셋 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
+>
+참조하는 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
+>
+그러나 자산의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-authoring/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 자산 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
 
 >[!NOTE]
+>
 [이미지](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
 
 1. 이미지를 추가할 위치에 커서를 놓습니다.
-1. **에셋 삽입** 아이콘을 사용하여 검색 대화 상자를 엽니다.
+1. **자산 삽입** 아이콘을 사용하여 검색 대화 상자를 엽니다.
 
-   ![에셋 삽입 아이콘](assets/cfm-variations-09.png)
+   ![자산 삽입 아이콘](assets/cfm-variations-09.png)
 
 1. 대화 상자에서 다음 작업 중 하나를 수행할 수 있습니다.
 
-   * DAM에서 필요한 에셋으로 이동
-   * DAM에서 에셋 검색
+   * DAM에서 필요한 자산으로 이동
+   * DAM에서 자산 검색
 
-   찾으면 썸네일을 클릭하여 필요한 에셋을 선택합니다.
+   찾으면 썸네일을 클릭하여 필요한 자산을 선택합니다.
 
-1. **선택**&#x200B;을 사용하여 에셋을 현재 위치에서 콘텐츠 조각의 단락 시스템에 추가합니다.
+1. **선택**&#x200B;을 사용하여 자산을 현재 위치에서 콘텐츠 조각의 단락 시스템에 추가합니다.
 
    >[!CAUTION]
-   에셋을 추가한 후 형식을 다음과 같이 변경하는 경우
-   * **일반 텍스트**: 에셋이 조각에서 완전히 유실됩니다.
-   * **Markdown**: 에셋이 표시되진 않지만 **리치 텍스트**&#x200B;로 돌아가면 여전히 남아 있습니다.
-
+   >
+   자산을 추가한 후 형식을 다음과 같이 변경하는 경우
+   * **일반 텍스트**: 자산이 조각에서 완전히 유실됩니다.
+   * **Markdown**: 자산이 표시되진 않지만 **리치 텍스트**&#x200B;로 돌아가면 여전히 남아 있습니다.
 
 ### 조각에 콘텐츠 조각 삽입 {#inserting-content-fragment-into-your-fragment}
 
@@ -356,13 +363,17 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 조각의 현재 위치에서 참조로 추가됩니다.
 
 >[!NOTE]
+>
 이 옵션은 **여러 줄 텍스트**&#x200B;가 **조각 참조 허용**&#x200B;으로 구성된 경우 사용할 수 있습니다.
 
 >[!CAUTION]
-참조하는 페이지에서 이러한 에셋을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
-그러나 에셋의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-authoring/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 에셋 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
+>
+참조 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
+>
+그러나 자산의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-authoring/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 자산 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
 
 >[!NOTE]
+>
 [이미지](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
 
 1. 조각을 추가하고자 하는 위치에 커서를 놓습니다.
@@ -372,7 +383,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 1. 대화 상자에서 다음 작업 중 하나를 수행할 수 있습니다.
 
-   * 에셋 폴더에서 필요한 조각으로 이동
+   * 자산 폴더에서 필요한 조각으로 이동
    * 조각 검색
 
    찾은 다음 썸네일에서 필요한 조각을 클릭하여 선택합니다.
@@ -380,10 +391,10 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 1. **선택**&#x200B;을 사용하여 선택한 콘텐츠 조각에 대한 참조를 현재 콘텐츠 조각(현재 위치)에 추가합니다.
 
    >[!CAUTION]
+   >
    다른 조각에 대한 참조를 추가한 후 형식을 다음과 같이 변경하는 경우
    * **일반 텍스트**: 참조가 조각에서 완전히 손실됩니다.
    * **Markdown**: 참조가 유지됩니다.
-
 
 ## 변형 관리 {#managing-variations}
 
@@ -400,10 +411,12 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 1. **추가**&#x200B;를 선택합니다. 조각 **마스터**&#x200B;가 현재[편집](#editing-a-variation)을 위해 열려 있는 새 변형에 복사됩니다.
 
    >[!NOTE]
+   >
    새 변형을 만들 때 새 변형은 현재 열려 있는 변형이 아니라 항상 복사되어 있는 **마스터**&#x200B;입니다.
 
    >[!NOTE]
-   새 변형을 만들 때 **태그** (으)로 현재 할당됨 **기본** 변형이 새 변형에 복사됩니다.
+   >
+   변형을 새로 만들면 **마스터** 변형에 현재 할당된 모든 **태그**&#x200B;가 새 변형에 복사됩니다.
 
 ### 변형 편집 {#editing-a-variation}
 
@@ -420,13 +433,14 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 1. 조각을 열고 사이드 패널에서 **변형**&#x200B;을 선택합니다.
 1. 필요한 변형을 선택합니다.
-1. **작업** 드롭다운에서 **이름 변경**&#x200B;을 선택합니다.
+1. **작업** 드롭다운에서 **이름 바꾸기**&#x200B;을 선택합니다.
 
 1. 결과 대화 상자에서 새 **제목** 및/또는 **설명** 을 입력합니다.
 
-1. **이름 변경** 작업을 확인합니다.
+1. **이름 바꾸기** 작업을 확인합니다.
 
 >[!NOTE]
+>
 이 작업은 변형 **제목**&#x200B;에만 영향을 줍니다.
 
 ### 변형 삭제 {#deleting-a-variation}
@@ -440,6 +454,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 1. 대화 상자에서 **삭제** 작업을 확인합니다.
 
 >[!NOTE]
+>
 **마스터**&#x200B;는 삭제할 수 없습니다.
 
 ### 마스터와 동기화 {#synchronizing-with-master}
@@ -449,9 +464,13 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 변형을 편집할 때 변형의 현재 요소를 마스터와 동기화하는 작업을 수행할 수 있습니다. 이렇게 하면 마스터에 수행된 변경 내용을 필요한 변형에 자동으로 복사할 수 있습니다.
 
 >[!CAUTION]
+>
 *동기화는&#x200B;**마스터**의 변경 내용을*&#x200B;변형에 복사하는 데에만 사용할 수 있습니다.
+>
 변형의 현재 요소만 동기화됩니다.
-동기화는 **여러 줄 텍스트** 데이터 유형.
+>
+동기화는 **여러 줄 텍스트** 데이터 유형에서만 작동합니다.
+>
 *변형의 변경 내용을&#x200B;**마스터***에 전송하는 선택은 할 수 없습니다.
 
 <!-- needs new screenshot for synchronize effect -->
@@ -462,11 +481,11 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    * **작업** 드롭다운 선택기 - **현재 요소를 마스터와 동기화**
 
-      ![마스터와 동기화](assets/cfm-variations-11a.png)
+     ![마스터와 동기화](assets/cfm-variations-11a.png)
 
    * 전체 화면 편집기의 도구 모음 - **마스터와 동기화**
 
-      ![마스터와 동기화](assets/cfm-variations-11b.png)
+     ![마스터와 동기화](assets/cfm-variations-11b.png)
 
 1. 마스터와 변형이 나란히 표시됩니다.
 
@@ -476,4 +495,4 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    ![마스터와 동기화](assets/cfm-variations-11c.png)
 
-1. 선택 **동기화**, 변형이 업데이트되고 표시됩니다.
+1. **동기화**&#x200B;를 선택하면 변형이 업데이트되고 표시됩니다.

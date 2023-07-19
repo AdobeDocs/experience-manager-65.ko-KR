@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 78ec31362f3aceb5cfc9cc0735bccb88082b8e2d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1787'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,6 @@ or
 >* `/libs/settings/cloudsettings`
 >* `/conf/global/settings/cloudsettings`
 >* `/conf/<tenant>/settings/cloudsettings`
-
 
 ## ContextHub UI 표시 및 숨기기 {#showing-and-hiding-the-contexthub-ui}
 
@@ -91,7 +90,7 @@ UI 모드를 관련 ContextHub 모듈 그룹에 추가합니다. UI 모드를 �
    * 모드 아이콘: 의 선택기 [Coral UI 아이콘](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 사용할 항목: 예 `coral-Icon--user`
    * 활성화됨: ContextHub 도구 모음에 UI 모드를 표시하려면 선택하십시오.
 
-1. 저장 을 클릭하거나 탭합니다.
+1. 저장을 클릭하거나 탭합니다.
 
 ### UI 모듈 추가 {#adding-a-ui-module}
 
@@ -127,7 +126,7 @@ UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 �
    * 활성화됨: ContextHub 도구 모음에 UI 모듈을 표시하려면 선택하십시오.
 
 1. (선택 사항) 기본 저장소 구성을 무시하려면 UI 모듈을 구성할 JSON 개체를 입력합니다.
-1. 저장 을 클릭하거나 탭합니다.
+1. 저장을 클릭하거나 탭합니다.
 
 ## ContextHub 저장소 만들기 {#creating-a-contexthub-store}
 
@@ -170,7 +169,7 @@ AEM은 스토어의 기반이 될 수 있는 다음 샘플 스토어 후보를 �
    * **활성화됨:** 스토어를 활성화하려면 선택
 
 1. (선택 사항) 기본 저장소 구성을 재정의하려면 세부 정보 구성(JSON) 상자에 JSON 개체를 입력합니다.
-1. 저장 을 클릭하거나 탭합니다.
+1. 저장을 클릭하거나 탭합니다.
 
 ## 예: JSONP 서비스 사용  {#example-using-a-jsonp-service}
 
@@ -189,7 +188,7 @@ AEM은 스토어의 기반이 될 수 있는 다음 샘플 스토어 후보를 �
 
 contexthub.generic-jsonp 샘플 저장소 후보를 사용하면 JSON 데이터를 반환하는 JSONP 서비스 또는 웹 서비스에서 데이터를 검색할 수 있습니다. 이 저장소 후보의 경우 저장소 구성을 사용하여 사용할 JSONP 서비스에 대한 세부 정보를 제공합니다.
 
-다음 [init](/help/sites-developing/contexthub-api.md#init-name-config) 의 함수 `ContextHub.Store.JSONPStore` Javascript 클래스는 `config` 이 저장소 후보를 초기화하는 개체입니다. 다음 `config` 오브젝트에 다음 포함: `service` jsonp 서비스에 대한 세부 정보를 포함하는 객체입니다. 저장소를 구성하려면 다음을 제공합니다. `service` 세부 구성 속성에 대한 값으로 JSON 형식의 객체입니다.
+다음 [init](/help/sites-developing/contexthub-api.md#init-name-config) 의 함수 `ContextHub.Store.JSONPStore` JavaScript 클래스는 `config` 이 저장소 후보를 초기화하는 개체입니다. 다음 `config` 오브젝트에 다음 포함: `service` jsonp 서비스에 대한 세부 정보를 포함하는 객체입니다. 저장소를 구성하려면 다음을 제공합니다. `service` 세부 구성 속성에 대한 값으로 JSON 형식의 객체입니다.
 
 jsontest.com 사이트의 MD5 서비스에서 데이터를 저장하려면 [ContextHub 저장소 만들기](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store) 다음 속성 사용:
 
@@ -199,21 +198,21 @@ jsontest.com 사이트의 MD5 서비스에서 데이터를 저장하려면 [Cont
 * **활성화됨:** 선택
 * **세부 정보 구성(JSON):**
 
-   ```xml
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```xml
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### md5 데이터에 대한 UI 모듈 추가 {#adding-a-ui-module-for-the-md-data}
 
@@ -227,15 +226,15 @@ ContextHub 도구 모음에 UI 모듈을 추가하여 예제 md5 저장소에 �
 * **모듈 유형:** contexthub.base
 * **세부 정보 구성(JSON):**
 
-   ```xml
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Converstion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```xml
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Converstion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## ContextHub 디버깅 {#debugging-contexthub}
 

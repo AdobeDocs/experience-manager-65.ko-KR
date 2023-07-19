@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '998'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
 <table>
  <tbody>
   <tr>
-   <td><strong>Javascript 메서드</strong></td>
+   <td><strong>JavaScript 메서드</strong></td>
    <td><strong>서비스 이름</strong></td>
    <td><strong>API 이름</strong></td>
    <td><strong>댓글</strong></td>
@@ -308,7 +308,7 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>getAssignmentsForTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getAssignmentsForTask</td>
-   <td>작업에 대한 모든 할당을 가져옵니다. 예를 들어 :- 사용자가 작업을 다른 사용자와 전달하거나 협의하는 경우, 작업이 할당됩니다.</td>
+   <td>작업에 대한 모든 할당을 가져옵니다. 예를 들어 :- 사용자가 작업을 다른 사용자와 전달하거나 협의하는 경우, 이 작업은 작업에 대한 할당입니다.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>

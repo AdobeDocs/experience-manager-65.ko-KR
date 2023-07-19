@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 9ad531738ac5e3c9d888f685b47c8b322712a89e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2782'
 ht-degree: 2%
 
 ---
@@ -53,9 +53,9 @@ ht-degree: 2%
    * 모델은 데이터 유형을 기반으로 합니다.
    * 새 변형 등을 추가하는 함수는 적절하게 조각을 업데이트해야 합니다.
 
-   >[!CAUTION]
-   >
-   >기존 콘텐츠 조각 모델을 변경하면 종속된 조각이 영향을 받을 수 있습니다. 이로 인해 해당 조각에서 고립 속성이 발생할 수 있습니다.
+  >[!CAUTION]
+  >
+  >기존 콘텐츠 조각 모델을 변경하면 종속된 조각이 영향을 받을 수 있습니다. 이로 인해 해당 조각에서 고립 속성이 발생할 수 있습니다.
 
 * 컨텐츠 조각 템플릿:
 
@@ -83,15 +83,14 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 * 모든 콘텐츠는 아래에 저장됩니다. `jcr:content/data` 에셋의 노드:
 
    * 요소 데이터는 마스터 하위 노드 아래에 저장됩니다.
-      `jcr:content/data/master`
+     `jcr:content/data/master`
 
    * 변형은 변형의 이름을 전달하는 하위 노드 아래에 저장됩니다. 예: `jcr:content/data/myvariation`
 
    * 각 요소의 데이터는 각 하위 노드에 요소 이름(예: 요소의 콘텐츠)을 갖는 속성으로 저장됩니다 `text` 속성으로 저장됩니다. `text` 날짜 `jcr:content/data/master`
 
 * 메타데이터 및 관련 콘텐츠는 아래에 저장됩니다. `jcr:content/metadata`
-기존 메타데이터로 간주되지 않고 에 저장되는 제목과 설명을 제외하고 
-`jcr:content`
+기존 메타데이터로 간주되지 않고 에 저장되는 제목과 설명을 제외하고 `jcr:content`
 
 #### 에셋에 단순 콘텐츠 조각 매핑 {#mapping-simple-content-fragments-to-assets}
 
@@ -162,8 +161,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 이에 대한 매개 변수는 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)OSGi 번들의 경우 **콘텐츠 조각 구성 요소 구성**.
 
 * **리소스 유형**
-의 목록 
-`sling:resourceTypes` 는 콘텐츠 조각을 렌더링하는 데 사용되는 구성 요소와 배경 처리를 적용할 위치를 정의하는 데 제공될 수 있습니다.
+의 목록 `sling:resourceTypes` 는 콘텐츠 조각을 렌더링하는 데 사용되는 구성 요소와 배경 처리를 적용할 위치를 정의하는 데 제공될 수 있습니다.
 
 * **참조 속성**
 속성 목록은 조각에 대한 참조가 각각의 컴포넌트에 대해 저장되는 위치를 지정하도록 구성될 수 있다.
@@ -199,43 +197,44 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * **번역**
 
-   콘텐츠 조각은 [AEM 번역 워크플로](/help/sites-administering/tc-manage.md). 아키텍처 수준에서 이는 다음을 의미합니다.
+  콘텐츠 조각은 [AEM 번역 워크플로](/help/sites-administering/tc-manage.md). 아키텍처 수준에서 이는 다음을 의미합니다.
 
    * 컨텐츠 조각의 개별 번역은 실제로 별도의 조각입니다. 예를 들면 다음과 같습니다.
 
       * 이러한 언어 루트는 서로 다른 언어 루트 아래에 있습니다.
 
-         `/content/dam/<path>/en/<to>/<fragment>`
+        `/content/dam/<path>/en/<to>/<fragment>`
 
-         및
+        및
 
-         `/content/dam/<path>/de/<to>/<fragment>`
+        `/content/dam/<path>/de/<to>/<fragment>`
 
       * 하지만 언어 루트 아래에서 정확히 동일한 상대 경로를 공유합니다.
 
-         `/content/dam/<path>/en/<to>/<fragment>`
+        `/content/dam/<path>/en/<to>/<fragment>`
 
-         및
+        및
 
-         `/content/dam/<path>/de/<to>/<fragment>`
+        `/content/dam/<path>/de/<to>/<fragment>`
+
    * 규칙 기반 경로 외에, 콘텐츠 조각의 서로 다른 언어 버전 간에는 더 이상 연결되지 않습니다. UI에서 언어 변형 사이를 이동하는 수단을 제공하긴 하지만, 두 개의 개별 조각으로 처리됩니다.
-   >[!NOTE]
-   >
-   >AEM 번역 워크플로우는 `/content`:
-   >
-   >* 콘텐츠 조각 모델 위치 `/conf`, 이러한 번역은 포함되지 않습니다. 다음을 수행할 수 있습니다. [UI 문자열 다국어화](/help/sites-developing/i18n-dev.md).
-   >
-   >* 템플릿은 조각이 암시적으로 생성되도록 복사됩니다.
 
+  >[!NOTE]
+  >
+  >AEM 번역 워크플로우는 `/content`:
+  >
+  >* 콘텐츠 조각 모델 위치 `/conf`, 이러한 번역은 포함되지 않습니다. 다음을 수행할 수 있습니다. [UI 문자열 다국어화](/help/sites-developing/i18n-dev.md).
+  >
+  >* 템플릿은 조각이 암시적으로 생성되도록 복사됩니다.
 
 * **메타데이터 스키마**
 
    * 콘텐츠 조각 (재)사용 [메타데이터 스키마](/help/assets/metadata-schemas.md)를 설정하는 것이 좋습니다.
    * CFM은 고유한 특정 스키마를 제공합니다.
 
-      `/libs/dam/content/schemaeditors/forms/contentfragment`
+     `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      필요한 경우 이 기능을 확장할 수 있습니다.
+     필요한 경우 이 기능을 확장할 수 있습니다.
 
    * 각 스키마 양식은 조각 편집기와 통합됩니다.
 
@@ -255,20 +254,20 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * **조각 템플릿** ([조각 템플릿](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-   사용 `FragmentTemplate.createFragment()` 새 조각을 만드는 데 사용됩니다.
+  사용 `FragmentTemplate.createFragment()` 새 조각을 만드는 데 사용됩니다.
 
-   ```
-   Resource templateOrModelRsc = resourceResolver.getResource("...");
-   FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
-   ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
-   ```
+  ```
+  Resource templateOrModelRsc = resourceResolver.getResource("...");
+  FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
+  ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
+  ```
 
-   이 인터페이스는 다음을 나타냅니다.
+  이 인터페이스는 다음을 나타냅니다.
 
    * 콘텐츠 조각을 만들 콘텐츠 조각 모델 또는 콘텐츠 조각 템플릿
    * 및 (생성 후) 해당 조각의 구조 정보
 
-   이 정보는 다음과 같습니다.
+  이 정보는 다음과 같습니다.
 
    * 기본 데이터 액세스(제목, 설명)
    * 조각 요소의 템플릿/모델에 액세스합니다.
@@ -276,37 +275,35 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
       * 목록 요소 템플릿
       * 주어진 요소에 대한 구조 정보 가져오기
       * 요소 템플릿에 액세스( 참조) `ElementTemplate`)
+
    * 조각 변형에 대한 템플릿에 액세스합니다.
 
       * 목록 변형 템플릿
       * 주어진 변형에 대한 구조적 정보 가져오기
       * 변형 템플릿 액세스( 참조) `VariationTemplate`)
+
    * 초기 관련 콘텐츠 가져오기
 
-   중요한 정보를 나타내는 인터페이스:
+  중요한 정보를 나타내는 인터페이스:
 
    * `ElementTemplate`
 
       * 기본 데이터(이름, 제목) 가져오기
       * 초기 요소 콘텐츠 가져오기
+
    * `VariationTemplate`
 
       * 기본 데이터(이름, 제목, 설명) 가져오기
 
-
-
-
-
-
 * **컨텐츠 조각** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-   이 인터페이스를 사용하면 추상적인 방식으로 콘텐츠 조각을 사용하여 작업할 수 있습니다.
+  이 인터페이스를 사용하면 추상적인 방식으로 콘텐츠 조각을 사용하여 작업할 수 있습니다.
 
-   >[!CAUTION]
-   >
-   >이 인터페이스를 통해 조각에 액세스하는 것이 좋습니다. 콘텐츠 구조를 직접 변경하지 말아야 합니다.
+  >[!CAUTION]
+  >
+  >이 인터페이스를 통해 조각에 액세스하는 것이 좋습니다. 콘텐츠 구조를 직접 변경하지 말아야 합니다.
 
-   인터페이스는 다음과 같은 수단을 제공합니다.
+  인터페이스는 다음과 같은 수단을 제공합니다.
 
    * 기본 데이터 관리(예: 이름 가져오기, 제목/설명 가져오기/설정)
    * 메타데이터 액세스
@@ -317,6 +314,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
       * 새 요소 만들기(참조) [주의 사항](#caveats))
 
       * 요소 데이터 액세스(참조) `ContentElement`)
+
    * 조각에 대해 정의된 목록 변형
    * 전체적으로 새 변형 만들기
    * 관련 콘텐츠 관리:
@@ -324,9 +322,10 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
       * 컬렉션 나열
       * 컬렉션 추가
       * 컬렉션 제거
+
    * 조각의 모델 또는 템플릿 액세스
 
-   조각의 주요 요소를 나타내는 인터페이스는 다음과 같습니다.
+  조각의 주요 요소를 나타내는 인터페이스는 다음과 같습니다.
 
    * **컨텐츠 요소** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
@@ -339,24 +338,20 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
          * 새 변형 만들기(참조) [주의 사항](#caveats))
          * 변형 제거(참조) [주의 사항](#caveats))
          * 변형 데이터 액세스(참조) `ContentVariation`)
+
       * 변형 해결을 위한 바로 가기(지정된 변형을 요소에 사용할 수 없는 경우 구현별 추가 폴백 논리 적용)
+
    * **컨텐츠 변형** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 기본 데이터(이름, 제목, 설명) 가져오기
       * 콘텐츠 가져오기/설정
       * 마지막으로 수정된 정보를 기반으로 한 간단한 동기화
 
-   세 가지 인터페이스 모두( `ContentFragment`, `ContentElement`, `ContentVariation`) 확장 `Versionable` 컨텐츠 조각에 필요한 버전 관리 기능을 추가하는 인터페이스:
+  세 가지 인터페이스 모두( `ContentFragment`, `ContentElement`, `ContentVariation`) 확장 `Versionable` 컨텐츠 조각에 필요한 버전 관리 기능을 추가하는 인터페이스:
 
    * 요소의 새 버전 만들기
    * 요소의 목록 버전
    * 버전이 지정된 요소의 특정 버전 콘텐츠 가져오기
-
-
-
-
-
-
 
 ### 적응 - adaptTo() 사용 {#adapting-using-adaptto}
 
@@ -408,7 +403,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * `filter.xml`
 
-   다음 `filter.xml` 의 콘텐츠 조각 관리는 에셋 핵심 콘텐츠 패키지와 겹치지 않도록 구성됩니다.
+  다음 `filter.xml` 의 콘텐츠 조각 관리는 에셋 핵심 콘텐츠 패키지와 겹치지 않도록 구성됩니다.
 
 ## 세션 편집 {#edit-sessions}
 
@@ -441,18 +436,18 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
       * 마지막으로 수정된 정보가 업데이트됩니다.
       * 쿠키가 제거됩니다.
+
    * 롤백 시:
 
       * 편집 세션이 시작될 때 만들어진 콘텐츠 조각의 버전이 복원됩니다.
       * 쿠키가 제거됩니다.
-
 
 * 편집
 
    * 모든 변경 사항(자동 저장 포함)은 분리된 보호 영역이 아닌 활성 콘텐츠 조각에서 수행됩니다.
    * 따라서 이러한 변경 사항은 각 콘텐츠 조각을 참조하는 AEM 페이지에 즉시 반영됩니다
 
-#### 작업 {#actions}
+#### 액션 {#actions}
 
 가능한 작업은 다음과 같습니다.
 
@@ -464,10 +459,10 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
          * 현재 조각인 경우 세션을 다시 설정합니다.
          * 그렇지 않은 경우 이전에 편집한 콘텐츠 조각에 대한 편집을 취소하고 쿠키를 제거해 보십시오(나중에 편집 세션이 표시되지 않음).
+
       * 편집 세션이 존재하지 않는 경우 사용자가 처음으로 변경할 때까지 기다립니다(아래 참조).
+
    * 페이지에서 콘텐츠 조각이 이미 참조되었는지 확인하고 참조된 경우 적절한 정보를 표시합니다.
-
-
 
 * 콘텐츠 변경
 

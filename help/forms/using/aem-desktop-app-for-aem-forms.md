@@ -10,9 +10,9 @@ discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -42,4 +42,4 @@ AEM Desktop App은 Microsoft Windows의 WebDAV 프로토콜과 Mac OS X의 SMB1�
 1. AEM Forms 서버를 다시 시작합니다. 다시 시작하면 AEM Forms 서버가 AEM 데스크탑 앱에서 콘텐츠를 수락하고 공유할 수 있도록 활성화됩니다.
 1. 앱을 열고 AEM Forms 서버에 연결합니다.
 
-   연결에 성공하면 앱이 `content/dam` 및 `content/dam/formsanddocuments` 개 폴더. 위 폴더에서 로컬 폴더로 또는 그 반대로 파일을 이동할 때 앱을 사용하여 자동으로 채워진 폴더 간에 콘텐츠를 이동할 수 있습니다.
+   연결에 성공하면 앱이 `content/dam` 및 `content/dam/formsanddocuments` 개 폴더. 위 폴더에서 로컬 폴더로 파일을 이동할 수 있으며 반대로 앱을 사용하여 자동으로 채워진 폴더 간에 콘텐츠를 이동할 수 있습니다.

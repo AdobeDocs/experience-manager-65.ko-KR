@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 9%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 9%
 * 특정 필드는 일반적으로 고유합니다(예: 페이지 제목). 하나의 값이 적용될 때 일괄 편집에 이러한 필드를 활성화하는 것이 의미가 있는지 여부를 결정해야 합니다.
 * 특정 필드에는 여러 값이 있을 수 있습니다. 렌더링할 때 의미 있는 표현이 필요합니다.
 
-   예를 들어 &quot;게시 준비&quot;를 나타내는 확인란입니다. 이 값에는 벌크 편집 전에 여러 값이 있을 수 있습니다(예: 준비, 검토 중, 진행 중).
+  예를 들어 &quot;게시 준비&quot;를 나타내는 확인란입니다. 이 값에는 대량 편집 전에 몇 가지 값이 있을 수 있습니다(예: 준비, 검토 중, 진행 중).
 
 >[!CAUTION]
 >
@@ -36,7 +36,6 @@ ht-degree: 9%
 >* 라이브 카피 내의 페이지에는 사용할 수 없습니다.
 >* 리소스 유형이 동일한 페이지에만 사용할 수 있습니다.
 >
-
 
 >[!NOTE]
 >
@@ -56,7 +55,6 @@ ht-degree: 9%
 >* `/libs/granite/ui/components/foundation/form/checkbox`
 >
 
-
 필드는 페이지 구성 요소에서 활성화됩니다(*아님* (템플릿에서):
 
 1. CRXDE Lite(또는 이와 동등한 방법)를 사용하여 페이지 구성 요소를 엽니다.
@@ -65,7 +63,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >이 예제에서는 핵심 구성 요소가 인스턴스에 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 콘텐츠로 실행되는 경우입니다. 다음을 참조하십시오. [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 추가 정보.
+   >이 예제에서는 핵심 구성 요소가 인스턴스에 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 콘텐츠로 실행되는 경우입니다. 다음을 참조하십시오. [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 추가 정보.
 
 1. 내에서 필요한 필드로 이동합니다. `cq:dialog` 정의.
 1. 필드 노드에서 다음 속성을 정의합니다.
@@ -92,6 +90,5 @@ ht-degree: 9%
    >
    >    1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
    >    1. 다음 범위 내에서 변경 `/apps`
-
 
 1. 선택 **모두 저장** 을 클릭하여 업데이트를 유지합니다.

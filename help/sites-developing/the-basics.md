@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '3324'
+source-wordcount: '3327'
 ht-degree: 1%
 
 ---
@@ -152,7 +152,7 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
 * 절대
 * 상대, 구성 매개 변수 기준
 
-   상대 경로는 이동성을 높이므로 Adobe에서 권장합니다.
+  상대 경로는 이동성을 높이므로 Adobe에서 권장합니다.
 
 모든 Sling 스크립트는 다음 중 하나의 하위 폴더에 저장됩니다. `/apps` 또는 `/libs`: 이 순서로 검색됩니다(참조) [구성 요소 및 기타 요소 맞춤화](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -175,39 +175,39 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
 
 * GET/HEAD 요청 및 .html로 끝나는 URL(기본 요청 유형, 기본 형식)
 
-   스크립트는 /apps/hr/jobs/jobs.esp이며 sling:resourceType의 마지막 섹션이 파일 이름을 형성합니다.
+  스크립트는 /apps/hr/jobs/jobs.esp이며 sling:resourceType의 마지막 섹션이 파일 이름을 형성합니다.
 
 * POST 요청(GET/HEAD을 제외한 모든 요청 유형, 메서드 이름은 대문자로 지정)
 
-   POST은 스크립트 이름에 사용됩니다.
+  POST은 스크립트 이름에 사용됩니다.
 
-   스크립트는 `/apps/hr/jobs/jobs.POST.esp`.
+  스크립트는 `/apps/hr/jobs/jobs.POST.esp`.
 
 * .html로 끝나지 않는 다른 형식의 URL
 
-   예, `../content/corporate/jobs/developer.pdf`
+  예, `../content/corporate/jobs/developer.pdf`
 
-   스크립트는 `/apps/hr/jobs/jobs.pdf.esp`; 접미사가 스크립트 이름에 추가됩니다.
+  스크립트는 `/apps/hr/jobs/jobs.pdf.esp`; 접미사가 스크립트 이름에 추가됩니다.
 
 * 선택기가 있는 URL
 
-   선택기를 사용하여 동일한 콘텐츠를 대체 형식으로 표시할 수 있습니다. 예를 들어 프린터에 친숙한 버전, rss 피드 또는 요약이 있습니다.
+  선택기를 사용하여 동일한 콘텐츠를 대체 형식으로 표시할 수 있습니다. 예를 들어 프린터에 친숙한 버전, rss 피드 또는 요약이 있습니다.
 
-   선택기가 있는 프린터에 친숙한 버전을 보면 *인쇄*&#x200B;에서와 같이 `../content/corporate/jobs/developer.print.html`
+  선택기가 있는 프린터에 친숙한 버전을 보면 *인쇄*&#x200B;에서와 같이 `../content/corporate/jobs/developer.print.html`
 
-   스크립트는 `/apps/hr/jobs/jobs.print.esp`; 선택기가 스크립트 이름에 추가됩니다.
+  스크립트는 `/apps/hr/jobs/jobs.print.esp`; 선택기가 스크립트 이름에 추가됩니다.
 
 * sling:resourceType이 정의되지 않은 경우:
 
    * 콘텐츠 경로는 적절한 스크립트를 검색하는 데 사용됩니다(경로 기반 ResourceTypeProvider가 활성화된 경우).
 
-      예를 들어 다음 스크립트 `../content/corporate/jobs/developer.html` 에서 검색을 생성합니다. `/apps/content/corporate/jobs/`.
+     예를 들어 다음 스크립트 `../content/corporate/jobs/developer.html` 에서 검색을 생성합니다. `/apps/content/corporate/jobs/`.
 
    * 기본 노드 유형이 사용됩니다.
 
 * 스크립트가 전혀 없으면 기본 스크립트가 사용됩니다.
 
-   기본 렌디션은 현재 일반 텍스트(.txt), HTML(.html) 및 JSON(.json)으로 지원되며, 모두 해당 노드의 속성(적절한 형식)이 나열됩니다. 확장 .res의 기본 렌디션 또는 요청 확장명이 없는 요청은 리소스를 스풀 처리하는 것입니다(가능한 경우).
+  기본 렌디션은 현재 일반 텍스트(.txt), HTML(.html) 및 JSON(.json)으로 지원되며, 모두 해당 노드의 속성(적절한 형식)이 나열됩니다. 확장 .res의 기본 렌디션 또는 요청 확장명이 없는 요청은 리소스를 스풀 처리하는 것입니다(가능한 경우).
 * HTTP 오류 처리(코드 403 또는 404)의 경우 Sling은 다음 중 하나에서 스크립트를 찾습니다.
 
    * /apps/sling/servlet/errorhandler 위치 [사용자 지정된 스크립트](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -248,19 +248,19 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
    * b
 
       * sling:resourceSuperType = a
+
    * c
 
       * sling:resourceSuperType = b
+
    * x
 
       * sling:resourceType = c
+
    * y
 
       * sling:resourceType = c
       * sling:resourceSuperType = a
-
-
-
 
 유형 계층:
 
@@ -418,29 +418,29 @@ pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체�
 
 * `/apps`
 
-   애플리케이션 관련. 웹 사이트와 관련된 구성 요소 정의를 포함합니다. 개발하는 구성 요소는에서 사용할 수 있는 기본 구성 요소를 기반으로 할 수 있습니다. `/libs/foundation/components`.
+  애플리케이션 관련. 웹 사이트와 관련된 구성 요소 정의를 포함합니다. 개발하는 구성 요소는에서 사용할 수 있는 기본 구성 요소를 기반으로 할 수 있습니다. `/libs/foundation/components`.
 
 * `/content`
 
-   웹 사이트용으로 생성된 콘텐츠.
+  웹 사이트용으로 생성된 콘텐츠.
 
 * `/etc`
 
 * `/home`
 
-   사용자 및 그룹 정보.
+  사용자 및 그룹 정보.
 
 * `/libs`
 
-   AEM의 핵에 속하는 라이브러리 및 정의입니다. 의 하위 폴더 `/libs` 검색 또는 복제와 같은 기본 AEM 기능을 나타냅니다. 의 콘텐츠 `/libs` AEM 작동 방식에 영향을 주므로 수정해서는 안 됩니다. 웹 사이트별 기능은 아래에서 개발해야 합니다. `/apps` (참조 [구성 요소 및 기타 요소 맞춤화](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+  AEM의 핵에 속하는 라이브러리 및 정의입니다. 의 하위 폴더 `/libs` 검색 또는 복제와 같은 기본 AEM 기능을 나타냅니다. 의 콘텐츠 `/libs` AEM 작동 방식에 영향을 주므로 수정해서는 안 됩니다. 웹 사이트별 기능은 아래에서 개발해야 합니다. `/apps` (참조 [구성 요소 및 기타 요소 맞춤화](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
-   임시 작업 영역.
+  임시 작업 영역.
 
 * `/var`
 
-   감사 로그, 통계, 이벤트 처리 등 시스템에서 변경 및 업데이트되는 파일.
+  감사 로그, 통계, 이벤트 처리 등 시스템에서 변경 및 업데이트되는 파일.
 
 ## 환경 {#environments}
 
@@ -456,7 +456,7 @@ FileVault는 JCR 저장소에 파일 시스템 매핑 및 버전 제어를 제�
 
 다음을 참조하십시오. [FileVault 도구](/help/sites-developing/ht-vlttool.md) 자세한 내용은 설명서를 참조하십시오.
 
-## 워크플로 {#workflows}
+## 워크플로우 {#workflows}
 
 컨텐츠는 여러 참가자의 승인 및 승인과 같은 단계를 비롯한 조직 프로세스의 영향을 받습니다. 이러한 프로세스는 워크플로우로 표시될 수 있습니다. [AEM 내에서 정의 및 개발됨](/help/sites-developing/workflows-models.md)을 추가한 다음 [적절한 컨텐츠 페이지](/help/sites-administering/workflows.md) 또는 [디지털 자산](/help/assets/assets-workflow.md) 필요에 따라.
 

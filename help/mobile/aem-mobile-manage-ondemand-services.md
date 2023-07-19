@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
@@ -46,6 +46,7 @@ Mobile On Demand Preflight 앱을 사용하면 액세스 권한이 있는 모든
 >[!NOTE]
 >
 >AEM Preflight 앱은 콘텐츠를 미리 보고 페이지를 검색하는 데 사용됩니다. Preflight 앱에 대해 자세히 알아보려면 [여기](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>
 
 ### 시작하기 {#getting-ahead}
 

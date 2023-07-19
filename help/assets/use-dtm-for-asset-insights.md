@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Adobe 다이내믹 Tag Management은 디지털 마케팅 도구를 활성화하�
 
    * 다음 항목 선택 **[!UICONTROL 웹 속성]** 탭을 클릭한 다음 **[!UICONTROL 속성 추가]**.
 
-   * 필드를 적절하게 업데이트한 다음 **[!UICONTROL 속성 만들기]**. 다음을 참조하십시오 [설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR).
+   * 필드를 적절하게 업데이트한 다음 **[!UICONTROL 속성 만들기]**. 다음을 참조하십시오 [설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![편집 웹 속성 만들기](assets/Create-edit-web-property.png)
 
@@ -53,7 +53,6 @@ Adobe 다이내믹 Tag Management은 디지털 마케팅 도구를 활성화하�
    >* 에 대한 호출 `assetAnalytics.dispatcher.init()` 이(가) 제거되었습니다. 함수는 DTM의 Adobe Analytics 도구 로드가 완료되면 호출됩니다.
    >* Assets Insights 페이지 추적기가 호스팅되는 위치(예: Experience Manager, CDN 등)에 따라 스크립트 소스의 원본을 변경해야 할 수 있습니다.
    >* Experience Manager이 호스팅된 페이지 추적기의 경우 소스는 Dispatcher 인스턴스의 호스트 이름을 사용하는 게시 인스턴스를 가리켜야 합니다.
-
 
 1. 액세스 `https://dtm.adobe.com`. 클릭 **[!UICONTROL 개요]** 웹 속성에서 **[!UICONTROL 도구 추가]** 또는 기존 Adobe Analytics 도구를 엽니다. 도구를 만드는 동안 다음을 설정할 수 있습니다 **[!UICONTROL 구성 메서드]** 끝 **[!UICONTROL 자동]**.
 
@@ -91,10 +90,10 @@ Adobe 다이내믹 Tag Management은 디지털 마케팅 도구를 활성화하�
              "",  /** RSID to send tracking-call to */
              "",  /** Tracking Server to send tracking-call to */
              "",  /** Visitor Namespace to send tracking-call to */
-             "",  /** listVar to put comma-separated-list of Asset IDs for Asset Impression Events in tracking-call, e.g. 'listVar1' */
-             "",  /** eVar to put Asset ID for Asset Click Events in, e.g. 'eVar3' */
-             "",  /** event to include in tracking-calls for Asset Impression Events, e.g. 'event8' */
-             "",  /** event to include in tracking-calls for Asset Click Events, e.g. 'event7' */
+             "",  /** listVar to put comma-separated-list of Asset IDs for Asset Impression Events in tracking-call, for example, 'listVar1' */
+             "",  /** eVar to put Asset ID for Asset Click Events in, for example, 'eVar3' */
+             "",  /** event to include in tracking-calls for Asset Impression Events, for example, 'event8' */
+             "",  /** event to include in tracking-calls for Asset Click Events, for example, 'event7' */
              sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
              );
        sObj.usePlugins = true;
@@ -110,8 +109,8 @@ Adobe 다이내믹 Tag Management은 디지털 마케팅 도구를 활성화하�
    * DTM의 페이지 로드 규칙에는 `pagetracker.js` 코드. 임의 `assetAnalytics` 필드는 기본값에 대한 재정의로 간주됩니다. 기본적으로 필요하지 않습니다.
    * 코드 호출 `assetAnalytics.dispatcher.init()` 다음을 확인: `_satellite.getToolsByType('sc')[0].getS()` 초기화되고 `assetAnalytics,dispatcher.init` 을(를) 사용할 수 있습니다. 따라서 11단계에서 추가를 건너뛸 수 있습니다.
    * Insights 페이지 추적기 코드 내의 주석에 표시된 대로(**[!UICONTROL 도구 > 자산 > 통찰력 페이지 추적기]**), 페이지 추적기에서 `AppMeasurement` 개체, 처음 세 개의 인수(RSID, 추적 서버 및 방문자 네임스페이스)는 관련이 없습니다. 빈 문자열이 대신 전달되어 강조 표시됩니다.\
-      나머지 인수는 Insights 구성 페이지에서 구성된 인수 (**[!UICONTROL 도구 > 에셋 > Insights 구성]**).
-   * AppMeasurement 개체가 쿼리를 통해 검색됩니다. `satelliteLib` 사용 가능한 모든 SiteCatalyst 엔진에 사용됩니다. 여러 태그가 구성된 경우 배열 선택기의 인덱스를 적절하게 변경합니다. 배열의 항목은 DTM 인터페이스에서 사용할 수 있는 SiteCatalyst 도구에 따라 순서가 지정됩니다.
+     나머지 인수는 Insights 구성 페이지에서 구성된 인수 (**[!UICONTROL 도구 > 에셋 > Insights 구성]**).
+   * AppMeasurement 개체는 쿼리를 통해 검색됩니다. `satelliteLib` 사용 가능한 모든 SiteCatalyst 엔진에 사용됩니다. 여러 태그가 구성된 경우 배열 선택기의 인덱스를 적절하게 변경합니다. 배열의 항목은 DTM 인터페이스에서 사용할 수 있는 SiteCatalyst 도구에 따라 순서가 지정됩니다.
 
 1. 코드 편집기 창을 저장하고 닫은 다음 도구 구성의 변경 사항을 저장합니다.
 1. 다음에서 **[!UICONTROL 승인]** 탭에서 보류 중인 승인을 모두 승인합니다. DTM 태그를 웹 페이지에 삽입할 준비가 되었습니다.

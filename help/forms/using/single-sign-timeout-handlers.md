@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 exl-id: 4f824d80-f3f8-4010-9583-5a9ab1151a7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
 
 # 단일 사인온 및 시간 제한 핸들러 {#single-sign-on-and-timeout-handlers}
 
-AEM Forms 작업 영역이 SSO로 활성화되어 있습니다. 사용자가 Forms Manager 또는 PDF 생성기 사용자 인터페이스와 같은 AEM Forms 애플리케이션에 로그인하고 동일한 브라우저 세션에서 AEM Forms 작업 영역에 액세스한 경우 AEM Forms 작업 영역에 로그인되고 그 반대의 경우도 가능합니다.
+AEM Forms 작업 영역이 SSO로 활성화되어 있습니다. 사용자가 Forms Manager 또는 PDF Generator 사용자 인터페이스와 같은 AEM Forms 애플리케이션에 로그인하여 동일한 브라우저 세션에서 AEM Forms 작업 영역에 액세스한 경우 AEM Forms 작업 영역에 로그인되고 반대의 경우도 마찬가지입니다.
 
 ## AEM Forms 작업 영역에서 서버 시간 제한 처리 {#handling-server-timeout-in-nbsp-aem-forms-workspace}
 

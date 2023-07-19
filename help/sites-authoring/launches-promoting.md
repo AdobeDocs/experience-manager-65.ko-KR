@@ -10,10 +10,10 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 77%
+source-wordcount: '774'
+ht-degree: 78%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 77%
 
 >[!NOTE]
 >
->론치 페이지를 대상(**프로덕션**)에 홍보한 후 **프로덕션** 페이지를 엔티티로 활성화할 수 있습니다(프로세스를 더 빠르게 진행하기 위해). 페이지를 작업 흐름 패키지에 추가하고, 페이지 패키지를 활성화하는 작업 흐름용 페이로드로 사용합니다. 론치를 승격하려면 먼저 작업 흐름 패키지를 만들어야 합니다. [AEM 워크플로를 사용하여 홍보된 페이지 처리](#processing-promoted-pages-using-aem-workflow)를 참조하십시오.
+>론치 페이지를 대상(**프로덕션**)에 홍보한 후 **프로덕션** 페이지를 엔터티로 활성화할 수 있습니다(프로세스를 더 빠르게 진행하기 위해). 페이지를 작업 흐름 패키지에 추가하고, 페이지 패키지를 활성화하는 작업 흐름용 페이로드로 사용합니다. 론치를 승격하려면 먼저 작업 흐름 패키지를 만들어야 합니다. [AEM 워크플로우를 사용하여 홍보된 페이지 처리](#processing-promoted-pages-using-aem-workflow)를 참조하십시오.
 
 >[!CAUTION]
 >
@@ -56,7 +56,7 @@ ht-degree: 77%
 
       1. [참조 레일](/help/sites-authoring/author-environment-tools.md#showingpagereferences)을 연 다음 [선택 모드](/help/sites-authoring/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다. 순서는 중요하지 않으므로 필요한 소스 페이지를 선택한 다음 참조 레일을 열 수도 있습니다. 모든 참조가 표시됩니다.
 
-      1. 선택 **론치** (예: 특정 론치 목록을 표시하는 론치(1)).
+      1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
       1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
 
@@ -145,7 +145,7 @@ ht-degree: 77%
 
    ![론치 콘솔](assets/chlimage_1-107.png)
 
-## AEM 워크플로를 사용하여 홍보된 페이지 처리 {#processing-promoted-pages-using-aem-workflow}
+## AEM 워크플로우를 사용하여 홍보된 페이지 처리 {#processing-promoted-pages-using-aem-workflow}
 
 작업 흐름 모델을 사용하여 다음과 같이 승격된 론치 페이지의 일괄 프로세스를 수행할 수 있습니다.
 

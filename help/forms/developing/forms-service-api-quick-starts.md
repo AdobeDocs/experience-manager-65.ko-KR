@@ -11,7 +11,7 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 0%
@@ -1974,7 +1974,7 @@ Forms 서비스 API를 사용하는 애플리케이션 로직은 Java 서블릿�
 * `convertDataSource`: 를 전환합니다. `org.w3c.dom.Document` 에 대한 오브젝트 `com.adobe.idp.Document` 개체. 이 메서드는 `org.w3c.dom.Document` 개체를 입력 매개 변수로 반환하고 `com.adobe.idp.Document` 개체.
 * `renderPOForm`: Forms 서비스 Java API를 사용하여 동적 구매 주문 양식을 렌더링합니다. 다음 `com.adobe.idp.Document` 에서 반환한 개체 `convertDataSource` 메서드는 양식을 미리 채우는 데 사용됩니다.
 
-   이러한 모든 메서드는 Java 서블릿의 `doPost` 메서드를 사용합니다. (참조: [유동성 레이아웃으로 Forms 미리 채우기](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
+  이러한 모든 메서드는 Java 서블릿의 `doPost` 메서드를 사용합니다. (참조: [유동성 레이아웃으로 Forms 미리 채우기](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
 
 ```java
 /*
@@ -2346,7 +2346,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
              if (processState == 1)
              {
  
-                 //Write the data back to to the client web browser
+                 //Write the data back to the client web browser
                  ServletOutputStream oOutput = resp.getOutputStream();
                  Document calData = formOut.getOutputContent();
  

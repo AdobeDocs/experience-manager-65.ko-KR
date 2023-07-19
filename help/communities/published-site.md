@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 게시할 때 새 사이트 찾아보기 {#browse-to-new-site-on-publish}
 
-이제 새로 만든 커뮤니티 사이트가 게시되었으므로 사이트를 만들 때 게시 서버에 표시된 URL로 이동합니다. 예:
+새로 만든 커뮤니티 사이트가 게시되었으므로 사이트를 만들 때 게시 서버에 표시되는 URL을 찾아보십시오. 예를 들면 다음과 같습니다.
 
 * 작성자 URL = https://localhost:4502/content/sites/engage/en.html
 * 게시 URL = https://localhost:4503/content/sites/engage/en.html
@@ -106,7 +106,6 @@ jcr 콘텐츠 및 json 을 통해 익명 사용자가 커뮤니티 사이트의 
 >
 >* [커뮤니티 구성 요소](/help/communities/author-communities.md) (작성자용)
 >* [구성 요소, 기능 및 기능 핵심 사항](/help/communities/essentials.md) (개발자용)
-
 
 ### 포럼 링크 {#forum-link}
 

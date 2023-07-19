@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 7d91fbdaae7ade27e9d6bf42bbcd5b16d3f6e358
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '748'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 * [각 실행 모드에 대한 구성 매개 변수의 컬렉션 정의](#defining-configuration-properties-for-a-run-mode).
 
-   기본 구성 매개변수 세트가 모든 실행 모드에 적용됩니다. 그런 다음 특정 환경의 목적에 맞게 추가 세트를 조정할 수 있습니다. 이는 필요에 따라 적용됩니다.
+  기본 구성 매개변수 세트가 모든 실행 모드에 적용됩니다. 그런 다음 특정 환경의 목적에 맞게 추가 세트를 조정할 수 있습니다. 이는 필요에 따라 적용됩니다.
 
 * [특정 모드에 대해 설치할 추가 번들 정의](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
@@ -89,19 +89,19 @@ nosamplecontent 실행 모드는 프로덕션 설치용으로 설계되었습니
 
 * `config`
 
-   모든 실행 모드에 적용 가능
+  모든 실행 모드에 적용 가능
 
 * `config.author`
 
-   작성자 실행 모드에 사용됩니다.
+  작성자 실행 모드에 사용됩니다.
 
 * `config.publish`
 
-   게시 실행 모드에 사용됨
+  게시 실행 모드에 사용됨
 
 * `config.<run-mode>`
 
-   적용 가능한 실행 모드에 사용됩니다(예: config).
+  적용 가능한 실행 모드에 사용됩니다(예: config).
 
 다음을 참조하십시오 [저장소의 OSGi 구성](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) 이러한 폴더 내의 개별 구성 노드를 정의하는 방법과 여러 실행 모드 조합에 대한 구성을 만드는 방법에 대한 자세한 내용은 을 참조하십시오.
 
@@ -123,8 +123,8 @@ nosamplecontent 실행 모드는 프로덕션 설치용으로 설계되었습니
 여러 실행 모드에 대한 구성을 정의한 경우 시작 시 사용할 구성을 정의해야 합니다. 사용할 실행 모드를 지정하는 방법에는 몇 가지가 있습니다. 해결 순서는 다음과 같습니다.
 
 1. [시스템 속성(](#using-a-system-property-in-the-start-script)
-1. [ ](#using-the-sling-properties-file)
-1. [ ](#using-the-r-option)
+1. [](#using-the-sling-properties-file)
+1. [](#using-the-r-option)
 1. [파일 이름 감지](#filename-detection-renaming-the-jar-file)
 
 응용 프로그램 서버를 사용하는 경우 다음 작업을 수행할 수도 있습니다 [web.xml에서 실행 모드 정의](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -155,7 +155,7 @@ java -jar cq-56-p4545.jar -r dev
 
 * 예를 들어 다음을 사용하여 인스턴스를 미국에 있는 프로덕션 게시 인스턴스로 시작합니다.
 
-   `-Dsling.run.modes=publish,prod,us`
+  `-Dsling.run.modes=publish,prod,us`
 
 ### 파일 이름 감지 - jar 파일 이름 바꾸기 {#filename-detection-renaming-the-jar-file}
 

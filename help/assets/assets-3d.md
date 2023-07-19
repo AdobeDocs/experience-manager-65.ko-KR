@@ -8,9 +8,9 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 787c0c25da2258f234d3c821038d62bf8ef68932
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2348'
 ht-degree: 3%
 
 ---
@@ -70,16 +70,16 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관�
       * [디지털 자산 구성](/help/assets/organize-assets.md#organize-digital-assets).
       * [3D 자산 검색](/help/assets/search-assets.md).
       * [사용자 지정 술어를 사용하여 검색 결과 필터링](/help/assets/search-assets.md#custompredicates).
+
    * 3D 자산 보기
 
       * [3D 자산 보기 및 상호 작용](#viewing-three-d-assets).
       * [차원 뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md).
+
    * 3D 자산 메타데이터 작업
 
       * [디지털 에셋용 메타데이터 관리](/help/assets/metadata.md).
       * [메타데이터 스키마](/help/assets/metadata-schemas.md).
-
-
 
 1. **3D 자산 게시**
 
@@ -128,8 +128,8 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관�
    | **카메라 회전** | 보기를 왼쪽, 오른쪽, 위쪽 또는 아래쪽으로 회전합니다. | 마우스 오른쪽 단추를 클릭하고 드래그하십시오. | 두 손가락으로 + 드래그. |
    | **카메라 확대/축소** | 3D 장면의 영역 안과 밖으로 이동합니다. | 스크롤 휠입니다. | 손가락 두 개 조입니다. |
    | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 탭합니다. |
-   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |  |  |
-   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |  |  |
+   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |   |   |
+   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |   |   |
 
 1. 페이지의 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 닫기]** 자산 페이지로 돌아갑니다.
 
@@ -150,7 +150,7 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관�
    * 페이지의 오른쪽 상단 근처에서 을 선택합니다. **[!UICONTROL 미리 보기]** 입장하기 **[!UICONTROL 미리 보기]** 모드.
    * 삭제 `/editor.html` 를 입력합니다.
 
-에 표시되는 완전 대화형 3D 에셋    ![3D 미디어 구성 요소 내부에 표시되는 3D 자산](/help/assets/assets-dm/3d-asset-in-3d-media.png)
+   ![3D 미디어 구성 요소 내부에 표시되는 3D 자산](/help/assets/assets-dm/3d-asset-in-3d-media.png)
 에 표시되는 완전 대화형 3D 에셋 **[!UICONTROL 미리 보기]** 모드.
 
 1. 다음 기간 동안 **[!UICONTROL 미리 보기]** mode에서 다음 중 하나를 수행합니다.
@@ -161,8 +161,8 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관�
    | **카메라 회전** | 보기를 왼쪽, 오른쪽, 위쪽 또는 아래쪽으로 회전합니다. | 마우스 오른쪽 단추를 클릭하고 드래그하십시오. | 두 손가락으로 + 드래그. |
    | **카메라 확대/축소** | 3D 장면의 영역 안과 밖으로 이동합니다. | 스크롤 휠입니다. | 손가락 두 개 조입니다. |
    | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 탭합니다. |
-   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |  |  |
-   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |  |  |
+   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |   |   |
+   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |   |   |
 
 ## 3D 미디어 구성 요소 작업 정보 {#working-with-three-d-media-component}
 
@@ -287,8 +287,8 @@ Experience Manager을 WCM으로 사용하는 경우 이 게시 방법을 사용�
 
 * **[!UICONTROL URL]** - 사용 **[!UICONTROL URL]** 서드파티 웹 컨텐츠 관리 시스템을 사용 중이고 차원 뷰어를 사용하여 Dynamic Media 3D 자산을 웹 페이지에 연결하려는 경우.
 
-   다음을 참조하십시오 [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+  다음을 참조하십시오 [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
 * **[!UICONTROL 포함]** - 사용 **[!UICONTROL 포함]** 차원 뷰어를 사용하여 웹 페이지에 포함된 Dynamic Media 3D 자산을 보려는 경우. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the is not permitted in the **[!UICONTROL Embed Code]** dialog box.
 
-   다음을 참조하십시오 [웹 페이지에 Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+  다음을 참조하십시오 [웹 페이지에 Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

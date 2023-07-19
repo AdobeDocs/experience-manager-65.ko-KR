@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 93dfac20bbb761abd580a004741ade20dc4ee2fe
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2069'
 ht-degree: 12%
 
 ---
@@ -234,7 +234,7 @@ subject=<text_1>
 
 * `${payload.type}`, 페이로드 유형
 * `${payload.path}`, 페이로드 경로
-* `${host.prefix}`, 호스트 접두사(예: `http://localhost:4502`
+* `${host.prefix}`, 호스트 접두사(예: ): `http://localhost:4502`
 
 ### 새 언어에 대한 이메일 템플릿 추가 {#adding-an-email-template-for-a-new-language}
 

@@ -1,8 +1,8 @@
 ---
 title: UI 문자열 다국어화
 seo-title: Internationalizing UI Strings
-description: Java 및 Javascript API를 사용하면 문자열을 국제화할 수 있습니다
-seo-description: Java and Javascript APIs enable you to internationalize strings
+description: Java 및 JavaScript API를 사용하면 문자열을 국제화할 수 있습니다
+seo-description: Java and JavaScript APIs enable you to internationalize strings
 uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # UI 문자열 다국어화 {#internationalizing-ui-strings}
 
-Java 및 Javascript API를 사용하면 다음 유형의 리소스에서 문자열을 국제화할 수 있습니다.
+Java 및 JavaScript API를 사용하면 다음 유형의 리소스에서 문자열을 국제화할 수 있습니다.
 
 * Java 소스 파일.
 * JSP 스크립트.
-* 클라이언트측 라이브러리 또는 페이지 소스의 Javascript.
+* 클라이언트측 라이브러리 또는 페이지 소스의 JavaScript.
 * 대화 상자 및 구성 요소 구성 속성에 사용되는 JCR 노드 속성 값입니다.
 
 다국어화 및 현지화 프로세스에 대한 개요는 [구성 요소 다국어화](/help/sites-developing/i18n.md).
@@ -110,16 +110,16 @@ i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messa
 
 * 사용자의 언어 기본 설정 사용: SlingHttpRequest 를 첫 번째 매개 변수로 제공합니다.
 
-   `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
+  `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 * 페이지 언어 사용: ResourceBundle을 첫 번째 매개 변수로 제공합니다.
 
-   `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
+  `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 
-### Javascript 코드의 문자열 다국어화 {#internationalizing-strings-in-javascript-code}
+### JavaScript 코드의 문자열 다국어화 {#internationalizing-strings-in-javascript-code}
 
-Javascript API를 사용하면 클라이언트의 문자열을 현지화할 수 있습니다. 에서와 같이 [Java 및 JSP](#internationalizing-strings-in-java-and-jsp-code) 코드를 사용하면 javascript API를 사용하여 현지화할 문자열을 식별하고, 현지화 힌트를 제공하고, 현지화된 문자열에 변수를 포함할 수 있습니다.
+JavaScript API를 사용하면 클라이언트의 문자열을 현지화할 수 있습니다. 에서와 같이 [Java 및 JSP](#internationalizing-strings-in-java-and-jsp-code) 코드를 사용하면 JavaScript API를 사용하여 현지화할 문자열을 식별하고 현지화 힌트를 제공하며 현지화된 문자열에 변수를 포함할 수 있습니다.
 
-다음 `granite.utils` [클라이언트 라이브러리 폴더](/help/sites-developing/clientlibs.md) javascript API를 제공합니다. API를 사용하려면 페이지에 이 클라이언트 라이브러리 폴더를 포함하십시오. 현지화 기능에서는 `Granite.I18n` 네임스페이스입니다.
+다음 `granite.utils` [클라이언트 라이브러리 폴더](/help/sites-developing/clientlibs.md) 는 JavaScript API를 제공합니다. API를 사용하려면 페이지에 이 클라이언트 라이브러리 폴더를 포함하십시오. 현지화 기능에서는 `Granite.I18n` 네임스페이스입니다.
 
 지역화된 문자열을 제공하기 전에 `Granite.I18n.setLocale` 함수. 함수에는 인수로 로케일의 언어 코드가 필요합니다.
 
@@ -146,7 +146,7 @@ Granite.I18n.get("string to localize", [variables], "localization hint");
 * 두 번째 매개 변수는 문자열 리터럴에 삽입할 값의 배열입니다.
 * 세 번째 매개 변수는 현지화 힌트입니다.
 
-다음 예제에서는 Javascript를 사용하여 &quot;Welcome back Administrator&quot;를 현지화합니다. 받은 편지함에 2개의 메시지가 있습니다.&quot; 문장:
+다음 예제에서는 JavaScript를 사용하여 &quot;Welcome back Administrator&quot;를 현지화합니다. 받은 편지함에 2개의 메시지가 있습니다.&quot; 문장:
 
 ```
 Granite.I18n.setLocale("fr");

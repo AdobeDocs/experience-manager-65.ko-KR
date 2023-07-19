@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 exl-id: 57303608-c3e1-4201-8054-1a1798613e2c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 대화 상자 편집기는 대화 상자와 스캐폴드를 쉽게 만들고 편집할 수 있는 그래픽 인터페이스를 제공합니다.
 
-작동 방식을 확인하려면 CRXDE Lite 로 이동하여 `/libs/foundation/components/chart` 노드를 더블 클릭합니다. `dialog`:
+작동 방식을 확인하려면 CRXDE Lite 로 이동하여 `/libs/foundation/components/chart` 노드를 두 번 클릭합니다. `dialog`:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 

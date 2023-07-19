@@ -1,8 +1,8 @@
 ---
-title: ContextHub Javascript API 참조
-seo-title: ContextHub Javascript API Reference
-description: ContextHub 구성 요소를 페이지에 추가하면 ContextHub Javascript API를 스크립트에 사용할 수 있습니다
-seo-description: The ContextHub Javascript API is available to your scripts when the ContextHub component has been added to the page
+title: ContextHub JavaScript API 참조
+seo-title: ContextHub JavaScript API Reference
+description: ContextHub JavaScript API는 ContextHub 구성 요소가 페이지에 추가되면 스크립트에 사용할 수 있습니다
+seo-description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
 uuid: 296d6c8e-517f-4837-9e86-ae571ea8aa17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5006'
+source-wordcount: '5007'
 ht-degree: 2%
 
 ---
 
-# ContextHub Javascript API 참조{#contexthub-javascript-api-reference}
+# ContextHub JavaScript API 참조{#contexthub-javascript-api-reference}
 
-다음과 같은 경우 스크립트에서 ContextHub Javascript API를 사용할 수 있습니다. [ContextHub 구성 요소가 페이지에 추가되었습니다](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
+ContextHub JavaScript API는 다음과 같은 경우에 스크립트에서 사용할 수 있습니다. [ContextHub 구성 요소가 페이지에 추가되었습니다](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
 
 ## ContextHub 상수 {#contexthub-constants}
 
-ContextHub Javascript API에서 정의하는 상수 값입니다.
+ContextHub JavaScript API에서 정의하는 상수 값입니다.
 
 ### 이벤트 상수 {#event-constants}
 
@@ -67,11 +67,11 @@ ContextHub Javascript API에서 정의하는 상수 값입니다.
 | ContextHub.Constants.EVENT_UI_CONTAINER_OPENED | ContextHub UI가 열리면 실행됩니다. | ui-container-opened |
 | ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED | ContextHub UI가 축소되면 실행됩니다 | ui-container-closed |
 | ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED | 속성이 수정되면 실행됩니다. | ui-property-modified |
-| ContextHub.Constants.EVENT_UI_RENDERED | ContextHub UI가 렌더링될 때마다(예: 속성 변경 후) 실행됩니다. | ui 렌더링됨 |
+| ContextHub.Constants.EVENT_UI_RENDERED | ContextHub UI가 렌더링될 때마다(예: 속성 변경 후) 실행됩니다 | ui 렌더링됨 |
 | ContextHub.Constants.EVENT_UI_INITIALIZED | UI 컨테이너가 초기화되면 실행됩니다. | ui 초기화됨 |
 | ContextHub.Constants.ACTIVE_UI_MODE | 활성 UI 모드를 나타냅니다. | /_/active-ui-mode |
 
-## ContextHub Javascript API 참조 {#contexthub-javascript-api-reference-2}
+## ContextHub JavaScript API 참조 {#contexthub-javascript-api-reference-2}
 
 ContextHub 개체는 모든 저장소에 대한 액세스를 제공합니다.
 
@@ -98,7 +98,7 @@ var geoloc = allStores.geolocation
 
 #### getStore(name) {#getstore-name}
 
-저장소를 Javascript 개체로 검색합니다.
+저장소를 JavaScript 개체로 검색합니다.
 
 **매개변수**
 
@@ -391,9 +391,9 @@ A `boolean` 값:
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-JSON 데이터가 포함된 저장소입니다. 데이터는 외부 JSONP 서비스 또는 JSON 데이터를 반환하는 서비스에서 검색됩니다. 다음을 사용하여 서비스 세부 정보 지정 [ `init`](/help/sites-developing/contexthub-api.md#init-name-config) 이 클래스의 인스턴스를 만들 때 작동합니다.
+JSON 데이터가 포함된 저장소입니다. 데이터는 외부 JSONP 서비스 또는 JSON 데이터를 반환하는 서비스에서 검색됩니다. 다음을 사용하여 서비스 세부 정보 지정 [`init`](/help/sites-developing/contexthub-api.md#init-name-config) 이 클래스의 인스턴스를 만들 때 작동합니다.
 
-저장소는 인메모리 지속성(Javascript 변수)을 사용합니다. 저장 데이터는 페이지 수명 동안에만 사용할 수 있습니다.
+저장소는 인메모리 지속성(JavaScript 변수)을 사용합니다. 저장 데이터는 페이지 수명 동안에만 사용할 수 있습니다.
 
 ContextHub.Store.JSONPtore 확장 [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) 및 는 해당 클래스의 함수를 상속합니다.
 
@@ -471,7 +471,7 @@ A `string` 서비스 URL을 나타내는 값입니다.
 
    * eventDefering: 32.
    * 이벤트: 이 저장소의 ContextHub.Utils.Eventing 개체입니다. 기본값은 입니다 `ContextHub.eventing` 개체.
-   * 지속성: 이 저장소의 ContextHub.Utils.Persistence 개체입니다. 기본적으로 메모리 지속성이 사용됩니다(Javascript 개체).
+   * 지속성: 이 저장소의 ContextHub.Utils.Persistence 개체입니다. 기본적으로 메모리 지속성이 사용됩니다(JavaScript 개체).
    * service: (객체)
 
       * host: (문자열) 서버 이름 또는 IP 주소입니다.
@@ -484,9 +484,9 @@ A `string` 서비스 URL을 나타내는 값입니다.
          * auto: //
          * true: https://
          * false: https://
+
       * timeout: (숫자) 시간 초과 전에 JSONP 서비스가 응답할 때까지 대기하는 시간(밀리초)입니다.
       * ttl: JSONP 서비스 호출 사이에 경과되는 최소 시간(밀리초)입니다. (다음을 참조하십시오. [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) 함수).
-
 
 #### queryService(다시 로드) {#queryservice-reload}
 
@@ -522,7 +522,7 @@ ContextHub.Store.PersistedStore 확장 [ContextHub.Store.Core](/help/sites-devel
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-ContextHub.Store.SessionStore 확장 [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) 그래서 그것은 그 클래스의 모든 기능을 상속합니다. 이 저장소의 데이터는 메모리 내 지속성을 사용하여 지속됩니다(Javascript 개체).
+ContextHub.Store.SessionStore 확장 [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) 그래서 그것은 그 클래스의 모든 기능을 상속합니다. 이 저장소의 데이터는 메모리 내 지속성(JavaScript 개체)을 사용하여 유지됩니다.
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -816,7 +816,7 @@ If `triggerForPastEvents` 은(는) `false`, 이 함수는 값을 반환하지 �
 
 **반환**
 
-Javascript 개체입니다.
+JavaScript 개체.
 
 **예**
 
@@ -832,7 +832,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Javascript 값 및 개체를 JSON 형식의 문자열 값으로 serialize합니다.
+JavaScript 값 및 개체를 JSON 형식의 문자열 값으로 serialize합니다.
 
 **매개변수**
 
@@ -900,7 +900,7 @@ ContextHub.Utils.JSON.stringify({
 
 **예**
 
-다음 Javascript 개체를 고려해 보십시오.
+다음 JavaScript 개체를 고려해 보십시오.
 
 ```
 myObject {
@@ -1074,7 +1074,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 **예**
 
-다음 Javascript 코드를 고려하십시오.
+다음 JavaScript 코드를 생각해 보십시오.
 
 ```
 var myObject = {
@@ -1109,7 +1109,7 @@ myObject 개체에는 다음 값이 있습니다.
 
 **매개변수**
 
-* **스토어 유형:** (문자열) 저장소 유형의 이름입니다. 다음을 참조하십시오. `storeType` 매개 변수 [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) 함수.
+* **스토어 유형:** (문자열) 저장소 유형의 이름입니다. 다음을 참조하십시오. `storeType` 매개 변수 [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) 함수.
 
 **반환**
 
@@ -1121,7 +1121,7 @@ myObject 개체에는 다음 값이 있습니다.
 
 **매개변수**
 
-* storeType: (문자열) 저장소 후보의 이름입니다. 다음을 참조하십시오. `storeType` 매개 변수 [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) 함수.
+* storeType: (문자열) 저장소 후보의 이름입니다. 다음을 참조하십시오. `storeType` 매개 변수 [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) 함수.
 
 **반환**
 
@@ -1133,7 +1133,7 @@ myObject 개체에는 다음 값이 있습니다.
 
 **반환**
 
-각 문자열이 저장소 후보가 등록된 storetype인 문자열 값의 배열입니다. 다음을 참조하십시오. `storeType` 매개 변수 [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) 함수.
+각 문자열이 저장소 후보가 등록된 storetype인 문자열 값의 배열입니다. 다음을 참조하십시오. `storeType` 매개 변수 [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) 함수.
 
 #### registerStoreCandidate(store, storeType, priority, applies) {#registerstorecandidate-store-storetype-priority-applies}
 

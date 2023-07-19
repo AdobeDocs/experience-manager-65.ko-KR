@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
    </Location>
    ```
 
-   이렇게 하면 중간 캐시(예: 브라우저 캐시)가 만료될 때까지 최대 1개월 동안 CSS, Javascript, PNG 및 GIF 파일을 저장할 수 있습니다. 즉, AEM 또는 웹 서버에서 요청할 필요는 없지만 브라우저 캐시에 남아 있을 수 있습니다.
+   이렇게 하면 중간 캐시(예: 브라우저 캐시)가 만료될 때까지 최대 1개월 동안 CSS, JavaScript, PNG 및 GIF 파일을 저장할 수 있습니다. 즉, AEM 또는 웹 서버에서 요청할 필요는 없지만 브라우저 캐시에 남아 있을 수 있습니다.
 
    사이트의 다른 섹션은 언제든지 변경될 수 있으므로 작성자 인스턴스에 캐시해서는 안 됩니다.
 
@@ -75,7 +75,7 @@ ht-degree: 0%
    </Location>
    ```
 
-   이렇게 하면 중간 캐시(예: 브라우저 캐시)가 최대 하루 동안 CSS, Javascript, PNG 및 GIF 파일을 클라이언트 캐시에 저장할 수 있습니다. 이 예는 아래의 모든 항목에 대한 전역 설정을 보여 줍니다 `/content` 및 `/etc/designs`, 좀 더 세부적으로 만들어야 합니다.
+   이렇게 하면 중간 캐시(예: 브라우저 캐시)가 최대 하루 동안 CSS, JavaScript, PNG 및 GIF 파일을 클라이언트 캐시에 저장할 수 있습니다. 이 예는 아래의 모든 항목에 대한 전역 설정을 보여 줍니다 `/content` 및 `/etc/designs`, 좀 더 세부적으로 만들어야 합니다.
 
    사이트 업데이트 빈도에 따라 HTML 페이지 캐싱을 고려할 수도 있습니다. 적절한 기간은 1시간입니다.
 

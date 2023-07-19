@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 13f15bee38b6b4af4cd59376849810a788f0c467
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3584'
 ht-degree: 2%
 
 ---
@@ -52,27 +52,26 @@ ht-degree: 2%
 >1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs` 아래에 `/apps`
 >2. 다음 범위 내에서 변경 `/apps`
 
-
 다음 `/libs/cq/workflow/components/model/step` 구성 요소는 **프로세스 단계**, **참가자 단계**, 및 **동적 참가자 단계**, 이는 모두 다음 항목을 상속합니다.
 
 * `step.jsp`
 
-   다음 `step.jsp` 스크립트는 단계 구성 요소가 모델에 추가되면 해당 구성 요소의 제목을 렌더링합니다.
+  다음 `step.jsp` 스크립트는 단계 구성 요소가 모델에 추가되면 해당 구성 요소의 제목을 렌더링합니다.
 
-   ![wf-22-1](assets/wf-22-1.png)
+  ![wf-22-1](assets/wf-22-1.png)
 
 * [cq:dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
 
-   다음 탭이 있는 대화 상자:
+  다음 탭이 있는 대화 상자:
 
    * **공통**: 제목 및 설명을 편집합니다.
    * **고급**: 이메일 알림 속성을 편집합니다.
 
-   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
+  ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
-   >[!NOTE]
-   >
-   >단계 구성 요소의 편집 대화 상자 탭이 이 기본 모양과 일치하지 않으면 단계 구성 요소에서 이러한 상속된 탭을 오버라이드하는 스크립트, 노드 속성 또는 대화 상자 탭을 정의했습니다.
+  >[!NOTE]
+  >
+  >단계 구성 요소의 편집 대화 상자 탭이 이 기본 모양과 일치하지 않으면 단계 구성 요소에서 이러한 상속된 탭을 오버라이드하는 스크립트, 노드 속성 또는 대화 상자 탭을 정의했습니다.
 
 ### ECMA 스크립트 {#ecma-scripts}
 
@@ -125,7 +124,6 @@ MetaDataMap 개체에는 세 가지 유형이 있습니다. `Workflow`, `Workflo
 >  이 요구 사항은 편집 대화 상자에서 `/libs/cq/flow/components/step/step` 구성 요소가 를 구현합니다.
 >
 >* 단계 구성 요소 또는 구성 요소의 상위 요소가 `step.jsp` 스크립트에 `/libs/cq/flow/components/step/step` 구성 요소가 를 구현합니다.
-
 
 1. 아래 `cq:Component` 노드를 추가하고 다음 노드를 추가합니다.
 
@@ -669,7 +667,6 @@ function getParticipant() {
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
-
 패키지 리소스를 가져와 처리하는 워크플로우 단계를 개발할 수 있습니다. 의 다음 멤버 `com.day.cq.workflow.collection` 패키지는 워크플로 패키지에 대한 액세스를 제공합니다.
 
 * `ResourceCollection`: 워크플로우 패키지 클래스.
@@ -826,28 +823,28 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
    * `sling:resourceSuperType`
 
-      기존 단계에서 상속해야 합니다.
+     기존 단계에서 상속해야 합니다.
 
-      이 예제에서는 의 기본 단계에서 상속합니다. `cq/workflow/components/model/step`, 그러나 다음과 같은 다른 수퍼 유형을 사용할 수 있습니다. `participant`, `process`등
+     이 예제에서는 의 기본 단계에서 상속합니다. `cq/workflow/components/model/step`, 그러나 다음과 같은 다른 수퍼 유형을 사용할 수 있습니다. `participant`, `process`등
 
    * `jcr:title`
 
-      구성 요소가 단계 브라우저(워크플로우 모델 편집기의 왼쪽 패널)에 나열될 때 표시되는 제목입니다.
+     구성 요소가 단계 브라우저(워크플로우 모델 편집기의 왼쪽 패널)에 나열될 때 표시되는 제목입니다.
 
    * `cq:icon`
 
-      을(를) 지정하는 데 사용됨 [Coral 아이콘](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 을 누릅니다.
+     을(를) 지정하는 데 사용됨 [Coral 아이콘](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 을 누릅니다.
 
    * `componentGroup`
 
-      다음 중 하나여야 합니다.
+     다음 중 하나여야 합니다.
 
       * 협업 워크플로우
       * DAM 워크플로우
       * 양식 워크플로우
       * 프로젝트
       * WCM 워크플로우
-      * 워크플로
+      * 워크플로우
 
    ![wf-35](assets/wf-35.png)
 
@@ -873,11 +870,12 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
    * `cq:inherit`
 
-      로 설정된 경우 `true`을 입력하면 단계 구성 요소는 사용자가 지정한 단계에서 속성을 상속합니다 `sling:resourceSuperType`.
+     로 설정된 경우 `true`을 입력하면 단계 구성 요소는 사용자가 지정한 단계에서 속성을 상속합니다 `sling:resourceSuperType`.
 
    * `cq:disableTargeting`
 
-      필요에 따라 설정합니다.
+     필요에 따라 설정합니다.
+
    ![wf-39](assets/wf-39.png)
 
 1. 노드에서 속성 구성 `cq:formsParameter` 다음과 같이:
@@ -886,7 +884,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
    * `jcr:title`
 
-      모델 맵의 단계 카드 및 **제목** 필드 **내 사용자 지정 - 단계 속성** 구성 대화 상자
+     모델 맵의 단계 카드 및 **제목** 필드 **내 사용자 지정 - 단계 속성** 구성 대화 상자
 
    * 사용자 지정 속성을 정의할 수도 있습니다.
 

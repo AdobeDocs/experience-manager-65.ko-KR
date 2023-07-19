@@ -9,7 +9,7 @@ content-type: reference
 docset: aem65
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
@@ -22,10 +22,10 @@ AEM 일반 eCommerce는 표준 설치의 일부로 사용할 수 있으며 eComm
 
 Adobe은 Commerce Integration Framework의 두 가지 버전을 제공합니다.
 
-|  | CIF 온-프레미스 | CIF 클라우드 |
+|                         | CIF 온-프레미스 | CIF 클라우드 |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | 지원되는 AEM 버전 | AEM 온-프레미스 또는 AMS 6.x | AEM AMS 6.4 및 6.5 |
-| 백엔드 | - AEM, Java <br> - 모놀리식 통합, 빌드 전 매핑(템플릿)<br> - JCR 저장소 | - ADOBE COMMERCE <br>- Java 및 Javascript <br>- JCR 저장소에 저장된 상거래 데이터 없음 |
+| 백엔드 | - AEM, Java <br> - 모놀리식 통합, 빌드 전 매핑(템플릿)<br> - JCR 저장소 | - ADOBE COMMERCE <br>- Java 및 JavaScript <br>- JCR 저장소에 저장된 상거래 데이터 없음 |
 | 프론트엔드 | AEM 서버측 렌더링 페이지 | 혼합 페이지 애플리케이션(하이브리드 렌더링) |
 | 제품 카탈로그 | - 제품 가져오기, 편집기, AEM의 캐싱 <br>- AEM 또는 프록시 페이지가 있는 일반 카탈로그 | - 제품 가져오기 없음 <br>- 일반 템플릿 <br>- 커넥터를 통한 온디맨드 데이터 |
 | 확장성 | - 최대 몇 백만 개의 제품 지원 가능(사용 사례에 따라 다름) <br> - Dispatcher에서 캐싱 | - 볼륨 제한 없음 <br>- Dispatcher 또는 CDN에서 캐싱 |

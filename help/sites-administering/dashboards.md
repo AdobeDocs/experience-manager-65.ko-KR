@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '839'
 ht-degree: 4%
 
 ---
@@ -73,7 +73,7 @@ AEM을 사용할 때 다양한 유형의 콘텐츠(예: 페이지, 에셋)를 �
 
 ### 웹 분석 보고 구성 요소 {#web-analytics-reporting-components}
 
-AEM은 의 여러 지표를 렌더링하는 구성 요소 세트와 함께 제공됩니다. [SiteCatalyst](/help/sites-administering/adobeanalytics.md) 데이터. 이러한 구성 요소는 아래 사이드 킥에 나열됩니다. **대시보드** 섹션.
+AEM은 의 여러 지표를 렌더링하는 구성 요소 세트와 함께 제공됩니다. [SiteCatalyst](/help/sites-administering/adobeanalytics.md) 데이터. 이러한 구성 요소는 아래 Sidekick에 나열되어 있습니다. **대시보드** 섹션.
 
 각 보고 구성 요소에는 세 개 이상의 탭이 있습니다.
 
@@ -114,7 +114,7 @@ AEM은 의 여러 지표를 렌더링하는 구성 요소 세트와 함께 제�
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**날짜 세부기간** X축의 시간 단위(예: 일, 시간).
+**날짜 세부기간** X축의 시간 단위(예: 일, 시간)입니다.
 
 **지표** 표시할 이벤트 목록입니다.
 
@@ -150,7 +150,7 @@ AEM은 의 여러 지표를 렌더링하는 구성 요소 세트와 함께 제�
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**날짜 세부기간** X축의 시간 단위(예: 일, 시간).
+**날짜 세부기간** X축의 시간 단위(예: 일, 시간)입니다.
 
 **지표** 표시할 이벤트입니다.
 
@@ -188,7 +188,7 @@ AEM은 의 여러 지표를 렌더링하는 구성 요소 세트와 함께 제�
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
-다음 Javascript 파일이에 정의되어 있습니다. `geout.reporting.topauthors` [클라이언트 라이브러리](/help/sites-developing/clientlibs.md) 구성 요소 자체의 하위 항목으로 사용됩니다.
+다음 JavaScript 파일은에 정의되어 있습니다. `geout.reporting.topauthors` [클라이언트 라이브러리](/help/sites-developing/clientlibs.md) 구성 요소 자체의 하위 항목으로 사용됩니다.
 
 다음 [QueryBuilder](/help/sites-developing/querybuilder-api.md) 은 읽을 저장소를 쿼리하는 데 사용됩니다. `cq:AuditEvent` 노드. 쿼리 결과는 작성자 기여도가 추출되는 JSON 개체입니다.
 

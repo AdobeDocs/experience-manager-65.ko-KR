@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '985'
 ht-degree: 2%
 
 ---
 
 # Experience Cloud과 AEM Assets 통합 구성 {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-Adobe Experience Cloud 고객인 경우 Adobe Experience Manager Assets 내의 에셋을 Adobe Creative Cloud과 동기화하거나 그 반대로 동기화할 수 있습니다. 에셋을 Experience Cloud과 동기화하거나 그 반대로 동기화할 수 있습니다. 다음을 통해 이 동기화를 설정할 수 있습니다. [!DNL Adobe I/O]. 의 업데이트된 이름 [!DNL Adobe Marketing Cloud] 은(는) [!DNL Adobe Experience Cloud].
+Adobe Experience Cloud 고객인 경우 Adobe Experience Manager Assets 내의 에셋을 Adobe Creative Cloud과 동기화할 수 있으며 그 반대의 경우도 가능합니다. 에셋을 Experience Cloud과 동기화하거나 반대로 동기화할 수 있습니다. 다음을 통해 이 동기화를 설정할 수 있습니다. [!DNL Adobe I/O]. 의 업데이트된 이름 [!DNL Adobe Marketing Cloud] 은(는) [!DNL Adobe Experience Cloud].
 
 이 통합을 설정하는 워크플로우는 다음과 같습니다.
 
@@ -165,10 +165,9 @@ AEM Assets lets you share folders containing assets with Adobe Creative Cloud us
 
 The AEM Assets-Marketing Cloud synchronization is designed in a way that the user machine instance from where the asset is uploaded retains the right to modify the asset. Only these changes are propagated to the other instance.
 
-For example, if an asset is uploaded from an AEM Assets (on premises) instance, the changes to the asset from this instance are propagated to the Marketing Cloud instance. However, the changes done from the Marketing Cloud instance to the same asset aren’t propagated to the AEM instance and vice versa for asset uploaded from Marketing Cloud.
+For example, if an asset is uploaded from an AEM Assets (on premises) instance, the changes to the asset from this instance are propagated to the Marketing Cloud instance. However, the changes done from the Marketing Cloud instance to the same asset aren’t propagated to the AEM instance and conversely for asset uploaded from Marketing Cloud.
 -->
 
 >[!MORELIKETHIS]
 >
 >* [자산 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md)
-

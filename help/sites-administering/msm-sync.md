@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2702'
+source-wordcount: '2701'
 ht-degree: 38%
 
 ---
@@ -394,7 +394,7 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 
    ![선택한 롤아웃 구성](assets/chlimage_1-2.png)
 
-1. 클릭 또는 탭 **저장**.
+1. **저장**&#x200B;을 클릭하거나 탭합니다.
 
 ### 블루프린트 페이지에 대한 롤아웃 구성 설정 {#setting-the-rollout-configuration-for-a-blueprint-page}
 

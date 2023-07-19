@@ -6,10 +6,10 @@ role: Admin
 feature: Renditions
 exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 0%
+source-wordcount: '1072'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ ImageMagick을 사용하여 FPO 표현물 생성을 비롯한 이미지를 처�
 
    ![fpo_rendition_damupdateasset_model](assets/fpo_rendition_damupdateasset_model.png)
 
-1. 조정 **[!UICONTROL 품질]** 및 추가 또는 수정 **[!UICONTROL 목록 서식]** 값을 입력해야 합니다. 기본적으로 FPO 렌디션을 생성하는 MIME 유형 목록은 pjpeg, jpeg, jpg, gif, png, x-png 및 tiff입니다. 클릭 **[!UICONTROL 완료]**.
+1. 조정 **[!UICONTROL 품질]** 및 추가 또는 수정 **[!UICONTROL 목록 서식]** 값을 입력해야 합니다. 기본적으로 FPO 렌디션을 생성하는 MIME 유형 목록은 pjpeg, jpeg, jpg, gif, png, x-png 및 tiff입니다. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
    >[!NOTE]
    >

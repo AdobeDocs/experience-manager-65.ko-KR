@@ -2,9 +2,9 @@
 title: IMS를 사용하여 Adobe Target과 통합
 description: IMS를 사용하여 AEM과 Adobe Target 통합에 대해 알아보기
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1548'
+source-wordcount: '1549'
 ht-degree: 54%
 
 ---
@@ -27,7 +27,7 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe Devel
 
 이 절차를 시작하기 전에:
 
-* [Adobe 지원 팀](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)은 다음에 대한 계정을 프로비저닝해야 합니다.
+* [Adobe 지원 팀](https://helpx.adobe.com/contact/enterprise-support.ec.html)은 다음에 대한 계정을 프로비저닝해야 합니다.
 
    * Adobe Console
    * Adobe Developer Console
@@ -37,7 +37,7 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe Devel
 * 조직의 시스템 관리자는 Admin Console을 사용하여 필요한 조직 개발자를 관련 제품 프로필에 추가해야 합니다.
 
    * 이렇게 하면 특정 개발자에게 Adobe Developer 콘솔 내에서 통합을 활성화할 수 있는 권한이 제공됩니다.
-   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
+   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
 
 
 ## IMS 구성 - 공개 키 생성 {#configuring-an-ims-configuration-generating-a-public-key}
@@ -162,7 +162,7 @@ AEM으로 돌아가면 Target을 위해 Adobe Developer 콘솔 통합에서 필�
 1. 여기에서 [Adobe Developer Console의 프로젝트 구성에서 세부 정보](#details-stored-for-the-ims-integration-project)를 사용할 수 있습니다.
 
    * **제목**: 텍스트를 입력하십시오.
-   * **인증 서버**: 아래 **페이로드** 섹션의 `aud` 줄에서 이 인증 서버를 복사하여 붙여넣습니다(아래 예에서 `https://ims-na1.adobelogin.com`).
+   * **인증 서버**: 아래 `aud`페이로드&#x200B;**섹션의** 줄에서 이 인증 서버를 복사하여 붙여넣습니다(아래 예에서 `https://ims-na1.adobelogin.com`).
    * **API 키**: 다음에서 이 복사: [개요](#details-stored-for-the-ims-integration-project) 섹션
    * **클라이언트 암호**: 다음에서 이 생성: [개요](#details-stored-for-the-ims-integration-project) 섹션 및 복사
    * **페이로드**: [JWT 생성](#details-stored-for-the-ims-integration-project) 섹션에서 이 페이로드를 복사합니다.

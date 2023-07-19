@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2327'
 ht-degree: 1%
 
 ---
@@ -85,11 +85,11 @@ Translator 도구와 관리하는 사전은 구성 요소 UI를 다양한 언어
    >
    >다음은 의 구조입니다. [Sling i18n 모듈](https://sling.apache.org/site/internationalization-support.html).
 
-1. 번역기 및 사전 경로를 다시 로드합니다(예: `/apps/myProject/i18n`)은 도구 모음의 드롭다운 선택기에서 사용할 수 있습니다. 문자열 및 해당 번역을 추가하려면 선택하십시오.
+1. 번역기 및 사전 경로 다시 로드(예: `/apps/myProject/i18n`)은 도구 모음의 드롭다운 선택기에서 사용할 수 있습니다. 문자열 및 해당 번역을 추가하려면 선택하십시오.
 
    >[!NOTE]
    >
-   >번역자는 실제로 경로 아래에 있는 언어에 대한 번역만 저장합니다(예: `/apps/myProject/i18n`).
+   >번역자는 실제로 경로 아래에 있는 언어의 번역만 저장합니다(예: `/apps/myProject/i18n`).
    >
    >이러한 언어가 격자에 표시된 언어에 해당하는지 확인하십시오.
 
@@ -359,11 +359,12 @@ AEM 인스턴스의 새로운 언어에 대한 사전을 정의한 후에 작성
 
    * **언어 목록**:
 
-      저장소의 언어 목록 경로. 오버레이에 사용되는 위치로 설정합니다.
+     저장소의 언어 목록 경로. 오버레이에 사용되는 위치로 설정합니다.
 
-      ```
-             /apps/wcm/core/resources/languages
-      ```
+     ```
+            /apps/wcm/core/resources/languages
+     ```
+
    OSGi 웹 콘솔을 사용하여 이 작업을 수행할 수 있습니다.
 
    ```shell

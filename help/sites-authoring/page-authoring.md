@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
 편집 가능한 페이지의 왼쪽에서는 슬라이딩 브라우저를 열 수 있습니다. 여기서 에셋을 페이지로 끌 수 있습니다. 예를 들어 에셋을 배치하거나 다른 페이지에 대한 링크를 만들 수 있습니다.
 
 * **구성 요소 도구 모음**
-한 번 또는 느리게 두 번 클릭/탭하면 모두 적절한 도구 모음이 표시됩니다(즉석 편집 도구 모음의 경우 한 번, 전체 도구 모음의 경우 느리게 두 번).
+한 번 또는 느리게 두 번 클릭/탭하면 모두 적절한 도구 모음이 표시됩니다(즉석 편집 도구 모음에는 한 번, 전체 도구 모음에는 느리게 두 번 클릭).
 
 * **[응답형 레이아웃](/help/sites-authoring/responsive-layout.md)**
 이 레이아웃은 응답형 격자 내에 구성 요소를 배치할 수 있도록 해 주는 단락 시스템을 제공합니다.

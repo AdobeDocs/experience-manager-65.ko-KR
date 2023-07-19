@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 3f64bd7f5b4eb43aeefb9277a94e10ef1f0df59c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2691'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
       <ol>
        <li>예를 들어 다음과 같이 내보냅니다.
         <ul>
-         <li><code>/conf/global/settings/workflow/models/dam/my_workflow_model</code> 및 </li>
+         <li><code>/conf/global/settings/workflow/models/dam/my_workflow_model</code><br /> 및 </li>
          <li><code>/var/workflow/models/dam/my_workflow_model</code></li>
         </ul> </li>
       </ol> </li>

@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '9905'
+source-wordcount: '9902'
 ht-degree: 0%
 
 ---
@@ -231,7 +231,7 @@ AEM Forms 서비스 작업에 필요한 경우 `BLOB` 을(를) 입력 값으로 
 
    * 출력 Blob 개체에 대한 서비스의 SOAP 끝점 매개 변수 기본 프로토콜이 Smart로 설정되어 있습니다.
 
-      SOAP 끝점이 있는 각 서비스에 대해 관리 콘솔을 사용하여 반환된 모든 BLOB에 대한 전송 프로토콜을 지정할 수 있습니다. (참조: [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_63).)
+     SOAP 끝점이 있는 각 서비스에 대해 관리 콘솔을 사용하여 반환된 모든 BLOB에 대한 전송 프로토콜을 지정할 수 있습니다. (참조: [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
    * AEM Forms 서비스는 하나 이상의 문서를 입력으로 취합니다.
 
@@ -685,7 +685,7 @@ Java 프록시 클래스 및 Base64를 사용하여 AEM Forms 서비스를 호�
 
    * WSDL 끝점 및 인코딩 유형을 `javax.xml.ws.BindingProvider` 개체 `ENDPOINT_ADDRESS_PROPERTY` 필드. 를 호출하려면 `MyApplication/EncryptDocument` base64 인코딩을 사용하는 서비스에서는 다음 URL 값을 지정합니다.
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
 
    * AEM Forms 사용자를 `javax.xml.ws.BindingProvider` 개체 `USERNAME_PROPERTY` 필드.
    * 에 해당 암호 값을 할당합니다. `javax.xml.ws.BindingProvider` 개체 `PASSWORD_PROPERTY` 필드.
@@ -880,7 +880,7 @@ SwaRef를 사용하여 AEM Forms 서비스를 호출할 수 있습니다. 의 �
 
    * WSDL 끝점 및 인코딩 유형을 `javax.xml.ws.BindingProvider` 개체 `ENDPOINT_ADDRESS_PROPERTY` 필드. 를 호출하려면 `MyApplication/EncryptDocument` swaRef 인코딩을 사용하는 서비스에서 다음 URL 값을 지정합니다.
 
-      ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
+     ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
 
    * AEM Forms 사용자를 `javax.xml.ws.BindingProvider` 개체 `USERNAME_PROPERTY` 필드.
    * 에 해당 암호 값을 할당합니다. `javax.xml.ws.BindingProvider` 개체 `PASSWORD_PROPERTY` 필드.
@@ -1003,7 +1003,7 @@ HTTP를 통해 Java 프록시 클래스 및 BLOB 데이터를 사용하여 AEM F
 
    * WSDL 끝점 및 인코딩 유형을 `javax.xml.ws.BindingProvider` 개체 `ENDPOINT_ADDRESS_PROPERTY` 필드. 를 호출하려면 `MyApplication/EncryptDocument` http 인코딩에 대해 BLOB를 사용하는 서비스에서는 다음 URL 값을 지정합니다.
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
 
    * AEM Forms 사용자를 `javax.xml.ws.BindingProvider` 개체 `USERNAME_PROPERTY` 필드.
    * 에 해당 암호 값을 할당합니다. `javax.xml.ws.BindingProvider` 개체 `PASSWORD_PROPERTY` 필드.

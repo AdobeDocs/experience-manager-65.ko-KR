@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서의 일부인 k
 1. 환경의 도메인 구성에서 **서버 > [*관리 대상 서버*] > 구성 > 일반**.
 1. 일반에서 구성의 을(를) 선택합니다 **키스톤**.
 1. 변경 센터에서 **잠금 및 편집** 선택 항목 및 값을 수정합니다.
-1. 클릭 **변경** 을 눌러 키 저장소 목록을 드롭다운 목록으로 가져오고 **사용자 정의 Id 및 사용자 정의 트러스트**.
+1. 클릭 **변경** keystore 목록을 드롭다운 목록으로 가져오고 **사용자 정의 Id 및 사용자 정의 트러스트**.
 1. ID에서 다음 값을 지정합니다.
 
    **사용자 지정 ID 키 저장소**: *[appserverdomain]*/adobe/*[서버 이름]*/ads-credentials.jks, 여기서 *[appserverdomain] *실제 경로 및 *[서버 이름]* 는 애플리케이션 서버의 이름입니다.

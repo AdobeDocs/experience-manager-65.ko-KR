@@ -12,9 +12,9 @@ discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 1b2d743f8f2172c4e4663917d598734cb1ea1ea4
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ ht-degree: 0%
    >[!NOTE]
    >
    > * Adobe Experience Manager 6.5 Forms 서비스 팩 15(6.5.15.0) 이상 Forms Designer 버전에는 서비스 팩 버전도 포함되어 있습니다. 예를 들어 서비스 팩 15의 경우 버전 번호는 6.5.15.20221112.1.0입니다. 이 예에서 6.5.15는 서비스 팩 버전입니다.
-
 
 1. setup.exe를 두 번 클릭하여 AEM Forms Designer 설치 관리자를 실행합니다.
 1. 계속 진행하여 개인화 화면에 세부 정보와 일련 번호를 입력합니다.

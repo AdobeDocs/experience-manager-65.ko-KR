@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -56,11 +56,11 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)은 다음을 사용하여 커뮤�
    * 새 게시물 선택
    * 제목 입력
 
-      Humming Bird Feeder에서 꿀을 교체하는 시기
+     Humming Bird Feeder에서 꿀을 교체하는 시기
 
    * 본문 입력
 
-      나는 매년 벌새 먹이통을 매달아 놓았을 때 그다지 성공하지 못했다. 하루 이틀 오는 것 같은데 그게 다예요. 1주일에 한 번 바꾸면 너무 긴 건가요? 더 빨리 바꿔야 하나요?
+     나는 매년 벌새 먹이통을 매달아 놓았을 때 그다지 성공하지 못했다. 하루 이틀 오는 것 같은데 그게 다예요. 1주일에 한 번 바꾸면 너무 긴 건가요? 더 빨리 바꿔야 하나요?
 
    * 게시물 선택
    * 로그아웃 선택
@@ -71,7 +71,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)은 다음을 사용하여 커뮤�
    * Hummingbird 주제에 대해 자세히 보기 를 선택합니다.
    * 답글 게시를 위한 댓글 입력
 
-      나는 일주일에 한 번 교체하고 5월부터 10월까지 받아.
+     나는 일주일에 한 번 교체하고 5월부터 10월까지 받아.
 
    * 답변 선택
    * 로그아웃 선택
@@ -82,7 +82,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)은 다음을 사용하여 커뮤�
    * Hummingbird 주제에 대해 자세히 보기 를 선택합니다.
    * 답글 게시를 위한 댓글 입력
 
-      나는 꿀과 피더를 판매합니다 - https://my.viral.url/ 방문
+     나는 꿀과 피더를 판매합니다 - https://my.viral.url/ 방문
 
    * 답변 선택
    * 로그아웃 선택

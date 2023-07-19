@@ -7,9 +7,9 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: b138bc434ecad849b2c588864868cab6666d50c9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5741'
+source-wordcount: '5739'
 ht-degree: 6%
 
 ---
@@ -33,10 +33,10 @@ ht-degree: 6%
 | [검색 결과 및 동작 이해](#searchbehavior) | [검색 패싯 수정](#searchfacets) | [벌크 메타데이터 업데이트](#metadataupdates) |
 | [검색 순위 및 부스팅](#searchrank) | [텍스트 추출](#extracttextupload) | [스마트 컬렉션](#collections) |
 | [고급 검색: 필터링 및 검색 범위](#scope) | [사용자 지정 술어](#custompredicates) | [예기치 않은 결과 이해 및 문제 해결](#unexpected-results) |
-| [다른 솔루션 및 앱에서 검색](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager 데스크탑 앱](#desktop-app)</li><li>[Adobe Stock 이미지](#adobe-stock)</li><li>[Dynamic Media assets](#dynamic-media)</li></ul> |  |  |
-| [자산 선택기](#asset-picker) |  |  |
-| [제한 사항](#limitations) 및 [팁](#tips) |  |  |
-| [그림 예제](#samples) |  |  |
+| [다른 솔루션 및 앱에서 검색](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager 데스크탑 앱](#desktop-app)</li><li>[Adobe Stock 이미지](#adobe-stock)</li><li>[Dynamic Media assets](#dynamic-media)</li></ul> | | |
+| [자산 선택기](#asset-picker) | | |
+| [제한 사항](#limitations) 및 [팁](#tips) | | |
+| [그림 예제](#samples) | | |
 
 상단의 Omnisearch 필드를 사용하여 디지털 에셋을 검색합니다. [!DNL Experience Manager] 웹 인터페이스. 다음으로 이동 **[!UICONTROL 에셋]** > **[!UICONTROL 파일]** 위치: [!DNL Experience Manager], 클릭 ![search_icon](assets/do-not-localize/search_icon.png) 상단 막대에서 검색 키워드를 입력하고 `Return`. 또는 키워드 단축키를 사용합니다 `/` (슬래시) Omnisearch 필드를 엽니다. `Location:Assets` 검색을 DAM 에셋으로 제한하기 위해 사전 선택됩니다. [!DNL Experience Manager] 는 검색 키워드를 입력할 때 제안을 제공합니다.
 
@@ -252,7 +252,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 | `mode` | 단일, 다중 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 다중 모드에서는 에셋 선택기를 사용하여 여러 에셋을 동시에 선택할 수 있습니다. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 자산 선택기를 [Granite] 대화 상자로 엽니다. 이 옵션은 Granite 경로 필드를 통해 자산 선택기를 시작하고 pickerSrc URL로 구성하는 경우에만 적용할 수 있습니다. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 이 옵션을 사용하여 자산 선택기의 루트 폴더를 지정합니다. 이 경우 에셋 선택기를 사용하면 루트 폴더 아래에서 하위 에셋(직접/간접)만 선택할 수 있습니다. |
-| `viewmode` | 검색 |  | 검색 모드에서 자산 선택기를 실행하려면 `assettype` 및 `mimetype` 매개 변수. |
+| `viewmode` | 검색 | | 검색 모드에서 자산 선택기를 실행하려면 `assettype` 및 `mimetype` 매개 변수. |
 | `assettype` | 이미지, 문서, 멀티미디어, 아카이브. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | 제공된 값을 기반으로 자산 유형을 필터링하려면 옵션을 사용합니다. |
 | `mimetype` | MIME 유형(`/jcr:content/metadata/dc:format`) 에셋(와일드카드도 지원됨)의 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | MIME 유형을 기반으로 자산을 필터링하는 데 사용합니다. |
 
@@ -291,7 +291,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 * 전체 텍스트 검색은 다음과 같은 연산자를 지원합니다. `-` 및 `^`. 이러한 문자를 문자열 리터럴로 검색하려면 검색 표현식을 큰따옴표로 묶습니다. 예를 들어, `"Notebook - Beauty"` 대신 `Notebook - Beauty`.
 * 검색 결과가 너무 많으면 [검색 범위](#scope) 을 눌러 원하는 에셋에 대해 제로인을 수행합니다. 특정 파일 유형, 특정 위치, 특정 메타데이터 등과 같은 원하는 에셋을 더 잘 찾는 방법에 대한 아이디어가 있을 때 가장 잘 작동합니다.
 
-* **태깅**: 태그를 사용하여 보다 효율적으로 검색 및 검색할 수 있는 에셋을 분류할 수 있습니다. 태깅은 적절한 분류법을 다른 사용자 및 워크플로우에 전달하는 데 도움이 됩니다. [!DNL Experience Manager] 은 사용 및 교육으로 자산에 태그를 지정하는 데 계속 더 능숙해지는 Adobe Sensei의 인위적인 인텔리전트 서비스를 사용하여 자산에 자동으로 태그를 지정하는 메서드를 제공합니다. 에셋을 검색할 때 계정에서 기능이 활성화되어 있으면 스마트 태그가 팩토링됩니다. 기본 제공 검색 기능과 함께 작동합니다. 다음을 참조하십시오 [검색 동작](#searchbehavior). 검색 결과가 표시되는 순서를 최적화하려면 다음을 수행할 수 있습니다 [검색 순위 높이기](#searchrank) 몇 개 중 일부 자산을 선택합니다.
+* **태깅**: 태그를 사용하여 보다 효율적으로 검색 및 검색할 수 있는 에셋을 분류할 수 있습니다. 태그 지정은 적절한 분류 체계를 다른 사용자 및 워크플로에 전파하는 데 도움이 됩니다. [!DNL Experience Manager] 은 사용 및 교육으로 자산에 태그를 지정하는 데 계속 더 능숙해지는 Adobe Sensei의 인위적인 인텔리전트 서비스를 사용하여 자산에 자동으로 태그를 지정하는 메서드를 제공합니다. 에셋을 검색할 때 계정에서 기능이 활성화되어 있으면 스마트 태그가 팩토링됩니다. 기본 제공 검색 기능과 함께 작동합니다. 다음을 참조하십시오 [검색 동작](#searchbehavior). 검색 결과가 표시되는 순서를 최적화하려면 다음을 수행할 수 있습니다 [검색 순위 높이기](#searchrank) 몇 개 중 일부 자산을 선택합니다.
 
 * **색인화**: 인덱싱된 메타데이터 및 에셋만 검색 결과에 반환됩니다. 더 나은 적용 범위와 성능을 위해 적절한 색인화를 보장하고 모범 사례를 따르십시오. 다음을 참조하십시오 [색인화](#searchindex).
 
@@ -420,7 +420,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 * 데스크탑 작업을 사용하여 데스크탑 앱에서 이러한 자산을 엽니다.
 * 스마트 컬렉션을 만듭니다.
 * 버전 만들기
-* 워크플로 시작
+* 워크플로우 시작
 * 에셋 연결 또는 연결 해제
 * 검색을 수행한 후 자동으로 표시되는 필터 패널을 사용하여 필터를 적용하여 검색 결과의 범위를 좁힐 수 있습니다.
 
@@ -487,11 +487,10 @@ You can create smart collections based on the search criteria. From the **[!UICO
 | 검색 필터 또는 술어를 사용할 수 없습니다. | <ul><li>검색 필터가 구성되지 않았습니다.</li><li>로그인에 사용할 수 없습니다.</li><li>(가능성이 낮음) 사용 중인 배포에서 검색 옵션이 사용자 지정되지 않습니다.</li></ul> | <ul><li>관리자에게 문의하여 검색 사용자 지정을 사용할 수 있는지 확인하십시오.</li><li>관리자에게 문의하여 계정에 사용자 지정을 사용할 수 있는 권한/권한이 있는지 확인하십시오.</li><li>관리자에게 문의하여 다음에 사용할 수 있는 사용자 지정 사항을 확인하십시오. [!DNL Assets] 사용 중인 배포.</li></ul> |
 | 시각적으로 유사한 이미지를 검색할 때 예상 이미지가 누락됩니다. | <ul><li>에서 이미지를 사용할 수 없음 [!DNL Experience Manager].</li><li>이미지가 인덱싱되지 않았습니다. 일반적으로 최근에 업로드된 경우.</li><li>이미지가 스마트 태그가 지정되지 않았습니다.</li></ul> | <ul><li>에 이미지 추가 [!DNL Assets].</li><li>관리자에게 문의하여 저장소를 다시 색인화하십시오. 또한 적절한 색인을 사용하고 있는지 확인하십시오.</li><li>관련 에셋에 스마트 태그를 지정하려면 관리자에게 문의하십시오.</li></ul> |
 | 시각적으로 유사한 영상을 검색할 때, 무관한 영상이 표시된다. | 시각적 검색 동작. | [!DNL Experience Manager] 는 관련성이 있을 수 있는 에셋을 가능한 한 많이 표시합니다. 연관성이 낮은 이미지가 있는 경우 결과에 추가되지만 검색 순위가 낮습니다. 검색 결과를 아래로 스크롤하면 검색된 에셋의 일치 품질과 관련성이 감소합니다. |
-| 검색 결과를 선택하고 작업할 때 검색된 모든 자산이 작동되지 않습니다. | 다음 [!UICONTROL 모두 선택] 옵션은 카드 보기에서 처음 100개의 검색 결과와 목록 보기에서 처음 200개의 검색 결과만 선택합니다. |  |
+| 검색 결과를 선택하고 작업할 때 검색된 모든 자산이 작동되지 않습니다. | 다음 [!UICONTROL 모두 선택] 옵션은 카드 보기에서 처음 100개의 검색 결과와 목록 보기에서 처음 200개의 검색 결과만 선택합니다. | |
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 검색 구현 안내서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [검색 결과를 높이기 위한 고급 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [스마트 번역 검색 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
-

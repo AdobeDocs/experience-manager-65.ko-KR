@@ -4,9 +4,9 @@ description: 가장 일반적인 MSM 관련 문제를 해결하는 방법을 찾
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
-source-git-commit: a323e6c30bf2c226f6613d1b9b037a0beedbfc0d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -27,13 +27,13 @@ MSM은 리소스 URL의 선택기를 통해 요청할 수 있는 여러 서블�
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * 블루프린트 페이지에서 이를 사용하여 연결된 모든 Live Copy 목록을 추가 Live Copy 상태 정보와 함께 가져올 수 있습니다.
    * 예:
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Live Copy 페이지에서 이를 사용하여 블루프린트 페이지와의 연결에 대한 고급 정보를 가져올 수 있습니다. 페이지가 Live Copy가 아닌 경우 아무것도 반환되지 않습니다.
    * 예:
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 이들 서블릿은 `com.day.cq.wcm.msm` 로거를 통해 유용하게 사용할 수 있는 디버그 로그 메시지를 생성합니다.
 
@@ -62,7 +62,7 @@ MSM은 리소스 URL의 선택기를 통해 요청할 수 있는 여러 서블�
 
 ## FAQ {#faq}
 
-다음은 MSM 및 라이브 카피와 관련하여 자주 묻는 몇 가지 질문입니다.
+다음은 MSM 및 Live Copy와 관련하여 자주 묻는 몇 가지 질문입니다.
 
 ### 일부 속성(예: 제목, 주석)이 MSM 롤아웃 도중 업데이트되지 않는 이유는 무엇입니까? {#missing-properties}
 
@@ -79,11 +79,11 @@ AEM 주체(사용자 또는 그룹)에 대해 삭제하거나 제거할 수 있�
 * 지정된 주체에 대해 롤아웃 작업을 숨기도록 제품 UI를 맞춤화합니다.
 * 롤아웃이 허용되지 않은 작성자에 대해 Live Copy 트리에서 쓰기 권한을 제거합니다.
 
-### 라이브 카피 페이지에 접미사 “_msm_moved”가 표시되는 이유는 무엇입니까? {#moved-pages}
+### Live Copy 페이지에 접미사 “_msm_moved”가 표시되는 이유는 무엇입니까? {#moved-pages}
 
-블루프린트 페이지가 롤아웃되면 해당 라이브 카피 페이지가 업데이트되거나 아직 존재하지 않는 경우(예: 처음 롤아웃되었거나 라이브 카피 페이지가 수동으로 삭제된 경우) 새 라이브 카피 페이지가 생성됩니다.
+블루프린트 페이지가 롤아웃되면 해당 Live Copy 페이지가 업데이트되거나 아직 존재하지 않는 경우(예: 처음 롤아웃되었거나 Live Copy 페이지가 수동으로 삭제된 경우) 새 Live Copy 페이지가 생성됩니다.
 
-그러나 후자의 경우, 같은 이름의 `cq:LiveRelationship` 속성이 없는 페이지가 존재하면 라이브 카피 페이지가 생성되기 전에 이 페이지의 이름이 그에 따라 변경됩니다.
+단, 후자의 경우 같은 이름의 `cq:LiveRelationship` 속성이 없는 페이지가 존재하면 Live Copy 페이지가 생성되기 전에 이 페이지의 이름이 그에 따라 변경됩니다.
 
 기본적으로 롤아웃되면 블루프린트 업데이트에 연결된 Live Copy 페이지가 롤아웃되거나, 페이지가 없거나, Live Copy 페이지가 생성됩니다.
 

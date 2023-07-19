@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2393'
 ht-degree: 2%
 
 ---
@@ -217,7 +217,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
      `<contextPath>/ Test.html?wcmmode=design`
 
-   * 사이드 킥에서 디자인 클릭
+   * Sidekick에서 디자인 클릭
 
    이제 디자인 모드에 있으며 단락 시스템을 편집할 수 있습니다.
 

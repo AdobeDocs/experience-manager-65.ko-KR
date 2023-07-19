@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '6408'
 ht-degree: 0%
@@ -165,7 +165,7 @@ mongodburi=mongodb://aem:aempassword@mongodbserver1.customer.com:27000,mongodbse
 #Name of MongoDB database to use
 db=aem
 
-#Store binaries in custom BlobStore e.g. FileDataStore
+#Store binaries in custom BlobStore for example, FileDataStore
 customBlobStore=true
 
 cache=2048
@@ -178,16 +178,13 @@ blobCacheSize=1024
 MongoDB 서버 AEM이에 연결해야 합니다. 기본 복제 데이터베이스 집합의 알려진 모든 구성원에 연결됩니다. MongoDB Cloud Manager를 사용하면 서버 보안이 활성화됩니다. 따라서 연결 문자열에는 적절한 사용자 이름과 암호가 포함되어야 합니다. 엔터프라이즈 버전이 아닌 MongoDB는 사용자 이름 및 암호 인증만 지원합니다. 연결 문자열 구문에 대한 자세한 내용은 [설명서](https://docs.mongodb.org/manual/reference/connection-string/).
 
 * `db`
-데이터베이스의 이름입니다. AEM 기본값은 입니다. 
-`aem-author`.
+데이터베이스의 이름입니다. AEM 기본값은 입니다. `aem-author`.
 
 * `customBlobStore`
-배포가 데이터베이스에 바이너리를 저장하는 경우 이 바이너리는 작업 세트의 일부를 형성합니다. 따라서 MongoDB 내에 바이너리를 저장하지 않는 것이 좋습니다. 
-`FileSystem` nas의 데이터 저장소입니다.
+배포가 데이터베이스에 바이너리를 저장하는 경우 이 바이너리는 작업 세트의 일부를 형성합니다. 따라서 MongoDB 내에 바이너리를 저장하지 않는 것이 좋습니다. `FileSystem` nas의 데이터 저장소입니다.
 
 * `cache`
-캐시 크기(MB)입니다. 이 공간은 에서 사용되는 다양한 캐시 간에 분산됩니다. 
-`DocumentNodeStore`을 따르지 않는 경우입니다. 기본값은 256MB입니다. 그러나 Oak 읽기 성능은 더 큰 캐시에서 혜택을 받습니다.
+캐시 크기(MB)입니다. 이 공간은 에서 사용되는 다양한 캐시 간에 분산됩니다. `DocumentNodeStore`. 기본값은 256MB입니다. 그러나 Oak 읽기 성능은 더 큰 캐시에서 혜택을 받습니다.
 
 * `blobCacheSize`
 자주 사용되는 블롭은 데이터 저장소에서 다시 참조하지 않도록 AEM에 의해 캐시될 수 있습니다. 특히 MongoDB 데이터베이스에 Blob을 저장할 때 성능에 더 많은 영향을 줍니다. 모든 파일 시스템 기반 데이터 저장소는 운영 체제 수준의 디스크 캐시를 통해 이점을 얻을 수 있습니다.
@@ -210,16 +207,13 @@ cacheSizeInMB=128
 위치:
 
 * `minRecordLength`
-크기(바이트)입니다. 이 크기보다 작거나 같은 바이너리는 문서 노드 저장소와 함께 저장됩니다. Blob의 ID를 저장하는 대신, 바이너리의 콘텐츠가 저장됩니다. 이 크기보다 큰 바이너리를 사용하면 바이너리의 ID가 노드 컬렉션에 Document의 속성으로 저장됩니다. 그리고 바이너리의 본문은 
-`FileDataStore` 디스크에 있습니다. 4096바이트는 일반적인 파일 시스템 블록 크기입니다.
+크기(바이트)입니다. 이 크기보다 작거나 같은 바이너리는 문서 노드 저장소와 함께 저장됩니다. Blob의 ID를 저장하는 대신, 바이너리의 콘텐츠가 저장됩니다. 이 크기보다 큰 바이너리를 사용하면 바이너리의 ID가 노드 컬렉션에 Document의 속성으로 저장됩니다. 그리고 바이너리의 본문은 `FileDataStore` 디스크에 있습니다. 4096바이트는 일반적인 파일 시스템 블록 크기입니다.
 
 * `path`
-데이터 저장소의 루트에 대한 경로입니다. MongoMK 배포의 경우 이 경로는 모든 AEM 인스턴스에서 사용할 수 있는 공유 파일 시스템이어야 합니다. 일반적으로 NAS(Network Attached Storage) 서버가 사용됩니다. Amazon Web Services과 같은 클라우드 배포의 경우 
-`S3DataFileStore` 을 사용할 수도 있습니다.
+데이터 저장소의 루트에 대한 경로입니다. MongoMK 배포의 경우 이 경로는 모든 AEM 인스턴스에서 사용할 수 있는 공유 파일 시스템이어야 합니다. 일반적으로 NAS(Network Attached Storage) 서버가 사용됩니다. Amazon Web Services과 같은 클라우드 배포의 경우 `S3DataFileStore` 을 사용할 수도 있습니다.
 
 * `cacheSizeInMB`
-이진 캐시의 총 크기(MB)입니다. 다음보다 작은 바이너리를 캐시하는 데 사용됩니다. 
-`maxCacheBinarySize` 설정.
+이진 캐시의 총 크기(MB)입니다. 다음보다 작은 바이너리를 캐시하는 데 사용됩니다. `maxCacheBinarySize` 설정.
 
 * `maxCachedBinarySize`
 이진 캐시에 캐시된 이진의 최대 크기(바이트)입니다. 파일 시스템 기반 데이터 저장소를 사용하는 경우 운영 체제에 의해 바이너리가 이미 캐시되므로 데이터 저장소 캐시에 높은 값을 사용하지 않는 것이 좋습니다.
@@ -550,6 +544,7 @@ echo "{nThreads:32,fileSizeMB:1000,r:true,mmf:true}" | mongoperf
 제2 테스트의 출력은 제1 테스트보다 상당히 높아야 하며, 이는 메모리 전송 성능을 나타낸다.
 
 >[!NOTE]
+>
 테스트를 수행할 때 운영 체제 모니터링 시스템에서 해당 가상 시스템에 대한 I/O 사용 통계를 확인합니다. 입출력 읽기에 대해 100%보다 낮은 값을 표시하는 경우 가상 시스템에 문제가 있을 수 있습니다.
 
 **기본 MongoDB 인스턴스의 쓰기 성능 테스트**
@@ -660,6 +655,7 @@ Header setifempty Content-Type application/javascript env=jsonp_request
 CSP를 사용하면 정책을 미세 조정할 수 있습니다. 그러나 복잡한 응용 프로그램에서는 너무 제한적인 정책으로 인해 사용자 인터페이스의 일부가 손상될 수 있으므로 CSP 헤더를 주의 깊게 개발해야 합니다.
 
 >[!NOTE]
+>
 이 작동 방식에 대한 자세한 내용은 [컨텐츠 보안 정책의 OWASP 페이지](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### 크기 조정 {#sizing}
@@ -683,4 +679,5 @@ MongoMK는 단일 데이터베이스와 함께 여러 AEM 인스턴스의 동시
 AEM이 MongoMK 지속성 관리자 배포에서 실행 중인 경우, [페이지 이름은 150자로 제한됩니다.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
+>
 다음을 참조하십시오. [MongoDB 설명서](https://docs.mongodb.com/manual/reference/limits/) 따라서 MongoDB의 알려진 제한 사항과 임계값을 숙지할 수 있습니다.

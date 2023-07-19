@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1169'
 ht-degree: 1%
 
 ---
@@ -50,6 +50,7 @@ AEM에서 Adobe Campaign 콘텐츠를 만들 때 모든 기능에 액세스하�
 >[!NOTE]
 >
 >이메일 템플릿을 추가할 때는 아래에 추가해야 합니다. **/content/campaigns** 사용할 수 있도록 설정합니다.
+>
 
 1. AEM에서 **웹 사이트** 폴더를 만든 다음 탐색기를 탐색하여 이메일 캠페인이 관리되는 위치를 찾습니다. 다음 예에서는 관련 노드가 입니다. **웹 사이트** > **캠페인** > **Geometrixx Outdoors** > **이메일 캠페인**.
 
@@ -124,7 +125,6 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 >* Adobe Campaign 필드만 **프로필** 타겟팅 차원이 고려됩니다.
 >* 다음에서 속성을 볼 때 **사이트**, Adobe Campaign 컨텍스트 필드에 대한 액세스 권한이 없습니다. 편집하는 동안 이메일에서 직접 액세스할 수 있습니다.
 >
-
 
 1. 새 항목 삽입 **뉴스레터** > **텍스트 및 개인화(캠페인)** 구성 요소.
 1. 구성 요소를 두 번 클릭하여 엽니다. 다음 **편집** 창에는 개인화 요소를 삽입할 수 있는 기능이 있습니다.

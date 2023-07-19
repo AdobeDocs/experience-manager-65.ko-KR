@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4957'
+source-wordcount: '4956'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
    * 모델: 쿼리할 모델의 ID입니다. 모든 워크플로우 모델에 대해 실패한 워크플로우 인스턴스 수를 보려면 값을 지정하지 마십시오. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 반환된 값: 실패한 워크플로우 인스턴스 수입니다.
 
@@ -101,7 +101,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
    * 시험 실행: (선택 사항) 다음 값을 지정합니다. `true` 실제로 작업을 수행하지 않고도 작업 결과를 볼 수 있습니다. 기본값 `false` 작업을 수행합니다.
    * 모델: (선택 사항) 작업이 적용되는 모델의 ID입니다. 모든 워크플로우 모델의 실패한 인스턴스에 작업을 적용할 모델을 지정하지 않습니다. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 반환된 값: 다음 열을 포함하여 종료된 인스턴스에 대한 테이블 형식 데이터입니다.
 
@@ -119,7 +119,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
    * 시험 실행: (선택 사항) 다음 값을 지정합니다. `true` 실제로 작업을 수행하지 않고도 작업 결과를 볼 수 있습니다. 기본값 `false` 작업을 수행합니다.
    * 모델: (선택 사항) 작업이 적용되는 모델의 ID입니다. 모든 워크플로우 모델의 실패한 작업 항목에 작업을 적용할 모델을 지정하지 않습니다. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 반환된 값: 다음 열을 포함하여 재시도된 실패한 작업 항목에 대한 테이블 형식 데이터입니다.
 
@@ -136,7 +136,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
    * 모델: (선택 사항) 작업이 적용되는 모델의 ID입니다. 모든 워크플로우 모델의 워크플로우 인스턴스에 작업을 적용할 모델을 지정하지 않습니다. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * 워크플로우가 시작된 이후 일 수: 제거할 워크플로우 인스턴스의 수명(일)입니다.
    * 시험 실행: (선택 사항) 다음 값을 지정합니다. `true` 실제로 작업을 수행하지 않고도 작업 결과를 볼 수 있습니다. 기본값 `false` 작업을 수행합니다.
 
@@ -155,7 +155,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
    * 모델: (선택 사항) 작업이 적용되는 모델의 ID입니다. 모든 워크플로우 모델의 워크플로우 인스턴스에 작업을 적용할 모델을 지정하지 않습니다. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 반환된 값: 부실 워크플로 인스턴스 수입니다.
 
@@ -165,7 +165,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
    * 모델: (선택 사항) 작업이 적용되는 모델의 ID입니다. 모든 워크플로우 모델의 부실 인스턴스에 작업을 적용할 모델을 지정하지 않습니다. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * 시험 실행: (선택 사항) 다음 값을 지정합니다. `true` 실제로 작업을 수행하지 않고도 작업 결과를 볼 수 있습니다. 기본값 `false` 작업을 수행합니다.
 
 * 반환되는 값: 다시 시작되는 워크플로 인스턴스 목록입니다.
@@ -181,7 +181,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
    * 모델: (선택 사항) 실행 중인 인스턴스 수가 반환되는 모델의 ID입니다. 모든 워크플로우 모델의 실행 인스턴스 수를 반환하려면 모델을 지정하지 마십시오. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 반환된 값: 실행 중인 워크플로 인스턴스 수입니다.
 
@@ -191,7 +191,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
    * 모델: (선택 사항) 완료된 인스턴스 수가 반환되는 모델의 ID입니다. 모델을 지정하지 않으면 모든 워크플로우 모델의 완료된 인스턴스 수가 반환됩니다. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 반환된 값: 완료된 워크플로 인스턴스 수입니다.
 
@@ -201,7 +201,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
    * 모델: (선택 사항) 작업이 적용되는 모델의 ID입니다. 모든 워크플로우 모델의 워크플로우 인스턴스에 작업을 적용할 모델을 지정하지 않습니다. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * 워크플로우가 완료된 이후 일 수: 워크플로우 인스턴스가 완료된 상태입니다.
    * 시험 실행: (선택 사항) 다음 값을 지정합니다. `true` 실제로 작업을 수행하지 않고도 작업 결과를 볼 수 있습니다. 기본값 `false` 작업을 수행합니다.
 
@@ -436,7 +436,7 @@ CRX 저장소에 대한 정보
   </tr>
   <tr>
    <td>node.type.management.autocreated.definitions.supported</td>
-   <td>true는 노드가 생성될 때 저장소에서 노드의 하위 항목(노드 또는 속성)을 자동으로 만들 수 있도록 지원함을 나타냅니다.</td>
+   <td>true는 노드가 생성될 때 저장소에서 노드의 하위 항목(노드 또는 등록 정보)을 자동으로 만들 수 있도록 지원함을 나타냅니다.</td>
   </tr>
   <tr>
    <td>crx.cluster.master</td>
@@ -556,11 +556,11 @@ CRX 저장소에 대한 정보
 
    * `target`: (선택 사항) A `String` 저장소 데이터를 보관할 ZIP 파일 또는 디렉터리의 이름을 나타내는 값입니다. ZIP 파일을 사용하려면 ZIP 파일 이름 확장명을 포함하십시오. 디렉터리를 사용하려면 파일 이름 확장명을 포함하지 않습니다.
 
-      증분 백업을 수행하려면 이전에 백업에 사용한 디렉토리를 지정합니다.
+     증분 백업을 수행하려면 이전에 백업에 사용한 디렉토리를 지정합니다.
 
-      절대 경로나 상대 경로를 지정할 수 있습니다. 상대 경로는 crx-quickstart 디렉토리의 상위에 상대적입니다.
+     절대 경로나 상대 경로를 지정할 수 있습니다. 상대 경로는 crx-quickstart 디렉토리의 상위에 상대적입니다.
 
-      값을 지정하지 않으면 기본값은 `backup-currentdate.zip` 사용됨, 위치 `currentdate` 이(가) 형식입니다. `yyyyMMdd-HHmm`.
+     값을 지정하지 않으면 기본값은 `backup-currentdate.zip` 사용됨, 위치 `currentdate` 이(가) 형식입니다. `yyyyMMdd-HHmm`.
 
 * 반환된 값: 없음
 

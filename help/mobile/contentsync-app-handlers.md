@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Content Sync Handler 개발에 대한 다음 지침을 참조하십시오.
 
 * ***includeModifiedPagesOnly - 부울*** - false이거나 생략하면 모든 페이지가 렌더링되고 렌더링에서 업데이트가 있는지 확인합니다. true이면 lastModified 페이지의 변경 내용에 따라 달라집니다.
 * ***+ 재작성(노드)***
-   ***- relativeParentPath - 문자열*** - 다른 모든 경로를 상대적으로 쓰는 경로입니다.
+  ***- relativeParentPath - 문자열*** - 다른 모든 경로를 상대적으로 쓰는 경로입니다.
 
 >[!NOTE]
 >
