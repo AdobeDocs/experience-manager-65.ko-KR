@@ -5,16 +5,18 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 6ab2538dd8095304a55433c15c8c3d095499d92c
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
 
 # 적응형 양식 만들기 {#creating-an-adaptive-form}
 
-## <strong>적응형 양식 만들기</strong> {#strong-create-an-adaptive-form-strong}
+<span class="preview"> 이 문서에서는 적응형 Forms에 대한 이전 접근 방식을 설명합니다. Adobe은 다음을 권장합니다. [적응형 Forms 핵심 구성 요소](/help/forms/using/create-an-adaptive-form-core-components.md) 을 클릭하여 새 양식을 만듭니다. 이러한 구성 요소는 [적응형 Forms 생성 기능이 크게 향상되었습니다](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html), 인상적인 사용자 경험 보장.</span>
+
+## 적응형 양식 만들기 {#strong-create-an-adaptive-form-strong}
 
 다음 단계에 따라 적응형 양식을 만듭니다.
 
