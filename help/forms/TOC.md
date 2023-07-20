@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 91683330024fbf1059715447073f35cecde45b0a
 workflow-type: tm+mt
-source-wordcount: '3881'
+source-wordcount: '3889'
 ht-degree: 4%
 
 ---
@@ -127,6 +127,7 @@ ht-degree: 4%
    + [AEM Forms 데이터 통합 소개](using/data-integration.md)
    + [데이터 소스 구성](using/configure-data-sources.md)
    + [Microsoft Dynamics Odata 구성](using/ms-dynamics-odata-configuration.md)
+   + [OAuth 2.0 클라이언트 자격 증명 흐름 인증을 사용한 Salesforce 통합](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [양식 데이터 모델 만들기](using/create-form-data-models.md)
    + [양식 데이터 모델 작업](using/work-with-form-data-model.md)
    + [양식 데이터 모델 사용](using/using-form-data-model.md)
@@ -197,7 +198,7 @@ ht-degree: 4%
    + [대화형 통신 구성 속성](using/interactive-communication-configuration-properties.md)
    + [여러 대화형 통신 생성](using/generate-multiple-interactive-communication-using-batch-api.md)
    + [레이아웃 모드를 사용하여 구성 요소 크기 변경](using/resize-using-layout-mode-interactive-communication.md)
-+ 워크플로우 {#workflows}
++ 워크플로 {#workflows}
    + [OSGi의 Forms 중심 워크플로우](using/aem-forms-workflow.md)
    + [OSGi의 Forms 중심 워크플로우 - 단계 참조](using/aem-forms-workflow-step-reference.md)
    + [AEM Forms 중심 워크플로우 단계에 대해 사용자 또는 그룹을 동적으로 선택합니다.](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
@@ -478,12 +479,12 @@ ht-degree: 4%
       + [Adobe PDF 설정 구성](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [보안 설정 구성](/help/forms/using/admin-help/configuring-security-settings.md)
       + [파일 유형 설정 구성](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [PDF 생성기 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [PDF Generator 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [PDF/A 지원 활성화](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [PDFG 네트워크 프린터 설정(Windows에만 해당)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [대체 글꼴 구성](/help/forms/using/admin-help/configuring-fallback-fonts.md)
       + [PDF 내보내기 변환 설정 수정](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
-      + [PDF 생성기를 사용하여 파일 변환](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
+      + [PDF Generator을 사용하여 파일 변환](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
    + SSL 구성 {#configure-ssl}
       + [SSL 구성 개요](/help/forms/using/admin-help/overview-6.md)
       + [JBoss 애플리케이션 서버에 대한 SSL 구성](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
@@ -567,7 +568,7 @@ ht-degree: 4%
       + [AEM 양식 데이터 백업](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [백업 및 복구할 파일](/help/forms/using/admin-help/files-back-recover.md)
       + [AEM Forms를 위한 백업 및 복구 전략](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [PDF Generator 백업 제한 사항](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [PDF 생성기 백업 제한 사항](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [감시 폴더의 백업 전략](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [AEM 양식 데이터 복구](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [EMC Documentum 사용자를 위한 Connector 백업 전략](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
