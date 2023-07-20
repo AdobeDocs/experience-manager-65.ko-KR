@@ -1,18 +1,14 @@
 ---
 title: 앱 템플릿 및 구성 요소
-seo-title: App Templates and Components
 description: 이 페이지를 따라 앱 템플릿 및 구성 요소에 대해 알아보십시오. 템플릿 구조에 대한 자세한 정보를 제공합니다.
-seo-description: Follow this page to learn about App Templates and Components. It provides detailed information on the structure of templates.
-uuid: ba2fd91b-de5a-4f39-a976-5455f9983669
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '408'
 ht-degree: 1%
 
 ---
@@ -25,14 +21,14 @@ ht-degree: 1%
 
 템플릿은 페이지를 만드는 데 사용되며, 선택한 범위 내에서 사용할 수 있는 구성 요소를 정의합니다. 템플릿은 만들 페이지와 구조가 동일하지만 실제 컨텐츠는 없는 노드의 계층입니다.
 
-각 템플릿에는 사용할 수 있는 여러 구성 요소가 표시됩니다.
+각 템플릿에는 사용할 수 있는 구성 요소 선택 사항이 표시됩니다.
 
 * 템플릿은 다음으로 구성됩니다. [구성 요소](/help/sites-developing/components.md);
 * 구성 요소는 위젯을 사용하고 이에 대한 액세스를 허용하며, 위젯은 콘텐츠를 렌더링하는 데 사용됩니다.
 
 >[!NOTE]
 >
->CRXDE Lite을 사용하여 AEM 애플리케이션을 개발하는 방법에 대해 알아보려면 다음을 참조하십시오. [CRXDE Lite을 사용한 개발](/help/sites-developing/developing-with-crxde-lite.md).
+>CRXDE Lite을 사용하여 Adobe Experience Manager(AEM) 애플리케이션을 개발하는 방법에 대해 알아보려면 다음을 참조하십시오. [CRXDE Lite을 사용한 개발](/help/sites-developing/developing-with-crxde-lite.md).
 
 템플릿은 페이지의 기초입니다.
 
@@ -54,7 +50,7 @@ ht-degree: 1%
 * **jcr:title** - 템플릿 제목이며 페이지를 만들 때 대화 상자에 표시됩니다.
 * **jcr:description** - 템플릿에 대한 설명. 페이지를 만들 때 대화 상자에 표시됩니다.
 
-이 노드에는 다음 항목이 포함됩니다. *jcr:content (cq:PageContent)* 결과 페이지의 콘텐츠 노드의 기반으로 사용되는 노드. 이 참조는 다음을 사용합니다. *sling:resourceType*: 새 페이지의 실제 콘텐츠를 렌더링하는 데 사용할 구성 요소입니다.
+이 노드에는 다음 항목이 포함됩니다. *jcr:content (cq:PageContent)* 결과 페이지의 콘텐츠 노드의 기반으로 사용되는 노드입니다. 이 참조는 *sling:resourceType*: 새 페이지의 실제 콘텐츠를 렌더링하는 데 사용할 구성 요소입니다.
 
 >[!NOTE]
 >

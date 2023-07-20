@@ -1,16 +1,12 @@
 ---
 title: 도메인 추가
-seo-title: Adding domains
 description: 도메인 이름 및 ID에 대한 도메인 관리 설정 및 일반 고려 사항을 사용하여 엔터프라이즈, 로컬 또는 하이브리드 도메인을 추가하는 방법을 알아봅니다.
-seo-description: Learn how to add an enterprise, local, or hybrid domain using Domain Management settings and general considerations for domain names and IDs.
-uuid: 3ae1e5d4-ea5b-4e0b-be97-3957c3702d5f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
 exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 0%

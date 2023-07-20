@@ -1,19 +1,15 @@
 ---
 title: 정적 개체의 만료
-seo-title: Expiration of Static Objects
-description: 정적 개체가 적절한 기간 동안 만료되지 않도록 AEM을 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
-uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
+description: 정적 개체가 적절한 기간 동안 만료되지 않도록 Adobe Experience Manager을 구성하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -31,9 +27,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 구성은 Dispatcher와 완전히 별도이며 Dispatcher에서는 작동하지 않습니다.
+>이 구성은 Dispatcher와 별개이며 Dispatcher에서는 작동하지 않습니다.
 >
->Dispatcher의 목적은 AEM 앞에 데이터를 캐시하는 것입니다.
+>Dispatcher의 목적은 AEM(Adobe Experience Manager) 앞에 데이터를 캐시하는 것입니다.
 
 동적이지 않고 시간이 지나도 변경되지 않는 모든 파일은 캐시할 수 있으며 캐시되어야 합니다. Apache HTTPD 서버에 대한 구성은 환경에 따라 다음 중 하나와 비슷할 수 있습니다.
 

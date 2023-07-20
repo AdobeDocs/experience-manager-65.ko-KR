@@ -1,24 +1,20 @@
 ---
-title: Android Studio 프로젝트 설정 및 Android 앱 빌드
-seo-title: Set up the Android studio project and build the Android app
-description: Android Studio 프로젝트를 설정하고 AEM Forms 앱용 설치 관리자를 빌드하는 절차
-seo-description: Steps to set up the Android Studio project and build the installer for the AEM Forms app
-uuid: 4c966cdc-d0f5-4b5b-b21f-f11e8a35ec8a
+title: Android&trade; studio 프로젝트를 설정하고 Android&trade; 앱을 빌드합니다.
+description: Android&trade; Studio 프로젝트를 설정하고 Adobe Experience Manager(AEM) Forms 앱용 설치 관리자를 빌드하는 절차
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
-discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '597'
 ht-degree: 8%
 
 ---
 
-# Android Studio 프로젝트 설정 및 Android 앱 빌드 {#set-up-the-android-studio-project-and-build-the-android-app}
+# Android™ studio 프로젝트 설정 및 Android™ 앱 빌드 {#set-up-the-android-studio-project-and-build-the-android-app}
 
-이 문서는 AEM Forms 앱 6.3.1.1 이상 버전을 빌드하기 위한 것입니다. AEM Forms 앱 6.3의 소스 코드 소스 코드에서 앱을 빌드하려면 다음을 참조하십시오. [Eclipse 프로젝트 설정 및 Android™ 앱 빌드](/help/forms/using/setup-eclipse-project-build-installer.md).
+이 문서는 AEM Forms 앱 6.3.1.1 이상 버전을 빌드하기 위한 것입니다. AEM Forms 앱 6.3의 소스 코드에서 앱을 빌드하려면 다음을 참조하십시오. [Eclipse 프로젝트 설정 및 Android™ 앱 빌드](/help/forms/using/setup-eclipse-project-build-installer.md).
 
 AEM Forms은 AEM Forms 앱의 전체 소스 코드를 제공합니다. 소스에는 사용자 지정 AEM Forms 앱을 빌드하기 위한 모든 구성 요소가 포함되어 있습니다. 소스 코드 아카이브, `adobe-lc-mobileworkspace-src-<version>.zip` 의 일부임 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 소프트웨어 배포 패키지
 
@@ -55,7 +51,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
    >[!NOTE]
    >
-   >Windows®의 경우 시스템 드라이브에 Android 프로젝트를 보관하는 것이 좋습니다.
+   >Windows®의 경우 Android™ 프로젝트를 시스템 드라이브에 보관하는 것이 좋습니다.
 
 1. 다음 디렉토리에서 아카이브를 추출합니다.
 
@@ -65,7 +61,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
    >[!NOTE]
    >
-   >프로젝트를 Android Studio로 가져오기 전에 추출된 Android 프로젝트를 시스템 드라이브에 보관하는 것이 좋습니다.
+   프로젝트를 Android™ Studio로 가져오기 전에 추출한 Android 프로젝트를 시스템 드라이브에 보관하는 것이 좋습니다.
 
 1. Android™ Studio를 시작합니다.
 
@@ -102,7 +98,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
 ### Android™ Debug Bridge 사용 {#andriod-debug-bridge}
 
-다음을 통해 Android™ 장치에 애플리케이션을 설치할 수 있습니다. [Android™ 디버그 브리지](https://developer.android.com/tools/help/adb.html) 다음 명령을 사용하여 생성합니다.
+다음을 통해 Android™ 장치에 애플리케이션을 설치할 수 있습니다. [Android™ 디버그 브리지](https://developer.android.com/tools/adb) 다음 명령을 사용하여 생성합니다.
 
 **Mac 사용자용**: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 

@@ -1,17 +1,15 @@
 ---
 title: 기본 처리
-description: AEM 작성 환경을 사용할 때의 기본 처리에 대한 개요입니다. 사이트 콘솔을 기본으로 사용합니다.
-uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
+description: Adobe Experience Manager 작성 환경을 사용할 때의 기본 처리에 대한 개요입니다. 사이트 콘솔을 기본으로 사용합니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 12%
+source-wordcount: '1167'
+ht-degree: 8%
 
 ---
 
@@ -19,17 +17,17 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->* 이 페이지는 AEM 작성 환경을 사용할 때 기본 처리에 대한 개요를 알 수 있도록 설계되었습니다. **사이트** 콘솔을 기본으로 사용합니다.
+>* 이 페이지는 Adobe Experience Manager(AEM) 작성 환경을 사용할 때 기본 처리에 대한 개요를 알 수 있도록 설계되었습니다. **사이트** 콘솔을 기본으로 사용합니다.
 >
->* 일부 기능은 일부 콘솔에서 사용할 수 없으며/또는 추가 기능은 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
+>* 일부 기능은 일부 콘솔에서 사용할 수 없으며, 추가 기능은 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔 및 관련 기능에 대한 특정 정보는 다른 페이지에서 더 자세히 다룹니다.
 >* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
 >
 
 ## 시작 화면 {#the-welcome-screen}
 
-클래식 UI는 클릭, 두 번 클릭 및 시작과 같은 작업을 탐색하고 시작하는 데 잘 알려진 메커니즘을 사용하여 다양한 콘솔을 제공합니다 [컨텍스트 메뉴](#context-menus).
+클래식 UI는 클릭, 두 번 클릭 및 과 같은 작업을 탐색하고 시작하는 데 잘 알려진 메커니즘을 사용하여 다양한 콘솔을 제공합니다 [컨텍스트 메뉴](#context-menus).
 
-로그인하면 시작 화면이 표시되며 콘솔 및 서비스에 대한 링크 목록이 제공됩니다.
+로그인 후 시작 화면이 표시됩니다. 콘솔 및 서비스에 대한 링크 목록을 제공합니다.
 
 ![screen_shot_2012-01-30at61745pm](assets/screen_shot_2012-01-30at61745pm.png)
 
@@ -49,7 +47,7 @@ ht-degree: 12%
   </tr>
   <tr>
    <td><strong>디지털 자산</strong><br /> </td>
-   <td>이러한 콘솔에서는 이미지, 비디오, 문서 및 오디오 파일 등의 <a href="/help/sites-classic-ui-authoring/classicui-assets.md">디지털 자산을 관리하고 </a> 가져올 수 있습니다. 그런 다음 동일한 AEM 인스턴스에서 실행되는 웹 사이트에서 이러한 자산을 사용할 수 있습니다.   </td>
+   <td>이러한 콘솔에서는 및 <a href="/help/sites-classic-ui-authoring/classicui-assets.md">디지털 자산 관리</a> 이미지, 비디오, 문서 및 오디오 파일 등. 그런 다음 동일한 AEM 인스턴스에서 실행되는 웹 사이트에서 이러한 자산을 사용할 수 있습니다.   </td>
   </tr>
   <tr>
    <td><strong>론치</strong></td>
@@ -57,7 +55,7 @@ ht-degree: 12%
   </tr>
   <tr>
    <td><strong>받은 편지함 </strong></td>
-   <td>많은 사람들이 워크플로우의 하위 작업에 참여하고 있으며 각 사람은 작업을 다음 사람에게 넘기기 전에 단계를 완료해야 합니다. 받은 편지함에서 이러한 작업과 관련된 알림을 볼 수 있습니다. 다음을 참조하십시오 <a href="/help/sites-administering/workflows.md">워크플로우 작업</a>. <br /> </td>
+   <td>종종 다양한 사람들이 워크플로우의 하위 작업에 참여하며 각 사람은 작업을 다음 사람에게 넘기기 전에 단계를 완료해야 합니다. 받은 편지함에서 이러한 작업과 관련된 알림을 볼 수 있습니다. 다음을 참조하십시오 <a href="/help/sites-administering/workflows.md">워크플로우 작업</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>태그 지정</strong></td>
@@ -65,19 +63,19 @@ ht-degree: 12%
   </tr>
   <tr>
    <td><strong>도구</strong></td>
-   <td>다음 <a href="/help/sites-administering/tools-consoles.md">도구 콘솔</a> 웹 사이트, 디지털 에셋 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구 및 콘솔에 대한 액세스를 제공합니다.</td>
+   <td>다음 <a href="/help/sites-administering/tools-consoles.md">도구 콘솔</a> 웹 사이트, 디지털 에셋 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 몇 가지 전문 도구 및 콘솔에 대한 액세스를 제공합니다.</td>
   </tr>
   <tr>
    <td><strong>사용자</strong></td>
-   <td>이러한 콘솔에서는 사용자 및 그룹에 대한 액세스 권한을 관리할 수 있습니다. 자세한 내용은 다음을 참조하십시오. <a href="/help/sites-administering/security.md">사용자 관리 및 보안</a>.<br /> </td>
+   <td>이러한 콘솔에서는 사용자 및 그룹에 대한 액세스 권한을 관리할 수 있습니다. 자세한 내용은 <a href="/help/sites-administering/security.md">사용자 관리 및 보안</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>웹 사이트</strong></td>
    <td>Sites/Websites 콘솔에서는 <a href="/help/sites-classic-ui-authoring/classic-page-author.md">웹 사이트 생성, 보기 및 관리</a> AEM 인스턴스에서 실행 중입니다. 이러한 콘솔을 통해 웹 사이트 페이지를 만들고, 복사하고, 이동하고, 삭제하고, 워크플로우를 시작하고, 페이지를 활성화(게시)할 수 있습니다. 편집할 페이지를 열 수도 있습니다.<br /> </td>
   </tr>
   <tr>
-   <td><strong>워크플로우</strong></td>
-   <td>워크플로우는 일부 작업을 완료하는 프로세스를 설명하는 일련의 단계를 정의한 것입니다. 많은 사람들이 작업에 참여하고 있으며 각 사람은 다음 사람에게 작업을 넘기기 전에 자신의 단계를 완료해야 합니다. 워크플로 콘솔에서는 워크플로 모델을 구축하고 실행 중인 워크플로 인스턴스를 관리할 수 있습니다. 다음을 참조하십시오 <a href="/help/sites-administering/workflows.md">워크플로우 작업</a>.<br /> </td>
+   <td><strong>워크플로</strong></td>
+   <td>워크플로우는 일부 작업을 완료하는 프로세스를 설명하는 일련의 단계를 정의한 것입니다. 종종 여러 사람이 작업에 참여하고 있으며 각 사람은 작업을 다음 사람에게 넘기기 전에 자신의 단계를 완료해야 합니다. 워크플로 콘솔에서는 워크플로 모델을 구축하고 실행 중인 워크플로 인스턴스를 관리할 수 있습니다. 다음을 참조하십시오 <a href="/help/sites-administering/workflows.md">워크플로우 작업</a>.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -92,7 +90,7 @@ ht-degree: 12%
 
 * 오른쪽 창
 
-  왼쪽 창에서 선택한 위치의 페이지를 보여주며 작업을 수행하는 데 사용할 수 있습니다.
+  왼쪽 창에서 선택한 위치에 페이지가 표시되며 작업을 수행하는 데 사용할 수 있습니다.
 
 여기에서 다음을 수행할 수 있습니다. [페이지 관리](/help/sites-authoring/managing-pages.md) 도구 모음, 상황에 맞는 메뉴 사용 또는 추가 작업을 위해 페이지 열기
 
@@ -104,24 +102,24 @@ ht-degree: 12%
 
 ## 도움말 액세스 {#accessing-help}
 
-다양한 콘솔(예: 웹 사이트)에도 **도움말** 버튼을 사용할 수 있으면 패키지 공유 또는 설명서 사이트가 열립니다.
+다양한 콘솔(예: 웹 사이트)에서 **도움말** 버튼을 사용할 수 있습니다. 클릭 **도움말** 패키지 공유 또는 설명서 사이트를 엽니다.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
-페이지를 편집할 때 [sidekick에는 도움말에 액세스하기 위한 버튼도 있습니다](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
+페이지 편집 시 [sidekick에는 도움말에 액세스하기 위한 버튼도 있습니다](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
 ## 웹 사이트 콘솔 탐색 {#navigating-with-the-websites-console}
 
 다음 **웹 사이트** 콘솔에는 콘텐츠 페이지가 트리 구조로 나열됩니다(왼쪽 창). 탐색의 용이성을 위해 트리 구조의 섹션을 필요에 따라 확장(+)하거나 축소(-)할 수 있습니다.
 
-* 왼쪽 창에서 페이지 이름을 한 번 클릭하면 다음 작업이 수행됩니다.
+* 왼쪽 창에서 페이지 이름을 클릭하면 다음 작업이 수행됩니다.
 
-   * 오른쪽 창에 하위 페이지 나열
-   * 왼쪽 창의 구조도 확장합니다.
+   * 오른쪽 창에 하위 페이지를 나열합니다.
+   * 왼쪽 창에서 구조를 확장합니다.
 
-     성능상의 이유로 이 작업은 하위 노드의 수에 따라 다릅니다. 표준 설치를 사용하면 다음과 같은 경우 확장 방법이 작동합니다. `30` 또는 더 적은 하위 노드.
+     성능상의 이유로 이 작업은 하위 노드의 수에 따라 다릅니다. 표준 설치를 사용하면 다음과 같은 경우 확장 방법이 작동합니다. `30` 또는 더 적은 수의 하위 노드.
 
-* 페이지를 열 때 동시에 이 효과가 명확하지 않지만 페이지 이름(왼쪽 창)을 두 번 클릭하면 트리가 확장됩니다.
+* 페이지 이름(왼쪽 창)을 두 번 클릭하면 트리가 확장되지만, 페이지가 열릴 때 이 효과는 명확하지 않습니다.
 
 >[!NOTE]
 >
@@ -140,7 +138,7 @@ ht-degree: 12%
 >위치:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->다음을 참조하십시오 [CQ 위젯 API의 SiteAdmin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) 을 참조하십시오.
+>다음을 참조하십시오 [CQ 위젯 API의 SiteAdmin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) 을 참조하십시오.
 
 ## 웹 사이트 콘솔의 페이지 정보 {#page-information-on-the-websites-console}
 
@@ -182,7 +180,7 @@ ht-degree: 12%
   </tr>
   <tr>
    <td>상태</td>
-   <td>페이지가 워크플로의 일부인지 또는 라이브 카피의 일부인지 여부, 페이지가 현재 잠겨 있는지 여부 등 페이지의 현재 상태를 나타냅니다.</td>
+   <td>페이지가 워크플로의 일부인지 또는 라이브 카피의 일부인지 여부, 페이지가 잠겨 있는지 여부 등 페이지 상태를 나타냅니다.</td>
   </tr>
   <tr>
    <td>노출 횟수</td>
@@ -224,6 +222,6 @@ ht-degree: 12%
 
 ## 컨텍스트 메뉴 {#context-menus}
 
-클래식 UI는 클릭 및 두 번 클릭을 포함하여 작업을 탐색하고 시작하는 데 잘 알려진 메커니즘을 사용합니다. 현재 상황에 따라 다양한 컨텍스트 메뉴(일반적으로 마우스 오른쪽 단추로 열림)도 사용할 수 있습니다.
+클래식 UI는 클릭 및 두 번 클릭을 포함하여 작업을 탐색하고 시작하는 데 잘 알려진 메커니즘을 사용합니다. 현재 상황에 따라 다양한 컨텍스트 메뉴(마우스 오른쪽 단추로 열림)도 사용할 수 있습니다.
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
