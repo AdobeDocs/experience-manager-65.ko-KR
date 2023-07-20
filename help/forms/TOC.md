@@ -8,7 +8,8 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 91683330024fbf1059715447073f35cecde45b0a
+feature: Forms Service
+source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
 workflow-type: tm+mt
 source-wordcount: '3889'
 ht-degree: 4%
@@ -479,7 +480,7 @@ ht-degree: 4%
       + [Adobe PDF 설정 구성](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [보안 설정 구성](/help/forms/using/admin-help/configuring-security-settings.md)
       + [파일 유형 설정 구성](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [PDF Generator 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [PDF 생성기 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [PDF/A 지원 활성화](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [PDFG 네트워크 프린터 설정(Windows에만 해당)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [대체 글꼴 구성](/help/forms/using/admin-help/configuring-fallback-fonts.md)
@@ -568,7 +569,7 @@ ht-degree: 4%
       + [AEM 양식 데이터 백업](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [백업 및 복구할 파일](/help/forms/using/admin-help/files-back-recover.md)
       + [AEM Forms를 위한 백업 및 복구 전략](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [PDF 생성기 백업 제한 사항](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [PDF Generator 백업 제한 사항](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [감시 폴더의 백업 전략](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [AEM 양식 데이터 복구](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [EMC Documentum 사용자를 위한 Connector 백업 전략](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
