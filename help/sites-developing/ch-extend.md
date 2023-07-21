@@ -1,18 +1,14 @@
 ---
 title: ContextHub 확장
-seo-title: Extending ContextHub
 description: 제공된 ContextHub 저장소 및 모듈이 솔루션 요구 사항을 충족하지 못할 경우 새로운 유형의 ContextHub 저장소 및 모듈을 정의합니다
-seo-description: Define new types of ContextHub stores and modules when the ones provided do not meet your solution requirements
-uuid: 1d80c01d-ec5d-4e76-849d-bec0e1c3941a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 13a908ae-6965-4438-96d0-93516b500884
 exl-id: 41898fa7-a369-4c63-8ccb-69eb3fa146a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 0%
 
 ## 사용자 지정 스토어 후보 생성 {#creating-custom-store-candidates}
 
-ContextHub 저장소는 등록된 저장소 후보에서 만들어집니다. 사용자 지정 스토어를 만들려면 스토어 후보를 만들고 등록해야 합니다.
+ContextHub 저장소는 등록된 저장소 후보에서 만들어집니다. 사용자 지정 저장소를 만들려면 저장소 후보를 만들고 등록합니다.
 
 저장소 후보를 만들고 등록하는 코드가 포함된 JavaScript 파일은에 포함되어야 합니다. [클라이언트 라이브러리 폴더](/help/sites-developing/clientlibs.md#creating-client-library-folders). 폴더의 범주는 다음 패턴과 일치해야 합니다.
 
@@ -51,7 +47,7 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-현실적으로 사용자 정의 저장소 후보는 추가 기능을 정의하거나 저장소의 초기 구성을 재정의합니다. 여러 개 [샘플 저장소 후보](/help/sites-developing/ch-samplestores.md) 아래 저장소에 설치됨 `/libs/granite/contexthub/components/stores`. 이러한 샘플에서 배우려면 CRXDE Lite 를 사용하여 Javascript 파일을 엽니다.
+현실적으로 사용자 정의 저장소 후보는 추가 기능을 정의하거나 저장소의 초기 구성을 재정의합니다. 여러 개 [샘플 저장소 후보](/help/sites-developing/ch-samplestores.md) 아래 저장소에 설치됨 `/libs/granite/contexthub/components/stores`. 이러한 샘플에서 배우려면 CRXDE Lite 를 사용하여 JavaScript 파일을 엽니다.
 
 ### ContextHub 저장소 후보 등록 {#registering-a-contexthub-store-candidate}
 
@@ -66,11 +62,11 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-대부분의 경우 한 명의 후보자만 필요하며 우선 순위를 다음으로 설정할 수 있습니다. `0`, 그러나 관심이 있는 경우 다음을 배울 수 있습니다. [추가 고급 등록,](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) 를 사용하면 javascript 조건을 기반으로 몇 가지 스토어 구현 중 하나를 선택할 수 있습니다(`applies`) 및 후보 우선 순위.
+일반적으로 한 명의 후보자만 필요하며 우선 순위를 다음으로 설정할 수 있습니다. `0`. 그러나 관심이 있다면 다음을 배울 수 있습니다. [추가 고급 등록,](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) JavaScript 조건()을 기반으로 몇 가지 스토어 구현 중 하나를 선택할 수 있습니다.`applies`) 및 후보 우선 순위.
 
 ## ContextHub UI 모듈 유형 작성 {#creating-contexthub-ui-module-types}
 
-다음과 같은 경우 사용자 정의 UI 모듈 유형을 만듭니다. [contextHub와 함께 설치됨](/help/sites-developing/ch-samplemodules.md) 요구 사항을 충족하지 않습니다. UI 모듈 유형을 만들려면 를 확장하여 새 UI 모듈 렌더러를 만듭니다. `ContextHub.UI.BaseModuleRenderer` 클래스를 지정한 다음 `ContextHub.UI`.
+다음과 같은 경우 사용자 정의 UI 모듈 유형을 만듭니다. [contextHub와 함께 설치됨](/help/sites-developing/ch-samplemodules.md) 요구 사항을 충족하지 않습니다. UI 모듈 유형을 만들려면 를 확장하여 UI 모듈 렌더러를 만듭니다. `ContextHub.UI.BaseModuleRenderer` 클래스를 지정한 다음 `ContextHub.UI`.
 
 UI 모듈 렌더러를 만들려면 `Class` ui 모듈을 렌더링하는 논리를 포함하는 개체입니다. 최소한 클래스는 다음 작업을 수행해야 합니다.
 
@@ -78,7 +74,7 @@ UI 모듈 렌더러를 만들려면 `Class` ui 모듈을 렌더링하는 논리�
 
 * 기본 구성을 제공합니다. 만들기 `defaultConfig` 속성. 이 속성은 다음에 대해 정의된 속성을 포함하는 개체입니다. [`contexthub.base`](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) UI 모듈 및 필요한 기타 모든 속성.
 
-다음에 대한 소스 `ContextHub.UI.BaseModuleRenderer` /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js에 있습니다.  렌더러를 등록하려면 [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) 방법 `ContextHub.UI` 클래스. 모듈 유형의 이름을 제공해야 합니다. 관리자는 이 렌더러를 기반으로 UI 모듈을 만들 때 이 이름을 지정합니다.
+다음에 대한 소스 `ContextHub.UI.BaseModuleRenderer` 는 /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js에 있습니다. 렌더러를 등록하려면 [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) 방법 `ContextHub.UI` 클래스. 모듈 유형의 이름을 입력합니다. 관리자는 이 렌더러를 기반으로 UI 모듈을 만들 때 이 이름을 지정합니다.
 
 자체 실행 익명 함수에서 렌더러 클래스를 만들고 등록합니다. 다음 예제는 contexthub.browserinfo UI 모듈의 소스 코드를 기반으로 합니다. 이 UI 모듈은 `ContextHub.UI.BaseModuleRenderer` 클래스.
 
@@ -107,7 +103,7 @@ UI 모듈 렌더러를 만들려면 `Class` ui 모듈을 렌더링하는 논리�
 }());
 ```
 
-렌더러를 만들고 등록하는 코드가 포함된 Javascript 파일은 [클라이언트 라이브러리 폴더](/help/sites-developing/clientlibs.md#creating-client-library-folders). 폴더의 범주는 다음 패턴과 일치해야 합니다.
+렌더러를 만들고 등록하는 코드가 포함된 JavaScript 파일은에 포함되어야 합니다 [클라이언트 라이브러리 폴더](/help/sites-developing/clientlibs.md#creating-client-library-folders). 폴더의 범주는 다음 패턴과 일치해야 합니다.
 
 ```xml
 contexthub.module.[moduleType]

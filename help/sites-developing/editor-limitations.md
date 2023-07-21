@@ -1,25 +1,21 @@
 ---
 title: 편집기 제한 사항
-seo-title: Editor Limitations
-description: 터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다.
-seo-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
-uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
+description: 터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 콘텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 10%
+source-wordcount: '306'
+ht-degree: 11%
 
 ---
 
 # 편집기 제한 사항{#editor-limitations}
 
-터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
+터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 콘텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
 
 ## 기능 제한 사항 {#functional-limitations}
 
@@ -33,7 +29,7 @@ ht-degree: 10%
 
 ### 구조 페이지 {#structure-pages}
 
-페이지 이름을 지정할 수 없습니다. `structure`. 이름이 지정된 페이지 `structure` 페이지 편집기에서 편집할 수 없습니다.
+페이지 이름을 지정할 수 없음 `structure`. 이름이 지정된 페이지 `structure` 페이지 편집기에서 편집할 수 없습니다.
 
 ## CSS 제한 사항 {#css-limitations}
 
@@ -43,11 +39,11 @@ ht-degree: 10%
 
 요소가 절대적으로 배치되면 해당 오버레이 위치에 문제가 발생할 수 있습니다.
 
-* 이 경우 편집기에서 정확히 동일한 치수로 오버레이를 생성하므로 절대 위치에 있는 요소의 치수가 올바른지 확인하십시오.
+* 이 경우 편집기에서 정확히 동일한 치수로 오버레이를 만들기 때문에 절대 위치에 있는 요소의 치수가 올바른지 확인하십시오.
 
 ### vh 단위 {#vh-units}
 
-`vh` iframe 높이는 AEM에서 자동으로 조정해야 하므로 단위가 지원되지 않습니다.
+`vh` iframe 높이는 AEM(Adobe Experience Manager)에서 자동으로 조정해야 하므로 단위가 지원되지 않습니다.
 
 ### 고정 배경 이미지 {#fixed-background-images}
 
@@ -59,7 +55,7 @@ ht-degree: 10%
 
 페이지의 본문 요소에서는 100% 높이가 지원되지 않습니다.
 
-* 다음과 같이 body 요소를 &quot;늘리기&quot;하여 전체 화면 body를 구현하기 위해 해결 방법이 가능합니다.
+* 본문 요소를 다음과 같이 &quot;늘리기&quot;하여 전체 화면 본문을 구현할 수 있습니다.
 
 ```xml
 body {

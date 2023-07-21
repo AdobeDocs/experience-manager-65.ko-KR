@@ -1,30 +1,26 @@
 ---
 title: URL 표면화
-seo-title: Externalizing URLs
 description: 외부화는 프로그래밍 방식으로 리소스 경로를 외부 및 절대 URL로 변환할 수 있는 OSGI 서비스입니다
-seo-description: The Externalizer is an OSGI service that allows you to programmatically transform a resource path into an external and absolute URL
-uuid: 65bcc352-fc8c-4aa0-82fb-1321a035602d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '495'
 ht-degree: 1%
 
 ---
 
 # URL 표면화{#externalizing-urls}
 
-AEM에서 **Externalizer** 는 리소스 경로를 프로그래밍 방식으로 변환할 수 있는 OSGI 서비스입니다(예: `/path/to/my/page`)을 외부 및 절대 URL(예: `https://www.mycompany.com/path/to/my/page`) 사전 구성된 DNS로 경로를 접두사로 추가합니다.
+Adobe Experience Manager(AEM)에서 **Externalizer** 는 리소스 경로를 프로그래밍 방식으로 변환할 수 있는 OSGI 서비스입니다(예: `/path/to/my/page`)을 외부 및 절대 URL(예: `https://www.mycompany.com/path/to/my/page`) 사전 구성된 DNS로 경로를 접두사로 추가합니다.
 
 인스턴스가 웹 레이어 뒤에서 실행 중인 경우 외부로 표시되는 URL을 알 수 없고 경우에 따라 링크가 요청 범위 외부에서 만들어져야 하므로 이 서비스는 이러한 외부 URL을 구성하고 빌드할 수 있는 중앙 위치를 제공합니다.
 
-이 페이지에서는 구성 방법을 설명합니다. **Externalizer** 서비스 및 사용 방법. 자세한 내용은 다음을 참조하십시오 [자바독스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+이 페이지에서는 구성 방법을 설명합니다. **Externalizer** 서비스 및 사용 방법. 자세한 내용은 다음을 참조하십시오 [자바독스](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## 외부화 서비스 구성 {#configuring-the-externalizer-service}
 
@@ -44,16 +40,16 @@ AEM에서 **Externalizer** 는 리소스 경로를 프로그래밍 방식으로 
 
    ![aem-externalizer-01](assets/aem-externalizer-01.png)
 
-1. 정의 **도메인** 매핑: 매핑은 코드에서 도메인, 스페이스 및 도메인을 참조하는 데 사용할 수 있는 고유한 이름으로 구성됩니다.
+1. 정의 **도메인** 매핑: 매핑은 코드에서 도메인, 공간 및 도메인을 참조하는 데 사용할 수 있는 고유한 이름으로 구성됩니다.
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
    위치:
 
-   * **체계** 는 일반적으로 http 또는 https이지만 ftp 등일 수 있습니다.
+   * **체계** 은 http 또는 https이지만 ftp 등일 수 있습니다.
 
       * 원하는 경우 https를 사용하여 https 링크를 적용합니다
-      * URL의 외부화를 요청할 때 클라이언트 코드가 스키마를 재정의하지 않는 경우 사용됩니다.
+      * URL의 외부화를 요청할 때 클라이언트 코드가 스키마를 재정의하지 않는 경우에 사용됩니다.
 
    * **server** 는 호스트 이름입니다(도메인 이름 또는 ip 주소일 수 있음).
    * **포트** (선택 사항) 은 포트 번호입니다.
@@ -61,7 +57,7 @@ AEM에서 **Externalizer** 는 리소스 경로를 프로그래밍 방식으로 
 
    예를 들어`production https://my.production.instance`
 
-   다음 매핑 이름은 사전 정의되어 있으며 AEM이 사용함에 따라 항상 설정해야 합니다.
+   다음 매핑 이름은 사전 정의되어 있으며 AEM이 이 이름을 사용하므로 설정해야 합니다.
 
    * `local` - 로컬 인스턴스
    * `author` - 제작 시스템 DNS
@@ -69,7 +65,7 @@ AEM에서 **Externalizer** 는 리소스 경로를 프로그래밍 방식으로 
 
    >[!NOTE]
    >
-   >사용자 지정 구성을 사용하면 다음과 같은 새 카테고리를 추가할 수 있습니다. `production`, `staging` 또는 다음과 같은 외부 비 AEM 시스템도 사용할 수 있습니다. `my-internal-webservice`. 이러한 URL을 프로젝트의 코드 베이스에 있는 여러 위치에서 하드코딩하지 않는 것이 유용합니다.
+   >사용자 지정 구성을 사용하여 다음과 같은 범주를 추가할 수 있습니다. `production`, `staging`또는 와 같은 외부 비 AEM 시스템 `my-internal-webservice`. 이러한 URL을 프로젝트의 코드 베이스에 있는 여러 위치에서 하드코딩하지 않는 것이 유용합니다.
 
 1. 클릭 **저장** 변경 사항을 저장합니다.
 
@@ -129,4 +125,4 @@ AEM에서 **Externalizer** 는 리소스 경로를 프로그래밍 방식으로 
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. 다음에서 더 많은 예를 찾을 수 있습니다. [자바독스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+1. 다음에서 더 많은 예를 찾을 수 있습니다. [자바독스](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).

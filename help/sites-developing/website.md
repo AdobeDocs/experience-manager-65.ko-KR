@@ -1,17 +1,15 @@
 ---
 title: 모든 기능을 갖춘 웹 사이트(JSP) 만들기
-description: 이 자습서를 통해 AEM에서 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다
-uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
+description: 이 자습서에서는 Adobe Experience Manager(AEM)를 사용하여 모든 기능을 갖춘 웹 사이트를 만드는 방법을 설명합니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '4935'
+source-wordcount: '4941'
 ht-degree: 3%
 
 ---
@@ -20,9 +18,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->이 문서에서는 JSP를 사용하고 클래식 UI를 기반으로 하는 웹 사이트를 만드는 방법을 설명합니다. Adobe은 문서에 자세히 설명된 대로 웹 사이트에 최신 AEM 기술을 활용할 것을 권장합니다 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md).
+>이 문서에서는 JSP를 사용하고 클래식 UI를 기반으로 하는 웹 사이트를 만드는 방법을 설명합니다. Adobe은 이 문서에 자세히 설명된 대로 웹 사이트에 최신 Adobe Experience Manager(AEM) 기술을 사용하는 것을 권장합니다 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md).
 
-이 자습서를 통해 Adobe Experience Manager(AEM)를 사용하여 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다. 웹 사이트는 일반 웹 사이트를 기반으로 하며 주로 웹 개발자를 대상으로 합니다. 모든 개발은 작성자 환경 내에서 수행됩니다.
+이 자습서를 통해 AEM에서 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다. 웹 사이트는 일반 웹 사이트를 기반으로 하며 주로 웹 개발자를 대상으로 합니다. 모든 개발은 작성자 환경 내에서 수행됩니다.
 
 이 튜토리얼에서는 다음 방법을 설명합니다.
 
@@ -42,7 +40,7 @@ ht-degree: 3%
 
 1. 다양한 기초 구성 요소를 포함합니다.
 
-모든 단계를 수행한 후 페이지는 다음과 같이 표시됩니다.
+모든 단계를 수행한 후 페이지는 다음과 같이 표시되어야 합니다.
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -110,9 +108,9 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 이 섹션에서는 다음을 만듭니다.
 
-* 예제 웹 사이트에서 컨텐츠 페이지를 만드는 데 사용할 컨텐츠 페이지 템플릿
-* 컨텐츠 페이지를 렌더링하는 데 사용할 contentpage 구성 요소입니다
-* contentpage 스크립트
+* 예제 웹 사이트에서 컨텐츠 페이지를 만드는 데 사용되는 컨텐츠 페이지 템플릿입니다.
+* 컨텐츠 페이지를 렌더링하는 데 사용되는 contentpage 구성 요소입니다.
+* contentpage 스크립트.
 
 #### Contentpage 템플릿 만들기 {#creating-the-contentpage-template}
 
@@ -139,7 +137,7 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   허용되는 경로 속성의 값은 입니다. *정규 표현식입니다.* 표현식과 일치하는 경로가 있는 페이지는 템플릿을 사용할 수 있습니다. 이 경우 정규 표현식은 의 경로와 일치합니다. **/content** 폴더 및 모든 하위 페이지.
+   허용되는 경로 속성의 값은 입니다. *정규 표현식입니다.* 표현식과 일치하는 경로가 있는 페이지는 템플릿을 사용할 수 있습니다. 이 경우 정규 표현식은 의 경로와 일치합니다 **/content** 폴더 및 모든 하위 페이지.
 
    작성자가 /content 아래에 페이지를 만들 때 **contentpage** 사용할 수 있는 템플릿 목록에 템플릿이 나타납니다.
 
@@ -229,7 +227,7 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
 1. **만들기**&#x200B;를 클릭합니다. 폴더 트리에서 **/Websites/내 웹 사이트** 페이지 및 클릭 **신규** > **새 페이지**.
-1. 페이지 만들기 대화 상자에서 다음 속성 값을 입력한 다음 만들기를 클릭합니다.
+1. [페이지 만들기] 대화 상자에서 다음 속성 값을 입력한 다음 [만들기]를 클릭합니다.
 
    * 제목: 영어
    * 이름: en
@@ -273,7 +271,7 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
 이 섹션에서는 AEM foundation 구성 요소 스크립트를 사용하고 고유한 스크립트를 작성하여 콘텐츠 페이지 스크립트를 향상시키는 방법에 대해 설명합니다.
 
-다음 **제품** 페이지는 다음과 같이 표시됩니다.
+작업을 마치면 **제품** 페이지는 다음과 같아야 합니다.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -311,7 +309,7 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   페이지 소스를 열어 head.jsp 및 body.jsp 스크립트가 생성한 Javascript 및 HTML 요소를 확인합니다. 페이지를 열면 다음 스크립트 코드 조각이 Sidekick에 열립니다.
+   페이지 소스를 열어 head.jsp 및 body.jsp 스크립트가 생성한 JavaScript 및 HTML 요소를 확인합니다. 페이지를 열면 다음 스크립트 코드 조각이 Sidekick에 열립니다.
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -409,7 +407,7 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
 위쪽 탐색 구성 요소의 첫 번째 버전(topnav)에서 탐색 항목은 텍스트 링크입니다. 두 번째 버전에서는 이미지 탐색 링크와 함께 topnav를 구현합니다.
 
-위쪽 탐색은 다음과 같습니다.
+완료되면 위쪽 탐색은 다음과 같이 표시됩니다.
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
@@ -479,7 +477,7 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
 페이지 구성 요소는 페이지에 자막을 제공할 수 있는 속성을 정의합니다. 페이지 콘텐츠에 대한 정보를 제공하는 자막을 추가합니다.
 
 1. 브라우저에서 **제품** 페이지를 가리키도록 업데이트하는 중입니다.
-1. 사이드 킥에서 **페이지** 탭을 클릭하고 **페이지 속성**.
+1. Sidekick **페이지** 탭을 클릭하고 **페이지 속성**.
 1. 대화 상자의 기본 탭에서 을 확장합니다. **기타 제목 및 설명,** 및 **부제** 속성, 유형 **우리가 하는 일**. **확인**&#x200B;을 클릭합니다.
 1. 자막을 추가하려면 이전 단계를 반복하십시오. **서비스 정보** (으)로 **서비스** 페이지를 가리키도록 업데이트하는 중입니다.
 1. 자막을 추가하려면 이전 단계를 반복하십시오. **우리가 얻는 신뢰** (으)로 **고객** 페이지를 가리키도록 업데이트하는 중입니다.
@@ -518,7 +516,7 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
 1. 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components/contentpage` 노드 및 클릭 **만들기** > **파일 만들기**.
 1. 다음에서 **파일 만들기** 창, as **이름**, 유형 `navimage.png.java`.
 
-   .java 파일 이름 확장명은 Apache Sling Scripting Java 지원 을 사용하여 스크립트를 컴파일하고 서블릿을 생성해야 함을 Sling에 나타냅니다.
+   .java 파일 이름 확장명은 Apache Sling Scripting Java™ 지원을 사용하여 스크립트를 컴파일하고 서블릿을 생성해야 함을 Sling에 나타냅니다.
 
 1. 다음 코드를에 복사합니다 `navimage.png.java.`이 코드는 AbstractImageServlet 클래스를 확장합니다.
 
@@ -657,7 +655,7 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
 제품 페이지 아래에 두 페이지를 만듭니다. 두 개의 특정 제품을 설명하는 각 페이지에 대해 제목, 설명 및 날짜를 설정합니다.
 
 1. 웹 사이트 페이지의 폴더 트리에서 웹 사이트/내 웹 사이트/영어/제품 항목을 선택하고 새로 만들기 > 새 페이지 를 클릭합니다.
-1. 대화 상자에서 다음 속성 값을 입력한 다음 만들기 를 클릭합니다.
+1. 대화 상자에서 다음 속성 값을 입력한 다음 [만들기]를 클릭합니다.
 
    * 제목: 제품 1.
    * 이름: product1.
@@ -804,7 +802,7 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
 #### Contentpage 구성 요소에 목록 하위 포함 {#including-list-children-in-the-contentpage-component}
 
-listchildren 구성 요소를 contentpage 구성 요소에 포함하려면 다음과 같이 하십시오.
+listchildren 구성 요소를 contentpage 구성 요소에 포함하려면 다음과 같이 진행합니다.
 
 1. CRXDE Lite에서 파일을 엽니다. `left.jsp` 아래에 `/apps/mywebsite/components/contentpage` 다음 코드(4행)를 찾습니다.
 
@@ -846,7 +844,7 @@ listchildren 구성 요소를 contentpage 구성 요소에 포함하려면 다�
 
 디자인 모드 대화 상자에는 이미지와 링크 경로를 설정하는 속성이 포함되어 있습니다. 로고 구성 요소는 웹 사이트의 모든 페이지에서 왼쪽 상단에 배치됩니다.
 
-이는 다음과 같습니다.
+작업을 마치면 다음과 같이 표시됩니다.
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -921,7 +919,7 @@ listchildren 구성 요소를 contentpage 구성 요소에 포함하려면 다�
       * **제목:** `Logo (Design)`
 
 1. design_dialog 분기에서 tab1 노드를 마우스 오른쪽 버튼으로 클릭하고 삭제를 클릭합니다. 모두 저장을 클릭합니다.
-1. 아래 `design_dialog/items/items`노드, (이)라는 새 노드를 만듭니다. `img` 유형 `cq:Widget`. 다음 속성을 추가한 다음 모두 저장을 클릭합니다.
+1. 아래 `design_dialog/items/items`노드, 다음 이름의 노드 만들기 `img` 유형 `cq:Widget`. 다음 속성을 추가한 다음 모두 저장을 클릭합니다.
 
    | 이름 | 유형 | 값 |
    |---|---|---|
@@ -1050,7 +1048,7 @@ public class img_GET extends AbstractImageServlet {
 
 이 섹션에서는 기초 구성 요소 중 하나인 탐색 표시(트레일) 구성 요소를 포함합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `center.jsp` 및 바꾸기:
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `center.jsp`, 및 바꾸기:
 
    ```java
    <div>trail</div>
@@ -1071,7 +1069,7 @@ public class img_GET extends AbstractImageServlet {
 
 이 섹션에서는 기초 구성 요소 중 하나인 제목 구성 요소를 포함합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `center.jsp` 및 바꾸기:
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `center.jsp`, 및 바꾸기:
 
    ```xml
    <div>title</div>
@@ -1096,7 +1094,7 @@ public class img_GET extends AbstractImageServlet {
 
 parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 요소에 추가합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `center.jsp` 다음 코드 행을 찾습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `center.jsp`를 클릭하고 다음 코드 행을 찾습니다.
 
    ```xml
    <div>parsys</div>
@@ -1177,17 +1175,17 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 이 섹션에서는 cq:editConfig 노드를 사용하여 콘텐츠 파인더의 자산을 이미지 구성 요소로 끌 수 있습니다.
 
-1. CRXDE Lite 시 /apps/mywebsite/components/image 노드 아래에서 다음과 같이 새 노드를 만듭니다.
+1. CRXDE Lite 시 /apps/mywebsite/components/image 노드 아래에 다음과 같이 노드를 만듭니다.
 
    * 이름: cq:editConfig.
    * 유형: cq:EditConfig.
 
-1. cq:editConfig 노드 아래에 다음과 같이 새 노드를 만듭니다.
+1. cq:editConfig 노드 아래에 다음과 같이 노드를 만듭니다.
 
    * 이름: cq:dropTargets
    * 유형: cq:DropTargetConfig.
 
-1. cq:dropTargets 노드 아래에서 다음과 같이 새 노드를 만듭니다.
+1. cq:dropTargets 노드 아래에서 다음과 같이 노드를 만듭니다.
 
    * 이름: 이미지
    * 유형: nt:unstructured.
@@ -1216,7 +1214,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 1. 브라우저에서 **제품** 페이지를 가리키도록 업데이트하는 중입니다.
 1. Sidekick에서 **디자인 모드** 아이콘.
 1. 편집(Edit) 단추를 눌러 파트의 설계(Design) 대화상자를 편집합니다.
-1. 대화 상자에서 **허용된 구성 요소** 이 표시됩니다. 다음으로 이동 **내 웹 사이트**&#x200B;를 선택하고 **내 이미지 구성 요소** 및 클릭 **좋아.**
+1. 대화 상자에서 **허용된 구성 요소** 이 표시됩니다. 다음으로 이동 **내 웹 사이트**&#x200B;를 선택하고 **내 이미지 구성 요소**, 및 클릭 **좋아.**
 1. 다음으로 돌아가기: **편집 모드입니다.**
 1. parsys 프레임을 두 번 클릭합니다(켜기 **여기에 구성 요소 또는 자산을 끌어 놓으십시오.**). 다음 **새 구성 요소 삽입** 및 **Sidekick** 선택기는 다음과 같습니다.
 
@@ -1226,9 +1224,9 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 이 단원에서는 기초 구성 요소 중 하나인 도구 모음 구성 요소를 포함합니다.
 
-디자인 모드와 편집 모드에 여러 옵션이 있습니다.
+편집 모드와 디자인 모드에는 몇 가지 옵션이 있습니다.
 
-1. CRXDE Lite에서 다음으로 이동 `/apps/mywebsite/components/contentpage`를 열고 `body.jsp` 파일을 만들고 다음 코드를 찾습니다.
+1. CRXDE Lite에서 다음으로 이동 `/apps/mywebsite/components/contentpage`를 열고 `body.jsp` 파일을 참조하고 다음 코드를 찾습니다.
 
    ```java
    <div class="toolbar">toolbar</div>
@@ -1264,7 +1262,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 이 섹션에서는 웹 사이트에서 컨텐츠를 검색하는 구성 요소를 만듭니다. 이 검색 구성 요소는 모든 페이지의 단락 시스템(예: 특수 검색 결과 페이지)에 배치할 수 있습니다.
 
-검색 입력란은 다음과 같이 표시됩니다. **영어** 페이지:
+완료되면 검색 입력란은 다음과 같이 표시됩니다. **영어** 페이지:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -1500,7 +1498,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 1. 브라우저에서 검색 페이지를 엽니다.
 1. Sidekick에서 디자인 모드 아이콘을 클릭합니다.
 1. 검색 제목 아래의 조각 블록 디자인에서 편집 을 클릭합니다.
-1. 대화 상자에서 아래로 스크롤하여  **내 웹 사이트** 그룹, 선택 **내 검색 구성 요소** 및 클릭 **확인**.
+1. 대화 상자에서 아래로 스크롤하여  **내 웹 사이트** 그룹, 선택 **내 검색 구성 요소**, 및 클릭 **확인**.
 1. Sidekick 시 삼각형을 클릭하여 편집 모드로 돌아갑니다.
 1. Sidekick에서 내 검색 구성 요소를 parsys 프레임으로 드래그합니다. 이는 다음과 같습니다.
 
@@ -1516,7 +1514,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 이 구성 요소의 경우 편집 모드와 디자인 모드 모두에서 여러 매개 변수를 설정할 수 있습니다.
 
-1. CRXDE Lite에서 다음으로 이동 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `right.jsp` 및 바꾸기:
+1. CRXDE Lite에서 다음으로 이동 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `right.jsp`, 및 바꾸기:
 
    ```java
    <div>iparsys</div>

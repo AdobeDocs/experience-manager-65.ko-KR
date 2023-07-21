@@ -1,24 +1,20 @@
 ---
-title: AEM 구성 요소 개발(클래식 UI)
-seo-title: Developing AEM Components (Classic UI)
-description: 클래식 UI는 ExtJS를 사용하여 구성 요소의 디자인을 제공하는 위젯을 만듭니다. HTL은 AEM에 권장되는 스크립팅 언어가 아닙니다.
-seo-description: The classic UI uses ExtJS to create widgets that provide the look-and-feel of the components. HTL is not the recommended scripting language for AEM.
-uuid: ed53d7c6-5996-4892-81a4-4ac30df85f04
+title: Adobe Experience Manager 구성 요소 개발(클래식 UI)
+description: 클래식 UI는 ExtJS를 사용하여 구성 요소의 디자인을 제공하는 위젯을 만듭니다. HTL은 Adobe Experience Manager(AEM)에 권장되는 스크립팅 언어가 아닙니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '2393'
-ht-degree: 2%
+source-wordcount: '2386'
+ht-degree: 1%
 
 ---
 
-# AEM 구성 요소 개발(클래식 UI){#developing-aem-components-classic-ui}
+# Adobe Experience Manager(AEM) 구성 요소 개발(클래식 UI){#developing-aem-components-classic-ui}
 
 클래식 UI는 ExtJS를 사용하여 구성 요소의 디자인을 제공하는 위젯을 만듭니다. 이러한 위젯의 특성으로 인해 구성 요소가 클래식 UI와 상호 작용하는 방식과 에는 몇 가지 차이점이 있습니다 [터치 지원 UI](/help/sites-developing/developing-components.md).
 
@@ -34,7 +30,7 @@ ht-degree: 2%
 
 ## 구조 {#structure}
 
-구성 요소의 기본 구조는 페이지에서 다룹니다 [AEM 구성 요소 - 기본 사항](/help/sites-developing/components-basics.md#structure)- 터치식 UI와 클래식 UI를 모두 적용합니다. 새 구성 요소에서 터치 활성화 UI에 대한 설정을 사용할 필요가 없는 경우에도 기존 구성 요소에서 상속할 때 설정을 인식하는 데 도움이 될 수 있습니다.
+구성 요소의 기본 구조는 페이지에서 다룹니다 [AEM 구성 요소 - 기본 사항](/help/sites-developing/components-basics.md#structure)- 터치식 UI와 클래식 UI를 모두 적용합니다. 새 구성 요소에서 터치 지원 UI에 대한 설정을 사용할 필요가 없는 경우에도 기존 구성 요소에서 상속할 때 설정을 인식하는 데 도움이 될 수 있습니다.
 
 ## JSP 스크립트 {#jsp-scripts}
 
@@ -44,7 +40,7 @@ JSP 스크립트 또는 서블릿을 사용하여 구성 요소를 렌더링할 
 
 ## global.jsp {#global-jsp}
 
-JSP 스크립트 파일 `global.jsp` 구성 요소를 렌더링하는 데 사용되는 JSP 스크립트 파일에 대한 특정 개체(즉, 콘텐츠에 액세스)에 대한 빠른 액세스를 제공하는 데 사용됩니다.
+JSP 스크립트 파일 `global.jsp` 구성 요소 렌더링에 사용된 JSP 스크립트 파일에 대한 특정 개체(즉, 콘텐츠에 액세스)에 대한 빠른 액세스를 제공하는 데 사용됩니다.
 
 따라서 `global.jsp` 는 하나 이상의 개체가 제공되는 JSP 스크립트를 렌더링하는 모든 구성 요소에 포함되어야 합니다. `global.jsp` 를 사용합니다.
 
@@ -74,8 +70,8 @@ JSP 스크립트 파일 `global.jsp` 구성 요소를 렌더링하는 데 사용
    * `properties` - 주소가 지정된 리소스의 속성( `resource.adaptTo(ValueMap.class);`).
    * `pageProperties` - 주소가 지정된 리소스의 페이지 속성.
    * `pageManager` - AEM 콘텐츠 페이지에 액세스하기 위한 페이지 관리자( `resourceResolver.adaptTo(PageManager.class);`).
-   * `component` - 현재 AEM 구성 요소의 구성 요소 개체..
-   * `designer` - 디자인 정보를 검색하기 위한 디자이너 개체( `resourceResolver.adaptTo(Designer.class);`).
+   * `component` - 현재 AEM 구성 요소의 구성 요소 개체
+   * `designer` - 디자인 정보를 검색하기 위한 Designer 개체( `resourceResolver.adaptTo(Designer.class);`).
    * `currentDesign` - 주소가 지정된 리소스의 디자인입니다.
    * `currentStyle` - 주소가 지정된 리소스의 스타일입니다.
 
@@ -147,9 +143,9 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
 ### 새 구성 요소 개발(기존 구성 요소 적용) {#develop-a-new-component-adapt-existing-component}
 
-기존 구성 요소를 기반으로 AEM용 새 구성 요소를 개발하려면 구성 요소를 복사하고 새 구성 요소에 대한 JavaScript 파일을 만들어 AEM에서 액세스할 수 있는 위치에 저장합니다( 참조) [구성 요소 및 기타 요소 맞춤화](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
+기존 구성 요소를 기반으로 AEM용 새 구성 요소를 개발하려면 구성 요소를 복사하고, 새 구성 요소에 대한 JavaScript 파일을 만들고, AEM에서 액세스할 수 있는 위치에 저장합니다( 참조) [구성 요소 및 기타 요소 맞춤화](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
 
-1. CRXDE Lite을 사용하여에서 새 구성 요소 폴더를 만듭니다.
+1. CRXDE Lite을 사용하여에 구성 요소 폴더를 만듭니다.
 
    / `apps/<myProject>/components/<myComponent>`
 
@@ -163,7 +159,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
    다음과 같이 변경할 수 있습니다.
 
-   * 대화 상자에 새 필드 추가
+   * 대화 상자에 필드 추가
 
       * `cq:dialog` - 터치 사용 UI 대화 상자
       * `dialog` - 클래식 UI 대화 상자
@@ -177,12 +173,12 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
    >
    >다음에 대한 구성 요소:
    >
-   >* 터치 지원 UI 사용 [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) 구성 요소
-   >* 클래식 UI 사용 [ExtJS 위젯](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
+   >* 터치 지원 UI 사용 [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 구성 요소
+   >* 클래식 UI 사용 [ExtJS 위젯](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
    >[!NOTE]
    >
-   >클래식 UI에 대해 정의된 대화 상자가 터치 사용 UI 내에서 작동합니다.
+   >클래식 UI에 대해 정의된 대화 상자는 터치 사용 UI 내에서 작동합니다.
    >
    >터치 지원 UI에 대해 정의된 대화 상자가 클래식 UI 내에서 작동하지 않습니다.
    >
@@ -200,7 +196,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
    * CRXDE Lite을 사용하여 값 추가 `<path-to-component>` (예: `/apps/geometrixx/components/myComponent`)를 노드의 속성 구성 요소에 추가합니다 `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * 의 지침에 따라 [단락 시스템에 새 구성 요소 추가](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. AEM WCM에서 웹 사이트의 페이지를 열고 방금 만든 유형의 새 단락을 삽입하여 구성 요소가 제대로 작동하는지 확인합니다.
+1. AEM WCM에서 웹 사이트의 페이지를 열고 방금 만든 유형의 단락을 삽입하여 구성 요소가 제대로 작동하는지 확인합니다.
 
 >[!NOTE]
 >
@@ -236,7 +232,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 텍스트 및 이미지 구성 요소에 대한 확장을 사용하면 편집자가 구성 요소의 기존 기능을 모두 사용할 수 있고 이미지의 배치를 지정하는 추가 옵션이 있습니다.
 
 * 텍스트 왼쪽(현재 비헤이비어 및 새 기본값)
-* 오른쪽도 그렇고
+* 오른쪽은
 
 이 구성 요소를 확장한 후 구성 요소의 대화 상자를 통해 이미지 배치를 구성할 수 있습니다.
 
@@ -256,7 +252,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
 #### 기존 textimage 구성 요소 확장 {#extending-the-existing-textimage-component}
 
-새 구성 요소를 만들기 위해 표준 텍스트 이미지 구성 요소를 기반으로 사용하고 수정합니다. Geometrixx AEM WCM 예제 애플리케이션에 새 구성 요소를 저장합니다.
+구성 요소를 만들려면 표준 textimage 구성 요소를 기준으로 사용하고 수정합니다. Geometrixx AEM WCM 예제 애플리케이션에 새 구성 요소를 저장합니다.
 
 1. 에서 표준 텍스트 이미지 구성 요소 복사 `/libs/foundation/components/textimage` Geometrixx 구성 요소 폴더로 `/apps/geometrixx/components`, 대상 노드 이름으로 textimage 사용. (구성 요소로 이동하고 마우스 오른쪽 단추를 클릭한 다음 복사 를 선택하고 대상 디렉토리로 이동하여 구성 요소를 복사합니다.)
 
@@ -298,7 +294,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
    이렇게 하면 페이지의 구성 요소에 이미지를 끌어 놓을 때 `sling:resourceType` 확장된 textimage 구성 요소의 속성이 다음으로 설정되었습니다. `geometrixx/components/textimage.`
 
-1. 새 옵션을 포함하도록 구성 요소의 대화 상자를 수정합니다. 새 구성 요소는 원본과 동일한 대화 상자의 부분을 상속합니다. 추가한 유일한 방법은 를 확장하는 것입니다. **고급** 탭, 추가 **이미지 위치** 드롭다운 목록, 옵션 포함 **왼쪽** 및 **오른쪽**:
+1. 새 옵션을 포함하도록 구성 요소의 대화 상자를 수정합니다. 새 구성 요소는 원본과 동일한 대화 상자의 부분을 상속합니다. 추가하는 유일한 방법은 **고급** 탭, 추가 **이미지 위치** 드롭다운 목록, 옵션 포함 **왼쪽** 및 **오른쪽**:
 
    * 나가기 `textimage/dialog`속성이 변경되지 않았습니다.
 
@@ -313,7 +309,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
    * Tab3의 경우:
 
       * 속성 및 하위 노드를 변경하지 않고 그대로 둡니다.
-      * 새 필드 정의 추가 `tab3/items`, 유형의 노드 위치 `cq:Widget`
+      * 에 필드 정의 추가 `tab3/items`, 유형의 노드 위치 `cq:Widget`
       * 새 속성에 대해 다음 속성(문자열 유형)을 설정합니다. `tab3/items/position`노드:
 
          * `name`: `./imagePosition`
@@ -382,7 +378,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
    * 설정 **jcr:title** 끝 `Image (Extended)`
 
 1. 다음으로 이동 `/apps/geometrixx/components/image/dialog/items/image`.
-1. 새 속성 추가:
+1. 속성 추가:
 
    * **이름**: `allowUpload`
    * **유형**: `String`
@@ -393,7 +389,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 1. 클릭 **모두 저장**. 구성 요소를 테스트할 준비가 되었습니다.
 1. 영어/회사와 같은 Geometrixx에서 페이지를 엽니다.
 1. 디자인 모드로 전환하고 이미지(확장)를 활성화합니다.
-1. 편집 모드로 다시 전환하고 단락 시스템에 추가합니다. 다음 그림에서는 원본 이미지 구성 요소와 방금 만든 이미지 구성 요소의 차이점을 확인할 수 있습니다.
+1. 편집 모드로 다시 전환하고 단락 시스템에 추가합니다. 다음 그림에서는 원본 이미지 구성 요소와 만든 이미지 구성 요소의 차이점을 확인할 수 있습니다.
 
    원본 이미지 구성 요소:
 

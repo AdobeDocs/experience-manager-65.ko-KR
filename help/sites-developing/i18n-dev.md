@@ -1,36 +1,32 @@
 ---
 title: UI 문자열 다국어화
-seo-title: Internationalizing UI Strings
-description: Java 및 JavaScript API를 사용하면 문자열을 국제화할 수 있습니다
-seo-description: Java and JavaScript APIs enable you to internationalize strings
-uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
+description: Java&trade 및 JavaScript API를 사용하면 문자열을 국제화할 수 있습니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
 
 # UI 문자열 다국어화 {#internationalizing-ui-strings}
 
-Java 및 JavaScript API를 사용하면 다음 유형의 리소스에서 문자열을 국제화할 수 있습니다.
+Java™ 및 JavaScript API를 사용하면 다음 유형의 리소스에서 문자열을 국제화할 수 있습니다.
 
-* Java 소스 파일.
+* Java™ 소스 파일.
 * JSP 스크립트.
 * 클라이언트측 라이브러리 또는 페이지 소스의 JavaScript.
 * 대화 상자 및 구성 요소 구성 속성에 사용되는 JCR 노드 속성 값입니다.
 
 다국어화 및 현지화 프로세스에 대한 개요는 [구성 요소 다국어화](/help/sites-developing/i18n.md).
 
-## Java 및 JSP 코드의 문자열 다국어화 {#internationalizing-strings-in-java-and-jsp-code}
+## Java™ 및 JSP 코드의 문자열 다국어화 {#internationalizing-strings-in-java-and-jsp-code}
 
-다음 `com.day.cq.i18n` Java 패키지를 사용하면 UI에 현지화된 문자열을 표시할 수 있습니다. 다음 `I18n` 클래스에서 제공하는 `get` 메서드는 AEM 사전에서 지역화된 문자열을 검색합니다. 의 유일한 필수 매개 변수 `get` 메서드는 영어의 문자열 리터럴입니다. UI의 기본 언어는 영어입니다. 다음 예제에서는 `Search`:
+다음 `com.day.cq.i18n` Java™ 패키지를 사용하면 UI에 지역화된 문자열을 표시할 수 있습니다. 다음 `I18n` 클래스에서 제공하는 `get` Adobe Experience Manager(AEM) 사전에서 지역화된 문자열을 검색하는 메서드입니다. 의 유일한 필수 매개 변수 `get` 메서드는 영어의 문자열 리터럴입니다. UI의 기본 언어는 영어입니다. 다음 예제에서는 `Search`:
 
 `i18n.get("Search");`
 
@@ -48,7 +44,7 @@ Java 및 JavaScript API를 사용하면 다음 유형의 리소스에서 문자�
 
 사용자 계정의 언어 속성이 더 신뢰할 수 있으므로 선호되는 방법입니다. 그러나 이 방법을 사용하려면 사용자가 로그인해야 합니다.
 
-#### I18n Java 개체 만들기 {#creating-the-i-n-java-object}
+#### I18n Java™ 개체 만들기 {#creating-the-i-n-java-object}
 
 I18n 클래스는 두 개의 생성자를 제공합니다. 사용자의 기본 언어를 결정하는 방법에 따라 사용할 생성자가 결정됩니다.
 
@@ -60,7 +56,7 @@ I18n i18n = new I18n(slingRequest);
 
 생성자는 `SlingHTTPRequest` 를 클릭하여 사용자의 언어 설정을 검색합니다.
 
-페이지 로케일을 사용하여 언어를 결정하려면 먼저 요청된 페이지의 언어에 대한 ResourceBundle을 구해야 합니다.
+페이지 로케일을 사용하여 언어를 결정하려면 먼저 요청된 페이지의 언어에 대한 ResourceBundle 을 가져옵니다.
 
 ```java
 Locale pageLang = currentPage.getLanguage(false);
@@ -75,7 +71,7 @@ I18n i18n = new I18n(resourceBundle);
 의 첫 번째 인수 `get` 메서드는 다음 규칙을 준수해야 합니다.
 
 * 값은 문자열 리터럴이어야 합니다. 유형의 변수 `String` 은(는) 허용되지 않습니다.
-* 문자열 리터럴은 한 줄에 표현되어야 합니다.
+* 문자열 리터럴은 한 줄에 표현해야 합니다.
 * 문자열은 대/소문자를 구분합니다.
 
 ```xml
@@ -94,7 +90,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 #### 현지화된 문장에 변수 포함 {#including-variables-in-localized-sentences}
 
-문장에 컨텍스트 의미를 만들려면 지역화된 문자열에 변수를 포함하십시오. 예를 들어 웹 애플리케이션에 로그인하면 홈 페이지에 &quot;다시 관리자를 시작합니다&quot;라는 메시지가 표시됩니다. 받은 편지함에 2개의 메시지가 있습니다.&quot; 페이지 컨텍스트에 따라 사용자 이름과 메시지 수가 결정됩니다.
+문장에 컨텍스트 의미를 만들려면 지역화된 문자열에 변수를 포함하십시오. 예를 들어 웹 애플리케이션에 로그인하면 홈 페이지에 &quot;다시 관리자를 시작합니다&quot;라는 메시지가 표시됩니다. 받은 편지함에 메시지가 두 개 있습니다.&quot; 페이지 컨텍스트에 따라 사용자 이름과 메시지 수가 결정됩니다.
 
 [사전에서](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings)를 검색하는 경우, 변수는 문자열로서 대괄호로 묶인 인덱스로 표시됩니다. 변수의 값을 의 인수로 지정합니다. `get` 메서드를 사용합니다. 인수는 번역 힌트 다음에 배치되며 인덱스는 인수의 순서에 해당합니다.
 
@@ -106,7 +102,7 @@ i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messa
 
 #### 정적 Get 메서드 사용 {#using-the-static-get-method}
 
-다음 `I18N` 클래스는 static을 정의합니다. `get` 적은 수의 문자열을 현지화해야 하는 경우에 유용한 메서드입니다. 개체의 매개 변수 외에도 `get` 메서드에서 정적 메서드는 `SlingHttpRequest` 객체 또는 `ResourceBundle` 사용자의 기본 언어를 결정하는 방법에 따라 사용 중인 언어:
+다음 `I18N` 클래스는 static을 정의합니다. `get` 몇 개의 문자열을 현지화해야 하는 경우 유용한 메서드입니다. 개체의 매개 변수 외에도 `get` 메서드에서 정적 메서드는 `SlingHttpRequest` 객체 또는 `ResourceBundle` 사용자의 기본 언어를 결정하는 방법에 따라 사용 중인 언어:
 
 * 사용자의 언어 기본 설정 사용: SlingHttpRequest 를 첫 번째 매개 변수로 제공합니다.
 
@@ -117,7 +113,7 @@ i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messa
 
 ### JavaScript 코드의 문자열 다국어화 {#internationalizing-strings-in-javascript-code}
 
-JavaScript API를 사용하면 클라이언트의 문자열을 현지화할 수 있습니다. 에서와 같이 [Java 및 JSP](#internationalizing-strings-in-java-and-jsp-code) 코드를 사용하면 JavaScript API를 사용하여 현지화할 문자열을 식별하고 현지화 힌트를 제공하며 현지화된 문자열에 변수를 포함할 수 있습니다.
+JavaScript API를 사용하면 클라이언트의 문자열을 현지화할 수 있습니다. 에서와 같이 [Java™ 및 JSP](#internationalizing-strings-in-java-and-jsp-code) 코드를 사용하면 JavaScript API를 사용하여 현지화할 문자열을 식별하고 현지화 힌트를 제공하며 현지화된 문자열에 변수를 포함할 수 있습니다.
 
 다음 `granite.utils` [클라이언트 라이브러리 폴더](/help/sites-developing/clientlibs.md) 는 JavaScript API를 제공합니다. API를 사용하려면 페이지에 이 클라이언트 라이브러리 폴더를 포함하십시오. 현지화 기능에서는 `Granite.I18n` 네임스페이스입니다.
 
@@ -140,13 +136,13 @@ Granite.I18n.setLocale("fr");
 Granite.I18n.get("string to localize", [variables], "localization hint");
 ```
 
-함수 매개 변수는 Java I18n.get 메서드와 다릅니다.
+함수 매개 변수는 Java™ I18n.get 메서드와 다릅니다.
 
 * 첫 번째 매개 변수는 현지화할 문자열 리터럴입니다.
 * 두 번째 매개 변수는 문자열 리터럴에 삽입할 값의 배열입니다.
 * 세 번째 매개 변수는 현지화 힌트입니다.
 
-다음 예제에서는 JavaScript를 사용하여 &quot;Welcome back Administrator&quot;를 현지화합니다. 받은 편지함에 2개의 메시지가 있습니다.&quot; 문장:
+다음 예제에서는 JavaScript를 사용하여 &quot;Welcome back Administrator&quot;를 현지화합니다. 받은 편지함에 메시지가 두 개 있습니다.&quot; 문장:
 
 ```
 Granite.I18n.setLocale("fr");
@@ -166,7 +162,7 @@ UI 문자열은 종종 JCR 노드 속성을 기반으로 합니다. 예를 들�
 
 #### JCR 노드에 대한 번역 힌트 지정 {#specifying-translation-hints-for-jcr-nodes}
 
-과 유사 [java API의 번역 힌트](#using-translation-hints)를 통해 번역에 중복 문자열을 구별할 수 있는 번역 힌트를 제공할 수 있습니다. 번역 힌트를 국제화된 속성을 포함하는 노드의 속성으로 제공합니다. 힌트 속성의 이름은 가 있는 국제화된 속성 이름의 `_commentI18n` 접미어:
+과 유사 [java™ API의 번역 힌트](#using-translation-hints)를 통해 번역에 중복 문자열을 구별할 수 있는 번역 힌트를 제공할 수 있습니다. 번역 힌트를 국제화된 속성을 포함하는 노드의 속성으로 제공합니다. 힌트 속성의 이름은 가 있는 국제화된 속성 이름의 `_commentI18n` 접미어:
 
 `${prop}_commentI18n`
 
@@ -174,7 +170,7 @@ UI 문자열은 종종 JCR 노드 속성을 기반으로 합니다. 예를 들�
 
 ### 다국어화 범위 테스트 {#testing-internationalization-coverage}
 
-UI에서 모든 문자열을 국제화했는지 테스트합니다. 다루고 있는 문자열을 보려면 사용자 언어를 zz_ZZ로 설정하고 웹 브라우저에서 UI를 엽니다. 국제화된 문자열은 다음과 같은 형식의 스텁 변환과 함께 표시됩니다.
+UI에서 모든 문자열을 국제화했는지 테스트합니다. 다루고 있는 문자열을 보려면 사용자 언어를 zz_ZZ로 설정하고 웹 브라우저에서 UI를 엽니다. 국제화된 문자열은 다음 형식의 스텁 번역과 함께 표시됩니다.
 
 `USR_*Default-String*_尠`
 

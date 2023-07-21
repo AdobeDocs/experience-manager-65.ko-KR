@@ -1,16 +1,12 @@
 ---
 title: 콘텐츠 서비스에 대한 JSON 내보내기
-seo-title: JSON Exporter for Content Services
 description: AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 콘텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 콘텐츠를 게재할 수 있습니다.
-seo-description: AEM Content Services are designed to generalize the description and delivery of content in/from AEM beyond a focus on web pages. They provide the delivery of content to channels that are not traditional AEM web pages, using standardized methods that can be consumed by any client.
-uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 38%
@@ -61,25 +57,25 @@ AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.
 
 * 예를 들어 다음과 같은 URL:
 
-   ```shell
-   http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
+  ```
 
 * 다음과 같은 콘텐츠 제공:
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+  ![chlimage_1-193](assets/chlimage_1-193.png)
 
-   >[!NOTE]
-   >
-   >다음을 수행할 수 있습니다. [자체 구성 요소 조정](/help/sites-developing/json-exporter-components.md) 을 클릭하여 이 데이터에 액세스하고 사용하십시오.
+  >[!NOTE]
+  >
+  >다음을 수행할 수 있습니다. [자체 구성 요소 조정](/help/sites-developing/json-exporter-components.md) 을 클릭하여 이 데이터에 액세스하고 사용하십시오.
 
-   >[!NOTE]
-   >
-   >표준 구현은 아니지만, [여러 선택기가 지원되며,](json-exporter-components.md#multiple-selectors) 그러나 `model` 은(는) 첫 번째 여야 합니다.
+  >[!NOTE]
+  >
+  >표준 구현은 아니지만, [여러 선택기가 지원되며,](json-exporter-components.md#multiple-selectors) 그러나 `model` 은(는) 첫 번째 여야 합니다.
 
 ### 추가 정보 {#further-information}
 
-또한 다음 문서도 참조할 수 있습니다.
+추가 참조:
 
 * Assets HTTP API
 
@@ -103,4 +99,4 @@ AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
 
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

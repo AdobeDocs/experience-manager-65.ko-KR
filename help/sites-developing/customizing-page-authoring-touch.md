@@ -1,19 +1,15 @@
 ---
 title: 페이지 작성 사용자 지정
-seo-title: Customizing Page Authoring
-description: AEM은 페이지 작성 기능을 사용자 지정할 수 있는 다양한 메커니즘을 제공합니다
-seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
-uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
+description: Adobe Experience Manager(AEM)는 페이지 작성 기능을 사용자 지정할 수 있는 다양한 메커니즘을 제공합니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 1%
+source-wordcount: '1340'
+ht-degree: 2%
 
 ---
 
@@ -23,11 +19,11 @@ ht-degree: 1%
 >
 >이 문서는 최신 터치 지원 UI에서 페이지 작성을 사용자 지정하는 방법에 대해 설명하며, 클래식 UI에는 적용되지 않습니다.
 
-AEM은 페이지 작성 기능 및 [콘솔](/help/sites-developing/customizing-consoles-touch.md))을 참조하십시오.
+Adobe Experience Manager(AEM)는 페이지 작성 기능 및 [콘솔](/help/sites-developing/customizing-consoles-touch.md))을 참조하십시오.
 
 * Clientlibs
 
-  Clientlib을 사용하면 기본 구현을 확장하여 새로운 기능을 구현하는 동시에 표준 함수, 개체 및 메서드를 재사용할 수 있습니다. 를 사용자 지정할 때 `/apps.` 새 clientlib은 다음 작업을 수행해야 합니다.
+  Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구현하는 동시에 표준 함수, 개체 및 메서드를 재사용할 수 있습니다. 를 사용자 지정할 때 `/apps.` 새 clientlib은 다음 작업을 수행해야 합니다.
 
    * authoring clientlib에 따라 다름 `cq.authoring.editor.sites.page`
    * 적절한 것의 일부가 되다 `cq.authoring.editor.sites.page.hook` 범주
@@ -38,9 +34,9 @@ AEM은 페이지 작성 기능 및 [콘솔](/help/sites-developing/customizing-c
 
 >[!NOTE]
 >
->자세한 내용은 [JS 설명서 세트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
+>자세한 내용은 [JS 설명서 세트](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-여러 가지 방법으로 AEM 인스턴스의 페이지 작성 기능을 확장할 수 있습니다. 선택 내용은 아래에 나와 있습니다(높은 수준에서).
+여러 가지 방법으로 AEM 인스턴스의 페이지 작성 기능을 확장할 수 있습니다. 선택 내용은 아래에 설명되어 있습니다(높은 수준).
 
 >[!NOTE]
 >
@@ -48,20 +44,20 @@ AEM은 페이지 작성 기능 및 [콘솔](/help/sites-developing/customizing-c
 >
 >* 사용 및 만들기 [clientlibs](/help/sites-developing/clientlibs.md).
 >* 사용 및 만들기 [오버레이](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [AEM 터치 지원 UI의 구조](/help/sites-developing/touch-ui-structure.md) 페이지 작성에 사용되는 구조적 영역에 대한 세부 정보.
 >
 
 
 >[!CAUTION]
 >
->본인 ***필수*** 의 아무 것도 변경하지 마십시오. `/libs` 경로.
+>***금지*** 의 모든 항목 변경 `/libs` 경로.
 >
->이는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수도 있음).
+>그 이유는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수 있음).
 >
 >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
 >
->1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
+>1. 필요한 항목 다시 만들기(존재하는 그대로) `/libs`) `/apps`
 >1. 다음 범위 내에서 변경 `/apps`
 
 ## 새 레이어 추가(모드) {#add-new-layer-mode}
@@ -80,7 +76,7 @@ MSM 레이어 정의(참조용)는에서 찾을 수 있습니다.
 
 ### 코드 샘플 {#code-sample}
 
-MSM 보기의 새 레이어인 새 레이어(모드)를 만드는 방법을 보여주는 샘플 패키지입니다.
+MSM 보기의 새 레이어인 레이어(모드)를 만드는 방법을 보여주는 샘플 패키지입니다.
 
 GITHUB의 코드
 
@@ -91,11 +87,11 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 ## 자산 브라우저에 새 선택 범주 추가 {#add-new-selection-category-to-asset-browser}
 
-에셋 브라우저에는 다양한 유형/카테고리(예: 이미지, 문서 등)의 에셋이 표시됩니다. 자산은 이러한 자산 카테고리로 필터링할 수도 있습니다.
+에셋 브라우저에는 다양한 유형/카테고리(예: 이미지 및 문서)의 에셋이 표시됩니다. 자산은 이러한 자산 카테고리로 필터링할 수도 있습니다.
 
 ### 코드 샘플 {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` 는 에셋 파인더에 새 그룹을 추가하는 방법을 보여 주는 샘플 패키지입니다. 이 예는에 연결합니다. [Flickr](https://www.flickr.com)의 공개 스트림과 사이드 패널에 표시합니다.
+`aem-authoring-extension-assetfinder-flickr` 는 에셋 파인더에 그룹을 추가하는 방법을 보여 주는 샘플 패키지입니다. 이 예는에 연결합니다. [Flickr](https://www.flickr.com)의 공개 스트림에 사이드 패널에 표시됩니다.
 
 GITHUB의 코드
 
@@ -106,11 +102,11 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 ## 리소스 필터링 {#filtering-resources}
 
-페이지를 작성할 때 리소스(예: 페이지, 구성 요소, 에셋 등)에서 선택해야 하는 경우가 많습니다. 예를 들어 작성자가 항목을 선택해야 하는 목록 형식을 취할 수 있습니다.
+페이지를 작성할 때 사용자는 종종 리소스(예: 페이지, 구성 요소 및 에셋)에서 선택해야 합니다. 예를 들어 작성자가 항목을 선택해야 하는 목록 형식을 취할 수 있습니다.
 
-목록을 적절한 크기로 유지하고 사용 사례와 관련이 있도록 맞춤형 술어 형식으로 필터를 구현할 수 있습니다. 예를 들어 [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) 구성 요소를 사용하여 사용자가 특정 리소스에 대한 경로를 선택할 수 있습니다. 제공된 경로는 다음과 같은 방식으로 필터링될 수 있습니다.
+목록을 적절한 크기로 유지하고 사용 사례와 관련이 있도록 맞춤형 술어 형식으로 필터를 구현할 수 있습니다. 예를 들어 [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) 구성 요소를 사용하여 사용자가 특정 리소스에 대한 경로를 선택할 수 있습니다. 제공된 경로는 다음과 같은 방식으로 필터링될 수 있습니다.
 
-* 를 구현하여 사용자 지정 술어 구현 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html) 인터페이스.
+* 를 구현하여 사용자 지정 술어 구현 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) 인터페이스.
 * 술어 이름을 지정하고, 을 사용할 때 해당 이름을 참조합니다. `pathbrowser`.
 
 사용자 지정 술어 만들기에 대한 자세한 내용은 [이 문서](/help/sites-developing/implementing-custom-predicate-evaluator.md).
@@ -157,11 +153,11 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
          * 속성: `editorType`
 
-           해당 구성 요소에 대해 즉석 편집이 트리거될 때 사용할 인라인 편집기 유형을 정의합니다. 예: `text`, `textimage`, `image`, `title`.
+           해당 구성 요소에 대해 즉석 편집이 트리거될 때 사용되는 인라인 편집기 유형을 정의합니다. 예: `text`, `textimage`, `image`, `title`.
 
-1. 편집기의 추가 구성 세부 정보는 `config` 구성은 물론 추가 구성이 포함된 노드 `plugin` 필요한 플러그인 구성 세부 정보를 포함할 노드입니다.
+1. 편집기의 추가 구성 세부 정보는 `config` 구성 및 `plugin` 필요한 플러그인 구성 세부 정보를 포함할 노드입니다.
 
-   다음은 이미지 구성 요소의 이미지 자르기 플러그인에 대한 종횡비를 정의하는 예입니다. 매우 제한된 화면 크기의 가능성 때문에 자르기 대상 비율이 전체 화면 편집기로 이동되었으며 해당 편집기에서만 볼 수 있습니다.
+   다음은 이미지 구성 요소의 이미지 자르기 플러그인에 대한 종횡비를 정의하는 예입니다. 제한된 화면 크기의 잠재적 때문에 자르기 종횡비는 전체 화면 편집기로 이동되었으며 해당 편집기에서만 볼 수 있습니다.
 
    ```xml
    <cq:inplaceEditing
@@ -185,7 +181,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
    >[!CAUTION]
    >
-   >AEM 자르기 비율에서 다음을 통해 설정합니다. `ratio` 속성은 다음과 같이 정의됩니다. **높이/폭**. 이것은 종래의 폭/높이 정의와 다르며, 레거시 호환성을 위해 수행됩니다. 사용자가 를 정의한 경우 작성 사용자가 차이를 알지 못합니다. `name` 속성이 UI에 표시되므로 명확하게 알 수 있습니다.
+   >AEM 자르기 비율, 다음으로 설정: `ratio` 속성은 다음과 같이 정의됩니다. **높이/폭**. 이는 종래의 폭/높이 정의와 다르며, 레거시 호환성을 위해 수행됩니다. 사용자가 를 정의한 경우 작성 사용자가 차이를 알지 못합니다. `name` 속성이 UI에 표시되므로 명확하게 알 수 있습니다.
 
 #### 새로운 즉석 편집기 만들기 {#creating-a-new-in-place-editor}
 
@@ -209,7 +205,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 #### 새로운 즉석 편집기를 만들기 위한 코드 샘플 {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` 는 AEM에서 새로운 즉석 편집기를 만드는 방법을 보여 주는 샘플 패키지입니다.
+`aem-authoring-extension-inplace-editor` 는 AEM에서 즉석 편집기를 만드는 방법을 보여 주는 샘플 패키지입니다.
 
 GITHUB의 코드
 
@@ -245,7 +241,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * 그렇지 않으면 복제 권한이 제거되어 아무 것도 표시되지 않습니다.
 
-이러한 활성화 시 사용자 지정된 비헤이비어를 만들려면 **활성화 요청** 워크플로:
+이러한 활성화에 대한 사용자 지정 동작을 만들려면 다음을 오버레이할 수 있습니다. **활성화 요청** 워크플로:
 
 1. 위치 `/apps` 오버레이 **사이트** 마법사:
 
