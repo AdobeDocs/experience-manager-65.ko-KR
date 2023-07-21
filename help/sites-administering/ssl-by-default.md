@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 9273282b26aeab5f65f0f05aa8ad754962dc59ec
+source-git-commit: 7edd848bbdbadfb387bd4d880b24931ad6758dbd
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -237,8 +237,8 @@ curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-명령을 실행한 후에는 모든 인증서가 키 저장소에 대해 작업을 수행했는지 확인합니다. 다음에서 키 저장소를 확인합니다.
-[http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)
+명령을 실행한 후에는 모든 인증서가 키 저장소에 대해 작업을 수행했는지 확인합니다. 다음 확인: **키 저장소** 시작 위치:
+[http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### TLS 1.3 연결 활성화 {#enabling-tls-connection}
 
