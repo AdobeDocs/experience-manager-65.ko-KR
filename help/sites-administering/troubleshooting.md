@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2f3168c9bd39926ee8cf86b48cc0daef9d783a1c
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '252'
 ht-degree: 3%
 
 ---
@@ -21,6 +21,13 @@ ht-degree: 3%
 # 로그 작업{#working-with-logs}
 
 이 섹션에는 문제를 해결하는 데 도움이 되는 로그에 대한 자세한 정보가 포함되어 있습니다.
+
+>[!NOTE]
+>
+>로그에 대한 자세한 내용은 다음을 참조하십시오.
+>
+>* [AEM의 감사 로그 유지 관리](/help/sites-administering/operations-audit-log.md)
+>* [감사 레코드 및 로그 파일 작업](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
 CRX는 자세한 로그를 기록합니다. 압축을 풀고 빠른 시작을 시작하면 다음 위치에 로그가 있습니다.
 
