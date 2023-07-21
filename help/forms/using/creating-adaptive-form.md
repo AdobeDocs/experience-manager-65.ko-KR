@@ -5,16 +5,18 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: 6ab2538dd8095304a55433c15c8c3d095499d92c
+source-git-commit: f620966974b0f535d30a17a5fa3175a593e52fec
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1913'
 ht-degree: 0%
 
 ---
 
 # 적응형 양식 만들기 {#creating-an-adaptive-form}
 
-<span class="preview"> 이 문서에서는 적응형 Forms에 대한 이전 접근 방식을 설명합니다. Adobe은 다음을 권장합니다. [적응형 Forms 핵심 구성 요소](/help/forms/using/create-an-adaptive-form-core-components.md) 을 클릭하여 새 양식을 만듭니다. 이러한 구성 요소는 [적응형 Forms 생성 기능이 크게 향상되었습니다](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html), 인상적인 사용자 경험 보장.</span>
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+
+
 
 ## 적응형 양식 만들기 {#strong-create-an-adaptive-form-strong}
 
