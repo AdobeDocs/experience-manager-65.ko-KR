@@ -3,14 +3,16 @@ title: 적응형 양식을 만들거나 AEM Sites 페이지에 추가
 description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 원활하게 추가하는 방법을 알아봅니다. 동적 및 맞춤형 양식을 웹 사이트에 통합하는 단계별 기술과 모범 사례에 대해 알아보고 디지털 환경을 최적화하여 효과를 극대화합니다.
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '2913'
+source-wordcount: '2970'
 ht-degree: 23%
 
 ---
 
 # 적응형 양식을 만들거나 AEM Sites 페이지에 추가 {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

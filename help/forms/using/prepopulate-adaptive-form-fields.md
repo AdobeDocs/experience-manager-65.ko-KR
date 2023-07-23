@@ -10,14 +10,16 @@ discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '2191'
-ht-degree: 0%
+source-wordcount: '2248'
+ht-degree: 1%
 
 ---
 
 # 적응형 양식 필드 미리 채우기{#prefill-adaptive-form-fields}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -97,7 +99,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 ### XML 스키마 기반 적응형 양식  {#xml-schema-af}
 
-XML 스키마를 기반으로 하는 적응형 양식에 대해 사전 작성된 XML 및 제출된 XML의 구조는 다음과 같습니다.
+XML 스키마를 기반으로 하는 적응형 양식을 위한 미리 채우기 XML 및 제출된 XML의 구조는 다음과 같습니다.
 
 * **XML 구조 미리 채우기**: 미리 채우기 XML이 연결된 XML 스키마를 준수해야 합니다. 바인딩되지 않은 필드를 미리 채우려면 미리 채우기 XML 구조를 /afData/afBoundData 태그로 래핑합니다.
 * **제출된 XML 구조**: 미리 채우기 XML을 사용하지 않으면 제출된 XML에 의 바인딩된 필드와 바인딩되지 않은 필드 모두에 대한 데이터가 포함됩니다. `afData` 래퍼 태그입니다. 미리 채우기 XML을 사용하는 경우 제출된 XML의 구조는 미리 채우기 XML과 동일합니다. 미리 채우기 XML이 `afData` 루트 태그입니다. 출력 XML의 형식은 동일합니다. 미리 채우기 XML에 `afData/afBoundData` 래퍼 및 대신 와 같은 스키마 루트 태그에서 직접 시작합니다. `employeeData`로 시작하는 경우 제출된 XML도 `employeeData` 태그에 가깝게 배치하십시오.

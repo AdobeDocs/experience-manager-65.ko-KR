@@ -9,14 +9,16 @@ topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 feature: Adaptive Forms
 exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 0%
+source-wordcount: '745'
+ht-degree: 1%
 
 ---
 
 # 적응형 양식 자동 저장 {#auto-save-an-adaptive-form}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 이벤트 또는 사전 정의된 시간 간격에 따라 콘텐츠 저장을 자동으로 시작하도록 적응형 양식을 구성할 수 있습니다. 기본적으로 적응형 양식의 콘텐츠는 저장 버튼을 누르는 것과 같은 사용자 작업 시 저장됩니다. 자동 저장 옵션은 다음 경우에 유용합니다.
 

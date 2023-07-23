@@ -5,14 +5,16 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 5%
+source-wordcount: '1130'
+ht-degree: 6%
 
 ---
 
 # XML 스키마를 사용하여 적응형 양식 만들기 {#creating-adaptive-forms-using-xml-schema}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -290,7 +292,7 @@ XML 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. 요
 
 ![XML 스키마 요소의 bindref 필드](assets/dblclick.png)
 
-bindRef</code> 필드는 트리 요소와 스키마의 요소 또는 속성 간의 연관성을 보여 줍니다.
+다음 <code>bindRef</code> 필드는 트리 요소와 스키마의 요소 또는 속성 간의 연관성을 보여 줍니다.
 
 >[!NOTE]
 >

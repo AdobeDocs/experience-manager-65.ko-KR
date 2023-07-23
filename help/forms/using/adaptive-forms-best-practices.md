@@ -9,14 +9,16 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '4529'
+source-wordcount: '4586'
 ht-degree: 0%
 
 ---
 
 # 적응형 양식 작업 모범 사례 {#best-practices-for-working-with-adaptive-forms}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 ## 개요 {#overview}
 
@@ -259,7 +261,7 @@ AEM은 적응형 양식을 현지화하는 데 사용할 수 있는 번역 워�
 * 새 구성 요소를 추가하거나 현지화된 양식으로 스크립트를 적용하는 등의 수정 사항은 자동으로 현지화되지 않습니다. 따라서 양식을 현지화하기 전에 먼저 양식을 완료해야 여러 현지화 주기를 방지할 수 있습니다.
 * 사용 `afAcceptLang` 브라우저 로케일을 재정의하고 지정된 로케일에서 양식을 렌더링하도록 매개 변수를 요청합니다. 예를 들어 다음 URL은 브라우저 설정에 지정된 로케일에 관계없이 일본어 로케일로 양식을 렌더링하도록 강제 적용됩니다.
 
-   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+  `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질), 중국어(zh-CN), 중국어(zh-TW) 및 한국어(ko-KR) 로케일로 된 적응형 양식 콘텐츠의 현지화를 지원합니다. 그러나 런타임 시 적응형 양식에 대한 새 로케일에 대한 지원을 추가할 수 있습니다. 자세한 내용은 [적응형 양식 지역화를 위한 새 로케일 지원](/help/forms/using/supporting-new-language-localization.md).
 
@@ -269,7 +271,7 @@ AEM은 적응형 양식을 현지화하는 데 사용할 수 있는 번역 워�
 
 보안 영역에서 방화벽 뒤에 있는 AEM Forms 서버의 추가 인스턴스를 구성할 수 있습니다. 다음 경우에 이 인스턴스를 사용할 수 있습니다.
 
-* **일괄 처리**: 로드가 많은 배치로 반복 또는 예약된 작업. 예를 들어 명령문 인쇄, 응답 생성 및 PDF 생성기, 출력 및 어셈블러와 같은 문서 서비스 사용이 있습니다.
+* **일괄 처리**: 로드가 많은 배치로 반복 또는 예약된 작업. 예를 들어 명령문 인쇄, 서신 생성, PDF Generator, 출력 및 어셈블러와 같은 문서 서비스 사용 등이 있습니다.
 * **PII 데이터 저장**: 처리 서버에 PII 데이터를 저장합니다. 이미 PII 데이터를 저장하기 위해 사용자 지정 스토리지 공급자를 사용 중인 경우에는 필요하지 않습니다.
 
 ### 프로젝트를 다른 환경으로 이동 {#moving-project-to-another-environment}
@@ -312,7 +314,7 @@ AEM은 적응형 양식을 현지화하는 데 사용할 수 있는 번역 워�
 
 * **제출 데이터 저장**: Form Portal 제출 저장소를 사용하는 경우 데이터베이스에 제출 데이터를 저장하려면 사용자 지정 SPI를 구현해야 합니다. 다음을 참조하십시오 [초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md) 샘플 통합용.
 
-   보안 저장소에 양식 데이터 및 첨부 파일을 저장하는 사용자 지정 제출 액션을 작성할 수도 있습니다. 다음을 참조하십시오 [적응형 양식에 대한 사용자 정의 제출 액션 작성](/help/forms/using/custom-submit-action-form.md) 추가 정보.
+  보안 저장소에 양식 데이터 및 첨부 파일을 저장하는 사용자 지정 제출 액션을 작성할 수도 있습니다. 다음을 참조하십시오 [적응형 양식에 대한 사용자 정의 제출 액션 작성](/help/forms/using/custom-submit-action-form.md) 추가 정보.
 
 * **초안 ID 길이**: 적응형 양식을 초안으로 저장하면 초안을 고유하게 식별하기 위한 초안 ID가 생성됩니다. 초안 ID 필드의 최소 값은 26자입니다. Adobe은 초안 ID 길이를 26자 이상으로 설정할 것을 권장합니다.
 

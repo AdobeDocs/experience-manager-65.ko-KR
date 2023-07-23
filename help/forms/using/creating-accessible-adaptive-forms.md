@@ -10,14 +10,16 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2111'
 ht-degree: 0%
 
 ---
 
 # 액세스 가능한 적응형 양식 만들기{#creating-accessible-adaptive-forms}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 ## 소개 {#introduction}
 

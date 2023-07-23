@@ -10,14 +10,16 @@ discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
 feature: Adaptive Forms
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 0%
+source-wordcount: '626'
+ht-degree: 1%
 
 ---
 
 # 적응형 양식 세트를 사용하여 적응형 양식 만들기{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 ## 개요 {#overview}
 
@@ -141,7 +143,7 @@ ht-degree: 0%
 
 1. 편집 모드에서 상위 양식을 엽니다.
 1. 사이드바에서 를 클릭합니다. **에셋** ![에셋 브라우저](assets/assets-browser.png). 에셋에서 을 선택합니다. **적응형 양식** 드롭다운에서 을 클릭합니다.
-   [ ![에셋에서 적응형 양식 선택](assets/asset.png)](assets/asset-1.png)
+   [![에셋에서 적응형 양식 선택](assets/asset.png)](assets/asset-1.png)
 
 1. 하위 양식으로 추가할 적응형 양식을 드래그 앤 드롭합니다.
-   [ ![사이트에 적응형 양식 드래그 앤 드롭](assets/drag-drop.png)](assets/drag-drop-1.png)놓는 적응형 양식이 하위 양식으로 추가됩니다.
+   [![사이트에 적응형 양식 드래그 앤 드롭](assets/drag-drop.png)](assets/drag-drop-1.png)놓는 적응형 양식이 하위 양식으로 추가됩니다.

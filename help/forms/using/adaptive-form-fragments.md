@@ -10,14 +10,16 @@ discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 0%
+source-wordcount: '2112'
+ht-degree: 1%
 
 ---
 
 # 적응형 양식 단편{#adaptive-form-fragments}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 모든 양식은 특정 목적을 위해 디자인되었지만 대부분의 양식에는 이름 및 주소, 가족 세부 사항, 소득 세부 사항 등과 같은 개인 세부 사항을 제공하기 위한 일부 공통 세그먼트가 있습니다. 양식 개발자는 새 양식을 만들 때마다 이러한 공통 세그먼트를 만들어야 합니다.
 
@@ -76,9 +78,9 @@ ht-degree: 0%
 1. 조각 생성 대화 상자에서 다음 정보를 지정합니다.
 
    * **이름**: 조각의 이름. 기본값은 패널의 요소 이름입니다. 필수 필드입니다.
-      >[!NOTE]
-      >
-      >조각에 고유한 이름을 지정해야 합니다. 같은 이름의 다른 조각이 이미 있는 경우 조각을 만들 수 없습니다.
+     >[!NOTE]
+     >
+     >조각에 고유한 이름을 지정해야 합니다. 같은 이름의 다른 조각이 이미 있는 경우 조각을 만들 수 없습니다.
 
    * **제목**: 조각의 제목 기본값은 패널 제목입니다.
 
@@ -171,7 +173,7 @@ XFA 양식 템플릿 또는 XSD 복합 유형을 사용하여 적응형 양식 �
 
 AEM Forms UI를 사용하여 적응형 양식 조각에 대해 여러 작업을 수행할 수 있습니다.
 
-1. 이동 `https://[hostname]:'port'/aem/forms.html`.
+1. `https://[hostname]:'port'/aem/forms.html`로 이동합니다.
 
 1. 클릭 **선택** AEM Forms UI 도구 모음에서 적응형 양식 조각을 선택합니다. 도구 모음에는 선택한 적응형 양식 조각에서 수행할 수 있는 다음 작업이 표시됩니다.
 
@@ -241,7 +243,7 @@ AEM Forms UI를 사용하여 적응형 양식 조각에 대해 여러 작업을 
 * 업데이트된 적응형 양식 조각을 다시 게시하면 변경 사항이 조각이 사용되는 적응형 양식의 게시된 인스턴스에 반영됩니다.
 * 확인 구성 요소가 포함된 적응형 양식은 익명 사용자를 지원하지 않습니다. 또한 적응형 양식 조각에서 확인 구성 요소를 사용하는 것은 권장되지 않습니다.
 * (**Mac 전용**) 양식 조각 기능이 모든 시나리오에서 완벽하게 작동되도록 하려면 /private/etc/hosts 파일에 다음 항목을 추가합니다.
-   `127.0.0.1 <Host machine>` **호스트 컴퓨터**: AEM Forms이 배포되는 Apple Mac 시스템입니다.
+  `127.0.0.1 <Host machine>` **호스트 컴퓨터**: AEM Forms이 배포되는 Apple Mac 시스템입니다.
 
 ## 참조 조각 {#reference-fragments}
 

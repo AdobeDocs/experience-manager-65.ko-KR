@@ -10,14 +10,16 @@ discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 0%
+source-wordcount: '550'
+ht-degree: 1%
 
 ---
 
 # 제출 서류 검토자를 양식과 연결 {#associating-submission-reviewers-with-a-form}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 양식을 만들 때 양식 포털을 통해 양식 제출을 검토하고 피드백을 제공하는 사용자를 지정할 수 있습니다. 조직은 피드백을 수집하고 제출된 양식에 대해 다시 작업할 수 있습니다.
 

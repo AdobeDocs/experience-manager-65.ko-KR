@@ -9,14 +9,16 @@ topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 feature: Adaptive Forms
 exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
 
 # 반복 가능한 섹션이 있는 양식 만들기 {#creating-forms-with-repeatable-sections}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 반복 가능한 섹션은 양식에 동적으로 추가하거나 제거할 수 있는 패널입니다.
 
@@ -54,7 +56,7 @@ ht-degree: 0%
       * 패널 추가 단추를 만들려면 다음을 지정합니다 `this.panel.instanceManager.addInstance()`
       * 패널 삭제 단추를 만들려면 다음을 지정합니다 `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
-      클릭 **완료**.
+      **완료**&#x200B;를 클릭합니다.
 
       >[!NOTE]
       >
@@ -93,8 +95,6 @@ ht-degree: 0%
       >[!NOTE]
       >
       >적응형 양식에서 패널의 모든 인스턴스가 제거되면 제거된 패널의 인스턴스를 추가하려면 _panelName 구문을 사용하여 패널의 인스턴스 관리자를 캡처하고 인스턴스 관리자의 addInstance API를 사용하여 삭제된 인스턴스를 추가합니다. 예: _panelName.addInstance(). 제거된 패널의 인스턴스가 추가됩니다.
-
-
 
 ## 상위 패널에 대해 아코디언 레이아웃 사용   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
