@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 498fb5f6f923710a907e1cf525f56f49850e16b2
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 1%
@@ -23,8 +23,9 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | 이 문서 |
 | AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html) |
+| AEM 6.5 | 이 문서 |
+
 
 적응형 양식은 사전 설정된 유효성 검사 기준에 따라 필드에 입력한 내용을 확인합니다. 유효성 검사 기준은 적응형 양식의 필드에 입력할 수 있는 입력 값을 나타냅니다. 적응형 양식에 사용하는 데이터 소스를 기반으로 유효성 검사 기준을 설정할 수 있습니다. 예를 들어 RESTful 웹 서비스를 데이터 소스로 사용하는 경우 Swagger 정의 파일에 유효성 검사 기준을 정의할 수 있습니다.
 

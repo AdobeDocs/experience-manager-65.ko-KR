@@ -10,7 +10,7 @@ discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 feature: Adaptive Forms
 exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 498fb5f6f923710a907e1cf525f56f49850e16b2
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 1%
@@ -25,7 +25,6 @@ ht-degree: 1%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms.html) |
 | AEM 6.5 | 이 문서 |
-
 
 
 Adobe Experience Manager(AEM)를 사용하면 최종 사용자에게 동적 경험을 제공하는 사용하기 쉬운 적응형 양식을 만들 수 있습니다. 양식 레이아웃은 항목 또는 구성 요소가 적응형 양식에 표시되는 방식을 제어합니다.
