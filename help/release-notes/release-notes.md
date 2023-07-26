@@ -1,11 +1,11 @@
 ---
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
-mini-toc-levels: 3
+mini-toc-levels: 4
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: ea0f4096ac76ed11ee84a3769725f527c13fb461
 workflow-type: tm+mt
-source-wordcount: '3777'
+source-wordcount: '3786'
 ht-degree: 16%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 16%
 이 릴리스의 몇 가지 주요 기능 및 개선 사항은 다음과 같습니다.
 
 * **검색 환경 개선 사항** - 이제 검색 결과에 표시되는 자산에 대해 다음 작업을 빠르게 수행할 수 있습니다.
-   * 워크플로우 만들기
+   * 워크플로 만들기
    * 버전 만들기
    * 자산 연결 또는 연결 해제
 
@@ -50,7 +50,9 @@ ht-degree: 16%
 * **Dynamic Media을 사용한 DASH 스트리밍** - Dynamic Media 비디오 게재의 적응형 스트리밍을 위해 시작된 새로운 프로토콜(DASH - HTTP를 통한 동적 적응형 스트리밍) 지원(CMAF가 활성화됨). 현재 모든 지역에서 사용할 수 있습니다. [지원 티켓을 통해 활성화됨](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
 * **Experience Manager Sites 및 컨텐츠 조각과 에셋 차세대 Dynamic Media 통합** - 이제 Experience Manager Assets as a Cloud Service 차세대 Dynamic Media 사용자는 Experience Manager Sites 6.5의 온-프레미스 또는 Managed Services 인스턴스를 통해 작성 및 전달하기 위해 이러한 클라우드 호스팅 자산을 사용할 수 있습니다.
 
-**AEM Forms**
+## 서비스 팩 17의 향상된 기능 {#enhancements-sp17}
+
+### Forms{#aem-forms-6517}
 
 * **[AEM 페이지 편집기 내 적응형 양식](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)**: 이제 AEM 페이지 편집기를 사용하여 여러 양식을 빠르게 만들고 사이트 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 비헤이비어, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화 등 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지에서 원활한 데이터 캡처 경험을 만들 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
    * AEM Sites 편집기 또는 경험 조각에서 양식 구성 요소를 적응형 양식 컨테이너 구성 요소로 드래그 앤 드롭하여 적응형 양식을 만듭니다.
@@ -64,7 +66,47 @@ ht-degree: 16%
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## [!DNL Assets]{#assets-6517}
+## 서비스 팩 17의 문제가 해결되었습니다. {#fixed-issues}
+
+### [!DNL Sites]{#sites-6517}
+
+* LinkCheckerTransformer의 성능 저하. (SITES-11661)
+* 페이지의 언어 사본이 예상대로 업데이트되지 않았습니다. (SITES-11191)
+* 캠페인이 아닌 페이지 호출 열기 `targeteditor.html` 불필요하게. 제거 `targeteditor` 필요하지 않은 경우 를 호출합니다. (SITES-12469)
+* 주석이 있는 페이지에 대해서는 라이브 카피를 만들 수 없습니다. (SITES-12154)
+* Experience Manager 6.5.16에서 페이지 롤아웃이 작동하지 않습니다. (SITES-12008)
+* 메모리 부족, 다음과 같은 이유로 높은 가비지 수집 활동 `NotificationManagerImpl`. `NotificationManager` Experience Manager 6.5로 번들 업그레이드. (SITES-11440)
+* 서비스 팩 17을 차단하던 WCM IT 테스트를 수정했습니다. (SITES-13089)
+* 서블릿에서 사이트 참조 검색이 실패합니다. (SITES-10901)
+
+#### 관리 사용자 인터페이스{#sites-adminui-6517}
+
+* 썸네일 이미지 선택기의 미리 보기 창을 닫을 수 없습니다. (SITES-10459)
+
+#### [!DNL Content Fragments]{#sites-contentfragments-6517}
+
+* Polaris 서비스 개체(URL, 자격 증명, 콜백 등)에 연결하기 위한 구성입니다. (SITES-12149)
+* 사용 `SemanticDataType.REFERENCE` 은(는) &quot;Remote-Asset-ID&quot;를 지원해야 합니다. (SITES-12127)
+* Polaris 자산 선택기를 컨텐츠 조각 편집기에 통합합니다. (SITES-12125)
+* 메타데이터 서비스 끝점에 액세스하려면 필수 http 헤더가 필요합니다. (SITES-13068)
+* 6.5의 GraphQL 구현은 Cloud Service(기본)과 일치하지 않습니다. 식별된 문제가 해결되었습니다. (SITES-13096)
+* GraphQL 페이징/정렬 및 하이브리드 필터링은 Experience Manager 6.5/AMS에서 사용할 수 있어야 합니다. (SITES-9154)
+
+#### 핵심 구성 요소{#sites-core-components-6517}
+
+* 속성 `cq-msm-lockable` 기초 페이지 구성 요소에 잘못된 리디렉션 값이 있습니다. (SITES-10904)
+* 원격 자산 선택기는 항상 IMS 스테이징 환경으로 리디렉션합니다. (SITES-13433)
+
+#### [!DNL Experience Fragments]{#sites-experiencefragments-6517}
+
+* Adobe Target으로 내보낼 때 경험 조각에서 외부화 구성을 선택하면 잘못된 외부화된 URL이 전송됩니다. (SITES-12402)
+* 포괄적이지 않은 용어를 제거하고, 포괄적 용어 지침을 적용합니다. (SITES-11244)
+
+#### 페이지 편집기{#sites-pageeditor-6517}
+
+* Experience Manager 콘텐츠 파인더 사이드 레일에 설정된 캐러셀에 대해 썸네일이 표시되지 않습니다. (SITES-8593)
+
+### [!DNL Assets]{#assets-6517}
 
 * 40개 이상의 PDF을 동시에 게시하는 경우 [!DNL Experience Manager] 응답이 중지되어 잠시 동안 사용할 수 없게 됩니다. (ASSETS-21789)
 * 테스트 사용자로 로그인한 경우 에셋의 속성을 클릭하면 특정 에셋과 관련된 에셋을 볼 수 없습니다. (ASSETS-21648)
@@ -92,7 +134,7 @@ ht-degree: 16%
 * When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 
 * When you navigate to `Smart Crop` option, the screen reader does not announce the expand or collapse state of the button. (ASSETS-17335)-->
 
-## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
+#### [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
 * Dynamic Media 클라우드 구성이 이미 있으면 Dynamic Media에 대한 연결이 끊어집니다. (ASSETS-23057)
 * Dynamic Media 비디오가 많고 해결된 폴더를 탐색하는 동안 폴더 카드 보기에서 문제를 로드하지 못하는 동안 성능이 향상되었습니다. (ASSETS-23016)
@@ -104,11 +146,7 @@ ht-degree: 16%
 * 이미지 프로필 사용자 인터페이스가 이름, 차원, 치수가 같거나 둘 다 같은 스마트 자르기에 대해 제한됩니다. (ASSETS-16997)
 * 이제 이미지 프로필 사용자 인터페이스의 스마트 자르기에 대해 기본 너비 및 높이가 50픽셀로 설정됩니다. (ASSETS-16997)
 
-## [!DNL Commerce]{#commerce-6517}
-
-* 이동된 태그는 수집된 가비지 수집이지만 여전히 다음 제품에서 참조됩니다. `/var`. (CQ-4351337)
-
-## [!DNL Forms]{#forms-6517}
+### [!DNL Forms]{#forms-6517}
 
 * AEM 6.5.15.0 서비스 팩으로 업데이트한 후 HTML 5 양식이 작동하지 않거나 IE 호환성 모드의 Edge 브라우저에서 제대로 로드되지 않습니다. (FORMS-8526, FORMS-8523)
 * 사용자가 AEM 6.5.16.0 서비스 팩을 적용하면 규칙 편집기가 열리지 않습니다. (FORMS-8290)
@@ -146,14 +184,19 @@ ht-degree: 16%
 * 사용자가 다음을 구성하는 PDF으로 LCA 프로세스를 호출하려고 하면 `Chinese Full Width Characters`에 문제가 발생합니다. `ValidateForm` 프로세스. (FORMS-7464)
 * Experience Manager Forms Designer에서 XMLFM은 XDP 기반 템플릿에 대해 문자, A4 및 A5와 같이 서로 다른 용지 크기로 ZPL 출력을 생성합니다. (FORMS-7898)
 
+### [!DNL Commerce]{#commerce-6517}
 
-## 통합{#integrations-6517}
+* 이동된 태그는 수집된 가비지 수집이지만 여전히 다음 제품에서 참조됩니다. `/var`. (CQ-4351337)
+
+### Foundation{#foundation-6517}
+
+#### 통합{#integrations-6517}
 
 * Adobe Target IMS 구성을 레거시 클라우드 구성에서 사용자 자격 증명 구성으로 전환할 때 `connectedWhen` 속성은 변경되지 않습니다. 이 문제는 구성이 여전히 IMS 기반인 것처럼 모든 호출을 실행합니다. (CQ-4352810)
 * 추가 중 `modifyProperties` 권한 대상 `fd-cloudservice` Adobe Sign 구성에 대한 시스템 사용자입니다. (FORMS-6164)
 * Adobe Target과 통합된 Experience Manager을 사용하여 AB 테스트 활동을 만들 때 이 활동과 연관된 대상을 Target에 동기화하지 않습니다. (NPR-40085)
 
-## Oak{#oak-6517}
+#### Oak{#oak-6517}
 
 서비스 팩 13 이상부터 지속성 캐시에 영향을 주는 다음 오류 로그가 나타나기 시작했습니다.
 
@@ -183,59 +226,21 @@ org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supporte
 1. 서비스 팩을 설치하거나 Experience Manager을 as a Cloud Service으로 다시 시작합니다.
 의 새 폴더 `cache` 및 `diff-cache` 이(가) 자동으로 만들어지므로 더 이상 과 관련된 예외가 발생하지 않습니다. `mvstore` 다음에서 `error.log`.
 
-## Platform{#platform-6517}
+#### Platform{#platform-6517}
 
 * Experience Manager Tag Management 사용자 인터페이스(/aem/tags/)에서 네임스페이스 및 태그는 생성된 순서대로 표시됩니다. 그러나 네임스페이스와 태그가 많은 경우 네임스페이스를 보고 관리하는 기능이 어렵습니다. 이 문제는 다른 방법으로 정렬할 수 없기 때문입니다. (NPR-39620)
 * 축소 js가 일부 클라이언트 라이브러리에서 작동하지 않기 때문에 Google 종료 버전을 업데이트해야 합니다. (NPR-40043)
 
-## [!DNL Sites]{#sites-6517}
+#### 슬링{#sling-6517}
 
-* LinkCheckerTransformer의 성능 저하. (SITES-11661)
-* 페이지의 언어 사본이 예상대로 업데이트되지 않았습니다. (SITES-11191)
-* 캠페인이 아닌 페이지 호출 열기 `targeteditor.html` 불필요하게. 제거 `targeteditor` 필요하지 않은 경우 를 호출합니다. (SITES-12469)
-* 주석이 있는 페이지에 대해서는 라이브 카피를 만들 수 없습니다. (SITES-12154)
-* Experience Manager 6.5.16에서 페이지 롤아웃이 작동하지 않습니다. (SITES-12008)
-* 메모리 부족, 다음과 같은 이유로 높은 가비지 수집 활동 `NotificationManagerImpl`. `NotificationManager` Experience Manager 6.5로 번들 업그레이드. (SITES-11440)
-* 서비스 팩 17을 차단하던 WCM IT 테스트를 수정했습니다. (SITES-13089)
-* 서블릿에서 사이트 참조 검색이 실패합니다. (SITES-10901)
+* 슬링 `ResourceMerger` 가상 경로를 제공받으면 많은 양의 CPU를 소모하여 서비스 거부를 초래합니다. (NPR-40338)
 
-### [!DNL Sites] - 관리 사용자 인터페이스{#sites-adminui-6517}
-
-* 썸네일 이미지 선택기의 미리 보기 창을 닫을 수 없습니다. (SITES-10459)
-
-### [!DNL Sites] - [!DNL Content Fragments]{#sites-contentfragments-6517}
-
-* Polaris 서비스 개체(URL, 자격 증명, 콜백 등)에 연결하기 위한 구성입니다. (SITES-12149)
-* 사용 `SemanticDataType.REFERENCE` 은(는) &quot;Remote-Asset-ID&quot;를 지원해야 합니다. (SITES-12127)
-* Polaris 자산 선택기를 컨텐츠 조각 편집기에 통합합니다. (SITES-12125)
-* 메타데이터 서비스 끝점에 액세스하려면 필수 http 헤더가 필요합니다. (SITES-13068)
-* 6.5의 GraphQL 구현은 Cloud Service(기본)과 일치하지 않습니다. 식별된 문제가 해결되었습니다. (SITES-13096)
-* GraphQL 페이징/정렬 및 하이브리드 필터링은 Experience Manager 6.5/AMS에서 사용할 수 있어야 합니다. (SITES-9154)
-
-### [!DNL Sites] - 핵심 구성 요소{#sites-core-components-6517}
-
-* 속성 `cq-msm-lockable` 기초 페이지 구성 요소에 잘못된 리디렉션 값이 있습니다. (SITES-10904)
-* 원격 자산 선택기는 항상 IMS 스테이징 환경으로 리디렉션합니다. (SITES-13433)
-
-### [!DNL Sites] - [!DNL Experience Fragments]{#sites-experiencefragments-6517}
-
-* Adobe Target으로 내보낼 때 경험 조각에서 외부화 구성을 선택하면 잘못된 외부화된 URL이 전송됩니다. (SITES-12402)
-* 포괄적이지 않은 용어를 제거하고, 포괄적 용어 지침을 적용합니다. (SITES-11244)
-
-### [!DNL Sites] - 페이지 편집기{#sites-pageeditor-6517}
-
-* Experience Manager 콘텐츠 파인더 사이드 레일에 설정된 캐러셀에 대해 썸네일이 표시되지 않습니다. (SITES-8593)
-
-## 슬링{#sling-6517}
-
-* 슬링 `ResourceMerger` 가상 경로를 제공하면 많은 양의 CPU를 소모하여 서비스 거부를 초래합니다. (NPR-40338)
-
-## 번역 프로젝트{#translation-6517}
+#### 번역 프로젝트{#translation-6517}
 
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST * The `translationrules.xml` is sorted poorly when adding a rule to a property by way of the translation configuration user interface. (NPR-40431) -->
 * 사용자가 필수가 아닌 필드를 구성하지 않으면 언어 사본이 생성되지 않습니다. (NPR-40036)
 
-## 사용자 인터페이스{#ui-6517}
+#### 사용자 인터페이스{#ui-6517}
 
 * 페이지 속성의 취소 버튼이 비활성화되어 있으므로 사이트 관리자 사용자 인터페이스로 이동해야 합니다. (NPR-40501)
 
@@ -243,7 +248,7 @@ org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supporte
 
 * TEXT -->
 
-## 워크플로우{#workflow-6517}
+#### 워크플로{#workflow-6517}
 
 * 워크플로 콘솔 변경 사항. (NPR-40502)
 * `SegmentNotfound errors` 클래스에서 리소스 확인자가 닫히지 않아 발생하는 프로덕션 작성자 인스턴스의 로그 `com.day.cq.workflow.impl.email.EMailNotificationServic`. (NPR-40187)
@@ -401,7 +406,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * JBoss® 7.1.4 플랫폼에서 사용자가 Experience Manager 6.5.16.0 이상의 서비스 팩을 설치하면 `adobe-livecycle-jboss.ear` 배포가 실패합니다.
 * 1.8.0_281 이상의 JDK 버전은 WebLogic JEE 서버에서 지원되지 않습니다.
-* AEM 6.5.15부터 Rhino JavaScript Engine은 ```org.apache.servicemix.bundles.rhino``` 번들에 새로운 호스팅 동작이 있습니다. 엄격 모드를 사용하는 스크립트(```use strict;```)는 변수를 올바르게 선언해야 합니다. 그렇지 않으면 런타임 오류가 발생하는 대신 실행되지 않습니다.
+* AEM 6.5.15부터 Rhino JavaScript Engine은 ```org.apache.servicemix.bundles.rhino``` 번들에 새로운 호스팅 동작이 있습니다. 엄격 모드를 사용하는 스크립트(```use strict;```) 변수를 올바르게 선언해야 합니다. 그렇지 않으면 런타임 오류가 발생하는 대신 실행되지 않습니다.
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
