@@ -4,7 +4,7 @@ description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 �
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 4992416c0deec7eab51920fd9c7e1e2b10887ea5
+source-git-commit: 600dcc52829ff2c5e54176bda7631845ef24f986
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 25%
@@ -45,17 +45,17 @@ AEM 페이지 편집기에서 적응형 양식 컨테이너를 사용하면 동�
 
 다음 옵션을 활용하여 이 기능을 최대한 활용할 수 있습니다.
 
-* **AEM Sites 페이지에 사용자 정의 적응형 양식 추가:** 요구 사항 및 디자인 환경 설정에 맞게 맞춤화하여 처음부터 새로운 양식을 제작하십시오.
+* **[AEM Sites 페이지에 사용자 정의 적응형 양식 추가:](#create-an-adaptive-form-in-sites-editor)** 요구 사항 및 디자인 환경 설정에 맞게 맞춤화하여 처음부터 새로운 양식을 제작하십시오.
 
-* **경험 조각에 사용자 지정 적응형 양식 추가:** 양식을 AEM Experience Fragments에 추가하여 도달 범위를 확장함으로써 여러 페이지 또는 사이트에서 원활하게 재사용할 수 있습니다.
+* **[경험 조각에 사용자 지정 적응형 양식 추가:](#create-an-adaptive-form-in-experience-fragment)** 양식을 AEM Experience Fragments에 추가하여 도달 범위를 확장함으로써 여러 페이지 또는 사이트에서 원활하게 재사용할 수 있습니다.
 
-* **AEM Sites 페이지 또는 경험 조각에 여러 양식 추가:**  페이지에 여러 양식을 추가하여 사용자의 환경 설정 및 요구 사항에 따라 다양한 선택 사항을 제공할 수 있습니다. 이로써 처음부터 완전히 새로운 양식과 기존 양식을 조합할 수 있습니다.
-
-* **적응형 양식을 경험 조각으로 변환:** AEM Sites 페이지에 추가된 적응형 양식을 여러 AEM Sites 페이지에서 양식을 재사용하기 위한 경험 조각으로 변환합니다.
+* **[적응형 양식을 경험 조각으로 변환:](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)** AEM Sites 페이지에 추가된 적응형 양식을 여러 AEM Sites 페이지에서 양식을 재사용하기 위한 경험 조각으로 변환합니다.
 
 * **승인된 템플릿을 기반으로 양식을 만들어 AEM Sites 페이지에 추가합니다.** 사전 승인된 템플릿을 활용하여 조직의 브랜딩 지침 및 디자인 표준에 맞는 양식을 신속하게 만들 수 있습니다. 옵션은 적응형 Forms 편집기 또는 적응형 Forms - 임베드 구성 요소로 생성된 적응형 Forms에 대해서만 사용할 수 있습니다.
 
 * **AEM Sites 페이지에 기존 양식 추가:** 이미 만든 양식을 웹 사이트에 쉽게 통합하여 방문자가 직접 상호 작용할 수 있도록 합니다. 옵션은 적응형 Forms 편집기 또는 적응형 Forms - 임베드 구성 요소로 생성된 적응형 Forms에 대해서만 사용할 수 있습니다.
+
+* **AEM Sites 페이지 또는 경험 조각에 여러 양식 추가:**  페이지에 여러 양식을 추가하여 사용자의 환경 설정 및 요구 사항에 따라 다양한 선택 사항을 제공할 수 있습니다. 이로써 처음부터 완전히 새로운 양식과 기존 양식을 조합할 수 있습니다.
 
 ## 고려 사항 {#consideration}
 
