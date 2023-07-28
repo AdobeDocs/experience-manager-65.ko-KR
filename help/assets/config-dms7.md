@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: a8db862b4a90ee6679de44df9508caf75a4c3eec
+source-git-commit: 48540664fa80ac7ecc94a2d9dc56682ceaf67206
 workflow-type: tm+mt
-source-wordcount: '6489'
+source-wordcount: '6491'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,6 @@ ht-degree: 3%
 >* [콘텐츠의 HTTP/2 전달](/help/assets/http2.md)
 >* CDN 수준에서 URL 리디렉션
 >* Akamai ChinaCDN(중국에서 최적의 전송을 위해)
-
 
 ## Scene7 모드에서 Dynamic Media 활성화 {#enabling-dynamic-media-in-scene-mode}
 
@@ -120,12 +119,13 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 1. 연결에 성공하면 다음을 설정하십시오. 별표(*)가 있는 제목은 필수입니다.
 
    * **[!UICONTROL 회사]** - Dynamic Media 계정 이름.
-      >[!IMPORTANT]
-      Cloud Services의 Dynamic Media 구성은 Experience Manager 인스턴스에서 하나만 지원됩니다. 구성을 두 개 이상 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성 _아님_ Adobe에서 지원하거나 권장합니다.
+     >[!IMPORTANT]
+     >
+     Cloud Services의 Dynamic Media 구성은 Experience Manager 인스턴스에서 하나만 지원됩니다. 구성을 두 개 이상 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성 _아님_ Adobe에서 지원하거나 권장합니다.
 
-      <!-- CQDOC-19579 and CQDOC-19612 -->
+     <!-- CQDOC-19579 and CQDOC-19612 -->
 
-      참조: [Dynamic Media 회사 별칭 계정 구성](/help/assets/dm-alias-account.md).
+     참조: [Dynamic Media 회사 별칭 계정 구성](/help/assets/dm-alias-account.md).
 
    * **[!UICONTROL 회사 루트 폴더 경로]**
 
@@ -133,9 +133,10 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
       * **[!UICONTROL 즉시]** 는 에셋이 업로드되면 시스템이 에셋을 수집하여 URL/임베드를 즉시 제공함을 의미합니다. 에셋을 게시하는 데 필요한 사용자 개입이 없습니다.
       * **[!UICONTROL 활성화 시]** 는 URL/포함 링크가 제공되기 전에 먼저 에셋을 명시적으로 게시해야 함을 의미합니다.<br><!-- CQDOC-17478, Added March 9, 2021-->Experience Manager 6.5.8 이상에서 Experience Manager 게시 인스턴스는 다음과 같은 정확한 Dynamic Media 메타데이터 값을 반영합니다. `dam:scene7Domain` 및 `dam:scene7FileStatus` 위치: **[!UICONTROL 활성화 시]** 게시 모드입니다. 이 기능을 사용하려면 서비스 팩 8을 설치한 다음 Experience Manager을 다시 시작하십시오. Sling 구성 관리자로 이동합니다. 다음에 대한 구성 찾기 `Scene7ActivationJobConsumer Component` 또는 새로 만들기)를 참조하십시오. 확인란 선택 **[!UICONTROL Dynamic Media 게시 후 메타데이터 복제]**&#x200B;을 선택한 다음 을 선택합니다. **[!UICONTROL 저장]**.
 
-         ![Dynamic Media 게시 후 메타데이터 복제 확인란](assets-dm/replicate-metadata-setting.png)
+        ![Dynamic Media 게시 후 메타데이터 복제 확인란](assets-dm/replicate-metadata-setting.png)
 
       * **[!UICONTROL 선택적 게시]** 이 옵션을 사용하면 Dynamic Media에 게시할 폴더를 제어할 수 있습니다. 스마트 자르기 또는 동적 변환과 같은 기능을 사용하거나 미리 보기 위해 Experience Manager에 독점적으로 게시할 폴더를 결정할 수 있습니다. 동일한 자산은 다음과 같습니다 *아님* 공개 도메인에 전달을 위해 Dynamic Media에 게시됩니다.<br>다음 위치에서 이 옵션을 설정할 수 있습니다. **[!UICONTROL Dynamic Media 클라우드 구성]** 또는 원하는 경우 폴더의 폴더 수준에서 이 옵션을 설정하도록 선택할 수 있습니다. **[!UICONTROL 속성]**.<br>다음을 참조하십시오 [Dynamic Media에서 선택적 게시 작업](/help/assets/selective-publishing.md).<br>나중에 이 구성을 변경하거나 나중에 폴더 수준에서 변경할 경우 이러한 변경 사항은 해당 시점부터 업로드하는 새 자산에만 영향을 줍니다. 폴더의 기존 에셋은 다음 중 하나에서 수동으로 변경될 때까지 게시 상태가 그대로 유지됩니다 **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 게시 관리]** 대화 상자.
+
    * **[!UICONTROL 보안 미리 보기 서버]** - 보안 표현물 미리보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 렌디션이 생성되면 Experience Manager은 원격 Dynamic Media 렌디션에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리가 Experience Manager 인스턴스로 다시 전송되지 않음).
 Adobe 고유한 회사의 서버나 특수 서버를 사용할 특별한 배열이 없는 경우에는 이 설정을 지정된 대로 두는 것이 좋습니다.
 
@@ -150,7 +151,9 @@ Adobe 고유한 회사의 서버나 특수 서버를 사용할 특별한 배열�
          * **[!UICONTROL 하위 폴더에 대해 비활성화됨]** - 이 하위 트리의 모든 항목을 Dynamic Media과 동기화하지 못하도록 제외합니다.
 
    >[!NOTE]
+   >
    Dynamic Media - Scene7 모드에서는 버전 관리를 지원하지 않습니다. Also, delayed activation applies only if **[!UICONTROL Publish Assets]** in the Edit Dynamic Media Configuration page is set to **[!UICONTROL Upon Activation]**, and then only until the first time the asset is activated.
+   >
    자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 라이브로 게시됩니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
@@ -193,7 +196,7 @@ Dynamic Media의 암호 만료는 현재 시스템 날짜로부터 100년으로 
 
    * 다음에서 **[!UICONTROL 새 암호]** 필드에 새 암호를 입력합니다.
 
-      다음 **[!UICONTROL 현재 암호]** 필드는 의도적으로 미리 채워져 있고 상호 작용에서 숨겨져 있습니다.
+     다음 **[!UICONTROL 현재 암호]** 필드는 의도적으로 미리 채워져 있고 상호 작용에서 숨겨져 있습니다.
 
    * 다음에서 **[!UICONTROL 암호 반복]** 필드에서 새 암호를 다시 입력한 다음 을 선택합니다 **[!UICONTROL 완료]**.
 
@@ -233,7 +236,7 @@ AEM에서 Dynamic Media - Scene7 모드를 실행하면 현재 전달됩니다. 
 
 1. 다음에서 **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** 페이지에서 다음 두 가지 설정에 대한 확인란을 선택합니다.
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - 이 설정을 활성화하면 저장할 2분(기본값) 동안 권한 결과를 캐시합니다.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - 활성화되면 이 설정은 저장할 120초 또는 2분(기본값) 동안 권한 결과를 캐시합니다.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - 활성화되면 이 설정은 Dynamic Media 이미지 서버를 통해 에셋을 미리 보는 동안 사용자의 액세스를 확인합니다.
 
    ![Dynamic Media - Scene7 모드에서 액세스 제어 목록 설정 활성화](/help/assets/assets-dm/acl.png)
@@ -250,12 +253,13 @@ Dynamic Media - Scene7 모드에서 기본 에셋 업로드 파일 크기는 2GB
 * 이 대용량 업로드 기능은 다음에 대해서만 지원됩니다 [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html) 고객.
 * Experience Manager 인스턴스가 Amazon S3 또는 Microsoft® Azure Blob 저장소로 구성되어 있는지 확인하십시오.
 
-   >[!NOTE]
-   Blob 스토리지 구성에서 이 대용량 업로드 기능은 AzureSas에서 지원되지 않으므로 액세스 키 및 비밀 키로 Azure Blob 스토리지를 구성합니다.
+  >[!NOTE]
+  >
+  Blob 스토리지 구성에서 이 대용량 업로드 기능은 AzureSas에서 지원되지 않으므로 액세스 키 및 비밀 키로 Azure Blob 스토리지를 구성합니다.
 
 * 오크스 [다이렉트 바이너리 액세스 다운로드](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) 활성화됨(Oak *다이렉트 바이너리 액세스 업로드* 가 필수가 아닙니다).
 
-   다이렉트 이진 액세스 다운로드를 활성화하려면 속성을 설정합니다 `presignedHttpDownloadURIExpirySeconds > 0` 데이터 저장소 구성에서. 값은 더 큰 바이너리를 다운로드할 수 있을 만큼 충분히 길어야 하며 다시 시도할 수 있습니다.
+  다이렉트 이진 액세스 다운로드를 활성화하려면 속성을 설정합니다 `presignedHttpDownloadURIExpirySeconds > 0` 데이터 저장소 구성에서. 값은 더 큰 바이너리를 다운로드할 수 있을 만큼 충분히 길어야 하며 다시 시도할 수 있습니다.
 
 * 15GB보다 큰 에셋은 업로드되지 않습니다. (크기 제한은 아래 8단계에서 설정됩니다.)
 * 다음의 경우 **[!UICONTROL Dynamic Media 재처리]** 에셋 워크플로우는 폴더에서 트리거되며 이미 Dynamic Media 회사와 동기화 중인 모든 큰 에셋을 재처리합니다. 그러나 큰 에셋이 폴더에서 아직 동기화되지 않은 경우 에셋이 업로드되지 않습니다. 따라서 Dynamic Media의 기존 대형 에셋을 동기화하려면 다음을 실행할 수 있습니다. **[!UICONTROL Dynamic Media 재처리]** 개별 에셋에 대한 에셋 워크플로.
@@ -268,7 +272,7 @@ Dynamic Media - Scene7 모드에서 기본 에셋 업로드 파일 크기는 2GB
 
    * 왼쪽 레일에서 다음 경로로 이동합니다.
 
-      `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+     `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
 
    * 위 경로를 복사하여 도구 모음 아래의 CRXDE Lite 경로 필드에 붙여넣은 다음 키를 누릅니다 `Enter`.
 
@@ -284,7 +288,7 @@ Dynamic Media - Scene7 모드에서 기본 에셋 업로드 파일 크기는 2GB
 
    * 왼쪽 레일에서 다음 오버레이 노드 경로로 이동합니다.
 
-      `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+     `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
 
    * 위 경로를 복사하여 도구 모음 아래의 CRXDE Lite 경로 필드에 붙여넣은 다음 키를 누릅니다 `Enter`.
 
@@ -304,11 +308,11 @@ Dynamic Media - Scene7 모드에서 기본 에셋 업로드 파일 크기는 2GB
 
    * 다음 URL 경로로 이동합니다.
 
-      `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
+     `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
 
    * 위의 경로를 복사하여 브라우저의 URL 필드에 붙여넣습니다. 다음을 교체해야 합니다. `localhost:4502` 고유한 Experience Manager 인스턴스로.
 
-1. 다음에서 **[!UICONTROL Adobe Granite 워크플로 외부 프로세스 작업 핸들러]** 대화 상자, **[!UICONTROL 최대 시간 초과]** 필드, 값을 다음으로 설정 `18000` 분 (5시간). 기본값은 10800분(3시간)입니다.
+1. 다음에서 **[!UICONTROL Adobe Granite 워크플로 외부 프로세스 작업 핸들러]** 대화 상자, **[!UICONTROL 최대 시간 초과]** 필드, 값을 다음으로 설정 `18000` 초(5시간). 기본값은 10800초(3시간)입니다.
 
    ![최대 시간 초과 값](/help/assets/assets-dm/uploadassets15gb_d.png)
 
@@ -321,7 +325,7 @@ Dynamic Media - Scene7 모드에서 기본 에셋 업로드 파일 크기는 2GB
 1. 워크플로 모델 페이지에서 을 선택합니다. **[!UICONTROL Dynamic Media 인코딩 비디오]**.
 1. 도구 모음에서 를 선택합니다. **[!UICONTROL 편집]**.
 1. 워크플로우 페이지에서 를 두 번 클릭합니다. **[!UICONTROL Scene7 다이렉트 바이너리 업로드]** 프로세스 단계입니다.
-1. 다음에서 **[!UICONTROL 단계 속성]** 대화 상자, **[!UICONTROL 공통]** 탭, **[!UICONTROL 고급 설정]** 제목, **[!UICONTROL 시간 제한]** 필드, 값 입력 `18000` 분 (5시간). 기본값은 입니다 `3600` 분 (1시간).
+1. 다음에서 **[!UICONTROL 단계 속성]** 대화 상자, **[!UICONTROL 공통]** 탭, **[!UICONTROL 고급 설정]** 제목, **[!UICONTROL 시간 제한]** 필드, 값 입력 `18000` 초(5시간). 기본값은 입니다 `3600` 초(1시간).
 1. 선택 **[!UICONTROL 확인]**.
 1. 선택 **[!UICONTROL 동기화]**.
 1. 에 대해 14-21단계를 반복합니다. **[!UICONTROL DAM 자산 업데이트]** 워크플로 모델 및 **[!UICONTROL Dynamic Media 재처리]** 워크플로우 모델.
@@ -356,6 +360,7 @@ Dynamic Media 색상 관리를 사용하면 올바른 에셋에 색상을 지정
 다음을 참조하십시오 [이미지 사전 설정 구성](/help/assets/managing-image-presets.md).
 
 >[!NOTE]
+>
 기본적으로 를 선택하면 15개의 렌디션이 표시됩니다 **[!UICONTROL 표현물]** 을 선택할 때 15개의 뷰어 사전 설정 **[!UICONTROL 뷰어]** (자산의 세부 사항 보기에서) You can increase this limit. 다음을 참조하십시오 [표시되는 이미지 사전 설정 수 늘리기](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수 늘리기](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### 지원되는 형식의 MIME 유형 편집 {#editing-mime-types-for-supported-formats}
@@ -474,6 +479,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
    다음을 선택할 수 있습니다. **[!UICONTROL 코드 보기]** 양식 선택과 함께 정규 표현식 값 빌드를 보려면 확인란을 선택합니다. 양식 보기에서 어떤 이유로든 제한하게 되는 경우 이러한 값을 입력하거나 변경하여 명명 규칙의 요소를 정의할 수 있습니다. 값을 양식 보기에서 구문 분석할 수 없으면 양식 필드가 비활성화됩니다.
 
    >[!NOTE]
+   >
    비활성화한 양식 필드는 정규식이 올바른지 확인하지 않습니다. 결과 라인 뒤에 각 요소에 대해 작성하고 있는 정규 표현식의 결과가 표시됩니다. 전체 정규 표현식은 페이지 하단에 표시됩니다.
 
 1. 필요에 따라 각 요소를 확장하고 사용할 이름 지정 규칙을 입력합니다.
@@ -584,7 +590,7 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
    `\w+-(\d+)-\w+`
 
-   열 정규 표현식의 경우 다음과 같이 표시될 수 있습니다.
+   열 정규 표현식은 다음과 같이 표시될 수 있습니다.
 
    `\w+-\w+-C([0-9]+)`
 
@@ -595,6 +601,7 @@ When the Spin Set is uploaded and published, you would activate the name of the 
    위의 샘플은 데모용입니다. 필요에 맞게 원하는 대로 정규 표현식을 만들 수 있습니다.
 
    >[!NOTE]
+   >
    행 및 열 정규 표현식의 조합으로 다차원 회전 집합 배열 내에서 에셋의 위치를 결정할 수 없는 경우 에셋이 집합에 추가되지 않습니다. 오류도 기록됩니다.
 
 1. 이름 지정 및 생성 규칙 설정의 경우 에셋 이름 지정 규칙에서 정의한 기본 이름에 접미사 또는 접두어를 지정합니다.
@@ -650,6 +657,7 @@ Granite Transit Workflow 큐는 **[!UICONTROL DAM 자산 업데이트]** 워크�
 1. 다음으로 이동 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 및 검색 **대기열: Granite Transient 워크플로 대기열**.
 
    >[!NOTE]
+   >
    OSGi PID가 동적으로 생성되므로 직접 URL 대신 텍스트 검색이 필요합니다.
 
 1. 다음에서 **[!UICONTROL 최대 병렬 작업]** 필드에서 숫자를 원하는 값으로 변경합니다.
@@ -673,6 +681,7 @@ Granite Workflow 큐는 임시 워크플로우에 사용됩니다. Dynamic Media
 1. 다음으로 이동 `https://<server>/system/console/configMgr` 및 검색 **대기열: Granite 워크플로우 대기열**.
 
    >[!NOTE]
+   >
    OSGi PID가 동적으로 생성되므로 직접 URL 대신 텍스트 검색이 필요합니다.
 
 1. 다음에서 **[!UICONTROL 최대 병렬 작업]** 필드에서 숫자를 원하는 값으로 변경합니다.
@@ -714,12 +723,13 @@ Dynamic Media이 아닌 배포에서는 다음을 복제할 수 있습니다 *�
 
 이미징에 Dynamic Media을 사용하거나, 비디오에 사용하거나, 두 가지 모두를 사용하는 경우 Adobe이 제공하는 기본 필터를 그대로 사용할 수 있습니다. 다음 필터는 기본적으로 활성화되어 있습니다.
 
-|  | 필터 | MIME 유형 | 렌디션 |
+|   | 필터 | MIME 유형 | 렌디션 |
 | --- | --- | --- | --- |
 | Dynamic Media 이미지 게재 | filter-image<br>필터 세트 | 다음으로 시작 **image/**<br>&#x200B;다음 포함 **응용 프로그램/** 다음으로 종료 **set**. | 기본 제공되는 &quot;filter-images&quot;(대화형 이미지를 포함한 단일 이미지 자산에 적용) 및 &quot;filter-sets&quot;(스핀 세트, 이미지 세트, 혼합 미디어 세트 및 회전 메뉴 세트에 적용)는 다음과 같습니다.<br>· 원본 이미지 및 정적 이미지 표현물을 복제하지 마십시오. |
 | Dynamic Media 비디오 게재 | filter-video | 다음으로 시작 **video/** | 기본 제공되는 &quot;비디오 필터링&quot;은<br>· 원본 비디오 및 정적 썸네일 표현물을 복제하지 마십시오. |
 
 >[!NOTE]
+>
 필터는 MIME 유형에 적용되며 경로별로 지정할 수 없습니다.
 
 #### 복제를 위한 자산 필터 사용자 지정 {#customizing-asset-filters-for-replication}
