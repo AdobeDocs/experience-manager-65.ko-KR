@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: f11bb43d914a43431cab408ca77690b6ba528a06
+source-git-commit: d0768679182567cc7cd618adaa78b6518f902f7c
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 5%
@@ -732,7 +732,7 @@ JSON에서 이벤트를 사용하는 몇 가지 예는 초기화 이벤트에서
 
 ## 스키마 호환 데이터 활성화 {#enablig-schema-compliant-data}
 
-적응형 양식을 활성화하여 양식 제출 시 스키마 호환 데이터를 생성하려면 다음 단계를 수행하십시오.
+양식 제출 시 모든 JSON 스키마 기반 적응형 Forms이 스키마 호환 데이터를 생성할 수 있도록 하려면 다음 단계를 따르십시오.
 
 1. 다음 위치에서 Experience Manager 웹 콘솔로 이동 `https://server:host/system/console/configMgr`.
 1. 찾기 **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**.
