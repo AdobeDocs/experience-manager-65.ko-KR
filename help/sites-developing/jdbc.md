@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 061af6f3318d68b50c5f606ad50db7a39da0f4fd
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 * POM에서 패키지가 선택 사항임을 나타냅니다. JDBC 연결에 패키지 멤버가 실제로 필요하지 않은 경우 이 해결 방법을 사용합니다. Import-Package 요소를 사용하여 다음 예제와 같이 선택적 패키지를 나타냅니다.
 
-   `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
+  `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
 * 패키지를 내보내는 OSGi 번들의 패키지가 포함된 JAR 파일을 래핑하고 번들을 배포합니다. 코드 실행 중에 패키지 멤버가 필요한 경우 이 솔루션을 사용하십시오.
 
 소스 코드에 대한 지식을 통해 사용할 솔루션을 결정할 수 있습니다. 솔루션을 시도하고 테스트를 수행하여 솔루션의 유효성을 검사할 수도 있습니다.
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 다음 링크를 클릭하면 인기 있는 일부 데이터베이스 제품의 다운로드 페이지가 열립니다.
 
-* [Microsoft® SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
+* [Microsoft® SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 * [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 * [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
@@ -170,6 +170,7 @@ Java™ 코드에서 DataSourcePool 서비스를 사용하여 `javax.sql.DataSou
 >[!NOTE]
 >
 >데이터 소스를 찾을 수 없기 때문에 getDataSource 메서드가 예외를 throw하는 경우 연결 풀 서비스 구성이 올바른지 확인하십시오. 속성 이름, 값 및 데이터 유형을 확인합니다.
+>
 
 <!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]

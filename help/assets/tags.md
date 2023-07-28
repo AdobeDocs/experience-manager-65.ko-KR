@@ -10,9 +10,9 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: cd797b1a5edd05715761f5914ebc64fdb64745af
+source-git-commit: 04941e17054951bcf6264da957d951a5d1107896
 workflow-type: tm+mt
-source-wordcount: '6631'
+source-wordcount: '6622'
 ht-degree: 7%
 
 ---
@@ -36,7 +36,7 @@ Adobe 확장 또는 타사 확장에 대한 자세한 내용은 [Adobe 확장](h
 * Dynamic Media 뷰어에 대한 Experience Platform 태그 통합이 Experience Manager 작성자 노드에서 작동하지 않습니다. WCM 페이지는 게시될 때까지 추적할 수 없습니다.
 * Dynamic Media 뷰어에 대한 Experience Platform 태그 통합은 자산 세부 사항 페이지의 &quot;URL&quot; 단추를 사용하여 뷰어 URL을 가져오는 &quot;팝업&quot; 작업 모드에 대해서는 지원되지 않습니다.
 * Experience Platform 태그 통합은 기존 뷰어 Analytics 통합과 동시에 사용할 수 없습니다(방법: `config2=` 매개 변수)를 참조하십시오.
-* 비디오 추적에 대한 지원은에 설명된 대로 &quot;코어 재생&quot; 추적으로만 제한됩니다 [추적 개요](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). 특히 QoS, 광고, 챕터/세그먼트 또는 오류 추적이 지원되지 않습니다.
+* 비디오 추적에 대한 지원은에 설명된 대로 &quot;코어 재생&quot; 추적으로만 제한됩니다 [추적 개요](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en). 특히 QoS, 광고, 챕터/세그먼트 또는 오류 추적이 지원되지 않습니다.
 * 데이터 요소에 대한 저장 유지 시간 구성은 데이터 요소가 *Dynamic Media 뷰어* 확장명. 저장소 기간은 다음으로 설정되어야 합니다. **[!UICONTROL 없음]**.
 
 ### 통합에 대한 사용 사례 {#use-cases-for-the-integration}
@@ -133,7 +133,7 @@ Experience Cloud 계정이 Adobe Analytics for Audio and Video 사용을 구독�
 
 다음을 참조하십시오 [확장 설치 및 설정](#installing-and-setup-of-extensions).
 
-현재에 설명된 대로 비디오 추적에 대한 지원은 &quot;코어 재생&quot; 추적으로만 제한됩니다 [추적 개요](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). 특히 QoS, 광고, 챕터/세그먼트 또는 오류 추적이 지원되지 않습니다.
+현재에 설명된 대로 비디오 추적에 대한 지원은 &quot;코어 재생&quot; 추적으로만 제한됩니다 [추적 개요](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en). 특히 QoS, 광고, 챕터/세그먼트 또는 오류 추적이 지원되지 않습니다.
 
 ## Dynamic Media 뷰어 확장 사용 {#using-the-dynamic-media-viewers-extension}
 
@@ -301,7 +301,7 @@ For example, referencing `%event.detail.dm.LOAD.asset%` returns the correct asse
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -598,7 +598,7 @@ Experience Platform 태그 구성(속성, 확장, 규칙 및 설정된 데이터
 
 Experience Platform 태그에는 잠재적으로 여러 개발 환경, 하나의 스테이징 환경 및 하나의 프로덕션 환경이 있을 수 있습니다. 기본적으로 Experience Manager의 Experience Platform 태그 클라우드 구성 은 Experience Manager 작성자 노드를 Experience Platform 태그의 스테이지 환경으로 지정합니다. Experience Manager 게시 노드는 Experience Platform 태그의 프로덕션 환경을 가리킵니다. 즉, 기본 Experience Manager 설정을 사용하여 Experience Platform 태그 라이브러리를 스테이징 환경에 게시해야 합니다. 이렇게 하면 Experience Manager 작성자에서 사용할 수 있습니다. 그런 다음 Experience Manager 게시에서 사용할 수 있도록 프로덕션 환경에 게시할 수 있습니다.
 
-다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
+다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
 
 라이브러리 게시에는 다음 두 단계가 포함됩니다.
 
@@ -756,7 +756,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
    * **[!UICONTROL 제목]** - 설명 계정 제목을 입력합니다.
    * **[!UICONTROL 인증 서버]** - 이전에 연 통합 세부 정보 페이지로 돌아갑니다. 다음 항목 선택 **[!UICONTROL JWT]** 탭. 아래 강조 표시된 대로 경로 없이 서버 이름을 복사합니다.
 
-(서버 이름은 예제일 뿐입니다)   Return to the **[!UICONTROL Account]** page, then paste the name into the respective field.
+   Return to the **[!UICONTROL Account]** page, then paste the name into the respective field.
 예를 들어, `https://ims-na1.adobelogin.com/`
 (서버 이름은 예제일 뿐입니다)
 
@@ -816,6 +816,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
    * **[!UICONTROL 회사]** - 출처: **[!UICONTROL 회사]** 드롭다운 목록에서 Experience Cloud 회사를 선택합니다. 목록이 자동으로 채워집니다.
 
    * **[!UICONTROL 속성]** - 속성 드롭다운 목록에서 이전에 만든 Experience Platform 태그 속성을 선택합니다. 목록이 자동으로 채워집니다.
+
    모든 필드를 완료한 후 **[!UICONTROL 일반]** 페이지는 다음과 유사합니다.
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)

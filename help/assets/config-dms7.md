@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 48540664fa80ac7ecc94a2d9dc56682ceaf67206
+source-git-commit: 78842fb50d5aa5e5c22801389713cb3c69cac4bf
 workflow-type: tm+mt
-source-wordcount: '6491'
+source-wordcount: '6489'
 ht-degree: 3%
 
 ---
@@ -236,7 +236,7 @@ AEM에서 Dynamic Media - Scene7 모드를 실행하면 현재 전달됩니다. 
 
 1. 다음에서 **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** 페이지에서 다음 두 가지 설정에 대한 확인란을 선택합니다.
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - 활성화되면 이 설정은 저장할 120초 또는 2분(기본값) 동안 권한 결과를 캐시합니다.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - 활성화되면 이 설정은 저장할 120초(2분)(기본값) 동안 권한 결과를 캐시합니다.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - 활성화되면 이 설정은 Dynamic Media 이미지 서버를 통해 에셋을 미리 보는 동안 사용자의 액세스를 확인합니다.
 
    ![Dynamic Media - Scene7 모드에서 액세스 제어 목록 설정 활성화](/help/assets/assets-dm/acl.png)
@@ -703,7 +703,7 @@ Scene7 업로드 연결 설정은 Experience Manager 에셋을 Dynamic Media Cla
 
    다음 **[!UICONTROL 연결 수]** 설정은 Dynamic Media 업로드에 대한 Experience Manager에 허용되는 최대 HTTP 연결 수를 제어합니다. 일반적으로 사전 정의된 값인 10개로 충분합니다.
 
-   다음 **[!UICONTROL 활성 작업 시간 초과]** 설정은 업로드된 Dynamic Media 에셋이 게재 서버에 게시되는 대기 시간을 결정합니다. 이 값은 기본적으로 2100초 또는 35분입니다.
+   다음 **[!UICONTROL 활성 작업 시간 초과]** 설정은 업로드된 Dynamic Media 에셋이 게재 서버에 게시되는 대기 시간을 결정합니다. 이 값은 기본적으로 2100초(35분)입니다.
 
    대부분의 사용 사례에서는 2100으로 설정하면 충분합니다.
 
