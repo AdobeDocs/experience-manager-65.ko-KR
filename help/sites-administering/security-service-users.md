@@ -7,12 +7,13 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: f317783f3320e3987c7468aa0b2471e525b0387a
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
+
 
 # Adobe Experience Manager(AEM)의 서비스 사용자 {#service-users-in-aem}
 
@@ -79,7 +80,12 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 
 ## 서비스 사용자 및 매핑 {#service-users-and-mappings}
 
-위에서 언급한 내용이 실패하면 Sling 7은 번들-사용자 매핑과 두 개의 해당 API 방법을 구성할 수 있는 서비스 사용자 매핑 서비스를 제공합니다. ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` 및 ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` 구성된 사용자의 권한으로만 세션/리소스 확인자를 반환합니다. 이러한 방법에는 다음과 같은 특성이 있습니다.
+위에서 언급한 내용이 실패하면 Sling 7은 번들-사용자 매핑과 두 개의 해당 API 방법을 구성할 수 있는 서비스 사용자 매핑 서비스를 제공합니다.
+
+* [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
+* [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
+
+이 메서드는 구성된 사용자의 권한만 있는 세션/리소스 확인자를 반환합니다. 이러한 방법에는 다음과 같은 특성이 있습니다.
 
 * 사용자에게 매핑 서비스를 허용합니다.
 * 하위 서비스 사용자를 정의할 수 있습니다
@@ -145,7 +151,7 @@ AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용�
 
 ## ServiceUserMapper 구성에 구성 수정 사항 추가 {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-서비스에서 해당 시스템 사용자에 대한 매핑을 추가하려면 ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` 서비스. 이러한 모듈화를 유지하기 위해, 이러한 구성은 다음을 사용하여 제공될 수 있다. [Sling 수정 메커니즘](https://issues.apache.org/jira/browse/SLING-3578). 번들과 함께 이러한 구성을 설치하는 데 권장되는 방법은 [Sling 초기 컨텐츠 로드 중](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+서비스에서 해당 시스템 사용자에 대한 매핑을 추가하려면 [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) 서비스. 이러한 모듈화를 유지하기 위해, 이러한 구성은 다음을 사용하여 제공될 수 있다. [Sling 수정 메커니즘](https://issues.apache.org/jira/browse/SLING-3578). 번들과 함께 이러한 구성을 설치하는 데 권장되는 방법은 [Sling 초기 컨텐츠 로드 중](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. 번들의 src/main/resources 폴더 아래에 하위 폴더 SLING-INF/컨텐츠를 만듭니다
 1. 이 폴더에서 org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.revised라는 파일을 만듭니다.&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>모든 하위 서비스 사용자 매핑을 포함하여 공장 구성 콘텐츠가 포함된 .xml 예:
