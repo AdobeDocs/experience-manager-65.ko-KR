@@ -7,9 +7,9 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 578e9eb45ab996df841cb22e89d45fadfe90592b
 workflow-type: tm+mt
-source-wordcount: '3909'
+source-wordcount: '3950'
 ht-degree: 17%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 17%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -43,11 +43,11 @@ ht-degree: 17%
 * 사용자는 각 배포에서 적절한 사용자 그룹에 속합니다.
 * 대상 [!DNL Adobe Experience Manager] 배포 유형, 지원되는 기준 중 하나가 충족됩니다. [!DNL Experience Manager] 6.5 [!DNL Assets] 와 함께 작업 [!DNL Experience Manager] as a Cloud Service. 에서 이 기능이 작동하는 방식에 대한 자세한 정보 [!DNL Experience Manager] as a [!DNL Cloud Service], 참조 [Experience Manager의 연결된 자산 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS에서 | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
-   |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] AMS에서** | 지원됨 | 지원됨 | 지원됨 |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
+  | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS에서 | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
+  |---|---|---|---|
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] AMS에서** | 지원됨 | 지원됨 | 지원됨 |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
 ### 지원되는 파일 형식 {#mimetypes}
 
@@ -249,7 +249,7 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
 
 [!DNL Experience Manager] 의 에셋에 만료된 상태 시각적 표시기를 표시합니다. `Remote Assets Content Finder` 사이트 작성자가에서 에셋을 사용하지 못하도록 하려면 [!DNL Sites] 페이지를 가리키도록 업데이트하는 중입니다. 만료된 상태의 에셋을 사용하는 경우 [!DNL Sites] 페이지에서 에셋이 [!DNL Experience Manager] 게시 인스턴스.
 
-## FAQ {#frequently-asked-questions}
+## 자주 묻는 질문 {#frequently-asked-questions}
 
 +++**에서 사용할 수 있는 자산을 사용해야 하는 경우 연결된 자산을 구성해야 합니까? [!DNL Sites] 배포?**
 
@@ -315,6 +315,8 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
 
 * 자산 사용에 대한 통찰력을 얻으려면 다음을 구성하십시오. [Assets Insight](/help/assets/asset-insights.md) 에 대한 기능 [!DNL Sites] 인스턴스.
 
+* 원격 자산을 (으)로 끌 수 없습니다. [이미지 구성 요소 구성 대화 상자](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). 그러나 를 클릭하지 않고 원격 자산을 사이트 페이지의 이미지 구성 요소로 직접 드래그할 수 있습니다. **[!UICONTROL 구성]**.
+
 ### 권한 및 자산 관리 {#permissions-and-managing-assets}
 
 * 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager] 구성 요소는 변경되지 않은 상태로 자산을 유지한 채 편집합니다. 다른 편집 작업은 허용되지 않습니다.
@@ -352,18 +354,18 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
 
 * 로컬에서 원격 DAM 배포에 액세스할 수 없는 경우 [!DNL Sites] 배포, 사이트 간 쿠키가 허용되는지 확인 및 [동일 사이트 쿠키 지원](/help/sites-administering/same-site-cookie-support.md) 이(가) 구성되었습니다. 사이트 간 쿠키가 다음의 배포를 차단하는 경우 [!DNL Experience Manager] 인증할 수 없습니다. 예를 들어, [!DNL Google Chrome] 시크릿 모드에서 서드파티 쿠키를 차단할 수 있습니다. 에서 쿠키를 허용하려면 [!DNL Chrome] 브라우저에서 주소 표시줄의 &#39;눈&#39; 아이콘을 클릭하고 다음 위치로 이동합니다. **사이트가 작동하지 않음** > **차단됨**&#x200B;를 클릭하고 원격 DAM URL을 선택한 다음 로그인 토큰 쿠키를 허용합니다. 또는 을 참조하십시오. [서드파티 쿠키를 활성화하는 방법](https://support.google.com/chrome/answer/95647).
 
-   ![시크릿 모드의 Chrome 브라우저에서 쿠키 오류 발생](assets/chrome-cookies-incognito-dialog.png)
+  ![시크릿 모드의 Chrome 브라우저에서 쿠키 오류 발생](assets/chrome-cookies-incognito-dialog.png)
 
-* Experience Manager Sites as a Cloud Service Sites 배포에서 Adobe Managed Services 원격 DAM 배포에 액세스할 수 없는 경우 `aem_author.vhost` 파일, 사용 가능한 위치 `"/etc/httpd/conf.d/available_vhosts`, 원격 DAM의 경우 Dispatcher 구성에 다음 헤더를 포함합니다.
+* Experience Manager Sites as a Cloud Service 사이트 배포에서 Adobe Managed Services 원격 DAM 배포에 액세스할 수 없는 경우 `aem_author.vhost` 파일, 사용 가능한 위치 `"/etc/httpd/conf.d/available_vhosts`, 원격 DAM의 경우 Dispatcher 구성에 다음 헤더를 포함합니다.
 
-   ```xml
-   Header Set Access-Control-Allow-Origin <Local Sites instance host>
-   Header Set Access-Control-Allow-Credentials true
-   ```
+  ```xml
+  Header Set Access-Control-Allow-Origin <Local Sites instance host>
+  Header Set Access-Control-Allow-Credentials true
+  ```
 
 * 원격 참조가 검색되지 않고 오류 메시지가 표시되는 경우 다음을 확인하십시오. [!DNL Sites] 배포를 사용할 수 있으며, 네트워크 연결 문제가 있는지 확인합니다. 확인하려면 나중에 다시 시도하십시오. [!DNL Assets] 배포는 와 연결을 설정하려고 두 번 시도합니다. [!DNL Sites] 배포 후 오류를 보고합니다.
 
-   ![자산 원격 참조를 검색하지 못했습니다.](assets/reference-report-failure.png)
+  ![자산 원격 참조를 검색하지 못했습니다.](assets/reference-report-failure.png)
 
 * 쿠키가 Sites 서버에서 Google Chrome의 Assets 서버로 전송되지 않으면 Assets 연결이 HTTPS를 통해 전송되지 않기 때문입니다. Assets 인스턴스에서 HTTPS를 사용하지 않는 경우 `SameSite=None` assets 서버로 인증한 후에는 응답에 헤더를 추가할 수 없습니다.
 
