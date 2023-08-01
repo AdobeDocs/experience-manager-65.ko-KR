@@ -1,6 +1,6 @@
 ---
 title: 자산 미리보기
-description: Dynamic Media에서 에셋을 미리 보는 방법에 대해 알아봅니다.
+description: 이미지 사전 설정 및 뷰어 사전 설정을 적용하여 Dynamic Media에서 비디오 및 이미지와 같은 에셋을 미리 보는 방법에 대해 알아봅니다.
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1380'
 ht-degree: 1%
 
 ---

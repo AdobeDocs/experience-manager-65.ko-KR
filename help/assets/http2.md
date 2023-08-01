@@ -1,6 +1,6 @@
 ---
 title: 컨텐츠의 HTTP2 전달
-description: HTTP/2는 브라우저와 서버의 통신 방식을 향상시켜 필요한 처리 능력을 줄이면서 정보를 더 빠르게 전송할 수 있도록 합니다.
+description: HTTP/2가 브라우저와 서버의 통신 방식을 개선하여 필요한 처리 능력을 줄이면서 정보를 더 빠르게 전송하는 방법에 대해 알아봅니다.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,9 +10,9 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
-source-git-commit: a78de999992d4ab2fc63b5f7e796aa0d5527cb26
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '735'
 ht-degree: 3%
 
 ---
@@ -54,9 +54,9 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 * Adobe 번들로 제공되는 CDN(Content Delivery Network)을 Dynamic Media 라이선스의 일부로 사용합니다.
 * 전용(company-h.assetsadobe#.com이 아닌) 도메인을 사용합니다.
 
-   이미 전용 도메인이 있는 경우 고객 지원 Adobe을 통해 옵트인할 수 있습니다.
+  이미 전용 도메인이 있는 경우 고객 지원 Adobe을 통해 옵트인할 수 있습니다.
 
-   전용 도메인이 없는 경우 Adobe은 2018년에 HTTP/2로 전환하는 일정을 계획합니다.
+  전용 도메인이 없는 경우 Adobe은 2018년에 HTTP/2로 전환하는 일정을 계획합니다.
 
 ## 내 Dynamic Media 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
@@ -71,6 +71,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
       1. 리치 미디어 요청에 보안 HTTPS를 사용하는지 확인합니다.
       1. Adobe을 통해 CDN을 사용하고 있으며 직접적인 관계로 관리되고 있지 않은지 확인합니다.
       1. 전용 도메인을 사용하는지 확인합니다. Dynamic Media을 사용하는 경우 전용 도메인을 사용합니다.
+
    1. 고객 지원에서 요청이 제출된 순서에 따라 HTTP/2 고객 대기자 명단에 사용자를 추가합니다.
    1. Adobe이 요청을 처리할 준비가 되면 고객 지원 팀에서 연락하여 전환을 조정하고 목표 날짜를 설정합니다.
    1. 완료 후 알림이 전송되며 HTTP2로의 성공적인 전환을 확인할 수 있습니다.
@@ -78,7 +79,6 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
       브라우저는 이 사실을 기술하지 않으므로 확장을 다운로드해야 합니다.
 
       Firefox 및 Chrome의 경우 &quot;HTTP/2 및 SPDY 표시기&quot;라는 확장이 있습니다. 브라우저는 http/2만 안전하게 지원하므로, URL을 https로 호출하여 확인해야 합니다. http/2가 지원되는 경우 파란색 Flash 기호 및 헤더 &quot;X-Firefox-Spdy&quot; : &quot;h2&quot; 형식으로 확장되어 표시됩니다.
-
 
 ## 언제 HTTP/2로 전환할 수 있습니까? {#when-can-i-expect-to-be-transitioned-over-to-http}
 

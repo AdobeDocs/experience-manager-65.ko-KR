@@ -1,6 +1,6 @@
 ---
 title: 이미지 서버에 대한 Dynamic Media 게시 설정 구성
-description: Dynamic Media에서 게시를 설정하는 방법을 알아봅니다.
+description: 자산을 게시할 수 있도록 이미지 서버에 대해 Dynamic Media 게시 설정을 구성하는 방법에 대해 알아봅니다. 자산을 공개하기 전에 테스트할 수도 있습니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
-source-git-commit: 25fe5e240fd7404cb07375325e1f7b6a32923bfd
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '3494'
+source-wordcount: '3511'
 ht-degree: 3%
 
 ---
@@ -86,7 +86,7 @@ Dynamic Media Adobe 설정 페이지는 Dynamic Media 서버 게시에서 웹 �
 | **[!UICONTROL 응답 이미지 크기 제한]** | 필수.<br>새 Dynamic Media 계정의 경우 기본 크기 제한이 자동으로 너비로 설정됩니다. `3000` 및 높이: `3000` 두 가지 모두에 대해 **[!UICONTROL 이미지 제공]** 및 **[!UICONTROL 이미지 제공 테스트]**.<br>클라이언트로 반환되는 응답 이미지의 최대 너비 및 높이를 지정합니다. 요청으로 인해 너비, 높이 또는 둘 다 이 설정보다 큰 응답 이미지가 표시되면 서버에서 오류를 반환합니다.<br>참조: [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) Dynamic Media 뷰어 참조 안내서의 매개 변수. |
 | **[!UICONTROL 난독화 모드 요청]** | base64 인코딩을 유효한 요청에 적용하려는 경우 활성화합니다.<br>참조: [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) Dynamic Media 뷰어 참조 안내서의 매개 변수. |
 | **[!UICONTROL 잠금 모드 요청]** | 요청에 단순 해시 잠금을 포함하려면 활성화합니다.<br>참조: [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) Dynamic Media 뷰어 참조 안내서의 매개 변수. |
-| **[!UICONTROL 기본 요청 특성]** |  |
+| **[!UICONTROL 기본 요청 특성]** | |
 | **[!UICONTROL 기본 이미지 파일 접미사]** | 필수.<br>경로에 파일 접미사가 없는 경우 카탈로그 경로 및 마스크 경로 필드 값에 추가되는 기본 데이터 파일 확장명입니다.<br>참조: [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) Dynamic Media 뷰어 참조 안내서의 매개 변수. |
 | **[!UICONTROL 기본 글꼴 이름]** | 텍스트 레이어 요청에서 제공된 글꼴이 없는 경우 사용할 글꼴을 지정합니다. 지정하면 이 이미지 카탈로그의 글꼴 맵 또는 기본 카탈로그의 글꼴 맵에서 유효한 글꼴 이름 값이어야 합니다.<br>참조: [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) Dynamic Media 뷰어 참조 안내서의 매개 변수. |
 | **[!UICONTROL 기본 이미지]** | 요청한 이미지를 찾을 수 없는 요청에 대한 응답으로 반환하는 기본 이미지를 제공합니다.<br>참조: [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) Dynamic Media 뷰어 참조 안내서의 매개 변수.<br>**참고**: Dynamic Media Classic 계정에 이미 이 있는 경우 **[!UICONTROL 기본 이미지]** 선택됨(아래에 설정됨) **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션]** > **[!UICONTROL 게시 설정]**, 아래 **[!UICONTROL 기본 요청 속성]** group), Experience Manager의 Dynamic Media 계정이 Dynamic Media Classic에서 파일을 가져옵니다. 그런 다음 파일이 저장되고 이 필드에서 사용할 수 있게 됩니다. **[!UICONTROL Dynamic Media 게시 설정]** 처음으로 페이지를 만듭니다. |
@@ -192,13 +192,13 @@ Dynamic Media Adobe은 보안 테스트를 통해 스테이징 환경 또는 내
 * 인쇄용 웹
 * UGC(사용자 생성 컨텐츠) 서비스
 
-   >[!IMPORTANT]
-   >
-   >2023년 5월 1일부터 Dynamic Media의 UGC 에셋은 업로드일로부터 최대 60일까지 사용할 수 있습니다. 60일 이후에는 에셋이 제거됩니다.
+  >[!IMPORTANT]
+  >
+  >2023년 5월 1일부터 Dynamic Media의 UGC 에셋은 업로드일로부터 최대 60일까지 사용할 수 있습니다. 60일 이후에는 에셋이 제거됩니다.
 
-   >[!NOTE]
-   >
-   >Adobe Dynamic Media에서 신규 또는 기존 UGC 벡터 이미지 자산에 대한 지원은 2021년 9월 30일에 종료되었습니다.
+  >[!NOTE]
+  >
+  >Adobe Dynamic Media에서 신규 또는 기존 UGC 벡터 이미지 자산에 대한 지원은 2021년 9월 30일에 종료되었습니다.
 
 ### 보안 테스트 서비스 테스트 {#test-secure-testing-service}
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 문제 해결 - Scene7 모드
-description: Dynamic Media이 Scene7 모드에서 실행 중일 때 문제 해결
+description: Scene7 모드에서 실행 중일 때 Dynamic Media에서 설정, 구성 및 일반 문제를 해결하고 해결하는 방법에 대해 알아봅니다.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
-source-git-commit: 9c3df2491f99fe31e4b64b47442dd583af06974e
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1397'
 ht-degree: 1%
 
 ---
@@ -28,15 +28,15 @@ ht-degree: 1%
 다음을 수행하여 Dynamic Media이 제대로 설정되었는지 확인합니다.
 
 * 시작 명령은 `-r dynamicmedia_scene7` 실행 모드 인수입니다.
-* Adobe Experience Manager 6.4 CFP(누적 수정 팩)가 먼저 설치되었습니다 *다음 이전* 사용 가능한 모든 Dynamic Media 기능 팩.
+* 모든 Adobe Experience Manager 6.4 CFP(누적 수정 팩)가 먼저 설치되었습니다 *다음 이전* 사용 가능한 모든 Dynamic Media 기능 팩.
 * 선택적 기능 팩 18912이 설치되어 있습니다.
 
-   이 선택적 기능 팩은 FTP 지원용 또는 Dynamic Media Classic에서 Dynamic Media으로 자산을 마이그레이션하는 경우에 사용됩니다.
+  이 선택적 기능 팩은 FTP 지원용 또는 Dynamic Media Classic에서 Dynamic Media으로 자산을 마이그레이션하는 경우에 사용됩니다.
 
 * Cloud Services 사용자 인터페이스로 이동하여 프로비저닝된 계정이 **[!UICONTROL 사용 가능한 구성]**.
 * 다음을 확인합니다. `Dynamic Media Asset Activation (scene7)` 복제 에이전트가 활성화되었습니다.
 
-   이 복제 에이전트는 작성자의 에이전트에서 찾을 수 있습니다.
+  이 복제 에이전트는 작성자의 에이전트에서 찾을 수 있습니다.
 
 ## 일반(모든 에셋) {#general-all-assets}
 
@@ -69,7 +69,7 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Experience Manager에서 D
 
 기존 Dynamic Media 에셋(동일한 이름 및 위치)을 바꿀 때 두 에셋을 모두 유지하거나 버전을 대체/만들 수 있습니다.
 
-* 둘 다 유지하면 게시된 에셋 URL에 대해 고유한 이름의 에셋이 만들어집니다. 예를 들어, `image.jpg` 은(는) 원래 자산이며 `image1.jpg` 는 새로 업로드한 에셋입니다.
+* 둘 다 유지하면 게시된 에셋 URL에 대해 고유한 이름의 에셋이 만들어집니다. 예를 들어, `image.jpg` 은(는) 원본 자산이며 `image1.jpg` 는 새로 업로드한 에셋입니다.
 
 * Dynamic Media - Scene7 모드 전달에서는 버전 만들기가 지원되지 않습니다. 새 버전은 게재의 기존 에셋을 대체합니다.
 
@@ -244,8 +244,7 @@ CRXDE Lite에서 다음을 수행합니다.
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-예: 
-`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+예: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **솔루션**
 

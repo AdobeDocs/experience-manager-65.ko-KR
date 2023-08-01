@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media Assets 게시
-description: Dynamic Media 에셋을 게시하는 방법
+description: 이러한 에셋의 HTTP/2 전달을 비롯한 비디오 및 이미지와 같은 Dynamic Media 에셋을 게시하는 방법을 알아봅니다.
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,9 +10,9 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publishing
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '474'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,6 @@ ht-degree: 4%
 >* URL을 사용하려면 자산을 게시해야 합니다. 에셋이 게시되지 않은 경우 URL을 복사하고 웹 브라우저에 붙여넣을 수 없습니다.
 >* 라이브 게재를 위해서는 이미지 사전 설정 및 뷰어 사전 설정을 활성화하고 게시해야 합니다.
 >
-
 
 집합 또는 에셋 게시에 대한 자세한 내용은 [자산 게시](manage-assets.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 자산 전송
-description: Dynamic Media 에셋 제공 방법 알아보기
+description: 비디오 및 이미지와 같은 Dynamic Media 자산을 웹 페이지에 전달하는 방법을 알아봅니다.
 uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,10 +11,10 @@ docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 23%
+source-wordcount: '319'
+ht-degree: 22%
 
 ---
 
