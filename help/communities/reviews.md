@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 3%
@@ -213,7 +213,7 @@ ht-degree: 3%
 
 * **[!UICONTROL 주석 시스템 리소스 유형]**
 
-  확장의 resourceType으로 이동 `comments`/apps의 구성 요소(댓글 시스템). 페이지 템플릿이 아니면 비워 둡니다. [동적으로 포함](scf.md#add-or-include-a-communities-component) 페이지에 리소스(댓글 노드)로 추가되지 않고 기본 스크립트의 댓글 시스템. 자세한 내용은 다음을 참조하십시오. [{{include}} 도우미](handlebars-helpers.md#include).
+  확장의 resourceType으로 이동 `comments`/apps의 구성 요소(댓글 시스템). 페이지 템플릿이 아니면 비워 둡니다. [동적으로 포함](scf.md#add-or-include-a-communities-component) 페이지에 리소스(댓글 노드)로 추가되지 않고 기본 스크립트의 댓글 시스템. 자세한 내용은 다음을 참조하십시오. [`{{include}}` 도우미](handlebars-helpers.md#include).
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 

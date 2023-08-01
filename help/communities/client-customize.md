@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 0%
@@ -57,11 +57,11 @@ ht-degree: 0%
 
 구성 요소에 대한 HBS 스크립트는 이 기능을 구현하는 JavaScript 개체, 모델 및 뷰에 바인딩되어야 합니다.
 
-값 `data-scf-component` 속성은 다음과 같은 기본값일 수 있습니다. **`social/tally/components/hbs/rating`**&#x200B;또는 과 같은 사용자 지정된 기능에 대한 확장(사용자 지정된) 구성 요소 **weretail/components/hbs/rating**.
+값 `data-scf-component` 속성은 다음과 같은 기본값일 수 있습니다. **`social/tally/components/hbs/rating`**&#x200B;또는 과 같은 사용자 지정된 기능을 위한 확장(사용자 지정된) 구성 요소 **weretail/components/hbs/rating**.
 
 구성 요소를 바인딩하려면 전체 구성 요소 스크립트를 &lt;div> 다음 속성을 가진 요소:
 
-* `data-component-id`=&quot;{{id}}&quot;
+* `data-component-id`=&quot;`{{id}}`&quot;
 
   은 컨텍스트에서 id 속성으로 확인됩니다.
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 예: 부터 `/apps/weretail/components/hbs/rating/rating.hbs`:
 
 ```xml
-<div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
+<div class="we-Rating" data-component-id="`{{id}}`" data-scf-component="weretail/components/hbs/rating">
 
      <!-- HTML with HBS accessing the rating component -->
 
