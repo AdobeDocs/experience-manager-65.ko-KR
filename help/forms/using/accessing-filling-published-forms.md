@@ -1,18 +1,14 @@
 ---
 title: 게시된 양식에 액세스 및 채우기
-seo-title: Accessing and filling published forms
 description: Forms 포털은 웹 개발자에게 Adobe Experience Manager(AEM)를 사용하여 작성된 웹 사이트에서 양식 포털을 만들고 사용자 정의할 수 있는 구성 요소를 제공합니다.
-seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
-uuid: 44731604-5d97-46fa-baa9-0c020c634fa7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -37,7 +33,7 @@ Roms 포털의 검색 및 목록 구성 요소는 AEM 서버의 게시 인스턴
 
 샘플 Forms 포털 페이지
 
-### 검색 및 목록 작성자 {#search-and-lister}
+### 검색 및 리스터 {#search-and-lister}
 
 검색 및 목록 구성 요소를 사용하여 양식 포털에 다음 기능을 추가할 수 있습니다.
 
@@ -76,7 +72,7 @@ Roms 포털의 검색 및 목록 구성 요소는 AEM 서버의 게시 인스턴
 
 #### 초안 및 제출 {#drafts-and-submission}
 
-사용자는 저장 버튼을 클릭하여 양식의 초안을 저장할 수 있습니다. 이렇게 하면 사용자가 양식을 제출하기 전에 일정 기간 동안 양식을 작업할 수 있습니다.
+사용자는 다음을 클릭하여 양식의 초안을 선택적으로 저장할 수 있습니다. **저장**. 이렇게 하면 사용자가 양식을 제출하기 전에 일정 기간 동안 양식을 작업할 수 있습니다.
 
 양식에 입력된 데이터(첨부 파일 포함)는 서버에 초안으로 저장됩니다. 양식의 초안은 여러 번 저장할 수 있습니다. 저장된 양식은 페이지의 초안 및 제출 구성 요소의 초안 탭에 표시됩니다.
 
@@ -92,9 +88,9 @@ Roms 포털의 검색 및 목록 구성 요소는 AEM 서버의 게시 인스턴
 
 ## 제출된 양식 데이터를 사용하여 새 양식 시작 {#start-a-new-form-using-submitted-form-data}
 
-자주 작성하여 제출하셔야 하는 서류가 있습니다. 예를 들어, 매년 개별세 신고서를 제출하는 양식이 있다. 이러한 경우 양식을 작성할 때마다 일부 정보가 변경되지만 개인 및 가족 세부 정보 등은 변경되지 않습니다. 그러나 전체 양식을 처음부터 다시 작성해야 합니다.
+자주 작성하여 제출해야 하는 서류가 있습니다. 예를 들어, 매년 개별세 신고서를 제출하는 양식이 있다. 이러한 경우 양식을 작성할 때마다 일부 정보가 변경되지만 개인 및 가족 세부 정보 등은 변경되지 않습니다. 그러나 전체 양식을 처음부터 다시 작성해야 합니다.
 
-AEM Forms을 사용하면 양식 채우기 경험을 최적화하고 양식을 다시 작성하고 제출하는 시간을 크게 줄일 수 있습니다. 최종 사용자는 제출된 양식의 데이터를 사용하여 새 양식을 시작할 수 있습니다. 이 기능은 [초안 및 제출 구성 요소](../../forms/using/draft-submission-component.md). Forms 포털 페이지에 초안 및 제출 구성 요소를 추가하고 게시하면 최종 사용자는 제출된 Forms 및 초안 Forms 탭에서 제출된 양식의 데이터를 사용하여 새 양식을 시작할 수 있는 옵션을 찾을 수 있습니다. 다음 이미지는 해당 옵션을 강조 표시합니다.
+AEM Forms을 사용하면 양식 채우기 경험을 최적화하고 양식을 다시 작성하고 제출하는 시간을 크게 줄일 수 있습니다. 최종 사용자는 제출된 양식의 데이터를 사용하여 새 양식을 시작할 수 있습니다. 이 기능은 [초안 및 제출 구성 요소](../../forms/using/draft-submission-component.md). Forms 포털 페이지에 초안 및 제출 구성 요소를 추가하고 게시하면 최종 사용자에게 제출된 양식의 데이터를 사용하여 새 양식을 시작할 수 있는 옵션이 제출된 Forms 및 초안 Forms 탭에 표시됩니다. 다음 이미지는 해당 옵션을 강조 표시합니다.
 
 ![새 양식 시작](assets/start-a-new-form.png)
 

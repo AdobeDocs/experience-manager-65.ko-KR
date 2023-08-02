@@ -1,20 +1,16 @@
 ---
 title: DSRP - 관계형 데이터베이스 저장소 리소스 제공자
-seo-title: DSRP - Relational Database Storage Resource Provider
 description: 관계형 데이터베이스를 공통 저장소로 사용하도록 AEM Communities 설정
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 2%
+source-wordcount: '617'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +29,7 @@ AEM Communities이 관계형 데이터베이스를 공통 저장소로 사용하
 
 >[!NOTE]
 >
->이제 기본 스토리지 구성이 conf path(`/conf/global/settings/community/srpc/defaultconfiguration`etc 경로 ( ) 대신`/etc/socialconfig/srpc/defaultconfiguration`). 다음을 따르는 것이 좋습니다. [마이그레이션 단계](#zerodt-migration-steps) defaultsrp가 예상대로 작동하도록 합니다.
+>이제 기본 스토리지 구성이 conf path(`/conf/global/settings/community/srpc/defaultconfiguration`대신 ) `etc` 경로 (`/etc/socialconfig/srpc/defaultconfiguration`). 다음을 따르는 것이 좋습니다. [마이그레이션 단계](#zerodt-migration-steps) defaultsrp가 예상대로 작동하도록 합니다.
 
 ## 관계형 데이터베이스 구성 {#relational-database-configuration}
 
@@ -67,53 +63,55 @@ Oak 컬렉션과 SRP 컬렉션을 모두 집중적으로 사용하는 경우 성
    * 선택 **[!UICONTROL 스토리지 구성]**
 
       * 예를 들어 결과 위치는 다음과 같습니다. [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
-      >[!NOTE]
-      >
-      >이제 기본 스토리지 구성이 conf path(`/conf/global/settings/community/srpc/defaultconfiguration`etc 경로 ( ) 대신`/etc/socialconfig/srpc/defaultconfiguration`). 다음을 따르는 것이 좋습니다. [마이그레이션 단계](#zerodt-migration-steps) defaultsrp가 예상대로 작동하도록 합니다.
-   ![dsrp-config](assets/dsrp-config.png)
+
+     >[!NOTE]
+     >
+     >이제 기본 스토리지 구성이 conf path(`/conf/global/settings/community/srpc/defaultconfiguration`대신 ) `etc` 경로 (`/etc/socialconfig/srpc/defaultconfiguration`). 다음을 따르는 것이 좋습니다. [마이그레이션 단계](#zerodt-migration-steps) defaultsrp가 예상대로 작동하도록 합니다.
+
+  ![dsrp-config](assets/dsrp-config.png)
 
 * 선택 **[!UICONTROL 데이터베이스 저장소 리소스 제공자(DSRP)]**
 * **데이터베이스 구성**
 
    * **[!UICONTROL JDBC 데이터 소스 이름]**
 
-      MySQL 연결에 지정된 이름은 입력한 것과 동일해야 합니다. [JDBC OSGi 구성](dsrp-mysql.md#configurejdbcconnections)
+     MySQL 연결에 지정된 이름은 입력한 것과 동일해야 합니다. [JDBC OSGi 구성](dsrp-mysql.md#configurejdbcconnections)
 
-      *기본값*: 커뮤니티
+     *기본값*: 커뮤니티
 
    * **[!UICONTROL 데이터베이스 이름]**
 
-      의 스키마에 지정된 이름 [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
+     의 스키마에 지정된 이름 [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
 
-      *기본값*: 커뮤니티
+     *기본값*: 커뮤니티
 
 * **SolrConfiguration**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper 호스트**
+   * **[](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)Zookeeper 호스트**
 
-      내부 ZooKeeper를 사용하여 Solr을 실행하는 경우 이 값을 비워 둡니다. Else, 실행 시 [SolrCloud 모드](solr.md#solrcloud-mode) 외부 ZooKeeper를 사용하여 이 값을 ZooKeeper의 URI로 설정합니다. 예: *my.server.com:80*
+     내부 ZooKeeper를 사용하여 Solr을 실행하는 경우 이 값을 비워 둡니다. Else, 실행 시 [SolrCloud 모드](solr.md#solrcloud-mode) 외부 ZooKeeper를 사용하여 이 값을 ZooKeeper의 URI로 설정합니다. 예: *my.server.com:80*
 
-      *기본값*: *&lt;blank>*
+     *기본값*: *&lt;blank>*
 
    * **[!UICONTROL Solr URL]**
 
-      *기본값*: https://127.0.0.1:8983/solr/
+     *기본값*: https://127.0.0.1:8983/solr/
 
    * **[!UICONTROL Solr 컬렉션]**
 
-      *기본값*: collection1
+     *기본값*: collection1
 
-* 선택 **[!UICONTROL 제출]**.
+* **[!UICONTROL 제출]**&#x200B;을 선택합니다.
 
 ### defaultsrp에 대한 다운타임 없는 마이그레이션 단계 {#zerodt-migration-steps}
 
-다음 단계에 따라 defaultsrp 페이지가 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) 예상대로 작동합니다.
+defaultsrp 페이지를 확인하려면 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) 예상대로 작동하려면 다음 단계를 수행합니다.
 
 1. 경로 이름 바꾸기 `/etc/socialconfig` 끝 `/etc/socialconfig_old`시스템 구성이 jsrp(기본값)로 대체됩니다.
 1. defaultsrp 페이지로 이동 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp): 여기서 jsrp는 구성됩니다. 다음을 클릭합니다. **[!UICONTROL 제출]** 새 기본 구성 노드가 다음 위치에 생성되도록 하는 버튼 `/conf/global/settings/community/srpc`.
 1. 생성된 기본 구성 삭제 `/conf/global/settings/community/srpc/defaultconfiguration`.
 1. 이전 구성 복사 `/etc/socialconfig_old/srpc/defaultconfiguration` 삭제된 노드 대신(`/conf/global/settings/community/srpc/defaultconfiguration`)을 클릭하여 제품에서 사용할 수 있습니다.
-1. 이전 etc 노드 삭제 `/etc/socialconfig_old`.
+1. 이전 항목 삭제 `etc` 노드 `/etc/socialconfig_old`.
 
 ## 구성 게시 {#publishing-the-configuration}
 
@@ -128,9 +126,9 @@ DSRP는 모든 작성자 및 게시 인스턴스에서 공통 저장소로 식�
    * **시작 경로**:
 
       * 다음으로 이동 `/etc/socialconfig/srpc/`
+
    * 확인 `Only Modified` 이(가) 선택되지 않았습니다.
    * 선택 **[!UICONTROL 활성화]**.
-
 
 ## 사용자 데이터 관리 {#managing-user-data}
 

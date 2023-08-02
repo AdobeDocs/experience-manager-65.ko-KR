@@ -2,9 +2,9 @@
 title: JEE Custom DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제
 description: JEE Custom DSC에서 AEM Forms을 사용하여 파일을 압축하고 압축 해제하는 방법에 대해 알아봅니다
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ## 전제 조건 지식 {#prerequisites}
 
-JEE 프로세스 관리, 기본 Java 프로그래밍 및 사용자 지정 구성 요소 만들기에서 AEM Forms을 사용해 보십시오.
+JEE 프로세스 관리, 기본 Java™ 프로그래밍 및 사용자 지정 구성 요소 만들기에서 AEM Forms을 사용해 보십시오.
 
 **추가 필수 기타 제품**
 
-와 같은 Java 편집기 [Eclipse](https://www.eclipse.org/) 또는 [넷빈스](https://netbeans.apache.org/)
+다음과 같은 Java™ 편집기 [Eclipse](https://www.eclipse.org/) 또는 [넷빈스](https://netbeans.apache.org/)
 
 ## 사용자 수준 {#user-level}
 
@@ -187,7 +187,7 @@ public class ZIPService {
 
 ## 구성 요소 패키징 및 배포 {#packaging-deploying-component}
 
-1. Java 프로젝트를 컴파일하고 .JAR 파일을 만듭니다.
+1. Java™ 프로젝트를 컴파일하고 .JAR 파일을 만듭니다.
 1. Workbench를 통해 구성 요소(.JAR 파일)를 JEE on AEM Forms 런타임에 배포합니다.
 1. Workbench에서 서비스를 시작합니다(아래 그림 참조).
 
