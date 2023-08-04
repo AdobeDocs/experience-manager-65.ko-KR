@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 000ab7bc9a686b62fcfc122f9cf09129101ec9a8
 workflow-type: tm+mt
-source-wordcount: '4586'
+source-wordcount: '4738'
 ht-degree: 0%
 
 ---
@@ -103,6 +103,7 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 에서 활성화된 양식 템플릿을 사용하여 적응형 양식을 만들 수 있습니다 **구성 브라우저**. 양식 템플릿을 활성화하려면 다음을 참조하십시오. [적응형 양식 템플릿 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
 
 다른 작성자 컴퓨터에서 만든 적응형 양식 패키지에서 양식 템플릿을 업로드할 수도 있습니다. 양식 템플릿은 다음을 설치하여 사용할 수 있습니다. [aemforms-references-* 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko). 권장되는 몇 가지 모범 사례는 다음과 같습니다.
+
 * 다음 **nosamplecontent** 실행 모드는 작성자에게만 권장되며 게시 노드에는 권장되지 않습니다.
 * 적응형 양식, 테마, 템플릿 또는 클라우드 구성과 같은 에셋 작성은 구성된 게시 노드에 게시할 수 있는 작성자 노드에서만 수행됩니다.
 자세한 내용은 [양식 및 문서 게시 및 게시 취소](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
@@ -154,6 +155,39 @@ AEM Forms은 [규칙 편집기](/help/forms/using/rule-editor.md) 을 사용하�
 
 * 적응형 양식 작성자는 양식에서 비즈니스 논리를 작성하기 위해 JavaScript 코드를 작성해야 할 수 있습니다. JavaScript는 강력하고 효과적이지만 보안 기대치에 영향을 줄 수 있습니다. 따라서 양식 작성자가 신뢰할 수 있는 사용자인지, 양식을 프로덕션에 추가하기 전에 JavaScript 코드를 검토하고 승인할 수 있는 프로세스가 있는지 확인해야 합니다. 관리자는 역할 또는 기능에 따라 사용자 그룹에 대한 규칙 편집기 액세스를 제한할 수 있습니다. 다음을 참조하십시오 [사용자 그룹을 선택할 수 있는 규칙 편집기 액세스 권한 부여](/help/forms/using/rule-editor-access-user-groups.md).
 * 규칙에서 표현식을 사용하여 적응형 양식을 동적으로 만들 수 있습니다. 모든 표현식은 유효한 JavaScript 표현식이며 적응형 양식 스크립팅 모델 API를 사용합니다. 이 표현식은 특정 유형의 값을 반환합니다. 표현식과 관련 모범 사례에 대한 자세한 내용은 [적응형 양식 표현식](/help/forms/using/adaptive-form-expressions.md).
+
+* Adobe은 규칙 편집기로 규칙을 만들 때 비동기 작업보다 JavaScript 동기 작업을 사용하는 것이 좋습니다. 비동기 작업은 사용하지 않는 것이 좋습니다. 그러나 비동기 작업이 불가피한 상황에 처한 경우 JavaScript Closure 함수를 구현해야 합니다. 이렇게 하면 잠재적인 경합 조건으로부터 효과적으로 보호할 수 있으므로 규칙 구현이 최적의 성능을 제공하고 전체에서 안정성을 유지할 수 있습니다.
+
+  예를 들어 외부 API에서 데이터를 가져온 다음 해당 데이터를 기반으로 몇 가지 규칙을 적용해야 한다고 가정해 보겠습니다. 비동기 API 호출을 처리하고 데이터를 가져온 후 규칙이 적용되도록 클로저를 사용합니다. 다음은 샘플 코드입니다.
+
+  ```JavaScript
+       function fetchDataFromAPI(apiEndpoint, callback) {
+        // Simulate asynchronous API call with setTimeout
+        setTimeout(() => {
+          // Assuming the API call is successful, we receive some data
+          const data = {
+            someValue: 42,
+          };
+          // Invoke the callback with the fetched data
+          callback(data);
+        }, 2000); // Simulate a 2-second delay for the API call
+      }
+      // Rule implementation using Closure
+      function ruleImplementation(apiEndpoint) {
+        // Using a closure to handle the asynchronous API call and rule application
+        // say you have set this value in street field inside address panel
+        var streetField = address.street;
+        fetchDataFromAPI(apiEndpoint, (data) => {
+          streetField.value = data.someValue;
+        });
+      }
+      // Example usage of the rule implementation
+      const apiEndpoint = "https://example-api.com/data";
+      ruleImplementation(apiEndpoint);
+  ```
+
+  이 예에서는 `fetchDataFromAPI` 를 사용하여 비동기 API 호출 시뮬레이션 `setTimeout`. 데이터를 가져오면 제공된 콜백 함수를 호출하며, 이 함수는 후속 규칙 응용 프로그램을 처리하는 닫힘입니다. 다음 `ruleImplementation` 함수에는 규칙 논리가 포함되어 있습니다.
+
 
 ### 테마 작업 {#working-with-themes}
 
@@ -249,7 +283,7 @@ AEM Forms은 [규칙 편집기](/help/forms/using/rule-editor.md) 을 사용하�
 클라이언트에서의 유효성 검사를 우회하려는 시도와 데이터 제출 및 비즈니스 규칙 위반의 가능한 중단을 방지하기 위해 서버측 유효성 검사가 필요합니다. 서버측 유효성 검사는 필요한 클라이언트 라이브러리를 로드하여 서버에서 실행됩니다.
 
 * 적응형 양식의 표현식을 확인하기 위한 함수를 클라이언트 라이브러리에 포함하고 적응형 양식 컨테이너 대화 상자에서 클라이언트 라이브러리를 지정합니다. 자세한 내용은 [서버 측 유효성 재검사](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p).
-* 서버 측 유효성 검사가 양식 모델의 유효성을 검사합니다. 유효성 검사를 위해 별도의 클라이언트 라이브러리를 만들고 동일한 클라이언트 라이브러리에서 HTML 스타일링 및 DOM 조작과 같은 다른 항목과 혼합하지 않는 것이 좋습니다.
+* 서버측 유효성 검사는 양식 모델의 유효성을 검사합니다. 유효성 검사를 위해 별도의 클라이언트 라이브러리를 만들고 동일한 클라이언트 라이브러리에서 HTML 스타일링 및 DOM 조작과 같은 다른 항목과 혼합하지 않는 것이 좋습니다.
 
 ### 적응형 양식 현지화 {#localizing-adaptive-forms}
 
