@@ -12,14 +12,19 @@ discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 1%
+source-wordcount: '282'
+ht-degree: 6%
 
 ---
 
 # OSGi 그룹 및 권한의 AEM Forms{#aem-forms-on-osgi-groups-and-privileges}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
+| AEM 6.5 | 이 문서 |
 
 다음을 수행할 수 있습니다. [그룹 만들기](/help/sites-administering/user-group-ac-admin.md#group-administration) 및 정책 할당 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration) (을)를 AEM의 그룹에 추가합니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
 

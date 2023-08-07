@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Forms Guide
 description: 이 AEM 6.5 안내서를 사용하여 디지털 양식을 작성, 관리, 게시 및 업데이트합니다. 설치, 업그레이드 및 구성에 대한 도움말을 확인하고 적응형 양식 작성에 대해 알아봅니다.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | 이 문서 |
 
 
