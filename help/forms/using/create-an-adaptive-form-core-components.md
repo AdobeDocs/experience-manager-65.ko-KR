@@ -9,9 +9,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1730'
 ht-degree: 36%
 
 ---
@@ -174,10 +174,10 @@ ht-degree: 36%
 
 * [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)
 * [적응형 Forms 기반의 핵심 구성 요소에 대한 테마 만들기 또는 사용자 지정](create-or-customize-themes-for-adaptive-forms-core-components.md)
-* 적응형 Forms 기반의 핵심 구성 요소용 템플릿 만들기
+
 
 ## 참고 항목
 
 * [핵심 구성 요소 기반 적응형 양식 만들기](create-an-adaptive-form-core-components.md)
 * [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
+* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
