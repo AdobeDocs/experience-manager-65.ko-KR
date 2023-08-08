@@ -9,10 +9,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
+source-git-commit: d9abdc92c8c4fdb60c8aa827c57c0aa928fd6543
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 36%
+source-wordcount: '1796'
+ht-degree: 35%
 
 ---
 
@@ -43,15 +43,22 @@ ht-degree: 36%
 
 * **환경에 맞는 적응형 Forms 핵심 구성 요소 활성화**: AEM Archetype 프로젝트 버전 41 이상은 다음 경우에 필요합니다. [환경에 맞는 핵심 구성 요소 활성화](/help/forms/using/enable-adaptive-forms-core-components.md). 환경에 대한 핵심 구성 요소 활성화 시 **적응형 Forms(핵심 구성 요소)** 템플릿 및 캔버스 테마가 환경에 추가됩니다.
 
-* **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 또한 테마와 제출 액션을 정의하는 옵션이 제공됩니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다.
+* **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 또한 테마와 제출 액션을 정의하는 옵션이 제공됩니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다. 샘플을 배포할 수도 있습니다 [템플릿](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) 을 참조하십시오. 이렇게 하면 양식을 신속하게 만들 수 있습니다.
 
   >[!NOTE]
   >
   > 환경에 대해 **적응형 양식(핵심 구성 요소)** 템플릿이 없다면 [해당 환경에 대해 적응형 양식 핵심 구성 요소를 활성화합니다](/help/forms/using/enable-adaptive-forms-core-components.md). 환경에 대해 핵심 구성 요소를 활성화하면 **적응형 양식(핵심 구성 요소)** 템플릿이 해당 환경에 추가됩니다.
 
-* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다.  다음 `Canvas` 환경에 대해 핵심 구성 요소를 활성화하면 기본적으로 테마가 추가됩니다. 다음을 수행할 수도 있습니다. [표준 테마 다운로드 및 사용자 지정](create-or-customize-themes-for-adaptive-forms-core-components.md).
+* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다.  다음 `Canvas` 환경에 대해 핵심 구성 요소를 활성화하면 기본적으로 테마가 추가됩니다. 다음을 수행할 수 있습니다.  [표준 테마 다운로드 및 사용자 지정](create-or-customize-themes-for-adaptive-forms-core-components.md). 대상 **기본 제공** 배포할 수 있는 테마 [샘플](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) 테마를 환경에 추가합니다. 이를 통해 양식의 스타일을 시작하고 비즈니스 요구 사항에 따라 테마를 만들거나 맞춤화할 수 있는 기본 구조를 제공할 수 있습니다.
 
 * **권한**: 사용자를 [!DNL forms-users] 그룹에 추가합니다. [!DNL forms-users] 그룹의 멤버는 적응형 양식을 만들 수 있는 권한이 있습니다. 양식별 사용자 그룹에 대한 세부 목록은 [그룹 및 권한](forms-groups-privileges-tasks.md)을 참조하십시오.
+
+<!--
+>[!NOTE]
+>
+>
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
+-->
 
 ## 적응형 양식 만들기 {#create-an-adaptive-form}
 
