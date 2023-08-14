@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 1%
@@ -66,7 +66,7 @@ APNs를 사용하려면 **인증서** 파일(.cer 파일), 푸시 **개인 키**
 
 >[!NOTE]
 >
->Google은 GCM을 FCM(Firebase Cloud Messaging)이라는 유사한 서비스로 대체하고 있습니다. FCM에 대한 자세한 내용을 보려면 [여기](https://developers.google.com/cloud-messaging/faq).
+>Google은 GCM을 FCM(Firebase Cloud Messaging)이라는 유사한 서비스로 대체하고 있습니다. FCM에 대한 자세한 내용을 보려면 [여기](https://firebase.google.com/docs/cloud-messaging/).
 
 Google 페이지로 이동 [여기](https://developer.android.com/google/gcm/index.html) android™용 Google Cloud Messaging에 익숙해질 수 있습니다.
 
@@ -259,10 +259,10 @@ CLI를 사용하여 Android™ 휴대폰에 앱을 설치하려면 다음을 참
 1. 푸시 알림에 적절한 인증 그룹을 만듭니다.
 1. 적절한 사용자로 AEM에 로그인하고 앱 탭을 클릭합니다.
 1. 앱을 클릭합니다.
-1. Cloud Services 관리 타일을 찾아 연필을 클릭하여 클라우드 구성을 수정합니다.
+1. Cloud Service 관리 타일을 찾아 연필을 클릭하여 클라우드 구성을 수정합니다.
 1. 알림 구성으로 Amazon SNS Connection, Pushwoosh Connection 또는 Adobe Mobile Services 를 선택합니다.
 1. 공급자 등록 정보를 입력하고 제출을 눌러 저장한 다음 완료를 누릅니다. 이 단계에서는 AMS가 있는 경우를 제외하고 원격으로 확인되지 않습니다.
-1. 이제 Cloud Services 관리 타일에 방금 입력한 구성이 표시됩니다.
+1. 이제 Cloud Service 관리 타일에 방금 입력한 구성이 표시됩니다.
 
 ### 6단계: 앱 빌드 및 배포 {#step-build-and-deploy-the-app}
 
@@ -321,7 +321,7 @@ AMS 푸시 알림의 경우 AMS 서버에서 알림을 구성하고 전송해야
 >
 >대시보드의 푸시 알림 타일에 액세스하려면 아래 단계를 따르십시오.
 
-1. 의 오른쪽 위 모서리에 있는 편집 을 클릭합니다. **Cloud Services 관리** 타일.
+1. 의 오른쪽 위 모서리에 있는 편집 을 클릭합니다. **Cloud Service 관리** 타일.
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 

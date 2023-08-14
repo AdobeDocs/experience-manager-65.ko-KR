@@ -1,17 +1,13 @@
 ---
 title: AEM Forms Android 앱 빌드
-seo-title: Build the AEM Forms Android app
 description: Android Studio 프로젝트를 설정하고 Android용 AEM Forms 앱용 .apk 파일을 빌드하는 절차
-seo-description: Steps to set up the Android Studio project and build the .apk file for the AEM Forms app for Android
-uuid: 2e140aaf-5be5-4d5d-9941-9d1f4bf2debd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '720'
 ht-degree: 7%
 
 ---
@@ -73,7 +69,7 @@ Android Studio를 사용하여 AEM Forms 앱을 빌드하려면 다음 단계를
    ![android_folder_studio](assets/android_folder_studio.png)
 
 1. 선택 **android** 왼쪽 창에서 **실행** > **&#39;android&#39; 실행**.
-1. 배포 Target 선택 대화 상자의 연결된 장치 섹션에서 Android 장치를 선택하고 확인 을 클릭합니다.
+1. 배포 대상 선택 대화 상자의 연결된 장치 섹션에서 Android 장치를 선택하고 확인을 클릭합니다.
 
    개발 환경을 성공적으로 빌드하면 이제 앱에 사용자 지정을 적용할 수 있습니다. 다음 문서를 사용하여 앱을 사용자 지정합니다.
 
@@ -99,7 +95,7 @@ Android Studio를 사용하여 .apk 파일을 생성하려면 다음 단계를 �
 
 ## Android Debug Bridge 사용 {#build-android-debug-bridge}
 
-.apk 파일이 생성되면 다음 명령을 실행하여 를 사용하여 Android 디바이스에 애플리케이션을 설치합니다. [Android 디버그 브리지](https://developer.android.com/tools/help/adb.html).
+.apk 파일이 생성되면 다음 명령을 실행하여 를 사용하여 Android 디바이스에 애플리케이션을 설치합니다. [Android 디버그 브리지](https://developer.android.com/tools/adb).
 
 **Windows 사용자:** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
