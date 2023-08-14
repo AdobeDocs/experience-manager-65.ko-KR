@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 2ed19ac8c60dbf49422b8f1f665be4004689e00e
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3550'
 ht-degree: 2%
 
 ---
@@ -139,6 +139,10 @@ customBlobStore=B"false"
 
 AEM은 Amazon의 Simple Storage Service(S3)에 데이터를 저장하도록 구성할 수 있습니다. 다음을 사용합니다. `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` 구성에 대한 PID.
 
+>[!NOTE]
+>
+>AEM 6.5는 Amazon의 S3에 데이터 저장을 지원하지만, 이러한 지원은 공급업체가 Amazon의 S3 API를 자체적으로 구현할 수 있는 다른 플랫폼에 데이터를 저장하는 것으로는 확장되지 않습니다.
+
 S3 데이터 저장소 기능을 활성화하려면 S3 데이터 저장소 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. 로 이동 [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) 기능 팩의 1.10.x 버전에서 최신 버전을 다운로드하십시오(예: com.adobe.granite.oak.s3connector-1.10.0.zip). 또한 최신 AEM 서비스 팩을 다운로드하여 설치해야 합니다. [AEM 6.5 릴리스 노트](/help/release-notes/release-notes.md) 페이지를 가리키도록 업데이트하는 중입니다.
 
 >[!NOTE]
@@ -230,19 +234,19 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 | 키 | 설명 | 기본값 | 필수 |
 | --- | --- | --- | --- |
-| accessKey | 버킷에 액세스할 수 있는 IAM 사용자의 액세스 키 ID입니다. |  | 예. IAM 역할을 사용하지 않을 때 사용합니다. |
-| 비밀 키 | 버킷에 액세스할 수 있는 IAM 사용자의 보안 액세스 키입니다. |  | 예. IAM 역할을 사용하지 않을 때 사용합니다. |
+| accessKey | 버킷에 액세스할 수 있는 IAM 사용자의 액세스 키 ID입니다. | | 예. IAM 역할을 사용하지 않을 때 사용합니다. |
+| 비밀 키 | 버킷에 액세스할 수 있는 IAM 사용자의 보안 액세스 키입니다. | | 예. IAM 역할을 사용하지 않을 때 사용합니다. |
 | cacheSize | 로컬 캐시의 크기(바이트)입니다. | 64GB | 아니요. |
 | 연결 시간 제한 | 처음 연결을 설정할 때 시간 초과되기 전까지 대기할 시간(밀리초)을 설정합니다. | 10000 | 아니요. |
 | maxCachedBinarySize | 크기가 이 값보다 작거나 같은 바이너리(바이트)는 메모리 캐시에 저장됩니다. | 17408(17KB) | 아니요. |
 | maxConnection | 허용되는 최대 열린 HTTP 연결 수를 설정합니다. | 50 | 아니요. |
 | maxErrorRetry | 실패한(재시도 가능) 요청의 최대 재시도 횟수를 설정하십시오. | 3 | 아니요. |
 | minRecordLength | 데이터 저장소에 저장해야 하는 개체의 최소 크기(바이트)입니다. | 16384 | 아니요. |
-| 경로 | AEM 데이터 저장소의 로컬 경로입니다. | `crx-quickstart/repository/datastore` | 아니요. |
-| proxyHost | 클라이언트가 연결하는 선택적 프록시 호스트를 설정합니다. |  | 아니요. |
-| proxyPort | 클라이언트가 연결하는 선택적 프록시 포트를 설정합니다. |  | 아니요. |
-| s3Bucket | S3 버킷의 이름입니다. |  | 예 |
-| s3EndPoint | S3 REST API 엔드포인트. |  | 아니요. |
+| path | AEM 데이터 저장소의 로컬 경로입니다. | `crx-quickstart/repository/datastore` | 아니요. |
+| proxyHost | 클라이언트가 연결하는 선택적 프록시 호스트를 설정합니다. | | 아니요. |
+| proxyPort | 클라이언트가 연결하는 선택적 프록시 포트를 설정합니다. | | 아니요. |
+| s3Bucket | S3 버킷의 이름입니다. | | 예 |
+| s3EndPoint | S3 REST API 엔드포인트. | | 아니요. |
 | s3Region | 버켓이 있는 지역. 이 항목 보기 [페이지](https://docs.aws.amazon.com/general/latest/gr/s3.html) 을 참조하십시오. | AWS 인스턴스가 실행 중인 지역입니다. | 아니요. |
 | socketTime | 연결 시간이 초과되어 닫히기 전에 설정된 열려 있는 연결을 통해 데이터를 전송할 때까지 대기할 시간(밀리초)을 설정합니다. | 50000 | 아니요. |
 | stagingPurgeInterval | 스테이징 캐시에서 완료된 업로드를 지우는 간격(초)입니다. | 300 | 아니요. |
@@ -391,7 +395,8 @@ S3를 사용하여 바이너리 없는 복제를 구성하려면 다음 단계�
    >
    >    * Oak 버전의 경우 **1.2.x** oak-run 사용 **1.2.12 이상**
    >    * Oak 버전의 경우 **최신순**, AEM 설치의 Oak 코어와 일치하는 Oak-run 버전을 사용합니다.
-
+   >
+   >
 
 1. 마지막으로, 구성을 확인합니다. 유효성을 검사하려면 데이터 저장소를 공유하는 각 저장소에서 데이터 저장소에 추가된 고유한 파일을 찾습니다. 파일의 형식은 다음과 같습니다. `repository-[UUID]`여기서 UUID는 개별 저장소의 고유 식별자입니다.
 
@@ -500,7 +505,6 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
 >2. 추가 `blobTrackSnapshotIntervalInSecs=L"0"` 의 매개 변수 `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` 파일. 이 매개 변수에는 Oak 1.12.0, 1.10.2 이상이 필요합니다.
 >3. AEM 인스턴스를 다시 시작합니다.
 
-
 최신 버전의 AEM에서는 둘 이상의 저장소에서 공유하는 데이터 저장소에서도 데이터 저장소 가비지 수집을 실행할 수 있습니다. 공유 데이터 저장소에서 데이터 저장소 가비지 수집을 실행하려면 다음 단계를 수행하십시오.
 
 1. 데이터 저장소 가비지 수집에 대해 구성된 유지 관리 작업이 데이터 저장소를 공유하는 모든 저장소 인스턴스에서 비활성화되도록 합니다.
@@ -513,4 +517,5 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
    1. JMX 콘솔로 이동하고 저장소 관리자 Mbean을 선택합니다.
    1. 다음을 클릭합니다. **startDataStoreGC(부울 markOnly) 클릭** 링크를 클릭합니다.
    1. 다음 대화 상자에서 다음을 입력합니다. `false` 대상: `markOnly` 매개 변수를 다시 채우는 방법을 설명합니다.
+
    검색된 모든 파일은 이전에 사용한 표시 단계를 사용하여 정렬하고 데이터 저장소에서 사용하지 않은 나머지 파일을 삭제합니다.
