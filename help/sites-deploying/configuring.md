@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2111'
 ht-degree: 1%
 
 ---
@@ -152,7 +152,7 @@ SSO(Single Sign-On)를 사용하면 인증 자격 증명(사용자 이름 및 �
 
 복제 에이전트는 다음과 같은 작업에 사용되는 메커니즘으로 AEM에 중심적입니다.
 
-* [게시(활성화)](/help/sites-authoring/publishing-pages.md) 작성자에서 게시 환경으로 콘텐츠.
+* [게시(활성화)](/help/sites-authoring/publishing-pages.md) 작성자에서 게시 환경으로의 콘텐츠.
 * Dispatcher 캐시에서 콘텐츠를 명시적으로 플러시합니다.
 * 게시 환경의 사용자 입력(예: 양식 입력)을 작성 환경(작성 환경의 제어 아래)으로 반환합니다.
 
@@ -273,7 +273,7 @@ AEM 프로세스가 이 최대값을 초과하는 경우 &quot; `too many open f
 
 ### 비디오 구성 요소 구성 {#configuring-the-video-component}
 
-다음 [비디오 구성 요소](/help/sites-authoring/default-components-foundation.md#video) 에서는 사전 정의된 기본 비디오 요소를 페이지에 배치할 수 있습니다.
+다음 [비디오 구성 요소](/help/sites-authoring/default-components-foundation.md#video) 사전 정의된 기본 비디오 요소를 페이지에 배치할 수 있습니다.
 
 적절한 코드 변환이 일어나도록 하려면 관리자가 수행해야 합니다 [FFmpeg 설치](/help/sites-administering/config-video.md#install-ffmpeg) 별도로. 또한 다음과 같은 작업을 수행할 수 있습니다. [비디오 프로필 구성](/help/sites-administering/config-video.md#configure-video-profiles) html5 요소와 함께 사용됩니다.
 

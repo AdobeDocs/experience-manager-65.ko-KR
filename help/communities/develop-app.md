@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 5%
+source-wordcount: '572'
+ht-degree: 6%
 
 ---
 
@@ -41,7 +41,7 @@ CRXDE Lite 사용:
    값: `foundation/components/page`
 
 1. 녹색 클릭 **[!UICONTROL +추가]** 단추를 클릭합니다.
-1. 클릭 **[!UICONTROL 모두 저장]**.
+1. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
    ![페이지-스크립트](assets/page-script.png)
 
@@ -88,7 +88,7 @@ CRXDE Lite 사용:
    </html>
    ```
 
-1. 기본 스크립트 `head.jsp` 오버레이할 필요가 없지만 foundation 스크립트입니다. `body.jsp` 은(는) 비어 있습니다.
+1. 기본 스크립트 `head.jsp` 오버레이할 필요가 없지만 기본 스크립트는 `body.jsp` 은(는) 비어 있습니다.
 
    작성을 위해 설정하려면 오버레이하십시오 `body.jsp` 로컬 스크립트를 사용하고 본문에 단락 시스템(parsys)을 포함합니다.
 
@@ -97,7 +97,8 @@ CRXDE Lite 사용:
    1. 마우스 오른쪽 단추를 클릭하고 선택 `Create > Create File...`
 
       * 이름: **body.jsp**
-   1. 클릭 **[!UICONTROL 모두 저장]**.
+
+   1. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
    열기 `/apps/an-scf-sandbox/components/playpage/body.jsp` 을 클릭하고 다음 텍스트에 붙여넣습니다.
 
@@ -117,7 +118,7 @@ CRXDE Lite 사용:
    </body>
    ```
 
-1. 클릭 **[!UICONTROL 모두 저장]**.
+1. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
 **편집 모드의 브라우저에서 페이지 보기:**
 

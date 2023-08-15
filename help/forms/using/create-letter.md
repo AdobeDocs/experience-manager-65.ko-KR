@@ -9,9 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3982'
+source-wordcount: '3983'
 ht-degree: 2%
 
 ---
@@ -307,7 +307,6 @@ ht-degree: 2%
    1. **에셋 삭제**: 에셋 옆에 있는 삭제 아이콘을 탭하여 삭제합니다.
    1. **에셋 미리보기**: 미리보기 표시 아이콘( )을 탭합니다. ![미리 보기 표시](assets/showpreview.png))을 클릭하여 제품에서 사용할 수 있습니다.
 
-
 1. 누르기 **다음**.
 1. 데이터 페이지는 템플릿에서 데이터 필드와 변수가 사용되는 방법에 대해 자세히 설명합니다. 데이터는 데이터 사전 또는 사용자 입력과 같은 데이터 소스에 연결할 수 있습니다. 각 필드는 데이터 사전이 데이터를 매핑하는 속성이나 사용자 입력 필드에 표시되는 캡션을 정의합니다.
 
@@ -331,6 +330,7 @@ ht-degree: 2%
    * **숫자 검사기**: 숫자 유효성 검사기를 사용하여 필드 또는 변수에 입력한 최소 및 최대 숫자 값을 지정합니다. Number 유효성 검사기를 만들 때는 유효한 유효성 검사 매개 변수를 지정해야 합니다. 최소값과 최대값 모두에 대한 숫자 값을 입력합니다.
 
    * **정규 표현식 검사기**: 필드 또는 변수의 값을 확인하는 데 사용되는 정규 표현식을 정의하려면 정규 표현식 유효성 검사기를 사용하십시오. 또한 오류 메시지를 사용자 지정할 수 있습니다. 정규 표현식 검사기를 만들 때는 유효한 정규 표현식을 지정해야 합니다.
+
    >[!NOTE]
    >
    >필드 및 변수 유효성 검사기는 연결 유형이 사용자 또는 보호되지 않은 데이터 사전 요소가 있는 필드 또는 변수에서만 사용할 수 있습니다.
@@ -411,7 +411,7 @@ ht-degree: 2%
    <td>아니요</td> 
    <td>예</td> 
    <td>예</td> 
-   <td>예<br />을 따르지 않는 경우입니다 </td> 
+   <td>예<br /> </td> 
    <td>N/A</td> 
    <td>N/A</td> 
   </tr> 
@@ -421,9 +421,9 @@ ht-degree: 2%
    <td>아니요</td> 
    <td>예</td> 
    <td>예</td> 
-   <td>예<br />을 따르지 않는 경우입니다 </td> 
+   <td>예<br /> </td> 
    <td>N/A</td> 
-   <td>N/A<br />을 따르지 않는 경우입니다 </td> 
+   <td>N/A<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>richtext</strong></td> 
@@ -459,11 +459,11 @@ ht-degree: 2%
    <td><strong>서명</strong></td> 
    <td>아니요</td> 
    <td>아니요</td> 
-   <td>아니요<br />을 따르지 않는 경우입니다 </td> 
+   <td>아니요<br /> </td> 
    <td>예</td> 
    <td>아니요</td> 
    <td>N/A</td> 
-   <td>N/A<br />을 따르지 않는 경우입니다 </td> 
+   <td>N/A<br /> </td> 
   </tr> 
  </tbody> 
 </table>

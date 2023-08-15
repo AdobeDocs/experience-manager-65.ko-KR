@@ -10,16 +10,16 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1907'
 ht-degree: 0%
 
 ---
 
 # 비즈니스 캘린더 구성 {#configuring-business-calendars}
 
-*비즈니스 캘린더* 조직에 대한 업무일 및 비업무일(예: 법정 공휴일, 주말 및 회사 휴무 일)을 정의합니다. 비즈니스 달력을 사용하는 경우 AEM Forms는 특정 날짜 계산을 수행할 때 비업무일을 건너뜁니다. Workbench에서 작업 미리 알림, 기한 및 에스컬레이션과 같은 사용자 관련 이벤트 또는 타이머 이벤트 및 대기 서비스와 같이 사용자와 관련되지 않은 작업에 비즈니스 달력을 사용할지 여부를 지정할 수 있습니다.
+*비즈니스 캘린더* 조직에 대한 업무일 및 비업무일(예: 법정 공휴일, 주말 및 회사 종료 일수)을 정의합니다. 비즈니스 달력을 사용하는 경우 AEM Forms는 특정 날짜 계산을 수행할 때 비업무일을 건너뜁니다. Workbench에서 작업 미리 알림, 기한 및 에스컬레이션과 같은 사용자 관련 이벤트 또는 타이머 이벤트 및 대기 서비스와 같이 사용자와 관련되지 않은 작업에 비즈니스 달력을 사용할지 여부를 지정할 수 있습니다.
 
 예를 들어 작업 미리 알림은 작업이 사용자에게 할당된 후 영업일 기준으로 3일이 지나도록 구성됩니다. 작업은 목요일에 할당됩니다. 그러나 금요일이 공휴일이고 다음 2일이 주말이므로 다음 3일은 영업일이 아닙니다. 따라서 미리 알림은 다음 주 수요일에 전송됩니다.
 
@@ -49,7 +49,7 @@ AEM forms는 기본 비즈니스 캘린더(이름이 지정됨)를 제공합니�
 
    로컬 또는 하이브리드 도메인을 사용하는 경우 사용자에 대한 정보는 사용자 관리 데이터베이스에만 저장됩니다. 이러한 사용자에 대한 비즈니스 캘린더 키를 설정하려면 User Management에서 사용자를 추가하거나 편집할 때 비즈니스 캘린더 키 필드에 문자열을 입력합니다. (참조: [사용자 추가 및 구성](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) 그런 다음 비즈니스 캘린더 키(문자열)를 Forms Workflow의 비즈니스 캘린더에 매핑합니다. (참조: [비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   엔터프라이즈 도메인을 사용하는 경우 사용자 정보가 LDAP 디렉토리와 같은 타사 스토리지 시스템에 상주하며, 이 디렉토리는 사용자 관리 데이터베이스와 동기화됩니다. LDAP 디렉터리의 필드에 비즈니스 캘린더 키를 매핑할 수 있습니다. 예를 들어, 디렉토리에 있는 각 사용자 레코드에 &quot;국가&quot; 필드가 포함되어 있고 사용자가 위치한 국가를 기준으로 비즈니스 달력을 할당하려는 경우 해당 디렉토리에 대한 사용자 설정을 지정할 때 비즈니스 달력 키 필드에 &quot;국가&quot; 필드 이름을 지정합니다. (참조: [디렉터리 구성](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) 그런 다음 비즈니스 캘린더 키(LDAP 디렉터리의 &quot;국가&quot; 필드에 대해 정의된 값)를 Forms Workflow의 비즈니스 캘린더에 매핑할 수 있습니다. (참조: [비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   엔터프라이즈 도메인을 사용하는 경우 사용자 정보가 LDAP 디렉토리와 같은 타사 스토리지 시스템에 상주하며, 이 디렉토리는 사용자 관리 데이터베이스와 동기화됩니다. LDAP 디렉토리의 필드에 비즈니스 캘린더 키를 매핑할 수 있습니다. 예를 들어, 디렉토리에 있는 각 사용자 레코드에 &quot;국가&quot; 필드가 포함되어 있고 사용자가 위치한 국가를 기준으로 비즈니스 달력을 할당하려는 경우 해당 디렉토리에 대한 사용자 설정을 지정할 때 비즈니스 달력 키 필드에 &quot;국가&quot; 필드 이름을 지정합니다. (참조: [디렉터리 구성](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) 그런 다음 비즈니스 캘린더 키(LDAP 디렉토리의 &quot;국가&quot; 필드에 대해 정의된 값)를 Forms Workflow의 비즈니스 캘린더에 매핑할 수 있습니다. (참조: [비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. 양식 워크플로우에서 동일한 비업무일을 공유하는 각 사용자 집합에 대한 달력을 정의합니다. (참조: [비즈니스 캘린더 만들기 또는 업데이트](configuring-business-calendars.md#create-or-update-a-business-calendar).)
 1. 양식 워크플로우에서 각 캘린더에 대한 비즈니스 캘린더 키 또는 그룹 멤버십을 매핑합니다. (참조: [비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)

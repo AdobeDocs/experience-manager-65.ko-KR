@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 1%
+source-wordcount: '936'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ AEM 설치에서 프록시 서버는 다음 위치에서 찾을 수 있습니다
 * 전자 메일 메시지용 SMTP
 * 사용자 관리를 위한 LDAP
 
-예를 들어 웹 브라우저와 AEM과 같은 TCP/IP 네트워크를 통해 통신하는 두 애플리케이션 사이에 프록시 서버를 배치할 수 있습니다. 이를 통해 CQ 페이지를 요청할 때 발생하는 상황을 정확하게 모니터링할 수 있습니다.
+예를 들어 웹 브라우저와 AEM과 같은 TCP/IP 네트워크를 통해 통신하는 두 애플리케이션 사이에 프록시 서버를 배치할 수 있습니다. 이렇게 하면 CQ 페이지를 요청할 때 발생하는 상황을 정확하게 모니터링할 수 있습니다.
 
 ## 프록시 서버 도구 시작 {#starting-the-proxy-server-tool}
 
@@ -227,4 +227,4 @@ keep-alive가 작동하는지 확인하려면:
 
 * 프록시를 시작합니다.
 * 각 항목에 타임스탬프가 있는 파일에 액세스 로그를 기다리거나 씁니다.
-* 요청이 걸리기 시작하면 얼마나 많은 연결이 열려 있는지, 어떤 요청이 문제를 일으키는지 확인할 수 있습니다.
+* 요청이 걸리기 시작하면 얼마나 많은 연결이 열려 있는지 그리고 어떤 요청이 문제를 일으키는지 확인할 수 있습니다.

@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 0%
@@ -130,20 +130,20 @@ PDF 문서를 디스어셈블하려면 디스어셈블할 PDF 문서를 나타�
    * Java 만들기 `DocumentBuilderFactory` 를 호출하여 개체 `DocumentBuilderFactory` class&#39; `newInstance` 메서드를 사용합니다.
    * Java 만들기 `DocumentBuilder` 를 호출하여 개체 `DocumentBuilderFactory` 개체 `newDocumentBuilder` 메서드를 사용합니다.
    * 호출 `DocumentBuilder` 개체 `newDocument` 를 인스턴스화하는 메서드 `org.w3c.dom.Document` 개체.
-   * 를 호출하여 DDX 문서의 루트 요소를 만듭니다. `org.w3c.dom.Document` 개체 `createElement` 메서드를 사용합니다. 이 메서드는 `Element` 루트 요소를 나타내는 개체입니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `setAttribute` 메서드를 사용합니다. 마지막으로, 헤더 요소의 를 호출하여 요소를 헤더 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
-      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
+   * DDX 문서의 루트 요소를 `org.w3c.dom.Document` 개체 `createElement` 메서드를 사용합니다. 이 메서드는 `Element` 루트 요소를 나타내는 개체입니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `setAttribute` 메서드를 사용합니다. 마지막으로 헤더 요소의 를 호출하여 요소를 헤더 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
+     ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * 만들기 `PDFsFromBookmarks` 요소를 호출한 후 `Document` 개체 `createElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 에 대한 값 설정 `PDFsFromBookmarks` 요소를 호출한 후 `setAttribute` 메서드를 사용합니다. 추가 `PDFsFromBookmarks` 요소에 대한 `DDX` 요소를 호출하여 DDX 요소 `appendChild` 메서드를 사용합니다. 전달 `PDFsFromBookmarks` 요소 개체를 인수로 사용합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
-      ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
+     ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
 
    * 만들기 `PDF` 요소를 호출한 후 `Document` 개체 `createElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 에 대한 값 설정 `PDF` 요소를 호출한 후 `setAttribute` 메서드를 사용합니다. 추가 `PDF` 요소에 대한 `PDFsFromBookmarks` 요소를 호출한 후 `PDFsFromBookmarks` 요소 `appendChild` 메서드를 사용합니다. 전달 `PDF` 요소 개체를 인수로 사용합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
 
-      ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
+     ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
 
 1. DDX 문서를 변환합니다.
 
-   * 만들기 `javax.xml.transform.Transformer` 를 호출하여 개체 `javax.xml.transform.Transformer` 개체의 정적 `newInstance` 메서드를 사용합니다.
+   * 만들기 `javax.xml.transform.Transformer` 를 호출하여 개체 `javax.xml.transform.Transformer` 오브젝트의 정적 `newInstance` 메서드를 사용합니다.
    * 만들기 `Transformer` 를 호출하여 개체 `TransformerFactory` 개체 `newTransformer` 메서드를 사용합니다.
    * 만들기 `ByteArrayOutputStream` 개체를 만들 때 사용됩니다.
    * 만들기 `javax.xml.transform.dom.DOMSource` 개체를 만들 때 사용됩니다. 전달 `org.w3c.dom.Document` DDX 문서를 나타내는 개체입니다.
@@ -222,17 +222,17 @@ PDF 문서를 디스어셈블하려면 디스어셈블할 PDF 문서를 나타�
 1. DDX 문서를 만듭니다.
 
    * 만들기 `System.Xml.XmlElement` 개체를 만들 때 사용됩니다.
-   * 를 호출하여 DDX 문서의 루트 요소를 만듭니다. `XmlElement` 개체 `CreateElement` 메서드를 사용합니다. 이 메서드는 `Element` 루트 요소를 나타내는 개체입니다. 요소의 이름을 나타내는 문자열 값을 `CreateElement` 메서드를 사용합니다. 를 호출하여 DDX 요소 값 설정 `SetAttribute` 메서드를 사용합니다. 마지막으로 를 호출하여 요소를 DDX 문서에 추가합니다. `XmlElement` 개체 `AppendChild` 메서드를 사용합니다. DDX 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
+   * DDX 문서의 루트 요소를 `XmlElement` 개체 `CreateElement` 메서드를 사용합니다. 이 메서드는 `Element` 루트 요소를 나타내는 개체입니다. 요소의 이름을 나타내는 문자열 값을 `CreateElement` 메서드를 사용합니다. 를 호출하여 DDX 요소 값 설정 `SetAttribute` 메서드를 사용합니다. 마지막으로 를 호출하여 요소를 DDX 문서에 추가합니다. `XmlElement` 개체 `AppendChild` 메서드를 사용합니다. DDX 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
-      ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
+     ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
 
    * DDX 문서 만들기 `PDFsFromBookmarks` 요소를 호출한 후 `XmlElement` 개체 `CreateElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 `CreateElement` 메서드를 사용합니다. 그런 다음 를 호출하여 요소의 값을 설정합니다. `SetAttribute` 메서드를 사용합니다. 추가 `PDFsFromBookmarks` 요소를 루트 요소에 호출하여 `DDX` 요소 `AppendChild` 메서드를 사용합니다. 전달 `PDFsFromBookmarks` 요소 개체를 인수로 사용합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
-      ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
+     ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
 
    * DDX 문서 만들기 `PDF` 요소를 호출한 후 `XmlElement` 개체 `CreateElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 `CreateElement` 메서드를 사용합니다. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `SetAttribute` 메서드를 사용합니다. 추가 `PDF` 요소에 대한 `PDFsFromBookmarks` 요소를 호출한 후 `PDFsFromBookmarks` 요소 `AppendChild` 메서드를 사용합니다. 전달 `PDF` 요소 개체를 인수로 사용합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
 
-      ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
+     ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
 
 1. DDX 문서를 변환합니다.
 
@@ -240,7 +240,7 @@ PDF 문서를 디스어셈블하려면 디스어셈블할 PDF 문서를 나타�
    * 채우기 `MemoryStream` 를 사용하여 DDX 문서가 있는 개체 `XmlElement` DDX 문서를 나타내는 개체입니다. 호출 `XmlElement` 개체 `Save` 메서드 및 전달 `MemoryStream` 개체.
    * 바이트 배열을 만들어 의 데이터로 채웁니다. `MemoryStream` 개체. 다음 코드는 이 애플리케이션 논리를 보여 줍니다.
 
-      ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
+     ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
 
    * 만들기 `BLOB` 개체. 바이트 배열을 `BLOB` 개체 `MTOM` 필드.
 

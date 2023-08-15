@@ -4,7 +4,7 @@ description: 즉석 업그레이드를 수행하는 방법을 알아봅니다.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 0%
@@ -54,7 +54,6 @@ AEM 6.3에서 업그레이드하는 경우 이 마이그레이션이 필요하�
 >* `--promote-runmode nosamplecontent`
 >
 
-
 실행할 명령을 확인하려면 다음 명령을 사용합니다.
 
 ```shell
@@ -67,7 +66,7 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
  <tbody>
   <tr>
    <td><strong>소스 저장소</strong></td>
-   <td><strong>Target 저장소</strong></td>
+   <td><strong>대상 저장소</strong></td>
    <td><strong>프로필</strong></td>
    <td><strong>추가 플래그</strong><br /> </td>
   </tr>
@@ -124,7 +123,7 @@ crx2oak 도구 사용에 대한 추가 지침은 [CRX2Oak 마이그레이션 도
 
 **데이터 저장소에 대한 참고 사항:**
 
-While `FileDataStore` 외부 데이터 저장소를 사용할 필요가 없으므로 AEM 6.3 설치에 대한 새로운 기본값입니다. 프로덕션 배포에 외부 데이터 저장소를 사용하는 것이 모범 사례로 권장되지만 업그레이드하기 위한 필수 조건은 아닙니다. AEM 업그레이드에 이미 존재하는 복잡성으로 인해 데이터 저장소 마이그레이션을 수행하지 않고 업그레이드를 수행하는 것이 좋습니다. 원하는 경우 나중에 별도의 작업으로 데이터 저장소 마이그레이션을 실행할 수 있습니다.
+While `FileDataStore` 외부 데이터 저장소를 사용할 필요가 없으므로 AEM 6.3 설치에 대한 새로운 기본값입니다. 프로덕션 배포에 외부 데이터 저장소를 사용하는 것이 모범 사례로 권장되지만 업그레이드하기 위한 필수 조건은 아닙니다. AEM Adobe 업그레이드에 이미 존재하는 복잡성으로 인해 데이터 저장소 마이그레이션을 수행하지 않고 업그레이드를 수행하는 것이 좋습니다. 원하는 경우 나중에 별도의 작업으로 데이터 저장소 마이그레이션을 실행할 수 있습니다.
 
 ## 마이그레이션 문제 해결 {#troubleshooting-migration-issues}
 
@@ -168,7 +167,7 @@ While `FileDataStore` 외부 데이터 저장소를 사용할 필요가 없으�
 >
 >oracle Java 11(또는 일반적으로 Java 8보다 최신 버전)을 실행하는 경우 AEM을 시작할 때 명령줄에 스위치를 추가해야 합니다. 자세한 내용은 [Java 11 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-시작 스크립트에서 AEM을 시작하면 업그레이드가 시작되지 않습니다. 대부분의 고객은 시작 스크립트를 사용하여 AEM을 시작하고 메모리 설정, 보안 인증서 등과 같은 환경 구성을 위한 스위치를 포함하도록 이 시작 스크립트를 사용자 정의했습니다. 이러한 이유로 다음 절차에 따라 적절한 업그레이드 명령을 결정하는 것이 좋습니다.
+시작 스크립트에서 AEM을 시작하면 업그레이드가 시작되지 않습니다. 대부분의 고객은 시작 스크립트를 사용하여 AEM을 시작하고 메모리 설정, 보안 인증서 등과 같은 환경 구성을 위한 스위치를 포함하도록 이 시작 스크립트를 사용자 정의했습니다. 이러한 이유로 Adobe은 다음 절차에 따라 적절한 업그레이드 명령을 결정할 것을 권장합니다.
 
 1. 실행 중인 AEM 인스턴스에서 명령줄에서 다음을 실행합니다.
 

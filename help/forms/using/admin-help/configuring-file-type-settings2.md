@@ -9,7 +9,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5f4bbad87768cf6bd73771f9eac6e01ab3bf3309
 workflow-type: tm+mt
 source-wordcount: '6167'
 ht-degree: 0%
@@ -19,12 +19,12 @@ ht-degree: 0%
 
 # 파일 유형 설정 구성 {#configuring-file-type-settings}
 
-PDF 생성기에서 지원되는 파일 형식에 대한 응용 프로그램 설정을 설정할 수 있습니다. Windows에서는 지원되는 각 파일 형식에 대해 응용 프로그램 설정을 설정할 수 있습니다. UNIX 및 Linux에서는 HTML-투-PDF 및 OpenOffice에 대한 응용 프로그램 설정을 설정할 수 있습니다.
+PDF Generator에서 지원되는 파일 형식에 대한 응용 프로그램 설정을 설정할 수 있습니다. Windows에서는 지원되는 각 파일 형식에 대해 응용 프로그램 설정을 설정할 수 있습니다. UNIX 및 Linux에서는 HTML-투-PDF 및 OpenOffice에 대한 응용 프로그램 설정을 설정할 수 있습니다.
 
 [파일 유형 설정] 페이지에서 다음 작업을 수행할 수 있습니다.
 
 * [파일 유형 설정 만들기 또는 편집](#create-or-edit-file-type-settings)
-* 기본적으로 사용할 파일 유형 설정 지정(참조) [PDF 생성기 구성 파일 가져오기 및 내보내기](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html))
+* 기본적으로 사용할 파일 유형 설정 지정(참조) [PDF Generator 구성 파일 가져오기 및 내보내기](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html))
 * [기본 설정 변경](/help/forms/using/admin-help/configuring-file-type-settings2.md#change-the-default-settings)
 * [PDF/A 지원 활성화](https://helpx.adobe.com/aem-forms/6-2/admin-help/enable-pdf-a-support.html)
 * [파일 유형 설정 삭제](https://helpx.adobe.com/aem-forms/6-2/admin-help/enable-pdf-a-support.html)
@@ -37,7 +37,7 @@ PDF 생성기에서 지원되는 파일 형식에 대한 응용 프로그램 설
 
 파일 형식 설정을 만들거나 편집하여 응용 프로그램에서 지원되는 파일 형식의 변환을 처리하는 방법을 지정합니다. Windows에서는 지원되는 각 파일 형식에 대해 응용 프로그램 설정을 설정할 수 있습니다. UNIX 및 Linux에서는 HTML-투-PDF 및 OpenOffice에 대한 응용 프로그램 설정을 설정할 수 있습니다.
 
-1. 관리 콘솔에서 다음을 클릭합니다. **[!UICONTROL 서비스]** > **[!UICONTROL PDF 생성기]** > **[!UICONTROL 파일 유형 설정]**.
+1. 관리 콘솔에서 다음을 클릭합니다. **[!UICONTROL 서비스]** > **[!UICONTROL PDF Generator]** > **[!UICONTROL 파일 유형 설정]**.
 1. 새로 만들기 를 클릭하거나 설정 이름을 클릭합니다.
 1. 파일 이름 확장자 상자에 이 응용 프로그램에 허용되는 파일 형식에 대해 파일 이름 확장자를 쉼표로 구분하여 입력합니다. 확장의 앞 또는 사이에 마침표를 포함하지 마십시오. 기본값은 `bmp,gif,jpeg,jpg,tif,tiff,png`입니다.
 1. (선택 사항) 그래픽이나 이미지에서 텍스트의 OCR(광학 코드 인식)을 사용하려면 [OCR 사용]을 선택하고 다음 옵션을 설정합니다.
@@ -50,7 +50,7 @@ PDF 생성기에서 지원되는 파일 형식에 대한 응용 프로그램 설
 
 1. 다음 섹션에서 필요한 정보를 작성합니다.
 
-   [PDF 생성기 구성 파일 가져오기 및 내보내기](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html)
+   [PDF Generator 구성 파일 가져오기 및 내보내기](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html)
 
 [Adobe PDF 내보내기 설정(Windows에만 해당)](#adobe-pdf-export-settings-windows-only)
 
@@ -78,7 +78,7 @@ PDF 생성기에서 지원되는 파일 형식에 대한 응용 프로그램 설
 
 [OpenOffice 설정](/help/forms/using/admin-help/configuring-file-type-settings2.md#openoffice-settings)
 
-[기타 응용 프로그램 설정(Windows에만 해당)](/help/forms/using/admin-help/configuring-file-type-settings2.md#other-applications-settings-windows-only)
+[다른 응용 프로그램의 설정(Windows에만 해당)](/help/forms/using/admin-help/configuring-file-type-settings2.md#other-applications-settings-windows-only)
 
    다른 섹션으로 이동하려면 웹 페이지에서 해당 링크를 클릭하거나 을 사용합니다**[!UICONTROL 다음]**또는 **[!UICONTROL 이전]** 단추.
 
@@ -90,7 +90,7 @@ PDF 생성기에서 지원되는 파일 형식에 대한 응용 프로그램 설
 
 새로 만든 소스에 적용되는 Adobe PDF 설정, 보안 설정 및 파일 유형 설정의 기본값을 변경할 수 있습니다. 기본값을 변경해도 기존 소스의 설정에는 영향을 주지 않습니다.
 
-1. 관리 콘솔에서 을 클릭합니다. **[!UICONTROL 서비스 > PDF 생성기]**.
+1. 관리 콘솔에서 을 클릭합니다. **[!UICONTROL 서비스 > PDF Generator]**.
 1. 다음에서 **[!UICONTROL Adobe PDF 설정]**, **[!UICONTROL 파일 유형 설정]**, 또는 **[!UICONTROL 보안 설정]** 페이지, 클릭 **[!UICONTROL 기본 설정 설정]**.
 1. 선호하는 기본 설정을 선택합니다. [기본 설정 설정] 페이지에서 다음 설정 중 하나 이상을 사용할 수 있습니다.
 
@@ -106,8 +106,8 @@ PDF 생성기에서 지원되는 파일 형식에 대한 응용 프로그램 설
 
 더 이상 사용되지 않는 파일 형식 설정은 삭제할 수 있습니다.
 
-1. 관리 콘솔에서 다음을 클릭합니다. **[!UICONTROL 서비스 > PDF 생성기 > 파일 유형 설정]**.
-1. 삭제할 설정 옆에 있는 확인란을 선택합니다. 여러 소스를 선택할 수 있습니다. 옆에 확인란이 없는 설정은 항상 PDF 생성기에 포함되며 삭제할 수 없습니다.
+1. 관리 콘솔에서 다음을 클릭합니다. **[!UICONTROL 서비스 > PDF Generator > 파일 유형 설정]**.
+1. 삭제할 설정 옆에 있는 확인란을 선택합니다. 여러 소스를 선택할 수 있습니다. 옆에 확인란이 없는 설정은 항상 PDF Generator에 포함되며 삭제할 수 없습니다.
 1. 클릭 **[!UICONTROL 삭제]** 그리고 [삭제 확인] 페이지에서 **[!UICONTROL 삭제]**.
 
 ## 이미지-PDF 설정 {#image-to-pdf-settings}
@@ -116,7 +116,7 @@ PDF 생성기에서 지원되는 파일 형식에 대한 응용 프로그램 설
 
 **파일 이름 확장명:** 변환할 수 있는 파일 이름 확장자를 쉼표로 구분한 목록입니다.
 
-**대체 변환기 시도:** PDF 생성기는 Java™ 또는 Acrobat을 사용하여 이미지 파일을 PDF으로 변환할 수 있습니다. 이 옵션을 선택하고 전환이 실패하거나 지정된 시간 초과 제한에 도달하면 PDF 생성기에서 대체 방법을 사용하여 전환을 시도합니다. 대체 방법이 실패하거나 지정된 시간 초과 제한에 도달하면 로그 파일에 예외가 기록됩니다.
+**대체 변환기 시도:** PDF Generator은 Java™ 또는 Acrobat을 사용하여 이미지 파일을 PDF으로 변환할 수 있습니다. 이 옵션을 선택하고 전환이 실패하거나 지정된 시간 초과 제한에 도달하면 PDF Generator은 대체 방법을 사용하여 전환을 시도합니다. 대체 방법이 실패하거나 지정된 시간 초과 제한에 도달하면 로그 파일에 예외가 기록됩니다.
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Adobe PDF 내보내기 설정 섹션의 내보내기 파일 유형 설정은 PDF
 
 다음 옵션은 HTML 파일을 PDF으로 변환하는 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 [파일 유형 설정 만들기 또는 편집](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**대체 변환기 시도:** PDF 생성기는 Java™ 또는 Acrobat을 사용하여 HTML 파일을 PDF으로 변환할 수 있습니다. 이 옵션을 선택하고 전환이 실패하거나 지정된 시간 초과 제한에 도달하면 PDF 생성기에서 대체 방법을 사용하여 전환을 시도합니다. 대체 방법이 실패하거나 지정된 시간 초과 제한에 도달하면 로그 파일에 예외가 기록됩니다.
+**대체 변환기 시도:** PDF Generator은 Java™ 또는 Acrobat을 사용하여 HTML 파일을 PDF으로 변환할 수 있습니다. 이 옵션을 선택하고 전환이 실패하거나 지정된 시간 초과 제한에 도달하면 PDF Generator은 대체 방법을 사용하여 전환을 시도합니다. 대체 방법이 실패하거나 지정된 시간 초과 제한에 도달하면 로그 파일에 예외가 기록됩니다.
 
 **기본 인코딩:** 운영 체제 및 알파벳 메뉴에서 파일 텍스트의 입력 인코딩을 설정합니다. HTML 소스 파일에서 인코딩 유형을 지정하지 않은 경우에만 기본 인코딩 옵션에 표시된 선택 사항을 사용합니다.
 
@@ -218,7 +218,7 @@ Adobe PDF 내보내기 설정 섹션의 내보내기 파일 유형 설정은 PDF
 
 ## PDF 설정에 비디오 Flash {#flash-videos-to-pdf-settings}
 
-PDF 생성기는 Adobe Flash용 비디오(SWF 또는 FLV 파일)를 제출하고 Adobe Flash용 비디오가 포함된 PDF 파일을 만드는 기능을 지원합니다. 이 변환에서는 Forms 서버에 Adobe Flash Player을 설치할 필요가 없습니다. 이 옵션에 액세스하는 방법에 대한 지침은 [파일 유형 설정 만들기 또는 편집](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator은 Adobe Flash을 위한 비디오(SWF 또는 FLV 파일)를 제출하고 Adobe Flash을 위한 비디오가 포함된 PDF 파일을 만드는 기능을 지원합니다. 이 변환에서는 Forms 서버에 Adobe Flash Player을 설치할 필요가 없습니다. 이 옵션에 액세스하는 방법에 대한 지침은 [파일 유형 설정 만들기 또는 편집](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **파일 이름 확장명:** 변환할 수 있는 파일 이름 확장자를 쉼표로 구분한 목록입니다.
 
@@ -230,7 +230,7 @@ XPS(XML Paper Specification)는 Windows 인쇄 시스템에서 사용됩니다. 
 
 ## PDF 최적화 도구 설정 {#pdf-optimizer-settings}
 
-PDF 생성기는 PDF 파일의 크기를 줄이는 기능을 지원합니다. 이러한 설정을 모두 사용할지 또는 일부만 사용할지는 파일 사용 방법과 파일에 있어야 하는 필수 속성에 따라 다릅니다. 대부분의 경우 기본 설정은 포함된 글꼴을 제거하고, 이미지를 압축하고, 더 이상 필요하지 않은 파일에서 항목을 제거하여 공간을 절약하는 등 최대 효율에 적합합니다.
+PDF Generator은 PDF 파일의 크기를 줄이는 기능을 지원합니다. 이러한 설정을 모두 사용할지 또는 일부만 사용할지는 파일 사용 방법과 파일에 있어야 하는 필수 속성에 따라 다릅니다. 대부분의 경우 기본 설정은 포함된 글꼴을 제거하고, 이미지를 압축하고, 더 이상 필요하지 않은 파일에서 항목을 제거하여 공간을 절약하는 등 최대 효율에 적합합니다.
 
 >[!NOTE]
 >
@@ -238,7 +238,7 @@ PDF 생성기는 PDF 파일의 크기를 줄이는 기능을 지원합니다. �
 
 이 설정에 액세스하는 방법에 대한 지침은 [파일 유형 설정 만들기 또는 편집](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**Target PDF 버전:** PDF이 호환되는 Acrobat 버전을 지정합니다.
+**대상 PDF 버전:** PDF이 호환되는 Acrobat 버전을 지정합니다.
 
 ### 글꼴 {#fonts}
 
@@ -275,7 +275,7 @@ PDF 문서에 투명도가 포함된 아트웍이 포함되어 있는 경우 [PD
 
 >[!NOTE]
 >
->Target PDF 버전으로 Acrobat 4.0 이상을 선택하면 모든 투명 오브젝트가 병합됩니다. 다른 Target PDF 버전의 경우 투명도가 지원되며 투명도 설정을 구성할 수 있습니다.
+>Target PDF 버전으로 Acrobat 4.0 이상을 선택하면 모든 투명 오브젝트가 병합됩니다. 다른 대상 PDF 버전의 경우 투명도가 지원되며 투명도 설정을 구성할 수 있습니다.
 
 선택 **투명도** PDF 문서를 최적화하는 동안 투명도 설정을 구성합니다.
 
@@ -410,7 +410,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 이러한 옵션은 Microsoft Excel 파일의 변환 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 [파일 유형 설정 만들기 또는 편집](#create-or-edit-file-type-settings).
 
-**OpenOffice를 폴백 변환기로 사용**: 이 옵션을 선택하고 Microsoft Excel을 사용한 변환이 실패하거나 지정된 시간 초과 제한에 도달하면 PDF 생성기가 OpenOffice를 사용하여 변환을 시도합니다. OpenOffice를 사용한 변환이 실패하거나 지정된 시간 초과 제한에 도달하면 로그 파일에 예외가 기록됩니다.
+**OpenOffice를 폴백 변환기로 사용**: 이 옵션을 선택하고 Microsoft Excel을 사용한 전환이 실패하거나 지정된 시간 초과 제한에 도달하면 PDF Generator은 OpenOffice를 사용하여 전환을 시도합니다. OpenOffice를 사용한 변환이 실패하거나 지정된 시간 초과 제한에 도달하면 로그 파일에 예외가 기록됩니다.
 
 **파일 이름 확장자**: 이 응용 프로그램에 허용되는 파일 형식의 파일 확장명을 쉼표로 구분하여 지정합니다. 기본값은 `xls,xlsx`입니다.
 확장 앞이나 사이에 마침표를 포함하지 마십시오.
@@ -431,7 +431,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **Adobe PDF에 소스 파일 첨부**: 이 옵션을 선택하면 원본 Excel 스프레드시트가 생성된 PDF 문서 내에 첨부 파일로 삽입됩니다.
 
-**태그된 Adobe PDF으로 접근성 및 Reflow 활성화**: 접근성 및 리플로우를 위해 PDF 문서 내에 태그를 임베드합니다.
+**태그된 Adobe PDF으로 접근성 및 Reflow 활성화**: 접근성 및 리플로우를 가능하게 하기 위해 PDF 문서 내에 태그를 임베드합니다.
 
 **로드할 Excel 추가 기능 목록**: 기본적으로(보안상의 이유로) Excel 파일을 PDF으로 변환할 때 Excel 추가 기능이 실행되지 않습니다. 변환 중에 특정 Excel 추가 기능을 실행할 수 있도록 하려면 추가 기능 이름의 쉼표로 구분된 목록을 제공하십시오.
 
@@ -441,7 +441,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 이러한 옵션은 Microsoft PowerPoint 파일의 변환 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 [파일 유형 설정 만들기 또는 편집](/help/forms/using/admin-help/configuring-file-type-settings2.md#create-or-edit-file-type-settings).
 
-**[!UICONTROL OpenOffice를 폴백 변환기로 사용]**: 이 옵션을 선택하고 Microsoft PowerPoint를 사용한 전환이 실패하거나 지정된 시간 초과 제한에 도달하면 PDF 생성기가 OpenOffice를 사용하여 전환을 시도합니다. OpenOffice를 사용한 변환이 실패하거나 지정된 시간 초과 제한에 도달하면 로그 파일에 예외가 기록됩니다.
+**[!UICONTROL OpenOffice를 폴백 변환기로 사용]**: 이 옵션을 선택하고 Microsoft PowerPoint를 사용한 전환이 실패하거나 지정된 시간 초과 제한에 도달하면 PDF Generator은 OpenOffice를 사용하여 전환을 시도합니다. OpenOffice를 사용한 변환이 실패하거나 지정된 시간 초과 제한에 도달하면 로그 파일에 예외가 기록됩니다.
 
 **[!UICONTROL 파일 이름 확장자]**: 이 응용 프로그램에 허용되는 파일 형식의 파일 확장명을 쉼표로 구분하여 지정합니다. 기본값은 ppt,pptx입니다. 확장 앞이나 사이에 마침표를 포함하지 마십시오.
 
@@ -487,7 +487,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 이러한 옵션은 Microsoft Word 파일의 변환 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 [파일 유형 설정 만들기 또는 편집](#create-or-edit-file-type-settings).
 
-**[!UICONTROL OpenOffice를 폴백 변환기로 사용]**: 이 옵션을 선택하고 Microsoft Word를 사용한 전환이 실패하거나 지정된 시간 초과 제한에 도달하면 PDF 생성기가 OpenOffice를 사용하여 전환을 시도합니다. OpenOffice를 사용한 변환이 실패하거나 지정된 시간 초과 제한에 도달하면 로그 파일에 예외가 기록됩니다.
+**[!UICONTROL OpenOffice를 폴백 변환기로 사용]**: 이 옵션을 선택하고 Microsoft Word를 사용한 전환이 실패하거나 지정된 시간 초과 제한에 도달하면 PDF Generator은 OpenOffice를 사용하여 전환을 시도합니다. OpenOffice를 사용한 변환이 실패하거나 지정된 시간 초과 제한에 도달하면 로그 파일에 예외가 기록됩니다.
 
 **[!UICONTROL 파일 이름 확장자]**: 이 응용 프로그램에 허용되는 파일 형식의 파일 확장명을 쉼표로 구분하여 지정합니다. 기본값은 `doc,docx,rtf,txt`입니다.
 확장 앞이나 사이에 마침표를 포함하지 마십시오.
@@ -578,7 +578,7 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 포함된 경�
 
 **[!UICONTROL PDF/A-1b 호환 파일 만들기]**: PDF/A-1b Adobe PDF 설정을 강제로 사용합니다.
 
-**[!UICONTROL 모든 레이어 변환]**: 기본적으로 PDF 생성기는 AutoCAD 파일의 기본 레이어만 파일 내의 모든 레이어가 아닌 PDF으로 변환합니다. 파일의 모든 레이어를 변환하려면 이 옵션을 선택합니다.
+**[!UICONTROL 모든 레이어 변환]**: 기본적으로 PDF Generator은 AutoCAD 파일의 기본 레이어만 파일 내의 모든 레이어가 아닌 PDF으로 변환합니다. 파일의 모든 레이어를 변환하려면 이 옵션을 선택합니다.
 
 **[!UICONTROL 포함 크기 정보]**: 드로잉 배율 정보를 유지합니다.
 
@@ -590,7 +590,7 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 포함된 경�
 
 이러한 옵션은 OpenOffice 파일의 변환 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 [파일 유형 설정 만들기 또는 편집](/help/forms/using/admin-help/configuring-file-type-settings2.md#create-or-edit-file-type-settings).
 
-**PDFMaker를 폴백 변환기로 시도**: 이 옵션을 선택하고 OpenOffice를 사용한 전환이 실패하거나 지정된 제한 시간에 도달하면 PDF 생성기에서 PDFMaker를 사용하여 전환을 시도합니다. PDFMaker를 사용한 변환이 실패하거나 지정된 제한 시간에 도달하면 로그 파일에 예외가 기록됩니다.
+**PDFMaker를 폴백 변환기로 시도**: 이 옵션을 선택하고 OpenOffice를 사용한 전환이 실패하거나 지정된 제한 시간에 도달하면 PDF Generator은 PDFMaker를 사용하여 전환을 시도합니다. PDFMaker를 사용한 변환이 실패하거나 지정된 제한 시간에 도달하면 로그 파일에 예외가 기록됩니다.
 
 **파일 이름 확장자**: 이 애플리케이션에 사용할 수 있는 파일 확장명을 쉼표로 구분하여 지정합니다. 기본값은 `odt,odp,ods,odg,odf,sxw,sxi,sxd`입니다.
 확장 앞이나 사이에 마침표를 포함하지 마십시오.

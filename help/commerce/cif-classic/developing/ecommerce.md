@@ -8,21 +8,21 @@ content-type: reference
 topic-tags: platform
 docset: aem65
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 5%
+source-wordcount: '144'
+ht-degree: 8%
 
 ---
 
 # eCommerce{#ecommerce}
 
-통합 프레임워크는 API와의 통합 계층을 포함합니다. 이를 통해 다음을 수행할 수 있습니다.
+통합 프레임워크는 API와의 통합 계층을 포함합니다. 이렇게 하면 다음 작업을 수행할 수 있습니다.
 
 * eCommerce 시스템에 연결하고 제품 데이터를 AEM으로 가져오기
 * 특정 eCommerce 엔진과 독립적인 상거래 기능을 위한 AEM 구성 요소 빌드
 
-자세한 내용은 다음을 참조하십시오.
+자세한 내용은 다음 문서를 참조하십시오.
 
 * [개발(일반)](/help/commerce/cif-classic/developing/generic.md)
 * [SAP Commerce Cloud를 사용하여 개발](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)

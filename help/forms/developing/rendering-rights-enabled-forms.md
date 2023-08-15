@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1459'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Forms API(Java)를 사용하여 권한이 활성화된 양식을 렌더링합니
 
    * 만들기 `ReaderExtensionSpec` 개체를 만들 때 사용됩니다.
    * 다음을 호출하여 자격 증명의 별칭 지정 `ReaderExtensionSpec` 개체 `setReCredentialAlias` 메서드, 별칭 값을 나타내는 문자열 값을 지정합니다.
-   * 에 속한 해당 메서드를 호출하여 각 사용 권한을 설정합니다. `ReaderExtensionSpec` 개체. 그러나 참조하는 자격 증명을 허용하는 경우에만 사용 권한을 설정할 수 있습니다. 즉, 자격 증명을 통해 설정할 수 없는 경우에는 사용 권한을 설정할 수 없습니다. 예. 사용자가 양식 필드를 채우고 양식을 저장할 수 있는 사용 권한을 설정하려면 `ReaderExtensionSpec` 개체 `setReFillIn` 방법 및 통과 `true`.
+   * 에 속한 해당 메서드를 호출하여 각 사용 권한을 설정합니다. `ReaderExtensionSpec` 개체. 하지만 참조하는 자격 증명을 통해 사용할 수 있는 경우에만 사용 권한을 설정할 수 있습니다. 즉, 자격 증명을 통해 설정하지 않은 경우 사용 권한을 설정할 수 없습니다. 예. 사용자가 양식 필드를 채우고 양식을 저장할 수 있는 사용 권한을 설정하려면 `ReaderExtensionSpec` 개체 `setReFillIn` 방법 및 통과 `true`.
 
    >[!NOTE]
    >
@@ -157,7 +157,7 @@ Forms API(웹 서비스)를 사용하여 권한이 활성화된 양식을 렌더
 
    * 만들기 `ReaderExtensionSpec` 개체를 만들 때 사용됩니다.
    * 다음을 호출하여 자격 증명의 별칭 지정 `ReaderExtensionSpec` 개체 `setReCredentialAlias` 메서드, 별칭 값을 나타내는 문자열 값을 지정합니다.
-   * 에 속한 해당 메서드를 호출하여 각 사용 권한을 설정합니다. `ReaderExtensionSpec` 개체. 그러나 참조하는 자격 증명을 허용하는 경우에만 사용 권한을 설정할 수 있습니다. 즉, 자격 증명을 통해 설정할 수 없는 경우에는 사용 권한을 설정할 수 없습니다. 사용자가 양식 필드를 채우고 양식을 저장할 수 있는 사용 권한을 설정하려면 `ReaderExtensionSpec` 개체 `setReFillIn` 방법 및 통과 `true`.
+   * 에 속한 해당 메서드를 호출하여 각 사용 권한을 설정합니다. `ReaderExtensionSpec` 개체. 하지만 참조하는 자격 증명을 통해 사용할 수 있는 경우에만 사용 권한을 설정할 수 있습니다. 즉, 자격 증명을 통해 설정하지 않은 경우 사용 권한을 설정할 수 없습니다. 사용자가 양식 필드를 채우고 양식을 저장할 수 있는 사용 권한을 설정하려면 `ReaderExtensionSpec` 개체 `setReFillIn` 방법 및 통과 `true`.
 
 1. 권한이 활성화된 양식 렌더링
 

@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1168'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ AEM에서 Adobe Campaign 콘텐츠를 만들 때 모든 기능에 액세스하�
 
 두 가지 가능한 경우가 있습니다.
 
-* 콘텐츠는 Adobe Campaign의 게재와 동기화할 수 있습니다. 이렇게 하면 게재에서 AEM 콘텐츠를 사용할 수 있습니다.
+* 콘텐츠는 Adobe Campaign의 게재와 동기화할 수 있습니다. 이렇게 하면 게재에서 AEM 컨텐츠를 사용할 수 있습니다.
 * (Adobe Campaign 온프레미스만 해당) 콘텐츠를 Adobe Campaign으로 직접 전송할 수 있으며 이렇게 하면 자동으로 새 이메일 게재가 생성됩니다. 이 모드에는 제한이 있습니다.
 
 자세한 지침은 이 문서에 설명되어 있습니다.

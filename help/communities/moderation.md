@@ -12,9 +12,9 @@ discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2041'
 ht-degree: 4%
 
 ---
@@ -158,7 +158,7 @@ AEM Communities에서 일괄 처리 [커뮤니티 콘텐츠 중재](/help/commun
 
 콘텐츠 유형은 선택한 리소스 유형의 게시물에 표시되는 참조된 UGC를 제한합니다. 다음 유형 중 하나 이상을 선택할 수 있습니다. 선택하지 않으면 모든 유형이 표시됩니다.
 
-* **설명**
+* **댓글**
 * **포럼 주제**
 * **포럼 답글**
 * **QnA 질문**
@@ -186,8 +186,9 @@ AEM Communities에서 일괄 처리 [커뮤니티 콘텐츠 중재](/help/commun
 
    * 예를 들어 포함된 투표 구성 요소를 필터링하려면 다음을 입력합니다.
 
-      `Voting=social/tally/components/hbs/voting`
-   ![additional-contenttype](assets/additional-contenttype.png)
+     `Voting=social/tally/components/hbs/voting`
+
+  ![additional-contenttype](assets/additional-contenttype.png)
 
 * 저장을 선택합니다.
 * 커뮤니티 - 중재 콘솔을 새로 고칩니다.
@@ -242,9 +243,9 @@ AEM Communities에서 일괄 처리 [커뮤니티 콘텐츠 중재](/help/commun
 
 태그 필터용 샘플을 설치하려면:
 
-1. AEM 작성자에서 패키지 관리자를 엽니다(`https://[aem-author]:4502/crx/packmgr/index.jsp`) 인스턴스 및 AEM 게시 (`https://[aem-publish]:4503/crx/packmgr/index.jsp`) 인스턴스.
+1. AEM 작성자에서 패키지 관리자를 엽니다(`https://[aem-author]:4502/crx/packmgr/index.jsp`) 인스턴스 및 AEM 게시(`https://[aem-publish]:4503/crx/packmgr/index.jsp`) 인스턴스.
 1. 패키지 빌드 `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` github 코드에서 를 참조하고 동일한 코드를 설치하고 활성화합니다.
-1. AEM 작성자에서 번들 콘솔을 엽니다( `https://[aem-author]:4502/system/console/bundles`) 인스턴스 및 AEM 게시 ( `https://[aem-publish]:4503/system/console/bundles`) 인스턴스.
+1. AEM 작성자에서 번들 콘솔을 엽니다( `https://[aem-author]:4502/system/console/bundles`) 인스턴스 및 AEM 게시( `https://[aem-publish]:4503/system/console/bundles`) 인스턴스.
 1. 패키지 빌드(`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) Github에서 을 설치하고 활성화합니다.
 1. 다음으로 이동 **/apps/social/moderation/facet** AEM 작성자의 노드(`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) 및 AEM 게시(`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) 인스턴스.
 1. 기술 사용자 추가 **communities-utility-reader** 포함 `jcr:read` 사용 권한.
@@ -259,7 +260,7 @@ AEM Communities에서 일괄 처리 [커뮤니티 콘텐츠 중재](/help/commun
 
    * 새 구성 요소로 설정 `sling:resourceType = social/moderation/v2/filters.`
 
-1. 이동 `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`.
+1. `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`로 이동합니다.
 
    * 새 구성 요소로 설정 `sling:resourceType = social/moderation/v2/modcontainer`.
 
@@ -356,7 +357,7 @@ AEM Communities에서 일괄 처리 [커뮤니티 콘텐츠 중재](/help/commun
 
 여러 UGC 게시물의 콘텐츠 영역 표시로 돌아가려면 세부 정보 보기 창의 오른쪽 상단 모서리에 있는 X를 선택합니다.
 
-예:
+예를 들면 다음과 같습니다.
 
 ![관리 기록](assets/moderation-history.png)
 
@@ -370,6 +371,6 @@ AEM Communities에서 일괄 처리 [커뮤니티 콘텐츠 중재](/help/commun
 
 여러 UGC 게시물의 콘텐츠 영역 표시로 돌아가려면 세부 정보 보기 창의 오른쪽 상단 모서리에 있는 X를 선택합니다.
 
-예:
+예를 들면 다음과 같습니다.
 
 ![view1](assets/view1.png)

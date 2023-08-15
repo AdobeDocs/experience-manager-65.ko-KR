@@ -11,9 +11,9 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ AEM Forms을 사용하면 텍스트 모듈에서 인라인 조건을 사용하�
 
 조건은 양식 데이터 모델/데이터 사전 또는 최종 사용자가 제공한 데이터 값에 대한 계산을 수행합니다. 인라인 조건을 사용하면 시간을 절약하고 사람의 실수를 줄이는 동시에 상황에 맞는 개인화된 대화형 커뮤니케이션/문자를 만들 수 있습니다.
 
-자세한 내용은 다음을 참조하십시오.
+자세한 내용은 다음 문서를 참조하십시오.
 
 * [대화형 통신 만들기](../../forms/using/create-interactive-communication.md)
 * [서신 관리 개요](/help/forms/using/cm-overview.md)
@@ -182,7 +182,7 @@ AEM Forms을 사용하면 텍스트 모듈에서 인라인 조건을 사용하�
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   그렇지 않으면 정보(여기서 트랜잭션)를 선택적으로 렌더링할 필요가 없는 경우 대화 상자에서 다음을 삭제하여 조건을 비워 두십시오. `${}`. 반복 표현식 창이 비어 있거나(반복이 필요하지 않으면 ${} 없이) 반복에 대한 유효한 조건이 들어 있는 경우 반복 표현식 저장이 활성화됩니다.
+   그렇지 않으면 정보(여기서 트랜잭션)를 선택적으로 렌더링할 필요가 없는 경우 대화 상자에서 다음을 삭제하여 조건을 비워 두십시오. `${}`. 반복 표현식 창이 비어 있을 때($ 없이) 반복 표현식 저장이 활성화됩니다.{} 반복이 필요하지 않거나 유효한 반복 조건이 포함된 경우.
 
 1. 동적 텍스트 서식을 지정할 구분자를 선택하고 확인 표시를 탭하여 저장합니다.
 
@@ -193,7 +193,7 @@ AEM Forms을 사용하면 텍스트 모듈에서 인라인 조건을 사용하�
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
-   핸들을 탭하여 반복의 팝업 메뉴를 볼 수 있습니다. 이 메뉴를 통해 반복 구조를 편집하거나 제거할 수 있습니다.
+   핸들을 탭하여 반복 구조를 편집하거나 제거할 수 있는 반복 팝업 메뉴를 볼 수 있습니다.
 
    ![5_repeatedremove](assets/5_repeateditremove.png)
 
@@ -206,7 +206,7 @@ AEM Forms을 사용하면 텍스트 모듈에서 인라인 조건을 사용하�
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
 
-   정적 텍스트가 트랜잭션 세부 사항과 반복됩니다. 정적 텍스트 반복은 이 절차에서 텍스트에 적용된 반복에 의해 촉진됩니다. ${DD_creditcard_TransactionAmount > 0.5} 조건은 USD .5 미만의 거래가 편지에서 렌더링되지 않도록 합니다.
+   정적 텍스트가 트랜잭션 세부 사항과 반복됩니다. 정적 텍스트 반복은 이 절차에서 텍스트에 적용된 반복에 의해 촉진됩니다. 조건, ${DD_creditcard_TransactionAmount > 0.5}는 USD .5 미만의 거래가 편지에서 렌더링되지 않도록 합니다.
 
    >[!NOTE]
    >
@@ -220,7 +220,7 @@ AEM Forms을 사용하면 텍스트 모듈에서 인라인 조건을 사용하�
 
 예를 들어, 다음 은 조건(녹색으로 서식 지정됨) 내에서 반복(빨간색으로 서식 지정됨)됩니다.
 
-반복이 신용 카드 트랜잭션을 렌더링하는 동안 조건 ${DD_creditcard_nooftransactions > 0}은(는) 하나 이상의 트랜잭션이 있는 경우에만 반복 구성이 렌더링되도록 합니다.
+반복이 신용 카드 거래를 렌더링하는 동안 조건 ${DD_creditcard_nooftransactions > 0} 하나 이상의 트랜잭션이 있는 경우에만 반복 구성이 렌더링되도록 합니다.
 
 ![반복상태상태](assets/repeatwitincondition.png)
 

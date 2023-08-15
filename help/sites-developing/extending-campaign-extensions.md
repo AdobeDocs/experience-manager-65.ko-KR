@@ -8,9 +8,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '524'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ AEM과 Campaign 간의 표준 통합은 JSON 및 JSSP(JavaScript Server Page)를
    * AEM과 Campaign 간에 연결이 작동합니다.
    * Campaign 클라우드 서비스가에 구성됨 **/content/geometrixx-outdoors**
 
-   이 예제에서 가장 중요한 개체는 입니다. **GenericCampaignConnector**&#x200B;를 사용하면 Adobe Campaign 측에서 jssp 파일을 호출(가져오기 및 게시)할 수 있습니다.
+   이 예제에서 가장 중요한 개체는 입니다. **GenericCampaignConnector**- Adobe Campaign 측에서 jssp 파일을 호출(가져오기 및 게시)할 수 있습니다.
 
    다음은 작은 코드 조각입니다.
 

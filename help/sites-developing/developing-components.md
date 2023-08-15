@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3454'
 ht-degree: 2%
 
 ---
@@ -202,7 +202,6 @@ newComponent (cq:Component)
 >* 관련 샘플 코드는에서 다룹니다 [코드 샘플 - 대화 상자 필드를 사용자 지정하는 방법](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
-
 #### 새 필드 만들기 {#creating-a-new-field}
 
 터치 지원 UI에 대한 위젯은 Granite UI 구성 요소로 구현됩니다.
@@ -347,7 +346,7 @@ Granite UI 및 Granite UI 구성 요소(위젯과 동일)의 필드 유효성 �
 
 기본 AEM에서는 참조 구성 요소만 확인합니다. 구성 요소를 추가하려면 OSGi 번들을 구성해야 합니다 **WCM 작성 콘텐츠 참조 구성**.
 
-확인할 속성과 함께 구성 요소를 지정하여 정의에 새 항목을 만듭니다. 예:
+확인할 속성과 함께 구성 요소를 지정하여 정의에 새 항목을 만듭니다. 예를 들면 다음과 같습니다.
 
 `/apps/<*your-Project*>/components/reference@parentPath`
 
@@ -370,7 +369,7 @@ AEM에서는 페이지에서 단락 시스템을 구성할 수 있으므로 [사
 
 이 동작과 필요한 에셋-구성 요소 관계를 구성할 수 있습니다.
 
-1. 페이지 디자인의 단락 정의 아래에 있습니다. 예:
+1. 페이지 디자인의 단락 정의 아래에 있습니다. 예를 들면 다음과 같습니다.
 
    * `/etc/designs/<myApp>/page/par`
 
@@ -378,7 +377,6 @@ AEM에서는 페이지에서 단락 시스템을 구성할 수 있으므로 [사
 
    * 이름: `cq:authoring`
    * 유형: `nt:unstructured`
-
 
 1. 이 아래에 모든 자산-구성 요소 매핑을 보유할 새 노드를 만듭니다.
 
@@ -396,27 +394,26 @@ AEM에서는 페이지에서 단락 시스템을 구성할 수 있으므로 [사
 
       * 유형: `String`
       * 값: 관련 자산이 속한 그룹(예: ) `media`
+
    * `assetMimetype`:
 
       * 유형: `String`
       * 값: 관련 에셋의 mime 유형(예: ) `image/*`
+
    * `droptarget`:
 
       * 유형: `String`
       * 값: 드롭 대상. 예: `image`
+
    * `resourceType`:
 
       * 유형: `String`
       * 값: 관련 구성 요소 리소스(예: ) `foundation/components/image`
+
    * `type`:
 
       * 유형: `String`
       * 값: 예: 유형 `Images`
-
-
-
-
-
 
 예를 보려면 다음을 참조하십시오.
 
@@ -426,14 +423,14 @@ AEM에서는 페이지에서 단락 시스템을 구성할 수 있으므로 [사
 
 GITHUB의 코드
 
-GitHub에서 이 페이지의 코드를 확인할 수 있습니다
+이 페이지의 코드는 GitHub에서 확인할 수 있습니다
 
 * [GitHub에서 AEM-project-Archetype 프로젝트 열기](https://github.com/adobe/aem-project-archetype)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/adobe/aem-project-archetype/archive/master.zip)
 
 >[!NOTE]
 >
->이제 를 사용할 때 UI 내에서 구성 요소 인스턴스의 자동 생성을 쉽게 구성할 수 있습니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 편집 가능한 템플릿 다음을 참조하십시오 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 정보.
+>이제 를 사용할 때 UI 내에서 구성 요소 인스턴스의 자동 생성을 쉽게 구성할 수 있습니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 편집 가능한 템플릿 다음을 참조하십시오 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 정보.
 
 ## AEM Brackets 확장 사용 {#using-the-aem-brackets-extension}
 
@@ -458,7 +455,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * 구성 요소
 
-   * 마이그레이션 [ `cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) 클래식 UI 관련 함수를 사용하는 코드
+   * 마이그레이션 [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) 클래식 UI 관련 함수를 사용하는 코드
    * RTE 플러그인, 자세한 내용은 [리치 텍스트 편집기 구성](/help/sites-administering/rich-text-editor.md).
    * [마이그레이션 `cq:listener` 코드](#migrating-cq-listener-code) 클래식 UI에 특정된 함수를 사용하는 경우
 

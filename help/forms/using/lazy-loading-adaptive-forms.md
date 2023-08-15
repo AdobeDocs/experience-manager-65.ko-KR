@@ -10,25 +10,25 @@ discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 3%
+source-wordcount: '1090'
+ht-degree: 8%
 
 ---
 
 # 소극적 로드 옵션이 있는 대용량 양식의 성능 향상{#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html) |
 | AEM 6.5 | 이 문서 |
 
 ## 소극적 로드 소개 {#introduction-to-lazy-loading}
 
-양식이 수백, 수천 개의 필드로 복잡해지고 커지면 런타임 시 양식을 렌더링할 때 최종 사용자가 긴 응답 시간을 경험하게 됩니다. 응답 시간을 최소화하기 위해 적응형 양식을 논리 조각으로 나누고 조각을 표시해야 할 때까지 조각의 초기화 또는 로드를 지연하도록 구성할 수 있습니다. 이를 지연 로드라고 합니다. 또한 사용자가 양식의 다른 섹션으로 이동한 후 조각이 더 이상 표시되지 않으면 지연 로드를 위해 구성된 조각이 언로드됩니다.
+양식이 수백, 수천 개의 필드로 복잡해지고 커지면 런타임 시 양식을 렌더링할 때 최종 사용자가 긴 응답 시간을 경험하게 됩니다. 응답 시간을 최소화하기 위해 적응형 양식을 논리적 조각으로 나누고 조각을 표시해야 할 때까지 조각의 초기화 또는 로드를 지연하도록 구성할 수 있습니다. 이를 지연 로드라고 합니다. 또한 사용자가 양식의 다른 섹션으로 이동한 후 조각이 더 이상 표시되지 않으면 지연 로드를 위해 구성된 조각이 언로드됩니다.
 
 레이지 로드를 구성하기 전에 먼저 요구 사항과 준비 단계를 이해하겠습니다.
 

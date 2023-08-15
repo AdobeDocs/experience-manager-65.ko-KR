@@ -1,14 +1,14 @@
 ---
 title: Campaign Management
-description: 캠페인 관리는 디지털 마케터에게 개인화된 콘텐츠를 제공하여 방문자를 위한 전용 경험을 만들 수 있는 기회를 제공합니다. 이를 통해 웹, 이메일 및 모바일 서비스에서 마케팅 캠페인을 오케스트레이션하여 방문자를 참여시킬 수 있습니다.
+description: 캠페인 관리는 디지털 마케터에게 개인화된 콘텐츠를 제공하여 방문자를 위한 전용 경험을 만들 수 있는 기회를 제공합니다. 웹, 이메일 및 모바일 서비스에서 마케팅 캠페인을 오케스트레이션하여 방문자를 참여시킬 수 있습니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 캠페인 관리는 디지털 마케터에게 개인화된 콘텐츠를 제공하여 방문자를 위한 전용 경험을 만들 수 있는 기회를 제공합니다.
 
-이를 통해 웹, 이메일 및 모바일 서비스에서 마케팅 캠페인을 오케스트레이션하여 방문자를 참여시킬 수 있습니다. 콘텐츠를 만들고, 방문자를 세그먼트화하고, 특정 사용자 프로필에 대한 타겟팅된 콘텐츠를 푸시하고, 홍보하고, 여러 채널에서 캠페인을 관리할 수 있습니다.
+웹, 이메일 및 모바일 서비스에서 마케팅 캠페인을 오케스트레이션하여 방문자를 참여시킬 수 있습니다. 콘텐츠를 만들고, 방문자를 세그먼트화하고, 특정 사용자 프로필에 대한 타겟팅된 콘텐츠를 푸시하고, 홍보하고, 여러 채널에서 캠페인을 관리할 수 있습니다.
 
 이 문서에서는 캠페인을 구성하는 다양한 요소에 대해 설명합니다. 자세한 내용은 다음 문서에서 확인할 수 있습니다.
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 * [랜딩 페이지](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Target 오퍼](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
 * [마케팅 캠페인 관리자 작업](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
-* [세그먼테이션 이해](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
+* [세분화 이해](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
 * [캠페인 설정](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 캠페인 관리는 다양한 요소로 구성됩니다.
@@ -57,7 +57,7 @@ Adobe Experience Manager(AEM)에서 브랜드는 최상위 수준의 단위이�
 
    * **Adobe Target**
 
-     이를 통해 마케터에게 지속적인 온라인 콘텐츠 및 고객과 관련된 오퍼를 더욱 강력하게 만드는 데 필요한 기능을 갖춘 전환 웹 사이트 최적화 도구를 제공하는 Adobe Target Target(이전 Test&amp;Offer)와 통합할 수 있습니다. Adobe Target은 테스트 디자인 및 실행, 대상 세그먼트 만들기 및 단일 애플리케이션에서 콘텐츠 타겟팅을 위한 직관적인 인터페이스를 제공합니다.
+     이를 통해 Adobe Target(이전의 Test&amp;Target)와 통합하여 마케터에게 지속적인 온라인 콘텐츠 및 고객 산출 더 큰 전환과 관련된 오퍼를 만드는 데 필요한 기능을 갖춘 전환 웹 사이트 최적화 도구를 제공합니다. Adobe Target은 테스트 디자인 및 실행, 대상 세그먼트 만들기 및 단일 애플리케이션에서 콘텐츠 타겟팅을 위한 직관적인 인터페이스를 제공합니다.
 
 * **터치포인트**
 

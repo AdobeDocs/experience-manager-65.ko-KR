@@ -2,7 +2,7 @@
 title: 적응형 양식 지역화를 위한 새 로케일 지원
 seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms을 사용하면 적응형 양식을 현지화하기 위한 새 로케일을 추가할 수 있습니다. 기본적으로 지원되는 로케일은 영어, 프랑스어, 독일어 및 일본어입니다.
-seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
+seo-description: AEM Forms lets you add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
 uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,10 +12,10 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 1%
+source-wordcount: '814'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
 | AEM 6.5 | 이 문서 |
 
 ## 로케일 사전 정보 {#about-locale-dictionaries}
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 적응형 양식의 로케일을 식별하는 방법에는 두 가지가 있습니다. 적응형 양식이 렌더링되면 은 요청된 로케일을 식별합니다.
 
-* 를 보는 중 `[local]` 적응형 양식 URL의 선택기. URL 형식은 다음과 같습니다. `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. 사용 `[local]` 선택기를 사용하여 적응형 양식을 캐싱할 수 있습니다.
+* 를 보는 중 `[local]` 적응형 양식 URL의 선택기. URL 형식은 `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`입니다. 사용 `[local]` 선택기를 사용하여 적응형 양식을 캐싱할 수 있습니다.
 
 * 다음 매개 변수를 지정된 순서로 봅니다.
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 로케일 정보가 없으면 적응형 양식이 양식의 원래 언어로 전달됩니다. 원래 언어는 적응형 양식을 개발할 때 사용되는 언어입니다.
 
-요청한 로케일에 대한 클라이언트 라이브러리가 없으면 로케일에 있는 언어 코드에 대한 클라이언트 라이브러리를 확인합니다. 예를 들어 요청된 로케일이 `en_ZA` (남아프리카 영어) 및 클라이언트 라이브러리 `en_ZA` 이(가) 존재하지 않습니다. 적응형 양식은 다음 작업에 대한 클라이언트 라이브러리를 사용합니다. `en` (영어) 언어(있는 경우). 단, 존재하지 않는 경우 적응형 양식에서는 사전을 사용합니다. `en` 로케일.
+요청한 로케일에 대한 클라이언트 라이브러리가 없으면 로케일에 있는 언어 코드에 대한 클라이언트 라이브러리를 확인합니다. 예를 들어 요청된 로케일이 `en_ZA` (남아프리카 영어) 및 클라이언트 라이브러리 `en_ZA` 이(가) 존재하지 않습니다. 적응형 양식은 다음 작업에 대한 클라이언트 라이브러리를 사용합니다. `en` (영어) 언어(있는 경우). 단, 존재하지 않는 경우 적응형 양식에서는 다음 작업을 위해 사전을 사용합니다 `en` 로케일.
 
 ## 지원되지 않는 로케일에 대한 현지화 지원 추가 {#add-localization-support-for-non-supported-locales}
 

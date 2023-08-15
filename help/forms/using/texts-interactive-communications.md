@@ -10,7 +10,7 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 0%
@@ -58,6 +58,7 @@ ht-degree: 0%
       * [다른 응용 프로그램에서 붙여넣기 형식의 텍스트를 복사합니다.](#paste)
 
       * [텍스트 부분 강조 표시](#highlight)
+
    * [반복](/help/forms/using/cm-inline-condition.md)
    * [특수 문자](#special)
    * [텍스트 검색 및 바꾸기](#searching)
@@ -117,7 +118,7 @@ ht-degree: 0%
 
    ![변수 창](assets/variablespane.png)
 
-1. 누르기 **[!UICONTROL 만들기]**.
+1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 
    변수 만들기 창이 나타납니다.
 
@@ -128,7 +129,7 @@ ht-degree: 0%
    * **[!UICONTROL 유형]** : 변수 유형(문자열, 숫자, 부울 또는 날짜)을 선택합니다.
    * **[!UICONTROL 특정 값만 허용]** : 문자열 및 숫자 변수의 경우 에이전트가 에이전트 UI의 자리 표시자에 대한 특정 값 세트에서 선택하는지 확인할 수 있습니다. 값 집합을 지정하려면 이 옵션을 선택한 다음 **[!UICONTROL 값]** 필드.
 
-1. 누르기 **[!UICONTROL 만들기]**.
+1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 
    변수가 만들어지고 [변수] 창에 나열됩니다.
 
@@ -260,7 +261,7 @@ Microsoft® Word 문서의 텍스트를 직접 복사하여 편집 가능한 텍
 
 많은 양의 텍스트가 포함된 텍스트 문서 조각을 사용하여 작업할 때 특정 텍스트 문자열을 검색해야 합니다. 특정 텍스트 문자열을 대체 문자열로 대체해야 할 수도 있습니다.
 
-찾기 및 바꾸기 기능을 사용하면 텍스트 문서 조각에서 텍스트 문자열을 검색하고 바꿀 수 있습니다. 이 기능에는 강력한 정규 표현식 검색도 포함됩니다.
+찾기 및 바꾸기 기능을 사용하면 텍스트 문서 조각에서 텍스트 문자열을 검색(및 바꾸기)할 수 있습니다. 이 기능에는 강력한 정규 표현식 검색도 포함됩니다.
 
 1. 다음에 대한 텍스트 문서 단편 열기 [편집](#edittext).
 1. 누르기 **[!UICONTROL 찾기 및 바꾸기]**.

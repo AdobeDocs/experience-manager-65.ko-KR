@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3572'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 2%
 
 Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 
-* **왼쪽 탐색 패널** - 이 패널을 통해 패키지 목록을 필터링하고 정렬할 수 있습니다.
+* **왼쪽 탐색 패널** - 이 패널을 사용하면 패키지 목록을 필터링하고 정렬할 수 있습니다.
 * **패키지 목록** - 왼쪽 탐색 패널의 선택 항목별로 필터링되고 정렬된 인스턴스의 패키지 목록입니다.
 * **활동 로그** - 이 패널은 처음에 최소화되며, 패키지를 빌드하거나 설치할 때와 같은 패키지 관리자의 활동을 자세히 설명하도록 확장됩니다. [작업 로그] 탭에는 다음과 같은 추가 버튼이 있습니다.
    * **로그 지우기**
@@ -492,9 +492,9 @@ POST 요청을 통해 유효성을 검사할 때 응답은 JSON 개체로 다시
 >[!CAUTION]
 >
 >* 디지털 자산을 설치하는 경우 다음을 수행해야 합니다.
-   >  먼저 WorkflowLauncher를 비활성화합니다.
-   >  OSGi 콘솔의 구성 요소 메뉴 옵션을 사용하여 을 비활성화합니다
-   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>  먼저 WorkflowLauncher를 비활성화합니다.
+>  OSGi 콘솔의 구성 요소 메뉴 옵션을 사용하여 을 비활성화합니다
+>  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* 그런 다음 설치가 완료되면 WorkflowLauncher를 다시 활성화합니다.
 >
 >WorkflowLauncher를 비활성화하면 Assets Importer 프레임워크가 설치 시 의도하지 않게 에셋을 조작하지 않을 수 있습니다.
@@ -515,7 +515,7 @@ POST 요청을 통해 유효성을 검사할 때 응답은 JSON 개체로 다시
 
 1. 클릭 **설치**.
 
-1. 작업 로그에는 설치 진행 상황이 자세히 설명되어 있습니다.
+1. 작업 로그에는 설치 진행률이 자세히 설명되어 있습니다.
 
 설치가 완료되고 성공하면 패키지 목록이 업데이트되고 **설치됨** 패키지 상태에 나타납니다.
 

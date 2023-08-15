@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2531'
 ht-degree: 9%
 
 ---
@@ -112,6 +112,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 >다음에 정보를 입력해야 합니다. **대체 텍스트** 의 필드 **고급** 탭하거나 이미지를 저장할 수 없고 다음과 같은 오류 메시지가 표시됩니다.
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 다음 예는 표시되는 이미지(캠페인) 구성 요소를 보여 줍니다.
 
@@ -132,8 +133,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 링크 사용 방법에 대한 추가 정보를 추가합니다.
 
 * **링크 유형**
-드롭다운 목록에서 다음 중 하나를 선택합니다 
-**사용자 정의 URL** 및 **적응형 문서**. 이 필드는 필수입니다. 사용자 지정 URL을 선택하는 경우 링크 URL을 제공할 수 있습니다. 적응형 문서를 선택하면 문서 경로를 제공할 수 있습니다.
+드롭다운 목록에서 다음 중 하나를 선택합니다 **사용자 정의 URL** 및 **적응형 문서**. 이 필드는 필수입니다. 사용자 지정 URL을 선택하는 경우 링크 URL을 제공할 수 있습니다. 적응형 문서를 선택하면 문서 경로를 제공할 수 있습니다.
 
 * **추가 URL 매개 변수**
 추가 URL 매개 변수를 추가합니다. 항목 추가 를 클릭하여 여러 항목을 추가합니다.
@@ -143,6 +143,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 >다음에 정보를 입력해야 합니다. **링크 유형** 의 필드 **URL 정보** 탭하거나, 구성 요소를 저장할 수 없고 다음과 같은 오류 메시지가 표시됩니다.
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 다음 예는 표시되는 링크 (캠페인) 구성 요소를 보여 줍니다.
 
@@ -192,6 +193,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 >다음 **대체 텍스트** 의 필드 **고급** 탭이 필요하거나 구성 요소를 저장할 수 없으며 다음 오류 메시지가 표시됩니다.
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 다음 예는 표시되는 텍스트 및 이미지(캠페인) 구성 요소를 보여 줍니다.
 
@@ -247,7 +249,7 @@ Adobe Campaign과 통합되도록 구성된 양식을 열면 **Adobe Campaign** 
   <tr>
    <td><p>확인란(캠페인)</p> </td>
    <td><p>부울</p> </td>
-   <td><p>더 이상 연락하지 않음(모든 채널에서)</p> </td>
+   <td><p>아니요 긴 연락처(모든 채널에서)</p> </td>
   </tr>
   <tr>
    <td><p>날짜 필드(캠페인)</p> <p>날짜 필드/HTML 5(캠페인)</p> </td>

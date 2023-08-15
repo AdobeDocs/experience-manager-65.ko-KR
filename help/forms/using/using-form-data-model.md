@@ -10,10 +10,10 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 1%
+source-wordcount: '1273'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -111,7 +111,7 @@ AEM Forms 데이터 통합을 사용하면 다양한 백엔드 데이터 소스�
 
 AEM Forms은 양식 데이터 모델을 기반으로 하는 적응형 양식 및 대화형 커뮤니케이션에 대해 활성화할 수 있는 기본 양식 데이터 모델 미리 채우기 서비스를 제공합니다. 미리 채우기 서비스는 적응형 양식 및 대화형 통신에서 데이터 모델 개체에 대한 데이터 소스를 쿼리하며, 이에 따라 양식을 렌더링하거나 통신을 렌더링하는 동안 데이터를 미리 채웁니다.
 
-적응형 양식에 대해 양식 데이터 모델 미리 채우기 서비스를 활성화하려면 적응형 양식 컨테이너 속성을 열고 을 선택합니다 **[!UICONTROL 양식 데이터 모델 미리 채우기 서비스]** 다음에서 **[!UICONTROL 미리 채우기 서비스]** 기본 아코디언의 드롭다운 그런 다음 속성을 저장합니다.
+적응형 양식에 대해 양식 데이터 모델 미리 채우기 서비스를 활성화하려면 적응형 양식 컨테이너 속성을 열고 을 선택합니다 **[!UICONTROL 양식 데이터 모델 미리 채우기 서비스]** 다음에서 **[!UICONTROL 미리 채우기 서비스]** 기본 아코디언에 있는 드롭다운 그런 다음 속성을 저장합니다.
 
 ![미리 채우기 서비스](assets/prefill-service.png)
 
@@ -135,7 +135,7 @@ AEM Forms은 양식 데이터 모델을 기반으로 하는 적응형 양식 및
 
 1. 양식 데이터 모델에 이진 속성을 포함하는 데이터 모델 개체를 추가합니다.
 1. 적응형 양식에서 을(를) 드래그 앤 드롭합니다 **[!UICONTROL 첨부 파일]** 구성 요소 브라우저의 구성 요소를 적응형 양식으로 전환합니다.
-1. 탭하여 추가된 구성 요소를 선택하고 탭합니다. ![settings_icon](assets/settings_icon.png) 구성 요소의 속성 브라우저를 엽니다.
+1. 탭하여 추가된 구성 요소를 선택하고 탭합니다. ![settings_icon](assets/settings_icon.png) 구성 요소에 대한 속성 브라우저를 엽니다.
 1. 바인드 참조 필드에서 을 누릅니다. ![foldersearch_18](assets/foldersearch_18.png) 그리고 양식 데이터 모델에 추가한 이진 속성을 선택하여 이동합니다. 필요에 따라 다른 속성을 구성합니다.
 
    누르기 ![확인 단추](assets/check-button.png) 속성을 저장합니다. 이제 첨부 파일 필드가 양식 데이터 모델의 이진 속성에 바인딩됩니다.
@@ -144,7 +144,7 @@ AEM Forms은 양식 데이터 모델을 기반으로 하는 적응형 양식 및
 
 ## 규칙을 사용하여 적응형 양식에서 서비스 호출 {#invoke-services}
 
-양식 데이터 모델을 기반으로 하는 적응형 양식에서 다음을 수행할 수 있습니다 [규칙 만들기](../../forms/using/rule-editor.md) 양식 데이터 모델에 구성된 서비스를 호출합니다. 다음 **[!UICONTROL 서비스 호출]** 규칙에 있는 작업은 양식 데이터 모델에서 사용 가능한 모든 서비스를 나열하며, 이를 통해 서비스에 대한 입력 및 출력 필드를 선택할 수 있습니다. 다음을 사용할 수도 있습니다 **값 설정** 양식 데이터 모델 서비스를 호출하고 필드의 값을 서비스에서 반환되는 출력으로 설정하는 규칙 유형입니다.
+양식 데이터 모델을 기반으로 하는 적응형 양식에서 다음을 수행할 수 있습니다 [규칙 만들기](../../forms/using/rule-editor.md) 양식 데이터 모델에 구성된 서비스를 호출합니다. 다음 **[!UICONTROL 서비스 호출]** 규칙의 작업은 양식 데이터 모델에서 사용 가능한 모든 서비스를 나열하며 서비스에 대한 입력 및 출력 필드를 선택할 수 있도록 해줍니다. 다음을 사용할 수도 있습니다 **값 설정** 양식 데이터 모델 서비스를 호출하고 필드의 값을 서비스에서 반환되는 출력으로 설정하는 규칙 유형입니다.
 
 예를 들어, 다음 규칙은 직원 ID를 입력으로 취하며 반환된 값이 양식의 해당 종속 ID, 성, 이름 및 성별 필드에 채워지는 get 서비스를 호출합니다.
 

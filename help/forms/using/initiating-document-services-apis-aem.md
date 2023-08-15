@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ AEM Forms은 다음 어셈블러 서비스 API를 호출하는 사용자 지정 
 
 다음 **DDX 호출** 워크플로우에서 `Invoke` 문서를 어셈블하거나 디스어셈블하고, PDF에 워터마크를 추가하는 데 사용할 수 있는 어셈블러 서비스 API입니다.
 
-1. 드래그 **[!UICONTROL DDX 호출]** 사이드 킥의 Forms Workflow 탭 아래에 있는 워크플로우 단계입니다.
+1. 드래그 **[!UICONTROL DDX 호출]** Sidekick의 Forms Workflow 탭 아래에 있는 워크플로우 단계입니다.
 1. 추가된 워크플로 단계를 두 번 클릭하여 구성 요소를 편집합니다.
 1. 구성 요소 편집 대화 상자에서 입력 문서, 환경 옵션 및 출력 문서를 구성하고 **[!UICONTROL 확인]**.
 
@@ -69,7 +69,7 @@ DDX 호출 워크플로에는 다음 입력 문서가 필요합니다.
 
 PDF/A로 변환 워크플로우 단계는 `toPDFA` 어셈블러 서비스 API입니다. PDF 문서를 PDF/A 규격 문서로 변환하는 데 사용됩니다.
 
-1. 드래그 **[!UICONTROL 변환 대상 PDFA]** 사이드 킥의 Forms Workflow 탭 아래에 있는 워크플로우 단계입니다.
+1. 드래그 **[!UICONTROL 변환 대상 PDFA]** Sidekick의 Forms Workflow 탭 아래에 있는 워크플로우 단계입니다.
 
 1. 추가된 워크플로 단계를 두 번 클릭하여 구성 요소를 편집합니다.
 1. 구성 요소 편집 대화 상자에서 입력 문서, 변환 옵션 및 출력 문서를 구성하고 **[!UICONTROL 확인]**.
@@ -108,7 +108,7 @@ PDF 양식 렌더링 워크플로우는 의 래퍼입니다 `renderPDFForm` XDP 
 
 ### 렌더링 PDF 양식 워크플로 {#render-pdf-form-workflow}
 
-1. 사이드 킥의 Forms Workflow 탭 아래에 있는 PDF 양식 렌더링 워크플로 단계를 드래그합니다.
+1. Sidekick의 Forms Workflow 탭 아래에 있는 PDF 양식 렌더링 워크플로 단계를 드래그합니다.
 1. 추가된 워크플로 단계를 두 번 클릭하여 구성 요소를 편집합니다.
 1. 구성 요소 편집 대화 상자에서 입력 문서, 출력 문서 및 추가 매개 변수를 구성하고 **[!UICONTROL 확인]**.
 
@@ -137,7 +137,7 @@ PDF 양식 렌더링 워크플로우는 의 래퍼입니다 `renderPDFForm` XDP 
 
 ### 비대화형 PDF 출력 워크플로우 생성   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
-1. 사이드 킥의 Forms Workflow 탭 아래에 있는 비대화형 PDF 출력 생성 워크플로우를 드래그합니다.
+1. Sidekick의 Forms Workflow 탭 아래에 있는 비대화형 PDF 출력 생성 워크플로우를 드래그합니다.
 1. 추가된 워크플로 단계를 두 번 클릭하여 구성 요소를 편집합니다.
 1. 구성 요소 편집 대화 상자에서 입력 문서, 출력 문서 및 추가 매개 변수를 구성하고 **[!UICONTROL 확인]**.
 

@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 92%
+source-wordcount: '1138'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
    * AEM 콘텐츠 조각 편집기에서 작성합니다.
    * 콘텐츠 변형을 만들 수 있습니다.
    * 관련 콘텐츠를 콘텐츠 조각과 연결할 수 있습니다.
-   * 버전 관리/워크플로우를 사용할 수 있습니다.
+   * 버전 관리/워크플로를 사용할 수 있습니다.
    * 콘텐츠 조각을 공유할 수 있습니다.
    * 번역을 중앙에서 관리할 수 있습니다.
 
@@ -89,7 +89,7 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
    >
    >
    >
-   >    * [응답형 레이아웃](/help/sites-authoring/responsive-layout.md)
+   >    * [반응형 레이아웃](/help/sites-authoring/responsive-layout.md)
    >    * [페이지 콘텐츠 편집](/help/sites-authoring/editing-content.md)
    >
    >
@@ -135,7 +135,7 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
 
 ### 조각 편집기에 대한 빠른 연결 {#quick-connection-to-fragment-editor}
 
-구성 요소 도구 모음에서 **편집** 아이콘을 사용하여 자산을 편집할 조각 소스를 열 수 있습니다. 이 경우 [콘텐츠 조각을 편집하고 관리](/help/assets/content-fragments/content-fragments.md)할 수 있습니다.
+구성 요소 도구 모음에서 **편집** 아이콘을 사용하여 자산을 편집할 조각 소스를 열 수 있습니다. 이렇게 하면 다음 작업을 수행할 수 있습니다 [콘텐츠 조각 편집 및 관리](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -145,7 +145,7 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
 
 특정 콘텐츠 조각이 페이지에 추가되면 조각의 각 HTML 단락 사이(및 상단/하단)에 **구성 요소를 여기로 드래그하십시오.** 플레이스홀더가 있습니다.
 
-이렇게 하면 루트 조각을 변경하지 않고도 조각 콘텐츠 [사이(즉, 중간 콘텐츠)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)(사용 가능한 모든 지점)에 콘텐츠를 더 추가할 수 있습니다.
+이렇게 하면 컨텐츠를 추가할 수 있습니다 [중간(즉, 중간 컨텐츠)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) 루트 조각을 변경하지 않고도 사용 가능한 모든 포인트에서 조각 콘텐츠를 사용할 수 있습니다.
 
 중간 콘텐츠에서 다음 작업을 수행할 수 있습니다.
 

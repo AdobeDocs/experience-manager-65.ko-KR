@@ -1,16 +1,12 @@
 ---
 title: 사용자 추가 및 구성
-seo-title: Adding and configuring users
 description: 관리 콘솔의 사용자 관리 설정을 사용하면 사용자를 만들거나 삭제하고 다른 사용자 설정을 구성할 수 있습니다.
-seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
-uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
-discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1733'
 ht-degree: 0%
 
 ---
@@ -136,7 +132,6 @@ MySQL을 사용하는 경우 사용자 ID에 확장 문자가 포함될 수 있�
 
    * 그룹에서 사용자를 제거하려면 그룹의 확인란을 선택하고 **[!UICONTROL 삭제]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL 저장]**.
 
-
 1. 사용자의 역할을 편집하려면 **[!UICONTROL 역할 할당]** 을(를) 탭하여 다음 작업을 수행합니다.
 
    * 역할 목록을 표시하려면 **[!UICONTROL 역할 찾기]**.
@@ -166,7 +161,7 @@ MySQL을 사용하는 경우 사용자 ID에 확장 문자가 포함될 수 있�
 * 서신 관리 솔루션
 * AEM Forms 작업 영역
 
-   ***참고&#x200B;**: Flex Workspace가 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.*
+  ***참고&#x200B;**: Flex Workspace가 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.*
 
 * forms 관리자
 * 프로세스 보고

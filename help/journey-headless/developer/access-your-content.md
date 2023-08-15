@@ -2,10 +2,10 @@
 title: AEM 게재 API를 통해 콘텐츠에 액세스하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 GraphQL 쿼리를 통해 콘텐츠 조각의 콘텐츠에 액세스하는 방법을 대해 알아봅니다.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 96%
+source-wordcount: '1333'
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ AEM(Adobe Experience Manager)을 사용하면 AEM GraphQL API를 사용하여 �
 
 >[!NOTE]
 >
->AEM GraphQL API는 표준 GraphQL API 사양에 따라 사용자 지정된 구현입니다.
+>AEM GraphQL API는 표준 GraphQL API 사양에 따라 사용자 정의된 구현입니다.
 
 ## GraphQL - 소개 {#graphql-introduction}
 
@@ -79,7 +79,7 @@ GraphQL is used in various locations in AEM; for example:
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-AEM GraphQL API는 표준 GraphQL API 사양을 기반으로 사용자 지정된 버전으로 콘텐츠 조각에서 (복잡한) 쿼리를 수행하도록 특별히 구성되었습니다.
+AEM GraphQL API는 표준 GraphQL API 사양을 기반으로 하는 사용자 지정된 버전으로, 콘텐츠 조각에서 (복잡한) 쿼리를 수행할 수 있도록 특별히 구성되어 있습니다.
 
 콘텐츠는 콘텐츠 조각 모델에 따라 구조화되므로 콘텐츠 조각을 사용합니다. 이로써 GraphQL의 기본 요구 사항을 충족합니다.
 
@@ -133,7 +133,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEMenvironment:
 
 * 콘텐츠 조각 모델을 정의할 때 사용 가능한 특정 데이터 유형입니다.
 * 특정 콘텐츠 조각 모델에 따라 다른 조각을 참조합니다.
-* 구조화된 데이터를 만든 다음 검색할 수 있습니다.
+* 구조화된 데이터를 만들고 검색할 수 있습니다.
 
    * **다중 피드**&#x200B;로 정의된 경우 주요 조각에서 여러 하위 조각을 참조(검색)할 수 있습니다.
 

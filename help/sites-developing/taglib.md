@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2465'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ AEM 구성 요소의 jsp 스크립트를 개발할 때 스크립트 상단에 �
 다음을 사용해야 함 `<cq:include>` 또는 `<sling:include>`?
 
 * AEM Adobe 구성 요소를 개발할 때에는 다음을 사용하는 것이 좋습니다. `<cq:include>`.
-* `<cq:include>` script 속성을 사용할 때 스크립트 파일의 이름을 직접 포함할 수 있습니다. 이는 구성 요소 및 리소스 유형 상속을 고려하며, 선택기 및 확장을 사용하여 Sling의 스크립트 해상도를 엄격히 준수하는 것보다 간단한 경우가 많습니다.
+* `<cq:include>` script 속성을 사용할 때 스크립트 파일을 해당 이름으로 직접 포함할 수 있습니다. 이는 구성 요소 및 리소스 유형 상속을 고려하며, 선택기 및 확장을 사용하여 Sling의 스크립트 해상도를 엄격히 준수하는 것보다 간단한 경우가 많습니다.
 
 ### &lt;cq:includeClientLib> {#cq-includeclientlib}
 

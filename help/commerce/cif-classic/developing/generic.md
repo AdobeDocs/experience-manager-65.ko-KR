@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1860'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >[API 설명서](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 을 사용할 수도 있습니다.
 
-통합 프레임워크는 API와의 통합 계층을 포함합니다. 이를 통해 특정 eCommerce 엔진과 관계없이 eCommerce 기능을 위한 AEM 구성 요소를 빌드할 수 있습니다. 또한 내부 CRX 데이터베이스를 사용하거나 전자 상거래 시스템을 연결하고 제품 데이터를 AEM으로 가져올 수 있습니다.
+통합 프레임워크는 API와의 통합 계층을 포함합니다. 이를 통해 특정 eCommerce 엔진과 관계없이 eCommerce 기능을 위한 AEM 구성 요소를 빌드할 수 있습니다. 또한 내부 CRX 데이터베이스를 사용하거나 eCommerce 시스템을 연결하고 제품 데이터를 AEM으로 가져올 수 있습니다.
 
 통합 레이어를 사용하기 위해 다양한 AEM 구성 요소가 제공됩니다. 현재는 다음과 같습니다.
 

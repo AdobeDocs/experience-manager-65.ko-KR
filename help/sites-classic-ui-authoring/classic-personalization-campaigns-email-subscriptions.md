@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ AEM 페이지를 구성하려면 다음 작업을 수행하십시오.
 1. 다음 위치로 이동 **웹 사이트** 탭.
 1. 서비스에 대해 구성해야 하는 페이지를 선택합니다. 페이지를 마우스 오른쪽 단추로 클릭하고 **속성**.
 
-1. 선택 **Cloud Services** 그러면 **서비스 추가**. 사용 가능한 구성 목록에서 구성을 선택합니다.
+1. 선택 **Cloud Service** 그러면 **서비스 추가**. 사용 가능한 구성 목록에서 구성을 선택합니다.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 

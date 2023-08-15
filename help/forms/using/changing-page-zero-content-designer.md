@@ -10,9 +10,9 @@ discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
 feature: Adaptive Forms
 exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] 버전 디자이너를 사용하면 Page Zero에 표시되는 메시지를 변경할 수 있습니다. Page Zero 메시지를 변경하려면 다음 단계를 수행합니다.
+[!DNL AEM Forms] 디자이너 버전을 사용하면 0페이지에 표시되는 메시지를 변경할 수 있습니다. Page Zero 메시지를 변경하려면 다음 단계를 수행합니다.
 
 1. 다음을 보유하는지 확인합니다. [!DNL AEM Forms] 설치된 Designer 버전입니다. 디자이너의 정보 화면에서 버전을 확인할 수 있습니다.
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 1. 다음에서 [!UICONTROL 양식 속성] 대화 상자, 클릭 ![플러스](assets/plus.png) (더하기 아이콘) 을 클릭하여 사용자 지정 속성을 추가합니다.
 
 1. 지정 **_pagezerocontent** 속성 이름으로 사용됩니다.
-1. 새 Page Zero 메시지를 서식 있는 텍스트 형식으로 값으로 추가합니다. 예:
+1. 새 Page Zero 메시지를 서식 있는 텍스트 형식으로 값으로 추가합니다. 예를 들면 다음과 같습니다.
 
 
    `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader.</p></body>`

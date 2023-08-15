@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5530'
+source-wordcount: '5529'
 ht-degree: 2%
 
 ---
@@ -481,11 +481,11 @@ Microsoft® Windows에서 PDF Generator 서비스는 Adobe Acrobat을 사용하�
 
 ### (Windows만 해당) HTML-PDF 변환을 위한 기본 경로 구성 {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-PDF 생성기 서비스는 HTML 파일을 PDF 문서로 변환하는 여러 경로(Webkit, Acrobat WebCapture(Windows만 해당) 및 PhantomJS)를 제공합니다. Adobe은 동적 콘텐츠를 처리할 수 있고 32비트 라이브러리, 32비트 JDK에 대한 종속성이 없거나 추가 글꼴이 필요하지 않으므로 PhantomJS 경로를 사용하는 것이 좋습니다. 또한 PhantomJS 경로는 변환을 실행하기 위해 sudo 또는 root 액세스가 필요하지 않습니다.
+PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 여러 경로(Webkit, Acrobat WebCapture(Windows에만 해당) 및 PhantomJS)를 제공합니다. Adobe은 동적 콘텐츠를 처리할 수 있고 32비트 라이브러리, 32비트 JDK에 대한 종속성이 없거나 추가 글꼴이 필요하지 않으므로 PhantomJS 경로를 사용하는 것이 좋습니다. 또한 PhantomJS 경로는 변환을 실행하기 위해 sudo 또는 root 액세스가 필요하지 않습니다.
 
 HTML-PDF 전환의 기본 기본 기본 경로는 Webkit입니다. 변환 경로를 변경하려면:
 
-1. AEM 작성자 인스턴스에서 **[!UICONTROL 도구]**> **[!UICONTROL Forms]**> **[!UICONTROL PDF 생성기 구성]**.
+1. AEM 작성자 인스턴스에서 **[!UICONTROL 도구]**> **[!UICONTROL Forms]**> **[!UICONTROL 구성 PDF Generator]**.
 
 1. 다음에서 **[!UICONTROL 일반 구성]** 탭에서 원하는 변환 경로를 선택합니다. **[!UICONTROL HTML에서 PDF 전환에 대한 기본 경로]** 드롭다운.
 
@@ -515,7 +515,7 @@ DocAssurance 서비스는 PDF 문서에 사용 권한을 적용할 수 있습니
 인증서를 구성하려면 다음 단계를 수행하십시오.
 
 1. 관리자로 AEM 작성자 인스턴스에 로그인합니다. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**.
-1. 다음을 클릭합니다. **[!UICONTROL 이름]** 사용자 계정의 필드입니다. 다음 **[!UICONTROL 사용자 설정 편집]** 페이지가 열립니다. AEM 작성자 인스턴스에서 인증서는 KeyStore에 상주합니다. 이전에 KeyStore를 만들지 않은 경우 **[!UICONTROL KeyStore 만들기]** 및 KeyStore에 대한 새 암호를 설정합니다. 서버에 이미 KeyStore가 있는 경우 이 단계를 건너뜁니다.  Adobe의 Reader 확장 인증서를 사용하는 경우 Keystore 파일 암호는 항상 개인 키 암호와 동일합니다.
+1. 다음을 클릭합니다. **[!UICONTROL 이름]** 사용자 계정의 필드입니다. 다음 **[!UICONTROL 사용자 설정 편집]** 페이지가 열립니다. AEM 작성자 인스턴스에서 인증서는 KeyStore에 있습니다. 이전에 KeyStore를 만들지 않은 경우 **[!UICONTROL KeyStore 만들기]** 및 KeyStore에 대한 새 암호를 설정합니다. 서버에 이미 KeyStore가 있는 경우 이 단계를 건너뜁니다.  Adobe의 Reader 확장 인증서를 사용하는 경우 Keystore 파일 암호는 항상 개인 키 암호와 동일합니다.
 1. 다음에서 **[!UICONTROL 사용자 설정 편집]** 페이지에서 **[!UICONTROL KeyStore]** 탭. 확장 **[!UICONTROL 키 저장소 파일의 개인 키 추가]** 을 선택하고 별칭을 제공합니다. 별칭은 Reader 확장 작업을 수행하는 데 사용됩니다.
 1. 인증서 파일을 업로드하려면 **[!UICONTROL 키 저장소 파일 선택]** 및 업로드 &lt;filename>.pfx 파일.
 

@@ -3,9 +3,9 @@ title: OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심 AEM 워크플�
 description: OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심 AEM 워크플로우의 작업 및 기능
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '927'
 ht-degree: 22%
 
 ---
@@ -19,7 +19,7 @@ AEM 받은 편지함을 사용하여 OSGi에서 Forms 중심의 AEM 워크플로
 <table>
  <tbody>
   <tr>
-   <td>작업</td>
+   <td>액션</td>
    <td>AEM 받은 편지함</td>
    <td>HTML 작업 영역</td>
   </tr>
@@ -110,7 +110,7 @@ OSGi의 양식 중심의 AEM 워크플로와 JEE의 AEM Forms JEE 워크플로(J
   <tr>
    <td>적응형 양식</td>
    <td>지원됨</td>
-   <td>지원됨<br />을 따르지 않는 경우입니다 </td>
+   <td>지원됨<br /> </td>
   </tr>
   <tr>
    <td>다른 AEM 솔루션과 통합</td>
@@ -120,12 +120,12 @@ OSGi의 양식 중심의 AEM 워크플로와 JEE의 AEM Forms JEE 워크플로(J
   <tr>
    <td>낙서 서명</td>
    <td>지원됨</td>
-   <td>지원됨<br />을 따르지 않는 경우입니다 </td>
+   <td>지원됨<br /> </td>
   </tr>
   <tr>
    <td>사용자 정의 이메일 템플릿</td>
    <td>지원됨</td>
-   <td>지원됨<br />을 따르지 않는 경우입니다 </td>
+   <td>지원됨<br /> </td>
   </tr>
   <tr>
    <td>작업 우선 순위 정의</td>
@@ -253,7 +253,7 @@ OSGi의 양식 중심의 AEM 워크플로와 JEE의 AEM Forms JEE 워크플로(J
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>PDF 생성기 서비스</td>
+   <td>PDF Generator 서비스</td>
    <td>지원됨</td>
    <td>지원됨</td>
   </tr>
@@ -403,7 +403,7 @@ Forms 중심 워크플로우를 시작하는 두 가지 두드러진 방법은 �
 <table>
  <tbody>
   <tr>
-   <td><p><strong>작업</strong></p> </td>
+   <td><p><strong>액션</strong></p> </td>
    <td><p><strong>AEM 받은 편지함</strong></p> </td>
    <td><p><strong>AEM Forms 앱</strong></p> </td>
   </tr>

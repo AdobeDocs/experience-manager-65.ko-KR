@@ -4,10 +4,10 @@ description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되�
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 20d46a7c37663dac36e6af9582d569a7f782eab7
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 93%
+source-wordcount: '1724'
+ht-degree: 90%
 
 ---
 
@@ -33,7 +33,6 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 >
 >* 페이지 작성 시([콘텐츠 조각을 사용하여 페이지 작성](/help/sites-authoring/content-fragments.md) 참조)
 >* [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재](/help/assets/content-fragments/content-fragments-graphql.md) 시
-
 
 >[!NOTE]
 >
@@ -67,21 +66,21 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
       * **제목**
 
-         조각 제목.
+        조각 제목.
 
-         필수.
+        필수.
 
       * **설명**
 
       * **태그**
+
    * **고급**
 
       * **이름**
 
-         이름은 URL을 구성하는 데 사용됩니다.
+        이름은 URL을 구성하는 데 사용됩니다.
 
-         필수는 제목에서 자동으로 파생되지만 업데이트할 수 있습니다.
-
+        필수는 제목에서 자동으로 파생되지만 업데이트할 수 있습니다.
 
 1. **만들기**&#x200B;를 선택하여 작업을 완료한 후 편집할 조각을 **열거나** **완료**&#x200B;를 사용하여 콘솔로 돌아갑니다.
 
@@ -111,7 +110,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
 * **편집**
 
-   * 요소, 변형, 관련 컨텐츠 및 메타데이터와 함께 [컨텐츠를 편집할 조각을 열](/help/assets/content-fragments/content-fragments-variations.md) 수 있습니다.
+   * 다음 작업을 수행할 수 있습니다. [콘텐츠 편집을 위해 조각 열기](/help/assets/content-fragments/content-fragments-variations.md) 요소, 변형, 관련 컨텐츠 및 메타데이터와 함께
 
 * **태그 관리**
 * **대상 컬렉션**
@@ -226,23 +225,23 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **저장**&#x200B;을 선택하면 마지막 변경 내용이 저장되고 편집기에 계속 남아 있을 수 있습니다.
    * **저장 및 닫기**&#x200B;를 선택하면 마지막 변경 내용이 저장되고 편집기가 종료됩니다.
 
-   >[!CAUTION]
-   >
-   >콘텐츠 조각을 편집하려면 [적절한 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions)이 있어야 합니다. 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
+  >[!CAUTION]
+  >
+  >콘텐츠 조각을 편집하려면 [적절한 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions)이 있어야 합니다. 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
 
-   >[!NOTE]
-   >
-   >저장하기 전에 일련의 변경 내용을 적용한 다음 편집기에 남아 있을 수 있습니다.
+  >[!NOTE]
+  >
+  >저장하기 전에 일련의 변경 내용을 적용한 다음 편집기에 남아 있을 수 있습니다.
 
-   >[!CAUTION]
-   >
-   >이 작업은 변경 내용을 저장하는 것 이외에도 모든 참조도 업데이트하며 필요에 따라 Dispatcher를 플러시합니다. 이러한 변경 사항은 처리에 시간이 걸릴 수 있습니다. 이로 인해 대형/복합/부하가 큰 시스템의 성능에 영향이 있을 수 있습니다.
-   >
-   >**저장 및 닫기**&#x200B;를 사용한 다음 조각 편집기로 빠르게 다시 들어가 이후의 변경 내용을 적용하고 저장할 때 이 점을 염두에 두십시오.
+  >[!CAUTION]
+  >
+  >이 작업은 변경 내용을 저장하는 것 이외에도 모든 참조도 업데이트하며 필요에 따라 Dispatcher를 플러시합니다. 이러한 변경 사항은 처리에 시간이 걸릴 수 있습니다. 이로 인해 대형/복합/부하가 큰 시스템의 성능에 영향이 있을 수 있습니다.
+  >
+  >**저장 및 닫기**&#x200B;를 사용한 다음 조각 편집기로 빠르게 다시 들어가 이후의 변경 내용을 적용하고 저장할 때 이 점을 염두에 두십시오.
 
 * **닫기**
 
-   마지막 변경 내용(즉, 마지막 **저장** 이후에 적용된 변경 내용)을 저장하지 않고 편집기를 종료합니다.
+  마지막 변경 내용(즉, 마지막 **저장** 이후에 적용된 변경 내용)을 저장하지 않고 편집기를 종료합니다.
 
 콘텐츠 조각을 편집하는 동안 AEM은 자동으로 버전을 만들어 변경 내용을 취소한 경우(저장하지 않고 **닫기** 사용) 이전 콘텐츠를 복원할 수 있도록 합니다.
 
@@ -273,7 +272,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 조각과 콘텐츠 연결 {#associating-content-with-your-fragment}
 
-조각과 [콘텐츠를 연결](/help/assets/content-fragments/content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 콘텐츠 페이지에 추가될 때 에셋(즉, 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
+조각과 [콘텐츠를 연결](/help/assets/content-fragments/content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 콘텐츠 페이지에 추가될 때 자산(즉, 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
 
 ## 조각의 메타데이터(속성) 보기 및 편집 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -299,16 +298,18 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **삭제**
 
 >[!NOTE]
+>
 댓글은
-* 모든 에셋에 대한 표준 기능입니다.
+>
+* 모든 자산에 대한 표준 기능입니다.
 * 타임라인에서 만들어집니다.
-* 조각 에셋과 관련되어 있습니다.
+* 조각 자산과 관련되어 있습니다.
 >
 주석(콘텐츠 조각)은
+>
 * 조각 편집기에서 입력됩니다.
 * 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
 >
-
 
 예:
 
@@ -332,11 +333,12 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * 삽입된 텍스트 - 녹색
    * 대체된 텍스트 - 파란색
 
-* 전체 화면 아이콘을 사용하면 두 버전 중 하나를 자체적으로 열 수 있습니다. 그런 다음 병렬 보기로 다시 전환할 수 있습니다.
+* 전체 화면 아이콘을 사용하면 두 버전 중 하나를 자체적으로 열 수 있습니다. 그런 다음 병렬 보기로 다시 전환할 수 있습니다
 * 특정 버전으로 **되돌릴** 수 있습니다.
 * **완료**&#x200B;를 선택하면 콘솔로 돌아갑니다.
 
 >[!NOTE]
+>
 조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
 
 ![비교](assets/cfm-managing-06.png)
@@ -347,14 +349,16 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * [타임라인](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)에서 바로 되돌릴 수 있습니다.
 
-   필요한 버전을 선택한 후 **이 버전으로 되돌리기** 작업을 선택합니다.
+  필요한 버전을 선택한 후 **이 버전으로 되돌리기** 작업을 선택합니다.
 
 * [버전을 현재 버전과 비교](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions)하는 동안 선택한 버전으로 **되돌릴** 수 있습니다.
 
 ## 조각 게시 및 참조 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
+>
 조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
+>
 모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
 게시 환경에서 사용하려면 콘텐츠 조각을 게시해야 합니다. 게시할 수 있는 시점:
@@ -364,6 +368,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * [조각을 사용하는 페이지를 게시](/help/sites-authoring/content-fragments.md#publishing)할 때. 페이지 참조에 조각이 나열됩니다.
 
 >[!CAUTION]
+>
 조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
 
 ## 조각 삭제 {#deleting-a-fragment}
@@ -374,10 +379,12 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. 조각을 선택합니다.
 
    >[!NOTE]
+   >
    **삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
 
 3. 도구 모음에서 **삭제**&#x200B;를 선택합니다.
 4. **삭제** 작업을 확인합니다.
 
    >[!CAUTION]
+   >
    조각이 페이지에서 이미 참조되어 있다면 경고 메시지가 표시되고 **강제 삭제**&#x200B;로 진행하겠다고 확인해야 합니다. 해당 컨텐츠 조각 구성 요소와 함께 조각이 모든 컨텐츠 페이지에서 삭제됩니다.

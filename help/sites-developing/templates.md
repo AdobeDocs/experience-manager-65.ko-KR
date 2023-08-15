@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 * 다음과 같을 수 있습니다. [생성됨](/help/sites-authoring/templates.md#creating-a-new-template-template-author) 및 [편집됨](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 작성자에 의해 제어됩니다.
 
-* 템플릿으로 만든 페이지에 대해 다음을 정의할 수 있도록 도입되었습니다.
+* 템플릿으로 만든 페이지에 대해 다음 사항을 정의할 수 있도록 도입되었습니다.
 
    * 구조
    * 초기 콘텐츠

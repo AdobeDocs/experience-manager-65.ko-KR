@@ -2,7 +2,7 @@
 title: 이메일을 통해 양식 제출 승인 보내기
 seo-title: Sending a form submission acknowledgement via email
 description: AEM Forms을 사용하면 양식 제출 시 사용자에게 승인을 보내는 이메일 제출 액션을 구성할 수 있습니다.
-seo-description: AEM Forms allows you to configure the email submit action that sends an acknowledgement to a user on submitting the form.
+seo-description: AEM Forms lets you configure the email submit action that sends an acknowledgement to a user on submitting the form.
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 변수 자리 표시자도 **[!UICONTROL 제목]** 및 **[!UICONTROL 이메일 템플릿]** 필드.
 
-예:
+예를 들면 다음과 같습니다.
 
 `Hi ${first_name} ${last_name},`
 

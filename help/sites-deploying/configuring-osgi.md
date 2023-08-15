@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: bf55fcb855cbdad72c669058662ca70fe57e6632
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1973'
-ht-degree: 0%
+source-wordcount: '1971'
+ht-degree: 1%
 
 ---
 
@@ -134,7 +134,7 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
 웹 콘솔에는 변경 사항이 저장되었지만 저장소 내 위치를 나타내는 표시가 없지만 쉽게 찾을 수 있습니다.
 
 1. 구성 파일 만들기 기준 [웹 콘솔에서 초기 변경](#osgi-configuration-with-the-web-console).
-1. CRXDE Lite 열기.
+1. CRXDE Lite를 엽니다.
 1. 다음에서 **도구** 메뉴, 선택 **쿼리 ...** .
 1. 업데이트한 구성의 PID를 검색하려면 **유형** `SQL`.
 

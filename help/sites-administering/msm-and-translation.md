@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '350'
 ht-degree: 41%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 41%
 
    * [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-administering/msm.md)
 
-* 번역을 통해 페이지 콘텐츠, 에셋 및 사용자 생성 콘텐츠의 번역을 자동화하여 다국어 웹 사이트를 만들고 관리할 수 있습니다.
+* 번역을 사용하면 페이지 콘텐츠, 에셋 및 사용자 생성 콘텐츠의 번역을 자동화하여 다국어 웹 사이트를 만들고 관리할 수 있습니다.
 
    * [다국어 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md)
 
@@ -33,7 +33,7 @@ ht-degree: 41%
 
 ## 다국적 및 다국어 사이트 {#multinational-and-multilingual-sites}
 
-다중 사이트 관리자 및 번역 워크플로우를 결합하여 사용함으로써 다국적 및 다국어 사이트를 위한 콘텐츠를 효율적으로 만들 수 있습니다. 특정 국가에 대해 하나의 언어로 마스터 사이트를 만든 다음 필요한 경우 번역을 사용하여 해당 콘텐츠를 다른 사이트의 기초로 사용합니다.
+다중 사이트 관리자 및 번역 워크플로를 결합하여 사용함으로써 다국적 및 다국어 사이트를 위한 콘텐츠를 효율적으로 만들 수 있습니다. 특정 국가에 대해 하나의 언어로 마스터 사이트를 만든 다음 필요한 경우 번역을 사용하여 해당 콘텐츠를 다른 사이트의 기초로 사용합니다.
 
 * 마스터 사이트를 다른 언어로 [번역](/help/sites-administering/translation.md)합니다.
 

@@ -11,9 +11,9 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1661'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
 | AEM 6.5 | 이 문서 |
 
 Forms 포털 구성 요소는 웹 개발자에게 Adobe Experience Manager(AEM)를 사용하여 작성된 웹 사이트에서 양식 포털을 만들고 사용자 지정할 수 있는 구성 요소를 제공합니다. Forms 포털에 대한 간략한 개요는 를 참조하십시오. [포털에 양식 게시 소개](../../forms/using/introduction-publishing-forms.md).
@@ -210,7 +210,7 @@ Forms 포털 구성 요소 범주
 1. 일반 탭에서 검색 레이블을 지정합니다. 기본값은 입니다. **속성**
 
 1. 옵션 탭에서 을 누릅니다. **항목 추가.**
-1. 드롭다운 목록에서 속성을 선택하고 드롭다운 목록 아래 필드에 속성에 대한 검색 레이블을 지정합니다.
+1. 드롭다운 목록에서 속성을 선택하고 드롭다운 목록 아래의 필드에 속성에 대한 검색 레이블을 지정합니다.
 1. 속성을 더 추가하려면 4단계를 반복합니다. 지정된 조건에 따라 양식을 나열할 기본 필터 값을 지정하고 최종 사용자가 검색할 속성을 숨길 수도 있습니다. 속성에 대한 숨기기 확인란을 선택하고 기본 필터 값을 지정합니다.
 예를 들어 제목에 &quot;이동&quot;이 포함된 양식을 표시하려면 제목 속성 옆에 있는 숨기기를 선택합니다. 또한 기본 필터 값 텍스트 상자에 [이동]을 지정합니다.
 
@@ -251,7 +251,7 @@ Search &amp; Lister 구성 요소
 
 Forms 포털 페이지를 사용자 지정하여 페이지에 고유한 모양을 제공할 수 있습니다. 메타데이터를 추가하여 검색 환경을 개선하고, 페이지 레이아웃을 변경하고, 사용자 지정 CSS 스타일을 추가할 수도 있습니다. 자세한 내용은 [Forms 포털 구성 요소에 대한 템플릿 맞춤화](../../forms/using/customizing-templates-forms-portal-components.md).
 
-AEM Forms UI를 사용하면 양식에 사용자 지정 메타데이터를 추가할 수 있습니다. 사용자 지정 메타데이터는 최종 사용자에게 목록 및 검색 양식 환경을 제공하는 데 유용합니다. 사용자 지정 메타데이터에 대한 자세한 내용은 [Forms 포털 구성 요소에 대한 템플릿 맞춤화](../../forms/using/customizing-templates-forms-portal-components.md).
+AEM Forms UI를 사용하면 사용자 지정 메타데이터를 양식에 추가할 수 있습니다. 사용자 지정 메타데이터는 최종 사용자에게 목록 및 검색 양식 환경을 제공하는 데 유용합니다. 사용자 지정 메타데이터에 대한 자세한 내용은 [Forms 포털 구성 요소에 대한 템플릿 맞춤화](../../forms/using/customizing-templates-forms-portal-components.md).
 
 기본적으로 Forms 포털에서는 렌더링 작업을 제공합니다. Forms 포털을 사용자 지정하여 더 많은 작업을 추가할 수 있습니다. 자세한 내용은 [양식 목록 항목에 사용자 지정 작업을 추가하는 중입니다.](../../forms/using/add-custom-action-form-lister.md)
 

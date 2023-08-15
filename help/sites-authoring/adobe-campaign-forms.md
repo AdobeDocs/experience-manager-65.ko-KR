@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ Adobe Campaign에 고유한 양식을 만들려면 먼저 AEM 애플리케이션
 >[!NOTE]
 >
 >다음을 확인합니다. **acMapping** 페이지의 속성 **jcr:content** 노드가 (으)로 설정됨 **mapRecipient** 또는 **프로필** 각각 Adobe Campaign Classic 또는 Adobe Campaign Standard 사용 시
+>
 
 1. AEM의 Sites에서 새 페이지를 만들 위치로 이동합니다.
 1. 페이지를 만들고 선택 **Adobe Campaign Classic 프로필**&#x200B;또는&#x200B;**Adobe Campaign Standard 프로필** 및 클릭 **다음**.
@@ -64,7 +65,7 @@ Adobe Campaign에 고유한 양식을 만들려면 먼저 AEM 애플리케이션
 
 1. 다음에서 **이름** 필드, 페이지 이름을 추가합니다. 유효한 JCR 이름이어야 합니다.
 1. 다음에서 **제목** 필드에서 제목을 입력하고 클릭 **만들기**.
-1. 페이지를 열고 을(를) 선택합니다 **속성 열기** 그리고 Cloud Services에서 Adobe Campaign 구성을 추가하고 확인 표시를 선택하여 변경 사항을 저장합니다.
+1. 페이지를 열고 을(를) 선택합니다 **속성 열기** 그리고 Cloud Service에서 Adobe Campaign 구성을 추가하고 확인 표시를 선택하여 변경 사항을 저장합니다.
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
@@ -80,7 +81,7 @@ Adobe Campaign 전용 Forms에는 특정 구성 요소가 있습니다. 이러�
 
 이 섹션에서는 Adobe Campaign에 대한 특정 링크만 자세히 설명합니다. Adobe Experience Manager에서 양식을 사용하는 방법에 대한 보다 일반적인 개요는 를 참조하십시오. [편집 모드 구성 요소](/help/sites-authoring/default-components-foundation.md).
 
-1. 선택 **속성 열기** 그리고 Cloud Services에서 Adobe Campaign 구성을 추가하고 확인 표시를 선택하여 변경 사항을 저장합니다.
+1. 선택 **속성 열기** 그리고 Cloud Service에서 Adobe Campaign 구성을 추가하고 확인 표시를 선택하여 변경 사항을 저장합니다.
 
    ![chlimage_1-45](assets/chlimage_1-45a.png)
 
@@ -135,7 +136,7 @@ Adobe Campaign 전용 Forms에는 특정 구성 요소가 있습니다. 이러�
 1. Adobe Campaign 프로필의 암호화된 기본 키(EPK)를 가져오려면 다음을 수행하십시오.
 
    * Adobe Campaign Standard에서 다음으로 이동 **프로필 및 대상자** > **프로필**: 기존 프로필을 나열합니다. 테이블에 **기본 리소스 식별자** 열의 필드(클릭/탭하여 구성할 수 있음) **목록 구성**). 원하는 프로필의 기본 리소스 식별자를 복사합니다.
-   * Adobe Campaign Classic에서 **프로필 및 Target** >  **수신자**: 기존 프로필을 나열합니다. 테이블에 **암호화된 식별자** 열의 필드(항목을 마우스 오른쪽 버튼으로 클릭하고 선택하여 구성할 수 있음) **목록 구성...**). 원하는 프로필의 암호화된 식별자를 복사합니다.
+   * Adobe Campaign Classic에서 **프로필 및 타겟** >  **수신자**: 기존 프로필을 나열합니다. 테이블에 **암호화된 식별자** 열의 필드(항목을 마우스 오른쪽 버튼으로 클릭하고 선택하여 구성할 수 있음) **목록 구성...**). 원하는 프로필의 암호화된 식별자를 복사합니다.
 
 1. AEM에서 게시 인스턴스의 양식 페이지를 열고 1단계의 EPK를 URL 매개 변수로 추가합니다. 양식을 작성할 때 EPK 구성 요소에 이전에 정의한 것과 동일한 이름을 사용합니다(예: `?epk=...`)
 1. 이제 양식을 사용하여 연결된 Adobe Campaign 프로필과 연결된 데이터 및 구독을 수정할 수 있습니다. 일부 필드를 수정하고 양식을 제출한 후 Adobe Campaign 내에서 적절한 데이터가 업데이트되었는지 확인할 수 있습니다.

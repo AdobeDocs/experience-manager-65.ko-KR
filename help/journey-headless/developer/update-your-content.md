@@ -2,10 +2,10 @@
 title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 REST API를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 대해 알아봅니다.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 92%
+source-wordcount: '1037'
+ht-degree: 89%
 
 ---
 
@@ -41,7 +41,7 @@ Headless 여정의 이전 단계에서는 쿼리를 사용하여 콘텐츠를 �
 
 그러면 다른 API가 필요한 이유는 무엇입니까?
 
-Assets HTTP API를 사용하여 콘텐츠를 **읽을** 수 있지만 GraphQL API를 사용할 수 없는 액션인 콘텐츠를 **만들**&#x200B;고, **업데이트**&#x200B;하고, **삭제**&#x200B;할 수도 있습니다.
+Assets HTTP API를 사용하면 다음 작업을 수행할 수 있습니다 **읽기** 콘텐츠를 볼 수 있지만 **만들기**, **업데이트** 및 **삭제** content - GraphQL API로 사용할 수 없는 작업입니다.
 
 Assets REST API는 기본적으로 제공되는 최신 Adobe Experience Manager 버전 설치에서 사용할 수 있습니다.
 
@@ -54,7 +54,7 @@ Assets HTTP API에는 다음이 포함됩니다.
 
 Assets HTTP API의 현재 구현은 **REST** 아키텍처 스타일을 기반으로 하며 **CRUD** 작업(만들기, 읽기, 업데이트, 삭제)을 통해 콘텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
 
-이러한 작업을 통해 API는 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Headless CMS(컨텐츠 관리 시스템)를 운영할 수 있도록 합니다. 아니면 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다. 예를 들어 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 지정에는 API를 통해 종종 JSON 형식으로 제공되는 콘텐츠가 필요합니다.
+이러한 작업을 통해 API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Headless CMS(컨텐츠 관리 시스템)를 운영할 수 있습니다. 아니면 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다. 예를 들어 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 지정에는 API를 통해 종종 JSON 형식으로 제공되는 콘텐츠가 필요합니다.
 
 <!--
 >[!NOTE]
@@ -223,7 +223,6 @@ Assets REST API는 `/api/assets`엔드포인트를 사용하여 액세스하려�
 >
 >* `/api/assets`는 `.model` 선택기 사용이 필요하지 **않습니다**.
 >* `/content/path/to/page`는 `.model` 선택기 사용이 필요&#x200B;**합니다**.
-
 
 ### 작업 {#operation}
 

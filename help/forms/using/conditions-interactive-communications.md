@@ -10,7 +10,7 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 0%
@@ -152,7 +152,7 @@ ht-degree: 0%
 
    정책 유형이 표준일 때 자산을 표시하는 규칙
 
-   * 규칙을 만들거나 편집하는 동안 ![icon_resize](assets/icon_resize.png) (크기 조정) - [규칙 만들기/규칙 편집] 대화 상자를 확장합니다. 전체 창 대화 상자를 확장하면 [변수](#variables) 를 클릭하여 규칙을 만듭니다. 크기 조정 을 다시 탭하여 일반 규칙 만들기 대화 상자로 돌아갑니다.
+   * 규칙을 만들거나 편집하는 동안 ![icon_resize](assets/icon_resize.png) (크기 조정) - [규칙 만들기/규칙 편집] 대화 상자를 확장합니다. 확장된 전체 창 대화 상자를 통해 다음을 만들 수 있습니다. [변수](#variables) 를 클릭하여 규칙을 만듭니다. 크기 조정 을 다시 탭하여 일반 규칙 만들기 대화 상자로 돌아갑니다.
 
    * 규칙에 여러 조건을 만들 수도 있습니다.
 
@@ -162,7 +162,7 @@ ht-degree: 0%
 
 ## 조건에서 변수 만들기 및 사용 {#variables}
 
-조건에서 규칙을 만들거나 편집하는 동안 다음을 누를 수 있습니다. ![icon_resize](assets/icon_resize.png) (크기 조정) - [규칙 만들기]\[규칙 편집] 대화 상자를 확장합니다. 확장된 전체 창 대화 상자를 통해 다음 작업을 수행할 수 있습니다.
+조건에서 규칙을 만들거나 편집하는 동안 다음을 누를 수 있습니다. ![icon_resize](assets/icon_resize.png) (크기 조정) - [규칙 만들기]\[규칙 편집] 대화 상자를 확장합니다. 전체 창 대화 상자를 확장하면 다음과 같은 작업을 수행할 수 있습니다.
 
 * 규칙에서 변수 만들기 및 사용
 * 양식 데이터 모델의 속성 및 변수를 규칙에 드래그 앤 드롭
@@ -183,7 +183,7 @@ ht-degree: 0%
 
    ![expanddeditrulevariables](assets/expandededitrulevariables.png)
 
-1. 누르기 **[!UICONTROL 만들기]**.
+1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 
    변수 만들기 창이 나타납니다.
 
@@ -194,7 +194,7 @@ ht-degree: 0%
    * **[!UICONTROL 유형]**: 변수 유형(문자열, 숫자, 부울 또는 날짜)을 선택합니다.
    * **[!UICONTROL 특정 값만 허용]**: 문자열 및 숫자 변수의 경우 에이전트가 에이전트 UI의 자리 표시자에 대한 특정 값 세트에서 선택하는지 확인할 수 있습니다. 값 집합을 지정하려면 이 옵션을 선택한 다음 **[!UICONTROL 값]** 필드.
 
-1. 누르기 **[!UICONTROL 만들기]**.
+1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 
    변수가 만들어지고 [변수] 창에 나열됩니다.
 

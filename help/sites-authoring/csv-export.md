@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 96%
+source-wordcount: '190'
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 96%
 >
 >브라우저의 다운로드 기능 및 기본 대상이 사용됩니다.
 
-**CSV 내보내기 만들기** 마법사를 사용하여 다음을 선택할 수 있습니다.
+다음 **CSV 내보내기 만들기** 마법사를 사용하여 다음을 선택할 수 있습니다.
 
 * 내보낼 속성
    * 메타데이터

@@ -8,9 +8,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2977'
 ht-degree: 2%
 
 ---
@@ -254,7 +254,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
    ![제품 데이터 스크린샷 추가](/help/sites-administering/assets/chlimage_1-91.png)
 
 1. 탭/클릭 **추가**. 새 자산 자리 표시자가 나타납니다.
-1. 탭/클릭**변경**자산을 선택할 수 있는 대화 상자를 엽니다.
+1. 탭/클릭**변경**에셋을 선택할 수 있는 대화 상자를 엽니다.
 1. 추가할 자산을 선택합니다.
 
    >[!NOTE]
@@ -287,7 +287,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
 표시할 이미지를 선택하는 메커니즘은 다음과 같습니다.
 
 1. 제품 페이지에 대해 범주가 설정되어 있는지 확인합니다.
-1. 그렇지 않으면 카탈로그에 대해 범주가 설정되어 있는지 확인하십시오.
+1. 그렇지 않으면 카탈로그에 대해 범주가 설정되어 있는지 확인합니다.
 1. 그렇지 않으면 제품 콘솔에 대해 범주가 설정되어 있는지 확인하십시오.
 
 >[!NOTE]
@@ -344,7 +344,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
 
 <!-- Search&Promote is end of life as of September 1, 2022 ### Product Feed {#product-feed} -->
 
-<!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration allows you to: -->
+<!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration lets you: -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 * use the eCommerce API, independently of the underlying repository structure and commerce platform. -->
 <!-- Search&Promote is end of life as of September 1, 2022 * leverage the Index Connector feature of Search&Promote to provide a product feed in XML format. -->
@@ -487,7 +487,7 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 
 1. 사용 **웹 사이트** 콘솔, 다음으로 이동 **카탈로그 블루프린트**&#x200B;를 클릭한 다음 기본 카탈로그를 클릭합니다.
 
-   예:
+   예를 들면 다음과 같습니다.
 
    `http://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
 
@@ -533,7 +533,7 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 
 카탈로그를 롤아웃하려면 다음 작업을 수행하십시오.
 
-1. 롤아웃할 카탈로그로 이동합니다. 예:
+1. 롤아웃할 카탈로그로 이동합니다. 예를 들면 다음과 같습니다.
 
    `http://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
 
@@ -561,7 +561,7 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 
 1. 사용 **도구** 콘솔, 다음으로 이동 **상거래**.
 
-   예:
+   예를 들면 다음과 같습니다.
 
    `http://localhost:4502/miscadmin#/etc/commerce`
 

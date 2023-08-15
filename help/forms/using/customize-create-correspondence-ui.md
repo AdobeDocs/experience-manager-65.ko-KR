@@ -11,10 +11,10 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 0%
+source-wordcount: '1086'
+ht-degree: 1%
 
 ---
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
    ![새 노드로 CustomLogo.png](assets/3_contentexplorernewnode_customlogo.png)
 
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 
    만든 새 파일(여기서는 CustomLogo.png) 아래에 jcr:content 속성이 나타납니다.
 
@@ -151,7 +151,7 @@ ht-degree: 0%
 
    예: 사용자 정의 로고로 사용할 CustomLogo.png
 
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 
 ## 로고를 UI와 통합하기 위한 CSS 만들기 {#createcss}
 
@@ -176,7 +176,7 @@ ht-degree: 0%
       }
       ```
 
-   1. 클릭 **모두 저장**.
+   1. **모두 저장**&#x200B;을 클릭합니다.
 
 ## 서신 만들기 UI를 새로 고쳐 사용자 정의 로고를 확인합니다. {#refreshccrui}
 

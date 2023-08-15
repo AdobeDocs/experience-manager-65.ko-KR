@@ -10,16 +10,16 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 14%
 
 ---
 
 # We.Retail에서 편집 가능한 템플릿 시험 사용{#trying-out-editable-templates-in-we-retail}
 
-편집 가능한 템플릿을 사용하면 템플릿 작성 및 유지 관리가 더 이상 개발자 전용 작업이 아닙니다. 이제 템플릿 작성자라고 하는 고급 사용자 유형이 템플릿을 만들 수 있습니다. Developers are still required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the template author has the flexibility to create and configure templates without a development project.
+편집 가능한 템플릿을 사용하면 템플릿 작성 및 유지 관리가 더 이상 개발자 전용 작업이 아닙니다. 이제 템플릿 작성자라고 하는 고급 사용자 유형이 템플릿을 만들 수 있습니다. 개발자는 여전히 환경을 설정하고 클라이언트 라이브러리를 생성하고 사용할 구성 요소를 생성해야 하지만, 이러한 기본 사항이 마련되면 템플릿 작성자는 개발 프로젝트 없이도 템플릿을 생성하고 구성할 수 있습니다.
 
 We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하므로 개발자가 아닌 사용자도 템플릿을 조정하고 맞춤화할 수 있습니다.
 
@@ -53,7 +53,7 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
 
 1. 템플릿 편집기로 돌아가 레이아웃 컨테이너 내에서 텍스트 구성 요소의 정책을 편집할 수 있습니다.
 
-   이를 통해 다음을 수행할 수 있습니다.
+   이렇게 하면 다음 작업을 수행할 수 있습니다.
 
    * 기존 정책을 선택하거나 컨테이너에 대한 새 정책을 만듭니다.
    * 다음과 같은 이 구성 요소를 사용할 때 페이지 작성자가 사용할 수 있는 기능을 정의합니다.
@@ -75,4 +75,4 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
 
 자세한 내용은 작성 문서를 참조하십시오. [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md) 편집 가능한 템플릿에 대한 전체 기술 세부 정보.
 
-조사를 원할 수도 있습니다. [핵심 구성 요소](/help/sites-developing/we-retail-core-components.md). 작성 문서 참조 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 기술 개요를 참조하십시오.
+조사를 원할 수도 있습니다. [핵심 구성 요소](/help/sites-developing/we-retail-core-components.md). 작성 문서 참조 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 기술 개요를 참조하십시오.

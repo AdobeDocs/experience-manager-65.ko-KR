@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: ada61b87753f3f3e70acdca0e946428511bd7b00
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2788'
+source-wordcount: '2784'
 ht-degree: 2%
 
 ---
@@ -138,7 +138,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 * 또한 출력을 제한하기 위해 단락 범위를 선택할 수 있습니다. 예를 들어 다중 열 출력에 사용할 수 있습니다.
 * 구성 요소는 다음을 허용합니다. [중간 콘텐츠](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-   * 여기에서 구성 요소를 사용하여 다른 에셋(이미지 등)을 배치할 수 있습니다. 참조된 조각의 단락 사이.
+   * 여기에서 구성 요소를 사용하여 다른 에셋(이미지 등)을 배치할 수 있습니다 참조된 조각의 단락 사이.
    * 중간 콘텐츠 의 경우 다음을 수행해야 합니다.
 
       * 참조가 불안정할 수 있습니다. 중간 콘텐츠(페이지 작성 시 추가됨)는 옆에 있는 단락에 고정 관계가 없으며, 중간 콘텐츠의 위치가 상대 위치를 잃을 수 있기 전에 콘텐츠 조각 편집기에 새 단락을 삽입합니다
@@ -480,7 +480,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-예:
+예를 들면 다음과 같습니다.
 
 ```java
 // first, get the resource
@@ -498,7 +498,7 @@ if (fragmentResource != null) {
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 
-예:
+예를 들면 다음과 같습니다.
 
 ```java
 Resource templateOrModelRsc = resourceResolver.getResource("...");

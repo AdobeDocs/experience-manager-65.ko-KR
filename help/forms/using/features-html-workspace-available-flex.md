@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
 exl-id: 4235e0ce-f1c4-432e-b486-2d72c390f320
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ AEM Forms workspace는 Flex 기반 workspace를 넘어 비즈니스 통합과 �
 
 ## 작업 요약 창 지원 {#support-for-a-summary-pane-for-tasks}
 
-작업을 열 때 양식을 열기 전에 창에서 외부 URL을 사용하여 작업에 대한 정보를 표시할 수 있습니다. 작업 요약 창을 사용하면 작업에 대한 추가 정보 및 관련 정보를 표시하여 AEM Forms 작업 영역의 최종 사용자에게 더 많은 값을 추가할 수 있습니다. 다음을 참조하십시오 [요약 페이지 표시](/help/forms/using/displaying-information-task-summary-pane.md) 구현 세부 사항.
+작업을 열 때 양식이 열리기 전에 창에서 외부 URL을 사용하여 작업에 대한 정보를 표시할 수 있습니다. 작업 요약 창을 사용하면 작업에 대한 추가 정보 및 관련 정보를 표시하여 AEM Forms 작업 영역의 최종 사용자에게 더 많은 값을 추가할 수 있습니다. 다음을 참조하십시오 [요약 페이지 표시](/help/forms/using/displaying-information-task-summary-pane.md) 구현 세부 사항.
 
 ## 관리자 보기 지원 {#support-for-manager-view}
 

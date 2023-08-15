@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '595'
 ht-degree: 4%
 
 ---
@@ -96,7 +96,7 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 
 ### 문서 관리 타일 {#the-manage-articles-tile}
 
-다음 **문서 관리** 타일을 사용하면 문서의 콘텐츠를 관리할 수 있습니다. 문서에 대해 다음 정보가 표시됩니다.
+다음 **문서 관리** 타일을 사용하면 문서에 대한 콘텐츠를 관리할 수 있습니다. 문서에 대해 다음 정보가 표시됩니다.
 
 * 이미지
 * **제목**: 문서의 이름

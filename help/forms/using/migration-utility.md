@@ -2,7 +2,7 @@
 title: AEM Forms 에셋 및 문서 마이그레이션
 seo-title: Migrate AEM Forms assets and documents
 description: 마이그레이션 유틸리티를 사용하면 AEM Forms 에셋 및 문서를 AEM 6.3 Forms 또는 이전 버전에서 AEM 6.4 Forms으로 마이그레이션할 수 있습니다.
-seo-description: The Migration utility allows you to Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
+seo-description: The Migration utility lets you Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
 uuid: a3fdf940-7fc2-441c-91c8-ad66ba47e5f2
 content-type: reference
 topic-tags: correspondence-management, installing
@@ -13,9 +13,9 @@ discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1742'
 ht-degree: 2%
 
 ---
@@ -111,9 +111,11 @@ ht-degree: 2%
 
       * 적응형 Forms을 위해 작성된 사용자 지정 구성 요소
       * 구성 요소 오버레이(있는 경우)
+
    * 적응형 양식 템플릿을 마이그레이션하려면 다음을 누르십시오. **적응형 Forms 템플릿 마이그레이션** 그리고 사용자 지정 구성 요소 마이그레이션 페이지에서 을 누릅니다. **마이그레이션 시작**. 다음 항목이 마이그레이션됩니다.
 
       * 적응형 양식 템플릿 `/apps` 또는 `/conf` AEM 템플릿 편집기 사용.
+
    * AEM Forms 클라우드 구성 서비스를 마이그레이션하여 터치 지원 UI(아래)가 포함된 새로운 컨텍스트 인식 클라우드 서비스 패러다임을 활용합니다 `/conf`). AEM Forms 클라우드 구성 서비스를 마이그레이션할 때에서 클라우드 서비스 `/etc` 이동 위치: `/conf`. 기존 경로를 사용하는 클라우드 서비스 사용자 지정이 없는 경우(`/etc`) 6.5로 업그레이드한 후 바로 마이그레이션 유틸리티를 실행하고 클라우드 구성 Touch UI를 사용하여 추가 작업을 하는 것이 좋습니다. 기존 클라우드 서비스 사용자 정의가 있는 경우 마이그레이션된 경로에 맞게 사용자 정의가 업데이트될 때까지 업그레이드된 설정에서 클래식 UI를 계속 사용합니다(`/conf`) 그런 다음 마이그레이션 유틸리티를 실행합니다.
 
    마이그레이션하려면 **AEM Forms 클라우드 서비스**, 다음을 포함하는 AEM Forms 클라우드 구성 마이그레이션(클라우드 구성 마이그레이션은 AEMFD 호환성 패키지와 독립적)을 탭하고 AEM Forms 클라우드 구성 마이그레이션 을 탭한 다음 구성 마이그레이션 페이지에서 을 탭합니다 **마이그레이션 시작**:
@@ -121,19 +123,22 @@ ht-degree: 2%
    * 양식 데이터 모델 클라우드 서비스
 
       * 소스 경로: `/etc/cloudservices/fdm`
-      * Target 경로: `/conf/global/settings/cloudconfigs/fdm`
+      * 대상 경로: `/conf/global/settings/cloudconfigs/fdm`
+
    * Recaptcha
 
       * 소스 경로: `/etc/cloudservices/recaptcha`
-      * Target 경로: `/conf/global/settings/cloudconfigs/recaptcha`
+      * 대상 경로: `/conf/global/settings/cloudconfigs/recaptcha`
+
    * Adobe Sign
 
       * 소스 경로: `/etc/cloudservices/echosign`
-      * Target 경로: `/conf/global/settings/cloudconfigs/echosign`
+      * 대상 경로: `/conf/global/settings/cloudconfigs/echosign`
+
    * Typekit 클라우드 서비스
 
       * 소스 경로: `/etc/cloudservices/typekit`
-      * Target 경로: `/conf/global/settings/cloudconfigs/typekit`
+      * 대상 경로: `/conf/global/settings/cloudconfigs/typekit`
 
    마이그레이션 프로세스가 진행될 때 브라우저 창에 다음 항목이 표시됩니다.
 
@@ -144,15 +149,6 @@ ht-degree: 2%
 
    * **에셋에 태그를 추가합니다.**: &quot;서신 관리 : 마이그레이션된 에셋&quot; / &quot;적응형 Forms : 마이그레이션된 에셋&quot; 태그를 추가합니다. 로 이동하여 사용자가 마이그레이션된 에셋을 식별할 수 있도록 합니다. 마이그레이션 유틸리티를 실행하면 시스템의 모든 기존 자산이 마이그레이션됨으로 표시됩니다.
    * **태그 생성**: 이전 시스템에 있는 카테고리 및 하위 카테고리가 태그로 만들어진 다음, 이러한 태그가 AEM의 관련 서신 관리 에셋과 연결됩니다. 예를 들어 편지 템플릿의 범주(클레임)와 하위 범주(클레임)가 태그로 생성됩니다.
-
-
-
-
-
-
-
-
-
 
 1. 마이그레이션 유틸리티 실행이 완료되면 [하우스키핑 작업](#housekeepingtasks).
 

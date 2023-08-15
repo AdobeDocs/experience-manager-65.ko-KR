@@ -6,10 +6,10 @@ role: User, Admin
 feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 2%
+source-wordcount: '327'
+ht-degree: 3%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
-[!DNL Adobe Experience Manager Assets] 를 사용하면 자산의 진위 여부와 저작권 소유권을 확인하는 데 도움이 되는 자산에 디지털 워터마크를 추가할 수 있습니다. [!DNL Experience Manager Assets] 는 PNG 및 JPEG 파일에서 워터마크로 사용할 텍스트를 지원합니다.
+[!DNL Adobe Experience Manager Assets] 에셋의 진위 여부와 저작권 소유권을 확인하는 데 도움이 되는 에셋에 디지털 워터마크를 추가할 수 있습니다. [!DNL Experience Manager Assets] 는 PNG 및 JPEG 파일에서 워터마크로 사용할 텍스트를 지원합니다.
 
 에셋에 워터마크를 적용하려면 [!UICONTROL DAM 자산 업데이트] 워크플로입니다.
 

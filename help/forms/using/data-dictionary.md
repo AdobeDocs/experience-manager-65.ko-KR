@@ -10,9 +10,9 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3838'
+source-wordcount: '3840'
 ht-degree: 1%
 
 ---
@@ -343,7 +343,7 @@ ht-degree: 1%
 
 데이터 사전에는 계산된 요소도 포함될 수 있습니다. 계산된 데이터 사전 요소는 항상 표현식과 연결됩니다. 이 표현식은 런타임 시 데이터 사전 요소의 값을 얻기 위해 평가됩니다. 계산된 DDE 값은 다른 DDE 값 또는 리터럴의 함수입니다. 기본적으로 JSP 표현식 언어(EL) 표현식이 지원됩니다. EL 표현식은 ${ } 문자를 사용하며 유효한 표현식은 리터럴, 연산자, 변수(데이터 사전 요소 참조) 및 함수 호출을 포함할 수 있습니다. 표현식에서 데이터 사전 요소를 참조하는 동안 DDE의 참조 이름이 사용됩니다. 참조 이름은 데이터 사전 내의 모든 데이터 사전 요소에 대해 고유합니다.
 
-계산된 DDE PersonFullName을 ${PersonFirstName} ${PersonLastName}과(와) 같은 EL 연결 식과 연결할 수 있습니다.
+계산된 DDE PersonFullName을 $와 같은 EL 연결 표현식과 연결할 수 있습니다{PersonFirstName} ${PersonLastName}.
 
 ## XSD와 데이터 사전 간의 데이터 유형 매핑 {#data-type-mapping-between-xsd-and-data-dictionary-br}
 
@@ -417,7 +417,7 @@ XSD를 내보내려면 다음 표에 자세히 설명되어 있는 특정 데이
 1. 선택 **샘플 XML 데이터 다운로드**.
 1. 누르기 **확인** 경고 메시지.
 
-   서신 관리에서는 선택한 데이터 사전의 구조를 기반으로 XML 파일을 만들고 이 파일을 사용자 컴퓨터에 해당 이름으로 다운로드합니다 &lt;data-dictionary-name>-SampleData. 이제 XML 또는 텍스트 편집기에서 이 파일을 편집하여 다음 기간 동안 데이터 항목을 만들 수 있습니다. [편지 만들기](../../forms/using/create-letter.md).
+   서신 관리에서는 선택한 데이터 사전의 구조를 기반으로 XML 파일을 만들고 해당 이름으로 컴퓨터에 다운로드합니다 &lt;data-dictionary-name>-SampleData. 이제 XML 또는 텍스트 편집기에서 이 파일을 편집하여 다음 기간 동안 데이터 항목을 만들 수 있습니다. [편지 만들기](../../forms/using/create-letter.md).
 
 ## 메타 데이터의 국제화 {#internationalization-of-meta-data}
 
@@ -440,7 +440,7 @@ XSD를 내보내려면 다음 표에 자세히 설명되어 있는 특정 데이
    DataDictionaryElement.person.displayName=person
    ```
 
-   등록 정보 파일의 구조는 설명과 표시 이름에 대해 각각 한 줄씩 정의하며 데이터 사전의 각 데이터 사전 요소와 데이터 사전의 각 데이터 사전 요소를 정의합니다. 또한 속성 파일은 각 데이터 사전 요소에 대해 설정된 열거형 값에 대해 한 줄을 정의합니다. 데이터 사전과 마찬가지로 해당 속성 파일에 여러 데이터 사전 요소 정의가 있을 수 있습니다. 또한 파일에는 하나 이상의 열거형 값 집합에 대한 정의가 포함될 수 있습니다.
+   등록 정보 파일의 구조는 설명과 표시 이름에 대해 각각 한 줄을 정의하며 데이터 사전의 각 데이터 사전 요소와 데이터 사전의 각 데이터 사전 요소를 정의합니다. 또한 속성 파일은 각 데이터 사전 요소에 대해 설정된 열거형 값에 대해 한 줄을 정의합니다. 데이터 사전과 마찬가지로 해당 속성 파일에 여러 데이터 사전 요소 정의가 있을 수 있습니다. 또한 파일에는 하나 이상의 열거형 값 집합에 대한 정의가 포함될 수 있습니다.
 
 1. 다른 로케일에서 .properties 파일을 업데이트하려면 파일의 표시 이름 및 설명 값을 업데이트합니다. 현지화할 각 언어에 대해 파일의 인스턴스를 더 만듭니다. 프랑스어, 독일어, 일본어 및 영어 언어만 지원됩니다.
 

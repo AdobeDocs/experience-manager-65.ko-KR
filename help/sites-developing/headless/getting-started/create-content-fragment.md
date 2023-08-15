@@ -1,21 +1,21 @@
 ---
 title: 콘텐츠 조각 만들기 Headless 빠른 시작 안내서
-description: Headless 전달을 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독립적 콘텐츠를 디자인하고 만들고 선별하고 사용하는 방법을 알아봅니다.
+description: Headless 게재를 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독립적 콘텐츠를 디자인하고 만들고 선별하고 사용하는 방법을 알아봅니다.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 91%
+source-wordcount: '385'
+ht-degree: 84%
 
 ---
 
 # 콘텐츠 조각 만들기 Headless 빠른 시작 안내서 {#creating-content-fragments}
 
-Headless 전달을 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독립적 콘텐츠를 디자인하고 만들고 선별하고 사용하는 방법을 알아봅니다.
+Headless 게재를 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독립적 콘텐츠를 디자인하고 만들고 선별하고 사용하는 방법을 알아봅니다.
 
 ## 콘텐츠 조각이란 무엇입니까? {#what-are-content-fragments}
 
-콘텐츠 조각을 저장할 수 있는 [에셋 폴더를 만들었으므로](create-assets-folder.md) 이제 콘텐츠 조각을 만들 수 있습니다!
+콘텐츠 조각을 저장할 수 있는 [자산 폴더를 만들었으므로](create-assets-folder.md) 이제 콘텐츠 조각을 만들 수 있습니다!
 
 콘텐츠 조각을 사용하여 페이지 독립적인 콘텐츠를 디자인하고 만들고 선별하고 게시할 수 있습니다. 이를 통해 여러 위치와 여러 채널에서 사용할 수 있는 콘텐츠를 준비할 수 있습니다.
 
@@ -46,7 +46,7 @@ Headless 전달을 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독�
 
 콘텐츠 조각은 다른 콘텐츠 조각을 참조할 수 있으므로 필요한 경우 중첩된 콘텐츠 구조를 허용합니다.
 
-콘텐츠 조각은 AEM의 다른 에셋을 참조할 수도 있습니다. 참조 콘텐츠 조각을 만들기 전에 [이러한 에셋을 AEM에 저장해야 합니다](/help/assets/manage-assets.md).
+콘텐츠 조각은 AEM의 다른 자산을 참조할 수도 있습니다. 참조 콘텐츠 조각을 만들기 전에 [이러한 자산을 AEM에 저장해야 합니다](/help/assets/manage-assets.md).
 
 ## 다음 단계 {#next-steps}
 

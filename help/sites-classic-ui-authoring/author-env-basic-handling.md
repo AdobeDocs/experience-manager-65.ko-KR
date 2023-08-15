@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1166'
 ht-degree: 8%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 8%
   </tr>
   <tr>
    <td><strong>받은 편지함 </strong></td>
-   <td>종종 다양한 사람들이 워크플로우의 하위 작업에 참여하며 각 사람은 작업을 다음 사람에게 넘기기 전에 단계를 완료해야 합니다. 받은 편지함에서 이러한 작업과 관련된 알림을 볼 수 있습니다. 다음을 참조하십시오 <a href="/help/sites-administering/workflows.md">워크플로우 작업</a>. <br /> </td>
+   <td>종종 다양한 사람들이 워크플로우의 하위 작업에 참여하며 각 사람은 작업을 다음 사람에게 넘기기 전에 단계를 완료해야 합니다. 받은 편지함 을 사용하면 이러한 작업과 관련된 알림을 볼 수 있습니다. 다음을 참조하십시오 <a href="/help/sites-administering/workflows.md">워크플로우 작업</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>태그 지정</strong></td>
@@ -135,7 +135,7 @@ ht-degree: 8%
 >또는 테마에서 전역적으로:
 >값 설정:
 >`TREE_AUTOEXPAND_MAX`
->위치:
+>in:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
 >다음을 참조하십시오 [CQ 위젯 API의 SiteAdmin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) 을 참조하십시오.

@@ -12,10 +12,10 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 5%
+source-wordcount: '960'
+ht-degree: 4%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 5%
 >
 >참조: [컨텐츠 조각 렌더링용 구성 요소 구성](/help/sites-developing/content-fragments-config-components-rendering.md) 추가 정보.
 
-Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md). 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. [그런 다음 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다](/help/sites-authoring/content-fragments.md). 다음 작업을 수행하여 기존 콘텐츠 조각 에셋을 사용할 수도 있습니다. [자산 브라우저에서 페이지로 드래그](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (기초 구성 요소 이미지와 같은 기타 에셋 기반 구성 요소의 경우). 기본 콘텐츠 조각 구성 요소는 하나만 표시합니다 [요소](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 참조된 콘텐츠 조각. 구성 요소 대화 상자를 사용하여 다음을 정의할 수 있습니다. [조각 단락의 요소, 변형 및 범위](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 페이지에 표시할 페이지입니다.
+Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md). 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. [그런 다음 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다](/help/sites-authoring/content-fragments.md). 다음 작업을 수행하여 기존 콘텐츠 조각 에셋을 사용할 수도 있습니다. [자산 브라우저에서 페이지로 드래그](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (기초 구성 요소 이미지와 같은 기타 에셋 기반 구성 요소의 경우). 기본 콘텐츠 조각 구성 요소는 하나만 표시합니다 [요소](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 참조된 콘텐츠 조각. 구성 요소 대화 상자를 사용하여 다음을 정의할 수 있습니다. [조각 단락의 요소, 변형 및 범위](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 을 선택합니다.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
 
 ### 중간 콘텐츠 {#in-between-content}
 
-다음 **콘텐츠 조각**&#x200B;구성 요소를 사용하면 표시된 여러 단락 사이에 추가 구성 요소를 놓을 수 있습니다 [요소](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment). 기본적으로 표시되는 요소는 서로 다른 단락으로 구성됩니다(각 단락은 캐리지 리턴으로 표시됨). 각 단락 사이에 다른 구성 요소를 사용하여 콘텐츠를 삽입할 수 있습니다.
+다음 **콘텐츠 조각** t 구성 요소를 사용하면 표시된 여러 단락 사이에 추가 구성 요소를 놓을 수 있습니다 [요소](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment). 기본적으로 표시되는 요소는 서로 다른 단락으로 구성됩니다(각 단락은 캐리지 리턴으로 표시됨). 각 단락 사이에 다른 구성 요소를 사용하여 콘텐츠를 삽입할 수 있습니다.
 
 기술적 관점에서 표시된 요소* *의 각 단락은 자체 parsys에 있으며 단락 사이에 추가하는 각 구성 요소는 parsys에 (후드 아래) 삽입됩니다.
 
@@ -124,7 +124,6 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
 >그런 다음 `serializerType` **필수** 업데이트 대상:
 >
 >* `serializerType="html5-serializer"`
-
 
 기본 구성에서는 다음 변환기를 사용합니다.
 

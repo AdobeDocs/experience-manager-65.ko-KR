@@ -2,7 +2,7 @@
 title: 양식 및 에셋 검색
 seo-title: Searching for forms and assets
 description: AEM 검색을 사용하여 AEM 인스턴스에서 양식 및 에셋을 검색할 수 있습니다. 기본 및 고급 검색을 사용하여 에셋을 빠르게 찾을 수 있습니다.
-seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search lets you quickly locate your assets.
 uuid: 0928a453-3dc4-448b-9320-dcbf20606dd9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: e65925ff-1fbf-4da6-bf09-0cf056c86e5a
 docset: aem65
 role: Admin
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '691'
 ht-degree: 3%
 
 ---
@@ -68,7 +68,7 @@ Adobe Experience Manager은 메타데이터 속성에서 입력한 텍스트를 
 | 한 달 전 | 지난 1개월 내에 수정된 모든 에셋을 검색합니다. |
 | 1년 전 | 지난 1년 이내에 수정된 모든 에셋을 검색합니다. |
 
-### 에셋 상태 {#asset-status}
+### 자산 상태 {#asset-status}
 
 다음 상태 중 하나를 사용하여 에셋을 검색할 수 있습니다.
 

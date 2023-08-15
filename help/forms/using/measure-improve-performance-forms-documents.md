@@ -1,8 +1,8 @@
 ---
 title: 양식의 효율성 및 전환 측정 및 개선
 seo-title: Measure and improve effectiveness and conversion of forms
-description: AEM Forms은 양식의 성능 및 전환율을 측정하고 개선할 수 있는 Adobe Target 및 Adobe Analytics 솔루션과 통합됩니다.
-seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that allows you to measure and improve the performance and conversion rate of your forms.
+description: AEM Forms은 양식의 성능 및 전환율을 측정하고 개선할 수 있도록 하는 Adobe Target 및 Adobe Analytics 솔루션과 통합됩니다.
+seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that lets you measure and improve the performance and conversion rate of your forms.
 uuid: fd2f087c-39f5-457d-8b44-c3ec4400b3fc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ AEM Forms은 와 통합됩니다. [Adobe Marketing Cloud](https://www.adobe.com/
 
 성능을 측정하고 양식의 전환율을 개선하는 방법에 대한 자세한 내용을 살펴보겠습니다.
 
-### Target 대상 {#target-audience}
+### 타겟 대상자 {#target-audience}
 
 * 마케팅 전략 및 성공을 담당하는 비즈니스 사용자 및 분석가
 * 인프라 및 솔루션 설치 및 유지 관리를 관리하는 IT 직원
@@ -71,9 +71,9 @@ AEM Forms은 와 통합됩니다. [Adobe Marketing Cloud](https://www.adobe.com/
 
 자세한 단계는 를 참조하십시오. [적응형 양식에 대한 분석 및 보고서 구성](../../forms/using/configure-analytics-forms-documents.md).
 
-**구성 Target**
+**Target 구성**
 
-적응형 양식에 대한 A/B 테스트를 만들고 실행하려면에 설명된 대로 AEM Forms에서 Target을 구성하십시오 [AEM Forms에서 Target 설정 및 통합](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+적응형 양식에 대한 A/B 테스트를 만들고 실행하려면 의 설명에 따라 AEM Forms에서 Target을 구성합니다 [AEM Forms에서 Target 설정 및 통합](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
 #### 2단계: 분석 보고서 보기 {#step-view-analytics-report-br}
 
@@ -119,7 +119,7 @@ Forms Analytics 보고서에 대한 자세한 내용은 [AEM Forms 분석 보고
 
 #### 3단계: 데이터 포인트 분석 {#step-analyze-data-points}
 
-이 단계에서는 분석 보고서에서 데이터 포인트를 분석하고 양식이 수행되는 방식을 추론합니다. 성공 KPI에 부합하지 않으면 데이터를 기반으로 가설을 구성하고 문제를 해결할 수 있는 해결책을 찾습니다. 예:
+이 단계에서는 분석 보고서에서 데이터 포인트를 분석하고 양식이 수행되는 방식을 추론합니다. 성공 KPI에 부합하지 않으면 데이터를 기반으로 가설을 구성하고 문제를 해결할 수 있는 해결책을 찾습니다. 예를 들면 다음과 같습니다.
 
 * 양식의 평균 채우기 시간이 예상보다 길면, 양식이 고객이 이해하기 복잡하거나 양식에서 표준 용어를 사용하지 않거나 양식이 너무 길 수 있습니다. 이 경우 양식 구조 및 필드를 단순화하거나, 양식 디자인을 재작업하거나, 양식 길이를 줄이거나, 비표준 양식 필드에 대한 도움말 설명 및 예를 추가할 수 있습니다.
 * 대부분의 고객이 양식 패널에 대한 도움말에 액세스하고 있음을 데이터가 나타내는 경우 고객이 어떤 정보를 채워야 할지 혼란스러워하는 것이 분명합니다. 대체 용어를 사용하거나 해당 패널에 대한 예제 입력 및 도움말 설명을 추가할 수 있습니다.
@@ -133,7 +133,7 @@ Forms Analytics 보고서에 대한 자세한 내용은 [AEM Forms 분석 보고
 
 **A/B 테스트 실행**
 
-AEM Forms과 Target의 통합을 통해 적응형 양식에 대한 A/B 테스트를 만들 수 있습니다. A/B 테스트에서는 더 잘 작동하거나 더 많은 전환을 일으키는 경험을 알기 위해 실시간으로 고객에게 양식의 다양한 경험을 무작위로 제시합니다. 한 경험이 다른 경험보다 나은 전환을 제공함을 나타내는 중요한 데이터가 있으면 해당 경험을 우승자로 선언할 수 있으며, 앞으로 모든 고객에게 표시되는 기본 경험이 됩니다.
+Target과 AEM Forms의 통합을 통해 적응형 양식에 대한 A/B 테스트를 만들 수 있습니다. A/B 테스트에서는 더 잘 작동하거나 더 많은 전환을 일으키는 경험을 알기 위해 실시간으로 고객에게 양식의 다양한 경험을 무작위로 제시합니다. 한 경험이 다른 경험보다 나은 전환을 제공함을 나타내는 중요한 데이터가 있으면 해당 경험을 우승자로 선언할 수 있으며, 앞으로 모든 고객에게 표시되는 기본 경험이 됩니다.
 
 적응형 양식에 대한 A/B 테스트 만들기에 대한 자세한 내용은 [적응형 양식의 A/B 테스트](../../forms/using/ab-testing-adaptive-forms.md).
 

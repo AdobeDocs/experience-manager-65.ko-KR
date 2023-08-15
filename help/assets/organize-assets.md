@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 2%
+source-wordcount: '803'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 Microsoft® Office 및 PDF 문서의 모든 디지털 에셋, 메타데이터 및 콘텐츠를 추출하여 검색할 수 있도록 만듭니다. 검색을 통해 에셋을 정교하게 필터링할 수 있으며 적절한 권한을 완전히 준수할 수 있습니다. 메타데이터는 Digital Asset Management의 메타데이터에서 자세히 다룹니다.
@@ -48,7 +48,7 @@ Microsoft® Office 및 PDF 문서의 모든 디지털 에셋, 메타데이터 �
 
 태그를 메타데이터로 사용하면 쉽게 자산을 검색하고, 검색 결과를 사용하여 컬렉션을 만들고, 일부 자산에 대한 검색 등급을 높이고, 자산 검색에 Adobe Sensei의 인공 지능 알고리즘을 사용할 수 있습니다.
 
-[!DNL Adobe Experience Manager Assets] 는 자체 학습 알고리즘을 사용하여 몇 번의 클릭만으로 적합한 자산을 찾을 수 있도록 해 주는 매우 설명적인 태그를 만듭니다. 스마트 태깅은 Adobe의 인공 지능 및 머신 러닝 프레임워크인 Adobe Sensei을 사용하며, 이를 통해 표준 및 비즈니스별 태그를 모두 인식하고 이미지에 적용하는 교육을 받을 수 있습니다. 스마트 태그는 컨텐츠, 개별 단어 또는 구를 식별하고 설명 태그를 자산에 자동으로 적용할 수도 있습니다
+[!DNL Adobe Experience Manager Assets] 는 자체 학습 알고리즘을 사용하여 몇 번의 클릭만으로 적합한 에셋을 찾을 수 있도록 해 주는 매우 설명적인 태그를 만듭니다. 스마트 태깅은 Adobe의 인공 지능 및 머신 러닝 프레임워크인 Adobe Sensei을 사용하며, 이를 통해 표준 및 비즈니스별 태그를 모두 인식하고 이미지에 적용하는 교육을 받을 수 있습니다. 스마트 태그는 컨텐츠, 개별 단어 또는 구를 식별하고 설명 태그를 자산에 자동으로 적용할 수도 있습니다
 
 자세한 내용은 다음 문서를 참조하십시오.
 

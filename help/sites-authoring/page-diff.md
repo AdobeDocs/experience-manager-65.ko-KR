@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '577'
 ht-degree: 96%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 96%
 
 선택한 쪽이 전체 창을 채우지만, 막대는 두 페이지 간에 전환할 수 있도록 맨 위에 남아 있습니다.
 
-![맨 위의 막대를 사용하면 페이지 간에 전환할 수 있습니다.](assets/chlimage_1-110.png)
+![상단의 막대를 사용하면 페이지 간에 전환할 수 있습니다.](assets/chlimage_1-110.png)
 
 전체 화면 종료 아이콘을 클릭하여 전체 화면 보기를 닫을 수도 있습니다.
 

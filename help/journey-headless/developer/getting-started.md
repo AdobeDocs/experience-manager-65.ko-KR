@@ -2,10 +2,10 @@
 title: AEM Headless 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3031'
-ht-degree: 100%
+source-wordcount: '3024'
+ht-degree: 96%
 
 ---
 
@@ -78,7 +78,7 @@ AEM의 Headless 기능은 몇 가지 주요 기능을 기반으로 합니다. �
 
 콘텐츠를 Headless 방식으로 수정하기 위해 AEM은 두 개의 강력한 API를 제공합니다.
 
-* GraphQL API를 사용하면 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 생성할 수 있습니다.
+* GraphQL API를 사용하여 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 생성할 수 있습니다.
 * Assets REST API를 사용하면 콘텐츠 조각(및 기타 에셋)을 만들고 수정할 수 있습니다.
 
 AEM Headless 여정 후반부에서 해당 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 추가 설명서는 아래 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
@@ -139,9 +139,9 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 ### 범위 {#scope}
 
-프로젝트의 범위를 명확히 정의해야 합니다. 범위는 허용 기준을 알려 주고 완료에 대한 정의를 설정할 수 있도록 합니다.
+프로젝트의 범위를 명확히 정의해야 합니다. 범위는 수락 기준을 알리고 완료의 정의를 설정할 수 있습니다.
 
-첫 번째 질문은 “AEM Headless를 통해 얻으려는 목표는 무엇입니까?”입니다. AEM이 아닌 자체 개발 도구로 빌드한 경험 애플리케이션을 보유하거나 앞으로 보유할 수 있다는 것이 이 질문에 대한 일반적인 답변입니다. 이 경험 애플리케이션은 모바일 앱, 웹 사이트 또는 기타 최종 사용자 고객용 경험 애플리케이션일 수 있습니다. AEM Headless 사용 목표는 AEM Headless 호출로 경험 애플리케이션에서 바로 콘텐츠나 CRUD 콘텐츠를 완전히 가져올 수 있는 최신 API를 사용하여 AEM에서 생성, 저장 및 관리되는 콘텐츠로 경험 애플리케이션을 피드하는 것입니다. 이 항목을 원하는 것이 아니면 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)로 돌아가 수행할 작업에 더 적합한 섹션을 찾습니다.
+첫 번째 질문은 “AEM Headless를 통해 얻으려는 목표는 무엇입니까?”입니다. AEM이 아닌 자체 개발 도구로 빌드한 경험 애플리케이션을 보유하거나 앞으로 보유할 수 있다는 것이 이 질문에 대한 일반적인 답변입니다. 이 경험 애플리케이션은 모바일 앱, 웹 사이트 또는 기타 최종 사용자 고객용 경험 애플리케이션일 수 있습니다. AEM Headless 사용 목표는 AEM Headless 호출로 경험 애플리케이션에서 바로 콘텐츠나 CRUD 콘텐츠를 완전히 가져올 수 있는 최신 API를 사용하여 AEM에서 생성, 저장 및 관리되는 콘텐츠로 경험 애플리케이션을 피드하는 것입니다. 이 항목을 원하는 것이 아니면 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html)로 돌아가 수행할 작업에 더 적합한 섹션을 찾습니다.
 
 ### 역할 및 책임 {#roles-responsibilities}
 
@@ -156,13 +156,13 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 관리자는 시스템의 기본 설정 및 구성을 담당합니다. 예를 들어 관리자는 Identity Management System(IMS)이라는 Adobe 사용자 관리 시스템 내에서 조직을 설정합니다. 관리자는 조직이 IMS 내의 Adobe에 의해 생성되면 Adobe로부터 이메일 초대를 수신하는 조직의 첫 번째 사용자입니다. 관리자는 IMS에 로그인하여 다른 담당자의 사용자를 추가할 수 있습니다.
 
-사용자가 관리자에 의해 구성되면 AEM Headless를 통해 경험 애플리케이션을 제공하는 기여자로서 작업을 수행하는 데 모든 AEM 리소스에 대한 액세스 권한이 부여됩니다.
+관리자가 사용자를 구성하면 모든 AEM 리소스에 액세스할 수 있는 권한이 부여되어 AEM Headless를 사용하여 경험 애플리케이션을 게재하는 기여자로 작업할 수 있습니다.
 
 관리자는 AEM을 설정하고 런타임 환경을 준비하는 사용자로서, 이를 통해 [콘텐츠 작성자](#content-author)는 콘텐츠 및 [개발자](#developer)를 만들고 업데이트하여 경험 애플리케이션용 콘텐츠를 가져오거나 수정하는 API를 사용할 수 있습니다.
 
 #### 콘텐츠 작성자 {#content-author}
 
-콘텐츠 작성자는 AEM에서 Headless 방식으로 게재하는 콘텐츠를 만들고 관리합니다. 콘텐츠 작성자는 콘텐츠 조각과 에셋 콘솔 등 AEM 기능을 사용하여 콘텐츠를 관리합니다.
+콘텐츠 작성자는 AEM에서 Headless 방식으로 게재하는 콘텐츠를 만들고 관리합니다. 콘텐츠 작성자는 콘텐츠 조각과 자산 콘솔 등 AEM 기능을 사용하여 콘텐츠를 관리합니다.
 
 콘텐츠 작성자는 다음 모범 사례를 고려해야 합니다.
 
@@ -255,7 +255,7 @@ GraphQL은 AEM과 Headless 콘텐츠 사용자 사이에서 “접착제” 역�
 
 #### 업데이트 주기 {#update-frequency}
 
-경험 섹션이 다르면 콘텐츠 업데이트 주기가 달라지는 경우가 있습니다. 이 정보를 이해하려면 CDN 및 캐시 구성을 미세 조정할 수 있어야 합니다. [콘텐츠 설계자](#content-architects)가 모델을 디자인하여 콘텐츠를 나타내는 경우 중요한 정보입니다. 고려해야 할 사항:
+경험 섹션이 다르면 콘텐츠 업데이트 주기가 달라지는 경우가 있습니다. CDN 및 캐시 구성을 세부 조정할 수 있으려면 이를 이해하는 것이 중요합니다. [콘텐츠 설계자](#content-architects)가 모델을 디자인하여 콘텐츠를 나타내는 경우 중요한 정보입니다. 고려해야 할 사항:
 
 * 특정 기간이 경과하면 특정 유형의 콘텐츠는 만료되어야 합니까?
 * 사용자별로 지정되어 캐시될 수 없는 요소가 있습니까?
@@ -288,6 +288,6 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서.
 * [GraphQL 기술 설명서](https://graphql.org) - GraphQL 정의 (외부 링크)
 * [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만드는 방법에 대한 기술 설명서
-* [Assets REST API](/help/assets/assets-api-content-fragments.md) - 콘텐츠 조각(및 기타 에셋)을 만들고 수정하는 방법에 대한 기술 설명서
+* [Assets REST API](/help/assets/assets-api-content-fragments.md) - 콘텐츠 조각(및 기타 자산)을 만들고 수정하는 방법에 대한 기술 설명서
 * [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md) - AEM의 지속 쿼리에 대한 기술 설명서
 * [AEM의 Headful 및 Headless](/help/sites-developing/headful-headless.md) - AEM에서 사용 가능한 Headless 통합 수준에 대한 전체 설명

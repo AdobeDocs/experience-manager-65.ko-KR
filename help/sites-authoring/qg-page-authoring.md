@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1557'
 ht-degree: 76%
 
 ---
@@ -36,7 +36,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 세부 사항의 개요를 제공하기 전에 기억해야 할 가치가 있는 일반적인 팁과 힌트에 대한 간단한 컬렉션을 살펴보십시오.
 
-### 사이트 콘솔 {#sites-console}
+### Sites 콘솔 {#sites-console}
 
 * **만들기**
 
@@ -75,7 +75,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. [헤더에서 이동 경로](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs)를 사용하여 트리 위로 탐색합니다. 그러면 선택한 위치로 돌아갈 수 있습니다.
+1. 다음을 사용하여 트리 위로 탐색 [헤더의 이동 경로](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs)를 클릭하여 선택한 위치로 돌아갈 수 있습니다.
 
    ![qgtap-01](assets/qgtap-01.png)
 
@@ -205,7 +205,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 [페이지 속성을 편집](/help/sites-authoring/editing-page-properties.md)하는 방법에는 두 가지(기본) 방법이 있습니다.
 
-* **사이트** 콘솔에서:
+* **Sites** 콘솔에서:
 
    1. 게시할 [페이지로 이동](#finding-your-page)합니다.
    1. 다음 중 하나를 사용하여 **속성** 아이콘을 선택합니다.
@@ -228,7 +228,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 페이지를 게시 및 게시 취소하는 [방법에는](/help/sites-authoring/publishing-pages.md) 두 가지 기본 방법이 있습니다.
 
-* **사이트** 콘솔에서:
+* **Sites** 콘솔에서:
 
    1. 게시할 [페이지로 이동](#finding-your-page)합니다.
    1. 다음 중 하나에서 **빠른 게시** 아이콘을 선택합니다.
@@ -283,10 +283,10 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ### 페이지 잠금(및 잠금 해제) {#locking-your-page-then-unlocking}
 
-[Locking a page](/help/sites-authoring/editing-content.md#locking-a-page) prevents other authors from working on it while you are. The Lock (and Unlock) icon/button can be found:
+[페이지 잠금](/help/sites-authoring/editing-content.md#locking-a-page)을 사용하면 사용자가 작업하는 동안 다른 작성자가 작업할 수 없습니다. 잠금(및 잠금 해제) 아이콘/버튼은 다음에 있습니다.
 
 * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
-* 다음 [페이지 정보 드롭다운 메뉴](#editing-the-page-properties) 페이지를 편집할 때.
+* 페이지를 편집할 때 [[페이지 정보] 드롭다운 메뉴](#editing-the-page-properties)
 * 페이지를 편집할 때 페이지 도구 모음(페이지가 잠겨 있을 때)
 
 예를 들어 잠금 아이콘은 다음과 같습니다.
@@ -339,4 +339,4 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * **차이 표시**
 
-      * 두 버전 간의 차이점이 강조 표시된 상태로 페이지가 열립니다.
+      * 두 버전 간의 차이가 강조 표시된 채로 페이지가 열립니다.

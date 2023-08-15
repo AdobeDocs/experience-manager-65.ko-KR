@@ -1,7 +1,7 @@
 ---
 title: 프로젝트
 seo-title: Projects
-description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 이 엔티티는 공유 환경을 통해 프로젝트를 쉽게 관리할 수 있습니다.
+description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화하여 공통, 공유 환경에서 프로젝트를 쉽게 관리할 수 있습니다..
 seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
 uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,22 +10,22 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 85e993000c016240c0fbf398ec8192990e60eee6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 24%
+source-wordcount: '1365'
+ht-degree: 33%
 
 ---
 
 
 # 프로젝트 {#projects}
 
-프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 공통되는 공유 환경을 사용하면 프로젝트 관리가 쉬워집니다. 프로젝트와 연결할 수 있는 리소스 유형은 AEM as Tiles에 나와 있습니다. 타일에는 프로젝트 및 팀 정보, 에셋, 워크플로 및 [프로젝트 타일](#project-tiles)에 설명된 세부 정보와 같은 기타 유형의 정보가 포함될 수 있습니다.
+프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 공통되는 공유 환경을 사용하면 프로젝트 관리가 쉬워집니다. 프로젝트와 연결할 수 있는 리소스 유형은 AEM에서 타일이라고 합니다. 타일에는 프로젝트 및 팀 정보, 자산, 워크플로 및 [프로젝트 타일](#project-tiles)에 설명된 세부 정보와 같은 기타 유형의 정보가 포함될 수 있습니다.
 
 사용자는 다음과 같은 작업을 수행할 수 있습니다.
 
 * 프로젝트 만들기 및 삭제
-* 콘텐츠 및 에셋 폴더를 프로젝트에 연결
+* 콘텐츠 및 자산 폴더를 프로젝트에 연결
 * 프로젝트에서 콘텐츠 링크 제거
 
 ## 액세스 요구 사항 {#access-requirements}
@@ -38,7 +38,7 @@ ht-degree: 24%
 
 ## 프로젝트 콘솔 {#projects-console}
 
-프로젝트 콘솔 에서는 AEM 내에서 프로젝트에 액세스하고 관리할 수 있습니다.
+프로젝트 콘솔은 AEM 내 프로젝트를 액세스하고 관리하는 곳입니다.
 
 ![프로젝트 콘솔](assets/screen-shot_2019-03-05at125110.png)
 
@@ -86,10 +86,10 @@ ht-degree: 24%
 
 프로젝트는 함께 관리하려는 다양한 유형의 정보로 구성됩니다. 이 정보는 다른 로 표시됩니다. **타일**.
 
-다음과 같은 타일을 프로젝트와 연결할 수 있습니다.
+다음 타일을 프로젝트와 연결할 수 있습니다.
 
-* [Assets](#assets)
-* [에셋 컬렉션](#asset-collections)
+* [자산](#assets)
+* [자산 컬렉션](#asset-collections)
 * [경험](#experiences)
 * [링크](#links)
 * [프로젝트 정보](#project-info)
@@ -104,17 +104,17 @@ ht-degree: 24%
 
 타일 오른쪽 하단에 있는 줄임표 버튼을 클릭하여 타일의 데이터를 연결된 콘솔에서 엽니다.
 
-### 에셋 {#assets}
+### 자산 {#assets}
 
-**에셋** 타일에서는 특정 프로젝트에 사용하는 모든 에셋을 수집할 수 있습니다.
+**자산** 타일에서는 특정 프로젝트에 사용하는 모든 자산을 수집할 수 있습니다.
 
-![에셋 타일](assets/project-tile-assets.png)
+![자산 타일](assets/project-tile-assets.png)
 
-타일에서 바로 에셋을 업로드할 수 있습니다.
+타일에서 바로 자산을 업로드할 수 있습니다.
 
-### 에셋 컬렉션 {#asset-collections}
+### 자산 컬렉션 {#asset-collections}
 
-에셋과 유사하게 [에셋 컬렉션](/help/assets/manage-collections.md)도 프로젝트에 바로 추가할 수 있습니다. [에셋]에서 컬렉션을 정의합니다.
+자산과 유사하게 [자산 컬렉션](/help/assets/manage-collections.md)도 프로젝트에 바로 추가할 수 있습니다. [자산]에서 컬렉션을 정의합니다.
 
 ![에셋 컬렉션 타일](assets/project-tile-asset-collection.png)
 
@@ -141,7 +141,7 @@ ht-degree: 24%
 
 ### 프로젝트 정보 {#project-info}
 
-다음 **프로젝트 정보** tile에서는 설명, 프로젝트 상태(비활성 또는 활성), 기한 및 구성원을 포함하여 프로젝트에 대한 일반 정보를 제공합니다. 또한 기본 프로젝트 페이지에 표시되는 프로젝트 썸네일을 추가할 수 있습니다.
+다음 **프로젝트 정보** tile에서는 설명, 프로젝트 상태(비활성 또는 활성), 기한 및 구성원을 포함하여 프로젝트에 대한 일반 정보를 제공합니다. 또한 메인 프로젝트 페이지에 표시되는 프로젝트 썸네일을 추가할 수도 있습니다.
 
 ![프로젝트 정보 타일](assets/project-tile-info.png)
 
@@ -155,7 +155,7 @@ ht-degree: 24%
 
 ### 팀 {#team}
 
-이 타일에서 프로젝트 팀의 멤버를 지정할 수 있습니다. 편집 시에는 팀원의 이름을 입력하고 사용자 역할을 지정할 수 있습니다.
+이 타일에서는 프로젝트 팀의 구성원을 지정할 수 있습니다. 편집 시에는 팀원의 이름을 입력하고 사용자 역할을 지정할 수 있습니다.
 
 ![팀 타일](assets/project-tile-team.png)
 
@@ -221,7 +221,7 @@ ht-degree: 24%
 
 | 역할 | 설명 | 권한 | 그룹 멤버십 |
 |---|---|---|---|
-| 관찰자 | 이 역할의 사용자는 프로젝트 상태를 포함하여 프로젝트 세부 정보를 볼 수 있습니다. | 프로젝트에 대한 읽기 전용 권한 | `workflow-users` 그룹 |
+| 관찰자 | 이 역할의 사용자는 프로젝트 상태를 포함하여 프로젝트 세부 사항을 볼 수 있습니다. | 프로젝트에 대한 읽기 전용 권한 | `workflow-users` 그룹 |
 | 편집기 | 이 역할의 사용자는 프로젝트 콘텐츠를 업로드하고 편집할 수 있습니다. | 프로젝트, 연결된 메타데이터 및 관련 에셋에 대한 읽기 및 쓰기 액세스<br>촬영 목록 업로드, 사진 촬영, 에셋 검토 및 승인 권한<br>에 대한 쓰기 권한 `/etc/commerce`<br>특정 프로젝트에 대한 권한 수정 | `workflow-users` 그룹 |
 | 소유자 | 이 역할의 사용자는 프로젝트를 만들고, 프로젝트에서 작업을 시작하고, 승인된 에셋을 프로덕션 폴더로 이동할 수 있습니다. 프로젝트의 다른 모든 작업도 소유자가 보고 수행할 수 있습니다. | `/etc/commerce`에 대한 쓰기 권한 | `dam-users` 프로젝트를 만들 수 있는 그룹<br>`project-administrators` 프로젝트를 만들고 에셋을 이동할 수 있는 그룹 |
 
@@ -229,9 +229,9 @@ ht-degree: 24%
 
 ### 자동 그룹 만들기 {#auto-group-creation}
 
-When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions.
+프로젝트를 생성하고 다양한 역할에 사용자를 추가하면 프로젝트와 연결된 그룹이 자동으로 생성되어 관련 권한을 관리합니다.
 
-For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**.
+예를 들어 Myproject라는 프로젝트에는 세 개의 그룹(**Myproject 소유자**, **Myproject 편집자**, **Myproject 관찰자**)이 있습니다.
 
 프로젝트가 삭제되면 해당 그룹은 적절한 옵션을 선택한 경우에만 삭제됩니다 [프로젝트를 삭제할 때.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) 관리자는 의 그룹을 수동으로 삭제할 수도 있습니다. **도구** > **보안** > **그룹**.
 
@@ -241,5 +241,5 @@ For example, a project called Myproject would have three groups **Myproject Owne
 
 * [프로젝트 관리](/help/sites-authoring/touch-ui-managing-projects.md)
 * [작업](/help/sites-authoring/task-content.md)
-* [프로젝트 워크플로를 사용하여 작업](/help/sites-authoring/projects-with-workflows.md)
+* [프로젝트 워크플로우를 사용하여 작업](/help/sites-authoring/projects-with-workflows.md)
 * [크리에이티브 프로젝트 및 PIM 통합](/help/sites-authoring/managing-product-information.md)

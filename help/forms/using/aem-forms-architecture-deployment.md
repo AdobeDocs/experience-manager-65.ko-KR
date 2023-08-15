@@ -11,9 +11,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2479'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html) |
 | AEM 6.5 | 이 문서 |
 
 ## 아키텍처 {#architecture}
@@ -41,9 +41,9 @@ AEM Forms용 아키텍처에는 다음 구성 요소가 포함되어 있습니�
    * **양식 렌디션 및 제출 프론트엔드**: AEM Forms의 최종 사용자(예: 정부 웹 사이트에 액세스하는 시민)가 사용할 수 있는 최종 사용자 대면 인터페이스입니다. 이렇게 하면 양식 렌디션(웹 브라우저에 양식 표시) 및 제출 기능이 제공됩니다.
    * **REST API**: JSP 및 서블릿은 forms mobile SDK와 같은 HTTP 기반 클라이언트의 원격 사용을 위해 양식 서비스의 하위 집합을 내보냅니다.
 
-**OSGi의 AEM Forms:** OSGi 환경의 AEM Forms은 AEM Forms 패키지가 배포된 표준 AEM 작성자 또는 AEM 게시입니다. 다음에서 OSGi에서 AEM Forms을 실행할 수 있습니다. [단일 서버 환경, 팜 및 클러스터형 설정](/help/sites-deploying/recommended-deploys.md). 클러스터 설정은 AEM 작성자 인스턴스에만 사용할 수 있습니다.
+**OSGi의 AEM Forms:** OSGi 환경의 AEM Forms은 AEM Forms 패키지가 배포된 표준 AEM Author 또는 AEM Publish입니다. 다음에서 OSGi에서 AEM Forms을 실행할 수 있습니다. [단일 서버 환경, 팜 및 클러스터형 설정](/help/sites-deploying/recommended-deploys.md). 클러스터 설정은 AEM 작성자 인스턴스에만 사용할 수 있습니다.
 
-**JEE의 AEM Forms:** JEE의 AEM Forms은 JEE 스택에서 실행 중인 AEM Forms 서버입니다. 애플리케이션 서버에서 실행되는 단일 JEE 스택에 AEM Forms 추가 기능 패키지 및 추가 AEM Forms JEE 기능이 공동 배포된 AEM 작성자가 있습니다. 단일 서버 및 클러스터된 설정에서 JEE에서 AEM Forms을 실행할 수 있습니다. AEM Forms on JEE는 문서 보안, 프로세스 관리를 실행하고 AEM Forms으로 업그레이드하는 LiveCycle 고객을 위해서만 필요합니다. 다음은 JEE에서 AEM Forms을 사용하는 몇 가지 추가 시나리오입니다.
+**JEE의 AEM Forms:** JEE의 AEM Forms은 JEE 스택에서 실행 중인 AEM Forms 서버입니다. 애플리케이션 서버에서 실행되는 단일 JEE 스택에 AEM Forms 추가 기능 패키지 및 추가 AEM Forms JEE 기능이 공동 배포된 AEM Author가 포함되어 있습니다. 단일 서버 및 클러스터된 설정에서 JEE에서 AEM Forms을 실행할 수 있습니다. AEM Forms on JEE는 문서 보안, 프로세스 관리를 실행하고 AEM Forms으로 업그레이드하는 LiveCycle 고객을 위해서만 필요합니다. 다음은 JEE에서 AEM Forms을 사용하는 몇 가지 추가 시나리오입니다.
 
 * **HTML 작업 영역 지원(HTML 작업 영역을 사용하는 고객):** AEM Forms on JEE는 처리 인스턴스를 사용하여 SSO(Single Sign-On)를 활성화하고, 처리 인스턴스에서 렌더링된 특정 에셋을 제공하고, HTML 작업 공간에서 렌더링된 양식 제출을 처리합니다.
 * **고급 추가 양식/대화형 통신 데이터 처리**: JEE의 AEM Forms은 고급 프로세스 관리 기능이 필요한 복잡한 사용 사례에서 양식/대화형 통신 데이터를 추가로 처리하고 결과를 적절한 데이터 저장소에 저장하는 데 활용할 수 있습니다.
@@ -108,7 +108,7 @@ AEM Forms을 사용하면 단일 서버에서 모든 기능을 설정하고 실�
 
 예를 들어 AEM Forms 프로세스 관리 기능을 사용하려는 AEM Forms 고객의 경우 Workspace HTML 와 유사한 토폴로지를 사용할 수 있습니다. JEE의 AEM Forms 서버는 단일 서버 또는 클러스터 구성에 있을 수 있습니다.
 
-LiveCycle ES4에서 업그레이드하는 경우, 이 토폴로지는 JEE의 AEM Forms에 내장된 AEM 작성자를 추가하는 것을 제외하고 LiveCycle에 이미 있는 것과 밀접하게 미러링합니다. 또한 업그레이드를 수행하는 고객의 클러스터링 요구 사항에는 변화가 없습니다. 클러스터된 환경에서 AEM Forms을 사용하는 경우 AEM 6.5 Forms에서 동일한 기능을 계속 사용할 수 있습니다. HTML 작업 영역을 사용하기 위해 JEE의 AEM Forms을 새로 설치하려면 JEE 환경에 내장된 AEM 작성자 인스턴스를 실행하는 것이 추가 요구 사항입니다.
+LiveCycle ES4에서 업그레이드하는 경우, 이 토폴로지는 JEE의 AEM Forms에 AEM 작성자 기본 제공 기능을 추가하는 것을 제외하고 LiveCycle에 이미 있는 기능과 밀접하게 미러링합니다. 또한 업그레이드를 수행하는 고객의 클러스터링 요구 사항에는 변화가 없습니다. 클러스터된 환경에서 AEM Forms을 사용하는 경우 AEM 6.5 Forms에서 계속 사용할 수 있습니다. HTML 작업 영역을 사용하기 위해 JEE의 AEM Forms을 새로 설치하려면 JEE 환경에 내장된 AEM 작성자 인스턴스를 실행하는 것이 추가 요구 사항입니다.
 
 양식 데이터 저장소는 양식 및 대화형 통신의 최종 처리 데이터를 저장하는 데 사용되는 타사 데이터 저장소입니다. 이는 토폴로지에서 선택적 요소입니다. 필요한 경우 처리 인스턴스를 설정하고 해당 저장소를 최종 기록 시스템 시스템으로 사용하도록 선택할 수도 있습니다.
 
@@ -147,6 +147,6 @@ LiveCycle ES4에서 업그레이드하는 경우, 이 토폴로지는 JEE의 AEM
 
 document services 기능만 사용하려는 AEM Forms 고객은 아래에 표시된 것과 유사한 토폴로지를 가질 수 있습니다. 이 토폴로지에서는 OSGi 서버에서 AEM Forms 클러스터를 사용하는 것이 좋습니다. 대부분의 사용자가 프로그래밍 방식으로(API 사용) AEM Forms 서버의 기능에 액세스하고 사용자 인터페이스를 통해 개입하는 것이 최소인 경우 이 토폴로지를 사용하는 것이 좋습니다. 이 토폴로지는 여러 소프트웨어 클라이언트 시나리오에서 매우 유용합니다. 예를 들어 여러 클라이언트가 PDF Generator 서비스를 사용하여 요청 시 PDF 문서를 만드는 경우
 
-AEM Forms을 사용하면 단일 서버에서 모든 기능을 설정하고 실행할 수 있지만 프로덕션 환경에서는 특정 기능에 대해 용량 계획, 로드 밸런싱 및 전용 서버 설정을 수행해야 합니다. 예를 들어, PDF 생성기 서비스를 사용하여 하루에 수천 개의 페이지와 여러 적응형 양식을 변환하여 데이터를 캡처하는 환경의 경우, PDF 생성기 서비스와 적응형 양식 기능을 위해 별도의 AEM Forms 서버를 설정합니다. 최적의 성능을 제공하고 서로 독립적으로 서버를 확장할 수 있습니다.
+AEM Forms을 사용하면 단일 서버에서 모든 기능을 설정하고 실행할 수 있지만 프로덕션 환경에서는 특정 기능에 대해 용량 계획, 로드 밸런싱 및 전용 서버 설정을 수행해야 합니다. 예를 들어, PDF Generator 서비스를 사용하여 하루에 수천 페이지의 데이터를 변환하고 여러 적응형 양식을 사용하여 데이터를 캡처하는 환경의 경우, PDF Generator 서비스 및 적응형 양식 기능을 위해 별도의 AEM Forms 서버를 설정하십시오. 최적의 성능을 제공하고 서로 독립적으로 서버를 확장할 수 있습니다.
 
 ![offline-api-based-processing](assets/offline-api-based-processing.png)

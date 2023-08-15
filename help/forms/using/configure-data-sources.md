@@ -10,10 +10,10 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 1%
+source-wordcount: '2111'
+ht-degree: 2%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
 | AEM 6.5 | 이 문서 |
 
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 
-AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다. 하지만 사용자 정의가 거의 없으므로 다른 데이터 소스도 통합할 수 있습니다.
+AEM Forms 데이터 통합을 통해 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다. 하지만 사용자 정의가 거의 없으므로 다른 데이터 소스도 통합할 수 있습니다.
 
 * 관계형 데이터베이스 - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS 및 Sybase
 * AEM 사용자 프로필
@@ -35,7 +35,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 * SOAP 기반 웹 서비스
 * OData 서비스
 
-데이터 통합은 OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증 및 API 키 인증 유형은 즉시 사용할 수 있으며 웹 서비스에 액세스하기 위해 사용자 지정 인증을 구현할 수 있습니다. RESTful, SOAP 기반 및 OData 서비스는 AEM Cloud Services에 구성되어 있지만 관계형 데이터베이스에 대한 JDBC 및 AEM 사용자 프로필에 대한 커넥터는 AEM 웹 콘솔에 구성되어 있습니다.
+데이터 통합은 OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증 및 API 키 인증 유형은 즉시 사용할 수 있으며 웹 서비스에 액세스하기 위해 사용자 지정 인증을 구현할 수 있습니다. RESTful, SOAP 기반 및 OData 서비스는 AEM Cloud Service에 구성되어 있지만, 관계형 데이터베이스에 대한 JDBC 및 AEM 사용자 프로필에 대한 커넥터는 AEM 웹 콘솔에 구성되어 있습니다.
 
 ## 관계형 데이터베이스 구성 {#configure-relational-database}
 
@@ -119,11 +119,11 @@ AEM의 모든 클라우드 서비스 구성은 `/conf` 폴더를 AEM 리포지�
 
 ## RESTful 웹 서비스 구성 {#configure-restful-web-services}
 
-RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/) Swagger 정의 파일의 JSON 또는 YAML 형식에서. AEM 클라우드 서비스에서 RESTful 웹 서비스를 구성하려면 파일 시스템에 Swagger 파일이 있거나 파일이 호스팅되는 URL이 있는지 확인합니다.
+RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/) Swagger 정의 파일의 JSON 또는 YAML 형식에서. AEM Cloud Services에서 RESTful 웹 서비스를 구성하려면 파일 시스템에 Swagger 파일이 있거나 파일이 호스팅되는 URL이 있는지 확인합니다.
 
 RESTful 서비스를 구성하려면 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](../../forms/using/configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
@@ -171,7 +171,7 @@ RESTful 서비스를 구성하려면 다음을 수행합니다.
 
 SOAP 기반 웹 서비스는 다음을 사용하여 설명합니다. [WSDL(웹 서비스 설명 언어) 사양](https://www.w3.org/TR/wsdl). AEM 클라우드 서비스에서 SOAP 기반 웹 서비스를 구성하려면 웹 서비스에 대한 WSDL URL이 있는지 확인하고 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](../../forms/using/configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
@@ -191,14 +191,14 @@ SOAP 기반 웹 서비스는 다음을 사용하여 설명합니다. [WSDL(웹 �
 
 ## OData 서비스 구성 {#config-odata}
 
-OData 서비스는 서비스 루트 URL로 식별됩니다. AEM 클라우드 서비스에서 OData 서비스를 구성하려면 서비스에 대한 서비스 루트 URL이 있는지 확인하고 다음을 수행합니다.
+OData 서비스는 서비스 루트 URL로 식별됩니다. AEM Cloud Services에서 OData 서비스를 구성하려면 서비스에 대한 서비스 루트 URL이 있는지 확인하고 다음을 수행합니다.
 
 >[!NOTE]
 >
 >양식 데이터 모델 지원 [OData 버전 4](https://www.odata.org/documentation/).
 >온라인 또는 온프레미스에서 Microsoft Dynamics 365를 구성하는 방법에 대한 단계별 안내서는 다음을 참조하십시오. [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](../../forms/using/configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 

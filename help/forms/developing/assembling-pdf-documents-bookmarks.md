@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2558'
 ht-degree: 0%
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 섹션을 읽기 전에 어셈블러 서비스를 사용하여 PDF 문서를 어셈블하는 방법을 잘 알고 있는 것이 좋습니다. 이 섹션에서는 입력 문서가 포함된 컬렉션 객체 작성이나 반환된 컬렉션 객체에서 결과를 추출하는 방법에 대한 학습과 같은 개념에 대해서는 다루지 않습니다. (참조: [프로그래밍 방식으로 PDF 문서 어셈블](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
+>이 섹션을 읽기 전에 어셈블러 서비스를 사용하는 PDF 문서 어셈블링에 익숙해지는 것이 좋습니다. 이 섹션에서는 입력 문서가 포함된 컬렉션 객체 작성이나 반환된 컬렉션 객체에서 결과를 추출하는 방법에 대한 학습과 같은 개념에 대해서는 다루지 않습니다. (참조: [프로그래밍 방식으로 PDF 문서 어셈블](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 >[!NOTE]
 >
@@ -209,11 +209,11 @@ PDF 문서를 어셈블하려면 DDX 문서를 참조해야 합니다. 이 DDX �
 
       * 키 이름을 나타내는 문자열 값입니다. 이 값은 DDX 문서에 지정된 PDF 원본 요소의 값과 일치해야 합니다.
       * A `com.adobe.idp.Document` 입력 PDF 문서가 포함된 개체입니다.
+
    * 를 호출하여 책갈피 XML 문서를 추가합니다. `java.util.Map` 개체 `put` 메서드 및 다음 인수 전달:
 
       * 키 이름을 나타내는 문자열 값입니다. 이 값은 DDX 문서에 지정된 책갈피 소스 요소의 값과 일치해야 합니다.
       * A `com.adobe.idp.Document` 책갈피 XML 문서가 포함된 개체입니다.
-
 
 1. 런타임 옵션을 설정합니다.
 
@@ -297,7 +297,7 @@ PDF 문서를 어셈블하려면 DDX 문서를 참조해야 합니다. 이 DDX �
 
 1. PDF 문서와 책갈피 XML 문서를 맵 컬렉션에 추가합니다.
 
-   * 만들기 `MyMapOf_xsd_string_To_xsd_anyType` 개체. 이 컬렉션 개체는 입력 PDF 문서 및 책갈피 XML 문서를 저장하는 데 사용됩니다.
+   * 만들기 `MyMapOf_xsd_string_To_xsd_anyType` 개체. 이 컬렉션 개체는 입력 PDF 문서와 책갈피 XML 문서를 저장하는 데 사용됩니다.
    * 각 입력 PDF 문서 및 책갈피 XML 문서에 대해 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체.
    * 키 이름을 나타내는 문자열 값을 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체 `key` 필드. 이 값은 DDX 문서에 지정된 PDF 원본 요소의 값과 일치해야 합니다.
    * 할당 `BLOB` 에 PDF 문서를 저장하는 개체 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체 `value` 필드.

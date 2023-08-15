@@ -2,7 +2,7 @@
 title: Adobe LiveCycle과 AEM Forms 연결
 seo-title: Connecting AEM Forms with Adobe LiveCycle
 description: AEM LiveCycle 커넥터를 사용하면 AEM 앱 및 워크플로 내에서 ES4 문서 서비스 LiveCycle을 시작할 수 있습니다.
-seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
+seo-description: AEM LiveCycle connector lets you start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 role: Admin
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,12 @@ AEM LiveCycle 커넥터는 [AEM Forms 추가 기능 패키지](/help/forms/using
 
 * **서버 URL** - LiveCycle 서버의 URL을 지정합니다. LiveCycle과 AEM이 https를 통해 통신하도록 하려면 다음 JVM으로 AEM을 시작하십시오
 
-   ```java
-   argument
-    -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
-   ```
+  ```java
+  argument
+   -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
+  ```
 
-   옵션을 선택합니다.
+  옵션을 선택합니다.
 
 * **사용자 이름**- AEM과 LiveCycle 간의 통신을 설정하는 데 사용되는 계정의 사용자 이름을 지정합니다. 이 계정은 문서 서비스를 시작할 수 있는 권한이 있는 LiveCycle 사용자 계정입니다.
 * **암호**- 암호를 지정합니다.

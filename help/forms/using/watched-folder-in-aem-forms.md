@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '7149'
+source-wordcount: '7148'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,7 @@ ht-degree: 0%
 다음 방법 중 하나를 사용하여 파일 시스템에서 감시 폴더를 만들 수 있습니다.
 
 * 감시 폴더 구성 노드의 속성을 구성하는 동안 다음 예제와 같이 folderPath 속성에 상위 디렉토리의 전체 경로를 입력하고 만들 감시 폴더의 이름을 추가합니다. `C:/MyPDFs/MyWatchedFolder`
-다음 
-`MyWatchedFolder`폴더가 없습니다. AEM Forms은 지정된 경로에 폴더를 만들려고 합니다.
+다음 `MyWatchedFolder`폴더가 없습니다. AEM Forms은 지정된 경로에 폴더를 만들려고 합니다.
 
 * 감시 폴더 끝점을 구성하기 전에 파일 시스템에 폴더를 만든 다음 folderPath 속성에 전체 경로를 제공합니다. folderPath 속성에 대한 자세한 내용은 [감시 폴더 속성](#watchedfolderproperties).
 
@@ -56,7 +55,7 @@ ht-degree: 0%
 
    지원되는 속성의 전체 목록은 다음을 참조하십시오. [감시 폴더 속성](#watchedfolderproperties).
 
-1. 클릭 **모두 저장**. 노드가 만들어지고 속성이 저장되면 다음 `input`, `result`, `failure`, `preserve`, 및 `stage`폴더는에 지정된 경로에 만들어집니다. `folderPath` 속성.
+1. **모두 저장**&#x200B;을 클릭합니다. 노드가 만들어지고 속성이 저장되면 다음 `input`, `result`, `failure`, `preserve`, 및 `stage`폴더는에 지정된 경로에 만들어집니다. `folderPath` 속성.
 
    스캔 작업은 정의된 시간 간격으로 감시 폴더 스캔을 시작합니다.
 
@@ -105,8 +104,8 @@ ht-degree: 0%
    * 다음 예제와 같이 이름과 확장명에 복합 표현식이 있는 파일
 
       * Data[0-9][0-9][0-9].[dD][aA]&#39;포트&#39;
-      * &#42;.[dD][Aa]&#39;포트&#39;
-      * &#42;.[Xx][Mm][Ll]
+      * &#42;[dD][Aa]&#39;포트&#39;
+      * &#42;[Xx][Mm][Ll]
 
 파일 패턴에 대한 자세한 내용은 [파일 패턴 정보](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
@@ -119,8 +118,8 @@ ht-degree: 0%
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;포트&#39;
 
-      * &#42;.[dD][Aa]&#39;포트&#39;
-      * &#42;.[Xx][Mm][Ll]
+      * &#42;[dD][Aa]&#39;포트&#39;
+      * &#42;[Xx][Mm][Ll]
 
 파일 패턴에 대한 자세한 내용은 [파일 패턴 정보](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -143,9 +142,9 @@ ht-degree: 0%
    * %R = 난수(0~9 사이)
    * %P = 프로세스 또는 작업 ID
 
-   예를 들어, 2009년 7월 17일 오후 8시이고 C:/Test/WF0/failure/%Y/%M/%D/%H/를 지정한 경우 결과 폴더는 C:/Test/WF0/failure/2009/07/17/20입니다
+  예를 들어, 2009년 7월 17일 오후 8시이고 C:/Test/WF0/failure/%Y/%M/%D/%H/를 지정한 경우 결과 폴더는 C:/Test/WF0/failure/2009/07/17/20입니다
 
-   경로가 절대적이 아니라 상대적이면 폴더가 감시 폴더 내에 만들어집니다. 기본값은 감시 폴더 내의 결과 폴더인 result/%Y/%M/%D/입니다. 파일 패턴에 대한 자세한 내용은 [파일 패턴 정보](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+  경로가 절대적이 아니라 상대적이면 폴더가 감시 폴더 내에 만들어집니다. 기본값은 감시 폴더 내의 결과 폴더인 result/%Y/%M/%D/입니다. 파일 패턴에 대한 자세한 내용은 [파일 패턴 정보](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 >[!NOTE]
 >
@@ -155,11 +154,11 @@ ht-degree: 0%
 * **preserveFolderName(문자열):** 처리 성공 후 파일이 저장되는 위치입니다. 경로는 절대, 상대 또는 null 디렉터리 경로일 수 있습니다. 결과 폴더에 설명된 대로 파일 패턴을 사용할 수 있습니다. 기본값은 preserve/%Y/%M/%D/입니다.
 * **batchSize(긴)**: 스캔당 선택할 파일 또는 폴더 수입니다. 시스템의 오버로드를 방지하기 위해 사용합니다. 한 번에 너무 많은 파일을 스캔하면 충돌이 발생할 수 있습니다. 기본값은 2입니다.
 
-   폴링 간격 및 배치 크기 설정은 모든 검사에서 감시 폴더가 선택하는 파일 수를 결정합니다. 감시 폴더는 석영 스레드 풀을 사용하여 입력 폴더를 스캔합니다. 스레드 풀이 다른 서비스와 공유됩니다. 스캔 간격이 작으면 스레드에서 종종 입력 폴더를 스캔합니다. 파일이 자주 감시 폴더로 드롭되는 경우 스캔 간격을 작게 유지해야 합니다. 파일을 자주 삭제하지 않는 경우 다른 서비스가 스레드를 사용할 수 있도록 스캔 간격을 크게 사용합니다.
+  폴링 간격 및 배치 크기 설정은 모든 검사에서 감시 폴더가 선택하는 파일 수를 결정합니다. 감시 폴더는 석영 스레드 풀을 사용하여 입력 폴더를 스캔합니다. 스레드 풀이 다른 서비스와 공유됩니다. 스캔 간격이 작으면 스레드에서 종종 입력 폴더를 스캔합니다. 파일이 자주 감시 폴더로 드롭되는 경우 스캔 간격을 작게 유지해야 합니다. 파일을 자주 삭제하지 않는 경우 다른 서비스가 스레드를 사용할 수 있도록 스캔 간격을 크게 사용합니다.
 
-   삭제할 파일이 많은 경우 배치 크기를 크게 만듭니다. 예를 들어, 감시 폴더 끝점에서 시작된 서비스가 분당 700개의 파일을 처리할 수 있고, 사용자가 동일한 비율로 파일을 입력 폴더에 놓는 경우 배치 크기를 350으로 설정하고 폴링 간격을 30초로 설정하면 감시 폴더를 너무 자주 검색하는 비용을 발생시키지 않고도 감시 폴더 성능이 향상됩니다.
+  삭제할 파일이 많은 경우 배치 크기를 크게 만듭니다. 예를 들어, 감시 폴더 끝점에서 시작된 서비스가 분당 700개의 파일을 처리할 수 있고, 사용자가 동일한 비율로 파일을 입력 폴더에 놓는 경우 배치 크기를 350으로 설정하고 폴링 간격을 30초로 설정하면 감시 폴더를 너무 자주 검색하는 비용을 발생시키지 않고도 감시 폴더 성능이 향상됩니다.
 
-   파일이 감시 폴더로 드롭되면 입력에 있는 파일이 나열되므로 매 초마다 스캔이 발생하는 경우 성능이 저하될 수 있습니다. 스캔 간격을 늘리면 성능이 향상될 수 있습니다. 삭제할 파일 볼륨이 작은 경우 배치 크기 및 폴링 간격을 적절하게 조정합니다. 예를 들어 1초마다 10개의 파일을 삭제하는 경우 pollInterval을 1초로 설정하고 Batch Size를 10으로 설정하십시오
+  파일이 감시 폴더로 드롭되면 입력에 있는 파일이 나열되므로 매 초마다 스캔이 발생하는 경우 성능이 저하될 수 있습니다. 스캔 간격을 늘리면 성능이 향상될 수 있습니다. 삭제할 파일 볼륨이 작은 경우 배치 크기 및 폴링 간격을 적절하게 조정합니다. 예를 들어 1초마다 10개의 파일을 삭제하는 경우 pollInterval을 1초로 설정하고 Batch Size를 10으로 설정하십시오
 
 * **throttleOn(부울)**: 이 옵션을 선택하면 AEM Forms이 지정된 시간에 처리하는 감시 폴더 작업 수가 제한됩니다. 최대 작업 수는 [일괄 처리 크기] 값에 의해 결정됩니다. 기본값은 true입니다. (참조: [조절 기본 정보](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
@@ -232,7 +231,7 @@ ht-degree: 0%
 * **getInputMap**: 맵 유형의 맵을 반환합니다. 맵의 키는 입력 파일의 파일 이름과 파일 내용이 포함된 문서 객체입니다. getinputMap API를 사용하여 입력 파일을 읽습니다.
 * **getConfigParameters**: 맵 유형의 변경할 수 없는 맵을 반환합니다. 맵에는 감시 폴더의 구성 매개 변수가 포함되어 있습니다.
 
-* **setResult**: ContentProcessor 구현은 API를 사용하여 출력 문서를 결과 폴더에 씁니다. setResult API에 출력 파일의 이름을 제공할 수 있습니다. API는 지정된 출력 폴더/파일 패턴에 따라 제공된 파일을 사용하거나 무시할 수 있습니다. 폴더 패턴이 지정된 경우 출력 파일의 이름은 워크플로우에 설명된 대로 지정됩니다. 파일 패턴이 지정된 경우 출력 파일의 이름은 파일 패턴에 설명된 대로 지정됩니다.
+* **setResult**: ContentProcessor 구현은 API를 사용하여 출력 문서를 결과 폴더에 씁니다. setResult API에 출력 파일의 이름을 제공할 수 있습니다. API는 지정된 출력 폴더/파일 패턴에 따라 제공된 파일을 사용하거나 무시하도록 선택할 수 있습니다. 폴더 패턴이 지정된 경우 출력 파일의 이름은 워크플로우에 설명된 대로 지정됩니다. 파일 패턴이 지정된 경우 출력 파일의 이름은 파일 패턴에 설명된 대로 지정됩니다.
 
 예를 들어 다음 코드는 사용자 지정 foo=bar 속성을 사용한 ContentProcessor 인터페이스의 사용자 지정 구현입니다.
 
@@ -270,7 +269,7 @@ public class TestContentProcessor1 implements ContentProcessor {
 * **getWatchFolderId**: 감시 폴더의 ID를 반환합니다.
 * **getInputMap**: 맵 유형의 맵을 반환합니다. 맵의 키는 입력 파일의 파일 이름과 파일 내용이 포함된 문서 객체입니다. getinputMap API를 사용하여 입력 파일을 읽습니다.
 * **getConfigParameters**: 맵 유형의 변경할 수 없는 맵을 반환합니다. 맵에는 감시 폴더의 구성 매개 변수가 포함되어 있습니다.
-* **setResult**: ContentProcessor 구현은 API를 사용하여 출력 문서를 결과 폴더에 씁니다. setResult API에 출력 파일의 이름을 제공할 수 있습니다. API는 지정된 출력 폴더/파일 패턴에 따라 제공된 파일을 사용하거나 무시할 수 있습니다. 폴더 패턴이 지정된 경우 출력 파일의 이름은 워크플로우에 설명된 대로 지정됩니다. 파일 패턴이 지정된 경우 출력 파일의 이름은 파일 패턴에 설명된 대로 지정됩니다.
+* **setResult**: ContentProcessor 구현은 API를 사용하여 출력 문서를 결과 폴더에 씁니다. setResult API에 출력 파일의 이름을 제공할 수 있습니다. API는 지정된 출력 폴더/파일 패턴에 따라 제공된 파일을 사용하거나 무시하도록 선택할 수 있습니다. 폴더 패턴이 지정된 경우 출력 파일의 이름은 워크플로우에 설명된 대로 지정됩니다. 파일 패턴이 지정된 경우 출력 파일의 이름은 파일 패턴에 설명된 대로 지정됩니다.
 
 다음 코드는 예제 ECMAScript입니다. 입력 파일을 수락하고 임시 위치에 파일을 복사한 다음 파일 내용이 포함된 문서 객체를 반환합니다. 문서 객체의 컨텐트가 결과 폴더에 저장됩니다. 결과 폴더의 실제 경로가 [감시 폴더 구성 노드](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
@@ -342,7 +341,7 @@ processWorkflowContext()에 대한 인수는 com.adobe.aemfd.watchfolder.workflo
 * getWatchFolderId: 감시 폴더의 ID를 반환합니다.
 * getInputMap: Map 유형의 맵을 반환합니다.&lt;string document=&quot;&quot;>. 맵의 키는 입력 파일의 파일 이름과 파일 내용이 포함된 문서 객체입니다. getinputMap API를 사용하여 입력 파일을 읽습니다.
 * getConfigParameters: Map 형식의 변경할 수 없는 맵을 반환합니다.&lt;string object=&quot;&quot;>. 맵에는 감시 폴더의 구성 매개 변수가 포함되어 있습니다.
-* setResult: ContentProcessor 구현은 API를 사용하여 결과 폴더에 출력 문서를 기록합니다. setResult API에 출력 파일의 이름을 제공할 수 있습니다. API는 지정된 출력 폴더/파일 패턴에 따라 제공된 파일을 사용하거나 무시할 수 있습니다. 폴더 패턴이 지정된 경우 출력 파일의 이름은 워크플로우에 설명된 대로 지정됩니다. 파일 패턴이 지정된 경우 출력 파일의 이름은 파일 패턴에 설명된 대로 지정됩니다
+* setResult: ContentProcessor 구현은 API를 사용하여 결과 폴더에 출력 문서를 기록합니다. setResult API에 출력 파일의 이름을 제공할 수 있습니다. API는 지정된 출력 폴더/파일 패턴에 따라 제공된 파일을 사용하거나 무시하도록 선택할 수 있습니다. 폴더 패턴이 지정된 경우 출력 파일의 이름은 워크플로우에 설명된 대로 지정됩니다. 파일 패턴이 지정된 경우 출력 파일의 이름은 파일 패턴에 설명된 대로 지정됩니다
 
 워크플로우에서 사용할 경우 setResult API에 대한 고려 사항:
 
@@ -568,8 +567,8 @@ log.info("Exiting workflow script!")
 * 다음 예제와 같이 이름과 확장명에 복합 표현식이 있는 파일
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;포트&#39;
-   * &#42;.[dD][Aa]&#39;포트&#39;
-   * &#42;.[Xx][Mm][Ll]
+   * &#42;[dD][Aa]&#39;포트&#39;
+   * &#42;[Xx][Mm][Ll]
 
 * 관리자는 결과를 저장할 출력 폴더의 파일 패턴을 정의할 수 있습니다. 출력 폴더(결과, 유지 및 실패)에 대해 관리자는 다음 파일 패턴 중 하나를 지정할 수 있습니다.
 * %Y = 연도(전체)
@@ -592,11 +591,11 @@ log.info("Exiting workflow script!")
 
 출력 매개 변수 매핑 패턴이 &quot;File.separator&quot;(경로 구분 기호)로 끝나면 폴더가 생성되고 콘텐츠가 해당 폴더에 복사됩니다. 패턴이 &quot;File.separator&quot;로 끝나지 않으면 컨텐츠(결과 파일 또는 폴더)가 해당 이름으로 만들어집니다.
 
-## 감시 폴더와 함께 PDF 생성기 사용 {#using-pdf-generator-with-a-watched-folder}
+## 감시 폴더로 PDF Generator 사용 {#using-pdf-generator-with-a-watched-folder}
 
-워크플로, 서비스 또는 스크립트를 시작하여 입력 파일을 처리하도록 감시 폴더를 구성할 수 있습니다. 다음 섹션에서는 ECMAScript를 시작하도록 감시 폴더를 구성합니다. ECMAScript는 PDF 생성기를 사용하여 Microsoft Word(.docx) 문서를 PDF 문서로 변환합니다.
+워크플로, 서비스 또는 스크립트를 시작하여 입력 파일을 처리하도록 감시 폴더를 구성할 수 있습니다. 다음 섹션에서는 ECMAScript를 시작하도록 감시 폴더를 구성합니다. ECMAScript는 PDF Generator을 사용하여 Microsoft Word(.docx) 문서를 PDF 문서로 변환합니다.
 
-PDF 생성기로 감시 폴더를 구성하려면 다음 단계를 수행하십시오.
+PDF Generator으로 감시 폴더를 구성하려면 다음 단계를 수행하십시오.
 
 1. [ECMAScript 만들기](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
 1. [워크플로우 만들기](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
@@ -604,7 +603,7 @@ PDF 생성기로 감시 폴더를 구성하려면 다음 단계를 수행하십�
 
 ### ECMAScript 만들기 {#create-an-ecmascript}
 
-ECMAScript는 PDF 생성기의 createPDF API를 사용하여 Microsoft Word(.docx) 문서를 PDF 문서로 변환합니다. 스크립트를 만들려면 다음 단계를 수행하십시오.
+ECMAScript는 PDF Generator의 createPDF API를 사용하여 Microsoft Word(.docx) 문서를 PDF 문서로 변환합니다. 스크립트를 만들려면 다음 단계를 수행하십시오.
 
 1. 브라우저 창에서 CRXDE lite를 엽니다. URL은 https://&#39; 입니다.[server]:[포트]&#39;/crx/de.
 
@@ -648,7 +647,7 @@ ECMAScript는 PDF 생성기의 createPDF API를 사용하여 Microsoft Word(.doc
 
 1. 새로 만든 워크플로우를 선택하고 을(를) 클릭합니다. **편집**. 워크플로우가 새 창에서 열립니다.
 
-1. 기본 워크플로우 단계를 삭제합니다. 사이드 킥에서 프로세스 단계를 워크플로우로 드래그 앤 드롭합니다.
+1. 기본 워크플로우 단계를 삭제합니다. Sidekick에서 워크플로우로 프로세스 단계를 드래그 앤 드롭합니다.
 
    ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
@@ -674,6 +673,7 @@ inputProcessorType (String): 시작할 프로세스의 유형입니다. 이 자�
    * inputProcessorId(문자열): inputProcessorId 속성의 동작은 inputProcessorType 속성에 지정된 값을 기반으로 합니다. 이 예제에서 inputProcessorType 속성의 값은 workflow입니다. 따라서 inputProcessorId 속성에 대해 PDFG 워크플로의 /etc/workflow/models/pdfg/jcr:content/model 경로를 지정합니다.
 
    * outputFilePattern(String): 출력 파일의 패턴입니다. 폴더 또는 파일 패턴을 지정할 수 있습니다. 폴더 패턴이 지정된 경우 출력 파일의 이름은 워크플로우에 설명된 대로 지정됩니다. 파일 패턴이 지정된 경우 출력 파일의 이름은 파일 패턴에 설명된 대로 지정됩니다.
+
    위에서 언급한 필수 속성 외에도 감시 폴더는 몇 가지 선택적 속성을 지원합니다. 선택적 속성에 대한 전체 목록 및 설명은 다음을 참조하십시오. [감시 폴더 속성](#watchedfolderproperties).
 
 ## 알려진 문제 {#watched-folder-known-issues}

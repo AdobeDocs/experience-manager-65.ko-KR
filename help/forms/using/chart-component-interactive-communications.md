@@ -11,9 +11,9 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2613'
+source-wordcount: '2612'
 ht-degree: 1%
 
 ---
@@ -31,8 +31,8 @@ ht-degree: 1%
 1. 누르기 **구성 요소** 인터랙티브 커뮤니케이션의 사이드 킥에서.
 1. 을(를) 끌어다 놓습니다. **차트** 구성 요소를 다음 구성 요소 중 하나로 만듭니다.
 
-   * 인쇄 채널: Target 영역 또는 이미지 필드
-   * 웹 채널: 패널 또는 Target 영역
+   * 인쇄 채널: 대상 영역 또는 이미지 필드
+   * 웹 채널: 패널 또는 대상 영역
 
 1. 대화형 통신 편집기에서 차트 구성 요소를 탭하고 을 선택합니다. **[!UICONTROL 구성 (]** ![configure_icon](assets/configure_icon.png))을 클릭하여 제품에서 사용할 수 있습니다.
 
@@ -153,7 +153,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>툴팁</td>
-   <td><p>웹 채널에서 차트의 데이터 포인트 위에 있는 마우스오버에 툴팁이 표시되는 형식입니다. 기본값은 ${x}(${y})입니다. 차트 유형에 따라 차트에서 마우스가 한 점, 막대 또는 슬라이스를 가리키면 변수 ${x} 및 ${y}이(가) X축 및 Y축의 해당 값으로 동적으로 대체되어 도구 설명에 표시됩니다.</p> <p>도구 설명을 비활성화하려면 <span class="uicontrol">툴팁</code> 필드가 비어 있습니다. 이 옵션은 선 및 영역 차트에 적용할 수 없습니다. 예를 들어 다음을 참조하십시오. <a href="#chartoutputprintweb">예제 1: 인쇄 및 웹의 차트 출력</a>.</code></p> </td>
+   <td><p>웹 채널에서 차트의 데이터 포인트 위에 있는 마우스오버에 툴팁이 표시되는 형식입니다. 기본값은 $ 입니다.{x}(${y}). 차트 유형에 따라 차트에서 마우스가 한 지점, 막대 또는 슬라이스를 가리키면 변수가 ${x}및 ${y} 은 X축 및 Y축의 해당 값으로 동적으로 대체되고 도구 설명에 표시됩니다.</p> <p>도구 설명을 비활성화하려면 <span class="uicontrol">툴팁</code> 필드가 비어 있습니다. 이 옵션은 선 및 영역 차트에 적용할 수 없습니다. 예를 들어 다음을 참조하십시오. <a href="#chartoutputprintweb">예제 1: 인쇄 및 웹의 차트 출력</a>.</p> </td>
    <td>웹</td>
   </tr>
   <tr>
@@ -167,12 +167,12 @@ ht-degree: 1%
      <li><strong>점 색상</strong>: 점, 선 및 점 차트에서 차트의 점 색상을 지정할 수 있습니다.<br /> </li>
      <li><strong>영역 색상</strong>: 영역 차트에 사용할 수 있으며 차트의 선 아래에 있는 영역의 색상을 지정합니다.</li>
      <li><strong>참조점 &gt; 바인딩 유형: </strong>Quadrant 차트에서 사용 가능<strong> </strong>참조점의 바인딩 형식을 지정합니다. 정적 텍스트 또는 데이터 모델 개체 속성을 사용하여 참조점의 값을 정의합니다.</li>
-     <li><strong>참조점 &gt; X축: </strong>다음을 선택하는 경우 Quadrant 차트에 사용 가능 <span class="uicontrol">정적</code> 참조 점의 X축 값을 지정할 수 있는 바인딩 유형 드롭다운 목록</code></li>
-     <li><strong>참조점 &gt; Y축: </strong>다음을 선택하는 경우 Quadrant 차트에 사용 가능 <span class="uicontrol">정적</code> 참조 점의 Y축 값을 지정할 수 있는 바인딩 유형 드롭다운 목록</code></li>
-     <li><strong>참조점 &gt; 시리즈의 데이터 모델 개체: </strong>다음을 선택하는 경우 여러 시리즈 Quadrant 차트에 사용 가능 <span class="uicontrol">데이터 모델 개체</code> 바인딩 유형 드롭다운 목록. 참조점의 시리즈를 식별하려면 양식 데이터 모델 개체 속성을 정의하십시오. </code></li>
-     <li><strong>참조점 &gt; 시리즈의 데이터 모델 개체 값: </strong>다음을 선택하는 경우 여러 시리즈 Quadrant 차트에 사용 가능 <span class="uicontrol">데이터 모델 개체</code> 바인딩 유형 드롭다운 목록. 시리즈의 양식 데이터 모델 개체 속성 및 이 필드에 정의된 값을 사용하여 참조점의 시리즈를 식별합니다.</code></li>
-     <li><strong>참조점 &gt; 참조점의 데이터 모델 개체: </strong>다음을 선택하는 경우 Quadrant 차트에 사용 가능 <span class="uicontrol">데이터 모델 개체</code> 바인딩 유형 드롭다운 목록. X축 및 Y축에 표시되는 속성과 동일한 양식 데이터 모델 개체 속성을 정의합니다. 또한 여러 시리즈의 경우 시리즈에 대해 정의된 데이터 모델 개체 속성의 하위 항목인 데이터 모델 개체 속성을 정의합니다.</code></li>
-     <li><strong>참조점 &gt; 참조점의 데이터 모델 개체 값: </strong>다음을 선택하는 경우 Quadrant 차트에 사용 가능 <span class="uicontrol">데이터 모델 개체</code> 바인딩 유형 드롭다운 목록. 참조점에 대한 양식 데이터 모델 개체 등록 정보와 이 필드에 정의된 값을 사용하여 차트의 참조점을 식별합니다.<br /> <strong>사분면 레이블 &gt; 왼쪽 위:</strong> Quadrant 차트에서 왼쪽 위 사분면에 대한 이름을 지정할 수 있습니다.</code></li>
+     <li><strong>참조점 &gt; X축: </strong>다음을 선택하는 경우 Quadrant 차트에 사용 가능 <span class="uicontrol">정적</code> 참조 점의 X축 값을 지정할 수 있는 바인딩 유형 드롭다운 목록</li>
+     <li><strong>참조점 &gt; Y축: </strong>다음을 선택하는 경우 Quadrant 차트에 사용 가능 <span class="uicontrol">정적</code> 참조 점의 Y축 값을 지정할 수 있는 바인딩 유형 드롭다운 목록</li>
+     <li><strong>참조점 &gt; 시리즈의 데이터 모델 개체: </strong>다음을 선택하는 경우 여러 시리즈 Quadrant 차트에 사용 가능 <span class="uicontrol">데이터 모델 개체</code> 바인딩 유형 드롭다운 목록. 참조점의 시리즈를 식별하려면 양식 데이터 모델 개체 속성을 정의하십시오. </li>
+     <li><strong>참조점 &gt; 시리즈의 데이터 모델 개체 값: </strong>다음을 선택하는 경우 여러 시리즈 Quadrant 차트에 사용 가능 <span class="uicontrol">데이터 모델 개체</code> 바인딩 유형 드롭다운 목록. 시리즈의 양식 데이터 모델 개체 속성 및 이 필드에 정의된 값을 사용하여 참조점의 시리즈를 식별합니다.</li>
+     <li><strong>참조점 &gt; 참조점의 데이터 모델 개체: </strong>다음을 선택하는 경우 Quadrant 차트에 사용 가능 <span class="uicontrol">데이터 모델 개체</code> 바인딩 유형 드롭다운 목록. X축 및 Y축에 표시되는 속성과 동일한 양식 데이터 모델 개체 속성을 정의합니다. 또한 여러 시리즈의 경우 시리즈에 대해 정의된 데이터 모델 개체 속성의 하위 항목인 데이터 모델 개체 속성을 정의합니다.</li>
+     <li><strong>참조점 &gt; 참조점의 데이터 모델 개체 값: </strong>다음을 선택하는 경우 Quadrant 차트에 사용 가능 <span class="uicontrol">데이터 모델 개체</code> 바인딩 유형 드롭다운 목록. 참조점에 대한 양식 데이터 모델 개체 등록 정보와 이 필드에 정의된 값을 사용하여 차트의 참조점을 식별합니다.<br /> <strong>사분면 레이블 &gt; 왼쪽 위:</strong> Quadrant 차트에서 왼쪽 위 사분면에 대한 이름을 지정할 수 있습니다.</li>
      <li><strong>Quadrant Labels &gt; 오른쪽 위:</strong> Quadrant 차트에서 오른쪽 위 사분면에 대한 이름을 지정할 수 있습니다.</li>
      <li><strong>사분면 레이블 &gt; 오른쪽 아래: </strong>Quadrant 차트에서 오른쪽 아래 사분면에 대한 이름을 지정할 수 있습니다.</li>
      <li><strong>사분면 레이블 &gt; 왼쪽 아래: </strong>Quadrant 차트에서 왼쪽 아래 사분면에 대한 이름을 지정할 수 있습니다.</li>
@@ -214,7 +214,7 @@ ht-degree: 1%
 
 차트에서 기본 함수를 사용할 수 있을 뿐만 아니라 JavaScript로 사용자 지정 함수™ 작성하여 웹 채널용 차트 구성 요소의 함수 목록에서 사용할 수 있도록 할 수 있습니다.
 
-함수는 배열 또는 값과 카테고리 이름을 입력으로 취하여 값을 반환합니다. 예:
+함수는 배열 또는 값과 카테고리 이름을 입력으로 취하여 값을 반환합니다. 예를 들면 다음과 같습니다.
 
 ```javascript
 Multiply(valueArray, category) {
@@ -270,7 +270,7 @@ Multiply(valueArray, category) {
 * **[!UICONTROL 차트 유형]** - 선택 **[!UICONTROL 도넛]** 을 클릭합니다.
 * **[!UICONTROL 데이터 모델 개체]** - X축(경비 유형) 및 Y축(거래 금액)에 대한 데이터 바인딩을 생성하려면 데이터 모델 개체 속성을 선택합니다.
 * **[!UICONTROL 내부 반경]** - [내부 반경] 값을 150으로 지정하여 차트에 있는 내부 원의 반경(픽셀 단위)을 지정합니다.
-* **[!UICONTROL 툴팁]** - ${x}(${y}) 기본 형식을 사용하여 도구 설명을 표시합니다. 툴팁은 비용 유형(거래 금액)으로 표시됩니다. 예: 비트코인에 대한 10000.
+* **[!UICONTROL 툴팁]** - $ 사용{x}(${y}) 도구 설명을 표시하는 기본 형식입니다. 툴팁은 비용 유형(거래 금액)으로 표시됩니다. 예: 비트코인에 대한 10000.
 
 ![대화형 통신의 웹 채널에 있는 도넛 차트](assets/sample_chart_web_new.png)
 

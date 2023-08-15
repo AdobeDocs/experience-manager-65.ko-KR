@@ -10,16 +10,16 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1532'
 ht-degree: 3%
 
 ---
 
 # Cloud Service 프레임워크를 사용한 Analytics {#analyticsusingcloudframework}
 
-AEM Forms은 Analytics와 통합되어 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있습니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
+AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있도록 해주는 Analytics와 통합됩니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ Analytics 데이터는 보고서 세트라는 고객별 저장소에 저장됩�
 Cloud Service 구성은 Adobe Analytics 계정에 대한 정보입니다. 이 구성을 통해 Adobe Experience Manager(AEM)가 Adobe Analytics에 연결할 수 있습니다. 사용하는 각 Analytics 계정에 대해 별도의 구성을 만듭니다.
 
 1. 관리자로 AEM 작성자 인스턴스에 로그인합니다.
-1. 왼쪽 상단 모서리에서 을(를) 클릭합니다 **Adobe Experience Manager** > **도구** ![망치 아이콘](/help/forms/using/assets/tools.png) > **Cloud Services** > **이전 Cloud Services**.
+1. 왼쪽 상단 모서리에서 을(를) 클릭합니다 **Adobe Experience Manager** > **도구** ![망치 아이콘](/help/forms/using/assets/tools.png) > **Cloud Service** > **이전 Cloud Service**.
 1. 찾기 **Adobe Analytics** 아이콘. 클릭 **구성 표시** 그런 다음 을(를) 클릭하여 **[+]** 새 구성을 추가합니다.
 
    처음 사용하는 경우 **지금 구성**.
@@ -132,7 +132,7 @@ Cloud Service 구성은 Adobe Analytics 계정에 대한 정보입니다. 이 �
 
 Adobe Analytics 프레임워크는 Adobe Analytics 변수와 AEM 변수 간의 매핑 세트입니다. 프레임워크를 사용하여 양식이 데이터를 Adobe Analytics 보고서에 채우는 방법을 구성합니다. 프레임워크는 Adobe Analytics 구성과 연결됩니다. 각 구성에 대해 여러 프레임워크를 만들 수 있습니다.
 
-1. AEM 클라우드 서비스 콘솔에서 을 클릭합니다. **구성 표시**, Adobe Analytics 아래에 있습니다.
+1. AEM 클라우드 서비스 콘솔에서 을(를) 클릭합니다. **구성 표시**, Adobe Analytics 아래에 있습니다.
 1. 다음을 클릭합니다. **[+]** analytics 구성 옆에 있는 링크입니다.
 
    ![Adobe Analytics 구성](assets/adobe-analytics-cloud-services.png)

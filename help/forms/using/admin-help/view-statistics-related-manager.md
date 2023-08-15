@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
 exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Work Manager 탭에는 Work Manager 항목과 관련된 통계가 표시됩니�
 
 ## Work Manager 탭 인터페이스 정보 {#about-the-work-manager-tab-interface}
 
-작업 관리자 쿼리를 실행하거나 작업 항목이나 작업에 대해 작업을 수행하면 목록 위에 메시지가 나타납니다. 이 메시지는 시작한 작업에 대한 피드백을 제공하며, 경우에 따라 세부 정보를 제공하는 추가 정보 링크를 제공합니다. 예를 들어 시작한 작업이 실패한 경우 메시지에 그만큼의 상태가 표시되고 오류에 대한 세부 정보를 가져올 수 있는 링크가 제공됩니다.
+작업 관리자 쿼리를 실행하거나 작업 항목이나 작업에 대해 작업을 수행하면 목록 위에 메시지가 나타납니다. 이 메시지는 시작한 작업에 대한 피드백을 제공하며 경우에 따라 세부 정보를 제공하는 추가 정보 링크를 제공합니다. 예를 들어 시작한 작업이 실패한 경우 메시지에 그만큼의 상태가 표시되고 오류에 대한 세부 정보를 가져올 수 있는 링크가 제공됩니다.
 
 추가 정보(More Info)를 클릭하면 작업 세부 정보(Operation Details) 대화상자에 작업 중에 선택한 작업 항목 또는 작업 목록이 표시됩니다. 각 목록 항목을 클릭하여 대화 상자 하단에 있는 오류 세부 정보 를 볼 수 있습니다.
 

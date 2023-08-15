@@ -1,6 +1,6 @@
 ---
 title: 모바일 애플리케이션 작성
-description: AEM Mobile 대시보드를 사용하면 모바일 애플리케이션을 만들고, 빌드하고, 배포하고, 애플리케이션 메타데이터를 만들고, 삭제하고, 편집할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
+description: AEM Mobile Dashboard를 사용하면 모바일 애플리케이션을 생성, 빌드 및 배포하고 애플리케이션 메타데이터를 생성, 삭제 및 편집할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
 uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 >
 >Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-AEM Mobile 대시보드를 사용하면 모바일 애플리케이션을 만들고, 빌드하고, 배포하고, 애플리케이션 메타데이터를 만들고, 삭제하고, 편집할 수 있습니다. 애플리케이션이 실행되면 라이프사이클 및 사용 지표를 포함한 애플리케이션 분석을 분석하여 고객 전환 및 브랜드 충성도를 향상시킬 수 있습니다.
+AEM Mobile Dashboard를 사용하면 모바일 애플리케이션을 생성, 빌드 및 배포하고 애플리케이션 메타데이터를 생성, 삭제 및 편집할 수 있습니다. 애플리케이션이 실행되면 라이프사이클 및 사용 지표를 포함한 애플리케이션 분석을 분석하여 고객 전환 및 브랜드 충성도를 향상시킬 수 있습니다.
 
 AEM Mobile 애플리케이션을 빌드하려면 다음을 참조하십시오. [모바일 애플리케이션 구축](/help/mobile/building-app-mobile-phonegap.md) 페이지를 가리키도록 업데이트하는 중입니다.
 

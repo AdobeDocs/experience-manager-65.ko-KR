@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3327'
+source-wordcount: '3325'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 우리는 그것을 그것의 합성 부품들로 나눌 수 있습니다.
 
-| 프로토콜 | 호스트 | 콘텐츠 경로 | 선택기 | 확장 |  | 접미사 |  | 매개 변수 |
+| 프로토콜 | host | 콘텐츠 경로 | 선택기 | 확장 |  | 접미사 |  | 매개 변수 |
 |---|---|---|---|---|---|---|---|---|
 | https:// | myhost | 도구/스파이 | .printable.a4. | html | / | a/b | ? | x=12 |
 
@@ -240,7 +240,7 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
 * 작성자 `sling:resourceSuperType` 리소스의 속성입니다.
 * 작성자 `sling:resourceSuperType` 이 속한 노드의 속성 `sling:resourceType` 포인트.
 
-예:
+예를 들면 다음과 같습니다.
 
 * /
 
@@ -269,7 +269,7 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
 * 동안 `/y`
    * 계층 구조: `[ c, a, <default>]`
 
-이유는 다음과 같습니다. `/y` 이(가) `sling:resourceSuperType` 속성 `/x` 에서 지원되지 않으므로 해당 슈퍼타입을 리소스 유형에서 가져옵니다.
+이유는 다음과 같습니다. `/y` 다음 포함: `sling:resourceSuperType` 속성 `/x` 에서 지원되지 않으므로 해당 슈퍼타입을 리소스 유형에서 가져옵니다.
 
 #### Sling 스크립트는 직접 호출할 수 없습니다. {#sling-scripts-cannot-be-called-directly}
 
@@ -302,7 +302,7 @@ Sling API 패키지 org.apache.sling을 사용합니다.&amp;ast; 및 태그 라
 
 ## OSGI {#osgi}
 
-OSGi는 모듈식 애플리케이션과 라이브러리(Java용 동적 모듈 시스템이라고도 함)를 개발 및 배포하기 위한 아키텍처를 정의합니다. OSGi 컨테이너를 사용하여 애플리케이션을 개별 모듈(추가 메타 정보가 있는 jar 파일이며 OSGi 용어로 번들이라고 함)로 분류하고 다음과 같이 애플리케이션 간의 상호 종속성을 관리할 수 있습니다.
+OSGi는 모듈식 애플리케이션과 라이브러리(Java용 동적 모듈 시스템이라고도 함)를 개발 및 배포하기 위한 아키텍처를 정의합니다. OSGi 컨테이너를 사용하여 애플리케이션을 개별 모듈(추가 메타 정보가 있는 jar 파일 및 OSGi 용어로 번들이라고 함)로 분류하고 다음과 같이 애플리케이션 간의 상호 종속성을 관리할 수 있습니다.
 
 * 컨테이너 내에서 구현된 서비스
 * 컨테이너와 애플리케이션 간의 계약
@@ -355,7 +355,7 @@ currentNode가 현재 노드 개체인 경우
 
 노드 객체 조작에 대한 자세한 내용은 [자바독스](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
-**위젯** AEM에서 모든 사용자 입력은 위젯에 의해 관리됩니다. 종종 콘텐츠 편집을 제어하는 데 사용됩니다.
+**위젯** AEM에서 모든 사용자 입력은 위젯에 의해 관리됩니다. 이러한 속성은 종종 콘텐츠 편집을 제어하는 데 사용됩니다.
 
 대화 상자는 위젯을 결합하여 작성됩니다.
 
@@ -456,7 +456,7 @@ FileVault는 JCR 저장소에 파일 시스템 매핑 및 버전 제어를 제�
 
 다음을 참조하십시오. [FileVault 도구](/help/sites-developing/ht-vlttool.md) 자세한 내용은 설명서를 참조하십시오.
 
-## 워크플로우 {#workflows}
+## 워크플로 {#workflows}
 
 컨텐츠는 여러 참가자의 승인 및 승인과 같은 단계를 비롯한 조직 프로세스의 영향을 받습니다. 이러한 프로세스는 워크플로우로 표시될 수 있습니다. [AEM 내에서 정의 및 개발됨](/help/sites-developing/workflows-models.md)을 추가한 다음 [적절한 컨텐츠 페이지](/help/sites-administering/workflows.md) 또는 [디지털 자산](/help/assets/assets-workflow.md) 필요에 따라.
 

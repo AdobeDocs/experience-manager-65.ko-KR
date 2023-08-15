@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1836'
-ht-degree: 17%
+source-wordcount: '1832'
+ht-degree: 20%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 17%
 >
 >이 동작은 설치에 대해 구성할 수 있습니다. 다음을 참조하십시오 [자산을 드래그하여 구성 요소 인스턴스를 만들도록 단락 시스템 구성](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) 을 참조하십시오.
 
-위의 에셋 유형 중 하나를 끌어 구성 요소를 만들려면
+위의 자산 유형 중 하나를 끌어 구성 요소를 만들려면
 
 1. 페이지가 [**편집** 모드](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)인지 확인합니다.
 1. 를 엽니다. [콘텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
@@ -110,7 +110,7 @@ ht-degree: 17%
 
    에셋 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 에셋이 포함됩니다.
 
-1. [편집](#editmovecopypastedelete) 필요한 경우 구성 요소입니다.
+1. 필요할 경우 구성 요소를 [편집](#editmovecopypastedelete)합니다.
 
 ## 구성 요소 편집(컨텐츠 및 속성) {#editing-a-component-content-and-properties}
 
@@ -227,7 +227,7 @@ ht-degree: 17%
 
 ## 페이지 잠금 {#locking-a-page}
 
-AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 잠글 수 있습니다. 이 기능은 하나의 특정 페이지를 많이 편집하거나 잠시 동안 페이지를 동결해야 할 때 유용합니다.
+AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이지를 잠글 수 있습니다. 이 기능은 하나의 특정 페이지를 많이 편집하거나 잠시 동안 페이지를 동결해야 할 때 유용합니다.
 
 >[!CAUTION]
 >
@@ -287,11 +287,11 @@ AEM은 사용자가 수행한 작업 내역과 해당 작업을 수행한 순서
 >* 또한 [키보드 단축키](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) 실행 취소 및 다시 실행의 경우.
 >
 
-다음 유형의 페이지 변경 사항에 대해 실행 취소 및 재실행을 사용할 수 있습니다.
+다음과 같은 유형의 페이지 변경을 취소하거나 재실행할 수 있습니다.
 
-* 단락 추가, 편집, 제거 및 이동
-* 단락 콘텐츠 즉석 편집
-* 페이지 내에서 항목 복사, 잘라내기 및 붙여넣기
+* 단락 추가, 편집, 삭제 및 이동
+* 단락 내용 즉석 편집
+* 페이지 내 항목 복사, 잘라내기 및 붙여넣기
 * 페이지 간에 항목 복사, 잘라내기 및 붙여넣기
 * 파일 및 이미지 추가, 제거 및 변경
 * 주석 및 스케치 추가, 제거 및 변경
@@ -303,4 +303,4 @@ AEM은 사용자가 수행한 작업 내역과 해당 작업을 수행한 순서
 
 >[!NOTE]
 >
->파일 및 이미지 변경을 취소하거나 재실행하려면 특수 권한이 필요합니다. 또한 파일 및 이미지에 대한 변경 내용 실행 취소 기록은 최소 시간 동안 지속됩니다. 그러나 이 시간 이후에는 변경 사항의 실행 취소가 보장되지 않습니다. 관리자가 권한을 제공하고 기본 시간인 10시간을 변경할 수 있습니다.
+>파일 및 이미지 변경을 취소하거나 재실행하려면 특수 권한이 필요합니다. 또한 파일 및 이미지에 대한 변경 내용 실행 취소 기록은 최소 시간 동안 지속됩니다. 이 시간이 지나면 변경을 취소하지 못할 수 있습니다. 관리자가 권한을 제공하고 기본 시간인 10시간을 변경할 수 있습니다.

@@ -1,17 +1,13 @@
 ---
 title: OSGi의 Forms 중심 워크플로우 - 단계 참조
-seo-title: Forms-centric workflow on OSGi - Step Reference
 description: OSGi 단계의 Forms 중심 워크플로우를 통해 적응형 양식 기반 워크플로우를 신속하게 구축할 수 있습니다.
-seo-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
-uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '7594'
+source-wordcount: '7589'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
 | AEM 6.5 | 이 문서 |
 
 워크플로우 모델을 사용하여 비즈니스 논리를 자동화된 반복 프로세스로 변환합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. 다음을 수행할 수 있습니다. [비즈니스 논리를 달성하기 위해 모델에 다양한 AEM Workflow 단계 포함](/help/sites-developing/workflows-models.md#extending-aem).
@@ -29,7 +25,7 @@ ht-degree: 0%
 
 Forms 워크플로 단계는 AEM 워크플로에서 AEM Forms 관련 작업을 수행합니다. 이러한 단계를 통해 OSGi를 기반으로 하는 Forms 중심 워크플로우를 기반으로 적응형 양식을 신속하게 구축할 수 있습니다. 이러한 워크플로우는 기본 검토 및 승인 워크플로, 내부 및 방화벽 간 비즈니스 프로세스를 개발하는 데 사용할 수 있습니다. Forms Workflow 단계를 사용하여 문서 서비스를 시작하고, Adobe Sign 서명 워크플로와 통합하고, 기타 AEM Forms 작업을 수행할 수도 있습니다. 다음을 수행해야 합니다. [AEM Forms 추가 기능](https://www.adobe.com/go/learn_aemforms_documentation_63) 워크플로우에서 이러한 단계를 사용합니다.
 
-Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작업을 수행합니다. 이러한 단계를 통해 OSGi에서 적응형 Forms 기반 Forms 중심 워크플로우를 신속하게 구축할 수 있습니다. 이러한 워크플로우는 기본 검토 및 승인 워크플로, 내부 및 방화벽 간 비즈니스 프로세스를 개발하는 데 사용할 수 있습니다.
+Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작업을 수행합니다. 이러한 단계를 통해 OSGi를 기반으로 적응형 Forms 기반 Forms 중심 워크플로우를 신속하게 구축할 수 있습니다. 이러한 워크플로우는 기본 검토 및 승인 워크플로, 내부 및 방화벽 간 비즈니스 프로세스를 개발하는 데 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -373,7 +369,7 @@ PDF 문서를 선택한 형식으로 변환합니다.
 
 최적화 설정은 파일이 최적화되는 방법을 지정합니다. 다음은 설정 예입니다.
 
-* Target PDF 버전
+* 대상 PDF 버전
 * JavaScript 작업 및 포함된 페이지 썸네일과 같은 오브젝트 삭제
 * 주석 및 첨부 파일과 같은 사용자 데이터 폐기
 * 잘못되거나 사용되지 않는 설정 삭제

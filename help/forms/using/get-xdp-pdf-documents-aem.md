@@ -2,7 +2,7 @@
 title: AEM Forms에서 XDP 및 PDF 문서 가져오기
 seo-title: Getting XDP and PDF documents in AEM Forms
 description: AEM Forms을 사용하면 적응형 양식과 함께 사용할 양식 및 지원되는 에셋을 업로드할 수 있습니다. 양식 및 관련 리소스를 ZIP으로 대량 업로드할 수도 있습니다.
-seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
+seo-description: AEM Forms lets you upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: cd49b4a8-c282-4059-95a0-c98f6c92ab14
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ XFA를 참조하는 적응형 양식에는 XFA에서 사용할 수 있는 필드
 양식 템플릿을 제거하면 종속된 적응형 양식 또는 양식 템플릿이 손상됩니다. 이와 같은 적응적 형태를 비공식적으로 더러운 형태라고 부르기도 한다. AEM Forms 사용자 인터페이스에서 다음 두 가지 방법으로 더티 양식을 찾을 수 있습니다.
 
 * 자산 목록의 적응형 양식 썸네일에 경고 아이콘이 표시되고, 경고 아이콘 위에 포인터를 가져다 대면 다음 메시지가 표시됩니다.\
-   `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
+  `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
 
 ![연결된 XFA를 업데이트한 후 동기화되지 않은 적응형 양식에 대한 경고](assets/dirtyaf.png)
 

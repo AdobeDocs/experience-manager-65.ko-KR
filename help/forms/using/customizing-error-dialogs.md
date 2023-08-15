@@ -9,20 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 exl-id: 8d2b07f5-5c4e-4111-8f78-eb1b156221bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '151'
 ht-degree: 4%
 
 ---
 
 # 오류 대화 상자 사용자 지정 {#customizing-error-dialogs}
 
-AEM Forms 작업 영역에서는 오류 대화 상자를 사용자 정의할 수 있습니다. 다음을 수행합니다. [AEM Forms 작업 공간 사용자 정의에 대한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md) 오류 대화 상자를 사용자 지정하는 아래 단계를 따릅니다.
+AEM Forms 작업 영역을 사용하면 오류 대화 상자를 사용자 지정할 수 있습니다. 다음을 수행합니다. [AEM Forms 작업 공간 사용자 정의에 대한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md) 오류 대화 상자를 사용자 지정하는 아래 단계를 따릅니다.
 
 ## 텍스트 맞춤화 {#customizing-text}
 
-1. 다음에서 `/apps/ws/locales/en-US/translation.json` 파일, 값 변경 `wserror` 을 추가하여 맞춤화된 값을 생성할 수 있습니다. 예:
+1. 다음에서 `/apps/ws/locales/en-US/translation.json` 파일, 값 변경 `wserror` 을 추가하여 맞춤화된 값을 생성할 수 있습니다. 예를 들면 다음과 같습니다.
 
    ```json
    "wserror" : {

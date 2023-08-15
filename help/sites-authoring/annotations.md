@@ -8,16 +8,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '641'
 ht-degree: 44%
 
 ---
 
 # 페이지 편집 시 주석{#annotations-when-editing-a-page}
 
-웹 사이트의 페이지에 콘텐츠를 추가하는 것은 종종 실제로 게시되기 전에 토론이 진행될 수 있습니다. 이를 위해 콘텐츠와 직접 관련된 많은 구성 요소(예: 레이아웃 등)를 사용하여 주석을 추가할 수 있습니다.
+웹 사이트의 페이지에 콘텐츠를 추가하는 것은 종종 실제로 게시되기 전에 토론이 진행될 수 있습니다. 이를 돕기 위해 콘텐츠와 직접 관련된 많은 구성 요소(예: 레이아웃과 반대)를 사용하여 주석을 추가할 수 있습니다.
 
 주석을 달면 페이지에 색상이 있는 마커/스티커 메모가 생깁니다. 주석을 사용하는 사용자(또는 다른 사용자)는 다른 작성자/검토자에 대한 댓글 및/또는 질문을 할 수 있습니다.
 

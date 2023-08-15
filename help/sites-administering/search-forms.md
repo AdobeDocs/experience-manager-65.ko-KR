@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2067'
 ht-degree: 11%
 
 ---
@@ -368,7 +368,7 @@ A [조건자 범위](#predicates-and-their-settings)s는 즉시 사용할 수 �
 
   속성 값(절대 문자열 또는 표현식 언어). 예: `cq:Page` 또는
 
-  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`
 
 * **범위 텍스트**
 
@@ -513,13 +513,13 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
    * **속성 이름**
 
-     대상 노드에서 검색할 노드 속성을 지정합니다. 예:
+     대상 노드에서 검색할 노드 속성을 지정합니다. 예를 들면 다음과 같습니다.
 
      `jcr:content/cq:template`
 
    * **옵션 노드 경로**
 
-     옵션이 있는 경로를 선택합니다. 예:
+     옵션이 있는 경로를 선택합니다. 예를 들면 다음과 같습니다.
 
      `/apps/cq/gui/content/common/options/predicates/templatetype`
 

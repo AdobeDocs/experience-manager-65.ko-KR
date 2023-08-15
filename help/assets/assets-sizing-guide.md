@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 1. 사용할 렌디션을 정의합니다.
 1. 렌디션 만들기 [!DNL Experience Manager] 사용 [!DNL ImageMagick] 또는 [!DNL Adobe Creative Cloud] 응용 프로그램. 사용자가 지정하는 렌디션 외에도 기본 렌디션을 만듭니다. Dynamic Media을 구현하는 사용자의 경우 IC 바이너리를 사용하여 Experience Manager에 저장할 PTIFF 표현물을 생성할 수 있습니다.
 1. 하위 에셋을 사용하려는 경우 적절한 파일 형식에 대해 하위 에셋을 생성합니다.
-1. 출력 이미지, 렌디션 및 하위 에셋의 크기를 원본 이미지와 비교합니다. 이를 통해 시스템이 로드될 때 예상되는 증가 요소를 생성할 수 있습니다. 예를 들어, 1GB의 에셋을 처리한 후 조합 크기가 3GB인 렌디션과 하위 에셋을 생성하는 경우 렌디션 증가 인자는 3입니다.
+1. 출력 이미지, 렌디션 및 하위 에셋의 크기를 원본 이미지와 비교합니다. 시스템이 로드될 때 예상 증가 계수를 생성할 수 있습니다. 예를 들어, 1GB의 에셋을 처리한 후 조합 크기가 3GB인 렌디션과 하위 에셋을 생성하는 경우 렌디션 증가 인자는 3입니다.
 1. 시스템에서 에셋 버전을 유지 관리할 최대 시간을 결정합니다.
 1. 시스템에서 기존 에셋을 수정하는 빈도를 결정합니다. If [!DNL Experience Manager] 는 creative 워크플로에서 공동 작업 허브로 사용되며 변경 내용이 많은 편입니다. 완료된 자산만 시스템에 업로드하는 경우 이 숫자는 훨씬 적습니다.
 1. 매월 시스템에 로드되는 에셋 수를 결정합니다. 확실하지 않은 경우 현재 사용할 수 있는 에셋 수를 확인하고 가장 오래된 에셋의 연령을 기준으로 숫자를 나누어 대략적인 숫자를 계산합니다.

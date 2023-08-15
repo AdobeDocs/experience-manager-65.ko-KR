@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 4%
+source-wordcount: '845'
+ht-degree: 5%
 
 ---
 
@@ -57,7 +57,7 @@ AEM과 Analytics 통합에 대한 자세한 내용은 [Adobe Analytics과 통합
 
 다음을 사용할 수도 있습니다 [옵트인 마법사](/help/sites-administering/opt-in.md) 통합을 쉽게 수행할 수 있습니다.
 
-## Analytics 및 Target 선택 {#opting-in-to-analytics-and-target}
+## Analytics 및 Target에 옵트인 {#opting-in-to-analytics-and-target}
 
 AEM은 Adobe Analytics 및 Adobe Target과 통합하기 위한 간단한 옵트인 절차를 제공합니다. 관리자로 로그인하고 프로젝트 콘솔을 방문하면 옵트인 마법사가 표시됩니다.
 

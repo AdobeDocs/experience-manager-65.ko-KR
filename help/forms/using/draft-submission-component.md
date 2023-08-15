@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 Forms 포털 제출 액션을 사용하거나 적응형 양식에서 Forms 포털에 데이터 저장 옵션을 활성화하면 양식 데이터가 AEM 저장소에 저장됩니다. 프로덕션 환경에서는 초안 또는 제출된 양식 데이터를 AEM 저장소에 저장하지 않는 것이 좋습니다. 대신 초안 및 제출 구성 요소를 엔터프라이즈 데이터베이스와 같은 보안 저장소와 통합하여 초안 및 제출된 양식 데이터를 저장해야 합니다.
 
-Forms 포털을 사용하면 로컬 AEM 저장소, 원격 AEM 저장소 또는 데이터베이스에 데이터를 저장할 수 있습니다. AEM Forms을 사용하면 초안 및 제출에 대한 사용자 데이터 저장의 구현을 사용자 지정할 수 있습니다. 기본 메서드를 재정의하여 초안 및 제출 데이터가 선택한 저장소에 저장되는 방법을 지정할 수 있습니다. 예를 들어 조직에 현재 구현된 데이터 저장소에 데이터를 저장할 수 있습니다.
+Forms 포털을 사용하면 로컬 AEM 저장소, 원격 AEM 저장소 또는 데이터베이스에 데이터를 저장할 수 있습니다. AEM Forms을 사용하면 초안 및 제출에 대한 사용자 데이터 저장 구현을 사용자 지정할 수 있습니다. 기본 메서드를 재정의하여 초안 및 제출 데이터가 선택한 저장소에 저장되는 방법을 지정할 수 있습니다. 예를 들어 조직에 현재 구현된 데이터 저장소에 데이터를 저장할 수 있습니다.
 
 Forms 포털은 로컬 및 원격 AEM Forms 게시 인스턴스의 crx-repository에 데이터를 저장하는 기본 서비스(API)를 제공합니다. 에 설명된 대로 기본 구현을 바꿀 수 있습니다. [초안 및 제출을 위한 스토리지 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md) 기본 기능을 대체할 사용자 지정 구현과 함께 제공되는 문서입니다. 보안 위치에 콘텐츠를 저장하기 위해 사용자 지정 구현에 필요한 방법에 대한 자세한 내용은 을 참조하십시오. [초안 및 제출 데이터 서비스 사용자 정의](/help/forms/using/custom-draft-submission-data-services.md) 및 [초안 및 제출 구성 요소에 대한 사용자 지정 저장소입니다.](/help/forms/using/adding-custom-storage-provider-forms.md)
 

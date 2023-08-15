@@ -2,9 +2,9 @@
 title: 페이지 내보내기
 description: AEM 페이지 익스포터를 사용하는 방법을 알아봅니다.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,6 @@ AEM을 사용하면 이미지를 포함하여 페이지를 전체 웹 페이지�
 >브라우저 및 설정에 따라 다운로드는 다음 중 하나가 됩니다.
 >* 아카이브 파일(`<page-name>.export.zip`)
 >* 폴더(`<page-name>`); 아카이브 파일이 이미 확장되어 효과적으로 저장됨
-
 
 ## 페이지 내보내기 {#exporting-a-page}
 
@@ -41,12 +40,11 @@ AEM을 사용하면 이미지를 포함하여 페이지를 전체 웹 페이지�
 
 1. 내보낼 페이지를 요청하여 접미사를 바꿉니다. `html` 포함 `export.zip` 를 입력합니다.
 
-   예:
+   예를 들면 다음과 같습니다.
    * localhost:4502/content/we-retail/language-masters/en.html
 
    은(는) 다음을 통해 액세스합니다.
    * localhost:4502/content/we-retail/language-masters/en.export.zip
-
 
 1. 아카이브 파일을 파일 시스템에 다운로드합니다.
 
@@ -55,8 +53,8 @@ AEM을 사용하면 이미지를 포함하여 페이지를 전체 웹 페이지�
    * 하위 폴더 `content`: 저장소의 페이지 경로를 반영하는 일련의 하위 폴더의 루트입니다
 
       * 이 구조 내에는 선택한 페이지에 대한 html 파일(`<page-name>.html`)
-   * 기타 리소스(`.js` 파일, `.css` 파일, 이미지 등) 내보내기 템플릿의 설정에 따라 배치됩니다
 
+   * 기타 리소스(`.js` 파일, `.css` 파일, 이미지 등) 내보내기 템플릿의 설정에 따라 배치됩니다
 
 1. 페이지 html 파일(`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`)을 클릭하여 렌더링을 확인합니다.
 
@@ -73,7 +71,7 @@ AEM을 사용하면 이미지를 포함하여 페이지를 전체 웹 페이지�
 * 다음 `default` 템플릿은 페이지 내보내기를 구성하는 방법을 보여 주므로, 새 내보내기 템플릿의 기반으로 사용할 수 있습니다.
 
 * 브라우저에서 템플릿의 노드 구조를 JSON 형식으로 보려면 다음 URL을 요청하십시오.
-   `http://localhost:4502/etc/contentsync/templates/default.json`
+  `http://localhost:4502/etc/contentsync/templates/default.json`
 
 새 페이지 내보내기 템플릿을 만드는 가장 쉬운 방법은 다음과 같습니다.
 
@@ -121,19 +119,18 @@ AEM을 사용하면 이미지를 포함하여 페이지를 전체 웹 페이지�
    * 속성으로 정의됨 `Name`을 로 설정 `page`.
    * 노드 유형은 다음과 같습니다. `nt:unstructured`
 
-   다음 `page` 노드에는 다음 속성이 있습니다.
+  다음 `page` 노드에는 다음 속성이 있습니다.
 
    * A `type` 값이 있는 속성 설정 `pages`.
 
    * 에는 가 없습니다. `path` 현재 페이지 경로인 속성은 구성에 동적으로 복사됩니다.
-
-   <!--
+  <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
 
 * `rewrite`
 다시 작성 노드는 내보낸 페이지에서 링크가 다시 작성되는 방식을 정의합니다. 다시 작성된 링크는 zip 파일에 포함된 파일이나 서버의 리소스를 가리킬 수 있습니다.
-   <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 디자인 노드는 내보낸 페이지에 사용된 디자인을 복사하는 데 사용됩니다. 다음과 같은 특징이 있습니다.
@@ -143,16 +140,14 @@ AEM을 사용하면 이미지를 포함하여 페이지를 전체 웹 페이지�
    * 속성으로 정의됨 `Name` 을 로 설정 `design`.
    * 노드 유형은 다음과 같습니다. `nt:unstructured`.
 
-   다음 `design` 노드에는 다음 속성이 있습니다.
+  다음 `design` 노드에는 다음 속성이 있습니다.
 
    * A `type` 속성이 값으로 설정됨 `copy`.
 
    * 에는 가 없습니다. `path` 속성을 사용하십시오.
 
-
 * `generic`
-일반 노드는 clientlib과 같은 리소스를 복사하는 데 사용됩니다 
-`.js` 또는 `.css` 파일을 zip 파일로 복사합니다. 다음과 같은 특징이 있습니다.
+일반 노드는 clientlib과 같은 리소스를 복사하는 데 사용됩니다 `.js` 또는 `.css` 파일을 zip 파일로 복사합니다. 다음과 같은 특징이 있습니다.
 
    * 선택 사항입니다.
    * 아래에 있음 `/etc/contentsync/templates/<mysite>`.
@@ -160,16 +155,16 @@ AEM을 사용하면 이미지를 포함하여 페이지를 전체 웹 페이지�
    * 노드 유형은 다음과 같습니다. `nt:unstructured`.
    * 다음 포함 `type` 속성 및 `type` 관련 속성. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-   예를 들어 다음 구성 노드는 `mysite.clientlibs.js` zip 파일에 대한 파일:
+  예를 들어 다음 구성 노드는 `mysite.clientlibs.js` zip 파일에 대한 파일:
 
-   ```xml
-   "mysite.clientlibs.js": {
-       "extension": "js",
-       "type": "clientlib",
-       "path": "/etc/designs/mysite/clientlibs",
-       "jcr:primaryType": "nt:unstructured"
-   }
-   ```
+  ```xml
+  "mysite.clientlibs.js": {
+      "extension": "js",
+      "type": "clientlib",
+      "path": "/etc/designs/mysite/clientlibs",
+      "jcr:primaryType": "nt:unstructured"
+  }
+  ```
 
 **사용자 지정 구성 구현**
 
@@ -186,7 +181,7 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 ## 프로그래밍 방식으로 페이지 내보내기 {#programmatically-exporting-a-page}
 
-페이지를 프로그래밍 방식으로 내보내려면 [PageExport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI 서비스. 이 서비스를 통해 다음을 수행할 수 있습니다.
+페이지를 프로그래밍 방식으로 내보내려면 [PageExport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI 서비스. 이 서비스를 사용하면 다음 작업을 수행할 수 있습니다.
 
 * 페이지를 내보내고 HTTP 서블릿 응답에 씁니다.
 * 페이지를 내보내고 특정 위치에 zip 파일을 저장합니다.

@@ -2,7 +2,7 @@
 title: 호환성 패키지
 seo-title: Compatibility Package
 description: AEM Forms 6.5에 호환성 패키지를 설치하면 AEM Forms 6.4 및 이전 버전의 서신 관리 에셋과 더 이상 사용되지 않는 적응형 양식 템플릿 및 페이지를 사용할 수 있습니다
-seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.4 and deprecated adaptive forms templates and pages
+seo-description: Installing the Compatibility package on AEM Forms 6.4 lets you use the Correspondence Management assets from AEM Forms 6.4 and deprecated adaptive forms templates and pages
 uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,10 +12,10 @@ discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 6%
+source-wordcount: '314'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 대화형 통신은 AEM Forms 6.5에서 고객 커뮤니케이션을 만들기 위한 기본적이고 권장되는 방법입니다. AEM Forms 6.5에서 문자를 계속 사용하려면 최신 버전을 설치해야 합니다 [AEMFD 호환성 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html).
 
-AEMFD 호환성 패키지를 이용하면 다음 작업도 수행할 수 있습니다. [AEM Forms 6.5에서 AEM Forms 6.4, 6.3 및 6.2의 다음 자산을 사용합니다.](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+AEMFD 호환성 패키지를 통해 다음과 같은 작업을 수행할 수 있습니다. [AEM Forms 6.5에서 AEM Forms 6.4, 6.3 및 6.2의 다음 자산을 사용합니다.](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * 문서 단편
 * 편지

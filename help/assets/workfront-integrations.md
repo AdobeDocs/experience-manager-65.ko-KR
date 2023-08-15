@@ -5,10 +5,10 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 5%
+source-wordcount: '1154'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Workfront]는 업무의 전체 라이프사이클을 한 곳에서 관리할 수 있도록 도와주는 작업 관리 애플리케이션입니다. 통합 대상 [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets] 에서는 작업과 디지털 에셋 관리를 본질적으로 연결하여 콘텐츠 속도와 마켓 출시 속도를 개선할 수 있습니다. Workfront에서 작업을 관리하는 맥락에서 사용자는 필요한 문서 및 이미지에 액세스할 수 있습니다.
@@ -49,7 +49,7 @@ ht-degree: 5%
 
 | 특별 포함 | 설명 | [!DNL Workfront] 및 [!DNL Assets Essentials] *커넥터 없음(OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *커넥터 필요* | Workfront 및 [!DNL Experience Manager as a Cloud Service] *커넥터 없음(OOTB)* |
 |----|----|----|-----|-----|
-| 배포 메서드 | 다음에 적합 [!DNL Assets] 제공. | Assets Essentials | Adobe Managed Services, 온-프레미스 | 클라우드 서비스 |
+| 배포 메서드 | 다음에 적합 [!DNL Assets] 제공. | Assets Essentials | Adobe Managed Services, On-Premise | 클라우드 서비스 |
 | **일반** |
 | 에서 디지털 파일 보내기 [!DNL Workfront] 끝 [!DNL Assets] | WF 문서의 최신 버전은 문서의 새 버전으로 연결된 AEM Assets에 업로드할 수 있습니다. | ✓ | ✓ | ✓ |
 | 수동으로 AEM 폴더에 Workfront 개체 연결 | 기존 AEM 폴더는 Workfront 폴더로 연결되고 하위 자산은 새 Workfront 문서로 연결됩니다. | ✓ | ✓ | ✓ |
@@ -77,8 +77,8 @@ ht-degree: 5%
 | 업데이트된 Workfront 메타데이터를 AEM에 실시간으로 푸시 | 에셋 또는 에셋의 새 버전을 다시 푸시하지 않고 매핑된 Workfront 메타데이터를 AEM으로 자동으로 업데이트합니다. | ✓ | 아니요 | ✓ |
 | Workfront 메타데이터를 AEM Assets 폴더에 매핑 | Workfront 프로젝트 메타데이터를 연결된 AEM 폴더와 동기화합니다. | 아니요 | ✓ | ✓ |
 | 새 버전으로 AEM 메타데이터 업데이트 | AEM의 구성을 통해 Workfront에서 새로 버전이 지정된 에셋이 해당 메타데이터에 대한 변경 사항을 푸시하는지 여부를 확인할 수 있습니다. | 아니요 | ✓ | 아니요 |
-| Workfront에서 사용자 지정 Forms의 변경 사항에 대한 AEM 메타데이터 자동 업데이트 | AEM에서는 Workfront의 문서 양식에 대한 업데이트를 구독할 수 있습니다. 따라서 Workfront 문서 사용자 정의 양식 메타데이터에 대한 모든 업데이트는 매핑된 AEM 메타데이터 필드의 값을 편집합니다. | 아니요 | ✓ | 아니요 |
+| Workfront에서 사용자 지정 Forms의 변경 사항에 대한 AEM 메타데이터 자동 업데이트 | AEM을 사용하면 Workfront의 문서 양식에 대한 업데이트를 구독할 수 있습니다. 따라서 Workfront 문서 사용자 정의 양식 메타데이터에 대한 모든 업데이트는 매핑된 AEM 메타데이터 필드의 값을 편집합니다. | 아니요 | ✓ | 아니요 |
 | **워크플로우(기본 제공)** |
 | 연결된 자산에 대한 새 증명 버전 만들기 | Workfront에서 자산을 연결할 때 증명을 자동으로 생성할 수 있습니다. | 아니요 | 사용자 정의 | 아니요 |
 | Workfront 개체의 상태 설정 | AEM 워크플로우를 사용하여 구성 가능한 조건에 따라 Workfront 객체 상태 설정 | 아니요 | ✓ | 예정 |
-| AEM 게시 환경 또는 Brand Portal에 자산 게시 | Workfront 사용자에게 연결된 자산을 AEM 게시 환경 또는 Brand Portal에 자동으로 게시할 수 있는 옵션을 제공합니다. | 아니요 | ✓ | 예정 |
+| AEM 게시 환경 또는 Brand Portal에 자산 게시 | Workfront 사용자에게 연결된 자산을 AEM 게시 환경 또는 Brand Portal에 자동으로 게시하는 옵션을 제공합니다. | 아니요 | ✓ | 예정 |

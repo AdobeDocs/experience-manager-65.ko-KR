@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 75e1697c301dca3a649833a45caa1753fdc81514
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
 
 # 거래 보고서 보기 및 이해{#viewing-and-understanding-transaction-reports}
 
-트랜잭션 보고서를 사용하면 제출된 양식, 처리된 문서 및 렌더링된 문서의 수를 캡처하고 추적할 수 있습니다. 이러한 거래를 추적하는 목적은 제품 사용과 하드웨어 및 소프트웨어에 대한 투자 재조정에 대한 정보에 입각한 결정을 내리는 것입니다. 자세한 내용은 [AEM Forms 거래 보고서 개요](../../forms/using/transaction-reports-overview.md).
+트랜잭션 보고서를 사용하여 제출된 양식, 처리된 문서 및 렌더링된 문서의 수를 캡처하고 추적할 수 있습니다. 이러한 거래를 추적하는 목적은 제품 사용과 하드웨어 및 소프트웨어에 대한 투자 재조정에 대한 정보에 입각한 결정을 내리는 것입니다. 자세한 내용은 [AEM Forms 거래 보고서 개요](../../forms/using/transaction-reports-overview.md).
 
 ## 거래 보고서 설정  {#setting-up-transaction-reports}
 
@@ -35,7 +35,6 @@ ht-degree: 0%
 >* 트랜잭션 보고를 사용하기 전에 모든 게시 인스턴스에 대해 역방향 복제가 활성화되어 있는지 확인하십시오.
 >* 트랜잭션 데이터는 게시 인스턴스에서 해당 작성자 또는 처리 인스턴스로만 역복제됩니다. 작성자 또는 처리 인스턴스는 데이터를 다른 인스턴스로 더 이상 복제할 수 없습니다.
 >
-
 
 ### 모든 게시 인스턴스에서 역방향 복제 활성화 {#enable-reverse-replication-on-all-the-publish-instances}
 

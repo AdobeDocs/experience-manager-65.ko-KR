@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '511'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 1%
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. 다음은 AEM 콘텐츠 작성자 그룹에 추가할 수 있는 기능입니다.
+1. 다음을 AEM 콘텐츠 작성자 그룹에 추가할 수 있습니다.
 
    (읽기) 일자
 
@@ -104,7 +104,7 @@ app-admins 그룹의 구성원은 app-authors에 포함된 것과 동일한 권�
 
    * (읽기) /etc/contentsync에서 내보내기 템플릿에 액세스
    * (읽기) on /var to path traversal on reads
-   * ContentSync 캐시된 내보내기 컨텐츠를 작성, 읽기 및 정리하려면 /var/contentsync에서 (읽기, 쓰기, 수정, 삭제)
+   * ContentSync 캐시된 내보내기 컨텐츠를 작성, 읽기 및 정리하려면 /var/contentsync에 (읽기, 쓰기, 수정, 삭제)
 
 ### 추가 리소스 {#additional-resources}
 

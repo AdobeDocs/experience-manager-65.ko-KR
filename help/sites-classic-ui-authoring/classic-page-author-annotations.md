@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '764'
 ht-degree: 9%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 9%
 >* 다른 브라우저에서 생성된 기존 스케치는 표시되지 않습니다.
 >
 
-스케치는 브라우저 창(표시되는 부분)의 어디에서든 간단한 선 그래픽을 만들 수 있는 주석 기능입니다.
+스케치는 브라우저 창(표시되는 부분)의 어디에서든 간단한 선 그래픽을 만들 수 있는 주석의 기능입니다.
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 

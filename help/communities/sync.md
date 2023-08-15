@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2481'
 ht-degree: 2%
 
 ---
@@ -205,7 +205,7 @@ Apache Sling 동기화 에이전트 구성을 구성하려면 다음 작업을 �
 
 ### Apache Sling 배포 트리거 - 예약된 트리거 팩토리 {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
-이 구성을 사용하면 게시자 간 변경 사항을 동기화하기 위해 폴링 간격(게시자를 핑하고 작성자가 변경 사항을 끌어온 후)을 구성할 수 있습니다.
+이 구성을 사용하면 게시자 간에 변경 사항을 동기화하기 위해 폴링 간격(게시자를 핑하고 작성자가 변경 사항을 끌어온 후)을 구성할 수 있습니다.
 
 작성자는 30초마다(기본값) 게시자를 폴링합니다. 폴더에 패키지가 있는 경우 `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`그런 다음 해당 패키지를 가져와 다른 게시자에 설치합니다.
 
@@ -343,7 +343,7 @@ Sling 배포가 실패하면 다음 디버깅 단계를 시도해 보십시오.
    여러 구성이 추가되거나 편집되지 않았는지 확인하고, 대신 기존 기본 구성을 편집해야 합니다.
 1. **구성 확인**
 
-   모든 [구성](/help/communities/sync.md#bestpractices) 에 언급된 대로 AEM 작성자 인스턴스에 적절하게 설정됩니다. [우수 사례](/help/communities/sync.md#main-pars-header-863110628).
+   모든 [구성](/help/communities/sync.md#bestpractices) 에서 언급한 대로 AEM 작성자 인스턴스에 적절하게 설정됩니다. [우수 사례](/help/communities/sync.md#main-pars-header-863110628).
 
 1. **인증된 사용자 권한 확인**
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1840'
 ht-degree: 2%
 
 ---
@@ -160,7 +160,7 @@ AEM은 현재 구성 요소에 마지막 50개 작업에 대한 기록을 시간
 
 ![하이퍼링크 아이콘](do-not-localize/chlimage_1-9.png)
 
-대화 상자를 통해 대상 URL을 지정할 수 있습니다. 또한 새 창에서 열어야 하는지 여부도 지정할 수 있습니다.
+대화 상자에서 대상 URL을 지정할 수 있습니다. 또한 새 창에서 열어야 하는지 여부도 지정할 수 있습니다.
 
 ![cq55_rte_link_use](assets/cq55_rte_link_use.png)
 

@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Workflow, Renditions
 role: User, Admin
 exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '960'
 ht-degree: 3%
 
 ---
 
 # 디지털 자산 처리 {#process-assets}
 
-[!DNL Adobe Experience Manager Assets] 에서는 강력한 에셋 처리를 허용하기 위해 다양한 방법으로 디지털 에셋을 작업할 수 있습니다. 기본 또는 사용자 지정된 처리 방법을 사용하여 전체 비즈니스 프로세스 완료, 감사 및 규정 준수, 검색 및 배포, 디지털 에셋의 기본 온전성을 보장할 수 있습니다. 필요한 규모와 사용자 정의를 달성하면서 에셋 관리 작업을 수행할 수 있습니다.
+[!DNL Adobe Experience Manager Assets] 에서는 강력한 에셋 처리를 허용하기 위해 다양한 방식으로 디지털 에셋에 대해 작업할 수 있습니다. 기본 또는 사용자 지정된 처리 방법을 사용하여 전체 비즈니스 프로세스 완료, 감사 및 규정 준수, 검색 및 배포, 디지털 에셋의 기본 온전성을 보장할 수 있습니다. 필요한 규모와 사용자 정의를 달성하면서 에셋 관리 작업을 수행할 수 있습니다.
 
 ## 워크플로우 이해 {#understand-workflows}
 
@@ -107,4 +107,3 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 >* [워크플로우 모델 만들기 및 워크플로우 기능 확장](/help/sites-developing/workflows.md)
 >* [워크플로우 실행 방법](/help/sites-administering/workflows-starting.md)
 >* [워크플로우 모범 사례](/help/sites-developing/workflows-best-practices.md)
-

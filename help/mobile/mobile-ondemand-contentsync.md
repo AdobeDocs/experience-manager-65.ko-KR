@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2974'
 ht-degree: 0%
 
 ---
@@ -227,7 +227,7 @@ AEM 서비스가 호출되었습니다. **PathRewriterTransformerFactory** 다�
 
 ### 콘텐츠 동기화 콘솔 {#the-content-sync-console}
 
-콘텐츠 동기화 콘솔에는 저장소의 모든 콘텐츠 동기화 구성(유형의 모든 노드)이 나열됩니다 `cq:ContentSyncConfig`) 각 구성에 대해 다음 작업을 수행할 수 있습니다.
+콘텐츠 동기화 콘솔에는 저장소의 모든 콘텐츠 동기화 구성(유형의 모든 노드)이 나열됩니다 `cq:ContentSyncConfig`) 각 구성에 대해 및 를 사용하여 다음을 수행할 수 있습니다.
 
 * 캐시를 업데이트합니다.
 * 캐시를 지웁니다.

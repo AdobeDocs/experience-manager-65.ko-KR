@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3224'
-ht-degree: 5%
+source-wordcount: '3221'
+ht-degree: 7%
 
 ---
 
@@ -70,9 +70,10 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
    **구조**
 
    * 이 구조를 사용하여 템플릿의 구성 요소와 콘텐츠를 정의할 수 있습니다.
-   * 템플릿 구조에 정의된 구성 요소는 결과 페이지에서 이동하거나 결과 페이지에서 삭제할 수 없습니다.
+   * 템플릿 구조에 정의된 구성 요소는 결과 페이지 안에서 이동하거나 결과 페이지에서 삭제할 수 없습니다.
 
-      * 의 외부에 있는 사용자 지정 폴더에서 템플릿을 만드는 경우 `We.Retail` 샘플 콘텐츠에서 기초 구성 요소를 선택하거나 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko).
+      * 의 외부에 있는 사용자 지정 폴더에서 템플릿을 만드는 경우 `We.Retail` 샘플 콘텐츠에서 기초 구성 요소를 선택하거나 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
+
    * 페이지 작성자가 구성 요소를 추가 및 제거할 수 있도록 하려면 템플릿에 단락 시스템을 추가하십시오.
    * 초기 콘텐츠를 정의할 수 있도록 하려면 구성 요소 잠금을 해제했다가 다시 잠글 수 있습니다.
 
@@ -84,7 +85,8 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
    * 콘텐츠 정책은 구성 요소의 디자인 속성을 정의합니다.
 
-      * 예를 들어 사용 가능한 구성 요소 또는 최소/최대 차원이 있습니다.
+      * 예: 사용 가능한 구성 요소 또는 최소/최대 크기.
+
    * 이러한 정책은 템플릿(및 템플릿으로 만든 페이지)에 적용할 수 있습니다.
 
    템플릿 작성자가 정책을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
@@ -103,7 +105,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
    **레이아웃**
 
    * 디바이스 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다.
-   * 템플릿에 대한 응답형 레이아웃은 페이지 작성의 경우와 마찬가지로 작동합니다.
+   * 템플릿에 대한 반응형 레이아웃은 페이지 작성의 경우와 마찬가지로 작동합니다.
 
    템플릿 작성자가 템플릿 레이아웃을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
 
@@ -183,7 +185,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
 ## CRXDE Lite 사용 {#using-crxde-lite}
 
-1. 프로그래밍 방식으로 또는 CRXDE Lite을 사용하여 인스턴스에 대해 새 폴더(/conf 아래)를 만들 수 있습니다.
+1. 프로그래밍 방식으로 또는 CRXDE Lite을 사용하여 인스턴스에 대해 새 폴더(/conf 아래에)를 만들 수 있습니다.
 
    다음 구조를 사용해야 합니다.
 
@@ -397,7 +399,7 @@ CRXDE를 통해 또는 구성 브라우저를 사용하여 템플릿 폴더를 �
 
 * `/apps/settings/wcm/template-types`
 
-사용자 정의된 템플릿 유형에 대한 정의는 사용자 정의 폴더(권장) 또는 `global`. 예:
+사용자 정의된 템플릿 유형에 대한 정의는 사용자 정의 폴더(권장) 또는 `global`. 예를 들면 다음과 같습니다.
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -435,18 +437,18 @@ CRXDE를 통해 또는 구성 브라우저를 사용하여 템플릿 폴더를 �
 1. 에서 템플릿 삭제 `templates` 노드 아래의 [템플릿 폴더](/help/sites-developing/page-templates-editable.md#template-folders).
 1. 아래에 있는 템플릿 사본에서 `template-types` 노드, 모두 삭제 `cq:template` 및 `cq:templateType` 모든 속성 `jcr:content` 노드.
 
-GitHub에서 사용 가능한 편집 가능한 예제 템플릿을 기준으로 하여 자신만의 템플릿 유형을 개발할 수도 있습니다.
+GitHub에서 사용 가능한 편집 가능한 예제 템플릿을 기준으로 자체 템플릿 유형을 개발할 수도 있습니다.
 
 GITHUB의 코드
 
-GitHub에서 이 페이지의 코드를 확인할 수 있습니다
+이 페이지의 코드는 GitHub에서 확인할 수 있습니다
 
 * [GitHub에서 aem-sites-example-custom-template-type 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/zip/refs/heads/master)
 
 ## 템플릿 정의 {#template-definitions}
 
-편집 가능한 템플릿에 대한 정의가 저장됩니다 [사용자 정의 폴더](/help/sites-developing/page-templates-editable.md#template-folders) (권장) 또는 `global`. 예:
+편집 가능한 템플릿에 대한 정의가 저장됩니다 [사용자 정의 폴더](/help/sites-developing/page-templates-editable.md#template-folders) (권장) 또는 `global`. 예를 들면 다음과 같습니다.
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
@@ -540,13 +542,13 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 콘텐츠(또는 디자인) 정책은 구성 요소의 가용성 또는 최소/최대 차원과 같은 구성 요소의 디자인 속성을 정의합니다. 이러한 정책은 템플릿(및 템플릿으로 만든 페이지)에 적용할 수 있습니다. 템플릿 편집기에서 컨텐츠 정책을 만들고 선택할 수 있습니다.
 
 * 속성 `cq:policy`, `root` 노드
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 페이지의 단락 시스템에 대한 콘텐츠 정책에 대한 상대 참조를 제공합니다.
 
 * 속성 `cq:policy`, 구성 요소 명시적 노드 `root`개별 구성 요소에 대한 정책 링크를 제공합니다.
 
 * 실제 정책 정의는 아래에 저장됩니다.
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -564,7 +566,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 ### 페이지 정책 {#page-policies}
 
-페이지 정책에서 다음을 정의할 수 있습니다. [콘텐츠 정책](#content-policies) 페이지(main parsys)의 경우 템플릿 또는 결과 페이지에서 참조할 수 있습니다.
+페이지 정책을 사용하면 다음을 정의할 수 있습니다. [콘텐츠 정책](#content-policies) 페이지(main parsys)의 경우 템플릿 또는 결과 페이지에서 참조할 수 있습니다.
 
 ### 템플릿 사용 및 사용 허용 {#enabling-and-allowing-a-template-for-use}
 
@@ -577,7 +579,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
    * 에서 상태 속성 설정 `jcr:content` 노드.
 
       * 예를 들어,
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 속성을 정의합니다.
 
@@ -589,9 +591,9 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
    * [에서 허용된 템플릿 경로를 정의합니다. **페이지 속성**](/help/sites-authoring/templates.md#allowing-a-template-author) 하위 분기의 적절한 페이지 또는 루트 페이지
    * 속성을 설정합니다.
-      `cq:allowedTemplates`
-다음에서 
-`jcr:content` 필요한 분기의 노드입니다.
+     `cq:allowedTemplates`
+다음에서 `jcr:content` 필요한 분기의 노드입니다.
+
    예를 들어, 값이 다음과 같은 경우:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`

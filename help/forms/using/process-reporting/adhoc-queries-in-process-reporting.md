@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b0a544e2-2ce4-48e2-a721-82f481d36004
 docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
@@ -155,6 +155,7 @@ ht-degree: 0%
    * **새로 고침**: 저장소에 있는 최신 데이터로 보고서를 새로 고칩니다.
 
    * **CSV로 내보내기**: 보고서 데이터를 쉼표로 구분된 파일로 내보냅니다.
+
    >[!NOTE]
    >
    >보고서를 내보내면 현재 페이지뿐만 아니라 검색의 전체 결과가 CSV 파일로 내보내집니다
@@ -248,11 +249,6 @@ ht-degree: 0%
    * 작업 소유자
    * 작업 할당 생성일 시간
    * 작업 업데이트 날짜 시간
-
-
-
-
-
 
 1. 클릭 **프로세스/작업 검색으로 돌아가기** 프로세스/작업 세부 사항이 드릴다운된 검색 결과로 돌아갑니다.
 

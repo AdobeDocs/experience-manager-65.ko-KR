@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '551'
 ht-degree: 33%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 33%
 
 다음 위치에서 Live Copy 개요를 열 수 있습니다.
 
-* [블루프린트 페이지의 참조 측면 패널(사이트 콘솔)](#opening-live-copy-overview-references-for-a-blueprint-page)
+* [블루프린트 페이지의 참조 측면 패널(Sites 콘솔)](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [블루프린트 페이지 속성](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
 ### 라이브 카피 개요 열기 - 블루프린트 페이지에 대한 참조 {#opening-live-copy-overview-references-for-a-blueprint-page}

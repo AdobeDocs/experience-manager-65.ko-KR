@@ -1,5 +1,5 @@
 ---
-title: ContextHub를 사용하여 세그먼테이션 구성
+title: ContextHub를 사용하여 세분화 구성
 seo-title: Configuring Segmentation with ContextHub
 description: Context Hub를 사용하여 세그먼테이션을 구성하는 방법에 대해 알아봅니다.
 seo-description: Learn how to configure segmentation with Context Hub.
@@ -10,18 +10,19 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 80%
+source-wordcount: '1783'
+ht-degree: 78%
 
 ---
 
-# ContextHub를 사용하여 세그먼테이션 구성{#configuring-segmentation-with-contexthub}
+# ContextHub를 사용하여 세분화 구성{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
 >
 >이 섹션에서는 ContextHub 사용 시 세그먼테이션을 구성하는 방법에 대해 설명합니다. Client Context 기능을 사용하는 경우 관련 설명서를 참조하십시오. [Client Context에 대한 세그먼테이션 구성](/help/sites-administering/campaign-segmentation.md).
+>
 
 세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다. 다음을 참조하십시오 [대상자 관리](/help/sites-authoring/managing-audiences.md) 세그먼테이션의 작동 방식 및 주요 용어에 대한 정보입니다.
 
@@ -29,7 +30,7 @@ ht-degree: 80%
 
 그런 다음 이러한 세그먼트를 사용하여 방문자에게 특별히 타겟팅된 콘텐츠를 제공할 수 있습니다. 이 콘텐츠는 다음에서 유지됩니다. [개인화](/help/sites-authoring/personalization.md) 섹션을 참조하십시오. 여기에 정의된 [활동](/help/sites-authoring/activitylib.md)은 모든 페이지에 포함될 수 있으며 특정 콘텐츠가 적용될 수 있는 방문자 세그먼트를 정의할 수 있습니다.
 
-AEM을 사용하면 사용자 경험을 손쉽게 개인화할 수 있습니다. 또한 세그먼트 정의의 결과를 확인할 수도 있습니다.
+AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니다. 또한 세그먼트 정의의 결과를 확인할 수도 있습니다.
 
 ## 세그먼트 할당 {#accessing-segments}
 
@@ -45,7 +46,7 @@ AEM을 사용하면 사용자 경험을 손쉽게 개인화할 수 있습니다.
 
 ## 세그먼트 편집기 {#segment-editor}
 
-**세그먼트 편집기**&#x200B;를 사용하여 손쉽게 세그먼트를 수정할 수 있습니다. 세그먼트를 편집하려면 [세그먼트 목록](/help/sites-administering/segmentation.md#accessing-segments) 을(를) 클릭하고 **편집** 단추를 클릭합니다.
+다음 **세그먼트 편집기** 세그먼트를 쉽게 수정할 수 있습니다. 세그먼트를 편집하려면 [세그먼트 목록](/help/sites-administering/segmentation.md#accessing-segments) 을(를) 클릭하고 **편집** 단추를 클릭합니다.
 
 ![세그먼트화기](assets/segmenteditor.png)
 
@@ -64,7 +65,7 @@ AEM을 사용하면 사용자 경험을 손쉽게 개인화할 수 있습니다.
 <table>
  <tbody>
   <tr>
-   <td>컨테이너 AND<br />을 따르지 않는 경우입니다 </td>
+   <td>컨테이너 AND<br /> </td>
    <td>부울 AND 연산자<br /> </td>
   </tr>
   <tr>
@@ -81,24 +82,24 @@ AEM을 사용하면 사용자 경험을 손쉽게 개인화할 수 있습니다.
 <table>
  <tbody>
   <tr>
-   <td>속성-값<br />을 따르지 않는 경우입니다 </td>
+   <td>속성-값<br /> </td>
    <td>저장소 속성을 정의된 값과 비교<br /> </td>
   </tr>
   <tr>
    <td>속성-속성</td>
-   <td>저장소 속성을 다른 속성과 비교<br />을 따르지 않는 경우입니다 </td>
+   <td>저장소 속성을 다른 속성과 비교<br /> </td>
   </tr>
   <tr>
    <td>속성-세그먼트 참조</td>
-   <td>저장소 속성을 다른 참조된 세그먼트와 비교<br />을 따르지 않는 경우입니다 </td>
+   <td>저장소 속성을 다른 참조된 세그먼트와 비교<br /> </td>
   </tr>
   <tr>
    <td>속성-스크립트 참조</td>
-   <td>저장소 속성을 스크립트 결과와 비교<br />을 따르지 않는 경우입니다 </td>
+   <td>저장소 속성을 스크립트 결과와 비교<br /> </td>
   </tr>
   <tr>
    <td>세그먼트 참조-스크립트 참조</td>
-   <td>참조된 세그먼트를 스크립트 결과와 비교<br />을 따르지 않는 경우입니다 </td>
+   <td>참조된 세그먼트를 스크립트 결과와 비교<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -120,7 +121,7 @@ AEM을 사용하면 사용자 경험을 손쉽게 개인화할 수 있습니다.
 <table>
  <tbody>
   <tr>
-   <td>세그먼트 참조<br />을 따르지 않는 경우입니다 </td>
+   <td>세그먼트 참조<br /> </td>
    <td>참조된 세그먼트를 평가합니다.</td>
   </tr>
   <tr>
@@ -255,7 +256,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 폴더가 세그먼트 목록에 나타납니다.
    * 열 정렬 방식은 목록 내에 새 폴더가 나타나는 위치에 영향을 미칩니다.
    * 열 제목을 탭하거나 클릭하여 정렬을 조정할 수 있습니다.
-      ![새 폴더](assets/contexthub-folder.png)
+     ![새 폴더](assets/contexthub-folder.png)
 
 ### 기존 폴더 수정 {#modify-folders}
 

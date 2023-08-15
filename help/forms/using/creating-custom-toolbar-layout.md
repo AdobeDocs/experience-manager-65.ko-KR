@@ -10,9 +10,9 @@ topic-tags: customization
 discoiquuid: 0d817a7e-2758-4308-abda-6194716c2d97
 docset: aem65
 exl-id: 44516956-00aa-41d5-a7e9-746c7618e5db
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ CustomToolbarLayoutDemo.zip
 
 ## 사용자 지정 도구 모음 레이아웃을 만들려면 {#layout-1}
 
-1. 폴더를 만들어 사용자 지정 도구 모음 레이아웃을 유지합니다. 예:
+1. 폴더를 만들어 사용자 지정 도구 모음 레이아웃을 유지합니다. 예를 들면 다음과 같습니다.
 
-   `/apps/customlayout/toolbar`.
+   `/apps/customlayout/toolbar`
 
    사용자 지정 레이아웃을 만들기 위해 다음 폴더에서 사용할 수 있는 기본 도구 모음 레이아웃 중 하나를 사용(및 사용자 지정)할 수 있습니다.
 

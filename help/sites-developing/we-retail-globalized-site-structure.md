@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '413'
 ht-degree: 8%
 
 ---
 
 # We.Retail에서 세계화된 사이트 구조 시험 사용{#trying-out-the-globalized-site-structure-in-we-retail}
 
-We.Retail은 국가별 웹 사이트에 라이브 복사할 수 있는 언어 마스터를 제공하는 전역 사이트 구조로 빌드되었습니다. 모든 것이 기본 제공되므로 이 구조와 내장된 번역 기능을 실험해 볼 수 있습니다.
+We.Retail은 국가별 웹 사이트에 라이브 복사할 수 있는 언어 마스터를 제공하는 전역 사이트 구조로 빌드되었습니다. 모든 것이 기본 설정되어 있으므로 이 구조와 기본 제공 번역 기능을 실험해 볼 수 있습니다.
 
 ## 시험 사용 {#trying-it-out}
 

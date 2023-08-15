@@ -7,9 +7,9 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3251'
 ht-degree: 2%
 
 ---
@@ -248,7 +248,7 @@ AEM(Adobe Experience Manager)을 구현하기 위해 프로젝트를 관리하�
 
   솔루션을 사용할 모든 사용자/그룹에 대해 역할 및 권한 개념을 계획한 다음 구현해야 합니다.
 
-  예:
+  예를 들면 다음과 같습니다.
 
    * 다음 역할이 포함된 역할(즉, 그룹) 목록 `read`/ `write` 각각에 대한 액세스 정의
 
@@ -537,7 +537,7 @@ Go-Live를 가능한 한 원활하게 진행해 보세요. 다시, 마지막 단
    * 내부 개발 및 테스트 환경 설정
    * 클라이언트 시스템과 해당 시스템 일치
 
-* 하드웨어 권장 사항을 제공하고, 다양한 구현을 모니터링하며, 실행 전과 그 이후의 작업 지원을 제공합니다.
+* 하드웨어 권장 사항을 제공하고, 다양한 구현을 모니터링하며, 실행 전과 실행 후 작업 지원을 제공합니다.
 
 ### 보안 리더 {#security-lead}
 

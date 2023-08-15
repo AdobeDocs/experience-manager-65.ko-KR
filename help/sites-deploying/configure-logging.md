@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ AEM에서는 다음을 구성할 수 있습니다.
 
 ## 개인 서비스용 로거 및 라이터 {#loggers-and-writers-for-individual-services}
 
-글로벌 로깅 설정 외에도 AEM에서는 개별 서비스에 대한 특정 설정을 구성할 수 있습니다.
+글로벌 로깅 설정 외에도 AEM을 사용하여 개별 서비스에 대한 특정 설정을 구성할 수 있습니다.
 
 * 특정 로깅 수준
 * 개별 로그 파일의 위치
@@ -69,19 +69,19 @@ AEM은 다음을 사용하여 로그 메시지를 파일에 기록합니다.
 
 * **Logger(Logging Logger)**
 
-   메시지를 생성하는 서비스를 정의합니다.
+  메시지를 생성하는 서비스를 정의합니다.
 
 * **로그 파일(로깅 로거)**
 
-   로그 메시지를 저장할 실제 파일을 정의합니다.
+  로그 메시지를 저장할 실제 파일을 정의합니다.
 
-   이 로그는 로깅 작성기에 로깅 로거를 연결하는 데 사용됩니다. 연결할 로깅 작성기 구성의 매개 변수와 값이 동일해야 합니다.
+  이 로그는 로깅 작성기에 로깅 로거를 연결하는 데 사용됩니다. 연결할 로깅 작성기 구성의 매개 변수와 값이 동일해야 합니다.
 
 * **로그 파일(Logging Writer)**
 
-   로그 메시지가 기록될 물리적 파일을 정의합니다.
+  로그 메시지가 기록될 물리적 파일을 정의합니다.
 
-   이것은 로깅 작성기 구성의 동일한 매개 변수와 동일해야 합니다. 그렇지 않으면 일치가 수행되지 않습니다. 일치하는 항목이 없으면 기본 구성(일별 로그 회전)을 사용하여 암시적 작성기가 만들어집니다.
+  이것은 로깅 작성기 구성의 동일한 매개 변수와 동일해야 합니다. 그렇지 않으면 일치가 수행되지 않습니다. 일치하는 항목이 없으면 기본 구성(일별 로그 회전)을 사용하여 암시적 작성기가 만들어집니다.
 
 ### 표준 로거 및 작성자 {#standard-loggers-and-writers}
 
@@ -93,7 +93,7 @@ AEM은 다음을 사용하여 로그 메시지를 파일에 기록합니다.
 
    * Apache Sling 사용자 지정 가능 요청 데이터 로거
 
-      (org.apache.sling.engine.impl.log.RequestLoggerService)
+     (org.apache.sling.engine.impl.log.RequestLoggerService)
 
    * 다음에 요청 콘텐츠에 대한 메시지 작성 `request.log`.
 
@@ -101,7 +101,7 @@ AEM은 다음을 사용하여 로그 메시지를 파일에 기록합니다.
 
    * Apache Sling 요청 로거
 
-      (org.apache.sling.engine.impl.log.RequestLogger)
+     (org.apache.sling.engine.impl.log.RequestLogger)
 
    * 메시지를 다음 중 하나에 씁니다. `request.log` 또는 `access.log`.
 
@@ -113,7 +113,7 @@ AEM은 다음을 사용하여 로그 메시지를 파일에 기록합니다.
 
    * Apache Sling 로깅 로거 구성
 
-      (org.apache.sling.commons.log.LogManager.factory.config)
+     (org.apache.sling.commons.log.LogManager.factory.config)
 
    * 쓰기 `Information` 메시지 대상 `logs/error.log`.
 
@@ -121,7 +121,7 @@ AEM은 다음을 사용하여 로그 메시지를 파일에 기록합니다.
 
    * Apache Sling 로깅 작성기 구성
 
-      (org.apache.sling.commons.log.LogManager.factory.writer)
+     (org.apache.sling.commons.log.LogManager.factory.writer)
 
 * 로거:
 

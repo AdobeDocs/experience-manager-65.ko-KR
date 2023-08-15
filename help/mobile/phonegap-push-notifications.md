@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3212'
 ht-degree: 1%
 
 ---
@@ -272,7 +272,7 @@ PhoneGap을 사용하여 앱을 빌드하고 배포하는 방법에는 두 가�
 
 **참고:** 푸시 알림 테스트의 경우 푸시 알림은 푸시 공급자(Apple 또는 Google)와 디바이스 간에 고유한 프로토콜을 사용하기 때문에 에뮬레이터로 충분하지 않습니다. 현재 Mac/PC 하드웨어 및 에뮬레이터는 이 기능을 지원하지 않습니다.
 
-1. *PhoneGap Build* 는 PhoneGap에서 제공하는 서비스로, 서버에 앱을 빌드하고 사용자가 장치에 직접 다운로드할 수 있습니다. 다음 PhoneGap Build 설명서를 참조하십시오. `https://build.phonegap.com/` PhoneGap Build 설정 및 사용 방법을 알아봅니다.
+1. *PhoneGap Build* 는 PhoneGap에서 제공하는 서비스로, 서버에 앱을 빌드하고 이를 장치로 직접 다운로드할 수 있습니다. 다음 PhoneGap Build 설명서를 참조하십시오. `https://build.phonegap.com/` PhoneGap Build 설정 및 사용 방법을 알아봅니다.
 
 1. *PhoneGap 명령줄 인터페이스* (CLI)를 사용하면 명령줄에서 다양한 PhoneGap 명령 집합을 사용하여 앱을 빌드하고 디버깅하고 배포할 수 있습니다. PhoneGap 개발자 설명서 를 참조하십시오(`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) PhoneGap CLI를 설정하고 사용하는 방법을 알아봅니다.
 

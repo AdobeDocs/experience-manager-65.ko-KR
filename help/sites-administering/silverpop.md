@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 01029a80-f80e-450c-9c73-16d0662af26d
 docset: aem65
 exl-id: 6c4b8aaa-bda0-4066-a3fc-d91a5ab1621c
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 1%
+source-wordcount: '588'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 >Silverpop integration is **not** available out of the box. You must download the Silverpop integration package `https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content` from Package Share and install it on your instance. After you have installed the package, you can configure it as described in this document. -->
 
-AEM과 Silverpop Engage를 통합하면 Silverpop을 통해 AEM에서 만든 이메일을 관리하고 보낼 수 있습니다. 또한 AEM 페이지의 AEM Forms를 통해 Silverpop의 리드 관리 기능을 사용할 수 있습니다.
+AEM과 Silverpop Engage를 통합하면 Silverpop을 통해 AEM에서 만든 이메일을 관리하고 보낼 수 있습니다. 또한 AEM 페이지의 AEM Forms를 통해 Silverpop의 리드 관리 기능을 사용할 수도 있습니다.
 
 통합은 다음과 같은 기능을 제공합니다.
 
@@ -36,13 +36,13 @@ Silverpop Engage가 구성되면 Silverpop Engage에 뉴스레터 또는 이메�
 
 ## Silverpop 구성 만들기 {#creating-a-silverpop-configuration}
 
-Silverpop 구성은 다음을 통해 추가할 수 있습니다. **Cloud Services**, **도구**, 또는 **API 끝점**. 모든 방법은 이 섹션에 설명되어 있습니다.
+Silverpop 구성은 다음을 통해 추가할 수 있습니다. **Cloud Service**, **도구**, 또는 **API 끝점**. 모든 방법은 이 섹션에 설명되어 있습니다.
 
-### Cloud Services을 통해 Silverpop 구성 {#configuring-silverpop-via-cloudservices}
+### Cloud Service을 통해 Silverpop 구성 {#configuring-silverpop-via-cloudservices}
 
-Cloud Services에서 Silverpop 구성을 만들려면 다음 작업을 수행하십시오.
+Cloud Service에서 Silverpop 구성을 만들려면 다음 작업을 수행하십시오.
 
-1. AEM에서 을 탭하거나 클릭합니다 **도구** > **배포** > **Cloud Services**. (또는 다음 위치에 직접 액세스: `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. AEM에서 을 탭하거나 클릭합니다 **도구** > **배포** > **Cloud Service**. (또는 다음 위치에 직접 액세스: `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. 서드파티 서비스에서 **Silverop Engage** 그런 다음 **구성**. Silverpop 구성 창이 열립니다.
 
    >[!NOTE]
@@ -61,8 +61,8 @@ Cloud Services에서 Silverpop 구성을 만들려면 다음 작업을 수행하
 
 도구에서 Silverpop 구성을 만들려면 다음 작업을 수행하십시오.
 
-1. AEM에서 을 탭하거나 클릭합니다 **도구** > **배포** > **Cloud Services**. 또는 다음 위치로 직접 이동하여 탐색합니다. `https://<hostname>:<port>/misadmin#/etc`.
-1. 선택 **도구**, 그런 다음 **Cloud Services 구성,** 그러면 **실버팝 참여**.
+1. AEM에서 을 탭하거나 클릭합니다 **도구** > **배포** > **Cloud Service**. 또는 다음 위치로 직접 이동하여 탐색합니다. `https://<hostname>:<port>/misadmin#/etc`.
+1. 선택 **도구**, 그런 다음 **Cloud Service 구성,** 그러면 **실버팝 참여**.
 1. 클릭 **신규**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
@@ -74,7 +74,7 @@ Cloud Services에서 Silverpop 구성을 만들려면 다음 작업을 수행하
 
 여러 구성을 추가하려면 다음 작업을 수행하십시오.
 
-1. 시작 페이지에서 **Cloud Services** 및 클릭 **실버팝 참여**. 클릭 **구성 표시** 한 개 이상의 Silverpop 구성을 사용할 수 있는 경우 표시되는 단추입니다. 사용 가능한 모든 구성이 나열됩니다.
+1. 시작 페이지에서 **Cloud Service** 및 클릭 **실버팝 참여**. 클릭 **구성 표시** 한 개 이상의 Silverpop 구성을 사용할 수 있는 경우 표시되는 단추입니다. 사용 가능한 모든 구성이 나열됩니다.
 1. 다음을 클릭합니다. **+** 사용 가능한 구성 옆에 로그인합니다. 열리면 **구성 만들기** 창. 구성을 만들 수 있도록 이전 구성 절차를 따르십시오.
 
 ### Silverpop에 연결하기 위한 API 끝점 구성 {#configuring-api-end-points-for-connecting-to-silverpop}
@@ -113,6 +113,6 @@ API 끝점을 구성하려면 다음 작업을 수행하십시오.
    | sp-e5 | `https://api.engage5.silverpop.com/XMLAPI` | `https://api5.silverpop.com` |
    | sp-e6 | `https://api.pilot.silverpop.com/XMLAPI` | `https://api6.silverpop.com` |
 
-1. 클릭 **모두 저장**. 이제 AEM에서 보안 끝점을 통해 Silverpop에 연결할 준비가 되었습니다.
+1. **모두 저장**&#x200B;을 클릭합니다. 이제 AEM에서 보안 끝점을 통해 Silverpop에 연결할 준비가 되었습니다.
 
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)

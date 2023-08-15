@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3502'
+source-wordcount: '3501'
 ht-degree: 0%
 
 ---
@@ -246,7 +246,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 지원되는 속성
 
 * 굵게, 기울임체 및 밑줄 옵션이 있는 레이블
-* Target URL, 타사 및 AEM URL 지원
+* 대상 URL, 타사 및 AEM URL 지원
 * 페이지 렌더링 옵션(같은 창, 새 창 등)
 
 가져온 zip에 클릭스루 구성 요소를 포함하는 HTML 태그입니다. 여기서 href는 대상 URL에 매핑되고 &quot;제품 세부 정보 보기&quot;는 레이블에 매핑되는 등의 작업을 수행합니다.
@@ -279,7 +279,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 * 이미지 자르기, 회전
 * 가리킨 텍스트, 설명, 크기(픽셀)
-* Target URL, 타사 및 AEM URL 지원
+* 대상 URL, 타사 및 AEM URL 지원
 * 페이지 렌더링 옵션(같은 창, 새 창 등)
 
 가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기서 href는 타겟 URL에 매핑되고, img src는 렌더링 이미지이며, &quot;title&quot;은 가리킨 텍스트 등으로 간주됩니다.

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '604'
 ht-degree: 33%
 
 ---
@@ -287,7 +287,7 @@ ht-degree: 33%
   </tr>
   <tr>
    <td> </td>
-   <td>Dynamic Media 구성<br />을 따르지 않는 경우입니다 </td>
+   <td>Dynamic Media 구성<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -430,7 +430,7 @@ ht-degree: 33%
   </tr>
   <tr>
    <td>보고서</td>
-   <td>AEM은 다양한 사용자 지정 보고서를 제공하며 사용자 지정 보고서를 만들거나 직접 개발할 수 있도록 해 줍니다.</td>
+   <td>AEM은 다양한 맞춤형 보고서를 제공하며 맞춤형 보고서를 생성하거나 직접 개발할 수 있도록 해 줍니다.</td>
   </tr>
   <tr>
    <td>기본 페이지 스캐폴딩</td>

@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4187'
+source-wordcount: '4184'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html) |
 | AEM 6.5 | 이 문서 |
 
 ![데이터 통합](do-not-localize/data-integeration.png)
@@ -460,7 +460,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
    <td>입력 데이터 소스</td> 
   </tr> 
   <tr> 
-   <td>필수</td> 
+   <td>required</td> 
    <td>true인 경우 매개 변수는 입력 데이터에 포함되어야 합니다.</td> 
    <td>Swagger, WSDL 및 데이터베이스</td> 
   </tr> 

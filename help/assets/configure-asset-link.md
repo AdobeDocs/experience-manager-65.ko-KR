@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
-source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3149'
+source-wordcount: '3148'
 ht-degree: 2%
 
 ---
@@ -125,7 +125,6 @@ Adobe Asset Link 사용자는 기업(CCE) 조직의 기본 Creative Cloud에서 
 >* Experience Manager 및 CCE과 함께 동일한 Adobe IMS 조직을 사용하는 경우 기존 구성이 계속 작동합니다.
 
 
-
 **전제 조건**
 
 1. AAL에 대해 Bearer 인증이 구성된 실행 중인 Experience Manager 인스턴스.
@@ -179,9 +178,9 @@ Experience Manager의 그룹 매핑에는 다음 규칙이 적용됩니다.
 * Adobe Asset Link 사용자 그룹 멤버십은 사용자의 인증 및 다음 기간 동안 평가됩니다. **[!UICONTROL 사용자 만료 시간]** 의 속성 **[!UICONTROL Apache Jackrabbit Oak 기본 동기화 핸들러]** 구성이 경과되었습니다. 현재 Experience Manager의 그룹에 사용자를 추가 및 제거하여 Adobe IMS에 있는 항목과 동기화할 수 있습니다.
 * 그룹 이름 충돌을 피하십시오. Adobe IMS에서 사용자를 관리하기 위해 만든 그룹에 사용되는 이름이 모든 Experience Manager 시스템 그룹 이름과 다른지 확인합니다.
 
-   예를 들어 가 과(와) 다른지 확인합니다. `dam-users` 그룹 및 Experience Manager 관리자가 생성한 그룹.
+  예를 들어 가 과(와) 다른지 확인합니다. `dam-users` 그룹 및 Experience Manager 관리자가 생성한 그룹.
 
-   이름이 Experience Manager 시스템 그룹 또는 수동으로 만든 그룹의 이름과 충돌하는 Adobe IMS 그룹은 사용자 권한을 제어하는 데 사용되지 않습니다.
+  이름이 Experience Manager 시스템 그룹 또는 수동으로 만든 그룹의 이름과 충돌하는 Adobe IMS 그룹은 사용자 권한을 제어하는 데 사용되지 않습니다.
 * Adobe IMS 사용자가 사용자 이름이 이전에 만든 Experience Manager 사용자와 충돌하는 Experience Manager 인스턴스에 연결하는 경우 Adobe IMS 사용자에게는 고유하게 하기 위해 숫자가 추가된 다른 이름이 제공됩니다.
 
 **최초 액세스 제어 설정**
@@ -291,4 +290,3 @@ Adobe Stock과 통합하려면 다음을 참조하십시오. [Experience Manager
 >* [Adobe Asset Link에 대하여](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
 >* [Creative Cloud 데스크탑 앱에서 Asset Link 사용 및 자산 관리](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)
 >* [Adobe Experience Manager Assets as a Cloud Service 구성](https://helpx.adobe.com/kr/enterprise/using/configure-aem-assets-for-asset-link.html).
-

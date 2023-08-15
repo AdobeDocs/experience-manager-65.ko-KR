@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '604'
 ht-degree: 1%
 
 ---
 
 # 오버레이{#overlays}
 
-Adobe Experience Manager(AEM) 및 그 이전 버전인 CQ에서는 를 확장하고 사용자 정의할 수 있도록 오랫동안 오버레이 원리를 사용했습니다. [콘솔](/help/sites-developing/customizing-consoles-touch.md) 및 기타 기능(예: [페이지 작성](/help/sites-developing/customizing-page-authoring-touch.md)).
+Adobe Experience Manager(AEM) 및 그 이전 버전인 CQ에서는 오래 전부터 오버레이 원리를 사용하여 를 확장하고 맞춤화할 수 있었습니다. [콘솔](/help/sites-developing/customizing-consoles-touch.md) 및 기타 기능(예: [페이지 작성](/help/sites-developing/customizing-page-authoring-touch.md)).
 
 오버레이는 여러 컨텍스트에서 사용되는 용어입니다. 이 컨텍스트(AEM 확장)에서 오버레이는 사전 정의된 기능을 가져와 고유한 정의를 적용합니다(표준 기능을 사용자 지정).
 

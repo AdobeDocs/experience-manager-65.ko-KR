@@ -1,20 +1,16 @@
 ---
 title: 자산 목록 보기에 사용자 지정 작업 추가
-seo-title: Add custom action to the Asset Listing view
 description: 이 문서에서는 자산 목록 보기에 사용자 지정 작업을 추가하는 방법에 대해 설명합니다
-seo-description: This article teaches how to add custom action to the Asset Listing view
-uuid: 45f25cfb-f08f-42c6-99c5-01900dd8cdee
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1354'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -74,7 +70,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 
    1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다.
 
-      클릭 **모두 저장**.
+      **모두 저장**&#x200B;을 클릭합니다.
 
 1. 새로 만든 항목 폴더 아래에서 다음 단계를 사용하여 특정 에셋의 사용자 지정 단추/작업에 대한 노드를 추가합니다(예: downloadFlatPDF).
 
@@ -154,7 +150,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 
       **노드 유형 일치:** 선택됨
 
-   1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다. 클릭 **모두 저장**.
+   1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다. **모두 저장**&#x200B;을 클릭합니다.
 
 1. js 폴더에서 다음 단계를 사용하여 버튼의 작업 처리에 대한 코드로 formation.js 파일을 만듭니다.
 
@@ -246,7 +242,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 
    1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다.
 
-   1. 클릭 **모두 저장**.
+   1. **모두 저장**&#x200B;을 클릭합니다.
 
 1. 새로 만든 항목 노드 아래에 다음 단계를 사용하여 특정 에셋의 사용자 지정 단추/작업에 대한 노드를 추가합니다(예: letterpdfdownloader).
 

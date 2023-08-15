@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
-source-git-commit: d8ae63edd71c7d27fe93d24b30fb00a29332658d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 25%
+ht-degree: 40%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->개인 정보 보호 문제에 대한 Adobe의 대응 및 Adobe 고객으로서의 의미에 대한 자세한 내용은 다음을 참조하십시오. [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html).
+>개인정보 보호 문제에 대한 Adobe의 대응 및 Adobe 고객에게 의미하는 바에 대한 자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
 
 Adobe은 고객 개인정보 보호 관리자 또는 AEM 관리자가 데이터 보호 및 데이터 개인정보 보호 요청을 처리할 수 있도록 문서 및 절차를 제공하고 있습니다(가능한 경우 API 포함). 이러한 규정을 준수하는 데 도움이 될 수 있습니다. 고객은 문서화된 절차를 통해 수동으로 또는 가능한 경우 외부 포털 또는 서비스에서 API에 호출하여 규제 요청을 실행할 수 있습니다.
 
@@ -34,9 +34,9 @@ Adobe은 고객 개인정보 보호 관리자 또는 AEM 관리자가 데이터 
 >
 >여기에 문서화된 세부 사항은 Adobe Experience Manager으로 제한됩니다.
 >
->다른 Adobe 온디맨드 서비스의 데이터와 관련 개인 정보 보호 요청은 해당 서비스에 대한 조치가 필요합니다.
+>다른 Adobe 온디맨드 서비스의 데이터 및 관련 개인정보 보호 요청 시 해당 서비스에 대한 조치가 필요합니다.
 >
->자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html).
+>자세한 내용은 [Adobe의 개인정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
 
 ## 소개 {#introduction}
 
@@ -66,7 +66,7 @@ Adobe Experience Manager의 경우
 
    * 고객은 비즈니스 엔티티 및 서비스 공급자, 데이터 컨트롤러 및 데이터 프로세서를 포함한 규정 역할을 관리합니다.
 
-   * 아래 다이어그램에 표시된 대로 Adobe Experience Platform Privacy Service은 AEM 워크플로의 일부가 아닙니다.
+   * 아래 다이어그램에 표시된 바와 같이 Adobe Experience Platform Privacy Service는 AEM용 워크플로의 일부가 아닙니다.
 
 * AEM에는 고객의 개인정보 보호 관리자 및/또는 AEM 관리자가 수동으로 또는 가능한 경우 API를 통해 개인정보 보호 규정 요청을 실행하도록 하는 문서 및 절차가 포함되어 있습니다.
 
@@ -74,7 +74,7 @@ Adobe Experience Manager의 경우
 
    * 대신 개인정보 보호 규정 요청을 처리하는 고객 UI/포털에서 사용할 수 있도록 절차 및 API가 문서화되었습니다.
 
-* AEM에는 개인 정보 보호 요청 워크플로를 지원하는 기본 툴링이 포함되어 있지 않습니다.
+* AEM에는 개인정보 보호 요청 워크플로 지원을 위한 맞춤형 툴링이 포함되지 않습니다.
 
    * Adobe은 고객의 개인 정보 보호 관리자 및 AEM 관리자를 위한 문서 및 절차를 제공하여 개인 정보 보호 규정과 관련된 요청을 수동으로 실행할 수 있도록 합니다.
 

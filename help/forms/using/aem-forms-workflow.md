@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3681'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ OSGi에서 Forms 중심 워크플로가 확장됨 [AEM 받은 편지함](/help/s
 
 워크플로우 모델은 비즈니스 프로세스의 로직과 플로우로 구성됩니다. 일련의 단계로 구성됩니다. 이러한 단계는 AEM 구성 요소입니다. 필요에 따라 매개 변수 및 스크립트를 사용하여 워크플로우 단계를 확장하여 더 많은 기능과 제어를 제공할 수 있습니다. AEM Forms은 즉시 사용할 수 있는 AEM 단계 외에 몇 가지 단계를 제공합니다. AEM 및 AEM Forms 단계의 자세한 목록은 다음을 참조하십시오. [AEM Workflow 단계 참조](/help/sites-developing/workflows-step-ref.md) 및 [OSGi의 Forms 중심 워크플로우 - 단계 참조](../../forms/using/aem-forms-workflow.md).
 
-AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델을 만들 수 있는 직관적인 사용자 인터페이스를 제공합니다. 워크플로우 모델을 만드는 단계별 지침은 다음을 참조하십시오. [워크플로우 모델 만들기](/help/sites-developing/workflows-models.md). 다음 예제에서는 승인 및 검토 워크플로우를 위한 워크플로우 모델을 만드는 단계별 지침을 제공합니다.
+AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델을 만들 수 있는 직관적인 사용자 인터페이스를 제공합니다. 워크플로우 모델을 만드는 단계별 지침은 다음을 참조하십시오. [워크플로우 모델 만들기](/help/sites-developing/workflows-models.md). 다음 예제에서는 승인 및 검토 워크플로우에 대한 워크플로우 모델을 만드는 단계별 지침을 제공합니다.
 
 >[!NOTE]
 >
@@ -205,7 +205,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 
 ### AEM Forms 앱에서 애플리케이션 제출 {#afa}
 
-AEM Forms 앱은 AEM Forms 서버와 동기화되므로 양식 데이터, 작업, 워크플로우 애플리케이션 및 계정에 저장된 정보(초안/템플릿)를 변경할 수 있습니다. 자세한 내용은 [AEM Forms 앱](/help/forms/using/aem-forms-app.md) 및 관련 문서.
+AEM Forms 앱은 AEM Forms 서버와 동기화되며 양식 데이터, 작업, 워크플로우 애플리케이션 및 계정에 저장된 정보(초안/템플릿)를 변경할 수 있습니다. 자세한 내용은 [AEM Forms 앱](/help/forms/using/aem-forms-app.md) 및 관련 문서.
 
 ### 적응형 양식 제출 {#af}
 

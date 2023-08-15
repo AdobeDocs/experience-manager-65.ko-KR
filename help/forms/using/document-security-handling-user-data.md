@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Document Security는 사용자 데이터를 포함하여 보호된 문서와 관
    <td>보관된 정책에 대한 정보를 저장합니다. 보관된 정책에는 Blob 개체로 저장된 정책 XML이 포함되어 있습니다.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code> (Oracle 및 MS SQL 데이터베이스)</p> </td>
+   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (Oracle 및 MS SQL 데이터베이스)</p> </td>
    <td>정책 집합과 사용자 간의 매핑을 저장합니다.</td>
   </tr>
   <tr>

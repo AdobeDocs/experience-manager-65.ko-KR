@@ -1,20 +1,16 @@
 ---
 title: 서신 UI 만들기에 사용자 지정 작업/버튼 추가
-seo-title: Add custom action/button in Create Correspondence UI
 description: 서신 UI 만들기에서 사용자 지정 작업/버튼을 추가하는 방법 알아보기
-seo-description: Learn how to add custom action/button in Create Correspondence UI
-uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1880'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -63,7 +59,7 @@ ht-degree: 1%
       ![오버레이 노드](assets/2_defaultappoverlaynode.png)
 
    1. **확인**&#x200B;을 클릭합니다.
-   1. 클릭 **모두 저장**.
+   1. **모두 저장**&#x200B;을 클릭합니다.
 
 1. /apps 분기 아래에 acmExtensionsConfig.xml 파일( /libs 분기 아래에 있음)의 복사본을 만듭니다.
 
@@ -74,9 +70,9 @@ ht-degree: 1%
       ![acmExtensionsConfig.xml 복사](assets/3_acmextensionsconfig_xml_copy.png)
 
    1. 마우스 오른쪽 단추 클릭 **defaultApp** &quot;/apps/fd/cm/config/defaultApp/&quot;에 폴더를 만들고 **붙여넣기**.
-   1. 클릭 **모두 저장**.
+   1. **모두 저장**&#x200B;을 클릭합니다.
 
-1. apps 폴더에서 새로 만든 acmExtensionsConfig.xml 사본을 두 번 클릭합니다. 편집을 위해 파일이 열립니다.
+1. apps 폴더에 새로 만든 acmExtensionsConfig.xml의 사본을 두 번 클릭합니다. 편집을 위해 파일이 열립니다.
 1. 다음 코드를 찾습니다.
 
    ```xml
@@ -107,7 +103,7 @@ ht-degree: 1%
 
    | **이름** | **설명** |
    |---|---|
-   | 이름 | 수행할 작업의 영숫자 이름입니다. 이 태그의 값은 필수이고, 고유해야 하며(modelExtension 태그 내에서), 알파벳으로 시작해야 합니다. |
+   | name | 수행할 작업의 영숫자 이름입니다. 이 태그의 값은 필수이고, 고유해야 하며(modelExtension 태그 내에서), 알파벳으로 시작해야 합니다. |
    | 레이블 | 작업 단추에 표시할 레이블 |
    | 툴팁 | 사용자가 단추를 마우스로 가리키면 표시되는 단추의 도구 설명 텍스트입니다. |
    | styleName | 작업 단추에 적용되는 사용자 지정 스타일의 이름입니다. |
@@ -122,7 +118,7 @@ ht-degree: 1%
    | 태그 이름에 cm_ 접두어가 포함된 매개변수 | customAction에 cm_ 이름으로 시작하는 하위 태그가 포함된 경우, post 프로세스(편지 사후 프로세스 또는 serviceName 태그로 표시되는 특수 프로세스)에서 cm_ 접두어가 제거된 관련 태그 아래의 입력 XML 코드에서 이러한 매개 변수를 사용할 수 있습니다. |
    | actionName | 게시물 프로세스가 클릭으로 인해 발생할 때마다 제출된 XML에는 사용자 작업 이름과 함께 태그 아래에 이름이 있는 특수 태그가 포함되어 있습니다. |
 
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 
 #### /apps 분기에 속성 파일이 있는 로케일 폴더 만들기 {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
@@ -141,7 +137,7 @@ ACMExtensionsMessages.properties 파일에는 서신 작성 사용자 인터페�
    **노드 유형 일치:** 선택됨
 
 1. **확인**&#x200B;을 클릭합니다.
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 1. 다음 파일을 마우스 오른쪽 단추로 클릭하고 **복사**:
 
    `/libs/fd/cm/config/defaultApp/locale/ACMExtensionsMessages.properties`
@@ -160,7 +156,7 @@ ACMExtensionsMessages.properties 파일에는 서신 작성 사용자 인터페�
 
    마찬가지로 도구 설명 및 스타일과 같은 속성을 이 파일에 더 추가할 수 있습니다.
 
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 
 #### Adobe 자산 작성기 빌딩 블록 번들 다시 시작 {#restart-the-adobe-asset-composer-building-block-bundle}
 
@@ -213,7 +209,7 @@ Adobe 에셋 작성기 빌딩 블록 번들을 다시 시작하면 사용자 지
       **노드 유형 일치:** 선택됨
 
    1. **확인**&#x200B;을 클릭합니다.
-   1. 클릭 **모두 저장**.
+   1. **모두 저장**&#x200B;을 클릭합니다.
 
 1. js 폴더에서 다음 단계를 사용하여 단추의 작업 처리에 대한 코드로 ccrcustomization.js라는 파일을 만듭니다.
 
@@ -360,7 +356,7 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 >
 >이 프로세스가 수행하는 작업을 보거나 고유한 유사한 프로세스를 생성하려면 워크벤치가 필요합니다.
 
-1. 다음 위치에 LiveCycle ® 서버 인스턴스에 관리자로 로그인 `https:/[lc server]/:[lc port]/adminui`.
+1. 다음 위치에 LiveCycle® 서버 인스턴스에 관리자로 로그인 `https:/[lc server]/:[lc port]/adminui`.
 
 1. 다음으로 이동 **홈 > 서비스 > 애플리케이션 및 서비스 > 애플리케이션 관리**.
 

@@ -2,10 +2,10 @@
 title: AEM Headless 콘텐츠 작성자 여정
 description: AEM의 강력하고 유연한 Headless 기능, 각 능력과 프로젝트의 콘텐츠를 작성하는 방법에 대한 가이드 여정을 받으십시오.
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 91%
+source-wordcount: '848'
+ht-degree: 86%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 
 이 여정에서 다양한 주제들을 살펴보게 됩니다. 다음 문서는 AEM에서의 Headless에 대한 기초 지식을 제공하며 상세 기술 설명서와 연결됩니다.
 
-여정의 특정 부분으로 바로 이동할 수 있지만 많은 개념이 이전 문서의 개념을 기반으로 합니다. 따라서 AEM에서 Headless를 처음 수행하는 경우 처음부터 시작하여 순차적으로 진행하는 것이 좋습니다.
+여정의 특정 부분으로 바로 이동할 수 있지만 많은 개념이 이전 문서의 개념을 기반으로 합니다. 따라서 AEMAdobe 에서 Headless를 처음 사용하는 경우 처음부터 시작하여 순차적으로 진행하는 것이 좋습니다.
 
 | # | 문서 | 설명 |
 |---|---|---|
@@ -81,5 +81,5 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
 * [AEM Headless 개발자 여정](/help/journey-headless/developer/overview.md) - 여기에서 AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 사용자의 첫 개발 프로젝트에서 이들 기능을 활용하는 방법에 대한 가이드 여정을 시작해 보십시오.
 * [Headless 설계 여정](/help/journey-headless/architect/overview.md) - 여기에서 Adobe Experience Manager의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아보십시오.
-* [AEM 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR) - AEM 및 Headless 기술에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
+* [AEM 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html) - AEM 및 Headless 기술에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 직접 해보면서 배우는 것을 선호하고 기술 관련 소양을 갖추고 있다면 API 및 프레임워크로 구성된 실습형 튜토리얼을 사용하여 AEM Headless에 구축된 애플리케이션을 만들고 사용해 보십시오.

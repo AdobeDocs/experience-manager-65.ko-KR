@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '897'
 ht-degree: 8%
 
 ---
@@ -22,7 +22,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ## 사이트 관리 {#site-administration}
 
-다음 **웹 사이트** 콘솔을 통해 웹 사이트를 관리하고 탐색할 수 있습니다. 두 창을 사용하면 웹 사이트의 구조를 확장하고 필요한 요소에 대해 작업을 수행할 수 있습니다.
+다음 **웹 사이트** 콘솔을 사용하여 웹 사이트를 관리하고 탐색할 수 있습니다. 두 창을 사용하면 웹 사이트의 구조를 확장하고 필요한 요소에 대해 작업을 수행할 수 있습니다.
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -46,7 +46,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ## Sidekick {#sidekick}
 
-다음 **구성 요소** 사이드 킥의 탭에서는 현재 페이지에 추가할 수 있는 구성 요소를 찾아볼 수 있습니다. 필요한 그룹을 확장한 다음 구성 요소를 페이지의 필요한 위치로 드래그할 수 있습니다.
+다음 **구성 요소** 사이드 킥의 탭에서는 현재 페이지에 추가할 수 있는 구성 요소를 탐색할 수 있습니다. 필요한 그룹을 확장한 다음 구성 요소를 페이지의 필요한 위치로 드래그할 수 있습니다.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 

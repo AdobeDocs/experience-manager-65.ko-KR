@@ -2,7 +2,7 @@
 title: 이벤트 추적 확장
 seo-title: Extending Event Tracking
 description: AEM Analytics를 사용하면 웹 사이트에서 사용자 상호 작용을 추적할 수 있습니다
-seo-description: AEM Analytics allows you to track user interaction on your website
+seo-description: AEM Analytics lets you track user interaction on your website
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 1%
 
 ---

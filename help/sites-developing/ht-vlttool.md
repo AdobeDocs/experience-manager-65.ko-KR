@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2716'
+source-wordcount: '2715'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ VLT 도구를 사용하려면 먼저 설치해야 합니다. 추가 도구이므
    >
    >VLT 도구의 소스는 다음과 같습니다. [gitHub에서 사용할 수 있습니다.](https://github.com/apache/jackrabbit-filevault)
 1. 아카이브를 추출합니다.
-1. 추가 `<archive-dir>/vault-cli-<version>/bin` 내 환경에 `PATH` 따라서 명령 파일이 `vlt` 또는 `vlt.bat` 적절하게 액세스됩니다. 예:
+1. 추가 `<archive-dir>/vault-cli-<version>/bin` 내 환경에 `PATH` 따라서 명령 파일이 `vlt` 또는 `vlt.bat` 적절하게 액세스됩니다. 예를 들면 다음과 같습니다.
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -192,7 +192,7 @@ Commands:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-특정 명령에 대한 도움말을 보려면 help 명령 다음에 명령 이름을 입력합니다. 예:
+특정 명령에 대한 도움말을 보려면 help 명령 다음에 명령 이름을 입력합니다. 예를 들면 다음과 같습니다.
 
 ```shell
 vlt --help export
@@ -740,7 +740,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 >[!NOTE]
 >
->다음 `--exclude` 옵션 다음에 다른 옵션이 와야 합니다. `<src>` 및 `<dst>` 인수. 예:
+>다음 `--exclude` 옵션 다음에 다른 옵션이 와야 합니다. `<src>` 및 `<dst>` 인수. 예를 들면 다음과 같습니다.
 >
 >`vlt rcp -e ".*\.txt" -r`
 

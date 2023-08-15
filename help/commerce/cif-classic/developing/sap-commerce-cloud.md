@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2296'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있습니다. 여기에서 다루는 특정 세부 사항 및 예는 다음을 참조하십시오. [hybris](https://www.sap.com/products/crm.html) 해결책.
 
-통합 프레임워크는 API와의 통합 계층을 포함합니다. 이를 통해 다음을 수행할 수 있습니다.
+통합 프레임워크는 API와의 통합 계층을 포함합니다. 이렇게 하면 다음 작업을 수행할 수 있습니다.
 
 * eCommerce 시스템에 연결하고 제품 데이터를 AEM으로 가져오기
 

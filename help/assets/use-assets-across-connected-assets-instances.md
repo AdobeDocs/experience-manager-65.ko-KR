@@ -7,9 +7,9 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 578e9eb45ab996df841cb22e89d45fadfe90592b
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3950'
+source-wordcount: '3949'
 ht-degree: 17%
 
 ---
@@ -356,7 +356,7 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
 
   ![시크릿 모드의 Chrome 브라우저에서 쿠키 오류 발생](assets/chrome-cookies-incognito-dialog.png)
 
-* Experience Manager Sites as a Cloud Service 사이트 배포에서 Adobe Managed Services 원격 DAM 배포에 액세스할 수 없는 경우 `aem_author.vhost` 파일, 사용 가능한 위치 `"/etc/httpd/conf.d/available_vhosts`, 원격 DAM의 경우 Dispatcher 구성에 다음 헤더를 포함합니다.
+* Experience Manager Sites as a Cloud Service Sites 배포에서 Managed Services 원격 DAM 배포 Adobe에 액세스할 수 없는 경우 `aem_author.vhost` 파일, 사용 가능한 위치 `"/etc/httpd/conf.d/available_vhosts`, 원격 DAM의 경우 Dispatcher 구성에 다음 헤더를 포함합니다.
 
   ```xml
   Header Set Access-Control-Allow-Origin <Local Sites instance host>

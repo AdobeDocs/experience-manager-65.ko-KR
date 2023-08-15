@@ -12,9 +12,9 @@ discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
 feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '727'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ AEM에는 저장소를 관리하는 데 도움이 되는 다양한 메커니즘�
 새 버전을 만들 때 이전 버전을 제거하도록 구성할 수 있습니다.
 
 * 다음 [버전 제거](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) 도구 저장소 모니터링 및 유지 관리의 일부로 사용됩니다.
-이를 통해 다음 매개 변수에 따라 노드의 이전 버전 또는 노드 계층을 제거할 수 있습니다.
+이를 통해 다음 매개 변수에 따라 노드의 이전 버전 또는 노드 계층을 제거하도록 개입할 수 있습니다.
 
    * 저장소에 보관할 최대 버전 수.
 이 수를 초과하면 가장 오래된 버전이 제거됩니다.

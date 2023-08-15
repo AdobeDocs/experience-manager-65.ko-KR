@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3246'
+source-wordcount: '3242'
 ht-degree: 2%
 
 ---
@@ -29,13 +29,12 @@ ht-degree: 2%
 >모듈별 단계는 다음을 참조하십시오.
 >
 >* [AEM Forms 워크플로 단계 참조](/help/forms/using/aem-forms-workflow-step-reference.md)
->* [Processing Assets Using Media Handlers and Workflows](/help/assets/media-handlers.md)
+>* [미디어 핸들러 및 워크플로우를 사용하여 자산 처리](/help/assets/media-handlers.md)
 >
-
 
 ## 단계 속성 {#step-properties}
 
-각 단계 구성 요소에는 **단계 속성** 필요한 속성을 정의하고 편집할 수 있는 대화 상자
+각 단계 구성 요소에는 **단계 속성** 필요한 속성을 정의하고 편집할 수 있는 대화 상자입니다.
 
 ### 단계 속성 - 공통 탭 {#step-properties-common-tab}
 
@@ -49,20 +48,20 @@ ht-degree: 2%
 
 * **워크플로우 단계**
 
-   을(를) 적용할 드롭다운 선택기 [단계](/help/sites-developing/workflows.md#workflow-stages) 단계로 이동합니다.
+  을(를) 적용할 드롭다운 선택기 [단계](/help/sites-developing/workflows.md#workflow-stages) 단계로 이동합니다.
 
 * **시간 초과**
 
-   이후 단계가 &quot;시간 초과&quot;되는 기간입니다.
+  이후 단계가 &quot;시간 초과&quot;되는 기간입니다.
 다음 중 하나를 선택할 수 있습니다. **끔**, **즉시**, **1시간**, **6시간**, **12시간**, **24시간**.
 
 * **시간 초과 핸들러**
 
-   단계 제한 시간이 초과되면 워크플로우를 제어하는 핸들러입니다. 예, `Auto Advancer`
+  단계 제한 시간이 초과되면 워크플로우를 제어하는 핸들러입니다. 예, `Auto Advancer`
 
 * **핸들러 진행**
 
-   실행 후 워크플로우를 자동으로 다음 단계로 이동하려면 이 옵션을 선택합니다. 선택하지 않은 경우 구현 스크립트는 워크플로우 개선을 처리해야 합니다.
+  실행 후 워크플로우를 자동으로 다음 단계로 이동하려면 이 옵션을 선택합니다. 선택하지 않은 경우 구현 스크립트는 워크플로우 개선을 처리해야 합니다.
 
 ### 단계 속성 - 사용자/그룹 탭 {#step-properties-user-group-tab}
 
@@ -97,13 +96,13 @@ ht-degree: 2%
 
 * 필요에 따라 분기에 워크플로우 단계를 추가합니다.
 
-   ![wf-27](assets/wf-27.png)
+  ![wf-27](assets/wf-27.png)
 
 ## 컨테이너 단계 {#container-step}
 
 컨테이너 단계는 하위 워크플로우로 실행되는 다른 워크플로우 모델을 시작합니다.
 
-이 컨테이너를 통해 워크플로우 모델을 재사용하여 일반적인 단계 시퀀스를 구현할 수 있습니다. 예를 들어 번역 워크플로 모델은 여러 편집 워크플로에서 사용할 수 있습니다.
+이 컨테이너를 사용하면 워크플로우 모델을 재사용하여 일반적인 단계 시퀀스를 구현할 수 있습니다. 예를 들어 번역 워크플로 모델은 여러 편집 워크플로에서 사용할 수 있습니다.
 
 ![wf-28](assets/wf-28.png)
 
@@ -132,8 +131,8 @@ ht-degree: 2%
 * [일반](#step-properties-common-tab)
 * **프로세스**
 
-   * **Target 단계**: 라우팅 표현식에 대한 조건을 평가한 후 실행할 단계를 선택합니다.
-   * **라우팅 표현식**: 실행 여부를 결정하는 규칙 정의, 외부 스크립트 또는 ECMA 스크립트를 선택합니다. **Target 단계**.
+   * **대상 단계**: 라우팅 표현식에 대한 조건을 평가한 후 실행할 단계를 선택합니다.
+   * **라우팅 표현식**: 실행 여부를 결정하는 규칙 정의, 외부 스크립트 또는 ECMA 스크립트를 선택합니다. **대상 단계**.
 
       * **규칙 정의:** 사용 [표현식 편집기](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) 을 클릭하여 규칙을 정의합니다.
       * **외부 스크립트:** 외부 스크립트의 경로입니다.
@@ -178,7 +177,7 @@ function check(){
 
 ![for 루프 시뮬레이션](assets/variable_use_case_count_new.png)
 
-다음에서 **이동 단계**, 사용 **변수 설정** (으)로 **Target 단계** 및 **count &lt; 5** 를 라우팅 표현식으로 사용하십시오.
+다음에서 **이동 단계**, 사용 **변수 설정** (으)로 **대상 단계** 및 **count &lt; 5** 를 라우팅 표현식으로 사용하십시오.
 
 ![for 루프 시뮬레이션 조건](assets/variable_use_case_count1_new.png)
 
@@ -203,6 +202,7 @@ function check(){
    * **일반**
 
       * 분할 이름을 지정합니다.
+
    * **분기 (*x)***
 
       * **분기 추가:** 단계에 분기를 더 추가합니다.
@@ -212,17 +212,18 @@ function check(){
       * **스크립트**: 선택한 경우 상자에 스크립트를 추가하여 활성 분기를 평가합니다 **ECMA 스크립트** 를 라우팅 표현식으로 사용하십시오.
       * **기본 경로**: 분기가 여러 개 있는 경우 기본 분기 다음에 표시됩니다. 하나의 분기만 기본값으로 지정할 수 있습니다.
 
-   >[!NOTE]
-   >
-   >    * 라우팅 표현식을 기반으로 한 번에 하나의 분기가 평가됩니다.
-   >    * 분기는 위쪽에서 아래쪽으로 평가됩니다.
-   >    * true로 평가되는 첫 번째 스크립트가 실행됩니다.
-   >    * 참으로 평가되는 분기가 없으면 워크플로우가 진행되지 않습니다.
+  >[!NOTE]
+  >
+  >    * 라우팅 표현식을 기반으로 한 번에 하나의 분기가 평가됩니다.
+  >    * 분기는 위쪽에서 아래쪽으로 평가됩니다.
+  >    * true로 평가되는 첫 번째 스크립트가 실행됩니다.
+  >    * 참으로 평가되는 분기가 없으면 워크플로우가 진행되지 않습니다.
+  >
+  >
 
-
-   >[!NOTE]
-   >
-   >다음을 참조하십시오 [OR 분할에 대한 규칙 정의](/help/sites-developing/workflows-models.md#defineruleecmascript).
+  >[!NOTE]
+  >
+  >다음을 참조하십시오 [OR 분할에 대한 규칙 정의](/help/sites-developing/workflows-models.md#defineruleecmascript).
 
 * 필요에 따라 분기에 워크플로우 단계를 추가합니다.
 
@@ -248,7 +249,6 @@ A **참가자 단계** 특정 작업에 대한 소유권을 지정할 수 있습
 >* 워크플로우가 완료(완료)되었습니다.
 >* 워크플로우가 중단(종료)됩니다.
 >
-
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ A **참가자 단계** 특정 작업에 대한 소유권을 지정할 수 있습
 * **페이로드로 데이터 저장**
 
    * 위젯 데이터를 워크플로 페이로드의 속성으로 저장하려면 위젯 노드의 이름 속성 값에 다음 형식을 사용합니다.
-      `./jcr:content/nodename`
+     `./jcr:content/nodename`
 
    * 데이터가에 저장됩니다. `nodename` 페이로드 노드의 속성입니다. 노드에 해당 속성이 없으면 속성이 만들어집니다.
    * 페이로드와 함께 저장되는 경우 동일한 페이로드를 사용하는 대화 상자의 후속 사용은 속성 값을 덮어씁니다.
@@ -294,7 +294,7 @@ A **참가자 단계** 특정 작업에 대한 소유권을 지정할 수 있습
 * **작업 항목으로 데이터 저장**
 
    * 위젯 데이터를 작업 항목 메타데이터의 속성으로 저장하려면 이름 속성 값에 다음 형식을 사용합니다.
-      `nodename`
+     `nodename`
 
    * 데이터가에 저장됩니다. `nodename` 작업 항목의 속성 `metadata`. 대화 상자가 나중에 동일한 페이로드와 함께 사용되는 경우 데이터가 유지됩니다.
 
@@ -327,7 +327,7 @@ A **참가자 단계** 특정 작업에 대한 소유권을 지정할 수 있습
 
 1. **대화 상자 경로 속성**
 
-   다음 **대화 상자 참가자 단계** 이(가) **대화 상자 경로** 속성(속성 포함) [참가자 단계](#participant-step)). 값 **대화 상자 경로** 속성은 다음에 대한 경로입니다. `dialog` 대화 상자의 노드.
+   다음 **대화 상자 참가자 단계** 다음 포함: **대화 상자 경로** 속성(속성 포함) [참가자 단계](#participant-step)). 값 **대화 상자 경로** 속성은 다음에 대한 경로입니다. `dialog` 대화 상자의 노드.
 
    예를 들어 대화 상자는 이라는 구성 요소에 포함되어 있습니다. `EmailWatch` 노드에 저장됩니다.
 
@@ -402,50 +402,51 @@ A **참가자 단계** 특정 작업에 대한 소유권을 지정할 수 있습
 
 * **ECMAscript**
 
-   스크립트에는 사용자 ID를 로 반환하는 getParticipant 함수가 포함되어야 합니다. `String` 값. 사용자 지정 스크립트를 예를 들어 `/apps/myapp/workflow/scripts` 폴더 또는 하위 폴더를 생성합니다.
+  스크립트에는 사용자 ID를 로 반환하는 getParticipant 함수가 포함되어야 합니다. `String` 값. 사용자 지정 스크립트를 예를 들어 `/apps/myapp/workflow/scripts` 폴더 또는 하위 폴더를 생성합니다.
 
-   샘플 스크립트는 표준 AEM 인스턴스에 포함됩니다.
+  샘플 스크립트는 표준 AEM 인스턴스에 포함됩니다.
 
-   `/libs/workflow/scripts/initiator-participant-chooser.ecma`
+  `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
-   >[!CAUTION]
-   >
-   >의 아무 것도 변경하지 마십시오. `/libs` 경로.
-   >
-   >
-   >그 이유는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(그리고 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수 있음).
+  >[!CAUTION]
+  >
+  >의 아무 것도 변경하지 마십시오. `/libs` 경로.
+  >
+  >
+  >그 이유는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(그리고 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수 있음).
 
-   이 스크립트는 워크플로 개시자를 참가자로 선택합니다.
+  이 스크립트는 워크플로 개시자를 참가자로 선택합니다.
 
-   ```
-   function getParticipant() {
-       return workItem.getWorkflow().getInitiator();
-   }
-   ```
+  ```
+  function getParticipant() {
+      return workItem.getWorkflow().getInitiator();
+  }
+  ```
 
-   >[!NOTE]
-   >
-   >다음 **워크플로우 개시자 참가자 선택기** 구성 요소가 **동적 참가자 단계** 및 에서는 이 스크립트를 단계 구현으로 사용합니다.
+  >[!NOTE]
+  >
+  >다음 **워크플로우 개시자 참가자 선택기** 구성 요소가 **동적 참가자 단계** 및 에서는 이 스크립트를 단계 구현으로 사용합니다.
 
 * **OSGI 서비스**
 
-   서비스는 다음을 구현해야 합니다. [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 인터페이스. 인터페이스는 다음 멤버를 정의합니다.
+  서비스는 다음을 구현해야 합니다. [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 인터페이스. 인터페이스는 다음 멤버를 정의합니다.
 
    * `SERVICE_PROPERTY_LABEL` 필드: 이 필드를 사용하여 참가자 선택기의 이름을 지정합니다. 이름은에서 사용 가능한 참가자 선택기 목록에 표시됩니다. **동적 참가자 단계** 속성.
 
    * `getParticipant` 메서드: 동적으로 확인된 사용자 ID를 `String` 값.
-   >[!CAUTION]
-   >
-   >다음 `getParticipant` 메서드는 동적으로 확인된 사용자 ID를 반환합니다. 이 ID는 그룹 ID 또는 사용자 ID일 수 있습니다.
-   >
-   >
-   >단, 그룹 ID는 **참가자 단계**: 참가자 목록이 반환됩니다. 의 경우 **동적 참가자 단계**: 빈 목록이 반환되고 위임에 사용할 수 없습니다.
 
-   구현을 사용할 수 있는 대상 **동적 참가자 단계** 구성 요소를 사용하고, 서비스를 내보내는 OSGi 번들에 Java™ 클래스를 추가하고, 이 번들을 AEM 서버에 배포합니다.
+  >[!CAUTION]
+  >
+  >다음 `getParticipant` 메서드는 동적으로 확인된 사용자 ID를 반환합니다. 이 ID는 그룹 ID 또는 사용자 ID일 수 있습니다.
+  >
+  >
+  >단, 그룹 ID는 **참가자 단계**: 참가자 목록이 반환됩니다. 의 경우 **동적 참가자 단계**: 빈 목록이 반환되고 위임에 사용할 수 없습니다.
 
-   >[!NOTE]
-   >
-   >**임의 참가자 선택기** 임의 사용자( )를 선택하는 샘플 서비스입니다. `com.day.cq.workflow.impl.process.RandomParticipantChooser`). 다음 **임의 참가자 선택** r 단계 구성 요소 샘플은 **동적 참가자 단계** 및 는 이 서비스를 단계 구현으로 사용합니다.
+  구현을 사용할 수 있는 대상 **동적 참가자 단계** 구성 요소를 사용하고, 서비스를 내보내는 OSGi 번들에 Java™ 클래스를 추가하고, 이 번들을 AEM 서버에 배포합니다.
+
+  >[!NOTE]
+  >
+  >**임의 참가자 선택기** 임의 사용자( )를 선택하는 샘플 서비스입니다. `com.day.cq.workflow.impl.process.RandomParticipantChooser`). 다음 **임의 참가자 선택** r 단계 구성 요소 샘플은 **동적 참가자 단계** 및 는 이 서비스를 단계 구현으로 사용합니다.
 
 #### 동적 참가자 단계 - 예제 참가자 선택기 서비스 {#dynamic-participant-step-example-participant-chooser-service}
 
@@ -524,7 +525,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * 다음 **양식 시작** 구성 요소에는 다음 값이 있어야 합니다. `Form Identifier` 속성.
 * 양식 구성 요소에는 **요소 이름** 속성을 필드 데이터가 저장되는 노드의 경로로 설정합니다. 경로는 워크플로 페이로드 콘텐츠에서 노드를 찾아야 합니다. 이 값은 다음 형식을 사용합니다.
 
-   `./jcr:content/path_to_node`
+  `./jcr:content/path_to_node`
 
 * 양식에는 다음이 포함되어야 합니다: **워크플로우 제출 단추** 구성 요소. 구성 요소의 속성을 구성하지 않습니다.
 
@@ -583,9 +584,9 @@ A **프로세스 단계** 는 ECMAScript를 실행하거나 OSGi 서비스를 �
       * 표준 ECMAScript 및 OSGi 서비스입니다. 다음을 참조하십시오. [프로세스 단계에 내장된 프로세스](/help/sites-developing/workflows-process-ref.md).
       * 프로세스 단계에 대한 ECMAS 스크립트 생성은 다음을 참조하십시오. [ECMAScript를 사용하여 프로세스 단계 구현](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * 프로세스 단계에 대한 OSGi 서비스 생성을 참조하십시오. [Java™ 클래스를 사용한 프로세스 단계 구현](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+
    * **핸들러 진행**: 실행 후 자동으로 워크플로우를 다음 단계로 이동하려면 이 옵션을 선택합니다. 선택하지 않은 경우 구현 스크립트는 워크플로우 개선을 처리해야 합니다.
    * **인수**: 프로세스에 전달할 인수
-
 
 ## 변수 설정 {#set-variable}
 
@@ -609,5 +610,6 @@ A **프로세스 단계** 는 ECMAScript를 실행하거나 OSGi 서비스를 �
       * **XPATH:** XML 유형 변수에서 값을 검색하려면 옵션을 사용합니다.
       * **페이로드 관련:** 변수에 저장할 값을 페이로드와 관련된 경로에서 사용할 수 있는 경우 옵션을 사용합니다.
       * **절대 경로:** 변수에 저장할 값을 절대 경로에서 사용할 수 있는 경우 옵션을 사용합니다.
+
    * **값 지정:** 변수에 매핑하려면 값을 지정합니다. 이 필드에서 지정하는 값은 매핑 모드에 따라 다릅니다.
    * **매핑 추가:** 이 옵션을 사용하여 더 많은 매핑을 추가하여 변수에 대한 값을 설정합니다.

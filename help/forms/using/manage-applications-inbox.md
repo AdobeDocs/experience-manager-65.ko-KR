@@ -2,7 +2,7 @@
 title: AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리
 seo-title: Manage Forms applications and tasks in AEM Inbox
 description: AEM 받은 편지함을 사용하면 애플리케이션 제출을 통해 Forms 중심 워크플로우를 시작하고 작업을 관리할 수 있습니다.
-seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
+seo-description: AEM Inbox lets you launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1096'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ Forms 중심 워크플로우를 시작하거나 트리거하는 여러 방법 �
 
 받은 편지함 사용자 인터페이스에서는 작업을 볼 수 있는 목록 및 달력 보기를 제공합니다. 보기 설정을 구성할 수도 있습니다. 다양한 매개 변수를 기반으로 작업을 필터링할 수 있습니다. 보기 및 필터에 대한 자세한 내용은 [받은 편지함](/help/sites-authoring/inbox.md).
 
-요약하면 받은 편지함에서 새 애플리케이션을 만들고 할당된 작업을 관리할 수 있습니다.
+요약하면 받은 편지함을 사용하여 새 애플리케이션을 만들고 할당된 작업을 관리할 수 있습니다.
 
 >[!NOTE]
 >
@@ -132,13 +132,13 @@ AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 �
 
    * CRX DE의에 다음 노드를 만듭니다. `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` 다음 표에 명시된 각각의 속성 사용:
 
-      | 노드 | 속성 | 유형 |
-      |---|---|---|
-      | 공유 대상 | 공유 대상 | 문자열 |
-      | 잠김 | 잠김 | 부울 |
-      | 반환됨 | 반환됨 | 부울 |
-      | allowInboxShare | allowInboxShare | 부울 |
-      | allowExplicitSharing | allowExplicitSharing | 부울 |
+     | 노드 | 속성 | 유형 |
+     |---|---|---|
+     | 공유 대상 | 공유 대상 | 문자열 |
+     | 잠김 | 잠김 | 부울 |
+     | 반환됨 | 반환됨 | 부울 |
+     | allowInboxShare | allowInboxShare | 부울 |
+     | allowExplicitSharing | allowExplicitSharing | 부울 |
 
 
    * AEM 패키지를 통해 인덱스를 배포합니다. 다음을 사용할 수 있습니다. [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) 배포 가능한 AEM 패키지를 만드는 프로젝트입니다. 다음 샘플 코드를 사용하여 AEM Archetype 프로젝트에 인덱스를 추가합니다.

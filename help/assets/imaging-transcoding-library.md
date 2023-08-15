@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Adobe Imaging Transcoding Library는 다음을 포함한 핵심 이미지 처리
 
 ```shell
  -destMime PNG/JPEG: Mime type of output rendition
- -BitDepth 8/16: Preserves Bit Depth. Bitdepth ‘4’ is automatically converted to ‘8’
+ -BitDepth 8/16: Preserves Bit Depth. Bitdepth '4' is automatically converted to '8'
  -preserveBitDepth: Downscales Bit Depth (No upscaling)
  -preserveCMYK: Preserves CMYK color space
  -jpegQuality: Provides jpeg quality parameter (0-12 , corresponding to Photoshop qualities)
@@ -138,9 +138,8 @@ ITL 처리를 구성하려면 구성 파일을 만들고 이를 실행할 워크
 
 1. 업데이트된 항목 동기화 [!UICONTROL DAM 자산 업데이트] 워크플로우 모델. 워크플로우를 저장합니다.
 
-구성을 확인하고 TIFF 이미지를 업로드한 다음 error.log 파일을 모니터링합니다. 알게 될 것입니다. `INFO` 이 언급된 메시지 `SwitchEngineHandlingProcess execute: executing command line`. 로그에는 생성된 렌디션이 언급됩니다. 워크플로우가 완료되면에서 새 변환을 볼 수 있습니다. [!DNL Experience Manager].
+구성을 확인하려면 TIFF 이미지를 업로드하고 error.log 파일을 모니터링합니다. 알게 될 것입니다. `INFO` 이 언급된 메시지 `SwitchEngineHandlingProcess execute: executing command line`. 로그에는 생성된 렌디션이 언급됩니다. 워크플로우가 완료되면에서 새 변환을 볼 수 있습니다. [!DNL Experience Manager].
 
 >[!MORELIKETHIS]
 >
 >* [지원되는 MIME 유형 문서](assets-formats.md#supported-image-transcoding-library)
-

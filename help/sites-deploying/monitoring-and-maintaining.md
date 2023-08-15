@@ -10,9 +10,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: bb27c7dfedd5a16728674f7584b0c462a92646e6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5934'
+source-wordcount: '5933'
 ht-degree: 2%
 
 ---
@@ -65,11 +65,11 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 
 ### 소프트웨어 설치 백업 {#backing-up-your-software-installation}
 
-설치 후 또는 구성에 중요한 변경 사항이 있으면 소프트웨어 설치의 백업을 만듭니다.
+설치 후 또는 구성의 중요 한 변경 사항이 있는 경우 소프트웨어 설치의 백업를 만듭니다.
 
-이 작업을 수행하려면 [전체 저장소 백업](#backing-up-your-repository) 다음:
+이 작업을 [ 수행 하려면 전체 저장소 ](#backing-up-your-repository) 를 백업한 다음 다음을 수행 합니다.
 
-1. AEM을 중지합니다.
+1. 정지 AEM.
 1. 전체 백업 `<cq-installation-dir>` 사용 중인 파일 시스템에서 가져옵니다.
 
 >[!CAUTION]
@@ -94,7 +94,7 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 
 다음 **버전 제거** 도구는 저장소의 노드 또는 노드 계층 구조를 삭제하기 위한 것입니다. 기본 목적은 이전 버전의 노드를 제거하여 저장소 크기를 줄이는 데 도움이 됩니다.
 
-이 섹션에서는 AEM의 버전 관리 기능과 관련된 유지 관리 작업을 다룹니다. 다음 **버전 제거** 도구는 저장소의 노드 또는 노드 계층 구조를 삭제하기 위한 것입니다. 기본 목적은 이전 버전의 노드를 제거하여 저장소 크기를 줄이는 데 도움이 됩니다.
+이 섹션에서는 AEM의 버전 관리 기능과 관련된 유지 관리 작업을 다룹니다. 다음 **버전 제거** 도구는 저장소의 노드 또는 노드 계층 구조를 삭제하기 위한 것입니다. 기본 목적은 이전 버전의 노드를 제거 하 여 저장소 크기를 줄이는 데 도움이 되는 것입니다.
 
 ### 개요 {#overview}
 
@@ -126,19 +126,19 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
    ![버전 삭제 구성](assets/version-purge-configuration.png)
 
    * **경로 제거**
-제거할 콘텐츠의 시작 경로 설정(예: ) 
-`/content/wknd`.
+제거할 콘텐츠의 시작 경로 설정(예: ) `/content/wknd`.
 
-      >[!CAUTION]
-      >
-      >Adobe은 각 웹 사이트에 대해 여러 경로를 정의할 것을 권장합니다.
-      >
-      >하위 항목이 너무 많은 경로를 정의하면 제거 수행 시간이 크게 늘어날 수 있습니다.
+     >[!CAUTION]
+     >
+     >Adobe은 각 웹 사이트에 대해 여러 경로를 정의할 것을 권장합니다.
+     >
+     >하위 항목이 너무 많은 경로를 정의하면 제거 수행 시간이 크게 늘어날 수 있습니다.
 
    * **버전을 재귀적으로 제거**
 
       * 경로에 정의된 노드만 제거하려면 선택을 취소합니다.
       * 경로 및 하위 항목에 의해 정의된 노드를 제거하려는 경우 선택합니다.
+
    * **최대 버전 수**
 유지할 최대 버전 수(각 노드에 대해)를 설정합니다. 이 설정을 사용하지 않으려면 비워 둡니다.
 
@@ -147,6 +147,7 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 
    * **최대 버전 사용 기간**
 유지할 최대 버전 보존 기간(일)(각 노드에 대해)을 설정합니다. 이 설정을 사용하지 않으려면 비워 둡니다.
+
    그러면 **저장**.
 
 1. 탐색/다음으로 돌아가기 **주간 유지 관리 창** 창 및 선택 **실행** 프로세스를 즉시 시작합니다.
@@ -179,11 +180,11 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 * `V 1.0`: 버전 번호입니다.
 * `V 1.0.1`&#42;: 별표는 버전이 현재(기본) 버전이며 삭제할 수 없음을 나타냅니다.
 
-* `Thu Mar 15 2012 08:37:32 GMT+0100`: 버전 날짜입니다.
+* `Thu Mar 15 2012 08:37:32 GMT+0100`: 버전의 날짜입니다.
 
-다음 예제에서는
+다음 예에서:
 
-* 다음 **[!DNL Shirts]** 버전 사용 기간이 2일 이상이므로 버전이 삭제됩니다.
+* **[!DNL Shirts]**&#x200B;버전 기간이 2 일 보다 크므로 버전이 제거 됩니다.
 * 다음 **[!DNL Tonga Fashions!]** 버전 수가 5보다 크므로 버전이 삭제됩니다.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
@@ -204,9 +205,9 @@ AEM WCM은 세부 로그를 기록합니다. 압축을 풀고 빠른 시작을 �
 
 로그 파일 순환은 주기적으로 파일을 만들어 파일의 성장을 제한하는 프로세스를 말합니다. AEM에서 라는 로그 파일 `error.log` 는 지정된 규칙에 따라 하루에 한 번 회전합니다.
 
-* 다음 `error.log` 파일 이름은 {original_filename} 패턴에 따라 변경됩니다 `.yyyy-MM-dd`. 예를 들어 2010년 7월 11일에 현재 로그 파일의 이름은 변경됩니다 `error.log-2010-07-10`, 그런 다음 새 `error.og` 이(가) 만들어졌습니다.
+* 다음 `error.log` 파일 이름은 패턴에 따라 변경됩니다 {original_filename} `.yyyy-MM-dd`. 예를 들어 2010년 7월 11일에 현재 로그 파일의 이름은 변경됩니다 `error.log-2010-07-10`, 그런 다음 새 `error.og` 이(가) 만들어졌습니다.
 
-* 이전 로그 파일은 삭제되지 않으므로 디스크 사용을 제한하기 위해 이전 로그 파일을 정기적으로 정리해야 합니다.
+* 이전 로그 파일이 삭제 되지 않으므로 디스크 사용량을 제한 하기 위해 주기적으로 오래 된 로그 파일을 정리 해야 합니다.
 
 >[!NOTE]
 >
@@ -227,25 +228,23 @@ AEM WCM 및 저장소에 대한 모든 액세스 요청이 여기에 등록됩�
    * `error.log`
 여기에는 (다양한 심각도 수준의) 오류 메시지가 등록됩니다.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 이 로그는 다음과 같은 경우에만 사용됩니다. [!DNL Dynamic Media] 이(가) 활성화되었습니다. 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
 
    * `request.log`
 각 액세스 요청은 응답과 함께 여기에 등록됩니다.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 이 로그는 다음과 같은 경우에만 사용됩니다. [!DNL Dynamic Media] 이(가) 활성화되었습니다. s7access 로그는 각 요청을 기록합니다. [!DNL Dynamic Media] 에서 `/is/image` 및 `/is/content`.
 
    * `stderr.log`
-시작 중에 생성된 다양한 심각도 수준의 오류 메시지를 다시 저장합니다. 기본적으로 로그 수준은 로 설정됩니다. 
-`Warning` ( `WARN`)
+시작 중에 생성된 다양한 심각도 수준의 오류 메시지를 다시 저장합니다. 기본적으로 로그 수준은 로 설정됩니다. `Warning` ( `WARN`)
 
    * `stdout.log`
 시작 중 이벤트를 나타내는 로깅 메시지를 보관합니다.
 
    * `upgrade.log`
-에서 실행되는 모든 업그레이드 작업의 로그를 제공합니다. 
-`com.day.compat.codeupgrade` 및 `com.adobe.cq.upgradesexecutor` 패키지.
+에서 실행되는 모든 업그레이드 작업의 로그를 제공합니다. `com.day.compat.codeupgrade` 및 `com.adobe.cq.upgradesexecutor` 패키지.
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
@@ -266,7 +265,7 @@ AEM WCM 및 저장소에 대한 모든 액세스 요청이 여기에 등록됩�
 >
 >디버그 로그 수준에서 로그를 필요 이상으로 오래 두면 안 됩니다. 로그 항목이 많이 생성되고 리소스가 소모되기 때문입니다.
 
-디버그 파일의 행은 일반적으로 DEBUG로 시작한 다음 로그 수준, 설치 관리자 작업 및 로그 메시지를 제공합니다. 예:
+디버그 파일의 행은 일반적으로 DEBUG로 시작한 다음 로그 수준, 설치 관리자 작업 및 로그 메시지를 제공합니다. 예를 들면 다음과 같습니다.
 
 ```shell
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -293,47 +292,50 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 이름: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
 
-      위치 `<identifier>` 는 인스턴스를 식별하기 위해 입력해야 하는 자유 텍스트로 대체됩니다(이 정보를 생략할 수 없음).
+     위치 `<identifier>` 는 인스턴스를 식별하기 위해 입력해야 하는 자유 텍스트로 대체됩니다(이 정보를 생략할 수 없음).
 
-      예, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+     예, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * 유형: `sling:OsgiConfig`
+
    >[!NOTE]
    >
-   >기술적 요건은 아니지만 다음을 수행하는 것이 좋습니다. `<identifier>` 고유.
+   >기술적 요구 사항은 아니지만 고유 하 게 만드는 `<identifier>` 것이 좋습니다.
 
-1. 이 노드에서 다음 속성을 설정합니다.
+1. 이 노드에서 다음 속성을 설정 합니다.
 
    * 이름: `org.apache.sling.commons.log.file`
 
-      유형: 문자열
+     유형: 문자열
 
-      값: 로그 파일을 지정합니다. 예: `logs/myLogFile.log`
+     값: 로그 파일을 지정합니다. 예: `logs/myLogFile.log`
 
    * 이름: `org.apache.sling.commons.log.names`
 
-      유형: 문자열[] (문자열 + 다중)
+     유형: 문자열[] (문자열 + 다중)
 
-      값: 로거가 메시지를 기록할 OSGi 서비스를 지정합니다(예: 다음 모두).
+     값: 로거가 메시지를 기록할 OSGi 서비스를 지정합니다(예: 다음 모두).
 
       * `org.apache.sling`
       * `org.apache.felix`
       * `com.day`
+
    * 이름: `org.apache.sling.commons.log.level`
 
-      유형: 문자열
+     유형: 문자열
 
-      값: 필요한 로그 수준 지정( `debug`, `info`, `warn`, 또는 `error`); 예: `debug`
+     값: 필요한 로그 수준 지정( `debug`, `info`, `warn`, 또는 `error`); 예: `debug`
 
    * 필요에 따라 다른 매개 변수를 구성합니다.
 
       * 이름: `org.apache.sling.commons.log.pattern`
 
-         유형: `String`
+        유형: `String`
 
-         값: 필요에 따라 로그 메시지의 패턴을 지정합니다. 예:
+        값: 필요에 따라 로그 메시지의 패턴을 지정합니다. 예:
 
-         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+        `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.pattern` 는 최대 6개의 인수를 지원합니다.
@@ -366,7 +368,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >
    >쓰기 대상:
    >
-   >`<cq-installation-dir>/crx-quickstart/logs/thelog.log`.
+   >`<cq-installation-dir>/crx-quickstart/logs/thelog.log`
    >
    >및 로그 파일이 다음으로 지정됨:
    >
@@ -389,9 +391,10 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 이름: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (작성자)
 
-      로거와 마찬가지로 `<identifier>` 는 인스턴스를 식별하기 위해 입력해야 하는 자유 텍스트로 대체됩니다(이 정보를 생략할 수 없음). 예, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+     로거와 마찬가지로 `<identifier>` 는 인스턴스를 식별하기 위해 입력해야 하는 자유 텍스트로 대체됩니다(이 정보를 생략할 수 없음). 예, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * 유형: `sling:OsgiConfig`
+
    >[!NOTE]
    >
    >기술적 요건은 아니지만 다음을 수행하는 것이 좋습니다. `<identifier>` 고유.
@@ -400,44 +403,43 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 이름: `org.apache.sling.commons.log.file`
 
-      유형: `String`
+     유형: `String`
 
-      값: 로거에 지정된 파일과 일치하도록 로그 파일을 지정합니다.
+     값: 로거에 지정된 파일과 일치하도록 로그 파일을 지정합니다.
 
-      이 예제의 경우 `../logs/myLogFile.log`.
+     이 예제의 경우 `../logs/myLogFile.log`.
 
    * 필요에 따라 다른 매개 변수를 구성합니다.
 
       * 이름: `org.apache.sling.commons.log.file.number`
 
-         유형: `Long`
+        유형: `Long`
 
-         값: 보관할 로그 파일의 수를 지정합니다. 예: `5`
+        값: 보관할 로그 파일의 수를 지정합니다. 예: `5`
 
       * 이름: `org.apache.sling.commons.log.file.size`
 
-         유형: `String`
+        유형: `String`
 
-         값: 크기/날짜별로 파일 회전을 제어하는 데 필요한 값을 지정합니다. 예: `'.'yyyy-MM-dd`
+        값: 크기/날짜별로 파일 회전을 제어하는 데 필요한 값을 지정합니다. 예: `'.'yyyy-MM-dd`
+
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.file.size` 다음 중 하나를 설정하여 로그 파일의 회전을 제어합니다.
    >
    >* 최대 파일 크기
    >* 시간/날짜 일정
-
    >
    >새 파일이 만들어지는 시점(및 기존 파일의 이름이 이름 패턴에 따라 변경됨)을 나타냅니다.
    >
    >* 숫자로 크기 제한을 지정할 수 있습니다. 크기 표시기가 제공되지 않으면 바이트 수로 간주되거나 크기 표시기 중 하나를 추가할 수 있습니다. `KB`, `MB`, 또는 `GB` (대/소문자가 무시됩니다.)
    >* 시간/날짜 일정을 다음으로 지정할 수 있습니다. `java.util.SimpleDateFormat` 패턴. 파일이 회전된 후 기간을 정의합니다. 또한 회전된 파일에 추가되는 접미사(식별용)입니다.
-
    >
-   >기본값은 &#39;.&#39;입니다.yyyy-MM-dd(일별 로그 회전용)
+   >기본값은 &#39;. &#39;yyyy-MM-dd (일별 로그 순환).
    >
-   >예를 들어 2010년 1월 20일 자정(또는 이 날짜 이후의 첫 번째 로그 메시지가 정확하게 표시되는 경우)에 ../logs/error.log의 이름이 ../logs/error.log.2010-01-20으로 바뀝니다. 1월 21일에 대한 로깅은 다음 일 변경 시 롤오버될 때까지 (새 항목 및 빈 항목) ../logs/error.log에 출력됩니다.
+   >예를 들어, 2010 년 1 월 20 일 자정, (또는이 날짜 이후의 첫 번째 로그 메시지가 정확 하지 않은 경우),.. /logs/error.log의 이름이로 바뀝니다. /logs/error.log.2010-01-20. 1 월 21 일에 대 한 로깅은 &quot;new and empty&quot;로 출력 됩니다.. 다음 날 변경 될 때까지/logs/error.log 됩니다.
    >
-   >| `'.'yyyy-MM` | 매월 초에 순환 |
+   >| `'.'yyyy-MM` | 매월 시작 시 회전 |
    >|---|---|
    >| `'.'yyyy-ww` | 매주 첫째 날의 순환(로케일에 따라 다름) |
    >| `'.'yyyy-MM-dd` | 매일 자정에 순환. |
@@ -448,11 +450,10 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >참고: 시간/날짜를 지정할 때:
    >
    >1. 작은 따옴표(&#39; &#39;) 쌍 안에 리터럴 텍스트를 &quot;이스케이프&quot;해야 합니다.
-      >
-      >    특정 문자가 패턴 문자로 해석되지 않도록 합니다.
+   >
+   >    특정 문자가 패턴 문자로 해석되지 않도록 합니다.
    >
    >1. 옵션의 어디에나 유효한 파일 이름에 사용할 수 있는 문자만 사용하십시오.
-
 
 1. 선택한 도구로 새 로그 파일을 읽습니다.
 
@@ -546,16 +547,16 @@ Felix 콘솔은에서 Sling 로그 지원에 대한 정보도 제공합니다. `
 | 영역 | 증상 | 용량 증가... | 볼륨을 줄이려면... |
 |---|---|---|---|
 | 클라이언트 | 클라이언트 CPU 사용량이 많습니다. | 성능이 더 높은 클라이언트 CPU를 설치합니다. | (HTML) 레이아웃을 간소화합니다. |
-|  | 낮은 서버 CPU 사용률. | 더 빠른 브라우저로 업그레이드하십시오. | 클라이언트측 캐시를 개선합니다. |
-|  | 어떤 고객은 빠르고, 어떤 고객은 느립니다. |  |  |
+|   | 낮은 서버 CPU 사용률. | 더 빠른 브라우저로 업그레이드하십시오. | 클라이언트측 캐시를 개선합니다. |
+|   | 어떤 고객은 빠르고, 어떤 고객은 느립니다. |  |  |
 | 서버 |  |  |  |
 | 네트워크 | 서버와 클라이언트의 CPU 사용량이 낮습니다. | 네트워크 병목 현상을 제거합니다. | 클라이언트 캐시의 구성을 개선/최적화합니다. |
-|  | 서버에서 로컬로 탐색하는 것이 (비교적) 빠릅니다. | 네트워크 대역폭 향상. | 웹 페이지의 &quot;가중치&quot;를 줄입니다(예: 더 적은 수의 이미지, 최적화된 HTML). |
+|   | 서버에서 로컬로 탐색하는 것이 (비교적) 빠릅니다. | 네트워크 대역폭 향상. | 웹 페이지의 &quot;가중치&quot;를 줄입니다(예: 더 적은 수의 이미지, 최적화된 HTML). |
 | 웹 서버 | 웹 서버의 CPU 사용량이 높습니다. | 웹 서버를 클러스터링합니다. | 페이지당(방문) 히트 수를 줄입니다. |
-|  |  | 하드웨어 로드 밸런서를 사용합니다. |  |
+|   |  | 하드웨어 로드 밸런서를 사용합니다. |  |
 | 애플리케이션 | 서버 CPU 사용량이 많습니다. | AEM 인스턴스를 클러스터링합니다. | CPU 및 메모리 호그를 검색하고 제거합니다(코드 검토 및 타이밍 출력 사용). |
-|  | 메모리 사용량이 많습니다. |  | 모든 수준에서 캐싱을 개선합니다. |
-|  | 응답 시간이 짧습니다. |  | 템플릿 및 구성 요소(예: 구조, 논리)를 최적화합니다. |
+|   | 메모리 사용량이 많습니다. |  | 모든 수준에서 캐싱을 개선합니다. |
+|   | 응답 시간이 짧습니다. |  | 템플릿 및 구성 요소(예: 구조, 논리)를 최적화합니다. |
 | 저장소 |  |  |  |
 | 캐시 |  |  |  |
 
@@ -578,8 +579,8 @@ Felix 콘솔은에서 Sling 로그 지원에 대한 정보도 제공합니다. `
       * 문제가 특정 시간에만 발생합니까?
       * 특정 페이지에서만 문제가 발생합니까?
       * 다른 요청도 영향을 받습니까?
-   * 일반적인 상황에서 시스템에 대한 지식을 비교하기 위해 가능한 많은 정보를 수집합니다.
 
+   * 일반적인 상황에서 시스템에 대한 지식을 비교하기 위해 가능한 많은 정보를 수집합니다.
 
 ### 성능 모니터링 및 분석 툴 {#tools-for-monitoring-and-analyzing-performance}
 
@@ -922,7 +923,7 @@ Percentage of the requests served within a certain time (ms)
 
    이제 다른 옵션을 선택할 수 있습니다.
 
-### (J)VisualVM을 사용하여 성능 모니터링 {#monitoring-performance-using-j-visualvm}
+### (J) VisualVM을 사용 하 여 성능 모니터링 {#monitoring-performance-using-j-visualvm}
 
 JDK 6-8의 경우 도구 명령 `visualvm` 을(를) 사용할 수 있습니다. JDK를 설치한 후 다음을 수행할 수 있습니다.
 
@@ -1036,7 +1037,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 에셋의 평균 크기는 얼마입니까? {#what-is-the-average-size-of-the-assets}
 
-의 총 크기를 결정하려면 `/var/dam` 폴더:
+폴더의 `/var/dam` 전체 크기를 결정 하려면 다음을 수행 하십시오.
 
 1. WebDAV를 사용하여 로컬 파일 시스템에 저장소를 매핑합니다.
 
@@ -1094,13 +1095,14 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 다음은 특정 성능 문제가 발생하기 시작할 때 확인할 사항에 대한 제안 목록입니다. 이 목록은 (안타깝게도) 완전히 포괄적이지는 않습니다.
 
 >[!NOTE]
+>
 자세한 내용은 다음 문서를 참조하십시오.
+>
 * [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=ko)
 * [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)
 * [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=ko)
 * [느리고 차단된 프로세스 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
-
 
 ### 100%의 CPU {#cpu-at}
 
@@ -1133,12 +1135,12 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
    * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
    * [Apache Sling JavaScript 핸들러](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Apache Sling 로깅 구성](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+   * [Apache의 벌목 로그 구성](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [CQ HTML 라이브러리 관리자](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM 디버그 필터](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [로거](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+   * [CQ WCM Debug 필터링](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [거](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* 구성 여부 및 방법 [버전 삭제](/help/sites-deploying/version-purging.md)
+* 버전 제거를 구성 했는지 여부 및 구성 [ 방법](/help/sites-deploying/version-purging.md)
 * 기술 자료:
 
    * [열려 있는 파일이 너무 많음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=ko)
@@ -1157,18 +1159,18 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 JVM(Java™ Virtual Machine)은 튜닝과 관련하여 개선되었습니다(특히 Java™ 7 이후). 따라서, 적절한 고정 JVM 크기를 지정하고 기본값을 사용하는 것이 종종 적절합니다.
 
-기본 설정이 적합하지 않다면 GC 성능을 모니터링하고 평가하는 방법을 설정하는 것이 중요합니다. JVM을 튜닝하기 전에 이 작업을 수행하십시오. 이 프로세스에는 힙 크기, 알고리즘 및 기타 측면을 포함하는 모니터링 요소가 포함될 수 있습니다.
+기본 설정이 적절 하지 않으면 모니터 하 고 GC 성능을 평가 하는 방법을 설정 하는 것이 중요 합니다. 이 경우에는 JVM을 튜닝 하려고 시도 합니다. 이 프로세스에는 힙 크기, 알고리즘 및 기타 측면을 포함하는 모니터링 요소가 포함될 수 있습니다.
 
 몇 가지 일반적인 선택 사항은 다음과 같습니다.
 
 * VerboseGC
 
-   ```
-   -verbose:gc \
-    -Xloggc:$LOGS/verbosegc.log \
-    -XX:+PrintGCDetails \
-    -XX:+PrintGCDateStamps
-   ```
+  ```
+  -verbose:gc \
+   -Xloggc:$LOGS/verbosegc.log \
+   -XX:+PrintGCDetails \
+   -XX:+PrintGCDateStamps
+  ```
 
 결과 로그는 다음과 같은 GC 시각화기에서 수집할 수 있습니다.
 
@@ -1178,18 +1180,20 @@ JVM(Java™ Virtual Machine)은 튜닝과 관련하여 개선되었습니다(특
 
 * 이러한 설정은 &quot;와이드 오픈&quot; JMX 연결용입니다.
 
-   ```
-   -Dcom.sun.management.jmxremote \
-    -Dcom.sun.management.jmxremote.port=8889 \
-    -Dcom.sun.management.jmxremote.authenticate=false \
-    -Dcom.sun.management.jmxremote.ssl=false
-   ```
+  ```
+  -Dcom.sun.management.jmxremote \
+   -Dcom.sun.management.jmxremote.port=8889 \
+   -Dcom.sun.management.jmxremote.authenticate=false \
+   -Dcom.sun.management.jmxremote.ssl=false
+  ```
 
 * 그런 다음 JConsole을 사용하여 JVM에 연결합니다. 다음을 참조하십시오.
-   ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
 
 사용 중인 메모리 양, 사용 중인 GC 알고리즘, 실행 소요 시간 및 이 프로세스가 애플리케이션 성능에 미치는 영향을 확인할 수 있습니다. 그것이 없으면, 동조는 단지 &quot;무작위로 뒤틀리는 꼭지&quot;일 뿐입니다.
 
 >[!NOTE]
+>
 oracle의 VM의 경우 다음 위치에도 정보가 있습니다.
+>
 [https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

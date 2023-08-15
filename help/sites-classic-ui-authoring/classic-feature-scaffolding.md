@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1431'
 ht-degree: 0%
 
 ---
@@ -42,8 +42,8 @@ ht-degree: 0%
 
 * **제목 텍스트**: 이 스캐폴딩 페이지 자체의 이름입니다. 이 예제에서는 &quot;News&quot;라고 합니다.
 * **설명**: 스캐폴딩 페이지의 제목 아래에 표시됩니다.
-* **Target 템플릿**: 이 스캐폴드가 페이지를 만들 때 사용하는 템플릿입니다. 이 예에서는 입니다. *Geometrixx 컨텐츠 페이지* 템플릿.
-* **Target 경로**: 이 스캐폴드가 페이지를 생성하는 상위 페이지의 경로입니다. 이 예제에서 경로는 */content/geometrixx/en/news*.
+* **대상 템플릿**: 이 스캐폴드가 페이지를 만들 때 사용하는 템플릿입니다. 이 예에서는 입니다. *Geometrixx 컨텐츠 페이지* 템플릿.
+* **대상 경로**: 이 스캐폴드가 페이지를 생성하는 상위 페이지의 경로입니다. 이 예제에서 경로는 */content/geometrixx/en/news*.
 
 발판의 몸은 형태입니다. 사용자가 스캐폴드를 사용하여 페이지를 만들려고 할 때 양식을 작성하고 를 클릭합니다 *만들기*&#x200B;을 클릭합니다. 다음에서 **뉴스** 양식 위의 예에는 다음 필드가 있습니다.
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 새 스캐폴드를 만들려면 **도구** 콘솔, **기본 페이지 스캐폴딩** 페이지를 만듭니다. 단일 페이지 템플릿 유형을 사용할 수 있습니다. *스캐폴딩 템플릿.*
 
-로 이동 **페이지 속성** 새 페이지의 *제목 텍스트*, *설명*, *Target 템플릿*, 및 *Target 경로*, 위에서 설명한 대로
+로 이동 **페이지 속성** 새 페이지의 *제목 텍스트*, *설명*, *대상 템플릿*, 및 *대상 경로*, 위에서 설명한 대로
 
 다음으로 이 스캐폴드가 만들 페이지의 구조를 정의해야 합니다. 이렇게 하려면 로 이동합니다. **[디자인 모드](/help/sites-authoring/page-authoring.md#sidekick)** scaffold 페이지에서 을 참조하십시오. 에서 스캐폴드를 편집할 수 있는 링크가 표시됩니다. **대화 상자 편집기**.
 

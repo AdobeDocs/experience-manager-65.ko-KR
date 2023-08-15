@@ -2,9 +2,9 @@
 title: RemotePage 구성 요소
 description: RemotePage 구성 요소는 AEM 내에서 원격 React SPA을 편집하기 위한 사용자 지정 페이지 구성 요소입니다.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-source-git-commit: 41aac3b4ea3b100e9d927bef161929477d667a95
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 RemotePage 구성 요소는 생성된 애플리케이션에서 필요한 모든 자산을 가져옵니다 `asset-manifest.json` 및 는 AEM 내에서 SPA을 렌더링하는 데 사용합니다.
 
-* RemotePage를 사용하면 SPA의 스크립트와 스타일시트를 AEM 페이지 구성 요소의 본문에 삽입할 수 있습니다.
+* RemotePage를 사용하여 SPA의 스크립트와 스타일시트를 AEM 페이지 구성 요소의 본문에 삽입할 수 있습니다.
 * 가상 프론트엔드 구성 요소를 사용하여 AEM SPA 편집기에서 편집 가능한 섹션으로 표시할 수 있습니다.
 * 다른 도메인에 호스팅된 SPA을 함께 AEM에서 편집할 수 있습니다.
 
@@ -33,7 +33,7 @@ RemotePage 구성 요소는 생성된 애플리케이션에서 필요한 모든 
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
 
-   ![진입점](assets/asset-manifest-entrypoints.png)
+  ![진입점](assets/asset-manifest-entrypoints.png)
 
 * 응용 프로그램은 다음에서 초기화할 수 있어야 합니다. `<div id="root"></div>` body 요소 아래에 있습니다. 앱이 인스턴스화되기 위해 다른 마크업이 필요한 경우 가 있는 프록시 구성 요소의 HTL 스크립트에서 이를 적절하게 조정해야 합니다. `sling:resourceSuperType="spa-project-core/components/remotepage`.
 

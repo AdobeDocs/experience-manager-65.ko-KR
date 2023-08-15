@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2207'
-ht-degree: 3%
+source-wordcount: '2206'
+ht-degree: 4%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 
 API를 쉽게 경험할 수 있도록 AEM Forms은 일괄 처리 API를 사용하도록 구성된 감시 폴더 서비스를 즉시 제공합니다. AEM Forms UI를 통해 서비스에 액세스하여 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 요구 사항에 따라 사용자 정의 서비스를 만들 수도 있습니다. 아래 나열된 메서드를 사용하여 감시 폴더가 있는 일괄 처리 API를 사용할 수 있습니다.
 
-* 대화형 통신을 생성할 JSON 파일 형식으로 입력 데이터(레코드)를 지정합니다
+* 대화형 통신을 생성할 JSON 파일 형식의 입력 데이터(레코드)를 지정합니다
 * 외부 데이터 소스에 저장되고 양식 데이터 모델을 통해 액세스되는 입력 데이터(레코드)를 사용하여 대화형 통신을 생성합니다
 
 #### JSON 파일 형식으로 입력 데이터 레코드를 지정하여 대화형 통신을 생성합니다. {#specify-input-data-in-JSON-file-format}
@@ -171,7 +171,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
 
 ## REST 요청을 사용하여 일괄 처리 API 호출
 
-를 호출할 수 있습니다. [일괄 처리 API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) representational State Transfer (REST) 요청을 통해 이를 통해 다른 사용자에게 REST 엔드포인트를 제공하여 API에 액세스하고 대화형 통신을 처리, 저장 및 사용자 지정하는 메서드를 구성할 수 있습니다. 사용자 지정 Java 서블릿을 개발하여 AEM 인스턴스에 API를 배포할 수 있습니다.
+를 호출할 수 있습니다. [일괄 처리 API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) representational State Transfer (REST) 요청을 통해 이를 통해 다른 사용자에게 REST 엔드포인트를 제공하여 API에 액세스하고 대화형 통신을 처리, 저장 및 사용자 지정하기 위한 자체 메서드를 구성할 수 있습니다. 사용자 지정 Java 서블릿을 개발하여 AEM 인스턴스에 API를 배포할 수 있습니다.
 
 Java 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파일이 준비되었는지 확인하십시오. Java 서블릿을 만들고 배포하려면 다음 단계를 수행하십시오.
 
@@ -346,24 +346,20 @@ JSON 파일이에 있는 경우 `C:\batch\mergedJsonPath.json` 그리고 아래 
 파일 시스템에 데이터를 저장하는 것 외에도 JSON 파일을 CRX-repository, 파일 시스템, 웹 서버에 저장하거나 OSGI 미리 채우기 서비스를 통해 데이터에 액세스할 수 있습니다. 다양한 프로토콜을 사용하여 데이터를 병합하는 구문은 다음과 같습니다.
 
 * **프로토콜**
-
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **파일 프로토콜**
-
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
 * **미리 채우기 서비스 프로토콜**
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
+  SERVICE_NAME은 OSGI 미리 채우기 서비스의 이름을 나타냅니다. 미리 채우기 서비스 만들기 및 실행 을 참조하십시오.
 
-   SERVICE_NAME은 OSGI 미리 채우기 서비스의 이름을 나타냅니다. 미리 채우기 서비스 만들기 및 실행 을 참조하십시오.
-
-   IDENTIFIER는 미리 채우기 데이터를 가져오기 위해 OSGI 미리 채우기 서비스에 필요한 메타데이터를 나타냅니다. 로그인한 사용자에 대한 식별자는 사용할 수 있는 메타데이터의 예입니다.
+  IDENTIFIER는 미리 채우기 데이터를 가져오기 위해 OSGI 미리 채우기 서비스에 필요한 메타데이터를 나타냅니다. 로그인한 사용자에 대한 식별자는 사용할 수 있는 메타데이터의 예입니다.
 
 * **HTTP 프로토콜**
-
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
 >

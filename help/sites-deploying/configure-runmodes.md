@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
 
 # 실행 모드{#run-modes}
 
-실행 모드를 사용하면 작성자 또는 게시, 테스트, 개발, 인트라넷 또는 기타 등의 특정 목적을 위해 AEM 인스턴스를 조정할 수 있습니다.
+실행 모드를 사용하면 작성자 또는 게시, 테스트, 개발, 인트라넷 또는 기타 등의 특정 목적으로 AEM 인스턴스를 조정할 수 있습니다.
 
 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -85,7 +85,7 @@ nosamplecontent 실행 모드는 프로덕션 설치용으로 설계되었습니
 
 특정 실행 모드에 사용되는 구성 속성에 대한 값 모음을 저장소에 저장할 수 있습니다.
 
-실행 모드는 폴더 이름에 접미사로 표시됩니다. 이렇게 하면 모든 구성을 하나의 저장소에으로 저장할 수 있습니다. 예:
+실행 모드는 폴더 이름에 접미사로 표시됩니다. 이렇게 하면 모든 구성을 하나의 저장소에으로 저장할 수 있습니다. 예를 들면 다음과 같습니다.
 
 * `config`
 

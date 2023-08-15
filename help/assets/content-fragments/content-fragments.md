@@ -4,16 +4,16 @@ description: Adobe Experience Manager(AEM)의 콘텐츠 조각을 사용하여 H
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 94%
+source-wordcount: '1986'
+ht-degree: 93%
 
 ---
 
 # 콘텐츠 조각을 사용하여 작업 {#working-with-content-fragments}
 
-Adobe Experience Manager(AEM)을 사용하면 콘텐츠 조각을 사용하여 디자인하고, 만들고, 선별하고, [페이지에 영향을 받지 않는 콘텐츠 게시](/help/sites-authoring/content-fragments.md) 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다.
+Adobe Experience Manager(AEM)을 사용하면 콘텐츠 조각을 사용하여 디자인하고 만들고 선별하고 [페이지에 영향을 받지 않는 콘텐츠 게시](/help/sites-authoring/content-fragments.md) 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다.
 
 콘텐츠 조각에는 구조화된 콘텐츠가 포함되어 있습니다.
 
@@ -62,9 +62,9 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 그러나 대개 모든 채널에 대해 동일한 콘텐츠를 사용하고 싶지 않을 것이므로 특정 채널에 따라 콘텐츠를 최적화해야 합니다.
 
-콘텐츠 조각을 사용하면
+콘텐츠 조각을 사용하면 다음과 같은 작업을 수행할 수 있습니다.
 
-* 다양한 채널에서 효율적으로 타겟 대상자에게 도달하는 방법을 고려할 수 있습니다.
+* 다양한 채널에서 효율적으로 타깃 대상자에게 도달하는 방법을 고려할 수 있습니다.
 * 채널 중립적인 에디토리얼 콘텐츠를 만들고 관리할 수 있습니다.
 * 다양한 채널을 위한 콘텐츠 풀을 빌드할 수 있습니다.
 * 특정 채널에 맞는 콘텐츠 변형을 디자인할 수 있습니다.
@@ -187,7 +187,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 * **조각 단락**
 
-   * 개별 엔터티로 구분된 텍스트 블록(종종 여러 줄)입니다.
+   * 개별 엔티티로 구분된 텍스트 블록(종종 여러 줄)입니다.
 
    * [리치 텍스트](/help/assets/content-fragments/content-fragments-variations.md#rich-text) 및 [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) 모드에서 단락 서식을 헤더로 지정할 수 있습니다. 이렇게 하면 해당 단락과 그다음 단락이 한 단위로 묶입니다.
 

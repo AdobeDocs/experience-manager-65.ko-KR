@@ -12,9 +12,9 @@ discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 feature: Upgrading
 exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
-source-git-commit: 50a11e30ccd720065962e8dd03cbcc71ec9f715a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ AEM 6.5에서는 모든 기능이 이전 버전과의 호환성을 염두에 두
 
 이전 버전과의 호환성을 유지할 수 없는 기능의 예외가 발생하면 6.4용 호환성 패키지를 설치하여 번들 및 콘텐츠에 대한 이전 버전과의 비호환성 문제를 완화할 수 있습니다(다운로드 위치에 대한 자세한 내용은 아래 설정 방법 참조). 이 호환성 패키지는 대부분의 경우 AEM 6.4 호환 응용 프로그램의 호환성을 복원하는 데 도움이 됩니다.
 
-호환성 패키지를 사용하면 호환성 모드에서 AEM을 실행하고 새로운 AEM 기능에 대해 사용자 지정 개발을 연기할 수 있습니다.
+호환성 패키지를 사용하면 호환성 모드에서 AEM을 실행하고 새로운 AEM 기능에 대한 사용자 지정 개발을 연기할 수 있습니다.
 
 >[!NOTE]
 >

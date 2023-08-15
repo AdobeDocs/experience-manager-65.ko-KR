@@ -4,9 +4,9 @@ description: 프록시는 [!DNL Experience Manager] 프록시 작업자를 사�
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ ht-degree: 0%
 
 * `job`
 
-   **요구 사항**: 매개 변수 `jobevent` 은(는) 직렬화된 값 맵으로 설정해야 합니다. 다음을 만드는 데 사용됩니다. `Event` 작업 처리자의 경우.
+  **요구 사항**: 매개 변수 `jobevent` 은(는) 직렬화된 값 맵으로 설정해야 합니다. 다음을 만드는 데 사용됩니다. `Event` 작업 처리자의 경우.
 
-   **결과**: 새 작업을 추가합니다. 성공하면 고유한 작업 ID가 반환됩니다.
+  **결과**: 새 작업을 추가합니다. 성공하면 고유한 작업 ID가 반환됩니다.
 
 ```shell
 curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
@@ -38,9 +38,9 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
 * `result`
 
-   **요구 사항**: 매개 변수 `jobid` 을(를) 설정해야 합니다.
+  **요구 사항**: 매개 변수 `jobid` 을(를) 설정해야 합니다.
 
-   **결과**: 작업 프로세서에서 만든 결과 노드의 JSON 표현을 반환합니다.
+  **결과**: 작업 프로세서에서 만든 결과 노드의 JSON 표현을 반환합니다.
 
 ```shell
 curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
@@ -49,9 +49,9 @@ curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
 
 * `resource`
 
-   **요구 사항**: 매개 변수 jobid를 설정해야 합니다.
+  **요구 사항**: 매개 변수 jobid를 설정해야 합니다.
 
-   **결과**: 지정된 작업과 연결된 리소스를 반환합니다.
+  **결과**: 지정된 작업과 연결된 리소스를 반환합니다.
 
 ```shell
 curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
@@ -60,9 +60,9 @@ curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
 
 * `remove`
 
-   **요구 사항**: 매개 변수 jobid를 설정해야 합니다.
+  **요구 사항**: 매개 변수 jobid를 설정해야 합니다.
 
-   **결과**: 작업이 있는 경우 제거합니다.
+  **결과**: 작업이 있는 경우 제거합니다.
 
 ```shell
 curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
@@ -115,7 +115,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 >[!NOTE]
 >
->다음을 참조하십시오 [InDesign Server 프록시 작업자 구성](indesign.md#configuring-the-proxy-worker-for-indesign-server) 및 [Cloud Services 구성](../sites-developing/extending-cloud-config.md) 추가 정보.
+>다음을 참조하십시오 [InDesign Server 프록시 작업자 구성](indesign.md#configuring-the-proxy-worker-for-indesign-server) 및 [Cloud Service 구성](../sites-developing/extending-cloud-config.md) 추가 정보.
 
 다음은 API 사용의 예입니다.
 

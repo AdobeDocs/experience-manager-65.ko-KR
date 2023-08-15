@@ -1,20 +1,16 @@
 ---
 title: 클라이언트측 라이브러리 사용
-seo-title: Using Client-Side Libraries
-description: AEM은 클라이언트측 코드를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트측 라이브러리 폴더를 제공합니다
-seo-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
-uuid: f12b13cc-6651-4c9a-9c52-19a22bb82b28
+description: AEM은 클라이언트측 코드를 저장소에 저장하고, 범주로 구성하고, 각 코드 범주가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트측 라이브러리 폴더를 제공합니다
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2862'
-ht-degree: 1%
+source-wordcount: '2860'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 1%
 
 최신 웹 사이트는 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 크게 의존합니다. 이 코드의 제공을 구성하고 최적화하는 것은 복잡한 문제가 될 수 있습니다.
 
-이 문제를 해결하기 위해 AEM은 다음을 제공합니다 **클라이언트 측 라이브러리 폴더**&#x200B;를 사용하여 클라이언트측 코드를 저장소에 저장하고, 카테고리로 구성한 다음, 각 코드 카테고리가 클라이언트에 제공되는 시기와 방법을 정의할 수 있습니다. 그런 다음 클라이언트 측 라이브러리 시스템은 올바른 코드를 로드하기 위해 최종 웹 페이지에 올바른 링크를 생성합니다.
+이 문제를 해결하기 위해 AEM은 다음을 제공합니다 **클라이언트 측 라이브러리 폴더**&#x200B;를 사용하면 클라이언트측 코드를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에 제공되는 시기와 방법을 정의할 수 있습니다. 그런 다음 클라이언트 측 라이브러리 시스템은 올바른 코드를 로드하기 위해 최종 웹 페이지에 올바른 링크를 생성합니다.
 
 ## AEM에서 클라이언트측 라이브러리 작동 방식 {#how-client-side-libraries-work-in-aem}
 
@@ -197,7 +193,7 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 속성을 포함
    `#base=mobile`
 
 1. 아래 줄에 표시 `#base=[root]`를 클릭하고 루트를 기준으로 소스 파일의 경로를 입력합니다. 각 파일 이름을 별도의 줄에 지정합니다.
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 
 ### 종속성에 연결 {#linking-to-dependencies}
 

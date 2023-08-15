@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1285'
 ht-degree: 3%
 
 ---
@@ -26,15 +26,15 @@ ht-degree: 3%
 >
 >이는 과 비교할 수 있습니다. [모바일 웹](/help/sites-developing/mobile-web.md) 적응형 웹 디자인을 사용하는 메커니즘(주로 클래식 UI 용).
 
-AEM에서는 메커니즘을 조합하여 페이지에 대한 응답형 레이아웃을 실현합니다.
+AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이아웃을 실현합니다.
 
 * [**레이아웃 컨테이너**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode) 구성 요소
 
-   이 구성 요소는 응답형 그리드 내에 구성 요소를 추가 및 배치할 수 있도록 해주는 그리드 단락 시스템을 제공합니다. 페이지의 기본 parsys로 사용하거나 구성 요소 브라우저에서 작성자가 사용할 수 있습니다.
+  이 구성 요소는 응답형 그리드 내에 구성 요소를 추가 및 배치할 수 있도록 해주는 그리드 단락 시스템을 제공합니다. 페이지의 기본 parsys로 사용하거나 구성 요소 브라우저에서 작성자가 사용할 수 있습니다.
 
    * 기본값 **레이아웃 컨테이너** 구성 요소는 다음과 같이 정의됩니다.
 
-      /libs/wcm/foundation/components/responsivegrid
+     /libs/wcm/foundation/components/responsivegrid
 
    * 레이아웃 컨테이너를 정의할 수 있습니다.
 
@@ -42,14 +42,13 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 응답형 레이�
       * 를 페이지의 기본 parsys로 사용합니다.
       * 모두.
 
-         레이아웃 컨테이너를 페이지의 표준으로 사용할 수 있으며, 사용자가 이 내에 레이아웃 컨테이너를 더 추가할 수 있습니다(예: 열 제어 달성).
+        레이아웃 컨테이너를 페이지의 표준으로 사용할 수 있으며, 사용자가 이 내에 레이아웃 컨테이너를 더 추가할 수 있습니다(예: 열 제어 달성).
 
 * **[레이아웃 모드](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-레이아웃 컨테이너를 페이지에 배치하면 
-**레이아웃** 응답 그리드 내에 컨텐츠를 배치하는 모드입니다.
+레이아웃 컨테이너를 페이지에 배치하면 **레이아웃** 응답 그리드 내에 컨텐츠를 배치하는 모드입니다.
 
 * [**에뮬레이터**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-이렇게 하면 구성 요소의 크기를 대화 방식으로 변경하여 디바이스/창 크기에 따라 레이아웃을 다시 정렬하는 응답형 웹 사이트를 만들고 편집할 수 있습니다. 그러면 사용자는 콘텐츠가 에뮬레이터를 사용하여 어떻게 렌더링되는지 볼 수 있습니다.
+이렇게 하면 구성 요소의 크기를 대화 방식으로 변경하여 장치/창 크기에 따라 레이아웃을 다시 정렬하는 응답형 웹 사이트를 만들고 편집할 수 있습니다. 그러면 사용자는 콘텐츠가 에뮬레이터를 사용하여 어떻게 렌더링되는지 볼 수 있습니다.
 
 >[!CAUTION]
 >
@@ -68,7 +67,7 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 응답형 레이�
 
 ## 응답형 에뮬레이터 구성 {#configuring-the-responsive-emulator}
 
-이 작업을 통해 응답형 을 볼 수 있습니다. **에뮬레이터** 을 클릭합니다.
+이 작업을 사용하면 응답형 을 볼 수 있습니다. **에뮬레이터** 을 클릭합니다.
 
 ### 에뮬레이션할 페이지 구성 요소 등록 {#register-your-page-components-for-emulation}
 
@@ -184,19 +183,19 @@ CRXDE Lite 또는 XML을 사용하여 정의할 수 있습니다.
 * 페이지 구성 요소
 * 페이지 템플릿(나중에 사용)
 
-다음 두 예제는 정의를 보여 줍니다.
+다음 두 예는 정의를 보여 줍니다.
 
 * **HTL:**
 
-   ```xml
-   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
-   ```
+  ```xml
+  <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
+  ```
 
 * **JSP:**
 
-   ```
-   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
-   ```
+  ```
+  <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
+  ```
 
 ### 반응형 CSS 포함 {#include-the-responsive-css}
 
@@ -240,7 +239,7 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
 
 응답형 컨테이너 내에 있는 구성 요소의 크기는 응답형 격자 크기에 따라 해당 HTML DOM 요소와 함께 조정됩니다. 따라서 이러한 상황에서는 고정 너비(포함된) DOM 요소의 정의를 피하거나 업데이트하는 것이 좋습니다.
 
-예:
+예를 들면 다음과 같습니다.
 
 * 이전:
 
@@ -262,7 +261,7 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
 
 응답형 격자에 포함된 적응형 이미지의 컨텐츠를 적절하게 크기 조정하고 업데이트하려면 `afterEdit` 을 로 설정 `REFRESH_PAGE` 리스너 대상 `EditConfig` 포함된 모든 구성 요소의 파일입니다.
 
-예:
+예를 들면 다음과 같습니다.
 
 `<cq:listeners jcr:primaryType="cq:EditListenersConfig" afteredit="REFRESH_PAGE" />`
 
@@ -282,11 +281,11 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
 
 * **작성 환경**
 
-   사용 [디자인 모드](/help/sites-authoring/default-components-designmode.md) 을(를) 활성화하려면 **레이어 컨테이너** 구성 요소 를 참조하십시오.
+  사용 [디자인 모드](/help/sites-authoring/default-components-designmode.md) 을(를) 활성화하려면 **레이어 컨테이너** 구성 요소 를 참조하십시오.
 
 * **구성 요소 정의**
 
-   사용 `allowedComponent` 또는 구성 요소를 정의할 때 정적 포함이 있습니다.
+  사용 `allowedComponent` 또는 구성 요소를 정의할 때 정적 포함이 있습니다.
 
 ### 레이아웃 컨테이너의 그리드 구성 {#configure-the-grid-of-the-layout-container}
 
@@ -309,6 +308,7 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
    * 사용 가능한 열 수:
 
       * `columns="{String}8"`
+
    * 현재 구성 요소에 추가할 수 있는 구성 요소:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`

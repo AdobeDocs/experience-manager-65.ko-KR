@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '469'
 ht-degree: 12%
 
 ---
@@ -49,7 +49,6 @@ AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하�
 >* [증폭](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
-
 다음을 클릭하여 검색을 실행합니다. **검색** 창 맨 아래에. 클릭 **재설정** 을 클릭하여 검색 기준을 지웁니다.
 
 ## 필터 {#filter}
@@ -79,7 +78,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하�
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
-1. 클릭 **바꾸기** 모든 인스턴스를 실제로 바꿉니다. 작업을 확인하는 메시지가 나타납니다.
+1. 클릭 **바꾸기** 모든 인스턴스를 실제로 바꿉니다. 작업을 확인하는 메시지가 표시됩니다.
 
 찾기 및 바꾸기 서블릿의 기본 범위는 다음 속성을 포함합니다.
 

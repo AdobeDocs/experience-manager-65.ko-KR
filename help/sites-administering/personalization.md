@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1685'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 2%
 * 내부 네트워크 내에 이미 정의된 사용자의 위치, 부서 및/또는 역할에 따라 콘텐츠를 제공할 수 있습니다.
 * 사용 가능한 선택에 따라 추가 선택을 할 수 있습니다.
 
-### 특정, 제한된 Target 사용자 그룹 - 엑스트라넷 {#extranets}
+### 특정, 제한적, 타겟 사용자 그룹 - 엑스트라넷 {#extranets}
 
 * 사용자는 인증을 위해 로그인해야 합니다. 이는 개인화에 필요한 정보를 제공하는 프로필에 연결됩니다. 예를 들어 위치, 제품과의 관계, 사용 내역, 예산 책임 등과 같은 세부 정보가 필요할 수 있습니다.
 * 이러한 인스턴스는 다음과 같은 사이트에 걸쳐 다양할 수 있습니다.

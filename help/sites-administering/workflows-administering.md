@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 25f7218355b7715949273c84eb72ddde3d6a0a65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '993'
 ht-degree: 84%
 
 ---
@@ -88,17 +88,16 @@ ht-degree: 84%
    >* **종료** 작업 사용
    >* 워크플로의 대상인 페이지가 (강제로) 삭제되면 워크플로가 종료됩니다.
 
-
 1. 특정 항목을 선택한 다음 **내역 열기**&#x200B;를 선택하여 세부 정보를 표시합니다.
 
    ![wf-99](assets/wf-99.png)
 
 ## 워크플로 인스턴스 실패 해결 {#fixing-workflow-instance-failures}
 
-워크플로가 실패하면 AEM은 **실패** 콘솔을 제공하므로 원래 원인을 처리하고 나면 이를 조사하고 적절한 조치를 취할 수 있습니다.
+워크플로가 실패하면 AEM에서 다음을 제공합니다. **실패** 원래 원인을 처리하고 나면 적절한 조치를 취하고 조사할 수 있는 콘솔:
 
-* **실패 세부 정보** - 창을 열어 다음을 표시합니다. 
-**실패 메시지**, **단계**, 및 **실패 스택**.
+* **실패 세부 사항**
+창을 열어 다음을 표시합니다. **실패 메시지**, **단계**, 및 **실패 스택**.
 
 * **내역 열기** - 워크플로 내역의 세부 정보를 표시합니다.
 
@@ -118,7 +117,7 @@ ht-degree: 84%
 
 워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다.
 
-구성 **Adobe Granite 워크플로우 삭제 구성** 수명 및 상태에 따라 워크플로 인스턴스를 제거합니다. 또한 모든 모델 또는 특정 모델의 워크플로 인스턴스를 제거할 수 있습니다.
+수명 및 상태에 따라 워크플로 인스턴스를 제거하도록 **Adobe Granite 워크플로 제거 구성**&#x200B;을 구성합니다. 또한 모든 모델 또는 특정 모델의 워크플로 인스턴스를 제거할 수 있습니다.
 
 여러 서비스 구성을 생성하여 서로 다른 기준을 충족하는 워크플로 인스턴스를 제거할 수도 있습니다. 예를 들어 특정 워크플로 모델의 인스턴스가 예상 시간보다 오래 실행될 때 해당 인스턴스를 제거하는 구성을 생성할 수 있습니다. 저장소 크기를 최소화하기 위해 특정 일수가 지난 후 완료된 모든 워크플로를 제거하는 다른 구성을 생성할 수도 있습니다.
 
@@ -137,7 +136,7 @@ ht-degree: 84%
 <table>
  <tbody>
   <tr>
-   <th>속성 이름(웹 콘솔)</th>
+   <th>속성 이름 (웹 콘솔)</th>
    <th>OSGi 속성 이름</th>
    <th>설명</th>
   </tr>
@@ -176,7 +175,7 @@ ht-degree: 84%
 >
 >저장소에 구성을 추가하는 경우 서비스 PID는 다음과 같습니다.
 >
->`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
+>`com.adobe.granite.workflow.core.WorkflowSessionFactory`
 
 | 속성 이름 (웹 콘솔) | OSGi 속성 이름 |
 |---|---|
@@ -192,7 +191,7 @@ ht-degree: 84%
 
 *userMetadataPersistenceEnabled* 속성은 워크플로 모델의 *jcr:content 노드*&#x200B;에 저장됩니다. 이 플래그는 워크플로 메타데이터에서 *cq:userMetaDataCustomPersistenceEnabled*&#x200B;로 유지됩니다.
 
-아래 그림은 워크플로우에 플래그를 설정하는 방법을 보여 줍니다.
+아래 일러스트레이션에서는 워크플로에 플래그를 설정하는 방법을 보여 줍니다.
 
 ![workflow-externalize-config](assets/workflow-externalize-config.png)
 

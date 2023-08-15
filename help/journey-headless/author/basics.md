@@ -2,10 +2,10 @@
 title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 82%
+source-wordcount: '1692'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 * 암호
 * 로그인 화면 액세스 권한에 대한 링크
 
-필요한 모든 권한으로 계정을 구성합니다. 문제가 발생한 경우 사내 프로젝트 지원 팀에 문의하는 것이 좋습니다.
+필요한 모든 권한으로 계정을 구성합니다. Adobe 문제가 있는 경우 사내 프로젝트 지원 팀에 문의하는 것이 좋습니다.
 
 ### 탐색 {#navigation}
 
@@ -64,7 +64,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 콘솔 내에서 컨텐츠 조각으로 이동할 폴더를 선택하거나 헤더에서 탐색 표시를 선택하여 다시 트리 탐색할 수 있습니다.
 
-![탐색 표시](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
+![이동 경로](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
 
 ### 액션, 선택, 보기 {#actions-selecting-viewing}
 
@@ -98,7 +98,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 #### 폴더 만들기 {#creating-folder}
 
-에셋 콘솔의 **파일** 섹션에서 일련의 폴더를 만들어 이 작업을 수행할 수 있습니다. **만들기** 옵션(오른쪽 상단)을 선택한 다음 **폴더**&#x200B;를 선택합니다.
+자산 콘솔의 **파일** 섹션에서 일련의 폴더를 만들어 이 작업을 수행할 수 있습니다. **만들기** 옵션(오른쪽 상단)을 선택한 다음 **폴더**&#x200B;를 선택합니다.
 
 ![폴더 만들기 옵션](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -118,7 +118,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 >[!NOTE]
 >
->콘텐츠 조각 모델 - 에셋 폴더에서 콘텐츠 조각 모델 허용에 대한 자세한 내용을 읽을 수 있습니다.
+>콘텐츠 조각 모델 - 자산 폴더에서 콘텐츠 조각 모델 허용에 대한 자세한 내용을 읽을 수 있습니다.
 
 그리고 해당 폴더를 탐색하여 콘텐츠 조각을 만들고 편집합니다.
 
@@ -132,7 +132,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 >[!NOTE]
 >
->에셋 폴더에 구성 적용에 대한 자세한 내용을 읽을 수 있습니다.
+>자산 폴더에 구성 적용에 대한 자세한 내용을 읽을 수 있습니다.
 
 ### 콘텐츠 조각 만들기 {#creating-fragment}
 
@@ -166,15 +166,15 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 * 특정 유형의 정보를 포함하여 정보의 여러 부분만 필요로 하는 조각입니다. Headless 콘텐츠의 경우 여정 후반부에서 주요 참조에 대해 알아봅니다.
 
-   ![콘텐츠 조각 편집기 - 내 조각](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+  ![콘텐츠 조각 편집기 - 내 조각](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
 * 긴 텍스트 섹션을 작성할 수 있는 조각입니다. 추가 옵션으로 텍스트를 관리하고 서식을 지정할 수 있습니다. 전체 화면 편집기에서 개별 텍스트 필드를 열 수도 있습니다(오른쪽 작은 화면 모양의 아이콘 사용).
 
-   ![콘텐츠 조각 편집기 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![콘텐츠 조각 편집기 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
->작성자가 일부 필드를 성공적으로 완료하는 방법에 대한 자세한 내용을 파악하는 데 프로젝트 관련 설명서가 필요할 수 있습니다.
+>작성자가 일부 필드를 정상적으로 완료하는 방법에 대한 자세한 내용을 파악하는 데 프로젝트 관련 설명서가 필요할 수 있습니다.
 >
 >일반적인 내용은 콘텐츠 조각 모델 - 데이터 유형 및 속성을 참조하십시오.
 
@@ -190,26 +190,26 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 * **콘텐츠 조각 모델**
 
-   조각 이름 바로 아래 편집기 상단에 콘텐츠 조각 모델 이름이 표시됩니다. 이는 모델 편집기로 이동하는 링크이기도 합니다.
+  조각 이름 바로 아래 편집기 상단에 콘텐츠 조각 모델 이름이 표시됩니다. 이는 모델 편집기로 이동하는 링크이기도 합니다.
 콘텐츠 조각 모델은 사용하는 구조를 정의하므로 실제로 콘텐츠 조각에 핵심적인 요소입니다. 하지만 조각을 만들고 편집하는 것은 (일반적으로) 다른 담당자인 콘텐츠 설계자가 해야 하는 일입니다.
 
-   >[!NOTE]
-   >
-   >자세히 알아보려면 AEM Headless 콘텐츠 설계자 여정을 참조하십시오.
+  >[!NOTE]
+  >
+  >자세히 알아보려면 AEM Headless 콘텐츠 설계자 여정을 참조하십시오.
 
 * **관련 콘텐츠**
 
-   이 콘텐츠는 분명히 편집기의 탭입니다.
+  이 콘텐츠는 분명히 편집기의 탭입니다.
 
-   상당수의 AEM 버전에서 콘텐츠 조각을 사용할 수 있습니다. 페이지를 작성할 때 원래는 “기존” 용도로 사용할 수 있도록 제작되었습니다.여전히 이 컨텍스트에서 사용됩니다. 조각에는 임베드되지 않지만 페이지를 작성할 때 작성자가 사용할 수 있는 에셋(예: 이미지) 연결이 여기에 포함될 수 있습니다.
+  상당수의 AEM 버전에서 콘텐츠 조각을 사용할 수 있습니다. 페이지를 작성할 때 원래는 “기존” 용도로 사용할 수 있도록 제작되었습니다.여전히 이 컨텍스트에서 사용됩니다. 조각에는 임베드되지 않지만 페이지를 작성할 때 작성자가 사용할 수 있는 자산(예: 이미지) 연결이 여기에 포함될 수 있습니다.
 
 * **미리보기**
 
-   이는 편집기의 다른 탭으로 주로 개발자용 기술 보기가 제공됩니다.
+  이는 편집기의 다른 탭으로 주로 개발자용 기술 보기가 제공됩니다.
 
 * **페이지 참조 업데이트**
 
-   이 액션은 **...**(줄임표) 드롭다운에서 사용할 수 있습니다. 이는 페이지 작성과 관련이 있으므로 Headless 작성자는 별 관심이 없습니다.
+  이 액션은 **...**(줄임표) 드롭다운에서 사용할 수 있습니다. 이는 페이지 작성과 관련이 있으므로 Headless 작성자는 별 관심이 없습니다.
 
 ### 게시 {#publishing}
 
@@ -229,7 +229,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 * [작성 개념](/help/sites-authoring/author.md)
 
-* [기본 처리](/help/sites-authoring/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔을 기반으로 하지만 여러/대부분의 기능은 **에셋** 콘솔에서의 **콘텐츠 조각** 작성과 관련성이 있기도 합니다.
+* [기본 처리](/help/sites-authoring/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔을 기반으로 하지만 여러/대부분의 기능은 **자산** 콘솔에서의 **콘텐츠 조각** 작성과 관련성이 있기도 합니다.
 
    * [탐색 패널](/help/sites-authoring/basic-handling.md#navigation-panel)
 
@@ -247,9 +247,10 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
    * [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [에셋 폴더에 구성 적용](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [자산 폴더에 구성 적용](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [변형 - 콘텐츠 조각 작성](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
@@ -258,8 +259,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
       * [콘텐츠 조각 모델 - 속성](/help/assets/content-fragments/content-fragments-models.md#properties)
 
-      * [콘텐츠 조각 모델 - 에셋 폴더에서 콘텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
-
+      * [콘텐츠 조각 모델 - 자산 폴더에서 콘텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * 시작 안내서
    * [에셋 폴더 헤드리스 빠른 시작 안내서 만들기](/help/sites-developing/headless/getting-started/create-assets-folder.md)

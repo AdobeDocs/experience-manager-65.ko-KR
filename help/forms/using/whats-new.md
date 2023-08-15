@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 1%
+source-wordcount: '1243'
+ht-degree: 2%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html) |
 | AEM 6.5 | 이 문서 |
 
 
-트랜잭션 보고서를 사용하면 제출된 양식, 처리된 문서 및 렌더링된 문서의 수를 캡처하고 추적할 수 있습니다. 이러한 거래를 추적하는 목적은 제품 사용과 하드웨어 및 소프트웨어에 대한 투자 재조정에 대한 정보에 입각한 결정을 내리는 것입니다. 트랜잭션의 몇 가지 예는 다음과 같습니다.
+트랜잭션 보고서를 사용하여 제출된 양식, 처리된 문서 및 렌더링된 문서의 수를 캡처하고 추적할 수 있습니다. 이러한 거래를 추적하는 목적은 제품 사용과 하드웨어 및 소프트웨어에 대한 투자 재조정에 대한 정보에 입각한 결정을 내리는 것입니다. 트랜잭션의 몇 가지 예는 다음과 같습니다.
 
 * 적응형 양식, HTML5 양식 또는 양식 세트 제출
 * 대화형 통신의 인쇄 또는 웹 버전 렌디션

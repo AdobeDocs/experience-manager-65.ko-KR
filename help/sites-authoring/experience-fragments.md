@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 68%
+source-wordcount: '1442'
+ht-degree: 82%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 68%
 
 * 경험(페이지)의 일부입니다.
 * 여러 페이지에서 사용할 수 있습니다.
-* 구조 및 구성 요소를 정의하기 위한 템플릿(편집 가능 전용)을 기반으로 합니다.
+* 구조 및 구성 요소를 정의하기 위한 템플릿(편집만 가능)을 기반으로 합니다.
 * 이 템플릿을 사용하여 경험 조각의 *루트 페이지*&#x200B;를 제작할 수 있습니다.
-* 하나 이상의 구성 요소로 구성되며, 레이아웃이 단락 시스템에 있습니다.
+* 단락 시스템에서 레이아웃이 있는 하나 이상의 구성 요소로 구성되어 있습니다.
 * 다른 경험 조각을 포함할 수 있습니다.
-* 다른 구성 요소(다른 경험 조각 포함)와 결합하여 전체 페이지(경험)를 형성할 수 있습니다.
+* 다른 조각(다른 경험 조각 포함)과 결합하여 전체 페이지(경험)를 형성할 수 있습니다.
 * 루트 페이지를 기반으로 하나 이상의 변형을 만들 수 있습니다.
 * 이러한 변형은 콘텐츠 및/또는 구성 요소를 공유할 수 있습니다.
 * 조각의 여러 변형에서 사용할 수 있는 빌딩 블록으로 분할할 수 있습니다.
@@ -43,11 +43,12 @@ ht-degree: 68%
 >경험 조각에 대한 쓰기 액세스 권한을 사용하려면 그룹에 사용자 계정을 등록해야 합니다.
 >
 >    `experience-fragments-editors`
+>
 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
 
-## 경험 조각 은 언제 사용해야 합니까? {#when-should-you-use-experience-fragments}
+## 언제 경험 조각을 사용해야 합니까? {#when-should-you-use-experience-fragments}
 
-경험 조각 은 다음 경우에 사용해야 합니다.
+경험 조각은 다음과 같은 경우 사용해야 합니다.
 
 * 경험을 재사용하고자 할 때
 
@@ -58,7 +59,7 @@ ht-degree: 68%
    * AEM을 콘텐츠 게재 플랫폼으로 사용하려는 솔루션
    * 서드파티 터치포인트에 콘텐츠 임베드
 
-* 변형 또는 렌디션이 다른 경험이 있는 경우
+* 다양한 변형 또는 표현물에 대한 경험이 있는 경우.
 
    * 채널 또는 컨텍스트별 변형
    * 그룹에 적절한 경험(예: 채널 간에 다양한 경험이 있는 캠페인)
@@ -79,13 +80,15 @@ ht-degree: 68%
 
 * 경험 조각에 의미 있는 구조를 만들 수 있습니다(예: 분류에 따라).
 
-   >[!NOTE]
-   경험 조각의 구조를 사이트의 페이지 구조에 일치시킬 필요는 없습니다.
+  >[!NOTE]
+  >
+  경험 조각의 구조를 사이트의 페이지 구조에 일치시킬 필요는 없습니다.
 
 * [폴더 수준에서 허용된 템플릿을 할당할 수 있습니다.](#configure-allowed-templates-folder)
 
-   >[!NOTE]
-   [템플릿 편집기](/help/sites-authoring/templates.md)를 사용하여 나만의 템플릿을 생성할 수 있습니다.
+  >[!NOTE]
+  >
+  [템플릿 편집기](/help/sites-authoring/templates.md)를 사용하여 나만의 템플릿을 생성할 수 있습니다.
 
 WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화합니다. 사용된 구조는 다중 사이트 관리(언어 사본 포함)와 같은 다른 기능을 사용할 방법도 보여 줍니다.
 
@@ -104,11 +107,13 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 1. [해당 폴더에 대해 허용되는 경험 조각 템플릿을 구성합니다](#configure-allowed-templates-folder).
 
 >[!NOTE]
+>
 [인스턴스에 대해 허용되는 템플릿](#configure-allowed-templates-instance)을 구성할 수도 있지만 업그레이드 시 값을 덮어쓸 수 있으므로 이 방법은 권장되지 **않습니다**.
 
 ### 폴더에 대해 허용되는 템플릿 구성 {#configure-allowed-templates-folder}
 
 >[!NOTE]
+>
 이 방법은 업그레이드 시 값을 덮어쓰지 않으므로 **허용된 템플릿**&#x200B;을 지정하는 데 권장됩니다.
 
 1. 필수 **경험 조각** 폴더로 이동합니다.
@@ -126,6 +131,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    ![경험 조각 속성 - 허용된 템플릿](/help/sites-authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
+   >
    자세한 내용은 [경험 조각용 템플릿](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments)을 참조하십시오.
 
 1. **저장 후 닫기**&#x200B;를 선택합니다.
@@ -133,7 +139,9 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 ### 인스턴스에 대해 허용되는 템플릿 구성 {#configure-allowed-templates-instance}
 
 >[!CAUTION]
+>
 지정된 템플릿은 업그레이드 시 덮어쓸 수 있으므로 이 방법으로 **허용된 템플릿**&#x200B;을 변경하지 않는 것이 좋습니다.
+>
 이 대화 상자는 정보용으로만 사용하십시오.
 
 1. 필요한 **경험 조각** 콘솔로 이동합니다.
@@ -147,6 +155,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    ![경험 조각 구성](assets/ef-01.png)
 
    >[!NOTE]
+   >
    자세한 내용은 [경험 조각용 템플릿](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments)을 참조하십시오.
 
 1. **저장**&#x200B;을 선택합니다.
@@ -171,12 +180,14 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. **경험 조각**&#x200B;에 대한 **속성**&#x200B;을 입력합니다.
 
-   A **제목** 은(는) 필수입니다. 다음과 같은 경우 **이름** 이(가) 비어 있으면 **제목**.
+   **제목**&#x200B;은 필수입니다. 다음과 같은 경우 **이름** 이(가) 비어 있으면 **제목**.
 
    ![xf-04](assets/xf-04.png)
 
    >[!NOTE]
+   >
    경험 조각 템플릿의 태그는 이 경험 조각 루트 페이지의 태그와 병합되지 않습니다.
+   >
    이 둘은 완전히 분리되어 있습니다.
 
 1. **만들기**&#x200B;를 클릭합니다.
@@ -192,9 +203,10 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 경험 조각 편집기는 일반 페이지 편집기와 유사한 기능을 제공합니다.
 
 >[!NOTE]
+>
 페이지 편집기 사용 방법에 대한 자세한 내용은 [페이지 콘텐츠 편집](/help/sites-authoring/editing-content.md)을 참조하십시오.
 
-다음 예제 절차에서는 제품의 티저를 만드는 방법을 보여 줍니다.
+다음 예제 프로시저는 제품에 대한 티저를 작성하는 방법을 보여 줍니다.
 
 1. 드래그 앤 드롭 **티저** 다음에서 [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser).
 
@@ -209,17 +221,17 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 필요에 따라 경험 조각의 변형을 만들 수 있습니다.
 
-1. 조각 열기 [편집](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
+1. [편집](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment)할 조각을 엽니다.
 1. **변형** 탭을 엽니다.
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **만들기** 을(를) 통해 다음을 만들 수 있습니다.
+1. **만들기** 다음을 만들 수 있습니다.
 
    * **변형**
    * **[변형을 Live Copy로](/help/sites-administering/msm.md#live-copies)**.
 
-1. 필요한 속성을 정의합니다.
+1. 필수 속성을 정의합니다.
 
    * **템플릿**
    * **제목**
@@ -247,12 +259,13 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. 다음 중 한 방법으로 실제 경험 조각을 구성 요소 인스턴스에 추가합니다.
 
-   * 에셋 브라우저에서 필요한 조각을 구성 요소에 끌어다 놓기
+   * 자산 브라우저에서 필요한 조각을 구성 요소에 끌어다 놓기
    * 선택 **구성** 구성 요소 도구 모음에서 사용할 조각을 지정하고 다음을 사용하여 확인합니다. **완료** (틱)
 
    ![xf-09](assets/xf-09.png)
 
    >[!NOTE]
+   >
    구성 요소 도구 모음의 편집은 조각 편집기에서 조각을 여는 단축키로 작동합니다.
 
 ## 빌딩 블록 {#building-blocks}
@@ -263,7 +276,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 새 빌딩 블록을 작성하려면 다음 작업을 수행하십시오.
 
-1. 경험 조각 편집기에서 다시 사용할 구성 요소를 선택합니다.
+1. 경험 조각 편집기에서 재사용할 구성 요소를 선택합니다.
 
    ![xf-10](assets/xf-10.png)
 
@@ -281,10 +294,10 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 #### 빌딩 블록 관리 {#managing-a-building-block}
 
-빌딩 블록은에 표시됩니다. **빌딩 블록** 탭. 각 블록에 대해 다음 작업을 사용할 수 있습니다.
+빌딩 블록은 **빌딩 블록** 탭에서 볼 수 있습니다. 각 블록에서 다음 작업을 수행할 수 있습니다.
 
 * 마스터로 이동: 새 탭에서 루트 페이지 변형 열기
-* 이름 변경
+* 이름 바꾸기
 * 삭제
 
 ![xf-](assets/xf-13.png)
@@ -308,7 +321,10 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    속성은 여러 탭에서 사용할 수 있습니다.
 
    >[!CAUTION]
+   >
    이러한 탭은 경험 조각 콘솔에서 **속성**&#x200B;을 열면 표시됩니다.
+   >
+   >
    경험 조각을 편집할 때 **속성을 열면** 해당 [페이지 속성](/help/sites-authoring/editing-page-properties.md)이 표시됩니다.
 
    ![ef-](assets/ef-05.png)
@@ -325,31 +341,32 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
       * **웹이 아닌 변형 수** - inf **정보만**
 
       * **이 조각을 사용하는 페이지 수** - 정보만
+
    * **클라우드 서비스**
 
       * **클라우드 구성**
       * **클라우드 서비스 구성**
       * **Facebook 페이지 ID**
       * **Pinterest 보드**
+
    * **참조**
 
       * 참조 목록입니다.
+
    * **소셜 미디어 상태**
 
       * 소셜 미디어 변형의 세부 사항입니다.
-
-
-
 
 ## 일반 HTML 렌디션 {#the-plain-html-rendition}
 
 URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌디션에 액세스할 수 있습니다.
 
 >[!NOTE]
+>
 브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 정의 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/sites-developing/experience-fragments.md#the-plain-html-rendition)
 
 ## 경험 조각 내보내기 {#exporting-experience-fragments}
 
-기본적으로 경험 조각은 HTML 형식으로 전달됩니다. 이는 AEM과 서드파티 채널에서 모두 동일하게 사용할 수 있습니다.
+기본적으로 경험 조각은 HTML 형식으로 제공됩니다. 이는 AEM과 서드파티 채널에서 모두 동일하게 사용할 수 있습니다.
 
-Adobe Target으로 내보내는 경우 JSON을 사용할 수도 있습니다. 다음을 참조하십시오 [경험 조각과 Target 통합](/help/sites-administering/experience-fragments-target.md) 전체 정보.
+Adobe Target으로 내보내기 위해 JSON을 사용할 수도 있습니다. 다음을 참조하십시오 [경험 조각과 Target 통합](/help/sites-administering/experience-fragments-target.md) 전체 정보.

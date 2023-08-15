@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1409'
 ht-degree: 0%
 
 ---
@@ -202,7 +202,7 @@ mobileappsoffers 처리기는 mobileappspages 처리기를 확장하고 다음 �
 * 장치에서 구성 또는 검토 내보내기
 * 렌더링에 실패한 경우 누락이 있는지 확인 *style/assets/libs* 또는 의 잘못된 경로를 확인하십시오. *style/assets/libs*
 
-**로깅** 패키지의 OSGI 로거 구성을 통해 ContentSync 디버그 로깅 활성화 `com.day.cq.contentsync` 그러면 실행된 처리기와 캐시가 업데이트되었는지, 캐시 업데이트를 보고했는지 여부를 추적할 수 있습니다.
+**로깅** 패키지의 OSGI 로거 구성을 통해 ContentSync 디버그 로깅 활성화 `com.day.cq.contentsync` 그러면 어떤 핸들러가 실행되었는지, 그리고 핸들러가 캐시를 업데이트했는지, 그리고 캐시 업데이트를 보고했는지 추적할 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 

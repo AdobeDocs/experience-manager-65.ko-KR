@@ -7,7 +7,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 10%
@@ -57,7 +57,7 @@ CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.co
 
 AEM 및 CIF 추가 기능을 사용하여 로컬 CIF 프로젝트를 개발하는 경우 다음 단계를 수행하십시오.
 
-1. AEM 6.5 릴리스를 가져와 AEM 6.5 서비스 팩을 설치합니다. AEM 6.5 서비스 팩 7이 필요하지만 사용 가능한 마지막 서비스 팩을 설치하는 것이 좋습니다.
+1. AEM 6.5 릴리스를 가져와 AEM 6.5 서비스 팩을 설치합니다. AEM Adobe 6.5 서비스 팩 7이 필요하지만 사용 가능한 마지막 서비스 팩을 설치하는 것이 좋습니다.
 
 1. AEM .jar 압축을 풀고 `crx-quickstart` 폴더, 실행:
 
@@ -91,7 +91,7 @@ CIF를 사용하여 AEM Commerce 프로젝트를 시작하는 방법에는 두 �
 
 AEM 프로젝트 원형 을 참조하십시오. [사용 지침](https://github.com/adobe/aem-project-archetype#usage) AEM 프로젝트를 생성하는 방법에 대해 설명합니다. 프로젝트에 CIF를 포함하려면 `includeCommerce` 옵션을 선택합니다.
 
-예:
+예를 들면 다음과 같습니다.
 
 ```bash
 mvn -B archetype:generate \

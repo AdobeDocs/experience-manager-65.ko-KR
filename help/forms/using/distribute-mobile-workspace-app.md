@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 * 보안 규정 준수 적용
 * 기업 리소스에 대한 모바일 액세스 보안
 
-모바일 애플리케이션 관리와 함께 MDM 솔루션을 사용하면 기업 내 모바일 디바이스에서 내부, 공개 및 구매한 앱을 관리할 수 있습니다.
+모바일 애플리케이션 관리와 함께 MDM 솔루션을 사용하면 기업 내 모바일 디바이스에서 내부, 공용 및 구매한 앱을 관리할 수 있습니다.
 
 MDM 관리자는 ipa 및 apk 파일을 모두 MDM 서버에 업로드하고 ipa 또는 apk 파일에 액세스할 수 있는 사용자를 제어할 수 있습니다. 관리자는 각 애플리케이션에 대응하는 프로파일 설정을 제어할 수도 있다.
 

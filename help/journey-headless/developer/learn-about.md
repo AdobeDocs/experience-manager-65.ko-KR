@@ -2,10 +2,10 @@
 title: CMS Headless 개발에 대해 알아보기
 description: 이 AEM Headless 개발자 여정의 부분에서는 Headless 기술과 이를 사용하는 이유에 대해 알아봅니다.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 94%
+source-wordcount: '1594'
+ht-degree: 93%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 94%
 
 ![채널이 스택에 추가되면서 복잡성 증가](assets/presentation-complexity.png)
 
-스택의 모든 구성 요소에 변경 사항을 조정하는 데 추가 역량을 사용하면 이 자연 사일로의 제한 사항이 나타납니다.
+스택의 모든 구성 요소에 변경 사항을 조정하는 데 추가 역량을 사용하면 이 자연 사일로의 제한 사항이 표시됩니다.
 
 사용자는 플랫폼이나 터치 포인트에 관계없이 참여를 기대하므로 경험을 제공하는 방법에 민첩성을 제공합니다.  이 멀티채널 방식은 디지털 경험의 표준이고 전체 스택 접근 방식은 특정 상황에서 유연하지 않을 수 있습니다.
 
@@ -76,7 +76,7 @@ Headless는 프레젠테이션에서 콘텐츠를 분리하는 예제입니다. 
 
 ## 기술적 토대 {#technology}
 
-Headless 방식을 통해 미래의 디지털 경험 수요에 맞게 쉽고 빠르게 적응할 수 있는 기술 스택을 빌드할 수 있습니다.
+Headless 접근 방식을 통해 향후 디지털 경험 요구에 쉽고 빠르게 적응할 수 있는 기술 스택을 구축할 수 있습니다.
 
 이전 CMS용 API는 일반적으로 REST 기반이었습니다. Representational State Transfer(REST)는 상태를 저장하지 않는 방식으로 리소스를 텍스트로 제공합니다. 이렇게 하면 사전 정의된 작업 세트를 사용하여 리소스를 읽고 수정할 수 있습니다. REST는 상태를 저장하지 않는 방식으로 콘텐츠를 표현하여 서비스 간의 상호 운용성을 지원할 수 있었습니다.
 

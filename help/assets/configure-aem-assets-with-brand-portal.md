@@ -13,9 +13,9 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 14988b55c21131391fdcb033373774ee170f5305
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2123'
 ht-degree: 47%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 47%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
 Adobe Experience Manager Assets Brand Portal을 사용하면 Adobe Experience Manager Assets에서 승인된 브랜드 자산을 Brand Portal에 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.

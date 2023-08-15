@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 exl-id: 0b3087fe-a3fb-4eac-ad4b-c123526e8195
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM Forms 작업 영역에서 작업을 열면 작업 요약 창에 작업 요약이 표시될 수 있습니다. 작업에 대한 이러한 추가 및 관련 정보는 AEM Forms 작업 영역의 최종 사용자에게 더 많은 가치를 부여합니다.
 
-AEM Forms 작업 영역에서는 [작업 요약] 창에 원하는 웹 페이지를 표시할 수 있습니다. 워크벤치를 사용하여 작업 요약 창을 표시하는 프로세스를 생성할 수 있습니다.
+AEM Forms 작업 영역을 사용하면 작업 요약 창에 원하는 웹 페이지를 표시할 수 있습니다. 워크벤치를 사용하여 작업 요약 창을 표시하는 프로세스를 생성할 수 있습니다.
 
 1. 워크벤치에서 태스크 지정 프로세스를 생성합니다. 작업 할당 작업에 대한 자세한 내용은 의 서비스 참조 항목을 참조하십시오. [Workbench 도움말](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 

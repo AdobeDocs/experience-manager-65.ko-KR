@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: aaeef8fcc0ed5f205aeb7ab40cc61f60912c9869
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1969'
 ht-degree: 0%
 
 ---
@@ -228,7 +228,7 @@ JSONP 저장소 컨텍스트 저장소 구성 요소를 사용하여 외부 데�
 
 ### JSONP 저장소 구성 요소 추가 {#add-the-jsonp-store-component}
 
-JSONP 저장소 구성 요소를 Client Context에 추가하고 이를 사용하여 웹 클라이언트에 대한 지리적 위치 정보를 검색하고 저장합니다.
+JSONP 저장소 구성 요소를 Client Context에 추가하고 이 구성 요소를 사용하여 웹 클라이언트에 대한 지리적 위치 정보를 검색하고 저장합니다.
 
 1. AEM 작성자 인스턴스에서 Geometrixx Outdoors 사이트의 영어 홈 페이지를 엽니다. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Client Context를 열려면 Ctrl-Alt-c(windows) 또는 control-option-c(Mac)를 누릅니다.

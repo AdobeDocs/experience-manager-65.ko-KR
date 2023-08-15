@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '687'
 ht-degree: 14%
 
 ---
@@ -64,9 +64,9 @@ ht-degree: 14%
 
 ### FormChooser: 최종 로드된 리소스 조정 {#formchooser-adjustments-for-eventually-loaded-resources}
 
-에셋 편집기는 양식 선택기를 사용하며, 양식 선택기와 양식의 경로를 에셋의 URL에 추가하기만 하면 동일한 양식 페이지에서 리소스(이 경우 에셋)를 편집할 수 있습니다.
+에셋 편집기는 양식 선택기를 사용하여 양식 선택기와 양식의 경로를 에셋의 URL에 추가하기만 하면 동일한 양식 페이지에서 리소스(이 경우 에셋)를 편집할 수 있습니다.
 
-예:
+예를 들면 다음과 같습니다.
 
 * 일반 양식 페이지: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
 * 양식 페이지로 로드된 자산: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)

@@ -3,9 +3,9 @@ title: AEM Forms을 Adobe Analytics과 통합하는 방법
 description: AEM Forms은 Adobe Analytics과 통합되어 게시된 양식에 대한 성능 지표를 캡처하고 추적합니다.
 docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
-source-git-commit: 45ca98ffb68e1e31e2f45f352e86f5aa1b6f0f00
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ AEM Forms을 구성하려면 다음 단계를 수행하십시오. [Adobe Analyti
 
    * **[!UICONTROL 변수 지우기]**: 이벤트가 한 번만 등록되도록 데이터 추적을 지우려면 이 작업 유형을 사용하십시오. [!DNL Adobe Analytics].
 
-      권장되는 접근 방법은 **[!UICONTROL 변수 설정]** 작업 유형을 사용하여 이벤트 및 데이터 요소를 구성한 다음 **[!UICONTROL 비콘 보내기]** 데이터를 보낸 다음 **[!UICONTROL 변수 지우기]** 데이터 추적을 지웁니다.
+     권장되는 접근 방법은 **[!UICONTROL 변수 설정]** 작업 유형을 사용하여 이벤트 및 데이터 요소를 구성한 다음 **[!UICONTROL 비콘 보내기]** 데이터를 보낸 다음 **[!UICONTROL 변수 지우기]** 데이터 추적을 지웁니다.
 
 1. 다음에서 **[!UICONTROL Prop]** 섹션에서 드롭다운 목록에서 사용할 수 있는 보고서 세트 옵션을 를 사용하여 정의된 데이터 요소와 매핑합니다. [데이터 요소 구성](#configure-data-elements).
 
@@ -202,7 +202,7 @@ Adobe Launch 구성을 만들기 전에 [Adobe Launch as a Cloud Solution을 사
 
 Adobe Launch 구성을 만들려면 다음 단계를 수행하십시오.
 
-1. AEM Forms 작성자 인스턴스에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe 실행 구성]**.
+1. AEM Forms 작성자 인스턴스에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe 실행 구성]**.
 
 1. 구성을 만들 폴더를 선택하고 을 누릅니다 **[!UICONTROL 만들기]**.
 
@@ -232,6 +232,7 @@ Adobe Launch 구성을 만들려면 다음 단계를 수행하십시오.
 
 >[!NOTE]
 >만일 둘 다라면 [Cloud Service 프레임워크를 사용한 Analytics](/help/forms/using/configure-analytics-forms-documents.md) 및 **Adobe Launch를 사용한 Analytics** 기능은 동시에 활성화되어 있습니다. **Adobe Launch를 사용한 Analytics** 이 우선입니다.
+> 
 
 ### 사용자 지정 이벤트 캡처를 위한 규칙 만들기(선택 사항) {#capture-custom-events}
 

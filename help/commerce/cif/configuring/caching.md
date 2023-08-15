@@ -2,10 +2,10 @@
 title: 캐싱 및 성능
 description: GraphQL 및 콘텐츠 캐싱을 활성화하여 상거래 구현의 성능을 최적화하는 데 사용할 수 있는 다양한 구성에 대해 알아봅니다.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ AEM CIF 핵심 구성 요소의 경우 캐싱이 구성 요소 기반으로 구�
 
 ### 예
 
-제품 검색 및 카테고리 페이지에 표시된 사용 가능한 모든 집계/패싯 값을 가져오는 검색 서비스에 대한 일부 캐싱을 구성하는 것이 좋습니다. 이러한 값은 일반적으로 새 속성(예: 제품)이 추가되는 경우에만 변경되므로 제품 속성 세트가 자주 변경되지 않는 경우 이 캐시 항목의 지속 시간이 &quot;큼&quot;일 수 있습니다. 프로젝트별로 다르지만 프로젝트 개발 단계에서는 몇 분, 안정적인 프로덕션 시스템에서는 몇 시간 값을 사용하는 것이 좋습니다.
+제품 검색 및 카테고리 페이지에 표시된 사용 가능한 모든 집계/패싯 값을 가져오는 검색 서비스에 대한 일부 캐싱을 구성하는 것이 좋습니다. 이러한 값은 일반적으로 새 속성(예: 제품)이 추가되는 경우에만 변경되므로 제품 속성 세트가 자주 변경되지 않는 경우 이 캐시 항목의 지속 시간이 &quot;큼&quot;일 수 있습니다. 프로젝트에 따라 다르지만 Adobe은 프로젝트 개발 단계에서 몇 분, 안정적인 프로덕션 시스템에서 몇 시간의 값을 권장합니다.
 
 일반적으로 다음 캐시 항목으로 구성됩니다.
 
@@ -47,7 +47,7 @@ venia/components/structure/navigation:true:10:600
 
 ## Dispatcher 캐싱 {#dispatcher}
 
-에서 AEM 페이지 또는 조각 캐싱 [AEM 디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 는 모든 AEM 프로젝트에 대한 우수 사례입니다. 일반적으로 AEM에서 변경된 모든 콘텐츠가 Dispatcher에서 제대로 업데이트되는지 확인하는 무효화 기술에 의존합니다. 이는 AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
+에서 AEM 페이지 또는 조각 캐싱 [AEM 디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 는 모든 AEM 프로젝트에 대한 우수 사례입니다. 일반적으로 AEM에서 변경된 모든 콘텐츠가 Dispatcher에서 제대로 업데이트되는지 확인하는 무효화 기술에 의존합니다. 이는 AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
 
 순수 AEM 관리 콘텐츠 CIF 외에도 페이지는 일반적으로 GraphQL을 통해 Adobe Commerce에서 동적으로 가져오는 상거래 데이터를 표시할 수 있습니다. 페이지 구조 자체는 변경되지 않지만, 일부 제품 데이터(예: 이름 또는 가격)가 Adobe Commerce에서 변경되는 경우 상거래 콘텐츠가 변경될 수 있습니다.
 
@@ -63,4 +63,4 @@ TTL 기반 캐싱을 사용하여 개발자는 일반적으로 선택한 AEM 페
 
 - [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)
 - [GraphQL 캐싱 구성](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM 디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

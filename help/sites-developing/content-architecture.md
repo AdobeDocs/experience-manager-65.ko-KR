@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ David의 모델은 Jackrabbit wiki에서 찾을 수 있습니다. [https://wiki.
 
 ### &quot;콘텐츠 모델 우선&quot; 설계 원칙 사용 {#use-the-content-model-first-design-principle}
 
-새 기능을 빌드할 때는 항상 먼저 JCR 콘텐츠 구조를 디자인한 다음 기본 Sling 서블릿을 사용하여 콘텐츠를 읽고 쓰는 과정을 살펴봅니다. 이렇게 하면 구현이 즉시 사용 가능한 액세스 제어 메커니즘과 잘 작동하고 불필요한 CRUD 스타일 서블릿을 생성하지 않도록 할 수 있습니다.
+새 기능을 빌드할 때는 항상 먼저 JCR 콘텐츠 구조를 디자인한 다음 기본 Sling 서블릿을 사용하여 콘텐츠를 읽고 쓰는 과정을 살펴봅니다. 이렇게 하면 구현이 즉시 사용 가능한 액세스 제어 메커니즘과 잘 작동하는지 확인할 수 있고 불필요한 CRUD 스타일 서블릿을 생성하지 않도록 할 수 있습니다.
 
 ### 마음을 편히 가지세요 {#be-restful}
 
-서블릿은 경로 대신 resourceTypes를 기반으로 정의해야 합니다. 이렇게 하면 JCR 액세스 제어를 사용하고, REST 원칙을 준수하고, 요청에서 제공되는 리소스 및 리소스 확인자를 사용할 수 있습니다. 또한 클라이언트측의 URL을 변경할 필요 없이 서버측의 URL을 렌더링하는 스크립트를 변경할 수 있도록 해주며, 추가 보안을 위해 클라이언트측의 서버측 구현 세부 정보를 숨길 수 있습니다.
+서블릿은 경로 대신 resourceTypes를 기반으로 정의해야 합니다. 이를 통해 JCR 액세스 제어를 사용하고, REST 원칙을 준수하고, 요청에서 제공되는 리소스 및 리소스 확인자를 사용할 수 있습니다. 또한 클라이언트측의 URL을 변경할 필요 없이 서버측의 URL을 렌더링하는 스크립트를 변경할 수 있도록 해주며, 추가 보안을 위해 클라이언트측의 서버측 구현 세부 정보를 숨길 수 있습니다.
 
 ### 새 노드 유형을 정의하지 마십시오 {#avoid-defining-new-node-types}
 

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6036'
-ht-degree: 38%
+source-wordcount: '6026'
+ht-degree: 37%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 38%
 
 >[!CAUTION]
 >
->이 섹션에서는 표준 AEM 설치에서 즉시 사용할 수 있는 구성 요소에 대해서만 설명합니다.
+>이 섹션에서는 표준 AEM 설치 시 기본적으로 사용할 수 있는 구성 요소에 대해서만 설명합니다.
 >
 >인스턴스에 따라 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 정의했을 수 있습니다. 이러한 맞춤형 구성 요소는 여기에서 설명한 일부 구성 요소와 동일한 이름을 가질 수도 있습니다.
 
@@ -95,7 +95,7 @@ ht-degree: 38%
 
 #### 속성 {#properties}
 
-이 대화 상자에서는 응용 이미지 구성 요소의 인스턴스에 대한 속성을 편집할 수 있습니다. 많은 응용 이미지 구성 요소는 기반이 되는 이미지 구성 요소와 공통입니다. 속성은 다음 두 가지 탭에서 사용할 수 있습니다.
+이 대화 상자를 통해 응용 이미지 구성 요소의 인스턴스에 대한 속성을 편집할 수 있습니다. 이 속성 중 대부분은 기반이 되는 이미지 구성 요소와 공통입니다. 속성은 다음 두 가지 탭에서 사용할 수 있습니다.
 
 * **이미지**
 
@@ -194,7 +194,7 @@ QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있
 >
 >AEM DAM에 디지털 에셋을 표시하는 Adobe Experience Manager용 사용자 지정 회전 메뉴 구성 요소를 만들 수 있습니다.
 
-### Chart {#chart}
+### 차트 {#chart}
 
 차트 구성 요소를 사용하여 막대, 선 또는 원형 차트를 추가할 수 있습니다. AEM은 사용자가 제공하는 데이터에서 차트를 생성합니다. 데이터 탭에 직접 입력하거나 스프레드시트를 복사하여 붙여 넣어 데이터를 제공합니다.
 
@@ -530,7 +530,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 `.../jcr:content/par/<paragraph-ID>`
 
-예:
+예를 들면 다음과 같습니다.
 
 `/content/geometrixx-outdoors/en/equipment/biking/cajamara/jcr:content/par/similar-products`
 
@@ -538,7 +538,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 `/jcr:content/par`
 
-예:
+예를 들면 다음과 같습니다.
 
 `/content/geometrixx-outdoors/en/equipment/biking/cajamara/jcr:content/par`
 
@@ -873,7 +873,7 @@ Forms은 다음과 같은 몇 가지 구성 요소로 구성됩니다.
 
 * **제목 및 텍스트**
 
-  여기에서 양식 제목 및 관련 텍스트와 같은 기본 정보를 지정해야 합니다. 또한 해당하는 경우 필드를 다중 선택 가능한지 여부와 선택 가능한 항목 등 다른 키 정보를 정의할 수 있습니다.
+  여기에서 양식 제목 및 관련 텍스트와 같은 기본 정보를 지정해야 합니다. 또한 해당하는 경우 필드를 다중 선택 가능한지 여부, 선택 가능한 항목 등과 같은 다른 키 정보를 정의할 수 있습니다.
 
 * **초기값**
 
@@ -1189,7 +1189,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 ### 확인란 그룹 {#checkbox-group}
 
-확인란을 사용하여 동시에 선택 가능한 하나 이상의 확인란으로 구성된 목록을 만들 수 있습니다.
+확인란을 사용하여 동시에 선택할 수 있는 하나 이상의 확인란 목록을 작성할 수 있습니다.
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
@@ -1294,7 +1294,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 ### 제출 버튼 {#submit-button}
 
-이 구성 요소로 다음과 같은 기본 텍스트를 갖는 전송 단추를 만들 수 있습니다.
+이 구성 요소를 사용하여 기본 텍스트 중 하나를 사용하는 제출 단추를 만들 수 있습니다.
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 
@@ -1304,7 +1304,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 ### 태그 필드 {#tags-field}
 
-이 필드에서 태그를 선택할 수 있습니다.
+이 필드에서는 태그를 선택할 수 있습니다.
 
 ![dc_form_tags_use](assets/dc_form_tags_use.png)
 

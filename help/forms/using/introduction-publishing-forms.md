@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 0%
+source-wordcount: '1050'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -50,7 +50,7 @@ AEM Forms은 다음과 같은 포털 구성 요소를 즉시 제공하며 **문�
 
 ### Search &amp; Lister {#search-amp-lister}
 
-검색 및 목록 구성 요소를 사용하면 양식 저장소에서 포털 페이지로 양식을 나열할 수 있고 지정된 기준에 따라 양식을 나열하는 구성 옵션을 제공할 수 있습니다. 또한 포털 사용자가 양식 목록에서 검색할 수 있도록 검색 조건을 지정할 수 있습니다.
+검색 및 목록 구성 요소를 사용하면 양식 저장소의 양식을 포털 페이지에 나열할 수 있고 지정된 기준에 따라 양식을 나열하는 구성 옵션을 제공할 수 있습니다. 또한 포털 사용자가 양식 목록에서 검색할 수 있도록 검색 조건을 지정할 수 있습니다.
 
 ### 초안 및 제출 {#drafts-amp-submissions}
 

@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1735'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 에서 관리자 액세스 권한이 있는 사용자 [!DNL Adobe Experience Manager] 향상된 커넥터를 설치한 후 구성합니다. 설치에 대한 지침은 [커넥터 설치](/help/assets/workfront-integrations.md).
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 이러한 기능을 사용하려면 이벤트 구독을 활성화하십시오.
 
-* 편집 [!UICONTROL Workfront 도구] 5단계에서 생성한 Cloud Services 구성을 선택하고 [!UICONTROL 이벤트 구독] 탭.
+* 편집 [!UICONTROL Workfront 도구] 5단계에서 생성한 Cloud Service 구성을 선택하고 [!UICONTROL 이벤트 구독] 탭.
 * 다음 항목 선택 [!UICONTROL Workfront 사용자 정의 통합] 섹션 6에서 을(를) 만들었습니다.
 * 클릭 [!UICONTROL Workfront 이벤트 구독 활성화].
 
@@ -110,7 +110,7 @@ Adobe Workfront 문서와 에셋 간의 메타데이터 매핑은 AEM 메타데�
 
 ## 맵 속성 {#map-property}
 
-이 워크플로 단계에서는 사용자가 속성에 속성을 매핑할 수 있습니다. [!DNL Workfront] 프로젝트, 작업, 문제 또는 문서의 사용자 정의 양식입니다. 다음 [!DNL Workfront] 이 단계가 영향을 주는 아티팩트는 페이로드의 상대 경로를 사용하여 조회됩니다. 매핑될 속성은 단계 대화 상자 구성 내에서 제어됩니다.
+이 워크플로 단계에서는 사용자가 속성에 속성을 매핑할 수 있습니다. [!DNL Workfront] 프로젝트, 작업, 문제 또는 문서의 사용자 정의 양식. 다음 [!DNL Workfront] 이 단계가 영향을 주는 아티팩트는 페이로드의 상대 경로를 사용하여 조회됩니다. 매핑될 속성은 단계 대화 상자 구성 내에서 제어됩니다.
 
 **유형**: 이 필드에서는 속성을 매핑해야 하는 Workfront 오브젝트 유형을 선택할 수 있습니다.
 
@@ -148,7 +148,7 @@ Adobe Workfront 문서와 에셋 간의 메타데이터 매핑은 AEM 메타데�
 
 ## 주석 동기화 {#comments-sync}
 
-1. 위치 [!DNL Experience Manager], 액세스 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;을 클릭하고 구성을 선택한 다음 을 선택합니다 **[!UICONTROL 속성]**.
+1. 위치 [!DNL Experience Manager], 액세스 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;을 클릭하고 구성을 선택한 다음 을 선택합니다 **[!UICONTROL 속성]**.
 
    ![댓글 동기화](/help/assets/assets/comments-sync1.png)
 
@@ -168,7 +168,7 @@ Workfront에서 AEM으로의 주석 동기화를 테스트하려면 다음 단�
 
 AEM에서 에셋의 버전 기록을 유지 관리하려면 AEM에서 에셋 버전 관리를 구성합니다.
 
-1. Experience Manager에서 액세스 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;를 클릭하고 **[!UICONTROL 고급]** 탭.
+1. Experience Manager에서 액세스 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;를 클릭하고 **[!UICONTROL 고급]** 탭.
 
 1. 옵션 선택 **[!UICONTROL 기존 에셋의 버전과 동일한 이름으로 에셋 저장]**. 선택하면 이 옵션을 사용하여 업로드된 에셋을 기존 에셋 버전과 동일한 위치에 저장할 수 있습니다. 선택하지 않으면 다른 이름으로 새 에셋이 만들어집니다(예: `asset-name.pdf` 및 `asset-name-1.pdf`).
 
@@ -190,7 +190,7 @@ Experience Manager의 워크플로 편집기에서 [!UICONTROL Workfront - 사�
 
 ## 자산 자동 게시 {#auto-publish-assets}
 
-1. Experience Manager에서 액세스 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;를 클릭하고 **[!UICONTROL 고급]** 탭.
+1. Experience Manager에서 액세스 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront 도구 구성]**&#x200B;를 클릭하고 **[!UICONTROL 고급]** 탭.
 
 1. 선택 **[!UICONTROL Workfront에서 전송할 때 자산 자동 게시]**. 이 옵션을 사용하면 Workfront에서 AEM으로 에셋을 전송할 때 에셋을 자동으로 게시할 수 있습니다. 이 기능은 Workfront 사용자 정의 양식 필드 및 설정해야 하는 값을 지정하여 조건부로 활성화할 수 있습니다. 문서가 AEM으로 전송될 때마다 해당 조건을 충족하면 자산이 자동으로 게시됩니다.
 

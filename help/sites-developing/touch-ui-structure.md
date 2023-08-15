@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 3%
 
 ---
@@ -134,7 +134,7 @@ Adobe은 두 가지 스타일을 만들지 않고 모든 화면과 장치에 적
 레이어는 활성화할 수 있는 독립적인 기능 번들입니다.
 
 * 페이지의 다른 보기 제공
-* 페이지를 조작 및/또는 상호 작용할 수 있도록 허용
+* 페이지를 조작하거나 페이지와 상호 작용할 수 있습니다
 
 레이어는 개별 구성 요소에 대한 특정 작업과 달리 전체 페이지에 정교한 기능을 제공합니다.
 

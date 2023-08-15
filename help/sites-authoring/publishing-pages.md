@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1662'
 ht-degree: 75%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 75%
 
    ![pp-02-1](assets/pp-02-1.png)
 
-1. **게시 관리** 마법사가 시작됩니다. 첫 번째 단계인 **옵션**&#x200B;에서 다음 작업을 수행할 수 있습니다.
+1. **게시 관리** 마법사가 시작됩니다. 첫 번째 단계, **옵션**&#x200B;를 사용하면 다음 작업을 수행할 수 있습니다.
 
    * 선택한 페이지를 게시하거나 게시 취소하도록 선택합니다.
    * 지금 또는 나중에 해당 작업을 수행하도록 선택합니다.

@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3584'
+source-wordcount: '3582'
 ht-degree: 2%
 
 ---
@@ -844,7 +844,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
       * 양식 워크플로우
       * 프로젝트
       * WCM 워크플로우
-      * 워크플로우
+      * 워크플로
 
    ![wf-35](assets/wf-35.png)
 
@@ -856,7 +856,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
    ![wf-37](assets/wf-37.png)
 
-   없는 경우 `cq:icon` 이 단계에 대해 정의된 경우, 기본 아이콘은 제목의 처음 두 문자를 사용하여 렌더링됩니다. 예:
+   없는 경우 `cq:icon` 이 단계에 대해 정의된 경우, 기본 아이콘은 제목의 처음 두 문자를 사용하여 렌더링됩니다. 예를 들면 다음과 같습니다.
 
    ![wf-38](assets/wf-38.png)
 
@@ -892,7 +892,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
 1. 노드에서 속성 구성 `cq:listeners`.
 
-   다음 `cq:listener` 노드 및 해당 속성을 사용하면 터치 지원 UI 모델 편집기의 이벤트에 반응하는 이벤트 처리기를 설정할 수 있습니다(예: 단계를 모델 페이지로 드래그하거나 단계 속성 편집).
+   다음 `cq:listener` 노드 및 해당 속성을 사용하면 터치 사용 UI 모델 편집기의 이벤트에 반응하는 이벤트 처리기를 설정할 수 있습니다. 예를 들어, 단계를 모델 페이지로 드래그하거나 단계 속성을 편집할 수 있습니다.
 
    **관심 있는 속성:**
 
@@ -1034,7 +1034,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >
 >하지만 AEM에는 [현대화 도구](/help/sites-developing/modernization-tools.md) 클래식 UI 단계 대화 상자를 표준 UI 대화 상자로 업그레이드하려는 경우 변환 후에도 특정 경우에 대해 대화 상자에 수행할 수 있는 몇 가지 수동 개선 사항이 있습니다.
 >
->* 업그레이드된 대화 상자가 비어 있는 경우에서 대화 상자를 볼 수 있습니다 `/libs` 솔루션을 제공하는 방법의 예제와 유사한 기능을 갖추고 있습니다. 예:
+>* 업그레이드된 대화 상자가 비어 있는 경우에서 대화 상자를 볼 수 있습니다 `/libs` 솔루션을 제공하는 방법의 예제와 유사한 기능을 갖추고 있습니다. 예를 들면 다음과 같습니다.
 >
 >* `/libs/cq/workflow/components/model`
 >* `/libs/cq/workflow/components/workflow`

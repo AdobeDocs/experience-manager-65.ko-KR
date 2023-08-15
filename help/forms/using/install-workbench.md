@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2231'
 ht-degree: 0%
 
 ---
@@ -158,11 +158,13 @@ Workbench를 설치하기 전에 환경에 Workbench를 실행하는 데 필요�
 1. (선택 사항) 양식을 만들고 수정하는 데 이 도구가 필요한 경우 Adobe 디자이너 설치를 선택합니다.
 
    >[!NOTE]
+   >
    이 옵션을 선택 취소하여 Acrobat 10과 함께 설치된 디자이너를 계속 사용할 수 있습니다.
 
 1. 나열된 기본 디렉터리를 그대로 사용하거나 [선택]을 클릭하고 Workbench를 설치할 디렉터리로 이동한 후 [다음]을 클릭합니다.
 
    >[!NOTE]
+   >
    설치 디렉토리 경로에는 #(파운드) 및 $(달러) 문자를 사용할 수 없습니다.
 
 1. 사전 설치 요약을 검토하고 설치 를 클릭합니다. 설치 프로그램에 설치 진행률이 표시됩니다.
@@ -182,6 +184,7 @@ Workbench를 설치하기 전에 환경에 Workbench를 실행하는 데 필요�
 Workbench를 사용하려면 일반적으로 별도의 컴퓨터에서 실행 중인 AEM Forms 인스턴스가 있어야 합니다. AEM Forms에 로그온하려면 사용자 이름 및 암호와 서버 위치에 대한 세부 정보가 있어야 합니다.
 
 >[!NOTE]
+>
 EMC Documentum® 또는 IBM® FileNet 저장소 공급자를 사용하도록 AEM Forms을 구성한 경우 AEM Forms 관리 콘솔에서 기본값으로 구성된 저장소 이외의 저장소에 로그인하려면 사용자 이름을 username@Repository으로 입력합니다.
 
 ### 시간 초과 설정 구성 {#configuring-timeout-settings}
@@ -193,6 +196,7 @@ EMC Documentum® 또는 IBM® FileNet 저장소 공급자를 사용하도록 AEM
 HTTPS를 통해 Workbench를 AEM Forms 서버에 연결하려면 공개 키를 발급한 인증 기관(CA)이 Workbench에서 신뢰되는 것으로 인식되는지 확인해야 합니다. 인증서가 신뢰할 수 있는 소스에서 온 것으로 인식되지 않는 경우 [Workbench_HOME]/workbench/jre/lib/security 디렉터리.
 
 >[!NOTE]
+>
 [Workbench_HOME] Workbench를 설치한 디렉토리를 나타냅니다. 기본 위치는 C:\Program Files (x86)\Adobe Experience Manager forms Workbench입니다.
 
 인증서에 지정된 이름을 사용하여 HTTPS에 연결해야 합니다. 이 이름은 일반적으로 정규화된 호스트 이름입니다.
@@ -201,6 +205,7 @@ HTTPS를 통해 Workbench를 AEM Forms 서버에 연결하려면 공개 키를 �
 1. SSL(Secure Sockets Layer) 인증서 사본이 있는지 확인합니다. SSL 서버를 구성한 관리자에게 문의하거나 웹 브라우저를 사용하여 인증서를 내보냅니다.
 
    >[!NOTE]
+   >
    인증서를 내보내려면 웹 브라우저를 열고 관리 콘솔에 로그인하고 브라우저에 인증서를 설치한 다음 브라우저에서 임시 저장소 위치로(또는 로 직접) 인증서를 내보냅니다. [Workbench_HOME]/workbench/jre/lib/security directory).
 
 1. 에 인증서 복사 [Workbench_HOME]/workbench/jre/lib/security 디렉터리.
@@ -226,8 +231,8 @@ HTTPS를 통해 Workbench를 AEM Forms 서버에 연결하려면 공개 키를 �
 * **타임스탬프**: 템플릿 파일에는 양식의 마지막 업데이트 시간을 결정하는 데 사용되는 타임스탬프가 포함되어 있습니다.
 * **템플릿 UUID**: 디자이너가 양식 및 해당 버전에 대한 고유 식별자(UUID)를 각 템플릿에 삽입합니다. 양식이 업데이트될 때마다 임베드된 UUID가 업데이트됩니다. 예를 들어 XDP 템플릿은 다음 콘텐츠를 표시할 수 있습니다.
 
-   `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
+  `<?xml version="1.0" encoding="UTF-8"?>`
+  `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **렌더링 옵션**: 렌더링된 양식 캐시 내에서 캐시 콘텐츠는 각각의 고유한 렌더링 옵션 세트에 대해 별도로 저장됩니다.
 

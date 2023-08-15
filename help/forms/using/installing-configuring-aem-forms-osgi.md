@@ -10,9 +10,9 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1881'
 ht-degree: 10%
 
 ---
@@ -33,7 +33,7 @@ AEM Forms은 강력한 엔터프라이즈급 플랫폼이며 데이터 캡처(�
 
 ## 배포 토폴로지 {#deployment-topology}
 
-AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. AEM Forms 데이터 캡처 기능을 실행하려면 최소 1개의 AEM 작성자 및 AEM 게시 인스턴스만 있으면 됩니다. AEM Forms AEM Forms 데이터 캡처 기능을 실행하려면 다음 토폴로지를 사용하는 것이 좋습니다. 토폴로지에 대한 자세한 내용은 [AEM Forms의 아키텍처 및 배포 토폴로지](/help/forms/using/aem-forms-architecture-deployment.md).
+AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. AEM Forms 데이터 캡처 기능을 실행하려면 AEM Author 및 AEM Publish 인스턴스가 최소 하나만 필요합니다. AEM Forms AEM Forms 데이터 캡처 기능을 실행하려면 다음 토폴로지를 사용하는 것이 좋습니다. 토폴로지에 대한 자세한 내용은 [AEM Forms의 아키텍처 및 배포 토폴로지](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![recommended-topology](assets/recommended-topology.png)
 
@@ -100,7 +100,6 @@ AEM Forms의 데이터 캡처 기능을 설치하고 구성하기 전에 다음�
 >* libcurl, libcrypto.so 및 libssl.so의 최신 버전을 각각 지정하는 심볼릭 링크를 만듭니다.
 >
 
-
 * 설치 미디어에서 다음 64비트 패키지를 설치합니다.
 
    * 리비쿠
@@ -154,7 +153,7 @@ AEM Forms에는 몇 가지 필수 구성과 선택적 구성이 있습니다. �
 모든 작성자 및 게시 인스턴스에서 다음 단계를 수행하여 라이브러리를 부팅합니다.
 
 1. 기본 AEM 인스턴스를 중지합니다.
-1. 를 엽니다. `[AEM installation directory]\crx-quickstart\conf\sling.properties` 편집할 파일입니다.
+1. 편집할 `[AEM installation directory]\crx-quickstart\conf\sling.properties` 페이지를 엽니다.
 
    을 사용한 경우 `[AEM installation directory]\crx-quickstart\bin\start.bat` AEM을 시작한 다음, 의 sling.properties를 편집합니다. `[AEM_root]\crx-quickstart\`.
 

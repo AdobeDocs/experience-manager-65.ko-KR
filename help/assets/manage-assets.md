@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 0afd721ff02f2c9abeed40c4b8f4fdf169523c35
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '10068'
+source-wordcount: '10067'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 위치 [!DNL Adobe Experience Manager Assets], 에셋을 저장하고 제어하는 것 이상의 작업을 수행할 수 있습니다. [!DNL Experience Manager] 는 엔터프라이즈급 자산 관리 기능을 제공합니다. 에셋을 편집 및 공유하고, 고급 검색을 실행하고, 수십 개의 지원되는 파일 형식의 여러 렌디션을 만들 수 있습니다. 또한 버전 및 디지털 권한을 관리하고, 에셋 처리를 자동화하고, 메타데이터를 관리 및 관리하며, 주석을 사용하여 공동 작업을 수행할 수도 있습니다.
@@ -212,7 +212,7 @@ Dynamic Media을 사용하면 FTP 서버를 통해 에셋을 일괄 업로드할
 | | 자르기 옵션 | 이미지의 측면에서 수동으로 자르려면 [자르기] 메뉴를 선택하고 [수동]을 선택합니다. 그런 다음 이미지의 모든 면 또는 각 면에서 자를 픽셀 수를 입력합니다. 이미지가 잘리는 정도는 이미지 파일의 ppi(인치당 픽셀) 설정에 따라 달라집니다. 예를 들어, 이미지에 150ppi가 표시되고 [위쪽], [오른쪽], [아래쪽] 및 [왼쪽] 텍스트 상자에 75를 입력하면 각 면에서 1/2인치가 잘립니다.<br> 이미지에서 공백 픽셀을 자동으로 자르려면 [자르기] 메뉴를 열고 [수동]을 선택한 다음 [위쪽], [오른쪽], [아래쪽] 및 [왼쪽] 필드에 픽셀 측정값을 입력하여 측면에서 자릅니다. 자르기 메뉴에서 트림을 선택하고 다음 옵션을 선택할 수도 있습니다.<br> **다음을 기준으로 트림** <ul><li>**색상** - 색상 옵션을 선택합니다. 그런 다음 [모퉁이] 메뉴를 선택하고 자르려는 공백 색상을 가장 잘 나타내는 색상으로 이미지의 모퉁이를 선택합니다.</li><li>**투명도** - 투명도 옵션을 선택합니다.<br> **허용 오차** - 슬라이더를 드래그하여 0 - 1 사이의 공차를 지정합니다. 색상에 따라 트리밍하려면 0을 지정하여 이미지의 모퉁이에서 선택한 색상과 정확히 일치하는 경우에만 픽셀을 자릅니다. 1에 가까운 숫자를 사용하면 더 많은 색상 차이를 사용할 수 있습니다.<br>투명도를 기준으로 트리밍하려면 0을 지정하여 픽셀이 투명한 경우에만 자를 수 있습니다. 숫자가 1에 가까울수록 투명도가 높아집니다.</li></ul><br>이러한 자르기 옵션은 비파괴적입니다. |
 | | 색상 프로파일 옵션 | 게재에 사용되는 최적화된 파일을 만들 때 색상 변환을 선택합니다.<ul><li>기본 색상 보존: 이미지에 색상 공간 정보가 포함될 때마다 소스 이미지 색상이 유지되며 색상 변환은 없습니다. 오늘날 거의 모든 이미지에는 해당 색상 프로파일이 이미 포함되어 있습니다. 그러나 CMYK 소스 이미지에 포함된 색상 프로파일이 없는 경우에는 색상이 sRGB(표준 빨강 녹색 파랑) 색상 공간으로 변환됩니다. sRGB는 웹 페이지에 이미지를 표시하는 데 권장되는 색상 공간입니다.</li><li>원본 색상 공간 유지: 지점에서 색상 변환 없이 원본 색상을 유지합니다. 포함된 색상 프로파일이 없는 이미지의 경우 [제작] 설정에서 구성한 기본 색상 프로파일을 사용하여 모든 색상 변환이 수행됩니다. 이 옵션을 사용하여 만든 파일의 색상과 색상 프로파일이 일치하지 않을 수 있습니다. 따라서 [기본 색상 보존] 옵션을 사용하는 것이 좋습니다.</li><li>사용자 지정 시작 > 종료<br> [변환]과 [색상 공간으로 변환]을 선택할 수 있는 메뉴를 엽니다. 이 고급 옵션은 소스 파일에 포함된 모든 색상 정보를 무시합니다. 제출하는 모든 이미지에 잘못되거나 누락된 색상 프로파일 데이터가 포함된 경우 이 옵션을 선택합니다.</li></ul> |
 | | 이미지 편집 옵션 | 이미지에서 클리핑 마스크를 유지하고 색상 프로파일을 선택할 수 있습니다.<br> 다음을 참조하십시오 [업로드 시 이미지 편집 옵션 설정](#setting-image-editing-options-at-upload). |
-| | Postscript 옵션 | PostScript ® 파일을 래스터화하고, 파일을 자르고, 투명한 배경을 유지하고, 해상도를 선택하고, 색상 공간을 선택할 수 있습니다.<br> 다음을 참조하십시오 [포스트스크립트 및 Illustrator 업로드 옵션 설정](#setting-postscript-and-illustrator-upload-options). |
+| | Postscript 옵션 | PostScript® 파일을 래스터화하고, 파일을 자르고, 투명한 배경을 유지하고, 해상도를 선택하고, 색상 공간을 선택할 수 있습니다.<br> 다음을 참조하십시오 [포스트스크립트 및 Illustrator 업로드 옵션 설정](#setting-postscript-and-illustrator-upload-options). |
 | | Photoshop 옵션 | Adobe® Photoshop® 파일에서 템플릿을 만들고, 레이어를 유지하고, 레이어 이름 지정 방법을 지정하고, 텍스트를 추출하고, 이미지가 템플릿에 고정되는 방법을 지정할 수 있습니다.<br> 템플릿은에서 지원되지 않습니다. [!DNL Experience Manager].<br> 다음을 참조하십시오 [Photoshop 업로드 옵션 설정](#setting-photoshop-upload-options). |
 | | PDF 옵션 | 파일을 래스터화하고, 검색어와 링크를 추출하고, eCatalog를 자동 생성하고, 해상도를 설정하고, 색상 공간을 선택할 수 있습니다.<br>전자 카탈로그는 다음에서 지원되지 않습니다. [!DNL Experience Manager]. <br> 다음을 참조하십시오 [PDF 업로드 옵션 설정 중](#setting-pdf-upload-options).<br>**참고**: 추출할 PDF의 최대 페이지 수는 새 업로드의 경우 5000페이지입니다. 이 제한은 2022년 12월 31일에 100페이지(모든 PDF에 대해)로 변경됩니다. 참조: [Dynamic Media 제한 사항](/help/assets/limitations.md). |
 | | Illustrator 옵션 | Adobe Illustrator® 파일을 래스터화하고 투명한 배경을 유지하며 해상도를 선택하고 색상 공간을 선택할 수 있습니다.<br> 다음을 참조하십시오 [포스트스크립트 및 Illustrator 업로드 옵션 설정](#setting-postscript-and-illustrator-upload-options). |
@@ -352,7 +352,7 @@ Adobe Experience Manager에 많은 에셋을 업로드하는 경우 서버에 �
 * 두 개의 ZIP 파일을 동시에 선택하고 추출할 수 없습니다. ZIP 아카이브를 한 번에 하나만 추출할 수 있습니다.
 * ZIP 아카이브를 업로드할 때 업로드 대화 상자에 500 서버 오류가 표시되면 설치 후 다시 시도하십시오 [최신 서비스 팩](/help/release-notes/release-notes.md).
 
-## 에셋 미리보기 {#previewing-assets}
+## 자산 미리보기 {#previewing-assets}
 
 에셋을 미리 보려면 다음 단계를 수행합니다.
 

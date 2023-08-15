@@ -4,10 +4,10 @@ description: AEM Multi Site Manager를 시작하고 실행하는 데 도움이 �
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 42%
+source-wordcount: '1614'
+ht-degree: 41%
 
 ---
 
@@ -186,7 +186,7 @@ MSM 롤아웃 구성은 맞춤화가 매우 용이합니다. 롤아웃을 자동
 
 주의 사항:
 
-* MSM을 사용하면 롤아웃 작업 외에도 롤아웃되는 노드 속성을 맞춤화할 수 있습니다. 다음 [MSM OSGi 구성을 통해 노드 유형을 제외할 수 있습니다](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) 소스에서 라이브 카피로 복사됩니다.
+* MSM을 사용하면 롤아웃 작업 외에도 롤아웃되는 노드 속성을 맞춤화할 수 있습니다. 다음 [MSM OSGi 구성을 사용하여 노드 유형을 제외할 수 있습니다](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) 소스에서 라이브 카피로 복사됩니다.
 
 ## 추가 정보 {#further-information}
 

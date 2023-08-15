@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2244'
 ht-degree: 25%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 25%
 >* 스마트 컨텐츠 서비스를 더 이상 새 사용자에게 제공할 수 없습니다. [!DNL Experience Manager Assets] On-Premise 고객 이미 이 기능이 활성화되어 있는 기존 온-프레미스 고객은 스마트 컨텐츠 서비스를 계속 사용할 수 있습니다.
 >* 스마트 컨텐츠 서비스는 기존 서비스에 사용할 수 있습니다 [!DNL Experience Manager Assets] 이 기능이 이미 활성화되어 있는 Managed Services 고객.
 >* 신규 [!DNL Experience Manager Assets] Managed Services 고객은 이 문서에 나열된 지침에 따라 스마트 컨텐츠 서비스를 설정할 수 있습니다.
-
 
 스마트 컨텐츠 서비스를 사용하기 전에 다음을 확인하십시오.
 
@@ -48,11 +47,11 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
 ### 스마트 컨텐츠 서비스 구성을 만들어 공개 인증서 받기 {#obtain-public-certificate}
 
-공개 인증서를 사용하면 Adobe 개발자 콘솔에서 프로필을 인증할 수 있습니다.
+공개 인증서를 사용하면 Adobe Developer 콘솔에서 프로필을 인증할 수 있습니다.
 
-1. 다음에서 [!DNL Experience Manager] 사용자 인터페이스, 액세스 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL 이전 Cloud Services]**.
+1. 다음에서 [!DNL Experience Manager] 사용자 인터페이스, 액세스 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 이전 Cloud Service]**.
 
-1. Cloud Services 페이지에서 **[!UICONTROL 지금 구성]** 아래에 **[!UICONTROL 에셋 스마트 태그]**.
+1. Cloud Service 페이지에서 **[!UICONTROL 지금 구성]** 아래에 **[!UICONTROL 에셋 스마트 태그]**.
 
 1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자에서 스마트 태그 구성의 제목과 이름을 지정합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -137,7 +136,7 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
 통합을 구성하려면 다음 값을 사용합니다. [!UICONTROL 기술 계정 ID], [!UICONTROL 조직 ID], [!UICONTROL 클라이언트 암호], 및 [!UICONTROL 클라이언트 ID] Adobe Developer 콘솔 통합의 필드입니다. 스마트 태그 클라우드 구성을 만들면 [!DNL Experience Manager] 배포.
 
-1. 위치 [!DNL Experience Manager], 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 이전 Cloud Services]** 을(를) 열려면 [!UICONTROL Cloud Services] 콘솔.
+1. 위치 [!DNL Experience Manager], 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 이전 Cloud Service]** 을(를) 열려면 [!UICONTROL Cloud Service] 콘솔.
 
 1. 아래 **[!UICONTROL 에셋 스마트 태그]**&#x200B;위에서 만든 구성을 엽니다. 서비스 설정 페이지에서 **[!UICONTROL 편집]**.
 
@@ -160,9 +159,9 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]** OSGi 콘솔을 엽니다. 클릭 **[!UICONTROL 기본] > [!UICONTROL JMX]**.
 
-1. 클릭 `com.day.cq.dam.similaritysearch.internal.impl`. 열림 **[!UICONTROL 유사성기타 작업 검색]**.
+1. `com.day.cq.dam.similaritysearch.internal.impl`를 클릭합니다. 열림 **[!UICONTROL 유사성기타 작업 검색]**.
 
-1. 클릭 `validateConfigs()`. 다음에서 **[!UICONTROL 구성 유효성 검사]** 대화 상자, 클릭 **[!UICONTROL 호출]**.
+1. `validateConfigs()`를 클릭합니다. 다음에서 **[!UICONTROL 구성 유효성 검사]** 대화 상자, 클릭 **[!UICONTROL 호출]**.
 
 유효성 검사 결과는 동일한 대화 상자에 표시됩니다.
 
@@ -301,4 +300,3 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 >
 >* [스마트 태그 개요 및 교육 방법](enhanced-smart-tags.md)
 >* [스마트 태그에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
-

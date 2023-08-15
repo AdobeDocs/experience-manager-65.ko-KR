@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 13%
+source-wordcount: '404'
+ht-degree: 17%
 
 ---
 
 # 사용자 지정 클라우드 서비스 만들기{#creating-a-custom-cloud-service}
 
-사용자 지정 Cloud Service 유형을 사용하여 기본 Cloud Services 세트를 확장할 수 있습니다. 이렇게 하면 사용자 지정 마크업을 구조화된 방식으로 페이지에 삽입할 수 있습니다. 이는 주로 Google Analytics, Chartbeat 등과 같은 서드파티 분석 공급자에게 사용됩니다. Cloud Services은 상위 페이지에서 하위 페이지로 상속되며, 어떤 수준에서든 상속을 중단할 수 있습니다.
+사용자 지정 Cloud Service 유형을 사용하여 기본 Cloud Services 세트를 확장할 수 있습니다. 이렇게 하면 사용자 지정 마크업을 구조화된 방식으로 페이지에 삽입할 수 있습니다. 이는 주로 Google Analytics, Chartbeat 등과 같은 서드파티 분석 공급자에게 사용됩니다. Cloud Service은 상위 페이지에서 하위 페이지로 상속되며, 어떤 수준에서든 상속을 중단할 수 있습니다.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 13%
    * **이름**: 템플릿
    * **유형**: `sling:Folder`
 
-1. 마우스 오른쪽 단추 클릭 `/apps/acs/analytics/components`. 선택 **만들기...** 뒤에 오는 **구성 요소 만들기...** 열리는 대화 상자에서 다음을 지정할 수 있습니다.
+1. 마우스 오른쪽 단추 클릭 `/apps/acs/analytics/components`. 선택 **만들기...** 뒤에 오는 **구성 요소 만들기...** 열리는 대화 상자를 통해 다음을 지정할 수 있습니다.
 
    * **레이블**: `googleanalyticspage`
    * **제목**: `Google Analytics Page`
@@ -209,5 +209,5 @@ ht-degree: 13%
    선택 **Google Analytics 구성** 및 클릭 **만들기**.
 
 1. 다음을 입력하십시오. **계정 ID**, 예 `AA-11111111-1`. **확인**&#x200B;을 클릭합니다.
-1. 페이지로 이동하여 페이지 속성 아래의 새로 만든 구성을 추가합니다. **Cloud Services** 탭.
+1. 페이지로 이동하여 페이지 속성 아래의 새로 만든 구성을 추가합니다. **Cloud Service** 탭.
 1. 페이지에 사용자 지정 마크업이 추가됩니다.

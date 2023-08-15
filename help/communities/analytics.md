@@ -12,9 +12,9 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2694'
+source-wordcount: '2693'
 ht-degree: 4%
 
 ---
@@ -68,23 +68,23 @@ Analytics for Communities 기능을 구성하려면 계정 담당자와 협력�
 
 * **회사 이름**
 
-   Adobe Analytics 계정과 연결된 회사입니다.
+  Adobe Analytics 계정과 연결된 회사입니다.
 
 * **사용자 이름**
 
-   Analytics 계정을 관리할 권한이 있는 사용자의 로그인 사용자 이름(웹 서비스 액세스 권한을 포함해야 함)입니다.
+  Analytics 계정을 관리할 권한이 있는 사용자의 로그인 사용자 이름(웹 서비스 액세스 권한을 포함해야 함)입니다.
 
 * **암호**
 
-   승인된 사용자의 로그인 암호입니다.
+  승인된 사용자의 로그인 암호입니다.
 
 * **Analytics 데이터 센터**
 
-   계정용 Analytics 데이터 센터 URL.
+  계정용 Analytics 데이터 센터 URL.
 
 * **보고서 세트**
 
-   사용할 Analytics 보고서 세트의 이름입니다.
+  사용할 Analytics 보고서 세트의 이름입니다.
 
 ## 비디오 보고를 위한 Adobe Analytics 보고서 세트 {#adobe-analytics-report-suite-for-video-reporting}
 
@@ -105,8 +105,8 @@ Adobe Marketing Cloud 사용 [보고서 세트 관리자](https://experienceleag
    * 유형 **`Counter`**
 
       * 아님 **`Counter (no subrelations)`**
-   * 기존 이벤트를 용도 변경(이름 변경)하거나 커뮤니티 기능에 사용할 새 이벤트를 만들 수 있음
 
+   * 기존 이벤트를 용도 변경(이름 변경)하거나 커뮤니티 기능에 사용할 새 이벤트를 만들 수 있음
 
 * [비디오 관리](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
@@ -114,11 +114,11 @@ Adobe Marketing Cloud 사용 [보고서 세트 관리자](https://experienceleag
 
       * 사용 `Video Core`
       * 저장을 선택합니다
+
    * 비디오 코어 측정 콘솔
 
       * 선택 `Use Solution Variables`
       * 저장을 선택합니다
-
 
 를 사용하는 경우 **새 보고서 세트**, 새 보고서 세트에는 4개의 evar와 6개의 이벤트 변수만 있을 수 있지만 커뮤니티에는 11개의 evar와 7개의 이벤트 변수가 필요합니다.
 
@@ -162,7 +162,7 @@ Video Heartbeat Analytics에 라이센스가 있으면 `Marketing Cloud Org Id` 
 
 작성자 인스턴스의 표준 UI를 사용하여 Adobe Analytics을 AEM 커뮤니티 사이트와 통합하는 새 Analytics 통합을 만들려면 다음 작업을 수행하십시오.
 
-* 전역 탐색에서: **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**
+* 전역 탐색에서: **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service]**
 * 아래로 스크롤하여 **[!UICONTROL Adobe Analytics]**
 * 선택 **[!UICONTROL 지금 구성]** 또는 **[!UICONTROL 구성 표시]**
 
@@ -178,17 +178,17 @@ Video Heartbeat Analytics에 라이센스가 있으면 `Marketing Cloud Org Id` 
 
 * **제목**
 
-   (필수) 구성의 표시 제목입니다.
-예를 들어 다음을 입력합니다. *커뮤니티 분석*
+  (필수) 구성의 표시 제목입니다.
+예를 들어, 을 입력합니다. *커뮤니티 분석*
 
 * **이름**
 
-   (선택 사항) 지정하지 않으면 기본적으로 이 이름은 제목에서 파생된 올바른 노드 이름으로 설정됩니다.
-예를 들어 다음을 입력합니다. *커뮤니티*
+  (선택 사항) 지정하지 않으면 기본적으로 이 이름은 제목에서 파생된 올바른 노드 이름으로 설정됩니다.
+예를 들어, 을 입력합니다. *커뮤니티*
 
 * **템플릿**
 
-   선택 `Adobe Analytics Configuration`
+  선택 `Adobe Analytics Configuration`
 
 * **만들기**&#x200B;를 선택합니다
 
@@ -202,35 +202,35 @@ Video Heartbeat Analytics에 라이센스가 있으면 `Marketing Cloud Org Id` 
 
 * **회사**
 
-   Adobe Analytics 계정과 연결된 회사입니다.
+  Adobe Analytics 계정과 연결된 회사입니다.
 
 * **사용자 이름**
 
-   Analytics 계정을 관리할 권한이 있는 사용자의 로그인 사용자 이름입니다.
+  Analytics 계정을 관리할 권한이 있는 사용자의 로그인 사용자 이름입니다.
 
 * **암호**
 
-   승인된 사용자의 로그인 암호입니다.
+  승인된 사용자의 로그인 암호입니다.
 
 * **데이터 센터**
 
-   보고서 세트를 호스팅하는 Analytics 데이터 센터를 선택합니다.
+  보고서 세트를 호스팅하는 Analytics 데이터 센터를 선택합니다.
 
 * **페이지에 추적 태그를 추가하지 않음**
 
-   기본값으로 둡니다(선택 해제됨).
+  기본값으로 둡니다(선택 해제됨).
 
 * **AppMeasurement 사용**
 
-   기본값으로 둡니다(선택 해제됨).
+  기본값으로 둡니다(선택 해제됨).
 
 * **페이지 노출을 매일 밤 가져오지 않음(작성자)**
 
-   기본값으로 둡니다(선택 해제됨).
+  기본값으로 둡니다(선택 해제됨).
 
 * **페이지 노출을 매일 밤 가져오지 않음(게시)**
 
-   기본값으로 둡니다(선택 해제됨).
+  기본값으로 둡니다(선택 해제됨).
 
 설정을 저장하려면:
 
@@ -243,7 +243,7 @@ Video Heartbeat Analytics에 라이센스가 있으면 `Marketing Cloud Org Id` 
 
 * 선택 **확인**.
 
-   ![analytics-settings](assets/analytics-settings1.png)
+  ![analytics-settings](assets/analytics-settings1.png)
 
 ### 프레임워크 만들기 {#create-framework}
 
@@ -251,20 +251,20 @@ Adobe Analytics에 대한 기본 연결이 성공적으로 구성되면 커뮤�
 
 * 선택 `[+]` 아이콘 옆에 있음 **[!UICONTROL 사용 가능한 프레임워크]** 새 프레임워크를 만들려면
 
-   ![analytics 프레임워크](assets/analytics-framework.png)
+  ![analytics 프레임워크](assets/analytics-framework.png)
 
 * **제목**
 
-   (필수) 프레임워크의 표시 제목 예: *커뮤니티 프레임워크*.
+  (필수) 프레임워크의 표시 제목 예: *커뮤니티 프레임워크*.
 
 * **이름**
 
-   (선택 사항) 지정하지 않으면 기본적으로 이 이름은 제목에서 파생된 올바른 노드 이름으로 설정됩니다.
-예를 들어 다음을 입력합니다. *커뮤니티*.
+  (선택 사항) 지정하지 않으면 기본적으로 이 이름은 제목에서 파생된 올바른 노드 이름으로 설정됩니다.
+예를 들어, 을 입력합니다. *커뮤니티*.
 
 * *템플릿*
 
-   선택 `Adobe Analytics Framework`.
+  선택 `Adobe Analytics Framework`.
 
 * **만들기**&#x200B;를 선택합니다.
 
@@ -283,7 +283,7 @@ Analytics 프레임워크를 만들면 구성을 위한 프레임워크가 열�
 보고서 세트가 아직 생성되지 않았거나 제대로 설정되지 않은 경우 이전 섹션을 참조하십시오.
 [비디오 보고를 위한 Adobe Analytics 보고서 세트](#adobe-analytics-report-suite-for-video-reporting)
 
-사이드 킥은 필요하지 않으며 보고서 세트 설정에 대한 액세스를 방해하지 않도록 최소화할 수 있습니다.
+Sidekick은 필요하지 않으며, 보고서 세트 설정에 대한 액세스를 방해하지 않도록 최소화할 수 있습니다.
 
 #### &#39;항목 추가&#39; 선택 전후의 보고서 세트 대화 상자 {#report-suites-dialog-before-and-after-selecting-add-item}
 
@@ -441,9 +441,9 @@ evar1 - evar11 및 event1 - event7 내의 변수를 매핑한 기존 보고서 �
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>마.</em></td>
+   <td><em>(e)</em></td>
    <td><em>바.</em></td>
-   <td><em>사.</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
@@ -454,9 +454,9 @@ evar1 - evar11 및 event1 - event7 내의 변수를 매핑한 기존 보고서 �
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>마.</em></td>
+   <td><em>(e)</em></td>
    <td><em>바.</em></td>
-   <td><em>사.</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
@@ -467,9 +467,9 @@ evar1 - evar11 및 event1 - event7 내의 변수를 매핑한 기존 보고서 �
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>마.</em></td>
+   <td><em>(e)</em></td>
    <td><em>바.</em></td>
-   <td><em>사.</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
@@ -480,9 +480,9 @@ evar1 - evar11 및 event1 - event7 내의 변수를 매핑한 기존 보고서 �
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>마.</em></td>
+   <td><em>(e)</em></td>
    <td><em>바.</em></td>
-   <td><em>사.</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
@@ -493,9 +493,9 @@ evar1 - evar11 및 event1 - event7 내의 변수를 매핑한 기존 보고서 �
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>마.</em></td>
+   <td><em>(e)</em></td>
    <td><em>바.</em></td>
-   <td><em>사.</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
@@ -506,9 +506,9 @@ evar1 - evar11 및 event1 - event7 내의 변수를 매핑한 기존 보고서 �
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>마.</em></td>
+   <td><em>(e)</em></td>
    <td><em>바.</em></td>
-   <td><em>사.</em></td>
+   <td><em>(g)</em></td>
    <td><em>(h)</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
@@ -527,8 +527,7 @@ evar1 - evar11 및 event1 - event7 내의 변수를 매핑한 기존 보고서 �
 * *UGC 구성 요소 제목*: 하이킹 주제
 * *로그인(authorizableId)*: `aaron.mcdonald@mailinator.com`
 * *UGC에 대한 SRP 경로*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-또는 
-*팔로우할 구성 요소의 경로*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
+또는 *팔로우할 구성 요소의 경로*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
 * *커뮤니티 사이트 콘텐츠 경로*: `/content/sites/<site name>/en`
 
@@ -562,7 +561,7 @@ Analytics가 활성화된 후 커뮤니티 사이트가 게시되기 전에 왼�
 
 ### AEM에 Analytics 변수 매핑 확인 {#verify-analytics-to-aem-variable-mapping}
 
-Analytics 클라우드 서비스 및 프레임워크도 게시되는 커뮤니티 사이트를 게시하기 전에 변수 매핑을 확인하는 것이 좋습니다.
+Analytics 클라우드 서비스 및 프레임워크도 게시하는 커뮤니티 사이트를 게시하기 전에 변수 매핑을 확인하는 것이 좋습니다.
 
 다음 섹션을 참조하십시오.
 
@@ -656,7 +655,7 @@ Analytics가 활성화된 커뮤니티 사이트가 게시되면 기본 게시�
 
 ## Analytics에서 사용자 데이터 관리 {#manage-user-data-in-analytics}
 
-Adobe Analytics은 사용자 데이터에 액세스하고, 내보내고, 삭제할 수 있도록 해 주는 API를 제공합니다. 자세한 내용은 [액세스 및 삭제 요청 제출](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+Adobe Analytics에서는 사용자 데이터에 액세스하고, 내보내고, 삭제할 수 있는 API를 제공합니다. 자세한 내용은 [액세스 및 삭제 요청 제출](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 ## 리소스 {#resources}
 
