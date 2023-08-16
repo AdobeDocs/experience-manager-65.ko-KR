@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달을 위해 AEM(Adobe Experience Manager)의 콘텐츠 조각을 AEM GraphQL API와 함께 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 79fa58e63596301e1669903ce10dd8b2ba7d0a1b
 workflow-type: tm+mt
-source-wordcount: '4477'
-ht-degree: 59%
+source-wordcount: '4774'
+ht-degree: 55%
 
 ---
 
@@ -104,7 +104,7 @@ AEM은 쿼리(두 유형 모두)를 [지속 쿼리](/help/sites-developing/headl
 
 ### GraphQL 쿼리 모범 사례(Dispatcher 및 CDN) {#graphql-query-best-practices}
 
-[지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)는 게시 인스턴스에서 다음과 같이 사용하도록 권장되는 방법입니다.
+[지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md) 게시 인스턴스에서 다음과 같이 사용하도록 권장되는 방법입니다.
 
 * 캐시됩니다.
 * AEM을 통해 중앙 집중식으로 관리됩니다.
@@ -117,6 +117,8 @@ AEM은 쿼리(두 유형 모두)를 [지속 쿼리](/help/sites-developing/headl
 POST 요청을 사용하는 GraphQL 쿼리는 캐시되지 않으므로 권장되지 않습니다. 따라서 기본 인스턴스에서는 Dispatcher가 이러한 쿼리를 차단하도록 구성됩니다.
 
 GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 사용하여 피할 수 있는 제한(예: URL 길이)에 도달할 수 있습니다.
+
+다음을 참조하십시오 [지속 쿼리 캐싱 활성화](#enable-caching-persisted-queries) 을 참조하십시오.
 
 >[!NOTE]
 >
@@ -687,6 +689,111 @@ query {
 >
 >* 내부 기술적 제한으로 인해 중첩된 필드에 정렬 및 필터링을 적용하면 성능이 저하됩니다. 따라서 루트 수준에 저장된 필터/정렬 필드를 사용합니다. 페이지가 매겨진 대용량 결과 세트를 쿼리하려는 경우에도 이 방법이 권장됩니다.
 
+## GraphQL 지속 쿼리 - Dispatcher에서 캐싱 활성화 {#graphql-persisted-queries-enabling-caching-dispatcher}
+
+>[!CAUTION]
+>
+>Dispatcher에서 캐싱이 활성화되면 [CORS 필터](#cors-filter) 가 필요하지 않으므로 해당 섹션을 무시할 수 있습니다.
+
+지속 쿼리의 캐싱은 Dispatcher에서 기본적으로 활성화되지 않습니다. 여러 출처가 있는 CORS(원본 간 리소스 공유)를 사용하는 고객은 Dispatcher 구성을 검토하고 업데이트해야 하므로 기본 활성화가 불가능합니다.
+
+>[!NOTE]
+>
+>Dispatcher가 를 캐시하지 않습니다. `Vary` 머리글입니다.
+>
+>Dispatcher에서 다른 CORS 관련 헤더의 캐싱을 활성화할 수 있지만, CORS 출처가 여러 개일 경우 충분하지 않을 수 있습니다.
+
+### 지속 쿼리 캐싱 활성화 {#enable-caching-persisted-queries}
+
+지속 쿼리의 캐싱을 활성화하려면 Dispatcher 변수를 정의합니다 `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+
+1. Dispatcher 파일에 변수 추가 `global.vars`:
+
+   ```xml
+   Define CACHE_GRAPHQL_PERSISTED_QUERIES
+   ```
+
+>[!NOTE]
+>
+>을 준수하려면 [캐시할 수 있는 문서에 대한 Dispatcher의 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher는 접미사를 추가합니다 `.json` 결과를 캐시할 수 있도록 모든 지속 쿼리 URL에 매핑합니다.
+>
+>지속 쿼리 캐시가 활성화되면 이 접미사는 재작성 규칙에 의해 추가됩니다.
+
+### Dispatcher의 CORS 구성 {#cors-configuration-in-dispatcher}
+
+CORS 요청을 사용하는 고객은 Dispatcher에서 CORS 구성을 검토하고 업데이트해야 할 수 있습니다.
+
+* 다음 `Origin` 헤더는 Dispatcher를 통해 AEM 게시로 전달할 수 없습니다.
+   * 다음 확인: `clientheaders.any` 파일.
+* 대신 CORS 요청은 Dispatcher 수준에서 허용된 출처를 평가해야 합니다. 또한 이 접근 방법에서는 모든 경우에 CORS 관련 헤더가 한 위치에서 올바르게 설정되도록 합니다.
+   * 이러한 구성을 다음에 추가해야 합니다. `vhost` 파일. 예시적인 구성이 아래에 주어지며, 단순화를 위해, CORS-관련 부분만이 제공되었다. 특정 사용 사례에 맞게 조정할 수 있습니다.
+
+  ```xml
+  <VirtualHost *:80>
+     ServerName "publish"
+  
+     # ...
+  
+     <IfModule mod_headers.c>
+         Header add X-Vhost "publish"
+  
+          ################## Start of the CORS specific configuration ##################
+  
+          SetEnvIfExpr "req_novary('Origin') == ''"  CORSType=none CORSProcessing=false
+          SetEnvIfExpr "req_novary('Origin') != ''"  CORSType=cors CORSProcessing=true CORSTrusted=false
+  
+          SetEnvIfExpr "req_novary('Access-Control-Request-Method') == '' && %{REQUEST_METHOD} == 'OPTIONS' && req_novary('Origin') != ''  " CORSType=invalidpreflight CORSProcessing=false
+          SetEnvIfExpr "req_novary('Access-Control-Request-Method') != '' && %{REQUEST_METHOD} == 'OPTIONS' && req_novary('Origin') != ''  " CORSType=preflight CORSProcessing=true CORSTrusted=false
+          SetEnvIfExpr "req_novary('Origin') -strcmatch 'https://%{HTTP_HOST}*'"  CORSType=samedomain CORSProcessing=false
+  
+          # For requests that require CORS processing, check if the Origin can be trusted
+          SetEnvIfExpr "%{HTTP_HOST} =~ /(.*)/ " ParsedHost=$1
+  
+          ################## Adapt the regex to match CORS origin for your environment
+          SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*.your-domain.tld(:\d+)?$)#" CORSTrusted=true
+  
+          # Extract the Origin header 
+          SetEnvIfNoCase ^Origin$ ^https://(.*)$ CORSTrustedOrigin=https://$1
+  
+          # Flush If already set
+          Header unset Access-Control-Allow-Origin
+          Header unset Access-Control-Allow-Credentials
+  
+          # Trusted
+          Header always set Access-Control-Allow-Credentials "true" "expr=reqenv('CORSTrusted') == 'true'"
+          Header always set Access-Control-Allow-Origin "%{CORSTrustedOrigin}e" "expr=reqenv('CORSTrusted') == 'true'"
+          Header always set Access-Control-Allow-Methods "GET" "expr=reqenv('CORSTrusted') == 'true'"
+          Header always set Access-Control-Max-Age 1800 "expr=reqenv('CORSTrusted') == 'true'"
+          Header always set Access-Control-Allow-Headers "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers" "expr=reqenv('CORSTrusted') == 'true'"
+  
+          # Non-CORS or Not Trusted
+          Header unset Access-Control-Allow-Credentials "expr=reqenv('CORSProcessing') == 'false' || reqenv('CORSTrusted') == 'false'"
+          Header unset Access-Control-Allow-Origin "expr=reqenv('CORSProcessing') == 'false' || reqenv('CORSTrusted') == 'false'"
+          Header unset Access-Control-Allow-Methods "expr=reqenv('CORSProcessing') == 'false' || reqenv('CORSTrusted') == 'false'"
+          Header unset Access-Control-Max-Age "expr=reqenv('CORSProcessing') == 'false' || reqenv('CORSTrusted') == 'false'"
+  
+          # Always vary on origin, even if its not there.
+          Header merge Vary Origin
+  
+          # CORS - send 204 for CORS requests which are not trusted
+          RewriteCond expr "reqenv('CORSProcessing') == 'true' && reqenv('CORSTrusted') == 'false'"
+          RewriteRule "^(.*)" - [R=204,L]
+  
+          ################## End of the CORS specific configuration ##################
+  
+     </IfModule>
+  
+     <Directory />
+  
+         # ...
+  
+     </Directory>
+  
+     # ...
+  
+  </VirtualHost>
+  ```
+
 ## AEM용 GraphQL - 확장 요약 {#graphql-extensions}
 
 AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 따릅니다. AEM이 있는 GraphQL 쿼리의 경우 몇 가지 확장이 있습니다.
@@ -786,6 +893,10 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
    * 요청된 변형이 중첩된 조각에 없는 경우 **기본** 변형이 반환됩니다.
 
 ### CORS 필터 {#cors-filter}
+
+>[!CAUTION]
+>
+>If [Dispatcher에서 캐싱이 활성화되었습니다.](#graphql-persisted-queries-enabling-caching-dispatcher) 그런 다음 CORS 필터가 필요하지 않으므로 이 섹션을 무시할 수 있습니다.
 
 >[!NOTE]
 >
