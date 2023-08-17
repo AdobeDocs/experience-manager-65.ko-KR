@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4eb4a15961e7b6e83d9e8a38f34ad92d829cb9b6
 workflow-type: tm+mt
-source-wordcount: '1949'
+source-wordcount: '2084'
 ht-degree: 7%
 
 ---
@@ -33,7 +33,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
 
 * **Forms 제출됨:** AEM Forms으로 만든 모든 유형의 양식에서 데이터를 제출하고 데이터를 데이터 저장소 또는 데이터베이스로 제출한 경우 양식 제출로 간주됩니다. 예를 들어 적응형 양식, HTML5 양식, PDF forms 및 양식 세트 제출은 제출된 양식으로 계산됩니다. 양식 세트의 각 양식은 제출로 간주됩니다. 예를 들어 양식 세트에 5개의 양식이 있는 경우 양식 세트가 제출되면 거래 보고 서비스는 5개의 제출로 계산합니다.
 
-* **렌더링된 문서:** 템플릿과 데이터를 결합하여 문서를 생성하거나, 문서에 디지털 서명 또는 인증을 하거나, 문서 서비스를 위해 청구 가능한 문서 서비스 API를 사용하거나, 문서를 한 형식에서 다른 형식으로 변환하면 문서가 렌더링되는 것으로 간주됩니다.
+* **렌더링된 문서:** 템플릿과 데이터를 결합하여 문서를 생성하거나, 문서에 디지털 서명 또는 인증을 하거나, 문서 서비스를 위한 과금 가능한 문서 서비스 API를 사용하거나, 문서를 한 형식에서 다른 형식으로 변환하여 문서를 생성한 문서라고 간주합니다.
 
 >[!NOTE]
 >
@@ -65,19 +65,19 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
-   <td>Adobe PDF을 지원되는 파일 형식으로 변환합니다. </td>
+   <td>Adobe PDF을 지원되는 파일 유형으로 변환합니다. </td>
    <td>처리된 문서<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td>
-   <td>Adobe PDF을 지원되는 파일 형식으로 변환합니다. </td>
+   <td>Adobe PDF을 지원되는 파일 유형으로 변환합니다. </td>
    <td>처리된 문서<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
-   <td>Adobe PDF을 지원되는 파일 형식으로 변환합니다. </td>
+   <td>Adobe PDF을 지원되는 파일 유형으로 변환합니다. </td>
    <td>처리된 문서<br /> </td>
    <td> </td>
   </tr>
@@ -107,6 +107,26 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
   </tr>
  </tbody>
 </table>
+
+### DocAssurance 서비스 {#DocAssurance-Service}
+
+<table>
+ <tbody>
+  <tr>
+   <td><p>API</p> </td>
+   <td>설명</td>
+   <td>거래 보고서 범주</td>
+   <td>추가 정보</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-" target="_blank">secureDocument</a><br /> </td>
+   <td>이 API를 사용하면 문서의 보안을 유지할 수 있습니다. API를 사용하여 PDF 문서에 서명, 인증, 리더 확장 또는 암호화할 수 있습니다.</td>
+   <td>처리된 문서</td>
+   <td>secureDocument의 서명 및 인증 작업만 청구됩니다.</td>
+  </tr>
+ </tbody>
+</table>
+
 
 ### Distiller 서비스 {#distiller-service}
 
@@ -294,7 +314,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">호출</a></td>
    <td>지정된 DDX 문서를 실행하고 <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">어셈블러 결과</a> 결과 문서가 포함된 객체입니다. </td>
    <td>처리된 문서</td>
-   <td>PDF 생성기, Forms 및 출력 서비스에서 지원하는 모든 입력 파일 형식 어셈블러 서비스는 이러한 모든 형식을 출력 파일 형식으로 지원합니다. </td>
+   <td>PDF Generator, Forms 및 출력 서비스에서 지원하는 모든 입력 파일 형식이며 어셈블러 서비스에서는 이러한 모든 형식을 출력 파일 형식으로 지원합니다. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-">toPDFA</a></td>
@@ -305,12 +325,16 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
  </tbody>
 </table>
 
+호출은 수행되는 작업에 따라 달라지는 트랜잭션으로 간주됩니다. 다음 작업 중 하나 이상을 수행하면 트랜잭션으로 간주됩니다.
+1. 비 PDF 형식에서 PDF 형식 변환으로. 예를 들어 XDP 형식을 PDF 형식으로 변환(대화형 및 비대화형 통신의 경우), Word를 PDF 형식으로 변환.
+1. PDF 형식에서 PDF/A 형식 변환으로 변경되었습니다.
+1. PDF 형식을 PDF 형식이 아닌 형식으로 변환합니다. 예를 들어 PDF 형식을 이미지 형식으로 변환, PDF 형식을 텍스트 형식으로 변환 등의 작업을 수행할 수 있습니다.
+
+
 >[!NOTE]
 >
 >* 어셈블러 서비스의 호출 API는 입력에 따라 다른 서비스의 과금 가능한 API를 내부적으로 호출할 수 있습니다. 따라서 호출 API는 없음, 단일 또는 여러 트랜잭션으로 간주할 수 있습니다. 계산되는 트랜잭션 수는 입력 및 호출된 내부 API에 따라 다릅니다.
 >* 어셈블러 서비스를 사용하여 생성된 단일 PDF 문서는 없음, 단일 또는 다중 트랜잭션으로 계상될 수 있습니다. 계산되는 거래 수는 제공된 DDX 코드에 따라 다릅니다.
->
-
 
 ### PDF 유틸리티 서비스  {#pdf-utility-service}
 
