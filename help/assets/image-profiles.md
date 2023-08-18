@@ -10,7 +10,7 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 16ea73e9e75ddee25d7d348d4220a0e0f96a9ae8
+source-git-commit: d4c2890b92678aff58119e76251b5d181c95a393
 workflow-type: tm+mt
 source-wordcount: '3033'
 ht-degree: 6%
@@ -23,8 +23,8 @@ ht-degree: 6%
 
 >[!IMPORTANT]
 >
->· 스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
-· 이미지 프로필은 PDF, 애니메이션 GIF 또는 INDD(Adobe InDesign) 파일에 적용할 수 없습니다.
+>* 스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+>* 이미지 프로필은 PDF, 애니메이션 GIF 또는 INDD(Adobe InDesign) 파일에 적용할 수 없습니다.
 
 ## 자르기 옵션 {#crop-options}
 
@@ -56,8 +56,9 @@ ht-degree: 6%
 [픽셀 자르기] 또는 [스마트 자르기]의 두 가지 이미지 자르기 선택 사항이 있습니다. 색상 및 이미지 견본 생성을 자동화하도록 선택할 수도 있습니다.
 
 >[!IMPORTANT]
-· Adobe은 생성된 자르기 및 견본을 검토하여 브랜드와 값에 적합하고 적합한지 확인할 것을 권장합니다.
-· CMYK 이미지 형식은 스마트 자르기에서 지원되지 않습니다.
+>
+>* Adobe은 생성된 자르기 및 색상 견본을 검토하여 브랜드와 값에 적합하고 적합한지 확인할 것을 권장합니다.
+>* CMYK 이미지 형식은 스마트 자르기에서 지원되지 않습니다.
 
 | 옵션 | 사용 시기 | 설명 |
 | --- | --- | --- |
@@ -70,7 +71,8 @@ ht-degree: 6%
 You use **[!UICONTROL Unsharp mask]** to fine-tune a sharpening filter effect on the final downsampled image. 효과의 강도, 효과의 반경(픽셀 단위) 및 무시되는 대비 임계값을 제어할 수 있습니다. 이 효과는 Adobe Photoshop과 동일한 옵션을 사용합니다. *언샵 마스크* 필터.
 
 >[!NOTE]
-언샵 마스크는 50% 이상 다운샘플링되는 PTIFF(피라미드형 tiff) 내의 축소된 렌디션에만 적용됩니다. 즉, ptiff 내의 가장 큰 크기의 렌디션은 언샵 마스크의 영향을 받지 않지만 썸네일과 같은 작은 크기의 렌디션은 변경됩니다(및 언샵 마스크를 표시).
+>
+>언샵 마스크는 50% 이상 다운샘플링되는 PTIFF(피라미드형 tiff) 내의 축소된 렌디션에만 적용됩니다. 즉, ptiff 내의 가장 큰 크기의 렌디션은 언샵 마스크의 영향을 받지 않지만 썸네일과 같은 작은 크기의 렌디션은 변경됩니다(및 언샵 마스크를 표시).
 
 위치 **[!UICONTROL 언샵 마스크]**, 다음과 같은 필터링 옵션이 있습니다.
 
@@ -164,18 +166,19 @@ Folders that have a profile already assigned to it are indicated by the display 
 
    * 다음으로 이동 `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` 적절한 프로필을 적용하고 선택 **[!UICONTROL 저장]**.
 
-      ![chlimage_1-257](assets/chlimage_1-257.png)
+     ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * 다음 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`.
 
-      속성 추가 `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` 및 선택 **[!UICONTROL 모두 저장]**.
+     속성 추가 `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` 및 선택 **[!UICONTROL 모두 저장]**.
 
-      ![configure_image_profile](assets/configure_image_profiles.png)
+     ![configure_image_profile](assets/configure_image_profiles.png)
 
 ## 단일 이미지의 스마트 자르기 또는 스마트 색상 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-· 스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+>
+>* 스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 
 이미지의 스마트 자르기 창을 수동으로 재정렬하거나 크기를 조정하여 초점을 추가로 정교화할 수 있습니다.
 
@@ -205,7 +208,8 @@ Folders that have a profile already assigned to it are indicated by the display 
 ## 여러 이미지의 스마트 자르기 또는 스마트 색상 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 >[!IMPORTANT]
-· 스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+>
+>* 스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 
 스마트 자르기를 포함하는 이미지 프로필을 폴더에 적용하면 해당 폴더의 모든 이미지에 자르기가 적용됩니다. 원하는 경우 다음을 수행할 수 있습니다 *수동* 여러 이미지에서 스마트 자르기 창을 다시 정렬하거나 크기를 조정하여 초점을 더 세분화합니다.
 
@@ -222,37 +226,35 @@ Folders that have a profile already assigned to it are indicated by the display 
 
    * 페이지에서 이미지 보기 크기를 조정합니다.
 
-      중단점 이름 드롭다운 목록의 오른쪽에 있는 슬라이더 막대를 왼쪽 또는 오른쪽으로 드래그하여 볼 수 있는 이미지 표시의 크기를 변경합니다.
+     중단점 이름 드롭다운 목록의 오른쪽에 있는 슬라이더 막대를 왼쪽 또는 오른쪽으로 드래그하여 볼 수 있는 이미지 표시의 크기를 변경합니다.
 
-      ![edit_smart_crops-sliderbar](assets/edit_smart_crops-sliderbar.png)
+     ![edit_smart_crops-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
    * 중단점 이름을 기반으로 볼 수 있는 이미지 목록을 필터링합니다. 아래 예에서는 이미지가 중단점 이름 &quot;Medium&quot;에서 필터링됩니다.
 
-      페이지의 오른쪽 상단 모서리 근처에 있는 드롭다운 목록에서 표시되는 이미지를 필터링할 중단점 이름을 선택합니다. (위의 이미지를 참조하십시오.)
+     페이지의 오른쪽 상단 모서리 근처에 있는 드롭다운 목록에서 표시되는 이미지를 필터링할 중단점 이름을 선택합니다. (위의 이미지를 참조하십시오.)
 
-      ![edit_smart_crops-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
+     ![edit_smart_crops-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
    * 스마트 자르기 상자의 크기를 조정합니다. 다음 중 하나를 수행합니다.
 
       * 이미지에 스마트 자르기 또는 스마트 색상 견본만 있는 경우 이미지에서 자르기 상자의 모서리 핸들을 드래그하여 자르기 중 볼 수 있는 영역의 크기를 조정합니다.
       * 이미지에 스마트 자르기와 스마트 색상 견본이 모두 있는 경우 이미지에서 자르기 상자의 모서리 핸들을 드래그하여 자르기 중 볼 수 있는 영역의 크기를 조정합니다. 또는 이미지 아래에서 스마트 색상 견본을 선택한 다음(색상 견본은 정적임) 자르기 상자의 모서리 핸들을 드래그하여 색상 견본의 보기 가능한 영역 크기를 조정합니다.
 
-      ![이미지의 스마트 자르기 크기 조정](assets/edit_smart_crops-resize.png)
+     ![이미지의 스마트 자르기 크기 조정](assets/edit_smart_crops-resize.png)
 
    * 스마트 자르기 상자를 이동합니다. 다음 중 하나를 수행합니다.
 
       * 이미지에 스마트 자르기 또는 스마트 색상 견본만 있는 경우 이미지에서 자르기 상자를 새 위치로 드래그합니다.
       * 이미지에 스마트 자르기와 스마트 색상 견본이 모두 있는 경우 이미지에서 스마트 자르기 상자를 새 위치로 드래그합니다. 또는 이미지 아래에서 스마트 색상 견본을 선택한 다음(색상 견본은 정적임) 스마트 색상 견본 자르기 상자를 새 위치로 드래그합니다.
 
-      ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
+     ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
    * 모든 편집 내용을 실행 취소하고 원래 스마트 자르기 또는 스마트 색상 견본을 복원합니다(현재 편집 세션에만 적용됨).
 
-      선택 **[!UICONTROL 되돌리기]** 이미지 위로 이동합니다.
+     선택 **[!UICONTROL 되돌리기]** 이미지 위로 이동합니다.
 
-      ![edit_smart_crops-revert](assets/edit_smart_crops-revert.png)
-
-
+     ![edit_smart_crops-revert](assets/edit_smart_crops-revert.png)
 
 1. 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 저장]**&#x200B;을 선택한 다음 을 선택합니다. **[!UICONTROL 닫기]** 에셋 폴더로 돌아갑니다.
 
