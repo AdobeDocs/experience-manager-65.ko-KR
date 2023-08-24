@@ -9,9 +9,9 @@ breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
 feature: Forms Service
-source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
 workflow-type: tm+mt
-source-wordcount: '3889'
+source-wordcount: '3897'
 ht-degree: 4%
 
 ---
@@ -163,6 +163,7 @@ ht-degree: 4%
    + [제출 서류 검토자를 양식과 연결](using/adding-reviewers-form.md)
    + [양식 필드에 대한 컨텍스트 내 도움말 작성](using/authoring-in-field-help.md)
    + [레이아웃 모드를 사용하여 구성 요소 크기 변경](/help/forms/using/resize-using-layout-mode.md)
+   + [Microsoft에 적응형 양식 데이터 연결 및 제출](/help/forms/using/forms-microsoft-power-automate-integration.md)
 + 적응형 Forms - 고급 작성 {#adaptive-forms-advanced-authoring}
    + [JSON 스키마를 사용하여 적응형 양식 만들기](using/adaptive-form-json-schema-form-model.md)
    + [XML 스키마를 사용하여 적응형 양식 만들기](using/adaptive-form-xml-schema-form-model.md)
@@ -480,7 +481,7 @@ ht-degree: 4%
       + [Adobe PDF 설정 구성](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [보안 설정 구성](/help/forms/using/admin-help/configuring-security-settings.md)
       + [파일 유형 설정 구성](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [PDF 생성기 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [PDF Generator 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [PDF/A 지원 활성화](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [PDFG 네트워크 프린터 설정(Windows에만 해당)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [대체 글꼴 구성](/help/forms/using/admin-help/configuring-fallback-fonts.md)
