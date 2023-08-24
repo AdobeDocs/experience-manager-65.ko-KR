@@ -1,21 +1,19 @@
 ---
 title: Dynamic Media의 비디오
-description: 비디오 인코딩, Dynamic Media에 비디오 게시 및 비디오 보고서 보기 모범 사례와 같이 YouTube에서 비디오를 사용하는 방법에 대해 알아봅니다. 또한 비디오에 자막, 자막 또는 챕터 마커를 추가하는 방법도 알아봅니다.
+description: 비디오 인코딩 모범 사례, 비디오에 다중 오디오 및 다중 캡션 추가, 비디오 썸네일과 같이 Dynamic Media에서 비디오로 작업하는 방법에 대해 알아봅니다.
 mini-toc-levels: 3
-uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
+source-git-commit: d11914d0902075bd36cf1e8f7405b8ac90157f15
 workflow-type: tm+mt
-source-wordcount: '8066'
-ht-degree: 3%
+source-wordcount: '11269'
+ht-degree: 2%
 
 ---
 
@@ -29,17 +27,16 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Dynamic Media에서 비디오로 작업하기 전에 Adobe Experience Manager 관리자가 Dynamic Media - Scene7 모드 또는 Dynamic Media - 하이브리드 모드에서 Dynamic Media Cloud Services을 이미 활성화하고 구성했는지 확인하십시오.
+>Dynamic Media에서 비디오로 작업하기 전에 Adobe Experience Manager 관리자가 Dynamic Media - Scene7 모드 또는 Dynamic Media - 하이브리드 모드에서 Dynamic Media Cloud Service을 이미 활성화하고 구성했는지 확인하십시오.
 >
->* 다음을 참조하십시오 [Dynamic Media Cloud Services 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md).
+>* 다음을 참조하십시오 [Dynamic Media Cloud Service 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md).
 >
->* 다음을 참조하십시오 [Dynamic Media Cloud Services 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) Dynamic Media 구성 - 하이브리드 모드에서.
+>* 다음을 참조하십시오 [Dynamic Media Cloud Service 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) Dynamic Media 구성 - 하이브리드 모드에서.
 >
 >Dynamic Media에서 현재 알려진 비디오 재생 문제 *Experience Manager 6.5.9.0에서만*:
 >
->* 게시된 비디오가 업데이트된 경우 게재 변경 사항을 반영하도록 다시 게시해야 합니다.
+>* 게시된 비디오가 업데이트된 경우 게재 시 변경 사항을 반영하도록 다시 게시해야 합니다.
 >
-
 
 1. **Dynamic Media 비디오 업로드** 다음을 수행합니다.
 
@@ -47,21 +44,21 @@ ht-degree: 3%
 
       * [비디오 인코딩 프로필 만들기](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * 자세히 알아보기 [비디오 인코딩에 대한 우수 사례](#best-practices-for-encoding-videos).
+
    * 기본 소스 비디오를 업로드할 하나 이상의 폴더에 비디오 처리 프로필을 연결합니다.
 
       * [폴더에 비디오 프로필 적용](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
       * 자세히 알아보기 [처리 프로필 사용을 위한 디지털 에셋 구성 우수 사례](/help/assets/organize-assets.md).
       * 자세히 알아보기 [디지털 자산 구성](/help/assets/organize-assets.md).
+
    * 기본 소스 비디오를 폴더에 업로드합니다. 비디오가 폴더에 추가되면 폴더에 할당한 비디오 처리 프로필에 따라 인코딩됩니다.
 
       * Dynamic Media은 최대 길이가 30분이고 최소 해상도가 25 x 25보다 큰 주로 짧은 형식의 비디오를 지원합니다.
       * 각각 최대 15GB의 비디오 파일을 업로드할 수 있습니다.
       * [비디오 업로드](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * 자세히 알아보기 [지원되는 입력 파일 형식](/help/assets/assets-formats.md#supported-multimedia-formats).
+
    * 모니터링 방법 [비디오 인코딩이 진행 중입니다](#monitoring-video-encoding-and-youtube-publishing-progress) 자산 또는 워크플로우 보기에서.
-
-
-
 
 1. **Dynamic Media 비디오 관리** 다음 중 하나를 수행하여
 
@@ -71,25 +68,28 @@ ht-degree: 3%
 자세히 알아보기 [처리 프로필 사용을 위한 디지털 에셋 구성 우수 사례](organize-assets.md)
 
       * [비디오 자산 검색](search-assets.md#custompredicates) 또는 [에셋 검색](/help/assets/search-assets.md)
+
    * 비디오 자산 미리 보기 및 게시
 
       * 소스 비디오와 비디오의 인코딩된 렌디션을 관련 썸네일과 함께 봅니다.
-         [비디오 미리 보기](managing-video-assets.md#upload-and-preview-video-assets) 또는 [에셋 미리보기](previewing-assets.md)
-         [비디오 표현물 보기](video-renditions.md)
-         [비디오 표현물 관리](manage-assets.md#managing-renditions)
+        [비디오 미리 보기](managing-video-assets.md#upload-and-preview-video-assets) 또는 [에셋 미리보기](previewing-assets.md)
+        [비디오 표현물 보기](video-renditions.md)
+        [비디오 표현물 관리](manage-assets.md#managing-renditions)
 
       * [뷰어 사전 설정 관리](managing-viewer-presets.md)
       * [자산 게시](publishing-dynamicmedia-assets.md)
+
    * 비디오 메타데이터 작업
 
       * 프레임 속도, 오디오 및 비디오 비트율, 코덱 등 인코딩된 비디오 렌디션의 속성을 확인합니다.
-         [비디오 렌디션 속성 보기](video-renditions.md)
+        [비디오 렌디션 속성 보기](video-renditions.md)
 
       * 제목, 설명, 태그 및 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
-         [비디오 속성 편집](manage-assets.md#editing-properties)
+        [비디오 속성 편집](manage-assets.md#editing-properties)
 
       * [디지털 에셋용 메타데이터 관리](metadata.md)
       * [메타데이터 스키마](metadata-schemas.md)
+
    * 비디오 검토, 승인 및 주석 달기, 전체 버전 제어 유지
 
       * [비디오에 주석 달기](managing-video-assets.md#annotate-video-assets) 또는 [에셋에 주석 달기](manage-assets.md#annotating)
@@ -100,26 +100,23 @@ ht-degree: 3%
       * [폴더 자산 검토](bulk-approval.md)
       * [프로젝트](../sites-authoring/projects.md)
 
-
-
-
 1. **Dynamic Media 비디오 게시** 다음 중 하나를 수행합니다.
 
    * Adobe Experience Manager을 웹 컨텐츠 관리 시스템으로 사용하는 경우 웹 페이지에 직접 비디오를 추가할 수 있습니다.
 
       * [웹 페이지에 비디오 추가](adding-dynamic-media-assets-to-pages.md).
+
    * 타사 웹 컨텐츠 관리 시스템을 사용하는 경우 웹 페이지에 비디오를 연결하거나 포함할 수 있습니다.
 
       * URL을 사용하여 비디오 통합:
-         [웹 애플리케이션에 URL 연결](linking-urls-to-yourwebapplication.md).
+        [웹 애플리케이션에 URL 연결](linking-urls-to-yourwebapplication.md).
 
       * 웹 페이지에서 포함 코드를 사용하여 비디오 통합:
-         [웹 페이지에 비디오 뷰어 포함](embed-code.md).
+        [웹 페이지에 비디오 뷰어 포함](embed-code.md).
+
    * [비디오 보고서 생성](#viewing-video-reports).
 
    * [비디오에 캡션 추가](#adding-captions-to-video).
-
-
 
 ## Dynamic Media에서 비디오 작업 {#working-with-video-in-dynamic-media}
 
@@ -192,7 +189,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 비디오 재생은 DASH 또는 HLS 또는 점진적 비디오 다운로드를 사용하여 발생합니다. 6.0, 6.1 및 6.2와 같은 이전 버전의 Experience Manager에서 비디오는 HTTP를 통해 스트리밍되었습니다.
 
-Experience Manager 6.3 이상에서는 DM 게이트웨이 서비스 URL이 항상 HTTPS를 사용하기 때문에 이제 HTTPS(즉, DASH 또는 HLS)를 통해 비디오가 스트리밍됩니다. 이 기본 동작에는 고객에게 영향을 주지 않습니다. 즉, 브라우저에서 지원하지 않는 한 비디오 스트리밍은 항상 HTTPS를 통해 발생합니다. (다음 표 참조). 따라서
+Experience Manager 6.3 이상에서는 DM 게이트웨이 서비스 URL이 항상 HTTPS를 사용하기 때문에 이제 HTTPS(즉, DASH 또는 HLS)를 통해 비디오가 스트리밍됩니다. 이 기본 동작에는 고객에게 영향을 주지 않습니다. 즉, 브라우저에서 지원하지 않는 한 비디오 스트리밍은 항상 HTTPS를 통해 발생합니다. 다음 표를 참조하십시오. 따라서
 
 * HTTPS 비디오 스트리밍이 있는 HTTPS 웹 사이트가 있는 경우 스트리밍이 좋습니다.
 * HTTPS 비디오 스트리밍이 있는 HTTP 웹 사이트가 있는 경우 스트리밍은 문제가 없으며 웹 브라우저에서 혼합 콘텐츠 문제가 발생하지 않습니다.
@@ -232,7 +229,7 @@ DASH는 국제 표준이고 HLS는 Apple 표준입니다. 둘 다 응용 비디�
   </tr>
   <tr>
    <td>데스크탑</td>
-   <td>Chrome</td>
+   <td>크롬</td>
    <td>DASH* 또는 HLS 적응형 비트 전송률 스트리밍.</td>
   </tr>
   <tr>
@@ -275,17 +272,17 @@ DASH는 국제 표준이고 HLS는 Apple 표준입니다. 둘 다 응용 비디�
 
 >[!IMPORTANT]
 >
->*비디오에 DASH를 사용하려면 먼저 계정의 Adobe 기술 지원 팀에서 활성화해야 합니다. 다음을 참조하십시오 [계정에서 DASH 활성화](#enable-dash).
+>*비디오에 DASH를 사용하려면 먼저 계정의 Adobe 기술 지원 팀에서 활성화해야 합니다. 다음을 참조하십시오 [Dynamic Media 계정에서 DASH 활성화](#enable-dash).
 
 ## Dynamic Media 비디오 솔루션의 아키텍처 {#architecture-of-dynamic-media-video-solution}
 
 다음 그래픽은 DMGateway(Dynamic Media 하이브리드 모드)를 통해 업로드 및 인코딩되고 공개적으로 사용할 수 있도록 된 비디오의 전체 작성 워크플로우를 보여 줍니다.
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![Dynamic Media 비디오 솔루션 아키텍처.](assets/chlimage_1-427.png)
 
 ## 비디오용 하이브리드 게시 아키텍처 {#hybrid-publishing-architecture-for-videos}
 
-![chlimage_1-428](assets/chlimage_1-428.png)
+![비디오용 하이브리드 게시 아키텍처.](assets/chlimage_1-428.png)
 
 ## 비디오 인코딩 모범 사례 {#best-practices-for-encoding-videos}
 
@@ -427,8 +424,9 @@ VBR 대 CBR을 선택할 때는 거의 항상 미디어 파일에 VBR을 사용�
 
 Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하는 것이 좋습니다. MP4 파일은 H.264 비디오 코덱을 사용하기 때문에 고품질의 비디오를 제공하지만 압축된 파일 크기입니다.
 
-### 계정에서 DASH 활성화 {#enable-dash}
+### Dynamic Media 계정에서 DASH, 다중 자막 및 다중 오디오 트랙 지원 활성화 {#enable-dash}
 
+**계정에서 DASH 활성화 정보**
 DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 국제 표준이며 다양한 비디오 뷰어에서 널리 채택됩니다. 계정에서 DASH가 활성화되면 적응형 비디오 스트리밍을 위해 DASH 또는 HLS 중에서 선택할 수 있는 옵션이 제공됩니다. 또는 다음과 같은 경우 플레이어 간에 자동 전환으로 두 옵션을 모두 선택할 수 있습니다 **[!UICONTROL auto]** 는 뷰어 사전 설정에서 재생 유형으로 선택됩니다.
 
 계정에서 DASH를 활성화하면 다음과 같은 몇 가지 주요 이점이 있습니다.
@@ -445,23 +443,42 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 �
 * DASH를 사용하도록 Dynamic Media을 구성하여 쉽게 수행할 수 있습니다.
 * 사용자가 만들고 제출한 Adobe 고객 지원 사례를 통해 수행되는 DASH를 사용하도록 Experience Manager 6.5를 구성합니다.
 
-**계정에서 DASH를 활성화하려면:**
+**계정에서 다중 자막 및 다중 오디오 트랙 지원 활성화 정보**
 
-1. **Dynamic Media 구성** - Experience Manager 6.5의 Dynamic Media에서 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. 검색 대상 **AEM Assets Dynamic Media 비디오 고급 스트리밍** 기능 플래그.
-1. 대시를 활성화(켜기)하려면 확인란을 선택합니다.
+동시에 계정에서 DASH를 활성화하도록 Adobe 지원 사례를 만들면 다중 자막 및 다중 오디오 트랙 지원이 자동으로 활성화될 수도 있습니다. 지원 후 업로드하는 모든 후속 비디오는 다중 자막 및 다중 오디오 트랙을 비디오에 추가하는 지원이 포함된 새로운 백엔드 아키텍처로 처리됩니다.
+
+>[!IMPORTANT]
+>
+>업로드한 모든 비디오 *이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md##reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
+
+**Dynamic Media 계정에서 DASH, 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 다음을 수행합니다.**
+
+<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+
+1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
+1. To enable (turn on) DASH, select the checkbox. -->
+1. 시작 일자 **dash용 Dynamic Media 구성** - Experience Manager에서 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**.
+
+1. 다음에서 **[!UICONTROL Adobe Experience Manager 웹 콘솔 구성]** 페이지, 이름으로 스크롤 *AEM Assets Dynamic Media 비디오 고급 스트리밍 기능 플래그*.
+
+1. 이름 왼쪽에서 대시를 활성화(켜기)하려면 확인란을 선택합니다.
+
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-1. **Experience Manager 6.5 구성** - [Admin Console을 사용하여 새 지원 사례 만들기 시작](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
+
+1. 지금 [Admin Console을 사용하여 새 지원 사례 만들기 시작](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
 1. 지원 사례를 생성하려면 다음 정보를 제공하면서 지침을 따르십시오.
 
    * 기본 담당자 이름, 이메일, 전화.
    * Dynamic Media 계정 이름.
-   * Experience Manager 6.5에서 대시를 활성화하도록 지정합니다.
+   * Experience Manager 6.5에서 Dynamic Media 계정에서 DASH, 다중 자막 및 다중 오디오 트랙 지원을 활성화하도록 지정합니다.
 
-1. Adobe 고객 지원 팀은 요청이 제출된 순서에 따라 DASH 고객 대기 목록에 사용자를 추가합니다.
-1. Adobe이 요청을 처리할 준비가 되면 고객 지원 센터에서 연락하여 DASH 활성화의 목표 날짜를 조정하고 설정합니다.
+1. Adobe 고객 지원에서 요청을 제출한 순서에 따라 사용자를 고객 대기 목록에 추가합니다.
+1. Adobe이 요청을 처리할 준비가 되면 고객 지원 센터에서 연락하여 지원 대상 날짜를 조정하고 설정합니다.
 1. 완료 후 고객 지원 센터에서 알림을 받습니다.
-1. 사용자 만들기 [비디오 뷰어 사전 설정](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) 평상시처럼
+1. 이제 다음 중 하나를 수행할 수 있습니다.
+
+   * 사용자 만들기 [비디오 뷰어 사전 설정](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) 평상시처럼
+   * [다중 자막 및 다중 오디오 트랙 추가](#add-msma) 을 비디오에 추가합니다.
 
 ## 비디오 보고서 보기 {#viewing-video-reports}
 
@@ -483,7 +500,7 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 �
 
 비디오가 Adobe Experience Manager Dynamic Media 외부에서 인코딩된 경우 대상 유지 (드롭오프) 차트 및 테이블의 재생 비율 데이터를 사용할 수 없습니다.
 
-참조: [Dynamic Media Cloud Services 구성](/help/assets/config-dynamic.md).
+참조: [Dynamic Media Cloud Service 구성](/help/assets/config-dynamic.md).
 
 >[!NOTE]
 >
@@ -491,7 +508,7 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 �
 
 기본적으로 비디오 보고서를 처음 입력할 때 보고서에는 현재 월의 첫 번째 날짜부터 시작하여 현재 월의 날짜로 끝나는 비디오 데이터가 표시됩니다. 그러나 고유한 날짜 범위를 지정하여 기본 날짜 범위를 재정의할 수 있습니다. 다음에 비디오 보고서를 입력할 때 지정한 날짜 범위가 사용됩니다.
 
-비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성될 때 보고서 세트 ID가 자동으로 만들어집니다. 동시에 보고서 세트 ID는 게시 서버에 푸시되므로 에셋을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 이 기능을 사용하려면 게시 서버가 이미 설정되어 있어야 합니다. 게시 서버가 설정되지 않은 경우 를 게시하여 비디오 보고서를 볼 수 있습니다. 그러나 Dynamic Media 클라우드 구성으로 돌아가 을 탭해야 합니다 **[!UICONTROL 확인]**.
+비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Service이 구성될 때 보고서 세트 ID가 자동으로 만들어집니다. 동시에 보고서 세트 ID는 게시 서버에 푸시되므로 에셋을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 이 기능을 사용하려면 게시 서버가 이미 설정되어 있어야 합니다. 게시 서버가 설정되지 않은 경우 를 게시하여 비디오 보고서를 볼 수 있습니다. 그러나 Dynamic Media 클라우드 구성으로 돌아가 을 탭해야 합니다 **[!UICONTROL 확인]**.
 
 **비디오 보고서를 보려면 다음 작업을 수행하십시오.**
 
@@ -531,47 +548,311 @@ Dynamic Media에서 제공하는 기본 제공 비디오 뷰어를 사용하거�
 
    * 먼저, 필요한 항목이 있는지 확인합니다. `&preset` 매개 변수.
 
-      다음과 같은 경우 `config2` 매개 변수: `companypreset`, 다음을 수행합니다. *아님* 필요 `&preset=parameter`.
+     다음과 같은 경우 `config2` 매개 변수: `companypreset`, 다음을 수행합니다. *아님* 필요 `&preset=parameter`.
 
-      If `config2` 는 기타 다른 매개 변수이며, 사전 설정 매개 변수를 `config2` 매개 변수. 예를 들어 다음과 같습니다. `config2=companypreset-2`, 추가 `&param2=companypreset-2` AppMeasurementBridge.jsp URL에 연결합니다.
+     If `config2` 는 기타 다른 매개 변수이며, 사전 설정 매개 변수를 `config2` 매개 변수. 예를 들어 다음과 같습니다. `config2=companypreset-2`, 추가 `&param2=companypreset-2` AppMeasurementBridge.jsp URL에 연결합니다.
 
    * 그런 다음 AppMeasurementBridge.jsp 스크립트를 추가합니다.
 
-      `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
+     `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
 1. 다음을 수행하여 TrackingManager 구성 요소를 만듭니다.
 
    * 통화 후 `s7sdk.Util.init();`를 클릭하고 다음을 추가하여 이벤트를 추적할 TrackingManager 인스턴스를 생성합니다.
 
-      `var trackingManager = new s7sdk.TrackingManager();`
+     `var trackingManager = new s7sdk.TrackingManager();`
 
    * 다음을 수행하여 구성 요소를 TrackingManager에 연결합니다.
 
-      다음에서 `s7sdk.Event.SDK_READY` 이벤트 처리기에서 추적할 구성 요소를 TrackingManager에 연결합니다.
+     다음에서 `s7sdk.Event.SDK_READY` 이벤트 처리기에서 추적할 구성 요소를 TrackingManager에 연결합니다.
 
-      예를 들어 구성 요소가 `videoPlayer`, 추가
+     예를 들어 구성 요소가 `videoPlayer`, 추가
 
-      `trackingManager.attach(videoPlayer);`
+     `trackingManager.attach(videoPlayer);`
 
-      를 클릭하여 구성 요소를 trackingManager에 연결합니다. 페이지에서 여러 뷰어를 추적하려면 여러 추적 관리자 구성 요소를 사용합니다.
+     를 클릭하여 구성 요소를 trackingManager에 연결합니다. 페이지에서 여러 뷰어를 추적하려면 여러 추적 관리자 구성 요소를 사용합니다.
 
    * 다음을 추가하여 AppMeasurementBridge 개체를 만듭니다.
 
-      ```
-      var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
-      ```
+     ```
+     var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
+     ```
 
    * 다음을 추가하여 추적 함수를 추가합니다.
 
-      ```
-      trackingManager.setCallback(appMeasurementBridge.track, 
-       appMeasurementBridge);
-      ```
+     ```
+     trackingManager.setCallback(appMeasurementBridge.track, 
+      appMeasurementBridge);
+     ```
+
    appMeasurementBridge 개체에는 내장 추적 함수가 있습니다. 하지만 고유한 를 제공하여 여러 추적 시스템 또는 기타 기능을 지원할 수 있습니다.
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
+
+
+
+## Dynamic Media의 비디오에 대한 다중 자막 및 다중 오디오 트랙 지원 정보{#about-msma}
+
+Dynamic Media의 다중 자막 및 다중 오디오 트랙 기능을 사용하면 기본 비디오에 여러 자막 및 오디오 트랙을 쉽게 추가할 수 있습니다. 이 기능은 글로벌 대상자를 통해 비디오에 액세스할 수 있음을 의미합니다. 게시된 단일 기본 비디오를 여러 언어로 글로벌 대상자에게 사용자 지정하고 다양한 지리적 영역에 대한 액세스 가능성 지침을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 자막 및 오디오 트랙을 관리할 수도 있습니다.
+
+![Dynamic Media의 자막 및 오디오 트랙 탭과 업로드된 .VTT 자막 파일 및 업로드된 .MP3 비디오 오디오 트랙 파일을 보여 주는 표를 함께 제공합니다.](assets-dm/msma-subtitle-audiotracks-tab.png)
+
+다중 자막 및 다중 오디오 트랙을 기본 비디오에 추가하는 데 고려할 사용 사례는 다음과 같습니다.
+
+| 유형 | 사용 사례 |
+|--- |--- |
+| **자막** | 다중 언어 지원 |
+|  | 접근성을 위한 설명 텍스트 |
+| **오디오 트랙** | 다중 언어 지원 |
+|  | 스테레오 및 멀티 채널(서라운드 사운드) |
+|  | 주석 트랙 |
+|  | 설명 오디오 |
+
+모두 [Dynamic Media에서 지원되는 비디오 형식](/help/assets/assets-formats.md) 및 Dynamic Media을 제외한 모든 Dynamic Media 비디오 뷰어 *비디오_360* 뷰어 - 다중 자막 및 다중 오디오 트랙과 함께 사용할 수 있도록 지원됩니다.
+
+다중 자막 및 다중 오디오 추적 기능은 고객 지원 Adobe에서 활성화(켜기)해야 하는 기능 전환을 통해 Dynamic Media 계정에 사용할 수 있습니다.
+
+### 비디오에 다중 자막 및 다중 오디오 트랙 추가 {#add-msma}
+
+비디오에 다중 자막 및 다중 오디오 트랙을 추가하기 전에 이미 다음 내용이 준비되어 있는지 확인하십시오.
+
+* Dynamic Media은 AEM 환경에 설정됩니다.
+* A [Dynamic Media 비디오 프로필은 비디오가 수집되는 폴더에 적용됩니다](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+* [Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙을 사용할 수 있습니다.](#enable-dash).
+
+추가된 자막 및 캡션은 WebVTT 및 Adobe VTT 형식으로 지원됩니다. 또한 추가된 오디오 트랙 파일은 MP3 포맷으로 지원됩니다.
+
+>[!IMPORTANT]
+>
+>업로드한 모든 비디오 *이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md##reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
+
+**비디오에 다중 자막 및 다중 오디오 트랙을 추가하려면:**
+
+1. [폴더에 기본 비디오 업로드](/help/assets/managing-video-assets.md#upload-and-preview-video-assets) 에 이미 비디오 프로필이 할당되어 있습니다.
+1. 다중 자막 및 다중 오디오 트랙을 추가하려는 업로드된 비디오 자산으로 이동합니다.
+1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
+   ![비디오 썸네일 이미지 위에 체크 표시가 있고 도구 모음에서 속성 보기 가 강조 표시된 비디오 자산을 선택했습니다.](assets-dm/msma-selectedasset-propertiesbutton.png)*카드 보기에서 선택한 비디오 자산입니다.*
+1. 비디오의 속성 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭.
+
+   >[!TIP]
+   >표시되지 않는 경우 **[!UICONTROL 자막 및 오디오 트랙]** 탭은 선택한 비디오가 있는 폴더에 할당된 비디오 프로필이 없음을 의미합니다. [폴더에 비디오 프로필 적용](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders)을 클릭한 다음 이 단계로 돌아갑니다.
+
+   ![속성 페이지의 자막 및 오디오 트랙 탭&#x200B;](assets-dm/msma-audiotracks.png)*비디오의 속성 페이지에 있는 자막 및 오디오 트랙 탭 빈 오디오 트랙 목록 상자에 표시된 대로 비디오와 연결된 원래 오디오 트랙이 없습니다. 비디오 처리가 완료되면 트랙이 나타납니다.*
+
+1. (선택 사항) 비디오에 하나 이상의 자막(또는 캡션) 파일을 추가하려면 다음을 수행합니다.
+   * 선택 **[!UICONTROL 자막 업로드]**.
+   * 하나 이상의 .vtt (비디오 텍스트 트랙) 파일로 이동하여 선택한 다음 엽니다.
+   * 미디어 플레이어에서 자막을 표시하려면 다음 작업을 수행하십시오 *필수* 다음에 대한 필수 세부 정보(메타데이터) 추가 *각각* 업로드한 자막 파일입니다. 자막 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. 다음에서 **자막 편집** 대화 상자에서 파일에 대한 다음과 같은 필수 세부 정보를 입력한 다음 을 선택합니다 **[!UICONTROL 저장]**. 업로드한 각 자막 파일에 대해 이 프로세스를 반복합니다.
+
+     | 자막 메타데이터 | 설명 |
+     |--- |--- |
+     | 파일 이름 | 기본 파일 이름은 원래 파일 이름에서 파생됩니다. 파일 이름은 업로드 중에만 변경할 수 있으며 나중에 변경할 수 없습니다. 파일 이름 문자 요구 사항은 AEM Assets의 요구 사항과 동일합니다.<br>추가 자막 파일 및 오디오 트랙 파일에는 동일한 파일 이름을 사용할 수 없습니다. |
+     | 언어 | 자막의 언어를 선택합니다. |
+     | 유형 | 사용 중인 자막 유형을 선택합니다.<br>**부제** - 대화 상자를 변환하거나 기록하는 비디오와 함께 표시되는 자막 텍스트입니다.<br>**캡션** - 캡션 텍스트에는 대화 상자의 번역 또는 트랜스크립션과 함께 배경 잡음, 스피커 차별화 및 기타 관련 정보도 포함되어 있으므로 귀가 들리지 않거나 난청인 개인에게 콘텐츠에 더 쉽게 접근할 수 있습니다. |
+     | 레이블 | 에서 자막 이름에 대해 표시되는 텍스트입니다. **[!UICONTROL 오디오 또는 캡션 선택]** 미디어 플레이어의 팝업 목록입니다. 레이블은 자막 또는 캡션 트랙에 해당하는 것으로, 고객에게 표시됩니다. (예: `English (CC)`) |
+
+     필요한 경우 나중에 자막 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
+
+1. (선택 사항) 비디오에 하나 이상의 오디오 트랙을 추가하려면 다음을 수행하십시오.
+   * 선택 **[!UICONTROL 오디오 트랙 업로드]**.
+   * 하나 이상의 .mp3 파일로 이동하여 선택한 다음 엽니다.
+   * 오디오 트랙이 **[!UICONTROL 오디오 또는 캡션 선택]** 미디어 플레이어의 팝업 목록, *필수* 에 대한 필수 세부 정보 추가 *각각* 추가한 오디오 트랙 파일입니다. 오디오 트랙 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. 다음에서 **오디오 트랙 편집** 대화 상자에서 다음과 같은 필수 세부 정보를 입력한 다음 을 선택합니다 **[!UICONTROL 저장]**. 업로드한 각 오디오 트랙 파일에 대해 이 프로세스를 반복합니다.
+
+     | 오디오 트랙 메타데이터 | 설명 |
+     |--- |--- |
+     | 파일 이름 | 기본 파일 이름은 원래 파일 이름에서 파생됩니다. 파일 이름은 업로드 중에만 변경할 수 있으며 나중에 변경할 수 없습니다. 파일 이름 문자 요구 사항은 AEM Assets의 요구 사항과 동일합니다.<br>추가 오디오 트랙 파일 또는 자막 파일에는 동일한 파일 이름을 사용할 수 없습니다. |
+     | 언어 | 오디오 트랙의 언어를 선택합니다. |
+     | 유형 | 사용 중인 오디오 트랙 유형을 선택합니다.<br>**원본** - 원래 비디오에 첨부되고 로 표시되는 오디오 트랙입니다. `[Original]` 을 사용하여 레이블 내 `English` 기본적으로 선택된 언어입니다. While **[!UICONTROL 레이블]** 및 **[!UICONTROL 언어]** 에서 변경할 수 있습니다. **[!UICONTROL 오디오 트랙 편집]** 이 대화 상자는 기본 비디오가 재처리되는 경우 기본적으로 원래 값으로 설정됩니다.<br>**표준** - 원본 이외의 언어에 대한 추가 오디오 트랙입니다.<br>**오디오 설명** - 오디오 트랙에는 비디오에 비언어적 동작과 제스처에 대한 수사적 설명이 포함되어 있어 시각 장애가 있는 개인이 콘텐츠를 더 쉽게 이용할 수 있습니다. |
+     | 레이블 | 오디오 트랙의 이름으로 표시되는 텍스트입니다 **[!UICONTROL 오디오 또는 캡션 선택]** 미디어 플레이어의 팝업 목록입니다. 레이블은 오디오 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예, `English [Original]`. 비디오에 첨부된 오디오의 레이블이으로 설정됩니다. `[Original|` 기본적으로. |
+
+     필요한 경우 나중에 이 오디오 트랙 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
+
+1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장 및 닫기]** 드롭다운 목록에서 다음을 선택합니다. **[!UICONTROL 저장]**. 에서 볼 수 있듯이 파일이 업로드되고 메타데이터 처리가 시작됩니다. **상태** 인터페이스의 열입니다.
+
+   >[!NOTE]
+   >
+   >인스턴스의 캐싱 설정에 따라 메타데이터 처리가 미리보기 및 게시된 URL에 반영되기까지 몇 분 정도 걸릴 수 있습니다.
+
+1. (선택 사항) **[!UICONTROL 저장 및 닫기]** 이전 단계에서 를 선택하는 대신 **[!UICONTROL 저장]**&#x200B;업로드된 파일의 처리 상태를 계속 볼 수 있습니다. 다음을 참조하십시오 [업로드된 자막 및 오디오 트랙 파일의 라이프사이클 상태 보기](#lifecycle-status-video).
+1. (선택 사항) 게시 전에 비디오를 미리 보고 자막 및 오디오가 예상대로 작동하는지 확인합니다. 다음을 참조하십시오 [여러 자막과 오디오 트랙이 있는 비디오 미리 보기](#preview-video-audio-subtitle)
+1. 비디오를 게시합니다. 다음을 참조하십시오 [자산 게시](publishing-dynamicmedia-assets.md).
+
+#### 이미 게시된 비디오에 자막 및 오디오 트랙 파일 추가 정보
+
+이미 게시된 비디오에 추가 자막 파일 또는 오디오 트랙 파일을 업로드하면 해당 파일에 `Processed` 업로드 후 상태가 준비됩니다. 이때 Dynamic Media에서 비디오를 미리 보고 새로 업로드한 파일을 보거나 들을 수 있습니다.
+
+그러나 미리보기를 수행한 후에는 다음 작업을 수행해야 합니다 *게시* 새로 추가된 자막 또는 오디오 트랙 파일도 다시 비디오로 게시할 수 있습니다. 게시 후 자막 또는 오디오를 공개 Dynamic Media URL에서 사용할 수 있습니다.
+
+>[!NOTE]
+>
+>인스턴스의 캐싱 설정에 따라 메타데이터 업데이트가 미리보기 및 게시된 URL에 반영되기까지 몇 분 정도 걸릴 수 있습니다.
+
+즉시 게시하도록 Dynamic Media을 구성한 시나리오에서는 추가 자막 또는 오디오 파일을 업로드하면 자막 또는 오디오 파일 업로드 후에 비디오 게시가 즉시 트리거됩니다.
+
+>[!CAUTION]
+>
+>이미 게시된 비디오에 자막 파일 또는 오디오 파일을 업로드할 때 다음과 같은 파일이 삭제됩니다. [*재처리*](/help/assets/processing-profiles.md##reprocessing-assets) 비디오입니다. 비디오의 원본 오디오만 그대로 유지됩니다. 이러한 경우 자막 파일 및 오디오 트랙 파일을 비디오에 다시 업로드해야 합니다.
+
+#### 기존 URL이 있는 비디오에 캡션 수정자가 있는 여러 캡션 추가
+
+Dynamic Media은 URL 수정자를 통해 비디오가 포함된 단일 캡션의 추가를 지원합니다(참조) [캡션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=en)).
+
+<!-- IS THE CORRECT LINK THE ONE ABOVE OR IS IT THE LINK BELOW???? -->
+
+다음을 참조하십시오 [정적(이미지가 아닌) 콘텐츠 제공](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) 다음에서 *Dynamic Media 이미지 제공 및 렌더링 API 도움말* url에서 JSON 함수를 사용하는 방법에 대한 자세한 정보입니다.
+
+여러 캡션 변경 사항은 게시된 비디오에 대한 URL 수정자를 통해 추가된 캡션보다 우선합니다.
+
+**캡션 수정자가 있는 기존 URL이 있는 비디오에 여러 캡션을 추가하려면 다음을 수행하십시오.**
+
+1. 수정자로 이미 추가된 캡션 파일을 비디오에 업로드하면 파일을 명시적으로 관리할 수 있습니다.
+1. 필요에 따라 추가 자막/캡션 파일을 업로드합니다.
+1. 평소대로 비디오를 게시합니다.
+이제 캡션 수정자가 있는 기존 URL에서 여러 캡션을 로드할 수 있습니다.
+
+### 업로드된 자막 및 오디오 트랙 파일의 라이프사이클 상태 보기{#lifecycle-status-video}
+
+에서 기본 비디오에 업로드된 모든 자막 또는 오디오 트랙 파일의 라이프사이클 상태를 관찰할 수 있습니다. **자막 및 오디오 트랙** 탭 / **속성**.
+
+**비디오의 라이프사이클 상태를 보려면 다음 작업을 수행하십시오.**
+
+1. 라이프사이클 상태를 보려는 비디오 자산으로 이동합니다.
+1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
+1. 속성 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭. 상태 열에서 각 자막 또는 오디오 파일의 상태를 확인합니다.
+
+| 자막 또는 오디오 트랙 상태 | 설명 |
+| --- | --- |
+| 처리 중 | 처리가 진행 중입니다. |
+| 처리됨 | 처리가 완료되었습니다. |
+| 게시됨 | Dynamic Media에 게시됨. |
+| 실패 | 처리가 완료되지 않았습니다. 파일을 삭제하고 다시 업로드해 보십시오. |
+| 게시 취소됨 | 처리 중이지만 아직 Dynamic Media에 게시되지 않았습니다. |
+
+![자막 및 오디오 트랙 필드에 대해 강조 표시된 상태 열입니다.](assets-dm/msma-lifecycle-status.png)*업로드된 각 자막 및 오디오 트랙 파일의 라이프사이클 상태입니다.*
+
+### 여러 오디오 트랙이 있는 비디오의 기본 오디오 설정
+
+기본적으로 비디오의 원본 오디오가 재생되는 기본 오디오로 설정됩니다.
+
+그러나 업로드된 모든 오디오 트랙 파일은 비디오가 뷰어에 로드된 후 재생할 기본 오디오로 설정할 수 있습니다. 속성 사용자 인터페이스에서 **자막 및 오디오 트랙** 탭, `Default` 레이블은 비디오 재생을 위해 오디오 트랙 파일의 오른쪽에 적용됩니다.
+
+>[!NOTE]
+>
+>기본 오디오 재생은 다음 브라우저에 설정된 내용에 따라 달라질 수 있습니다.
+>
+>* Chrome - 비디오에 설정된 기본 오디오가 재생됩니다.
+* Safari - Safari에 기본 언어가 설정되어 있으면 비디오의 매니페스트와 함께 사용할 수 있는 경우 설정된 기본 언어로 오디오가 재생됩니다. 그렇지 않으면 비디오 속성의 일부로 설정된 기본 오디오가 재생됩니다.
+
+**여러 오디오 트랙이 있는 비디오의 기본 오디오를 설정하려면 다음 작업을 수행하십시오.**
+
+1. 기본 오디오 트랙을 설정할 비디오 자산으로 이동합니다.
+1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
+1. 속성 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭.
+1. 아래 **오디오 트랙** 머리글에서 비디오의 기본값으로 설정할 오디오 트랙 파일을 선택합니다.
+1. 선택 **[!UICONTROL 기본값으로 설정]**.
+다음에서 **기본값으로 설정** 대화 상자에서 **[!UICONTROL 바꾸기]**.
+
+   ![선택한 오디오 트랙 파일 이름이 있고 &quot;기본값으로 설정&quot; 버튼이 강조 표시된 오디오 트랙 제목입니다.](assets-dm/msma-defaultaudiotrack.png)*비디오에 대한 기본 오디오 트랙 설정.*
+
+1. 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 저장 및 닫기]**.
+1. 비디오를 게시합니다. 다음을 참조하십시오 [자산 게시](publishing-dynamicmedia-assets.md).
+
+### 여러 자막과 오디오 트랙이 있는 비디오 미리 보기{#preview-video-audio-subtitle}
+
+자막 파일 및 오디오 트랙 파일이 비디오에 업로드되고 처리된 후 Dynamic Media 비디오 뷰어를 사용하여 다른 모든 트랙을 미리 볼 수 있습니다. 이렇게 하면 비디오가 고객에게 어떤 모습과 소리로 들리는지 확인하고 예상대로 작동하는지 확인하는 데 도움이 됩니다.
+
+비디오가 만족스러우면 다음 작업을 수행할 수 있습니다 [게시](publishing-dynamicmedia-assets.md) 다음 방법 중 하나를 사용합니다.
+
+다음을 참조하십시오 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md).
+다음을 참조하십시오 [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md). 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+다음을 참조하십시오 [페이지에 Dynamic Media 에셋 추가](/help/assets/adding-dynamic-media-assets-to-pages.md).
+
+>[!NOTE]
+>
+기본 Experience Manager 미리 보기 탭에는 여러 개의 자막 및 오디오 트랙이 표시되지 않습니다. 그 이유는 해당 트랙이 Dynamic Media과 연결되어 있으며 Dynamic Media 뷰어 미리 보기를 통해서만 볼 수 있기 때문입니다.
+
+**여러 자막 및 오디오 트랙이 있는 비디오를 미리 보려면 다음 작업을 수행하십시오.**
+
+1. 위치 **[!UICONTROL 에셋]**, 여러 자막 및 오디오 트랙을 추가한 기존 비디오로 이동합니다.
+1. 비디오 자산을 미리보기 모드에서 열 수 있도록 클릭합니다.
+1. 미리보기 페이지에서 페이지의 왼쪽 상단 모서리 근처에 있는 드롭다운 목록을 선택한 다음 를 선택합니다 **[!UICONTROL 뷰어]**.
+
+   ![뷰어 옵션을 보여 주는 드롭다운 목록입니다.](assets-dm/msma-selectviewers.png)
+
+1. 뷰어 목록에서 를 선택합니다. **[!UICONTROL 비디오]**.
+
+   ![뷰어 드롭다운 목록에서 비디오 뷰어 선택.](assets-dm/msma-dmviewerselected.png)
+
+1. 오른쪽 하단 모서리 근처에서 볼륨 아이콘 왼쪽에 있는 말풍선 아이콘을 선택한 다음 듣거나 보려는 오디오 또는 자막을 선택하거나 둘 다 선택합니다. 원하는 경우 자막 아래에서 다음을 선택할 수 있습니다. **[!UICONTROL 끔]** 자막이나 캡션을 표시하지 않습니다.
+
+   ![비디오 뷰어의 오디오 및 자막 팝업 목록입니다.](assets-dm/msma-selectaudiosubtitle.png)*비디오 재생을 위한 오디오 및 자막을 선택하는 사용자의 시뮬레이션.*
+
+1. 비디오 선택 **[!UICONTROL 재생]** 재생을 시작할 단추입니다.
+다음을 참고하십시오. **[!UICONTROL URL]** 및 **[!UICONTROL 포함]** 왼쪽 아래에 있는 단추. 이 단추를 사용하여 다음을 수행합니다 [비디오의 URL을 웹 애플리케이션에 연결합니다](/help/assets/linking-urls-to-yourwebapplication.md) 또는 종료 [웹 페이지에 비디오 포함](/help/assets/embed-code.md), 각각
+1. 미리 보기 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 닫기]**.
+
+### 비디오에서 자막 또는 오디오 트랙 파일 삭제
+
+비디오에서 자막 또는 오디오 트랙 파일을 삭제할 수 있습니다. 게시된 자막 또는 오디오 트랙 파일의 삭제는 비디오의 게시된 URL에 자동으로 반영됩니다.
+
+기본 비디오에서 추출한 원본 오디오 트랙은 삭제할 수 없습니다.
+
+**비디오에서 자막 또는 오디오 트랙 파일을 삭제하려면 다음 작업을 수행하십시오.**
+
+1. 기본 오디오 트랙을 설정할 비디오 자산으로 이동합니다.
+1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
+1. 속성 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭.
+1. 다음 중 하나를 수행합니다.
+
+   * 자막 - 아래 **자막** 머리글에서 비디오에서 삭제할 자막 파일을 하나 이상 선택한 다음 을 선택합니다 **[!UICONTROL 삭제]**.
+   * 오디오 트랙 - 아래 **오디오 트랙** 머리글에서 비디오에서 삭제할 하나 이상의 오디오 트랙 파일을 선택한 다음 을 선택합니다 **[!UICONTROL 삭제]**.
+
+1. 삭제 대화 상자에서 다음을 선택합니다. **[!UICONTROL 확인]**.
+1. 비디오를 게시합니다.
+
+### 비디오에 업로드된 자막 또는 오디오 트랙 파일 다운로드
+
+비디오에 사용하기 위해 업로드한 자막 또는 오디오 트랙 파일을 하나 이상 다운로드할 수 있습니다. 선택한 모든 파일을 .zip으로 다운로드하거나 각 파일에 대해 별도의 다운로드 폴더를 만들 수 있습니다.
+
+기본 파일에서 추출한 원본 오디오 트랙을 다운로드할 수 없습니다.
+
+**비디오에서 자막 또는 오디오 트랙 파일을 다운로드하려면 다음을 수행하십시오.**
+
+1. 기본 오디오 트랙을 설정할 비디오 자산으로 이동합니다.
+1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
+1. 속성 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭.
+1. 다음 중 하나를 수행합니다.
+
+   * 자막 - 아래 **자막** 머리글에서 비디오에서 다운로드할 자막 파일을 하나 이상 선택한 다음 을 선택합니다 **[!UICONTROL 다운로드]**.
+   * 오디오 트랙 - 아래 **오디오 트랙** 제목, 비디오에서 다운로드할 오디오 트랙 파일을 하나 이상 선택한 다음 을 선택합니다 **[!UICONTROL 다운로드]**.
+
+1. 다운로드 대화 상자에서 다음 옵션을 설정합니다.
+
+   | 옵션 | 설명 |
+   |--- |--- |
+   | 다른 이름으로 저장 | 다른 이름으로 저장 텍스트 필드에 지정된 기본 파일 이름을 사용하거나 고유한 이름을 지정합니다. |
+   | 각 에셋에 대해 별도의 폴더 만들기 | 다운로드하도록 선택한 각 자막 파일 또는 오디오 트랙 파일에 대해 폴더를 만듭니다. |
+   | 이메일 | 기본 이메일 프로그램을 사용하여 .zip 파일을 지정된 이메일 주소로 전송합니다. |
+   | 자산 | 다운로드하는 파일의 수와 선택한 모든 파일의 전체 크기를 지정합니다. 이 옵션을 선택 해제하면 **[!UICONTROL 다운로드]** 단추를 클릭하여 파일을 다운로드할 수 없습니다. |
+1. 선택 **[!UICONTROL 다운로드]**.
+1. 비디오를 게시합니다. 다음을 참조하십시오 [자산 게시](publishing-dynamicmedia-assets.md).
+
+
+
+
+
+
 ## 비디오에 폐쇄 캡션 또는 자막 추가 {#adding-captions-to-video}
+
+>[!IMPORTANT]
+>
+이 항목은 더 이상 적극적으로 유지 관리되지 않습니다. Dynamic Media 레거시 사용자를 위해 있는 그대로 제공됩니다. Adobe은 다음을 권장합니다. [다중 자막 및 다중 오디오 추적 기능 활성화](##enable-dash) Dynamic Media 계정에서. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로를 활용할 수 있습니다.
 
 단일 비디오 또는 응용 비디오 세트에 자막 기능을 추가하여 비디오를 글로벌 시장으로 확장할 수 있습니다. 폐쇄 캡션을 추가하면 오디오를 더빙하거나 원어민을 사용하여 각 언어의 오디오를 다시 녹음할 필요가 없습니다. 이 비디오는 녹화된 언어로 재생됩니다. 외국어 자막이 등장해 다른 언어를 사용하는 사람들도 여전히 오디오 부분을 이해할 수 있다.
 
@@ -579,7 +860,7 @@ Dynamic Media에서 제공하는 기본 제공 비디오 뷰어를 사용하거�
 
 >[!NOTE]
 >
->사용하는 비디오 플레이어는 캡션 표시를 지원해야 합니다.
+사용하는 비디오 플레이어는 캡션 표시를 지원해야 합니다.
 
 참조: [Dynamic Media의 접근성](/help/assets/accessibility-dm.md).
 
@@ -587,7 +868,7 @@ Dynamic Media은 캡션 파일을 JSON(JavaScript Object Notation) 형식으로 
 
 다음을 참조하십시오 [정적(이미지가 아닌) 콘텐츠 제공](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) 다음에서 *Dynamic Media 이미지 제공 및 렌더링 API 도움말* url에서 JSON 함수를 사용하는 방법에 대한 자세한 정보입니다.
 
-**비디오에 캡션 또는 자막을 추가하려면:**
+**비디오에 폐쇄 캡션 또는 자막을 추가하려면 다음 작업을 수행하십시오.**
 
 1. 서드파티 애플리케이션 또는 서비스를 사용하여 비디오 자막/자막 파일을 만듭니다.
 
@@ -607,7 +888,7 @@ Dynamic Media은 캡션 파일을 JSON(JavaScript Object Notation) 형식으로 
 
    >[!NOTE]
    >
-   >여러 언어로 비디오 자막을 전체적으로 지원하려면 WebVTT 표준을 사용하려면 지원하려는 각 언어에 대해 별도의 .vtt 파일과 호출을 만들어야 합니다.
+   여러 언어로 비디오 자막을 전체적으로 지원하려면 WebVTT 표준을 사용하려면 지원하려는 각 언어에 대해 별도의 .vtt 파일과 호출을 만들어야 합니다.
 
    일반적으로 캡션 VTT 파일의 이름을 비디오 파일과 같은 이름으로 지정하고 언어 로케일(예: -EN, -FR 또는 -DE)과 함께 추가합니다. 이렇게 하면 기존 웹 컨텐츠 관리 시스템을 사용하여 비디오 URL의 생성을 자동화하는 데 도움이 될 수 있습니다.
 
@@ -622,23 +903,27 @@ Dynamic Media은 캡션 파일을 JSON(JavaScript Object Notation) 형식으로 
 
    * 팝업 비디오 뷰어 환경을 보려면 을 누릅니다. **[!UICONTROL URL]**. URL 대화 상자에서 을 선택하고 URL을 클립보드로 복사한 다음 URL을 지나 단순 텍스트 편집기로 이동합니다. 복사한 비디오의 URL을 다음 구문과 함께 추가합니다.
 
-      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
+     `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      다음을 참고하십시오. `,1` 캡션 경로의 끝입니다. 다음 바로 뒤 `.vtt` 경로의 파일 이름 확장자를으로 설정하여 비디오 플레이어 막대에서 선택 캡션 단추를 활성화(켜기)하거나 비활성화(끄기)할 수 있습니다. `,1` 또는 `,0`, 각각
+     다음을 참고하십시오. `,1` 캡션 경로의 끝입니다. 다음 바로 뒤 `.vtt` 경로의 파일 이름 확장자를으로 설정하여 비디오 플레이어 막대에서 선택 캡션 단추를 활성화(켜기)하거나 비활성화(끄기)할 수 있습니다. `,1` 또는 `,0`, 각각
 
    * 포함된 비디오 뷰어 환경을 보려면 다음을 누르십시오. **[!UICONTROL 포함 코드]**. 포함 코드 대화 상자에서 을 선택하고 포함 코드를 클립보드에 복사한 다음 코드를 간단한 텍스트 편집기에 붙여넣습니다. 복사된 포함 코드를 다음 구문과 함께 추가합니다.
 
-      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
+     `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      다음을 참고하십시오. `,1` 캡션 경로의 끝입니다. 다음 바로 뒤 `.vtt` 경로의 파일 이름 확장자를으로 설정하여 비디오 플레이어 막대에서 선택 캡션 단추를 활성화(켜기)하거나 비활성화(끄기)할 수 있습니다. `,1` 또는 `,0`, 각각
+     다음을 참고하십시오. `,1` 캡션 경로의 끝입니다. 다음 바로 뒤 `.vtt` 경로의 파일 이름 확장자를으로 설정하여 비디오 플레이어 막대에서 선택 캡션 단추를 활성화(켜기)하거나 비활성화(끄기)할 수 있습니다. `,1` 또는 `,0`, 각각
 
 ## 비디오에 챕터 마커 추가 {#adding-chapter-markers-to-video}
+
+>[!IMPORTANT]
+>
+이 항목은 더 이상 적극적으로 유지 관리되지 않습니다. Dynamic Media 레거시 사용자를 위해 있는 그대로 제공됩니다. Adobe은 다음을 권장합니다. [다중 자막 및 다중 오디오 추적 기능 활성화](#enable-dash) Dynamic Media 계정에서. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로를 활용할 수 있습니다.
 
 장 마커를 단일 비디오나 응용 비디오 세트에 추가하여 긴 양식 비디오를 더 쉽게 보고 탐색할 수 있습니다. 사용자가 비디오를 재생할 때 비디오 타임라인에서 챕터 마커(비디오 스크러버라고도 함)를 클릭하여 관심 영역으로 쉽게 이동할 수 있습니다. 또는 새로운 콘텐츠, 데모 및 튜토리얼로 바로 이동할 수 있습니다.
 
 >[!NOTE]
 >
->사용되는 비디오 플레이어는 챕터 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 챕터 마커를 지원하지만 서드파티 비디오 플레이어를 사용하면 지원하지 않을 수 있습니다.
+사용되는 비디오 플레이어는 챕터 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 챕터 마커를 지원하지만 서드파티 비디오 플레이어를 사용하면 지원하지 않을 수 있습니다.
 
 원하는 경우 비디오 뷰어 사전 설정을 사용하는 대신 챕터로 사용자 지정 비디오 뷰어를 만들고 브랜드화할 수 있습니다. 챕터 탐색으로 자신만의 HTML5 뷰어를 만드는 방법에 대한 지침은 Adobe HTML5 뷰어 SDK API의 클래스 아래 &quot;수정자를 사용하여 동작 사용자 지정&quot; 제목을 참조하십시오 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber`. 다음을 참조하십시오. [HTML5 뷰어 SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) 설명서를 참조하십시오.
 
@@ -749,13 +1034,13 @@ Experience Manager의 모든 비디오에는 연결된 썸네일이 있어야 �
 
       * 도구 모음에서 을 누릅니다. **[!UICONTROL 비디오에서 프레임 선택]**.
       * 재생 버튼을 탭한 다음 비디오의 새 썸네일로 캡처할 프레임에서 일시 중지 버튼을 탭합니다.
+
    * 이미지 자산을 새 썸네일로 사용하려면 다음을 수행하십시오.
 
       * 도구 모음에서 을 누릅니다. **[!UICONTROL 에셋에서 썸네일 선택]**.
       * 누르기 **[!UICONTROL 썸네일 선택]**.
       * 사용할 이전에 업로드되고 게시된 이미지 자산으로 이동합니다. 에셋의 크기가 자동으로 조정되어 비디오의 썸네일 이미지로 사용됩니다.
       * 이미지 에셋을 선택한 다음 을 누릅니다 **[!UICONTROL 선택]**.
-
 
 1. 썸네일 변경 페이지에서 을 누릅니다. **[!UICONTROL 변경 내용 저장]**.
 1. 비디오의 속성 페이지에서 오른쪽 상단 모서리에서 을 누릅니다 **[!UICONTROL 저장 및 닫기]**.
@@ -768,7 +1053,7 @@ Dynamic Media은 비디오의 총 시간을 기반으로 10개의(기본) 썸네
 
 이상적으로는 비디오를 업로드한 후 웹 사이트에 비디오를 게시하기 전에 언제든지 비디오 썸네일을 추가할 수 있습니다.
 
-원하는 경우 Dynamic Media에서 생성한 썸네일을 사용하는 대신 비디오를 나타내는 사용자 정의 썸네일을 업로드하도록 선택할 수 있습니다. 예를 들어 비디오 제목, 눈길을 끄는 열기 이미지 또는 비디오에서 캡처한 특정 이미지가 있는 사용자 정의 썸네일 이미지를 만들 수 있습니다. 업로드하는 사용자 지정 비디오 썸네일 이미지의 해상도는 최대 1280 x 720픽셀(최소 너비 640픽셀)이며 2MB보다 커야 합니다.
+원하는 경우 Dynamic Media에서 생성한 썸네일을 사용하는 대신 비디오를 나타내는 사용자 정의 썸네일을 업로드하도록 선택할 수 있습니다. 예를 들어 비디오 제목, 눈길을 끄는 열기 이미지 또는 비디오에서 캡처한 특정 이미지가 있는 사용자 지정 썸네일 이미지를 만들 수 있습니다. 업로드하는 사용자 지정 비디오 썸네일 이미지의 해상도는 최대 1280 x 720픽셀(최소 너비 640픽셀)이며 2MB보다 커야 합니다.
 
 참조: [Dynamic Media - Scene7 모드의 비디오 썸네일 정보](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
@@ -1152,8 +1437,8 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 | 쿼리 매개 변수 | 설명 |
 | --- | --- |
 | `assetPath` | 필수. 에 대한 비디오 경로 `manifestUrl` 이 생성됩니다. |
-| `manifestType` | 선택 사항. 매개변수는 DASH 또는 HLS일 수 있습니다. 전달되지 않으면 기본값은 DASH입니다. |
-| `onlyIfPublished` | 선택 사항. 전달된 경우 `manifestUrl` 비디오가 게시된 경우에만 가 반환됩니다. |
+| `manifestType` | 옵션. 매개변수는 DASH 또는 HLS일 수 있습니다. 전달되지 않으면 기본값은 DASH입니다. |
+| `onlyIfPublished` | 옵션. 전달된 경우 `manifestUrl` 비디오가 게시된 경우에만 가 반환됩니다. |
 
 이 예제에서는 다음 설정을 가정합니다.
 
