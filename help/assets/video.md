@@ -10,7 +10,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: d11914d0902075bd36cf1e8f7405b8ac90157f15
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
 source-wordcount: '11269'
 ht-degree: 2%
@@ -449,7 +449,7 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 �
 
 >[!IMPORTANT]
 >
->업로드한 모든 비디오 *이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md##reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
+>업로드한 모든 비디오 *이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
 
 **Dynamic Media 계정에서 DASH, 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 다음을 수행합니다.**
 
@@ -625,7 +625,7 @@ Dynamic Media의 다중 자막 및 다중 오디오 트랙 기능을 사용하�
 
 >[!IMPORTANT]
 >
->업로드한 모든 비디오 *이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md##reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
+>업로드한 모든 비디오 *이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
 
 **비디오에 다중 자막 및 다중 오디오 트랙을 추가하려면:**
 
@@ -693,7 +693,7 @@ Dynamic Media의 다중 자막 및 다중 오디오 트랙 기능을 사용하�
 
 >[!CAUTION]
 >
->이미 게시된 비디오에 자막 파일 또는 오디오 파일을 업로드할 때 다음과 같은 파일이 삭제됩니다. [*재처리*](/help/assets/processing-profiles.md##reprocessing-assets) 비디오입니다. 비디오의 원본 오디오만 그대로 유지됩니다. 이러한 경우 자막 파일 및 오디오 트랙 파일을 비디오에 다시 업로드해야 합니다.
+>이미 게시된 비디오에 자막 파일 또는 오디오 파일을 업로드할 때 다음과 같은 파일이 삭제됩니다. [*재처리*](/help/assets/processing-profiles.md#reprocessing-assets) 비디오입니다. 비디오의 원본 오디오만 그대로 유지됩니다. 이러한 경우 자막 파일 및 오디오 트랙 파일을 비디오에 다시 업로드해야 합니다.
 
 #### 기존 URL이 있는 비디오에 캡션 수정자가 있는 여러 캡션 추가
 
@@ -852,7 +852,7 @@ Dynamic Media은 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 
 >[!IMPORTANT]
 >
-이 항목은 더 이상 적극적으로 유지 관리되지 않습니다. Dynamic Media 레거시 사용자를 위해 있는 그대로 제공됩니다. Adobe은 다음을 권장합니다. [다중 자막 및 다중 오디오 추적 기능 활성화](##enable-dash) Dynamic Media 계정에서. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로를 활용할 수 있습니다.
+이 항목은 더 이상 적극적으로 유지 관리되지 않습니다. Dynamic Media 레거시 사용자를 위해 있는 그대로 제공됩니다. Adobe은 다음을 권장합니다. [다중 자막 및 다중 오디오 추적 기능 활성화](#enable-dash) Dynamic Media 계정에서. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로를 활용할 수 있습니다.
 
 단일 비디오 또는 응용 비디오 세트에 자막 기능을 추가하여 비디오를 글로벌 시장으로 확장할 수 있습니다. 폐쇄 캡션을 추가하면 오디오를 더빙하거나 원어민을 사용하여 각 언어의 오디오를 다시 녹음할 필요가 없습니다. 이 비디오는 녹화된 언어로 재생됩니다. 외국어 자막이 등장해 다른 언어를 사용하는 사람들도 여전히 오디오 부분을 이해할 수 있다.
 

@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 8edc6a97e2fc002d6dbbc4ce8b1828616b6c1cc6
+source-git-commit: 2209ab8498072744091f5af22887c8f13dbb3ac6
 workflow-type: tm+mt
-source-wordcount: '3440'
+source-wordcount: '3464'
 ht-degree: 10%
 
 ---
@@ -54,6 +54,10 @@ ht-degree: 10%
 * 시스템에 많은 프로젝트가 있을 수 있는 목록 보기에서 프로젝트를 빠르게 찾기 위해 이제 Adobe에서 서버측 정렬을 지원합니다. 프로젝트 노드는 사용자 인터페이스에서 렌더링하기 전에 사용자가 선택한 열을 기반으로 백엔드에서 정렬됩니다. (NPR-41027)
 
 * AEM 6.5.18.0은 MongoDB 5.0에서 6.0으로 지원합니다.
+
+**사용되지 않는 기능**
+
+* AEM의 ActiveMQ는 더 이상 사용되지 않습니다. ActiveMQ는 두 AEM Publish 인스턴스 간의 통신에 사용되었습니다. Adobe은 이제 고객이 로드 밸런서를 사용할 것을 권장합니다.
 
 **양식**
 
