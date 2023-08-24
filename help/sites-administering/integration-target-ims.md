@@ -2,10 +2,10 @@
 title: IMS를 사용하여 Adobe Target과 통합
 description: IMS를 사용하여 AEM과 Adobe Target 통합에 대해 알아보기
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 54%
+source-wordcount: '1577'
+ht-degree: 53%
 
 ---
 
@@ -18,7 +18,7 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe Devel
 >
 >Adobe Target Standard API에 대한 지원은 AEM 6.5의 새로운 기능입니다. Target Standard API는 IMS 인증을 사용합니다.
 >
->이전 버전과의 호환성을 위해 AEM에서 Adobe Target Classic API를 사용하는 것이 여전히 지원됩니다. 다음 [Target Classic API가 사용자 자격 증명 인증을 사용합니다.](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
+>이전 버전과의 호환성을 위해 AEM에서 Adobe Target Classic API를 사용하는 것이 여전히 지원됩니다. 다음 [Target Classic API는 사용자 자격 증명 인증을 사용합니다](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 >
 >API 선택은 AEM/Target 통합에 사용되는 인증 방법에 따라 결정됩니다.
 >다음 항목도 참조하십시오. [테넌트 ID 및 클라이언트 코드](#tenant-client) 섹션.
@@ -68,6 +68,12 @@ Adobe Developer 콘솔을 사용하여 AEM에서 사용할 Adobe Target으로 �
 ### 프로젝트 만들기 {#creating-the-project}
 
 Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 프로젝트를 만듭니다.
+
+>[!CAUTION]
+>
+>현재는 Adobe Developer 콘솔만 지원합니다. **서비스 계정(JWT)** 자격 증명 유형.
+>
+>를 사용하지 마십시오. **OAuth 서버 간** 나중에 지원되는 자격 증명 유형입니다.
 
 1. 프로젝트용 Adobe Developer Console을 엽니다.
 
@@ -154,7 +160,7 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 
 
 ## AEM에서 IMS 구성 완료 {#completing-the-ims-configuration-in-aem}
 
-AEM으로 돌아가면 Target을 위해 Adobe Developer 콘솔 통합에서 필요한 값을 추가하여 IMS 구성을 완료할 수 있습니다.
+AEM으로 돌아가 Target용 Adobe Developer 콘솔 통합에서 필요한 값을 추가하여 IMS 구성을 완료할 수 있습니다.
 
 1. [AEM에서 열려 있는 IMS 구성](#configuring-an-ims-configuration-generating-a-public-key)으로 돌아갑니다.
 1. **다음**&#x200B;을 선택합니다.
@@ -200,7 +206,7 @@ AEM으로 돌아가면 Target을 위해 Adobe Developer 콘솔 통합에서 필�
 
 이제 Cloud Service이 Target Standard API를 사용하도록 구성을 참조할 수 있습니다.
 
-1. 를 엽니다. **도구** 메뉴 아래의 제품에서 사용할 수 있습니다. 그런 다음 **Cloud Services** 섹션, 선택 **이전 Cloud Services**.
+1. 를 엽니다. **도구** 메뉴 아래의 제품에서 사용할 수 있습니다. 그런 다음 **Cloud Service** 섹션, 선택 **이전 Cloud Service**.
 1. 아래로 스크롤하여 **Adobe Target** 및 선택 **지금 구성**.
 
    다음 **구성 만들기** 대화 상자가 열립니다.
@@ -239,7 +245,7 @@ AEM으로 돌아가면 Target을 위해 Adobe Developer 콘솔 통합에서 필�
 
    * **정확한 타겟팅 사용**: 기본적으로 이 확인란은 선택되어 있습니다. 이 확인란을 선택하면 클라우드 서비스 구성은 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기합니다. 다음 사항에 주의하십시오.
 
-   * **Adobe Target의 세그먼트 동기화**: AEM에서 사용하기 위해 Target에 정의된 세그먼트를 다운로드하려면 이 옵션을 선택합니다. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않아 항상 Target의 세그먼트를 사용해야 하므로 이 옵션을 선택해야 합니다. (AEM 용어인 “세그먼트”는 Target에서의 “대상자”와 동일합니다.)
+   * **Adobe Target의 세그먼트 동기화**: Target에 정의된 세그먼트를 다운로드하여 AEM에서 사용하려면 이 옵션을 선택하십시오. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않아 항상 Target의 세그먼트를 사용해야 하므로 이 옵션을 선택해야 합니다. (AEM 용어인 “세그먼트”는 Target에서의 “대상자”와 동일합니다.)
 
    * **클라이언트 라이브러리**: AT.js 클라이언트 라이브러리를 원하는지 mbox.js(더 이상 사용되지 않음)를 원하는지 선택합니다.
 
@@ -257,7 +263,7 @@ AEM으로 돌아가면 Target을 위해 Adobe Developer 콘솔 통합에서 필�
 
 1. 선택 **확인** 메시지, 다음 메시지 **확인** 대화 상자에서 구성을 확인합니다.
 
-1. 이제 다음으로 진행할 수 있습니다. [Target 프레임워크 추가](/help/sites-administering/target-configuring.md#adding-a-target-framework) Target으로 전송할 ContextHub 또는 ClientContext 매개 변수를 구성합니다. AEM Experience Fragments를 Target으로 내보내는 데는 이 작업이 필요하지 않을 수 있습니다.
+1. 이제 다음으로 진행할 수 있습니다. [Target 프레임워크 추가](/help/sites-administering/target-configuring.md#adding-a-target-framework) Target으로 전송될 ContextHub 또는 ClientContext 매개 변수를 구성합니다. AEM Experience Fragments를 Target으로 내보내는 경우에는 이 작업이 필요하지 않을 수 있습니다.
 
 ### 테넌트 ID 및 클라이언트 코드 {#tenant-client}
 

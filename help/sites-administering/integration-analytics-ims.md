@@ -2,10 +2,10 @@
 title: IMS를 사용하여 Adobe Analytics과 통합
 description: IMS를 사용하여 AEM과 Adobe Analytics 통합에 대해 알아보기
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 65%
+source-wordcount: '1085'
+ht-degree: 63%
 
 ---
 
@@ -69,6 +69,12 @@ Adobe Developer Console을 사용하여 AEM이 사용할 Adobe Analytics로 프�
 ### 프로젝트 만들기 {#creating-the-project}
 
 Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하여 프로젝트를 만듭니다.
+
+>[!CAUTION]
+>
+>현재는 Adobe Developer 콘솔만 지원합니다. **서비스 계정(JWT)** 자격 증명 유형.
+>
+>를 사용하지 마십시오. **OAuth 서버 간** 나중에 지원되는 자격 증명 유형입니다.
 
 1. 프로젝트용 Adobe Developer Console을 엽니다.
 
@@ -190,7 +196,7 @@ AEM으로 돌아가 Analytics용 통합 프로젝트에서 필요한 값을 추�
 
 이제 Cloud Service이 Analytics Standard API를 사용하도록 구성을 참조할 수 있습니다.
 
-1. 를 엽니다. **도구** 메뉴 아래의 제품에서 사용할 수 있습니다. 그런 다음 **Cloud Services** 섹션, 선택 **이전 Cloud Services**.
+1. 를 엽니다. **도구** 메뉴 아래의 제품에서 사용할 수 있습니다. 그런 다음 **Cloud Service** 섹션, 선택 **이전 Cloud Service**.
 1. 아래로 스크롤하여 **Adobe Analytics** 및 선택 **지금 구성**.
 
    다음 **구성 만들기** 대화 상자가 열립니다.
