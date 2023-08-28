@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+source-git-commit: ee1a0866aafd56fa53f5d3b936beab8f500d335c
 workflow-type: tm+mt
-source-wordcount: '11269'
+source-wordcount: '11363'
 ht-degree: 2%
 
 ---
@@ -131,7 +131,7 @@ Dynamic Media의 비디오는 데스크톱, iOS, Android™, BlackBerry® 및 Wi
 1. 비디오 플레이어는 플레이어 자체에서 &quot;초기 비트율&quot;에 대해 설정된 값에 가장 가까운 비트율에 따라 초기 비디오 조각을 로드합니다.
 1. 다음 기준을 사용하여 대역폭 속도에 대한 변경 사항에 따라 비디오 플레이어 스위치를 전환합니다.
 
-   1. 플레이어는 가장 높은 대역폭 스트림을 예상 대역폭보다 작거나 같은 대역폭으로 선택합니다.
+   1. 플레이어는 추정된 대역폭보다 낮거나 같은 가장 높은 대역폭 스트림을 선택한다.
    1. 플레이어는 가용 대역폭의 80%만 고려합니다. 다만 전환하고 있다면 과대평가를 피하고 곧바로 다시 전환하는 것이 70%에 그쳐 더 보수적이다.
 
 알고리즘에 대한 자세한 기술 정보는 [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
@@ -145,7 +145,7 @@ Dynamic Media의 비디오는 데스크톱, iOS, Android™, BlackBerry® 및 Wi
 
 * 모든 HTML5 비디오 뷰어에서 비디오 캡션 기능.
 * 전체 메타데이터 지원을 통해 비디오를 구성, 탐색 및 검색하여 비디오 자산을 효율적으로 관리할 수 있습니다.
-* iPhone, iPad, Android™, BlackBerry® 및 Windows Phone을 비롯한 웹 및 데스크탑, 모바일 디바이스에 응용 비디오 세트를 제공합니다.
+* iPhone, iPad, Android™, BlackBerry® 및 Windows phone을 비롯한 데스크탑 및 모바일 장치와 웹에 응용 비디오 세트를 제공합니다.
 
 응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. 다음을 참조하십시오 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
@@ -321,7 +321,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 기본 소스 비디오 파일에 대한 비디오 인코딩 사전 설정을 선택하거나 만들 때 사전 설정이 기본 소스 비디오 파일과 종횡비가 같은지 확인하십시오. 가로 세로 비율은 비디오 높이에 대한 너비의 비율입니다.
 
-비디오 파일의 종횡비를 결정하려면 파일의 메타데이터를 가져오고 파일의 너비와 높이를 확인합니다(위의 파일 메타데이터 가져오기 참조). 그런 다음 이 공식을 사용하여 종횡비를 결정합니다.
+비디오 파일의 종횡비를 결정하려면 파일의 메타데이터를 가져오고 파일 너비 및 높이를 확인합니다(위의 파일 메타데이터 가져오기 참조). 그런 다음 이 공식을 사용하여 종횡비를 결정합니다.
 
 width/height = 종횡비
 
@@ -449,7 +449,7 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 �
 
 >[!IMPORTANT]
 >
->업로드한 모든 비디오 *이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
+>업로드한 모든 비디오 *다음 이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원 활성화, [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
 
 **Dynamic Media 계정에서 DASH, 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 다음을 수행합니다.**
 
@@ -625,7 +625,7 @@ Dynamic Media의 다중 자막 및 다중 오디오 트랙 기능을 사용하�
 
 >[!IMPORTANT]
 >
->업로드한 모든 비디오 *이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
+>업로드한 모든 비디오 *다음 이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원 활성화, [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
 
 **비디오에 다중 자막 및 다중 오디오 트랙을 추가하려면:**
 
@@ -637,9 +637,14 @@ Dynamic Media의 다중 자막 및 다중 오디오 트랙 기능을 사용하�
 1. 비디오의 속성 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭.
 
    >[!TIP]
-   >표시되지 않는 경우 **[!UICONTROL 자막 및 오디오 트랙]** 탭은 선택한 비디오가 있는 폴더에 할당된 비디오 프로필이 없음을 의미합니다. [폴더에 비디오 프로필 적용](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders)을 클릭한 다음 이 단계로 돌아갑니다.
+   >표시되지 않는 경우 **[!UICONTROL 자막 및 오디오 트랙]** tab은 다음 두 가지 중 하나를 의미합니다.
+   >
+   >* 선택한 비디오가 있는 폴더에 비디오 프로필이 할당되어 있지 않습니다. 이 경우 다음을 참조하십시오 [폴더에 비디오 프로필 적용](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders).
+   >* 또는 Dynamic Media에서 비디오를 재처리해야 합니다. 이 경우 다음을 참조하십시오 [폴더에서 에셋 재처리](/help/assets/processing-profiles.md#reprocessing-assets).
+   >
+   >위의 작업 중 하나를 완료했으면 다음 단계로 돌아갑니다.
 
-   ![속성 페이지의 자막 및 오디오 트랙 탭&#x200B;](assets-dm/msma-audiotracks.png)*비디오의 속성 페이지에 있는 자막 및 오디오 트랙 탭 빈 오디오 트랙 목록 상자에 표시된 대로 비디오와 연결된 원래 오디오 트랙이 없습니다. 비디오 처리가 완료되면 트랙이 나타납니다.*
+   ![속성 페이지의 자막 및 오디오 트랙 탭&#x200B;](assets-dm/msma-audiotracks.png)*비디오의 속성 페이지에 있는 자막 및 오디오 트랙 탭*
 
 1. (선택 사항) 비디오에 하나 이상의 자막(또는 캡션) 파일을 추가하려면 다음을 수행합니다.
    * 선택 **[!UICONTROL 자막 업로드]**.
@@ -721,15 +726,15 @@ Dynamic Media은 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 1. 라이프사이클 상태를 보려는 비디오 자산으로 이동합니다.
 1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
 1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
-1. 속성 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭. 상태 열에서 각 자막 또는 오디오 파일의 상태를 확인합니다.
+1. Properties 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭. 상태 열에서 각 자막 또는 오디오 파일의 상태를 확인합니다.
 
 | 자막 또는 오디오 트랙 상태 | 설명 |
 | --- | --- |
-| 처리 중 | 처리가 진행 중입니다. |
-| 처리됨 | 처리가 완료되었습니다. |
-| 게시됨 | Dynamic Media에 게시됨. |
-| 실패 | 처리가 완료되지 않았습니다. 파일을 삭제하고 다시 업로드해 보십시오. |
-| 게시 취소됨 | 처리 중이지만 아직 Dynamic Media에 게시되지 않았습니다. |
+| 처리 중 | 새 자막 또는 오디오 트랙 파일을 추가하여 저장하면 &quot;처리 중&quot; 상태가 됩니다. Dynamic Media은 스트리밍 매니페스트를 기본 비디오에 연결하여 파일을 처리합니다. |
+| 처리됨 | 처리가 완료되면 자막 또는 오디오 트랙 파일이 &quot;처리됨&quot; 상태로 나타납니다. &quot;처리됨&quot;으로 표시되는 자막 및 오디오 트랙 파일을 미리 볼 수 있습니다. *다음 이전* 비디오를 라이브로 게시합니다. |
+| 게시됨 | &quot;게시됨&quot; 상태는 기본 비디오에 대해 &quot;게시됨&quot;과 유사한 상태를 나타냅니다. 자산은 기본 비디오가 게시될 때 게시되며 공개 Dynamic Media URL에서 사용할 수 있습니다. |
+| 실패 | &quot;실패&quot; 상태는 자막 또는 오디오 트랙 파일의 처리가 완료되지 않았음을 의미합니다. 자막 또는 오디오 트랙 파일을 삭제하고 다시 업로드합니다. |
+| 게시 취소됨 | 게시된 기본 비디오가 명시적으로 게시 취소되면 비디오에 추가한 자막 또는 오디오 트랙 파일도 게시 취소됩니다. |
 
 ![자막 및 오디오 트랙 필드에 대해 강조 표시된 상태 열입니다.](assets-dm/msma-lifecycle-status.png)*업로드된 각 자막 및 오디오 트랙 파일의 라이프사이클 상태입니다.*
 
@@ -751,7 +756,7 @@ Dynamic Media은 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 1. 기본 오디오 트랙을 설정할 비디오 자산으로 이동합니다.
 1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
 1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
-1. 속성 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭.
+1. Properties 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭.
 1. 아래 **오디오 트랙** 머리글에서 비디오의 기본값으로 설정할 오디오 트랙 파일을 선택합니다.
 1. 선택 **[!UICONTROL 기본값으로 설정]**.
 다음에서 **기본값으로 설정** 대화 상자에서 **[!UICONTROL 바꾸기]**.
@@ -763,7 +768,7 @@ Dynamic Media은 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 
 ### 여러 자막과 오디오 트랙이 있는 비디오 미리 보기{#preview-video-audio-subtitle}
 
-자막 파일 및 오디오 트랙 파일이 비디오에 업로드되고 처리된 후 Dynamic Media 비디오 뷰어를 사용하여 다른 모든 트랙을 미리 볼 수 있습니다. 이렇게 하면 비디오가 고객에게 어떤 모습과 소리로 들리는지 확인하고 예상대로 작동하는지 확인하는 데 도움이 됩니다.
+자막 파일 및 오디오 트랙 파일이 비디오에 업로드되고 처리된 후 Dynamic Media 비디오 뷰어(또는 원하는 경우 다른 뷰어 유형)를 사용하여 다른 모든 트랙을 미리 볼 수 있습니다. 미리보기를 통해 고객에게 비디오가 어떻게 보이는지, 어떻게 들리는지 확인하고 예상대로 작동하는지 확인할 수 있습니다.
 
 비디오가 만족스러우면 다음 작업을 수행할 수 있습니다 [게시](publishing-dynamicmedia-assets.md) 다음 방법 중 하나를 사용합니다.
 
@@ -783,15 +788,15 @@ Dynamic Media은 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 
    ![뷰어 옵션을 보여 주는 드롭다운 목록입니다.](assets-dm/msma-selectviewers.png)
 
-1. 뷰어 목록에서 를 선택합니다. **[!UICONTROL 비디오]**.
+1. 뷰어 목록에서 비디오 미리 보기에 사용할 뷰어를 선택합니다. 예를 들어 다음 스크린샷에는 **[!UICONTROL 비디오]** 뷰어가 선택 중입니다.
 
    ![뷰어 드롭다운 목록에서 비디오 뷰어 선택.](assets-dm/msma-dmviewerselected.png)
 
-1. 오른쪽 하단 모서리 근처에서 볼륨 아이콘 왼쪽에 있는 말풍선 아이콘을 선택한 다음 듣거나 보려는 오디오 또는 자막을 선택하거나 둘 다 선택합니다. 원하는 경우 자막 아래에서 다음을 선택할 수 있습니다. **[!UICONTROL 끔]** 자막이나 캡션을 표시하지 않습니다.
+1. 오른쪽 하단 모서리 근처에서 볼륨 아이콘 왼쪽에 있는 말풍선 아이콘을 선택한 다음 들으려는 오디오 또는 자막을 선택하거나 또는 둘 다 표시합니다. 원하는 경우 자막 아래에서 다음을 선택할 수 있습니다. **[!UICONTROL 끔]** 자막이나 캡션을 표시하지 않습니다.
 
    ![비디오 뷰어의 오디오 및 자막 팝업 목록입니다.](assets-dm/msma-selectaudiosubtitle.png)*비디오 재생을 위한 오디오 및 자막을 선택하는 사용자의 시뮬레이션.*
 
-1. 비디오 선택 **[!UICONTROL 재생]** 재생을 시작할 단추입니다.
+1. 재생을 시작하려면 비디오의 **[!UICONTROL 재생]** 단추를 클릭합니다.
 다음을 참고하십시오. **[!UICONTROL URL]** 및 **[!UICONTROL 포함]** 왼쪽 아래에 있는 단추. 이 단추를 사용하여 다음을 수행합니다 [비디오의 URL을 웹 애플리케이션에 연결합니다](/help/assets/linking-urls-to-yourwebapplication.md) 또는 종료 [웹 페이지에 비디오 포함](/help/assets/embed-code.md), 각각
 1. 미리 보기 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 닫기]**.
 
@@ -806,7 +811,7 @@ Dynamic Media은 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 1. 기본 오디오 트랙을 설정할 비디오 자산으로 이동합니다.
 1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
 1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
-1. 속성 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭.
+1. Properties 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭.
 1. 다음 중 하나를 수행합니다.
 
    * 자막 - 아래 **자막** 머리글에서 비디오에서 삭제할 자막 파일을 하나 이상 선택한 다음 을 선택합니다 **[!UICONTROL 삭제]**.
@@ -826,7 +831,7 @@ Dynamic Media은 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 1. 기본 오디오 트랙을 설정할 비디오 자산으로 이동합니다.
 1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
 1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
-1. 속성 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭.
+1. Properties 페이지에서 **[!UICONTROL 자막 및 오디오 트랙]** 탭.
 1. 다음 중 하나를 수행합니다.
 
    * 자막 - 아래 **자막** 머리글에서 비디오에서 다운로드할 자막 파일을 하나 이상 선택한 다음 을 선택합니다 **[!UICONTROL 다운로드]**.
@@ -915,11 +920,7 @@ Dynamic Media은 캡션 파일을 JSON(JavaScript Object Notation) 형식으로 
 
 ## 비디오에 챕터 마커 추가 {#adding-chapter-markers-to-video}
 
->[!IMPORTANT]
->
-이 항목은 더 이상 적극적으로 유지 관리되지 않습니다. Dynamic Media 레거시 사용자를 위해 있는 그대로 제공됩니다. Adobe은 다음을 권장합니다. [다중 자막 및 다중 오디오 추적 기능 활성화](#enable-dash) Dynamic Media 계정에서. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로를 활용할 수 있습니다.
-
-장 마커를 단일 비디오나 응용 비디오 세트에 추가하여 긴 양식 비디오를 더 쉽게 보고 탐색할 수 있습니다. 사용자가 비디오를 재생할 때 비디오 타임라인에서 챕터 마커(비디오 스크러버라고도 함)를 클릭하여 관심 영역으로 쉽게 이동할 수 있습니다. 또는 새로운 콘텐츠, 데모 및 튜토리얼로 바로 이동할 수 있습니다.
+장 마커를 단일 비디오나 응용 비디오 세트에 추가하여 긴 형식의 비디오를 더 쉽게 보고 탐색할 수 있습니다. 사용자가 비디오를 재생할 때 비디오 타임라인에서 챕터 마커(비디오 스크러버라고도 함)를 클릭하여 관심 영역으로 쉽게 이동할 수 있습니다. 또는 새로운 콘텐츠, 데모 및 튜토리얼로 바로 이동할 수 있습니다.
 
 >[!NOTE]
 >
@@ -1447,7 +1448,7 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 * 폴더 `/content/dam/video-example` 에는 비디오 인코딩 프로필이 적용됩니다.
 * 비디오 `scenery.mp4` 이(가) 폴더에 업로드됨 `/content/dam/video-example`.
 
-다음과 같은 방법으로 서블릿을 호출할 수 있습니다.
+다음 방법으로 서블릿을 호출할 수 있습니다.
 
 | 유형 | 설명 |
 | :--- | --- |
