@@ -9,9 +9,9 @@ breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
 feature: Forms Service
-source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
+source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
 workflow-type: tm+mt
-source-wordcount: '3897'
+source-wordcount: '3912'
 ht-degree: 4%
 
 ---
@@ -136,6 +136,7 @@ ht-degree: 4%
    + [환경에 맞는 핵심 구성 요소 활성화](/help/forms/using/enable-adaptive-forms-core-components.md)
    + [핵심 구성 요소 기반 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md)
    + [적응형 Forms 기반의 핵심 구성 요소에 대한 테마 만들기](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+   + [적응형 Forms 기반의 핵심 구성 요소에 대한 사용자 지정 오류 처리기 만들기 및 사용](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
 + 적응형 Forms - 기본 작성 {#adaptive-forms-basic-authoring}
    + [적응형 양식 작업 모범 사례](using/adaptive-forms-best-practices.md)
    + [적응형 양식 만들기](using/creating-adaptive-form.md)
@@ -188,7 +189,7 @@ ht-degree: 4%
    + [Adobe Sign과 AEM Forms 통합](using/adobe-sign-integration-adaptive-forms.md)
    + [양식에서 자산에 대한 검토 만들기 및 관리](using/create-reviews-forms.md)
    + [AEM Sites 단일 페이지 애플리케이션에 적응형 양식 또는 대화형 통신 포함](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
-   + [표준 유효성 검사 오류 메시지 적응형 Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
+   + [적응형 Forms에 대한 사용자 지정 오류 처리기 만들기 및 사용](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + 대화형 통신 {#interactive-communications}
    + [대화형 통신 작성 UI 소개](using/introduction-interactive-communication-authoring.md)
    + [대화형 통신 만들기](using/create-interactive-communication.md)

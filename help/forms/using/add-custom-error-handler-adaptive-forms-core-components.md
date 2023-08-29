@@ -1,31 +1,21 @@
 ---
-title: 적응형 양식에 대한 표준 유효성 검사 오류 메시지
-seo-title: Standard validation error messages for adaptive forms
-description: 사용자 지정 오류 처리기를 사용하여 적응형 양식에 대한 유효성 검사 오류 메시지를 표준 형식으로 변환
-seo-description: Transform the validation error messages for adaptive forms into standard format using custom error handlers
-uuid: 0d1f9835-3e28-41d3-a3b1-e36d95384328
-contentOwner: anujkapo
+title: AEM 적응형 Forms에 대한 핵심 구성 요소를 기반으로 적응형 Forms에 사용자 지정 오류 핸들러 추가
+seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms core components
+description: AEM Forms은 외부 서비스를 호출하도록 구성된 REST 끝점을 사용하여 양식에 대한 기본 성공 및 오류 핸들러를 제공합니다. AEM 적응형 양식에 기본 오류 처리기와 사용자 지정 오류 처리기를 추가할 수 있습니다.
+seo-description: Error handler function and Rule Editor in Adaptive Forms core components helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
+keywords: 사용자 지정 오류 핸들러 추가, 기본 오류 핸들러 추가, 양식에 오류 핸들러 추가, 규칙 편집기의 호출 서비스를 사용하여 사용자 지정 오류 핸들러 추가, 규칙 편집기를 구성하여 사용자 지정 오류 핸들러 추가, 규칙 편집기를 사용하여 사용자 지정 오류 핸들러 추가
+contentOwner: Ruchita Srivastav
 content-type: reference
-geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
-discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
-exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: 5a475d73ce88035c3f5db47c03b652f3d491420c
+source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
 workflow-type: tm+mt
-source-wordcount: '2346'
-ht-degree: 4%
+source-wordcount: '2284'
+ht-degree: 1%
 
 ---
 
-# 적응형 Forms의 오류 핸들러 {#error-handlers-in-adaptive-form}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
-
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html) |
-| AEM 6.5 | 이 문서 |
-
+# 적응형 Forms(핵심 구성 요소)의 오류 핸들러 {#error-handlers-in-adaptive-form}
 
 AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제공합니다. 또한 오류 처리기 함수를 사용자 지정하는 기능도 제공합니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. API를 사용하여 외부 서비스를 호출하면 유효성 검사를 위해 데이터가 서버로 전송되며, 이 데이터는 제출에 대한 성공 또는 오류 이벤트에 대한 정보와 함께 클라이언트에 응답을 반환합니다. 정보는 관련 핸들러에 매개 변수로 전달되어 함수를 실행합니다. 오류 처리기는 발생한 오류 또는 유효성 검사 문제를 관리하고 표시하는 데 도움이 됩니다.
 
@@ -39,6 +29,7 @@ AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제�
 ## 오류 처리기 사용 {#uses-of-error-handler}
 
 오류 핸들러는 다양한 용도로 사용됩니다. 다음은 오류 처리기 함수의 사용 목록입니다.
+
 * **유효성 검사 수행**: 오류 처리는 사전 정의된 규칙 또는 기준에 따라 사용자 입력을 확인하는 것으로 시작합니다. 사용자가 적응형 양식을 작성할 때 오류 처리기는 입력의 유효성을 검사하여 필요한 형식, 길이 또는 기타 제약 조건을 충족하는지 확인합니다.
 
 * **실시간 피드백 제공**: 오류가 감지되면 오류 처리기는 해당 양식 필드 아래에 인라인 오류 메시지와 같은 즉각적인 피드백을 사용자에게 표시합니다. 이 피드백은 사용자가 양식을 제출하고 응답을 기다릴 필요 없이 오류를 식별하고 수정하는 데 도움이 됩니다.
@@ -59,7 +50,6 @@ AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제�
     errorCausedBy : "SERVER_SIDE_VALIDATION/SERVICE_INVOCATION_FAILURE"
     errors : [
         {
-             somExpression  : <somexpr>
              errorMessage / errorMessages : <validationMsg> / [<validationMsg>, <validationMsg>]
         }
     ]
@@ -72,7 +62,7 @@ AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제�
 위치:
 
 * `errorCausedBy` 실패 이유를 설명합니다.
-* `errors` 유효성 검사 오류 메시지와 함께 유효성 검사 기준에 실패한 필드의 SOM 식을 언급하십시오.
+* `errors` 유효성 검사 오류 메시지와 함께 유효성 검사 기준에 실패한 필드의 정규화된 필드 이름을 언급하십시오.
 * `originCode` AEM에서 추가한 필드이며 외부 서비스에서 반환한 http 상태 코드를 포함합니다.
 * `originMessage` AEM에서 추가한 필드에 외부 서비스에서 반환한 원시 오류 데이터가 포함되어 있습니다.
 
@@ -86,7 +76,7 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
         "instance": "", (optional)
         "validationErrors" : [ (required)
             {
-                "fieldName":"<SOM expression of the field whose data sent is invalid>",
+                "fieldName":"<qualified fieldname of the field whose data sent is invalid>",
                 "dataRef":<JSONPath (or XPath) of the data element which is invalid>
                 "details": ["Error Message(s) for the field"] (required)
     
@@ -115,7 +105,7 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 * `detail (optional)` 필요한 경우 실패에 대한 추가 세부 정보를 제공합니다.
 * `instance (optional)` 실패와 연관된 인스턴스 또는 식별자를 나타내며 실패의 특정 발생을 추적하거나 식별하는 데 도움이 됩니다.
 * `validationErrors (required)` 유효성 검사 오류에 대한 정보를 포함합니다. 여기에는 다음 필드가 포함됩니다.
-   * `fieldname` 은 유효성 검사 기준에 실패한 필드의 SOM 식을 언급합니다.
+   * `fieldname` 은 유효성 검사 기준에 실패한 필드의 정규화된 필드 이름을 언급합니다.
    * `dataRef` 유효성 검사에 실패한 필드의 JSON 경로 또는 XPath를 나타냅니다.
    * `details` 유효성 검사 오류 메시지와 잘못된 필드를 포함합니다.
 * `originCode (optional)` AEM에서 추가한 필드이며 외부 서비스에서 반환한 http 상태 코드를 포함합니다.
@@ -136,7 +126,7 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
               "type": "VALIDATION_ERROR",
               "validationErrors": [
               {
-              "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+              "fieldName": "$form.PetId",
               "dataRef": "",
               "details": [
               "Invalid ID supplied. Provided value is not correct!"
@@ -145,9 +135,6 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
           ]}
   ```
 
-  필드를 탭하고 을(를) 선택하여 적응형 양식에 있는 모든 필드의 SOM 표현식을 볼 수 있습니다. **[!UICONTROL SOM 표현식 보기]**.
-
-  ![사용자 지정 오류 처리기의 오류 응답을 표시하는 적응형 양식 필드의 일부 표현식](/help/forms/using/assets/custom-error-handler-somexpression.png)
 
 +++
 
@@ -163,7 +150,7 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
           "validationErrors": [
           {
               "fieldName": "",
-              "dataRef": "/Pet/id",
+              "dataRef": "$.Pet.id",
               "details": [
               "Invalid ID supplied. Provided value is not correct!"
               ]
@@ -171,19 +158,15 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
       ]}
   ```
 
-  ![사용자 지정 오류 처리기에서 오류 응답을 표시하는 적응형 양식 필드의 데이터 참조](/help/forms/using/assets/custom-errorhandler-dataref.png)
-
-에서 dataRef의 값을 볼 수 있습니다. **[!UICONTROL 속성]** 양식 구성 요소 창
-
 +++
 
 ## 사전 요구 사항 {#prerequisites}
 
-적응형 Forms에서 사용자 지정 오류 핸들러를 사용하기 전에
+적응형 Forms에서 오류 핸들러를 사용하기 전에
 
+* [AEM Cloud Service 환경을 위한 적응형 Forms 핵심 구성 요소 활성화](enable-adaptive-forms-core-components.md).
 * 에 대한 기본 지식 [사용자 지정 함수 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * 의 최신 릴리스 설치 [Apache Maven](https://maven.apache.org/download.cgi).
-
 
 ## 규칙 편집기를 사용하여 오류 처리기 추가 {#add-error-handler-using-rule-editor}
 
@@ -228,7 +211,7 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 * analytics 이벤트를 모든 analytics 플랫폼으로 전송합니다. (예: Adobe Analytics)
 * 오류 메시지가 표시된 양식 대화 상자를 표시합니다.
 
-언급된 작업 외에도 사용자 지정 오류 처리기를 사용하여 특정 사용자 요구 사항을 충족하는 사용자 지정된 함수를 실행할 수 있습니다.
+언급된 작업 외에도 사용자 지정 오류 핸들러를 사용하여 특정 사용자 요구 사항을 충족하는 사용자 지정된 기능을 실행할 수 있습니다.
 
 사용자 지정 오류 처리기는 외부 서비스에서 반환한 오류에 응답하고 사용자 지정된 응답을 최종 사용자에게 전달하도록 설계된 함수(클라이언트 라이브러리)입니다. 주석이 있는 모든 클라이언트 라이브러리 `@errorHandler` 는 사용자 지정 오류 핸들러 함수로 간주됩니다. 이 주석은에 지정된 오류 처리기 함수를 식별하는 데 도움이 됩니다. `.js` 파일.
 
@@ -268,24 +251,24 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 다음 코드를 JavaScript 파일에 추가하여 REST 서비스 끝점에서 받은 응답 및 헤더를 브라우저 콘솔에 표시해 보겠습니다.
 
    ```javascript
-       /**
-       * Custom Error handler
+       /** 
+       Custom Error handler
        * @name customErrorHandler Custom Error Handler Function
        * @errorHandler
        */
-       function customErrorHandler(response, headers)
+       function customErrorHandler(response, headers, globals)
        {
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
-           guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
+           alert("CustomErrorHandler - Please enter valid PetId.")
+           globals.invoke('defaultErrorHandler',response, headers)
            console.log("Custom Error Handler processing end...");
        }
    ```
 
    사용자 지정 오류 처리기에서 기본 오류 처리기를 호출하려면 샘플 코드의 다음 행을 사용합니다.
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-
+   `globals.invoke('defaultErrorHandler',response, headers) `
 
 1. 저장 `function.js`.
 1. 다음으로 이동 `js.txt` 및 다음 코드를 추가합니다.
@@ -303,7 +286,7 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 
 적응형 양식에서 사용자 지정 오류 처리기를 구현하려면 먼저 클라이언트 라이브러리 이름이 **[!UICONTROL 클라이언트 라이브러리 범주]** 은 의 카테고리 옵션에 지정된 이름과 일치합니다. `.content.xml` 파일.
 
-![적응형 양식 컨테이너 구성에 클라이언트 라이브러리 이름 추가](/help/forms/using/assets/client-library-category-name.png)
+![적응형 양식 컨테이너 구성에 클라이언트 라이브러리 이름 추가](/help/forms/using/assets/client-library-category-name-core-component.png)
 
 이 경우 클라이언트 라이브러리 이름은 다음과 같이 제공됩니다. `customfunctionsdemo` 다음에서 `.content.xml` 파일.
 
@@ -322,87 +305,8 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 
 이 규칙의 결과로 사용자가 입력하는 값은 **Pet ID** 유효성 검사 확인 **애완동물 이름** REST 끝점에서 호출한 외부 서비스 사용. 데이터 소스를 기반으로 한 유효성 검사 기준에 실패하면 필드 수준에 오류 메시지가 표시됩니다.
 
-![오류 응답을 처리하기 위해 양식에 사용자 지정 오류 처리기 추가](/help/forms/using/assets/custom-error-handler-message.png)
+![오류 응답을 처리하기 위해 양식에 사용자 지정 오류 처리기 추가](/help/forms/using/assets/custom-error-handler-message-core-component.png)
 
 브라우저 콘솔을 열고 REST 서비스 끝점에서 받은 응답과 헤더에서 유효성 검사 오류 메시지를 확인합니다.
 
 사용자 지정 오류 처리기 함수는 오류 응답을 기반으로 모달 대화 상자 표시 또는 Analytics 이벤트 전송과 같은 추가 작업을 실행합니다. 사용자 지정 오류 처리기 함수는 특정 사용자 요구 사항에 맞게 오류 처리를 조정할 수 있는 유연성을 제공합니다.
-
-<!-- 
-
-## Configure Adaptive Form submission to add custom handlers {#configure-adaptive-form-submission}
-
-If the server validation error message does not display in the standard format, you can enable asynchronous submission and add a custom error handler on Adaptive Form submission to convert the message into a standard format.
-
-### Configure asynchronous Adaptive Form submission {#configure-asynchronous-adaptive-form-submission}
-
-Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
-
-1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
-1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
-1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
-1. Select the Submit Action:
-
-    * Select **[!UICONTROL Submit using Form Data Model]** and select the appropriate data model, if you are using RESTful web service based [form data model](work-with-form-data-model.md) as the data source.
-    * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
-
-    ![adaptive form submission properties](assets/af_submission_properties.png)
-
-1. Tap ![Save](assets/save_icon.png) to save the properties.
-
-### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
-
-AEM Forms provides out-of-the-box success and error handlers for form submissions. Handlers are client-side functions that execute based on the server response. When an Adaptive Form is submitted, the data is transmitted to the server for validation, which returns a response to the client with information about the success or error event for the submission. The information is passed as parameters to the relevant handler to execute the function.
-
-Execute the following steps to add custom error handler on Adaptive Form submission:
-
-1. Open an Adaptive Form in authoring mode, select any form object, and tap  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
-1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and tap **[!UICONTROL Done]** to save the rule.
-
-The following is a sample code to convert a custom error structure to the standard error structure:
-
-```javascript
-var data = $event.data;
-var som_map = {
-    "id": "guide[0].guide1[0].guideRootPanel[0].Pet[0].id_1[0]",
-    "name": "guide[0].guide1[0].guideRootPanel[0].Pet[0].name_2[0]",
-    "status": "guide[0].guide1[0].guideRootPanel[0].Pet[0].status[0]"
-};
-
-var errorJson = {};
-errorJson.errors = [];
-
-if (data) {
-    if (data.originMessage) {
-        var errorData;
-        try {
-            errorData = JSON.parse(data.originMessage);
-        } catch (err) {
-            // not in json format
-        }
-
-        if (errorData) {
-            Object.keys(errorData).forEach(function(key) {
-                var som_key = som_map[key];
-                if (som_key) {
-                    var error = {};
-                    error.somExpression = som_key;
-                    error.errorMessage = errorData[key];
-                    errorJson.errors.push(error);
-                }
-            });
-        }
-        window.guideBridge.handleServerValidationError(errorJson);
-    } else {
-        window.guideBridge.handleServerValidationError(data);
-    }
-}
-```
-
-The `var som_map` lists the SOM expression of the Adaptive Form fields that you want to transform into the standard format. You can view the SOM expression of any field in an adaptive form by tapping the field and selecting **[!UICONTROL View SOM Expression]**.
-
-Using this custom error handler, the adaptive form converts the fields listed in `var som_map` to standard error message format. As a result, the validation error messages display at field-level in the adaptive form.
-
- -->

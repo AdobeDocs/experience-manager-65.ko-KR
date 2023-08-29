@@ -11,18 +11,18 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 077208ed8fea6a644487dbb46efb54ea44f303b4
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 4%
+source-wordcount: '341'
+ht-degree: 6%
 
 ---
 
-# AEM 6.5 Forms로 업그레이드{#upgrade-to-aem-forms}
+# AEM 6.5 Forms로 업그레이드 {#upgrade-to-aem-forms}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -49,6 +49,7 @@ AEM 6.5 Forms에는 양식 및 서신에 대한 생성, 관리 및 사용자 경
 
 ![JEE 업그레이드 6.5](do-not-localize/jee-upgrade-6-5.png)
 
+
 다음 위치에서 직접 업그레이드를 수행할 수 있습니다.
 
 * JEE의 AEM 6.3 Forms
@@ -57,16 +58,14 @@ AEM 6.5 Forms에는 양식 및 서신에 대한 생성, 관리 및 사용자 경
 
 에서 다중 홉 업그레이드를 수행할 수도 있습니다.
 
-* LiveCycle ES2
-* LiveCycle ES3
 * LiveCycle ES4 SP1
 * JEE의 AEM 6.0 Forms
 * JEE의 AEM 6.1 Forms
 * JEE의 AEM 6.2 Forms
 
-AEM 6.5.12.0 JEE의 Forms은 두 가지 유형의 설치 관리자를 제공합니다. [전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 및 [패치 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+AEM 6.5.18.0 JEE의 Forms은 두 가지 유형의 설치 관리자를 제공합니다. [전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 및 [패치 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-**전체 설치 관리자**: 전체 설치 관리자를 사용하여 새로운 AEM Forms 인스턴스를 설정하거나 JEE의 AEM 6.3 Forms, JEE의 AEM 6.4 및 JEE의 AEM 6.5.x.x Forms에서 JEE의 AEM 6.5.12.0 Forms으로 바로 업그레이드할 수 있습니다.
+**전체 설치 관리자**: 전체 설치 관리자를 사용하여 새로운 AEM Forms 인스턴스를 설정하거나 AEM 6.5.x.x Forms on JEE에서 AEM 6.5.18.0 Forms으로 업그레이드를 수행할 수 있습니다.
 
 **패치 설치 관리자**: 패치 설치 관리자는 이미 AEM 6.5.x.x 버전을 사용 중인 고객을 위한 것입니다. 패치 설치 관리자를 사용하여 최신 버전의 AEM Forms으로 업그레이드할 수 있습니다.
 

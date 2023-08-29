@@ -2,10 +2,10 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 2209ab8498072744091f5af22887c8f13dbb3ac6
+source-git-commit: d63355e1042f6ad63a848b97c26dc2f29bab47b1
 workflow-type: tm+mt
-source-wordcount: '3464'
-ht-degree: 10%
+source-wordcount: '4459'
+ht-degree: 7%
 
 ---
 
@@ -61,25 +61,24 @@ ht-degree: 10%
 
 **양식**
 
-* **규칙 편집기의 사용자 지정 오류 처리기로 향상된 오류 처리:** 이제 외부 서비스에서 반환한 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출하고 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다
+* **[규칙 편집기의 사용자 지정 오류 처리기로 향상된 오류 처리](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** 이제 외부 서비스에서 반환한 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출하고 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다
 
-* **향상된 Adobe Sign 워크플로 단계:** AEM 워크플로의 Adobe Sign 워크플로 단계는 다음과 같은 개선 사항을 통해 사용할 수 있습니다.
+* **[향상된 Adobe Sign 워크플로 단계](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html):** AEM 워크플로의 Adobe Sign 워크플로 단계는 다음과 같은 개선 사항을 통해 사용할 수 있습니다.
 
    * **Adobe Sign에 대한 정부 ID 기반 인증을 통해 보안 강화:** Adobe Acrobat Sign의 정부 ID 기반 인증은 사용자가 정부에서 발급한 ID(운전면허증, 주민등록증, 여권)를 사용하여 신원을 인증할 수 있도록 함으로써 추가적인 인증 계층을 제공합니다. 이 향상된 기능은 신뢰할 수 있는 ID 문서를 활용함으로써 서명 프로세스에 대한 신뢰도를 더욱 높여 강화된 보안, 규정 준수 및 사용자 유효성 검사가 필요한 시나리오에 이상적입니다.
 
    * **Adobe Sign 문서에 대한 감사 추적을 통해 투명성 향상:** 감사 추적 기능을 사용하여 Adobe Sign 문서의 라이프사이클에 대한 자세한 통찰력을 얻을 수 있습니다. 이제 감사 추적을 사용하여 문서와 관련된 모든 작업 및 상호 작용에 대한 포괄적인 레코드를 유지 관리할 수 있습니다. 여기에는 각 이벤트에 대한 타임스탬프와 함께 문서를 보고, 편집하고, 서명한 사람 등의 세부 정보가 포함됩니다. 이러한 개선된 기능은 규정 준수 유지, 분쟁 해결 및 디지털 계약의 무결성 보장에 매우 중요합니다.
 
 
-  **서명자 이상으로 계약 수신자의 역할을 확장합니다.** Adobe Acrobat Sign에는 계약 수신자의 역할을 서명자 이상으로 확장하여 워크플로 요구 사항에 보다 잘 부합하도록 하는 옵션이 있습니다. 활성화되면 계약의 각 수신자는 자신의 역할을 개별적으로 구성할 수 있으며 기본값은 서명자입니다.
+   * **서명자 이상으로 계약 수신자의 역할을 확장했습니다.** Adobe Acrobat Sign에는 계약 수신자의 역할을 서명자 이상으로 확장하여 워크플로 요구 사항에 보다 잘 부합하도록 하는 옵션이 있습니다. 활성화되면 계약의 각 수신자는 자신의 역할을 개별적으로 구성할 수 있으며 기본값은 서명자입니다.
 
 
-* **AEM Forms on JEE 전체 설치 관리자**: 서비스 팩은 JEE의 AEM Forms용 전체 설치 프로그램을 제공하며 이를 통해 다음을 포함한 여러 가지 새로운 소프트웨어 조합을 지원합니다.
+* **[AEM Forms on JEE 전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)**: 서비스 팩은 JEE의 AEM Forms용 전체 설치 프로그램을 제공하며 이를 통해 다음을 포함한 여러 가지 새로운 소프트웨어 조합을 지원합니다.
    * Microsoft Windows 서버 2022
    * Microsoft Active Directory
-   * Windows Server 2022에서 WebLogic 14C 및 12.2.1.4 oracle
-   * Windows Server 2022의 RedHat JBoss 7.4.10
+   * Windows Server 2022에서 WebLogic 14C oracle
+   * RedHat JBoss 7.4.10
    * MongoDB 4.4
-   * SQL Server용 Microsoft JDBC 드라이버 12.2
    * MySQL JDBC Connector 8
 
 새로 설치하거나 JEE의 AEM 6.5 Forms Adobe 환경에 최신 소프트웨어를 사용할 계획이라면 AEM 6.5.18.0 JEE의 Forms 전체 설치 관리자를 사용하는 것이 좋습니다. 새로 추가되고 더 이상 사용되지 않는 소프트웨어의 전체 목록을 살펴보려면 JEE의 AEM Forms 또는 OSGi의 AEM Forms 설명서를 참조하십시오.
@@ -161,10 +160,58 @@ ht-degree: 10%
 
 ### [!DNL Forms]{#forms-6518}
 
-의 수정 사항 [!DNL Experience Manager] Forms은 예약한 후 1주일 후에 별도의 추가 기능 패키지를 통해 제공됩니다 [!DNL Experience Manager] 서비스 팩 릴리스 날짜. 이 경우 AEM 6.5.18.0 Forms 추가 기능 패키지 릴리스가 2023년 8월 31일 목요일에 예약되었습니다. Forms 수정 사항 및 개선 사항 목록은 릴리스를 게시하는 이 섹션에 추가됩니다.
 <!--
-* After Experience Manager, Service Pack 16 is installed on the servers, all the Interactive communication Letters starts to clock if they try to edit these letters. If they provide any sample payload to preview or view/edit the properties page, they work. However, they are not able to edit the letters. (FORMS-9067) 
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
 -->
+
+* **문서 서비스**
+   * 사용자가 transformPDF 서비스를 사용할 때 다음과 같은 예외로 실패합니다. `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957)
+   * PDF 문서 생성 중에 서버가 종료되면 사후 서버 시작 작업 처리 오류가 발생합니다. 서버를 시작하는 동안 -Dcom.adobe.livecycle.dsc.deferServiceStart=true 인수를 추가해야 합니다. (FORMS-9836)
+   * 사용자가 AssemblerService.Invoke 메서드를 사용하여 PDF을 병합하려고 하면 어셈블러가 작업을 수행하지 못합니다. (FORMS-9550)
+   * OSGI 및 JEE 환경에서 AEM 6.5.15.0 서비스 팩으로 업그레이드하면 특정 템플릿을 사용하는 어셈블러 서비스가 작동하지 않습니다. (FORMS-9355, FORMS-9445, FORMS-9408)
+   * XMLFormService에 대한 전역 시간 초과가 적절한 값으로 구성되지 않았으므로 Java 가비지 수집이 AEM Forms OSGi 서버에서 오래된 힙을 지울 수 없습니다. (FORMS-9384, FORMS-9035)
+   * 적응형 양식의 PDF 미리 보기를 렌더링하는 동안 원하지 않는 Java 스택 덤프가 오류 로그에 표시됩니다. (FORMS-8865)
+   * 사용자가 문서 세부 정보 섹션의 문서에 대한 문서 상태를 검토할 때 올바르게 표시되지 않습니다. (FORMS-8946, FORMS-10424)
+   * 사용자가 AEM Forms으로 업그레이드하여 sendToPrinter 서비스를 사용할 때 힙 사용률이 지속적으로 증가합니다. (FORMS-10148)
+   * JBoss 7.4 EAP 서버에서 이메일 기능이 `java.io.IOException`. (FORMS-10138)
+   * 사용자가 transformPDF 서비스를 사용할 때 다음 오류로 실패합니다. `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml`(FORMS-9957)
+   * AEM 서비스 팩 6.5.14.0으로 업그레이드한 후 특정 템플릿을 사용하는 동안 어셈블러 서비스에서 문제가 발생합니다. (FORMS-9445, FORMS-9408)
+  <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
+* **적응형 양식**
+   * 사용자가 다른 필드의 값을 설정하는 등 필드를 수정하지 않고 사용자 정의 함수를 호출하려고 하면 실패합니다. (FORMS-9921)
+   * 적응형 양식에서 규칙 편집기의 사용자 지정 오류 함수로 작업하는 동안 다음 오류가 발생합니다.
+      * 사용자가 @param 를 사용하려고 할 때{boolean} 함수를 사용하면 규칙 편집기에서 부울 값을 함수에 전달할 수 없습니다.
+      * 사용자가 @param 를 사용하려고 할 때{string} 함수를 사용하면 규칙 편집기가 선택적 값을 전달하지 못하고 불완전한 규칙에 대한 경고를 줍니다. (FORMS-9816, FORMS-9815)
+   * 양식 사용자 그룹이 적응형 양식에서 규칙 편집기를 두 번 호출하지 못합니다. (FORMS-9051)
+   * 시각적 편집기 편집기에서 사용자가 Form 개체를 선택하면 필드의 값 대신 전체 필드 인스턴스 개체가 사용자 지정 함수에 전달됩니다. (FORMS-10015)
+   * 사용자가 핵심 구성 요소 기반 적응형 양식을 만들고 텍스트 입력 구성 요소를 추가하면 `Is Empty` 및 `Is Not Empty` 규칙 편집기에서 작동하지 않습니다. (FORMS-10098)
+   * 필드가 적응형 양식 기반의 핵심 구성 요소에서 유효하지 않은 것으로 표시되면 필드에서 변경 이벤트가 시작됩니다. (FORMS-10087)
+   * 사용자가 복잡한 JSON 스키마를 사용하여 적응형 양식을 만들려고 하면 실패합니다. 오류는 다음과 같이 발생합니다.
+     `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`을 따르지 않는 경우입니다. (FORMS-9639)
+   * 적응형 양식에서 사용자가 &quot;약관에 동의함&quot; 확인란을 비활성화하면 사용자가 아래로 스크롤하는 즉시 다시 활성화됩니다. (FORMS-9458)
+   * 사용자가 Google Chrome/Firefox를 사용하여 Android 장치에서 적응형 양식을 열고 텍스트 상자에 최대 허용 문자를 입력하면 텍스트 상자의 값이 지워지지 않습니다. (FORMS-9354)
+   * 확인란의 레이블에 &#39;,&#39;, &#39;/&#39; 또는 &#39;.&#39;와 같은 특수 문자가 포함되어 있는 경우 텍스트/레이블을 클릭해도 해당 확인란이 선택되지 않습니다. (FORMS-9313)
+   * 사용자가 약관 구성 요소의 유효성을 검사하려고 할 때 구성 요소가 포커스에 있지 않은지 확인하는 데 실패하고 다른 구성 요소는 유효성 검사를 받습니다. (FORMS-8725, FORMS-8913)
+   * AEM 6.5.16.0 서비스 팩으로 업그레이드한 후 적응형 양식을 다시 로드하면 첨부 파일을 검색할 수 없습니다. (FORMS-8906)
+   * XDP를 기반으로 하는 적응형 양식에서 확인란 구성 요소에 숫자 값이 지정된 텍스트 제목이 포함되어 있으면 텍스트 제목이 잘리고 지정된 값과 일치하지 않습니다. (FORMS-8743)
+   * 사용자가 작성자 환경을 위한 적응형 양식에 포함된 조각에 소극적 로드를 구현하려고 하면 조각에 대해 정의된 규칙/논리가 양식에 반영되지 않습니다. (FORMS-8554, FORMS-9182)
+   * AEM 6.5.16.0 서비스 팩에서 Coral 대화 상자를 열려고 하면 가 생성됩니다. `error.log: cannot render resource` 예외. (FORMS-8942)
+   * 사용자가 적응형 양식의 단일 옵션이 있는 확인란을 번역할 때 실패합니다. (FORMS-10181)
+* **접근성**
+   * 적응형 양식에서 스크리블 서명 구성 요소를 사용할 때 다음 오류가 발생합니다.
+      * 스크리블 서명 구성 요소 뒤에 구성 요소가 더 있으면 Tab 키를 눌러도 서명 대화 상자로 이동하지 않고 대신 다음 구성 요소로 이동합니다. 모든 구성 요소를 트래버스한 후에만 최종적으로 서명 대화 상자로 이동합니다.
+      * 사용자가 브러쉬 또는 키보드를 사용하여 서명 대화 상자에 서명할 때 Enter 키를 눌러도 대화 상자가 닫히지 않습니다.
+      * 키보드를 사용하여 서명 지우기 확인 대화 상자에 액세스할 수 없습니다.
+      * 화면 판독기가 대화 상자에 입력한 정보를 읽지 못합니다.
+      * 마우스를 사용하지 않으면 서명을 지울 수 없습니다.  (FORMS-9317)
+   * 사용자가 적응형 양식을 제출할 때 화면 판독기가 필수 필드에 대한 오류 메시지를 읽지 못합니다. (FORMS-9316)
+   * 화면 판독기가 HTML 양식을 읽을 때 커닝(간격)으로 텍스트를 읽는 동안 문제가 발생합니다. (FORMS-9258)
+   * 적응형 양식에서 텍스트에 연결된 참조/각주는 화면 판독기를 사용하여 호출되지 않습니다. (FORMS-8920)
+   * 액세스 가능성 태그가 최신 디자이너에서 제대로 인식되지 않습니다. (FORMS-10139)
+* **대화형 통신**
+   * 서신 관리에서 현지화가 작동하지 않습니다. (FORMS-8926)
+   * publishAll 서비스를 사용하면 초안 문자가 열리지 않습니다. (FORMS-8589)
+   * Experience Manager 후, 서비스 팩 16이 서버에 설치되면 모든 대화형 통신 편지가 이러한 문자를 편집하려고 하면 작동을 멈추기 시작합니다. 속성 페이지를 미리 보거나 보기/편집할 샘플 페이로드를 제공하면 작동합니다. 그러나 글자를 편집할 수는 없습니다. (FORMS-9067)
 
 
 <!-- ### [!DNL Commerce]{#commerce-6518}
@@ -380,13 +427,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   "refresh": true
   ```
 
-* 다음으로: [!DNL Microsoft® Windows Server 2019] 은(는) 을 지원하지 않습니다. [!DNL MySQL 5.7] 및 [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] 은(는) 다음에 대한 턴키 설치를 지원하지 않습니다. [!DNL Experience Manager Forms 6.5.10.0].
-
 * 업그레이드 시 [!DNL Experience Manager] 6.5.0 - 6.5.4에서 Java™ 11의 최신 서비스 팩까지 인스턴스가 제공됩니다. `RRD4JReporter` 의 예외 `error.log` 파일. 예외를 중지하려면 인스턴스를 [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
 * 사용자는 의 계층 구조에서 폴더의 이름을 변경할 수 있습니다. [!DNL Assets] 중첩된 폴더 게시 위치 [!DNL Brand Portal]. 단, 폴더의 제목은에서 업데이트되지 않습니다. [!DNL Brand Portal] 루트 폴더가 다시 게시될 때까지.
-
-* 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 적응형 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
 
 * 설치 중에 다음 오류 및 경고 메시지가 표시될 수 있습니다. [!DNL Experience Manager] 6.5.x.x:
    * &quot;Adobe Target 통합이에서 구성된 경우 [!DNL Experience Manager] target Standard API(IMS 인증)를 사용한 다음 경험 조각을 Target으로 내보내면 잘못된 오퍼 유형이 생성됩니다. 경험 조각/소스 &quot;Adobe Experience Manager&quot; 유형 대신 Target은 &quot;HTML&quot;/소스 &quot;Adobe Target Classic&quot; 유형으로 여러 오퍼를 만듭니다.
@@ -396,9 +439,29 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    * 쇼퍼블 배너 뷰어를 통해 자산을 미리 볼 때 Dynamic Media 대화형 이미지의 핫스팟이 표시되지 않습니다.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : 등록 변경이 등록 취소를 완료할 때까지 기다리는 동안 시간이 초과되었습니다.
 
-* JBoss® 7.1.4 플랫폼에서 사용자가 Experience Manager 6.5.16.0 이상의 서비스 팩을 설치하면 `adobe-livecycle-jboss.ear` 배포가 실패합니다.
-* 1.8.0_281 이상의 JDK 버전은 WebLogic JEE 서버에서 지원되지 않습니다.
 * AEM 6.5.15부터 Rhino JavaScript Engine은 ```org.apache.servicemix.bundles.rhino``` 번들에 새로운 호스팅 동작이 있습니다. 엄격 모드를 사용하는 스크립트(```use strict;```) 변수를 올바르게 선언해야 합니다. 그렇지 않으면 런타임 오류가 발생하는 대신 실행되지 않습니다.
+
+### AEM Forms의 알려진 문제
+
+#### 지원되는 플랫폼
+
+* 1.8.0_281 이상의 JDK 버전은 WebLogic JEE 서버에서 지원되지 않습니다. (FORMS-8498, CQDOC-20383)
+* 다음으로: [!DNL Microsoft® Windows Server 2019] 은(는) 을 지원하지 않습니다. [!DNL MySQL 5.7] 및 [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] 은(는) 다음에 대한 턴키 설치를 지원하지 않습니다. [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
+* JDK 11.0.20은 JEE 설치 관리자에서 AEM Forms을 설치할 수 없습니다. JEE 설치 프로그램에 AEM Forms을 설치하려면 JDK 11.0.19 이하 버전만 지원됩니다. (FORMS-10659)
+
+#### 설치
+
+* JBoss® 7.1.4 플랫폼에서 사용자가 Experience Manager 6.5.16.0 이상의 서비스 팩을 설치하면 `adobe-livecycle-jboss.ear` 배포가 실패합니다. (CQ-4351522, CQDOC-20159)
+
+#### 적응형 양식
+
+* 적응형 양식이 게시되면 정책을 포함한 모든 종속 항목은 수정 사항이 없더라도 다시 게시됩니다. (FORMS-10454)
+* 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 적응형 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
+* 리디렉션 URL이 적응형 양식의 안내서 컨테이너에 설정되면 인라인 서명 작동이 중지됩니다. (FORMS-10493)
+
+#### 대화형 통신
+
+* AEM 서비스 팩 18로 업그레이드한 후에는 대화형 통신 문자를 편집할 수 없습니다. (FORMS-10578)
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 

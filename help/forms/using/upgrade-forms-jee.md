@@ -9,26 +9,26 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: af7ecad48281802ab4d1c32291fcde0f3e091ca1
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '367'
 ht-degree: 1%
 
 ---
 
 # JEE의 AEM 6.5 Forms으로 업그레이드 {#upgrade-to-aem-forms-jee}
 
-AEM 6.5.12.0 Forms on JEE는 전체 설치 프로그램과 패치 설치 프로그램의 두 가지 설치 프로그램을 제공합니다.
+AEM 6.5.18.0 Forms on JEE는 전체 설치 프로그램과 패치 설치 프로그램의 두 가지 설치 프로그램을 제공합니다.
 
-**전체 설치 관리자**: 다음을 사용할 수 있습니다 [JEE 전체 설치 프로그램의 AEM 6.5.12.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 새로운 AEM Forms 인스턴스를 설정하거나 JEE의 AEM 6.3 Forms, JEE의 AEM 6.4 및 JEE의 AEM 6.5.x.x Forms에서 JEE의 AEM 6.5.12.0 Forms으로 바로 업그레이드 수행.
+**전체 설치 관리자**: 다음을 사용할 수 있습니다 [JEE 전체 설치 프로그램의 AEM 6.5.18.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 새로운 AEM Forms 인스턴스를 설정하거나 AEM 6.5.x.x Forms on JEE에서 AEM 6.5.18.0 Forms on JEE로 업그레이드를 수행합니다.
 
-**패치 설치 관리자**: [JEE 패치 설치 프로그램의 AEM 6.5.12.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 는 이미 AEM 6.5.x.x 버전을 사용 중인 고객을 위한 것입니다. 패치 설치 관리자를 사용하여 최신 버전의 AEM Forms으로 업그레이드할 수 있습니다.
+**패치 설치 관리자**: [JEE 패치 설치 프로그램의 AEM 6.5.18.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 는 이미 AEM 6.5.x.x 버전을 사용 중인 고객을 위한 것입니다. 패치 설치 관리자를 사용하여 최신 버전의 AEM Forms으로 업그레이드할 수 있습니다.
 
 다음 표에서는 전체 및 패치 설치 관리자를 사용하기 위한 시나리오를 보여 줍니다.
 
 ![전체 및 패치 설치 프로그램 시나리오](assets/full-and-patch-installer.png)
 
-전체 설치 관리자를 사용하여 기존 JEE의 AEM 6.3 Forms 또는 JEE의 AEM 6.4 Forms을 JEE의 AEM 6.5.12.0 Forms으로 업그레이드하려면 다음 절차를 수행하십시오.
+전체 설치 관리자를 사용하여 기존 JEE의 AEM Forms 6.5.x.x를 JEE의 AEM 6.5.18.0 Forms으로 업그레이드하려면 다음 절차를 수행하십시오.
 
 1. 에서 AEM 6.5 Forms on JEE 설치 프로그램을 다운로드합니다. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). 설치 관리자를 사용하려면 유효한 유지 관리 및 지원 계약이 필요합니다.
 1. 다음을 참조하십시오 [업그레이드 체크리스트 및 계획](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65) 성공적인 업그레이드를 위해 수행할 검사에 대해 알아봅니다.
