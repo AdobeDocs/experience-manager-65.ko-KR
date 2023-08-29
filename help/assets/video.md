@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: ee1a0866aafd56fa53f5d3b936beab8f500d335c
+source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
 workflow-type: tm+mt
-source-wordcount: '11363'
+source-wordcount: '11313'
 ht-degree: 2%
 
 ---
@@ -702,11 +702,7 @@ Dynamic Media의 다중 자막 및 다중 오디오 트랙 기능을 사용하�
 
 #### 기존 URL이 있는 비디오에 캡션 수정자가 있는 여러 캡션 추가
 
-Dynamic Media은 URL 수정자를 통해 비디오가 포함된 단일 캡션의 추가를 지원합니다(참조) [캡션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=en)).
-
-<!-- IS THE CORRECT LINK THE ONE ABOVE OR IS IT THE LINK BELOW???? -->
-
-다음을 참조하십시오 [정적(이미지가 아닌) 콘텐츠 제공](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) 다음에서 *Dynamic Media 이미지 제공 및 렌더링 API 도움말* url에서 JSON 함수를 사용하는 방법에 대한 자세한 정보입니다.
+Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡션의 추가를 지원합니다. 다음을 참조하십시오 [비디오에 캡션 추가](#adding-captions-to-video).
 
 여러 캡션 변경 사항은 게시된 비디오에 대한 URL 수정자를 통해 추가된 캡션보다 우선합니다.
 
@@ -731,7 +727,7 @@ Dynamic Media은 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 | 자막 또는 오디오 트랙 상태 | 설명 |
 | --- | --- |
 | 처리 중 | 새 자막 또는 오디오 트랙 파일을 추가하여 저장하면 &quot;처리 중&quot; 상태가 됩니다. Dynamic Media은 스트리밍 매니페스트를 기본 비디오에 연결하여 파일을 처리합니다. |
-| 처리됨 | 처리가 완료되면 자막 또는 오디오 트랙 파일이 &quot;처리됨&quot; 상태로 나타납니다. &quot;처리됨&quot;으로 표시되는 자막 및 오디오 트랙 파일을 미리 볼 수 있습니다. *다음 이전* 비디오를 라이브로 게시합니다. |
+| 처리됨 | 처리가 완료되면 자막 또는 오디오 트랙 파일 또는 기본 비디오와 연결된 원본 오디오 트랙이 &quot;처리됨&quot; 상태로 나타납니다. &quot;처리됨&quot;으로 표시되는 자막 및 오디오 트랙 파일을 미리 볼 수 있습니다. *다음 이전* 비디오를 라이브로 게시합니다. |
 | 게시됨 | &quot;게시됨&quot; 상태는 기본 비디오에 대해 &quot;게시됨&quot;과 유사한 상태를 나타냅니다. 자산은 기본 비디오가 게시될 때 게시되며 공개 Dynamic Media URL에서 사용할 수 있습니다. |
 | 실패 | &quot;실패&quot; 상태는 자막 또는 오디오 트랙 파일의 처리가 완료되지 않았음을 의미합니다. 자막 또는 오디오 트랙 파일을 삭제하고 다시 업로드합니다. |
 | 게시 취소됨 | 게시된 기본 비디오가 명시적으로 게시 취소되면 비디오에 추가한 자막 또는 오디오 트랙 파일도 게시 취소됩니다. |
@@ -857,7 +853,7 @@ Dynamic Media은 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 
 >[!IMPORTANT]
 >
-이 항목은 더 이상 적극적으로 유지 관리되지 않습니다. Dynamic Media 레거시 사용자를 위해 있는 그대로 제공됩니다. Adobe은 다음을 권장합니다. [다중 자막 및 다중 오디오 추적 기능 활성화](#enable-dash) Dynamic Media 계정에서. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로를 활용할 수 있습니다.
+Adobe은 다음을 권장합니다. [다중 자막 및 다중 오디오 추적 기능 활성화](#enable-dash) Dynamic Media 계정에서. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로를 활용할 수 있습니다.
 
 단일 비디오 또는 응용 비디오 세트에 자막 기능을 추가하여 비디오를 글로벌 시장으로 확장할 수 있습니다. 폐쇄 캡션을 추가하면 오디오를 더빙하거나 원어민을 사용하여 각 언어의 오디오를 다시 녹음할 필요가 없습니다. 이 비디오는 녹화된 언어로 재생됩니다. 외국어 자막이 등장해 다른 언어를 사용하는 사람들도 여전히 오디오 부분을 이해할 수 있다.
 
