@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 25d7f93137e2410ecafc22dc4899e0ce5f654083
+source-git-commit: 018ffe71d0186e1eb07e5f59e3d6a48ed316de47
 workflow-type: tm+mt
-source-wordcount: '3639'
+source-wordcount: '3660'
 ht-degree: 1%
 
 ---
@@ -759,6 +759,8 @@ Adobe은 JEE 릴리스의 AEM Forms에서 지원하는 타사 참조 플랫폼�
       - Microsoft® SQL Server JDBC 드라이버 6.2.1.0
       - Microsoft® SQL Server JDBC 드라이버 6.2.2.0
       - SQL Server용 Microsoft® JDBC 드라이버 8.x
+
+   - **PDF Generator 서비스용 플랫폼 업데이트**: [!DNL Adobe Experience Manager Forms] jee의 경우 PDF Generator 및 일반적으로 다음 플랫폼에 대한 지원이 제거되었습니다.
       - Microsoft® Sharepoint 2016
       - Microsoft® Office 2016
       - Microsoft® Office Visio 2016
