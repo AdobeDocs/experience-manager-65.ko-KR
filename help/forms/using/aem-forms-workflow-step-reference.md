@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
+source-git-commit: 3c7b46c20b2f34bd83941649cbff2ac16c3aade2
 workflow-type: tm+mt
 source-wordcount: '7690'
 ht-degree: 0%
@@ -303,6 +303,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
   >* 역할 섹션에서 수신자 역할을 서명자, 승인자, 승인자, 인증된 수신자, 양식 작성자 및 위임자로 지정할 수 있습니다.
   >* 역할 옵션에서 위임자를 선택하면 위임자가 다른 수신자에게 서명 작업을 할당할 수 있습니다.
   >* 다음에 대한 인증 방법을 구성한 경우 [!DNL Adobe Sign], 구성에 따라 전화 기반 인증, 소셜 ID 기반 인증, 기술 자료 기반 인증, 정부 ID 기반 인증과 같은 인증 방법을 선택합니다.
+
 * **수신자를 선택하는 스크립트 또는 서비스:** 이 옵션은 수신자 선택 필드에서 동적으로 옵션을 선택하는 경우에만 사용할 수 있습니다. ECMAScript 또는 서비스를 지정하여 문서에 대한 수신자와 확인 옵션을 선택할 수 있습니다.
 * **수신자 세부 정보:** 이 옵션은 수신자 선택 필드에서 수동으로 옵션을 선택한 경우에만 사용할 수 있습니다. 이메일 주소를 지정하고 선택적 확인 메커니즘을 선택합니다. 2단계 확인 메커니즘을 선택하기 전에 구성된 Adobe Sign 계정에 대해 해당 확인 옵션이 활성화되어 있는지 확인하십시오. 문자열 데이터 유형의 변수를 사용하여 다음에 대한 값을 정의할 수 있습니다. **[!UICONTROL 이메일]**, **[!UICONTROL 국가 코드]**, 및 **[!UICONTROL 전화 번호]** 필드. 다음 **[!UICONTROL 국가 코드]** 및 **[!UICONTROL 전화 번호]** 필드는 을 선택하는 경우에만 표시됩니다. **[!UICONTROL 전화 확인]** 다음에서 **[!UICONTROL 2단계 확인]** 드롭다운 목록입니다.
 * **상태 변수:** Adobe Sign 사용 문서는 문서의 서명 상태를 문자열 데이터 유형의 변수에 저장합니다. 상태 변수(adobeSignStatus)의 이름을 지정합니다. 인스턴스의 상태 변수는 /etc/workflow/instances/의 CRXDE에서 사용할 수 있습니다&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData에 변수의 상태가 포함되어 있습니다.
