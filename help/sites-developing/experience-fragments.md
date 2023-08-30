@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: d6e5684ee89d19ab0fc6d15038c22a4a5b816563
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1782'
 ht-degree: 1%
 
 ---
@@ -40,13 +40,15 @@ An [경험 조각](/help/sites-authoring/experience-fragments.md) 는 페이지 
 
 * 또는 다음으로 끝남: `-src`, 또는 `-href`
 
-예를 들면 다음과 같습니다.
+예:
 
 `.../brooklyn-coat/master.plain.html`
 
 >[!NOTE]
 >
 >링크는 항상 게시 인스턴스를 참조합니다. 링크는 서드파티가 사용하도록 만들었으므로 작성자가 아닌 게시 인스턴스에서 항상 호출됩니다.
+>
+>자세한 내용은 [URL 표면화](/help/sites-developing/externalizer.md).
 
 ![xf-](assets/xf-14.png)
 
@@ -259,7 +261,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
-예를 들면 다음과 같습니다.
+예:
 
 ```java
 @Override
