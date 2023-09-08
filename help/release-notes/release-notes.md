@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: d63355e1042f6ad63a848b97c26dc2f29bab47b1
+source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
 workflow-type: tm+mt
-source-wordcount: '4459'
+source-wordcount: '4460'
 ht-degree: 7%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 7%
 
 * **[규칙 편집기의 사용자 지정 오류 처리기로 향상된 오류 처리](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** 이제 외부 서비스에서 반환한 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출하고 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다
 
-* **[향상된 Adobe Sign 워크플로 단계](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html):** AEM 워크플로의 Adobe Sign 워크플로 단계는 다음과 같은 개선 사항을 통해 사용할 수 있습니다.
+* **[향상된 Adobe Sign 워크플로 단계](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** AEM 워크플로의 Adobe Sign 워크플로 단계는 다음과 같은 개선 사항을 통해 사용할 수 있습니다.
 
    * **Adobe Sign에 대한 정부 ID 기반 인증을 통해 보안 강화:** Adobe Acrobat Sign의 정부 ID 기반 인증은 사용자가 정부에서 발급한 ID(운전면허증, 주민등록증, 여권)를 사용하여 신원을 인증할 수 있도록 함으로써 추가적인 인증 계층을 제공합니다. 이 향상된 기능은 신뢰할 수 있는 ID 문서를 활용함으로써 서명 프로세스에 대한 신뢰도를 더욱 높여 강화된 보안, 규정 준수 및 사용자 유효성 검사가 필요한 시나리오에 이상적입니다.
 
@@ -160,9 +160,7 @@ ht-degree: 7%
 
 ### [!DNL Forms]{#forms-6518}
 
-<!--
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
--->
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release. -->
 
 * **문서 서비스**
    * 사용자가 transformPDF 서비스를 사용할 때 다음과 같은 예외로 실패합니다. `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957)
@@ -175,7 +173,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
    * 사용자가 AEM Forms으로 업그레이드하여 sendToPrinter 서비스를 사용할 때 힙 사용률이 지속적으로 증가합니다. (FORMS-10148)
    * JBoss 7.4 EAP 서버에서 이메일 기능이 `java.io.IOException`. (FORMS-10138)
    * 사용자가 transformPDF 서비스를 사용할 때 다음 오류로 실패합니다. `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml`(FORMS-9957)
-   * AEM 서비스 팩 6.5.14.0으로 업그레이드한 후 특정 템플릿을 사용하는 동안 어셈블러 서비스에서 문제가 발생합니다. (FORMS-9445, FORMS-9408)
+   * AEM 서비스 팩 6.5.14.0으로 업그레이드한 후 특정 템플릿을 사용할 때 어셈블러 서비스에 문제가 발생합니다. (FORMS-9445, FORMS-9408)
   <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
 * **적응형 양식**
    * 사용자가 다른 필드의 값을 설정하는 등 필드를 수정하지 않고 사용자 정의 함수를 호출하려고 하면 실패합니다. (FORMS-9921)
