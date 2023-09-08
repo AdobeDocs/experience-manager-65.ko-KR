@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
+source-git-commit: e330d69b7644e8f99498d0ed60afab009c649b40
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4552'
 ht-degree: 7%
 
 ---
@@ -450,6 +450,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 #### 설치
 
 * JBoss® 7.1.4 플랫폼에서 사용자가 Experience Manager 6.5.16.0 이상의 서비스 팩을 설치하면 `adobe-livecycle-jboss.ear` 배포가 실패합니다. (CQ-4351522, CQDOC-20159)
+* AEM 서비스 팩 6.5.18.0 전체 설치 관리자를 설치한 후 JBoss 턴키를 사용하여 JEE에서 EAR 배포가 실패합니다(CQDOC-20803).
+문제를 해결하려면 `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` 파일 및 업데이트 `Adobe_Adobe_JAVA_HOME` 끝 `Adobe_JAVA_HOME` 구성 관리자를 실행하기 전에 발생하는 모든 발생 횟수.
 
 #### 적응형 양식
 
@@ -459,7 +461,12 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 #### 대화형 통신
 
-* AEM 서비스 팩 18로 업그레이드한 후에는 대화형 통신 문자를 편집할 수 없습니다. (FORMS-10578)
+* AEM 서비스 팩 18로 업그레이드한 후에는 대화형 통신 문자를 편집할 수 없습니다. (FORMS-10578) 이 문제를 해결하려면 다음 단계를 수행하십시오.
+
+   1. 다운로드 [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) SD 링크에서.
+   1. 핫픽스 아카이브 파일을 추출하여 Experience Manager 패키지(.zip) 및 번들(.jar) 파일을 가져옵니다.
+   1. 패키지 관리자를 통해 패키지(.zip)를 업로드하고 설치합니다.
+   1. 구성 관리자 번들을 엽니다. `https://server:host/system/console/bundles`번들(.jar)을 업로드하고 설치합니다.
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
