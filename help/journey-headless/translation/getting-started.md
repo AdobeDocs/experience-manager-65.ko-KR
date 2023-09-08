@@ -2,10 +2,10 @@
 title: AEM Headless 번역 시작하기
 description: Headless 콘텐츠를 구성하는 방법 및 AEM의 번역 도구의 작동 방식에 대해 알아봅니다.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 93%
+source-wordcount: '1495'
+ht-degree: 92%
 
 ---
 
@@ -101,7 +101,7 @@ Headless 콘텐츠를 채널, 지역 및 언어에 일관되게 게재하려면 
 
 콘텐츠 모델이 콘텐츠의 패턴인 경우 콘텐츠 조각은 해당 패턴을 기반으로 하는 실제 콘텐츠입니다. 콘텐츠 조각은 번역해야 하는 콘텐츠를 나타냅니다.
 
-콘텐츠 조각은 디지털 에셋 관리(DAM)의 일부로 AEM의 에셋으로 관리됩니다. 이는 모두 경로 아래에 위치하므로 중요합니다`/content/dam`.
+콘텐츠 조각은 디지털 자산 관리(DAM)의 일부로 AEM의 자산으로 관리됩니다. 이는 모두 경로 아래에 위치하므로 중요합니다`/content/dam`.
 
 ## 권장 콘텐츠 구조 {#recommended-structure}
 
@@ -189,4 +189,7 @@ Headless 번역 여정의 한 부분을 완료했으므로,
 * [AEM 기본 처리](/help/sites-authoring/basic-handling.md) - 콘텐츠 찾기와 같은 필수 작업을 편안하게 탐색하고 수행할 수 있도록 AEM UI의 기본 사항에 대해 알아봅니다.
 * [번역할 콘텐츠 식별](/help/sites-administering/tc-rules.md) - 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 * [번역 통합 프레임워크 구성](/help/sites-administering/tc-tic.md) - 번역 통합 프레임워크를 서드파티 번역 서비스와 통합하도록 구성하는 방법에 대해 알아봅니다.
-* [번역 프로젝트 관리](/help/sites-administering/tc-manage.md) - AEM에서 기계 번역 및 사람 번역을 만들고 관리하는 방법에 대해 알아봅니다.
+* [번역 프로젝트 관리](/help/sites-administering/tc-manage.md) - AEM에서 기계 번역 및 인간 번역을 만들고 관리하는 방법에 대해 알아봅니다.
+* An [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
+* 다음 [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

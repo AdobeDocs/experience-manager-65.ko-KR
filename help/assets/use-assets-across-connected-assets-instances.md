@@ -7,7 +7,7 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bc6a97a55f392cba03131ee3ca7cad35b8c1e69b
 workflow-type: tm+mt
 source-wordcount: '3949'
 ht-degree: 17%
@@ -92,7 +92,7 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
 1. 기존 액세스 [!DNL Sites] 배포 또는 다음 명령을 사용하여 배포 만들기:
 
    1. JAR 파일의 폴더에서 터미널에서 다음 명령을 실행하여 각 파일을 생성합니다 [!DNL Experience Manager] 서버입니다.
-      `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
+      `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
    1. 몇 분 후에 [!DNL Experience Manager] 서버가 정상적으로 시작됩니다. 고려 사항 [!DNL Sites] 웹 페이지 작성을 위한 로컬 시스템으로 배포(예: `https://[local_sites]:4502`.
 

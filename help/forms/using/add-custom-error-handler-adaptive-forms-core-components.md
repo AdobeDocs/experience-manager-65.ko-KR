@@ -7,9 +7,9 @@ keywords: 사용자 지정 오류 핸들러 추가, 기본 오류 핸들러 추�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
+source-git-commit: f8e0ac45d98d6485ccb60e754657caf9d190c3ea
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2281'
 ht-degree: 1%
 
 ---
@@ -164,7 +164,7 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 
 적응형 Forms에서 오류 핸들러를 사용하기 전에
 
-* [AEM Cloud Service 환경을 위한 적응형 Forms 핵심 구성 요소 활성화](enable-adaptive-forms-core-components.md).
+* [내 환경에 맞는 적응형 양식 핵심 구성 요소 활성화](enable-adaptive-forms-core-components.md).
 * 에 대한 기본 지식 [사용자 지정 함수 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * 의 최신 릴리스 설치 [Apache Maven](https://maven.apache.org/download.cgi).
 

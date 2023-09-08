@@ -2,10 +2,10 @@
 title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정 부분에서는 Headless 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 50%
+source-wordcount: '1873'
+ht-degree: 51%
 
 ---
 
@@ -33,7 +33,7 @@ AEM Headless 번역 여정의 이전 문서인 [AEM Assets API를 통해 콘텐�
 
 ## AEM SDK {#the-aem-sdk}
 
-AEM SDK를 사용하여 사용자 지정 코드를 빌드하고 배포합니다. 시작하기 전에 Headless 애플리케이션을 개발하고 테스트해야 하는 주요 도구입니다. 다음 아티팩트가 포함되어 있습니다.
+AEM SDK를 사용하여 사용자 정의 코드를 빌드하고 배포합니다. 시작하기 전에 Headless 애플리케이션을 개발하고 테스트해야 하는 주요 도구입니다. 다음 아티팩트가 포함되어 있습니다.
 
 * Quickstart jar - 작성자와 게시 인스턴스를 모두 설정하는 데 사용할 수 있는 실행 가능한 jar 파일
 * Dispatcher 도구 - Dispatcher 모듈 및 Windows 및 UNIX 기반 시스템에 대한 종속성
@@ -72,7 +72,7 @@ Node.js는 AEM 프로젝트의 프론트엔드 에셋으로 작업하는 데 사
 
 ## 로컬 개발 워크플로 {#the-local-development-workflow}
 
-로컬 개발 프로젝트는 Apache Maven을 기반으로 빌드되어 소스 제어에 Git을 사용합니다. 개발자는 프로젝트를 업데이트하기 위해 Eclipse, Visual Studio Code 또는 IntelliJ 등의 기본 통합 개발 환경을 사용할 수 있습니다.
+로컬 개발 프로젝트는 Apache Maven을 기반으로 빌드되어 소스 제어에 Git을 사용합니다. 프로젝트를 업데이트하려면 개발자는 Eclipse, Visual Studio Code 또는 IntelliJ 등 권장되는 통합 개발 환경을 사용할 수 있습니다.
 
 Headless 애플리케이션에서 수집하는 코드 또는 콘텐츠 업데이트를 테스트하려면 로컬 AEM 런타임에 업데이트를 배포합니다. 여기에는 AEM 작성자 및 게시 서비스의 로컬 인스턴스가 포함됩니다.
 
@@ -131,7 +131,7 @@ AEM Headless 프로젝트를 시작하도록 준비하려면 프로젝트의 모
 * HTTP 클라이언트가 gzip에 대한 헤더 요청을 수락하는지 확인합니다.
 * JSON과 참조된 아티팩트를 호스팅하는 데 사용되는 도메인 수를 최소화합니다.
 * 사용 `Last-modified-since` 리소스를 새로 고칩니다.
-* JSON 파일의 `_reference`출력을 사용하여 전체 JSON 파일을 구문 분석하지 않고도 에셋 다운로드를 시작합니다.
+* JSON 파일의 `_reference`출력을 사용하여 전체 JSON 파일을 구문 분석하지 않고도 자산 다운로드를 시작합니다.
 
 <!-- End of CDN Review -->
 
@@ -225,3 +225,7 @@ You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline
    * [CDN 캐시 제어](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
    * 구성 [CDN 재작성기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*cdn 재작성기 검색*)
+
+* [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

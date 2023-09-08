@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Headless 콘텐츠 설계 여정
 description: Adobe Experience Manager의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아봅니다.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 88%
+source-wordcount: '731'
+ht-degree: 86%
 
 ---
 
@@ -81,3 +81,6 @@ AEM(Adobe Experience Manager)은 AEM GraphQL API를 사용하여 콘텐츠 조�
 * AEM Headless 개발자 여정
    * [CMS Headless 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
    * [콘텐츠를 모델링하는 방법에 대해 알아보기](/help/journey-headless/developer/model-your-content.md)
+* [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

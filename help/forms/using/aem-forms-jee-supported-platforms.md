@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 018ffe71d0186e1eb07e5f59e3d6a48ed316de47
+source-git-commit: 54bed871375ddc9d18af564318ceac95dd1dd2f9
 workflow-type: tm+mt
-source-wordcount: '3660'
+source-wordcount: '3667'
 ht-degree: 1%
 
 ---
@@ -22,8 +22,7 @@ ht-degree: 1%
 <div class="preview">
 
 Adobe이 [전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 패치 설치 프로그램과 함께 JEE의 AEM 6.5 Forms 서비스 팩 18(6.5.18.0) 전체 설치 관리자는 새 플랫폼을 지원하며 패치 설치 관리자에는 버그 수정만 포함됩니다.
-
-새로 설치하거나 JEE의 AEM 6.5 Forms Adobe 환경에 최신 소프트웨어를 사용할 계획이라면 다음을 사용하는 것이 좋습니다. [JEE의 AEM 6.5.18.0 Forms 전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 2019년 4월 08일에 릴리스된 AEM 6.5 Forms 설치 프로그램 대신 2023년 8월 29일에 릴리스되었습니다.
+새로 설치하거나 JEE의 AEM 6.5 Forms Adobe 환경에 최신 소프트웨어를 사용할 계획이라면 다음을 사용하는 것이 좋습니다. [JEE의 AEM 6.5.18.0 Forms 전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 2019년 4월 08일에 릴리스된 AEM 6.5 Forms 설치 관리자 또는 2022년 3월 03일에 릴리스된 AEM 6.5.12 Forms 설치 관리자 대신 2023년 8월 31일에 릴리스되었습니다.
 
 </div>
 
@@ -804,4 +803,3 @@ Adobe은 JEE 릴리스의 AEM Forms에서 지원하는 타사 참조 플랫폼�
 - 2020년 9월 9일
 
    - 지원되는 AEM Forms 앱용 iOS 버전을 iOS 12로 변경했습니다. 이전 버전은 iOS 11입니다.
-

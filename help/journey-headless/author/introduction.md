@@ -2,10 +2,10 @@
 title: Adobe Experience Manager을 사용하여 Headless 작성
 description: Adobe Experience Manager의 강력하고 유연한 Headless 기능에 대한 소개와 프로젝트 콘텐츠를 작성하는 방법을 알아봅니다.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 90%
+source-wordcount: '659'
+ht-degree: 88%
 
 ---
 
@@ -42,7 +42,7 @@ Headless는 웹에 해당 콘텐츠를 표시하는 방식에서 사실상 콘�
 
 그렇다면 AEM이란 무엇입니까?
 
-무엇보다도 AEM은 요구 사항에 맞게 사용자 지정할 수 있는 다양한 기능을 갖춘 콘텐츠 관리 시스템입니다.
+무엇보다도 AEM은 요구 사항에 맞게 사용자 정의할 수 있는 다양한 기능을 갖춘 콘텐츠 관리 시스템입니다.
 
 즉, 다음 경우로 사용할 수 있습니다.
 
@@ -81,3 +81,9 @@ AEM의 경우 콘텐츠 설계자 역할(종종 다른 개인)이 데이터 모�
 * [AEM Headless 콘텐츠 설계자 여정](/help/journey-headless/architect/overview.md)
 
 * [AEM Headless 콘텐츠 번역 여정](/help/journey-headless/translation/overview.md)
+
+* [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
+
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+
+* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
