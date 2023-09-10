@@ -54,7 +54,7 @@ Tough Day 2에는 정리 단계가 없습니다. 따라서 주 프로덕션 인�
 
 ### 도움말 보기 {#getting-help}
 
-Tough Day 2는 명령줄에서 액세스할 수 있는 다양한 도움말 옵션을 제공합니다. 예를 들면 다음과 같습니다.
+Tough Day 2는 명령줄에서 액세스할 수 있는 다양한 도움말 옵션을 제공합니다. 예:
 
 ```xml
 java -jar toughday2.jar --help_full
@@ -114,7 +114,7 @@ java -jar toughday2.jar --help_full
 
 ### 전역 매개 변수 {#global-parameters}
 
-Tough Day 2는 테스트에 대한 환경을 설정하거나 변경하는 글로벌 매개 변수를 제공합니다. 여기에는 타겟팅되는 호스트, 포트 번호, 사용된 프로토콜, 인스턴스에 대한 사용자 및 암호 등이 포함됩니다. 예를 들면 다음과 같습니다.
+Tough Day 2는 테스트에 대한 환경을 설정하거나 변경하는 글로벌 매개 변수를 제공합니다. 여기에는 타겟팅되는 호스트, 포트 번호, 사용된 프로토콜, 인스턴스에 대한 사용자 및 암호 등이 포함됩니다. 예:
 
 ```xml
 java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m --dryrun=true

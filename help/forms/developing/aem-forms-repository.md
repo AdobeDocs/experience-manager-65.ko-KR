@@ -147,7 +147,7 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
 
    * A `com.adobe.repository.infomodel.Id` 리소스에 할당할 UUID 식별자입니다.
    * A `com.adobe.repository.infomodel.Lid` 리소스에 할당할 UUID 식별자입니다.
-   * A `java.lang.String` 리소스 컬렉션의 이름을 포함합니다. (예: `FormsFolder`)
+   * A `java.lang.String` 리소스 컬렉션의 이름을 포함합니다. 예: `FormsFolder`
 
    이 메서드는 `com.adobe.repository.infomodel.bean.ResourceCollection` 새 폴더를 나타내는 개체입니다.
 

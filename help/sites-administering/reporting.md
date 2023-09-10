@@ -14,7 +14,7 @@ exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '2804'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -124,12 +124,12 @@ ht-degree: 4%
 
 1. 드롭다운 목록에서 원하는 연산자를 선택합니다.
 1. 필터링할 텍스트를 입력합니다.
-1. 클릭 **적용**.
+1. **적용**&#x200B;을 클릭합니다.
 
 필터를 비활성화하려면 다음을 수행하십시오.
 
 1. 필터 텍스트를 제거합니다.
-1. 클릭 **적용**.
+1. **적용**&#x200B;을 클릭합니다.
 
 #### 집계 {#aggregates}
 

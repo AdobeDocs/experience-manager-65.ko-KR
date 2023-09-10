@@ -176,7 +176,7 @@ AEM Forms과 Adobe Acrobat Sign 솔루션 연결을 시작하기 전에
 >
 >
 * A `re-direct URL` 다음을 포함해야 함: [최상위](https://en.wikipedia.org/wiki/Top-level_domain) 도메인. 예, `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
-* 로컬 URL을 (으)로 사용하지 않음 `re-direct URL`. (예: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`)
+* 로컬 URL을 (으)로 사용하지 않음 `re-direct URL`. 예: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
 
 
 #### 리디렉션 URL 및 범위를 Adobe Sign 팀과 공유하고 자격 증명을 받습니다

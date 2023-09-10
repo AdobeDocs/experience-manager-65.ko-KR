@@ -48,7 +48,7 @@ CustomToolbarLayoutDemo.zip
 
 ## 사용자 지정 도구 모음 레이아웃을 만들려면 {#layout-1}
 
-1. 폴더를 만들어 사용자 지정 도구 모음 레이아웃을 유지합니다. 예를 들면 다음과 같습니다.
+1. 폴더를 만들어 사용자 지정 도구 모음 레이아웃을 유지합니다. 예:
 
    `/apps/customlayout/toolbar`
 

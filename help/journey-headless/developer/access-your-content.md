@@ -5,7 +5,7 @@ exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1333'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -133,7 +133,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEMenvironment:
 
 * 콘텐츠 조각 모델을 정의할 때 사용 가능한 특정 데이터 유형입니다.
 * 특정 콘텐츠 조각 모델에 따라 다른 조각을 참조합니다.
-* 구조화된 데이터를 만들고 검색할 수 있습니다.
+* 구조화된 데이터를 만든 다음 검색할 수 있습니다.
 
    * **다중 피드**&#x200B;로 정의된 경우 주요 조각에서 여러 하위 조각을 참조(검색)할 수 있습니다.
 
@@ -345,7 +345,7 @@ query {
 
 <!-- need code / curl / cli examples-->
 
-필수 요소 구성과 함께 AEM GraphQL API 사용에 대한 자세한 내용은 다음을 참조할 수 있습니다.
+필수 요소 구성과 함께 AEM GraphQL API 사용에 대한 자세한 내용은 다음 자료를 참조하십시오.
 
 * AEM을 통해 GraphQL을 사용하는 방법 알아보기
 * 샘플 콘텐츠 조각 구조
@@ -374,7 +374,7 @@ query {
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
    * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
    * [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md)
-* [원본 간 리소스 공유(CORS) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
+* [원본 간 리소스 공유(CORS) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko-KR#understand-cross-origin-resource-sharing-(cors))
 * [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 콘텐츠 모델링 및 GraphQL을 포함하여 AEM의 Headless 기능 사용 개요를 제공하는 짧은 비디오 튜토리얼 시리즈.
 
 <!--

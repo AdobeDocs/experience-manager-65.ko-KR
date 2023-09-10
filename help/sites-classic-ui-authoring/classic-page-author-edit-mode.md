@@ -530,7 +530,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 `.../jcr:content/par/<paragraph-ID>`
 
-예를 들면 다음과 같습니다.
+예:
 
 `/content/geometrixx-outdoors/en/equipment/biking/cajamara/jcr:content/par/similar-products`
 
@@ -538,7 +538,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 `/jcr:content/par`
 
-예를 들면 다음과 같습니다.
+예:
 
 `/content/geometrixx-outdoors/en/equipment/biking/cajamara/jcr:content/par`
 

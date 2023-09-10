@@ -21,7 +21,7 @@ ht-degree: 3%
 Dynamic Media 게시 설정 구성은 다음과 같은 경우에만 사용할 수 있습니다.
 
 * Scene7 모드에서 Dynamic Media을 실행하고 있습니다. 다음을 참조하십시오 [Scene7 모드에서 Dynamic Media 활성화](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* 다음 항목이 있습니다. *기존* **[!UICONTROL Dynamic Media 구성]** (in **[!UICONTROL Cloud Services]** Adobe Experience Manager )를 사용할 수 있습니다. 다음을 참조하십시오 [Cloud Services에서 Dynamic Media 구성 만들기](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* 다음 항목이 있습니다. *기존* **[!UICONTROL Dynamic Media 구성]** (in **[!UICONTROL Cloud Service]** Adobe Experience Manager )를 사용할 수 있습니다. 다음을 참조하십시오 [Cloud Service에서 Dynamic Media 구성 만들기](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * 관리자 권한이 있는 Experience Manager 시스템 관리자입니다.
 
 Dynamic Media Publish 설정은 숙련된 웹 사이트 개발자와 프로그래머가 사용할 수 있도록 설계되었습니다. Adobe Dynamic Media은 이러한 게시 설정을 변경하는 사용자에게 Adobe Dynamic Media, HTTP 프로토콜 표준 및 규칙, 기본 이미징 기술을 잘 알고 있도록 권장합니다.

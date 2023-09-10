@@ -1,7 +1,7 @@
 ---
-title: 인터랙티브한 통신 설치 및 구성
+title: Interactive Communications 설치 및 구성
 seo-title: Install and configure Interactive Communications
-description: AEM Forms 인터랙티브한 커뮤니케이션을 설치 하 고 구성 하 여 비즈니스 correspondences, 문서, 문, 혜택 통지, 마케팅 메일, 자재 명세서 및 시작 키트를 만듭니다.
+description: AEM Forms Interactive Communications를 설치 및 구성하여 비즈니스 서신, 문서, 명세서, 혜택 알림, 마케팅 메일, 청구서 및 환영 키트를 만들 수 있습니다.
 seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: 8acb7f68-0b52-4acd-97e2-af31c9408e8d
 topic-tags: installing
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 ---
 
-# 인터랙티브한 통신 설치 및 구성{#install-and-configure-interactive-communications}
+# Interactive Communications 설치 및 구성{#install-and-configure-interactive-communications}
 
 ## 소개 {#introduction}
 
@@ -24,9 +24,9 @@ AEM Form은 비즈니스 서신, 문서, 명세서, 혜택 공지, 마케팅 이
 
 대화형 통신 기능을 사용하여 여러 형식으로 통신을 생성할 수 있습니다. 예: 웹 및 PDF. 대화형 커뮤니케이션을 AEM Workflow와 통합하여 고객이 선택한 채널에서 조립된 커뮤니케이션을 처리하고 고객에게 전달할 수 있습니다. (예: 이메일을 통해 최종 사용자에게 커뮤니케이션 전송)
 
-이전 버전에서 업그레이드하는 경우 서신 관리에 이미 투자한 경우 [호환성 패키지](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) 서신 관리를 계속 사용합니다. 대화형 통신과 서신 관리 간의 차이점에 대 한 자세한 내용은 인터랙티브한 통신 개요 ](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management) 를 참조 [ 하십시오.
+이전 버전에서 업그레이드하는 경우 서신 관리에 이미 투자한 경우 [호환성 패키지](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) 서신 관리를 계속 사용합니다. 대화형 통신과 통신 관리의 차이점에 대한 자세한 내용은 대화형 통신 개요를](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management) 참조하십시오[.
 
-AEM Forms은 강력한 엔터프라이즈급 플랫폼입니다. 인터랙티브한 통신은 AEM Forms의 기능 중 하나입니다. 전체 기능 목록은 다음을 참조하십시오. [AEM Forms 소개](../../forms/using/introduction-aem-forms.md).
+AEM Forms은 강력한 엔터프라이즈급 플랫폼입니다. 인터랙티브 커뮤니케이션은 AEM Forms의 기능 중 하나일 뿐입니다. 전체 기능 목록은 다음을 참조하십시오. [AEM Forms 소개](../../forms/using/introduction-aem-forms.md).
 
 ## 배포 토폴로지 {#deployment-topology}
 
@@ -66,14 +66,14 @@ AEM Forms의 대화형 통신 및 서신 관리 기능을 설치하고 구성하
    <td>libXau</td>
   </tr>
   <tr>
-   <td>용 Sm</td>
+   <td>libSM입니다</td>
    <td>Zlib</td>
-   <td>인 아이스크림</td>
-   <td>li하 uid</td>
+   <td>라이브러리 아이스</td>
+   <td>libuuid</td>
   </tr>
   <tr>
    <td>Glibc</td>
-   <td>확장</td>
+   <td>libXext</td>
    <td><p>nss-softokn-freebl</p> </td>
    <td>fontconfig</td>
   </tr>
@@ -92,16 +92,16 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 
 1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID가 필요합니다.
 1. 헤더 메뉴에 제공된 **[!UICONTROL Adobe Experience Manager]**&#x200B;를 누릅니다.
-1. [필터 ]**] 섹션에서 다음을 수행 합니다**[!UICONTROL  .
-   1. 솔루션 ]**드롭다운 목록에서 Forms]** 를 **[!UICONTROL 선택**[!UICONTROL  합니다.
-   2. 패키지의 버전 및 유형을 선택 합니다. [다운로드 ]**Search] 옵션을 사용**[!UICONTROL  하 여 결과를 필터링 할 수도 있습니다.
-1. 사용 중인 운영 체제에 해당 하는 패키지 이름을 탭 하 고 [EULA 약관 ]**수락]을 선택한**[!UICONTROL  다음 [다운로드 ]**]를 탭**[!UICONTROL  합니다.
+1. 필터&#x200B;]**섹션:**[!UICONTROL 
+   1. 솔루션&#x200B;]**드롭다운 목록에서**[!UICONTROL &#x200B;양식을&#x200B;]**선택합니다**[!UICONTROL .
+   2. 패키지의 버전 및 유형을 선택합니다. 다운로드&#x200B;]**검색 옵션을 사용하여**[!UICONTROL &#x200B;결과를 필터링할 수도 있습니다.
+1. 해당 운영 체제에 해당하는 패키지 이름을 누르고 EULA 약관&#x200B;]**동의를 선택한**[!UICONTROL &#x200B;다음 다운로드를&#x200B;]**누릅니다**[!UICONTROL .
 1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   AEM Forms 릴리스 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) 문서에 [ 나열 된 직접 링크를 통해 패키지를 다운로드 수도 있습니다.
+   AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) 문서에 나열된 [직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
 
-1. 패키지가 설치 되 면 AEM 인스턴스를 다시 시작 하 라는 메시지가 표시 됩니다. **서버를 즉시 다시 시작 하지 마십시오.** AEM Forms 서버를 중지 하기 전에 등록 된 ServiceEvent 및 ServiceEvent 등록 해제 메시지가 AEM-설치-디렉토리 ] /crx-quickstart/logs/error.log 파일에 [ 표시 되 고 로그는 안정적입니다.
+1. 패키지가 설치되면 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 AEM-Installation-Directory]/crx-quickstart/logs/error.log 파일에 나타나지 [않고 로그가 안정될 때까지 기다립니다.
 1. 모든 Author 및 Publish 인스턴스에서 1~7단계를 반복합니다.
 
 ## 설치 후 구성 {#post-installation-configurations}
@@ -112,9 +112,9 @@ AEM Forms에는 몇 가지 필수 구성과 선택적 구성이 있습니다. �
 
 #### RSA 및 BouncyCastle 라이브러리 구성  {#configure-rsa-and-bouncycastle-libraries}
 
-모든 작성자 및 Publish 인스턴스에서 다음 단계를 수행 하 여 라이브러리를 부팅 합니다.
+모든 Author 및 Publish 인스턴스에서 다음 단계를 수행하여 라이브러리를 부팅하고 위임합니다.
 
-1. 기본 AEM 인스턴스 정지 합니다.
+1. 기본 AEM 인스턴스를 중지합니다.
 1. 를 엽니다. [AEM 설치 디렉토리]편집할 \crx-quickstart\conf\sling.properties 파일입니다.
 
    을 사용한 경우 [AEM 설치 디렉토리]\crx-quickstart\bin\start.bat 를 사용하여 AEM을 시작한 다음, 다음에서 sling.properties를 편집합니다. [AEM_root]\crx-quickstart\.
@@ -182,8 +182,8 @@ AEM forms는 Adobe Experience Cloud 솔루션인 Adobe Target과 통합되어 �
 
 대화형 통신 및 서신 관리 기능을 사용할 환경을 구성했습니다. 이제 기능을 사용하는 단계는 다음과 같습니다.
 
-* [서신 관리 개요](/help/forms/using/interactive-communications-overview.md)
+* [통신 관리 개요](/help/forms/using/interactive-communications-overview.md)
 
-* [대화형 통신 만들기](../../forms/using/create-interactive-communication.md)
+* [대화형 커뮤니케이션 만들기](../../forms/using/create-interactive-communication.md)
 
 * [서신 관리 편지 만들기](../../forms/using/create-letter.md)

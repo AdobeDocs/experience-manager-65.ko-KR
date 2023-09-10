@@ -14,7 +14,7 @@ exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
@@ -99,7 +99,7 @@ AEM은 다음을 제공합니다.
    * `ResourceNameRolloutConflictHandler`
 
 * [맞춤화된 핸들러](#customized-handlers) 구현 가능성.
-* 각 개별 처리기의 우선 순위를 설정할 수 있는 서비스 순위 메커니즘. 순위가 가장 높은 서비스가 사용됩니다.
+* 각 개별 핸들러의 우선 순위를 설정할 수 있는 서비스 순위 메커니즘. 순위가 가장 높은 서비스가 사용됩니다.
 
 ### 기본 충돌 핸들러 {#default-conflict-handler}
 

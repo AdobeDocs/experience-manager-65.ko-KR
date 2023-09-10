@@ -5,7 +5,7 @@ exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '871'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -61,7 +61,7 @@ Headless 조각을 나타내는 콘텐츠 조각에는 구조화된 필드로 �
 
 **번역 구성** UI에는 번역 규칙에 사용할 수 있는 다양한 옵션이 있습니다. 여기에서 기본 Headless 현지화 구성에 가장 필요하고 일반적인 단계를 집중적으로 다룹니다.
 
-1. 탭 또는 클릭 **컨텍스트 추가**: 경로를 추가할 수 있습니다. 이는 규칙의 영향을 받는 콘텐츠 경로입니다.
+1. **컨텍스트 추가**를 탭하거나 클릭하여 경로를 추가할 수 있습니다. 이는 규칙의 영향을 받는 콘텐츠 경로입니다.
    ![컨텍스트 추가](assets/add-translation-context.png)
 1. 경로 브라우저를 사용하여 필요한 경로를 선택한 다음 **확인** 버튼을 탭하거나 클릭하여 저장합니다. Headless 콘텐츠를 보유하는 콘텐츠 조각은 일반적으로 `/content/dam/<your-project>` 아래에 위치합니다.
    ![경로 선택](assets/select-context.png)

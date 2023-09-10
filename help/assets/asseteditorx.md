@@ -66,7 +66,7 @@ ht-degree: 14%
 
 에셋 편집기는 양식 선택기를 사용하여 양식 선택기와 양식의 경로를 에셋의 URL에 추가하기만 하면 동일한 양식 페이지에서 리소스(이 경우 에셋)를 편집할 수 있습니다.
 
-예를 들면 다음과 같습니다.
+예:
 
 * 일반 양식 페이지: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
 * 양식 페이지로 로드된 자산: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)

@@ -98,4 +98,4 @@ AEM 6.0 이후 오버레이가 구현되고 사용되는 방식이 변경되었�
 몇 가지 예는 다음과 같은 경우에 다룹니다.
 
 * [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md)
-* [페이지 작성 사용자 지정](/help/sites-developing/customizing-page-authoring-touch.md)
+* [페이지 작성 사용자 정의](/help/sites-developing/customizing-page-authoring-touch.md)

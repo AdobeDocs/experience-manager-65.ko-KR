@@ -513,13 +513,13 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
    * **속성 이름**
 
-     대상 노드에서 검색할 노드 속성을 지정합니다. 예를 들면 다음과 같습니다.
+     대상 노드에서 검색할 노드 속성을 지정합니다. 예:
 
      `jcr:content/cq:template`
 
    * **옵션 노드 경로**
 
-     옵션이 있는 경로를 선택합니다. 예를 들면 다음과 같습니다.
+     옵션이 있는 경로를 선택합니다. 예:
 
      `/apps/cq/gui/content/common/options/predicates/templatetype`
 

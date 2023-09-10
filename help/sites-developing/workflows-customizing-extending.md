@@ -856,7 +856,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
    ![wf-37](assets/wf-37.png)
 
-   없는 경우 `cq:icon` 이 단계에 대해 정의된 경우, 기본 아이콘은 제목의 처음 두 문자를 사용하여 렌더링됩니다. 예를 들면 다음과 같습니다.
+   없는 경우 `cq:icon` 이 단계에 대해 정의된 경우, 기본 아이콘은 제목의 처음 두 문자를 사용하여 렌더링됩니다. 예:
 
    ![wf-38](assets/wf-38.png)
 
@@ -1034,7 +1034,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >
 >하지만 AEM에는 [현대화 도구](/help/sites-developing/modernization-tools.md) 클래식 UI 단계 대화 상자를 표준 UI 대화 상자로 업그레이드하려는 경우 변환 후에도 특정 경우에 대해 대화 상자에 수행할 수 있는 몇 가지 수동 개선 사항이 있습니다.
 >
->* 업그레이드된 대화 상자가 비어 있는 경우에서 대화 상자를 볼 수 있습니다 `/libs` 솔루션을 제공하는 방법의 예제와 유사한 기능을 갖추고 있습니다. 예를 들면 다음과 같습니다.
+>* 업그레이드된 대화 상자가 비어 있는 경우에서 대화 상자를 볼 수 있습니다 `/libs` 솔루션을 제공하는 방법의 예제와 유사한 기능을 갖추고 있습니다. 예:
 >
 >* `/libs/cq/workflow/components/model`
 >* `/libs/cq/workflow/components/workflow`

@@ -5,7 +5,7 @@ exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1692'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 * 암호
 * 로그인 화면 액세스 권한에 대한 링크
 
-필요한 모든 권한으로 계정을 구성합니다. Adobe 문제가 있는 경우 사내 프로젝트 지원 팀에 문의하는 것이 좋습니다.
+필요한 모든 권한으로 계정을 구성합니다. 문제가 발생한 경우 사내 프로젝트 지원 팀에 문의하는 것이 좋습니다.
 
 ### 탐색 {#navigation}
 

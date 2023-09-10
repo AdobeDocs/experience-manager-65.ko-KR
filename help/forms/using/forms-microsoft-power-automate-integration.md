@@ -6,21 +6,21 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
 workflow-type: tm+mt
 source-wordcount: '1196'
-ht-degree: 6%
+ht-degree: 14%
 
 ---
 
 
 # Microsoft® Power Automate에 적응형 양식 데이터 연결 및 제출 {#connect-adaptive-form-with-power-automate}
 
-제출 시 Microsoft® Power Automate Cloud Flow를 실행하도록 적응형 양식을 구성할 수 있습니다. 구성된 적응형 양식은 캡처된 데이터, 첨부 파일 및 기록 문서를 처리를 위해 Power Automate Cloud Flow로 전송합니다. 이렇게 하면 Microsoft® Power Automate의 강력한 기능을 활용하면서 사용자 정의 데이터 캡처 환경을 구축하여 캡처된 데이터를 중심으로 비즈니스 로직을 구축하고 고객 워크플로를 자동화할 수 있습니다. 다음은 적응형 양식과 Microsoft® Power Automate를 통합한 후 수행할 수 있는 작업의 몇 가지 예입니다.
+제출 시 Microsoft® Power Automate Cloud Flow를 실행하도록 적응형 양식을 구성할 수 있습니다. 구성된 적응형 양식은 캡처된 데이터, 첨부 파일 및 기록 문서를 처리를 위해 Power Automate Cloud Flow로 전송합니다. 이렇게 하면 Microsoft® Power Automate의 강력한 기능을 활용하면서 사용자 정의 데이터 캡처 환경을 빌드하여 캡처된 데이터를 중심으로 비즈니스 논리를 빌드하고 고객 워크플로를 자동화할 수 있습니다. 다음은 적응형 양식을 Microsoft® Power Automate와 통합한 후 수행할 수 있는 작업에 대한 몇 가지 예입니다.
 
-* Power Automate 비즈니스 프로세스에서 적응형 Forms 데이터 사용
-* Power Automate를 사용하여 캡처한 데이터를 500개 이상의 데이터 소스 또는 공개적으로 사용 가능한 API로 전송
+* Power Automate 비즈니스 프로세스에서 적응형 양식 데이터 사용
+* Power Automate를 사용하여 캡처된 데이터를 500개 이상의 데이터 소스 또는 공개적으로 사용 가능한 API로 전송
 * 캡처된 데이터에 대해 복잡한 계산 수행
-* 사전 정의된 일정에 따라 스토리지 시스템에 적응형 Forms 데이터 저장
+* 미리 정의된 일정에 따라 적응형 양식 데이터를 스토리지 시스템에 저장
 
-적응형 Forms 편집기는 **Microsoft® Power Automate 플로우 호출** 제출 액션을 통해 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [AEM Forms 작성자 인스턴스와 Microsoft® Power Automate 연결](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
+적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 액션을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [AEM Forms 작성자 인스턴스와 Microsoft® Power Automate 연결](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
 
 ## 사전 요구 사항
 

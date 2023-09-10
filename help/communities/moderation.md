@@ -357,7 +357,7 @@ AEM Communities에서 일괄 처리 [커뮤니티 콘텐츠 중재](/help/commun
 
 여러 UGC 게시물의 콘텐츠 영역 표시로 돌아가려면 세부 정보 보기 창의 오른쪽 상단 모서리에 있는 X를 선택합니다.
 
-예를 들면 다음과 같습니다.
+예:
 
 ![관리 기록](assets/moderation-history.png)
 
@@ -371,6 +371,6 @@ AEM Communities에서 일괄 처리 [커뮤니티 콘텐츠 중재](/help/commun
 
 여러 UGC 게시물의 콘텐츠 영역 표시로 돌아가려면 세부 정보 보기 창의 오른쪽 상단 모서리에 있는 X를 선택합니다.
 
-예를 들면 다음과 같습니다.
+예:
 
 ![view1](assets/view1.png)

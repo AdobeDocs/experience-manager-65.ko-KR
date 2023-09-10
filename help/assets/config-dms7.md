@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Dynamic Media 구성 - Scene7 모드{#configuring-dynamic-media-scene-mode}
 
-개발, 스테이징 및 프로덕션과 같은 다양한 환경에 대해 설정된 Adobe Experience Manager을 사용하는 경우 이러한 환경 각각에 대해 Dynamic Media Cloud Services을 구성합니다.
+개발, 스테이징 및 프로덕션과 같은 다양한 환경에 대해 설정된 Adobe Experience Manager을 사용하는 경우 이러한 환경 각각에 대해 Dynamic Media Cloud Service을 구성합니다.
 
 ## Dynamic Media - Scene7 모드의 아키텍처 다이어그램 {#architecture-diagram-of-dynamic-media-scene-mode}
 
@@ -83,7 +83,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 다음을 참조하십시오 [벌크 자산 마이그레이션용 기능 팩 18912 설치](/help/assets/bulk-ingest-migrate.md) 추가 정보.
 
-## Cloud Services에서 Dynamic Media 구성 만들기 {#configuring-dynamic-media-cloud-services}
+## Cloud Service에서 Dynamic Media 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
@@ -91,7 +91,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 **To create a Dynamic Media Configuration in Cloud Services:** -->
 
-1. Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 선택한 다음 로 이동합니다. **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media 구성]**.
+1. Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 선택한 다음 로 이동합니다. **[!UICONTROL Cloud Service]** > **[!UICONTROL Dynamic Media 구성]**.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 을(를) 선택합니다 **[!UICONTROL 글로벌]** ( 왼쪽에 있는 폴더 아이콘을 선택하지 마십시오. **[!UICONTROL 글로벌]**)을 선택한 다음 를 선택합니다 **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL Dynamic Media 구성 만들기]** 페이지에서 제목, Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. 이 정보는 프로비저닝 이메일에서 Adobe으로 제공됩니다. 이메일을 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
 
@@ -121,7 +121,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * **[!UICONTROL 회사]** - Dynamic Media 계정 이름.
      >[!IMPORTANT]
      >
-     Cloud Services의 Dynamic Media 구성은 Experience Manager 인스턴스에서 하나만 지원됩니다. 구성을 두 개 이상 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성 _아님_ Adobe에서 지원하거나 권장합니다.
+     Cloud Service의 Dynamic Media 구성은 Experience Manager 인스턴스에서 하나만 지원됩니다. 구성을 두 개 이상 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성 _아님_ Adobe에서 지원하거나 권장합니다.
 
      <!-- CQDOC-19579 and CQDOC-19612 -->
 
@@ -189,7 +189,7 @@ Dynamic Media의 암호 만료는 현재 시스템 날짜로부터 100년으로 
 **Dynamic Media에 대한 암호를 변경하려면:**
 
 1. Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
-1. 콘솔의 왼쪽에서 도구 아이콘을 선택한 다음 로 이동합니다. **[!UICONTROL Cloud Services] > [!UICONTROL Dynamic Media 구성]**.
+1. 콘솔의 왼쪽에서 도구 아이콘을 선택한 다음 로 이동합니다. **[!UICONTROL Cloud Service] > [!UICONTROL Dynamic Media 구성]**.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 을(를) 선택합니다 **[!UICONTROL 글로벌]**. 의 왼쪽에 있는 폴더 아이콘을 선택하지 마십시오. **[!UICONTROL 글로벌]**. 그런 다음 을 선택합니다. **[!UICONTROL 편집]**.
 1. 다음에서 **[!UICONTROL Dynamic Media 구성 편집]** 페이지, 바로 아래 **[!UICONTROL 암호]** 필드, 선택 **[!UICONTROL 암호 변경]**.
 1. 다음에서 **[!UICONTROL 암호 변경]** 대화 상자에서 다음을 수행합니다.
@@ -369,7 +369,7 @@ Dynamic Media에서 처리하는 자산 유형을 정의하고 고급 자산 처
 
 * Adobe PDF을 eCatalog 자산으로 변환합니다.
 * 개인화를 위해 Adobe Photoshop PSD 문서(.personalization)를 배너 템플릿 자산으로 변환합니다.
-* Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated PostScript ® 파일(.EPS)을 래스터화합니다.
+* Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated PostScript® 파일(.EPS)을 래스터화합니다.
 * [비디오 프로필](/help/assets/video-profiles.md) 및 [이미징 프로필](/help/assets/image-profiles.md) 를 사용하여 비디오와 이미지의 처리를 각각 정의할 수 있습니다.
 
 다음을 참조하십시오 [에셋 업로드](/help/assets/manage-assets.md#uploading-assets).
@@ -632,7 +632,7 @@ Dynamic Media - Scene7 Adobe 모드가 원활하게 실행되도록 하려면 �
 
 <!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-Adobe은 PDF, PostScript ® 및 PSD 파일에 대해 다음 &quot;조정된&quot; 작업 매개 변수를 사용할 것을 권장합니다.
+Adobe은 PDF, PostScript® 및 PSD 파일에 대해 다음 &quot;조정된&quot; 작업 매개 변수를 사용할 것을 권장합니다.
 
 <!-- OLD PDF JOB PARAMETERS `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` -->
 

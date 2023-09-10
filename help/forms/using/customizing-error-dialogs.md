@@ -22,7 +22,7 @@ AEM Forms 작업 영역을 사용하면 오류 대화 상자를 사용자 지정
 
 ## 텍스트 맞춤화 {#customizing-text}
 
-1. 다음에서 `/apps/ws/locales/en-US/translation.json` 파일, 값 변경 `wserror` 을 추가하여 맞춤화된 값을 생성할 수 있습니다. 예를 들면 다음과 같습니다.
+1. 다음에서 `/apps/ws/locales/en-US/translation.json` 파일, 값 변경 `wserror` 을 추가하여 맞춤화된 값을 생성할 수 있습니다. 예:
 
    ```json
    "wserror" : {

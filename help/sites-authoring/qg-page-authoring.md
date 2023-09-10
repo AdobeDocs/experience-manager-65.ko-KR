@@ -14,7 +14,7 @@ exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1557'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -75,7 +75,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. 다음을 사용하여 트리 위로 탐색 [헤더의 이동 경로](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs)를 클릭하여 선택한 위치로 돌아갈 수 있습니다.
+1. [헤더에서 이동 경로](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs)를 사용하여 트리 위로 탐색합니다. 그러면 선택한 위치로 돌아갈 수 있습니다.
 
    ![qgtap-01](assets/qgtap-01.png)
 

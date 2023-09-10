@@ -82,7 +82,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
 1. 만들기 [감시 폴더](/help/forms/using/creating-configure-watched-folder.md) 배치 API를 사용하도록 를 구성합니다.
    1. AEM Forms 작성자 인스턴스에 로그인합니다.
    1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 감시 폴더 구성]**. 누르기 **[!UICONTROL 신규]**.
-   1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 물리적 **[!UICONTROL 경로]** 폴더의 입니다. (예: `c:\batchprocessing`)
+   1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 물리적 **[!UICONTROL 경로]** 폴더의 입니다. 예: `c:\batchprocessing`
    1. 다음 항목 선택 **[!UICONTROL 서비스]** 의 옵션 **[!UICONTROL 다음을 사용하여 파일 처리]** 필드.
    1. 다음 항목 선택 **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** 의 서비스 **[!UICONTROL 서비스 이름]** 필드.
    1. 다음 항목 지정 **[!UICONTROL 출력 파일 패턴]**. 예: %F/ [패턴](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있음을 지정합니다.
@@ -144,7 +144,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
 1. 만들기 [감시 폴더](/help/forms/using/creating-configure-watched-folder.md) 배치 API 서비스를 사용하도록 구성합니다.
    1. AEM Forms 작성자 인스턴스에 로그인합니다.
    1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 감시 폴더 구성]**. 누르기 **[!UICONTROL 신규]**.
-   1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 물리적 **[!UICONTROL 경로]** 폴더의 입니다. (예: `c:\batchprocessing`)
+   1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 물리적 **[!UICONTROL 경로]** 폴더의 입니다. 예: `c:\batchprocessing`
    1. 다음 항목 선택 **[!UICONTROL 서비스]** 의 옵션 **[!UICONTROL 다음을 사용하여 파일 처리]** 필드.
    1. 다음 항목 선택 **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** 의 서비스 **[!UICONTROL 서비스 이름]** 필드.
    1. 다음 항목 지정 **[!UICONTROL 출력 파일 패턴]**. 예: %F/ [패턴](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있음을 지정합니다.
@@ -177,7 +177,7 @@ Java 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파�
 
 1. AEM 인스턴스에 로그인하고 대화형 통신을 만듭니다. 아래 주어진 샘플 코드에 언급된 대화형 통신을 사용하려면 [여기를 클릭하십시오](assets/SimpleMediumIC.zip).
 1. [Apache Maven을 사용하여 AEM 프로젝트 빌드 및 배포](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) AEM 인스턴스에서 참조할 수 있습니다.
-1. 추가 [AEM Forms 클라이언트 SDK 버전 6.0.12](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 또는 AEM 프로젝트의 POM 파일의 종속성 목록에 있는 나중에 참조할 수 있습니다. 예를 들어
+1. 추가 [AEM Forms 클라이언트 SDK 버전 6.0.12](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 또는 AEM 프로젝트의 POM 파일의 종속성 목록에 있는 나중에 참조할 수 있습니다. 예:
 
    ```xml
        <dependency>

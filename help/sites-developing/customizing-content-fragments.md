@@ -480,7 +480,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-예를 들면 다음과 같습니다.
+예:
 
 ```java
 // first, get the resource
@@ -498,7 +498,7 @@ if (fragmentResource != null) {
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 
-예를 들면 다음과 같습니다.
+예:
 
 ```java
 Resource templateOrModelRsc = resourceResolver.getResource("...");

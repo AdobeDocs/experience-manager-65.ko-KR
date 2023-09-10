@@ -1,7 +1,7 @@
 ---
 title: 페이지 속성의 벌크 편집을 위한 페이지 구성
 seo-title: Configuring your Page for Bulk Editing of Page Properties
-description: 페이지 속성을 벌크 편집하면 여러 페이지의 속성을 한 번에 편집할 수 있습니다
+description: 페이지 속성의 일괄 편집을 통해 한 번에 여러 페이지의 속성을 편집할 수 있습니다
 seo-description: Bulk editing of page properties lets you edit the properties of multiple pages at once
 uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
@@ -13,13 +13,13 @@ exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 30%
+ht-degree: 38%
 
 ---
 
 # 페이지 속성의 벌크 편집을 위한 페이지 구성 {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-[페이지 속성의 벌크 편집](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) 여러 페이지의 속성을 한 번에 편집할 수 있습니다.
+[페이지 속성의 일괄 편집](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages)을 통해 한 번에 여러 페이지의 속성을 편집할 수 있습니다.
 
 값이 다를 수 있으므로 페이지 속성은 기본값으로 벌크 편집을 활성화하지 않습니다. 명시적으로 허용(활성화)되어야 합니다. 일괄 편집에 사용할 수 있는 페이지 속성을 정의할 때 다음과 같은 특정 영향을 고려해야 합니다.
 

@@ -77,12 +77,12 @@ ht-degree: 0%
 
    다음 `bundle.info` 각 폴더 내의 파일은 번들 이름을 식별합니다.
 
-1. 데이터 폴더로 이동합니다. 예를 들면 다음과 같습니다.
+1. 데이터 폴더로 이동합니다. 예:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. HMAC 및 마스터 파일을 복사합니다.
-1. 그런 다음 HMAC 키를 복제할 대상 인스턴스로 이동하여 데이터 폴더로 이동합니다. 예를 들면 다음과 같습니다.
+1. 그런 다음 HMAC 키를 복제할 대상 인스턴스로 이동하여 데이터 폴더로 이동합니다. 예:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 

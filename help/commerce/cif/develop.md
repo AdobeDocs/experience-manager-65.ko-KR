@@ -91,7 +91,7 @@ CIF를 사용하여 AEM Commerce 프로젝트를 시작하는 방법에는 두 �
 
 AEM 프로젝트 원형 을 참조하십시오. [사용 지침](https://github.com/adobe/aem-project-archetype#usage) AEM 프로젝트를 생성하는 방법에 대해 설명합니다. 프로젝트에 CIF를 포함하려면 `includeCommerce` 옵션을 선택합니다.
 
-예를 들면 다음과 같습니다.
+예:
 
 ```bash
 mvn -B archetype:generate \

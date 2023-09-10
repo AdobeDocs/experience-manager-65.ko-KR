@@ -444,7 +444,7 @@ DSCSample.jar 파일은 renderLetter API를 사용하여 DSC가 입력으로 제
 
 1. 서신 만들기 UI에서 **편지 검토** 및 검토자의 이메일 ID를 지정합니다.
 
-1. 클릭 **제출**.
+1. **제출**&#x200B;을 클릭합니다.
 
 ![sendreview](assets/sendreview.png)
 

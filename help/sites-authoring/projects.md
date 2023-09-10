@@ -241,5 +241,5 @@ ht-degree: 33%
 
 * [프로젝트 관리](/help/sites-authoring/touch-ui-managing-projects.md)
 * [작업](/help/sites-authoring/task-content.md)
-* [프로젝트 워크플로우를 사용하여 작업](/help/sites-authoring/projects-with-workflows.md)
+* [프로젝트 워크플로를 사용하여 작업](/help/sites-authoring/projects-with-workflows.md)
 * [크리에이티브 프로젝트 및 PIM 통합](/help/sites-authoring/managing-product-information.md)

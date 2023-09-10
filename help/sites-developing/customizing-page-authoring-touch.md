@@ -1,5 +1,5 @@
 ---
-title: 페이지 작성 사용자 지정
+title: 페이지 작성 사용자 정의
 description: Adobe Experience Manager(AEM)는 페이지 작성 기능을 사용자 지정할 수 있는 다양한 메커니즘을 제공합니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ ht-degree: 47%
 
 ---
 
-# 페이지 작성 사용자 지정{#customizing-page-authoring}
+# 페이지 작성 사용자 정의{#customizing-page-authoring}
 
 >[!CAUTION]
 >
@@ -23,7 +23,7 @@ Adobe Experience Manager(AEM)는 페이지 작성 기능 및 [콘솔](/help/site
 
 * Clientlibs
 
-  Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구현하는 동시에 표준 함수, 개체 및 메서드를 재사용할 수 있습니다. 사용자 지정할 때 `/apps.` 아래에서 자체적인 clientlib을 만들 수 있습니다. 새 clientlib은 다음을 충족해야 합니다.
+  Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구현하는 동시에 표준 함수, 개체 및 메서드를 재사용할 수 있습니다. 사용자 정의할 때 `/apps.` 아래에서 자체적인 clientlib을 만들 수 있습니다. 새 clientlib은 다음을 충족해야 합니다.
 
    * authoring clientlib에 따라 다름 `cq.authoring.editor.sites.page`
    * 적절한 것의 일부가 되다 `cq.authoring.editor.sites.page.hook` 범주
@@ -123,7 +123,7 @@ GITHUB의 코드
 
 ### 코드 샘플 {#code-sample-2}
 
-`aem-authoring-extension-toolbar-screenshot`은 구성 요소를 렌더링하는 사용자 지정 도구 모음 작업을 만드는 방법을 보여 주는 샘플 패키지입니다.
+`aem-authoring-extension-toolbar-screenshot`은 구성 요소를 렌더링하는 사용자 정의 도구 모음 작업을 만드는 방법을 보여 주는 샘플 패키지입니다.
 
 GITHUB의 코드
 
@@ -233,15 +233,15 @@ GITHUB의 코드
 * [GitHub에서 aem-authoring-extension-header-backtosites 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
 
-## 활성화 요청 워크플로우 사용자 지정 {#customizing-the-request-for-activation-workflow}
+## 활성화 요청 워크플로 사용자 정의 {#customizing-the-request-for-activation-workflow}
 
-즉시 사용 가능한 워크플로우인 **활성화 요청**&#x200B;은 다음과 같이 작동합니다.
+즉시 사용 가능한 워크플로인 **활성화 요청**&#x200B;은 다음과 같이 작동합니다.
 
 * 콘텐츠 작성자에게 적절한 복제 권한이 **없지만** DAM 사용자 및 작성자의 멤버십이 **있는** 경우 적절한 메뉴에 자동으로 표시됩니다.
 
 * 이외에는 복제 권한이 제거되었기 때문에 아무것도 표시되지 않습니다.
 
-이러한 활성화에 대해 사용자 지정 동작을 만들려면 **활성화 요청** 워크플로우를 오버레이할 수 있습니다.
+이러한 활성화에 대해 사용자 정의 동작을 만들려면 **활성화 요청** 워크플로를 오버레이할 수 있습니다.
 
 1. 위치 `/apps` 오버레이 **사이트** 마법사:
 

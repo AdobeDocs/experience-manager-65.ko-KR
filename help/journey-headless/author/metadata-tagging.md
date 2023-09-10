@@ -5,7 +5,7 @@ exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 83%
+ht-degree: 98%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 83%
 
   ![새 콘텐츠 조각 만들기 - 이름 입력](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* 다음 **변형** 콘텐츠 조각 편집기의 탭에서는 사전 정의된 항목을 추가할 수 있습니다 **태그** 프로젝트에서:
+* 콘텐츠 조각 편집기의 **변형** 탭을 사용하여 프로젝트에서 사전 정의된 **태그**&#x200B;를 추가할 수 있습니다.
 
   ![콘텐츠 조각 편집기 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
-* 다음 **메타데이터** 콘텐츠 조각 편집기의 탭에서는 다양한 메타데이터 필드와 사전 정의된 항목을 모두 추가할 수 있습니다 **태그** 프로젝트에서:
+* 콘텐츠 조각 편집기의 **메타데이터** 탭을 사용하여 프로젝트에서 다양한 메타데이터 필드와 사전 정의된 **태그**&#x200B;를 추가할 수 있습니다.
 
   ![콘텐츠 조각 편집기 - 메타데이터](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 

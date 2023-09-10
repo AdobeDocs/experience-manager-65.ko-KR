@@ -549,7 +549,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
    ]
 ```
 
-입력 데이터가 검증 기준을 충족하지 않는 경우 예외가 표시됩니다. 로그 수준이 로 설정된 경우 **디버그**&#x200B;에 오류가 기록됩니다. **error.log** 파일. 예를 들어
+입력 데이터가 검증 기준을 충족하지 않는 경우 예외가 표시됩니다. 로그 수준이 로 설정된 경우 **디버그**&#x200B;에 오류가 기록됩니다. **error.log** 파일. 예:
 
 ```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}

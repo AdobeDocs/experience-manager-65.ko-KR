@@ -83,7 +83,7 @@ ht-degree: 0%
 
 변수 자리 표시자도 **[!UICONTROL 제목]** 및 **[!UICONTROL 이메일 템플릿]** 필드.
 
-예를 들면 다음과 같습니다.
+예:
 
 `Hi ${first_name} ${last_name},`
 

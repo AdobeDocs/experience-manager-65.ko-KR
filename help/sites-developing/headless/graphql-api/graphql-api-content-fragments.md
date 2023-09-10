@@ -6,7 +6,7 @@ exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: 79fa58e63596301e1669903ce10dd8b2ba7d0a1b
 workflow-type: tm+mt
 source-wordcount: '4774'
-ht-degree: 55%
+ht-degree: 62%
 
 ---
 
@@ -118,7 +118,7 @@ POST 요청을 사용하는 GraphQL 쿼리는 캐시되지 않으므로 권장�
 
 GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 사용하여 피할 수 있는 제한(예: URL 길이)에 도달할 수 있습니다.
 
-다음을 참조하십시오 [지속 쿼리 캐싱 활성화](#enable-caching-persisted-queries) 을 참조하십시오.
+자세한 내용은 [지속 쿼리 캐싱 활성화](#enable-caching-persisted-queries)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -136,7 +136,7 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 
 이 인터페이스를 사용하면 쿼리를 직접 입력하고 테스트할 수 있습니다.
 
-예를 들면 다음과 같습니다.
+예:
 
 * `http://localhost:4502/content/graphiql.html`
 
@@ -693,21 +693,21 @@ query {
 
 >[!CAUTION]
 >
->Dispatcher에서 캐싱이 활성화되면 [CORS 필터](#cors-filter) 가 필요하지 않으므로 해당 섹션을 무시할 수 있습니다.
+>Dispatcher에서 캐싱이 활성화된 경우 [CORS 필터](#cors-filter)가 필요하지 않으므로 해당 섹션은 무시해도 됩니다.
 
-지속 쿼리의 캐싱은 Dispatcher에서 기본적으로 활성화되지 않습니다. 여러 출처가 있는 CORS(원본 간 리소스 공유)를 사용하는 고객은 Dispatcher 구성을 검토하고 업데이트해야 하므로 기본 활성화가 불가능합니다.
+지속 쿼리 캐싱은 기본적으로 Dispatcher에서 활성화되어 있지 않습니다. 원본이 여러 개인 CORS(원본 간 리소스 공유)를 사용하는 고객은 Dispatcher 구성을 검토하고 업데이트해야 하므로 기본값으로 활성화할 수는 없습니다.
 
 >[!NOTE]
 >
->Dispatcher가 를 캐시하지 않습니다. `Vary` 머리글입니다.
+>Dispatcher는 `Vary` 헤더를 캐시하지 않습니다.
 >
->Dispatcher에서 다른 CORS 관련 헤더의 캐싱을 활성화할 수 있지만, CORS 출처가 여러 개일 경우 충분하지 않을 수 있습니다.
+>다른 CORS 관련 헤더의 캐싱은 Dispatcher에서 활성화할 수 있지만 CORS 원본이 여러 개인 경우에는 충분하지 않을 수 있습니다.
 
 ### 지속 쿼리 캐싱 활성화 {#enable-caching-persisted-queries}
 
-지속 쿼리의 캐싱을 활성화하려면 Dispatcher 변수를 정의합니다 `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+지속 쿼리의 캐싱을 활성화하려면 `CACHE_GRAPHQL_PERSISTED_QUERIES` Dispatcher 변수를 정의합니다.
 
-1. Dispatcher 파일에 변수 추가 `global.vars`:
+1. `global.vars` Dispatcher 파일에 변수를 추가합니다.
 
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
@@ -715,18 +715,18 @@ query {
 
 >[!NOTE]
 >
->을 준수하려면 [캐시할 수 있는 문서에 대한 Dispatcher의 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher는 접미사를 추가합니다 `.json` 결과를 캐시할 수 있도록 모든 지속 쿼리 URL에 매핑합니다.
+>[캐시할 수 있는 문서에 대한 Dispatcher의 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)을 준수하기 위해 Dispatcher는 `.json` 접미사를 모든 지속 쿼리 URL에 추가하여 결과를 캐시할 수 있도록 합니다.
 >
->지속 쿼리 캐시가 활성화되면 이 접미사는 재작성 규칙에 의해 추가됩니다.
+>이 접미사는 지속 쿼리 캐싱이 활성화되면 다시 쓰기 규칙에 의해 추가됩니다.
 
 ### Dispatcher의 CORS 구성 {#cors-configuration-in-dispatcher}
 
-CORS 요청을 사용하는 고객은 Dispatcher에서 CORS 구성을 검토하고 업데이트해야 할 수 있습니다.
+CORS 요청을 사용하는 고객은 Dispatcher에서 CORS 구성을 검토하고 업데이트해야 할 수도 있습니다.
 
-* 다음 `Origin` 헤더는 Dispatcher를 통해 AEM 게시로 전달할 수 없습니다.
-   * 다음 확인: `clientheaders.any` 파일.
-* 대신 CORS 요청은 Dispatcher 수준에서 허용된 출처를 평가해야 합니다. 또한 이 접근 방법에서는 모든 경우에 CORS 관련 헤더가 한 위치에서 올바르게 설정되도록 합니다.
-   * 이러한 구성을 다음에 추가해야 합니다. `vhost` 파일. 예시적인 구성이 아래에 주어지며, 단순화를 위해, CORS-관련 부분만이 제공되었다. 특정 사용 사례에 맞게 조정할 수 있습니다.
+* `Origin` 헤더는 Dispatcher를 통해 AEM 게시로 전달되어서는 안 됩니다.
+   * `clientheaders.any` 파일을 확인하십시오.
+* 대신 Dispatcher 수준에서 허용된 원본에 대해 CORS 요청을 평가해야 합니다. 또한 이 접근 방식을 사용하면 CORS 관련 헤더를 모든 경우에 한 곳에서 올바르게 설정할 수 있습니다.
+   * 이러한 구성은 `vhost` 파일에 추가해야 합니다. 예시 구성은 아래와 같으며, 간단하게 CORS 관련 부분만 제공되었습니다. 특정 사용 사례에 맞게 조정할 수 있습니다.
 
   ```xml
   <VirtualHost *:80>
@@ -896,7 +896,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
 >[!CAUTION]
 >
->If [Dispatcher에서 캐싱이 활성화되었습니다.](#graphql-persisted-queries-enabling-caching-dispatcher) 그런 다음 CORS 필터가 필요하지 않으므로 이 섹션을 무시할 수 있습니다.
+>[Dispatcher에서 캐싱이 활성화된](#graphql-persisted-queries-enabling-caching-dispatcher) 경우 CORS 필터가 필요하지 않으므로 이 섹션을 무시해도 됩니다.
 
 >[!NOTE]
 >
@@ -906,7 +906,7 @@ GraphQL 엔드포인트에 액세스하려면 고객 Git 저장소에서 CORS �
 
 이 구성은 신뢰할 수 있는 웹 사이트 출처를 지정해야 합니다. `alloworigin` 또는 `alloworiginregexp` 액세스 권한을 부여해야 합니다.
 
-예를 들어 GraphQL 끝점  및 `https://my.domain`의 지속 쿼리 끝점에 대한 액세스 권한을 부여하려면 다음을 사용할 수 있습니다.
+예를 들어 GraphQL 엔드포인트  및 `https://my.domain`의 지속 쿼리 엔드포인트에 대한 액세스 권한을 부여하려면 다음을 사용할 수 있습니다.
 
 ```xml
 {
@@ -941,7 +941,7 @@ GraphQL 엔드포인트에 액세스하려면 고객 Git 저장소에서 CORS �
 }
 ```
 
-끝점에 대해 가상 경로를 구성한 경우 `allowedpaths`에서도 사용할 수 있습니다.
+엔드포인트에 대해 가상 경로를 구성한 경우 `allowedpaths`에서도 사용할 수 있습니다.
 
 ### 레퍼러 필터 {#referrer-filter}
 

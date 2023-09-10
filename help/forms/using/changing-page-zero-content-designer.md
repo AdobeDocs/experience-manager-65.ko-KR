@@ -34,7 +34,7 @@ ht-degree: 1%
 1. 다음에서 [!UICONTROL 양식 속성] 대화 상자, 클릭 ![플러스](assets/plus.png) (더하기 아이콘) 을 클릭하여 사용자 지정 속성을 추가합니다.
 
 1. 지정 **_pagezerocontent** 속성 이름으로 사용됩니다.
-1. 새 Page Zero 메시지를 서식 있는 텍스트 형식으로 값으로 추가합니다. 예를 들면 다음과 같습니다.
+1. 새 Page Zero 메시지를 서식 있는 텍스트 형식으로 값으로 추가합니다. 예:
 
 
    `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader.</p></body>`

@@ -201,13 +201,13 @@ ht-degree: 3%
 
 * **[!UICONTROL 댓글 리소스 유형]**
 
-  확장의 resourceType으로 이동 `comment`/apps의 구성 요소(단일 댓글)입니다. (예: `/apps/social/commons/components/hbs/comments/comment`)
+  확장의 resourceType으로 이동 `comment`/apps의 구성 요소(단일 댓글)입니다. 예: `/apps/social/commons/components/hbs/comments/comment`
 
   이 리소스는 방문자가 댓글을 게시할 때 생성된 UGC의 resourceType을 식별합니다.
 
 * **[!UICONTROL 투표 리소스 유형]**
 
-  확장의 resourceType으로 이동 `voting`/apps의 구성 요소입니다. (예: `/apps/social/components/hbs/voting`)
+  확장의 resourceType으로 이동 `voting`/apps의 구성 요소입니다. 예: `/apps/social/components/hbs/voting`
 
   이 리소스는 방문자가 투표를 게시할 때 만든 UGC의 리소스 유형을 식별합니다.
 

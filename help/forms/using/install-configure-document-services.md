@@ -519,7 +519,7 @@ DocAssurance 서비스는 PDF 문서에 사용 권한을 적용할 수 있습니
 1. 다음에서 **[!UICONTROL 사용자 설정 편집]** 페이지에서 **[!UICONTROL KeyStore]** 탭. 확장 **[!UICONTROL 키 저장소 파일의 개인 키 추가]** 을 선택하고 별칭을 제공합니다. 별칭은 Reader 확장 작업을 수행하는 데 사용됩니다.
 1. 인증서 파일을 업로드하려면 **[!UICONTROL 키 저장소 파일 선택]** 및 업로드 &lt;filename>.pfx 파일.
 
-   추가 **[!UICONTROL 키 저장소 암호]**, **[!UICONTROL 개인 키 암호]**, 및 **[!UICONTROL 개인 키 별칭]** 인증서와 각 필드에 연결됩니다. 클릭 **[!UICONTROL 제출]**.
+   추가 **[!UICONTROL 키 저장소 암호]**, **[!UICONTROL 개인 키 암호]**, 및 **[!UICONTROL 개인 키 별칭]** 인증서와 각 필드에 연결됩니다. **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
 
    >[!NOTE]
    >

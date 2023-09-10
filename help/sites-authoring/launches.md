@@ -12,7 +12,7 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '843'
-ht-degree: 80%
+ht-degree: 82%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 80%
 
 ### 론치 콘솔 {#the-launches-console}
 
-론치 콘솔에서는 론치에 대한 개요를 제공하며 나열된 론치에 대한 작업을 수행할 수 있습니다. 이 콘솔은 다음 방법으로 액세스할 수 있습니다.
+론치 콘솔은 론치에 대한 개요를 제공하며, 나열된 론치에 대해 작업을 수행할 수 있도록 합니다. 이 콘솔은 다음 방법으로 액세스할 수 있습니다.
 
 * **도구** 콘솔: **도구**, **사이트**, **론치**
 

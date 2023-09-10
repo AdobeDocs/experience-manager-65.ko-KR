@@ -12,7 +12,7 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '3067'
-ht-degree: 71%
+ht-degree: 73%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 71%
 
 * **모드 선택기**
 
-  현재 항목 표시 [모드](/help/sites-authoring/author-environment-tools.md#page-modes) 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
+  현재 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)를 표시하고 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
 
   ![모드 선택기](assets/chlimage_1-120.png)
 
@@ -88,7 +88,7 @@ ht-degree: 71%
 
 * **주석**
 
-  다음을 추가할 수 있습니다. [주석](/help/sites-authoring/annotations.md) 페이지를 검토할 때 페이지로 이동합니다. 첫 번째 주석 다음에 아이콘이 숫자로 전환하여 페이지에 있는 주석의 수를 가리킵니다.
+  페이지를 검토할 때 페이지에 [주석](/help/sites-authoring/annotations.md)을 추가할 수 있습니다. 첫 번째 주석 다음에 아이콘이 숫자로 전환하여 페이지에 있는 주석의 수를 가리킵니다.
 
   ![주석](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -280,7 +280,7 @@ ht-degree: 71%
 
 * **그룹**
 
-  이렇게 하면 여러 구성 요소를 한 번에 선택할 수 있습니다. **Control+Click** 또는 **Command+Click**&#x200B;하여 데스크탑 디바이스에서도 동일한 작업을 수행할 수 있습니다.
+  여러 구성 요소를 한 번에 선택할 수 있도록 해 줍니다. **Control+Click** 또는 **Command+Click**&#x200B;하여 데스크탑 디바이스에서도 동일한 작업을 수행할 수 있습니다.
 
   ![그룹](do-not-localize/screen_shot_2018-03-22at113240.png)
 
@@ -292,13 +292,13 @@ ht-degree: 71%
 
 * **레이아웃**
 
-  이렇게 하면 을 수정할 수 있습니다. [레이아웃](/help/sites-authoring/editing-content.md#edit-component-layout) 선택한 구성 요소. 선택한 구성 요소에만 적용되며 전체 페이지의 [레이아웃 모드](/help/sites-authoring/author-environment-tools.md#page-modes)는 활성화하지 않습니다.
+  이렇게 하면 선택한 구성 요소의 [레이아웃](/help/sites-authoring/editing-content.md#edit-component-layout)을 수정할 수 있습니다. 선택한 구성 요소에만 적용되며 전체 페이지의 [레이아웃 모드](/help/sites-authoring/author-environment-tools.md#page-modes)는 활성화하지 않습니다.
 
   ![레이아웃](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **경험 조각 변형으로 변환**
 
-  새 을(를) 만들 수 있습니다. [경험 조각](/help/sites-authoring/experience-fragments.md) 선택한 구성 요소에서 선택하거나 기존 경험 조각에 추가합니다.
+  이 작업에서는 선택한 구성 요소에서 새 [경험 조각](/help/sites-authoring/experience-fragments.md)을 생성하거나 기존 경험 조각에 추가할 수 있습니다.
 
   ![경험 조각 변형으로 변환](do-not-localize/screen_shot_2018-03-22at113033.png)
 
@@ -425,7 +425,7 @@ ht-degree: 71%
 
 * **Live Copy**
 
-  구성 요소가 Live Copy 또는 론치의 일부인 페이지에 있는 경우(Live Copy 기반) 구성 요소 도구 모음 예를 들면 다음과 같습니다.
+  구성 요소가 Live Copy 또는 론치의 일부인 페이지에 있는 경우(Live Copy 기반) 구성 요소 도구 모음 예:
 
   ![Live Copy](assets/screen_shot_2018-03-22at134339.png)
 

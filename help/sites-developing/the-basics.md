@@ -240,7 +240,7 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
 * 작성자 `sling:resourceSuperType` 리소스의 속성입니다.
 * 작성자 `sling:resourceSuperType` 이 속한 노드의 속성 `sling:resourceType` 포인트.
 
-예를 들면 다음과 같습니다.
+예:
 
 * /
 

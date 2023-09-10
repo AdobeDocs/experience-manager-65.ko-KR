@@ -97,7 +97,7 @@ Dynamic Media 뷰어를 추적하려면 다음 유형을 사용할 수 있습니
 
 작업 섹션에서 다음을 수행해야 합니다 *변수 설정* 작업. 이 작업은 Adobe Analytics에 추적 변수를 데이터로 채우는 방법을 알려 줍니다. 동시에 *변수 설정* 작업이 추적 서버로 아무 것도 보내지 않습니다.
 
-다음 *변수 설정* 작업 뒤에 다음 문자가 와야 합니다. *비콘 보내기* 작업. 다음 *비콘 보내기* 실제로 작업은 analytics 추적 서버로 데이터를 전송합니다. 두 작업 모두, *변수 설정* 및 *비콘 보내기*: Adobe Analytics 확장에서 가져옵니다.
+다음 *변수 설정* 작업 뒤에 다음 문자가 와야 합니다. *비콘 보내기* 작업. 다음 *비콘 보내기* 작업이 실제로 analytics 추적 서버로 데이터를 전송합니다. 두 작업 모두, *변수 설정* 및 *비콘 보내기*: Adobe Analytics 확장에서 가져옵니다.
 
 다음을 참조하십시오 [규칙](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html).
 
@@ -137,7 +137,7 @@ Experience Cloud 계정이 Adobe Analytics for Audio and Video 사용을 구독�
 
 ## Dynamic Media 뷰어 확장 사용 {#using-the-dynamic-media-viewers-extension}
 
-에서 언급된대로 [통합에 대한 사용 사례](#use-cases-for-the-integration), Experience Manager Sites의 새로운 Experience Platform 태그 통합으로 포함 코드를 사용하여 Dynamic Media 뷰어를 추적할 수 있습니다.
+에서 언급된 바와 같이 [통합에 대한 사용 사례](#use-cases-for-the-integration), Experience Manager Sites의 새로운 Experience Platform 태그 통합으로 포함 코드를 사용하여 Dynamic Media 뷰어를 추적할 수 있습니다.
 
 ### Experience Manager Sites에서 Dynamic Media 뷰어 추적 {#tracking-dynamic-media-viewers-in-aem-sites}
 
@@ -266,7 +266,7 @@ Dynamic Media 뷰어 확장 기능을 사용하면 Dynamic Media 뷰어의 이�
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-It is possible, however, to use an alternative approach and bypass Data Element creation. Dynamic Media 뷰어 이벤트에서 인수를 직접 참조할 수 있습니다. 이벤트 인수의 정규화된 이름을 **[!UICONTROL 값]** analytics 변수 할당의 입력 필드. 퍼센트(%) 기호로 둘러싸야 합니다. 예를 들어
+It is possible, however, to use an alternative approach and bypass Data Element creation. Dynamic Media 뷰어 이벤트에서 인수를 직접 참조할 수 있습니다. 이벤트 인수의 정규화된 이름을 **[!UICONTROL 값]** analytics 변수 할당의 입력 필드. 퍼센트(%) 기호로 둘러싸야 합니다. 예:
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -613,7 +613,7 @@ Experience Platform 태그에는 잠재적으로 여러 개발 환경, 하나의
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
-1. 새 라이브러리 만들기 페이지의 **[!UICONTROL 이름]** 필드에 새 라이브러리를 설명하는 이름을 입력합니다. 예를 들어
+1. 새 라이브러리 만들기 페이지의 **[!UICONTROL 이름]** 필드에 새 라이브러리를 설명하는 이름을 입력합니다. 예:
 
    *DynamicMediaViewerLib*
 
@@ -796,7 +796,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
 ## 통합을 위한 Experience Platform 태그 클라우드 구성 {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. Experience Manager 작성자의 왼쪽 상단 모서리 근처에서 **[!UICONTROL 도구]** 아이콘(hammer)을 클릭한 다음 로 이동 **[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform 태그 구성]**.
+1. Experience Manager 작성자의 왼쪽 상단 모서리 근처에서 **[!UICONTROL 도구]** 아이콘(hammer)을 클릭한 다음 로 이동 **[!UICONTROL Cloud Service]** > **[!UICONTROL Experience Platform 태그 구성]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
@@ -809,7 +809,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 1. 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL 일반]** 페이지 (1/3 페이지) / **[!UICONTROL Experience Platform 태그 구성 만들기]** 창에서 다음 필드를 입력합니다.
 
-   * **[!UICONTROL 제목]** - 설명 구성 제목을 입력합니다. (예: `We.Retail Tags cloud configuration`)
+   * **[!UICONTROL 제목]** - 설명 구성 제목을 입력합니다. 예: `We.Retail Tags cloud configuration`
 
    * **[!UICONTROL 연계된 Adobe IMS 구성]** - 이전에 만든 IMS 구성 선택 [Experience Manager IMS 구성](#configuring-aem-ims).
 

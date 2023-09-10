@@ -7,7 +7,7 @@ exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '2328'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -237,7 +237,7 @@ AEM의 콘텐츠 조각 모델은 의 콘텐츠 구조를 정의합니다. [콘�
 
 ### 콘텐츠 참조 {#content-reference}
 
-컨텐츠 참조를 사용하면 다른 소스의 컨텐츠를 렌더링할 수 있습니다(예: 이미지 또는 컨텐츠 조각).
+콘텐츠 참조를 사용하면 다른 소스의 콘텐츠(예: 이미지 또는 콘텐츠 조각)를 렌더링할 수 있습니다.
 
 표준 속성 외에 다음을 지정할 수 있습니다.
 

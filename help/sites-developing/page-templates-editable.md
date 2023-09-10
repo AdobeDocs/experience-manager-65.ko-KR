@@ -72,7 +72,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
    * 이 구조를 사용하여 템플릿의 구성 요소와 콘텐츠를 정의할 수 있습니다.
    * 템플릿 구조에 정의된 구성 요소는 결과 페이지 안에서 이동하거나 결과 페이지에서 삭제할 수 없습니다.
 
-      * 의 외부에 있는 사용자 지정 폴더에서 템플릿을 만드는 경우 `We.Retail` 샘플 콘텐츠에서 기초 구성 요소를 선택하거나 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
+      * 의 외부에 있는 사용자 지정 폴더에서 템플릿을 만드는 경우 `We.Retail` 샘플 콘텐츠에서 기초 구성 요소를 선택하거나 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko-KR).
 
    * 페이지 작성자가 구성 요소를 추가 및 제거할 수 있도록 하려면 템플릿에 단락 시스템을 추가하십시오.
    * 초기 콘텐츠를 정의할 수 있도록 하려면 구성 요소 잠금을 해제했다가 다시 잠글 수 있습니다.
@@ -399,7 +399,7 @@ CRXDE를 통해 또는 구성 브라우저를 사용하여 템플릿 폴더를 �
 
 * `/apps/settings/wcm/template-types`
 
-사용자 정의된 템플릿 유형에 대한 정의는 사용자 정의 폴더(권장) 또는 `global`. 예를 들면 다음과 같습니다.
+사용자 정의된 템플릿 유형에 대한 정의는 사용자 정의 폴더(권장) 또는 `global`. 예:
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -448,7 +448,7 @@ GITHUB의 코드
 
 ## 템플릿 정의 {#template-definitions}
 
-편집 가능한 템플릿에 대한 정의가 저장됩니다 [사용자 정의 폴더](/help/sites-developing/page-templates-editable.md#template-folders) (권장) 또는 `global`. 예를 들면 다음과 같습니다.
+편집 가능한 템플릿에 대한 정의가 저장됩니다 [사용자 정의 폴더](/help/sites-developing/page-templates-editable.md#template-folders) (권장) 또는 `global`. 예:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`

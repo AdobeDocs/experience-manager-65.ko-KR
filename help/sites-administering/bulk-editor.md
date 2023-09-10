@@ -74,7 +74,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>루트 경로</td>
-   <td>벌크 편집기가 검색하는 루트 경로를 나타냅니다.<br /> 예, <code>/content/geometrixx/en</code>. 벌크 편집기는 모든 하위 노드를 검색합니다.</td>
+   <td>벌크 편집기가 검색하는 루트 경로를 나타냅니다.<br />예: <code>/content/geometrixx/en</code> 벌크 편집기는 모든 하위 노드를 검색합니다.</td>
   </tr>
   <tr>
    <td>쿼리 매개변수</td>
@@ -95,7 +95,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-예를 들면 다음과 같습니다.
+예:
 
 ![벌크 편집기 필터 옵션](assets/searchfilter.png)
 

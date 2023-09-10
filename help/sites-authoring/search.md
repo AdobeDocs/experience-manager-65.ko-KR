@@ -12,7 +12,7 @@ exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -65,7 +65,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하�
 
    리소스 유형에 따라 검색 에는 미리 정의된 검색/필터 기준이 표시됩니다.
 
-   사이드 패널에서는 다음을 선택할 수 있습니다.
+   사이드 패널에서 다음을 선택할 수 있습니다.
 
    * 저장된 검색
    * 검색 디렉터리

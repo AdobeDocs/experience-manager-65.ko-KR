@@ -65,9 +65,9 @@ AEM은 콘솔(및 [페이지 작성 기능](/help/sites-developing/customizing-p
 >
 >기술 자료 문서 를 참조하십시오. [AEM TouchUI 문제 해결](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)추가 팁 및 도구는 를 참조하십시오.
 
-## 콘솔의 기본 보기 사용자 지정 {#customizing-the-default-view-for-a-console}
+## 콘솔의 기본 보기 사용자 정의 {#customizing-the-default-view-for-a-console}
 
-콘솔의 기본 보기(열, 카드, 목록)를 사용자 지정할 수 있습니다.
+콘솔의 기본 보기(열, 카드, 목록)를 사용자 정의할 수 있습니다.
 
 1. 아래에서 필요한 항목을 오버레이하여 뷰의 순서를 변경할 수 있습니다.
 
@@ -133,7 +133,7 @@ AEM은 콘솔(및 [페이지 작성 기능](/help/sites-developing/customizing-p
 >
 >이 기능은 텍스트 필드의 열에 최적화되어 있습니다. 다른 데이터 유형의 경우 오버레이할 수 있습니다 `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` 위치: `/apps`.
 
-목록 보기에서 열을 사용자 지정하려면 다음 작업을 수행하십시오.
+목록 보기에서 열을 사용자 정의하려면 다음 작업을 수행하십시오.
 
 1. 사용 가능한 열 목록을 오버레이합니다.
 

@@ -12,7 +12,7 @@ exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '2240'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 
@@ -292,7 +292,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 여러 작업을 허용하는 페이지를 편집할 때는 다음과 같은 다양한 모드가 있습니다.
 
 * [편집](/help/sites-authoring/editing-content.md) - 페이지 콘텐츠를 편집할 때 사용할 모드
-* [레이아웃](/help/sites-authoring/responsive-layout.md) - 디바이스에 따라 응답형 레이아웃을 만들고 편집할 수 있도록 허용(페이지가 레이아웃 컨테이너를 기반으로 하는 경우)
+* [레이아웃](/help/sites-authoring/responsive-layout.md) - 디바이스에 따라 응답형 레이아웃을 만들고 편집할 수 있습니다(페이지가 레이아웃 컨테이너를 기반으로 하는 경우).
 
 * [스캐폴딩](/help/sites-authoring/scaffolding.md) - 구조가 동일하지만 내용이 다른 대규모 페이지 세트를 만들 수 있습니다.
 * [개발자](/help/sites-developing/developer-mode.md) - 다양한 작업을 수행할 수 있습니다(권한 필요). 페이지 및 해당 구성 요소의 기술 세부 사항 검사가 포함됩니다.
@@ -302,7 +302,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 * [타겟팅](/help/sites-authoring/content-targeting-touch.md) - 모든 채널에서 타겟팅과 측정을 통해 콘텐츠 관련성을 높입니다.
 * [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - 페이지에 대한 Analytics 데이터를 표시합니다.
 
-* [타임워프](/help/sites-authoring/working-with-page-versions.md#timewarp) - 특정 시점의 페이지 상태를 볼 수 있습니다.
+* [타임워프](/help/sites-authoring/working-with-page-versions.md#timewarp) - 특정 시점에 페이지 상태를 볼 수 있습니다.
 * [Live Copy 상태](/help/sites-authoring/editing-content.md#live-copy-status) - Live Copy 상태와 상속되었거나 상속되지 않은 구성 요소에 대한 간단한 개요를 알 수 있습니다.
 * [미리 보기](/help/sites-authoring/editing-content.md#previewing-pages) - 페이지가 게시 환경에 표시될 상태로 해당 페이지를 보거나 컨텐츠의 링크를 사용하여 탐색하는 데 사용됩니다.
 

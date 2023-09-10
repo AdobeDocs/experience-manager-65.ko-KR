@@ -5,7 +5,7 @@ exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '788'
-ht-degree: 87%
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 87%
 >[!NOTE]
 >GraphiQL IDE를 사용하기 전에 [구성 브라우저](/help/assets/content-fragments/content-fragments-configuration-browser.md)에서 [엔드포인트를 구성](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)해야 합니다.
 
-다음 **GraphiQL** 도구를 사용하면 다음을 수행할 수 있으므로 GraphQL 쿼리를 테스트하고 디버그할 수 있습니다.
+**GraphiQL** 도구를 통해 다음 작업을 수행하여 GraphQL 쿼리를 테스트하고 디버그할 수 있습니다.
 
 * 쿼리에 사용하려는 Sites 구성에 적합한 **엔드포인트**&#x200B;를 선택합니다.
 * 새 쿼리 직접 입력
@@ -89,7 +89,7 @@ GraphiQL 로고 바로 아래 왼쪽 중간 패널에 있는 편집기에 새 �
 
 <!-- more details needed here? -->
 
-GraphiQL IDE를 사용하여 [쿼리 변수](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
+GraphiQL IDE를 사용하여 [쿼리 변수](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables)를 관리할 수 있습니다.
 
 예:
 
@@ -140,7 +140,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## URL을 복사하여 쿼리에 직접 액세스합니다. {#copy-url}
 
-다음 **URL 복사** 옵션을 사용하면 지속 쿼리에 직접 액세스하고 결과를 조회하는 데 사용되는 URL을 복사하여 쿼리를 시뮬레이션할 수 있습니다. 그런 다음 테스트에 사용할 수 있습니다(예: 브라우저에서 액세스).
+**URL 복사** 옵션을 통해 지속 쿼리에 직접 액세스하고 결과를 조회하는 데 사용되는 URL을 복사하여 쿼리를 시뮬레이션할 수 있습니다. 그런 다음 테스트에 사용할 수 있습니다(예: 브라우저에서 액세스).
 
 <!--
   >[!NOTE]

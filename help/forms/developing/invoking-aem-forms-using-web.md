@@ -759,7 +759,7 @@ Java 프록시 클래스 및 Base64를 사용하여 AEM Forms 서비스를 호�
 
 1. Microsoft Visual Studio 2008을 사용하여 .NET 프로젝트를 만듭니다.
 1. 다음에서 **프로젝트** 메뉴, 선택 **서비스 참조 추가**.
-1. 다음에서 **주소** 대화 상자에서 AEM Forms 서비스에 WSDL을 지정합니다. 예를 들어
+1. 다음에서 **주소** 대화 상자에서 AEM Forms 서비스에 WSDL을 지정합니다. 예:
 
    ```java
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1

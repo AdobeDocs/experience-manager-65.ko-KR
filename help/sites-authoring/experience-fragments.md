@@ -76,7 +76,7 @@ ht-degree: 82%
 
 * [이러한 폴더에 허용된 템플릿을 구성합니다](#configure-allowed-templates-folder).
 
-폴더를 만들면 다음 작업을 수행할 수 있습니다.
+폴더를 만들면 다음을 수행할 수 있습니다.
 
 * 경험 조각에 의미 있는 구조를 만들 수 있습니다(예: 분류에 따라).
 
@@ -226,7 +226,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **만들기** 다음을 만들 수 있습니다.
+1. **만들기**&#x200B;를 사용하면 다음을 만들 수 있습니다.
 
    * **변형**
    * **[변형을 Live Copy로](/help/sites-administering/msm.md#live-copies)**.

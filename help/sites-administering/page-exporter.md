@@ -40,7 +40,7 @@ AEM을 사용하면 이미지를 포함하여 페이지를 전체 웹 페이지�
 
 1. 내보낼 페이지를 요청하여 접미사를 바꿉니다. `html` 포함 `export.zip` 를 입력합니다.
 
-   예를 들면 다음과 같습니다.
+   예:
    * localhost:4502/content/we-retail/language-masters/en.html
 
    은(는) 다음을 통해 액세스합니다.
