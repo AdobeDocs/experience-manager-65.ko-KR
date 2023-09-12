@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: e330d69b7644e8f99498d0ed60afab009c649b40
+source-git-commit: aec2eb3303ad9747f6f56ae2eb31c3c7ed7b0c24
 workflow-type: tm+mt
-source-wordcount: '4552'
+source-wordcount: '4417'
 ht-degree: 7%
 
 ---
@@ -355,16 +355,9 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 >
 >UberJar 및 기타 관련 아티팩트는 공개 Maven 저장소 Adobe 대신 Maven 중앙 저장소에서 사용할 수 있습니다(`repo.adobe.com`). 기본 UberJar 파일의 이름이 로 바뀝니다. `uber-jar-<version>.jar`. 그래서, `classifier`, 포함 `apis` 값으로, 을 사용합니다. `dependency` 태그에 가깝게 배치하십시오.
 
-## 이제 사용되지 않는 기능{#removed-deprecated-features}
+## 이제 사용되지 않는 기능과 제거된 기능{#removed-deprecated-features}
 
-아래는 에서 더 이상 사용되지 않는 것으로 표시된 기능 및 기능 목록입니다 [!DNL Experience Manager] 6.5.7.0. 기능은 처음에는 더 이상 사용되지 않는 것으로 표시되며 이후 릴리스에서 제거됩니다. 대체 옵션이 제공됩니다.
-
-배포에서 기능 또는 기능을 사용하는지 검토합니다. 또한 대체 옵션을 사용하도록 구현을 변경할 계획입니다.
-
-| 영역 | 특별 포함 | 대체 |
-|---|---|---|
-| 통합 | 화면 **[!UICONTROL Experience Manager Cloud Service 옵트인]** 은(는) 다음 이후 더 이상 사용되지 않습니다: [!DNL Experience Manager] 및 [!DNL Adobe Target] 통합이에서 업데이트되었습니다. [!DNL Experience Manager] 6.5. 통합은 Adobe Target Standard API를 지원합니다. API는 Adobe IMS 및 [!DNL Adobe I/O Runtime]. Adobe Launch가 제공하는 악기 역할의 성장을 지원합니다 [!DNL Experience Manager] 분석 및 개인화를 위한 페이지에서, 옵트인 마법사는 기능적으로 관련이 없습니다. | 시스템 연결, Adobe IMS 인증 및 [!DNL Adobe I/O Runtime] 다음을 통한 통합 [!DNL Experience Manager] 클라우드 서비스. |
-| 커넥터 | Microsoft® SharePoint 2010 및 Microsoft® SharePoint 2013용 Adobe JCR 커넥터는 더 이상 사용되지 않습니다. [!DNL Experience Manager] 6.5. | N/A |
+다음을 참조하십시오 [사용이 중단되거나 제거된 기능](/help/release-notes/deprecated-removed-features.md/).
 
 ## 알려진 문제{#known-issues}
 
