@@ -1,20 +1,16 @@
 ---
 title: AEM Forms 서버의 성능 조정
-seo-title: Performance tuning of AEM Forms server
 description: AEM Forms이 최적으로 수행되도록 하기 위해 캐시 설정 및 JVM 매개변수를 미세 조정할 수 있습니다. 또한 웹 서버를 사용하면 AEM Forms 배포의 성능을 향상시킬 수 있습니다.
-seo-description: For AEM Forms to perform optimally, you can fine-tune the cache settings and JVM parameters. Also, using a web server can enhance the performance of AEM Forms deployment.
-uuid: bf23b62c-7559-4726-8f4e-cc8b1457e501
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 role: Admin
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 1%
+source-wordcount: '897'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +20,7 @@ ht-degree: 1%
 
 ## 캐시 설정 {#cache-settings}
 
-다음을 사용하여 AEM Forms에 대한 캐싱 전략을 구성하고 제어할 수 있습니다. **모바일 Forms 구성** AEM 웹 구성 콘솔의 구성 요소:
+다음을 사용하여 AEM Forms에 대한 캐싱 전략을 구성하고 제어할 수 있습니다. **모바일 Forms 구성** 다음 위치의 AEM 웹 구성 콘솔에서 구성 요소:
 
 * (OSGi의 AEM Forms) `https://'[server]:[port]'/system/console/configMgr`
 * (JEE의 AEM Forms) `https://'[server]:[port]'/lc/system/console/configMgr`
@@ -66,7 +62,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 적응형 양식 및 HTML 5 양식은 HTML 5 형식으로 렌더링됩니다. 결과 출력은 형태의 크기 및 형태의 이미지와 같은 요인에 따라 클 수 있다. 데이터 전송을 최적화하려면 요청이 제공되는 웹 서버를 사용하여 HTML 응답을 압축하는 것이 좋습니다. 이 접근 방식은 응답 크기, 네트워크 트래픽 및 서버와 클라이언트 컴퓨터 간에 데이터를 스트리밍하는 데 필요한 시간을 줄입니다.
 
-예를 들어, JBoss를 사용하여 Apache 웹 서버 2.0 32비트에서 압축을 활성화하려면 다음 단계를 수행하십시오.
+예를 들어, JBoss®를 사용하여 Apache 웹 서버 2.0 32비트에서 압축을 활성화하려면 다음 단계를 수행하십시오.
 
 >[!NOTE]
 >
@@ -77,8 +73,8 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 **운영 체제에 적용할 수 있는 Apache 웹 서버 소프트웨어 얻기**
 
 * Windows: Apache HTTP Server 프로젝트 사이트에서 Apache 웹 서버를 다운로드합니다.
-* Solaris 64비트: Sunfreeware for Solaris 웹 사이트에서 Apache 웹 서버를 다운로드합니다.
-* Linux: Apache 웹 서버가 Linux 시스템에 사전 설치됩니다.
+* Solaris™ 64비트: Sunfreeware for Solaris™ 웹 사이트에서 Apache 웹 서버를 다운로드합니다.
+* Linux®: Apache 웹 서버가 Linux® 시스템에 사전 설치됩니다.
 
 Apache는 HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. 구성은 HTTP를 사용한 최적화를 위한 것입니다.
 
@@ -92,7 +88,7 @@ Apache는 HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. �
 
    >[!NOTE]
    >
-   >Linux의 경우 기본값 `APACHE_HOME` 은(는) `/etc/httpd/`.
+   >Linux®의 경우 기본값 `APACHE_HOME` 은(는) `/etc/httpd/`.
 
 1. crx 포트 4502에서 프록시를 구성합니다.
 에서 다음 구성 추가 `APACHE_HOME/conf/httpd.conf` 구성 파일입니다.
@@ -110,7 +106,7 @@ Apache는 HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. �
    <Location /content/xfaforms>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don’t compress
+           #Don't compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -127,7 +123,7 @@ Apache는 HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. �
    <Location /content/forms/af>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don’t compress
+           #Don't compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -142,7 +138,7 @@ Apache는 HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. �
 
 ## AEM Forms을 실행하는 서버에서 바이러스 백신 사용 {#using-an-antivirus-on-server-running-aem-forms}
 
-바이러스 백신 소프트웨어를 실행하는 서버에서 성능이 느려질 수 있습니다. 항시 바이러스 백신(실시간 검사) 소프트웨어는 시스템의 모든 파일을 검사합니다. 이로 인해 서버 속도가 느려질 수 있으며 AEM Forms 성능이 영향을 받습니다.
+바이러스 백신 소프트웨어를 실행하는 서버에서 성능이 느려질 수 있습니다. 항시 바이러스 백신(실시간 검사) 소프트웨어는 시스템의 모든 파일을 검사합니다. 이로 인해 서버 속도가 느려질 수 있으며 AEM Forms 성능에 영향을 줍니다.
 
 성능을 향상시키려면 바이러스 백신 소프트웨어에서 다음 AEM Forms 파일 및 폴더를 항상 켜짐(액세스 시) 검사에서 제외하도록 지시할 수 있습니다.
 
@@ -154,24 +150,24 @@ Apache는 HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. �
 
 * 응용 프로그램 서버 임시 디렉터리. 기본 위치:
 
-   * (Jboss) [AEM 설치 디렉토리]\jboss\standalone\tmp
-   * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (Websphere) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+   * (JBoss®) [AEM 설치 디렉토리]\jboss\standalone\tmp
+   * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
+   * (WebSphere®) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
 * **(JEE의 AEM Forms만 해당)** GDS(전역 문서 저장소) 디렉터리입니다. 기본 위치:
 
-   * (JBoss) [appserver 루트]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (JBoss®) [appserver 루트]/server/&#39;server&#39;/svcnative/DocumentStorage
    * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere) [appserver 루트]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+   * (WebSphere®) [appserver 루트]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
-* **(JEE의 AEM Forms만 해당)** AEM Forms 서버 로그 및 임시 디렉토리. 기본 위치:
+* **(JEE의 AEM Forms만 해당)** AEM Forms 서버 로그 및 임시 디렉터리. 기본 위치:
 
    * 서버 로그 - [AEM Forms 설치 디렉터리]\Adobe\AEM forms\[app-server]\server\all\logs
    * 임시 디렉터리 - [AEM Forms 설치 디렉터리]\temp
 
 >[!NOTE]
 >
->* GDS 및 임시 디렉토리에 대해 다른 위치를 사용하는 경우 다음 위치에서 AdminUI를 엽니다. `https://'[server]:[port]'/adminui`, 다음으로 이동 **홈 > 설정 > 핵심 시스템 설정 > 핵심 구성** 사용 중인 위치를 확인합니다.
-* 제안된 디렉터리를 제외하고도 AEM Forms 서버가 느리게 수행되는 경우 Java 실행 파일(java.exe)도 제외합니다.
+* GDS 및 임시 디렉토리에 대해 다른 위치를 사용하는 경우 다음 위치에서 AdminUI를 엽니다. `https://'[server]:[port]'/adminui`, 다음으로 이동 **홈 > 설정 > 핵심 시스템 설정 > 핵심 구성** 사용 중인 위치를 확인합니다.
 >
-
+* 제안된 디렉터리를 제외하고도 AEM Forms 서버가 느리게 수행되는 경우 Java™ 실행 파일(java.exe)도 제외합니다.
+>

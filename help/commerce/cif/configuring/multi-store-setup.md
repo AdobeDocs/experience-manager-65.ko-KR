@@ -9,9 +9,9 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 2%
 
 ---
@@ -32,17 +32,17 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 
 ## 구성 {#configuration}
 
-1. 에 설명된 패턴에 따라 여러 스토어 및 스토어 보기를 구성합니다. [Adobe Commerce 웹 사이트, 스토어 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. 에 설명된 패턴에 따라 여러 스토어 및 스토어 보기를 구성합니다. [Adobe Commerce 웹 사이트, 스토어 및 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 2. AEM과 Adobe Commerce 간 연결이 작동하는지 확인합니다.
 
 3. 다음 단계에 따라 CIF Cloud Service 구성의 하위 구성을 만듭니다.
 
    * AEM에서 도구 -> 일반 -> 로 이동합니다. [구성 브라우저](/help/sites-administering/configurations.md#using-configuration-browser)
-   * 만든 기본 구성 선택
-   * 위의 지점 2에 설명된 단계를 사용하여 새 구성을 생성 합니다
+   * 생성한 기본 구성 선택
+   * 위의 지점 2에 설명된 단계를 사용하여 구성을 생성
 
-   이 새 구성은 기본 구성의 하위 구성으로 만들어집니다. 이제 도구 -> 일반 -> 구성 브라우저로 이동하여 구성 설정을 만들 수 있습니다.
+   이 새 구성은 기본 구성의 하위 구성으로 작성됩니다. 이제 도구 -> 일반 -> 구성 브라우저로 이동하여 구성 설정을 만들 수 있습니다.
 
    >[!TIP]
    >
@@ -52,13 +52,13 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 
    * AEM Sites 콘솔로 이동
    * 사이트 구조의 영역 또는 언어 루트로 이동합니다(예: /content/venia/us). _또는_ /content/venia/us/en(Venia 샘플 페이지)
-   * 페이지를 선택하고 페이지 속성을 엽니다.
+   * 페이지를 선택하고 페이지 속성을 엽니다
    * 고급 탭을 선택합니다.
-   * 다음에서 `Configuration` 섹션 단계에서 생성한 구성 선택
+   * 다음에서 `Configuration` 섹션에서, 단계에서 생성한 구성을 선택합니다
 
 ## 추가 리소스
 
-* [Adobe Commerce 웹 사이트, 스토어 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
-* [AEM CIF 핵심 구성 요소 - 다중 저장소/사이트 구성](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
+* [Adobe Commerce 웹 사이트, 스토어 및 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [AEM CIF 핵심 구성 요소 - 다중 저장소/사이트 구성](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [다중 사이트 관리자 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [콘텐츠 재사용: 다중 사이트 관리자 및 라이브 카피](/help/sites-administering/msm.md)
+* [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-administering/msm.md)

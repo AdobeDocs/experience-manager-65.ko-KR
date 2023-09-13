@@ -1,26 +1,22 @@
 ---
-title: AEM Forms 작업 영역에서 서드파티 애플리케이션 통합
-seo-title: Integrating third-party applications in AEM Forms workspace
+title: AEM Forms 작업 영역에서 타사 애플리케이션 통합
 description: AEM Forms 작업 영역에서 서신 관리와 같은 서드파티 애플리케이션을 통합합니다.
-seo-description: How-to integrate third-party apps like Correspondence Management in AEM Forms workspace.
-uuid: 7654cf86-b896-4db2-8f5d-6c1b2e6c229f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
 
 # AEM Forms 작업 영역에서 서드파티 애플리케이션 통합{#integrating-third-party-applications-in-aem-forms-workspace}
 
-AEM Forms 작업 영역은 양식 및 문서에 대한 작업 할당 및 완료 활동 관리를 지원합니다. 이러한 양식 및 문서는 XDP, PDF, HTML 또는 Flex 형식으로 렌더링된 XDP Forms, Flex ® 양식 또는 안내서(더 이상 사용되지 않음)일 수 있습니다.
+AEM Forms 작업 영역은 양식 및 문서에 대한 작업 할당 및 완료 활동 관리를 지원합니다. 이러한 양식 및 문서는 XDP, PDF, HTML 또는 Flex 형식으로 렌더링된 XDP Forms, Flex® 양식 또는 안내서(더 이상 사용되지 않음)일 수 있습니다.
 
-이러한 기능은 더욱 향상되었습니다. 이제 AEM Forms은 AEM Forms 작업 영역과 유사한 기능을 지원하는 타사 애플리케이션과의 공동 작업을 지원합니다. 이 기능의 일반적인 부분은 할당 및 후속 작업 승인 워크플로입니다. AEM Forms은 지원되는 애플리케이션에 대한 모든 작업 할당 또는 승인을 AEM Forms workspace를 통해 처리할 수 있도록 AEM Forms enterprise 사용자를 위한 단일 통합 환경을 제공합니다.
+이러한 기능은 더욱 향상되었습니다. 이제 AEM Forms은 AEM Forms 작업 영역과 유사한 기능을 지원하는 타사 애플리케이션과의 공동 작업을 지원합니다. 이 기능의 일반적인 부분은 할당 및 후속 작업 승인 워크플로입니다. AEM Forms은 지원되는 애플리케이션에 대한 모든 작업 할당 또는 승인을 AEM Forms 작업 영역을 통해 처리할 수 있도록 AEM Forms enterprise 사용자를 위한 단일 통합 환경을 제공합니다.
 
 예를 들어 서신 관리를 AEM Forms 작업 영역과의 통합을 위한 샘플 후보로 간주하겠습니다. 서신 관리에는 렌더링할 수 있고 작업을 허용하는 &#39;편지&#39; 개념이 있습니다.
 
@@ -102,7 +98,7 @@ AEM Forms 작업 영역은 양식 및 문서에 대한 작업 할당 및 완료 
    ```
 
    [파일 가져오기](assets/dscsample.zip)
-DSC 다운로드: 샘플 DSC는 위에 첨부된 DSCSample.zip 파일에서 사용할 수 있습니다. DSCSample.zip 파일을 다운로드하고 압축 해제합니다. DSC 서비스를 사용하기 전에 먼저 구성해야 합니다. 자세한 내용은 [DSC 서비스 구성](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+DSC 다운로드: 샘플 DSC는 위에 첨부된 DSCSample.zip 파일에서 사용할 수 있습니다. DSCSample.zip 파일을 다운로드하고 압축 해제합니다. DSC 서비스를 사용하기 전에 먼저 구성해야 합니다. 다음을 참조하십시오 [DSC 서비스 구성](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    활동 정의 대화 상자에서 getLetterInstanceInfo 와 같은 적절한 활동을 선택하고 을 클릭합니다 **확인**.
 

@@ -1,20 +1,16 @@
 ---
 title: 계정 환경 구성
-seo-title: Configuring Your Account Environment
 description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
-seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
-uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 86%
+source-wordcount: '514'
+ht-degree: 65%
 
 ---
 
@@ -24,7 +20,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 [헤더](/help/sites-authoring/basic-handling.md#the-header)의 [사용자](/help/sites-authoring/user-properties.md#user-settings) 선택 사항 및 연관된 [내 환경 설정](#userpreferences) 대화 상자를 사용하면 사용자 선택 사항을 수정할 수 있습니다.
 
-에 액세스하여 시작합니다. [사용자](/help/sites-authoring/user-properties.md#user-settings) 헤더에서 옵션을 선택합니다.
+헤더에서 [사용자](/help/sites-authoring/user-properties.md#user-settings) 선택 사항에 액세스해 보십시오.
 
 ## 사용자 설정 {#user-settings}
 
@@ -64,26 +60,26 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
    * **여러 창**(기본값)
 
-      * 페이지가 새 창에서 열립니다.
+      * 페이지가 새 창에 열립니다.
 
    * **단일 창**
 
-      * 페이지가 현재 창에서 열립니다.
+      * 현재 창에 페이지가 열립니다.
 
-* **에셋에 대한 데스크탑 작업 표시**
+* **자산에 대한 데스크탑 작업 표시**
 
-  이 옵션을 사용하려면 AEM 데스크탑 앱을 사용해야 합니다.
+  이 옵션을 사용하려면 AEM 데스크탑 앱이 필요합니다.
 
 * **주석 색상**
 
   주석을 작성할 때 사용되는 기본 색상을 정의합니다.
 
-   * 색상 블록을 클릭하여 색상을 선택하는 견본 선택기를 여십시오.
+   * 색상 블록을 클릭하면 색상 견본 선택기를 열고 색상을 선택할 수 있습니다.
    * 또는 필드에 원하는 색상의 16진수 코드를 입력하십시오.
 
 * **상대적 날짜 표시**
 
-  가독성을 높이기 위해 AEM에서는 최근 7일 이내의 날짜는 상대적 날짜(예: 3일 전)로 렌더링하고 그보다 오래된 날짜는 정확한 날짜(예: 2017년 3월 20일)로 렌더링합니다.
+  가독성을 높이기 위해 AEM에서는 지난 7일 이내의 날짜는 상대적 날짜(예: 3일 전)로 렌더링하고 그보다 오래된 날짜는 정확한 날짜(예: 2017년 3월 20일)로 렌더링합니다.
 
   이 선택 사항은 시스템 날짜가 표시되는 방법을 정의합니다. 다음 옵션을 사용할 수 있습니다.
 
@@ -100,12 +96,12 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 * **단축키 사용**
 
-  AEM은 작성의 효율성을 개선하는 다양한 키보드 단축키를 지원합니다.
+  AEM은 작성의 효율성을 높이는 몇 가지 키보드 단축키를 지원합니다.
 
    * [페이지 편집을 위한 키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
 
-  키보드 단축키를 사용할 수 있도록 합니다. 기본적으로 사용할 수 있지만 사용자에게 특정 액세스 가능성 요구 사항이 있는 경우처럼 원하는 경우에는 사용하지 않도록 설정할 수 없습니다.
+  키보드 단축키를 사용할 수 있도록 합니다. 기본적으로 활성화되어 있지만, 예를 들어 사용자에게 특정 액세서빌러티 요구 사항이 있는 경우 비활성화될 수 있습니다.
 
 * **클래식 제작 환경 사용**
 
@@ -113,8 +109,8 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 * **자산 홈 페이지 활성화**
 
-  이 선택 사항은 시스템 관리자가 전체 조직에 대해 [자산 홈 페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
+  이 옵션은 시스템 관리자가 전체 조직에 대해 [자산 홈페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
 
 * **Stock 구성**
 
-  이 옵션을 사용하면 기본 Adobe Stock 구성을 지정할 수 있으며, 이 옵션은 시스템 관리자가 [Adobe Stock 통합](/help/assets/aem-assets-adobe-stock.md)을 사용하도록 설정한 경우에만 사용할 수 있습니다.
+  이 옵션을 사용하면 기본 Adobe Stock 구성을 지정할 수 있으며, 이 옵션은 시스템 관리자가 활성화한 경우에만 사용할 수 있습니다 [Adobe Stock 통합](/help/assets/aem-assets-adobe-stock.md).

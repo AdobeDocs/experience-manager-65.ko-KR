@@ -1,25 +1,21 @@
 ---
 title: 오류 핸들러로 표시된 페이지 사용자 지정
-seo-title: Customizing Pages shown by the Error Handler
-description: AEM에는 HTTP 오류를 처리할 수 있는 표준 오류 핸들러가 포함되어 있습니다
-seo-description: AEM comes with a standard error handler for handling HTTP errors
-uuid: aaf940fd-e428-4c7c-af7f-88b1d02c17c6
+description: Adobe Experience Manager에는 HTTP 오류를 처리하기 위한 표준 오류 핸들러가 포함되어 있습니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 5%
+source-wordcount: '525'
+ht-degree: 4%
 
 ---
 
 # 오류 핸들러로 표시된 페이지 사용자 지정{#customizing-pages-shown-by-the-error-handler}
 
-AEM에는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 함께 제공됩니다. 예를 들면 다음과 같습니다.
+Adobe Experience Manager(AEM)에는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 함께 제공됩니다. 예를 들면 다음과 같습니다.
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
@@ -30,7 +26,7 @@ AEM에는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 함께 �
 
 >[!NOTE]
 >
->AEM은 Apache Sling을 기반으로 하므로 다음을 참조하십시오. [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) 슬링 오류 처리에 대한 자세한 내용을 보려면 를 참조하십시오.
+>AEM은 Apache Sling을 기반으로 합니다. 따라서 다음을 참조하십시오. [오류 처리](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html) sling 오류 처리에 대한 자세한 정보를 제공합니다.
 
 >[!NOTE]
 >
@@ -40,7 +36,7 @@ AEM에는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 함께 �
 
 ## 오류 핸들러로 표시된 페이지를 사용자 지정하는 방법 {#how-to-customize-pages-shown-by-the-error-handler}
 
-자체 스크립트를 개발하여 오류가 발생했을 때 오류 핸들러에서 표시하는 페이지를 사용자 지정할 수 있습니다. 맞춤화된 페이지는 아래에 생성됩니다. `/apps` 및 기본 페이지 오버레이(아래) `/libs`).
+자체 스크립트를 개발하여 오류가 발생했을 때 오류 핸들러에서 표시하는 페이지를 사용자 지정할 수 있습니다. 맞춤화된 페이지는 `/apps` 및 기본 페이지 오버레이(아래) `/libs`).
 
 >[!NOTE]
 >
@@ -51,18 +47,18 @@ AEM에는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 함께 �
    * 변환 전: `/libs/sling/servlet/errorhandler/`
    * 끝 `/apps/sling/servlet/errorhandler/`
 
-   기본적으로 대상 경로가 없으므로 처음 이 작업을 수행할 때 대상 경로를 만들어야 합니다.
+   기본적으로 대상 경로가 존재하지 않으므로 처음 이 작업을 수행할 때 대상 경로를 만들어야 합니다.
 
-1. 다음으로 이동 `/apps/sling/servlet/errorhandler`. 다음 중 하나를 수행할 수 있습니다.
+1. 다음으로 이동 `/apps/sling/servlet/errorhandler` 다음 중 하나를 수행합니다.
 
-   * 필요한 정보를 제공하도록 적절한 기존 스크립트를 편집합니다.
+   * 필요한 정보를 제공할 수 있도록 적절한 기존 스크립트를 편집합니다.
    * 필요한 코드에 대한 새 스크립트를 만들고 편집합니다.
 
 1. 변경 사항을 저장하고 테스트합니다.
 
 >[!CAUTION]
 >
->404.jsp 및 403.jsp 핸들러는 특히 이러한 오류가 발생하는 경우 시스템 로그인을 허용하도록 CQ5 인증을 지원하도록 특별히 설계되었습니다.
+>404.jsp 및 403.jsp 핸들러는 CQ5 인증을 지원하도록 설계되었습니다. 특히 이러한 오류가 있는 경우 시스템 로그인을 허용합니다.
 >
 >따라서 이 두 처리기의 교체는 신중을 기해야 한다.
 
@@ -81,9 +77,9 @@ HTTP 500 오류는 서버측 예외로 인해 발생합니다.
    * http 응답 코드 500
    * 예외 스택 추적
 
-   를 입력합니다.
+  를 입력합니다.
 
-작성자: [오류 핸들러로 표시된 페이지 사용자 지정](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` 스크립트를 만들 수 있습니다. 그러나 다음과 같은 경우에만 사용됩니다 `HttpServletResponse.sendError(500)` 는 명시적으로 실행됩니다(예: 예외 캐쳐에서).
+작성자: [오류 핸들러로 표시된 페이지 사용자 지정](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` 스크립트를 만들 수 있습니다. 그러나 다음과 같은 경우에만 사용됩니다 `HttpServletResponse.sendError(500)` 는 명시적으로 실행됩니다. 즉, 예외 캐쳐에서 실행됩니다.
 
 그렇지 않으면 응답 코드가 500으로 설정되지만 `500.jsp` 스크립트가 실행되지 않습니다.
 

@@ -1,37 +1,33 @@
 ---
 title: AEM Forms 키보드 단축키
-seo-title: AEM Forms Keyboard Shortcuts
 description: 이 문서에서는 적응형 양식 편집기, 테마 편집기, 콘텐츠 브라우저 및 Windows 및 Macintosh 운영 체제용 서신 관리와 함께 사용할 수 있는 키보드 단축키를 나열합니다.
-seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
-uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
-discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 3%
+source-wordcount: '1208'
+ht-degree: 6%
 
 ---
 
 # AEM Forms 키보드 단축키 {#aem-forms-keyboard-shortcuts}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 이 문서에서는 적응형 양식 편집기, 테마 편집기, 콘텐츠 브라우저 및 Windows 및 Macintosh 운영 체제용 서신 관리와 함께 사용할 수 있는 키보드 단축키를 나열합니다.
 
 ## 적응형 양식 편집기 {#adaptiveformeditor}
 
-| **작업** | **Windows의 바로 가기** | **Mac OS의 바로 가기** |
+| **작업** | **Windows의 바로 가기** | **macOS의 바로 가기** |
 |---|---|---|
-| 선택한 적응형 양식 구성 요소에 대한 속성 브라우저 열기 | Alt+Enter | Alt+Return |
-| 선택한 적응형 양식 구성 요소의 속성 브라우저 닫기 | Ctrl+Alt+W | Command+Alt+W |
+| 선택한 적응형 양식 구성 요소에 대한 속성 브라우저를 엽니다 | Alt+Enter | Alt+Return |
+| 선택한 적응형 양식 구성 요소에 대한 속성 브라우저를 닫습니다 | Ctrl+Alt+W | Command+Alt+W |
 | 선택한 적응형 양식 구성 요소에 대한 속성 브라우저에서 변경 사항 저장 | Ctrl+S | Command+S |
 | 선택한 적응형 양식 구성 요소에 대한 규칙 편집 | Ctrl+Alt+Enter | Command+Alt+Return |
-| 미리보기 와 현재 선택한 모드 (예: 편집, 스캐폴딩 등) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&amp;Ast; |
+| 미리보기 와 현재 선택한 모드 (예: 편집 및 스캐폴딩) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&amp;Ast; |
 | 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Ast; |
 | 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;ast; |
 | 여러 구성 요소 선택 | Shift+클릭 | Shift+클릭 |
@@ -41,38 +37,38 @@ ht-degree: 3%
 | 선택한 구성 요소 삭제 | Ctrl+Del | Ctrl+Del&amp;ast; |
 | 선택한 구성 요소 삭제 | Ctrl+백스페이스 | Ctrl+백스페이스(&amp;A); |
 | 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+B | Ctrl+B&amp;ast; |
-| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시 | Ctrl+I | Ctrl+I&amp;Ast; |
+| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시합니다 | Ctrl+I | Ctrl+I&amp;Ast; |
 | 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+U | Ctrl+U&amp;Ast; |
 
 >[!NOTE]
 >
->&#39;&amp;ast;&#39;로 표시된 바로 가기는 Mac OS의 Ctrl 키와 Command 키에서 모두 작동합니다.
+>&#39;&amp;ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
 
 >[!NOTE]
 >
 >데스크탑 장치에서 다중 선택:
 >
 >* Windows: 필요한 구성 요소를 Ctrl+클릭합니다.
->* MAC OS: 필요한 구성 요소를 Command+클릭합니다.
+>* macOS: 필요한 구성 요소를 Command+클릭합니다.
 >
 
 ## 테마 편집기  {#themeeditor}
 
-| **작업** | **Windows의 바로 가기** | **Mac OS의 바로 가기** |
+| **작업** | **Windows의 바로 가기** | **macOS의 바로 가기** |
 |---|---|---|
-| 테마에서 선택한 구성 요소의 속성 브라우저 열기 | Alt+Enter | Alt+Return |
-| 테마에서 선택한 구성 요소의 속성 브라우저 닫기 | Ctrl+Alt+W | Command+Alt+W |
+| 테마에서 선택한 구성 요소의 속성 브라우저를 엽니다 | Alt+Enter | Alt+Return |
+| 테마에서 선택한 구성 요소의 속성 브라우저를 닫습니다. | Ctrl+Alt+W | Command+Alt+W |
 | 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Ast; |
 | 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;ast; |
 | 선택한 구성 요소의 속성 브라우저에서 변경 내용을 테마에 저장 | Ctrl+S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
->&#39;&amp;ast;&#39;로 표시된 바로 가기는 Mac OS의 Ctrl 키와 Command 키에서 모두 작동합니다.
+>&#39;&amp;ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
 
 ## 컨텐츠 브라우저  {#contentbrowser}
 
-| **작업** | **Windows의 바로 가기** | **Mac OS의 바로 가기** |
+| **작업** | **Windows의 바로 가기** | **macOS의 바로 가기** |
 |---|---|---|
 | 포커스가 있을 때 컨텐츠 브라우저의 양식 개체 트리에서 모든 아코디언을 확장합니다. | 모든 아코디언을 선택하려면 Ctrl+A를 누르고 확장하려면 오른쪽 화살표 클릭 | Command+A를 눌러 모든 아코디언을 선택한 다음 오른쪽 화살표를 눌러 확장 |
 | 포커스가 있을 때 컨텐츠 브라우저의 양식 개체 트리에서 모든 아코디언을 축소합니다 | 축소할 왼쪽 화살표 뒤에 모든 아코디언을 선택하려면 Ctrl+A를 클릭 | Command+A를 눌러 모든 아코디언을 선택한 다음 왼쪽 화살표를 눌러 축소합니다. |
@@ -81,8 +77,8 @@ ht-degree: 3%
 | Forms 개체 트리에서 다음 항목 선택 | 아래쪽 화살표 | 아래쪽 화살표 |
 | Forms 개체 트리에서 이전 항목 선택 | 위쪽 화살표 | 위쪽 화살표 |
 
-[1] Windows의 경우 Ctrl + 오른쪽 화살표, Mac OS의 경우 Command + 오른쪽 화살표를 대체합니다.\
-[2] Windows의 경우 Ctrl + 왼쪽 화살표, Mac OS의 경우 Command + 왼쪽 화살표를 대체합니다.
+[1] Windows의 경우 Ctrl + 오른쪽 화살표, macOS의 경우 Command + 오른쪽 화살표 를 대체합니다.\
+[2] Windows의 경우 Ctrl + 왼쪽 화살표, macOS의 경우 Command + 왼쪽 화살표를 대체합니다.
 
 ## 서신 관리 {#correspondence-management}
 
@@ -98,7 +94,7 @@ ht-degree: 3%
   <tr>
    <th><strong>작업</strong></th> 
    <th><strong>Windows의 바로 가기</strong></th> 
-   <th><strong>Mac OS의 바로 가기</strong><br /> </th> 
+   <th><strong>macOS의 바로 가기</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>현재 단어 선택</p> </td> 
@@ -146,12 +142,12 @@ ht-degree: 3%
    <td>Option+위쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>뒤로 한 문자씩 텍스트 선택</p> </td> 
+   <td><p>뒤쪽 방향으로 한 문자씩 텍스트 선택</p> </td> 
    <td><p>Shift+왼쪽 화살표</p> </td> 
    <td>Shift+왼쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>앞으로 한 문자씩 텍스트 선택</p> </td> 
+   <td><p>텍스트를 한 문자씩 앞으로 선택합니다.</p> </td> 
    <td><p>Shift+오른쪽 화살표</p> </td> 
    <td>Shift+오른쪽 화살표</td> 
   </tr>
@@ -161,7 +157,7 @@ ht-degree: 3%
    <td>Shift+위쪽 키</td> 
   </tr>
   <tr>
-   <td><p>앞으로 한 단락씩 텍스트 선택</p> </td> 
+   <td><p>텍스트를 한 단락씩 앞으로 선택합니다.</p> </td> 
    <td><p>Shift+Down 키</p> </td> 
    <td>Shift+Down 키</td> 
   </tr>
@@ -181,7 +177,7 @@ ht-degree: 3%
    <td>Fn+아래쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>커서를 페이지 시작 부분으로 이동</p> </td> 
+   <td><p>커서를 페이지 시작 부분으로 이동합니다.</p> </td> 
    <td><p>페이지 위로</p> </td> 
    <td>Fn+위쪽 화살표</td> 
   </tr>
@@ -216,15 +212,15 @@ ht-degree: 3%
   <tr>
    <th><p><strong>작업</strong></p> </th> 
    <th><p><strong>Windows의 바로 가기<br /> </strong></p> </th> 
-   <th><strong>Mac OS의 바로 가기</strong></th> 
+   <th><strong>macOS의 바로 가기</strong></th> 
   </tr>
   <tr>
-   <td><p>단락 가운데 정렬</p> </td> 
+   <td><p>단락을 가운데로 정렬합니다.</p> </td> 
    <td><p>Ctrl+E</p> </td> 
    <td>Ctrl+Command+E</td> 
   </tr>
   <tr>
-   <td><p>단락을 왼쪽으로 정렬합니다</p> </td> 
+   <td><p>단락을 왼쪽 정렬하기</p> </td> 
    <td><p>Ctrl+L</p> </td> 
    <td>Ctrl+Command+L</td> 
   </tr>
@@ -248,7 +244,7 @@ ht-degree: 3%
   <tr>
    <th><strong>작업</strong></th> 
    <th><strong>Windows의 바로 가기 </strong></th> 
-   <th><strong>Mac OS의 바로 가기</strong><br /> </th> 
+   <th><strong>macOS의 바로 가기</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>실행 취소 </p> </td> 
@@ -270,7 +266,7 @@ ht-degree: 3%
   <tr>
    <th><p><strong>작업</strong></p> </th> 
    <th><p><strong>Windows의 바로 가기</strong></p> </th> 
-   <th><strong>Mac OS의 바로 가기</strong></th> 
+   <th><strong>macOS의 바로 가기</strong></th> 
   </tr>
   <tr>
    <td><p>글꼴 크기를 늘립니다 </p> </td> 
@@ -292,7 +288,7 @@ ht-degree: 3%
   <tr>
    <th><strong>작업</strong></th> 
    <th><strong>Windows의 바로 가기</strong></th> 
-   <th><strong>Mac OS의 바로 가기</strong></th> 
+   <th><strong>macOS의 바로 가기</strong></th> 
   </tr>
   <tr>
    <td><p>커서 왼쪽에 단어 삭제</p> </td> 
@@ -314,7 +310,7 @@ ht-degree: 3%
   <tr>
    <th><strong>작업</strong></th> 
    <th><strong>Windows의 바로 가기<br /> </strong></th> 
-   <th><strong>Mac OS의 바로 가기</strong></th> 
+   <th><strong>macOS의 바로 가기</strong></th> 
   </tr>
   <tr>
    <td><p>텍스트 붙여넣기 </p> </td> 
@@ -341,7 +337,7 @@ ht-degree: 3%
   <tr>
    <th><strong>작업</strong></th> 
    <th><strong>Windows의 바로 가기</strong></th> 
-   <th><strong>Mac OS의 바로 가기</strong></th> 
+   <th><strong>macOS의 바로 가기</strong></th> 
   </tr>
   <tr>
    <td><p>글자를 굵게 만들기</p> </td> 

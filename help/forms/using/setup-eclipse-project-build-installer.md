@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
-source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '723'
 ht-degree: 7%
 
 ---
@@ -24,7 +24,7 @@ AEM Forms용 Android 앱을 빌드하려면 권장 시퀀스에서 다음 단계
 
 AEM Forms 앱 소스 코드 패키지는 `adobe-lc-mobileworkspace-src-<version>.zip` 보관. 이 아카이브에는 사용자 지정 AEM Forms 앱을 빌드하는 데 필요한 소스 코드가 포함되어 있습니다. 아카이브는 `adobe-aemfd-forms-app-src-pkg-<version>.zip`소프트웨어 배포에서 사용할 수 있는 패키지.
 
-다음 단계를 수행하여 을 다운로드합니다. `adobe-aemfd-forms-app-src-pkg-<version>.zip` 파일:
+다운로드하려면 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 파일에서 다음 단계를 수행합니다.
 
 1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID가 필요합니다.
 1. 헤더 메뉴에 제공된 **[!UICONTROL Adobe Experience Manager]**&#x200B;를 누릅니다.
@@ -51,7 +51,7 @@ AEM Forms 앱에 대한 빌드 프로세스를 시작하기 전에 다음 환경
 
 ## 표준 AEM Forms 앱 빌드 {#set-up-the-xcode-project}
 
-adobe-lc-mobileworkspace-src를 저장했으면 다음을 수행합니다.&lt;version>로컬 파일 시스템에 .zip 파일을 저장하고 환경 변수를 설정한 경우 다음 옵션 중 하나를 사용하여 표준 AEM Forms Android 앱을 빌드합니다.
+adobe-lc-mobileworkspace-src를 저장한 후&lt;version>로컬 파일 시스템에서 .zip 파일을 사용하고 환경 변수를 설정하면 다음 옵션 중 하나를 사용하여 표준 AEM Forms Android 앱을 빌드합니다.
 
 * [Android Studio를 사용하여 AEM Forms 앱 빌드](#using-android-studio)
 * [Android Studio를 사용하여 .apk 파일 생성](#generate-apk-android-studio)
@@ -81,7 +81,7 @@ Android Studio를 사용하여 AEM Forms 앱을 빌드하려면 다음 단계를
 
 ### Android Studio를 사용하여 .apk 파일 생성 {#generate-apk-android-studio}
 
-Android Studio를 사용하여 .apk 파일을 생성하려면 다음 단계를 수행하십시오.
+Android Studio를 사용하여 .apk 파일을 생성하려면 다음을 수행합니다.
 
 1. 컴퓨터에서 Android Studio 애플리케이션을 실행합니다.
 1. 선택 **기존 Android Studio 프로젝트 열기**. 기존 프로젝트를 여는 대화 상자가 자동으로 나타나지 않으면 **파일** > **열기**.
@@ -89,7 +89,7 @@ Android Studio를 사용하여 .apk 파일을 생성하려면 다음 단계를 �
 
    왼쪽 창에 android 옵션이 표시됩니다.
 
-1. 선택 **빌드** > **APK 작성** .apk 파일을 생성합니다.
+1. .apk 파일을 생성하려면 다음을 선택합니다. **빌드** > **APK 작성**.
 
    선택 사항으로 다음을 선택합니다. **빌드** > **서명된 APK 생성** 생성 방법 [서명된 버전](https://developer.android.com/studio/publish/app-signing) .apk 파일
 
@@ -99,4 +99,4 @@ Android Studio를 사용하여 .apk 파일을 생성하려면 다음 단계를 �
 
 **Windows 사용자:** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
-**MAC 사용자:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
+**Mac 사용자:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`

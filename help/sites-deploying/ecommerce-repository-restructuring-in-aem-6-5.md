@@ -1,18 +1,14 @@
 ---
 title: AEM 6.5의 전자 상거래 저장소 재구성
-seo-title: E-Commerce Repository Restructuring in AEM 6.5
-description: 전자 상거래용 AEM 6.5에서 새 저장소 구조로 마이그레이션하기 위해 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for E-Commerce.
-uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
+description: 전자 상거래용 AEM 6.5에서 새 저장소 구조로 마이그레이션하는 데 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 feature: Upgrading
 exl-id: 78b7c497-c474-4308-bfab-8f424b5f7268
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '201'
 ht-degree: 2%
 
 ---
@@ -41,7 +37,7 @@ ht-degree: 2%
     <ul>
      <li>새 위치를 가리키도록 이전 위치에 대한 참조를 조정합니다.</li>
      <li>콘텐츠를 이전 위치에서 새 위치로 이동</li>
-     <li>이전 위치를 제거하여 전체 시스템에서 새 위치 사용을 활성화합니다.</li>
+     <li>은(는) 이전 위치를 제거하여 결국 전체 시스템에서 새 위치의 사용을 활성화합니다</li>
     </ul> <p>작업이 다루는 위치는 다음과 같습니다.</p>
     <ul>
      <li>/etc/commerce/products</li>
@@ -49,7 +45,7 @@ ht-degree: 2%
      <li>/etc/commerce/orders<br /> </li>
      <li>/etc/commerce/payment-methods<br /> </li>
      <li>/etc/commerce/shipping-methods<br /> </li>
-    </ul> <p>큰 카탈로그의 경우 다음 Java 시스템 속성을 AEM에 전달하여 상거래 마이그레이션 작업을 개별적으로 실행하는 것이 좋습니다.</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>마이그레이션 후 AEM을 다시 시작해야 합니다.</p> </td>
+    </ul> <p>큰 카탈로그의 경우, Adobe은 다음 Java™ 시스템 속성을 AEM에 전달하여 상거래 마이그레이션 작업을 개별적으로 실행할 것을 권장합니다.</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>마이그레이션 후 AEM을 다시 시작합니다.</p> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>

@@ -1,17 +1,13 @@
 ---
 title: JSRP - JCR 저장소 리소스 제공자
-seo-title: JSRP - JCR Storage Resource Provider
-description: JSRP는 일반적으로 하나의 게시 인스턴스와 하나의 작성자 인스턴스의 데모 또는 개발 환경에 가장 적합합니다
-seo-description: JSRP is generally best suited for demonstration or development environments of one publish instance and one author instance
-uuid: 358a43c1-4137-4300-8443-c0d7166968ad
+description: JSRP는 하나의 게시 인스턴스와 하나의 작성자 인스턴스의 데모 또는 개발 환경에 가장 적합합니다
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 role: Admin
 exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -24,7 +20,7 @@ ht-degree: 0%
 
 AEM Communities이 JSRP를 저장소 옵션(기본값)으로 사용하는 경우 커뮤니티 콘텐츠는 JCR에 저장되고 UGC(사용자 생성 콘텐츠)는 해당 콘텐츠가 게시된 작성자 또는 게시 인스턴스에서만 액세스할 수 있습니다.
 
-배포가 단순하기 때문에 JSRP는 일반적으로 하나의 게시 인스턴스와 하나의 작성자 인스턴스의 데모 또는 개발 환경에 가장 적합합니다.
+배포가 단순하기 때문에 JSRP는 하나의 게시 인스턴스와 하나의 작성자 인스턴스의 데모 또는 개발 환경에 가장 적합합니다.
 
 참조: [SRP 옵션의 특성](working-with-srp.md#characteristics-of-srp-options) 및 [권장 토폴로지](topologies.md).
 
@@ -42,7 +38,7 @@ AEM Communities이 JSRP를 저장소 옵션(기본값)으로 사용하는 경우
 
 * 선택 **[!UICONTROL JCR 저장소 리소스 제공자(JSRP)]**
 
-* 선택 **[!UICONTROL 제출]**
+* **[!UICONTROL 제출]**&#x200B;을 선택합니다
 
 ![jsrp-configuration](assets/jsrp-configuration.png)
 
@@ -70,11 +66,11 @@ JSRP가 기본 구성이지만 게시 환경에 동일한 구성이 설정되도
 
 저장소 옵션의 구성을 확인하여 JSRP가 기본 공급자로 구성되었는지 확인하십시오. 기본적으로 저장소 리소스 공급자는 JSRP입니다.
 
-모든 작성자 및 게시 AEM 인스턴스에서 저장소 구성 콘솔을 다시 방문하거나 AEM 저장소를 확인합니다.
+모든 Author 및 Publish AEM 인스턴스에서 Storage Configuration 콘솔을 다시 방문하거나 AEM 저장소를 확인합니다.
 
 * JCR에서, [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * 다음을 포함하지 않음 [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) 즉, 스토리지 공급자가 JSRP입니다.
+   * 다음을 포함하지 않습니다. [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) 즉, 스토리지 공급자가 JSRP입니다.
    * srpc 노드가 존재하고 노드를 포함하는 경우 [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), defaultconfiguration 의 속성은 JSRP를 기본 공급자로 정의해야 합니다.
 
 ### 작성자 인스턴스에 UGC가 표시되지 않음 {#ugc-not-visible-on-author-instance}
@@ -83,7 +79,7 @@ JSRP가 기본 구성이지만 게시 환경에 동일한 구성이 설정되도
 
 ### 게시 인스턴스에 UGC가 표시되지 않음 {#ugc-not-visible-on-publish-instance}
 
-단일 게시 인스턴스 또는 게시 클러스터가 배포된 경우 다음 지침을 따르십시오. [JCR에서 UGC가 표시되지 않음](#ugc-not-visible-in-jcr).
+단일 게시 인스턴스 또는 게시 클러스터가 배포된 경우 [JCR에서 UGC가 표시되지 않음](#ugc-not-visible-in-jcr).
 
 게시 팜이 배포된 경우 JSRP의 특징은 커뮤니티 콘텐츠가 게시된 게시 인스턴스에만 표시된다는 것입니다.
 

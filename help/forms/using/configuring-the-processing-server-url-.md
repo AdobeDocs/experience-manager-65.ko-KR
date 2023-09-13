@@ -1,33 +1,29 @@
 ---
 title: AEM DS 설정 구성
-seo-title: Configuring AEM DS settings
-description: 양식을 제출하기 전에 처리 서버 URL을 지정해야 합니다.
-seo-description: You need to specify the processing server URL before you submit a form.
-uuid: 55a6d434-7352-48a8-8387-8a5c1a48fafc
+description: 양식을 제출하기 전에 처리 서버 URL을 지정하는 방법을 알아봅니다.
 contentOwner: amgoyal
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
 role: Admin
 exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
 # AEM DS 설정 구성{#configuring-aem-ds-settings}
 
-이 문서에서는 을 구성하는 방법에 대해 설명합니다 **AEM DS 설정 서비스**. 이 설정은 다음과 같은 여러 시나리오에서 사용할 수 있습니다.
+이 문서에서는 구성 방법을 설명합니다. **AEM DS 설정 서비스**. 이 설정은 다음과 같은 여러 시나리오에서 사용할 수 있습니다.
 
 * 서신 관리
 
    * AEM Forms Workflow 구성용
-   * 초안/제출의 원격 저장에 Forms 포털을 사용하는 동안
+   * 초안/제출의 원격 저장에 Forms 포털 사용 중
 
-* 게시 인스턴스에서 적응형 양식을 제출하는 경우에 대한 적응형 양식
+* 적응형 양식의 경우, 게시 인스턴스에서 적응형 양식을 제출하는 경우
 
 다음은 를 구성하는 단계입니다. **[!UICONTROL AEM DS 설정]**:
 
@@ -58,4 +54,5 @@ ht-degree: 0%
    >    
    >    
    >    * Forms 또는 AEM 워크플로우를 사용하는 동안 게시 서버에서 제출하기 전에 DS 설정 서비스를 구성해야 합니다. 그렇지 않으면 양식 제출이 실패합니다.
-
+   >    
+   >

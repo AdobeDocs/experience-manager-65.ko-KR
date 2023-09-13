@@ -7,20 +7,19 @@ breadcrumb-title: 릴리스 정보
 user-guide-description: 릴리스 정보에서 AEM 6.5의 최신 새로운 기능에 대해 알아봅니다.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8a7ca99d896fd1ce2ace5b17a91987c6b8535615
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
 source-wordcount: '70'
-ht-degree: 48%
+ht-degree: 42%
 
 ---
 
 
 # Adobe Experience Manager 6.5 릴리스 노트 {#release-notes}
 
-+ [AEM 6.5 릴리스 노트](home.md)
++ [AEM 6.5 릴리스 정보](home.md)
 + [최신 릴리스 정보](release-notes.md)
-+ [AEM Forms 서비스 팩 설치 지침](aem-forms-current-service-pack-installation-instructions.md)
-+ [이전 릴리스 노트]{#service-pack}
++ [이전 릴리스 정보]{#service-pack}
    + [6.5.17](previous/6.5.17.md)
    + [6.5.16](previous/6.5.16.md)
    + [6.5.15](previous/6.5.15.md)
@@ -39,6 +38,7 @@ ht-degree: 48%
    + [6.5.2](previous/6.5.2.md)
    + [6.5.1](previous/6.5.1.md)
    + [6.5.0](previous/ga.md)
++ [AEM Forms 서비스 팩 설치 지침](aem-forms-current-service-pack-installation-instructions.md)
 + [AEM Forms JEE 패치 설치 관리자](jee-patch-installer-65.md)
-+ [더 이상 사용되지 않는/제거된 기능](deprecated-removed-features.md)
++ [이제 사용되지 않는 기능과 제거된 기능](deprecated-removed-features.md)
 + [Touch UI 기능 상태](touch-ui-features-status.md)

@@ -1,18 +1,14 @@
 ---
 title: 로컬 자격 증명 관리
-seo-title: Managing local credentials
 description: 로컬 자격 증명을 관리하는 방법을 알아봅니다.
-seo-description: Learn how to manage local credentials.
-uuid: 3c4358e0-aaff-4e94-a6b2-04b463fca260
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -33,10 +29,10 @@ Acrobat Reader DC 확장과 관련된 정보 및 지침은 [Acrobat Reader DC �
 1. 가져오기를 클릭합니다. Trust Store Type에서 다음 옵션 중 하나를 선택합니다.
 
    * **문서 서명 자격 증명:** 문서에 디지털 서명을 발급하는 데 사용되는 자격 증명입니다.
-   * **Acrobat Reader DC 확장 자격 증명:** 제작된 PDF 문서에서 Adobe Reader 사용 권한을 활성화할 수 있는 Acrobat Reader DC 확장과 관련된 디지털 인증서입니다.
+   * **Acrobat Reader DC 확장 자격 증명:** 제작된 PDF 문서에서 Adobe Reader 사용 권한을 활성화할 수 있는 Acrobat Reader DC 확장 관련 디지털 인증서입니다.
    * **기본값:** Acrobat Reader DC 확장에 사용할 기본 자격 증명임을 나타냅니다.
 
-   자격 증명을 얻는 방법에 대한 자세한 내용은 [AEM Forms 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+   자격 증명을 얻는 방법에 대한 자세한 내용은 [AEM Forms 설치 준비](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
 1. 별칭 상자에 자격 증명의 식별자를 입력합니다. 이 식별자는 Acrobat Reader DC 확장 및 서명 서비스에서 자격 증명의 표시 이름으로 사용됩니다. 이 별칭은 AEM forms SDK를 사용하여 프로그래밍 방식으로 자격 증명에 액세스하는 데에도 사용됩니다.
 
@@ -55,7 +51,7 @@ Acrobat Reader DC 확장과 관련된 정보 및 지침은 [Acrobat Reader DC �
 1. 관리 콘솔에서 설정 > Trust Store Management > 로컬 자격 증명을 클릭합니다.
 1. 내보낼 자격 증명의 별칭 이름을 클릭한 다음 내보내기를 클릭합니다.
 1. 암호 상자에 암호를 입력합니다. 이 암호는 새로운 암호로, 내보낸 자격 증명을 암호화하는 데 사용됩니다.
-1. 내보내기 를 클릭하고 지시에 따라 자격 증명을 내보낸 다음 확인 을 클릭합니다.
+1. 내보내기 를 클릭하고, 자격 증명을 내보낼 수 있도록 지침을 따른 다음 확인 을 클릭합니다.
 
 ## 자격 증명의 별칭 또는 Trust Store 유형 편집 {#edit-a-credential-s-alias-or-trust-store-type}
 

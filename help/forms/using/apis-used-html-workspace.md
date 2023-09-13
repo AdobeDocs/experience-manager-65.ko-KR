@@ -1,17 +1,13 @@
 ---
 title: AEM Forms 작업 영역에서 사용되는 API
-seo-title: APIs used in AEM Forms workspace
-description: 사용자 지정 및 자동화에 노출된 AEM Forms 작업 공간 LiveCycle의 공개 Java 및 JavaScript API 및 메서드입니다.
-seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
-uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
+description: 공용 Java&trade 및 JavaScript API와 AEM Forms 작업 영역 LiveCycle 방법으로, 사용자 정의 및 자동화에 노출됩니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -74,7 +70,7 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>invokeStartpoint</td>
    <td>ProcessManagementStartpointService</td>
    <td>invokeStartpoint</td>
-   <td>시작점을 호출하고 시작점에 해당하는 새 작업을 만듭니다.</td>
+   <td>시작점을 호출하고 시작점에 해당하는 작업을 만듭니다.</td>
   </tr>
   <tr>
    <td>getAllTask</td>
@@ -92,19 +88,19 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>renderTask</td>
    <td>ProcessManagementTaskService</td>
    <td>렌더링</td>
-   <td>작업을 렌더링하고 필요한 경우 양식 url, 양식 유형, 데이터 url 등과 같은 양식을 렌더링하는 데 필요한 정보를 반환합니다.</td>
+   <td>작업을 렌더링하고 필요한 경우 양식 url, 양식 유형, 데이터 url과 같은 양식을 렌더링하는 데 필요한 정보를 반환합니다.</td>
   </tr>
   <tr>
    <td>submitWithPriorData</td>
    <td>ProcessManagementTaskService</td>
    <td>submitWithPriorData</td>
-   <td>결과 키를 사용하여 TaskManager의 제출 API의 결과를 반환합니다.</td>
+   <td>결과 키를 사용하여 TaskManager의 제출 API 결과를 반환합니다.</td>
   </tr>
   <tr>
    <td>submitWithdata</td>
    <td>ProcessManagementTaskService</td>
    <td>submitWithdata</td>
-   <td>이 코드는 TaskManager의 submit API를 사용하여 작업과 연결된 양식 데이터(문자열로 전달됨)를 제출합니다. 이 변수는 callTaskManager의 submit API가 아닌 flex forms에 사용됩니다.</td>
+   <td>이 코드는 TaskManager의 submit API를 사용하여 작업과 연결된 양식 데이터(문자열로 전달됨)를 제출합니다. 이 변수는 callTaskManager의 submit API가 아닌 Flex Forms에 사용됩니다.</td>
   </tr>
   <tr>
    <td>저장</td>
@@ -116,13 +112,13 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>완료</td>
    <td>ProcessManagementTaskService</td>
    <td>완료</td>
-   <td>작업이 완료되고 프로세스 설계에 따라 다음 단계로 작업이 전달됩니다.</td>
+   <td>이 플러그인은 작업을 완료하고 프로세스 설계에 따라 다음 단계로 작업을 전달합니다.</td>
   </tr>
   <tr>
    <td>getAttachment</td>
    <td>ProcessManagementTaskService</td>
    <td>getAttachment</td>
-   <td>첨부 파일이 있는 첨부 파일의 URL을 반환합니다.</td>
+   <td>첨부 파일을 사용할 수 있는 첨부 파일의 URL을 반환합니다.</td>
   </tr>
   <tr>
    <td>모든 첨부 파일 가져오기</td>
@@ -152,7 +148,7 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>클레임</td>
    <td>ProcessManagementTaskService</td>
    <td>클레임</td>
-   <td>공유 큐에서 사용할 수 있는 작업이 필요합니다.</td>
+   <td>공유 큐에서 사용할 수 있는 작업을 요구합니다.</td>
   </tr>
   <tr>
    <td>잠금 해제</td>
@@ -164,7 +160,7 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>잠금</td>
    <td>ProcessManagementTaskService</td>
    <td>잠금</td>
-   <td>작업을 잠그고 다른 사용자가 작업을 요청할 수 없습니다(공유된 경우).</td>
+   <td>작업을 잠그고 공유 시 다른 사용자가 작업을 요청할 수 없습니다.</td>
   </tr>
   <tr>
    <td>거부</td>
@@ -182,13 +178,13 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>setVisible</td>
    <td>ProcessManagementTaskService</td>
    <td>setVisible</td>
-   <td>작업의 가시성을 설정합니다. 가시성이 false로 설정된 경우 나중에 사용자에게 작업이 표시되지 않습니다.</td>
+   <td>작업의 가시성을 설정합니다. 가시성이 false로 설정된 경우 나중에 작업이 사용자에게 표시되지 않습니다.</td>
   </tr>
   <tr>
    <td>getUsers</td>
    <td>프로세스 관리 사용자 프록시 서비스</td>
    <td>getUsers</td>
-   <td>사용자 검색에 사용됩니다. 지정된 이름이 없으면 모든 사용자를 반환하고 지정된 이름의 사용자를 반환합니다.</td>
+   <td>사용자 검색에 사용됩니다. 이름이 지정되지 않으면 모든 사용자를 반환하고, 그렇지 않으면 지정된 이름의 사용자를 반환합니다.</td>
   </tr>
   <tr>
    <td>getUsersInGroup</td>
@@ -242,25 +238,25 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>getOutOfOfficeSettings</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>getOutOfOfficeSettings</td>
-   <td>사용자의 부재 설정입니다.</td>
+   <td>사용자의 부재 중 설정을 가져옵니다.</td>
   </tr>
   <tr>
    <td>saveOutOfOfficeSettingsJson</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>saveOutOfOfficeSettingsJson</td>
-   <td>사용자의 부재 중 설정이 저장됩니다.</td>
+   <td>사용자의 부재 중 설정을 저장합니다.</td>
   </tr>
   <tr>
    <td>getAllProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getAllProcesses</td>
-   <td>모든 프로세스 목록을 반환합니다.</td>
+   <td>모든 프로세스의 목록을 반환합니다.</td>
   </tr>
   <tr>
    <td>getParticipedProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getParticipedProcesses</td>
-   <td>로그인한 사용자가 참여한 모든 프로세스 이름의 목록을 반환합니다.</td>
+   <td>로그인한 사용자가 참여한 모든 프로세스 이름 목록을 반환합니다.</td>
   </tr>
   <tr>
    <td>getProcessInstance<br /> </td>
@@ -308,7 +304,7 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>getAssignmentsForTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getAssignmentsForTask</td>
-   <td>작업에 대한 모든 할당을 가져옵니다. 예를 들어 :- 사용자가 작업을 다른 사용자와 전달하거나 협의하는 경우, 이 작업은 작업에 대한 할당입니다.</td>
+   <td>작업에 대한 모든 할당을 가져옵니다. 예를 들어 사용자가 다른 사용자와 작업을 전달하거나 상담하는 경우, 이 작업은 작업에 대한 할당입니다.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>
@@ -320,13 +316,13 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>초기화</td>
    <td>ProcessManagementClientSessionService</td>
    <td>초기화</td>
-   <td>필요하면 어설션을 갱신한다. 사용자를 인증합니다. 서버/클라이언트 정보에 대한 세션 매개 변수를 설정합니다. 사용자 정보 및 폴링 간격을 반환합니다.</td>
+   <td>필요한 경우 어설션을 갱신합니다. 사용자를 인증합니다. 서버/클라이언트 정보에 대한 세션 매개 변수를 설정합니다. 사용자 정보 및 폴링 간격을 반환합니다.</td>
   </tr>
   <tr>
    <td>getTasksForDirectReports</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getTasksForDirectReports</td>
-   <td>로그인한 관리자에 대한 직접 보고서의 모든 작업을 반환합니다.</td>
+   <td>로그인한 관리자의 직접 보고 작업을 모두 반환합니다.</td>
   </tr>
   <tr>
    <td>getTaskOfDirectReport<br /> </td>
@@ -344,7 +340,7 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>rejectTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>rejectTaskOfDirectReport</td>
-   <td>이전 사용자에게 직접 보고서 작업을 반환합니다.</td>
+   <td>이전 사용자에게 직접 보고 작업을 반환합니다.</td>
   </tr>
   <tr>
    <td>getProperty</td>
@@ -374,7 +370,7 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>getCurrentUserImageUrl</td>
    <td>ProcessManagementClientSessionService</td>
    <td>getCurrentUserImageUrl</td>
-   <td>로그인한 사용자에 대한 사용자의 이미지 URL을 가져옵니다.</td>
+   <td>로그인한 사용자의 이미지 URL을 가져옵니다.</td>
   </tr>
   <tr>
    <td>getUserImageUrl</td>
@@ -386,7 +382,7 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>uploadNote</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadNote</td>
-   <td>작업에 대한 메모를 서버에 업로드합니다.</td>
+   <td>서버에 작업에 대한 메모를 업로드합니다.</td>
   </tr>
   <tr>
    <td>uploadRMAToServer(html 템플릿에서도 직접 호출됩니다.)<br /> </td>
@@ -395,10 +391,10 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>서버에 작업에 대한 첨부 파일을 업로드합니다.</td>
   </tr>
   <tr>
-   <td>getImageURL(html 템플릿에서도 직접 호출됨)</td>
+   <td>getImageURL(HTML 템플릿에서도 직접 호출됨)</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>getImage</td>
-   <td>프로세스에 대한 이미지를 얻습니다.</td>
+   <td>프로세스에 대한 이미지를 가져옵니다.</td>
   </tr>
  </tbody>
 </table>

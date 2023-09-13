@@ -1,18 +1,16 @@
 ---
 title: 페이지 콘텐츠 편집
 description: 페이지가 만들어지면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
-uuid: 5b4f0a8f-5196-42ea-8413-203783a0b77b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '3067'
-ht-degree: 73%
+source-wordcount: '3016'
+ht-degree: 49%
 
 ---
 
@@ -26,11 +24,11 @@ ht-degree: 73%
 >
 >계정에 다음이 필요합니다. [적절한 액세스 권한](/help/sites-administering/security.md) 및 [권한](/help/sites-administering/security.md#permissions) 을 클릭하여 페이지를 편집합니다.
 >
->문제가 발생하면 시스템 관리자에게 문의하십시오.
+>Adobe 문제가 발생하면 시스템 관리자에게 문의하는 것이 좋습니다.
 
 >[!NOTE]
 >
->페이지 및/또는 템플릿이 적절하게 설정된 경우 편집할 때 [반응형 레이아웃](/help/sites-authoring/responsive-layout.md)을 사용할 수 있습니다.
+>페이지, 템플릿 또는 둘 다 적절히 설정된 경우 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) 편집할 때.
 
 >[!NOTE]
 >
@@ -52,7 +50,7 @@ ht-degree: 73%
 
 * **페이지 정보**
 
-  페이지 정보 보기 및 편집, 페이지 속성 보기, 페이지 게시/게시 취소를 포함하여 페이지에서 수행할 수 있는 페이지 정보 및 작업 등과 같은 [페이지 정보](/help/sites-authoring/author-environment-tools.md#page-information) 메뉴에 대한 액세스를 제공합니다.
+  다음에 대한 액세스를 제공합니다. [페이지 정보](/help/sites-authoring/author-environment-tools.md#page-information) 메뉴(페이지 세부 사항 및 페이지 정보 보기 및 편집, 페이지 속성 보기, 페이지 게시/게시 취소 등 페이지에서 수행할 수 있는 작업 포함).
 
   ![페이지 정보](do-not-localize/screen_shot_2018-03-22at111437.png)
 
@@ -76,19 +74,19 @@ ht-degree: 73%
 
 * **모드 선택기**
 
-  현재 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)를 표시하고 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
+  현재 상태를 표시합니다 [모드](/help/sites-authoring/author-environment-tools.md#page-modes) 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
 
   ![모드 선택기](assets/chlimage_1-120.png)
 
 * **미리보기**
 
-  [미리보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 활성화합니다. 게시될 때 나타나는 페이지가 표시됩니다.
+  [미리보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 활성화합니다. 이 옵션은 페이지가 게시될 때 나타나는 대로 표시합니다.
 
   ![미리보기 모드](assets/chlimage_1-121.png)
 
 * **주석**
 
-  페이지를 검토할 때 페이지에 [주석](/help/sites-authoring/annotations.md)을 추가할 수 있습니다. 첫 번째 주석 다음에 아이콘이 숫자로 전환하여 페이지에 있는 주석의 수를 가리킵니다.
+  다음을 추가할 수 있습니다. [주석](/help/sites-authoring/annotations.md) 페이지를 검토할 때 페이지로 이동합니다. 첫 번째 주석 이후 아이콘은 페이지의 주석 수를 나타내는 숫자로 전환됩니다.
 
   ![주석](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -110,7 +108,7 @@ ht-degree: 73%
 
 * **세부 사항 보기** - 워크플로의 **세부 사항** 창을 엽니다.
 
-알림 표시줄을 통해 워크플로 단계를 완료하고 위임하는 것은 알림 받은 편지함에서 [워크플로에 참여](/help/sites-authoring/workflows-participating.md)할 때와 같은 방식입니다.
+알림 표시줄을 사용하여 워크플로우 단계를 완료하고 위임하는 것은 다음과 같습니다 [워크플로우에 참여](/help/sites-authoring/workflows-participating.md) (알림 받은 편지함)
 
 페이지에 여러 개의 워크플로우가 있는 경우 알림 오른쪽 끝에 화살표 단추와 함께 워크플로우 개수가 표시되어 워크플로우를 스크롤할 수 있습니다.
 
@@ -120,7 +118,7 @@ ht-degree: 73%
 
 구성 요소 플레이스홀더는 구성 요소를 놓을 때 배치될 위치를 보여 주는 표시기입니다(현재 마우스로 가리키고 있는 구성 요소 위에 있음).
 
-* 페이지에 새 구성 요소를 추가할 때(구성 요소 브라우저로부터 끌기):
+* 페이지에 구성 요소를 추가할 때(구성 요소 브라우저에서 드래그):
 
   ![새 구성 요소 추가](assets/screen_shot_2018-03-22at111928.png)
 
@@ -132,7 +130,7 @@ ht-degree: 73%
 
 ### 구성 요소 브라우저에서 구성 요소 삽입 {#inserting-a-component-from-the-components-browser}
 
-[구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)를 사용하여 새 구성 요소를 추가할 수 있습니다. [구성 요소 플레이스홀더](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
+다음을 사용하여 구성 요소를 추가할 수 있습니다. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser). [구성 요소 플레이스홀더](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
 
 1. 페이지가 [**편집** 모드](/help/sites-authoring/author-environment-tools.md#page-modes)인지 확인합니다.
 1. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)를 엽니다.
@@ -142,32 +140,32 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->모바일 디바이스에서 구성 요소 브라우저가 전체 화면을 채웁니다. 구성 요소를 드래그하면 브라우저가 닫히고 구성 요소를 배치할 수 있도록 페이지가 다시 표시됩니다.
+>모바일 디바이스에서 구성 요소 브라우저가 전체 화면을 채웁니다. 구성 요소를 드래그하기 시작하면 구성 요소를 배치할 수 있도록 브라우저가 닫혀 페이지가 다시 표시됩니다.
 
 ### 단락 시스템에서 구성 요소 삽입 {#inserting-a-component-from-the-paragraph-system}
 
-단락 시스템의 **구성 요소를 여기로 드래그하십시오.** 상자를 사용하여 새 구성 요소를 추가할 수 있습니다.
+다음을 사용하여 구성 요소를 추가할 수 있습니다. **여기에 구성 요소 드래그** 단락 시스템의 상자:
 
 1. 페이지가 [**편집** 모드](/help/sites-authoring/author-environment-tools.md#page-modes)인지 확인합니다.
-1. 단락 시스템에서 새 구성 요소를 선택하고 추가하는 두 가지 방법이 있습니다.
+1. 단락 시스템에서 구성 요소를 선택하고 추가하는 두 가지 방법이 있습니다.
 
    * 기존 구성 요소의 도구 모음 또는 **구성 요소를 여기로 드래그하십시오** 상자에서 **구성 요소 삽입** 옵션(+)을 선택합니다.
 
    ![구성 요소 선택 삽입](assets/screen_shot_2018-03-22at112536.png)
 
-   * 데스크탑 디바이스를 사용하는 경우 **구성 요소를 여기로 드래그하십시오.** 상자를 더블 클릭합니다.
+   * 데스크탑 디바이스를 사용하는 경우 **여기에 구성 요소 드래그** 상자.
 
-   다음 **새 구성 요소 삽입** 필수 구성 요소를 선택할 수 있는 대화 상자가 열립니다.
+   다음 **새 구성 요소 삽입** 필요한 구성 요소를 선택할 수 있는 대화 상자가 열립니다.
 
    ![새 구성 요소 삽입](assets/screen_shot_2018-03-22at112650.png)
 
-1. 선택한 구성 요소가 페이지 하단에 추가됩니다. 필요에 따라 구성 요소를 [편집](#editmovecopypastedelete)합니다.
+1. 선택한 구성 요소가 페이지 아래쪽에 추가됩니다. 필요에 따라 구성 요소를 [편집](#editmovecopypastedelete)합니다.
 
 ### 자산 브라우저를 사용하여 구성 요소 삽입 {#inserting-a-component-using-the-assets-browser}
 
-[자산 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. 이렇게 하면 적절한 유형의 새 구성 요소가 자동으로 만들어집니다(자산이 들어 있음).
+에서 에셋을 끌어 페이지에 구성 요소를 추가할 수도 있습니다. [에셋 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser). 이렇게 하면 적절한 유형의 구성 요소가 자동으로 만들어집니다(에셋이 들어 있음).
 
-다음은 다음 자산 유형에 대해 유효합니다(일부는 페이지/단락 시스템에 따라 다름).
+이는 다음 자산 유형에 대해 유효합니다(일부는 페이지/단락 시스템에 따라 다름).
 
 <table>
  <tbody>
@@ -205,32 +203,32 @@ ht-degree: 73%
 위의 자산 유형 중 하나를 끌어 구성 요소를 만들려면
 
 1. 페이지가 [**편집** 모드](/help/sites-authoring/author-environment-tools.md#page-modes)인지 확인합니다.
-1. [에셋 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser)를 엽니다.
-1. 필요한 에셋을 필요한 위치로 끕니다. [구성 요소 플레이스홀더](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
+1. [자산 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser)를 엽니다.
+1. 필요한 자산을 필요한 위치로 드래그합니다. [구성 요소 플레이스홀더](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
 
-   에셋 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 에셋이 포함됩니다.
+   자산 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 자산이 포함됩니다.
 
-1. 필요할 경우 구성 요소를 [편집](#editmovecopypastedelete)합니다.
+1. [편집](#editmovecopypastedelete) 필요한 경우 구성 요소입니다.
 
 >[!NOTE]
 >
->모바일 디바이스에서 자산 브라우저가 전체 화면을 채웁니다. 자산을 드래그하면 브라우저가 닫히고 자산을 배치할 수 있도록 페이지가 다시 표시됩니다.
+>모바일 디바이스에서 에셋 브라우저가 전체 화면을 채웁니다. 에셋을 드래그하기 시작하면 에셋을 배치할 수 있도록 브라우저가 닫혀 페이지가 다시 표시됩니다.
 
-자산을 검색할 때 자산을 빠르게 변경해야 하는 경우, 자산의 이름 옆에 있는 편집 아이콘을 클릭하여 [자산 편집기](/help/assets/manage-assets.md)를 브라우저에서 직접 시작할 수 있습니다.
+에셋을 검색할 때 에셋을 빠르게 변경해야 하는 경우, 에셋 이름 옆에 있는 편집 아이콘을 클릭하여 [자산 편집기](/help/assets/manage-assets.md).
 
 ![편집 아이콘](assets/screen_shot_2018-03-22at112735.png)
 
 ## 편집/구성/복사/잘라내기/삭제/붙여넣기 {#edit-configure-copy-cut-delete-paste}
 
-구성 요소를 선택하면 도구 모음이 열립니다. 이 도구 모음에서는 구성 요소에서 수행할 수 있는 다양한 작업에 액세스할 수 있습니다.
+구성 요소를 선택하면 도구 모음이 열립니다. 구성 요소에서 수행할 수 있는 다양한 작업에 대한 액세스를 제공합니다.
 
-사용자가 사용할 수 있는 실제 작업은 상황에 따라 적절히 표시되며 일부 작업은 여기에서 설명되지 않을 수 있습니다.
+사용자가 사용할 수 있는 실제 작업은 상황에 따라 적절히 표시되며, 일부 작업은 여기에서 설명되지 않을 수 있습니다.
 
 ![구성 요소 도구 모음 옵션](assets/screen_shot_2018-03-22at112909.png)
 
 * **편집**
 
-  [구성 요소 유형에 따라 다름](/help/sites-authoring/default-components.md) 이렇게 하면 다음을 수행할 수 있습니다. [구성 요소의 콘텐츠 편집](#edit-content). 종종 도구 모음이 제공됩니다.
+  [편집 구성 요소 유형에 따라](/help/sites-authoring/default-components.md) [구성 요소의 콘텐츠를 편집](#edit-content)할 수 있게 됩니다. 종종 도구 모음이 제공됩니다.
 
   ![편집](do-not-localize/screen_shot_2018-03-22at112936.png)
 
@@ -242,35 +240,35 @@ ht-degree: 73%
 
 * **복사**
 
-  그러면 구성 요소가 클립보드로 복사됩니다. 붙여넣기 작업 후에도 원래 구성 요소는 여전히 유지됩니다.
+  구성 요소를 클립보드에 복사합니다. 원본 구성 요소는 붙여넣기 후에 유지됩니다.
 
   ![복사](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **잘라내기**
 
-  그러면 구성 요소가 클립보드로 복사됩니다. 붙여넣기 작업 후 원래 구성 요소가 제거됩니다.
+  구성 요소를 클립보드에 복사합니다. 붙여넣기 작업 후에 원래 구성 요소는 제거됩니다.
 
   ![잘라내기](assets/screen_shot_2018-03-22at113007.png)
 
 * **삭제**
 
-  확인과 함께 페이지에서 구성 요소가 삭제됩니다.
+  확인 표시가 있으면 페이지에서 구성 요소가 삭제됩니다.
 
   ![삭제](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **구성 요소 삽입**
 
-  대화 상자가 열려 [새 구성 요소를 추가](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system)할 수 있습니다.
+  그러면 대화 상자가 열립니다. [구성 요소 추가](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
   ![구성 요소 삽입](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **붙여넣기**
 
-  구성 요소를 클립보드에서 페이지로 붙여넣게 됩니다. 원본이 유지되는지 여부는 사용한 것이 복사인지 잘라내기인지에 따라 다릅니다.
+  구성 요소를 클립보드에서 페이지로 붙여넣습니다. 원본이 남아 있는지 여부는 복사 또는 잘라내기 중 어느 것을 사용했는지에 따라 달라집니다.
 
    * 같은 페이지나 다른 페이지에 붙여넣을 수 있습니다.
-   * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣습니다.
-   * 클립보드에 콘텐츠가 있는 경우에만 붙여넣기 작업이 표시됩니다.
+   * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣게 됩니다.
+   * 붙여넣기 작업은 클립보드에 콘텐츠가 있는 경우에만 표시됩니다.
 
   ![붙여넣기](assets/screen_shot_2018-03-22at113553.png)
 
@@ -298,13 +296,13 @@ ht-degree: 73%
 
 * **경험 조각 변형으로 변환**
 
-  이 작업에서는 선택한 구성 요소에서 새 [경험 조각](/help/sites-authoring/experience-fragments.md)을 생성하거나 기존 경험 조각에 추가할 수 있습니다.
+  이렇게 하면 다음을 만들 수 있습니다. [경험 조각](/help/sites-authoring/experience-fragments.md) 선택한 구성 요소에서 선택하거나 기존 경험 조각에 추가합니다.
 
   ![경험 조각 변형으로 변환](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## 편집(컨텐츠) {#edit-content}
 
-구성 요소에서 콘텐츠를 추가 및/또는 편집하는 방법에는 두 가지가 있습니다.
+구성 요소에서 콘텐츠를 추가하거나 편집하는 방법에는 두 가지가 있습니다.
 
 * [편집하려면 구성 요소 대화 상자](#component-edit-dialog)를 엽니다.
 * 자산 브라우저에서 [자산을 끌어다 놓아](#draganddropintocomponent) 콘텐츠를 바로 추가합니다.
@@ -313,7 +311,7 @@ ht-degree: 73%
 
 [구성 요소 도구 모음의 편집(연필) 아이콘](#edit-configure-copy-cut-delete-paste)을 사용하여 콘텐츠를 편집할 구성 요소를 열 수 있습니다.
 
-정확한 편집 옵션은 구성 요소에 따라 다릅니다. 일부 구성 요소의 경우, [ 모든 작업은 전체 화면 모드에서만 사용할 수 있습니다](#edit-content-full-screen-mode). 예:
+정확한 편집 옵션은 구성 요소에 따라 다릅니다. 일부 구성 요소의 경우 [모든 작업은 전체 화면 모드에서만 사용할 수 있습니다.](#edit-content-full-screen-mode). 예:
 
 * [텍스트 구성 요소](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
@@ -328,11 +326,11 @@ ht-degree: 73%
   >빈 이미지 구성 요소에서는 편집기가 작동하지 않습니다.
   >
   >
-  >다음을 수행해야 합니다. [이미지 드래그 또는 업로드(구성 사용)](/help/sites-authoring/default-components-foundation.md#image) 편집을 시작하기 전에
+  >[이미지 드래그 또는 업로드(구성 사용)](/help/sites-authoring/default-components-foundation.md#image) 편집을 시작하기 전에
 
 * 이미지 구성 요소 - 전체 화면
 
-  [Entering full screen mode](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) for the image component allows for more space to edit the image as well as showing extra editing options such as **Launch Map** and **Reset Zoom**. 또한 전체 화면에서 자르기 사전 설정을 선택할 수 있습니다.
+  이미지 구성 요소에 대해 [전체 화면 모드로 전환](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)하면 이미지를 편집할 수 있는 공간이 더 많아지고 **맵 실행** 및 **확대/축소 재설정**&#x200B;과 같은 추가 편집 옵션이 표시됩니다. 또한 전체 화면에서 자르기 사전 설정을 선택할 수 있습니다.
 
   ![이미지 구성 요소 전체 화면](assets/screen_shot_2018-03-22at120529.png)
 
@@ -383,13 +381,13 @@ ht-degree: 73%
 
 ## 구성 요소 레이아웃 편집 {#edit-component-layout}
 
-구성 요소를 조정하기 위해 편집에서 [레이아웃 모드](/help/sites-authoring/responsive-layout.md)로 반복적으로 전환하는 대신 해당 구성 요소의 레이아웃을 변경하려는 구성 요소에 대해 **레이아웃** 작업을 선택하면 [편집 모드]를 벗어나지 않고 시간을 절약할 수 있습니다.
+편집에서 로 반복적으로 전환 대신 [레이아웃 모드](/help/sites-authoring/responsive-layout.md) 구성 요소를 조정하려면 **레이아웃** 구성 요소에 대한 작업 - 해당 구성 요소의 레이아웃을 변경합니다. 이렇게 하면 편집 모드를 종료할 필요가 없어 시간을 절약할 수 있습니다.
 
-1. Sites 콘솔의 **편집** 모드에 있는 경우 구성 요소를 선택하면 구성 요소의 도구 모음이 표시됩니다.
+1. 다음 기간 **편집** 사이트 콘솔의 모드에서 구성 요소를 선택하면 구성 요소의 도구 모음이 표시됩니다.
 
    ![양식의 편집 모드](assets/screen_shot_2018-03-22at133756.png)
 
-   **레이아웃** 작업을 클릭하거나 탭하여 구성 요소의 레이아웃을 조정합니다.
+   을(를) 클릭하거나 탭합니다 **레이아웃** 구성 요소의 레이아웃을 조정할 수 있는 작업입니다.
 
    ![구성 요소 도구 모음](do-not-localize/chlimage_1-21.png)
 
@@ -403,15 +401,15 @@ ht-degree: 73%
 
    [레이아웃 모드](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)에서처럼 구성 요소의 레이아웃을 수정할 수 있습니다.
 
-1. 필요한 레이아웃 변경을 만든 후 구성 요소 작업 메뉴에서 **닫기** 버튼을 클릭하여 구성 요소 레이아웃 수정을 중지할 수 있습니다. 구성 요소의 도구 모음이 일반적인 편집 상태로 돌아갑니다.
+1. 필요한 레이아웃을 변경한 후 을(를) 클릭합니다. **닫기** 구성 요소 작업 메뉴에서 을 클릭하여 구성 요소 레이아웃 수정을 중지할 수 있습니다. 구성 요소의 도구 모음이 일반적인 편집 상태로 돌아갑니다.
 
    ![닫기](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
->레이아웃 작업은 선택한 구성 요소의 범위로 제한됩니다. 예를 들어, 한 구성 요소의 레이아웃을 편집한 다음 다른 구성 요소를 클릭하면 에뮬레이터 도구 모음이 사라질 뿐 아니라 새로 선택한 구성 요소와 재계산 핸들에 대해 표준 편집 도구 모음(레이아웃 도구 모음이 아님)이 표시됩니다.
+>레이아웃 작업은 선택한 구성 요소의 범위로 제한됩니다. 예를 들어, 한 구성 요소의 레이아웃을 편집한 다음 다른 구성 요소를 선택하는 경우 새로 선택한 구성 요소에 대해 표준 편집 도구 모음(레이아웃 도구 모음이 아님)이 표시됩니다. 크기 조정 핸들과 에뮬레이터 도구 모음이 사라집니다.
 >
->여러 구성 요소에 영향을 미치는 페이지의 전체 레이아웃을 편집해야 하는 경우 [레이아웃 모드](/help/sites-authoring/responsive-layout.md)로 전환하십시오.
+>여러 구성 요소에 영향을 주면서 페이지의 전체 레이아웃을 편집해야 하는 경우 [레이아웃 모드](/help/sites-authoring/responsive-layout.md).
 
 ## 상속된 구성 요소 {#inherited-components}
 
@@ -460,7 +458,7 @@ ht-degree: 73%
 [Live Copy 상태 페이지 모드](/help/sites-authoring/author-environment-tools.md#page-modes)를 사용하면 live copy 상태와 상속되었거나 상속되지 않은 구성 요소에 대한 간단한 개요를 알 수 있습니다.
 
 * 녹색 테두리: 상속됨
-* 분홍색 테두리: 상속이 취소되었습니다.
+* 분홍색 테두리: 상속이 취소됨
 
 예:
 
@@ -491,11 +489,11 @@ ht-degree: 73%
 
 ### 미리보기 모드 {#preview-mode}
 
-내용을 편집할 때 [미리보기 모드](/help/sites-authoring/author-environment-tools.md#page-modes)를 사용하여 페이지를 미리 볼 수 있습니다. 이 모드에서 다음 작업을 수행합니다.
+콘텐츠를 편집할 때 미리보기를 사용하여 페이지를 미리 볼 수 있습니다 [모드](/help/sites-authoring/author-environment-tools.md#page-modes). 이 모드에서는 다음 작업을 수행할 수 있습니다.
 
-* 게시할 때 페이지가 표시되는 모양에 대해 빠른 보기를 제공할 수 있도록 여러 가지 편집 메커니즘을 숨깁니다.
-* 링크를 사용하여 탐색할 수 있습니다.
-* 페이지 콘텐츠를 새로 고치지 **않습니다**.
+* 페이지가 게시될 때 표시되는 방식에 대한 빠른 보기를 제공할 수 있도록 다양한 편집 메커니즘을 숨깁니다.
+* 탐색하려면 링크를 사용하십시오.
+* 그렇습니다 **아님** 페이지 콘텐츠를 새로 고칩니다.
 
 미리보기 모드는 작성할 때 페이지 편집기의 오른쪽 상단에 있는 아이콘을 사용하면 이용할 수 있습니다.
 
@@ -503,11 +501,11 @@ ht-degree: 73%
 
 ### 게시됨으로 보기 {#view-as-published}
 
-**게시됨으로 보기** 옵션은 [페이지 정보](/help/sites-authoring/author-environment-tools.md#page-information) 메뉴에서 사용할 수 있습니다. 이 옵션은 새 탭에 페이지를 열고, 콘텐츠를 새로 고치고, 게시 환경에 표시되는 대로 페이지를 표시합니다.
+**게시됨으로 보기** 옵션은 [페이지 정보](/help/sites-authoring/author-environment-tools.md#page-information) 메뉴에서 사용할 수 있습니다. 이렇게 하면 새 탭에서 페이지가 열리고, 콘텐츠가 새로 고침되며, 게시할 때 표시되는 것과 동일하게 페이지가 표시됩니다.
 
 ## 페이지 잠금 {#locking-a-page}
 
-AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이지를 잠글 수 있습니다. 이 기능은 하나의 특정 페이지에 여러 편집 작업을 수행하거나 잠시 동안 페이지를 동결해야 할 때 유용합니다.
+AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이지를 잠글 수 있습니다. 이 기능은 하나의 특정 페이지를 여러 번 편집하거나 잠시 동안 페이지를 동결해야 할 때 유용합니다.
 
 페이지는 다음 중 하나에서 잠글 수 있습니다.
 
@@ -520,7 +518,7 @@ AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이
 
 * **페이지 편집기**
 
-   1. **페이지 정보**&#x200B;아이콘을 선택하여 메뉴를 엽니다.
+   1. 메뉴를 열려면 **페이지 정보** 아이콘.
    1. **페이지 잠금** 옵션을 선택합니다.
 
 페이지가 잠기면 콘솔 보기 정보가 업데이트되며, 편집 시에는 잠금 기호가 도구 모음에 표시됩니다.
@@ -535,7 +533,7 @@ AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이
 
 ## 페이지 잠금 해제 {#unlocking-a-page}
 
-페이지 잠금을 해제하는 것은 [페이지 잠금](#locking-a-page)과 매우 유사해서, 페이지가 잠기면 잠금 옵션이 잠금 해제 동작으로 대체됩니다.
+페이지 잠금 해제는 다음과 유사합니다 [페이지 잠금](#locking-a-page). 페이지가 잠기면 잠금 옵션이 잠금 해제 동작으로 대체됩니다.
 
 [페이지 정보] 메뉴에 **잠금 해제**&#x200B;가 옵션으로 표시되며 [Sites 콘솔]의 잠금 아이콘은 **잠금 해제** 아이콘으로 바뀝니다.
 
@@ -555,9 +553,9 @@ AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이
 
 >[!NOTE]
 >
->다음 [키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` 또한 페이지 편집 작업을 실행 취소할 수 있습니다.
+>[키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z`를 사용하여 페이지 편집 작업을 취소할 수 있습니다.
 >
->키보드 단축키 `Ctrl-Y` 또한 페이지 편집 작업을 재실행할 수 있습니다.
+>또한 키보드 단축키 `Ctrl-Y`를 사용하여 페이지 편집 작업을 재실행할 수 있습니다.
 
 >[!NOTE]
 >
@@ -569,11 +567,11 @@ AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이
 >
 >시스템 관리자가 다음을 수행할 수 있습니다. [실행 취소/다시 실행 기능의 다양한 측면 구성](/help/sites-administering/config-undo.md) 인스턴스의 요구 사항에 따라 을 선택합니다.
 
-AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 따라서 여러 작업의 실행을 취소하면 수행한 순서대로 취소됩니다. 그런 다음 필요한 경우 재실행을 사용하여 하나 이상의 작업을 다시 적용할 수 있습니다.
+AEM은 사용자가 수행한 작업 내역과 해당 작업을 수행한 순서를 저장합니다. 이 기능은 여러 작업을 수행한 순서대로 실행 취소하고 필요한 경우 다시 실행하여 하나 이상의 작업을 다시 적용할 수 있음을 의미합니다.
 
 콘텐츠 페이지의 요소(예: 텍스트 구성 요소 등)가 선택된 경우 명령을 실행 취소 및 재실행하면 선택한 항목에 적용됩니다.
 
-실행 취소 및 재실행 명령의 동작은 다른 소프트웨어 프로그램의 동작과 유사합니다. 명령을 사용하여 콘텐츠에 대한 결정을 내릴 때 웹 페이지의 최근 상태를 복원합니다. 예를 들어 텍스트 단락을 페이지의 다른 위치로 이동한 후 실행 취소 명령을 사용하여 단락을 원래 위치로 되돌릴 수 있습니다. 그런 다음 이전 위치가 더 낫다고 판단되는 경우 재실행 명령을 사용하여 “실행 취소를 실행 취소”하십시오.
+실행 취소 및 재실행 명령의 동작은 다른 소프트웨어 프로그램의 동작과 유사합니다. 명령을 사용하여 콘텐츠를 결정할 때 웹 페이지의 최근 상태를 복원합니다. 예를 들어 텍스트 단락을 페이지의 다른 위치로 이동한 후 실행 취소 명령을 사용하여 단락을 원래 위치로 되돌릴 수 있습니다. 그런 다음 이전 위치가 더 낫다고 판단되는 경우 재실행 명령을 사용하여 “실행 취소를 실행 취소”하십시오.
 
 >[!NOTE]
 >
@@ -584,7 +582,7 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 >* 실행 취소 및 재실행용 [키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)를 사용합니다.
 >
 
-다음과 같은 유형의 페이지 변경을 취소하거나 재실행할 수 있습니다.
+다음 유형의 페이지 변경 사항에 대해 실행 취소 및 재실행을 사용할 수 있습니다.
 
 * 단락 추가, 편집, 삭제 및 이동
 * 단락 내용 즉석 편집
@@ -598,4 +596,4 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 
 >[!NOTE]
 >
->파일 및 이미지 변경의 실행 취소 내역은 최소 10시간 동안 유지됩니다. 이 시간이 지나면 변경을 취소하지 못할 수 있습니다. 관리자는 기본 시간인 10시간을 변경할 수 있습니다.
+>파일 및 이미지 변경의 실행 취소 내역은 최소 10시간 동안 유지됩니다. 그러나 이 시기를 넘기면 변화의 반전이 보장되지 않는다. 관리자는 기본 시간인 10시간을 변경할 수 있습니다.

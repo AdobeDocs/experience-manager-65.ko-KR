@@ -1,17 +1,13 @@
 ---
 title: 렌더러에 대한 문서 세부 정보
-seo-title: Document details for renderer
-description: 렌더링이 AEM Forms 작업 영역에서 다양한 지원되는 양식 및 파일 유형을 렌더링하는 방법에 대한 개념 정보입니다.
-seo-description: Conceptual information on how renders work in AEM Forms workspace to render the various supported form and file types.
-uuid: ae3f0585-9105-4ca7-a490-ffdefd3ac8cd
+description: AEM Forms 작업 영역에서 렌더링이 작동하여 지원되는 다양한 양식 및 파일 유형을 렌더링하는 방법에 대한 개념 정보입니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 exl-id: 946f0f6d-86af-41c1-98ef-98c8f5566e95
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -35,23 +31,23 @@ PDF forms은 다음에 의해 렌더링됩니다. `PdfTaskForm View`.
 
 XDP 양식이 PDF으로 렌더링될 때 `FormBridge` JavaScript™이 FormsAugmenter 서비스에 의해 추가됩니다. 이 JavaScript™(PDF 양식 내)는 양식 제출, 양식 저장, 양식 오프라인 수행과 같은 작업을 수행하는 데 도움이 됩니다.
 
-AEM Forms 작업 영역에서 PDFTaskForm 보기는 와 통신합니다. `FormBridge`다음에 있는 중간 HTML을 통해 javascript `/lc/libs/ws/libs/ws/pdf.html`. 흐름은 다음과 같습니다.
+AEM Forms 작업 영역에서 PDFTaskForm 보기는 와 통신합니다. `FormBridge`JavaScript, 의 중간 HTML 제공 `/lc/libs/ws/libs/ws/pdf.html`. 흐름은 다음과 같습니다.
 
 **PDFTaskForm 보기 - pdf.html**
 
 을 사용하여 통신 `window.postMessage` / `window.attachEvent('message')`
 
-이 방법은 상위 프레임과 iframe 간의 표준 통신 방법입니다. 이전에 연 PDF forms의 기존 이벤트 리스너는 새 이벤트를 추가하기 전에 제거됩니다. 또한 작업 세부 사항 보기의 양식 탭과 내역 탭 간 전환을 고려합니다.
+이 방법은 상위 프레임과 iframe 간의 표준 통신 방법입니다. 이전에 연 PDF forms의 기존 이벤트 리스너는 새 이벤트를 추가하기 전에 제거됩니다. 이 경우 작업 세부 정보 보기의 양식 탭과 내역 탭 간 전환도 고려됩니다.
 
-**pdf.html - `FormBridge`렌더링된 PDF 내의 javascript**
+**pdf.html - `FormBridge`렌더링된 PDF 내부의 JavaScript**
 
 을 사용하여 통신 `pdfObject.postMessage` / `pdfObject.messageHandler`
 
-이 메서드는 HTML에서 PDFJavaScript와 통신하는 표준 방법입니다. PdfTaskForm 뷰도 플랫 PDF을 처리하고 명확하게 렌더링합니다.
+이 메서드는 HTML에서 PDFJavaScript와 통신하는 표준 방법입니다. PdfTaskForm 뷰도 플랫 PDF을 처리하고 일반 렌더링합니다.
 
 >[!NOTE]
 >
->PdfTaskForm 보기의 pdf.html / 콘텐츠는 수정하지 않는 것이 좋습니다.
+>PdfTaskForm 보기의 pdf.html / 콘텐츠는 편집하지 않는 것이 좋습니다.
 
 ## 새 HTML Forms {#new-html-forms}
 
@@ -59,21 +55,21 @@ AEM Forms 작업 영역에서 PDFTaskForm 보기는 와 통신합니다. `FormBr
 
 XDP Form이 CRX에 배포된 모바일 양식 패키지를 사용하여 HTML으로 렌더링될 때 추가 기능도 추가됩니다 `FormBridge`양식에 JavaScript를 추가하여 양식 데이터를 저장하고 제출하는 다양한 메서드를 표시합니다.
 
-ThisJavaScript는 위의 PDF forms에서 참조한 것과 다르지만 유사한 목적을 제공합니다.
+이 JavaScript는 위의 PDF forms에서 참조된 JavaScript와 다르지만 유사한 목적을 제공합니다.
 
 >[!NOTE]
 >
->NewHTMLTaskForm 보기의 내용은 수정하지 않는 것이 좋습니다.
+>Adobe은 NewHTMLTaskForm 보기의 내용을 편집하지 않는 것이 좋습니다.
 
 ## Flex Forms 및 안내서 {#flex-forms-and-guides}
 
 Flex Forms은 SwfTaskForm에 의해 렌더링되고 안내선은 HtmlTaskForm 뷰에 의해 각각 렌더링됩니다.
 
-AEM Forms Workspace에서 이러한 보기는 다음에 있는 중간 SWF을 사용하여 Flex 양식/안내서를 구성하는 실제 SWF과 통신합니다. `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+AEM Forms Workspace에서 이러한 보기는 의 중간 SWF을 사용하여 Flex® 양식/안내서를 구성하는 실제 SWF과 커뮤니케이션합니다 `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
 커뮤니케이션은 다음을 사용하여 수행됩니다. `swfObject.postMessage` / `window.flexMessageHandler`.
 
-이 프로토콜은 `WsNextAdapter.swf`. 기존 `flexMessageHandlers`window 객체에서는 이전에 연 SWF 양식에서 새 양식을 추가하기 전에 이 양식이 제거됩니다. 또한 작업 세부 사항 보기의 양식 탭과 내역 탭 간 전환을 고려합니다. `WsNextAdapter.swf` 저장 또는 제출과 같은 다양한 양식 작업을 수행하는 데 사용됩니다.
+이 프로토콜은 `WsNextAdapter.swf`. 기존 `flexMessageHandlers`window 객체에서는 이전에 연 SWF 양식에서 새 양식을 추가하기 전에 이 양식이 제거됩니다. 또한 작업 세부 사항 보기의 양식 탭과 내역 탭 간 전환을 고려합니다. 다음 `WsNextAdapter.swf` 저장 또는 제출과 같은 다양한 양식 작업을 수행하는 데 사용됩니다.
 
 >[!NOTE]
 >

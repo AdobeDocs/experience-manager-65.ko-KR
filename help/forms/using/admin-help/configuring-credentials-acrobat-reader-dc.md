@@ -1,19 +1,15 @@
 ---
 title: Acrobat Reader DC 확장에 사용할 자격 증명 구성
-seo-title: Configuring credentials for use with Acrobat Reader DC extensions
 description: Acrobat Reader DC 확장에 사용할 자격 증명을 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure credentials for use with Acrobat Reader DC extensions.
-uuid: 9210e6c9-6f5c-402d-b355-b104cdffd5eb
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 0%
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
@@ -23,23 +19,23 @@ PDF 문서에 사용 권한을 적용하려면 Acrobat Reader DC 확장에 대�
 
 평가 자격 증명을 사용하는 경우 프로덕션 환경으로 이동할 때 프로덕션 자격 증명으로 교체합니다. 만료된 자격 증명 또는 평가 자격 증명을 업데이트하려면 먼저 이전 Acrobat Reader DC 확장 자격 증명을 삭제하십시오.
 
-자격 증명을 얻는 방법에 대한 자세한 내용은 [AEM Forms 설치 준비(단일 서버)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+자격 증명을 얻는 방법에 대한 자세한 내용은 [AEM Forms 설치 준비(단일 서버)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
-Trust Store에는 두 개 이상의 Acrobat Reader DC 확장 자격 증명이 포함될 수 있습니다. 이러한 자격 증명 중 하나를 기본 Reader 확장 자격 증명으로 지정해야 합니다. Workbench 사용자가 프로세스 생성 중에 사용할 자격 증명을 결정할 수 없을 때 기본 자격 증명이 사용됩니다. 다음 규칙은 기본 자격 증명에 적용됩니다.
+Trust Store에 두 개 이상의 Acrobat Reader DC 확장 자격 증명이 포함될 수 있습니다. 이러한 자격 증명 중 하나를 기본 Reader 확장 자격 증명으로 지정합니다. Workbench 사용자가 프로세스 생성 중에 사용할 자격 증명을 결정할 수 없을 때 기본 자격 증명이 사용됩니다. 다음 규칙은 기본 자격 증명에 적용됩니다.
 
 * Acrobat Reader DC 확장 자격 증명을 가져오고 Trust Store에 다른 Acrobat Reader DC 확장 자격 증명이 없는 경우 이 자격 증명이 기본값으로 설정됩니다.
-* 기본 옵션을 선택한 상태로 Acrobat Reader DC 확장 자격 증명을 가져오는 경우 기본 유형이 기존 기본 자격 증명에서 제거됩니다. 가져온 자격 증명이 기본값이 됩니다.
+* 기본 옵션을 선택한 상태로 Acrobat Reader DC 확장 자격 증명을 가져오는 경우 기존 기본 자격 증명에서 기본 유형이 제거됩니다. 가져온 자격 증명이 기본값이 됩니다.
 * 기본 Acrobat Reader DC 확장 자격 증명을 삭제할 수 없습니다. 기본 자격 증명을 삭제하려면 먼저 다른 자격 증명을 기본값으로 설정합니다. 이 규칙의 예외는 자격 증명이 하나만 있는 경우 기본값이지만 삭제할 수 있다는 것입니다.
 * 기본 Acrobat Reader DC 확장 자격 증명을 업데이트할 수 없습니다.
 
 >[!NOTE]
 >
->자격 증명을 프로그래밍 방식으로 가져오고 삭제할 수도 있습니다. (참조: [AEM Forms를 사용한 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63).)
+>자격 증명을 프로그래밍 방식으로 가져오고 삭제할 수도 있습니다. (참조: [AEM Forms를 사용한 프로그래밍](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).)
 
 ## Acrobat Reader DC 확장 자격 증명 가져오기 {#import-a-acrobat-reader-dc-extensions-credential}
 
 1. 관리 콘솔에서 설정 > Trust Store Management > 로컬 자격 증명을 클릭합니다.
-1. 가져오기를 클릭하고 Trust Store Type에서 Acrobat Reader DC 확장 자격 증명을 선택합니다.
+1. 가져오기를 클릭하고 Trust Store Type에서 Acrobat Reader DC Extensions Credential 을 선택합니다.
 1. (선택 사항) 이 자격 증명이 Acrobat Reader DC 확장과 함께 사용할 기본 자격 증명임을 나타내려면 [기본값]을 선택합니다.
 1. 별칭 상자에 자격 증명의 식별자를 입력합니다. 이 식별자는 Acrobat Reader DC 확장에서 자격 증명의 표시 이름으로 사용됩니다. 이 별칭은 AEM forms SDK를 사용하여 프로그래밍 방식으로 자격 증명에 액세스하는 데에도 사용됩니다.
 
