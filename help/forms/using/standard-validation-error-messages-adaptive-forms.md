@@ -6,13 +6,14 @@ seo-description: Transform the validation error messages for adaptive forms into
 uuid: 0d1f9835-3e28-41d3-a3b1-e36d95384328
 contentOwner: anujkapo
 content-type: reference
+keywords: 사용자 지정 오류 핸들러 추가, 기본 오류 핸들러 추가, 양식에 오류 핸들러 추가, 규칙 편집기의 호출 서비스를 사용하여 사용자 지정 오류 핸들러 추가, 규칙 편집기를 구성하여 사용자 지정 오류 핸들러 추가, 규칙 편집기를 사용하여 사용자 지정 오류 핸들러 추가
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: fbc371e59c4f80195fe90da5f635267141c8849e
+source-git-commit: 2b1daa1dcd7b5d81c0012ca0de65e9e9043fd4dc
 workflow-type: tm+mt
-source-wordcount: '2346'
+source-wordcount: '2416'
 ht-degree: 4%
 
 ---
@@ -406,3 +407,10 @@ The `var som_map` lists the SOM expression of the Adaptive Form fields that you 
 Using this custom error handler, the adaptive form converts the fields listed in `var som_map` to standard error message format. As a result, the validation error messages display at field-level in the adaptive form.
 
  -->
+
+
+## 추가 정보 {#additional-information}
+
+* [적응형 양식 기반의 독립형 핵심 구성 요소 만들기](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [양식의 스타일 또는 테마 만들기](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [적응형 양식을 만들거나 AEM Sites 페이지에 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)

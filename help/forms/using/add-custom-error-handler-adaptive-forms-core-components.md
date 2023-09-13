@@ -7,15 +7,20 @@ keywords: 사용자 지정 오류 핸들러 추가, 기본 오류 핸들러 추�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: f8e0ac45d98d6485ccb60e754657caf9d190c3ea
+source-git-commit: 6d6e74c61b2ecb13e7cc352d5278c40d2677d44d
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 1%
+source-wordcount: '2331'
+ht-degree: 2%
 
 ---
 
 
 # 적응형 Forms(핵심 구성 요소)의 오류 핸들러 {#error-handlers-in-adaptive-form}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/add-custom-error-handler-adaptive-forms-core-components.html) |
+| AEM 6.5 | 이 문서 |
 
 AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제공합니다. 또한 오류 처리기 함수를 사용자 지정하는 기능도 제공합니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. API를 사용하여 외부 서비스를 호출하면 유효성 검사를 위해 데이터가 서버로 전송되며, 이 데이터는 제출에 대한 성공 또는 오류 이벤트에 대한 정보와 함께 클라이언트에 응답을 반환합니다. 정보는 관련 핸들러에 매개 변수로 전달되어 함수를 실행합니다. 오류 처리기는 발생한 오류 또는 유효성 검사 문제를 관리하고 표시하는 데 도움이 됩니다.
 
@@ -310,3 +315,9 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 브라우저 콘솔을 열고 REST 서비스 끝점에서 받은 응답과 헤더에서 유효성 검사 오류 메시지를 확인합니다.
 
 사용자 지정 오류 처리기 함수는 오류 응답을 기반으로 모달 대화 상자 표시 또는 Analytics 이벤트 전송과 같은 추가 작업을 실행합니다. 사용자 지정 오류 처리기 함수는 특정 사용자 요구 사항에 맞게 오류 처리를 조정할 수 있는 유연성을 제공합니다.
+
+## 추가 참조 {#see-also}
+
+* [적응형 양식 기반의 독립형 핵심 구성 요소 만들기](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [양식의 스타일 또는 테마 만들기](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [적응형 양식을 만들거나 AEM Sites 페이지에 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)

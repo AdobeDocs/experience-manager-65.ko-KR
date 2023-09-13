@@ -4,9 +4,9 @@ description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 �
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 3649df0e2a2672bc1742b3c02386f12ff6991935
+source-git-commit: 6d6e74c61b2ecb13e7cc352d5278c40d2677d44d
 workflow-type: tm+mt
-source-wordcount: '2888'
+source-wordcount: '2905'
 ht-degree: 24%
 
 ---
@@ -250,3 +250,8 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
    * 리디렉션 URL을 구성하려면 제출 시 옵션에서 URL로 리디렉션 옵션을 선택하고 절대 주소 또는 AEM Sites 페이지의 리디렉션 URL 또는 상대 경로를 제공합니다.
 
    * 사용자 정의 메시지 또는 감사 메시지를 구성하려면 제출 시 옵션에서 메시지 표시 옵션을 선택하고 메시지 콘텐츠 상자에 메시지를 제공합니다. 서식 있는 텍스트 상자입니다. 전체 화면 옵션을 사용하여 사용 가능한 모든 서식 있는 텍스트 항목을 볼 수 있습니다.
+
+## 참고 항목 {#see-also}
+
+* [적응형 양식 기반의 독립형 핵심 구성 요소 만들기](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [양식의 스타일 또는 테마 만들기](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
