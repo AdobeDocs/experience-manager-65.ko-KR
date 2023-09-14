@@ -1,14 +1,12 @@
 ---
 title: Eclipse용 AEM 개발자 도구
 description: Eclipse용 AEM 개발자 도구
-uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 8336a7257d3c5e75cd37381b0124c227c2d55dca
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 4%
@@ -149,7 +147,7 @@ AEM 배포에 적합한 버전을 추가해야 합니다.
 
 ## 추가 정보 {#more-information}
 
-Eclipse용 공식 Apache Sling IDE 툴링 웹사이트는 유용한 정보를 제공합니다.
+Eclipse용 공식 Apache Sling IDE 툴링 웹사이트는 다음과 같은 유용한 정보를 제공합니다.
 
 * 다음 [**Eclipse용 Apache Sling IDE 도구** 사용 안내서](https://sling.apache.org/documentation/development/ide-tooling.html), 이 설명서는 AEM 개발 도구에서 지원하는 전체 개념, 서버 통합 및 배포 기능을 안내합니다.
 * 다음 [문제 해결 섹션](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).

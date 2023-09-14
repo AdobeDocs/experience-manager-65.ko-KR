@@ -1,19 +1,15 @@
 ---
 title: 커뮤니티 배포
-seo-title: Deploying Communities
 description: AEM Communities 배포 방법
-seo-description: How to deploy AEM Communities
-uuid: 18d9b424-004d-43b2-968a-318e27a93759
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1707'
 ht-degree: 2%
 
 ---
@@ -50,7 +46,7 @@ ht-degree: 2%
 * [터널 서비스 활성화](#tunnel-service-on-author)
 * [소셜 로그인 활성화](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
 * [Adobe Analytics 구성](/help/communities/analytics.md)
-* 설정 a [기본 이메일 서비스](/help/communities/email.md)
+* 설정 [기본 이메일 서비스](/help/communities/email.md)
 * 다음에 대한 선택 사항 식별 [공유 UGC 저장소](/help/communities/working-with-srp.md) (**SRP**)
 
    * MongoDB SRP인 경우 [(MSRP)](/help/communities/msrp.md)
@@ -58,31 +54,31 @@ ht-degree: 2%
       * [MongoDB 설치 및 구성](/help/communities/msrp.md#mongodb-configuration)
       * [Solr 구성](/help/communities/solr.md)
       * [MSRP 선택](/help/communities/srp-config.md)
+
    * 관계형 데이터베이스 SRP인 경우 [(DSRP)](/help/communities/dsrp.md)
 
       * [MySQL용 JDBC 드라이버 설치](#jdbc-driver-for-mysql)
       * [DSRP용 MySQL 설치 및 구성](/help/communities/dsrp-mysql.md)
       * [Solr 구성](/help/communities/solr.md)
       * [DSRP 선택](/help/communities/srp-config.md)
+
    * Adobe SRP인 경우 [(ASRP)](/help/communities/asrp.md)
 
       * 계정 담당자에게 프로비저닝을 요청하십시오.
       * [ASRP 선택](/help/communities/srp-config.md)
+
    * JCR SRP인 경우 [(JSRP)](/help/communities/jsrp.md)
 
-      * 공유 UGC 저장소가 아닙니다.
+      * 공유 UGC(사용자 생성 컨텐츠) 저장소가 아닙니다.
 
          * UGC는 복제되지 않음
-         * UGC가 입력된 AEM 인스턴스 또는 클러스터에서만 표시됩니다.
+         * UGC는 입력된 AEM 인스턴스 또는 클러스터에서만 볼 수 있습니다.
 
          * 기본값은 JSRP입니다.
 
-
-
-
 ## 최신 릴리스 {#latest-releases}
 
-AEM 6.5 Communities GA에는 Communities 패키지가 포함됩니다. AEM 6.5 업데이트에 대해 알아보려면 [커뮤니티](/help/release-notes/release-notes.md#experiencemanagercommunities), 참조 [AEM 6.5 릴리스 노트](/help/release-notes/release-notes.md#communities-release-notes.html).
+AEM 6.5 Communities GA에는 Communities 패키지가 포함됩니다. AEM 6.5 업데이트에 대해 자세히 알아보려면 [커뮤니티](/help/release-notes/release-notes.md#experiencemanagercommunities), 다음을 참조하십시오. [AEM 6.5 릴리스 노트](/help/release-notes/release-notes.md#communities-release-notes.html).
 
 ### AEM 6.5 업데이트 {#aem-updates}
 
@@ -98,7 +94,7 @@ AEM 6.4 이상에서와 같이, AEM Communities 기능 및 핫픽스는 AEM Comm
 
 하나의 커뮤니티 기능은 MySQL 데이터베이스를 사용합니다.
 
-* 대상 [DSRP](/help/communities/dsrp.md): UGC(사용자 생성 컨텐츠) 저장
+* 대상 [DSRP](/help/communities/dsrp.md): UGC 저장
 
 MySQL 커넥터를 별도로 가져와 설치해야 합니다.
 
@@ -140,7 +136,7 @@ SRP 컬렉션(MSRP 또는 DSRP)이 고급 다국어 검색(MLS)을 지원하려�
 
 * AEM-SOLR-MLS-phasetwo
 
-   고급 MLS 패키지를 얻으려면 [AEM 고급 MLS](deploy-communities.md#aem-advanced-mls) 을 참조하십시오.
+  고급 MLS 패키지를 얻으려면 [AEM 고급 MLS](deploy-communities.md#aem-advanced-mls) 을 참조하십시오.
 
    * 버전 1.2.40, 2016년 4월 6일
    * AEM-SOLR-MLS-phasetwo-1.2.40.zip 다운로드
@@ -151,7 +147,7 @@ SRP 컬렉션(MSRP 또는 DSRP)이 고급 다국어 검색(MLS)을 지원하려�
 
 **Adobe AEM Cloud에 표시되는 패키지**
 
-이 페이지의 패키지에 대한 링크는에서 패키지 공유를 위해 실행 중인 AEM 인스턴스가 필요하지 않습니다. `adobeaemcloud.com`. 패키지를 볼 수 있는 동안 `Install` 버튼은 패키지를 Adobe 호스팅 사이트에 설치하기 위한 것입니다. 로컬 AEM 인스턴스에 설치하려면 다음을 선택합니다 `Install` 오류가 발생합니다.
+이 페이지의 패키지에 대한 링크는에 패키지 공유를 위해 실행 중인 AEM 인스턴스가 필요하지 않습니다 `adobeaemcloud.com`. 패키지를 볼 수 있는 동안 `Install` 버튼은 패키지를 Adobe 호스팅 사이트에 설치하기 위한 것입니다. 로컬 AEM 인스턴스에 설치하려면 다음을 선택합니다 `Install` 오류가 발생합니다.
 
 **로컬 AEM 인스턴스에 설치하는 방법**
 
@@ -162,7 +158,7 @@ SRP 컬렉션(MSRP 또는 DSRP)이 고급 다국어 검색(MLS)을 지원하려�
 
 로컬 AEM 인스턴스에서 패키지 관리자를 사용합니다(예: [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/))를 클릭하여 로컬 AEM 패키지 리포지토리에 업로드할 수 있습니다.
 
-또는 로컬 AEM 인스턴스의 패키지 공유를 사용하여 패키지에 액세스합니다(예: [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), `Download` 버튼이 로컬 AEM 인스턴스의 패키지 리포지토리에 다운로드됩니다.
+또는 로컬 AEM 인스턴스에서 패키지 공유를 사용하여 패키지에 액세스합니다(예: [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), `Download` 버튼이 로컬 AEM 인스턴스의 패키지 저장소로 다운로드됩니다.
 
 로컬 AEM 인스턴스의 패키지 저장소에 있는 경우 패키지 관리자를 사용하여 패키지를 설치합니다.
 
@@ -170,11 +166,11 @@ SRP 컬렉션(MSRP 또는 DSRP)이 고급 다국어 검색(MLS)을 지원하려�
 
 ## 권장 배포 {#recommended-deployments}
 
-AEM Communities에서 일반 저장소는 UGC(사용자 생성 컨텐츠)를 저장하는 데 사용되며 종종 다음과 같이 불립니다. [SRP(저장소 리소스 제공자)](/help/communities/working-with-srp.md). 권장 배포는 일반 저장소에 대한 SRP 옵션을 선택하는 데 중점을 둡니다.
+AEM Communities에서 일반 저장소는 UGC를 저장하는 데 사용되며 종종 다음과 같이 지칭됩니다. [SRP(저장소 리소스 제공자)](/help/communities/working-with-srp.md). 권장 배포는 일반 저장소에 대한 SRP 옵션을 선택하는 데 중점을 둡니다.
 
 일반 저장소는 게시 환경에서 UGC의 중재 및 분석을 지원하면서도 의 필요성을 제거합니다 [복제](/help/communities/sync.md) UGC의
 
-* [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) : AEM 커뮤니티에 대한 SRP 스토리지 옵션에 대해 설명합니다.
+* [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) : AEM Communities의 SRP 스토리지 옵션에 대해 설명합니다.
 
 * [권장 토폴로지](/help/communities/topologies.md) : 사용 사례 및 SRP 선택에 따라 사용할 토폴로지에 대해 설명합니다.
 
@@ -188,7 +184,7 @@ AEM Communities에서 일반 저장소는 UGC(사용자 생성 컨텐츠)를 저
 
 ### 기본 게시자 {#primary-publisher}
 
-선택한 배포가 [팜 게시](/help/communities/topologies.md#tarmk-publish-farm)을 설정하는 경우 AEM 게시 인스턴스 하나를 **`primary publisher`** 를 사용하는 기능과 같이 모든 인스턴스에서 발생해서는 안 되는 활동 **알림** 또는 **Adobe Analytics**.
+선택한 배포가 [팜 게시](/help/communities/topologies.md#tarmk-publish-farm)을 설정하는 경우 AEM 게시 인스턴스 하나를 **`primary publisher`** 모든 인스턴스에서 발생해서는 안 되는 활동. 예를 들어 다음을 사용하는 기능 **알림** 또는 **Adobe Analytics**.
 
 기본적으로 `AEM Communities Publisher Configuration` OSGi 구성은 **`Primary Publisher`** 게시 팜의 모든 게시 인스턴스가 기본 인스턴스로 자체 식별되도록 확인란이 선택되었습니다.
 
@@ -210,7 +206,7 @@ AEM Communities에서 일반 저장소는 UGC(사용자 생성 컨텐츠)를 저
 
 ### 작성자의 복제 에이전트 {#replication-agents-on-author}
 
-복제는 커뮤니티 그룹과 같이 게시 환경에서 만들어진 사이트 콘텐츠뿐만 아니라 를 사용하여 작성 환경에서 구성원 및 구성원 그룹을 관리하는 데 사용됩니다. [터널 업무](#tunnel-service-on-author).
+복제는 커뮤니티 그룹과 같이 게시 환경에서 만들어진 사이트 콘텐츠에 사용되며, 를 사용하여 작성 환경에서 구성원 및 구성원 그룹을 관리합니다. [터널 업무](#tunnel-service-on-author).
 
 기본 게시자의 경우 [복제 에이전트 구성](/help/sites-deploying/replication.md) 은(는) 게시 서버 및 인증된 사용자를 올바르게 식별합니다. 기본 승인된 사용자, `admin,` 은(는) 이미 적절한 권한을 가지고 있습니다( 은(는) 의 구성원임). `Communities Administrators`).
 
@@ -222,7 +218,7 @@ AEM Communities에서 일반 저장소는 UGC(사용자 생성 컨텐츠)를 저
 
    * 전역 탐색에서 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자의 에이전트]**
 
-* 두 에이전트에 대해 동일한 절차를 따르십시오.
+* 두 에이전트에 대해 동일한 절차를 수행합니다.
 
    * **기본 에이전트(게시)**
    * **역방향 복제 에이전트(게시 역방향)**
@@ -264,7 +260,7 @@ AEM Communities에서 일반 저장소는 UGC(사용자 생성 컨텐츠)를 저
 * 다음 확인: **활성화** 상자
 * **저장**&#x200B;을 선택합니다
 
-   ![터널 업무](assets/tunnel-service.png)
+  ![터널 업무](assets/tunnel-service.png)
 
 ### 암호화 키 복제 {#replicate-the-crypto-key}
 
@@ -272,37 +268,37 @@ AEM Communities에는 모든 AEM 서버 인스턴스가 동일한 암호화 키�
 
 AEM 6.3 이상에서는 주요 자료가 파일 시스템에 저장되고 더 이상 저장소에 저장되지 않습니다.
 
-작성자의 주요 자료를 다른 모든 인스턴스로 복사하려면 다음 작업을 수행해야 합니다.
+작성자의 주요 자료를 다른 모든 인스턴스로 복사하려면 다음을 수행해야 합니다.
 
 * 복사할 주요 자료가 포함된 AEM 인스턴스(일반적으로 작성자 인스턴스)에 액세스합니다
 
    * 를 찾습니다. `com.adobe.granite.crypto.file` 로컬 파일 시스템의 번들(예: )
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
-      * 다음 `bundle.info` 파일이 번들을 식별함
+      * 다음 `bundle.info` 파일은 번들을 식별합니다
+
    * 데이터 폴더로 이동합니다(예: ).
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
       * hmac 및 기본 노드 파일 복사
 
-
 * 각 대상 AEM 인스턴스에 대해
 
    * 데이터 폴더로 이동합니다(예: ).
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * 이전에 복사한 파일 2개 붙여넣기
-   * 다음 작업을 수행해야 합니다. [granite Crypto 번들 새로 고침](#refresh-the-granite-crypto-bundle) 대상 AEM 인스턴스가 현재 실행 중인 경우
 
+   * 이전에 복사한 두 파일 붙여넣기
+   * 다음 작업을 수행해야 합니다. [granite Crypto 번들 새로 고침](#refresh-the-granite-crypto-bundle) 대상 AEM 인스턴스가 실행 중인 경우
 
 >[!CAUTION]
 >
->암호화 키를 기반으로 하는 다른 보안 기능이 이미 구성된 경우 암호화 키를 복제하면 구성이 손상될 수 있습니다. 도움이 필요하시면, [고객 지원 센터 문의](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html).
+>암호화 키를 기반으로 하는 다른 보안 기능이 이미 구성된 경우 암호화 키를 복제하면 구성이 손상될 수 있습니다. 도움이 필요하시면, [고객 지원 센터 문의](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support).
 
 #### 저장소 복제 {#repository-replication}
 
-AEM 6.2 및 이전 버전의 경우와 마찬가지로 주요 재료를 저장소에 저장하면 각 AEM 인스턴스(초기 저장소 생성)의 첫 번째 시작 시 다음 시스템 속성을 지정하여 보존할 수 있습니다.
+AEM 6.2 및 이전 버전의 경우와 마찬가지로 주요 자료를 저장소에 저장할 수 있습니다. 각 AEM 인스턴스(초기 저장소 생성)의 첫 번째 시작 시 다음 시스템 속성을 지정합니다.
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
@@ -321,7 +317,7 @@ AEM 6.2 및 이전 버전의 경우와 마찬가지로 주요 재료를 저장�
 
 * [Granite Crypto 번들 새로 고침](#refresh-the-granite-crypto-bundle)
 
-   ![replicare-repository](assets/replicare-repository.png)
+  ![replicare-repository](assets/replicare-repository.png)
 
 #### Granite Crypto 번들 새로 고침 {#refresh-the-granite-crypto-bundle}
 
@@ -332,10 +328,10 @@ AEM 6.2 및 이전 버전의 경우와 마찬가지로 주요 재료를 저장�
 * 찾기 `Adobe Granite Crypto Support` 번들 (com.adobe.granite.crypto)
 * 선택 **새로 고침**
 
-   ![granite-crypto](assets/granite-crypto.png)
+  ![granite-crypto](assets/granite-crypto.png)
 
 * 잠시 후 **성공** 대화 상자가 표시됩니다.
-   `Operation completed successfully.`
+  `Operation completed successfully.`
 
 ### Apache HTTP 서버 {#apache-http-server}
 
@@ -364,8 +360,8 @@ Apache HTTP 서버를 사용하는 경우 모든 관련 항목에 올바른 서�
 
 Dispatcher를 사용하는 경우 다음을 참조하십시오.
 
-* AEM [디스패처](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) 설명서
-* [Dispatcher 설치](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
+* AEM [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko) 설명서
+* [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
 * [커뮤니티에 대한 Dispatcher 구성](/help/communities/dispatcher.md)
 * [알려진 문제](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
@@ -373,6 +369,6 @@ Dispatcher를 사용하는 경우 다음을 참조하십시오.
 
 * 방문 [커뮤니티 사이트 관리](/help/communities/administer-landing.md) 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시지 구성에 대해 알아봅니다.
 
-* 방문 [개발 커뮤니티](/help/communities/communities.md) 소셜 구성 요소 프레임워크(SCF)와 커뮤니티 구성 요소 및 기능 사용자 지정에 대해 알아봅니다.
+* 방문 [개발 커뮤니티](/help/communities/communities.md) 소셜 구성 요소 프레임워크(SCF)와 커뮤니티 구성 요소 및 기능 맞춤화에 대해 알아볼 수 있습니다.
 
-* 방문 [커뮤니티 구성 요소 작성](/help/communities/author-communities.md) 커뮤니티 구성 요소를 작성하고 구성하는 방법에 대해 알아봅니다.
+* 방문 [커뮤니티 구성 요소 작성](/help/communities/author-communities.md) 커뮤니티 구성 요소를 사용하여 작성하고 구성하는 방법을 배울 수 있는 곳입니다.
