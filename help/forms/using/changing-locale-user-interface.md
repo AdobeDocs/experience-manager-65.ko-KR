@@ -1,19 +1,15 @@
 ---
 title: AEM Forms 작업 공간 사용자 인터페이스의 로케일 변경
-seo-title: Changing the locale of AEM Forms workspace user interface
 description: 텍스트, 축소된 카테고리, 큐 및 프로세스, 인터페이스의 날짜 선택기를 현지화하기 위해 AEM Forms 작업 영역을 수정하는 방법입니다.
-seo-description: How to modify the AEM Forms workspace to localize text, collapsed categories, queues, and processes, and the date picker on the interface.
-uuid: c89ff150-a36e-45cc-99a6-8768dbe58eab
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 AEM Forms workspace는 영어, 프랑스어, 독일어 및 일본어 언어를 즉시 지원합니다. 또한 AEM Forms 작업 공간 사용자 인터페이스를 다른 언어로 현지화하는 기능도 제공합니다.
 
-AEM Forms 작업 공간 사용자 인터페이스를 원하는 언어로 현지화하려면 다음 작업을 수행하십시오.
+AEM Forms 작업 공간 사용자 인터페이스를 선택한 언어로 현지화하려면 다음 작업을 수행하십시오.
 
 * AEM Forms 작업 영역의 텍스트를 현지화합니다.
 * 축소된 범주, 큐 및 프로세스를 현지화합니다.
@@ -32,15 +28,15 @@ AEM Forms 작업 공간 사용자 인터페이스를 원하는 언어로 현지�
 
 >[!NOTE]
 >
->AEM Forms 작업 영역의 로그인 화면 언어를 변경하려면 다음을 참조하십시오. [새 로그인 화면 만들기](../../forms/using/creating-new-login-screen.md).
+>AEM Forms 작업 영역의 로그인 화면의 언어를 변경하려면 다음을 참조하십시오. [새 로그인 화면 만들기](../../forms/using/creating-new-login-screen.md).
 
 ## 텍스트 현지화 {#localizing-text}
 
-언어에 대한 지원을 추가하려면 다음 단계를 수행하십시오 *신규* 및 브라우저 로케일 코드 *nw*.
+언어에 대한 지원을 추가할 수 있도록 다음 단계를 수행하십시오 *신규* 및 브라우저 로케일 코드 *nw*.
 
 1. CRXDE Lite에 로그인합니다.
 CRXDE Lite의 기본 URL은 `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. 위치로 이동 `apps/ws/locales` 새 폴더 만들기 `nw.`
+1. 위치로 이동 `apps/ws/locales` 및 폴더 만들기 `nw.`
 1. 파일 복사 `translation.json`(위치: 부터) `/apps/ws/locales/en-US` 대상 위치 `/apps/ws/locales/nw` .
 1. 다음으로 이동 `/apps/ws/locales/nw` 및 열기 `translation.json` 편집할 수 있습니다. translation.json 파일을 로케일별로 변경합니다.
 
@@ -52,7 +48,7 @@ CRXDE Lite의 기본 URL은 `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 
 AEM Forms workspace는 이미지를 사용하여 카테고리, 큐 및 프로세스의 헤더를 표시합니다. 이러한 헤더를 현지화하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 [AEM Forms 작업 공간 코드를 빌드하고 있습니다.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-다음 단계에서는 현지화된 새 이미지 파일이 *Categories_nw.png*, *Queue_nw.png*, 및 *Processes_nw.png*. 이미지의 권장 너비는 19px입니다.
+다음 단계에서는 현지화된 새 이미지 파일이 *Categories_nw.png*, *Queue_nw.png*, 및 *Processes_nw.png*. 이미지의 권장 너비는 19픽셀로 설정해야 합니다.
 
 >[!NOTE]
 >
@@ -81,7 +77,7 @@ AEM Forms workspace는 이미지를 사용하여 카테고리, 큐 및 프로세
 
 1. 에 나열된 모든 의미 체계 변경 수행 [작업 영역 사용자 지정](../../forms/using/introduction-customizing-html-workspace.md) 기사.
 1. 다음 위치로 이동 *js/runtime/utility* 폴더를 만들고 *usersession.js* 편집할 파일입니다.
-1. 원래 코드 블록에 나열된 코드를 찾고 조건을 추가합니다. *lang!==nw&#39; 사용* if 문:
+1. 원래 코드 블록에 나열된 코드를 찾아 조건을 추가합니다 *lang!==nw&#39; 사용* if 문:
 
    ```javascript
    // Orignal code

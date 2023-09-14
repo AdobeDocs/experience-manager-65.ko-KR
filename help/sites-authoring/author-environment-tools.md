@@ -1,18 +1,16 @@
 ---
 title: 작성 - AEM의 환경 및 도구
 description: AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다.
-uuid: 23a8aa93-b3d2-423b-b402-9e5f3f273d9a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 80%
+source-wordcount: '2210'
+ht-degree: 52%
 
 ---
 
@@ -38,7 +36,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 >[!NOTE]
 >
->편집하기 위해 페이지를 처음 열면 일련의 슬라이드를 통해 기능을 둘러볼 수 있습니다.
+>편집할 페이지를 처음 열면 일련의 슬라이드를 통해 기능을 둘러볼 수 있습니다.
 >
 >원할 경우 둘러보기를 건너뛰고 언제든지 **페이지 정보** 메뉴에서 선택하여 반복할 수도 있습니다.
 
@@ -46,8 +44,8 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 페이지를 편집할 때 다음 위치에서 **도움말**&#x200B;에 액세스할 수 있습니다.
 
-* 다음 [**페이지 정보**](/help/sites-authoring/editing-page-properties.md#page-properties) 선택기: 처음 편집기에 액세스할 때 표시되는 것과 같이 소개 슬라이드가 표시됩니다.
-* 다음 [구성](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 특정 구성 요소에 대한 대화 상자(대화 상자 도구 모음의 ? 아이콘 사용). 상황에 맞는 도움말이 표시됩니다.
+* 다음 [**페이지 정보**](/help/sites-authoring/editing-page-properties.md#page-properties) 선택기: 처음 편집기에 액세스할 때 표시되는 소개 슬라이드가 표시됩니다.
+* 다음 [구성](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 특정 구성 요소에 대한 대화 상자(물음표 사용) 대화 상자의 도구 모음에 있는 아이콘). 상황에 맞는 도움말이 표시됩니다.
 
 추가 [도움말 관련 리소스는 콘솔에서 사용할 수 있습니다](/help/sites-authoring/basic-handling.md#accessing-help).
 
@@ -59,9 +57,9 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ![ateat-03](assets/ateat-03.png)
 
-사이드 패널을 열 때는(왼쪽에서) 밀어서 열게 됩니다. 필요한 경우 **구성 요소** 탭을 선택하고 연 후에는 페이지에 대해 사용 가능한 모든 구성 요소를 찾아볼 수 있습니다.
+사이드 패널을 열 때는 왼쪽에서 밀어서 열게 됩니다( **구성 요소** 필요한 경우 탭입니다.) 열려 있는 경우 페이지에 사용할 수 있는 모든 구성 요소를 찾아볼 수 있습니다.
 
-실제 모양 및 처리는 사용하는 디바이스 유형에 따라 달라집니다.
+실제 모양 및 처리는 사용하는 장치 유형에 따라 달라집니다.
 
 >[!NOTE]
 >
@@ -71,7 +69,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
   구성 요소 브라우저는 편집되는 페이지를 완전히 포함합니다.
 
-  구성 요소를 페이지에 추가하려면 필요한 구성 요소를 길게 누르고 오른쪽으로 이동합니다. 구성 요소 브라우저가 닫히고 페이지가 다시 표시되어 구성 요소를 배치할 수 있습니다.
+  페이지에 구성 요소를 추가하려면 필요한 구성 요소를 길게 누른 상태에서 오른쪽으로 이동합니다. 구성 요소 브라우저가 닫히고 페이지가 다시 표시됩니다. 이 위치에서 구성 요소를 배치할 수 있습니다.
 
   ![ateat-04](assets/ateat-04.png)
 
@@ -79,7 +77,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
   창의 왼쪽에 구성 요소 브라우저가 열립니다.
 
-  구성 요소를 페이지에 추가하려면 필요한 구성 요소를 클릭하고 필요한 위치로 끕니다.
+  페이지에 구성 요소를 추가하려면 필요한 구성 요소를 클릭하고 원하는 위치로 끕니다.
 
   ![ateat-05](assets/ateat-05.png)
 
@@ -92,7 +90,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
       * 표준 구성 요소의 아이콘은 단색입니다.
       * 약어는 항상 구성 요소 이름의 첫 번째 두 문자입니다.
 
-  **구성 요소** 브라우저의 맨 위 도구 모음에서 다음 작업을 수행할 수 있습니다.
+  의 맨 위 도구 모음에서 **구성 요소** 브라우저에서 다음 작업을 수행할 수 있습니다.
 
    * 구성 요소를 이름별로 필터링합니다.
    * 드롭다운 선택을 사용하여 표시를 특정 그룹으로 제한합니다.
@@ -101,21 +99,21 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
   ![ateat-06](assets/ateat-06.png)
 
-  사용 가능한 구성 요소에 대한 자세한 내용은 [구성 요소 콘솔](/help/sites-authoring/default-components-console.md)을 참조하십시오.
+  사용 가능한 구성 요소에 대한 자세한 내용은 [구성 요소 콘솔](/help/sites-authoring/default-components-console.md).
 
 ## 자산 브라우저 {#assets-browser}
 
 자산 브라우저에는 현재 페이지에서 직접 사용할 수 있는 모든 [자산](/help/assets/home.md)이 표시됩니다.
 
-에셋 브라우저는 사이드 패널 내의 탭이며 [구성 요소 찾아보기](/help/sites-authoring/author-environment-tools.md#components-browser)r 및 [콘텐츠 트리](/help/sites-authoring/author-environment-tools.md#content-tree). 사이드 패널을 열려면(또는 닫으려면) 도구 모음의 왼쪽 상단에 있는 아이콘을 사용합니다.
+에셋 브라우저는 사이드 패널 내의 탭이며 [구성 요소 찾아보기](/help/sites-authoring/author-environment-tools.md#components-browser)r 및 [콘텐츠 트리](/help/sites-authoring/author-environment-tools.md#content-tree). 사이드 패널을 열거나 닫으려면 도구 모음의 왼쪽 상단에 있는 아이콘을 사용합니다.
 
 ![ateat-03-1](assets/ateat-03-1.png)
 
-사이드 패널을 열 때는 왼쪽에서 밀어서 열게 됩니다. 필요한 경우 **자산** 탭을 선택합니다.
+사이드 패널을 열 때는 왼쪽에서 밀어서 열게 됩니다. 다음 항목 선택 **에셋** 필요한 경우 탭입니다.
 
 ![ateat-07](assets/ateat-07.png)
 
-자산 브라우저가 열려 있으면 페이지에 사용 가능한 모든 자산을 검색할 수 있습니다. 필요하면 목록을 확장하는 데 스크롤을 무제한으로 사용합니다.
+에셋 브라우저가 열려 있으면 페이지에 사용할 수 있는 모든 에셋을 검색할 수 있습니다. 필요하면 목록을 확장하는 데 스크롤을 무제한으로 사용합니다.
 
 ![ateat-08](assets/ateat-08.png)
 
@@ -125,7 +123,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
    * 예를 들어 유형 이미지의 자산을 이미지 구성 요소로 끌 수 있습니다.
 
-* 해당 유형의 새 구성 요소를 만들기 위한 단락 시스템의 [플레이스홀더](/help/sites-authoring/editing-content.md#component-placeholder)
+* A [자리 표시자](/help/sites-authoring/editing-content.md#component-placeholder) 단락 시스템에서 적절한 유형의 구성 요소를 만듭니다.
 
    * 예를 들어 유형 이미지의 자산을 단락 시스템으로 드래그하여 이미지 구성 요소를 만들 수 있습니다.
 
@@ -137,12 +135,12 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 * 이름
 * 경로
-* 이미지, 원고, 문서, 비디오, 페이지, 단락 및 제품과 같은 자산 유형
+* 이미지, 원고, 문서, 비디오, 페이지, 단락 및 제품 등 에셋 유형
 * 방향(세로, 가로, 사각형) 및 스타일(색상, 단색, 회색 음영)과 같은 에셋 특성
 
    * 특정 자산 유형에만 사용할 수 있음
 
-실제 모양 및 처리는 사용하는 디바이스 유형에 따라 달라집니다.
+실제 모양 및 처리는 사용하는 장치 유형에 따라 달라집니다.
 
 >[!NOTE]
 >
@@ -152,7 +150,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
   자산 브라우저는 편집되는 페이지를 완전히 포함합니다.
 
-  자산을 페이지에 추가하려면 필요한 자산을 길게 누르고 오른쪽으로 이동합니다. 자산 브라우저가 닫히고 페이지가 다시 표시되어 필요한 구성 요소에 자산을 추가할 수 있습니다.
+  에셋을 페이지에 추가하려면 필요한 에셋을 길게 터치하고 오른쪽으로 이동합니다. 에셋 브라우저가 닫히고 페이지가 다시 표시되어 필요한 구성 요소에 에셋을 추가할 수 있습니다.
 
   ![ateat-09](assets/ateat-09.png)
 
@@ -160,31 +158,31 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
   창의 왼쪽에 자산 브라우저가 열립니다.
 
-  자산을 페이지에 추가하려면 필요한 자산을 클릭하고 필요한 구성 요소 또는 위치로 드래그합니다.
+  에셋을 페이지에 추가하려면 에셋을 클릭하고 필요한 구성 요소 또는 위치로 드래그합니다.
 
   ![ateat-10](assets/ateat-10.png)
 
-자산을 빠르게 변경해야 하는 경우, 자산의 이름 옆에 있는 편집 아이콘을 클릭하여 [자산 편집기](/help/assets/manage-assets.md)를 자산 브라우저에서 직접 시작할 수 있습니다.
+자산을 빠르게 변경해야 하는 경우 [자산 편집기](/help/assets/manage-assets.md) 에셋의 이름 옆에 있는 편집 아이콘을 클릭하여 에셋 브라우저에서 직접 액세스합니다.
 
 ![에셋 브라우저 데스크탑 장치](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## 콘텐츠 트리 {#content-tree}
 
-**콘텐츠 트리**&#x200B;는 계층 구조의 페이지에 있는 모든 구성 요소에 대한 개요를 제공하여 페이지 작성 방법을 한눈에 볼 수 있습니다.
+다음 **컨텐츠 트리** 은 계층 구조의 페이지에 있는 모든 구성 요소에 대한 개요를 제공하여 페이지 작성 방법을 한눈에 볼 수 있도록 합니다.
 
-콘텐츠 트리는 구성 요소 및 자산 브라우저와 함께 있는 측면 패널 내의 탭입니다. 사이드 패널을 열려면(또는 닫으려면) 도구 모음의 왼쪽 상단에 있는 아이콘을 사용합니다.
+콘텐츠 트리는 구성 요소 및 자산 브라우저와 함께 있는 측면 패널 내의 탭입니다. 사이드 패널을 열거나 닫으려면 도구 모음의 왼쪽 상단에 있는 아이콘을 사용합니다.
 
 ![콘텐츠 트리](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-사이드 패널을 열 때는(왼쪽에서) 밀어서 열게 됩니다. 필요한 경우 **콘텐츠 트리** 탭을 선택하십시오. 열리면 페이지나 템플릿의 트리 보기 표시를 확인하여 콘텐츠가 계층 구조로 구성되는 방식을 쉽게 이해할 수 있습니다. 또한 복잡한 페이지에서는 페이지의 구성 요소 간에 쉽게 이동할 수 있습니다.
+사이드 패널을 열 때는(왼쪽에서) 밀어서 열게 됩니다. 필요한 경우 **콘텐츠 트리** 탭을 선택하십시오. 열리면 페이지나 템플릿의 트리 보기 표시를 확인하여 콘텐츠가 계층 구조로 구성되는 방식을 쉽게 이해할 수 있습니다. 또한 복잡한 페이지에서 페이지의 구성 요소 간을 더 쉽게 이동할 수 있습니다.
 
 ![ateat-11](assets/ateat-11.png)
 
 페이지는 동일한 유형의 여러 구성 요소로 쉽게 구성할 수 있으므로 콘텐츠(구성 요소) 트리에는 구성 요소 유형의 이름(검은색) 뒤에 설명 텍스트(회색)가 표시됩니다. 설명 텍스트는 제목 또는 텍스트와 같은 구성 요소의 공통된 속성에서 가져옵니다.
 
-구성 요소 유형은 사용자 언어로 표시되지만 구성 요소 설명 텍스트는 페이지 언어에서 가져옵니다.
+구성 요소 유형은 사용자 언어로 표시되는 반면 구성 요소 설명 텍스트는 페이지 언어로 제공됩니다.
 
-구성 요소 옆에 있는 V자형 화살표를 클릭하면 해당 수준을 축소하거나 확장합니다.
+구성 요소 옆에 있는 V자형 화살표를 클릭하면 해당 수준이 축소되거나 확장됩니다.
 
 ![screen_shot_2018-03-22at142559](assets/screen_shot_2018-03-22at142559.png)
 
@@ -192,7 +190,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 >
 >모바일 디바이스(브라우저 폭이 1024px 미만인 경우)에서 페이지를 편집하는 경우, 콘텐츠 트리를 사용할 수 없습니다.
 
-[구성 요소]를 클릭하면 페이지 편집기에서 구성 요소가 강조 표시됩니다. 사용 가능한 작업은 페이지 상태에 따라 다릅니다.
+구성 요소를 클릭하면 페이지 편집기에서 구성 요소가 강조 표시됩니다. 사용 가능한 작업은 페이지 상태에 따라 다릅니다.
 
 * 예: 기본 페이지:
 
@@ -200,7 +198,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
   ![ateat-12](assets/ateat-12.png)
 
-  트리에서 클릭한 구성 요소가 편집 가능한 경우 이름의 오른쪽에 공구 모양 아이콘이 표시됩니다. 이 아이콘을 클릭하면 구성 요소의 편집 대화 상자가 바로 시작됩니다.
+  트리에서 클릭하는 구성 요소를 편집할 수 있는 경우 이름 오른쪽에 렌치 아이콘이 나타납니다. 이 아이콘을 클릭하면 구성 요소의 편집 대화 상자가 열립니다.
 
   ![렌치 아이콘 - 편집](do-not-localize/screen_shot_2018-03-22at142725.png)
 
@@ -212,11 +210,11 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ## 조각 - 관련 콘텐츠 브라우저 {#fragments-associated-content-browser}
 
-페이지에 콘텐츠 조각이 포함되어 있으면 [관련 콘텐츠 브라우저](/help/sites-authoring/content-fragments.md#using-associated-content)에 액세스할 수도 있습니다.
+페이지에 콘텐츠 조각이 포함되어 있으면 [관련 컨텐츠 브라우저](/help/sites-authoring/content-fragments.md#using-associated-content).
 
 ## 참조 {#references}
 
-**참조**&#x200B;에는 선택한 페이지에 대한 연결 내용이 표시됩니다.
+**참조** 선택한 페이지에 대한 연결 표시:
 
 * 블루프린트
 * 론치
@@ -230,21 +228,21 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ![screen_shot_2018-03-22at153653](assets/screen_shot_2018-03-22at153653.png)
 
-필수 리소스와 관련이 있는 참조 유형 목록을 표시하려면 [관련 리소스를 선택](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)합니다.
+[필요한 리소스 선택](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) 해당 리소스와 관련된 참조 유형 목록을 표시합니다.
 
 ![ateat-](assets/ateat-22.png)
 
-자세한 내용을 보려면 적절한 참조 유형을 선택합니다. 특정 상황에서 다음을 비롯한 특정 참조를 선택하면 추가 작업을 사용할 수 있습니다.
+자세한 내용을 보려면 적절한 참조 유형을 선택합니다. 특정 참조를 선택하면 다음과 같은 추가 작업을 사용할 수 있습니다.
 
-* **수신 링크**: 페이지를 참조하는 페이지 목록과 함께, 특정 링크를 선택할 때 그러한 페이지 중 하나를 **편집**&#x200B;하기 위해 직접 액세스할 수 있는 권한 제공
+* **수신 링크** 에 대한 직접 액세스와 함께 페이지를 참조하는 페이지 목록을 제공합니다. **편집** 특정 링크를 선택할 때 그러한 페이지 중 하나
 
 * **참조** 구성 요소를 사용하여 빌린 콘텐츠와 빌려준 콘텐츠의 인스턴스: 여기서 참조하는/참조한 페이지로 이동할 수 있음
 
 * [제품 페이지에 대한 참조](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (Commerce-Products 콘솔에서 사용 가능)
-* [론치](/help/sites-authoring/launches.md): 관련 론치에 대한 액세스 권한 제공
+* [론치](/help/sites-authoring/launches.md) 관련 론치에 대한 액세스를 제공합니다.
 * [Live Copy](/help/sites-administering/msm.md): 선택한 리소스를 기반으로 하는 모든 Live Copy의 경로 표시
-* [블루프린트](/help/sites-administering/msm-best-practices.md): 세부 정보 및 여러 작업 제공
-* [언어 사본](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel): 세부 정보 및 여러 작업 제공
+* [](/help/sites-administering/msm-best-practices.md)블루프린트: 세부 사항 및 여러 작업 제공.
+* [](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel)언어 사본: 세부 사항 및 여러 작업 제공.
 
 예를 들어 참조 구성 요소 내에서 끊어진 참조를 수정할 수 있습니다.
 
@@ -283,7 +281,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 예를 들어, 해당되는 경우 **페이지 정보** 에는 다음 옵션도 있습니다.
 
 * [출시 홍보](/help/sites-authoring/launches-promoting.md) 페이지가 론치인 경우
-* [클래식 UI에서 열기](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) 이 옵션이 다음과 같은 경우 [관리자가 활성화함](/help/sites-administering/enable-classic-ui-editor.md)
+* [클래식 UI에서 열기](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) 이 옵션이 [관리자가 활성화함](/help/sites-administering/enable-classic-ui-editor.md)
 
 또한 **페이지 정보**&#x200B;는 해당하는 경우 분석 및 권장 사항에 대한 액세스 권한을 제공할 수 있습니다.
 
@@ -291,10 +289,10 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 여러 작업을 허용하는 페이지를 편집할 때는 다음과 같은 다양한 모드가 있습니다.
 
-* [편집](/help/sites-authoring/editing-content.md) - 페이지 콘텐츠를 편집할 때 사용할 모드
-* [레이아웃](/help/sites-authoring/responsive-layout.md) - 디바이스에 따라 응답형 레이아웃을 만들고 편집할 수 있습니다(페이지가 레이아웃 컨테이너를 기반으로 하는 경우).
+* [편집](/help/sites-authoring/editing-content.md) - 페이지 콘텐츠를 편집할 때 이 모드를 사용하십시오.
+* [레이아웃](/help/sites-authoring/responsive-layout.md) - 디바이스에 따라 응답형 레이아웃을 만들고 편집할 수 있도록 허용(페이지가 레이아웃 컨테이너를 기반으로 하는 경우)
 
-* [스캐폴딩](/help/sites-authoring/scaffolding.md) - 구조가 동일하지만 내용이 다른 대규모 페이지 세트를 만들 수 있습니다.
+* [스캐폴딩](/help/sites-authoring/scaffolding.md) - 구조를 공유하지만 내용이 다른 대규모 페이지 세트를 만들 수 있습니다.
 * [개발자](/help/sites-developing/developer-mode.md) - 다양한 작업을 수행할 수 있습니다(권한 필요). 페이지 및 해당 구성 요소의 기술 세부 사항 검사가 포함됩니다.
 
 * [디자인](/help/sites-authoring/default-components-designmode.md) - 페이지에서 사용할 구성 요소를 활성화/비활성화하고 구성 요소의 디자인을 구성할 수 있습니다(페이지가 [정적 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)).
@@ -304,20 +302,20 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 * [타임워프](/help/sites-authoring/working-with-page-versions.md#timewarp) - 특정 시점에 페이지 상태를 볼 수 있습니다.
 * [Live Copy 상태](/help/sites-authoring/editing-content.md#live-copy-status) - Live Copy 상태와 상속되었거나 상속되지 않은 구성 요소에 대한 간단한 개요를 알 수 있습니다.
-* [미리 보기](/help/sites-authoring/editing-content.md#previewing-pages) - 페이지가 게시 환경에 표시될 상태로 해당 페이지를 보거나 컨텐츠의 링크를 사용하여 탐색하는 데 사용됩니다.
+* [미리보기](/help/sites-authoring/editing-content.md#previewing-pages) - 페이지가 게시 환경에 표시되는 상태로 해당 페이지를 보거나 콘텐츠의 링크를 사용하여 탐색하는 데 사용됩니다.
 
 * [주석](/help/sites-authoring/annotations.md) - 페이지에서 주석을 추가하거나 보는 데 사용됩니다.
 
-오른쪽 상단의 아이콘을 사용하여 다음 화면에 액세스할 수 있습니다. 실제 아이콘은 현재 사용 중인 모드를 반영하도록 변경됩니다.
+오른쪽 상단의 아이콘을 사용하여 이러한 기능에 액세스할 수 있습니다. 실제 아이콘은 현재 사용 중인 모드를 반영하도록 변경됩니다.
 
 ![ateat-18](assets/ateat-18.png)
 
 >[!NOTE]
 >
->* 페이지의 특성에 따라 사용 가능한 일부 모드를 사용할 수 없습니다.
->* 일부 모드에 액세스하려면 적절한 권한이 필요합니다.
+>* 페이지의 특성에 따라 일부 모드를 사용할 수 없습니다.
+>* 일부 모드에 액세스하려면 적절한 권한/권한이 필요합니다.
 >* 공간 제약으로 인해 [개발자 모드]는 모바일 디바이스에서 사용할 수 없습니다.
->* [키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)(`Ctrl-Shift-M`)를 사용하여 **미리보기**&#x200B;와 현재 선택한 모드(예: **편집**, **레이아웃** 등) 간에 전환합니다.
+>* 다음 항목이 있습니다. [키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) 간 전환 **미리 보기** 및 현재 선택한 모드(예: **편집**, 및 **레이아웃**).
 >
 
 ## 경로 선택 {#path-selection}
@@ -326,15 +324,15 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ### 경로 필드 {#path-fields}
 
-여기에 사용되는 예제는 이미지 구성 요소입니다. 구성 요소 사용 및 편집에 대한 자세한 내용은 [페이지 작성 구성 요소](/help/sites-authoring/default-components.md)를 참조하십시오.
+여기에 사용되는 예제는 이미지 구성 요소입니다. 구성 요소 사용 및 편집에 대한 자세한 내용은 [페이지 작성을 위한 구성 요소](/help/sites-authoring/default-components.md).
 
-이제 경로 필드에 자동 완성 및 예측 기능이 있어 리소스를 더 쉽게 찾을 수 있습니다.
+경로 필드에는 자동 완성 및 예측 기능이 있어 리소스를 쉽게 찾을 수 있습니다.
 
 경로 필드에서 **선택 대화 상자 열기** 버튼을 클릭하면 [경로 브라우저](/help/sites-authoring/author-environment-tools.md#path-browser) 대화 상자가 열려 좀 더 상세한 선택 옵션을 사용할 수 있습니다.
 
 ![선택 대화 상자 열기](do-not-localize/screen_shot_2018-03-22at154427.png)
 
-또는 경로 필드에 입력을 시작하면 AEM에서 사용자가 입력하는 것과 일치하는 경로를 제공합니다.
+또는 경로 필드에 입력을 시작하면 AEM에서 일치하는 경로를 제공합니다.
 
 ![ateat-19](assets/ateat-19.png)
 
@@ -345,7 +343,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
 * 리소스를 선택하면 대화 상자의 오른쪽 상단에 **선택** 버튼이 활성화됩니다. 클릭하거나 탭하여 옵션을 확인하거나 **취소**&#x200B;를 선택하여 중단할 수 있습니다.
-* 컨텍스트에서 여러 리소스를 선택할 수 있는 경우, 리소스를 선택하면 **선택** 버튼이 활성화되지만, 선택한 리소스 수도 창의 오른쪽 상단에 추가됩니다. 번호 옆에 있는 **X**&#x200B;를 클릭하여 모두 선택 취소합니다.
+* 컨텍스트에서 여러 리소스를 선택할 수 있는 경우, 리소스를 선택하면 **선택** 버튼이 활성화되지만, 선택한 리소스 수도 창의 오른쪽 상단에 추가됩니다. Click **X** next to the number to deselect all.
 * 트리를 탐색할 때 위치는 대화 상자 상단의 이동 경로에 반영됩니다. 이러한 이동 경로를 사용하여 리소스 계층 구조 내에서 빠르게 이동할 수도 있습니다.
 * 언제든지 대화 상자 상단의 검색 필드를 사용할 수 있습니다. 검색을 지우려면 검색 필드에서 **X**&#x200B;를 클릭합니다.
 * 검색 범위를 좁히려면 필터 옵션을 표시하고 특정 경로에 따라 결과를 필터링할 수 있습니다.

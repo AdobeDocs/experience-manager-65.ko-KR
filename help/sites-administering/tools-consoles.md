@@ -1,26 +1,22 @@
 ---
 title: 도구 콘솔
-seo-title: Tools Consoles
 description: AEM 전체에서 다양한 도구 콘솔에 대해 알아봅니다.
-seo-description: Learn about the different tools consoles throughout AEM.
-uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 33%
+source-wordcount: '594'
+ht-degree: 30%
 
 ---
 
 # 도구 콘솔{#tools-consoles}
 
-**도구** 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구에 액세스할 수 있습니다. 현재 다음 두 가지 맛이 있습니다 **도구** 사용 중인 UI에 종속되는 콘솔:
+다음 **도구** 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 몇 가지 전문 도구에 액세스할 수 있습니다. 현재 다음 두 가지 맛이 있습니다 **도구** 사용 중인 UI에 종속되는 콘솔:
 
 * [도구 - 터치에 적합한 UI](#tools-touch-optimized-ui)
 * [도구 - 클래식 UI](#tools-classic-ui)
@@ -47,7 +43,7 @@ ht-degree: 33%
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE LITE</td>
+   <td>CRXDE Lite</td>
   </tr>
   <tr>
    <td> </td>
@@ -374,11 +370,11 @@ ht-degree: 33%
   </tr>
   <tr>
    <td>Client Context 구성<br /> </td>
-   <td>Client Context는 동적으로 조립된 사용자 데이터의 컬렉션을 나타냅니다. 기본 및 marketing cloud 구성은 여기에 있습니다.<br /> </td>
+   <td>Client Context는 동적으로 조립된 사용자 데이터의 컬렉션을 나타냅니다. 기본 및 Experience Cloud 구성은 여기에 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>클라우드 서비스 구성<br /> </td>
-   <td>Adobe Marketing Cloud과의 통합과 관련된 구성을 보유하고 있습니다.</td>
+   <td>Adobe Experience Cloud과의 통합과 관련된 구성을 보유하고 있습니다.</td>
   </tr>
   <tr>
    <td>클라우드 설정<br /> </td>
@@ -390,11 +386,11 @@ ht-degree: 33%
   </tr>
   <tr>
    <td>DAM </td>
-   <td>다양한 옵션에 대한 액세스를 제공합니다.</td>
+   <td>다양한 옵션에 액세스</td>
   </tr>
   <tr>
    <td>대시보드</td>
-   <td>보고 대시보드를 만들 수 있습니다. 이렇게 하면 통합 데이터를 표시하는 페이지를 사용자 지정할 수 있습니다.</td>
+   <td>보고 대시보드를 만듭니다. 이렇게 하면 통합 데이터를 표시하는 페이지를 사용자 지정할 수 있습니다.</td>
   </tr>
   <tr>
    <td>사용자 정의 설명서</td>
@@ -406,11 +402,11 @@ ht-degree: 33%
   </tr>
   <tr>
    <td>양식 제출</td>
-   <td>받은 양식 제출 목록을 보관합니다.</td>
+   <td>받은 양식 제출 목록.</td>
   </tr>
   <tr>
    <td>가져오기 </td>
-   <td>다양한 옵션에 대한 액세스를 제공합니다.</td>
+   <td>다양한 옵션에 액세스</td>
   </tr>
   <tr>
    <td>외부 링크 확인</td>
@@ -426,19 +422,19 @@ ht-degree: 33%
   </tr>
   <tr>
    <td>복제 - 복제 에이전트</td>
-   <td>페이지를 게시할 때 작성자에서 게시로 데이터를 복제하거나 역방향 복제와 함께 게시 환경의 사용자 주석을 작성자로 반환하는 데 사용됩니다.</td>
+   <td>페이지를 게시할 때 작성자 인스턴스의 데이터를 게시로 복제하거나 역방향 복제와 함께 게시 환경의 사용자 주석을 작성자에게 반환하는 데 사용됩니다.</td>
   </tr>
   <tr>
    <td>보고서</td>
-   <td>AEM은 다양한 맞춤형 보고서를 제공하며 맞춤형 보고서를 생성하거나 직접 개발할 수 있도록 해 줍니다.</td>
+   <td>AEM은 다양한 사용자 지정 보고서를 제공하며 사용자 지정 보고서를 만들거나 직접 개발할 수 있도록 해줍니다.</td>
   </tr>
   <tr>
    <td>기본 페이지 스캐폴딩</td>
-   <td>스캐폴딩으로 페이지에 대해 원하는 구조를 반영하는 필드가 있는 양식(스캐폴드)을 만든 다음 이 양식을 사용하여 이 구조를 기반으로 페이지를 쉽게 만들 수 있습니다.</td>
+   <td>스캐폴딩을 사용하면 페이지에 대해 원하는 구조를 반영하는 필드가 있는 양식(스캐폴드)을 만든 다음 이 양식을 사용하여 이 구조를 기반으로 페이지를 쉽게 만들 수 있습니다.</td>
   </tr>
   <tr>
    <td>보안 - 셀프서비스 구성 </td>
-   <td>사용자가 계정을 만들거나 암호를 재설정할 때 자동으로 받고, 재설정된 암호를 확인하는 이메일을 구성할 수 있습니다.</td>
+   <td>사용자가 계정을 만들거나 암호를 재설정할 때 자동으로 받는 이메일을 구성하고 재설정된 암호를 확인합니다.</td>
   </tr>
   <tr>
    <td>세분화</td>
@@ -454,7 +450,7 @@ ht-degree: 33%
   </tr>
   <tr>
    <td>버전 관리 - 버전 삭제</td>
-   <td>필요에 따라 페이지 버전을 제거할 수 있습니다.</td>
+   <td>필요에 따라 페이지 버전을 제거합니다.</td>
   </tr>
   <tr>
    <td>워크플로</td>

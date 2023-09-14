@@ -1,20 +1,16 @@
 ---
 title: 사용자 동기화
-seo-title: User Synchronization
 description: AEM의 사용자 동기화에 대해 알아봅니다.
-seo-description: Learn about user synchronization in AEM.
-uuid: 0a519daf-21b7-4adc-b419-eeb8c404c54f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2498'
 ht-degree: 3%
 
 ---
@@ -24,23 +20,23 @@ ht-degree: 3%
 
 ## 소개 {#introduction}
 
-배포가 인 경우 [팜 게시](/help/sites-deploying/recommended-deploys.md#tarmk-farm), 구성원은 모든 게시 노드에 로그인하고 데이터를 볼 수 있어야 합니다.
+배포가 인 경우 [팜 게시](/help/sites-deploying/recommended-deploys.md#tarmk-farm), 구성원은 모든 게시 노드에 로그인하고 해당 데이터를 볼 수 있어야 합니다.
 
 게시 환경에서 만든 사용자 및 사용자 그룹(사용자 데이터)은 작성 환경에서 필요하지 않습니다.
 
-작성 환경에서 작성된 대부분의 사용자 데이터는 작성 환경에 남아 게시 인스턴스로 복사되지 않도록 설계되었습니다.
+작성 환경에서 작성된 대부분의 사용자 데이터는 작성 환경에 유지되며 게시 인스턴스로 복사되지 않기 위한 것입니다.
 
-동일한 사용자 데이터에 액세스하려면 한 게시 인스턴스에 대해 수행한 등록 및 수정 사항을 다른 게시 인스턴스와 동기화해야 합니다.
+하나의 게시 인스턴스에 대해 등록 및 수정 작업을 수행하려면 다른 게시 인스턴스와 동기화하여 동일한 사용자 데이터에 액세스할 수 있어야 합니다.
 
 AEM 6.1부터는 사용자 동기화가 활성화되면 사용자 데이터가 팜의 게시 인스턴스 간에 자동으로 동기화되며 작성자에서 생성되지 않습니다.
 
 ## Sling 배포 {#sling-distribution}
 
-사용자 데이터 및 해당 [ACL](/help/sites-administering/security.md)에 저장됩니다. [Oak 코어](/help/sites-deploying/platform.md), Oak JCR 아래의 레이어 및 은 [Oak API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). 자주 업데이트하지 않으면 를 사용하여 사용자 데이터를 다른 게시 인스턴스와 동기화하는 것이 좋습니다. [Sling 콘텐츠 배포](https://github.com/apache/sling/blob/trunk/contrib/extensions/distribution/README.md) (Sling 배포).
+사용자 데이터 및 해당 [ACL](/help/sites-administering/security.md)에 저장됩니다. [Oak 코어](/help/sites-deploying/platform.md), Oak JCR 아래의 레이어 및 은 [Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). 자주 업데이트하지 않으면 를 사용하여 사용자 데이터를 다른 게시 인스턴스와 동기화하는 것이 좋습니다. [Sling 콘텐츠 배포](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (Sling 배포).
 
 Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화의 이점은 다음과 같습니다.
 
-* *사용자*, *사용자 프로필* 및 *사용자 그룹* 게시에서 만들어짐 은 작성자에서 만들어지지 않습니다.
+* *사용자*, *사용자 프로필*, 및 *사용자 그룹* 게시할 때 만들어짐 은 작성자에 만들어지지 않습니다
 
 * Sling 배포는 jcr 이벤트에 속성을 설정하므로 무한 복제 루프에 대한 걱정 없이 게시측 이벤트 리스너 내에서 작업할 수 있습니다
 * Sling 배포는 사용자 데이터만 비원본 게시 인스턴스로 보내어 불필요한 트래픽을 제거합니다
@@ -66,7 +62,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 >
 >사용자 동기화를 활성화한 결과 새 구성을 추가하지 않아야 합니다.
 
-사용자 데이터는 작성자에 작성되지 않더라도 사용자 동기화는 작성자 환경에 의존하여 사용자 데이터 배포를 관리합니다. 모두는 아니지만 대부분의 구성은 작성 환경에서 수행되며 각 단계에서는 작성자 또는 게시에서 수행되는지 여부를 명확하게 식별합니다.
+사용자 데이터는 작성자에 작성되지 않더라도 사용자 동기화는 작성자 환경에 의존하여 사용자 데이터 배포를 관리합니다. 전부는 아니지만 대부분의 구성이 작성 환경에서 수행되며 각 단계에서는 작성자 또는 게시에서 수행되는지 여부를 명확하게 식별합니다.
 
 다음은 사용자 동기화를 활성화하는 데 필요한 단계입니다. [문제 해결](#troubleshooting) 섹션:
 
@@ -76,9 +72,9 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 사용자 동기화가 활성화되면 새로 생성된 사용자와 그룹만 동기화됩니다.
 
-1. 최신 코드가 설치되었는지 확인합니다.
+1. 최신 코드가 설치되어 있는지 확인합니다.
 
-* [AEM 플랫폼 업데이트](https://helpx.adobe.com/kr/experience-manager/kb/aem62-available-hotfixes.html)
+* [AEM 플랫폼 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)
 * [AEM Communities 업데이트](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리 {#apache-sling-distribution-agent-sync-agents-factory}
@@ -94,7 +90,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
    * 찾기 `Apache Sling Distribution Agent - Sync Agents Factory`
 
-      * 편집을 위해 열 기존 구성 선택(연필 아이콘) 확인 `name`: **`socialpubsync`**
+      * 편집을 위해 열 수 있도록 기존 구성을 선택합니다(연필 아이콘). 확인 `name`: **`socialpubsync`**
 
       * 선택 `Enabled` 확인란
       * 선택 `Save`
@@ -104,7 +100,8 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 ### 2. 인증된 사용자 만들기 {#createauthuser}
 
 **권한 구성**
-이 승인된 사용자는 3단계에서 작성자에 대한 Sling 배포를 구성하는 데 사용됩니다.
+
+승인된 사용자는 3단계에서 작성자에 대한 Sling 배포를 구성하는 데 사용됩니다.
 
 * **각 게시 인스턴스에서**
 
@@ -113,9 +110,9 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
       * 예를 들어, [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
 
-   * 새 사용자 만들기
+   * 사용자 만들기
 
-      * 예, `usersync-admin`
+      * 예를 들어, `usersync-admin`
 
    * 에 이 사용자 추가 **`administrators`** 사용자 그룹
    * [/home에 이 사용자에 대한 ACL 추가](#howtoaddacl)
@@ -138,7 +135,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 * 선택 `/home` 노드
 * 오른쪽 창에서 `Access Control` 탭
-* 선택 `+` ACL 항목을 추가하는 버튼
+* acl 항목을 추가하려면 `+` 단추
 
    * **사용자**: *사용자 동기화를 위해 생성된 사용자 검색*
    * **유형**: `Allow`
@@ -159,7 +156,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 **권한 구성**
 
-인증된 사용자인 **`administrators`** 사용자 그룹 이(가) 모든 게시 인스턴스에서 생성되었으며, 승인된 사용자는 작성자에서 사용자 데이터를 작성자에서 게시로 동기화할 권한이 있는 것으로 식별되어야 합니다.
+권한이 있는 사용자가 **`administrators`** 사용자 그룹-은 모든 게시 인스턴스에서 생성되며, 승인된 사용자는 작성자에서 사용자 데이터를 작성자에서 게시로 동기화할 권한이 있는 것으로 식별되어야 합니다.
 
 * **작성자**
 
@@ -169,11 +166,11 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
       * 예를 들어, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
    * 찾기 `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
-   * 편집을 위해 열 기존 구성 선택(연필 아이콘) 확인 `property name`: **`socialpubsync-publishUser`**
+   * 편집을 위해 열려면 기존 구성(연필 아이콘)을 선택합니다. `property name`: **`socialpubsync-publishUser`**
 
    * 사용자 이름 및 암호 설정 [승인된 사용자](#createauthuser) 2단계에서 게시 시 생성됨
 
-      * 예, `usersync-admin`
+      * 예를 들어, `usersync-admin`
 
 ![암호화된 전송 비밀 공급자](assets/chlimage_1-22.png)
 
@@ -190,7 +187,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
    * 찾기 `Apache Sling Distribution Agent - Queue Agents Factory`
 
-      * 편집을 위해 열 기존 구성 선택(연필 아이콘) 확인 `Name`: `socialpubsync-reverse`
+      * 편집을 위해 열려면 기존 구성(연필 아이콘)을 선택합니다. `Name`: `socialpubsync-reverse`
 
       * 선택 `Enabled` 확인란
       * 선택 `Save`
@@ -212,7 +209,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
    * 찾기 **`Adobe Social Sync - Diff Observer Factory`**
 
-      * 편집을 위해 열 기존 구성 선택(연필 아이콘)
+      * 편집을 위해 열려면 기존 구성(연필 아이콘)을 선택합니다
 
         확인 `agent name`: `socialpubsync-reverse`
 
@@ -236,7 +233,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
    * 찾기 `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
-      * 편집을 위해 열 기존 구성 선택(연필 아이콘)
+      * 편집을 위해 열려면 기존 구성(연필 아이콘)을 선택합니다
 
          * 확인 `Name`: `socialpubsync-scheduled-trigger`
 
@@ -262,18 +259,18 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
    * 찾기 `Apache Sling Distribution Agent - Sync Agents Factory`
 
-      * 편집을 위해 열 기존 구성 선택(연필 아이콘) 확인 `Name`: `socialpubsync`
+      * 편집을 위해 열려면 기존 구성(연필 아이콘)을 선택합니다. `Name`: `socialpubsync`
 
 ![동기화 에이전트 팩토리](assets/chlimage_1-25.png)
 
 * **내보내기 종단점**
-각 게시 인스턴스에 대한 내보내기 종단점이 있어야 합니다. 예를 들어 2개의 게시 인스턴스인 localhost:4503 및 4504가 있는 경우 2개의 항목이 있어야 합니다.
+각 게시 인스턴스에 대한 내보내기 종단점이 있어야 합니다. 예를 들어 2개의 게시 인스턴스 localhost:4503 및 4504가 있는 경우 두 개의 항목이 있어야 합니다.
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **가져오기 종단점**
-각 게시 인스턴스에 대한 가져오기 끝점이 있어야 합니다. 예를 들어 2개의 게시 인스턴스인 localhost:4503 및 4504가 있는 경우 2개의 항목이 있어야 합니다.
+각 게시 인스턴스에 대한 가져오기 끝점이 있어야 합니다. 예를 들어 2개의 게시 인스턴스 localhost:4503 및 4504가 있는 경우 두 개의 항목이 있어야 합니다.
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -284,22 +281,22 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 **(선택 사항) 추가 JCR 노드 동기화**
 
-여러 게시 인스턴스 간에 동기화하려는 사용자 정의 데이터가 있는 경우 다음을 수행합니다.
+여러 게시 인스턴스 간에 동기화할 사용자 지정 데이터가 있는 경우 다음을 수행합니다.
 
 * **각 게시 인스턴스에서**:
 
    * 관리자 권한으로 로그인
    * 액세스 [웹 콘솔](/help/sites-deploying/configuring-osgi.md)
 
-      * 예, `https://localhost:4503/system/console/configMgr`
+      * 예를 들어, `https://localhost:4503/system/console/configMgr`
 
    * 찾기 `AEM Communities User Sync Listener`
-   * 편집을 위해 열 기존 구성 선택(연필 아이콘) 확인 `Name`: `socialpubsync-scheduled-trigger`
+   * 편집을 위해 열려면 기존 구성(연필 아이콘)을 선택합니다. `Name`: `socialpubsync-scheduled-trigger`
 
 ![AEM Communities 사용자 동기화 수신기](assets/chlimage_1-26.png)
 
 * **노드 유형**
-동기화할 노드 유형 목록입니다. sling:Folder 이외의 모든 노드 유형은 여기에 나열되어야 합니다(sling:folder는 별도로 처리됨).
+동기화된 노드 유형 목록입니다. sling:Folder 이외의 모든 노드 유형은 여기에 나열되어야 합니다(sling:folder는 별도로 처리됨).
 동기화할 노드 유형의 기본 목록:
 
    * rep:User
@@ -307,13 +304,13 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * nt:resource
 
 * **무시할 수 있는 속성**
-변경 사항이 감지되면 무시됩니다. 이러한 속성에 대한 변경 사항은 다른 변경 사항의 부작용으로 동기화될 수 있지만(동기화는 항상 노드 수준에 있으므로) 이러한 속성에 대한 변경 사항 자체로는 동기화를 트리거하지 않습니다.
+변경 사항이 감지되면 무시되는 속성 목록입니다. 이러한 속성에 대한 변경 사항은 다른 변경 사항의 부작용으로 동기화될 수 있지만(동기화는 항상 노드 수준에 있으므로) 이러한 속성에 대한 변경 사항 자체로는 동기화를 트리거하지 않습니다.
 무시할 기본 속성:
 
    * cq:lastModified
 
 * **무시 가능한 노드**
-동기화 중에 완전히 무시되는 하위 경로입니다. 이 하위 경로의 아무 것도 동기화되지 않습니다.
+동기화 중에 무시되는 하위 경로입니다. 이러한 하위 경로의 아무 것도 동기화되지 않습니다.
 무시할 기본 노드:
 
    * .tokens
@@ -349,7 +346,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
    * 다음 파일을 검색하고 삭제합니다. *sling.id.file*
 
-      * 예를 들어 Linux 시스템의 경우:
+      * 예를 들어 Linux® 시스템의 경우:
         `rm -i $(find . -type f -name sling.id.file)`
 
       * 예를 들어 Windows 시스템의 경우:
@@ -406,7 +403,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 기본적으로 게시 환경에서 생성된 사용자 데이터는 작성 환경에 표시되지 않으며 그 반대로 표시됩니다.
 
-다음의 경우 [사용자 관리 및 보안](/help/sites-administering/security.md) 콘솔은 게시 환경에 새 사용자를 추가하는 데 사용되며, 필요한 경우 사용자 동기화는 새 사용자와 해당 그룹 구성원을 다른 게시 인스턴스와 동기화합니다. 사용자 동기화는 보안 콘솔을 통해 만든 사용자 그룹도 동기화합니다.
+다음의 경우 [사용자 관리 및 보안](/help/sites-administering/security.md) 콘솔을 사용하여 게시 환경에 새 사용자를 추가하고, 필요한 경우 사용자 동기화를 통해 새 사용자와 해당 그룹 구성원을 다른 게시 인스턴스로 동기화합니다. 또한 사용자 동기화는 보안 콘솔을 통해 만든 사용자 그룹을 동기화합니다.
 
 ## 문제 해결 {#troubleshooting}
 
@@ -459,7 +456,7 @@ User Sync Diagnostics 콘솔로 들어오면 결과가 표시됩니다.
 
 작성자 환경에서 진단을 실행하면 합격/실패 결과에 [정보] 확인을 위해 구성된 게시 인스턴스 목록을 표시하는 섹션입니다.
 
-이 목록에는 해당 인스턴스에 대한 진단을 실행할 각 게시 인스턴스의 URL이 포함되어 있습니다. url 매개 변수 `syncUser` 는 값이 로 설정된 진단 URL에 추가됩니다. *승인된 동기화 사용자* 생성 위치 [2단계](#createauthuser).
+해당 인스턴스에 대한 진단을 실행하는 각 게시 인스턴스의 URL은 목록에 포함됩니다. url 매개 변수 `syncUser` 는 값이 로 설정된 진단 URL에 추가됩니다. *승인된 동기화 사용자* 생성 위치 [2단계](#createauthuser).
 
 **참고**: URL을 시작하기 전에 *승인된 동기화 사용자* 은(는) 이미 해당 게시 인스턴스에 로그인되어 있어야 합니다.
 
@@ -551,9 +548,9 @@ Sling ID가 둘 이상의 게시 인스턴스 간에 일치하는 경우 사용�
 
 ### 게시 인스턴스를 사용할 수 없게 되는 경우 {#when-a-publish-instance-becomes-unavailable}
 
-게시 인스턴스를 사용할 수 없게 되면 나중에 다시 온라인으로 돌아올 경우 제거하지 말아야 합니다. 변경 사항이 게시 인스턴스에 대해 큐에 추가되며 온라인 상태가 되면 변경 사항이 처리됩니다.
+게시 인스턴스를 사용할 수 없게 되면 나중에 다시 온라인으로 돌아올 경우 제거하지 말아야 합니다. 변경 사항은 게시 인스턴스에 대해 큐에 올라가며 다시 온라인 상태가 되면 변경 사항이 처리됩니다.
 
-게시 인스턴스가 다시 온라인으로 돌아오지 않는 경우, 영구적으로 오프라인인 경우, 대기열 축적이 작성자 환경에서 눈에 띄는 디스크 공간 사용을 초래하므로 이 인스턴스를 제거해야 합니다.
+게시 인스턴스가 다시 온라인으로 돌아오지 않는 경우, 영구적으로 오프라인인 경우, 작성자 환경에서 대기열 축적이 눈에 띄는 디스크 공간 사용을 초래하므로 해당 인스턴스를 제거해야 합니다.
 
 게시 인스턴스가 작동 중지되면 작성자 로그에는 다음과 유사한 예외가 발생합니다.
 

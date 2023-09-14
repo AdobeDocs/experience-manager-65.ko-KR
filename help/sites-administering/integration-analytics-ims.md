@@ -2,10 +2,10 @@
 title: IMS를 사용하여 Adobe Analytics과 통합
 description: IMS를 사용하여 AEM과 Adobe Analytics 통합에 대해 알아보기
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 66%
+source-wordcount: '1068'
+ht-degree: 55%
 
 ---
 
@@ -28,17 +28,17 @@ Analytics Standard API를 통해 Adobe Analytics과 AEM을 통합하려면 Adobe
 
 이 절차를 시작하기 전에:
 
-* [Adobe 지원 팀](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)은 다음에 대한 계정을 프로비저닝해야 합니다.
+* [Adobe 지원 팀](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)은 다음에 대한 계정을 프로비저닝해야 합니다.
 
    * Adobe Console
    * Adobe Developer Console
    * Adobe Analytics 및
    * Adobe IMS(ID 관리 시스템)
 
-* 조직의 시스템 관리자는 Admin Console을 사용하여 필요한 조직 개발자를 관련 제품 프로필에 추가해야 합니다.
+* 귀사의 시스템 관리자는 Admin Console을 사용하여 필요한 개발자를 관련 제품 프로필에 추가해야 합니다.
 
    * 이렇게 하면 특정 개발자에게 Adobe Developer 콘솔 내에서 통합을 활성화할 수 있는 권한이 제공됩니다.
-   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
+   * 다음을 참조하십시오 [개발자 관리](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
 
 ## IMS 구성 - 공개 키 생성 {#configuring-an-ims-configuration-generating-a-public-key}
@@ -46,7 +46,7 @@ Analytics Standard API를 통해 Adobe Analytics과 AEM을 통합하려면 Adobe
 구성의 첫 단계는 AEM에서 IMS 구성을 만들고 공개 키를 생성하는 것입니다.
 
 1. AEM에서 **도구** 메뉴를 엽니다.
-1. **보안** 섹션에서 **Adobe IMS 구성**&#x200B;을 선택합니다.
+1. 다음에서 **보안** 섹션, 선택 **Adobe IMS 구성**.
 1. **만들기**&#x200B;를 선택하여 **Adobe IMS 기술 계정 구성**&#x200B;을 엽니다.
 1. **클라우드 구성** 아래의 드롭다운을 사용하여 **Adobe Analytics**&#x200B;를 선택합니다.
 1. **새 인증서 만들기**&#x200B;를 활성화한 다음 새 별칭을 입력합니다.
@@ -58,21 +58,21 @@ Analytics Standard API를 통해 Adobe Analytics과 AEM을 통합하려면 Adobe
 
    >[!CAUTION]
    >
-   >[AEM에서 IMS 구성을 완료](#completing-the-ims-configuration-in-aem)할 때 다시 필요하므로 이 구성을 열어 두십시오.
+   >이 구성을 열어 두십시오. 다음 경우에 다시 필요합니다. [AEM에서 IMS 구성 완료](#completing-the-ims-configuration-in-aem).
 
    ![Adobe I/O 키를 추가하는 정보 대화 상자](assets/integrate-analytics-io-02.png)
 
 ## AEM과의 Adobe Analytics 통합에 대해 IMS 구성 {#configuring-ims-for-adobe-analytics-integration-with-aem}
 
-Adobe Developer Console을 사용하여 AEM이 사용할 Adobe Analytics로 프로젝트(통합)을 만든 다음 필요한 권한을 할당해야 합니다.
+Adobe Developer 콘솔을 사용하여 AEM에서 사용할 Adobe Analytics으로 프로젝트(통합)를 만든 다음 필요한 권한을 할당합니다.
 
 ### 프로젝트 만들기 {#creating-the-project}
 
-Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하여 프로젝트를 만듭니다.
+AEM에서 사용할 수 있는 Adobe Analytics을 사용하여 프로젝트를 만들려면 Adobe Developer 콘솔을 엽니다.
 
 >[!CAUTION]
 >
->현재로서는 Adobe Developer Console의 **서비스 계정(JWT)** 자격 증명 유형만 지원됩니다.
+>현재 Adobe은 Adobe Developer 콘솔만 지원합니다. **서비스 계정(JWT)** 자격 증명 유형.
 >
 >**OAuth 서버 간** 자격 증명 유형은 향후 지원될 예정이니 사용하지 마십시오.
 
@@ -80,11 +80,11 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하�
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. 보유 중인 모든 프로젝트가 표시됩니다. **새 프로젝트 만들기**&#x200B;를 선택합니다. 위치 및 사용량은 다음에 따라 달라집니다.
+1. 보유 중인 모든 프로젝트가 표시됩니다. 선택 **새 프로젝트 만들기** - 위치 및 사용량은 다음에 따라 다릅니다.
 
-   * 보유 중인 프로젝트가 없는 경우 **새 프로젝트 만들기**는 중앙 하단에 표시됩니다.
+   * 보유 중인 프로젝트가 없는 경우, **새 프로젝트 만들기**는 중앙 하단에 표시됩니다.
      ![새 프로젝트 만들기 - 첫 번째 프로젝트](assets/integration-analytics-io-02.png)
-   * 기존 프로젝트가 있는 경우 이들 프로젝트가 나열되며 **새 프로젝트 만들기**는 오른쪽 상단에 표시됩니다.
+   * 기존 프로젝트가 있는 경우 이들 프로젝트가 나열되고 **새 프로젝트 만들기** 오른쪽 상단에 있습니다.
      ![새 프로젝트 만들기 - 여러 프로젝트](assets/integration-analytics-io-03.png)
 
 
@@ -96,11 +96,11 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하�
 
    >[!NOTE]
    >
-   >Adobe Analytics을 구독하지만 나열되지 않는 경우 [전제 조건](#prerequisites).
+   >Adobe Analytics를 구독하지만 나열되지 않는 경우 [사전 요구 사항](#prerequisites)을 확인해야 합니다.
 
    ![API 추가](assets/integration-analytics-io-12.png)
 
-1. 인증 유형으로 **서비스 계정(JWT)**&#x200B;을 선택하고 **다음**&#x200B;을 사용하여 계속합니다.
+1. 선택 **서비스 계정(JWT)** 인증 유형으로 을(를) 계속합니다. **다음**:
 
    ![인증 유형 선택](assets/integration-analytics-io-12a.png)
 
@@ -120,7 +120,7 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하�
 
 ### 통합에 권한 할당 {#assigning-privileges-to-the-integration}
 
-이제 필요한 권한을 통합에 할당해야 합니다.
+이제 필요한 권한을 통합에 할당합니다.
 
 1. Adobe **Admin Console**&#x200B;을 엽니다.
 
@@ -152,7 +152,7 @@ Adobe Developer 프로젝트 콘솔에서 모든 통합 프로젝트 목록을 �
 
 ## AEM에서 IMS 구성 완료 {#completing-the-ims-configuration-in-aem}
 
-AEM으로 돌아가 Analytics용 통합 프로젝트에서 필요한 값을 추가하여 IMS 구성을 완료할 수 있습니다.
+AEM으로 돌아가면 Analytics에 대한 통합 프로젝트에서 필요한 값을 추가하여 IMS 구성을 완료할 수 있습니다.
 
 1. [AEM에서 열려 있는 IMS 구성](#configuring-an-ims-configuration-generating-a-public-key)으로 돌아갑니다.
 1. **다음**&#x200B;을 선택합니다.
@@ -215,12 +215,12 @@ AEM으로 돌아가 Analytics용 통합 프로젝트에서 필요한 값을 추�
 
    * **IMS 구성**: IMS 구성의 이름을 선택합니다
 
-1. 클릭 **Analytics에 연결** Adobe Analytics에 대한 연결을 초기화합니다.
+1. Adobe Analytics 연결을 초기화하려면 **Analytics에 연결**.
 
    정상적으로 연결되면 **연결 성공**&#x200B;이라는 메시지가 표시됩니다.
 
 1. 선택 **확인** 메시지를 표시합니다.
 
-1. 필요에 따라 다른 매개 변수를 완료하고 다음을 수행합니다. **확인** 대화 상자에서 구성을 확인합니다.
+1. 필요에 따라 다른 매개 변수를 완료하고 다음을 수행합니다. **확인** 대화 상자에서 구성을 확인할 수 있습니다.
 
-1. 이제 다음으로 진행할 수 있습니다. [Analytics 프레임워크 추가](/help/sites-administering/adobeanalytics-connect.md) Adobe Analytics으로 전송할 매개 변수를 구성합니다.
+1. 이제 다음으로 진행할 수 있습니다. [Analytics 프레임워크 추가](/help/sites-administering/adobeanalytics-connect.md) Adobe Analytics으로 전송되는 매개 변수를 구성합니다.

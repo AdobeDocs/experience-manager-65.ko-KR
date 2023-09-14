@@ -1,11 +1,11 @@
 ---
 title: IMS를 사용하여 Adobe Target과 통합
-description: IMS를 사용하여 AEM과 Adobe Target 통합에 대해 알아보기
+description: IMS를 사용하여 AEM과 Adobe Target 통합에 대해 알아봅니다.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 55%
+source-wordcount: '1557'
+ht-degree: 43%
 
 ---
 
@@ -27,17 +27,17 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe Devel
 
 이 절차를 시작하기 전에:
 
-* [Adobe 지원 팀](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)은 다음에 대한 계정을 프로비저닝해야 합니다.
+* [Adobe 지원 팀](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)은 다음에 대한 계정을 프로비저닝해야 합니다.
 
    * Adobe Console
    * Adobe Developer Console
    * Adobe Target 및
    * Adobe IMS(ID 관리 시스템)
 
-* 조직의 시스템 관리자는 Admin Console을 사용하여 필요한 조직 개발자를 관련 제품 프로필에 추가해야 합니다.
+* 귀사의 시스템 관리자는 Admin Console을 사용하여 필요한 개발자를 관련 제품 프로필에 추가해야 합니다.
 
    * 이렇게 하면 특정 개발자에게 Adobe Developer 콘솔 내에서 통합을 활성화할 수 있는 권한이 제공됩니다.
-   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
+   * 다음을 참조하십시오 [개발자 관리](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
 
 ## IMS 구성 - 공개 키 생성 {#configuring-an-ims-configuration-generating-a-public-key}
@@ -45,7 +45,7 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe Devel
 구성의 첫 단계는 AEM에서 IMS 구성을 만들고 공개 키를 생성하는 것입니다.
 
 1. AEM에서 **도구** 메뉴를 엽니다.
-1. **보안** 섹션에서 **Adobe IMS 구성**&#x200B;을 선택합니다.
+1. 다음에서 **보안** 섹션, 선택 **Adobe IMS 구성**.
 1. **만들기**&#x200B;를 선택하여 **Adobe IMS 기술 계정 구성**&#x200B;을 엽니다.
 1. **클라우드 구성** 아래의 드롭다운을 사용하여 **Adobe Target**&#x200B;을 선택합니다.
 1. **새 인증서 만들기**&#x200B;를 활성화한 다음 새 별칭을 입력합니다.
@@ -57,21 +57,21 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe Devel
 
    >[!CAUTION]
    >
-   >[AEM에서 IMS 구성을 완료](#completing-the-ims-configuration-in-aem)할 때 다시 필요하므로 이 구성을 열어 두십시오.
+   >이 구성을 열어 두십시오. 다음 경우에 다시 필요합니다. [AEM에서 IMS 구성 완료](#completing-the-ims-configuration-in-aem).
 
    ![Adobe I/O에 인증서를 추가하는 정보 메시지](assets/integrate-target-io-02.png)
 
 ## AEM과의 Adobe Target 통합에 대해 IMS 구성 {#configuring-ims-for-adobe-target-integration-with-aem}
 
-Adobe Developer 콘솔을 사용하여 AEM에서 사용할 Adobe Target으로 프로젝트(통합)를 만든 다음 필요한 권한을 할당해야 합니다.
+Adobe Developer 콘솔을 사용하여 AEM에서 사용할 수 있는 Adobe Target으로 프로젝트(통합)를 만든 다음 필요한 권한을 할당합니다.
 
 ### 프로젝트 만들기 {#creating-the-project}
 
-Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 프로젝트를 만듭니다.
+AEM에서 사용할 수 있는 Adobe Target을 사용하여 프로젝트를 만들려면 Adobe Developer 콘솔을 엽니다.
 
 >[!CAUTION]
 >
->현재로서는 Adobe Developer Console의 **서비스 계정(JWT)** 자격 증명 유형만 지원됩니다.
+>현재 Adobe은 Adobe Developer 콘솔만 지원합니다. **서비스 계정(JWT)** 자격 증명 유형.
 >
 >**OAuth 서버 간** 자격 증명 유형은 향후 지원될 예정이니 사용하지 마십시오.
 
@@ -79,11 +79,11 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. 보유 중인 모든 프로젝트가 표시됩니다. **새 프로젝트 만들기**&#x200B;를 선택합니다. 위치 및 사용량은 다음에 따라 달라집니다.
+1. 보유 중인 모든 프로젝트가 표시됩니다. 선택 **새 프로젝트 만들기** - 위치 및 사용량은 다음에 따라 다릅니다.
 
-   * 보유 중인 프로젝트가 없는 경우 **새 프로젝트 만들기**는 중앙 하단에 표시됩니다.
+   * 보유 중인 프로젝트가 없는 경우, **새 프로젝트 만들기**는 중앙 하단에 표시됩니다.
      ![새 프로젝트 만들기 - 첫 번째 프로젝트](assets/integration-target-io-02.png)
-   * 기존 프로젝트가 있는 경우 이들 프로젝트가 나열되며 **새 프로젝트 만들기**는 오른쪽 상단에 표시됩니다.
+   * 기존 프로젝트가 있는 경우 이들 프로젝트가 나열되고 **새 프로젝트 만들기** 오른쪽 위에 있습니다
      ![새 프로젝트 만들기 - 여러 프로젝트](assets/integration-target-io-03.png)
 
 
@@ -95,7 +95,7 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 
 
    >[!NOTE]
    >
-   >Adobe Target을 구독하지만 나열되지 않는 경우 [전제 조건](#prerequisites).
+   >Adobe Target을 구독하지만 나열되지 않는 경우 [사전 요구 사항](#prerequisites)을 확인해야 합니다.
 
    ![다음 클릭](assets/integration-target-io-12.png)
 
@@ -121,14 +121,14 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 
 1. 생성이 확인됩니다.
 
 <!--
-1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
+1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
    ![integrate-target-io-07](assets/integrate-target-io-07.png)
 -->
 
 ### 통합에 권한 할당 {#assigning-privileges-to-the-integration}
 
-이제 필요한 권한을 통합에 할당해야 합니다.
+이제 필요한 권한을 통합에 할당합니다.
 
 1. Adobe **Admin Console**&#x200B;을 엽니다.
 
@@ -145,7 +145,7 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-구성에 대한 세부 정보를 표시하려면 **보기**&#x200B;를 선택합니다(특정 프로젝트 항목 오른쪽). 여기에는 다음이 포함됩니다.
+구성에 대한 세부 정보를 표시하려면 을 선택합니다. **보기** (특정 프로젝트 항목 오른쪽). 여기에는 다음이 포함됩니다.
 
 * 프로젝트 개요
 * 인사이트
@@ -156,11 +156,11 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 
 * API
    * (예: Adobe Target)
 
-이 중 일부는 AEM에서 IMS를 기반으로 Adobe Target 통합을 완료해야 합니다.
+이 중 일부는 IMS를 기반으로 AEM에서 Adobe Target 통합을 완료해야 합니다.
 
 ## AEM에서 IMS 구성 완료 {#completing-the-ims-configuration-in-aem}
 
-AEM으로 돌아가 Target용 Adobe Developer 콘솔 통합에서 필요한 값을 추가하여 IMS 구성을 완료할 수 있습니다.
+AEM으로 돌아가면 Target용 Adobe Developer 콘솔 통합에서 필요한 값을 추가하여 IMS 구성을 완료할 수 있습니다.
 
 1. [AEM에서 열려 있는 IMS 구성](#configuring-an-ims-configuration-generating-a-public-key)으로 돌아갑니다.
 1. **다음**&#x200B;을 선택합니다.
@@ -241,15 +241,15 @@ AEM으로 돌아가 Target용 Adobe Developer 콘솔 통합에서 필요한 값�
 
    * **API 유형**: REST
 
-   * **A4T Analytics 클라우드 구성**: 타겟 활동 목표 및 지표에 사용되는 Analytics 클라우드 구성을 선택합니다. 이는 콘텐츠를 타겟팅할 때 보고 소스로서의 Adobe Analytics를 사용하는 경우 필요합니다. 클라우드 구성이 표시되지 않으면 의 참고 사항을 참조하십시오. [A4T Analytics Cloud 구성](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+   * **A4T Analytics Cloud 구성**: 타겟 활동 목표 및 지표에 사용되는 Analytics Cloud 구성을 선택합니다. 이는 콘텐츠를 타겟팅할 때 보고 소스로서의 Adobe Analytics를 사용하는 경우 필요합니다. 클라우드 구성이 표시되지 않으면 의 참고 사항을 참조하십시오. [A4T Analytics Cloud 구성](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
 
-   * **정확한 타겟팅 사용**: 기본적으로 이 확인란은 선택되어 있습니다. 이 확인란을 선택하면 클라우드 서비스 구성은 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기합니다. 다음 사항에 주의하십시오.
+   * **정확한 타겟팅 사용**: 기본적으로 이 확인란은 선택되어 있습니다. 이 옵션을 선택하면 클라우드 서비스 구성은 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기합니다. 다음 사항에 주의하십시오.
 
-   * **Adobe Target의 세그먼트 동기화**: Target에 정의된 세그먼트를 다운로드하여 AEM에서 사용하려면 이 옵션을 선택하십시오. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않아 항상 Target의 세그먼트를 사용해야 하므로 이 옵션을 선택해야 합니다. (AEM 용어인 “세그먼트”는 Target에서의 “대상자”와 동일합니다.)
+   * **Adobe Target의 세그먼트 동기화**: Target에 정의된 세그먼트를 다운로드하여 AEM에서 사용할 수 있도록 하려면 이 옵션을 선택하십시오. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않으므로 이 옵션을 선택합니다. 항상 Target의 세그먼트를 사용해야 합니다. (AEM 용어인 &#39;segment&#39;는 Target &#39;audience&#39;와 동일합니다.)
 
    * **클라이언트 라이브러리**: AT.js 클라이언트 라이브러리를 원하는지 mbox.js(더 이상 사용되지 않음)를 원하는지 선택합니다.
 
-   * **Tag Management 시스템을 사용하여 클라이언트 라이브러리 전달**: DTM(더 이상 사용되지 않음), Tag Launch 또는 기타 Adobe 관리 시스템을 사용합니다.
+   * **Tag Management 시스템을 사용하여 클라이언트 라이브러리 전달**: DTM(더 이상 사용되지 않음), Adobe 실행 또는 기타 태그 관리 시스템을 사용합니다.
 
    * **사용자 정의 AT.js**: Tag Management 상자를 선택하거나 기본 AT.js를 사용하려면 비워 둡니다. 또는 사용자 지정 AT.js를 업로드합니다. AT.js를 선택한 경우에만 나타납니다.
 
@@ -261,24 +261,24 @@ AEM으로 돌아가 Target용 Adobe Developer 콘솔 통합에서 필요한 값�
 
    정상적으로 연결되면 **연결 성공**&#x200B;이라는 메시지가 표시됩니다.
 
-1. 선택 **확인** 메시지, 다음 메시지 **확인** 대화 상자에서 구성을 확인합니다.
+1. 선택 **확인** 메시지, 다음 메시지 **확인** 대화 상자에서 구성을 확인할 수 있습니다.
 
-1. 이제 다음으로 진행할 수 있습니다. [Target 프레임워크 추가](/help/sites-administering/target-configuring.md#adding-a-target-framework) Target으로 전송될 ContextHub 또는 ClientContext 매개 변수를 구성합니다. AEM Experience Fragments를 Target으로 내보내는 경우에는 이 작업이 필요하지 않을 수 있습니다.
+1. 이제 다음으로 진행할 수 있습니다. [Target 프레임워크 추가](/help/sites-administering/target-configuring.md#adding-a-target-framework) Target으로 전송되는 ContextHub 또는 ClientContext 매개 변수를 구성합니다. AEM Experience Fragments를 Target으로 내보내는 경우에는 이 작업이 필요하지 않을 수 있습니다.
 
 ### 테넌트 ID 및 클라이언트 코드 {#tenant-client}
 
 포함 [Adobe Experience Manager 6.5.8.0](/help/release-notes/release-notes.md)Target 구성 창에 클라이언트 코드 필드가 추가되었습니다.
 
-테넌트 ID 및 클라이언트 코드 필드를 구성할 때는 다음 사항에 유의하십시오.
+테넌트 ID 및 클라이언트 코드 필드를 구성할 때에는 다음 사항에 유의하십시오.
 
 1. 대부분의 고객은 테넌트 ID와 클라이언트 코드가 같습니다. 즉, 두 필드에는 동일한 정보가 포함되어 있으며 이 두 필드는 동일합니다. 두 필드 모두에 테넌트 ID를 입력하십시오.
 2. 또한 레거시 목적으로 테넌트 ID와 클라이언트 코드 필드에 서로 다른 값을 입력할 수도 있습니다.
 
-두 경우 모두 다음 사항에 주의하십시오.
+두 경우 모두 다음 사항에 유의하십시오.
 
 * 기본적으로 클라이언트 코드(먼저 추가된 경우)도 테넌트 ID 필드에 자동으로 복사됩니다.
-* 기본 테넌트 ID 설정을 변경할 수 있는 옵션이 있습니다.
-* 이렇게 하면 Target에 대한 백엔드 호출은 테넌트 ID를 기반으로 하고 Target에 대한 클라이언트측 호출은 클라이언트 코드를 기반으로 하게 됩니다.
+* 선택적으로 기본 테넌트 ID 세트를 변경할 수 있습니다.
+* 따라서 Target에 대한 백엔드 호출은 테넌트 ID를 기반으로 하고 Target에 대한 클라이언트측 호출은 클라이언트 코드를 기반으로 합니다.
 
 앞에서 설명한 대로 AEM 6.5에서는 첫 번째 경우가 가장 일반적입니다. 어느 쪽이든, **모두** 필드에는 요구 사항에 따라 올바른 정보가 포함됩니다.
 

@@ -1,19 +1,15 @@
 ---
 title: 프록시 서버 도구(proxy.jar)
-seo-title: Proxy Server Tool (proxy.jar)
 description: AEM의 프록시 서버 도구에 대해 알아봅니다.
-seo-description: Learn about the Proxy Server Tool in AEM.
-uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -47,7 +43,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 ### 옵션 {#options}
 
 * **q(자동 모드)** 콘솔 창에 요청을 쓰지 않습니다. 연결 속도를 늦추지 않으려는 경우 또는 출력을 파일에 기록하는 경우 사용합니다(-logfile 옵션 참조).
-* **b(바이너리 모드)** 트래픽에서 특정 바이트 조합을 찾고 있는 경우 이진 모드를 활성화합니다. 그러면 출력에는 16진수 및 문자 출력이 포함됩니다.
+* **b(바이너리 모드)** 트래픽에서 특정 바이트 조합을 찾고 있는 경우 이진 모드를 활성화합니다. 출력에는 16진수 및 문자 출력이 포함됩니다.
 * **t(타임스탬프 로그 항목)** 각 로그 출력에 타임스탬프를 추가합니다. 타임스탬프는 초 단위이므로 단일 요청을 확인하는 데 적합하지 않을 수 있습니다. 프록시 서버를 장기간 사용하는 경우 특정 시간에 발생한 이벤트를 찾을 때 사용합니다.
 * **logfile &lt;filename> (로그 파일에 쓰기)** 클라이언트-서버 대화를 로그 파일에 기록합니다. 이 매개 변수는 자동 모드에서도 작동합니다.
 * **i &lt;numindentions> (들여쓰기 추가)** 각 활성 연결은 가독성을 높이기 위해 들여쓰기됩니다. 기본값은 16 레벨입니다. proxy.jar 버전 1.16의 새로운 기능
@@ -58,7 +54,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 **쿠키 및 쿠키 값 확인**
 
-다음 로그 항목 예제는 프록시가 시작된 후 6번째 연결에서 클라이언트가 보낸 모든 쿠키와 해당 값을 보여 줍니다.
+다음 로그 항목 예제는 프록시 시작 이후 열린 여섯 번째 연결에서 클라이언트가 보낸 모든 쿠키와 값을 보여 줍니다.
 
 ```xml
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
@@ -86,7 +82,7 @@ keep-alive가 작동하는지 확인하려면:
 
 **손실 요청 찾기**
 
-방화벽 및 Dispatcher와 같은 복잡한 서버 설정에서 요청이 손실된 경우 프록시 서버를 사용하여 요청이 손실된 위치를 확인할 수 있습니다. 방화벽의 경우:
+방화벽 및 Dispatcher와 같은 복잡한 서버 설정에서 요청이 손실된 경우 프록시 서버를 사용하여 요청이 손실된 위치를 확인할 수 있습니다. 방화벽이 있는 경우:
 
 1. 방화벽 전 프록시 시작
 1. 방화벽 후에 다른 프록시 시작
@@ -98,7 +94,7 @@ keep-alive가 작동하는지 확인하려면:
 
 1. proxy.jar를 시작합니다.
 1. 각 항목에 타임스탬프가 있는 파일에 액세스 로그를 기다리거나 씁니다.
-1. 요청이 정지되기 시작하면 얼마나 많은 연결이 열려 있는지 그리고 어떤 요청이 문제를 일으키는지 확인할 수 있습니다.
+1. 요청이 걸리기 시작하면 열려 있는 연결 수와 문제를 일으키는 요청을 확인할 수 있습니다.
 
 ## 로그 메시지 형식 {#the-format-of-log-messages}
 
@@ -126,11 +122,11 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-이 값은 6번째 연결에서 평균 속도로 클라이언트와 서버 사이에 전달된 바이트 수를 보여 줍니다.
+이 값은 여섯 번째 연결에서 평균 속도로 클라이언트와 서버 사이에 전달된 바이트 수를 보여 줍니다.
 
 ## 로그 출력의 예 {#an-example-of-log-output}
 
-요청 시 다음 코드를 생성하는 간단한 템플릿을 검토하겠습니다.
+요청 시 다음 코드를 생성하는 간단한 템플릿을 검토하십시오.
 
 ```xml
 <html>
@@ -181,7 +177,7 @@ C-0-#000347 -> [Host: localhost:4444 ]
 C-0-#000369 -> [Connection: Keep-Alive ]
 ```
 
-프록시 서버는 쿠키가 제대로 설정되었는지 확인하는 데 유용한 도구입니다. 여기 다음이 표시됩니다.
+프록시 서버는 쿠키가 제대로 설정되었는지 확인하는 데 유용한 도구입니다. 여기에서 다음을 볼 수 있습니다.
 
 * AEM에서 생성한 cq3session 쿠키
 * cfc에서 생성한 표시 모드 전환 쿠키
@@ -281,4 +277,4 @@ C-1-Finished: 403 bytes (0.0 kb/s)
 * 먼저 서버가 HTML 코드를 반환합니다.
 * 그러면 브라우저가 이미지를 요청하고 새 연결을 엽니다
 
-실제로 페이지는 이미지, 스타일 시트, JavaScript 파일 등에 대한 많은 병렬 요청을 생성할 수 있습니다. 즉, 로그에 병렬 열린 연결의 겹치는 항목이 있습니다. 이 경우 가독성을 높이기 위해 -i 옵션을 사용하는 것이 좋습니다.
+실제로 페이지는 이미지, 스타일 시트, JavaScript 파일 등에 대한 많은 병렬 요청을 생성할 수 있습니다. 즉, 로그에 병렬 열린 연결의 겹치는 항목이 있습니다. Adobe 이 경우 가독성을 향상시키려면 -i 옵션을 사용하는 것이 좋습니다.

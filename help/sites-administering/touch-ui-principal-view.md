@@ -1,19 +1,15 @@
 ---
 title: 권한 관리에 대한 보안 주체 보기
-seo-title: Principal View for Permissions Management
 description: 권한 관리를 용이하게 하는 새로운 Touch UI 인터페이스에 대해 알아봅니다.
-seo-description: Learn about the new Touch UI interface that facilitates permissions management.
-uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
-discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '764'
 ht-degree: 1%
 
 ---
@@ -55,7 +51,7 @@ AEM 6.5에는 사용자 및 그룹에 대한 권한 관리가 도입되었습니
 
 ### 주체에 대한 새 액세스 제어 항목 추가 {#adding-new-access-control-entry-for-a-principal}
 
-ACE 추가 단추를 클릭하여 새 액세스 제어 항목을 추가하여 새 권한을 추가할 수 있습니다.
+액세스 제어 항목을 추가하여 새 권한을 추가할 수 있습니다. ACE 추가 버튼을 클릭하면 됩니다.
 
 ![주체에 대한 새 ACL 추가](assets/patru.png)
 
@@ -63,7 +59,7 @@ ACE 추가 단추를 클릭하여 새 액세스 제어 항목을 추가하여 �
 
 ![권한 경로 구성](assets/cinci-1.png)
 
-여기에서는 권한을 구성할 경로를 선택합니다 **dam-users**:
+여기에서 권한을 구성할 수 있는 경로를 선택합니다. **dam-users**:
 
 ![dam 사용자에 대한 구성 예](assets/sase-1.png)
 
@@ -83,13 +79,13 @@ ACE 추가 단추를 클릭하여 새 액세스 제어 항목을 추가하여 �
 
 ### 제한 사용 {#using-restrictions}
 
-지정된 경로에 대한 권한 및 권한 유형 목록 외에도 이 화면에서는 아래와 같이 세분화된 액세스 제어에 대한 제한을 추가할 수 있습니다.
+지정된 경로에 대한 권한 목록 및 권한 유형 외에도 이 화면에서는 아래와 같이 세분화된 액세스 제어에 대한 제한을 추가할 수 있습니다.
 
 ![제한 추가](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
->각 제한의 의미에 대한 자세한 내용은 다음을 참조하십시오. [jackrabbit Oak 설명서](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>각 제한의 의미에 대한 자세한 내용은 [jackrabbit Oak 설명서](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 제한 유형을 선택하고 값을 입력한 다음 을 눌러 아래와 같이 제한을 추가할 수 있습니다. **+** 아이콘.
 
@@ -109,11 +105,11 @@ ACE 추가 단추를 클릭하여 새 액세스 제어 항목을 추가하여 �
 
 ![항목 편집](assets/noua-1.png)
 
-여기에 을(를) 추가합니다. `addChildNodes` 다음에 대한 권한: **dam-users** 지정한 경로에서.
+다음 `addChildNodes` 다음에 대한 권한이 추가되었습니다. **dam-users** 지정한 경로에서.
 
 ![권한 추가](assets/image2019-3-21_0-45-35.png)
 
-변경 사항은 다음을 클릭하여 저장할 수 있습니다. **저장** 오른쪽 상단의 단추를 클릭하면 변경 사항이 다음에 대한 새 권한에 반영됩니다. **dam-users** 아래와 같이:
+변경 사항은 다음을 클릭하여 저장할 수 있습니다. **저장** 오른쪽 상단의 단추를 클릭하면 변경 사항이 의 새 권한에 반영됩니다. **dam-users** 아래와 같이:
 
 ![변경 내용 저장](assets/zece-1.png)
 
@@ -125,7 +121,7 @@ ACE 추가 단추를 클릭하여 새 액세스 제어 항목을 추가하여 �
 
 ### 클래식 UI 권한 조합 {#classic-ui-privilege-combinations}
 
-새 권한 UI는 부여된 정확한 기본 권한을 반영하지 않은 사전 정의된 조합 대신 기본 권한 집합을 명시적으로 사용합니다.
+새 권한 UI는 부여된 정확한 기본 권한을 반영하지 않는 사전 정의된 조합 대신 기본 권한 집합을 명시적으로 사용합니다.
 
 이는 정확히 무엇을 구성하고 있는지에 대한 혼동을 유발하였다. 다음 표에는 기본 UI에서 해당 권한을 구성하는 실제 권한으로의 권한 조합 간의 매핑이 나열되어 있습니다.
 
