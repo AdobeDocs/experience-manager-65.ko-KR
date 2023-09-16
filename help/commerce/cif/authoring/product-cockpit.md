@@ -2,9 +2,9 @@
 title: 제품 관리실
 description: 제품 관리실을 사용한 작업
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '416'
 ht-degree: 1%
 
 ---
@@ -29,11 +29,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->단계적 카탈로그 기능은 토큰 기반 인증을 지원하는 Adobe Commerce 및 타사 커넥터에서만 사용할 수 있습니다.
+>단계적 카탈로그 기능은 토큰 기반 인증을 지원하는 Adobe Commerce 및 서드파티 커넥터에서만 사용할 수 있습니다.
 
 ## 제품 관리실 열기 {#opening-product-cockpit}
 
-제품 관리실에 액세스하는 가장 쉬운 방법은 AEM 메인 메뉴의 &#39;상거래&#39; 메뉴를 통해 확인할 수 있습니다. Omnisearch(상거래 검색) 또는 열기 를 사용할 수도 있습니다 `https://<yourAEMInstance>/commerce.html`.
+제품 관리실에 가장 쉽게 액세스하는 방법은 AEM 메인 메뉴의 &#39;상거래&#39; 메뉴를 통해 확인할 수 있습니다. Omnisearch(상거래 검색) 또는 열기 를 사용할 수도 있습니다 `https://<yourAEMInstance>/commerce.html`.
 
 ![AEM 메뉴](/help/commerce/cif/assets/aem-menu.png)
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ![범주 하위](/help/commerce/cif/assets/catalog-category-children.png)
 
-가능한 경우 제품을 클릭하면 제품 변형이 로드됩니다.
+사용 가능한 경우 제품을 클릭하면 제품 변형이 로드됩니다.
 
 ![제품 변형](/help/commerce/cif/assets/catalog-product-variation.png)
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 ## 제품 카탈로그 속성 {#catalog-properties}
 
-제품 또는 범주의 속성 아이콘을 클릭하면 선택한 객체의 속성 보기가 열립니다. 제품 변형의 열기 속성은 기본 제품 속성을 여는 것과 같습니다.
+제품 또는 범주의 속성 아이콘을 클릭하면 선택한 객체의 속성 보기가 열립니다. 제품 변형의 열린 속성은 기본 제품 속성을 연 것과 같습니다.
 
 ### 상거래 탭 {#tabs}
 

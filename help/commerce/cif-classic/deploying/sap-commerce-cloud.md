@@ -5,7 +5,7 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 2%
@@ -95,7 +95,7 @@ hybris 서버를 사용하려면 별도의 hybris 라이센스가 필요합니�
 
 >[!NOTE]
 >
-개발자용 [API 설명서](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 을 다운로드할 수도 있습니다.
+개발자용, [API 설명서](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 을 다운로드할 수도 있습니다.
 
 ### hybris 서버 다운로드 및 구축 {#download-and-build-your-hybris-server}
 
