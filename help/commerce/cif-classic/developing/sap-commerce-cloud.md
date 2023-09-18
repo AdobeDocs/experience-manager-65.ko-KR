@@ -1,14 +1,14 @@
 ---
 title: SAP Commerce Cloud를 사용하여 개발
-description: SAP Commerce Cloud 통합 프레임워크는 API와 통합 계층을 포함합니다
+description: SAP Commerce Cloud 통합 프레임워크는 API와 통합 계층을 포함합니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '2296'
+source-wordcount: '2286'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 통합 프레임워크는 API와의 통합 계층을 포함합니다. 이렇게 하면 다음 작업을 수행할 수 있습니다.
 
-* eCommerce 시스템에 연결하고 제품 데이터를 AEM으로 가져오기
+* eCommerce 시스템에 연결하고 제품 데이터를 Adobe Experience Manager(AEM)로 가져옵니다
 
 * 특정 eCommerce 엔진과 독립적인 상거래 기능을 위한 AEM 구성 요소 빌드
 
@@ -103,7 +103,7 @@ Hybris 4와의 이전 버전과의 호환성을 유지하면서 Hybris 5를 지�
 
 코드의 기본 설정은 Hybris 5에 대해 조정됩니다.
 
-Hybris 4를 위해 개발하려면 다음 사항이 필요합니다.
+Hybris 4에 대해 개발하려면 다음이 필요합니다.
 
 * Maven을 호출할 때 다음 명령줄 인수를 명령에 추가합니다.
 
@@ -115,7 +115,7 @@ Hybris 4를 위해 개발하려면 다음 사항이 필요합니다.
 
    * 기본 응답 파서 서비스에 대한 Hybris 5 지원을 사용하지 않도록 설정합니다.
 
-   * Hybris Basic Authentication Handler 서비스의 서비스 순위가 Hybris OAuth Handler 서비스보다 낮은지 확인합니다.
+   * Hybris Basic Authentication Handler 서비스의 서비스 순위가 Hybris OAuth Handler 서비스의 서비스 순위보다 낮은지 확인합니다.
 
 ### 세션 처리 {#session-handling}
 
@@ -123,7 +123,7 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 
 * 첫 번째 요청에서 구매자의 요청에 쿠키가 설정되지 않으므로 세션을 만들도록 hybris 인스턴스에 요청이 전송됩니다.
 
-* 세션 쿠키는 응답에서 추출되고 새 쿠키로 인코딩됩니다(예: `hybris-session-rest`)을 설정하고 쇼핑객에 대한 응답을 설정합니다. 원래 쿠키는 특정 경로에 대해서만 유효하고, 그렇지 않으면 후속 요청에서 브라우저에서 다시 전송되지 않으므로 새 쿠키의 인코딩이 필요합니다. 경로 정보도 쿠키 값에 추가해야 합니다.
+* 세션 쿠키는 응답에서 추출되고 새 쿠키로 인코딩됩니다(예: `hybris-session-rest`)을 설정하고 쇼핑객에 대한 응답을 설정합니다. 원래 쿠키는 특정 경로에 대해서만 유효하고, 그렇지 않으면 후속 요청에서 브라우저에서 다시 전송되지 않으므로 새 쿠키의 인코딩이 필요합니다. 경로 정보를 쿠키 값에 추가해야 합니다.
 
 * 이후 요청에서 쿠키는 `hybris-session-<*xxx*>` hybris에서 데이터를 요청하는 데 사용되는 HTTP 클라이언트에 설정된 쿠키입니다.
 
@@ -145,9 +145,9 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 
   `CommerceSession.getUserContext()`
 
-* 또한 을(를) 소유합니다. **결제** 연결 처리 중
+* 다음 소유 **결제** 연결 처리 중
 
-* 또한 을(를) 소유합니다. **이행** 연결
+* 다음 소유 **이행** 연결
 
 ### 제품 동기화 및 게시 {#product-synchronization-and-publishing}
 
@@ -197,7 +197,7 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 
 * 활성화된 제품 페이지는 제품 데이터의 **온라인** 버전 (d).
 
-* AEM 게시 인스턴스는 제품 및 개인화된 데이터(d)를 검색하기 위해 hybris에 액세스해야 합니다.
+* AEM Publish 인스턴스를 사용하려면 제품 및 개인화된 데이터(d)를 검색하기 위해 hybris에 액세스해야 합니다.
 
 ### 아키텍처 {#architecture}
 
@@ -209,7 +209,7 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 
 각 제품 및/또는 변형은 리소스로 표시되므로 1:1을 저장소 노드에 매핑합니다. 특정 제품 및/또는 변형이 해당 경로에 의해 고유하게 식별될 수 있다는 것이 중요합니다.
 
-제품/변형 리소스에 실제 제품 데이터가 항상 있는 것은 아닙니다. 다른 시스템에 보관된 데이터(예: hybris)를 나타냅니다. 예를 들어 제품 설명, 가격 책정 등은 AEM에 저장되지 않고 eCommerce 엔진에서 실시간으로 검색됩니다.
+제품/변형 리소스에 실제 제품 데이터가 항상 있는 것은 아닙니다. 다른 시스템에 보관된 데이터(예: hybris)를 나타냅니다. 예를 들어 제품 설명 및 요금은 AEM에 저장되지 않고 eCommerce 엔진에서 실시간으로 검색됩니다.
 
 모든 제품 리소스는 `Product API`. 제품 API의 대부분의 호출은 변형별로 다르지만(변형이 상위 항목에서 공유 값을 상속할 수 있음), 변형 세트를 나열하는 호출도 있습니다( `getVariantAxes()`, `getVariants()`등).
 
@@ -426,7 +426,7 @@ public class AxisFilter implements VariantFilter {
 * 스토리지
 
    * hybris의 경우 hybris 서버는 장바구니를 소유합니다.
-   * AEM 일반적인 경우 의 카트는 [ClientContext](/help/sites-administering/client-context.md).
+   * AEM의 경우 의 장바구니는에 저장됩니다. [ClientContext](/help/sites-administering/client-context.md).
 
 **개인화**
 
@@ -524,7 +524,7 @@ public class AxisFilter implements VariantFilter {
 >
 >그러나 검색 API는 일반적이며 각 CommerceService에서 개별적으로 구현할 수 있습니다.
 
-전자 상거래 프로젝트에는 다음 위치에 있는 기본 검색 구성 요소가 포함되어 있습니다.
+eCommerce 프로젝트는에 기본 검색 구성 요소가 포함되어 있습니다.
 
 `/libs/commerce/components/search`
 
@@ -538,11 +538,11 @@ public class AxisFilter implements VariantFilter {
 
 1. `CommerceQuery`
 
-   검색 쿼리를 설명하는 데 사용됩니다(쿼리 텍스트, 현재 페이지, 페이지 크기, 정렬 및 선택한 패싯에 대한 정보를 포함). 검색 API를 구현하는 모든 전자 상거래 서비스는 이 클래스의 인스턴스를 수신하여 검색을 수행합니다. A `CommerceQuery` 은 요청 개체에서 인스턴스화할 수 있습니다( `HttpServletRequest`).
+   검색 쿼리에 대해 설명합니다(쿼리 텍스트, 현재 페이지, 페이지 크기, 정렬 및 선택한 패싯에 대한 정보를 포함합니다). 검색 API를 구현하는 모든 전자 상거래 서비스는 이 클래스의 인스턴스를 수신하여 검색을 수행합니다. A `CommerceQuery` 은 요청 개체에서 인스턴스화할 수 있습니다( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   하나의 정적 메서드를 제공하는 유틸리티 클래스입니다. `toParams` - 를 생성하는 데 사용됩니다. `GET` 패싯 및 전환된 하나의 값 목록의 매개 변수 문자열. 이 기능은 UI 측면에서 각 패싯의 각 값에 대한 하이퍼링크를 표시해야 사용자가 하이퍼링크를 클릭할 때 해당 값이 전환됩니다(즉, 선택한 경우 쿼리에서 제거되고 다른 경우에는 추가됨). 이는 여러/단일 값 패싯을 처리하고 값을 재정의하는 등의 모든 논리를 처리합니다.
+   하나의 정적 메서드를 제공하는 유틸리티 클래스입니다. `toParams` - 를 생성하는 데 사용됩니다. `GET` 패싯 및 전환된 하나의 값 목록의 매개 변수 문자열. 이 기능은 사용자가 하이퍼링크를 클릭할 때 해당 값이 전환되도록 각 패싯의 각 값에 대한 하이퍼링크를 표시해야 하는 UI 측면에서 유용합니다. 즉, 이 옵션을 선택하면 쿼리에서 제거되고 그렇지 않으면 추가됩니다. 이는 여러/단일 값 패싯을 처리하고 값을 재정의하는 등의 모든 논리를 처리합니다.
 
 검색 API의 진입점은 입니다. `CommerceService#search` 를 반환하는 메서드 `CommerceResult` 개체. 다음을 참조하십시오. [API 설명서](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 을 참조하십시오.
 
@@ -552,7 +552,7 @@ AEM과 다양한 eCommerce 시스템 간에 통합이 제공됩니다. 이를 �
 
 * 인증
 
-  AEM은 *전용* 웹 프런트엔드 및 따라서 *모두* 인증.
+  AEM은 *전용* 웹 프런트엔드를 통한 성능 향상 *모두* 인증.
 
 * Hybris의 계정
 
@@ -566,7 +566,7 @@ AEM 프론트 엔드는 기존 hybris 구현 앞에 위치할 수 있습니다. 
 
    * hybris에 로그인할 때 AEM 사용자가 없는 경우:
 
-      * 암호학적으로 임의 암호를 사용하여 새 hybris 사용자 만들기
+      * 암호학적으로 무작위 암호를 사용하여 hybris 사용자 만들기
       * AEM 사용자의 사용자 디렉토리에 hybris 사용자 이름을 저장합니다.
 
    * 자세한 내용은: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
@@ -576,7 +576,7 @@ AEM 프론트 엔드는 기존 hybris 구현 앞에 위치할 수 있습니다. 
    * AEM에 로그인할 때 시스템에서 사용자를 인식하는 경우:
 
       * 제공된 사용자 이름/pwd로 hybris에 로그인 시도
-      * 성공하면 AEM에서 동일한 암호로 새 사용자를 만듭니다(AEM 관련 솔트가 AEM 관련 해시로 이어짐).
+      * 성공하면 동일한 암호로 AEM에서 사용자를 만듭니다(AEM 특정 솔트 결과로 AEM 특정 해시가 표시됨).
 
    * 위의 알고리즘은 Sling으로 구현됩니다 `AuthenticationInfoPostProcessor`
 

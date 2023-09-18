@@ -1,17 +1,14 @@
 ---
 title: 개발(일반)
-seo-title: Developing (generic)
 description: 통합 프레임워크는 API와의 통합 계층을 포함하므로 eCommerce 기능을 위한 AEM 구성 요소를 빌드할 수 있습니다
-seo-description: The integration framework includes an integration layer with an API, allowing you to build AEM components for eCommerce capabilities
-uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '1860'
+source-wordcount: '1846'
 ht-degree: 0%
 
 ---
@@ -24,7 +21,7 @@ ht-degree: 0%
 
 통합 프레임워크는 API와의 통합 계층을 포함합니다. 이를 통해 특정 eCommerce 엔진과 관계없이 eCommerce 기능을 위한 AEM 구성 요소를 빌드할 수 있습니다. 또한 내부 CRX 데이터베이스를 사용하거나 eCommerce 시스템을 연결하고 제품 데이터를 AEM으로 가져올 수 있습니다.
 
-통합 레이어를 사용하기 위해 다양한 AEM 구성 요소가 제공됩니다. 현재는 다음과 같습니다.
+통합 레이어를 사용할 수 있도록 몇 가지 기본 AEM 구성 요소가 제공됩니다. 현재는 다음과 같습니다.
 
 * 제품 표시 구성 요소
 * 장바구니
@@ -33,7 +30,7 @@ ht-degree: 0%
 * 체크아웃
 * 검색
 
-검색의 경우 AEM 검색, 타사 검색 또는 이들의 조합을 사용할 수 있는 통합 후크가 제공됩니다.
+검색의 경우 AEM(Adobe Experience Manager) 검색, 서드파티 검색 또는 이들의 조합을 사용할 수 있는 통합 후크가 제공됩니다.
 
 ## 전자 상거래 엔진 선택 {#ecommerce-engine-selection}
 
@@ -54,7 +51,7 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
 
 * 다음 `cq:commerceProvider` 속성을 사용하여 해당 상거래 공장 정의를 참조할 수도 있습니다.
 
-   * 예: `cq:commerceProvider` geometrixx 값이 있는 속성은 다음에 대한 OSGi 구성과 상호 연결됩니다. **일별 Geometrixx-Outdoors용 CQ Commerce 팩토리** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - 여기서 매개 변수 `commerceProvider` 값도 있습니다. `geometrixx`.
+   * 예: `cq:commerceProvider` 값이 Geometrixx인 속성은에 대한 OSGi 구성과 관련이 있습니다. **일별 Geometrixx-Outdoors용 CQ Commerce 팩토리** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - 여기서 매개 변수 `commerceProvider` 값도 있습니다. `geometrixx`.
    * 여기에서 추가 속성을 구성할 수 있습니다(적절하고 사용 가능한 경우).
 
 표준 AEM 설치에서 특정 구현이 필요합니다. 예를 들면 다음과 같습니다.
@@ -104,16 +101,16 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
   `CommerceSession.getUserContext()`
 
 * 을 사용하여 게재 세부 사항을 검색/업데이트할 수 있습니다. `updateOrder(Map<String, Object> delta)`
-* 또한 을(를) 소유합니다. **결제** 연결 처리 중
-* 또한 을(를) 소유합니다. **이행** 연결
+* 다음 소유 **결제** 연결 처리 중
+* 다음 소유 **이행** 연결
 
 ### 아키텍처 {#architecture}
 
 #### 제품 및 변형 아키텍처 {#architecture-of-product-and-variants}
 
-단일 제품에는 여러 변형이 있을 수 있습니다. 예를 들어 색상 및/또는 크기에 따라 달라질 수 있습니다. 제품은 변형을 유도하는 속성을 정의해야 합니다. *변형 축*.
+단일 제품에는 여러 변형이 있을 수 있습니다. 예를 들어 색상 및/또는 크기에 따라 달라질 수 있습니다. 제품은 변형을 유도하는 속성을 정의해야 합니다. Adobe 용어는 다음과 같습니다 *변형 축*.
 
-그러나 모든 속성이 변형 축인 것은 아닙니다. 변형은 다른 속성에도 영향을 줄 수 있습니다. 예를 들어, 가격은 크기에 따라 달라질 수 있습니다. 이러한 속성은 구매자가 선택할 수 없으므로 변형 축으로 간주되지 않습니다.
+그러나 모든 속성이 변형 축인 것은 아닙니다. 변형은 다른 속성에도 영향을 줄 수 있습니다. 예를 들어 가격은 크기에 따라 달라질 수 있습니다. 이러한 속성은 구매자가 선택할 수 없으므로 변형 축으로 간주되지 않습니다.
 
 각 제품 및/또는 변형은 리소스로 표시되므로 1:1을 저장소 노드에 매핑합니다. 특정 제품 및/또는 변형이 해당 경로에 의해 고유하게 식별될 수 있다는 것이 중요합니다.
 
@@ -321,7 +318,7 @@ public class AxisFilter implements VariantFilter {
       * 다른 통화.
       * 부가세 부담 및 부가세 무료.
 
-   * 수정자는 다음 인터페이스로 완전히 오픈엔드됩니다.
+   * 수정자는 다음 인터페이스로 끝이 열립니다.
 
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
@@ -330,11 +327,11 @@ public class AxisFilter implements VariantFilter {
 
 * 스토리지
 
-   * AEM 일반적인 경우 의 카트는 [ClientContext](/help/sites-administering/client-context.md)
+   * AEM의 경우 장바구니는에 저장됩니다. [ClientContext](/help/sites-administering/client-context.md)
 
 **개인화**
 
-* 개인화는 항상 [ClientContext](/help/sites-administering/client-context.md).
+* 다음을 통해 항상 개인화 촉진 [ClientContext](/help/sites-administering/client-context.md).
 * ClientContext `/version/` 의 장바구니가 모든 경우에 만들어집니다.
 
    * 제품을 추가하려면 `CommerceSession.addCartEntry()` 메서드를 사용합니다.
@@ -384,7 +381,7 @@ public class AxisFilter implements VariantFilter {
 
 **운송 계산**
 
-* 주문 양식에는 종종 여러 배송 옵션(및 가격)이 표시되어야 합니다.
+* 주문 양식에는 종종 여러 배송 옵션(및 가격)이 있어야 합니다.
 * 가격은 중량 및/또는 배송 주소와 같은 품목 및 주문 세부 사항을 기반으로 할 수 있습니다.
 * 다음 `CommerceSession` 은 모든 종속성에 액세스할 수 있으므로 제품 가격과 유사한 방식으로 처리할 수 있습니다.
 
@@ -403,7 +400,7 @@ public class AxisFilter implements VariantFilter {
 >
 >따라서 기본적으로 제공되는 일반 구현은 이 API를 구현하지 않지만 이를 확장하고 검색 기능을 추가할 수 있습니다.
 
-전자 상거래 프로젝트에는 다음 위치에 있는 기본 검색 구성 요소가 포함되어 있습니다.
+eCommerce 프로젝트는에 기본 검색 구성 요소가 포함되어 있습니다.
 
 `/libs/commerce/components/search`
 
@@ -417,11 +414,11 @@ public class AxisFilter implements VariantFilter {
 
 1. `CommerceQuery`
 
-   검색 쿼리를 설명하는 데 사용됩니다(쿼리 텍스트, 현재 페이지, 페이지 크기, 정렬 및 선택한 패싯에 대한 정보를 포함). 검색 API를 구현하는 모든 전자 상거래 서비스는 검색을 수행하기 위해 이 클래스의 인스턴스를 받습니다. A `CommerceQuery` 은 요청 개체에서 인스턴스화할 수 있습니다( `HttpServletRequest`).
+   검색 쿼리를 설명하는 데 사용됩니다(쿼리 텍스트, 현재 페이지, 페이지 크기, 정렬 및 선택한 패싯에 대한 정보가 포함됨). 검색 API를 구현하는 모든 전자 상거래 서비스는 이 클래스의 인스턴스를 수신하여 검색을 수행합니다. A `CommerceQuery` 은 요청 개체에서 인스턴스화할 수 있습니다( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   하나의 정적 메서드를 제공하는 유틸리티 클래스입니다. `toParams` - 를 생성하는 데 사용됩니다. `GET` 패싯 및 전환된 하나의 값 목록의 매개 변수 문자열. 이 기능은 UI측에서 각 패싯의 각 값에 대한 하이퍼링크를 표시해야 사용자가 하이퍼링크를 클릭할 때 해당 값이 전환됩니다(즉, 선택한 경우 쿼리에서 제거되고 다른 경우에는 추가됨). 이는 여러/단일 값 패싯을 처리하고 값을 재정의하는 등의 모든 논리를 처리합니다.
+   하나의 정적 메서드를 제공하는 유틸리티 클래스입니다. `toParams` - 를 생성하는 데 사용됩니다. `GET` 패싯 및 전환된 하나의 값 목록의 매개 변수 문자열. 이 기능은 사용자가 하이퍼링크를 클릭할 때 해당 값이 전환되도록 각 패싯의 각 값에 대한 하이퍼링크를 표시해야 하는 UI 측면에서 유용합니다. 즉, 이 필드를 선택한 경우 쿼리에서 제거되고 그렇지 않은 경우 추가됩니다. 이는 여러/단일 값 패싯을 처리하고 값을 재정의하는 등의 모든 논리를 처리합니다.
 
 검색 API의 진입점은 입니다. `CommerceService#search` 를 반환하는 메서드 `CommerceResult` 개체. 이 항목에 대한 자세한 내용은 API 설명서 를 참조하십시오.
 
@@ -507,7 +504,7 @@ public void removeVoucher(String code) throws CommerceException;
 public List<Voucher> getVouchers() throws CommerceException;
 ```
 
-이쪽으로, `CommerceSession` 바우처가 존재하는지, 신청 가능한지 등을 확인할 책임이 있다. 특정 조건이 충족되는 경우에만 적용할 수 있는 바우처에 대한 것일 수 있습니다(예: 총 장바구니 가격이 $100보다 큰 경우). 바우처가 어떤 이유로든 적용될 수 없는 경우 `addVoucher` 메서드가 예외를 throw합니다. 또한 `CommerceSession` 바우처가 추가/제거된 후 장바구니의 가격을 업데이트할 책임이 있습니다.
+이쪽으로, `CommerceSession` 바우처가 존재하는지, 신청 가능한지 등을 확인할 책임이 있다. 특정 조건이 충족되는 경우에만 적용할 수 있는 바우처에 대한 것일 수 있습니다. 예를 들어 총 장바구니 가격이 $100보다 큰 경우. 바우처가 어떤 이유로든 적용될 수 없는 경우 `addVoucher` 메서드가 예외를 throw합니다. 또한 `CommerceSession` 바우처가 추가/제거된 후 장바구니의 가격을 업데이트할 책임이 있습니다.
 
 다음 `Voucher` 는 다음에 대한 필드를 포함하는 콩과 유사한 클래스입니다.
 
@@ -515,7 +512,7 @@ public List<Voucher> getVouchers() throws CommerceException;
 * 간단한 설명
 * 할인 유형 및 값을 나타내는 관련 판촉 참조
 
-다음 `AbstractJcrCommerceSession` 바우처를 제공할 수 있습니다. 학급에서 반납한 상품권 `getVouchers()` 은(는) 의 인스턴스임 `cq:Page` 다음 속성(그 외)이 있는 jcr:content 노드 포함:
+다음 `AbstractJcrCommerceSession` 바우처를 제공할 수 있습니다. 학급에서 반납한 상품권 `getVouchers()` 은(는) 의 인스턴스임 `cq:Page` 다음 속성(특히)이 있는 jcr:content 노드 포함:
 
 * `sling:resourceType` (문자열) - 다음이 필요합니다. `commerce/components/voucher`
 
@@ -523,7 +520,7 @@ public List<Voucher> getVouchers() throws CommerceException;
 * `code` (문자열) - 이 바우처를 적용하려면 사용자가 입력해야 하는 코드
 * `promotion` (문자열) - 적용할 판촉. 예: `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-프로모션 핸들러는 장바구니를 수정하는 OSGi 서비스입니다. 장바구니는에 정의될 여러 개의 후크를 지원합니다. `PromotionHandler` 인터페이스.
+프로모션 핸들러는 장바구니를 수정하는 OSGi 서비스입니다. 장바구니는에 정의된 여러 개의 후크를 지원합니다. `PromotionHandler` 인터페이스.
 
 ```java
 /**

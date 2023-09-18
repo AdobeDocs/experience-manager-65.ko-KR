@@ -1,17 +1,13 @@
 ---
 title: 사용자 지정 적응형 양식 테마 만들기
-seo-title: Creating custom adaptive form themes
-description: 적응형 양식 테마는 적응형 양식의 스타일(모양 및 느낌)을 정의하는 데 사용하는 AEM 클라이언트 라이브러리입니다. 사용자 지정 적응형 양식 테마를 만드는 방법을 알아봅니다.
-seo-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
-uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
+description: 적응형 양식 테마는 적응형 양식의 스타일(모양 및 느낌)을 정의하는 데 사용하는 Adobe Experience Manager 클라이언트 라이브러리입니다. 사용자 지정 적응형 양식 테마를 만드는 방법을 알아봅니다.
 content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->AEM Forms에서 제공하는 [테마 편집기](/help/forms/using/themes.md) 적응형 양식 만들기 및 수정 기능 [테마](/help/forms/using/themes.md). 이 문서에 나열된 단계를 수행하십시오. 가 없는 버전에서 업그레이드한 경우에만. [테마 편집기](/help/forms/using/themes.md) 또한 Less/CSS 파일(사전 테마 편집기 메서드)을 사용하여 만든 테마에 대한 기존 투자가 있습니다.
+>Adobe Experience Manager(AEM) Forms은 [테마 편집기](/help/forms/using/themes.md) 적응형 양식 만들기 및 수정 기능 [테마](/help/forms/using/themes.md). 이 문서에 나열된 단계는 가 없는 버전에서 업그레이드한 경우에만 수행하십시오 [테마 편집기](/help/forms/using/themes.md) 또한 Less/CSS 파일(사전 테마 편집기 메서드)을 사용하여 만든 테마에 대한 기존 투자가 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -63,7 +59,7 @@ An **적응형 양식 테마** 는 적응형 양식의 스타일(모양 및 느�
 
    * `less` 폴더: 다음을 포함 `less` 변수를 정의할 변수 파일입니다. `less` 변수 및 `less mixins` .css 스타일을 관리하는 데 사용됩니다.
 
-      이 폴더는 다음으로 구성됩니다. `less` 변수 파일, `less` mixin 파일, `less` mixin 및 변수를 사용하여 스타일을 정의하는 파일입니다. 이렇게 적은 파일은 모두 styles.less로 가져옵니다.
+     이 폴더는 다음으로 구성됩니다. `less` 변수 파일, `less` mixin 파일, `less` mixin 및 변수를 사용하여 스타일을 정의하는 파일입니다. 이렇게 적은 파일은 모두 styles.less로 가져옵니다.
 
    * `css`folder: 테마에 사용할 정적 스타일을 정의하는 .css 파일을 포함합니다.
 
@@ -109,7 +105,7 @@ An **적응형 양식 테마** 는 적응형 양식의 스타일(모양 및 느�
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **Mixin 파일 줄이기:** 변수를 인수로 사용하는 함수를 정의할 수 있습니다. 이러한 함수의 출력은 결과 스타일입니다. CSS 스타일이 반복되지 않도록 하려면 이러한 mixin을 다른 스타일 내에서 사용하십시오.
+   **Mixin 파일 줄이기:** 변수를 인수로 사용하는 함수를 정의할 수 있습니다. 이러한 함수의 출력은 결과 스타일입니다. CSS 스타일이 반복되지 않도록 다양한 스타일 내에서 이러한 mixin을 사용하십시오.
 
    적응형 양식은 다음에 정의된 OOTB mixin을 제공합니다.
 
@@ -196,7 +192,7 @@ An **적응형 양식 테마** 는 적응형 양식의 스타일(모양 및 느�
    >
    >styles.less 파일은 필수가 아닙니다. 즉, 사용자 지정 스타일, 변수 또는 mixin을 정의하지 않은 경우 이 파일을 만들 필요가 없습니다.
    >
-   >하지만 style.less 파일을 만들지 않은 경우 css.txt 파일에서 다음 줄의 주석 처리를 제거해야 합니다.
+   >그러나 css.txt 파일에서 style.less 파일을 만들지 않은 경우에는 다음 줄의 주석 처리를 제거해야 합니다.
    >
    >**`#base=less`**
    >
@@ -216,9 +212,9 @@ An **적응형 양식 테마** 는 적응형 양식의 스타일(모양 및 느�
 
       ![CRX 저장소 스냅샷](assets/1-2.png)
 
-   1. 페이지의 테마를 사용하려면 재정의 파일 library.jsp를 노드에 추가해야 합니다.
+   1. 페이지에서 테마를 사용하려면 재정의 파일 library.jsp를 노드에 추가해야 합니다.
 
-      그런 다음에서 만든 테마를 가져와서 이 문서의 적응형 양식 테마 섹션을 만듭니다.
+      그런 다음에서 만든 테마를 가져와서 이 문서의 적응형 양식 테마 섹션을 만들 수 있습니다.
 
       다음 샘플 코드 조각은 `af.theme.forest` 테마.
 
@@ -233,4 +229,4 @@ An **적응형 양식 테마** 는 적응형 양식의 스타일(모양 및 느�
 
    ![CRX 저장소 스냅샷](assets/2-1.png)
 
-1. 이전 단계에서 만든 템플릿을 사용하여 적응형 양식을 만듭니다. 적응형 양식의 모양과 느낌은 이 문서의 적응형 양식 테마 섹션을 만들기에에서 만든 테마로 정의됩니다.
+1. 이전 단계에서 만든 템플릿을 사용하여 적응형 양식을 만듭니다. 적응형 양식의 모양과 느낌은 이 문서의 적응형 양식 테마 섹션을 만들기 위해 에서 만든 테마로 정의됩니다.

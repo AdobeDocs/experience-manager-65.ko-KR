@@ -1,16 +1,12 @@
 ---
 title: 서신 관리 구성 속성
-seo-title: Correspondence Management Configuration Properties
 description: 이 항목에서는 솔루션별 구성으로 Asset Composer를 수정하는 방법을 설명합니다. 이 항목에서는 편집할 수 있는 등록 정보, 설명, 기본값 및 허용되는 값을 자세히 설명합니다.
-seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
-uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 3%
@@ -62,14 +58,14 @@ ht-degree: 3%
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Target 강조 표시 유형</p> </td>
-   <td><p>응답 만들기 애플리케이션에서 Target 강조 표시 유형</p> </td>
+   <td><p>대상 강조 표시 유형</p> </td>
+   <td><p>응답 만들기 애플리케이션에서 타겟 강조 표시 유형</p> </td>
    <td><p>테두리</p> </td>
    <td><p>테두리/채우기/없음</p> </td>
   </tr>
   <tr>
-   <td><p>Target 강조 표시 색상</p> </td>
-   <td><p>응답 만들기 애플리케이션에서 Target 강조 표시 색상</p> </td>
+   <td><p>대상 강조 표시 색상</p> </td>
+   <td><p>응답 만들기 애플리케이션에서 타겟 강조 표시 색상</p> </td>
    <td><p>90;155;245</p> </td>
    <td><p>R;G;B 형식의 모든 RGB 색상</p> </td>
   </tr>

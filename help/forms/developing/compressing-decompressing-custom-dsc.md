@@ -2,9 +2,9 @@
 title: JEE Custom DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제
 description: JEE Custom DSC에서 AEM Forms을 사용하여 파일을 압축하고 압축 해제하는 방법에 대해 알아봅니다
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,13 @@ JEE 프로세스 관리, 기본 Java™ 프로그래밍 및 사용자 지정 구
 
 중간
 
-AEM Forms on JEE를 사용하면 개발자가 사용자 지정 DSC(Document Service Container)를 만들어 기본 제공 기능을 강화할 수 있습니다. 이러한 구성 요소 만들기는 JEE의 AEM Forms 런타임 환경에 플러그인할 수 있으며 의도된 목적을 수행합니다. 이 문서에서는 파일 목록을 .zip 파일로 압축하고 .zip 을 문서 목록으로 압축 해제하는 데 사용할 수 있는 사용자 지정 ZIP 서비스를 만드는 방법을 설명합니다.
+AEM Forms on JEE를 사용하면 개발자가 사용자 지정 ASC(Acrobat 서비스 컨테이너)를 만들어 기본 제공 기능을 보강할 수 있습니다. 이러한 구성 요소 만들기는 JEE의 AEM Forms 런타임 환경에 플러그인할 수 있으며 의도된 목적을 수행합니다. 이 문서에서는 파일 목록을 .zip 파일로 압축하고 .zip 을 문서 목록으로 압축 해제하는 데 사용할 수 있는 사용자 지정 ZIP 서비스를 만드는 방법을 설명합니다.
 
-## 사용자 지정 DSC 구성 요소 만들기 {#create-custom-dsc-component}
+## 사용자 지정 ASC 구성 요소 만들기 {#create-custom-dsc-component}
 
-문서 목록을 압축 및 압축 해제할 수 있는 두 가지 서비스 작업으로 사용자 지정 DSC 구성 요소를 만듭니다. 이 구성 요소는 압축 및 압축 해제에 java.util.zip 패키지를 사용합니다. 사용자 지정 구성 요소를 만들려면 아래 단계를 수행하십시오.
+문서 목록을 압축 및 압축 해제할 수 있도록 두 가지 서비스 작업으로 사용자 지정 ASC 구성 요소를 만듭니다. 이 구성 요소는 압축 및 압축 해제에 java.util.zip 패키지를 사용합니다.
+
+사용자 지정 ASC 구성 요소를 만들려면 다음을 수행하십시오.
 
 1. adobe-livecycle-client.jar 파일을 라이브러리에 추가합니다.
 1. 필요한 아이콘 추가
@@ -203,7 +205,7 @@ public class ZIPService {
 
 ![Zip 문서](assets/zip-doc.jpg)
 
-다음 워크플로우 오케스트레이션은 주어진 ZIP 파일의 압축을 풀고 다른 ZIP 파일로 다시 압축하여 출력을 반환하는 방법을 보여 줍니다(아래 그림 참조).
+다음 워크플로우 오케스트레이션은 지정된 ZIP 파일의 압축을 풀고, 다른 ZIP 파일로 다시 압축하고, 출력을 반환하는 방법을 보여 줍니다(아래 그림 참조).
 
 ![압축 풀기 워크플로우](assets/unzip-zip-process.jpg)
 

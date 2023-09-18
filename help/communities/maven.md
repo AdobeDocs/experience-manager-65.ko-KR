@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe Experience Manager(AEM) Communities 설명서의 이 섹션에는 다음 �
 >
 >최신 Communities 릴리스를 최신 상태로 유지합니다.
 >
->다음을 참조하십시오 [최신 릴리스](deploy-communities.md#latest-releases) 섹션을 통해 최신 버전을 식별할 수 있습니다.
+>다음을 참조하십시오. [최신 릴리스](deploy-communities.md#latest-releases) 가장 최근 버전을 식별할 수 있는 섹션입니다.
 
 ## Maven 종속성 예 {#maven-dependency-example}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager(AEM) Communities 설명서의 이 섹션에는 다음 �
 
 >[!NOTE]
 >
->다음을 참조하십시오 [AEM Uber jar 저장소](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) 최신 Uber jar 아티팩트를 식별합니다.
+>다음을 참조하십시오. [AEM Uber jar 저장소](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) 여기서 최신 Uber jar 아티팩트를 식별할 수 있습니다.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

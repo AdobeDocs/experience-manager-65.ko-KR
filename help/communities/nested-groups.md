@@ -1,19 +1,15 @@
 ---
 title: 중첩 그룹 작성
-seo-title: Authoring Nested Groups
 description: 중첩 그룹 만들기
-seo-description: Create nested groups
-uuid: b377dc1b-bbb6-41c9-b0fc-8281e1410685
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '590'
 ht-degree: 4%
 
 ---
@@ -35,7 +31,7 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 
 ![create-group](assets/create-group.png)
 
-그룹 기능은 그룹 인스턴스가 생성되는 폴더로 표시됩니다. 그룹 폴더를 선택하여 엽니다. 게시할 때 만들어진 그룹이 표시됩니다.
+그룹 함수는 그룹 인스턴스가 생성되는 폴더로 표시됩니다. 열려면 그룹 폴더를 선택합니다. 게시할 때 만들어진 그룹이 표시됩니다.
 
 ![새 그룹 만들기](assets/create-new-group.png)
 
@@ -99,7 +95,7 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 
 ![그룹 게시됨](assets/group-published.png)
 
-다음 `arts` 그룹에도 다음이 포함되어야 합니다: `groups` 폴더이지만 비어 있고 새 그룹을 만들 수 있는 폴더입니다. 예술 그룹 폴더로 이동하고 각각 다른 멤버십 설정을 갖는 3개의 중첩 그룹을 만듭니다.
+다음 `arts` 그룹에도 다음이 포함되어야 합니다: `groups` 폴더이지만 비어 있고 새 그룹을 만들 수 있는 폴더입니다. 예술 그룹 폴더로 이동하고 각각 다른 멤버십 설정을 갖는 세 개의 중첩된 그룹을 만듭니다.
 
 1. **[!UICONTROL 비주얼]**
 
@@ -122,15 +118,15 @@ AEM 작성자 인스턴스의 전역 탐색에서:
    * 템플릿: `Reference Group`
    * 멤버십: 선택 `Restricted Membership`: 비밀 그룹이며 초대받은 구성원에게만 표시됩니다. 예를 들어, 초대 [데모 사용자](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
-중첩된 세 그룹(하위 커뮤니티)을 모두 보려면 페이지를 새로 고침하십시오.
+중첩된 세 그룹(하위 커뮤니티)을 모두 볼 수 있도록 페이지를 새로 고칩니다.
 
 커뮤니티 사이트 콘솔에서 중첩 그룹으로 이동하려면 다음을 수행합니다.
 
-* 선택 **[!UICONTROL engage 폴더]**
+* 다음 항목 선택 **[!UICONTROL engage 폴더]**
 * 선택 **[!UICONTROL 시작하기 튜토리얼 카드]**
-* 선택 **[!UICONTROL 그룹]** 폴더
+* 다음 항목 선택 **[!UICONTROL 그룹]** 폴더
 * 선택 **[!UICONTROL 예술 카드]**
-* 선택 **[!UICONTROL 그룹]** 폴더
+* 다음 항목 선택 **[!UICONTROL 그룹]** 폴더
 
 ![create-new-group2](assets/create-new-group2.png)
 
@@ -144,7 +140,7 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 
    * 그룹이 게시되었다는 확인을 기다리는 중입니다.
 
-* 다음 내에 중첩된 그룹을 게시하기 전에 상위 그룹 게시:
+* 다음 내에 중첩된 그룹을 게시하기 전에 상위 그룹을 게시합니다.
 
    * 모든 그룹은 하향식으로 게시되어야 합니다.
 
@@ -154,12 +150,12 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 
 로그인할 때 예를 들어 을 사용하여 여러 그룹을 경험할 수 있습니다. [데모 사용자](/help/communities/tutorials.md#demo-users) 다음에 사용됨:
 
-* Art/History 그룹 구성원: emily.andrews@mailinator.com/password
+* 미술/역사 그룹 구성원: `emily.andrews@mailinator.com/password`
    * 제한된(비밀) 그룹, 예술/역사가 표시됩니다.
    * 선택적 (공용) 그룹을 볼 수 있습니다.
    * 제한된(열려 있는) 그룹에 참가할 수 있습니다.
 
-* 그룹 관리자: aaron.mcdonald@mailinator.com/password
+* 그룹 관리자: `aaron.mcdonald@mailinator.com/password`
 
    * 선택적 (공용) 그룹을 볼 수 있습니다.
    * 제한된(열려 있는) 그룹에 참가할 수 있습니다.

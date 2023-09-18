@@ -1,18 +1,14 @@
 ---
 title: Essentials 검색
-seo-title: Search Essentials
 description: 커뮤니티에서 검색
-seo-description: Search in Communities
-uuid: 5f35a033-2069-499e-9cdb-db25781312f0
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1170'
 ht-degree: 4%
 
 ---
@@ -21,13 +17,13 @@ ht-degree: 4%
 
 ## 개요 {#overview}
 
-검색 기능은 AEM Communities의 필수 기능입니다. 이외에도 [AEM 플랫폼 검색](../../help/sites-deploying/queries-and-indexing.md) 기능, AEM Communities은 [UGC 검색 API](#ugc-search-api) 사용자 생성 컨텐츠(UGC) 검색 목적. UGC는 다른 AEM 콘텐츠 및 사용자 데이터와 별도로 입력 및 저장되므로 고유한 속성을 갖습니다.
+검색 기능은 Adobe Experience Manager(AEM) 커뮤니티의 필수 기능입니다. 이외에도 [AEM 플랫폼 검색](../../help/sites-deploying/queries-and-indexing.md) 기능, AEM Communities은 [UGC 검색 API](#ugc-search-api) 사용자 생성 컨텐츠(UGC) 검색 UGC는 다른 AEM 콘텐츠 및 사용자 데이터와 별도로 입력 및 저장되므로 고유한 속성을 갖습니다.
 
 Communities에서 일반적으로 검색되는 두 가지 사항은 다음과 같습니다.
 
 * 커뮤니티 회원이 게시한 컨텐츠
 
-   * AEM 커뮤니티의 UGC 검색 API를 사용합니다.
+   * AEM Communities의 UGC 검색 API를 사용합니다.
 
 * 사용자 및 사용자 그룹(사용자 데이터)
 
@@ -37,7 +33,7 @@ Communities에서 일반적으로 검색되는 두 가지 사항은 다음과 �
 
 ## 보안 및 섀도우 노드 {#security-and-shadow-nodes}
 
-사용자 지정 구성 요소의 경우 [소셜 리소스 유틸리티](socialutils.md#socialresourceutilities-package) 메서드를 사용합니다. UGC를 만들고 검색하는 유틸리티 메서드는 필요한 를 설정합니다 [그림자 노드](srp.md#about-shadow-nodes-in-jcr) 및 을 사용하여 구성원에게 요청에 대한 올바른 권한이 있는지 확인합니다.
+사용자 지정 구성 요소의 경우 [소셜 리소스 유틸리티](socialutils.md#socialresourceutilities-package) 메서드를 사용합니다. UGC를 만들고 검색하는 유틸리티 메서드는 필요한 를 설정합니다 [그림자 노드](srp.md#about-shadow-nodes-in-jcr) 및 구성원이 요청에 대해 올바른 권한을 가지고 있는지 확인합니다.
 
 SRP 유틸리티를 통해 관리되지 않는 것은 중재와 관련된 속성입니다.
 
@@ -45,7 +41,7 @@ SRP 유틸리티를 통해 관리되지 않는 것은 중재와 관련된 속성
 
 ## UGC 검색 API {#ugc-search-api}
 
-다음 [UGC 공용 스토어](working-with-srp.md) 는 다양한 SRP(Storage Resource Provider) 중 하나에서 제공되며, 각 SRP에는 서로 다른 기본 쿼리 언어가 있을 수 있습니다. 따라서 선택한 SRP에 관계없이 사용자 지정 코드에서는 [UGC API 패키지](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) 선택한 SRP에 적합한 쿼리 언어를 호출합니다.
+다음 [UGC 공용 스토어](working-with-srp.md) 는 다양한 SRP(저장소 리소스 제공자) 중 하나에서 제공하며, 각각은 서로 다른 기본 쿼리 언어를 가질 수 있습니다. 따라서 선택한 SRP에 관계없이 사용자 지정 코드에서는 [UGC API 패키지](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) 선택한 SRP에 적합한 쿼리 언어를 호출합니다.
 
 ### ASRP 검색 {#asrp-searches}
 
@@ -76,7 +72,7 @@ MSRP 및 Solr 관련 사항:
 
 UGC는 일반적으로 게시 환경에 입력되므로 다중 게시자 프로덕션 시스템의 경우 를 구성해야 합니다 [클러스터 게시](topologies.md): 모든 게시자에서 볼 수 있도록 입력한 컨텐츠가 게시 팜이 아닙니다.
 
-JSRP의 경우 게시 환경에 입력된 UGC가 작성 환경에 표시되지 않습니다. 따라서 모두 [중재](moderate-ugc.md) 작업은 게시 환경에서 수행됩니다.
+JSRP의 경우 게시 환경에 입력된 UGC는 작성 환경에 표시되지 않습니다. 따라서 모두 [중재](moderate-ugc.md) 작업은 게시 환경에서 수행됩니다.
 
 사용자 정의 검색 기능은 [UGC 검색 API](#ugc-search-api).
 
@@ -84,14 +80,14 @@ JSRP의 경우 게시 환경에 입력된 UGC가 작성 환경에 표시되지 �
 
 AEM 플랫폼 검색에 대해 Oak 색인은 자동으로 만들어지지 않지만 AEM 6.2부터는 AEM Communities에 추가되어 성능을 향상시키고 UGC 검색 결과를 표시할 때 페이지 매김을 지원합니다.
 
-사용자 정의 속성이 사용 중이고 검색 속도가 느린 경우 사용자 정의 속성의 성능을 높이기 위해 추가 인덱스를 만들어야 합니다. 휴대성을 유지하려면 다음을 준수하십시오. [이름 지정 요구 사항](#naming-of-custom-properties) 검색할 수 있는 사용자 지정 속성을 만들 때.
+사용자 지정 속성이 사용 중이고 검색 속도가 느린 경우 사용자 지정 속성에 대한 추가 색인을 만들어야 성능이 향상됩니다. 휴대성을 유지하려면 다음을 준수하십시오. [이름 지정 요구 사항](#naming-of-custom-properties) 검색할 수 있는 사용자 지정 속성을 만들 때.
 
 기존 색인을 수정하거나 사용자 정의 색인을 만들려면 다음을 참조하십시오. [Oak 쿼리 및 색인 지정](../../help/sites-deploying/queries-and-indexing.md).
 
 다음 [Oak 색인 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) 는 ACS AEM Commons에서 사용할 수 있습니다. 다음을 제공합니다.
 
 * 기존 인덱스 보기.
-* 색인 재지정 시작 기능.
+* 리인덱싱을 시작할 수 있습니다.
 
 에서 기존 Oak 인덱스를 보려면 [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)를 검색하는 경우 위치는 다음과 같습니다.
 
@@ -137,7 +133,7 @@ AEM 플랫폼 검색에 대해 Oak 색인은 자동으로 만들어지지 않지
 
 ### 사용자 지정 속성 이름 지정 {#naming-of-custom-properties}
 
-사용자 지정 속성을 추가할 때 [UGC 검색 API](#ugc-search-api), 입니다. *필수* 속성 이름에 접미사를 추가합니다.
+사용자 지정 속성을 추가할 때 로 만든 정렬 및 검색에 해당 속성이 표시되도록 하려면 [UGC 검색 API](#ugc-search-api), 입니다. *필수* 속성 이름에 접미사를 추가합니다.
 
 접미사는 스키마를 사용하는 쿼리 언어용입니다.
 
@@ -159,14 +155,14 @@ Solr은 스키마를 사용하는 쿼리 언어의 예입니다.
 
 * *텍스트* 토큰화된 문자열이며, *문자열* 아님. 사용 *텍스트* 유사(이와 유사한) 검색을 위해.
 
-* 여러 값 유형의 경우 접미사에 &#39;s&#39;를 추가합니다. 예를 들면 다음과 같습니다.
+* 다중 값 형식의 경우 접미사에 &#39;s&#39;를 추가하십시오. 예를 들면 다음과 같습니다.
 
    * `viewDate_dt`: 단일 날짜 속성
    * `viewDates_dts`: 날짜 속성 목록
 
 ## 필터 {#filters}
 
-다음을 포함하는 구성 요소 [주석 시스템](essentials-comments.md) 종단점에 필터 매개 변수를 추가할 수 있습니다.
+구성 요소. [주석 시스템](essentials-comments.md)는 종단점 외에 필터 매개 변수를 지원합니다.
 
 AND 및 OR 논리에 대한 필터 구문은 다음과 같이 표현됩니다(URL로 인코딩되기 전에 표시됨).
 
@@ -182,7 +178,7 @@ AND 및 OR 논리에 대한 필터 구문은 다음과 같이 표현됩니다(UR
 
 필터 연산자는 다음과 같습니다.
 
-| EQ | 같음 |
+| EQ | equals |
 |---|---|
 | NE | 같지 않음 |
 | LT | 보다 작음 |
@@ -200,13 +196,13 @@ URL은 구성 요소가 배치된 페이지가 아니라 Communities 구성 요�
 
 ## SRP 도구 {#srp-tools}
 
-다음을 포함하는 Adobe Marketing Cloud GitHub 프로젝트가 있습니다.
+다음을 포함하는 Adobe Experience Cloud GitHub 프로젝트가 있습니다.
 
 [AEM Communities SRP 도구](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 이 저장소에는 SRP에서 데이터를 관리하기 위한 도구가 들어 있습니다.
 
-현재 모든 SRP에서 모든 UGC를 삭제할 수 있는 기능을 제공하는 서블릿이 한 개 있습니다.
+현재 모든 SRP에서 모든 UGC를 삭제할 수 있는 서블릿이 한 개 있습니다.
 
 예를 들어 ASRP에서 모든 UGC를 삭제하려면 다음을 수행하십시오.
 
@@ -220,7 +216,7 @@ curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/use
 
 Solr 쿼리의 문제를 해결하려면 다음에 대한 DEBUG 로깅을 활성화합니다.
 
-`com.adobe.cq.social.srp.impl.SocialSolrConnector`.
+`com.adobe.cq.social.srp.impl.SocialSolrConnector`
 
 실제 Solr 쿼리는 디버그 로그에 인코딩된 URL로 표시됩니다.
 

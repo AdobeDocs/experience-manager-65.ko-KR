@@ -1,20 +1,16 @@
 ---
 title: 배지 콘솔
-seo-title: Badges Console
 description: 커뮤니티 배지 콘솔을 사용하면 회원이 획득(수상)하거나 커뮤니티에서 특정 역할을 수행할 때(할당)에 표시할 수 있는 사용자 정의 배지를 추가할 수 있습니다
-seo-description: The Communities Badges console lets you add custom badges that can be displayed for members when earned (awarded) or when they take on a specific role in the community (assigned)
-uuid: 7103b133-ef3f-47d6-a2dc-4e6ff92e8fed
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 role: Admin
 exl-id: 50ed9ec4-ff04-4f9d-aefb-0837542a9455
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '283'
 ht-degree: 4%
 
 ---
@@ -23,11 +19,11 @@ ht-degree: 4%
 
 ## 배지 정보 {#about-badges}
 
-커뮤니티 배지 콘솔에서는 획득(수상) 또는 커뮤니티에서 특정 역할을 수행할(할당) 때 멤버에 대해 표시할 수 있는 사용자 정의 배지를 추가하는 기능을 제공합니다.
+커뮤니티 배지 콘솔을 사용하면 획득(수여) 또는 커뮤니티에서 특정 역할을 수행할(할당) 때 멤버에 대해 표시할 수 있는 사용자 정의 배지를 추가할 수 있습니다.
 
 ### 배지 가시성 {#badge-visibility}
 
-현재, 커뮤니티 회원이 획득하거나 할당된 배지는 다음 위치에 해당 이름 및 아바타와 함께 표시됩니다.
+현재 커뮤니티 회원이 획득하거나 할당된 배지가 이름 및 아바타와 함께 다음 위치에 나타납니다.
 
 * 프로필
 * [포럼](/help/communities/forum.md)
@@ -53,19 +49,19 @@ ht-degree: 4%
 
 * **이미지 업로드**
 
-   (*필수*) JPEG 또는 PNG 포맷으로 권장 크기가 32 x 32 픽셀(72dpi)인 배지 이미지입니다.
+  (*필수*) JPEG 또는 PNG 포맷으로 권장 크기가 32 x 32 픽셀(72dpi)인 배지 이미지입니다.
 
 * **이름**
 
-   (*필수*) 배지 이름입니다. 기본값입니다 `Display Name` 및 저장소 노드 이름이 표시됩니다. 다음과 같은 경우 `Name` 은(는) 유효한 저장소 노드 이름이 아니므로 수정됩니다.
+  (*필수*) 배지 이름입니다. 기본값입니다 `Display Name` 및 저장소 노드 이름입니다. 다음과 같은 경우 `Name` 은(는) 유효한 저장소 노드 이름이 아닙니다. 수정되었습니다.
 
 * **표시 이름**
 
-   (*선택 사항*) UI에서 배지에 대해 표시할 이름입니다. 기본값은 다음에 대해 입력된 변경되지 않은 텍스트입니다. `Name`.
+  (*선택 사항*) 사용자 인터페이스에 배지에 대해 표시할 이름입니다. 기본값은 다음에 대해 입력된 변경되지 않은 텍스트입니다. `Name`.
 
 * **설명**
 
-   (*선택 사항*) 배지에 대한 설명입니다.
+  (*선택 사항*) 배지에 대한 설명입니다.
 
 ## 추가 정보 {#additional-information}
 

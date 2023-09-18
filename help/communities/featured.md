@@ -1,18 +1,14 @@
 ---
 title: 특별 포함된 컨텐츠 기능
-seo-title: Featured Content Feature
 description: 주요 콘텐츠 기능을 사용하면 로그인한 사이트 방문자가 콘텐츠를 강조 표시할 수 있습니다
-seo-description: The Featured Content feature lets signed-in site visitors highlight content
-uuid: 7a2ff570-01bb-46fb-8d66-3b47e2efa72e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 exl-id: 76b76e0e-531b-4f80-be70-68532ef81a7f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '338'
 ht-degree: 5%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 5%
 
 ## 소개 {#introduction}
 
-주요 콘텐츠 기능은 게시 환경의 로그인한 사이트 방문자(커뮤니티 구성원)가 콘텐츠를 강조 표시할 수 있는 영역을 제공합니다.
+주요 콘텐츠 기능은 게시 환경에서 로그인한 사이트 방문자(커뮤니티 구성원)가 다음에 대한 콘텐츠를 강조 표시할 수 있는 영역을 제공합니다.
 
 * [블로그](blog-feature.md)
 * [캘린더](calendar.md)
@@ -29,7 +25,7 @@ ht-degree: 5%
 * [아이디어](ideation-feature.md)
 * [QnA](working-with-qna.md)
 
-추천 콘텐츠로 플래그가 지정되면 이 구성 요소 내에 나열됩니다. 특정 랜딩 페이지나 커뮤니티 회원의 관심을 쉽게 끌 수 있는 영역에 배치될 수 있습니다.
+추천 콘텐츠로 플래그가 지정되면 이 구성 요소 내에 나열됩니다. 특정 랜딩 페이지나 커뮤니티 회원의 관심을 쉽게 끌 수 있는 영역에 배치할 수 있습니다.
 
 구성 요소별로 콘텐츠 기능 활성화가 허용되거나 비활성화될 수 있습니다.
 
@@ -44,7 +40,7 @@ ht-degree: 5%
 
 * `Communities / Featured Content`
 
-을 클릭하고 추천 컨텐츠가 나타나야 하는 페이지에 있는 위치로 드래그합니다.
+그리고 추천 컨텐츠가 나타나야 하는 페이지에 드래그하여 놓습니다.
 
 필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](basics.md).
 
@@ -54,7 +50,7 @@ ht-degree: 5%
 
 ## 주요 콘텐츠 구성 {#configuring-featured-content}
 
-배치된 을(를) 선택합니다 `Featured Content` 에 액세스하고 선택할 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 을(를) 선택합니다 `Featured Content` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
 
 ![새로 구성](assets/configure-new.png)
 
@@ -66,15 +62,15 @@ ht-degree: 5%
 
 * **[!UICONTROL 표시 이름]**
 
-   추천 콘텐츠 목록에 대한 제목입니다. 예 `Featured Questions` 또는 `Featured Ideas`. 기본값은 입니다 `Featured Content` 비워 두면
+  추천 콘텐츠 목록에 대한 제목입니다. 예를 들어, `Featured Questions` 또는 `Featured Ideas`. 기본값은 입니다 `Featured Content` 비워 두면
 
 * **[!UICONTROL 특별 포함된 컨텐츠의 위치]**
 
-   *(필수)* 기능이 될 수 있는 콘텐츠가 포함된 페이지로 이동합니다(해당 페이지의 구성 요소는 주요 콘텐츠를 허용하도록 구성되어야 함). (예: `/content/sites/engage/en/forum`)
+  *(필수)* 추천 가능 콘텐츠가 포함된 페이지로 이동합니다(해당 페이지의 구성 요소는 추천 콘텐츠를 허용하도록 구성되어야 함). 예: `/content/sites/engage/en/forum`
 
 * **[!UICONTROL 표시 제한]**
 
-   표시할 최대 추천 콘텐츠 수입니다. 기본값은 5입니다.
+  표시할 최대 추천 콘텐츠 수입니다. 기본값은 5입니다.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
@@ -84,13 +80,13 @@ ht-degree: 5%
 
 ![사이트 방문자 경험](assets/site-visitor-experience.png)
 
-기능으로 플래그가 지정되면 전환 플래그가 다음과 같이 됩니다. `Unfeature`.
+기능으로 플래그가 지정되면 관리 플래그가 다음과 같이 됩니다. `Unfeature`.
 
 다음 항목이 포함된 페이지 `Featured Content` 구성 요소에 이제 이 게시물이 포함됩니다.
 
 ![site-visitor-experience1](assets/site-visitor-experience1.png)
 
-`Read More` 는 실제 게시물에 대한 링크입니다.
+다음 `Read More` 실제 게시물에 대한 링크입니다.
 
 ## 추가 정보 {#additional-information}
 

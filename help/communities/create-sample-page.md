@@ -1,18 +1,14 @@
 ---
 title: 샘플 페이지 만들기
-seo-title: Create a Sample Page
 description: 샘플 커뮤니티 사이트 만들기
-seo-description: Create a Sample community site
-uuid: 04a8f027-b7d8-493a-a9bd-5c4a6715d754
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
-discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
@@ -21,15 +17,15 @@ ht-degree: 2%
 
 AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 페이지 함수로 구성된 간단한 커뮤니티 사이트를 만드는 것입니다.
 
-여기에 parsys 구성 요소가 포함되므로 [작성을 위한 구성 요소 활성화](basics.md#accessing-communities-components).
+여기에는 Parsys 구성 요소가 포함되어 다음과 같은 작업을 수행할 수 있습니다 [작성을 위한 구성 요소 활성화](basics.md#accessing-communities-components).
 
-샘플 구성 요소를 사용하여 탐색하는 또 다른 옵션은 [커뮤니티 구성 요소 안내서](components-guide.md).
+샘플 구성 요소로 탐색하는 또 다른 옵션은 [커뮤니티 구성 요소 안내서](components-guide.md).
 
 ## 커뮤니티 사이트 만들기 {#create-a-community-site}
 
-이에 설명된 새 사이트를 만드는 것과 매우 유사합니다 [AEM Communities 시작하기](getting-started.md).
+이에 설명된 사이트를 만드는 것과 유사합니다 [AEM Communities 시작하기](getting-started.md).
 
-주요 차이점은 이 자습서가 만 포함하는 새 커뮤니티 사이트 템플릿을 만들 것이라는 것입니다. [페이지 기능](functions.md#page-function) 다른 기능이 없는 간단한 커뮤니티 사이트를 만들기 위해 (모든 커뮤니티 사이트에 기본이 되는 사전 연결된 기능 제외).
+주요 차이점은 이 자습서가 만 포함된 커뮤니티 사이트 템플릿을 만든다는 것입니다. [페이지 기능](functions.md#page-function) 간단한 커뮤니티 사이트를 만들 수 있습니다. 이 작업은 다른 기능(모든 커뮤니티 사이트에 기본 제공되는 사전 연결된 기능 제외)에서 무료로 수행됩니다.
 
 ### 새 사이트 템플릿 만들기 {#create-new-site-template}
 
@@ -63,7 +59,7 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
 
 ### 새 커뮤니티 사이트 만들기 {#create-new-community-site}
 
-이제 간단한 사이트 템플릿을 기반으로 새 커뮤니티 사이트를 만듭니다.
+이제 간단한 사이트 템플릿을 기반으로 커뮤니티 사이트를 만듭니다.
 
 사이트 템플릿을 만든 후 전역 탐색에서 을 선택합니다. **[!UICONTROL 커뮤니티 > 사이트]**.
 
@@ -83,8 +79,7 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
 
       * `Template`: 선택 `Single Page Template`
 
-      ![create-community-site-template](assets/create-community-site-template.png)
-
+     ![create-community-site-template](assets/create-community-site-template.png)
 
 * 선택 `Next`
 * 단계 `2 - Design`
@@ -94,11 +89,11 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
 * 선택 `Next`
 * 선택 `Next`
 
-   (모든 기본 설정 적용)
+  (모든 기본 설정 적용)
 
 * 선택 `Create`
 
-   ![커뮤니티 사이트 만들기](assets/create-community-site.png)
+  ![커뮤니티 사이트 만들기](assets/create-community-site.png)
 
 ## 사이트 게시 {#publish-the-site}
 
@@ -110,13 +105,13 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
 
 ![공개 사이트](assets/open-site.png)
 
-사이트 열기 아이콘을 선택하여 편집 모드로 사이트를 확인합니다.
+편집 모드에서 사이트를 볼 수 있도록 사이트 열기 아이콘을 선택합니다.
 
 URL은 [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
 ![author-site](assets/author-site.png)
 
-간단한 홈 페이지에서는 커뮤니티 기능과 템플릿을 통해 미리 배선된 항목을 확인하고 커뮤니티 구성 요소를 추가 및 구성하는 작업을 수행할 수 있습니다.
+간단한 홈 페이지에서는 커뮤니티 기능과 템플릿을 통해 미리 배선된 내용을 확인하고 커뮤니티 구성 요소를 추가 및 구성하는 작업을 수행할 수 있습니다.
 
 ## 게시할 때 사이트 보기 {#view-site-on-publish}
 
