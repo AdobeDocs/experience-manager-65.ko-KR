@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 923ec028679031c9ef9ea6ae2cf827e7a4cd00d8
+source-git-commit: f41962faa0567ed99c1e2ab189e81fb978781af3
 workflow-type: tm+mt
-source-wordcount: '5517'
+source-wordcount: '5515'
 ht-degree: 2%
 
 ---
@@ -481,7 +481,7 @@ Microsoft® Windows에서 PDF Generator 서비스는 Adobe Acrobat을 사용하�
 
 ### (Windows만 해당) HTML-PDF 변환을 위한 기본 경로 구성 {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 여러 경로(Webkit, Acrobat WebCapture(Windows에만 해당) 및 PhantomJS)를 제공합니다. Adobe은 동적 콘텐츠를 처리할 수 있고 32비트 라이브러리, 32비트 JDK에 대한 종속성이 없거나 추가 글꼴이 필요하지 않으므로 PhantomJS 경로를 사용하는 것이 좋습니다. 또한 PhantomJS 경로는 변환을 실행하기 위해 sudo 또는 root 액세스가 필요하지 않습니다.
+PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 여러 경로(Webkit, Acrobat WebCapture(Windows에만 해당) 및 PhantomJS)를 제공합니다. Adobe은 동적 콘텐츠를 처리할 수 있고 32비트 라이브러리에 대한 종속성이 없거나 추가 글꼴이 필요 없으므로 PhantomJS 라우트를 사용하는 것이 좋습니다. 또한 PhantomJS 경로는 변환을 실행하기 위해 sudo 또는 root 액세스가 필요하지 않습니다.
 
 HTML-PDF 전환의 기본 기본 기본 경로는 Webkit입니다. 변환 경로를 변경하려면:
 
