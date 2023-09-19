@@ -1,14 +1,14 @@
 ---
 title: We.Finance 자동차 보험 갱신 참조 사이트 안내
-description: We.Finance 자동차 보험 갱신 참조 사이트 안내
+description: 연습을 통해 We.Finance 자동차 보험 갱신 참조 사이트에 대해 알아보십시오.
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 We.Finance 사이트는 AEM Forms의 대화형 통신 기능을 학습할 수 있도록 설계된 금융 서비스 사이트입니다.
 
-AEM Forms 및 Microsoft® Dynamics와의 통합이 금융 서비스 회사에서 고객 경험을 개인화하는 데 어떻게 도움이 되는지를 보여 주는 We.Finance 자동 보험 사용 사례의 자세한 설명을 참조하십시오. 이 대화형 연습은 금융 회사에서 복잡한 디지털 거래와 고객 커뮤니케이션을 쉽게 구현할 수 있도록 설계되었습니다.
+AEM Forms 및 Microsoft® Dynamics와의 통합이 금융 서비스 회사에서 고객 경험을 개인화하는 데 어떻게 도움이 되는지 보여주는 We.Finance 자동 보험 사용 사례에 대한 자세한 설명을 읽어 보십시오. 이 대화형 연습은 금융 회사에서 복잡한 디지털 거래와 고객 커뮤니케이션을 쉽게 구현할 수 있도록 설계되었습니다.
 
 **여정은 사용 사례로 시작합니다.**
 
-Sarah Rose는 기존 We.Finance 고객이며 자동차 보험에 가입했습니다. 지금은 사라의 보험 정책을 갱신해야 할 때이다. We.Finance의 보험 대리점 Gloria Rios가 보험 갱신에 대한 리마인더를 Sarah에게 보냅니다. Sarah는 이메일에 제공된 지침을 따르고 프로세스를 성공적으로 완료합니다.
+Sarah Rose는 기존 We.Finance 고객이며 자동차 보험에 가입했습니다. 새라가 보험 증권을 갱신해야 할 때가 바로 그때이다. 글로리아 리오스는 보험 담당자예요 We.Finance에서 Sarah에게 정책 갱신에 대한 알림 메시지를 보냅니다. Sarah는 이메일에 제공된 지침을 따르고 프로세스를 성공적으로 완료합니다.
 
 ## 자동 보험 애플리케이션 워크스루 {#auto-insurance-application-walkthrough}
 
@@ -34,7 +34,7 @@ We.Finance 자동 보험 응용 프로그램 시나리오는 사용자를 위한
 
 ### Gloria가 We.Finance에서 보험 증서 갱신 통신을 보냅니다. {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria가 AEM 인스턴스에 로그인합니다. **자동차 보험 갱신,** 클릭 수 **에이전트 UI를 엽니다.**&#x200B;클릭으로 보험 문서에 Sarah Rose의 보험 세부 정보가 미리 채워진다. 글로리아 클릭스&#x200B;**제출** 그리고 메시지가 &quot;제출 시작&quot; 화면에 표시된 다음 몇 초 후에 &quot;제출 완료&quot;로 표시됩니다.
+Gloria가 AEM 인스턴스에 로그인합니다. **자동차 보험 갱신,** 클릭 수 **에이전트 UI 열기**. 클릭으로 보험 문서에 Sarah Rose의 보험 세부 정보가 미리 채워진다. 글로리아 클릭스 **제출** 그리고 메시지가 &quot;제출 시작&quot; 화면에 표시된 다음 몇 초 후에 &quot;제출 완료&quot;로 표시됩니다.
 
 Sarah는 &quot;자동차 보험 갱신&quot;이라는 제목이 포함된 이메일을 수신합니다.
 
@@ -72,7 +72,7 @@ PDF이 첨부된 이메일을 받았어야 합니다. PDF은 자동차 보험 �
 
 ### Sarah가 결제 페이지에 도달 {#sarah-reaches-the-payment-page}
 
-We.Finance는 Sarah를 지불 페이지로 안내합니다. Sarah는 자신의 기록을 가지고 자신의 정책 번호와 만료일을 다시 확인합니다. 페이지 오른쪽에서, 그녀는 총 금액에 10% 프리미엄 할인과 갱신의 지불 요약을 확인합니다.
+We.Finance는 Sarah를 지불 페이지로 안내합니다. Sarah는 자신의 기록을 가지고 자신의 정책 번호와 만료일을 다시 확인합니다. 페이지 오른쪽에서 Sarah는 총 금액에 대해 10% 할인이 적용된 갱신 결제 요약을 확인합니다.
 
 #### 작동 방식 {#how-it-works-1}
 
