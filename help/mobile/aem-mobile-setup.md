@@ -1,18 +1,14 @@
 ---
 title: AEM Mobile 설정
-seo-title: AEM Mobile SetUp
-description: 이 페이지를 따라 AEM Mobile을 설정하여 사용자가 AEM 내에서 콘텐츠를 만들고 관리할 수 있도록 합니다. 이 페이지에서는 AEM 인스턴스를 클라우드 기반 AEM Mobile On-demand Services 계정 및 프로젝트와 통합하는 방법에 대한 정보를 제공합니다.
-seo-description: Follow this page for setting up AEM Mobile and thus allowing the user to create and manage the content within AEM. This page provides information on integrating the AEM instance with the cloud-based AEM Mobile On-Demand Services account and project(s).
-uuid: 03bf5b56-7750-4f76-b079-43761367655a
+description: 이 페이지를 따라 AEM Mobile을 설정하여 사용자가 Adobe Experience Manager(AEM) 내에서 콘텐츠를 만들고 관리할 수 있도록 합니다. 이 페이지에서는 AEM 인스턴스와 클라우드 기반 AEM Mobile On-demand Services 계정 및 프로젝트의 통합에 대한 정보를 제공합니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '928'
 ht-degree: 2%
 
 ---
@@ -25,9 +21,9 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->AEM 6.2 또는 6.3에서 AEM 6.5로 마이그레이션하는 기존 AEM Mobile 앱 고객은 PackageShare에서 패키지를 다운로드하여 AEM Mobile 앱을 계속 사용할 수 있습니다. 그러나 AEM 6.5를 새로 설치하면 AEM Mobile 앱 기능이 지원되지 않습니다.
+>AEM 6.2 또는 6.3에서 AEM 6.5로 마이그레이션하는 기존 AEM(Adobe Experience Manager) 모바일 앱 고객은 패키지 공유에서 패키지를 다운로드하여 AEM Mobile 앱을 계속 사용할 수 있습니다. 그러나 AEM 6.5의 새 설치는 AEM Mobile 앱 기능을 지원하지 않습니다.
 
-AEM을 사용하여 AEM Mobile 앱용 콘텐츠를 제작하려면 AEM 인스턴스를 클라우드 기반 AEM Mobile On-demand Services 계정 및 프로젝트와 통합해야 합니다.
+AEM을 사용하여 AEM Mobile 앱용 콘텐츠를 생성하려면 AEM 인스턴스를 클라우드 기반 AEM Mobile On-demand Services 계정 및 프로젝트와 통합해야 합니다.
 
 다음 단계에 따라 AEM Mobile을 설정하고 사용자가 AEM 내에서 콘텐츠를 만들고 관리할 수 있도록 합니다.
 
@@ -40,7 +36,7 @@ AEM Mobile 설정을 시작하려면 다음을 수행해야 합니다.
 * **장치 ID 및 장치 토큰 생성**: API 키를 받으면 장치 ID 및 장치 토큰을 생성할 수 있습니다. 다음으로 이동 `https://aex.aemmobile.adobe.com` 다음을 수행합니다.
 
    * API 키 제공
-   * 다음 권한으로 AEM Mobile 프로젝트에 추가한 Adobe ID으로 로그인합니다(프로젝트 만들기 아래 단계 참조)
+   * 다음 권한으로 AEM Mobile 프로젝트에 추가한 Adobe ID으로 로그인합니다(프로젝트를 만들려면 아래 단계 참조)
 
       * 관리 > 프로젝트 및 사용자 관리
       * 컨텐츠 > 컨텐츠 추가 및 편집, 컨텐츠 삭제, 컨텐츠 보기, 컨텐츠 게시
@@ -53,7 +49,7 @@ AEM Mobile 설정을 시작하려면 다음을 수행해야 합니다.
 
 ## AEM Mobile에 대한 프로젝트 만들기 {#creating-projects-for-aem-mobile}
 
-프로젝트를 만들 때 타겟팅하는 플랫폼(iOS, Android, Windows 및 Desktop Web Viewer)에 대한 설정을 지정합니다. 지정하는 프로젝트 설정 중 대부분은 앱의 동작에 영향을 줍니다.
+프로젝트를 만들 때 타겟팅하는 플랫폼(iOS, Android™, Windows 및 Desktop Web Viewer)에 대한 설정을 지정합니다. 지정하는 프로젝트 설정 중 대부분은 앱의 동작에 영향을 줍니다.
 
 프로젝트를 만들려면 기본 관리자 역할이 있는 Adobe ID을 사용하여 온디맨드 서비스 포털에 로그인해야 합니다. 프로젝트를 편집하려면 기본 관리자 역할이나 **프로젝트 및 사용자 관리** 권한.
 
@@ -73,7 +69,7 @@ AEM Mobile 온디맨드 커넥터는 AEM Mobile 관리 콘텐츠를 Adobe Experi
 
 ### AEM Mobile On-demand Services 클라이언트 구성 {#configuring-aem-mobile-on-demand-services-client}
 
-AEM Mobile 통합이 제대로 작동하려면 구성 단계를 완료해야 합니다.
+AEM Mobile 통합이 올바르게 작동하도록 구성 단계를 완료합니다.
 
 1. OSGI 서비스 구성으로 이동
 
@@ -82,7 +78,7 @@ AEM Mobile 통합이 제대로 작동하려면 구성 단계를 완료해야 합
 
 1. 편집 ***Experience Manager Mobile On-demand Services 클라이언트***
 
-   1. **(필수)** 필수 필드 입력:
+   1. **(필수)** 필수 필드를 입력하십시오.
 
       1. 클라이언트 ID.
       1. 클라이언트 암호.
@@ -96,18 +92,18 @@ AEM Mobile 통합이 제대로 작동하려면 구성 단계를 완료해야 합
 
 ### AEM Mobile On-demand Services CloudService 구성 {#configuring-aem-mobile-on-demand-services-cloudservice}
 
-1. Cloud Services으로 이동
+1. Cloud Service으로 이동합니다.
 
    1. AEM > 도구 > 배포> [CloudServices](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html). 스크롤 또는 검색 ***Adobe Experience Manager Mobile 온디맨드 서비스***
 
-1. 선택 ***지금 구성*** 또는 ***구성 표시*** 및 새 구성 추가 아이콘 선택
+1. 선택 ***지금 구성*** 또는 ***구성 표시*** 구성 추가 아이콘을 선택합니다.
 
-1. 새 구성 만들기
+1. 구성 만들기
 
    1. 제목 및 이름 입력
    1. 장치 ID 입력
    1. 장치 토큰 입력
-   1. 선택 ***장치 구성 테스트*** 입력한 값의 유효성을 검사하려면
+   1. 선택 ***장치 구성 테스트*** 입력한 값의 유효성을 검사할 수 있음
    1. 확인 선택
 
 ## AEM Mobile 사용자 역할 추가 및 권한 할당 {#adding-aem-mobile-user-roles-and-assigning-permissions}
@@ -126,9 +122,9 @@ AEM Mobile 앱 개발에서는 세 가지 역할이 있습니다.
 >
 >앱 콘텐츠를 관리하려면 개발자, 콘텐츠 작성자 및 관리자의 공동 노력이 필요합니다. 작성자는 앱 개발자가 생성한 템플릿과 구성 요소를 기반으로 하는 페이지를 조작합니다. 마지막으로 관리자는 업데이트된 앱 컨텐츠를 전략적으로 게시합니다. AEM 그룹 및 권한을 설정하면 App Dashboard 또는 Control Center에서 해당 역할이 정의됩니다.
 >
->AEM Mobile 대시보드에 대한 자세한 내용을 보려면 [여기](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>다음을 참조하십시오 [AEM Mobile 대시보드](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-앱 빌드나 콘텐츠 만들기 및 게시와 같은 다양한 권한으로 역할을 만들었으면 다음을 참조하십시오. [**사용자 및 사용자 그룹 구성**](/help/mobile/aem-mobile-configure-users.md) 모바일 앱의 작성 및 관리를 지원하도록 사용자 및 그룹을 구성할 수 있습니다.
+앱 빌드나 콘텐츠 만들기 및 게시와 같이 다른 권한으로 역할 만들기를 완료하면 을 참조하십시오. [**사용자 및 사용자 그룹 구성**](/help/mobile/aem-mobile-configure-users.md). 이렇게 하면 모바일 앱의 작성 및 관리를 지원하도록 사용자 및 그룹을 구성하는 데 도움이 될 수 있습니다.
 
 ### 추가 리소스 {#additional-resources}
 
@@ -139,4 +135,4 @@ AEM Mobile On-demand Services 앱을 만들기 위한 다른 두 가지 역할�
 
 >[!NOTE]
 >
->페이지 및 문서 찾아보기를 포함하여 앱 컨텐츠를 미리 보려면 을 참조하십시오. [Preflight로 미리 보기](/help/mobile/aem-mobile-manage-ondemand-services.md).
+>찾아보기 페이지 및 문서를 포함하여 앱 컨텐츠를 미리 보려면 다음을 참조하십시오. [Preflight로 미리 보기](/help/mobile/aem-mobile-manage-ondemand-services.md).

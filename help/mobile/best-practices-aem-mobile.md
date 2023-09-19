@@ -1,14 +1,14 @@
 ---
 title: AEM Mobile On-demand Services 우수 사례
-description: 모바일 앱 템플릿 및 구성 요소를 빌드하려는 숙련된 AEM 사이트 개발자에게 도움이 되는 모범 사례 및 지침에 대해 알아봅니다.
+description: 모바일 앱 템플릿 및 구성 요소를 빌드하려는 사이트에 대해 유능한 Adobe Experience Manager(AEM) 개발자를 지원하는 모범 사례 및 지침에 대해 알아봅니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap) 셸에서 직접 실행되는 앱을 빌드하는 것과 다릅니다. 개발자는 다음 사항에 익숙해야 합니다.
 
-* 즉시 지원되는 플러그인 및 AEM Mobile 관련 플러그인입니다.
+* 즉시 지원되는 플러그인 및 Adobe Experience Manager(AEM) 모바일 특정 플러그인입니다.
 
 >[!NOTE]
 >
@@ -31,13 +31,13 @@ AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap
 >* [AEM Mobile 특정 Cordova 지원 플러그인 사용](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
-* 플러그인 기능을 사용하는 템플릿은 플러그인 브리지가 존재하지 않고 브라우저에서 계속 작성할 수 있는 방식으로 작성되어야 합니다.
+* 플러그인 기능을 사용하는 템플릿은 플러그인 브리지가 없어도 브라우저에서 계속 작성할 수 있는 방식으로 작성되어야 합니다.
 
    * 예를 들어 다음을 기다리십시오. *deviceready* 플러그인의 API에 액세스하기 전에 함수를 호출했습니다.
 
 ## AEM 개발자를 위한 지침 {#guidelines-for-aem-developers}
 
-다음 지침은 모바일 앱 템플릿 및 구성 요소를 빌드하려는 숙련된 AEM for sites 개발자에게 도움이 됩니다.
+다음 지침은 모바일 앱 템플릿 및 구성 요소를 빌드하려는 사이트에 대해 유능한 AEM 개발자를 지원하는 데 도움이 됩니다.
 
 **재사용 및 확장성을 장려하기 위한 AEM 사이트 템플릿 구성**
 
@@ -48,7 +48,7 @@ AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap
 
 * 템플릿 언어로서 JSP보다 Sightly/HTL 선호
 
-   * 이를 사용하면 마크업에서 코드가 분리되고, XSS 보호 기능이 내장된 오퍼가 제공되며, 보다 익숙한 구문이 있습니다
+   * 이를 사용하면 마크업에서 코드가 분리되고, 내장된 XSS 보호를 제공하며, 더 익숙한 구문이 있습니다
 
 **온디바이스 성능 최적화**
 
@@ -63,7 +63,7 @@ AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap
 **웹별 라이브러리보다 앱별 클라이언트측 JS 및 CSS 라이브러리 선호**
 
 * jQuery Mobile과 같은 라이브러리에서 오버헤드를 방지하여 광범위한 디바이스와 브라우저를 처리합니다.
-* 템플릿이 앱의 웹 보기에서 실행될 때 앱이 지원할 플랫폼 및 버전을 제어하고 JavaScript가 지원된다는 지식이 제공됩니다. 예를 들어, jQuery Mobile보다 Ionic(CSS일 수 있음)을 선호하고, Bootstrap보다 Onsen UI를 선호합니다.
+* 템플릿이 앱의 웹 보기에서 실행될 때 앱이 지원할 플랫폼 및 버전을 제어하고 JavaScript가 지원된다는 지식이 제공됩니다. 예를 들어, jQuery Mobile보다 Ionic(CSS만 해당), Bootstrap보다 Onsen UI를 선호합니다.
 
 >[!NOTE]
 >
@@ -71,14 +71,14 @@ AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap
 
 **전체 스택보다 마이크로 라이브러리 선호**
 
-* 콘텐트를 장치 유리에 가져오는 데 걸리는 시간은 문서가 의존하는 모든 라이브러리에 의해 느려집니다. 이 둔화는 새 웹 보기를 사용하여 모든 문서를 렌더링할 때 혼합되므로 각 라이브러리를 처음부터 다시 초기화해야 합니다
+* 콘텐트가 장치 유리에 표시되는 데 걸리는 시간은 문서가 의존하는 모든 라이브러리에 의해 느려집니다. 이 둔화는 새 웹 보기를 사용하여 모든 문서를 렌더링할 때 혼합되므로 각 라이브러리를 처음부터 다시 초기화해야 합니다
 * 문서가 SPA(단일 페이지 앱)로 빌드되지 않은 경우 Angular과 같은 전체 스택 라이브러리를 포함할 필요가 없을 수 있습니다
 * 다음과 같이 페이지에 필요한 상호 작용을 추가하는 데 도움이 되는 작은 단일 목적 라이브러리를 선호합니다. [Fastclick](https://github.com/ftlabs/fastclick) 또는 [Velocity.js](https://velocityjs.org)
 
 **문서 페이로드 크기 최소화**
 
 * 지원 중인 가장 큰 뷰포트를 효과적으로 지원할 수 있는 가장 작은 에셋을 합리적인 해상도로 사용합니다
-* 다음과 같은 도구 사용 *ImageOptim* 초과 메타데이터를 제거하려면 이미지에 설정
+* 다음과 같은 도구 사용 *ImageOptim* 초과 메타데이터를 제거할 수 있도록 이미지에 설정
 
 ## 시작하기 {#getting-ahead}
 
