@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 923ec028679031c9ef9ea6ae2cf827e7a4cd00d8
 workflow-type: tm+mt
-source-wordcount: '5529'
+source-wordcount: '5517'
 ht-degree: 2%
 
 ---
@@ -243,7 +243,7 @@ Acrobat을 설치한 후 Microsoft® Word를 엽니다. 다음에서 **Acrobat**
 >[!NOTE]
 >
 >* 모든 환경 변수와 해당 경로는 대/소문자를 구분합니다.
->* JAVA_HOME, JAVA_HOME_32 및 Acrobat_PATH(Windows에만 해당)는 필수 환경 변수입니다.
+>* JAVA_HOME 및 Acrobat_PATH(Windows에만 해당)는 필수 환경 변수입니다.
 >* 환경 변수 OpenOffice_PATH가 실행 파일의 경로 대신 설치 폴더로 설정됩니다.
 >* Word, PowerPoint, Excel, 프로젝트 등 Microsoft® Office 애플리케이션이나 AutoCAD에 대한 환경 변수는 설정하지 마십시오. 이러한 응용 프로그램이 서버에 설치된 경우 PDF 생성 서비스가 이러한 응용 프로그램을 자동으로 시작합니다.
 >* UNIX 기반 플랫폼에서 OpenOffice를 /root로 설치합니다. OpenOffice가 루트로 설치되지 않은 경우 PDF Generator 서비스가 OpenOffice 문서를 PDF 문서로 변환하지 못합니다. 루트가 아닌 사용자로 OpenOffice를 설치하고 실행해야 하는 경우 루트가 아닌 사용자에게 sudo 권한을 제공합니다.
@@ -583,7 +583,7 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
 
 다음 [시스템 준비 도구](#srt-configuration) 시스템이 PDF Generator 전환을 실행하도록 올바르게 구성되었는지 확인합니다. 이 도구는 지정된 경로에서 보고서를 생성합니다. 도구를 실행하려면:
 
-1. 명령 프롬프트를 엽니다. 다음 위치로 이동 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` 폴더를 삭제합니다.
+1. 명령 프롬프트를 엽니다. `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` 폴더로 이동합니다.
 
 1. 명령 프롬프트에서 다음 명령을 실행합니다.
 
@@ -686,8 +686,6 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
   ```
   ldd phantomjs | grep not
   ```
-
-* JAVA_HOME_32 환경 변수가 올바른 위치를 가리키는지 확인합니다.
 
 **Linux® 및 Solaris™(WebKit 전환 경로)**
 
