@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: f41962faa0567ed99c1e2ab189e81fb978781af3
+source-git-commit: fbfe38e9d669cd506b687a3fb81ad4ce9e7d65da
 workflow-type: tm+mt
-source-wordcount: '5515'
+source-wordcount: '5513'
 ht-degree: 2%
 
 ---
@@ -83,7 +83,7 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 >[!NOTE]
 >
 >* Microsoft® Windows에서 PDF Generator은 HTML 파일을 PDF 문서로 변환하기 위한 WebKit, Acrobat WebCapture 및 PhantomJS 변환 경로를 지원합니다.
->* UNIX 기반 운영 체제에서 PDF Generator은 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 PhantomJS 변환 경로를 지원합니다.
+* UNIX 기반 운영 체제에서 PDF Generator은 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 PhantomJS 변환 경로를 지원합니다.
 >
 
 ### UNIX 기반 운영 체제에 대한 추가 요구 사항 {#extrarequirements}
@@ -198,17 +198,17 @@ PDF Generator 서비스를 사용하여 Microsoft® Word, Microsoft® Excel, Mic
 
 >[!NOTE]
 >
->* AEM Forms 서버가 오프라인 또는 보안 환경에 있고 인터넷을 사용하여 Adobe Acrobat을 활성화할 수 없는 경우 다음을 참조하십시오. [오프라인 활성화](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) Adobe Acrobat의 이러한 인스턴스를 활성화하는 방법에 대해 설명합니다.
->* Adobe Acrobat, Microsoft® Word, Excel 및 Powerpoint는 Microsoft® Windows에서만 사용할 수 있습니다. UNIX 기반 운영 체제를 사용하는 경우 OpenOffice를 설치하여 리치 텍스트 파일과 지원되는 Microsoft® Office 파일을 PDF 문서로 변환합니다.
->* PDF Generator 서비스를 사용하도록 구성된 모든 사용자에 대해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 모든 대화 상자를 닫습니다.
->* 설치된 모든 소프트웨어를 한 번 이상 시작합니다. PDF Generator 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 모두 닫습니다.
->* [Adobe Acrobat 일련 번호의 만료 날짜 확인](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) 라이선스 업데이트 또는 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) 만료일 기준.
+* AEM Forms 서버가 오프라인 또는 보안 환경에 있고 인터넷을 사용하여 Adobe Acrobat을 활성화할 수 없는 경우 다음을 참조하십시오. [오프라인 활성화](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) Adobe Acrobat의 이러한 인스턴스를 활성화하는 방법에 대해 설명합니다.
+* Adobe Acrobat, Microsoft® Word, Excel 및 Powerpoint는 Microsoft® Windows에서만 사용할 수 있습니다. UNIX 기반 운영 체제를 사용하는 경우 OpenOffice를 설치하여 리치 텍스트 파일과 지원되는 Microsoft® Office 파일을 PDF 문서로 변환합니다.
+* PDF Generator 서비스를 사용하도록 구성된 모든 사용자에 대해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 모든 대화 상자를 닫습니다.
+* 설치된 모든 소프트웨어를 한 번 이상 시작합니다. PDF Generator 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 모두 닫습니다.
+* [Adobe Acrobat 일련 번호의 만료 날짜 확인](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) 라이선스 업데이트 또는 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) 만료일 기준.
 
 Acrobat을 설치한 후 Microsoft® Word를 엽니다. 다음에서 **Acrobat** 탭을 클릭하고 **PDF 만들기** 컴퓨터에서 사용할 수 있는 .doc 또는 .docx 파일을 PDF 문서로 변환합니다. 전환이 성공하면 AEM Forms은 PDF Generator 서비스와 함께 Acrobat을 사용할 준비가 되었습니다.
 
 ### 환경 변수 설정 {#setup-environment-variables}
 
-32비트 및 64비트 Java 개발 키트, 서드파티 애플리케이션 및 Adobe Acrobat에 대한 환경 변수를 설정합니다. 환경 변수에는 해당 응용 프로그램을 시작하는 데 사용되는 실행 파일의 절대 경로가 포함되어야 합니다. 예를 들어 아래 표에는 몇 가지 응용 프로그램에 대한 환경 변수가 나와 있습니다.
+64비트 Java Development Kit, 서드파티 애플리케이션 및 Adobe Acrobat에 대한 환경 변수를 설정합니다. 환경 변수에는 해당 응용 프로그램을 시작하는 데 사용되는 실행 파일의 절대 경로가 포함되어야 합니다. 예를 들어 아래 표에는 몇 가지 응용 프로그램에 대한 환경 변수가 나와 있습니다.
 
 <table>
  <tbody>
@@ -242,14 +242,14 @@ Acrobat을 설치한 후 Microsoft® Word를 엽니다. 다음에서 **Acrobat**
 
 >[!NOTE]
 >
->* 모든 환경 변수와 해당 경로는 대/소문자를 구분합니다.
->* JAVA_HOME 및 Acrobat_PATH(Windows에만 해당)는 필수 환경 변수입니다.
->* 환경 변수 OpenOffice_PATH가 실행 파일의 경로 대신 설치 폴더로 설정됩니다.
->* Word, PowerPoint, Excel, 프로젝트 등 Microsoft® Office 애플리케이션이나 AutoCAD에 대한 환경 변수는 설정하지 마십시오. 이러한 응용 프로그램이 서버에 설치된 경우 PDF 생성 서비스가 이러한 응용 프로그램을 자동으로 시작합니다.
->* UNIX 기반 플랫폼에서 OpenOffice를 /root로 설치합니다. OpenOffice가 루트로 설치되지 않은 경우 PDF Generator 서비스가 OpenOffice 문서를 PDF 문서로 변환하지 못합니다. 루트가 아닌 사용자로 OpenOffice를 설치하고 실행해야 하는 경우 루트가 아닌 사용자에게 sudo 권한을 제공합니다.
->* UNIX 기반 플랫폼에서 OpenOffice를 사용하는 경우 다음 명령을 실행하여 경로 변수를 설정합니다.
+* 모든 환경 변수와 해당 경로는 대/소문자를 구분합니다.
+* JAVA_HOME 및 Acrobat_PATH(Windows에만 해당)는 필수 환경 변수입니다.
+* 환경 변수 OpenOffice_PATH가 실행 파일의 경로 대신 설치 폴더로 설정됩니다.
+* Word, PowerPoint, Excel, 프로젝트 등 Microsoft® Office 애플리케이션이나 AutoCAD에 대한 환경 변수는 설정하지 마십시오. 이러한 응용 프로그램이 서버에 설치된 경우 PDF 생성 서비스가 이러한 응용 프로그램을 자동으로 시작합니다.
+* UNIX 기반 플랫폼에서 OpenOffice를 /root로 설치합니다. OpenOffice가 루트로 설치되지 않은 경우 PDF Generator 서비스가 OpenOffice 문서를 PDF 문서로 변환하지 못합니다. 루트가 아닌 사용자로 OpenOffice를 설치하고 실행해야 하는 경우 루트가 아닌 사용자에게 sudo 권한을 제공합니다.
+* UNIX 기반 플랫폼에서 OpenOffice를 사용하는 경우 다음 명령을 실행하여 경로 변수를 설정합니다.
 >
->  `export OpenOffice_PATH=/opt/openoffice.org4`
+`export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (IBM® WebSphere®에만 해당) IBM® SSL 소켓 공급자 구성 {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -336,7 +336,7 @@ PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 WebKit, Web
 
 >[!NOTE]
 >
->fonts 폴더에 새 글꼴을 설치할 때마다 AEM Forms 인스턴스를 다시 시작합니다.
+fonts 폴더에 새 글꼴을 설치할 때마다 AEM Forms 인스턴스를 다시 시작합니다.
 
 ### (UNIX 기반 플랫폼만 해당) HTML-PDF 변환을 위한 추가 구성  {#extra-configurations-for-html-to-pdf-conversion}
 
@@ -356,12 +356,12 @@ UNIX 기반 플랫폼에서 PDF Generator 서비스는 HTML 파일을 PDF 문서
 
 >[!NOTE]
 >
->* Red Hat® Enterprise Linux® 6.x 이상에서는 courier 글꼴을 사용할 수 없습니다. courier 글꼴을 설치하려면 font-ibm-type1-1.0.3.zip 아카이브를 다운로드합니다. /usr/share/fonts에서 아카이브를 추출합니다. /usr/share/X11/fonts에서 /usr/share/fonts로 심볼 링크를 만듭니다.
->* Html2PdfSvc/bin 및 /usr/share/fonts 디렉토리에서 모든 .lst 글꼴 캐시 파일을 삭제합니다.
->* /usr/lib/X11/fonts 디렉토리와 /usr/share/fonts 디렉토리가 있는지 확인합니다. 디렉토리가 없으면 ln 명령을 사용하여 /usr/share/X11/fonts에서 /usr/lib/X11/fonts로 심볼 링크를 생성하고 /usr/share/fonts에서 /usr/share/X11/fonts로 심볼 링크를 생성합니다. 또한 courier 글꼴이 /usr/lib/X11/fonts에서 사용 가능한지 확인하십시오.
->* /usr/share/fonts 또는 /usr/share/X11/fonts 디렉토리에서 유니코드와 비유니코드를 모두 사용할 수 있는지 확인합니다.
->* 루트가 아닌 사용자로 PDF Generator 서비스를 실행할 때 루트가 아닌 사용자에게 모든 글꼴 디렉터리에 대한 읽기 및 쓰기 액세스 권한을 제공합니다.
->* fonts 폴더에 새 글꼴을 설치할 때마다 AEM Forms 인스턴스를 다시 시작합니다.
+* Red Hat® Enterprise Linux® 6.x 이상에서는 courier 글꼴을 사용할 수 없습니다. courier 글꼴을 설치하려면 font-ibm-type1-1.0.3.zip 아카이브를 다운로드합니다. /usr/share/fonts에서 아카이브를 추출합니다. /usr/share/X11/fonts에서 /usr/share/fonts로 심볼 링크를 만듭니다.
+* Html2PdfSvc/bin 및 /usr/share/fonts 디렉토리에서 모든 .lst 글꼴 캐시 파일을 삭제합니다.
+* /usr/lib/X11/fonts 디렉토리와 /usr/share/fonts 디렉토리가 있는지 확인합니다. 디렉토리가 없으면 ln 명령을 사용하여 /usr/share/X11/fonts에서 /usr/lib/X11/fonts로 심볼 링크를 생성하고 /usr/share/fonts에서 /usr/share/X11/fonts로 심볼 링크를 생성합니다. 또한 courier 글꼴이 /usr/lib/X11/fonts에서 사용 가능한지 확인하십시오.
+* /usr/share/fonts 또는 /usr/share/X11/fonts 디렉토리에서 유니코드와 비유니코드를 모두 사용할 수 있는지 확인합니다.
+* 루트가 아닌 사용자로 PDF Generator 서비스를 실행할 때 루트가 아닌 사용자에게 모든 글꼴 디렉터리에 대한 읽기 및 쓰기 액세스 권한을 제공합니다.
+* fonts 폴더에 새 글꼴을 설치할 때마다 AEM Forms 인스턴스를 다시 시작합니다.
 >
 
 ## AEM Forms 추가 기능 패키지 설치 {#install-aem-forms-add-on-package}
@@ -410,8 +410,8 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 
    >[!NOTE]
    >
-   >Adobe 이외의 당사자가 제공한 글꼴을 사용할 권리는 해당 글꼴과 함께 그러한 당사자가 제공한 라이선스 계약에 의해 적용되며, Adobe 소프트웨어 사용 라이선스에 따라 적용되지 않습니다. Adobe은 특히 서버 환경에서의 Adobe 사용에 관하여 Adobe 소프트웨어에서 비 Adobe 글꼴을 사용하기 전에 적용 가능한 모든 비 라이선스 계약을 검토하고 준수하는지 확인할 것을 권장합니다.
-   >fonts 폴더에 새 글꼴을 설치하면 AEM Forms 인스턴스를 다시 시작합니다.
+   Adobe 이외의 당사자가 제공한 글꼴을 사용할 권리는 해당 글꼴과 함께 그러한 당사자가 제공한 라이선스 계약에 의해 적용되며, Adobe 소프트웨어 사용 라이선스에 따라 적용되지 않습니다. Adobe은 특히 서버 환경에서의 Adobe 사용에 관하여 Adobe 소프트웨어에서 비 Adobe 글꼴을 사용하기 전에 적용 가능한 모든 비 라이선스 계약을 검토하고 준수하는지 확인할 것을 권장합니다.
+fonts 폴더에 새 글꼴을 설치하면 AEM Forms 인스턴스를 다시 시작합니다.
    >
 
 ### PDF Generator 서비스를 실행하도록 로컬 사용자 계정 구성  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
@@ -523,7 +523,7 @@ DocAssurance 서비스는 PDF 문서에 사용 권한을 적용할 수 있습니
 
    >[!NOTE]
    >
-   >프로덕션 환경에서 평가 자격 증명을 프로덕션 자격 증명으로 바꿉니다. 만료 또는 평가 자격 증명을 업데이트하기 전에 이전 Reader 확장 자격 증명을 삭제해야 합니다.
+   프로덕션 환경에서 평가 자격 증명을 프로덕션 자격 증명으로 바꿉니다. 만료 또는 평가 자격 증명을 업데이트하기 전에 이전 Reader 확장 자격 증명을 삭제해야 합니다.
 
 1. 클릭 **[!UICONTROL 저장 및 닫기]** 다음에 있음 **[!UICONTROL 사용자 설정 편집]** 페이지를 가리키도록 업데이트하는 중입니다.
 
@@ -593,7 +593,7 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
 
    >[!NOTE]
    >
-   >* 시스템 준비 도구에서 pdfgen.api 파일을 Acrobat 플러그인 폴더에서 사용할 수 없다고 보고하면 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` 디렉토리 대상: `[Acrobat_root]\Acrobat\plug_ins` 디렉토리.
+   * 시스템 준비 도구에서 pdfgen.api 파일을 Acrobat 플러그인 폴더에서 사용할 수 없다고 보고하면 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` 디렉토리 대상: `[Acrobat_root]\Acrobat\plug_ins` 디렉토리.
 
 1. 다음으로 이동 `[Path_of_reports_folder]`. SystemReadinessTool.html 파일을 엽니다. 보고서를 확인하고 언급된 문제를 해결합니다.
 
