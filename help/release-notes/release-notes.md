@@ -2,7 +2,7 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 4f6ef1a6cddec307af64ca888307f19c0450467d
+source-git-commit: ffda4927ddc8555564f33697fa81d1f8a0cd2cdc
 workflow-type: tm+mt
 source-wordcount: '4548'
 ht-degree: 9%
@@ -371,7 +371,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * **서비스 팩 18(6.5.18.0)로 업그레이드한 후 페이지 편집기에서 페이지 게시가 작동하지 않음**
 
-  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> AEM 6.5.0.0—6.5.17.0의 인스턴스를 AEM 6.5.18.0으로 업그레이드한 후 **[!UICONTROL 페이지 게시]** 페이지 편집기 내에서 존재하지 않는 URL로 리디렉션됩니다.
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> AEM 6.5.0.0—6.5.17.0의 인스턴스를 AEM 6.5.18.0으로 업그레이드한 후 **페이지 게시** 페이지 편집기 내에서 존재하지 않는 URL로 리디렉션됩니다.
 
   이 문제를 해결하려면 다음 중 하나를 수행하십시오.
 
