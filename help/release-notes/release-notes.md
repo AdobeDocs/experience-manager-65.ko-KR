@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: a15b9dae5cc4405122ee95e036a83fdfbf34f9bd
+source-git-commit: 4f6ef1a6cddec307af64ca888307f19c0450467d
 workflow-type: tm+mt
-source-wordcount: '4490'
+source-wordcount: '4548'
 ht-degree: 9%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 9%
 
 * 에셋, Dynamic Media - [Dynamic Media 비디오에 대한 다중 자막 및 다중 오디오 트랙 지원](/help/assets/video.md#about-msma)- 이제 여러 자막과 여러 오디오 트랙을 기본 비디오에 쉽게 추가할 수 있습니다. 즉, 이러한 기능을 통해 글로벌 대상자는 비디오에 액세스할 수 있습니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 자막 및 오디오 트랙을 관리할 수도 있습니다.
 
-* 에셋 - 이제 검색 결과에서 에셋이 포함된 폴더 위치로 이동할 수 있으므로 다양한 에셋 관리 작업을 수행할 수 있습니다. (ASSETS-23182)
+* 에셋 - 이제 검색 결과에서 에셋이 포함된 폴더 위치로 이동하여 다양한 에셋 관리 작업을 수행할 수 있습니다. (ASSETS-23182)
 
 **주요 개선 사항**
 
@@ -61,19 +61,19 @@ ht-degree: 9%
 
 **양식**
 
-* **[규칙 편집기의 사용자 지정 오류 처리기로 향상된 오류 처리](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** 이제 외부 서비스에서 반환한 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출하고 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다
+* **[규칙 편집기의 사용자 지정 오류 처리기로 향상된 오류 처리](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** - 이제 외부 서비스에서 반환한 오류에 응답하여 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출할 수 있습니다. 또한 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다
 
-* **[향상된 Adobe Sign 워크플로 단계](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** AEM 워크플로의 Adobe Sign 워크플로 단계는 다음과 같은 개선 사항을 통해 사용할 수 있습니다.
+* **[향상된 Adobe Sign 워크플로 단계](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - AEM 워크플로의 Adobe Sign 워크플로 단계는 다음과 같은 개선 사항을 통해 사용할 수 있습니다.
 
-   * **Adobe Sign에 대한 정부 ID 기반 인증을 통해 보안 강화:** Adobe Acrobat Sign의 정부 ID 기반 인증은 사용자가 정부에서 발급한 ID(운전면허증, 주민등록증, 여권)를 사용하여 신원을 인증할 수 있도록 함으로써 추가적인 인증 계층을 제공합니다. 이 향상된 기능은 신뢰할 수 있는 ID 문서를 사용함으로써 서명 프로세스에 대한 신뢰도가 한층 높아져 강화된 보안, 규정 준수 및 사용자 유효성 검사가 필요한 시나리오에 이상적입니다.
+   * **Adobe Sign에 대한 정부 ID 기반 인증을 통해 향상된 보안** - Adobe Acrobat Sign의 정부 ID 기반 인증은 추가 인증 계층을 제공합니다. 사용자가 정부에서 발급한 신분증(운전면허증, 주민등록증, 여권)을 이용해 본인 인증을 할 수 있도록 했다. 이 향상된 기능은 신뢰할 수 있는 ID 문서를 사용함으로써 서명 프로세스에 대한 신뢰도가 한층 높아져 강화된 보안, 규정 준수 및 사용자 유효성 검사가 필요한 시나리오에 이상적입니다.
 
-   * **Adobe Sign 문서에 대한 감사 추적을 통해 투명성 향상:** 감사 추적 기능을 사용하여 Adobe Sign 문서의 라이프사이클에 대한 자세한 통찰력을 얻을 수 있습니다. 감사 추적을 사용하여 이제 문서와 관련된 모든 작업과 상호 작용에 대한 포괄적인 기록을 유지 관리할 수 있습니다. 여기에는 각 이벤트의 타임스탬프와 함께 문서를 조회하고, 편집하거나 서명한 사람 등과 같은 세부 정보가 포함됩니다. 이러한 개선된 기능은 규정 준수를 유지하고, 분쟁을 해결하고, 디지털 계약의 무결성을 보장하는 데 중요합니다.
-
-
-   * **서명자 이상으로 계약 수신자의 역할을 확장했습니다.** Adobe Acrobat Sign에는 계약 수신자의 역할을 서명자 이상으로 확장하여 워크플로 요구 사항에 보다 잘 부합하도록 하는 옵션이 있습니다. 활성화되면 계약의 각 수신자는 자신의 역할을 개별 구성할 수 있으며 서명자는 기본 역할입니다.
+   * **Adobe Sign 문서에 대한 감사 추적을 통해 투명성 향상** - 감사 추적 기능을 사용하여 Adobe Sign 문서의 라이프사이클에 대한 자세한 통찰력을 얻을 수 있습니다. 감사 추적을 사용하여 이제 문서와 관련된 모든 작업과 상호 작용에 대한 포괄적인 기록을 유지 관리할 수 있습니다. 여기에는 각 이벤트의 타임스탬프와 함께 문서를 조회하고, 편집하거나 서명한 사람 등과 같은 세부 정보가 포함됩니다. 이러한 개선된 기능은 규정 준수를 유지하고, 분쟁을 해결하고, 디지털 계약의 무결성을 보장하는 데 중요합니다.
 
 
-* **[AEM Forms on JEE 전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)**: 서비스 팩은 JEE의 AEM Forms용 전체 설치 프로그램을 제공하며 이를 통해 다음을 포함한 여러 가지 새로운 소프트웨어 조합을 지원합니다.
+   * **서명자 이상으로 계약 수신자의 역할 확장** - Adobe Acrobat Sign을 사용하면 계약 수신자의 역할을 서명자 이상으로 확장하여 워크플로 요구 사항에 보다 잘 부합하도록 할 수 있습니다. 활성화된 경우 계약의 각 수신자는 자신의 역할을 개별적으로 구성할 수 있으며 기본값은 서명자입니다.
+
+
+* **[AEM Forms on JEE 전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)** - 서비스 팩은 JEE의 AEM Forms용 전체 설치 프로그램을 제공하며, 이를 통해 다음을 포함한 여러 가지 새로운 소프트웨어 조합을 지원합니다.
    * Microsoft® 윈도우 서버 2022
    * Microsoft® Active Directory 2022
    * Windows Server 2022에서 WebLogic 14C oracle
@@ -81,7 +81,7 @@ ht-degree: 9%
    * MongoDB 4.4
    * MySQL JDBC Connector 8
 
-새로 설치하거나 JEE의 AEM 6.5 Forms Adobe 환경에 최신 소프트웨어를 사용할 계획이라면 AEM 6.5.18.0 JEE의 Forms 전체 설치 관리자를 사용하는 것이 좋습니다. 새로 추가되고 더 이상 사용되지 않는 소프트웨어의 전체 목록을 살펴보려면 JEE의 AEM Forms 또는 OSGi의 AEM Forms 설명서를 참조하십시오.
+JEE의 AEM 6.5 Forms Adobe 환경에 최신 소프트웨어를 설치하거나 사용할 계획이라면 JEE의 AEM 6.5.18.0 Forms 전체 설치 관리자를 사용하는 것이 좋습니다. 새로 추가되고 더 이상 사용되지 않는 소프트웨어의 전체 목록을 살펴보려면 JEE의 AEM Forms 또는 OSGi의 AEM Forms 설명서를 참조하십시오.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -179,7 +179,7 @@ ht-degree: 9%
    * 사용자가 다른 필드의 값을 설정하는 등 필드를 수정하지 않고 사용자 정의 함수를 호출하려고 하면 실패합니다. (FORMS-9921)
    * 적응형 양식에서 규칙 편집기의 사용자 지정 오류 함수로 작업하는 동안 다음 오류가 발생합니다.
       * 사용자가 @param 를 사용하려고 할 때{boolean} 함수를 사용하면 규칙 편집기에서 부울 값을 함수에 전달할 수 없습니다.
-      * 사용자가 @param 를 사용하려고 할 때{string} 함수를 사용하면 규칙 편집기가 선택적 값을 전달하지 못하고 불완전한 규칙에 대한 경고를 줍니다. (FORMS-9816, FORMS-9815)
+      * 사용자가 @param 를 사용하려고 할 때{string} 함수를 사용하면 규칙 편집기가 선택적 값을 전달하지 못하고 불완전한 규칙에 대한 경고를 표시합니다. (FORMS-9816, FORMS-9815)
    * 양식 사용자 그룹이 적응형 양식에서 규칙 편집기를 두 번 호출하지 못합니다. (FORMS-9051)
    * 시각적 편집기에서 사용자가 Form 개체를 선택하면 필드의 값 대신 전체 필드 인스턴스 개체가 사용자 지정 함수에 전달됩니다. (FORMS-10015)
    * 사용자가 핵심 구성 요소 기반 적응형 양식을 만들고 텍스트 입력 구성 요소를 추가하면 `Is Empty` 및 `Is Not Empty` 규칙 편집기에서 작동하지 않습니다. (FORMS-10098)
@@ -203,7 +203,7 @@ ht-degree: 9%
       * 사용자가 브러쉬 또는 키보드를 사용하여 서명 대화 상자에 서명할 때 Enter 키를 눌러도 대화 상자가 닫히지 않습니다.
       * 키보드를 사용하여 서명 지우기 확인 대화 상자에 액세스할 수 없습니다.
       * 화면 판독기가 대화 상자에 입력한 정보를 읽지 못합니다.
-      * 마우스를 사용하지 않으면 서명을 지울 수 없습니다.  (FORMS-9317)
+      * 마우스를 사용하지 않으면 서명을 지울 수 없습니다. (FORMS-9317)
    * 사용자가 적응형 양식을 제출할 때 화면 판독기가 필수 필드에 대한 오류 메시지를 읽지 못합니다. (FORMS-9316)
    * 화면 판독기가 HTML 양식을 읽을 때 커닝(간격)으로 텍스트를 읽는 동안 문제가 발생합니다. (FORMS-9258)
    * 적응형 양식에서 텍스트에 연결된 참조/각주는 화면 판독기를 사용하여 호출되지 않습니다. (FORMS-8920)
@@ -369,7 +369,24 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* 서비스 팩 13 이상의 Oak와 관련하여 지속성 캐시에 영향을 주는 다음 오류 로그가 나타나기 시작했습니다.
+* **서비스 팩 18(6.5.18.0)로 업그레이드한 후 페이지 편집기에서 페이지 게시가 작동하지 않음**
+
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> AEM 6.5.0.0—6.5.17.0의 인스턴스를 AEM 6.5.18.0으로 업그레이드한 후 **[!UICONTROL 페이지 게시]** 페이지 편집기 내에서 존재하지 않는 URL로 리디렉션됩니다.
+
+  이 문제를 해결하려면 다음 중 하나를 수행하십시오.
+
+   * 다음 &quot;path&quot; 속성을 제거합니다.
+
+     `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/publish/granite:data`
+
+   * 올바른 URL을 브라우저에 바로 붙여넣습니다.
+
+     `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html`
+
+
+
+* **Oak 관련**
+서비스 팩 13 이상부터 지속성 캐시에 영향을 주는 다음 오류 로그가 나타나기 시작했습니다.
 
   ```shell
   org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
@@ -439,7 +456,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 #### 지원되는 플랫폼
 
 * 1.8.0_281 이상의 JDK 버전은 WebLogic JEE 서버에서 지원되지 않습니다. (FORMS-8498, CQDOC-20383)
-* 다음으로: [!DNL Microsoft®® Windows Server 2019] 은(는) 을 지원하지 않습니다. [!DNL MySQL 5.7] 및 [!DNL JBoss®® EAP 7.1], [!DNL Microsoft®® Windows Server 2019] 은(는) 다음에 대한 턴키 설치를 지원하지 않습니다. [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
+* 다음으로: [!DNL Microsoft® Windows Server 2019] 은(는) 을 지원하지 않습니다. [!DNL MySQL 5.7] 및 [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] 은(는) 다음에 대한 턴키 설치를 지원하지 않습니다. [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * JDK 11.0.20은 JEE 설치 관리자에서 AEM Forms을 설치할 수 없습니다. JEE 설치 프로그램에 AEM Forms을 설치하려면 JDK 11.0.19 이하 버전만 지원됩니다. (FORMS-10659)
 
 #### 설치
@@ -460,7 +477,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 * AEM 서비스 팩 18로 업그레이드한 후에는 대화형 통신 문자를 편집할 수 없습니다. (FORMS-10578) 이 문제를 해결하려면 다음 단계를 수행하십시오.
 
    1. 다운로드 [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) SD 링크에서.
-   1. 핫픽스 아카이브 파일을 추출하여 Experience Manager 패키지(.zip) 및 번들(.jar) 파일을 가져옵니다.
+   1. 핫픽스 아카이브 파일을 추출하여 Experience Manager 패키지(.zip)와 번들(.jar) 파일을 가져올 수 있습니다.
    1. 패키지 관리자를 통해 패키지(.zip)를 업로드하고 설치합니다.
    1. 구성 관리자 번들을 엽니다. `https://server:host/system/console/bundles`번들(.jar)을 업로드하고 설치합니다.
 
