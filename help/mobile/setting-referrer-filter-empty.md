@@ -1,18 +1,14 @@
 ---
 title: 레퍼러 필터를 허용으로 설정
-seo-title: Setting Your Referrer Filter to Allow Empty
-description: 레퍼러 필터에 대해 알아보려면 이 페이지를 따르십시오. AEM Mobile 애플리케이션 뷰어가 작성자 인스턴스에서 앱을 볼 수 있도록 하려면 HTML 레퍼러 필터를 '허용'으로 설정해야 합니다.
-seo-description: Follow this page to learn about Referrer Filter. In order to allow the AEM Mobile Application Viewer to view apps on your Author instance, you'll need to set your HTML referrer filter to 'allow empty'.
-uuid: 4fb0f95c-ac8f-4a14-8c46-6616d9d4f380
+description: 레퍼러 필터에 대해 알아봅니다. Adobe Experience Manager(AEM) 모바일 애플리케이션 뷰어가 작성자 인스턴스의 앱을 볼 수 있도록 하려면 HTML 레퍼러 필터를 '허용'으로 설정해야 합니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
-discoiquuid: 8fb7d088-94bf-4799-98b3-8fa58eef83df
 exl-id: 2f02f541-92db-469b-bf23-ec64d2e282ff
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '178'
 ht-degree: 3%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 3%
 >
 >Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-AEM Mobile 애플리케이션 뷰어가 작성자 인스턴스에서 앱을 볼 수 있도록 하려면 HTML 레퍼러 필터를 &#39;허용&#39;으로 설정해야 합니다.
+Adobe Experience Manager(AEM) 모바일 애플리케이션 뷰어가 작성자 인스턴스의 앱을 볼 수 있도록 하려면 HTML 레퍼러 필터를 &#39;허용&#39;으로 설정해야 합니다.
 
 응용 프로그램 뷰어를 사용하여 개발 및 스테이징 상태에서 응용 프로그램을 검토하지 않으려는 경우 레퍼러 필터의 기본 설정을 변경할 필요가 없습니다.
 
