@@ -1,19 +1,15 @@
 ---
 title: 웹 사이트 콘솔 사용자 지정(클래식 UI)
-seo-title: Customizing the Websites Console (Classic UI)
 description: 웹 사이트 관리 콘솔을 확장하여 사용자 지정 열을 표시할 수 있습니다
-seo-description: The Websites Administration console can be extended to display custom columns
-uuid: 9163fdff-5351-477d-b91c-8a74f8b41d34
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '779'
 ht-degree: 2%
 
 ---
@@ -38,7 +34,6 @@ ht-degree: 2%
 >* 커뮤니티 콘솔
 >
 
-
 ### OSGI 서비스 만들기 {#creating-the-osgi-service}
 
 다음 `ListInfoProvider` 인터페이스는 다음 두 가지 방법을 정의합니다.
@@ -52,7 +47,7 @@ ht-degree: 2%
 * `info`, 업데이트할 JSON 개체(각각 전역 목록 또는 현재 목록 항목),
 * `resource`Sling 리소스
 
-아래 샘플 구현:
+샘플 구현은 다음과 같습니다.
 
 * 를 추가합니다. *별모양* 각 항목에 대한 속성, `true` 페이지 이름이 *e*, 및 `false` 그렇지 않으면.
 
@@ -109,13 +104,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >[!CAUTION]
 >
 >* 구현은 제공된 요청 및/또는 리소스를 기반으로 정보를 JSON 개체에 추가해야 하는지 여부를 결정해야 합니다.
->* 다음의 경우 `ListInfoProvider` 구현은 응답 개체에 이미 있는 속성을 정의하며, 제공된 속성이 해당 값을 덮어씁니다.
+>* 다음의 경우 `ListInfoProvider` 구현은 응답 개체에 있는 속성을 정의하며, 해당 값은 사용자가 제공한 값으로 덮어쓰여집니다.
 >
->  다음을 사용할 수 있습니다. [서비스 순위](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) 복수 실행 순서를 관리하려면 `ListInfoProvider` 구현.
+>  다음을 사용할 수 있습니다. [서비스 순위](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) 복수 실행 순서를 관리하려면 `ListInfoProvider` 구현.
 
 ### 새 서비스 테스트 {#testing-the-new-service}
 
-웹 사이트 관리 콘솔을 열고 사이트를 탐색하면 브라우저가 콘솔을 빌드하는 데 사용되는 JSON 개체를 가져오기 위해 ajax 호출을 실행합니다. 예를 들어 `/content/geometrixx` 폴더에서는 콘솔을 빌드하도록 다음 요청이 AEM 서버로 전송됩니다.
+웹 사이트 관리 콘솔을 열고 사이트를 탐색하면 브라우저가 콘솔을 빌드하는 데 사용되는 JSON 개체를 가져오기 위해 Ajax 호출을 실행합니다. 예를 들어 `/content/geometrixx` 폴더에서는 콘솔을 빌드하도록 다음 요청이 AEM 서버로 전송됩니다.
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -141,7 +136,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
    * 제거 **pageText**
 
    * 설정 **pathRegex** 끝 `/content/geometrixx(/.*)?`
-이렇게 하면 모든 geometrixx 웹 사이트에 대해 그리드 구성이 활성화됩니다.
+이렇게 하면 모든 Geometrixx 웹 사이트에 대해 그리드 구성이 활성화됩니다.
 
    * 설정 **storeProxySuffix** 끝 `.pages.json`
 
@@ -164,7 +159,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
 1. (선택 사항) 표시하지 않을 열을 삭제합니다. `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
 1. `/siteadmin` 는 기본적으로 을 가리키는 단축 경로입니다. `/libs/wcm/core/content/siteadmin`.
-에서 내 siteadmin 버전으로 리디렉션하려면 `/apps/wcm/core/content/siteadmin` 속성 정의 `sling:vanityOrder` 에 정의된 값보다 큰 값을 가지려면 `/libs/wcm/core/content/siteadmin`. 기본값은 300이므로 더 높은 값이 적합합니다.
+에서 내 siteadmin 버전으로 리디렉션하려면 `/apps/wcm/core/content/siteadmin`, 속성 정의 `sling:vanityOrder` 에 정의된 값보다 큰 값을 가지려면 `/libs/wcm/core/content/siteadmin`. 기본값은 300이므로 더 높은 값이 적합합니다.
 
 1. 웹 사이트 관리 콘솔로 이동하여 Geometrixx 사이트로 이동합니다.
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
@@ -175,7 +170,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 >[!CAUTION]
 >
->여러 그리드 구성이 다음에 의해 정의된 요청된 경로와 일치하는 경우 **pathRegex** 속성, 가장 구체적인 속성이 아닌 첫 번째 속성이 사용되므로 구성의 순서가 중요합니다.
+>여러 그리드 구성이 다음에 의해 정의된 요청된 경로와 일치하는 경우 **pathRegex** 속성은 가장 구체적인 속성이 아니라 첫 번째 속성이 사용되므로 구성의 순서가 중요합니다.
 
 ### 샘플 패키지 {#sample-package}
 

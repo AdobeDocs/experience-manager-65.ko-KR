@@ -1,6 +1,6 @@
 ---
 title: Oak 쿼리 및 색인 지정
-description: AEM에서 색인을 구성하는 방법에 대해 알아봅니다.
+description: Adobe Experience Manager에서 색인을 구성하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,7 +8,7 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
 source-wordcount: '3033'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 소개 {#introduction}
 
-Jackrabbit 2와 달리 Oak는 기본적으로 콘텐츠를 인덱싱하지 않습니다. 기존 관계형 데이터베이스와 마찬가지로 필요할 때 사용자 정의 인덱스를 만들어야 합니다. 특정 쿼리에 대한 색인이 없으면 많은 노드가 트래버스될 수 있습니다. 쿼리가 여전히 작동할 수 있지만, 상당히 느릴 수 있습니다.
+Jackrabbit 2와 달리 Oak는 기본적으로 콘텐츠를 인덱싱하지 않습니다. 기존 관계형 데이터베이스와 마찬가지로 필요할 때 사용자 정의 인덱스를 만들어야 합니다. 특정 쿼리에 대한 색인이 없는 경우 많은 노드가 트래버스될 수 있습니다. 쿼리가 여전히 작동할 수 있지만 느릴 수 있습니다.
 
 Oak에서 색인 없는 쿼리가 발견되면 경고 수준 로그 메시지가 인쇄됩니다.
 
@@ -84,7 +84,7 @@ Apache Oak 기반 백엔드를 사용하면 서로 다른 인덱서를 저장소
    * **유형:**  `property` (유형 문자열)
    * **속성 이름:**  `jcr:uuid` (유형 이름)
 
-   이 특정 예에서는 `jcr:uuid` 연결된 노드의 UUID(범용 고유 식별자)를 표시하는 작업이 포함된 속성입니다.
+   이 특정 예는 를 색인화합니다. `jcr:uuid` 연결된 노드의 UUID(범용 고유 식별자)를 표시하는 작업이 포함된 속성입니다.
 
 1. 변경 사항을 저장합니다.
 
@@ -92,11 +92,11 @@ Apache Oak 기반 백엔드를 사용하면 서로 다른 인덱서를 저장소
 
 * 다음 **유형** 속성은 인덱스의 유형을 지정하며, 이 경우 로 설정해야 합니다. **속성**
 
-* 다음 **속성 이름** 속성은 인덱스에 저장할 속성 목록을 나타냅니다. 누락된 경우 노드 이름은 속성 이름 참조 값으로 사용됩니다. 이 예에서는 **jcr:uuid** 노드의 고유 식별자(UUID)를 표시하는 작업이 포함된 속성이 인덱스에 추가됩니다.
+* 다음 **속성 이름** 속성은 인덱스에 저장된 속성 목록을 나타냅니다. 누락된 경우 노드 이름은 속성 이름 참조 값으로 사용됩니다. 이 예에서는 **jcr:uuid** 노드의 고유 식별자(UUID)를 표시하는 작업이 포함된 속성이 인덱스에 추가됩니다.
 
 * 다음 **고유** 로 설정된 경우 플래그 지정 **true** 속성 인덱스에 고유성 제약 조건을 추가합니다.
 
-* 다음 **선언 노드 유형** 속성을 사용하면 인덱스만 적용할 특정 노드 유형을 지정할 수 있습니다.
+* 다음 **선언 노드 유형** 속성을 사용하면 인덱스만 적용되는 특정 노드 유형을 지정할 수 있습니다.
 * 다음 **색인 재지정** 로 설정된 경우 플래그 지정 **true**&#x200B;는 전체 콘텐츠 색인 재지정을 트리거합니다.
 
 ### 순서가 지정된 색인 {#the-ordered-index}
@@ -107,7 +107,7 @@ Ordered 인덱스는 속성 인덱스의 확장입니다. 하지만 더 이상 �
 
 Apache Lucene 기반의 전체 텍스트 인덱서는 AEM 6에서 사용할 수 있습니다.
 
-전체 텍스트 색인이 구성된 경우 색인화된 다른 조건이 있는지 여부와 경로 제한 사항이 있는지에 관계없이 전체 텍스트 조건이 있는 모든 쿼리는 전체 텍스트 색인을 사용합니다.
+전체 텍스트 색인이 구성된 경우 색인화된 다른 조건이 있는지 여부와 경로 제한이 있는지 여부에 관계없이 전체 텍스트 조건이 있는 모든 쿼리는 전체 텍스트 색인을 사용합니다.
 
 전체 텍스트 색인이 구성되지 않은 경우 전체 텍스트 조건이 있는 쿼리가 예상대로 작동하지 않습니다.
 
@@ -134,7 +134,7 @@ Lucene 색인에는 다음과 같은 구성 옵션이 있습니다.
 
 ### 전체 텍스트 검색 이해 {#understanding-fulltext-search}
 
-이 섹션의 설명서는 Apache Lucene, Elasticsearch과 PostgreSQL, SQLite, MySQL과 같은 전체 텍스트 인덱스에 적용됩니다. 다음 예제는 AEM / Oak / Lucene입니다.
+이 섹션의 설명서는 PostgreSQL, SQLite 및 MySQL의 Apache Lucene, Elasticsearch 및 전체 텍스트 인덱스에 적용됩니다. 다음 예제는 AEM / Oak / Lucene입니다.
 
 <b>인덱싱할 데이터</b>
 
@@ -151,9 +151,9 @@ Lucene 색인에는 다음과 같은 구성 옵션이 있습니다.
 
 색인 지정 메커니즘은 전체 텍스트를 &quot;토큰&quot;이라는 단어로 분할하고 &quot;반전된 색인&quot;이라는 색인을 빌드합니다. 이 색인에는 각 단어에 대해 나타나는 문서 목록이 포함되어 있습니다.
 
-매우 짧고 일반적인 단어(&quot;정지어&quot;라고도 함)는 색인화되지 않습니다. 모든 토큰은 소문자로 변환되며 형태소 분석이 적용됩니다.
+짧고 일반적인 단어(&quot;stopwords&quot;라고도 함)는 색인화되지 않습니다. 모든 토큰은 소문자로 변환되며 형태소 분석이 적용됩니다.
 
-다음과 같은 특수 문자를 주목합니다. *&quot;-&quot;* 인덱싱되지 않습니다.
+다음과 같은 특수 문자 *&quot;-&quot;* 인덱싱되지 않습니다.
 
 | <b>토큰</b> | <b>문서 ID</b> |
 | --- | --- |
@@ -161,12 +161,12 @@ Lucene 색인에는 다음과 같은 구성 옵션이 있습니다.
 | 브랜드 | ..., 100,... |
 | 큐브 | ..., 200, 300,... |
 | 차원 | 300 |
-| 핀란드어 | ..., 100,... |
+| 마침 | ..., 100,... |
 | 발명 | 200 |
 | 개체 | ..., 300,... |
-| 루비크 | .., 100, 200,... |
+| 루비크 | ..., 100, 200,... |
 
-문서 목록이 정렬됩니다. 쿼리할 때 편리해집니다.
+문서 목록이 정렬됩니다. 쿼리할 때 편리합니다.
 
 <b>검색</b>
 
@@ -182,7 +182,7 @@ Lucene 색인에는 다음과 같은 구성 옵션이 있습니다.
 +:fulltext:rubik +:fulltext:cube
 ```
 
-그런 다음 색인은 해당 단어에 대한 문서 목록을 참조합니다. 문서가 많으면 목록이 매우 커질 수 있습니다. 예를 들어 다음과 같은 항목이 포함되어 있다고 가정합니다.
+색인은 그 단어들에 대한 문서들의 목록을 참조한다. 문서가 많으면 목록이 커질 수 있습니다. 예를 들어 다음 항목이 포함되어 있다고 가정합니다.
 
 
 | <b>토큰</b> | <b>문서 ID</b> |
@@ -191,7 +191,7 @@ Lucene 색인에는 다음과 같은 구성 옵션이 있습니다.
 | 큐브 | 30, 200, 300, 2000 |
 
 
-Lucene은 두 목록(또는 라운드 로빈) 사이를 왔다 갔다 할 것입니다. `n` 목록, 검색 시 `n` 단어):
+Lucene는 두 목록(또는 라운드 로빈) 사이를 왔다 갔다 합니다. `n` 목록, 검색 시 `n` 단어):
 
 * &quot;루빅&quot;에서 읽으면 첫 번째 항목을 얻습니다. 10을 찾습니다.
 * 첫 번째 항목은 &quot;큐브&quot;에서 읽습니다. `>` = 10. 10개는 찾을 수 없고, 다음 것은 30개입니다.
@@ -201,7 +201,7 @@ Lucene은 두 목록(또는 라운드 로빈) 사이를 왔다 갔다 할 것입
 * 다음 항목인 1000은 &quot;루빅&quot;에서 읽으십시오.
 * 첫 번째 항목은 &quot;큐브&quot;에서 읽습니다. `>` = 1000: 2000을 찾습니다.
 * &quot;루빅&quot;에서 읽으면 첫 번째 항목이 생깁니다. `>` = 2000: 목록의 끝.
-* 마지막으로, 우리는 검색을 중단할 수 있습니다.
+* 마지막으로 검색을 중단할 수 있습니다.
 
 아래 예와 같이 두 용어가 모두 포함된 유일한 문서는 200입니다.
 
@@ -251,7 +251,7 @@ select * from [nt:base] where [alias] = '/admin'
 
 >[!NOTE]
 >
->일반 속성 인덱스와 비교하여 Lucene 속성 인덱스는 항상 비동기 모드로 구성됩니다. 따라서 색인으로 반환된 결과가 저장소의 최신 상태를 항상 반영하지는 않을 수 있습니다.
+>일반 속성 인덱스와 비교하여 Lucene 속성 인덱스는 항상 비동기 모드로 구성됩니다. 따라서 색인에 의해 반환되는 결과가 항상 저장소의 최신 상태를 반영하지는 않을 수 있습니다.
 
 >[!NOTE]
 >
@@ -263,7 +263,7 @@ select * from [nt:base] where [alias] = '/admin'
 
 분석기는 문서가 색인화되었을 때와 쿼리 시간에 모두 사용됩니다. 분석기가 필드의 텍스트를 검사하고 토큰 스트림을 생성합니다. Lucene 분석기는 일련의 토큰화기 및 필터 클래스로 구성됩니다.
 
-분석기는 다음을 통해 구성할 수 있습니다 `analyzers` 노드(유형) `nt:unstructured`) 안에 있는 `oak:index` 정의.
+분석기는 다음을 통해 구성할 수 있습니다. `analyzers` 노드(유형) `nt:unstructured`) 안에 있는 `oak:index` 정의.
 
 인덱스에 대한 기본 분석기는 `default` 분석기 노드의 하위 항목입니다.
 
@@ -302,9 +302,9 @@ select * from [nt:base] where [alias] = '/admin'
    * **이름:** `stopwords`
    * **유형:** `nt:file`
 
-#### 컴포지션을 통해 분석기 만들기 {#creating-analyzers-via-composition}
+#### 컴포지션을 통한 분석기 만들기 {#creating-analyzers-via-composition}
 
-분석기는 다음을 기반으로 구성할 수도 있습니다. `Tokenizers`, `TokenFilters` 및 `CharFilters`. 이렇게 하려면 분석기를 지정하고 나열된 순서로 적용되는 선택적 토큰라이저 및 필터의 하위 노드를 만들면 됩니다. 참조: [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+분석기는 다음을 기반으로 구성할 수도 있습니다. `Tokenizers`, `TokenFilters`, 및 `CharFilters`. 이렇게 하려면 분석기를 지정하고 나열된 순서로 적용되는 선택적 토큰라이저와 필터의 하위 노드를 만들면 됩니다. 참조: [https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
 이 노드 구조를 예로 들어 보겠습니다.
 
@@ -344,7 +344,7 @@ select * from [nt:base] where [alias] = '/admin'
 
                * **유형:** `nt:file`
 
-공장 접미사를 제거하여 필터의 이름 charFilters 및 토큰라이저를 형성합니다. 따라서:
+필터 이름, charFilters 및 토큰화기는 공장 접미사를 제거하여 형성됩니다. 따라서:
 
 * `org.apache.lucene.analysis.standard.StandardTokenizerFactory` 다음과 같음 `standard`
 
@@ -368,7 +368,7 @@ AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 
 
 원격 Solr 서버 인스턴스에서 작동하도록 AEM을 구성할 수도 있습니다.
 
-1. 최신 버전의 Solr을 다운로드하여 추출하십시오. 자세한 방법은 을 참조하십시오. [Apache Solr 설치 설명서](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
+1. 최신 버전의 Solr을 다운로드하여 추출하십시오. 자세한 방법은 다음을 참조하십시오. [Apache Solr 설치 설명서](https://solr.apache.org/guide/6_6/installing-solr.html).
 1. 이제 두 개의 Solr 샤드를 만듭니다. 이렇게 하려면 Solr의 압축을 푼 폴더에 각 분할에 대한 폴더를 만들면 됩니다.
 
    * 첫 번째 분할에 대해 폴더를 만듭니다.
@@ -396,7 +396,7 @@ AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 
 
    >[!NOTE]
    >
-   >Solr 및 ZooKeeper 구성에 대한 자세한 내용은 [Solr 구성 설명서](https://wiki.apache.org/solr/ConfiguringSolr) 및 [ZooKeeper 시작 안내서](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
+   >Solr 및 ZooKeeper 구성에 대한 자세한 내용은 [Solr 구성 설명서](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) 및 [ZooKeeper 시작 안내서](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
 
 1. 로 이동하여 ZooKeeper 지원을 통해 첫 번째 분할을 시작합니다. `aemsolr1\node1` 다음 명령을 실행합니다.
 
@@ -431,7 +431,7 @@ AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 
 
 다음은 이 문서에 설명된 세 가지 Solr 배포 모두에서 사용할 수 있는 기본 구성의 예입니다. AEM에 이미 존재하며 다른 애플리케이션과 함께 사용해서는 안 되는 전용 속성 인덱스를 수용합니다.
 
-아카이브를 제대로 사용하려면 아카이브 내용을 Solr Home 디렉토리에 직접 배치해야 합니다. 다중 노드 배포의 경우 각 노드의 루트 폴더 바로 아래로 이동해야 합니다.
+아카이브를 제대로 사용하려면 아카이브 내용을 Solr Home 디렉토리에 직접 배치해야 합니다. 다중 노드 배포가 있는 경우 각 노드의 루트 폴더 바로 아래로 이동해야 합니다.
 
 권장 Solr 구성 파일
 
@@ -480,7 +480,7 @@ ACS Commons 패키지는 속성 인덱스를 만드는 데 사용할 수 있는 
 
 >[!NOTE]
 >
->문제를 해결하려는 쿼리가 실행되는 기간 동안에만 로그를 DEBUG로 설정하는 것이 중요합니다. 그렇지 않으면 시간이 지남에 따라 로그에 많은 양의 이벤트가 생성됩니다. 이러한 이유로 필요한 로그가 수집되면 위에서 언급한 범주에 대한 INFO 수준 로깅으로 다시 전환합니다.
+>문제를 해결하려는 쿼리가 실행되는 기간 동안에만 로그를 DEBUG로 설정하는 것이 중요합니다. 그렇지 않으면 시간이 지남에 따라 로그에 많은 이벤트가 생성됩니다. 이러한 이유로 필요한 로그가 수집되면 위에서 언급한 범주에 대한 INFO 수준 로깅으로 다시 전환합니다.
 
 다음 절차에 따라 로깅을 활성화할 수 있습니다.
 
@@ -516,7 +516,7 @@ ACS Commons 패키지는 속성 인덱스를 만드는 데 사용할 수 있는 
    * Oak 쿼리 통계
    * IndexStats
 
-1. 각 MBean을 클릭하여 성능 통계를 가져옵니다. 지원을 위해 제출해야 하는 경우 스크린샷을 생성하거나 메모해 두십시오.
+1. 성능 통계를 확인할 수 있도록 각 MBean을 클릭합니다. 지원 제출이 필요한 경우 스크린샷을 만들거나 기록해 두십시오.
 
 다음 URL에서 이러한 통계의 JSON 변형을 가져올 수도 있습니다.
 
@@ -525,7 +525,7 @@ ACS Commons 패키지는 속성 인덱스를 만드는 데 사용할 수 있는 
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 
-를 통해 통합 JMX 출력을 제공할 수도 있습니다. `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. 여기에는 JSON 형식의 모든 Oak 관련 MBean 세부 사항이 포함됩니다.
+을 통해 통합된 JMX 출력을 제공할 수도 있습니다. `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. 여기에는 JSON 형식의 모든 Oak 관련 MBean 세부 사항이 포함됩니다.
 
 #### 기타 세부 정보 {#other-details}
 

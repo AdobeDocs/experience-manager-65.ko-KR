@@ -1,30 +1,26 @@
 ---
 title: Adobe Experience Manager의 웹 콘솔
-seo-title: Web Console
-description: AEM 웹 콘솔을 사용하는 방법에 대해 알아봅니다.
-seo-description: Learn how to use the AEM web console.
-uuid: 7856b2b3-4216-421d-a315-cd9a55936362
+description: Adobe Experience Manager 웹 콘솔 사용 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '710'
 ht-degree: 3%
 
 ---
 
 # 웹 콘솔{#web-console}
 
-AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix는 OSGi 프레임워크 및 표준 서비스를 포함하는 OSGi R4 서비스 플랫폼을 구현하기 위한 커뮤니티 작업입니다.
+Adobe Experience Manager(AEM)의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix는 OSGi 프레임워크 및 표준 서비스를 포함하는 OSGi R4 서비스 플랫폼을 구현하기 위한 커뮤니티 작업입니다.
 
 >[!NOTE]
 >
->웹 콘솔에서 Sling 기본값과 관련된 기본 설정을 언급하는 설명을 모두 표시합니다.
+>웹 콘솔에서 기본 설정을 언급하는 모든 설명은 Sling 기본값과 관련되어 있습니다.
 >
 >AEM에는 자체 기본값이 있으므로 설정된 기본값이 콘솔에 기록된 기본값과 다를 수 있습니다.
 
@@ -73,7 +69,7 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 * **출하 시 구성**
 필요한 기능 개체의 인스턴스를 만들 수 있습니다.
 
-  영구 ID가 할당된 다음 구성 드롭다운 목록에 나열됩니다.
+  이 ID는 영구 ID에 할당된 다음 구성 드롭다운 목록에 나열됩니다.
 
 목록에서 항목을 선택하면 해당 구성과 관련된 매개 변수가 표시됩니다.
 
@@ -85,7 +81,7 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 
   변경 사항을 저장합니다.
 
-  공장 구성의 경우 영구 ID를 사용하는 새 인스턴스가 생성됩니다. 그러면 구성 아래에 새 인스턴스가 나열됩니다.
+  출하 시 구성의 경우 영구 ID를 사용하는 인스턴스가 생성됩니다. 그러면 구성 아래에 새 인스턴스가 나열됩니다.
 
 * **재설정**
 
@@ -133,7 +129,7 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 
   모든 패키지의 참조를 확인하고 필요에 따라 새로 고칩니다.
 
-  예를 들어 업데이트 후 이전 참조로 인해 이전 버전과 새 버전이 모두 실행될 수 있습니다. 이 옵션을 선택하면 모든 참조를 확인하고 새 버전으로 이동하여 이전 버전을 중지할 수 있습니다.
+  예를 들어 업데이트 후 이전 참조로 인해 이전 버전과 새 버전이 모두 실행될 수 있습니다. 이 옵션은 모든 참조를 확인하고 새 버전으로 이동하여 이전 버전을 중지할 수 있도록 합니다.
 
 * **시작**
 
@@ -149,11 +145,11 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 
 * **상태 보기**
 
-  이 목록은 번들의 현재 상태를 지정합니다. 추가 정보가 있는 특정 번들의 이름을 클릭합니다.
+  이 목록은 번들의 상태를 지정합니다. 추가 정보가 있는 특정 번들의 이름을 클릭합니다.
 
 >[!NOTE]
 >
->다음 이후 **업데이트** 다음을 수행하는 것이 좋습니다. **패키지 새로 고침**.
+>다음 이후 **업데이트**, Adobe은 다음을 수행할 것을 권장합니다. **패키지 새로 고침**.
 
 ## 구성 요소 {#components}
 
@@ -177,6 +173,6 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 
 >[!NOTE]
 >
->구성 요소 활성화 또는 비활성화는 AEM/CRX를 다시 시작할 때까지만 적용됩니다.
+>구성 요소 활성화 또는 비활성화는 AEM/CRX가 다시 시작될 때까지 적용됩니다.
 >
 >시작 상태는 구성 요소 설명자 내에서 정의되며, 구성 요소 설명자는 개발 중에 생성되고 번들 생성 시 번들에 저장됩니다.

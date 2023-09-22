@@ -1,21 +1,17 @@
 ---
 title: 컨텐츠 조각용 구성 요소
-seo-title: Components for Content Fragments
-description: AEM 콘텐츠 조각은 페이지에 영향을 받지 않는 에셋으로 제작되고 관리됩니다
-seo-description: AEM content fragments are created and managed as page-independent assets
-uuid: 81a9e0fe-ed45-4880-b36c-4f49e2598389
+description: Adobe Experience Manager (AEM) content fragments are created and managed as page-independent assets
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 4%
+source-wordcount: '961'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +29,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->다음 [콘텐츠 조각 핵심 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) 이제 가 권장됩니다. 다음을 참조하십시오 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 을 참조하십시오.
+>다음 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en) 이제 가 권장됩니다. 다음을 참조하십시오 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko-KR) 을 참조하십시오.
 >
 >이 섹션에서는 콘텐츠 조각과 함께 사용하기 위해 제공된 원래 구성 요소에 대해 자세히 설명합니다(**컨텐츠 조각** 다음에서 **일반** group).
 
@@ -61,23 +57,23 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
 
 `fileReference`
 
-터치 지원 UI의 편집기만이 클라이언트 라이브러리를 포함하는 콘텐츠 조각 구성 요소를 완전히 지원합니다.
+터치 지원 UI의 편집기만 클라이언트 라이브러리를 포함하는 콘텐츠 조각 구성 요소를 완전히 지원합니다.
 
 `cq.authoring.editor.plugin.cfm`
 
-이 라이브러리는 콘텐츠 조각과 관련된 기능을 편집기에 추가합니다. 예를 들어, 페이지에서 콘텐츠 조각을 추가 및 구성하는 기능, 에셋 브라우저에서 콘텐츠 조각 에셋을 검색하는 기능 및 사이드 패널에서 관련 콘텐츠에 대한 지원을 사용할 수 있습니다.
+이 라이브러리는 콘텐츠 조각과 관련된 기능을 편집기에 추가합니다. 예를 들어 페이지에서 콘텐츠 조각을 추가 및 구성하는 기능, 에셋 브라우저에서 콘텐츠 조각 에셋을 검색하는 기능 및 사이드 패널에서 관련 콘텐츠에 대한 지원을 사용할 수 있습니다.
 
 ### 중간 콘텐츠 {#in-between-content}
 
 다음 **콘텐츠 조각** t 구성 요소를 사용하면 표시된 여러 단락 사이에 추가 구성 요소를 놓을 수 있습니다 [요소](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment). 기본적으로 표시되는 요소는 서로 다른 단락으로 구성됩니다(각 단락은 캐리지 리턴으로 표시됨). 각 단락 사이에 다른 구성 요소를 사용하여 콘텐츠를 삽입할 수 있습니다.
 
-기술적 관점에서 표시된 요소* *의 각 단락은 자체 parsys에 있으며 단락 사이에 추가하는 각 구성 요소는 parsys에 (후드 아래) 삽입됩니다.
+기술적 관점에서 표시된 요소의 각 단락은 자체 parsys에 있으며 단락 사이에 추가하는 각 구성 요소는 parsys에 삽입됩니다(후드 아래).
 
-즉, 콘텐츠 조각 구성 요소의 인스턴스가 세 개의 단락으로 구성된 경우 구성 요소에는 저장소에 세 개의 다른 parsys가 있습니다. 콘텐츠 조각에 추가되는 모든 중간 콘텐츠는 실제로 이러한 parsys 내부에 있습니다.
+즉, 콘텐츠 조각 구성 요소의 인스턴스가 세 개의 단락으로 구성된 경우 구성 요소에는 저장소에 세 개의 다른 parsys가 있습니다. 콘텐츠 조각에 추가되는 모든 중간 콘텐츠는 실제로 이러한 parsys 내에 있습니다.
 
-중간 콘텐츠는 저장소의 전체 단락 구조 내의 위치를 기준으로 저장됩니다(즉, 실제 단락 콘텐츠에 첨부되지 않음).
+중간 콘텐츠는 저장소의 전체 단락 구조 내의 위치를 기준으로 저장됩니다. 즉, 실제 단락 콘텐츠에는 첨부되지 않습니다.
 
-이를 설명하기 위해 다음을 고려해 보겠습니다.
+이를 설명하기 위해 다음과 같은 항목이 있다고 가정해 보겠습니다.
 
 * 세 개의 단락으로 구성된 콘텐츠 조각의 인스턴스
 * 그리고 일부 콘텐츠는 두 번째 단락 뒤에 이미 삽입되었습니다.
@@ -102,7 +98,7 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
 
 기본 제공 콘텐츠 조각 구성 요소를 확장에 대한 블루프린트로 사용하려면 다음 계약을 준수해야 합니다.
 
-* HTL 렌더링 스크립트와 관련 POJO를 재사용하여 중간 콘텐츠 기능이 구현되는 방식을 확인합니다.
+* HTL 렌더링 스크립트와 관련 POJO를 재사용하여 중간 콘텐츠 기능이 구현되는 방식을 확인할 수 있습니다.
 * 콘텐츠 조각 노드 재사용: `cq:editConfig`
 
    * 다음 `afterinsert`/ `afteredit`/ `afterdelete` 리스너는 JS 이벤트를 트리거하는 데 사용됩니다. 이러한 이벤트는 `cq.authoring.editor.plugin.cfm` 클라이언트 라이브러리로 사이드 패널에 관련 콘텐츠를 표시할 수 있습니다.
@@ -132,4 +128,4 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
 * `transformer-cfm-parfilter` - 단락 범위가 지정된 경우 원하지 않는 단락을 필터링합니다( 콘텐츠 조각 구성 요소로 수행할 수 있음).
 * `transformer-cfm-assetprocessor` - 조각에 포함된 에셋 목록을 검색하는 데 내부적으로 사용됩니다.
 
-렌더링 프로세스는 다음을 통해 노출됩니다. [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) 필요한 경우 사용자 정의 구성 요소에 의해 를 활용할 수 있습니다(예: ).
+렌더링 프로세스는 다음을 통해 노출됩니다. [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) 필요한 경우 사용자 지정 구성 요소에서 사용할 수 있습니다(예: ).

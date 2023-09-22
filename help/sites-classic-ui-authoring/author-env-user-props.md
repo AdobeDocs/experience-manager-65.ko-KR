@@ -1,39 +1,34 @@
 ---
 title: 계정 환경 구성
-seo-title: Configuring your account environment
-description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
-seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment.
-uuid: a4a408f4-e33e-4304-90ab-f564ae772b7d
+description: Adobe Experience Manager(AEM)에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: d6f55d2c-e7a9-4421-918c-6000c6961776
 docset: aem65
 exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 27%
+source-wordcount: '227'
+ht-degree: 17%
 
 ---
 
 # 계정 환경 구성{#configuring-your-account-environment}
 
-AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
+Adobe Experience Manager(AEM)에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
 
 사용 [계정 설정](#account-settings) 및 [사용자 환경 설정](#user-preferences) 다음과 같은 옵션과 기본 설정을 정의할 수 있습니다.
 
 * **도구 모음 편집**
-전역 편집 도구 모음을 사용할지 여부를 선택합니다. 브라우저 창 맨 위에 표시되는 이 도구 모음에서는 
-**복사**, **잘라내기**, **붙여넣기**, **삭제** 해당 페이지의 단락 구성 요소와 함께 사용하기 위한 단추:
+전역 편집 도구 모음을 사용할지 여부를 선택합니다. 브라우저 창 맨 위에 표시되는 이 도구 모음에서는 **복사**, **잘라내기**, **붙여넣기**, **삭제** 해당 페이지의 단락 구성 요소와 함께 사용하기 위한 단추:
 
    * 필요 시 표시(기본값)
    * 항상 표시
    * 숨김 상태로 유지
 
 * **다음 사용자로 가장**
-포함 [다음 사용자로 가장](/help/sites-administering/security.md#impersonating-another-user) 사용자가 다른 사용자를 대신하여 작업할 수 있는 기능입니다.
+의 기능 [다음 사용자로 가장](/help/sites-administering/security.md#impersonating-another-user) 사용자가 다른 사용자를 대신하여 작업할 수 있습니다.
 
 * **언어**
 작성 환경의 UI에 사용할 언어입니다. 사용 가능한 목록에서 필요한 언어를 선택합니다.
@@ -46,7 +41,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 ## 계정 설정 {#account-settings}
 
-사용자 아이콘을 사용하면 다음 옵션에 대한 다양한 액세스 권한을 얻을 수 있습니다.
+사용자 아이콘을 사용하면 다음 옵션에 액세스할 수 있습니다.
 
 * 로그아웃
 * [가장 대상](/help/sites-administering/security.md#impersonating-another-user)
@@ -57,7 +52,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 ### 사용자 환경 설정 {#user-preferences}
 
-각 사용자는 자신에 대한 특정 속성을 설정할 수 있습니다. 다음에서 사용할 수 있습니다. **환경 설정** 콘솔의 오른쪽 상단 모서리에 있는 대화 상자입니다.
+각 사용자는 자신에 대한 특정 속성을 설정할 수 있습니다. 다음에서 사용할 수 있습니다. **환경 설정** 콘솔의 오른쪽 상단에 있는 대화 상자입니다.
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 
