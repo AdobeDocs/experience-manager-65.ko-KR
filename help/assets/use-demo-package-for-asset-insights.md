@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 13947513-da76-43e1-ae01-abd24a59752a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '162'
 ht-degree: 2%
 
 ---
@@ -27,11 +27,11 @@ ht-degree: 2%
 
 [파일 가져오기](assets/demosite.zip)
 
-1. 웹 페이지를 클릭하여 웹 브라우저에서 엽니다.
+1. 웹 브라우저에서 열리는 웹 페이지를 클릭합니다.
 
    >[!CAUTION]
    >
-   >웹 페이지가 localhost 서버에서 에셋을 로드하도록 구성되었습니다. 서버가 다른 곳에서 실행 중인 경우 서버 주소를 localhost에서 웹 페이지의 HTML 컨텐츠에 있는 서버 주소로 변경합니다.
+   >웹 페이지가 localhost 서버에서 자산을 로드하도록 구성되어 있습니다. 서버가 다른 곳에서 실행 중인 경우 서버 주소를 localhost에서 웹 페이지의 HTML 컨텐츠에 있는 서버 주소로 변경합니다.
 
    >[!NOTE]
    >

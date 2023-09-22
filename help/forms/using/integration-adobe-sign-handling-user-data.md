@@ -1,17 +1,14 @@
 ---
 title: Adobe Sign과 통합 | 사용자 데이터 처리
-seo-title: Integration with Adobe Sign | Handling user data
 description: Adobe Sign과 통합 | 사용자 데이터 처리
-uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 feature: Acrobat Sign
 role: Admin
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
-source-git-commit: 28d092a7713438c27213766f0bb702b699305b88
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -26,7 +23,7 @@ ht-degree: 0%
 
 ## 사용자 데이터 및 데이터 저장소 {#data}
 
-[!DNL Adobe Sign] 활성화된 적응형 양식에는 서명자에 대한 정보가 포함되며, 적응형 양식에 의해 수집된 다른 사용자 데이터가 포함될 수 있습니다. 다음 [!DNL Adobe Sign] 서비스는 계약 내의 서명과 함께 사용자 데이터를 저장합니다. 계약은 다음에 저장됩니다. [!DNL Adobe Sign] 서버 구성 위치 [!DNL AEM Forms] 클라우드 서비스. 또한 적응형 양식이 Forms 포털 제출 액션을 사용하도록 구성된 경우 계약 데이터가 양식 데이터와 함께 양식 포털 데이터 저장소에 저장됩니다.
+[!DNL Adobe Sign] 활성화된 적응형 양식에는 서명자에 대한 정보가 포함되며, 적응형 양식에 의해 수집된 다른 사용자 데이터가 포함될 수 있습니다. 다음 [!DNL Adobe Sign] 서비스는 계약 내의 서명과 함께 사용자 데이터를 저장합니다. 계약은에 저장됩니다. [!DNL Adobe Sign] 서버 구성 위치 [!DNL AEM Forms] 클라우드 서비스. 또한 적응형 양식이 Forms 포털 제출 액션을 사용하도록 구성된 경우 계약 데이터가 양식 데이터와 함께 Forms 포털 데이터 저장소에 저장됩니다.
 
 ## 사용자 데이터 액세스 및 삭제 {#access-and-delete-user-data}
 
@@ -34,4 +31,4 @@ ht-degree: 0%
 
 [!DNL Adobe Sign] 은 참가자가 계약을 검색하고 필요한 경우 삭제할 수 있는 웹 애플리케이션을 제공합니다. 자세한 내용은 [Adobe Sign - 기능: 사용자 정보 삭제](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
 
-Forms 포털 제출 액션을 사용하도록 구성된 적응형 양식에 대한 계약 데이터도 양식 포털 데이터 저장소에 저장됩니다. Forms 포털 데이터 저장소에서 데이터에 액세스하고 삭제하려면 다음을 참조하십시오 [Forms 포털 | 사용자 데이터 처리](/help/forms/using/forms-portal-handling-user-data.md).
+Forms 포털 제출 액션을 사용하도록 구성된 적응형 양식에 대한 계약 데이터도 Forms 포털 데이터 저장소에 저장됩니다. Forms 포털 데이터 저장소에서 데이터에 액세스하고 삭제하려면 다음을 참조하십시오. [Forms 포털 | 사용자 데이터 처리](/help/forms/using/forms-portal-handling-user-data.md).

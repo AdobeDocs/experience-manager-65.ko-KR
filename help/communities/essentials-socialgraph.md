@@ -1,18 +1,14 @@
 ---
 title: 소셜 그래프 기본 사항
-seo-title: Social Graph Essentials
-description: 구성 요소 팔로우 및 구성 요소 팔로우 개요
-seo-description: follow component and following component overview
-uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
+description: 다음 구성 요소와 다음 구성 요소에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '239'
 ht-degree: 2%
 
 ---
@@ -63,10 +59,10 @@ ht-degree: 2%
      <li>유형: 부울</li>
      <li>값:<br />
       <ul>
-       <li><i>True </i>- <code>following</code> 구성 요소에 현재 로그인한 멤버의 멤버가 나열됩니다. <code>follows</code></li>
-       <li><i>False </i>- <code>following</code> 구성 요소에 다음의 구성원이 나열됩니다. <code>follow </code>현재 로그인한 멤버</li>
+       <li><i>True </i>- <code>following</code> 구성 요소는 로그인한 멤버를 나열합니다. <code>follows</code></li>
+       <li><i>False </i>- <code>following</code> 구성 요소는 다음과 같은 멤버를 나열합니다. <code>follow </code>로그인한 멤버</li>
       </ul> </li>
-    </ul> <p>기본값은 입니다. <i>true</i> 속성이 누락된 경우. 현재 작성자 모드에서는 편집 대화 상자를 사용하여 이 속성을 설정할 수 없습니다. 속성을 의 인스턴스에 추가해야 합니다 <code>following </code>노드 사용 <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>기본값은 입니다. <i>true</i> 속성이 누락된 경우. 작성자 모드에서 편집 대화 상자를 사용하여 이 속성을 설정할 수 없습니다. 속성을 의 인스턴스에 추가해야 합니다 <code>following</code> 노드 사용 <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -83,8 +79,8 @@ ht-degree: 2%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [소셜 그래프 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [소셜 그래프 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [소셜 그래프 엔드포인트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [소셜 그래프 엔드포인트](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [서버측 사용자 지정](server-customize.md)

@@ -1,20 +1,16 @@
 ---
 title: OSGi 그룹 및 권한의 AEM Forms
-seo-title: AEM Forms on OSGi Groups and Privileges
-description: 그룹에 사용자를 할당하여 OSGi에서 AEM Forms 관리
-seo-description: Assign users to the groups to manage AEM Forms on OSGi
-uuid: f269a206-356d-4cee-b449-05c5da87121a
+description: OSGi에서 Adobe Experience Manager(AEM) Forms을 관리하도록 그룹에 사용자 할당
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: Configuration
-discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '293'
 ht-degree: 6%
 
 ---
@@ -26,9 +22,9 @@ ht-degree: 6%
 | AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
 | AEM 6.5 | 이 문서 |
 
-다음을 수행할 수 있습니다. [그룹 만들기](/help/sites-administering/user-group-ac-admin.md#group-administration) 및 정책 할당 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration) (을)를 AEM의 그룹에 추가합니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
+다음을 수행할 수 있습니다. [그룹 만들기](/help/sites-administering/user-group-ac-admin.md#group-administration) 및 정책 할당 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration) Adobe Experience Manager(AEM)의 그룹에 연결합니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
 
-설치한 후 [AEM Forms 추가 기능 패키지](../../forms/using/installing-configuring-aem-forms-osgi.md)이 문서에 언급된 그룹(예: forms-users 및 forms-power-user)은 자동으로 할당에 사용할 수 있습니다. 다음 표에는 사용자가 그룹 할당을 기반으로 OSGi에서 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
+를 설치한 후 [AEM Forms 추가 기능 패키지](../../forms/using/installing-configuring-aem-forms-osgi.md)이 문서에 언급된 그룹(예: forms-users 및 forms-power-user)은 자동으로 할당에 사용할 수 있습니다. 다음 표에는 사용자가 그룹 할당을 기반으로 OSGi에서 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
 
 <table>
  <tbody>

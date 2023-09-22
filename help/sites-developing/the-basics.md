@@ -1,18 +1,14 @@
 ---
 title: AEM 코어 개념
-seo-title: The Basics
-description: AEM이 구성되는 방식과 그 위에서 전개되는 방법에 대한 핵심 개념에 대한 개요로서, JCR, Sling, OSGi, Dispatcher, 워크플로우 및 MSM을 이해하는 것이 포함됩니다
-seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
-uuid: e49f29db-a5d6-48a0-af32-f8785156746e
+description: Adobe Experience Manager(AEM)를 구성하는 방식과 그 위에서 전개되는 방식에 대한 핵심 개념에 대한 개요로서 JCR, Sling, OSGi, Dispatcher, 워크플로우 및 MSM을 이해하는 것이 포함됩니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '3325'
+source-wordcount: '3310'
 ht-degree: 1%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM의 핵심 개념으로 들어가기 전에 Adobe은에서 WKND 자습서를 완료해 주는 것을 권장합니다. [AEM Sites 개발 시작](/help/sites-developing/getting-started.md) AEM 개발 프로세스에 대한 개요와 핵심 개념에 대한 소개는 문서화합니다.
+>Adobe Experience Manager(AEM)의 핵심 개념을 살펴보기 전에 Adobe은에서 WKND 자습서를 완료해 주십시오 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md) 문서. AEM 개발 프로세스에 대한 개요와 핵심 개념에 대한 소개가 포함되어 있습니다.
 
 ## AEM에서 개발하기 위한 사전 요구 사항 {#prerequisites-for-developing-on-aem}
 
@@ -57,7 +53,7 @@ Experience Server는 AEM이 기반으로 구축되고 사용자 정의 애플리
 
 ### Sling 소개 {#introduction-to-sling}
 
-AEM은 다음을 사용하여 빌드되었습니다. [슬링](https://sling.apache.org/index.html)는 콘텐츠 중심 애플리케이션을 쉽게 개발할 수 있도록 해주는 REST 원칙을 기반으로 한 웹 애플리케이션 프레임워크입니다. Sling은 Apache Jackrabbit과 같은 JCR 저장소 또는 AEM의 경우 CRX 콘텐츠 저장소를 데이터 저장소로 사용합니다. Sling은 Apache Software Foundation에 기여했습니다. 자세한 내용은 Apache에서 확인할 수 있습니다.
+AEM은 다음을 사용하여 빌드되었습니다. [슬링](https://sling.apache.org/index.html)는 콘텐츠 중심 애플리케이션을 쉽게 개발할 수 있도록 해주는 REST 원칙을 기반으로 한 웹 애플리케이션 프레임워크입니다. Sling은 Apache Jackrabbit과 같은 JCR 저장소 또는 AEM이 있는 경우 CRX 콘텐츠 저장소를 데이터 저장소로 사용합니다. Sling은 Apache Software Foundation에 기여했습니다. 자세한 내용은 Apache에서 확인할 수 있습니다.
 
 Sling을 사용하면 렌더링되는 콘텐츠 유형이 첫 번째 처리 고려 사항이 아닙니다. 대신 URL이 렌더링을 수행하는 스크립트를 찾을 수 있는 콘텐츠 객체로 확인되는지 여부가 주요 고려 사항입니다. 이렇게 하면 웹 콘텐츠 작성자가 요구 사항에 맞게 쉽게 사용자 지정된 페이지를 작성할 수 있습니다.
 
@@ -65,11 +61,11 @@ Sling을 사용하면 렌더링되는 콘텐츠 유형이 첫 번째 처리 고�
 
 다음을 참조하십시오 [15분 안에 Sling 살펴보기](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) Sling을 사용하여 개발하는 첫 번째 단계입니다.
 
-다음 다이어그램에서는 HTTP 요청에서 콘텐츠 노드로, 콘텐츠 노드에서 리소스 유형으로, 리소스 유형에서 스크립트로 가져오는 방법과 사용 가능한 스크립팅 변수를 보여 줍니다.
+다음 다이어그램에서는 Sling 스크립트 해상도를 설명합니다. HTTP 요청에서 콘텐츠 노드로, 콘텐츠 노드에서 리소스 유형으로, 리소스 유형에서 스크립트로 가져오는 방법과 사용 가능한 스크립팅 변수를 보여 줍니다.
 
 ![Apache Sling 스크립트 해상도 이해](assets/sling-cheatsheet-01.png)
 
-다음 다이어그램에서는 저장소에서 노드를 생성, 수정, 삭제, 복사 및 이동할 수 있는 끝없는 옵션을 제공하는 모든 POST 요청에 대한 기본 처리기인 SlingPostServlet을 처리할 때 사용할 수 있는 숨겨져 있지만 강력한 모든 요청 매개 변수에 대해 설명합니다.
+다음 다이어그램은 SlingPostServlet을 처리할 때 사용할 수 있는 숨겨져 있지만 강력한 모든 요청 매개 변수에 대해 설명합니다. 여기에는 저장소의 노드를 생성, 수정, 삭제, 복사 및 이동할 수 있는 끝없는 옵션을 제공하는 모든 POST 요청에 대한 기본 처리기가 포함되어 있습니다.
 
 ![SlingPostServlet 사용](assets/sling-cheatsheet-02.png)
 
@@ -84,7 +80,7 @@ Sling은 *내용 중심*. 즉, 각 (HTTP) 요청이 JCR 리소스(저장소 노�
 
 콘텐츠 중심 철학으로 인해 Sling은 REST 기반 서버를 구현하므로 웹 애플리케이션 프레임워크에 새로운 개념이 도입되었습니다. 장점은 다음과 같습니다.
 
-* 표면뿐만 아니라 매우 RESTful입니다. 리소스와 표현은 서버 내부에서 올바르게 모델링됩니다.
+* 표면뿐만 아니라 RESTful입니다. 리소스와 표현은 서버 내부에서 올바르게 모델링됩니다.
 * 하나 이상의 데이터 모델 제거
 
    * 이전에는 URL 구조, 비즈니스 개체, DB 스키마,
@@ -100,7 +96,7 @@ Sling에서 처리는 사용자 요청의 URL에 의해 결정됩니다. 적절�
 https://myhost/tools/spy.printable.a4.html/a/b?x=12
 ```
 
-우리는 그것을 그것의 합성 부품들로 나눌 수 있습니다.
+이를 복합 부품으로 분류할 수 있습니다.
 
 | 프로토콜 | host | 콘텐츠 경로 | 선택기 | 확장 |  | 접미사 |  | 매개 변수 |
 |---|---|---|---|---|---|---|---|---|
@@ -110,7 +106,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 **호스트** 웹 사이트 이름.
 
-**콘텐츠 경로** 렌더링할 콘텐츠를 지정하는 경로입니다. 는 확장과 함께 사용됩니다. 이 예에서는 tools/spy.html으로 번역됩니다.
+**콘텐츠 경로** 렌더링할 콘텐츠를 지정하는 경로입니다. 확장과 함께 사용됩니다. 이 예에서는 다음과 같이 변환됩니다. `tools/spy.html`.
 
 **선택기** 컨텐츠를 렌더링하는 대체 방법에 사용됩니다. 이 예에서는 프린터에 적합한 A4 버전.
 
@@ -127,7 +123,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 * 매핑은 요청에서 추출된 콘텐츠 경로를 사용하여 리소스를 찾습니다
 * 적절한 리소스가 있으면 sling 리소스 유형이 추출되고, 콘텐츠 렌더링에 사용할 스크립트를 찾는 데 사용됩니다
 
-아래 그림은 사용된 메커니즘을 보여 줍니다. 이에 대해서는 다음 섹션에서 자세히 설명합니다.
+아래 이미지는 사용된 메커니즘을 보여 주는 이미지이며, 이 메커니즘에 대해서는 다음 섹션에서 자세히 설명합니다.
 
 ![chlimage_1-86](assets/chlimage_1-86a.png)
 
@@ -150,15 +146,15 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
 에 의해 지정된 경로 `sling:resourceType` 다음 중 하나일 수 있습니다.
 
 * 절대
-* 상대, 구성 매개 변수 기준
+* 구성 매개 변수 관련
 
   상대 경로는 이동성을 높이므로 Adobe에서 권장합니다.
 
-모든 Sling 스크립트는 다음 중 하나의 하위 폴더에 저장됩니다. `/apps` 또는 `/libs`: 이 순서로 검색됩니다(참조) [구성 요소 및 기타 요소 맞춤화](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+모든 Sling 스크립트는 다음 중 하나의 하위 폴더에 저장됩니다. `/apps` 또는 `/libs`: 이 순서로 검색됩니다( 참조) [구성 요소 및 기타 요소 맞춤화](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 몇 가지 주목할 사항은 다음과 같습니다.
 
-* 메서드(GET, POST POST)가 필요한 경우 HTTP 사양(예: jobs.user.esp)에 따라 대문자로 지정됩니다(아래 참조).
+* 메서드(GET, POST POST)가 필요한 경우 HTTP 사양(예: jobs.user.esp)에 따라 대문자로 지정됩니다(아래 참조)
 * 다양한 스크립트 엔진이 지원됩니다.
 
    * HTL(HTML 템플릿 언어 - Adobe Experience Manager의 HTML 기본 및 권장 서버측 템플릿 시스템): `.html`
@@ -193,11 +189,11 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
 
   선택기를 사용하여 동일한 콘텐츠를 대체 형식으로 표시할 수 있습니다. 예를 들어 프린터에 친숙한 버전, rss 피드 또는 요약이 있습니다.
 
-  선택기가 있는 프린터에 친숙한 버전을 보면 *인쇄*&#x200B;에서와 같이 `../content/corporate/jobs/developer.print.html`
+  선택기가 다음과 같을 수 있는 프린터용 버전을 보는 경우 *인쇄*&#x200B;에서와 같이 `../content/corporate/jobs/developer.print.html`
 
   스크립트는 `/apps/hr/jobs/jobs.print.esp`; 선택기가 스크립트 이름에 추가됩니다.
 
-* sling:resourceType이 정의되지 않은 경우:
+* sling:resourceType이 정의되지 않은 경우 다음을 수행합니다.
 
    * 콘텐츠 경로는 적절한 스크립트를 검색하는 데 사용됩니다(경로 기반 ResourceTypeProvider가 활성화된 경우).
 
@@ -205,9 +201,9 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
 
    * 기본 노드 유형이 사용됩니다.
 
-* 스크립트가 전혀 없으면 기본 스크립트가 사용됩니다.
+* 스크립트가 없으면 기본 스크립트가 사용됩니다.
 
-  기본 렌디션은 현재 일반 텍스트(.txt), HTML(.html) 및 JSON(.json)으로 지원되며, 모두 해당 노드의 속성(적절한 형식)이 나열됩니다. 확장 .res의 기본 렌디션 또는 요청 확장명이 없는 요청은 리소스를 스풀 처리하는 것입니다(가능한 경우).
+  기본 렌디션은 일반 텍스트(.txt), HTML(.html) 및 JSON(.json)으로 지원되며, 이 모든 렌디션은 노드의 속성(적절한 형식)을 나열합니다. 확장 .res의 기본 렌디션 또는 요청 확장명이 없는 요청은 리소스를 스풀 처리하는 것입니다(가능한 경우).
 * HTTP 오류 처리(코드 403 또는 404)의 경우 Sling은 다음 중 하나에서 스크립트를 찾습니다.
 
    * /apps/sling/servlet/errorhandler 위치 [사용자 지정된 스크립트](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -233,7 +229,7 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
 
 기본 설정 순서는 (8) - (7) - (6) - (5) - (4) - (3) - (2) - (1)입니다.
 
-리소스 유형(주로 로 정의됨) 외에도 `sling:resourceType` 속성) 리소스 슈퍼 유형도 있습니다. 일반적으로 다음과 같이 표시됩니다. `sling:resourceSuperType` 속성. 이러한 슈퍼 유형은 스크립트를 찾으려고 할 때도 고려됩니다. 리소스 슈퍼 유형의 장점은 기본 리소스 유형이 있는 리소스의 계층 구조를 형성할 수 있다는 것입니다 `sling/servlet/default` (기본 서블릿에서 사용)는 사실상 루트입니다.
+리소스 유형(주로 로 정의됨) 외에도 `sling:resourceType` 속성)을 입력하면 리소스 슈퍼 유형도 있습니다. 이는 로 표시됩니다. `sling:resourceSuperType` 속성. 이러한 슈퍼 유형은 스크립트를 찾으려고 할 때도 고려됩니다. 리소스 슈퍼 유형의 장점은 기본 리소스 유형이 있는 리소스의 계층 구조를 형성할 수 있다는 것입니다 `sling/servlet/default` (기본 서블릿에서 사용)는 사실상 루트입니다.
 
 리소스의 리소스 슈퍼 타입은 두 가지 방식으로 정의될 수 있다:
 
@@ -292,7 +288,7 @@ Sling API 패키지 org.apache.sling을 사용합니다.&amp;ast; 및 태그 라
 
 마지막으로 스크립트 내의 기존 요소를 참조해야 한다는 점을 고려해야 합니다.
 
-보다 복잡한 스크립트(집계 스크립트)는 여러 리소스(예: 탐색, 사이드바, 바닥글, 목록 요소)에 액세스해야 할 수 있으며 *리소스*.
+보다 복잡한 스크립트(집계 스크립트)는 여러 리소스(탐색, 사이드바, 바닥글, 목록 요소 등)에 액세스해야 하며 *리소스*.
 
 이렇게 하려면 sling:include(&quot;/&lt;path>/&lt;resource>&quot;) 명령입니다. 여기에는 이미지 렌더링에 대한 기존 정의를 참조하는 다음 문과 같이 참조된 리소스의 정의가 효과적으로 포함됩니다.
 
@@ -302,7 +298,7 @@ Sling API 패키지 org.apache.sling을 사용합니다.&amp;ast; 및 태그 라
 
 ## OSGI {#osgi}
 
-OSGi는 모듈식 애플리케이션과 라이브러리(Java용 동적 모듈 시스템이라고도 함)를 개발 및 배포하기 위한 아키텍처를 정의합니다. OSGi 컨테이너를 사용하여 애플리케이션을 개별 모듈(추가 메타 정보가 있는 jar 파일 및 OSGi 용어로 번들이라고 함)로 분류하고 다음과 같이 애플리케이션 간의 상호 종속성을 관리할 수 있습니다.
+OSGi는 모듈식 애플리케이션과 라이브러리(Java™용 동적 모듈 시스템이라고도 함)를 개발 및 배포하기 위한 아키텍처를 정의합니다. OSGi 컨테이너를 사용하여 애플리케이션을 개별 모듈(추가 메타 정보가 있는 jar 파일이며 OSGi 용어로 번들이라고 함)로 분류하고 다음과 같이 애플리케이션 간의 상호 종속성을 관리할 수 있습니다.
 
 * 컨테이너 내에서 구현된 서비스
 * 컨테이너와 애플리케이션 간의 계약
@@ -326,10 +322,10 @@ OSGi는 모듈식 애플리케이션과 라이브러리(Java용 동적 모듈 �
 * stop
 * 업데이트
 * 제거
-* 현재 상태 보기
-* 특정 번들에 대한 자세한 정보(예: 기호 이름, 버전, 위치 등)에 액세스
+* 상태 보기
+* 특정 번들에 대한 자세한 정보(예: 기호 이름, 버전 및 위치)에 액세스합니다
 
-다음을 참조하십시오 [웹 콘솔](/help/sites-deploying/web-console.md), [OSGI 구성](/help/sites-deploying/configuring-osgi.md) 및 [OSGi 구성 설정](/help/sites-deploying/osgi-configuration-settings.md) 추가 정보.
+다음을 참조하십시오 [웹 콘솔](/help/sites-deploying/web-console.md), [OSGI 구성](/help/sites-deploying/configuring-osgi.md), 및 [OSGi 구성 설정](/help/sites-deploying/osgi-configuration-settings.md) 추가 정보.
 
 ## AEM 환경의 개발 개체 {#development-objects-in-the-aem-environment}
 
@@ -337,7 +333,7 @@ OSGi는 모듈식 애플리케이션과 라이브러리(Java용 동적 모듈 �
 
 **항목** 항목은 노드 또는 속성입니다.
 
-Item 객체 조작에 대한 자세한 내용은 [자바독스](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) /인터페이스 javax.jcr.Item
+Item 객체 조작에 대한 자세한 내용은 [Java™ 문서](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) /인터페이스 javax.jcr.Item
 
 **노드(및 해당 속성)** 노드 및 해당 속성은 JCR API 2.0 사양(JSR 283)에 정의되어 있습니다. 컨텐츠, 객체 정의, 렌더링 스크립트 및 기타 데이터를 저장합니다.
 
@@ -351,9 +347,9 @@ JCR 이름인 노드는 Sling 환경에서 리소스라고도 합니다.
 
 `PropertyIterator properties = currentNode.getProperties();`
 
-currentNode가 현재 노드 개체인 경우
+현재 노드 개체가 되는 currentNode입니다.
 
-노드 객체 조작에 대한 자세한 내용은 [자바독스](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+노드 객체 조작에 대한 자세한 내용은 [Java™ 문서](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **위젯** AEM에서 모든 사용자 입력은 위젯에 의해 관리됩니다. 이러한 속성은 종종 콘텐츠 편집을 제어하는 데 사용됩니다.
 
@@ -369,12 +365,12 @@ AEM은 위젯의 ExtJS 라이브러리를 사용하여 개발되었습니다.
 
 **구성 요소** 소프트웨어 구성 요소는 사전 정의된 서비스 또는 이벤트를 제공하고 다른 구성 요소와 통신할 수 있는 시스템 요소입니다.
 
-AEM 내에서 구성 요소는 리소스의 콘텐츠를 렌더링하는 데 종종 사용됩니다. 리소스가 페이지인 경우 이 리소스를 렌더링하는 구성 요소를 최상위 구성 요소 또는 Pagecomponent라고 합니다. 그러나 구성 요소는 콘텐츠를 렌더링하거나 특정 리소스에 연결할 필요가 없습니다. 예를 들어 탐색 구성 요소는 여러 리소스에 대한 정보를 표시합니다.
+AEM 내에서 구성 요소는 리소스의 콘텐츠를 렌더링하는 데 종종 사용됩니다. 리소스가 페이지인 경우 렌더링하는 구성 요소를 최상위 구성 요소 또는 페이지 구성 요소라고 합니다. 그러나 구성 요소는 콘텐츠를 렌더링하거나 특정 리소스에 연결할 필요가 없습니다. 예를 들어 탐색 구성 요소는 여러 리소스에 대한 정보를 표시합니다.
 
-구성 요소의 정의는 다음과 같습니다.
+구성 요소의 정의에는 다음이 포함됩니다.
 
 * 콘텐츠를 렌더링하는 데 사용되는 코드
-* 사용자 입력 및 결과 컨텐츠 구성에 대한 대화 상자입니다.
+* 사용자 입력 및 결과 컨텐츠 구성을 위한 대화 상자입니다.
 
 **템플릿** 템플릿은 특정 유형의 페이지에 대한 기준입니다. 웹 사이트 탭에서 페이지를 만들 때 사용자는 템플릿을 선택해야 합니다. 그런 다음 이 템플릿을 복사하여 새 페이지가 만들어집니다.
 
@@ -392,7 +388,7 @@ AEM 내에서 구성 요소는 리소스의 콘텐츠를 렌더링하는 데 종
 
 S`tring pageName = currentPage.getName();`
 
-현재 페이지 개체가 currentPage인 경우 페이지 개체 조작에 대한 자세한 내용은 [자바독스](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+현재 페이지 개체인 TcurrentPage입니다. 페이지 개체 조작에 대한 자세한 내용은 [Java™ 문서](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **페이지 관리자** 페이지 관리자는 페이지 수준 작업을 위한 메서드를 제공하는 인터페이스입니다.
 
@@ -400,7 +396,7 @@ S`tring pageName = currentPage.getName();`
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체인 경우 페이지 관리자에서 제공하는 메서드에 대한 자세한 내용은 [자바독스](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+pageManager 개체는 pageManager 개체이고 myResource는 리소스 개체입니다. 페이지 관리자에서 제공하는 메서드에 대한 자세한 내용은 [Java™ 문서](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## 저장소 내의 구조 {#structure-within-the-repository}
 
@@ -414,7 +410,7 @@ pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체�
 
 >[!CAUTION]
 >
->에서 아무 것도 변경하지 마십시오. `/libs` 경로. 구성 및 기타 변경 사항의 경우 항목을에서 복사합니다. `/libs` 끝 `/apps` 내 모든 변경 내용 적용 `/apps`.
+>의 아무 것도 변경하지 마십시오. `/libs` 경로. 구성 및 기타 변경 사항의 경우 다음에서 항목을 복사합니다. `/libs` 끝 `/apps` 내 모든 변경 내용 적용 `/apps`.
 
 * `/apps`
 
@@ -444,7 +440,7 @@ pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체�
 
 ## 환경 {#environments}
 
-AEM을 사용할 때 프로덕션 환경은 종종 두 가지 유형의 인스턴스, 즉 [작성자 및 게시 인스턴스](/help/sites-deploying/deploy.md#author-and-publish-installs).
+AEM을 사용할 때 프로덕션 환경은 종종 두 가지 유형의 인스턴스로 구성됩니다. [작성자 및 게시 인스턴스](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
 ## 디스패처 {#the-dispatcher}
 
