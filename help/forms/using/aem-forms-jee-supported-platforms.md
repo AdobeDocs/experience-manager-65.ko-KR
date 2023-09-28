@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 54bed871375ddc9d18af564318ceac95dd1dd2f9
+source-git-commit: d76fce58973bd011b53a5da41578b57a8e10912e
 workflow-type: tm+mt
-source-wordcount: '3667'
+source-wordcount: '3694'
 ht-degree: 1%
 
 ---
@@ -707,7 +707,7 @@ Adobe은 JEE 릴리스의 AEM Forms에서 지원하는 타사 참조 플랫폼�
 - Microsoft® Windows Server 2019(64비트)
 - Microsoft® Active Directory 2016
 
-다음 플랫폼은 2022년 6월 2일에 AEM Forms 6.5.18.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
+다음 플랫폼은 2022년 6월 2일에 AEM Forms 6.5.17.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
 
 - Microsoft® SharePoint 2016
 
@@ -731,15 +731,14 @@ Adobe은 JEE 릴리스의 AEM Forms에서 지원하는 타사 참조 플랫폼�
 - Microsoft® Office 2016
 - OpenOffice 4.1.2
 
-<!--
+
 >[!NOTE]
 >
->The platforms marked as [deprecated on with AEM Forms 6.5.12.0 and 6.5.10.0 remain in support until AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
--->
+더 이상 사용되지 않는 플랫폼은 플랫폼이 제거됨으로 표시되거나 플랫폼에 대한 서드파티 공급업체 지원이 사용 수명 종료에 도달할 때까지 계속 지원을 받습니다.
 
 ## 개정 내역 {#revision-history}
 
-- 2023년 8월 31일
+- 6.5.18.0 (2023년 8월 31일)
    - **플랫폼 업데이트**: [!DNL Adobe Experience Manager Forms] jee에서 다음 플랫폼에 대한 지원이 추가되었습니다.
       - MongoDB Enterprise 4.4
       - Oracle WebLogic Server 14c
@@ -768,7 +767,7 @@ Adobe은 JEE 릴리스의 AEM Forms에서 지원하는 타사 참조 플랫폼�
       - OpenOffice 4.1.2
       - Acrobat 2017(클래식 트랙) 버전 17.011.30078 이상
 
-- 2022년 9월 1일
+- 6.5.10.0 (2022년 9월 1일)
 
    - 애플리케이션 서버 JBoss™ EAP 7.4에 대한 Oracle Java® SE 11(64비트) SDK에 대한 지원을 추가했습니다.
 
