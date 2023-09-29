@@ -53,7 +53,7 @@ ht-degree: 94%
    + [페이지 버전을 사용하여 작업](working-with-page-versions.md)
    + [페이지 비교](page-diff.md)
    + [구성 요소 콘솔](default-components-console.md)
-   + [응답형 레이아웃](responsive-layout.md)
+   + [반응형 레이아웃](responsive-layout.md)
    + [컨텐츠 인사이트](content-insights.md)
    + [액세스 가능한 콘텐츠 제작 (WCAG 2.1 적합성)](creating-accessible-content.md)
    + [디자인 모드에서 구성 요소 구성](default-components-designmode.md)
@@ -66,11 +66,11 @@ ht-degree: 94%
    + [작업](task-content.md)
    + [크리에이티브 프로젝트 및 PIM 통합](managing-product-information.md)
    + [프로젝트 워크플로를 사용하여 작업](projects-with-workflows.md)
-+ 런치 {#launches}
++ 론치 {#launches}
    + [론치](launches.md)
    + [론치 만들기](launches-creating.md)
    + [론치 편집](launches-editing.md)
-   + [런치 홍보](launches-promoting.md)
+   + [론치 홍보](launches-promoting.md)
 + 워크플로 {#workflows}
    + [워크플로를 사용하여 작업](workflows.md)
    + [페이지에 워크플로 적용](workflows-applying.md)

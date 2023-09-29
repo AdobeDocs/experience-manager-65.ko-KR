@@ -5,7 +5,7 @@ exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이�
 
 ## 주요 AEM 문서
 
-* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
+* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
 
@@ -41,9 +41,9 @@ AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이�
 ## 주요 AEM 리소스
 
 * [AEM 자습서](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
-* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
+* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
-* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 * [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other)

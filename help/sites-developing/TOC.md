@@ -37,12 +37,12 @@ ht-degree: 79%
    + [디자인과 디자이너(클래식 UI)](designer.md)
    + [터치 UI로 마이그레이션](/help/sites-developing/touch-ui-migration.md)
 + 플랫폼{#platform}
-   + [슬링 치트시트](sling-cheatsheet.md)
+   + [Sling 치트시트](sling-cheatsheet.md)
    + [Sling 어댑터 사용](sling-adapters.md)
    + [태그 라이브러리](taglib.md)
    + 템플릿{#templates}
       + [템플릿](templates.md)
-      + [페이지 템플릿 - 편집 가능 ](page-templates-editable.md)
+      + [페이지 템플릿 - 편집 가능](page-templates-editable.md)
       + [페이지 템플릿 - 정적](page-templates-static.md)
       + [컨텐츠 조각 템플릿](content-fragment-templates.md)
       + [적응형 템플릿 렌더링](templates-adaptive-rendering.md)
@@ -52,7 +52,7 @@ ht-degree: 79%
    + [새로운 Granite UI 필드 구성 요소 만들기](granite-ui-component.md)
    + QueryBuilder{#query-builder}
       + [Query Builder의 사용자 지정 설명 평가기 구현](implementing-custom-predicate-evaluator.md)
-      + [쿼리 빌더 술어 참조](querybuilder-predicate-reference.md)
+      + [쿼리 빌더 조건자 참조](querybuilder-predicate-reference.md)
       + [쿼리 빌더 API](querybuilder-api.md)
    + 태깅{#tagging}
       + [태그 지정](tags.md)
@@ -70,7 +70,7 @@ ht-degree: 79%
    + [벌크 편집기 개발](dev-bulk-editor.md)
    + [보고서 개발](dev-reports.md)
 + 구성 요소{#components}
-   + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+   + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
    + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
    + [구성 요소 개요](components.md)
    + [AEM 구성 요소 - 기본 사항](components-basics.md)
@@ -101,7 +101,7 @@ ht-degree: 79%
    + [헤드리스 및 AEM](headless/introduction.md)
    + 헤드리스 여정 {#journeys}
       + Headless 개발자 여정 {#developer}
-         + [AEM Headless 이해](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
+         + [AEM의 Headless 이해](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
          + [CMS Headless 개발에 대해 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)
          + [AEM Headless as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/getting-started.html)
          + [AEM Headless를 사용한 첫 번째 경험으로의 경로](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/path-to-first-experience.html)
@@ -110,7 +110,7 @@ ht-degree: 79%
          + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
          + [결합 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/put-it-all-together.html)
          + [Headless 애플리케이션 실행 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
-         + [선택 사항 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
+         + [옵션 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
       + Headless 콘텐츠 설계 여정 {#architect}
          + [AEM Headless 콘텐츠 설계 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
          + [AEM을 통한 Headless용 콘텐츠 모델링 - 소개](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
@@ -197,9 +197,9 @@ ht-degree: 79%
       + [Client Context JavaScript API](ccjsapi.md)
 + AEM 확장{#extending-aem}
    + [Adobe Developer App Builder를 사용하여 AEM 확장](app-builder.md)
-   + [페이지 작성 사용자 지정](customizing-page-authoring-touch.md)
+   + [페이지 작성 사용자 정의](customizing-page-authoring-touch.md)
    + [콘솔 사용자 지정](customizing-consoles-touch.md)
-   + [페이지 속성 보기 사용자 지정](page-properties-views.md)
+   + [페이지 속성 보기 사용자 정의](page-properties-views.md)
    + [페이지 속성의 벌크 편집을 위한 페이지 구성](bulk-editing.md)
    + [콘텐츠 조각 맞춤화 및 확장](customizing-content-fragments.md)
    + [렌더링용 구성 요소를 구성하는 콘텐츠 조각](content-fragments-config-components-rendering.md)
@@ -248,7 +248,7 @@ ht-degree: 79%
    + [UI 테스트](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html)
 + 우수 사례{#bestpractices}
    + [우수 사례 개요](best-practices.md)
-   + [AEM 개발 지침 및 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html)
+   + [AEM 개발 지침 및 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html?lang=ko-KR)
    + [개발 우수 사례](development-practices.md)
    + [컨텐츠 아키텍처](content-architecture.md)
    + [소프트웨어 아키텍처](software-architecture.md)

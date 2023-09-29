@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 36%
+ht-degree: 37%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 36%
 + Sites 기능 {#introduction}
    + [웹 사이트 관리](msm-and-translation.md)
    + [비동기 작업](asynchronous-jobs.md)
-   + [콘텐츠 재사용: 다중 사이트 관리자 및 라이브 카피](msm.md)
+   + [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](msm.md)
    + [Live Copy 개요 콘솔](msm-livecopy-overview.md)
    + [Live Copy 동기화 구성](msm-sync.md)
    + [Live Copy 생성 및 동기화](msm-livecopy.md)
@@ -104,7 +104,7 @@ ht-degree: 36%
    + [ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html) 구성
    + [Client Context](client-context.md)
    + [캠페인](campaigns.md)
-   + [ContextHub를 사용하여 세그먼테이션 구성](segmentation.md)
+   + [ContextHub를 사용하여 세분화 구성](segmentation.md)
    + [세그먼테이션 구성](campaign-segmentation.md)
    + [랜딩 페이지용 디자인 Importer 확장 및 구성](extending-the-design-importer-for-landingpages.md)
    + [Adobe Analytics과 랜딩 페이지 통합](integrating-landing-pages-with-adobe-analytics.md)
@@ -126,7 +126,7 @@ ht-degree: 36%
    + [DHTML 뷰어 지원 중단 FAQ](dhtml-viewer-endoflifefaqs.md)
    + [Adobe Campaign Classic과 통합](campaignonpremise.md)
    + [관련 커뮤니티 문서](related-community-articles.md)
-   + [Adobe Campaign Standard과 통합](campaignstandard.md)
+   + [Adobe Campaign Standard와 통합](campaignstandard.md)
    + [Flash 뷰어 지원 중단 알림](flash-viewers-eol.md)
    + [Adobe Dynamic Tag Management과 통합](dtm.md)
    + [Adobe Analytics 및 Adobe Target 선택](opt-in.md)

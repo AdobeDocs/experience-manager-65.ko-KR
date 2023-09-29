@@ -8,7 +8,7 @@ user-guide-description: AEM Content and Commerce를 사용하고 관리하는 �
 source-git-commit: b3c44f93c235b5daa7b6385a0c12841fcba767ff
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 

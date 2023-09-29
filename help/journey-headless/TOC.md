@@ -17,7 +17,7 @@ ht-degree: 100%
 
 + [AEM Headless 여정](/help/journey-headless/home.md)
 + AEM Headless 개발자 여정 {#developer}
-   + [AEM Headless 이해](developer/overview.md)
+   + [AEM의 Headless 이해](developer/overview.md)
    + [CMS Headless 개발에 대해 알아보기](developer/learn-about.md)
    + [AEM Headless 시작하기](developer/getting-started.md)
    + [AEM Headless를 사용한 첫 번째 경험으로의 경로](developer/path-to-first-experience.md)
