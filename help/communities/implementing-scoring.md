@@ -9,9 +9,9 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2853'
+source-wordcount: '2852'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 * 배지는 다음과 같아야 합니다. [활성화됨](#enableforcomponent) 피쳐 컴포넌트
 * 채점 및 배지 규칙은 다음과 같아야 합니다. [적용됨](#applytopage) 구성 요소가 배치된 페이지(또는 상위 항목)로 이동합니다.
 
-이번 릴리스에는 3가지 보상 기반 배지가 포함됩니다.
+이번 릴리스에는 3가지 보상 기반 배지가 포함됐다.
 
 * **금**
   `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`

@@ -1,17 +1,14 @@
 ---
 title: ContextHub 구성
-seo-title: Configuring ContextHub
 description: Context Hub를 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure Context Hub.
-uuid: f2988bb9-6878-42a2-bb51-c3f8683248c5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1786'
 ht-degree: 2%
 
 ---
@@ -258,7 +255,7 @@ CRXDE Lite을 사용하여 속성 설정 `debug` 끝 **true** 아래:
 
 >[!NOTE]
 >
->ContextHub 구성이 여전히 이전 경로 아래에 있는 경우 를 설정할 위치입니다. `debug property` 은(는) `/libs/settings/cloudsettings/legacy/contexthub`.
+>ContextHub 구성이 여전히 이전 경로 아래에 있는 경우 설정할 위치입니다. `debug property` 은(는) `/libs/settings/cloudsettings/legacy/contexthub`.
 
 ### 자동 모드 {#silent-mode}
 

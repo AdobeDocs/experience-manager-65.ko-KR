@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2327'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -257,7 +257,7 @@ XLIFF 파일을 내보내고 언어를 포함할 때 저장소에 있는 사전�
 
 ### 사전 가져오기 {#importing-a-dictionary}
 
-XLIFF 파일을 사전에 가져와서 사전을 채웁니다. 사전에 영어 문자열에 대한 번역이 포함되어 있고 XLIFF 파일에 동일한 문자열에 대한 다른 번역이 포함되어 있는 경우 사전 번역이 대체됩니다.
+XLIFF 파일을 사전으로 가져와서 사전을 채웁니다. 사전에 영어 문자열에 대한 번역이 포함되어 있고 XLIFF 파일에 동일한 문자열에 대한 다른 번역이 포함되어 있는 경우 사전 번역이 대체됩니다.
 
 1. 번역 도구 열기 `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. 가져오기 > XLIFF 번역 을 클릭합니다.

@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 12%
+source-wordcount: '529'
+ht-degree: 13%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 12%
 
 다음 영역에는 모범 사례와 관련된 설명서가 있습니다.
 
-* [Assets](#assets)
+* [자산](#assets)
 * [Sites](#sites)
 
 작성, 배포, 유지 관리 또는 개발에 대한 우수 사례는 다음 중 하나를 참조하십시오.
@@ -32,7 +32,7 @@ ht-degree: 12%
 
 특정 문서는 다음에 나오는 표에 설명되어 있고 연결됩니다.
 
-## Assets {#assets}
+## 자산 {#assets}
 
 Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
 
@@ -46,7 +46,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 
   <tr>
    <td>콘텐츠 구성 방법(폴더 계층 구조)</td>
    <td><a href="/help/assets/organize-assets.md">파일 관리 우수 사례</a></td>
-   <td>비디오, 메타데이터, 이미지 처리가 항상 폴더에 적용되므로 처리 프로필의 대부분은 폴더 기반입니다. 이 모범 사례 문서에서는 계층 구조가 콘텐츠 처리 방법에 중요한 영향을 미치므로 폴더 계층 구조를 정의하고 설정하는 방법에 대해 설명합니다. </td>
+   <td>대부분의 처리 프로필은 비디오, 메타데이터, 이미지 처리가 항상 폴더에 적용되므로 폴더를 기반으로 합니다. 이 모범 사례 문서에서는 계층 구조가 콘텐츠 처리 방법에 중요한 영향을 미치므로 폴더 계층 구조를 정의하고 설정하는 방법에 대해 설명합니다. </td>
   </tr>
   <tr>
    <td>Scene7 및 AEM 통합</td>

@@ -12,9 +12,9 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '3736'
+source-wordcount: '3732'
 ht-degree: 8%
 
 ---
@@ -27,11 +27,11 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 * **업로드된 기본 소스 비디오의 해상도**
 
-   MP4 영상이 240p 또는 360p와 같이 낮은 해상도로 녹화된 경우 고화질로 스트리밍할 수 없습니다.
+  MP4 영상이 240p 또는 360p와 같이 낮은 해상도로 녹화된 경우 고화질로 스트리밍할 수 없습니다.
 
 * **비디오 플레이어 크기**
 
-   기본적으로 응용 비디오 인코딩 프로필의 &quot;너비&quot;는 &quot;자동&quot;으로 설정됩니다. 다시 말하지만 재생 중에는 플레이어 크기에 따라 최상의 품질이 사용됩니다.
+  기본적으로 응용 비디오 인코딩 프로필의 &quot;너비&quot;는 &quot;자동&quot;으로 설정됩니다. 다시 말하지만 재생 중에는 플레이어 크기에 따라 최상의 품질이 사용됩니다.
 
 다음을 참조하십시오 [비디오 인코딩에 대한 우수 사례](/help/assets/video.md#best-practices-for-encoding-videos).
 
@@ -118,7 +118,7 @@ Adobe Sensei은 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디�
 >
 >비디오 스마트 자르기가 작동하려면 비디오 프로필에 비디오 인코딩 사전 설정을 하나 이상 포함해야 합니다.
 
-비디오에 스마트 자르기를 사용하려면 적응형 또는 점진적 비디오 인코딩 프로필을 만듭니다. 프로필의 일부로 **[!UICONTROL 스마트 자르기 비율]** 사전 정의된 종횡비를 선택하는 도구입니다. 예를 들어 비디오 인코딩 사전 설정을 정의한 후 종횡비가 16x9인 &quot;모바일 가로&quot; 정의와 종횡비가 9x16인 &quot;모바일 세로&quot; 정의를 추가할 수 있습니다. 선택할 수 있는 기타 종횡비 또는 자르기 비율에는 1x1, 4x3 및 4x5가 포함됩니다.
+비디오에 스마트 자르기를 사용하려면 적응형 또는 점진적 비디오 인코딩 프로필을 만듭니다. 프로필의 일부로 **[!UICONTROL 스마트 자르기 비율]** 사전 정의된 종횡비를 선택하는 도구입니다. 예를 들어 비디오 인코딩 사전 설정을 정의한 후 종횡비가 16×9인 &quot;모바일 가로&quot; 정의와 종횡비가 9×16인 &quot;모바일 세로&quot; 정의를 추가할 수 있습니다. 선택할 수 있는 기타 양상 또는 자르기 비율에는 1×1, 4×3 및 4×5가 포함됩니다.
 
 ![스마트 자르기로 비디오 인코딩 프로필 편집](assets/edit-smart-crop-video2.png)
 
@@ -411,7 +411,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 * 다음 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`. 속성 추가 `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 및 선택 **[!UICONTROL 모두 저장]**.
 
-   ![chlimage_1-519](assets/chlimage_1-519.png)
+  ![chlimage_1-519](assets/chlimage_1-519.png)
 * 다음을 수행할 수 있습니다. [비디오 프로필 처리 작업 진행 상황 모니터링](#monitoring-the-progress-of-an-encoding-job).
 
 ## 비디오 프로필 처리 작업 진행 상황 모니터링 {#monitoring-the-progress-of-an-encoding-job}

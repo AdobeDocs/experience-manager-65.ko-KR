@@ -1,16 +1,14 @@
 ---
 title: 모바일 앱용 페이지 템플릿
 description: 페이지 템플릿에 대한 자세한 내용을 보려면 이 페이지를 따르십시오. angular 앱에 대해 만드는 페이지 구성 요소는 /libs/mobileapps/components/page/ng-page 구성 요소를 기반으로 합니다.
-uuid: c53901c9-5974-4c6b-ac61-1c094a93c9d6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '2666'
 ht-degree: 0%
 
 ---

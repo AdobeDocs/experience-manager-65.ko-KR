@@ -1,19 +1,15 @@
 ---
 title: 정책으로 문서 보호
-seo-title: Protecting Documents with Policies
 description: Document Security 서비스를 사용하여 Adobe PDF 문서에 기밀 유지 설정을 동적으로 적용하고 문서에 대한 제어 권한을 유지할 수 있습니다. 또한 Document Security 서비스를 통해 사용자는 수신자가 정책으로 보호된 PDF 문서를 사용하는 방법을 제어할 수 있습니다.
-seo-description: Use the Document Security service to dynamically apply confidentiality settings to Adobe PDF documents and to maintain control over the documents. The Document Security service also enables the users to maintain control over how recipients use the policy-protected PDF document.
-uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '15514'
+source-wordcount: '15513'
 ht-degree: 0%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 0%
 
 **Document Security 서비스 정보**
 
-Document Security 서비스를 통해 사용자는 Adobe PDF 문서에 기밀 유지 설정을 동적으로 적용하고 문서가 아무리 광범위하게 배포되었더라도 문서에 대한 제어 권한을 유지할 수 있습니다.
+Document Security 서비스를 통해 사용자는 Adobe PDF 문서에 기밀 유지 설정을 동적으로 적용하고 문서가 광범위하게 배포된 경우에도 문서에 대한 제어 권한을 유지할 수 있습니다.
 
 Document Security 서비스는 사용자가 수신자가 정책으로 보호된 PDF 문서를 사용하는 방법을 제어할 수 있도록 하여 정보가 사용자의 범위를 넘어 확산되는 것을 방지합니다. 사용자는 문서를 열 수 있는 사용자를 지정하고, 문서를 사용할 수 있는 방법을 제한하고, 문서가 배포된 후 문서를 모니터링할 수 있습니다. 사용자는 정책으로 보호된 문서에 대한 액세스를 동적으로 제어할 수 있으며 문서에 대한 액세스를 동적으로 취소할 수도 있습니다.
 
@@ -228,20 +224,20 @@ Java(Document Security API)를 사용하여 정책을 만듭니다.
 
 1. 정책의 속성을 설정합니다.
 
-   * 만들기 `Policy` 를 호출하여 개체 `InfomodelObjectFactory` 개체의 정적 `createPolicy` 메서드를 사용합니다. 이 메서드는 `Policy` 개체.
+   * 만들기 `Policy` 를 호출하여 개체 `InfomodelObjectFactory` 오브젝트의 정적 `createPolicy` 메서드를 사용합니다. 이 메서드는 `Policy` 개체.
    * 다음을 호출하여 정책의 이름 속성을 설정합니다. `Policy` 개체 `setName` 메서드 및 정책 이름을 지정하는 문자열 값 전달
-   * 를 호출하여 정책의 설명을 설정합니다. `Policy` 개체 `setDescription` 정책의 설명을 지정하는 문자열 값을 전달하는 메서드입니다.
-   * 를 호출하여 새 정책이 속한 정책 집합을 설정합니다. `Policy` 개체 `setPolicySetName` 메서드 및 정책 집합 이름을 지정하는 문자열 값 전달 (다음을 지정할 수 있습니다. `null` 정책이 추가되는 이 매개 변수 값에 대한 *내 정책* 정책 설정)
-   * 다음을 호출하여 정책의 유효 기간 만들기 `InfomodelObjectFactory` 개체의 정적 `createValidityPeriod` 메서드를 사용합니다. 이 메서드는 `ValidityPeriod` 개체.
+   * 다음을 호출하여 정책 설명 설정 `Policy` 개체 `setDescription` 메서드 및 정책의 설명을 지정하는 문자열 값 전달
+   * 다음을 호출하여 새 정책이 속한 정책 집합을 지정하십시오. `Policy` 개체 `setPolicySetName` 메서드 및 정책 집합 이름을 지정하는 문자열 값 전달 (다음을 지정할 수 있습니다. `null` 정책이 추가되는 이 매개 변수 값에 대한 *내 정책* 정책 설정)
+   * 다음을 호출하여 정책의 유효 기간 만들기 `InfomodelObjectFactory` 오브젝트의 정적 `createValidityPeriod` 메서드를 사용합니다. 이 메서드는 `ValidityPeriod` 개체.
    * 를 호출하여 정책으로 보호된 문서에 액세스할 수 있는 일 수를 설정합니다. `ValidityPeriod` 개체 `setRelativeExpirationDays` 일수를 지정하는 정수 값 전달 방법
    * 다음을 호출하여 정책의 유효 기간 설정 `Policy` 개체 `setValidityPeriod` 메서드 및 전달 `ValidityPeriod` 개체.
 
 1. 정책 항목을 만듭니다.
 
-   * 다음을 호출하여 정책 항목 만들기 `InfomodelObjectFactory` 개체의 정적 `createPolicyEntry` 메서드를 사용합니다. 이 메서드는 `PolicyEntry` 개체.
-   * 다음을 호출하여 정책의 권한 지정 `InfomodelObjectFactory` 개체의 정적 `createPermission` 메서드를 사용합니다. 에 속한 정적 데이터 멤버를 전달합니다. `Permission` 권한을 나타내는 인터페이스입니다. 이 메서드는 `Permission` 개체. 예를 들어, 사용자가 정책으로 보호된 PDF 문서에서 데이터를 복사할 수 있도록 하는 권한을 추가하려면 을 전달합니다 `Permission.COPY`. (추가할 각 권한에 대해 이 단계를 반복합니다.)
+   * 다음을 호출하여 정책 항목 만들기 `InfomodelObjectFactory` 오브젝트의 정적 `createPolicyEntry` 메서드를 사용합니다. 이 메서드는 `PolicyEntry` 개체.
+   * 다음을 호출하여 정책의 권한 지정 `InfomodelObjectFactory` 오브젝트의 정적 `createPermission` 메서드를 사용합니다. 에 속한 정적 데이터 멤버를 전달합니다. `Permission` 권한을 나타내는 인터페이스입니다. 이 메서드는 `Permission` 개체. 예를 들어, 사용자가 정책으로 보호된 PDF 문서에서 데이터를 복사할 수 있도록 하는 권한을 추가하려면 을 전달합니다 `Permission.COPY`. (추가할 각 권한에 대해 이 단계를 반복합니다.)
    * 다음을 호출하여 정책 항목에 권한을 추가합니다. `PolicyEntry` 개체 `addPermission` 메서드 및 전달 `Permission` 개체. (각각에 대해 이 단계를 반복합니다. `Permission` 을(를) 생성했습니다.
-   * 다음을 호출하여 정책 주도자 만들기 `InfomodelObjectFactory` 개체의 정적 `createSpecialPrincipal` 메서드를 사용합니다. 에 속한 데이터 멤버 전달 `InfomodelObjectFactory` 주체를 나타내는 개체입니다. 이 메서드는 `Principal` 개체. 예를 들어 문서의 게시자를 주도자로 추가하려면 를 전달합니다 `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
+   * 다음을 호출하여 정책 주도자 만들기 `InfomodelObjectFactory` 오브젝트의 정적 `createSpecialPrincipal` 메서드를 사용합니다. 에 속한 데이터 멤버 전달 `InfomodelObjectFactory` 주체를 나타내는 개체입니다. 이 메서드는 `Principal` 개체. 예를 들어 문서의 게시자를 주도자로 추가하려면 를 전달합니다 `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
    * 다음을 호출하여 정책 항목에 주도자 추가 `PolicyEntry` 개체 `setPrincipal`메서드 및 전달 `Principal` 개체.
    * 다음을 호출하여 정책에 정책 항목 추가 `Policy` 개체 `addPolicyEntry` 메서드 및 전달 `PolicyEntry` 개체.
 
@@ -251,6 +247,7 @@ Java(Document Security API)를 사용하여 정책을 만듭니다.
    * 다음을 호출하여 정책 등록 `PolicyManager` 개체 `registerPolicy` 메서드 및 다음 값 전달:
 
       * 다음 `Policy` 등록할 정책을 나타내는 개체입니다.
+
    * 정책이 속한 정책 집합을 나타내는 문자열 값입니다.
 
    연결 설정 내에서 AEM Forms 관리자 계정을 사용하여 `DocumentSecurityClient` 개체를 클릭한 다음 를 호출할 때 정책 집합 이름을 지정합니다. `registerPolicy` 메서드를 사용합니다. 를 전달한 경우 `null` 정책 세트 값을 지정하면 관리자에서 정책이 생성됩니다 *내 정책* 정책 설정.
@@ -288,16 +285,16 @@ Document Security API(웹 서비스)를 사용하여 정책을 만듭니다.
       * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 정책의 속성을 설정합니다.
 
    * 만들기 `PolicySpec` 개체를 만들 때 사용됩니다.
    * 문자열 값을 로 할당하여 정책 이름 설정 `PolicySpec` 개체 `name` 데이터 구성원입니다.
    * 문자열 값을 로 할당하여 정책의 설명을 설정합니다. `PolicySpec` 개체 `description` 데이터 구성원입니다.
-   * 문자열 값을 로 할당하여 정책이 속할 정책 집합을 설정합니다. `PolicySpec` 개체 `policySetName` 데이터 구성원입니다. 기존 정책 집합 이름을 지정해야 합니다. (다음을 지정할 수 있습니다. `null` 정책이 추가되는 이 매개 변수 값에 대한 *내 정책*.)
-   * 정수 값을 로 할당하여 정책의 오프라인 임대 기간을 설정하십시오. `PolicySpec` 개체 `offlineLeasePeriod` 데이터 구성원입니다.
+   * 문자열 값을 로 할당하여 정책이 속한 정책 집합을 지정합니다. `PolicySpec` 개체 `policySetName` 데이터 구성원입니다. 기존 정책 집합 이름을 지정해야 합니다. (다음을 지정할 수 있습니다. `null` 정책이 추가되는 이 매개 변수 값에 대한 *내 정책*.)
+   * 정수 값을 로 할당하여 정책의 오프라인 임대 기간을 설정합니다. `PolicySpec` 개체 `offlineLeasePeriod` 데이터 구성원입니다.
    * 설정 `PolicySpec` 개체 `policyXml` PDRL XML 데이터를 나타내는 문자열 값이 있는 데이터 멤버입니다. 이 작업을 수행하려면 .NET `StreamReader` 개체를 만들 때 사용됩니다. 정책을 나타내는 PDRL XML 파일의 위치를 `StreamReader` 생성자입니다. 그런 다음 를 호출합니다. `StreamReader` 개체 `ReadLine` 반환 값을 문자열 변수에 할당합니다. 다음을 반복합니다. `StreamReader` 다음 시간까지 개체: `ReadLine` 메서드가 null을 반환합니다. 에 문자열 변수 할당 `PolicySpec` 개체 `policyXml` 데이터 구성원입니다.
 
 1. 정책 항목을 만듭니다.
@@ -428,8 +425,8 @@ Document Security API(웹 서비스)를 사용하여 기존 정책을 수정합�
       * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 기존 정책을 검색합니다.
 
@@ -531,8 +528,8 @@ Document Security API(웹 서비스)를 사용하여 정책을 삭제합니다.
       * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 정책을 삭제합니다.
 
@@ -629,8 +626,7 @@ Document Security API(Java)를 사용하여 PDF 문서에 정책 적용:
       * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 다음과 같을 수 있습니다. `null` (이 매개 변수가 null이면 이전 매개 변수 값은 다음과 같아야 합니다. `null`).
       * A `com.adobe.livecycle.rightsmanagement.Locale` MS Office 템플릿 선택에 사용되는 로케일을 나타냅니다. 이 매개 변수 값은 선택 사항이며 PDF 문서에 사용되지 않습니다. PDF 문서의 보안을 설정하려면 다음을 지정합니다. `null`.
 
-      다음 `protectDocument` 메서드가 을 반환합니다. `RMSecureDocumentResult` 정책으로 보호된 PDF 문서가 포함된 객체입니다.
-
+     다음 `protectDocument` 메서드가 을 반환합니다. `RMSecureDocumentResult` 정책으로 보호된 PDF 문서가 포함된 객체입니다.
 
 1. PDF 문서를 저장합니다.
 
@@ -674,8 +670,8 @@ Document Security API(웹 서비스)를 사용하여 PDF 문서에 정책 적용
       * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. PDF 문서를 검색합니다.
 
@@ -819,8 +815,8 @@ Document Security API(웹 서비스)를 사용하여 정책으로 보호된 PDF 
       * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 정책으로 보호된 PDF 문서를 검색합니다.
 
@@ -962,8 +958,8 @@ Document Security API(웹 서비스)를 사용하여 정책으로 보호된 PDF 
       * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 정책으로 보호된 PDF 문서 검색
 
@@ -1094,8 +1090,8 @@ Document Security API(웹 서비스)를 사용하여 취소된 문서에 대한 
       * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 해지된 PDF 문서의 라이선스 식별자를 검색합니다.
 
@@ -1228,8 +1224,8 @@ Inspect은 Document Security Service API(웹 서비스)를 사용하여 정책�
       * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 검사할 정책으로 보호된 문서를 검색합니다.
 
@@ -1262,7 +1258,7 @@ Document Security 서비스를 사용하는 코드 예에 대해서는 다음 �
 
 ## 워터마크 만들기 {#creating-watermarks}
 
-워터마크는 문서를 고유하게 식별하고 저작권 침해를 제어함으로써 문서의 보안을 보장하는 데 도움이 됩니다. 예를 들어 문서의 모든 페이지에 기밀을 나타내는 워터마크를 만들어 배치할 수 있습니다. 워터마크가 생성되면 정책의 일부로 워터마크를 포함할 수 있습니다. 즉, 정책의 워터마크 속성을 새로 생성된 워터마크로 설정할 수 있습니다. 워터마크가 포함된 정책이 문서에 적용되면 워터마크가 정책으로 보호된 문서에 표시됩니다.
+워터마크는 문서를 고유하게 식별하고 저작권 침해를 제어함으로써 문서의 보안을 보장하는 데 도움이 됩니다. 예를 들어 문서의 모든 페이지에 기밀을 나타내는 워터마크를 만들어 배치할 수 있습니다. 워터마크가 생성되면 정책의 일부로 워터마크를 포함할 수 있습니다. 즉, 새로 생성된 워터마크로 정책의 워터마크 속성을 설정할 수 있습니다. 워터마크가 포함된 정책이 문서에 적용되면 워터마크가 정책으로 보호된 문서에 표시됩니다.
 
 >[!NOTE]
 >
@@ -1399,7 +1395,7 @@ Java(Document Security API)를 사용하여 워터마크를 만듭니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   다음과 같은 클라이언트 JAR 파일을 포함합니다. `adobe-rightsmanagement-client.jar`를 입력합니다.
+   다음과 같은 클라이언트 JAR 파일을 포함합니다. `adobe-rightsmanagement-client.jar`: Java 프로젝트의 클래스 경로에 있습니다.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
@@ -1408,10 +1404,10 @@ Java(Document Security API)를 사용하여 워터마크를 만듭니다.
 
 1. 워터마크 속성 설정
 
-   * 만들기 `Watermark` 를 호출하여 개체 `InfomodelObjectFactory` 개체의 정적 `createWatermark` 메서드를 사용합니다. 이 메서드는 `Watermark` 개체.
+   * 만들기 `Watermark` 를 호출하여 개체 `InfomodelObjectFactory` 오브젝트의 정적 `createWatermark` 메서드를 사용합니다. 이 메서드는 `Watermark` 개체.
    * 를 호출하여 워터마크의 이름 속성을 설정합니다. `Watermark` 개체 `setName` 메서드 및 정책 이름을 지정하는 문자열 값 전달
    * 를 호출하여 워터마크의 백그라운드 속성을 설정합니다. `Watermark` 개체 `setBackground` 방법 및 전달 `true`. 이 속성을 설정하면 문서 배경에 워터마크가 표시됩니다.
-   * 를 호출하여 워터마크의 사용자 지정 텍스트 속성을 설정합니다. `Watermark` 개체 `setCustomText` 워터마크 텍스트를 나타내는 문자열 값을 전달하는 방법 및 방법입니다.
+   * 를 호출하여 워터마크의 사용자 지정 텍스트 속성을 설정합니다. `Watermark` 개체 `setCustomText` 메서드 및 워터마크의 텍스트를 나타내는 문자열 값 전달
    * 를 호출하여 워터마크의 불투명도 속성을 설정합니다. `Watermark` 개체 `setOpacity` 메서드 및 불투명도 수준을 지정하는 정수 값 전달 값이 100이면 워터마크가 완전히 불투명함을 나타내고 값이 0이면 워터마크가 완전히 투명함을 나타냅니다.
 
 1. 워터마크를 등록합니다.
@@ -1448,8 +1444,8 @@ Document Security API(웹 서비스)를 사용하여 워터마크를 만듭니�
       * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 워터마크 속성을 설정합니다.
 
@@ -1595,8 +1591,8 @@ Document Security API(웹 서비스)를 사용하여 워터마크를 수정합�
       * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 수정할 워터마크를 검색합니다.
 
@@ -1723,8 +1719,8 @@ Rights Management API(웹 서비스)를 사용하여 이벤트를 검색합니�
       * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 검색할 이벤트 지정
 
@@ -2030,8 +2026,7 @@ Document Security API(Java)를 사용하여 Word 문서에 정책 적용:
       * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 다음과 같을 수 있습니다. `null` (이 매개 변수가 `null`를 설정하는 경우 이전 매개 변수 값은 다음과 같아야 합니다. `null`).
       * A `com.adobe.livecycle.rightsmanagement.Locale` MS Office 템플릿 선택에 사용되는 로케일을 나타냅니다. 이 매개 변수 값은 선택 사항이며 다음을 지정할 수 있습니다 `null`.
 
-      다음 `protectDocument` 메서드가 을 반환합니다. `RMSecureDocumentResult` 정책으로 보호된 Word 문서가 포함된 개체입니다.
-
+     다음 `protectDocument` 메서드가 을 반환합니다. `RMSecureDocumentResult` 정책으로 보호된 Word 문서가 포함된 개체입니다.
 
 1. Word 문서를 저장합니다.
 
@@ -2068,8 +2063,8 @@ Document Security API(웹 서비스)를 사용하여 Word 문서에 정책 적�
       * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Word 문서를 검색합니다.
 
@@ -2212,8 +2207,8 @@ Document Security API(웹 서비스)를 사용하여 정책으로 보호된 Word
       * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
+   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 정책으로 보호된 Word 문서 검색
 

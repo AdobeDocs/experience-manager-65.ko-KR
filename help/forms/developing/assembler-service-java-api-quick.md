@@ -1,16 +1,13 @@
 ---
 title: 어셈블러 서비스 Java API 빠른 시작(SOAP)
-seo-title: Assembler Service Java API QuickStart(SOAP)
 description: 어셈블러 서비스 Java API 빠른 시작(SOAP)
-uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 0%
@@ -170,7 +167,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -309,7 +306,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
                  Object o = e.getValue();
  
@@ -588,7 +585,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -855,7 +852,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
              //document that specifies if the input document is
              //PDF/A compliant
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -1160,7 +1157,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -1191,7 +1188,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 * `createDDX`: 다음을 생성합니다. `org.w3c.dom.Document` 어셈블러 서비스로 전송되는 DDX 문서를 나타내는 개체입니다. 이 사용자 정의 메서드는 `org.w3c.dom.Document` 개체.
 * `convertDDX`: 를 전환합니다. `org.w3c.dom.Document` 에 대한 오브젝트 `com.adobe.idp.Document` 개체. 이 메서드는 `org.w3c.dom.Document` 개체를 입력 매개 변수로 반환하고 `com.adobe.idp.Document` 개체.
 
-   이 두 메서드는 모두 이 빠른 시작에서 호출됩니다. (참조: [동적으로 DDX 문서 만들기](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).) &quot;
+  이 두 메서드는 모두 이 빠른 시작에서 호출됩니다. (참조: [동적으로 DDX 문서 만들기](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).) &quot;
 
 ```java
 /*
@@ -1661,7 +1658,7 @@ public class AssemblePDFWithDynamicDDXSOAP {
  
              //Iterate through the map object to retrieve the result XDP document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the

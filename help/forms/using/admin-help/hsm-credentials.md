@@ -1,16 +1,12 @@
 ---
 title: HSM 자격 증명 관리
-seo-title: Managing HSM credentials
 description: HSM 자격 증명을 관리하는 방법을 알아봅니다.
-seo-description: Learn how to manage HSM credentials.
-uuid: 30ddcd4a-f771-44d5-bdef-4826adcd0c44
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
@@ -56,7 +52,7 @@ AEM Forms 디지털 서명은 HSM에 저장된 자격 증명을 사용하여 서
    * **토큰 이름:** 파티션 이름(예: HSMPART1)에 해당합니다.
    * **슬롯 ID:** 슬롯 ID는 슬롯에 해당하는 정수로 파티션에 해당합니다. 예를 들어 클라이언트(forms 서버)가 HSMPART1 파티션에 먼저 등록되어 있습니다. 이 클라이언트의 경우 슬롯 1을 HSMPART1 파티션에 매핑합니다. HSMPART1은 등록된 첫 번째 파티션이므로 슬롯 ID는 1이고 Slot Info를 1로 설정합니다.
 
-      슬롯 ID는 클라이언트별로 설정됩니다. 두 번째 시스템을 다른 파티션(예: 동일한 HSM 장치의 HSMPART2)에 등록한 경우 슬롯 1은 해당 클라이언트에 대한 HSMPART2 파티션과 연결됩니다.
+     슬롯 ID는 클라이언트별로 설정됩니다. 두 번째 시스템을 다른 파티션(예: 동일한 HSM 장치의 HSMPART2)에 등록한 경우 슬롯 1은 해당 클라이언트에 대한 HSMPART2 파티션과 연결됩니다.
 
    * **슬롯 색인:** 슬롯 인덱스 를 선택하는 경우 슬롯 정보 를 슬롯에 해당하는 정수로 설정합니다. 이는 0부터 시작하는 인덱스입니다. 즉, 클라이언트가 HSMPART1 파티션에 먼저 등록되면 슬롯 1이 이 클라이언트의 HSMPART1에 매핑됩니다. HSMPART1은 등록된 첫 번째 파티션이므로 슬롯 인덱스는 0입니다.
 

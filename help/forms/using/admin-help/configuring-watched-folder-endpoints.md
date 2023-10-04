@@ -1,16 +1,12 @@
 ---
 title: 감시 폴더 엔드포인트 구성
-seo-title: Configuring watched folder endpoints
 description: 감시 폴더 엔드포인트를 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure watched folder endpoints.
-uuid: 01fb5ff8-2071-44bd-9241-7d5d41a5b26e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '7163'
 ht-degree: 0%
@@ -35,7 +31,7 @@ ht-degree: 0%
 다음 두 가지 방법으로 감시 폴더를 만들 수 있습니다.
 
 * 감시 폴더 끝점에 대한 설정을 구성할 때는 다음 예와 같이 경로 상자에 상위 디렉터리의 전체 경로를 입력하고 만들 감시 폴더의 이름을 추가합니다.
-   `  C:\MyPDFs\MyWatchedFolder`MyWatchedFolder 폴더가 아직 존재하지 않으므로 AEM Forms는 해당 위치에 폴더를 만들려고 시도합니다.
+  `  C:\MyPDFs\MyWatchedFolder`MyWatchedFolder 폴더가 아직 존재하지 않으므로 AEM Forms는 해당 위치에 폴더를 만들려고 시도합니다.
 
 * 감시 폴더 끝점을 구성하기 전에 파일 시스템에 폴더를 만든 다음 경로 상자에 전체 경로를 입력합니다.
 
@@ -80,7 +76,7 @@ Windows에서 응용 프로그램 서버가 서비스로 실행 중인 경우 �
 * provider.file_scan_service
 * provider.file_write_results_service
 
-위에 나열된 서비스 외에도 감시 폴더는 작업을 예약하기 위한 스케줄러 서비스와 대상 서비스의 비동기 호출을 지원하는 작업 관리자 서비스를 포함한 다른 서비스에 종속됩니다.
+위에 나열된 서비스 외에도 감시 폴더는 작업을 예약하기 위한 스케줄러 서비스 및 대상 서비스의 비동기 호출을 지원하는 작업 관리자 서비스를 포함한 다른 서비스에 종속됩니다.
 
 ### 감시 폴더가 호출 요청을 처리하는 방법 {#how-watched-folder-processes-an-invocation-request}
 
@@ -352,6 +348,7 @@ Windows에서 응용 프로그램 서버가 서비스로 실행 중인 경우 �
 
    * Applications and Services에서 감시 폴더 끝점에 대한 포함 파일 패턴 매개 변수를 새 입력 파일과 일치하지 않는 매개 변수로 변경합니다(예: `NOMATCH`).
    * 새 입력 파일을 만드는 프로세스를 일시 중단합니다.
+
    AEM Forms가 모든 파일을 복구하고 처리할 때까지 기다립니다. 대부분의 파일은 복구해야하고 새로운 입력 파일은 올바르게 처리해야합니다. 감시 폴더가 파일을 복구하고 처리할 때까지 기다리는 시간은 호출할 작업의 길이와 복구할 파일의 수에 따라 달라집니다.
 
 1. 처리할 수 없는 파일을 확인합니다. 적절한 시간을 기다린 후 이전 단계를 완료했지만 스테이지 폴더에 처리되지 않은 파일이 남아 있는 경우 다음 단계로 이동합니다.
@@ -400,12 +397,12 @@ Windows에서 응용 프로그램 서버가 서비스로 실행 중인 경우 �
       1. exclude 파일 패턴(예: temp&amp;ast;.ps)에 대한 패턴을 지정합니다.
       1. temp로 시작하는 파일(예: temp1.ps)을 감시 폴더에 복사합니다.
       1. 파일을 감시 폴더에 완전히 복사한 후 파일 패턴 포함에 지정된 패턴과 일치하도록 파일의 이름을 변경합니다. 그런 다음 감시 폴더가 완료된 파일을 스테이지로 이동합니다.
+
    * 해결 방법 2
 
-      파일을 감시 폴더로 복사하는 데 소요되는 최대 시간을 알고 있는 경우 대기 시간(초)을 지정합니다. 그런 다음 감시 폴더는 파일을 스테이지로 이동하기 전에 지정된 시간을 기다립니다.
+     파일을 감시 폴더로 복사하는 데 소요되는 최대 시간을 알고 있는 경우 대기 시간(초)을 지정합니다. 그런 다음 감시 폴더는 파일을 스테이지로 이동하기 전에 지정된 시간을 기다립니다.
 
-      Windows에서는 한 스레드가 쓰기할 때 파일을 잠그므로 Windows의 파일에 대해서는 문제가 되지 않습니다. 그러나 Windows의 폴더에서는 문제가 됩니다. 폴더의 경우 해결 방법 1의 단계를 따라야 합니다.
-
+     Windows에서는 한 스레드가 쓰기할 때 파일을 잠그므로 Windows의 파일에 대해서는 문제가 되지 않습니다. 그러나 Windows의 폴더에서는 문제가 됩니다. 폴더의 경우 해결 방법 1의 단계를 따라야 합니다.
 
 * 감시 폴더에 대한 폴더 이름 유지 끝점 특성이 null 디렉터리 경로로 설정된 경우, 준비 디렉터리는 원래대로 정리되지 않습니다. 디렉터리에는 처리된 파일과 임시 폴더가 여전히 있습니다.
 

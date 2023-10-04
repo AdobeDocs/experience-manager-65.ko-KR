@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -59,13 +59,13 @@ An **적응형 양식 테마** 는 적응형 양식의 스타일(모양 및 느�
 
    * `less` 폴더: 다음을 포함 `less` 변수를 정의할 변수 파일입니다. `less` 변수 및 `less mixins` .css 스타일을 관리하는 데 사용됩니다.
 
-     이 폴더는 다음으로 구성됩니다. `less` 변수 파일, `less` mixin 파일, `less` mixin 및 변수를 사용하여 스타일을 정의하는 파일입니다. 이렇게 적은 파일은 모두 styles.less로 가져옵니다.
+     이 폴더는 다음으로 구성됩니다. `less` 변수 파일, `less` mixin 파일, `less` mixin 및 변수를 사용하여 스타일을 정의하는 파일입니다. 이 모든 것들은 `less` 그런 다음 파일을 styles.less로 가져옵니다.
 
    * `css`folder: 테마에 사용할 정적 스타일을 정의하는 .css 파일을 포함합니다.
 
    **변수 파일 줄이기**: CSS 스타일 정의에 사용되는 변수를 정의하거나 재정의하는 파일입니다.
 
-   적응형 양식은 다음 .less 파일에 정의된 OOTB 변수를 제공합니다.
+   적응형 양식은 다음에 정의된 OOTB 변수를 제공합니다 `.less` 파일:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -74,7 +74,7 @@ An **적응형 양식 테마** 는 적응형 양식의 스타일(모양 및 느�
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   적응형 양식과 함께 제공되는 더 적은 변수를 사용하거나, 이러한 변수를 재정의하거나, 더 적은 변수를 새로 만들 수 있습니다.
+   다음을 사용할 수 있습니다. `less` 적응형 양식과 함께 제공된 변수에서 이러한 변수를 재정의하거나 새 변수를 만들 수 있습니다 `less` 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다.
 
    >[!NOTE]
    >
@@ -131,11 +131,11 @@ An **적응형 양식 테마** 는 적응형 양식의 스타일(모양 및 느�
    }
    ```
 
-   **Styles.less 파일:** 이 파일을 사용하여 클라이언트 라이브러리에서 사용해야 하는 적은 파일(변수, mixin, 스타일)을 모두 포함합니다.
+   **Styles.less 파일:** 이 파일을 사용하여 모든 `less` 클라이언트 라이브러리에서 사용해야 하는 파일(변수, mixin, 스타일)입니다.
 
    다음 샘플에서 `styles.less` 파일에서 가져오기 문은 임의의 순서로 배치할 수 있습니다.
 
-   다음 .less 파일을 가져오는 문은 필수입니다.
+   다음 항목을 가져오는 문 `.less` 파일은 필수입니다.
 
    * `globalvariables.less`
    * `layoutvariables.less`

@@ -1,16 +1,14 @@
 ---
 title: 모바일 앱용 콘텐츠 페이지 템플릿
 description: 이 페이지를 따라 모바일 앱용 페이지 템플릿에 대해 알아보십시오.
-uuid: ef469796-10f5-44f4-a5c7-25025ca192b0
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2654'
+source-wordcount: '2652'
 ht-degree: 0%
 
 ---
@@ -116,7 +114,7 @@ ng-app="<c:out value='${applicationName}'/>"
 })
 ```
 
-이 코드는 &#39;/&#39;를 $routeProvider(angular-app-module.js.jsp에 정의됨)에 나타냅니다.&lt;path>&#39;은(는) 의 리소스에 의해 처리됩니다. `templateUrl`, 및 다음을 통해 연결: `controller` (다음으로 가져갈 수 있음).
+이 코드는 &#39;/&#39;를 $routeProvider(angular-app-module.js.jsp에 정의됨)에 나타냅니다.&lt;path>&#39;은(는) 의 리소스에 의해 처리됩니다. `templateUrl`, 및 다음을 통해 연결: `controller` (다음으로 이동).
 
 필요한 경우 이 스크립트를 재정의하여 변수가 있는 경로를 포함하여 더 복잡한 경로를 처리할 수 있습니다. 이에 대한 예는 AEM과 함께 설치된 /apps/weretail-app/components/angular/ng-template-page/angular-route-fragment.js.jsp 스크립트에서 확인할 수 있습니다.
 

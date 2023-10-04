@@ -1,15 +1,11 @@
 ---
 title: 적응형 양식 작업 모범 사례
-seo-title: Best practices for working with adaptive forms
 description: AEM Forms 프로젝트 설정, 적응형 양식 개발 및 AEM Forms 시스템 성능 최적화를 위한 모범 사례에 대해 설명합니다.
-seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
-uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '4734'
 ht-degree: 1%
@@ -293,7 +289,7 @@ AEM은 적응형 양식을 현지화하는 데 사용할 수 있는 번역 워�
 
 * 여러 양식의 공통 요소에 대해 적응형 양식 조각을 사용하고 조각을 현지화합니다. 이렇게 하면 조각을 한 번 현지화하고 현지화된 조각이 사용되는 모든 양식에 반영할 수 있습니다.
 * 새 구성 요소를 추가하거나 현지화된 양식으로 스크립트를 적용하는 등의 수정 사항은 자동으로 현지화되지 않습니다. 따라서 양식을 현지화하기 전에 먼저 양식을 완료해야 여러 현지화 주기를 방지할 수 있습니다.
-* 사용 `afAcceptLang` 브라우저 로케일을 재정의하고 지정된 로케일에서 양식을 렌더링하도록 매개 변수를 요청합니다. 예를 들어 다음 URL은 브라우저 설정에 지정된 로케일에 관계없이 일본어 로케일로 양식을 렌더링하도록 강제 적용됩니다.
+* 사용 `afAcceptLang` 브라우저 로케일을 재정의하고 지정된 로케일에서 양식을 렌더링하도록 매개 변수를 요청합니다. 예를 들어 다음 URL은 브라우저 설정에 지정된 로케일에 관계없이 일본어 로케일로 양식을 렌더링해야 합니다.
 
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 

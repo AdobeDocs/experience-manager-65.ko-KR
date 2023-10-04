@@ -1,16 +1,12 @@
 ---
 title: VLT 도구 사용 방법
-seo-title: How to use the VLT Tool
 description: Jackrabbit FileVault 툴(VLT)은 Jackrabbit/AEM 인스턴스의 콘텐츠를 파일 시스템에 매핑하는 Apache Foundation에서 개발되었습니다
-seo-description: The Jackrabbit FileVault tool (VLT) is developed by The Apache Foundation that maps the content of a Jackrabbit/AEM instance to your file system
-uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2715'
 ht-degree: 2%
@@ -746,7 +742,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 ### 동기화 {#sync}
 
-자격 증명 모음 동기화 서비스를 제어할 수 있습니다. 인수를 지정하지 않으면 이 명령은 현재 작업 디렉터리를 동기화 제어로 지정합니다. vlt 체크아웃 내에서 실행되는 경우 해당 필터와 호스트를 사용하여 동기화를 구성합니다. vlt 체크 아웃 외부에서 실행되는 경우 디렉터리가 비어 있는 경우에만 동기화를 위해 현재 폴더를 등록합니다.
+자격 증명 모음 동기화 서비스를 제어할 수 있습니다. 인수를 지정하지 않으면 이 명령은 현재 작업 디렉터리를 동기화 제어로 지정합니다. vlt 체크아웃 내에서 실행하는 경우 해당 필터와 호스트를 사용하여 동기화를 구성합니다. vlt 체크 아웃 외부에서 실행하는 경우 디렉터리가 비어 있는 경우에만 동기화를 위해 현재 폴더를 등록합니다.
 
 #### 구문 {#syntax-18}
 

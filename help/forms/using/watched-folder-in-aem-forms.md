@@ -1,16 +1,12 @@
 ---
 title: AEM Forms의 감시 폴더
-seo-title: Watched folder in AEM Forms
 description: 관리자는 감시 대상 폴더에 파일이 있을 때 폴더를 감시하고 워크플로, 서비스 또는 스크립트 작업을 시작할 수 있습니다.
-seo-description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
-uuid: 39eac0fd-8212-46ff-b75d-8b4320d448a9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '7148'
 ht-degree: 0%

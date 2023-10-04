@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 내에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 Adobe Experience Manager 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 1%

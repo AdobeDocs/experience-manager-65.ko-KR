@@ -1,41 +1,37 @@
 ---
 title: 프로그래밍 방식으로 AEM JCR에 액세스하는 방법
-seo-title: How to programmatically access the AEM JCR
-description: Adobe Marketing Cloud의 일부인 AEM 저장소 내에 있는 노드 및 속성을 프로그래밍 방식으로 수정할 수 있습니다
-seo-description: You can programmatically modify nodes and properties located within the AEM repository, which is part of the Adobe Marketing Cloud
-uuid: 2051d03f-430a-4cae-8f6d-e5bc727d733f
+description: Adobe Experience Cloud의 일부인 AEM 저장소 내에 있는 노드 및 속성을 프로그래밍 방식으로 수정할 수 있습니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '588'
 ht-degree: 2%
 
 ---
 
 # 프로그래밍 방식으로 AEM JCR에 액세스하는 방법{#how-to-programmatically-access-the-aem-jcr}
 
-Adobe Marketing Cloud의 일부인 Adobe CQ 저장소 내에 있는 노드 및 속성을 프로그래밍 방식으로 수정할 수 있습니다. CQ 저장소에 액세스하려면 JCR(Java Content Repository) API를 사용합니다. Java JCR API를 사용하여 Adobe CQ 저장소 내에 있는 콘텐츠에 대해 만들기, 바꾸기, 업데이트 및 삭제(CRUD) 작업을 수행할 수 있습니다. Java JCR API에 대한 자세한 내용은 [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+Adobe Experience Cloud의 일부인 Adobe CQ 저장소 내에 있는 노드 및 속성을 프로그래밍 방식으로 수정할 수 있습니다. CQ 저장소에 액세스하려면 Java™ Content Repository(JCR) API를 사용합니다. Java™ JCR API를 사용하여 Adobe CQ 저장소 내에 있는 (CRUD) 콘텐츠를 생성, 교체, 업데이트 및 삭제할 수 있습니다. Java™ JCR API에 대한 자세한 내용은 [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->이 개발 문서는 외부 Java 애플리케이션에서 Adobe CQ JCR을 수정합니다. 반대로 JCR API를 사용하여 OSGi 번들 내에서 JCR을 수정할 수 있습니다. 자세한 내용은 [Java Content Repository에서 CQ 데이터 유지](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
+>이 개발 문서는 외부 Java™ 애플리케이션에서 Adobe CQ JCR을 수정합니다. 반대로 JCR API를 사용하여 OSGi 번들 내에서 JCR을 수정할 수 있습니다. 자세한 내용은 [Java™ Content Repository에서 CQ 데이터 유지](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
 
 >[!NOTE]
 >
->JCR API를 사용하려면 다음을 추가합니다. `jackrabbit-standalone-2.4.0.jar` 을 Java 애플리케이션의 클래스 경로에 추가합니다. 다음 Java JCR API 웹 페이지에서 이 JAR 파일을 가져올 수 있습니다. [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+JCR API를 사용하려면 다음을 추가합니다. `jackrabbit-standalone-2.4.0.jar` 파일을 Java™ 응용 프로그램의 클래스 경로로 복사합니다. 다음 Java™ JCR API 웹 페이지에서 이 JAR 파일을 가져올 수 있습니다. [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->JCR 쿼리 API를 사용하여 Adobe CQ JCR을 쿼리하는 방법은 다음을 참조하십시오. [JCR API를 사용하여 Adobe Experience Manager 데이터 쿼리](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
+JCR 쿼리 API를 사용하여 Adobe CQ JCR을 쿼리하는 방법은 다음을 참조하십시오. [JCR API를 사용하여 Adobe Experience Manager 데이터 쿼리](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## 저장소 인스턴스 만들기 {#create-a-repository-instance}
 
-저장소에 연결하고 연결을 설정하는 방법에는 여러 가지가 있지만 이 개발 문서에서는 `org.apache.jackrabbit.commons.JcrUtils` 클래스. 메서드의 이름은 입니다. `getRepository`. 이 메서드는 Adobe CQ 서버의 URL을 나타내는 문자열 매개 변수를 사용합니다. 예 `http://localhost:4503/crx/server`.
+저장소에 연결하고 연결을 설정하는 방법에는 여러 가지가 있지만 이 개발 문서에서는 `org.apache.jackrabbit.commons.JcrUtils` 클래스. 메서드의 이름은 입니다. `getRepository`. 이 메서드는 Adobe CQ 서버의 URL을 나타내는 문자열 매개 변수를 사용합니다. 예: `http://localhost:4503/crx/server`
 
 다음 `getRepository`메서드가 을 반환합니다. `Repository`예를 들어, 다음 코드 예제에서 볼 수 있습니다.
 
@@ -62,7 +58,7 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## 노드 인스턴스 만들기 {#create-a-node-instance}
 
-사용 `Session`생성할 인스턴스 `javax.jcr.Node` 인스턴스. A `Node`인스턴스를 사용하여 노드 작업을 수행할 수 있습니다. 예를 들어 새 노드를 만들 수 있습니다. 루트 노드를 나타내는 노드를 만들려면 `Session`인스턴스 `getRootNode` 메서드, 다음 코드 행에 표시.
+사용 `Session`생성할 인스턴스 `javax.jcr.Node` 인스턴스. A `Node`인스턴스를 사용하여 노드 작업을 수행할 수 있습니다. 예를 들어 노드를 만들 수 있습니다. 루트 노드를 나타내는 노드를 만들려면 `Session`인스턴스 `getRootNode` 메서드, 다음 코드 행에 표시.
 
 ```java
 //Create a Node
@@ -90,7 +86,7 @@ System.out.println(node.getProperty("message").getString());
 
 ## Adobe CQ 저장소에 노드 만들기 {#create-nodes-in-the-adobe-cq-repository}
 
-다음 Java 코드 예제는 Adobe CQ에 연결하고 `Session`및 가 추가되었습니다. 노드에 데이터 값이 할당되면 노드 및 해당 경로의 값이 콘솔에 기록됩니다. 세션이 완료되면 로그아웃해야 합니다.
+다음 Java™ 코드 예제는 Adobe CQ에 연결하고 를 만드는 Java™ 클래스를 나타냅니다. `Session`인스턴스 및 새 노드를 추가합니다. 노드에 데이터 값이 할당되면 노드 및 해당 경로의 값이 콘솔에 기록됩니다. 세션이 완료되면 로그아웃해야 합니다.
 
 ```java
 /*

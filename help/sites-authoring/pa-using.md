@@ -1,16 +1,14 @@
 ---
 title: 페이지 분석 데이터를 보고 페이지 콘텐츠의 효과를 측정합니다
 description: 페이지 분석 데이터를 사용하여 페이지 콘텐츠의 효과를 측정합니다
-uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '636'
 ht-degree: 4%
 
 ---
@@ -38,7 +36,7 @@ ht-degree: 4%
 1. 를 엽니다. **사이트** 콘솔 - 예 [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
 1. 도구 모음의 맨 오른쪽(오른쪽 상단)에서 아이콘을 클릭하거나 탭하여 선택합니다 **목록 보기** (표시된 아이콘은 다음에 따라 다릅니다. [현재 보기](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. 다시, 도구 모음의 맨 오른쪽 (오른쪽 상단)에서 아이콘을 클릭하거나 탭한 다음 을 선택합니다 **설정 보기**. 다음 **열 구성** 대화 상자가 열립니다. 필요한 사항을 변경하고 다음을 사용하여 확인합니다. **업데이트**.
+1. 도구 모음의 맨 오른쪽(오른쪽 상단)에서 아이콘을 클릭하거나 탭한 다음 을 선택합니다 **설정 보기**. 다음 **열 구성** 대화 상자가 열립니다. 필요한 사항을 변경하고 다음을 사용하여 확인합니다. **업데이트**.
 
    ![aa-4](assets/aa-04.png)
 

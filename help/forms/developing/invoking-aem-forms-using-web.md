@@ -1,17 +1,13 @@
 ---
 title: 웹 서비스를 사용하여 AEM Forms 호출
-seo-title: Invoking AEM Forms using Web Services
 description: WSDL 생성을 완벽하게 지원하는 웹 서비스를 사용하여 AEM Forms 프로세스를 호출합니다.
-seo-description: Invoke AEM Forms processes using web services with full support for WSDL generation.
-uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '9901'
 ht-degree: 0%
@@ -1231,7 +1227,7 @@ AEM Forms 사용자의 ID는 비밀 키를 사용하여 서명된 SAML 어설션
 * AuthenticationManager API에 의해 노출된 인증 방법을 사용하여 사용자 인증. 일반적으로 사용자 이름과 암호를 사용합니다. 하지만 인증서 인증을 사용할 수도 있습니다.
 * 사용 `AuthenticationManager.getAuthResultOnBehalfOfUser` 메서드를 사용합니다. 이 메서드를 사용하면 클라이언트 애플리케이션에서 `AuthResult` 모든 AEM forms 사용자에 대한 개체입니다.
 
-가져온 SAML 토큰을 사용하여 AEM forms 사용자를 인증할 수 있습니다. 이 SAML 어설션(xml 조각)은 사용자 인증을 위한 웹 서비스 호출과 함께 WS-Security 헤더의 일부로 보낼 수 있습니다. 일반적으로 클라이언트 애플리케이션은 사용자를 인증했지만 사용자 자격 증명을 저장하지 않았습니다. (또는 사용자가 사용자 이름과 암호를 사용하지 않는 메커니즘을 통해 해당 클라이언트에 로그온했습니다.) 이 경우 클라이언트 애플리케이션은 AEM Forms을 호출하고 AEM Forms 호출이 허용되는 특정 사용자를 가장해야 합니다.
+가져온 SAML 토큰을 사용하여 AEM Forms 사용자를 인증할 수 있습니다. 이 SAML 어설션(xml 조각)은 사용자 인증을 위한 웹 서비스 호출과 함께 WS-Security 헤더의 일부로 보낼 수 있습니다. 일반적으로 클라이언트 애플리케이션은 사용자를 인증했지만 사용자 자격 증명을 저장하지 않았습니다. (또는 사용자가 사용자 이름과 암호를 사용하지 않는 메커니즘을 통해 해당 클라이언트에 로그온했습니다.) 이 경우 클라이언트 애플리케이션은 AEM Forms을 호출하고 AEM Forms 호출이 허용되는 특정 사용자를 가장해야 합니다.
 
 특정 사용자를 가장하려면 `AuthenticationManager.getAuthResultOnBehalfOfUser` 웹 서비스를 사용하는 방법입니다. 이 메서드는 `AuthResult` 해당 사용자에 대한 SAML 어설션이 포함된 인스턴스입니다.
 

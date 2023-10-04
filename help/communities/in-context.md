@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)은 다음을 사용하여 커뮤�
 알림:
 
 * 보이드는 포럼에 참가하지 않았다.
-* Boid가 아무 것도 삭제할 수 없습니다.
+* 보이드는 아무것도 삭제할 수 없습니다.
 * Boid가 로그인되어 있고 콘텐츠를 회신하거나 플래그를 지정할 수 있습니다.
 
 Boid가 Andrew가 게시한 콘텐츠에 플래그를 지정하려면 Flag를 선택합니다.
@@ -165,6 +165,6 @@ Boid가 Andrew가 게시한 콘텐츠에 플래그를 지정하려면 Flag를 �
 
 * 레베카는 자신의 게시물을 삭제하거나 편집할 수 있습니다.
 * Rebekah는 다른 콘텐츠에 회신하거나 플래그를 지정할 수도 있습니다.
-* 레베카는 중재 콘솔에 액세스할 수 없습니다.
+* 중재 콘솔에 액세스할 수 없습니다.
 
 ![community-forum-author](assets/community-forum-author.png)

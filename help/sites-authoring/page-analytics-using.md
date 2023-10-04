@@ -1,20 +1,16 @@
 ---
 title: 페이지 콘텐츠의 효과를 측정하기 위한 페이지 분석 데이터 보기
-seo-title: Seeing Page Analytics Data
 description: 페이지 분석 데이터를 사용하여 페이지 콘텐츠의 효과를 측정합니다
-seo-description: Use page analytics data to gauge the effectiveness of their page content
-uuid: 5398a5d5-0239-4194-a403-77f5e6fcd741
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 13%
 
 ---
@@ -42,7 +38,7 @@ ht-degree: 13%
 1. 를 엽니다. **사이트** 콘솔 - 예 [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
 1. 도구 모음의 맨 오른쪽(오른쪽 상단)에서 아이콘을 클릭하거나 탭하여 선택합니다 **목록 보기** (표시된 아이콘은 다음에 따라 다릅니다. [현재 보기](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. 다시, 도구 모음의 맨 오른쪽 (오른쪽 상단)에서 아이콘을 클릭하거나 탭한 다음 을 선택합니다 **설정 보기**. 다음 **열 구성** 대화 상자가 열립니다. 필요한 사항을 변경하고 다음을 사용하여 확인합니다. **업데이트**.
+1. 도구 모음의 맨 오른쪽(오른쪽 상단)에서 아이콘을 클릭하거나 탭한 다음 을 선택합니다 **설정 보기**. 다음 **열 구성** 대화 상자가 열립니다. 필요한 사항을 변경하고 다음을 사용하여 확인합니다. **업데이트**.
 
    ![spad-02](assets/spad-02.png)
 

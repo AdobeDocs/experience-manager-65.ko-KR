@@ -1,16 +1,12 @@
 ---
 title: 백업 및 복구할 파일
-seo-title: Files to back up and recover
 description: 이 문서에서는 백업해야 하는 응용 프로그램 및 데이터 파일에 대해 설명합니다.
-seo-description: This document describes the application and data files that must be backed up.
-uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 0%
@@ -29,7 +25,7 @@ ht-degree: 0%
 
 ## 글로벌 문서 스토리지 디렉터리 {#global-document-storage-directory}
 
-GDS는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사용되는 디렉토리입니다. 오래 지속되는 파일의 수명은 AEM Forms 시스템을 한 번 이상 시작하기 위한 것이며 일 및 심지어 년에 걸쳐 있을 수 있습니다. 이러한 장기 보존 파일에는 PDF, 정책 및 양식 템플릿이 포함될 수 있습니다. 장기 파일은 여러 AEM Forms 배포의 전체 상태에서 중요한 부분입니다. 일부 또는 모든 장기 문서가 손실되거나 손상되면 Forms 서버가 불안정해질 수 있습니다.
+GDS는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사용되는 디렉토리입니다. 오래 지속되는 파일의 수명은 AEM Forms 시스템을 한 번 이상 시작하기 위한 것이며 며칠 및 심지어 몇 년에 걸쳐 실행될 수 있습니다. 이러한 장기 보존 파일에는 PDF, 정책 및 양식 템플릿이 포함될 수 있습니다. 장기 파일은 여러 AEM Forms 배포의 전체 상태에서 중요한 부분입니다. 일부 또는 모든 장기 문서가 손실되거나 손상되면 Forms 서버가 불안정해질 수 있습니다.
 
 비동기 작업 호출을 위한 입력 문서는 GDS에도 저장되며 요청을 처리하는 데 사용할 수 있어야 합니다. 따라서 GDS를 호스팅하는 파일 시스템의 안정성을 고려하고 RAID(Redundant Array of Independent Disks) 또는 기타 기술을 사용자의 품질 및 서비스 요구 사항에 맞게 사용하는 것이 중요합니다.
 
@@ -92,7 +88,7 @@ AEM Forms 데이터베이스는 양식 객체, 서비스 구성, 프로세스 �
 
 >[!NOTE]
 >
->Adobe® LiveCycle ® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. 다음을 참조하십시오 [제품 라이프사이클 문서 Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. 다음을 참조하십시오 [제품 라이프사이클 문서 Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -100,7 +96,7 @@ AEM Forms 데이터베이스는 양식 객체, 서비스 구성, 프로세스 �
 
 >[!NOTE]
 >
->AEM Forms 환경이 이전 버전의 AEM Forms에서 업그레이드되고 DB2를 사용하는 경우 온라인 백업이 지원되지 않습니다. 이 경우 AEM Forms를 종료하고 오프라인 백업을 수행해야 합니다. 향후 버전의 AEM Forms는 업그레이드 고객을 위한 온라인 백업을 지원합니다.
+AEM Forms 환경이 이전 버전의 AEM Forms에서 업그레이드되고 DB2를 사용하는 경우 온라인 백업이 지원되지 않습니다. 이 경우 AEM Forms를 종료하고 오프라인 백업을 수행해야 합니다. 향후 버전의 AEM Forms는 업그레이드 고객을 위한 온라인 백업을 지원합니다.
 
 IBM에는 데이터베이스 관리자가 백업 및 복구 작업을 관리하는 데 도움이 되는 다양한 툴과 도움말 시스템이 있습니다.
 
@@ -136,7 +132,7 @@ MySQLAdmin을 사용하거나 Windows에서 INI 파일을 수정하여 이진 �
 
 >[!NOTE]
 >
->MySQL의 기본 바이너리 로깅 모드는 &quot;문&quot;으로, Content Services에서 사용하는 테이블과 호환되지 않습니다(더 이상 사용되지 않음). 이 기본 모드에서 바이너리 로깅을 사용하면 Content Services(더 이상 사용되지 않음)가 실패합니다. 시스템에 컨텐츠 서비스(사용 중단됨)가 포함되어 있는 경우 &quot;혼합&quot; 로깅 모드를 사용하십시오. &quot;혼합&quot; 로깅을 활성화하려면 my.ini 파일에 다음 인수를 추가합니다. `binlog_format=mixed log-bin=logname`
+MySQL의 기본 바이너리 로깅 모드는 &quot;문&quot;으로, Content Services에서 사용하는 테이블과 호환되지 않습니다(더 이상 사용되지 않음). 이 기본 모드에서 바이너리 로깅을 사용하면 Content Services(더 이상 사용되지 않음)가 실패합니다. 시스템에 컨텐츠 서비스(사용 중단됨)가 포함되어 있는 경우 &quot;혼합&quot; 로깅 모드를 사용하십시오. &quot;혼합&quot; 로깅을 활성화하려면 my.ini 파일에 다음 인수를 추가합니다. `binlog_format=mixed log-bin=logname`
 
 mysqldump 유틸리티를 사용하여 전체 데이터베이스 백업을 가져올 수 있습니다. 전체 백업이 필요하지만 항상 편리한 것은 아닙니다. 대용량 백업 파일을 생성하고 생성하는 데 시간이 걸립니다. 증분 백업을 수행하려면 -를 사용하여 서버를 시작해야 합니다. `log-bin` 이전 섹션에 설명된 대로 옵션입니다. MySQL Server가 다시 시작될 때마다 현재 이진 로그로의 쓰기가 중지되고 새 이진 로그가 만들어지며 그때부터 새 이진 로그는 현재 이진 로그가 됩니다. 를 사용하여 스위치를 수동으로 강제 적용할 수 있습니다. `FLUSH LOGS SQL` 명령입니다. 첫 번째 전체 백업 후 후속 증분 백업은 mysqladmin 유틸리티를 `flush-logs` 다음 로그 파일을 만드는 명령입니다.
 
@@ -197,6 +193,6 @@ AEM Forms 환경에 추가 글꼴을 설치한 경우 별도로 백업해야 합
 
 >[!NOTE]
 >
->기본적으로 AEM Forms와 함께 설치된 Adobe 글꼴은에 있습니다. `[aem-forms root]/fonts` 디렉토리.
+기본적으로 AEM Forms와 함께 설치된 Adobe 글꼴은에 있습니다. `[aem-forms root]/fonts` 디렉토리.
 
 호스트 컴퓨터에서 운영 체제를 다시 초기화하고 이전 운영 체제의 글꼴을 사용하려면 시스템 글꼴 디렉터리의 내용도 백업해야 합니다. 자세한 지침은 해당 운영 체제 설명서를 참조하십시오.

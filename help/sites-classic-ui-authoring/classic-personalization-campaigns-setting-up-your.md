@@ -1,17 +1,13 @@
 ---
 title: 캠페인 설정
-seo-title: Setting up your campaign
 description: 새 캠페인을 설정하려면 캠페인을 보관할 브랜드를 만들고, 경험을 보관할 캠페인을 만들고, 마지막으로 새 캠페인에 대한 속성을 정의해야 합니다.
-seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
-uuid: 244a150e-7b5e-4eff-bd15-e3b04be6a3e9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 4%
@@ -43,7 +39,7 @@ ht-degree: 4%
    1. [매력적인 뉴스레터 랜딩 페이지 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
    1. [뉴스레터 전송](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) 구독자 또는 잠재 고객에게 보냅니다.
 
-* Adobe Target(이전 Test&amp;Offer) Target을 만드는 경우:
+* Adobe Target(이전 Test&amp;Target) 오퍼를 만드는 경우:
 
    1. [Adobe Target 오퍼 경험 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
    1. [Adobe Target과 통합](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
@@ -95,13 +91,13 @@ ht-degree: 4%
 * **우선 순위:** 다른 캠페인과 관련된 이 캠페인의 우선 순위입니다. 여러 캠페인이 동시에 켜진 경우 우선순위가 가장 높은 캠페인이 방문자 경험을 제어합니다.
 * **설정 및 해제 시간:** 이러한 속성은 캠페인이 방문자 경험을 제어하는 기간을 제어합니다. 설정 시간 속성은 캠페인이 경험을 제어하기 시작하는 시간을 제어합니다. 해제 시간 속성은 캠페인이 경험 제어를 중지할 시기를 제어합니다.
 * **이미지:** AEM의 캠페인을 나타내는 이미지입니다.
-* **Cloud Services:** 캠페인이 통합된 Cloud Service 구성입니다. (참조: [Adobe Marketing Cloud과 통합](/help/sites-administering/marketing-cloud.md).)
+* **Cloud Service:** 캠페인이 통합된 Cloud Service 구성입니다. (참조: [Adobe Marketing Cloud과 통합](/help/sites-administering/marketing-cloud.md).)
 
 * **Adobe Target:** Adobe Target과 통합된 캠페인을 구성하는 속성입니다. (참조: [Adobe Target과 통합](/help/sites-administering/target.md).)
 
 1. 출처: **캠페인**, 브랜드를 선택합니다. 오른쪽 창에서 캠페인을 선택하고 **속성**.
 
-   다음을 포함한 다양한 속성을 입력할 수 있습니다. **제목**, **설명** 및 임의 **Cloud Services** 원하는 대로
+   다음을 포함한 다양한 속성을 입력할 수 있습니다. **제목**, **설명** 및 임의 **Cloud Service** 원하는 대로
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -224,7 +220,6 @@ AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 
    >* 대시보드에서 을(를) 클릭합니다 **리드 가져오기** 다음에서 **목록** 창
    >* 클릭 **목록** 및 **도구** 메뉴, 선택 **리드 가져오기**.
 
-
 1. 다음에서 **도구** 메뉴, 선택 **가져오기** **잠재 고객**.
 
 1. 샘플 데이터에 설명된 대로 정보를 입력합니다. 가져올 수 있는 필드는 email,familyName,givenName,gender,aboutMe,city,country,phoneNumber,postalCode,region,streetAddress입니다.
@@ -235,6 +230,8 @@ AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 
    >
    >
    >`email,givenName,familyName` - (으)로 작성된 경우 `givenname`예를 들어 시스템에서 인식하지 못합니다.
+   >
+   >
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 

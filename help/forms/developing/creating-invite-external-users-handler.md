@@ -3,9 +3,9 @@ title: 외부 사용자 초대 핸들러 만들기
 description: 외부 사용자 초대 핸들러 만들기
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Rights Management SPI에는 `edc-server-spi.jar` 프로젝트의 클래스 경�
 
 외부 사용자 초대 핸들러의 구현에는 이름이 인 사용자 정의 메서드가 포함됩니다 `createLocalPrincipalAccount`. 이 메서드는 이메일 주소를 매개 변수 값으로 지정하는 문자열 값을 수락합니다. 다음 `createLocalPrincipalAccount` 메서드는 라는 로컬 도메인이 있다고 가정합니다. `EDC_EXTERNAL_REGISTERED`. 이 도메인 이름을 원하는 대로 구성할 수 있습니다. 하지만 프로덕션 애플리케이션의 경우 엔터프라이즈 도메인과 통합할 수 있습니다.
 
-다음 `createUsers` 메서드는 모든 이메일 주소에 대해 반복하고 해당 사용자 개체(에서 로컬 사용자)를 만듭니다. `EDC_EXTERNAL_REGISTERED` domain). 마지막으로 `doEmails` 메서드가 호출됩니다. 이 방법은 의도적으로 시료에 스터브로 남겨 둔다. 프로덕션 구현에서는 새로 만든 사용자에게 초대 이메일 메시지를 보내는 애플리케이션 논리를 포함합니다. 실제 응용 프로그램의 응용 프로그램 논리 흐름을 보여 주기 위해 샘플에 남습니다.
+다음 `createUsers` 메서드는 모든 이메일 주소에 대해 반복하고 해당 사용자 개체(에서 로컬 사용자)를 만듭니다. `EDC_EXTERNAL_REGISTERED` domain). 마지막으로 `doEmails` 메서드가 호출됩니다. 이 방법은 의도적으로 시료에 스터브로 남겨 둔다. 프로덕션 구현에서는 새로 생성된 사용자에게 초대 이메일 메시지를 보내는 애플리케이션 논리를 포함합니다. 실제 응용 프로그램의 응용 프로그램 논리 흐름을 보여 주기 위해 샘플에 남습니다.
 
 ### 외부 사용자 초대 핸들러 구현 정의 {#user-handler-implementation}
 

@@ -1,17 +1,13 @@
 ---
 title: JavaAPI를 사용하여 AEM Forms 호출
-seo-title: Invoking AEM Forms using the JavaAPI
 description: 원격 호출에는 RMI 전송 프로토콜용 AEM Forms Java API, 로컬 호출에는 VM 전송, 원격 호출에는 SOAP, 사용자 이름 및 암호와 같은 다양한 인증, 동기 및 비동기 호출 요청을 사용합니다.
-seo-description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
-uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '5398'
 ht-degree: 0%
@@ -54,7 +50,7 @@ Java API는 다음 기능을 지원합니다.
 
 ## AEM Forms Java 라이브러리 파일 포함 {#including-aem-forms-java-library-files}
 
-Java API를 사용하여 AEM Forms 서비스를 프로그래밍 방식으로 호출하려면 Java 프로젝트의 클래스 경로에 필수 라이브러리 파일(JAR 파일)을 포함합니다. 클라이언트 애플리케이션의 클래스 경로에 포함하는 JAR 파일은 여러 요인에 따라 다릅니다.
+Java API를 사용하여 AEM Forms 서비스를 프로그래밍 방식으로 호출하려면 Java 프로젝트의 클래스 경로에 필수 라이브러리 파일(JAR 파일)을 포함합니다. 클라이언트 응용 프로그램의 클래스 경로에 포함하는 JAR 파일은 다음과 같은 몇 가지 요소에 따라 다릅니다.
 
 * 호출할 AEM Forms 서비스입니다. 클라이언트 애플리케이션은 하나 이상의 서비스를 호출할 수 있습니다.
 * AEM Forms 서비스를 호출할 모드입니다. EJB 또는 SOAP 모드를 사용할 수 있습니다. (참조: [연결 속성 설정](invoking-aem-forms-using-java.md#setting-connection-properties).)
@@ -80,17 +76,17 @@ Java API를 사용하여 AEM Forms 서비스를 프로그래밍 방식으로 호
  <tbody>
   <tr>
    <td><p>adobe-livecycle-client.jar</p></td>
-   <td><p>는 항상 Java 클라이언트 애플리케이션의 클래스 경로에 포함되어야 합니다.</p></td>
+   <td><p>항상 Java 클라이언트 애플리케이션의 클래스 경로에 포함되어야 합니다.</p></td>
    <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
-   <td><p>는 항상 Java 클라이언트 애플리케이션의 클래스 경로에 포함되어야 합니다.</p></td>
+   <td><p>항상 Java 클라이언트 애플리케이션의 클래스 경로에 포함되어야 합니다.</p></td>
    <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-utilities.jar</p></td>
-   <td><p>는 항상 Java 클라이언트 애플리케이션의 클래스 경로에 포함되어야 합니다.</p></td>
+   <td><p>항상 Java 클라이언트 애플리케이션의 클래스 경로에 포함되어야 합니다.</p></td>
    <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk//client-libs/&lt;app server=""&gt;</p></td>
   </tr>
   <tr>
@@ -440,15 +436,15 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
    * 마찬가지로, 이 연결 속성을 다음으로 설정하면 `JBoss`, `java.naming.factory.initial` 값이 (으)로 설정됨 `org.jnp.interfaces.NamingContextFactory`.
    * 다음을 설정할 수 있습니다. `java.naming.factory.initial` 속성을 기본값을 사용하지 않으려면 요구 사항을 충족하는 값으로 설정하십시오.
 
-   >[!NOTE]
-   >
-   >문자열을 사용하여 `DSC_SERVER_TYPE` connection 속성에서 의 정적 멤버를 `ServiceClientFactoryProperties` 클래스. 다음 값을 사용할 수 있습니다. `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, 또는 `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+  >[!NOTE]
+  >
+  >문자열을 사용하여 `DSC_SERVER_TYPE` connection 속성에서 의 정적 멤버를 `ServiceClientFactoryProperties` 클래스. 다음 값을 사용할 수 있습니다. `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, 또는 `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:** AEM Forms 사용자 이름을 지정합니다. 사용자가 AEM Forms 서비스를 성공적으로 호출하려면 서비스 사용자 역할이 필요합니다. 사용자는 서비스 호출 권한을 포함하는 다른 역할도 가질 수 있습니다. 그렇지 않으면 서비스를 호출하려고 할 때 예외가 throw됩니다. 서비스 보안이 비활성화되어 있으면 이 연결 속성을 지정할 필요가 없습니다.
 * **DSC_CREDENTIAL_PASSWORD:** 해당 암호 값을 지정합니다. 서비스 보안이 비활성화되어 있으면 이 연결 속성을 지정할 필요가 없습니다.
 * **DSC_REQUEST_TIMEOUT:** SOAP 요청에 대한 기본 요청 시간 제한1200000 밀리초(20분)입니다. 작업을 완료하는 데 요청이 더 오래 걸릴 수 있는 경우가 있습니다. 예를 들어 큰 레코드 집합을 검색하는 SOAP 요청에는 더 긴 시간 제한 제한이 필요할 수 있습니다. 다음을 사용할 수 있습니다. `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` SOAP 요청에 대한 요청 호출 시간 제한 을 늘리려면 다음을 수행하십시오.
 
-   **참고**: SOAP 기반 호출만 DSC_REQUEST_TIMEOUT 속성을 지원합니다.
+  **참고**: SOAP 기반 호출만 DSC_REQUEST_TIMEOUT 속성을 지원합니다.
 
 연결 등록 정보를 설정하려면 다음 작업을 수행하십시오.
 
@@ -477,14 +473,14 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
    * AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버를 지정하는 문자열 값(예: AEM Forms이 JBoss에 배포된 경우 지정) `JBoss`).
 
       1. 을(를) 설정하려면 `DSC_CREDENTIAL_USERNAME` 연결 속성, 호출 `java.util.Properties` 개체 `setProperty` 메서드를 실행하고 다음 값을 전달합니다.
+
    * 다음 `ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME` 열거형 값
    * AEM Forms을 호출하는 데 필요한 사용자 이름을 지정하는 문자열 값
 
       1. 을(를) 설정하려면 `DSC_CREDENTIAL_PASSWORD` 연결 속성, 호출 `java.util.Properties` 개체 `setProperty` 메서드를 실행하고 다음 값을 전달합니다.
+
    * 다음 `ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD` 열거형 값
    * 해당 암호 값을 지정하는 문자열 값
-
-
 
 **JBoss에 대한 EJB 연결 모드 설정**
 
@@ -541,7 +537,7 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 
 >[!NOTE]
 >
->SOAP 연결 모드를 선택하는 경우 클라이언트 애플리케이션의 클래스 경로에 추가 JAR 파일을 포함해야 합니다.
+>SOAP 연결 모드를 선택하는 경우 클라이언트 응용 프로그램의 클래스 경로에 추가 JAR 파일을 포함해야 합니다.
 
 **서비스 보안이 비활성화될 때 연결 속성 설정**
 
@@ -654,18 +650,18 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
-**WebLogic**
+**Weblogic**
 
-다음 예제는 WebLogic에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 내용을 보여 줍니다.
+다음 예는 WebLogic에 배포 된 AEM Forms에 연결 하는 데 사용 되는 jndi 속성 파일의 컨텐트를 보여줍니다.
 
 ```ini
  java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
-**JBoss**
+**Jboss**
 
-다음 예는 JBoss에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 내용을 보여줍니다.
+다음 예는 JBoss에 배포 된 AEM Forms에 연결 하는 데 사용 되는 jndi 속성 파일의 컨텐트를 보여줍니다.
 
 ```ini
  java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory
@@ -681,11 +677,11 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
 
 [AEM Forms Java 라이브러리 파일 포함](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Java API를 사용하여 AEM Forms 서비스에 데이터 전달](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
+[Java API를 사용 하 여 AEM Forms 서비스로 데이터 전달](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
 
-[Java 클라이언트 라이브러리를 사용하여 서비스 호출](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
+[Java 클라이언트 라이브러리를 사용 하 여 서비스 호출](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Java API를 사용하여 AEM Forms 서비스에 데이터 전달 {#passing-data-to-aem-forms-services-using-the-java-api}
+## Java API를 사용 하 여 AEM Forms 서비스로 데이터 전달 {#passing-data-to-aem-forms-services-using-the-java-api}
 
 AEM Forms 서비스 작업은 일반적으로 PDF 문서를 사용하거나 생성합니다. 서비스를 호출할 때 경우에 따라 PDF 문서(또는 XML 데이터와 같은 기타 문서 유형)를 서비스에 전달해야 합니다. 마찬가지로 때로는 서비스에서 반환되는 PDF 문서를 처리해야 합니다. AEM Forms 서비스로 데이터를 주고 받을 수 있는 Java 클래스는 다음과 같습니다 `com.adobe.idp.Document`.
 
@@ -821,7 +817,7 @@ A `com.adobe.idp.Document` 개체가 Java 직렬화 가능 유형이므로 RMI �
 
 #### URL에서 액세스할 수 있는 컨텐츠를 기반으로 문서 만들기 {#creating-a-document-based-on-content-accessible-from-an-url}
 
-다음 Java 코드 예제에서는 `com.adobe.idp.Document` 이라는 PDF 파일을 기반으로 하는 개체 *map.pdf*. 이 파일은 이름이 인 웹 응용 프로그램 내에 있습니다. `WebApp` 실행 중인 대상: `localhost`. 이 생성자는 다음을 설정하려고 합니다. `com.adobe.idp.Document` url 프로토콜과 함께 반환된 콘텐츠 유형을 사용하는 개체의 MIME 콘텐츠 유형입니다.
+다음 Java 코드 예제에서는 `com.adobe.idp.Document` 이라는 PDF 파일을 기반으로 하는 개체 *map.pdf*. 이 파일은 이름이 인 웹 응용 프로그램 내에 있습니다. `WebApp` 실행 중인 대상: `localhost`. 이 생성자는 다음을 설정하려고 합니다. `com.adobe.idp.Document` url 프로토콜과 함께 반환되는 콘텐츠 형식을 사용하는 개체의 MIME 콘텐츠 형식입니다.
 
 에 제공된 URL `com.adobe.idp.Document` 개체는 항상 원본이 있는 쪽에서 읽습니다. `com.adobe.idp.Document` 다음 예제와 같이 개체가 만들어집니다.
 
@@ -829,9 +825,9 @@ A `com.adobe.idp.Document` 개체가 Java 직렬화 가능 유형이므로 RMI �
      Document doc = new Document(new java.net.URL("file:c:/temp/input.pdf"));
 ```
 
-c:/temp/input.pdf 파일은 서버 컴퓨터가 아닌 클라이언트 컴퓨터에 있어야 합니다. 클라이언트 컴퓨터는 URL을 읽는 위치이며 `com.adobe.idp.Document` 개체가 생성되었습니다.
+C:/temp/input .pdf 파일은 클라이언트 컴퓨터 (서버 컴퓨터가 아님)에 있어야 합니다. 클라이언트 컴퓨터는 URL를 읽고 개체를 `com.adobe.idp.Document` 만든 위치입니다.
 
-**URL에서 액세스할 수 있는 컨텐츠를 기반으로 문서 만들기**
+**URL에서 액세스할 수 있는 컨텐츠 기반 문서 만들기**
 
 ```java
  //Create a Document object based on a java.net.URL object
@@ -849,10 +845,10 @@ c:/temp/input.pdf 파일은 서버 컴퓨터가 아닌 클라이언트 컴퓨터
 
 ### 반환된 문서 처리 {#handling-returned-documents}
 
-PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값으로 반환하는 서비스 작업은 `com.adobe.idp.Document` 개체. 다음 항목을 받은 후 `com.adobe.idp.Document` 개체를 다음과 같은 형식으로 변환할 수 있습니다.
+PDF 문서 (또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값으로 반환 하는 서비스 작업은 개체를 `com.adobe.idp.Document` 반환 합니다. 개체를 받은 `com.adobe.idp.Document` 후 다음 형식으로 전환 수 있습니다.
 
-* A `java.io.File` 오브젝트
-* A `java.io.InputStream` 오브젝트
+* `java.io.File`개체
+* `java.io.InputStream`개체
 * 바이트 배열
 
 다음 코드 행은 `com.adobe.idp.Document` 에 대한 오브젝트 `java.io.InputStream` 개체. 다음과 같이 가정합니다. `myPDFDocument` 은(는) `com.adobe.idp.Document` 개체:
@@ -970,18 +966,18 @@ AEM Forms 서비스 작업은 Java 클라이언트 라이브러리로 알려진 
 
 >[!NOTE]
 >
->Java API를 사용하여 서비스를 호출하는 방법에 대한 설명은 저장소 서비스의 `writeResource` 작업이 호출됩니다. 이 작업은 저장소에 새 리소스를 배치합니다.
+>Java API를 사용하여 서비스를 호출하는 방법을 설명하기 위해 저장소 서비스의 `writeResource` 작업이 호출됩니다. 이 작업은 새 리소스를 저장소에 배치 합니다.
 
-Java 클라이언트 라이브러리를 사용하고 다음 단계를 수행하여 저장소 서비스를 호출할 수 있습니다.
+Java 클라이언트 라이브러리를 사용 하 고 다음 단계를 수행 하 여 리포지토리 서비스를 실행할 수 있습니다.
 
-1. Java 프로젝트의 클래스 경로에 adobe-repository-client.jar과 같은 클라이언트 JAR 파일을 포함합니다. 이러한 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. 서비스를 호출하는 데 필요한 연결 속성을 설정합니다.
-1. 만들기 `ServiceClientFactory` 를 호출하여 개체 `ServiceClientFactory` 개체의 정적 `createInstance` 메서드 및 전달 `java.util.Properties` 연결 속성을 포함하는 개체입니다.
-1. 만들기 `ResourceRepositoryClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체. 사용 `ResourceRepositoryClient` 저장소 서비스 작업을 호출할 객체입니다.
-1. 만들기 `RepositoryInfomodelFactoryBean` 개체를 해당 생성자를 사용하여 만들고 `null`. 이 개체를 사용하면 다음을 만들 수 있습니다 `Resource` 저장소에 추가된 컨텐츠를 나타내는 객체입니다.
-1. 만들기 `Resource` 를 호출하여 개체 `RepositoryInfomodelFactoryBean` 개체 `newImage` 메서드 및 다음 값 전달:
+1. Java 프로젝트의 클래스 경로에 adobe-repository-client와 같은 클라이언트 JAR 파일을 포함 합니다. 이러한 파일의 위치에 대 한 자세한 내용은 AEM Forms Java 라이브러리 파일 ](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) 포함을 참조 [ 하십시오.
+1. 서비스를 호출 하는 데 필요한 연결 속성을 설정 합니다.
+1. 만들기 `ServiceClientFactory` 를 호출하여 개체 `ServiceClientFactory` 오브젝트의 정적 `createInstance` 메서드 및 전달 `java.util.Properties` 연결 속성을 포함하는 개체입니다.
+1. 만들기 `ResourceRepositoryClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체. 개체를 `ResourceRepositoryClient` 사용 하 여 저장소 서비스 작업을 호출 합니다.
+1. 해당 생성자를 사용 하 여 개체를 `RepositoryInfomodelFactoryBean` 만들기 전달 `null` 합니다. 이 개체를 사용 하 여 저장소에 추가 되는 컨텐츠를 나타내는 개체를 `Resource` 만들 수 있습니다.
+1. 개체의 `newImage` 메서드를 호출 `RepositoryInfomodelFactoryBean` 하 고 다음 값을 전달 하 여 개체를 만들기 합니다 `Resource` .
 
-   * 다음을 지정하는 고유 ID 값 `new Id()`.
+   * 지정 `new Id()` 하 여 고유한 ID 값입니다.
    * 다음을 지정하는 고유 UUID 값 `new Lid()`.
    * 리소스의 이름입니다. XDP 파일의 파일 이름을 지정할 수 있습니다.
 
@@ -991,8 +987,8 @@ Java 클라이언트 라이브러리를 사용하고 다음 단계를 수행하�
 1. 만들기 `com.adobe.idp.Document` 를 전달하여 개체 `java.io.FileInputStream` 저장소에 추가할 XDP 파일을 저장하는 객체입니다. (참조: [InputStream 개체를 기반으로 문서 만들기](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
 1. 의 콘텐츠 추가 `com.adobe.idp.Document` 에 대한 오브젝트 `ResourceContent` 를 호출하여 개체 `ResourceContent` 개체 `setDataDocument` 메서드를 사용합니다. 전달 `com.adobe.idp.Document` 개체.
 1. 를 호출하여 저장소에 추가할 XDP 파일의 MIME 유형을 설정합니다. `ResourceContent` 개체 `setMimeType` 방법 및 전달 `application/vnd.adobe.xdp+xml`.
-1. 의 콘텐츠 추가 `ResourceContent` 에 대한 오브젝트 `Resource` 를 호출하여 개체 `Resource` 개체 &#39;s `setContent` 메서드 및 전달 `ResourceContent` 개체.
-1. 를 호출하여 리소스에 대한 설명을 추가합니다. `Resource` 개체 &#39;s `setDescription` 리소스에 대한 설명을 나타내는 문자열 값을 전달하는 메서드입니다.
+1. 의 콘텐츠 추가 `ResourceContent` 에 대한 오브젝트 `Resource` 를 호출하여 개체 `Resource` 의 오브젝트 `setContent` 메서드 및 전달 `ResourceContent` 개체.
+1. 를 호출하여 리소스에 대한 설명을 추가합니다. `Resource` 의 오브젝트 `setDescription` 리소스에 대한 설명을 나타내는 문자열 값을 전달하는 메서드입니다.
 1. 를 호출하여 저장소에 양식 디자인을 추가합니다. `ResourceRepositoryClient` 개체 `writeResource` 메서드 및 다음 값 전달:
 
    * 새 리소스를 포함하는 리소스 컬렉션의 경로를 지정하는 문자열 값
@@ -1008,7 +1004,7 @@ Java 클라이언트 라이브러리를 사용하고 다음 단계를 수행하�
 
 ## 호출 API를 사용하여 단기 프로세스 호출 {#invoking-a-short-lived-process-using-the-invocation-api}
 
-Java 호출 API를 사용하여 단기 프로세스를 호출할 수 있습니다. Invocation API를 사용하여 단기 프로세스를 호출하는 경우 `java.util.HashMap` 개체. 서비스로 전달할 각 매개변수에 대해 `java.util.HashMap` 개체 `put` 지정한 작업을 수행하기 위해 서비스에 필요한 이름-값 쌍을 지정합니다. 단기 프로세스에 속하는 매개변수의 정확한 이름을 지정합니다.
+Java 호출 API를 사용하여 단기 프로세스를 호출할 수 있습니다. Invocation API를 사용하여 단기 프로세스를 호출하는 경우 `java.util.HashMap` 개체. 서비스로 전달할 각 매개 변수에 대해 `java.util.HashMap` 개체 `put` 지정한 작업을 수행하기 위해 서비스에 필요한 이름-값 쌍을 지정합니다. 단기 프로세스에 속하는 매개변수의 정확한 이름을 지정합니다.
 
 >[!NOTE]
 >

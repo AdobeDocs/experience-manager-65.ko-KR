@@ -1,17 +1,13 @@
 ---
 title: 원격을 사용하여 AEM Forms 호출
-seo-title: Invoking AEM Forms using Remoting
 description: 원격을 사용하여 AEM Forms 프로세스를 호출하여 Workbench에서 생성된 프로세스를 호출합니다. Flex으로 빌드된 클라이언트 애플리케이션에서 AEM Forms 프로세스를 호출할 수 있습니다.
-seo-description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
-uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '4597'
 ht-degree: 0%
@@ -64,7 +60,7 @@ Workbench에서 생성된 프로세스는 원격을 사용하여 호출할 수 �
 
 [Flex으로 구축된 클라이언트 애플리케이션 인증](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
-[원격을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
+[원격을 사용하여 프로세스를 호출할 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
 
 [원격을 사용하여 사용자 지정 구성 요소 서비스 호출](invoking-aem-forms-using-remoting.md#invoking-custom-component-services-using-remoting)
 
@@ -130,7 +126,7 @@ docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
 docRef.text = "Text for my document";  // Optionally, you can override the server's default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
-* 문서가 서버에 없는 경우 원격 업로드 서블릿을 사용하여 문서를 AEM Forms에 업로드합니다. AEM Forms의 새로운 기능은 보안 문서를 업로드하는 기능입니다. 보안 문서를 업로드할 때 다음 권한이 있는 사용자를 사용해야 합니다. *문서 업로드 애플리케이션 사용자* 역할. 이 역할이 없으면 사용자는 보안 문서를 업로드할 수 없습니다. 단일 사인온을 사용하여 보안 문서를 업로드하는 것이 좋습니다. (참조: [원격을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+* 문서가 서버에 없는 경우 원격 업로드 서블릿을 사용하여 문서를 AEM Forms에 업로드합니다. AEM Forms의 새로운 기능은 보안 문서를 업로드하는 기능입니다. 보안 문서를 업로드할 때 다음 권한이 있는 사용자를 사용해야 합니다. *문서 업로드 애플리케이션 사용자* 역할. 이 역할이 없으면 사용자는 보안 문서를 업로드할 수 없습니다. 단일 사인온을 사용하여 보안 문서를 업로드하는 것이 좋습니다. (참조: [원격을 사용하여 프로세스를 호출할 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 >[!NOTE]
 >
@@ -186,7 +182,7 @@ function completeHandler(event: DataEvent): void  { 
 
 [Flex으로 구축된 클라이언트 애플리케이션 인증](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
-[원격을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
+[원격을 사용하여 프로세스를 호출할 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
 
 ## 원격을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출 {#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting}
 
@@ -199,7 +195,7 @@ Flex으로 빌드된 응용 프로그램에서 AEM Forms 프로세스를 호출�
 
 >[!NOTE]
 >
-이 섹션에서는 AEM Forms이 비보안 문서를 업로드하도록 구성된 경우 AEM Forms 프로세스를 호출하고 문서를 업로드하는 방법에 대해 설명합니다. AEM Forms 프로세스를 호출하고 보안 문서를 업로드하는 방법과 AEM Forms에서 보안 및 비보안 문서를 허용하도록 구성하는 방법에 대한 자세한 내용은 을 참조하십시오. [원격을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
+이 섹션에서는 AEM Forms이 비보안 문서를 업로드하도록 구성된 경우 AEM Forms 프로세스를 호출하고 문서를 업로드하는 방법에 대해 설명합니다. AEM Forms 프로세스를 호출하고 보안 문서를 업로드하는 방법과 AEM Forms에서 보안 및 비보안 문서를 허용하도록 구성하는 방법에 대한 자세한 내용은 을 참조하십시오. [원격을 사용하여 프로세스를 호출할 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
 **mx:RemoteObject 인스턴스 만들기**
 
@@ -544,9 +540,9 @@ Flex으로 빌드된 클라이언트 애플리케이션을 시작하고 중앙 �
 
 [(AEM Forms에서 더 이상 사용되지 않음) AEM Forms Remoting을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
 
-[원격을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
+[원격을 사용하여 프로세스를 호출할 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
 
-## 원격을 사용하여 프로세스를 호출하는 보안 문서 전달 {#passing-secure-documents-to-invoke-processes-using-remoting}
+## 원격을 사용하여 프로세스를 호출할 보안 문서 전달 {#passing-secure-documents-to-invoke-processes-using-remoting}
 
 하나 이상의 문서가 필요한 프로세스를 호출할 때 보안 문서를 AEM Forms에 전달할 수 있습니다. 보안 문서를 전달하면 비즈니스 정보 및 기밀 문서를 보호할 수 있습니다. 이 경우 문서는 PDF 문서, XML 문서, Word 문서 등을 참조할 수 있습니다. AEM Forms이 보안 문서를 허용하도록 구성된 경우 Flex으로 작성된 클라이언트 애플리케이션에서 AEM Forms으로 보안 문서를 전달해야 합니다. (참조: [보안 및 비보안 문서를 수락하도록 AEM Forms 구성](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
@@ -1278,4 +1274,4 @@ Forms 복합 유형에 속하는 필드 이름을 확인하는 좋은 방법은 
 
 [Flex으로 구축된 클라이언트 애플리케이션 인증](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
-[원격을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
+[원격을 사용하여 프로세스를 호출할 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)

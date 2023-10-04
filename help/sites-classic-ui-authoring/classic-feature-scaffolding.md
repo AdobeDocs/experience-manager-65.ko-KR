@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 로 이동 **페이지 속성** 새 페이지의 *제목 텍스트*, *설명*, *대상 템플릿*, 및 *대상 경로*, 위에서 설명한 대로
 
-다음으로 이 스캐폴드가 만들 페이지의 구조를 정의해야 합니다. 이렇게 하려면 로 이동합니다. **[디자인 모드](/help/sites-authoring/page-authoring.md#sidekick)** scaffold 페이지에서 을 참조하십시오. 에서 스캐폴드를 편집할 수 있는 링크가 표시됩니다. **대화 상자 편집기**.
+다음으로 이 스캐폴드가 만들 페이지의 구조를 정의해야 합니다. 이렇게 하려면 로 이동합니다. **[디자인 모드](/help/sites-authoring/page-authoring.md#sidekick)** scaffold 페이지에서 을 참조하십시오. 에서 스캐폴드를 편집할 수 있는 링크가 나타납니다. **대화 상자 편집기**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 

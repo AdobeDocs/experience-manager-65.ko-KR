@@ -1,17 +1,13 @@
 ---
 title: Adobe Analytics를 위한 비디오 추적 구성
-seo-title: Configuring Video Tracking for Adobe Analytics
 description: SiteCatalyst을 위한 비디오 추적 구성에 대해 알아봅니다.
-seo-description: Learn about configuring video tracking for SiteCatalyst.
-uuid: 5a862f05-abfa-42a2-ad40-4c1c32f1bd75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 2%

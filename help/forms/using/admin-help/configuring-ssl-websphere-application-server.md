@@ -1,19 +1,15 @@
 ---
 title: WebSphere 애플리케이션 서버에 대한 SSL 구성
-seo-title: Configuring SSL for WebSphere Application Server
 description: WebSphere Application Server용 SSL을 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure SSL for WebSphere Application Server.
-uuid: f939a806-346e-41e0-b2c0-6d0ba83f8f6f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1225'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,21 +26,21 @@ SSL을 사용하려면 WebSphere는 시스템을 관리할 권한이 있는 로�
 
 ### WebSphere용 Linux 또는 UNIX 사용자 생성 {#create-a-linux-or-unix-user-for-websphere}
 
-1. 루트 사용자로 로그인
-1. 명령 프롬프트에 다음 명령을 입력하여 사용자를 만듭니다.
+1. Root 사용자 로그인 합니다.
+1. 명령 프롬프트에 다음 명령을 입력 하 여 사용자 만들기 합니다.
 
    * (Linux 및 Sun Solaris) `useradd`
    * (IBM AIX) `mkuser`
 
-1. 다음을 입력하여 새 사용자의 암호 설정 `passwd` 를 입력합니다.
-1. (Linux 및 Solaris) 다음을 입력하여 섀도 암호 파일을 생성합니다. `pwconv` (매개 변수 없음)을 사용합니다.
+1. 명령 프롬프트에 입력 `passwd` 하 여 새 사용자의 암호 설정 합니다.
+1. (Linux 및 Solaris) 명령 프롬프트에 (매개 변수 없이)를 입력 `pwconv` 하 여 섀도 암호 파일을 만들기 합니다.
 
    >[!NOTE]
    >
-   >(Linux 및 Solaris) WebSphere Application Server 로컬 OS 보안 레지스트리가 작동하려면 섀도 암호 파일이 있어야 합니다. 섀도 암호 파일의 이름은 일반적으로 다음과 같습니다 **/etc/shadow** /etc/passwd 파일을 기반으로 합니다. 섀도 암호 파일이 없는 경우 글로벌 보안을 활성화하고 사용자 레지스트리를 로컬 OS로 구성한 후 오류가 발생합니다.
+   >(Linux 및 Solaris) WebSphere Application Server 로컬 OS 보안 레지스트리가 작동하려면 섀도 암호 파일이 있어야 합니다. 섀도 암호 파일은 일반적으로/etc/shadow **으로 명명** 되며/etc/passwd 파일을 기반으로 합니다. 섀도 암호 파일이 없는 경우 글로벌 보안을 활성화 하 고 사용자 레지스트리를 로컬 OS로 구성 하면 오류가 발생 합니다.
 
-1. 텍스트 편집기의 /etc 디렉토리에서 그룹 파일을 엽니다.
-1. 2단계에서 만든 사용자를 `root` 그룹입니다.
+1. 텍스트 편집기의/sutc 디렉토리에서 그룹 파일을 엽니다.
+1. 2 단계에서 만든 사용자 그룹에 `root` 추가 합니다.
 1. 파일을 저장하고 닫습니다.
 1. (SSL이 활성화된 UNIX) 루트 사용자로 WebSphere를 시작 및 중지합니다.
 
@@ -89,7 +85,7 @@ SSL을 사용하려면 WebSphere는 시스템을 관리할 권한이 있는 로�
 1. 클릭 **완료**.
 1. WebSphere 프로필을 다시 시작합니다.
 
-   WebSphere는 기본 키 저장소 및 인증서 저장소를 사용하여 시작됩니다.
+   WebSphere는 기본 키 저장소 및 truststore를 사용하여 시작합니다.
 
 ## SSL 활성화(사용자 지정 키 및 Truststore) {#enable-ssl-custom-key-and-truststore}
 
@@ -106,21 +102,21 @@ ikeyman 유틸리티 또는 관리 콘솔을 사용하여 Truststore 및 keystor
 1. 클릭 **개인 인증서**.
 1. 이미 ikeyman을 사용하여 키 저장소를 생성한 를 추가한 경우 인증서가 나타납니다. 그렇지 않으면 다음 단계를 수행하여 새 자체 서명된 인증서를 추가해야 합니다.
 
-   1. 선택 **만들기 > 자체 서명된 인증서**.
-   1. 인증서 양식에서 적절한 값을 지정합니다. 별칭 및 일반 이름을 시스템의 정규화된 도메인 이름으로 유지해야 합니다.
-   1. 클릭 **적용**.
+   1. 만들기 > 자체 서명 된 인증서 **를 선택** 합니다.
+   1. 인증서 양식에서 적절 한 값을 지정 합니다. 별칭과 일반 이름을 컴퓨터의 정규화 된 도메인 이름으로 유지 하십시오.
+   1. **적용**&#x200B;을 클릭합니다.
 
-1. 인증서 보관함을 만들려면 2단계부터 10단계까지 반복합니다.
+1. Truststore를 만들려면 2 ~ 10 단계를 반복 합니다.
 
-## 서버에 사용자 지정 키 저장소 및 인증서 저장소 적용 {#apply-custom-keystore-and-truststore-to-the-server}
+## 서버에 대 한 사용자 지정 keystore 및 truststore 적용 {#apply-custom-keystore-and-truststore-to-the-server}
 
-1. WebSphere 관리 콘솔에서 을 선택합니다. **보안 > SSL 인증서 및 키 관리**.
-1. 클릭 **끝점 보안 구성 관리**. 로컬 토폴로지 맵이 열립니다.
-1. 인바운드 아래에서 직접 노드 하위를 선택합니다.
-1. 관련 항목에서 다음을 선택합니다. **SSL 구성**.
-1. 선택 **NodeDefaultSSLetting**.
+1. WebSphere 관리 콘솔에서 보안 > SSL 인증서 및 키 관리 **를 선택** 합니다.
+1. 종단점 보안 구성 **관리를 클릭** 합니다. 로컬 토폴로지 맵이 열립니다.
+1. 인바운드에서 노드의 직계 하위 항목을 선택 합니다.
+1. 관련 항목에서 SSL 구성을 **선택** 합니다.
+1. NodeDeafultSSLSetting **를 선택** 합니다.
 1. 인증서 보관함 이름 및 인증서 보관함 이름 드롭다운 목록에서 생성한 사용자 지정 인증서 보관함 및 인증서 보관함을 선택합니다.
-1. 클릭 **적용**.
+1. **적용**&#x200B;을 클릭합니다.
 1. 마스터 구성을 저장합니다.
 1. WebSphere 프로필을 다시 시작합니다.
 

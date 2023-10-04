@@ -1,20 +1,16 @@
 ---
 title: 콘텐츠 조각에 대한 번역 프로젝트 만들기
-seo-title: Creating Translation Projects for Content Fragments
 description: 콘텐츠 조각을 번역하는 방법을 알아봅니다.
-seo-description: Learn how to translate content fragments.
-uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -60,7 +56,7 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
 혼합 미디어를 포함하는 콘텐츠 조각을 번역하려면 먼저 기본 번역 프레임워크를 편집하여 콘텐츠 조각과 연결된 인라인 에셋 및 컬렉션의 번역을 활성화하십시오.
 
-1. AEM 로고를 클릭/탭하고 다음으로 이동 **[!UICONTROL 도구 > 배포 > Cloud Services]**.
+1. AEM 로고를 클릭/탭하고 다음으로 이동 **[!UICONTROL 도구 > 배포 > Cloud Service]**.
 1. 찾기 **[!UICONTROL 번역 통합]** 아래에 **[!UICONTROL Adobe Marketing Cloud]**&#x200B;및 클릭/탭 **[!UICONTROL 구성 표시]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
@@ -114,7 +110,7 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
-1. 다음에서 대상 언어를 선택합니다. **[!UICONTROL Target 언어]** 목록을 표시합니다.
+1. 다음에서 대상 언어를 선택합니다. **[!UICONTROL 타겟 언어]** 목록을 표시합니다.
 
    ![chlimage_1-457](assets/chlimage_1-457.png)
 

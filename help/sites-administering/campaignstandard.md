@@ -1,16 +1,14 @@
 ---
 title: AEM 6.5와 Adobe Campaign Standard 통합
 description: AEM 6.5를 Adobe Campaign Standard과 통합하는 방법을 알아봅니다.
-uuid: ef31339e-d925-499c-b8fb-c00ad01e38ad
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1833'
 ht-degree: 16%
 
 ---
@@ -61,7 +59,7 @@ Adobe Campaign Standard에는 기본적으로 `aemserver` AEM에서 Adobe Campai
 
    ![Adobe Campaign의 aemserver 사용자](assets/acs-aemserver-user.png)
 
-1. 탭 또는 클릭 **저장** 변경 내용을 저장합니다.
+1. **저장**&#x200B;을 탭하거나 클릭하여 변경 내용을 저장합니다.
 
 사용자 `aemserver` 이제 AEM이 Adobe Campaign과 통신하는 데 사용할 수 있도록 사용자에게 필요한 권한이 있습니다.
 
@@ -87,7 +85,7 @@ Adobe Campaign Standard에는 기본적으로 `aemserver` AEM에서 Adobe Campai
 
    ![AEMResourceTypeFilter](assets/acs-aem-resource-type-filter.png)
 
-1. 탭 또는 클릭 **저장** 변경 내용을 저장합니다.
+1. **저장**&#x200B;을 탭하거나 클릭하여 변경 내용을 저장합니다.
 
 사용자 `AEMResourceTypeFilter` 이제 AEM에서 올바른 컨텐츠를 검색하도록 구성되었습니다.
 

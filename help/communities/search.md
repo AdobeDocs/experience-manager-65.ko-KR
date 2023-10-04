@@ -1,19 +1,15 @@
 ---
 title: 검색 기능
-seo-title: Search Feature
 description: 커뮤니티 사이트에 검색 추가 및 구성
-seo-description: Adding and configuring Search to a Communities site
-uuid: ca633456-911f-447f-881e-653533125d5f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 exl-id: e252b0e5-a2f8-468e-ac8c-951a5b0f2e32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 2%
+source-wordcount: '455'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +43,7 @@ ht-degree: 2%
 
 ![컨피규어](assets/configure-new.png)
 
-아래 **[!UICONTROL 검색 설정]** 탭에서 방문자가 쿼리를 입력할 때 검색 경로를 지정합니다.
+아래 **[!UICONTROL 검색 설정]** 탭에서 방문자가 쿼리를 입력할 때 경로를 검색하는 방법을 지정합니다.
 
 ![검색 설정](assets/search-settings.png)
 
@@ -57,8 +53,7 @@ ht-degree: 2%
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL 결과 페이지]**
-결과는 브라우저를 사용하여 이 포함된 페이지를 선택하여 지정된 별도의 페이지에 표시됩니다. 
-`Search Results` 구성 요소.
+결과는 브라우저를 사용하여 이 포함된 페이지를 선택하여 지정된 별도의 페이지에 표시됩니다. `Search Results` 구성 요소.
 
 ## 검색 결과 {#search-results}
 
@@ -90,11 +85,11 @@ ht-degree: 2%
 
 * **[!UICONTROL 페이지당 검색 결과 수]**
 
-   페이지 하나에 표시되는 항목/게시물 수를 정의합니다. 기본값은 10입니다.
+  페이지 하나에 표시되는 항목/게시물 수를 정의합니다. 기본값은 10입니다.
 
 * **[!UICONTROL 경로 검색]**
 
-   항목 추가 버튼을 사용하여 검색 경로를 추가하면 콘텐츠 검색이 제한됩니다.
+  항목 추가 버튼을 사용하여 검색 경로를 추가하면 콘텐츠 검색이 제한됩니다.
 
 ## 추가 정보 {#additional-information}
 

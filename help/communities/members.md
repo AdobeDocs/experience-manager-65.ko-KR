@@ -1,15 +1,13 @@
 ---
 title: 구성원 및 그룹 관리 콘솔
 description: 멤버 및 그룹 관리 콘솔에 액세스하는 방법
-uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 4%
@@ -29,7 +27,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
 ### 작성자의 사용자 {#users-on-author}
 
-에 등록된 사용자 및 그룹 관리 *작성자* 플랫폼의 보안 콘솔을 사용하려면 가 필요합니다.
+에 등록된 사용자 및 그룹 관리 *작성자* 환경에서는 플랫폼의 보안 콘솔을 사용해야 합니다.
 
 * 전역 탐색에서 을 선택합니다. **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**.
 * 전역 탐색에서 을 선택합니다. **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 그룹]**.

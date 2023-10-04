@@ -12,9 +12,9 @@ discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1515'
 ht-degree: 2%
 
 ---
@@ -40,11 +40,11 @@ UGC의 조정은 긍정적인 기여를 인식하고 부정적인 기여(스팸 
 
 * [벌크 중재 콘솔](moderation.md)
 
-   관리 콘솔은 관리자 및 [커뮤니티 중재자](/help/communities/users.md) 공용 환경에서뿐만 아니라 작성 환경의 관리자도 마찬가지입니다. 커뮤니티 콘텐츠가에 저장될 때 가능합니다. [공동 저장소](/help/communities/working-with-srp.md).
+  관리 콘솔은 관리자 및 [커뮤니티 중재자](/help/communities/users.md) 공용 환경에서뿐만 아니라 작성 환경의 관리자도 마찬가지입니다. 커뮤니티 콘텐츠가에 저장될 때 가능합니다. [공동 저장소](/help/communities/working-with-srp.md).
 
 * [컨텍스트 내 중재](in-context.md)
 
-   게시 환경의 조정은 관리자 및 커뮤니티 중재자가 콘텐츠가 게시된 페이지에서 직접 수행할 수 있습니다.
+  게시 환경의 조정은 관리자 및 커뮤니티 중재자가 콘텐츠가 게시된 페이지에서 직접 수행할 수 있습니다.
 
 ## 중재 작업 {#moderation-actions}
 
@@ -52,23 +52,23 @@ UGC(게시 콘텐츠)에서 수행할 수 있는 작업은 사용자 ID 및 환�
 
 * `Admin`
 
-   의 멤버인 사용자 [커뮤니티 관리자](users.md) 그룹입니다.
+  의 멤버인 사용자 [커뮤니티 관리자](users.md) 그룹입니다.
 
 * `Moderator`
 
-   의 구성원 [커뮤니티 중재자](users.md#publishenvironmentusersandgroups) 그룹(has) [중재자 권한](in-context.md#moderatorpermissions)).
+  의 구성원 [커뮤니티 중재자](users.md#publishenvironmentusersandgroups) 그룹(has) [중재자 권한](in-context.md#moderatorpermissions)).
 
 * `Creator`
 
-   콘텐츠를 게시한 사용자입니다.
+  콘텐츠를 게시한 사용자입니다.
 
 * `Member`
 
-   특별한 권한이 없는 로그인한 사용자.
+  특별한 권한이 없는 로그인한 사용자.
 
 * `Visitor`
 
-   익명 사용자.
+  익명 사용자.
 
 <table>
  <tbody>
@@ -183,7 +183,7 @@ UGC가 삭제되면 저장소에서 제거되며 복구되지 않을 수 있습�
 
 ### 플래그 지정/플래그 해제 {#flag-unflag}
 
-플래그 지정은 콘텐츠 작성자를 제외한 모든 로그인한 멤버가 게시물 콘텐츠에 문제가 있음을 나타내기 위한 수단입니다. 플래그가 지정되면 동일한 멤버가 콘텐츠의 플래그를 해제할 수 있는 플래그 해제 아이콘이 표시됩니다.
+플래그 지정은 콘텐츠 작성자를 제외한 모든 로그인한 멤버가 게시물 콘텐츠에 문제가 있음을 나타내기 위한 수단입니다. 플래그가 지정되면 플래그 해제 아이콘이 나타나고, 이 아이콘을 통해 동일한 멤버가 콘텐츠의 플래그를 해제할 수 있습니다.
 
 게시물에 플래그를 지정할 때 구성원이 이유를 선택할 수 있도록 컨텍스트 내 조정을 구성할 수 있습니다. 사용자 지정 이유를 입력할 수 있는지 여부를 포함하여 선택 가능한 플래그 이유 목록을 구성할 수 있습니다. 플래그 이유는 UGC와 함께 저장되지만 이유는 특정 작업을 트리거하지 않습니다. 알림을 트리거하는 플래그 수만 선택할 수 있습니다. 플래그가 지정된 컨텐츠에 주석이 추가되어 중재자가 작업을 수행할 수 있습니다.
 
@@ -209,7 +209,7 @@ UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시물
 
 스팸 감지는 제출된 사용자가 생성한 원하지 않는 콘텐츠를 스팸으로 표시하여 필터링하는 자동 중재 기능입니다. 활성화되면 사전 구성된 스팸 단어 컬렉션을 기반으로 사용자가 생성한 콘텐츠가 스팸인지 여부를 식별합니다. 기본 스팸 단어는 다음 위치에 제공됩니다.
 
-`/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
+`/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`
 
 그러나 기본 스팸 단어를 사용자 정의하거나 확장하려면 다음을 통해 기본 스팸 단어의 구조에 따라 /apps 디렉토리에 단어 세트를 만듭니다. [오버레이](/help/communities/overlay-comments.md).
 
@@ -276,19 +276,19 @@ Watchwords의 기본 목록은 기본값과 비슷하게 또는 OSGi 서비스�
 
 * **긍정적 감시 단어**
 
-   기본값을 재정의하는 긍정적인 정서에 기여하는 단어를 쉼표로 구분한 목록입니다. 기본값은 빈 목록입니다.
+  기본값을 재정의하는 긍정적인 정서에 기여하는 단어를 쉼표로 구분한 목록입니다. 기본값은 빈 목록입니다.
 
 * **부정적 감시 단어**
 
-   기본값을 재정의하는 부정적인 정서에 기여하는 단어를 쉼표로 구분한 목록입니다. 기본값은 빈 목록입니다.
+  기본값을 재정의하는 부정적인 정서에 기여하는 단어를 쉼표로 구분한 목록입니다. 기본값은 빈 목록입니다.
 
 * **Watchwords 노드에 대한 명시적 경로**
 
-   기본값을 포함하는 노드의 저장소 위치 `positive` 및 `negative` 기본 감시 단어를 지정하는 속성입니다. 기본값은 입니다 `/libs/settings/community/watchwords/default`.
+  기본값을 포함하는 노드의 저장소 위치 `positive` 및 `negative` 기본 감시 단어를 지정하는 속성입니다. 기본값은 입니다 `/libs/settings/community/watchwords/default`.
 
 * **감정 규칙**
 
-   양수 및 음수 watchwords를 기반으로 감정 계산을 위한 규칙의 저장소 위치입니다. 기본값은 입니다 `/libs/cq/workflow/components/workflow/social/sentiments/rules` (그러나 더 이상 관련 워크플로우가 없습니다.)
+  양수 및 음수 watchwords를 기반으로 감정 계산을 위한 규칙의 저장소 위치입니다. 기본값은 입니다 `/libs/cq/workflow/components/workflow/social/sentiments/rules` (그러나 더 이상 관련 워크플로우가 없습니다.)
 
 다음은 기본 watchwords에 대한 사용자 지정 항목의 예입니다. `Explicit Path to Watchwords Node` 이(가) (으)로 설정됨 `/libs/settings/community/watchwords/default`.
 

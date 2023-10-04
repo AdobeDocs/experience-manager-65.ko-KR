@@ -1,18 +1,14 @@
 ---
 title: 대화형 PDF forms 렌더링
-seo-title: Rendering Interactive PDF Forms
 description: Forms 서비스를 사용하여 대화형 PDF forms을 클라이언트 장치(일반적으로 웹 브라우저)에 렌더링하여 사용자로부터 정보를 수집합니다. Forms 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 대화형 양식을 렌더링할 수 있습니다.
-seo-description: Use the Forms service to render interactive PDF forms to client devices, typically web browsers, to collect information from users. You can use Forms service to render interactive forms using the Java API and Web Service API.
-uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2487'
 ht-degree: 0%
@@ -100,7 +96,7 @@ Forms 서비스가 대화형 양식을 사용하여 사용자로부터 정보를
              }
 ```
 
-일반적으로 Java 서블릿 내에 Forms 서비스 클라이언트 API 코드를 배치하지 않습니다 `doGet` 또는 `doPost` 메서드를 사용합니다. 이 코드를 별도의 클래스 내에 배치하고, 내에서 클래스를 인스턴스화하는 것이 더 좋습니다. `doPost` 방법(또는 `doGet` 메서드)를 클릭하고 적절한 메서드를 호출하십시오. 그러나 코드 간결성을 위해 이 섹션의 코드 예는 최소한으로 유지되며 코드 예는 `doPost` 메서드를 사용합니다.
+일반적으로 Java 서블릿 내에 Forms 서비스 클라이언트 API 코드를 배치하지 않습니다. `doGet` 또는 `doPost` 메서드를 사용합니다. 이 코드를 별도의 클래스 내에 배치하고, 내에서 클래스를 인스턴스화하는 것이 더 좋습니다. `doPost` 방법(또는 `doGet` 메서드)를 클릭하고 적절한 메서드를 호출하십시오. 그러나 코드 간결성을 위해 이 섹션의 코드 예는 최소한으로 유지되며 코드 예는 `doPost` 메서드를 사용합니다.
 
 >[!NOTE]
 >
@@ -206,6 +202,7 @@ Forms API(Java)를 사용하여 대화형 PDF 양식 렌더링:
    * 호출 `java.util.HashMap` 개체 `put` 렌더링된 양식에 첨부할 각 파일의 메서드입니다. 다음 값을 이 메서드에 전달합니다.
 
       * 파일 이름 확장자를 포함하여 첨부 파일의 이름을 지정하는 문자열 값입니다.
+
    * A `com.adobe.idp.Document` 첨부 파일이 포함된 객체입니다.
 
    >[!NOTE]
@@ -226,7 +223,7 @@ Forms API(Java)를 사용하여 대화형 PDF 양식 렌더링:
 
 1. 클라이언트 웹 브라우저에 양식 데이터 스트림 작성
 
-   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 개체 &#39;s `getOutputContent` 메서드를 사용합니다.
+   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 의 오브젝트 `getOutputContent` 메서드를 사용합니다.
    * 의 콘텐츠 유형 가져오기 `com.adobe.idp.Document` 개체 `getContentType` 메서드를 사용합니다.
    * 설정 `javax.servlet.http.HttpServletResponse` 를 호출하여 객체의 콘텐츠 유형 `setContentType` 메서드와 의 콘텐츠 유형 전달 `com.adobe.idp.Document` 개체.
    * 만들기 `javax.servlet.ServletOutputStream` 개체를 사용하여 클라이언트 웹 브라우저에서 `javax.servlet.http.HttpServletResponse` 개체 `getOutputStream` 메서드를 사용합니다.
@@ -260,6 +257,7 @@ Forms API(웹 서비스)를 사용하여 대화형 PDF 양식 렌더링:
    * 호출 `java.util.HashMap` 개체 `put` 렌더링된 양식에 첨부할 각 파일의 메서드입니다. 다음 값을 이 메서드에 전달합니다.
 
       * 파일 이름 확장자를 포함하여 첨부 파일의 이름을 지정하는 문자열 값
+
    * A `BLOB` 첨부 파일이 포함된 개체
 
    >[!NOTE]

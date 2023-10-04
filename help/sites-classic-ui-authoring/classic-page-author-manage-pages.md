@@ -1,16 +1,14 @@
 ---
 title: 페이지 생성 및 구성
 description: 이 섹션에서는 해당 페이지에 컨텐츠를 만들 수 있도록 AEM으로 페이지를 만들고 관리하는 방법을 설명합니다.
-uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1906'
 ht-degree: 26%
 
 ---
@@ -323,7 +321,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지에 대한 내부 링�
 
 ### 페이지 잠금 {#locking-a-page}
 
-콘솔에서 또는 개별 페이지를 편집할 때 [페이지 잠금/잠금 해제](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)할 수 있습니다. 페이지가 잠겨 있는지 여부도 두 위치 모두에 표시됩니다.
+콘솔에서 또는 개별 페이지를 편집할 때 [페이지 잠금/잠금 해제](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)할 수 있습니다. 잠긴 페이지에 대한 정보도 두 위치에 표시됩니다.
 
 ### 새 폴더 만들기 {#creating-a-new-folder}
 

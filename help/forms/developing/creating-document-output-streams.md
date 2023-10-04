@@ -1,17 +1,13 @@
 ---
 title: 문서 출력 스트림 만들기
-seo-title: Creating Document Output Streams
 description: 출력 서비스를 사용하여 문서를 PDF(PDF/A 문서 포함), PostScript, PCL(프린터 제어 언어) 및 Zebra - ZPL, Intermec - IPL, Datamax - DPL 및 TecToshiba - TPCL 레이블 형식으로 변환합니다.
-seo-description: Use the Output service to convert documents as PDF (including PDF/A documents), PostScript, Printer Control Language (PCL), and Zebra - ZPL, Intermec - IPL, Datamax - DPL, and TecToshiba - TPCL label formats.
-uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '19016'
 ht-degree: 0%
@@ -216,7 +212,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
 1. 프로젝트 파일을 포함합니다.
 
-   adobe-output-client.jar과 같은 클라이언트 JAR 파일을 Java 프로젝트의 클래스 경로에 포함합니다.
+   Java 프로젝트의 클래스 경로에 adobe-output-client.jar과 같은 클라이언트 JAR 파일을 포함합니다.
 
 1. 출력 클라이언트 개체를 만듭니다.
 
@@ -481,7 +477,7 @@ Output API(Java)를 사용하여 PDF/A 문서를 만듭니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   adobe-output-client.jar과 같은 클라이언트 JAR 파일을 Java 프로젝트의 클래스 경로에 포함합니다.
+   Java 프로젝트의 클래스 경로에 adobe-output-client.jar과 같은 클라이언트 JAR 파일을 포함합니다.
 
 1. 출력 클라이언트 개체를 만듭니다.
 
@@ -772,6 +768,7 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
       * 필드에 AEM Forms 사용자 이름 할당 `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `OutputServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+
    * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
@@ -913,7 +910,7 @@ ResourceRepositoryClient
    호출 `OutputClient` 개체 `generatePDFOutput2` 메서드를 실행하고 다음 값을 전달합니다.
 
    * A `TransformationFormat` 열거형 값입니다. PDF 문서를 생성하려면 다음을 지정합니다 `TransformationFormat.PDF`.
-   * 이미지와 같은 추가 리소스가 있는 콘텐츠 루트를 지정하는 문자열 값입니다. (예: `repository:///Applications/FormsApplication/1.0/FormsFolder/`)
+   * 이미지와 같은 추가 리소스가 있는 콘텐츠 루트를 지정하는 문자열 값입니다. 예: `repository:///Applications/FormsApplication/1.0/FormsFolder/`
    * A `com.adobe.idp.Document` 양식 디자인을 나타내는 개체(에서 반환된 인스턴스 사용) `ResourceRepositoryClient` 개체 `readResourceContent` 메서드).
    * A `PDFOutputOptionsSpec` PDF 런타임 옵션이 포함된 객체입니다.
    * A `RenderOptionsSpec` 렌더링 런타임 옵션이 포함된 객체입니다.
@@ -1007,7 +1004,7 @@ ResourceRepositoryClient
 
 1. 프로젝트 파일을 포함합니다.
 
-   adobe-output-client.jar과 같은 클라이언트 JAR 파일을 Java 프로젝트의 클래스 경로에 포함합니다.
+   Java 프로젝트의 클래스 경로에 adobe-output-client.jar과 같은 클라이언트 JAR 파일을 포함합니다.
 
 1. 출력 및 어셈블러 클라이언트 개체를 만듭니다.
 
@@ -1028,7 +1025,6 @@ ResourceRepositoryClient
    * 호출 `AssemblerResult` 개체 `getDocuments` 메서드를 사용합니다. 이 메서드는 `java.util.Map` 개체.
    * 다음을 반복합니다. `java.util.Map` 결과를 찾을 때까지 오브젝트 `com.adobe.idp.Document` 개체.
    * 호출 `com.adobe.idp.Document` 개체 `copyToFile` 어셈블된 XDP 문서를 추출하는 방법입니다.
-
 
 1. 출력 서비스를 사용하여 PDF 문서를 생성합니다.
 
@@ -1096,6 +1092,7 @@ ResourceRepositoryClient
       * AEM Forms 사용자 이름을 `OutputServiceClient.ClientCredentials.UserName.UserName`필드.
       * 에 해당 암호 값을 할당합니다. `OutputServiceClient.ClientCredentials.UserName.Password`필드.
       * 상수 값 지정 `HttpClientCredentialType.Basic` (으)로 `BasicHttpBindingSecurity.Transport.ClientCredentialType`필드.
+
    * 할당 `BasicHttpSecurityMode.TransportCredentialOnly` 상수 값 `BasicHttpBindingSecurity.Security.Mode`필드.
 
    >[!NOTE]
@@ -1113,8 +1110,7 @@ ResourceRepositoryClient
    다음 `invokeDDX` 메서드가 다음을 반환합니다. `AssemblerResult` 작업의 결과와 발생한 예외를 포함하는 객체입니다. 새로 만든 XDP 문서를 가져오려면 다음 작업을 수행합니다.
 
    * 액세스 `AssemblerResult` 개체 `documents` 필드: `Map` 결과 PDF 문서가 포함된 객체입니다.
-   * 다음을 반복합니다. `Map` 어셈블된 양식 디자인을 검색하는 개체입니다. 해당 배열 멤버의 캐스트 `value` (으)로 `BLOB`. 전달 `BLOB` 인스턴스를 출력 서비스로 보냅니다.
-
+   * 다음을 반복합니다. `Map` 어셈블된 양식 디자인을 검색하는 개체입니다. 배열 멤버를 캐스팅합니다 `value` (으)로 `BLOB`. 전달 `BLOB` 인스턴스를 출력 서비스로 보냅니다.
 
 1. 출력 서비스를 사용하여 PDF 문서를 생성합니다.
 
@@ -1550,10 +1546,9 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
       * 다음 `PrintedOutputOptionsSpec` 파일로 인쇄하는 데 필요한 런타임 옵션이 포함된 객체입니다.
       * 다음 `com.adobe.idp.Document` 양식 디자인과 병합할 양식 데이터가 포함된 XML 데이터 소스를 나타내는 개체입니다.
 
-      이 메서드는 `OutputResult` 작업의 결과를 포함하는 개체입니다.
+     이 메서드는 `OutputResult` 작업의 결과를 포함하는 개체입니다.
 
-   * 만들기 `com.adobe.idp.Document` 를 호출하여 프린터로 보낼 개체 `OutputResult` 개체 &#39;s `getGeneratedDoc` 메서드를 사용합니다. 이 메서드는 `com.adobe.idp.Document` 개체.
-
+   * 만들기 `com.adobe.idp.Document` 를 호출하여 프린터로 보낼 개체 `OutputResult` 의 오브젝트 `getGeneratedDoc` 메서드를 사용합니다. 이 메서드는 `com.adobe.idp.Document` 개체.
 
 1. 네트워크 프린터로 인쇄 스트림 보내기
 
@@ -1622,8 +1617,8 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
       * A `BLOB` 로 채워지는 개체 `generatePrintedOutput` 메서드를 사용합니다. 다음 `generatePrintedOutput` 메서드는 문서를 설명하는 생성된 메타데이터로 이 개체를 채웁니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
       * A `BLOB` 로 채워지는 개체 `generatePrintedOutput` 메서드를 사용합니다. 다음 `generatePrintedOutput` 메서드는 이 개체를 결과 데이터로 채웁니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
       * An `OutputResult` 작업의 결과를 포함하는 개체입니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
-   * 만들기 `BLOB` 값을 가져와서 프린터로 보낼 개체 `OutputResult` 개체 &#39;s `generatedDoc` 메서드를 사용합니다. 이 메서드는 `BLOB` 개체에서 반환된 PostScript 데이터가 포함된 개체 `generatePrintedOutput` 메서드를 사용합니다.
 
+   * 만들기 `BLOB` 값을 가져와서 프린터로 보낼 개체 `OutputResult` 의 오브젝트 `generatedDoc` 메서드를 사용합니다. 이 메서드는 `BLOB` 개체에서 반환된 PostScript 데이터가 포함된 개체 `generatePrintedOutput` 메서드를 사용합니다.
 
 1. 네트워크 프린터로 인쇄 스트림을 보냅니다.
 
@@ -1811,7 +1806,7 @@ Output 서비스가 XML 데이터 원본을 기반으로 여러 파일을 성공
 
 1. 프로젝트 파일 포함&quot;
 
-   adobe-output-client.jar과 같은 클라이언트 JAR 파일을 Java 프로젝트의 클래스 경로에 포함합니다. .
+   Java 프로젝트의 클래스 경로에 adobe-output-client.jar과 같은 클라이언트 JAR 파일을 포함합니다. .
 
 1. 출력 클라이언트 개체 만들기
 
@@ -2027,7 +2022,7 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 
 1. 프로젝트 파일을 포함합니다.
 
-   adobe-output-client.jar과 같은 클라이언트 JAR 파일을 Java 프로젝트의 클래스 경로에 포함합니다.
+   Java 프로젝트의 클래스 경로에 adobe-output-client.jar과 같은 클라이언트 JAR 파일을 포함합니다.
 
 1. 출력 클라이언트 개체를 만듭니다.
 
@@ -2051,7 +2046,6 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 
    * 만들기 `java.util.List` 을 사용하여 개체 `java.util.ArrayList` 생성자입니다.
    * 각 `Rule` 작성한 개체를 호출합니다. `java.util.List` 개체 `add` 메서드 및 전달 `Rule` 개체.
-
 
 1. PDF 런타임 옵션을 설정합니다.
 
@@ -2141,7 +2135,6 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 
    * 만들기 `MyArrayOf_xsd_anyType` 규칙을 저장하는 개체입니다.
    * 각각 할당 `Rule` 의 요소에 대한 오브젝트 `MyArrayOf_xsd_anyType` 배열입니다. 호출 `MyArrayOf_xsd_anyType` 개체 `Add` 각각에 대한 방법 `Rule` 개체.
-
 
 1. PDF 런타임 옵션 설정
 
@@ -2270,7 +2263,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 1. 프로젝트 파일을 포함합니다.
 
-   adobe-output-client.jar과 같은 클라이언트 JAR 파일을 Java 프로젝트의 클래스 경로에 포함합니다.
+   Java 프로젝트의 클래스 경로에 adobe-output-client.jar과 같은 클라이언트 JAR 파일을 포함합니다.
 
 1. 출력 클라이언트 개체를 만듭니다.
 

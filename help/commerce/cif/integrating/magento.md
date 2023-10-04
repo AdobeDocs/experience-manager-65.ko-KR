@@ -1,18 +1,18 @@
 ---
-title: Commerce Integration Framework를 사용하여 AEM 및 Adobe Commerce 통합
-description: AEM과 Adobe Commerce은 CIF(Commerce Integration Framework)를 사용하여 원활하게 통합됩니다. CIF를 사용하면 AEM이 Adobe Commerce 인스턴스에 액세스하고 GraphQL을 통해 Adobe Commerce과 통신할 수 있습니다. 또한 AEM 작성자는 제품 및 카테고리 선택기 및 제품 콘솔 을 사용하여 Adobe Commerce에서 온디맨드로 가져온 제품 및 카테고리 데이터를 검색할 수 있습니다. 또한 CIF는 상거래 프로젝트를 가속화할 수 있는 기본 상점을 제공합니다.
+title: Commerce integration framework을 사용한 AEM 및 Adobe Commerce 통합
+description: AEM과 Adobe Commerce은 Commerce integration framework(CIF)를 사용하여 원활하게 통합됩니다. CIF을 사용하면 AEM이 Adobe Commerce 인스턴스에 액세스하고 GraphQL을 통해 Adobe Commerce과 통신할 수 있습니다. 또한 AEM 작성자는 제품 및 카테고리 선택기 및 제품 콘솔 을 사용하여 Adobe Commerce에서 온디맨드로 가져온 제품 및 카테고리 데이터를 검색할 수 있습니다. 또한 CIF은 상거래 프로젝트를 가속화할 수 있는 기본 상점 전면을 제공합니다.
 thumbnail: aem-magento-architecture.jpg
 exl-id: f843784c-5ff7-41d1-97c5-13facb8459b2
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 2%
 
 ---
 
-# Commerce Integration Framework를 사용하여 AEM 및 Adobe Commerce(Magento) 통합 {#aem-commerce-framework}
+# Commerce integration framework을 사용한 AEM 및 Adobe Commerce(Magento) 통합 {#aem-commerce-framework}
 
-Experience Manager과 Adobe Commerce은 CIF(Commerce Integration Framework)를 사용하여 원활하게 통합됩니다. CIF를 사용하면 AEM이 Adobe Commerce을 사용하여 상거래 인스턴스에 직접 액세스하고 통신할 수 있습니다. [GRAPHQL API](https://devdocs.magento.com/guides/v2.4/graphql/).
+Experience Manager과 Adobe Commerce은 Commerce integration framework(CIF)를 사용하여 원활하게 통합됩니다. CIF을 사용하면 AEM이 Adobe Commerce을 사용하여 상거래 인스턴스에 직접 액세스하고 통신할 수 있습니다. [GRAPHQL API](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 >[!NOTE]
 >
@@ -39,6 +39,6 @@ AEM CIF 핵심 구성 요소를 위한 Adobe Commerce과의 비즈니스 논리 
 
 >[!TIP]
 >
->다음 [AEM CIF 핵심 구성 요소 맞춤화](../customizing/customize-cif-components.md) 페이지에는 CIF 코어 구성 요소를 사용자 지정하는 방법에 대한 자세한 예제와 우수 사례가 있습니다.
+>다음 [AEM CIF 핵심 구성 요소 맞춤화](../customizing/customize-cif-components.md) 페이지에는 CIF 핵심 구성 요소를 사용자 지정하는 방법에 대한 자세한 예제와 우수 사례가 있습니다.
 
 프로젝트 내에서 AEM CIF 핵심 구성 요소 및 사용자 지정 프로젝트 구성 요소는 Sling 컨텍스트 인식 구성을 통해 AEM 페이지와 연결된 Adobe Commerce 저장소에 대해 구성된 클라이언트를 쉽게 검색할 수 있습니다.

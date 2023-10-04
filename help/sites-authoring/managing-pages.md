@@ -2,9 +2,9 @@
 title: AEM을 사용하여 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 관리하는 방법
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2523'
 ht-degree: 92%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->페이지를 보다 효율적으로 구성할 수 있도록 해 주고 웹 Sites 콘솔에서 사용할 수 있는 다양한 [키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)가 있습니다.
+>페이지를 보다 효율적으로 구성할 수 있도록 해 주고 웹 사이트 콘솔에서 사용할 수 있는 다양한 [키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)가 있습니다.
 
 ## 웹 사이트 구성 {#organizing-your-website}
 
@@ -426,7 +426,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 ### 페이지 잠금 {#locking-a-page}
 
-콘솔에서 또는 개별 페이지를 편집할 때 [페이지 잠금/잠금 해제](/help/sites-authoring/editing-content.md#locking-a-page)할 수 있습니다. 페이지가 잠겨 있는지 여부도 두 위치 모두에 표시됩니다.
+콘솔에서 또는 개별 페이지를 편집할 때 [페이지 잠금/잠금 해제](/help/sites-authoring/editing-content.md#locking-a-page)할 수 있습니다. 잠긴 페이지에 대한 정보도 두 위치에 표시됩니다.
 
 ![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 

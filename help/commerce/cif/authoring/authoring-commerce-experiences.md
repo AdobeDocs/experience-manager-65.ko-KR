@@ -2,9 +2,9 @@
 title: 상거래 경험 작성
 description: 상거래 경험 작업
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## 개요 {#overview}
 
-CIF 추가 기능은 상업용 기능으로 AEM 작성을 확장합니다. 이를 통해 작성자는 컨텍스트를 벗어나지 않고 제품 데이터 및 콘텐츠에 액세스하여 상거래 관련 경험을 효율적으로 구축하고 관리할 수 있습니다.
+CIF 추가 기능은 상거래 관련 기능으로 AEM 작성을 확장합니다. 이를 통해 작성자는 컨텍스트를 벗어나지 않고 제품 데이터 및 콘텐츠에 액세스하여 상거래 관련 경험을 효율적으로 구축하고 관리할 수 있습니다.
 
 ## 선택기 {#pickers}
 
@@ -21,7 +21,7 @@ CIF 추가 기능은 상업용 기능으로 AEM 작성을 확장합니다. 이�
 
 ### 제품 선택기 {#product-picker}
 
-이 선택기는 카탈로그 구조 또는 전체 텍스트 검색을 탐색하여 제품을 찾을 수 있도록 제공합니다. 변형이 있는 제품은 &#39;유형&#39; 열에 폴더 아이콘을 제공합니다. 폴더 아이콘을 클릭하면 선택한 제품의 변형이 열립니다.
+이 선택기는 카탈로그 구조를 통한 탐색이나 전체 텍스트 검색을 제공하여 제품을 찾을 수 있습니다. 변형이 있는 제품은 &#39;유형&#39; 열에 폴더 아이콘을 제공합니다. 폴더 아이콘을 클릭하면 선택한 제품의 변형이 열립니다.
 
 ![제품 선택기](/help/commerce/cif/assets/authoring/product-picker.png)
 
@@ -33,13 +33,13 @@ CIF 추가 기능은 상업용 기능으로 AEM 작성을 확장합니다. 이�
 
 ![선택 항목이 없는 티저 구성 요소](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
-이 구성 요소의 구성 대화 상자에는 제품이 필요합니다. CIF는 제품 식별자로 SKU를 사용합니다. 작성자가 직접 sku를 입력하거나 폴더 아이콘을 클릭하여 제품 선택기를 열 수 있습니다. 선택기를 선택하고 닫으면 구성 요소 대화 상자에 선택한 제품의 이름이 표시됩니다
+이 구성 요소의 구성 대화 상자에는 제품이 필요합니다. CIF은 SKU를 제품 식별자로 사용합니다. 작성자가 직접 sku를 입력하거나 폴더 아이콘을 클릭하여 제품 선택기를 열 수 있습니다. 선택기를 선택하고 닫으면 구성 요소 대화 상자에 선택한 제품의 이름이 표시됩니다
 
 ![선택 영역이 있는 티저 구성 요소](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 
 ### 범주 선택기 {#category-picker}
 
-이 선택기는 카탈로그 구조를 탐색하여 범주를 찾는 기능을 제공합니다.
+이 선택기는 카탈로그 구조를 탐색하여 범주를 찾는 기능을 제공할 수 있습니다.
 
 ![범주 선택기](/help/commerce/cif/assets/authoring/category-picker.png)
 
@@ -47,11 +47,11 @@ CIF 추가 기능은 상업용 기능으로 AEM 작성을 확장합니다. 이�
 
 ![선택 항목 없이 구성 요소 회전](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
-이 구성 요소의 구성 대화 상자에는 1 : n 카테고리가 필요합니다. CIF는 UID/ID를 범주 식별자로 사용합니다. 작성자가 직접 UID를 입력하거나 폴더 아이콘을 클릭하여 범주 선택기를 열 수 있습니다. 선택기를 선택하고 닫으면 구성 요소 대화 상자에 선택한 범주의 이름이 표시됩니다.
+이 구성 요소의 구성 대화 상자에는 1 : n 카테고리가 필요합니다. CIF은 UID / ID를 범주 식별자로 사용합니다. 작성자가 직접 UID를 입력하거나 폴더 아이콘을 클릭하여 범주 선택기를 열 수 있습니다. 선택기를 선택하고 닫으면 구성 요소 대화 상자에 선택한 범주의 이름이 표시됩니다.
 
 ![선택 영역이 있는 슬라이드 구성 요소](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 
-## Universal Editor  {#universal-editor}
+## Universal Editor {#universal-editor}
 
 범용 편집기는 실시간 제품 데이터 및 관련 제품 콘텐츠에 액세스할 수 있는 기능으로 확장되었습니다.
 
@@ -65,7 +65,7 @@ CIF 추가 기능은 상업용 기능으로 AEM 작성을 확장합니다. 이�
 
 ### RTE를 사용하여 텍스트 필드에 링크 추가 {#rte}
 
-CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입니다. 따라서 일반 AEM 페이지처럼 하이퍼링크를 포함할 수 없습니다. CIF는 새 작업 &quot;Commerce Links&quot;를 RTE(리치 텍스트 편집기)에 추가합니다. 이 작업은 일반적인 &quot;하이퍼링크&quot; 작업과 정확히 비슷하게 작동하지만 작성자가 선택기를 사용하여 제품이나 카테고리를 선택할 수 있습니다.
+CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입니다. 따라서 일반 AEM 페이지처럼 하이퍼링크를 포함할 수 없습니다. CIF은 새 작업 &quot;Commerce Links&quot;를 RTE(리치 텍스트 편집기)에 추가합니다. 이 작업은 일반적인 &quot;하이퍼링크&quot; 작업과 정확히 비슷하게 작동하지만 작성자가 선택기를 사용하여 제품이나 카테고리를 선택할 수 있습니다.
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 

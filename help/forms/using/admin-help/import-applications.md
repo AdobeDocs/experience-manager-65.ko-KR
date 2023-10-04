@@ -1,16 +1,12 @@
 ---
 title: 애플리케이션 가져오기 및 관리
-seo-title: Import and manage applications
 description: 응용 프로그램을 가져오고 관리하는 방법에 대해 알아봅니다.
-seo-description: Learn how to import and manage applications.
-uuid: 7fba6c4e-1a3e-4a4b-9201-acf2ff66a9df
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -59,7 +55,7 @@ Workbench에서 생성된 애플리케이션을 임포트하고 관리하려면 
 
 ## 애플리케이션 배포 {#deploy-an-application}
 
-임포트한 애플리케이션이나 Workbench에서 임포트한 Workbench 사용자를 배포할 수 있습니다.
+가져온 응용 프로그램이나 Workbench에서 가져온 Workbench 사용자를 배포할 수 있습니다.
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 애플리케이션 관리 를 클릭합니다.
 1. 배포할 응용 프로그램 옆에 있는 확인란을 선택하고 배포를 클릭합니다.
@@ -81,7 +77,7 @@ Workbench에서 생성된 애플리케이션을 임포트하고 관리하려면 
 1. 제거할 응용 프로그램 옆의 확인란을 선택하고 제거를 누릅니다.
 1. 표시되는 확인 대화 상자에서 확인 을 클릭합니다.
 
-## 애플리케이션의 런타임 구성 가져오기 {#import-an-application-s-runtime-configuration}
+## 응용 프로그램의 런타임 구성 가져오기 {#import-an-application-s-runtime-configuration}
 
 응용 프로그램 관리자가 응용 프로그램에 대한 런타임 구성을 내보낸 경우 이를 배포된 응용 프로그램으로 가져올 수 있습니다. 관리 콘솔을 사용하거나 스크립팅된 LCA 배포를 통해 가져올 수 있습니다.
 
@@ -91,7 +87,7 @@ Workbench에서 생성된 애플리케이션을 임포트하고 관리하려면 
 1. 찾아보기 를 클릭하고 런타임 구성이 포함된 XML 파일을 선택합니다.
 1. 가져오기를 클릭합니다.
 
-## 애플리케이션의 런타임 구성 내보내기 {#export-an-application-s-runtime-configuration}
+## 응용 프로그램의 런타임 구성 내보내기 {#export-an-application-s-runtime-configuration}
 
 배포된 응용 프로그램에 대한 런타임 구성 정보를 내보낼 수 있습니다.
 

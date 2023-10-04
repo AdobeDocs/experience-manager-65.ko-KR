@@ -1,18 +1,14 @@
 ---
 title: Adobe Campaign Classic 및 Adobe Campaign Standard 작업
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: AEM에서 이메일 콘텐츠를 만들고 Adobe Campaign 이메일에서 처리할 수 있습니다
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails
-uuid: 23195f0b-71c0-4554-8c8b-b0e7704d71d7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2753'
 ht-degree: 1%
 
 ---
@@ -23,7 +19,7 @@ AEM에서 이메일 콘텐츠를 만들고 Adobe Campaign 이메일에서 처리
 
 1. Adobe Campaign 관련 템플릿에서 AEM의 새 뉴스레터를 생성합니다.
 1. 선택 [Adobe Campaign 서비스](#selecting-the-adobe-campaign-cloud-service-and-template) 모든 기능에 액세스하기 위해 컨텐츠를 편집하기 전에
-1. 콘텐츠를 편집합니다.
+1. 콘텐츠 편집.
 1. 콘텐츠의 유효성을 검사합니다.
 
 그런 다음 콘텐츠를 Adobe Campaign의 게재와 동기화할 수 있습니다. 자세한 지침은 이 문서에 설명되어 있습니다.
@@ -149,7 +145,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
 콘텐츠를 편집할 때 다음을 삽입할 수 있습니다.
 
-* Adobe Campaign 컨텍스트 필드. 받는 사람의 데이터(예: 이름, 성 또는 대상 차원의 데이터)에 따라 조정될 텍스트 내에 삽입할 수 있는 필드입니다.
+* Adobe Campaign 컨텍스트 필드. 받는 사람의 데이터(예: 이름, 성 또는 대상 차원의 모든 데이터)에 따라 달라지는 텍스트 내에 삽입할 수 있는 필드입니다.
 * Adobe Campaign 개인화 블록. 브랜드 로고나 미러 페이지 링크와 같이 수신자의 데이터와 관련이 없는 사전 정의된 콘텐츠 블록입니다.
 
 다음을 참조하십시오 [Adobe Campaign 구성 요소](/help/sites-authoring/adobe-campaign-components.md) Campaign 구성 요소에 대한 전체 설명.

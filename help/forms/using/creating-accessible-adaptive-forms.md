@@ -10,16 +10,16 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2111'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 # 액세스 가능한 적응형 양식 만들기{#creating-accessible-adaptive-forms}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 소개 {#introduction}
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 전제 조건
 
-다음과 같은 접근성 도구가 필요합니다. **ANDI(액세스 가능한 이름 및 설명 관리자)** 및 **접근성 관련 문제를 해결하기 위해 개발된 적응형 양식 테마** 액세스 가능한 적응형 양식을 만들려면.
+다음과 같은 접근성 도구가 필요합니다. **ANDI(액세스 가능한 이름 및 설명 관리자)** 및 **접근성 관련 문제를 해결하기 위해 개발된 적응형 양식 테마** 액세스 가능한 적응형 양식을 만들려면
 
 ### 접근성 테스트 도구 다운로드 및 설치
 
@@ -103,7 +103,7 @@ Ultramarine-Accessible 테마를 기존 적응형 양식에 적용합니다. 테
 
 구성 요소의 레이블이나 제목은 양식 구성 요소가 나타내는 것을 식별합니다. 예를 들어 &quot;이름&quot;이라는 텍스트는 텍스트 필드에 이름을 입력해야 한다고 사용자에게 알려 줍니다. 화면 판독기에서 액세스할 수 있도록 레이블은 양식 구성 요소와 프로그래밍 방식으로 연결됩니다. 또는 추가 접근성 정보를 사용하여 양식 컨트롤을 구성할 수도 있습니다.
 
-화면 판독기에서 인식하는 레이블은 반드시 시각적 캡션과 같을 필요는 없습니다. 경우에 따라 컨트롤의 목적에 대해 보다 구체적으로 알고 싶을 수 있습니다. 양식의 각 필드 개체에 대해 액세스 가능성 옵션을 사용하여 화면 판독기에서 특정 양식 필드를 식별하기 위해 발표하는 내용을 지정할 수 있습니다.
+화면 판독기에서 인식하는 레이블은 반드시 시각적 캡션과 같을 필요는 없습니다. 경우에 따라 컨트롤의 목적에 대해 보다 구체적으로 설명해야 할 수도 있습니다. 양식의 각 필드 개체에 대해 액세스 가능성 옵션을 사용하여 화면 판독기에서 특정 양식 필드를 식별하기 위해 발표하는 내용을 지정할 수 있습니다.
 
 [액세스 가능성] 옵션을 사용하려면 다음 단계를 수행합니다.
 

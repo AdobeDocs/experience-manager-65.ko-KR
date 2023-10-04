@@ -1,20 +1,16 @@
 ---
 title: 적응형 양식 지역화를 위한 새 로케일 지원
-seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms을 사용하면 적응형 양식을 현지화하기 위한 새 로케일을 추가할 수 있습니다. 기본적으로 지원되는 로케일은 영어, 프랑스어, 독일어 및 일본어입니다.
-seo-description: AEM Forms lets you add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
-uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '813'
 ht-degree: 2%
 
 ---
@@ -43,7 +39,7 @@ ht-degree: 2%
 * 다음 매개 변수를 지정된 순서로 봅니다.
 
    * 요청 매개 변수 `afAcceptLang`
-사용자의 브라우저 로케일을 재정의하려면 `afAcceptLang` 로케일을 강제 적용하기 위한 매개 변수를 요청합니다. 예를 들어 다음 URL은 일본어 로케일로 양식을 강제로 렌더링합니다.
+사용자의 브라우저 로케일을 재정의하려면 `afAcceptLang` 로케일을 강제 적용하기 위한 매개 변수를 요청합니다. 예를 들어 다음 URL은 일본어 로케일로 양식을 렌더링하도록 강제되어 있습니다.
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * 을 사용하여 요청에 지정된 사용자에 대한 브라우저 로케일 집합입니다. `Accept-Language` 머리글입니다.

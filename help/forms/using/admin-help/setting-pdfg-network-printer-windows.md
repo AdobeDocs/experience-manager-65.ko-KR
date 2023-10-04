@@ -1,17 +1,13 @@
 ---
 title: PDFG 네트워크 프린터 설정(Windows에만 해당)
-seo-title: Setting up a PDFG Network Printer (Windows only)
 description: PDFG 네트워크 프린터를 설정하는 방법에 대해 알아봅니다( Windows에만 해당).
-seo-description: Learn how to set up a PDFG Network Printer ( Windows only )
-uuid: 13b8481e-5ef0-4a07-9602-7bc4d9e05dd4
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -22,14 +18,14 @@ ht-degree: 0%
 
 PDFG Network Printer를 사용하면 인쇄를 지원하는 모든 응용 프로그램에서 PDF 문서를 생성할 수 있습니다. 사용자가 PDFG 네트워크 프린터를 설치한 후 *PDF 생성기* 은 Windows Campaign 컨트롤 패널의 프린터 섹션에 표시됩니다. 같은 이름의 프린터가 이미 있는 경우 다른 이름을 입력하라는 메시지가 표시됩니다.
 
-모든 응용 프로그램에서 이 프린터로 인쇄하면 문서(PostScript 형식)가 PDF 생성기로 전송되어 PostScript 파일이 PDF으로 변환됩니다. PDF 생성기를 구성한 방법에 따라 PDF 문서를 사용자에게 이메일 메시지의 첨부 파일로 보내거나, PDF 문서를 지정된 AEM Forms 서비스 또는 프로세스에 전달하거나, 두 작업을 모두 수행합니다.
+모든 응용 프로그램에서 이 프린터로 인쇄하면 문서(PostScript 형식)가 PDF Generator으로 전송되어 PostScript 파일이 PDF으로 변환됩니다. PDF Generator 구성 방법에 따라 PDF 문서를 사용자에게 이메일 메시지의 첨부 파일로 보내거나, PDF 문서를 지정된 AEM Forms 서비스 또는 프로세스에 전달하거나, 두 작업을 모두 수행합니다.
 
 PDFG 네트워크 프린터를 설정하려면 다음 단계를 수행해야 합니다.
 
 1. 이메일 설정을 구성합니다. (참조: [PDFG 네트워크 프린터에 대한 이메일 설정 구성](setting-pdfg-network-printer-windows.md#configure-email-settings-for-pdfg-network-printer).)
 1. 관리 콘솔에서 PDFG 네트워크 프린터 설정을 구성합니다. (참조: [PDFG 네트워크 프린터 설정 구성](setting-pdfg-network-printer-windows.md#configure-the-pdfg-network-printer-settings).)
 1. AEM Forms 데이터베이스에 유효한 이메일 주소로 사용자가 구성되어 있는지 확인하고 각 사용자에게 PDFGUserPermission을 할당합니다. <!-- Fix broken link See Setting up and organizing users -->
-1. 사용자 컴퓨터에 32비트 JRE6가 설치되어 있는지 확인합니다.
+1. 사용자의 컴퓨터에 32비트 JRE6가 설치되어 있는지 확인합니다.
 1. 사용자의 컴퓨터에 프린터를 설치합니다. (참조: [사용자 컴퓨터에 PDFG 네트워크 프린터 설치](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer).)
 
 ## PDFG 네트워크 프린터에 대한 이메일 설정 구성 {#configure-email-settings-for-pdfg-network-printer}
@@ -39,7 +35,7 @@ PDFG 네트워크 프린터를 설정하려면 다음 단계를 수행해야 합
 
 ## PDFG 네트워크 프린터 설정 구성 {#configure-the-pdfg-network-printer-settings}
 
-1. 관리 콘솔에서 서비스 > PDF 생성기 > PDFG 네트워크 프린터 를 클릭합니다
+1. 관리 콘솔에서 서비스 > PDF Generator > PDFG 네트워크 프린터 를 클릭합니다.
 1. Adobe PDF 설정 및 보안 설정 목록에서 생성된 PDF에 적용할 옵션을 선택합니다. 이러한 설정에 대한 자세한 내용은 [Adobe PDF 설정 구성](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) 및 [보안 설정 구성](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings).
 1. 변환된 PDF을 다시 사용자에게 보내려면 변환된 PDF 파일을 다시 사용자에게 이메일로 보내기 옵션을 선택하고 다음 정보를 지정합니다.
 
@@ -61,7 +57,7 @@ PDFG 네트워크 프린터를 설정하려면 다음 단계를 수행해야 합
 
 PDFG 관리자 또는 PDFG 사용자 역할이 있는 사용자는 PDFG 네트워크 프린터를 설치할 수 있습니다. 컴퓨터에 32비트 JDK가 설치되어 있어야 합니다.
 
-1. (PDFG 관리자) 관리 콘솔에서 서비스 > PDF 생성기 > PDFG 네트워크 프린터 를 클릭합니다.
+1. (PDFG 관리자) 관리 콘솔에서 서비스 > PDF Generator > PDFG 네트워크 프린터 를 클릭합니다.
 
    (PDFG 사용자) 이동 `http(s)://[host]:'port'/pdfgui` 그런 다음 PDFG 네트워크 프린터 설치(PDFG Network Printer Installation) 아래의 링크를 클릭합니다.
 

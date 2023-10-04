@@ -1,25 +1,22 @@
 ---
 title: HTML 5 양식 소개
 seo-title: Introduction to HTML5 forms
-description: HTML 5 forms는 Adobe Experience Manager 6.0(AEM 6.0) 소프트웨어의 새로운 기능으로, HTML 5 형식의 XFA 양식 템플릿 렌더링을 제공합니다.
-seo-description: HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AEM 6.0) software that offers rendering of XFA form templates in HTML5 format.
-uuid: 63a2f000-c4c5-40e8-ab3f-c7c44c79ec09
+description: HTML5 forms는 Adobe Experience Manager 6.0(AEM 6.0) 소프트웨어의 새로운 기능으로, XFA 양식 템플릿을 HTML5 형식으로 렌더링할 수 있습니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
 # HTML 5 양식 소개{#introduction-to-html-forms}
 
-HTML 5 forms는 Adobe Experience Manager 6.0(AEM 6.0) 소프트웨어의 새로운 기능으로, HTML 5 형식의 XFA 양식 템플릿 렌더링을 제공합니다. 이 기능을 사용하면 XFA 기반 PDF이 지원되지 않는 모바일 장치 및 데스크탑 브라우저에서 양식을 렌더링할 수 있습니다. HTML5 양식은 XFA 양식 템플릿의 기존 기능을 지원할 뿐만 아니라 모바일 장치에 대한 스크리블 서명과 같은 새로운 기능을 추가합니다.
+HTML5 forms는 Adobe Experience Manager 6.0(AEM 6.0) 소프트웨어의 새로운 기능으로, XFA 양식 템플릿을 HTML5 형식으로 렌더링할 수 있습니다. 이 기능을 사용하면 XFA 기반 PDF이 지원되지 않는 모바일 장치 및 데스크탑 브라우저에서 양식을 렌더링할 수 있습니다. HTML5 양식은 XFA 양식 템플릿의 기존 기능을 지원할 뿐만 아니라 모바일 장치에 대한 스크리블 서명과 같은 새로운 기능을 추가합니다.
 
 HTML5 forms는 표준 HTML5 구문을 기반으로 문서를 생성합니다. HTML5를 지원하는 모든 최신 브라우저에서 HTML5 양식을 볼 수 있습니다. 브라우저에 대한 추가 브라우저 플러그인을 설치할 필요가 없습니다. 지원되는 브라우저에 대한 자세한 내용은 [지원되는 클라이언트 플랫폼](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 

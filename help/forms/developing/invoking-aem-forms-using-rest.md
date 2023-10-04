@@ -1,17 +1,13 @@
 ---
 title: REST 요청을 사용하여 AEM Forms 호출
-seo-title: Invoking AEM Forms using REST Requests
 description: REST 요청을 사용하여 Workbench에서 생성된 프로세스를 호출합니다.
-seo-description: Invoke processes created in Workbench using REST requests.
-uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2506'
 ht-degree: 0%
@@ -49,45 +45,45 @@ REST 요청을 사용하여 AEM Forms 서비스를 호출할 때 다음 데이�
 * 다음과 같은 XML 데이터 유형 `org.w3c.Document` 및 `org.w3c.Element`
 * 다음과 같은 컬렉션 객체 `java.util.List` 및 `java.util.Map`
 
-   이러한 데이터 유형은 일반적으로 Workbench에서 생성된 프로세스에 대한 입력 값으로 수락됩니다.
+  이러한 데이터 유형은 일반적으로 Workbench에서 생성된 프로세스에 대한 입력 값으로 수락됩니다.
 
-   HTTP POST 메서드를 사용하여 Forms 서비스를 호출하면 인수가 HTTP 요청 본문 내에 전달됩니다. AEM Forms 서비스의 서명에 문자열 입력 매개 변수가 있는 경우 요청 본문에 입력 매개 변수의 텍스트 값이 포함될 수 있습니다. 서비스의 서명이 여러 문자열 매개 변수를 정의하는 경우 요청은 HTTP의 `application/x-www-form-urlencoded` 양식의 필드 이름으로 사용되는 매개 변수 이름이 포함된 표기법
+  HTTP POST 메서드를 사용하여 Forms 서비스를 호출하면 인수가 HTTP 요청 본문 내에 전달됩니다. AEM Forms 서비스의 서명에 문자열 입력 매개 변수가 있는 경우 요청 본문에 입력 매개 변수의 텍스트 값이 포함될 수 있습니다. 서비스 서명이 여러 문자열 매개 변수를 정의하는 경우 요청은 HTTP의 `application/x-www-form-urlencoded` 형식의 필드 이름으로 사용되는 매개 변수 이름이 있는 표기법.
 
-   Forms 서비스가 문자열 매개 변수를 반환하는 경우 결과는 출력 매개 변수의 텍스트 표현입니다. 서비스가 여러 문자열 매개 변수를 반환하는 경우 결과는 출력 매개 변수를 다음 형식으로 인코딩하는 XML 문서입니다.
-   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
+  Forms 서비스가 문자열 매개 변수를 반환하는 경우 결과는 출력 매개 변수의 텍스트 표현입니다. 서비스가 여러 문자열 매개 변수를 반환하는 경우 결과는 출력 매개 변수를 다음 형식으로 인코딩하는 XML 문서입니다.
+  ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
 
-   >[!NOTE]
-   >
-   >다음 `output-paramater1` 값은 출력 매개 변수 이름을 나타냅니다.
+  >[!NOTE]
+  >
+  >다음 `output-paramater1` 값은 출력 매개 변수 이름을 나타냅니다.
 
-   Forms 서비스에 `com.adobe.idp.Document` 매개 변수에서는 HTTP POST 메서드를 사용해야만 서비스를 호출할 수 있습니다. 서비스에 필요한 경우 `com.adobe.idp.Document` 매개 변수에서 HTTP 요청 본문은 입력 문서 객체의 콘텐츠가 됩니다.
+  Forms 서비스에 `com.adobe.idp.Document` 매개 변수에서는 HTTP POST 메서드를 사용해야만 서비스를 호출할 수 있습니다. 서비스에 필요한 경우 `com.adobe.idp.Document` 매개 변수에서 HTTP 요청 본문은 입력 문서 객체의 콘텐츠가 됩니다.
 
-   AEM Forms 서비스에 여러 입력 매개 변수가 필요한 경우 HTTP 요청 본문은 RFC 1867에서 정의한 다중 부분 MIME 메시지여야 합니다. (RFC 1867은 웹 브라우저에서 웹 사이트에 파일을 업로드하는 데 사용하는 표준입니다.) 각 입력 매개 변수는 multipart 메시지의 개별 부분으로 전송되어 로 인코딩되어야 합니다. `multipart/form-data` 포맷. 각 부품의 이름은 매개변수의 이름과 일치해야 합니다.
+  AEM Forms 서비스에 여러 입력 매개 변수가 필요한 경우 HTTP 요청 본문은 RFC 1867에서 정의한 다중 부분 MIME 메시지여야 합니다. (RFC 1867은 웹 브라우저에서 웹 사이트에 파일을 업로드하는 데 사용하는 표준입니다.) 각 입력 매개 변수는 multipart 메시지의 개별 부분으로 전송되어 로 인코딩되어야 합니다. `multipart/form-data` 포맷. 각 부품의 이름은 매개변수의 이름과 일치해야 합니다.
 
-   목록 및 맵은 Workbench에서 생성된 AEM Forms 프로세스에 대한 입력 값으로도 사용됩니다. 따라서 REST 요청을 사용할 때 이러한 데이터 유형을 사용할 수 있습니다. Java 배열은 AEM Forms 프로세스에 대한 입력 값으로 사용되지 않으므로 지원되지 않습니다.
+  목록 및 맵은 Workbench에서 생성된 AEM Forms 프로세스에 대한 입력 값으로도 사용됩니다. 따라서 REST 요청을 사용할 때 이러한 데이터 유형을 사용할 수 있습니다. Java 배열은 AEM Forms 프로세스에 대한 입력 값으로 사용되지 않으므로 지원되지 않습니다.
 
-   입력 매개 변수가 목록인 경우 REST 클라이언트는 매개 변수를 여러 번 지정하여 목록을 보낼 수 있습니다(목록의 각 항목에 대해 한 번). 예를 들어, A가 문서 목록이면 입력은 A라는 이름의 여러 부분으로 구성된 다중 부분 메시지여야 합니다. 이 경우 A라는 이름의 각 부품은 입력 목록의 항목이 됩니다. B가 문자열 목록이면 입력은 `application/x-www-form-urlencoded` B라는 여러 필드로 구성된 메시지입니다. 이 경우 이름이 B인 각 양식 필드는 입력 목록의 항목이 됩니다.
+  입력 매개 변수가 목록인 경우 REST 클라이언트는 매개 변수를 여러 번 지정하여 목록을 보낼 수 있습니다(목록의 각 항목에 대해 한 번). 예를 들어, A가 문서 목록이면 입력은 A라는 이름의 여러 부분으로 구성된 다중 부분 메시지여야 합니다. 이 경우 A라는 이름의 각 부품은 입력 목록의 항목이 됩니다. B가 문자열 목록이면 입력은 `application/x-www-form-urlencoded` B라는 여러 필드로 구성된 메시지입니다. 이 경우 이름이 B인 각 양식 필드는 입력 목록의 항목이 됩니다.
 
-   입력 매개변수가 맵이고 서비스 전용 입력 매개변수인 경우 입력 메시지의 모든 부분/필드는 맵에서 키/값 레코드가 됩니다. 각 파트/필드의 이름이 레코드의 키가 됩니다. 각 부분/필드의 내용이 레코드의 값이 됩니다.
+  입력 매개변수가 맵이고 서비스 전용 입력 매개변수인 경우 입력 메시지의 모든 부분/필드는 맵에서 키/값 레코드가 됩니다. 각 부품/필드의 이름이 레코드의 키가 됩니다. 각 부분/필드의 내용이 레코드의 값이 됩니다.
 
-   입력 맵이 서비스 전용 입력 매개 변수가 아닌 경우 맵에 속하는 각 키/값 레코드는 매개 변수 이름과 레코드의 키의 연결로 명명된 매개 변수를 사용하여 보낼 수 있습니다. 예를 들어 입력 맵은 `attributes` 다음 키/값 쌍 목록으로 보낼 수 있습니다.
+  입력 맵이 서비스 전용 입력 매개변수가 아닌 경우 맵에 속하는 각 키/값 레코드는 매개변수 이름과 레코드 키의 연결로 명명된 매개변수를 사용하여 전송될 수 있습니다. 예를 들어 입력 맵은 `attributes` 다음 키/값 쌍 목록으로 보낼 수 있습니다.
 
-   `attributesColor=red`
+  `attributesColor=red`
 
-   `attributesShape=box`
+  `attributesShape=box`
 
-   `attributesWidth=5`
+  `attributesWidth=5`
 
-   이는 다음 세 가지 레코드의 맵으로 변환됩니다. `Color=red`, `Shape=box`, 및 `Width=5`.
+  이는 다음 세 가지 레코드의 맵으로 변환됩니다. `Color=red`, `Shape=box`, 및 `Width=5`.
 
-   목록 및 맵 유형의 출력 매개 변수는 결과 XML 메시지의 일부가 됩니다. 출력 목록은 목록의 각 항목에 대해 하나의 요소가 있는 일련의 XML 요소로 XML에 표시됩니다. 모든 요소에는 출력 목록 매개 변수와 동일한 이름이 지정됩니다. 각 XML 요소의 값은 다음 두 가지 중 하나입니다.
+  목록 및 맵 유형의 출력 매개 변수는 결과 XML 메시지의 일부가 됩니다. 출력 목록은 목록의 각 항목에 대해 하나의 요소가 있는 일련의 XML 요소로 XML에 표시됩니다. 모든 요소에는 출력 목록 매개 변수와 동일한 이름이 지정됩니다. 각 XML 요소의 값은 다음 두 가지 중 하나입니다.
 
 * 목록에 있는 항목의 텍스트 표현(목록이 문자열 유형으로 구성된 경우)
 * 문서 콘텐츠를 가리키는 URL(목록이 다음으로 구성된 경우) `com.adobe.idp.Document` 개체)
 
-   다음 예제는 이름이 인 단일 출력 매개 변수가 있는 서비스에서 반환되는 XML 메시지입니다 *목록*: 정수 목록입니다.
-   ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`출력 맵 매개 변수는 맵의 각 레코드에 대해 하나의 요소가 있는 일련의 XML 요소로 결과 XML 메시지에 표현됩니다. 모든 요소에는 맵 레코드의 키와 동일한 이름이 지정됩니다. 각 요소의 값은 맵 레코드 값(맵이 문자열 값이 있는 레코드로 구성된 경우)의 텍스트 표현이거나 문서 컨텐츠를 가리키는 URL(맵이 `com.adobe.idp.Document` value). 다음은 라는 단일 출력 매개 변수가 있는 서비스에서 반환되는 XML 메시지의 예입니다 `map`. 이 매개 변수 값은 문자와 연결된 레코드로 구성된 맵입니다 `com.adobe.idp.Document` 개체.
-   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
+  다음 예제는 이름이 인 단일 출력 매개 변수가 있는 서비스에서 반환되는 XML 메시지입니다 *목록*: 정수 목록입니다.
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`출력 맵 매개 변수는 맵의 각 레코드에 대해 하나의 요소가 있는 일련의 XML 요소로 결과 XML 메시지에 표현됩니다. 모든 요소에는 맵 레코드의 키와 동일한 이름이 지정됩니다. 각 요소의 값은 맵 레코드 값의 텍스트 표현이거나(맵이 문자열 값이 있는 레코드로 구성된 경우) 문서 내용을 가리키는 URL입니다(맵이 `com.adobe.idp.Document` value). 다음은 라는 단일 출력 매개 변수가 있는 서비스에서 반환되는 XML 메시지의 예입니다 `map`. 이 매개 변수 값은 문자와 연결된 레코드로 구성된 맵입니다 `com.adobe.idp.Document` 개체.
+  ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## 비동기 호출 {#asynchronous-invocations}
 
@@ -107,7 +103,7 @@ AEM Forms 서비스는 다음을 대체하여 비동기적으로 호출할 수 �
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
-이 URL은 작업 관리자의 사양에 따라 작업 상태를 인코딩하는 정수 값(&quot;텍스트/일반&quot; 형식)을 반환합니다(예: 2는 실행 중, 3은 완료 중, 4는 실패 중).
+이 URL은 작업 관리자의 사양에 따라 작업 상태를 인코딩하는 정수 값(&quot;text/plain&quot; 형식)을 반환합니다(예: 2는 실행 중, 3은 완료 중, 4는 실패 중).
 
 작업이 완료되면 URL은 서비스가 동기적으로 호출된 것과 동일한 결과를 반환합니다.
 
@@ -183,7 +179,7 @@ REST 호출에 보안 전송을 제공하기 위해 AEM Forms 관리자는 AEM F
 * REST를 사용하여 MyApplication/EncryptDocument 프로세스 호출
 * Acrobat에서 MyApplication/EncryptDocument 프로세스 호출
 
-   각 예제는 다양한 데이터 유형을 AEM Forms 프로세스에 전달하는 방법을 보여 줍니다
+  각 예제는 다양한 데이터 유형을 AEM Forms 프로세스에 전달하는 방법을 보여 줍니다
 
 **프로세스에 부울 값 전달**
 

@@ -1,14 +1,12 @@
 ---
 title: AEM 6.5와 Adobe Campaign Classic 통합
 description: AEM 6.5를 Adobe Campaign Classic과 통합하는 방법 알아보기
-uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 66%

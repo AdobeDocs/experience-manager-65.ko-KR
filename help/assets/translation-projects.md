@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1873'
 ht-degree: 16%
 
 ---
@@ -43,7 +43,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
    ![언어 복사](assets/translation-language-copies.png)
 
-1. 클릭 **[!UICONTROL 만들기 및 번역]**. 다음에서 **[!UICONTROL Target 언어]** 목록에서 폴더 구조를 만들 언어를 선택합니다.
+1. 클릭 **[!UICONTROL 만들기 및 번역]**. 다음에서 **[!UICONTROL 타겟 언어]** 목록에서 폴더 구조를 만들 언어를 선택합니다.
 
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Create structure only]**.
 
@@ -66,7 +66,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 1. 클릭 **[!UICONTROL 만들기 및 번역]** 맨 아래에
 
-1. 다음에서 **[!UICONTROL Target 언어]** 폴더 구조를 만들 언어를 선택합니다.
+1. 다음에서 **[!UICONTROL 타겟 언어]** 폴더 구조를 만들 언어를 선택합니다.
 
 1. 다음에서 **[!UICONTROL 프로젝트]** 목록, 선택 **[!UICONTROL 새 번역 프로젝트 만들기]**.
 
@@ -117,7 +117,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 1. 클릭 **[!UICONTROL 언어 복사]** 아래에 **[!UICONTROL 사본]**. A list of available translation copies is displayed.
 1. 클릭 **[!UICONTROL 만들기 및 번역]** 맨 아래에
 
-1. 다음에서 **[!UICONTROL Target 언어]** 폴더 구조를 만들 언어를 선택합니다.
+1. 다음에서 **[!UICONTROL 타겟 언어]** 폴더 구조를 만들 언어를 선택합니다.
 
 1. From the **[!UICONTROL Project]** list, select **[!UICONTROL Add to existing translation project]** to run the translation workflow on the folder.
 

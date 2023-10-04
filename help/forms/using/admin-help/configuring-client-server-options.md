@@ -1,19 +1,15 @@
 ---
 title: 클라이언트 및 서버 옵션 구성
-seo-title: Configuring client and server optionsn
 description: 서버 구성 설정, 문서 보안 역할 및 이벤트 감사와 같은 다양한 클라이언트 및 서버 옵션을 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
-uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '10242'
+source-wordcount: '10243'
 ht-degree: 0%
 
 ---
@@ -212,7 +208,7 @@ Document Security는 정책으로 보호된 문서, 정책, 관리자 및 서버
    * 범주의 모든 이벤트를 감사하려면 모두를 선택합니다.
    * 일부 이벤트만 감사하려면 [모두]를 선택 취소한 다음 감사할 이벤트 옆에 있는 확인란을 선택합니다.
 
-      (참조: [이벤트 감사 옵션](configuring-client-server-options.md#event-auditing-options).)
+     (참조: [이벤트 감사 옵션](configuring-client-server-options.md#event-auditing-options).)
 
 1. 확인을 클릭합니다.
 
@@ -493,7 +489,7 @@ Document Security 구성 파일을 수정하여 워터마크 요소 수 및 PDF 
    * 포함할 워터마크 유형을 선택합니다. 사용자 지정 텍스트를 선택하는 경우 인접한 상자에 워터마크에 대해 표시할 텍스트를 입력합니다. 워터마크로 표시되는 텍스트 길이를 기억하십시오.
    * 워터마크 텍스트의 텍스트 내용에 대해 글꼴 이름, 글꼴 크기, 전경색 및 배경색과 같은 텍스트 서식 속성을 지정합니다. 전경색과 배경색을 16진수 값으로 지정합니다.
 
-      ***참고&#x200B;**: 페이지에 맞추기(Fit To Page) 옵션을 선택하면 글꼴 크기 속성을 편집할 수 없습니다.*
+     ***참고&#x200B;**: 페이지에 맞추기(Fit To Page) 옵션을 선택하면 글꼴 크기 속성을 편집할 수 없습니다.*
 
 1. 리치 워터마크 옵션을 위해 PDF을 선택한 경우 **찾아보기** 워터마크 선택 PDF 옆에 있는 워터마크로 사용할 PDF 문서를 선택합니다.
 
@@ -661,7 +657,7 @@ Document Security는 새로 초대된 사용자 계정을 만들거나 기존 �
 
 **시간 제한:** 사용자가 계정을 활성화하지 않은 경우 활성화 초대가 만료된 후 일 수입니다. 기본값은 30일입니다.
 
-**메시지:** 메시지 본문에 나타나는 텍스트로서 수신자의 사용자 계정을 활성화해야 함을 나타내는 메시지가 있습니다. 새 암호를 얻기 위해 관리자에게 문의하는 방법과 같은 정보도 포함할 수 있습니다.
+**메시지:** 메시지 본문에 나타나는 텍스트로서, 수신자의 사용자 계정을 활성화해야 함을 나타내는 메시지입니다. 새 암호를 얻기 위해 관리자에게 문의하는 방법과 같은 정보도 포함할 수 있습니다.
 
 ### 암호 재설정 이메일 구성 {#configure-a-password-reset-email}
 
@@ -673,7 +669,7 @@ Document Security는 새로 초대된 사용자 계정을 만들거나 기존 �
 
 **제목:** 이메일 재설정 메시지의 기본 제목.
 
-**메시지:** 메시지 본문에 나타나는 텍스트로서 수신자의 외부 사용자 암호가 재설정되었음을 나타내는 메시지가 표시됩니다.
+**메시지:** 메시지의 본문에 나타나는 텍스트로서 수신자의 외부 사용자 암호가 재설정되었음을 나타내는 메시지가 표시됩니다.
 
 ## 사용자 및 그룹이 정책을 만들 수 있도록 설정 {#enable-users-and-groups-to-create-policies}
 
@@ -751,7 +747,7 @@ Document Security 데이터베이스에 저장된 구성 정보를 가져오고 
 
 ### 오프라인 동기화를 위한 시간 제한 기간 지정 {#specify-a-timeout-period-for-offline-synchronization}
 
-Document Security를 사용하면 사용자가 Document Security 서버에 연결되어 있지 않을 때 보호된 문서를 열고 사용할 수 있습니다. 오프라인 사용을 위해 문서를 유지하려면 사용자의 클라이언트 애플리케이션이 서버와 정기적으로 동기화되어야 합니다. 사용자가 보호된 문서를 처음 열면 컴퓨터에서 정기적인 클라이언트 동기화를 수행할 수 있는 권한이 있는지 묻는 메시지가 표시됩니다.
+Document Security를 사용하면 사용자가 Document Security 서버에 연결되어 있지 않을 때 보호된 문서를 열고 사용할 수 있습니다. 오프라인 사용을 위해 문서를 유효하게 유지하려면 사용자의 클라이언트 애플리케이션이 서버와 정기적으로 동기화되어야 합니다. 사용자가 보호된 문서를 처음 열면 컴퓨터에서 정기적인 클라이언트 동기화를 수행할 수 있는 권한이 있는지 묻는 메시지가 표시됩니다.
 
 기본적으로 사용자가 Document Security 서버에 연결되면 4시간마다 그리고 필요에 따라 자동으로 동기화됩니다. 사용자가 오프라인일 때 문서에 대한 오프라인 기간이 만료되면 사용자는 서버에 다시 연결하여 클라이언트 응용 프로그램이 서버와 동기화할 수 있도록 해야 합니다.
 
@@ -860,7 +856,7 @@ Microsoft Office용 Acrobat Reader DC 확장 기능은 Microsoft Office 제품 M
    * Sun Solaris
    * HP-UX
 
-   `SDKVersions` 클라이언트 애플리케이션에서 사용하는 document security C++ Client API의 버전을 지정합니다. (예: `"8.2"`)
+   `SDKVersions` 클라이언트 애플리케이션에서 사용하는 document security C++ Client API의 버전을 지정합니다. 예: `"8.2"`
 
    `APPFamilies` 는 클라이언트 API로 정의됩니다.
 
@@ -968,7 +964,7 @@ Microsoft Office용 Acrobat Reader DC 확장 기능은 Microsoft Office 제품 M
 대부분의 문서 보안 사용자는 다음과 같은 외부 링크에 액세스할 수 없습니다. **www.adobe.com** 올바른 관리 사용자 인터페이스를 사용하는 동안:
 
 * `https://[host]:'port'/adminui`
-* `https://[host]:'port'/edc`.
+* `https://[host]:'port'/edc`
 
 다음과 같이 config.xml을 변경하면 Right Management 사용자 인터페이스의 모든 외부 링크가 비활성화됩니다.
 
