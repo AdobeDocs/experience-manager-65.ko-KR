@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: d76fce58973bd011b53a5da41578b57a8e10912e
+source-git-commit: c7e30587a37b8bf20932b43549ab38c668bd75af
 workflow-type: tm+mt
 source-wordcount: '3694'
 ht-degree: 1%
@@ -707,8 +707,7 @@ Adobe은 JEE 릴리스의 AEM Forms에서 지원하는 타사 참조 플랫폼�
 - Microsoft® Windows Server 2019(64비트)
 - Microsoft® Active Directory 2016
 
-다음 플랫폼은 2022년 6월 2일에 AEM Forms 6.5.17.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
-
+다음 플랫폼은 2022년 6월 2일에 AEM Forms 6.5.13.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
 - Microsoft® SharePoint 2016
 
 다음 플랫폼은 2022년 3월 3일에 AEM Forms 6.5.12.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
