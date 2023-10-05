@@ -6,10 +6,10 @@ role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1746'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 ## 개요 {#overview}
@@ -70,7 +70,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 * `parent`: 상위 폴더에 대한 링크입니다.
 * `thumbnail`: (선택 사항) 폴더 썸네일 이미지에 대한 링크입니다.
 
-### Assets {#assets}
+### 자산 {#assets}
 
 Experience Manager 시 자산에는 다음 요소가 포함됩니다.
 

@@ -9,21 +9,21 @@ topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 21%
+ht-degree: 28%
 
 ---
 
 # 론치 편집{#editing-launches}
 
-## 론치 페이지 편집 {#editing-launch-pages}
+## 론치 편집 페이지 {#editing-launch-pages}
 
 페이지(또는 페이지 세트)에 대한 론치가 만들어지면 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
 
 1. 편집할 페이지를 엽니다.
-1. 사이드 킥에서 **버전 관리** 탭을 클릭한 다음 를 확장합니다. **론치** 그룹입니다. 현재 편집 중인 론치 제목은 굵은 글꼴을 사용합니다.
+1. Sidekick에서 **버전 관리** 탭을 클릭한 다음 를 확장합니다. **론치** 그룹입니다. 현재 편집 중인 론치 제목은 굵은 글꼴을 사용합니다.
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
@@ -34,7 +34,7 @@ ht-degree: 21%
    >
    >다음을 사용할 수 있습니다. **페이지** 다음과 같은 작업을 수행하는 사이드 킥 탭 **하위 페이지 만들기**, 기타.
 
-## Launch 구성 편집 {#editing-a-launch-configuration}
+## 론치 구성 편집 {#editing-a-launch-configuration}
 
 론치를 만든 후 론치 이름과 론치 날짜를 변경할 수 있습니다. 론치와 연결할 이미지를 지정할 수도 있습니다.
 
@@ -48,16 +48,15 @@ ht-degree: 21%
       * **라이브 날짜**: 론치 날짜와 동일합니다
       * **프로덕션 준비**
 
-      다음을 참조하십시오 [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events) 해당 필드의 목적 및 상호 작용에 대한 정보.
+     다음을 참조하십시오 [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events) 해당 필드의 목적 및 상호 작용에 대한 정보.
 
    * 다음에서 **이미지** 탭에서 이미지 파일을 업로드할 수 있습니다.
 
-
 1. **저장**&#x200B;을 클릭합니다.
 
-## 페이지의 론치 상태 살펴보기 {#discovering-the-launch-status-of-a-page}
+## 페이지의 론치 상태 찾기 {#discovering-the-launch-status-of-a-page}
 
-페이지 론치를 편집하는 경우 론치에 대한 정보가 페이지 하단에 나타납니다 **버전 관리** 사이드 킥 탭:
+페이지 론치를 편집하는 경우 론치에 대한 정보가 페이지 하단에 나타납니다 **버전 관리** Sidekick 탭:
 
 * 론치 이름입니다.
 * 마지막 변경 이후 시간입니다.

@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 5%
@@ -39,7 +39,6 @@ ht-degree: 5%
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [번역 프로젝트](/help/sites-administering/tc-manage.md)
 >
-
 
 ## 워크플로우 모델 {#workflow-models}
 
@@ -101,15 +100,16 @@ ht-degree: 5%
 
    * **페이로드**
 
-      페이지, 노드, 에셋, 패키지 및 기타 리소스일 수 있습니다.
+     페이지, 노드, 에셋, 패키지 등의 리소스일 수 있습니다.
 
    * **제목**
 
-      이 인스턴스를 식별하는 데 도움이 되는 선택적 제목입니다.
+     이 인스턴스를 식별하는 데 도움이 되는 선택적 제목입니다.
 
-   * **설명**
+   * **댓글**
 
-      이 인스턴스의 세부 정보를 표시하는 데 도움이 되는 선택적 주석입니다.
+     이 인스턴스의 세부 정보를 표시하는 데 도움이 되는 선택적 주석입니다.
+
    ![wf-104](assets/wf-104.png)
 
 ## 런처 구성 만들기 {#creating-a-launcher-configuration}
@@ -121,32 +121,33 @@ ht-degree: 5%
 
    * **이벤트 유형**
 
-      워크플로우를 시작할 이벤트 유형:
+     워크플로우를 시작할 이벤트 유형:
 
       * 작성일
       * 수정됨
       * 제거됨
+
    * **노드 유형**
 
-      워크플로우 런처가 적용되는 노드 유형입니다.
+     워크플로우 런처가 적용되는 노드 유형입니다.
 
    * **경로**
 
-      워크플로우 런처가 적용되는 경로입니다.
+     워크플로우 런처가 적용되는 경로입니다.
 
    * **모드 실행**
 
-      워크플로 시작 관리자가 적용되는 서버 유형입니다. 선택 **작성자**, **게시**, 또는 **작성 및 게시**.
+     워크플로 시작 관리자가 적용되는 서버 유형입니다. 선택 **작성자**, **게시**, 또는 **작성 및 게시**.
 
    * **조건**
 
-      평가할 때 워크플로우의 실행 여부를 결정하는 노드 값에 대한 조건 목록입니다. 예를 들어 다음 조건으로 인해 노드에 User 값이 있는 속성 이름이 있는 경우 워크플로우가 실행됩니다.
+     평가할 때 워크플로우의 실행 여부를 결정하는 노드 값에 대한 조건 목록입니다. 예를 들어 다음 조건으로 인해 노드에 User 값이 있는 속성 이름이 있는 경우 워크플로우가 실행됩니다.
 
-      ==
+     ==
 
    * **기능**
 
-      활성화할 기능 목록입니다. 드롭다운 선택기를 사용하여 필요한 기능을 선택합니다.
+     활성화할 기능 목록입니다. 드롭다운 선택기를 사용하여 필요한 기능을 선택합니다.
 
    * **비활성화된 기능**
 
@@ -154,38 +155,35 @@ ht-degree: 5%
 
    * **워크플로우 모델**
 
-      정의된 조건 아래의 노드 유형 및/또는 경로에서 이벤트 유형이 발생할 때 실행할 워크플로우입니다.
+     정의된 조건 아래의 노드 유형 및/또는 경로에서 이벤트 유형이 발생할 때 실행할 워크플로우입니다.
 
    * **설명**
 
-      런처 구성을 설명하고 식별하는 사용자 고유의 텍스트입니다.
+     런처 구성을 설명하고 식별하는 사용자 고유의 텍스트입니다.
 
    * **활성화**
 
-      워크플로 시작 관리자 활성화 여부를 제어합니다.
+     워크플로 시작 관리자 활성화 여부를 제어합니다.
 
       * 선택 **사용** 구성 속성이 충족될 때 워크플로우를 시작합니다.
       * 선택 **사용 안 함** 워크플로우를 실행하지 말아야 하는 경우(구성 속성이 충족되는 경우에도).
+
    * **제외 목록**
 
-      워크플로우를 트리거할지 여부를 결정할 때 제외(즉, 무시)할 JCR 이벤트를 지정합니다.
+     워크플로우를 트리거할지 여부를 결정할 때 제외(즉, 무시)할 JCR 이벤트를 지정합니다.
 
-      이 런처 속성은 쉼표로 구분된 항목 목록입니다. &quot;
+     이 런처 속성은 쉼표로 구분된 항목 목록입니다. &quot;
 
       * `property-name` 모두 무시 `jcr` 지정된 속성 이름에서 트리거되는 이벤트입니다. &quot;
-      * `event-user-data:<*someValue*>` 이 포함된 모든 이벤트를 무시합니다. `*<someValue*`> `user-data` 다음을 통해 설정 [ `ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `event-user-data:<*someValue*>` 이 포함된 모든 이벤트를 무시합니다. `*<someValue*`> `user-data` 다음을 통해 설정 [`ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
 
-      예:
+     예:
 
-      `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
+     `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
 
-      이 기능은 제외 항목을 추가하여 다른 워크플로우 프로세스에서 트리거된 모든 변경 사항을 무시하는 데 사용할 수 있습니다.
+     이 기능은 제외 항목을 추가하여 다른 워크플로우 프로세스에서 트리거된 모든 변경 사항을 무시하는 데 사용할 수 있습니다.
 
-      `event-user-data:changedByWorkflowProcess`
-
-
-
-
+     `event-user-data:changedByWorkflowProcess`
 
 1. 선택 **만들기**&#x200B;를 클릭하여 런처를 만들고 콘솔로 돌아갑니다.
 

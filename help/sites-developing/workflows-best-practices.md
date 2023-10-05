@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 1%
@@ -88,7 +88,7 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
 
 ### 위치 {#locations}
 
-워크플로 모델, 런처, 스크립트 및 알림의 정의는 유형에 따라 리포지토리에 유지됩니다(예: 기본, 사용자 지정 등).
+워크플로 모델, 런처, 스크립트 및 알림의 정의는 유형에 따라 저장소에 보관됩니다(예: 기본 제공, 사용자 지정 등).
 
 >[!NOTE]
 >
@@ -100,35 +100,34 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
 
 * 기본 워크플로우 디자인은 다음 경로에 보관됩니다.
 
-   `/libs/settings/workflow/models/`
+  `/libs/settings/workflow/models/`
 
-   >[!CAUTION]
-   >
-   >금지 사항:
-   >
-   >* 이 폴더에 사용자 지정 워크플로 모델 배치
-   >* 에서 모든 항목 편집 `/libs`
-
-   >
-   >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
+  >[!CAUTION]
+  >
+  >금지 사항:
+  >
+  >* 이 폴더에 사용자 지정 워크플로 모델 배치
+  >* 에서 모든 항목 편집 `/libs`
+  >
+  >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
 
 * 사용자 지정 워크플로 디자인은 아래에 유지됩니다.
 
-   ```
-   /conf/global/settings/workflow/models/...
-   ```
+  ```
+  /conf/global/settings/workflow/models/...
+  ```
 
 * 런타임 워크플로우 디자인(기본 및 사용자 지정 모두)은 다음 경로 아래에 유지됩니다.
 
-   `/var/workflow/models/`
+  `/var/workflow/models/`
 
 * 레거시 워크플로 디자인(디자인 타임 및 런타임 모두)은 다음 경로 아래에 유지됩니다.
 
-   `/etc/workflow/models/`
+  `/etc/workflow/models/`
 
-   >[!NOTE]
-   >
-   >이러한 디자인이 편집되는 경우 *AEM UI 사용*&#x200B;를 클릭하면 세부 정보가 새 위치에 복사됩니다.
+  >[!NOTE]
+  >
+  >이러한 디자인이 편집되는 경우 *AEM UI 사용*&#x200B;를 클릭하면 세부 정보가 새 위치에 복사됩니다.
 
 #### 위치 - 워크플로우 런처 {#locations-workflow-launchers}
 
@@ -136,31 +135,30 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
 
 * 즉시 사용 가능한 워크플로우 런처는 다음 경로 아래에 유지됩니다.
 
-   `/libs/settings/workflow/launcher/`
+  `/libs/settings/workflow/launcher/`
 
-   >[!CAUTION]
-   >
-   >금지 사항:
-   >
-   >* 이 폴더에 사용자 지정 워크플로우 런처를 배치합니다.
-   >* 에서 모든 항목 편집 `/libs`
-
-   >
-   >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
+  >[!CAUTION]
+  >
+  >금지 사항:
+  >
+  >* 이 폴더에 사용자 지정 워크플로우 런처를 배치합니다.
+  >* 에서 모든 항목 편집 `/libs`
+  >
+  >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
 
 * 사용자 지정 워크플로우 런처는 아래에 보관됩니다.
 
-   ```
-   /conf/global/settings/workflow/launcher/...
-   ```
+  ```
+  /conf/global/settings/workflow/launcher/...
+  ```
 
 * 레거시 워크플로 시작 프로그램은 다음 경로에 보관됩니다.
 
-   `/etc/workflow/launcher/`
+  `/etc/workflow/launcher/`
 
-   >[!NOTE]
-   >
-   >이러한 정의가 편집되는 경우 *AEM UI 사용*&#x200B;를 클릭하면 세부 정보가 새 위치에 복사됩니다.
+  >[!NOTE]
+  >
+  >이러한 정의가 편집되는 경우 *AEM UI 사용*&#x200B;를 클릭하면 세부 정보가 새 위치에 복사됩니다.
 
 #### 위치 - 워크플로 스크립트 {#locations-workflow-scripts}
 
@@ -168,27 +166,26 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
 
 * 기본 워크플로우 스크립트는 다음 경로 아래에 보관됩니다.
 
-   `/libs/workflow/scripts/`
+  `/libs/workflow/scripts/`
 
-   >[!CAUTION]
-   >
-   >금지 사항:
-   >
-   >* 이 폴더에 사용자 지정 워크플로 스크립트를 배치합니다.
-   >* 에서 모든 항목 편집 `/libs`
-
-   >
-   >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
+  >[!CAUTION]
+  >
+  >금지 사항:
+  >
+  >* 이 폴더에 사용자 지정 워크플로 스크립트를 배치합니다.
+  >* 에서 모든 항목 편집 `/libs`
+  >
+  >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
 
 * 사용자 지정 워크플로우 스크립트는 다음에 보관됩니다.
 
-   ```
-   /apps/workflow/scripts/...
-   ```
+  ```
+  /apps/workflow/scripts/...
+  ```
 
 * 레거시 워크플로우 스크립트는 다음 경로 아래에 보관됩니다.
 
-   `/etc/workflow/scripts/`
+  `/etc/workflow/scripts/`
 
 #### 위치 - 워크플로 알림 {#locations-workflow-notifications}
 
@@ -196,34 +193,33 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
 
 * 기본 워크플로우 알림 정의는 다음 경로 아래에 유지됩니다.
 
-   `/libs/settings/workflow/notification/`
+  `/libs/settings/workflow/notification/`
 
-   >[!CAUTION]
-   >
-   >금지 사항:
-   >
-   >* 이 폴더에 사용자 지정 워크플로 알림 정의를 배치합니다.
-   >* 에서 모든 항목 편집 `/libs`
-
-   >
-   >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
+  >[!CAUTION]
+  >
+  >금지 사항:
+  >
+  >* 이 폴더에 사용자 지정 워크플로 알림 정의를 배치합니다.
+  >* 에서 모든 항목 편집 `/libs`
+  >
+  >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
 
 * 사용자 지정 워크플로우 알림 정의는 아래에 있습니다.
 
-   ```
-   /conf/global/settings/workflow/notification/...
-   ```
+  ```
+  /conf/global/settings/workflow/notification/...
+  ```
 
-   >[!NOTE]
-   >
-   >워크플로우 알림 텍스트를 무시하려면 아래에 오버레이된 경로를 만듭니다.
-   >
-   >
-   >`/conf/global/settings/workflow/notification/<path-under-libs>`
+  >[!NOTE]
+  >
+  >워크플로우 알림 텍스트를 무시하려면 아래에 오버레이된 경로를 만듭니다.
+  >
+  >
+  >`/conf/global/settings/workflow/notification/<path-under-libs>`
 
 * 이전 워크플로우 알림 정의는 다음 경로에 유지됩니다.
 
-   `/etc/workflow/notification/`
+  `/etc/workflow/notification/`
 
 ### 프로세스 세션 {#process-sessions}
 
