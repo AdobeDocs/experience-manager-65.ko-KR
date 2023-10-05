@@ -8,7 +8,7 @@ breadcrumb-title: Edge 게재 서비스
 user-guide-description: 작성자가 빠르게 업데이트하고 게시할 수 있고 새 사이트가 빠르게 시작되는 빠른 개발 환경을 가능하게 하는 컴포저블 서비스 세트인 Edge Delivery 서비스에 대해 자세히 알아보십시오.
 feature: Edge Delivery Services
 role: User
-source-git-commit: ded523dbdcb56fb9870565b8bb5cf9e060b5f978
+source-git-commit: 912ae69a03a30822edbe58ebd1e530b44d182744
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 10%
@@ -18,6 +18,6 @@ ht-degree: 10%
 
 # Edge 게재 서비스 {#edge-delivery-services}
 
-+ [Edge Delivery 시작하기.](/help/edge/overview.md)
 + Edge 게재 서비스 {#edge-delivery}
+   + [Edge Delivery 시작하기.](/help/edge/overview.md)
    + [Edge 게재 사용](/help/edge/using.md)
