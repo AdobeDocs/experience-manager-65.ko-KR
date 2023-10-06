@@ -2,10 +2,10 @@
 title: WCAG 2.1에 대한 빠른 안내서
 description: WCAG 2.1에 대한 빠른 안내서
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
