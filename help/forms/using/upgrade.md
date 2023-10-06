@@ -11,10 +11,10 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: fbc371e59c4f80195fe90da5f635267141c8849e
+source-git-commit: a67c2347eb6ddbb4e77f77985033d882f34ccb00
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 6%
+source-wordcount: '366'
+ht-degree: 5%
 
 ---
 
@@ -73,6 +73,8 @@ AEM 6.5.18.0 JEE의 Forms은 두 가지 유형의 설치 관리자를 제공합�
 
 ![전체 설치 관리자 및 패치 설치 관리자](/help/forms/using/assets/full-and-patch-installer.png)
 
+다음을 참조하십시오. [AEM 6.5 Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) jee 환경에 대한 최신 서비스 팩을 설치하는 문서입니다.
+
 <!--
 [Work in Progress]
 
@@ -104,3 +106,5 @@ Migration involves moving only assets (PDF, XDP, images, adaptive forms, corresp
       Methods to calculate average fill time for forms and average read time for have changed. So, when you upgrade to AEM 6.3 forms, older data (data from previous AEM Forms release) for these metrics is available only in Adobe Analytics. It is not visible in AEM Forms analytics reports. For these metrics, AEM Forms analytics reports display data which is captured after performing the upgrade.
       
       -->
+
+
