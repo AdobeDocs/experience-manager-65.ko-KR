@@ -2,9 +2,10 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: ffda4927ddc8555564f33697fa81d1f8a0cd2cdc
+exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
+source-git-commit: 59d5c2574bf4298469152a3d55e7c1508eb2f1be
 workflow-type: tm+mt
-source-wordcount: '4548'
+source-wordcount: '4633'
 ht-degree: 9%
 
 ---
@@ -462,8 +463,25 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 #### 설치
 
 * JBoss® 7.1.4 플랫폼에서 사용자가 Experience Manager 6.5.16.0 이상의 서비스 팩을 설치하면 `adobe-livecycle-jboss.ear` 배포가 실패합니다. (CQ-4351522, CQDOC-20159)
-* AEM 서비스 팩 6.5.18.0 전체 설치 관리자를 설치한 후 JBoss® 턴키를 사용하여 JEE에서 EAR 배포가 실패합니다(CQDOC-20803).
-문제를 해결하려면 `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` 파일 및 업데이트 `Adobe_Adobe_JAVA_HOME` 끝 `Adobe_JAVA_HOME` 구성 관리자를 실행하기 전에 발생하는 모든 발생 횟수.
+* Windows Server 2022에서 AEM Forms 6.5.18.0 JBoss 턴키 전체 설치 관리자 환경으로 업그레이드한 후 Java 11을 사용하여 출력 클라이언트 응용 프로그램 코드를 컴파일할 때 다음 컴파일 오류가 발생할 수 있습니다.
+
+  ```
+  error: error reading [AEM_Forms_Installation_dir]\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
+  Illegal character in path at index 70: file:/[AEM_Forms_Installation_dir]/sdk/client-libs/common/${clover.jar.name} 1 error
+  ```
+
+  이 문제를 해결하려면 다음 단계를 수행하십시오.
+   1. 다음으로 이동 `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` 및 압축 풀기 `adobe-output-client.jar` 을(를) 추출하려면 `Manifest.mf` 파일.
+   1. 업데이트 `Manifest.mf` 항목을 제거하여 파일 `${clover.jar.name}` class-path 속성에서 가져옵니다.
+
+      >[!NOTE]
+      >
+      > 즉석 편집 도구(예: 7-zip)를 사용하여 `Manifest.mf` 파일.
+
+   1. 업데이트된 을 저장합니다. `Manifest.mf` 다음에서 `adobe-output-client.jar` 보관.
+   1. 수정된 내용 저장 `adobe-output-client.jar` 파일을 만들고 설치 프로그램을 다시 실행합니다.  (CQDOC-20878)
+* AEM 서비스 팩 6.5.18.0 전체 설치 관리자를 설치한 후 JBoss® 턴키를 사용하여 JEE에서 EAR 배포가 실패합니다.
+문제를 해결하려면 `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` 파일 및 업데이트 `Adobe_Adobe_JAVA_HOME` 끝 `Adobe_JAVA_HOME` 구성 관리자를 실행하기 전에 발생하는 모든 발생 횟수. (CQDOC-20803)
 
 #### 적응형 양식
 
