@@ -2,9 +2,9 @@
 title: GraphQL 쿼리 최적화
 description: Headless 콘텐츠 전달을 위해 Adobe Experience Manager as a Cloud Service에서 콘텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법에 대해 알아봅니다.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 2ba17c43e84ad449ec858de57812f3ef82fca3e1
+source-git-commit: c0570d6c0d624d950ddbb5c0d2ce38ff7c3756a4
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1935'
 ht-degree: 60%
 
 ---
@@ -89,7 +89,10 @@ GraphQL 쿼리 및 해당 JSON 응답은 타깃팅한 경우 캐시될 수 있�
 
 CDN과 함께 지속 GraphQL 쿼리를 사용하는 경우 적절한 HTTP 캐시 제어 헤더를 설정하는 것이 좋습니다.
 
-각 지속 쿼리에는 고유한 캐시 제어 헤더 집합이 있을 수 있습니다. 머리글은 다음에 대해 설정할 수 있습니다. [GRAPHQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) 또는 [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
+각 지속 쿼리에는 고유한 캐시 제어 헤더 집합이 있을 수 있습니다. 머리글은 다음에 대해 설정할 수 있습니다. [GRAPHQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+
+<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+-->
 
 **추가 참조**
 
