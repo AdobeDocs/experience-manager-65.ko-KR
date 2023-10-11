@@ -2,9 +2,9 @@
 title: GraphQL 쿼리 최적화
 description: Headless 콘텐츠 전달을 위해 Adobe Experience Manager as a Cloud Service에서 콘텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법에 대해 알아봅니다.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: c0570d6c0d624d950ddbb5c0d2ce38ff7c3756a4
+source-git-commit: 3ec34efc14cc49d0f45cb4b175573c33c1cc232e
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1966'
 ht-degree: 60%
 
 ---
@@ -91,6 +91,17 @@ CDN과 함께 지속 GraphQL 쿼리를 사용하는 경우 적절한 HTTP 캐시
 
 각 지속 쿼리에는 고유한 캐시 제어 헤더 집합이 있을 수 있습니다. 머리글은 다음에 대해 설정할 수 있습니다. [GRAPHQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
+다음을 사용하여 설정할 수도 있습니다. **cURL** 명령줄 도구입니다. 예: `PUT` 캐시 제어를 사용하여 래핑된 일반 쿼리를 만들도록 요청합니다.
+
+```shell
+$ curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
 <!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
 -->
 
@@ -99,6 +110,7 @@ CDN과 함께 지속 GraphQL 쿼리를 사용하는 경우 적절한 HTTP 캐시
 다음을 참조하십시오.
 
 * [지속 쿼리 캐싱](/help/sites-developing/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
+* [GraphQL 쿼리를 지속하는 방법](/help/sites-developing/headless/graphql-api/persisted-queries.md#how-to-persist-query)
 <!--
 * [Managing cache for your persisted queries](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache)
 -->
