@@ -1,7 +1,7 @@
 ---
 title: AEM Sites - GDPR 준비 완료
 seo-title: AEM Sites - GDPR Readiness
-description: AEM Sites에 대한 GDPR 준비 완료에 대해 알아봅니다.
+description: AEM Sites에서 GDPR 요청을 처리하는 절차 및 사용 방법에 대해 알아봅니다.
 seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: AEM Docs
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
-source-git-commit: d8ae63edd71c7d27fe93d24b30fb00a29332658d
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 98%
+source-wordcount: '837'
+ht-degree: 96%
 
 ---
 
@@ -82,26 +82,26 @@ AEM에서는 [ContextHub](/help/sites-developing/contexthub.md)와 관련하여 
 
    * 동의
    * 거부
-   * 이전 선택 사항 변경
+   * 이전 옵션 변경
 
 * 사이트 방문자가 사이트의 약관에 동의하면 ContextHub 옵트아웃 쿠키가 제거됩니다.
 
-   ```
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   ```
+  ```
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  ```
 
 * 사이트 방문자가 사이트의 약관에 동의하지 않으면 ContextHub 옵트아웃 쿠키가 설정됩니다.
 
-   ```
-   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
-   ```
+  ```
+  ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
+  ```
 
 * ContextHub가 옵트아웃 모드에서 실행되고 있는지 확인하려면 브라우저의 콘솔에서 다음 호출을 수행해야 합니다.
 
-   ```
-   var isOptedOut = ContextHub.isOptedOut(true) === true;
-   // if isOptedOut is true, ContextHub is running in opt-out mode
-   ```
+  ```
+  var isOptedOut = ContextHub.isOptedOut(true) === true;
+  // if isOptedOut is true, ContextHub is running in opt-out mode
+  ```
 
 ### ContextHub의 지속성 미리보기 {#previewing-persistence-of-contexthub}
 
@@ -109,13 +109,14 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 * 브라우저의 콘솔 사용. 예를 들어
 
-   * Chrome:
+   * 크롬:
 
       * Developer Tools > Application > Storage를 엽니다.
 
          * Local Storage > (웹 사이트) > ContextHubPersistence
          * Session Storage > (웹 사이트) > ContextHubPersistence
          * Cookies > (웹 사이트) > SessionPersistence
+
    * Firefox:
 
       * Developer Tools > Storage를 엽니다.
@@ -123,6 +124,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
          * Local Storage > (웹 사이트) > ContextHubPersistence
          * Session Storage > (웹 사이트) > ContextHubPersistence
          * Cookies > (웹 사이트) > SessionPersistence
+
    * Safari:
 
       * 메뉴 막대에서 Preferences > Advanced > Show Develop 메뉴를 엽니다.
@@ -131,6 +133,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
          * Console > Storage > Local Storage > (웹 사이트) > ContextHubPersistence
          * Console > Storage > Session Storage > (웹 사이트) > ContextHubPersistence
          * Console > Storage > Cookies > (웹 사이트) > ContextHubPersistence
+
    * Internet Explorer:
 
       * 개발자 도구 > 콘솔을 엽니다.
@@ -139,9 +142,6 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
          * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
          * document.cookie
 
-
-
-
 * 브라우저 콘솔에서 ContextHub API 사용.
 
    * ContextHub에서는 다음 데이터 지속성 계층을 제공합니다.
@@ -151,8 +151,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
-
+     ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
 
 예를 들어 localStorage에 저장된 데이터를 보려는 경우
 
@@ -160,17 +159,17 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 * 브라우저의 콘솔 사용:
 
-   * Chrome - Developer Tools > Application > Storage 열기:
+   * 크롬 - Developer Tools > Application > Storage 열기:
 
       * Local Storage > (웹 사이트) > ContextHubPersistence
       * Session Storage > (웹 사이트) > ContextHubPersistence
       * Cookies > (웹 사이트) > SessionPersistence
+
    * Firefox - Developer Tools > Storage 열기:
 
       * Local Storage > (웹 사이트) > ContextHubPersistence
       * Session Storage > (웹 사이트) > ContextHubPersistence
       * Cookies > (웹 사이트) > SessionPersistence
-
 
 * 브라우저 콘솔에서 ContextHub API 사용.
 
@@ -181,8 +180,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
-
+     ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
 
 예를 들어 localStorage에 저장된 데이터를 보려는 경우
 
@@ -197,27 +195,27 @@ ContextHub 지속성 지우기:
 
 * 현재 로드된 저장소의 지속성을 지우려면
 
-   ```
-   // in order to be able to fully access persistence layer, Opt-Out must be turned off
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   
-   // following call asks all currently loaded stores to clear their data
-   ContextHub.cleanAllStores();
-   
-   // following call asks all currently loaded stores to set back default values (provided in their configs)
-   ContextHub.resetAllStores();
-   ```
+  ```
+  // in order to be able to fully access persistence layer, Opt-Out must be turned off
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  
+  // following call asks all currently loaded stores to clear their data
+  ContextHub.cleanAllStores();
+  
+  // following call asks all currently loaded stores to set back default values (provided in their configs)
+  ContextHub.resetAllStores();
+  ```
 
 * 특정 지속성 계층을 지우려면(예: sessionStorage):
 
-   ```
-   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
-   storage.setItem('/store', null);
-   storage.setItem('/_', null);
-   
-   // to confirm that nothing is stored:
-   console.log(storage.getTree());
-   ```
+  ```
+  var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
+  storage.setItem('/store', null);
+  storage.setItem('/_', null);
+  
+  // to confirm that nothing is stored:
+  console.log(storage.getTree());
+  ```
 
 * 모든 ContextHub 지속성 계층을 지우려면 모든 레이어에 대해 적절한 코드를 호출해야 합니다.
 

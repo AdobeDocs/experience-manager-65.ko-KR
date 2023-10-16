@@ -1,15 +1,15 @@
 ---
 title: AEM Commerce - GDPR 준비 완료
 seo-title: AEM Commerce - GDPR Readiness
-description: "AEM Commerce - GDPR 준비"
+description: AEM Commerce에서 GDPR 요청을 처리하는 절차와 이를 사용하는 방법에 대해 알아봅니다.
 seo-description: null
 uuid: 7ca26587-8cce-4c75-8629-e0e5cfb8166c
 contentOwner: carlino
 discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '314'
 ht-degree: 9%
 
 ---

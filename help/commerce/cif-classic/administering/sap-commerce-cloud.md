@@ -1,13 +1,13 @@
 ---
 title: SAP와 함께 AEM 사용 Commerce Cloud
-description: SAP Commerce Cloud과 함께 AEM을 사용하는 방법에 대해 알아봅니다.
+description: SAP Commerce Cloud과 함께 Adobe Experience Manager을 사용하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1704'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 2%
 1. **구성을 저장합니다.**
 1. 열기 **SOLR 항목 유형** 추가하려면 **SOLR 정렬** 끝 `ClothesVariantProduct`:
 
-   * 관련성 (&quot;관련성&quot;, 점수)
+   * 관련성(&quot;관련성&quot;, 점수)
    * name-asc (&quot;Name (ascending)&quot;, name)
    * name-desc (&quot;이름(내림차순)&quot;, 이름)
    * price-asc(&quot;가격(오름차순)&quot;, priceValue)
@@ -215,7 +215,7 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
       [`http://localhost:4502/crx/de/index.jsp#/etc/commerce/products`](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
    1. 제품 데이터가 들어 있는 노드를 삭제합니다. 예: `outdoors`.
-   1. **모두 저장** 변경 내용을 유지합니다.
+   1. **모두 저장** 변경 사항을 유지합니다.
 
 1. AEM에서 hybris importer를 엽니다.
 

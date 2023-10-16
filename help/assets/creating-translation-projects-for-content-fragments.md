@@ -1,6 +1,6 @@
 ---
 title: 콘텐츠 조각에 대한 번역 프로젝트 만들기
-description: 콘텐츠 조각을 번역하는 방법을 알아봅니다.
+description: Adobe Experience Manager에서 컨텐츠 조각을 번역하는 방법을 알아봅니다.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
@@ -8,9 +8,9 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '980'
 ht-degree: 2%
 
 ---

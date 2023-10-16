@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 문제 해결
-description: AEM 문제 해결에 대해 알아봅니다.
+description: Adobe Experience Manager에서 발생할 수 있는 몇 가지 문제를 해결하는 방법에 대해 알아봅니다.
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 5%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 5%
 ### Sling 스레드 덤퍼 사용 {#using-sling-thread-dumper}
 
 1. 를 엽니다. **AEM 웹 콘솔**; 예, at `https://localhost:4502/system/console/`.
-1. 다음 항목 선택 **스레드**&#x200B;아래에&#x200B;**상태** 탭.
+1. 다음 항목 선택 **Threads**&#x200B;아래에&#x200B;**상태** 탭.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
