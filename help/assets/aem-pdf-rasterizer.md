@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer, Admin
 feature: Developer Tools,Renditions
 exl-id: 6f365d6b-3972-4885-8766-5889e24289f1
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: e6e0ad29bc5b3a644f74427d8d60233c9e26aa03
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Adobe은 다음에 대해 PDF 래스터라이저 라이브러리를 사용할 �
 
 PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 기본 제공 출력에 비해 품질이 우수하므로 여러 장치에서 일관된 보기 환경을 제공합니다. Adobe PDF 래스터라이저 라이브러리는 색상 공간 변환을 지원하지 않습니다. 소스 파일의 색상 공간에 관계없이 항상 RGB에 출력됩니다.
 
-1. PDF 래스터라이저 패키지를 설치하십시오. [!DNL Adobe Experience Manager] 배포 위치 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip).
+1. PDF 래스터라이저 패키지를 설치하십시오. [!DNL Adobe Experience Manager] 배포 위치 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
 
    >[!NOTE]
    >
-   >PDF 래스터라이저 라이브러리는 Windows 및 Linux에만 사용할 수 있습니다.
+   >PDF 래스터라이저 라이브러리는 Windows 및 Linux®에서만 사용할 수 있습니다.
 
 1. 액세스 [!DNL Assets] 워크플로 콘솔 위치 `https://[aem_server]:[port]/workflow`. 열기 [!UICONTROL DAM 자산 업데이트] 워크플로입니다.
 
@@ -65,7 +65,6 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 
 
    * `-h`: 도움말
 
-
 1. 중간 렌디션을 삭제하려면 **[!UICONTROL 생성된 렌디션 삭제]**.
 1. PDF 래스터라이저가 웹 렌디션을 생성하도록 하려면 **[!UICONTROL 웹 표현물 생성]**.
 
@@ -95,7 +94,6 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 
    * `-i`: 입력 PDF 경로 필수 매개 변수입니다.
 
    * `-h`: 도움말
-
 
 1. 중간 렌디션을 삭제하려면 **[!UICONTROL 생성된 렌디션 삭제]**.
 1. PDF 래스터라이저가 웹 렌디션을 생성하도록 하려면 **[!UICONTROL 웹 표현물 생성]**.
