@@ -1,15 +1,15 @@
 ---
 title: 비디오 표현물
-description: 비디오 표현물
+description: Adobe Experience Manager Assets를 사용하여 OGG, FLV 등을 비롯한 다양한 형식의 비디오 에셋에 대한 비디오 렌디션을 생성하는 방법을 알아봅니다.
 uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 3%
+source-wordcount: '243'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ Experience Manager Assets은 클라이언트측에서 이러한 렌디션에 대
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-DM 인코딩 표현물에 대해 프록시 서버를 구성하려면 다음을 수행합니다. [Dynamic Media 클라우드 서비스 구성](config-dynamic.md).
+DM 인코딩 변환을 위한 프록시 서버를 구성하려면 다음을 수행합니다. [Dynamic Media 클라우드 서비스 구성](config-dynamic.md).
 
 원하는 매개 변수를 사용하여 비디오 렌디션을 생성하려면 다음을 수행하십시오. [해당 비디오 프로필 만들기](video-profiles.md).
 
@@ -43,4 +43,4 @@ DM 인코딩 표현물에 대해 프록시 서버를 구성하려면 다음을 �
 >
 >Microsoft® Internet Explorer 11의 OGG 및 WAV 파일에 대해 오디오 재생이 작동하지 않습니다. 오류 `Invalid Source` 확장이 OGG 또는 WAV인 에셋의 에셋 세부 사항 페이지에 표시됩니다.
 >
->MS® Edge 및 iPad에서 OGG 파일이 재생되지 않고 지원되지 않는 형식 오류가 발생합니다.
+MS® Edge 및 iPad에서 OGG 파일이 재생되지 않고 지원되지 않는 형식 오류가 발생합니다.

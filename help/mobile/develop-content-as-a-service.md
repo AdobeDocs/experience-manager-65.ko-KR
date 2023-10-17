@@ -1,13 +1,13 @@
 ---
 title: 컨텐츠 전달
-description: 컨텐츠 전달
+description: Adobe Experience Manager의 모든 콘텐츠를 사용하여 타깃팅된 앱 경험을 전달하는 방법에 대해 알아봅니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '978'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,7 @@ JSON은 이미지에 Content Services에서 생성된 각 이미지의 URL을 �
 
 ## 패키지된 HTML 컨텐츠 {#packaged-html-content}
 
-HTML 콘텐츠는 콘텐츠 레이아웃을 유지해야 하는 고객에게 필요합니다. 이 기능은 Cordova 웹 보기와 같은 웹 컨테이너를 사용하여 콘텐츠를 표시하는 기본 애플리케이션에 유용합니다.
+HTML 콘텐츠는 콘텐츠의 레이아웃을 유지해야 하는 고객에게 필요합니다. 이 기능은 Cordova 웹 보기와 같은 웹 컨테이너를 사용하여 콘텐츠를 표시하는 기본 애플리케이션에 유용합니다.
 
 AEM Content Services는 API를 통해 모바일 앱에 HTML 콘텐츠를 제공합니다. AEM 컨텐츠를 HTML으로 노출하려는 고객은 AEM 컨텐츠 소스를 가리키는 HTML 페이지 엔티티를 만들 수 있습니다.
 
@@ -127,12 +127,12 @@ AEM Content Services는 API를 통해 모바일 앱에 HTML 콘텐츠를 제공�
 
 콘텐츠는 여러 가지 방법으로 앱에 액세스할 수 있습니다.
 
-1. AEM Over-the-Air를 통한 GET 콘텐츠 ZIP
+1. AEM Over-the-Air의 방식으로 GET 콘텐츠 ZIPS
 
    * 콘텐츠 동기화 처리기는 zip 패키지를 직접 업데이트하거나 기존 콘텐츠 렌더러를 호출하여 업데이트할 수 있습니다
 
       * 플랫폼 핸들러
-      * AEMM 핸들러
+      * AEM 핸들러
       * 사용자 지정 처리기
 
 1. 컨텐츠 렌더러를 통해 직접 컨텐츠 GET

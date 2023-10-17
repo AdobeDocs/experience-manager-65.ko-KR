@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager Mobile - GDPR 준비 완료
-description: Adobe Experience Manager Mobile - GDPR 준비 완료
+description: Adobe Experience Manager이 GDPR 준수 의무를 지원하는 방법에 대해 알아보십시오.
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## AEM Mobile GDPR 지원 {#aem-mobile-gdpr-support}
 
-AEM Mobile은 고객이 GDPR 준수 의무를 이행하도록 지원할 준비가 되었습니다. AEM Mobile에는 개인 데이터가 저장되지 않습니다. 권한이 제공되면 Adobe ID으로 Adobe Experience Mobile에 로그온할 수 있습니다.
+AEM Mobile은 고객이 GDPR 준수 의무를 이행하도록 지원할 준비가 되었습니다. AEM Mobile에는 개인 데이터가 저장되지 않습니다. 프로비저닝된 경우 Adobe ID으로 Experience Mobile Adobe에 로그온할 수 있습니다.
 
 <!-- [https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html) -->
 
@@ -49,11 +49,11 @@ Digital Publishing Suite에 대한 GDPR 요청을 시작할 수 있도록 Adobe 
 
 ### 자주 묻는 질문(FAQ) {#frequently-asked-questions-faq}
 
-**DELETE 요청을 시작할 때 Adobe이 내 App Store 구매를 삭제하시겠습니까?**
+**DELETE 요청을 시작할 때 Adobe이 내 App Store 구매를 삭제하는 것입니까?**
 
-Adobe은 보유한 앱스토어 구매 정보(구독 등)를 삭제하지만, 앱스토어에서 구매는 여전히 기록 중입니다. 앱(최종 사용자)이 앱스토어에 로그인하면 해당 영수증이 다시 선택되어 Adobe으로 전송되고 나중에 새 구매로 간주되며 앱에서 복원되어 다시 액세스할 수 있습니다.
+Adobe은 보유한 앱스토어 구매 정보(구독 등)를 삭제하지만, 앱스토어에서 구매는 여전히 기록 중입니다. 앱(최종 사용자)이 앱스토어에 로그인된 경우 해당 영수증이 다시 선택되어 Adobe으로 전송됩니다. 나중에 이러한 항목은 새 구매로 간주되며 앱에서 다시 액세스하고 복원됩니다.
 
-**DELETE 요청을 시작할 때 Adobe이 고객이 제공한 권한을 삭제하시겠습니까?**
+**Adobe이 DELETE 요청을 시작할 때 고객이 제공한 권한을 삭제하는 것입니까?**
 
 Adobe은 고객의 추가 직접 권한 부여 관련 정보를 삭제합니다. 앱(최종 사용자)이 고객이 사용한 OAuth 메커니즘에 로그인하는 경우 정보를 Adobe으로 보내고 서비스는 추가 권한을 다시 선택합니다.
 

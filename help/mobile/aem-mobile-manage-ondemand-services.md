@@ -1,18 +1,14 @@
 ---
 title: Preflight로 미리 보기
-seo-title: Previewing with Preflight
-description: 이 페이지에서는 Preflight 앱으로 미리 보기에 대해 설명합니다.
-seo-description: With the Mobile On Demand Preflight app, you can view all projects to which you have access. Follow this page to learn more about this.
-uuid: bea83055-8172-4634-88ec-5d3f163ad8e0
+description: 액세스 권한이 있는 모든 프로젝트를 볼 수 있도록 Mobile On-Demand Preflight 앱을 사용하는 방법을 알아봅니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '271'
 ht-degree: 1%
 
 ---
@@ -27,7 +23,7 @@ ht-degree: 1%
 
 다음 작업은 응용 프로그램 전체에서 수행됩니다.
 
-Mobile On Demand Preflight 앱을 사용하면 액세스 권한이 있는 모든 프로젝트를 볼 수 있습니다. 프로젝트를 선택하면 페이지 및 기사 탐색을 포함하여 앱 콘텐츠를 미리 보고 다양한 디바이스에서 앱이 어떻게 표시되고 수행되는지 파악할 수 있습니다.
+Mobile On-Demand Preflight 앱을 사용하면 액세스 권한이 있는 모든 프로젝트를 볼 수 있습니다. 프로젝트를 선택하면 페이지 및 기사 탐색을 포함하여 앱 콘텐츠를 미리 보고 다양한 디바이스에서 앱이 어떻게 표시되고 수행되는지 파악할 수 있습니다.
 
 >[!NOTE]
 >

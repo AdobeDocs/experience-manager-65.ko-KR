@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 이미지 사전 설정 적용
-description: Dynamic Media에서 이미지 사전 설정을 적용하는 방법 알아보기
+description: 에셋이 다른 크기, 다른 형식 또는 동적으로 생성된 다른 이미지 속성으로 이미지를 동적으로 게재할 수 있도록 하는 방법에 대해 알아봅니다.
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +10,10 @@ discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 feature: Image Presets
 role: User,Admin
 exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
-source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 13%
+source-wordcount: '343'
+ht-degree: 12%
 
 ---
 
@@ -44,7 +44,6 @@ ht-degree: 13%
    >* 정적 렌디션은 창의 맨 위에 나타납니다. 동적 렌디션은 하반기에 나타납니다. 동적 변환에만 해당 URL을 사용하여 이미지를 표시할 수 있습니다. 다음 **[!UICONTROL URL]** 동적 렌디션을 선택한 경우에만 버튼이 나타납니다. 다음 **[!UICONTROL RESS]** [버튼]은 응답형 이미지 사전 설정을 선택하는 경우에만 나타납니다.
    >
    >* 를 선택하면 시스템에 다양한 렌디션이 표시됩니다 **[!UICONTROL 표현물]** 를 클릭합니다. You can increase the number of presets seen. 다음을 참조하십시오 [표시되는 이미지 사전 설정 수 늘리기](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
-
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
 

@@ -1,14 +1,14 @@
 ---
 title: 렌더링 및 게재
-description: 렌더링 및 게재
+description: Sling 기본 서블릿을 통해 Adobe Experience Manager 콘텐츠를 렌더링하여 JSON 및 기타 형식을 렌더링하는 방법에 대해 알아봅니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 7%
+source-wordcount: '596'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 Adobe Experience Manager(AEM) 콘텐츠는 다음을 통해 쉽게 렌더링할 수 있습니다. [Sling 기본 서블릿](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 렌더링하려면 [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) 및 기타 형식
 
-기본 제공되는 렌더링은 일반적으로 저장소를 이동하고 콘텐츠를 그대로 반환합니다.
+이러한 기본 렌더링은 일반적으로 저장소를 이동하고 콘텐츠를 있는 그대로 반환합니다.
 
 AEM은 Sling을 통해 사용자 지정 sling 렌더러를 개발 및 배포하여 렌더링된 스키마 및 콘텐츠를 완벽하게 제어할 수 있도록 지원합니다.
 
@@ -42,7 +42,7 @@ Content Services 기본 렌더러는 기본 제공 Sling 기본값과 사용자 
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>선택 사항</strong><br /> </p> <p>/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG에 있는 내보내기 구성<br /> <br /> 생략하면 기본 내보내기 구성이 적용됩니다. </p> </td>
+   <td><p><strong>선택 사항</strong><br /> </p> <p>/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG에 있는 내보내기 구성<br /> <br /> 생략하면 기본 내보내기 구성이 적용됩니다 </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>

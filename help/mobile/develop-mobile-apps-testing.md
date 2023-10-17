@@ -1,14 +1,14 @@
 ---
 title: 모바일 앱 테스트
-description: 모바일 앱 테스트
+description: 다양한 도구를 사용하여 모바일 앱을 자동화하거나 수동으로 테스트하는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---

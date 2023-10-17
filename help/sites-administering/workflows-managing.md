@@ -1,19 +1,15 @@
 ---
 title: 워크플로에 대한 액세스 관리
-seo-title: Managing Access to Workflows
-description: 워크플로우에 대한 액세스를 관리하는 방법을 알아봅니다.
-seo-description: Learn how to manage access to Workflows.
-uuid: 58f79b89-fe56-4565-a869-8179c1ac68de
+description: 워크플로우의 시작 및 참여를 허용(또는 비활성화)하도록 사용자 계정에 따라 액세스 제어 목록을 구성하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 2%
+source-wordcount: '575'
+ht-degree: 3%
 
 ---
 
@@ -53,7 +49,7 @@ ht-degree: 2%
 
 ### /var/workflow/models에 특정 워크플로우 모델에 대한 ACL 적용 {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-워크플로 모델이 다음 내에 저장된 경우: `/var/workflow/models` 그런 다음 해당 워크플로우에만 관련된 특정 ACL을 폴더에 할당할 수 있습니다.
+워크플로 모델이 다음 내에 저장된 경우: `/var/workflow/models`그런 다음 해당 워크플로우에만 관련된 특정 ACL을 폴더에 할당할 수 있습니다.
 
 1. 웹 브라우저에서 CRXDE Lite 열기(예: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. 노드 트리에서 워크플로 모델 폴더의 노드를 선택합니다.
@@ -62,7 +58,7 @@ ht-degree: 2%
 
 1. 다음을 클릭합니다. **액세스 제어** 탭.
 1. 다음에서 **로컬 액세스 제어 정책** (**액세스 제어 목록**) 표를 만들 때 더하기 아이콘을 클릭하여 **게시물 추가**.
-1. 다음에서 **새 항목 추가** 대화 상자에서 다음 속성을 사용하여 새 ACE를 추가합니다.
+1. 다음에서 **새 항목 추가** 대화 상자에서 다음 속성을 사용하여 ACE를 추가합니다.
 
    * **사용자**: `content-authors`
    * **유형**: `Deny`
@@ -75,7 +71,7 @@ ht-degree: 2%
 
    ![wf-109](assets/wf-109.png)
 
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 
    다음 `prototype-wfm-01` 의 멤버는 더 이상 워크플로를 사용할 수 없습니다. `content-authors` 그룹입니다.
 
@@ -99,7 +95,7 @@ ht-degree: 2%
 1. 다음을 클릭합니다. **액세스 제어** 탭.
 1. 다음에서 **적용 가능한 액세스 제어 정책** 테이블에서 더하기 아이콘 을 클릭하여 **추가** 항목.
 1. 다음에서 **로컬 액세스 제어 정책** (**액세스 제어 목록**) 표를 만들 때 더하기 아이콘을 클릭하여 **게시물 추가**.
-1. 다음에서 **새 항목 추가** 대화 상자에서 다음 속성을 사용하여 새 ACE를 추가합니다.
+1. 다음에서 **새 항목 추가** 대화 상자에서 다음 속성을 사용하여 ACE를 추가합니다.
 
    * **사용자**: `content-authors`
    * **유형**: `Deny`
@@ -115,6 +111,6 @@ ht-degree: 2%
 
    ![wf-111](assets/wf-111.png)
 
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 
    의 모델 `prototypes` 의 멤버는 더 이상 폴더를 사용할 수 없습니다. `content-authors` 그룹입니다.

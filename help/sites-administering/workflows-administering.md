@@ -1,19 +1,15 @@
 ---
 title: 워크플로 인스턴스 관리
-seo-title: Administering Workflow Instances
-description: 워크플로우 인스턴스를 관리하는 방법을 알아봅니다.
-seo-description: Lear how to administer Workflow Instances.
-uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
+description: 워크플로 콘솔에서 워크플로 인스턴스가 예상대로 실행되도록 관리하기 위한 몇 가지 도구를 제공하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 84%
+source-wordcount: '1003'
+ht-degree: 65%
 
 ---
 
@@ -37,7 +33,7 @@ ht-degree: 84%
 ## 워크플로 인스턴스 상태 모니터링 {#monitoring-the-status-of-workflow-instances}
 
 1. 탐색을 사용하여 **도구**&#x200B;를 선택한 다음 **워크플로**&#x200B;를 선택합니다.
-1. **인스턴스**&#x200B;를 선택하여 현재 진행 중인 워크플로 인스턴스 목록을 표시합니다.
+1. 선택 **인스턴스** 현재 진행 중인 워크플로 인스턴스 목록을 표시할 수 있습니다.
 
    ![wf-96](assets/wf-96.png)
 
@@ -66,7 +62,7 @@ ht-degree: 84%
 ## 워크플로 인스턴스 일시 중단, 재시작 및 종료 {#suspending-resuming-and-terminating-a-workflow-instance}
 
 1. 탐색을 사용하여 **도구**&#x200B;를 선택한 다음 **워크플로**&#x200B;를 선택합니다.
-1. **인스턴스**&#x200B;를 선택하여 현재 진행 중인 워크플로 인스턴스 목록을 표시합니다.
+1. 선택 **인스턴스** 현재 진행 중인 워크플로 인스턴스 목록을 표시할 수 있습니다.
 
    ![wf-96-1](assets/wf-96-1.png)
 
@@ -77,7 +73,7 @@ ht-degree: 84%
 ## 보관된 워크플로 보기 {#viewing-archived-workflows}
 
 1. 탐색을 사용하여 **도구**&#x200B;를 선택한 다음 **워크플로**&#x200B;를 선택합니다.
-1. **보관**&#x200B;을 선택하여 정상적으로 완료된 워크플로 인스턴스 목록을 표시합니다.
+1. 선택 **보관** 완료된 워크플로 인스턴스 목록을 표시할 수 있습니다.
 
    ![wf-98](assets/wf-98.png)
 
@@ -86,7 +82,7 @@ ht-degree: 84%
    >중단 상태는 다음과 같은 사용자 작업의 결과로 발생하므로 성공적인 종료로 간주됩니다.
    >
    >* **종료** 작업 사용
-   >* 워크플로의 대상인 페이지가 (강제로) 삭제되면 워크플로가 종료됩니다.
+   >* 워크플로의 대상이 되는 페이지가 (강제로) 삭제되면 워크플로가 종료됩니다
 
 1. 특정 항목을 선택한 다음 **내역 열기**&#x200B;를 선택하여 세부 정보를 표시합니다.
 
@@ -103,12 +99,12 @@ ht-degree: 84%
 
 * **단계 다시 시도** - 스크립트 단계 구성 요소 인스턴스를 다시 실행합니다. 원래 오류의 원인을 해결한 다음 단계 다시 시도 명령을 사용합니다. 예를 들어 프로세스 단계에서 실행되는 스크립트에서 버그를 수정하고 단계를 다시 시도할 수 있습니다.
 * **종료** - 오류로 인해 워크플로에 해결할 수 없는 상황이 발생한 경우 워크플로를 종료합니다. 예를 들어 워크플로는 워크플로 인스턴스에 대해 더 이상 유효하지 않은 저장소의 정보와 같은 환경 조건에 의존할 수 있습니다.
-* **종료 및 다시 시도** - **종료**&#x200B;와 유사합니다. 단, 이 옵션은 원래 페이로드, 제목, 설명을 사용하여 새 워크플로 인스턴스를 시작합니다.
+* **종료 후 다시 시도** - 와 유사 **종료** 단, 새 워크플로우 인스턴스가 원래 페이로드, 제목 및 설명을 사용하여 시작됩니다.
 
 실패를 조사한 다음 그 직후에 워크플로를 다시 시작하거나 종료하려면 다음 단계를 사용하십시오.
 
 1. 탐색을 사용하여 **도구**&#x200B;를 선택한 다음 **워크플로**&#x200B;를 선택합니다.
-1. **실패**&#x200B;를 선택하여 정상적으로 완료되지 않은 워크플로 인스턴스 목록을 표시합니다.
+1. 선택 **실패** 따라서 정상적으로 완료되지 않은 워크플로 인스턴스 목록을 표시할 수 있습니다.
 1. 특정 항목을 선택한 다음 적절한 작업을 선택합니다.
 
    ![wf-47](assets/wf-47.png)
@@ -121,7 +117,7 @@ ht-degree: 84%
 
 여러 서비스 구성을 생성하여 서로 다른 기준을 충족하는 워크플로 인스턴스를 제거할 수도 있습니다. 예를 들어 특정 워크플로 모델의 인스턴스가 예상 시간보다 오래 실행될 때 해당 인스턴스를 제거하는 구성을 생성할 수 있습니다. 저장소 크기를 최소화하기 위해 특정 일수가 지난 후 완료된 모든 워크플로를 제거하는 다른 구성을 생성할 수도 있습니다.
 
-서비스를 구성하려면 다음을 사용합니다. [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성 추가](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). 다음 표에서는 두 방법 중 하나에 필요한 속성을 설명합니다.
+서비스를 구성하려면 다음을 사용합니다. [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성 추가](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). 다음 표에서는 두 가지 방법에 필요한 속성을 설명합니다.
 
 >[!NOTE]
 >
@@ -197,7 +193,7 @@ ht-degree: 84%
 
 ### 외부 스토리지의 메타데이터를 위한 API {#apis-for-metadata-external-storage}
 
-변수를 외부에 저장하려면 워크플로에서 제공하는 API를 구현해야 합니다.
+변수를 외부에 저장하려면 워크플로에서 표시하는 API를 구현합니다.
 
 UserMetaDataPersistenceContext
 

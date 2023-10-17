@@ -1,18 +1,14 @@
 ---
 title: 워크플로 시작
-seo-title: Starting Workflows
-description: AEM에서 워크플로우를 시작하는 방법을 알아봅니다.
-seo-description: Learn how to start Workflows in AEM.
-uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
+description: 수동 또는 자동으로 다양한 방법을 사용하여 시작할 수 있도록 Adobe Experience Manager에서 워크플로를 관리하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '799'
 ht-degree: 5%
 
 ---
@@ -93,10 +89,10 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >다음 **[임시](/help/sites-developing/workflows.md#transient-workflows)** 표시기에는 워크플로 내역이 유지되지 않는 워크플로가 표시됩니다.
+   >다음 **[임시](/help/sites-developing/workflows.md#transient-workflows)** 표시기에는 워크플로 내역이 지속되지 않는 워크플로가 표시됩니다.
 
 1. 선택 **워크플로우 시작** 을 클릭합니다.
-1. 워크플로 실행 대화 상자가 열려 다음을 지정할 수 있습니다.
+1. 워크플로 실행 대화 상자가 열리면 다음을 지정할 수 있습니다.
 
    * **페이로드**
 
@@ -115,13 +111,13 @@ ht-degree: 5%
 ## 런처 구성 만들기 {#creating-a-launcher-configuration}
 
 1. 다음 위치로 이동 **워크플로우 런처** 콘솔 사용 **도구**, **워크플로**, 그런 다음 **런처**.
-1. 선택 **만들기**, 그런 다음 **런처 추가** 대화 상자를 열려면:
+1. 선택 **만들기**, 그런 다음 **런처 추가** 대화 상자를 열려면
 
    ![wf-105](assets/wf-105.png)
 
    * **이벤트 유형**
 
-     워크플로우를 시작할 이벤트 유형:
+     워크플로우를 시작하는 이벤트 유형:
 
       * 작성일
       * 수정됨
@@ -175,7 +171,7 @@ ht-degree: 5%
      이 런처 속성은 쉼표로 구분된 항목 목록입니다. &quot;
 
       * `property-name` 모두 무시 `jcr` 지정된 속성 이름에서 트리거되는 이벤트입니다. &quot;
-      * `event-user-data:<*someValue*>` 이 포함된 모든 이벤트를 무시합니다. `*<someValue*`> `user-data` 다음을 통해 설정 [`ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `event-user-data:<*someValue*>` 이 포함된 모든 이벤트를 무시합니다. `*<someValue*`> `user-data` 다음을 통해 설정 [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      예:
 
@@ -187,7 +183,7 @@ ht-degree: 5%
 
 1. 선택 **만들기**&#x200B;를 클릭하여 런처를 만들고 콘솔로 돌아갑니다.
 
-   적절한 이벤트가 발생하면 런처가 트리거되고 워크플로우가 시작됩니다.
+   적절한 이벤트가 발생하면 런처가 트리거되고 워크플로가 시작됩니다.
 
 ## 런처 구성 관리 {#managing-a-launcher-configuration}
 

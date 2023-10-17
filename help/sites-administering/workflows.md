@@ -1,16 +1,12 @@
 ---
 title: 워크플로 관리
-seo-title: Administering Workflows
-description: AEM에서 워크플로우를 관리하는 방법을 알아봅니다.
-seo-description: Learn how to administer workflows in AEM.
-uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
+description: 워크플로우를 사용하여 Adobe Experience Manager 활동을 자동화하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 2%
@@ -42,7 +38,6 @@ ht-degree: 2%
 >* 워크플로우 모델 만들기 및 워크플로우 기능 확장: [워크플로우 개발 및 확장](/help/sites-developing/workflows.md).
 >* 중요한 서버 리소스를 사용하는 워크플로우의 성능 향상: [동시 워크플로우 처리](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
-
 
 ## 워크플로우 모델 및 인스턴스 {#workflow-models-and-instances}
 
@@ -85,7 +80,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->오류가 발생하면 서비스/단계 구현에서 오류 시나리오에 대한 동작을 처리해야 합니다. 워크플로우 엔진 자체에서 작업을 다시 시도한 다음 오류를 기록하고 인스턴스를 중지합니다.
+>오류가 발생하면 서비스/단계 구현에서 오류 시나리오에 대한 동작을 처리해야 합니다. 워크플로 엔진 자체가 작업을 다시 시도한 다음 오류를 기록하고 인스턴스를 중지합니다.
 
 ## 워크플로 상태 및 작업 {#workflow-status-and-actions}
 
@@ -102,13 +97,13 @@ ht-degree: 2%
 >
 >프로세스 단계가 실행되어 오류가 발생하는 경우 단계가 관리자의 받은 편지함에 나타나고 워크플로우 상태는 입니다. **실행 중**.
 
-현재 상태에 따라 워크플로 인스턴스의 일반적인 진행에 개입해야 하는 경우 실행 중인 워크플로 인스턴스에 대해 작업을 수행할 수 있습니다.
+워크플로 인스턴스의 일반 진행에 개입해야 하는 경우 상태에 따라 실행 중인 워크플로 인스턴스에 대해 작업을 수행할 수 있습니다.
 
 * **일시 중단**: 일시 중단하면 워크플로 상태가 일시 중단됨으로 변경됩니다. 아래의 주의 사항을 참조하십시오.
 
 >[!CAUTION]
 >
->워크플로우 상태를 &quot;일시 중단&quot;으로 표시하는 것은 알려진 문제입니다. 이 상태에서는 받은 편지함의 일시 중단된 워크플로 항목에 대한 작업을 수행할 수 있습니다.
+>워크플로우 상태를 &quot;일시 중단&quot;으로 표시하는 것은 알려진 문제입니다. 이 상태에서는 받은 편지함에서 일시 중단된 워크플로우 항목에 대해 작업을 수행할 수 있습니다.
 
 * **다시 시작**: 동일한 구성을 사용하여 일시 중지된 워크플로우를 일시 중지된 실행 시점과 동일한 지점에서 다시 시작합니다.
 * **종료**: 워크플로우 실행을 종료하고 상태를 로 변경합니다. **중단됨**. 중단된 워크플로 인스턴스는 다시 시작할 수 없습니다.

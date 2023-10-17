@@ -1,14 +1,14 @@
 ---
 title: Content Services
-description: Content Services
+description: AEM Mobile Content Services를 사용하여 AEM에서 관리하는 콘텐츠를 요청하는 방법에 대해 알아봅니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 3%
+source-wordcount: '310'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 >
 >콘텐츠 서비스 기능은 미리보기 용도로만 문서화됩니다.
 >
->이는 6.3 GA 서비스 팩 1 릴리스와 함께 변경될 수 있습니다.
+>6.3 서비스 팩 1의 릴리스와 함께 변경될 수 있습니다.
 
 AEM Mobile Content Services는 AEM에서 관리하는 콘텐츠를 요청하기 위한 간단한 기능입니다. 이렇게 하면 모든 앱 개발자가 JCR(AEM content repository) 및 Sling(웹 프레임워크)에 대한 깊은 지식이 없이도 컨텐츠를 검색할 수 있는 고성능 방법을 제공합니다. 이를 통해 요청한 애플리케이션을 콘텐츠 저장소에서 분리할 수 있습니다.
 

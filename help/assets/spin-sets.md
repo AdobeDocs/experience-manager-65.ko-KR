@@ -1,6 +1,6 @@
 ---
 title: 스핀 세트
-description: Dynamic Media에서 스핀 세트 작업 방법 알아보기
+description: Dynamic Media에서 스핀 세트를 만들어 세부 정보를 볼 수 있도록 임의의 각도에서 개체를 돌려 보는 실제 작업을 시뮬레이션하는 방법에 대해 알아봅니다.
 uuid: 379a20a3-6a17-499a-b0f1-3a835b97aa7b
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1974'
 ht-degree: 9%
 
 ---
@@ -117,10 +117,11 @@ ht-degree: 9%
 >You can also create spin sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **중요 사항:** 배치 세트는 IPS(이미지 프로덕션 시스템)에 의해 에셋 수집의 일부로 만들어지며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 >
 >에서 &quot;이미지 세트 및 스핀 세트를 자동으로 생성하기 위한 일괄처리 집합 사전 설정 만들기&quot;를 참조하십시오. [Dynamic Media 구성 - Scene7 모드](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>
 
 >[!NOTE]
 >
->회전 집합에 이미지가 나타나는 순서입니다. 회전 방향이 360° 시야가 되도록 주문해야 합니다.
+>회전 집합에 이미지가 나타나는 순서입니다. 스핀이 360도 부드럽게 보이도록 주문하십시오.
 
 회전 집합을 만들 때 Adobe은 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
 
@@ -149,6 +150,7 @@ ht-degree: 9%
    * [회전 집합 편집기] 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 자산 추가]**.
 
    * 스핀 세트 편집기 페이지 가운데 있는 아래에서 **[!UICONTROL 자산 선택기를 열려면 탭하십시오.]**.
+
    스핀 세트에 포함할 자산을 탭하여 선택합니다. Selected assets have a checkmark icon over them. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 선택]**.
 
    With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. 필터를 선택한 다음 **[!UICONTROL 필터]** 아이콘을 클릭합니다. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
@@ -159,7 +161,7 @@ ht-degree: 9%
 
 1. 세트에 자산을 추가하면 영숫자 순서로 자산이 자동으로 추가됩니다. 에셋을 추가한 후 수동으로 에셋을 재정렬하거나 정렬할 수 있습니다.
 
-   필요한 경우 에셋의 파일 이름 오른쪽으로 에셋의 순서 변경 아이콘을 드래그하여 세트 목록의 위 또는 아래로 이미지 순서를 변경합니다.
+   필요한 경우 에셋의 파일 이름 오른쪽으로 에셋의 순서 변경 아이콘을 드래그하여 세트 목록 위 또는 아래로 이미지의 순서를 변경합니다.
 
    ![회전 세트에서 프레임 11을 새 위치로 드래그하여 재정렬합니다](assets/6_5_spinset-reorderassets.png).
 
@@ -183,7 +185,7 @@ ht-degree: 9%
 
 **회전 집합을 보려면:**
 
-1. 개별 에셋의 속성을 열 때. 속성은 선택한 자산이 (다음 아래)의 멤버로 설정되는 항목을 나타냅니다. **[!UICONTROL 세트 구성원]**). 전체 세트를 볼 수 있도록 세트 이름을 선택합니다.
+1. 개별 에셋의 속성을 열 때. 속성은 선택한 에셋이 (아래에) 멤버로 설정되는 항목을 나타냅니다. **[!UICONTROL 세트 구성원]**). 전체 세트를 볼 수 있도록 세트 이름을 선택합니다.
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
@@ -225,7 +227,6 @@ Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로
    * 에셋을 삭제하려면 에셋을 선택한 다음 를 선택합니다 **[!UICONTROL 자산 삭제]**.
    * 사전 설정을 적용하려면 [사전 설정] 아이콘을 선택하고 사전 설정을 선택합니다.
    * 전체 회전 세트를 삭제하려면 회전 세트로 이동하여 선택한 다음 를 선택합니다 **[!UICONTROL 삭제]**
-
    >[!NOTE]
    >
    >회전 세트로 이동하여 회전 세트의 이미지를 편집할 수 있습니다. **[!UICONTROL 구성원 설정]** 왼쪽 레일에서 개별 에셋의 연필 아이콘을 선택하여 편집 창을 엽니다.

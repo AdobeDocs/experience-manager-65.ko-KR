@@ -1,17 +1,15 @@
 ---
 title: PhoneGap CLI를 사용한 앱 개발
-description: PhoneGap CLI를 사용하여 앱을 개발하는 방법에 대해 알아봅니다.
-uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
+description: 부트스트랩된 개발 환경을 사용하여 PhoneGap CLI를 사용하여 모바일용 앱을 개발하는 방법에 대해 알아봅니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 1%
+source-wordcount: '673'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +21,7 @@ ht-degree: 1%
 
 개발 환경을 구성한 경우 개발자는 언제든지 디바이스 또는 에뮬레이터 내에서 앱을 실행할 수 있습니다.
 
-다음 예를 실행하려면 Xcode로 OS X(Mac)를 실행하는 시스템이나 Android™ SDK가 설치된 Mac/Win/Linux 시스템이 필요합니다.
+다음 예를 실행하려면 Xcode로 macOS X를 실행하는 시스템이나 Android™ SDK가 설치된 Mac/Win/Linux 시스템이 필요합니다.
 
 ## 개발 환경 Bootstrap {#bootstrap-your-development-environment}
 
@@ -153,7 +151,7 @@ phonegap run <platform> --emulator
 
 >[!NOTE]
 >
-변수 값을 보려면 현재 메서드에서 마우스를 가져갑니다.
+현재 메서드의 변수 값을 보려면 마우스를 가리킵니다.
 
 ## 다음 단계 {#the-next-steps}
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media에서 3D 자산 작업
-description: Dynamic Media에서 3D 자산으로 작업하는 방법을 알아봅니다.
+description: Dynamic Media에서 3D 자산을 업로드, 관리, 보기 및 몰입형 환경으로 전달하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -8,9 +8,9 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: '2354'
 ht-degree: 3%
 
 ---
@@ -54,9 +54,9 @@ Dynamic Media은 다음과 같은 3D 형식을 지원합니다.
 >
 >3D 자산은 Dynamic Media - 하이브리드 모드에서 지원되지 않습니다.
 
-Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관리자가 Dynamic Media - Scene7 모드에서 Dynamic Media Cloud Services을 이미 활성화하고 구성했는지 확인하십시오.
+Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관리자가 Dynamic Media - Scene7 모드에서 Dynamic Media Cloud Service을 이미 활성화하고 구성했는지 확인하십시오.
 
-다음을 참조하십시오 [Dynamic Media Cloud Services 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md).
+다음을 참조하십시오 [Dynamic Media Cloud Service 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md).
 
 1. **3D 자산 업로드**
 

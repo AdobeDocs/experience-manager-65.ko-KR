@@ -1,14 +1,14 @@
 ---
 title: AEM PhoneGap 시작
-description: 개발자를 위한 starterkit에 대해 알아봅니다.
+description: Adobe Experience Manager Mobile 개발의 기본 사항을 안내하기 위해 starterkit을 사용하는 방법을 알아봅니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit
 
-Starterkit은 프로젝트 생성 및 거버넌스, 필요한 도구 설치, Maven Archetype 정의, 빌드, 배포 및 자체 경험 작성에 이르기까지 AEM Mobile 개발의 기본 사항을 안내하여 빠르게 진행할 수 있습니다.
+Starterkit을 사용하면 AEM Mobile 개발의 기본 사항을 안내하여 빠르게 진행할 수 있습니다. 프로젝트 제작 및 거버넌스, 필요한 도구 설치, Maven Archetype 정의, 구축, 배포 및 자체 경험 작성으로 시작합니다.
 
 개발자는 이 예제를 PhoneGap을 사용하여 AEM Mobile 애플리케이션을 시도하는 시작점으로 사용할 수 있습니다. Starterkit과 참조 애플리케이션을 통해 실행할 경우 풍부한 모바일 애플리케이션을 만드는 기본 사항을 확실하게 이해할 수 있습니다.
 
@@ -38,7 +38,7 @@ Starterkit은 프로젝트 생성 및 거버넌스, 필요한 도구 설치, Mav
 
 ## 템플릿 및 구성 요소 {#templates-and-components}
 
-AEM *템플릿* 및 *구성 요소* lob(기간 업무) 소유자가 사용자 정의 경험을 만들 수 있도록 합니다. *템플릿 *및 *구성 요소* 는 즉시 사용할 수 있거나 개발자인 사용자가 기존 구성 요소를 확장하거나 그린필드(고급)를 만들어 사용자 정의 개발할 수 있습니다. *템플릿* 및 *구성 요소* aem 작성자가 끌어다 놓아 매력적인 관련 경험을 만들 수 있는 방법입니다.
+AEM *템플릿* 및 *구성 요소* lob(기간 업무) 소유자가 사용자 정의 경험을 만들 수 있도록 합니다. *템플릿 *및 *구성 요소* 는 즉시 사용할 수 있거나 개발자인 사용자가 기존 구성 요소를 확장하거나 그린필드(고급)를 만들어 사용자 정의 개발할 수 있습니다. *템플릿* 및 *구성 요소* AEM 작성자가 끌어다 놓아 매력적인 관련 경험을 만들 수 있는 방법입니다.
 
 1. [구성 요소 만들기](/help/sites-developing/components.md)
 1. [템플릿 만들기](/help/sites-developing/templates.md)
