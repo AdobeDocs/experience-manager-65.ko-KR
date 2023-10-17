@@ -1,19 +1,15 @@
 ---
 title: 컨텍스트 내 중재
-seo-title: In-Context Moderation
-description: 중재자 작업 수행 방법
-seo-description: How to perform moderator actions
-uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
+description: 관리자와 신뢰할 수 있는 커뮤니티 구성원이 Adobe Experience Manager 커뮤니티에서 중재자 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -40,11 +36,11 @@ AEM Communities의 경우 커뮤니티 콘텐츠가 게시된 게시된 게시�
 
 ## 예 {#example}
 
-사용 [Geometrixx 참여](http://localhost:4503/content/sites/engage/en.html) 사이트 생성 시점 [AEM Communities 시작하기](getting-started.md)에서는 아래와 같이 게시 환경에서 다양한 중재 활동을 경험할 수 있는 포럼에서 스레드를 빠르게 설정할 수 있습니다.
+사용 [Geometrixx 참여](http://localhost:4503/content/sites/engage/en.html) 사이트 생성 시점 [AEM Communities 시작하기](getting-started.md), 포럼에서 게시 환경의 다양한 중재 활동을 경험할 스레드를 설정할 수 있습니다. 아래를 참조하십시오.
 
-Aaron McDonald(aaron.mcdonald@mailinator.com)는 사이트를 만들 때 커뮤니티 참여 중재자 그룹에 추가하여 신뢰할 수 있는 커뮤니티 구성원으로 확인되었습니다.
+아론 맥도날드 (`aaron.mcdonald@mailinator.com`)이(가) 사이트를 만들 때 community-engage-moderators 그룹에 추가되어 신뢰할 수 있는 커뮤니티 구성원으로 확인되었습니다.
 
-Rebekah Larsen(rebekah.larsen@trashymail.com)은 다음을 사용하여 커뮤니티 참여 구성원 그룹의 구성원으로 추가할 수 있습니다. [구성원 콘솔](members.md).
+레베카 라르센 (`rebekah.larsen@trashymail.com`)을 사용하여 community-engage-members 그룹의 멤버로 추가할 수 있습니다. [구성원 콘솔](members.md).
 
 커뮤니티 사용자 그룹에 대한 자세한 내용은 다음을 참조하십시오. [사용자 및 사용자 그룹 관리](users.md).
 
@@ -91,7 +87,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)은 다음을 사용하여 커뮤�
 
 다음은 (5)에 로그인하지 않은 사이트 방문자가 본 포럼의 보기입니다.
 
-익명 사이트 방문자는 포럼을 볼 수만 있고 콘텐츠를 게시하거나 중재 작업을 수행할 수는 없습니다.
+익명 사이트 방문자는 포럼을 볼 수만 있고 콘텐츠를 게시하거나 중재 작업을 수행할 수 없습니다.
 
 ![community-forum-visitor](assets/community-forum-visitor.png)
 
@@ -124,11 +120,11 @@ Boid가 Andrew가 게시한 콘텐츠에 플래그를 지정하려면 Flag를 �
 
 ![community-admin-포럼](assets/community-admin-forum.png)
 
-관리 메뉴 항목을 선택하여 [관리 콘솔](moderation.md) 게시 환경에서.
+에 액세스할 수 있도록 관리 메뉴 항목 선택 [관리 콘솔](moderation.md) 게시 환경.
 
 관리자의 경우, Geometrixx 참여 커뮤니티 사이트의 콘텐츠뿐만 아니라 중재 가능한 모든 콘텐츠가 표시됩니다.
 
-검색 필터는 열리거나 닫히거나 전환하는 사이드 패널입니다.
+검색 필터는 열거나 닫는 사이드 패널입니다.
 
 로그아웃.
 
@@ -136,7 +132,7 @@ Boid가 Andrew가 게시한 콘텐츠에 플래그를 지정하려면 Flag를 �
 
 ### 커뮤니티 중재자(#2) {#community-moderator}
 
-커뮤니티 중재자인 Aaron McDonald (aaron.mcdonal@mailinator.com)로 로그인하고 포럼 을 선택하여 스레드에 액세스한 다음 벌새 게시물에 대해 자세히 알아보십시오.
+Aaron McDonald로 로그인(`aaron.mcdonal@mailinator.com`), 커뮤니티 중재자, 포럼 을 차례로 선택하여 스레드에 액세스한 다음 벌새 게시물에 대해 자세히 읽어보십시오.
 
 알림:
 
@@ -147,11 +143,11 @@ Boid가 Andrew가 게시한 콘텐츠에 플래그를 지정하려면 Flag를 �
 
 ![community-forum-moderator](assets/community-forum-moderator.png)
 
-관리 메뉴 항목을 선택하여 [관리 콘솔](moderation.md) 게시 환경에서.
+에 액세스할 수 있도록 관리 메뉴 항목 선택 [관리 콘솔](moderation.md) 게시 환경.
 
 커뮤니티 중재자의 경우 Geometrixx 참여 커뮤니티 사이트의 중재 가능한 콘텐츠만 표시됩니다.
 
-커뮤니티 중재자는 관리자와 동일한 옵션을 가지지만(이미지가 검색 사이드바를 닫은 상태로 전환됨) 다른 AEM 콘솔에 액세스할 수 없습니다.
+커뮤니티 중재자에는 관리자와 동일한 옵션(이미지가 검색 사이드바를 닫은 상태로 전환됨)이 있지만 다른 AEM 콘솔에는 액세스할 수 없습니다.
 
 로그아웃.
 
@@ -159,7 +155,7 @@ Boid가 Andrew가 게시한 콘텐츠에 플래그를 지정하려면 Flag를 �
 
 ### 콘텐츠 작성자(#1) {#content-author}
 
-스레드를 시작한 커뮤니티 멤버인 Rebekah Larsen(rebekah.larsen@mailinator.com)으로 로그인하고 포럼 을 선택하여 스레드에 액세스한 다음 hummingbird 게시물에 대해 자세히 알아보기
+Rebekah Larsen으로 로그인(`rebekah.larsen@mailinator.com`) 스레드를 시작하고 포럼 을 선택하여 스레드에 액세스한 다음 벌새 게시물에 대해 자세히 읽기 를 선택하는 커뮤니티 멤버입니다.
 
 알림:
 

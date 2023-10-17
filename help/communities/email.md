@@ -1,6 +1,6 @@
 ---
 title: 이메일 구성
-description: 커뮤니티에 대한 이메일 구성
+description: Adobe Experience Manager 커뮤니티에 대한 이메일 알림 및 구독을 구성하는 방법을 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '824'
 ht-degree: 3%
 
 ---

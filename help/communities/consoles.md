@@ -1,26 +1,22 @@
 ---
 title: 커뮤니티 콘솔
-seo-title: Communities Consoles
-description: 커뮤니티 콘솔 설명
-seo-description: Community Consoles explained
-uuid: 1c5b2600-9059-4b44-9741-f1b627423d3c
+description: 전역 탐색 패널의 작성자 환경에서 사용할 수 있는 Adobe Experience Manager 커뮤니티 콘솔에 대해 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
 
 # 커뮤니티 콘솔 {#communities-consoles}
 
-전역 탐색 패널의 작성자 환경에서 사용할 수 있는 AEM Communities 콘솔에서는 다음과 같은 관리 작업에 액세스할 수 있습니다.
+전역 탐색 패널의 작성자 환경에서 사용할 수 있는 AEM Communities의 콘솔은 다음과 같은 관리 작업에 대한 액세스를 제공합니다.
 
 * [커뮤니티 사이트 만들기](sites-console.md)
 * 추가 중 [그룹](groups.md) 사이트 내에서 중첩됨
@@ -30,17 +26,17 @@ ht-degree: 1%
 * 만들기 [사용자 정의 배지](badges.md)
 * 구성 [ugc용 기본 저장소](srp-config.md)
 
-날짜 [UGC 스토리지](working-with-srp.md) 는 작성자 및 게시 환경에서 공유되는 공통 저장소인 [관리 콘솔](moderation.md)작성자 및 게시 환경 모두에서 사용할 수 있는 는 UGC의 독립 인스턴스에서 작동합니다.
+날짜 [UGC 스토리지](working-with-srp.md) 는 작성자 및 게시 환경에서 공유하는 공통 저장소인 [관리 콘솔](moderation.md)작성자 및 게시 환경 모두에서 사용할 수 있는 는 UGC의 독립 인스턴스에서 작동합니다.
 
 작성 환경에서 관리자 권한으로 로그인한 후 `Communities` 콘솔은 탐색 및 도구 콘솔에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
->게시 환경에서 [커뮤니티 사이트](sites-console.md) 다음을 표시합니다. `Administration` 로그인한 멤버가 적절한 권한을 가지고 있는 경우의 메뉴 항목.
+>게시 환경에서 [커뮤니티 사이트](sites-console.md) 다음 항목을 표시합니다. `Administration` 로그인한 멤버가 적절한 권한을 가지고 있는 경우의 메뉴 항목.
 
 ## 전역 탐색 패널 {#global-navigation-panel}
 
-다음 항목 선택 `Adobe Experience Manager` 아이콘 왼쪽 위 모서리에 있는 을 클릭하여 전역 탐색 패널을 열고 다음 두 아이콘에 액세스합니다.
+다음 항목 선택 `Adobe Experience Manager` 아이콘 을 사용하여 전역 탐색 패널을 열고 다음 두 아이콘에 액세스할 수 있습니다.
 
 * [탐색 콘솔](#navigation-console)
 * [도구 콘솔](tools.md)
@@ -53,19 +49,19 @@ ht-degree: 1%
 
 * [Sites](sites-console.md)
 
-   사이트 콘솔은 커뮤니티 사이트 및 해당 사이트를 만들고 관리하기 위한 목적으로 작성 환경에서 액세스할 수 있습니다 [그룹](groups.md).
+  사이트 콘솔은 커뮤니티 사이트 및 해당 사이트를 만들고 관리하기 위한 작성 환경에서 액세스할 수 있습니다 [그룹](groups.md).
 
 * [관리](moderation.md)
 
-   중재 콘솔은 UGC와 작성 환경에서 벌크 중재에 사용됩니다. 역할이 할당된 커뮤니티 구성원에 대해 게시 환경에서 유사한 벌크 중재 콘솔에 액세스할 수 있습니다. [커뮤니티 중재자](users.md#publishenvironmentusersandgroups) 하나 이상의 커뮤니티 사이트용.
+  중재 콘솔은 UGC와 작성 환경에서 벌크 중재에 사용됩니다. 역할이 할당된 커뮤니티 구성원에 대해 게시 환경에서 유사한 벌크 중재 콘솔에 액세스할 수 있습니다. [커뮤니티 중재자](users.md#publishenvironmentusersandgroups) 하나 이상의 커뮤니티 사이트용.
 
 * [구성원, 그룹](members.md)
 
-   구성원 및 그룹 콘솔은 작성 환경의 게시 환경에 있는 커뮤니티 구성원 및 구성원 그룹을 관리하기 위한 것입니다.
+  구성원 및 그룹 콘솔은 작성 환경에서 게시 환경에 있는 커뮤니티 구성원 및 구성원 그룹을 관리하기 위한 것입니다.
 
 * [보고서](reports.md)
 
-   보고서 콘솔은 커뮤니티 사이트에 이 있을 때 할당, 페이지 보기 및 게시된 콘텐츠(UGC)에 대한 보고서가 생성될 수 있는 곳입니다. [Adobe Analytics 활성화됨](sites-console.md#analytics). 콘솔은 작성 환경에서만 사용할 수 있습니다.
+  보고서 콘솔은 커뮤니티 사이트에 이 있을 때 할당, 페이지 보기 및 게시된 콘텐츠(UGC)에 대한 보고서가 생성될 수 있는 곳입니다. [Adobe Analytics 활성화됨](sites-console.md#analytics). 콘솔은 작성자 환경에서만 사용할 수 있습니다.
 
 ## 도구 콘솔 {#tools-console}
 

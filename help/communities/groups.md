@@ -1,21 +1,17 @@
 ---
 title: 커뮤니티 그룹 콘솔
-seo-title: Community Groups Console
-description: 그룹 콘솔을 사용하여 커뮤니티 그룹을 만들 수 있습니다.
-seo-description: Groups console lets you create Community groups
-uuid: 21e2bde3-7354-4193-bcb3-c672c6342252
+description: 커뮤니티 사이트의 템플릿 구조에 그룹 기능이 포함된 경우 커뮤니티 그룹을 만들 수 있는 커뮤니티 그룹 콘솔에 대해 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1688'
 ht-degree: 2%
 
 ---
@@ -28,7 +24,7 @@ ht-degree: 2%
 * 작성 환경에만 사이트 생성 마법사와 유사한 그룹 생성 마법사가 있습니다.
 * 커뮤니티 사이트 구조 또는 커뮤니티 그룹 구조에 그룹 기능을 추가할 때 구성원이 게시 환경에 그룹을 만들 수 있는지 여부를 구성할 수 있습니다.
 
-포함된 세 그룹 템플릿 중 `Reference Group` 템플릿에는 해당 구조에 그룹 기능이 포함되어 있습니다.
+포함된 세 개의 그룹 템플릿 중 `Reference Group` 템플릿에는 해당 구조에 그룹 기능이 포함되어 있습니다.
 
 커뮤니티 그룹의 다른 측면은 다음과 같습니다.
 
@@ -39,7 +35,7 @@ ht-degree: 2%
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
 >
->Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.
+>Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
 -->
 
 >[!NOTE]
@@ -52,17 +48,17 @@ ht-degree: 2%
 
 그룹 콘솔에 액세스하려면:
 
-* 작성자의 경우 관리자 권한으로 로그인합니다.
+* 작성자에서 관리자 권한으로 로그인합니다.
 * 전역 탐색에서: **[!UICONTROL 커뮤니티]** > **[!UICONTROL 사이트]**.
-* 기존 커뮤니티 사이트 폴더를 선택하여 엽니다.
+* 기존 커뮤니티 사이트 폴더를 선택하여 열 수 있습니다.
 * 폴더 내에서 커뮤니티 사이트의 인스턴스를 선택합니다.
 
    * 커뮤니티 사이트의 구조에는 그룹 기능이 포함되어야 합니다.
-   * 이 스크린샷은 다음 시간 이후에 시작 자습서에서 찍은 것입니다. [게시할 때 그룹 만들기](/help/communities/published-site.md).
+   * 다음 스크린샷은 다음 시간 이후에 시작 자습서에서 찍은 것입니다. [게시할 때 그룹 만들기](/help/communities/published-site.md).
 
   ![create-group](assets/create-group.png)
 
-* 다음 항목 선택 **그룹 폴더** 열려고.
+* 다음 항목 선택 **그룹 폴더** 그럼 열어보세요
 
   열면 작성자 또는 게시에서 만든 기존 그룹이 모두 표시됩니다.
 
@@ -115,7 +111,7 @@ ht-degree: 2%
 
 프레임워크는 `Twitter Bootstrap` 를 통해 응답형의 유연한 디자인을 사이트에 도입할 수 있습니다. 미리 로드된 여러 Bootstrap 테마 중 하나를 선택하여 선택한 커뮤니티 그룹 템플릿을 스타일링하거나, Bootstrap 테마를 업로드할 수 있습니다.
 
-선택하면 테마가 불투명한 파란색 확인 표시로 오버레이됩니다.
+선택하면 테마가 불투명 파란색 확인 표시로 겹쳐집니다.
 
 상위 사이트의 테마와 다른 테마를 선택할 수 있습니다.
 
@@ -136,7 +132,7 @@ ht-degree: 2%
 * 이미지 크기는 이미지 너비가 다음과 같은 경우 조절되지 않습니다.
 
    * 브라우저의 너비보다 작으면 이미지가 가로로 반복됩니다.
-   * 브라우저의 너비보다 크면 이미지가 잘린 것처럼 보입니다.
+   * 브라우저의 너비보다 크면 이미지가 잘린 것으로 표시됩니다.
 
 ### 3단계: 설정 {#step-settings}
 
@@ -148,13 +144,13 @@ ht-degree: 2%
 
 기본적으로 상위 커뮤니티 사이트의 중재자 목록이 상속됩니다.
 
-해당 그룹별 중재자를 추가할 수 있습니다. (게시 환경에서) 구성원을 검색하여 중재자로 추가합니다.
+그룹에 특별히 중재자를 추가할 수 있습니다. (게시 환경에서) 구성원을 검색하여 중재자로 추가합니다.
 
 **그룹 관리자**
 
 기본적으로 상위 커뮤니티 사이트 관리자는 그룹 관리자도 됩니다.
 
-그러나 독립적인 그룹 관리자를 지정할 수 있습니다. 그룹 관리자는 자신의 그룹(예: G1)을 관리하고 G1 아래에 중첩된 하위 그룹을 만들 수 있습니다. 또한 하위 그룹에 대해 서로 다른 관리자를 지정할 수 있습니다.
+그러나 독립적인 그룹 관리자를 지정할 수 있습니다. 그룹 관리자는 그룹(예: G1)을 관리하고 G1 아래에 중첩된 하위 그룹을 만들 수 있습니다. 하위 그룹에 서로 다른 관리자를 추가로 할당할 수 있습니다.
 
 따라서 사용자 U1은 그룹 G1의 관리자일 수 있고 중첩 그룹 G2의 일반 사용자일 수 있습니다.
 
@@ -231,11 +227,11 @@ ht-degree: 2%
 
 템플릿과 사이트 간에 연결이 유지되지 않으므로 다른 커뮤니티 그룹 템플릿을 선택해도 기존 커뮤니티 그룹 사이트에는 영향을 주지 않습니다.
 
-대신, [구조](#modify-structure) 하위 커뮤니티 중 을(를) 수정할 수 있습니다.
+대신, [구조](#modify-structure) 하위 커뮤니티의 을(를) 수정할 수 있습니다.
 
 ### 구조 수정 {#modify-structure}
 
-구조 패널에서는 작성 또는 게시 환경에서 하위 커뮤니티 사이트를 만들 때 선택한 커뮤니티 그룹 템플릿에서 처음에 만든 구조를 수정할 수 있습니다. 패널에서 다음을 수행할 수 있습니다.
+구조 패널에서는 작성자 또는 게시 환경에서 하위 커뮤니티 사이트를 만들 때 선택한 커뮤니티 그룹 템플릿에서 처음에 만든 구조를 수정할 수 있습니다. 패널에서 다음을 수행할 수 있습니다.
 
 * 추가 드래그 앤 드롭 [커뮤니티 기능](/help/communities/functions.md) 를 사이트 구조에 추가합니다.
 * 사이트 구조의 커뮤니티 기능 인스턴스에서 다음을 수행합니다.
@@ -253,7 +249,7 @@ ht-degree: 2%
 >
 >표시 제목은 부작용 없이 변경할 수 있지만 커뮤니티 사이트에 속한 커뮤니티 기능의 URL 이름은 편집하지 않는 것이 좋습니다.
 >
->예를 들어 URL의 이름을 바꾸면 기존 UGC가 이동하지 않아 UGC가 &#39;손실&#39;되는 효과가 있습니다.
+>예를 들어 URL의 이름을 바꾸면 기존 UGC가 이동하지 않으므로 UGC가 &#39;손실&#39;되는 효과가 있습니다.
 
 >[!CAUTION]
 >
@@ -272,7 +268,7 @@ ht-degree: 2%
 * [커뮤니티 그룹 테마](#community-group-theme)
 * [커뮤니티 그룹 브랜딩](#community-group-branding)
 
-   * 패널 아래쪽으로 스크롤하여 브랜드 이미지를 변경합니다.
+   * 브랜드 이미지를 변경할 수 있도록 패널 하단으로 스크롤합니다.
 
 ### 설정 수정 {#modify-settings}
 
@@ -280,11 +276,11 @@ ht-degree: 2%
 
 ### 멤버십 수정 {#modify-membership}
 
-다음 [멤버십](#membership) 패널은 정보 제공용입니다. 설정된 그룹 멤버십의 유형을 선택적이든 필수적이든 제한적이든 변경할 수 없습니다.
+다음 [멤버십](#membership) 패널은 정보 제공용입니다. 설정된 그룹 멤버십의 유형을 선택, 필수 또는 제한으로 변경할 수 없습니다.
 
 ### 썸네일 수정 {#modify-thumbnail}
 
-다음 [축소판](#thumbnail) 패널을 사용하면 이미지를 업로드하여 게시 환경의 커뮤니티 그룹과 사이트 방문자 및 작성 환경의 커뮤니티 사이트 그룹 콘솔을 나타낼 수 있습니다.
+다음 [축소판](#thumbnail) 패널을 사용하면 게시 환경의 커뮤니티 그룹과 작성 환경의 커뮤니티 사이트 그룹 콘솔에서 커뮤니티 그룹을 사이트 방문자로 나타내는 이미지를 업로드할 수 있습니다.
 
 ## 그룹 게시 {#publish-the-group}
 
@@ -292,7 +288,7 @@ ht-degree: 2%
 
 커뮤니티 그룹을 새로 만들거나 수정한 후 다음을 선택하여 그룹을 게시(활성화)할 수 있습니다. `Publish Site` 아이콘.
 
-그룹이 성공적으로 게시되면 메시지가 나타납니다.
+그룹이 성공적으로 게시되면 다음 메시지가 나타납니다.
 
 ![그룹 게시됨](assets/group-published.png)
 
@@ -300,7 +296,7 @@ ht-degree: 2%
 >
 >상위 커뮤니티 사이트 및 상위 그룹은 이미 게시되었습니다.
 >
->커뮤니티 사이트 및 중첩된 그룹은 하향식으로 게시해야 합니다.
+>커뮤니티 사이트 및 중첩 그룹은 하향식 방식으로 게시해야 합니다.
 
 ## 그룹 삭제 {#delete-the-group}
 
