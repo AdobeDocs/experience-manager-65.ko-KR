@@ -1,15 +1,10 @@
 ---
 title: AEM에서 사용자 인터페이스 선택
-description: AEM에서 작동하는 데 사용하는 인터페이스를 구성합니다.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-docset: aem65
+description: Adobe Experience Manager 6.5에서 작동하는 데 사용하는 인터페이스를 구성합니다.
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '735'
 ht-degree: 1%
 
 ---

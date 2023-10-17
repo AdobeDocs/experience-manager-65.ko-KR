@@ -1,17 +1,10 @@
 ---
-title: AEM Sites 작성의 경험 조각
-description: 경험 조각
-uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
-docset: aem65
+title: 경험 조각
+description: Adobe Experience Manager Sites 작성의 경험 조각.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1444'
 ht-degree: 82%
 
 ---
@@ -76,7 +69,7 @@ ht-degree: 82%
 
 * [이러한 폴더에 허용된 템플릿을 구성합니다](#configure-allowed-templates-folder).
 
-폴더를 만들면 다음을 수행할 수 있습니다.
+폴더를 만들면 다음과 같은 작업을 수행할 수 있습니다.
 
 * 경험 조각에 의미 있는 구조를 만들 수 있습니다(예: 분류에 따라).
 

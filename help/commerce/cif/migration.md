@@ -1,8 +1,8 @@
 ---
-title: AEM Commerce Integration Framework(CIF) 추가 기능으로 마이그레이션
-description: 이전 버전에서 AEM Commerce Integration Framework(CIF) 추가 기능으로 마이그레이션하는 방법
+title: CIF(AEM Commerce integration framework) 추가 기능으로 마이그레이션
+description: 이전 버전에서 AEM Commerce integration framework(CIF) 추가 기능으로 마이그레이션하는 방법.
 exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 4%
@@ -15,15 +15,15 @@ ht-degree: 4%
 
 ## CIF 추가 기능
 
-AEM 6.5용 CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). 호환되며 Experience Manager as a Cloud Service용 CIF 추가 기능과 동일한 기능을 제공합니다.
+CIF 추가 기능은 를 통해 AEM 6.5에서 사용할 수 있습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). 호환되며 Experience Manager as a Cloud Service용 CIF 추가 기능과 동일한 기능을 제공합니다.
 
 다음을 참조하십시오 [AEM Content 및 Commerce 시작하기](getting-started.md).
 
-CIF를 배포하는 프로젝트를 지원하기 위해 Adobe은 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components).
+CIF을 배포하는 프로젝트를 지원하기 위해 Adobe은 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components).
 
 ## 제품 카탈로그
 
-CIF 추가 기능은 제품 카탈로그 데이터 가져오기를 지원하지 않습니다. CIF 추가 기능 주도자를 사용하면 외부 상거래 솔루션에 대한 실시간 호출을 통해 제품 및 카탈로그 요청이 온디맨드로 수행됩니다. 상거래 솔루션 통합에 대한 자세한 내용을 보려면 통합 장으로 이동합니다.
+CIF 추가 기능에서는 제품 카탈로그 데이터 가져오기가 지원되지 않습니다. CIF 추가 기능 주체를 사용하면 외부 상거래 솔루션에 대한 실시간 호출을 통해 제품 및 카탈로그 요청이 온디맨드로 수행됩니다. 상거래 솔루션 통합에 대한 자세한 내용을 보려면 통합 장으로 이동합니다.
 
 >[!TIP]
 >
@@ -31,7 +31,7 @@ CIF 추가 기능은 제품 카탈로그 데이터 가져오기를 지원하지 
 
 ## AEM 렌더링을 사용한 제품 카탈로그 경험
 
-클래식 CIF와 함께 카탈로그 블루프린트를 사용하는 경우 제품 카탈로그 워크플로우를 업데이트해야 합니다. 이제 CIF 추가 기능은 AEM 카탈로그 템플릿을 사용하여 제품 카탈로그 경험을 즉시 렌더링합니다. 더 이상 제품 데이터 또는 제품 페이지 복제가 필요하지 않습니다.
+클래식 CIF과 함께 카탈로그 블루프린트를 사용하는 경우 제품 카탈로그 워크플로우를 업데이트해야 합니다. 이제 CIF 추가 기능은 AEM 카탈로그 템플릿을 사용하여 제품 카탈로그 경험을 즉시 렌더링합니다. 더 이상 제품 데이터 또는 제품 페이지 복제가 필요하지 않습니다.
 
 ## 캐시 불가능 데이터 및 쇼핑 상호 작용
 

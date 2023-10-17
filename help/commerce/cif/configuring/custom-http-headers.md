@@ -1,10 +1,10 @@
 ---
 title: 사용자 정의 HTTP 헤더
-description: 사용자 지정 HTTP 헤더 구성
+description: Adobe Experience Manager Commerce에서 사용자 지정 HTTP 헤더를 구성하는 방법에 대해 알아봅니다.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '278'
 ht-degree: 5%
 
 ---
@@ -13,11 +13,12 @@ ht-degree: 5%
 
 ## 개요 {#overview}
 
-백엔드를 보다 세밀하게 제어하기 위해 작성자는 CIF에서 이미 보낸 헤더와 함께 상거래 엔진으로 전송할 사용자 지정 HTTP 헤더를 구성할 수 있습니다. 일반적인 사용 사례에는 HTTP 헤더를 사용하여 상거래 백 엔드의 응답을 제어할 수 있는 다중 저장소 설정이 포함됩니다.
+백엔드를 더 세밀하게 제어하기 위해 작성자는 CIF에서 이미 보낸 헤더와 함께 상거래 엔진으로 전송할 사용자 지정 HTTP 헤더를 구성할 수 있습니다. 일반적인 사용 사례에는 HTTP 헤더를 사용하여 상거래 백 엔드의 응답을 제어할 수 있는 다중 저장소 설정이 포함됩니다.
 
 >[!NOTE]
 >
 >개발자는 항상 GraphQL 클라이언트 구성을 사용하여 사용자 지정 HTTP 헤더를 구성할 수 있습니다.
+>
 
 ## 구성 {#configuration}
 
@@ -35,5 +36,5 @@ ht-degree: 5%
 
 서비스를 통해 표준 헤더 이름을 비롯한 모든 헤더 이름을 정의할 수 있지만, 구성할 때는 사용할 수 없습니다. 즉, 이 기능을 사용하여 표준 HTTP 헤더를 재정의할 수 없습니다. 제한된 헤더 이름 목록을 찾을 수 있음 [여기](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 이들 외에도 사용할 수 없는 두 개의 헤더가 더 있습니다.
 
-* &quot;스토어&quot; - CIF에서 Adobe Commerce 스토어를 식별하는 데 사용
+* &quot;Store&quot; - CIF에서 Adobe Commerce 스토어를 식별하는 데 사용됨
 * &quot;Preview-Version&quot; - CIF에서 스테이징된 제품을 검색하는 데 사용

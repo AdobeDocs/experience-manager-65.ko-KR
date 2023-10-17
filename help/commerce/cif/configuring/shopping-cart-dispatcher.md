@@ -1,9 +1,9 @@
 ---
 title: 장바구니 및 디스패처 설정
-description: 장바구니 및 디스패처 설정
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+description: 장바구니 및 Adobe Experience Manager Dispatcher 설정에 대해 알아봅니다.
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '148'
 ht-degree: 4%
 
 ---

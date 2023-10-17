@@ -1,10 +1,8 @@
 ---
 title: AEM 6.5 우수 사례
-seo-title: AEM 6.5 Best Practices
-description: AEM 6.5의 모범 사례, 문제 해결 및 교육을 위한 리소스
-seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
+description: AEM 6.5의 모범 사례, 문제 해결 및 교육에 대한 리소스입니다.
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 4%
@@ -44,7 +42,7 @@ AEM은 조직에서 많은 용도를 가지며 회사 전체에 기능을 제공
 * [AEM Mobile 시작](/help/mobile/getting-started-aem-mobile.md)
 * [AEM Communities 시작](/help/communities/getting-started.md)
 
-Adobe에 새 항목 있음 [AEM을 사용하여 첫 번째 웹 사이트를 만드는 단계별 안내서인 WKND 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR). 다음 항목도 있습니다 [Adobe의 Digital Foundation 솔루션 배포를 위한 단계별 레시피](https://experienceleague.adobe.com/#courses): AEM은 주요 빌딩 블록입니다.
+Adobe에 새 항목 있음 [AEM을 사용하여 첫 번째 웹 사이트를 만드는 단계별 안내서인 WKND 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html). 다음 항목도 있습니다 [Adobe의 Digital Foundation 솔루션 배포를 위한 단계별 레시피](https://experienceleague.adobe.com/#courses): AEM은 주요 빌딩 블록입니다.
 
 ## AEM에 대한 권장 배포 {#deployments}
 

@@ -1,11 +1,11 @@
 ---
 title: 새 Adobe Experience Manager 사용자를 위한 리소스
-description: Adobe Experience Manager을 처음 사용하는 사용자를 위한 질문, 답변 및 리소스
+description: Adobe Experience Manager 6.5를 처음 사용하는 사용자를 위한 질문, 답변 및 리소스입니다.
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -24,7 +24,7 @@ AEM 유효한 유지 관리 및 지원 계약이 있는 고객은 코드가 있�
 
 [AEM 소프트웨어 배포에 대한 자세한 정보입니다.](/help/sites-deploying/home.md)
 
-방문 [AEM Sustainance 허브](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko) AEM 릴리스에 대한 정보를 참조하십시오.
+방문 [AEM Sustainance 허브](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko-KR?lang=ko) AEM 릴리스에 대한 정보를 참조하십시오.
 
 ## AEM에 대한 공식 지원은 어떻게 받습니까? {#official-support}
 

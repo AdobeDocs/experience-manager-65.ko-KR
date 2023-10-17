@@ -1,20 +1,13 @@
 ---
 title: 번역을 위한 콘텐츠 준비
-seo-title: Preparing Content for Translation
-description: 번역을 위한 콘텐츠를 준비하는 방법에 대해 알아봅니다.
-seo-description: Learn how to prepare content for translation.
-uuid: 369630a8-2ed7-48db-973e-bd8213231d49
+description: Adobe Experience Manager에서 번역할 콘텐츠를 준비하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 61%
+source-wordcount: '685'
+ht-degree: 60%
 
 ---
 
@@ -76,7 +69,7 @@ ht-degree: 61%
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. 만들기를 클릭하거나 탭합니다. 확인 대화 상자에서 **완료**&#x200B;를 클릭하거나 탭하여 사이트 콘솔로 돌아가거나, **열기**&#x200B;를 클릭하거나 탭하여 언어 사본을 엽니다.
+1. 만들기를 클릭하거나 탭합니다. 확인 대화 상자에서 **완료**&#x200B;를 클릭하거나 탭하여 Sites 콘솔로 돌아가거나, **열기**&#x200B;를 클릭하거나 탭하여 언어 사본을 엽니다.
 
 ## 언어 루트 상태 보기 {#seeing-the-status-of-language-roots}
 

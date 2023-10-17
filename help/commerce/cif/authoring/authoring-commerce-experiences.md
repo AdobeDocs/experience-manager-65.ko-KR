@@ -1,10 +1,10 @@
 ---
 title: 상거래 경험 작성
-description: 상거래 경험 작업
+description: CIF 추가 기능은 상업용 기능을 사용하여 Adobe Experience Manager 작성을 확장합니다.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '713'
 ht-degree: 1%
 
 ---

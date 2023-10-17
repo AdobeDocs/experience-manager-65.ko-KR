@@ -1,14 +1,13 @@
 ---
 title: 폴더에 번역 클라우드 서비스 적용
-description: 폴더에 번역 클라우드 서비스 적용
-contentOwner: AG
+description: Adobe Experience Manager의 폴더에 번역 클라우드 서비스를 적용합니다.
 role: Admin
 feature: Translation
 exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 50%
+source-wordcount: '389'
+ht-degree: 48%
 
 ---
 
@@ -43,7 +42,7 @@ ht-degree: 50%
 If you want to apply a custom connector for the translation services you want to use in translation workflows. To apply a custom connector, first install the connector from Package Manager. Then, configure the connector from the Cloud Services console. After you configure the connector, it is available in the list of connectors in the Cloud Services tab described in [Applying the translation services](transition-cloud-services.md#applying-the-translation-services). After you apply the custom connector and run translation workflows, the **[!UICONTROL Translation Summary]** tile of the translation project displays the connector details under the heads **[!UICONTROL Provider]** and **[!UICONTROL Method]**.
 
 1. 패키지 관리자에서 커넥터를 설치합니다.
-1. 다음을 클릭합니다. [!DNL Experience Manager] 로고 및 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**.
+1. 다음을 클릭합니다. [!DNL Experience Manager] 로고 및 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service]**.
 1. Locate the connector you installed under **[!UICONTROL Third Party Services]** in the **[!UICONTROL Cloud Services]** page.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

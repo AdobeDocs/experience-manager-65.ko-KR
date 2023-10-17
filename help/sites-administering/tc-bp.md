@@ -1,17 +1,9 @@
 ---
 title: 번역 모범 사례
-seo-title: Translation Best Practices
 description: 번역 프로젝트를 시작하고 실행하는 데 도움이 되는 Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 모범 사례를 확인하십시오.
-seo-description: Find best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.
-uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features, best-practices
-content-type: reference
-discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 97%
@@ -41,8 +33,8 @@ ht-degree: 97%
 * 지역 및 국가에서 콘텐츠를 배포하는 방법을 결정합니다. 동일한 언어를 공유하는 국가들을 고려합니다. 번역된 콘텐츠를 검토하고 수정한 다음 해당 언어를 공유하는 국가 사이트에 푸시하거나 가져올 수 있는 비활성 페이지 계층인 언어 마스터를 만드는 것이 좋습니다.
 * 언어 사본을 사용하거나 MSM/Live Copy를 사용하여 언어 마스터를 만들 수 있습니다.
 
-   * 언어 사본을 사용하는 접근 방식은 AEM의 획기적인 번역 통합 프레임워크에서 사용하는 접근 방식으로, 시작하기 가장 쉬운 방법입니다. 프레임워크는 기본 언어(예: 영어) 마스터에서 언어 마스터로 콘텐츠 변경 내용을 반영하고 번역하는 데 도움이 되는 사용자 인터페이스를 제공합니다. 그러나 프로젝트 규모가 커질수록 늘어나는 페이지 및/또는 언어의 번역을 관리하기 위해서는 워크플로우 자동화의 필요성이 점점 더 커지게 됩니다.
-   * MSM/Live Copy 접근 방식은 사이트가 더 크고 복잡한 고급 사용 사례를 위한 대안이 될 수 있습니다. 강력한 거버넌스 및 워크플로우 자동화는 영어와 언어 마스터 간의 복잡한 상속 관계를 처리하고 기존 번역 덮어쓰기의 위험을 줄이는 데 필수적인 요소입니다. 이러한 처리는 몇몇 번역 커넥터의 도움을 통해 완수할 수 있습니다. 자세한 내용은 [MSM 및 다국어 사이트](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)를 참조하십시오.
+   * 언어 사본을 사용하는 접근 방식은 AEM의 획기적인 번역 통합 프레임워크에서 사용하는 접근 방식으로, 시작하기 가장 쉬운 방법입니다. 프레임워크는 기본 언어(예: 영어) 마스터에서 언어 마스터로 콘텐츠 변경 내용을 반영하고 번역하는 데 도움이 되는 사용자 인터페이스를 제공합니다. 그러나 프로젝트 규모가 커질수록 늘어나는 페이지 및/또는 언어의 번역을 관리하기 위해서는 워크플로 자동화의 필요성이 점점 더 커지게 됩니다.
+   * MSM/Live Copy 접근 방식은 사이트가 더 크고 복잡한 고급 사용 사례를 위한 대안이 될 수 있습니다. 강력한 거버넌스 및 워크플로 자동화는 영어와 언어 마스터 간의 복잡한 상속 관계를 처리하고 기존 번역 덮어쓰기의 위험을 줄이는 데 필수적인 요소입니다. 이러한 처리는 몇몇 번역 커넥터의 도움을 통해 완수할 수 있습니다. 자세한 내용은 [MSM 및 다국어 사이트](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)를 참조하십시오.
 
 * 마스터 언어에 글로벌 변형이 있는 경우 MSM을 사용하여 글로벌 마스터에서 Live Copy를 만들어 번역에 사용할 수 있습니다. 예를 들어 미국 영어 마스터에서 글로벌 작성을 수행하는 경우, 국제 영어 마스터를 만들어 다른 언어를 번역하기 위한 Live Copy 및 기반으로 사용할 수 있습니다.
 * MSM을 사용하여 번역된 언어 마스터로 국가 사이트를 만들고 동일한 언어를 공유하는 사이트로 콘텐츠를 롤아웃할 수 있습니다. 예를 들어 프랑스어 언어 마스터를 프랑스, 벨기에 및 스위트 사이트로 롤아웃할 수 있습니다.

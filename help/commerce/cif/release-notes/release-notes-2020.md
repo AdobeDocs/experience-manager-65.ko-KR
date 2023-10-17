@@ -1,15 +1,15 @@
 ---
 title: AEM Content and Commerce 릴리스 노트 2020
-description: AEM Content and Commerce 릴리스 노트 2020
+description: Adobe Experience Manager Content and Commerce 릴리스 노트 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1354'
 ht-degree: 15%
 
 ---
 
-# Commerce Integration Framework GitHub 릴리스 개요
+# Commerce integration framework GitHub 릴리스 개요
 
 ## 릴리스 날짜: 2020년 11월
 
@@ -189,7 +189,7 @@ Adobe Experience Manager에서 지원되는 CIF 핵심 구성 요소의 첫 번�
 
 ### 새로운 기능 {#what-is-new-april}
 
-* CIF 커넥터에 대한 구성 설정이 통합 및 단순화되었습니다. 자세한 내용은 체크아웃을 참조하십시오 [시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) 또는 [새 AEM CIF 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
+* CIF Connector에 대한 구성 설정이 통합 및 단순화되었습니다. 자세한 내용은 체크아웃을 참조하십시오 [시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) 또는 [새 AEM CIF 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
 
 ### 개선 사항 {#what-is-improved-april}
 
@@ -243,7 +243,7 @@ Adobe Experience Manager에서 지원되는 CIF 핵심 구성 요소의 첫 번�
 
 * 내 계정에서 사용할 수 있는 암호 기능을 변경합니다.
 
-* i18n은 AEM CIF 서버측 핵심 구성 요소를 지원합니다.
+* AEM CIF 서버측 핵심 구성 요소에 대한 i18n 지원.
 
 * 범용 관련 제품 구성 요소를 사용할 수 있습니다.
 

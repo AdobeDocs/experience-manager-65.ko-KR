@@ -1,18 +1,13 @@
 ---
 title: Microsoft&reg; Translator에 연결
-description: AEM을 Microsoft&reg; Translator에 연결하는 방법을 알아봅니다.
-uuid: 5e3916ec-36a0-4d31-94ff-c340a462411a
+description: Adobe Experience Manager을 Microsoft&reg; Translator에 연결하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 feature: Language Copy
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 11%
+source-wordcount: '608'
+ht-degree: 14%
 
 ---
 
@@ -23,7 +18,7 @@ Microsoft® Translator 클라우드 서비스에 대한 구성을 만들어 Micr
 | 속성 | 설명 |
 |---|---|
 | 번역 레이블 | 번역 서비스의 표시 이름. |
-| 번역 속성 | (선택 사항) 사용자 생성 콘텐츠의 경우, 번역된 텍스트 옆에 표시되는 속성 (예: `Translations by Microsoft`). |
+| 번역 속성 | (옵션) 사용자 생성 콘텐츠의 경우, 번역된 텍스트 옆에 표시되는 속성 (예: `Translations by Microsoft`). |
 | 작업 영역 ID | (선택 사항) 사용할 맞춤화된 Microsoft® Translator 엔진의 ID입니다. |
 | 구독 키 | Microsoft® Translator용 Microsoft® 구독 키. |
 
@@ -31,13 +26,13 @@ Microsoft® Translator 클라우드 서비스에 대한 구성을 만들어 Micr
 
 다음 절차는 터치에 적합한 UI를 사용하여 Microsoft® Translator 구성을 만듭니다.
 
-1. 레일에서 도구 > Cloud Services 를 클릭하거나 탭합니다.
+1. 레일에서 도구 > Cloud Service 를 클릭하거나 탭합니다.
 1. Microsoft® Translator 영역에서 구성 표시를 선택합니다.
 1. 사용 가능한 구성 옆에 있는 + 링크를 클릭합니다.
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
-1. 구성의 제목을 입력합니다. 제목은 Cloud Services 콘솔 및 페이지 속성 드롭다운 목록에서 구성을 식별합니다. 기본 이름은 제목을 기반으로 합니다. 필요한 경우 구성을 저장하는 저장소 노드에 사용할 이름을 입력합니다. 저장소 노드의 경로인 상위 구성 등록 정보에 기본값을 사용합니다.
+1. 구성의 제목을 입력합니다. 제목을 통해 클라우드 서비스 콘솔 및 페이지 속성 드롭다운 목록에서 구성을 식별합니다. 기본 이름은 제목을 기반으로 합니다. 필요한 경우 구성을 저장하는 저장소 노드에 사용할 이름을 입력합니다. 저장소 노드의 경로인 상위 구성 등록 정보에 기본값을 사용합니다.
 1. 만들기를 클릭합니다.
 1. 나타나는 대화 상자에서 등록 정보 값을 입력한 다음 확인을 클릭합니다.
 
@@ -59,7 +54,7 @@ Microsoft® Translator 체험판 라이선스 - Geometrixx-outdoors 구성은 Ge
 
 Microsoft® 번역 구성 페이지는 프로덕션 시스템에 적합한 계정 구독을 얻기 위한 Microsoft® 웹 사이트로 간편하게 이동할 수 있는 링크를 제공합니다.
 
-1. 레일에서 도구 > 작업 > 클라우드 > Cloud Services 를 클릭하거나 탭합니다.
+1. 레일에서 도구 > 작업 > 클라우드 > Cloud Service 를 클릭하거나 탭합니다.
 1. Microsoft® Translator 영역에서 구성 표시 를 클릭하거나 탭한 다음, Microsoft® Translator 체험판 라이선스(Microsoft® Translation 구성)를 클릭하거나 탭합니다.
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
@@ -72,7 +67,7 @@ Microsoft® 번역 구성 페이지는 프로덕션 시스템에 적합한 계�
 
 Microsoft® 번역 구성 페이지는 Microsoft® Translator 엔진을 맞춤화하기 위한 Microsoft® 웹 사이트로 간편하게 이동할 수 있는 링크를 제공합니다. ([https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/](https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/))
 
-1. 레일에서 도구 > 작업 > 클라우드 > Cloud Services 를 클릭하거나 탭합니다.
+1. 레일에서 도구 > 작업 > 클라우드 > Cloud Service 를 클릭하거나 탭합니다.
 1. Microsoft® Translator 영역에서 구성 표시 를 클릭하거나 탭한 다음, 맞춤화할 구성을 클릭하거나 탭합니다.
 1. 구성 페이지에서 Translator 맞춤화를 클릭합니다. 화면에 표시되는 Microsoft® 웹 페이지를 사용하여 서비스를 사용자 지정합니다.
 

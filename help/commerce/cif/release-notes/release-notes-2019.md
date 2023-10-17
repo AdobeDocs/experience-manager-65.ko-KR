@@ -1,15 +1,15 @@
 ---
 title: AEM Content and Commerce 릴리스 노트 2019
-description: AEM Content and Commerce 릴리스 노트 2019
+description: 2019년 Adobe Experience Manager Content and Commerce 릴리스 노트.
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '992'
 ht-degree: 10%
 
 ---
 
-# Commerce Integration Framework GitHub 릴리스 개요
+# Commerce integration framework GitHub 릴리스 개요
 
 ## 릴리스 날짜: 2019년 11월
 
@@ -146,9 +146,9 @@ ht-degree: 10%
 
 * 모바일 최초 Venia CSS 스타일링, 랜딩 페이지, 제품 및 카테고리 페이지를 통한 동적 카탈로그 탐색, 제품 검색 페이지, 장바구니 기능을 갖춘 AEM B2C 스토어프론트로 상거래 프로젝트를 시작하고 가속화합니다.
 
-* CIF 커넥터 및 작성 도구(제품 콘솔, 제품 선택기 및 범주 선택기)를 사용하여 작성자가 상거래 콘텐츠가 있는 AEM에서 경험을 만들 수 있습니다.
+* CIF 커넥터 및 작성 도구(제품 콘솔, 제품 선택기 및 카테고리 선택기)를 사용하여 작성자는 상거래 콘텐츠가 있는 AEM에서 경험을 만들 수 있습니다.
 
-* Adobe Commerce 2.3.1과 호환되는 CIF 코어 구성 요소의 첫 번째 버전:
+* Adobe Commerce 2.3.1과 호환되는 CIF 핵심 구성 요소의 첫 번째 버전:
    * 제품 세부 사항
    * 제품 목록
    * 제품 티저

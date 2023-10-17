@@ -1,16 +1,11 @@
 ---
 title: 작성
-description: Adobe Experience Manager의 작성 개념
-contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-docset: aem65
+description: Adobe Experience Manager 6.5의 작성 및 게시 개념.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 33%
+source-wordcount: '553'
+ht-degree: 47%
 
 ---
 
@@ -32,7 +27,7 @@ AEM에서는 두 가지 환경을 제공합니다.
 
 ![환경 개요](assets/chlimage_1-132.png)
 
-작성 환경에서는 두 개의 UI를 통해 AEM의 기능을 사용할 수 있습니다. 게시 환경의 경우 사용자가 사용할 수 있도록 만들어진 인터페이스의 전체 디자인을 디자인합니다.
+작성 환경에서는 두 개의 UI를 통해 AEM의 기능을 사용할 수 있습니다. 게시 환경의 경우, 사용자가 사용할 수 있도록 만들어진 인터페이스의 전체 모양 및 느낌을 디자인합니다.
 
 ### 작성 환경 {#author-environment}
 
@@ -42,7 +37,7 @@ AEM에서는 두 가지 환경을 제공합니다.
 >
 >콘텐츠를 만들거나 편집하거나 게시하려면 계정에 적절한 액세스 권한이 있어야 합니다.
 
-인스턴스와 개인 액세스 권한을 구성하는 방식에 따라 콘텐츠에서 다음을 비롯한 다양한 작업을 수행할 수 있습니다.
+작성자의 인스턴스 및 개인의 액세스 권한이 어떻게 구성되었는지에 따라 콘텐츠에서 다음을 비롯한 다양한 작업을 수행할 수 있습니다.
 
 * 페이지에서 새 콘텐츠를 생성하거나 기존 콘텐츠를 편집합니다.
 * 사전 정의된 템플릿을 사용하여 새 컨텐츠 페이지 작성
@@ -53,7 +48,7 @@ AEM에서는 두 가지 환경을 제공합니다.
 * 컨텐츠 페이지, 자산 등을 이동, 복사 또는 삭제합니다.
 * 페이지, 에셋 등을 게시(또는 게시 취소)합니다
 
-또한 콘텐츠를 관리하는 데 도움이 되는 관리 작업이 있습니다.
+또는 콘텐츠를 관리하는 데 도움이 되는 관리 작업도 있습니다.
 
 * 변경 사항의 관리 방식을 제어하는 워크플로(예: 게시 전에 검토 시행)
 * 개별 작업을 조정하는 프로젝트
@@ -86,4 +81,4 @@ AEM 사이트가 [커뮤니티 사이트](/help/communities/overview.md)또는 �
 
 #### Dispatcher {#dispatcher}
 
-웹 사이트 방문자가 체감하는 성능을 최적화하려면 **[디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)** 는 로드 밸런싱 및 캐싱을 구현합니다.
+웹 사이트 방문자가 체감하는 성능을 최적화하기 위해 **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)는 부하 분산 및 캐싱을 구현합니다.**

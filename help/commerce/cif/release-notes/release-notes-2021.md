@@ -2,14 +2,14 @@
 title: 2021년 Adobe Experience Manager Content and Commerce 릴리스 노트
 description: 2021년 Adobe Experience Manager Content and Commerce 릴리스 노트
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 14%
 
 ---
 
-# Commerce Integration Framework GitHub 릴리스 개요
+# Commerce integration framework GitHub 릴리스 개요
 
 ## 시스템 요구 사항 개요
 
@@ -55,7 +55,7 @@ ht-degree: 14%
 
 * 기존 팝업 장바구니 및 체크아웃이 전용 AEM 장바구니 및 체크아웃 페이지로 대체되었습니다. 이러한 페이지의 구성 요소는 Adobe Commerce의 확장 가능한 Peregrine 구성 요소를 사용하여 빌드됩니다
 
-* 판매자는 Commerce 백엔드를 사용하여 탐색에서 특정 제품 카탈로그 범주를 숨길 수 있습니다. CIF 탐색 핵심 구성 요소는 탐색에서 범주를 표시하거나 숨기기 위해 상거래 백엔드 구성 &quot;메뉴에 포함&quot;을 준수합니다
+* 판매자는 Commerce 백엔드를 사용하여 탐색에서 특정 제품 카탈로그 범주를 숨길 수 있습니다. CIF 탐색 핵심 구성 요소는 상거래 백엔드 구성 &quot;메뉴에 포함&quot;을 준수하여 탐색에서 범주를 표시하거나 숨깁니다
 
 * 범주 또는 제품 페이지를 찾을 수 없는 경우 AEM Storefront Venia가 HTTP 404 오류를 반환합니다.
 
@@ -140,7 +140,7 @@ ht-degree: 14%
 
 ### 새로운 기능 {#what-is-new-june}
 
-* 콘텐츠 조각에 대한 새로운 CIF 제품 및 카테고리 참조 데이터 유형(포함) 제품/카테고리 선택기 UI 지원)
+* 컨텐츠 조각에 대한 새로운 CIF 제품 및 카테고리 참조 데이터 유형(포함) 제품/카테고리 선택기 UI 지원)
 * 새 Commerce 콘텐츠 조각 핵심 구성 요소
 * AEM 백엔드에서 전체 텍스트 상거래 검색 지원
 * 상거래 핵심 구성 요소는 Adobe Commerce Sensei Recs 데이터 수집

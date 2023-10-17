@@ -1,18 +1,13 @@
 ---
 title: 번역 개선 사항
-seo-title: Translation Enhancements
-description: AEM의 번역 개선 사항.
-seo-description: Translation enhancements in AEM.
-uuid: 0563603f-327b-48f1-ac14-6777c06734b9
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+description: AEM 번역 관리 기능의 점진적 개선 및 개선 사항.
 topic-tags: site-features
 content-type: reference
-discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 1be3d394283493f7c282ea4c3d794458d88e1ac3
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '686'
 ht-degree: 34%
 
 ---
@@ -49,7 +44,7 @@ ht-degree: 34%
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. 다음으로 전환 **고급** 탭. 아래에서 여러 언어를 추가할 수 있습니다. **Target 언어**.
+1. 다음으로 전환 **고급** 탭. 아래에서 여러 언어를 추가할 수 있습니다. **타겟 언어**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 

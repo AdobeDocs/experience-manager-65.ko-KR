@@ -2,15 +2,9 @@
 title: 관련 AEM 콘텐츠를 사용하여 제품 데이터 강화
 description: 마케팅 콘텐츠를 제품 페이지에 동적으로 추가하여 마케터가 Adobe Experience Manager의 관련 콘텐츠로 제품 데이터를 강화하는 방법에 대해 알아봅니다. 이렇게 하면 마케터가 이미지 및 비디오와 같은 추가 콘텐츠로 특정 제품 페이지를 타깃팅할 수 있습니다.
 sub-product: Commerce
-version: 6.5
-doc-type: feature-video
-activity: use
-audience: marketer
 feature: Commerce Integration Framework
-kt: 7065
-thumbnail: 333205.jpg
 exl-id: 1a069fbc-c036-419a-b585-6aa43e15de16
-source-git-commit: a600acb7d65fbfa1806ef582642a6c5ac7859890
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 2%

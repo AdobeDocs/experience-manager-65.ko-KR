@@ -1,13 +1,11 @@
 ---
 title: AEM 6.5 구현 사용 안내서
-seo-title: AEM 6.5 Implementation User Guide
-description: AEM 6.5 구현 방법에 대한 개요
-seo-description: An overview of how to implement AEM 6.5
+description: Adobe Experience Manager 6.5를 사용하여 구현하고 개발하는 방법에 대한 개요입니다.
 exl-id: 33404f0d-c04c-4720-8a24-ded6738ec7d4
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 35%
+source-wordcount: '105'
+ht-degree: 33%
 
 ---
 
@@ -19,7 +17,7 @@ AEM 개발자입니까? [AEM에서 개발을 시작하십시오.](/help/sites-de
 
 ## AEM용 핵심 구성 요소 {#core-components-for-aem}
 
-[확장 가능한 핵심 구성 요소를 사용하여 작성자가 콘텐츠를 쉽게 만들 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+[확장 가능한 핵심 구성 요소를 사용하여 작성자가 콘텐츠를 쉽게 만들 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
 ## AEM용 HTL(HTML 템플릿 언어) {#htl-for-aem}
 
@@ -31,4 +29,4 @@ AEM 개발자입니까? [AEM에서 개발을 시작하십시오.](/help/sites-de
 
 ## Dispatcher 구성 {#dispatcher-configuration}
 
-[AEM을 사용하여 Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
+[AEM을 사용하여 Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

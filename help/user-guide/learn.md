@@ -1,13 +1,11 @@
 ---
 title: Adobe Experience Manager 6.5 기능에 대해 알아보기
-seo-title: Learn about Adobe Experience Manager 6.5 Capabilities
-description: Adobe Experience Manager 6.5의 필수 기능에 대해 알아봅니다
-seo-description: An description of the essential capabilities of Adobe Experience Manager 6.5
+description: Adobe Experience Manager 6.5의 필수 기능에 대해 알아봅니다.
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: AEM을 사용하여 페이지 생성 및 구성
-description: AEM으로 페이지를 생성 및 관리하는 방법
+description: Adobe Experience Manager으로 페이지를 만들고 관리하는 방법을 알아봅니다.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '2523'
-ht-degree: 92%
+source-wordcount: '2526'
+ht-degree: 91%
 
 ---
 

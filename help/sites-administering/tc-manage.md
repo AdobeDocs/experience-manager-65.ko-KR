@@ -1,10 +1,10 @@
 ---
 title: 번역 프로젝트 관리
-description: AEM에서 번역 프로젝트를 관리하는 방법을 알아봅니다.
+description: Adobe Experience Manager에서 번역 프로젝트를 관리하는 방법을 알아봅니다.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '3586'
+source-wordcount: '3588'
 ht-degree: 57%
 
 ---

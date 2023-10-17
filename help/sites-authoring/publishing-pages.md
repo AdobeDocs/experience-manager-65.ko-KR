@@ -1,17 +1,10 @@
 ---
 title: 컨텐츠 페이지 게시
-description: 콘텐츠 페이지를 게시하는 방법을 알아봅니다.
-uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
-docset: aem65
+description: Adobe Experience Manager 6.5에서 컨텐츠 페이지를 게시하는 방법을 알아봅니다.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1664'
 ht-degree: 75%
 
 ---

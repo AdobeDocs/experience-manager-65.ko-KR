@@ -1,13 +1,11 @@
 ---
 title: AEM 6.5 기능 사용 안내서
-seo-title: AEM 6.5 Capabilities User Guide
-description: AEM 6.5의 필수 기능에 대한 개요
-seo-description: An overview of the essential capabilities of AEM 6.5
+description: Adobe Experience Manager 6.5의 필수 기능에 대한 개요입니다.
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 95%
+source-wordcount: '131'
+ht-degree: 87%
 
 ---
 

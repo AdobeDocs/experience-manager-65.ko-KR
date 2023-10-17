@@ -1,17 +1,11 @@
 ---
 title: 작업을 관리할 받은 편지함
-description: 받은 편지함에서 작업 관리.
-uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
+description: Adobe Experience Manager 6.5의 받은 편지함으로 작업 관리.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 70%
+source-wordcount: '1148'
+ht-degree: 69%
 
 ---
 
@@ -73,7 +67,7 @@ AEM 알림 받은 편지함 열기
 
 1. 도구 모음에서 표시기를 클릭/탭합니다.
 
-1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로우, 프로젝트 및 작업의 항목을 표시합니다.
+1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로, 프로젝트 및 작업의 항목을 표시합니다.
 1. 기본 보기는 [목록 보기](#inbox-list-view)이나 [캘린더 보기](#inbox-calendar-view)로 전환할 수 있습니다. 이 작업은 보기 선택기(도구 모음, 오른쪽 상단))에서 수행됩니다.
 
    두 보기 모두에 대해 다음을 정의할 수 있습니다. [설정 보기](#inbox-view-settings)사용 가능한 옵션은 현재 보기에 따라 다릅니다.

@@ -1,15 +1,15 @@
 ---
 title: 2022년 AEM Content and Commerce 릴리스 노트
-description: 2022년 AEM Content and Commerce 릴리스 노트
+description: 2022년 Adobe Experience Manager Content and Commerce 릴리스 노트
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '818'
 ht-degree: 37%
 
 ---
 
-# Commerce Integration Framework GitHub 릴리스 개요
+# Commerce integration framework GitHub 릴리스 개요
 
 ## 시스템 요구 사항 개요
 

@@ -6,10 +6,8 @@ doc-type: technical-video
 activity: setup
 audience: administrator
 feature: Commerce Integration Framework
-kt: 3046
-thumbnail: 28952.jpg
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 2%
@@ -24,11 +22,11 @@ AEM CIF 핵심 구성 요소는 여러 AEM 사이트 구조에서 사용할 수 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Live Copy 및 언어 사본의 AEM 다중 사이트 관리 기능은 Commerce Integration Framework와 함께 사용되어 지역 및 로케일 전반의 사이트를 전체적으로 관리합니다.
+라이브 카피 및 언어 사본의 AEM 다중 사이트 관리 기능은 Commerce integration framework과 함께 사용하여 지역 및 로케일에서 사이트를 전역적으로 관리합니다.
 
 권장되는 설정은 AEM 사이트와 Adobe Commerce 스토어 보기 간에 1:1 관계를 사용하는 것입니다.
 
-AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연결하려면 아래 단계를 수행하십시오.
+AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연결하려면 아래 단계를 따르십시오.
 
 ## 구성 {#configuration}
 
@@ -59,6 +57,6 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 ## 추가 리소스
 
 * [Adobe Commerce 웹 사이트, 스토어 및 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
-* [AEM CIF 핵심 구성 요소 - 다중 저장소/사이트 구성](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
+* [AEM CIF 핵심 구성 요소 - 다중 스토어/사이트 구성](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [다중 사이트 관리자 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-administering/msm.md)

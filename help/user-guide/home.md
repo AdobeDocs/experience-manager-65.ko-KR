@@ -1,8 +1,8 @@
 ---
 title: AEM 6.5 사용 안내서 허브
-description: AEM 6.5의 이해, 설치, 관리 및 사용에 필요한 필수 리소스에 대한 개요입니다
+description: AEM 6.5의 이해, 설치, 관리 및 사용에 필요한 필수 리소스에 대한 개요입니다.
 exl-id: 51788662-6214-408e-98d9-692950c366be
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 17%

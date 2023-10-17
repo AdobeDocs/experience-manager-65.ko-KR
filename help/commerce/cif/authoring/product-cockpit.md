@@ -1,10 +1,10 @@
 ---
 title: 제품 관리실
-description: 제품 관리실을 사용한 작업
+description: 제품 관리실을 사용하여 연결된 제품 카탈로그 및 관련 컨텐츠에 대한 통합 개요를 제공합니다.
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '428'
 ht-degree: 1%
 
 ---

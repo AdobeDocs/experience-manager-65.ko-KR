@@ -1,15 +1,11 @@
 ---
 title: 기본 구성 요소
 description: Adobe Experience Manager에는 웹 사이트 작성자에게 포괄적인 기능을 제공하는 다양한 기본 구성 요소가 포함되어 있습니다.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 18%
+ht-degree: 37%
 
 ---
 
@@ -21,22 +17,22 @@ Adobe Experience Manager(AEM)에는 웹 사이트 작성자에게 포괄적인 �
 
 >[!NOTE]
 >
->이 섹션에서는 표준 AEM 설치에서 즉시 사용할 수 있는 구성 요소에 대해서만 설명합니다.
+>이 섹션에서는 표준 AEM 설치 시 기본적으로 사용할 수 있는 구성 요소에 대해서만 설명합니다.
 >
->인스턴스에 따라 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 정의했을 수 있습니다. 이들은 심지어 여기서 논의되는 구성 요소 중 일부와 동일한 이름을 가질 수 있다.
+>인스턴스에 따라 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 정의했을 수 있습니다. 이러한 구성 요소는 여기서 설명한 구성 요소 중 일부와 이름이 같을 수도 있습니다.
 
-## 일반 사용 {#general-usage}
+## 일반 사용법 {#general-usage}
 
-구성 요소는에서 사용할 수 있습니다. **구성 요소** 다음과 같은 경우 페이지 편집기의 측면 패널에 있는 탭 [페이지 편집](/help/sites-authoring/editing-content.md).
+구성 요소는 [페이지를 편집할 때](/help/sites-authoring/editing-content.md) 페이지 편집기의 측면 패널에 있는 **구성 요소** 탭에서 사용할 수 있습니다.
 
-구성 요소를 선택하여 페이지에서 필요한 위치로 드래그할 수 있습니다. 그런 다음 다음을 사용하여 편집할 수 있습니다.
+구성 요소를 선택한 다음 페이지에서 필요한 위치로 끌어올 수 있습니다. 그런 뒤에, 다음을 사용하여 편집할 수 있습니다.
 
 * [속성 구성](/help/sites-authoring/editing-page-properties.md)
 * [콘텐츠 편집](/help/sites-authoring/editing-content.md)
 
 * [콘텐츠 편집 - 전체 화면 모드](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-페이지에 구성 요소를 추가하는 방법에 대한 자세한 내용은 [페이지 컨텐츠 편집](/help/sites-authoring/editing-content.md).
+페이지에 구성 요소를 추가하는 방법에 대한 자세한 내용은 [페이지 콘텐츠 편집](/help/sites-authoring/editing-content.md)을 참조하십시오.
 구성 요소는 구성 요소 그룹이라는 다양한 범주에 따라 정렬됩니다. 이러한 구성 요소 그룹의 예는 다음과 같습니다.
 
 * **We.Retail**: 와 함께 사용하기 위해 프록시화된 핵심 구성 요소를 포함합니다. [We.Retail 참조 구현](/help/sites-developing/we-retail.md).

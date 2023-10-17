@@ -3,9 +3,8 @@ title: PWA Studio을 위한 AEM 확장 시작하기
 description: PWA Studio을 사용하여 AEM Headless 콘텐츠 및 상거래 프로젝트를 배포하는 방법에 대해 알아봅니다.
 topics: Commerce
 feature: Commerce Integration Framework
-thumbnail: 37843.jpg
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -93,15 +92,15 @@ AEM 콘텐츠 조각 설명서에 따라 AEM 프로젝트에 대한 GraphQL 끝�
 
 * Adobe Granite 원본 간 리소스 공유 정책(com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   설정 `allowedorigin` 속성을 PWA 애플리케이션의 전체 호스트 이름으로 설정합니다.
+  설정 `allowedorigin` 속성을 PWA 애플리케이션의 전체 호스트 이름으로 설정합니다.
 
-   예:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  예:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling Referrer Filter (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   allow.hosts 속성을 PWA 응용 프로그램의 호스트 이름으로 설정합니다.
+  allow.hosts 속성을 PWA 응용 프로그램의 호스트 이름으로 설정합니다.
 
-   예: pwa-studio-test-vflyn.local.pwadev
+  예: pwa-studio-test-vflyn.local.pwadev
 
 두 구성의 전체 예는 여기에서 찾을 수 있습니다. <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
