@@ -1,6 +1,6 @@
 ---
 title: 커뮤니티 사이트 콘솔
-description: 커뮤니티 사이트 콘솔에 액세스하는 방법
+description: 사이트 생성, 편집 및 관리를 위해 커뮤니티 사이트 콘솔에 액세스하는 방법을 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3089'
 ht-degree: 4%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 4%
 
 프로세스를 시작할 때 `Create` 커뮤니티 사이트 콘솔 상단에 있는 단추입니다.
 
-작성 프로세스는 구성할 기능 세트(하위 패널로 표시)가 포함된 패널로 표시되는 일련의 단계입니다. 다음으로 이동할 수 있습니다. **다음** 단계 또는 **뒤로** 마지막 단계에서 사이트를 커밋하기 전에 이전 단계로 이동합니다.
+생성 프로세스는 구성할 기능 세트(하위 패널로 표시)가 포함된 패널로 표시되는 일련의 단계입니다. 다음으로 이동할 수 있습니다. **다음** 단계 또는 **뒤로** 마지막 단계에서 사이트를 커밋하기 전에 이전 단계로 이동합니다.
 
 ### 1단계 : 사이트 템플릿 {#step-site-template}
 

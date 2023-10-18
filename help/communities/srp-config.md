@@ -1,28 +1,24 @@
 ---
 title: 저장소 구성
-seo-title: Storage Configuration
-description: 스토리지 구성 콘솔에 액세스하는 방법
-seo-description: How to access the Storage Configuration Console
-uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
+description: 사용자 생성 콘텐츠라고도 하는 커뮤니티 콘텐츠에 대해 선택한 저장소를 식별하는 수단으로서 저장소 구성 콘솔에 대해 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 3%
+source-wordcount: '210'
+ht-degree: 4%
 
 ---
 
 # 저장소 구성 {#storage-configuration}
 
-저장소 구성은 UGC(사용자 생성 컨텐츠)라고도 하는 커뮤니티 컨텐츠에 대해 선택된 저장소를 식별하는 수단입니다.
+스토리지 구성은 UGC(사용자 생성 컨텐츠)라고도 하는 커뮤니티 컨텐츠에 대해 선택된 스토리지를 식별하는 수단입니다.
 
-이 설정은 UGC에 액세스할 때 SRP(저장소 리소스 제공자) 구현을 사용할 AEM Communities 코드를 알려 주며 AEM 배포 시 설정된 토폴로지를 반영해야 합니다.
+이 설정은 UGC에 액세스할 때 SRP(저장소 리소스 제공자) 구현이 사용되는지를 AEM Communities 코드에 알려 줍니다. Adobe Experience Manager(AEM) 배포 시 설정된 토폴로지를 반영해야 합니다.
 
 스토리지 옵션 및 구축 토폴로지에 대한 자세한 내용은 다음을 참조하십시오.
 
@@ -33,7 +29,7 @@ ht-degree: 3%
 
 ![jsrp-configuration](assets/jsrp-configuration.png)
 
-작성 환경에서 스토리지 구성 콘솔로 이동합니다.
+작성자 환경에서 스토리지 구성 콘솔로 이동합니다.
 
 * 전역 탐색에서 을 선택합니다. **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 스토리지 구성]**
 
@@ -46,7 +42,7 @@ ht-degree: 3%
    * 다음에 대한 세부 사항 보기 [dsrp 선택](dsrp.md#select-dsrp)
    * 다음에 대한 세부 사항 보기 [ASRP 선택](asrp.md#select-asrp)
 
-* 선택 **[!UICONTROL 제출]**.
+* **[!UICONTROL 제출]**&#x200B;을 선택합니다.
 
 ### JCR 저장소 정보 {#about-jcr-storage}
 

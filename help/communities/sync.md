@@ -1,20 +1,16 @@
 ---
 title: 커뮤니티 사용자 동기화
-seo-title: Communities User Synchronization
-description: 사용자 동기화 작동 방식
-seo-description: How user synchronization works
-uuid: 772b82bd-a66c-4c1d-b80b-dcff77c873a3
+description: Adobe Experience Manager 커뮤니티에서 사용자 동기화가 작동하는 방식을 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2471'
 ht-degree: 2%
 
 ---
@@ -23,37 +19,35 @@ ht-degree: 2%
 
 ## 소개 {#introduction}
 
-AEM Communities의 게시 환경(구성된 권한에 따라)에서 *사이트 방문자 수* 다음과 같이 될 수 있습니다. *구성원*, 만들기 *사용자 그룹*, 및 편집 *멤버 프로필* .
+Adobe Experience Manager(AEM) 커뮤니티에서 게시 환경(구성된 권한에 따라 다름)의 *사이트 방문자 수* 다음과 같이 될 수 있습니다. *구성원*, 만들기 *사용자 그룹*, 및 편집 *멤버 프로필* .
 
-*사용자 데이터* 은 을 지칭하는 데 사용되는 용어입니다. *사용자*, *사용자 프로필* 및 *사용자 그룹*.
+*사용자 데이터* 참조 *사용자*, *사용자 프로필*, 및 *사용자 그룹*.
 
-*구성원* 은 을 지칭하는 데 사용되는 용어입니다. *사용자* 작성 환경에 등록된 사용자가 아니라 게시 환경에 등록되었습니다.
+*구성원* 을(를) 참조하십시오. *사용자* 작성 환경에 등록된 사용자가 아니라 게시 환경에 등록되었습니다.
 
 사용자 데이터에 대한 자세한 내용은 [사용자 및 사용자 그룹 관리](/help/communities/users.md).
 
 ## 게시 팜 간 사용자 동기화 {#synchronizing-users-across-a-publish-farm}
 
-기본적으로 게시 환경에서 생성된 사용자 데이터는 작성 환경에 표시되지 않습니다.
+기본적으로 게시 환경에서 생성된 사용자 데이터는 작성자 환경에 표시되지 않습니다.
 
 작성자 환경에서 생성된 대부분의 사용자 데이터는 작성자 환경에서 유지되며 게시 인스턴스에 동기화되거나 복제되지 않습니다.
 
-다음의 경우 [토폴로지](/help/communities/topologies.md) 다음 값: [팜 게시](/help/sites-deploying/recommended-deploys.md#tarmk-farm), 하나의 게시 인스턴스에서 수행한 등록 및 수정 사항은 다른 게시 인스턴스와 동기화되어야 합니다. 구성원은 모든 게시 노드에 로그인하고 데이터를 볼 수 있어야 합니다.
+다음의 경우 [토폴로지](/help/communities/topologies.md) 다음 값: [팜 게시](/help/sites-deploying/recommended-deploys.md#tarmk-farm), 하나의 게시 인스턴스에 대해 이루어진 등록 및 수정 사항은 다른 게시 인스턴스와 동기화되어야 합니다. 구성원은 모든 게시 노드에 로그인하고 해당 데이터를 볼 수 있어야 합니다.
 
 사용자 동기화가 활성화되면 팜의 게시 인스턴스 간에 사용자 데이터가 자동으로 동기화됩니다.
 
 ### 사용자 동기화 설정 지침 {#user-sync-setup-instructions}
 
-게시 팜 전체에서 동기화를 활성화하는 방법에 대한 자세한 단계별 지침은 다음을 참조하십시오.
+게시 팜 전체에서 동기화를 활성화하는 방법에 대한 자세한 단계별 지침은 다음을 참조하십시오. [사용자 동기화](/help/sites-administering/sync.md).
 
-* [사용자 동기화](/help/sites-administering/sync.md)
-
-## 백그라운드에서 사용자 동기화  {#user-sync-in-the-background}
+## 백그라운드에서 사용자 동기화 {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
 * **vlt 패키지**
 
-  게시자에서 수행한 모든 변경 사항의 zip 파일이며 게시자 간에 배포해야 합니다. 게시자의 변경 사항은 변경 이벤트 리스너가 선택하는 이벤트를 생성합니다. 이렇게 하면 모든 변경 사항이 포함된 vlt 패키지가 만들어집니다.
+  게시자에서 수행한 모든 변경 사항의 zip 파일이며 게시자 간에 배포되어야 합니다. 게시자의 변경 사항은 변경 이벤트 리스너가 선택하는 이벤트를 생성합니다. 이렇게 하면 모든 변경 사항이 포함된 vlt 패키지가 만들어집니다.
 
 * **배포 패키지**
 
@@ -63,7 +57,7 @@ AEM Communities의 게시 환경(구성된 권한에 따라)에서 *사이트 �
 
 ### 커뮤니티 사이트 콘솔에서 사이트 게시 {#publish-site-from-communities-sites-console}
 
-작성자의 경우 커뮤니티 사이트가 [커뮤니티 사이트 콘솔](/help/communities/sites-console.md), 그 효과는 다음과 같습니다. [복제](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) 연관된 페이지와 Sling은 동적으로 생성된 커뮤니티 사용자 그룹(멤버십 포함)을 배포합니다.
+작성자의 경우 커뮤니티 사이트가 다음에서 게시됨: [커뮤니티 사이트 콘솔](/help/communities/sites-console.md), 그 효과는 다음과 같습니다. [복제](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) 연관된 페이지와 Sling은 동적으로 생성된 커뮤니티 사용자 그룹(멤버십 포함)을 배포합니다.
 
 ### 게시할 때 사용자가 만들어지거나 프로필을 편집합니다. {#user-is-created-or-edits-profile-on-publish}
 
@@ -79,15 +73,15 @@ AEM Communities의 게시 환경(구성된 권한에 따라)에서 *사이트 �
 
 ### 사용자 또는 사용자 그룹은 보안 콘솔을 사용하여 만들어집니다 {#users-or-user-groups-are-created-using-security-console}
 
-기본적으로 게시 환경에서 생성된 사용자 데이터는 작성 환경에 표시되지 않으며 그 반대로 표시됩니다.
+기본적으로 게시 환경에서 생성된 사용자 데이터는 작성자 환경에 표시되지 않으며 이와 반대로 표시됩니다.
 
-다음의 경우 [사용자 관리 및 보안](/help/sites-administering/security.md) 콘솔은 게시 환경에 새 사용자를 추가하는 데 사용되며, 필요한 경우 사용자 동기화는 새 사용자와 해당 그룹 구성원을 다른 게시 인스턴스와 동기화합니다. 사용자 동기화는 보안 콘솔을 통해 만든 사용자 그룹도 동기화합니다.
+다음의 경우 [사용자 관리 및 보안](/help/sites-administering/security.md) console을 사용하여 게시 환경에 새 사용자를 추가하고, 필요한 경우 사용자 동기화를 통해 새 사용자와 해당 그룹 멤버십을 다른 게시 인스턴스에 동기화합니다. 또한 사용자 동기화는 보안 콘솔을 통해 만든 사용자 그룹을 동기화합니다.
 
 ### 사용자가 게시할 때 콘텐츠를 게시함 {#user-posts-content-on-publish}
 
 UGC(사용자 생성 컨텐츠)의 경우 게시 인스턴스에 입력한 데이터는 다음을 통해 액세스됩니다. [구성된 SRP](/help/communities/srp-config.md).
 
-## 우수 사례 {#bestpractices}
+## 모범 사례 {#bestpractices}
 
 기본적으로 사용자 동기화는 **비활성화됨**. 사용자 동기화 활성화에는 수정 작업이 포함됩니다. *기존* OSGi 구성. 사용자 동기화를 활성화한 결과 새 구성을 추가하지 않아야 합니다.
 
@@ -97,7 +91,7 @@ UGC(사용자 생성 컨텐츠)의 경우 게시 인스턴스에 입력한 데�
 
 1. 사용자 및 사용자 그룹이 이미 하나의 게시자에서 만들어진 경우 [수동 동기화](/help/sites-administering/sync.md#manually-syncing-users-and-user-groups) 사용자 동기화를 구성 및 활성화하기 전에 모든 게시자에 대한 사용자 데이터입니다.
 
-   사용자 동기화가 활성화되면 새로 생성된 사용자와 그룹만 동기화됩니다 .
+   사용자 동기화가 활성화되면 새로 생성된 사용자 및 그룹만 동기화 됩니다.
 
 1. 최신 코드가 설치되었는지 확인합니다.
 
@@ -257,7 +251,7 @@ Apache Sling 동기화 에이전트 구성을 구성하려면 다음 작업을 �
 
    `sling:OrderedFolder`
 
-   이 속성에 지정된 노드 유형은 동기화되고 알림 정보(블로그 및 구성 추종)가 다른 게시자 간에 동기화됩니다.
+   이 속성에 지정된 노드 유형은 동기화되며 알림 정보(블로그 및 구성 추종)는 서로 다른 게시자 간에 동기화됩니다.
 
 1. 동기화할 모든 폴더 추가 **분산 폴더**. 예:
 
@@ -357,7 +351,7 @@ Sling 배포가 실패하면 다음 디버깅 단계를 시도해 보십시오.
 
 1. **AEM Communities 사용자 동기화 수신기 구성을 확인하십시오.** 생성된 사용자가 동기화되지만 구독 및 다음이 작동하지 않는 경우 AEM Communities 사용자 동기화 리스너 구성에 다음이 있는지 확인합니다.
 
-   * 노드 유형 - 다음으로 설정 **rep:User, nt:unstructured**, **nt :resource**, **rep:ACL**, **sling:Folder**, 및 **sling:OrderedFolder**.
+   * 노드 유형 - 다음으로 설정 **rep:User, nt:unstructured**, **nt:resource**, **rep:ACL**, **sling:Folder**, 및 **sling:OrderedFolder**.
    * 무시 가능한 노드 - 다음으로 설정 **.tokens**, **시스템**, 및 **rep :cache**.
    * 분산 폴더 - 분산할 폴더로 설정합니다.
 
@@ -388,12 +382,12 @@ Sling 배포가 실패하면 다음 디버깅 단계를 시도해 보십시오.
    1. 구성 찾기 **Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리**.
    1. 선택 취소 **활성화됨** 확인란.
 
-      작성자 인스턴스에서 사용자 동기화를 비활성화하면 (내보내기 및 가져오기) 끝점이 비활성화되고 작성자 인스턴스가 정적입니다. 다음 **vlt** 작성자는 패키지를 핑하거나 가져오지 않습니다.
+      작성자 인스턴스(내보내기 및 가져오기) 엔드포인트에서 사용자 동기화를 비활성화하면 비활성화되고 작성자 인스턴스가 정적입니다. 다음 **vlt** 작성자는 패키지를 핑하거나 가져오지 않습니다.
 
       이제 사용자가 게시 인스턴스에 만들어지면 **vlt** 패키지가 다음 위치에 생성됨: */var/sling/distribution/packages/ socialpubsync - vlt /data* 노드. 그리고 작성자가 이러한 패키지를 다른 서비스로 푸시하는 경우. 이 데이터를 다운로드하고 추출하여 다른 서비스에 푸시된 모든 속성이 무엇인지 확인할 수 있습니다.
 
 1. 게시자로 이동하여 게시자에서 사용자를 만듭니다. 그 결과 이벤트가 생성됩니다.
-1. 다음 확인: [로그 순서](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities), 사용자 생성 시 생성됨.
+1. 다음 확인: [로그 순서](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities) 이(가) 사용자 생성 시 만들어졌습니다.
 1. 다음을 확인함: **vlt** 패키지가 생성된 일자 **/var/sling/distribution/packages/socialpubsync-vlt/data**.
 1. 이제 AEM 작성자 인스턴스에서 사용자 동기화를 활성화합니다.
 1. 게시자에서 내보내기 또는 가져오기 종단점을 변경합니다. **Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리**.
