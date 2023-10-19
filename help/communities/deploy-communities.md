@@ -1,16 +1,16 @@
 ---
 title: 커뮤니티 배포
-description: AEM Communities 배포 방법
+description: Adobe Experience Manager에서 커뮤니티 및 커뮤니티 기능을 배포하는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 2%
+source-wordcount: '1712'
+ht-degree: 3%
 
 ---
 
@@ -84,7 +84,7 @@ AEM 6.5 Communities GA에는 Communities 패키지가 포함됩니다. AEM 6.5 �
 
 AEM 6.4부터 커뮤니티에 대한 업데이트는 AEM 누적 수정 팩 및 서비스 팩의 일부로 제공됩니다.
 
-AEM 6.5에 대한 최신 업데이트는 다음을 참조하십시오. [Adobe Experience Manager 6.4 누적 수정 팩 및 서비스 팩](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html).
+AEM 6.5에 대한 최신 업데이트는 다음을 참조하십시오. [Adobe Experience Manager 6.4 누적 수정 팩 및 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko-KR?lang=ko).
 
 ### 버전 내역 {#version-history}
 
@@ -132,7 +132,7 @@ MySQL 커넥터를 별도로 가져와 설치해야 합니다.
 
 SRP 컬렉션(MSRP 또는 DSRP)이 고급 다국어 검색(MLS)을 지원하려면 사용자 지정 스키마 및 Solr 구성 외에 새로운 Solr 플러그인이 필요합니다. 모든 필수 항목은 다운로드 가능한 zip 파일로 패키지됩니다.
 
-고급 MLS 다운로드(&#39;phasetwo&#39;라고도 함)는 Adobe 저장소에서 사용할 수 있습니다.
+고급 MLS 다운로드 (MLS라고도 함) `phasetwo`)은 Adobe 저장소에서 사용할 수 있습니다.
 
 * AEM-SOLR-MLS-phasetwo
 
@@ -298,13 +298,11 @@ AEM 6.3 이상에서는 주요 자료가 파일 시스템에 저장되고 더 �
 
 #### 저장소 복제 {#repository-replication}
 
-AEM 6.2 및 이전 버전의 경우와 마찬가지로 주요 자료를 저장소에 저장할 수 있습니다. 각 AEM 인스턴스(초기 저장소 생성)의 첫 번째 시작 시 다음 시스템 속성을 지정합니다.
-
-* `-Dcom.adobe.granite.crypto.file.disable=true`
+AEM 6.2 및 이전 버전의 경우와 마찬가지로 주요 자료를 저장소에 저장할 수 있습니다. 시스템 속성 지정 `-Dcom.adobe.granite.crypto.file.disable=true` (초기 저장소를 만드는) 각 AEM 인스턴스의 첫 번째 시작 시.
 
 >[!NOTE]
 >
->다음을 확인하는 것이 중요합니다. [작성자의 복제 에이전트](#replication-agents-on-author) 이(가) 올바르게 구성되었습니다.
+>다음을 확인합니다 [작성자의 복제 에이전트](#replication-agents-on-author) 이(가) 올바르게 구성되었습니다.
 
 저장소에 저장된 키 자료를 사용하여 작성자의 암호 키를 다른 인스턴스에 복제하는 방식은 다음과 같습니다.
 

@@ -1,14 +1,14 @@
 ---
 title: 댓글 기본 사항
-description: 주석 구성 요소 개요
+description: 댓글 시스템(댓글 구성 요소) 작업 및 커뮤니티 구성원 게시물의 사용자 생성 콘텐츠(UGC) 관리에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '351'
 ht-degree: 3%
 
 ---

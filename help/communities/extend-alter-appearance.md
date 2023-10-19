@@ -1,26 +1,22 @@
 ---
 title: 모양 변경(HBS)
-seo-title: Alter the Appearance
-description: HBS 스크립트 수정
-seo-description: Modify the HBS scripts
-uuid: cff24505-dbb3-4312-9b1b-c1693b8d1c98
+description: HBS 스크립트를 편집하여 모양(HBS)을 변경하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
 # 모양 변경(HBS) {#alter-the-appearance-hbs}
 
-기본 댓글 시스템을 참조하는 resourceSuperType과 사용자 지정 모델/보기가 등록된 응용 프로그램 디렉터리(/apps)의 사용자 지정 댓글 시스템에 대한 구성 요소가 준비되었으므로 구현을 수정할 수 있습니다.
+기본 댓글 시스템을 참조하는 resourceSuperType과 사용자 지정 모델/보기가 등록된 응용 프로그램 디렉터리(/apps)의 사용자 지정 댓글 시스템에 대한 구성 요소가 준비되었으므로 구현을 편집할 수 있습니다.
 
 간단한 시연을 위해 댓글을 게시하는 로그인한 사용자의 아바타가 표시되는 시각적 기능을 제거합니다.
 
@@ -36,21 +32,21 @@ ht-degree: 0%
 
    * 댓글 게시물에 대한 아바타가 포함된 태그를 주석 처리합니다(~ 21행).
 
-      ```
-        <!--
-         <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-         -->
-      ```
+     ```
+       <!--
+        <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+        -->
+     ```
 
 * 열기 [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * 다음 댓글 항목의 아바타가 포함된 태그를 주석 처리합니다(~ 44행).
 
-      ```
-        <!--
-         <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
-         -->
-      ```
+     ```
+       <!--
+        <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
+        -->
+     ```
 
 * 선택 **모두 저장**
 

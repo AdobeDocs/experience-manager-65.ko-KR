@@ -1,25 +1,21 @@
 ---
 title: 샌드박스 애플리케이션 개발
-seo-title: Develop Sandbox Application
-description: 기초 스크립트를 사용한 애플리케이션 개발
-seo-description: Develop application using foundation scripts
-uuid: 572f68cd-9ecb-4b43-a7f8-4aa8feb6c64e
+description: 기초 스크립트를 사용하고 커뮤니티 구성 요소로 작성을 활성화하는 기능이 포함된 샌드박스 애플리케이션을 개발하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '593'
 ht-degree: 6%
 
 ---
 
 # 샌드박스 애플리케이션 개발  {#develop-sandbox-application}
 
-이 섹션에서 템플릿을에 설정했으므로 [초기 애플리케이션](initial-app.md) 섹션에 설정된 초기 페이지 [초기 컨텐츠](initial-content.md) 섹션에서, 커뮤니티 구성 요소로 작성할 수 있는 기능을 포함하여 기초 스크립트를 사용하여 응용 프로그램을 개발할 수 있습니다. 이 섹션이 끝나면 웹 사이트가 작동합니다.
+이 섹션에서 이제 템플릿이에 설정됨 [초기 애플리케이션](initial-app.md) 섹션에 설정된 초기 페이지 [초기 컨텐츠](initial-content.md) 섹션, 당신은 응용 프로그램을 개발할 수 있습니다. 커뮤니티 구성 요소로 작성할 수 있는 기능을 포함하는 기초 스크립트를 사용하면 됩니다. 이 섹션의 끝에는 완전한 기능을 갖춘 웹 사이트가 있습니다.
 
 ## Foundation 페이지 스크립트 사용 {#using-foundation-page-scripts}
 
@@ -66,9 +62,9 @@ CRXDE Lite 사용:
    %>
    ```
 
-1. 열기/닫기 스크립트 태그를 알고 의 헤드 및 신체 부분에 대한 스크립트 포함 항목으로 &quot; // TODO ...&quot;를 바꿉니다. &lt;html>.
+1. 열기/닫기 스크립트 태그를 알고 &quot; // TODO ...&quot;를 로 바꿉니다. `includes` 두부 및 체부에 사용되는 스크립트의 것 &lt;html>.
 
-   의 슈퍼타입으로 `foundation/components/page`, 동일한 폴더에 정의되지 않은 모든 스크립트는 의 스크립트로 확인됩니다. `/apps/foundation/components/page` 폴더(있는 경우), 기타 를 의 스크립트에 `/libs/foundation/components/page` 폴더를 삭제합니다.
+   의 슈퍼타입으로 `foundation/components/page`, 동일한 폴더에 정의되지 않은 모든 스크립트는 의 스크립트로 확인됩니다. `/apps/foundation/components/page` 폴더(있는 경우) 또는 의 스크립트에 대한 `/libs/foundation/components/page` 폴더를 삭제합니다.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -88,9 +84,9 @@ CRXDE Lite 사용:
    </html>
    ```
 
-1. 기본 스크립트 `head.jsp` 오버레이할 필요가 없지만 기본 스크립트는 `body.jsp` 은(는) 비어 있습니다.
+1. Foundation 스크립트 오버레이 `head.jsp` 는 필요하지 않지만 foundation 스크립트는 `body.jsp` 은(는) 비어 있습니다.
 
-   작성을 위해 설정하려면 오버레이하십시오 `body.jsp` 로컬 스크립트를 사용하고 본문에 단락 시스템(parsys)을 포함합니다.
+   작성을 위해 설정하려면 를 오버레이하십시오 `body.jsp` 로컬 스크립트를 사용하고 본문에 단락 시스템(parsys)을 포함합니다.
 
    1. 다음으로 이동 `/apps/an-scf-sandbox/components`.
    1. 다음 항목 선택 `playpage` 노드.
@@ -162,13 +158,13 @@ CRXDE Lite 사용:
 >
 >페이지 부분에 대해 활성화된 구성 요소는 의 값으로 저장소에 저장됩니다. `components` 의 속성
 >
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` 노드.
+>노드 `/etc/designs/an-scf-sandbox/jcr:content/playpage/par`.
 
 ## 랜딩 페이지 {#landing-page}
 
 다국어 환경에서 루트 페이지에는 클라이언트의 요청을 구문 분석하여 기본 언어를 결정하는 스크립트가 포함됩니다.
 
-이 간단한 예에서 루트 페이지는 영어 페이지로 리디렉션하도록 정적으로 설정되어 있으며, 향후 재생 페이지 링크가 있는 기본 랜딩 페이지로 개발될 수 있습니다.
+이 예제에서 루트 페이지는 영어 페이지로 리디렉션하도록 정적으로 설정되어 있으며, 나중에 재생 페이지 링크가 있는 기본 랜딩 페이지로 개발될 수 있습니다.
 
 브라우저 URL을 루트 페이지로 변경합니다. `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
@@ -181,6 +177,6 @@ CRXDE Lite 사용:
 
 * **[!UICONTROL 확인]**&#x200B;을 클릭합니다
 
-사이트가 게시되면 게시 인스턴스의 루트 페이지를 탐색하면 영어 페이지로 리디렉션됩니다.
+사이트가 게시된 후 게시 인스턴스에서 루트 페이지를 탐색하면 영어 페이지로 리디렉션됩니다.
 
-커뮤니티 SCF 구성 요소로 재생하기 전 마지막 단계는 클라이언트 라이브러리 폴더(clientlibs)를 추가하는 것입니다.... [Clienlibs 추가](add-clientlibs.md)
+커뮤니티 SCF 구성 요소로 재생하기 전 마지막 단계는 클라이언트 라이브러리 폴더(clientlibs)를 추가하는 것입니다.... [Clientlibs 추가](add-clientlibs.md)

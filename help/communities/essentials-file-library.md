@@ -1,25 +1,21 @@
 ---
 title: 파일 라이브러리 기본 사항
-seo-title: File Library Essentials
-description: 파일 라이브러리 기능 작업
-seo-description: Working with the file library feature
-uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
+description: Adobe Experience Manager Communities에서 파일 라이브러리 기능을 사용한 작업의 기본 사항에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
 exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 2%
 
 ---
 
 # 파일 라이브러리 기본 사항 {#file-library-essentials}
 
-이 페이지에서는 파일 라이브러리 기능을 사용하는 데 필요한 필수 정보를 제공합니다.
+이 페이지에서는 파일 라이브러리 기능 작업에 대한 기본 정보를 제공합니다.
 
 ## 클라이언트측 핵심 사항 {#essentials-for-client-side}
 
@@ -56,9 +52,9 @@ ht-degree: 2%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [파일 라이브러리 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
+* [파일 라이브러리 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [파일 라이브러리 엔드포인트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [파일 라이브러리 엔드포인트](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 

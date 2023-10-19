@@ -1,20 +1,16 @@
 ---
 title: Messaging 기본 사항
-seo-title: Messaging Essentials
-description: 메시징 구성 요소 개요
-seo-description: Messaging component overview
-uuid: e0dad45e-d84d-4b28-b357-aded1c5d2605
+description: 웹 사이트에 메시징 기능을 포함하기 위해 메시징 구성 요소로 작업하고 사용하는 방법에 대해 자세히 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 2%
+source-wordcount: '397'
+ht-degree: 3%
 
 ---
 
@@ -93,9 +89,9 @@ ht-degree: 2%
 ## 서버측 Essentials {#essentials-for-server-side}
 
 * [메시징 구성](/help/communities/configure-messaging.md)
-* [메시징 클라이언트 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) SCF 구성 요소용
-* [메시징 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) 서비스용
-* [메시징 엔드포인트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [메시징 클라이언트 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) SCF 구성 요소용
+* [메시징 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) 서비스용
+* [메시징 엔드포인트](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [서버측 사용자 지정](/help/communities/server-customize.md)
 
 >[!CAUTION]
@@ -107,8 +103,7 @@ ht-degree: 2%
 >
 >예:
 >
->
-```
+>```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
 >```
@@ -139,7 +134,7 @@ ht-degree: 2%
    1. 클래스 만들기 `MessageEventHandler.java`.
    1. 아래 코드를 복사하여 다음 위치에 붙여넣습니다. `MessageEventHandler.java`.
 
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 1. 다음으로 이동 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`및 의 설명에 따라 모든 가져오기 구문 추가 `MessageEventHandler.java` 코드.
 1. 번들을 빌드합니다.
 1. 확인 `Day CQ Mail Service`OSGi 서비스가 구성되었습니다.

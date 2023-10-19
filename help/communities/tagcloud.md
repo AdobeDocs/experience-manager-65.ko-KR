@@ -1,18 +1,14 @@
 ---
 title: 소셜 태그 클라우드 사용
-seo-title: Using Social Tag Cloud
-description: 페이지에 소셜 태그 클라우드 구성 요소 추가
-seo-description: Adding a Social Tag Cloud component to a page
-uuid: 8c400030-976c-457a-bb5f-e473909647a9
+description: 로그인한 커뮤니티 구성원이 트렌드 주제를 빠르게 식별하고 태그가 지정된 콘텐츠를 찾을 수 있도록 페이지에 Social Tag Cloud 구성 요소를 추가하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '569'
 ht-degree: 8%
 
 ---
@@ -29,7 +25,7 @@ ht-degree: 8%
 
 개발자를 위한 자세한 내용은 [태그 기본 사항](tag.md).
 
-태그 작성 및 관리 방법과 컨텐츠 태그가 적용되는 항목에 대한 내용은 [태그 관리](../../help/sites-administering/tags.md)를 참조하십시오.
+태그 작성 및 관리 방법과 콘텐츠 태그가 적용되는 항목에 대한 내용은 [태그 관리](../../help/sites-administering/tags.md)를 참조하십시오.
 
 ## 소셜 태그 클라우드 추가 {#adding-a-social-tag-cloud}
 
@@ -43,7 +39,7 @@ ht-degree: 8%
 
 ## 소셜 태그 클라우드 구성 {#configuring-social-tag-cloud}
 
-배치된 을(를) 선택합니다 `Social Tag Cloud` 에 액세스하고 선택할 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 을(를) 선택합니다 `Social Tag Cloud` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
 
 ![구성](assets/configure-new.png)
 
@@ -100,12 +96,12 @@ ht-degree: 8%
 
   `Geometrixx Media: Gadgets / Cars`
 
-  적용할 수 있는 태그는 3개입니다.
+  세 가지 태그를 적용할 수 있습니다.
 
-  `Geometrixx Media (the namespace)`, `Gadgets`, 및 `Cars`
+  `Geometrixx Media (the namespace)`, `Gadgets` 및 `Cars`
 
-   * 선택됨: 만 `Cars` 적용되는 경우 이 표시됩니다.
-   * 선택 취소됨: `Geometrixx Media` 및 `Gadgets`뿐만 아니라 `Cars` 적용되는 경우 이 표시됩니다.
+   * 선택됨: 만 `Cars` 적용되는 경우 표시됩니다.
+   * 선택 취소됨: `Geometrixx Media`, `Gadgets`, 및 `Cars` 적용되는 경우 표시됩니다.
 
   단순 태그는 리프 태그입니다.
 

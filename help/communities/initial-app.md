@@ -1,18 +1,14 @@
 ---
 title: 초기 샌드박스 애플리케이션
-seo-title: Initial Sandbox Application
-description: 템플릿, 구성 요소 및 스크립트 만들기
-seo-description: Create template, component, and script
-uuid: b0d03376-d8bc-4e98-aea2-a01744c64ccd
+description: 콘텐츠 페이지를 만드는 데 사용되는 콘텐츠 템플릿과 웹 사이트 페이지를 렌더링하는 데 사용되는 구성 요소 및 스크립트를 사용하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 exl-id: cbf9ce36-53a2-4f4b-a96f-3b05743f6217
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
@@ -26,7 +22,7 @@ ht-degree: 2%
 
 ## 콘텐츠 템플릿 만들기 {#create-the-content-template}
 
-템플릿은 새 페이지의 기본 콘텐츠를 정의합니다. 복잡한 웹 사이트에서는 사이트에서 서로 다른 유형의 페이지를 만들기 위해 여러 템플릿을 사용할 수 있습니다. 또한 템플릿 세트는 서버 클러스터에 변경 사항을 롤아웃하는 데 사용되는 블루프린트가 될 수 있습니다.
+템플릿은 새 페이지의 기본 콘텐츠를 정의합니다. 복잡한 웹 사이트에서는 사이트에서 서로 다른 유형의 페이지를 만들기 위해 여러 템플릿을 사용할 수 있습니다. 또한 템플릿 세트는 서버 클러스터에 대한 변경 사항을 롤아웃하는 데 사용되는 블루프린트가 될 수 있습니다.
 
 이 연습에서는 모든 페이지가 하나의 간단한 템플릿을 기반으로 합니다.
 
@@ -45,7 +41,7 @@ ht-degree: 2%
 
    노드 이름에는 레이블 이 사용됩니다.
 
-   리소스 유형이 다음에 나타납니다. `playpage`의 jcr:content 노드를 속성으로 `sling:resourceType`. 브라우저가 요청할 때 콘텐츠를 렌더링하는 구성 요소(리소스)를 식별합니다.
+   리소스 유형이 다음에 나타납니다. `playpage`의 `jcr:content` 노드를 속성으로 `sling:resourceType`. 브라우저가 요청할 때 콘텐츠를 렌더링하는 구성 요소(리소스)를 식별합니다.
 
    이 경우 모든 페이지는 `playpage` 템플릿은 `an-scf-sandbox/components/playpage` 구성 요소. 규칙에 따라 구성 요소에 대한 경로는 상대적이므로 Sling은에서 먼저 리소스를 검색할 수 있습니다. `/apps` 폴더 및 을(를) 찾을 수 없는 경우 `/libs` 폴더를 삭제합니다.
 
@@ -63,7 +59,7 @@ ht-degree: 2%
 
    작성자가 아래에 페이지를 만들 때 `/content`, `playpage` 제목이 &quot;SCF 샌드박스 페이지 템플릿&quot;인 템플릿이 사용할 수 있는 템플릿 목록에 나타납니다.
 
-   템플릿에서 루트 페이지를 만든 후 정규 표현식에 루트 경로를 포함하도록 속성을 수정하여 템플릿에 대한 액세스를 이 웹 사이트로 제한할 수 있습니다. 즉,
+   템플릿에서 루트 페이지를 만든 후 속성을 편집하여 정규 표현식에 루트 경로를 포함시켜 템플릿에 대한 액세스를 이 웹 사이트로 제한할 수 있습니다.
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
@@ -77,7 +73,7 @@ ht-degree: 2%
 
    **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-1. 확인(OK)을 클릭하고 템플릿 작성을 마치면 새 템플릿의 속성(Properties) 탭 값 모서리에 빨간색 삼각형이 표시됩니다 `playpage` 템플릿. 이러한 빨간색 삼각형은 저장되지 않은 편집 내용을 나타냅니다.
+1. 확인(OK)을 클릭하고 템플릿 생성을 완료한 후 새 템플릿의 속성(Properties) 탭 값 모서리에 표시되는 빨간색 삼각형을 확인합니다 `playpage` 템플릿. 이러한 빨간색 삼각형은 저장되지 않은 편집 내용을 나타냅니다.
 
    클릭 **[!UICONTROL 모두 저장]** 저장소에 새 템플릿을 저장합니다.
 
@@ -107,12 +103,12 @@ ht-degree: 2%
 1. 클릭 **[!UICONTROL 다음]** 종료 시간: **[!UICONTROL 허용된 하위]** 대화 상자의 패널이 표시됩니다.
 
    * **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
-   * 클릭 **[!UICONTROL 모두 저장]**.
+   * **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
 1. 구성 요소에 대한 경로와 템플릿에 대한 resourceType이 일치하는지 확인합니다.
 
    >[!CAUTION]
    >
-   >재생 페이지 구성 요소 경로와 재생 페이지 템플릿의 sling:resourceType 속성 간의 대응은 웹 사이트의 올바른 기능에 중요합니다.
+   >재생 페이지 구성 요소 경로 및 `sling:resourceType` playpage 템플릿의 속성은 웹 사이트의 올바른 기능에 매우 중요합니다.
 
    ![verify-template-component](assets/verify-template-component.png)

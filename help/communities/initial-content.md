@@ -1,14 +1,14 @@
 ---
 title: 초기 샌드박스 콘텐츠
-description: 콘텐츠 만들기
+description: 샌드박스에서 페이지 템플릿을 사용하여 영어 버전의 웹 사이트에 대한 기본 페이지와 기본 페이지의 하위 페이지를 만드는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '490'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 4%
 
    * SCF 재생 - 재생할 기본 페이지의 하위 항목.
 
-이 자습서에서는 다음을 자세히 다루지 않습니다 [언어 복사](../../help/sites-administering/tc-prep.md), 루트 페이지가 HTML 헤더를 통해 사용자에 대한 기본 언어 감지를 구현하고 해당 언어에 대한 적절한 기본 페이지로 리디렉션할 수 있도록 설계되었습니다. 이 규칙은 페이지의 노드 이름에 두 글자로 된 국가 코드를 사용하는 것입니다. 예를 들어 영어는 &quot;en&quot;, 프랑스어는 &quot;fr&quot;입니다.
+이 튜토리얼에서는 다음을 다루지 않습니다. [언어 복사](../../help/sites-administering/tc-prep.md). 대신 루트 페이지가 HTML 헤더를 통해 사용자의 기본 언어 감지를 구현하고 해당 언어의 적절한 메인 페이지로 리디렉션할 수 있도록 디자인되었습니다. 이 규칙은 페이지의 노드 이름에 두 글자로 된 국가 코드를 사용하는 것입니다. 예를 들어 영어는 &quot;en&quot;, 프랑스어는 &quot;fr&quot;입니다.
 
 ## 첫 페이지 만들기 {#create-first-pages}
 
@@ -97,7 +97,7 @@ ht-degree: 4%
 
 ![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
-* 클릭 **[!UICONTROL 모두 저장]**
+* **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다
 
 구성을 저장하는 데 문제가 있으면 다시 로그인하고 다시 구성하십시오.
 

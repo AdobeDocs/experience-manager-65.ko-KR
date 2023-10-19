@@ -1,20 +1,16 @@
 ---
 title: 좋아요 기본 사항
-seo-title: Liking Essentials
-description: 좋아요 구성 요소 개요
-seo-description: Liking component overview
-uuid: 89f16859-c901-4090-8e16-363b95c508de
+description: 하트 아이콘을 선택하여 구성원이 일부 콘텐츠에 대한 긍정적인 의견을 표현할 수 있는 유용한 도구인 좋아요 구성 요소를 사용하는 방법을 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 1%
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -61,9 +57,9 @@ ht-degree: 1%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [Tally API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally 끝점](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 

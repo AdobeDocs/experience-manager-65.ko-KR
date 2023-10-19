@@ -1,17 +1,15 @@
 ---
 title: 모양 변경
-description: 스크립트 수정
-uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
+description: Adobe Experience Manager Communities에서 각 댓글에 대한 전체 HTML을 작성하는 Comment.hbs 스크립트를 편집하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -20,7 +18,7 @@ ht-degree: 0%
 
 ## 스크립트 수정 {#modify-the-script}
 
-comment.hbs 스크립트는 각 댓글에 대한 전체 HTML을 작성합니다.
+다음 `comment.hbs` 스크립트는 각 댓글에 대한 전체 HTML 생성을 담당합니다.
 
 게시된 각 댓글 옆에 아바타를 표시하지 않으려면:
 
@@ -57,7 +55,7 @@ comment.hbs 스크립트는 각 댓글에 대한 전체 HTML을 작성합니다.
 
 >[!NOTE]
 >
->보다 강력한 복제 형태는 패키지 관리자에서 패키지를 만들고 [활성화](/help/sites-administering/package-manager.md#replicating-packages) 그래. 패키지를 내보내고 보관할 수 있습니다.
+>보다 강력한 복제 형식은 패키지 관리자에서 패키지를 만들고 [활성화](/help/sites-administering/package-manager.md#replicating-packages) 그래. 패키지를 내보내고 보관할 수 있습니다.
 
 전역 탐색에서 을 선택합니다. **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** 및 클릭 **[!UICONTROL 트리 활성화]**.
 

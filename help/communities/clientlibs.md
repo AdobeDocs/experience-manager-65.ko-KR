@@ -1,15 +1,15 @@
 ---
 title: 커뮤니티 구성 요소에 대한 Clientlibs
-description: 커뮤니티용 클라이언트측 라이브러리
+description: 사용 세부 정보를 수집하고 커뮤니티 구성 요소에 대한 디버깅 도구를 사용할 수 있도록 페이지에 클라이언트측 라이브러리(clientlibs)를 추가하는 방법을 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Communities 구성 요소를 페이지에 추가하려면 구성 요소에 필�
 * 포함 `clientlibslist` 선택한 노드:
 
    * 문자열 찾기[] 속성 `scg:requiredClientLibs`.
-   * 선택 `Value` 문자열 배열 대화 상자에 액세스합니다.
+   * 선택 `Value` 문자열 배열 대화 상자에 액세스할 수 있습니다.
 
       * 필요한 경우 아래로 스크롤합니다.
       * 새 클라이언트 라이브러리를 입력하려면 +를 선택하십시오.

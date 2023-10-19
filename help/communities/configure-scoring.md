@@ -1,19 +1,15 @@
 ---
 title: 채점 및 배지 핵심 사항
-seo-title: Scoring and Badges Essentials
-description: 채점 및 배지 기능 개요
-seo-description: Scoring and Badges feature overview
-uuid: 6e3af071-04e8-4dc1-977a-0da711b72961
+description: Adobe Experience Manager Communities 점수 및 배지 기능이 커뮤니티 구성원을 식별하고 보상하는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '946'
 ht-degree: 2%
 
 ---
@@ -68,9 +64,9 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 {{/each}}
 ```
 
-true인 경우 isAssigned는 배지가 역할에 할당되었으며 배지가 텍스트로 표시됨을 나타냅니다.
+true인 경우 `isAssigned` 배지가 역할에 할당되었으며 배지가 텍스트로 표시되어야 함을 나타냅니다.
 
-false인 경우 isAssigned는 획득한 점수에 대해 배지가 부여되었으며 배지가 이미지로 표시되어야 함을 나타냅니다.
+false인 경우 `isAssigned` 배지가 획득 점수에 대해 부여되었으며 배지가 이미지로 표시되어야 함을 나타냅니다.
 
 이 비헤이비어에 대한 모든 변경은 사용자 지정된 스크립트(오버라이드 또는 오버레이)에서 수행해야 합니다. 다음을 참조하십시오 [클라이언트측 사용자 정의](/help/communities/client-customize.md).
 
@@ -80,7 +76,7 @@ false인 경우 isAssigned는 획득한 점수에 대해 배지가 부여되었�
 
 자세한 지침은 다음을 참조하십시오. [사용자 지정 로그 파일 만들기](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
-Slinglog 파일을 빠르게 설정하려면:
+slinglog 파일을 빠르게 설정하려면:
 
 1. 액세스 **Adobe Experience Manager 웹 콘솔 로그 지원**, 예
 
@@ -93,13 +89,13 @@ Slinglog 파일을 빠르게 설정하려면:
    1. 이름 입력 **로그 파일**, 예
 
       * logs/scoring-debug.log
+
    1. 2개 입력 **Logger** (클래스) 항목(사용 `+` 아이콘)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
+
    1. **저장**&#x200B;을 선택합니다
-
-
 
 ![debug-scoring-log](assets/debug-scoring-log.png)
 
@@ -151,7 +147,7 @@ JSRP에서 UGC의 기본 위치는 다음과 같습니다. `/content/usergenerat
    * 다음 작업 중에 생성된 시작 자습서(참여) 사이트 사용 [시작하기 자습서](/help/communities/getting-started.md)
    * 포럼 페이지 노드를 찾습니다
 
-      `/content/sites/engage/en/forum/jcr:content`
+     `/content/sites/engage/en/forum/jcr:content`
 
    * 채점 및 배지 속성 추가
 
@@ -167,22 +163,21 @@ JSRP에서 UGC의 기본 위치는 다음과 같습니다. `/content/usergenerat
 
    * 포럼 구성 요소 노드 찾기
 
-      `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+     `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * 배지를 표시하려면 속성을 추가하십시오
 
-      `allowBadges = true`
+     `allowBadges = true`
 
    * 사용자가 로그인하고 포럼 주제를 만들고 브론즈 배지를 받습니다
-
 
 1. AEM 사이트 *없이* 고유 id :
 
    * 사용 [커뮤니티 구성 요소 안내서](/help/communities/components-guide.md)
    * 포럼 페이지 노드를 찾습니다
 
-      `/content/community-components/en/forum/jcr:content`
+     `/content/community-components/en/forum/jcr:content`
 
    * 채점 및 배지 속성 추가
 
@@ -198,15 +193,14 @@ JSRP에서 UGC의 기본 위치는 다음과 같습니다. `/content/usergenerat
 
    * 포럼 구성 요소 노드 찾기
 
-      `/content/community-components/en/forum/jcr:content/content/forum`
+     `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * 배지를 표시하려면 속성을 추가하십시오
 
-      `allowBadges = true`
+     `allowBadges = true`
 
    * 사용자가 로그인하고 포럼 주제를 만들고 브론즈 배지를 받습니다
-
 
 1. 사용자에게 cURL 을 사용하는 중재자 배지가 할당됩니다.
 
@@ -230,7 +224,6 @@ JSRP에서 UGC의 기본 위치는 다음과 같습니다. `/content/usergenerat
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
 >
 >* 다양한 AEM 사이트에 대한 고유한 배지 이미지 만들기
-
 
 ### 액세스 점수 UGC {#access-scoring-ugc}
 

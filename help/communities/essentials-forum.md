@@ -1,15 +1,15 @@
 ---
 title: 포럼 기본 사항
-description: 포럼 개요
+description: Adobe Experience Manager 커뮤니티에서 포럼 기능을 사용하는 기본 사항에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 2%
+source-wordcount: '259'
+ht-degree: 1%
 
 ---
 

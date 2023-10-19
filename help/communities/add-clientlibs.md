@@ -1,16 +1,16 @@
 ---
 title: Clientlibs 추가
-description: ClientLibraryFolder 추가
+description: 사이트의 페이지를 렌더링하는 데 사용되는 JavaScript 및 CSS(Cascading Style Sheet)를 포함하는 데 사용되는 ClientLibraryFolder(clientlibs)를 추가하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 3%
+source-wordcount: '701'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 ## ClientLibraryFolder 추가(clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-이름이 인 ClientLibraryFolder 만들기 `clientlibs` 에는 사이트의 페이지를 렌더링하는 데 사용되는 JS 및 CSS가 포함됩니다.
+이름이 인 ClientLibraryFolder 만들기 `clientlibs` 에는 사이트의 페이지를 렌더링하는 데 사용되는 JavaScript(JS) 및 CSS(계단식 스타일 시트)가 포함되어 있습니다.
 
 다음 `categories` 이 클라이언트 라이브러리에 제공된 속성 값은 콘텐츠 페이지에서 이 clientlib을 직접 포함하거나 다른 clientlib에 임베드하는 데 사용되는 식별자입니다.
 
@@ -38,8 +38,8 @@ ht-degree: 3%
 * 이름 : **카테고리**
 * 유형 : **문자열**
 * 값 : **apps.an-scf-sandbox**
-* 클릭 **추가**
-* 클릭 **모두 저장**
+* **추가**&#x200B;를 클릭합니다
+* **모두 저장**&#x200B;을 클릭합니다
 
 참고: 카테고리 값에 &#39;앱&#39;을 앞에 붙입니다. 는 &#39;소유 애플리케이션&#39;을 /libs가 아닌 /apps 폴더에 있는 것으로 식별하는 규칙입니다. 중요: 자리 표시자 추가 `js.tx`t 및 **`css.txt`** 파일. (이러한 폴더가 없는 cq:ClientLibraryFolder는 공식적으로 아닙니다.)
 
@@ -48,7 +48,7 @@ ht-degree: 3%
 1. 입력 **이름:** `css.txt`
 1. 선택 **파일 만들기...**
 1. 입력 **이름:** `js.txt`
-1. 클릭 **모두 저장**
+1. **모두 저장**&#x200B;을 클릭합니다
 
 ![clientlibs-css](assets/clientlibs-css.png)
 
@@ -96,7 +96,7 @@ css.txt의 콘텐츠를 다음으로 설정
       * **`cq.social.author.hbs.voting`**
       * **확인**&#x200B;을 클릭합니다
 
-* 클릭 **모두 저장**
+* **모두 저장**&#x200B;을 클릭합니다
 
 ![scf-clientlibs](assets/scf-clientlibs.png)
 
@@ -106,7 +106,7 @@ css.txt의 콘텐츠를 다음으로 설정
 
 ### PlayPage 템플릿에 Clientlib 포함 {#include-clientlibs-in-playpage-template}
 
-를 포함하지 않는 것 `apps.an-scf-sandbox` 페이지의 ClientLibraryFolder 범주, SCF 구성 요소는 필요한 JavaScript 및 스타일을 사용할 수 없으므로 작동하지 않거나 스타일이 지정되지 않습니다.
+를 포함하지 않는 것 `apps.an-scf-sandbox` 페이지의 ClientLibraryFolder 범주, 필수 JavaScript 및 CSS 스타일을 사용할 수 없으므로 SCF 구성 요소가 작동하지 않거나 스타일이 지정되지 않습니다.
 
 예를 들어 clientlibs를 포함하지 않으면 SCF 주석 구성 요소가 스타일이 지정되지 않은 상태로 표시됩니다.
 
@@ -125,11 +125,11 @@ include 문은에 포함됩니다. `head` 의 섹션 `html` 스크립트. 기본
 1. 마우스 오른쪽 단추를 클릭하고 선택 **복사** (또는 도구 모음에서 복사 선택)
 1. 선택 **`/apps/an-scf-sandbox/components/playpage`**
 1. 마우스 오른쪽 단추를 클릭하고 선택 **붙여넣기** (또는 도구 모음에서 붙여넣기 선택)
-1. 두 번 클릭 **`headlibs.jsp`** 열다
+1. 두 번 클릭 **`headlibs.jsp`** 그럼 열어보세요
 1. 파일 끝에 다음 줄을 추가합니다
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. 클릭 **모두 저장**
+1. **모두 저장**&#x200B;을 클릭합니다
 
 ```xml
 <%@ page session="false" %><%
@@ -149,7 +149,7 @@ include 문은에 포함됩니다. `head` 의 섹션 `html` 스크립트. 기본
 
 ### 지금까지 작업 저장 {#saving-your-work-so-far}
 
-이 시점에는 최소 샌드박스가 존재하며 재생하는 동안 저장소가 손상되어 다시 시작하려는 경우 서버를 끄고 crx-quickstart/ 폴더의 이름을 변경하거나 삭제하고 서버를 켜고 저장된 이 패키지를 업로드 및 설치할 수 있으므로 가장 기본적인 단계를 반복하지 않아도 됩니다.
+이 시점에는 최소 샌드박스가 존재합니다. 재생하는 동안 저장소가 손상되어 다시 시작하려는 경우 서버를 끌 수 있도록 패키지로 저장할 가치가 있을 수 있습니다. 그런 다음 crx-quickstart/ 폴더의 이름을 바꾸거나 삭제하고, 서버를 켜고, 이 저장된 패키지를 업로드하고 설치합니다. 이러한 가장 기본적인 단계를 반복하지 않아도 됩니다.
 
 이 패키지는 [샘플 페이지 만들기](/help/communities/create-sample-page.md) 어서 뛰어들어 게임을 시작하는 것을 기다릴 수있는 자습서!..
 

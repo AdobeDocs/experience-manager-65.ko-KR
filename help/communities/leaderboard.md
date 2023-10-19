@@ -1,19 +1,15 @@
 ---
 title: 리더보드 기본 사항
-seo-title: Leaderboard Essentials
-description: 리더보드 기능 개요
-seo-description: Leaderboard feature overview
-uuid: 815a6928-b147-496d-9751-13159ad1304d
+description: Adobe Experience Manager 커뮤니티에서 순위표 구성 요소로 작업할 수 있도록 커뮤니티 점수 및 배지를 구성하는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 exl-id: fd1b1749-13f9-4079-ae39-348676105852
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 5%
+source-wordcount: '112'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 5%
 
 이 페이지에서는 리더보드 기능을 사용하는 데 필요한 기본 정보를 제공합니다.
 
-페이지에 리더보드 구성 요소를 포함하기 전에 을 구성해야 합니다. [커뮤니티 점수 및 배지](implementing-scoring.md).
+페이지에 리더보드 구성 요소를 포함하기 전에 다음을 구성해야 합니다. [커뮤니티 점수 및 배지](implementing-scoring.md).
 
 다음을 참조하십시오 [채점 및 배지 핵심 사항](configure-scoring.md).
 

@@ -1,25 +1,21 @@
 ---
 title: 등급 기본 사항
-seo-title: Rating Essentials
-description: 등급 구성 요소 개요
-seo-description: Rating component overview
-uuid: 48ef61ad-be7a-4a6b-a284-23e5bb4f1671
+description: Tally 하위 클래스인 등급 구성 요소를 통해 로그인한 커뮤니티 구성원이 웹 사이트에서 기능을 평가하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 exl-id: 49456944-ff0d-4507-b3b8-143c90067573
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '287'
 ht-degree: 1%
 
 ---
 
 # 등급 기본 사항 {#rating-essentials}
 
-등급 구성 요소, [계산](tally.md) 하위 클래스를 사용하면 로그인한 커뮤니티 멤버가 웹 사이트의 기능을 평가할 수 있습니다.
+등급 구성 요소, [계산](tally.md) 하위 클래스를 사용하면 로그인한 커뮤니티 멤버가 웹 사이트에서 기능을 평가할 수 있습니다.
 
 동일한 페이지에 투표 구성 요소의 여러 인스턴스를 배치할 수 있습니다. 각 인스턴스는 고유한 인스턴스로 구성해야 합니다 `tally name` 속성.
 
@@ -60,9 +56,9 @@ ht-degree: 1%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [Tally API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally 끝점](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 

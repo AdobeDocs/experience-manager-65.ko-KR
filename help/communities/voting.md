@@ -1,19 +1,15 @@
 ---
 title: 투표 사용
-seo-title: Using Voting
-description: 페이지에 투표 구성 요소 추가
-seo-description: Adding the Voting component to a page
-uuid: 56e6cced-2f2d-434a-8fde-92a6c2478a04
+description: 로그인한 커뮤니티 구성원이 답변과 같은 특정 콘텐츠를 평가할 수 있도록 페이지에 투표 구성 요소를 추가하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 exl-id: aa90bf1b-6053-4949-b061-232d72b80682
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 5%
+source-wordcount: '253'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 5%
 
 ## 페이지에 투표 추가 {#adding-voting-to-a-page}
 
-을(를) 추가하려면 `Voting` 구성 요소를 페이지에 추가하려면 작성자 모드에서 구성 요소 브라우저를 사용하여 `Communities / Voting` 및 을 페이지에 드래그하여 사용자가 투표할 수 있는 기능에 상대적인 위치와 같은 작업을 수행합니다.
+을(를) 추가하려면 `Voting` 작성자 모드에서 페이지에 대한 구성 요소를 보려면 구성 요소 브라우저를 사용하십시오. 찾기 `Communities / Voting` 및 을 페이지에 드래그하여 사용자가 투표할 수 있는 기능에 상대적인 위치와 같은 작업을 수행합니다.
 
 필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](basics.md).
 
@@ -33,7 +29,7 @@ ht-degree: 5%
 
 ## 투표 구성 {#configuring-voting}
 
-배치된 을(를) 선택합니다 `Voting` 에 액세스하고 선택할 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 을(를) 선택합니다 `Voting` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
 
 ![구성](assets/configure-new.png)
 
@@ -43,15 +39,15 @@ ht-degree: 5%
 
 * **[!UICONTROL 긍정적인 응답 레이블]**
 
-   (*필수*) 긍정적인 응답을 위한 내부 속성 이름입니다.
+  (*필수*) 긍정적인 응답을 위한 내부 속성 이름입니다.
 
 * **[!UICONTROL 부정적인 응답 레이블]**
 
-   (*필수*) 부정적 응답에 대한 내부 속성 이름입니다.
+  (*필수*) 부정적 응답에 대한 내부 속성 이름입니다.
 
 * **[!UICONTROL Tally 이름]**
 
-   (*필수*) 투표 구성 요소의 이 인스턴스에 대해 식별할 수 있는 내부 속성 이름입니다.
+  (*필수*) 투표 구성 요소의 이 인스턴스에 대해 식별할 수 있는 내부 속성 이름입니다.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 

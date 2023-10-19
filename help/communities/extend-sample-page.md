@@ -1,19 +1,15 @@
 ---
 title: 샘플 페이지에 주석 추가
-seo-title: Add Comment to Sample Page
-description: 페이지에 사용자 정의 주석 추가
-seo-description: Add Custom Comments to a page
-uuid: ab258960-6de2-4943-80a7-e72904c0fd8e
+description: 웹 사이트의 댓글 시스템 인스턴스가 리소스 유형을 사용자 지정 댓글 시스템으로 설정하고 필요한 모든 클라이언트 라이브러리를 포함하도록 설정하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -30,13 +26,13 @@ ht-degree: 0%
 
 [https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
-주석이 렌더링되고 제대로 작동하는 데 필요한 세 개의 클라이언트 라이브러리를 확인합니다. 확장 의견이 참조되는 위치에 포함해야 합니다. [확장 주석의 클라이언트 라이브러리](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
+주석이 렌더링되고 제대로 작동하는 데 필요한 세 개의 클라이언트 라이브러리를 확인합니다. 확장된 Comments를 참조하는 위치에 포함되어야 하며 [확장 주석의 클라이언트 라이브러리](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
 ![comments-component1](assets/comments-component1.png)
 
 ### 페이지에 사용자 정의 주석 추가 {#add-custom-comments-to-a-page}
 
-페이지당 하나의 주석 시스템만 있을 수 있으므로 간단한 설명에 따라 샘플 페이지를 만드는 것이 더 간단합니다 [샘플 페이지 만들기](/help/communities/create-sample-page.md) 튜토리얼.
+페이지당 하나의 주석 시스템만 있을 수 있으므로 간단한 설명에 따라 샘플 페이지를 만드는 것이 더 쉽습니다 [샘플 페이지 만들기](/help/communities/create-sample-page.md) 튜토리얼.
 
 만들어지면 디자인 모드로 전환하고 사용자 지정 구성 요소 그룹을 사용하여 `Alt Comments` 페이지에 추가할 구성 요소입니다.
 

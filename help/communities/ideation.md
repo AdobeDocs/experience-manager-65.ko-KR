@@ -1,18 +1,14 @@
 ---
 title: 관념화 기본 사항
-seo-title: Ideation Essentials
-description: 관념화 기능 개요
-seo-description: Ideation feature overview
-uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
+description: 포럼과 유사하지만 보다 공동 작업 느낌이 있는 커뮤니티의 관념화 기능 작업의 기본 사항에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 exl-id: 7ad3592b-f8b5-45c0-97bc-15f781d7b811
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '127'
 ht-degree: 3%
 
 ---

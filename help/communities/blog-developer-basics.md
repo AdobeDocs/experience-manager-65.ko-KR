@@ -1,19 +1,15 @@
 ---
 title: 블로그 기본 사항
-seo-title: Blog Essentials
-description: 블로그 개요
-seo-description: Blog overview
-uuid: 714cf70c-76a0-4be6-9163-a31ac6bd1643
+description: 로그인한 커뮤니티 구성원이 블로그 문서를 게시할 수 있도록 페이지에 블로그 기능을 추가하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '451'
 ht-degree: 2%
 
 ---
@@ -79,15 +75,15 @@ AEM 6.1 커뮤니티에서 블로그는 커뮤니티 활동입니다. 이제 블
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [블로그 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [블로그 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [블로그 엔드포인트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [블로그 엔드포인트](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](/help/communities/server-customize.md)
 
 ### 블로그 기능 {#blog-function}
 
-다음을 포함하는 커뮤니티 사이트 구조 [블로그 기능](/help/communities/functions.md#blog-function) 이(가) 다음을 구성함 `Blog` 및 `Blog Sidebar` 구성 요소. Blog 함수는 [권한이 있는 구성원 사용자 그룹](/help/communities/users.md#privileged-members-group).
+다음을 포함하는 커뮤니티 사이트 구조 [블로그 기능](/help/communities/functions.md#blog-function) 이(가) `Blog` 및 `Blog Sidebar` 구성 요소를 구성했습니다. Blog 함수는 [권한이 있는 구성원 사용자 그룹](/help/communities/users.md#privileged-members-group).
 
 ### UGC(블로그 게시물 액세스) {#accessing-blog-entries-ugc}
 
@@ -107,7 +103,7 @@ AEM 6.1 커뮤니티에서 [공동 저장소](/help/communities/working-with-srp
 
 ## 기본 게시자 {#primary-publisher}
 
-배포가 게시 팜인 경우 게시가 예정된 문서에 대해 폴링할 기본 게시자를 식별해야 합니다.
+배포가 게시 팜인 경우 게시가 예정된 문서를 폴링하는 기본 게시자를 식별해야 합니다.
 
 다음을 참조하십시오 [기본 게시자](/help/communities/deploy-communities.md#primary-publisher) 을 참조하십시오.
 
@@ -119,6 +115,6 @@ AEM 플랫폼은에 설명된 대로 XSS 공격을 방지하기 위해 다른 �
 
 AEM 6.2부터는 이전에 수동으로 수행해야 했던 수정 사항이 기본 AntiSamy 구성 파일에 포함되어 있습니다.
 
-리치 미디어는 다음을 선택하여 블로그 기사에 포함됩니다. `Embed Media from External Sites` 아이콘 :
+리치 미디어는 다음을 선택하여 블로그 문서에 포함됩니다. `Embed Media from External Sites` 아이콘 :
 
 ![미디어](assets/media-icon.png)

@@ -1,14 +1,14 @@
 ---
 title: 소셜 그래프 기본 사항
-description: 다음 구성 요소와 다음 구성 요소에 대해 알아봅니다.
+description: 커뮤니티 사이트에서 다음 및 팔로우 구성 요소를 사용하여 소셜 그래프의 기본 사항에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '249'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 2%
        <li><i>True </i>- <code>following</code> 구성 요소는 로그인한 멤버를 나열합니다. <code>follows</code></li>
        <li><i>False </i>- <code>following</code> 구성 요소는 다음과 같은 멤버를 나열합니다. <code>follow </code>로그인한 멤버</li>
       </ul> </li>
-    </ul> <p>기본값은 입니다. <i>true</i> 속성이 누락된 경우. 작성자 모드에서 편집 대화 상자를 사용하여 이 속성을 설정할 수 없습니다. 속성을 의 인스턴스에 추가해야 합니다 <code>following</code> 노드 사용 <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>기본값은 입니다. <i>true</i> 속성이 누락된 경우. 작성자 모드에서 편집 대화 상자를 사용하여 이 속성을 설정할 수 없습니다. 속성을 의 인스턴스에 추가해야 합니다 <code>following</code> 를 사용한 노드 <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>

@@ -1,18 +1,14 @@
 ---
 title: 등급 사용
-seo-title: Using Ratings
-description: 페이지에 등급 구성 요소 추가
-seo-description: Adding a Rating component to a page
-uuid: a986970b-1221-4648-9a69-410f4480e0ae
+description: 로그인한 커뮤니티 구성원이 등급 콘텐츠별로 자신의 의견을 표현할 수 있도록 페이지에 등급 구성 요소를 추가하는 방법을 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 exl-id: 7534ad5d-b408-4b09-bd3d-da7ab009d55b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '219'
 ht-degree: 2%
 
 ---
@@ -33,11 +29,11 @@ ht-degree: 2%
 
 ## 등급 구성 {#configuring-rating}
 
-배치된 을(를) 선택합니다 `Rating` 에 액세스하고 선택할 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 을(를) 선택합니다 `Rating` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
 
 ![새로 구성](assets/configure-new.png)
 
-아래 **[!UICONTROL 텍스트 및 레이블]** 탭에서는 등급에 대한 내부 식별자를 지정합니다.
+아래 **[!UICONTROL 텍스트 및 레이블]** 탭에서 등급에 대한 내부 식별자를 지정합니다.
 
 ![tallyname](assets/tallyname.png)
 

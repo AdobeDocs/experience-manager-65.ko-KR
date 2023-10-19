@@ -1,19 +1,15 @@
 ---
 title: 오버레이 커뮤니티 구성 요소
-seo-title: Overlay communities components
-description: 오버레이 커뮤니티 구성 요소
-seo-description: Overlay communities components
-uuid: 872f7006-959a-49d2-b025-3a5abb7c6dca
+description: 구성 요소에 대한 모든 상대 참조에 대해 구성 요소의 모양이나 동작을 전체적으로 변경할 수 있도록 기본 구성 요소를 오버레이하는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 exl-id: 18376805-c2ed-439a-abc7-e9657afe8baf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -30,15 +26,15 @@ ht-degree: 0%
 
 댓글을 오버레이하려면 다음을 수행해야 합니다.
 
-1. [댓글 페이지](/help/communities/overlay-create-comments-page.md)
+1. [댓글 만들기 페이지](/help/communities/overlay-create-comments-page.md)
 1. [노드 만들기](/help/communities/overlay-create-nodes.md)
 1. [모양 변경](/help/communities/overlay-alter-appearance.md)
 
 **오버레이 알림 이메일**
 
-이메일 알림 메시지를 사용자 정의하려는 경우 다음 작업을 수행할 수 있습니다. [오버레이](/help/communities/client-customize.md#overlays) 의 템플릿 **/libs/settings/community/templates/email/html**.
+이메일 알림 메시지를 사용자 정의하려는 경우 다음 작업을 수행할 수 있습니다. [오버레이](/help/communities/client-customize.md#overlays) 의 템플릿 `/libs/settings/community/templates/email/html`.
 
-예를 들어 언급 이메일 알림(ugc가 만들어진 특정 커뮤니티 구성 요소의 경우)을 수정하려면 다음을 추가합니다. **if** 동사 조건 **언급** 를 활성화한 구성 요소의 템플릿에서 **@mentions** 지원.
+예를 들어 언급 이메일 알림(UGC가 생성된 특정 커뮤니티 구성 요소의 경우)을 편집하려고 한다고 가정합니다. 이러한 경우 **if** 동사 조건 **언급** 를 활성화한 구성 요소의 템플릿에서 **@mentions** 지원.
 
 ```java
 {{#equals this.verb "mention"}}\

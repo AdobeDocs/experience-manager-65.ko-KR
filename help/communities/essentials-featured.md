@@ -1,18 +1,14 @@
 ---
 title: 주요 콘텐츠 핵심 사항
-seo-title: Featured Content Essentials
-description: 기능 콘텐츠 작업
-seo-description: Working with feature content
-uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
+description: 커뮤니티 사이트 내 어디에서나 강조할 주요 콘텐츠 작업의 기본 사항에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 exl-id: 70b0ad6a-c891-4588-8515-449aed206805
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '120'
 ht-degree: 5%
 
 ---

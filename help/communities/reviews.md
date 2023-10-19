@@ -1,18 +1,14 @@
 ---
 title: 리뷰 및 리뷰 요약 사용(표시)
-seo-title: Using Reviews and Reviews Summary (Display)
-description: 페이지에 리뷰 및 리뷰 요약 구성 요소 추가
-seo-description: Adding the Reviews and Reviews Summary components to a page
-uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
+description: 리뷰 및 리뷰 요약 구성 요소를 페이지에 추가하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1285'
 ht-degree: 3%
 
 ---
@@ -39,7 +35,7 @@ ht-degree: 3%
 
 ## 리뷰 구성 {#configuring-reviews}
 
-배치된 을(를) 선택합니다 `Reviews` 에 액세스하고 선택할 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 을(를) 선택합니다 `Reviews` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
 
 ![새로 구성](assets/configure-new.png)
 
@@ -55,9 +51,9 @@ ht-degree: 3%
 
   클릭 **[!UICONTROL 항목 추가]** 다른 등급 선택을 추가합니다.
 
-아래 **[!UICONTROL 필수 등급]** 탭, 목록에서 항목 다시 입력 **[!UICONTROL 허용된 등급]** 등급을 지정해야 합니다. 항목이 허용된 등급 탭에만 지정되는 경우 구성원이 제출했을 때 표시 해제될 수 있습니다.
+아래 **[!UICONTROL 필수 등급]** 탭, 목록에서 항목 재입력 **[!UICONTROL 허용된 등급]** 등급 지정에 필요합니다. 항목이 허용된 등급 탭에만 지정되는 경우 구성원이 제출했을 때 표시 해제될 수 있습니다.
 
-웹 사이트에서 필수 등급은 별표로 표시됩니다. 항목이 필수이고 표시 해제된 상태로 남아 있는 경우, 구성원에게 메시지가 표시되고 필요한 모든 등급이 표시될 때까지 제출이 거부됩니다.
+웹 사이트에서 필수 등급은 별표로 표시됩니다. 항목이 필수이고 표시 해제된 상태로 남아 있는 경우 구성원에게 메시지가 표시되고 필요한 모든 등급이 표시될 때까지 제출이 거부됩니다.
 
 ![필수 등급](assets/configure-review2.png)
 
@@ -99,7 +95,7 @@ ht-degree: 3%
 
 * **[!UICONTROL 허용되는 파일 유형]**
 
-  다음과 같은 경우에만 관련됨 **[!UICONTROL 파일 업로드 허용]** 이(가) 선택되었습니다. &quot;점&quot; 분리자가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf 지정한 파일 형식이 있으면 지정하지 않은 파일 형식은 허용되지 않습니다. 기본값은 모든 파일 형식이 허용되도록 지정되지 않습니다.
+  다음과 같은 경우에만 관련됨 **[!UICONTROL 파일 업로드 허용]** 이(가) 선택되었습니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정하면 지정하지 않은 파일 유형은 허용되지 않습니다. 기본값은 모든 파일 형식이 허용되도록 지정되지 않습니다.
 
 * **[!UICONTROL 리치 텍스트 편집기]**
 
@@ -119,7 +115,7 @@ ht-degree: 3%
 
 * **[!UICONTROL 리뷰 삭제]**
 
-  선택하면 리뷰를 게시한 회원에게 삭제 권한이 제공됩니다. 기본값은 선택 취소되어 있습니다.
+  선택하면 리뷰를 게시한 회원이 삭제할 수 있습니다. 기본값은 선택 취소되어 있습니다.
 
 * **[!UICONTROL 리뷰 거부]**
 
@@ -155,7 +151,7 @@ ht-degree: 3%
 
 * `Communities / Reviews Summary (Display)`
 
-을(를) 페이지에 드래그하여 활성 검토나 종료된 검토의 요약을 표시할 위치에 놓습니다.
+그리고 현재 검토 또는 종료된 검토의 요약이 표시될 페이지로 드래그합니다.
 
 필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](basics.md).
 
@@ -169,7 +165,7 @@ ht-degree: 3%
 
 ### 리뷰 구성 요약(표시) {#configuring-reviews-summary-display}
 
-배치된 을(를) 선택합니다 `Reviews Summary (Display)` 에 액세스하고 선택할 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 을(를) 선택합니다 `Reviews Summary (Display)` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
 
 ![구성](assets/configure-new.png)
 
@@ -179,21 +175,21 @@ ht-degree: 3%
 
 * `Review Path`
 
-  의 배치된 인스턴스를 입력하거나 찾습니다. `reviews`요약할 구성 요소(예: 의 웹 페이지에 추가된 경우) [Geometrixx 참여 사이트,](getting-started.md) 경로는 다음과 같습니다.
+  의 배치된 인스턴스를 입력하거나 찾습니다. `reviews` 예를 들어 의 웹 페이지에 가 추가된 경우 요약할 수 있는 구성 요소 [Geometrixx 참여 사이트,](getting-started.md) 경로는 다음과 같습니다.
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-  선택하는 경우, 요약되는 리뷰에 각 별 등급이 몇 개나 있는지를 나타내는 막대 그래프 표시를 포함합니다. 기본값은 선택 취소되어 있습니다.
+  선택하는 경우, 요약되는 리뷰에 별 등급이 몇 개나 있는지를 나타내는 막대 그래프 표시를 포함합니다. 기본값은 선택 취소되어 있습니다.
 
 ### 사용자 정의 검토 유형으로 변경 {#changing-to-a-custom-review-type}
 
 리뷰 구성 요소는 댓글 시스템 을 사용합니다.
 
-댓글 리소스 유형을 변경하면 댓글 시스템은 더 이상 기본값을 사용하여 댓글의 인스턴스를 생성하지 않고 개발자가 사용자 지정(확장)한 인스턴스를 생성합니다.
+주석 리소스 유형을 변경하면 주석 시스템은 더 이상 기본값을 사용하여 주석 인스턴스를 생성하지 않고 개발자가 사용자 지정(확장)한 주석 인스턴스를 생성합니다.
 
-사용자 지정 리소스 유형을 알고 나면 다음을 입력합니다. [디자인 모드](../../help/sites-authoring/default-components-designmode.md) 배치된 을 두 번 클릭합니다. `Comments` 추가 탭이 있는 대화 상자를 여는 구성 요소.
+사용자 지정 리소스 유형을 알고 있는 경우 다음을 입력합니다. [디자인 모드](../../help/sites-authoring/default-components-designmode.md) 배치된 을 두 번 클릭합니다. `Comments` 추가 탭이 있는 대화 상자를 여는 구성 요소.
 
 아래 **[!UICONTROL 리소스 유형]** 탭에서 새 인스턴스의 사용자 지정 resourceType을 `Comments or Voting` 구성 요소:
 

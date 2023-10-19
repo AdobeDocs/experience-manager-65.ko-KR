@@ -1,14 +1,14 @@
 ---
 title: 샘플 페이지 만들기
-description: 샘플 커뮤니티 사이트 만들기
+description: 간단한 커뮤니티 사이트를 만드는 데 도움이 되는 페이지 기능만 포함하는 커뮤니티 사이트 템플릿을 만드는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '426'
 ht-degree: 2%
 
 ---

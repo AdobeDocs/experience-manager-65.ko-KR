@@ -1,14 +1,14 @@
 ---
 title: 커뮤니티에 대한 Dispatcher 구성
-description: AEM Communities에 대한 Dispatcher 구성
+description: 커뮤니티 사이트가 제대로 작동하도록 AEM Communities용 Dispatcher를 구성하는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '653'
 ht-degree: 11%
 
 ---
@@ -59,7 +59,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 
   ![dispatcher](assets/dispatcher.png)
 
 * **필터 패턴**
-  *(필수)* 커뮤니티 페이지에 대한 하나 이상의 경로. (예: `/content/sites/engage/(.*)`)
+  *(필수)* 커뮤니티 페이지에 대한 하나 이상의 경로. 예: `/content/sites/engage/(.*)`
 
 * **Cache-Control 최대 수명**
   *(필수)* 캐시 제어 헤더에 추가할 최대 기간(초)입니다. 값은 0보다 커야 합니다.
@@ -74,7 +74,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 
 
 다음 샘플은 특정 속성에 맞게 수정해야 하는 속성 이름을 사용합니다 `dispatcher.any` 파일.
 
-또한 다음 문서도 참조할 수 있습니다.
+추가 참조:
 
 * [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en)
 
@@ -89,7 +89,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 
 >Dispatcher를 사용하여 액세스를 제한할 때 추가 고려 사항은 [Dispatcher 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)를 참조하십시오. 또한 AEM 설치와 관련된 추가 보안 세부 정보는 [AEM 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)를 참조하십시오.
 >
 
-/filter 섹션의 끝에 특히 모든 거부 항목 뒤에 다음 항목을 추가해야 합니다.
+/filter 섹션의 끝에 다음 항목을 추가해야 합니다. 특히 거부된 모든 항목 다음에 추가됩니다.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -271,7 +271,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 
 
 특히 액세스를 거부하는 규칙을 추가할 때 이전 규칙에 미치는 영향에 유의하지 않고 필터 규칙을 삽입하는 것이 문제의 주요 원인입니다.
 
-첫 번째 필터 패턴은 종종 다음 필터가 제어된 방식으로 액세스를 복원하도록 모든 것을 거부하는 데 사용됩니다. 여러 필터가 요청에 적용되면 마지막으로 적용된 필터가 적용됩니다.
+첫 번째 필터 패턴은 종종 다음 필터가 제어된 방식으로 액세스를 복원하도록 모든 것을 거부하는 데 사용됩니다. 여러 필터가 요청에 적용되는 경우 마지막으로 적용된 필터가 적용됩니다.
 
 ## 샘플 dispatcher.any {#sample-dispatcher-any}
 

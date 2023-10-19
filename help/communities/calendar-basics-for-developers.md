@@ -1,18 +1,14 @@
 ---
 title: 달력 기본 사항
-seo-title: Calendar Essentials
-description: 달력 기능 개요
-seo-description: Calendar feature overview
-uuid: 14ff7a83-b2a7-4f7e-8ee7-88f336329a1a
+description: Experience Manager 커뮤니티에서 캘린더 기능을 사용하는 방법에 대해 알아봅니다. 달력은 권한이 있는 구성원 사용자 그룹의 식별을 지원합니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
 exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -57,15 +53,15 @@ ht-degree: 2%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [달력 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [달력 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
-* [달력 끝점](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
+* [달력 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 
 ### 달력 기능 {#calendar-function}
 
-다음을 포함하는 커뮤니티 사이트 구조 [Calendar 함수](functions.md#calendar-function) 이(가) 을(를) 구성함 `calendar` 구성 요소. Calendar 함수는 [권한이 있는 구성원 사용자 그룹](users.md#privileged-members-group).
+다음을 포함하는 커뮤니티 사이트 구조 [Calendar 함수](functions.md#calendar-function) 다음 포함 `calendar` 구성 요소를 구성했습니다. Calendar 함수는 [권한이 있는 구성원 사용자 그룹](users.md#privileged-members-group).
 
 ### UGC(캘린더 게시물 액세스) {#accessing-calendar-posts-ugc}
 
