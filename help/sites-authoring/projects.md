@@ -1,16 +1,8 @@
 ---
 title: 프로젝트
-seo-title: Projects
 description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화하여 공통, 공유 환경에서 프로젝트를 쉽게 관리할 수 있습니다..
-seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
-uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: projects
-content-type: reference
-discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
-docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 33%
@@ -223,7 +215,7 @@ ht-degree: 33%
 |---|---|---|---|
 | 관찰자 | 이 역할의 사용자는 프로젝트 상태를 포함하여 프로젝트 세부 사항을 볼 수 있습니다. | 프로젝트에 대한 읽기 전용 권한 | `workflow-users` 그룹 |
 | 편집기 | 이 역할의 사용자는 프로젝트 콘텐츠를 업로드하고 편집할 수 있습니다. | 프로젝트, 연결된 메타데이터 및 관련 에셋에 대한 읽기 및 쓰기 액세스<br>촬영 목록 업로드, 사진 촬영, 에셋 검토 및 승인 권한<br>에 대한 쓰기 권한 `/etc/commerce`<br>특정 프로젝트에 대한 권한 수정 | `workflow-users` 그룹 |
-| 소유자 | 이 역할의 사용자는 프로젝트를 만들고, 프로젝트에서 작업을 시작하고, 승인된 에셋을 프로덕션 폴더로 이동할 수 있습니다. 프로젝트의 다른 모든 작업도 소유자가 보고 수행할 수 있습니다. | `/etc/commerce`에 대한 쓰기 권한 | `dam-users` 프로젝트를 만들 수 있는 그룹<br>`project-administrators` 프로젝트를 만들고 에셋을 이동할 수 있는 그룹 |
+| 소유자 | 이 역할의 사용자는 프로젝트를 만들고, 프로젝트에서 작업을 시작하고, 승인된 에셋을 프로덕션 폴더로 이동할 수 있습니다. 프로젝트의 다른 모든 작업도 소유자가 보고 수행할 수 있습니다. | `/etc/commerce`에 대한 쓰기 권한 | `dam-users` 프로젝트를 만들 수 있는 그룹<br>`projects-administrators` 프로젝트를 만들고 에셋을 이동할 수 있는 그룹 |
 
 창의적인 프로젝트를 위해 사진작가 등의 추가적인 역할도 제공하고 있다. 이러한 역할을 사용하여 특정 프로젝트에 대한 사용자 정의 역할을 도출할 수 있습니다.
 

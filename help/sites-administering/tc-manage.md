@@ -2,7 +2,7 @@
 title: 번역 프로젝트 관리
 description: Adobe Experience Manager에서 번역 프로젝트를 관리하는 방법을 알아봅니다.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 9438868191961404e9e18cb0dd2e844985ac9db0
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 57%
@@ -433,7 +433,7 @@ AEM은 번역 작업이 콘텐츠의 초기 작업을 위해 생성되는지 또
 
 >[!NOTE]
 >
->프로젝트를 만들려면 귀하의 계정은 `project-administrators` 그룹의 멤버여야 합니다.
+>프로젝트를 만들려면 귀하의 계정은 `projects-administrators` 그룹의 멤버여야 합니다.
 
 번역 프로젝트를 수동으로 만들 때, [기본 속성](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) 이외에도 다음 번역 관련 속성에 대한 값을 제공해야 합니다.
 

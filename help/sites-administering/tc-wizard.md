@@ -3,7 +3,7 @@ title: 언어 복사 마법사
 description: Adobe Experience Manager의 언어 복사 마법사 사용에 대해 알아봅니다.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 2d87022aa2223df261e245fba65df054c041cd69
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 33%
@@ -16,7 +16,7 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->사이트의 언어 사본을 만들려면 사용자는 프로젝트 관리자 그룹의 멤버여야 합니다.
+>사이트의 언어 사본을 만들려면 사용자는 프로젝트-관리자 그룹의 멤버여야 합니다.
 
 이 마법사에 액세스하려면:
 

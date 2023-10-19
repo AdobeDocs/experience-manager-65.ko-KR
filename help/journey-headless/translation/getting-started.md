@@ -2,10 +2,10 @@
 title: AEM Headless 번역 시작하기
 description: Headless 콘텐츠를 구성하는 방법 및 AEM의 번역 도구의 작동 방식에 대해 알아봅니다.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 947b17a82f704a244e7fdc710cfa9df50c64f46b
 workflow-type: tm+mt
 source-wordcount: '1495'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -50,7 +50,7 @@ AEM Headless 콘텐츠 번역을 시작하기 전에 알아 두어야 할 몇 �
 
 * 콘텐츠 번역 테스트를 위한 샌드박스 액세스
 * 선호하는 번역 서비스에 연결하기 위한 자격 증명
-* AEM에서 `project-administrators` 그룹의 멤버여야 함
+* AEM에서 `projects-administrators` 그룹의 멤버여야 함
 
 ## 핵심은 구조입니다 {#content-structure}
 
@@ -190,6 +190,6 @@ Headless 번역 여정의 한 부분을 완료했으므로,
 * [번역할 콘텐츠 식별](/help/sites-administering/tc-rules.md) - 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 * [번역 통합 프레임워크 구성](/help/sites-administering/tc-tic.md) - 번역 통합 프레임워크를 서드파티 번역 서비스와 통합하도록 구성하는 방법에 대해 알아봅니다.
 * [번역 프로젝트 관리](/help/sites-administering/tc-manage.md) - AEM에서 기계 번역 및 인간 번역을 만들고 관리하는 방법에 대해 알아봅니다.
-* An [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
-* 다음 [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

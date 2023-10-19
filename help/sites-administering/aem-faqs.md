@@ -1,14 +1,8 @@
 ---
 title: AEM FAQ
-seo-title: AEM 6.4 frequently asked questions
 description: 이러한 FAQ를 사용하여 AEM의 일반적인 워크플로 또는 문제를 이해, 구성 및 해결할 수 있습니다.
-seo-description: Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.
-uuid: 17d34923-f1ce-463b-8e9d-a713edcce51b
-contentOwner: jsyal
-discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
-docset: aem65
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 1%
@@ -42,7 +36,7 @@ ht-degree: 1%
 
 언어 복사 기능을 만들려면 콘텐츠 작성자는 다음 위치에서 권한이 필요합니다. `/content/projects` 위치.
 
-작성자가 프로젝트도 관리해야 하는 경우 해결 방법은 작성자를에 추가하는 것입니다. `project-administrators` 그룹입니다.
+작성자가 프로젝트도 관리해야 하는 경우 해결 방법은 작성자를에 추가하는 것입니다. `projects-administrators` 그룹입니다.
 
 #### 프로젝트에 대한 언어 사본을 만드는 동안 형식을 변경하는 방법 {#how-to-change-the-format-while-creating-language-copy-for-a-project}
 
@@ -86,7 +80,7 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수
 
 다음을 참조하십시오. [AEM 업그레이드 이유 이해하기](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) 최신 버전의 Adobe Experience Manager으로 업그레이드하는 것을 고려하는 고객을 위한 주요 기능에 대한 높은 수준의 분류를 설명합니다.
 
-## Assets {#assets}
+## 자산 {#assets}
 
 ### MP4 파일을 업로드하는 동안 자산 워크플로우가 반복되는 이유는 무엇입니까(예: 드래그 앤 드롭 방법 사용)? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 
@@ -97,7 +91,7 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수
 Touch UI를 통해 언어 사본을 만들 때(**참조** -> **언어 사본 업데이트**) 새 언어 아래에 새 DAM 폴더가 생성되고 여기에서 에셋이 참조됩니다.
 
 OOTB 구성의 기본 설정입니다. 다음을 설정할 수 있습니다. **페이지 에셋 번역** = **번역 안 함** 번역 구성에서.
-AEM 6.4의 경우 **도구** > **Cloud Services** > **번역 클라우드 서비스**.
+AEM 6.4의 경우 **도구** > **Cloud Service** > **번역 클라우드 서비스**.
 
 #### AEM SegmentStore(AEM 6.3.1.1)의 기하급수적 증가를 유발하는 AEM 구성 요소를 비활성화하는 방법 {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
