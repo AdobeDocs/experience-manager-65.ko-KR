@@ -1,15 +1,15 @@
 ---
 title: 커뮤니티 그룹
-description: 커뮤니티 그룹 만들기
+description: 커뮤니티 그룹 기능을 사용하여 Publish 및 Author에서 승인된 사용자에 의해 커뮤니티 사이트 내에 하위 커뮤니티를 동적으로 만드는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '555'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ A [커뮤니티 그룹 템플릿](/help/communities/tools-groups.md) 은 커뮤�
 
 ![새 그룹](assets/new-group.png)
 
-다음을 선택하면 **새 그룹** 아이콘, 편집 대화 상자가 열립니다.
+다음을 선택하면 **새 그룹** 아이콘을 클릭하면 편집 대화 상자가 열립니다.
 
 아래 **설정** 탭에서는 그룹의 기본 기능을 제공합니다.
 

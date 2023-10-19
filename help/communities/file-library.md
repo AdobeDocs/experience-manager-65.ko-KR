@@ -1,15 +1,13 @@
 ---
 title: 파일 라이브러리 기능
-description: 파일 라이브러리 기능을 사용하면 로그인한 사이트 방문자가 파일을 업로드하고, 관리하고, 다운로드할 수 있습니다
-uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
+description: 파일 라이브러리 기능을 사용하면 로그인한 사이트 방문자가 파일을 업로드하고, 관리하고, 다운로드할 수 있습니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 8%
@@ -111,7 +109,7 @@ ht-degree: 8%
 
 * **UI 언급 패턴**
 
-  게시물에 등록된 사용자를 태그 지정(@mention)할 수 있도록 허용된 패턴 문자열을 지정합니다. (예: `~{{familyName}}{{givenName}}`)
+  게시물에 등록된 사용자를 태그 지정(@mention)할 수 있도록 허용된 패턴 문자열을 지정합니다. 예: `~{{familyName}}{{givenName}}`
 
 * **스레드된 회신 허용**
 

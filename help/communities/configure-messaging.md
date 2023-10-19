@@ -1,19 +1,15 @@
 ---
 title: 메시징 기능
-seo-title: Messaging Feature
-description: 메시징 구성 요소 구성
-seo-description: Configuring Messaging components
-uuid: 8b99ded1-aec2-40c9-82d5-e2e404f614ca
+description: 커뮤니티 구성원이 서로 개인적으로 더 상호 작용할 수 있도록 AEM Communities의 메시징 기능을 구성하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '954'
 ht-degree: 4%
 
 ---
@@ -24,7 +20,7 @@ AEM Communities의 메시징 기능을 사용하면 포럼 및 댓글에서 공�
 
 이 기능은 다음과 같은 경우에 포함될 수 있습니다. [커뮤니티 사이트](/help/communities/overview.md#communitiessites) 이(가) 만들어졌습니다.
 
-메시징 기능은 다음과 같은 기능을 제공합니다.
+메시징 기능을 사용하여 다음을 수행할 수 있습니다.
 
 **A** - 하나 이상의 커뮤니티 구성원에게 메시지 보내기
 
@@ -77,27 +73,27 @@ AEM Communities의 메시징 기능을 사용하면 포럼 및 댓글에서 공�
 
 * **서비스 선택기**
 
-   (*필수*) 이 속성을 속성 값으로 설정합니다 **`serviceSelector.name`** 다음에서 [AEM Communities 메시징 작업 서비스](/help/communities/messaging.md#messaging-operations-service).
+  (*필수*) 이 속성을 속성 값으로 설정합니다 **`serviceSelector.name`** 다음에서 [AEM Communities 메시징 작업 서비스](/help/communities/messaging.md#messaging-operations-service).
 
 * **페이지 작성**
 
-   (*필수*) 구성원이 을 클릭할 때 열리는 페이지 **`Reply`** 단추를 클릭합니다. 대상 페이지에는 다음 항목이 포함되어야 합니다. **메시지 작성** 양식.
+  (*필수*) 구성원이 을 클릭할 때 열리는 페이지 **`Reply`** 단추를 클릭합니다. 대상 페이지에는 다음 항목이 포함되어야 합니다. **메시지 작성** 양식.
 
 * **자원으로 회신/보기**
 
-   선택하면 회신 URL 및 보기 URL이 리소스를 참조하고, 그렇지 않으면 데이터가 URL에서 쿼리 매개 변수로 전달됩니다.
+  선택하면 회신 URL 및 URL 보기 가 리소스를 참조하거나 데이터가 URL의 쿼리 매개 변수로 전달됩니다.
 
 * **프로필 표시 양식**
 
-   보낸 사람 프로필을 표시하는 데 사용할 프로필 양식입니다.
+  보낸 사람 프로필을 표시하는 데 사용할 프로필 양식입니다.
 
 * **휴지통 폴더**
 
-   선택하면 이 메시지 목록 구성 요소에 삭제된 것으로 플래그가 지정된 메시지(휴지통)만 표시됩니다.
+  선택하면 이 메시지 목록 구성 요소에 삭제된 것으로 플래그가 지정된 메시지(휴지통)만 표시됩니다.
 
 * **폴더 경로**
 
-   (*필수*) 다음에 대해 설정된 값 참조 **inbox.path.name** 및 **sentitems.path.name** 다음에서 [AEM Communities 메시징 작업 서비스](/help/communities/messaging.md#messaging-operations-service). 에 대해 구성 시 `Inbox`, 값을 사용하여 항목 하나를 추가합니다. **inbox.path.name**. 에 대해 구성 시 `Outbox`, 값을 사용하여 항목 하나를 추가합니다. **sentitems.path.name**. 에 대해 구성 시 `Trash`, 두 값이 모두 있는 두 항목을 추가합니다.
+  (*필수*) 다음에 대해 설정된 값 참조 **inbox.path.name** 및 **sentitems.path.name** 다음에서 [AEM Communities 메시징 작업 서비스](/help/communities/messaging.md#messaging-operations-service). 에 대해 구성 시 `Inbox`, 값을 사용하여 항목 하나를 추가합니다. **inbox.path.name**. 에 대해 구성 시 `Outbox`, 값을 사용하여 항목 하나를 추가합니다. **sentitems.path.name**. 에 대해 구성 시 `Trash`, 두 값이 모두 있는 두 항목을 추가합니다.
 
 #### 탭 표시 {#display-tab}
 
@@ -105,31 +101,31 @@ AEM Communities의 메시징 기능을 사용하면 포럼 및 댓글에서 공�
 
 * **읽은 상태로 표시 단추**
 
-   선택한 경우 `Read`메시지를 읽은 상태로 표시할 수 있는 단추입니다.
+  선택한 경우 `Read`메시지를 읽은 상태로 표시할 수 있는 단추입니다.
 
 * **읽지 않은 상태로 표시 단추**
 
-   선택한 경우 `Mark Unread` 메시지를 읽은 상태로 표시할 수 있는 단추입니다.
+  선택한 경우 `Mark Unread` 메시지를 읽은 상태로 표시할 수 있는 단추입니다.
 
 * **삭제 단추**
 
-   선택한 경우 `Delete` 메시지를 읽은 상태로 표시할 수 있는 단추입니다. 다음과 같은 경우 삭제 기능이 복제됩니다. **`Message Options`** 도 선택되어 있습니다.
+  선택한 경우 `Delete` 메시지를 읽은 상태로 표시할 수 있는 단추입니다. 다음과 같은 경우 삭제 기능을 복제합니다. **`Message Options`** 도 선택되어 있습니다.
 
 * **메시지 옵션**
 
-   선택하면 가 표시됩니다. **`Reply`**, **`Reply All`**, **`Forward`** 및 **`Delete`** 메시지를 다시 보내거나 삭제할 수 있는 단추. 다음과 같은 경우 삭제 기능이 복제됩니다. **`Delete Button`** 도 선택되어 있습니다.
+  선택하면 가 표시됩니다. **`Reply`**, **`Reply All`**, **`Forward`**, 및 **`Delete`** 메시지를 다시 보내거나 삭제할 수 있는 단추. 다음과 같은 경우 삭제 기능을 복제합니다. **`Delete Button`** 도 선택되어 있습니다.
 
 * **페이지당 메시지**
 
-   지정된 숫자는 페이지 매김 체계에서 페이지당 표시되는 최대 메시지 수입니다. 번호를 지정하지 않은 경우(왼쪽 공백) 모든 메시지가 표시되고 페이지 매김이 없습니다.
+  지정된 숫자는 페이지 매김 체계에서 페이지당 표시되는 최대 메시지 수입니다. 번호를 지정하지 않은 경우(왼쪽 공백) 모든 메시지가 표시되고 페이지 매김이 없습니다.
 
 * **타임스탬프 패턴**
 
-   하나 이상의 언어에 대한 타임스탬프 패턴을 제공합니다. 기본값은 en, de, fr, it, es, ja, zh_CN, ko_KR입니다.
+  하나 이상의 언어에 대한 타임스탬프 패턴을 제공합니다. 기본값은 en, de, fr, it, es, ja, zh_CN, ko_KR입니다.
 
 * **사용자 표시**
 
-   다음 중 하나를 선택합니다. **`Sender`** 또는 **`Recipients`** 보낸 사람 또는 받는 사람을 표시할지 여부를 결정합니다.
+  다음 중 하나를 선택합니다. **`Sender`** 또는 **`Recipients`** 보낸 사람 또는 수신자 표시 여부를 결정할 수 있습니다.
 
 ### 메시지 작성 구성 {#configure-compose-message}
 
@@ -151,23 +147,23 @@ AEM Communities의 메시징 기능을 사용하면 포럼 및 댓글에서 공�
 
 * **리디렉션 URL**
 
-   메시지를 보낸 후 표시되는 페이지의 URL을 입력합니다. (예: `../messaging.html`)
+  메시지를 보낸 후 표시되는 페이지의 URL을 입력합니다. 예: `../messaging.html`
 
 * **취소 URL**
 
-   보낸 사람이 메시지를 취소할 경우 표시되는 페이지의 URL을 입력합니다. (예: `../messaging.html`)
+  보낸 사람이 메시지를 취소할 경우 표시되는 페이지의 URL을 입력합니다. 예: `../messaging.html`
 
 * **메시지 제목의 최대 길이입니다**
 
-   제목 필드에 입력할 수 있는 최대 문자 수입니다. 예를 들어 500입니다. 기본값은 제한이 없습니다.
+  제목 필드에 입력할 수 있는 최대 문자 수입니다. 예를 들어 500입니다. 기본값은 제한이 없습니다.
 
 * **메시지 본문의 최대 길이입니다**
 
-   콘텐츠 필드에 허용되는 최대 문자 수입니다. 예: 10000. 기본값은 제한이 없습니다.
+  콘텐츠 필드에 허용되는 최대 문자 수입니다. 예: 10000. 기본값은 제한이 없습니다.
 
 * **서비스 선택기**
 
-   (*필수*) 이 속성을 속성 값으로 설정합니다 **`serviceSelector.name`** 다음에서 [AEM Communities 메시징 작업 서비스](/help/communities/messaging.md#messaging-operations-service).
+  (*필수*) 이 속성을 속성 값으로 설정합니다 **`serviceSelector.name`** 다음에서 [AEM Communities 메시징 작업 서비스](/help/communities/messaging.md#messaging-operations-service).
 
 #### 탭 표시 {#display-tab-1}
 
@@ -175,32 +171,32 @@ AEM Communities의 메시징 기능을 사용하면 포럼 및 댓글에서 공�
 
 * **제목 필드 표시**
 
-   선택한 경우 `Subject` 필드를 지정하고 메시지에 제목 추가를 활성화합니다. 기본값은 선택되어 있지 않습니다.
+  선택한 경우 `Subject` 필드를 지정하고 메시지에 제목 추가를 활성화합니다. 기본값은 선택되어 있지 않습니다.
 
 * **제목 레이블**
 
-   다음 옆에 표시할 텍스트를 입력하십시오. `Subject` 필드. 기본값은 입니다 `Subject`.
+  다음 옆에 표시할 텍스트를 입력하십시오. `Subject` 필드. 기본값은 입니다 `Subject`.
 
 * **파일 첨부 필드 표시**
 
-   선택한 경우 `Attachment` 첨부 파일을 메시지에 추가할 수 있습니다. 기본값은 선택되어 있지 않습니다.
+  선택한 경우 `Attachment` 첨부 파일을 메시지에 추가할 수 있습니다. 기본값은 선택되어 있지 않습니다.
 
 * **파일 레이블 첨부**
 
-   다음 옆에 표시할 텍스트를 입력하십시오. `Attachment` 필드. 기본값은 입니다 **`Attach File`**.
+  다음 옆에 표시할 텍스트를 입력하십시오. `Attachment` 필드. 기본값은 입니다 **`Attach File`**.
 
 * **컨텐츠 필드 표시**
 
-   선택한 경우 `Content` 필드를 지정하고 메시지 본문 추가를 활성화합니다. 기본값은 선택되어 있지 않습니다.
+  선택한 경우 `Content` 필드를 지정하고 메시지 본문 추가를 활성화합니다. 기본값은 선택되어 있지 않습니다.
 
 * **컨텐츠 레이블**
 
-   다음 옆에 표시할 텍스트를 입력하십시오. `Content` 필드. 기본값은 입니다 **`Body`**.
+  다음 옆에 표시할 텍스트를 입력하십시오. `Content` 필드. 기본값은 입니다 **`Body`**.
 
 * **리치 텍스트 편집기 사용**
 
-   선택하면 사용자 지정 콘텐츠 텍스트 상자와 자체 리치 텍스트 편집기의 사용을 나타냅니다. 기본값은 선택되어 있지 않습니다.
+  선택하면 사용자 지정 콘텐츠 텍스트 상자와 자체 리치 텍스트 편집기의 사용을 나타냅니다. 기본값은 선택되어 있지 않습니다.
 
 * **타임스탬프 패턴**
 
-   하나 이상의 언어에 대한 타임스탬프 패턴을 제공합니다. 기본값은 en, de, fr, it, es, ja, zh_CN, ko_KR입니다.
+  하나 이상의 언어에 대한 타임스탬프 패턴을 제공합니다. 기본값은 en, de, fr, it, es, ja, zh_CN, ko_KR입니다.

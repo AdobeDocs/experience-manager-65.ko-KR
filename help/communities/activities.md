@@ -1,19 +1,15 @@
 ---
 title: 활동 스트림 기능
-seo-title: Activity Streams Feature
-description: 로그인한 커뮤니티 구성원의 활동
-seo-description: Activities of a signed-in community member
-uuid: decd2d6c-4d4b-4698-a92c-2b5b441458cf
+description: 로그인한 커뮤니티 구성원의 활동을 활동 스트림 구성 요소를 통해 필터링하고 표시할 수 있는 스트림으로 수집하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '473'
 ht-degree: 4%
 
 ---
@@ -37,17 +33,17 @@ ht-degree: 4%
 
 * `Communities / Activity Streams`
 
-활동 스트림이 표시되어야 하는 페이지에 있는 위치로 드래그합니다.
+활동 스트림이 표시되어야 하는 페이지에 드래그합니다.
 
 필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md).
 
-다음의 경우 [필수 클라이언트측 라이브러리](/help/communities/essentials-activities.md#essentials-for-client-side) 포함됩니다. 이렇게 하면 `Activity Streams` 구성 요소 표시:
+다음의 경우 [필수 클라이언트측 라이브러리](/help/communities/essentials-activities.md#essentials-for-client-side) 포함됩니다. 이렇게 하면 `Activity Streams` 구성 요소가 표시됩니다.
 
 ![활동 스트림](assets/activity-component.png)
 
 ### 활동 스트림 구성 {#configuring-activity-streams}
 
-배치된 을(를) 선택합니다 `Activity Streams` 에 액세스하고 선택할 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 을(를) 선택합니다 `Activity Streams` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
 
 ![구성](assets/configure-new.png)
 
@@ -57,23 +53,23 @@ ht-degree: 4%
 
 * **최대 활동 개수**
 
-   표시할 활동 수
+  표시할 활동 수
 
 * **스트림 리소스 경로**
 
-   커뮤니티 사이트 또는 커뮤니티 그룹의 기본값을 사용하려면 비워 둡니다. 스트림 리소스 경로는 활동의 소스를 식별합니다. 기본값은 비어 있습니다.
+  커뮤니티 사이트 또는 커뮤니티 그룹의 기본값을 사용하려면 비워 둡니다. 스트림 리소스 경로는 활동의 소스를 식별합니다. 기본값은 비어 있습니다.
 
 * **사용자 활동 보기 표시**
 
-   선택하면 현재 구성원이 커뮤니티 내에서 생성한 활동을 기반으로 활동을 필터링하는 탭이 활동 페이지에 포함됩니다. 기본값은 선택되어 있습니다.
+  선택하면 활동 페이지에 현재 구성원이 커뮤니티 내에서 생성한 활동을 기반으로 활동을 필터링하는 탭이 포함됩니다. 기본값은 선택되어 있습니다.
 
 * **모든 활동 보기 표시**
 
-   선택하면 활동 페이지에 현재 구성원이 액세스할 수 있는 커뮤니티 내에서 생성된 모든 활동이 포함된 탭이 포함됩니다. 기본값은 선택되어 있습니다.
+  선택하면 활동 페이지에 현재 구성원이 액세스할 수 있는 커뮤니티 내에서 생성된 모든 활동이 포함된 탭이 포함됩니다. 기본값은 선택되어 있습니다.
 
 * **다음 보기 표시**
 
-   선택하면 활동 페이지에 현재 구성원이 팔로우하는 활동을 기반으로 활동을 필터링하는 탭이 포함됩니다. 기본값은 선택되어 있습니다.
+  선택하면 활동 페이지에 현재 멤버가 따르는 활동을 기반으로 활동을 필터링하는 탭이 포함됩니다. 기본값은 선택되어 있습니다.
 
 ### 다음 보기 {#following-view}
 

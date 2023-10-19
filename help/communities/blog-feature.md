@@ -1,17 +1,15 @@
 ---
 title: 블로그 기능
-description: 저널링 형식의 커뮤니티 정보
-uuid: 7323063f-81e8-45c3-9035-bf7df6124830
+description: 블로그 기능이 저널링 형식으로 커뮤니티 정보 제공을 지원하는 방법에 대해 알아봅니다. 승인된 사용자는 게시 환경에서 항목을 작성합니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1670'
 ht-degree: 6%
 
 ---
@@ -133,7 +131,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 * **태깅 허용**
 
-  선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다(참조) **태그 필드** 탭). 기본값은 선택 취소되어 있습니다.
+  선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다(참조). **태그 필드** 탭). 기본값은 선택 취소되어 있습니다.
 
 * **파일 업로드 허용**
 
@@ -161,7 +159,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 * **사용자가 주석 및 주제를 삭제하도록 허용**
 
-  선택하면 게시한 댓글과 블로그 항목을 구성원이 삭제할 수 있습니다. 기본값은 선택 취소되어 있습니다.
+  선택하면 게시한 댓글과 블로그 항목을 구성원이 삭제할 수 있도록 허용합니다. 기본값은 선택 취소되어 있습니다.
 
 * **다음 허용**
 
@@ -191,7 +189,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 * **UI 언급 패턴**
 
-  게시물에 등록된 사용자를 태그 지정(@mention)할 허용 패턴 문자열을 지정합니다. (예: `~{{familyName}}{{givenName}}`)
+  게시물에 등록된 사용자를 태그 지정(@mention)할 허용 패턴 문자열을 지정합니다. 예: `~{{familyName}}{{givenName}}`
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
@@ -227,7 +225,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
 #### 태그 필드 탭 {#tag-field-tab}
 
-아래 **태그 필드** 탭에서 적용할 수 있는 태그를 지정합니다. **태깅 허용** 다음에서 확인: **설정** 탭 :
+아래 **태그 필드** 탭에서 적용할 수 있는 태그를 지정합니다. **태깅 허용** 이(가) 다음에서 확인됨: **설정** 탭 :
 
 * **허용되는 네임스페이스**
 

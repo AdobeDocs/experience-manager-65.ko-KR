@@ -1,20 +1,16 @@
 ---
 title: 커뮤니티 구성 요소
-seo-title: Communities Components
-description: AEM 사이트에 커뮤니티 기능 추가
-seo-description: Adding community features to any AEM site
-uuid: 76824820-81e9-4192-8df3-dff55eaf144e
+description: AEM Communities 라이선스가 부여된 경우 표준 AEM 작성 도구를 사용하여 모든 AEM 사이트에 커뮤니티 기능을 추가할 수 있습니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 27%
+source-wordcount: '293'
+ht-degree: 25%
 
 ---
 
@@ -80,8 +76,8 @@ AEM Communities에 라이센스가 부여되면 커뮤니티 사이트를 만들
 
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
 
-* 방문 [커뮤니티 배포](/help/communities/deploy-communities.md) 권장 배포에 대해 알아봅니다.
+* 방문 [커뮤니티 배포](/help/communities/deploy-communities.md) 권장되는 배포에 대해 알아볼 수 있습니다.
 
 * 방문 [커뮤니티 사이트 관리](/help/communities/administer-landing.md) 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시지 구성에 대해 알아봅니다.
 
-* 방문 [개발 커뮤니티](/help/communities/communities.md) 소셜 구성 요소 프레임워크(SCF)와 커뮤니티 구성 요소 및 기능 사용자 지정에 대해 알아봅니다.
+* 방문 [개발 커뮤니티](/help/communities/communities.md) 소셜 구성 요소 프레임워크(SCF)와 커뮤니티 구성 요소 및 기능 맞춤화에 대해 알아볼 수 있습니다.
