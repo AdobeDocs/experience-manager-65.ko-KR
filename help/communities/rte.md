@@ -1,18 +1,14 @@
 ---
 title: 리치 텍스트 편집기 핵심 사항
-seo-title: Rich Text Editor Essentials
-description: 리치 텍스트 편집기 기능 개요
-seo-description: Rich text Editor feature overview
-uuid: f96015cc-114b-431a-a5ba-dc195c2a0b83
+description: 마크업으로 텍스트를 입력할 수 있는 리치 텍스트 편집기의 기본 사항과 기능에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 exl-id: 821e32f4-da8d-4bbb-936a-0844b8a24cdd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '238'
 ht-degree: 3%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 3%
 
 ## 개요 {#overview}
 
-리치 텍스트 편집기(RTE)는 마크업을 사용하여 텍스트를 입력하는 기능을 제공합니다.
+리치 텍스트 편집기(RTE)를 사용하면 마크업이 있는 텍스트를 입력할 수 있습니다.
 
 Communities 구성 요소용 [작성 환경의 리치 텍스트 편집기](../../help/sites-authoring/rich-text-editor.md): 게시 환경에 입력된 텍스트에 영향을 줍니다.
 
@@ -29,7 +25,7 @@ Communities 구성 요소용 [작성 환경의 리치 텍스트 편집기](../..
 
 ## 리치 텍스트 편집기 활성화 {#enabling-rich-text-editor}
 
-UGC(사용자 생성 컨텐츠)를 허용하는 커뮤니티 구성 요소를 활성화하여 RTE를 허용할 수 있습니다. 구성 요소가 페이지에 추가되었는지 또는 내에 포함되었는지에 따라 다름 [함수](functions.md), RTE는 기본적으로 활성화되어 있을 수도 있고, 활성화되어 있지 않을 수도 있습니다.
+UGC(사용자 생성 컨텐츠)를 허용하는 커뮤니티 구성 요소를 활성화하여 RTE를 허용할 수 있습니다. 구성 요소가 페이지에 추가되거나 내에 포함된 경우 [함수](functions.md), RTE는 기본적으로 활성화되어 있을 수도 있고, 활성화되어 있지 않을 수도 있습니다.
 
 활성화되지 않은 경우 을 입력하기만 하면 됩니다. [작성자 편집 모드](sites-console.md#authoring-site-content)를 클릭하고 편집할 구성 요소를 선택한 다음, `Rich Text Editor` 확인란.
 
@@ -46,9 +42,9 @@ RTE는 다음 커뮤니티 구성 요소에 사용할 수 있습니다.
 
 ## 사용자 지정 {#customization}
 
-구현이 다음을 기반으로 하므로 리치 텍스트 편집기를 사용자 지정할 수 있습니다. [편집기](https://www.ckeditor.com/).
+구현이 다음을 기반으로 하므로 리치 텍스트 편집기를 사용자 지정할 수 있습니다. [편집기](https://ckeditor.com/).
 
-Communities 구성 요소에 대한 현재 구성은 `cq.social.  scf   clientlib`, 저장소의 위치:
+Communities 구성 요소에 대한 현재 구성은 `cq.social.  scf   clientlib`, 저장소의
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 

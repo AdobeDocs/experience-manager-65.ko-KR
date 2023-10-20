@@ -1,18 +1,14 @@
 ---
 title: Tally 기본 사항
-seo-title: Tally Essentials
-description: Tally 클래스 개요
-seo-description: Tally class overview
-uuid: c369c6a1-9ced-4b5c-af43-8c03236eaa52
+description: Tally가 어떻게 특정 제품 및 서비스를 중요시하는지에 대한 구성원들의 피드백을 수집하는 표준 방법을 제공하는 추상 클래스인지에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 exl-id: 0b508df9-1a24-4728-a254-f913eeb9b391
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -39,9 +35,9 @@ AEM 6.1부터는 폴링 구성 요소를 더 이상 사용할 수 없습니다.
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [Tally API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally 끝점](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 

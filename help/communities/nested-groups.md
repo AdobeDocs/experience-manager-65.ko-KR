@@ -1,15 +1,15 @@
 ---
 title: 중첩 그룹 작성
-description: 중첩 그룹 만들기
+description: Adobe Experience Manager Communities 사이트에 대한 중첩 그룹을 만드는 방법을 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '600'
 ht-degree: 4%
 
 ---
@@ -37,7 +37,7 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 
 ## 메인 아트 그룹 만들기 {#create-main-arts-group}
 
-참여를 위한 사이트 구조에 그룹 기능이 포함되어 있으므로 이 그룹을 만들 수 있습니다. 사이트 내 함수 구성 `Reference Template` 기본값은 활성화된 그룹 템플릿을 선택할 수 있도록 하는 것입니다. 따라서 이 새 그룹에 대해 선택된 템플릿은 `Reference Group`.
+참여를 위한 사이트 구조에 그룹의 기능이 포함되어 있으므로 이 그룹을 만들 수 있습니다. 사이트 내 함수 구성 `Reference Template` 기본값은 활성화된 그룹 템플릿을 선택할 수 있도록 하는 것입니다. 따라서 이 새 그룹에 대해 선택된 템플릿은 `Reference Group`.
 
 이러한 콘솔은 커뮤니티 사이트 콘솔과 유사합니다.
 

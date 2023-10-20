@@ -1,14 +1,14 @@
 ---
 title: 저장소 리소스 공급자 개요
-description: 커뮤니티를 위한 공통 스토리지
+description: UGC(사용자 생성 컨텐츠)라고 하는 커뮤니티 컨텐츠가 SRP(저장소 리소스 제공자)에서 제공하는 간단한 공통 저장소에 저장되는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Adobe Experience Manager(AEM) 커뮤니티 6.1부터 일반적으로 사용자 �
 >
 >**사용자 지정 구성 요소**: AEM Communities의 사용이 허가된 고객의 경우, SRP API는 기본 토폴로지에 관계없이 UGC에 액세스하기 위해 사용자 지정 구성 요소 개발자가 사용할 수 있습니다. 다음을 참조하십시오 [SRP 및 UGC 필수 패키지](srp-and-ugc.md).
 
-또한 다음 문서도 참조할 수 있습니다.
+추가 참조:
 
 * [SRP 및 UGC 필수 패키지](srp-and-ugc.md) - SRP 유틸리티 메서드 및 예제.
 * [SRP를 사용하여 UGC에 액세스](accessing-ugc-with-srp.md) - 코딩 지침
@@ -53,7 +53,7 @@ JCR과 Oak는 모두 일반적으로 AEM 저장소를 참조하는 데 사용됩
 
 UGC의 경우 컨텐츠는 공개 게시 환경에 등록된 사이트 방문자(커뮤니티 구성원)가 입력합니다. 이 작업은 임의로 수행됩니다.
 
-관리 및 보고 목적으로, 개인 작성 환경에서 UGC에 액세스하는 것은 유용합니다. SRP를 사용하면 게시에서 작성자로 역복제가 필요하지 않으므로 작성자의 UGC에 대한 액세스가 더 일관되고 성능이 향상됩니다.
+관리 및 보고의 목적으로 개인 작성 환경에서 UGC에 액세스하는 것은 유용합니다. SRP를 사용하면 게시에서 작성자로 역복제가 필요하지 않으므로 작성자의 UGC에 대한 액세스가 더 일관되고 성능이 향상됩니다.
 
 ## SRP 정보 {#about-srp}
 
@@ -91,9 +91,9 @@ JSRP는 단일 AEM 인스턴스의 모든 UGC에 액세스하는 기본 공급�
 
 다음을 참조하십시오 [JSRP - JCR 저장소 리소스 제공자](jsrp.md).
 
-JSRP가 있고 UGC가 JCR에 저장되고 CRXDE Lite 및 JCR API를 통해 액세스할 수 있는 경우, JCR API를 사용하여 저장하지 않는 것이 좋습니다. 그렇지 않으면 향후 변경 사항이 사용자 지정 코드에 영향을 줄 수 있습니다.
+UGC가 JCR에 저장되고 CRXDE Lite 및 JCR API에서 액세스할 수 있는 동안 JSRP가 있는 경우, Adobe은 JCR API를 사용하여 이 작업을 수행하지 않는 것을 권장합니다. 이 경우 향후 변경 사항이 사용자 지정 코드에 영향을 줄 수 있습니다.
 
-또한 작성자 및 게시 환경에 대한 저장소는 공유되지 않습니다. 게시 인스턴스 클러스터는 공유 게시 저장소를 생성하지만 게시에서 입력한 UGC는 작성자에게 표시되지 않으므로 작성자의 UGC를 관리할 수 없습니다. UGC는 입력된 인스턴스의 JCR(AEM repository)에서만 유지됩니다.
+또한 작성자 및 게시 환경에 대한 저장소는 공유되지 않습니다. 게시 인스턴스 클러스터는 공유 게시 저장소를 생성하지만 게시에 입력된 UGC는 작성자에게 표시되지 않으므로 작성자의 UGC를 관리할 수 없습니다. UGC는 입력된 인스턴스의 JCR(AEM repository)에서만 유지됩니다.
 
 JSRP는 쿼리에 Oak 색인을 사용합니다.
 
@@ -104,13 +104,13 @@ UGC 경로를 모방하는 그림자 노드는 로컬 리포지토리에 존재�
 1. [액세스 제어(ACL)](#for-access-control-acls)
 1. [존재하지 않는 리소스(NER)](#for-non-existing-resources-ners)
 
-SRP 구현에 관계없이 실제 UGC는 그림자 노드와 동일한 위치에 *표시되지 않습니다.
+SRP 구현에 관계없이 실제 UGC는 *아님* 그림자 노드와 동일한 위치에 표시됩니다.
 
 ### 액세스 제어(ACL)용 {#for-access-control-acls}
 
 ASRP 및 MSRP와 같은 일부 SRP 구현은 ACL 확인을 제공하지 않는 데이터베이스에 커뮤니티 콘텐츠를 저장합니다. 그림자 노드는 ACL을 적용할 수 있는 로컬 저장소 위치를 제공합니다.
 
-SRP API를 사용하면 모든 SRP 옵션이 모든 CRUD 작업 전에 섀도 위치를 동일하게 확인합니다.
+SRP API를 사용하면 모든 SRP 옵션이 모든 CRUD 작업 전에 섀도 위치에 대한 동일한 검사를 수행합니다.
 
 ACL 검사는 리소스의 UGC에 적용된 권한을 확인하는 데 적합한 경로를 반환하는 유틸리티 메서드를 사용합니다.
 
@@ -142,7 +142,7 @@ ACL 검사는 리소스의 UGC에 적용된 권한을 확인하는 데 적합한
 
 기본 동작은 관련 하위 트리가 읽기 또는 쓰기에 참조될 때마다 게시 인스턴스에 그림자 노드를 설정하는 것입니다.
 
-예를 들어 배포가 [MSRP](msrp.md) TarMK 게시 팜과 함께
+예를 들어 배포가 다음과 같다고 가정합니다. [MSRP](msrp.md) TarMK 게시 팜과 함께
 
 다음과 같은 경우 [멤버](users.md) 게시물 pub1의 UGC(MongoDB에 저장됨), 그림자 노드는 pub1의 JCR에서 만들어집니다.
 

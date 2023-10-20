@@ -1,18 +1,14 @@
 ---
 title: 웹 사이트 구조 설정
-seo-title: Setup Website Structure
-description: 디렉터리 설정
-seo-description: Set up directories
-uuid: a31edcd5-dab8-4a42-953b-1d076c2182b2
+description: 만들 폴더를 포함하여 웹 사이트 구조를 설정하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -23,17 +19,17 @@ ht-degree: 1%
 
 * `/apps/an-scf-sandbox`
 
-   사용자 정의 응용 프로그램 및 템플릿이 있는 위치입니다.
+  사용자 정의 응용 프로그램 및 템플릿이 있는 위치입니다.
 
 * `/etc/designs/an-scf-sandbox`
 
-   여기에서 다운로드 가능한 디자인 요소가 있습니다.
+  여기에서 다운로드 가능한 디자인 요소가 있습니다.
 
 * `/content/an-scf-sandbox`
 
-   여기에서 다운로드 가능한 웹 페이지를 볼 수 있습니다.
+  여기에서 다운로드 가능한 웹 페이지를 볼 수 있습니다.
 
-이 자습서의 코드는 애플리케이션, 디자인 및 콘텐츠에 대해 동일한 기본 폴더 이름을 사용합니다. 웹 사이트의 다른 이름을 선택하는 경우 항상 바꾸기 `an-scf-sandbox` 을 선택합니다.
+이 자습서의 코드는 기본 폴더 이름이 애플리케이션, 디자인 및 컨텐츠에 대해 동일해야 합니다. 웹 사이트의 다른 이름을 선택하는 경우 항상 바꾸기 `an-scf-sandbox` 을 선택합니다.
 
 >[!NOTE]
 >
@@ -41,11 +37,10 @@ ht-degree: 1%
 >
 >* CRXDE에 표시되는 이름은 주소 지정 가능한 컨텐츠의 경로를 형성하는 노드 이름입니다.
 >* 노드 이름에 공백이 포함될 수 있지만 URI에 사용할 경우 공백을 &#39;%20&#39; 또는 &#39;+&#39;로 인코딩해야 합니다.
->* 노드 이름에는 하이픈과 밑줄이 포함될 수 있지만 Java 파일 내에서 패키지 이름으로 참조될 때 인코딩해야 합니다. 하이픈과 밑줄은 모두 밑줄 다음에 유니코드 값이 오는 밑줄로 이스케이프됩니다.
-   >
-   >   * 하이픈이 &#39;_002d&#39;가 됨
-   >   * 밑줄이 &#39;_005f&#39;가 됨
-
+>* 노드 이름에는 하이픈과 밑줄이 포함될 수 있지만 Java™ 파일 내에서 패키지 이름으로 참조되는 경우 인코딩해야 합니다. 하이픈과 밑줄은 모두 밑줄 다음에 유니코드 값이 오는 밑줄로 이스케이프됩니다.
+>
+* 하이픈이 &#39;_002d&#39;가 됨
+* 밑줄이 &#39;_005f&#39;가 됨
 
 ## 애플리케이션 디렉터리(/apps) 설정 {#setup-the-application-directory-apps}
 
@@ -79,7 +74,7 @@ ht-degree: 1%
    1. 다시 선택 `/apps/an-scf-sandbox`.
    1. 선택 **[!UICONTROL 모두 저장]**.
 
-   다른 편집 프로세스와 마찬가지로 자주 저장합니다. 데이터 입력 문제가 발생하는 경우 로그인 시간이 초과되었거나 이전 편집 내용을 저장해야 하기 때문일 수 있습니다.
+   다른 편집 프로세스와 마찬가지로 자주 저장해야 합니다. 데이터 입력 문제가 발생하는 경우 로그인 시간이 초과되었거나 이전 편집 내용을 저장해야 하기 때문일 수 있습니다.
 
 1. 이제 CRXDE Lite의 탐색기 창에 있는 구조는 다음과 같습니다.
 
@@ -87,7 +82,7 @@ ht-degree: 1%
 
 ## 디자인 디렉토리(/etc/designs) 설정 {#setup-the-design-directory-etc-designs}
 
-/etc/designs 디렉토리에는 페이지 컨텐츠와 함께 다운로드할 이미지, 스크립트, 스타일시트가 포함되어 있습니다.
+/etc/designs 디렉토리에는 페이지 컨텐츠와 함께 다운로드할 이미지, 스크립트 및 스타일 시트가 포함되어 있습니다.
 
 1. 클래식 UI에서 Designer 도구를 사용하려면 [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
@@ -115,6 +110,6 @@ ht-degree: 1%
 
 ## 콘텐츠 디렉터리(/content) 설정 {#setup-the-content-directory-content}
 
-저장소의 /content 디렉터리는 웹 사이트 콘텐츠가 있는 위치입니다. /content 아래의 경로는 브라우저 요청에 대한 URL의 경로를 구성합니다.
+저장소의 /content 디렉토리는 웹 사이트 컨텐츠가 있는 위치입니다. /content 아래의 경로는 브라우저 요청에 대한 URL의 경로를 구성합니다.
 
 *다음 이후* 다음 [페이지 템플릿](initial-app.md#createthepagetemplate) 는 초기 애플리케이션의 일부로 작성되며, 초기 페이지 콘텐츠는 템플릿을 기반으로 작성할 수 있습니다.... [**⇒**](initial-app.md)

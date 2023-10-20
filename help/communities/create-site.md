@@ -1,24 +1,20 @@
 ---
-title: 새 커뮤니티 사이트 작성자
-seo-title: Author a New Community Site
-description: 새 AEM Communities 사이트를 작성하는 방법
-seo-description: How to author a new AEM Communities site
-uuid: 4f609f5f-ef07-44fc-aeb3-1c616e120d46
+title: 커뮤니티 사이트 작성자
+description: Adobe Experience Manager Communities 사이트를 작성하는 방법을 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1578'
 ht-degree: 2%
 
 ---
 
-# 새 커뮤니티 사이트 작성자{#author-a-new-community-site}
+# 커뮤니티 사이트 작성자{#author-a-new-community-site}
 
 ## 커뮤니티 사이트 만들기 {#create-a-community-site}
 
@@ -29,7 +25,7 @@ ht-degree: 2%
 
 커뮤니티 사이트 콘솔은 커뮤니티 사이트를 만드는 단계를 안내하는 마법사를 제공합니다. 다음으로 이동할 수 있습니다. `Next` 단계 또는 `Back` 마지막 단계에서 사이트를 커밋하기 전에 이전 단계로 이동합니다.
 
-새 커뮤니티 사이트를 만들려면 다음 작업을 수행하십시오.
+커뮤니티 사이트를 만들려면 다음 작업을 수행하십시오.
 
 * 다음 항목 선택 `Create` 단추를 클릭합니다.
 
@@ -45,7 +41,7 @@ ht-degree: 2%
 * **커뮤니티 사이트 설명**: `A site for engaging with the community.`
 * **커뮤니티 사이트 루트**: (기본 루트는 비워 둡니다.) `/content/sites`)
 * **클라우드 구성**: (클라우드 구성이 지정되지 않은 경우 공백으로 남김) 지정된 클라우드 구성의 경로를 제공합니다.
-* **커뮤니티 사이트 기본 언어**: (단일 언어: 영어의 경우 그대로 유지) 드롭다운 목록을 사용하여 하나 선택 *이상* 독일어, 이탈리아어, 프랑스어, 일본어, 스페인어, 포르투갈어(브라질), 중국어(번체) 및 중국어(간체)의 기본 언어 커뮤니티 사이트는에 설명된 모범 사례에 따라 추가된 언어마다 하나씩 만들어지며 동일한 사이트 폴더 내에 존재합니다. [다국어 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md). 각 사이트의 루트 페이지에는 선택한 언어 중 하나의 언어 코드로 이름이 지정된 하위 페이지(예: 영어의 경우 &#39;en&#39;, 프랑스어의 경우 &#39;fr&#39;)가 포함됩니다.
+* **커뮤니티 사이트 기본 언어**: (단일 언어: 영어의 경우 그대로 유지) 드롭다운 목록을 사용하여 하나 선택 *이상* 독일어, 이탈리아어, 프랑스어, 일본어, 스페인어, 포르투갈어(브라질), 중국어(번체) 및 중국어(간체)의 기본 언어 커뮤니티 사이트는에 설명된 모범 사례에 따라 추가된 언어마다 하나씩 만들어지며 동일한 사이트 폴더 내에 존재합니다 [다국어 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md). 각 사이트의 루트 페이지에는 선택한 언어 중 하나의 언어 코드로 이름이 지정된 하위 페이지(예: 영어의 경우 &#39;en&#39;, 프랑스어의 경우 &#39;fr&#39;)가 포함되어 있습니다.
 
 * **커뮤니티 사이트 이름**: engage
 
@@ -98,9 +94,9 @@ ht-degree: 2%
 
 #### 태깅 {#tagging}
 
-커뮤니티 콘텐츠에 적용할 수 있는 태그는 를 통해 이전에 정의된 AEM 네임스페이스를 선택하여 제어됩니다. [태깅 콘솔](/help/sites-administering/tags.md#tagging-console) (예: [튜토리얼 네임스페이스](/help/communities/setup.md#create-tutorial-tags)).
+커뮤니티 콘텐츠에 적용되는 태그는 를 통해 이전에 정의된 AEM 네임스페이스를 선택하여 제어됩니다. [태깅 콘솔](/help/sites-administering/tags.md#tagging-console) (예: [튜토리얼 네임스페이스](/help/communities/setup.md#create-tutorial-tags)).
 
-형식 사전 검색을 사용하면 네임스페이스를 쉽게 찾을 수 있습니다. 예를 들어
+형식 사전 검색을 사용하면 네임스페이스를 쉽게 찾을 수 있습니다. 예:
 
 * 유형 `tut`
 * 선택 `Tutorial`
@@ -113,7 +109,7 @@ ht-degree: 2%
 
 커뮤니티 구성원(또는 구성원 그룹)이 사이트를 커뮤니티 관리자로 경험하도록 하려면 미리 입력 검색을 사용하고 드롭다운의 옵션에서 구성원 또는 그룹 이름을 선택합니다.
 
-예를 들어
+예:
 
 * 유형 `q`
 * Select Quinn Harper
@@ -132,7 +128,7 @@ ht-degree: 2%
 
 #### 분석 {#analytics}
 
-Adobe Analytics에 라이센스가 부여되고 Analytics 클라우드 서비스 및 프레임워크가 구성된 경우 Analytics를 활성화하고 프레임워크를 선택할 수 있습니다.
+Adobe Analytics에 라이센스가 부여되고 Analytics Cloud 서비스 및 프레임워크가 구성된 경우 Analytics를 활성화하고 프레임워크를 선택할 수 있습니다.
 
 다음을 참조하십시오 [커뮤니티 기능에 대한 Analytics 구성](/help/communities/analytics.md).
 
@@ -140,7 +136,7 @@ Adobe Analytics에 라이센스가 부여되고 Analytics 클라우드 서비스
 
 #### 번역 {#translation}
 
-다음 [번역 설정](/help/communities/sites-console.md#translation) 사이트의 기본 언어와 UGC를 번역할 수 있는지 여부와 언어(있는 경우)를 지정합니다.
+다음 [번역 설정](/help/communities/sites-console.md#translation) 사이트의 기본 언어와 UGC를 번역할 수 있는지 여부(있는 경우)를 지정합니다.
 
 * 확인 **기계 번역 허용**
 * 기본 기계 번역 서비스로 번역을 위해 선택한 기본 언어 유지
@@ -177,24 +173,23 @@ Adobe Analytics에 라이센스가 부여되고 Analytics 클라우드 서비스
 
 * **사이트 열기**
 
-   페이지 구성 요소를 추가 및/또는 구성하려면 연필 아이콘을 선택하여 작성자 편집 모드에서 커뮤니티 사이트를 엽니다
+  연필 아이콘을 선택하면 페이지 구성 요소를 추가하거나 구성할 수 있는 작성자 편집 모드로 커뮤니티 사이트가 열립니다.
 
 * **사이트 편집**
 
-   속성 아이콘을 선택하여 커뮤니티 사이트를 열고 제목과 같은 속성을 수정하거나 테마를 변경합니다
+  속성 아이콘을 선택하면 제목이나 테마 변경 등의 속성을 수정할 수 있는 커뮤니티 사이트가 열립니다.
 
 * **게시 사이트**
 
-   커뮤니티 사이트를 게시하려면 월드 아이콘을 선택합니다(예: 게시 서버가 로컬 컴퓨터에서 실행 중인 경우 기본적으로 localhost:4503으로).
+  world 아이콘을 선택하면 커뮤니티 사이트가 게시됩니다(예: 게시 서버가 로컬 컴퓨터에서 실행 중인 경우 기본적으로 localhost:4503으로).
 
 * **사이트 내보내기**
 
-   내보내기 아이콘을 선택하여 저장된 커뮤니티 사이트의 패키지를 생성합니다. [패키지 관리자](/help/sites-administering/package-manager.md) 다운로드되었습니다.
-UGC는 사이트 패키지에 포함되지 않습니다.
+  내보내기 아이콘을 선택하면에서 모두 저장되는 커뮤니티 사이트 패키지를 만듭니다. [패키지 관리자](/help/sites-administering/package-manager.md) 다운로드되었습니다. UGC는 사이트 패키지에 포함되어 있지 않습니다.
 
 * **사이트 삭제**
 
-   내에서 커뮤니티 사이트를 삭제하려면 삭제 아이콘을 선택합니다 **[!UICONTROL 커뮤니티 > 사이트 콘솔]**. 이 작업은 UGC, 사용자 그룹, 에셋 및 데이터베이스 레코드와 같이 사이트와 관련된 모든 항목을 제거합니다.
+  삭제 아이콘을 선택하면 내에서 커뮤니티 사이트가 삭제됩니다. **[!UICONTROL 커뮤니티 > 사이트 콘솔]**. 이 작업은 UGC, 사용자 그룹, 에셋 및 데이터베이스 레코드와 같이 사이트와 관련된 모든 항목을 제거합니다.
 
 ![siteactions](assets/siteactions.png)
 
@@ -212,7 +207,6 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 >1. URI에서 포트 번호 4503을 원하는 포트 번호로 변경합니다. 예를 들어 포트 6103을 사용하려면 https://localhost:6103/bin/receive?sling:authRequestLogin=1 을 따르십시오.
 >1. 선택 **[!UICONTROL 확인]**.
 >1. (선택 사항) 선택 **[!UICONTROL 지우기]** 또는 **[!UICONTROL 강제 다시 시도]** 복제 큐를 재설정합니다.
-
 
 ### 게시 선택 {#select-publish}
 
@@ -235,7 +229,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 * 커뮤니티 참여 권한이 있는 구성원
 * 커뮤니티 참여 사이트 콘텐츠 관리자
 
-참고: [애런 맥도널드](/help/communities/tutorials.md#demo-users) 의 멤버임
+[애런 맥도널드](/help/communities/tutorials.md#demo-users) 의 멤버임
 
 * 커뮤니티 참여 커뮤니티 관리자
 * 커뮤니티 참여 중재자
@@ -283,12 +277,12 @@ UGC는 사이트 패키지에 포함되지 않습니다.
    * **이름** sling:match
       * **유형** 문자열
       * **값** localhost.4503/$(&#39;$&#39; 문자로 끝나야 함)
+
    * 속성 추가:
 
       * **이름** sling:internalRedirect
       * **유형** 문자열
       * **값** /content/sites/engage/en.html
-
 
 1. 선택 **모두 저장.**
 1. (선택 사항) 검색 기록을 삭제합니다.
@@ -310,7 +304,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 #### 문제 해결: 리디렉션 실패 {#troubleshooting-fail-to-redirect}
 
-&#39;**$**&#x200B;정규 표현식의 끝에 있는 &#39; `sling:match`문자열이 중요하므로 `https://localhost:4503/` 가 매핑되거나, URL의 server:port 뒤에 있을 수 있는 모든 경로에 리디렉션 값이 접두사로 추가됩니다. 따라서 AEM에서 로그인 페이지로 리디렉션하려고 하면 실패합니다.
+&#39;**$**&#x200B;정규 표현식의 끝에 있는 &#39; `sling:match`문자열은 매우 중요하므로 `https://localhost:4503/` 가 매핑되거나, URL의 server:port 뒤에 있을 수 있는 모든 경로에 리디렉션 값이 접두사로 추가됩니다. 따라서 AEM에서 로그인 페이지로 리디렉션하려고 하면 실패합니다.
 
 ### 사이트 수정 {#modify-the-site}
 

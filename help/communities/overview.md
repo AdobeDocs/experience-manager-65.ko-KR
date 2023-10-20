@@ -1,22 +1,22 @@
 ---
 title: AEM Communities 개요
-description: AEM Communities 기능 및 설정에 대한 개요
+description: Adobe Experience Manager Communities 기능 및 설정의 기본 사항에 대해 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 1%
+source-wordcount: '1267'
+ht-degree: 2%
 
 ---
 
 # AEM Communities 개요 {#aem-communities-overview}
 
-Adobe Experience Manager(AEM) 커뮤니티는 성능이 향상되고 사이트 관리가 개선된 온-프레미스 커뮤니티 사이트를 빠르게 만들고 사이트 방문자를 중요한 커뮤니티 구성원으로 전환할 수 있는 기능을 제공합니다.
+Adobe Experience Manager(AEM) 커뮤니티를 사용하면 성능이 향상되고 사이트 관리가 개선되었으며 사이트 방문자를 가치 있는 커뮤니티 구성원으로 전환할 수 있는 온프레미스 커뮤니티 사이트를 빠르게 만들 수 있습니다.
 
 ## 커뮤니티 기능 {#communities-features}
 
@@ -24,7 +24,7 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 * **알림** 블로그, Q&amp;A 및 이벤트 캘린더를 통해
 * While **통찰력 얻기** 종종 사용자 생성 콘텐츠(UGC)라고도 하는 포럼, 댓글 및 기타 커뮤니티 콘텐츠를 통해
-* 허용 **중재** 게시 환경의 신뢰할 수 있는 구성원
+* 허용 **중재** 게시 환경의 신뢰할 수 있는 멤버인 경우
 * **소셜 로그인** twitter 및 Facebook 사용,
 * **인라인 번역** 커뮤니티 콘텐츠,
 * **커뮤니티 그룹 만들기** 게시된 커뮤니티 사이트에서
@@ -33,7 +33,7 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 * **알림** 및 **활동 스트림**,
 * 허용 **태깅** (@mention) 그 밖에 이용자 제작 콘텐츠의 관심을 끌기 위하여 등록한 회원
 
-커뮤니티 기능은 다음을 사용하여 시연할 수 있습니다 [AEM 데모 컴퓨터](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) GitHub.com에서 공개적으로 사용하거나 새로운 We.Retail 참조 구현을 사용하여 사용할 수 있습니다.
+커뮤니티 기능은 다음을 사용하여 시연할 수 있습니다. [AEM 데모 컴퓨터](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) GitHub.com에서 공개적으로 사용하거나 `We.Retail` 참조 구현입니다.
 
 ## 커뮤니티 사이트 {#community-sites}
 
@@ -89,7 +89,7 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 작성 환경에서 전역 탐색 콘솔은에 대한 액세스를 제공합니다. [커뮤니티 콘솔](/help/communities/consoles.md), 다음 포함:
 
-* [사이트](/help/communities/sites-console.md) 콘솔
+* [Sites](/help/communities/sites-console.md) 콘솔
 
    * 사이트 생성
    * 사이트 편집
@@ -103,13 +103,13 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 * [구성원 및 그룹](/help/communities/members.md) 관리 콘솔
 
-   * 작성 환경에서 게시측 사용자(구성원)를 만들고 관리하는 기능을 제공합니다.
-   * 구성원을 금지하는 기능을 제공합니다.
-   * 작성 환경에서 게시측 사용자 그룹(구성원 그룹)을 만들고 관리하는 기능을 제공합니다.
+   * 작성자 환경에서 게시측 사용자(구성원)를 만들고 관리할 수 있습니다.
+   * 구성원을 금지할 수 있습니다.
+   * 작성 환경에서 게시측 사용자 그룹(구성원 그룹)을 만들고 관리할 수 있습니다.
 
 * [보고서](/help/communities/reports.md) 콘솔
 
-   * 할당, 게시물 및 보기에 대한 보고서를 생성하는 기능을 제공합니다.
+   * 할당, 게시물 및 보기에 대한 보고서를 생성할 수 있습니다.
 
 전역 도구 콘솔에서는 다음 Communities 도구에 액세스할 수 있습니다.
 
@@ -137,7 +137,7 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 커뮤니티 사이트 생성은 샘플 사이트와 독립적인 커뮤니티 사이트를 빠르게 설정하기 위한 커뮤니티 사이트 템플릿 선택을 기반으로 합니다.
 
-커뮤니티 기능과 커뮤니티 그룹 템플릿으로 구성된 커뮤니티 사이트 템플릿은 로그인, 사용자 프로필, 메시징, 사이트 메뉴, 검색, 테마 설정, 브랜딩 기능 등 커뮤니티 사이트에 대한 구조를 제공합니다.
+커뮤니티 기능과 커뮤니티 그룹 템플릿으로 구성된 커뮤니티 사이트 템플릿은 커뮤니티 사이트의 구조를 제공합니다. 여기에는 로그인, 사용자 프로필, 메시지, 사이트 메뉴, 검색, 테마 및 브랜딩 기능이 포함됩니다.
 
 다음을 참조하십시오. [사이트 템플릿 콘솔](/help/communities/sites.md).
 
@@ -157,10 +157,10 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 커뮤니티 그룹을 생성하려면 커뮤니티 그룹 페이지의 디자인을 제공하는 커뮤니티 그룹 템플릿을 선택해야 합니다. 템플릿 구조에 그룹 기능이 추가되면 그룹 템플릿을 하나 지정하거나 새 커뮤니티 그룹을 만들 때 템플릿을 선택하도록 구성됩니다.
 
-또한 다음 문서도 참조할 수 있습니다.
+추가 참조:
 
 * [사이트 그룹 콘솔](/help/communities/groups.md) 작성 환경에서 하위 커뮤니티를 만들기 위해 사용됩니다.
-* [그룹 템플릿 콘솔](/help/communities/tools-groups.md) 그룹 사이트 구조를 만드는 데 사용됩니다.
+* [그룹 템플릿 콘솔](/help/communities/tools-groups.md) 를 참조하십시오.
 * [AEM Communities 시작하기](/help/communities/getting-started.md) 중첩된 그룹을 포함하는 커뮤니티 사이트를 빠르게 만드는 방법에 대한 자습서입니다.
 
 ## 커뮤니티 구성 요소 {#community-components}
@@ -204,7 +204,7 @@ AEM 데모 시스템에는 다음이 포함됩니다.
 
 * 설치할 패키지.
 
-AEM 데모 머신은 Windows, MacOS 및 Linux®에서 CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 및 AEM 6.4로 성공적으로 테스트되었습니다.
+AEM 데모 머신은 Windows, macOS 및 Linux®에서 CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 및 AEM 6.4로 성공적으로 테스트되었습니다.
 
 AEM 데모 컴퓨터에는 유효한 AEM 라이센스가 필요합니다.
 
@@ -214,7 +214,7 @@ AEM 데모 컴퓨터에는 유효한 AEM 라이센스가 필요합니다.
 
 ## AEM Communities 설명서 {#aem-communities-documentation}
 
-* 방문 [커뮤니티 배포](deploy-communities.md) 권장 배포에 대해 알아봅니다.
-* 방문 [커뮤니티 사이트 관리](administer-landing.md) 커뮤니티 사이트 만들기, 커뮤니티 그룹 추가, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리, 태그 지정, 알림, 점수 및 배지에 대해 알아봅니다.
-* 방문 [개발 커뮤니티](communities.md) 소셜 구성 요소 프레임워크(SCF)와 커뮤니티 구성 요소 및 기능 사용자 지정에 대해 알아봅니다.
-* 방문 [커뮤니티 구성 요소 작성](author-communities.md) 커뮤니티 구성 요소를 작성하고 구성하는 방법에 대해 알아봅니다.
+* 방문 [커뮤니티 배포](deploy-communities.md) 권장되는 배포에 대해 알아볼 수 있습니다.
+* 방문 [커뮤니티 사이트 관리](administer-landing.md) 커뮤니티 사이트 만들기, 커뮤니티 그룹 추가, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리, 태그 지정, 알림, 점수 및 배지에 대해 알아볼 수 있습니다.
+* 방문 [개발 커뮤니티](communities.md) 소셜 구성 요소 프레임워크(SCF)와 커뮤니티 구성 요소 및 기능 맞춤화에 대해 알아볼 수 있습니다.
+* 방문 [커뮤니티 구성 요소 작성](author-communities.md) 커뮤니티 구성 요소를 사용하여 작성하고 구성하는 방법을 배울 수 있는 곳입니다.

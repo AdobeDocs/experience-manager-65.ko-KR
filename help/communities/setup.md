@@ -1,18 +1,14 @@
 ---
 title: 초기 설정
-seo-title: Initial Setup
-description: 커뮤니티 설정
-seo-description: Setting up Communities
-uuid: c53d280c-c5ae-47cf-8038-f0dea68e15ff
+description: Adobe Experience Manager 커뮤니티를 처음 설정하는 방법을 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '684'
 ht-degree: 2%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 2%
 
 개발 및 데모를 위해 작성자 하나와 게시 인스턴스 하나를 실행해야 합니다.
 
-이렇게 하려면 기본 AEM을 따르십시오 [시작](../../help/sites-deploying/deploy.md#getting-started) 지침:
+이렇게 하려면 기본 Adobe Experience Manager(AEM)를 따르십시오 [시작](../../help/sites-deploying/deploy.md#getting-started) 지침:
 
 * 의 환경 작성 [localhost:4502](http://localhost:4502/)
 * 에 환경 게시 [localhost:4503](http://localhost:4503/)
@@ -54,7 +50,7 @@ AEM Communities의 경우
 
 ## Analytics 구성 {#configure-analytics}
 
-날짜 [Adobe Analytics이 커뮤니티 사이트에 대해 구성되었습니다.](analytics.md), 커뮤니티 활동에 대한 정보를 제공하여 커뮤니티 구성원의 경험을 향상시킬 수 있을 뿐만 아니라 사이트 관리자에게 피드백을 제공할 수 있습니다.
+날짜 [Adobe Analytics이 커뮤니티 사이트에 대해 구성되었습니다.](analytics.md), 커뮤니티 활동에 대한 정보를 제공하여 커뮤니티 구성원의 경험을 개선하고 사이트 관리자에게 피드백을 제공할 수 있습니다.
 
 Adobe Analytics과의 통합은 선택 사항입니다.
 
@@ -128,7 +124,7 @@ facebook 및 Twitter을 사용하는 소셜 로그인의 데모 버전을 사용
 
 ## 튜토리얼 태그 만들기 {#create-tutorial-tags}
 
-의 태그 네임스페이스를 사용하여 참여 자습서에 사용할 태그를 만듭니다. `Tutorial`.
+의 태그 네임스페이스를 사용하여 참여 튜토리얼에 사용할 수 있도록 태그를 만듭니다. `Tutorial`.
 
 사용 [태깅 콘솔](../../help/sites-administering/tags.md#tagging-console) 다음 태그를 만들려면:
 

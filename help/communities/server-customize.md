@@ -1,18 +1,14 @@
 ---
 title: 서버측 사용자 지정
-seo-title: Server-side Customization
-description: AEM Communities에서 서버측 사용자 지정
-seo-description: Customizing server-side in AEM Communities
-uuid: 5e9bc6bf-69dc-414c-a4bd-74a104d7bd8f
+description: Adobe Experience Manager Communities에서 서버측 사용자 지정을 사용하는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 exl-id: 190735bc-1909-4b92-ba4f-a221c0cd5be7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -21,9 +17,9 @@ ht-degree: 0%
 
 | **[⇐ 기능 기본 사항](essentials.md)** | **[클라이언트측 사용자 지정 ⇒](client-customize.md)** |
 |---|---|
-|  | **[SCF Handlebars 도우미 ⇒](handlebars-helpers.md)** |
+|   | **[SCF Handlebars 도우미 ⇒](handlebars-helpers.md)** |
 
-## Java API {#java-apis}
+## Java™ API {#java-apis}
 
 >[!NOTE]
 >
@@ -31,9 +27,9 @@ ht-degree: 0%
 
 ### SocialComponent 인터페이스 {#socialcomponent-interface}
 
-SocialComponents는 AEM Communities 기능에 대한 리소스를 나타내는 POJO입니다. 이상적으로 각 SocialComponent는 리소스에 정확하게 표현되도록 클라이언트에 데이터를 제공하는 노출된 GETter가 있는 특정 resourceType을 나타냅니다. 모든 비즈니스 논리 및 보기 논리는 필요한 경우 사이트 방문자의 세션 정보를 포함하여 SocialComponent에 캡슐화됩니다.
+SocialComponents는 AEM Communities 기능에 대한 리소스를 나타내는 POJO입니다. 이상적으로 각 SocialComponent는 리소스에 정확하게 표현되도록 클라이언트에 데이터를 제공하는 노출된 GETter가 있는 특정 resourceType을 나타냅니다. 모든 비즈니스 및 보기 논리는 필요한 경우 사이트 방문자의 세션 정보를 포함하여 SocialComponent에 캡슐화됩니다.
 
-인터페이스는 리소스를 나타내는 데 필요한 기본 GETter 집합을 정의합니다. 중요한 것은 인터페이스에 맵이 명시되어 있다는 것입니다&lt;string object=&quot;&quot;> Handlebars 템플릿을 렌더링하고 리소스에 대한 GET JSON 끝점을 노출하기 위해 필요한 getAsMap() 및 String toJSONString() 메서드입니다.
+인터페이스는 리소스를 나타내는 데 필요한 기본 GETter 집합을 정의합니다. 중요한 것은 인터페이스에 맵이 명시되어 있다는 것입니다&lt;string object=&quot;&quot;> Handlebars 템플릿을 렌더링하고 리소스에 대한 GET JSON 끝점을 표시하는 데 필요한 getAsMap() 및 String toJSONString() 메서드입니다.
 
 모든 SocialComponent 클래스는 인터페이스를 구현해야 합니다 `com.adobe.cq.social.scf.SocialComponent`
 
@@ -53,11 +49,11 @@ SocialComponentFactory는 OSGi 서비스이며 생성자를 통해 SocialCompone
 
 모든 SocialComponentFactory 클래스는 인터페이스를 구현해야 합니다. `com.adobe.cq.social.scf.SocialComponentFactory`
 
-SocialComponentFactory.getPriority() 메서드를 구현하면 getResourceType()에서 반환된 대로 지정된 resourceType에 팩토리를 사용하려면 가장 높은 값이 반환됩니다.
+SocialComponentFactory.getPriority() 메서드를 구현하면 getResourceType()에서 반환된 것처럼 지정된 resourceType에 사용할 팩토리에 대해 가장 높은 값이 반환됩니다.
 
 ### SocialComponentFactoryManager 인터페이스 {#socialcomponentfactorymanager-interface}
 
-SocialComponentFactoryManager(관리자)는 프레임워크에 등록된 모든 SocialComponents를 관리하며 지정된 리소스(resourceType)에 사용할 SocialComponentFactory를 선택합니다. 특정 resourceType에 등록된 공장이 없으면 관리자는 지정된 리소스에 대해 가장 가까운 상위 유형의 공장을 반환합니다.
+SocialComponentFactoryManager(관리자)는 프레임워크에 등록된 모든 SocialComponents를 관리하며 지정된 리소스(resourceType)에 사용할 SocialComponentFactory를 선택합니다. 특정 resourceType에 등록된 공장이 없으면 관리자는 지정된 리소스에 가장 가까운 수퍼 유형이 있는 공장을 반환합니다.
 
 SocialComponentFactoryManager는 OSGi 서비스이며 생성자를 통해 SocialComponent에 전달할 수 있는 다른 OSGi 서비스에 액세스할 수 있습니다.
 
@@ -69,7 +65,7 @@ OSGi 서비스에 대한 핸들은 `com.adobe.cq.social.scf.SocialComponentFacto
 
 HTTP API POST 끝점은 를 구현하여 정의된 PostOperation 클래스입니다. `SlingPostOperation` 인터페이스(패키지) `org.apache.sling.servlets.post`).
 
-다음 `PostOperation` 끝점 구현 집합 `sling.post.operation` 작업이 응답할 값으로 을 설정합니다. 해당 값으로 설정된 an:operation 매개 변수를 사용하는 모든 POST 요청이 이 구현 클래스에 위임됩니다.
+다음 `PostOperation` 끝점 구현 집합 `sling.post.operation` 을 입력합니다. 해당 값으로 설정된 an:operation 매개 변수를 사용하는 모든 POST 요청은 이 구현 클래스로 위임됩니다.
 
 다음 `PostOperation` 호출 `SocialOperation` 작업에 필요한 작업을 수행합니다.
 
@@ -77,7 +73,7 @@ HTTP API POST 끝점은 를 구현하여 정의된 PostOperation 클래스입니
 
 #### SocialOperation 클래스 {#socialoperation-class}
 
-각 `SocialOperation` endpoint가 AbstractSocialOperation 클래스를 확장하고 메서드를 재정의합니다. `performOperation()`. 이 메서드는 작업을 완료하고 를 반환하는 데 필요한 모든 작업을 수행합니다. `SocialOperationResult` 또는 throw `OperationException`이 경우 사용 가능한 경우 일반적인 JSON 응답 또는 성공 HTTP 상태 코드 대신 메시지와 함께 HTTP 오류 상태가 반환됩니다.
+각 `SocialOperation` endpoint가 AbstractSocialOperation 클래스를 확장하고 메서드를 재정의합니다. `performOperation()`. 이 메서드는 작업을 완료하고 를 반환하는 데 필요한 모든 작업을 수행합니다. `SocialOperationResult` 또는 throw `OperationException`. 이러한 경우, 사용 가능한 경우 일반적인 JSON 응답 또는 성공 HTTP 상태 코드 대신 메시지와 함께 HTTP 오류 상태가 반환됩니다.
 
 확장 `AbstractSocialOperation` 다음을 재사용 가능 `SocialComponents` JSON 응답을 보냅니다.
 
@@ -87,7 +83,7 @@ HTTP API POST 끝점은 를 구현하여 정의된 PostOperation 클래스입니
 
 다음 `SocialComponent` 작업의 영향을 받은 리소스를 나타냅니다.
 
-만들기 작업의 경우 `SocialComponent` 다음에 포함됨: `SocialOperationResult` 방금 만든 리소스를 나타내며 업데이트 작업의 경우 작업에 의해 변경된 리소스를 나타냅니다. 아니요 `SocialComponent` 은 삭제 작업에 대해 반환됩니다.
+만들기 작업의 경우 `SocialComponent` 다음에 포함됨: `SocialOperationResult` 는 생성된 리소스를 나타내며 업데이트 작업의 경우 작업에 의해 변경된 리소스를 나타냅니다. 아니요 `SocialComponent` 은 삭제 작업에 대해 반환됩니다.
 
 사용되는 성공 HTTP 상태 코드는 다음과 같습니다.
 
@@ -97,7 +93,7 @@ HTTP API POST 끝점은 를 구현하여 정의된 PostOperation 클래스입니
 
 #### OperationException 클래스 {#operationexception-class}
 
-An `OperationExcepton` 요청이 유효하지 않거나 내부 오류, 잘못된 매개 변수 값, 부적절한 권한 등과 같은 기타 오류가 발생하는 경우 작업을 수행할 때 throw될 수 있습니다. An `OperationException` 는 HTTP 상태 코드와 오류 메시지로 구성되며, 클라이언트에 대한 응답으로 반환됩니다. `PostOperatoin`.
+An `OperationExcepton` 요청이 유효하지 않거나 다른 오류가 발생하는 경우 작업을 수행할 때 throw됩니다. 예를 들어, 내부 오류, 잘못된 매개 변수 값 또는 부적절한 권한이 있습니다. An `OperationException` 는 HTTP 상태 코드와 오류 메시지로 구성되며, 클라이언트에 대한 응답으로 반환됩니다. `PostOperatoin`.
 
 #### OperationService 클래스 {#operationservice-class}
 
@@ -107,18 +103,18 @@ An `OperationExcepton` 요청이 유효하지 않거나 내부 오류, 잘못된
 
 * `performBeforeActions()`
 
-   사전 확인/사전 처리 및 유효성 검사 허용
+  사전 확인/사전 처리 및 유효성 검사 허용
 * `performAfterActions()`
 
-   리소스를 추가로 수정하거나 사용자 지정 이벤트, 워크플로우 등을 호출할 수 있습니다.
+  리소스를 추가로 편집하거나 사용자 지정 이벤트, 워크플로 등을 호출할 수 있습니다.
 
 #### OperationExtension 클래스 {#operationextension-class}
 
-`OperationExtension` 클래스는 비즈니스 요구 사항에 맞게 작업을 사용자 지정할 수 있도록 작업에 삽입할 수 있는 사용자 지정 코드 조각입니다. 구성 요소의 소비자는 구성 요소에 기능을 동적으로 점증적으로 추가할 수 있습니다. 확장/후크 패턴을 통해 개발자는 확장 자체에만 집중할 수 있으며 전체 작업 및 구성 요소를 복사하고 오버라이드할 필요가 없습니다.
+다음 `OperationExtension` 클래스는 비즈니스 요구 사항에 맞게 작업을 사용자 지정할 수 있도록 작업에 삽입할 수 있는 사용자 지정 코드 조각입니다. 구성 요소의 소비자는 구성 요소에 기능을 동적으로 점증적으로 추가할 수 있습니다. 확장/후크 패턴을 통해 개발자는 확장 자체에만 집중할 수 있으며 전체 작업 및 구성 요소를 복사하고 오버라이드할 필요가 없습니다.
 
 ## 샘플 코드 {#sample-code}
 
-샘플 코드는에서 사용할 수 있습니다. [Adobe Marketing Cloud Github](https://github.com/Adobe-Marketing-Cloud) 리포지토리. 다음 중 하나가 접두사로 추가된 프로젝트 검색 `aem-communities` 또는 `aem-scf`.
+샘플 코드는에서 사용할 수 있습니다. [Adobe Experience Cloud Github](https://github.com/Adobe-Marketing-Cloud) 리포지토리. 다음 중 하나가 접두사로 추가된 프로젝트 검색 `aem-communities` 또는 `aem-scf`.
 
 ## 모범 사례 {#best-practices}
 
@@ -128,4 +124,4 @@ An `OperationExcepton` 요청이 유효하지 않거나 내부 오류, 잘못된
 
 | **[⇐ 기능 기본 사항](essentials.md)** | **[클라이언트측 사용자 지정 ⇒](client-customize.md)** |
 |---|---|
-|  | **[SCF Handlebars 도우미 ⇒](handlebars-helpers.md)** |
+|   | **[SCF Handlebars 도우미 ⇒](handlebars-helpers.md)** |

@@ -1,14 +1,14 @@
 ---
 title: Essentials 검색
-description: 커뮤니티에서 검색
+description: AEM Communities의 필수 기능인 검색 기능에 대해 알아봅니다. 커뮤니티는 사용자 생성 콘텐츠에 대한 검색 API도 제공합니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1189'
 ht-degree: 4%
 
 ---
@@ -68,7 +68,7 @@ MSRP 및 Solr 관련 사항:
 
 ### JSRP 검색 {#jsrp-searches}
 
-대상 [JSRP](jsrp.md), UGC는에 저장됩니다. [Oak](../../help/sites-deploying/platform.md) 및 는 입력한 AEM 작성자 또는 게시 인스턴스의 저장소에서만 볼 수 있습니다.
+대상 [JSRP](jsrp.md), UGC는에 저장됩니다. [Oak](../../help/sites-deploying/platform.md) 및 는 입력한 AEM Author 또는 Publish 인스턴스의 저장소에서만 볼 수 있습니다.
 
 UGC는 일반적으로 게시 환경에 입력되므로 다중 게시자 프로덕션 시스템의 경우 를 구성해야 합니다 [클러스터 게시](topologies.md): 모든 게시자에서 볼 수 있도록 입력한 컨텐츠가 게시 팜이 아닙니다.
 

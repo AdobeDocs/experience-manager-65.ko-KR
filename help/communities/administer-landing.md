@@ -1,19 +1,15 @@
 ---
 title: 커뮤니티 사이트
-seo-title: Communities Sites
-description: AEM Communities 설명서 개요
-seo-description: Overview of the AEM Communities documentation
-uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
+description: 기본 기능에 이미 익숙한 관리자를 위한 AEM(Adobe Experience Manager) Communities의 기본 사항에 대해 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '449'
 ht-degree: 4%
 
 ---
@@ -38,10 +34,10 @@ ht-degree: 4%
    * [Sites](sites-console.md)
 
       * [그룹(하위 커뮤니티)](groups.md)
+
    * [관리](moderation.md)
    * [구성원 및 그룹 관리](members.md)
    * [보고서](reports.md)
-
 
 * 커뮤니티 [*도구*](tools.md):
 
@@ -70,7 +66,7 @@ AEM Communities의 주요 기능은 로그인한 사이트 방문자(멤버)가 
 * [터널 서비스](deploy-communities.md#tunnel-service-on-author): 작성 환경에서 게시측 구성원 및 구성원 그룹에 액세스할 수 있습니다.
 * [구성원 및 그룹 콘솔](members.md): 게시 측 구성원 및 구성원 그룹을 작성 환경에서 만들고 관리할 수 있습니다.
 * [사용자 동기화](sync.md): 여러 게시 인스턴스 간에 구성원 및 구성원 그룹을 동기화합니다.
-* [facebook 및 Twitter을 사용한 소셜 로그인](social-login.md): 사이트 방문자가 Facebook 또는 Twitter 자격 증명을 사용하여 커뮤니티 회원이 될 수 있는 기능.
+* [facebook 및 Twitter으로 소셜 로그인](social-login.md): 사이트 방문자가 Facebook 또는 Twitter 자격 증명을 사용하여 커뮤니티 회원이 될 수 있는 기능.
 * [채점 및 배지](implementing-scoring.md): 배지를 할당하여 구성원의 역할을 식별하고 구성원이 커뮤니티에 참여하여 배지를 획득하는 기능입니다.
 * [알림](notifications.md): 멤버에게 자신이 따르는 활동을 알리는 기능입니다.
 * [구독](subscriptions.md): 구성원이 외부 이메일을 사용하여 커뮤니티와 상호 작용할 수 있는 기능입니다.
@@ -88,12 +84,12 @@ AEM 플랫폼에 최신 Communities 릴리스를 설치하는 것이 중요합�
 
 * [최신 커뮤니티 기능 팩](deploy-communities.md#latestfeaturepack)
 
-과 같은 기타 Communities 관련 정보에 대해서는 배포 페이지를 참조하십시오. [업그레이드 중](upgrade.md), [디스패처](dispatcher.md) 및 [복제](deploy-communities.md#replication-agents-on-author).
+과 같은 기타 커뮤니티 관련 정보는 배포 페이지를 참조하십시오. [업그레이드 중](upgrade.md), [디스패처](dispatcher.md), 및 [복제](deploy-communities.md#replication-agents-on-author).
 
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
 
-* 방문 [커뮤니티 배포](deploy-communities.md) 권장 배포에 대해 알아봅니다.
+* 방문 [커뮤니티 배포](deploy-communities.md) 권장되는 배포에 대해 알아볼 수 있습니다.
 
-* 방문 [개발 커뮤니티](communities.md) 소셜 구성 요소 프레임워크(SCF)와 커뮤니티 구성 요소 및 기능 사용자 지정에 대해 알아봅니다.
+* 방문 [개발 커뮤니티](communities.md) 소셜 구성 요소 프레임워크(SCF)와 커뮤니티 구성 요소 및 기능 맞춤화에 대해 알아볼 수 있습니다.
 
-* 방문 [커뮤니티 구성 요소 작성](author-communities.md) 커뮤니티 구성 요소를 작성하고 구성하는 방법에 대해 알아봅니다.
+* 방문 [커뮤니티 구성 요소 작성](author-communities.md) 커뮤니티 구성 요소를 사용하여 작성하고 구성하는 방법을 배울 수 있는 곳입니다.

@@ -1,14 +1,14 @@
 ---
 title: 커뮤니티 문제 해결
-description: 알려진 문제를 포함한 커뮤니티 문제 해결
+description: 알려진 문제 및 우려 사항을 포함하여 커뮤니티 문제 해결에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 * 시작: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * 끝: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-실패는 작성자와 게시에서 다릅니다. 작성자의 경우 이 작업은 자동으로 실패하고 포럼 주제를 표시하지 않습니다. 게시할 때 페이지에 오류가 발생합니다.
+실패는 작성자와 게시에서 다릅니다. 작성자의 경우 자동으로 실패하고 포럼 주제가 표시되지 않습니다. 게시 시 페이지에 오류가 발생합니다.
 
 다음을 참조하십시오. [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API를 참조하십시오.
 
@@ -76,7 +76,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 ### 로그 오류: IndexElementFactory에 대한 NoClassDefFoundError {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-AEM 5.6.1 GA를 최신 cq-socialcommunities-pkg-1.4.x 또는 AEM 6.0으로 업그레이드하면 시작 중에 로그 파일에 오류가 발생하며, 이 오류는 다시 시작할 때 표시되지 않는 오류로 인해 해결됩니다.
+AEM 5.6.1을 최신 cq-socialcommunities-pkg-1.4.x 또는 AEM 6.0으로 업그레이드하면 로그 파일에 오류가 발생합니다. 이 문제는 시작 중에 발생하며, 재시작 시 표시되지 않는 오류로 인해 자체적으로 해결됩니다.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException
