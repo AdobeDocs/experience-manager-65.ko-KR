@@ -1,7 +1,7 @@
 ---
 title: JCR 통합
 seo-title: JCR Integration
-description: JCR 수준에서 통합해야 하는 시기에 대한 팁입니다
+description: JCR 수준에서 Adobe Experience Manager과 통합해야 하는 시기에 대한 몇 가지 팁을 알아봅니다.
 seo-description: Tips for when you must integrate at the JCR level
 uuid: 11518baf-521e-471d-ad4f-2baa76075cfa
 contentOwner: User
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: e6647a11-a36e-4808-bb61-29b2895c6b1d
 exl-id: 170474c1-c7f4-446c-bda4-84768d44a078
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '302'
 ht-degree: 1%
 
 ---

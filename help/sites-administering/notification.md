@@ -1,7 +1,7 @@
 ---
 title: 이메일 알림 구성
 seo-title: Configuring Email Notification
-description: AEM에서 이메일 알림을 구성하는 방법을 알아봅니다.
+description: Adobe Experience Manager에서 이메일 알림을 구성하는 방법을 알아봅니다.
 seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2071'
 ht-degree: 12%
 
 ---
@@ -70,7 +70,7 @@ AEM에서 이메일을 보낼 수 있도록 **일별 CQ 메일 서비스** 을(�
 
 1. 추가 `String` 속성을 (으)로 지정한 노드에 `email.from`. 값에 사용할 이메일 주소를 지정합니다.
 
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 
 다음 절차를 사용하여 콘텐츠 패키지 소스 폴더의 노드를 정의합니다.
 

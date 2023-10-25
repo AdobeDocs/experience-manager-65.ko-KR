@@ -1,15 +1,15 @@
 ---
 title: SPA 및 서버측 렌더링
-description: "SPA 및 서버측 렌더링"
+description: Adobe Experience Manager의 SPA 및 서버측 렌더링에 대해 알아봅니다.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: a66814fa065b7545ec39fe9109b4c5815fa199da
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1724'
 ht-degree: 2%
 
 ---

@@ -1,15 +1,15 @@
 ---
 title: 적응형 템플릿 렌더링
-description: 적응형 템플릿 렌더링
+description: Adobe Experience Manager의 적응형 템플릿 렌더링에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 3%
+source-wordcount: '486'
+ht-degree: 2%
 
 ---
 

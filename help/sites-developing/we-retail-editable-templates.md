@@ -1,7 +1,7 @@
 ---
 title: We.Retail에서 편집 가능한 템플릿 시험 사용
 seo-title: Trying out Editable Templates in We.Retail
-description: We.Retail에서 편집 가능한 템플릿 시험 사용
+description: We.Retail을 사용하여 Adobe Experience Manager에서 편집 가능한 템플릿을 테스트하는 방법을 알아봅니다.
 seo-description: null
 uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 14%
+source-wordcount: '486'
+ht-degree: 13%
 
 ---
 

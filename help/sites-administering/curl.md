@@ -1,7 +1,7 @@
 ---
 title: AEM에서 cURL 사용
 seo-title: Using cURL with AEM
-description: AEM에서 cURL을 사용하는 방법에 대해 알아봅니다.
+description: 일반적인 Adobe Experience Manager 작업에 cURL을 사용하는 방법에 대해 알아봅니다.
 seo-description: Learn how to use cURL with AEM.
 uuid: 771b9acc-ff3a-41c9-9fee-7e5d2183f311
 contentOwner: Silviu Raiman
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: fafcf5f9ec64f147447300b02afbc0590d0c5e22
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '885'
 ht-degree: 2%
 
 ---
@@ -307,7 +307,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 다음을 참조하십시오 [데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) 을 참조하십시오.
 
-### Analytics와 Target 통합 {#analytics-and-target-integration}
+### Analytics 및 Target 통합 {#analytics-and-target-integration}
 
 다음을 참조하십시오 [Adobe Analytics 및 Adobe Target 선택](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) 을 참조하십시오.
 

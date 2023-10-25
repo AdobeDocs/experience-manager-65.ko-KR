@@ -1,7 +1,7 @@
 ---
 title: WebDAV 액세스
 seo-title: WebDAV Access
-description: AEM의 WebDAV 액세스에 대해 알아봅니다.
+description: WebDAV를 사용하여 Adobe Experience Manager에 액세스하는 방법에 대해 알아봅니다.
 seo-description: Learn about WebDAV access in AEM.
 uuid: b0ecaa5d-5454-42df-8453-404ece734c32
 contentOwner: Chiradeep Majumdar
@@ -10,9 +10,9 @@ topic-tags: content
 content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1101'
 ht-degree: 1%
 
 ---
@@ -181,6 +181,7 @@ macOS에서 WebDAV를 통해 연결하는 데 필요한 구성 단계는 없습�
 1. 다음에서 **서버에 연결** 창에서 AEM 위치를 입력합니다.
 
    * `http://localhost:4502`
+
    >[!NOTE]
    >
    >AEM이 다른 포트에 있는 경우 4502 대신 해당 포트 번호를 사용하십시오. 또한 로컬 시스템에서 컨텐츠 저장소를 실행하지 않는 경우 `localhost` (각 서버 이름 또는 IP 주소 포함)
@@ -209,7 +210,7 @@ GNOME을 사용하여 WebDAV를 통해 AEM에 연결하려면:
 1. 위치 **폴더**, 입력 `/dav`
 1. 사용자 이름 입력 `admin`. Adobe은 테스트를 위해 사전 구성된 관리자 계정을 사용할 것을 권장합니다.
 1. 포트를 비워 두고 연결의 이름을 입력합니다.
-1. 클릭 **연결**. AEM에 암호를 입력하라는 메시지가 표시됩니다.
+1. **연결**&#x200B;을 클릭합니다. AEM에 암호를 입력하라는 메시지가 표시됩니다.
 1. 암호 입력 `admin` 및 클릭 **연결**.
 
 GNOME은 이제 AEM을 볼륨으로 탑재했으며 다른 볼륨처럼 사용할 수 있습니다.

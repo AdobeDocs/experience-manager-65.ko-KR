@@ -1,6 +1,6 @@
 ---
 title: 소프트웨어 아키텍처
-description: 소프트웨어 아키텍처에 대한 모범 사례
+description: Adobe Experience Manager용 소프트웨어 아키텍처에 대한 몇 가지 모범 사례에 대해 알아봅니다.
 uuid: a557f6ca-c3f1-486e-a45e-6e1f986fab41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: IntelliJ IDEA를 사용하여 AEM 프로젝트를 개발하는 방법
-description: IntelliJ IDEA를 사용하여 AEM 프로젝트 개발
+description: IntelliJ IDEA를 사용하여 Adobe Experience Manager 프로젝트를 개발하는 방법에 대해 알아봅니다.
 uuid: 382b5008-2aed-4e08-95be-03c48f2b549e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,9 +8,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '638'
 ht-degree: 3%
 
 ---
@@ -97,7 +97,7 @@ IntelliJ IDEA는 디버깅을 위해 JSP를 찾을 위치를 이해해야 합니
 
 1. 로 이동 **플러그인** IntelliJ IDEA 설정의 창
 1. 다음 위치로 이동 **JSR45 통합** 플러그인을 선택하고 옆에 있는 확인란을 선택합니다.
-1. 클릭 **적용**
+1. **적용**&#x200B;을 클릭합니다
 1. 요청하면 IntelliJ IDEA 다시 시작
 
 ![chlimage_1-49](assets/chlimage_1-49a.png)

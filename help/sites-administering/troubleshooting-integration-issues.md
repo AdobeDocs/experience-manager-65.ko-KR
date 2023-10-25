@@ -1,7 +1,7 @@
 ---
 title: 통합 문제 해결
 seo-title: Troubleshooting Integration Issues
-description: 통합 문제를 해결하는 방법에 대해 알아봅니다.
+description: Adobe Experience Manager과 통합할 때 문제를 해결하는 방법을 알아봅니다.
 seo-description: Learn how to troubleshoot integration issues.
 uuid: fe080e58-a855-4308-a611-f72eb47ba82d
 contentOwner: raiman
@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1101'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ AEM에서 사용자 지정 데이터 가져오기 서비스를 만드는 방법�
 
 ### PollingImporter로 인해 종료가 오래 걸립니다. {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analytics는 상속 메커니즘을 고려하여 설계되었습니다. 일반적으로 페이지 속성 내에 Analytics 구성에 대한 참조를 추가하여 사이트에 대한 Analytics를 활성화합니다 [Cloud Services](/help/sites-developing/extending-cloud-config.md) 탭. 그런 다음 페이지에 다른 구성이 필요하지 않으면 다시 참조할 필요 없이 구성이 모든 하위 페이지에 자동으로 상속됩니다. 사이트에 참조를 추가하면 유형의 여러 노드(AEM 6.3 및 이전 버전에서는 12개, AEM 6.4 이상에서는 6개)도 자동으로 만들어집니다 `cq;PollConfig` Analytics 데이터를 AEM으로 가져오는 데 사용되는 PollingImporters를 인스턴스화합니다. 그 결과는 다음과 같습니다.
+Analytics는 상속 메커니즘을 고려하여 설계되었습니다. 일반적으로 페이지 속성 내에 Analytics 구성에 대한 참조를 추가하여 사이트에 대한 Analytics를 활성화합니다 [Cloud Service](/help/sites-developing/extending-cloud-config.md) 탭. 그런 다음 페이지에 다른 구성이 필요하지 않으면 다시 참조할 필요 없이 구성이 모든 하위 페이지에 자동으로 상속됩니다. 사이트에 참조를 추가하면 유형의 여러 노드(AEM 6.3 및 이전 버전에서는 12개, AEM 6.4 이상에서는 6개)도 자동으로 만들어집니다 `cq;PollConfig` Analytics 데이터를 AEM으로 가져오는 데 사용되는 PollingImporters를 인스턴스화합니다. 그 결과는 다음과 같습니다.
 
 * Analytics를 참조하는 페이지가 많으면 PollingImporter가 많습니다.
 * 또한 Analytics 구성을 참조하여 페이지를 복사하고 붙여넣으면 해당 PollingImporter가 중복됩니다.
@@ -91,7 +91,7 @@ AEM에서 사용자 지정 데이터 가져오기 서비스를 만드는 방법�
 
 ### DTM 스크립트 태그가 페이지 소스에서 렌더링되지 않습니다 {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
 
-다음 [DTM](/help/sites-administering/dtm.md) 페이지 속성에서 구성을 참조했더라도 스크립트 태그가 페이지에 제대로 포함되지 않았습니다. [Cloud Services](/help/sites-developing/extending-cloud-config.md) 탭.
+다음 [DTM](/help/sites-administering/dtm.md) 페이지 속성에서 구성을 참조했더라도 스크립트 태그가 페이지에 제대로 포함되지 않았습니다. [Cloud Service](/help/sites-developing/extending-cloud-config.md) 탭.
 
 #### 솔루션 {#solution-2}
 
@@ -160,13 +160,13 @@ var s=s_gi(s_account)
 
 * Target 클라이언트 라이브러리 로드( `mbox.js` 또는 `at.js`) 비동기적으로 타사 Tag Management 시스템을 사용하면 타깃팅을 임의로 중단할 수 있습니다. Target 라이브러리는 페이지 헤드에서 동기적으로 로드되어야 합니다. 이는 라이브러리가 AEM에서 전달될 때 항상 적용됩니다.
 
-* 두 개의 Target 클라이언트 라이브러리 로드( `at.js`)를 동시에 생성합니다. 예를 들어, 하나는 DTM을 사용하고 다른 하나는 AEM의 Target 구성을 사용합니다. 이로 인해 충돌이 발생할 수 있습니다. `adobe.target` 다음의 경우 정의 `at.js` 버전이 다릅니다.
+* 두 개의 Target 클라이언트 라이브러리 로드( `at.js`)를 동시에 생성합니다. 예를 들어 하나는 DTM을 사용하고 다른 하나는 AEM에서 Target 구성을 사용합니다. 이로 인해 충돌이 발생할 수 있습니다. `adobe.target` 다음의 경우 정의 `at.js` 버전이 다릅니다.
 
 #### 솔루션 {#solution-5}
 
 다음 솔루션을 시도할 수 있습니다.
 
-* DTM과 유사한 라이브러리를 로드하는 고객 코드(Target 라이브러리를 차례로 로드)가 [페이지 헤드](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
+* DTM과 유사한 라이브러리를 로드하는 고객 코드(결과적으로 Target 라이브러리를 로드)가 [페이지 헤드](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
 * 사이트가 DTM을 사용하여 Target 라이브러리를 전달하도록 구성된 경우 **DTM에서 제공하는 Clientlib** 옵션이에서 선택됨 [Target 구성](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html) 사이트용.
 
 ### AT.js 1.3+를 사용할 때 올바른 오퍼 대신 항상 기본 오퍼가 표시됩니다 {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
@@ -218,7 +218,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 
 다음은 Target 문제를 해결할 때 유용할 수 있는 두 가지 Target API입니다.
 
-* 지정된 클라이언트 코드에 대한 Target 엔드포인트 검색
+* 지정된 클라이언트 코드에 대한 Target 끝점 검색
 
 ```
 https://admin.testandtarget.omniture.com/rest/v1/endpoint/<CLIENTCODE>.json

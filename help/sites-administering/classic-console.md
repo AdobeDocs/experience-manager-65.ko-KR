@@ -1,7 +1,7 @@
 ---
 title: 클래식 UI 태깅 콘솔
 seo-title: Classic UI Tagging Console
-description: 클래식 UI 태깅 콘솔에 대해 알아봅니다.
+description: Adobe Experience Manager Classic UI 태깅 콘솔에 대해 알아봅니다.
 seo-description: Learn about the Classic UI Tagging Console.
 uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: 21330d460d1080ab1dee3e82bc3c3877677c1420
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 1%
+source-wordcount: '892'
+ht-degree: 2%
 
 ---
 
@@ -135,7 +135,7 @@ ht-degree: 1%
 1. 를 엽니다. **태깅** 콘솔.
 1. 클릭 **사용 횟수** 맨 위 도구 모음: 열 카운트 결과에 결과가 표시됩니다.
 
-## 다른 언어로 태그 관리 {#managing-tags-in-different-languages}
+## 다양한 언어로 태그 관리 {#managing-tags-in-different-languages}
 
 선택 사항 `title`태그의 속성은 여러 언어로 번역될 수 있습니다. 태그 `titles` 사용자 언어 또는 페이지 언어에 따라 표시할 수 있습니다.
 

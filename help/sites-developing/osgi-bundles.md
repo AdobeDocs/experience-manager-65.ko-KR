@@ -1,19 +1,19 @@
 ---
-title: OSGI 번들
-description: OSGi 번들 관리를 위한 팁
+title: OSGi 번들
+description: Adobe Experience Manager에서 OSGi 번들을 관리하기 위한 몇 가지 팁을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e18065c7-75b9-4b37-8294-cf94122a4dcf
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 1%
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
-# OSGI 번들{#osgi-bundles}
+# OSGi 번들{#osgi-bundles}
 
 ## 시맨틱 버전 관리 사용 {#use-semantic-versioning}
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## OSGi 번들에 반드시 필요한 것보다 더 많은 클래스와 jar를 포함하지 마십시오 {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-일반 라이브러리는 별도의 번들로 팩터링해야 합니다. 이렇게 하면 번들 전체에서 재사용할 수 있습니다. 줄바꿈 시 *JAR* osgi 번들에서 온라인 소스를 확인하여 누군가가 이전에 이미 이 작업을 수행했는지 확인해야 합니다. 기존 번들 래퍼를 찾는 일반적인 위치는 Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse 번들 레서피 및 SpringSource Enterprise 번들 저장소입니다.
+일반 라이브러리는 별도의 번들로 팩터링해야 합니다. 이렇게 하면 번들 전체에서 재사용할 수 있습니다. 줄바꿈 시 *JAR* osgi 번들에서 온라인 소스를 확인하여 이전에 누군가가 이미 이 작업을 수행했는지 확인해야 합니다. 기존 번들 래퍼를 찾는 일반적인 위치는 Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse 번들 레서피 및 SpringSource Enterprise 번들 저장소입니다.
 
 ## 가장 필요한 번들 버전에 따라 다름 {#depend-on-the-lowest-needed-bundle-versions}
 

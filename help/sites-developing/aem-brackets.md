@@ -1,7 +1,7 @@
 ---
 title: AEM Brackets 확장
 seo-title: AEM Brackets Extension
-description: AEM Brackets 확장
+description: Brackets용 Adobe Experience Manager 확장 기능을 사용하는 방법에 대해 알아봅니다.
 seo-description: null
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '938'
 ht-degree: 3%
 
 ---

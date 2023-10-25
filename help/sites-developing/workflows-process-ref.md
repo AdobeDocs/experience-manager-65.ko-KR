@@ -1,14 +1,14 @@
 ---
 title: 워크플로 프로세스 참조
-description: 워크플로 프로세스 참조
+description: Adobe Experience Manager의 워크플로에 대한 이 프로세스 참조 를 참조하십시오.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1076'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ AEM에서는 워크플로우 모델을 만드는 데 사용할 수 있는 몇 �
 
 일부 워크플로 프로세스에서는 관리자가 워크플로 단계를 설정할 때 지정하는 인수를 수락합니다.
 
-인수는 **프로세스 인수** 의 속성 **속성** 워크플로 편집기 창 아래에 설명된 각 프로세스에 대해, 인수 문자열의 형식은 간단한 EBNF 문법으로 기술된다. 예를 들어, 다음은 인수 문자열이 하나 이상의 쉼표로 구분된 쌍으로 구성되어 있고 각 쌍은 이름(문자열)과 값으로 구성되며 이중 콜론으로 구분됨을 나타냅니다.
+인수는 의 단일 문자열로 입력됩니다 **프로세스 인수** 의 속성 **속성** 워크플로 편집기 창 아래에 설명된 각 프로세스에 대해, 인수 문자열의 형식은 간단한 EBNF 문법으로 기술된다. 예를 들어, 다음은 인수 문자열이 하나 이상의 쉼표로 구분된 쌍으로 구성되어 있고 각 쌍은 이름(문자열)과 값으로 구성되며 이중 콜론으로 구분됨을 나타냅니다.
 
 ```
     args := name '::' value [',' name '::' value]*

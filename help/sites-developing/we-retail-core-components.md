@@ -1,15 +1,15 @@
 ---
 title: We.Retail에서 핵심 구성 요소 시험 사용
-description: We.Retail에서 핵심 구성 요소 시험 사용
+description: We.Retail을 사용하여 Adobe Experience Manager에서 핵심 구성 요소를 테스트하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 8%
+source-wordcount: '540'
+ht-degree: 7%
 
 ---
 
@@ -83,6 +83,6 @@ ht-degree: 8%
 
 ## 추가 정보 {#further-information}
 
-핵심 구성 요소에 대한 자세한 내용은 작성 문서를 참조하십시오 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en) 기술 개요를 참조하십시오.
+핵심 구성 요소에 대한 자세한 내용은 작성 문서를 참조하십시오 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko-KR) 기술 개요를 참조하십시오.
 
 또한 추가 조사를 원할 수 있습니다 [편집 가능한 템플릿](/help/sites-developing/we-retail-editable-templates.md). 작성 문서를 참조하십시오 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md) 편집 가능한 템플릿에 대한 자세한 내용을 살펴보십시오.

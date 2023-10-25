@@ -1,15 +1,15 @@
 ---
 title: 구성 요소에 Adobe Analytics 추적 추가
-description: 구성 요소에 Adobe Analytics 추적 추가
+description: Adobe Experience Manager의 구성 요소에 Adobe Analytics 추적을 추가하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 1%
+source-wordcount: '1273'
+ht-degree: 2%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 ## 페이지 구성 요소에 Adobe Analytics 모듈 포함 {#including-the-adobe-analytics-module-in-a-page-component}
 
-페이지 템플릿 구성 요소(예: `head.jsp, body.jsp`)에는 ContextHub 및 Adobe Analytics 통합(Cloud Services의 일부)을 로드하기 위해 JSP가 포함되어야 합니다. 모두 로드 JavaScript 파일을 포함합니다.
+페이지 템플릿 구성 요소(예: `head.jsp, body.jsp`)에는 ContextHub 및 Adobe Analytics 통합(Cloud Service의 일부)을 로드하기 위해 JSP가 포함되어야 합니다. 모두 로드 JavaScript 파일을 포함합니다.
 
-ContextHub 항목은 `<head>` 태그에 Cloud Services이 포함되어야 하지만 `<head>` 및 다음 이전 `</body>` 섹션. 예:
+ContextHub 항목은 `<head>` 태그에 Cloud Service이 포함되어야 하지만 `<head>` 및 다음 이전 `</body>` 섹션. 예:
 
 ```xml
 <head>
@@ -36,7 +36,7 @@ ContextHub 항목은 `<head>` 태그에 Cloud Services이 포함되어야 하지
 
 다음 `contexthub` 뒤에 삽입하는 스크립트 `<head>` 요소는 ContextHub 기능을 페이지에 추가합니다.
 
-다음 `cloudservices` 에 추가하는 스크립트 `<head>` 및 `<body>` 섹션은 페이지에 추가되는 클라우드 서비스 구성에 적용됩니다. (페이지가 두 개 이상의 Cloud Services 구성을 사용하는 경우 ContextHub jsp 및 Cloud Services jsp를 한 번만 포함해야 합니다.)
+다음 `cloudservices` 에 추가하는 스크립트 `<head>` 및 `<body>` 섹션은 페이지에 추가되는 클라우드 서비스 구성에 적용됩니다. (페이지가 두 개 이상의 Cloud Service 구성을 사용하는 경우 ContextHub jsp 및 Cloud Service jsp를 한 번만 포함해야 합니다.)
 
 Adobe Analytics 프레임워크가 페이지에 추가되면 `cloudservices` 스크립트는 다음 예제와 유사하게 Adobe Analytics 관련 JavaScript 및 클라이언트측 라이브러리에 대한 참조를 생성합니다.
 
@@ -155,7 +155,7 @@ Adobe Analytics 프레임워크와 상호 작용하는 구성 요소는 프레�
 
 CQ 애플리케이션에 topnav 구성 요소를 복사합니다. 이 절차를 수행하려면 응용 프로그램이 CRXDE Lite에서 설정되어 있어야 합니다.
 
-1. 마우스 오른쪽 단추 클릭 `/libs/foundation/components/topnav` 노드를 클릭하고 복사를 클릭합니다.
+1. 마우스 오른쪽 버튼으로 `/libs/foundation/components/topnav` 노드를 클릭하고 복사를 클릭합니다.
 1. 응용 프로그램 폴더 아래의 구성 요소 폴더를 마우스 오른쪽 단추로 클릭하고 붙여넣기를 클릭합니다.
 1. 모두 저장을 클릭합니다.
 
@@ -343,7 +343,7 @@ Adobe Analytics 통합 모듈은 `s.products` 변수를 사용하는 중 `produc
 }]
 ```
 
-데이터 항목이 다음에서 생략되는 경우 `product` 값은 s.products에서 빈 문자열로 전송됩니다.
+데이터 항목이 다음에서 생략된 경우: `product` 값은 s.products에서 빈 문자열로 전송됩니다.
 
 >[!NOTE]
 >

@@ -1,15 +1,15 @@
 ---
 title: Adobe Experience Manager Sites 개발의 경험 조각
-description: 경험 조각 사용자 지정에 대해 알아봅니다.
+description: Adobe Experience Manager용 경험 조각을 사용자 지정하는 방법을 알아봅니다.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: d6e5684ee89d19ab0fc6d15038c22a4a5b816563
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1787'
 ht-degree: 1%
 
 ---

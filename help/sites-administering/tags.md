@@ -1,7 +1,7 @@
 ---
 title: 태그 관리
 seo-title: Administering Tags
-description: AEM에서 태그를 관리하는 방법에 대해 알아봅니다.
+description: Adobe Experience Manager에서 태그를 관리하고 관리하는 방법에 대해 알아봅니다.
 seo-description: Learn how to administer Tags in AEM.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
@@ -10,10 +10,10 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 3%
+source-wordcount: '1764'
+ht-degree: 14%
 
 ---
 
@@ -37,18 +37,18 @@ AEM Communities 기능에는 페이지 및 에셋 외에도 태그가 사용됩�
 
 AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
-* 태그는 다양한 네임스페이스로 그룹화할 수 있습니다. 이러한 계층을 사용하면 분류법을 작성할 수 있습니다. 이러한 분류는 AEM 전체에서 전역적입니다.
+* 태그는 다양한 네임스페이스로 그룹화할 수 있습니다. 이러한 계층을 사용하면 분류법을 작성할 수 있습니다. 이러한 분류는 AEM 전체에 적용됩니다.
 * 새로 만든 태그의 주요 제한 사항은 특정 네임스페이스 내에서 고유해야 한다는 것입니다.
 * 태그의 제목에는 태그 경로 구분 문자가 포함되어서는 안 됩니다(존재하는 경우 표시되지도 않음)
 
    * 콜론 `:` - 네임스페이스 태그 구분
    * 슬래시 `/` - 하위 태그 구분
 
-* 태그는 작성자 및 사이트 방문자가 적용할 수 있습니다. 페이지에 지정하거나 검색할 때 작성자와 관계없이 모든 형태의 태그를 선택할 수 있습니다.
+* 태그는 작성자 및 사이트 방문자가 적용할 수 있습니다. 만든 사람과 관계없이 태그를 페이지에 할당하거나 검색할 때 모든 형태의 태그를 선택할 수 있습니다.
 * 태그는 &quot;태그 관리자&quot; 그룹의 구성원과 수정 권한이 있는 구성원에 의해 만들고 분류법을 수정할 수 있습니다. `/content/cq:tags`.
 
-   * 하위 태그가 포함된 태그를 컨테이너 태그라고 합니다
-   * 컨테이너 태그가 아닌 태그는 리프 태그라고 합니다
+   * 하위 태그를 포함하는 태그를 컨테이너 태그라고 합니다
+   * 컨테이너 태그가 아닌 태그를 리프 태그라고 합니다
    * 태그 네임스페이스는 리프 태그 또는 컨테이너 태그입니다
 
 * 태그는 [구성 요소 검색](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) 컨텐츠를 쉽게 찾을 수 있습니다.
@@ -58,7 +58,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
    * 태그를 사용하는 페이지로 태그를 패키징해야 합니다
    * 다음을 확인합니다. [태그 권한](#setting-tag-permissions) 읽기 액세스 활성화
 
-## 태깅 콘솔 {#tagging-console}
+## 태그 지정 콘솔 {#tagging-console}
 
 태깅 콘솔을 사용하여 태그와 해당 분류를 만들고 관리할 수 있습니다. 한 가지 목표는 기본적으로 동일한 것과 관련된 많은 유사한 태그(예: 페이지 및 페이지 또는 신발 및 신발)를 보유하는 것을 피하는 것입니다.
 
@@ -85,15 +85,13 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
 * **제목**
-
-   *(필수)* 네임스페이스의 표시 제목입니다.
+  *(필수)* 네임스페이스의 표시 제목입니다.
 
 * **이름**
-   *(선택 사항)* 네임스페이스의 이름입니다. 지정하지 않으면 제목에서 올바른 노드 이름이 만들어집니다. 다음을 참조하십시오 [태그 ID](/help/sites-developing/framework.md#tagid).
+  *(선택 사항)* 네임스페이스의 이름입니다. 지정하지 않으면 제목을 사용해 유효한 노드 이름이 만들어집니다. [TagID](/help/sites-developing/framework.md#tagid)를 참조하십시오.
 
 * **설명**
-
-   *(선택 사항)* 네임스페이스에 대한 설명.
+  *(선택 사항)* 네임스페이스에 대한 설명.
 
 필수 정보를 입력한 후
 
@@ -163,7 +161,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 *(필수) *태그의 표시 제목입니다.
 
 * **이름**
-*(선택 사항) *태그의 이름. 지정하지 않으면 제목에서 올바른 노드 이름이 만들어집니다. 다음을 참조하십시오 [태그 ID](/help/sites-developing/framework.md#tagid).
+*(선택 사항) *태그의 이름. 지정하지 않으면 제목을 사용해 유효한 노드 이름이 만들어집니다. [TagID](/help/sites-developing/framework.md#tagid)를 참조하십시오.
 
 * **설명**
 *(선택 사항) *태그에 대한 설명입니다.
@@ -180,15 +178,15 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 편집한 후 선택 **저장**.
 
-언어 번역 추가에 대한 자세한 내용은 [다른 언어로 태그 관리](#managing-tags-in-different-languages).
+언어 번역 추가에 대한 자세한 내용은 [다양한 언어로 태그 관리](#managing-tags-in-different-languages)의 섹션을 참조하십시오.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-### 태그 이동 {#moving-tags}
+### 태그로 이동 {#moving-tags}
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-네임스페이스나 다른 태그를 선택한 경우 **`Move`** 아이콘을 사용하면 태그 관리자 및 개발자가 태그를 새 위치로 이동하거나 이름을 변경하여 분류를 정리할 수 있습니다. 선택한 태그가 컨테이너 태그인 경우 태그를 이동하면 모든 하위 태그도 이동합니다.
+네임스페이스나 다른 태그를 선택한 경우 **`Move`** 아이콘을 사용하면 태그 관리자 및 개발자가 태그를 새 위치로 이동하거나 이름을 변경하여 분류법을 정리할 수 있습니다. 선택한 태그가 컨테이너 태그인 경우 태그를 이동하면 모든 하위 태그도 이동됩니다.
 
 >[!NOTE]
 >
@@ -197,15 +195,13 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
 * **경로**
-
-   *(읽기 전용)* 선택한 태그에 대한 현재 경로입니다.
+  *(읽기 전용)* 선택한 태그에 대한 현재 경로입니다.
 
 * **이동 위치:**
 태그를 이동할 새 경로를 찾습니다.
 
 * **이름 바꾸기**
-처음에 현재 표시 
-`name`태그 내 태그로 변경되었습니다. 새 항목 `name`을(를) 입력할 수 있습니다.
+처음에 현재 표시 `name`태그 내 태그로 변경되었습니다. 새 항목 `name`을(를) 입력할 수 있습니다.
 
 * 선택 **저장**
 
@@ -220,8 +216,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **경로**
-
-   *(읽기 전용)* 다른 태그에 병합되도록 선택한 태그의 경로.
+  *(읽기 전용)* 다른 태그에 병합되도록 선택한 태그의 경로.
 
 * **다음 항목에 병합**
 병합할 태그의 경로를 찾아 선택합니다.
@@ -230,7 +225,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 >
 >병합 후 **경로** 원래 선택된 항목은 (가상으로) 더 이상 존재하지 않습니다.
 >
->참조된 태그를 이동하거나 병합할 때 태그가 실제로 삭제되지 않으므로 참조를 유지할 수 있습니다.
+>참조된 태그가 이동하거나 병합되더라도 태그가 물리적으로 삭제되지는 않으므로 참조를 유지할 수 있습니다.
 
 ### 태그 게시 {#publishing-tags}
 
@@ -262,14 +257,14 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
    * 액세스 [보안 콘솔](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
       * 예를 들어 http://localhost:4502/useradmin으로 이동합니다.
-   * 왼쪽 창에서 다음 그룹에 대한 그룹(또는 사용자)을 선택합니다 [읽기 권한](/help/sites-administering/security.md#permissions) 은(는) 부여됩니다.
+
+   * 왼쪽 창에서 원하는 그룹(또는 사용자)을 선택합니다 [읽기 권한](/help/sites-administering/security.md#permissions) 은(는) 부여됩니다.
    * 오른쪽 창에서 태그 네임스페이스에 대한 **경로**를 찾습니다
 
-      * 예, `/content/cq:tags/mycommunity`
+      * 예를 들어, `/content/cq:tags/mycommunity`
+
    * 선택 `checkbox`다음에서 **읽기** 열
    * 선택 **저장**
-
-
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
@@ -278,14 +273,14 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
    * 한 가지 접근 방법은 다음과 같습니다. [패키지 만들기](/help/sites-administering/package-manager.md#package-manager) 작성자의 네임스페이스
 
       * 날짜 `Advanced` 탭, `AC Handling` 선택 `Overwrite`
+
    * 패키지 복제
 
       * 선택 `Replicate` 패키지 관리자에서
 
+## 다양한 언어로 태그 관리 {#managing-tags-in-different-languages}
 
-## 다른 언어로 태그 관리 {#managing-tags-in-different-languages}
-
-다음 `title`태그의 속성은 여러 언어로 번역될 수 있습니다. 번역되면 적절한 태그 `title`사용자 언어 또는 페이지 언어에 따라 표시될 수 있습니다.
+태그의 `title` 속성은 여러 언어로 번역될 수 있습니다. 번역되면 적절한 태그 `title`사용자 언어 또는 페이지 언어에 따라 표시될 수 있습니다.
 
 ### 여러 언어로 태그 제목 정의 {#defining-tag-titles-in-multiple-languages}
 
@@ -301,7 +296,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-일반적으로 태그에 대해 선택된 언어는 사용 가능한 경우 페이지 언어에서 가져옵니다. 다음의 경우 [ `tag` 위젯](/help/sites-developing/building.md#tagging-on-the-client-side) 는 다른 경우(예: 양식 또는 대화 상자)에 사용되며 태그 언어는 컨텍스트에 따라 다릅니다.
+일반적으로 태그에 대해 선택된 언어는 사용 가능한 경우 페이지 언어에서 가져옵니다. 다음의 경우 [`tag` 위젯](/help/sites-developing/building.md#tagging-on-the-client-side) 는 다른 경우(예: 양식 또는 대화 상자)에 사용되며 태그 언어는 컨텍스트에 따라 다릅니다.
 
 태깅 콘솔에서는 페이지 언어 설정 대신 사용자 언어 설정을 사용합니다. 태그 지정 콘솔에서 &#39;Animaux&#39; 태그의 경우 사용자 속성에서 언어를 프랑스어로 설정한 사용자를 위해 &#39;Animux&#39;가 표시됩니다.
 
@@ -315,6 +310,6 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 * [개발자를 위한 태깅](/help/sites-developing/tags.md)
 
-   사용자 지정 애플리케이션에서 태그를 확장 및 포함하는 방법과 태깅 프레임워크에 대한 정보입니다.
+  사용자 지정 애플리케이션에서 태그를 확장 및 포함하는 방법과 태깅 프레임워크에 대한 정보입니다.
 
 * [클래식 UI 태깅 콘솔](/help/sites-administering/classic-console.md)

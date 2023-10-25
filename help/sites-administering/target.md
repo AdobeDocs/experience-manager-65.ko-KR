@@ -1,7 +1,7 @@
 ---
 title: Adobe Target과 통합
 seo-title: Integrating with Adobe Target
-description: AEM과 Adobe Target 통합에 대해 알아봅니다.
+description: Adobe Experience Manager을 Adobe Target과 통합하는 방법을 알아봅니다.
 seo-description: Learn about integrating AEM with Adobe Target.
 uuid: b90346e8-9757-4272-a870-bbe5e647303f
 contentOwner: Guillaume Carlino
@@ -10,16 +10,16 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '601'
 ht-degree: 66%
 
 ---
 
 # Adobe Target과 통합{#integrating-with-adobe-target}
 
-Adobe Marketing Cloud의 일부인 [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html)을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. 마케터는 Adobe Target을 사용하여 온라인 테스트를 디자인 및 실행하고, 즉석으로 대상자 세그먼트를 만들고(행동 기반), 콘텐츠 및 온라인 경험의 타겟팅을 자동화합니다. AEM은 Adobe Target Standard에서 사용되는 타겟팅 워크플로우를 채택했습니다. Target을 사용하는 경우 AEM의 타깃팅 편집 환경에 익숙해질 것입니다.
+Adobe Marketing Cloud의 일부인 [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html)을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. 마케터는 Adobe Target을 사용하여 온라인 테스트를 디자인 및 실행하고, 즉석으로 대상자 세그먼트를 만들고(행동 기반), 콘텐츠 및 온라인 경험의 타겟팅을 자동화합니다. AEM은 Adobe Target Standard에서 사용되는 타겟팅 워크플로우를 채택했습니다. Target을 사용하는 경우 AEM의 타깃팅 편집 환경에 익숙할 것입니다.
 
 AEM 사이트와 Adobe Target을 통합함으로써 페이지의 콘텐츠를 개인화하여 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -34,7 +34,7 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 
 1. 다음 중 하나를 선택합니다.
 
-   1. [Adobe Target에 옵트인](/help/sites-administering/opt-in.md): 옵트인 마법사는 Target 계정 정보를 가져와 Adobe Target 클라우드 구성 및 Target 프레임워크를 만듭니다. 또한 이 마법사는 사이트를 Target 프레임워크와 연결합니다. 마법사가 대상에 연결할 수 없는 경우 [연결 문제 해결](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) 섹션. 그런 다음 [기본 클라우드 구성 수정](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): 필요한 경우 옵트인 마법사가 만든 클라우드 구성 및 프레임워크를 수정합니다. 예를 들어, 추가적인 컨텍스트 데이터를 Target으로 보내도록 프레임워크를 수정합니다. Adobe Analytics을 Adobe Target에 대한 보고 소스로 사용하려면 A4T 구성을 가리키도록 클라우드 구성을 수정해야 합니다.
+   1. [Adobe Target에 옵트인](/help/sites-administering/opt-in.md): 옵트인 마법사는 Target 계정 정보를 가져와 Adobe Target 클라우드 구성 및 Target 프레임워크를 만듭니다. 또한 이 마법사는 사이트를 Target 프레임워크와 연결합니다. 마법사가 대상에 연결할 수 없는 경우 [연결 문제 해결](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) 섹션. 그런 다음 [기본 클라우드 구성 수정](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): 필요한 경우 옵트인 마법사가 만든 클라우드 구성 및 프레임워크를 수정합니다. 예를 들어 추가적인 컨텍스트 데이터를 Target에 보내도록 프레임워크를 수정합니다. Adobe Analytics을 Adobe Target에 대한 보고 소스로 사용하려면 A4T 구성을 가리키도록 클라우드 구성을 수정해야 합니다.
    1. [Adobe Target과 수동으로 통합](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 
 1. [활동 구성](/help/sites-authoring/activitylib.md): 활동을 Target 클라우드 구성과 연결합니다.
@@ -50,7 +50,6 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 >* 3.x은(는) [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)로 구성됩니다.
 >* 4.x은(는) [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)로 구성됩니다.
 >
-
 
 >[!CAUTION]
 >
@@ -81,4 +80,3 @@ AEM을 Adobe Target과 통합하려면 Adobe Target, AEM 활동 관리 및 AEM �
 >* 50개 지표
 >* 50개 보고 세그먼트
 >
-

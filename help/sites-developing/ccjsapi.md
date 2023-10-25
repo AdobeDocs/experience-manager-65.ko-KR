@@ -1,7 +1,7 @@
 ---
 title: Client Context JavaScript API
 seo-title: Client Context JavaScript API
-description: Client Context용 JavaScript API
+description: Adobe Experience Manager의 Client Context용 JavaScript API에 대해 알아봅니다.
 seo-description: The JavaScript API for Client Context
 uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '3153'
+source-wordcount: '3159'
 ht-degree: 2%
 
 ---

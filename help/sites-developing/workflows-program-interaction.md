@@ -1,7 +1,7 @@
 ---
 title: 프로그래밍 방식으로 워크플로우와 상호 작용
 seo-title: Interacting with Workflows Programmatically
-description: 프로그래밍 방식으로 워크플로우와 상호 작용
+description: Adobe Experience Manager에서 프로그래밍 방식으로 워크플로우와 상호 작용하는 방법을 알아봅니다.
 seo-description: null
 uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2011'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ REST API에서는 다음 작업이 지원됩니다.
  <tbody>
   <tr>
    <td>HTTP 요청 메서드</td>
-   <td>작업</td>
+   <td>액션</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -110,7 +110,7 @@ REST API에서는 다음 작업이 지원됩니다.
 
 `http://localhost:4502/etc/workflow/instances.{state}`
 
-| HTTP 요청 메서드 | 작업 |
+| HTTP 요청 메서드 | 액션 |
 |---|---|
 | `GET` | 사용 가능한 워크플로우 인스턴스 및 해당 상태( `RUNNING`, `SUSPENDED`, `ABORTED` 또는 `COMPLETED`) |
 
@@ -124,7 +124,7 @@ REST API에서는 다음 작업이 지원됩니다.
  <tbody>
   <tr>
    <td>HTTP 요청 메서드</td>
-   <td>작업</td>
+   <td>액션</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -147,7 +147,7 @@ REST API에서는 다음 작업이 지원됩니다.
  <tbody>
   <tr>
    <td>HTTP 요청 메서드</td>
-   <td>작업</td>
+   <td>액션</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -232,7 +232,7 @@ REST API에서는 다음 작업이 지원됩니다.
  <tbody>
   <tr>
    <td>HTTP 요청 메서드</td>
-   <td>작업</td>
+   <td>액션</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -337,7 +337,7 @@ REST API에서는 다음 작업이 지원됩니다.
 
 `http://localhost:4502/etc/workflow/models/{id}.{version}`
 
-| HTTP 요청 메서드 | 작업 |
+| HTTP 요청 메서드 | 액션 |
 |---|---|
 | `GET` | 지정된 버전(있는 경우)의 모델 데이터를 가져옵니다. |
 
@@ -351,7 +351,7 @@ REST API에서는 다음 작업이 지원됩니다.
  <tbody>
   <tr>
    <td>HTTP 요청 메서드</td>
-   <td>작업</td>
+   <td>액션</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -370,7 +370,7 @@ REST API에서는 다음 작업이 지원됩니다.
 
 `http://localhost:4502/bin/workflow/inbox/{id}`
 
-| HTTP 요청 메서드 | 작업 |
+| HTTP 요청 메서드 | 액션 |
 |---|---|
 | `GET` | 받은 편지함의 데이터(정의 및 메타데이터)를 가져옵니다 `WorkItem` ID로 식별됩니다. |
 
@@ -495,15 +495,15 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
    * `sling:resourceType`: `cq/workflow/components/pages/model`
    * `cq:template`: `/libs/cq/workflow/templates/model`
 
-   모델을 만들 때 먼저 이 모델을 만들어야 합니다 `cq:Page` 노드 및 사용 `jcr:content` 모델 노드의 상위 노드입니다.
+  모델을 만들 때 먼저 이 모델을 만들어야 합니다 `cq:Page` 노드 및 사용 `jcr:content` 모델 노드의 상위 노드입니다.
 
 * 다음 `id` 일부 메서드에서 모델을 식별하는 데 필요한 인수는 저장소에 있는 모델 노드의 절대 경로입니다.
 
-   `/var/workflow/models/<*model_name>*/jcr:content/model`
+  `/var/workflow/models/<*model_name>*/jcr:content/model`
 
-   >[!NOTE]
-   >
-   >다음을 참조하십시오 [모든 워크플로우 모델을 나열하는 방법](#how-to-list-all-workflow-models).
+  >[!NOTE]
+  >
+  >다음을 참조하십시오 [모든 워크플로우 모델을 나열하는 방법](#how-to-list-all-workflow-models).
 
 #### 워크플로우 모델 만들기, 읽기 또는 삭제 - Java {#creating-reading-or-deleting-workflow-models-java}
 
@@ -626,63 +626,63 @@ wfSession.terminateWorkflow(workflow);
 
 * **워크플로우 시작**
 
-   ```shell
-   # starting a workflow
-   curl -d "model={id}&payloadType={type}&payload={payload}" http://localhost:4502/etc/workflow/instances
-   
-   # for example:
-   curl -u admin:admin -d "model=/var/workflow/models/request_for_activation&payloadType=JCR_PATH&payload=/content/we-retail/us/en/products" http://localhost:4502/etc/workflow/instances
-   ```
+  ```shell
+  # starting a workflow
+  curl -d "model={id}&payloadType={type}&payload={payload}" http://localhost:4502/etc/workflow/instances
+  
+  # for example:
+  curl -u admin:admin -d "model=/var/workflow/models/request_for_activation&payloadType=JCR_PATH&payload=/content/we-retail/us/en/products" http://localhost:4502/etc/workflow/instances
+  ```
 
 * **인스턴스 나열**
 
-   ```shell
-   # listing the instances
-   curl -u admin:admin http://localhost:4502/etc/workflow/instances.json
-   ```
+  ```shell
+  # listing the instances
+  curl -u admin:admin http://localhost:4502/etc/workflow/instances.json
+  ```
 
-   모든 인스턴스가 나열됩니다. 예:
+  모든 인스턴스가 나열됩니다. 예:
 
-   ```shell
-   [
-       {"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_1"}
-       ,{"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_2"}
-   ]
-   ```
+  ```shell
+  [
+      {"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_1"}
+      ,{"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_2"}
+  ]
+  ```
 
-   >[!NOTE]
-   >
-   >다음을 참조하십시오 [실행 중인 모든 워크플로우 목록을 가져오는 방법](#how-to-get-a-list-of-all-running-workflows-with-their-ids) (특정 상태로 인스턴스를 나열하기 위해 해당 ID로).
+  >[!NOTE]
+  >
+  >다음을 참조하십시오 [실행 중인 모든 워크플로우 목록을 가져오는 방법](#how-to-get-a-list-of-all-running-workflows-with-their-ids) (특정 상태로 인스턴스를 나열하기 위해 해당 ID로).
 
 * **워크플로우 일시 중단**
 
-   ```shell
-   # suspending a workflow
-   curl -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/{id}
-   
-   # for example:
-   curl -u admin:admin -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
-   ```
+  ```shell
+  # suspending a workflow
+  curl -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/{id}
+  
+  # for example:
+  curl -u admin:admin -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
+  ```
 
 * **워크플로우 다시 시작**
 
-   ```shell
-   # resuming a workflow
-   curl -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/{id}
-   
-   # for example:
-   curl -u admin:admin -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
-   ```
+  ```shell
+  # resuming a workflow
+  curl -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/{id}
+  
+  # for example:
+  curl -u admin:admin -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
+  ```
 
 * **워크플로우 인스턴스 종료**
 
-   ```shell
-   # terminating a workflow
-   curl -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/{id}
-   
-   # for example:
-   curl -u admin:admin -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
-   ```
+  ```shell
+  # terminating a workflow
+  curl -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/{id}
+  
+  # for example:
+  curl -u admin:admin -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
+  ```
 
 ### 작업 항목과 상호 작용 {#interacting-with-work-items}
 
@@ -728,89 +728,89 @@ wfSession.complete(workItem, routes.get(0));
 
 * **받은 편지함에서 작업 항목 나열**
 
-   ```shell
-   # listing the work items
-   curl -u admin:admin http://localhost:4502/bin/workflow/inbox
-   ```
+  ```shell
+  # listing the work items
+  curl -u admin:admin http://localhost:4502/bin/workflow/inbox
+  ```
 
-   받은 편지함에 있는 작업 항목에 대한 세부 정보가 나열됩니다. 예:
+  받은 편지함에 있는 작업 항목에 대한 세부 정보가 나열됩니다. 예:
 
-   ```shell
-   [{
-       "uri_xss": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
-       "uri": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
-       "currentAssignee_xss": "workflow-administrators",
-       "currentAssignee": "workflow-administrators",
-       "startTime": 1519656289274,
-       "payloadType_xss": "JCR_PATH",
-       "payloadType": "JCR_PATH",
-       "payload_xss": "/content/we-retail/es/es",
-       "payload": "/content/we-retail/es/es",
-       "comment_xss": "Process resource is null",
-       "comment": "Process resource is null",
-       "type_xss": "WorkItem",
-       "type": "WorkItem"
-     },{
-       "uri_xss": "configuration/configure_analyticstargeting",
-       "uri": "configuration/configure_analyticstargeting",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     },{
-       "uri_xss": "configuration/securitychecklist",
-       "uri": "configuration/securitychecklist",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     },{
-       "uri_xss": "configuration/enable_collectionofanonymoususagedata",
-       "uri": "configuration/enable_collectionofanonymoususagedata",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     },{
-       "uri_xss": "configuration/configuressl",
-       "uri": "configuration/configuressl",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     }
-   ```
+  ```shell
+  [{
+      "uri_xss": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
+      "uri": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
+      "currentAssignee_xss": "workflow-administrators",
+      "currentAssignee": "workflow-administrators",
+      "startTime": 1519656289274,
+      "payloadType_xss": "JCR_PATH",
+      "payloadType": "JCR_PATH",
+      "payload_xss": "/content/we-retail/es/es",
+      "payload": "/content/we-retail/es/es",
+      "comment_xss": "Process resource is null",
+      "comment": "Process resource is null",
+      "type_xss": "WorkItem",
+      "type": "WorkItem"
+    },{
+      "uri_xss": "configuration/configure_analyticstargeting",
+      "uri": "configuration/configure_analyticstargeting",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    },{
+      "uri_xss": "configuration/securitychecklist",
+      "uri": "configuration/securitychecklist",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    },{
+      "uri_xss": "configuration/enable_collectionofanonymoususagedata",
+      "uri": "configuration/enable_collectionofanonymoususagedata",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    },{
+      "uri_xss": "configuration/configuressl",
+      "uri": "configuration/configuressl",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    }
+  ```
 
 * **작업 항목 위임**
 
-   ```xml
-   # delegating
-   curl -d "item={item}&delegatee={delegatee}" http://localhost:4502/bin/workflow/inbox
-   
-   # for example:
-   curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_act_1&delegatee=administrators" http://localhost:4502/bin/workflow/inbox
-   ```
+  ```xml
+  # delegating
+  curl -d "item={item}&delegatee={delegatee}" http://localhost:4502/bin/workflow/inbox
+  
+  # for example:
+  curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_act_1&delegatee=administrators" http://localhost:4502/bin/workflow/inbox
+  ```
 
-   >[!NOTE]
-   >
-   >다음 `delegatee` 은(는) 워크플로우 단계에 유효한 옵션이어야 합니다.
+  >[!NOTE]
+  >
+  >다음 `delegatee` 은(는) 워크플로우 단계에 유효한 옵션이어야 합니다.
 
 * **작업 항목을 다음 단계로 완료 또는 진행**
 
-   ```xml
-   # retrieve the list of routes; the results will be similar to {"results":1,"routes":[{"rid":"233123169","label":"End","label_xss":"End"}]}
-   http://localhost:4502/etc/workflow/instances/<path-to-the-workitem>.routes.json
-   
-   # completing or advancing to the next step; use the appropriate route ID (rid value) from the above list
-   curl -d "item={item}&route={route}" http://localhost:4502/bin/workflow/inbox
-   
-   # for example:
-   curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_activation_1&route=233123169" http://localhost:4502/bin/workflow/inbox
-   ```
+  ```xml
+  # retrieve the list of routes; the results will be similar to {"results":1,"routes":[{"rid":"233123169","label":"End","label_xss":"End"}]}
+  http://localhost:4502/etc/workflow/instances/<path-to-the-workitem>.routes.json
+  
+  # completing or advancing to the next step; use the appropriate route ID (rid value) from the above list
+  curl -d "item={item}&route={route}" http://localhost:4502/bin/workflow/inbox
+  
+  # for example:
+  curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_activation_1&route=233123169" http://localhost:4502/bin/workflow/inbox
+  ```
 
 ### 워크플로우 이벤트 수신 {#listening-for-workflow-events}
 
-OSGi 이벤트 프레임워크를 사용하여 [ `com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) 클래스는 을 정의합니다. 이 클래스에서는 이벤트 주제에 대한 정보를 얻는 데 유용한 몇 가지 방법도 제공합니다. 예를 들어 `getWorkItem` 메서드는 `WorkItem` 이벤트에 포함된 작업 항목에 대한 개체입니다.
+OSGi 이벤트 프레임워크를 사용하여 [`com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) 클래스는 을 정의합니다. 이 클래스에서는 이벤트 주제에 대한 정보를 얻는 데 유용한 몇 가지 방법도 제공합니다. 예를 들어 `getWorkItem` 메서드는 `WorkItem` 이벤트에 포함된 작업 항목에 대한 개체입니다.
 
 다음 예제 코드는 워크플로 이벤트를 수신하고 이벤트 유형에 따라 작업을 수행하는 서비스를 정의합니다.
 

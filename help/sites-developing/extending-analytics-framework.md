@@ -1,15 +1,15 @@
 ---
 title: Adobe Analytics 프레임워크 사용자 지정
-description: Adobe Analytics 프레임워크 사용자 지정
+description: Adobe Experience Manager용 Adobe Analytics 프레임워크를 사용자 지정하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1620'
 ht-degree: 1%
 
 ---
@@ -240,7 +240,7 @@ Adobe Analytics s_code.js 파일의 컨텐츠를 포함하는 analytics.sitecata
 
 Adobe Analytics 플러그인에 대한 JavaScript 코드를 가져와 AEM의 Adobe Analytics 프레임워크에 통합합니다. 범주의 클라이언트 라이브러리 폴더에 코드 추가 `sitecatalyst.plugins` 따라서 사용자 지정 JavaScript 코드에서 사용할 수 있습니다.
 
-예를 들어 `getQueryParams` plugin에서 플러그인을 호출할 수 있습니다. `s_doPlugins` 사용자 지정 JavaScript의 기능입니다. 다음 예제 코드는에서 쿼리 문자열을 보냅니다. **&quot;pid&quot;** (으)로 레퍼러 URL에서 **eVar**: Adobe Analytics 호출이 트리거되는 경우입니다.
+예를 들어 `getQueryParams` plugin에서 플러그인을 호출할 수 있습니다. `s_doPlugins` 사용자 지정 JavaScript의 기능입니다. 다음 예제 코드는에서 쿼리 문자열을 보냅니다. **&quot;pid&quot;** (레퍼러 URL에서) **eVar**: Adobe Analytics 호출이 트리거되는 경우입니다.
 
 ```
 s.usePlugins=true;

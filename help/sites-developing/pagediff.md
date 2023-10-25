@@ -1,16 +1,16 @@
 ---
 title: 개발 및 페이지 비교
-description: 개발 및 페이지 비교
+description: Adobe Experience Manager에서 페이지 비교 기능을 개발하고 활용하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 14%
+source-wordcount: '380'
+ht-degree: 12%
 
 ---
 

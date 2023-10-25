@@ -1,15 +1,15 @@
 ---
 title: We.Retail에서 컨텐츠 조각 시험 사용
-description: We.Retail에서 컨텐츠 조각 시험 사용
+description: We.Retail을 사용하여 Adobe Experience Manager에서 컨텐츠 조각을 사용해 보는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 21%
+source-wordcount: '461'
+ht-degree: 19%
 
 ---
 

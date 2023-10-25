@@ -1,11 +1,11 @@
 ---
 title: Live Copy 생성 및 동기화
-description: 라이브 카피를 만들고 동기화하는 방법을 알아봅니다.
+description: Adobe Experience Manager에서 라이브 카피를 만들고 동기화하는 방법을 알아봅니다.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '4229'
+source-wordcount: '4233'
 ht-degree: 46%
 
 ---
@@ -526,7 +526,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
 >[!NOTE]
 >
->상속을 다시 활성화하면 라이브 카피 페이지 속성이 소스 속성과 자동으로 동기화되지 않습니다. 필요한 경우 수동으로 동기화를 요청할 수 있습니다.
+>상속을 다시 시작해도 Live Copy 페이지 속성은 자동으로 소스 속성과 동기화되지 않습니다. 필요한 경우 수동으로 동기화를 요청할 수 있습니다.
 
 1. 다음 중 하나를 사용하여 라이브 카피 페이지의 속성을 엽니다. **속성 보기** 옵션 **사이트** 콘솔 또는 **페이지 정보** 아이콘을 클릭합니다.
 1. 속성의 상속을 취소하려면 속성 오른쪽에 나타나는 링크 아이콘을 클릭하거나 탭합니다.
