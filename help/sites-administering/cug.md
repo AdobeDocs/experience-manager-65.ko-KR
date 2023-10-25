@@ -2,7 +2,7 @@
 title: 폐쇄된 사용자 그룹 생성
 seo-title: Creating a Closed User Group
 description: 폐쇄된 사용자 그룹을 만드는 방법을 알아봅니다.
-seo-description: Learn how to create a Closed User Group.
+seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
 uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 64d174cc824c8bf200cece4e29f60f946ee5560e
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -92,7 +92,7 @@ CUG를 페이지에 적용하려면 다음을 수행합니다.
 
    >[!NOTE]
    >
-   >권한 탭의 CUG는 블루프린트에서 라이브 카피로 롤아웃할 수 없습니다. 라이브 카피를 구성할 때 이를 염두에 두고 계획을 세우십시오.
+   >권한 탭의 CUG는 블루프린트에서 Live Copy로 롤아웃할 수 없습니다. Live Copy를 구성할 때 이를 염두에 두고 계획을 세우십시오.
    >
    >자세한 내용은 [이 페이지](closed-user-groups.md#aem-livecopy).
 

@@ -1,7 +1,7 @@
 ---
 title: AEM에서 CRXDE Lite 활성화
 seo-title: Enabling CRXDE Lite in AEM
-description: AEM에서 CRXDE Lite을 활성화하는 방법을 알아봅니다.
+description: Adobe Experience Manager에서 CRXDE Lite을 활성화하는 방법을 알아봅니다.
 seo-description: Learn how to enable CRXDE Lite in AEM.
 uuid: d7a3db67-6384-463b-9aa9-f08ecc6c99c6
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
 exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
-source-git-commit: a4183bb9d72763ebea3b464c77fce978c723e053
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---

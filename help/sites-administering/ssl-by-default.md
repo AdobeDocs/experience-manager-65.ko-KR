@@ -1,7 +1,7 @@
 ---
 title: 기본적으로 SSL/TLS
 seo-title: SSL/TLS By Default
-description: AEM에서 기본적으로 SSL을 사용하는 방법을 알아봅니다.
+description: AEM 6.5에서 기본적으로 SSL을 사용하는 방법에 대해 알아봅니다.
 seo-description: Learn how to use SSL by Default in AEM.
 uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
 contentOwner: User
@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 7edd848bbdbadfb387bd4d880b24931ad6758dbd
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---

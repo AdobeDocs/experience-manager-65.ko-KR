@@ -1,7 +1,7 @@
 ---
 title: 백업 및 복원
 seo-title: Backup and Restore
-description: AEM 콘텐츠를 백업하고 복원하는 방법에 대해 알아봅니다.
+description: AEM 콘텐츠 및 구성을 백업하고 복원하는 방법에 대해 알아봅니다.
 seo-description: Learn how to backup and restore your AEM content.
 uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2285'
 ht-degree: 0%
 
 ---
@@ -82,9 +82,9 @@ AEM에서 저장소 콘텐츠를 백업하고 복원하는 방법에는 두 가�
 >
 >AEM Online Backup을 동시에 실행하지 마십시오 [데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md) 또는 [개정 정리](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). 시스템 성능에 부정적인 영향을 미칠 것입니다.
 
-백업을 시작할 때 **Target 경로** 및/또는 a **지연**.
+백업을 시작할 때 **대상 경로** 및/또는 a **지연**.
 
-**Target 경로** 백업 파일은 일반적으로 quickstart jar 파일(.jar)을 포함하는 폴더의 상위 폴더에 저장됩니다. 예를 들어 /InstallationKits/AEM 아래에 AEM jar 파일이 있으면 /InstallationKits 아래에 백업이 생성됩니다. 원하는 위치에 대상을 지정할 수도 있습니다.
+**대상 경로** 백업 파일은 일반적으로 quickstart jar 파일(.jar)을 포함하는 폴더의 상위 폴더에 저장됩니다. 예를 들어 /InstallationKits/AEM 아래에 AEM jar 파일이 있으면 /InstallationKits 아래에 백업이 생성됩니다. 원하는 위치에 대상을 지정할 수도 있습니다.
 
 다음과 같은 경우 **대상 경로** 는 디렉토리이며 이 디렉토리에 저장소 이미지가 생성됩니다. 동일한 디렉토리가 여러 번(또는 항상) 백업을 저장하는 데 사용되는 경우
 
@@ -123,7 +123,7 @@ AEM에서 저장소 콘텐츠를 백업하고 복원하는 방법에는 두 가�
 
    ![chlimage_1-1](assets/chlimage_1-1a.png)
 
-1. 백업 콘솔에서 다음을 지정합니다. **[Target 경로](#aem-online-backup)** 및 **[지연](#aem-online-backup)**.
+1. 백업 콘솔에서 다음을 지정합니다. **[대상 경로](#aem-online-backup)** 및 **[지연](#aem-online-backup)**.
 
    ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -158,7 +158,7 @@ AEM에서 저장소 콘텐츠를 백업하고 복원하는 방법에는 두 가�
 
 백업을 자동화할 수 있는 방법 `wget` 또는 `curl` HTTP 클라이언트 다음은 curl을 사용하여 백업을 자동화하는 방법의 예입니다.
 
-#### 기본 Target 디렉터리로 백업 {#backing-up-to-the-default-target-directory}
+#### 기본 대상 디렉토리로 백업 {#backing-up-to-the-default-target-directory}
 
 >[!CAUTION]
 >
@@ -175,7 +175,7 @@ curl 명령은 즉시 반환되므로 이 디렉터리를 모니터링하여 zip
 * 결과 zip 파일의 이름: `backup.zip`
 * 임시 디렉터리 이름: `backup.f4d5.temp`
 
-#### 기본이 아닌 Target 디렉터리로 백업 {#backing-up-to-a-non-default-target-directory}
+#### 기본이 아닌 대상 디렉토리로 백업 {#backing-up-to-a-non-default-target-directory}
 
 일반적으로 백업 파일/디렉토리는 다음 항목이 들어 있는 폴더의 상위 폴더에 있는 서버에 작성됩니다. `crx-quickstart` 폴더를 삭제합니다.
 
@@ -219,7 +219,7 @@ AEM Online Backup은 백업 중인 데이터와 작성 중인 백업 파일의 �
    * zip 파일로 백업하는 경우 임시 디렉토리가 생성됩니다. 디렉터리 이름은 다음으로 시작합니다. `backup.` 다음으로 끝남 `.temp`; 예 `backup.f4d3.temp`.
    * 디렉터리에 백업하는 경우 대상 경로에 지정된 이름이 사용됩니다. 기존 디렉터리를 사용할 수 있습니다. 그렇지 않으면 새 디렉터리가 만들어집니다.
 
-      이름이 인 빈 파일 `backupInProgress.txt` 는 백업이 시작될 때 대상 디렉터리에 작성됩니다. 이 파일은 백업이 완료되면 삭제됩니다.
+     이름이 인 빈 파일 `backupInProgress.txt` 는 백업이 시작될 때 대상 디렉터리에 작성됩니다. 이 파일은 백업이 완료되면 삭제됩니다.
 
 1. 파일은 소스 디렉토리에서 대상 디렉토리(또는 zip 파일을 생성할 때 임시 디렉토리)로 복사됩니다. 저장소 손상을 방지하기 위해 세그먼트 저장소가 데이터 저장소 앞에 복사됩니다. 백업을 작성할 때 인덱스 및 캐시 데이터가 생략됩니다. 그 결과, 다음의 데이터 `crx-quickstart/repository/cache` 및 `crx-quickstart/repository/index` 가 백업에 포함되지 않습니다. 프로세스의 진행률 표시줄 표시기는 zip 파일을 만들 때 0% - 70%, zip 파일이 만들어지지 않은 경우 0% - 100% 사이입니다.
 

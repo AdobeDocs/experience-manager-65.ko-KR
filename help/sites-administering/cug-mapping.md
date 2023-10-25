@@ -1,7 +1,7 @@
 ---
 title: AEM 6.5의 사용자 지정 사용자 그룹 매핑
 seo-title: Custom User Group Mapping in AEM 6.5
-description: AEM에서 사용자 지정 사용자 그룹 매핑이 작동하는 방식을 알아봅니다.
+description: Adobe Experience Manager에서 사용자 지정 사용자 그룹 매핑이 작동하는 방식을 알아봅니다.
 seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
@@ -12,9 +12,9 @@ discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '480'
 ht-degree: 1%
 
 ---
@@ -65,40 +65,40 @@ ht-degree: 1%
 
 * 라벨 : Apache Jackrabbit Oak CUG 구성
 
-   이름: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
+  이름: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
 
-   ConfigurationPolicy = 필수
+  ConfigurationPolicy = 필수
 
 * 라벨 : Apache Jackrabbit Oak CUG 제외 목록
 
-   이름: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl
+  이름: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl
 
-   ConfigurationPolicy = 필수
+  ConfigurationPolicy = 필수
 
 * 이름: com.adobe.granite.auth.requirement.impl.RequirementService
 * 레이블: Adobe Granite 인증 요구 사항 및 로그인 경로 핸들러
 
-   이름: com.adobe.granite.auth.requirement.impl.DefaultRequirementHandler
+  이름: com.adobe.granite.auth.requirement.impl.DefaultRequirementHandler
 
-   ConfigurationPolicy = 필수
+  ConfigurationPolicy = 필수
 
 **댓글**
 
 * CUG 인증 구성 및 평가 활성화/비활성화.
 CUG 인증의 영향을 받지 않아야 하는 주체의 제외 목록을 구성하는 서비스입니다.
 
-   >[!NOTE]
-   > 
-   >다음과 같은 경우 `CugExcludeImpl` 이(가) 구성되지 않았습니다. `CugConfiguration` 을 기본값으로 되돌립니다.
+  >[!NOTE]
+  > 
+  >다음과 같은 경우 `CugExcludeImpl` 이(가) 구성되지 않았습니다. `CugConfiguration` 을 기본값으로 되돌립니다.
 
-   특별한 필요가 있는 경우 사용자 지정 CugExclude 구현을 플러그인할 수 있습니다.
+  특별한 필요가 있는 경우 사용자 지정 CugExclude 구현을 플러그인할 수 있습니다.
 
 * 일치하는 로그인 경로를 LoginSelectorHandler에 노출하는 LoginPathProvider를 구현하는 OSGi 구성 요소입니다. granite:AuthenticationRequired mixin 유형을 사용하여 컨텐츠에 저장된 변경된 인증 요구 사항을 수신하는 관찰자를 등록하는 데 사용되는 RequirementHandler에 대한 필수 참조가 있습니다.
 * 인증 요구 사항에 대한 변경 사항을 SlingAuthenticator에 알리는 RequirementHandler를 구현하는 OSGi 구성 요소입니다.
 
-   이 구성 요소에 대한 구성 정책은 REQUIRE이므로 지원되는 경로 집합이 지정된 경우에만 활성화됩니다.
+  이 구성 요소에 대한 구성 정책은 REQUIRE이므로 지원되는 경로 집합이 지정된 경우에만 활성화됩니다.
 
-   서비스를 활성화하면 RequirementService가 실행됩니다.
+  서비스를 활성화하면 RequirementService가 실행됩니다.
 
 <!-- nested tables not supported - text above is the table>
 <table>

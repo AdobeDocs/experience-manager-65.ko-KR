@@ -1,6 +1,6 @@
 ---
 title: 사용자 동기화
-description: AEM의 사용자 동기화에 대해 알아봅니다.
+description: AEM에서 사용자 동기화의 내부 작업에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2502'
 ht-degree: 3%
 
 ---
@@ -74,7 +74,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 1. 최신 코드가 설치되어 있는지 확인합니다.
 
-* [AEM 플랫폼 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)
+* [AEM 플랫폼 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko-KR?lang=ko)
 * [AEM Communities 업데이트](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리 {#apache-sling-distribution-agent-sync-agents-factory}

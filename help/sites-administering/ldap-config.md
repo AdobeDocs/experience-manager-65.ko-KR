@@ -1,6 +1,6 @@
 ---
 title: AEM 6을 사용하여 LDAP 구성
-description: AEM을 사용하여 LDAP를 구성하는 방법에 대해 알아봅니다.
+description: AEM에서 LDAP 서비스를 사용하고 구성하는 방법에 대해 알아봅니다.
 uuid: 0007def4-86f0-401d-aa37-c8d49d5acea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,9 +8,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1628'
 ht-degree: 0%
 
 ---
@@ -222,6 +222,7 @@ LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
 | **동기화 핸들러 이름** | 동기화 처리기의 이름입니다. |
 
 >[!NOTE]
+>
 AEM 인스턴스와 함께 LDAP 구성을 두 개 이상 가질 계획이라면 각 구성에 대해 별도의 ID 공급자와 동기화 핸들러를 만들어야 합니다.
 
 ## SSL을 통한 LDAP 구성 {#configure-ldap-over-ssl}

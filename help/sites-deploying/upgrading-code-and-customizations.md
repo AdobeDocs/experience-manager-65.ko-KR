@@ -1,7 +1,7 @@
 ---
 title: 코드 및 사용자 지정 업그레이드
 seo-title: Upgrading Code and Customizations
-description: AEM에서 사용자 지정 코드를 업그레이드하는 방법에 대해 자세히 알아보십시오.
+description: AEM의 코드 및 사용자 지정 업그레이드에 대해 자세히 알아보십시오.
 seo-description: Learn more about upgrading custom code in AEM.
 uuid: dec11ef0-bf85-4e4e-80ac-dcb94cc3c256
 contentOwner: sarchiz
@@ -13,9 +13,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
-source-git-commit: a296e459461973fc2dbd0641c6fdda1d89d8d524
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## 개요 {#overview}
 
-1. **패턴 탐지기** - 업그레이드 계획에 설명되고 다음에 자세히 설명된 대로 패턴 감지기를 실행합니다. [이 페이지](/help/sites-deploying/pattern-detector.md). AEM Target 버전에서 사용할 수 없는 API/번들 외에 해결해야 하는 영역에 대한 자세한 내용을 포함하는 패턴 감지기 보고서를 받게 됩니다. 패턴 감지 보고서는 코드의 비호환성을 나타냅니다. 존재하지 않는 경우 배포는 이미 6.5와 호환됩니다. 6.5 기능을 사용하기 위해 새로운 개발을 수행하도록 선택할 수는 있지만, 단순히 호환성을 유지하기 위해 필요한 것은 아닙니다. 비호환성이 보고되면 호환성 모드에서 실행을 선택하고 새 6.5 기능이나 호환성에 대한 개발을 연기할 수 있습니다. 또는 업그레이드 후 개발을 결정하고 2단계로 이동할 수 있습니다. 다음을 참조하십시오 [AEM 6.5의 이전 버전과의 호환성](/help/sites-deploying/backward-compatibility.md) 을 참조하십시오.
+1. **패턴 탐지기** - 업그레이드 계획에 설명되고 다음에 자세히 설명된 대로 패턴 감지기를 실행합니다. [이 페이지](/help/sites-deploying/pattern-detector.md). AEM의 Target 버전에서 사용할 수 없는 API/번들 외에 해결해야 하는 영역에 대한 자세한 내용을 포함하는 패턴 탐지기 보고서를 가져옵니다. 패턴 감지 보고서는 코드의 비호환성을 나타냅니다. 존재하지 않는 경우 배포는 이미 6.5와 호환됩니다. 6.5 기능을 사용하기 위해 새로운 개발을 수행하도록 선택할 수는 있지만, 단순히 호환성을 유지하기 위해 필요한 것은 아닙니다. 비호환성이 보고되면 호환성 모드에서 실행을 선택하고 새 6.5 기능이나 호환성에 대한 개발을 연기할 수 있습니다. 또는 업그레이드 후 개발을 결정하고 2단계로 이동할 수 있습니다. 다음을 참조하십시오 [AEM 6.5의 이전 버전과의 호환성](/help/sites-deploying/backward-compatibility.md) 을 참조하십시오.
 
 1. **6.5용 코드 베이스 개발 **- Target 버전의 코드 베이스에 대한 전용 분기 또는 저장소를 만듭니다. 업그레이드 전 호환성의 정보를 사용하여 업데이트할 코드 영역을 계획합니다.
 1. **6.5 Uber jar로 컴파일 **- 6.5 uber jar를 가리키도록 코드 기반 POM을 업데이트하고 그에 대한 코드를 컴파일합니다.
@@ -45,7 +45,7 @@ ht-degree: 0%
 6.5는 새 AEM 버전에서 작동하도록 코드 베이스 및 사용자 지정을 선택적으로 업그레이드할 수 있을 뿐만 아니라 다음에 설명된 대로 이전 버전과의 호환성 기능을 통해 사용자 지정을 보다 효율적으로 관리하는 데 도움이 됩니다 [이 페이지](/help/sites-deploying/backward-compatibility.md).
 
 위에서 언급하고 아래 다이어그램에 표시된 대로 [패턴 탐지기](/help/sites-deploying/pattern-detector.md) 첫 번째 단계에서는 업그레이드의 전체 복잡성을 평가하는 데 도움이 될 수 있습니다. 또한 호환 모드에서 실행할지 또는 새로운 AEM 6.5 기능을 모두 사용하도록 사용자 지정을 업데이트할지를 결정하는 데 도움이 될 수 있습니다. 다음을 참조하십시오. [AEM 6.5의 이전 버전과의 호환성](/help/sites-deploying/backward-compatibility.md) 페이지 를 참조하십시오.
-[ ![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## 코드 베이스 업그레이드 {#upgrade-code-base}
 

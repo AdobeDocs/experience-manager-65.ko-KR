@@ -1,7 +1,7 @@
 ---
 title: CRX2Oak 마이그레이션 도구 사용
 seo-title: Using the CRX2Oak Migration Tool
-description: CRX2Oak 마이그레이션 도구를 사용하는 방법을 알아봅니다.
+description: AEM에서 CRX2Oak 마이그레이션 도구를 사용하는 방법을 알아봅니다.
 seo-description: Learn how to use the CRX2Oak migration tool.
 uuid: 9b788981-4ef0-446e-81f0-c327cdd3214b
 contentOwner: User
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---
@@ -200,7 +200,7 @@ CRX2Oak의 오픈 소스 버전은 oak-upgrade의 형태로 사용할 수 있습
   </tr>
   <tr>
    <td>독립형 모드</td>
-   <td><p>추가 <strong>- 추적</strong> 표준 출력에서 TRACE 이벤트를 표시하도록 CRX2Oak 명령줄 옵션. 나중에 검사하려면 리디렉션 문자 '&gt;' 또는 'tee' 명령을 사용하여 로그를 직접 리디렉션해야 합니다.</p> </td>
+   <td><p>추가 <strong>- 추적</strong> 표준 출력에서 TRACE 이벤트를 표시하도록 CRX2Oak 명령줄 옵션. 나중에 검사하려면 리디렉션 문자 '&gt;' 또는 'tee' 명령을 사용하여 직접 로그를 리디렉션해야 합니다.</p> </td>
   </tr>
  </tbody>
 </table>

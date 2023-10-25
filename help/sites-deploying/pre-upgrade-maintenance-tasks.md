@@ -1,7 +1,7 @@
 ---
 title: 업그레이드 전 유지 관리 작업
 seo-title: Pre-Upgrade Maintenance Tasks
-description: AEM의 업그레이드 전 작업에 대해 알아봅니다.
+description: AEM에 권장되는 업그레이드 전 작업에 대해 알아봅니다.
 seo-description: Learn about the pre-upgrade tasks in AEM.
 uuid: 5da1cfc7-8a10-47b1-aafb-2cd112e3f818
 contentOwner: sarchiz
@@ -12,9 +12,9 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2031'
 ht-degree: 1%
 
 ---
@@ -245,7 +245,6 @@ You can find the packages at these locations:
 >* cURL
 >
 
-
 ## 사용자 정의 로그인 모듈 비활성화 {#disable-custom-login-modules}
 
 >[!NOTE]
@@ -339,7 +338,6 @@ CRX3 인스턴스에서 개정 정리를 실행한 후 데이터 저장소 가�
 >* AEM 6.3 이전 버전의 AEM에서 업그레이드 중입니다.
 >* 업그레이드 중에 아래에 언급된 오류가 발생합니다.
 >
-
 
 서비스 사용자가 이전 AEM 버전에서 일반 사용자로 잘못 태그가 지정되는 예외적인 경우가 있습니다.
 
