@@ -1,8 +1,8 @@
 ---
 title: AEM 포털 및 포틀릿
 seo-title: AEM Portals and Portlets
-description: AEM의 포털 및 포털에 대해 알아봅니다.
-seo-description: Learn about Portals and Portles in AEM.
+description: AEM as a portal을 구성 및 관리하는 방법과 포틀릿에 AEM 컨텐츠를 구성 및 표시하는 방법에 대해 알아봅니다.
+seo-description: Learn how to configure and administer AEM as a portal and how to configure and display AEM content in a portlet.
 uuid: 7f9e316d-277e-4a1e-b6f3-cd89addc897b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6100'
 ht-degree: 1%
 
 ---
@@ -505,7 +505,7 @@ HTML에서 다음 자리 표시자를 사용할 수 있습니다. 이 자리 표
 
 | 자리 표시자 문자열 | 설명 |
 |---|---|
-| {name} | 버튼의 이름(예: 작성자** 뒤로, 새로 고침** 등)입니다. |
+| {이름} | 버튼의 이름(예: 작성자** 뒤로, 새로 고침** 등)입니다. |
 | {id} | 단추의 CSS ID입니다. |
 | {url} | 단추 대상의 URL. |
 | {text} | 단추의 레이블입니다. |

@@ -1,15 +1,15 @@
 ---
 title: 기본 구성 개념
-description: Adobe Experience Manager 구성 방법을 알아봅니다.
+description: 고유한 특정 요구 사항에 맞게 Adobe Experience Manager을 구성하는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2116'
 ht-degree: 1%
 
 ---
@@ -97,11 +97,11 @@ AEM의 모든 요소(예: 저장소 및 Dispatcher)는 IPv4 및 IPv6 네트워�
 
 * 서버 이름
 
-  예, `https://www.yourserver.com:4502`
+  예를 들어, `https://www.yourserver.com:4502`
 
 * 의 기본 대/소문자 `localhost` 는 IPv4 및 IPv6 네트워크 설치 모두에 대해 해석됩니다.
 
-  예, `http://localhost:4502`
+  예를 들어, `http://localhost:4502`
 
 ### 버전 삭제 {#version-purging}
 

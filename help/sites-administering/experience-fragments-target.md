@@ -1,16 +1,16 @@
 ---
 title: Adobe Target으로 경험 조각 내보내기
-description: Adobe Target으로 경험 조각 내보내기
+description: Adobe Experience Manager(AEM) 경험 조각을 Adobe Target으로 내보내는 방법에 대해 알아봅니다.
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: c6eee2e647a0c5e6f5a8dd7a1a13d18218fdf10b
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 43%
+source-wordcount: '1540'
+ht-degree: 42%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 43%
 >6.5.3.0:
 >
 >* **Externalizer 도메인** 이제 을(를) 선택할 수 있습니다.
->  **참고:** 외부화 도메인은 오퍼 콘텐츠로 전송되는 Target 조각의 콘텐츠에만 해당되며, 오퍼 콘텐츠 보기와 같은 메타데이터에는 해당되지 않습니다.
+>  **참고:** 외부화 도메인은 오퍼 콘텐츠 보기와 같은 메타데이터가 아닌 Target에 전송되는 경험 조각의 콘텐츠에만 관련이 있습니다.
 >
 >6.5.2.0:
 >
@@ -40,12 +40,12 @@ ht-degree: 43%
 >* AEM 경험 조각은 Adobe Target의 기본 작업 영역으로 내보내집니다.
 >* [Adobe Target과 통합](/help/sites-administering/target.md)의 지침에 따라 Adobe Target과 AEM을 통합해야 합니다.
 
-내보낼 수 있습니다. [경험 조각](/help/sites-authoring/experience-fragments.md): Adobe Experience Manager(AEM)에서 만든 다음 Adobe Target(Target)로 복사합니다. 그런 다음 Target 활동에서 오퍼로 사용하여 경험을 대규모로 테스트하고 개인화할 수 있습니다.
+내보낼 수 있습니다. [경험 조각](/help/sites-authoring/experience-fragments.md): Adobe Experience Manager(AEM)에서 만든 후 Adobe Target(Target)으로 복사합니다. 그런 다음 Target 활동에서 오퍼로 사용하여 경험을 대규모로 테스트하고 개인화할 수 있습니다.
 
 경험 조각을 Adobe Target으로 내보내는 데 사용할 수 있는 세 가지 형식 옵션은 다음과 같습니다.
 
-* HTML(기본값): 웹 및 하이브리드 콘텐츠 전송 지원
-* JSON: 헤드리스 콘텐츠 전송 지원
+* HTML(기본값): 웹 및 하이브리드 콘텐츠 게재 지원
+* JSON: Headless 콘텐츠 게재 지원
 * HTML 및 JSON
 
 AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Target의 사용자 정의 작업 영역으로 내보낼 수 있습니다. 이 작업은 Adobe Developer 콘솔을 사용하여 수행되며, AEM은 다음과 같아야 합니다. [ims를 사용하여 Adobe Target과 통합](/help/sites-administering/integration-target-ims.md).
@@ -143,7 +143,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 >
 >따라서 Target으로 내보내기 전에 모든 관련 에셋이 포함된 경험 조각을 게시해야 합니다.
 
-클라우드 구성을 지정한 후 AEM에서 Target으로 경험 조각을 내보내려면 다음을 수행하십시오.
+AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지정 후):
 
 1. 경험 조각 콘솔로 이동합니다.
 1. Target으로 내보내고자 하는 경험 조각을 선택합니다.
@@ -162,11 +162,11 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 
    >[!NOTE]
    >
-   >선택 **게시** 경험 조각을 즉시 게시하여 Target으로 전송합니다.
+   >선택 **게시** 경험 조각을 즉시 게시하고 Target에 전송합니다.
 
 1. 확인 대화 상자에서 **확인**&#x200B;을 탭/클릭합니다.
 
-   이제 경험 조각이 Target 상태가 됩니다.
+   이제 경험 조각이 Target에 있어야 합니다.
 
    >[!NOTE]
    >

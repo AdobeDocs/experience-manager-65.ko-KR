@@ -1,7 +1,7 @@
 ---
 title: Oak 색인 문제 해결
 seo-title: Troubleshooting Oak Indexes
-description: 느린 리인덱싱을 감지하고 수정하는 방법입니다.
+description: 색인화가 느리는지 확인하고 원인을 찾아 문제를 해결하는 방법을 알아봅니다.
 uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1473'
 ht-degree: 2%
 
 ---
@@ -111,19 +111,19 @@ AEM 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원하�
 
       * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
       * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
+
    * 비동기화에서 데이터 수집 `IndexStats` MBean:
 
       * AEM OSGi Web Console>Main>JMX>IndexStat>async로 이동합니다
 
-         또는 다음으로 이동 [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+        또는 다음으로 이동 [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+
    * 사용 [oak-run.jar의 콘솔 모드](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) * 아래에 있는 의 세부 정보를 수집하려면 `/:async`* 노드.
    * 다음을 사용하여 저장소 체크포인트 목록 수집 `CheckpointManager` MBean:
 
       * AEM OSGi 웹 콘솔>기본>JMX>CheckpointManager>listCheckpoints()
 
-         또는 다음으로 이동 [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
-
-
+        또는 다음으로 이동 [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. 1단계에서 설명한 모든 정보를 수집한 후 AEM을 다시 시작합니다.
 
@@ -155,11 +155,13 @@ AEM 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원하�
    * 리인덱싱 시 **기존** index, reindex 속성을 false로 설정합니다.
 
       * `/oak:index/someExistingIndex@reindex=false`
+
    * 또는 **신규** 색인:
 
       * 유형 속성을 비활성화로 설정
 
          * `/oak:index/someNewIndex@type=disabled`
+
       * 또는 색인 정의를 완전히 제거하십시오
 
    완료되면 변경 사항을 저장소에 커밋합니다.

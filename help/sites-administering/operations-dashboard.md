@@ -1,7 +1,7 @@
 ---
 title: 작업 대시보드
 seo-title: Operations Dashboard
-description: 작업 대시보드를 사용하는 방법을 알아봅니다.
+description: Adobe Experience Manager에서 작업 대시보드를 사용하는 방법을 알아봅니다.
 seo-description: Learn how to use the Operations Dashboard.
 uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '6053'
+source-wordcount: '6057'
 ht-degree: 2%
 
 ---
@@ -111,6 +111,7 @@ A **복합 상태 검사** 은 여러 개별 검사의 정보를 집계하는 �
 
       * **유형:** `String`
       * **값:** `granite/operations/components/mbean`
+
    * **이름:** `resource`
 
       * **유형:** `String`
@@ -173,6 +174,7 @@ A **복합 상태 검사** 은 여러 개별 검사의 정보를 집계하는 �
 
       * **유형:** `String`
       * **값:** `granite/operations/components/mbean`
+
    * **이름:** `resource`
 
       * **유형:** `String`
@@ -198,7 +200,7 @@ A **복합 상태 검사** 은 여러 개별 검사의 정보를 집계하는 �
   </tr>
   <tr>
    <td>관찰 큐 길이</td>
-   <td><p>관찰 큐 길이는 모든 이벤트 리스너 및 백그라운드 관찰자를 반복합니다. <code>queueSize </code>대상 <code>maxQueueSize</code> 및:</p>
+   <td><p>관찰 큐 길이는 모든 이벤트 리스너 및 백그라운드 관찰자를 반복하고 해당 이벤트 리스너와 백그라운드 관찰자를 비교합니다 <code>queueSize </code>대상 <code>maxQueueSize</code> 및:</p>
     <ul>
      <li>다음 경우에 중요 상태를 반환합니다. <code>queueSize</code> 값이 을 초과합니다. <code>maxQueueSize</code> 값(이벤트 삭제 시)</li>
      <li>다음 경우 Warn 반환 <code>queueSize</code> 값이 <code>maxQueueSize * WARN_THRESHOLD</code> (기본값은 0.75입니다) </li>
@@ -606,7 +608,7 @@ Lucene 바이너리 정리 작업을 사용하면 Lucene 바이너리를 제거�
 
 버전 제거 유지 관리 작업을 예약하여 이전 버전을 자동으로 삭제할 수 있습니다. 이 작업은 를 수동으로 사용해야 하는 필요성을 최소화합니다. [버전 삭제 도구](/help/sites-deploying/version-purging.md). 에 액세스하여 버전 제거 작업을 예약하고 구성할 수 있습니다 **도구 > 작업 > 유지 관리 > 주간 유지 관리 창** 및 다음 단계를 수행합니다.
 
-1. 클릭 **추가**.
+1. **추가**&#x200B;를 클릭합니다.
 1. 선택 **버전 삭제** 드롭다운 메뉴에서 을(를) 선택합니다.
 
    ![version_purge_maintenancetask](assets/version_purge_maintenancetask.png)
@@ -644,13 +646,13 @@ Lucene 바이너리 정리 작업을 사용하면 Lucene 바이너리를 제거�
    <td>granite.maintenance.isStoppable</td>
    <td>사용자가 작업을 중지할 수 있는지 여부를 정의하는 부울 속성. 작업이 중지 가능하다고 선언하면 실행 중에 중지 여부를 확인한 다음 그에 따라 작업을 수행해야 합니다. 기본값은 false입니다.</td>
    <td>true</td>
-   <td>선택 사항</td>
+   <td>옵션</td>
   </tr>
   <tr>
    <td>granite.maintenance.mandatory</td>
    <td>작업이 필수이고 정기적으로 실행해야 하는지 여부를 정의하는 부울 속성. 작업이 필수이지만 현재 활성 스케줄 창에 없는 경우 상태 점검 이 오류를 보고합니다. 기본값은 false입니다.</td>
    <td>true</td>
-   <td>선택 사항</td>
+   <td>옵션</td>
   </tr>
   <tr>
    <td>granite.maintenance.name</td>
@@ -666,7 +668,7 @@ Lucene 바이너리 정리 작업을 사용하면 Lucene 바이너리를 제거�
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>유지 관리 작업의 고유 주제입니다.<br /> Apache Sling 작업 처리는 유지 관리 작업을 실행하기 위해 이 주제와 정확히 일치하는 작업을 시작하고 이 주제에 대해 작업이 등록되면 실행됩니다.<br /> 항목은 다음으로 시작해야 합니다. <i>com/adobe/granite/maintenance/job/</i></td>
+   <td>유지 관리 작업의 고유 주제입니다.<br /> Apache Sling 작업 처리는 유지 관리 작업을 실행하기 위해 이 주제와 정확히 일치하는 작업을 시작하고 이 주제에 대해 작업이 등록되면 실행됩니다.<br /> 주제는 다음으로 시작해야 합니다. <i>com/adobe/granite/maintenance/job/</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>필수</td>
   </tr>
