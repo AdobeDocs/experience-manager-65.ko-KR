@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: a07765f95f01f05a30dce14138f75e7edbe94ae2
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1740'
 ht-degree: 1%
 
 ---
@@ -77,6 +77,7 @@ Workfront 프로젝트와 AEM 폴더 간의 메타데이터 매핑은 AEM 폴더
 
 매핑을 구성하려면 다음 단계를 수행합니다.
 
+1. 추가 `jcr:read` 다음에 대한 권한: `/conf/global/settings/dam/adminui-extension/foldermetadataschema` 대상 `wf-workfront-users` 그룹입니다.
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 폴더 메타데이터 스키마]**.
 1. 편집하려는 폴더 메타데이터 스키마 양식을 선택하고 편집을 누릅니다.
 1. 편집하려는 폴더 메타데이터 스키마 양식 필드를 선택하고 오른쪽 패널에서 설정 탭을 선택합니다.
