@@ -1,16 +1,15 @@
 ---
 title: Forms JEE 워크플로 | 사용자 데이터 처리
-seo-title: Forms JEE workflows | Handling user data
-description: Forms JEE 워크플로 | 사용자 데이터 처리
+description: 비즈니스 프로세스를 디자인, 생성 및 관리하는 AEM Forms JEE 워크플로우입니다.
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -132,7 +131,7 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
 
 1. 워크플로 인스턴스의 상태를 확인합니다. 상태가 2(COMPLETE) 또는 4(TERMINATED)가 아니면 다음 메서드를 호출하여 먼저 인스턴스를 종료합니다.
 
-   `ProcessManager.terminateProcess(<long_lived_invocation_id>)`.
+   `ProcessManager.terminateProcess(<long_lived_invocation_id>)`
 
 1. 다음 메서드를 호출하여 워크플로 인스턴스를 제거합니다.
 
@@ -165,6 +164,7 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
       GDS 파일 시스템에서:
 
       1. 다음 세션 ID 문자열이 확장명인 파일을 검색합니다.
+
       * `_wfattach<task_id>`
       * `_wftask<fd_id>`
       * `_wftaskformid<fd_id>`
@@ -174,6 +174,7 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
       `<file_name_guid>.session<session_id_string>`
 
       1. 모든 마커 파일 및 다음과 같은 정확한 파일 이름을 가진 기타 파일 삭제 `<file_name_guid>` 파일 시스템에서 가져옵니다.
+
    1. **데이터베이스의 GDS**
 
       각 세션 ID에 대해 다음 명령을 실행합니다.
@@ -183,9 +184,6 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
       delete from tb_dm_session_reference where sessionid=<session_id>
       delete from tb_dm_deletion where sessionid=<session_id>
       ```
-
-
-
 
 1. 다음 명령을 실행하여 AEM Forms 서버 데이터베이스에서 작업 ID의 데이터를 삭제합니다.
 

@@ -1,7 +1,6 @@
 ---
 title: DocConverter 서비스 Java API 빠른 시작(SOAP)
-seo-title: DocConverter Service Java API QuickStart(SOAP)
-description: DocConverter 서비스 Java API 빠른 시작(SOAP)
+description: Java API 빠른 시작(SOAP)을 사용하여 문서를 PDF/A 문서로 변환하고 준수사항을 관리합니다.
 uuid: a02e13a5-4557-4c8a-a4be-e8d017127128
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 role: Developer
 exl-id: 554b19d6-47c3-4171-b59d-343f1ad935b2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍에 있는 빠른 시작은 JBoss 애플리케이션 서버 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms를 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 문서를 PDF/A 문서로 변환 {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 

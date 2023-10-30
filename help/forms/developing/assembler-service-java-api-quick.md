@@ -1,15 +1,15 @@
 ---
 title: 어셈블러 서비스 Java API 빠른 시작(SOAP)
-description: 어셈블러 서비스 Java API 빠른 시작(SOAP)
+description: 어셈블러 서비스 Java API 빠른 시작(SOAP)을 사용하여 PDF 문서를 어셈블하고, 디스어셈블하고, 동적으로 만듭니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---

@@ -1,17 +1,15 @@
 ---
 title: "자습서: 양식 데이터 모델 만들기"
-seo-title: Create Form Data Model Tutorial
-description: 양식 데이터 모델 만들기
-seo-description: Create form data model
+description: MySQL을 데이터 소스로 구성하고, 양식 데이터 모델(FDM)을 만들고, 구성하고, AEM Forms에 대해 테스트합니다.
 uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1524'
 ht-degree: 1%
 
 ---
@@ -55,40 +53,40 @@ AEM [!DNL Forms] 데이터 통합 모듈을 사용하면 AEM 사용자 프로필
 
 다음을 수행하여 을 구성합니다 [!DNL MySQL] 데이터베이스:
 
-1. 데이터베이스용 [!DNL MySQL] JDBC 드라이버를 OSGi 번들로 설치합니다.
+1. 데이터베이스에 대 한 [!DNL MySQL] JDBC 드라이버를 OSGi 번들로 설치:
 
-   1. 에서 JDBC 드라이버 OSGi 번들을 `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`다운로드합니다[!DNL MySQL].<!-- This URL is an insecure link but using https is not possible -->
+   1. 에서 JDBC Driver OSGi 번들을 `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` 다운로드 [!DNL MySQL] 합니다.<!-- This URL is an insecure link but using https is not possible -->
    1. AEM에 로그인 [!DNL Forms] 작성자 인스턴스: 관리자 자격으로 AEM 웹 콘솔 번들로 이동합니다. 기본 URL은 [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. 누르기 **[!UICONTROL 설치/업데이트]**. An [!UICONTROL 번들 업로드/설치] 대화 상자가 나타납니다.
 
-   1. 누르기 **[!UICONTROL 파일 선택]** 을(를) 찾아 선택하려면 [!DNL MySQL] JDBC 드라이버 OSGi 번들. 선택 **[!UICONTROL 번들 시작]** 및 **[!UICONTROL 패키지 새로 고침]**, 및 탭 **[!UICONTROL 설치 또는 업데이트]**. 다음을 확인합니다. [!DNL Oracle Corporation's] 용 JDBC 드라이버 [!DNL MySQL] 이(가) 활성 상태입니다. 드라이버가 설치되어 있습니다.
+   1. 누르기 **[!UICONTROL 파일 선택]** 을(를) 찾아 선택하려면 [!DNL MySQL] JDBC 드라이버 OSGi 번들. 선택 **[!UICONTROL 번들 시작]** 및 **[!UICONTROL 패키지 새로 고침]**, 및 탭 **[!UICONTROL 설치 또는 업데이트]**. 다음을 확인합니다. [!DNL Oracle Corporation's] 용 JDBC 드라이버 [!DNL MySQL] 이(가) 활성 상태입니다. 드라이버가 설치 되어 있습니다.
 
-1. 데이터베이스를 데이터 소스로 구성 [!DNL MySQL] :
+1. 데이터베이스를 데이터 소스로 구성 [!DNL MySQL] 합니다.
 
-   1. https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 에서 AEM 웹 콘솔로 [이동합니다.
-   1. Apache Sling 연결 풀링된 데이터 소스&#x200B;**구성을 찾습니다**. 편집 모드에서 구성을 열려면 누릅니다.
+   1. Https://localhost:4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr) 에서 [ AEM 웹 콘솔로 이동 합니다.
+   1. Apache 선회 비행 연결 풀링 데이터 소스 **구성을 찾습니다** . 편집 모드에서 구성을 탭 하 여 엽니다.
    1. 구성 대화 상자에서 다음 세부 사항을 지정합니다.
 
       * **데이터 소스 이름:** 원하는 이름을 지정할 수 있습니다. 예를 들어 을 지정합니다 **WeRetailMySQL**.
       * **DataSource 서비스 속성 이름**: DataSource 이름이 포함된 서비스 속성의 이름을 지정합니다. 데이터 소스 인스턴스를 OSGi 서비스로 등록하는 동안 지정됩니다. 예를 들어, **datasource.name**.
       * **JDBC 드라이버 클래스**: JDBC 드라이버의 Java 클래스 이름을 지정합니다. 대상 [!DNL MySQL] 데이터베이스, 지정 **com.mysql.jdbc.Driver**.
-      * **JDBC 연결 URI**: 데이터베이스의 연결 URL을 지정합니다. 포트 3306 및 스키마 weretail에서 실행되는 데이터베이스의 경우 [!DNL MySQL] URL은 다음과 같습니다. `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **JDBC 연결 URI** : 데이터베이스의 연결 URL를 지정 합니다. 포트 3306 및 스키마 weretail에서 실행 되는 데이터베이스의 [!DNL MySQL] 경우 URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > [!DNL MySQL] 데이터베이스가 방화벽 뒤에 있는 경우 데이터베이스 호스트 이름은 공용 DNS가 아닙니다. 데이터베이스의 IP 주소를 AEM 호스트 시스템의 /etc/hosts *파일에 추가해야*&#x200B;합니다.
+      > [!DNL MySQL]데이터베이스가 방화벽 뒤에 있는 경우 데이터베이스 호스트 이름은 공개 DNS가 아닙니다. AEM 호스트 컴퓨터의/etc/hosts *파일에* 데이터베이스의 IP 주소를 추가 해야 합니다.
 
       * **사용자 이름:** 데이터베이스의 사용자 이름. JDBC 드라이버가 데이터베이스와의 연결을 설정할 수 있도록 해야 합니다.
       * **암호:** 데이터베이스의 암호입니다. JDBC 드라이버가 데이터베이스와의 연결을 설정할 수 있도록 해야 합니다.
 
       >[!NOTE]
       >
-      >AEM Forms은에 대한 NT 인증을 지원하지 않습니다. [!DNL MySQL]. https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) AEM 웹 콘솔로 [이동하여 &quot;Apache Sling 연결 풀링된 데이터 소스&quot;를 검색합니다. &quot;JDBC 연결 URI&quot; 속성의 경우 &quot;integratedSecurity&quot; 값을 False로 설정하고 생성된 사용자 이름과 암호를 사용하여 데이터베이스와 [!DNL MySQL] 연결합니다.
+      >AEM Forms은에 대한 NT 인증을 지원하지 않습니다. [!DNL MySQL]. Https://localhost:4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr) 의 [ AEM 웹 콘솔로 이동 하 고 &quot;Apache 선회 연결 풀링됨 Datasource&quot;를 검색. &quot;JDBC connection URI 속성&quot;의 경우 &quot;인 중 Atedsecurity&quot;의 값을 False로 설정 하 고 데이터베이스에 [!DNL MySQL] 연결 하는 데 만들어진 사용자 이름과 암호를 사용 합니다.
 
-      * **대여 시 테스트:** 대여&#x200B;]**시 테스트 옵션을 활성화합니다**[!UICONTROL .
-      * **반환 시 테스트:** 반환&#x200B;]**시 테스트 옵션을 활성화합니다**[!UICONTROL .
-      * **유효성 검사 쿼리:** SQL SELECT 쿼리를 지정하여 풀에서 연결의 유효성을 검사합니다. 쿼리는 하나 이상의 행을 반환해야 합니다. 예를 들어, **선택 &#42; 보낸 사람 customerdetails**.
+      * **빌려 인 한 테스트:** [온 시 ]**테스트] 옵션을**[!UICONTROL  활성화 합니다.
+      * **반환 시 테스트:** 반환 ]**시 테스트 선택 옵션을**[!UICONTROL  활성화 합니다.
+      * **유효성 검사 쿼리:** 풀의 연결을 확인 하는 SQL SELECT 쿼리를 지정 합니다. 쿼리는 하나 이상의 행을 반환해야 합니다. 예를 들어, **선택 &#42; 보낸 사람 customerdetails**.
       * **트랜잭션 격리**: 값을 로 설정합니다. **READ_COMMIT**.
 
         다른 속성을 기본값으로 유지 [값](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) 및 탭 **[!UICONTROL 저장]**.
@@ -133,7 +131,7 @@ AEM [!DNL Forms] 는 다음과 같은 직관적인 사용자 인터페이스를 
    * **데이터 모델 개체**:
 
       * id
-      * name
+      * 이름
       * shippingAddress
       * 도시
       * 상태
@@ -163,23 +161,23 @@ AEM [!DNL Forms] 는 다음과 같은 직관적인 사용자 인터페이스를 
 
       ![쓰기-기본값](assets/write-default.png)
 
-      다음과 같이 id **인수를**&#x200B;추가하고 구성합니다.
+      다음과 같이 id **인수를** 추가 하 고 구성 합니다.
 
-      ![id-arg](assets/id-arg.png)
+      ![id-인수](assets/id-arg.png)
 
-   1. 완료&#x200B;]**를 눌러**[!UICONTROL &#x200B;데이터 모델 개체 속성을 저장합니다. 그런 다음 저장을&#x200B;]**눌러**[!UICONTROL &#x200B;양식 데이터 모델을 저장합니다.
+   1. 데이터 모델 개체 속성을 저장 하려면 완료 ]**을 탭**[!UICONTROL  합니다. 그런 다음 저장 ]**을 탭**[!UICONTROL  하 여 양식 데이터 모델을 저장 합니다.
 
-      **[!UICONTROL 가져오기]** 및 **[!UICONTROL 업데이트]** 서비스는 데이터 모델 개체에 대한 기본 서비스로 추가됩니다.
+      **[!UICONTROL Get]** 및 **[!UICONTROL update]** 서비스가 데이터 모델 개체에 대 한 기본 서비스로 추가 됩니다.
 
       ![data-model-object](assets/data-model-object.png)
 
 1. 로 이동 **[!UICONTROL 서비스]** 탭 및 구성 **[!UICONTROL get]** 및 **[!UICONTROL 업데이트]** 서비스.
 
-   1. **[!UICONTROL get]** 서비스를 선택하고 속성&#x200B;]**편집을 누릅니다**[!UICONTROL . 속성 대화 상자가 열립니다.
-   1. [속성 편집] 대화 상자에서 다음을 지정합니다.
+   1. **[!UICONTROL Get]** service를 선택 하 고 편집 속성 ]**를 탭**[!UICONTROL  합니다. 속성 대화 상자가 열립니다.
+   1. 편집 속성 대화 상자에서 다음을 지정 합니다.
 
-      * **제목**: 서비스의 제목을 지정합니다. 예: 배송 주소 검색.
-      * **설명**: 서비스의 자세한 기능이 포함된 설명을 지정합니다. 예:
+      * **제목** : 서비스의 제목을 지정 합니다. 예: 배송 주소 검색을 참조 하십시오.
+      * **설명** : 서비스의 자세한 작동을 포함 하는 설명을 지정 합니다. 예:
 
         이 서비스는에서 배송 주소 및 기타 고객 세부 정보를 검색합니다. [!DNL MySQL] 데이터베이스
 

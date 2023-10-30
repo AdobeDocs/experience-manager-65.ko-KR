@@ -1,7 +1,6 @@
 ---
-title: API를 사용하여 AEM Forms 호출
-seo-title: Invoking AEM Forms using APIs
-description: API를 사용하여 AEM Forms 호출
+title: API를 사용하여 AEM Forms을 호출하는 방법
+description: Java API, 웹 서비스, 원격 및 REST를 사용하여 AEM Forms 서비스를 호출합니다.
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: coding, development-tools
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 role: Developer
 exl-id: 0e92d1ad-12bd-4bfd-81cc-9be8e376c5ca
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 **이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
-Adobe Experience Manager Forms은 공유 인프라 내에서 작동하는 서비스로 구성된 J2EE 기반 엔터프라이즈 소프트웨어입니다. 서비스 작업은 일반적으로 문서를 사용하거나 생성합니다. AEM Forms을 사용하면 통합 및 통합된 서비스 세트에서 양식 워크플로우와 전자 양식, 문서 보안 및 문서 생성을 결합할 수 있습니다. 이러한 서비스는 방화벽 내부 및 외부에서 액세스할 수 있습니다.
+Adobe Experience Manager Forms은 공유 인프라 내에서 작동하는 서비스로 구성된 J2EE 기반 엔터프라이즈 소프트웨어입니다. 서비스 작업은 일반적으로 문서를 사용하거나 생성합니다. AEM Forms을 사용하면 통합 및 통합 서비스 세트에서 양식 워크플로우와 전자 양식, 문서 보안 및 문서 생성을 결합할 수 있습니다. 이러한 서비스는 방화벽 내부 및 외부에서 액세스할 수 있습니다.
 
 클라이언트 애플리케이션은 Java API, 웹 서비스, 원격 및 REST를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호출할 수 있습니다. 관리 콘솔을 사용하여 프로그래밍 방식으로 호출하여 AEM Forms 서비스를 사용할 수 있도록 하는 엔드포인트가 표시되도록 서비스를 구성할 수 있습니다. 기본적으로 대부분의 서비스는 원격, Java 및 웹 서비스 끝점을 노출하도록 사전 구성되어 있습니다.
 

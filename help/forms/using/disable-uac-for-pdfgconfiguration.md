@@ -1,10 +1,10 @@
 ---
 title: JEE와 OSGI 모두에 적용할 수 있는 PDFG 구성에 대한 UAC를 비활성화합니다.
-description: PDFG 구성에 대한 UAC를 비활성화하는 단계
+description: PDFG 구성에 대한 UAC를 비활성화하여 Word에서 PDF으로 변환하는 단계를 해결합니다.
 exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
-source-git-commit: 2e9b9c40f54aa54a946e4320341ed4a760c56fd1
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '261'
 ht-degree: 3%
 
 ---

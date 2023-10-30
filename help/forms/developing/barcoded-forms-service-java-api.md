@@ -1,15 +1,15 @@
 ---
 title: 바코드 Forms 서비스 Java APIuick 시작(SOAP)
-description: 바코드 Forms 서비스 Java APIuick 시작(SOAP)
+description: AEM Forms의 Barcoded Forms Service Java API 빠른 시작(SOAP)을 사용하면 바코드를 매끄럽게 처리할 수 있습니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---

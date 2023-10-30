@@ -1,8 +1,6 @@
 ---
 title: Forms 서비스 API 빠른 시작
-seo-title: Forms Service API Quick Starts
-description: Forms 서비스 API에 대한 빠른 시작을 사용합니다.
-seo-description: Use the Quick Starts for the Forms Service API.
+description: JAVA API를 사용하여 대화형 PDF, HTML Forms, 조각 렌더링.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -11,7 +9,7 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 0%
@@ -1968,7 +1966,7 @@ Forms 서비스 API를 사용하는 애플리케이션 로직은 Java 서블릿�
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 유동성 레이아웃으로 Forms 미리 채우기 {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
 
-다음 코드 예제에서는 동적 데이터 소스로 양식을 미리 채웁니다. 즉, 데이터 소스는 런타임에 만들어지므로 XML 파일에 포함되지 않거나 디자인 타임에 만들어지지 않습니다. 이 코드 예에는 세 가지 사용자 정의 메서드가 포함되어 있습니다.
+다음 코드 예제에서는 동적 데이터 소스로 양식을 미리 채웁니다. 즉, 데이터 소스는 런타임에 만들어지며 XML 파일에 포함되지 않거나 디자인 타임에 만들어지지 않습니다. 이 코드 예에는 세 가지 사용자 정의 메서드가 포함되어 있습니다.
 
 * `createDataSource`: 다음을 생성합니다. `org.w3c.dom.Document` 양식을 미리 채우는 데 사용되는 데이터 소스를 나타내는 개체입니다. 이 사용자 정의 메서드는 `org.w3c.dom.Document` 개체.
 * `convertDataSource`: 를 전환합니다. `org.w3c.dom.Document` 에 대한 오브젝트 `com.adobe.idp.Document` 개체. 이 메서드는 `org.w3c.dom.Document` 개체를 입력 매개 변수로 반환하고 `com.adobe.idp.Document` 개체.

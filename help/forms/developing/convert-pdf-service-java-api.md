@@ -1,7 +1,6 @@
 ---
 title: PDF 서비스 Java API 빠른 시작(SOAP) 변환
-seo-title: Convert PDF Service Java API QuickStart(SOAP)
-description: PDF 서비스 Java API 빠른 시작(SOAP) 변환
+description: PDF 변환 서비스는 PDF 문서를 PostScript 또는 이미지 파일(JPEG, JPEG 2000, PNG 및 TIFF)로 변환합니다.
 uuid: 97253ac7-f0c1-4766-a7bd-c19af52adf51
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 role: Developer
 exl-id: 8974c468-ff2b-431d-96fb-e987698619bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---

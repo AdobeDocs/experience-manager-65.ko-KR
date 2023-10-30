@@ -1,8 +1,6 @@
 ---
 title: 텍스트 편집기 사용자 지정
-seo-title: Customize text editor
-description: 텍스트 편집기를 사용자 지정하는 방법을 알아봅니다.
-seo-description: Learn how to customize text editor.
+description: AEM Forms 환경에서 텍스트 편집기를 사용자 지정하는 방법을 알아봅니다.
 uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +9,10 @@ discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 0%
+source-wordcount: '609'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +59,7 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
 
    1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다.
 
-   1. 클릭 **모두 저장**.
+   1. **모두 저장**&#x200B;을 클릭합니다.
 
 1. 새로 생성된 구성 폴더에 다음 단계를 사용하여 tbxeditor-config.xml 파일의 복사본을 만듭니다.
 
@@ -172,8 +170,7 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
 
       텍스트의 다양한 측면에 대한 기본값을 변경하고 항목을 제거하여 텍스트 편집기에서 글꼴을 제거할 수도 있습니다.
 
-   1. 클릭 **모두 저장**.
-
+   1. **모두 저장**&#x200B;을 클릭합니다.
 
 ## 클라이언트 컴퓨터에 사용자 정의 글꼴 추가 {#addcustomfonts}
 

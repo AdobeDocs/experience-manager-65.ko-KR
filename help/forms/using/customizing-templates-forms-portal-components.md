@@ -1,8 +1,6 @@
 ---
 title: Forms 포털 구성 요소에 대한 템플릿 맞춤화
-seo-title: Customizing templates for forms portal components
-description: 양식 목록에 사용자 지정 메타데이터 표시
-seo-description: Display custom metadata in form listing
+description: AEM Forms 사용자 인터페이스를 통해 사용자는 양식에 메타데이터를 추가할 수 있습니다. 사용자 지정 메타데이터는 조직의 양식 목록 및 검색에서 사용자 경험을 향상시킵니다.
 uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +9,9 @@ discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -45,6 +43,7 @@ Forms 포털을 사용하면 양식 목록에서 사용자 지정 메타데이�
 
       * 초안 섹션: /libs/fd/fp/draftTemplate
       * 제출 섹션: /libs/fd/fp/submissionsTemplate
+
    * 링크 구성 요소: /libs/fd/fp/linkTemplate
 
    레이아웃 템플릿을 선택하는 동안 표시할 제목을 추가합니다.
@@ -130,7 +129,7 @@ Forms 포털은 자리 표시자가 사용자 지정/OOTB 메타데이터를 표
 
 * **제목:** 양식 제목
 * **formUrl**: 양식을 HTML으로 렌더링할 URL
-* **target**: 링크의 Target 속성. 유효한 값은 &quot;_blank&quot; 및 &quot;_self&quot;입니다.
+* **target**: 링크의 타겟 속성입니다. 유효한 값은 &quot;_blank&quot; 및 &quot;_self&quot;입니다.
 * **linkText**: 링크 캡션
 
 ### 초안 및 제출 구성 요소 {#drafts-amp-submissions-component}

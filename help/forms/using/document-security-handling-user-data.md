@@ -1,16 +1,15 @@
 ---
 title: 문서 보안 | 사용자 데이터 처리
-seo-title: Document Security | Handling user data
-description: 문서 보안 | 사용자 데이터 처리
+description: AEM Forms Document Security를 사용하면 사용자 데이터 및 데이터 저장소를 관리하고 사용자 데이터에 액세스, 삭제 및 내보낼 수 있습니다.
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---

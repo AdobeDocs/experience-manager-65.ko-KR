@@ -1,15 +1,14 @@
 ---
 title: 다른 사용자를 대신하여 문서 Protect
-seo-title: Protect a document on behalf of another user
-description: 다른 사용자를 대신하여 문서 Protect
+description: AEM Forms Document Security Java SDK는 편집 권한 없이 다른 사용자를 대신하여 문서를 보호할 수 있도록 사용자 계정용 API를 제공합니다.
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
 feature: Document Security
 exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '385'
 ht-degree: 1%
 
 ---
@@ -20,7 +19,7 @@ AEM Forms Document Security Java SDK는 문서 편집 권한을 획득하지 않
 
 * **보호 문서 사용** 대신 문서에 정책을 적용하기 위한 ProtectDocument API
 
-   다른 사용자 계정입니다. 정책을 적용하는 데 사용되는 사용자 계정의 권한은 문서 보호로 제한됩니다. 문서를 열고 볼 수 있는 권한은 없습니다. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale 로케일, 부울 bExactMatchForNames)
+  다른 사용자 계정입니다. 정책을 적용하는 데 사용되는 사용자 계정의 권한은 문서 보호로 제한됩니다. 문서를 열고 볼 수 있는 권한은 없습니다. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale 로케일, 부울 bExactMatchForNames)
 
 * **createLicenseUse** 다른 사용자 계정을 대신하여 정책에 대한 라이선스를 만들기 위한 CreateLicense API입니다. PublishLicenseDTO createLicense(String policyId, String documentName, 부울 logSecureDocEvent)
 * **protectDocumentWithCoverPageUse** 다른 사용자를 대신하여 정책을 적용하고 문서에 표지를 추가하는 ProtectDocumentWithCoverPage API입니다. 정책을 적용하는 데 사용되는 사용자 계정의 권한은 문서 보호로 제한됩니다. 문서를 열고 볼 수 있는 권한은 없습니다. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, 부울 bExactMatchForNames)

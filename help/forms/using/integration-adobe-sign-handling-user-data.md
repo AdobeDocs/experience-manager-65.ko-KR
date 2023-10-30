@@ -1,14 +1,14 @@
 ---
 title: Adobe Sign과 통합 | 사용자 데이터 처리
-description: Adobe Sign과 통합 | 사용자 데이터 처리
+description: AEM Forms은 적응형 양식의 전자 서명을 위해 Adobe Sign을 통합합니다. 다양한 워크플로우에 대한 여러 서명 옵션을 지원합니다.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Acrobat Sign
 role: Admin
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---

@@ -1,8 +1,6 @@
 ---
 title: HTML 5 양식과 PDF forms 간의 차별화된 기능
-seo-title: Feature differentiation between HTML5 forms and PDF forms
-description: HTML 5 양식 및 PDF forms에서 지원되는 기능
-seo-description: Feature supported in HTML5 forms and PDF forms
+description: HTML 5 양식과 PDF forms 간의 차이점에 대해 알아봅니다.
 uuid: 6ddee197-d108-4897-9976-77d115a06504
 contentOwner: robhagat
 content-type: reference
@@ -12,9 +10,9 @@ discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---

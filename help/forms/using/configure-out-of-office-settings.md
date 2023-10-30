@@ -1,12 +1,11 @@
 ---
 title: 부재 설정 구성
-seo-title: Configure Out of Office settings
-description: 부재 설정 구성
+description: 부재 설정을 AEM Forms 인스턴스에 구성합니다.
 seo-description: Configure Out of Office settings
 exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '825'
 ht-degree: 7%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 7%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html) |
 | AEM 6.5 | 이 문서 |
 
 부재 예정인 경우 해당 기간 동안 자신에게 할당된 항목에 대한 처리 방법을 지정할 수 있습니다.

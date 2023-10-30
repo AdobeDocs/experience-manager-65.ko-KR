@@ -1,14 +1,13 @@
 ---
 title: Workbench 설치
-seo-title: Install workbench
-description: Workbench를 설치합니다.
+description: AEM Forms Workbench 설치, 제거, 구성, 관리 또는 배포합니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: ad5d98c5519cda29cecde54a880958bae81c4764
 workflow-type: tm+mt
-source-wordcount: '2231'
+source-wordcount: '2238'
 ht-degree: 0%
 
 ---

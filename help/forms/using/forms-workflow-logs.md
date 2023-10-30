@@ -1,8 +1,6 @@
 ---
 title: AEM Forms 워크플로우에서 로그인
-seo-title: Logging in AEM Forms workflows
-description: 로그를 사용하여 AEM Forms 워크플로 문제를 디버깅하십시오.
-seo-description: Use logs to debug AEM Forms workflow issues.
+description: AEM Forms 워크플로우 문제를 디버깅하고 AEM Forms 워크플로우에 대한 디버그 로깅을 활성화하여 로그를 봅니다.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +8,9 @@ topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '288'
 ht-degree: 5%
 
 ---
@@ -26,35 +24,35 @@ Forms 워크플로 단계는 워크플로 관련 문제를 편리하게 디버�
 양식 워크플로우의 디버그 로그는 다음과 같습니다.
 
 * 각 워크플로우 단계의 항목입니다. 예:\
-   `[DEBUG] "Executing Invoke DDX Process step"`
+  `[DEBUG] "Executing Invoke DDX Process step"`
 
 * 각 워크플로우 단계를 종료합니다. 예:\
-   `[DEBUG] "Successfully finished Invoke DDX Process step"`
+  `[DEBUG] "Successfully finished Invoke DDX Process step"`
 
 * 서비스 호출 메시지. 예:\
-   `[DEBUG] Invoking Adobe Sign Service for creating agreement`
+  `[DEBUG] Invoking Adobe Sign Service for creating agreement`
 
 * 서비스 종료 메시지. 예:\
-   `[DEBUG] Agreement created successfully with agreement id <agreement id>`
+  `[DEBUG] Agreement created successfully with agreement id <agreement id>`
 
 * 메타데이터 맵에서 변수를 읽습니다. 예:\
-   `[DEBUG] Successfully retrieved variable <variable name> from workflow meta data map`
+  `[DEBUG] Successfully retrieved variable <variable name> from workflow meta data map`
 
 * JCR 저장소에 작성된 변수. 예:
 
-   ```verilog
-      [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
-   ```
+  ```verilog
+     [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
+  ```
 
 * 전체 스택 추적이 포함된 예외 메시지. 예:\
-   `[DEBUG] Exception in Adobe Sign Service <complete stack trace>`
+  `[DEBUG] Exception in Adobe Sign Service <complete stack trace>`
 
 * 동적 단계 메타데이터 매개 변수. 예:
 
-   ```verilog
-   [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
-    [DEBUG] Locale to be used for Document of Record is <locale>
-   ```
+  ```verilog
+  [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
+   [DEBUG] Locale to be used for Document of Record is <locale>
+  ```
 
 다음 예에서는 문서 서명 단계의 로그를 보여 줍니다.
 

@@ -1,7 +1,6 @@
 ---
 title: 구성 요소 및 서비스 Java API빠른 시작(SOAP)
-seo-title: Components and Services Java APIQuick Start(SOAP)
-description: 구성 요소 및 서비스 Java API빠른 시작(SOAP)
+description: Java API 빠른 시작(SOAP)을 사용하여 AEM Forms 구성 요소 및 서비스를 프로그래밍 방식으로 조작합니다.
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---

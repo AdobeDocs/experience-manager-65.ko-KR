@@ -1,10 +1,10 @@
 ---
 title: 첨부 파일이 포함된 이메일을 받는 추가 단계
-description: 첨부 파일이 포함된 이메일을 받는 추가 단계
+description: JEE 플랫폼에서 AEM Forms에 대한 첨부 파일이 있는 이메일을 검색할 수 없는 경우 오류를 수정합니다.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---

@@ -1,7 +1,6 @@
 ---
 title: AEM Forms 프로세스 이해
-seo-title: Understanding AEM Forms Processes
-description: AEM Forms 프로세스 이해
+description: AEM Forms 프로세스에는 양식 작성, 제출, 데이터 처리, 유효성 검사, 통합, 워크플로우 자동화 및 출력 관리가 포함됩니다.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -33,7 +32,7 @@ ht-degree: 0%
 * 프로세스는 조직의 경계를 포괄할 수 있습니다.
 * 프로세스를 완료하려면 외부 입력이 필요합니다. 예를 들어 부재 중인 관리자에게 양식을 전송하는 상황을 생각해 보겠습니다. 이 경우 관리자가 돌아와서 양식을 작성할 때까지 프로세스가 완료되지 않습니다.
 
-   이러한 유형의 과정은 장수명 과정으로 알려져 있다. 장기 프로세스는 비동기적으로 수행되므로 리소스가 허용하는 대로 시스템이 상호 작용하고 작업의 추적 및 모니터링이 가능합니다. 장기 프로세스가 호출되면 AEM Forms은 장기 프로세스 상태를 추적하는 레코드의 일부로 호출 식별자 값을 만듭니다. 레코드는 AEM Forms 데이터베이스에 저장됩니다. 더 이상 필요하지 않은 장기 프로세스 레코드를 제거할 수 있습니다.
+  이러한 유형의 과정은 장수명 과정으로 알려져 있다. 장기 프로세스는 비동기적으로 수행되므로 리소스가 허용하는 대로 시스템이 상호 작용하고 작업의 추적 및 모니터링이 가능합니다. 장기 프로세스가 호출되면 AEM Forms은 장기 프로세스 상태를 추적하는 레코드의 일부로 호출 식별자 값을 만듭니다. 레코드는 AEM Forms 데이터베이스에 저장됩니다. 더 이상 필요하지 않은 장기 프로세스 레코드를 제거할 수 있습니다.
 
 >[!NOTE]
 >

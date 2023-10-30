@@ -1,14 +1,14 @@
 ---
 title: AEM Forms JEE 패치 설치 관리자
-description: AEM Forms JEE 패치 설치 관리자
+description: AEM 6.5 Forms 구성 요소의 문제를 해결하기 위한 AEM Forms JEE 패치 설치 관리자
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 20%
+source-wordcount: '529'
+ht-degree: 19%
 
 ---
 
@@ -38,9 +38,9 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 
       * (Windows 32비트) `Windows\Disk1\InstData\VM`
       * (Windows 64비트) `Windows_64Bit`\ `Disk1\InstData\VM`
+
    * **리눅스**
-적절한 디렉터리로 이동한 다음 명령 프롬프트에서 
-`./aem65_cfp_install.bin`.
+적절한 디렉터리로 이동한 다음 명령 프롬프트에서 `./aem65_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
 
@@ -56,8 +56,12 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
    * 다음 중 하나를 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 **구성 관리자** 를 사용하여 **ConfigurationManager.bat** 파일 위치: `[aem-forms root]\configurationManager\bin`.
 
    * 또는 을 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음으로 이동 *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉터리 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일.
-   >[!NOTE]
-   >사용 **ConfigurationManager.bat** 파일은 .lax 파일의 이름을 수동으로 업데이트하지 않도록 도와줍니다.
+
+   >>
+   [!NOTE]
+   >>
+   사용 **ConfigurationManager.bat** 파일은 .lax 파일의 이름을 수동으로 업데이트하지 않도록 도와줍니다.
+   >
 
 1. **[Unix 기반 전용]:**
 

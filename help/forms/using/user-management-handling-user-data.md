@@ -1,16 +1,15 @@
 ---
 title: Forms 사용자 관리 | 사용자 데이터 처리
-seo-title: Forms user management | Handling user data
-description: Forms 사용자 관리 | 사용자 데이터 처리
+description: AEM Forms JEE 사용자 관리 구성 요소를 사용하여 AEM Forms에 액세스할 수 있는 사용자를 생성하고, 인증하고, 관리할 수 있습니다.
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -68,7 +67,7 @@ User Management는 My Sql, Oracle, MS SQL Server 및 IBM DB2와 같은 데이터
    <td>로컬, 엔터프라이즈 및 하이브리드 도메인의 모든 사용자 항목을 포함합니다. 여기에는 사용자 이메일 ID가 포함되어 있습니다.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code> (Oracle 및 MS SQL 데이터베이스)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (Oracle 및 MS SQL 데이터베이스)</p> </td>
    <td>사용자와 그룹 간의 매핑을 저장합니다.</td>
   </tr>
   <tr>
@@ -80,7 +79,7 @@ User Management는 My Sql, Oracle, MS SQL Server 및 IBM DB2와 같은 데이터
    <td>사용자와 그룹 모두에 대한 사용자 및 권한 간의 매핑을 저장합니다.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code> (Oracle 및 MS SQL 데이터베이스)</p> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (Oracle 및 MS SQL 데이터베이스)</p> </td>
    <td>주체에 해당하는 이전 및 새 속성 값을 저장합니다.<br /> </td>
   </tr>
  </tbody>
@@ -122,7 +121,6 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 >
 >* 바꾸기 `EdcPrincipalGrpCtmntEntity` 포함 `EdcPrincipalGrpCtmntEnti`
 >
-
 
 ```sql
 Select * from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (Select id from EDCPRINCIPALENTITY where id='<principal_id>'));
