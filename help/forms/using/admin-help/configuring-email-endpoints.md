@@ -1,8 +1,6 @@
 ---
 title: 이메일 엔드포인트 구성
-seo-title: Configuring email endpoints
-description: 이메일 엔드포인트를 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure email endpoints.
+description: 이메일 엔드포인트를 구성하는 방법에 대해 알아봅니다. 이메일 엔드포인트를 사용하면 지정된 이메일 계정에 하나 이상의 문서를 전송하여 서비스를 호출할 수 있습니다.
 uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '3757'
+source-wordcount: '3776'
 ht-degree: 0%
 
 ---
@@ -162,7 +160,7 @@ Forms 워크플로우가 사용자로부터 받는 전자 메일 메시지를 �
 
 **도메인 이름:** 사용자의 도메인인 필수 설정입니다. 기본값은 DefaultDom입니다.
 
-**도메인 패턴:** 공급자가 허용하는 수신 전자 메일의 도메인 패턴을 지정합니다. 예를 들어 adobe.com 을 사용하는 경우 adobe.com의 이메일만 처리되고 다른 도메인의 이메일은 무시됩니다.
+**도메인 패턴:** 공급자가 허용하는 수신 전자 메일의 도메인 패턴을 지정합니다. 예를 들어 adobe.com 을 사용하는 경우 adobe.com 의 이메일만 처리되고 다른 도메인의 이메일은 무시됩니다.
 
 **파일 패턴:** 공급자가 받는 파일 첨부 파일 패턴을 지정합니다. 여기에는 특정 확장명(&amp;ast;.dat, &amp;ast;.xml), 특정 이름(데이터) 또는 복합 표현식이 이름 및 확장명(&amp;ast;)에 있는 파일이 포함됩니다.[dD][aA]&#39;port&#39;).
 

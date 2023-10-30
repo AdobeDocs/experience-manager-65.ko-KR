@@ -1,14 +1,14 @@
 ---
 title: 엔드포인트 유형
-description: 다양한 유형의 엔드포인트에 대해 알아봅니다.
+description: 다양한 유형의 엔드포인트에 대해 알아봅니다. 이메일, 감시 폴더 등과 같은 다양한 유형의 엔드포인트를 서비스에 추가할 수 있습니다.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---

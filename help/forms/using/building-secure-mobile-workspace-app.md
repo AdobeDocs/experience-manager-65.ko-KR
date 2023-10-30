@@ -1,17 +1,15 @@
 ---
 title: iOS용 보안 AEM Forms 앱 구축
-seo-title: Building a secure AEM Forms app for iOS
-description: 보안 AEM Forms 앱을 빌드하는 단계입니다.
-seo-description: Steps to build a secure AEM Forms app.
+description: Xcode 프로젝트를 보관하여 iOS용 보안 AEM Forms 앱을 빌드하는 방법에 대해 알아봅니다. 이렇게 하면 설치 관리자(.ipa 파일) 및 속성 목록(.plist 파일) 파일이 만들어집니다.
 uuid: 6c4b160f-4d0c-4976-9609-9196795b6c8e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 exl-id: 12cc2027-ae94-40c3-a7d1-553469426114
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -28,13 +26,13 @@ ht-degree: 0%
 1. 앱용 iOS 애플리케이션의 번들 식별자를 구성하려면 **[!UICONTROL 앱 ID 구성]**.
 1. 웹 페이지 하단에서 **[!UICONTROL 데이터 보호 활성화]**. 데이터 보호 옵션을 지정합니다.
 
-   클릭 **[!UICONTROL 완료]**.
+   **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 1. 프로비저닝->배포 로 이동한 다음 3단계에서 구성한 앱 ID를 사용하여 새 프로필을 만듭니다.
 1. 프로비저닝 프로필을 다운로드하여 Xcode 및 iPad에 추가합니다.
 1. Xcode가 있고 iOS SDK가 설치 및 구성된 Mac 컴퓨터에 로그인합니다.
 1. 를 엽니다. `AEM Forms.xcodeproj` xcode의 프로젝트입니다.
-1. 클릭 **[!UICONTROL AEM Forms]**, 아래 **[!UICONTROL TARGET]**, 선택 **[!UICONTROL AEM Forms]**. 다음 항목 선택 **[!UICONTROL 빌드 설정]** 탭에서 다음을 찾습니다. **[!UICONTROL 코드 서명 권한]** 섹션을 참조하고 권한 드롭다운에서 **[!UICONTROL LC 엔터프라이즈]** 옵션을 선택합니다.
+1. 클릭 **[!UICONTROL AEM Forms]**, 아래 **[!UICONTROL 타겟]**, 선택 **[!UICONTROL AEM Forms]**. 다음 항목 선택 **[!UICONTROL 빌드 설정]** 탭에서 다음을 찾습니다. **[!UICONTROL 코드 서명 권한]** 섹션을 참조하고 권한 드롭다운에서 **[!UICONTROL LC 엔터프라이즈]** 옵션을 선택합니다.
 1. 을(를) 찾아 엽니다. `LC Enterprise.entitlements` 편집할 Xcode의 파일입니다. 아래 **XCode 권한**&#x200B;를 클릭하고 프로비저닝 프로필에 있는 것과 동일한 키-값 쌍을 추가합니다.
 1. 다음에서 **[!UICONTROL 빌드 설정]** 탭을 클릭하고 **[!UICONTROL 모두]** 그런 다음 을 클릭합니다. **[!UICONTROL 결합]**.
 1. 다음에서 **[!UICONTROL 설정]** 목록, 확장 **[!UICONTROL 코드 서명]**.

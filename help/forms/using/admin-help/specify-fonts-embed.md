@@ -1,8 +1,6 @@
 ---
 title: 포함할 글꼴 지정
-seo-title: Specify fonts to embed
-description: 포함할 글꼴을 지정하는 방법을 알아봅니다.
-seo-description: Learn how to specify fonts to embed.
+description: 적응형 양식에 포함할 글꼴을 지정하는 방법을 알아봅니다. Forms 서비스에서 생성하는 양식에 포함할 글꼴과 포함하지 않을 글꼴을 지정할 수 있습니다.
 uuid: 02da5c00-0467-4633-a076-c36725cbfbad
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 180f0448-d507-4b6d-bb8a-d12a434e1250
 exl-id: 02c28b2c-0cab-4431-9fab-fa332c96e092
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---

@@ -27,9 +27,9 @@ Edge Delivery를 활용하여 다음과 같은 작업을 수행할 수 있습니
 
 Edge Delivery는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. 앞에서 언급한 바와 같이 [AEM 작성](/help/sites-authoring/author.md)과 [문서 기반 작성](https://www.hlx.live/docs/authoring)을 모두 사용할 수 있습니다.
 
-예를 들어, Microsoft Word 또는 Google Docs에서 바로 콘텐츠를 사용할 수 있습니다. 즉, 해당 소스의 문서가 웹 사이트의 페이지가 될 수 있습니다. 또한 제목, 목록, 이미지, 글꼴 요소는 모두 초기 소스에서 웹 사이트로 전송할 수 있습니다. 새 콘텐츠는 리빌드 프로세스 없이 즉시 추가될 예정입니다.
+예를 들어 Microsoft Word 또는 Google Docs에서 바로 콘텐츠를 사용할 수 있습니다. 즉, 해당 소스의 문서가 웹 사이트의 페이지가 될 수 있습니다. 또한 제목, 목록, 이미지, 글꼴 요소는 모두 초기 소스에서 웹 사이트로 전송할 수 있습니다. 새 콘텐츠는 리빌드 프로세스 없이 즉시 추가될 예정입니다.
 
-Edge Delivery는 GitHub를 활용하므로 고객은 GitHub 저장소에서 바로 코드를 관리 및 배포할 수 있습니다. 예를 들어, Google Docs 또는 Microsoft Word에서 콘텐츠를 작성할 수 있고, GitHub의 CSS 및 JavaScript를 사용하여 사이트 기능을 개발할 수 있습니다. 준비가 되면 Sidekick 브라우저 확장 기능을 사용하여 콘텐츠 업데이트를 미리 보고 게시할 수 있습니다.
+Edge Delivery는 GitHub를 활용하므로 고객은 GitHub 저장소에서 바로 코드를 관리 및 배포할 수 있습니다. 예를 들어 Google Docs 또는 Microsoft Word에서 콘텐츠를 작성할 수 있고, GitHub의 CSS 및 JavaScript를 사용하여 사이트 기능을 개발할 수 있습니다. 준비가 되면 Sidekick 브라우저 확장 기능을 사용하여 콘텐츠 업데이트를 미리 보고 게시할 수 있습니다.
 
 추가 참조:
 

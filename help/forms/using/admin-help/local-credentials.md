@@ -1,14 +1,14 @@
 ---
 title: 로컬 자격 증명 관리
-description: 로컬 자격 증명을 관리하는 방법을 알아봅니다.
+description: Trust Store Management를 사용하여 로컬 자격 증명을 관리하는 방법을 알아봅니다. AEM forms는 표준 PKCS12 양식에서 RSA 및 DSA 자격 증명을 지원합니다.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---

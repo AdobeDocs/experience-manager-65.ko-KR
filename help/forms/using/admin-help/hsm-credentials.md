@@ -1,14 +1,14 @@
 ---
 title: HSM 자격 증명 관리
-description: HSM 자격 증명을 관리하는 방법을 알아봅니다.
+description: HSM 자격 증명을 관리하는 방법을 알아봅니다. Trust Store 관리 페이지에서 HSM을 관리할 수 있습니다. HSM 구성 요소를 보고, 확인하고, 업데이트하고, 재설정하고, 삭제할 수 있습니다.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---

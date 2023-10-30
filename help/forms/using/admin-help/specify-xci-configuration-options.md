@@ -1,14 +1,14 @@
 ---
 title: XCI 구성 옵션 지정
-description: XCI 구성 옵션을 지정하는 방법을 알아봅니다.
+description: XCI 구성 옵션을 지정하는 방법을 알아봅니다. 적응형 양식에 대한 사용자 지정 XCI 파일 값을 지정하여 양식 렌더링 중에 사용할 수 있습니다.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8fbff12a-4923-4151-a758-c1e44dee9160
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '149'
 ht-degree: 1%
 
 ---

@@ -1,8 +1,7 @@
 ---
 title: 상태 모니터 성능 미세 조정
 seo-title: Fine-tuning Health Monitor performance
-description: 상태 모니터 성능을 미세 조정하는 방법 알아보기
-seo-description: Learn how to fine-tune Health Monitor performance
+description: 상태 모니터 성능을 미세 조정하는 방법을 알아봅니다. JAVA 설정 옵션을 사용하여 양식 환경의 성능에 영향을 주는 시스템 통계를 제어합니다.
 uuid: 770b10cb-065f-41b5-9594-a291e4311151
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '422'
 ht-degree: 1%
 
 ---
@@ -26,7 +25,7 @@ ht-degree: 1%
   <tr>
    <th><p>속성</p></th>
    <th><p>용도</p></th>
-   <th><p>기본값</p></th>
+   <th><p>기본 값</p></th>
   </tr>
  </thead>
  <tbody>

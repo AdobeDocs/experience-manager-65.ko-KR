@@ -1,8 +1,6 @@
 ---
 title: 대체 글꼴 구성
-seo-title: Configuring fallback fonts
-description: 대체 글꼴을 구성하는 방법을 알아봅니다.
-seo-description: Learn how to configure fallback fonts.
+description: AEM Forms용 대체 글꼴을 구성하는 방법을 알아봅니다. FontManagerResources.properties 파일을 사용하여 기본 글꼴을 대체 글꼴에 수동으로 매핑할 수 있습니다.
 uuid: 2745541c-8c6d-4bb4-aa14-ec19afd6bc35
 contentOwner: admin
 content-type: reference
@@ -11,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 feature: PDF Generator
 exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
