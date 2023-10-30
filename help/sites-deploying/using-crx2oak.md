@@ -1,19 +1,15 @@
 ---
 title: CRX2Oak 마이그레이션 도구 사용
-seo-title: Using the CRX2Oak Migration Tool
-description: AEM에서 CRX2Oak 마이그레이션 도구를 사용하는 방법을 알아봅니다.
-seo-description: Learn how to use the CRX2Oak migration tool.
-uuid: 9b788981-4ef0-446e-81f0-c327cdd3214b
+description: Adobe Experience Manager과 함께 CRX2Oak 마이그레이션 도구를 사용하는 방법을 알아봅니다. 이 도구는 다른 저장소 간에 데이터를 마이그레이션하는 데 도움이 되도록 설계되었습니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: ee1134be6ad81cc6638ee9004f7dad475a6cc67d
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
@@ -31,7 +27,7 @@ Apache Jackrabbit 2를 기반으로 하는 이전 CQ 버전에서 Oak로 데이�
 
 >[!NOTE]
 >
->Apache Oak 및 AEM 지속성의 주요 개념에 대한 자세한 내용은 을 참조하십시오. [AEM 플랫폼 소개](/help/sites-deploying/platform.md).
+>Apache Oak 및 AEM(Adobe Experience Manager) 지속성의 주요 개념에 대한 자세한 내용은 다음을 참조하십시오. [AEM 플랫폼 소개](/help/sites-deploying/platform.md).
 
 ## 마이그레이션 사용 사례 {#migration-use-cases}
 
@@ -53,15 +49,15 @@ CRX2Oak는 사용자가 지속성 모드의 재구성을 자동화하는 사전 
 
 추가 맞춤화가 필요한 경우 별도로 실행할 수도 있습니다. 그러나 이 모드에서는 저장소만 변경되며 AEM의 추가 재구성은 수동으로 수행해야 합니다. 이를 독립형 모드라고 합니다.
 
-또한 독립 실행형 모드의 기본 설정을 사용하면 노드 저장소만 마이그레이션되고 새 저장소는 이전 바이너리 저장소를 다시 사용하게 됩니다.
+또한 독립 실행형 모드의 기본 설정을 사용하면 노드 저장소만 마이그레이션되고 새 저장소가 이전 바이너리 저장소를 재사용한다는 점을 주의해야 합니다.
 
 ### 자동 빠른 시작 모드 {#automated-quickstart-mode}
 
 AEM 6.3부터 CRX2Oak는 이미 사용 가능한 모든 마이그레이션 옵션으로 구성할 수 있는 사용자 정의 마이그레이션 프로필을 처리할 수 있습니다. 이를 통해 보다 높은 유연성과 AEM 구성을 자동화할 수 있습니다. 이 기능은 독립형 모드로 도구를 사용하는 경우에는 사용할 수 없습니다.
 
-CRX2Oak를 빠른 시작 모드로 전환하려면 이 운영 체제 환경 변수를 통해 AEM 설치 디렉토리의 crx-quickstart 폴더에 대한 경로를 정의해야 합니다.
+CRX2Oak를 빠른 시작 모드로 전환하려면 이 운영 체제 환경 변수를 사용하여 AEM 설치 디렉토리에 있는 crx-quickstart 폴더의 경로를 정의합니다.
 
-**UNIX 기반 시스템 및 macOS의 경우:**
+**UNIX 기반 시스템 및 macOS의 경우**
 
 ```shell
 export SLING_HOME="/path/to/crx-quickstart"
@@ -79,7 +75,7 @@ SET "SLING_HOME=/path/to/crx-quickstart"
 
 #### 사용자 정의 가능한 업그레이드 논리 {#customizable-upgrade-logic}
 
-사용자 지정 Java 논리 코드는을 사용하여 구현됩니다. `CommitHooks`. 사용자 정의 `RepositoryInitializer` 사용자 지정 값으로 저장소를 초기화하기 위해 클래스를 구현할 수 있습니다.
+사용자 지정 Java™ 논리는 `CommitHooks`. 사용자 정의 `RepositoryInitializer` 클래스를 구현하여 사용자 지정 값으로 저장소를 초기화할 수 있습니다.
 
 #### 메모리 매핑 작업 지원 {#support-for-memory-mapped-operations}
 
@@ -97,7 +93,7 @@ CRX2Oak는 기본적으로 메모리 매핑 작업도 지원합니다. 메모리
 
 #### 경로 병합 {#path-merging}
 
-두 저장소 간에 데이터를 복사해야 하는데 두 인스턴스에 모두 다른 콘텐츠 경로가 있는 경우 `--merge-path` 매개 변수. 그러면 CRX2Oak는 새 노드만 대상 저장소에 복사하고 이전 노드만 제자리에 유지합니다.
+두 저장소 간에 데이터를 복사해야 하는데 두 인스턴스에 모두 다른 콘텐츠 경로가 있는 경우 `--merge-path` 매개 변수. 이 경우 CRX2Oak는 새 노드만 대상 저장소에 복사하고 이전 노드만 제자리에 유지합니다.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -105,7 +101,7 @@ CRX2Oak는 기본적으로 메모리 매핑 작업도 지원합니다. 메모리
 
 기본적으로 AEM은 수정되는 각 노드 또는 페이지의 버전을 만들어 저장소에 저장합니다. 그런 다음 버전을 사용하여 페이지를 이전 상태로 복원할 수 있습니다.
 
-그러나 이러한 버전은 원래 페이지가 삭제되더라도 삭제되지 않습니다. 오랫동안 작동된 저장소를 처리할 때 마이그레이션은 고립된 버전으로 인해 발생하는 많은 중복 데이터를 처리해야 할 수 있습니다.
+그러나 이러한 버전은 원래 페이지가 삭제되더라도 삭제되지 않습니다. 오랫동안 작동된 저장소를 처리할 때 마이그레이션은 고립된 버전으로 인해 발생하는 중복 데이터를 재처리할 수 있습니다.
 
 이러한 유형의 상황에 유용한 기능은 `--copy-versions` 매개 변수. 저장소를 마이그레이션하거나 복사하는 동안 버전 노드를 건너뛰는 데 사용할 수 있습니다.
 
@@ -117,7 +113,7 @@ CRX2Oak는 기본적으로 메모리 매핑 작업도 지원합니다. 메모리
 
 #### 오픈 소스 버전 {#open-source-version}
 
-CRX2Oak의 오픈 소스 버전은 oak-upgrade의 형태로 사용할 수 있습니다. 다음을 제외한 모든 기능을 지원합니다.
+CRX2Oak의 오픈 소스 버전은 oak 업그레이드 형식으로 사용할 수 있습니다. 다음을 제외한 모든 기능을 지원합니다.
 
 * CRX2 지원
 * 마이그레이션 프로필 지원
@@ -136,7 +132,7 @@ CRX2Oak의 오픈 소스 버전은 oak-upgrade의 형태로 사용할 수 있습
 
 * `--src-user:` 소스 RDB의 사용자
 
-* `--user`: 타깃팅된 RDB의 사용자
+* `--user`: 대상 RDB의 사용자
 
 * `--password`: 대상 RDB의 암호입니다.
 
@@ -146,11 +142,11 @@ CRX2Oak의 오픈 소스 버전은 oak-upgrade의 형태로 사용할 수 있습
 * `--fail-on-error`: 소스 저장소에서 노드를 읽을 수 없는 경우 마이그레이션에 실패합니다.
 * `--ldap`: LDAP 사용자를 CQ 5.x 인스턴스에서 Oak 기반 인스턴스로 마이그레이션합니다. 이를 수행하려면 Oak 구성의 ID 공급자 이름을 ldap로 지정해야 합니다. 자세한 내용은 [LDAP 설명서](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` 이 값을 와 함께 사용합니다. `--ldap` 인증에 여러 LDAP 서버를 사용한 CQ 5.x 저장소의 매개 변수입니다. 이를 사용하여 CQ 5.x를 지정할 수 있습니다 `ldap_login.conf` 또는 `jaas.conf` 구성 파일입니다. 형식은 다음과 같습니다. `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` 이 항목을 사용할 때 `--ldap` 인증에 여러 LDAP 서버를 사용한 CQ 5.x 저장소의 매개 변수입니다. 이를 사용하여 CQ 5.x를 지정할 수 있습니다 `ldap_login.conf` 또는 `jaas.conf` 구성 파일입니다. 형식은 다음과 같습니다. `--ldapconfig=path/to/ldap_login.conf`.
 
 ### 버전 저장소 옵션 {#version-store-options}
 
-* `--copy-orphaned-versions`: 분리된 버전 복사를 건너뜁니다. 지원되는 매개 변수는 다음과 같습니다. `true`, `false` 및 `yyyy-mm-dd`. 기본값은 입니다. `true`.
+* `--copy-orphaned-versions`: 분리된 버전 복사를 건너뜁니다. 지원되는 매개 변수는 다음과 같습니다. `true`, `false`, 및 `yyyy-mm-dd`. 기본값은 입니다. `true`.
 
 * `--copy-versions:` 버전 저장소를 복사합니다. 매개 변수: `true`, `false`, `yyyy-mm-dd`. 기본값은 입니다. `true`.
 
@@ -186,7 +182,7 @@ CRX2Oak의 오픈 소스 버전은 oak-upgrade의 형태로 사용할 수 있습
 
 ## 디버깅 {#debugging}
 
-또한 마이그레이션 프로세스 중에 나타날 수 있는 문제를 해결하기 위해 마이그레이션 프로세스에 대한 디버그 정보를 활성화할 수도 있습니다. 다음에서 도구를 실행하려는 모드에 따라 이 작업을 다르게 수행할 수 있습니다.
+마이그레이션 프로세스에 대한 디버그 정보를 사용하여 프로세스 중에 나타날 수 있는 문제를 해결할 수도 있습니다. 다음에서 도구를 실행하려는 모드에 따라 이 작업을 다르게 수행할 수 있습니다.
 
 <table>
  <tbody>
@@ -196,11 +192,11 @@ CRX2Oak의 오픈 소스 버전은 oak-upgrade의 형태로 사용할 수 있습
   </tr>
   <tr>
    <td>빠른 시작 모드</td>
-   <td>다음을 추가할 수 있습니다. <strong>—로그 수준 TRACE</strong> 또는 <strong>—로그 수준 디버그 </strong>crx2Oak를 실행할 때 명령줄에 대한 옵션입니다. 이 모드에서는 로그가 자동으로 로 리디렉션됩니다. <strong>upgrade.log 파일</strong>.</td>
+   <td>다음을 추가할 수 있습니다. <strong>—로그 수준 TRACE</strong> 또는 <strong>—로그 수준 디버그 </strong>crx2Oak를 실행할 때 명령줄에 대한 옵션입니다. 이 모드에서 로그는 자동으로 로 리디렉션됩니다. <strong>upgrade.log 파일</strong>.</td>
   </tr>
   <tr>
    <td>독립형 모드</td>
-   <td><p>추가 <strong>- 추적</strong> 표준 출력에서 TRACE 이벤트를 표시하도록 CRX2Oak 명령줄 옵션. 나중에 검사하려면 리디렉션 문자 '&gt;' 또는 'tee' 명령을 사용하여 직접 로그를 리디렉션해야 합니다.</p> </td>
+   <td><p>추가 <strong>- 추적</strong> 표준 출력에 TRACE 이벤트를 표시할 수 있도록 CRX2Oak 명령줄 옵션. 나중에 검사하려면 리디렉션 문자 '&gt;' 또는 'tee' 명령을 사용하여 직접 로그를 리디렉션해야 합니다.</p> </td>
   </tr>
  </tbody>
 </table>
