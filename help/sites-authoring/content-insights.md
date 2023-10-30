@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 245d501d4124d9aaa3f2b12bdb06a5bdd1661e8c
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '530'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Content Insight 페이지에는 Adobe SiteCatalyst, Adobe Target, Adobe Social �
    * 페이지에서 보낸 평균 시간
    * 소스
 
-* Target: 페이지에 오퍼가 포함된 캠페인 활동에 대해 보고합니다.
+* 타겟: 페이지에 오퍼가 포함된 캠페인 활동에 대한 보고서입니다.
 * BrightEdge: 검색 엔진에 대한 페이지의 가시성을 개선하는 페이지 기능에 대해 보고하며 구현해야 하는 기능을 권장합니다.
 
 다음을 참조하십시오 [페이지용 Analytics 및 Recommendations 열기](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
@@ -43,6 +43,10 @@ Content Insight 페이지에는 Adobe SiteCatalyst, Adobe Target, Adobe Social �
 ## 보고 기간
 
 보고서는 사용자가 제어하는 기간 동안의 데이터를 보여 줍니다. 보고 기간을 조정하면 보고서가 해당 기간의 데이터로 자동으로 새로 고쳐집니다. 시각적 큐는 페이지 버전이 변경되는 시간을 나타내므로 각 버전의 성능을 비교할 수 있습니다.
+
+>[!NOTE]
+>
+>콘텐츠 인사이트 대시보드의 타임라인이 다음 위치에 있습니다. `GMT`.
 
 보고된 데이터의 세부 기간(예: 일별, 주별, 월별 또는 연간 데이터)을 지정할 수도 있습니다.
 
