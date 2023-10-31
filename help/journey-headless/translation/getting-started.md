@@ -2,10 +2,10 @@
 title: AEM Headless 번역 시작하기
 description: Headless 콘텐츠를 구성하는 방법 및 AEM의 번역 도구의 작동 방식에 대해 알아봅니다.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 947b17a82f704a244e7fdc710cfa9df50c64f46b
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '1495'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -180,7 +180,7 @@ Headless 번역 여정의 한 부분을 완료했으므로,
 * AEM이 Headless 콘텐츠를 저장하는 방법을 이해할 수 있습니다.
 * AEM의 번역 도구에 익숙해질 수 있습니다.
 
-이 지식을 기반으로 다음 문서인 [번역 커넥터 구성](configure-connector.md)을 검토하여 AEM Headless 번역 여정을 계속하십시오. 여기에서는 AEM을 번역 서비스에 연결하는 방법에 대해 알아보게 됩니다.
+이 지식을 기반으로 다음 문서를 검토하여 AEM Headless 번역 여정을 계속하십시오 [번역 통합 구성](configure-connector.md) 여기에서 AEM을 번역 서비스에 연결하는 방법을 배울 수 있습니다.|
 
 ## 추가 리소스 {#additional-resources}
 

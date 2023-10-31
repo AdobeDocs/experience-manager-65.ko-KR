@@ -2,7 +2,7 @@
 title: 콘텐츠 번역
 description: 번역 커넥터 및 규칙을 사용하여 Headless 콘텐츠를 번역합니다.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 82%
@@ -11,7 +11,7 @@ ht-degree: 82%
 
 # 콘텐츠 번역 {#translate-content}
 
-번역 커넥터 및 규칙을 사용하여 Headless 콘텐츠를 번역합니다.
+번역 통합 및 규칙을 사용하여 Headless 콘텐츠를 번역할 수 있습니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
