@@ -2,10 +2,10 @@
 title: 비동기 작업
 description: Adobe Experience Manager은 리소스 집약적인 일부 작업을 비동기식으로 완료하여 성능을 최적화합니다.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 96%
+source-wordcount: '800'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,6 @@ ht-degree: 96%
 * 여러 참조가 있는 많은 자산 또는 자산 이동
 * 자산 메타데이터의 일괄 내보내기/가져오기
 * 원격 Experience Manager 배포에서 임계값을 초과하는 자산 가져오기
-* 페이지 이동
 * Live Copy 롤아웃
 
 **전역 탐색** -> **도구** -> **작업** -> **작업**&#x200B;의 **[!UICONTROL 비동기 작업 상태]** 대시보드에서 비동기 작업 상태를 볼 수 있습니다.
@@ -113,19 +112,6 @@ AEM에 대한 자산, 페이지 또는 참조의 임계값 수를 구성하여 �
 1. **[!UICONTROL 자산/참조 임계값 수]** 상자에서 이동 작업의 비동기 처리를 위한 자산/폴더 또는 참조의 임계값 수를 지정합니다.
 
    ![자산 이동 임계값](assets/async-move-threshold.png)
-
-1. 이 작업 상태에 대한 이메일 알림을 수신하려면 **이메일 알림 활성화** 옵션을 선택합니다. 예를 들어, 성공, 실패 입니다.
-1. 변경 사항을 저장합니다.
-
-### 비동기 페이지 이동 작업 구성 {#configuring-asynchronous-page-move-operations}
-
-이동할 페이지에 대한 참조 수가 임계값 수를 초과하는 경우 이동 작업이 비동기식으로 수행됩니다.
-
-1. 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 클릭합니다.
-1. 웹 콘솔에서 **[!UICONTROL 비동기 페이지 이동 작업 처리 구성]**&#x200B;을 엽니다.
-1. **[!UICONTROL 참조 임계값 수]** 필드에서 페이지 이동 작업의 비동기 처리를 위한 참조 임계값 수를 지정합니다.
-
-   ![페이지 이동 임계값](assets/async-page-move.png)
 
 1. 이 작업 상태에 대한 이메일 알림을 수신하려면 **이메일 알림 활성화** 옵션을 선택합니다. 예를 들어, 성공, 실패 입니다.
 1. 변경 사항을 저장합니다.
