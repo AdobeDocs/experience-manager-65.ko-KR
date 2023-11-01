@@ -57,10 +57,9 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 
    * 또는 을 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음으로 이동 *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉터리 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일.
 
-   >>
-   [!NOTE]
-   >>
-   사용 **ConfigurationManager.bat** 파일은 .lax 파일의 이름을 수동으로 업데이트하지 않도록 도와줍니다.
+   >[!NOTE]
+   >
+   >사용 **ConfigurationManager.bat** 파일은 .lax 파일의 이름을 수동으로 업데이트하지 않도록 도와줍니다.
    >
 
 1. **[Unix 기반 전용]:**
