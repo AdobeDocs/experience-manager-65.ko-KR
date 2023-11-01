@@ -1,16 +1,14 @@
 ---
 title: Adobe Experience Manager 6.5에서 Dynamic Media 저장소 재구성
-description: Dynamic Media용 Experience Manager 6.5에서 새 저장소 구조로 마이그레이션하기 위해 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
-uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
+description: Dynamic Media용 Experience Manager 6.5에서 새 저장소 구조로 마이그레이션하는 데 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 4%
 
 ---
@@ -93,7 +91,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>최신 모델에 맞게 아래 마이그레이션 스크립트를 실행할 수 있습니다.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
+   <td><p>아래 마이그레이션 스크립트를 실행하여 최신 모델에 맞출 수 있습니다.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>

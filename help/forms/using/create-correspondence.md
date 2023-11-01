@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3853'
 ht-degree: 0%
 
 ---
@@ -171,15 +171,13 @@ ht-degree: 0%
    * **텍스트** 텍스트 모듈에 포함된 비어 있는 고유한 자리 표시자 변수와 데이터 사전 요소의 합계를 표시합니다.
    * **조건** 조건에 포함된 고유한 채워지지 않은 조건 변수와 결과 모듈에 포함된 변수의 합계를 표시합니다.
    * **목록** 목록에 할당된 모듈에 포함된 비어 있는 모든 변수의 합계를 표시합니다.
-   * **Target 영역** 대상 영역에 할당된 모듈에 포함된 비어 있는 모든 변수의 합계를 표시합니다.
+   * **대상 영역** 대상 영역에 할당된 모듈에 포함된 비어 있는 모든 변수의 합계를 표시합니다.
 
    기본값이 있는 변수와 관련하여 다음 사항에 유의하십시오.
 
    * 부울 변수 필드의 기본값은 입니다 *false*. 그러나 변수는 채워지지 않은 것으로 간주됩니다. 이는 변수 카운트에 값이 있는 모든 부울 변수 필드가 포함되어 있음을 의미합니다 *false*.
 
    * 숫자 변수 필드의 기본값은 입니다. *0(영)*. 그러나 변수는 채워지지 않은 것으로 간주됩니다. 이는 변수 카운트에 값이 있는 모든 숫자 변수 필드가 포함되어 있음을 의미합니다 *0(영)*.
-
-
 
 #### 응답 콘텐츠 만들기 탭에서 사용할 수 있는 작업 및 정보 {#actions-and-info-available-in-the-create-correspondence-content-tab}
 
@@ -293,7 +291,7 @@ ht-degree: 0%
 
 편지를 게시하거나 게시 인스턴스에 초안을 저장하기 전에 작성자 및 게시 인스턴스에서 다음 단계를 수행하여 초안으로 저장 기능을 활성화합니다.
 
-다음 *cq:lastReplicationAction*, *cq:lastreplicated* 및 *cq:lastReplicatedBy* 속성은 기본적으로 게시 인스턴스로 이월되지 않습니다. 이월하기 위하여 *cq:lastReplicationAction*, *cq:lastreplicated* 및 *cq:lastReplicatedBy* 게시 인스턴스에 대한 속성을 설정합니다. [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] 구성 요소. 구성 요소를 비활성화하려면 다음을 수행하십시오.
+다음 *cq:lastReplicationAction*, *cq:lastreplicated* 및 *cq:lastReplicatedBy* 속성은 기본적으로 게시 인스턴스로 이월되지 않습니다. 이월하다 *cq:lastReplicationAction*, *cq:lastreplicated* 및 *cq:lastReplicatedBy* 게시 인스턴스에 대한 속성을 설정합니다. [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] 구성 요소. 구성 요소를 비활성화하려면 다음을 수행하십시오.
 
 1. 작성자 인스턴스에서 Adobe Experience Manager 웹 콘솔 구성 요소 콘솔을 엽니다. 기본 URL은 `http://author-server:port/system/console/components`
 

@@ -5,10 +5,10 @@ breadcrumb-title: AEM 설명서 여정
 user-guide-description: 설명서 여정은 모범 사례 방식으로 비즈니스 목표를 해결하기 위해 복잡하고 다양한 기능을 결합하여 AEM 설명서 내에 서술적 구조를 제공합니다. AEM 초보자용으로 설계된 여정은 A에서 Z까지 목표를 달성하기 위한 개념과 기능을 소개합니다.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 0b8b517607f305ad82caf6ba766cad5a46021439
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 53%
+source-wordcount: '527'
+ht-degree: 48%
 
 ---
 
@@ -25,7 +25,7 @@ Please note that all links to other guides need to be absolute references with l
 + Headless 여정 {#headless}
    + [헤드리스 여정 홈](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/home.html)
    + Headless 개발자 여정 {#developer}
-      + [AEM Headless 이해](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
+      + [AEM의 Headless 이해](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
       + [CMS Headless 개발에 대해 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)
       + [AEM Headless as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/getting-started.html)
       + [AEM Headless를 사용한 첫 번째 경험으로의 경로](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/path-to-first-experience.html)
@@ -34,7 +34,7 @@ Please note that all links to other guides need to be absolute references with l
       + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
       + [결합 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/put-it-all-together.html)
       + [Headless 애플리케이션 실행 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
-      + [선택 사항 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
+      + [옵션 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
    + Headless 번역 여정 {#translation}
       + [AEM에서의 Headless 번역 이해](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/overview.html)
       + [AEM Headless 번역 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/getting-started.html)

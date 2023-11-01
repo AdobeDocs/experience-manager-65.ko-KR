@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3333'
+source-wordcount: '3329'
 ht-degree: 3%
 
 ---
@@ -355,7 +355,7 @@ Adobe은 스테이징 인스턴스에서 디자인 임포터를 사용하는 것
 
 >[!NOTE]
 >
->기본적으로 가져오기 페이지는 캠페인에서만 만들 수 있지만, 아래에 랜딩 페이지를 만들기 위해 이 템플릿을 오버레이할 수도 있습니다. `/content/mysite`.
+>기본적으로 가져오기 페이지는 캠페인에서만 만들 수 있지만 이 템플릿을 오버레이하여 아래에 랜딩 페이지를 만들 수도 있습니다. `/content/mysite`.
 
 새 랜딩 페이지를 만들려면 다음 작업을 수행하십시오.
 

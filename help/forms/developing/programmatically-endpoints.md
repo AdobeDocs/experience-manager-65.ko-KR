@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '10805'
+source-wordcount: '10801'
 ht-degree: 1%
 
 ---
@@ -465,7 +465,7 @@ AEM Forms Java API를 사용하여 감시 폴더 엔드포인트 추가:
 
 ### 감시 폴더 구성 값 상수 파일 {#watched-folder-configuration-values-constant-file}
 
-다음 [QuickStart: Java API를 사용하여 감시 폴더 엔드포인트 추가](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) 는 빠른 시작을 컴파일하기 위해 Java 프로젝트의 일부여야 하는 상수 파일을 사용합니다. 이 상수 파일은 감시 폴더 끝점을 추가할 때 설정해야 하는 구성 값을 나타냅니다. 다음 Java 코드는 상수 파일을 나타냅니다.
+다음 [QuickStart: Java API를 사용하여 감시 폴더 엔드포인트 추가](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) 는 Java 프로젝트의 일부여야 하는 상수 파일을 사용하여 빠른 시작을 컴파일합니다. 이 상수 파일은 감시 폴더 끝점을 추가할 때 설정해야 하는 구성 값을 나타냅니다. 다음 Java 코드는 상수 파일을 나타냅니다.
 
 ```java
  /**
@@ -710,7 +710,7 @@ Java API를 사용하여 이메일 엔드포인트 추가:
 
 ### 이메일 구성 값 상수 파일 {#email-configuration-values-constant-file}
 
-다음 [빠른 시작: Java API를 사용하여 이메일 엔드포인트 추가](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) 는 빠른 시작을 컴파일하기 위해 Java 프로젝트의 일부여야 하는 상수 파일을 사용합니다. 이 상수 파일은 이메일 엔드포인트를 추가할 때 설정해야 하는 구성 값을 나타냅니다. 다음 Java 코드는 상수 파일을 나타냅니다.
+다음 [빠른 시작: Java API를 사용하여 이메일 엔드포인트 추가](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) 는 Java 프로젝트의 일부여야 하는 상수 파일을 사용하여 빠른 시작을 컴파일합니다. 이 상수 파일은 이메일 엔드포인트를 추가할 때 설정해야 하는 구성 값을 나타냅니다. 다음 Java 코드는 상수 파일을 나타냅니다.
 
 ```java
  /**
@@ -951,8 +951,8 @@ Java API를 사용하여 TaskManager 끝점 추가:
 
       * 범주의 식별자 값을 지정하는 문자열 값
       * 범주에 대한 설명을 지정하는 문자열 값
-   * 를 호출하여 범주를 만듭니다. `EndpointRegistryClient` 개체 `createEndpointCategory` 메서드 및 전달 `CreateEndpointCategoryInfo` 개체. 이 메서드는 `EndpointCategory` 새 카테고리를 나타내는 개체입니다.
 
+   * 를 호출하여 범주를 만듭니다. `EndpointRegistryClient` 개체 `createEndpointCategory` 메서드 및 전달 `CreateEndpointCategoryInfo` 개체. 이 메서드는 `EndpointCategory` 새 카테고리를 나타내는 개체입니다.
 
 1. TaskManager 끝점 특성을 설정합니다.
 
@@ -1071,8 +1071,8 @@ Java API를 사용하여 끝점을 수정합니다.
 
       * 구성 값의 이름을 지정하는 문자열 값입니다. 예를 들어, `url` 구성 값, 지정 `url`.
       * 구성 값의 값을 지정하는 문자열 값입니다. 에 대한 값을 정의하려면 `url` 구성 값에서 감시 폴더 위치를 지정합니다.
-   * 호출 `EndpointRegistryClient` 개체 `modifyEndpoint` 메서드 및 전달 `ModifyEndpointInfo` 개체.
 
+   * 호출 `EndpointRegistryClient` 개체 `modifyEndpoint` 메서드 및 전달 `ModifyEndpointInfo` 개체.
 
 **추가 참조**
 

@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1395'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Experience Manager에서 D
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | 노드가 Dynamic Media에 연결되어 있다는 일반 표시기. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **게시 완료** 또는 오류 텍스트 | Dynamic Media에 대한 에셋 업로드 상태입니다. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Dynamic Media의 원격 자산에 대한 URL을 생성하려면 를 채워야 합니다. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Dynamic Media의 원격 자산에 대한 URL을 생성하려면 채워야 합니다. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **성공** 또는 **실패:`<error text>`** | 에셋에 대한 세트(스핀 세트, 이미지 세트 등), 이미지 사전 설정, 뷰어 사전 설정, 이미지 맵 업데이트 또는 편집된 이미지의 동기화 상태입니다. |
 
 ### 동기화 로깅 {#synchronization-logging}

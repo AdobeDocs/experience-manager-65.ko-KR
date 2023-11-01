@@ -11,9 +11,9 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4730'
+source-wordcount: '4726'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 회전 배너를 만들거나 편집하려면 그룹화하십시오. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
+>관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
 
 ## 빠른 시작: 회전 배너 {#quick-start-carousel-banners}
 
@@ -90,8 +90,8 @@ ht-degree: 2%
    * [웹 사이트 페이지에 회전 배너 추가](#adding-a-carousel-banner-to-your-website-page) 웹 사이트 페이지에 복사한 회전 배너 URL 또는 포함 코드를 추가할 수 있습니다.
 
       * [캐러셀 배너를 기존 빠른 보기와 통합](#integrating-the-carousel-banner-with-an-existing-quickview). 서드파티 웹 컨텐츠 관리 시스템을 사용하는 경우 웹 사이트에서 새 캐러셀 배너를 기존 빠른 보기 구현과 통합해야 합니다.
-   * [Experience Manager에서 웹 사이트에 캐러셀 배너 추가](/help/assets/adding-dynamic-media-assets-to-pages.md) Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 사용하여 Experience Manager의 페이지에 직접 회전 메뉴 세트를 추가할 수 있습니다.
 
+   * [Experience Manager에서 웹 사이트에 캐러셀 배너 추가](/help/assets/adding-dynamic-media-assets-to-pages.md) Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 사용하여 Experience Manager의 페이지에 직접 회전 메뉴 세트를 추가할 수 있습니다.
 
 회전 메뉴 세트를 편집하려면 다음을 참조하십시오. [회전 메뉴 세트 편집](#editing-carousel-sets). 또한 보고 편집할 수 있습니다 [회전 메뉴 세트 속성](manage-assets.md#editing-properties).
 
@@ -199,6 +199,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
    * 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 슬라이드 추가]** 아이콘.
 
    * 페이지 가운데 근처에서 을 선택합니다. **[!UICONTROL 자산 선택기를 열려면 탭하십시오.]**.
+
    회전 메뉴 세트에 포함할 자산을 선택하려면 를 선택합니다. Selected assets have a checkmark icon over them. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 선택]**.
 
    With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. 필터를 선택한 다음 **[!UICONTROL 필터]** 아이콘을 클릭합니다. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
@@ -212,6 +213,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
    * 이미지를 삭제하려면 이미지를 선택한 다음 를 선택합니다 **[!UICONTROL 슬라이드 삭제]** 을 클릭합니다.
 
    * 페이지의 오른쪽 상단 모서리 근처에서 사전 설정을 적용하려면 사전 설정 드롭다운 목록을 선택한 다음 세트에 적용할 사전 설정을 한 번에 선택합니다.
+
    슬라이드를 삭제하려면 슬라이드를 선택한 다음 도구 모음에서 를 선택합니다 **[!UICONTROL 슬라이드 삭제]**. 슬라이드를 이동하려면 순서 변경 아이콘을 선택하고 누른 채로 원하는 위치로 이동합니다.
 
 1. 슬라이드에 이미지를 추가한 후 이미지에 핫스팟, 이미지 맵 또는 두 가지 모두를 추가할 수 있습니다. 다음을 참조하십시오 [이미지 배너에 핫스팟 또는 이미지 맵 추가](#adding-hotspots-or-image-maps-to-an-image-banner).
@@ -226,7 +228,6 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
    >    * 단추 스타일입니다. 사용자는 각 점 또는 숫자를 탭하여 배너를 통해 회전할 수 있습니다. 설정된 표시기 단추가 나타나는 위치(숫자 또는 점선 스타일인 경우)와 표시 단추 크기를 변경할 수 있습니다.
    >    * 이미지 맵의 강조 표시 스타일 또는 핫스팟에 사용되는 아이콘을 변경합니다.
    >    * 뷰어 사전 설정을 편집하기 전에 사전 설정을 기반으로 할 스타일을 선택합니다. 스타일을 선택하지 않은 경우 뷰어 사전 설정 편집을 시작할 때 다른 사전 설정으로 변경하기로 결정하면 모든 변경 내용이 손실됩니다.
-
    >
    >다음을 참조하십시오 [회전 배너에 대한 특수 고려 사항](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) 뷰어 편집기에 대한 자세한 지침 및 추가 정보입니다.
 
@@ -257,9 +258,11 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 >[!NOTE]
 >
 >이미지에 핫스팟을 추가하는 경우 [대화형 이미지](/help/assets/interactive-images.md) 캐러셀 배너인 경우 핫스팟 정보는 동일한 메타데이터 위치에 저장됩니다. 이 위치는 대화형 이미지인지 아니면 회전 배너인지에 관계없이 이미지의 위치를 기준으로 합니다. 이 기능은 정의된 핫스팟 데이터와 함께 동일한 이미지를 두 뷰어에서 쉽게 재사용할 수 있음을 의미합니다.
+>
 그러나 회전 배너는 핫스팟을 포함할 수도 있는 이미지에 대한 이미지 맵을 지원하지만 대화형 이미지는 지원하지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려면 이 규칙을 염두에 두십시오. 동일한 이미지의 별도의 사본을 대신 사용하여 대화형 이미지 및 회전 배너를 만드는 것이 좋습니다.
 
 >[!NOTE]
+>
 핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르는 경우 핫스팟이 제거됩니다.
 
 참조: [이미지 맵 추가](/help/assets/image-maps.md).
@@ -292,11 +295,13 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
          * (선택 사항) Quickview 내에 제품을 추가로 식별하는 데 사용해야 하는 다른 변수가 있는 경우 다음을 선택합니다. **[!UICONTROL 일반 변수 추가]**. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어 category=Mens는 추가된 변수입니다.
 
          * 다음을 참조하십시오 [선택기를 사용한 작업](/help/assets/working-with-selectors.md) 추가 정보.
+
    * 선택 **[!UICONTROL 하이퍼링크]**.
 
       * Experience Manager Sites 고객의 경우 사이트 선택기 아이콘(폴더)을 선택하여 URL로 이동합니다.
-         >[!NOTE]
-         대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+        >[!NOTE]
+        >
+        대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 
       * 독립형 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지에 대한 전체 URL 경로를 지정합니다.
 
@@ -311,9 +316,12 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
       * 배너에 표시되는 경험 조각의 너비와 높이를 지정합니다.
 
-         >[!NOTE]
-         뷰어를 경험 조각에 포함할 때 회전 배너의 소셜 미디어 공유 도구가 지원되지 않습니다.
-         이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 만듭니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+        >[!NOTE]
+        >
+        뷰어를 경험 조각에 포함할 때 회전 배너의 소셜 미디어 공유 도구가 지원되지 않습니다.
+        >
+        이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 만듭니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    회전 배너가 표시되는 방식을 미리 볼 수도 있습니다. 다음을 참조하십시오 [(선택 사항) 회전 배너 미리 보기](#optional-previewing-carousel-banners).
@@ -328,7 +336,8 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 ## 회전 메뉴 세트 편집 {#editing-carousel-sets}
 
 >[!NOTE]
-관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 회전 배너를 만들거나 편집하려면 그룹화하십시오. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
+>
+관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
 
 회전판 세트에 대해 다음과 같은 다양한 편집 작업을 수행할 수 있습니다.
 
@@ -360,7 +369,10 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
    * 전체 회전식 세트를 삭제하려면 회전식 세트로 이동하여 선택한 다음 를 선택합니다 **[!UICONTROL 삭제]**.
 
    >[!NOTE]
+   >
    핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르는 경우 핫스팟이 제거됩니다.
+   >
+   >
 
 ## (선택 사항) 회전 배너 미리 보기 {#optional-previewing-carousel-banners}
 
@@ -387,7 +399,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 **뷰어 목록에서 회전 배너를 미리 보려면 다음을 수행하십시오.**
 
 1. 위치 **[!UICONTROL 에셋]**&#x200B;를 클릭하고 생성한 기존 회전 배너로 이동한 다음 를 선택하여 엽니다.
-1. 미리보기 페이지의 왼쪽 상단 모서리 근처에서 컨텐츠 아이콘을 선택합니다.
+1. 미리 보기 페이지의 왼쪽 상단 모서리 근처에서 컨텐츠 아이콘을 선택합니다.
 1. 다음에서 **[!UICONTROL 뷰어]** 페이지 왼쪽에 있는 패널에서 사용할 캐러셀 배너 뷰어 사전 설정의 이름을 선택합니다.
 1. 연결된 작업을 테스트할 수 있도록 이미지에서 핫스팟 또는 이미지 맵을 선택합니다.
 
@@ -396,7 +408,9 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 사용할 수 있도록 회전 메뉴를 게시합니다. 회전 메뉴 세트를 게시하면 URL 및 포함 코드가 활성화됩니다. 또한 확장 가능하고 성능이 뛰어난 전송을 위해 CDN과 통합된 Dynamic Media 클라우드에 캐러셀을 게시합니다.
 
 >[!NOTE]
+>
 회전 배너에 핫스팟이 있는 기존 대화형 이미지를 사용하는 경우 회전 배너를 게시한 후 대화형 이미지를 별도로 게시해야 합니다.
+>
 또한, 캐러셀 배너에 사용 중인 기존의 게시된 대화형 이미지를 수정하는 경우, 해당 변경 사항이 캐러셀 배너에 반영되기 전에 대화형 이미지를 게시해야 합니다.
 
 다음을 참조하십시오 [Dynamic Media Assets 게시](/help/assets/publishing-dynamicmedia-assets.md) 회전 배너를 게시하는 방법에 대한 정보입니다.
@@ -406,6 +420,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 캐러셀을 만들기 위해 배너 이미지를 업로드하고, 배너에 핫스팟 및/또는 이미지 맵을 추가하고, 캐러셀 세트를 게시하면 이제 기존 웹 사이트 페이지에 추가할 준비가 된 것입니다.
 
 >[!NOTE]
+>
 Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 회전식 배너를 페이지에 바로 추가할 수 있습니다. 다음을 참조하십시오 [페이지에 Dynamic Media 에셋 추가](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 그러나 독립형 Experience Manager 에셋 고객의 경우 이 섹션에 설명된 대로 웹 사이트 랜딩 페이지에 슬라이드 배너를 수동으로 추가할 수 있습니다.
@@ -419,6 +434,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 ## 캐러셀 배너를 기존 빠른 보기와 통합 {#integrating-the-carousel-banner-with-an-existing-quickview}
 
 >[!NOTE]
+>
 이 단계는 독립형 Experience Manager Assets 고객인 경우에만 적용됩니다.
 
 이 프로세스의 마지막 단계는 웹 사이트의 기존 빠른 보기 구현과 회전 배너를 통합하는 것입니다. 모든 Quickview 구현은 고유하며 프론트엔드 IT 직원의 지원을 포함하는 특정 접근 방식이 필요합니다.

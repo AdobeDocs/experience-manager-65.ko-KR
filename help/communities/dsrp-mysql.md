@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '726'
 ht-degree: 1%
 
 ---
@@ -33,8 +33,8 @@ MySQL은 UGC(사용자 생성 컨텐츠)를 저장하는 데 사용할 수 있�
    * [MySQL 서버](https://dev.mysql.com/downloads/mysql/) Community Server 버전 5.6 이상
 
       * AEM과 동일한 호스트에서 실행되거나 원격으로 실행될 수 있음
-   * [MySQL 워크벤치](https://dev.mysql.com/downloads/tools/workbench/)
 
+   * [MySQL 워크벤치](https://dev.mysql.com/downloads/tools/workbench/)
 
 ## MySQL 설치 {#installing-mysql}
 
@@ -49,7 +49,7 @@ SQL은 대/소문자를 구분하지 않으므로 대/소문자를 구분하는 
 * 파일 편집 `/etc/my.cnf`
 * 다음에서 `[mysqld]` 섹션에 다음 줄을 추가합니다.
 
-   `lower_case_table_names = 1`
+  `lower_case_table_names = 1`
 
 ### UTF8 문자 세트 {#utf-character-set}
 
@@ -64,11 +64,11 @@ MySQL 데이터베이스를 기본값으로 UTF8로 변경합니다.
 * 파일 편집 `/etc/my.cnf`
 * 다음에서 `[client]` 섹션에 다음 줄을 추가합니다.
 
-   `default-character-set=utf8`
+  `default-character-set=utf8`
 
 * 다음에서 `[mysqld]` 섹션에 다음 줄을 추가합니다.
 
-   `character-set-server=utf8`
+  `character-set-server=utf8`
 
 ## MySQL Workbench 설치 {#installing-mysql-workbench}
 
@@ -109,7 +109,7 @@ MySQL Workbench를 처음 시작할 때 다른 용도로 이미 사용하고 있
 
 ## 데이터베이스 설정 {#database-setup}
 
-데이터베이스를 설치하려면 Communities 연결을 엽니다.
+Communities 연결을 열어 데이터베이스를 설치합니다.
 
 ![설치 데이터베이스](assets/install-database.png)
 
@@ -179,24 +179,24 @@ MySQL이 AEM과 다른 서버에서 실행되는 경우 JDBC 커넥터에서 &#3
 * 를 찾습니다. `Day Commons JDBC Connections Pool`
 * 다음 항목 선택 `+` 새 연결 구성을 만드는 아이콘입니다.
 
-   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
+  ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 
 * 다음 값을 입력합니다.
 
    * **[!UICONTROL JDBC 드라이버 클래스]**: `com.mysql.jdbc.Driver`
    * **[!UICONTROL JDBC 연결 URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      MySQL 서버가 &#39;this&#39; AEM 서버와 같지 않은 경우 localhost 대신 서버를 지정하십시오. *커뮤니티* 는 기본 데이터베이스(스키마) 이름입니다.
+     MySQL 서버가 &#39;this&#39; AEM 서버와 같지 않은 경우 localhost 대신 서버를 지정하십시오. *커뮤니티* 는 기본 데이터베이스(스키마) 이름입니다.
 
    * **[!UICONTROL 사용자 이름]**: `root`
 
-      또는 &#39;루트&#39;가 아닌 경우 MySQL 서버에 대해 구성된 사용자 이름을 입력합니다.
+     또는 &#39;루트&#39;가 아닌 경우 MySQL 서버에 대해 구성된 사용자 이름을 입력합니다.
 
    * **[!UICONTROL 암호]**:
 
-      MySQL에 대해 설정된 암호가 없으면 이 필드를 지웁니다.
+     MySQL에 대해 설정된 암호가 없으면 이 필드를 지웁니다.
 
-      또는 MySQL 사용자 이름에 대해 구성된 암호를 입력합니다.
+     또는 MySQL 사용자 이름에 대해 구성된 암호를 입력합니다.
 
    * **[!UICONTROL 데이터 소스 이름]**: 다음에 대해 입력한 이름: [MySQL 연결](#new-connection-settings), &#39;communities&#39; 등의 형식으로 프로필 스크립트에서 참조할 수 있습니다.
 

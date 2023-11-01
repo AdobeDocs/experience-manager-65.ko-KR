@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: f841e3886771fb00eee6e476d7111d4a335a9d51
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '254'
 ht-degree: 5%
 
 ---
@@ -39,10 +39,10 @@ Apache Sling Referrer Filter 외에도 Adobe은 이러한 유형의 공격으로
 
 >[!NOTE]
 >
->필요한 사항도 만들어야 합니다 [디스패처 구성 변경 사항](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html) CSRF 보호 프레임워크를 사용하기 위해
+>필요한 사항도 만들어야 합니다 [디스패처 구성 변경 사항](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html) CSRF 보호 프레임워크를 사용합니다.
 
 >[!NOTE]
 >
->웹 응용 프로그램에서 매니페스트 캐시를 사용하는 경우 &quot;**&amp;ast;**&#x200B;토큰이 CSRF 토큰 생성 호출을 오프라인으로 전환하지 않도록 하기 위해 매니페스트에 로 &quot;를 추가합니다. 자세한 내용은 다음을 참조하십시오. [링크](https://www.w3.org/TR/offline-webapps/).
+>웹 응용 프로그램에서 매니페스트 캐시를 사용하는 경우 &quot;**&amp;ast;**&#x200B;토큰이 CSRF 토큰 생성 호출을 오프라인으로 전환하지 않도록 매니페스트에 &quot;를 추가합니다. 자세한 내용은 다음을 참조하십시오. [링크](https://www.w3.org/TR/offline-webapps/).
 >
 >CSRF 공격 및 이를 완화하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [사이트 간 요청 위조 OWASP 페이지](https://owasp.org/www-community/attacks/csrf).

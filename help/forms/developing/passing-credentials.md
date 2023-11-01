@@ -2,9 +2,9 @@
 title: WS-security 헤더를 사용하여 자격 증명 전달
 description: WS-security 헤더를 사용하여 자격 증명을 전달하는 방법 알아보기
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -39,4 +39,3 @@ JEE의 AEM Forms에 WS-Security 헤더를 전달하는 방법은 Axis 생성 Jav
 >[!MORELIKETHIS]
 >
 >* [WS-Security 헤더를 사용하여 자격 증명 전달](assets/passing-credentials-using-ws-security-headers.pdf)
-

@@ -1,18 +1,14 @@
 ---
 title: AEM 6.5의 일반적인 저장소 재구성
-seo-title: Common Repository Restructuring in AEM 6.5
-description: AEM 6.5에서 AEM의 모든 영역에 공통적인 새 저장소 구조로 마이그레이션하기 위해 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 that are common for all areas of AEM.
-uuid: a4bb64e5-387b-4084-9258-54e68db12f3b
+description: AEM 6.5에서 AEM의 모든 영역에 공통적인 새 저장소 구조로 마이그레이션하는 데 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2691'
+source-wordcount: '2689'
 ht-degree: 2%
 
 ---
@@ -32,7 +28,7 @@ ht-degree: 2%
 **향후 업그레이드 전**
 
 * [ContextHub 구성](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#contexthub-configurations)
-* [클래식 Cloud Services 디자인](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
+* [클래식 Cloud Service 디자인](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
 * [클래식 대시보드 디자인](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-dashboards-designs)
 * [클래식 보고서 디자인](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-reports-designs)
 * [기본 디자인](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#default-designs)
@@ -48,7 +44,7 @@ ht-degree: 2%
 * [번역 규칙](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules)
 * [번역 위젯 클라이언트 라이브러리](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-widget-client-library)
 * [트리 활성화 웹 콘솔](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tree-activation-web-console)
-* [공급업체 번역 커넥터 Cloud Services](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
+* [공급업체 번역 커넥터 Cloud Service](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
 * [워크플로우 알림 이메일 템플릿](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
 ## 6.5 업그레이드 포함 {#with-upgrade}
@@ -240,7 +236,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
  </tbody>
 </table>
 
-### 클래식 Cloud Services 디자인 {#classic-cloud-services-designs}
+### 클래식 Cloud Service 디자인 {#classic-cloud-services-designs}
 
 <table style="table-layout:auto">
  <tbody>
@@ -607,33 +603,33 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>모든 새 번역 Cloud Services은 새 위치( )로 마이그레이션해야 합니다.<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>).</p>
+   <td><p>모든 새 번역 Cloud Service은 새 위치( )로 마이그레이션해야 합니다.<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>).</p>
     <ol>
      <li>이전 위치의 기존 구성을 새 위치로 마이그레이션합니다.
       <ul>
-       <li>다음 AEM 제작 UI를 통해 새 번역 Cloud Services 구성을 수동으로 다시 만들기 <strong>도구 &gt; Cloud Services &gt; 번역 Cloud Services</strong>.<br /> 또는 </li>
-       <li>이전 위치에서 새 위치로 새 번역 Cloud Services 구성 복사(<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>).</li>
+       <li>다음 AEM 제작 UI를 통해 새 번역 Cloud Service 구성을 수동으로 다시 만들기 <strong>도구 &gt; Cloud Service &gt; 번역 Cloud Service</strong>.<br /> 또는 </li>
+       <li>이전 위치에서 새 위치로 새 번역 Cloud Service 구성 복사(<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>해당 AEM 구성을 AEM 콘텐츠 계층과 연결합니다.
       <ol>
        <li>를 통한 AEM Sites 페이지 계층 <strong>AEM Sites &gt; 페이지 &gt; 페이지 속성 &gt; 고급 탭 &gt; 클라우드 구성</strong>.</li>
-       <li>를 통한 AEM 경험 조각 계층 <strong>AEM Experience Fragments &gt; 경험 조각 &gt; 속성 &gt; Cloud Services 탭 &gt; 클라우드 구성</strong>.</li>
-       <li>를 통한 AEM 경험 조각 폴더 계층 <strong>AEM Experience Fragments &gt; 폴더 &gt; 속성 &gt; Cloud Services 탭 &gt; 클라우드 구성</strong>.<br /> </li>
-       <li>를 통한 AEM Assets 폴더 계층 구조 <strong>AEM Assets &gt; 폴더 &gt; 폴더 속성 &gt; Cloud Services 탭 &gt; 구성</strong>.</li>
+       <li>를 통한 AEM 경험 조각 계층 <strong>AEM Experience Fragments &gt; 경험 조각 &gt; 속성 &gt; Cloud Service 탭 &gt; 클라우드 구성</strong>.</li>
+       <li>를 통한 AEM 경험 조각 폴더 계층 <strong>AEM Experience Fragments &gt; 폴더 &gt; 속성 &gt; Cloud Service 탭 &gt; 클라우드 구성</strong>.<br /> </li>
+       <li>를 통한 AEM Assets 폴더 계층 구조 <strong>AEM Assets &gt; 폴더 &gt; 폴더 속성 &gt; Cloud Service 탭 &gt; 구성</strong>.</li>
        <li>를 통한 AEM 프로젝트 <strong>AEM 프로젝트 &gt; 프로젝트 &gt; 프로젝트 속성 &gt; 고급 탭 &gt; 클라우드 구성</strong>.</li>
       </ol> </li>
-     <li>위의 AEM 콘텐츠 계층에서 마이그레이션된 기존 번역 Cloud Services의 연결을 해제합니다.</li>
+     <li>위의 AEM 콘텐츠 계층에서 마이그레이션된 기존 번역 Cloud Service의 연결을 해제합니다.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td><p>번역 Cloud Services 해결은 다음 순서로 수행됩니다.</p>
+   <td><p>번역 Cloud Service 해결은 다음 순서로 수행됩니다.</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/conf/global/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/apps/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/libs/settings/cloudconfigs/translations/translationcfg</code></li>
-    </ol> <p>마이그레이션된 번역 Cloud Services은 AEM 6.4와 호환되어야 합니다.</p> </td>
+    </ol> <p>마이그레이션된 번역 Cloud Service은 AEM 6.4와 호환되어야 합니다.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -749,7 +745,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 {style="table-layout:auto"}
 
-### 공급업체 번역 커넥터 Cloud Services {#vendor-translation-connector-cloud-services}
+### 공급업체 번역 커넥터 Cloud Service {#vendor-translation-connector-cloud-services}
 
 <table style="table-layout:auto">
  <tbody>
@@ -765,27 +761,27 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>모든 새 공급업체 번역 커넥터 Cloud Services을 새 위치( )로 마이그레이션해야 합니다.<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>).</p>
+   <td><p>모든 새 공급업체 번역 커넥터 Cloud Service을 새 위치( )로 마이그레이션해야 합니다.<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>).</p>
     <ol>
      <li>이전 위치의 기존 구성을 새 위치로 마이그레이션합니다.
       <ul>
-       <li>를 통해 순-새로운 공급업체 번역 커넥터 Cloud Services 구성을 수동으로 만듭니다. <strong>도구 &gt; Cloud Services &gt; 번역 Cloud Services에서 AEM 제작 UI</strong>.<br /> 또는 </li>
-       <li>새 공급업체 번역 커넥터 Cloud Services 구성을 이전 위치에서 새 위치로 복사합니다(<code>/apps</code>, <code>/conf/global </code>또는 <code>/conf/&lt;tenant&gt;</code>).</li>
+       <li>를 통해 순-새로운 공급업체 번역 커넥터 Cloud Service 구성을 수동으로 만듭니다. <strong>도구 &gt; Cloud Service &gt; 번역 Cloud Service에서 AEM 제작 UI</strong>.<br /> 또는 </li>
+       <li>새 공급업체 번역 커넥터 Cloud Service 구성을 이전 위치에서 새 위치로 복사합니다(<code>/apps</code>, <code>/conf/global </code>또는 <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>해당 AEM 구성을 AEM 콘텐츠 계층과 연결합니다.
       <ol>
        <li>를 통한 AEM Sites 페이지 계층 <strong>AEM Sites &gt; 페이지 &gt; 페이지 속성 &gt; 고급 탭 &gt; 클라우드 구성</strong>.</li>
-       <li>를 통한 AEM 경험 조각 계층 <strong>AEM Experience Fragments &gt; 경험 조각 &gt; 속성 &gt; Cloud Services 탭 &gt; 클라우드 구성</strong>.</li>
-       <li>를 통한 AEM 경험 조각 폴더 계층 <strong>AEM Experience Fragments &gt; 폴더 &gt; 속성 &gt; Cloud Services 탭 &gt; 클라우드 구성</strong>.</li>
-       <li>를 통한 AEM Assets 폴더 계층 구조 <strong>AEM Assets &gt; 폴더 &gt; 폴더 속성 &gt; Cloud Services 탭 &gt; 구성</strong>.</li>
+       <li>를 통한 AEM 경험 조각 계층 <strong>AEM Experience Fragments &gt; 경험 조각 &gt; 속성 &gt; Cloud Service 탭 &gt; 클라우드 구성</strong>.</li>
+       <li>를 통한 AEM 경험 조각 폴더 계층 <strong>AEM Experience Fragments &gt; 폴더 &gt; 속성 &gt; Cloud Service 탭 &gt; 클라우드 구성</strong>.</li>
+       <li>를 통한 AEM Assets 폴더 계층 구조 <strong>AEM Assets &gt; 폴더 &gt; 폴더 속성 &gt; Cloud Service 탭 &gt; 구성</strong>.</li>
        <li>를 통한 AEM 프로젝트 <strong>AEM 프로젝트 &gt; 프로젝트 &gt; 프로젝트 속성 &gt; 고급 탭 &gt; 클라우드 구성</strong>.</li>
       </ol> </li>
-     <li>위의 AEM 콘텐츠 계층에서 마이그레이션된 기존 번역 Cloud Services의 연결을 해제합니다.</li>
+     <li>위의 AEM 콘텐츠 계층에서 마이그레이션된 기존 번역 Cloud Service의 연결을 해제합니다.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td><p>번역 Cloud Services 해결은 다음 순서로 수행됩니다.</p>
+   <td><p>번역 Cloud Service 해결은 다음 순서로 수행됩니다.</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li>
      <li><code>/conf/global/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li>

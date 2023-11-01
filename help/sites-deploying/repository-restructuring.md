@@ -11,9 +11,9 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
 exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ AEM 6.5로 업그레이드할 때 /etc 아래의 큰 콘텐츠 하위 세트는 
 
 ### 구조 조정 지침 {#restructuring-guidance}
 
-AEM 6.5로의 업그레이드를 계획하는 동안 작업 노력을 평가하기 위해 다음과 같은 솔루션별 페이지를 참조해야 합니다.
+AEM 6.5로의 업그레이드를 계획하는 동안 다음의 솔루션별 페이지를 참조하여 작업 노력을 평가해야 합니다.
 
 * [모든 AEM 솔루션에 공통되는 저장소 재구성](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
 * [AEM Sites 저장소 재구성](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)

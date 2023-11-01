@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '6100'
+source-wordcount: '6098'
 ht-degree: 1%
 
 ---
@@ -395,7 +395,7 @@ AEM 컨텐츠 포틀릿의 기본 인라인 편집 기능을 사용하지 않지
 
 ### 권한 {#privileges}
 
-포틀릿의 일부 기능은 권한으로 보호됩니다. 이 기능에 액세스하려면 현재 사용자에게 이 권한이 있어야 합니다. 다음과 같은 권한이 미리 정의되어 있습니다.
+포틀릿의 일부 기능은 권한으로 보호됩니다. 현재 사용자가 이 기능에 액세스하려면 이 권한이 있어야 합니다. 다음과 같은 권한이 미리 정의되어 있습니다.
 
 * &quot;toolbar&quot; : 포틀릿에서 도구 모음을 보거나 사용할 수 있는 일반 권한입니다.
 * &quot;prefs&quot; : 사용자에게 이 권한이 있는 경우 포틀릿의 기본 설정을 보거나 변경할 수 있습니다.

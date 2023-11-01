@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2856'
 ht-degree: 2%
 
 ---
@@ -134,7 +134,7 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 속성을 포함
 
 >[!NOTE]
 >
->콘텐츠 및 구성에서 코드를 더 잘 분리하려면 아래에서 클라이언트 라이브러리를 찾는 것이 좋습니다 `/apps` 다음을 통해 노출 `/etc.clientlibs` 을 활용함으로써 `allowProxy` 속성.
+>콘텐츠 및 구성에서 코드를 보다 잘 분리하려면 `/apps` 다음을 통해 노출 `/etc.clientlibs` 을 활용함으로써 `allowProxy` 속성.
 
 클라이언트 라이브러리의 경우 `/apps` 액세스하기 위해 프록시 서블릿 이 사용됩니다. ACL은 여전히 클라이언트 라이브러리 폴더에 적용되지만 서블릿을 통해 콘텐츠를 읽을 수 있습니다. `/etc.clientlibs/` 다음과 같은 경우 `allowProxy` 속성이 로 설정되어 있습니다. `true`.
 

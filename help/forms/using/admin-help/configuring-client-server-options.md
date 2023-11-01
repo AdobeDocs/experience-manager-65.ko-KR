@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '10243'
+source-wordcount: '10239'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,7 @@ Document Security는 정책으로 보호된 문서, 정책, 관리자 및 서버
 
 **제거된 정책:** 게시자는 문서에서 정책을 제거하여 보안 보호를 철회합니다.
 
-**문서 해지 URL 변경:** API 수준의 호출은 해지된 문서를 대체하는 새 문서에 액세스하기 위해 지정된 해지 URL을 변경합니다.
+**문서 해지 URL 변경:** API 수준의 호출은 해지된 문서를 대체하는 새 문서에 액세스하도록 지정된 해지 URL을 변경합니다.
 
 **문서 수정:** 수신자는 정책으로 보호된 문서의 콘텐츠를 변경합니다.
 

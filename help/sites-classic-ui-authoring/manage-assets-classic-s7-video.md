@@ -7,9 +7,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1678'
 ht-degree: 33%
 
 ---
@@ -68,7 +68,7 @@ Dynamic Media Classic 비디오 구성 요소에 대해 다음 형식이 지원�
 
 ### Dynamic Media Classic 비디오와의 통합 구성 {#configuring-integration-with-scene-video}
 
-1. 위치 **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다. **[!UICONTROL Dynamic Media Classic]** 구성 및 선택 **[!UICONTROL 편집]**.
+1. 위치 **[!UICONTROL Cloud Service]**&#x200B;로 이동합니다. **[!UICONTROL Dynamic Media Classic]** 구성 및 선택 **[!UICONTROL 편집]**.
 1. **[!UICONTROL 비디오]** 탭을 선택합니다.
 
    >[!NOTE]
@@ -117,6 +117,7 @@ Dynamic Media Classic 비디오 구성 요소는 Dynamic Media Classic 비디오
 >[!NOTE]
 >
 >곧바로 사용할 수 있는 Dynamic Media Classic 비디오 구성 요소는 범용 비디오 프로필을 사용합니다. 그러나 Experience Manager에서 사용할 HTML5 기반 비디오 플레이어를 가져올 수 있습니다. Dynamic Media Classic에서 기본 제공 HTML5 비디오 플레이어의 포함 코드를 복사하여 Experience Manager 페이지에 넣습니다.
+>
 
 ## Experience Manager 비디오 구성 요소 {#aem-video-component}
 
@@ -126,7 +127,7 @@ Dynamic Media Classic 비디오를 보는 데 Dynamic Media Classic Dynamic Medi
 
 다음 표에서는 Experience Manager 파운데이션 비디오 구성 요소와 Dynamic Media Classic 비디오 구성 요소의 지원되는 기능을 개괄적으로 비교해서 설명합니다.
 
-|  | Experience Manager 파운데이션 비디오 | Dynamic Media Classic 비디오 |
+|   | Experience Manager 파운데이션 비디오 | Dynamic Media Classic 비디오 |
 |---|---|---|
 | 접근 방식 | HTML5 첫 번째 접근 방식. Flash은 비 HTML5 폴백에만 사용됩니다. | 대부분의 데스크탑에서 Flash. HTML5는 모바일 및 태블릿에 사용됩니다. |
 | 제공 | 점진적 | 적응형 스트리밍 |
@@ -165,7 +166,7 @@ Dynamic Media Classic 클라우드 구성에서 선택한 Dynamic Media Classic 
 
 #### 디자인 구성 {#configuring-design}
 
-기본 비디오 구성 요소는 비디오 소스 목록을 빌드하기 위해 사용할 비디오 프로필에 대해 알고 있어야 합니다. 비디오 구성 요소 디자인 대화 상자를 열고 새 비디오 프로필을 사용하도록 구성 요소 디자인을 구성합니다.
+기본 비디오 구성 요소는 비디오 소스 목록을 빌드하는 데 사용할 비디오 프로필에 대해 알고 있어야 합니다. 비디오 구성 요소 디자인 대화 상자를 열고 새 비디오 프로필을 사용하도록 구성 요소 디자인을 구성합니다.
 
 >[!NOTE]
 >

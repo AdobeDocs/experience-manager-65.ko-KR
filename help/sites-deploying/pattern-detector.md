@@ -12,9 +12,9 @@ discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '519'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->패턴 감지기는 로컬 개발 인스턴스를 포함하여 모든 환경에서 실행할 수 있습니다. 그러나 다음을 위해:
+>패턴 감지기는 로컬 개발 인스턴스를 포함하여 모든 환경에서 실행할 수 있습니다. 그러나 다음을 수행합니다.
 >
 >* 탐지율 향상
 >* 비즈니스 크리티컬 인스턴스의 속도 저하 방지

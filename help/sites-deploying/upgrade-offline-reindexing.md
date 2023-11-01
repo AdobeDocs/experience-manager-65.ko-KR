@@ -7,9 +7,9 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1339'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager을 업그레이드할 때 발생하는 주요 문제 중 하나는 바로 내 업그레이드가 수행될 때 작성 환경과 관련된 다운타임입니다. 업그레이드 중에는 콘텐츠 작성자가 환경에 액세스할 수 없습니다. 따라서 업그레이드를 수행하는 데 소요되는 시간을 최소화하는 것이 바람직합니다. 대규모 저장소, 특히 일반적으로 시간당 대규모 데이터 저장소가 있고 높은 수준의 에셋 업로드가 있는 AEM Assets 프로젝트의 경우 Oak 색인을 다시 색인화하는 데 상당한 업그레이드 시간이 소요됩니다.
+Adobe Experience Manager 업그레이드의 주요 문제 중 하나는 바로 내 업그레이드를 수행할 때 작성 환경과 관련된 다운타임입니다. 업그레이드 중에는 콘텐츠 작성자가 환경에 액세스할 수 없습니다. 따라서 업그레이드를 수행하는 데 소요되는 시간을 최소화하는 것이 바람직합니다. 대규모 저장소, 특히 일반적으로 시간당 대규모 데이터 저장소가 있고 높은 수준의 에셋 업로드가 있는 AEM Assets 프로젝트의 경우 Oak 색인을 다시 색인화하는 데 상당한 업그레이드 시간이 소요됩니다.
 
 이 섹션에서는 Oak-run 도구를 사용하여 저장소를 다시 인덱싱하는 방법을 설명합니다 **다음 이전** 업그레이드를 수행함으로써 실제 업그레이드 시 다운타임이 줄어듭니다. 제시된 단계는에 적용할 수 있습니다. [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) 버전 AEM 6.4 이상의 색인입니다.
 
@@ -30,14 +30,14 @@ Adobe Experience Manager을 업그레이드할 때 발생하는 주요 문제 �
 
 ## 접근 방식 {#approach}
 
-![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-process.png)
+![오프라인 리인덱싱 - 업그레이드 - 텍스트 추출](assets/offline-reindexing-upgrade-process.png)
 
 를 사용하여 대상 AEM 버전의 색인 정의에 대해 업그레이드 전에 색인을 만드는 것이 좋습니다. [Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md) 도구. 위의 다이어그램은 오프라인 리인덱싱 접근 방식을 보여 줍니다.
 
 또한 접근 방식에 설명된 대로 단계 순서는 다음과 같습니다.
 
 1. 바이너리의 텍스트가 먼저 추출됩니다.
-2. Target 색인 정의가 만들어집니다.
+2. 대상 색인 정의가 생성됨
 3. 오프라인 색인이 만들어집니다.
 4. 그런 다음 업그레이드 프로세스 중에 인덱스를 가져옵니다
 
@@ -45,7 +45,7 @@ Adobe Experience Manager을 업그레이드할 때 발생하는 주요 문제 �
 
 AEM에서 전체 인덱싱을 활성화하려면 PDF과 같은 바이너리의 텍스트가 추출되어 인덱스에 추가됩니다. 이는 일반적으로 인덱싱 프로세스의 많은 비용이 드는 단계입니다. 텍스트 추출은 많은 수의 바이너리를 저장할 때 자산 저장소를 리인덱싱하는 데 특히 권장되는 최적화 단계입니다.
 
-![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-text-extraction.png)
+![오프라인 리인덱싱 - 업그레이드 - 텍스트 추출](assets/offline-reindexing-upgrade-text-extraction.png)
 
 시스템에 저장된 바이너리의 텍스트는 tika 라이브러리와 함께 oak-run 도구를 사용하여 추출할 수 있습니다. 업그레이드 전에 프로덕션 시스템의 클론을 가져와 이 텍스트 추출 프로세스에 사용할 수 있습니다. 그런 다음 다음 다음 단계를 수행하여 텍스트 저장소를 만듭니다.
 
@@ -101,7 +101,7 @@ java -cp oak-run.jar:tika-app-1.21.jar org.apache.jackrabbit.oak.run.Main tika -
 
 업그레이드 전에 Lucene 인덱스를 오프라인으로 만듭니다. MongoMK를 사용하는 경우 네트워크 오버헤드를 방지하므로 MongoMk 노드 중 하나에서 직접 실행하는 것이 좋습니다.
 
-오프라인으로 색인을 만들려면 아래 단계를 수행하십시오.
+인덱스를 오프라인으로 만들려면 아래 단계를 따르십시오.
 
 **1. 대상 AEM 버전에 대한 Oak Lucene 인덱스 정의 생성**
 

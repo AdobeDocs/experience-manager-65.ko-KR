@@ -2,10 +2,10 @@
 title: AEM Headless 번역 시작하기
 description: Headless 콘텐츠를 구성하는 방법 및 AEM의 번역 도구의 작동 방식에 대해 알아봅니다.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1495'
-ht-degree: 91%
+source-wordcount: '1493'
+ht-degree: 90%
 
 ---
 
@@ -64,7 +64,7 @@ AEM의 콘텐츠는 Headless 페이지 또는 기존 웹 페이지와 상관없�
 
 ## AEM이 Headless 콘텐츠를 저장하는 방법 {#headless-content-in-aem}
 
-번역 전문가의 경우 AEM의 Headless 콘텐츠 관리 방법을 깊이 있게 이해하지 않아도 됩니다. 그러나 기본 개념과 용어를 숙지하면 나중에 AEM의 번역 도구를 사용할 때 도움이 됩니다. 가장 중요한 것은 콘텐츠를 효과적으로 번역하기 위해서는 자신의 콘텐츠와 콘텐츠 구성 방식을 이해해야 한다는 것입니다.
+번역 전문가의 경우 AEM의 Headless 콘텐츠 관리 방법을 깊이 있게 이해하지 않아도 됩니다. 그러나 기본 개념과 용어를 숙지하면 나중에 AEM의 번역 도구를 사용할 때 도움이 됩니다. 가장 중요한 것은 자신의 콘텐츠와 콘텐츠를 효과적으로 번역하기 위해 콘텐츠를 구성하는 방식을 이해해야 한다는 것입니다.
 
 ### 콘텐츠 모델 {#content-models}
 

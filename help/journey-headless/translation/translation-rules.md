@@ -2,10 +2,10 @@
 title: 번역 규칙 구성
 description: 번역 규칙을 정의하여 번역할 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 84%
+source-wordcount: '869'
+ht-degree: 83%
 
 ---
 
@@ -68,7 +68,7 @@ Headless 조각을 나타내는 콘텐츠 조각에는 구조화된 필드로 �
 1. AEM은 구성을 저장합니다.
 1. 방금 만든 컨텍스트를 선택한 다음 **편집**&#x200B;을 탭하거나 클릭해야 합니다. 이렇게 하면 **번역 규칙 편집기**가 열려 속성을 구성할 수 있습니다.
    ![번역 규칙 편집기](assets/translation-rules-editor.png)
-1. 기본적으로 이 경우 상위 경로에서 모든 구성이 상속됩니다`/content/dam`. 추가 필드를 구성에 추가하려면 `/content/dam`**에서**&#x200B;상속 옵션을 선택 취소합니다.
+1. 기본적으로 이 경우 상위 경로에서 모든 구성이 상속됩니다`/content/dam`. 옵션 선택 취소 **상속 대상`/content/dam`** 을 눌러 구성에 필드를 추가합니다.
 1. 선택 취소되면 목록의 **일반** 섹션에서 [이전에 번역 필드로 식별된 콘텐츠 조각 모델의 속성 이름을 추가합니다.](getting-started.md#content-models)
    1. **새 속성** 필드에 속성 이름을 입력합니다.
    1. **번역** 및 **상속** 옵션은 자동으로 선택되어 있습니다.

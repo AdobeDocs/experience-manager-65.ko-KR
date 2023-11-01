@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ AEM 웹 콘솔에서 규칙을 만들어 각 규칙을 구성할 수 있습니�
 
 ## 페이지 감사 로그 삭제 구성 {#configure-page-audit-log-purging}
 
-감사 로그 삭제를 구성하려면 다음 단계를 수행합니다.
+다음 단계에 따라 감사 로그 삭제를 구성합니다.
 
 1. 브라우저를 가리켜서 웹 콘솔 관리자로 이동합니다. `http://localhost:4502/system/console/configMgr/`
 

@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3572'
+source-wordcount: '3570'
 ht-degree: 2%
 
 ---
@@ -186,7 +186,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 
 ![종속성 탭](assets/dependencies.png)
 
-| 필드 | 설명 | 예/세부 사항 |
+| 필드 | 설명 | 예제/세부 정보 |
 |---|---|---|
 | 테스트 대상 | 이 패키지가 타겟팅되거나 호환되는 제품 이름 및 버전입니다. | `6.5` |
 | 해결된 문제 | 이 패키지로 수정된 버그의 세부 사항을 나열할 수 있는 텍스트 필드로, 한 줄에 하나의 버그가 있습니다. | - |
@@ -197,7 +197,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 
 ![고급 설정 탭](assets/advanced-settings.png)
 
-| 필드 | 설명 | 예/세부 사항 |
+| 필드 | 설명 | 예제/세부 정보 |
 |---|---|---|
 | 이름 | 패키지 공급자의 이름 | `WKND Media Group` |
 | URL | 공급자의 URL | `https://wknd.site` |

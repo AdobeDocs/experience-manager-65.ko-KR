@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 38%
+source-wordcount: '2699'
+ht-degree: 40%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 38%
 
 ### 설치된 롤아웃 구성 {#installed-rollout-configurations}
 
-다음 표에는 AEM과 함께 설치된 롤아웃 구성이 나열되어 있습니다. 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다. 설치된 롤아웃 구성 작업이 요구 사항을 충족하지 않는 경우 다음을 수행할 수 있습니다. [새 롤아웃 구성 만들기](#creating-a-rollout-configuration).
+다음 표에는 AEM과 함께 설치된 롤아웃 구성이 나열되어 있습니다. 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다. 설치된 롤아웃 구성 작업이 요구 사항을 충족하지 않을 경우 [새 롤아웃 구성을 만들 수 있습니다](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -127,7 +127,7 @@ ht-degree: 38%
 
 ### 설치된 동기화 작업 {#installed-synchronization-actions}
 
-다음 표에는 AEM과 함께 설치되는 동기화 작업이 나열되어 있습니다. 설치된 작업이 요구 사항을 충족하지 않는 경우 다음을 수행할 수 있습니다 [새 동기화 작업 만들기](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
+다음 표에는 AEM과 함께 설치되는 동기화 작업이 나열되어 있습니다. 설치된 작업이 요구 사항을 충족하지 않는 경우 [새 동기화 작업을 만들 수 있습니다](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
 
 <table>
  <tbody>
@@ -233,7 +233,7 @@ ht-degree: 38%
    <td>productCreateUpdate</td>
    <td>카탈로그 내에서 제품 리소스를 만들거나 업데이트합니다. 이 작업은 다음 상황 중 하나에 사용하기 위한 것입니다.
     <ul>
-     <li>카탈로그 생성 또는 롤아웃(또는 카탈로그 섹션)</li>
+     <li>카탈로그(또는 카탈로그 섹션) 생성 또는 롤아웃</li>
      <li>사용자가 제품 구성 요소에 대한 동기화 상속을 복원합니다.</li>
     </ul> </td>
    <td> </td>
@@ -260,10 +260,10 @@ ht-degree: 38%
 
 다음을 수행할 수 있습니다. [롤아웃 구성 만들기](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) 설치된 롤아웃 구성이 애플리케이션 요구 사항을 충족하지 않는 경우:
 
-* [롤아웃 구성 만들기](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
-* [롤아웃 구성에 동기화 작업 추가](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
+* [롤아웃 구성을 만듭니다](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
+* [롤아웃 구성에 동기화 작업을 추가합니다](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
 
-블루프린트 또는 라이브 카피 페이지에서 롤아웃 구성을 설정할 때 새 롤아웃 구성을 사용할 수 있습니다.
+새 롤아웃 구성을 만들었다면 블루프린트 또는 Live Copy 페이지에서 롤아웃 구성을 설정할 때 사용할 수 있습니다.
 
 ### 동기화에서 속성 및 노드 유형 제외 {#excluding-properties-and-node-types-from-synchronization}
 

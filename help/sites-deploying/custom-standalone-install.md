@@ -6,9 +6,9 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -47,13 +47,13 @@ quickstart jar 파일의 이름을 바꿀 때 따라야 할 다양한 규칙이 
 
 oracle Java 11(또는 일반적으로 Java 8보다 최신 버전)을 실행하는 경우 AEM을 시작할 때 명령줄에 스위치를 추가해야 합니다.
 
-* 다음 - `-add-opens` 에서 관련 리플렉션 액세스 WARNING 메시지를 방지하기 위해 스위치를 추가해야 합니다. `stdout.log`
+* 다음 - `-add-opens` 에서 관련 리플렉션 액세스 경고 메시지를 방지하기 위해 스위치를 추가해야 합니다. `stdout.log`
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* 또한 다음을 사용해야 합니다 `-XX:+UseParallelGC` 잠재적인 성능 문제를 완화하기 위해 전환하십시오.
+* 또한 다음을 사용해야 합니다 `-XX:+UseParallelGC` 잠재적인 성능 문제를 완화하도록 전환하십시오.
 
 다음은 Java 11에서 AEM을 시작할 때 추가 JVM 매개 변수가 어떻게 표시되어야 하는지에 대한 샘플입니다.
 

@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: 66d351e1-87f1-4006-bf8a-3cbbd33db9ed
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1782'
 ht-degree: 1%
 
 ---
@@ -38,9 +38,9 @@ MicroKernel은 AEM 6.2부터 지속성 관리자 역할을 합니다. 필요에 
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
-장점은 다음과 같습니다.
+장점:
 
-* 간단
+* 단순
 * 손쉬운 유지 관리
 * 우수한 성능
 
@@ -57,7 +57,7 @@ MicroKernel은 AEM 6.2부터 지속성 관리자 역할을 합니다. 필요에 
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-장점은 다음과 같습니다.
+장점:
 
 * 단순성
 * 유지 가능성
@@ -90,7 +90,7 @@ AEM Communities의 경우 UGC(사용자 생성 컨텐츠)는 복제되지 않습
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
-장점은 다음과 같습니다.
+장점:
 
 * 공연
 * 읽기 액세스를 위한 확장성
@@ -102,7 +102,7 @@ AEM Communities의 경우 UGC(사용자 생성 컨텐츠)는 복제되지 않습
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 
-장점은 다음과 같습니다.
+장점:
 
 * 새 AEM 작성자 인스턴스를 사용하여 수평 확장 가능
 * 데이터 계층의 고가용성, 이중화 및 자동 페일오버
@@ -117,7 +117,7 @@ AEM Communities의 경우 UGC(사용자 생성 컨텐츠)는 복제되지 않습
 
 ![oakclustermongofailover2datacenters](assets/oakclustermongofailover2datacenters.png)
 
-장점은 다음과 같습니다.
+장점:
 
 * 새 AEM 작성자 인스턴스를 사용하여 수평 확장 가능
 * 데이터 계층의 고가용성, 이중화 및 자동 페일오버(데이터 센터 중단 포함)
@@ -213,7 +213,7 @@ AEM용 MongoMK 배포를 고려하는 경우 사전 요구 사항 및 권장 사
 >
 >MongoDB는 타사 소프트웨어이며 AEM 라이선스 패키지에 포함되어 있지 않습니다. 자세한 내용은 [MongoDB 라이선스 정책](https://www.mongodb.org/about/licensing/) 페이지를 가리키도록 업데이트하는 중입니다.
 >
->AEM Adobe 배포를 최대한 활용하려면 전문적인 지원을 받기 위해 MongoDB Enterprise 버전에 라이선스를 부여하는 것이 좋습니다.
+>AEM Adobe 배포를 최대한 활용하려면 MongoDB Enterprise 버전에 라이센스를 부여하여 전문적인 지원을 받는 것이 좋습니다.
 >
 >라이센스에는 작성자 또는 게시 배포에 사용할 수 있는 하나의 기본 인스턴스와 두 개의 보조 인스턴스로 구성된 표준 복제본 세트가 포함되어 있습니다.
 >

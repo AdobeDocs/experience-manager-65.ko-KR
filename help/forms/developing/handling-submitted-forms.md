@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2902'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ Forms 서비스는 데이터 처리를 완료했는지 여부를 나타내기 �
 * **1(계산):** Forms 서비스에서 데이터에 대한 계산 작업을 수행했으며 결과를 사용자에게 다시 렌더링해야 합니다.
 * **2(유효성 검사):** Forms 서비스에서 양식 데이터의 유효성을 검사했으며 결과를 사용자에게 다시 렌더링해야 합니다.
 * **3(다음):** 현재 페이지가 변경되었으며 클라이언트 애플리케이션에 기록해야 합니다.
-* **4(이전**): 현재 페이지가 변경되었으며 클라이언트 애플리케이션에 기록해야 합니다.
+* **4(이전**): 현재 페이지가 변경되었으며 클라이언트 애플리케이션에 작성해야 합니다.
 
 >[!NOTE]
 >
@@ -222,11 +222,9 @@ Forms API(Java)를 사용하여 제출된 양식을 처리합니다.
       * 다음을 지정하는 문자열 값 `HTTP_USER_AGENT` 헤더 값(예: ). `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`을 따르지 않는 경우입니다. 이 매개 변수 값은 선택 사항입니다.
       * A `RenderOptionsSpec` 런타임 옵션을 저장하는 개체입니다.
 
-      다음 `processFormSubmission` 메서드가 을 반환합니다. `FormsResult` 양식 제출 결과를 포함하는 개체입니다.
+     다음 `processFormSubmission` 메서드가 을 반환합니다. `FormsResult` 양식 제출 결과를 포함하는 개체입니다.
 
    * 다음을 호출하여 Forms 서비스가 양식 데이터 처리를 완료했는지 여부 확인 `FormsResult` 개체 `getAction` 메서드를 사용합니다. 이 메서드가 값을 반환하는 경우 `0`, 데이터를 처리할 준비가 되었습니다.
-
-
 
 1. 양식 제출에 첨부 파일이 포함되어 있는지 확인
 
@@ -247,12 +245,12 @@ Forms API(Java)를 사용하여 제출된 양식을 처리합니다.
       * 만들기 `org.w3c.dom.DocumentBuilder` 를 호출하여 개체 `org.w3c.dom.DocumentBuilderFactory` 개체 `newDocumentBuilder` 메서드를 사용합니다.
       * 만들기 `org.w3c.dom.Document` 를 호출하여 개체 `org.w3c.dom.DocumentBuilder` 개체 `parse` 메서드 및 전달 `java.io.InputStream` 개체.
       * XML 문서 내에서 각 노드의 값을 검색합니다. 이 작업을 수행하는 한 가지 방법은 두 매개 변수를 허용하는 사용자 지정 메서드를 만드는 것입니다. `org.w3c.dom.Document` 객체 및 값을 검색할 노드의 이름입니다. 이 메서드는 노드의 값을 나타내는 문자열 값을 반환합니다. 이 프로세스를 따르는 코드 예제에서 이 사용자 지정 메서드는 이라고 합니다 `getNodeText`. 이 메서드의 본문이 표시됩니다.
+
    * 데이터 콘텐츠 유형이 다음과 같은 경우 `application/pdf`, 애플리케이션 로직을 만들어 제출된 PDF 데이터를 PDF 파일로 저장합니다.
 
       * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 개체 `getOutputContent` 메서드를 사용합니다.
       * 만들기 `java.io.File` public 생성자를 사용하여 개체를 만듭니다. PDF을 파일 이름 확장명으로 지정해야 합니다.
       * 를 호출하여 PDF 파일 채우기 `com.adobe.idp.Document` 개체 `copyToFile` 메서드 및 전달 `java.io.File` 개체.
-
 
 **추가 참조**
 
@@ -302,10 +300,9 @@ Forms API(웹 서비스)를 사용하여 제출된 양식을 처리합니다.
       * 비어 있음 `MyArrayOf_xsd_anyTypeHolder` 메서드에서 채운 개체입니다. 이 매개 변수는 양식과 함께 제출되는 첨부 파일을 저장하는 데 사용됩니다.
       * 비어 있음 `FormsResultHolder` 제출된 양식으로 메서드에 의해 채워지는 개체입니다.
 
-      다음 `processFormSubmission` 메서드는 `FormsResultHolder` 양식 제출 결과가 포함된 매개변수
+     다음 `processFormSubmission` 메서드는 `FormsResultHolder` 양식 제출 결과가 포함된 매개변수
 
    * 다음을 호출하여 Forms 서비스가 양식 데이터 처리를 완료했는지 여부 확인 `FormsResult` 개체 `getAction` 메서드를 사용합니다. 이 메서드가 값을 반환하는 경우 `0`, 양식 데이터를 처리할 준비가 되었습니다. You can get a `FormsResult` 의 값을 가져와서 개체 `FormsResultHolder` 개체 `value` 데이터 구성원입니다.
-
 
 1. 양식 제출에 첨부 파일이 포함되어 있는지 확인
 
@@ -322,6 +319,7 @@ Forms API(웹 서비스)를 사용하여 제출된 양식을 처리합니다.
       * 만들기 `org.w3c.dom.DocumentBuilder` 를 호출하여 개체 `org.w3c.dom.DocumentBuilderFactory` 개체 `newDocumentBuilder` 메서드를 사용합니다.
       * 만들기 `org.w3c.dom.Document` 를 호출하여 개체 `org.w3c.dom.DocumentBuilder` 개체 `parse` 메서드 및 전달 `java.io.InputStream` 개체.
       * XML 문서 내에서 각 노드의 값을 검색합니다. 이 작업을 수행하는 한 가지 방법은 두 매개 변수를 허용하는 사용자 지정 메서드를 만드는 것입니다. `org.w3c.dom.Document` 객체 및 값을 검색할 노드의 이름입니다. 이 메서드는 노드의 값을 나타내는 문자열 값을 반환합니다. 이 프로세스를 따르는 코드 예제에서 이 사용자 지정 메서드는 이라고 합니다 `getNodeText`. 이 메서드의 본문이 표시됩니다.
+
    * 데이터 콘텐츠 유형이 다음과 같은 경우 `application/pdf`, 애플리케이션 로직을 만들어 제출된 PDF 데이터를 PDF 파일로 저장합니다.
 
       * 만들기 `BLOB` 를 호출하여 개체 `FormsResult` 개체 `getOutputContent` 메서드를 사용합니다.
@@ -329,7 +327,6 @@ Forms API(웹 서비스)를 사용하여 제출된 양식을 처리합니다.
       * 만들기 `java.io.File` public 생성자를 사용하여 개체를 만듭니다. PDF을 파일 이름 확장명으로 지정해야 합니다.
       * 만들기 `java.io.FileOutputStream` 개체를 생성자를 사용하고 `java.io.File` 개체.
       * 를 호출하여 PDF 파일 채우기 `java.io.FileOutputStream` 개체 `write` 메서드 및 바이트 배열 전달.
-
 
 **추가 참조**
 

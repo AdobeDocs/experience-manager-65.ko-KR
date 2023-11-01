@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1872'
 ht-degree: 0%
 
 ---
@@ -397,4 +397,4 @@ AEM Forms이 배포된 J2EE 응용 프로그램 서버에 WAR 파일을 배포�
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
-   라디오 단추를 선택하고 [제출] 단추를 클릭합니다. 조각을 기반으로 하는 양식이 웹 브라우저에 나타납니다. 문제가 발생하면 J2EE 애플리케이션 서버의 로그 파일을 참조하십시오.
+  라디오 단추를 선택하고 [제출] 단추를 클릭합니다. 조각을 기반으로 하는 양식이 웹 브라우저에 나타납니다. 문제가 발생하면 J2EE 애플리케이션 서버의 로그 파일을 참조하십시오.

@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 6fa3679429527e026313b22d953267503598d1a9
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,6 @@ AEM은 와 함께 제공됩니다 [SAML](https://saml.xml.org/saml-specification
 >* ID 공급자 POST URL 또는 IDP URL.
 >* 서비스 공급자 엔티티 ID.
 >
-
 
 >[!NOTE]
 >
@@ -133,7 +132,7 @@ SAML 어설션에 서명하고 선택적으로 암호화할 수 있습니다. �
 
 ## SAML에 대한 로거 구성 {#configure-a-logger-for-saml}
 
-SAML을 잘못 구성하여 발생할 수 있는 모든 문제를 디버깅하기 위해 로거를 설정할 수 있습니다. 다음을 통해 이 작업을 수행할 수 있습니다.
+SAML을 잘못 구성하여 발생할 수 있는 모든 문제를 디버깅하도록 로거를 설정할 수 있습니다. 다음을 통해 이 작업을 수행할 수 있습니다.
 
 1. 웹 콘솔로 이동 *http://localhost:4502/system/console/configMgr*
 1. 라는 항목을 검색하고 클릭합니다. **Apache Sling 로깅 로거 구성**

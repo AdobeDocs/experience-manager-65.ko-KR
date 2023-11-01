@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 12%
+source-wordcount: '985'
+ht-degree: 23%
 
 ---
 
@@ -47,18 +47,18 @@ ht-degree: 12%
 
    ![마법사의 속성 단계](assets/create-project-wizard-properties.png)
 
-1. **만들기**&#x200B;를 탭/클릭합니다. 새 프로젝트를 열지 또는 콘솔로 돌아갈지 묻는 메시지가 표시됩니다.
+1. **만들기**&#x200B;를 탭/클릭합니다. 새 프로젝트를 열거나 콘솔로 돌아갈 것인지를 묻는 확인 메시지가 표시됩니다.
 
 프로젝트를 만드는 절차는 모든 프로젝트 템플릿에 대해 동일합니다. 프로젝트 유형 간의 차이는 사용 가능한 것과 관련이 있습니다 [사용자 역할](/help/sites-authoring/projects.md) 및 [워크플로.](/help/sites-authoring/projects-with-workflows.md)
 
 ### 리소스를 프로젝트와 연결 {#associating-resources-with-your-project}
 
-프로젝트를 사용하면 리소스를 전체적으로 관리하기 위해 하나의 엔티티로 그룹화할 수 있습니다. 따라서 리소스를 프로젝트에 연결해야 합니다. 이러한 리소스는 프로젝트 내에서 다음과 같이 그룹화됩니다. **타일**. 추가할 수 있는 리소스 유형이에 설명되어 있습니다 [프로젝트 타일](/help/sites-authoring/projects.md#project-tiles).
+프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화하여 리소스를 전체적으로 관리할 수 있습니다. 따라서 리소스를 프로젝트에 연결해야 합니다. 이러한 리소스는 프로젝트 내에서 다음과 같이 그룹화됩니다. **타일**. 추가할 수 있는 리소스 유형은 [프로젝트 타일](/help/sites-authoring/projects.md#project-tiles)에 설명되어 있습니다.
 
 리소스를 프로젝트와 연결하려면 다음 작업을 수행하십시오.
 
-1. 에서 프로젝트를 엽니다. **프로젝트** 콘솔.
-1. 탭/클릭 **타일 추가** 프로젝트에 연결할 타일을 선택합니다. 여러 유형의 타일을 선택할 수 있습니다.
+1. **프로젝트** 콘솔에서 프로젝트를 엽니다.
+1. **타일 추가**&#x200B;를 탭/클릭하고 프로젝트에 연결할 타일을 선택합니다. 여러 유형의 타일을 선택할 수 있습니다.
 
    ![타일 추가](assets/project-add-tile.png)
 
@@ -76,7 +76,7 @@ ht-degree: 12%
 
    ![타일 V자형 화살표](assets/project-tile-create-task.png)
 
-1. 새 타일을 만들 때처럼 타일에 항목을 추가합니다. 프로젝트 타일에 대해 설명합니다. [여기.](/help/sites-authoring/projects.md#project-tiles)
+1. 새 타일을 만들 때처럼 타일에 항목을 추가합니다. 프로젝트 타일은 [여기](/help/sites-authoring/projects.md#project-tiles)에 설명됩니다.
 
 ## 프로젝트 정보 보기 {#viewing-project-info}
 
@@ -84,7 +84,7 @@ ht-degree: 12%
 
 ### 타일 열기 {#opening-a-tile}
 
-현재 타일에 포함된 항목을 보거나 타일의 항목을 수정하거나 삭제할 수 있습니다.
+현재 타일에 포함된 항목을 보거나 타일의 항목을 수정 또는 삭제할 수 있습니다.
 
 항목을 보거나 수정할 수 있도록 타일을 열려면 다음 작업을 수행하십시오.
 
@@ -98,7 +98,7 @@ ht-degree: 12%
 
 ### 프로젝트 타임라인 보기 {#viewing-a-project-timeline}
 
-프로젝트 타임라인에서는 프로젝트의 에셋이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 다음 단계를 따르십시오.
+프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 다음 단계를 따르십시오.
 
 1. 다음에서 **프로젝트** 콘솔, 클릭 또는 탭 **타임라인** 을 클릭합니다.
    ![타임라인 모드 선택](assets/projects-timeline-rail.png)

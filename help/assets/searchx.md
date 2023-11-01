@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '823'
 ht-degree: 19%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 19%
 
    >[!NOTE]
    >
-   >두 번째 항목을 만들 때 `siteadminsearchpanel`, 다음을 설정하십시오. `id` 속성을 사용하십시오.
+   >두 번째 항목을 만들 때 `siteadminsearchpanel`, 다음을 설정하십시오. `id` 속성을 사용하여 양식 충돌을 방지합니다.
 
 ## 사용자 지정 술어 만들기 {#creating-custom-predicates}
 

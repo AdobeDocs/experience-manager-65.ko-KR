@@ -3,9 +3,9 @@ title: Application Server 설치 업그레이드 단계
 description: 애플리케이션 서버를 통해 배포된 AEM의 인스턴스를 업그레이드하는 방법에 대해 알아봅니다.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -78,16 +78,16 @@ ht-degree: 0%
 
    * 다음 줄을에 추가합니다. `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
-      `customBlobStore=true`
+     `customBlobStore=true`
 
    * 그런 다음 다음 다음 줄을 추가합니다. `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
-      ```
-      path=./crx-quickstart/repository/datastore
-      minRecordLength=4096
-      ```
+     ```
+     path=./crx-quickstart/repository/datastore
+     minRecordLength=4096
+     ```
 
-1. 이제 AEM 6.5 war 파일에서 실행 모드를 변경해야 합니다. 그러기 위해서는 먼저 AEM 6.5 전쟁을 저장할 임시 폴더를 만듭니다. 이 예제의 폴더 이름은 다음과 같습니다 `temp`. war 파일이 복사되면 임시 폴더 내에서 를 실행하여 해당 내용을 추출합니다.
+1. 이제 AEM 6.5 war 파일에서 실행 모드를 변경해야 합니다. 이를 위해 먼저 AEM 6.5 전쟁을 저장할 임시 폴더를 만듭니다. 이 예제의 폴더 이름은 다음과 같습니다 `temp`. war 파일이 복사되면 임시 폴더 내에서 를 실행하여 해당 내용을 추출합니다.
 
    ```
    jar xvf aem-quickstart-6.5.0.war

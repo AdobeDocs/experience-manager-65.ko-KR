@@ -1,18 +1,14 @@
 ---
 title: AEM 6.5의 Sites 저장소 재구성
-seo-title: Sites Repository Restructuring in AEM 6.5
-description: Sites용 AEM 6.5에서 새 저장소 구조로 마이그레이션하기 위해 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Sites.
-uuid: 6dc5f8bd-1680-40af-9b8f-26c1f4bc3304
+description: Sites용 AEM 6.5에서 새 저장소 구조로 마이그레이션하는 데 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1460'
 ht-degree: 1%
 
 ---
@@ -36,7 +32,6 @@ ht-degree: 1%
 * [페이지 스캐폴딩](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-scaffolding)
 * [응답형 격자 줄이기](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#responsive-grid-less)
 * [정적 템플릿 디자인](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#static-template-designs)
-
 <!-- Search&Promote is end-of-life September 1, 2022 * [Adobe Search and Promote Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-search-and-promote-integration-client-libraries) -->
 * [Adobe Target 통합 클라이언트 라이브러리](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-target-integration-client-libraries)
 * [WCM Foundation 클라이언트 라이브러리](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#wcm-foundation-client-libraries)
@@ -53,7 +48,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>새 위치</strong></td>
-   <td><p><code>/apps/settings/wcm/segments</code> </p> <p><code>/conf/settings/settings/wcm/segments</code> </p> <p><code>/conf/&lt;tenant&gt;/settings/wcm/segments</code></p> </td>
+   <td><p><code>/apps/settings/wcm/segments</code><br /> </p> <p><code>/conf/settings/settings/wcm/segments</code><br /> </p> <p><code>/conf/&lt;tenant&gt;/settings/wcm/segments</code></p> </td>
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
@@ -180,7 +175,7 @@ ht-degree: 1%
        <code>
         deviceGroups
        </code> = String[ mobile/groups/responsive ]</span></li>
-     <li>이러한 모바일 장치 에뮬레이터 구성에 의존하는 편집 가능한 템플릿의 경우 <span class="code">
+     <li>이러한 모바일 장치 에뮬레이터 구성에 의존하는 편집 가능한 템플릿의 경우 다음을 가리키며 편집 가능한 템플릿을 업데이트합니다. <span class="code">
        <code>
         cq
        </code>:
@@ -246,7 +241,7 @@ ht-degree: 1%
    <td><strong>구조 조정 지침</strong></td>
    <td><p>새 다중 사이트 관리자 롤아웃 구성 또는 수정된 구성을 새 위치로 마이그레이션해야 합니다.</p>
     <ol>
-     <li>이전 위치에서 새 위치로 새 다중 사이트 관리자 롤아웃 구성 또는 수정된 다중 사이트 관리자 롤아웃 구성 복사(<code>/apps</code>).</li>
+     <li>이전 위치에서 새 위치로 신규 또는 수정된 다중 사이트 관리자 롤아웃 구성 복사(<code>/apps</code>).</li>
      <li>AEM Pages의 참조를 이전 위치의 다중 사이트 관리자 롤아웃 구성으로 업데이트하여 새 위치의 해당 위치(<code>/libs</code> 또는 <code>/apps</code>).</li>
     </ol> <p>이전 위치에서 마이그레이션된 다중 사이트 관리자 롤아웃 구성을 제거합니다.</p> </td>
   </tr>

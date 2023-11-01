@@ -11,20 +11,20 @@ discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2044'
-ht-degree: 1%
+source-wordcount: '2042'
+ht-degree: 4%
 
 ---
 
 # 적응형 양식 템플릿{#adaptive-form-templates}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -195,7 +195,7 @@ ht-degree: 1%
 1. 을(를) 찾아 엽니다. **FormsManager 구성** 설정:
 
    * 즉시 사용 가능한 적응형 양식 템플릿을 표시하거나 숨기려면 **즉시 사용 가능한 AF 및 AD 템플릿 포함** 옵션을 선택합니다.
-   * AEM 6.0 Forms 또는 AEM 6.1 Forms 릴리스에 추가되었지만 이제 더 이상 사용되지 않는 적응형 양식 템플릿을 표시하거나 숨기려면 **AEM 6.0 AF 템플릿 포함** 옵션을 선택합니다. 이 옵션을 선택한 경우 적용하려면 **즉시 사용 가능한 AF 및 AD 템플릿 포함** 활성화할 구성입니다.
+   * AEM 6.0 Forms 또는 AEM 6.1 Forms 릴리스에 추가되었지만 이제 더 이상 사용되지 않는 적응형 양식 템플릿을 표시하거나 숨기려면 **AEM 6.0 AF 템플릿 포함** 옵션을 선택합니다. 이 옵션을 선택하면 다음 항목이 필요합니다. **즉시 사용 가능한 AF 및 AD 템플릿 포함** 활성화할 구성입니다.
 
 1. **저장**&#x200B;을 클릭합니다. 기본 제공 템플릿에 대한 표시 옵션이 변경되었습니다.
 

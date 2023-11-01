@@ -1,19 +1,15 @@
 ---
 title: 작업 오프로드
-seo-title: Offloading Jobs
-description: 특정 유형의 처리를 수행하기 위해 토폴로지에서 AEM 인스턴스를 구성하고 사용하는 방법을 알아봅니다.
-seo-description: Learn how to configure and use AEM instances in a topology in order to perform specific types of processing.
-uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
+description: 토폴로지에서 AEM 인스턴스를 구성 및 사용하여 특정 유형의 처리를 수행하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: 08a6777bf1ff3abf62f45fe1e164ef2027996848
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2362'
 ht-degree: 2%
 
 ---

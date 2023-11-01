@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 6%
+source-wordcount: '556'
+ht-degree: 7%
 
 ---
 
@@ -34,18 +34,18 @@ AEM을 Adobe Target과 통합하려면 유효한 Adobe Target 계정이 있어�
 >
 >그렇지 않은 경우 다음으로 문의하십시오. [Adobe 고객 지원 센터](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
 
-## Target 복제 에이전트 활성화 {#enabling-the-target-replication-agent}
+## 대상 복제 에이전트 활성화 {#enabling-the-target-replication-agent}
 
-테스트 및 Target [복제 에이전트](/help/sites-deploying/replication.md) 작성자 인스턴스에서 을 활성화해야 합니다. 다음을 사용한 경우 이 복제 에이전트는 기본적으로 활성화되지 않습니다. [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) AEM 설치를 위한 실행 모드입니다. 프로덕션 환경 보호에 대한 자세한 내용은 [보안 검사 목록](/help/sites-administering/security-checklist.md).
+테스트 및 타겟 [복제 에이전트](/help/sites-deploying/replication.md) 작성자 인스턴스에서 을 활성화해야 합니다. 다음을 사용한 경우 이 복제 에이전트는 기본적으로 활성화되지 않습니다. [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) AEM 설치를 위한 실행 모드입니다. 프로덕션 환경 보호에 대한 자세한 내용은 [보안 검사 목록](/help/sites-administering/security-checklist.md).
 
 1. AEM 홈페이지에서 을 클릭하거나 탭합니다. **도구** > **배포** > **복제**.
 1. 클릭 또는 탭 **작성자의 에이전트**.
-1. 을(를) 클릭하거나 탭합니다 **테스트 및 Target(테스트 및 타겟)** 복제 에이전트를 클릭한 다음 클릭하거나 탭합니다 **편집**.
+1. 을(를) 클릭하거나 탭합니다 **테스트 및 타겟(테스트 및 타겟)** 복제 에이전트를 클릭한 다음 클릭하거나 탭합니다 **편집**.
 1. 활성화 옵션을 선택한 다음 을 클릭하거나 탭합니다 **확인**.
 
    >[!NOTE]
    >
-   >테스트 및 Target 복제 에이전트를 구성할 때에서 **전송** 탭에서 URI는 기본적으로 로 설정됩니다. **tnt:///**. 이 URI를 다음으로 바꾸기 금지 **https://admin.testandtarget.omniture.com**.
+   >Test and Target 복제 에이전트를 구성할 때에서 **전송** 탭에서 URI는 기본적으로 로 설정됩니다. **tnt:///**. 이 URI를 다음으로 바꾸기 금지 **https://admin.testandtarget.omniture.com**.
    >
    >과의 연결을 테스트하는 경우 유의하십시오. **tnt:///**, 오류가 발생합니다. 이 URI는 내부용으로만 사용되며 와 함께 사용해서는 안 되므로 이는 예상되는 동작입니다. **연결 테스트**.
 

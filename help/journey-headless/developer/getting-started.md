@@ -2,9 +2,9 @@
 title: AEM Headless 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3042'
+source-wordcount: '3038'
 ht-degree: 97%
 
 ---
@@ -87,7 +87,7 @@ AEM Headless 여정 후반부에서 해당 API와 이를 사용하는 방법에 
 
 AEM은 CMS의 전체 Headless 및 기존 전체 스택 또는 Headful 모델을 모두 지원합니다. 단, AEM은 이 두 가지 독점적인 선택뿐만 아니라 두 가지 장점을 결합한 하이브리드 모델을 지원하는 기능을 제공하여 Headless 프로젝트를 유연하게 활용할 수 있습니다.
 
-Headless 개념에 대한 이해도를 높이기 위해 이 AEM Headless 개발자 여정은 AEM에서 코딩 없이 최대한 빨리 작업을 실행할 수 있도록 순수 Headless 모델에 중점을 두고 있습니다.
+이 AEM Headless 개발자 여정은 Headless 개념에 대한 이해도를 높이기 위해 AEM에서 코딩 없이 최대한 빨리 작업을 실행할 수 있도록 순수 Headless 모델에 중점을 두고 있습니다.
 
 단, AEM의 Headless 기능을 이해하고 나서 추가 하이브리드 가능성에 대해 알아야 합니다. 해당 사례는 인지도 제고를 위해 아래에 자세히 설명됩니다. 여정이 끝나고 나서 프로젝트에 이러한 유연성이 필요한 경우 해당 개념에 대해 자세히 소개합니다.
 
@@ -195,7 +195,7 @@ AEM에서는 유연한 콘텐츠 구조를 사용하고 계층은 임의적으�
 * 콘텐츠 작성자는 폴더에 속하지 않는 콘텐츠를 작성할 수 없습니다.
 * 유효한 콘텐츠 유형만 표시되도록 작성 중에 폴더에서 허용되는 콘텐츠 유형을 필터링하여 콘텐츠 생성 프로세스를 최적화합니다.
 
-적절한 콘텐츠 구조를 만들면 여러 채널에서 Headless 콘텐츠 작성을 보다 쉽게 조정하여 콘텐츠 재사용을 극대화할 수 있습니다. 여러 채널에서 콘텐츠를 활용하면 콘텐츠 프로덕션 효율성과 변경 관리를 크게 향상시킬 수 있습니다.
+적절한 콘텐츠 구조를 만들면 채널 간에 Headless 콘텐츠 작성을 더 쉽게 조정하여 콘텐츠 재사용을 극대화할 수 있습니다. 여러 채널에서 콘텐츠를 활용하면 콘텐츠 프로덕션 효율성과 변경 관리를 크게 향상시킬 수 있습니다.
 
 ##### 좋은 명명 규칙 수립 {#naming-conventions}
 
@@ -277,7 +277,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 
 * [AEM의 Headful 및 Headless](/help/sites-developing/headful-headless.md) - AEM에서 사용 가능한 Headless 통합 수준에 대한 전체 설명
 
-* An [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
+* [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
 
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
 
@@ -295,4 +295,4 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만드는 방법에 대한 기술 설명서
 * [Assets REST API](/help/assets/assets-api-content-fragments.md) - 콘텐츠 조각(및 기타 자산)을 만들고 수정하는 방법에 대한 기술 설명서
 * [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md) - AEM의 지속 쿼리에 대한 기술 설명서
-* 다음 [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

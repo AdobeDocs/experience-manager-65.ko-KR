@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '9113'
+source-wordcount: '9109'
 ht-degree: 0%
 
 ---
@@ -842,7 +842,7 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 1. 검색 결과에서 리소스 검색
 
-   검색 결과에 포함된 리소스를 검색하려면 `List` 각 개체를 `Resource` 정보를 추출하기 위해. 이 예제에서는 각 리소스의 이름이 표시됩니다.
+   검색 결과에 포함된 리소스를 검색하려면 `List` 각 개체를 `Resource` 를 클릭하여 정보를 추출합니다. 이 예제에서는 각 리소스의 이름이 표시됩니다.
 
 **추가 참조**
 

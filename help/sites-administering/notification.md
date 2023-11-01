@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2069'
 ht-degree: 12%
 
 ---
@@ -262,7 +262,7 @@ AEM Assets의 컬렉션이 공유되거나 공유되지 않으면 사용자는 A
 
 ## OAuth 설정 {#setting-up-oauth}
 
-AEM은 조직의 이메일 요구 사항 보호 준수를 위해 통합 Mailer 서비스에 대한 OAuth2 지원을 제공합니다.
+AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통합 Mailer 서비스에 대한 OAuth2 지원을 제공합니다.
 
 아래 설명된 대로 여러 이메일 공급자에 대한 OAuth를 구성할 수 있습니다.
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,7 @@ AEM 6.2에서 저장소에 저장된 사용자 지정 검색 Forms의 위치가 
   </tr>
   <tr>
    <td>6.2의 리소스 유형</td>
-   <td>해당 없음</td>
+   <td>해당 사항 없음</td>
   </tr>
  </tbody>
 </table>
@@ -78,7 +78,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1에서 기본 검색의 노드</td>
-   <td>해당 없음</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -99,7 +99,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1의 기본 검색 양식에 있는 노드<br /> <br /> </td>
-   <td>경로</td>
+   <td>path</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -149,14 +149,14 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
   </tr>
   <tr>
    <td>6.2의 리소스 유형</td>
-   <td>해당 없음</td>
+   <td>해당 사항 없음</td>
   </tr>
  </tbody>
 </table>
 
 페이지 상태가 게시와 LiveCopy 상태, 이렇게 두 개의 옵션 속성 술어로 대체되었습니다.
 
-**작업:**
+**액션:**
 
 * 제거 `pagestatuspredicate` 노드
 * 노드 복사
@@ -240,7 +240,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1의 기본 검색 양식에 있는 노드<br /> <br /> </td>
-   <td>해당 없음</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -265,7 +265,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1의 기본 검색 양식에 있는 노드<br /> <br /> </td>
-   <td>해당 없음</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -286,7 +286,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1의 기본 검색 양식에 있는 노드<br /> <br /> </td>
-   <td>해당 없음</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -307,7 +307,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1의 기본 검색 양식에 있는 노드<br /> <br /> </td>
-   <td>해당 없음</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -328,7 +328,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1의 기본 검색 양식에 있는 노드<br /> <br /> </td>
-   <td>해당 없음</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -349,7 +349,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1의 기본 검색 양식에 있는 노드<br /> <br /> </td>
-   <td>해당 없음</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -373,7 +373,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 | 6.1의 기본 검색 양식에 있는 노드 | 전체 텍스트 |
 |---|---|
 | 6.1의 리소스 유형 | dam/gui/components/admin/customsearch/searchpredicates/fulltextpredicate |
-| 6.2의 리소스 유형 | 해당 없음 |
+| 6.2의 리소스 유형 | 해당 사항 없음 |
 
 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습니다. 6.2에서 전체 텍스트 필드가 OmniSearch로 대체되었습니다. 이 조건자는 프로그래밍 방식으로 건너뛰며 제거할 수 있습니다.
 
@@ -422,7 +422,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 | 6.1의 리소스 유형 | dam/gui/components/admin/customsearch/searchpredicates/publishpredicate |
 | 6.2의 리소스 유형 | dam/gui/coral/components/admin/customsearch/searchpredicates/publishpredicate |
 
-**작업:**
+**액션:**
 
 * 조정 `resourceType` 속성(추가 &quot;**/coral**&quot; 위에 표시된 6.2 위치와 유사)
 
@@ -473,7 +473,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 | 6.1의 리소스 유형 | dam/gui/components/admin/customsearch/searchpredicates/tagsfilterpredicate |
 | 6.2의 리소스 유형 | cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate |
 
-**작업:**
+**액션:**
 
 * 조정 `resourceType` 속성(추가 &quot;**/coral**&quot; 위에 표시된 6.2 위치와 유사)
 
@@ -490,7 +490,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 | 6.1의 리소스 유형 | dam/gui/components/admin/customsearch/searchpredicates/tagsfilterpredicate |
 | 6.2의 리소스 유형 | cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate |
 
-**작업:**
+**액션:**
 
 * 조정 `resourceType` 속성(추가 &quot;**/coral**&quot; 위에 표시된 6.2 위치와 유사)
 

@@ -12,9 +12,9 @@ discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
 feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ AEM의 관계형 데이터베이스 지원 수준에 대한 자세한 내용은 
 
 JDBC 드라이버용 OSGi 번들을 생성하는 단계는 다음을 참조하십시오. [설명서](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) Apache Sling 웹 사이트에서 확인하십시오.
 
-번들이 준비되면 아래 단계에 따라 RDB 지속성을 가진 AEM을 구성합니다.
+번들이 준비되면 아래 단계에 따라 RDB 지속성을 사용하여 AEM을 구성합니다.
 
 1. 데이터베이스 데몬이 시작되었고 AEM에서 사용할 활성 데이터베이스가 있는지 확인합니다.
 1. AEM 6.3 jar를 설치 디렉토리에 복사합니다.
@@ -57,6 +57,7 @@ JDBC 드라이버용 OSGi 번들을 생성하는 단계는 다음을 참조하�
 1. 에서 다음 이름을 가진 다른 구성 파일을 만들어 데이터 소스 및 JDBC 매개 변수를 구성합니다. `crx-quickstart\install` 폴더:
 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
+
    >[!NOTE]
    >
    >지원되는 각 데이터베이스의 데이터 소스 구성에 대한 자세한 내용은 [데이터 소스 구성 옵션](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).

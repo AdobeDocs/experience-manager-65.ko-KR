@@ -13,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3837'
 ht-degree: 9%
 
 ---
@@ -206,7 +206,6 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
 >* 비디오에 대한 썸네일 크기는 **[!UICONTROL FFmpeg 썸네일]** 단계, **[!UICONTROL 프로세스]** 아래의 탭 **[!UICONTROL 인수]**.
 >
 
-
 **이미지 썸네일 크기를 구성하려면:**
 
 1. 누르기 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**.
@@ -286,7 +285,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 >[!NOTE]
 >
->을(를) 보려면 **[!UICONTROL URL]** 및 **[!UICONTROL RESS]** 단추를 클릭합니다. 이미지 사전 설정을 자산에 적용할 때 자산이 게시되어야 합니다.
+>To see the **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons when applying an image preset to an asset, the asset must be published.
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
@@ -334,7 +333,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
      <strong>GIF 색상 양자화</strong> 옵션:
     </div>
     <ul>
-     <li><strong>유형 </strong>- 선택 <strong>자동 선택</strong> (기본값), <strong>웹</strong>, 또는 <strong>Macintosh</strong>. 다음을 선택하는 경우 <strong>알파 포함 GIF</strong>, Macintosh 옵션을 사용할 수 없습니다.</li>
+     <li><strong>유형 </strong>- 선택 <strong>자동 선택</strong> (기본값), <strong>웹</strong>, 또는 <strong>Macintosh</strong>. 다음을 선택하는 경우 <strong>Alpha이 있는 GIF</strong>, Macintosh 옵션을 사용할 수 없습니다.</li>
      <li><strong>디더</strong> - 선택 <strong>분산</strong> 또는 <strong>끔</strong>.</li>
      <li><strong>색상 수 </strong>- 2에서 256 사이의 숫자를 입력합니다.</li>
      <li><strong>색상 목록</strong> - 쉼표로 구분된 목록을 입력합니다. 예를 들어, 흰색, 회색 및 검은색의 경우 <code>000000,888888,ffffff</code>.</li>
@@ -346,8 +345,8 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
      <strong>알파 포함 TIFF</strong> 은 다음 추가 옵션을 제공합니다.
     </div>
     <ul>
-     <li><strong>압축</strong> - 압축 알고리즘을 선택합니다. PDF에 대한 알고리즘 옵션은 다음과 같습니다 <strong>없음</strong>, <strong>Zip</strong>, 및 <strong>Jpeg</strong>; TIFF 시 옵션은 다음과 같습니다 <strong>없음</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>, 및 <strong>Zip</strong>; 알파 포함 TIFF의 경우 <strong>없음</strong>, <strong>LZW</strong>, 및 <strong>Zip</strong>.</li>
-    </ul> <p>선택 중 <strong>PNG</strong>, <strong>알파 포함 PNG,</strong> 또는 <strong>EPS</strong> 는 추가 옵션을 제공하지 않습니다.</p> </td>
+     <li><strong>압축</strong> - 압축 알고리즘을 선택합니다. PDF에 대한 알고리즘 옵션은 다음과 같습니다 <strong>없음</strong>, <strong>Zip</strong>, 및 <strong>Jpeg</strong>; TIFF 시 옵션은 다음과 같습니다 <strong>없음</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>, 및 <strong>Zip</strong>; Alpha이 있는 TIFF의 경우 <strong>없음</strong>, <strong>LZW</strong>, 및 <strong>Zip</strong>.</li>
+    </ul> <p>선택 중 <strong>PNG</strong>, <strong>Alpha 포함 PNG,</strong> 또는 <strong>EPS</strong> 는 추가 옵션을 제공하지 않습니다.</p> </td>
   </tr>
   <tr>
    <td><strong>선명하게 하기</strong></td>
@@ -453,43 +452,43 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) - 부정적인 이미지 효과를 위해 각 색상 구성 요소를 반전시킵니다.
 
-   ```xml
-   &op_invert=1
-   ```
+  ```xml
+  &op_invert=1
+  ```
 
-   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
+  ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api) - 이미지에 흐림 효과 필터를 적용합니다.
 
-   ```xml
-   &op_blur=7
-   ```
+  ```xml
+  &op_blur=7
+  ```
 
-   ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
+  ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
 * 결합된 명령 - op_blur 및 op-invert
 
-   ```xml
-   &op_invert=1&op_blur=7
-   ```
+  ```xml
+  &op_invert=1&op_blur=7
+  ```
 
-   ![chlimage_1-80](assets/chlimage_1-501.png)
+  ![chlimage_1-80](assets/chlimage_1-501.png)
 
 * [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api) - 밝기를 줄이거나 늘립니다.
 
-   ```xml
-   &op_brightness=58
-   ```
+  ```xml
+  &op_brightness=58
+  ```
 
-   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
+  ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
 * [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api) - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
 
-   ```xml
-   opac=29
-   ```
+  ```xml
+  opac=29
+  ```
 
-   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
+  ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
 ## 이미지 사전 설정 편집 {#modifying-image-presets}
 

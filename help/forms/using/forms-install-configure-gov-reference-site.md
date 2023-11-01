@@ -4,9 +4,9 @@ description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 지정�
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4626'
+source-wordcount: '4622'
 ht-degree: 3%
 
 ---
@@ -476,7 +476,7 @@ Forms Adobe을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 
 #### IMS 구성 1부 만들기 {#creating-ims-config}
 
-양식 전환 도구와 올바르게 통신하도록 서비스를 구성하려면 사용자가 Identity Management 시스템(IMS) 서비스를 구성하여 Adobe I/O에 등록해야 합니다.
+양식 전환 도구와 올바르게 통신하도록 서비스를 구성하려면 사용자는 Identity Management 시스템(IMS) 서비스를 구성하여 Adobe I/O에 등록해야 합니다.
 
 1. https:// 로 이동합니다.&lt;aemserver>:&lt;port> > 왼쪽 상단의 Adobe Experience Manager > 도구 > 보안 > Adobe IMS 구성 을 클릭합니다.
 
@@ -496,7 +496,7 @@ Forms Adobe을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 
 #### Adobe I/O에서 통합 만들기 {#create-integration-adobeio}
 
-시스템 관리자에게 연락하지 않은 경우 Adobe 도메인 내에서 통합을 생성할 수 있는지 확인하십시오.
+시스템 관리자에게 연락하지 않는 경우 Adobe 도메인 내에서 통합을 생성할 수 있는지 확인하십시오.
 
 1. 다음 위치로 이동 [Adobe I/O 콘솔](https://developer.adobe.com/console/).
 
@@ -548,7 +548,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 검토할 수 있습
 
 1. 브라우저를 열고 시스템 URL https:// 로 이동합니다.&lt;domain_name>:&lt;system_port>
 
-1. 화면 왼쪽 상단 모서리에서 Adobe Experience Manager > 도구 > Cloud Services > 자동화된 Forms 대화 구성 을 클릭합니다.
+1. 화면 왼쪽 상단 모서리에서 Adobe Experience Manager > 도구 > Cloud Service > 자동화된 Forms 대화 구성 을 클릭합니다.
 
 1. 구성을 배치할 구성 폴더를 선택합니다.
 
@@ -578,7 +578,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 1. 브라우저를 열고 시스템 URL https:// 로 이동합니다.&lt;domain_name>:&lt;system_port>
 
-1. 화면 왼쪽 상단 모서리에서 Adobe Experience Manager > 도구 > Cloud Services > 자동화된 Forms 대화 구성 을 클릭합니다.
+1. 화면 왼쪽 상단 모서리에서 Adobe Experience Manager > 도구 > Cloud Service > 자동화된 Forms 대화 구성 을 클릭합니다.
 
 1. 구성을 배치할 구성 폴더를 선택합니다.
 

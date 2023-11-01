@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '7850'
+source-wordcount: '7848'
 ht-degree: 0%
 
 ---
@@ -592,7 +592,7 @@ PDF 생성 서비스는 파일 형식과 연관된 응용 프로그램을 호출
 1. [파일] > [인쇄]를 선택하여 [인쇄] 대화 상자 열기
 1. 인쇄 대화 상자가 나타나는지 확인합니다.
 
-AppMon은 표준 Win32 API를 사용하여 서드파티 애플리케이션과 상호 작용하여 키-스트로크 및 마우스 클릭과 같은 UI 이벤트를 전송하므로 이러한 애플리케이션을 제어하여 PDF 파일을 생성하는 데 유용합니다.
+AppMon은 표준 Win32 API를 사용하여 서드파티 애플리케이션과 상호 작용하여 키 스트로크 및 마우스 클릭과 같은 UI 이벤트를 전송하므로 이러한 애플리케이션을 제어하여 PDF 파일을 생성하는 데 유용합니다.
 
 이러한 Win32 API의 제한으로 인해 AppMon은 이러한 UI 이벤트를 부동 메뉴 막대(TextPad와 같은 일부 응용 프로그램에 있음) 및 Win32 API를 사용하여 콘텐츠를 검색할 수 없는 특정 종류의 대화 상자와 같은 일부 특정 종류의 창에 발송할 수 없습니다.
 
@@ -982,7 +982,7 @@ AEM Forms에는 PDF 생성 서비스에서 메모장을 사용하여 파일 확�
 * from Adobe Systems Incorporated.
 *-->
 
-<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
+<!-- This file automates printing of text files via notepad to Adobe PDF printer. To see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
 
 <application name="Notepad" version="9.0" locale="en_US" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scripts.xsd">
 

@@ -1,25 +1,21 @@
 ---
 title: AEM에서 CRXDE Lite 활성화
-seo-title: Enabling CRXDE Lite in AEM
 description: Adobe Experience Manager에서 CRXDE Lite을 활성화하는 방법을 알아봅니다.
-seo-description: Learn how to enable CRXDE Lite in AEM.
-uuid: d7a3db67-6384-463b-9aa9-f08ecc6c99c6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
 exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '254'
 ht-degree: 1%
 
 ---
 
 # AEM에서 CRXDE Lite 활성화{#enabling-crxde-lite-in-aem}
 
-AEM 설치가 가능한 한 안전하도록 보안 체크리스트에서는 다음을 권장합니다 [webdav 비활성화](/help/sites-administering/security-checklist.md#disable-webdav) 프로덕션 환경에서.
+AEM 설치가 가능한 한 안전한지 확인하기 위해 보안 체크리스트에서는 [webdav 비활성화](/help/sites-administering/security-checklist.md#disable-webdav) 프로덕션 환경에서.
 
 그러나 CRXDE Lite은 다음에 따라 다릅니다. `org.apache.sling.jcr.davex` 번들이 제대로 작동하므로 WebDAV를 비활성화하면 CRXDE Lite도 효과적으로 비활성화됩니다.
 
@@ -29,7 +25,7 @@ AEM 설치가 가능한 한 안전하도록 보안 체크리스트에서는 다�
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
 ```
 
-이 권장 사항은 공격 표면을 최대한 줄이기 위한 것이지만, 시스템 관리자는 때때로 프로덕션 인스턴스의 문제를 검색하거나 디버깅하기 위해 CRXDE Lite에 액세스해야 할 수도 있습니다.
+이 권장 사항은 공격 표면을 최대한 줄이기 위한 것이지만, 시스템 관리자는 때때로 프로덕션 인스턴스의 콘텐츠를 검색하거나 문제를 디버깅하기 위해 CRXDE Lite에 액세스해야 할 수도 있습니다.
 
 다음 중 하나를 사용하여 CRXDE Lite을 활성화할 수 있습니다. [OSGi 설정](#enabling-crxde-lite-osgi) 또는 [cURL 명령](#enabling-crxde-lite-curl).
 
@@ -48,7 +44,7 @@ AEM 설치가 가능한 한 안전하도록 보안 체크리스트에서는 다�
 
    * `org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`
 
-1. 구성 옵션을 보려면 옆에 있는 렌치 아이콘을 클릭합니다.
+1. 옆에 있는 렌치 아이콘을 클릭하여 구성 옵션을 확인합니다.
 
    ![chlimage_1-80](assets/chlimage_1-80a.png)
 

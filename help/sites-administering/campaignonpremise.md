@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 66%
+source-wordcount: '1581'
+ht-degree: 65%
 
 ---
 
@@ -124,7 +124,7 @@ Adobe Campaign의 **AEM 통합** 패키지는 AEM에 연결하는 데 필요한 
 
 ## AEM에서 Campaign 통합 구성 {#campaign-integration}
 
-AEM은 [Campaign에서 사용자가 이미 설정해 둔 연산자](#create-operator)를 사용하여 Campaign과 통신합니다.
+AEM 사용 [Campaign에서 이미 설정한 연산자](#create-operator) Campaign과 통신하려면
 
 1. 관리자 자격으로 AEM 제작 인스턴스에 로그인합니다.
 

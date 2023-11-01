@@ -2,9 +2,9 @@
 title: 번역 통합 구성
 description: AEM을 번역 서비스에 연결하는 방법에 대해 알아봅니다.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 95%
 
 ---
@@ -58,7 +58,7 @@ AEM의 번역 통합 프레임워크(TIF)를 서드파티 번역 서비스와 �
 >
 >테스트 목적으로 Microsoft Translator를 사용하는 경우 다음 두 섹션의 단계를 수행하지 않아도 됩니다. [번역 통합 구성 만들기](#create-config) 및 [구성과 콘텐츠 연결](#associate) 그러나 원하는 커넥터를 구성해야 하는 단계를 익숙하게 수행할 수 있도록 이들 단계를 읽어보는 것이 좋습니다.
 >
->Microsoft Translator 커넥터의 체험판 라이선스는 프로덕션 목적으로 고안된 것이 아니며 라이선스를 부여하려면 시스템 관리자는 이 문서 끝의 [추가 리소스](#additional-resources) 섹션에 자세히 설명된 단계에 따라 해당 라이선스를 구성해야 합니다.
+>Microsoft Translator 커넥터의 체험판 라이선스는 프로덕션 목적으로 고안된 것이 아니며, 라이선스를 부여하려면 시스템 관리자가 이 문서 끝의 [추가 리소스](#additional-resources) 섹션에 자세히 설명된 단계에 따라 해당 라이선스를 구성해야 합니다.
 
 ## 번역 통합 구성 만들기 {#create-config}
 

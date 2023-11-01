@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4609'
 ht-degree: 6%
 
 ---
@@ -105,7 +105,7 @@ Lucene은 각 인덱스에 있는 문서의 크기 및 수를 포함하여 인�
 
 의 JMX 콘솔에 액세스하여 연결할 수 있습니다. `https://server:port/system/console/jmx`
 
-JMX 콘솔에 로그인하고 나면 **Lucene 인덱스 통계** 찾을 수 있습니다. 다른 색인 통계는 **IndexStats** MBean.
+JMX 콘솔에 로그인하고 나면 **Lucene 인덱스 통계** 찾아. 다른 색인 통계는 **IndexStats** MBean.
 
 쿼리 통계를 보려면 이름이 인 MBean을 확인합니다. **Oak 쿼리 통계**.
 

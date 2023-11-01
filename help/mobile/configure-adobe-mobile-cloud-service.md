@@ -11,10 +11,10 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
 exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 1%
+source-wordcount: '449'
+ht-degree: 2%
 
 ---
 
@@ -49,11 +49,11 @@ AEM Command Center 지표 타일
 
 Adobe Mobile Services Analytics를 활용하려면 Adobe Analytics 계정 정보로 AEM Mobile Analytics Cloud 서비스를 구성해야 합니다.
 
-1. 오른쪽 상단 아이콘을 클릭하여 Cloud Services에서 추가 또는 편집 **Cloud Services 관리** 앱 대시보드에서 타일을 지정합니다.
+1. 오른쪽 상단 아이콘을 클릭하여 Cloud Service에서 추가 또는 편집 **Cloud Service 관리** 앱 대시보드에서 타일을 지정합니다.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. 다음 **Cloud Services 추가 또는 편집** 화면이 표시됩니다. 선택 **Adobe Mobile Services** 및 클릭 **다음**.
+1. 다음 **Cloud Service 추가 또는 편집** 화면이 표시됩니다. 선택 **Adobe Mobile Services** 및 클릭 **다음**.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 

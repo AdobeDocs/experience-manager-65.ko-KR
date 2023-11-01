@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1978'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Context Cloud에 표시되는 경우 구성 요소는 Google API를 사용하여
 
 **JSONP 저장소** 설치에 종속된 콘텐츠를 표시하는 구성 요소입니다.
 
-JSONP 표준은 동일한 원본 정책을 우회할 수 있는 JSON을 보완하는 것입니다(웹 앱이 다른 도메인에 있는 서버와 통신할 수 없도록 함). 로 로드할 수 있도록 함수 호출에 JSON 개체를 래핑하는 것으로 구성됩니다. `<script>` (동일한 원본 정책에 허용된 예외인) 다른 도메인에서 가져온 것입니다.
+JSONP 표준은 동일한 원본 정책을 우회할 수 있는 JSON을 보완하는 것입니다(웹 앱이 다른 도메인에 있는 서버와 통신할 수 없도록 함). JSON 개체를 로 로드할 수 있도록 함수 호출에 래핑하는 것으로 구성됩니다. `<script>` (동일한 원본 정책에 허용된 예외인) 다른 도메인에서 가져온 것입니다.
 
 JSONP 저장소는 다른 저장소와 유사하지만 현재 도메인에서 해당 정보에 대한 프록시를 가질 필요 없이 다른 도메인에서 오는 정보를 로드합니다. 의 예제를 참조하십시오. [JSONP를 통해 Client Context에 데이터 저장](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 

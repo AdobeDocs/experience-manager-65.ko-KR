@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '17047'
+source-wordcount: '17045'
 ht-degree: 0%
 
 ---
@@ -597,7 +597,7 @@ nCypher nShield HSM 자격 증명을 사용하여 PDF 문서에 서명하거나 
 
 **서명을 신뢰할 수 없습니다.**
 
-동일한 PDF 문서를 인증하고 서명할 때 인증 서명을 신뢰할 수 없는 경우 Acrobat 또는 Adobe Reader에서 PDF 문서를 열 때 첫 번째 서명에 대해 노란색 삼각형이 나타납니다. 이러한 상황을 방지하려면 인증 서명을 신뢰할 수 있어야 합니다.
+동일한 PDF 문서를 인증하고 서명할 때 인증 서명을 신뢰할 수 없는 경우 Acrobat 또는 Adobe Reader에서 PDF 문서를 열 때 첫 번째 서명에 대해 노란색 삼각형이 나타납니다. 이러한 상황을 방지하려면 인증 서명을 신뢰해야 합니다.
 
 **XFA 기반 양식인 서명 문서**
 

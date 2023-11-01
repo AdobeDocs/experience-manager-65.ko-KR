@@ -1,7 +1,7 @@
 ---
 title: SPA 편집기 개요
 seo-title: SPA Editor Overview
-description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에서 SPA 편집기와 워크플로우의 세부 상호 작용 포함)에 대한 포괄적인 개요를 제공합니다.
+description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에서 SPA 편집기와 워크플로의 세부 상호 작용 포함)에 대한 포괄적인 개요를 제공합니다.
 seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
 uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
 contentOwner: bohnert
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 92%
+source-wordcount: '1653'
+ht-degree: 90%
 
 ---
 
@@ -47,7 +47,7 @@ SPA의 페이지 구성 요소는 JSP 또는 HTL 파일을 통해 하위 구성 
 
 ### 페이지 모델 관리 {#page-model-management}
 
-페이지 모델의 해상도와 관리는 제공되는 `PageModel`라이브러리에 위임됩니다. SPA 편집기에서 SPA를 초기화하고 작성하려면 모델 라이브러리를 사용해야 합니다. `aem-react-editable-components` npm을 통해 AEM 페이지 구성 요소에 페이지 모델 라이브러리를 간접적으로 제공합니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지가 작성되면 페이지 편집기와 통신할 수 있도록 추가 라이브러리 `cq.authoring.pagemodel.messaging`를 추가해야 합니다.
+페이지 모델의 해상도와 관리는 제공되는 `PageModel`라이브러리에 위임됩니다. SPA은 초기화하고 SPA 편집기에서 작성할 페이지 모델 라이브러리를 사용해야 합니다. `aem-react-editable-components` npm을 통해 AEM 페이지 구성 요소에 페이지 모델 라이브러리를 간접적으로 제공합니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지가 작성되면 추가 라이브러리 `cq.authoring.pagemodel.messaging` 페이지 편집기와의 통신을 활성화하려면 을(를) 추가해야 합니다.
 
 SPA 페이지 구성 요소가 페이지 핵심 구성 요소로부터 상속받는 경우 `cq.authoring.pagemodel.messaging` 클라이언트 라이브러리 범주를 사용할 수 있는 두 가지 옵션이 있습니다.
 
@@ -67,7 +67,7 @@ SPA는 내보낸 모델의 각 리소스에 대한 렌더링을 수행할 실제
 
 ![screen_shot_2018-08-20at143628](assets/screen_shot_2018-08-20at143628.png)
 
-## 워크플로우 {#workflow}
+## 워크플로 {#workflow}
 
 SPA 편집기를 SPA와 AEM 간의 중재자로 간주하여 두 사이의 상호 작용 흐름을 이해할 수 있습니다.
 
@@ -78,9 +78,9 @@ SPA 편집기를 SPA와 AEM 간의 중재자로 간주하여 두 사이의 상�
 
 ![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
 
-### 기본 SPA 편집기 워크플로우 {#basic-spa-editor-workflow}
+### 기본 SPA 편집기 워크플로 {#basic-spa-editor-workflow}
 
-SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 높은 수준의 워크플로우가 다음과 같이 작성자에게 표시됩니다.
+SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 높은 수준의 워크플로가 다음과 같이 작성자에게 표시됩니다.
 
 ![untitled1](assets/untitled1.gif)
 
@@ -102,7 +102,7 @@ SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 �
 >* 프로덕션(게시)에서는 SPA 편집기가 로드되지 않습니다.
 >
 
-### 클라이언트-서버 페이지 편집 워크플로우 {#client-server-page-editing-workflow}
+### 클라이언트-서버 페이지 편집 워크플로 {#client-server-page-editing-workflow}
 
 이는 SPA 편집 시 제공되는 클라이언트-서버 상호 작용에 대한 자세한 개요입니다.
 
@@ -136,7 +136,7 @@ SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 �
 
    **17c** SPA는 업데이트된 구성 요소 구성을 제공합니다.
 
-### 작성 워크플로우 {#authoring-workflow}
+### 작성 워크플로 {#authoring-workflow}
 
 작성 경험을 집중적으로 다루는 자세한 개요를 제공합니다.
 

@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '2009'
 ht-degree: 1%
 
 ---
@@ -248,7 +248,7 @@ REST API에서는 다음 작업이 지원됩니다.
   </tr>
   <tr>
    <td><code>DELETE</code></td>
-   <td>모델을 삭제합니다. 방화벽/프록시 문제를 해결하기 위해 <code>POST</code> 다음을 포함: <code>X-HTTP-Method-Override</code> 값이 있는 헤더 항목 <code>DELETE</code> 도 (으)로 수락됩니다. <code>DELETE</code> 요청.</td>
+   <td>모델을 삭제합니다. 방화벽/프록시 문제를 해결하려면 <code>POST</code> 다음을 포함: <code>X-HTTP-Method-Override</code> 값이 있는 헤더 항목 <code>DELETE</code> 도 (으)로 수락됩니다. <code>DELETE</code> 요청.</td>
   </tr>
  </tbody>
 </table>

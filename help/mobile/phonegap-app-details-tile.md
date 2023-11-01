@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1248'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Apple App Store 또는 Google Play 스토어와 같은 각 공급업체 애플�
 
 **앱 버전** 는 애플리케이션의 작업 버전입니다. 일반적인 우수 사례는 3진수 표기법을 사용하고 첫 번째 릴리스 전에 1.0.0 미만에서 시작하는 것입니다.
 
-**PhoneGap 버전** 는 PhoneGap을 사용하여 응용 프로그램을 컴파일할 버전입니다. 가장 좋은 방법은 최신 기능과 최고의 버그 수정 사항을 얻기 위해 현재 버전을 최신 상태로 유지하는 것입니다.
+**PhoneGap 버전** 는 PhoneGap을 사용하여 응용 프로그램을 컴파일할 버전입니다. 가장 좋은 방법은 최신 기능과 버그 수정 사항을 얻을 수 있도록 현재 버전을 최신 상태로 유지하는 것입니다.
 
 **컨텐츠 업데이트 서버 URL** 는 애플리케이션이 ContentSync 업데이트를 호출하는 데 사용할 URL입니다. Dispatcher URL로 설정하거나 Dispatcher를 사용하지 않는 경우 애플리케이션에 ContentSync 업데이트를 제공하는 데 사용할 게시 인스턴스 중 하나로 설정해야 합니다.
 
@@ -98,7 +98,7 @@ AEM에서 인식하지 못하는 플랫폼의 경우 AEM 개발자가 UI를 확�
 
 #### iOS 메타데이터 {#ios-metadata}
 
-배포를 위해 애플리케이션을 제출하려면 Apple AppStore에 추가 메타데이터가 필요합니다. iOS 메타데이터 섹션은 Apple의 iTMSTransporter 도구에서 관련 Apple 개발자 계정에 메타데이터를 게시하는 데 사용할 수 있는 필수 정보를 수집하려고 합니다.
+Apple AppStore에서 배포를 위해 애플리케이션을 제출하려면 추가 메타데이터가 필요합니다. iOS 메타데이터 섹션은 Apple의 iTMSTransporter 도구에서 관련 Apple 개발자 계정에 메타데이터를 게시하는 데 사용할 수 있는 필수 정보를 수집하려고 합니다.
 
 Apple 관련 메타데이터를 가져오려면 먼저 애플리케이션을 만들어야 합니다 [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). 애플리케이션을 만들 때 Apple은 메타데이터를 확인하고 itunesconnect.apple.com에 업로드하기 위해 Apple iTMSTransporter 도구를 사용하려는 경우 iOS 메타데이터 섹션에 필요한 메타데이터를 생성합니다. 수집할 메타데이터만 가져오려면 iOS 관련 메타데이터를 작성할 필요가 없습니다. iOS과 일반 메타데이터를 병합할 메타데이터를 내보내고 모든 스크린샷을 언제든지 다운로드할 수 있는 zip 파일로 수집할 수 있습니다.
 
