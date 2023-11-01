@@ -1,17 +1,15 @@
 ---
 title: "서신 관리: 문제 해결"
-description: AEM Forms 환경에서 편지를 저장하는 프로세스 중에 발생할 수 있는 오류를 처리합니다.
-uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
+description: AEM Forms 환경에서 편지를 저장하는 프로세스 중에 발생하는 오류를 처리하는 방법에 대해 알아봅니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 feature: Correspondence Management
 exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 5%
+source-wordcount: '215'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 5%
 편지를 저장할 때 다음 오류 중 하나가 표시됩니다.
 
 * 텍스트 모듈에 대한 데이터 바인딩이 없습니다.
-* 다음에 필요한 속성 정보를 제공하십시오
+* 다음에 필요한 속성 정보 제공
 
 ### 원인 {#reason}
 
@@ -50,5 +48,5 @@ ht-degree: 5%
 1. 다음으로 이동 **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** 관리자로 로그인합니다.
 1. 선택 **서신 관리 구성**.
 1. 위치 **서신 관리 구성**, 비활성화 **Letter 캐시 활성화**&#x200B;그런 다음 을 클릭합니다.**저장.**
-1. 사용 **Letter 캐시 활성화** 그런 다음 을 클릭합니다. **저장**.
+1. 확인 **Letter 캐시 활성화** 그런 다음 을 클릭합니다. **저장**.
 1. 편지 보기를 다시 시도하십시오.

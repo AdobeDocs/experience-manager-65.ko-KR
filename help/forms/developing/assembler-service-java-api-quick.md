@@ -1,20 +1,20 @@
 ---
-title: 어셈블러 서비스 Java API 빠른 시작(SOAP)
-description: 어셈블러 서비스 Java API 빠른 시작(SOAP)을 사용하여 PDF 문서를 어셈블하고, 디스어셈블하고, 동적으로 만듭니다.
+title: 어셈블러 서비스 Java&trade, API QuickStart(SOAP)
+description: 어셈블러 서비스 Java&trade; API QuickStart(SOAP)를 사용하여 PDF 문서를 어셈블, 디스어셈블 및 동적으로 작성하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
 
-# 어셈블러 서비스 Java API 빠른 시작(SOAP) {#assembler-service-java-api-quickstart-soap}
+# 어셈블러 서비스 Java™ API 빠른 시작(SOAP) {#assembler-service-java-api-quickstart-soap}
 
 어셈블러 서비스에 Java API 빠른 시작(SOAP)을 사용할 수 있습니다
 
@@ -44,7 +44,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>AEM Forms을 사용한 프로그래밍의 빠른 시작은 JBoss® Application Server 및 Microsoft® Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX®와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 어셈블 {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -736,7 +736,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 문서가 PDF/A를 준수하는지 여부 확인 {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
-다음 Java 코드 예제에서는 입력 PDF 문서가 PDF/A를 준수하는지 여부를 확인합니다. 어셈블러 서비스에 전달되는 입력 PDF 문서의 이름은 입니다 *Loan.pdf*. DDX 문서의 이름은 shell_PDFA.xml입니다. 어셈블러 서비스에서 반환되고 입력 PDF 문서가 PDF/A 규격인지 여부를 지정하는 XML 문서가 result.xml이라는 XML 파일로 저장됩니다. 에 대한 자세한 내용은 *shell_PDFA.xml* 이 코드 예제에 사용된 DDX 문서는 [문서의 PDF/A 호환 여부 확인](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
+다음 Java 코드 예제에서는 입력 PDF 문서가 PDF/A를 준수하는지 여부를 확인합니다. 어셈블러 서비스에 전달되는 입력 PDF 문서의 이름은 입니다 *Loan.pdf*. DDX 문서의 이름은 shell_PDFA.xml입니다. 어셈블러 서비스에서 반환되고 입력 PDF 문서가 PDF/A 규격 문서인지 여부를 지정하는 XML 문서가 result.xml이라는 XML 파일로 저장됩니다. 에 대한 자세한 내용은 *shell_PDFA.xml* 이 코드 예제에 사용된 DDX 문서는 [문서의 PDF/A 호환 여부 확인](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
 ```java
  /*
@@ -1687,7 +1687,7 @@ public class AssemblePDFWithDynamicDDXSOAP {
 
 >[!NOTE]
 >
->`PDFUtility` 은 Acrobat을 사용하여 교정 표시가 된 PDF만 수정할 수 있습니다.
+다음 `PDFUtility` 은 Acrobat을 사용하여 교정 표시가 된 PDF만 수정할 수 있습니다.
 
 ```java
 /*

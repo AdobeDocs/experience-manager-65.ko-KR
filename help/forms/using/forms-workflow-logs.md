@@ -1,23 +1,21 @@
 ---
 title: AEM Forms 워크플로우에서 로그인
-description: AEM Forms 워크플로우 문제를 디버깅하고 AEM Forms 워크플로우에 대한 디버그 로깅을 활성화하여 로그를 봅니다.
-uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
+description: AEM Forms 워크플로우 문제를 디버깅하고 AEM Forms 워크플로우에 대한 디버그 로깅을 활성화하여 로그를 보는 방법에 대해 알아봅니다.
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '292'
 ht-degree: 5%
 
 ---
 
 # AEM Forms 워크플로우에서 로그인{#logging-in-aem-forms-workflows}
 
-Forms 워크플로 단계는 워크플로 관련 문제를 편리하게 디버깅하기 위한 자세한 로그를 제공합니다. AEM Forms 워크플로우에 대한 디버그 로깅을 활성화하여 로그를 봅니다.
+Forms Workflow 단계는 워크플로우 관련 문제를 편리하게 디버깅하기 위한 자세한 로그를 제공합니다. AEM Forms 워크플로우에 대한 디버그 로깅을 활성화하여 로그를 봅니다.
 
 기본적으로 모든 로깅 정보는 **error.log** 파일 위치: */crx-repository/logs/* 디렉토리.
 
@@ -68,7 +66,7 @@ Forms 워크플로 단계는 워크플로 관련 문제를 편리하게 디버�
 
 로그를 사용하여 다음을 평가합니다.
 
-* 올바른 adobe sign 구성을 사용하고 있습니다.
+* 올바른 Adobe Sign 구성을 사용하고 있습니다.
 * 계약을 성공적으로 만들면 Adobe Sign 서비스가 종료됩니다.
 * 문서 서명 단계가 성공 메시지와 함께 종료됩니다.
 
@@ -76,7 +74,7 @@ Forms 워크플로 단계는 워크플로 관련 문제를 편리하게 디버�
 
 ## AEM Forms 워크플로우에 대한 디버그 로깅 활성화 {#enable-debug-logging-for-aem-forms-workflows}
 
-AEM Forms 워크플로우에 대한 디버그 로깅을 활성화하려면 다음 단계를 수행하십시오.
+AEM Forms 워크플로우에 대한 디버그 로깅을 활성화할 수 있도록 다음을 수행합니다.
 
 1. 다음 AEM 웹 콘솔 구성 관리자로 이동합니다.
 

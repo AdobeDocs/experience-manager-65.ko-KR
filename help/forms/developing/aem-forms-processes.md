@@ -1,17 +1,15 @@
 ---
 title: AEM Forms 프로세스 이해
-description: AEM Forms 프로세스에는 양식 작성, 제출, 데이터 처리, 유효성 검사, 통합, 워크플로우 자동화 및 출력 관리가 포함됩니다.
-uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
+description: AEM Forms 프로세스가 양식 작성, 제출, 데이터 처리, 유효성 검사, 통합, 워크플로우 자동화 및 출력 관리를 포함하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
-discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -60,10 +58,10 @@ ht-degree: 0%
    >
    >일반적으로 단기 프로세스는 세 가지 이상의 작업으로 구성됩니다. 워크벤치를 사용하여 프로세스를 생성합니다. (참조: [Workbench 사용](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-   *AEM Forms를 사용한 프로그래밍*&#x200B;에서는 이 단기 프로세스를 프로그래밍 방식으로 호출할 수 있는 다음 방법에 대해 설명합니다.
+   *AEM Forms를 사용한 프로그래밍* 에서는 이 단기 프로세스를 프로그래밍 방식으로 호출할 수 있는 다음 방법에 대해 설명합니다.
 
    * [AEM Forms Remoting을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Flex 애플리케이션 사용)
-   * [호출 API를 사용하여 단기 프로세스 호출](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java 호출 API)
+   * [호출 API를 사용하여 단기 프로세스 호출](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java™ 호출 API)
    * [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (웹 서비스 예)
    * [MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (웹 서비스 예)
    * [SwaRef를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (웹 서비스 예)

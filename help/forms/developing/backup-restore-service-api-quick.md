@@ -1,17 +1,15 @@
 ---
 title: 백업 및 복원 서비스 API빠른 시작
-description: AEM Forms 백업 및 복원 API 빠른 시작을 통해 효율적인 백업 생성 및 복원 프로세스를 사용할 수 있습니다.
-uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
+description: AEM Forms 백업 및 복원 API 빠른 시작을 통해 효율적인 백업 생성 및 복원 프로세스를 활성화하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---

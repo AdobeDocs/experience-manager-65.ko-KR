@@ -1,17 +1,15 @@
 ---
 title: 텍스트 편집기 사용자 지정
-description: AEM Forms 환경에서 텍스트 편집기를 사용자 지정하는 방법을 알아봅니다.
-uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
+description: Adobe Experience Manager Forms 환경에서 텍스트 편집기를 사용자 지정하는 방법을 알아봅니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '604'
 ht-degree: 1%
 
 ---
@@ -29,7 +27,7 @@ ht-degree: 1%
 * 글꼴 패밀리 및 크기, 높이, 문자 간격 및 날짜 형식의 기본값
 * 글머리 기호 들여쓰기
 
-이렇게 하려면 다음을 수행해야 합니다.
+다음 작업을 수행합니다.
 
 1. [CRX에서 tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 지정합니다](#customizefonts)
 1. [클라이언트 컴퓨터에 사용자 정의 글꼴 추가](#addcustomfonts)
@@ -159,14 +157,14 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
       </editorConfig>
       ```
 
-   1. 파일에서 필요한 사항을 변경하여 글꼴 설정에서 다음을 변경합니다.
+   1. 글꼴 설정에서 다음을 변경할 수 있도록 파일에서 필요한 사항을 변경합니다.
 
       * 글꼴 모음 및 크기 추가 또는 제거
       * 높이 및 문자 간격 같은 속성
       * 글꼴 패밀리 및 크기, 높이, 문자 간격 및 날짜 형식의 기본값
       * 글머리 기호 들여쓰기
 
-      예를 들어 Sazanami Mincho Medium이라는 일본어 글꼴을 추가하려면 XML 파일에 다음 항목을 만들어야 합니다. `<font>Sazanami Mincho Medium</font>`. 또한 이 글꼴을 클라이언트 시스템에 설치하여 글꼴 사용자 지정에 액세스하고 작업하는 데 사용해야 합니다. 자세한 내용은 [클라이언트 컴퓨터에 사용자 정의 글꼴 추가](#addcustomfonts).
+      예를 들어 Sazanami Mincho Medium이라는 일본어 글꼴을 추가하려면 XML 파일에 다음 항목을 만들어야 합니다. `<font>Sazanami Mincho Medium</font>`. 또한 글꼴 사용자 지정에 액세스하고 작업하는 데 사용되는 클라이언트 시스템에도 이 글꼴이 설치되어 있어야 합니다. 자세한 내용은 [클라이언트 컴퓨터에 사용자 정의 글꼴 추가](#addcustomfonts).
 
       텍스트의 다양한 측면에 대한 기본값을 변경하고 항목을 제거하여 텍스트 편집기에서 글꼴을 제거할 수도 있습니다.
 
@@ -174,7 +172,7 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
 
 ## 클라이언트 컴퓨터에 사용자 정의 글꼴 추가 {#addcustomfonts}
 
-서신 관리 텍스트 편집기에서 글꼴에 액세스할 때 서신 관리에 액세스하는 데 사용하는 클라이언트 시스템에 글꼴이 있어야 합니다. 텍스트 편집기에서 사용자 지정 글꼴을 사용하려면 먼저 클라이언트 컴퓨터에 설치해야 합니다.
+서신 관리 텍스트 편집기에서 글꼴에 액세스할 때 서신 관리에 액세스하는 데 사용하는 클라이언트 시스템에 글꼴이 있어야 합니다. 텍스트 편집기에서 사용자 지정 글꼴을 사용하려면 먼저 클라이언트 컴퓨터에 해당 글꼴을 설치해야 합니다.
 
 글꼴 설치에 대한 자세한 내용은 다음을 참조하십시오.
 
@@ -183,7 +181,7 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
 
 ## 글꼴 사용자 지정 액세스 {#access-font-customizations}
 
-CRX의 tbxeditor-config.xml 파일에서 글꼴을 변경하고 AEM Forms에 액세스하는 데 사용되는 클라이언트 시스템에 필요한 글꼴을 설치한 후, 변경 사항이 텍스트 편집기에 나타납니다.
+에서 글꼴을 변경한 후 `tbxeditor-config.xml` crx의 파일을 설치하고 AEM Forms에 액세스하는 데 사용된 클라이언트 시스템에 필요한 글꼴을 설치했습니다. 변경 사항이 텍스트 편집기에 나타납니다.
 
 예를 들어 Sazanami Mincho Medium 글꼴은 [CRX에서 tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 지정합니다](#customizefonts) 프로시저는 다음과 같이 텍스트 편집기 UI에 나타납니다.
 

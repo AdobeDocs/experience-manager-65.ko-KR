@@ -1,15 +1,13 @@
 ---
 title: 서신 관리 | 사용자 데이터 처리
-description: AEM Forms 환경에서 서신 관리 및 사용자 데이터 처리 .
-uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
+description: Adobe Experience Manager Forms 환경에서의 서신 관리 및 사용자 데이터 처리에 대해 알아봅니다.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -73,7 +71,7 @@ AEM 배포에 대해 구성된 데이터 저장소 지속성에 따라 초안 �
 
 서신 관리는 초안 및 제출된 편지 인스턴스를 찾고 액세스하는 데 사용할 수 있는 API를 제공합니다. API를 사용하면 편지 인스턴스 ID 또는 서신을 저장하거나 제출한 사용자를 사용하여 편지 인스턴스를 찾고 열 수 있습니다. 자세한 내용은 [편지 인스턴스에 액세스하기 위한 API](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-또는 CRX DELite를 사용하여 AEM 저장소의 편지 인스턴스로 이동할 수 있습니다. 다음을 참조하십시오 [사용자 데이터 및 데이터 저장소](/help/forms/using/correspondence-management-handling-user-data.md#data) 저장된 데이터 및 저장소 위치에 대한 정보입니다.
+또는 CRXDE Lite을 사용하여 AEM 저장소의 편지 인스턴스로 이동할 수 있습니다. 다음을 참조하십시오 [사용자 데이터 및 데이터 저장소](/help/forms/using/correspondence-management-handling-user-data.md#data) 저장된 데이터 및 저장소 위치에 대한 정보입니다.
 
 ### 사용자 데이터 삭제 {#delete-user-data}
 

@@ -7,7 +7,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
@@ -71,7 +71,7 @@ ht-degree: 1%
 
       >[!NOTE]
       >
-      >을(를) 변경하지 마십시오 `/libs` 분기입니다. 이 분기는 다음과 같은 경우 언제든지 변경될 수 있으므로 수행한 모든 변경 사항이 손실될 수 있습니다.
+      >을(를) 변경하지 마십시오 `/libs` 분기입니다. 이 분기는 다음과 같은 모든 변경 사항에 영향을 받기 때문에 변경한 사항이 손실될 수 있습니다.
       >
       >    
       >    
@@ -83,7 +83,7 @@ ht-degree: 1%
 
    1. **확인**&#x200B;을 클릭합니다. 지정된 경로에 css 폴더가 만들어집니다.
 
-1. 앱 폴더에서 이라는 폴더를 만듭니다. `imgs` (ccrui 폴더의) imgs 폴더와 유사한 경로/구조
+1. 앱 폴더에서 이라는 폴더를 만듭니다. `imgs` 와 유사한 경로/구조 `imgs` 폴더(ccrui 폴더).
 
    1. 마우스 오른쪽 단추 클릭 **imgs** 다음 경로에 있는 폴더를 선택하고 **오버레이 노드**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. 오버레이 노드 대화 상자에 다음 값이 있는지 확인합니다.

@@ -1,14 +1,14 @@
 ---
 title: AEM Forms JEE 패치 설치 관리자
-description: AEM 6.5 Forms 구성 요소의 문제를 해결하기 위한 AEM Forms JEE 패치 설치 관리자
+description: AEM Forms JEE 패치 설치 관리자를 사용하여 AEM 6.5 Forms 구성 요소의 문제를 해결하는 방법에 대해 알아봅니다.
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 19%
+source-wordcount: '535'
+ht-degree: 20%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->[지원 문의](https://www.adobe.com/kr/account/sign-in.supportportal.html) 를 참조하십시오.
+>[지원 문의](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) 를 참조하십시오.
 
 ## 패치 설치 관리자 정보 {#about-the-patch-installer}
 
@@ -39,10 +39,10 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
       * (Windows 32비트) `Windows\Disk1\InstData\VM`
       * (Windows 64비트) `Windows_64Bit`\ `Disk1\InstData\VM`
 
-   * **리눅스**
+   * **Linux®**
 적절한 디렉터리로 이동한 다음 명령 프롬프트에서 `./aem65_cfp_install.bin`.
 
-      * (Linux) `Linux/Disk1/InstData/NoVM`
+      * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    설치 과정을 안내하는 설치 마법사가 시작됩니다.
 
@@ -52,8 +52,8 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 1. 사전 설치 요약 정보를 읽고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 1. 설치가 완료되면 **[!UICONTROL 다음]**&#x200B;을 클릭하여 설치된 파일에 빠른 수정 업데이트를 적용합니다.
 
-1. **[Windows 전용]:** 다음 단계 중 하나를 수행합니다.
-   * 다음 중 하나를 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 **구성 관리자** 를 사용하여 **ConfigurationManager.bat** 파일 위치: `[aem-forms root]\configurationManager\bin`.
+1. **[Windows 전용]:** 다음을 수행합니다.
+   * 다음 중 하나를 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 **구성 관리자** 를 사용하여 **ConfigurationManager.bat** 파일 위치 `[aem-forms root]\configurationManager\bin`.
 
    * 또는 을 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음으로 이동 *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉터리 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일.
 
@@ -69,16 +69,16 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 
 1. 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 *AEM 양식 구성 및 배포* 섹션.
 
-   * [JBoss용 AEM 양식 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [WebSphere용 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [JBoss용 AEM 양식 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [WebSphere용 AEM Forms 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
-1. (JBoss만 해당) 패치를 설치하고 서버를 구성한 후 JBoss 애플리케이션 서버의 tmp 및 작업 디렉토리를 삭제합니다.
+1. (JBoss®만 해당) 패치를 설치하고 서버를 구성한 후 JBoss® 애플리케이션 서버의 tmp 및 작업 디렉토리를 삭제합니다.
 
 ## 배포 후 구성 {#post-deployment-configurations}
 
 ### SAML 구성 {#saml-configurations}
 
-SAML 인증이 구성되어 있고 큰 IDP 메타데이터와 관련된 문제가 있는 경우 패치를 설치한 후 다음을 수행하십시오.
+SAML 인증이 구성되어 있고 큰 IDP 메타데이터와 관련된 문제가 있는 경우 패치를 설치한 후 다음 작업을 수행하십시오.
 
 1. 응용 프로그램 서버에서 다음 시스템 속성을 설정합니다.\
    `um.saml.enable.large.xml=true`
@@ -91,4 +91,4 @@ SAML 인증이 구성되어 있고 큰 IDP 메타데이터와 관련된 문제�
 * 문서 보안
 * Foundation JEE
 
-[지원 문의](https://www.adobe.com/kr/account/sign-in.supportportal.html)
+[지원 문의](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)

@@ -1,16 +1,14 @@
 ---
 title: 서신 관리 솔루션 구성
-description: AEM Forms 환경에서 서신 관리 솔루션을 구성합니다.
-uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
+description: AEM Forms 환경에서 서신 관리 솔루션을 구성하는 방법을 알아봅니다.
 topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
 feature: Correspondence Management
 exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '301'
 ht-degree: 1%
 
 ---
@@ -37,7 +35,7 @@ ht-degree: 1%
 
 ## ActivationManagerImpl(공개 인스턴스 활성화 관리자)에 대한 게시 인스턴스 URL 정의 {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
-공개 인스턴스 활성화 관리자에 대한 게시 인스턴스 URL을 정의하는 단계는 다음과 같습니다.
+공개 인스턴스 활성화 관리자에 대한 게시 인스턴스 URL을 정의할 수 있도록 다음 단계를 수행합니다.
 
 1. 다음으로 이동 *https://:&lt;authorhost>:&lt;authorport>/lc/system/console/configMgr*. OSGi 관리 콘솔 사용자 자격 증명으로 로그인합니다. 기본 자격 증명은 관리자/관리자입니다.
 1. 을(를) 찾아 클릭합니다 **[!UICONTROL 편집]** 아이콘 옆에 있는 **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]** 설정.

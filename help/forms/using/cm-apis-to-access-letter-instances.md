@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -134,8 +134,8 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 편지 인스턴스는 제출됨 또는 초안 유형일 수 있습니다. 두 문자 인스턴스 유형을 모두 열면 서로 다른 동작이 표시됩니다.
 
-* 제출된 편지 인스턴스의 경우 편지 인스턴스를 나타내는 PDF이 열립니다. 서버에서 지속되는 제출된 Letter 인스턴스에는 dataXML 및 처리된 XDP도 포함되어 있으며, 이를 사용하여 PDF/A 작성과 같은 맞춤형 사용 사례를 완수하고 추가로 사용할 수 있습니다.
-* 초안 편지 인스턴스의 경우, 서신 만들기 UI가 초안을 만든 시간의 정확한 이전 상태로 다시 로드됩니다
+* 제출된 편지 인스턴스가 있으면 편지 인스턴스를 나타내는 PDF이 열립니다. 서버에서 지속되는 제출된 Letter 인스턴스에는 dataXML 및 처리된 XDP도 포함되어 있으며, 이를 사용하여 PDF/A 작성과 같은 맞춤형 사용 사례를 완수하고 추가로 사용할 수 있습니다.
+* 초안 편지 인스턴스가 있는 경우 응답 만들기 UI가 초안을 만들 때의 정확한 이전 상태로 다시 로드됩니다
 
 ### 초안 편지 인스턴스 열기  {#opening-draft-letter-instance-nbsp}
 

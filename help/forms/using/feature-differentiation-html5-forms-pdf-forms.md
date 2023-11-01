@@ -1,18 +1,16 @@
 ---
 title: HTML 5 양식과 PDF forms 간의 차별화된 기능
-description: HTML 5 양식과 PDF forms 간의 차이점에 대해 알아봅니다.
-uuid: 6ddee197-d108-4897-9976-77d115a06504
+description: HTML 5 양식과 PDF forms 간의 기능 차이점에 대해 알아봅니다.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '447'
 ht-degree: 2%
 
 ---
@@ -50,7 +48,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>페이지 매김<br /> </td>
-   <td><p>HTML5 폼은 패널과 상자로 나뉘어 PDF forms과 비슷한 모양을 제공합니다. 페이지 크기는 동적으로 계산됩니다. HTML5 형식의 페이지 콘텐츠가 모두 삭제되거나 숨김으로 표시되면 빈 페이지가 숨겨지고 빈 페이지의 위와 아래에 있는 페이지 사이에 빈 공간(빈 공간)이 표시되지 않습니다.</p> <p>데이터 병합 또는 스크립트가 페이지에 콘텐츠를 추가하는 경우, 새로 추가된 콘텐츠에 맞게 페이지 길이가 확장됩니다. 새로 추가된 콘텐츠를 수용하기 위해 양식에 새 페이지가 추가되지 않습니다. </p> <p><strong>참고:</strong> HTML5 양식의 모든 페이지 내용을 삭제하거나 숨김으로 표시하면 빈 페이지(공백)는 첫 번째 페이지와 두 번째 페이지 사이에 표시되지만 다른 페이지 사이에는 표시되지 않습니다.</p> </td>
+   <td><p>HTML5 폼은 패널과 상자로 나뉘어 PDF forms과 비슷한 모양을 제공합니다. 페이지 크기는 동적으로 계산됩니다. HTML5 양식에 있는 페이지의 모든 콘텐츠가 삭제되거나 숨겨진 것으로 표시되면 빈 페이지가 숨겨집니다. 빈 페이지의 위와 아래에 있는 페이지 사이에는 빈 공간(빈 공간)이 표시되지 않습니다.</p> <p>데이터 병합 또는 스크립트가 페이지에 콘텐츠를 추가하는 경우, 새로 추가된 콘텐츠에 맞게 페이지 길이가 확장됩니다. 새로 추가된 콘텐츠를 수용하기 위해 양식에 새 페이지가 추가되지 않습니다. </p> <p><strong>참고:</strong> HTML5 양식의 모든 페이지 내용을 삭제하거나 숨김으로 표시하면 빈 페이지(공백)는 첫 번째 페이지와 두 번째 페이지 사이에 표시되지만 다른 페이지 사이에는 표시되지 않습니다.</p> </td>
    <td>PDF의 페이지 매김 은 병합된 데이터 콘텐츠 또는 사용자 콘텐츠에 따라 다르며 페이지 수는 그에 따라 증가/감소합니다.</td>
   </tr>
   <tr>
@@ -65,7 +63,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>XFA 스크립트 API</td>
-   <td>가장 일반적으로 사용되는 XFA 스크립트 구문을 지원합니다. 지원되는 구문에 대한 자세한 내용은 <a href="/help/forms/using/scripting-support.md">스크립팅 지원</a>.</td>
+   <td>가장 일반적으로 사용되는 XFA 스크립트 구문을 지원합니다. 지원되는 구문의 자세한 목록은 다음을 참조하십시오. <a href="/help/forms/using/scripting-support.md">스크립팅 지원</a>.</td>
    <td>모든 XFA 스크립트 구문을 지원합니다.</td>
   </tr>
   <tr>

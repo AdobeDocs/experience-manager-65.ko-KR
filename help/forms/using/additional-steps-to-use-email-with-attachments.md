@@ -1,10 +1,10 @@
 ---
-title: 첨부 파일이 포함된 이메일을 받는 추가 단계
-description: JEE 플랫폼에서 AEM Forms에 대한 첨부 파일이 있는 이메일을 검색할 수 없는 경우 오류를 수정합니다.
+title: 첨부 파일이 있는 이메일을 받는 추가 단계
+description: JEE 플랫폼에서 AEM Forms용 첨부 파일이 있는 이메일을 검색할 수 없는 경우 오류를 해결하는 방법에 대해 알아봅니다.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,7 @@ ht-degree: 0%
 # JEE 플랫폼에서 AEM Forms에 대한 첨부 파일이 있는 이메일을 가져올 수 없음{#unable-to-get-email-with-attachments}
 
 이 문제는 다음 버전에 적용됩니다.
+
 * Experience Manager 6.5 Forms
 
 ## 문제 {#issue}
@@ -37,7 +38,7 @@ ht-degree: 0%
 
 1. 설치 `java.mail-1.5.jar` 3단계에서 가져온 것입니다. 이 단계에서는 JEE 배포의 Sling 속성을 다시 시작합니다. 에 설치된 번들 대기 `http://<server name>:<port>/lc/system/console/bundles` 상태를 다음으로 표시 **활성**.
 
-   >참고: 이 경우 상태는 여전히 입니다. **활성**, 다시 시작   **JBoss®** 다음에서 **서비스 콘솔**.
+   >상태가 여전히 인 경우 **활성**, 다시 시작   **JBoss®** 다음에서 **서비스 콘솔**.
 
 
 1. 설치 `javax.mail-1.5.6.redhat-1.jar`5단계를 사용하여 파일을 다운로드했습니다.

@@ -1,34 +1,32 @@
 ---
-title: Distiller 서비스 Java API 빠른 시작(SOAP)
-description: Distiller 서비스는 PostScript, EPS 및 PRN 파일을 일반적으로 대량 인쇄에서 전자 문서로 변환하는 데 사용되는 PDF으로 변환합니다.
-uuid: 7781f074-cea4-4109-892b-118cfad4ec36
+title: Distiller 서비스 Java&trade, API 빠른 시작(SOAP)
+description: Distiller 서비스에서 PostScript, EPS 및 PRN 파일을 일반적으로 대량 인쇄-전자 문서 변환에 사용되는 PDF으로 변환하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 role: Developer
 exl-id: c5bf9184-a837-4033-9962-7b3052498e75
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
 
-# Distiller 서비스 Java API 빠른 시작(SOAP) {#distiller-service-java-api-quickstart-soap}
+# Distiller 서비스 Java™ API 빠른 시작(SOAP) {#distiller-service-java-api-quickstart-soap}
 
-Java API 빠른 시작(SOAP)은 Distiller® 서비스에 사용할 수 있습니다.
+Java™ API 빠른 시작(SOAP)은 Distiller® 서비스에 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PostScript 파일을 PDF 문서로 변환](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java를 사용하여 PostScript 파일을 PDF 문서로 변환](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms를 사용한 프로그래밍의 빠른 시작은 JBoss® Application Server 및 Microsoft® Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX®와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PostScript 파일을 PDF 문서로 변환 {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java™ API를 사용하여 PostScript 파일을 PDF 문서로 변환 {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
 다음 코드 예제에서는 이라는 PostScript 파일을 *Loan.ps* 을(를) PDF 파일로 *Loan.pdf*. (참조: [포스트스크립트를 PDF 문서로 변환](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 
