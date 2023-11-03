@@ -495,7 +495,7 @@ Maven과 같은 도구를 사용하거나 이 섹션에 표시된 대로 관련 
 | {buttonRefresh} | 현재 보기를 새로 고칩니다. |
 | {buttonBack} | 포틀릿을 게시 보기로 다시 전환합니다. |
 
-#### 단추 {#buttons}
+#### 버튼 {#buttons}
 
 단추는 표시되는 보기에서 button.html에 정의된 동일한 공통 HTML을 사용합니다.
 

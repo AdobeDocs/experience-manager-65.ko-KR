@@ -16,7 +16,7 @@ ht-degree: 13%
 Adobe Experience Manager(AEM)는 상업용 웹 사이트 및 관련 서비스를 구축, 관리 및 배포하기 위한 웹 기반 클라이언트 서버 시스템입니다. 여러 인프라 수준 및 애플리케이션 수준 기능을 하나의 통합 패키지로 결합합니다.
 
 * [자세한 내용은 설명서 를 참조하십시오](/help/sites-deploying/home.md)
-* [AEM에 대한 최근 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
+* [AEM에 대한 최근 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)
 
 ## AEM 소프트웨어는 어디에서 다운로드합니까? {#download}
 
