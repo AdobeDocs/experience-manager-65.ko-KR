@@ -1,20 +1,18 @@
 ---
 title: AEM 6.5 Forms에서 적응형 Forms 핵심 구성 요소를 활성화하는 방법
-seo-title: How to enable Adaptive Forms Core Components on AEM 6.5 Forms?
 description: AEM 6.5 Forms 환경에서 적응형 Forms 핵심 구성 요소를 활성화하는 데 도움이 되는 단계별 안내서입니다.
-seo-description: Step-by-Step guide to help you enable Adaptive Forms Core Components on an AEM 6.5 Forms environment.
 keywords: 핵심 구성 요소, 핵심 구성 요소 적응형 Forms, 6.5의 핵심 구성 요소, AEM 6.5의 적응형 Forms 핵심 구성 요소, AEM 6.5의 AF 핵심 구성 요소, AEM 6.5 Forms 핵심 구성 요소 활성화
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
+source-git-commit: 1da3abac8a7f09d41127818a5abacf29524f1365
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 21%
+source-wordcount: '990'
+ht-degree: 19%
 
 ---
-
 
 # AEM 6.5 Forms에서 적응형 Forms 핵심 구성 요소 활성화 {#enable-adaptive-forms-core-components}
 
@@ -27,10 +25,9 @@ ht-degree: 21%
 
 적응형 Forms 핵심 구성 요소를 활성화하면 만들기, 게시 및 전달을 시작할 수 있습니다 [적응형 Forms 기반의 핵심 구성 요소](create-an-adaptive-form-core-components.md) 및 [헤드리스 적응형 Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) AEM 6.5 Forms 환경에서.
 
-AEM 6.5 Forms 환경에서 HAdapptive Forms 핵심 구성 요소를 활성화하려면 다음을 설정 및 배포합니다. [AEM Archetype 41 이상](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 모든 작성자 및 게시 인스턴스에 대한 기반 프로젝트(양식 옵션 활성화).
+AEM 6.5 Forms 환경에서 적응형 Forms 핵심 구성 요소를 활성화하려면 다음을 설정 및 배포하십시오. [AEM Archetype 41 이상](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 모든 작성자 및 게시 인스턴스에 대한 기반 프로젝트(양식 옵션 활성화).
 
-이 문서에서는 적응형 Forms 핵심 구성 요소를 활성화하기 위해 AEM 6.5 Forms 환경에서 AEM Archetype 41 이상 프로젝트를 설정하고 배포하는 방법에 대한 자세한 지침을 제공합니다.
-
+이 문서에서는 적응형 Forms 핵심 구성 요소를 활성화하기 위해 AEM 6.5 Forms 환경에서 AEM Archetype 41 이상 프로젝트를 설정하고 배포하는 방법에 대한 자세한 지침을 제공합니다. 다음 목록을 참조하십시오. **AEM 6.5** Forms 핵심 구성 요소 활성화를 위한 호환 버전:
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -107,7 +104,16 @@ AEM Archetype 41을 생성하려면 [나중에](https://github.com/adobe/aem-pro
 1. 최신 버전의 Forms 핵심 구성 요소를 포함하도록 프로젝트 업데이트:
 
    1. 를 엽니다. [AEM Archetype 프로젝트 폴더]/pom.xml을 참조하십시오.
-   1. 버전 설정 `core.forms.components.version` 및 `core.forms.components.af.version` 끝 [최신 Forms 핵심 구성 요소](https://github.com/adobe/aem-core-forms-components/tree/release/650) 버전.
+   1. 버전 설정 `core.forms.components.version` 및 `core.forms.components.af.version` 끝 [최신 Forms 핵심 구성 요소](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) 버전 및 둘 다에 와 동일한 버전이 있는지 확인합니다. **Forms 핵심 구성 요소** 표에 언급된 버전 `core.wcm.components.version` 에 주어진 대로 **WCM 코어 구성 요소**.
+
+      >[!WARNING]
+      >
+      >* 을 사용하여 Archetype 프로젝트를 만드는 경우 `version 45`, [AEM Archetype 프로젝트 폴더]/pom.xml 은 처음에 forms 핵심 구성 요소 버전을 다음으로 설정합니다. `1.1.28`. Archetype 프로젝트를 빌드하거나 배포하기 전에 Forms 핵심 구성 요소 버전을 다음으로 업데이트합니다. `1.1.26`.
+
+
+      >[!NOTE]
+      >
+      >* 다른 토폴로지를 설정하는 경우 제출, 미리 채우기 및 기타 URL을 Dispatcher 레이어의 허용 목록에 추가하다에 추가해야 합니다.
 
    1. 파일을 저장하고 닫습니다.
 
