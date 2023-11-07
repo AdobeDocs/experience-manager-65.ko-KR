@@ -7,9 +7,9 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3264'
+source-wordcount: '3263'
 ht-degree: 16%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 16%
 
 | 관련된 담당자에 대한 가치 제안 | Adobe 제공 | 관련 표면 |
 |---|---|---|
-| 크리에이티브 사용자가에서 에셋 검색 [!DNL Experience Manager], 열기 및 사용, 변경 내용 편집 및 업로드 [!DNL Experience Manager]및 새 파일을에 업로드합니다 [!DNL Experience Manager], 빠짐 없이 [!DNL Creative Cloud] 앱. | [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign]입니다. |
+| 크리에이티브 사용자가에서 에셋 검색 [!DNL Experience Manager], 열어서 사용하고, 변경 내용을 편집하고, 업로드하십시오. [!DNL Experience Manager]및 새 파일을에 업로드합니다 [!DNL Experience Manager], 빠짐 없이 [!DNL Creative Cloud] 앱. | [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign]입니다. |
 | 비즈니스 사용자는에 에셋 열기 및 사용, 변경 사항 편집 및 업로드 간소화 [!DNL Experience Manager]및 새 파일을에 업로드 [!DNL Experience Manager] 데스크탑 환경에서. Adobe이 아닌 자산 유형을 포함하여 기본 데스크탑 애플리케이션에서 모든 자산 유형을 열기 위해 일반 통합을 사용합니다. | [Experience Manager 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] win 및 Mac 데스크탑의 데스크탑 앱 |
 | 마케터와 비즈니스 사용자는 다음을 검색, 미리보기, 라이센스 부여, 저장 및 관리 [!DNL Adobe Stock] 내부 자산 [!DNL Experience Manager]. 라이센스가 부여되고 저장된 자산은 다음을 제공합니다. [!DNL Adobe Stock] 거버넌스 향상을 위한 메타데이터 | [Experience Manager 및 Adobe Stock 통합](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 웹 인터페이스 |
 

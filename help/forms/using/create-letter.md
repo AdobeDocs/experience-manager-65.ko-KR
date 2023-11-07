@@ -9,9 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3983'
+source-wordcount: '3979'
 ht-degree: 2%
 
 ---
@@ -138,7 +138,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td>저장됨<br /> 중앙 저장소의 이미지</td> 
-   <td>로고 및 서명 이미지와 같은 이미지. 기업 로고와 같은 이미지는 서신의 대부분 또는 전체에 나타납니다. 서명 이미지는 서신과 서신을 대신하여 발송되는 사람에게 해당됩니다.</td> 
+   <td>로고 및 서명 이미지와 같은 이미지. 기업 로고와 같은 이미지는 대부분 또는 모든 서신에 나타납니다. 서명 이미지는 서신과 서신을 대신하여 발송되는 사람에게 해당됩니다.</td> 
    <td><p>AEM Assets(DAM)에 저장된 이미지<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 

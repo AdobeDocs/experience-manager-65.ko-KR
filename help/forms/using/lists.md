@@ -8,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '6913'
+source-wordcount: '6911'
 ht-degree: 0%
 
 ---
@@ -209,7 +209,7 @@ ht-degree: 0%
 
 ## 목록 {#list}
 
-목록은 텍스트, (기타) 목록, 조건 및 이미지를 포함한 문서 조각 그룹입니다. 목록 요소의 순서를 고정하거나 편집할 수 있습니다. 편지를 만드는 동안 목록 요소 중 일부 또는 모두를 사용하여 재사용 가능한 요소 패턴을 복제할 수 있습니다. 목록은 기본적으로 다른 대상 내에 중첩할 수 있는 대상으로 동작합니다.
+목록은 텍스트, (기타) 목록, 조건 및 이미지를 포함한 문서 조각 그룹입니다. 목록 요소의 순서를 고정하거나 편집할 수 있습니다. 편지를 만드는 동안 일부 또는 모든 목록 요소를 사용하여 재사용 가능한 요소 패턴을 복제할 수 있습니다. 목록은 기본적으로 다른 대상 내에 중첩할 수 있는 대상으로 동작합니다.
 
 ### 목록 구현 {#implementing-lists}
 

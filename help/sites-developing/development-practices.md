@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Jackalope 및 Prosper와 같은 사용자 정의 프레임워크를 사용하여
 
 ### 소년 Scout 규칙 준수 {#follow-the-boy-scout-rule}
 
-소년 Scout은 &quot;발견한 것보다 더 잘 내버려두라&quot;라는 규칙을 가지고 있습니다. 개발팀 구성원 모두가 이 규칙을 준수하고 문제가 발생했을 때 무언가를 정리하는 한, 코드는 지속적으로 향상될 것입니다.
+소년 Scout은 &quot;발견한 것보다 더 잘 내버려두라&quot;라는 규칙을 가지고 있습니다. 개발팀의 모든 구성원이 이 규칙을 준수하고 문제가 발생했을 때 무언가를 정리하는 한, 코드는 지속적으로 개선됩니다.
 
 ### YAGNI 기능 구현 방지 {#avoid-implementing-yagni-features}
 

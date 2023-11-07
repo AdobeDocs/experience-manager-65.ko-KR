@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1252'
 ht-degree: 3%
 
 ---
@@ -205,7 +205,7 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
 
 * **노드의 속성을 유지하면서 노드의 하위 항목 숨기기**
 
-  노드, 해당 속성 및 하위 항목이에 정의되어 있습니다 `/libs`. 노드 및 해당 속성은 `/apps` 오버레이/재정의하지만 하위 노드의 일부 또는 전부는 `/apps` 오버레이/무시.
+  노드, 해당 속성 및 하위 항목이에 정의되어 있습니다 `/libs`. 노드 및 해당 속성은 `/apps` 오버레이/재정의하지만 일부 또는 모든 하위 노드가 `/apps` 오버레이/무시.
 
    1. 아래에 해당 노드 만들기 `/apps`
    1. 속성 만들기 `sling:hideChildren`:

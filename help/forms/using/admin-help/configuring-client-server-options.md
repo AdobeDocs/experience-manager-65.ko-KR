@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '10229'
+source-wordcount: '10228'
 ht-degree: 0%
 
 ---
@@ -772,7 +772,7 @@ Document Security를 사용하면 사용자가 Document Security 서버에 연�
 
 클라이언트 애플리케이션이 문서 보안과의 링크를 설정하려고 하면 애플리케이션, 버전 및 플랫폼 정보를 제공합니다. Document Security는 이 정보를 Document Security 구성 파일에서 얻은 거부 설정과 비교합니다.
 
-거부 설정에는 몇 가지 거부 조건 집합이 포함될 수 있습니다. 한 세트의 모든 속성이 일치하는 경우, 요청하는 애플리케이션은 문서 보안 서비스에 대한 액세스가 거부된다.
+거부 설정에는 몇 가지 거부 조건 집합이 포함될 수 있습니다. 한 세트의 모든 속성이 일치하는 경우, 요청하는 응용 프로그램은 문서 보안 서비스에 대한 액세스가 거부됩니다.
 
 서비스 거부 기능을 사용하려면 클라이언트 응용 프로그램에서 document security C++ Client SDK 버전 8.2 이상을 사용해야 합니다. 다음 Adobe 제품은 문서 보안 서비스를 요청할 때 제품 정보를 제공합니다.
 

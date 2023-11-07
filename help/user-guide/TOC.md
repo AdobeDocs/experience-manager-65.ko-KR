@@ -6,9 +6,9 @@ user-guide-title: AEM 6.5 사용 안내서
 user-guide-description: AEM 6.5의 이해, 설치, 관리 및 사용에 필요한 모든 필수 리소스에 대한 개요입니다.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '60'
+source-wordcount: '59'
 ht-degree: 8%
 
 ---

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Headless 콘텐츠 설계 여정
 description: Adobe Experience Manager의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아봅니다.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 81%
+source-wordcount: '730'
+ht-degree: 79%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 81%
 
 ![클래식 전체 스택 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-전체 스택 CMS에서 콘텐츠 조작에 대한 모든 기능은 CMS에 있습니다. 시스템 기능은 CMS 스택의 다양한 구성 요소를 구성합니다. 전체 스택 솔루션은 장점이 많습니다.
+전체 스택 CMS에서 콘텐츠를 조작하는 모든 기능은 CMS에 있습니다. 시스템 기능은 CMS 스택의 다양한 구성 요소를 구성합니다. 전체 스택 솔루션은 장점이 많습니다.
 
 * 유지 관리할 한 개의 시스템이 있습니다.
 * 콘텐츠는 중앙 집중식으로 관리됩니다.

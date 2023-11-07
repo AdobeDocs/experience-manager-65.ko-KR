@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1791'
 ht-degree: 8%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 8%
 
 ### 에셋 수집 {#ingesting-assets}
 
-자산이 시스템으로 흡수될 때 성능과 안정성은 중요한 관심사이다. 많은 양의 데이터를 시스템에 로드하기 때문에 시스템이 수행되는지 그리고 시스템이 필요한 시간을 최소화할 수 있는지 그리고 특히 이미 프로덕션 상태에 있는 시스템에서 시스템 충돌을 야기할 수 있는 시스템 오버로드를 방지해야 합니다.
+자산이 시스템으로 흡수될 때 성능과 안정성은 중요한 관심사이다. 많은 양의 데이터를 시스템에 로드하기 때문에 시스템이 제대로 작동하는지 확인하여 필요한 시간을 최소화하고 시스템 오버로드를 방지해야 합니다. 그러면 시스템 충돌이 발생할 수 있으며, 특히 이미 운영 중인 시스템에서 그러할 수 있습니다.
 
 에셋을 시스템으로 로드하는 방법에는 HTTP를 사용하는 푸시 기반 접근 방식과 JCR API를 사용하는 풀 기반 접근 방식이 있습니다.
 

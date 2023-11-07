@@ -1,5 +1,5 @@
 ---
-title: CIF 코어 구성 요소 사용자 지정
+title: CIF 핵심 구성 요소 사용자 지정
 description: Adobe Experience Manager CIF 핵심 구성 요소를 사용자 지정하는 방법을 알아봅니다. 이 튜토리얼에서는 비즈니스별 요구 사항을 충족하도록 CIF 핵심 구성 요소를 안전하게 확장하는 방법을 다룹니다. GraphQL 쿼리를 확장하여 사용자 지정 특성을 반환하고 CIF 핵심 구성 요소에 새 특성을 표시하는 방법을 알아봅니다.
 sub-product: Commerce
 topics: Development
@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 1d914b12c3279bacaf5cabb3b1953e927c04bad1
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2567'
 ht-degree: 3%
 
 ---
 
-# Adobe Experience Manager CIF 핵심 구성 요소 사용자 지정 {#customize-cif-components}
+# Adobe Experience Manager CIF 핵심 구성 요소 맞춤화 {#customize-cif-components}
 
-다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) Adobe Commerce에서 사용자 지정 특성을 표시할 구성 요소입니다. Adobe Experience Manager(AEM)와 Adobe Commerce 간의 GraphQL 통합 및 CIF 핵심 구성 요소에서 제공하는 확장 후크에 대해서도 자세히 알아봅니다.
+다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) Adobe Commerce에서 사용자 지정 특성을 표시할 구성 요소입니다. 또한 AEM(Adobe Experience Manager)와 Adobe Commerce 간의 GraphQL 통합 및 CIF 핵심 구성 요소에서 제공하는 확장 후크에 대해 자세히 알아봅니다.
 
 >[!TIP]
 >
@@ -44,7 +44,7 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
 >[!NOTE]
 >
->**기존 프로젝트를 마음껏 사용** (CIF가 포함된 AEM Project Archetype 기반) 이 섹션을 건너뜁니다.
+>**기존 프로젝트를 마음껏 사용** (CIF이 포함된 AEM Project Archetype 기반) 이 섹션을 건너뜁니다.
 
 1. 다음 git 명령을 실행하여 프로젝트를 복제합니다.
 
@@ -196,7 +196,7 @@ Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **
 
    ![핵심 위치 IDE](../assets/customize-cif-components/core-location-ide.png)
 
-   `MyProductTeaser.java` 는 CIF를 확장하는 Java™ 인터페이스입니다 [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) 인터페이스.
+   `MyProductTeaser.java` 는 CIF을 확장하는 Java™ 인터페이스입니다 [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) 인터페이스.
 
    이름이 인 새 메서드가 이미 추가되었습니다. `isShowBadge()` 제품이 &quot;신규&quot;로 간주되는 경우 배지를 표시합니다.
 
@@ -236,7 +236,7 @@ Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **
 
    이렇게 하면 구현에서 작성해야 하는 Java™ 코드의 양이 최소화됩니다.
 
-1. AEM CIF 코어 구성 요소에서 제공하는 추가 확장 지점 중 하나는 입니다. `AbstractProductRetriever` 특정 제품 속성에 대한 액세스를 제공합니다. Inspect `initModel()` 방법:
+1. AEM CIF 핵심 구성 요소에서 제공하는 추가 확장 지점 중 하나는 입니다. `AbstractProductRetriever` 특정 제품 속성에 대한 액세스를 제공합니다. Inspect `initModel()` 방법:
 
    ```java
    import javax.annotation.PostConstruct;
@@ -332,11 +332,11 @@ Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **
 
 AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크업을 수정하는 것입니다. 이 작업은 다음을 재정의하여 수행됩니다. [HTL 스크립트](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 구성 요소가 마크업을 렌더링하는 데 사용하는 경우입니다. HTML 템플릿 언어(HTL)는 AEM 구성 요소가 작성된 콘텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어이므로 구성 요소를 재사용할 수 있습니다. 예를 들어 제품 티저를 반복하여 재사용하여 다른 제품을 표시할 수 있습니다.
 
-이 경우 티저의 맨 위에 배너를 렌더링하여 사용자 지정 속성에 따라 제품이 &quot;친환경적&quot;임을 표시하려고 합니다. 의 디자인 패턴 [마크업 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) 구성 요소 는 실제로 AEM CIF 핵심 구성 요소뿐만 아니라 모든 AEM 구성 요소에 대해 표준입니다.
+이 경우 티저의 맨 위에 배너를 렌더링하여 사용자 지정 속성에 따라 제품이 &quot;친환경적&quot;임을 표시하려고 합니다. 의 디자인 패턴 [마크업 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) 구성 요소 는 실제로 모든 AEM 구성 요소에 대해 표준이며 AEM CIF 핵심 구성 요소에만 표준이 아닙니다.
 
 >[!NOTE]
 >
->이 제품 티저 또는 CIF 페이지 구성 요소와 같은 CIF 제품 및 범주 선택기를 사용하여 구성 요소를 사용자 지정하는 경우 필요한 을 포함해야 합니다 `cif.shell.picker` 구성 요소 대화 상자의 clientlib. 다음을 참조하십시오 [CIF 제품 및 범주 선택기 사용](use-cif-pickers.md) 을 참조하십시오.
+>이 제품 티저나 CIF 페이지 구성 요소와 같은 CIF 제품 및 카테고리 선택기를 사용하여 구성 요소를 사용자 지정하는 경우 필요한 을(를) 포함해야 합니다 `cif.shell.picker` 구성 요소 대화 상자의 clientlib. 다음을 참조하십시오 [CIF 제품 및 범주 선택기 사용](use-cif-pickers.md) 을 참조하십시오.
 
 1. IDE에서 를 탐색하고 확장합니다. `ui.apps` 모듈을 만들고 폴더 계층 구조를 확장합니다. `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` 및 검사 `.content.xml` 파일.
 

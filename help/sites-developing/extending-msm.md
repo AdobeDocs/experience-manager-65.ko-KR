@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2578'
+source-wordcount: '2577'
 ht-degree: 62%
 
 ---
@@ -149,7 +149,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 * 재설정 값은 롤아웃 재설정 모드를 나타냅니다.
 
-이러한 오브젝트에서 `LiveCopy`에 대해 다음과 같은 모든 정보를 얻을 수 있습니다. 또한 `Resource` 오브젝트를 사용하여 `ResourceResolver`, `Session` 및 `Node` 오브젝트를 얻을 수 있습니다. 이러한 오브젝트는 저장소 콘텐츠를 조작하는 데 유용합니다.
+이러한 오브젝트에서 다음에 대한 모든 정보를 얻을 수 있습니다. `LiveCopy`. 또한 `Resource` 오브젝트를 사용하여 `ResourceResolver`, `Session` 및 `Node` 오브젝트를 얻을 수 있습니다. 이러한 오브젝트는 저장소 콘텐츠를 조작하는 데 유용합니다.
 
 다음 코드의 첫 번째 줄에서 소스는 소스 페이지의 `Resource` 오브젝트입니다.
 

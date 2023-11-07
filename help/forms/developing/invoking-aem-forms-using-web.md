@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '9888'
+source-wordcount: '9887'
 ht-degree: 0%
 
 ---
@@ -440,7 +440,7 @@ JAX-WS를 사용하여 Forms 서비스 WSDL을 Java 프록시 클래스로 변�
    * Java 컴파일러의 준수 수준을 5.0 이상으로 설정합니다.
    * 프로젝트를 빌드합니다.
    * 프로젝트를 JAR 파일로 내보냅니다.
-   * 클라이언트 프로젝트의 클래스 경로에 있는 이 JAR 파일을 가져옵니다. 또한 모든 JAR 파일을에서 가져옵니다. &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty입니다.
+   * 클라이언트 프로젝트의 클래스 경로에 있는 이 JAR 파일을 가져옵니다. 또한 의 모든 JAR 파일을 가져옵니다. &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty입니다.
 
    >[!NOTE]
    >

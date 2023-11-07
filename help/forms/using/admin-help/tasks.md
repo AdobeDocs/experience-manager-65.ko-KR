@@ -1,16 +1,12 @@
 ---
 title: 작업
-seo-title: Working with tasks
 description: '[작업 검색] 페이지에서는 사용자 이름 또는 작업 ID별로 작업을 검색할 수 있습니다. 작업 작업에 대해 자세히 알아봅니다.'
-seo-description: Use the Task Search page to search for tasks by user name or task ID. Learn more about working with tasks.
-uuid: 630372d5-255f-4ea8-974d-d4f923108673
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
 exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -19,7 +15,7 @@ ht-degree: 0%
 
 # 작업 {#working-with-tasks}
 
-[작업 검색] 페이지에서는 사용자 이름 또는 작업 ID별로 작업을 검색할 수 있습니다. 검색 결과는 작업 목록 페이지에 표시되며, 여기에서 작업 내역에 액세스할 수 있습니다. 한 사용자에게 작업이 너무 많거나 사용자가 오류로 작업 할당을 받은 경우 작업을 재할당할 수도 있습니다.
+[작업 검색] 페이지에서는 사용자 이름 또는 작업 ID별로 작업을 검색할 수 있습니다. 작업 내역에 액세스할 수 있는 [작업 목록] 페이지에 검색 결과가 표시됩니다. 한 사용자에게 작업이 너무 많거나 사용자가 오류로 작업 할당을 받은 경우 작업을 재할당할 수도 있습니다.
 
 >[!NOTE]
 >

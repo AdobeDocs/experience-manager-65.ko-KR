@@ -2,10 +2,10 @@
 title: CMS Headless 개발에 대해 알아보기
 description: 이 AEM Headless 개발자 여정의 부분에서는 Headless 기술과 이를 사용하는 이유에 대해 알아봅니다.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 89%
+source-wordcount: '1611'
+ht-degree: 88%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 89%
 
 ![클래식 전체 스택 CMS](assets/full-stack.png)
 
-전체 스택 CMS에서 내 콘텐츠 조작에 대한 모든 기능은 CMS에 있습니다. 시스템 기능은 CMS 스택의 다양한 구성 요소를 구성합니다. 전체 스택 솔루션은 장점이 많습니다.
+전체 스택 CMS에서 콘텐츠를 조작하는 모든 기능은 CMS에 있습니다. 시스템 기능은 CMS 스택의 다양한 구성 요소를 구성합니다. 전체 스택 솔루션은 장점이 많습니다.
 
 * 유지 관리할 시스템이 한 개 있습니다.
 * 콘텐츠는 중앙 집중식으로 관리됩니다.

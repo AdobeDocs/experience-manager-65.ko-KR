@@ -1,16 +1,12 @@
 ---
 title: 부재 설정 구성
-seo-title: Configuring Out of Office Settings
 description: 부재 중 기능을 사용하면 사용자가 부재 중일 때 AEM Forms에서 할당한 작업을 완료할 수 없는 시기를 지정할 수 있습니다.
-seo-description: The Out of Office feature enables you to specify when a user will be out of the office and unable to complete tasks assigned by AEM forms.
-uuid: 0d01df0a-aa6a-40e5-bf24-423ed1c932cc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -30,7 +26,7 @@ ht-degree: 0%
 
    **이름별 검색**
 
-   이름으로 검색 옵션을 선택합니다. 사용자 이름의 전체 또는 일부를 입력하고 찾기를 누릅니다. 필드를 비워 두면 Forms 워크플로우는 모든 사용자 목록을 반환합니다
+   이름으로 검색 옵션을 선택합니다. 사용자 이름의 전체 또는 일부를 입력하고 찾기를 누릅니다. 필드를 비워 두면 Forms 워크플로우는 모든 사용자 목록을 반환합니다.
 
    **날짜 범위별 검색**
 

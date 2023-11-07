@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3545'
+source-wordcount: '3544'
 ht-degree: 5%
 
 ---
@@ -310,7 +310,7 @@ ht-degree: 5%
 
    사용자 지정 템플릿을 선택하기로 선택한 경우 AEM Forms 서버에서 XDP 선택 을 찾아봅니다. AEM Forms 서버에 아직 없는 템플릿을 사용하려면 먼저 XDP를 AEM Forms 서버에 업로드해야 합니다.
 
-1. 기본 또는 사용자 지정 템플릿 선택 여부에 따라 다음 속성의 일부 또는 전체가 기록 문서 탭에 표시됩니다. 다음을 적절히 지정합니다.
+1. 기본 또는 사용자 지정 템플릿 선택 여부에 따라 다음 속성 중 일부 또는 모두가 기록 문서 탭에 표시됩니다. 다음을 적절히 지정합니다.
 
    * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 로고 이미지를 선택하거나, 컴퓨터에서 로고 이미지를 업로드할 수 있습니다.
    * **양식 제목**

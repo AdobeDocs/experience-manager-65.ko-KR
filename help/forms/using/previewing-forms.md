@@ -9,22 +9,22 @@ topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 feature: Adaptive Forms
 exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 4%
+source-wordcount: '420'
+ht-degree: 16%
 
 ---
 
 # 양식 미리 보기 {#previewing-a-form}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 개요 {#overview}
 
 AEM Forms에서는 저장소에 있는 양식 및 문서를 미리 볼 수 있습니다. 미리보기를 사용하면 최종 사용자에게 릴리스될 때 양식의 모양과 동작을 정확하게 파악할 수 있습니다.
 
-양식을 미리 볼 때 대화형 인터페이스에서 렌더링되고 사용자가 양식에서 데이터를 채울 수 있습니다. 문서를 미리 볼 때 비대화형 모드로 렌더링되고 사용자만 문서를 볼 수 있습니다. 양식의 경우 사용자 지정 미리 보기 의 추가 옵션을 사용할 수 있습니다. 이 옵션을 사용하면 XML 파일의 데이터를 사용하여 양식을 미리 볼 수 있습니다. 데이터는 미리 보고 있는 양식의 일부 또는 모든 필드를 채웁니다.
+양식을 미리 볼 때 대화형 인터페이스에서 렌더링되고 사용자가 양식에서 데이터를 채울 수 있습니다. 문서를 미리 볼 때 비대화형 모드로 렌더링되고 사용자만 문서를 볼 수 있습니다. 양식의 경우 사용자 지정 미리 보기 의 추가 옵션을 사용할 수 있습니다. 이 옵션을 사용하면 XML 파일의 데이터를 사용하여 양식을 미리 볼 수 있습니다. 데이터는 미리보기 중인 양식의 일부 또는 모든 필드를 채웁니다.
 
 다음 표에는 지원되는 여러 유형의 양식에 사용할 수 있는 미리 보기 옵션이 나열되어 있습니다.
 

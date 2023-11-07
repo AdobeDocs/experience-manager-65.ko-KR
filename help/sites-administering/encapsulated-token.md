@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 캡슐화된 토큰을 구성할 때 고려해야 할 몇 가지 사항이 있습니다.
 
-1. 관련된 암호로 인해 모든 인스턴스는 동일한 HMAC 키를 가져야 합니다. AEM 6.3부터 주요 자료는 더 이상 저장소에 저장되지 않고 실제 파일 시스템에 저장됩니다. 따라서 키를 복제하는 가장 좋은 방법은 소스 인스턴스의 파일 시스템에서 키를 복제할 타겟 인스턴스의 파일 시스템으로 키를 복제하는 것입니다. 자세한 내용은 아래의 &quot;HMAC 키 복제&quot;에서 확인하십시오.
+1. 관련된 암호화 때문에 모든 인스턴스는 동일한 HMAC 키를 가져야 합니다. AEM 6.3부터 주요 자료는 더 이상 저장소에 저장되지 않고 실제 파일 시스템에 저장됩니다. 따라서 키를 복제하는 가장 좋은 방법은 소스 인스턴스의 파일 시스템에서 키를 복제할 타겟 인스턴스의 파일 시스템으로 키를 복제하는 것입니다. 자세한 내용은 아래의 &quot;HMAC 키 복제&quot;에서 확인하십시오.
 1. 캡슐화된 토큰을 활성화해야 합니다. 이 작업은 웹 콘솔을 통해 수행할 수 있습니다.
 
 ### HMAC 키 복제 {#replicating-the-hmac-key}

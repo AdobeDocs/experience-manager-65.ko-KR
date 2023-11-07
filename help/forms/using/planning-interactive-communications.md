@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '652'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 2%
 * **일선 직원이 입력한 데이터(에이전트 UI)** 메시지를 보내기 전에 커뮤니케이션을 사용자 지정하는 사람입니다. 예: 결제 기한.
 
 * **조건부 데이터** 사전 정의된 조건을 기반으로 채워집니다. 예를 들어 대화형 통신이 생성된 날짜입니다.
-* **저장소에 저장된 이미지**&#x200B;로고 및 서명 이미지와 같은 을 포함합니다. 기업 로고와 같은 이미지는 대화형 통신의 대부분 또는 전체에 나타납니다.
+* **저장소에 저장된 이미지**&#x200B;로고 및 서명 이미지와 같은 을 포함합니다. 기업 로고와 같은 이미지는 대부분의 또는 모든 대화형 통신에 나타납니다.
 * **차트 및 표** 대화형 통신에서 복잡한 데이터의 표현을 단순화하는 데 필요합니다.
 
 ## 대화형 통신의 해부학 {#anatomy-of-the-interactive-communication}

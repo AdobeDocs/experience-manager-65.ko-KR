@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1439'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Adobe Analytics으로 전송할 데이터를 수집하는 프레임워크에 구
 
 다음의 경우 **AEM 보기** 가 열려 있습니다. Analytics 변수가 컨텐츠 파인더에 나타납니다.
 
-![aa-12](assets/aa-12.png)
+![aa-](assets/aa-12.png)
 
 여러 Analytics 변수를 동일한 로 매핑할 수 있습니다 **CQ 변수**.
 
@@ -187,7 +187,7 @@ RSID를 선택하면 해당 RSID에 속하는 모든 변수가 목록에 추가�
 
       * 전환 변수( `eVar3`)CQ 변수 필드를 두 번 클릭하고 코드를 수동으로 입력하여 인라인에 추가된 JavaScript 표현식에 매핑됩니다
 
-   * **Event**:
+   * **이벤트**:
 
       * 이벤트 변수( `event1`)이 CQ 이벤트에 매핑됨( `eventdata.events.pageView`)
 

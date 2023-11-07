@@ -1,18 +1,14 @@
 ---
 title: 비즈니스 캘린더 구성
-seo-title: Configuring Business Calendars
 description: 업무 달력은 조직에 대한 업무 및 비업무 일수를 정의합니다. 비즈니스 캘린더를 구성하는 방법에 대해 알아봅니다.
-seo-description: Business calendars define business and non-business days for your organization. Learn how to configure the business calendars.
-uuid: 0ba610b8-72a8-480c-8783-70d98cbe890a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -39,7 +35,7 @@ AEM forms는 기본 비즈니스 캘린더(이름이 지정됨)를 제공합니�
 
 1. 적절한 비즈니스 캘린더를 사용자와 연결하는 방법을 결정합니다. 비즈니스 달력을 사용자와 연결하는 방법에는 두 가지가 있습니다.
 
-   **그룹 멤버십:** 사용자의 그룹 멤버십에 따라 사용자에게 비즈니스 캘린더를 할당할 수 있습니다. 이 경우 그룹의 각 사용자는 동일한 비즈니스 달력을 사용하게 됩니다.
+   **그룹 멤버십:** 사용자의 그룹 멤버십에 따라 사용자에게 비즈니스 달력을 할당할 수 있습니다. 이 경우 그룹의 각 사용자는 동일한 비즈니스 달력을 사용하게 됩니다.
 
    사용자가 서로 다른 두 그룹의 멤버이고 이러한 그룹이 서로 다른 두 비즈니스 달력에 매핑되는 경우 AEM Forms에서는 검색 결과에서 찾은 첫 번째 달력을 사용합니다. 이 경우 비즈니스 캘린더 키를 사용하여 사용자를 비즈니스 캘린더와 연결하는 것이 좋습니다.
 

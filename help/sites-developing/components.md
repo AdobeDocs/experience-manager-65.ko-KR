@@ -10,10 +10,10 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 63%
+source-wordcount: '589'
+ht-degree: 60%
 
 ---
 
@@ -79,7 +79,7 @@ Adobe이 제공하는 AEM 구성 요소에는 두 가지 세트가 있습니다.
 
 ### 사용 가능한 구성 요소 보기 {#viewing-available-components}
 
-AEM 인스턴스에 사용 가능한 모든 구성 요소에 대한 개요를 보려면 [구성 요소 콘솔](/help/sites-authoring/default-components-console.md)을 사용하십시오.
+AEM 인스턴스에서 사용 가능한 모든 구성 요소에 대한 개요를 보려면 [구성 요소 콘솔](/help/sites-authoring/default-components-console.md).
 
 또는 CRXDE Lite를 사용하여 저장소에 사용 가능한 모든 구성 요소 목록을 가져올 수도 있습니다.
 

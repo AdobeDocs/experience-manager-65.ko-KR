@@ -1,18 +1,14 @@
 ---
 title: JBoss 애플리케이션 서버에 대한 SSL 구성
-seo-title: Configuring SSL for JBoss Application Server
 description: JBoss 애플리케이션 서버용 SSL을 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure SSL for JBoss Application Server.
-uuid: 7c13cf00-ea89-4894-a4fc-aaeec7ae9f66
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -145,6 +141,7 @@ JBoss 애플리케이션 서버에서 SSL을 구성하려면 인증을 위한 SS
       * [작업] > [중지]를 선택합니다.
       * 서비스 상태가 중지됨으로 나타날 때까지 기다립니다.
       * 작업 > 시작을 선택합니다.
+
    * 사전 구성되거나 수동으로 구성된 JBoss 설치 Adobe의 경우:
 
       * 명령 프롬프트에서 *`[appserver root]`*/bin.
@@ -152,13 +149,12 @@ JBoss 애플리케이션 서버에서 SSL을 구성하려면 인증을 위한 SS
 
          * (Windows) `shutdown.bat -S`
          * (Linux) `./shutdown.sh -S`
+
       * JBoss 프로세스가 완전히 종료될 때까지 기다립니다(JBoss 프로세스가 시작되었던 터미널에 제어를 반환할 때).
       * 다음 명령을 입력하여 서버를 시작합니다.
 
          * (Windows) `run.bat -c <profile>`
          * (Linux) `./run.sh -c <profile>`
-
-
 
 1. SSL을 사용하여 관리 콘솔에 액세스하려면 다음을 입력합니다. `https://[host name]:'port'/adminui` 웹 브라우저에서:
 
@@ -200,6 +196,5 @@ JBoss 애플리케이션 서버에서 SSL을 구성하려면 인증을 위한 SS
    >
    >* 바꾸기 `[JAVA_HOME]` JDK가 설치된 디렉터리로 바꾸고 텍스트를 사용자 환경에 해당하는 값으로 기울임꼴로 바꿉니다.
    >* 가져온 CA 서명 인증서가 있으면 자체 서명된 공개 인증서를 대체합니다.
-
 
 1. SSL 자격 증명 만들기의 13~18단계를 완료합니다.

@@ -1,19 +1,15 @@
 ---
 title: Adobe Analytics 및 Adobe Target 선택
-seo-title: Opting Into Adobe Analytics and Adobe Target
 description: Adobe Analytics 및 Adobe Target에 옵트인하는 방법을 알아봅니다.
-seo-description: Learn how to opt into Adobe Analytics and Adobe Target.
-uuid: 9090a0f3-d373-4826-aa68-6aa82c0fbfbb
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 10%
+source-wordcount: '1305'
+ht-degree: 11%
 
 ---
 
@@ -191,8 +187,7 @@ Analytics 및 Target과의 통합을 구성하면 AEM이 필요한 클라우드 
   curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
   ```
 
-* 를 사용하지 않으려면 **marketingcloud.properties** 그러면 자격 증명과 매개 변수를 전송해야 합니다. 예를 들면 다음과 같습니다.
-
+* 를 사용하지 않으려면 **marketingcloud.properties** 그러면 자격 증명과 매개 변수를 전송해야 합니다. 예:
    * automaticProvisioning= `true`
    * servicename= `analytics|target`
    * path=생성된 클라우드 서비스 구성을 첨부할 AEM 페이지에 대한 경로. 여러 경로를 정의할 수 있습니다.

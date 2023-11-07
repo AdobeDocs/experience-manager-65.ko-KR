@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1921'
 ht-degree: 1%
 
 ---
@@ -259,7 +259,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 ### 런처 수/범위 최소화 {#minimize-the-number-scope-of-launchers}
 
-이 모든 작업을 담당하는 청취자가 한 명 있습니다 [워크플로우 런처](/help/sites-administering/workflows-starting.md#workflows-launchers) 등록됨:
+모든 작업을 담당하는 청취자가 한 명 있습니다. [워크플로우 런처](/help/sites-administering/workflows-starting.md#workflows-launchers) 등록됨:
 
 * 다른 런처의 글로빙 속성에 지정된 모든 경로에서 변경 사항을 수신하게 됩니다.
 * 이벤트가 발송되면 워크플로우 엔진은 각 런처를 평가하여 실행 여부를 결정합니다.

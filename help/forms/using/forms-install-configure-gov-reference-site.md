@@ -4,9 +4,9 @@ description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 지정�
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '4619'
+source-wordcount: '4613'
 ht-degree: 3%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 3%
 
       * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *사이트 페이지 열 컨트롤에 대한 AEM Sites 격자 레이아웃 패키지*
 
-   * **we-gov-forms.ui.content-&lt;version>.zip** - *컨텐츠, 페이지, 이미지, 양식, 대화형 통신 자산 등을 모두 포함합니다.*
+   * **we-gov-forms.ui.content-&lt;version>.zip** - *모든 컨텐츠, 페이지, 이미지, 양식, 대화형 통신 자산 등을 포함합니다.*
 
    * **we-gov-forms.ui.analytics-&lt;version>.zip** - *저장소 내에 저장할 모든 We.Gov Forms Analytics 데이터를 포함합니다.*
 
@@ -626,7 +626,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
    ![고급 전환 설정](assets/aftia-conversion-settings-2.jpg)
 
-1. 사용하려는 옵션을 모두 구성한 후 변환 시작을 선택합니다.
+1. 사용할 모든 옵션을 구성한 후 변환 시작을 선택합니다.
 
 1. 전환 프로세스가 시작되면 다음과 같은 화면이 표시됩니다.
 

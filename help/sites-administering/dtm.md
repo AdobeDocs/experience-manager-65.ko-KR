@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2206'
+source-wordcount: '2205'
 ht-degree: 3%
 
 ---
@@ -260,7 +260,7 @@ AEM이 필요한 스크립트를 페이지에 추가하도록 Dynamic Tag Manage
 
 1. Dynamic Tag Management 드롭다운 메뉴를 사용하여 구성을 선택한 다음 확인 을 클릭합니다.
 
-페이지에 대해 상속된 구성 연결을 재정의하려면 다음 절차를 따르십시오. 재정의는 페이지 및 모든 페이지 하위 항목에 영향을 줍니다.
+페이지에 대해 상속된 구성 연결을 재정의하려면 다음 절차를 따르십시오. 재정의는 페이지와 모든 페이지 하위 항목에 영향을 줍니다.
 
 1. 클래식 UI에서 페이지를 엽니다.
 1. Sidekick 속성을 열려면 페이지를 사용하십시오.

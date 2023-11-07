@@ -1,16 +1,14 @@
 ---
 title: 아카이브 가져오기 및 관리
 description: 아카이브를 가져오고 관리하는 방법에 대해 알아봅니다. 아카이브는 Workbench에서 생성된 LCA를 가져오고 관리합니다. 아카이브를 가져오고, 구성하고, 사용하고, 삭제할 수 있습니다.
-uuid: aa1613dd-6350-49a7-9643-44365e2acdcc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
