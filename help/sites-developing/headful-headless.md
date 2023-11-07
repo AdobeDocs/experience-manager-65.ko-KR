@@ -2,10 +2,10 @@
 title: AEM Headful 및 Headless
 description: AEM 프로젝트는 Headful 및 Headless model 모델에서 구현될 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 98%
+source-wordcount: '1013'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ AEM을 사용하여 간단히 콘텐츠를 관리할 수도 있고, 다른 플�
 
 ![AEM 구현 모델](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
-Headful 또는 전체 스택 모델에서 콘텐츠는 Java, HTL 등을 기반으로 하는 AEM 저장소와 AEM 구성 요소에서 관리합니다. 사용자 경험에 필요한 콘텐츠를 렌더링하는 데 사용됩니다. 이 모델에서는 콘텐츠 생성, 스타일 지정, 프레젠테이션과 게재가 모두 AEM에서 이뤄집니다.
+헤드풀 또는 전체 스택 모델에서 콘텐츠는 AEM 저장소에서 관리되며 Java, HTL 등을 기반으로 하는 AEM 구성 요소는 사용자 경험을 위한 콘텐츠를 렌더링하는 데 사용됩니다. 이 모델에서는 콘텐츠 생성, 스타일 지정, 프레젠테이션과 게재가 모두 AEM에서 이뤄집니다.
 
 Headless 모델에서 콘텐츠는 AEM 저장소에서 관리되지만 REST와 GraphQL 등 API를 통해 다른 시스템에 게재되어 사용자 경험에 필요한 콘텐츠를 렌더링합니다. 이 모델에서 콘텐츠는 AEM에서 생성되지만 스타일 지정, 프레젠테이션과 게재는 모두 다른 플랫폼에서 이뤄집니다.
 
@@ -43,7 +43,7 @@ Headless 모델에서 콘텐츠는 AEM 저장소에서 관리되지만 REST와 G
 
 >[!NOTE]
 >
->물론, [AEM SPA 편집기 프레임워크를 사용하여 웹 샵 SPA를 완전히 기능하는 AEM SPA로 다시 구현할 수도 있습니다.](/help/sites-developing/spa-walkthrough.md) 이미 AEM이 있고 새 웹 샵이나 다른 SPA를 생성하는 경우 이는 권장되는 메서드이지만 이 문서의 범위에 적용되지 않습니다.
+>물론, [AEM SPA 편집기 프레임워크를 사용하여 웹 샵 SPA를 완전히 기능하는 AEM SPA로 다시 구현할 수도 있습니다.](/help/sites-developing/spa-walkthrough.md) 이미 AEM이 있고 웹 샵 또는 다른 SPA을 만들려는 경우 이 방법이 권장되지만 이 문서의 범위를 벗어납니다.
 
 ## SPA 통합 수준 {#integration-levels}
 

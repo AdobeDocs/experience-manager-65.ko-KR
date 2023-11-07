@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1835'
 ht-degree: 2%
 
 ---
@@ -160,7 +160,7 @@ ht-degree: 2%
 
 ### 벌크 편집기 기반 구성 요소 개발: 제품 목록 구성 요소 {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-이 섹션에서는 벌크 편집기 사용 방법에 대한 개요를 제공하고 벌크 편집기를 기반으로 하는 기존 Geometrixx 구성 요소인 제품 목록 구성 요소에 대해 설명합니다.
+이 섹션에서는 벌크 편집기를 사용하는 방법에 대한 개요를 제공하고 벌크 편집기를 기반으로 하는 기존 Geometrixx 구성 요소인 제품 목록 구성 요소에 대해 설명합니다.
 
 제품 목록 구성 요소를 사용하여 데이터 테이블을 표시하고 편집할 수 있습니다. 예를 들어 제품 목록 구성 요소를 사용하여 카탈로그에 제품을 표시할 수 있습니다. 이 정보는 표준 HTML 테이블에 표시되며 모든 편집은 **편집** 대화 상자에 BulkEditor 위젯이 포함되어 있습니다. (이 벌크 편집기는 /etc/importers/bulkeditor.html 또는 도구 메뉴를 통해 액세스할 수 있는 편집기와 동일합니다.) 제품 목록 구성 요소는 제한된 특정 벌크 편집기 기능을 위해 구성되었습니다. 벌크 편집기의 모든 부분(또는 벌크 편집기에서 파생된 구성 요소)을 구성할 수 있습니다.
 
@@ -570,4 +570,4 @@ Save servlet 개념은 수정 사항이 각 노드에 직접 게시되지 않고
 
 기본 저장 서블릿 구현은 /libs/wcm/bulkeditor/save/POST.jsp에서 사용할 수 있으며 제품 목록 구성 요소에서 사용됩니다. 요청에서 모든 매개 변수를 가져옵니다( 사용). &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> format)을 참조하고 JCR API를 사용하여 노드에 속성을 기록합니다. 노드가 없는 경우(그리드가 삽입된 행) 노드도 생성합니다.
 
-기본 코드는 서버가 기본적으로 수행하는 작업(의 POST)을 재구현하기 때문에 그대로 사용해서는 안 됩니다. &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) 따라서 속성 상속 모델을 관리할 수 있는 저장 서블릿을 빌드하는 좋은 시작점입니다.
+기본 코드는 서버가 기본적으로 수행하는 작업(의 POST)을 재구현하므로 그대로 사용하지 마십시오. &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) 따라서 속성 상속 모델을 관리할 수 있는 저장 서블릿을 빌드하는 좋은 시작점입니다.

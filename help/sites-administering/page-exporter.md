@@ -2,7 +2,7 @@
 title: 페이지 내보내기
 description: Adobe Experience Manager(AEM) 페이지 익스포터를 사용하는 방법을 알아봅니다.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -107,7 +107,7 @@ Adobe Experience Manager(AEM)를 사용하면 이미지를 포함하여 페이�
 
 템플릿은 노드 구조로 구성되며 [컨텐츠 동기화 프레임워크](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). 각 노드에는 `type` zip 파일 생성 프로세스의 특정 작업을 정의하는 속성입니다.
 
-<!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
+<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 다음 노드를 사용하여 내보내기 템플릿을 작성할 수 있습니다.
@@ -131,7 +131,7 @@ Adobe Experience Manager(AEM)를 사용하면 이미지를 포함하여 페이�
 
 * `rewrite`
 다시 작성 노드는 내보낸 페이지에서 링크가 다시 작성되는 방식을 정의합니다. 다시 작성된 링크는 zip 파일에 포함된 파일이나 서버의 리소스를 가리킬 수 있습니다.
-  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- See the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 디자인 노드는 내보낸 페이지에 사용된 디자인을 복사하는 데 사용됩니다. 다음과 같은 특징이 있습니다.
@@ -177,7 +177,7 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 몇 가지 특정 요구 사항을 충족하려면 다음을 구현하십시오. [사용자 정의 업데이트 핸들러](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property: to do so, refer to the Implementing a custom update handler section in the Content Sync page.
+<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## 프로그래밍 방식으로 페이지 내보내기 {#programmatically-exporting-a-page}

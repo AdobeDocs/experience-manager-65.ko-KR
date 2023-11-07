@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,9 @@ angular 페이지의 본문은 wcmMode의 감지 여부에 따라 다르게 렌�
 
 작성 모드에서는 각 개별 페이지가 개별적으로 렌더링됩니다. Angular은 페이지 간 라우팅을 처리하지 않으며 페이지의 구성 요소를 포함하는 부분 템플릿을 로드하는 데 사용되는 ng-view도 아닙니다. 대신 페이지 템플릿의 콘텐츠(template.jsp)는 `cq:include` 태그에 가깝게 배치하십시오.
 
-이 전략을 사용하면 작성자 기능(단락 시스템, Sidekick, 디자인 모드 등에서 구성 요소 추가 및 편집 등)을 사용할 수 있습니다 수정 없이 작동합니다. 앱용 페이지와 같이 클라이언트측 렌더링에 의존하는 페이지는 AEM 작성자 모드에서 잘 작동하지 않습니다.
+이 전략을 사용하면 작성자 기능(예: 단락 시스템, Sidekick, 디자인 모드에서 구성 요소 추가 및 편집 등)을 수정 없이 사용할 수 있습니다. 앱용 페이지와 같이 클라이언트측 렌더링에 의존하는 페이지는 AEM 작성자 모드에서 잘 작동하지 않습니다.
 
-template.jsp include는에 래핑됩니다. `div` 을 포함하는 요소 `ng-controller` 지시문입니다. 이 구조는 DOM 콘텐츠와 컨트롤러의 연결을 가능하게 합니다. 따라서 클라이언트측에서 자체 렌더링하는 페이지는 실패하지만 개별 구성 요소는 제대로 작동합니다(아래 구성 요소에 대한 섹션 참조).
+template.jsp include가 `div` 을 포함하는 요소 `ng-controller` 지시문입니다. 이 구조는 DOM 콘텐츠와 컨트롤러의 연결을 가능하게 합니다. 따라서 클라이언트측에서 자체 렌더링하는 페이지는 실패하지만 개별 구성 요소는 제대로 작동합니다(아래 구성 요소에 대한 섹션 참조).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -144,7 +144,7 @@ controller.js.jsp 스크립트는 각 페이지에 대한 컨트롤러 조각을
 ])
 ```
 
-다음 사항에 주의하십시오. `data` 변수에는 Angular이 반환한 약속이 할당됩니다. `$http.get` 메서드를 사용합니다. 이 페이지에 포함된 각 구성 요소는 필요한 경우 일부 .json 컨텐츠를 사용할 수 있도록(해당 angular.json.jsp 스크립트를 통해) 설정할 수 있으며, 이 요청이 해결될 때 이 요청의 컨텐츠에 작업을 수행합니다. 이 요청은 파일 시스템에 액세스만 하기 때문에 모바일 장치에서 매우 빠릅니다.
+다음 `data` 변수에는 Angular이 반환한 약속이 할당됩니다. `$http.get` 메서드를 사용합니다. 이 페이지에 포함된 각 구성 요소는 필요한 경우 일부 .json 컨텐츠를 사용할 수 있도록(해당 angular.json.jsp 스크립트를 통해) 설정할 수 있으며, 이 요청이 해결될 때 이 요청의 컨텐츠에 작업을 수행합니다. 이 요청은 파일 시스템에 액세스만 하기 때문에 모바일 장치에서 매우 빠릅니다.
 
 이러한 방식으로 구성 요소를 컨트롤러에 포함하려면 /libs/mobileapps/components/angular/ng 구성 요소를 확장하고 `frameworkType: angular` 속성.
 

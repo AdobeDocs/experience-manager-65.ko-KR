@@ -2,9 +2,9 @@
 title: AEM Content and Commerce 릴리스 노트 2020
 description: Adobe Experience Manager Content and Commerce 릴리스 노트 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1353'
 ht-degree: 15%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 15%
 
 * 비즈니스 사용자가 AEM 콘텐츠 페이지에서 이 구성 요소를 드래그 앤 드롭하여 상거래 데이터로 콘텐츠 페이지를 보강할 수 있도록 새 카테고리 캐러셀 구성 요소를 추가했습니다.
 
-* 상거래 데이터를 전송하여 Adobe 클라이언트 데이터 레이어를 하이드레이션하도록 확장된 CIF 핵심 구성 요소입니다. Adobe 클라이언트 데이터 계층 은 데이터를 수집하고 데이터를 Digital Analytics 및 보고 서버에 전달하는 표준화된 방법입니다. 자세한 내용은 다음을 참조하십시오. [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer/wiki).
+* 상거래 데이터를 전송하여 Adobe 클라이언트 데이터 레이어를 하이드레이션하도록 확장된 CIF 핵심 구성 요소입니다. Adobe 클라이언트 데이터 계층 은 데이터를 수집하고 데이터를 Digital Analytics 및 보고 서버에 전달하는 표준화된 방법입니다. 자세한 내용은 [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Adobe Commerce 관리 UI 내에서 구성된 SEO 메타데이터(예: 제목, 메타 설명, 메타 키워드)를 자동으로 채우도록 제품 세부 사항 및 제품 목록 페이지가 확장되었습니다
 

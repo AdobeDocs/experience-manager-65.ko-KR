@@ -2,10 +2,10 @@
 title: 컨텐츠 페이지 게시
 description: Adobe Experience Manager 6.5에서 컨텐츠 페이지를 게시하는 방법을 알아봅니다.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 75%
+source-wordcount: '1660'
+ht-degree: 74%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 75%
    * 게시할 참조가 없으면 페이지가 직접 게시됩니다.
    * 페이지에 게시해야 하는 참조가 있을 경우 **게시 마법사**&#x200B;에 나열되며 여기서 다음과 같은 작업을 수행할 수 있습니다.
 
-      * 페이지와 함께 게시할 에셋, 태그 등 하나를 지정한 다음 **게시**&#x200B;를 사용하여 프로세스를 완료합니다.
+      * 페이지와 함께 게시할 에셋, 태그 등 하나를 지정한 다음 를 사용합니다 **게시** 을 클릭하여 프로세스를 완료합니다.
 
       * **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
@@ -111,9 +111,9 @@ ht-degree: 75%
 
 #### 게시 관리 {#manage-publication}
 
-**게시 관리**&#x200B;는 빠른 게시보다 많은 옵션을 제공하여 하위 페이지, 참조의 사용자 지정, 적용 가능한 워크플로우 시작뿐 아니라 나중에 게시할 수 있는 옵션이 포함되어 있습니다.
+**게시 관리**&#x200B;는 빠른 게시보다 더 많은 옵션을 제공하여 하위 페이지 포함, 참조 맞춤화, 적용 가능한 워크플로 시작 등의 작업을 허용함과 동시에 나중에 게시할 수 있는 옵션을 제공합니다.
 
-게시 관리를 사용하여 페이지를 게시 또는 게시 취소하려면 다음을 수행하십시오.
+게시 관리를 사용하여 페이지를 게시 또는 게시 취소하려면 다음 작업을 수행하십시오.
 
 1. Sites 콘솔에서 페이지를 선택하고 **게시 관리** 버튼을 클릭합니다.
 
@@ -178,11 +178,11 @@ ht-degree: 75%
 
    Sites 콘솔로 돌아가면 알림 메시지가 표시되어 게시를 확인합니다.
 
-1. 게시된 페이지가 워크플로우와 연관되어 있으면 게시 마법사의 마지막 **워크플로우** 단계에 표시될 수 있습니다.
+1. 게시된 페이지가 워크플로와 연관되어 있으면 게시 마법사의 마지막 **워크플로** 단계에 표시될 수 있습니다.
 
    >[!NOTE]
    >
-   >**워크플로우** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 다음을 참조하십시오. [이 페이지의 이전 메모](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) 게시 권한에 대해서도 [워크플로우에 대한 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) 을 참조하십시오.
+   >**워크플로** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 다음을 참조하십시오. [이 페이지의 이전 메모](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) 게시 권한 및 관련 [워크플로우에 대한 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) 을 참조하십시오.
 
    참조는 트리거된 워크플로 및 지정된 옵션별로 그룹화되어 다음 작업을 수행할 수 있습니다.
 

@@ -10,10 +10,10 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 78%
+source-wordcount: '772'
+ht-degree: 77%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->론치 페이지를 대상(**프로덕션**)에 홍보한 후 **프로덕션** 페이지를 엔터티로 활성화할 수 있습니다(프로세스를 더 빠르게 진행하기 위해). 페이지를 작업 흐름 패키지에 추가하고, 페이지 패키지를 활성화하는 작업 흐름용 페이로드로 사용합니다. 론치를 승격하려면 먼저 작업 흐름 패키지를 만들어야 합니다. [AEM 워크플로우를 사용하여 홍보된 페이지 처리](#processing-promoted-pages-using-aem-workflow)를 참조하십시오.
+>론치 페이지를 대상(**프로덕션**)에 홍보한 후 **프로덕션** 페이지를 엔티티로 활성화할 수 있습니다(프로세스를 더 빠르게 진행하기 위해). 페이지를 작업 흐름 패키지에 추가하고, 페이지 패키지를 활성화하는 작업 흐름용 페이로드로 사용합니다. 론치를 승격하려면 먼저 작업 흐름 패키지를 만들어야 합니다. [AEM 워크플로를 사용하여 홍보된 페이지 처리](#processing-promoted-pages-using-aem-workflow)를 참조하십시오.
 
 >[!CAUTION]
 >
@@ -95,7 +95,7 @@ ht-degree: 78%
 
 ## 편집 시 론치 페이지 홍보 {#promoting-launch-pages-when-editing}
 
-론치 페이지를 편집할 때 **론치 홍보** 동작을 **페이지 정보**&#x200B;에서도 사용할 수 있습니다. 이 작업을 수행하면 필요한 정보를 수집하기 위한 마법사가 열립니다.
+론치 페이지를 편집할 때 **론치 홍보** 동작을 **페이지 정보**&#x200B;에서도 사용할 수 있습니다. 필요한 정보를 수집하기 위한 마법사가 열립니다.
 
 ![출시 홍보](assets/chlimage_1-103.png)
 
@@ -145,7 +145,7 @@ ht-degree: 78%
 
    ![론치 콘솔](assets/chlimage_1-107.png)
 
-## AEM 워크플로우를 사용하여 홍보된 페이지 처리 {#processing-promoted-pages-using-aem-workflow}
+## AEM 워크플로를 사용하여 홍보된 페이지 처리 {#processing-promoted-pages-using-aem-workflow}
 
 작업 흐름 모델을 사용하여 다음과 같이 승격된 론치 페이지의 일괄 프로세스를 수행할 수 있습니다.
 

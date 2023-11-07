@@ -5,7 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 1%
@@ -120,13 +120,11 @@ ht-degree: 1%
    >
    >* 이미지가 기본 이미지에 포함되지 않음 [!DNL InDesign] 템플릿.
    >* 이미지는 로컬 파일 시스템에서 연결됩니다.
-
    >
    >활성화하려면 [!DNL Experience Manager] 이미지를 해결하려면 다음을 수행합니다.
    >
    >* 만드는 동안 이미지 포함 [!DNL InDesign] 템플릿(참조) [링크 및 포함된 그래픽 정보](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* 마운트 [!DNL Experience Manager] 누락된 아이콘을 기존 에셋에 매핑합니다. [!DNL Experience Manager].
-
    >
    >작업에 대한 자세한 내용 [!DNL InDesign] 문서, 참조 [Experience Manager에서 InDesign 문서 작업 모범 사례](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 

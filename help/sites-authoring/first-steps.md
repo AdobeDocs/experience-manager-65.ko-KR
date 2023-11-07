@@ -1,6 +1,6 @@
 ---
 title: AEM에서 콘텐츠를 만들 때 작성자를 위한 첫 번째 단계
-description: Adobe Experience Manager(AEM)로 콘텐츠를 작성할 때 사용하는 주요 작업에 대한 개요입니다.
+description: Adobe Experience Manager(AEM)를 사용하여 콘텐츠를 작성할 때 사용하는 주요 작업에 대한 개요입니다.
 uuid: 1a09da22-faa4-4a7a-a2c5-97a255a6a2ae
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '405'
 ht-degree: 7%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 7%
 
 여기에는 다음이 포함됩니다.
 
-* [시작하기](#getting-started)\
-   첫 페이지를 만들고 게시하는 데 필요한 이벤트의 기본 시퀀스를 자세히 설명합니다.
+* [시작](#getting-started)\
+  첫 페이지를 만들고 게시하는 데 필요한 이벤트의 기본 시퀀스를 자세히 설명합니다.
 
 * [추가 작업](#further-actions)\
-   작성할 때 사용할 수 있는 기타 여러 가지 작업을 사용하여 이 작업을 수행합니다.
+  작성할 때 사용할 수 있는 기타 여러 가지 작업을 사용하여 이 작업을 수행합니다.
 
-## 시작하기 {#getting-started}
+## 시작 {#getting-started}
 
 첫 페이지를 만들고 게시하는 데 필요한 기본 이벤트 시퀀스에 대해 자세히 설명합니다.
 
@@ -38,7 +38,7 @@ ht-degree: 7%
 
 ### 새 페이지 만들기 {#creating-a-new-page}
 
-편집하기 전에 다음을 수행해야 합니다 [새 페이지 만들기](/help/sites-authoring/managing-pages.md#creating-a-new-page).
+편집하기 전에 다음을 수행해야 합니다 [페이지 만들기](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
 ### 페이지 열기 {#opening-a-page}
 
@@ -46,7 +46,7 @@ ht-degree: 7%
 
 ### 페이지 편집 {#editing-a-page}
 
-인스턴스에 이미 기존 페이지가 있는지 또는 새 페이지를 직접 만들었는지 여부에 관계없이 다음 작업을 수행할 수 있습니다. [페이지 편집](/help/sites-authoring/editing-content.md) 수행한 사람:
+인스턴스에 이미 기존 페이지가 있는지 또는 새 페이지를 직접 만들었는지 여부에 관계없이 다음 작업을 수행할 수 있습니다 [페이지 편집](/help/sites-authoring/editing-content.md) 수행한 사람:
 
 * [구성 요소 삽입(단락)](/help/sites-authoring/editing-content.md#inserting-a-component)
 * [편집/구성/복사/잘라내기/삭제/붙여넣기](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 구성 요소

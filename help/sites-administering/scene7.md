@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5484'
 ht-degree: 1%
@@ -27,7 +27,6 @@ Dynamic Media Classic을 사용하려면 Dynamic Media Classic과 Adobe Experien
 >* Experience Manager에서 작동하도록 Dynamic Media Classic을 구성하기 전에 다음을 참조하십시오. [우수 사례](#best-practices-for-integrating-scene-with-aem) Dynamic Media Classic과 Experience Manager 통합
 >* Experience Manager의 일부 기능은 3.x API를 사용하고 다른 기능은 4.x API를 사용하므로 Dynamic Media Classic을 사용자 지정 프록시 구성과 함께 사용하는 경우 HTTP 클라이언트 프록시 구성을 모두 구성해야 합니다. 3.x은(는) [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) 및 4.x는 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
 >
-
 
 ## Experience Manager/Dynamic Media Classic 통합 대 Dynamic Media {#aem-scene-integration-versus-dynamic-media}
 
@@ -76,7 +75,7 @@ Dynamic Media에 사용하는 구성 요소는 **[!UICONTROL Dynamic Media]** �
 
 Dynamic Media 및 Dynamic Media Classic을 동시에 사용하려면
 
-1. 구성 [Dynamic Media Classic](#creating-a-cloud-configuration-for-scene) Cloud Services.
+1. 구성 [Dynamic Media Classic](#creating-a-cloud-configuration-for-scene) Cloud Service.
 1. 사용 사례에 해당하는 특정 지침을 따르십시오.
 
    <table>
@@ -273,7 +272,7 @@ Experience Manager Assets과 Dynamic Media Classic 간의 동기화와 함께 �
    <td>Dynamic Media Classic을 통해 인코딩을 위해 Experience Manager Assets에 비디오를 업로드하는 경우 비디오 처리 시간에 따라 Experience Manager Assets에서 비디오 썸네일과 인코딩된 비디오를 사용할 수 있습니다.</td>
   </tr>
   <tr>
-   <td>하위 폴더 Target</td>
+   <td>하위 폴더 타깃팅</td>
    <td><p>대상 폴더 내의 하위 폴더를 사용하는 경우 위치에 관계없이 각 에셋에 고유한 이름을 사용해야 합니다. 또한 위치에 관계없이 에셋을 덮어쓰지 않도록 Dynamic Media Classic(설정 영역)를 구성해야 합니다.</p> <p>그렇지 않으면 Dynamic Media Classic 대상 하위 폴더에 업로드된 동일한 이름의 자산이 업로드되지만 대상 폴더의 동일한 이름의 자산은 삭제됩니다. </p> </td>
   </tr>
  </tbody>
@@ -303,7 +302,7 @@ Experience Manager Assets과 Dynamic Media Classic 간의 동기화와 함께 �
 
 **Dynamic Media Classic에 대한 클라우드 구성을 만들려면 다음을 수행하십시오.**
 
-1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]** Adobe Dynamic Media Classic에 액세스할 수 있습니다.
+1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service]** Adobe Dynamic Media Classic에 액세스할 수 있습니다.
 
 1. 선택 **[!UICONTROL 지금 구성]**.
 
@@ -341,7 +340,6 @@ Experience Manager Assets과 Dynamic Media Classic 간의 동기화와 함께 �
 >* 지역, 회사 이름 등의 값을 수정하는 경우 Dynamic Media Classic에 다시 연결해야 합니다. 구성 옵션이 수정되었지만 저장되지 않은 경우 Experience Manager에서 구성이 유효하다고 잘못 표시됩니다. 다시 연결하십시오.
 >
 
-
 ### Adobe CQ Dynamic Media Classic Dam 수신기 활성화 {#enabling-the-adobe-cq-scene-dam-listener}
 
 기본적으로 비활성화되어 있는 Adobe CQ Dynamic Media Classic Dam 수신기를 활성화합니다.
@@ -367,7 +365,7 @@ Experience Manager 인스턴스가 Dynamic Media Classic을 통해 비디오 인
 
    >[!NOTE]
    >
-   >모범 사례: 대부분의 에셋은 길어야 몇 분 내에 수집됩니다(예: 이미지). 그러나 예를 들어 더 큰 비디오와 같은 특정 경우에는 시간 초과 값을 7,200초(2시간)로 늘려 긴 처리 시간을 수용할 수 있습니다. 그렇지 않으면 이 Dynamic Media Classic 업로드 작업이 다음과 같이 표시됩니다. **[!UICONTROL 업로드 실패]** JCR(Java™ Content Repository) 메타데이터
+   >모범 사례: 대부분의 에셋은 길어야 몇 분 내에 수집됩니다(예: 이미지). 그러나 예를 들어 더 큰 비디오인 경우 시간 초과 값을 7,200초(2시간)로 늘려 긴 처리 시간을 수용할 수 있습니다. 그렇지 않으면 이 Dynamic Media Classic 업로드 작업이 다음과 같이 표시됩니다. **[!UICONTROL 업로드 실패]** JCR(Java™ Content Repository) 메타데이터
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -383,7 +381,7 @@ Experience Manager 인스턴스가 Dynamic Media Classic을 통해 비디오 인
 
 **Experience Manager Assets에서 자동 업로드하려면:**
 
-1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**.
+1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service]**.
 1. Dynamic Media 제목 아래의 사용 가능한 구성에서 을 선택합니다. **[!UICONTROL dms7 (Dynamic Media]**).
 1. 다음 항목 선택 **[!UICONTROL 고급]** 탭에서 **[!UICONTROL 자동 업로드 활성화]** 확인란을 선택한 다음 을 선택합니다 **[!UICONTROL 확인]**. 이제 Dynamic Media Classic에 업로드를 포함하도록 DAM 자산 워크플로우를 구성해야 합니다.
 
@@ -402,7 +400,6 @@ Experience Manager 인스턴스가 Dynamic Media Classic을 통해 비디오 인
    >
    >* 자동화 후 에셋을 추가할 때 CQ 대상 폴더에 배치되지 않으면 Dynamic Media Classic에 업로드되지 않습니다.
    >* Experience Manager은 Dynamic Media Classic에 업로드하기 전에 모든 메타데이터를 XMP으로 임베드하므로 메타데이터 노드의 모든 속성을 Dynamic Media Classic as XMP에서 사용할 수 있습니다.
-
 
 ### Dynamic Media Classic에 푸시된 에셋의 상태(게시됨/게시되지 않음)를 구성합니다. {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -423,7 +420,7 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 1. [Admin Console을 사용하여 지원 사례 만들기](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). 지원 사례에서 Dynamic Media Classic 계정에 대한 보안 미리 보기 활성화를 요청합니다.
 1. [Dynamic Media Classic 계정에 대한 보안 미리 보기 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en).
 
-이러한 단계는 Dynamic Media Classic에서 보안 테스트 설정을 만들 때 따라야 하는 것과 동일한 단계입니다.
+이러한 단계는 Dynamic Media Classic에서 보안 테스트 설정을 만들기 위해 따라야 하는 단계와 동일합니다.
 
 >[!NOTE]
 >
@@ -448,7 +445,7 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 
 **Dynamic Media Classic에 푸시된 에셋의 상태를 게시 취소로 설정하려면 다음을 수행합니다.**
 
-1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**.
+1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service]**.
 1. 선택 **[!UICONTROL Dynamic Media Classic]**.
 1. Dynamic Media Classic에서 구성을 선택합니다.
 1. 다음 항목 선택 **[!UICONTROL 고급]** 탭.
@@ -479,7 +476,7 @@ WCM용 Dynamic Media Classic을 활성화할 때 다른 구성과 마찬가지�
 
 1. 도구 모음에서 [!UICONTROL 설정] 아이콘 및 선택 **[!UICONTROL 속성 열기]**.
 
-1. 선택 **[!UICONTROL Cloud Services]** 및 선택 **[!UICONTROL 구성 추가]** 및 선택 **[!UICONTROL Dynamic Media Classic]**.
+1. 선택 **[!UICONTROL Cloud Service]** 및 선택 **[!UICONTROL 구성 추가]** 및 선택 **[!UICONTROL Dynamic Media Classic]**.
 1. 다음에서 **[!UICONTROL Adobe Dynamic Media Classic]** 드롭다운 목록에서 원하는 구성을 선택하고 **[!UICONTROL 확인]**.
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
@@ -492,7 +489,7 @@ WCM용 Dynamic Media Classic을 활성화할 때 다른 구성과 마찬가지�
 
 1. 사이드 킥에서 **[!UICONTROL 페이지]** 아이콘 및 선택 **[!UICONTROL 페이지 속성]**.
 
-1. 선택 **[!UICONTROL Cloud Services]** > **[!UICONTROL 서비스 추가]** > **[!UICONTROL Dynamic Media Classic]**.
+1. 선택 **[!UICONTROL Cloud Service]** > **[!UICONTROL 서비스 추가]** > **[!UICONTROL Dynamic Media Classic]**.
 1. 다음에서 **[!UICONTROL Adobe Dynamic Media Classic]** 드롭다운 목록에서 원하는 구성을 선택하고 **[!UICONTROL 확인]**.
 
    해당 Dynamic Media Classic 구성의 비디오 사전 설정은 해당 페이지 및 하위 페이지에서 Dynamic Media Classic 비디오 구성 요소와 함께 Experience Manager 시 사용할 수 있습니다.
@@ -505,7 +502,7 @@ Dynamic Media Classic 구성이 여러 개 있는 경우 그 중 하나를 Dynam
 
 **기본 구성을 구성하려면 다음 작업을 수행하십시오.**
 
-1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**.
+1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service]**.
 1. 선택 **[!UICONTROL Dynamic Media Classic]**.
 1. Dynamic Media Classic에서 구성을 선택합니다.
 1. 구성을 열려면 다음을 선택합니다. **[!UICONTROL 편집]**.
@@ -524,7 +521,7 @@ Dynamic Media Classic 구성이 여러 개 있는 경우 그 중 하나를 Dynam
 
 **임시 폴더를 구성하려면 다음 작업을 수행하십시오.**
 
-1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**.
+1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service]**.
 1. 선택 **[!UICONTROL Dynamic Media Classic]**.
 1. Dynamic Media Classic에서 구성을 선택합니다.
 1. 구성을 열려면 다음을 선택합니다. **[!UICONTROL 편집]**.
@@ -556,7 +553,7 @@ Digital Asset Manager/Dynamic Media Classic 에셋의 동기화에 의해 트리
 
    예를 들어, `<file_extension>=<mime_type>` 에서와 같이 `EPS=application/postscript` 또는 `PSD=image/vnd.adobe.photoshop`.
 
-1. 구성 창의 오른쪽 아래 모서리에서 을(를) 선택합니다 **[!UICONTROL 저장]**.
+1. 구성 창의 오른쪽 아래 모서리에서 을 선택합니다. **[!UICONTROL 저장]**.
 1. Experience Manager으로 돌아간 다음 왼쪽 레일에서 을 선택합니다. **[!UICONTROL CRXDE Lite]**.
 1. CRXDE Lite 페이지의 왼쪽 레일에서 로 이동합니다. `/etc/cloudservices/scene7/<environment>` (대용 `<environment>` (실제 이름)입니다.
 1. 확장 `<environment>` (대용 `<environment>` (실제 이름)을 사용하여 `mimeTypes` 노드.
@@ -567,7 +564,7 @@ Digital Asset Manager/Dynamic Media Classic 에셋의 동기화에 의해 트리
 1. CRXDE Lite 페이지 오른쪽에서 **[!UICONTROL 속성]** 탭.
 1. 에서 Dynamic Media Classic 업로드 작업 매개 변수를 지정합니다. **[!UICONTROL jobParam]** 값 필드.
 
-   예, `psprocess="rasterize"&psresolution=120` .
+   예: `psprocess="rasterize"&psresolution=120`
 
    다음을 참조하십시오. [Adobe Dynamic Media Classic 이미지 프로덕션 시스템 API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) 추가 업로드 작업 매개 변수를 사용할 수 있습니다.
 
@@ -603,7 +600,7 @@ Experience Manager을 Dynamic Media Classic과 통합하는 데 문제가 있는
 **Experience Manager에서 새로 만들거나 수정한 자산이 Dynamic Media Classic에 자동으로 업로드되지 않는 경우:**
 
 * 자산이 CQ 대상 폴더에 있는지 확인합니다. Experience Manager Assets에서 자산을 자동으로 업로드하도록 구성한 경우 CQ 대상 폴더에 있는 자산만 자동으로 업데이트됩니다.
-* 자동 업로드를 활성화하도록 Cloud Services 구성을 구성했는지 그리고 Dynamic Media Classic 업로드를 포함하도록 DAM 에셋 워크플로를 업데이트하고 저장했는지 확인하십시오.
+* 자동 업로드를 활성화하도록 Cloud Service 구성을 구성했는지 그리고 Dynamic Media Classic 업로드를 포함하도록 DAM 에셋 워크플로를 업데이트하고 저장했는지 확인하십시오.
 * Dynamic Media Classic 대상 폴더의 하위 폴더에 이미지를 업로드할 때 다음 중 하나를 수행해야 합니다.
 
    * 위치에 관계없이 모든 에셋의 이름이 고유한지 확인합니다. 그렇지 않으면 기본 대상 폴더의 자산이 삭제되고 하위 폴더의 자산만 유지됩니다.

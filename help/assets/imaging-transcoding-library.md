@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Adobe Imaging Transcoding Library는 다음을 포함한 핵심 이미지 처리
 * JPEG 품질 압축
 * 이미지 크기 조정
 
-이미징 코드 변환 라이브러리는 CMYK -Alpha를 제외한 CMYK 지원 및 전체 알파 지원을 제공합니다.
+이미징 코드 변환 라이브러리는 CMYK -Alpha을 제외하고 CMYK 지원 및 전체 알파 지원을 제공합니다.
 
 이미징 코드 변환 라이브러리는 다양한 파일 형식 및 프로필을 지원할 뿐만 아니라 성능, 확장성 및 품질과 관련하여 다른 타사 솔루션에 비해 상당한 이점을 제공합니다. 다음은 이미징 코드 변환 라이브러리를 사용할 때 얻을 수 있는 몇 가지 주요 이점입니다.
 
@@ -57,9 +57,9 @@ Adobe Imaging Transcoding Library는 다음을 포함한 핵심 이미지 처리
 다음에 대해 다음 옵션을 구성할 수 있습니다 `-resize` 매개 변수:
 
 * `X`: 와 유사한 작업 [!DNL Experience Manager]. 예를 들어 -resize 319를 사용합니다.
-* `WxH`: 종횡비가 유지되지 않음: 예 `-resize 319x319`.
-* `Wx`: 너비를 수정하고 종횡비를 유지하면서 높이를 계산합니다. 예 `-resize 319x`.
-* `xH`: 높이를 수정하고 종횡비를 유지하면서 폭을 계산합니다. 예 `-resize x319`.
+* `WxH`: 종횡비가 유지되지 않음(예: ) `-resize 319x319`.
+* `Wx`: 너비를 수정하고 종횡비를 유지하면서 높이를 계산합니다. 예: `-resize 319x`
+* `xH`: 높이를 수정하고 종횡비를 유지하면서 폭을 계산합니다. 예: `-resize x319`
 
 ```shell
  -AllowUpsampling (Resizes smaller images)

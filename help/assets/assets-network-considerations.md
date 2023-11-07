@@ -5,7 +5,7 @@ contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 이는 가장 작은 클라이언트 지향 초크 포인트입니다. 그러나 이 방화벽을 담당하는 네트워크 작업 그룹을 사용하여 허용 목록을 변경하거나 구성할 수 있습니다.
 
-샘플 다이어그램에서 6개의 장치가 개념적인 10Mbps 채널을 공유한다고 결론을 내릴 수 있습니다. 활용된 에셋의 크기에 따라 사용자의 기대에 부응하기에 적절하지 않을 수 있습니다.
+샘플 다이어그램에서 6개의 장치가 개념적인 10Mbps 채널을 공유한다고 결론을 내릴 수 있습니다. 사용된 에셋의 크기에 따라 사용자 기대에 부적합할 수 있습니다.
 
 ## 의 토폴로지 [!DNL Experience Manager] 환경 {#topology-of-the-aem-environment}
 

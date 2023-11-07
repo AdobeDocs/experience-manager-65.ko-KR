@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '953'
 ht-degree: 5%
 
 ---
@@ -59,7 +59,7 @@ Granite 사용자 및 그룹 관리 콘솔은 모두 **[도구](/help/sites-admi
 
    ![사용자 추가 아이콘](do-not-localize/chlimage_1-1.png)
 
-1. 다음 **사용자 만들기** 양식이 열립니다.
+1. 다음 **사용자 만들기** 양식 열기:
 
    ![사용자 세부 정보 양식](assets/chlimage_1-75a.png)
 
@@ -176,7 +176,7 @@ Granite 사용자 및 그룹 관리 콘솔은 모두 **[도구](/help/sites-admi
 
    ![새 그룹 추가](do-not-localize/chlimage_1-4.png)
 
-1. 다음 **그룹 만들기** 양식이 열립니다.
+1. 다음 **그룹 만들기** 양식 열기:
 
    ![그룹 세부 정보 양식](assets/chlimage_1-79a.png)
 
@@ -188,7 +188,7 @@ Granite 사용자 및 그룹 관리 콘솔은 모두 **[도구](/help/sites-admi
 
    * **이름**
 
-     그룹 이름입니다. 그룹 콘솔에 표시됩니다.
+     그룹 이름으로, 그룹 콘솔에 표시됩니다.
 
    * **설명**
 

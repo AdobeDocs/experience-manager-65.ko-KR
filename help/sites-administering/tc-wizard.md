@@ -3,9 +3,9 @@ title: 언어 복사 마법사
 description: Adobe Experience Manager의 언어 복사 마법사 사용에 대해 알아봅니다.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: 2d87022aa2223df261e245fba65df054c041cd69
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '214'
 ht-degree: 33%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 33%
    >
    >기본적으로 번역 설정은 하나만 표시됩니다. 다른 설정을 선택하려면 먼저 클라우드 구성을 구성해야 합니다. [번역 통합 프레임워크 구성](/help/sites-administering/tc-tic.md)을 참조하십시오.
 
-1. 다음 **다음** 버튼을 클릭하면 다음 위치로 이동합니다. **번역** 마법사의 단계입니다. 여기에서 구조만 만들거나, 새 번역 프로젝트를 만들거나, 기존 번역 프로젝트에 추가할 수 있습니다.
+1. 다음 **다음** 버튼을 클릭하면 다음 위치로 이동합니다. **번역** 마법사의 단계입니다. 여기서 구조만 만들거나, 번역 프로젝트를 만들거나, 기존 번역 프로젝트에 추가할 수 있습니다.
 
    >[!NOTE]
    >

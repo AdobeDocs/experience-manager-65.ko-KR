@@ -12,10 +12,10 @@ discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
 role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 9%
+source-wordcount: '590'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
->아래 섹션에서는 GDPR이 예로 사용되지만, 포함된 세부 사항은 GDPR, CCPA 등 모든 데이터 보호 및 개인 정보 보호 규정에 적용됩니다.
+>아래 섹션에서는 GDPR이 예로 사용되지만, 포함된 세부 사항은 GDPR, CCPA 등과 같은 모든 데이터 보호 및 개인 정보 보호 규정에 적용됩니다.
 
 AEM Communities은 사용자 프로필을 관리하고 UGC(사용자 생성 컨텐츠)를 대량 관리하기 위한 API를 즉시 표시합니다. 활성화하면 **사용자 관리** 서비스를 사용하면 권한이 있는 사용자(커뮤니티 관리자 및 중재자)가 사용자 프로필을 비활성화하고, 특정 사용자에 대한 UGC를 대량 삭제 또는 대량 내보낼 수 있습니다. 또한 이러한 API를 통해 고객 데이터의 제어자와 프로세서는 유럽 연합의 GDPR(일반 데이터 보호 규정) 및 GDPR에서 영감을 얻은 기타 개인 정보 보호 규정을 준수할 수 있습니다.
 

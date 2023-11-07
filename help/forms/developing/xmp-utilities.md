@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1404'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ XMP 유틸리티 서비스를 사용하여 다음 작업을 수행할 수 있습
 
 ## PDF 문서로 메타데이터 가져오기 {#importing-metadata-into-pdf-documents}
 
-XMP 유틸리티 Java 및 웹 서비스 API를 사용하여 XMP 메타데이터를 프로그래밍 방식으로 PDF 문서로 가져올 수 있습니다. 메타데이터는 문서 작성자 및 문서와 관련된 키워드와 같은 PDF 문서에 대한 정보를 제공합니다. 메타데이터는 다음 그림과 같이 문서의 문서 속성 대화 상자에서 찾을 수 있습니다.
+XMP 유틸리티 Java 및 웹 서비스 API를 사용하여 XMP 메타데이터를 프로그래밍 방식으로 PDF 문서로 가져올 수 있습니다. 메타데이터는 문서 작성자 및 문서와 관련된 키워드와 같은 PDF 문서에 대한 정보를 제공합니다. 메타데이터는 다음 그림과 같이 문서의 문서 속성 대화 상자에 있을 수 있습니다.
 
 ![ww_ww_metadatadialog](assets/ww_ww_metadatadialog.png)
 

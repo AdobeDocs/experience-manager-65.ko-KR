@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2347'
 ht-degree: 2%
@@ -247,7 +247,7 @@ group.2_group.type=dam:Asset
 
 * **언어**
 
-  ISO 언어 코드(예: &quot;) `de`&quot;
+  ISO 언어 코드(예: &quot;)`de`&quot;
 
 ### 주요 자산 {#mainasset}
 
@@ -459,7 +459,7 @@ JCR 속성 및 해당 값에 대해 일치합니다.
 
 * **p.guessTotal**
 
-  권장: 비용이 많이 들 수 있는 전체 결과 합계를 계산하지 마십시오. 계산할 최대 합계를 나타내는 숫자(예: 1000, 사용자에게 대략적인 크기에 대한 충분한 피드백을 제공하고 더 작은 결과에 대한 정확한 숫자) 또는 &quot; `true`필요한 최소값까지만 계산하려는 경우 `p.offset` + `p.limit`.
+  권장: 비용이 많이 들 수 있는 전체 결과 합계를 계산하지 마십시오. 계산할 최대 합계를 나타내는 숫자(예: 대략적인 크기와 더 작은 결과에 대한 정확한 숫자를 사용자에게 충분히 피드백하는 숫자) 또는 &quot; `true`필요한 최소값까지만 계산하려는 경우 `p.offset` + `p.limit`.
 
 * **발췌**
 
@@ -541,7 +541,7 @@ JCR XPath를 사용한 유사성 검색 `rep:similar()`.
 
 * **태그**
 
-  찾을 수 있는 태그 ID(예: &quot;) `properties:orientation/landscape`&quot;.
+  태그 ID를 통해 찾을 수 있음(예: &quot; `properties:orientation/landscape`&quot;.
 
 * **N_value**
 

@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 1%
@@ -125,7 +125,7 @@ JSON 개체 설명에 대한 자세한 내용은 [이](/help/forms/using/html-wo
 
 1. 작업에 추가된 정보(속성)에 스타일을 적용할 수 있습니다. 이렇게 하려면에 추가된 새 속성에 대한 스타일 정보를 추가해야 합니다 `/apps/ws/css/newStyle.css`.
 
-   예: 추가:
+   예를 들어 다음을 추가합니다.
 
    ```css
    .task .taskProperties .stepname{

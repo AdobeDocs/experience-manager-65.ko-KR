@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: '2268'
 ht-degree: 0%
 
 ---
@@ -321,7 +321,7 @@ AEM은 다음 쿼리 언어를 지원합니다.
 ## 기존 인덱스 조정 {#existing-index-tuning}
 
 1. 최적 쿼리가 속성 인덱스로 확인되는 경우 속성 인덱스가 최소한으로 조정할 수 있으므로 수행할 작업이 없습니다.
-1. 그렇지 않으면 쿼리가 Lucene 속성 인덱스로 확인되어야 합니다. 해결할 수 있는 색인이 없는 경우 새 색인 작성으로 이동합니다.
+1. 그렇지 않으면 쿼리가 Lucene 속성 인덱스로 확인되어야 합니다. 해결할 수 있는 색인이 없는 경우 색인 작성으로 이동합니다.
 1. 필요에 따라 쿼리를 XPath 또는 JCR-SQL2로 변환합니다.
 
    * **Query Builder 쿼리**

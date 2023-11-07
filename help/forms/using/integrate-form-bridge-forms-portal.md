@@ -11,9 +11,9 @@ discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ FormBridge는 양식과 상호 작용할 수 있는 HTML5 Forms Bridge API입니
 
 FormBridge API를 사용하여 HTML 페이지에서 양식 필드의 값을 가져오거나 설정하고 양식을 제출할 수 있습니다. 예를 들어 API를 사용하여 마법사와 같은 경험을 빌드할 수 있습니다.
 
-기존 HTML 애플리케이션은 FormBridge API를 활용하여 양식과 상호 작용하고 이를 HTML 페이지에 포함할 수 있습니다. 다음 단계를 사용하여 Form Bridge API를 사용하여 필드의 값을 설정할 수 있습니다.
+기존 HTML 애플리케이션은 FormBridge API를 사용하여 양식과 상호 작용하여 HTML 페이지에 포함할 수 있습니다. 다음 단계를 사용하여 Form Bridge API를 사용하여 필드의 값을 설정할 수 있습니다.
 
 ## 웹 페이지에 HTML5 양식 통합 {#integrating-html-forms-to-a-web-page}
 
@@ -34,7 +34,7 @@ FormBridge API를 사용하여 HTML 페이지에서 양식 필드의 값을 가�
    1. 관리자 자격 증명으로 로그인합니다.
    1. 프로파일을 생성하거나 기존 프로파일을 선택합니다.
 
-      프로필을 만드는 방법에 대한 자세한 내용은 [새 프로필 만들기](/help/forms/using/custom-profile.md).
+      프로필을 만드는 방법에 대한 자세한 내용은 [프로필 만들기](/help/forms/using/custom-profile.md).
 
 1. **HTML 프로필 수정**
 

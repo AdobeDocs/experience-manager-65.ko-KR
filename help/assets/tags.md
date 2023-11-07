@@ -10,9 +10,9 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 04941e17054951bcf6264da957d951a5d1107896
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6622'
+source-wordcount: '6618'
 ht-degree: 7%
 
 ---
@@ -598,7 +598,7 @@ Experience Platform 태그 구성(속성, 확장, 규칙 및 설정된 데이터
 
 Experience Platform 태그에는 잠재적으로 여러 개발 환경, 하나의 스테이징 환경 및 하나의 프로덕션 환경이 있을 수 있습니다. 기본적으로 Experience Manager의 Experience Platform 태그 클라우드 구성 은 Experience Manager 작성자 노드를 Experience Platform 태그의 스테이지 환경으로 지정합니다. Experience Manager 게시 노드는 Experience Platform 태그의 프로덕션 환경을 가리킵니다. 즉, 기본 Experience Manager 설정을 사용하여 Experience Platform 태그 라이브러리를 스테이징 환경에 게시해야 합니다. 이렇게 하면 Experience Manager 작성자에서 사용할 수 있습니다. 그런 다음 Experience Manager 게시에서 사용할 수 있도록 프로덕션 환경에 게시할 수 있습니다.
 
-다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
+다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
 
 라이브러리 게시에는 다음 두 단계가 포함됩니다.
 
@@ -826,7 +826,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    다음에서 **[!UICONTROL 라이브러리 URI]** (Uniform Resource Identifier) 필드에서 Experience Platform 태그 라이브러리의 스테이징 버전 위치를 확인합니다. Experience Manager이 이 필드를 자동으로 채웁니다.
 
-   예를 들어, 이 단계에서는 CDN Adobe에 배포된 Experience Platform 태그 라이브러리를 사용합니다.
+   샘플 목적으로만, 이 단계에서는 Adobe CDN에 배포된 Experience Platform 태그 라이브러리를 사용합니다.
 
    >[!NOTE]
    >

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -135,13 +135,13 @@ AEM은 다음을 사용하여 로그 메시지를 파일에 기록합니다.
 
 고유한 로거/작성기 쌍을 정의할 수 있습니다.
 
-1. 출하 시 구성의 새 인스턴스 생성 [Apache Sling 로깅 로거 구성](/help/sites-deploying/osgi-configuration-settings.md).
+1. 출하 시 구성의 인스턴스 생성 [Apache Sling 로깅 로거 구성](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. 로그 파일을 지정합니다.
    1. 로거를 지정합니다.
    1. 필요에 따라 다른 매개 변수를 구성합니다.
 
-1. 출하 시 구성의 새 인스턴스 생성 [Apache Sling 로깅 작성기 구성](/help/sites-deploying/osgi-configuration-settings.md).
+1. 출하 시 구성의 인스턴스 생성 [Apache Sling 로깅 작성기 구성](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. 로그 파일을 지정하십시오. 이 파일은 로거에 대해 지정된 것과 일치해야 합니다.
    1. 필요에 따라 다른 매개 변수를 구성합니다.

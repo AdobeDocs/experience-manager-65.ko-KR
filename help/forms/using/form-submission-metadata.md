@@ -10,22 +10,22 @@ discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 1%
+source-wordcount: '740'
+ht-degree: 8%
 
 ---
 
 # 양식 제출 메타데이터에 사용자 데이터의 정보 추가{#adding-information-from-user-data-to-form-submission-metadata}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 양식의 요소에 입력된 값을 사용하여 초안 또는 양식 제출의 메타데이터 필드를 계산할 수 있습니다. 메타데이터를 사용하면 사용자 데이터를 기반으로 콘텐츠를 필터링할 수 있습니다. 예를 들어 사용자가 양식의 이름 필드에 John Doe를 입력합니다. 이 정보를 사용하여 이 제출을 이니셜 JD로 분류할 수 있는 메타데이터를 계산할 수 있습니다.
 
 사용자가 입력한 값으로 메타데이터 필드를 계산하려면 메타데이터에 양식의 요소를 추가합니다. 사용자가 해당 요소에 값을 입력하면 스크립트는 해당 값을 사용하여 정보를 계산합니다. 이 정보는 메타데이터에 추가됩니다. 요소를 메타데이터 필드로 추가하면 해당 요소에 대한 키를 제공합니다. 키가 메타데이터의 필드로 추가되고 계산된 정보가 이에 대해 기록됩니다.
 
-예를 들어, 건강 보험 회사는 양식을 게시합니다. 이 양식에서 필드는 최종 사용자의 연령을 캡처합니다. 고객은 다수의 사용자가 양식을 제출한 후 특정 연령 범위에서 모든 제출 내용을 확인하고자 합니다. 양식 수가 늘어남에 따라 복잡해지는 모든 데이터를 검토하지 않고 추가 메타데이터를 통해 고객을 지원합니다. 양식 작성자는 검색이 쉽도록 최종 사용자가 채운 속성/데이터를 최상위 수준에서 저장할 수 있도록 구성할 수 있습니다. 추가 메타데이터는 작성자가 구성한 대로 메타데이터 노드의 최상위 수준에 저장된 사용자 입력 정보입니다.
+예를 들어, 건강 보험 회사는 양식을 게시합니다. 이 양식에서 필드는 최종 사용자의 연령을 캡처합니다. 고객은 여러 명의 사용자가 양식을 제출한 후 특정 연령 범위에서 모든 제출 내용을 확인하고자 합니다. 양식 수가 늘어남에 따라 복잡해지는 모든 데이터를 검토하지 않고 추가 메타데이터를 통해 고객을 지원합니다. 양식 작성자는 검색이 쉽도록 최종 사용자가 채운 속성/데이터를 최상위 수준에서 저장할 수 있도록 구성할 수 있습니다. 추가 메타데이터는 작성자가 구성한 대로 메타데이터 노드의 최상위 수준에 저장된 사용자 입력 정보입니다.
 
 이메일 ID 및 전화 번호를 캡처하는 양식의 다른 예를 생각해 보십시오. 사용자가 이 양식을 익명으로 방문하고 양식을 포기하면 작성자는 이메일 ID 및 전화 번호를 자동으로 저장하도록 양식을 구성할 수 있습니다. 이 양식은 자동으로 저장되며 전화 번호와 이메일 ID는 초안의 메타데이터 노드에 저장됩니다. 이 구성의 사용 사례는 리드 관리 대시보드입니다.
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 1. **확인**&#x200B;을 클릭합니다.
 
-사용자가 메타데이터 필드로 선택된 요소에 데이터를 입력하면, 계산된 정보가 메타데이터에 기록된다. 메타데이터를 저장하도록 구성한 저장소에서 메타데이터를 볼 수 있습니다.
+사용자가 메타데이터 필드로 선택한 요소에 데이터를 입력한 후, 계산된 정보가 메타데이터에 기록된다. 메타데이터를 저장하도록 구성한 저장소에서 메타데이터를 볼 수 있습니다.
 
 ## 업데이트된 양식 제출 메타데이터 보기: {#seeing-updated-form-nbsp-submission-metadata}
 

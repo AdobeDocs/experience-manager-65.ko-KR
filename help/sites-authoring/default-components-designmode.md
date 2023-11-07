@@ -2,9 +2,9 @@
 title: 디자인 모드에서 기본 구성 요소 구성
 description: 디자인 모드에서 Adobe Experience Manager 구성 요소 구성
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '914'
 ht-degree: 14%
 
 ---
@@ -95,7 +95,7 @@ AEM 인스턴스가 즉시 설치되면 구성 요소 브라우저에서 다양�
 
    >[!NOTE]
    >
-   >적응형 양식 구성 요소는 Forms 에코시스템을 활용하기 위해 적응형 양식 컨테이너 내에서 작동하도록 설계되었습니다. 따라서 이러한 구성 요소는 적응형 양식 편집기에서만 사용해야 하며 Sites 페이지 편집기에서는 작동하지 않습니다.
+   >적응형 양식 구성 요소는 Forms 에코시스템을 사용하기 위해 적응형 양식 컨테이너 내에서 작동하도록 설계되었습니다. 따라서 이러한 구성 요소는 적응형 양식 편집기에서만 사용해야 하며 Sites 페이지 편집기에서는 작동하지 않습니다.
 
    **설정**
 

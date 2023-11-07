@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4907'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ HTL과 JSP는 모두 클래식 및 터치 지원 UI 모두에 대한 구성 요�
 
 ### 구성 요소를 게시 인스턴스로 이동 {#moving-components-to-the-publish-instance}
 
-콘텐츠를 렌더링하는 구성 요소는 콘텐츠와 동일한 AEM 인스턴스에 배포해야 합니다. 따라서 작성자 인스턴스에서 페이지를 작성 및 렌더링하는 데 사용되는 모든 구성 요소를 게시 인스턴스에 배포해야 합니다. 배포되면 구성 요소를 활성화된 페이지를 렌더링하는 데 사용할 수 있습니다.
+콘텐츠를 렌더링하는 구성 요소는 콘텐츠와 동일한 AEM 인스턴스에 배포해야 합니다. 따라서 작성 인스턴스에서 페이지를 작성 및 렌더링하는 데 사용되는 모든 구성 요소를 게시 인스턴스에 배포해야 합니다. 배포되면 구성 요소를 활성화된 페이지를 렌더링하는 데 사용할 수 있습니다.
 
 다음 도구를 사용하여 구성 요소를 게시 인스턴스로 이동합니다.
 
@@ -143,7 +143,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
 
 컴포넌트의 정의는 다음과 같이 나눌 수 있습니다.
 
-* AEM 구성 요소는 다음을 기반으로 합니다 [슬링](https://sling.apache.org/documentation.html).
+* AEM 구성 요소는 [슬링](https://sling.apache.org/documentation.html).
 * AEM 구성 요소는 (일반적으로) 다음 아래에 있습니다.
 
    * HTL: `/libs/wcm/foundation/components`
@@ -311,7 +311,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>설정된 경우 이 속성은 셀 ID로 간주됩니다. 자세한 내용은 기술 자료 문서를 참조하십시오 <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">디자인 셀 ID 작성 방법</a>.<br /> </td>
+   <td>설정된 경우 이 속성은 셀 ID로 간주됩니다. 자세한 내용은 기술 자료 문서를 참조하십시오. <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">디자인 셀 ID 작성 방법</a>.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -366,7 +366,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
   <tr>
    <td><code>virtual</code></td>
    <td><code>sling:Folder</code></td>
-   <td>가상 구성 요소를 만들 수 있습니다. 예제를 보려면 다음 위치에서 연락처 구성 요소를 참조하십시오.<br /> <code>/libs/foundation/components/profile/form/contact</code></td>
+   <td>가상 구성 요소를 만들 수 있습니다. 예를 보려면 다음 위치에서 연락처 구성 요소를 확인하십시오.<br /> <code>/libs/foundation/components/profile/form/contact</code></td>
   </tr>
   <tr>
    <td><code>&lt;breadcrumb.jsp&gt;</code></td>
@@ -706,7 +706,7 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 이러한 자리 
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>기본값. 구성 요소 에디션은 클릭 및/또는 상황에 맞는 메뉴를 통해 "마우스 오버"로 액세스할 수 있습니다.<br /> 고급 사용을 위해 해당 클라이언트측 객체는 다음과 같습니다. <code>CQ.wcm.EditRollover</code>.</td>
+   <td>기본 값. 구성 요소 에디션은 클릭 및/또는 상황에 맞는 메뉴를 통해 "마우스 오버"로 액세스할 수 있습니다.<br /> 고급 사용을 위해 해당 클라이언트측 객체는 다음과 같습니다. <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
@@ -811,7 +811,7 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 이러한 자리 
 
 다음 `<drag and drop prefix>` 는 Java™ 속성으로 정의됩니다.
 
-`com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
+`com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`
 
 예를 들어 클래스 이름은 다운로드 구성 요소의 JSP에서 다음과 같이 정의됩니다( `/libs/foundation/components/download/download.jsp`), 여기서 `file` 는 다운로드 구성 요소의 편집 구성에 있는 드롭 대상의 노드 이름입니다.
 
@@ -1026,7 +1026,7 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 이러한 자리 
 >  * `aftermove`
 >  * `aftercopy`
 
-이벤트 처리기는 사용자 지정 구현으로 구현할 수 있습니다. 예(여기서 `project.customerAction` 은 정적 메서드입니다).
+이벤트 처리기는 사용자 지정 구현으로 구현할 수 있습니다. 예, (여기서 `project.customerAction` 은 정적 메서드입니다).
 
 `afteredit = "project.customerAction"`
 
@@ -1036,7 +1036,7 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 이러한 자리 
 
 >[!NOTE]
 >
->클래식 UI의 경우, 핸들러에서 사용할 수 있는 매개 변수를 확인하려면 `before<action>` 및 `after<action>` 의 이벤트 섹션 [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) 및 [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) 위젯 설명서입니다.
+>클래식 UI에 대한 처리기에서 사용할 수 있는 매개 변수를 보려면 `before<action>` 및 `after<action>` 의 이벤트 섹션 [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) 및 [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) 위젯 설명서입니다.
 
 다음 구성을 사용하면 구성 요소가 삭제, 편집, 삽입 또는 이동된 후 페이지가 새로 고쳐집니다.
 

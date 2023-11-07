@@ -10,10 +10,10 @@ topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 0%
+source-wordcount: '392'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ AEM Forms을 사용하면 폴더의 제목을 변경할 수 있습니다. 제목
 
 * 원하는 폴더 구조에 자산이 포함된 ZIP 파일 업로드(참조: [AEM Forms에서 XDP 및 PDF 문서 가져오기](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
-* 새 빈 폴더 만들기
+* 빈 폴더 만들기
 
 1. 다음 위치에서 AEM Forms 사용자 인터페이스에 로그인합니다. `https://<server>:<port>/aem/forms.html`.
 1. 폴더를 만들 위치로 이동합니다.
@@ -44,7 +44,7 @@ AEM Forms을 사용하면 폴더의 제목을 변경할 수 있습니다. 제목
    >
    >기본적으로 이름 값 필드는 제목에서 자동으로 채워집니다. 이름에는 영숫자와 하이픈(-) 및 밑줄(_) 특수 문자만 사용할 수 있습니다. 제목에 입력된 다른 특수 문자는 자동으로 하이픈으로 대체되며 새 이름을 확인하라는 메시지가 표시됩니다. 제안된 이름을 계속 사용하거나 추가로 편집할 수 있습니다.
 
-1. 클릭 **[!UICONTROL 제출].**
+1. **[!UICONTROL 제출]을 클릭합니다.**
 
    정의한 제목이 있는 새 폴더가 자산 목록의 현재 위치에 표시됩니다.
 
@@ -55,4 +55,4 @@ AEM Forms을 사용하면 폴더의 제목을 변경할 수 있습니다. 제목
 1. 제목을 편집할 폴더를 선택합니다.
 1. 편집 클릭 ![aem6forms_edit](assets/aem6forms_edit.png) 아이콘을 클릭합니다.
 1. 새 제목을 입력합니다. 텍스트 필드는 폴더 제목의 현재 값으로 미리 채워집니다. 새 값으로 변경할 수 있습니다.
-1. 클릭 **[!UICONTROL 제출].**
+1. **[!UICONTROL 제출]을 클릭합니다.**

@@ -1,8 +1,8 @@
 ---
 title: FormsService에 문서 전달
 seo-title: Passing Documents to the FormsService
-description: 양식 디자인이 포함된 com.adobe.idp.Document 개체를 Forms 서비스에 전달합니다. Forms 서비스는 com.adobe.idp.Document 개체에 있는 양식 디자인을 렌더링합니다.
-seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design located in the com.adobe.idp.Document object.
+description: 양식 디자인이 포함된 com.adobe.idp.Document 개체를 Forms 서비스에 전달합니다. Forms 서비스는 com.adobe.idp.Document 개체에서 양식 디자인을 렌더링합니다.
+seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design in the com.adobe.idp.Document object.
 uuid: 841e97f3-ebb8-4340-81a9-b6db11f0ec82
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1682'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
-AEM Forms 서비스는 대화형 PDF forms을 클라이언트 장치(일반적으로 웹 브라우저)로 렌더링하여 사용자로부터 정보를 수집합니다. 대화형 PDF 양식은 일반적으로 XDP 파일로 저장되고 디자이너에서 만들어지는 양식 디자인을 기반으로 합니다. AEM Forms에서 를 전달할 수 있습니다. `com.adobe.idp.Document` Forms 서비스에 대한 양식 디자인이 포함된 객체입니다. 그런 다음 Forms 서비스는에 있는 양식 디자인을 렌더링합니다. `com.adobe.idp.Document` 개체.
+AEM Forms 서비스는 대화형 PDF forms을 클라이언트 장치(일반적으로 웹 브라우저)로 렌더링하여 사용자로부터 정보를 수집합니다. 대화형 PDF 양식은 일반적으로 XDP 파일로 저장되고 디자이너에서 만들어지는 양식 디자인을 기반으로 합니다. AEM Forms에서 를 전달할 수 있습니다. `com.adobe.idp.Document` Forms 서비스에 대한 양식 디자인이 포함된 객체입니다. 그런 다음 Forms 서비스는에서 양식 디자인을 렌더링합니다 `com.adobe.idp.Document` 개체.
 
 를 전달할 때의 이점 `com.adobe.idp.Document` Forms 서비스의 개체는 다른 서비스 작업에서 `com.adobe.idp.Document` 인스턴스. 즉, 다음을 얻을 수 있습니다. `com.adobe.idp.Document` 다른 서비스 작업의 인스턴스를 렌더링합니다. 예를 들어 XDP 파일이 Content Services(더 이상 사용되지 않음) 노드에 저장되어 있다고 가정해 보겠습니다 `/Company Home/Form Designs`다음 그림과 같이 을 참조하십시오.
 
@@ -156,6 +156,7 @@ Forms 서비스 및 Content Services(더 이상 사용되지 않음) API(웹 서
       * 필드에 AEM Forms 사용자 이름 할당 `FormsServiceClient.ClientCredentials.UserName.UserName`.
       * 해당 암호 값을 필드에 할당합니다. `FormsServiceClient.ClientCredentials.UserName.Password`.
       * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+
    * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]

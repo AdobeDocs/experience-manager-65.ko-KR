@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3498'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ HTML을 가져오려면 캔버스 div를 랜딩 페이지 HTML에 추가해야 �
 
 ### &amp;lt;body> 태그에 적용된 클래스 또는 ID와 같은 속성은 유지되지 않습니다 {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-예를 들어 ID 또는 클래스와 같은 속성이 본문 태그에 적용되는 경우 `<body id="container">` 가져온 후에는 유지되지 않습니다. 따라서 가져오는 디자인에 다음에 적용되는 속성에 대한 종속성이 없어야 합니다. `<body>` 태그에 가깝게 배치하십시오.
+예를 들어 ID 또는 클래스와 같은 속성이 본문 태그에 적용되면 `<body id="container">` 가져온 후에는 유지되지 않습니다. 따라서 가져오는 디자인에 다음에 적용되는 속성에 대한 종속성이 없어야 합니다. `<body>` 태그에 가깝게 배치하십시오.
 
 ### zip 드래그 앤 드롭 {#drag-and-drop-zip}
 
@@ -321,7 +321,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 * 사전 정의된 리드 필드 - 이름, 성, 주소, dob, 성별, 정보, userId, emailId, 제출 버튼 은 사이드 킥에서 사용할 수 있습니다. 리드 양식에서 필요한 구성 요소를 드래그/드롭하기만 하면 됩니다.
 * 이러한 구성 요소를 통해 작성자는 독립형 리드 양식을 디자인할 수 있으며 이러한 필드는 리드 양식 필드에 해당합니다. 독립형 또는 가져온 zip 애플리케이션에서 사용자는 cq:form 또는 cta 리드 양식 필드를 사용하여 필드를 추가하고 요구 사항에 따라 이름을 지정하고 디자인할 수 있습니다.
-* CTA 리드 양식의 미리 정의된 특정 이름(예: 리드 양식의 이름에 대한 firstName 등)을 사용하여 리드 양식 필드를 매핑합니다.
+* CTA 리드 양식의 미리 정의된 특정 이름(예: 리드 양식의 이름에 대한 - firstName 등)을 사용하여 리드 양식 필드를 매핑합니다.
 * 리드 양식에 매핑되지 않은 필드는 cq:form 구성 요소(텍스트, 라디오, 확인란, 드롭다운, 숨김, 암호)에 매핑됩니다.
 * 사용자는 &quot;label&quot; 태그를 사용하여 제목을 제공하고 스타일 속성 &quot;class&quot;(CTA 리드 양식 구성 요소에만 사용 가능)를 사용하여 스타일을 제공할 수 있습니다.
 * 감사 페이지 및 구독 목록은 양식의 숨겨진 매개 변수(index.htm에 있음)로 제공되거나 &quot;리드 양식 시작&quot;의 편집 막대에서 추가/편집할 수 있습니다.
@@ -438,9 +438,9 @@ HTML 태그에 설정된 Lang 속성은 디자인 임포터에서 &quot;jcr:lang
 
 ### 템플릿 오버레이 {#overlaying-template}
 
-다음 위치에 새 랜딩 페이지 템플릿을 만들어 빈 랜딩 페이지 템플릿을 오버레이할 수 있습니다. `/apps/<appName>/designimporter/templates/<templateName>`
+빈 랜딩 페이지 템플릿은에서 하나를 만들어 오버레이할 수 있습니다. `/apps/<appName>/designimporter/templates/<templateName>`
 
-AEM에서 새 템플릿을 만드는 단계가 설명되어 있습니다 [여기](/help/sites-developing/templates.md).
+AEM에서 템플릿을 만드는 단계가 설명되어 있습니다 [여기](/help/sites-developing/templates.md).
 
 ### 랜딩 페이지에서 구성 요소 참조 {#referring-a-component-from-landing-page}
 

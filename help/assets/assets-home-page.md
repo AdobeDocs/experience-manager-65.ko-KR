@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Developer Tools, Asset Management
 role: Admin, User
 exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 1%
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 사용자 활동 데이터 삭제를 사용하려면 **[!UICONTROL DAM 이벤트 제거 서비스]** 구성 관리자에서. 이 서비스를 사용하면 로그인한 사용자가 지정한 수를 초과하는 활동이 시스템에서 삭제됩니다.
 
-시작 화면에서는 폴더, 컬렉션 및 카탈로그에 액세스하기 위한 도구 모음의 아이콘과 같은 간단한 탐색 도구를 제공합니다.
+시작 화면에서는 폴더, 컬렉션 및 카탈로그에 액세스할 수 있는 아이콘과 같은 간단한 탐색 도구를 제공합니다.
 
 >[!NOTE]
 >

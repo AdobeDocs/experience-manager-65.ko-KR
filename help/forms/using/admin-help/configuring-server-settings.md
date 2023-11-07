@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2623'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ For details, see [How to hide the 'DO-NOT-DELETE' tag with CSS](https://blogs.ad
 
 ### 리치 텍스트 편집기 {#rich-text-editor}
 
-HTML 템플릿 영역은 이메일 알림 메시지에 대한 알림을 생성할 수 있는 리치 텍스트 편집기입니다. 또한 알림 템플릿 상자 아래에 있는 글꼴 및 단락 서식 옵션을 제공합니다. 옵션에는 글꼴 유형, 크기, 스타일 및 색상은 물론 단락 정렬 및 글머리 기호가 포함됩니다.
+HTML 템플릿 영역은 이메일 알림 메시지에 대한 알림을 생성할 수 있는 리치 텍스트 편집기입니다. 또한 알림 템플릿 상자 아래에 있는 글꼴 및 단락 서식 옵션을 제공합니다. 옵션에는 글꼴 유형, 크기, 스타일 및 색상, 단락 정렬 및 글머리 기호가 포함됩니다.
 
 ### URL 생성 {#url-generation}
 
@@ -187,11 +187,11 @@ HTML 템플릿 영역은 이메일 알림 메시지에 대한 알림을 생성�
 
 * OpenTask는 미리 알림 및 작업 할당 알림 유형에 사용할 수 있습니다. 이 URL은 Workspace의 작업에 대한 링크를 제공하여 사용자가 이메일 알림에서 작업에 빠르게 액세스할 수 있도록 합니다. OpenTask URL을 Notification Template 상자로 드래그하면 URL의 형식은 다음과 같습니다.
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
 * ClaimTask는 그룹 - 미리 알림 및 그룹 - 작업 할당 알림 유형에 사용할 수 있습니다. 이 URL은 사용자가 작업 항목을 클레임하거나 클레임 및 열 수 있는 작업 영역의 작업 세부 정보 페이지에 대한 링크를 제공합니다. ClaimTask URL을 Notification Template 상자로 드래그하면 URL의 형식은 다음과 같습니다.
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
 >[!NOTE]
 >

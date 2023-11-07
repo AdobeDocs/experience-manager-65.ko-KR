@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1947'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 문서에서는 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) 클래식 UI에서. Adobe은 새 를 활용할 것을 권장합니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md) 터치 지원 UI에서 양식 개발용
+>이 문서에서는 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) 클래식 UI에서. Adobe은 새 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md) 터치 지원 UI에서 양식 개발용
 
 ## 양식 값 미리 로드 {#preloading-form-values}
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 다음 **항목 로드 경로** 를 사용하여 저장소의 폴더에서 목록에 액세스하고 이러한 목록을 필드에 미리 로드할 수 있습니다.
 
-1. 새 슬링 폴더 만들기( `sling:Folder`)를 참조하십시오. `/etc/designs/<myDesign>/formlistvalues`
+1. 슬링 폴더 만들기( `sling:Folder`)를 참조하십시오. `/etc/designs/<myDesign>/formlistvalues`
 
 1. 새 속성 추가(예: `myList`) 다중 값 문자열( `String[]`) - 드롭다운 항목 목록을 포함합니다. JSP 스크립트나 셸 스크립트의 cURL과 같이 스크립트를 사용하여 컨텐츠를 가져올 수도 있습니다.
 

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 1%
 
 ---
@@ -123,7 +123,7 @@ ht-degree: 1%
 1. 에서 삭제할 배너 선택 **배너 관리** 타일.
 1. 목록에서 선택되었는지 확인합니다(필요에 따라 삭제할 다른 항목 선택).
 1. 클릭 **삭제** 작업 표시줄에서
-1. AEM과 Mobile On-Demand에서 삭제하시겠습니까?
+1. AEM 및 Mobile On-Demand에서 삭제하시겠습니까?
 1. **삭제**&#x200B;를 클릭합니다.
 1. 이제 배너가 목록에서 제거됩니다.
 

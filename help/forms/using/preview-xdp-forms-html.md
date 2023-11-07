@@ -10,9 +10,9 @@ discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 feature: Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,7 @@ AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 렌디�
 
       * -/content/xfaforms
       * -/etc/clientlibs
+
    * OSGi의 AEM Forms
 
       * -/content/xfaforms
@@ -78,6 +79,7 @@ AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 렌디�
       * `/content/xfaforms/profiles/default.html` (OSGi의 AEM Forms)
 
       * `/lc/content/xfaforms/profiles/default.html` (JEE의 AEM Forms)
+
    * **Forms Manager 컨텍스트:** Forms Manager UI가 배포되는 컨텍스트 경로. 기본값은 다음과 같습니다.
 
       * `/aem/forms` (OSGi의 AEM Forms)
@@ -100,7 +102,8 @@ AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 렌디�
    >
    >    * HTML 미리 보기 탭이 닫혀 있으면 F4 키를 눌러 미리 보기 HTML 탭을 엽니다. 보기 메뉴에서 HTML 미리보기 를 선택하여 HTML 미리보기 탭을 열 수도 있습니다.
    >    * HTML 미리 보기는 PDF 문서를 지원하지 않습니다. HTML 미리 보기는 XDP 문서에 대해서만 수행됩니다.
-
+   >
+   >
 
    >[!CAUTION]
    >
@@ -120,6 +123,6 @@ AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 렌디�
 
 1. **확인**&#x200B;을 클릭합니다. 다음번에 다음에서 양식을 미리 볼 때 **미리 보기 HTML** 탭에서는 샘플 XML 파일의 데이터 값이 각 객체에 나타납니다.
 
-## 저장소에 있는 양식 미리 보기 {#html-preview-of-forms-in-forms-manager}
+## 저장소에서 양식 미리 보기 {#html-preview-of-forms-in-forms-manager}
 
-AEM Forms에서는 저장소의 양식 및 문서를 미리 볼 수 있습니다. 미리보기를 사용하면 최종 사용자가 사용할 양식의 모양과 동작을 정확하게 파악할 수 있습니다.
+AEM Forms에서는 저장소의 양식 및 문서를 미리 볼 수 있습니다. 미리 보기를 통해 양식의 모양과 동작을 최종 사용자가 정확하게 파악할 수 있습니다.

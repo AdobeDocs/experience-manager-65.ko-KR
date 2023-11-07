@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2523'
 ht-degree: 0%
 
 ---
@@ -201,7 +201,7 @@ ht-degree: 0%
 
 **핵심 설정 컨트롤:** 관리 콘솔의 [핵심 시스템 설정] 페이지에서 설정 관리
 
-**CREATE_VERSION_PERM:** 서비스의 새 버전 만들기
+**CREATE_VERSION_PERM:** 서비스 버전 만들기
 
 **자격 증명 수정:** Trust Store에서 서명 자격 증명 수정
 
@@ -291,7 +291,7 @@ ht-degree: 0%
 
 **Rights Management 정책 집합 코디네이터 추가:** 정책 집합 코디네이터에 대한 권한 추가, 제거 및 변경
 
-**Rights Management 정책 집합 정책 만들기:** 정책 집합에 대한 새 정책 만들기
+**Rights Management 정책 집합 정책 만들기:** 정책 집합에 대한 정책 만들기
 
 **Rights Management 정책 설정 삭제 정책:** 정책 집합에서 정책 제거
 

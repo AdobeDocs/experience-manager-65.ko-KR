@@ -1,15 +1,15 @@
 ---
 title: 디지털 서명 및 인증 문서
-description: 서명 서비스를 사용하여 PDF 문서에 디지털 서명 필드를 추가 및 삭제하고, PDF 문서에 있는 서명 필드의 이름을 검색하고, 서명 필드를 수정하고, PDF 문서에 디지털 서명하고, PDF 문서를 인증하고, PDF 문서에 있는 디지털 서명을 검증하고, PDF 문서에 있는 모든 디지털 서명을 검증하고, 서명 필드에서 디지털 서명을 제거합니다.
+description: 서명 서비스를 사용하여 PDF 문서에 디지털 서명 필드를 추가 및 삭제하고, PDF 문서의 서명 필드 이름을 검색하고, 서명 필드를 수정하고, PDF 문서에 디지털 서명을 하고, PDF 문서를 인증하고, PDF 문서에서 디지털 서명을 검증하고, PDF 문서의 모든 디지털 서명을 검증하고, 서명 필드에서 디지털 서명을 제거합니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '17045'
+source-wordcount: '17029'
 ht-degree: 0%
 
 ---
@@ -37,12 +37,12 @@ PDF 문서 내에 여러 서명 필드가 있는 경우 서명 필드의 전체 
 서명 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
 * PDF 문서에 디지털 서명 필드를 추가하고 삭제합니다. (참조: [서명 필드 추가](digitally-signing-certifying-documents.md#adding-signature-fields).)
-* PDF 문서에 있는 서명 필드의 이름을 검색합니다. (참조: [서명 필드 이름 검색 중](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+* PDF 문서의 서명 필드 이름을 검색합니다. (참조: [서명 필드 이름 검색 중](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 * 서명 필드를 수정합니다. (참조: [서명 필드 수정](digitally-signing-certifying-documents.md#modifying-signature-fields).)
 * PDF 문서에 디지털 서명합니다. (참조: [PDF 문서에 디지털 서명](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 * PDF 문서를 인증합니다. (참조: [PDF 문서 인증](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
-* PDF 문서에 있는 디지털 서명의 유효성을 검사합니다. (참조: [디지털 서명 확인](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
-* PDF 문서에 있는 모든 디지털 서명의 유효성을 검사합니다. (참조: [여러 디지털 서명 확인](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* PDF 문서에서 디지털 서명의 유효성을 검사합니다. (참조: [디지털 서명 확인](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* PDF 문서에서 모든 디지털 서명의 유효성을 검사합니다. (참조: [여러 디지털 서명 확인](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
 * 서명 필드에서 디지털 서명을 제거합니다. (참조: [디지털 서명 제거](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 >[!NOTE]
@@ -361,7 +361,7 @@ A *필드 잠금 사전* 서명 필드에 서명할 때 잠기는 필드 목록�
 
 ### 단계 요약 {#summary_of_steps-2}
 
-PDF 문서에 있는 서명 필드를 수정하려면 다음 작업을 수행합니다.
+PDF 문서의 서명 필드를 수정하려면 다음 작업을 수행합니다.
 
 1. 프로젝트 파일을 포함합니다.
 1. 서명 클라이언트를 만듭니다.
@@ -601,7 +601,7 @@ nCypher nShield HSM 자격 증명을 사용하여 PDF 문서에 서명하거나 
 
 **XFA 기반 양식인 서명 문서**
 
-서명 서비스 API를 사용하여 XFA 기반 양식에 서명하려고 하면 데이터가에서 누락될 수 있습니다. `View` `Signed` `Version` Acrobat에 있습니다. 예를 들어 다음 워크플로를 고려하십시오.
+서명 서비스 API를 사용하여 XFA 기반 양식에 서명하려고 하면 데이터가에서 누락될 수 있습니다. `View` `Signed` `Version` Acrobat. 예를 들어 다음 워크플로를 고려하십시오.
 
 * 디자이너를 사용하여 만든 XDP 파일을 사용하면 서명 필드가 포함된 양식 디자인과 양식 데이터가 포함된 XML 데이터를 병합할 수 있습니다. Forms 서비스를 사용하여 대화형 PDF 문서를 생성합니다.
 * 서명 서비스 API를 사용하여 PDF 문서에 서명합니다.
@@ -816,7 +816,7 @@ PDF 문서에 디지털 서명하려면 보안 자격 증명도 참조해야 합
 
 Forms 서비스에서 만드는 대화형 양식에 서명할 수 있습니다. 예를 들어 다음 워크플로를 고려하십시오.
 
-* 디자이너를 사용하여 만든 XFA 기반 PDF 양식과 Forms 서비스를 사용하여 XML 문서에 있는 양식 데이터를 병합합니다. Forms 서버는 대화형 양식을 렌더링합니다.
+* 디자이너를 사용하여 만든 XFA 기반 PDF 양식과 양식 데이터를 Forms 서비스를 사용하여 XML 문서에 병합할 수 있습니다. Forms 서버는 대화형 양식을 렌더링합니다.
 * 서명 서비스 API를 사용하여 대화형 양식에 서명합니다.
 
 그 결과 디지털 서명된 대화형 PDF 양식이 만들어집니다. XFA 양식을 기반으로 하는 PDF 양식에 서명할 때 PDF 파일을 Adobe 정적 PDF 양식으로 저장해야 합니다. Adobe 동적 PDF 양식으로 저장된 PDF 양식에 서명하려고 하면 예외가 발생합니다. Forms 서비스에서 반환된 양식에 서명하고 있으므로 양식에 서명 필드가 포함되어 있는지 확인하십시오.
@@ -1585,7 +1585,7 @@ Adobe 응용 프로그램 및 서비스를 사용하여 서명 서비스에서 �
 
 **모든 디지털 서명 검색**
 
-PDF 문서에 있는 모든 디지털 서명을 확인하려면 PDF 문서에서 디지털 서명을 검색합니다. 모든 서명은 목록에 반환됩니다. 디지털 서명을 확인하는 과정의 일부로 서명 상태를 확인하십시오.
+PDF 문서에서 모든 디지털 서명을 확인하려면 PDF 문서에서 디지털 서명을 검색합니다. 모든 서명은 목록에 반환됩니다. 디지털 서명을 확인하는 과정의 일부로 서명 상태를 확인하십시오.
 
 >[!NOTE]
 >
@@ -1641,7 +1641,7 @@ Java(서명 서비스 API)를 사용하여 여러 디지털 서명을 확인합�
    * A `PKIOptions` PKI 런타임 옵션이 포함된 객체입니다.
    * A `VerifySPIOptions` SPI 정보가 포함된 인스턴스입니다. 다음을 지정할 수 있습니다. `null` 이 매개 변수에 사용합니다.
 
-   다음 `verifyPDFDocument` 메서드가 을 반환합니다. `PDFDocumentVerificationInfo` PDF 문서에 있는 모든 디지털 서명에 대한 정보를 포함하는 개체입니다.
+   다음 `verifyPDFDocument` 메서드가 을 반환합니다. `PDFDocumentVerificationInfo` PDF 문서의 모든 디지털 서명에 대한 정보를 포함하는 개체입니다.
 
 1. 모든 서명 반복
 
@@ -1707,7 +1707,7 @@ Java(서명 서비스 API)를 사용하여 여러 디지털 서명을 확인합�
    * A `PKIOptions` PKI 런타임 옵션이 포함된 객체입니다.
    * A `VerifySPIOptions` SPI 정보가 포함된 인스턴스입니다. 이 매개 변수에 대해 null을 지정할 수 있습니다.
 
-   다음 `verifyPDFDocument` 메서드가 을 반환합니다. `PDFDocumentVerificationInfo` PDF 문서에 있는 모든 디지털 서명에 대한 정보를 포함하는 개체입니다.
+   다음 `verifyPDFDocument` 메서드가 을 반환합니다. `PDFDocumentVerificationInfo` PDF 문서의 모든 디지털 서명에 대한 정보를 포함하는 개체입니다.
 
 1. 모든 서명 반복
 

@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1575'
 ht-degree: 0%
 
 ---
@@ -108,14 +108,14 @@ SPNEGO를 사용하여 SSO를 활성화하면 SPNEGO가 활성화된 Kerberos �
 
 아티팩트 바인딩을 사용하는 경우 다음 사용자 지정 속성이 필요합니다.
 
-* 다음 사용자 지정 속성을 추가하여 IDP 아티팩트 확인 서비스에 인증하는 데 사용될 AEM Forms 서비스 공급자를 나타내는 사용자 이름을 지정합니다.
-   `saml.idp.resolve.username=<username>`
+* 다음 사용자 지정 속성을 추가하여 IDP 아티팩트 확인 서비스에 인증하는 데 사용되는 AEM Forms 서비스 공급자를 나타내는 사용자 이름을 지정합니다.
+  `saml.idp.resolve.username=<username>`
 
 * 다음 사용자 지정 속성을 추가하여 지정된 사용자의 암호를 지정합니다. `saml.idp.resolve.username`.
-   `saml.idp.resolve.password=<password>`
+  `saml.idp.resolve.password=<password>`
 
 * SSL을 통해 아티팩트 확인 서비스에 연결을 설정하는 동안 서비스 공급자가 인증서 유효성 검사를 무시할 수 있도록 하려면 다음 사용자 지정 속성을 추가하십시오.
-   `saml.idp.resolve.ignorecert=true`
+  `saml.idp.resolve.ignorecert=true`
 
 ### 사용자 정의 설정 {#custom-settings}
 
@@ -129,7 +129,7 @@ Just-in-time 프로비저닝은 사용자가 인증 공급자를 통해 성공�
 
 1. 사용자가 AEM Forms에 로그인하려고 하면 User Management에서 자격 증명을 사용 가능한 모든 인증 공급자에게 순차적으로 전달합니다. (로그인 자격 증명에는 사용자 이름/암호 조합, Kerberos 티켓, PKCS7 서명 등이 포함됩니다.)
 1. 인증 공급자가 자격 증명의 유효성을 검사합니다.
-1. 그런 다음 인증 공급자는 사용자가 User Management 데이터베이스에 있는지 확인합니다. 다음과 같은 상태를 사용할 수 있습니다.
+1. 그런 다음 인증 공급자는 사용자가 사용자 관리 데이터베이스에 있는지 여부를 확인합니다. 다음과 같은 상태를 사용할 수 있습니다.
 
    **존재함** 사용자가 현재 상태이고 잠금 해제된 경우 User Management는 인증 성공을 반환합니다. 그러나 사용자가 현재 상태가 아니거나 잠겨 있으면 User Management에서 인증 실패를 반환합니다.
 

@@ -2,9 +2,9 @@
 title: 프로젝트
 description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화하여 공통, 공유 환경에서 프로젝트를 쉽게 관리할 수 있습니다..
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1359'
 ht-degree: 33%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 33%
 
 ![프로젝트 콘솔](assets/screen-shot_2019-03-05at125110.png)
 
-프로젝트 콘솔은 AEM의 다른 콘솔과 유사하므로 개별 프로젝트에 여러 작업을 허용하고 프로젝트 보기를 조정할 수 있습니다.
+프로젝트 콘솔은 AEM의 다른 콘솔과 유사하므로 개별 프로젝트에서 여러 작업을 허용하고 프로젝트 보기를 조정할 수 있습니다.
 
 ### 모드 전환 {#modes}
 
@@ -129,7 +129,7 @@ ht-degree: 33%
 
 ![링크 타일](assets/project-tile-links.png)
 
-링크 이름을 알아채기 쉬운 이름으로 지정할 수도 있고 썸네일을 변경할 수도 있습니다.
+링크 이름을 알아채기 쉬운 이름으로 지정할 수도 있고, 썸네일을 변경할 수도 있습니다.
 
 ### 프로젝트 정보 {#project-info}
 

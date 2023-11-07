@@ -8,10 +8,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: 6fe5e617ceac3c97a77de2d574ec370f30887330
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 6%
+source-wordcount: '335'
+ht-degree: 17%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 
 
 ## Adobe Campaign Classic과 통합 {#acc}
 
-많은 ACC(Adobe Campaign Classic) 버전이 있습니다. AEM과의 통합에 대한 지원은 구현한 ACC 버전과 AEM이 AMS(Adobe 관리 서비스)의 온프레미스에 설치되어 있는지에 따라 다릅니다.
+몇 가지 ACC(Adobe Campaign Classic) 버전이 있습니다. AEM과의 통합에 대한 지원은 구현한 ACC 버전과 AEM이 AMS(Adobe 관리 서비스)의 온프레미스에 설치되어 있는지에 따라 다릅니다.
 
 | ACC 버전 | AEM 6.5와 통합 <br>온-프레미스 | AEM 6.5와 통합<br>AMS |
 |---|---|---|
@@ -38,7 +38,7 @@ Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 
 | [v8](https://experienceleague.adobe.com/docs/campaign-v8.html) | 지원됨 | 지원됨 |
 | 웹 UI* | 지원됨 | 지원됨 |
 
-*Adobe Campaign Classic의 웹 UI는 2023년 말에 출시될 예정입니다.
+*Adobe Campaign Classic용 웹 UI는 2023년 말까지 제공될 예정입니다.
 
 다음 설명서는 AEM을 Adobe Campaign Classic과 통합하는 방법을 설명합니다.
 
@@ -49,7 +49,7 @@ Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 
 * [이메일 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html) - AEM에서 Campaign 콘텐츠를 작성하는 데 사용할 수 있는 표준 이메일 구성 요소에 대해 알아봅니다.
 * [Adobe Campaign Classic 통합 문제 해결](/help/sites-administering/troubleshooting-campaignintegration.md) - AEM-ACC 통합에서 가장 일반적인 문제를 해결하는 방법을 알아봅니다.
 
-## Adobe Campaign Standard과 통합 {#acs}
+## Adobe Campaign Standard와 통합 {#acs}
 
 통합 [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) AEM이 있는 ACS(acs)는 AEM이 AMS(Adobe 관리 서비스)에서 온-프레미스에 설치되어 있는지 여부에 따라 다릅니다.
 
@@ -60,7 +60,7 @@ Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 
 
 다음 설명서는 AEM을 Adobe Campaign Standard과 통합하는 방법을 설명합니다.
 
-* [Adobe Campaign Standard과 통합](/help/sites-administering/campaignstandard.md)
+* [Adobe Campaign Standard와 통합](/help/sites-administering/campaignstandard.md)
 
 다음 추가 설명서에서는 통합을 사용하는 방법을 설명합니다.
 

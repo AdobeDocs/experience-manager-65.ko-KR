@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-source-git-commit: 399ae241593b5cc14ef1c2efd090f0d1fae7c2df
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 2%
@@ -17,9 +17,9 @@ Possible topics to cover in this article are below.
 
 * Compile a list of enhancements done in the last ~1 year.
 * Showcase a few prominent use cases (search?) in a screencast.
-* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, popup dialogs, etc.
+* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, popup dialogs, and so on.
 * List all UIs that are keyboard navigable.
-* Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, etc.
+* Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, and so on.
 * Do we need to add support matrix of user tasks with browser and screen reader combinations. Everything may not work in all browsers and/or using all screen readers.
 * Any exceptions that users should be aware of. It may help to call out (it may be done in ACR) what tasks are NOT supported.
 * CTAs – what's next and more info from AEM team:
@@ -41,7 +41,7 @@ Possible topics to cover in this article are below.
 * [Accessibility Initiative - W3C에서 제공하는 WAI-ARIA(Accessible Rich Internet Applications)](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-준수 수준에 대한 세부 사항이 포함된 보고서를 읽으려면 다음을 참조하십시오. [접근성 적합성 보고서](https://www.adobe.com/kr/accessibility/compliance.html) (ACR) 페이지.
+준수 수준에 대한 세부 사항이 포함된 보고서를 읽으려면 다음을 참조하십시오. [접근성 적합성 보고서](https://www.adobe.com/accessibility/compliance.html) (ACR) 페이지.
 
 방법을 알아보려면 [!DNL Dynamic Media] 에 액세스할 수 있습니다. 다음을 참조하십시오. [에서의 접근성 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
@@ -227,5 +227,4 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
 >* [에서의 접근성 기능 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [각 서비스 팩 릴리스에서 수행된 개선 사항에 대한 릴리스 노트](/help/release-notes/release-notes.md).
 >* [[!DNL Adobe Experience Manager] 접근성 지침](/help/managing/web-accessibility.md).
->* [Adobe 솔루션에 대한 적합성 보고서 (ACR) 및 VPAT 목록](https://www.adobe.com/kr/accessibility/compliance.html).
-
+>* [Adobe 솔루션에 대한 적합성 보고서 (ACR) 및 VPAT 목록](https://www.adobe.com/accessibility/compliance.html).

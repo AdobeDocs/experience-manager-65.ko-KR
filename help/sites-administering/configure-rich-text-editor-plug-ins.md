@@ -3,7 +3,7 @@ title: 리치 텍스트 편집기 플러그인 구성
 description: Adobe Experience Manager 리치 텍스트 편집기 플러그인을 구성하여 개별 기능을 활성화하는 방법에 대해 알아봅니다.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4395'
 ht-degree: 4%
@@ -226,7 +226,7 @@ The paste-as-Microsoft-Word (`paste-wordhtml`) Microsoft® Word와 같은 다른
 
 그런 다음 참조할 스타일 시트의 위치를 지정합니다.
 
-1. 텍스트 구성 요소의 루트 노드로 이동합니다. 예 `/apps/<myProject>/components/text`.
+1. 텍스트 구성 요소의 루트 노드로 이동합니다(예: ). `/apps/<myProject>/components/text`.
 1. 속성 추가 `externalStyleSheets` 의 상위 노드로 `<rtePlugins-node>`:
 
    * **이름** `externalStyleSheets`
@@ -327,7 +327,7 @@ RTE로 작성된 모든 텍스트는 블록 태그 내에 배치되며 기본값
 
 >[!NOTE]
 >
->블록 태그인 경우, 예: &lt;hr> 태그에 태그를 지정할 수 없습니다. 이 태그는 paraformat 플러그인에 대해 올바른 사용 사례가 아닙니다.
+>예를 들어 블록 태그가 인 경우 &lt;hr> 태그에 태그를 지정할 수 없습니다. 이 태그는 paraformat 플러그인에 대해 올바른 사용 사례가 아닙니다.
 
 단락 서식 플러그인을 처음 활성화하면 기본 단락 서식을 사용할 수 없습니다. 팝업 목록이 비어 있습니다. 작성자에게 단락 형식을 제공하려면 다음을 수행합니다.
 

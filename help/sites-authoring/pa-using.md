@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '633'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 4%
 >
 >업데이트 기간을 변경하려면 [가져오기 간격 구성](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. 를 엽니다. **사이트** 콘솔 - 예 [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
+1. 를 엽니다. **사이트** 콘솔. 예: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
 1. 도구 모음의 맨 오른쪽(오른쪽 상단)에서 아이콘을 클릭하거나 탭하여 선택합니다 **목록 보기** (표시된 아이콘은 다음에 따라 다릅니다. [현재 보기](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
 1. 도구 모음의 맨 오른쪽(오른쪽 상단)에서 아이콘을 클릭하거나 탭한 다음 을 선택합니다 **설정 보기**. 다음 **열 구성** 대화 상자가 열립니다. 필요한 사항을 변경하고 다음을 사용하여 확인합니다. **업데이트**.
@@ -82,7 +82,7 @@ Analytics-Administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
 >[!NOTE]
 >
->다음과 같은 경우 표시됩니다. [Activity Map이 구성되었습니다.](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) 웹 사이트용.
+>다음 경우에 표시됩니다. [Activity Map이 구성되었습니다.](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) 웹 사이트용.
 
 >[!NOTE]
 >

@@ -1,18 +1,14 @@
 ---
 title: 적응형 양식 필드에 대한 사용자 정의 표시 만들기
-seo-title: Create custom appearances for adaptive form fields
 description: 적응형 Forms에서 즉시 사용 가능한 구성 요소의 모양을 사용자 지정합니다.
-seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
-uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
-source-git-commit: 8a24ca02762e7902b7d0033b36560629ee711de1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -141,7 +137,7 @@ Maven Archetype은 사용자 정의 모양을 만드는 시작점입니다. 사�
   </tr>
   <tr>
    <td><code>getCommitValue</code></td>
-   <td>jQuery 위젯 프레임워크는 jQuery 위젯의 값이 XFA 모델에 저장될 때마다(예를 들어 텍스트 필드의 종료 이벤트에서) 함수를 로드합니다. 구현은 위젯에 저장된 값을 반환해야 합니다. 핸들러에 옵션에 대한 새 값이 제공됩니다.</td>
+   <td>jQuery 위젯 프레임워크는 jQuery 위젯의 값이 XFA 모델에 저장될 때마다(예: 텍스트 필드의 종료 이벤트에서) 함수를 로드합니다. 구현은 위젯에 저장된 값을 반환해야 합니다. 핸들러에 옵션에 대한 새 값이 제공됩니다.</td>
   </tr>
   <tr>
    <td><code>showValue</code></td>
@@ -320,4 +316,4 @@ Maven Archetype에서 생성된 샘플 프로젝트는 필요한 클라이언트
 
    1. 스타일 탭에서 **[!UICONTROL CSS 클래스]** 추가할 속성 `widget_numericStepper`.
 
-이제 방금 만든 새 모양새를 사용할 수 있습니다.
+새로 만든 모양새를 사용할 수 있습니다.

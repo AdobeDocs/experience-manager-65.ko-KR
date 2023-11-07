@@ -4,10 +4,10 @@ description: Adobe Experience Manager에서 번역 통합 프레임워크를 구
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 49%
+source-wordcount: '1571'
+ht-degree: 48%
 
 ---
 
@@ -196,7 +196,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 * AEM을 번역 공급업체에 연결하는 클라우드 구성
 * 번역의 세부 정보를 구성하는 번역 통합 프레임워크
 
-번역 통합 프레임워크 클라우드 구성이 서비스 공급업체와의 연결에 사용하는 클라우드 구성을 식별한다는 점을 참고하십시오. 소스 페이지를 프레임워크 클라우드 구성과 연결할 때 프레임워크 클라우드 구성이 사용하는 서비스 공급업체 클라우드 구성과 페이지를 연결해야 합니다.
+번역 통합 프레임워크 클라우드 구성은 서비스 공급업체에 연결하는 데 사용할 클라우드 구성을 식별합니다. 소스 페이지를 프레임워크 클라우드 구성과 연결할 때 프레임워크 클라우드 구성이 사용하는 서비스 공급업체 클라우드 구성과 페이지를 연결해야 합니다.
 
 페이지를 클라우드 구성과 연결할 때 페이지의 하위 영역은 연결에 상속됩니다. 예를 들어 /content/geometrixx/en/products 페이지를 번역 통합 프레임워크와 연결하면 제품 페이지와 페이지 하위에 있는 모든 페이지가 프레임워크에 따라 번역됩니다.
 

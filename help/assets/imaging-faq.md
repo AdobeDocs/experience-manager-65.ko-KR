@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: ea983b24da66edd02f86614690f8bc5e1e2499d9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3624'
 ht-degree: 1%
@@ -101,7 +101,6 @@ CSS 픽셀 비율이라고도 하는 디바이스 픽셀 비율(DPR)은 디바�
 >* 다음을 사용할 수 있습니다. `dpr=on,dprValue` 회사 수준의 DPR 설정이 꺼진 경우에도 마찬가지입니다.
 >* DPR 최적화로 인해 결과 이미지가 MaxPix Dynamic Media 설정보다 클 경우 이미지의 종횡비를 유지하여 MaxPix 너비를 항상 인식합니다.
 
-
 | 요청한 이미지 크기 | 장치 픽셀 비율(dpr) 값 | 게재된 이미지 크기 |
 |---|---|---|
 | 816 x 500 | 1 | 816 x 500 |
@@ -146,7 +145,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * AVIF 전환이 유용하지 않거나 브라우저가 AVIF를 지원하지 않는 경우 자동으로 WebP로 전환합니다.
 * Safari에서 WebP를 지원하지 않는 경우 자동으로 JPEG2000으로 전환
 * IE 9+용 JPEGXR로 자동 변환하거나 Edge에서 WebP를 지원하지 않는 경우\
-   | 이미지 형식 | 지원되는 브라우저 | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  | 이미지 형식 | 지원되는 브라우저 | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 * 이러한 형식을 지원하지 않는 브라우저의 경우 원래 요청한 이미지 형식이 제공됩니다.
 
 원본 이미지 크기가 Smart Imaging에서 생성하는 크기보다 작으면 원본 이미지가 제공됩니다.
@@ -213,7 +212,7 @@ WebP에서 스마트 이미징을 이미 활성화했지만 위에 나열된 다
 **계정에서 스마트 이미징을 사용할 수 있도록 지원 사례를 만들려면 다음을 수행하십시오.**
 
 1. [Admin Console을 사용하여 새 지원 사례 만들기 시작](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
-1. 지원 사례에 다음 정보를 입력합니다.
+1. 지원 사례에 다음 정보를 제공하십시오.
 
    * 기본 담당자 이름, 이메일, 전화.
 
@@ -222,26 +221,26 @@ WebP에서 스마트 이미징을 이미 활성화했지만 위에 나열된 다
       * AVIF
       * DPR 및 네트워크 대역폭 최적화
       * PNG를 손실 AVIF 또는 손실 WebP로
+
    * 스마트 이미징에 사용할 수 있는 모든 도메인(즉, `images.company.com` 또는 `mycompany.scene7.com`).
 
-      도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 클릭한 다음 회사 계정 또는 계정에 로그인합니다.
+     도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 클릭한 다음 회사 계정 또는 계정에 로그인합니다.
 
-      다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**.
+     다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**.
 
-      레이블이 지정된 필드를 찾습니다. **[!UICONTROL 게시된 서버 이름]**.
+     레이블이 지정된 필드를 찾습니다. **[!UICONTROL 게시된 서버 이름]**.
 
    * Adobe을 통해 CDN을 사용 중이며 직접적인 관계로 관리되지 않는지 확인합니다.
 
    * 다음과 같은 전용 도메인을 사용하고 있는지 확인합니다. `images.company.com` 또는 `mycompany.scene7.com`일반 도메인 아님(예: ) `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 클릭한 다음 회사 계정 또는 계정에 로그인합니다.
+     도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 클릭한 다음 회사 계정 또는 계정에 로그인합니다.
 
-      다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**.
+     다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**.
 
-      레이블이 지정된 필드를 찾습니다. **[!UICONTROL 게시된 서버 이름]**. 현재 일반 Dynamic Media Classic 도메인을 사용 중인 경우, 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
+     레이블이 지정된 필드를 찾습니다. **[!UICONTROL 게시된 서버 이름]**. 현재 일반 Dynamic Media Classic 도메인을 사용 중인 경우, 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
    * HTTP/2에서 작동할지 여부를 나타냅니다.
-
 
 1. Adobe 고객 지원에서 요청이 제출된 순서에 따라 Smart Imaging 고객 대기 목록에 사용자를 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 고객 지원 센터에서 연락하여 목표 날짜를 조정하고 설정합니다.
@@ -293,7 +292,7 @@ WebP에서 스마트 이미징을 이미 활성화했지만 위에 나열된 다
 
 이 헤더에는 다음 사항이 표시됩니다.
 
-* 스마트 이미징이 회사에서 작업 중입니다.
+* 스마트 이미징이 회사에서 작동 중입니다.
 * 양수 값은 전환이 성공했음을 의미합니다. 이 경우 새 WebP 이미지가 반환됩니다.
 * 음수 값은 전환이 성공하지 않았음을 의미합니다. 이 경우, 요청된 원본 이미지가 반환됩니다(지정되지 않은 경우 기본적으로 JPEG).
 * 양수 값은 요청된 이미지와 새 이미지 간의 바이트 차이를 보여 줍니다. 위의 예에서 저장된 바이트는 `75048` 또는 하나의 이미지에 대해 약 75KB.
@@ -368,7 +367,7 @@ WebP에서 스마트 이미징을 이미 활성화했지만 위에 나열된 다
 
 ## 장치 픽셀 비율(dpr) 기능이 합성 이미지에서 예상대로 작동하지 않는 이유는 무엇입니까? {#composite-images}
 
-합성 이미지에 너무 많은 레이어가 포함된 경우 위치 수정자를 사용하는 동안 dpr 기능에 영향을 줄 수 있습니다. 이 문제는 알려져 있으며 향후 스마트 이미징 릴리스에서 수정될 예정입니다. 다른 스마트 이미징 기능이 예상대로 작동하지 않는 경우 지원 사례를 만들어 문제를 보고할 수 있습니다.
+합성 이미지에 너무 많은 레이어가 포함된 경우 위치 수정자를 사용하는 동안 dpr 기능에 영향을 줄 수 있습니다. 이 문제는 알려져 있으며 향후 스마트 이미징 릴리스에서 수정해야 합니다. 다른 스마트 이미징 기능이 예상대로 작동하지 않는 경우 지원 사례를 만들어 문제를 보고할 수 있습니다.
 
 ## 스마트 이미징 PNG가 여전히 무손실 WebP/AVIF로 변환되는 이유는 무엇입니까? {#convert-to-lossless}
 

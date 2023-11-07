@@ -3,9 +3,9 @@ title: Live Copy 생성 및 동기화
 description: Adobe Experience Manager에서 라이브 카피를 만들고 동기화하는 방법을 알아봅니다.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4226'
 ht-degree: 46%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 46%
 1. (선택 사항) 라이브 카피에 사용할 롤아웃 구성을 하나 이상 지정하려면 **롤아웃 구성** 드롭다운 목록에서 선택합니다. 선택한 구성은 드롭다운 선택기 아래에 표시됩니다.
 1. **만들기**&#x200B;를 클릭하거나 탭합니다. 표시되는 확인 메시지에서 **열기** 또는 **완료** 중 하나를 선택할 수 있습니다.
 
-### 블루프린트 구성으로 사이트의 라이브 카피 만들기 {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
+### 블루프린트 구성으로 사이트의 Live Copy 만들기 {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 블루프린트 구성을 사용하여 라이브 카피를 만들어 블루프린트(소스) 콘텐츠를 기반으로 사이트를 만듭니다. 블루프린트 구성으로 라이브 카피를 만들 때 복사할 블루프린트 소스의 언어 분기를 하나 이상 선택한 다음 언어 분기에서 복사할 챕터를 선택합니다. [블루프린트 구성 만들기](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration)를 참조하십시오.
 
@@ -149,7 +149,7 @@ ht-degree: 46%
 
 블루프린트 구성으로 사이트의 라이브 카피를 만들려면 다음 작업을 수행하십시오.
 
-1. **사이트** 콘솔에서 **만들기**&#x200B;를 선택한 다음 드롭다운 선택기에서 **사이트**&#x200B;를 선택합니다.
+1. **Sites** 콘솔에서 **만들기**&#x200B;를 선택한 다음, 드롭다운 선택기에서 **사이트**&#x200B;를 선택합니다.
 1. 라이브 카피의 소스로 사용할 블루프린트 구성을 선택하고 **다음**:
 
    ![블루프린트 구성을 라이브 카피 소스로 선택](assets/blueprint-configuration-select.png)
@@ -325,7 +325,7 @@ Live Copy 내용을 변경하려면 다음을 수행할 수 있습니다.
 
 >[!NOTE]
 >
->라이브 카피에서 수동으로 새 페이지를 만드는 경우 해당 페이지는 라이브 카피에 로컬이므로 첨부할 해당 소스 페이지가 없습니다.
+>수동으로 라이브 카피에 페이지를 만드는 경우 해당 페이지는 라이브 카피에 로컬이며, 이는 페이지에 첨부할 해당 소스 페이지가 없음을 의미합니다.
 >
 >관계의 일부인 로컬 페이지를 만드는 가장 좋은 방법은 소스에 만들고 (딥) 롤아웃을 수행하는 것입니다. 이렇게 하면 페이지가 로컬에서 라이브 카피로 생성됩니다.
 
@@ -412,7 +412,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 일시 중단 작
 
 ![다시 시작](assets/chlimage_1-229.png)
 
-이 옵션을 선택하면 대화 상자가 표시됩니다. 필요한 경우 동기화를 선택한 다음 작업을 확인할 수 있습니다.
+선택하면 대화 상자가 표시됩니다. 필요한 경우 동기화를 선택한 다음 작업을 확인할 수 있습니다.
 
 #### Live Copy 개요에서 Live Copy 페이지 다시 시작 {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -624,7 +624,7 @@ Live Copy 페이지를 선택하면 Live Copy 개요[에서도 ](/help/sites-adm
 
       * MSM이 해당 페이지가 생성하려는 라이브 카피 페이지와 이름이 동일하여 이를 충돌을 발생시키는 수동으로 생성된 페이지로 간주하기 때문입니다.
 
-   1. 롤아웃의 변경 사항이 포함된 원래 이름의 새(라이브 카피) 페이지를 만듭니다.
+   1. 롤아웃의 변경 사항이 포함된 원래 이름으로 (라이브 카피) 페이지를 만듭니다.
 
   >[!NOTE]
   >
@@ -640,9 +640,9 @@ Live Copy 페이지를 선택하면 Live Copy 개요[에서도 ](/help/sites-adm
 
    ![분리](assets/chlimage_1-236.png)
 
-1. 표시되는 확인 대화 상자에서 **분리**&#x200B;를 선택하여 작업을 완료합니다.
+1. 확인 대화 상자가 표시되면 다음을 선택합니다. **분리** 을 클릭하여 작업을 완료합니다.
 
-### 라이브 카피 개요에서 라이브 카피 페이지 분리 {#detach-a-live-copy-page-from-the-live-copy-overview}
+### Live Copy 개요에서 Live Copy 페이지 분리 {#detach-a-live-copy-page-from-the-live-copy-overview}
 
 Live Copy 페이지를 선택하면 [Live Copy 개요에서도 분리 작업을 사용](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)할 수 있습니다.
 

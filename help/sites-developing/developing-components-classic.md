@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2384'
 ht-degree: 2%
 
 ---
@@ -196,7 +196,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
    * CRXDE Lite을 사용하여 값 추가 `<path-to-component>` (예: `/apps/geometrixx/components/myComponent`)를 노드의 속성 구성 요소에 추가합니다 `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * 의 지침에 따라 [단락 시스템에 새 구성 요소 추가](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. AEM WCM에서 웹 사이트의 페이지를 열고 방금 만든 유형의 단락을 삽입하여 구성 요소가 제대로 작동하는지 확인합니다.
+1. AEM WCM에서 웹 사이트의 페이지를 열고 구성 요소가 제대로 작동하는지 확인하기 위해 만든 유형의 단락을 삽입합니다.
 
 >[!NOTE]
 >
@@ -206,7 +206,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
 구성 요소가 개발되면 단락 시스템에 구성 요소를 추가하여 작성자가 페이지를 편집할 때 구성 요소를 선택하고 사용할 수 있습니다.
 
-1. 작성 환경 내에서 단락 시스템을 사용하는 페이지에 액세스합니다. 예 `<contentPath>/Test.html`.
+1. 작성 환경 내에서 단락 시스템을 사용하는 페이지에 액세스합니다. 예: `<contentPath>/Test.html`.
 1. 다음 중 하나를 수행하여 디자인 모드로 전환합니다.
 
    * 추가 `?wcmmode=design` 를 URL의 끝에 추가하고 다시 액세스합니다. 예:

@@ -7,7 +7,7 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5739'
 ht-degree: 6%
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets] 는 더 높은 컨텐츠 속도를 달성하는 데 도움이 되는 강력한 자산 검색 방법을 제공합니다. 기본 기능과 사용자 지정 메서드를 사용하여 매끄럽고 지능적인 검색 환경을 구축하여 출시 시간을 단축할 수 있습니다. 자산 검색은 디지털 자산 관리 시스템 사용의 핵심입니다. 이를 통해 크리에이티브에서 더 많이 사용하거나, 비즈니스 사용자 및 마케터가 자산을 탄탄하게 관리하거나, DAM 관리자가 관리할 수 있습니다. 를 통해 수행할 수 있는 간단한 고급 사용자 정의 검색 [!DNL Assets] 사용자 인터페이스 또는 기타 앱 및 표면이 이러한 사용 사례를 충족하도록 도와줍니다.
@@ -248,7 +248,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 | 이름 | 값 | 예 | 용도 |
 |---|---|---|---|
-| 리소스 접미사(B) | URL의 리소스 접미사 폴더 경로: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 특정 폴더(예: 폴더 포함)가 선택된 상태로 자산 선택기를 실행하려면 `/content/dam/we-retail/en/activities` 선택한 경우 URL의 형식은 다음과 같아야 합니다. `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 리소스 접미사로 전달합니다. |
+| 리소스 접미사(B) | URL의 리소스 접미사 폴더 경로: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 특정 폴더(예: 폴더)가 선택된 상태로 자산 선택기를 실행하려면 `/content/dam/we-retail/en/activities` 선택한 경우 URL의 형식은 다음과 같아야 합니다. `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 리소스 접미사로 전달합니다. |
 | `mode` | 단일, 다중 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 다중 모드에서는 에셋 선택기를 사용하여 여러 에셋을 동시에 선택할 수 있습니다. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 자산 선택기를 [Granite] 대화 상자로 엽니다. 이 옵션은 Granite 경로 필드를 통해 자산 선택기를 시작하고 pickerSrc URL로 구성하는 경우에만 적용할 수 있습니다. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 이 옵션을 사용하여 자산 선택기의 루트 폴더를 지정합니다. 이 경우 에셋 선택기를 사용하면 루트 폴더 아래에서 하위 에셋(직접/간접)만 선택할 수 있습니다. |
@@ -305,7 +305,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 *그림: 따옴표가 있거나 없는 검색 동작*
 
-**별표 와일드카드로 검색**: 검색 범위를 넓히려면 검색어 앞이나 뒤에 별표를 사용하여 문자 수를 일치시킵니다. 예를 들어 별표 없이 실행 을 검색해도 메타데이터에 포함된 단어의 변형이 포함된 자산은 반환되지 않습니다. 별표는 임의의 문자 수를 대체합니다. 예를 들어
+**별표 와일드카드로 검색**: 검색 범위를 넓히려면 검색어 앞이나 뒤에 별표를 사용하여 문자 수를 일치시킵니다. 예를 들어 별표 없이 실행 을 검색해도 메타데이터에 포함된 단어의 변형이 포함된 자산은 반환되지 않습니다. 별표는 임의의 문자 수를 대체합니다. 예:
 
 * `run` 정확하게 실행 키워드가 있는 자산 반환
 * `run*` 자산 반환: `running`, `run`, `runaway`등.
@@ -420,7 +420,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 * 데스크탑 작업을 사용하여 데스크탑 앱에서 이러한 자산을 엽니다.
 * 스마트 컬렉션을 만듭니다.
 * 버전 만들기
-* 워크플로우 시작
+* 워크플로 시작
 * 에셋 연결 또는 연결 해제
 * 검색을 수행한 후 자동으로 표시되는 필터 패널을 사용하여 필터를 적용하여 검색 결과의 범위를 좁힐 수 있습니다.
 
@@ -467,7 +467,7 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 검색 결과에 표시되는 에셋의 버전을 만듭니다. 에셋을 선택하고 **[!UICONTROL 만들기]** > **[!UICONTROL 버전]**. 선택적 레이블 또는 댓글을 추가하고 **[!UICONTROL 만들기]**. 여러 에셋을 선택하고 해당 에셋의 버전을 동시에 만들 수도 있습니다.
 
-### 워크플로우 만들기 {#create-workflow}
+### 워크플로 만들기 {#create-workflow}
 
 버전 만들기 기능과 마찬가지로 검색 결과에 표시되는 에셋에 대한 워크플로우를 만들 수도 있습니다. 에셋을 선택하고 **[!UICONTROL 만들기]** > **[!UICONTROL 워크플로]**. 워크플로 모델을 선택하고 워크플로의 제목을 지정한 다음 **[!UICONTROL 시작]**.
 

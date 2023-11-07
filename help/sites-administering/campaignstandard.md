@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1825'
 ht-degree: 16%
 
 ---
@@ -26,7 +26,7 @@ AEM 6.5를 ACS(Adobe Campaign Standard)와 통합하여 AEM에서 이메일 게�
 
 ## 통합 단계 {#integration-steps}
 
-AEM과 Adobe Campaign Standard 간의 통합을 구성하려면 두 솔루션 모두에서 여러 단계를 수행해야 합니다.
+AEM과 Adobe Campaign Standard 간의 통합을 구성하려면 두 솔루션에서 몇 가지 단계가 필요합니다.
 
 1. [구성 ](#aemserver-user)
 1. [확인 ](#resource-type-filter)
@@ -63,7 +63,7 @@ Adobe Campaign Standard에는 기본적으로 `aemserver` AEM에서 Adobe Campai
 
 사용자 `aemserver` 이제 AEM이 Adobe Campaign과 통신하는 데 사용할 수 있도록 사용자에게 필요한 권한이 있습니다.
 
-그러나 AEM에서 를 사용하기 전에 `aemserver` 사용자, 암호를 설정해야 합니다. Adobe Campaign을 통해서는 이 작업을 수행할 수 없습니다. Adobe 지원 엔지니어가 수행해야 합니다. [Adobe 고객 지원 센터에서 티켓을 발급해 주십시오.](https://experienceleague.adobe.com/?support-tab=home#support) 재설정을 요청하려면 `aemserver` 암호. Adobe 고객 지원 센터에서 받은 암호를 확보했으면 안전한 위치에 보관하십시오.
+그러나 AEM에서 를 사용하기 전에 `aemserver` 사용자, 암호를 설정해야 합니다. Adobe Campaign을 통해서는 이 작업을 수행할 수 없습니다. Adobe 지원 엔지니어가 수행해야 합니다. [Adobe 고객 지원 센터에 티켓 제출](https://experienceleague.adobe.com/?support-tab=home#support) 재설정을 요청하려면 `aemserver` 암호. Adobe 고객 지원 센터에서 받은 암호를 안전한 위치에 보관하십시오.
 
 ## Campaign에서 AEMResourceTypeFilter 확인 {#resource-type-filter}
 

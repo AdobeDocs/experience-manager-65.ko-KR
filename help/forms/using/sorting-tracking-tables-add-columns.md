@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 3%
@@ -141,7 +141,7 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 포함된 프
        <tbody>
            <%_.each(obj, function(task){%>
            <tr>
-               <!-- Put the task attributes in the order of headings, for example -->
+               <!-- Put the task attributes in the order of headings, for example, -->
                <td><%= task.stepName %></td>
                <td><%= task.instructions %></td>
                <td><%= !task.selectedRoute?'':(task.selectedRoute=='null'?'Default':task.selectedRoute) %></td>
@@ -177,7 +177,7 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 포함된 프
 
 1. 다음 노출 `TaskTableHeaderClick` 방법 `js/runtime/util/history.js`.
 
-   이 메서드는 클릭 이벤트에서 작업 특성을 찾고 해당 특성에 대한 작업 목록을 정렬한 다음 정렬된 작업 목록과 함께 작업 테이블을 렌더링합니다.
+   이 메서드는 클릭 이벤트에서 작업 특성을 찾고, 해당 특성에 대한 작업 목록을 정렬하고, 정렬된 작업 목록과 함께 작업 테이블을 렌더링합니다.
 
    정렬은 비교 함수를 제공하여 작업 목록 컬렉션의 Backbone 정렬 함수를 사용하여 수행됩니다.
 

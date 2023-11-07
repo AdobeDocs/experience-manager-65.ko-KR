@@ -1,20 +1,16 @@
 ---
 title: 액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성)
-seo-title: Creating Accessible Content (WCAG 2.0 Conformance)
 description: WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사용할 수 있도록 하는 데 도움이 되는 기술 독립적 지침 및 성능 기준으로 구성되어 있습니다.
-seo-description: WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 page-status-flag: de-activated
-uuid: c2c0cac0-2a9f-478d-8261-e8cc894aae34
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9152'
-ht-degree: 67%
+source-wordcount: '9151'
+ht-degree: 65%
 
 ---
 
@@ -528,13 +524,13 @@ AEM에서 이렇게 하려면 소스 편집 모드를 사용하여 직접 마크
 
 >[!NOTE]
 >
-색상에 대한 대체 요소와 관련된 요구 사항을 알려면 [색상 사용](#use-of-color)을 참조하십시오.
+색상에 대한 대체 요소와 관련된 요구 사항은 [색상 사용](#use-of-color)을 참조하십시오.
 
 #### 충족하는 방법 - 감각 특성 (1.3.3) {#how-to-meet-sensory-characteristics}
 
 페이지 콘텐츠의 시각적 특성에 의존하는 모든 정보가 대체 형식으로도 제공되도록 하십시오.
 
-* 시각적 위치에 의존하여 정보를 제공하지 마십시오. 예를 들어 추가 정보에 액세스하기 위해 페이지의 오른쪽에 있는 메뉴를 사용자가 참조하도록 하려는 경우, *오른쪽에 있는 메뉴*&#x200B;를 참조하도록 하지 말고, 대신 메뉴에 이름을 지정(예를 들어 머리글을 통해)하고 텍스트에 있는 해당 이름을 참조하도록 하십시오.
+* 시각적 위치에 의존하여 정보를 제공하지 마십시오. 예를 들어 추가 정보에 액세스하기 위해 페이지의 오른쪽에 있는 메뉴를 사용자가 참조하도록 하려면 을 참조하지 마십시오 *오른쪽에 있는 메뉴*&#x200B;대신 메뉴에 이름을 지정(예: 제목)하고 텍스트에 있는 해당 이름을 참조합니다.
 * 정보를 전달하는 유일한 방법으로 볼드체 또는 이탤릭체 텍스트와 같은 텍스트 스타일에만 의존하지 마십시오.
 
 >[!NOTE]
@@ -684,7 +680,7 @@ AEM에서 이렇게 하려면 소스 편집 모드를 사용하여 직접 마크
 
 주목할 점은 다음과 같습니다.
 
-1. 깜박이거나 발광하는 컨텐츠와 관련한 요구 사항에 대해서는 [발작을 초래하는 것으로 알려진 방법으로 컨텐츠 디자인 안하기(2.3)](#seizures)를 참조하십시오.
+1. 깜박이거나 발광하는 컨텐츠와 관련한 요구 사항에 대해서는 다음을 참조하십시오. [발작을 초래하는 것으로 알려진 방법으로 컨텐츠 디자인 안하기(2.3)](#seizures).
 1. 이 성공 기준을 충족하지 않는 콘텐츠는 전체 페이지를 사용하는 사용자의 능력을 방해할 수 있으므로 웹 페이지의 모든 콘텐츠(다른 성공 기준을 충족하는 데 사용되는지 여부에 상관없이)는 이 성공 기준을 충족해야 합니다. [적합성 요구 사항 5: 비간섭](https://www.w3.org/TR/WCAG20/#cc5)을 참조하십시오.
 1. 주기적으로 소프트웨어에 의해 업데이트되거나, 사용자 에이전트에게 스트리밍되는 콘텐츠는 일시 중단의 시작과 프레젠테이션 재개 간에 생성되었거나 받은 정보를 보존하거나 제공할 필요가 없습니다. 왜냐하면 기술적으로 가능하지 않을 수도 있고 많은 경우 그래야 한다고 오해할 수도 있습니다.
 1. 미리 로드된 단계나 유사한 상황의 일부로서 발생하는 애니메이션은 모든 사용자에 대해 해당 단계 중에 상호 작용이 발생할 수 없는 경우와 진행 상태를 나타내지 않음으로써 사용자를 혼동시키거나 콘텐츠가 동결되었거나 손상되었다고 생각하게 하는 경우 극히 중요하다고 간주할 수 있습니다.

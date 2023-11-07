@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2856'
+source-wordcount: '2853'
 ht-degree: 2%
 
 ---
@@ -122,7 +122,7 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 속성을 포함
 
 ### /lib에서 라이브러리 재정의 {#overriding-libraries-in-lib}
 
-아래에 있는 클라이언트 라이브러리 폴더 `/apps` 에 있는 유사한 이름의 폴더보다 우선합니다. `/libs`. 예를 들어, `/apps/cq/ui/widgets` 보다 우선함 `/libs/cq/ui/widgets`. 이러한 라이브러리가 동일한 카테고리에 속하는 경우 아래 라이브러리가 표시됩니다. `/apps` 를 사용합니다.
+아래에 있는 클라이언트 라이브러리 폴더 `/apps` 에서 유사한 이름이 같은 폴더보다 우선합니다. `/libs`. 예를 들어, `/apps/cq/ui/widgets` 보다 우선함 `/libs/cq/ui/widgets`. 이러한 라이브러리가 동일한 카테고리에 속하는 경우 아래 라이브러리가 표시됩니다. `/apps` 를 사용합니다.
 
 ### 클라이언트 라이브러리 폴더 찾기 및 프록시 클라이언트 라이브러리 서블릿 사용 {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
@@ -134,7 +134,7 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 속성을 포함
 
 >[!NOTE]
 >
->콘텐츠 및 구성에서 코드를 보다 잘 분리하려면 `/apps` 다음을 통해 노출 `/etc.clientlibs` 을 활용함으로써 `allowProxy` 속성.
+>콘텐츠 및 구성에서 코드를 보다 잘 분리하려면 `/apps` 다음을 통해 노출 `/etc.clientlibs` 를 사용하여 `allowProxy` 속성.
 
 클라이언트 라이브러리의 경우 `/apps` 액세스하기 위해 프록시 서블릿 이 사용됩니다. ACL은 여전히 클라이언트 라이브러리 폴더에 적용되지만 서블릿을 통해 콘텐츠를 읽을 수 있습니다. `/etc.clientlibs/` 다음과 같은 경우 `allowProxy` 속성이 로 설정되어 있습니다. `true`.
 
@@ -197,7 +197,7 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 속성을 포함
 
 ### 종속성에 연결 {#linking-to-dependencies}
 
-클라이언트 라이브러리 폴더의 코드가 다른 라이브러리를 참조하면 다른 라이브러리를 종속성으로 식별합니다. JSP에서 `ui:includeClientLib` 클라이언트 라이브러리 폴더를 참조하는 태그로 인해 HTML 코드에는 생성된 라이브러리 파일에 대한 링크와 종속성이 포함됩니다.
+클라이언트 라이브러리 폴더의 코드가 다른 라이브러리를 참조하면 다른 라이브러리를 종속성으로 식별합니다. JSP에서 `ui:includeClientLib` 클라이언트 라이브러리 폴더를 참조하는 태그로 인해 HTML 코드에 생성된 라이브러리 파일에 대한 링크와 종속성이 포함됩니다.
 
 종속성은 다른 항목이어야 합니다. `cq:ClientLibraryFolder`. 종속성을 식별하려면 속성을 `cq:ClientLibraryFolder` 다음 속성을 가진 노드:
 

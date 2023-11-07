@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 63%
@@ -64,7 +64,7 @@ AEM에는 다양한 기능이 포함되어 있습니다. [기본 구성 요소](
 
 Adobe이 제공하는 AEM 구성 요소에는 두 가지 세트가 있습니다.
 
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)
 
 **핵심 구성 요소** AEM 6.3과 함께 도입되었으며 유연하고 다양한 작성 기능을 제공합니다. 다음 [We.Retail 참조 사이트](/help/sites-developing/we-retail.md) 핵심 구성 요소를 사용하는 방법을 보여 주고 구성 요소 개발의 최신 모범 사례를 보여 줍니다.
@@ -73,7 +73,7 @@ Adobe이 제공하는 AEM 구성 요소에는 두 가지 세트가 있습니다.
 
 >[!NOTE]
 >
->[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 구성 요소 디자인 및 개발에 대한 최신 모범 사례를 나타내고 참조 구현 역할을 합니다.
+>[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 구성 요소 디자인 및 개발에 대한 최신 모범 사례를 나타내고 참조 구현 역할을 합니다.
 >
 >[AEM 현대화 도구](modernization-tools.md) 핵심 구성 요소로 마이그레이션하는 데 도움이 될 수 있습니다.
 
@@ -106,7 +106,7 @@ AEM 인스턴스에 사용 가능한 모든 구성 요소에 대한 개요를 �
 * [컨텐츠 조각용 구성 요소](/help/sites-developing/components-content-fragments.md)
 * [JSON 형식으로 페이지 정보 얻기](/help/sites-developing/pageinfo.md)
 * [구성 요소 다국어화](/help/sites-developing/i18n.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [조건 숨기기 사용](/help/sites-developing/hide-conditions.md)
 * 클래식 UI
 

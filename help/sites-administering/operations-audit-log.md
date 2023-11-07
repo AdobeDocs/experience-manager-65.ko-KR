@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 0%
+source-wordcount: '600'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +58,7 @@ AEM 웹 콘솔에서 규칙을 만들어 각 규칙을 구성할 수 있습니�
    >콘텐츠 경로는 의 하위 항목에만 적용됩니다. `/var/audit/com.day.cq.wcm.core.page` 노드의 형식입니다.
 
 1. 규칙을 저장합니다.
-1. 방금 만든 규칙을 실행하려면 작업 대시보드에 표시해야 합니다. 이렇게 하려면 **도구 - 작업 - 유지 관리** AEM 시작 화면에서 다음을 수행합니다.
+1. 규칙을 실행하려면 만든 규칙을 작업 대시보드에 표시해야 합니다. 이렇게 하려면 **도구 - 작업 - 유지 관리** AEM 시작 화면에서 다음을 수행합니다.
 
 1. 누르기 **주간 유지 관리 창** 카드.
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1175'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ MCM에서 다음 항목에 액세스할 수 있습니다.
 이는 네 개의 창으로 나뉩니다.
 
    * [목록](#lists)
-이 창에는 이미 생성한 목록과 해당 목록의 잠재 고객 수가 표시됩니다. 이 창에서 직접 새 목록을 만들거나 리드를 가져와서 새 목록을 만들 수 있습니다.
+이 창에는 이미 만든 목록과 해당 목록의 잠재 고객 수가 표시됩니다. 이 창에서 직접 목록을 만들거나 리드 가져오기로 목록을 만들 수 있습니다.
 특정 목록을 선택하면 [목록](#lists) 섹션에 목록의 세부 사항이 표시됩니다.
 
    * [세그먼트](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
@@ -54,11 +54,11 @@ AEM에서는 인스턴스의 상태를 분석하고 모니터링하는 데 도�
 
 * **[잠재 고객](#leads)**
 여기에서 리드를 관리할 수 있습니다. 리드를 생성 또는 가져오고, 개별 리드에 대한 특정 세부 정보를 편집하거나, 더 이상 필요하지 않은 경우 삭제할 수 있습니다. Lists라는 다른 그룹에 잠재 고객을 배치할 수도 있습니다. **참고:** Adobe은 이 기능을 더 강화하지 않을 계획입니다.
-권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 통합 활용](/help/sites-administering/campaign.md).
+권장 사항은 [Adobe Campaign 및 AEM에 통합](/help/sites-administering/campaign.md).
 
 * **[목록](#lists)**
 여기에서 잠재 고객 목록을 관리할 수 있습니다.**참고:** Adobe은 이 기능을 더 강화하지 않을 계획입니다.
-권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 통합 활용](/help/sites-administering/campaign.md).
+권장 사항은 [Adobe Campaign 및 AEM에 통합](/help/sites-administering/campaign.md).
 
 * **[캠페인](#campaigns)**
 여기에서 브랜드, 캠페인 및 경험을 관리할 수 있습니다.
@@ -196,6 +196,6 @@ MCM에서 **캠페인**. 목록 보기가 활성화되어 있는지 확인한 �
 
 ### Campaign 경험 분석 {#analyzing-your-campaign-experiences}
 
-MCM에서 **캠페인**. 목록 보기가 활성화되어 있는지 확인한 다음, 필요한 캠페인 경험을 선택하고 을 선택합니다 **분석...**. 시간 경과에 따른 페이지 노출 횟수의 차트가 표시됩니다.
+MCM에서 **캠페인**. 목록 보기가 활성 상태인지 확인한 다음, 필요한 캠페인 경험을 선택하고 을 선택합니다 **분석...**. 시간 경과에 따른 페이지 노출 횟수의 차트가 표시됩니다.
 
 ![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)

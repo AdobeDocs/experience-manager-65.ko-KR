@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 2%
 
 ---
@@ -183,7 +183,7 @@ UI 모듈의 소스는 /libs/granite/contexthub/components/modules/screen-orient
 
 ### 구성 {#configuration-5}
 
-contexthub.screen-orientation UI 모듈의 인스턴스에는 세부 구성 값이 필요하지 않습니다. 다음 JSON 텍스트는 모듈의 기본 구성을 나타냅니다. 다음 사항에 주의하십시오. `clickable` 속성은 입니다. `false` 기본적으로. 설정할 기본 구성을 재정의하는 경우 `clickable` 끝 `true`을 클릭하면 방향을 선택할 수 있는 팝업이 표시됩니다.
+contexthub.screen-orientation UI 모듈의 인스턴스에는 세부 구성 값이 필요하지 않습니다. 다음 JSON 텍스트는 모듈의 기본 구성을 나타냅니다. 다음 `clickable` 속성은 입니다. `false` 기본적으로. 설정할 기본 구성을 재정의하는 경우 `clickable` 끝 `true`을 클릭하면 방향을 선택할 수 있는 팝업이 표시됩니다.
 
 ```xml
 {

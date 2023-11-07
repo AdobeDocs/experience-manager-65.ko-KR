@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6430'
+source-wordcount: '6419'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니�
    <td>PDF이 포함된 문서 객체.<br /> </td>
   </tr>
   <tr>
-   <td><code>signatureFieldName</code> </td>
+   <td><code>signatureFieldName</code><br /> </td>
    <td>서명 필드의 이름. 이 매개 변수는 필수 항목이며, 값으로 null을 가질 수 없습니다.<br /> </td>
   </tr>
   <tr>
@@ -441,7 +441,7 @@ public class AddSignatureField {
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>doc</code> </td>
+   <td><code>doc</code><br /> </td>
    <td>PDF이 포함된 문서 객체.<br /> </td>
   </tr>
   <tr>
@@ -635,7 +635,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 
 ### 서명 가져오는 중 {#getting-signature}
 
-서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 잘 모르거나 이름을 확인하려면 이름을 프로그래밍 방식으로 검색하십시오. 서명 서비스는 다음과 같은 서명 필드의 정규화된 이름을 반환합니다. `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서의 서명 필드 이름을 잘 모르거나 이름을 확인하려면 이름을 프로그래밍 방식으로 검색하십시오. 서명 서비스는 다음과 같은 서명 필드의 정규화된 이름을 반환합니다. `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **구문**: `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
@@ -648,7 +648,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>doc</code> </td>
+   <td><code>doc</code><br /> </td>
    <td>PDF이 포함된 문서 객체.<br /> </td>
   </tr>
   <tr>
@@ -662,7 +662,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
  </tbody>
 </table>
 
-다음 Java 코드 예제에서는 PDF 문서에 있는 특정 서명 필드의 서명 정보를 검색합니다.
+다음 Java 코드 예제에서는 PDF 문서의 지정된 서명 필드에 대한 서명 정보를 검색합니다.
 
 ```java
 /*************************************************************************
@@ -704,12 +704,12 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 import com.adobe.fd.signatures.client.types.PDFSignature;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
- * The following Java code example retrieves the Signature Info for the given signature field located in a PDF document.
+ * The following Java code example retrieves the Signature Info for the given signature field in a PDF document.
  */
 
 @Component
@@ -770,7 +770,7 @@ public class GetSignature {
 | `inDoc` | PDF이 포함된 문서 객체 |
 | `unlockOptions` | 암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화된 경우에만 필요합니다. |
 
-다음 Java 코드 예제에서는 PDF 문서에 있는 서명 필드의 이름을 검색합니다.
+다음 Java 코드 예제에서는 PDF 문서의 서명 필드 이름을 검색합니다.
 
 ```java
 /*************************************************************************
@@ -808,12 +808,12 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesBaseException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
- * The following Java code example retrieves the names of signature fields located in a PDF document.
+ * The following Java code example retrieves the names of signature fields in a PDF document.
  */
 
 @Component
@@ -955,7 +955,7 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesOtherException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * You can modify signature fields that are located in a PDF document by using the Java API and web service API. Modifying a signature field involves
+ * You can modify signature fields that are in a PDF document by using the Java API and web service API. Modifying a signature field involves
  * manipulating its signature field lock dictionary values or seed value dictionary values.
  * A field lock dictionary specifies a list of fields that are locked when the signature field is signed. A locked field prevents users from making
  * changes to the field. A seed value dictionary contains constraining information that is used at the time the signature is applied.
@@ -1063,11 +1063,11 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>문서 입력 PDF 문서<br /> </td>
   </tr>
   <tr>
-   <td><code>encryptionOptions</code> </td>
+   <td><code>encryptionOptions</code><br /> </td>
    <td>PDF 문서 암호화에 필요한 인수를 포함합니다.<br /> </td>
   </tr>
   <tr>
@@ -1440,11 +1440,11 @@ secureDocument(Document inDoc,
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>문서 입력 PDF 문서<br /> </td>
   </tr>
   <tr>
-   <td><code>encryptionOptions</code> </td>
+   <td><code>encryptionOptions</code><br /> </td>
    <td>PDF 문서 암호화에 필요한 인수를 포함합니다.<br /> </td>
   </tr>
   <tr>
@@ -2119,11 +2119,11 @@ optionSpec.setJsScriptExecutionTimeoutInterval(100);
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>credentialAlias</code> </td>
+   <td><code>credentialAlias</code><br /> </td>
    <td>다음 <code>credentialAlias</code> 자격 증명을 지정합니다.<br /> </td>
   </tr>
   <tr>
-   <td><code>credentialPassword</code> </td>
+   <td><code>credentialPassword</code><br /> </td>
    <td>자격 증명의 암호입니다. 자격 증명이 암호화된 경우 자격 증명이 암호화되지 않은 경우 null을 사용해야 합니다.<br /> </td>
   </tr>
  </tbody>
@@ -2210,7 +2210,7 @@ public void getCredentialUsageRights() {
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>inDocument</code> </td>
+   <td><code>inDocument</code><br /> </td>
    <td>에서 사용 권한 정보를 가져오는 문서<br /> </td>
   </tr>
  </tbody>
@@ -2328,11 +2328,11 @@ public void getDocumentUsageRights() {
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>inDocument</code> </td>
+   <td><code>inDocument</code><br /> </td>
    <td>사용 권한을 제거할 문서입니다.<br /> </td>
   </tr>
   <tr>
-   <td><code>unlockOptions</code> </td>
+   <td><code>unlockOptions</code><br /> </td>
    <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화된 경우에만 필요합니다.<br /> </td>
   </tr>
  </tbody>
@@ -2455,12 +2455,12 @@ public void removeDocumentUsageRights() {
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>PDF이 포함된 문서 객체<br /> </td>
   </tr>
   <tr>
    <td><code class="code">signatureField
-      Name</code> </td>
+      Name</code><br /> </td>
    <td>유효성을 검사할 서명 필드의 이름. 정규화된 이름이나 부분 이름을 지정할 수 있습니다.<br /> </td>
   </tr>
   <tr>
@@ -2609,17 +2609,17 @@ public class VerifyFieldEncryptedPDF {
 
              //Determine the status of the signature
              if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
-                 myStatus = "The signatures located in the dynamic PDF form are unknown";
+                 myStatus = "The signatures in the dynamic PDF form are unknown";
              else if (sigStatus == SignatureStatus.DocumentSignatureUnknown)
-                 myStatus = "The signatures located in the PDF document are unknown";
+                 myStatus = "The signatures in the PDF document are unknown";
              else if (sigStatus == SignatureStatus.CertifiedDynamicFormSignatureTamper)
-                 myStatus = "The signatures located in a certified PDF form are valid";
+                 myStatus = "The signatures in a certified PDF form are valid";
              else if (sigStatus == SignatureStatus.SignedDynamicFormSignatureTamper)
-                 myStatus = "The signatures located in a signed dynamic PDF form are valid";
+                 myStatus = "The signatures in a signed dynamic PDF form are valid";
              else if (sigStatus == SignatureStatus.CertifiedDocumentSignatureTamper)
-                 myStatus = "The signatures located in a certified PDF document are valid";
+                 myStatus = "The signatures in a certified PDF document are valid";
              else if (sigStatus == SignatureStatus.SignedDocumentSignatureTamper)
-                 myStatus = "The signatures located in a signed PDF document are valid";
+                 myStatus = "The signatures in a signed PDF document are valid";
              else if (sigStatus == SignatureStatus.SignatureFormatError)
                  myStatus = "The format of a signature in a signed document is invalid";
              else if (sigStatus == SignatureStatus.DynamicFormSigNoChanges)
@@ -2773,7 +2773,7 @@ AEM을 사용하면 PDF 문서에서 디지털 서명을 확인할 수 있습니
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>PDF이 포함된 문서 객체<br /> </td>
   </tr>
   <tr>
@@ -2913,7 +2913,7 @@ public class VerifyEncryptedPDFDoc {
                  dssPrefs,
                  resourceResolver);
 
-             //Get a list of all signatures that are located in the PDF document
+             //Get a list of all signatures that are in the PDF document
              List allSignatures = docInfo.getVerificationInfos();
 
            //Create an Iterator object and iterate through
@@ -2929,17 +2929,17 @@ public class VerifyEncryptedPDFDoc {
 
                    //Determine the status of the signature
                      if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
-                         myStatus = "The signatures located in the dynamic PDF form are unknown";
+                         myStatus = "The signatures in the dynamic PDF form are unknown";
                      else if (sigStatus == SignatureStatus.DocumentSignatureUnknown)
-                         myStatus = "The signatures located in the PDF document are unknown";
+                         myStatus = "The signatures in the PDF document are unknown";
                      else if (sigStatus == SignatureStatus.CertifiedDynamicFormSignatureTamper)
-                         myStatus = "The signatures located in a certified PDF form are valid";
+                         myStatus = "The signatures in a certified PDF form are valid";
                      else if (sigStatus == SignatureStatus.SignedDynamicFormSignatureTamper)
-                         myStatus = "The signatures located in a signed dynamic PDF form are valid";
+                         myStatus = "The signatures in a signed dynamic PDF form are valid";
                      else if (sigStatus == SignatureStatus.CertifiedDocumentSignatureTamper)
-                         myStatus = "The signatures located in a certified PDF document are valid";
+                         myStatus = "The signatures in a certified PDF document are valid";
                      else if (sigStatus == SignatureStatus.SignedDocumentSignatureTamper)
-                         myStatus = "The signatures located in a signed PDF document are valid";
+                         myStatus = "The signatures in a signed PDF document are valid";
                      else if (sigStatus == SignatureStatus.SignatureFormatError)
                          myStatus = "The format of a signature in a signed document is invalid";
                      else if (sigStatus == SignatureStatus.DynamicFormSigNoChanges)
@@ -3071,7 +3071,7 @@ public class VerifyEncryptedPDFDoc {
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>PDF이 포함된 문서 객체<br /> </td>
   </tr>
   <tr>
@@ -3079,7 +3079,7 @@ public class VerifyEncryptedPDFDoc {
    <td>서명 필드의 이름<br /> </td>
   </tr>
   <tr>
-   <td><code>unlockOptions</code> </td>
+   <td><code>unlockOptions</code><br /> </td>
    <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화된 경우에만 필요합니다.<br /> </td>
   </tr>
  </tbody>
@@ -3192,7 +3192,7 @@ public class ClearSignatureField {
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>PDF이 포함된 문서 객체.<br /> </td>
   </tr>
   <tr>
@@ -3243,8 +3243,8 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesBaseException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
@@ -3311,13 +3311,13 @@ public class GetCertifyingSignatureField {
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>입력으로 제공된 문서. 암호화될 수도 있고 암호화되지 않을 수도 있습니다.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-다음 Java 코드 예제에서는 PDF 문서에 있는 특정 서명 필드의 서명 정보를 검색합니다.
+다음 Java 코드 예제에서는 PDF 문서의 지정된 서명 필드에 대한 서명 정보를 검색합니다.
 
 ```java
 /*************************************************************************
@@ -3359,12 +3359,12 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 import com.adobe.fd.encryption.client.EncryptionTypeResult;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
- * The following Java code example retrieves the Signature Info for the given signature field located in a PDF document.
+ * The following Java code example retrieves the Signature Info for the given signature field in a PDF document.
  */
 
 @Component
@@ -3427,11 +3427,11 @@ public class GetPDFEncryption {
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>입력으로서 제공된 문서. 암호로 보호되어야 합니다.<br /> </td>
   </tr>
   <tr>
-   <td><code>password</code> </td>
+   <td><code>password</code><br /> </td>
    <td>문서에서 보안을 제거하는 데 사용할 문서 열기 또는 권한 암호입니다.<br /> </td>
   </tr>
  </tbody>
@@ -3526,11 +3526,11 @@ public class GetPDFEncryption {
    <th>설명</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>인증서로 암호화된 PDF 문서를 나타내는 Document 개체입니다.<br /> </td>
   </tr>
   <tr>
-   <td><code>alias</code> </td>
+   <td><code>alias</code><br /> </td>
    <td>PDF 문서에서 인증서 기반 암호화를 제거하는 데 사용되는 Granite Trust Store의 키에 해당하는 별칭입니다.<br /> </td>
   </tr>
   <tr>
@@ -4458,9 +4458,9 @@ private File importData(File inDoc, File inXML)
 }
 ```
 
-## PDF 생성기 서비스 {#pdfgeneratorservice}
+## PDF Generator 서비스 {#pdfgeneratorservice}
 
-PDF 생성기 서비스는 기본 파일 형식을 PDF으로 변환하는 API를 제공합니다. 또한 PDF을 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다.
+PDF Generator 서비스는 기본 파일 형식을 PDF으로 변환하는 API를 제공합니다. 또한 PDF을 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다.
 
 ### GeneratePDF서비스 {#generatepdfservice}
 
@@ -4476,7 +4476,7 @@ GeneratePDFService는 .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, (
 >
 >HTMLtoPDF API는 AIX 운영 체제에서 실행되는 AEM Forms 서버에서 더 이상 사용되지 않습니다.
 
-#### Microsoft Windows 및 Linux에서 사용 가능한 PDF 생성기 API {#pdf-generator-api-available-on-microsoft-windows-and-linux}
+#### Microsoft Windows 및 Linux에서 사용 가능한 PDF Generator API {#pdf-generator-api-available-on-microsoft-windows-and-linux}
 
 <table>
  <tbody>
@@ -4998,7 +4998,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
  </tbody>
 </table>
 
-다음 Java 코드 샘플은 PS(PostScript), EPS(Encapsulated PostScript) 및 PRN(Printer Text Files) 유형의 입력 파일을 PDF 파일로 변환합니다.
+다음 Java 코드 샘플은 PS(포스트스크립트), EPS(캡슐화된 포스트스크립트) 및 PRN(프린터 텍스트 파일) 유형의 입력 파일을 PDF 파일로 변환합니다.
 
 ```java
 @Reference DistillerService distillerService;

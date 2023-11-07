@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1611'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 이러한 요소들을 고려하여 사용자 자산을 저장할 수 있을 만큼 정확한 저장 공간을 계산하는 방법론이 필요합니다.
 
-1. 시스템에 로드될 에셋의 크기와 수를 결정합니다.
+1. 시스템에 로드되는 에셋의 크기와 수를 결정합니다.
 1. 업로드할 에셋의 대표 샘플을 얻으십시오. [!DNL Experience Manager]. 예를 들어 PSD, JPG, AI 및 PDF 파일을 시스템에 로드하려는 경우 각 파일 형식의 여러 샘플 이미지가 필요합니다. 또한 이러한 샘플은 이미지의 다양한 파일 크기와 복잡성을 나타냅니다.
 1. 사용할 렌디션을 정의합니다.
 1. 렌디션 만들기 [!DNL Experience Manager] 사용 [!DNL ImageMagick] 또는 [!DNL Adobe Creative Cloud] 응용 프로그램. 사용자가 지정하는 렌디션 외에도 기본 렌디션을 만듭니다. Dynamic Media을 구현하는 사용자의 경우 IC 바이너리를 사용하여 Experience Manager에 저장할 PTIFF 표현물을 생성할 수 있습니다.
@@ -103,7 +103,7 @@ NodeStore 또는 DocumentStore의 정확한 크기 조정 수치에 도달하기
 
 ## 네트워크 {#network}
 
-[!DNL Assets] 에는 많은 사용 사례가 있으므로 네트워크 성능을 보다 중요하게 생각합니다. [!DNL Experience Manager] 프로젝트. 고객의 서버 속도가 빠를 수 있지만, 시스템에서 에셋을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 네트워크 연결이 크지 않으면 여전히 속도가 느린 것으로 표시됩니다. 에 대한 사용자의 네트워크 연결에서 초크 포인트를 결정하는 좋은 방법론이 있습니다 [!DNL Experience Manager] 위치: [사용자 경험, 인스턴스 크기 조정, 워크플로우 평가 및 네트워크 토폴로지에 대한 자산 고려 사항](/help/assets/assets-network-considerations.md).
+[!DNL Assets] 에는 많은 부분에서 보다 네트워크 성능을 중요하게 만드는 몇 가지 사용 사례가 있습니다. [!DNL Experience Manager] 프로젝트. 고객의 서버 속도가 빠를 수 있지만, 시스템에서 에셋을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 네트워크 연결이 크지 않으면 여전히 속도가 느린 것으로 표시됩니다. 에 대한 사용자의 네트워크 연결에서 초크 포인트를 결정하는 좋은 방법론이 있습니다 [!DNL Experience Manager] 위치: [사용자 경험, 인스턴스 크기 조정, 워크플로우 평가 및 네트워크 토폴로지에 대한 자산 고려 사항](/help/assets/assets-network-considerations.md).
 
 ## 제한 사항 {#limitations}
 

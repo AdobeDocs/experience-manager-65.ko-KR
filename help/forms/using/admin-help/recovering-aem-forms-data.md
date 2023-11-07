@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -71,15 +71,15 @@ AEM forms는 다음 실패에서 안정적으로 복구되어야 합니다.
 
    * (JBoss®) 이름 바꾸기 `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` 끝:
 
-      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
+     `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`
 
    * (WebLogic) 이름 바꾸기 `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` 끝:
 
-      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
+     `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`
 
    * (WebSphere®) 이름 바꾸기 `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` 끝:
 
-      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
+     `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`
 
 1. 먼저 AEM Forms의 기존 설치에 있는 Content Storage Root 디렉터리의 내용을 삭제한 다음 독립 실행형 또는 클러스터형 환경에 대한 작업에 따라 내용을 복구하여 Content Storage Root 디렉터리를 복구합니다.
 
@@ -99,13 +99,13 @@ AEM forms는 다음 실패에서 안정적으로 복구되어야 합니다.
 
    * **독립형**
 
-      *작성자 및 게시 인스턴스 복원*: 재해가 발생하면에서 설명하는 단계를 수행하여 저장소를 마지막 백업 상태로 복원할 수 있습니다 [백업 및 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
+     *작성자 및 게시 인스턴스 복원*: 재해가 발생하면에서 설명하는 단계를 수행하여 저장소를 마지막 백업 상태로 복원할 수 있습니다 [백업 및 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
 
-      작성자 노드의 전체 복원은 Forms Manager 및 AEM Forms Workspace 데이터의 복원도 확인합니다.
+     작성자 노드의 전체 복원은 Forms Manager 및 AEM Forms Workspace 데이터의 복원도 확인합니다.
 
    * **클러스터형**
 
-      클러스터된 환경에서 복원하려면 다음을 참조하십시오. [클러스터 환경에서의 백업 및 리스토어 전략](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
+     클러스터된 환경에서 복원하려면 다음을 참조하십시오. [클러스터 환경에서의 백업 및 리스토어 전략](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. java.io.temp 디렉토리 또는 Adobe 임시 디렉토리에서 생성된 AEM forms 임시 파일을 삭제합니다.
 1. AEM 양식 시작(참조 [서비스 시작 및 중지](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.

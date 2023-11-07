@@ -1,14 +1,10 @@
 ---
 title: 이메일 알림에서 메타데이터 사용
-seo-title: Use metadata in an email notification
 description: 메타데이터를 사용하여 양식 워크플로우 이메일 알림의 정보 채우기
-seo-description: Use metadata to populate information in a forms workflow email notification
-uuid: 9075b64e-1934-44d5-8b16-aa6e95e93da9
 topic-tags: publish
-discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 1%
@@ -23,7 +19,7 @@ ht-degree: 1%
 
 ![기본 이메일 템플릿](assets/default_email_template_metadata_new.png)
 
-메타데이터는 키-값 쌍으로 저장됩니다. 전자 메일 템플릿에 키를 지정할 수 있으며 키는 런타임 시(전자 메일 알림이 생성될 때) 값으로 대체됩니다. 예를 들어 아래 코드 샘플에서는 &quot;$ {workitem_title} &quot;이(가) 키입니다. 이 값은 런타임 시 &quot;Loan-Request&quot; 값으로 대체됩니다.
+메타데이터는 키-값 쌍으로 저장됩니다. 전자 메일 템플릿에 키를 지정할 수 있으며 키는 런타임 시(전자 메일 알림이 생성될 때) 값으로 대체됩니다. 예를 들어 아래 코드 샘플에서는 &quot;$ {workitem_title} &quot;키. 이 값은 런타임 시 &quot;Loan-Request&quot; 값으로 대체됩니다.
 
 ```html
 subject=Task Assigned - ${workitem_title}
@@ -87,7 +83,7 @@ message=<html><body>\n\
    </tr>\n\
    <tr>\n\
     <td style="border-top: solid 1px #EDEAE7; padding: 16px;">\n\
-     <p><span style="font-size: 12px; font-weight: normal; font-style: italic; color: #919191;">This is an automatically generated email. Please do not reply to this email.</code></p>\n\
+     <p><span style="font-size: 12px; font-weight: normal; font-style: italic; color: #919191;">This is an automatically generated email. Do not reply to this email.</code></p>\n\
     </td>\n\
    </tr>\n\
   </tbody>\n\
@@ -98,7 +94,7 @@ message=<html><body>\n\
 
 ## 이메일 알림에서 시스템 생성 메타데이터 사용 {#using-system-generated-metadata-in-an-email-notification}
 
-AEM Forms 애플리케이션은 다양한 메타데이터 변수(키-값 쌍)를 즉시 제공합니다. 전자 메일 템플릿에서 이러한 변수를 사용할 수 있습니다. 변수의 값은 연결된 양식 애플리케이션을 기반으로 합니다. 다음 표에는 즉시 사용할 수 있는 모든 메타데이터 변수가 나열되어 있습니다.
+AEM Forms 애플리케이션은 즉시 사용할 수 있는 여러 메타데이터 변수(키-값 쌍)를 제공합니다. 전자 메일 템플릿에서 이러한 변수를 사용할 수 있습니다. 변수의 값은 연결된 양식 애플리케이션을 기반으로 합니다. 다음 표에는 즉시 사용할 수 있는 모든 메타데이터 변수가 나열되어 있습니다.
 
 <table>
  <tbody> 

@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 8bd103e392bf5630cb2db654dedcfe4f926b2c9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 의 이 XMP 원본에 쓰기 기능 [!DNL Adobe Experience Manager Assets] 메타데이터 변경 사항을 원본 에셋의 렌디션에 복제합니다. Assets 내에서 또는 에셋을 업로드하는 동안 에셋의 메타데이터를 변경하면 변경 사항이 에셋 계층의 메타데이터 노드에 처음 저장됩니다.
@@ -77,7 +77,7 @@ XMP 원본에 쓰기 기능이 메타데이터를 렌디션 썸네일 140.100.pn
 
 [!DNL Experience Manager Assets] 는 에셋 바이너리에서 읽고 에셋을 수집할 때 JCR에 저장되는 XMP 메타데이터에 대한 속성/노드의 차단 목록 및 허용 목록 필터링을 모두 지원합니다.
 
-차단 목록을 사용하여 필터링하면 제외를 위해 지정된 속성을 제외한 모든 XMP 메타데이터 속성을 가져올 수 있습니다. 그러나 엄청난 양의 XMP 메타데이터가 있는 INDD 파일과 같은 에셋 유형(예: 10,000개의 속성이 있는 1000개의 노드)의 경우 필터링할 노드 이름을 항상 미리 알고 있는 것은 아닙니다. 차단 목록을 사용하여 필터링하면 많은 XMP 메타데이터가 있는 많은 에셋을 가져올 수 있습니다. [!DNL Experience Manager] 배포에 안정성 문제가 발생할 수 있습니다(예: 모니터링 큐 차단).
+차단 목록을 사용하여 필터링하면 제외를 위해 지정된 속성을 제외한 모든 XMP 메타데이터 속성을 가져올 수 있습니다. 그러나 엄청난 양의 XMP 메타데이터가 있는 INDD 파일과 같은 에셋 유형(예: 10,000개의 속성이 있는 1000개의 노드)의 경우 필터링할 노드 이름을 항상 미리 알고 있는 것은 아닙니다. 차단 목록을 사용하여 필터링하면 많은 XMP 메타데이터가 있는 많은 에셋을 가져올 수 있습니다. [!DNL Experience Manager] 배포에 혼잡한 관찰 큐 등의 안정성 문제가 발생할 수 있습니다.
 
 허용 목록을 통한 XMP 메타데이터 필터링은 가져올 XMP 속성을 정의할 수 있도록 하여 이 문제를 해결합니다. 이렇게 하면 다른 모든 또는 알 수 없는 XMP 속성이 무시됩니다. 이전 버전과의 호환성을 위해 차단 목록을 사용하는 필터에 이러한 속성 중 일부를 추가할 수 있습니다.
 

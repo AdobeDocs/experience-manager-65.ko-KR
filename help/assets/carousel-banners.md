@@ -1,19 +1,17 @@
 ---
 title: 회전 배너
 description: Dynamic Media에서 회전 배너 작업 방법 알아보기
-uuid: 73684a08-d84d-4665-ab89-3a1bf88ac5dd
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4726'
+source-wordcount: '4722'
 ht-degree: 2%
 
 ---
@@ -179,7 +177,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
 ## 이미지 배너 업로드 {#uploading-image-banners}
 
-사용할 이미지를 이미 업로드한 경우 다음 단계로 이동하십시오. [회전 메뉴 세트 만들기](#creating-carousel-sets). Dynamic Media이 활성화된 후에는 캐러셀에 사용된 이미지를 업로드해야 합니다.
+사용할 이미지를 이미 업로드한 경우 다음 단계로 이동하십시오. [회전 메뉴 세트 만들기](#creating-carousel-sets). Dynamic Media이 활성화되면 회전 메뉴에 사용되는 이미지를 업로드해야 합니다.
 
 이미지 배너를 업로드하려면 다음을 참조하십시오. [에셋 업로드](/help/assets/manage-assets.md).
 

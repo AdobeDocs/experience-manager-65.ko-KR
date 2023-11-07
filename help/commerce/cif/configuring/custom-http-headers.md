@@ -2,9 +2,9 @@
 title: 사용자 정의 HTTP 헤더
 description: Adobe Experience Manager Commerce에서 사용자 지정 HTTP 헤더를 구성하는 방법에 대해 알아봅니다.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '273'
 ht-degree: 5%
 
 ---
@@ -26,8 +26,8 @@ ht-degree: 5%
 
 프로젝트의 [Cloud Service 구성] 페이지에서 HTTP 헤더 값을 구성할 수 있습니다.
 
-1. 도구 -> Cloud Services -> CIF 구성의 Cloud Service 구성 페이지로 이동합니다.
-1. 기존 구성을 열거나 새 구성 만들기
+1. 도구 > Cloud Services > CIF 구성의 Cloud Service 구성 페이지로 이동합니다.
+1. 기존 구성을 열거나 만듭니다.
 1. &quot;고급&quot; 탭으로 이동하여 &quot;사용자 지정 HTTP 헤더&quot; 다중 필드를 찾습니다. 앞에서 정의한 헤더를 선택하고 값을 할당할 수 있습니다.
 
 위의 클라우드 서비스 구성을 사용하는 구성 요소는 모든 GraphQL 요청과 함께 이러한 HTTP 헤더를 전송합니다.

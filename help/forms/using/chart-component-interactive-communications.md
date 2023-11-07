@@ -11,9 +11,9 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2612'
+source-wordcount: '2608'
 ht-degree: 1%
 
 ---
@@ -161,7 +161,7 @@ ht-degree: 1%
    <td><p>일반적인 구성 외에도 다음과 같은 차트별 구성을 사용할 수 있습니다.</p>
     <ul>
      <li><strong>범례 표시: </strong>활성화되면 파이 또는 도넛 차트에 대한 범례를 표시합니다.</li>
-     <li><strong>범례 위치: </strong>차트와 관련된 범례의 위치를 지정합니다. 사용 가능한 옵션은 오른쪽, 왼쪽, 위쪽 및 아래입니다. 인쇄 채널에서 오른쪽 범례를 사용하는 것이 좋습니다.</li>
+     <li><strong>범례 위치: </strong>차트와 관련된 범례의 위치를 지정합니다. 사용 가능한 옵션은 오른쪽, 왼쪽, 위쪽 및 아래입니다. 인쇄 채널에서 오른쪽 범례를 사용합니다.</li>
      <li><strong>내측 반경</strong>: 도넛 차트에서 차트에 있는 내부 원의 반경(픽셀 단위)을 지정할 수 있습니다.</li>
      <li><strong>선 색상</strong>: 선, 선 및 점, 영역 차트에 사용할 수 있으며 차트에서 선의 색상을 지정합니다.</li>
      <li><strong>점 색상</strong>: 점, 선 및 점 차트에서 차트의 점 색상을 지정할 수 있습니다.<br /> </li>

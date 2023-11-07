@@ -1,19 +1,15 @@
 ---
 title: Adobe Target과 통합하기 위한 사전 요구 사항
-seo-title: Prerequisites for Integrating with Adobe Target
 description: Adobe Target과 통합하기 위한 사전 요구 사항에 대해 알아봅니다.
-seo-description: Find out about the prerequisites for integrating with Adobe Target.
-uuid: 55d87a96-5fe7-4f7e-93c1-fdf7fbb7c971
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '549'
 ht-degree: 7%
 
 ---
@@ -47,13 +43,13 @@ AEM을 Adobe Target과 통합하려면 유효한 Adobe Target 계정이 있어�
    >
    >Test and Target 복제 에이전트를 구성할 때에서 **전송** 탭에서 URI는 기본적으로 로 설정됩니다. **tnt:///**. 이 URI를 다음으로 바꾸기 금지 **https://admin.testandtarget.omniture.com**.
    >
-   >과의 연결을 테스트하는 경우 유의하십시오. **tnt:///**, 오류가 발생합니다. 이 URI는 내부용으로만 사용되며 와 함께 사용해서는 안 되므로 이는 예상되는 동작입니다. **연결 테스트**.
+   >과의 연결을 테스트하려는 경우 **tnt:///**, 오류가 발생합니다. 이 URI는 내부용이므로 예상되는 동작입니다. **연결 테스트**.
 
 ## 활동 설정 노드 보안 설정 {#securing-the-activity-settings-node}
 
 일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호해야 합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스에만 액세스할 수 있어야 합니다.
 
-다음 **cq:ActivitySettings** 노드는 아래의 CRXDE lite에서 사용할 수 있습니다 `/content/campaigns/*nameofbrand*`* *활동 jcr:content 노드 아래에* *예 `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. 이 노드는 구성 요소를 타겟팅한 후에만 만들어집니다.
+다음 **cq:ActivitySettings** 노드는 아래의 CRXDE lite에서 사용할 수 있습니다 `/content/campaigns/*nameofbrand*`* *활동 jcr:content 노드 아래에* *예, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. 이 노드는 구성 요소를 타겟팅한 후에만 만들어집니다.
 
 다음 **cq:ActivitySettings** 활동의 jcr:content 아래에 있는 노드는 다음 ACL에 의해 보호됩니다.
 

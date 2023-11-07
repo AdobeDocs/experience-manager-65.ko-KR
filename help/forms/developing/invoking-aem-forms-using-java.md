@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5396'
+source-wordcount: '5393'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM Forms은 AEM Forms Java API를 사용하여 호출할 수 있습니다. AEM Forms Java API를 사용하는 경우 호출 API 또는 Java 클라이언트 라이브러리를 사용할 수 있습니다. Java 클라이언트 라이브러리는 Rights Management 서비스와 같은 서비스에 사용할 수 있습니다. 이러한 강력한 형식의 API를 사용하면 AEM Forms을 호출하는 Java 애플리케이션을 개발할 수 있습니다.
 
-호출 API는에 있는 클래스입니다 `com.adobe.idp.dsc` 패키지. 이러한 클래스를 사용하여 서비스에 직접 호출 요청을 보내고 반환되는 호출 응답을 처리할 수 있습니다. Workbench를 사용하여 생성된 단기 또는 장기 프로세스를 호출하려면 호출 API를 사용합니다.
+호출 API는 `com.adobe.idp.dsc` 패키지. 이러한 클래스를 사용하여 서비스에 직접 호출 요청을 보내고 반환되는 호출 응답을 처리할 수 있습니다. Workbench를 사용하여 생성된 단기 또는 장기 프로세스를 호출하려면 호출 API를 사용합니다.
 
 서비스를 프로그래밍 방식으로 호출하는 권장 방법은 Invocation API와 반대로 서비스에 해당하는 Java 클라이언트 라이브러리를 사용하는 것입니다. 예를 들어 암호화 서비스를 호출하려면 암호화 서비스 클라이언트 라이브러리를 사용합니다. 암호화 서비스 작업을 수행하려면 암호화 서비스 클라이언트 개체에 속하는 메서드를 호출합니다. 암호로 PDF 문서를 암호화하려면 `EncryptionServiceClient` 개체 `encryptPDFUsingPassword` 메서드를 사용합니다.
 
@@ -632,7 +632,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 
 ### 클러스터된 AEM Forms 인스턴스를 호출하는 클라이언트 애플리케이션 {#client-application-invoking-clustered-aem-forms-instances}
 
-다음 다이어그램은 자체 JVM에서 실행되고 클러스터에 있는 AEM Forms 인스턴스를 호출하는 클라이언트 응용 프로그램을 보여 줍니다.
+다음 다이어그램은 자체 JVM에서 실행되고 있으며 클러스터에서 AEM Forms 인스턴스를 호출하는 클라이언트 응용 프로그램을 보여 줍니다.
 
 이 시나리오는 클라이언트 애플리케이션이 독립 실행형 AEM Forms 인스턴스를 호출하는 것과 유사합니다. 그러나 공급자 URL은 다릅니다. 클라이언트 애플리케이션이 특정 J2EE 애플리케이션 서버에 접속하려는 경우 애플리케이션은 특정 J2EE 애플리케이션 서버를 참조하도록 URL을 변경해야 합니다.
 

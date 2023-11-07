@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '707'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ AEM 6은 다음 절차에 따라 MongoDB 스토리지로 실행되도록 구성�
    * `changesSize`: 비교 출력을 캐시하기 위해 Mongo에서 사용되는 캡핑된 컬렉션의 크기(MB)입니다. 기본값은 256입니다.
    * `customBlobStore`: 사용자 지정 데이터 저장소가 사용됨을 나타내는 부울 값입니다. 기본값은 false입니다.
 
-1. 사용할 데이터 저장소의 PID로 구성 파일을 만들고 해당 파일을 편집하여 구성 옵션을 설정합니다. 자세한 내용은 다음을 참조하십시오. [노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md).
+1. 사용할 데이터 저장소의 PID로 구성 파일을 만들고 해당 파일을 편집하여 구성 옵션을 설정합니다. 자세한 내용은 [노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md).
 
 1. 다음을 실행하여 MongoDB 스토리지 백엔드로 AEM 6 jar를 시작합니다.
 
@@ -122,7 +122,6 @@ Red Hat® Linux®는 THP(Transparent Huge Pages)라는 메모리 관리 알고�
 >* Red Hat® Linux®의 Transparent Huge Pages에 대한 자세한 내용은 다음을 참조하십시오 [기사](https://access.redhat.com/solutions/46111).
 * Linux® 조정 팁은 다음을 참조하십시오 [기사](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko-KR).
 >
-
 
 ## 저장소 유지 관리 {#maintaining-the-repository}
 

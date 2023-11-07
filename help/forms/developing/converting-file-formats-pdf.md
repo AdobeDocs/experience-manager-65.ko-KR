@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7848'
+source-wordcount: '7847'
 ht-degree: 0%
 
 ---
@@ -619,7 +619,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 상자 콘
   <tr>
    <td><p>스크립트 </p></td>
    <td><p>PDF 생성 서비스와 기본 응용 프로그램 간의 상호 작용을 지정합니다. 이러한 상호 작용은 일반적으로 애플리케이션이 Adobe PDF 드라이버에 파일을 인쇄하도록 합니다. </p><p>스크립트에는 기본 응용 프로그램에서 특정 대화 상자를 열고 해당 대화 상자의 필드 및 단추에 특정 응답을 제공하는 지침이 포함되어 있습니다. </p></td>
-   <td><p>PDF 생성 서비스에는 지원되는 모든 기본 응용 프로그램에 대한 스크립트 파일이 포함되어 있습니다. XML 편집 응용 프로그램을 사용하여 이러한 파일을 수정할 수 있습니다.</p><p>새 기본 응용 프로그램에 대한 지원을 추가하려면 새 스크립트 파일을 만들어야 합니다. (참조: <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 생성 또는 수정</a>.) </p></td>
+   <td><p>PDF 생성 서비스에는 지원되는 모든 기본 응용 프로그램에 대한 스크립트 파일이 포함되어 있습니다. XML 편집 응용 프로그램을 사용하여 이러한 파일을 수정할 수 있습니다.</p><p>새 기본 응용 프로그램에 대한 지원을 추가하려면 스크립트 파일을 만들어야 합니다. (참조: <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 생성 또는 수정</a>.) </p></td>
   </tr>
   <tr>
    <td><p>일반 대화 상자 지침 </p></td>

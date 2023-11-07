@@ -3,9 +3,9 @@ title: Application Server 설치 업그레이드 단계
 description: 애플리케이션 서버를 통해 배포된 AEM의 인스턴스를 업그레이드하는 방법에 대해 알아봅니다.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
 
    * 제거 **sling.options.file** 다음을 실행함으로써: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-1. 이제 AEM 6.5에서 사용할 노드 저장소 및 데이터 저장소를 만듭니다. 이 작업은 다음 이름의 두 파일을 `crx-quickstart\install`:
+1. 이제 AEM 6.5와 함께 사용되는 노드 저장소 및 데이터 저장소를 만듭니다. 이 작업은 다음 이름의 두 파일을 `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`

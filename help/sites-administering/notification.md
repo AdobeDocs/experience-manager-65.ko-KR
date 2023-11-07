@@ -1,18 +1,14 @@
 ---
 title: 이메일 알림 구성
-seo-title: Configuring Email Notification
 description: Adobe Experience Manager에서 이메일 알림을 구성하는 방법을 알아봅니다.
-seo-description: Learn how to configure Email Notification in AEM.
-uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2067'
 ht-degree: 12%
 
 ---
@@ -361,7 +357,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 1. 그런 다음 **증명서 및 보안**&#x200B;으로 이동하고 **신규 클라이언트 보안**&#x200B;을 클릭한 후 화면에 표시되는 단계에 따라 보안을 생성합니다. 나중에 사용할 수 있도록 이러한 보안 내용을 메모해 두십시오.
 1. 왼쪽 창에서 **개요**&#x200B;를 누르고 나중에 사용할 수 있도록 **애플리케이션(클라이언트) ID** 및 **디렉터리(테넌트) ID**&#x200B;의 값을 복사합니다.
 
-재점검하려면 AEM 측의 Mailer 서비스에 대한 OAuth2 구성에 대한 다음 정보가 필요합니다.
+재점검하려면 AEM 측의 Mailer 서비스에 대한 OAuth2 구성에 대한 다음 정보가 있어야 합니다.
 
 * 테넌트 ID로 구성되는 인증 URL 형식: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * 테넌트 ID로 구성되는 토큰 URL 형식: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`

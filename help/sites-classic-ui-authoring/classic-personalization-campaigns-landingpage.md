@@ -1,19 +1,15 @@
 ---
 title: 랜딩 페이지
-seo-title: Landing Pages
 description: 랜딩 페이지 기능을 사용하면 디자인과 콘텐츠를 AEM 페이지로 빠르고 쉽게 가져올 수 있습니다. 웹 개발자는 HTML 및 전체 페이지로 가져오거나 페이지의 일부로만 가져올 수 있는 추가 에셋을 준비할 수 있습니다.
-seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
-uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3329'
+source-wordcount: '3323'
 ht-degree: 3%
 
 ---
@@ -41,7 +37,7 @@ ht-degree: 3%
 
 ## 랜딩 페이지란 무엇입니까? {#what-are-landing-pages}
 
-랜딩 페이지는 이메일, 광고/배너, 소셜 미디어와 같은 마케팅 활동의 &quot;엔드포인트&quot;인 단일 또는 다중 페이지 사이트입니다. 랜딩 페이지는 다양한 용도로 사용될 수 있지만 모두 한 가지 공통점이 있습니다. 방문자가 작업을 완수해야 하고 랜딩 페이지의 성공을 정의해야 합니다.
+랜딩 페이지는 이메일, 광고, 배너, 소셜 미디어와 같은 마케팅 활동의 &quot;엔드포인트&quot;인 단일 또는 다중 페이지 사이트입니다. 랜딩 페이지는 다양한 용도로 사용될 수 있지만 모두 한 가지 공통점이 있습니다. 방문자가 작업을 완수해야 하고 랜딩 페이지의 성공을 정의해야 합니다.
 
 AEM의 랜딩 페이지 기능을 사용하면 마케터가 에이전시 또는 내부 크리에이티브 팀의 웹 디자이너와 함께 AEM으로 쉽게 가져올 수 있고 마케터가 편집할 수 있으며 AEM 기반 사이트의 나머지 부분과 동일한 거버넌스 하에 게시할 수 있는 페이지 디자인을 만들 수 있습니다.
 
@@ -357,7 +353,7 @@ Adobe은 스테이징 인스턴스에서 디자인 임포터를 사용하는 것
 >
 >기본적으로 가져오기 페이지는 캠페인에서만 만들 수 있지만 이 템플릿을 오버레이하여 아래에 랜딩 페이지를 만들 수도 있습니다. `/content/mysite`.
 
-새 랜딩 페이지를 만들려면 다음 작업을 수행하십시오.
+랜딩 페이지를 만들려면 다음 작업을 수행하십시오.
 
 1. 로 이동 **웹 사이트** 콘솔.
 1. 왼쪽 창에서 캠페인을 선택합니다.
@@ -439,7 +435,7 @@ zip 파일을 다운로드하면 특정 랜딩 페이지와 함께 가져온 zip
 
 >[!NOTE]
 >
->콘텐츠 변경 사항을 제거하기로 결정한 경우 를 클릭하면 가져온 랜딩 페이지와 모든 페이지 속성에서 변경한 사항이 모두 손실됩니다 **지우기**.
+>콘텐츠 변경 사항을 제거하기로 결정한 경우 를 클릭하면 가져온 랜딩 페이지에서 변경한 모든 사항과 모든 페이지 속성이 손실됩니다 **지우기**.
 
 ### 랜딩 페이지에서 구성 요소 수정 및 추가 {#modifying-and-adding-components-on-a-landing-page}
 

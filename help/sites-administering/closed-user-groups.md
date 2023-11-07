@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6836'
+source-wordcount: '6818'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ AEM 6.3 이후, 기존 구현에 존재하는 성능, 확장성 및 보안 문�
 
 >[!NOTE]
 >
->간결성을 위해, CUG 약어는 본 문서 전체에서 사용될 것이다.
+>간결성을 위해, CUG 약어는 본 설명서 전체에서 사용됩니다.
 
 새 구현의 목표는 기존 버전의 문제와 디자인 제한 사항을 해결하는 동시에 필요한 기존 기능을 다루는 것입니다. 그 결과 다음과 같은 특성을 가진 새로운 CUG 설계가 이루어졌습니다.
 
@@ -207,7 +207,7 @@ CUG에 대한 읽기 액세스를 제한하는 새로운 유형의 액세스 제
 
 #### 새 CUG 정책 설정 {#set-a-new-cug-policy}
 
-이전에 CUG가 설정되지 않은 노드에서 새 CUG 정책을 적용하는 코드입니다. 다음을 참고하십시오. `getApplicablePolicies` 은 이전에 설정되지 않은 새 정책만 반환합니다. 마지막에 정책을 다시 기록해야 하며 변경 사항을 지속해야 합니다.
+이전에 CUG가 설정되지 않은 노드에서 새 CUG 정책을 적용하는 코드입니다. 참고: `getApplicablePolicies` 는 이전에 설정되지 않은 새 정책만 반환합니다. 마지막에 정책을 다시 기록해야 하며 변경 사항을 지속해야 합니다.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -243,7 +243,7 @@ session.save();
 
 #### 기존 CUG 정책 편집 {#edit-an-existing-cug-policy}
 
-기존 CUG 정책을 편집하려면 다음 단계를 수행해야 합니다. 수정된 정책은 다시 작성해야 하며 변경 사항은 를 사용하여 지속해야 합니다 `javax.jcr.Session.save()`.
+기존 CUG 정책을 편집하려면 다음 단계를 수행해야 합니다. 수정된 정책은 다시 기록해야 하며 변경 사항은 를 사용하여 지속해야 합니다. `javax.jcr.Session.save()`.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -281,7 +281,7 @@ JCR 액세스 제어 관리는 지정된 경로에서 적용되는 정책을 검
 
 >[!NOTE]
 >
->다음 사이에 차이점이 있는지 확인하십시오. `getEffectivePolicies` 및 다음 코드 예제에서는 주어진 경로가 이미 기존 CUG의 일부인지 계층 구조를 살펴봅니다.
+>차이점 `getEffectivePolicies` 및 다음 코드 예제에서는 주어진 경로가 이미 기존 CUG의 일부인지 계층 구조를 살펴봅니다.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -338,7 +338,7 @@ while (isSupportedPath(path)) {
 
 #### 새 인증 요구 사항 추가 {#adding-a-new-auth-requirement}
 
-새 인증 요구 사항을 만드는 단계는 아래에 자세히 설명되어 있습니다. 이 경우 요구 사항은 Apache Sling 인증자에만 등록됩니다. `RequirementHandler` 대상 노드가 포함된 트리에 대해 가 구성되었습니다.
+인증 요구 사항을 만드는 단계는 아래에 자세히 설명되어 있습니다. 이 경우 요구 사항은 Apache Sling 인증자에만 등록됩니다. `RequirementHandler` 대상 노드가 포함된 트리에 대해 가 구성되었습니다.
 
 ```java
 Node targetNode = [...]
@@ -349,7 +349,7 @@ session.save();
 
 #### 로그인 경로로 새 인증 요구 사항 추가 {#add-a-new-auth-requirement-with-login-path}
 
-로그인 경로를 포함한 새 인증 요구 사항을 만드는 단계입니다. 로그인 경로에 대한 요구 사항 및 제외는 `RequirementHandler` 대상 노드가 포함된 트리에 대해 가 구성되었습니다.
+로그인 경로를 포함한 인증 요구 사항을 만드는 단계입니다. 로그인 경로에 대한 요구 사항 및 제외는 `RequirementHandler` 대상 노드가 포함된 트리에 대해 가 구성되었습니다.
 
 ```java
 Node targetNode = [...]
@@ -582,7 +582,7 @@ CUG 인증 모듈과 연관된 사용 가능한 구성 옵션이 나열되고 �
 
 #### CUG 평가에서 주도자 제외 {#excluding-principals-from-cug-evaluation}
 
-개별 학교장은 CUG 평가에서 면제하는 것이 전자의 시행에서 채택되었다. 새로운 CUG 인증은 CugExclude라는 전용 인터페이스를 통해 이를 다룹니다. Apache Jackrabbit Oak 1.4는 고정된 주도자 세트와 개별 주도자 이름을 구성할 수 있는 확장 구현을 제외하는 기본 구현과 함께 제공됩니다. 후자는 AEM 게시 인스턴스에 구성됩니다.
+개별 학교장은 CUG 평가에서 면제하는 것이 전자의 시행에서 채택되었다. 새로운 CUG 인증은 CugExclude라는 전용 인터페이스를 통해 이를 다룹니다. Apache Jackrabbit Oak 1.4는 고정된 주도자 세트를 제외하는 기본 구현과 개별 주도자 이름을 구성할 수 있도록 하는 확장 구현과 함께 제공됩니다. 후자는 AEM 게시 인스턴스에 구성됩니다.
 
 AEM 6.3부터 기본적으로 다음 주도자가 CUG 정책의 영향을 받지 않습니다.
 

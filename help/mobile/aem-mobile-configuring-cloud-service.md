@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: d370d772-ef4d-4f38-826c-e90d07735822
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1274'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ## Adobe Target Cloud Service {#adobe-target-cloud-service}
 
-AEM Mobile 대시보드에서 관리 Cloud Services을 찾아 + 단추를 클릭합니다.
+AEM Mobile 대시보드에서 관리 Cloud Service을 찾아 + 단추를 클릭합니다.
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -51,7 +51,7 @@ Cloud Service 추가 마법사에서 &quot;Adobe Target&quot; 클라우드 서�
 
 만들어지는 클라우드 서비스는 마법사를 통해 모바일 애플리케이션과 자동으로 연결됩니다. cq:cloudserviceconfigs 속성 값은 앱 그룹 노드의 jcr:content 노드에서 설정됩니다. 하이브리드 앱 샘플의 경우 자동으로 생성된 프레임워크 노드를 가리키는 값이 /etc/cloudservices/testandtarget/adobe-target—aem-apps/framework인 /content/mobileapps/hybrid-reference-app/jcr:content에 설정됩니다. 프레임워크 노드에는 기본적으로 성별 및 연령의 두 가지 속성이 설정되어 있습니다. 프레임워크는 AEM 미리보기에서만 사용되며 장치에는 영향을 주지 않습니다.
 
-마법사를 완료한 후 Cloud Service 관리 타일에는 Target 클라우드 서비스가 포함되지만 Adobe 모바일 서비스 계정이 누락되었다는 경고가 포함되어 있습니다.
+마법사를 완료한 후 Cloud Service 관리 타일에는 Target 클라우드 서비스가 포함되지만 누락된 Adobe 모바일 서비스 계정에 대한 경고가 포함되어 있습니다.
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -69,7 +69,7 @@ AMS 서비스에 로그인하려면 다음을 방문하십시오. [https://mobil
 
 ### Adobe 모바일 서비스 Could Service {#adobe-mobile-service-could-service}
 
-이제 AMS가 구성되었으므로 Adobe 모바일 대시보드에서 모바일 애플리케이션을 연결할 차례입니다. AEM Mobile 대시보드에서 관리 Cloud Services을 찾아 + 단추를 클릭합니다.
+이제 AMS가 구성되었으므로 Adobe 모바일 대시보드에서 모바일 애플리케이션을 연결할 차례입니다. AEM Mobile 대시보드에서 관리 Cloud Service을 찾아 + 단추를 클릭합니다.
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -79,11 +79,11 @@ Mobile Services Adobe 카드를 선택하고 다음 을 클릭합니다.
 
 만들기 또는 선택 마법사 단계에서 Mobile Service 드롭다운을 선택하고 구성 만들기 항목을 선택합니다. 제목, 회사, 사용자 이름, 암호를 입력하고 적절한 데이터 센터를 선택합니다. 이러한 값을 모를 경우 Adobe Mobile Service 관리자에게 문의하여 값을 받으십시오. 모든 필드가 채워지면 **확인**. 확인 프로세스는 AMS로 이동하여 계정에 대한 자격 증명을 확인하고, 유효성 검사에 성공하면 드롭다운에서 연결된 모바일 애플리케이션을 선택할 수 있는 모바일 애플리케이션 목록이 채워집니다. 제출 단추를 클릭하여 마법사를 완료합니다. 프로세스는 구성 데이터 및 애플리케이션과의 임의의 연관된 분석을 획득하는 데 약간의 시간이 걸릴 수 있다. 프로세스가 완료되면 다음을 클릭합니다. **완료** 을 클릭하여 Adobe 모바일 대시보드로 돌아갑니다.
 
-모바일 대시보드로 돌아가면 Cloud Services 관리 타일에 AMS 클라우드 서비스가 포함됩니다. 또한 지표 분석 타일은 라이프사이클 보고서로 채워집니다.
+모바일 대시보드로 돌아가면 Cloud Service 관리 타일에 AMS 클라우드 서비스가 포함됩니다. 또한 지표 분석 타일은 라이프사이클 보고서로 채워집니다.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
-## Target 컨텐츠 동기화 핸들러 {#target-content-sync-handlers}
+## Target 콘텐츠 동기화 핸들러 {#target-content-sync-handlers}
 
 컨텐츠를 사용자의 장치에 전달하기 위해 컨텐츠는 AEM 컨텐츠 작성자가 만든 오퍼를 렌더링하여 생성됩니다. 대상 오퍼의 렌더링을 처리하기 위해 오퍼를 처리하는 새로운 콘텐츠 동기화 핸들러가 있습니다. 하이브리드 참조 응용 프로그램을 샘플로 사용하는 en(영어) 콘텐츠 패키지에는 [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) 핸들러입니다. 다음 단계는 장치에 오퍼를 렌더링하는 데 중요합니다. mobileappoffers 핸들러에는 애플리케이션에 사용되는 개인화 활동의 경로를 식별하는 경로 속성이 있습니다.
 
@@ -97,7 +97,7 @@ mobileappoffers 처리기의 path 속성에 활동 경로가 설정되면 처리
 
 mobileappoffers 처리기는 게시 및 개발 설정에 대해 다르게 구성됩니다. 게시 설정의 경우 라는 속성이 있습니다. *renderMode* (값: *게시* cq:ContentSyncConfig 노드에 설정합니다. mobileappoffers 처리기가 renderMode를 참조하고 게시로 설정된 경우 만들어지는 mbox id를 편집합니다. 기본적으로 AEM에서 만드는 mbox에는 mbox id에 —author 값이 추가됩니다. 이는 활동이 게시되지 않았으며 오퍼 확인에 게시되지 않은 캠페인을 사용해야 함을 나타냅니다.
 
-Adobe Mobile Dashboard를 통해 콘텐츠를 스테이징하면 스테이징된 콘텐츠는 프로덕션 준비 콘텐츠로 간주되고 비개발 콘텐츠 동기화 구성을 통해 렌더링됩니다. 이러한 방식으로 렌더링하면 —작성자가 모든 mbox ID에서 제거되고 게시된 활동을 Target 서버에서 사용할 수 있게 됩니다. 스테이징된 콘텐츠를 테스트하기 전에 활동이 게시되었는지 확인하십시오.
+Adobe Mobile Dashboard를 통해 콘텐츠를 스테이징하면 스테이징된 콘텐츠는 프로덕션 준비 콘텐츠로 간주되고 비개발 콘텐츠 동기화 구성을 통해 렌더링됩니다. 이러한 방식으로 렌더링하면 —작성자가 모든 mbox ID에서 제거되고 게시된 활동을 Target 서버에서 사용할 수 있습니다. 스테이징된 콘텐츠를 테스트하기 전에 활동이 게시되었는지 확인하십시오.
 
 ## 콘텐츠 만들기 {#creating-content}
 

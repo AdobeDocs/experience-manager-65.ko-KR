@@ -2,9 +2,9 @@
 title: 페이지에 ContextHub 추가 및 저장소 액세스
 description: 페이지에 ContextHub를 추가하여 ContextHub 기능을 활성화하고 ContextHub JavaScript 라이브러리에 연결합니다
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '921'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ ContextHub 저장소를 사용하여 컨텍스트 데이터를 유지합니다. 
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPtore](contexthub-api.md#contexthub-store-persistedstore)
 
-모든 저장소 유형은 [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) 클래스. 새 저장소 유형 만들기에 대한 내용은 [사용자 지정 스토어 만들기](ch-extend.md#creating-custom-store-candidates). 샘플 저장소 유형에 대한 자세한 내용은 [샘플 ContextHub 저장소 후보](ch-samplestores.md).
+모든 저장소 유형은 [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) 클래스. 저장소 유형 만들기에 대한 자세한 내용은 [사용자 지정 스토어 만들기](ch-extend.md#creating-custom-store-candidates). 샘플 저장소 유형에 대한 자세한 내용은 [샘플 ContextHub 저장소 후보](ch-samplestores.md).
 
 ### 지속성 모드 {#persistence-modes}
 
@@ -139,11 +139,11 @@ ContextHub 세그먼트는 `/conf/<site>/settings/wcm/segments` 노드.
 
 >[!WARNING]
 >
->설치된 세그먼트는 프로젝트에 대한 자체 전용 구성을 작성하는 데 도움이 되는 참조 구성으로 제공되며, 이를 직접 사용해서는 안 됩니다.
+>설치된 세그먼트는 프로젝트에 대한 전용 구성을 구축하는 데 도움이 되는 참조 구성으로 제공됩니다. 직접 사용하지 마십시오.
 
 ## ContextHub 디버깅 {#debugging-contexthub}
 
-ContextHub를 디버깅하기 위한 옵션은 로그 생성을 비롯하여 여러 가지가 있습니다. 다음을 참조하십시오 [ContextHub 구성 을 참조하십시오.](ch-configuring.md#logging-debug-messages-for-contexthub)
+ContextHub 디버깅을 위한 몇 가지 옵션은 로그 생성을 포함합니다. 다음을 참조하십시오 [ContextHub 구성 을 참조하십시오.](ch-configuring.md#logging-debug-messages-for-contexthub)
 
 ## ContextHub 프레임워크 개요 를 참조하십시오 {#see-an-overview-of-the-contexthub-framework}
 

@@ -2,13 +2,13 @@
 sub-product: AEM Headless Journeys
 user-guide-title: AEM Headless 여정
 breadcrumb-title: AEM Headless 여정
-user-guide-description: AEM의 강력하고 유연한 헤드리스 기능과 각각의 능력, 그리고 귀하의 프로젝트에서 이들 기능을 활용하는 방법에 대한 가이드 여정을 받으십시오.
+user-guide-description: AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 귀하의 프로젝트에서 이들 기능을 사용하는 방법에 대한 가이드 여정을 받으십시오.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 

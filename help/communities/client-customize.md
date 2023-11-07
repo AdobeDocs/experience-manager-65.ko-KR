@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 오버레이는 /에서 기본 구성 요소의 복사본을 수정하여 수행됩니다&#x200B;**앱** 디렉토리에서 원래 구성 요소를 수정하지 않고&#x200B;**리브** 디렉토리. 구성 요소는 &#39;libs&#39;를 &#39;apps&#39;로 대체한다는 점을 제외하고 동일한 상대 경로로 구성됩니다.
 
-/apps 디렉토리는 요청을 해결하기 위해 가장 먼저 검색한 위치이며, 찾을 수 없는 경우 /libs 디렉토리에 있는 기본 버전이 사용됩니다.
+/apps 디렉토리는 요청을 해결하기 위해 가장 먼저 검색한 위치이며, 찾을 수 없는 경우 /libs 디렉토리의 기본 버전이 사용됩니다.
 
 향후 패치 및 업그레이드를 통해 공용 인터페이스를 유지하는 동안 필요한 방식으로 /libs 디렉토리를 변경할 수 있으므로 /libs 디렉토리의 기본 구성 요소는 수정해서는 안 됩니다.
 

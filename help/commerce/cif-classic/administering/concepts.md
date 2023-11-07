@@ -3,9 +3,9 @@ title: 개념
 description: Adobe Experience Manager과 함께 전자 상거래의 일반 개념에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4480'
+source-wordcount: '4481'
 ht-degree: 2%
 
 ---
@@ -486,7 +486,7 @@ AEM 내에서 업데이트하고 사용자 정의할 수 있는 각 제품에 �
 
 프록시 페이지는 2노드 구조( `cq:Page` 및 `jcr:content`) 실제 제품 컨텐츠를 포함하지 않습니다. 요청 시 제품 데이터와 템플릿 페이지를 참조하여 콘텐츠가 생성됩니다.
 
-그러나, 상충되는 것이 있다. AEM 내에서 제품 정보를 사용자 정의할 수 없습니다. 표준 템플릿(사이트에 대해 정의됨)이 사용됩니다.
+그러나, 상충되는 것이 있다. 표준 템플릿(사이트에 대해 정의됨)이 사용되므로 AEM 내에서 제품 정보를 사용자 정의할 수 없습니다.
 
 >[!NOTE]
 >
@@ -574,7 +574,7 @@ AEM에서 프로모션도 [Campaign Management](/help/sites-authoring/personaliz
 
 >[!NOTE]
 >
->[hybris 프로모션](https://www.hybris.com/modules/promotion) 및 [hybris 바우처](https://www.hybris.com/en/modules/voucher) 장바구니에 영향을 주고 가격과 관련된 모든 항목을 다룹니다. 프로모션별 마케팅 콘텐츠(배너 등) 은 hybris 프로모션의 일부가 아닙니다.
+>[hybris 프로모션](https://www.hybris.com/modules/promotion) 및 [hybris 바우처](https://www.hybris.com/en/modules/voucher) 장바구니에 영향을 주고 가격과 관련된 모든 항목을 다룹니다. 프로모션별 마케팅 콘텐츠 (배너 등) 은 hybris 프로모션의 일부가 아닙니다.
 
 ## 개인화 {#personalization}
 

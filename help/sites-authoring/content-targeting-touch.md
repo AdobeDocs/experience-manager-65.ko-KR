@@ -11,9 +11,9 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5388'
+source-wordcount: '5385'
 ht-degree: 95%
 
 ---
@@ -93,7 +93,7 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 
    >[!NOTE]
    >
-   >새 활동을 생성하고 페이지 또는 그 상위 항목 중 하나에 연결된 Adobe Target 클라우드 구성이 있으면 AEM은 자동으로 Adobe Target을 엔진으로 가정합니다.
+   >활동을 만들고 페이지 또는 그 상위 항목 중 하나에 연결된 Adobe Target 클라우드 구성이 있으면 AEM은 자동으로 Adobe Target을 엔진으로 가정합니다.
 
 1. **타겟팅** 엔진 드롭다운 메뉴에서 타겟팅 엔진을 선택합니다.
 
@@ -440,7 +440,7 @@ A/B 테스트 활동이 있는 경우, 대상자는 왼쪽에 있고 각 경험�
 
 ## 목표 및 설정: 활동 및 설정 목표 구성 {#goals-settings-configuring-the-activity-and-setting-goals}
 
-[타겟팅 프로세스](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)의 목표 및 설정 단계에는 브랜드 활동의 행동을 구성하는 작업이 포함되어 있습니다. 활동 시작 및 종료 시기와 활동 우선 순위를 지정합니다. 또한 목표도 추적합니다. 특히, 활동과 관련하여 측정할 항목을 결정할 수 있습니다.
+[타겟팅 프로세스](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)의 목표 및 설정 단계에는 브랜드 활동의 행동을 구성하는 작업이 포함되어 있습니다. 활동의 시작 및 종료 시점과 활동 우선 순위를 지정합니다. 또한 목표도 추적합니다. 특히, 활동과 관련하여 측정할 항목을 결정할 수 있습니다.
 
 목표 지표는 타겟팅 엔진으로 Adobe Target을 사용하는 경우에만 사용할 수 있습니다. 하나 이상의 목표 지표를 정의해야 합니다. Adobe Analytics가 구성되어 있고 A4T Analytics 클라우드 구성이 있는 경우, 보고 소스를 Adobe Target으로 할지 또는 Adobe Analytics으로 할지를 선택할 수 있습니다.
 

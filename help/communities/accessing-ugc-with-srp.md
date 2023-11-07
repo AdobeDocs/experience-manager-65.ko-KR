@@ -1,19 +1,15 @@
 ---
 title: SRP를 사용하여 UGC에 액세스
-seo-title: Accessing UGC with SRP
 description: 사이트가 ASRP 또는 MSRP를 사용하도록 구성된 경우 실제 UGC는 AEM 노드 저장소(JCR)에 저장되지 않습니다
-seo-description: When a site is configured to use ASRP or MSRP, the actual UGC is not be stored in AEM's node store (JCR)
-uuid: 30549f93-e370-4b8b-a35a-69e05884227e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 72d4022c-43ba-49e0-b94c-f2beabaef64d
 docset: aem65
 exl-id: 1157366f-2cc5-46e4-8ec6-e66fe5d0a0f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -67,7 +63,7 @@ JCR과 관련된 메서드는 피해야 합니다.
 
 ### 검색 컬렉션 사용 {#use-search-collections}
 
-SRP마다 기본 쿼리 언어가 다를 수 있습니다. 의 메서드를 사용하는 것이 좋습니다. [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) 적절한 쿼리 언어를 실행하는 패키지입니다.
+SRP마다 기본 쿼리 언어가 다를 수 있습니다. 에서 메서드 사용 [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) 적절한 쿼리 언어를 실행하는 패키지입니다.
 
 자세한 내용은 [Essentials 검색](/help/communities/search-implementation.md).
 

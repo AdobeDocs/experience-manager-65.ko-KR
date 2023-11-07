@@ -8,10 +8,10 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3389'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -528,7 +528,7 @@ CRXDE Lite을 사용하여 복제 에이전트의 다양한 매개 변수를 구
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-   여기에서 다음 작업을 수행할 수 있습니다.
+   여기서 다음과 같은 작업을 수행할 수 있습니다.
 
    * 에이전트가 활성화되었는지 확인합니다.
    * 복제 타겟을 참조하십시오.

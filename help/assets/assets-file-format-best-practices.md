@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%
@@ -20,13 +20,13 @@ ht-degree: 1%
 
 >[!TIP]
 >
->을 사용하는 경우 [!DNL Experience Manager] 대량의 PSD 또는 PSB 파일을 처리하려는 경우 Adobe Managed Services(AMS)에서 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 담당자와 협력하여 AMS 배포에 이러한 모범 사례를 구현하고 Adobe의 고유 형식에 가장 적합한 도구와 모델을 선택하십시오. [!DNL Experience Manager] 은 x 23000 픽셀보다 30000픽셀 이상 높은 해상도의 PSB 파일을 처리하지 못할 수 있습니다.
+>을 사용하는 경우 [!DNL Experience Manager] Managed Services(AMS) Adobe에서 많은 대용량 PSD 또는 PSB 파일을 처리할 계획인 경우 고객 지원 Adobe에 문의하십시오. Adobe 고객 지원 담당자와 협력하여 AMS 배포에 이러한 모범 사례를 구현하고 Adobe의 고유 형식에 가장 적합한 도구와 모델을 선택하십시오. [!DNL Experience Manager] 은 x 23000 픽셀보다 30000픽셀 이상 높은 해상도의 PSB 파일을 처리하지 못할 수 있습니다.
 
 ## [!DNL Adobe Camera Raw] 라이브러리 {#adobe-camera-raw-library}
 
 최적의 성능을 위해 Adobe은 다음을 권장합니다. [!DNL Adobe Camera Raw] RAW 및 DNG 파일용 라이브러리.
 
-[!DNL Adobe Camera Raw] 라이브러리는 CMYK 색상 프로파일을 입력으로 지원합니다. 그러나 RGB 색상 공간에서 출력을 생성하고 JPEG 형식으로만 출력을 지원합니다. 소스 파일 색상 공간(예: CMYK)은 썸네일에서 유지되지 않습니다.
+[!DNL Adobe Camera Raw] 라이브러리는 CMYK 색상 프로파일을 입력으로 지원합니다. 그러나 RGB 색상 공간에서 출력을 생성하고 JPEG 형식으로만 출력을 지원합니다. 썸네일의 소스 파일 색상 공간(예: CMYK)은 유지하지 않습니다.
 
 자세한 내용은 [Camera Raw 지원](/help/assets/camera-raw.md).
 

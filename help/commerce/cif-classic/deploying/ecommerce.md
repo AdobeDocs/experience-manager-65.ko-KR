@@ -3,9 +3,9 @@ title: eCommerce 개요
 description: AEM 일반 eCommerce는 표준 설치의 일부로 사용할 수 있으며 eCommerce 프레임워크의 전체 기능을 제공합니다.
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Adobe은 Commerce Integration Framework의 두 가지 버전을 제공합니다.
 
 ## 다른 구현 배포 {#deploying-other-implementations}
 
-AEM 및 Adobe Commerce의 경우 다음을 참조하십시오 [AEM과 Adobe Commerce 통합](/help/commerce/cif/integrating/magento.md) 사용 [Commerce integration framework](/help/commerce/cif/introduction.md).
+AEM 및 Adobe Commerce의 경우 [AEM과 Adobe Commerce 통합](/help/commerce/cif/integrating/magento.md) 사용 [Commerce integration framework](/help/commerce/cif/introduction.md).
 
 >[!NOTE]
 >

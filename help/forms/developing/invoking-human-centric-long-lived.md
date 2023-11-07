@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 role: Developer
 exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3699'
+source-wordcount: '3695'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
  </LoanApp>
 ```
 
-프로세스에 전달된 XML 데이터는 프로세스에 사용된 양식에 있는 필드와 일치해야 합니다. 그렇지 않으면 양식 내에 데이터가 표시되지 않습니다. 를 호출하는 모든 응용 프로그램 `FirstAppSolution/PreLoanProcess` 프로세스는 이 XML 데이터 소스를 전달해야 합니다. 에서 생성된 애플리케이션 *인간 중심의 장기 프로세스 호출* 사용자가 웹 클라이언트에 입력한 값에서 XML 데이터 소스를 동적으로 만듭니다.
+프로세스에 전달된 XML 데이터는 프로세스에 사용된 양식의 필드와 일치해야 합니다. 그렇지 않으면 양식 내에 데이터가 표시되지 않습니다. 를 호출하는 모든 응용 프로그램 `FirstAppSolution/PreLoanProcess` 프로세스는 이 XML 데이터 소스를 전달해야 합니다. 에서 생성된 애플리케이션 *인간 중심의 장기 프로세스 호출* 사용자가 웹 클라이언트에 입력한 값에서 XML 데이터 소스를 동적으로 만듭니다.
 
 클라이언트 응용 프로그램을 사용하여 *FirstAppSolution/사전 대출 프로세스* 필요한 XML 데이터를 처리합니다. 장기 프로세스는 호출 식별자 값을 반환 값으로 반환합니다. 다음 그림은*FirstAppSolution/PreLoanProcess 장기 프로세스를 호출하는 클라이언트 응용 프로그램을 보여 줍니다. 클라이언트 애플리케이션은 XML 데이터를 전송하고 호출 식별자 값을 나타내는 문자열 값을 다시 가져옵니다.
 
@@ -215,7 +215,7 @@ Java 서블릿은 다음 작업을 수행합니다.
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -321,7 +321,7 @@ Java 서블릿은 다음 작업을 수행합니다.
                  DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
                  DocumentBuilder builder = factory.newDocumentBuilder();
  
-                 //Create a new Document object
+                 //Create a Document object
                  document = builder.newDocument();
  
                  //Create MortgageApp - the root element in the XML
@@ -447,7 +447,7 @@ AEM Forms이 배포되는 J2EE 응용 프로그램 서버에 WAR 파일을 배�
 
 * http://localhost:8080/PreLoanProcess/index.html
 
-   HTML 양식 필드에 값을 입력하고 애플리케이션 제출 버튼을 클릭합니다. 문제가 발생하면 J2EE 애플리케이션 서버의 로그 파일을 참조하십시오.
+  HTML 양식 필드에 값을 입력하고 애플리케이션 제출 버튼을 클릭합니다. 문제가 발생하면 J2EE 애플리케이션 서버의 로그 파일을 참조하십시오.
 
 >[!NOTE]
 >
@@ -518,7 +518,7 @@ Microsoft .NET C# ASP.NET 웹 응용 프로그램을 만듭니다. 다음 그림
 
 ### FirstAppSolution/PreLoanProcess를 호출하는 ASP 페이지를 만듭니다. {#create-an-asp-page-that-invokes-firstappsolution-preloanprocess}
 
-ASP.NET 프로젝트 내에서 대출 신청자에게 HTML 페이지 표시를 담당하는 웹 양식(ASPX 파일)을 추가합니다. 웹 폼은 `System.Web.UI.Page`. 를 호출하는 C# 응용 프로그램 논리 `FirstAppSolution/PreLoanProcess` 은(는)에 있습니다. `Button1_Click` 메서드(이 단추는 [애플리케이션 제출] 단추를 나타냅니다.)
+ASP.NET 프로젝트 내에서 대출 신청자에게 HTML 페이지 표시를 담당하는 웹 양식(ASPX 파일)을 추가합니다. 웹 폼은 `System.Web.UI.Page`. 를 호출하는 C# 응용 프로그램 논리 `FirstAppSolution/PreLoanProcess` 다음에 있음 `Button1_Click` 메서드(이 단추는 [애플리케이션 제출] 단추를 나타냅니다.)
 
 다음 그림은 ASP.NET 응용 프로그램을 보여 줍니다
 
@@ -559,7 +559,7 @@ ASP.NET 프로젝트 내에서 대출 신청자에게 HTML 페이지 표시를 �
  </tbody>
 </table>
 
-ASP.NET 응용 프로그램의 일부인 응용 프로그램 논리는에 전달할 XML 데이터 소스를 동적으로 만들어야 합니다. `FirstAppSolution/PreLoanProcess` 프로세스. 지원자가 HTML 페이지에 입력한 값은 XML 데이터 소스 내에 지정해야 합니다. 이러한 데이터 값은 Workspace에서 양식을 볼 때 양식에 병합됩니다. 에 있는 클래스 `System.Xml` 네임스페이스는 XML 데이터 소스를 만드는 데 사용됩니다.
+ASP.NET 응용 프로그램의 일부인 응용 프로그램 논리는에 전달할 XML 데이터 소스를 동적으로 만들어야 합니다. `FirstAppSolution/PreLoanProcess` 프로세스. 지원자가 HTML 페이지에 입력한 값은 XML 데이터 소스 내에 지정해야 합니다. 이러한 데이터 값은 Workspace에서 양식을 볼 때 양식에 병합됩니다. 의 클래스 `System.Xml` 네임스페이스는 XML 데이터 소스를 만드는 데 사용됩니다.
 
 ASP.NET 응용 프로그램에서 XML 데이터가 필요한 프로세스를 호출할 때 사용할 수 있는 XML 데이터 형식을 사용할 수 있습니다. 즉, 를 전달할 수 없습니다. `System.Xml.XmlDocument` 인스턴스를 프로세스에 추가합니다. 프로세스에 전달할 이 XML 인스턴스의 정규화된 이름은 입니다. `InvokePreLoanProcess.PreLoanProcess.XML`. 변환 `System.Xml.XmlDocument` 인스턴스 대상 `InvokePreLoanProcess.PreLoanProcess.XML`. 다음 코드를 사용하여 이 작업을 수행할 수 있습니다.
 
@@ -815,7 +815,7 @@ ASP.NET 응용 프로그램에서 XML 데이터가 필요한 프로세스를 호
 
 >[!NOTE]
 >
->getJobDescription 사용자 정의 메서드에 있는 값은 Job Manager 서비스에서 반환한 값에 해당합니다.
+>getJobDescription 사용자 정의 메소드의 값은 Job Manager 서비스에서 반환한 값에 해당합니다.
 
 ### ASP.NET 응용 프로그램 실행 {#run-the-asp-net-application}
 

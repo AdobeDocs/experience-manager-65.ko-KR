@@ -13,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7792'
+source-wordcount: '7791'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Dynamic Media-Hybrid를 사용하도록 활성화하고 구성해야 합니다. 
 
 >[!NOTE]
 >
->개발, 스테이징 및 라이브 프로덕션용 환경 등 서로 다른 환경에 대해 설정된 Adobe Experience Manager을 사용하는 경우 각 환경에 대해 Dynamic Media Cloud Services을 구성합니다.
+>개발, 스테이징 및 라이브 프로덕션용 환경 등 서로 다른 환경에 대해 설정된 Adobe Experience Manager을 사용하는 경우 각 환경에 대해 Dynamic Media Cloud Service을 구성합니다.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Dynamic Media의 고객인 경우 모든 Dynamic Media 컨텐츠에 대한 게�
    <td>
     <ol>
      <li>Experience Manager <strong>작성자</strong> 노드, <a href="#enabling-dynamic-media">Dynamic Media 활성화</a>.</li>
-     <li>에서 이미징 구성 <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services</a>.</li>
+     <li>에서 이미징 구성 <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Service</a>.</li>
      <li><a href="#configuring-image-replication">이미지 복제 구성</a>.</li>
      <li><a href="#replicating-catalog-settings">카탈로그 설정 복제</a>.</li>
      <li><a href="#replicating-viewer-presets">뷰어 사전 설정 복제</a>.</li>
@@ -113,7 +113,7 @@ Dynamic Media의 고객인 경우 모든 Dynamic Media 컨텐츠에 대한 게�
     <ol>
      <li>Experience Manager <strong>작성자</strong> 노드, <a href="#enabling-dynamic-media">Dynamic Media 활성화</a>.</li>
      <li>Experience Manager <strong>게시</strong> 노드, <a href="#enabling-dynamic-media">Dynamic Media 활성화</a> 게시 인스턴스는 비디오 포스터 이미지를 제공하고 비디오 재생을 위한 메타데이터를 제공합니다.</li>
-     <li>에서 비디오 구성 <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services.</a></li>
+     <li>에서 비디오 구성 <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Service.</a></li>
      <li><a href="#replicating-viewer-presets">뷰어 사전 설정 복제</a>.</li>
      <li>설정 <a href="#setting-up-asset-filters-for-video-only-deployments">비디오 전용 자산 필터</a>.</li>
      <li><a href="#delivering-assets">자산을 제공합니다.</a></li>
@@ -125,8 +125,8 @@ Dynamic Media의 고객인 경우 모든 Dynamic Media 컨텐츠에 대한 게�
    <td>
     <ol>
      <li>Experience Manager <strong>작성자</strong> 노드, <a href="#enabling-dynamic-media">Dynamic Media 활성화</a>.</li>
-     <li>에서 비디오 구성 <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services.</a></li>
-     <li>에서 이미징 구성 <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services.</a></li>
+     <li>에서 비디오 구성 <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Service.</a></li>
+     <li>에서 이미징 구성 <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Service.</a></li>
      <li><a href="#configuring-image-replication">이미지 복제 구성</a>.</li>
      <li><a href="#replicating-catalog-settings">카탈로그 설정 복제</a>.</li>
      <li><a href="#replicating-viewer-presets">뷰어 사전 설정 복제</a>.</li>
@@ -180,10 +180,11 @@ Dynamic Media을 활성화하려면 명령줄 또는 빠른 시작 파일 이름
    >Dynamic Media과 관련된 문제를 해결하려면 다음 로그에서 참조하십시오. `crx-quickstart/logs/` 디렉터리:
    >
    >* ImageServer-&lt;portid>-&lt;yyyy>&lt;mm>&lt;dd>.log - ImageServer 로그는 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
-
+   >
    이미지 서버 로그 파일 이름의 예: `ImageServer-57346-2020-07-25.log`
+   >
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access 로그는 다음을 통해 Dynamic Media에 대한 각 요청을 기록합니다. `/is/image` 및 `/is/content`.
-
+   >
    이러한 로그는 Dynamic Media이 활성화된 경우에만 사용됩니다. 이 변수는에 포함되지 않습니다. **전체 다운로드** 에서 생성된 패키지 `system/console/status-Bundlelist` 페이지, Dynamic Media 문제가 있는 경우 고객 지원 센터를 호출할 때 이 두 로그를 문제에 추가합니다.
 
 ### 다른 포트 또는 컨텍스트 경로에 Experience Manager을 설치한 경우... {#if-you-installed-aem-to-a-different-port-or-context-path}
@@ -202,6 +203,7 @@ Experience Manager:
 Experience Manager QuickStart WAR 배포에서 포트 번호와 컨텍스트 경로를 파생할 수 없으므로 **자기 도메인**. 다음을 참조하십시오 [Externalizer 설명서](/help/sites-developing/externalizer.md) 을(를) 구성하는 방법 **자기 도메인**.
 
 >[!NOTE]
+>
 다음에서 [Experience Manager 빠른 시작 독립형 배포](/help/sites-deploying/deploy.md), a **자기 도메인** 일반적으로 포트 번호 및 컨텍스트 경로는 자동으로 구성할 수 있으므로 구성할 필요가 없습니다. 그러나 모든 네트워크 인터페이스가 꺼져 있으면 **자기 도메인**.
 
 ## Dynamic Media 비활성화  {#disabling-dynamic-media}
@@ -223,7 +225,9 @@ Dynamic Media을 활성화한 후 비활성화하려면 다음을 제거합니�
 1. 요청 `https://localhost:4502/is/image`. Dynamic Media이 비활성화되었다는 메시지가 표시됩니다.
 
    >[!NOTE]
+   >
    Dynamic Media 실행 모드가 비활성화되면 다음을 생성하는 워크플로 단계 `cqdam.pyramid.tiff` 렌디션은 자동으로 건너뜁니다. 동적 렌디션 지원 및 기타 Dynamic Media 기능도 비활성화됩니다.
+   >
    또한 Experience Manager 서버를 구성한 후 Dynamic Media 실행 모드가 비활성화되면 해당 실행 모드에 따라 업로드된 모든 자산이 유효하지 않게 됩니다.
 
 ## (선택 사항) Dynamic Media 사전 설정 및 구성을 6.3에서 6.5 Zero Downtime으로 마이그레이션 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
@@ -231,6 +235,7 @@ Dynamic Media을 활성화한 후 비활성화하려면 다음을 제거합니�
 Experience Manager - Dynamic Media을 6.3에서 6.5로 업그레이드하는 경우(이제 가동 중지 시간 없이 배포 가능 기능이 포함됨) 다음 curl 명령을 실행해야 합니다. 이 명령은에서 모든 사전 설정 및 구성을 마이그레이션합니다. `/etc` 끝 `/conf` CRXDE Lite.
 
 >[!NOTE]
+>
 호환성 모드에서 Experience Manager 인스턴스를 실행하는 경우(즉, 호환성 패키지가 설치되어 있는 경우) 이러한 명령을 실행할 필요가 없습니다.
 
 호환성 패키지가 있거나 없는 모든 업그레이드의 경우 다음 Linux® curl 명령을 실행하여 원래 Dynamic Media과 함께 제공된 기본 즉시 사용 가능한 뷰어 사전 설정을 복사할 수 있습니다.
@@ -255,9 +260,13 @@ Dynamic Media 이미지 게재는 Experience Manager 작성자로부터 비디�
 복제 에이전트를 구성한 후 다음을 수행해야 합니다. [성공적으로 설정되었는지 확인 및 테스트](#validating-the-replication-agent-for-dynamic-media). 이 섹션에서는 이러한 절차에 대해 설명합니다.
 
 >[!NOTE]
+>
 PTIFF 작성에 대한 기본 메모리 제한은 모든 워크플로우에서 3GB입니다. 예를 들어, 다른 워크플로우가 일시 중지된 동안 3GB의 메모리가 필요한 이미지 하나를 처리하거나, 각각 300MB의 메모리가 필요한 10개의 이미지를 동시에 처리할 수 있습니다.
+>
 메모리 제한은 구성이 가능하며 시스템 리소스 가용성과 처리 중인 이미지 콘텐츠 유형에 맞춥니다. 큰 에셋이 많고 시스템에 메모리가 충분한 경우 이미지가 병렬로 처리되도록 이 제한을 늘릴 수 있습니다.
+>
 최대 메모리 제한보다 많은 메모리가 필요한 이미지가 거부되었습니다.
+>
 PTIFF 작성에 대한 메모리 제한을 변경하려면 다음 위치로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]** > **[!UICONTROL Adobe CQ Scene7 PTifManager]** 및 변경 **[!UICONTROL maxMemory]** 값.
 
 ### 인증 설정 {#setting-up-authentication}
@@ -281,6 +290,7 @@ Dynamic Media 이미지 게재 서비스에 이미지를 복제할 수 있도록
 1. 암호를 입력하고 **[!UICONTROL KeyStore 액세스 암호 설정]** 대화 상자.
 
    >[!NOTE]
+   >
    나중에 복제 에이전트를 구성할 때 암호를 다시 입력해야 하므로 암호를 기억하십시오.
 
    ![chlimage_1-508](assets/chlimage_1-508.png)
@@ -339,11 +349,12 @@ Replication test succeeded
 ```
 
 >[!NOTE]
+>
 다음 중 하나를 수행하여 확인할 수도 있습니다.
+>
 * 복제 로그에서 자산이 복제되었는지 확인합니다.
 * 이미지를 게시합니다. 이미지를 선택하고 **[!UICONTROL 뷰어]** 드롭다운 메뉴에서 뷰어 사전 설정을 선택합니다. 선택 **[!UICONTROL URL]**. 이미지가 표시되는지 확인하려면 브라우저에서 URL 경로를 복사하여 붙여넣습니다.
 >
-
 
 ### 인증 문제 해결 {#troubleshooting-authentication}
 
@@ -480,7 +491,7 @@ Adobe은 구성의 전체적인 테스트를 수행할 것을 권장합니다.
 이 테스트를 시작하기 전에 다음을 이미 수행했는지 확인하십시오.
 
 * 이미지 사전 설정을 추가했습니다.
-* 구성 **[!UICONTROL Dynamic Media 구성(6.3 이전)]** Cloud Services 아래에 있습니다. 이 테스트에는 이미지 서비스 URL이 필요합니다.
+* 구성 **[!UICONTROL Dynamic Media 구성(6.3 이전)]** Cloud Service 아래에 있습니다. 이 테스트에는 이미지 서비스 URL이 필요합니다.
 
 **구성을 테스트하려면:**
 
@@ -497,18 +508,19 @@ Adobe은 구성의 전체적인 테스트를 수행할 것을 권장합니다.
 
 자산이 전달되었는지 테스트하는 또 다른 방법은 req=exists 를 URL에 추가하는 것입니다.
 
-## Dynamic Media Cloud Services 구성 {#configuring-dynamic-media-cloud-services}
+## Dynamic Media Cloud Service 구성 {#configuring-dynamic-media-cloud-services}
 
 Dynamic Media Cloud Service은 특히 이미지와 비디오, 비디오 분석 및 비디오 인코딩의 하이브리드 게시 및 전달을 지원합니다.
 
 구성의 일부로, 등록 ID, 비디오 서비스 URL, 이미지 서비스 URL, 복제 서비스 URL을 입력하고 인증을 설정해야 합니다. 이 정보는 계정 프로비저닝 프로세스의 일부로 이메일로 전송되었습니다. 이 정보를 받지 못한 경우 Adobe Experience Manager 관리자 또는 Adobe 고객 지원 센터에 문의하여 정보를 얻으십시오.
 
 >[!NOTE]
-Dynamic Media Cloud Services을 설정하기 전에 게시 인스턴스를 설정해야 합니다. 또한 Dynamic Media Cloud Services을 구성하기 전에 복제를 설정해야 합니다.
+>
+Dynamic Media Cloud Service을 설정하기 전에 게시 인스턴스를 설정해야 합니다. 또한 Dynamic Media Cloud Service을 구성하기 전에 복제를 설정해야 합니다.
 
-**Dynamic Media Cloud Services을 구성하려면:**
+**Dynamic Media Cloud Service을 구성하려면:**
 
-1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media 구성(6.3 이전)]**.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Dynamic Media 구성(6.3 이전)]**.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 을(를) 선택합니다 **[!UICONTROL 글로벌]**&#x200B;을 선택한 다음 을 선택합니다. **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL Dynamic Media 구성 만들기]** 대화 상자의 제목 필드에 제목을 입력합니다.
 1. 비디오용 Dynamic Media을 구성하는 경우,
@@ -563,34 +575,35 @@ Dynamic Media Hybrid를 사용하여 여러 Experience Manager 설치 간에 비
    * **JCR을 통해 Video Analytics 사전 설정 확인**
 JCR을 통해 Video Analytics 사전 설정을 확인하려면 CRXDE Lite에 대한 액세스 권한이 있어야 합니다.
 
-      Experience Manager - CRXDE Lite에서 `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
+     Experience Manager - CRXDE Lite에서 `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
-      에서와 같이 `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
+     에서와 같이 `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
 
-      작성자 노드의 CRXDE Lite에 대한 액세스 권한이 없는 경우 게시 서버를 통해 사전 설정을 확인할 수 있습니다.
+     작성자 노드의 CRXDE Lite에 대한 액세스 권한이 없는 경우 게시 서버를 통해 사전 설정을 확인할 수 있습니다.
 
    * **이미지 서버를 통해 Video Analytics 사전 설정 확인**
 
-      이미지 서버 req=userdata 요청을 하여 Video Analytics 사전 설정의 유효성을 직접 확인할 수 있습니다.
+     이미지 서버 req=userdata 요청을 하여 Video Analytics 사전 설정의 유효성을 직접 확인할 수 있습니다.
 예를 들어 작성자 노드에서 Analytics 사전 설정을 보려면 다음 요청을 수행할 수 있습니다.
 
-      `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
+     `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
-      게시 서버에 있는 사전 설정의 유효성을 검사하기 위해 게시 서버에 유사한 직접 요청을 할 수 있습니다. 응답은 Author 및 Publish 노드에서 동일합니다. 응답은 다음과 유사합니다.
+     게시 서버에 있는 사전 설정의 유효성을 검사하기 위해 게시 서버에 유사한 직접 요청을 할 수 있습니다. 응답은 Author 및 Publish 노드에서 동일합니다. 응답은 다음과 유사합니다.
 
-      ```
-      marketingCloudOrgId=0FC4E86B573F99CC7F000101
-       reportSuite=aemaem6397618-2018-05-23
-       trackingNamespace=aemvideodal
-       trackingServer=aemvideodal.d2.sc.omtrdc.net
-      ```
+     ```
+     marketingCloudOrgId=0FC4E86B573F99CC7F000101
+      reportSuite=aemaem6397618-2018-05-23
+      trackingNamespace=aemvideodal
+      trackingServer=aemvideodal.d2.sc.omtrdc.net
+     ```
 
    * **Experience Manager의 비디오 보고 도구를 통해 비디오 분석 사전 설정 확인**
 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 비디오 보고]**
 
-      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
+     `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
-      다음 오류 메시지가 표시되면 보고서 세트를 사용할 수 있지만 채워지지 않은 것입니다. 시스템이 데이터를 수집하기 전에 새 설치에서 이 오류는 올바르고 원하는 것입니다.
+     다음 오류 메시지가 표시되면 보고서 세트를 사용할 수 있지만 채워지지 않은 것입니다. 시스템이 데이터를 수집하기 전에 새 설치에서 이 오류는 올바르고 원하는 것입니다.
+
    ![screen_shot_2018-05-23at52254pm](assets/screen_shot_2018-05-23at52254pm.png)
 
    보고 데이터를 생성하려면 비디오 하나를 업로드하고 게시하십시오. 사용 **[!UICONTROL URL 복사]** 비디오를 한 번 이상 실행합니다.
@@ -643,6 +656,7 @@ JCR을 통해 설정 프로세스의 일부로 자체 기본 카탈로그 설정
 다음을 참조하십시오 [뷰어 사전 설정 게시](/help/assets/managing-viewer-presets.md#publishing-viewer-presets) 추가 정보.
 
 >[!NOTE]
+>
 기본적으로 를 선택하면 다양한 렌디션이 표시됩니다 **[!UICONTROL 표현물]** 을 선택할 때 다양한 뷰어 사전 설정 **[!UICONTROL 뷰어]** 를 클릭합니다. 표시되는 수를 늘리거나 줄일 수 있습니다. 다음을 참조하십시오 [표시되는 이미지 사전 설정 수 늘리기](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수 늘리기](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 ## 복제할 자산 필터링 {#filtering-assets-for-replication}
@@ -705,6 +719,7 @@ Dynamic Media이 아닌 배포에서는 다음을 복제할 수 있습니다 *�
 </table>
 
 >[!NOTE]
+>
 필터는 MIME 유형에 적용되며 경로별로 지정할 수 없습니다.
 
 ### 비디오 전용 배포용 자산 필터 설정 {#setting-up-asset-filters-for-video-only-deployments}
@@ -746,7 +761,9 @@ Dynamic Media이 아닌 배포에서는 다음을 복제할 수 있습니다 *�
 이러한 단계는 이미지를 비프로덕션 환경에 게재하도록 Experience Manager 게시 인스턴스를 설정합니다. 원본 이미지 및 정적 변환은 게시 인스턴스에 필요하지 않으므로 복제에서 제외됩니다.
 
 >[!NOTE]
+>
 작성자에 여러 필터가 있는 경우 각 에이전트에는 서로 다른 사용자가 할당되어야 합니다. granite 코드는 사용자당 하나의 필터 모델을 적용합니다. 필터 설정마다 항상 다른 사용자가 있어야 합니다.
+>
 서버에서 필터를 두 개 이상 사용하고 있습니까? 예를 들어 게시할 복제에 대한 한 개의 필터와 s7delivery에 대한 두 번째 필터입니다. 그렇다면 이 두 필터에 다른 값이 있는지 확인해야 합니다 **userId** 에서 할당됨 `jcr:content` 노드. 다음 이미지를 참조하십시오.
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
@@ -797,6 +814,7 @@ Dynamic Media이 아닌 배포에서는 다음을 복제할 수 있습니다 *�
 Dynamic Media 이미지 서버 구성에는 Adobe CQ Scene7 ImageServer 번들 및 Adobe CQ Scene7 PlatformServer 번들 편집이 포함됩니다.
 
 >[!NOTE]
+>
 Dynamic Media은 즉시 사용 가능합니다 [활성화한 후](#enabling-dynamic-media). 그러나 선택적으로 특정 사양 또는 요구 사항을 충족하도록 Dynamic Media 이미지 서버를 구성하여 설치를 미세 조정할 수 있습니다.
 
 **전제 조건** - *다음 이전* Dynamic Media 이미지 서버를 구성하고, Windows®의 VM에 Microsoft® Visual C++ Libraries가 설치되어 있는지 확인합니다. 라이브러리는 Dynamic Media 이미지 서버를 실행하는 데 필요합니다. 다음을 수행할 수 있습니다. [여기에서 Microsoft® Visual C++ 2010 재배포 가능 패키지(x64)를 다운로드하십시오.](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
@@ -815,9 +833,10 @@ Dynamic Media 이미지 서버 설정을 구성하려면 다음 작업을 수행
 1. Adobe CQ Scene7 ImageServer 대화 상자에서 다음 구성 값을 설정합니다.
 
    >[!NOTE]
+   >
    일반적으로 기본값을 변경할 필요가 없습니다. 그러나 기본값을 변경하는 경우 변경 사항을 적용하려면 번들을 다시 시작해야 합니다.
 
-   | 속성 | 기본값 | 설명 |
+   | 속성 | 기본 값 | 설명 |
    | --- | --- | --- |
    | `TcpPort.name` | *`empty`* | ImageServer 프로세스와의 통신에 사용할 포트 번호입니다. 기본적으로 사용 가능한 포트는 자동으로 검색됩니다. |
    | `AllowRemoteAccess.name` | *`empty`* | ImageServer 프로세스에 대한 원격 액세스를 허용하거나 허용하지 않습니다. false인 경우 이미지 서버는 localhost에서만 수신합니다.<br> localhost를 가리키는 기본 외부화 설정은 특정 VM 인스턴스의 실제 도메인 또는 IP 주소를 지정해야 합니다. 그 이유는 localhost가 VM의 상위 시스템을 가리키기 때문입니다.<br>VM의 도메인 또는 IP 주소에는 자체적으로 해결할 수 있도록 호스트 파일 항목이 있어야 합니다. |
@@ -831,9 +850,10 @@ Dynamic Media 이미지 서버 설정을 구성하려면 다음 작업을 수행
 1. Adobe CQ Scene7 PlatformServer 대화 상자에서 다음 기본값 옵션을 설정합니다.
 
    >[!NOTE]
+   >
    Dynamic Media 이미지 서버는 자체 디스크 캐시를 사용하여 응답을 캐시합니다. Experience Manager HTTP 캐시와 Dispatcher를 사용하여 Dynamic Media 이미지 서버의 응답을 캐시할 수 없습니다.
 
-   | 속성 | 기본값 | 설명 |
+   | 속성 | 기본 값 | 설명 |
    |---|---|---|
    | 캐시 활성화됨 | 선택됨 | 응답 캐시의 사용 여부 |
    | 캐시 루트 | cache | 응답 캐시 폴더에 대한 하나 이상의 경로. 상대 경로는 내부 s7imaging 번들 폴더에 대해 확인됩니다. |
@@ -860,7 +880,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면 다음 작업을 수행
 
 매니페스트 설정 표 및 그 기본값:
 
-| 속성 | 기본값 | 설명 |
+| 속성 | 기본 값 | 설명 |
 | --- | --- | --- |
 | `bkgcolor` | `FFFFFF` | 기본 배경색. 실제 이미지 데이터를 포함하지 않는 응답 이미지의 영역을 채우는 데 사용되는 RGB 값입니다. 참조: [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api) 이미지 제공 API에서. |
 | `defaultpix` | `300,300` | 기본 보기 크기. 요청에서 wid=, hei= 또는 scl=을 사용하여 보기 크기를 명시적으로 지정하지 않을 경우, 서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다.<br>2개의 정수(0 이상)로 지정되며 쉼표로 구분됩니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다. 중첩/포함된 요청에는 적용되지 않습니다.<br>참조: [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) 이미지 제공 API에서.<br>그러나 일반적으로 뷰어 사전 설정이나 이미지 사전 설정을 사용하여 에셋을 전달합니다. Defaultpix는 뷰어 사전 설정 또는 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다. |
@@ -889,6 +909,7 @@ CMYK, RGB 또는 회색 출력을 사용하여 Dynamic Media 색상 관리를 �
 * `iccEmbed` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
+>
 표준 Adobe 색상 프로파일 세트는 다음을 보유한 경우에만 사용할 수 있습니다. [소프트웨어 배포의 기능 팩 12445](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) 설치됨. 모든 기능 팩 및 서비스 팩은 다음 위치에서 사용할 수 있습니다. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). 기능 팩 12445은 Adobe의 색상 프로파일을 제공합니다.
 
 
@@ -990,6 +1011,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 을 12445.
 </table>
 
 >[!NOTE]
+>
 속성 이름은 대/소문자를 구분하며 모두 소문자여야 합니다.
 
 **색상 프로파일 테이블**

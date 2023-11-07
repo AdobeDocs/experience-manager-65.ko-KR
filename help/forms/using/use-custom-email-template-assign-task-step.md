@@ -8,9 +8,9 @@ topic-tags: publish
 discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
 docset: aem65
 exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '521'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ![즉시 사용 가능한 템플릿을 사용한 이메일 알림](do-not-localize/default_email_template_new.png)
 
-모양을 사용자 지정하고 이메일 알림에서 사용자 지정 메타데이터를 사용할 수 있습니다. AEM Forms에서는 이메일 알림에 대한 기본 제공 템플릿을 제공합니다. 기본 제공 템플릿을 사용자 정의하거나 처음부터 새 템플릿을 만들 수 있습니다.
+모양을 사용자 지정하고 이메일 알림에서 사용자 지정 메타데이터를 사용할 수 있습니다. AEM Forms에서는 이메일 알림에 대한 기본 제공 템플릿을 제공합니다. 기본 제공 템플릿을 사용자 정의하거나 템플릿을 처음부터 만들 수 있습니다.
 
 이메일 알림 템플릿은 다음을 기반으로 합니다 [HTML 이메일](https://en.wikipedia.org/wiki/HTML_email). 이러한 이메일은 다양한 이메일 클라이언트와 화면 크기에 맞게 조정됩니다. 또한 이메일 스타일이 템플릿 내에서 정의됩니다.
 
@@ -57,7 +57,7 @@ AEM Forms에서는 이메일 알림용 템플릿을 기본적으로 제공합니
 
 1. 사용자 지정 HTML 코드를 파일에 추가합니다.
 
-   이메일 알림 템플릿은 [HTML 이메일](https://en.wikipedia.org/wiki/HTML_email). 사용자 지정 HTML 코드를 파일에 추가하여 새 템플릿을 만들 수 있습니다.
+   이메일 알림 템플릿은 [HTML 이메일](https://en.wikipedia.org/wiki/HTML_email). 파일에 사용자 지정 HTML 코드를 추가하여 템플릿을 만들 수 있습니다.
 
 1. 파일을 저장합니다. 템플릿을 작업 할당 단계에서 사용할 준비가 되었습니다.
 

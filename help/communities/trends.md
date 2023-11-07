@@ -7,9 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '342'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 ## 소개 {#introduction}
 
-다음 `Community Activity List` 구성 요소를 사용하여 구성원의 게시물 및 보기와 콘텐츠의 게시물 및 보기에 대한 트렌드 정보를 추가할 수 있습니다.
+다음 `Community Activity List` 구성 요소를 사용하여 구성원의 게시물 및 보기, 콘텐츠의 게시물 및 보기에 대한 트렌드 정보를 추가할 수 있습니다.
 
 이 문서에서는 다음 사항을 설명합니다.
 

@@ -1,18 +1,14 @@
 ---
 title: 디자인과 디자이너
-seo-title: Designs and the Designer
-description: 웹 사이트에 대한 디자인을 만들어야 하며 AEM에서는 디자이너를 사용하여 디자인해야 합니다
-seo-description: You will need to create a design for your website and in AEM, you do so by using the Designer
-uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
+description: 디자이너를 사용하여 웹 사이트 및 AEM의 디자인을 만드는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
-source-git-commit: adbdff9ff5b5bd8f5f6b22fb724a0e5273072de2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 1%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->이 문서에서는 클래식 UI를 기반으로 웹 사이트를 만드는 방법을 설명합니다. Adobe은 문서에 자세히 설명된 대로 웹 사이트에 최신 AEM 기술을 활용할 것을 권장합니다 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md).
+>이 문서에서는 클래식 UI를 기반으로 웹 사이트를 만드는 방법을 설명합니다. Adobe은 문서에 자세히 설명된 대로 웹 사이트에 최신 AEM 기술을 사용할 것을 권장합니다 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md).
 
 디자이너는 를 사용하여 웹 사이트의 디자인을 만드는 데 사용됩니다. [클래식 UI](/help/release-notes/touch-ui-features-status.md) AEM.
 

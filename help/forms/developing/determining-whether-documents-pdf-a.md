@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2081'
 ht-degree: 2%
 
 ---
@@ -145,7 +145,7 @@ PDF 문서가 PDF/A를 준수하는지 여부를 확인하려면 PDF 문서를 �
    * 만들기 `java.util.Map` 개체를 사용하여 입력 PDF 문서를 저장하는 데 사용됩니다 `HashMap` 생성자입니다.
    * 에 항목 추가 `java.util.Map` 개체 `put` 메서드 및 다음 인수 전달:
 
-      * 키 이름을 나타내는 문자열 값입니다. 이 값은 DDX 문서에 지정된 원본 요소의 값과 일치해야 합니다. 예를 들어 이 섹션에 소개된 DDX 문서에 있는 소스 요소의 값은 Loan.pdf입니다.
+      * 키 이름을 나타내는 문자열 값입니다. 이 값은 DDX 문서에 지정된 원본 요소의 값과 일치해야 합니다. 예를 들어 이 섹션에 소개된 DDX 문서의 소스 요소 값은 Loan.pdf입니다.
       * A `com.adobe.idp.Document` 입력 PDF 문서가 포함된 개체입니다.
 
 1. 런타임 옵션을 설정합니다.

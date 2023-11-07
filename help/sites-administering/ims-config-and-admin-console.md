@@ -7,10 +7,10 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 12%
+source-wordcount: '1668'
+ht-degree: 13%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->이 기능은 Adobe Managed Services 고객만 사용할 수 있습니다.
+>이 기능은 Managed Services 고객에게만 Adobe을 제공할 수 있습니다.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 베타 버전 2.4RC1 은 동적 그룹 생성 지원과 함께 사용 가능하며 여기에서 찾을 수 있습니다. [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
-이 릴리스의 주요 기능은 의 사용자 멤버십에 대해 새 LDAP 그룹을 동적으로 매핑하는 기능입니다. [!DNL Admin Console], 동적 사용자 그룹 만들기 를 참조하십시오.
+이 릴리스의 주요 기능은 의 사용자 멤버십에 대한 새 LDAP 그룹을 동적으로 매핑하는 기능입니다. [!DNL Admin Console], 동적 사용자 그룹 만들기 등을 참조하십시오.
 
 새 그룹 기능에 대한 자세한 내용은 여기에서 확인하십시오.
 
@@ -220,7 +220,7 @@ AEM 저장소( LDAP 또는 SAML을 통해 로컬로 소싱)의 기존 사용자�
 
 ![screen_shot_2018-09-17at94033pm](assets/screen_shot_2018-09-17at94033pm.png)
 
-IMS에서 동기화된 사용자 그룹은 AEM에서 기존 로컬 그룹(예: DAM 사용자)의 구성원으로 추가될 수 있습니다.
+IMS에서 동기화된 사용자 그룹은 AEM에서 기존 로컬 그룹(예: DAM 사용자)에 구성원으로 추가될 수 있습니다.
 
 ![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png)
 

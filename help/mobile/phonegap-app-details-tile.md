@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1246'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ Apple App Store 또는 Google Play 스토어와 같은 각 공급업체 애플�
 
 **PhoneGap 버전** 는 PhoneGap을 사용하여 응용 프로그램을 컴파일할 버전입니다. 가장 좋은 방법은 최신 기능과 버그 수정 사항을 얻을 수 있도록 현재 버전을 최신 상태로 유지하는 것입니다.
 
-**컨텐츠 업데이트 서버 URL** 는 애플리케이션이 ContentSync 업데이트를 호출하는 데 사용할 URL입니다. Dispatcher URL로 설정하거나 Dispatcher를 사용하지 않는 경우 애플리케이션에 ContentSync 업데이트를 제공하는 데 사용할 게시 인스턴스 중 하나로 설정해야 합니다.
+**컨텐츠 업데이트 서버 URL** 는 애플리케이션이 ContentSync 업데이트를 호출하는 데 사용할 URL입니다. Dispatcher URL로 설정하거나 Dispatcher를 사용하지 않는 경우 애플리케이션에 ContentSync 업데이트를 제공하는 데 사용되는 게시 인스턴스 중 하나로 설정해야 합니다.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 

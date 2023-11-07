@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 60%
+source-wordcount: '982'
+ht-degree: 72%
 
 ---
 
 # 엔터프라이즈 DevOps{#enterprise-devops}
 
-DevOps는 다음 작업에 필요한 프로세스, 메서드, 커뮤니케이션을 다룹니다.
+DevOps는 다음 작업에 필요한 프로세스, 방법 및 커뮤니케이션을 다룹니다.
 
 * 다양한 환경에서 소프트웨어를 쉽게 배포합니다.
 * 개발, 테스트 및 배포 팀 간의 공동 작업을 간소화합니다.
@@ -117,7 +117,7 @@ AEM(Adobe Experience Manager) 배포는 일반적으로 서로 다른 수준에�
 AEM 프로젝트는 종종 코드 배포를 트리거합니다.
 
 * 자동: 배포 및 QA 환경으로 전송
-* 수동: 스테이징 및 프로덕션 환경에 대한 배포는 보다 잘 관리되는 방식으로, 종종 수동으로 수행됩니다. 하지만 필요한 경우 자동화가 가능합니다.
+* 수동: 스테이징 및 프로덕션 환경에 대한 배포는 보다 잘 관리되는 방식으로, 종종 수동으로 수행됩니다. 단, 필요한 경우 자동화가 가능합니다.
 
 ![chlimage_1](assets/chlimage_1.png)
 

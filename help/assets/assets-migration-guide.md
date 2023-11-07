@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1795'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 방법론의 단계를 실제로 수행하기 전에 의 지침을 검토하고 구현하십시오. [에셋 성능 조정 팁](performance-tuning-guidelines.md). 최대 동시 작업 구성과 같은 여러 단계에서는 로드 시 서버의 안정성과 성능을 크게 향상시킵니다. 파일 데이터 저장소 구성과 같은 다른 단계는 시스템이 에셋으로 로드된 후 수행하기가 훨씬 더 어렵습니다.
+이 방법론의 단계를 실제로 수행하기 전에 의 지침을 검토하고 구현하십시오. [에셋 성능 조정 팁](performance-tuning-guidelines.md). 최대 동시 작업 구성과 같은 여러 단계를 수행하면 로드 시 서버의 안정성과 성능이 크게 향상됩니다. 파일 데이터 저장소 구성과 같은 다른 단계는 시스템이 에셋으로 로드된 후 수행하기가 훨씬 더 어렵습니다.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ ht-degree: 8%
 
 ### 에셋 수집 {#ingesting-assets}
 
-자산이 시스템으로 흡수될 때 성능과 안정성은 중요한 관심사이다. 많은 양의 데이터를 시스템에 로드하기 때문에 시스템이 필요한 시간을 최소화하고 시스템 과부하를 방지할 수 있을 뿐만 아니라 제대로 작동하는지 확인해야 합니다. 이렇게 하면 시스템 충돌이 발생할 수 있으며, 특히 이미 생산 중인 시스템에서 그러합니다.
+자산이 시스템으로 흡수될 때 성능과 안정성은 중요한 관심사이다. 많은 양의 데이터를 시스템에 로드하기 때문에 시스템이 수행되는지 그리고 시스템이 필요한 시간을 최소화할 수 있는지 그리고 특히 이미 프로덕션 상태에 있는 시스템에서 시스템 충돌을 야기할 수 있는 시스템 오버로드를 방지해야 합니다.
 
 에셋을 시스템으로 로드하는 방법에는 HTTP를 사용하는 푸시 기반 접근 방식과 JCR API를 사용하는 풀 기반 접근 방식이 있습니다.
 
@@ -82,14 +82,14 @@ https를 통해 푸시하는 접근 방식을 사용하는 데에는 두 가지 
 
 필요에 따라 워크플로우를 구성한 후에는 두 가지 실행 옵션이 있습니다.
 
-1. 가장 간단한 접근 방법은 [ACS Commons의 Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). 이 도구를 사용하면 쿼리를 실행하고 워크플로우를 통해 쿼리 결과를 처리할 수 있습니다. 배치 크기를 설정하는 옵션도 있습니다.
+1. 가장 간단한 접근 방법은 [ACS Commons 벌크 워크플로우 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). 이 도구를 사용하면 쿼리를 실행하고 워크플로우를 통해 쿼리 결과를 처리할 수 있습니다. 배치 크기를 설정하는 옵션도 있습니다.
 1. You can use the [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) in concert with [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). 이 접근 방식은 훨씬 더 많이 관련되어 있지만 의 오버헤드를 제거할 수 있습니다. [!DNL Experience Manager] 서버 리소스 사용을 최적화하는 워크플로우 엔진. Additionally, the Fast Action Manager further boosts performance by dynamically monitoring server resources and throttling the load placed on the system. Example scripts have been provided on the ACS Commons feature page.
 
 ### 에셋 활성화 {#activating-assets}
 
 게시 계층이 있는 배포의 경우 게시 팜에 자산을 활성화해야 합니다. Adobe은 두 개 이상의 게시 인스턴스를 실행할 것을 권장하지만 모든 자산을 단일 게시 인스턴스로 복제한 다음 해당 인스턴스를 복제하는 것이 가장 효율적입니다. 많은 수의 에셋을 활성화할 때 트리 활성화를 트리거한 후 개입해야 할 수 있습니다. 이유는 다음과 같습니다. 활성화를 실행하면 항목이 Sling 작업/이벤트 큐에 추가됩니다. 이 큐의 크기가 약 40,000개의 항목을 초과하기 시작하면 처리 속도가 크게 느려집니다. 이 큐의 크기가 100,000개 항목을 초과하면 시스템 안정성이 저하되기 시작합니다.
 
-이 문제를 해결하려면 [빠른 작업 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) 자산 복제를 관리합니다. 이 기능은 Sling 대기열을 사용하지 않고 작동하여 오버헤드를 줄이는 동시에 워크로드를 조정하여 서버가 오버로드되지 않도록 합니다. FAM을 사용하여 복제를 관리하는 방법의 예는 기능의 설명서 페이지에 나와 있습니다.
+이 문제를 해결하려면 [빠른 작업 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) 자산 복제를 관리합니다. 이 기능은 Sling 대기열을 사용하지 않고 작동하여 오버헤드를 줄이는 동시에 워크로드를 조정하여 서버가 오버로드되지 않도록 합니다. FAM을 사용하여 복제를 관리하는 예는 기능의 설명서 페이지에 나와 있습니다.
 
 Other options for getting assets to the publish farm include using [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) or [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), which are provided as tools as part of Jackrabbit. 또 다른 옵션은 오픈 소스 도구를 사용하는 것입니다. [!DNL Experience Manager] 다음 인프라 호출됨 [그래빗](https://github.com/TWCable/grabbit): vlt보다 빠른 성능을 제공한다고 주장합니다.
 

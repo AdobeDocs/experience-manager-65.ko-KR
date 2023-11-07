@@ -1,19 +1,15 @@
 ---
 title: AEM 포털 및 포틀릿
-seo-title: AEM Portals and Portlets
 description: AEM as a portal을 구성 및 관리하는 방법과 포틀릿에 AEM 컨텐츠를 구성 및 표시하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure and administer AEM as a portal and how to configure and display AEM content in a portlet.
-uuid: 7f9e316d-277e-4a1e-b6f3-cd89addc897b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6093'
 ht-degree: 1%
 
 ---
@@ -193,7 +189,7 @@ AEM 포틀릿을 실행하는 여러 포털 노드를 운영하는 경우 이 �
 
    ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
 
-1. 방금 만든 복제 에이전트를 두 번 클릭합니다. 아직 구성되지 않아 잘못된 것으로 표시됩니다.
+1. 생성한 복제 에이전트를 두 번 클릭합니다. 아직 구성되지 않아 잘못된 것으로 표시됩니다.
 
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
@@ -731,7 +727,7 @@ AEM Quickstart JAR 파일에는 포틀릿 구성 요소 파일이 포함되어 �
 
 AEM WCM에서 제공하는 컨텐츠에 액세스하려면 AEM Portal Director 포틀릿에 포털 서버를 설치해야 합니다. 이 섹션에 제공된 단계를 사용하여 포틀릿을 설치, 구성 및 포털 페이지에 추가하면 됩니다.
 
-기본적으로 포틀릿은 localhost:4503에 있는 게시 인스턴스와 localhost:4502에 있는 작성자 인스턴스에 연결됩니다. 이러한 값은 포틀릿을 배포하는 동안 변경할 수 있습니다. 포털 디렉터는 /libs/portal/directory 아래에 있는 저장소에서 콘텐츠로 사용할 수 있습니다. 사용하기 전에 애플리케이션 war 파일을 다운로드해야 합니다.
+기본적으로 포틀릿은 localhost:4503에 있는 게시 인스턴스와 localhost:4502에 있는 작성자 인스턴스에 연결됩니다. 이러한 값은 포틀릿을 배포하는 동안 변경할 수 있습니다. 포털 디렉터는 /libs/portal/directory 아래에 있는 저장소에서 콘텐츠로 사용할 수 있습니다. 애플리케이션 war 파일을 사용하기 전에 다운로드해야 합니다.
 
 ### war 파일 다운로드 {#downloading-the-war-file}
 
@@ -799,7 +795,7 @@ AEM에서 컨텐츠를 요청하면 포틀릿은 현재 표시 모드(게시 또
 포털 페이지에 포틀릿을 추가하려면 다음을 수행합니다.
 
 1. 앱 서버의 관리 창에 있고 페이지를 관리하는 위치로 이동해야 합니다. (예: WebSphere 6.1에서 **페이지 관리**).
-1. 포틀릿 이름을 선택한 다음 기존 페이지를 선택하거나 새 페이지를 만듭니다.
+1. 포틀릿 이름을 선택한 다음 기존 페이지를 선택하거나 페이지를 만듭니다.
 1. 페이지 레이아웃을 편집합니다.
 1. 포틀릿을 선택하고 컨테이너에 추가합니다.
 1. 변경 사항을 저장합니다.

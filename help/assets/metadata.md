@@ -7,10 +7,10 @@ feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2359'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 10%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 <!-- Scope of metadata articles:
-* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
@@ -41,7 +41,7 @@ ht-degree: 10%
 
 * 위치 [!DNL Experience Manager Assets]에서 자산의 메타데이터를 수동으로 추가하거나 편집할 수 있습니다. [!UICONTROL 속성] 페이지를 가리키도록 업데이트하는 중입니다.
 
-* 다음을 활용할 수 있습니다 [메타데이터 프로필](/help/assets/metadata-config.md#metadata-profiles) 기능 [!DNL Experience Manager Assets] 를 사용하여 자산을 DAM에 업로드할 때 메타데이터를 자동으로 추가할 수 있습니다.
+* 다음을 사용할 수 있습니다. [메타데이터 프로필](/help/assets/metadata-config.md#metadata-profiles) 기능 [!DNL Experience Manager Assets] 를 사용하여 자산을 DAM에 업로드할 때 메타데이터를 자동으로 추가할 수 있습니다.
 
 ## 에서 메타데이터 추가 또는 편집 [!DNL Experience Manager Assets] {#add-edit-metadata}
 
@@ -88,7 +88,7 @@ XMP write-back은에 설명된 플랫폼 및 파일 형식에 대해 지원 및 
 1. 다양한 탭에서 선택한 에셋의 메타데이터 속성을 수정합니다.
 1. 특정 에셋의 메타데이터를 보려면 목록에서 나머지 에셋의 선택을 취소합니다. 에서 몇 가지 에셋 선택을 취소하는 경우 [!UICONTROL 속성] 페이지에서 이러한 에셋의 메타데이터는 업데이트되지 않습니다.
 1. 에셋에 대해 다른 메타데이터 스키마를 선택하려면 **[!UICONTROL 설정]** 도구 모음에서 스키마를 선택합니다. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
-1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. 클릭 **[!UICONTROL 제출]**.
+1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
 
 ![메타데이터 스키마가 여러 자산에 일괄 적용됨](assets/metadata-schema-bulk-edit.gif)
 
@@ -242,7 +242,6 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 >* [여러 컬렉션의 메타데이터 속성 편집](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
-
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
 ## Where to find metadata of an asset or folder {#find-metadata}
@@ -257,7 +256,7 @@ Describe the journey of an assets' metadata. What all happens to metadata when a
 
 * To begin with, assets come with some metadata. The applications that create digital assets add some metadata to the assets created. Before uploading an asset to Experience Manager, you can edit and modify metadata using either the native application used to create an asset or using some other metadata editing application. When you upload an asset to Experience Manager, the metadata is processed.
 
-* Link to PS, ID, AI, PDF, etc. metadata-related help articles.
+* Link to PS, ID, AI, PDF, and so on, metadata-related help articles.
 
 * Link to XMP writeback.
 
@@ -281,7 +280,7 @@ Link to metadata handling of collections.
 
 * Before ingesting assets: Metadata editors
 
-* After ingesting assets: Properties of an asset, folder, collection, etc.
+* After ingesting assets: Properties of an asset, folder, collection, and so on.
 
 * Any supported programmatic method to bulk edit metadata directly in JCR?
 

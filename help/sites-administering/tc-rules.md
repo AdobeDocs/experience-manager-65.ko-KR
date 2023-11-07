@@ -4,10 +4,10 @@ description: Adobe Experience Manager에서 번역해야 하는 콘텐츠를 식
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 67%
+source-wordcount: '1152'
+ht-degree: 66%
 
 ---
 
@@ -160,7 +160,7 @@ translation_rules.xml 파일은 `nodelist` 여러 하위 요소가 있는 요소
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-그런 다음 컨텍스트를 선택하고 **편집**&#x200B;을 선택해야 합니다. 이렇게 하면 번역 규칙 편집기가 열립니다.
+그런 다음 컨텍스트를 선택하고 **편집**&#x200B;을 선택해야 합니다. 그러면 번역 규칙 편집기가 열립니다.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
@@ -192,7 +192,7 @@ UI에서 **속성** 탭에서 **상속**&#x200B;을 선택/선택 취소할 수 
 
 UI에서 **속성** 탭에서 **번역**&#x200B;을 선택/선택 취소할 수 있습니다.
 
-**updateTargetLanguage** 이 속성은 텍스트가 아닌 언어 코드가 있는 속성(예: jcr:language)에 사용됩니다. 사용자는 텍스트가 아닌 언어 로케일을 소스에서 대상으로 번역하는 것입니다. 이러한 속성은 번역용으로 전송되지 않습니다.
+**updateTargetLanguage** 이 속성은 jcr:language와 같이 텍스트가 아닌 언어 코드가 있는 속성에 사용됩니다. 사용자는 텍스트가 아닌 언어 로케일을 소스에서 대상으로 번역하는 것입니다. 이러한 속성은 번역용으로 전송되지 않습니다.
 
 UI에서, 당신은 선택/선택 취소할 수 있습니다 **번역** 다음에서 **속성** 탭으로 설정되어 있지만, 언어 코드를 값으로 가지는 특정 속성만 해당됩니다.
 

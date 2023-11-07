@@ -2,9 +2,9 @@
 title: 경험 조각
 description: Adobe Experience Manager Sites 작성의 경험 조각.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1440'
 ht-degree: 82%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 82%
 >
 >    `experience-fragments-editors`
 >
-문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
+문제가 발생하는 경우, 시스템 관리자에게 문의하십시오.
 
 ## 언제 경험 조각을 사용해야 합니까? {#when-should-you-use-experience-fragments}
 
@@ -135,7 +135,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 >
 지정된 템플릿은 업그레이드 시 덮어쓸 수 있으므로 이 방법으로 **허용된 템플릿**&#x200B;을 변경하지 않는 것이 좋습니다.
 >
-이 대화 상자는 정보용으로만 사용하십시오.
+이 대화 상자는 정보용으로만 사용합니다.
 
 1. 필요한 **경험 조각** 콘솔로 이동합니다.
 
@@ -234,7 +234,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    ![xf-06](assets/xf-06.png)
 
-1. 다음을 사용하여 확인 **완료** (확인 아이콘), 새 변형이 패널에 표시됩니다.
+1. 다음을 사용하여 확인 **완료** (확인 아이콘) 새 변형이 패널에 표시됩니다.
 
    ![xf-07](assets/xf-07.png)
 
@@ -267,7 +267,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 ### 빌딩 블록 작성 {#creating-a-building-block}
 
-새 빌딩 블록을 작성하려면 다음 작업을 수행하십시오.
+빌딩 블록을 생성하려면:
 
 1. 경험 조각 편집기에서 재사용할 구성 요소를 선택합니다.
 
@@ -281,7 +281,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    ![xf-](assets/xf-11.png)
 
-1. The **Building Block** will be shown in the tab, and can be selected in the paragraph system:
+1. 다음 **빌딩 블록** 은 탭에 표시되며 단락 시스템에서 선택할 수 있습니다.
 
    ![xf-](assets/xf-12.png)
 

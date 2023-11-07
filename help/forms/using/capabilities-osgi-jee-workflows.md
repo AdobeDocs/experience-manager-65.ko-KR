@@ -3,10 +3,10 @@ title: OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심 AEM 워크플�
 description: OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심 AEM 워크플로우의 작업 및 기능
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 22%
+source-wordcount: '925'
+ht-degree: 23%
 
 ---
 
@@ -396,7 +396,7 @@ OSGi의 양식 중심의 AEM 워크플로와 JEE의 AEM Forms JEE 워크플로(J
 
 ## AEM 받은 편지함 및 AEM Forms 앱 기능의 차이점 {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Forms 중심 워크플로우를 시작하는 두 가지 두드러진 방법은 를 사용하는 것입니다 [AEM 받은 편지함](../../forms/using/manage-applications-inbox.md) 및 AEM Forms 앱. 그러나 AEM Inbox와 AEM Forms 앱의 기능은 다릅니다. AEM 받은 편지함은 [Forms 중심 워크플로](../../forms/using/aem-forms-workflow.md) 반면에 AEM Forms 앱은 Forms 중심 워크플로와 프로세스 관리 모두에서 작동합니다.
+Forms 중심 워크플로우를 시작하는 두 가지 두드러진 방법은 를 사용하는 것입니다 [AEM 받은 편지함](../../forms/using/manage-applications-inbox.md) 및 AEM Forms 앱. 그러나 AEM Inbox와 AEM Forms 앱의 기능은 다릅니다. AEM 받은 편지함은 [Forms 중심 워크플로](../../forms/using/aem-forms-workflow.md) 반면 AEM Forms 앱은 Forms 중심 워크플로와 프로세스 관리 모두에서 작동합니다.
 
 다음 표에는 AEM Inbox 및 AEM Forms 앱의 기능이 나와 있습니다.
 

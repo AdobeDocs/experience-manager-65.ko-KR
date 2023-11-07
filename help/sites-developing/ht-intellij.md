@@ -8,7 +8,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 3%
@@ -118,7 +118,7 @@ IntelliJ IDEA는 디버깅을 위해 JSP를 찾을 위치를 이해해야 합니
 
 필요한 마지막 단계는 IntelliJ IDEA에서 제안한 JVM 옵션으로 AEM을 시작하는 것입니다.
 
-AEM jar 파일을 직접 시작하고 다음 명령줄 등을 사용하여 이러한 옵션을 추가합니다.
+AEM jar 파일을 직접 시작하고 다음 명령줄을 사용하여 이러한 옵션을 추가합니다.
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 

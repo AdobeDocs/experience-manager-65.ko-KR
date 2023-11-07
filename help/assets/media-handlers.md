@@ -6,16 +6,16 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 4%
+source-wordcount: '2156'
+ht-degree: 5%
 
 ---
 
 # 미디어 핸들러 및 워크플로우를 사용하여 자산 처리 {#processing-assets-using-media-handlers-and-workflows}
 
-[!DNL Adobe Experience Manager Assets] 에는 자산을 처리하는 기본 워크플로우 및 미디어 핸들러 세트가 포함되어 있습니다. 워크플로는 에셋에서 실행할 작업을 정의한 다음 특정 작업을 미디어 핸들러로 위임합니다(예: 썸네일 생성 또는 메타데이터 추출).
+[!DNL Adobe Experience Manager Assets] 에는 자산을 처리하는 기본 워크플로우 및 미디어 핸들러 세트가 포함되어 있습니다. 워크플로는 에셋에서 실행할 작업을 정의한 다음 특정 작업을 미디어 핸들러에 위임합니다(예: 썸네일 생성 또는 메타데이터 추출).
 
 특정 MIME 유형의 자산이 업로드되면 자동으로 실행되도록 워크플로우를 구성할 수 있습니다. 처리 단계는 일련의 [!DNL Assets] 미디어 핸들러. [!DNL Experience Manager] 일부 제공 [내장 처리기,](#default-media-handlers) 및 추가 필드는 다음 중 하나일 수 있습니다. [주문 개발](#creating-a-new-media-handler) 또는에 프로세스를 위임하여 정의됩니다. [명령줄 도구](#command-line-based-media-handler).
 
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->다음을 참조하십시오. [에셋 지원 형식](assets-formats.md) 에서 지원하는 모든 형식에 대한 설명 페이지입니다. [!DNL Assets] 각 형식에 대해 지원되는 기능을 사용할 수 있습니다.
+>다음을 참조하십시오. [에셋 지원 형식](assets-formats.md) 에서 지원하는 모든 형식에 대한 설명 페이지입니다. [!DNL Assets] 및 각 형식에 대해 지원되는 기능입니다.
 
 ## 기본 미디어 핸들러 {#default-media-handlers}
 
@@ -57,7 +57,7 @@ ht-degree: 4%
 활성 미디어 처리기를 보려면 다음을 수행하십시오.
 
 1. 브라우저에서 다음 위치로 이동합니다 `https://localhost:4502/system/console/components`.
-1. 클릭 `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
+1. `com.day.cq.dam.core.impl.store.AssetStoreImpl`를 클릭합니다.
 1. 모든 활성 미디어 처리기가 포함된 목록이 표시됩니다. 예:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
@@ -83,9 +83,9 @@ The following example shows how to enhance the **[!UICONTROL AEM Assets Synchron
 1. 페이지 새로 고침: 미디어 핸들러 옆에 비활성화된 것을 나타내는 아이콘이 표시됩니다.
 1. 미디어 처리기를 사용하려면 다음을 클릭하십시오. **[!UICONTROL 사용]** 미디어 핸들러의 이름 옆에 있습니다.
 
-### 새 미디어 핸들러 만들기 {#creating-a-new-media-handler}
+### 미디어 핸들러 만들기 {#creating-a-new-media-handler}
 
-새 미디어 유형을 지원하거나 에셋에서 특정 작업을 실행하려면 새 미디어 핸들러를 만들어야 합니다. 이 섹션에서는 진행 방법에 대해 설명합니다.
+새 미디어 유형을 지원하거나 에셋에서 특정 작업을 실행하려면 미디어 핸들러를 만들어야 합니다. 이 섹션에서는 진행 방법에 대해 설명합니다.
 
 #### 중요한 클래스 및 인터페이스 {#important-classes-and-interfaces}
 
@@ -151,8 +151,8 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
       * 아티팩트 ID: myBundle.
       * 이름: 내 [!DNL Experience Manager] 번들.
       * 설명: 내 설명입니다. [!DNL Experience Manager] 번들.
-   1. 클릭 **[!UICONTROL 완료]**.
 
+   1. 클릭 **[!UICONTROL 완료]**.
 
 1. 설정 [!DNL Java] 버전 1.5로의 컴파일러:
 
@@ -162,8 +162,8 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
       * 컴파일러 규정 준수 수준
       * 생성된 .class 파일 호환성
       * 소스 호환성
-   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 대화 상자 창에서 다음을 클릭합니다. **[!UICONTROL 예]**.
 
+   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 대화 상자 창에서 다음을 클릭합니다. **[!UICONTROL 예]**.
 
 1. 의 코드를 바꿉니다. `pom.xml` 다음 코드가 있는 파일:
 
@@ -439,7 +439,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
    1. 번들 `myBundle-0.0.1-SNAPSHOT.jar` (컴파일된 클래스 포함)은 `myBundle/target`.
 
 1. CRX 탐색기에서 `/apps/myApp`. 이름 = `install`, 유형 = `nt:folder`.
-1. 번들 복사 `myBundle-0.0.1-SNAPSHOT.jar` 아래에 저장합니다. `/apps/myApp/install` (예: WebDAV에서) 이제 새 텍스트 처리기가 [!DNL Experience Manager].
+1. 번들 복사 `myBundle-0.0.1-SNAPSHOT.jar` 아래에 저장합니다. `/apps/myApp/install` (예: WebDAV를 사용하는 경우) 이제 새 텍스트 처리기가 [!DNL Experience Manager].
 1. 브라우저에서 [!UICONTROL Apache Felix 웹 관리 콘솔]. 다음 항목 선택 [!UICONTROL 구성 요소] 기본 텍스트 처리기를 탭하고 비활성화합니다. `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## 명령줄 기반 미디어 핸들러 {#command-line-based-media-handler}
@@ -483,7 +483,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
    >[!NOTE]
    >
-   >일부 버전의 Windows에서는 convert 명령이 의 일부인 기본 convert 유틸리티와 충돌하기 때문에 실행되지 않을 수 있습니다 [!DNL Windows] 설치. 이 경우 의 전체 경로를 언급하십시오. [!DNL ImageMagick] 이미지 파일을 썸네일로 변환하는 데 사용되는 소프트웨어입니다. (예: `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`)
+   >일부 버전의 Windows에서는 convert 명령이 의 일부인 기본 convert 유틸리티와 충돌하기 때문에 실행되지 않을 수 있습니다 [!DNL Windows] 설치. 이 경우 의 전체 경로를 언급하십시오. [!DNL ImageMagick] 이미지 파일을 썸네일로 변환하는 데 사용되는 소프트웨어입니다. 예: `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
 
 1. 도구가 제대로 실행되는지 확인하려면 작업 디렉터리에 JPG 이미지를 추가하고 convert 명령을 실행합니다 `<image-name>.jpg -flip <image-name>-flipped.jpg` 명령줄에 있습니다. 대칭 이동된 이미지가 디렉토리에 추가됩니다. Then, add the command line process step to the **[!UICONTROL DAM Update Asset]** workflow.
 1. 로 이동 **[!UICONTROL 워크플로]** 콘솔.
@@ -494,7 +494,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 수정된 워크플로우를 테스트하려면 에셋을에 추가합니다 `/content/dam`.
 
 1. 파일 시스템에서 원하는 TIFF 이미지를 가져옵니다. 이름 바꾸기 `myImage.tiff` 및 복사 위치: `/content/dam`예를 들어 WebDAV를 사용합니다.
-1. 로 이동 **[!UICONTROL CQ5 DAM]** 콘솔(예: ) `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. 로 이동 **[!UICONTROL CQ5 DAM]** 예를 들어 콘솔 `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. 에셋 열기 **[!UICONTROL myImage.tiff]** 그리고 뒤집힌 이미지와 세 개의 썸네일이 만들어졌는지 확인합니다.
 
 #### CommandLineProcess 프로세스 단계 구성 {#configuring-the-commandlineprocess-process-step}
@@ -507,7 +507,7 @@ This section describes how to set the [!UICONTROL Process Arguments] of the [!UI
 |---|---|
 | mime:&lt;mime-type> | 선택적 인수입니다. 자산이 인수 중 하나와 동일한 MIME 유형을 갖는 경우 프로세스가 적용됩니다. <br>몇 가지 MIME 유형을 정의할 수 있습니다. |
 | tn:&lt;width>:&lt;height> | 선택적 인수입니다. 이 프로세스는 인수에 정의된 차원으로 썸네일을 만듭니다. <br>여러 썸네일을 정의할 수 있습니다. |
-| cmd: &lt;command> | 실행되는 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 명령은 하나만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다.<br>`${filename}`: 입력 파일 이름(예: original.jpg) <br> `${file}`: 입력 파일의 전체 경로 이름(예: ) `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: 입력 파일의 디렉토리(예: ) `/tmp/cqdam0816.tmp` <br>`${basename}`: 확장명이 없는 입력 파일의 이름(예: 원본) <br>`${extension}`: 입력 파일의 확장자(예: JPG) |
+| cmd: &lt;command> | 실행되는 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 명령은 하나만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다.<br>`${filename}`: 입력 파일 이름(예: original.jpg) <br> `${file}`: 입력 파일의 전체 경로 이름(예: ) `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: 입력 파일의 디렉토리(예: ) `/tmp/cqdam0816.tmp` <br>`${basename}`: 확장명이 없는 입력 파일의 이름(예: 원본) <br>`${extension}`: 입력 파일의 확장자(예: JPG). |
 
 예를 들어 다음과 같습니다. [!DNL ImageMagick] 을(를) 호스팅하는 디스크에 설치됩니다. [!DNL Experience Manager] 서버 및 을 사용하여 프로세스 단계를 만드는 경우 [!UICONTROL 명령줄 프로세스] as 구현 및 다음 값 [!UICONTROL 프로세스 인수]:
 
@@ -530,4 +530,3 @@ This section describes how to set the [!UICONTROL Process Arguments] of the [!UI
 >[!MORELIKETHIS]
 >
 >* [자산 처리](assets-workflow.md)
-

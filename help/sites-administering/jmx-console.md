@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4950'
+source-wordcount: '4962'
 ht-degree: 2%
 
 ---
@@ -436,7 +436,7 @@ CRX 저장소에 대한 정보
   </tr>
   <tr>
    <td>node.type.management.autocreated.definitions.supported</td>
-   <td>true는 노드가 생성될 때 저장소에서 노드의 하위 항목(노드 또는 등록 정보)을 자동으로 만들 수 있도록 지원함을 나타냅니다.</td>
+   <td>true는 노드가 생성될 때 저장소에서 노드의 하위 항목(노드 또는 속성)을 자동으로 만들 수 있도록 지원함을 나타냅니다.</td>
   </tr>
   <tr>
    <td>crx.cluster.master</td>
@@ -480,11 +480,11 @@ CRX 저장소에 대한 정보
   </tr>
   <tr>
    <td>option.retention.supported</td>
-   <td>true 는 저장소에서 외부 보존 관리 애플리케이션을 사용하여 컨텐츠에 보존 정책을 적용하고 보류 및 해제를 지원함을 나타냅니다.</td>
+   <td>true는 저장소에서 외부 보존 관리 애플리케이션을 사용하여 컨텐츠에 보존 정책을 적용하고 보류 및 해제를 지원함을 나타냅니다.</td>
   </tr>
   <tr>
    <td>option.lifecycle.supported</td>
-   <td>true는 저장소에서 수명 주기 관리를 지원함을 나타냅니다.</td>
+   <td>true는 저장소가 라이프사이클 관리를 지원함을 나타냅니다.</td>
   </tr>
  </tbody>
 </table>
@@ -894,7 +894,7 @@ JMX 콘솔의 기본 페이지에는 서비스 테이블이 포함되어 있습�
 
 ## 모니터링을 위해 외부 JMX 응용 프로그램 사용 {#using-external-jmx-applications-for-monitoring}
 
-CRX를 통해 외부 애플리케이션이 를 통해 Managed Bean(MBean)과 상호 작용할 수 있습니다. [JMX(Java Management Extensions)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). 다음과 같은 범용 콘솔 사용 [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) 또는 도메인별 모니터링 응용 프로그램을 사용하면 CRX 구성 및 속성을 가져오고 설정할 수 있을 뿐만 아니라 성능 및 리소스 사용량을 모니터링할 수 있습니다.
+CRX를 통해 외부 애플리케이션이 를 통해 Managed Bean(MBean)과 상호 작용할 수 있습니다. [JMX(Java Management Extensions)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). 다음과 같은 범용 콘솔 사용 [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) 또는 도메인별 모니터링 애플리케이션을 통해 CRX 구성 및 속성을 가져오고 설정하고 성능 및 리소스 사용을 모니터링할 수 있습니다.
 
 ### JConsole을 사용하여 CRX에 연결 {#using-jconsole-to-connect-to-crx}
 

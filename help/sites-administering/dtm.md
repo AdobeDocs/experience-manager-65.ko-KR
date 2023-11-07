@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2206'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 3%
 >* 3.x은(는) [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)로 구성됩니다.
 >* 4.x은(는) [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)로 구성됩니다.
 >
-
 
 ## 배포 옵션 {#deployment-options}
 
@@ -145,7 +144,7 @@ AEM에서 Dynamic Tag Management 라이브러리를 호스팅할 때 AEM은 구�
   </tr>
   <tr>
    <td>다운로드 워크플로우</td>
-   <td><p>Dynamic Tag Management 라이브러리를 다운로드 및 설치하는 데 사용할 워크플로우 모델입니다. 기본 모델은 기본 DTM 번들 다운로드입니다. 사용자 지정 모델을 만들지 않은 경우 이 모델을 사용합니다.</p> <p>기본 다운로드 워크플로우는 라이브러리가 다운로드되면 자동으로 활성화됩니다.</p> </td>
+   <td><p>Dynamic Tag Management 라이브러리를 다운로드 및 설치하는 데 사용할 워크플로우 모델입니다. 기본 모델은 기본 DTM 번들 다운로드입니다. 사용자 지정 모델을 만들지 않은 경우 이 모델을 사용합니다.</p> <p>기본 다운로드 워크플로우는 라이브러리가 다운로드되면 자동으로 활성화합니다.</p> </td>
   </tr>
   <tr>
    <td>도메인 힌트</td>
@@ -201,7 +200,7 @@ Dynamic Tag Configuration이 클라우드 호스팅되는 경우 Dynamic Tag Man
 
 다음 절차는 터치에 적합한 UI를 사용하여 Dynamic Tag Management과의 통합을 구성합니다.
 
-1. 레일에서 도구 > 작업 > 클라우드 > Cloud Services 를 클릭합니다.
+1. 레일에서 도구 > 작업 > 클라우드 > Cloud Service 를 클릭합니다.
 1. Dynamic Tag Management 영역에 구성을 추가하기 위한 다음 링크 중 하나가 표시됩니다.
 
    * 추가할 첫 번째 구성인 경우 지금 구성 을 클릭합니다.
@@ -229,7 +228,7 @@ Dynamic Tag Configuration이 클라우드 호스팅되는 경우 Dynamic Tag Man
 
 Dynamic Tag Management 라이브러리를 수동으로 다운로드하여 AEM에서 즉시 업데이트합니다. 예를 들어, 폴링 가져오기가 라이브러리를 자동으로 다운로드하도록 예약하기 전에 업데이트된 라이브러리를 테스트하려면 수동으로 다운로드하십시오.
 
-1. 레일에서 도구 > 작업 > 클라우드 > Cloud Services 를 클릭합니다.
+1. 레일에서 도구 > 작업 > 클라우드 > Cloud Service 를 클릭합니다.
 1. Dynamic Tag Management 영역에서 구성 표시 를 클릭한 다음 해당 구성을 클릭합니다.
 1. 스테이징 설정 영역 또는 프로덕션 설정 영역에서 다운로드 워크플로우 트리거 단추를 클릭하여 라이브러리 번들을 다운로드하고 배포합니다.
 
@@ -247,7 +246,6 @@ Dynamic Tag Management 라이브러리를 수동으로 다운로드하여 AEM에
 >* `servertype`
 >
 
-
 ## Dynamic Tag Management 구성을 사이트에 연결 {#associating-a-dynamic-tag-management-configuration-with-your-site}
 
 AEM이 필요한 스크립트를 페이지에 추가하도록 Dynamic Tag Management 구성을 웹 사이트의 페이지에 연결합니다. 사이트의 루트 페이지를 구성과 연결합니다. 해당 페이지의 모든 하위 항목은 연결을 상속합니다. 필요한 경우 하위 페이지에서 연결을 재정의할 수 있습니다.
@@ -255,8 +253,8 @@ AEM이 필요한 스크립트를 페이지에 추가하도록 Dynamic Tag Manage
 다음 절차를 사용하여 페이지와 하위 항목을 동적 Tag Management 구성과 연결합니다.
 
 1. 클래식 UI에서 사이트의 루트 페이지를 엽니다.
-1. 사이드 킥을 사용하여 페이지 속성을 엽니다.
-1. Cloud Services 탭에서 서비스 추가를 클릭하고 Dynamic Tag Management을 선택한 다음 확인을 클릭합니다.
+1. Sidekick 속성을 열려면 페이지를 사용하십시오.
+1. Cloud Service 탭에서 서비스 추가를 클릭하고 Dynamic Tag Management을 선택한 다음 확인을 클릭합니다.
 
    ![chlimage_1-357](assets/chlimage_1-357.png)
 
@@ -265,8 +263,8 @@ AEM이 필요한 스크립트를 페이지에 추가하도록 Dynamic Tag Manage
 페이지에 대해 상속된 구성 연결을 재정의하려면 다음 절차를 따르십시오. 재정의는 페이지 및 모든 페이지 하위 항목에 영향을 줍니다.
 
 1. 클래식 UI에서 페이지를 엽니다.
-1. 사이드 킥을 사용하여 페이지 속성을 엽니다.
-1. Cloud Services 탭에서 상속된 원본 속성 옆에 있는 자물쇠 아이콘을 클릭한 다음 확인 대화 상자에서 예를 클릭합니다.
+1. Sidekick 속성을 열려면 페이지를 사용하십시오.
+1. Cloud Service 탭에서 상속된 원본 속성 옆에 있는 자물쇠 아이콘을 클릭한 다음 확인 대화 상자에서 예를 클릭합니다.
 
    ![chlimage_1-358](assets/chlimage_1-358.png)
 

@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4718'
+source-wordcount: '4715'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Acrobat을 사용하면 Microsoft Outlook에서 전자 메일 첨부 파일로 �
 
 ### 정책 편집 시 고려 사항 {#considerations-for-editing-policies}
 
-정책을 편집할 때 변경 사항은 현재 정책이 보호하는 문서와 그 이후에 정책이 보호하는 문서에 영향을 줍니다. 예를 들어 문서에 현재 적용된 정책에서 수신자를 제거하면 수신자는 더 이상 문서를 열 수 없습니다.
+정책을 편집할 때 변경 사항은 정책이 현재 보호하는 문서와 그 이후에 정책이 보호하는 문서에 영향을 줍니다. 예를 들어 문서에 현재 적용된 정책에서 수신자를 제거하면 수신자는 더 이상 문서를 열 수 없습니다.
 
 문서의 상태는 변경 사항의 적용 시기를 결정합니다.
 

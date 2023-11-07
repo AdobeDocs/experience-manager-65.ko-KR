@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1912'
 ht-degree: 0%
 
 ---
@@ -200,7 +200,7 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 자체 등록�
 
 ### LDAP 통합 {#ldap-integration}
 
-AEM은 사용자 계정 생성뿐만 아니라 사용자 인증을 위한 LDAP 사용을 지원합니다. 이에 자세히 설명되어 있습니다. [AEM 6을 사용하여 LDAP 구성](../../help/sites-administering/ldap-config.md).
+AEM은 사용자 인증 및 사용자 계정 생성을 위한 LDAP 사용을 지원합니다. 이에 자세히 설명되어 있습니다. [AEM 6을 사용하여 LDAP 구성](../../help/sites-administering/ldap-config.md).
 
 다음은 커뮤니티 구성원과 구성원 그룹에 대한 몇 가지 구성 세부 정보입니다.
 

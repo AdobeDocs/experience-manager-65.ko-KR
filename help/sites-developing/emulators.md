@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager(AEM)를 사용하면 작성자가 모바일 디바이스나 이메일 클라이언트와 같이 최종 사용자가 페이지를 보는 환경을 시뮬레이션하는 에뮬레이터에서 페이지를 볼 수 있습니다.
+Adobe Experience Manager(AEM)를 사용하면 작성자가 최종 사용자가 페이지를 볼 환경을 시뮬레이션하는 에뮬레이터에서 페이지를 볼 수 있습니다. 예를 들어 모바일 디바이스나 이메일 클라이언트에서 페이지를 볼 수 있습니다.
 
 AEM 에뮬레이터 프레임워크:
 
@@ -143,7 +143,7 @@ AEM 에뮬레이터 프레임워크:
 
    예를 들어 노드를 참조할 수 있습니다 `/libs/wcm/mobile/components/emulators/iPhone/css`
 
-1. 필요한 경우 JS 클라이언트 라이브러리를 정의합니다. 예를 들어 특정 플러그인을 정의합니다. 이름 = js, 노드 유형 = cq:ClientLibrary
+1. 필요한 경우 JS 클라이언트 라이브러리를 정의하여 특정 플러그인을 정의합니다(예: name = js, node type = cq:ClientLibrary).
 
    예를 들어 노드를 참조할 수 있습니다 `/libs/wcm/mobile/components/emulators/base/js`
 

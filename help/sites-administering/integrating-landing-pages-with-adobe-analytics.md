@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '374'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ AEM에서 **클릭 유도 문안** 구성 요소 - **클릭스루 링크** 및 *
 
 랜딩 페이지 구성 요소를 Adobe Analytics에 매핑하려면 다음을 수행하십시오.
 
-1. Adobe Analytics 구성을 만들고 새 프레임워크를 만든 후 드롭다운 메뉴에서 적절한 보고 세트를 선택합니다. 그러면 Adobe Analytics 변수를 가져와 컨텐츠 파인더에 표시됩니다.
+1. Adobe Analytics 구성을 만들고 프레임워크를 만든 후 드롭다운 메뉴에서 적절한 보고 세트를 선택합니다. 그러면 Adobe Analytics 변수를 가져와 컨텐츠 파인더에 표시됩니다.
 1. 필요에 따라 사이드 킥에서 CTA(콜 투 액션) 구성 요소를 페이지 중간에 있는 매핑 영역으로 끌어서 놓습니다.
 
 <table>
@@ -89,7 +89,7 @@ AEM에서 **클릭 유도 문안** 구성 요소 - **클릭스루 링크** 및 *
 </table>
 
 1. 노출된 이러한 속성을 컨텐츠 파인더의 모든 Adobe Analytics 변수와 매핑합니다. 이제 프레임워크를 사용할 준비가 되었습니다.
-1. 이제 새 랜딩 페이지를 만들거나 기존 CTA 구성 요소로 기존 랜딩 페이지를 열고 **Cloud Services** 의 탭 **페이지 속성** 터치에 적합한 UI의 사이드 킥에서 을 선택합니다 **속성 열기** 및 클릭 **Cloud Services**) 랜딩 페이지에서 사용할 프레임워크를 구성합니다. 드롭다운 목록에서 프레임워크를 선택합니다.
+1. 이제 랜딩 페이지를 만들거나 기존 CTA 구성 요소로 기존 랜딩 페이지를 열고 을(를) 클릭합니다 **Cloud Service** 의 탭 **페이지 속성** 터치에 적합한 UI의 사이드 킥에서 을 선택합니다 **속성 열기** 및 클릭 **Cloud Service**) 랜딩 페이지에서 사용할 프레임워크를 구성합니다. 드롭다운 목록에서 프레임워크를 선택합니다.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

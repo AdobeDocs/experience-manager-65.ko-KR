@@ -7,10 +7,10 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2203'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -18,14 +18,14 @@ ht-degree: 14%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
-컬렉션은 내의 자산 세트입니다. [!DNL Adobe Experience Manager Assets]. 컬렉션을 사용하여 사용자 간에 에셋을 공유합니다. 집합은 정적 집합이거나 검색 결과를 기반으로 하는 동적 집합일 수 있습니다.
+컬렉션은 내의 자산 세트입니다. [!DNL Adobe Experience Manager Assets]. 컬렉션을 사용하여 사용자 간에 자산을 공유합니다. 집합은 정적 집합이거나 검색 결과를 기반으로 하는 동적 집합일 수 있습니다.
 
-폴더와 달리 컬렉션에는 서로 다른 위치의 에셋이 포함될 수 있습니다. 보기, 편집 등의 다양한 수준의 권한이 할당된 다양한 사용자와 컬렉션을 공유할 수 있습니다.
+폴더와 달리 컬렉션에는 서로 다른 위치의 자산이 포함될 수 있습니다. 보기, 편집 등의 다양한 수준의 권한이 할당된 다양한 사용자와 컬렉션을 공유할 수 있습니다.
 
-사용자와 여러 컬렉션을 공유할 수 있습니다. 각 컬렉션에는 에셋에 대한 참조가 포함되어 있습니다. 에셋의 참조 무결성은 컬렉션에 간에 유지됩니다.
+사용자와 여러 컬렉션을 공유할 수 있습니다. 각 컬렉션에는 자산에 대한 참조가 포함되어 있습니다. 자산의 참조 무결성은 컬렉션에 간에 유지됩니다.
 
 컬렉션은 에셋을 대조하는 방법을 기반으로 다음과 같은 유형을 갖습니다.
 
@@ -43,7 +43,7 @@ ht-degree: 14%
 
 ### 정적 참조를 사용하여 컬렉션 만들기 {#creating-a-collection-with-static-references}
 
-정적 참조(예: 에셋, 폴더, 컬렉션, 스핀 세트 및 이미지 세트에 대한 참조가 있는 컬렉션)를 만들 수 있습니다.
+정적 참조가 포함된 컬렉션(예: 에셋, 폴더, 컬렉션, 스핀 세트 및 이미지 세트에 대한 참조가 포함된 컬렉션)을 만들 수 있습니다.
 
 1. 다음 위치로 이동 **[!UICONTROL 컬렉션]** 콘솔.
 1. 도구 모음에서 를 클릭합니다 **[!UICONTROL 만들기]**.
@@ -166,9 +166,8 @@ ht-degree: 14%
    >* 다음에서 [!UICONTROL 속성] 페이지에서 선택을 취소하여 컬렉션 목록에서 컬렉션을 제거할 수 있습니다. 컬렉션 목록에는 기본적으로 모든 컬렉션이 선택되어 있습니다. [!DNL Experience Manager] 는 제거한 컬렉션의 메타데이터를 업데이트하지 않습니다.
    >* 목록의 맨 위에서 옆의 확인란을 선택합니다 **[!UICONTROL 제목]** 컬렉션 선택과 목록 지우기 간을 전환합니다.
 
-
 1. 클릭 **[!UICONTROL 저장 및 닫기]** 을 클릭하고 확인 대화 상자를 닫습니다.
-1. 새 메타데이터를 기존 메타데이터에 추가하려면 다음을 선택합니다. **[!UICONTROL 추가 모드]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. 클릭 **[!UICONTROL 제출]**.
+1. 새 메타데이터를 기존 메타데이터에 추가하려면 다음을 선택합니다. **[!UICONTROL 추가 모드]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
 
    >[!NOTE]
    >
@@ -233,7 +232,7 @@ ht-degree: 14%
    >
    >최근에 업데이트된 컬렉션은 기본적으로 **[!UICONTROL 컬렉션에 추가]** 페이지를 가리키도록 업데이트하는 중입니다.
 
-1. 클릭 **[!UICONTROL 추가]**. 컬렉션이 의 대상 컬렉션에 추가되었음을 확인하는 메시지가 표시됩니다. **[!UICONTROL 대상 선택]** 페이지를 가리키도록 업데이트하는 중입니다. 메시지를 닫아 프로세스를 완료합니다.
+1. **[!UICONTROL 추가]**&#x200B;를 클릭합니다. 컬렉션이 의 대상 컬렉션에 추가되었음을 확인하는 메시지가 표시됩니다. **[!UICONTROL 대상 선택]** 페이지를 가리키도록 업데이트하는 중입니다. 메시지를 닫아 프로세스를 완료합니다.
 
 >[!NOTE]
 >
@@ -278,4 +277,3 @@ Saved searches are created when you create a smart collection. Smart collections
 >
 >* [Experience Manager Assets 이메일 알림 구성](/help/sites-administering/notification.md#assetsconfig)
 >* [컬렉션에 대한 검토 작업 만들기](bulk-approval.md)
-

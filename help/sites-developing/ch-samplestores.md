@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '468'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 저장소 �
 
 >[!WARNING]
 >
->샘플 저장소 후보는 프로젝트에 대한 자체 전용 구성을 작성하는 데 도움이 되는 참조 구성으로 제공되므로 이를 직접 사용해서는 안 됩니다.
+>샘플 저장소 후보는 프로젝트에 대한 자체 전용 구성을 작성하는 데 도움이 되는 참조 구성으로 제공됩니다. 직접 사용하지 마십시오.
 
 ## aem.segmentation 샘플 저장소 후보 {#aem-segmentation-sample-store-candidate}
 

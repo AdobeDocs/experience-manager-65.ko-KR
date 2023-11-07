@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
@@ -45,19 +45,19 @@ SAML에 대한 설명은 [SAML(Security Assertion Markup Language) V2.0 기술 �
 
    이 옵션을 선택하지 않으면 사용자는 타사 SAML ID 공급자의 로그인 페이지로 바로 이동하며, 여기서 Enterprise 도메인에 속한 사용자를 인증할 수 있습니다.
 
-1. (선택 사항) 아티팩트 바인딩 활성화를 선택하여 아티팩트 바인딩 지원을 활성화합니다. 기본적으로 POST 바인딩은 SAML과 함께 사용됩니다. 하지만 아티팩트 바인딩을 구성한 경우 이 옵션을 선택합니다. 이 옵션을 선택하면 실제 사용자 어설션이 브라우저 요청을 통해 전달되지 않습니다. 대신 어설션에 대한 포인터가 전달되고 백엔드 웹 서비스 호출을 사용하여 어설션이 검색됩니다.
+1. (선택 사항) 아티팩트 바인딩 활성화를 선택하여 아티팩트 바인딩 지원을 활성화합니다. 기본적으로 POST 바인딩은 SAML과 함께 사용됩니다. 그러나 아티팩트 바인딩을 구성한 경우 이 옵션을 선택합니다. 이 옵션을 선택하면 실제 사용자 어설션이 브라우저 요청을 통해 전달되지 않습니다. 대신 어설션에 대한 포인터가 전달되고 백엔드 웹 서비스 호출을 사용하여 어설션이 검색됩니다.
 1. (선택 사항) 리디렉션을 사용하는 SAML 바인딩을 지원하려면 [리디렉션 바인딩 활성화]를 선택합니다.
 1. (선택 사항) 사용자 지정 속성에서 추가 속성을 지정합니다. 추가 속성은 새 줄로 구분된 이름=값 쌍입니다.
 
    * 타사 어설션의 유효 기간과 일치하는 유효 기간에 대해 SAML 어설션을 발행하도록 AEM Forms를 구성할 수 있습니다. 타사 SAML 어설션 시간 제한을 적용하려면 사용자 지정 속성에 다음 줄을 추가합니다.
 
-      `saml.sp.honour.idp.assertion.expiry=true`
+     `saml.sp.honour.idp.assertion.expiry=true`
 
    * RelayState를 사용하기 위해 다음 사용자 지정 속성을 추가하여 인증 성공 후 사용자가 리디렉션될 URL을 결정합니다.
 
-      `saml.sp.use.relaystate=true`
+     `saml.sp.use.relaystate=true`
 
-   * 다음 사용자 지정 속성을 추가하여 등록된 ID 공급자 목록을 렌더링하는 데 사용될 사용자 지정 JSP(Java Server Pages)에 대한 URL을 구성합니다. 사용자 지정 웹 응용 프로그램을 배포하지 않은 경우 기본 사용자 관리 페이지를 사용하여 목록을 렌더링합니다.
+   * 다음 사용자 지정 속성을 추가하여 등록된 ID 공급자 목록을 렌더링하는 데 사용되는 사용자 지정 JSP(Java Server Pages)에 대한 URL을 구성합니다. 사용자 지정 웹 응용 프로그램을 배포하지 않은 경우 기본 사용자 관리 페이지를 사용하여 목록을 렌더링합니다.
 
    `saml.sp.discovery.url=/custom/custom.jsp`
 

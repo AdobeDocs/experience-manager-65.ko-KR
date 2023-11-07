@@ -2,7 +2,7 @@
 title: Reader 확장 인증서 만료 및 영향
 description: Reader 확장 인증서 만료 및 영향
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: 6e9a7f3307ed05f887d60c7c7310100cd4596b23
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 2%
@@ -12,13 +12,13 @@ ht-degree: 2%
 
 # Reader 확장 인증서 만료 및 영향 {#expiration-of-reader-extensions-certificates-and-its-impact}
 
-Adobe Experience Manager Forms(AEM Forms) 고객 중 Adobe Managed Services 또는 On-Premise Enterprise Base 라이선스를 보유한 고객은 Acrobat Reader DC 확장 서비스를 사용할 수 있습니다. 이 서비스를 통해 조직은 추가적인 사용 권한과 함께 Acrobat Reader의 기능을 확장하여 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 PDF 문서에 사용 권한을 추가하고, Adobe Acrobat Reader을 사용하여 PDF 문서를 열 때 사용할 수 없는 기능(문서에 주석 추가, 양식 채우기, 문서 저장 등)을 활성화합니다. 서드파티 사용자는 권한이 활성화된 문서에서 작동하는 데 추가 소프트웨어나 플러그인이 필요하지 않습니다. 사용 권한이 추가된 PDF 문서를 권한 사용 문서라고 합니다. Acrobat Reader에서 권한이 활성화된 PDF 문서를 여는 사용자는 해당 문서에 대해 활성화된 작업을 수행할 수 있습니다.
+Adobe Managed Services 또는 온프레미스 엔터프라이즈 베이스 라이선스가 있는 Adobe Experience Manager Forms(AEM Forms) 고객은 Acrobat Reader DC 확장 서비스를 사용할 수 있습니다. 이 서비스를 통해 조직은 추가적인 사용 권한과 함께 Acrobat Reader의 기능을 확장하여 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 PDF 문서에 사용 권한을 추가하고, Adobe Acrobat Reader을 사용하여 PDF 문서를 열 때 사용할 수 없는 기능(문서에 주석 추가, 양식 채우기, 문서 저장 등)을 활성화합니다. 서드파티 사용자는 권한이 활성화된 문서에서 작동하는 데 추가 소프트웨어나 플러그인이 필요하지 않습니다. 사용 권한이 추가된 PDF 문서를 권한 사용 문서라고 합니다. Acrobat Reader에서 권한이 활성화된 PDF 문서를 여는 사용자는 해당 문서에 대해 활성화된 작업을 수행할 수 있습니다.
 
-Adobe은 PKI(공개 키 인프라)를 활용하여 라이선싱 및 기능 활성화에 사용할 디지털 인증서를 발행합니다. Adobe이 인증 기관에서 인증서를 발급하고 있습니다. **Adobe 루트 CA**, 2023년 1월 7일에 만료되도록 설정되었습니다. 인증서 만료는 인증서에서 발급된 프로덕션 인증서를 사용하여 확장된 PDF 문서에는 영향을 주지 않습니다 **Adobe 루트 CA** 기반 인증서(이전 인증서). 2023년 1월 7일 이전에 이전 인증서를 사용하여 확장된 모든 PDF 문서 및 고객이 다운로드한 문서를 포함하여 Reader은 적용되는 모든 사용 권한으로 계속 작동하며 업데이트가 필요하지 않습니다.
+Adobe은 PKI(공개 키 인프라)를 사용하여 라이선싱 및 기능 활성화에 사용할 디지털 인증서를 발행합니다. Adobe이 인증 기관에서 인증서를 발급하고 있습니다. **Adobe 루트 CA**, 2023년 1월 7일에 만료되도록 설정되었습니다. 인증서 만료는 인증서에서 발급된 프로덕션 인증서를 사용하여 확장된 PDF 문서에는 영향을 주지 않습니다 **Adobe 루트 CA** 기반 인증서(이전 인증서). 2023년 1월 7일 이전에 이전 인증서를 사용하여 확장된 모든 PDF 문서 및 고객이 다운로드한 문서를 포함하여 Reader은 적용되는 모든 사용 권한으로 계속 작동하며 업데이트가 필요하지 않습니다.
 
 새 인증 기관 **Adobe 루트 CA G2**&#x200B;이제 새 인증 기관을 기반으로 하는 인증서를 사용할 수 있습니다. 2023년 1월 7일 또는 그 이전에 새 인증서(를 기반으로 하는 인증서) 사용을 시작합니다 **Adobe 루트 CA G2** — Reader으로 새 PDF 문서를 확장합니다.  다음을 수행할 수 있습니다. [Adobe 라이선스 웹 사이트에서 새 인증서 받기](https://licensing.adobe.com/) 또는 Adobe 지원.
 
-## FAQ
+## 자주 묻는 질문
 
 **Q. Adobe 루트 인증서와 Acrobat Reader 확장 인증서 간의 차이점은 무엇입니까? Adobe 루트 인증서가 Acrobat Reader 확장 인증서에 종속됩니까? 이 두 인증서 모두 2023년 1월에 만료됩니까?**
 
@@ -50,11 +50,11 @@ A. 예. 2023년 1월 7일 이전에 &quot;Adobe 루트 CA&quot;(이전 인증 �
 
 **Q. &quot;Adobe 루트 CA&quot;(이전 인증 기관)에서 발급한 인증서로 확장된 PDF 문서를 계속 사용하려면 어떤 버전의 Adobe Acrobat Reader이 필요합니까?**
 
-A. Adobe Acrobat Reader 2020 이상 버전은 &quot;Adobe 루트 CA&quot;(이전 인증 기관)로 확장된 PDF 문서를 사용해야 합니다. 이 문서를 게시할 때 지원되는 Acrobat Reader 버전입니다. 를 사용하는 경우 [지원되지 않는 Adobe Acrobat 버전](https://helpx.adobe.com/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader 다운로드 및 설치](https://get.adobe.com/reader/).
+A. Adobe Acrobat Reader 2020 이상 버전은 &quot;Adobe 루트 CA&quot;(이전 인증 기관)로 확장된 PDF 문서를 사용해야 합니다. 이 문서를 게시할 때 지원되는 Acrobat Reader 버전입니다. 를 사용하는 경우 [지원되지 않는 Adobe Acrobat 버전](https://helpx.adobe.com/kr/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader 다운로드 및 설치](https://get.adobe.com/reader/).
 
 **Q. &quot;Adobe 루트 CA 2&quot;(새 인증 기관)에서 발급한 인증서로 확장된 PDF 문서를 계속 사용하려면 어떤 버전의 Adobe Acrobat Reader이 필요합니까?**
 
-A. &quot;Adobe 루트 CA 2&quot;(새 인증 기관)를 사용하여 확장된 PDF 문서를 사용하려면 Adobe Acrobat Reader 2020 이상이 필요합니다. 를 사용하는 경우 [지원되지 않는 Adobe Acrobat Reader 버전](https://helpx.adobe.com/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader 다운로드 및 설치](https://get.adobe.com/reader/).
+A. &quot;Adobe 루트 CA 2&quot;(새 인증 기관)를 사용하여 확장된 PDF 문서를 사용하려면 Adobe Acrobat Reader 2020 이상이 필요합니다. 를 사용하는 경우 [지원되지 않는 Adobe Acrobat Reader 버전](https://helpx.adobe.com/kr/support/programs/eol-matrix.html), Adobe은 다음을 권장합니다. [최신 버전의 Adobe Acrobat Reader 다운로드 및 설치](https://get.adobe.com/reader/).
 
 **Q. 기존 별칭을 계속 사용하면서 이전 Acrobat Reader 확장 인증서를 삭제하고 Adobe Experience Manager Forms Server에 새 인증서를 추가할 수 있습니까?**
 
@@ -178,7 +178,7 @@ The following command list the details of the pfx file. Before running the comma
 
 `keytool -v -list -storetype pkcs12 -keystore [name of your .pfx file]`
 
-For example keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
+For example, keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
 
 <!-- ### Remove usage rights from existing rights-enabled PDF documents
 

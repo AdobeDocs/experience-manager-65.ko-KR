@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 1%
@@ -233,7 +233,7 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
    * 유형: `sling:OsgiConfig`
    * 이름: 영구 ID(PID);
 
-     예: AEM WCM 버전 관리자 사용 `com.day.cq.wcm.core.impl.VersionManagerImpl`
+     예를 들어 AEM WCM 버전 관리자의 경우 `com.day.cq.wcm.core.impl.VersionManagerImpl`
 
    >[!NOTE]
    >

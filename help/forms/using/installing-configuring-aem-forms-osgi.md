@@ -10,9 +10,9 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1879'
 ht-degree: 10%
 
 ---
@@ -231,7 +231,7 @@ AEM Forms과 함께 Adobe Analytics을 사용하려면 다음을 참조하십시
 
 #### Adobe Target 통합 {#integrate-adobe-target}
 
-고객이 제공하는 경험이 매력적이지 않을 경우 양식을 포기할 가능성이 높습니다. 고객에게는 번거로운 일이지만, 조직의 지원 규모와 비용도 증가할 수 있습니다. 전환율을 높이는 올바른 고객 경험을 파악하고 제공하는 것은 중요할 뿐만 아니라 어려운 일입니다. AEM forms가 이 문제의 키를 쥐고 있습니다.
+고객이 제공하는 경험이 매력적이지 않을 경우 양식을 포기할 가능성이 높습니다. 고객에게는 번거로운 일이지만, 조직의 지원 규모와 비용도 증가할 수 있습니다. 전환율을 높이는 올바른 고객 경험을 파악하고 제공하는 것은 중요하고 어려운 일입니다. AEM forms가 이 문제의 키를 쥐고 있습니다.
 
 AEM forms는 Adobe Marketing Cloud 솔루션인 Adobe Target과 통합되어 여러 디지털 채널에서 개인화되고 매력적인 고객 경험을 제공합니다. Adobe Target을 사용하여 A/B 테스트 적응형 양식을 만들려면 [Adobe Target과 AEM Forms 통합](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 

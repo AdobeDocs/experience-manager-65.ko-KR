@@ -1,19 +1,15 @@
 ---
 title: 클래식 UI 태깅 콘솔
-seo-title: Classic UI Tagging Console
 description: Adobe Experience Manager Classic UI 태깅 콘솔에 대해 알아봅니다.
-seo-description: Learn about the Classic UI Tagging Console.
-uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '891'
 ht-degree: 2%
 
 ---
@@ -176,7 +172,7 @@ ht-degree: 2%
 
 기본적으로 페이지 속성 대화 상자에 태그가 표시됩니다 `titles`페이지 언어에 따라.
 
-일반적으로 태그의 언어는 페이지 언어를 사용할 수 있는 경우 페이지 언어에서 가져옵니다. 다음의 경우 [`tag` 위젯](/help/sites-developing/building.md#tagging-on-the-client-side) 는 다른 경우(예: 양식 또는 대화 상자)에 사용되며 태그 언어는 컨텍스트에 따라 다릅니다.
+일반적으로 태그의 언어는 페이지 언어를 사용할 수 있는 경우 페이지 언어에서 가져옵니다. 다음의 경우 [`tag` 위젯](/help/sites-developing/building.md#tagging-on-the-client-side) 는 다른 경우(예: 양식이나 대화 상자)에 사용되며 태그 언어는 컨텍스트에 따라 다릅니다.
 
 >[!NOTE]
 >

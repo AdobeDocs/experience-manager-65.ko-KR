@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1878'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ Forms 서비스는 사용자가 양식에 입력하는 값을 계산하고 결�
 
 **A.** NumericField1이라는 필드 **B.** NumericField2라는 필드 **C.** NumericField3이라는 필드
 
-이 양식 디자인에 있는 스크립트의 구문은 다음과 같습니다.
+이 양식 디자인에서 스크립트의 구문은 다음과 같습니다.
 
 ```javascript
      NumericField3 = NumericField2 + NumericField1
@@ -152,14 +152,13 @@ Forms API(Java)를 사용하여 양식 데이터 계산:
    * 호출 `FormsServiceClient` 개체 `processFormSubmission` 메서드를 실행하고 다음 값을 전달합니다.
 
       * 다음 `com.adobe.idp.Document` 양식 데이터가 포함된 개체입니다.
-      * 모든 관련 HTTP 헤더를 포함하는 환경 변수를 지정하는 문자열 값입니다. 에 대해 하나 이상의 값을 지정하여 처리할 콘텐츠 유형을 지정해야 합니다. `CONTENT_TYPE` 환경 변수입니다. 예를 들어 XML 및 PDF 데이터를 처리하려면 이 매개 변수에 대해 다음 문자열 값을 지정합니다. `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+      * 모든 관련 HTTP 헤더를 포함하는 환경 변수를 지정하는 문자열 값입니다. 에 대해 하나 이상의 값을 지정하여 처리할 콘텐츠 유형을 지정합니다. `CONTENT_TYPE` 환경 변수입니다. 예를 들어 XML 및 PDF 데이터를 처리하려면 이 매개 변수에 대해 다음 문자열 값을 지정합니다. `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * 다음을 지정하는 문자열 값 `HTTP_USER_AGENT` 헤더 값, 예: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` 런타임 옵션을 저장하는 개체입니다.
 
-      다음 `processFormSubmission` 메서드가 을 반환합니다. `FormsResult` 양식 제출 결과를 포함하는 개체입니다.
+     다음 `processFormSubmission` 메서드가 을 반환합니다. `FormsResult` 양식 제출 결과를 포함하는 개체입니다.
 
    * 제출된 양식과 연결된 처리 상태가 `1` 를 호출하여 `FormsResult` 개체 `getAction` 메서드를 사용합니다. 이 메서드가 값을 반환하는 경우 `1`를 사용하여 계산을 수행했으며 클라이언트 웹 브라우저에 데이터를 다시 쓸 수 있습니다.
-
 
 1. 양식 데이터 스트림을 클라이언트 웹 브라우저에 다시 씁니다.
 
@@ -211,10 +210,9 @@ Forms API(웹 서비스)를 사용하여 양식 데이터 계산:
       * 비어 있음 `MyArrayOf_xsd_anyTypeHolder` 메서드에서 채운 개체입니다. 이 매개 변수는 양식과 함께 제출되는 첨부 파일을 저장하는 데 사용됩니다.
       * 비어 있음 `FormsResultHolder` 제출된 양식으로 메서드에 의해 채워지는 개체입니다.
 
-      다음 `processFormSubmission` 메서드는 `FormsResultHolder` 양식 제출 결과가 포함된 매개변수 다음 `processFormSubmission` 메서드가 을 반환합니다. `FormsResult` 양식 제출 결과를 포함하는 개체입니다.
+     다음 `processFormSubmission` 메서드는 `FormsResultHolder` 양식 제출 결과가 포함된 매개변수 다음 `processFormSubmission` 메서드가 을 반환합니다. `FormsResult` 양식 제출 결과를 포함하는 개체입니다.
 
    * 제출된 양식과 연결된 처리 상태가 `1` 를 호출하여 `FormsResult` 개체 `getAction` 메서드를 사용합니다. 이 메서드가 값을 반환하는 경우 `1`를 사용하여 계산을 수행했으며 클라이언트 웹 브라우저에 데이터를 다시 쓸 수 있습니다.
-
 
 1. 양식 데이터 스트림을 클라이언트 웹 브라우저에 다시 씁니다.
 

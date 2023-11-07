@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
 exl-id: 725c81d0-0258-4118-8b01-29fd7bcaf9b3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '180'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ AEM을 사용하면 콘텐츠에서 동적으로 가져온 텍스트가 포함�
 
    `/apps/<your-project>/`
 
-1. 아래 `/apps/<your-project>/` 새 노드 만들기:
+1. 아래 `/apps/<your-project>/` 노드 만들기:
 
    * **이름**: `fonts`
    * **유형**: `sling:Folder`

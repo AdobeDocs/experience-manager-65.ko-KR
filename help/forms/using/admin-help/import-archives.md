@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1471'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 0%
 
      **ADD_REMOVE_ENDPOINTS_PERM:** 서비스의 끝점을 추가, 제거 및 수정하려면
 
-     **CREATE_VERSION_PERM:** 서비스의 새 버전을 만들려면
+     **CREATE_VERSION_PERM:** 서비스 버전을 생성하려면 다음을 수행하십시오
 
      **DELETE_버전_PERM:** 서비스 버전을 삭제하려면
 
@@ -146,7 +146,7 @@ ht-degree: 0%
 
      **ADD_REMOVE_ENDPOINTS_PERM:** 서비스의 끝점을 추가, 제거 및 수정하려면
 
-     **CREATE_VERSION_PERM:** 서비스의 새 버전을 만들려면
+     **CREATE_VERSION_PERM:** 서비스 버전을 생성하려면 다음을 수행하십시오
 
      **DELETE_버전_PERM:** 서비스 버전을 삭제하려면
 

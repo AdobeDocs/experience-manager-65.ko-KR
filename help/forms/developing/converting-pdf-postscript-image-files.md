@@ -1,19 +1,15 @@
 ---
 title: PDF을 Postscript 및 이미지 파일로 변환
-seo-title: Converting PDF to Postscript andImage Files
-description: PDF 변환 서비스를 사용하여 PDF 문서를 Java API 및 웹 서비스 API를 사용하여 PostScript와 다양한 이미지 형식(JPEG, JPEG 2000, PNG 및 TIFF)으로 변환합니다.
-seo-description: Use the Convert PDF service to convert PDF documents to PostScript and to a number of image formats (JPEG, JPEG 2000, PNG, and TIFF) using the Java API and Web Service API.
-uuid: 07da0391-7180-4197-aaa6-ae753d753b84
+description: PDF 변환 서비스를 사용하여 PDF 문서를 Java API 및 웹 서비스 API를 사용하여 PostScript와 여러 이미지 형식(JPEG, JPEG 2000, PNG 및 TIFF)으로 변환합니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2801'
 ht-degree: 0%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 0%
 
 **변환 PDF 서비스 정보**
 
-PDF 변환 서비스는 PDF 문서를 PostScript와 다양한 이미지 형식(JPEG, JPEG 2000, PNG 및 TIFF)으로 변환합니다. PDF 문서를 PostScript로 변환하면 모든 PostScript 프린터에서 무인 서버 기반 인쇄에 유용합니다. PDF 문서를 다중 페이지 TIFF 파일로 변환하는 것은 PDF 문서를 지원하지 않는 컨텐츠 관리 시스템에 문서를 보관할 때 실용적입니다.
+PDF 변환 서비스는 PDF 문서를 PostScript와 여러 이미지 형식(JPEG, JPEG 2000, PNG 및 TIFF)으로 변환합니다. PDF 문서를 PostScript로 변환하면 모든 PostScript 프린터에서 무인 서버 기반 인쇄에 유용합니다. PDF 문서를 다중 페이지 TIFF 파일로 변환하는 것은 PDF 문서를 지원하지 않는 컨텐츠 관리 시스템에 문서를 보관할 때 실용적입니다.
 
 PDF 변환 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
@@ -240,11 +236,11 @@ PDF 서비스 변환 작업을 프로그래밍 방식으로 수행하려면 먼�
 
 **변환할 PDF 문서 검색**
 
-이미지로 변환하려면 PDF 문서를 검색해야 합니다. 대화형 PDF 문서를 이미지로 변환할 수 없습니다. 그렇게 하려고 하면 예외가 발생합니다. 대화형 PDF 문서를 이미지 파일로 변환하려면 변환하기 전에 PDF 문서를 병합해야 합니다. (참조: [PDF 문서 병합](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
+PDF 문서를 검색하여 이미지로 변환합니다. 대화형 PDF 문서를 이미지로 변환할 수 없습니다. 그렇게 하려고 하면 예외가 발생합니다. 대화형 PDF 문서를 이미지 파일로 변환하려면 변환하기 전에 PDF 문서를 병합해야 합니다. (참조: [PDF 문서 병합](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 
 **런타임 옵션 설정**
 
-이미지 형식 및 해상도 값과 같은 런타임 옵션을 설정해야 합니다. 런타임 값에 대한 자세한 내용은 `ToImageOptionsSpec` 의 클래스 참조 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+이미지 형식 및 해상도 값과 같은 런타임 옵션을 설정합니다. 런타임 값에 대한 자세한 내용은 `ToImageOptionsSpec` 의 클래스 참조 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **PDF을 이미지로 변환**
 

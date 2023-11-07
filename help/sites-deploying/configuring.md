@@ -7,7 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 1%
@@ -89,11 +89,11 @@ AEM의 모든 요소(예: 저장소 및 Dispatcher)는 IPv4 및 IPv6 네트워�
 
 * IPv6 주소
 
-  예 `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  예를 들어, `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * IPv4 주소
 
-  예 `https://123.1.1.4:4502`
+  예를 들어, `https://123.1.1.4:4502`
 
 * 서버 이름
 

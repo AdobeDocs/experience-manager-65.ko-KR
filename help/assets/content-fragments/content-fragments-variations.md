@@ -4,9 +4,9 @@ description: 변형에서 조각에 대한 콘텐츠를 작성한 다음 목적�
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2388'
 ht-degree: 62%
 
 ---
@@ -183,7 +183,7 @@ Markdown을 사용하여 텍스트 서식을 지정할 수 있습니다. 다음�
 옵션 **컨텐츠 조각 편집** 새 창 탭에서 해당 조각을 엽니다.
 
 <!--
-The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
+The option **Edit Content Fragment** opens that fragment in a new editor tab (within the same browser tab).
 
 Selecting the original tab again (for example, **Little Pony Inc.**), will close this secondary tab (in this case, **Adam Smith**).
 
@@ -435,7 +435,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 1. 조각을 열고 사이드 패널에서 **변형**&#x200B;을 선택합니다.
 1. 필요한 변형을 선택합니다.
-1. **작업** 드롭다운에서 **이름 바꾸기**&#x200B;을 선택합니다.
+1. **작업** 드롭다운에서 **이름 바꾸기**&#x200B;를 선택합니다.
 
 1. 결과 대화 상자에서 새 **제목** 및/또는 **설명** 을 입력합니다.
 

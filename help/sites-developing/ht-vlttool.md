@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2707'
 ht-degree: 2%
 
 ---
 
 # VLT 도구 사용 방법 {#how-to-use-the-vlt-tool}
 
-Jackrabbit FileVault 툴(VLT)은 [Apache Foundation](https://www.apache.org/) Jackrabbit/AEM 인스턴스의 내용을 파일 시스템에 매핑합니다. VLT 도구는 SVN(Subversion) 클라이언트와 같은 소스 제어 시스템 클라이언트와 유사한 기능을 가지며, 일반적인 체크 인, 체크 아웃 및 관리 작업뿐만 아니라 프로젝트 컨텐츠의 유연한 표현을 위한 구성 옵션을 제공합니다.
+Jackrabbit FileVault 툴(VLT)은 [Apache Foundation](https://www.apache.org/) Jackrabbit/AEM 인스턴스의 내용을 파일 시스템에 매핑합니다. VLT 도구는 SVN(Subversion) 클라이언트와 같은 소스 제어 시스템 클라이언트와 유사한 기능을 가지며, 일반적인 체크 인, 체크 아웃 및 관리 작업 및 프로젝트 내용을 유연하게 표현하기 위한 구성 옵션을 제공합니다.
 
-명령줄에서 VLT 도구를 실행합니다. 이 문서에서는 시작 및 도움말, 전체 목록을 포함하여 도구 사용 방법에 대해 설명합니다 [명령](#vlt-commands) 및 사용 가능 [옵션](#vlt-global-options).
+명령줄에서 VLT 도구를 실행합니다. 이 문서에서는 시작 및 도움말 방법을 포함하여 도구 사용 방법과 모든 항목에 대한 목록을 설명합니다 [명령](#vlt-commands) 및 사용 가능 [옵션](#vlt-global-options).
 
 ## 개념 및 아키텍처 {#concepts-and-architecture}
 
@@ -440,7 +440,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | 핫픽스 링크(name,id)용 printf 형식(예: ) `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | 핫픽스 링크(name,id)의 printf 형식(예: ) `[CQ520_HF_%s|%s]` |
 | `-v (--verbose)` | 자세한 정보 출력 |
 | `-q (--quiet)` | 가능한 적게 인쇄합니다. |
 | `<localPaths> [<localPaths> ...]` | 로컬 경로 |

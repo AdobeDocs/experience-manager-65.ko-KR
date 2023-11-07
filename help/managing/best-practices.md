@@ -7,9 +7,9 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3240'
+source-wordcount: '3238'
 ht-degree: 2%
 
 ---
@@ -351,7 +351,7 @@ Adobe Experience Manager(AEM)를 구현하기 위해 프로젝트를 관리하�
 
 ### 성능 및 테스트 {#performance-and-testing}
 
-새로운 애플리케이션을 사용할 수 있게 되면 기능 및 기능 모두에 대해 엄격한 테스트를 거쳐야 합니다 [성능](/help/sites-deploying/configuring-performance.md).
+새로운 애플리케이션을 사용할 수 있게 되면 기능 및 기능 모두에서 엄격한 테스트를 거쳐야 합니다 [성능](/help/sites-deploying/configuring-performance.md).
 
 >[!NOTE]
 >

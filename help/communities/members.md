@@ -7,9 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '956'
 ht-degree: 4%
 
 ---
@@ -145,7 +145,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
 ### 배지 탭 {#badges-tab}
 
-다음 `BADGES` 패널은 배지를 수동으로 할당하고 해지하는 기능을 제공합니다. 배지는 할당된 역할과 일반적으로 얻은 배지에 대해 할당될 수 있습니다.
+다음 `BADGES` 패널은 배지를 수동으로 할당하고 해지하는 기능을 제공합니다. 배지는 할당된 역할에 대해 지정될 수 있으며 일반적으로 습득되는 배지입니다.
 
 참조: [채점 및 배지](implementing-scoring.md).
 
@@ -174,7 +174,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
 ![새 그룹 만들기 창](assets/group-console1.png)
 
-새 게시측 구성원 그룹을 만드는 데 필요한 필드는 다음과 같습니다.
+게시측 구성원 그룹을 만드는 데 필요한 필드는 다음과 같습니다.
 
 * **[!UICONTROL ID]**
 

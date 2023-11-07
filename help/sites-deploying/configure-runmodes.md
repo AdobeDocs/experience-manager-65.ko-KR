@@ -1,26 +1,22 @@
 ---
 title: 실행 모드
-seo-title: Run Modes
 description: 실행 모드를 사용하여 특정 목적을 위해 AEM 인스턴스를 조정하는 방법을 알아봅니다.
-seo-description: Learn how to tune your AEM instance for specific purposes by using run modes.
-uuid: 8a0c6e5c-4fae-43e2-b745-eee58f346ceb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '744'
 ht-degree: 1%
 
 ---
 
 # 실행 모드{#run-modes}
 
-실행 모드를 사용하면 작성자 또는 게시, 테스트, 개발, 인트라넷 또는 기타 등의 특정 목적으로 AEM 인스턴스를 조정할 수 있습니다.
+실행 모드를 사용하면 작성자 또는 게시, 테스트, 개발, 인트라넷 또는 기타 등의 특정 목적을 위해 AEM 인스턴스를 조정할 수 있습니다.
 
 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -153,7 +149,7 @@ java -jar cq-56-p4545.jar -r dev
 
 시작 스크립트의 시스템 속성을 사용하여 실행 모드를 지정할 수 있습니다.
 
-* 예를 들어 다음을 사용하여 인스턴스를 미국에 있는 프로덕션 게시 인스턴스로 시작합니다.
+* 예를 들어, 다음을 사용하여 인스턴스를 미국에서 프로덕션 게시 인스턴스로 시작합니다.
 
   `-Dsling.run.modes=publish,prod,us`
 

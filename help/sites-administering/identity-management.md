@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1250'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ A [양식](/help/sites-authoring/default-components.md#form-component) 를 사�
 
 이렇게 하면 방문자에게 의 표준 필드가 제공됩니다 **사용자 이름** 및 **암호**, 포함 **로그인** 자격 증명을 입력할 때 로그인 프로세스를 활성화하는 버튼입니다.
 
-예를 들어 사용자는 다음을 사용하여 로그인하거나 새 계정을 만들 수 있습니다. **로그인** 페이지를 사용하는 Geometrixx 도구 모음의 옵션입니다.
+예를 들어 사용자는 다음을 사용하여 로그인하거나 계정을 만들 수 있습니다. **로그인** 페이지를 사용하는 Geometrixx 도구 모음의 옵션입니다.
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -103,7 +103,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. 클릭 **내 프로필** 오른쪽 상단에서 현재 계정의 프로필이 표시됩니다(예: 관리자).
+1. 클릭 **내 프로필** 오른쪽 상단에서 현재 계정의 프로필(예: 관리자)이 표시됩니다.
 1. 누르기 **control-alt-C** 를 클릭하여 클라이언트 컨텍스트를 엽니다.
 1. Client Context의 왼쪽 상단 모서리에서 **프로필 로드** 단추를 클릭합니다.
 
@@ -119,7 +119,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 ## 프로필 정의에 필드 추가 {#adding-fields-to-the-profile-definition}
 
-프로필 정의에 필드를 추가할 수 있습니다. 예를 들어 Geometrixx 프로필에 &quot;즐겨 찾는 색상&quot; 필드를 추가하려면:
+프로필 정의에 필드를 추가할 수 있습니다. 예를 들어 Geometrixx 프로필에 &quot;즐겨 찾는 색상&quot; 필드를 추가하려면 다음을 수행합니다.
 
 1. 웹 사이트 콘솔에서 Geometrixx Outdoors 사이트 > 영어 > 사용자 > 내 프로필로 이동합니다.
 1. 를 두 번 클릭합니다. **내 프로필** 편집할 페이지를 엽니다.
@@ -163,7 +163,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
   상태와 관련된 작업을 관리합니다.
 
-여러 상태를 정의할 수 있습니다. 예를 들어 Geometrixx에서 다음과 같은 상태를 정의할 수 있습니다.
+여러 상태를 정의할 수 있습니다. 예를 들어 Geometrixx에서 다음과 같은 항목을 정의할 수 있습니다.
 
 * 뉴스레터 또는 댓글 스레드에서 알림 구독(또는 구독 취소)
 * 친구에게 연결 추가 및 제거

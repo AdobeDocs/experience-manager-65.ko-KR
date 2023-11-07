@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1283'
 ht-degree: 5%
 
 ---
@@ -269,7 +269,7 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
 
 >[!CAUTION]
 >
->사용자 지정 스타일시트 clientlib을 머리말의 일부로 로드해야 작성자와 게시에서 제대로 작동할 수 있습니다.
+>사용자 지정 스타일시트 clientlibs를 작성자 및 게시에서 제대로 작동하려면 헤더의 일부로 로드해야 합니다.
 
 ## 페이지에 대한 레이아웃 컨테이너 구성 요소 활성화 {#enable-the-layout-container-component-for-page}
 

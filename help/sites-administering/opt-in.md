@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1308'
 ht-degree: 10%
 
 ---
@@ -27,11 +27,11 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
 
 * 작업을 통해 통합을 구성합니다.
 
-   이 작업은 즉시 또는 나중에 수행할 수 있으며, 일부 작업이 수행될 때까지 작업은 받은 편지함에 유지됩니다. 두 경우 모두 UI에서 직접 구성하거나 사전 정의된 를 사용하여 구성할 수 있습니다 `.properties` 파일.
+  이 작업은 즉시 또는 나중에 수행할 수 있으며, 일부 작업이 수행될 때까지 작업은 받은 편지함에 유지됩니다. 두 경우 모두 UI에서 직접 구성하거나 사전 정의된 를 사용하여 구성할 수 있습니다 `.properties` 파일.
 
 * 통합을 옵트아웃합니다.
 
-   다음을 원하는 경우 이 옵션을 고려하십시오. [수동으로 통합 구성](/help/sites-administering/marketing-cloud.md). 참조: [DTM을 사용하여 AEM과 Adobe Target 및 Adobe Analytics 통합](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+  다음을 원하는 경우 이 옵션을 고려하십시오. [수동으로 통합 구성](/help/sites-administering/marketing-cloud.md). 참조: [DTM을 사용하여 AEM과 Adobe Target 및 Adobe Analytics 통합](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 * 스크립트를 사용하여 설정 및 프로비저닝을 구성합니다.
 
@@ -40,7 +40,7 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
 다음 항목과의 통합을 선택합니다.
 
 * Analytics를 사용하여 페이지 추적 및 분석 기능을 사용할 수 있습니다.
-* Target을 통해 해당 개인화 기능을 사용할 수 있습니다.
+* Target을 사용하여 개인화 기능을 사용할 수 있습니다.
 
 두 옵션 모두 사용자 계정 정보를 제공하고 추적되는 페이지를 지정해야 합니다.
 
@@ -72,9 +72,9 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
    1. 적절한 자격 증명이 인증됩니다.
    1. Analytics 계정이 인증되면 사용할 Analytics 보고서 세트를 선택합니다. AEM은 해당 Analytics 보고서 세트를 검색합니다. 상태가 다음으로 업데이트됨 **추가됨**.
 
-1. Target:
+1. Target용:
 
-   1. Target에 대한 사용자 계정 정보를 입력한 다음 해당 을(를) 클릭합니다 **추가** 단추를 클릭합니다.
+   1. Target에 대한 사용자 계정 정보를 입력한 다음 해당 을 클릭합니다 **추가** 단추를 클릭합니다.
    1. 적절한 자격 증명이 인증됩니다. 상태가 다음으로 업데이트됨 **추가됨**.
 
 1. **다음**&#x200B;을 선택합니다.
@@ -93,7 +93,7 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
 * 이러한 제품과 통합하지 않으려고 합니다.
 * 통합을 수동으로 구성하기를 선호합니다.
 
-   수동으로 통합 구성에 대한 자세한 내용은 다음을 참조하십시오. [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics.md) 및 [Adobe Target과 통합](/help/sites-administering/target.md).
+  수동으로 통합 구성에 대한 자세한 내용은 다음을 참조하십시오. [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics.md) 및 [Adobe Target과 통합](/help/sites-administering/target.md).
 
 옵트아웃하려면 사전 로드된 작업을 완료해야 합니다.
 
@@ -101,7 +101,7 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
 
 ## 속성 파일을 사용하여 계정 정보 제공 {#providing-account-information-using-a-properties-file}
 
-서버 시작 시 AEM이 읽는 속성 파일을 설치하여 Analytics 및 Account와의 통합을 위한 Target 속성을 구성합니다. 속성 파일을 사용하면 옵트인 마법사가 파일의 속성을 자동으로 사용하고 그에 따라 클라우드 구성이 생성됩니다.
+서버 시작 시 AEM이 읽는 속성 파일을 설치하여 Analytics 및 Target과의 통합을 위한 계정 속성을 구성합니다. 속성 파일을 사용하면 옵트인 마법사가 파일의 속성을 자동으로 사용하고 그에 따라 클라우드 구성이 생성됩니다.
 
 속성 파일은 AEM 프로세스가 사용하는 작업 디렉토리(일반적으로 JAR 파일과 동일한 디렉토리)에 저장하는 marketingcloud.properties라는 텍스트 파일입니다. 파일에는 다음 속성이 포함되어 있습니다.
 
@@ -114,7 +114,7 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
 * target.email: Target 계정을 인증하는 데 사용하는 이메일 주소입니다.
 * target.password: 이메일 주소와 연결된 암호입니다.
 
-속성과 값은 등호(=)로 구분됩니다. Analytics 속성 앞에는 가 붙습니다. `analytics`및 Target 속성 앞에 가 붙습니다. `target`. 서비스를 구성하려면 해당 서비스의 모든 속성에 대한 값을 제공합니다. 서비스를 구성하지 않으려면 해당 서비스에 대한 값을 제공하지 마십시오.
+속성과 값은 등호(=)로 구분됩니다. Analytics 속성 앞에는 가 붙습니다. `analytics`, Target 속성 앞에 가 붙습니다. `target`. 서비스를 구성하려면 해당 서비스의 모든 속성에 대한 값을 제공합니다. 서비스를 구성하지 않으려면 해당 서비스에 대한 값을 제공하지 마십시오.
 
 다음 예 `.properties` 파일에는 Analytics용 클라우드 구성을 만들기 위한 속성 값이 포함되어 있습니다.
 
@@ -151,7 +151,7 @@ target.password=
 
 ## 클라우드 구성 정보 {#about-the-cloud-configurations}
 
-Analytics 및 Target과의 통합을 구성하면 AEM에서 필요한 클라우드 구성 및 프레임워크를 자동으로 생성합니다. 예를 들어 Analytics 클라우드 구성을 프로비저닝된 Analytics 계정이라고 합니다.
+Analytics 및 Target과의 통합을 구성하면 AEM이 필요한 클라우드 구성 및 프레임워크를 자동으로 생성합니다. 예를 들어 Analytics 클라우드 구성을 프로비저닝된 Analytics 계정이라고 합니다.
 
 클라우드 구성을 변경할 필요가 없습니다. 그러나 필요에 따라 프레임워크를 구성할 수 있습니다. (참조: [Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑](/help/sites-administering/adobeanalytics-mapping.md) 및 [Target 프레임워크 추가](/help/sites-administering/target.md).)
 
@@ -185,11 +185,11 @@ Analytics 및 Target과의 통합을 구성하면 AEM에서 필요한 클라우�
    * `servicename`= `analytics|target`
    * `path`=생성된 클라우드 서비스 구성을 첨부할 AEM 페이지 경로
 
-   예를 들어 Analytics와 Target 구성을 모두 만들고 we.retail 페이지에 첨부하는 curl 요청은 다음과 같습니다.
+  예를 들어 Analytics와 Target 구성을 모두 만들고 we.retail 페이지에 첨부하는 curl 요청은 다음과 같습니다.
 
-   ```shell
-   curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
-   ```
+  ```shell
+  curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
+  ```
 
 * 를 사용하지 않으려면 **marketingcloud.properties** 그러면 자격 증명과 매개 변수를 전송해야 합니다. 예를 들면 다음과 같습니다.
 
@@ -205,8 +205,8 @@ Analytics 및 Target과의 통합을 구성하면 AEM에서 필요한 클라우�
    * target.email= `me@adobe.com`
    * target.password= `password`
 
-   이 경우 Analytics와 Target 구성을 모두 만들고 we-retail 페이지에 첨부하는 curl 요청은 다음과 같습니다.
+  이 경우 Analytics와 Target 구성을 모두 만들고 we-retail 페이지에 첨부하는 curl 요청은 다음과 같습니다.
 
-   ```shell
-   curl -v -u admin:admin -X POST -d"automaticProvisioning=false&servicename=target&servicename=analytics&path=/content/we-retail&analytics.server=https://servername/&analytics.company=Name of company&analytics.username=me&analytics.secret=secret&analytics.reportsuite=weretail&target.clientcode=mycompany&target.email=me@adobe.com&target.password=password" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
-   ```
+  ```shell
+  curl -v -u admin:admin -X POST -d"automaticProvisioning=false&servicename=target&servicename=analytics&path=/content/we-retail&analytics.server=https://servername/&analytics.company=Name of company&analytics.username=me&analytics.secret=secret&analytics.reportsuite=weretail&target.clientcode=mycompany&target.email=me@adobe.com&target.password=password" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
+  ```

@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 role: Developer
 exl-id: 7d6fd230-e477-4286-9fb3-18a3474e3e48
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2123'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ map.pdf 파일과 directions.pdf 파일은 모두 컬렉션 개체에 배치해�
 
 어셈블러 서비스가 `java.util.Map` 개체에서 가져올 수 있는 개체 `AssemblerResult` 개체와 작업 결과를 포함하는 입니다. 반환된 `java.util.Map` 객체에는 결과 문서 및 모든 예외가 포함됩니다.
 
-다음 표에는 반환된 부분에 위치할 수 있는 몇 가지 키 값과 객체 유형이 요약되어 있습니다 `java.util.Map` 개체.
+다음 표에는 반환될 수 있는 키 값과 객체 유형이 요약되어 있습니다 `java.util.Map` 개체.
 
 <table>
  <thead>

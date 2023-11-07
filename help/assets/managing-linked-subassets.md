@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ INDD 파일이 업로드되면 다음 자산을 쿼리하여 참조를 가져옵
 
 ### ZIP 파일을 내보내어 에셋에 대한 참조 만들기 {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. 의 단계를 수행합니다. [워크플로우 모델 만들기](/help/sites-developing/workflows-models.md) 새 워크플로를 만듭니다.
+1. 의 단계를 수행합니다. [워크플로우 모델 만들기](/help/sites-developing/workflows-models.md) 워크플로우를 만듭니다.
 1. 사용 [패키지 기능](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) / [!DNL Adobe InDesign] 문서를 내보냅니다. [!DNL Adobe InDesign] 는 문서 및 연결된 에셋을 패키지로 내보낼 수 있습니다. 이 경우 내보낸 폴더에는 `Links` 폴더에 하위 에셋이 포함된 폴더 [!DNL InDesign] 파일. 다음 `Links` 폴더는 INDD 파일과 동일한 폴더에 있습니다.
 1. ZIP 파일을 만들어 [!DNL Experience Manager] 리포지토리.
 1. 시작 `Unarchiver` 워크플로입니다.

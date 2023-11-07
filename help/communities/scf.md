@@ -1,14 +1,14 @@
 ---
 title: 소셜 구성 요소 프레임워크
-description: SCF(소셜 구성 요소 프레임워크)를 사용하면 커뮤니티 구성 요소를 구성, 사용자 지정 및 확장하는 프로세스를 단순화할 수 있습니다
+description: SCF(소셜 구성 요소 프레임워크)를 통해 커뮤니티 구성 요소를 구성, 사용자 지정 및 확장하는 프로세스를 간소화할 수 있습니다
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ SocialComponent API는 클라이언트가 보기 계층 또는 HTTP 클라이언
 * 작업 중 사용자 정의 처리를 추가하려면 다음을 수행합니다.
    * 쓰기 [작업 확장](server-customize.md#operationextension-class).
 * 사용자 지정 작업을 추가하려면:
-   * 새로 만들기 [Sling Post 작업](server-customize.md#postoperation-class).
+   * 만들기 [Sling Post 작업](server-customize.md#postoperation-class).
    * 기존 항목 사용 [OperationServices](server-customize.md#operationservice-class) 필요한 경우.
    * 필요에 따라 클라이언트측에서 작업을 호출하는 JavaScript 코드를 추가합니다.
 

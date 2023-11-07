@@ -6,7 +6,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 1%
@@ -71,11 +71,11 @@ AEM용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 발
 
 페이지의 콘텐츠 구조는 AEM에 저장됩니다. 페이지 모델은 SPA 구성 요소를 매핑하고 인스턴스화하는 데 사용됩니다. SPA 개발자는 AEM 구성 요소에 매핑되는 SPA 구성 요소를 만듭니다. 이를 위해 리소스 유형(또는 AEM 구성 요소에 대한 경로)을 고유 키로 사용합니다.
 
-SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라 콘텐츠에 대한 변경 사항을 업데이트해야 합니다. 동적 구성 요소를 활용하는 패턴은 제공된 페이지 모델 구조에 따라 구성 요소를 즉시 인스턴스화하는 데 사용해야 합니다.
+SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라 콘텐츠에 대한 변경 사항을 업데이트해야 합니다. 동적 구성 요소를 사용하는 패턴은 제공된 페이지 모델 구조에 따라 구성 요소를 즉시 인스턴스화하는 데 사용해야 합니다.
 
 ### 메타 필드 {#meta-fields}
 
-페이지 모델은 를 기반으로 하는 JSON 모델 내보내기를 활용합니다. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html) API. 내보내기 가능한 슬링 모델은 기본 라이브러리가 데이터 모델을 해석할 수 있도록 다음 필드 목록을 표시합니다.
+페이지 모델은 를 기반으로 하는 JSON 모델 내보내기를 사용합니다. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html) API. 내보내기 가능한 슬링 모델은 기본 라이브러리가 데이터 모델을 해석할 수 있도록 다음 필드 목록을 표시합니다.
 
 * `:type`: AEM 리소스 유형(기본값 = 리소스 유형)
 * `:children`: 현재 리소스의 계층 구조 하위 항목입니다. 하위 항목은 현재 리소스의 내부 콘텐츠에 속하지 않습니다(페이지를 나타내는 항목에서 찾을 수 있음)

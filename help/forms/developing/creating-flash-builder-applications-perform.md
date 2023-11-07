@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1795'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ SSO 인증을 수행하는 클라이언트 애플리케이션을 만드는 방�
 1. 에 대한 호출 `ISSOManager.singleSignOn` 만들어짐. 클라이언트 애플리케이션은 User Manager 보안 서블릿에 요청을 전송합니다.
 1. 보안 서블릿이 사용자를 인증하면 `ISSOManager` 디스패치 `SSOEvent.AUTHENTICATION_SUCCESS`. 이에 대한 응답으로 클라이언트 애플리케이션이 기본 페이지를 표시합니다. 이 예제에서 기본 페이지는 MyApplication/EncryptDocument라는 AEM Forms 단기 프로세스를 호출합니다.
 1. 보안 서블릿이 사용자가 유효한지 확인할 수 없는 경우 애플리케이션이 사용자 자격 증명을 다시 요청합니다. 다음 `ISSOManager` 클래스 발송 `SSOEvent.AUTHENTICATION_REQUIRED` 이벤트. 클라이언트 응용 프로그램은 로그인 페이지를 표시합니다.
-1. 로그인 페이지에 제공된 자격 증명은 `ISSOManager.login` 메서드를 사용합니다. 인증에 성공하면 3단계로 이동합니다. 그렇지 않으면 `SSOEvent.AUTHENTICATION_FAILED` 이벤트가 트리거됩니다. 클라이언트 응용 프로그램은 로그인 페이지와 적절한 오류 메시지를 표시합니다.
+1. 로그인 페이지에 제공된 자격 증명은 `ISSOManager.login` 메서드를 사용합니다. 인증이 성공하면 3단계로 이동합니다. 그렇지 않으면 `SSOEvent.AUTHENTICATION_FAILED` 이벤트가 트리거됩니다. 클라이언트 응용 프로그램은 로그인 페이지와 적절한 오류 메시지를 표시합니다.
 
 ### 클라이언트 응용 프로그램 만들기 {#creating-the-client-application}
 
@@ -672,7 +672,7 @@ SSO 인증을 수행하는 클라이언트 애플리케이션을 만드는 방�
 
 ### remoting.mxml 파일 만들기 {#creating-the-remoting-mxml-file}
 
-다음 코드는 다음을 호출하는 remoting.mxml 파일을 나타냅니다 `MyApplication/EncryptDocument` 프로세스. 문서가 프로세스로 전달되므로 보안 문서를 AEM Forms으로 전달하는 애플리케이션 논리가 이 파일에 있습니다. (참조: [원격을 사용하여 프로세스를 호출하는 보안 문서 전달](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+다음 코드는 다음을 호출하는 remoting.mxml 파일을 나타냅니다 `MyApplication/EncryptDocument` 프로세스. 문서가 프로세스로 전달되므로 보안 문서를 AEM Forms으로 전달하는 애플리케이션 논리가 이 파일에 있습니다. (참조: [원격을 사용하여 프로세스를 호출할 보안 문서 전달](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>

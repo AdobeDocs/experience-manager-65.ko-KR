@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '829'
 ht-degree: 4%
 
 ---
@@ -32,8 +32,6 @@ AEM을 사용할 때 다양한 유형의 콘텐츠(예: 페이지, 에셋)를 �
 ## 대시보드 관리 {#administering-dashboards}
 
 ### 대시보드 만들기 {#creating-a-dashboard}
-
-새 대시보드를 만들려면 다음과 같이 진행합니다.
 
 1. 다음에서 **도구** 섹션, 클릭 **구성 콘솔**.
 1. 트리에서 를 두 번 클릭합니다 **대시보드**.

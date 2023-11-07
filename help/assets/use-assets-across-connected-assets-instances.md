@@ -7,7 +7,7 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: bc6a97a55f392cba03131ee3ca7cad35b8c1e69b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3949'
 ht-degree: 17%
@@ -32,7 +32,7 @@ ht-degree: 17%
 
 ## 연결된 자산 개요 {#overview-of-connected-assets}
 
-에서 페이지 편집 시 [!UICONTROL 페이지 편집기] 작성자는 타겟 대상으로 다른 에셋의 에셋을 원활하게 검색, 탐색 및 포함할 수 있습니다 [!DNL Assets] 자산 소스 역할을 하는 배포. 관리자는 의 배포를 한 번만 통합합니다 [!DNL Experience Manager] 포함 [!DNL Sites] 의 다른 배포를 통한 기능 [!DNL Experience Manager] 포함 [!DNL Assets] 기능. 사이트 작성자는 연결된 에셋을 통해 사이트의 웹 페이지에서 Dynamic Media 이미지를 사용할 수도 있고 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 활용할 수 있습니다.
+에서 페이지 편집 시 [!UICONTROL 페이지 편집기] 작성자는 타겟 대상으로 다른 에셋의 에셋을 원활하게 검색, 탐색 및 포함할 수 있습니다 [!DNL Assets] 자산 소스 역할을 하는 배포. 관리자는 의 배포를 한 번만 통합합니다 [!DNL Experience Manager] 포함 [!DNL Sites] 의 다른 배포를 통한 기능 [!DNL Experience Manager] 포함 [!DNL Assets] 기능. 사이트 작성자는 연결된 자산을 통해 사이트의 웹 페이지에서 Dynamic Media 이미지를 사용할 수도 있고 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 사용할 수도 있습니다.
 
 의 경우 [!DNL Sites] 작성자는 원격 자산을 읽기 전용 로컬 자산으로 사용할 수 있습니다. 이 기능은 사이트 편집기에서 원격 자산을 원활하게 검색하고 액세스할 수 있도록 지원합니다. Sites에서 전체 에셋 코퍼스를 사용할 수 있어야 하는 기타 사용 사례의 경우 연결된 에셋을 사용하는 대신 에셋을 일괄적으로 마이그레이션하는 것이 좋습니다. 다음을 참조하십시오 [Experience Manager Assets 마이그레이션 안내서](/help/assets/assets-migration-guide.md).
 
@@ -145,7 +145,7 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
 ## Dynamic Media 에셋 사용 {#dynamic-media-assets}
 
 
-연결된 에셋을 사용하여에서 처리한 이미지 에셋을 사용할 수 있습니다 [!DNL Dynamic Media] 사이트 페이지의 원격 DAM 배포에서 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 활용합니다.
+연결된 에셋을 사용하여에서 처리한 이미지 에셋을 사용할 수 있습니다 [!DNL Dynamic Media] 및 에서는 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 사용합니다.
 
 사용 [!DNL Dynamic Media] 연결된 자산:
 

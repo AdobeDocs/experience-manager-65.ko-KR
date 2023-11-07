@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Java 서블릿을 사용하여 고객이 데이터를 보고 양식에 입력할
 
 조각을 기반으로 양식을 렌더링하는 웹 기반 응용 프로그램을 만들려면 다음 단계를 수행하십시오.
 
-1. 새 웹 프로젝트를 만듭니다.
+1. 웹 프로젝트를 만듭니다.
 1. Java 서블릿을 나타내는 Java 애플리케이션 논리를 생성합니다.
 1. 웹 응용 프로그램의 웹 페이지를 만듭니다.
 1. 웹 응용 프로그램을 WAR 파일로 패키지합니다.
@@ -84,7 +84,7 @@ Java 서블릿을 사용하여 고객이 데이터를 보고 양식에 입력할
 
 ### 웹 프로젝트 만들기 {#creating-a-web-project}
 
-Forms 서비스를 호출할 수 있는 Java 서블릿이 포함된 웹 응용 프로그램을 만드는 첫 번째 단계는 새 웹 프로젝트를 만드는 것입니다. 이 문서가 기반으로 하는 Java IDE는 Eclipse 3.3입니다. Eclipse IDE를 사용하여 웹 프로젝트를 만들고 필요한 JAR 파일을 프로젝트에 추가합니다. 마지막으로 다음과 같은 HTML 페이지를 추가합니다. *index.html* 프로젝트에 Java 서블릿을 추가합니다.
+Forms 서비스를 호출할 수 있는 Java 서블릿이 포함된 웹 응용 프로그램을 만드는 첫 번째 단계는 웹 프로젝트를 만드는 것입니다. 이 문서가 기반으로 하는 Java IDE는 Eclipse 3.3입니다. Eclipse IDE를 사용하여 웹 프로젝트를 만들고 필요한 JAR 파일을 프로젝트에 추가합니다. 마지막으로 다음과 같은 HTML 페이지를 추가합니다. *index.html* 프로젝트에 Java 서블릿을 추가합니다.
 
 다음 목록은 웹 프로젝트에 추가해야 하는 JAR 파일을 지정합니다.
 
@@ -145,7 +145,7 @@ Java 서블릿 내에서 Forms 서비스를 호출하는 Java 애플리케이션
 Forms 서비스 API를 사용하여 조각을 기반으로 양식을 렌더링하려면 다음 작업을 수행하십시오.
 
 1. Java 프로젝트의 클래스 경로에 adobe-forms-client.jar과 같은 클라이언트 JAR 파일을 포함합니다. 이러한 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. HTML 양식에서 제출된 라디오 버튼의 값을 검색하고 미국 데이터를 사용할지 캐나다 데이터를 사용할지 지정합니다. American 이 제출되면 `com.adobe.idp.Document` 에 있는 데이터를 저장하는 경우 *구매 주문 US.xml*. 마찬가지로 캐나다인이면 다음을 생성합니다. `com.adobe.idp.Document` 에 있는 데이터를 저장하는 경우 *구매 주문 Canada.xml* 파일.
+1. HTML 양식에서 제출된 라디오 버튼의 값을 검색하고 미국 데이터를 사용할지 캐나다 데이터를 사용할지 지정합니다. American 이 제출되면 `com.adobe.idp.Document` 에 데이터를 저장하는 *구매 주문 US.xml*. 마찬가지로 캐나다인이면 다음을 생성합니다. `com.adobe.idp.Document` 에 데이터를 저장하는 *구매 주문 Canada.xml* 파일.
 1. 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다. (참조: [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. 만들기 `FormsServiceClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
 1. 만들기 `URLSpec` 생성자를 사용하여 URI 값을 저장하는 개체입니다.
@@ -184,7 +184,7 @@ Forms 서비스 API를 사용하여 조각을 기반으로 양식을 렌더링�
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs
      *
      * For complete details about the location of these JAR files,

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3681'
 ht-degree: 2%
@@ -95,7 +95,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 
    모기지 애플리케이션 예제의 경우, 작업이 완료되면 작업 할당 단계를 구성하여 읽기 전용 적응형 양식을 사용하고 PDF 문서를 표시합니다. 또한 대출 요청을 승인할 수 있는 사용자 그룹을 선택합니다. 다음에서 **작업** 탭, 비활성화 **제출** 옵션을 선택합니다. 만들기 **actionTaken** String 데이터 형식의 변수를 지정하고 **경로 변수**. 예: actionTaken. 또한 승인 및 거부 경로를 추가합니다. 경로는 AEM 받은 편지함에 별도의 작업(버튼)으로 표시됩니다. 워크플로는 사용자가 탭한 작업(버튼)을 기반으로 분기를 선택합니다.
 
-   저당 신청과 같이 구성된 지정 태스크 단계의 모든 필드에 대한 전체 값 세트에 대해 섹션의 시작에서 다운로드할 수 있는 예제 패키지를 가져올 수 있습니다.
+   저당 신청과 같이 구성된 지정 태스크 단계의 모든 필드에 대한 전체 값 세트에 대해 섹션의 시작 부분에서 다운로드할 수 있는 예제 패키지를 가져올 수 있습니다.
 
 1. 단계 브라우저에서 OR 분할 구성 요소를 워크플로우 모델로 드래그 앤 드롭합니다. OR 분할은 워크플로우에 분할을 만들고 그 후 하나의 분기만 활성화됩니다. 이 단계를 통해 조건부 처리 경로를 워크플로우에 도입할 수 있습니다. 필요에 따라 각 분기에 워크플로 단계를 추가합니다.
 
@@ -121,7 +121,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 
    모기지 예제의 경우 아래 이미지에 표시된 대로 기록 문서 생성, 작업 단계 할당 2개 및 서명 문서 단계를 모델의 분기 1에 추가합니다. 작업 할당 단계 중 하나는 표시 및 보내기 **신청자에게 대출 서류에 서명하다** 외 할당 작업 구성 요소 **서명된 문서를 표시하려면**. 또한 할당 작업 구성 요소를 분기 2에 추가합니다. 사용자가 AEM 받은 편지함에서 거부를 탭하면 활성화됩니다.
 
-   담보 대출 신청과 같이 구성된 할당 작업 단계, 기록 문서 단계 및 서명 문서 단계의 모든 필드에 대한 전체 값 세트에 대해 이 섹션의 시작 부분에서 다운로드할 수 있는 예제 패키지를 가져옵니다.
+   담보 대출 신청과 같이 구성된 할당 작업 단계, 기록 문서 단계 및 서명 문서 단계의 모든 필드에 대한 전체 값 집합의 경우 이 섹션의 시작에서 다운로드할 수 있는 예제 패키지를 가져옵니다.
 
    워크플로우 모델이 준비되었습니다. 다양한 방법을 통해 워크플로우를 시작할 수 있습니다. 자세한 내용은 [OSGi에서 Forms 중심 워크플로우 실행](#launch).
 
@@ -277,9 +277,9 @@ AEM Workflow의 작업 할당 및 이메일 보내기 단계를 사용하여 이
 
 ## 중요한 데이터를 워크플로우 변수에 매개 변수화하고 외부 데이터 저장소에 저장 {#externalize-wf-variables}
 
-적응형 양식에서 로 제출된 모든 데이터 [!DNL Experience Manager] 워크플로우에는 비즈니스 최종 사용자의 PII(개인 식별 정보) 또는 SPD(중요 개인 데이터)가 있을 수 있습니다. 단, 데이터를 반드시 에 저장해야 하는 것은 아닙니다 [!DNL Adobe Experience Manager] [JCR 저장소](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). 정보를 로 매개 변수화하여 최종 사용자 데이터를 관리되는 데이터 저장소(예: Azure Blob 저장소)에 저장할 수 있습니다. [워크플로우 변수](/help/forms/using/variable-in-aem-workflows.md).
+적응형 양식에서 로 제출된 모든 데이터 [!DNL Experience Manager] 워크플로우에는 비즈니스 최종 사용자의 PII(개인 식별 정보) 또는 SPD(중요 개인 데이터)가 있을 수 있습니다. 단, 데이터를 반드시 에 저장해야 하는 것은 아닙니다 [!DNL Adobe Experience Manager] [JCR 저장소](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). 정보를 로 매개 변수화하여 최종 사용자 데이터를 관리되는 데이터 스토리지(예: Azure Blob 스토리지)에 저장할 수 있습니다. [워크플로우 변수](/help/forms/using/variable-in-aem-workflows.md).
 
-다음에서 [!DNL Adobe Experience Manager] Forms 워크플로에서는 데이터가 워크플로 변수를 통해 일련의 워크플로 단계를 거쳐 처리되고 전달됩니다. 이러한 변수는 워크플로 인스턴스 메타데이터 노드에 저장되는 속성 또는 키-값 쌍으로 명명됩니다. 예를 들면 다음과 같습니다 `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. 이러한 워크플로 변수는 JCR 이외의 별도의 저장소로 외부화된 다음 로 처리할 수 있습니다. [!DNL Adobe Experience Manager] 워크플로. [!DNL Adobe Experience Manager] api 제공 `[!UICONTROL UserMetaDataPersistenceProvider]` 관리되는 외부 저장소에 워크플로 변수를 저장합니다. 에서 고객 소유 데이터 스토어에 워크플로 변수 사용에 대해 자세히 알아보려면 [!DNL Adobe Experience Manager], 참조 [외부 데이터 저장소에 대한 워크플로우 변수 관리](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+다음에서 [!DNL Adobe Experience Manager] Forms 워크플로에서는 데이터가 워크플로 변수를 통해 일련의 워크플로 단계를 거쳐 처리되고 전달됩니다. 이러한 변수는 워크플로 인스턴스 메타데이터 노드에 저장되는 속성 또는 키-값 쌍으로 명명됩니다. 예를 들면 다음과 같습니다. `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. 이러한 워크플로 변수는 JCR 이외의 별도의 저장소로 외부화된 다음 로 처리할 수 있습니다. [!DNL Adobe Experience Manager] 워크플로. [!DNL Adobe Experience Manager] api 제공 `[!UICONTROL UserMetaDataPersistenceProvider]` 관리되는 외부 저장소에 워크플로 변수를 저장합니다. 에서 고객 소유 데이터 스토어에 워크플로 변수 사용에 대해 자세히 알아보려면 [!DNL Adobe Experience Manager], 참조 [외부 데이터 저장소에 대한 워크플로우 변수 관리](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe] 는 다음을 제공합니다 [샘플](https://github.com/adobe/workflow-variable-externalizer) API를 사용하여 워크플로 메타데이터 맵에서 Azure Blob 저장소로 변수를 저장하려면 [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). 유사한 행에서 샘플을 사용 안내서로 사용할 수 있습니다 [UserMetaDataPersistenceProvider] 의 외부에 있는 다른 데이터 저장소에서 워크플로 변수를 외부화하기 위한 API [!DNL Adobe Experience Manager] 같은 것을 관리하십시오.
 
 >[!NOTE]
@@ -313,11 +313,11 @@ AEM Workflow의 작업 할당 및 이메일 보내기 단계를 사용하여 이
 
 * **accountName** 는 데이터를 저장해야 하는 azure 계정입니다.
 
-* **endpointSuffix**, 예 `core.windows.net`.
+* **endpointSuffix**, 예: `core.windows.net`.
 
 * **containerName** 는 데이터를 저장해야 하는 계정의 컨테이너입니다. 이 샘플은 컨테이너가 있다고 가정합니다.
 
-* **프로토콜**, 예 `https` 또는 `http`.
+* **프로토콜**, 예: `https` 또는 `http`.
 
 1. 에서 워크플로 모델 구성 [!DNL Adobe Experience Manager]. 외부 스토리지의 워크플로 모델을 구성하는 방법은 다음을 참조하십시오. [워크플로우 모델 구성](#configure-aem-wf-model).
 
@@ -337,7 +337,7 @@ AEM Workflow의 작업 할당 및 이메일 보내기 단계를 사용하여 이
 
 ### 외부 데이터 저장을 위한 AEM 워크플로 지침 {#guidelines-workflows-external-data-storage}
 
-다음은 을(를) 사용할 때의 지침입니다 [!DNL Adobe Experience Manager] 워크플로 및 외부 데이터 저장소에 데이터 저장(예: Microsoft Azure 스토리지 서버):
+다음은 을(를) 사용할 때의 지침입니다 [!DNL Adobe Experience Manager] 워크플로 및 외부 데이터 저장소(예: Microsoft Azure 스토리지 서버)에 데이터 저장:
 
 * 워크플로우 모델 단계에서 입력 및 출력 데이터 파일과 첨부 파일을 정의하는 동안 변수를 사용하여 데이터를 저장합니다. 선택 안 함 **[!UICONTROL 페이로드 관련]** 및 **[!UICONTROL 절대 경로에서 사용 가능]** 옵션. 다음 **[!UICONTROL 페이로드 관련]** 및 **[!UICONTROL 절대 경로에서 사용 가능]** 옵션을 선택하면 옵션이 자동으로 표시되지 않습니다. [구성 [!DNL Adobe Experience Manager] 외부 데이터 저장소용 워크플로 모델](#configure-aem-wf-model).
 

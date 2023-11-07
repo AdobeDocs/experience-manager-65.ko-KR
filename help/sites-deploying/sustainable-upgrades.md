@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '834'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 * 공개 API는 호환성 패키지 설치와 하위 호환됩니다.
 * 호환성 패키지에는 이전 버전과의 호환성을 보장하기 위한 호환성 Uber JAR이 포함되어 있습니다
-* 로 표시된 Java™ API `Private` 는 AEM 내부 번들만 사용하도록 되어 있으며 사용자 지정 번들에는 사용하면 안 됩니다.
+* 로 표시된 Java™ API `Private` 는 사용자 지정 번들이 아닌 AEM 내부 번들에서만 사용하도록 설계되었습니다.
 
 >[!NOTE]
 >

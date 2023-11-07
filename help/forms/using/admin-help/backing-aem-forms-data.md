@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ AEM Forms을 안전 백업(스냅샷) 모드 또는 롤링 백업(연속 적용 
 
    >[!NOTE]
    >
-   >의 애플리케이션 서버에 대한 해당 장에 설명된 대로 JAVA_HOME 디렉토리를 설정해야 합니다 [AEM Forms 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >의 애플리케이션 서버에 대한 해당 장에 설명된 대로 JAVA_HOME 디렉토리를 설정합니다. [AEM Forms 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. 한 줄에서 다음 명령을 실행합니다.
 

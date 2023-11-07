@@ -1,19 +1,15 @@
 ---
 title: 적응형 양식 템플릿
-seo-title: Adaptive Form Templates
 description: 템플릿 편집기를 사용하여 기본 구조 및 초기 양식 콘텐츠를 정의하여 적응형 양식 템플릿을 만듭니다.
-seo-description: Create adaptive form templates by defining the basic structure and initial form content using the Template Editor.
-uuid: 317ca3ab-f809-49a7-a063-9d0c17a35fe4
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2040'
 ht-degree: 4%
 
 ---
@@ -39,9 +35,9 @@ ht-degree: 4%
 
 ## 템플릿 작업 {#working-with-templates}
 
-도구 메뉴에서 다음 위치로 이동하여 템플릿 편집기에 액세스할 수 있습니다. **Adobe Experience Manager > 도구 > 템플릿**. 여기에서 템플릿은 편집 가능한 템플릿을 사용할 수 있도록 설정된 폴더로 구성됩니다. AEM에서는 템플릿을 구성할 수 있는 전역 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿에 대한 새 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](/help/sites-developing/page-templates-editable.md).
+도구 메뉴에서 다음 위치로 이동하여 템플릿 편집기에 액세스할 수 있습니다. **Adobe Experience Manager > 도구 > 템플릿**. 여기에서 템플릿은 편집 가능한 템플릿을 사용할 수 있도록 설정된 폴더로 구성됩니다. AEM에서는 템플릿을 구성할 수 있는 전역 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](/help/sites-developing/page-templates-editable.md).
 
-폴더를 열고 나면 적응형 양식용 새 템플릿을 만들 수 있는 만들기 버튼이 표시됩니다.
+폴더를 탭하여 열면 적응형 양식용 템플릿을 만들 수 있는 만들기 버튼이 표시됩니다.
 
 ### 템플릿 만들기 {#create-template}
 

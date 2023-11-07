@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2699'
-ht-degree: 40%
+source-wordcount: '2695'
+ht-degree: 39%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 40%
 
 ### 설치된 롤아웃 구성 {#installed-rollout-configurations}
 
-다음 표에는 AEM과 함께 설치된 롤아웃 구성이 나열되어 있습니다. 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다. 설치된 롤아웃 구성 작업이 요구 사항을 충족하지 않을 경우 [새 롤아웃 구성을 만들 수 있습니다](#creating-a-rollout-configuration).
+다음 표에는 AEM과 함께 설치된 롤아웃 구성이 나열되어 있습니다. 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다. 설치된 롤아웃 구성 작업이 요구 사항을 충족하지 않는 경우 다음을 수행할 수 있습니다. [롤아웃 구성 만들기](#creating-a-rollout-configuration).
 
 <table>
  <tbody>

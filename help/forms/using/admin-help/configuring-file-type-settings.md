@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6177'
+source-wordcount: '6176'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ Adobe PDF 내보내기 설정 섹션의 내보내기 파일 유형 설정은 PDF
 
 **페이지 레이아웃:** PDF 문서에 대한 페이지 레이아웃 유형을 선택합니다.
 
-**확대:** PDF 문서의 초기 보기에 대한 사전 설정 배율을 선택하거나 사용자 지정 값을 선택합니다. 기본 설정을 선택하면 기본 Acrobat 확대율이 사용됨을 나타냅니다.
+**확대:** PDF 문서의 초기 보기에 대한 사전 설정 배율을 선택하거나 사용자 지정 값을 선택합니다. 기본 설정을 선택하면 기본 Acrobat 배율이 사용됨을 나타냅니다.
 
 **페이지 번호 열기:** PDF이 열리는 페이지 번호를 지정합니다.
 

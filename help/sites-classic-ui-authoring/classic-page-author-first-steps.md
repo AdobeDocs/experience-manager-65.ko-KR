@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '410'
 ht-degree: 8%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 8%
 
 * [추가 작업](#further-actions): 작성 시 사용할 수 있는 기타 여러 작업을 사용하여 계속 진행합니다.
 
-## 시작하기 {#getting-started}
+## 시작 {#getting-started}
 
 첫 페이지를 만들고 게시하는 데 필요한 기본 이벤트 시퀀스에 대해 자세히 설명합니다.
 
@@ -35,7 +35,7 @@ ht-degree: 8%
 
 ### 새 페이지 만들기 {#creating-a-new-page}
 
-편집하기 전에 다음을 수행해야 합니다 [새 페이지 만들기](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
+편집하기 전에 다음을 수행해야 합니다 [페이지 만들기](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
 ### 페이지 열기 {#opening-a-page}
 
@@ -43,7 +43,7 @@ ht-degree: 8%
 
 ### 페이지 편집 {#editing-a-page}
 
-인스턴스에 이미 기존 페이지가 있는지 또는 새 페이지를 직접 만들었는지 여부에 관계없이 다음 작업을 수행할 수 있습니다. [페이지 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) 수행한 사람:
+인스턴스에 이미 기존 페이지가 있는지 또는 새 페이지를 직접 만들었는지 여부에 관계없이 다음 작업을 수행할 수 있습니다 [페이지 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) 수행한 사람:
 
 * [구성 요소 삽입(단락)](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#inserting-a-component)
 * [구성 요소 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)

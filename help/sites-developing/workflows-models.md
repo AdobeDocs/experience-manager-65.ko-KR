@@ -1,19 +1,15 @@
 ---
 title: 워크플로 모델 만들기
-seo-title: Creating Workflow Models
 description: 사용자가 워크플로우를 시작할 때 실행되는 일련의 단계를 정의하는 워크플로우 모델을 만듭니다.
-seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
-uuid: 31071d3a-d6d5-4476-9ac0-7b335de406d9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2451'
 ht-degree: 2%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->클래식 UI를 사용하려면 다음을 참조하십시오 [AEM 6.3 설명서](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) 참조하십시오.
+>클래식 UI를 사용하려면 [AEM 6.3 설명서](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) 참조하십시오.
 
 다음을 생성함: [워크플로 모델](/help/sites-developing/workflows.md#model) 사용자가 워크플로우를 시작할 때 실행되는 일련의 단계를 정의합니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다.
 
@@ -30,14 +26,14 @@ ht-degree: 2%
 
 ## 새 워크플로우 만들기 {#creating-a-new-workflow}
 
-새 워크플로우 모델을 처음 만들 때 다음과 같은 항목이 포함됩니다.
+처음 워크플로우 모델을 만들 때 다음과 같은 내용이 포함됩니다.
 
 * 단계, **플로우 시작** 및 **플로우 끝**.
 이는 워크플로우의 시작과 끝을 나타냅니다. 이러한 단계는 필수이며 편집/제거할 수 없습니다.
 * 예 **참가자** 단계 이름 지정됨 **1단계**.
 이 단계는 워크플로 개시자에게 작업 항목을 할당하도록 구성되어 있습니다. 이 단계를 편집하거나 삭제하고 필요에 따라 단계를 추가합니다.
 
-편집기로 새 워크플로우를 만들려면 다음 작업을 수행하십시오.
+편집기로 워크플로우를 만들려면 다음 작업을 수행하십시오.
 
 1. 를 엽니다. **워크플로 모델** 콘솔, 경유 **도구**, **워크플로**, **모델** 또는, 예: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. 선택 **만들기**, 그런 다음 **모델 만들기**.
@@ -75,7 +71,7 @@ ht-degree: 2%
 
 변경 사항이 런타임(저장된) 모델과 동기화되면 **동기화됨** 이 대신 표시됩니다.
 
-일부 단계에는 필수 필드 및/또는 기본 제공 유효성 검사가 있습니다. 이러한 조건이 충족되지 않으면 다음 작업을 시도할 때 오류가 표시됩니다. **동기화** 모델. 예를 들어 다음에 대해 정의된 참가자가 없는 경우 **참가자** 단계:
+일부 단계에는 필수 필드 및/또는 기본 제공 유효성 검사가 있습니다. 이러한 조건이 충족되지 않으면 다음과 같은 시도를 할 때 오류가 표시됩니다. **동기화** 모델. 예를 들어 다음에 대해 정의된 참가자가 없는 경우 **참가자** 단계:
 
 ![wf-21](assets/wf-21.png)
 
@@ -86,7 +82,7 @@ ht-degree: 2%
 * 단계 브라우저를 사용할 수 없습니다(왼쪽).
 * 다음 항목이 있습니다. **편집** 작업은 도구 모음(오른쪽)에서 사용할 수 있습니다.
 * 처음에는 모델 및 해당 속성이 다음과 같이 읽기 전용 모드로 표시됩니다.
-   * 기본 워크플로는에 있습니다. `/libs`
+   * 기본 워크플로는 다음 위치에 있습니다. `/libs`
    * 레거시 워크플로는에 있습니다. `/etc`
 선택 **편집** 이(가) 다음을 수행합니다.
 * 워크플로우의 사본을 가져올 위치 `/conf`
@@ -101,7 +97,7 @@ ht-degree: 2%
 
 ### 모델에 단계 추가 {#adding-a-step-to-a-model}
 
-수행할 활동을 나타내는 단계를 모델에 추가해야 합니다. 각 단계는 특정 활동을 수행합니다. 표준 AEM 인스턴스에서 여러 단계 구성 요소를 사용할 수 있습니다.
+수행할 활동을 나타내려면 모델에 단계를 추가해야 합니다. 각 단계는 특정 활동을 수행합니다. 표준 AEM 인스턴스에서 여러 단계 구성 요소를 사용할 수 있습니다.
 
 모델을 편집하면 사용 가능한 단계가 의 다양한 그룹에 나타납니다. **단계 브라우저**. 예:
 
@@ -117,7 +113,7 @@ ht-degree: 2%
 1. 단계 브라우저를 열고, 를 사용합니다. **사이드 패널 전환**&#x200B;상단 도구 모음의 맨 왼쪽 여기에서 다음과 같은 작업을 수행할 수 있습니다.
 
    * **필터** 특정 단계에 대해 설명합니다.
-   * 드롭다운 선택기를 사용하여 선택 항목을 특정 단계 그룹으로 제한합니다.
+   * 드롭다운 선택기를 사용하여 선택 사항을 특정 단계 그룹으로 제한합니다.
    * 설명 표시 아이콘 선택 ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) 적절한 단계에 대한 자세한 내용을 표시합니다.
 
    ![wf-02](assets/wf-02.png)
@@ -167,7 +163,7 @@ ht-degree: 2%
 
 ### 임시 워크플로우 만들기 {#creating-a-transient-workflow}
 
-다음을 만들 수 있습니다. [임시](/help/sites-developing/workflows.md#transient-workflows) 새 모델을 만들거나 기존 모델을 편집하여 워크플로 모델:
+다음을 만들 수 있습니다. [임시](/help/sites-developing/workflows.md#transient-workflows) 모델을 만들거나 기존 모델을 편집하여 워크플로 모델:
 
 1. 다음에 대한 워크플로 모델 열기 [편집](#editinganexistingworkflow).
 1. 선택 **워크플로우 모델 속성** 을 클릭합니다.
@@ -207,7 +203,7 @@ ht-degree: 2%
 
 ### 다중 리소스 지원을 위한 워크플로우 구성 {#configuring-a-workflow-for-multi-resource-support}
 
-다음에 대한 워크플로 모델을 구성할 수 있습니다. [다중 리소스 지원](/help/sites-developing/workflows.md#multi-resource-support) 새 모델을 만들거나 기존 모델을 편집하여
+다음에 대한 워크플로 모델을 구성할 수 있습니다. [다중 리소스 지원](/help/sites-developing/workflows.md#multi-resource-support) 모델을 생성하거나 기존 모델을 편집하는 경우:
 
 1. 다음에 대한 워크플로 모델 열기 [편집](#editinganexistingworkflow).
 1. 선택 **워크플로우 모델 속성** 을 클릭합니다.
@@ -264,7 +260,7 @@ ht-degree: 2%
 
 패키지에서 워크플로 모델을 내보내려면 다음을 수행하십시오.
 
-1. 를 사용하여 새 패키지 만들기 [패키지 관리자](/help/sites-administering/package-manager.md#package-manager):
+1. 를 사용하여 패키지 만들기 [패키지 관리자](/help/sites-administering/package-manager.md#package-manager):
 
    1. 다음을 통해 패키지 관리자로 이동 **도구**, **배포**, **패키지**.
 
@@ -299,7 +295,7 @@ ht-degree: 2%
 
 양식과 함께 사용할 워크플로우를 구성하려면 다음 작업을 수행하십시오.
 
-1. 새 페이지를 만들고 편집할 수 있도록 엽니다.
+1. 편집할 페이지를 만들고 엽니다.
 1. 추가 **양식** 구성 요소를 페이지에 추가합니다.
 1. **구성** 다음 **양식 시작** 페이지에 표시된 구성 요소입니다.
 1. 사용 **워크플로우 시작** 사용 가능한 워크플로우에서 원하는 워크플로우를 선택하려면 다음을 수행하십시오.
@@ -328,7 +324,7 @@ ht-degree: 2%
 
 다음 예제에서는 워크플로우를 만들 수 있는 몇 가지 방법을 보여줍니다. `Publish Example` 워크플로입니다.
 
-1. [새 워크플로우 모델 만들기](#creating-a-new-workflow).
+1. [워크플로우 모델 만들기](#creating-a-new-workflow).
 
    새 워크플로에는 다음이 포함됩니다.
 

@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: b27ffe92-8491-43a0-bf42-613eb39a606e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 3%
 1. 다음 [AEM Forms 작업 공간 사용자 정의에 대한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. 다음 작업을 수행합니다.
 
-   1. /libs/ws/js/runtime/templates/processinstance.html 이 없는 경우 /apps/ws/js/runtime/templates/에 복사합니다. 클릭 **모두 저장**.
+   1. /libs/ws/js/runtime/templates/processinstance.html 이 없는 경우 /apps/ws/js/runtime/templates/에 복사합니다. **모두 저장**&#x200B;을 클릭합니다.
    1. 클래스 = &#39;processDescription&#39;을 inprocessinstance.html에 프로세스 설명 div를 추가합니다.
 
    ```jsp
@@ -90,7 +90,7 @@ ht-degree: 3%
 
    ```css
    .processinstance .processDescription {
-    <!--Dummy values, need to be configured by user as per requirement as well as user can add or delete any property depending upon requirement-->
+    <!--Dummy values, need to be configured by user as per requirement and user can add or delete any property depending upon requirement-->
        width : 250px;
        font-size : 11pt;
        padding : 2px;

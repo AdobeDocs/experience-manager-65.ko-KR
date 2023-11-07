@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Adobe Experience Manager(AEM)에서 **Externalizer** 는 리소스 경로를 프
 
 인스턴스가 웹 레이어 뒤에서 실행 중인 경우 외부로 표시되는 URL을 알 수 없고 경우에 따라 링크가 요청 범위 외부에서 만들어져야 하므로 이 서비스는 이러한 외부 URL을 구성하고 빌드할 수 있는 중앙 위치를 제공합니다.
 
-이 페이지에서는 구성 방법을 설명합니다. **Externalizer** 서비스 및 사용 방법. 자세한 내용은 다음을 참조하십시오 [자바독스](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+이 페이지에서는 구성 방법을 설명합니다. **Externalizer** 서비스 및 사용 방법. 자세한 내용은 [자바독스](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## 외부화 서비스 구성 {#configuring-the-externalizer-service}
 

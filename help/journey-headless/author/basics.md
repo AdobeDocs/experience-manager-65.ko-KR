@@ -2,10 +2,10 @@
 title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 82%
+source-wordcount: '1688'
+ht-degree: 80%
 
 ---
 
@@ -102,7 +102,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 ![폴더 만들기 옵션](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-세부 정보를 입력할 수 있는 대화 상자를 연 다음 **만들기**&#x200B;로 확인합니다.
+세부 정보를 입력한 다음 을 확인할 수 있는 대화 상자가 열립니다 **만들기**:
 
 ![폴더 만들기 대화 상자](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -201,7 +201,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
   이 콘텐츠는 분명히 편집기의 탭입니다.
 
-  상당수의 AEM 버전에서 콘텐츠 조각을 사용할 수 있습니다. 페이지를 작성할 때 원래는 “기존” 용도로 사용할 수 있도록 제작되었습니다.여전히 이 컨텍스트에서 사용됩니다. 조각에는 임베드되지 않지만 페이지를 작성할 때 작성자가 사용할 수 있는 자산(예: 이미지) 연결이 여기에 포함될 수 있습니다.
+  상당수의 AEM 버전에서 콘텐츠 조각을 사용할 수 있습니다. 페이지를 작성할 때 원래는 “기존” 용도로 사용할 수 있도록 제작되었습니다.여전히 이 컨텍스트에서 사용됩니다. 조각에 포함되지 않았지만 페이지를 작성할 때 작성자가 사용할 수 있어야 하는 에셋(예: 이미지)을 연결할 수 있습니다.
 
 * **미리보기**
 

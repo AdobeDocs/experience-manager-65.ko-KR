@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 465d3e956ecdd36eea5fe095e250652eedd4b3c5
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3005'
+source-wordcount: '3004'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 ### 보안 핫픽스 설치 {#install-security-hotfixes}
 
-최신 버전을 설치했는지 확인하십시오. [Adobe에서 제공한 보안 핫픽스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko).
+최신 버전을 설치했는지 확인하십시오. [Adobe에서 제공한 보안 핫픽스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko-KR?lang=ko).
 
 ### AEM 및 OSGi 콘솔 관리자 계정에 대한 기본 암호 변경 {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -393,7 +393,7 @@ AEM에서 승인 가능한 ID를 생성하는 기본 방법이므로 이를 활�
 
 ### 익명 권한 강화 패키지 {#anonymous-permission-hardening-package}
 
-기본적으로 AEM은 다음과 같은 시스템 메타데이터를 저장합니다. `jcr:createdBy` 또는 `jcr:lastModifiedBy` 를 노드 속성으로, 저장소의 일반 콘텐츠 옆에 추가합니다. 구성 및 액세스 제어 설정에 따라, 경우에 따라 이러한 노드가 원시 JSON 또는 XML로 렌더링되는 경우와 같이 PII(개인 식별 정보)가 노출될 수 있습니다.
+기본적으로 AEM은 다음과 같은 시스템 메타데이터를 저장합니다. `jcr:createdBy` 또는 `jcr:lastModifiedBy` 를 노드 속성으로, 저장소의 일반 콘텐츠 옆에 추가합니다. 구성 및 액세스 제어 설정에 따라, 경우에 따라 이러한 노드가 원시 JSON 또는 XML로 렌더링되는 경우 PII(개인 식별 정보)가 노출될 수 있습니다.
 
 모든 저장소 데이터와 마찬가지로 이러한 속성은 Oak 인증 스택에 의해 매개됩니다. 이들에 대한 접근은 최소특권의 원칙에 따라 제한되어야 한다.
 

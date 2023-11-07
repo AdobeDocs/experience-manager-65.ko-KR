@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3511'
+source-wordcount: '3509'
 ht-degree: 3%
 
 ---
@@ -194,7 +194,7 @@ Dynamic Media Adobe은 보안 테스트를 통해 스테이징 환경 또는 내
 
   >[!IMPORTANT]
   >
-  >2023년 5월 1일부터 Dynamic Media의 UGC 에셋은 업로드일로부터 최대 60일까지 사용할 수 있습니다. 60일 이후에는 에셋이 제거됩니다.
+  >2023년 5월 1일부터 Dynamic Media의 UGC 에셋은 업로드일로부터 최대 60일까지 사용할 수 있습니다. 60일 후 자산이 제거됩니다.
 
   >[!NOTE]
   >

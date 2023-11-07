@@ -6,9 +6,9 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1030'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets] 에셋, 폴더 및 컬렉션을 URL로 파트너 및 공급업체를 비롯한 외부 엔티티 및 조직의 멤버와 공유할 수 있습니다. 링크를 통해 에셋을 공유하면 외부 당사자가 먼저 로그인할 필요 없이 리소스를 사용할 수 있는 편리한 방법입니다 [!DNL Assets].
@@ -26,7 +26,6 @@ ht-degree: 6%
 >
 >* 다음을 수행해야 합니다. `Edit ACL` 링크로 공유할 폴더 또는 에셋에 대한 권한.
 >* 사용자에게 이메일을 보내려면 다음에서 SMTP 서버 세부 정보를 구성합니다. [일별 CQ 메일 서비스](#configmailservice).
-
 
 ## 자산 공유 {#share-assets}
 
@@ -37,7 +36,7 @@ ht-degree: 6%
 
 1. 다음에서 [!DNL Assets] 사용자 인터페이스에서 링크로 공유할 자산을 선택합니다.
 
-1. 도구 모음에서 **[!UICONTROL 링크 공유]** ![에셋 공유 아이콘](assets/do-not-localize/assets_share.png). 을(를) 클릭한 후 생성되는 링크 **[!UICONTROL 공유]** 다음에 미리 표시됩니다. [!UICONTROL 링크 공유] 필드. 링크는 다음을 선택할 때까지 만들어지지 않습니다. **[!UICONTROL 제출]**.
+1. 도구 모음에서 **[!UICONTROL 링크 공유]** ![에셋 공유 아이콘](assets/do-not-localize/assets_share.png). 을 클릭한 후 생성되는 링크 **[!UICONTROL 공유]** 다음에 미리 표시됩니다. [!UICONTROL 링크 공유] 필드. 링크는 다음을 선택할 때까지 만들어지지 않습니다. **[!UICONTROL 제출]**.
 
    ![링크 공유가 있는 대화 상자](assets/share-assets-as-link.png)
 
@@ -117,4 +116,5 @@ ht-degree: 6%
    * `http://[aem_server]:[port]/linkshare.html`
    * `http://[aem_server]:[port]/linksharepreview.html`
    * `http://[aem_server]:[port]/linkexpired.html`
-   위치 [!DNL Experience Manager] 인터페이스, 액세스 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**. 를 엽니다. **[!UICONTROL 일별 CQ 링크 외부화]** 에서 다음 속성을 구성하고 수정합니다. **[!UICONTROL 도메인]** 에 언급된 값이 있는 필드 `local`, `author`, 및 `publish`. 의 경우 `local` 및 `author` 등록 정보에서 로컬 및 작성자 인스턴스의 URL을 각각 제공합니다. 1개를 실행하면 [!DNL Experience Manager] 작성자 인스턴스, 다음에 대해 동일한 값 사용 `local` 및 `author` 속성. 게시 인스턴스의 경우 의 URL을 제공합니다. [!DNL Experience Manager] 게시 인스턴스.
+
+  위치 [!DNL Experience Manager] 인터페이스, 액세스 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**. 를 엽니다. **[!UICONTROL 일별 CQ 링크 외부화]** 에서 다음 속성을 구성하고 수정합니다. **[!UICONTROL 도메인]** 에 언급된 값이 있는 필드 `local`, `author`, 및 `publish`. 의 경우 `local` 및 `author` 등록 정보에서 로컬 및 작성자 인스턴스의 URL을 각각 제공합니다. 1개를 실행하면 [!DNL Experience Manager] 작성자 인스턴스, 다음에 대해 동일한 값 사용 `local` 및 `author` 속성. 게시 인스턴스의 경우 의 URL을 제공합니다. [!DNL Experience Manager] 게시 인스턴스.

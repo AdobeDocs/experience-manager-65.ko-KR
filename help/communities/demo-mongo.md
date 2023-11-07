@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ MongoDB가 시작되기 전에 AEM이 실행 중이었다면 AEM 인스턴스를
 
 ## 테스트 {#test}
 
-MongoDB 일반 스토어를 테스트하고 확인하려면 게시 인스턴스에 주석을 게시하고 작성자 인스턴스에서 볼 수 있을 뿐만 아니라 MongoDB 및 Solr에서 UGC를 봅니다.
+MongoDB 일반 스토어를 테스트하고 확인하려면 게시 인스턴스에 댓글을 게시하고 작성자 인스턴스에서 보고 MongoDB 및 Solr에서 UGC를 봅니다.
 
 1. 게시 인스턴스에서 [커뮤니티 구성 요소 안내서](http://localhost:4503/content/community-components/en/comments.html) 페이지를 만들고 주석 구성 요소를 선택합니다.
 1. 댓글을 게시하려면 로그인하십시오.

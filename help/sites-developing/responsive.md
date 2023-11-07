@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5375'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AdobeSPA 는 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: _반응_). [자세히 알아보기](/help/sites-developing/spa-overview.md).
+>Adobe은 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: )이 필요한 프로젝트에 SPA Editor 를 사용하는 것을 권장합니다 _반응_). [자세히 알아보기](/help/sites-developing/spa-overview.md).
 >
 
 >[!NOTE]
@@ -181,7 +181,7 @@ JSP 스크립트는 스타일 시트를 참조하는 다음 HTML 코드를 생�
 
 ### 장치 목록 추가 {#adding-the-devices-list}
 
-다음 **[!UICONTROL 장치]** 목록이 다음 위치에 표시됨: **[!UICONTROL 사이드 킥]** 페이지에 를 렌더링하는 JSP 스크립트가 포함된 경우 **[!UICONTROL 장치]** 목록을 표시합니다. 을(를) 추가하려면 **[!UICONTROL 장치]** 나열 대상 **[!UICONTROL Sidekick]**, 다음을 포함 `/libs/wcm/mobile/components/simulator/simulator.jsp` 스크립트 `head` 섹션에 있는 마지막 항목이 될 필요가 없습니다.
+다음 **[!UICONTROL 장치]** 목록이 다음 위치에 표시됨: **[!UICONTROL Sidekick]** 페이지에 를 렌더링하는 JSP 스크립트가 포함된 경우 **[!UICONTROL 장치]** 목록을 표시합니다. 을(를) 추가하려면 **[!UICONTROL 장치]** 나열 대상 **[!UICONTROL Sidekick]**, 다음을 포함 `/libs/wcm/mobile/components/simulator/simulator.jsp` 스크립트 `head` 섹션에 있는 마지막 항목이 될 필요가 없습니다.
 
 다음을 정의하는 다음 코드를 JSP에 포함 `head` 섹션:
 
@@ -605,9 +605,9 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 
 * 이미지 경로는 라는 속성의 값으로 저장됩니다. `fileReference`.
 
-페이지를 작성할 때 다음을 사용합니다. **사이드 킥** 이미지를 지정하고 `image` 페이지 속성에 대한 노드:
+페이지를 작성할 때 다음을 사용합니다. **Sidekick** 이미지를 지정하고 `image` 페이지 속성에 대한 노드:
 
-1. 위치 **사이드 킥**&#x200B;를 클릭하고 **페이지** 탭을 클릭한 다음 **페이지 속성**.
+1. 위치 **Sidekick**&#x200B;를 클릭하고 **페이지** 탭을 클릭한 다음 **페이지 속성**.
 1. 다음을 클릭합니다. **이미지** 을 탭하고 이미지를 지정합니다.
 1. **확인**&#x200B;을 클릭합니다.
 
@@ -935,14 +935,14 @@ CSS에는 다음 구조를 사용하는 일련의 미디어 쿼리가 포함되�
 
 1. 타겟팅하는 각 뷰포트 크기에 대해 해당 미디어 쿼리를 CSS 파일에 추가합니다. 각 미디어 쿼리에 다음 항목을 추가합니다.
 
-   * 에 대한 선택기 `content` 클래스, 예 `.content{}`.
+   * 에 대한 선택기 `content` 클래스(예: ) `.content{}`.
    * 각 span 클래스에 대한 선택기(예: ) `.span3{ }`.
-   * 에 대한 선택기 `row-fluid` 클래스, 예 `.row-fluid{ }`
+   * 에 대한 선택기 `row-fluid` 클래스(예: ) `.row-fluid{ }`
    * 행-유동 클래스 내부에 있는 span 클래스의 선택기 `.row-fluid span3 { }`.
 
 1. 각 선택기의 폭 스타일 추가:
 
-   1. 너비 설정 `content` 페이지의 절대 크기(예: )에 대한 선택기 `width:480px`.
+   1. 너비 설정 `content` 페이지의 절대 크기로 선택기(예: ) `width:480px`.
    1. 모든 행 유체 선택기의 너비를 100%로 설정합니다.
    1. 모든 스팬 선택기의 너비를 콘텐츠 블록의 절대 너비로 설정합니다. 작은 격자는 동일한 너비의 균일하게 분포된 열을 사용합니다. `(absolute width of page)/(number of columns)`.
    1. 너비 설정 `.row-fluid .span` 선택기를 총 너비에 대한 백분율로 표시합니다. 다음을 사용하여 이 너비 계산 `(absolute span width)/(absolute page width)*100` 공식.

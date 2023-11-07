@@ -11,9 +11,9 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
 exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ Adobe Mobile Services Analytics를 활용하려면 Adobe Analytics 계정 정보
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-1. 에서 기존 구성 선택 **모바일 서비스** 또는 선택 **구성 만들기** 을 클릭하여 새 템플릿을 만듭니다.
+1. 에서 기존 구성 선택 **모바일 서비스** 또는 선택 **구성 만들기** 만들기.
 
    새 구성의 경우 **Mobile Services 속성**&#x200B;및 클릭&#x200B;**확인합니다.**
 

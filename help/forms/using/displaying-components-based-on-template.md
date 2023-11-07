@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f658da57-0134-4458-9ef9-a99787b66742
 docset: aem65
 exl-id: 1fc56829-db81-4450-b1d8-b4a31110199e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,11 @@ ht-degree: 1%
 
 1. CRXDE에서 다음으로 이동합니다. `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/`
 
-   구성 요소 그룹을 선택하려면 새 콘텐츠 정책이 필요합니다. 새 정책을 만들려면 기본 정책을 복사하여 붙여 넣고 이름을 바꿉니다.
+   구성 요소 그룹을 선택하려면 새 콘텐츠 정책이 필요합니다. 정책을 생성하려면 기본 정책을 복사하여 붙여넣은 다음 이름을 바꿉니다.
 
    기본 컨텐츠 정책 경로: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 
-   다음에서 `gridFluidLayout` 폴더, 기본 정책을 복사하여 붙여넣은 후 이름을 변경합니다. (예: `myPolicy`)
+   다음에서 `gridFluidLayout` 폴더, 기본 정책을 복사하여 붙여넣은 후 이름을 변경합니다. 예: `myPolicy`
 
    ![기본 정책 복사](assets/crx-default1.png)
 

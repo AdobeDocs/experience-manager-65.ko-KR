@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 2%
@@ -130,7 +130,7 @@ ht-degree: 2%
 
 #### 하위 페이지에 사용되는 템플릿 제한 {#limiting-templates-used-in-child-pages}
 
-주어진 페이지에서 하위 페이지를 만드는 데 사용할 수 있는 템플릿을 제한하려면 `cq:allowedTemplates` 다음의 속성 `jcr:content` 하위 페이지로 허용할 템플릿 목록을 지정할 페이지의 노드입니다. 예를 들어, 목록의 각 값은 허용된 하위 페이지에 대한 템플릿의 절대 경로여야 합니다 `/apps/geometrixx/templates/contentpage`.
+주어진 페이지에서 하위 페이지를 만드는 데 사용할 수 있는 템플릿을 제한하려면 `cq:allowedTemplates` 다음의 속성 `jcr:content` 하위 페이지로 허용할 템플릿 목록을 지정할 페이지의 노드입니다. 목록의 각 값은 허용된 하위 페이지에 대한 템플릿의 절대 경로여야 합니다(예: ). `/apps/geometrixx/templates/contentpage`.
 
 다음을 사용할 수 있습니다. `cq:allowedTemplates` 템플릿의 속성  `jcr:content` 이 템플릿을 사용하는 새로 만든 모든 페이지에 이 구성을 적용할 노드
 

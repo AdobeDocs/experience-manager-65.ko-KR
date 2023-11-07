@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b11f0e4c-4dec-4b66-9f54-a0aa13ac77b9
 exl-id: 298fcfeb-dc8d-4edc-8743-83c0e5e5bc08
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '208'
 ht-degree: 83%
 
 ---
@@ -25,7 +25,7 @@ AEM 워크플로에서는 페이지나 에셋에서 수행되는 일련의 단�
 
 일반적으로 다음이 진행됩니다.
 
-* 콘텐츠 작성자는 워크플로에 참여할 뿐만 아니라 페이지에 워크플로를 적용합니다.
+* 콘텐츠 작성자는 페이지에 워크플로를 적용하고 워크플로에 참여합니다.
 * 사용하는 워크플로는 조직의 비즈니스 프로세스마다 고유합니다.
 
 다음 페이지에 이 내용이 나와 있습니다.

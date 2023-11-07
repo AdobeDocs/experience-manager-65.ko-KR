@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1035'
 ht-degree: 13%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 13%
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. AEM WCM은 선택한 컨텐츠를 활성화합니다. 게시된 페이지가에 나타납니다. [웹 사이트 콘솔](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (녹색으로 표시) 콘텐츠를 활성화한 사람과 활성화 날짜 및 시간에 대한 정보가 표시됩니다.
+1. AEM WCM은 선택한 컨텐츠를 활성화합니다. 게시된 페이지가에 나타납니다. [웹 사이트 콘솔](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) 콘텐츠 및 활성화 날짜/시간을 활성화한 사용자에 대한 정보로 구성된 (녹색으로 표시됨)
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 

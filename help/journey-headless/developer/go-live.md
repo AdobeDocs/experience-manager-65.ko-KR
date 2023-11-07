@@ -2,7 +2,7 @@
 title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정 부분에서는 Headless 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1873'
 ht-degree: 51%
@@ -151,7 +151,7 @@ Cloud Manager를 사용하는 AMS 고객의 경우 모든 것이 테스트되고
 
 <!-- Can't find a parallel link -->
 <!--
-You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
 
 ## 성능 모니터링 {#performance-monitoring}
@@ -167,7 +167,7 @@ You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline
       * 사용자 수, 요청 및 로드 확인
 * 앱 및 공간별 성능 보고서 액세스
    * 서버가 가동되면 일반 지표가 녹색/주황색/빨간색인지 확인한 다음 특정 앱 문제를 식별합니다.
-   * 위에서 앱이나 공간(예: Photoshop 데스크탑, 페이월)으로 필터링한 동일한 보고서 열기
+   * 앱 또는 공간으로 필터링된 위의 동일한 보고서를 엽니다(예: Photoshop 데스크탑, 유료화).
    * Splunk 로그 API를 사용하여 서비스 및 애플리케이션 성능에 액세스
    * 다른 문제가 있는 경우 고객 지원 팀에 문의하십시오.
 
@@ -228,4 +228,4 @@ You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline
 
 * [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
 * [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

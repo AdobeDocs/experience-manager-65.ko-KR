@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: 061af6f3318d68b50c5f606ad50db7a39da0f4fd
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -100,9 +100,9 @@ CQ를 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 
 
 풀링된 연결 서비스를 구성하는 데 다음 속성을 사용할 수 있습니다. 속성 이름은 웹 콘솔에 나타나는 대로 나열됩니다. 에 대한 해당 이름 `sling:OsgiConfig` 노드가 괄호 안에 표시됩니다. HSQLDB 서버 및 별칭이 인 데이터베이스에 대한 예제 값이 표시됩니다. `mydb`:
 
-* JDBC 드라이버 클래스( `jdbc.driver.class`): java.sql.Driver 인터페이스를 구현하는 데 사용할 Java™ 클래스(예: ) `org.hsqldb.jdbc.JDBCDriver`. 데이터 유형은 다음과 같습니다. `String`.
+* JDBC 드라이버 클래스( `jdbc.driver.class`): java.sql.Driver 인터페이스를 구현하는 데 사용할 Java™ 클래스(예: ). `org.hsqldb.jdbc.JDBCDriver`. 데이터 유형은 다음과 같습니다. `String`.
 
-* JDBC 연결 URI( `jdbc.connection.uri`): 연결을 만드는 데 사용할 데이터베이스의 URL(예: ) `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. URL 형식은 java.sql.DriverManager 클래스의 getConnection 메소드와 함께 사용할 수 있어야 합니다. 데이터 유형은 다음과 같습니다. `String`.
+* JDBC 연결 URI( `jdbc.connection.uri`): 연결을 만드는 데 사용할 데이터베이스의 URL입니다. 예: `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. URL 형식은 java.sql.DriverManager 클래스의 getConnection 메소드와 함께 사용할 수 있어야 합니다. 데이터 유형은 다음과 같습니다. `String`.
 
 * 사용자 이름 ( `jdbc.username`): 데이터베이스 서버를 인증하는 데 사용할 사용자 이름입니다. 데이터 유형은 다음과 같습니다. `String`.
 

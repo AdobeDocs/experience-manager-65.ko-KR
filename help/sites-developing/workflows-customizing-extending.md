@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 2%
@@ -528,7 +528,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 스크립트를 사용하려면:
 
-1. 스크립트(예: CRXDE Lite 사용)를 만들고 아래 저장소에 저장합니다 `//apps/workflow/scripts/`
+1. 스크립트(예: CRXDE Lite 포함)를 만들고 아래 저장소에 저장합니다 `//apps/workflow/scripts/`
 1. 에서 스크립트를 식별하는 제목을 지정하려면 다음과 같이 하십시오. **프로세스 단계** 편집 대화 상자에서 다음 속성을 `jcr:content` 스크립트의 노드:
 
    | 이름 | 유형 | 값 |
@@ -619,7 +619,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 에 할당된 작업 항목이 할당된 사용자를 선택하는 ECMA 스크립트를 만들 수 있습니다. **참가자 단계** 를 생성합니다. 스크립트에는 이름이 인 함수가 포함되어야 합니다. `getParticipant` 인수를 지정하지 않아도 되고 `String` 사용자 또는 그룹의 ID를 포함합니다.
 
-스크립트는 JCR 저장소에 있으며 이 저장소에서 실행됩니다.
+스크립트는 JCR 저장소에 있으며 여기에서 실행됩니다.
 
 다음 표에는 스크립트의 워크플로우 Java 객체에 즉시 액세스할 수 있는 변수가 나열되어 있습니다.
 
@@ -645,7 +645,7 @@ function getParticipant() {
 }
 ```
 
-1. 스크립트(예: CRXDE Lite 사용)를 만들고 아래 저장소에 저장합니다 `//apps/workflow/scripts`
+1. 스크립트(예: CRXDE Lite 포함)를 만들고 아래 저장소에 저장합니다 `//apps/workflow/scripts`
 1. 에서 스크립트를 식별하는 제목을 지정하려면 다음과 같이 하십시오. **프로세스 단계** 편집 대화 상자에서 다음 속성을 `jcr:content` 스크립트의 노드:
 
    | 이름 | 유형 | 값 |
@@ -825,7 +825,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
      기존 단계에서 상속해야 합니다.
 
-     이 예제에서는 의 기본 단계에서 상속합니다. `cq/workflow/components/model/step`, 그러나 다음과 같은 다른 수퍼 유형을 사용할 수 있습니다. `participant`, `process`등
+     이 예제에서는 의 기본 단계에서 상속합니다. `cq/workflow/components/model/step`, 그러나 다음과 같은 다른 수퍼 유형을 사용할 수 있습니다. `participant`, `process`등.
 
    * `jcr:title`
 
@@ -1042,4 +1042,4 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  에서 아무 것도 수정해서는 안 됩니다. `/libs`를 예로 사용하기만 하면 됩니다. 기존 단계를 활용하려면 다음 위치에 복사합니다. `/apps` 그리고 거기서 수정하세요.
+>  에서 아무 것도 수정해서는 안 됩니다. `/libs`를 예로 사용하기만 하면 됩니다. 기존 단계를 사용하려면 다음 위치에 복사합니다. `/apps` 그리고 거기서 수정하세요.

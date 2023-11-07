@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2869'
-ht-degree: 96%
+source-wordcount: '2855'
+ht-degree: 91%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 96%
 
 사이트가 개인화된 콘텐츠를 공유하는 방식을 설정하려면 다음 절차를 수행해야 합니다.
 
-1. [새 영역을 만들거나](#creating-new-areas) [새 영역을 Live Copy로 만듭니다](#creating-new-areas). 영역에는 구성 요소가 타겟팅되는 위치인 페이지의 *영역*&#x200B;에 사용할 수 있는 모든 활동이 포함됩니다. 새 영역을 만들면 비어 있는 영역이 만들어지지만 새 영역을 Live Copy로 만들면 사이트 구조를 통해 콘텐츠를 상속할 수 있습니다.
+1. [영역 만들기](#creating-new-areas) 또는 [영역을 live copy로 만들기](#creating-new-areas). 영역에는 구성 요소가 타겟팅되는 위치인 페이지의 *영역*&#x200B;에 사용할 수 있는 모든 활동이 포함됩니다. 영역을 만들면 빈 영역이 만들어지지만 영역을 Live Copy로 만들면 사이트 구조에서 콘텐츠를 상속할 수 있습니다.
 
 1. 영역에 [사이트 또는 페이지를 연결](#linking-sites-to-an-area)합니다.
 
@@ -60,7 +60,7 @@ ht-degree: 96%
 
 ## 사용 사례 {#use-cases}
 
-사용 사례에 따라 다양한 방법으로 타겟팅된 콘텐츠에 대한 다중 사이트 지원을 설정할 수 있습니다. 이 섹션에서는 이 지원이 어떻게 하나의 브랜드에 이론적으로 실행되는지를 설명합니다. 또한 [예: 지표를 기반으로 한 콘텐츠 타겟팅](#example-targeting-content-based-on-geography)에서는 여러 사이트에서 콘텐츠를 타깃팅하는 실제 애플리케이션을 볼 수 있습니다.
+사용 사례에 따라 여러 가지 방법으로 타겟팅된 콘텐츠에 대한 다중 사이트 지원을 설정할 수 있습니다. 이 섹션에서는 이 지원이 어떻게 하나의 브랜드에 이론적으로 실행되는지를 설명합니다. 또한 [예: 지표를 기반으로 한 콘텐츠 타겟팅](#example-targeting-content-based-on-geography)에서는 여러 사이트에서 콘텐츠를 타깃팅하는 실제 애플리케이션을 볼 수 있습니다.
 
 타겟팅된 콘텐츠는 사이트 또는 페이지의 범위를 정의하는 이른 바 영역이란 것으로 둘러싸여 있습니다. 이러한 영역은 브랜드 수준에서 정의되며, 하나의 브랜드는 여러 영역을 포함할 수 있습니다. 영역은 브랜드 간에 구별될 수 있습니다. 하나의 브랜드는 마스터 영역만 포함할 수도 있고 따라서 모든 브랜드에서 공유되는 반면 또 다른 브랜드는 여러 브랜드(예를 들어 영역별로)를 포함할 수도 있습니다. 따라서 브랜드는 브랜드 간에 영역 세트를 미러링할 필요가 없습니다.
 
@@ -130,11 +130,11 @@ ht-degree: 96%
 >
 >이 기능에 대한 자세한 내용은 [타겟팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-authoring/technical-multisite-targeted.md)을 참조하십시오.
 
-### 새 영역 만들기와 새 영역을 Live Copy로 만들기 비교 {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
+### 영역 만들기와 라이브 카피로 영역 만들기 {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-AEM에서 새 영역을 만들거나 새 영역을 Live Copy로 만들 수 있습니다. 새 영역을 만들면 활동과 해당 활동에 속하는 오퍼, 경험 등과 같은 모든 항목이 그룹화됩니다. 타겟팅된 콘텐츠로 이루어진 완전히 구별되는 세트를 만들거나 타겟팅된 콘텐츠로 이루어진 세트를 공유하려는 경우 새 영역을 만듭니다.
+AEM에서는 영역을 만들거나 라이브 카피로 영역을 만들 수 있습니다. 영역을 만들면 활동 및 오퍼, 경험 등과 같은 해당 활동에 속하는 모든 것이 그룹화됩니다. 완전히 구별되는 타겟팅된 콘텐츠 세트를 만들거나 타겟팅된 콘텐츠 세트를 공유하려는 경우 영역을 만듭니다.
 
-그러나 두 사이트 사이에 MSM을 통해 상속을 설정했다면 활동을 상속할 수도 있습니다. 이 경우, Live Copy인 새 영역을 만듭니다. 여기서 Y는 X의 Live Copy이므로 모든 활동도 상속합니다.
+그러나 두 사이트 사이에 MSM을 통해 상속을 설정했다면 활동을 상속할 수도 있습니다. 이 경우 영역을 라이브 카피로 만듭니다. 여기서 Y는 X의 라이브 카피이므로 모든 활동도 상속합니다.
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ AEM에서 이렇게 하려면 다음 작업을 수행합니다.
 >
 >The default area called Master Area is collapsed by default when you tap or click on the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
 
-새 영역을 만들려면 다음 작업을 수행하십시오.
+영역을 만들려면 다음 작업을 수행하십시오.
 
 1. **개인화** > **활동** 또는 **오퍼**&#x200B;로 이동한 다음 내 브랜드로 이동합니다.
 1. **영역 만들기**&#x200B;를 탭하거나 클릭합니다.

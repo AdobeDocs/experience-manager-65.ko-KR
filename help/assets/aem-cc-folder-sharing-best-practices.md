@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Collaboration
 exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -59,14 +59,14 @@ ht-degree: 0%
 * **네트워킹 및 대역폭:** 공유 폴더의 파일과 모든 업데이트는 시스템 간에 네트워크를 통해 전송되어야 합니다. 관련 파일과 업데이트만 공유되는지 확인합니다.
 * **폴더 유형**: 공유 [!DNL Assets] 유형의 폴더 `sling:OrderedFolder`는 의 공유 컨텍스트에서 지원되지 않습니다. [!DNL Adobe Experience Cloud]. 폴더를 공유하려면에서 만들 때 [!DNL Assets], 을(를) 선택하지 마십시오. [!UICONTROL 주문됨] 옵션을 선택합니다.
 
-## 우수 사례 {#best-practices}
+## 모범 사례 {#best-practices}
 
 사용 모범 사례 [!DNL Experience Manager] 끝 [!DNL Creative Cloud] 폴더 공유에는 다음이 포함됩니다.
 
 * **볼륨 고려 사항:** [!DNL Experience Manager] 및 [!DNL Creative Cloud] 폴더 공유는 특정 캠페인이나 활동과 관련하여 더 적은 수의 파일을 공유하는 데 사용해야 합니다. 조직의 승인된 모든 에셋과 같이 더 큰 에셋 세트를 공유하려면 다른 분배 방법을 사용합니다(예: [!DNL Assets Brand Portal]) 또는 [!DNL Experience Manager] 데스크탑 앱입니다.
 * **깊은 계층 구조를 공유하지 마십시오.** 공유는 재귀적으로 작동하며 선택적 공유를 허용하지 않습니다. 일반적으로 하위 폴더가 없거나 하나의 하위 폴더 수준과 같은 얕은 계층 구조를 가진 폴더만 공유하는 것으로 간주합니다.
 * **단방향 공유를 위한 별도의 폴더:** 최종 자산을 공유할 때는 별도의 폴더를 사용해야 합니다. [!DNL Assets] 끝 [!DNL Creative Cloud] 파일 및 크리에이티브 준비가 끝난 에셋을 다시 공유할 수 있는 [!DNL Creative Cloud] 파일 위치: [!DNL Assets]. 이러한 폴더에 대한 좋은 이름 지정 규칙과 함께, 를 이해하기 쉬운 작업 환경을 만듭니다. [!DNL Assets] 및 [!DNL Creative Cloud] 비슷하게 사용합니다.
-* **공유 폴더의 WIP 방지:** 공유 폴더는 진행 중인 작업에 사용해서는 안 됩니다. 파일을 자주 변경해야 하는 작업을 수행하려면 Creative Cloud 파일에 별도의 폴더를 사용하십시오.
+* **공유 폴더의 WIP 방지:** 진행 중인 작업에 공유 폴더를 사용하지 않음 - Creative Cloud 파일에 별도의 폴더를 사용하여 파일을 자주 변경해야 하는 작업을 수행합니다.
 * **공유 폴더 외부에서 새 작업 시작:** 새 디자인(크리에이티브 파일)은 Creative Cloud 파일의 개별 WIP 폴더에서 시작되어야 하며 공유할 준비가 되면 [!DNL Assets] 사용자는 공유 폴더로 이동하거나 저장해야 합니다.
 * **공유 구조 단순화:** 관리 가능한 운영 설정을 만들려면 공유 구조를 단순화하는 것이 좋습니다. 모든 크리에이티브 사용자와 공유하는 대신, [!DNL Assets] 폴더는 크리에이티브 디렉터 또는 팀 관리자와 같은 팀 담당자와만 공유해야 합니다. 크리에이티브 쪽의 관리자는 최종 에셋을 수신하고 작업 할당을 결정한 다음 디자이너가 WIP 에셋의 자체 Creative Cloud 계정에서 작업할 수 있도록 합니다. Creative Cloud 공동 작업 기능을 사용하여 작업을 조정하고, 마지막으로 공유할 준비가 된 에셋을 선택한 다음 대상에 배치할 수 있습니다 [!DNL Assets] 을(를) 크리에이티브 준비가 완료된 공유 폴더로 복사합니다.
 

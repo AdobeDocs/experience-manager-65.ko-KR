@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2065'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ DB2에는 Tivoli Storage Manager에 데이터베이스를 백업하는 기능이
 
 스냅샷 백업을 사용하거나 아카이브 로그 모드에서 실행되도록 Oracle 데이터베이스를 구성합니다. (참조: [Oracle 백업: 소개](https://www.databasedesign-resource.com/oracle-backup.md).) oracle 데이터베이스 백업 및 복구에 대한 자세한 내용은 다음 사이트를 참조하십시오.
 
-[Oracle 백업 및 복구:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) 백업 및 복구의 개념과 백업, 복구 및 보고를 위해 RMAN(복구 관리자)을 사용하는 가장 일반적인 기술에 대해 자세히 설명하고 백업 및 복구 전략을 계획하는 방법에 대한 자세한 정보를 제공합니다.
+[Oracle 백업 및 복구:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) 백업 및 복구의 개념과 백업, 복구 및 보고를 위해 RMAN(Recovery Manager)을 사용하는 가장 일반적인 기술에 대해 자세히 설명하고 백업 및 복구 전략을 계획하는 방법에 대한 자세한 정보를 제공합니다.
 
 [Oracle 데이터베이스 백업 및 복구 사용 설명서:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) RMAN 아키텍처, 백업 및 복구 개념과 메커니즘, 시점 복구 및 데이터베이스 플래시백 기능과 같은 고급 복구 기술, 백업 및 복구 성능 튜닝에 대한 심층적인 정보를 제공합니다. 또한 RMAN 대신 호스트 운영 체제 기능을 사용하는 사용자 관리 백업 및 복구도 포함됩니다. 이 볼륨은 보다 정교한 데이터베이스 배포의 백업 및 복구와 고급 복구 시나리오에 필수적입니다.
 
@@ -153,7 +153,7 @@ Content Services(더 이상 사용되지 않음)를 설치하면 콘텐츠 저�
 
 콘텐츠 저장소 루트 디렉토리의 기본 위치는 입니다. `[aem-forms root]/lccs_data`.
 
-Content Storage Root 디렉터리에 있는 다음 디렉터리를 백업합니다.
+Content Storage Root 디렉터리에서 다음 디렉터리를 백업합니다.
 
 /audit.contentstore
 
@@ -163,7 +163,7 @@ Content Storage Root 디렉터리에 있는 다음 디렉터리를 백업합니�
 
 /backup-lucene-indexes
 
-/backup-lucene-indexes 디렉토리가 없으면 Content Storage Root 디렉토리에도 있는 /lucene-indexes 디렉토리를 백업합니다. /backup-lucene-indexes 디렉터리가 있으면 오류가 발생할 수 있으므로 /lucene-indexes 디렉터리를 백업하지 마십시오.
+/backup-lucene-indexes 디렉토리가 없으면 /lucene-indexes 디렉토리도 컨텐트 저장 영역 루트 디렉토리에 백업합니다. /backup-lucene-indexes 디렉터리가 있으면 오류가 발생할 수 있으므로 /lucene-indexes 디렉터리를 백업하지 마십시오.
 
 ### 콘텐츠 저장소 루트 위치(클러스터된 환경) {#content-storage-root-location-clustered-environment}
 
@@ -173,7 +173,7 @@ Content Storage Root 디렉터리에 있는 다음 디렉터리를 백업합니�
 
 **인덱스 루트 디렉터리:** 클러스터의 각 노드에 생성되며 항상 동일한 경로와 디렉토리 이름을 갖는 디렉토리
 
-콘텐츠 저장소 루트 디렉토리의 기본 위치는 입니다. `[GDS root]/lccs_data`, 여기서 `[GDS root]` 는에 설명된 위치입니다. [GDS 위치](files-back-recover.md#gds-location). Content Storage Root 디렉터리에 있는 다음 디렉터리를 백업합니다.
+콘텐츠 저장소 루트 디렉토리의 기본 위치는 입니다. `[GDS root]/lccs_data`, 여기서 `[GDS root]` 는에 설명된 위치입니다. [GDS 위치](files-back-recover.md#gds-location). Content Storage Root 디렉터리에서 다음 디렉터리를 백업합니다.
 
 /audit.contentstore
 
@@ -183,7 +183,7 @@ Content Storage Root 디렉터리에 있는 다음 디렉터리를 백업합니�
 
 /backup-lucene-indexes
 
-/backup-lucene-indexes 디렉토리가 없으면 Content Storage Root 디렉토리에도 있는 /lucene-indexes 디렉토리를 백업합니다. /backup-lucene-indexes 디렉터리가 있으면 오류가 발생할 수 있으므로 /lucene-indexes 디렉터리를 백업하지 마십시오.
+/backup-lucene-indexes 디렉토리가 없으면 /lucene-indexes 디렉토리도 컨텐트 저장 영역 루트 디렉토리에 백업합니다. /backup-lucene-indexes 디렉터리가 있으면 오류가 발생할 수 있으므로 /lucene-indexes 디렉터리를 백업하지 마십시오.
 
 인덱스 루트 디렉토리의 기본 위치는 다음과 같습니다. `[aem-forms root]/lucene-indexes` 각 노드에서
 
@@ -193,6 +193,6 @@ AEM Forms 환경에 추가 글꼴을 설치한 경우 별도로 백업해야 합
 
 >[!NOTE]
 >
-기본적으로 AEM Forms와 함께 설치된 Adobe 글꼴은에 있습니다. `[aem-forms root]/fonts` 디렉토리.
+기본적으로 AEM Forms와 함께 설치되는 Adobe 글꼴은 `[aem-forms root]/fonts` 디렉토리.
 
 호스트 컴퓨터에서 운영 체제를 다시 초기화하고 이전 운영 체제의 글꼴을 사용하려면 시스템 글꼴 디렉터리의 내용도 백업해야 합니다. 자세한 지침은 해당 운영 체제 설명서를 참조하십시오.

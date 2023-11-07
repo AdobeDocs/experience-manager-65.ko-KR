@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager CIF 핵심 구성 요소 스타일 지정
-description: Adobe Experience Manager CIF 코어 구성 요소 스타일링 방법을 알아봅니다. 이 자습서에서는 클라이언트측 라이브러리 또는 clientlib을 사용하여 AEM(Adobe Experience Manager) Commerce 구현을 위한 CSS 및 JavaScript를 배포하고 관리하는 방법을 다룹니다. 이 튜토리얼에서는 ui.frontend 모듈과 Webpack 프로젝트를 전체 빌드 프로세스에 통합하는 방법에 대해서도 설명합니다.
+title: 스타일 Adobe Experience Manager CIF 핵심 구성 요소
+description: Adobe Experience Manager CIF 핵심 구성 요소의 스타일을 지정하는 방법을 알아봅니다. 이 자습서에서는 클라이언트측 라이브러리 또는 clientlib을 사용하여 AEM(Adobe Experience Manager) Commerce 구현을 위한 CSS 및 JavaScript를 배포하고 관리하는 방법을 다룹니다. 이 튜토리얼에서는 ui.frontend 모듈과 Webpack 프로젝트를 전체 빌드 프로세스에 통합하는 방법에 대해서도 설명합니다.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -9,16 +9,16 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2533'
 ht-degree: 3%
 
 ---
 
-# AEM CIF 핵심 구성 요소 스타일 지정 {#style-aem-cif-core-components}
+# 스타일 AEM CIF 핵심 구성 요소 {#style-aem-cif-core-components}
 
-다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 Venia 참조 프로젝트를 검사하고 AEM CIF 코어 구성 요소에서 사용되는 CSS 및 JavaScript를 구성하는 방법을 알아봅니다. CSS를 사용하여 스타일을 만들어 의 기본 스타일을 업데이트합니다. **제품 티저** 구성 요소.
+다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 Venia 참조 프로젝트를 검사하고 AEM CIF 핵심 구성 요소에서 사용하는 CSS 및 JavaScript를 구성하는 방법을 알아봅니다. CSS를 사용하여 스타일을 만들어 의 기본 스타일을 업데이트합니다. **제품 티저** 구성 요소.
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 ## 빌드할 내용
 
-이 자습서에서는 카드와 유사한 제품 티저 구성 요소에 대해 새로운 스타일이 구현됩니다. 자습서에서 배운 내용을 다른 CIF 핵심 구성 요소에 적용할 수 있습니다.
+이 자습서에서는 카드와 유사한 제품 티저 구성 요소에 대해 새로운 스타일이 구현됩니다. 자습서에서 학습된 단원은 다른 CIF 핵심 구성 요소에 적용할 수 있습니다.
 
 ![빌드할 내용](../assets/style-cif-component/what-you-will-build.png)
 
@@ -40,7 +40,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->**기존 프로젝트를 마음껏 사용** (CIF가 포함된 AEM Project Archetype 기반) 이 섹션을 건너뜁니다.
+>**기존 프로젝트를 마음껏 사용** (CIF이 포함된 AEM Project Archetype 기반) 이 섹션을 건너뜁니다.
 
 1. 다음 git 명령을 실행하여 프로젝트를 복제합니다.
 
@@ -467,7 +467,7 @@ AEM은 성능을 위해 클라이언트 라이브러리를 캐시하려고 시�
 
 ## 축하합니다 {#congratulations}
 
-첫 번째 AEM CIF 핵심 구성 요소 스타일을 지정하고 Webpack 개발 서버를 사용했습니다!
+첫 번째 AEM CIF 핵심 구성 요소를 스타일링하고 Webpack 개발 서버를 사용했습니다!
 
 ## 보너스 챌린지 {#bonus-challenge}
 

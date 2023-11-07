@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2462'
-ht-degree: 0%
+source-wordcount: '2460'
+ht-degree: 1%
 
 ---
 
@@ -117,7 +117,7 @@ AEM 구성 요소의 jsp 스크립트를 개발할 때 스크립트 상단에 �
 
 **tagName** - 비어 있지 않은 출력을 둘러싸는 요소의 이름입니다. 기본값은 DIV입니다.
 
-**자리 표시자** - 편집 모드, 즉 자리 표시자에서 null 또는 빈 텍스트에 사용할 기본값 기본 검사는 선택적 서식 지정 및 이스케이프 후에 수행됩니다(즉, 출력에 있는 그대로 기록됨). 기본값은 다음과 같습니다.
+**자리 표시자** - 편집 모드, 즉 자리 표시자에서 null 또는 빈 텍스트에 사용할 기본값 기본 검사는 선택적 서식 지정 및 이스케이프 후에 수행됩니다. 즉, 출력에 있는 그대로 기록됩니다. 기본값은 다음과 같습니다.
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
@@ -545,7 +545,7 @@ Sling 태그 라이브러리에는 유용한 Sling 기능이 포함되어 있습
 
 >[!NOTE]
 >
->에 포함된 리소스 및 스크립트 해상도 `<sling:include>` 태그는 일반적인 sling URL 확인과 동일합니다. 기본적으로 현재 요청의 선택기, 확장 등은 포함된 스크립트에도 사용됩니다. 다음과 같은 태그 속성을 통해 수정할 수 있습니다. `replaceSelectors="foo.bar"` 선택기를 덮어쓸 수 있습니다.
+>에 포함된 리소스 및 스크립트 해상도 `<sling:include>` 태그는 일반적인 sling URL 확인과 동일합니다. 기본적으로 현재 요청의 선택기, 확장 등은 포함된 스크립트에도 사용됩니다. 태그 속성을 통해 수정할 수 있습니다(예: ). `replaceSelectors="foo.bar"` 선택기를 덮어쓸 수 있습니다.
 
 예:
 
@@ -603,7 +603,7 @@ Sling 태그 라이브러리에는 유용한 Sling 기능이 포함되어 있습
 
 * 현재 리소스가 JCR 노드를 가리키는 경우(일반적으로 Sling의 경우), 이렇게 하면 노드 개체에 직접 액세스할 수 있습니다. 그렇지 않으면 이 개체가 정의되지 않습니다.
 
-**log**
+**로그**
 
 * 스크립트 내에서 Sling 로그 시스템에 로깅하기 위한 SLF4J 로거를 제공합니다(예: log.info(&quot;내 스크립트 실행&quot;)).
 

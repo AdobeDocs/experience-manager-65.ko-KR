@@ -4,10 +4,10 @@ description: AEM을 Microsoft Translator에 연결하여 번역 워크플로를 
 feature: Language Copy
 role: Admin
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
-source-git-commit: f6e94d215a49683efe87254ccc1600fefcb369bc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 | 속성 | 설명 |
 |---|---|
 | 번역 레이블 | 번역 서비스의 표시 이름 |
-| 번역 속성 | (옵션) 사용자 생성 콘텐츠의 경우, 번역된 텍스트 옆에 표시되는 속성 (예: `Translations by Microsoft`) |
+| 번역 속성 | (선택 사항) 사용자 생성 콘텐츠의 경우, 번역된 텍스트 옆에 표시되는 속성(예: ) `Translations by Microsoft` |
 | 작업 영역 ID | (옵션) 사용할 맞춤화된 Microsoft Translator 엔진의 ID |
 | 구독 키 | Microsoft Translator에 대한 Microsoft 구독 키 |
 

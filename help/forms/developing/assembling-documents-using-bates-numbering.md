@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1921'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Bates 번호 매기기를 사용하여 고유한 페이지 식별자가 포함된 PDF 문서를 어셈블할 수 있습니다. *베이츠 번호 매기기* 는 관련 문서 배치에 고유 식별자를 적용하는 방법입니다. 문서(또는 문서 세트)의 각 페이지에는 페이지를 고유하게 식별하는 베이츠 번호가 지정됩니다. 예를 들어, BOM 정보가 포함되어 있고 어셈블리 생산과 연관된 제조 문서에는 식별자가 포함될 수 있습니다. Bates 번호에는 순차적으로 증가하는 숫자 값과 선택적 접두어 및 접미어가 포함됩니다. 접두어 + 숫자 + 접미어를 라고 합니다. *베이츠 패턴*.
 
-다음 그림은 문서 헤더에 있는 고유 식별자를 포함하는 PDF 문서를 보여 줍니다.
+다음 그림은 문서 헤더에 고유 식별자가 포함된 PDF 문서를 보여 줍니다.
 
 ![au_au_batesnumber](assets/au_au_batesnumber.png)
 

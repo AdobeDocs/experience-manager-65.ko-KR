@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2008'
 ht-degree: 1%
 
 ---
@@ -488,7 +488,7 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 >
 >삭제해도 모델 노드는 제거되지 않습니다.
 
-새 모델을 만들 때:
+모델을 만들 때:
 
 * 워크플로우 모델 편집기를 사용하려면 모델이 아래의 특정 노드 구조를 사용해야 합니다 `/var/workflow/models`. 모델의 상위 노드는 유형이어야 합니다. `cq:Page` 다음 권한 보유 `jcr:content` 다음 속성 값이 있는 노드:
 

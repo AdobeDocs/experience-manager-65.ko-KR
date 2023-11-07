@@ -2,10 +2,10 @@
 title: Edge Delivery Services 사용
 description: Edge Delivery Services 사용 (EDS)
 exl-id: 6c9178b0-c8f3-4fc7-8614-8e71ffc2f0b8
-source-git-commit: 6a1d96125ca6647770718fff74ec21afb5c91a68
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Edge Delivery를 사용하여 콘텐츠 소스에 관계없이 원활하게 콘�
 
 ## Edge Delivery Services 및 GitHub {#github-edge}
 
-Edge Delivery는 GitHub를 활용하므로 고객은 GitHub 저장소에서 바로 코드를 관리 및 배포할 수 있습니다. 예를 들어 Google Docs 또는 Microsoft Word에서 콘텐츠를 작성할 수 있고, GitHub의 CSS 및 JavaScript를 사용하여 사이트 기능을 개발할 수 있습니다. 콘텐츠 미리보기부터 프로덕션까지 각 분기별로 웹 사이트가 자동으로 생성됩니다. GitHub 저장소에 저장된 모든 리소스는 빌드 프로세스 없이 웹 사이트에서 제공됩니다.
+Edge 전달은 GitHub를 사용하므로 고객은 GitHub 저장소에서 직접 코드를 관리하고 배포할 수 있습니다. 예를 들어 Google Docs 또는 Microsoft Word에서 콘텐츠를 작성할 수 있고, GitHub의 CSS 및 JavaScript를 사용하여 사이트 기능을 개발할 수 있습니다. 콘텐츠 미리보기부터 프로덕션까지 각 분기별로 웹 사이트가 자동으로 생성됩니다. GitHub 저장소에 저장된 모든 리소스는 빌드 프로세스 없이 웹 사이트에서 제공됩니다.
 
 ## Sidekick 사용 {#using-sidekick}
 

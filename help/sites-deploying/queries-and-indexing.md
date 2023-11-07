@@ -8,9 +8,9 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '3032'
 ht-degree: 2%
 
 ---
@@ -429,7 +429,7 @@ AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 
 
 #### Solr에 대한 권장 구성 {#recommended-configuration-for-solr}
 
-다음은 이 문서에 설명된 세 가지 Solr 배포 모두에서 사용할 수 있는 기본 구성의 예입니다. AEM에 이미 존재하며 다른 애플리케이션과 함께 사용해서는 안 되는 전용 속성 인덱스를 수용합니다.
+다음은 이 문서에 설명된 세 가지 Solr 배포 모두에서 사용할 수 있는 기본 구성의 예입니다. AEM에 이미 있는 전용 속성 인덱스를 수용하므로 다른 애플리케이션과 함께 사용하지 마십시오.
 
 아카이브를 제대로 사용하려면 아카이브 내용을 Solr Home 디렉토리에 직접 배치해야 합니다. 다중 노드 배포가 있는 경우 각 노드의 루트 폴더 바로 아래로 이동해야 합니다.
 

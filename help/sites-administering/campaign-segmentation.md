@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 17%
+source-wordcount: '1132'
+ht-degree: 14%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 17%
 
 세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다. 다음을 참조하십시오 [세그멘테이션 용어집](/help/sites-authoring/segmentation-overview.md) 세그먼테이션의 작동 방식 및 주요 용어에 대한 정보입니다.
 
-사이트 방문자 및 달성하고자 하는 목표에 대해 이전에 수집한 정보에 따라 타겟팅된 콘텐츠에 필요한 세그먼트 및 전략을 정의해야 합니다.
+사이트 방문자 및 달성하고자 하는 목표에 대해 이미 수집한 정보에 따라 타겟팅된 콘텐츠에 필요한 세그먼트 및 전략을 정의해야 합니다.
 
 그런 다음 이러한 세그먼트를 사용하여 방문자에게 특별히 타겟팅된 콘텐츠를 제공할 수 있습니다. 이 콘텐츠는 다음에서 유지됩니다. [캠페인](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) 섹션을 참조하십시오. 여기서 정의된 티저 페이지는 모든 페이지에서 티저 단락으로 포함될 수 있으며 특정 콘텐츠가 적용될 수 있는 방문자 세그먼트를 정의할 수 있습니다.
 
@@ -131,7 +131,7 @@ AEM을 사용하면 세그먼트, 티저 및 캠페인을 쉽게 만들고 업�
 1. 만들기 [새 페이지](/help/sites-authoring/editing-content.md#creatinganewpage) 사용 **세그먼트** 템플릿.
 1. 새 페이지를 열어 세그먼트 편집기를 확인합니다.
 
-   ![세그먼트 편집기에서 새 세그먼트를 만드는 첫 번째 단계입니다](assets/screen_shot_2012-02-02at101726am.png)
+   ![세그먼트 편집기에서 세그먼트를 만드는 첫 번째 단계입니다](assets/screen_shot_2012-02-02at101726am.png)
 
 1. 사이드 킥 또는 컨텍스트 메뉴를 사용합니다(일반적으로 마우스 오른쪽 버튼을 클릭한 다음 선택). **새로 만들기...** 새 구성 요소 삽입 창을 열어 필요한 세그먼트 트레이트를 찾습니다. 그런 다음 로 드래그합니다. **세그먼트 편집기** 기본값으로 나타납니다. **및** 컨테이너.
 1. 새 트레이트를 두 번 클릭하여 특정 매개 변수를 편집합니다(예: 마우스 위치).

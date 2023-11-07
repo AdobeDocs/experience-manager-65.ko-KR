@@ -1,32 +1,28 @@
 ---
 title: 페이지 템플릿 만들기
-seo-title: Creating Page Templates
 description: 템플릿은 결과 페이지의 구조를 정의하며, 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 것은 더 이상 개발자 전용 작업이 아닙니다.
-seo-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
-uuid: e14cd298-289f-43f0-aacb-314ed5d56c12
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4862'
-ht-degree: 85%
+source-wordcount: '4840'
+ht-degree: 82%
 
 ---
 
 # 페이지 템플릿 만들기{#creating-page-templates}
 
-페이지를 생성할 때 새 페이지를 만드는 기준으로 사용할 템플릿을 선택해야 합니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소를 정의합니다.
+페이지를 만들 때 새 페이지를 만들 때 기준으로 사용되는 템플릿을 선택해야 합니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소를 정의합니다.
 
 **템플릿 편집기**&#x200B;를 사용하면 템플릿을 만들고 유지 관리하는 작업은 더 이상 개발자 전용 작업이 아닙니다. **템플릿 작성자**&#x200B;라고 불리는 강력한 사용자 유형도 참여할 수 있습니다. 개발자는 여전히 환경을 설정하고 클라이언트 라이브러리를 생성하고 사용할 구성 요소를 생성해야 하지만, 이러한 기본 사항이 마련되면 **템플릿 작성자**&#x200B;는 개발 프로젝트 없이도 템플릿을 생성하고 구성할 수 있습니다.
 
 **템플릿 콘솔**&#x200B;을 사용하여 템플릿 작성자는 다음과 같은 작업을 수행할 수 있습니다.
 
-* 새 템플릿을 만들거나 기존 템플릿을 복사합니다.
+* 템플릿을 만들거나 기존 템플릿을 복사합니다.
 * 템플릿의 라이프사이클을 관리합니다.
 
 **템플릿 편집기**&#x200B;를 사용하여 템플릿 작성자는 다음과 같은 작업을 수행할 수 있습니다.
@@ -55,13 +51,13 @@ ht-degree: 85%
 
 시작하기 전에 고려해야 할 사항은 다음과 같습니다.
 
-* 새 템플릿을 만들려면 공동 작업이 필요합니다. 이러한 이유로 각 작업에 대해 [역할](#roles)이 지정됩니다.
+* 템플릿을 만들려면 공동 작업이 필요합니다. 이러한 이유로 각 작업에 대해 [역할](#roles)이 지정됩니다.
 
 * 인스턴스 구성 방식에 따라 AEM에서 제공하는 기능을 사용하는 것이 유용할 수 있습니다 [두 가지 기본 템플릿 유형](/help/sites-authoring/templates.md#editable-and-static-templates). 이는 실제 방식에 영향을 주지 않습니다 [템플릿을 사용하여 페이지 만들기](#using-a-template-to-create-a-page): 만들 수 있는 템플릿 유형 및 페이지가 해당 템플릿과 관련되는 방식에 영향을 줍니다.
 
 ### 역할 {#roles}
 
-**템플릿 콘솔** 및 **템플릿 편집기**&#x200B;를 사용하여 새 템플릿을 만들려면 다음 역할 간의 공동 작업이 필요합니다.
+Creating a template using the **Templates Console** and the **Template Editor** requires collaboration between the following roles:
 
 * **관리자**:
 
@@ -116,18 +112,18 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
 ### 템플릿을 사용하여 페이지 만들기 {#using-a-template-to-create-a-page}
 
-템플릿 사용 시 [새 페이지 만들기](/help/sites-authoring/managing-pages.md#creating-a-new-page) 정적 템플릿과 편집 가능한 템플릿 사이에는 가시적인 차이점과 표시가 없습니다. 페이지 작성자의 경우 프로세스가 투명합니다.
+템플릿 사용 시 [페이지 만들기](/help/sites-authoring/managing-pages.md#creating-a-new-page) 정적 템플릿과 편집 가능한 템플릿 사이에는 가시적인 차이점과 표시가 없습니다. 페이지 작성자의 경우 프로세스가 투명합니다.
 
 ## 템플릿 만들기 및 관리 {#creating-and-managing-templates}
 
-편집 가능 템플릿을 새로 만들 때 다음 작업을 수행합니다.
+편집 가능한 템플릿을 만들 때 다음 작업을 수행하십시오.
 
 * **템플릿** 콘솔을 사용합니다. **도구** 콘솔의 **일반** 섹션에서 사용할 수 있습니다.
 
    * 또는 [에서 바로 사용할 수 있습니다.https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * 필요한 경우 [템플릿용 폴더를 만들 수](#creating-a-template-folder-admin) 있습니다.
-* 처음에는 빈 상태인 [새 템플릿을 만듭니다](#creatinganewtemplateauthor).
+* [템플릿 만들기](#creatinganewtemplateauthor): 처음에 비어 있음
 
 * 필요한 경우 템플릿에 대한 [추가 속성을 정의](#definingtemplatepropertiesauthor)합니다.
 * [템플릿을 편집](#editingtemplates)하여 다음을 정의합니다.
@@ -177,7 +173,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
    * **템플릿 이름**
    * **설명**
 
-1. **만들기**&#x200B;를 선택합니다. 확인이 표시되면 **열기**[](#editingatemplate)를 선택하여 템플릿 편집을 시작하거나, **완료**&#x200B;를 선택하여 템플릿 콘솔로 돌아갑니다.
+1. **만들기**&#x200B;를 선택합니다. 확인이 표시되면 **열기**[](#editingatemplate)를 선택하여 템플릿 편집을 시작하거나 **완료**&#x200B;를 선택하여 템플릿 콘솔로 돌아갑니다.
 
    >[!NOTE]
    >
@@ -200,7 +196,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
 * 설명
 
-   * 템플릿 및 해당 사용 방법에 대한 자세한 내용을 제공하기 위한 선택적 설명으로, **페이지 만들기** 마법사와 같은 기능에서 볼 수 있습니다.
+   * 템플릿 및 해당 사용 방법에 대한 자세한 내용을 제공하기 위한 선택적 설명으로, 와 같은 기능에서 볼 수 있습니다. **페이지 만들기** 마법사.
 
 속성을 보거나 편집하려면:
 
@@ -251,7 +247,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
 1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
 1. 도구 모음에서 **활성화** 또는 **비활성화**&#x200B;를 선택하고 다시 확인 대화 상자에서 선택한 옵션을 다시 선택합니다.
-1. 이제 요구 사항에 따라 [템플릿을 편집](/help/sites-authoring/managing-pages.md#creating-a-new-page)할 수 있지만, [새 페이지를 만들 때](#editingatemplate) 템플릿을 사용할 수 있습니다.
+1. 이제 다음의 경우에 템플릿을 사용할 수 있습니다. [페이지 만들기](/help/sites-authoring/managing-pages.md#creating-a-new-page), 하지만 다음과 같은 작업을 수행해야 합니다. [템플릿 편집](#editingatemplate) 자신의 요구 사항에 따라.
 
 >[!NOTE]
 >
@@ -318,7 +314,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
   >[!NOTE]
   >
-  >결과 페이지 뿐만 아니라 **초기 콘텐츠** 모드에서 액세스 가능한 상위 구성 요소(즉, 레이아웃 컨테이너 내의 구성 요소)가 있는 잠금 해제된 모든 구성 요소를 삭제할 수 있습니다.
+  >위치 **초기 컨텐츠** 모드 및 결과 페이지에서 액세스 가능한 상위 구성 요소(즉, 레이아웃 컨테이너 내의 구성 요소)가 있는 잠금 해제된 모든 구성 요소를 삭제할 수 있습니다.
 
 * [레이아웃](#editingatemplatelayout)
 
@@ -384,7 +380,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
   >곧바로 사용 가능한 **제목** 구성 요소를 템플릿에 추가하면 기본 텍스트 **구조**&#x200B;가 포함됩니다.
   >
   >
-  >이를 변경하고 사용자 고유의 텍스트를 추가하는 경우 템플릿에서 페이지를 만들 때 이 업데이트된 텍스트가 사용됩니다.
+  >이를 변경하고 사용자 고유의 텍스트를 추가하는 경우, 템플릿에서 페이지를 만들 때 이 업데이트된 텍스트가 사용됩니다.
   >
   >
   >기본 텍스트(구조)를 그대로 두면 제목은 기본적으로 후속 페이지의 이름으로 설정됩니다.
@@ -559,7 +555,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
   ![chlimage_1-146](assets/chlimage_1-146.png)
 
-  여기에는 **초기 콘텐츠** 모드 또는 결과 페이지에서 구성 요소를 추가할 수 있도록 컨테이너 구성 요소의 잠금을 해제하는 작업이 포함됩니다. If you have already added components/content to the container before unlocking it, then these will no longer be shown when in **Structure** mode but they will be shown in **Initial Content** mode. **구조 모드**&#x200B;에서는 컨테이너 구성 요소 자체만 **허용된 구성 요소** 목록과 함께 표시됩니다.
+  여기에는 **초기 콘텐츠** 모드 또는 결과 페이지에서 구성 요소를 추가할 수 있도록 컨테이너 구성 요소의 잠금을 해제하는 작업이 포함됩니다. 잠금 해제하기 전에 구성 요소/콘텐츠를 컨테이너에 이미 추가한 경우, 이 구성 요소는에 표시될 때 더 이상 표시되지 않습니다 **구조** 모드이지만 다음 위치에 표시됩니다. **초기 컨텐츠** 모드. **구조 모드**&#x200B;에서는 컨테이너 구성 요소 자체만 **허용된 구성 요소** 목록과 함께 표시됩니다.
 
   ![chlimage_1-147](assets/chlimage_1-147.png)
 

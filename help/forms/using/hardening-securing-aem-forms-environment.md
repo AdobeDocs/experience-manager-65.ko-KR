@@ -8,9 +8,9 @@ topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1440'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ AEM Forms은 사전 정의된 위치 및 임시 폴더에 데이터를 저장합
 
 게시 노드에 로컬로 저장하지 않고 처리 클러스터로 유선으로 보내도록 저장소 서비스를 구성할 수 있습니다. 처리 클러스터는 전용 방화벽 뒤의 보안 영역에 있으며 데이터는 안전하게 유지됩니다.
 
-AEM DS 설정 서비스에 대한 처리 서버의 자격 증명을 사용하여 게시 노드에서 처리 서버로 데이터를 게시합니다. 처리 서버의 저장소에 대한 읽기-쓰기 권한이 있는 제한된 비관리 사용자의 자격 증명을 사용하는 것이 좋습니다. 자세한 내용은 [초안 및 제출을 위한 스토리지 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md).
+AEM DS 설정 서비스에 대한 처리 서버의 자격 증명을 사용하여 게시 노드에서 처리 서버로 데이터를 게시합니다. 처리 서버의 저장소에 대한 읽기-쓰기 액세스 권한이 있는 제한된 비관리 사용자의 자격 증명을 사용합니다. 자세한 내용은 [초안 및 제출을 위한 스토리지 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### 양식 데이터 모델(FDM)로 처리된 보안 데이터 {#secure-data-handled-by-form-data-model-fdm}
 
@@ -176,12 +176,12 @@ AEM DS 설정 서비스에 대한 처리 서버의 자격 증명을 사용하여
       * xdp 기반 적응형 양식을 만들 수 없습니다.
       * 적응형 양식용 스크립트를 작성할 수 있는 권한이 없습니다.
       * xdp 또는 XDP가 포함된 패키지를 가져올 수 없음
+
    * forms-power-user 그룹의 사용자는 모든 유형의 양식을 작성, 작성, 게시 및 제출하고, 적응형 양식에 대한 스크립트를 작성하고, XDP가 포함된 패키지를 가져옵니다.
    * 템플릿 작성자 및 템플릿 고급 사용자는 템플릿을 미리 보고 만들 수 있습니다.
    * fdm-authors 사용자는 양식 데이터 모델을 만들고 수정할 수 있습니다.
    * cm-user-agent 그룹의 사용자는 서신 관리 문자를 만들고, 미리 보고, 게시할 수 있습니다.
    * 워크플로우 편집기 그룹의 사용자는 받은 편지함 애플리케이션 및 워크플로우 모델을 만들 수 있습니다.
-
 
 **작성자 처리 시:**
 

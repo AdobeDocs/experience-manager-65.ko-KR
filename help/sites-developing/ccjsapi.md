@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3159'
+source-wordcount: '3157'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Client Context에 세션 저장소를 등록합니다. 완료 시 storeregister 
 * 저장소는 기본값(init 속성)으로 미리 채워져 있지만 요청이 실패함(시간 초과)입니다. 기본값이 있는 초기화는 하나만 있습니다.
 * 스토어가 미리 채워져 있습니다.
 
-지연이 (으)로 설정된 경우 `true` 또는 메서드가 콜백 메서드를 호출하기 전에 대기하는 시간(밀리초)입니다. 지연이 전달되기 전에 다른 초기화 이벤트가 트리거되면 초기화 이벤트 없이 지연 시간이 초과될 때까지 대기합니다. 이렇게 하면 두 번째 초기화 이벤트가 트리거될 때까지 기다렸다가 가장 적합한 경우에 콜백 함수를 호출할 수 있습니다.
+지연이 (으)로 설정된 경우 `true` 메서드가 callback 메서드를 호출하기 전에 몇 밀리초 동안 대기합니다. 지연이 전달되기 전에 다른 초기화 이벤트가 트리거되면 초기화 이벤트 없이 지연 시간이 초과될 때까지 대기합니다. 이렇게 하면 두 번째 초기화 이벤트가 트리거될 때까지 기다렸다가 가장 적합한 경우에 콜백 함수를 호출할 수 있습니다.
 
 **매개변수**
 

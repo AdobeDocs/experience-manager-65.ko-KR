@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '843'
 ht-degree: 5%
 
 ---
 
 # Adobe Experience Cloud과 통합{#integrating-with-the-adobe-marketing-cloud}
 
-다음 [Adobe Experience Cloud](https://business.adobe.com/products/marketing-cloud/main.html)에는 성공적인 온라인 이니셔티브를 추진하기 위해 실행 가능한 실시간 데이터와 통찰력을 제공하는 강력한 웹 분석 및 웹 사이트 최적화 제품이 포함되어 있습니다. 온라인 비즈니스 최적화를 위한 통합 및 개방형 플랫폼을 제공합니다. 클라우드는 통합 애플리케이션으로 구성되어 고객 통찰력의 기능을 수집 및 활용하여 고객 확보, 전환 및 보존 노력과 콘텐츠 생성 및 배포를 최적화합니다.
+다음 [Adobe Experience Cloud](https://business.adobe.com/products/marketing-cloud/main.html)에는 성공적인 온라인 이니셔티브를 추진하기 위해 실행 가능한 실시간 데이터와 통찰력을 제공하는 강력한 웹 분석 및 웹 사이트 최적화 제품이 포함되어 있습니다. 온라인 비즈니스 최적화를 위한 통합 및 개방형 플랫폼을 제공합니다. 클라우드는 고객 확보, 전환 및 유지 노력과 콘텐츠 생성 및 배포를 최적화하는 고객 통찰력의 기능을 수집하고 활용하는 통합 애플리케이션으로 구성됩니다.
 
 Adobe Experience Manager(AEM)를 사용하면 Adobe Experience Cloud의 다음 제품과 원활하게 통합할 수 있습니다.
 
@@ -89,7 +89,7 @@ Audience Manager 통합이 AEM 6.3에서 제거되었습니다.
 
 <!-- Search&Promote is end of life as of September 1, 2022 ## Integrating with Search&Promote {#integrating-with-search-promote} -->
 
-<!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote enables marketers to optimizehow visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, as well as automate merchandising and promotions activity via KPI-based triggers or metrics. -->
+<!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote enables marketers to optimizehow visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, and automate merchandising and promotions activity via KPI-based triggers or metrics. -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote is a reliable and scalable hosted site search application, capable of scaling to millions of pages or products, for heavily visited online businesses ranging from retail to news sites. It offers unprecedented levels of marketer control and metrics-based relevance. -->
 

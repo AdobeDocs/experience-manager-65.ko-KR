@@ -8,9 +8,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '738'
 ht-degree: 9%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 9%
    * **템플릿 메시지:** 서명 PDF을 로드하는 동안 표시할 메시지를 지정합니다. Adobe Sign 서비스는 서명 PDF을 준비하고 로드하는 데 시간이 소요됩니다.
    * **서명 서비스:** 다음 항목 선택 **낙서 서명** 옵션을 선택합니다.
 
-   * **CSS 클래스**: 클라이언트 라이브러리의 CSS 클래스(있는 경우)를 지정합니다. 를 사용하는 것이 좋습니다. [테마](../../forms/using/themes.md) 및 [인라인 스타일](../../forms/using/inline-style-adaptive-forms.md) CSS 클래스 대신
+   * **CSS 클래스**: 클라이언트 라이브러리의 CSS 클래스(있는 경우)를 지정합니다. 사용 [테마](../../forms/using/themes.md) 및 [인라인 스타일](../../forms/using/inline-style-adaptive-forms.md) CSS 클래스 대신
 
    완료 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘 을 클릭하여 변경 내용을 저장합니다. 서명이 구성되었습니다.
 

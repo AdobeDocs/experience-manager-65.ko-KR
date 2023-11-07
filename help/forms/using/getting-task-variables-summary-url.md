@@ -1,17 +1,13 @@
 ---
 title: 요약 URL에서 작업 변수를 가져오는 중
-seo-title: Getting Task Variables in Summary URL
 description: 작업 정보를 재사용하고 요약 URL을 생성하여 작업을 요약하거나 설명하는 방법.
-seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
-uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -63,7 +59,7 @@ ht-degree: 0%
    1. 프로세스 만들기 **PTO 요약 생성** 및 를 다음 앞에 하위 프로세스로 사용: **작업 할당** 오케스트레이션에서 작업합니다.
    1. 정의 **employeeName**, **직원 ID**, **ptoReason**, **totalDays**, 및 **nodeName** 를 새 프로세스의 입력 변수로 사용합니다. 이러한 변수는 제출된 양식 데이터로 전달됩니다.
 
-      출력 변수 정의 **ptoNodePath** 요약 URL을 설정하는 동안 사용됩니다.
+      출력 변수 정의 **ptoNodePath** 요약 URL 설정 시 사용됩니다.
 
    1. 다음에서 **PTO 요약 생성** 프로세스, 사용 **값 설정** 에서 입력 세부 사항을 설정할 구성 요소 **nodeProperty**(**nodeProps**) 맵.
 
@@ -78,8 +74,8 @@ ht-degree: 0%
       * **폴더 경로**: 새 CRX 노드가 생성되는 경로입니다. 경로를 다음으로 설정 **/content**.
       * **노드 이름**: 이 필드에 입력 변수 nodeName을 할당합니다. 고유한 노드 이름 문자열입니다.
       * **노드 유형**: 유형을 다음과 같이 정의합니다. **nt:unstructured**. 이 프로세스의 출력은 nodePath입니다. nodePath는 새로 만든 노드의 CRX 경로입니다. NodePath는 **pto 생성** 요약 프로세스.
-   1. 제출된 양식 데이터 전달(**employeeName**, **직원 ID**, **ptoReason**, 및 **totalDays**)를 새 프로세스에 대한 입력으로 **PTO 요약 생성**. 출력을 다음으로 가져오기 **ptoSummaryNodePath**.
 
+   1. 제출된 양식 데이터 전달(**employeeName**, **직원 ID**, **ptoReason**, 및 **totalDays**)를 새 프로세스에 대한 입력으로 **PTO 요약 생성**. 출력을 다음으로 가져오기 **ptoSummaryNodePath**.
 
 1. 요약 URL을 과 함께 서버 세부 사항이 포함된 XPath 표현식으로 정의합니다. **ptoSummaryNodePath**.
 

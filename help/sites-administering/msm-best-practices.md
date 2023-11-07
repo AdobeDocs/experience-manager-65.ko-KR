@@ -4,10 +4,10 @@ description: AEM Multi Site Manager를 시작하고 실행하는 데 도움이 �
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 42%
+source-wordcount: '1609'
+ht-degree: 41%
 
 ---
 
@@ -52,7 +52,7 @@ MSM은 콘텐츠 배포 자동화를 위한 구성 가능 프레임워크입니�
 
 블루프린트 구성이 참조되지 않는 경우 라이브 카피 자체에서만 롤아웃을 시작할 수 있으며, 기본적으로 콘텐츠는 소스에서 가져옵니다.
 
-라이브 카피로 새 사이트를 만들 때, 전체 MSM 기능 세트를 사용할 수 있도록 블루프린트 구성을 만드는 것이 유용합니다.
+라이브 카피로 사이트를 만들 때, 전체 MSM 기능 세트를 사용할 수 있도록 블루프린트 구성을 만드는 것이 유용합니다.
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ AEM에는 라이브 카피를 만들기 위한 두 가지 주요 접근 방식�
 
 다음은 사이트를 만들 때 염두에 두어야 할 몇 가지 고려 사항입니다.
 
-* 새 사이트를 만들 때는 [블루프린트 구성](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations)이 필요합니다.
+* 사이트를 만들려면 [블루프린트 구성](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * 새 사이트에 생성할 언어 경로를 선택하려면 해당하는 언어 루트가 블루프린트(소스)에 존재해야 합니다.
 * 한 번 [새 사이트가 live copy로 생성되었습니다.](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (사용 **만들기**, 그런 다음 **Site**) 이 라이브 카피의 처음 두 가지 수준은 다음과 같습니다 *얕은*. 페이지의 하위 항목은 라이브 관계에 속하지 않지만, 트리거와 일치하는 라이브 관계가 있는 경우 롤아웃은 계속 적용됩니다.
 
@@ -103,7 +103,7 @@ MSM은 두 가지 방법으로 다국어 웹 사이트 생성을 지원할 수 �
 
 * 언어 마스터를 만들 때.
 
-   * MSM 자체는 **콘텐츠 번역을 지원하지 않지만**, 이를 지원하는 서드파티 번역 커넥터와 통합할 수 있습니다. 다음을 참고하십시오.
+   * MSM 자체는 **콘텐츠 번역을 지원하지 않지만**, 이를 지원하는 서드파티 번역 커넥터와 통합할 수 있습니다. 참고:
 
       * MSM을 사용하면 페이지 및/또는 구성 요소 수준에서 상속을 취소할 수 있습니다. 이렇게 하면 다음 롤아웃 시 라이브 카피의 번역된 콘텐츠를 아직 번역되지 않은 블루프린트의 콘텐츠로 덮어쓰는 것을 방지할 수 있습니다.
       * 일부 서드파티 번역 커넥터는 이러한 MSM 상속 관리를 자동화합니다.

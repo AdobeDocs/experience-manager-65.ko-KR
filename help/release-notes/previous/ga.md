@@ -2,7 +2,7 @@
 title: 에 대한 일반 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: "[!DNL Adobe Experience Manager] 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 요약한 6.5 참고 사항"
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4675'
 ht-degree: 27%
@@ -18,7 +18,7 @@ ht-degree: 27%
 | 버전 | 6.5 |
 | 유형 | 주요 릴리스 |
 | 일반 가용 날짜 | 2019년 4월 8일 |
-| 권장 업데이트 | 다음을 참조하십시오 [AEM 최근 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko). |
+| 권장 업데이트 | 다음을 참조하십시오 [AEM 최근 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko-KR?lang=ko). |
 
 ### 트리비아 {#trivia}
 
@@ -106,7 +106,7 @@ UI를 보다 생산적이고 사용하기 쉽게 만들기 위해 다양한 개�
 
 #### 관리되는 단일 페이지 앱 {#managed-single-page-apps}
 
-페이지 편집기 는 클라이언트측 렌더링된 경험 내에서 콘텐츠 및 작성/레이아웃을 컨텍스트에 따라 편집하는 기능을 추가합니다(알려진 항목) [SPA 편집기로](/help/sites-developing/spa-architecture.md)). JavaScript 프레임워크 React 또는 Angular을 사용하여 빌드된 기존 단일 페이지 앱은 AEM SJ SDK를 사용하여 확장하여 전문가가 편집할 수 있습니다.
+페이지 편집기 는 클라이언트측 렌더링된 경험 내에서 콘텐츠 및 작성/레이아웃을 컨텍스트에 따라 편집하는 기능을 추가합니다(알려진 항목) [SPA 편집기로](/help/sites-developing/spa-architecture.md)). AEM SJ SDK를 사용하여 JavaScript 프레임워크 React 또는 Angular으로 빌드된 기존 단일 페이지 앱을 확장하여 전문가가 편집할 수 있습니다.
 
 AEM 6.5와 함께 AEM 6.4 SP2로 처음 제공되는 SPA 지원은 다음과 같은 기능을 제공합니다.
 
@@ -147,25 +147,25 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 
    * 문자열, 배열 및 개체의 &quot;in&quot; 연산자:
 
-      ```html
-      ${'a' in 'abc'}
-      ${100 in myArray}
-      ${'a' in myObject}
-      ```
+     ```html
+     ${'a' in 'abc'}
+     ${100 in myArray}
+     ${'a' in myObject}
+     ```
 
    * data-sly-set을 사용한 변수 선언:
-      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * 목록 및 반복 제어 매개 변수: begin, step, end:
-      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * data-sly-unwrap용 식별자:
 
-      ```html
-      <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-      </div>
-      ```
+     ```html
+     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+     </div>
+     ```
 
    * 음수 지원
 
@@ -239,8 +239,7 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 >
 >* 전용 `at.js 1.x` AEM 활동 콘솔 내에서 타깃팅 엔진으로 Adobe Target을 사용하는 경우에 이 지원됩니다.
 >
->* 모두 `at.js. 1.x` 및 `at.js 2.x` Target에 경험 조각 내보내기를 사용하고 Target 콘솔 내에서 활동을 실행하는 경우에 지원됩니다.
-
+>* 모두 `at.js. 1.x` 및 `at.js 2.x` Target으로 경험 조각 내보내기를 사용하고 Target의 콘솔 내에서 활동을 실행하는 경우에 지원됩니다.
 
 * 이제 Adobe Target 통합에서 Target Standard API를 사용합니다. AEM의 이전 버전에서는 이제 더 이상 사용되지 않는 Target Classic HTTP API를 사용합니다.
 * Adobe Target `mbox.js` 버전 63이 포함되어 있습니다. Adobe은 구현을 로 전환할 것을 강력히 권장합니다. `at.js` v1.x
@@ -469,7 +468,7 @@ Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 �
 
 * 대화 상자 변환 도구 등 AEM 현대화 도구 세트. ([GitHub 프로젝트](https://github.com/adobe/aem-modernize-tools))
 
-**Assets**
+**자산**
 
 * 향상된 PDF 래스터라이저( 를 추가하는 패키지[자세히 보기](/help/assets/aem-pdf-rasterizer.md))
 * 확장 RAW 이미지 지원을 추가할 패키지([자세히 보기](/help/assets/camera-raw.md))
@@ -522,20 +521,20 @@ Adobe은 제품의 기능을 지속적으로 평가하고 시간이 지남에 �
 
 * CRX-Quickstart와 그 컨텐츠가 삭제되는 문제가 보고됩니다.
 
-   이러한 각 작업에 대해 속성을 확인합니다 `htmllibmanager.fileSystemOutputCacheLocation` 은(는) 빈 문자열이 아닙니다.
+  이러한 각 작업에 대해 속성을 확인합니다 `htmllibmanager.fileSystemOutputCacheLocation` 은(는) 빈 문자열이 아닙니다.
 
    1. 호출 중 `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
    2. AEM 6.5로 업그레이드
    3. AEM 6.5에서 &quot;레이지 컨텐츠 마이그레이션&quot; 실행.
 
-   이 문제에 대한 보다 자세한 내용 및 해결 방법에 대해서는 [기술 자료](https://helpx.adobe.com/kr/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) 문서를 이용할 수 있습니다.
+  이 문제에 대한 보다 자세한 내용 및 해결 방법에 대해서는 [기술 자료](https://helpx.adobe.com/kr/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) 문서를 이용할 수 있습니다.
 
 * AEM 6.5 인스턴스에서 JDK 11을 사용하는 경우 일부 패키지를 배포한 후 일부 페이지가 공백으로 표시될 수 있습니다. 로그 파일에 다음 오류 메시지가 표시됩니다.
 
-   ```java
-   *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
-   java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
-   ```
+  ```java
+  *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
+  java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+  ```
 
 이 오류를 해결하려면
 
@@ -553,7 +552,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * **페이지 버전 사용**: [페이지가 이동된 경우 이동 전에 만든 버전에서는 더 이상 미리보기를 수행할 수 없습니다](/help/sites-authoring/working-with-page-versions.md#previewing-a-version).
 
-### Assets {#assets}
+### 자산 {#assets}
 
 * **검색:** 검색 문자열에 선행 공백()이 포함된 경우 결과를 검색하지 않습니다.[오크-](https://issues.apache.org/jira/browse/OAK-4786))
 * **폴더 메타데이터 스키마**: 선택 단추를 추가한 후 ID 및 값 필드가 예상대로 렌더링되지 않고 삭제 기능이 작동하지 않습니다. (CQ-4261144)
@@ -571,7 +570,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * 적응형 원본에서 규칙 편집기에서 양식 데이터 모델 서비스를 호출하여 이미지 선택 구성 요소의 값을 동적으로 업데이트하면 이미지 선택 구성 요소의 값이 업데이트되지 않습니다. (CQ-4254754)
 * AEM Forms Designer 설치 프로그램에는 32비트 버전의 [Visual C++ redistributable runtime package 2012](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170) 및 [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-and-visual-c-redistributable-package-5b2ac5ab-4139-8acc-08e2-9578ec9b2cf1)이 필요합니다. 설치를 시작하기 전에 앞에서 언급한 재배포 가능 런타임 패키지가 설치되어 있는지 확인하십시오. (CQ-4265668)
 
-* PDF 생성기가 스마트 카드 기반 인증을 지원하지 않습니다. 관리자가 그룹 정책을 사용하도록 설정하는 경우 `Interactive Logon: Require Smart card` windows 서버에서는 기존의 모든 PDF 생성기 사용자가 무효화됩니다.
+* PDF Generator이 스마트 카드 기반 인증을 지원하지 않습니다. 관리자가 그룹 정책을 사용하도록 설정하는 경우 `Interactive Logon: Require Smart card` windows 서버에서 기존 PDF Generator 사용자는 모두 무효화됩니다.
 
 * 적응형 양식이 구성 요소의 값을 동적으로 업데이트하도록 구성되고 양식을 호스팅하는 게시 인스턴스가 Dispatcher를 통해 액세스되면 필드의 값을 동적으로 업데이트하는 기능이 작동하지 않습니다. 이 문제를 해결하려면 게시 인스턴스에서 CRXDE를 열고 다음으로 이동합니다. `/libs/fd/af/runtime/clientlibs/guideChartReducer`을 클릭하고 아래에 나열된 속성을 만듭니다.
 
@@ -583,7 +582,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    * 다중: False
    * 자동 생성됨: False
 
-   이 속성으로 런타임 폴더 아래의 클라이언트 라이브러리가 프록시에 액세스할 수 있습니다. (CQ-4268679)
+  이 속성으로 런타임 폴더 아래의 클라이언트 라이브러리가 프록시에 액세스할 수 있습니다. (CQ-4268679)
 
 * AEM Forms가 시작되면 `SAX Security Manager could not be setup`라는 경고가 나타납니다.
 * Adobe Acrobat Reader 버전 20.10.00을 실행하는 Apple iOS 또는 iPadOS에서 AEM Forms Document Security로 보호된 PDF을 열 경우

@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 SSL을 사용하려면 WebSphere는 시스템을 관리할 권한이 있는 로컬 OS 사용자 레지스트리의 사용자 계정에 액세스해야 합니다.
 
-* (Windows) Administrators 그룹에 속하고 운영 체제의 일부로 사용할 수 있는 권한을 가진 새 Windows 사용자를 만듭니다. (참조: [WebSphere용 Windows 사용자 만들기](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
+* (Windows) Administrators 그룹에 속하고 운영 체제의 일부로 사용할 수 있는 권한을 가진 Windows 사용자를 만듭니다. (참조: [WebSphere용 Windows 사용자 만들기](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
 * (Linux, UNIX) 사용자는 루트 사용자이거나 루트 권한이 있는 다른 사용자일 수 있습니다. WebSphere에서 SSL을 활성화할 때 이 사용자의 서버 ID와 암호를 사용합니다.
 
 ### WebSphere용 Linux 또는 UNIX 사용자 생성 {#create-a-linux-or-unix-user-for-websphere}
@@ -51,7 +51,7 @@ SSL을 사용하려면 WebSphere는 시스템을 관리할 권한이 있는 로�
 1. 사용자 를 마우스 오른쪽 단추로 클릭하고 를 선택합니다. **새 사용자**.
 1. 해당 상자에 사용자 이름과 암호를 입력하고 나머지 상자에 필요한 다른 정보를 입력합니다.
 1. 선택 취소 **사용자는 다음 로그인 시 암호를 변경해야 합니다.**, 클릭 **만들기**&#x200B;을 클릭한 다음 을 클릭합니다 **닫기**.
-1. 클릭 **사용자**&#x200B;을 클릭하고 방금 만든 사용자를 마우스 오른쪽 단추로 클릭한 다음 를 선택합니다 **속성**.
+1. 클릭 **사용자**, 만든 사용자를 마우스 오른쪽 단추로 클릭하고 **속성**.
 1. 다음을 클릭합니다. **구성원** tab을 누른 다음 **추가**.
 1. 선택할 개체 이름 입력 상자에 `Administrators`그룹 이름이 올바른지 확인하려면 이름 확인 을 클릭합니다.
 1. 클릭 **확인** 그런 다음 을 클릭합니다. **확인** 다시.

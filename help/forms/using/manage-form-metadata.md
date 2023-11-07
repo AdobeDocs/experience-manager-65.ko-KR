@@ -11,9 +11,9 @@ discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '1994'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html) |
 | AEM 6.5 | 이 문서 |
 
 ## 개요  {#overview-nbsp}
@@ -296,7 +296,7 @@ AEM Forms은 이 도구에서 지원되는 양식 유형의 메타데이터 스�
 
 1. 방금 드래그한 구성 요소를 클릭합니다. 오른쪽 패널에 열리는 설정 탭에서 다음 필드에 대한 정보를 입력합니다.
 
-   1. 스키마에 배치된 필드 위에 표시 이름으로 사용할 필드 레이블 지정(예: 부서)
+   1. 스키마에 배치된 필드 위에 표시 이름으로 사용되는 필드 레이블 지정(예: 부서)
    1. 속성에 매핑 필드에서 미리 채워진 값을 볼 수 있습니다 **&#39;./jcr:content/metadata/default&#39;**. &#39; 변경&#x200B;**기본값**&#x200B;원하는 속성 이름으로, crx 저장소에 속성을 저장하는 데 사용됩니다(예: &#39;)./jcr:content/metadata/department&#39;)
 
       >[!NOTE]

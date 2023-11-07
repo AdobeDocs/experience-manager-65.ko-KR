@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '550'
 ht-degree: 33%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 33%
 블루프린트 페이지 속성을 볼 때 **Live Copy 개요**&#x200B;를 열 수 있습니다.
 
 1. 적절한 블루프린트 페이지에 대한 **속성**&#x200B;을 엽니다.
-1. **블루프린트** 탭을 열면 **라이브 카피 개요** 옵션이 상단 도구 모음에 표시됩니다.
+1. **블루프린트** 탭을 열면 **Live Copy 개요** 옵션이 상단 도구 모음에 표시됩니다.
 
    ![블루프린트 탭 - 라이브 카피 개요](assets/chlimage_1-360.png)
 

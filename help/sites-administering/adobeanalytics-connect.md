@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1497'
 ht-degree: 6%
 
 ---
@@ -111,7 +111,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 >
 >예를 들어 프레임워크는 *디버레테일* 보고서 세트 및 작성자가 선택한 서버 인스턴스입니다. 페이지가 프레임워크와 함께 게시되면 호출은 여전히 Adobe Analytics에 수행되지만 이러한 호출에는 RSID가 포함되지 않습니다. 작성자 인스턴스의 호출만 RSID를 포함합니다.
 
-1. 사용 **탐색**, 선택 **도구**, **Cloud Services**, 그런 다음 **이전 Cloud Services**.
+1. 사용 **탐색**, 선택 **도구**, **Cloud Service**, 그런 다음 **이전 Cloud Service**.
 1. 다음으로 스크롤 **Adobe Analytics** 및 선택 **구성 표시**.
 1. 다음을 클릭합니다. **[+]** Adobe Analytics 구성 옆에 있는 링크입니다.
 
@@ -175,9 +175,9 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 1. 다음에서 **사이트** 콘솔을 누르고 추적을 설정할 페이지를 선택합니다.
 1. 를 엽니다. **[페이지 속성](/help/sites-authoring/editing-page-properties.md)**&#x200B;콘솔에서 직접 가져오거나 페이지 편집기에서 가져옵니다.
-1. ** Cloud Services** 탭을 엽니다.
+1. ** Cloud Service** 탭을 엽니다.
 
-1. 사용 **구성 추가** 드롭다운을 클릭하여 선택 **Adobe Analytics** 사용 가능한 옵션에서 상속이 있는 경우 선택기를 사용하려면 먼저 상속을 비활성화하십시오.
+1. 사용 **구성 추가** 선택 드롭다운 **Adobe Analytics** 사용 가능한 옵션에서 상속이 있는 경우 선택기를 사용하려면 먼저 상속을 비활성화하십시오.
 
 1. 에 대한 드롭다운 선택기 **Adobe Analytics** 는 사용 가능한 옵션에 추가됩니다. 필요한 프레임워크 구성을 선택합니다.
 
@@ -206,7 +206,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 ## Adobe Analytics 구성 및/또는 프레임워크 편집 {#editing-adobe-analytics-configurations-and-or-frameworks}
 
-Adobe Analytics 구성 또는 프레임워크를 만들 때와 마찬가지로 (기존)으로 이동합니다. **Cloud Services** 화면. 선택 **구성 표시**&#x200B;을 클릭한 다음 업데이트할 특정 구성에 대한 링크를 클릭합니다.
+Adobe Analytics 구성 또는 프레임워크를 만들 때와 마찬가지로 (기존)으로 이동합니다. **Cloud Service** 화면. 선택 **구성 표시**&#x200B;을 클릭한 다음 업데이트할 특정 구성에 대한 링크를 클릭합니다.
 
 Adobe Analytics 구성을 편집할 때 **편집** 구성 페이지 자체에서 을 열 때 **구성 요소 편집** 대화 상자.
 

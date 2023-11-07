@@ -1,26 +1,22 @@
 ---
 title: 적응형 양식을 위한 기록 문서 생성
-seo-title: Generate Document of Record for adaptive forms
 description: 적응형 양식의 기록 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
-seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
-uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3544'
+source-wordcount: '3545'
 ht-degree: 5%
 
 ---
 
 # 적응형 양식을 위한 기록 문서 생성{#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -218,7 +214,7 @@ ht-degree: 5%
 
 기본 템플릿은 기록 문서에 스타일 및 모양 정보를 제공합니다. 자동 생성된 기록 문서의 기본 모양을 사용자 지정할 수 있습니다. 예를 들어 회사 로고를 머리글에 추가하고 저작권 정보를 기록 문서의 바닥글에 추가합니다. 기본 템플릿의 마스터 페이지는 기록 문서 템플릿의 마스터 페이지로 사용됩니다. 마스터 페이지에는 기록 문서에 적용할 수 있는 페이지 머리글, 페이지 바닥글 및 페이지 번호와 같은 정보가 있을 수 있습니다. 기록 문서 자동 생성을 위해 기본 템플릿을 사용하여 이러한 정보를 기록 문서에 적용할 수 있습니다. 기본 템플릿을 사용하면 필드의 기본 속성을 변경할 수 있습니다.
 
-팔로우하십시오 [기본 템플릿 규칙](#base-template-conventions) 기본 템플릿을 디자인할 때
+다음을 따르세요 [기본 템플릿 규칙](#base-template-conventions) 기본 템플릿을 디자인할 때
 
 ## 기본 템플릿 규칙 {#base-template-conventions}
 
@@ -234,7 +230,7 @@ ht-degree: 5%
 
 **필드에 대한 스타일 규칙**
 
-* 기록 문서의 필드에 스타일을 적용하려면 기본 템플릿은에 있는 필드를 제공합니다. `AF_FIELDSSUBFORM` 아래 하위 항목 `AF_METATEMPLATE` 루트 하위 양식.
+* 기록 문서의 필드에 스타일을 적용하려면 기본 템플릿에서 `AF_FIELDSSUBFORM` 아래 하위 항목 `AF_METATEMPLATE` 루트 하위 양식.
 
 * 이러한 필드의 속성은 기록 문서의 필드에 적용됩니다. 이 필드는 다음 위치에 있어야 합니다. `AF_<name of field in all caps>_XFO` 명명 규칙. 예를 들어 확인란의 필드 이름은 `AF_CHECKBOX_XFO`.
 

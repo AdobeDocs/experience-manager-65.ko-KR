@@ -7,9 +7,9 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1879'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 2%
 ### 응답 만들기 사용자 인터페이스에 단추 추가 {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. 다음으로 이동 `https://'[server]:[port]'/[ContextPath]/crx/de` 관리자로 로그인합니다.
-1. 앱 폴더에서 이라는 폴더를 만듭니다. `defaultApp` defaultApp 폴더(구성 폴더에 있음)와 유사한 경로/구조를 사용합니다. 폴더를 만들려면 다음 단계를 수행하십시오.
+1. 앱 폴더에서 이라는 폴더를 만듭니다. `defaultApp` defaultApp 폴더(구성 폴더)와 유사한 경로/구조를 사용합니다. 폴더를 만들려면 다음 단계를 수행하십시오.
 
    1. 마우스 오른쪽 단추 클릭 **defaultApp** 다음 경로에 있는 폴더를 선택하고 **오버레이 노드**:
 
@@ -103,7 +103,7 @@ ht-degree: 2%
 
    | **이름** | **설명** |
    |---|---|
-   | name | 수행할 작업의 영숫자 이름입니다. 이 태그의 값은 필수이고, 고유해야 하며(modelExtension 태그 내에서), 알파벳으로 시작해야 합니다. |
+   | 이름 | 수행할 작업의 영숫자 이름입니다. 이 태그의 값은 필수이고, 고유해야 하며(modelExtension 태그 내에서), 알파벳으로 시작해야 합니다. |
    | 레이블 | 작업 단추에 표시할 레이블 |
    | 툴팁 | 사용자가 단추를 마우스로 가리키면 표시되는 단추의 도구 설명 텍스트입니다. |
    | styleName | 작업 단추에 적용되는 사용자 지정 스타일의 이름입니다. |

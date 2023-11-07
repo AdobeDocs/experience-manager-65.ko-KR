@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 바코드 형식 데이터 디코딩 {#decoding-barcoded-form-data}
 
-바코드 양식 서비스 API를 사용하여 PDF 양식 또는 바코드가 포함된 이미지에서 데이터를 디코딩할 수 있습니다. 양식 데이터를 디코딩하는 것은 바코드에 위치한 데이터를 추출하는 것을 의미한다. PDF 양식(또는 이미지)에서 데이터를 디코딩하려면 먼저 사용자가 양식을 데이터로 채워야 합니다.
+바코드 양식 서비스 API를 사용하여 PDF 양식 또는 바코드가 포함된 이미지에서 데이터를 디코딩할 수 있습니다. 양식 데이터를 디코딩하는 것은 바코드에 들어 있는 데이터를 추출하는 것을 의미한다. PDF 양식(또는 이미지)에서 데이터를 디코딩하려면 먼저 사용자가 양식을 데이터로 채워야 합니다.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ PDF 양식에서 데이터를 디코딩하려면 다음 단계를 수행하십�
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
-* xercesImpl.jar(위치: &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* xercesImpl.jar(in &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
 
 AEM Forms이 JBOSS가 아닌 지원되는 J2EE 애플리케이션 서버에 배포된 경우 adobe-utilities.jar 및 jbossall-client.jar을 AEM Forms이 배포된 J2EE 애플리케이션 서버에 관련된 JAR 파일로 교체해야 합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 

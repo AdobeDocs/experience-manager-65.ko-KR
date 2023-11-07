@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1923'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 높은 수집 로드를 최적화하기 위해 [임시 워크플로우임](/help/sites-developing/workflows.md#transient-workflows).
 
-워크플로가 일시적인 경우 중간 작업 단계와 관련된 런타임 데이터는 실행될 때 JCR에서 유지되지 않습니다(출력 렌디션은 물론 유지됨).
+워크플로우가 일시적인 경우 중간 작업 단계와 관련된 런타임 데이터가 실행될 때 JCR에서 지속되지 않습니다(출력 렌디션은 지속됨).
 
 장점은 다음과 같습니다.
 
@@ -68,7 +68,7 @@ Adobe 이 문제를 해결하려면 다음 수를 구성하는 것이 좋습니�
 
 ### 개별 작업 큐 구성 {#configure-individual-job-queues}
 
-경우에 따라 개별 작업 단위로 동시 스레드 또는 기타 대기열 옵션을 제어하도록 개별 작업 대기열을 구성하는 것이 유용합니다. 를 통해 웹 콘솔에서 개별 대기열을 추가하고 구성할 수 있습니다. **Apache Sling 작업 큐 구성** 공장. 나열할 적절한 주제를 찾으려면 워크플로우의 모델을 실행하고 **Sling 작업** 콘솔(예: at) `http://localhost:4502/system/console/slingevent`.
+경우에 따라 개별 작업 단위로 동시 스레드 또는 기타 대기열 옵션을 제어하도록 개별 작업 대기열을 구성하는 것이 유용합니다. 를 통해 웹 콘솔에서 개별 대기열을 추가하고 구성할 수 있습니다. **Apache Sling 작업 큐 구성** 공장. 나열할 적절한 주제를 찾으려면 워크플로우 모델을 실행하고 **Sling 작업** 콘솔(예: at) `http://localhost:4502/system/console/slingevent`.
 
 임시 워크플로우에 대해서도 개별 작업 대기열을 추가할 수 있습니다.
 

@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 2%
@@ -20,9 +20,9 @@ ht-degree: 2%
 
    * 빠른 작업을 사용하여 **[!UICONTROL 편집]** 의 에셋에 표시되는 **[!UICONTROL 카드]** 보기. 목록 보기에서 에셋을 선택하고 **[!UICONTROL 편집]** 옵션을 선택합니다.
 
-      >[!NOTE]
-      >
-      >빠른 작업은에서 사용할 수 없습니다. **[!UICONTROL 목록]** 보기.
+     >[!NOTE]
+     >
+     >빠른 작업은에서 사용할 수 없습니다. **[!UICONTROL 목록]** 보기.
 
    * 다음에서 **[!UICONTROL 카드]** 또는 **[!UICONTROL 목록]** 자산을 보고 선택한 다음 **[!UICONTROL 편집]** 을 클릭합니다.
    * 클릭 **[!UICONTROL 편집]** 자산 페이지에서.
@@ -32,7 +32,7 @@ ht-degree: 2%
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. 핫스팟을 클릭하고 URL 및 대체 텍스트를 입력합니다. 다음에서 **[!UICONTROL Target]** 목록에서는 이미지 맵을 표시할 위치를 지정합니다(예: 동일한 탭, 새 탭 또는 iFrame). 예를 들어 다음을 입력합니다. `https://www.adobe.com` 를 URL로, `Adobe website` 을 대체 텍스트로 사용하고 **[!UICONTROL 새 탭]** 다음에서 **[!UICONTROL Target]** 새 탭에서 열 이미지 맵 목록입니다.
+1. 핫스팟을 클릭하고 URL 및 대체 텍스트를 입력합니다. 다음에서 **[!UICONTROL Target]** 목록에서는 이미지 맵을 표시할 위치를 지정합니다(예: 동일한 탭, 새 탭 또는 iFrame). 예를 들어, 을 입력합니다. `https://www.adobe.com` 를 URL로, `Adobe website` 을 대체 텍스트로 사용하고 **[!UICONTROL 새 탭]** 다음에서 **[!UICONTROL Target]** 새 탭에서 열 이미지 맵 목록입니다.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 17%
@@ -208,6 +208,6 @@ ht-degree: 17%
 
    선택 **Google Analytics 구성** 및 클릭 **만들기**.
 
-1. 다음을 입력하십시오. **계정 ID**, 예 `AA-11111111-1`. **확인**&#x200B;을 클릭합니다.
+1. 다음을 입력하십시오. **계정 ID**, 예: `AA-11111111-1`. **확인**&#x200B;을 클릭합니다.
 1. 페이지로 이동하여 페이지 속성 아래의 새로 만든 구성을 추가합니다. **Cloud Service** 탭.
 1. 페이지에 사용자 지정 마크업이 추가됩니다.

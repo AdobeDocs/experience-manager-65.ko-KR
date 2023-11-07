@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3786'
 ht-degree: 1%
 
 ---
@@ -365,7 +365,7 @@ AEM은 다음을 기반으로 장치 클라이언트측 감지 지원 `BrowserMa
 다음 `cq:siteVariant` 노드에는 다음 속성이 있어야 합니다.
 
 * `cq:childNodesMapTo` - 하위 노드가 매핑될 링크 요소의 속성을 결정합니다. 루트 노드의 하위 노드가 전역 웹 사이트의 언어 변형에 대한 루트를 나타내도록 웹 사이트의 콘텐츠를 구성하는 것이 좋습니다(예: `/content/mysite/en`, `/content/mysite/de`). 이 경우 의 값은 `cq:childNodesMapTo` 다음이어야 함: `hreflang`;
-* `cq:variantDomain` - 다음을 나타냅니다. `Externalizer` 도메인은 페이지 변형 절대 URL을 생성하는 데 사용됩니다. 이 값이 설정되지 않은 경우 페이지 변형은 상대 링크를 사용하여 생성됩니다.
+* `cq:variantDomain` - 다음을 나타냅니다. `Externalizer` 도메인은 페이지 변형 절대 URL을 생성하는 데 사용됩니다. 이 값이 설정되지 않은 경우 상대 링크를 사용하여 페이지 변형이 생성됩니다.
 * `cq:variantFamily` - 이 사이트가 속한 웹 사이트 제품군을 나타냅니다. 동일한 웹 사이트의 여러 디바이스별 표시가 동일한 제품군에 속해야 합니다.
 * `media` - link 요소의 media 속성 값을 저장합니다. 이름을 사용하는 것이 좋습니다. `BrowserMap` 등록됨 `DeviceGroups`, 따라서 `BrowserMap` 라이브러리는 웹 사이트의 올바른 변형으로 클라이언트를 자동으로 전달할 수 있습니다.
 
@@ -391,7 +391,7 @@ BrowserMap은 장치 그룹 정의를 재정의할 수 있는 방식으로 디�
 
 이전 메커니즘 중 대체 사이트를 나타내는 데 사용된 메커니즘이 없는 경우 `BrowserMap`을 클릭한 다음 의 이름을 사용할 선택기 `DeviceGroups` 이(가)에 추가됩니다. `URL`s. 이 경우 요청을 처리할 고유한 서블릿을 제공해야 합니다.
 
-예를 들어 디바이스 찾아보기 `www.example.com/index.html` 다음으로 식별됨 `smartphone` BrowserMap에 의해 전달됩니다. `www.example.com/index.smartphone.html.`
+예를 들어 디바이스 검색 `www.example.com/index.html` 다음으로 식별됨 `smartphone` BrowserMap에 의해 전달됩니다. `www.example.com/index.smartphone.html.`
 
 ### 페이지에서 BrowserMap 사용 {#using-browsermap-on-your-pages}
 
@@ -577,7 +577,7 @@ AEM은 터치 장치 그룹에 속하는 모바일 장치에서 발행한 요청
 
 ### 친구에게 링크 보내기 링크에 대한 페이지 캐싱 지원 {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-장치 그룹에 대해 렌더링되는 페이지는 장치 그룹 선택기에 의해 페이지 URL에서 구별되므로 모바일 페이지는 Dispatcher에서 캐시할 수 있습니다 `/content/mobilepage.touch.html`. 선택기가 없는 모바일 페이지에 대한 요청은 캐시되지 않습니다. 이 경우 디바이스 감지가 작동하고 최종적으로 일치하는 디바이스 그룹(또는 해당 문제에 대한 &quot;nomatch&quot;)으로 리디렉션됩니다. 장치 그룹 선택기로 렌더링된 모바일 페이지는 링크 재작성기에 의해 처리되며, 링크 재작성기는 페이지 내의 모든 링크를 장치 그룹 선택기를 포함하도록 재작성하여 이미 자격이 있는 페이지를 클릭할 때마다 장치 감지를 다시 수행하지 않도록 합니다.
+장치 그룹에 대해 렌더링되는 페이지는 장치 그룹 선택기에 의해 페이지 URL에서 구별되므로 모바일 페이지는 Dispatcher에서 캐시할 수 있습니다. 예를 들면 다음과 같습니다. `/content/mobilepage.touch.html`. 선택기가 없는 모바일 페이지에 대한 요청은 캐시되지 않습니다. 이 경우 디바이스 감지가 작동하고 최종적으로 일치하는 디바이스 그룹(또는 해당 문제에 대한 &quot;nomatch&quot;)으로 리디렉션됩니다. 장치 그룹 선택기로 렌더링된 모바일 페이지는 링크 재작성기에 의해 처리되며, 링크 재작성기는 페이지 내의 모든 링크를 장치 그룹 선택기를 포함하도록 재작성하여 이미 자격이 있는 페이지를 클릭할 때마다 장치 감지를 다시 수행하지 않도록 합니다.
 
 따라서 다음과 같은 시나리오가 발생할 수 있습니다.
 

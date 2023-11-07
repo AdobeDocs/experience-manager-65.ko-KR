@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2478'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Forms 서비스가 대화형 양식을 사용하여 사용자로부터 정보를
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
-다음 `HandleData` Java 서블릿은 이 양식을 사용자의 이름과 성은 물론 금액으로 미리 채웁니다. 양식이 미리 채워지면 클라이언트 웹 브라우저로 전송됩니다. (참조: [유동성 레이아웃으로 Forms 미리 채우기](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+다음 `HandleData` Java 서블릿은 이 양식을 사용자의 이름과 성 및 금액으로 미리 채웁니다. 양식이 미리 채워지면 클라이언트 웹 브라우저로 전송됩니다. (참조: [유동성 레이아웃으로 Forms 미리 채우기](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
 
 **Java 서블릿**
 
@@ -133,7 +133,7 @@ Forms 서비스에서 양식을 렌더링하는 데 필요한 URI 값을 지정�
 >
 >Workbench를 사용하여 Forms 애플리케이션을 만드는 방법에 대한 자세한 내용은 다음을 참조하십시오. [Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-Forms 애플리케이션에 있는 리소스의 경로는 다음과 같습니다.
+Forms 애플리케이션에서 리소스의 경로는 다음과 같습니다.
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 

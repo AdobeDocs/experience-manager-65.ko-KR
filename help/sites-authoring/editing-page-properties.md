@@ -2,10 +2,10 @@
 title: 콘텐츠 페이지 속성 편집
 description: Adobe Experience Manager에서 페이지에 필요한 속성을 정의합니다.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 45%
+source-wordcount: '1871'
+ht-degree: 43%
 
 ---
 
@@ -257,7 +257,7 @@ ht-degree: 45%
 
 * **Sites** 콘솔에서:
 
-   * [새 페이지 만들기](/help/sites-authoring/managing-pages.md#creating-a-new-page)(속성 하위 집합)
+   * [페이지 만들기](/help/sites-authoring/managing-pages.md#creating-a-new-page) (속성의 하위 집합)
 
    * **속성** 클릭 또는 탭
 
@@ -363,7 +363,7 @@ ht-degree: 45%
    * 사용 가능한 필드의 값을 업데이트할 수 있습니다.
 
       * **완료**&#x200B;를 선택하면 선택한 모든 페이지에 새 값이 적용됩니다.
-      * 필드가 다중 값(예: 태그)이면 새 값을 추가하거나 공통 값을 제거할 수 있습니다.
+      * 필드가 다중 값이면(예: 태그) 새 값을 추가하거나 공통 값을 제거할 수 있습니다.
 
    * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트와 같은 특수 값으로 표시됩니다 `<Mixed Entries>`.
 

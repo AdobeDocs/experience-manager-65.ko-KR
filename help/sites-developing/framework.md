@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1645'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 * 하위 노드를 포함하는 경우 태그를 라고 합니다. [컨테이너 태그.](#container-tags)
 * 태그는 라는 기본 경로 아래의 저장소에 저장됩니다. [분류 루트 노드.](#taxonomy-root-node)
 
-태그는 단순히 JCR 노드이므로 노드 이름은 물론 를 준수해야 합니다. [JCR 명명 규칙.](naming-conventions.md)
+태그는 단순히 JCR 노드이므로 노드 이름은 [JCR 명명 규칙.](naming-conventions.md)
 
 ### 태그 ID {#tagid}
 
@@ -125,7 +125,7 @@ TagID에 콜론(`:`), 콜론은 슬래시( )로 더 구분되는 태그 또는 �
 
 * 허용 `tag-administrators` 모든 네임스페이스에 대한 그룹/역할 쓰기 액세스(추가/수정 `/content/cq:tags`). 이 그룹은 AEM과 함께 제공됩니다.
 * 사용자/작성자가 읽을 수 있어야 하는 모든 네임스페이스(대부분 모든 네임스페이스)에 대한 읽기 액세스를 허용합니다.
-* 사용자/작성자가 태그를 사용자/작성자가 자유롭게 정의할 수 있는 해당 네임스페이스에 대한 쓰기 액세스 허용(아래에 노드 추가) `/content/cq:tags/some_namespace`)
+* 사용자/작성자가 태그를 사용자/작성자가 자유롭게 정의할 수 있는 해당 네임스페이스에 대한 쓰기 액세스 권한 부여(아래에 노드 추가) `/content/cq:tags/some_namespace`)
 
 ## 태그 지정 가능 콘텐츠 : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
@@ -223,4 +223,4 @@ AEM에 포함된 노드 유형에 대한 필수 정의는 다음과 같습니다
 
 Adobe Experience Manager 6.4부터 태그는 `/content/cq:tags` 반면 이전 버전에서는 `/etc/tags`.
 
-6.4 이전 버전에서 AEM 시스템을 업그레이드할 때마다 태그만 로 마이그레이션해야 합니다. `/content/cq:tags`. 문서를 참조하십시오. [AEM 6.5의 일반적인 저장소 재구성](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) 추가 정보.
+6.4 이전 버전에서 AEM 시스템을 업그레이드할 때마다 태그만 로 마이그레이션해야 합니다. `/content/cq:tags`. 다음을 참조하십시오 [AEM 6.5의 일반적인 저장소 재구성](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) 추가 정보.

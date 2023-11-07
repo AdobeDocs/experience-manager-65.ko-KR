@@ -11,7 +11,7 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
@@ -81,7 +81,7 @@ XFA를 참조하는 적응형 양식에는 XFA에서 사용할 수 있는 필드
 양식 템플릿을 제거하면 종속된 적응형 양식 또는 양식 템플릿이 손상됩니다. 이와 같은 적응적 형태를 비공식적으로 더러운 형태라고 부르기도 한다. AEM Forms 사용자 인터페이스에서 다음 두 가지 방법으로 더티 양식을 찾을 수 있습니다.
 
 * 자산 목록의 적응형 양식 썸네일에 경고 아이콘이 표시되고, 경고 아이콘 위에 포인터를 가져다 대면 다음 메시지가 표시됩니다.\
-  `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
+  `Schema/Form Template for this adaptive form has been updated so go to Authoring mode and rebase it with new version.`
 
 ![연결된 XFA를 업데이트한 후 동기화되지 않은 적응형 양식에 대한 경고](assets/dirtyaf.png)
 

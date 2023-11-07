@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9109'
+source-wordcount: '9095'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ FormsFolder에 Loan.xdp라는 파일이 있습니다. 이 양식 디자인에 �
 >
 >Workbench를 사용하여 Forms 애플리케이션을 만드는 방법에 대한 자세한 내용은 다음을 참조하십시오. [Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
+AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -305,7 +305,7 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
 
 1. 대상 폴더에 리소스 쓰기
 
-   호출 `ResourceRepositoryClient` 개체 `writeResource` 폴더의 URI와 `Resource` 개체.
+   호출 `ResourceRepositoryClient` 개체 `writeResource` 폴더의 URI에 메서드 및 을 전달합니다. `Resource` 개체.
 
 **추가 참조**
 
@@ -354,7 +354,7 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
 
 1. 대상 폴더에 리소스 쓰기
 
-   호출 `RepositoryServiceService` 개체 `writeResource` 폴더의 URI와 `Resource` 개체. 합격 `null` 다른 두 매개 변수.
+   호출 `RepositoryServiceService` 개체 `writeResource` 폴더의 URI에 메서드 및 을 전달합니다. `Resource` 개체. 합격 `null` 다른 두 매개 변수.
 
 **추가 참조**
 
@@ -542,7 +542,7 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
 
 1. 읽을 리소스의 URI를 지정하십시오.
 
-   검색할 리소스의 URI를 나타내는 문자열 값을 지정합니다. 예를 들어 리소스의 이름이 이라고 가정하면 *testResource* 폴더에 있음: *testFolder*, 지정 `/testFolder/testResource`.
+   검색할 리소스의 URI를 나타내는 문자열 값을 지정합니다. 예를 들어 리소스의 이름이 이라고 가정하면 *testResource* 다음 폴더에 있음: *testFolder*, 지정 `/testFolder/testResource`.
 
 1. 리소스 읽기
 
@@ -716,7 +716,7 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
 
 **쿼리 문**
 
-A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함합니다. A *구문* 왼쪽 피연산자, 연산자 및 오른쪽 피연산자로 구성됩니다. 또한 검색 결과에 사용할 정렬 순서를 지정할 수 있습니다. 다음 *정렬 순서* SQL과 같은 정보를 포함합니다. `ORDER BY` 및 는 검색의 기반이 되는 특성과 오름차순 또는 내림차순을 사용할 것인지 여부를 나타내는 값을 포함하는 요소로 구성됩니다.
+A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함합니다. A *구문* 왼쪽 피연산자, 연산자 및 오른쪽 피연산자로 구성됩니다. 또한 검색 결과에 사용할 정렬 순서를 지정할 수 있습니다. 다음 *정렬 순서* SQL과 같은 정보를 포함합니다. `ORDER BY` 및 절은 검색이 기준으로 삼은 속성과 오름차순 또는 내림차순 중 어느 것을 사용할지 나타내는 값을 포함하는 요소로 구성됩니다.
 
 저장소 서비스 Java API를 사용하여 프로그래밍 방식으로 리소스를 검색할 수 있습니다. 현재 웹 서비스 API를 사용하여 리소스를 검색할 수 없습니다.
 
@@ -921,7 +921,7 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 1. 연결할 리소스의 URI를 지정하십시오.
 
-   연결할 리소스의 URI를 지정합니다. 이 경우 리소스에 이름이 지정되기 때문입니다 `testResource1` 및 `testResource2` 및 은(는) 다음 폴더에 있습니다. `testFolder`, 해당 URI는 `"/testFolder/testResource1"` 및 `"/testFolder/testResource2"`. URI는 `java.lang.String` 개체. 이 예제에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 작성에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources).
+   연결할 리소스의 URI를 지정합니다. 이 경우 리소스에 이름이 지정되기 때문입니다 `testResource1` 및 `testResource2` 및 이(가) 다음 폴더에 있음: `testFolder`, 해당 URI는 `"/testFolder/testResource1"` 및 `"/testFolder/testResource2"`. URI는 `java.lang.String` 개체. 이 예제에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 작성에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources).
 
 1. 관계 만들기
 
@@ -965,7 +965,7 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 1. 연결할 리소스의 URI를 지정하십시오.
 
-   연결할 리소스의 URI를 지정합니다. 이 경우 리소스에 이름이 지정되기 때문입니다 `testResource1` 및 `testResource2` 및 은(는) 다음 폴더에 있습니다. `testFolder`, 해당 URI는 `"/testFolder/testResource1"` 및 `"/testFolder/testResource2"`. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 URI는 `System.String` 개체. 이 예제에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 작성에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources).
+   연결할 리소스의 URI를 지정합니다. 이 경우 리소스에 이름이 지정되기 때문입니다 `testResource1` 및 `testResource2` 및 이(가) 다음 폴더에 있음: `testFolder`, 해당 URI는 `"/testFolder/testResource1"` 및 `"/testFolder/testResource2"`. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 URI는 `System.String` 개체. 이 예제에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 작성에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources).
 
 1. 관계 만들기
 
@@ -999,7 +999,7 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 특정 사용자의 단독 사용 또는 둘 이상의 사용자 간 공유 사용을 위해 리소스 또는 리소스 집합을 잠글 수 있습니다. 공유 잠금은 리소스에 문제가 발생함을 나타내지만, 이로 인해 다른 사람이 해당 리소스에 대해 작업을 수행할 수 있습니다. 공유 잠금을 신호 메커니즘으로 간주해야 합니다. 단독 잠금은 리소스를 잠근 사용자가 리소스를 변경한다는 것을 의미하며, 잠금은 사용자가 더 이상 리소스에 액세스할 필요가 없고 잠금을 해제할 때까지 다른 사용자가 이 작업을 수행할 수 없도록 합니다. 저장소 관리자가 리소스의 잠금을 해제할 경우 해당 리소스에 대한 모든 배타적 잠금 및 공유 잠금이 자동으로 제거됩니다. 이 유형의 작업은 사용자가 더 이상 사용할 수 없고 리소스 잠금이 해제되지 않은 상황을 위한 것입니다.
 
-자원이 잠기면 다음 그림과 같이 Workbench에 있는 자원 탭을 보면 잠금 아이콘이 나타납니다.
+자원이 잠기면 다음 그림과 같이 Workbench에서 자원 탭을 보면 잠금 아이콘이 나타납니다.
 
 ![lr_lr_lockrepository](assets/lr_lr_lockrepository.png)
 

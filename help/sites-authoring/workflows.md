@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
 exl-id: 7383d590-c6b7-440a-a33d-196dce9736ef
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 60%
+source-wordcount: '178'
+ht-degree: 74%
 
 ---
 
@@ -25,12 +25,12 @@ AEM 워크플로에서는 (하나 이상의) 페이지 및/또는 에셋에서 �
 1. 편집자는 페이지 콘텐츠를 검토해야 함을 나타내는 작업 항목을 수신합니다. 완료되면 작업 항목이 완료되었음을 나타냅니다.
 1. 그러면 사이트 관리자는 페이지 활성화를 요청하는 작업 항목을 수신합니다. 완료되면 작업 항목이 완료되었음을 나타냅니다.
 
-일반적으로
+일반적으로 다음이 진행됩니다.
 
-* 콘텐츠 작성자는 워크플로에 참여할 뿐만 아니라 페이지에 워크플로를 적용합니다.
+* 콘텐츠 작성자는 페이지에 워크플로를 적용하고 워크플로에 참여합니다.
 * 사용하는 워크플로는 조직의 비즈니스 프로세스마다 고유합니다.
 
-다음 페이지는 다음 내용을 다룹니다.
+다음 페이지에 이 내용이 나와 있습니다.
 
 * [페이지에 워크플로 적용](/help/sites-authoring/workflows-applying.md)
 * [워크플로에 참여](/help/sites-authoring/workflows-participating.md)

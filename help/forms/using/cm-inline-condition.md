@@ -11,9 +11,9 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1657'
 ht-degree: 0%
 
 ---
@@ -168,7 +168,7 @@ AEM Forms을 사용하면 텍스트 모듈에서 인라인 조건을 사용하�
 
    DD 요소와 함께 정적 텍스트를 반복하려면 추가 단계에 설명된 대로 반복을 적용해야 합니다.
 
-1. 아래 표시된 대로 정적 텍스트와 반복할 DD 요소를 선택합니다.
+1. 아래와 같이 반복할 정적 텍스트 및 DD 요소를 선택합니다.
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 

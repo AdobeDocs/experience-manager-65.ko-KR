@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 59d5c2574bf4298469152a3d55e7c1508eb2f1be
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4633'
+source-wordcount: '4632'
 ht-degree: 9%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 9%
    * MongoDB 4.4
    * MySQL JDBC Connector 8
 
-JEE의 AEM 6.5 Forms Adobe 환경에 최신 소프트웨어를 설치하거나 사용할 계획이라면 JEE의 AEM 6.5.18.0 Forms 전체 설치 관리자를 사용하는 것이 좋습니다. 새로 추가되고 더 이상 사용되지 않는 소프트웨어의 전체 목록을 살펴보려면 JEE의 AEM Forms 또는 OSGi의 AEM Forms 설명서를 참조하십시오.
+JEE의 AEM 6.5 Forms Adobe 환경에 최신 소프트웨어를 설치하거나 사용할 계획이라면 JEE의 AEM 6.5.18.0 Forms 전체 설치 관리자를 사용하는 것이 좋습니다. 새로 추가되고 더 이상 사용되지 않는 소프트웨어의 전체 목록을 살펴보려면 JEE의 AEM Forms 또는 OSGi의 AEM Forms에 대한 설명서를 참조하십시오.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 

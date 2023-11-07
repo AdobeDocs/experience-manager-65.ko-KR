@@ -1,20 +1,16 @@
 ---
 title: SPA 편집기 개요
-seo-title: SPA Editor Overview
 description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에서 SPA 편집기와 워크플로의 세부 상호 작용 포함)에 대한 포괄적인 개요를 제공합니다.
-seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
-uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 90%
+source-wordcount: '1651'
+ht-degree: 87%
 
 ---
 
@@ -158,7 +154,7 @@ SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 �
 
 ## 요구 사항 및 제한 사항 {#requirements-limitations}
 
-작성자가 SPA 콘텐츠를 편집할 수 있도록 페이지 편집기를 사용하려면 SPA 애플리케이션을 구현하여 AEM SPA Editor SDK와 상호 작용해야 합니다. 다음을 참조하십시오. [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md) 문서화에서 실행하는 데 필요한 최소한의 정보만 제공합니다.
+작성자가 SPA 콘텐츠를 편집할 수 있도록 페이지 편집기를 사용하려면 SPA 애플리케이션을 구현하여 AEM SPA Editor SDK와 상호 작용해야 합니다. 다음을 참조하십시오 [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md) 최소한의 정보만 있으면 실행할 수 있습니다.
 
 ### 지원되는 프레임워크 {#supported-frameworks}
 
@@ -171,7 +167,7 @@ SPA Editor SDK는 다음의 최소 버전을 지원합니다.
 
 ### 추가 프레임워크 {#additional-frameworks}
 
-AEM SPA Editor SDK와 구동할 수 있도록 추가 SPA 프레임워크를 구현할 수 있습니다. AEM SPA 편집기와 구동할 모듈, 구성 요소와 서비스로 구성된 프레임워크별 레이어를 만들기 위해 프레임워크가 충족해야 하는 요구 사항은 [SPA 블루프린트](/help/sites-developing/spa-blueprint.md) 문서를 참조하십시오.
+AEM SPA Editor SDK와 구동할 수 있도록 추가 SPA 프레임워크를 구현할 수 있습니다. 다음을 참조하십시오. [SPA 블루프린트](/help/sites-developing/spa-blueprint.md) AEM SPA Editor에서 사용할 모듈, 구성 요소 및 서비스로 구성된 프레임워크별 계층을 만들기 위해 프레임워크가 충족해야 하는 요구 사항에 대해 설명합니다.
 
 ### 여러 선택기 사용 {#multiple-selectors}
 
@@ -198,6 +194,6 @@ AEM SPA Editor SDK는 AEM 6.4 서비스 팩 2와 함께 도입되었습니다. �
 * 구성 편집 (예: 리스너)
 * 실행 취소 / 다시 실행
 * 페이지 비교 및 시간 비틀기
-* 링크 검사기, CDN 재작성 서비스, URL 단축 등 서버측 HTML 재작성 수행 기능
+* 링크 검사기, CDN 재작성기 서비스, URL 단축 등과 같이 서버측에서 HTML 재작성을 수행하는 기능입니다.
 * 개발자 모드
 * AEM 론치

@@ -3,9 +3,9 @@ title: Adobe Experience Manager에서 컨텐츠를 작성하도록 리치 텍스
 description: Adobe Experience Manager에서 컨텐츠를 작성하도록 Adobe Experience Manager 리치 텍스트 편집기를 구성하는 방법에 대해 알아봅니다.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2923'
+source-wordcount: '2921'
 ht-degree: 1%
 
 ---
@@ -182,7 +182,7 @@ RTE 플러그인의 자세한 구성은 다음을 참조하십시오. [rte 플�
 >
 >다음 [코어 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) 템플릿 편집자는 GUI에서 많은 RTE 플러그인을 콘텐츠 정책으로 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다.
 >
->자세한 내용은 [RTE UI 설정 및 콘텐츠 정책](/help/sites-administering/rich-text-editor.md) 이 문서의 섹션과 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+>자세한 내용은 [RTE UI 설정 및 콘텐츠 정책](/help/sites-administering/rich-text-editor.md) 이 문서의 섹션 및 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >

@@ -7,9 +7,9 @@ topic-tags: development-tools
 content-type: reference
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2119'
 ht-degree: 3%
 
 ---
@@ -172,7 +172,7 @@ CRXDE Lite으로 템플릿을 만들려면 다음 작업을 수행하십시오.
 
 * 유형의 하위 노드 `cq:PageContent` 페이지 컨텐츠 속성 포함
 
-템플릿에 속성을 추가할 수 있습니다. 다음을 참조하십시오. [속성 만들기](#creating-a-property) 섹션.
+템플릿에 속성을 추가할 수 있습니다. [속성 만들기](#creating-a-property) 섹션.
 
 ## 구성 요소 만들기 {#creating-a-component}
 
@@ -241,7 +241,7 @@ CRXDE Lite을 사용하여 속성을 만들려면 다음 작업을 수행하십�
 
 1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 새 속성을 추가할 노드를 선택합니다.
-1. 다음에서 **속성** 아래 창에서 탭을 입력하고 **이름**, **유형**&#x200B;및 **값**. 클릭 **추가**.
+1. 다음에서 **속성** 아래 창에서 탭을 입력하고 **이름**, **유형**&#x200B;및 **값**. **추가**&#x200B;를 클릭합니다.
 
 1. 클릭 **모두 저장** 변경 사항을 서버에 저장합니다.
 

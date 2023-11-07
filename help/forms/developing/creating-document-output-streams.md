@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '19006'
+source-wordcount: '18965'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 다음 단원에서는 `com.adobe.idp.Document` 인스턴스:
 
-* [콘텐츠 서비스(더 이상 사용되지 않음)에 있는 문서를 출력 서비스로 전달](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
+* [컨텐츠 서비스(사용 중단됨)의 문서를 출력 서비스로 전달](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [조각을 사용하여 PDF 문서 생성](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
 사용할 기술을 결정할 때 고려해야 할 사항 중 하나는 다른 AEM Forms 서비스에서 양식 디자인을 가져오는 경우 `com.adobe.idp.Document` 인스턴스. 두 가지 모두 *출력 서비스에 문서 전달* 및 *조각을 사용하여 PDF 문서 생성* 섹션은 다른 AEM Forms 서비스에서 양식 디자인을 가져오는 방법을 보여 줍니다. 첫 번째 섹션은 Content Services에서 양식 디자인을 검색합니다(더 이상 사용되지 않음). 두 번째 섹션은 어셈블러 서비스에서 양식 디자인을 검색합니다.
@@ -57,7 +57,7 @@ PDF 문서를 만들 때 양식 디자인의 위치를 지정하는 URI 값을 �
 
 * [PDF 문서 만들기](creating-document-output-streams.md#creating-pdf-documents)
 * [PDF/A 문서 생성](creating-document-output-streams.md#creating-pdf-a-documents)
-* [콘텐츠 서비스(더 이상 사용되지 않음)에 있는 문서를 출력 서비스로 전달](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
+* [컨텐츠 서비스(사용 중단됨)의 문서를 출력 서비스로 전달](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [조각을 사용하여 PDF 문서 생성](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 * [파일로 인쇄](creating-document-output-streams.md#printing-to-files)
 * [프린터로 인쇄 스트림 보내기](creating-document-output-streams.md#sending-print-streams-to-printers)
@@ -188,7 +188,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
 >[!NOTE]
 >
->Forms 애플리케이션에 있는 XDP를 참조하여 PDF 문서를 만드는 전체 빠른 시작을 보려면 다음을 참조하십시오. [빠른 시작(EJB 모드): Java API를 사용하여 애플리케이션 XDP 파일 기반 PDF 문서 생성](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
+>Forms 애플리케이션에서 XDP를 참조하여 PDF 문서를 만드는 전체 빠른 시작을 보려면 다음을 참조하십시오. [빠른 시작(EJB 모드): Java API를 사용하여 애플리케이션 XDP 파일 기반 PDF 문서 생성](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
 
 **작업 결과 검색**
 
@@ -265,7 +265,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
    >[!NOTE]
    >
-   >PDF 문서를 만들 때는 `OutputClient` 개체 `generatePDFOutput2` 메서드를 사용합니다. (참조: [콘텐츠 서비스(더 이상 사용되지 않음)에 있는 문서를 출력 서비스로 전달&#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >PDF 문서를 만들 때는 `OutputClient` 개체 `generatePDFOutput2` 메서드를 사용합니다. (참조: [컨텐츠 서비스(사용 중단됨)의 문서를 출력 서비스로 전달&#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. 작업 결과를 검색합니다.
 
@@ -358,7 +358,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
    >[!NOTE]
    >
-   >PDF 문서를 만들 때는 `OutputClient` 개체 `generatePDFOutput2` 메서드를 사용합니다. (참조: [콘텐츠 서비스(더 이상 사용되지 않음)에 있는 문서를 출력 서비스로 전달&#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >PDF 문서를 만들 때는 `OutputClient` 개체 `generatePDFOutput2` 메서드를 사용합니다. (참조: [컨텐츠 서비스(사용 중단됨)의 문서를 출력 서비스로 전달&#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. 작업 결과를 검색합니다.
 
@@ -385,7 +385,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
 PDF/A-1 사양은 두 가지 적합성 수준, 즉 a와 b로 구성됩니다. 두 요소의 주요 차이점은 적합성 수준 b에 필요하지 않은 논리적 구조(접근성) 지원에 관한 것입니다. 적합성 수준에 관계없이 PDF/A-1은 모든 글꼴이 생성된 PDF/A 문서에 포함됨을 지시합니다.
 
-PDF/A가 PDF 문서를 보관하는 표준이지만 표준 PDF 문서가 회사의 요구 사항에 부합하는 경우 PDF/A를 보관에 사용해야 하는 것은 아닙니다. PDF/A 표준은 문서 보존 요건을 충족함과 동시에 장기간 보관이 가능한 PDF 파일을 구축하는 것이 목적이다. 예를 들어 시간이 지남에 따라 URL이 유효하지 않게 될 수 있으므로 URL을 PDF/A에 포함할 수 없습니다.
+PDF/A가 PDF 문서를 보관하는 표준이지만 표준 PDF 문서가 회사의 요구 사항에 부합하는 경우 PDF/A를 보관에 사용해야 하는 것은 아닙니다. PDF/A 표준은 장기간 보관이 가능하고 문서 보존 요건을 충족하는 PDF 파일을 구축하는 것이 목적이다. 예를 들어 시간이 지남에 따라 URL이 유효하지 않게 될 수 있으므로 URL을 PDF/A에 포함할 수 없습니다.
 
 조직은 자체 요구 사항, 문서를 보관하려는 기간, 파일 크기 고려 사항을 평가하고 자체 보관 전략을 결정해야 합니다. DocConverter 서비스를 사용하여 PDF 문서가 PDF/A를 준수하는지 여부를 프로그래밍 방식으로 확인할 수 있습니다. (참조: [프로그래밍 방식으로 PDF/A 준수 여부 확인](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
@@ -523,7 +523,7 @@ Output API(Java)를 사용하여 PDF/A 문서를 만듭니다.
 
    >[!NOTE]
    >
-   >다음을 호출하여 PDF/A 문서를 만들 수도 있습니다. `OutputClient` 개체 `generatePDFOutput`2 방법. (참조: [콘텐츠 서비스(더 이상 사용되지 않음)에 있는 문서를 출력 서비스로 전달](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >다음을 호출하여 PDF/A 문서를 만들 수도 있습니다. `OutputClient` 개체 `generatePDFOutput`2 방법. (참조: [컨텐츠 서비스(사용 중단됨)의 문서를 출력 서비스로 전달](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. 작업 결과를 검색합니다.
 
@@ -609,7 +609,7 @@ Output API(웹 서비스)를 사용하여 PDF/A 문서를 만듭니다.
 
    >[!NOTE]
    >
-   >다음을 호출하여 PDF/A 문서를 만들 수도 있습니다. `OutputClient` 개체 `generatePDFOutput`2 방법. (참조: [콘텐츠 서비스(더 이상 사용되지 않음)에 있는 문서를 출력 서비스로 전달](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >다음을 호출하여 PDF/A 문서를 만들 수도 있습니다. `OutputClient` 개체 `generatePDFOutput`2 방법. (참조: [컨텐츠 서비스(사용 중단됨)의 문서를 출력 서비스로 전달](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. 작업 결과를 검색합니다.
 
@@ -626,9 +626,9 @@ Output API(웹 서비스)를 사용하여 PDF/A 문서를 만듭니다.
 
 [SwaRef를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## 콘텐츠 서비스(더 이상 사용되지 않음)에 있는 문서를 출력 서비스로 전달 {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
+## 컨텐츠 서비스(사용 중단됨)의 문서를 출력 서비스로 전달 {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
-출력 서비스는 일반적으로 XDP 파일로 저장되고 디자이너에서 만들어지는 양식 디자인을 기반으로 하는 비대화형 PDF 양식을 렌더링합니다. 다음을 전달할 수 있습니다. `com.adobe.idp.Document` 출력 서비스에 대한 양식 디자인을 포함하는 개체입니다. 그런 다음 Output 서비스는 의 양식 디자인을 렌더링합니다 `com.adobe.idp.Document` 개체.
+출력 서비스는 일반적으로 XDP 파일로 저장되고 디자이너에서 만들어지는 양식 디자인을 기반으로 하는 비대화형 PDF 양식을 렌더링합니다. 다음을 전달할 수 있습니다. `com.adobe.idp.Document` 출력 서비스에 대한 양식 디자인을 포함하는 개체입니다. 그런 다음 Output 서비스는 `com.adobe.idp.Document` 개체.
 
 를 전달할 때의 이점 `com.adobe.idp.Document` 출력 서비스의 개체는 다른 AEM Forms 서비스 작업에서 `com.adobe.idp.Document` 인스턴스. 즉, 다음을 얻을 수 있습니다. `com.adobe.idp.Document` 다른 서비스 작업의 인스턴스를 렌더링합니다. 예를 들어 XDP 파일이 Content Services(더 이상 사용되지 않음) 노드에 저장되어 있다고 가정해 보겠습니다 `/Company Home/Form Designs`다음 그림과 같이 을 참조하십시오.
 
@@ -815,25 +815,25 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
 [MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-## 저장소에 있는 문서를 출력 서비스로 전달 {#passing-documents-located-in-the-repository-to-the-output-service}
+## 저장소의 문서를 출력 서비스로 전달 {#passing-documents-located-in-the-repository-to-the-output-service}
 
-출력 서비스는 일반적으로 XDP 파일로 저장되고 디자이너에서 만들어지는 양식 디자인을 기반으로 하는 비대화형 PDF 양식을 렌더링합니다. 다음을 전달할 수 있습니다. `com.adobe.idp.Document` 출력 서비스에 대한 양식 디자인을 포함하는 개체입니다. 그런 다음 Output 서비스는 의 양식 디자인을 렌더링합니다 `com.adobe.idp.Document` 개체.
+출력 서비스는 일반적으로 XDP 파일로 저장되고 디자이너에서 만들어지는 양식 디자인을 기반으로 하는 비대화형 PDF 양식을 렌더링합니다. 다음을 전달할 수 있습니다. `com.adobe.idp.Document` 출력 서비스에 대한 양식 디자인을 포함하는 개체입니다. 그런 다음 Output 서비스는 `com.adobe.idp.Document` 개체.
 
 를 전달할 때의 이점 `com.adobe.idp.Document` 출력 서비스의 개체는 다른 AEM Forms 서비스 작업에서 `com.adobe.idp.Document` 인스턴스. 즉, 다음을 얻을 수 있습니다. `com.adobe.idp.Document` 다른 서비스 작업의 인스턴스를 렌더링합니다. 예를 들어 다음 그림과 같이 XDP 파일이 AEM Forms 저장소에 저장되어 있다고 가정해 보겠습니다.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
-다음 *양식 폴더* 폴더는 AEM Forms 저장소의 사용자 정의 위치입니다(이 위치는 예제 위치이며 기본적으로 존재하지 않음). 이 예에서는 Loan.xdp라는 양식 디자인이 이 폴더에 있습니다. 양식 디자인 외에도 이미지와 같은 다른 양식 자료가 이 위치에 저장될 수 있습니다. AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
+다음 *양식 폴더* 폴더는 AEM Forms 저장소의 사용자 정의 위치입니다(이 위치는 예제 위치이며 기본적으로 존재하지 않음). 이 예에서는 Loan.xdp라는 양식 디자인이 이 폴더에 있습니다. 양식 디자인 외에도 이미지와 같은 다른 양식 자료가 이 위치에 저장될 수 있습니다. AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
 AEM Forms 저장소에서 프로그래밍 방식으로 Loan.xdp를 검색하여 내의 출력 서비스로 전달할 수 있습니다. `com.adobe.idp.Document` 개체.
 
-다음 두 가지 방법 중 하나를 사용하여 저장소에 있는 XDP 파일을 기반으로 PDF을 만들 수 있습니다. XDP 위치를 참조로 전달하거나 저장소에서 프로그래밍 방식으로 XDP를 검색하여 XDP 파일 내의 출력 서비스로 전달할 수 있습니다.
+다음 두 가지 방법 중 하나를 사용하여 저장소의 XDP 파일을 기반으로 PDF을 만들 수 있습니다. XDP 위치를 참조로 전달하거나 저장소에서 프로그래밍 방식으로 XDP를 검색하여 XDP 파일 내의 출력 서비스로 전달할 수 있습니다.
 
 [빠른 시작(EJB 모드): Java API를 사용하여 애플리케이션 XDP 파일 기반 PDF 문서 생성](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) (참조에 의해 XDP 파일의 위치를 전달하는 방법을 보여 줍니다.)
 
-[빠른 시작(EJB 모드): Java API를 사용하여 AEM Forms 저장소에 있는 문서를 출력 서비스로 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) ( AEM Forms 저장소에서 XDP 파일을 프로그래밍 방식으로 검색하고 내의 출력 서비스로 전달하는 방법을 보여 줍니다. `com.adobe.idp.Document` 인스턴스). (이 섹션에서는 이 작업을 수행하는 방법에 대해 설명합니다.)
+[빠른 시작(EJB 모드): Java API를 사용하여 AEM Forms 저장소의 문서를 출력 서비스로 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) ( AEM Forms 저장소에서 XDP 파일을 프로그래밍 방식으로 검색하고 내의 출력 서비스로 전달하는 방법을 보여 줍니다. `com.adobe.idp.Document` 인스턴스). (이 섹션에서는 이 작업을 수행하는 방법에 대해 설명합니다.)
 
 >[!NOTE]
 >
@@ -877,7 +877,7 @@ XDP 파일이 `com.adobe.idp.Document` 인스턴스(또는 a `BLOB` 웹 서비�
 
 **추가 참조**
 
-[Java API를 사용하여 저장소에 있는 문서를 출력 서비스에 전달합니다](creating-document-output-streams.md#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Java API를 사용하여 저장소의 문서를 출력 서비스에 전달](creating-document-output-streams.md#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -887,7 +887,7 @@ XDP 파일이 `com.adobe.idp.Document` 인스턴스(또는 a `BLOB` 웹 서비�
 
 ResourceRepositoryClient
 
-### Java API를 사용하여 저장소에 있는 문서를 출력 서비스에 전달합니다 {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
+### Java API를 사용하여 저장소의 문서를 출력 서비스에 전달 {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
 
 출력 서비스 및 저장소 API(Java)를 사용하여 저장소에서 가져온 문서를 전달합니다.
 
@@ -928,7 +928,7 @@ ResourceRepositoryClient
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(EJB 모드): Java API를 사용하여 AEM Forms 저장소에 있는 문서를 출력 서비스로 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[빠른 시작(EJB 모드): Java API를 사용하여 AEM Forms 저장소의 문서를 출력 서비스로 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -936,7 +936,7 @@ ResourceRepositoryClient
 
 ## 조각을 사용하여 PDF 문서 생성 {#creating-pdf-documents-using-fragments}
 
-출력 및 어셈블러 서비스를 사용하여 조각을 기반으로 하는 PDF 문서와 같은 출력 스트림을 만들 수 있습니다. 어셈블러 서비스는 여러 XDP 파일에 있는 조각을 기반으로 하는 XDP 문서를 어셈블합니다. 어셈블된 XDP 문서가 출력 서비스로 전달되고 PDF 문서가 만들어집니다. 이 워크플로에서는 생성되는 PDF 문서를 표시하지만 출력 서비스는 이 워크플로에 대한 ZPL과 같은 다른 출력 유형을 생성할 수 있습니다. PDF 문서는 토론 목적으로만 사용됩니다.
+출력 및 어셈블러 서비스를 사용하여 조각을 기반으로 하는 PDF 문서와 같은 출력 스트림을 만들 수 있습니다. 어셈블러 서비스는 여러 XDP 파일의 조각을 기반으로 하는 XDP 문서를 어셈블합니다. 어셈블된 XDP 문서가 출력 서비스로 전달되고 PDF 문서가 만들어집니다. 이 워크플로에서는 생성되는 PDF 문서를 표시하지만 출력 서비스는 이 워크플로에 대한 ZPL과 같은 다른 출력 유형을 생성할 수 있습니다. PDF 문서는 토론 목적으로만 사용됩니다.
 
 다음 그림은 이 워크플로를 보여 줍니다.
 
@@ -1241,7 +1241,7 @@ Output 서비스는 작업을 수행한 후 작업이 성공했는지 여부를 
 1. 파일로 인쇄하는 데 필요한 인쇄 런타임 옵션을 설정합니다.
 
    * 만들기 `PrintedOutputOptionsSpec` 개체를 만들 때 사용됩니다.
-   * PrintedOutputOptionsSpec 개체의 `setFileURI` 메서드 및 파일의 이름과 위치를 나타내는 문자열 값 전달 예를 들어 출력 서비스가 C:\Adobe에 있는 MortgageForm.ps라는 PostScript 파일로 인쇄되도록 하려면 C:\\Adobe\MortgageForm.ps을 지정합니다.
+   * PrintedOutputOptionsSpec 개체의 `setFileURI` 메서드 및 파일의 이름과 위치를 나타내는 문자열 값 전달 예를 들어 출력 서비스가 C:\Adobe에서 MortgageForm.ps라는 PostScript 파일로 인쇄되도록 하려면 C:\\Adobe\MortgageForm.ps을 지정합니다.
    * 인쇄 매수를 지정하려면 `PrintedOutputOptionsSpec` 개체 `setCopies` 매수를 나타내는 정수 값을 전달하는 메서드입니다.
 
 1. 인쇄 스트림을 파일로 인쇄합니다.
@@ -1741,7 +1741,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 **PDF 런타임 옵션 설정**
 
-Output 서비스가 XML 데이터 원본을 기반으로 여러 파일을 성공적으로 만들려면 다음과 같은 런타임 옵션을 설정해야 합니다.
+Output 서비스가 XML 데이터 원본을 기반으로 여러 파일을 성공적으로 만들 수 있도록 다음과 같은 런타임 옵션을 설정합니다.
 
 * **많은 파일**: 출력 서비스에서 단일 문서를 만들지 아니면 여러 문서를 만들지 지정합니다. 참 또는 거짓을 지정할 수 있습니다. XML 데이터 원본의 각 데이터 레코드에 대해 별도의 문서를 만들려면 true를 지정합니다.
 * **파일 URI**: 출력 서비스에서 생성하는 파일의 위치를 지정합니다. 예를 들어 C:\\Adobe\forms\Loan.pdf 을 지정한다고 가정해 보겠습니다. 이 경우 출력 서비스는 Loan.pdf라는 파일을 만들어 C:\\Adobe\forms 폴더에 저장합니다. 여러 파일이 있는 경우 파일 이름은 Loan0001.pdf, Loan0002.pdf, Loan0003.pdf 등입니다. 파일 위치를 지정하면 파일이 클라이언트 컴퓨터가 아닌 서버에 배치됩니다.

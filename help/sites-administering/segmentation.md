@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 79%
+source-wordcount: '1774'
+ht-degree: 76%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->이 섹션에서는 ContextHub 사용 시 세그먼테이션을 구성하는 방법에 대해 설명합니다. Client Context 기능을 사용하는 경우 관련 설명서를 참조하십시오. [Client Context에 대한 세그먼테이션 구성](/help/sites-administering/campaign-segmentation.md).
+>이 섹션에서는 ContextHub 사용 시 세그먼테이션을 구성하는 방법에 대해 설명합니다. Client Context 기능을 사용 중이라면 관련 설명서를 참조하십시오. [Client Context에 대한 세그먼테이션 구성](/help/sites-administering/campaign-segmentation.md).
 >
 
 세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다. 다음을 참조하십시오 [대상자 관리](/help/sites-authoring/managing-audiences.md) 세그먼테이션의 작동 방식 및 주요 용어에 대한 정보입니다.
 
-사이트 방문자 및 달성하고자 하는 목표에 대해 이전에 수집한 정보에 따라 타겟팅된 콘텐츠에 필요한 세그먼트 및 전략을 정의해야 합니다.
+사이트 방문자 및 달성하고자 하는 목표에 대해 이미 수집한 정보에 따라 타겟팅된 콘텐츠에 필요한 세그먼트 및 전략을 정의해야 합니다.
 
 그런 다음 이러한 세그먼트를 사용하여 방문자에게 특별히 타겟팅된 콘텐츠를 제공할 수 있습니다. 이 콘텐츠는 다음에서 유지됩니다. [개인화](/help/sites-authoring/personalization.md) 섹션을 참조하십시오. 여기에 정의된 [활동](/help/sites-authoring/activitylib.md)은 모든 페이지에 포함될 수 있으며 특정 콘텐츠가 적용될 수 있는 방문자 세그먼트를 정의할 수 있습니다.
 
@@ -34,13 +34,13 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 
 ## 세그먼트 할당 {#accessing-segments}
 
-다음 [대상](/help/sites-authoring/managing-audiences.md) 콘솔을 사용하여 ContextHub 또는 Client Context용 세그먼트와 더불어 Adobe Target 계정의 대상자를 관리할 수 있습니다. 이 설명서에서는 ContextHub용 세그먼트 관리 방법에 대해 다룹니다. 대상 [Client Context 세그먼트](/help/sites-administering/campaign-segmentation.md) 및 Adobe Target 세그먼트는 관련 설명서를 참조하십시오.
+다음 [대상](/help/sites-authoring/managing-audiences.md) 콘솔을 사용하여 ContextHub 또는 Client Context용 세그먼트와 Adobe Target 계정의 대상을 관리할 수 있습니다. 이 설명서에서는 ContextHub용 세그먼트 관리 방법에 대해 다룹니다. 대상 [Client Context 세그먼트](/help/sites-administering/campaign-segmentation.md) 및 Adobe Target 세그먼트는 관련 설명서를 참조하십시오.
 
 세그먼트에 액세스하려면 구성을 선택해야 합니다. 전역 탐색에서 을 선택합니다. **탐색 > 개인화 > 대상자**. 사용 가능한 구성이 표시됩니다.
 
 ![대상 - 구성](assets/segmentation-access-confs.png)
 
-세그먼트를 보려면 구성을 선택하십시오(예: WKND Site).
+세그먼트를 보려면 구성을 선택하십시오(예: WKND 사이트).
 
 ![대상 - 세그먼트](assets/segmentation-access-segments.png)
 
@@ -141,7 +141,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. **새 ContextHub 세그먼트**&#x200B;에서 세그먼트 제목 및 필요한 경우 부스트 값을 입력한 다음 **만들기**&#x200B;를 탭하거나 클릭합니다.
+1. **새 ContextHub 세그먼트**&#x200B;에서 세그먼트 제목 및 부스트 값을 입력(필요한 경우)한 다음 **만들기**&#x200B;를 탭하거나 클릭합니다.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -323,7 +323,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 이러한 테스트는 페이지 콘텐츠에서 타겟팅된 콘텐츠 및 관련 **활동** 및 **경험**&#x200B;과 함께 수행할 수도 잇습니다.
 
-위의 프라임 연령 그룹 세그먼트 예제를 사용하여 활동 및 경험을 설정한 경우 활동을 사용하여 세그먼트를 쉽게 테스트할 수 있습니다. 활동 설정에 대한 자세한 내용은 [타겟팅된 콘텐츠 작성에 대한 관련 설명서](/help/sites-authoring/content-targeting-touch.md)를 참조하십시오.
+위의 프라임 연령 그룹 세그먼트 예제를 사용하여 활동 및 경험을 설정한 경우 활동을 사용하여 세그먼트를 쉽게 테스트할 수 있습니다. 활동 설정에 대한 자세한 내용은 관련 항목을 참조하십시오 [타깃팅된 콘텐츠 작성에 대한 설명서](/help/sites-authoring/content-targeting-touch.md).
 
 1. 타겟팅된 콘텐츠를 설정한 페이지의 편집 모드에서 콘텐츠의 화살표 아이콘을 통해 해당 콘텐츠가 타겟팅되었음을 확인할 수 있습니다.
 

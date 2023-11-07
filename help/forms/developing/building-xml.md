@@ -2,9 +2,9 @@
 title: JEE Workbench의 AEM Forms에서 스크립트 서비스 실행을 사용하여 XML 데이터를 작성하는 방법
 description: JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ patExecContext.setProcessDataValue("/process_data/node", document);
 
 **반복 루프를 사용하여 XML에 노드 추가**
 
-노드를 프로세스 내에서 기존 XML 변수에 추가할 수도 있습니다. 변수 node에는 방금 만든 XML 개체가 포함되어 있습니다.
+노드를 프로세스 내에서 기존 XML 변수에 추가할 수도 있습니다. 변수 node에는 만들어진 XML 개체가 포함되어 있습니다.
 
 ```xml
 Document document = patExecContext.getProcessDataValue("/process_data/node");

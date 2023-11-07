@@ -11,9 +11,9 @@ discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1310'
 ht-degree: 14%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 14%
 * WYSIWYG 드래그 앤 드롭 문서 편집기
 * 에셋용 통합 저장소 - 서버에 업로드되고 생성된 에셋은 대화형 통신 작성 인터페이스의 에셋 브라우저에서 사용할 수 있습니다
 
-다음을 수행하는 경우 [새 대화형 통신 만들기 또는 기존 대화형 통신 편집](../../forms/using/create-interactive-communication.md), 다음 사용자 인터페이스 요소를 사용합니다.
+다음을 수행하는 경우 [기존 대화형 통신 만들기 또는 편집](../../forms/using/create-interactive-communication.md), 다음 사용자 인터페이스 요소를 사용합니다.
 
 * [사이드바](#sidebar)
 * [페이지 도구 모음](#page-toolbar)

@@ -9,7 +9,7 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 29%
@@ -77,7 +77,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 ### AEM 최신 서비스 팩 다운로드 및 설치 {#servicepack}
 
-자세한 지침은 현재 를 참조하십시오. [AEM 6.5 서비스 팩 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html).
+자세한 지침은 현재 를 참조하십시오. [AEM 6.5 서비스 팩 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR).
 
 **Adobe 고객 지원 문의** 최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우.
 
@@ -240,7 +240,7 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information that is used to create IMS account configuration.
 -->
 
 ### IMS 계정 구성 {#create-ims-account-configuration}

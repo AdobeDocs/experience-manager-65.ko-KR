@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9901'
+source-wordcount: '9888'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ AEM Forms은 다음과 같은 웹 서비스 표준을 지원합니다.
 
 **AEM Forms 프로세스 WSDL 정의**
 
-Workbench에서 생성된 프로세스에 속한 WSDL에 액세스하려면 WSDL 정의 내에 응용 프로그램 이름과 프로세스 이름을 지정해야 합니다. 애플리케이션 이름이 다음과 같다고 가정합니다. `MyApplication` 프로세스의 이름은 입니다. `EncryptDocument`. 이 경우 다음 WSDL 정의를 지정합니다.
+Workbench에서 생성된 프로세스에 속한 WSDL에 액세스하려면 WSDL 정의 내에서 응용 프로그램 이름과 프로세스 이름을 지정합니다. 애플리케이션 이름이 다음과 같다고 가정합니다. `MyApplication` 프로세스의 이름은 입니다. `EncryptDocument`. 이 경우 다음 WSDL 정의를 지정합니다.
 
 ```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?wsdl
@@ -208,11 +208,11 @@ A `BLOB` object는 AEM Forms services에서 이진 데이터(예: PDF 파일, XM
 
 **서비스 요청에서 BLOB 개체 제공**
 
-AEM Forms 서비스 작업에 필요한 경우 `BLOB` 을(를) 입력 값으로 입력하고 의 인스턴스를 `BLOB` 애플리케이션 논리를 입력합니다. (대부분의 웹 서비스 빠른 시작은 *AEM Forms를 사용한 프로그래밍* blob 데이터 형식으로 작업하는 방법을 보여 줍니다.)
+AEM Forms 서비스 작업에 필요한 경우 `BLOB` 을(를) 입력 값으로 입력하고 의 인스턴스를 `BLOB` 애플리케이션 논리를 입력합니다. (많은 웹 서비스 빠른 시작 위치: *AEM Forms를 사용한 프로그래밍* blob 데이터 형식으로 작업하는 방법을 보여 줍니다.)
 
 에 속한 필드에 값 할당 `BLOB` 인스턴스를 다음과 같이 표시합니다.
 
-* **Base64**: 데이터를 Base64 형식으로 인코딩된 텍스트로 전달하려면 `BLOB.binaryData` 필드를 지정하고 MIME 형식으로 데이터 유형을 설정합니다(예: `application/pdf`)에 있는 `BLOB.contentType` 필드. (참조: [Base64 인코딩을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-base64-encoding).)
+* **Base64**: 데이터를 Base64 형식으로 인코딩된 텍스트로 전달하려면 `BLOB.binaryData` 필드 및 MIME 형식의 데이터 형식 설정(예: `application/pdf`)에 있는 `BLOB.contentType` 필드. (참조: [Base64 인코딩을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-base64-encoding).)
 * **MTOM**: MTOM 첨부 파일에 이진 데이터를 전달하려면 `BLOB.MTOM` 필드. 이 설정은 Java JAX-WS 프레임워크 또는 SOAP 프레임워크의 기본 API를 사용하여 데이터를 SOAP 요청에 연결합니다. (참조: [MTOM을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-mtom).)
 * **SwaRef**: WS-I SwaRef 첨부 파일에 이진 데이터를 전달하려면 `BLOB.swaRef` 필드. 이 설정은 Java JAX-WS 프레임워크를 사용하여 데이터를 SOAP 요청에 연결합니다. (참조: [SwaRef를 사용하여 AEM Forms 호출](#invoking-aem-forms-using-swaref).)
 * **MIME 또는 DIME 첨부 파일**: MIME 또는 DIME 첨부 파일로 데이터를 전달하려면 SOAP 프레임워크의 기본 API를 사용하여 SOAP 요청에 데이터를 첨부합니다. 에서 첨부 파일 식별자 설정 `BLOB.attachmentID` 필드. (참조: [Base64 인코딩을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-base64-encoding).)
@@ -357,7 +357,7 @@ JAX-WS를 사용하여 Forms 서비스 WSDL을 Java 프록시 클래스로 변�
 1. JDK 1.6 이상을 설치합니다.
 
    * 클래스 경로에 JDK bin 디렉토리를 추가합니다.
-   * 클래스 경로에 JRE bin 디렉토리를 추가합니다. 이 저장함은 다음 위치에 있습니다. `[JDK_INSTALL_LOCATION]/jre` 디렉토리.
+   * 클래스 경로에 JRE bin 디렉토리를 추가합니다. 이 상자는 다음 위치에 있습니다. `[JDK_INSTALL_LOCATION]/jre` 디렉토리.
    * 설정 `JAVA_HOME` 환경 변수를 JDK를 설치한 디렉토리에 추가합니다.
 
    JDK 1.6에는 build.xml 파일에 사용되는 wsimport 프로그램이 포함되어 있습니다. JDK 1.5에는 해당 프로그램이 포함되어 있지 않습니다.
@@ -431,7 +431,7 @@ JAX-WS를 사용하여 Forms 서비스 WSDL을 Java 프록시 클래스로 변�
 
 1. JAVA 파일을 JAR 파일로 패키징합니다. Eclipse에서 작업하는 경우 다음 단계를 수행합니다.
 
-   * 프록시 JAVA 파일을 JAR 파일로 패키지하는 데 사용되는 새 Java 프로젝트를 만듭니다.
+   * 프록시 JAVA 파일을 JAR 파일로 패키지하는 데 사용되는 Java 프로젝트를 생성합니다.
    * 프로젝트에 소스 폴더를 만듭니다.
    * 만들기 `com.adobe.idp.services` 소스 폴더의 패키지
    * 다음 항목 선택 `com.adobe.idp.services` 패키지를 만든 다음 adobe/idp/services 폴더에서 패키지로 JAVA 파일을 가져옵니다.
@@ -440,11 +440,11 @@ JAX-WS를 사용하여 Forms 서비스 WSDL을 Java 프록시 클래스로 변�
    * Java 컴파일러의 준수 수준을 5.0 이상으로 설정합니다.
    * 프로젝트를 빌드합니다.
    * 프로젝트를 JAR 파일로 내보냅니다.
-   * 클라이언트 프로젝트의 클래스 경로에 있는 이 JAR 파일을 가져옵니다. 또한 의 모든 JAR 파일을 가져옵니다. &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty입니다.
+   * 클라이언트 프로젝트의 클래스 경로에 있는 이 JAR 파일을 가져옵니다. 또한 모든 JAR 파일을에서 가져옵니다. &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty입니다.
 
    >[!NOTE]
    >
-   >AEM Forms로 프로그래밍 의 모든 Java 웹 서비스 빠른 시작(Forms 서비스 제외)은 JAX-WS를 사용하여 Java 프록시 파일을 만듭니다. 또한 모든 Java 웹 서비스 빠른 시작은 SwaRef를 사용합니다. (참조: [SwaRef를 사용하여 AEM Forms 호출](#invoking-aem-forms-using-swaref).)
+   >AEM Forms를 사용한 프로그래밍 의 모든 Java 웹 서비스 빠른 시작(Forms 서비스 제외)은 JAX-WS를 사용하여 Java 프록시 파일을 만듭니다. 또한 모든 Java 웹 서비스 빠른 시작은 SwaRef를 사용합니다. (참조: [SwaRef를 사용하여 AEM Forms 호출](#invoking-aem-forms-using-swaref).)
 
 **추가 참조**
 
@@ -669,7 +669,7 @@ Java 프록시 클래스 및 Base64를 사용하여 AEM Forms 서비스를 호�
    >바꾸기 `hiro-xp` *AEM Forms을 호스팅하는 J2EE 애플리케이션 서버의 IP 주소입니다.*
 
 1. JAX-WS를 사용하여 만든 Java 프록시 클래스를 JAR 파일에 패키지합니다.
-1. Java 프록시 JAR 파일과 다음 경로에 있는 JAR 파일을 포함합니다.
+1. 다음 경로에 Java 프록시 JAR 파일과 JAR 파일을 포함합니다.
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -864,7 +864,7 @@ SwaRef를 사용하여 AEM Forms 서비스를 호출할 수 있습니다. 의 �
    >바꾸기 `hiro-xp` *AEM Forms을 호스팅하는 J2EE 애플리케이션 서버의 IP 주소입니다.*
 
 1. JAX-WS를 사용하여 만든 Java 프록시 클래스를 JAR 파일에 패키지합니다.
-1. Java 프록시 JAR 파일과 다음 경로에 있는 JAR 파일을 포함합니다.
+1. 다음 경로에 Java 프록시 JAR 파일과 JAR 파일을 포함합니다.
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -966,7 +966,7 @@ HTTP를 통해 데이터를 사용하는 클라이언트 어셈블리를 만들�
 1. 호출 `MyApplication/EncryptDocument` 를 호출하여 프로세스를 `MyApplication_EncryptDocumentService` 개체 `invoke` 메서드 및 전달 `BLOB` 개체. 이 프로세스는 내의 암호화된 PDF 문서를 반환합니다. `BLOB` 개체.
 1. 만들기 `System.UriBuilder` 개체를 생성자를 사용하고 반환된 값을 전달하여 `BLOB` 개체 `remoteURL` 데이터 구성원입니다.
 1. 변환 `System.UriBuilder` 에 대한 오브젝트 `System.IO.Stream` 개체. (이 목록 다음에 나오는 C# 빠른 시작은 이 작업을 수행하는 방법을 보여 줍니다.)
-1. 바이트 배열을 만들어 의 데이터로 채웁니다. `System.IO.Stream` 개체.
+1. 바이트 배열을 만들어 `System.IO.Stream` 개체.
 1. 만들기 `System.IO.BinaryWriter` 개체를 호출하고 `System.IO.FileStream` 개체.
 1. 를 호출하여 바이트 배열 내용을 PDF 파일에 씁니다 `System.IO.BinaryWriter` 개체 `Write` 메서드 및 바이트 배열 전달.
 
@@ -987,7 +987,7 @@ HTTP를 통해 Java 프록시 클래스 및 BLOB 데이터를 사용하여 AEM F
    >바꾸기 `hiro-xp` *AEM Forms을 호스팅하는 J2EE 애플리케이션 서버의 IP 주소입니다.*
 
 1. JAX-WS를 사용하여 만든 Java 프록시 클래스를 JAR 파일에 패키지합니다.
-1. Java 프록시 JAR 파일과 다음 경로에 있는 JAR 파일을 포함합니다.
+1. 다음 경로에 Java 프록시 JAR 파일과 JAR 파일을 포함합니다.
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -1106,7 +1106,7 @@ DIME를 사용하여 Forms 서비스를 호출할 수 있습니다. 다음을 �
 1. 호출 `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` 메서드 및 전달 `Microsoft.Web.Services2.Dime.DimeAttachment` 개체.
 1. 호출 `MyApplication/EncryptDocument` 를 호출하여 프로세스를 `EncryptDocumentServiceWse` 개체 `invoke` 메서드 및 전달 `BLOB` DIME 첨부 파일이 포함된 개체입니다. 이 프로세스는 내의 암호화된 PDF 문서를 반환합니다. `BLOB` 개체.
 1. 반환된 값을 가져와 첨부 파일 식별자 값 가져오기 `BLOB` 개체 `attachmentID` 데이터 구성원입니다.
-1. 에 있는 첨부 파일 반복 `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` 첨부 파일 식별자 값을 사용하여 암호화된 PDF 문서를 가져옵니다.
+1. 의 첨부 파일 반복 `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` 첨부 파일 식별자 값을 사용하여 암호화된 PDF 문서를 가져옵니다.
 1. 획득 `System.IO.Stream` 의 값을 가져와서 개체 `Attachment` 개체 `Stream` 데이터 구성원입니다.
 1. 바이트 배열을 만들고 해당 바이트 배열을 `System.IO.Stream` 개체 `Read` 메서드를 사용합니다. 이 메서드는 암호화된 PDF 문서를 나타내는 데이터 스트림으로 바이트 배열을 채웁니다.
 1. 만들기 `System.IO.FileStream` 개체를 호출하고 PDF 파일 위치를 나타내는 문자열 값을 전달합니다. 이 개체는 암호화된 PDF 문서를 나타냅니다.

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1051'
 ht-degree: 1%
 
 ---
@@ -68,7 +68,7 @@ Adobe Mobile Services를 활용하려면 Adobe Analytics 계정 정보로 AEM Ad
 
 Adobe Mobile Service 클라우드 서비스를 만들려면 서비스에 연결하는 단계와 구성에 할당할 보고 세트를 선택하는 단계가 있습니다.
 
-시작하려면 대시보드의 Cloud Services 관리 타일에서 &#39;+&#39; 버튼을 클릭하십시오.
+시작하려면 대시보드의 Cloud Service 관리 타일에서 &#39;+&#39; 버튼을 클릭하십시오.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
@@ -76,7 +76,7 @@ Adobe Mobile Service 클라우드 서비스를 만들려면 서비스에 연결�
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-아래 표시된 대로 필수 필드를 채워 새 모바일 서비스 구성을 선택하거나 만듭니다. AEM 관리자가 Adobe Mobile Services에 대한 연결을 만들려면 이 정보가 필요합니다.
+아래 표시된 대로 필수 필드를 채워 모바일 서비스 구성을 선택하거나 만듭니다. AEM 관리자가 Adobe Mobile Services에 대한 연결을 만들려면 이 정보가 필요합니다.
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 

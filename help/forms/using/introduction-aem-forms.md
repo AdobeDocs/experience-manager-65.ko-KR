@@ -11,7 +11,7 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 11%
@@ -22,7 +22,7 @@ ht-degree: 11%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | 이 문서 |
 
 AEM Forms의 최신 기능 및 향상된 기능에 대한 자세한 내용은 [AEM Forms의 새로운 기능](../../forms/using/whats-new.md).
@@ -87,7 +87,7 @@ HTML5 브라우저 기반 양식은 모바일 장치와 데스크탑 브라우�
 
 양식 데이터가 제출되면 Adobe Experience Manager은 양식 데이터를 기존 시스템, 비즈니스 규칙 및 필수 인력과 연결합니다.
 
-AEM Forms은 디지털 비즈니스 프로세스를 모바일 디바이스로 확장하는 모바일 애플리케이션인 Forms Workspace 를 제공합니다. Forms Workspace를 사용하면 오프라인 상태에서도 데이터를 수집하고 기록할 수 있습니다. Forms Workspace는 모바일 장치의 기능을 활용하며 사진, 비디오를 캡처하고 타임스탬프 및 기타 정보와 같은 데이터를 수집할 수 있습니다. 다음에 네트워크에 연결하면 수집된 데이터를 동기화할 수 있습니다.
+AEM Forms은 디지털 비즈니스 프로세스를 모바일 디바이스로 확장하는 모바일 애플리케이션인 Forms Workspace 를 제공합니다. Forms Workspace를 사용하면 오프라인 상태에서도 데이터를 수집하고 기록할 수 있습니다. Forms Workspace는 모바일 장치의 기능을 사용하며 사진, 비디오를 캡처하고 타임스탬프 및 기타 정보와 같은 데이터를 수집할 수 있습니다. 다음에 네트워크에 연결하면 수집된 데이터를 동기화할 수 있습니다.
 
 오프라인으로 데이터를 캡처하고 다음에 온라인으로 전환할 때 동기화하는 것은 특히 현장 직원에게 유용합니다. 생산성을 향상시키고 오류를 줄입니다.
 
@@ -105,7 +105,7 @@ AEM Forms은 디지털 비즈니스 프로세스를 모바일 디바이스로 �
 
 ## 개인화된 커뮤니케이션 {#personalized-communication}
 
-효율적인 셀프서비스 디지털 경험의 중요한 구성 요소는 사용자가 어디서나 모든 장치에서 액세스할 수 있는 시기적절한 맞춤형 정보를 전달하는 것입니다. 시기적절한 맞춤형 커뮤니케이션은 전환율과 사용자 만족도를 모두 향상시킬 수 있습니다.
+효율적인 셀프서비스 디지털 경험의 중요한 구성 요소는 사용자가 어디서나 모든 디바이스에서 액세스할 수 있는 시기적절한 맞춤형 정보를 전달하는 것입니다. 시기적절한 맞춤형 커뮤니케이션은 전환율과 사용자 만족도를 모두 향상시킬 수 있습니다.
 
 비즈니스 사용자는 AEM Forms을 사용하여 문서 템플릿을 사용자 정의하고 백엔드 프로세스의 정보를 통합하며 대화형 구성 요소를 포함하여 개인화된 매력적인 사용자 경험을 만들 수 있습니다. 직관적인 사용자 인터페이스는 기술 전문가가 아닌 사용자가 조회를 기반으로 커뮤니케이션을 생성하거나 사용자가 생성한 응답을 시작할 시기를 결정하는 비즈니스 규칙을 개발하는 데 도움이 됩니다.
 

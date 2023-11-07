@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 51%
+source-wordcount: '294'
+ht-degree: 52%
 
 ---
 
@@ -46,8 +46,8 @@ ht-degree: 51%
 
       * `http://localhost:4502/sites.html/content?`
       * 이렇게 하면 페이지가 AEM에서 바로 요청되고 디스패처가 무시됩니다. 업데이트된 페이지가 표시되면 이는 디스패처 캐시를 지우라는 의미입니다.
-   * 복제 큐 문제가 있을 경우 시스템 관리자에게 문의하십시오.
 
+   * 복제 큐 문제가 있을 경우 시스템 관리자에게 문의하십시오.
 
 ## 구성 요소 작업이 도구 모음에 표시되지 않음 {#component-actions-not-visible-on-toolbar}
 

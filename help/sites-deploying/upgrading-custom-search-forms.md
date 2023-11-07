@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1681'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ AEM 6.2에서 저장소에 저장된 사용자 지정 검색 Forms의 위치가 
 
 따라서 양식이 계속 작동하려면 업그레이드 후 수동으로 조정해야 합니다.
 
-이는 새 검색 Forms 및 사용자 지정된 기본 Forms에 적용됩니다.
+이는 맞춤화된 새 검색 Forms 및 기본 Forms에 적용됩니다.
 
 자세한 내용은 [검색 패싯](/help/assets/search-facets.md).
 

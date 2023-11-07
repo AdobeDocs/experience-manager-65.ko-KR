@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '407'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 3%
 >
 >자세한 내용은 [AEM Mobile On-demand Services 설정](/help/mobile/aem-mobile-setup.md) 을 참조하십시오.
 
-Mobile On-Demand Cloud Services을 구성하려면 **연결 관리** 앱 대시보드에서 타일을 지정합니다.
+Mobile On-Demand Cloud Service을 구성하려면 **연결 관리** 앱 대시보드에서 타일을 지정합니다.
 
 앱 대시보드 및 사용 가능한 타일에 익숙해야 합니다. 다음을 참조하십시오 [AEM Mobile 애플리케이션 대시보드](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 을 참조하십시오.
 
@@ -60,7 +60,7 @@ Mobile On-Demand Cloud Services을 구성하려면 **연결 관리** 앱 대시�
 
 1. 한 번 **장치 ID** 및 **장치 토큰** 이(가) 확인되면 목록에서 온디맨드 프로젝트를 선택합니다.
 
-   클릭 **제출**.
+   **제출**&#x200B;을 클릭합니다.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 

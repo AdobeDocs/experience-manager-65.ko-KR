@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '480'
 ht-degree: 13%
 
 ---
@@ -45,7 +45,7 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
 
 1. 레이아웃 컨테이너의 디자인 대화 상자에서 다음 작업을 수행할 수 있습니다
 
-   * 기존 정책을 선택하거나 컨테이너에 대한 새 정책을 만듭니다.
+   * 기존 정책을 선택하거나 컨테이너에 대한 정책을 만듭니다.
    * 컨테이너에서 허용되는 구성 요소 선택
    * 자산을 컨테이너로 드래그할 때 배치할 기본 구성 요소 정의
 
@@ -55,7 +55,7 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
 
    이렇게 하면 다음 작업을 수행할 수 있습니다.
 
-   * 기존 정책을 선택하거나 컨테이너에 대한 새 정책을 만듭니다.
+   * 기존 정책을 선택하거나 컨테이너에 대한 정책을 만듭니다.
    * 다음과 같은 이 구성 요소를 사용할 때 페이지 작성자가 사용할 수 있는 기능을 정의합니다.
 
       * 허용된 붙여넣기 소스
@@ -73,6 +73,6 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
 
 ## 자세한 내용 {#more-information}
 
-자세한 내용은 작성 문서를 참조하십시오. [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md) 편집 가능한 템플릿에 대한 전체 기술 세부 정보.
+자세한 내용은 작성 문서를 참조하십시오 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md) 편집 가능한 템플릿에 대한 전체 기술 세부 정보.
 
 조사를 원할 수도 있습니다. [핵심 구성 요소](/help/sites-developing/we-retail-core-components.md). 작성 문서 참조 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 기술 개요를 참조하십시오.

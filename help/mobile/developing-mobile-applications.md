@@ -1,16 +1,12 @@
 ---
 title: AEM에서 모바일 애플리케이션 개발
-seo-title: Developing Mobile Applications in AEM
 description: Adobe PhoneGap Enterprise를 사용하여 AEM에서 모바일 애플리케이션 개발을 시작하려면 이 페이지를 따르십시오.
-seo-description: Follow this page to start developing mobile application in AEM using Adobe PhoneGap Enterprise.
-uuid: d8442447-ee04-4bb2-a0d7-17dcc8979dba
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -23,7 +19,7 @@ ht-degree: 1%
 >
 >Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-AEM은 Adobe PhoneGap 및 Adobe 게시 솔루션을 활용하여 다양한 컨텐츠 기반 및 유틸리티 기반 크로스 플랫폼 모바일 애플리케이션을 만들고 관리할 수 있습니다.
+AEM은 Adobe PhoneGap 및 Adobe 게시 솔루션을 사용하여 다양한 컨텐츠와 유틸리티 기반의 크로스 플랫폼 모바일 애플리케이션을 모두 만들고 관리할 수 있습니다.
 
 * 모든 회사의 모바일 앱을 한 곳에서 관리합니다.
 * 프로비전 프로필의 복잡성과 공유를 위해 앱을 빌드하고 업로드하는 추가 노력 없이 개발 및 스테이징 환경에서 앱을 검토합니다.

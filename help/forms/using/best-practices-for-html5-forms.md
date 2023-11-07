@@ -12,9 +12,9 @@ discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ AEM Forms에는 HTML 5 forms라는 구성 요소가 있습니다. 기존 XFA 기
 
 ## 노드는 HTML 5의 통화이며 현명하게 지출하십시오. {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
-일반적으로 XFA 양식에는 여러 요소가 있습니다. 예: 표, 텍스트 필드 및 이미지 모든 요소에는 요소의 동작과 모양을 제어하는 많은 속성이 있습니다. XFA 양식이 HTML5 형식으로 렌더링되면 모든 XFA 요소와 해당 속성이 모델 또는 HTML DOM 노드로 변환됩니다. 이러한 노드는 DOM의 크기와 복잡성을 가중시킵니다. HTML5 양식을 렌더링하기 느리게 만듭니다.
+일반적으로 XFA 양식에는 여러 요소가 있습니다. 예: 표, 텍스트 필드 및 이미지 모든 요소에는 요소의 동작과 모양을 제어하는 몇 가지 속성이 있습니다. XFA 양식이 HTML5 형식으로 렌더링되면 모든 XFA 요소와 해당 속성이 모델 또는 HTML DOM 노드로 변환됩니다. 이러한 노드는 DOM의 크기와 복잡성을 가중시킵니다. HTML5 양식을 렌더링하기 느리게 만듭니다.
 
 브라우저가 학습자 DOM을 렌더링하는 것이 더 쉽습니다. 따라서 XFA 양식에서 다음 최적화를 수행하여 노드 수를 줄일 수 있습니다. 따라서 린 DOM 구조를 생성합니다.
 
@@ -83,4 +83,4 @@ Adobe Experience Manager(AEM) forms를 사용하면 복잡한 트랜잭션을 �
 ## 빠른 참조 카드 {#quick-reference-card}
 
 다음 카드(고해상도 버전을 다운로드하려면 카드를 클릭)를 인쇄하고 빠른 참조를 위해 책상에 보관할 수 있습니다.
-[ ![HTML5 Forms 우수 사례 빠른 참조 카드](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[![HTML5 Forms 우수 사례 빠른 참조 카드](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

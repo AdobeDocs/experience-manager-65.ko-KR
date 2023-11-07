@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ AEM Forms 백업 전략에는 두 가지 유형의 백업이 포함됩니다.
 
 ### AEM Forms 노드 파일 시스템 경로 변경 {#changing-the-aem-forms-node-file-system-paths}
 
-독립형 노드에 대한 파일 시스템 경로를 변경하는 경우 기본 설정, 기타 시스템 구성, 사용자 정의 응용 프로그램 및 배포된 AEM forms 응용 프로그램에서 해당 참조를 업데이트해야 합니다. 반면 클러스터의 경우 모든 노드가 동일한 파일 시스템 경로 구성을 사용해야 합니다. GDS(Global Document Storage) 루트 디렉터리를 설정하고 복구된 데이터베이스와 동기화되는 복구된 GDS의 사본을 가리켜야 합니다. GDS에는 애플리케이션 서버를 다시 시작할 때 유지하려는 데이터가 포함될 수 있으므로 GDS 경로를 설정하는 것이 중요합니다.
+독립형 노드에 대한 파일 시스템 경로를 변경하는 경우 기본 설정, 기타 시스템 구성, 사용자 정의 응용 프로그램 및 배포된 AEM forms 응용 프로그램에서 해당 참조를 업데이트해야 합니다. 반면 클러스터의 경우 모든 노드가 동일한 파일 시스템 경로 구성을 사용해야 합니다. GDS(Global Document Storage) 루트 디렉터리를 설정하고 복구된 데이터베이스와 동기화 중인 복구된 GDS의 사본을 가리켜야 합니다. GDS에는 애플리케이션 서버를 다시 시작할 때 유지하려는 데이터가 포함될 수 있으므로 GDS 경로를 설정하는 것이 중요합니다.
 
 클러스터된 환경에서는 백업 전과 복구 후 저장소의 파일 시스템 경로 구성이 모든 클러스터 노드에 대해 동일해야 합니다.
 

@@ -6,10 +6,10 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2416'
-ht-degree: 17%
+ht-degree: 16%
 
 ---
 
@@ -113,7 +113,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 1. 다음을 클릭합니다. [!DNL Experience Manager] 로고, 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms 검색]**.
 1. 다음에서 **[!UICONTROL Forms 검색]** 페이지, 선택 **[!UICONTROL 에셋 관리자 검색 레일]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL 편집]**.
 1. In the **[!UICONTROL Edit Search Form]** page, drag **[!UICONTROL Options Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
-1. In the **[!UICONTROL Settings]** tab, enter a label and a name for the property. For example, to search assets based on their format, specify a user-friendly name for the label, for example **[!UICONTROL File Type]**. Specify the property based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:format.`
+1. In the **[!UICONTROL Settings]** tab, enter a label and a name for the property. 예를 들어, 해당 형식을 기반으로 하여 에셋을 검색하려면 레이블에 대해 사용자에게 친숙한 이름(예: )을 지정하십시오. **[!UICONTROL 파일 유형]**. Specify the property based on which the search is to be performed in the property field, for example, `jcr:content/metadata/dc:format.`
 1. 다음 중 하나를 수행하십시오.
 
    * 다음에서 **[!UICONTROL 속성 이름]** 필드에서는 옵션에 대한 노드를 정의하고 해당 키-값 쌍을 지정하는 JSON 파일의 경로를 언급합니다.

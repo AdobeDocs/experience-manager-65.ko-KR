@@ -1,20 +1,16 @@
 ---
 title: 사용자 지정 CSS 파일을 사용하여 HTML Forms 렌더링
-seo-title: Rendering HTML Forms Using Custom CSS Files
 description: Forms 서비스를 사용하여 웹 브라우저의 HTTP 요청에 응답하여 사용자 지정 CSS 파일을 참조하여 HTML 양식을 렌더링합니다. Java API 및 웹 서비스 API를 사용하여 CSS 파일을 사용하는 HTML 양식을 렌더링할 수 있습니다.
-seo-description: Use the Forms service to refer to custom CSS files to render HTML forms in response to an HTTP request from a web browser. You can render an HTML form that uses a CSS file using the Java API and Web Service API.
-uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1687'
 ht-degree: 0%
 
 ---
@@ -25,7 +21,7 @@ ht-degree: 0%
 
 Forms 서비스는 웹 브라우저의 HTTP 요청에 응답하여 HTML 양식을 렌더링합니다. HTML 양식을 렌더링할 때 Forms 서비스에서 사용자 지정 CSS 파일을 참조할 수 있습니다. Forms 서비스를 사용하여 HTML 양식을 렌더링할 때 비즈니스 요구 사항을 충족하는 사용자 지정 CSS 파일을 만들고 해당 CSS 파일을 참조할 수 있습니다.
 
-Forms 서비스는 사용자 지정 CSS 파일을 자동으로 구문 분석합니다. 즉, Forms 서비스는 사용자 지정 CSS 파일이 CSS 표준을 준수하지 않는 경우 발생할 수 있는 오류를 보고하지 않습니다. 이 경우 Forms 서비스는 스타일을 무시하고 CSS 파일에 있는 나머지 스타일을 계속 사용합니다.
+Forms 서비스는 사용자 지정 CSS 파일을 자동으로 구문 분석합니다. 즉, Forms 서비스는 사용자 지정 CSS 파일이 CSS 표준을 준수하지 않는 경우 발생할 수 있는 오류를 보고하지 않습니다. 이 경우 Forms 서비스는 스타일을 무시하고 CSS 파일의 나머지 스타일을 계속 사용합니다.
 
 다음 목록은 사용자 지정 CSS 파일에서 지원되는 스타일을 지정합니다.
 
@@ -127,7 +123,7 @@ Forms API(Java)를 사용하여 사용자 지정 CSS 파일을 사용하는 HTML
 
 1. 클라이언트 웹 브라우저에 양식 데이터 스트림 작성
 
-   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 개체 &#39;s `getOutputContent` 메서드를 사용합니다.
+   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 의 오브젝트 `getOutputContent` 메서드를 사용합니다.
    * 의 콘텐츠 유형 가져오기 `com.adobe.idp.Document` 개체 `getContentType` 메서드를 사용합니다.
    * 설정 `javax.servlet.http.HttpServletResponse` 를 호출하여 객체의 콘텐츠 유형 `setContentType` 메서드와 의 콘텐츠 유형 전달 `com.adobe.idp.Document` 개체.
    * 만들기 `javax.servlet.ServletOutputStream` 개체를 사용하여 클라이언트 웹 브라우저에서 `javax.servlet.h\ttp.HttpServletResponse` 개체 `getOutputStream` 메서드를 사용합니다.

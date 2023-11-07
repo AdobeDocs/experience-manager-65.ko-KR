@@ -7,7 +7,7 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 3%
@@ -114,7 +114,7 @@ ht-degree: 3%
 
 ### 샘플 코드: 메시지 수신 알림 {#sample-code-message-received-notification}
 
-소셜 메시징 기능은 예를 들어 작업에 대한 이벤트를 발생시킵니다 `send`, `marking read`, `marking delete`. 이러한 이벤트를 포착하고 이벤트에 포함된 데이터에 대해 조치를 취할 수 있습니다.
+소셜 메시징 기능은 다음과 같은 작업에 대한 이벤트를 발생시킵니다. `send`, `marking read`, `marking delete`. 이러한 이벤트를 포착하고 이벤트에 포함된 데이터에 대해 조치를 취할 수 있습니다.
 
 다음 예제는 이벤트를 수신하는 이벤트 처리기입니다 `message sent` 이벤트를 만들고 을(를) 사용하여 모든 메시지 수신자에게 이메일을 보냅니다. `Day CQ Mail Service`.
 

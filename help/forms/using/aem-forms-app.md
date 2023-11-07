@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2448'
 ht-degree: 2%
 
 ---
@@ -123,7 +123,7 @@ AEM Forms 워크플로가 없는 AEM Forms 서버를 사용하면 앱에서 동�
 
 ## AEM 받은 편지함 및 AEM Forms 앱 기능의 차이점 {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Forms 중심 워크플로우를 시작하는 두 가지 두드러진 방법은 를 사용하는 것입니다 [AEM 받은 편지함](/help/forms/using/manage-applications-inbox.md) 및 AEM Forms 앱. 그러나 AEM Inbox와 AEM Forms 앱의 기능은 다릅니다. AEM 받은 편지함은 [Forms 중심 워크플로](/help/forms/using/aem-forms-workflow.md) 반면에 AEM Forms 앱은 Forms 중심 워크플로와 프로세스 관리 모두에서 작동합니다. AEM Inbox와 AEM Forms 앱 기능의 차이점에 대한 자세한 내용은 [OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심 AEM 워크플로우의 작업 및 기능](capabilities-osgi-jee-workflows.md).
+Forms 중심 워크플로우를 시작하는 두 가지 두드러진 방법은 를 사용하는 것입니다 [AEM 받은 편지함](/help/forms/using/manage-applications-inbox.md) 및 AEM Forms 앱. 그러나 AEM Inbox와 AEM Forms 앱의 기능은 다릅니다. AEM 받은 편지함은 [Forms 중심 워크플로](/help/forms/using/aem-forms-workflow.md) 반면 AEM Forms 앱은 Forms 중심 워크플로와 프로세스 관리 모두에서 작동합니다. AEM Inbox와 AEM Forms 앱 기능의 차이점에 대한 자세한 내용은 [OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심 AEM 워크플로우의 작업 및 기능](capabilities-osgi-jee-workflows.md).
 
 ## 지원되는 양식 {#supported-forms}
 
@@ -218,4 +218,4 @@ MDM을 통해 앱을 배포하는 방법에 대한 자세한 내용은 [AEM Form
 
 * **소스 코드를 사용하여 이전 버전의 앱을 빌드하고 설치하는 경우(iOS 및 Android에 적용 가능)**:
 
-   새 앱을 설치하기 전에 모든 데이터를 AEM Forms 서버와 동기화합니다. 데이터가 동기화된 후 이전 버전의 앱을 제거하고 새 앱을 설치합니다.
+  새 앱을 설치하기 전에 모든 데이터를 AEM Forms 서버와 동기화합니다. 데이터가 동기화된 후 이전 버전의 앱을 제거하고 새 앱을 설치합니다.

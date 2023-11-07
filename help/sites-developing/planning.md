@@ -1,18 +1,14 @@
 ---
 title: 계획
-seo-title: Planning
 description: Adobe Experience Manager 테스트를 계획하기 위해 알아야 할 사항에 대해 알아봅니다.
-seo-description: What you need to know to plan for your test
-uuid: 29b1127a-da85-46ed-98e7-1c983eb40cfe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '975'
 ht-degree: 2%
 
 ---
@@ -37,7 +33,7 @@ ht-degree: 2%
 
 이러한 원칙을 다루는 많은 웹 사이트, 책 및 과정이 있으므로 이 문서에서 자세히 다루지 않습니다.
 
-**피해야 할 가정** - 가장 큰 가정 (정기적으로 수행)은 귀하의 웹 사이트가 매일 수백만 개의 요청을 서비스해야 한다는 것입니다. 특정 상황에서 이는 사실일 수 있지만, 상정할 수는 없다.
+**피해야 할 가정** - 가장 큰 가정은 웹 사이트가 매일 수백만 개의 요청을 서비스해야 한다는 것입니다. 특정 상황에서 이는 사실일 수 있지만, 상정할 수는 없다.
 
 100% 정확도로 향후 숫자를 예측할 수는 없지만 기존 사이트와 경험한 트래픽을 관찰하면 좋은 지표를 얻을 수 있습니다. 그런 다음 예상/트래픽이 증가할 것으로 기대하는 요소에 따라 예상치를 만들 수 있습니다.
 

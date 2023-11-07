@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Content Sync Handler 개발에 대한 다음 지침을 참조하십시오.
 }
 ```
 
-**mobilecontentpackagelistening** 업데이트 요청을 할 serverURL과 주어진 앱의 AEM 콘텐츠 패키지를 나열합니다. 이는 장치의 클라이언트측 js를 사용하여 콘텐츠 업데이트를 요청합니다
+**mobilecontentpackagelistening** 지정된 앱의 AEM 콘텐츠 패키지 및 업데이트 요청을 할 serverURL을 나열합니다. 이는 장치의 클라이언트측 js를 사용하여 콘텐츠 업데이트를 요청합니다
 
 핸들러는 AEM 앱 셸 ContentSync 구성(pge-type=app-instance를 사용하는 노드)에서 사용해야 합니다.
 
@@ -157,7 +157,7 @@ AEM 속성은 &quot;cq&quot;, &quot;sling&quot; 또는 &quot;jcr&quot;로 이름
 
    * 다른 ContentSync 구성
    * 콘텐츠 패키지(phonegap-exportTemplate 속성을 사용하여 ContentSync 구성 찾기)
-   * 모바일 리소스(app-content&#39;s는 해당 리소스 아래에 있으며, 해당 콘텐츠 패키지에 true인 pge-includeInBuild 속성이 있는 경우 phonegap-exportTemplate을 사용하여 ContentSync 구성을 찾습니다.)
+   * 모바일 리소스(app-content의 는 해당 리소스 아래에 있으며, 해당 콘텐츠 패키지에 true인 pge-includeInBuild 속성이 있는 경우 phonegap-exportTemplate을 사용하여 ContentSync 구성을 찾습니다.)
 
 * ***autoCreateFirstUpdateBeforeImport - 부울*** - true인 경우 이니셜을 만듭니다. **업데이트** 한 번 존재하지 않는 경우 가져오기 전 타겟 구성에서
 

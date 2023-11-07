@@ -4,10 +4,10 @@ description: 이 문서에서는 SPA 개념을 소개하고, 작성용 기본 SP
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 71%
+source-wordcount: '1950'
+ht-degree: 66%
 
 ---
 
@@ -44,9 +44,9 @@ SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합
 
 >[!CAUTION]
 >
->이 문서에서는 [WKND Spa 프로젝트 앱](https://github.com/adobe/aem-guides-wknd-spa) 데모용으로만 사용됩니다. 프로젝트 작업에 사용해서는 안 됩니다.
+>이 문서에서는 [WKND Spa 프로젝트 앱](https://github.com/adobe/aem-guides-wknd-spa) 데모용으로만 사용됩니다. 를 프로젝트 작업에 사용하지 마십시오.
 >
->모든 AEM 프로젝트는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용합니다.
+>모든 AEM 프로젝트는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 사용합니다.
 
 ### SPA란 무엇입니까? {#what-is-a-spa}
 
@@ -75,7 +75,7 @@ AEM SPA 편집기를 통해 프론트엔드 개발자가 AEM 사이트에 통합
 **개발자**
 
 * 개발자는 콘텐츠와 프레젠테이션 사이의 문제를 명확하게 구분하려고 합니다.
-* 명확하게 구분하여 시스템을 좀 더 많이 확장 가능하게 하고 독립적인 프론트엔드를 개발할 수 있습니다.
+* 깔끔한 분리를 통해 시스템을 보다 확장 가능하고 독립적인 프론트엔드 개발을 가능하게 합니다.
 
 ### SPA는 어떻게 작동합니까? {#how-does-a-spa-work}
 
@@ -97,7 +97,7 @@ SPA의 기본 아이디어는 서버 호출로 인한 지연을 최소화하기 
 
 ## SPA를 통한 콘텐츠 편집 경험 {#content-editing-experience-with-spa}
 
-AEM SPA 편집기를 활용하도록 SPA을 빌드하면 콘텐츠 작성자는 콘텐츠를 편집하고 만들 때 차이점을 느끼지 않습니다. 일반적인 AEM 기능을 사용할 수 있고 작성자의 워크플로를 변경할 수 없습니다.
+AEM SPA 편집기를 사용하도록 SPA을 빌드하면 콘텐츠 작성자는 콘텐츠를 편집하고 만들 때 차이를 알지 못합니다. 일반적인 AEM 기능을 사용할 수 있고 작성자의 워크플로를 변경할 수 없습니다.
 
 1. AEM에서 WKND SPA Project 앱을 편집합니다.
 
@@ -109,7 +109,7 @@ AEM SPA 편집기를 활용하도록 SPA을 빌드하면 콘텐츠 작성자는 
 
    ![2단계](assets/spa-walkthrough-step-2.png)
 
-1. AEM 내에서 콘텐츠를 정상적으로 편집하고 변경 사항이 지속되고 있는지 확인합니다.
+1. AEM 내에서 콘텐츠를 정상적으로 편집합니다. 변경 사항은 지속됩니다.
 
    ![3단계](assets/spa-walkthrough-step-3.png)
 
@@ -183,7 +183,7 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
 1. 다음으로 전환 **네트워크** 개발자 도구의 탭을 탭하고 페이지를 다시 로드합니다.
 
-   이미지 요청을 무시하는 경우 페이지에 대해 로드된 기본 리소스는 페이지 자체, CSS, React JavaScript, 해당 종속성 및 페이지에 대한 JSON 데이터입니다.
+   이미지 요청을 무시하는 경우 페이지에 대해 로드되는 기본 리소스는 페이지 자체, CSS, React JavaScript, 해당 종속성 및 페이지에 대한 JSON 데이터입니다.
 
    ![5단계](assets/spa-walkthrough-step-1-5.png)
 
@@ -193,9 +193,9 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
    ![6단계](assets/spa-walkthrough-step-1-6.png)
 
-   AEM SPA 편집기는 [AEM Content Services](/help/assets/content-fragments/content-fragments.md)를 활용하여 페이지 전체 콘텐츠를 JSON 모델로 제공합니다.
+   AEM SPA 편집기는 [AEM Content Services](/help/assets/content-fragments/content-fragments.md)를 사용하여 페이지 전체 콘텐츠를 JSON 모델로 제공합니다.
 
-   특정 인터페이스를 구현하면 Sling 모델은 SPA에 필요한 정보를 제공합니다. JSON 데이터 게재가 각 구성 요소로 하향 위임됩니다(페이지에서 단락과 구성 요소로).
+   특정 인터페이스를 구현하면 Sling 모델은 SPA에 필요한 정보를 제공합니다. JSON 데이터 게재가 각 구성 요소로 하향 위임됩니다(페이지 - 단락, 구성 요소 등).
 
    각 구성 요소는 제공되는 내용과 렌더링 방법을 선택합니다(HTL이 포함된 서버측 또는 React가 포함된 클라이언트측). 이 문서는 React를 통해 클라이언트측 렌더링에 중점을 둡니다.
 
@@ -213,7 +213,7 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
 ### SPA 편집기와의 상호 작용 {#interaction-with-the-spa-editor}
 
-샘플 WKND SPA Project 애플리케이션을 통해 게시될 때 앱의 작동 및 로드 방식을 분명히 파악하고 JSON 콘텐츠 게재와 리소스의 비동기식 로드에 콘텐츠 서비스를 활용합니다.
+샘플 WKND SPA Project 애플리케이션을 사용하는 경우 JSON 콘텐츠 전달 및 비동기 리소스 로드를 위한 콘텐츠 서비스를 사용하여 게시된 경우 앱이 어떻게 동작하며 로드되는지 명확합니다.
 
 또한 콘텐츠 작성자는 SPA 편집기를 사용하여 AEM 내에서 콘텐츠를 원활하게 생성할 수 있습니다.
 
@@ -225,7 +225,7 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
 1. 브라우저의 기본 제공 개발자 도구를 사용하여 페이지 콘텐츠를 검사합니다. 선택 도구를 사용하여 페이지에서 편집 가능한 구성 요소를 선택하고 요소 세부 정보를 조회합니다.
 
-   구성 요소에는 새 데이터 속성 `data-cq-data-path`이 있습니다.
+   구성 요소에 새 데이터 속성이 있습니다. `data-cq-data-path`.
 
    ![2단계](assets/spa-walkthrough-step-2-2.png)
 
@@ -235,7 +235,7 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
    이 경로를 통해 각 구성 요소의 편집 컨텍스트 구성 오브젝트를 검색하고 연결할 수 있습니다.
 
-   이는 편집기가 SPA 내에서 편집 가능한 구성 요소로 인식하는 데 필요한 유일한 마크업 속성입니다. 이 속성을 기반으로 SPA 편집기는 구성 요소와 연결된 편집 가능한 구성을 결정하므로 올바른 프레임, 도구 모음 등이 로드됩니다.
+   이는 편집기가 SPA 내에서 편집 가능한 구성 요소로 인식하는 데 필요한 유일한 마크업 속성입니다. 이 속성을 기반으로 SPA 편집기는 올바른 프레임, 도구 모음 등이 로드되도록 구성 요소와 연결된 편집 가능한 구성을 결정합니다.
 
    일부 특정 클래스 이름이 플레이스홀더 표기 및 자산 드래그 앤 드롭 기능에 추가되기도 합니다.
 
@@ -252,4 +252,4 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
 * [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md) AEM에서 SPA 편집기로 작동하도록 기본 SPA을 빌드하는 방법을 보여 줍니다
 * [SPA 편집기 개요](/help/sites-developing/spa-overview.md)는 AEM과 SPA 간의 커뮤니케이션 모델에 대해 자세히 설명합니다.
-* [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md)에서는 프론트엔드 개발자를 AEM용 SPA 개발에 유도하는 방법과 SPA가 AEM의 아키텍처와 상호 작용하는 방법에 대해 설명합니다.
+* [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md)에서는 프론트엔드 개발자를 AEM용 SPA 개발에 유도하는 방법 및 SPA가 AEM의 아키텍처와 상호 작용하는 방법에 대해 설명합니다.

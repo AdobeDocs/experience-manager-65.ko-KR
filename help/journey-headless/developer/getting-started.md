@@ -2,10 +2,10 @@
 title: AEM Headless 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3038'
-ht-degree: 97%
+source-wordcount: '3032'
+ht-degree: 95%
 
 ---
 
@@ -81,7 +81,7 @@ AEM의 Headless 기능은 몇 가지 주요 기능을 기반으로 합니다. �
 * GraphQL API를 사용하여 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 생성할 수 있습니다.
 * Assets REST API를 사용하면 콘텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
-AEM Headless 여정 후반부에서 해당 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 추가 설명서는 아래 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
+AEM Headless 여정 후반부에서 해당 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 [추가 리소스](#additional-resources) 추가 설명서에 대해서는 아래 섹션 을 참조하십시오.
 
 ## Headless 통합 수준 {#integration-levels}
 
@@ -113,13 +113,13 @@ AEM의 콘텐츠를 기존 외부 서비스로 제공하는 것이 최소 기본
 
 ### 단일 페이지 애플리케이션(SPA) 등 Headless 콘텐츠는 아직 외부에서 사용되지 않았습니다. {#do-not-have-a-spa}
 
-AEM에서 콘텐츠를 Headless 방식으로 사용하는 새 SPA를 만드는 것이 목표라면 콘텐츠 조각 기능을 사용하여 Headless 콘텐츠를 관리하고 AEM의 SPA 편집기 프레임워크로 SPA를 빌드할 수도 있습니다.
+AEM의 콘텐츠를 헤드리스 소비하는 SPA을 만드는 것이 목표라면 콘텐츠 조각과 같은 기능을 사용하여 헤드리스 콘텐츠를 관리하고 AEM SPA Editor 프레임워크를 사용하여 SPA을 구축할 수도 있습니다.
 
 SPA 편집기를 통해 SPA는 AEM에서 콘텐츠를 사용할 뿐만 아니라 콘텐츠 작성자에 의해 AEM 내부에서 완전한 편집이 가능하므로 AEM 내에서 Headless를 유연하게 게재하고 상황에 맞게 편집할 수 있습니다.
 
 ## 요구 사항 및 사전 요구 사항 {#requirements-prerequisites}
 
-AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지 요구 사항이 있습니다.
+Headless AEM 프로젝트를 시작하기 전에 몇 가지 요구 사항이 있습니다.
 
 ### 지식 {#knowledge}
 
@@ -175,9 +175,9 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 * 다른 언어나 지역 특성에 적응할 수 있는 언어가 필요합니까?
 * 로케일에 따라 달라지는 리치 미디어 콘텐츠(예: 이미지나 비디오 등)가 필요합니까?
 
-콘텐츠 업데이트 워크플로를 명확히 알립니다. 시스템이 지원해야 하는 승인 프로세스는 무엇입니까? AEM 워크플로를 활용하여 이 프로세스를 자동화할 수 있습니까?
+콘텐츠 업데이트 워크플로를 명확히 알립니다. 시스템이 지원해야 하는 승인 프로세스는 무엇입니까? AEM 워크플로를 사용하여 이 프로세스를 자동화할 수 있습니까?
 
-[콘텐츠 계층](#content-hierarchy)을 활용하여 번역을 보다 쉽게 할 수 있습니다.
+[콘텐츠 계층](#content-hierarchy)을 사용하여 번역을 보다 쉽게 할 수 있습니다.
 
 AEM Headless 번역 여정 링크를 포함하여 AEM 워크플로 및 번역 도구에 대한 추가 설명서는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 

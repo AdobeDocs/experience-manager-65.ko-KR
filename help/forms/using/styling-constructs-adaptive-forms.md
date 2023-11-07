@@ -10,16 +10,16 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2365'
-ht-degree: 4%
+source-wordcount: '2363'
+ht-degree: 6%
 
 ---
 
 # 적응형 양식에 대한 스타일 구성{#styling-constructs-for-adaptive-forms}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -27,7 +27,7 @@ CSS 및 LESS 프레임워크에 대한 지식.
 
 ## 사용자 정의 가능한 사항 {#what-can-be-customized}
 
-이 문서에는 적응형 양식의 공개적으로 사용 가능한 css 클래스가 나열되어 있습니다. 이러한 클래스를 활용하여 적응형 양식의 다양한 구성 요소에 스타일을 지정할 수 있습니다. 경고를 표시하는 대화 상자 및 상태 표시줄과 같은 작성 구성 요소의 스타일은 이 문서의 범위를 벗어납니다. 다음 스타일 구문을 사용하여 구성 요소의 스타일을 지정할 수 없는 경우에만 스타일을 만듭니다(CSS 또는 그 이하 사용). [테마 편집기](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+이 문서에는 적응형 양식의 공개적으로 사용 가능한 css 클래스가 나열되어 있습니다. 이러한 클래스를 사용하여 적응형 양식의 다양한 구성 요소에 스타일을 지정할 수 있습니다. 경고를 표시하는 대화 상자 및 상태 표시줄과 같은 작성 구성 요소의 스타일은 이 문서의 범위를 벗어납니다. 다음 스타일 구문을 사용하여 구성 요소의 스타일을 지정할 수 없는 경우에만 스타일을 만듭니다(CSS 또는 그 이하 사용). [테마 편집기](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## 적응형 양식에서 스타일 맞춤화 {#customizing-styles-in-adaptive-forms}
 
@@ -944,7 +944,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 위쪽 모두)와 마법사 �
  </tbody>
 </table>
 
-패널 노드는 탐색기와 콘텐츠로 나뉩니다. 거기 `` `` 콘텐츠에 대한 별도의 스타일 구성 요소가 없습니다. 설명된 변수는 콘텐츠뿐만 아니라 navigator에도 적용됩니다.
+패널 노드는 탐색기와 콘텐츠로 나뉩니다. 거기 `` `` 콘텐츠에 대한 별도의 스타일 구성 요소가 없습니다. 설명된 변수는 네비게이터 및 콘텐츠에 적용됩니다.
 
 맨 위 패널(RootPanel)에 이 클래스가 없습니다.
 

@@ -1,18 +1,14 @@
 ---
 title: 구독 관리
-seo-title: Managing Subscriptions
 description: 사용자는 AEM 웹 페이지에서 사용되는 양식 구성 요소를 사용하여 이메일 서비스 공급자의 메일링 목록을 구독하라는 요청을 받을 수 있습니다. 전자 메일 서비스 메일링 목록 구독을 위한 가입 양식이 포함된 AEM 페이지를 준비하려면 잠재적 구독자가 방문할 AEM 페이지에 해당 서비스 구성을 적용해야 합니다.
-seo-description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
-uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -72,7 +68,7 @@ AEM 페이지를 구성하려면 다음 작업을 수행하십시오.
 게시 인스턴스의 등록 양식을 통해 이메일 서비스 가입 및 가입 해제가 작동하려면 다음 단계를 수행해야 합니다.
 
 1. 작성자 인스턴스에서 패키지 관리자로 이동합니다.
-1. 새 패키지를 만듭니다. 필터를 다음으로 설정 `/etc/key`.
+1. 패키지를 만듭니다. 필터를 다음으로 설정 `/etc/key`.
 1. 패키지를 빌드하고 다운로드합니다.
 1. 게시 인스턴스의 패키지 관리자로 이동하여 이 패키지를 업로드합니다.
 1. Publish osgi 콘솔로 이동하고 이름이 지정된 번들을 다시 시작합니다. **Adobe Granite Crypto 지원**.

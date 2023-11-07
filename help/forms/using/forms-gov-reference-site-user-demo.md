@@ -4,9 +4,9 @@ description: 가상 사용자 및 그룹을 사용하여 We.Gov 및 We.Finance �
 contentOwner: anujkapo
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2475'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ We.Gov 데모 패키지는 다음과 같은 기본 제공 가상 사용자와 �
 
 ## Automated forms conversion(카밀라) {#automated-forms-conversion}
 
-**이 섹션**: Camila the CX Lead 에는 종이 문서 기반 프로세스의 일부로 사용된 기존 PDF 기반 양식이 있습니다. 현대화 노력의 일환으로 Camila는 이 PDF 양식을 사용하여 자동으로 새로운 최신 적응형 Forms을 만들려고 합니다.
+**이 섹션**: Camila the CX Lead 에는 종이 문서 기반 프로세스의 일부로 사용된 기존 PDF 기반 양식이 있습니다. 현대화 노력의 일환으로 Camila는 이 PDF 양식을 사용하여 자동으로 최신 적응형 Forms을 만들려고 합니다.
 
 ### Automated forms conversion - We.Gov (카밀라) {#automated-forms-conversion-wegov}
 

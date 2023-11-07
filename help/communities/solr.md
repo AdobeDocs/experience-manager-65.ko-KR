@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1422'
 ht-degree: 2%
 
 ---
@@ -110,7 +110,7 @@ ZooKeeper에 이미 업로드된 구성에 컬렉션을 연결합니다.
 
 AEM Communities용 다국어 검색(MLS)은 영어를 포함하여 지원되는 모든 언어에서 향상된 검색을 제공하기 위해 Solr 플랫폼용으로 빌드되었습니다.
 
-AEM Communities용 MLS는 표준 MLS 또는 고급 MLS로 사용할 수 있습니다. 표준 MLS는 Solr 구성 설정만 포함하며 플러그인 또는 리소스 파일은 제외합니다. 고급 MLS는 보다 포괄적인 솔루션이며 Solr 구성 설정뿐만 아니라 플러그인 및 관련 리소스도 포함합니다
+AEM Communities용 MLS는 표준 MLS 또는 고급 MLS로 사용할 수 있습니다. 표준 MLS는 Solr 구성 설정만 포함하며 플러그인 또는 리소스 파일은 제외합니다. 고급 MLS는 보다 포괄적인 솔루션이며 Solr 구성 설정, 플러그인 및 관련 리소스를 포함합니다
 
 표준 MLS에는 다음 언어에 대한 콘텐츠 검색 기능이 개선되었습니다.
 
@@ -187,8 +187,8 @@ Solr 5.x용 표준 MLS 파일(schema.xml, solrconfig.xml)입니다.
 
       * Solr4의 경우: 복사 `solr-install-dir/example/solr/collection1/conf/`
       * Solr5: 복사 `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
-   1. 다운로드한 항목 복사 **schema.xml** 및 **solrconfig.xml** 끝 *new-config-dir* 기존 파일을 덮어씁니다.
 
+   1. 다운로드한 항목 복사 **schema.xml** 및 **solrconfig.xml** 끝 *new-config-dir* 기존 파일을 덮어씁니다.
 
 1. [새 구성 업로드](#upload-a-configuration-to-zookeeper) 주키퍼에게.
 1. [컬렉션 만들기](#create-a-collection) 샤드 수, 복제본 수 및 구성 이름 등 필요한 매개 변수 지정.
@@ -244,15 +244,15 @@ SolrCloud 또는 독립 실행형 모드에 대한 설치를 시작하려면 다
 
       * 과 같은 `solr-install-dir/myconfig/`
       * 하위 폴더 만들기 `stopwords/` 및 `lang/`
+
    1. 기존 Solr 구성 디렉터리의 내용을 *new-config-dir*
 
       * Solr4: 복사 `solr-install-dir/example/solr/collection1/conf/`
       * Solr5: 복사 `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
+
    1. 추출된 항목 복사 **schema.xml** 및 **solrconfig.xml** 끝 *new-config-dir* 기존 파일을 덮어씁니다.
    1. Solr5: 복사 `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` 끝 `new-config-dir/lang/`
    1. 추출된 항목 복사 **중지 단어/** 폴더 위치: *new-config-dir* 의 결과로 `new-config-dir/stopwords/*.txt`
-
-
 
 1. [새 구성 업로드](#upload-a-configuration-to-zookeeper) ZooKeeper에게
 1. 새 항목 복사 **프로필/** 폴더 ...
@@ -296,19 +296,19 @@ SolrCloud 또는 독립 실행형 모드에 대한 설치를 시작하려면 다
 
    * -d solrhome
 
-      Solr 설치 디렉토리
+     Solr 설치 디렉토리
 
    * -c collectionpath
 
-      Solr의 컬렉션 경로
+     Solr의 컬렉션 경로
 
    * --도움말
 
-      인쇄 명령줄 옵션
+     인쇄 명령줄 옵션
 
    * -v [4|5]
 
-      Solr 버전 설정
+     Solr 버전 설정
 
 * Solr 4.10.4의 예:
 

@@ -7,9 +7,9 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1351'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 
 1. 다음으로 이동 `https://'[server]:[port]'/[ContextPath]/crx/de` 관리자로 로그인합니다.
 
-1. 앱 폴더에서 다음 단계를 사용하여 선택 폴더에 있는 항목 폴더와 유사한 경로/구조를 갖는 항목이라는 폴더를 만듭니다.
+1. 앱 폴더에서 다음 단계를 사용하여 선택 폴더의 항목 폴더와 유사한 경로/구조를 가진 items라는 폴더를 만듭니다.
 
    1. 마우스 오른쪽 단추 클릭 **개 항목** 다음 경로에 있는 폴더를 선택하고 **오버레이 노드**:
 
@@ -136,7 +136,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
         </tbody>
        </table>
 
-1. 앱 폴더에서 다음 단계를 사용하여 관리 폴더에 있는 항목 폴더와 유사한 경로/구조로 js라는 폴더를 만듭니다.
+1. 앱 폴더에서 다음 단계를 사용하여 관리 폴더의 항목 폴더와 유사한 경로/구조로 js라는 폴더를 만듭니다.
 
    1. 마우스 오른쪽 단추 클릭 **js** 다음 경로에 있는 폴더를 선택하고 **오버레이 노드**:
 
@@ -226,7 +226,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 
       위의 코드는 이 절차에서 만든 명령의 문자 특정 작업 처리를 위한 것입니다. 다른 에셋을 처리하는 경우 JavaScript 코드를 수정합니다.
 
-1. 다음 단계를 사용하여 apps 폴더에서 actionhandlers 폴더에 있는 items 폴더와 유사한 경로/구조를 가진 items라는 폴더를 만듭니다.
+1. 다음 단계를 사용하여 apps 폴더에서 actionhandlers 폴더의 items 폴더와 유사한 경로/구조를 가진 items라는 폴더를 만듭니다.
 
    1. 마우스 오른쪽 단추 클릭 **개 항목** 다음 경로에 있는 폴더를 선택하고 **오버레이 노드**:
 

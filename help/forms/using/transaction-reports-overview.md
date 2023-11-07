@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b2c09e6b-a1d8-4b30-af2c-988442a3a986
 docset: aem65
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -40,7 +40,7 @@ PDF 양식 제출, 에이전트 UI를 사용하여 대화형 통신 미리 보�
 
 ## 지원되는 토폴로지 {#supported-topology}
 
-거래 보고서는 OSGi 환경의 AEM Forms에서만 사용할 수 있습니다. 작성자-게시, 작성자-처리-게시 및 처리 토폴로지만 지원합니다. 토폴로지 예제는 을 참조하십시오. [AEM Forms의 아키텍처 및 배포 토폴로지](../../forms/using/transaction-reports-overview.md).
+거래 보고서는 OSGi 환경의 AEM Forms에서만 사용할 수 있습니다. 작성자-게시, 작성자-처리-게시 및 처리 토폴로지만 지원합니다. 예를 들어 토폴로지는 [AEM Forms의 아키텍처 및 배포 토폴로지](../../forms/using/transaction-reports-overview.md).
 
 트랜잭션 수는 게시 인스턴스에서 작성자 또는 처리 인스턴스로 역복제됩니다. 표시된 작성자-게시 토폴로지는 아래에 표시됩니다.
 

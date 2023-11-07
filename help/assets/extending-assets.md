@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer
 feature: Developer Tools
 exl-id: 0271c528-23b0-4a3a-b5e8-5baf6cdeecc7
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '250'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 에셋 편집기는 Adobe Enterprise Manager 웹 사이트 사용자가 저장소의 디지털 에셋을 찾고, 보고, 조작하는 데 사용하는 기본 액세스 지점입니다.
 
-(으)로 [!DNL Experience Manager] 개발자는 다양한 방식으로 에셋 편집기를 사용자 정의 및 확장하여 사용자에게 특별히 맞춤화된 인터페이스와 기능 세트를 제공할 수 있습니다.
+(으)로 [!DNL Experience Manager] 개발자는 여러 가지 방법으로 에셋 편집기를 사용자 지정 및 확장하여 사용자에게 특별히 맞춤화된 인터페이스와 기능 세트를 제공할 수 있습니다.
 
 기능의 다음 측면을 사용자 정의하거나 개선할 수 있습니다.
 

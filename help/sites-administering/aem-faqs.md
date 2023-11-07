@@ -2,9 +2,9 @@
 title: AEM FAQ
 description: 이러한 FAQ를 사용하여 AEM의 일반적인 워크플로 또는 문제를 이해, 구성 및 해결할 수 있습니다.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1085'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ### 바이너리 없는 배포를 구성하는 방법 {#how-do-i-configure-binary-less-distribution}
 
-공유 데이터 저장소를 통한 배포에 대해 바이너리 없는 배포가 지원되며 저장소 기반 배포 패키지 내보내기(팩토리 PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) 패키지 빌더.
+공유 데이터 저장소 배포에 대해 바이너리 없는 배포가 지원되며 저장소 기반 배포 패키지 내보내기(팩토리 PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) 패키지 빌더.
 
 바이너리 없음 모드가 활성화되면 배포된 콘텐츠 패키지에 실제 바이너리가 아닌 바이너리에 대한 참조가 포함됩니다.
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 
 예를 들어 다음 위치에 언어 루트 만들기 `/content/geometrixx` (으)로 이름 포함 `fr_LU` (프랑스어(룩셈부르크)로 제목). 그런 다음 참조 패널에서 페이지의 언어 사본을 만들고 다음으로 이동합니다. `Create structure only` 의 옵션 `Create & Translate`. 마지막으로 번역 프로젝트를 만든 다음 번역 작업에 언어 사본을 추가합니다.
 
-자세한 내용은 아래 추가 리소스를 참조하십시오.
+자세한 내용은 아래의 추가 리소스를 참조하십시오.
 
 * [번역을 위한 콘텐츠 준비](/help/sites-administering/tc-prep.md)
 * [번역 프로젝트 관리](/help/sites-administering/tc-manage.md)
@@ -60,13 +60,13 @@ Adobe Experience Manager(AEM) 6.4는 SSL 마법사와 함께 제공되며 Jetty 
 
 기본적으로 SSL을 활성화하려면 다음을 참조하십시오 [기본적으로 SSL](/help/sites-administering/ssl-by-default.md).
 
-#### 모바일 앱에서 AEM의 Content Services를 사용할 때 권장되는 아키텍처인 React Native는 무엇입니까? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### 모바일 앱에서 AEM Content Services를 사용할 때 권장되는 아키텍처인 React Native는 무엇입니까? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 컨텐츠 서비스는 Sling 모델을 기반으로 하며, AEM 개발자는 내보내는 각 구성 요소에 대해 Sling 모델 pojo를 제공해야 합니다.
 
 React 애플리케이션에서 AEM 콘텐츠 서비스를 사용하는 방법을 이해하려면 다음을 참조하십시오. [AEM Content Services 시작](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/content-services-tutorial-use.html) 튜토리얼.
 
-또한 개발자가 구성 요소 트리를 내보내려는 경우 `ComponentExporter` 및 `ContainerExporter` 인터페이스 및 `ModelFactory` 를 클릭하여 하위 컴포넌트를 반복하고 해당 모델 표현을 반환합니다. 아래 리소스를 참조하십시오.
+또한 개발자가 구성 요소 트리를 내보내려는 경우 `ComponentExporter` 및 `ContainerExporter` 인터페이스 및 사용 `ModelFactory` 를 클릭하여 하위 컴포넌트를 반복하고 해당 모델 표현을 반환합니다. 아래 리소스를 참조하십시오.
 
 [1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
@@ -78,7 +78,7 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수
 
 #### AEM 6.4로 업그레이드하는 주요 기능을 강조 표시하는 훌륭한 리소스가 있습니까? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
-다음을 참조하십시오. [AEM 업그레이드 이유 이해하기](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) 최신 버전의 Adobe Experience Manager으로 업그레이드하는 것을 고려하는 고객을 위한 주요 기능에 대한 높은 수준의 분류를 설명합니다.
+다음을 참조하십시오 [AEM 업그레이드 이유 이해하기](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) 최신 버전의 Adobe Experience Manager으로 업그레이드하는 것을 고려하는 고객을 위한 주요 기능에 대한 높은 수준의 분류를 설명합니다.
 
 ## 자산 {#assets}
 
@@ -103,13 +103,13 @@ OSGi 구성 요소 비활성화기를 비활성화할 수 있습니다. 이 서�
 
 #### Admin Console을 사용자 지정하는 방법 {#how-to-customize-admin-consoles}
 
-AEM은 작성 인스턴스의 콘솔 및 페이지 작성 기능을 사용자 지정할 수 있는 다양한 메커니즘을 제공합니다. 사용자 지정 콘솔을 만들고 콘솔의 기본 보기를 맞춤화하는 방법에 대해 알아보려면 을 참조하십시오. [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md).
+AEM은 작성 인스턴스의 콘솔 및 페이지 작성 기능을 사용자 지정할 수 있는 다양한 메커니즘을 제공합니다. 사용자 지정 콘솔을 만들고 콘솔의 기본 보기를 사용자 지정하는 방법에 대한 자세한 내용은 [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md).
 
 #### CoralUI 2와 CoralUI 3 기반 구성 요소의 차이점은 무엇입니까? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
 Granite UI Foundation의 새 슬링 구성 요소 세트는 Coral3용으로 만들어졌으며 아래에 있습니다. [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) CoralUI 2 기반 구성 요소에 대한 세트와 CoralUI 3 기반 구성 요소에 대한 세트가 있습니다. 새 세트는 이전 세트의 복사-붙여넣기가 아니라 정리됩니다(예: 스트리밍, 더 이상 사용되지 않는 기능 제거). 따라서 페이지는 CoralUI 3 기반 또는 CoralUI 2 기반 세트만 사용하는 것이 좋습니다.
 
-자세한 내용은 다음을 참조하십시오. [CoralUI 3 기반으로 마이그레이션 안내서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+자세한 내용은 [CoralUI 3 기반으로 마이그레이션 안내서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 #### AEM Assets에서 검색 구성 요소를 사용자 지정하는 방법 {#how-to-customize-the-search-component-in-aem-assets}
 

@@ -8,16 +8,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 27%
+source-wordcount: '760'
+ht-degree: 25%
 
 ---
 
 # 페이지 속성 편집{#editing-page-properties}
 
-페이지에 필요한 속성을 정의할 수 있습니다. 이러한 속성은 페이지의 특성에 따라 다를 수 있습니다. 예를 들어 일부 페이지는 Live Copy에 연결되어 있을 수 있지만 어떤 페이지는 연결되지 않고 Live Copy 정보를 적절하게 사용할 수 있습니다.
+페이지에 필요한 속성을 정의할 수 있습니다. 이러한 속성은 페이지의 특성에 따라 다를 수 있습니다. 예를 들어 일부 페이지는 Live Copy에 연결되어 있을 수 있지만 다른 페이지는 연결되어 있지 않고 Live Copy 정보를 적절하게 사용할 수 있습니다.
 
 ## 페이지 속성 {#page-properties}
 
@@ -53,7 +53,7 @@ ht-degree: 27%
 
 * **탐색 제목**
 
-  탐색에서 사용할 별도의 제목을 지정할 수 있습니다(예: 간결하게 나타내고자 하는 경우). 비어 있는 경우 **제목** 이 사용됩니다.
+  탐색에서 사용할 별도의 제목을 지정할 수 있습니다(예: 간결하게 나타내고자 하는 경우). 비어 있는 경우, **제목**&#x200B;이 사용됩니다.
 
 * **소제목**
 

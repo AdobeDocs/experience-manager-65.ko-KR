@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2784'
+source-wordcount: '2793'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 2%
    * 콘텐츠 조각 모델은 콘텐츠 조각을 만들 때 콘텐츠 조각의 구조를 정의합니다.
    * 조각이 모델을 참조하므로 모델 변경 사항은 모든 종속 조각에 영향을 줄 수 있습니다.
    * 모델은 데이터 유형을 기반으로 합니다.
-   * 새 변형 등을 추가하는 함수는 적절하게 조각을 업데이트해야 합니다.
+   * 새 변형을 추가하는 기능 등은 조각을 적절하게 업데이트해야 합니다.
 
   >[!CAUTION]
   >
@@ -62,7 +62,7 @@ ht-degree: 2%
    * 간단한 콘텐츠 조각을 정의하는 데 사용됩니다.
    * 템플릿은 콘텐츠 조각을 만들 때 콘텐츠 조각의 (기본, 텍스트 전용) 구조를 정의합니다.
    * 템플릿이 작성되면 조각에 복사됩니다. 따라서 템플릿에 대한 추가 변경 사항은 기존 조각에 반영되지 않습니다.
-   * 새 변형 등을 추가하는 함수는 적절하게 조각을 업데이트해야 합니다.
+   * 새 변형을 추가하는 기능 등은 조각을 적절하게 업데이트해야 합니다.
    * [콘텐츠 조각 템플릿](/help/sites-developing/content-fragment-templates.md) AEM 에코시스템 내의 다른 템플릿 메커니즘(예: 페이지 템플릿 등)과 다른 방식으로 작동합니다. 따라서 이러한 요소는 별도로 고려되어야 합니다.
    * 템플릿을 기반으로 하는 경우 콘텐츠의 MIME 유형이 실제 콘텐츠에서 관리됩니다. 즉, 각 요소 및 변형은 서로 다른 MIME 유형을 가질 수 있습니다.
 
@@ -72,7 +72,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * 컨텐츠 조각은 에셋입니다.
 * 기존 에셋 기능을 사용합니다.
-* Assets(관리 콘솔 등)와 완전히 통합됩니다.
+* Assets는 Assets(관리 콘솔 등)와 완전히 통합됩니다.
 
 #### 자산에 구조화된 컨텐츠 조각 매핑 {#mapping-structured-content-fragments-to-assets}
 
@@ -138,7 +138,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 * 또한 출력을 제한하기 위해 단락 범위를 선택할 수 있습니다. 예를 들어 다중 열 출력에 사용할 수 있습니다.
 * 구성 요소는 다음을 허용합니다. [중간 콘텐츠](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-   * 여기에서 구성 요소를 사용하여 다른 에셋(이미지 등)을 배치할 수 있습니다 참조된 조각의 단락 사이.
+   * 여기에서 구성 요소를 사용하여 참조된 조각의 단락 사이에 다른 에셋(이미지 등)을 배치할 수 있습니다.
    * 중간 콘텐츠 의 경우 다음을 수행해야 합니다.
 
       * 참조가 불안정할 수 있습니다. 중간 콘텐츠(페이지 작성 시 추가됨)는 옆에 있는 단락에 고정 관계가 없으며, 중간 콘텐츠의 위치가 상대 위치를 잃을 수 있기 전에 콘텐츠 조각 편집기에 새 단락을 삽입합니다
@@ -182,7 +182,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * 여러 요소의 출력이 지원되는 경우(를 사용하여) `elementNames` 여러 요소를 지정하려면 실제 표시 모드를 속성으로 정의합니다 `displayMode`:
 
-   * 값이 인 경우 `singleText` (그리고 구성된 요소가 하나뿐임) 그러면 요소는 중간 컨텐츠, 레이아웃 지원 등이 있는 텍스트로 렌더링됩니다. 단일 요소만 렌더링되는 조각의 기본값입니다.
+   * 값이 인 경우 `singleText` (그리고 구성된 요소가 하나만 있음), 요소는 중간 컨텐츠, 레이아웃 지원 등이 있는 텍스트로 렌더링됩니다. 단일 요소만 렌더링되는 조각의 기본값입니다.
    * 그렇지 않으면 훨씬 더 간단한 접근 방식(&quot;양식 보기&quot;라고 할 수 있음)이 사용됩니다. 여기에서는 중간 콘텐츠가 지원되지 않으며 조각 콘텐츠가 &quot;있는 그대로&quot; 렌더링됩니다.
 
 * 조각이 다음에 대해 렌더링되는 경우 `displayMode` == `singleText` (암시적 또는 명시적으로) 다음 추가 속성이 적용됩니다.
@@ -254,7 +254,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * **조각 템플릿** ([조각 템플릿](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-  사용 `FragmentTemplate.createFragment()` 새 조각을 만드는 데 사용됩니다.
+  사용 `FragmentTemplate.createFragment()` 조각을 만드는 데 사용됩니다.
 
   ```
   Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -492,9 +492,9 @@ if (fragmentResource != null) {
 }
 ```
 
-### 예제: 새 컨텐츠 조각 만들기 {#example-creating-a-new-content-fragment}
+### 예제: 컨텐츠 조각 만들기 {#example-creating-a-new-content-fragment}
 
-프로그래밍 방식으로 새 콘텐츠 조각을 만들려면 다음을 사용해야 합니다.
+프로그래밍 방식으로 콘텐츠 조각을 만들려면 다음을 사용해야 합니다.
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 

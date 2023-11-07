@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1765'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
       * [온프레미스](#on-premise)
       * [Cloud Manager를 사용한 Managed Services](#managed-services-using-cloud-manager)
 
-* [시작하기](#getting-started)
+* [시작](#getting-started)
 
    * [사전 요구 사항](#prerequisites)
    * [소프트웨어 가져오기](#getting-the-software)
@@ -105,7 +105,7 @@ AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행되는 AEM의 �
 
 회사 환경의 서버에 AEM을 설치할 수 있습니다. 일반적인 설치 인스턴스는 개발, 테스트 및 게시 환경을 포함합니다. 다음을 참조하십시오 [시작](/help/sites-deploying/deploy.md#getting%20started) AEM 소프트웨어를 로컬에 설치하는 방법에 대한 기본 세부 정보를 보려면 여기를 클릭하십시오.
 
-일반적인 온-프레미스 배포에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md).
+일반적인 온프레미스 배포에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md).
 
 ### Cloud Manager를 사용한 Managed Services {#managed-services-using-cloud-manager}
 
@@ -117,7 +117,7 @@ AEM Managed Services을 사용하면 다음과 같은 이점을 누릴 수 있�
 
 **높은 성능:** 4가지 서비스 가용성 옵션 99.5%, 99.9%, 99.95% 및 99.99%로 비즈니스에 안정적인 디지털 환경을 제공합니다. 또한 자동 백업 및 다중 모드 재해 복구 모델을 통해 안정성과 비상 상황을 관리할 수 있습니다.
 
-**최적화된 IT 비용:** 사전 예방적 지침 및 전문 지식을 통해 조직은 최신 버전의 AEM을 최신 상태로 유지할 수 있습니다. Adobe 플래티넘 유지 관리 및 지원은 AMS Enterprise/Basic의 새로운 배포에 자동으로 포함되며, 조직의 미션 크리티컬 애플리케이션을 유지 관리하는 데 도움이 되는 기술 전문 지식 및 운영 경험을 제공합니다. 무료 기본 분석 또는 Target 기능은 분석 및 개인화에 대한 요구가 제한된 중간 시장 조직을 위해 특히 추가적인 가치를 제공합니다.
+**최적화된 IT 비용:** 사전 예방적 지침 및 전문 지식을 통해 조직은 최신 버전의 AEM을 최신 상태로 유지할 수 있습니다. Adobe 플래티넘 유지 관리 및 지원은 AMS Enterprise/Basic의 새로운 배포에 자동으로 포함되며, 조직의 미션 크리티컬 애플리케이션을 유지 관리하는 데 도움이 되는 기술 전문 지식 및 운영 경험을 제공합니다. 무료 기본 Analytics 또는 Target 기능은 분석 및 개인화에 대한 요구 사항이 제한된 중간 시장 조직에 특히 더 많은 가치를 제공합니다.
 
 **최고의 보안:** 제한된 액세스 시설, 방화벽 시스템 뒤 또는 가상 사설 클라우드 내에서 고객 애플리케이션을 호스팅함으로써 엔터프라이즈급 물리적, 네트워크 및 데이터 보안을 보장합니다. 여기에는 강력한 데이터 스토리지 암호화, 항바이러스성 및 데이터 격리를 갖춘 단일 테넌트 가상 시스템이 포함됩니다.
 
@@ -125,7 +125,7 @@ AEM Managed Services을 사용하면 다음과 같은 이점을 누릴 수 있�
 
 Cloud Manager 및 해당 리소스에 대한 자세한 내용은 다음을 참조하십시오. [**Cloud Manager 사용 안내서**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).
 
-## 시작하기 {#getting-started}
+## 시작 {#getting-started}
 
 ### 사전 요구 사항 {#prerequisites}
 
@@ -155,7 +155,7 @@ AEM 소프트웨어 패키지는 다음 두 가지 형태로 제공됩니다.
 
    Windows 설치 위치: **`C:\Program Files\aem`**
 
-   마찬가지로, 바탕 화면의 오른쪽 폴더에 샘플 인스턴스를 설치하는 것이 일반적입니다. 어떤 경우든 일반적으로 이 위치를 다음과 같이 참조합니다.
+   마찬가지로, 바탕 화면의 오른쪽 폴더에 샘플 인스턴스를 설치하는 것이 일반적입니다. 어떤 경우든 Adobe은 일반적으로 이 위치를 다음과 같이 참조합니다.
 
    `<aem-install>`
 

@@ -3,10 +3,10 @@ title: Adobe Experience Manager Foundation에 대한 GDPR 요청 처리
 description: Adobe Experience Manager Foundation에 대한 GDPR 요청 처리
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 55%
+source-wordcount: '438'
+ht-degree: 48%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 55%
 
 >[!IMPORTANT]
 >
->아래 섹션에서는 GDPR이 예로 사용되지만, 포함된 세부 사항은 GDPR, CCPA 등 모든 데이터 보호 및 개인 정보 보호 규정에 적용됩니다.
+>아래 섹션에서는 GDPR이 예로 사용되지만, 포함된 세부 사항은 GDPR, CCPA 등과 같은 모든 데이터 보호 및 개인 정보 보호 규정에 적용됩니다.
 
 ## AEM Foundation GDPR 지원 {#aem-foundation-gdpr-support}
 

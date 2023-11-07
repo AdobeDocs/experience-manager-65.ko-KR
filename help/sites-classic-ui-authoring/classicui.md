@@ -1,18 +1,14 @@
 ---
 title: 클래식 UI에서 작성
-seo-title: Authoring in the Classic UI
 description: 클래식 UI는 CQ5 이후 사용할 수 있는 데스크탑 지향 사용자 인터페이스입니다. 작성에 대한 다음 설명서는 이 UI에 중점을 둡니다. 터치 기반 UI는 터치 및 데스크탑 장치 모두에서 사용하도록 설계된 AEM용 새로운 표준 사용자 인터페이스입니다. 자세한 내용은 표준 작성 설명서 를 참조하십시오.
-seo-description: The Classic UI is the desktop-oriented user interface that as been available since CQ5. The following documentation on authoring is focused on this UI. The touch-based UI is the new standard user interface for AEM, designed for use on both touch and desktop devices. Please see the standard authoring documentation for further information.
-uuid: 4ad03293-f36c-40ae-b668-c78ce326cf0d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: edc78306-5e83-45a4-a44b-ce0d21ff0f31
 exl-id: 05286d1e-4266-4521-bbb5-0bd51de4d552
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '183'
 ht-degree: 2%
 
 ---

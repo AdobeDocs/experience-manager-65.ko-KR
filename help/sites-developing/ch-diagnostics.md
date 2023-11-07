@@ -1,16 +1,14 @@
 ---
 title: ContextHub 진단
-seo-title: ContextHub Diagnostics
 description: ContextHub는 ContextHub 프레임워크의 개요를 볼 수 있는 진단 페이지를 제공합니다
-seo-description: ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: b833c28b-76c6-42a2-b690-3e81ddf91bc2
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '473'
 ht-degree: 1%
 
 ---
@@ -25,7 +23,7 @@ ContextHub 진단 페이지는 작성된 저장소 및 UI 모듈, 로드된 클�
 
 >[!NOTE]
 >
->진단 정보를 반환하려면 디버그 모드를 활성화해야 합니다. 그렇지 않으면 진단 페이지가 비어 있습니다. 다음을 참조하십시오. [이 문서](ch-configuring.md#debugging-contexthub) 디버그 모드를 활성화하는 방법에 대한 자세한 내용을 참조하십시오.
+>진단 정보를 반환하려면 디버그 모드를 활성화해야 합니다. 그렇지 않으면 진단 페이지가 비어 있습니다. 다음을 참조하십시오 [이 문서](ch-configuring.md#debugging-contexthub) 디버그 모드를 활성화하는 방법에 대한 자세한 내용을 참조하십시오.
 
 >[!NOTE]
 >

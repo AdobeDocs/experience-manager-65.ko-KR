@@ -1,7 +1,7 @@
 ---
 title: 포스트스크립트를 PDF 문서로 변환
 seo-title: Converting Postscript to PDF Documents
-description: Distiller 서비스를 사용하여 PostScript ®, Encapsulated PostScript(EPS) 및 PRN 파일을 네트워크를 통해 압축하고 안정적이며 보다 안전한 PDF 파일로 변환할 수 있습니다. Distiller 서비스는 Java API 및 Web Service API를 사용하여 대량의 인쇄 문서를 송장 및 명세서 등의 전자 문서로 변환합니다.
+description: Distiller 서비스를 사용하여 PostScript®, Encapsulated PostScript(EPS) 및 PRN 파일을 네트워크를 통해 압축하고 안정적이며 보다 안전한 PDF 파일로 변환할 수 있습니다. Distiller 서비스는 Java API 및 Web Service API를 사용하여 대량의 인쇄 문서를 송장 및 명세서 등의 전자 문서로 변환합니다.
 seo-description: Use the Distiller service to convert PostScript®, Encapsulated PostScript (EPS), and PRN files to compact, reliable, and more secure PDF files over a network. The Distiller service converts large volumes of print documents to electronic documents, such as invoices and statements using the Java API and Web Service API.
 uuid: 2143f406-1fdd-4551-a738-1a8388f8d478
 contentOwner: admin
@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## Distiller 서비스 정보 {#about-the-distiller-service}
 
-Distiller® 서비스는 PostScript ®, Encapsulated PostScript(EPS) 및 PRN 파일을 네트워크를 통해 압축되고 안정적이며 보다 안전한 PDF 파일로 변환합니다. Distiller 서비스는 대량의 인쇄 문서를 송장 및 명세서 등의 전자 문서로 변환하는 데 자주 사용됩니다. 문서를 PDF으로 변환하면 기업에서 고객에게 종이 버전과 전자 버전의 문서를 보낼 수 있습니다.
+Distiller® 서비스는 PostScript®, Encapsulated PostScript(EPS) 및 PRN 파일을 네트워크를 통해 압축되고 안정적이며 보다 안전한 PDF 파일로 변환합니다. Distiller 서비스는 대량의 인쇄 문서를 송장 및 명세서 등의 전자 문서로 변환하는 데 자주 사용됩니다. 문서를 PDF으로 변환하면 기업에서 고객에게 종이 버전과 전자 버전의 문서를 보낼 수 있습니다.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Distiller 서비스 작업을 프로그래밍 방식으로 수행하려면 먼�
 
 **변환할 파일 검색**
 
-변환할 파일을 검색해야 합니다. 예를 들어 PS 파일을 PDF 문서로 변환하려면 PS 파일을 검색해야 합니다.
+변환할 파일을 검색합니다. 예를 들어 PS 파일을 PDF 문서로 변환하려면 PS 파일을 검색해야 합니다.
 
 **PDF 만들기 작업 호출**
 
@@ -126,7 +126,6 @@ Distiller 서비스 API(Java)를 사용하여 PostScript 파일을 PDF 문서로
 
    * 호출 `CreatePDFResult` 개체 `getLogDocument` 메서드를 사용합니다. 이 값은 `com.adobe.idp.Document` 개체.
    * 호출 `com.adobe.idp.Document` 개체 `copyToFile` 로그 문서를 추출하는 메서드입니다.
-
 
 **추가 참조**
 

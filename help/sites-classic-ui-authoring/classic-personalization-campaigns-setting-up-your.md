@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2257'
+source-wordcount: '2223'
 ht-degree: 4%
 
 ---
@@ -20,10 +20,10 @@ ht-degree: 4%
 
 1. [브랜드 만들기](#creating-a-new-brand) 캠페인을 유지할 수 있습니다.
 1. 필요한 경우 다음을 수행할 수 있습니다. [새 브랜드의 속성을 정의합니다.](#defining-the-properties-for-your-new-brand).
-1. [캠페인 만들기](#creating-a-new-campaign) 경험을 보유합니다(예: 티저 페이지 또는 뉴스레터).
+1. [캠페인 만들기](#creating-a-new-campaign) 경험을 보유할 수 있습니다(예: 티저 페이지 또는 뉴스레터).
 1. 필요한 경우 다음을 수행할 수 있습니다. [새 캠페인에 대한 속성 정의](#defining-the-properties-for-your-new-campaign).
 
-생성 중인 경험 유형에 따라 다음을 수행해야 합니다 [경험 만들기](#creating-a-new-experience). 경험의 세부 정보 및 경험 작성에 따른 작업은 작성하려는 경험 유형에 따라 달라집니다.
+그런 다음 생성하는 경험 유형에 따라 다음을 수행해야 합니다 [경험 만들기](#creating-a-new-experience). 경험의 세부 정보 및 경험 작성에 따른 작업은 작성하려는 경험 유형에 따라 달라집니다.
 
 * 티저를 만드는 경우:
 
@@ -50,15 +50,13 @@ ht-degree: 4%
 
 ## 새 브랜드 만들기 {#creating-a-new-brand}
 
-새 브랜드를 만들려면:
-
 1. 를 엽니다. **MCM** 및 선택 **캠페인** 왼쪽 창에서 을 클릭합니다.
 
 1. 선택 **새로 만들기...** 을(를) 입력하려면 **제목** 및 **이름** 새 브랜드에 사용할 템플릿:
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. **만들기**&#x200B;를 클릭합니다. MCM에 새 브랜드가 표시됩니다(기본 아이콘과 함께).
+1. **만들기**&#x200B;를 클릭합니다. 새 브랜드는 MCM에 표시됩니다(기본 아이콘과 함께).
 
 ### 새 브랜드의 속성 정의 {#defining-the-properties-for-your-new-brand}
 
@@ -72,17 +70,15 @@ ht-degree: 4%
 
 ### 새 캠페인 만들기 {#creating-a-new-campaign}
 
-새 캠페인을 만들려면 다음 작업을 수행하십시오.
-
 1. 출처: **캠페인**&#x200B;왼쪽 창에서 새 브랜드를 선택하거나 오른쪽 창에서 아이콘을 두 번 클릭합니다.
 
-   개요가 표시됩니다(새 브랜드의 경우 비어 있음).
+   개요가 표시됩니다(브랜드가 새로운 경우 비어 있음).
 
 1. 클릭 **새로 만들기...** 및 지정 **제목**, **이름** 새 캠페인에 사용할 템플릿입니다.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
-1. **만들기**&#x200B;를 클릭합니다. 새로운 캠페인은 MCM에 표시됩니다.
+1. **만들기**&#x200B;를 클릭합니다. 귀하의 새로운 캠페인은 MCM에 나와 있습니다.
 
 ### 새 캠페인에 대한 속성 정의 {#defining-the-properties-for-your-new-campaign}
 
@@ -105,7 +101,7 @@ ht-degree: 4%
 
 ### 새 경험 만들기 {#creating-a-new-experience}
 
-새 경험을 만드는 절차는 경험 유형에 따라 다릅니다.
+경험을 만드는 절차는 경험 유형에 따라 다릅니다.
 
 * [티저 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
 * [뉴스레터 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
@@ -154,7 +150,7 @@ ht-degree: 4%
 >[!NOTE]
 >
 >Adobe은 이 기능을 더 강화하지 않을 계획입니다 (리드 관리).
->권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 통합 활용](/help/sites-administering/campaign.md).
+>권장 사항은 [Adobe Campaign 및 AEM에 통합](/help/sites-administering/campaign.md).
 
 AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 쉼표로 구분된 목록을 가져와서 리드를 구성하고 추가할 수 있습니다. 리드를 생성하는 추가 방법은 뉴스레터 등록 또는 커뮤니티 등록에서 찾을 수 있습니다(구성된 경우, 리드를 채우는 워크플로우를 트리거할 수 있음).
 
@@ -172,7 +168,7 @@ AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 
 
 새 리드를 만든 후에는 다음을 확인하십시오. [활성화](#activating-or-deactivating-leads) 게시 인스턴스에서 활동을 추적하고 경험을 개인화할 수 있습니다.
 
-신규 리드를 수동으로 생성하려면
+가망 고객을 수동으로 생성하려면
 
 1. AEM에서 MCM으로 이동합니다. 대시보드에서 을(를) 클릭합니다 **잠재 고객**.
 1. 클릭 **신규**. 다음 **새로 만들기** 창이 열립니다.
@@ -207,7 +203,7 @@ AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 
 
 ### 새 리드 가져오기 {#importing-new-leads}
 
-새 리드를 가져오면 자동으로 기존 목록에 추가하거나 새 목록을 만들어 이러한 리드를 포함할 수 있습니다.
+새 리드를 가져오면 자동으로 기존 목록에 추가하거나 이러한 리드를 포함할 목록을 생성할 수 있습니다.
 
 쉼표로 구분된 목록에서 리드를 가져오려면
 
@@ -302,7 +298,7 @@ MCM에서 기존 리드를 삭제하려면 리드 옆에 있는 확인란을 선
 >[!NOTE]
 >
 >Adobe은 이 기능(목록 관리)을 더 강화하지 않을 계획입니다.
->권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 통합 활용](/help/sites-administering/campaign.md).
+>권장 사항은 [Adobe Campaign 및 AEM에 통합](/help/sites-administering/campaign.md).
 
 목록을 사용하면 잠재 고객을 그룹으로 구성할 수 있습니다. 목록을 사용하면 마케팅 캠페인을 선택한 사용자 그룹에 타기팅할 수 있습니다. 예를 들어 타기팅된 뉴스레터를 목록에 보낼 수 있습니다. 목록은 MCM에서 대시보드나 를 클릭하여 볼 수 있습니다. **목록**. 둘 다 목록의 이름과 구성원 수를 제공합니다.
 
@@ -314,8 +310,6 @@ MCM에서 기존 리드를 삭제하려면 리드 옆에 있는 확인란을 선
 
 ### 새 목록 만들기 {#creating-new-lists}
 
-새 목록(그룹)을 만들려면 다음 작업을 수행하십시오.
-
 1. MCM 대시보드에서 을 클릭합니다. **새 목록...** 또는 **목록**, 클릭 **신규** ... 목록 작성 창이 열립니다.
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
@@ -325,8 +319,6 @@ MCM에서 기존 리드를 삭제하려면 리드 옆에 있는 확인란을 선
    ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
 
 ### 기존 목록 수정 {#modifying-existing-lists}
-
-기존 목록을 수정하려면 다음을 수행합니다.
 
 1. MCM에서 **목록**.
 
@@ -384,7 +376,7 @@ MCM에서 기존 리드를 삭제하려면 리드 옆에 있는 확인란을 선
 
 언제든지 회원을 검색하거나 검색하여 특정 목록에 속하는 리드를 조회할 수 있습니다.
 
-목록에 속한 가망 고객을 조회하려면
+목록에서 가망 고객을 조회하려면
 
 1. MCM에서 **목록**.
 

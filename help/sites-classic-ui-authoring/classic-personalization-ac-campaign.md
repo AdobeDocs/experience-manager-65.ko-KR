@@ -1,18 +1,14 @@
 ---
 title: Adobe Campaign 6.1 및 Adobe Campaign Standard 작업
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: AEM에서 이메일 콘텐츠를 만들고 Adobe Campaign 이메일에서 처리할 수 있습니다.
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails.
-uuid: 439df7fb-590b-45b8-9768-565b022a808b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1163'
 ht-degree: 1%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 1%
 
 AEM에서 이메일 콘텐츠를 만들고 Adobe Campaign 이메일에서 처리할 수 있습니다. 이렇게 하려면 다음을 수행해야 합니다.
 
-1. Adobe Campaign 관련 템플릿에서 AEM의 새 뉴스레터를 생성합니다.
+1. Adobe Campaign 관련 템플릿으로 AEM 뉴스레터를 생성할 수 있습니다.
 1. 선택 [Adobe Campaign 서비스](#selectingtheadobecampaigncloudservice) 모든 기능에 액세스하기 위해 컨텐츠를 편집하기 전에
 1. 콘텐츠 편집.
 1. 콘텐츠의 유효성을 검사합니다.
@@ -56,7 +52,7 @@ AEM에서 Adobe Campaign 콘텐츠를 만들 때 모든 기능에 액세스하�
 
    >[!NOTE]
    >
-   >[이메일 샘플은 Geometrixx에서만 사용할 수 있습니다.](/help/sites-developing/we-retail.md#weretail). 패키지 공유에서 샘플 Geometrixx 콘텐츠를 다운로드하십시오.
+   >[이메일 샘플은 Geometrixx에서만 사용할 수 있습니다.](/help/sites-developing/we-retail.md#weretail). 패키지 공유에서 샘플 Geometrixx 콘텐츠를 다운로드합니다.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -147,7 +143,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
 ### 뉴스레터 미리 보기 {#previewing-a-newsletter}
 
-뉴스레터의 디자인을 미리 보고 개인화를 미리 볼 수 있습니다.
+뉴스레터의 모습을 미리 보고 개인화를 미리 볼 수 있습니다.
 
 1. 미리 보려는 뉴스레터를 열고 미리 보기(돋보기)를 클릭하여 사이드 킥을 축소합니다.
 1. 이메일 클라이언트 아이콘 중 하나를 클릭하여 각 이메일 클라이언트에서 뉴스레터의 모습을 확인할 수 있습니다.

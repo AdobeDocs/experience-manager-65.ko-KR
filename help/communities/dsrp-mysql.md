@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '725'
 ht-degree: 1%
 
 ---
@@ -177,7 +177,7 @@ MySQL이 AEM과 다른 서버에서 실행되는 경우 JDBC 커넥터에서 &#3
    * 예를 들어, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * 를 찾습니다. `Day Commons JDBC Connections Pool`
-* 다음 항목 선택 `+` 새 연결 구성을 만드는 아이콘입니다.
+* 다음 항목 선택 `+` 아이콘 을 클릭하여 연결 구성을 만듭니다.
 
   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 

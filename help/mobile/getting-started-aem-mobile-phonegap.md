@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: fbcdea8a-72e9-431b-9c32-dc02d4cdb9c8
 exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '486'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 AEM은 AEM 페이지를 사용하여 앱을 쉽게 만들 수 있도록 PhoneGap과 통합됩니다. PhoneGap을 사용하면 사용자가 콘텐츠로 작업할 수 있는 유틸리티 앱을 만들 수 있습니다. 콘텐츠 동기화를 사용하면 앱과 번들로 연결할 페이지의 버전 지정 아카이브를 만들 수 있습니다.
 
-일반적으로 ***AEM 관리자*** 는 생성 마법사를 사용하여 새 앱을 만들거나 기존 애플리케이션을 가져와서 AEM Mobile 카탈로그에 새 애플리케이션을 추가하는 역할을 합니다.
+일반적으로 ***AEM 관리자*** 는 생성 마법사를 사용하여 앱을 생성하거나 기존 애플리케이션을 가져와서 AEM Mobile 카탈로그에 새 애플리케이션을 추가하는 작업을 담당합니다.
 
 여기에서 ***AEM 작성자*** (또는 *마케터*)는 이제 기본 제공 템플릿 및 구성 요소를 사용하여 페이지를 추가 및 편집하고, 구성 요소를 드래그 앤 드롭하고, 이미지, 비디오 및 텍스트 조각(콘텐츠 조각)을 포함하여 DAM의 모든 유형의 미디어를 추가할 수 있습니다.
 

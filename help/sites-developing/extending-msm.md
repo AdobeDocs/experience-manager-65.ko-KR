@@ -1,20 +1,16 @@
 ---
 title: 다중 사이트 관리자 확장
-seo-title: Extending the Multi Site Manager
 description: 이 페이지는 다중 사이트 관리자의 기능을 확장하는 데 도움이 됩니다
-seo-description: This page helps you extend the functionalities of the Multi Site Manager
-uuid: dfa7d050-29fc-4401-8d4d-d6ace6b49bea
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2585'
-ht-degree: 63%
+source-wordcount: '2578'
+ht-degree: 62%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 63%
 이 페이지는 다중 사이트 관리자의 기능을 확장하는 데 도움이 됩니다.
 
 * MSM Java API의 주요 멤버에 대해 알아보기.
-* 롤아웃 구성에서 사용할 수 있는 새 동기화 작업 만들기.
+* 롤아웃 구성에서 사용할 수 있는 동기화 작업을 만듭니다.
 * 기본 언어 및 국가 코드 수정.
 
 <!-- * Remove the "Chapters" step in the Create Site wizard. -->
@@ -111,7 +107,7 @@ ht-degree: 63%
 
 * `LiveAction` 클래스에는 다음 메서드가 포함됩니다.
 
-   * `getName`: 작업 이름을 반환합니다. 이름은 작업을 참조하는 데 사용됩니다(예: 롤아웃 구성).
+   * `getName`: 작업의 이름을 반환합니다. 이 이름은 작업을 참조하는 데 사용됩니다(예: 롤아웃 구성).
    * `execute`: 작업의 작업을 수행합니다.
 
 * `LiveActionFactory` 클래스에는 다음과 같은 멤버가 포함됩니다.
@@ -182,8 +178,6 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 ### 롤아웃 구성 만들기 {#create-the-rollout-configuration}
 
-새 롤아웃 구성을 만들려면 다음 작업을 수행하십시오.
-
 1. 오픈 CRXDE Lite. 예:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -206,7 +200,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 이 아래에 **만들기** 다음 속성을 가진 노드:
 
-   * **이름**: 롤아웃 구성의 노드 이름입니다. md#installed-synchronization-actions)를 참조하십시오. 예 `contentCopy` 또는 `workflow`.
+   * **이름**: 롤아웃 구성의 노드 이름입니다. md#installed-synchronization-actions)를 참조하십시오. 예: `contentCopy` 또는 `workflow`.
    * **유형**: `cq:RolloutConfig`
 
 1. 이 노드에 다음 속성을 추가합니다.
@@ -240,7 +234,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. **다음 노드 속성을 사용하여 노드를 만듭니다.**
 
    * **이름**: 동기화 작업의 노드 이름입니다.
-이름은 과(와) 같아야 합니다. **작업 이름** 아래 표에서 [동기화 작업](/help/sites-administering/msm-sync.md#installed-synchronization-actions), 예 `contentCopy` 또는 `workflow`.
+이름은 과(와) 같아야 합니다. **작업 이름** 아래 표에서 [동기화 작업](/help/sites-administering/msm-sync.md#installed-synchronization-actions), 예: `contentCopy` 또는 `workflow`.
    * **유형**: `cq:LiveSyncAction`
 
 1. 필요한 만큼 동기화 작업 노드를 추가하고 구성합니다. 작업 노드의 순서가 원하는 순서와 일치하도록 작업 노드를 재정렬합니다. 최상위 작업 노드가 먼저 발생합니다.
@@ -600,7 +594,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
 1. In CRX Explorer, remove the node:
    `/etc/blueprints/weretail-english/jcr:content/dialog/items/tabs/items/tab_chap`.
 
-1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a new node:
+1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a node:
 
     1. **Name** = `chapters`; **Type** = `cq:Widget`.
 

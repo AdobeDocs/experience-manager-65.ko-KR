@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2000'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 <!-- Scope of metadata articles:
-* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
@@ -64,7 +64,7 @@ ht-degree: 5%
 
    ![메타데이터 프로필의 구성 요소 설정](assets/metadata-profile-component-setting.png)
 
-   다음에 대한 다음 속성을 편집합니다. **[!UICONTROL 설명]** 구성 요소:
+   다음에 대한 속성을 편집합니다. **[!UICONTROL 설명]** 구성 요소:
 
    * **[!UICONTROL 필드 레이블]**: 메타데이터 속성의 표시 이름입니다. 사용자 참조용으로만 사용됩니다.
 
@@ -93,7 +93,7 @@ ht-degree: 5%
 | [!UICONTROL 날짜] | 필드 레이블, <br> 속성에 매핑, <br> 기본값 |
 | [!UICONTROL 표준 태그] | 필드 레이블, <br> 속성에 매핑, <br> 기본값, <br> 설명 |
 
-1. 클릭 **[!UICONTROL 완료]**. 메타데이터 프로필이 의 프로필 목록에 추가됩니다 **[!UICONTROL 메타데이터 프로필]** 페이지를 가리키도록 업데이트하는 중입니다.<br>
+1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다. 메타데이터 프로필이 의 프로필 목록에 추가됩니다 **[!UICONTROL 메타데이터 프로필]** 페이지를 가리키도록 업데이트하는 중입니다.<br>
 
    ![메타데이터 프로필 페이지에 추가된 메타데이터 프로필](assets/MetadataProfiles-page.png)
 
@@ -281,4 +281,3 @@ Open the properties for a folder configured with a folder metadata schema. A **[
 >* [메타데이터, 이미지 및 비디오 처리 프로필](processing-profiles.md).
 >* [처리 프로필을 사용하도록 디지털 에셋을 구성하는 우수 사례](/help/assets/organize-assets.md).
 >* [XMP 원본에 쓰기](/help/assets/xmp-writeback.md).
-

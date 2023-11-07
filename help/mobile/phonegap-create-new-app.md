@@ -1,23 +1,19 @@
 ---
-title: 만들기 마법사를 사용하여 새 AEM Mobile 앱 만들기
-seo-title: Creating a new AEM Mobile app using create wizard
-description: AEM Mobile 앱은 페이지 구조 및 속성을 정의하는 블루프린트를 기반으로 합니다. 이 페이지를 따라 앱 템플릿을 기반으로 새 앱을 만드는 방법에 대해 알아보십시오.
-seo-description: AEM Mobile apps are based on a blueprint that defines a page structure and properties. Follow this page to learn about how to create a new app based on an app template.
-uuid: c2bd63a5-3dff-4a72-b1fb-0c776e0afa33
+title: 만들기 마법사를 사용하여 AEM Mobile 앱 만들기
+description: AEM Mobile 앱은 페이지 구조 및 속성을 정의하는 블루프린트를 기반으로 합니다. 이 페이지를 따라 앱 템플릿을 기반으로 앱을 만드는 방법에 대해 알아보십시오.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 exl-id: be093025-b19f-4499-a7b5-aae5ab74f966
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '632'
 ht-degree: 1%
 
 ---
 
-# 만들기 마법사를 사용하여 새 AEM Mobile 앱 만들기{#creating-a-new-aem-mobile-app-using-create-wizard}
+# 만들기 마법사를 사용하여 AEM Mobile 앱 만들기{#creating-a-new-aem-mobile-app-using-create-wizard}
 
 >[!NOTE]
 >
@@ -41,16 +37,16 @@ Adobe 클라우드 서비스를 빌드하고 Mobile Services SDK 플러그인을
 
 ## 앱 템플릿 사용 {#using-app-templates}
 
-앱 템플릿은 개발자가 만든 기존 디자인을 활용하여 AEM 내에서 새 앱을 만드는 데 사용하는 간편한 방법을 제공합니다.
+앱 템플릿은 개발자가 만든 기존 디자인을 AEM 내에서 새 앱을 만드는 데 사용하는 간편한 방법을 제공합니다.
 
 앱 템플릿이란 무엇입니까? 앱의 기준선이나 기반을 나타내는 페이지 템플릿과 구성 요소의 컬렉션으로 생각하십시오.
-다른 앱의 템플릿을 기반으로 새 앱을 만들 때 앱이 만들어진 원본 앱을 대표하는 시작점이 있는 앱을 얻게 됩니다.
+다른 앱의 템플릿을 기반으로 앱을 만들 때 앱이 만들어진 원본 앱을 나타내는 시작점이 있는 앱을 받게 됩니다.
 
 이 기능을 사용하려면 기존 모바일 앱 템플릿(또는 앱 템플릿이 설치된 앱)이 있어야 합니다.
 
 최신 AEM 앱 샘플 패키지에는 앱 템플릿과 함께 업데이트된 버전의 Geometrixx 앱이 포함되어 있습니다. 또는 다음을 설치할 수 있습니다. [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) 템플릿도 제공합니다.
 
-앱 템플릿을 기반으로 새 앱을 만드는 절차:
+앱 템플릿을 기반으로 앱을 만드는 절차:
 
 1. AEM Mobile 앱 카탈로그로 이동합니다. &lt;*server-url*>aem/apps.html/content/mobileapps
 1. 선택 **만들기** 을(를) 선택한 다음 **앱** 아래와 같이

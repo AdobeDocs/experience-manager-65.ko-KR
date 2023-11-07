@@ -10,9 +10,9 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2073'
 ht-degree: 21%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 21%
 
    >[!NOTE]
    >
-   >1-4단계를 실행하여 새 구성 컨테이너를 만들고 [!DNL Adobe Sign] 컨테이너에서 구성 또는 기존 사용 `global` 폴더 위치 **도구** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 새 구성 컨테이너에서 구성을 생성하는 경우 **[!UICONTROL 구성 컨테이너]** 적응형 양식을 만들 때 필드.
+   >1-4단계를 실행하여 구성 컨테이너를 만들고 [!DNL Adobe Sign] 컨테이너에서 구성 또는 기존 사용 `global` 폴더 위치 **도구** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 새 구성 컨테이너에서 구성을 생성하는 경우 **[!UICONTROL 구성 컨테이너]** 적응형 양식을 만들 때 필드.
 
    >[!NOTE]
    >

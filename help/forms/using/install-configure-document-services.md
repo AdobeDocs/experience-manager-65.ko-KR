@@ -1,16 +1,12 @@
 ---
 title: 문서 서비스 설치 및 구성
-seo-title: Installing and configuring document services
 description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 만들고, 조합하고, 배포하고, 보관하고, 디지털 서명을 추가하여 문서에 대한 액세스를 제한하고, 바코드 Forms을 디코딩합니다.
-seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
-uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
-discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: fbfe38e9d669cd506b687a3fb81ad4ce9e7d65da
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5513'
+source-wordcount: '5512'
 ht-degree: 2%
 
 ---

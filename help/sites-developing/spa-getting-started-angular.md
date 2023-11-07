@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 9cdd7648-d67e-414d-aedf-a5687da39326
 docset: aem65
 exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 7%
+source-wordcount: '1012'
+ht-degree: 8%
 
 ---
 
@@ -51,7 +51,7 @@ AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서
 
 ## 종속성, 구성 및 작성 {#dependencies-configuration-and-building}
 
-샘플 SPA은 예상 Angular 종속성 외에도 추가 라이브러리를 활용하여 SPA을 보다 효율적으로 만들 수 있습니다.
+샘플 SPA은 예상 Angular 종속성 외에도 추가 라이브러리를 사용하여 SPA을 보다 효율적으로 만들 수 있습니다.
 
 ### 종속성 {#dependencies}
 
@@ -65,7 +65,7 @@ AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서
 }
 ```
 
-다음 `aem-clientlib-generator` 는 빌드 프로세스의 일부로 클라이언트 라이브러리를 자동으로 만드는 데 사용됩니다.
+다음 `aem-clientlib-generator` 빌드 프로세스의 일부로 클라이언트 라이브러리를 자동으로 만드는 데 사용됩니다.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -106,7 +106,7 @@ module.exports = {
 
 ### 빌드 중 {#building}
 
-실제로 앱 빌드 시 [Webpack](https://webpack.js.org/) 자동 클라이언트 라이브러리 생성을 위해 aem-clientlib-generator와 함께 전송할 수 있습니다. 따라서 빌드 명령은 다음과 비슷합니다.
+실제로 앱 사용 빌드 [Webpack](https://webpack.js.org/) 자동 클라이언트 라이브러리 생성을 위해 aem-clientlib-generator와 함께 전송할 수 있습니다. 따라서 빌드 명령은 다음과 비슷합니다.
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -114,7 +114,7 @@ module.exports = {
 
 ### AEM Project Archetype {#aem-project-archetype}
 
-AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
+AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용해야 합니다.
 
 ## 애플리케이션 구조 {#application-structure}
 
@@ -282,7 +282,7 @@ AEM에서 SPA의 핵심 아이디어는 SPA 구성 요소를 AEM 구성 요소�
 
 단일 페이지 애플리케이션 내의 구성 요소가 정보를 공유하는 것은 정기적으로 필요합니다. 이 작업을 수행하는 방법에는 다음과 같이 복잡성이 증가하는 순서로 나열되는 몇 가지 방법이 권장됩니다.
 
-* **옵션 1:** 순수 개체 지향 솔루션으로 util 클래스를 사용하는 등의 방법으로 논리를 중앙 집중화하고 필요한 구성 요소에 브로드캐스트합니다.
+* **옵션 1:** 순수 개체 지향 솔루션으로 util 클래스를 사용하는 등 논리를 중앙 집중화하고 필요한 구성 요소로 브로드캐스트할 수 있습니다.
 * **옵션 2:** NgRx와 같은 상태 라이브러리를 사용하여 구성 요소 상태를 공유합니다.
 * **옵션 3:** 컨테이너 구성 요소를 사용자 정의하고 확장하여 개체 계층 구조를 활용합니다.
 

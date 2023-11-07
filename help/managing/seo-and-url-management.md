@@ -5,10 +5,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3678'
-ht-degree: 66%
+source-wordcount: '3677'
+ht-degree: 67%
 
 ---
 
@@ -49,8 +49,7 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
    * 페이지에서 선택기를 사용하는 경우 의미론적 가치를 제공하는 선택기가 선호됩니다.
    * 사람이 읽을 수 없는 URL은 검색 엔진도 읽을 수 없습니다.
    * 예:
-      `mybrand.com/products/product-detail.product-category.product-name.html`이 권장됩니다. 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`이 `mybrand.com/products/product-detail.1234.html`보다 선호됩니다.
 
 * 검색 엔진이 사이트의 SEO 값을 조각화하여 하위 도메인을 다른 엔티티로 취급하므로 가능하면 하위 도메인을 사용하면 안 됩니다.
 
@@ -169,13 +168,13 @@ Resource myPage = req.getResource();
 이 접근 방식의 장점은 다음과 같습니다.
 
 * 사이트 계층 구조 및 페이지 이름에 있는 의미 체계로 얻은 SEO 값을 포함할 수 있습니다.
-* 쿼리 매개변수가 없으므로 Dispatcher가 응답을 캐시할 수 있습니다. 또한, 페이지가 활성화되어 있으면 주소가 지정된 페이지에 대한 모든 업데이트는 이 캐시를 무효화합니다.
+* 쿼리 매개변수가 없으므로 Dispatcher가 응답을 캐시할 수 있습니다. 또한 페이지가 활성화되어 있으면 주소가 지정된 페이지에 대한 모든 업데이트는 이 캐시를 무효화합니다.
 * 사용자가 이 서블릿에 액세스하려고 하면 `/content/my-brand/my-page`에 적용되는 모든 ACL이 적용됩니다.
 * Dispatcher는 웹 사이트를 제공하는 기능으로서 이 콘텐츠를 제공하도록 이미 구성되어 있습니다. 추가 구성은 필요하지 않습니다.
 
 ### URL 재작성 {#url-rewriting}
 
-AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저장됩니다. 이 위치는 저장소 데이터 관리 관점에서 유용하지만 고객이 반드시 이 방법으로 사이트를 볼 필요는 없습니다. 또한 URL을 가능한 짧게 유지하는 것이 SEO 지침과 충돌할 수 있습니다. 또한, 동일한 AEM 인스턴스와 다른 도메인 이름에서 여러 웹 사이트를 제공할 수 있습니다.
+AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저장됩니다. 이 위치는 저장소 데이터 관리 관점에서 유용하지만 고객이 반드시 이 방법으로 사이트를 볼 필요는 없습니다. 또한 URL을 가능한 짧게 유지하는 것이 SEO 지침과 충돌할 수 있습니다. 또한 동일한 AEM 인스턴스와 다른 도메인 이름에서 여러 웹 사이트를 제공할 수 있습니다.
 
 이 섹션에서는 이러한 URL을 보다 읽기 쉽고 SEO에 적절한 방식으로 관리하고 사용자에게 제공하기 위해 AEM에서 사용할 수 있는 옵션들을 검토합니다.
 
@@ -188,20 +187,20 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 번역 콘텐츠 사용자에게 현지화된 페이지 이름을 표시할 수 있습니다. 예:
 
 * 스페인어 사용자를 다음 페이지로 이동하게 하는 것보다는
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * 다음과 같은 URL을 사용하는 것이 좋습니다.
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
-페이지 이름을 현지화하는 데 있어 어려움은 AEM 플랫폼에서 사용할 수 있는 많은 현지화 도구가 지속적인 컨텐츠 동기화를 위해 로케일 간 페이지 이름을 일치시켜야 한다는 것입니다.
+페이지 이름을 현지화할 때 어려움은 AEM 플랫폼에서 사용할 수 있는 많은 현지화 도구가 지속적인 콘텐츠 동기화를 위해 로케일 간 페이지 이름을 일치시켜야 한다는 것입니다.
 
 다음 `sling:alias` 속성을 사용하면 Adobe 케이크를 먹고 먹을 수 있습니다. 다음을 추가할 수 있습니다. `sling:alias` 를 리소스에 대한 속성으로 사용하여 리소스에 대한 별칭 이름을 허용합니다. 앞의 예제에서는 다음과 같은 항목이 있습니다.
 
 * JCR의 페이지를 만든 위치:
-   `…/es/home`
+  `…/es/home`
 
 * 페이지를 만든 후 속성을 추가함:
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 이 흐름을 사용하면 다중 사이트 관리자와 같은 AEM 번역 도구를 사용하여 다음 작업 간의 관계를 계속 유지할 수 있습니다.
 
@@ -220,12 +219,11 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 표준 AEM 설치에서
 
 * OSGi 구성
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+(`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)의 경우
 
 * 속성
-   **매핑 위치**(`resource.resolver.map.location`)의
+  **매핑 위치**(`resource.resolver.map.location`)의
 
 * 기본값은 `/etc/map`입니다.
 
@@ -233,7 +231,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 매핑을 생성하려면 `/http` 또는 `/https`의 이 위치에서 `sling:Mapping` 노드를 만듭니다. AEM은 이 노드에 설정된 `sling:match` 및 `sling:internalRedirect` 속성을 기반으로 일치하는 URL의 모든 트래픽을 `internalRedirect` 속성에 지정된 값에 리디렉션합니다.
 
-이 접근 방식은 공식 AEM 및 Sling 설명서에 설명되어 있지만 이 구현에서 제공하는 정규식 지원은 를 사용하여 사용할 수 있는 옵션과 비교할 때 범위가 제한됩니다. `SlingResourceResolver` 직접. 또한, 이 방식으로 매핑을 구현하면 Dispatcher 캐시 무효화에 문제가 발생할 수 있습니다.
+이 접근 방식은 공식 AEM 및 Sling 설명서에 설명되어 있지만 이 구현에서 제공하는 정규식 지원은 를 사용하여 사용할 수 있는 옵션과 비교할 때 범위가 제한됩니다. `SlingResourceResolver` 직접. 또한 이 방식으로 매핑을 구현하면 Dispatcher 캐시 무효화에 문제가 발생할 수 있습니다.
 
 이 문제가 발생하는 방법의 예는 다음과 같습니다.
 
@@ -254,8 +252,8 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
    웹 콘솔(예: localhost:4502/system/console/configMgr)을 사용하여 Sling Resource Resolver를 구성할 수 있습니다.
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    Adobe은 URL을 정규식으로 단축하는 데 필요한 매핑을 빌드한 후 OsgiConfignode에서 이러한 구성을 정의하는 것을 권장합니다. `config.publish` 빌드에 포함됩니다.
 
    매핑을 `/etc/map`에서 정의하지 않고 속성 **URL 매핑**(`resource.resolver.mapping`)에 바로 지정할 수 있습니다.
@@ -333,7 +331,7 @@ RewriteEngine On
 RewriteMap lowercase int:tolower
 ```
 
-또한, `htaccess` 파일의 맨 위에 다음 내용을 추가합니다.
+또한 `htaccess` 파일의 맨 위에 다음 내용을 추가합니다.
 
 ```xml
 RewriteCond $1 [A-Z]
@@ -381,13 +379,13 @@ Apache Sling 사이트맵 모듈은 최상위 수준의 사이트맵과 중첩�
 
 기본 구성에서 [페이지 속성] 대화 상자는 페이지를 사이트맵 루트로 표시하여 위에서 설명한 대로 사이트맵과 그 하위 항목을 생성하는 옵션을 표시합니다. 해당 비헤이비어는 `SitemapGenerator` 인터페이스의 구현을 통해 구현되며, 대체 구현 추가를 통해 확장될 수 있습니다. 단, XML 사이트맵 재생성 빈도가 콘텐츠 작성 워크플로 및 워크로드에 따라 달라지므로 제품에는 제공되지 않습니다 `SitemapScheduler` 구성. 따라서 기능을 효과적으로 옵트인할 수 있습니다.
 
-XML 사이트맵을 생성하는 백그라운드 작업을 활성화하려면 `SitemapScheduler` 을(를) 구성해야 합니다. 이렇게 하려면 PID `org.apache.sling.sitemap.impl.SitemapScheduler`에 대해 OSGi 구성을 생성합니다. 스케줄러 표현식 `0 0 0 * * ?`을(를) 시작점으로 사용하여 매일 자정에 모든 XML 사이트맵을 다시 생성할 수 있습니다.
+XML 사이트맵을 생성하는 배경 작업을 활성화하려면 `SitemapScheduler`를 구성해야 합니다. 이렇게 하려면 PID `org.apache.sling.sitemap.impl.SitemapScheduler`에 대해 OSGi 구성을 생성합니다. 스케줄러 표현식 `0 0 0 * * ?`을(를) 시작점으로 사용하여 매일 자정에 모든 XML 사이트맵을 다시 생성할 수 있습니다.
 
 ![Apache Sling 사이트맵 - 스케줄러](assets/sling-sitemap-scheduler.png)
 
 사이트 맵 생성 작업은 작성자 및 게시 계층 인스턴스 모두에서 실행할 수 있습니다. 일반적으로 게시 계층 인스턴스에서만 적절한 표준 URL을 생성할 수 있으므로(Sling 리소스 매핑 규칙이 일반적으로 게시 계층 인스턴스에만 있기 때문) 게시 계층 인스턴스에서 생성 작업을 실행하는 것이 좋습니다. 그러나 를 구현하여 표준 URL을 생성하는 데 사용되는 외부화 메커니즘의 사용자 지정 구현을 플러그인할 수 있습니다. [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) 인터페이스. 맞춤형 구현이 작성자 계층 인스턴스에서 사이트 맵의 표준 URL을 생성할 수 있는 경우 `SitemapScheduler` 작성자 실행 모드에 대해 구성할 수 있습니다. 또한 작성자 서비스 클러스터 인스턴스에 XML 사이트맵 생성 워크로드를 배포할 수 있습니다. 이 시나리오에서는 아직 게시되지 않았거나, 수정되었거나, 제한된 사용자 그룹에게만 표시되는 콘텐츠를 처리할 때 주의해야 합니다.
 
-AEM Sites에는 페이지 트리 사이를 이동하여 사이트맵을 생성하는 `SitemapGenerator`의 기본 구현이 포함되어 있습니다. 사이트의 표준 URL 및 대체 언어(가능한 경우)만 출력하도록 사전 구성되어 있습니다. 또한 필요한 경우 페이지의 마지막 수정 날짜를 포함하도록 구성되어 있습니다. 이렇게 하려면 _마지막 수정 날짜 추가_ 옵션 _Adobe AEM SEO - 페이지 트리 사이트맵 생성기_ 구성 및 선택 _마지막으로 수정된 소스_. 사이트맵이 게시 계층에서 생성되는 경우에는, `cq:lastModified` 날짜를 사용하는 것이 좋습니다.
+AEM Sites에는 페이지 트리 사이를 이동하여 사이트맵을 생성하는 `SitemapGenerator`의 기본 구현이 포함되어 있습니다. 사이트의 표준 URL 및 대체 언어(가능한 경우)만 출력하도록 사전 구성되어 있습니다. 또한 필요한 경우 페이지의 마지막 수정 날짜를 포함하도록 구성되어 있습니다. 이렇게 하려면 _마지막 수정 날짜 추가_ 옵션 _Adobe AEM SEO - 페이지 트리 사이트맵 생성기_ 구성 및 선택 _마지막으로 수정된 소스_. 사이트맵이 게시 계층에서 생성되는 경우에는 `cq:lastModified` 날짜를 사용하는 것이 좋습니다.
 
 ![Adobe AEM SEO - 페이지 트리 사이트맵 생성기 구성](assets/sling-sitemap-pagetreegenerator.png)
 

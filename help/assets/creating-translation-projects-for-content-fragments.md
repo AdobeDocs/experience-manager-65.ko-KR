@@ -8,9 +8,9 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '975'
 ht-degree: 2%
 
 ---
@@ -36,14 +36,14 @@ ht-degree: 2%
 만들기 및 번역 워크플로에는 다음 옵션이 포함되어 있습니다. 각 옵션과 관련된 절차 단계는 자산에 대한 해당 옵션과 관련된 절차 단계와 유사합니다.
 
 * 구조만 생성: 절차 단계는 다음을 참조하십시오. [자산에 대해서만 구조 만들기](translation-projects.md#create-structure-only).
-* 새 번역 프로젝트 만들기: 절차 단계는 [에셋에 대한 새 번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project).
+* 번역 프로젝트 만들기: 절차 단계는 다음을 참조하십시오. [에셋에 대한 번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project).
 * 기존 번역 프로젝트에 추가: 절차 단계는 [에셋의 기존 번역 프로젝트에 추가](translation-projects.md#add-to-existing-translation-project).
 
 ## 언어 사본 업데이트 워크플로우 {#update-language-copies-workflow}
 
 언어 사본 업데이트 워크플로에는 다음 옵션이 포함됩니다. 각 옵션과 관련된 절차 단계는 자산에 대한 해당 옵션과 관련된 절차 단계와 유사합니다.
 
-* 새 번역 프로젝트 만들기: 절차 단계는 [에셋에 대한 새 번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project) (워크플로우 업데이트).
+* 번역 프로젝트 만들기: 절차 단계는 다음을 참조하십시오. [에셋에 대한 번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project) (워크플로우 업데이트).
 * 기존 번역 프로젝트에 추가: 절차 단계는 [에셋의 기존 번역 프로젝트에 추가](translation-projects.md#add-to-existing-translation-project) (워크플로우 업데이트).
 
 에셋에 대한 임시 사본을 만드는 방법과 유사하게 조각에 대한 임시 언어 사본을 만들 수도 있습니다. 자세한 내용은 [에셋용 임시 언어 사본 만들기](translation-projects.md#creating-temporary-language-copies).

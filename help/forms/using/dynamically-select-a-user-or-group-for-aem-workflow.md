@@ -8,10 +8,10 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
-source-git-commit: 8f0e8b15d2ed8b436594fd2be464b4ace29a8902
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 0%
+source-wordcount: '922'
+ht-degree: 1%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 0%
 
 ECMAScript는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 서버 애플리케이션에 사용됩니다. ECMAScript를 사용하여 사용자 또는 그룹을 동적으로 선택하려면 다음 단계를 수행하십시오.
 
-1. CRXDE Lite 열기. URL은 `https://'[server]:[port]'/crx/de/index.jsp`
+1. CRXDE Lite를 엽니다. URL은 `https://'[server]:[port]'/crx/de/index.jsp`
 1. 다음 경로에서 확장명이 .ecma인 파일을 만듭니다. 경로(노드 구조)가 없는 경우 만듭니다.
 
    * (작업 할당 단계의 경로) `/apps/fd/dashboard/scripts/participantChooser`
    * (서명 단계 경로) `/apps/fd/workflow/scripts/adobesign`
 
-1. 사용자를 동적으로 선택하는 논리가 있는 ECMAScript를 .ecma 파일에 추가합니다. 클릭 **[!UICONTROL 모두 저장]**.
+1. 사용자를 동적으로 선택하는 논리가 있는 ECMAScript를 .ecma 파일에 추가합니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
    샘플 스크립트의 경우 다음을 참조하십시오. [사용자 또는 그룹을 동적으로 선택하기 위한 샘플 ECMAScript](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 
@@ -47,7 +47,7 @@ ECMAScript는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 
       |--- |--- |--- |
       | jcr:title | 문자열 | 스크립트 이름을 지정합니다. 예를 들어 가장 가까운 필드 에이전트를 선택합니다. 이 이름은 작업 할당 및 문서 서명 단계에 표시됩니다. |
 
-   1. 클릭 **모두 저장**. AEM Workflow의 구성 요소에서 스크립트를 선택할 수 있습니다.
+   1. **모두 저장**&#x200B;을 클릭합니다. AEM Workflow의 구성 요소에서 스크립트를 선택할 수 있습니다.
 
       ![스크립트](assets/script.png)
 

@@ -5,16 +5,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4734'
+source-wordcount: '4725'
 ht-degree: 1%
 
 ---
 
 # 적응형 양식 작업 모범 사례 {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 개요 {#overview}
 
@@ -68,7 +68,7 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
    * **XFA 양식 템플릿**: XFA 기반 HTML5 양식에 투자한 경우 이상적인 양식 모델입니다. XFA 기반 양식을 적응형 양식으로 전환하는 직접적인 방법을 제공합니다. 기존 XFA 규칙은 연결된 적응형 양식에 유지됩니다. 결과 적응형 양식은 유효성 검사, 이벤트, 속성 및 패턴과 같은 XFA 구문을 지원합니다.
    * **양식 데이터 모델**: 데이터베이스, 웹 서비스 및 AEM 사용자 프로필과 같은 백엔드 시스템을 통합하여 적응형 양식을 미리 채우고 제출된 양식 데이터를 백엔드 시스템에 다시 작성하려는 경우 선호되는 양식 모델입니다. 양식 데이터 모델 편집기를 사용하면 적응형 양식을 만드는 데 사용할 수 있는 양식 데이터 모델에서 엔티티 및 서비스를 정의하고 구성할 수 있습니다. 자세한 내용은 [AEM Forms 데이터 통합](/help/forms/using/data-integration.md).
 
-요구 사항에 적합할 뿐만 아니라 XFA 및 XSD 자산(있는 경우)에 대한 기존 투자를 확장하는 데이터 모델을 신중하게 선택하는 것이 중요합니다. 생성된 XML에 스키마에 의해 정의된 XPATH에 따른 데이터가 포함되어 있으므로 XSD 모델을 사용하여 양식 템플릿을 만드는 것이 좋습니다. 또한 XSD 모델을 양식 데이터 모델의 기본 옵션으로 사용하면 데이터를 처리하고 사용하는 백엔드 시스템과 양식 디자인을 분리하고 양식 필드의 일대일 매핑으로 인해 양식의 성능을 향상시킬 수 있습니다. 또한 필드의 BindRef를 XML로 해당 데이터 값의 XPATH로 만들 수 있습니다.
+요구 사항에 적합할 뿐만 아니라 XFA 및 XSD 자산(있는 경우)에 대한 기존 투자를 확장하는 데이터 모델을 신중하게 선택하는 것이 중요합니다. 생성된 XML에 스키마에 의해 정의된 XPATH에 따른 데이터가 포함되어 있으므로 XSD 모델을 사용하여 양식 템플릿을 만듭니다. 또한 XSD 모델을 양식 데이터 모델의 기본 옵션으로 사용하면 데이터를 처리하고 사용하는 백엔드 시스템과 양식 디자인을 분리하고 양식 필드의 일대일 매핑으로 인해 양식의 성능을 향상시킬 수 있습니다. 또한 필드의 BindRef를 XML로 해당 데이터 값의 XPATH로 만들 수 있습니다.
 
 자세한 내용은 [적응형 양식 만들기](/help/forms/using/creating-adaptive-form.md).
 
@@ -103,7 +103,7 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 * 다음 **nosamplecontent** 실행 모드는 작성자에게만 권장되며 게시 노드에는 권장되지 않습니다.
 * 적응형 양식, 테마, 템플릿 또는 클라우드 구성과 같은 에셋 작성은 구성된 게시 노드에 게시할 수 있는 작성자 노드에서만 수행됩니다.
 자세한 내용은 [양식 및 문서 게시 및 게시 취소](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
-* Forms addon 패키지는 문서 서비스 작업을 지원하기 위해 작성과 게시에 필요하므로 종속성으로 간주할 수 있습니다.
+* 문서 서비스 작업을 지원하기 위한 작성 및 게시에 Forms addon 패키지가 필요하므로 종속성으로 간주할 수 있습니다.
 Forms 관련 샘플 템플릿, 테마 및 DOR 패키지만 원하는 경우에서 다운로드할 수 있습니다. [aemforms-references-* 패키지](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
 
 자세한 내용은 의 모범 사례를 참조하십시오. [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md).
@@ -187,7 +187,7 @@ AEM Forms은 [규칙 편집기](/help/forms/using/rule-editor.md) 을 사용하�
 
 ### 테마 작업 {#working-with-themes}
 
-테마를 위한 적응형 기능을 사용하면 일관된 모양과 스타일을 위해 양식 간에 적용할 수 있는 재사용 가능한 스타일을 만들 수 있습니다. 테마 를 사용하여 양식 구성 요소 및 패널의 스타일을 정의하는 것이 좋습니다. 테마에 대한 몇 가지 우수 사례는 다음과 같습니다.
+테마를 위한 적응형 기능을 사용하면 일관된 모양과 스타일을 위해 양식 간에 적용할 수 있는 재사용 가능한 스타일을 만들 수 있습니다. 테마를 사용하여 양식 구성 요소 및 패널의 스타일을 정의합니다. 테마에 대한 몇 가지 우수 사례는 다음과 같습니다.
 
 * 에셋 라이브러리를 사용하여 텍스트 스타일, 배경 및 이미지를 신속하게 적용할 수 있습니다. 에셋 라이브러리에 스타일이 추가되면 다른 테마와 양식 편집기의 스타일 모드에서 사용할 수 있습니다.
 * 페이지 수준 선택기를 사용하여 글꼴 및 페이지 배경과 같은 전역 설정을 적용합니다.
@@ -241,7 +241,7 @@ AEM Forms은 [규칙 편집기](/help/forms/using/rule-editor.md) 을 사용하�
 * 기본 제출 액션이 사용 사례를 충족하지 않는 경우 사용자 지정 제출 액션을 작성할 수 있습니다. 자세한 내용은 [적응형 양식에 대한 사용자 정의 제출 액션 작성](/help/forms/using/custom-submit-action-form.md).
 * 잘못된 데이터 제출을 방지하기 위해 서버측 유효성 검사를 포함합니다.
 
-적응형 양식에서 Adobe Sign의 다중 서명 경험을 활용할 수 있습니다. 적응형 양식에서 Adobe Sign을 구성할 때는 다음 사항을 고려하십시오. 자세한 내용은 [적응형 양식에서 Adobe Sign 사용](/help/forms/using/working-with-adobe-sign.md).
+적응형 양식에서 Adobe Sign의 다중 서명 경험을 사용할 수 있습니다. 적응형 양식에서 Adobe Sign을 구성할 때는 다음 사항을 고려하십시오. 자세한 내용은 [적응형 양식에서 Adobe Sign 사용](/help/forms/using/working-with-adobe-sign.md).
 
 * Adobe Sign이 활성화된 적응형 양식은 모든 서명자가 양식에 서명한 후에만 제출됩니다. 모든 서명자가 양식에 서명할 때까지 Forms이 서명 보류 중 상태로 표시됩니다.
 * 제출 시 양식 내 서명 경험을 구성하거나 서명자를 서명 페이지로 리디렉션할 수 있습니다.

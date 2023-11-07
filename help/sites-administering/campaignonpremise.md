@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 65%
+source-wordcount: '1573'
+ht-degree: 60%
 
 ---
 
@@ -26,7 +26,7 @@ AEM을 ACC(Adobe Campaign Classic)와 통합하여 AEM에서 이메일 게재, �
 
 ## 통합 단계 {#integration-steps}
 
-AEM과 Campaign 간 통합을 위해서는 두 솔루션 모두에서 몇 가지 단계를 수행해야 합니다.
+AEM과 Campaign 간의 통합에는 두 솔루션에서 몇 가지 단계가 필요합니다.
 
 1. [Campaign에서 AEM 통합 패키지 설치](#install-package)
 1. [Campaign에서 AEM에 대한 연산자 생성](#create-operator)
@@ -41,12 +41,12 @@ AEM과 Campaign 간 통합을 위해서는 두 솔루션 모두에서 몇 가지
 
 * Adobe Campaign Classic에 대한 관리자 액세스
    * 통합을 수행하려면 구성된 데이터베이스를 포함하는 작동 중인 Adobe Campaign Classic 인스턴스가 필요합니다.
-   * Adobe Campaign Classic 설정 및 구성 방법에 관한 자세한 정보가 필요한 경우 [Adobe Campaign Classic 문서](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html)를 참조하시고 특히 설치 및 구성 안내서를 참조하십시오.
+   * Adobe Campaign Classic 설정 및 구성 방법에 대한 자세한 내용은 다음을 참조하십시오. [Adobe Campaign Classic 설명서,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) 특히 설치 및 구성 안내서를 참조하십시오.
 * AEM에 대한 관리자 액세스
 
 ## Campaign에 AEM 통합 패키지 설치 {#install-package}
 
-Adobe Campaign의 **AEM 통합** 패키지는 AEM에 연결하는 데 필요한 다양한 표준 구성을 포함하고 있습니다.
+다음 **AEM 통합** Adobe Campaign의 패키지에는 AEM에 연결하는 데 필요한 몇 가지 표준 구성이 포함되어 있습니다.
 
 1. 관리자 자격으로 클라이언트 콘솔을 사용해 Adobe Campaign 인스턴트에 로그인합니다.
 
@@ -112,7 +112,7 @@ Adobe Campaign의 **AEM 통합** 패키지는 AEM에 연결하는 데 필요한 
    >
    >기본적으로, 연산자에 대해 보안 영역이 구성되어 있지 않습니다. AEM이 Adobe Campaign에 연결되려면 앞의 단계들에서 자세히 설명한 대로 영역을 반드시 선택해야 합니다.
    >
-   >Adobe는 잠재적인 보안 문제를 예방할 수 있도록 AEM 전용 보안 영역을 생성할 것을 적극 권장합니다. 이 주제에 관한 자세한 내용은 [Adobe Campaign Classic 문서](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)를 참조하십시오.
+   >Adobe는 잠재적인 보안 문제를 예방할 수 있도록 AEM 전용 보안 영역을 생성할 것을 적극 권장합니다. 이 항목에 대한 자세한 내용은 [Adobe Campaign Classic 설명서입니다.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
 
 1. Campaign 클라이언트에서 `aemserver` 연산자로 돌아간 뒤 **일반** 탭을 선택합니다.
 

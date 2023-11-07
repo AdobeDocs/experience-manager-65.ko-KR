@@ -11,9 +11,9 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3156'
+source-wordcount: '3154'
 ht-degree: 56%
 
 ---
@@ -52,7 +52,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 * 표준 양식 구성 요소
 * 자산의 통합 저장소
 
-새 적응형 양식을 만들거나 기존 적응형 양식을 편집할 때 다음 UI 요소를 사용합니다.
+기존 적응형 양식을 만들거나 편집할 때 다음 UI 요소를 사용합니다.
 
 * [사이드바](#sidebar)
 * [페이지 도구 모음](#page-toolbar)
@@ -154,7 +154,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
   </tr>
   <tr>
    <td>이메일</td>
-   <td><p>이메일 주소를 캡처하는 필드를 추가합니다. 이메일 구성 요소는 기본적으로 다음 정규 표현식을 사용하여 이메일 주소를 확인합니다.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>이메일 주소를 캡처하는 필드를 추가합니다. 이메일 구성 요소는 기본적으로 다음 정규 표현식을 사용하여 이메일 주소를 확인합니다.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>파일 첨부</td>

@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Workspace 전역 설정 파일에는 다음 설정이 포함되어 있습니다.
 다음 *specialRoutes* 설정은 작업 영역에서 특수 경로 승인 및 거부의 속성을 지정합니다. 특정 상황에서 이러한 경로에 대한 버튼이 Workspace의 작업 카드에 표시되며 사용자는 양식을 열지 않고도 선택할 수 있습니다. 전역 설정 파일에서 specialRoots 설정을 수정하여 승인 및 거부를 위해 사용자 지정된 이름을 추가하거나 추가 경로를 만들 수 있습니다.
 
 **client_specialRoutes_routes_approve_style:** 작업 영역 테마에 있는 스타일의 이름으로, 승인 단추 아이콘을 식별합니다. 스타일에는 활성화 아이콘과 비활성화 아이콘의 값이 포함되어야 합니다. 사용자 지정 단추의 스타일을 정의하려면 다음 템플릿을 사용해야 합니다.
-` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` 작업 영역 CSS 파일은 adobe-workspace-client.ear > adobe-workspace-client.war 파일에 있는 workspace-theme.swf 파일에 포함되어 있습니다. 작업 영역의 모양을 변경하려면 작업 영역-테마.swf 파일을 다시 컴파일해야 합니다.
+` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` 작업 영역 CSS 파일은 workspace-theme.swf 파일에 포함되어 있으며, 이 파일은 adobe-workspace-client.ear > adobe-workspace-client.war 파일에 있습니다. 작업 영역의 모양을 변경하려면 작업 영역-theme.swf 파일을 다시 컴파일해야 합니다.
 
 **client_specialRoutes_routes_deny_names:** Workbench 사용자가 사용할 수 있는 다양한 문자열은 &quot;거부&quot;로 해석됩니다. 문자열은 대/소문자를 구분합니다. 예를 들어 기본값은 deny입니다. Workbench 사용자가 프로세스에서 Deny라는 단어를 사용하는 경우 해당 단어가 인식되지 않습니다. 경로 단추를 사용자 지정하고 스타일을 적용하려면 이 설정에 거부 라는 단어를 추가해야 합니다.
 
@@ -113,7 +113,7 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 ### formView 설정 {#formview-settings}
 
-**client_formView_openFormInFullScreen:** 작업 영역의 모든 양식을 전체 화면 모드로 표시하려면 이 옵션을 true로 설정합니다. 기본적으로 이 옵션은 false로 설정되어 있고 양식이 전체 화면 모드로 표시되지 않습니다. 사용자 서비스에는 전체 화면 모드에서 작업과 연결된 문서를 여는 옵션이 포함되어 있습니다. 따라서 프로세스별로 디스플레이를 제어할 수 있습니다.
+**client_formView_openFormInFullScreen:** 작업 영역의 모든 양식을 전체 화면 모드로 표시하려면 이 옵션을 true로 설정합니다. 기본적으로 이 옵션은 false로 설정되어 있고 양식이 전체 화면 모드로 표시되지 않습니다. 사용자 서비스에는 전체 화면 모드에서 작업과 연결된 문서를 여는 옵션이 있습니다. 따라서 프로세스별로 디스플레이를 제어할 수 있습니다.
 
 **client_routes_formViewOnly:** True로 설정하면 Workspace의 카드 보기 또는 목록 보기에 경로가 표시되지 않습니다. 기본값은 False로, 카드 보기와 목록 보기에 경로가 표시됨을 의미합니다.
 

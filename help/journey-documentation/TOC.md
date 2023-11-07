@@ -5,7 +5,7 @@ breadcrumb-title: AEM 설명서 여정
 user-guide-description: 설명서 여정은 모범 사례 방식으로 비즈니스 목표를 해결하기 위해 복잡하고 다양한 기능을 결합하여 AEM 설명서 내에 서술적 구조를 제공합니다. AEM 초보자용으로 설계된 여정은 A에서 Z까지 목표를 달성하기 위한 개념과 기능을 소개합니다.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 48%
@@ -16,7 +16,7 @@ ht-degree: 48%
 # AEM 설명서 여정 {#documentation-journeys}
 
 <!--
-Please note that all links to other guides need to be absolute references with leading protocol and domain since SCCM does not allow pages to be referenced with relative links in multiple ToCs.
+All links to other guides need to be absolute references with leading protocol and domain since SCCM does not allow pages to be referenced with relative links in multiple ToCs.
 -->
 
 + AEM 설명서 여정 {#overview}

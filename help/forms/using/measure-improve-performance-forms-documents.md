@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -139,7 +139,7 @@ Target과 AEM Forms의 통합을 통해 적응형 양식에 대한 A/B 테스트
 
 ![적응형 양식에 대한 A/B 테스트의 샘플 요약 보고서](assets/ab-test-report-4.png)
 
-## 우수 사례 {#best-practices}
+## 모범 사례 {#best-practices}
 
 실제 모범 사례는 이 워크플로우를 수행하는 동안 자신을 식별하는 것입니다. 환경 및 요구 사항에 따라 다릅니다. 워크플로우를 통해 학습을 캡처하고 모범 사례로 문서화합니다.
 

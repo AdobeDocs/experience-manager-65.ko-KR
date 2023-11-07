@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 내에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 Adobe Experience Manager 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2432'
 ht-degree: 1%
 
 ---
@@ -314,9 +314,9 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 1. 다음 두 단계를 통해 AEM 앱의 페이지 구성 요소 본문에서 확인할 수 있습니다.
 
-   1. 새로 만들기 `body.html` 페이지 구성 요소용
+   1. 만들기 `body.html` 페이지 구성 요소용
 
-   ![새 body.html 파일 만들기](assets/external-spa-update-body.gif)
+   ![body.html 파일 만들기](assets/external-spa-update-body.gif)
 
    1. 새 루트 요소를 새 루트에 추가 `body.html` 파일.
 
@@ -336,9 +336,9 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
    * 우리의 견본에는 `wknd-spa-react/us/en` 를 SPA의 루트로 사용하십시오. 즉, 해당 경로 이전의 모든 항목은 AEM 전용 페이지/컨텐츠입니다.
 
-1. 필요한 수준에서 새 페이지를 만듭니다.
+1. 필요한 수준에서 페이지를 만듭니다.
 
-   * 이 예에서 편집할 페이지는 입니다. `mydomain.com/test`. `test` 은(는) 앱의 루트 경로에 있습니다. AEM에서 페이지를 만들 때도 이 상태를 유지해야 합니다. 따라서 이전 단계에서 정의한 루트 수준에서 새 페이지를 만들 수 있습니다.
+   * 이 예에서 편집할 페이지는 입니다. `mydomain.com/test`. `test` 은(는) 앱의 루트 경로에 있습니다. AEM에서 페이지를 만들 때도 이 상태를 유지해야 합니다. 따라서 이전 단계에서 정의된 루트 수준에서 페이지를 만들 수 있습니다.
    * 작성된 새 페이지는 편집할 페이지와 이름이 같아야 합니다. 에 대한 이 예에서 `mydomain.com/test`, 새 페이지가 만들어지는 위치는 다음과 같아야 합니다. `/path/to/aem/root/test`.
 
 1. SPA 라우팅 내에 도우미를 추가합니다.

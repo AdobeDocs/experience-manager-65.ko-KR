@@ -10,20 +10,20 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2109'
 ht-degree: 3%
 
 ---
 
 # 액세스 가능한 적응형 양식 만들기{#creating-accessible-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 소개 {#introduction}
 
-액세스 가능한 양식은 특별한 요구 사항이 있는 사용자를 포함하여 모든 사용자가 사용할 수 있는 양식입니다. 적응형 Forms에는 다양한 능력을 가진 사용자의 사용성을 향상시키는 다양한 기능이 포함되어 있습니다. 적응형 양식에 액세스 가능성을 구축하면 가능한 가장 광범위한 콘텐츠 대상자가 될 수 있을 뿐만 아니라, 액세스 가능성 표준 준수가 요구되는 지역에서 문서를 제공할 때 반드시 필요합니다. AEM Forms은 양식 개발자가 접근성 표준을 준수하도록 지원합니다.
+액세스 가능한 양식은 특별한 요구 사항이 있는 사용자를 포함하여 모든 사용자가 사용할 수 있는 양식입니다. 적응형 Forms에는 다양한 능력을 가진 사용자의 사용성을 향상시키는 몇 가지 기능이 포함되어 있습니다. 적응형 양식에 액세스 가능성을 구축하면 가능한 가장 광범위한 콘텐츠 대상자가 될 수 있을 뿐만 아니라, 액세스 가능성 표준 준수가 요구되는 지역에서 문서를 제공할 때 반드시 필요합니다. AEM Forms은 양식 개발자가 접근성 표준을 준수하도록 지원합니다.
 
 작성자는 적응형 양식을 작성하는 동안 액세스 가능한 적응형 양식을 만들려면 다음 사항을 고려해야 합니다.
 

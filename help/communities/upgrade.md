@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -61,8 +61,7 @@ MSRP로 구성된 배포에 새 커뮤니티 기능 팩을 설치할 때 다음�
 
          * **저장**&#x200B;을 선택합니다
 
-      ![유틸리티](assets/utilities.png)
-
+     ![유틸리티](assets/utilities.png)
 
 ### On-Premise 스토리지 {#on-premise-storage}
 

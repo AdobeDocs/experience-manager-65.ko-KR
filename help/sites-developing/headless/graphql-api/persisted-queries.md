@@ -2,10 +2,10 @@
 title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 90%
+source-wordcount: '1422'
+ht-degree: 88%
 
 ---
 
@@ -397,10 +397,10 @@ URL은 다음과 같은 부분들로 나눌 수 있습니다.
 패키지를 제작하려면 다음 작업을 수행하십시오.
 
 1. **도구** > **배포** > **패키지**&#x200B;로 이동합니다.
-1. **패키지 만들기**&#x200B;를 탭하여 새 패키지를 만듭니다. 이렇게 하면 패키지를 정의하는 대화 상자가 열립니다.
+1. 탭하여 패키지 만들기 **패키지 만들기**. 그러면 패키지를 정의하는 대화 상자가 열립니다.
 1. 패키지 정의 대화 상자에서 **일반**&#x200B;에 “wknd-persistent-queries”와 같은 **이름**&#x200B;을 입력합니다.
 1. “1.0”과 같은 버전 번호를 입력합니다.
-1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예를 들어 `wknd` 구성의 경우 전체 경로는 `/conf/wknd/settings/graphql/persistentQueries`입니다.
+1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예: `wknd` 전체 경로 구성 `/conf/wknd/settings/graphql/persistentQueries`.
 1. **저장**&#x200B;을 탭하여 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
 1. 새로 생성된 패키지 정의에 있는 **빌드** 버튼을 탭합니다.
 

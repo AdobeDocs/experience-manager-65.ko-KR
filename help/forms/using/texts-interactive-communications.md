@@ -10,9 +10,9 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2477'
+source-wordcount: '2475'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 양식 데이터 모델 속성을 삽입하여 텍스트 문서 조각을 개인화할 수 있습니다. 텍스트에 양식 데이터 모델 속성을 삽입하면 대화형 통신을 미리 보는 동안 연결된 데이터 소스에서 수신자 관련 데이터를 가져와 채울 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합](/help/forms/using/data-integration.md).
 
-텍스트를 만드는 동안 양식 데이터 모델을 지정한 경우 양식 데이터 모델의 속성이 텍스트 편집기의 왼쪽 창에 나타납니다. 지정된 양식 데이터 모델은 텍스트 문서 조각과 이를 포함하는 대화형 통신에 대해 동일해야 합니다.
+텍스트를 만드는 동안 양식 데이터 모델을 지정한 경우 양식 데이터 모델의 속성이 텍스트 편집기의 왼쪽 창에 나타납니다. 지정된 양식 데이터 모델은 텍스트 문서 단편 및 이를 포함하는 대화형 통신에 대해 동일해야 합니다.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 

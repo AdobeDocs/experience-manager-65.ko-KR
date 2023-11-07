@@ -4,10 +4,10 @@ description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 He
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 91%
+source-wordcount: '522'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 91%
 
 ![Markdown 편집기](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
-다음을 항목을 정의할 수 있습니다.
+다음과 같은 항목을 정의할 수 있습니다.
 
 * [제목 표기법](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
 * [단락 및 줄 바꿈](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)

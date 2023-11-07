@@ -9,9 +9,9 @@ breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
 feature: Forms Service
-source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: '3911'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 + [AEM 6.5 Forms 안내서](home.md)
 + 릴리스 노트 {#release-notes-new-features}
-   + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
+   + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
    + [새로운 기능 요약](using/whats-new.md)
    + [FAQ](/help/forms/using/frequently-asked-questions-faq.md)
    + [이제 사용되지 않는 기능](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
@@ -228,7 +228,7 @@ ht-degree: 4%
    + [AEM 양식 작업 영역 사용자 정의 소개](using/introduction-customizing-html-workspace.md)
    + [AEM Forms 작업 공간 사용자 정의에 대한 일반 단계](using/generic-steps-html-workspace-customization.md)
    + [AEM Forms 작업 공간 사용자 인터페이스의 로케일 변경](using/changing-locale-user-interface.md)
-   + [새 로그인 화면 만들기](using/creating-new-login-screen.md)
+   + [로그인 화면 만들기](using/creating-new-login-screen.md)
    + [오류 대화 상자 사용자 지정](using/customizing-error-dialogs.md)
    + [작업에 대한 탭 맞춤화](using/customizing-tabs-task.md)
    + [작업 세부 정보 페이지 사용자 정의](using/customizing-task-details-page.md)

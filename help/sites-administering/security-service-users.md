@@ -7,7 +7,7 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: f317783f3320e3987c7468aa0b2471e525b0387a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1797'
 ht-degree: 0%
@@ -43,7 +43,7 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 
 * **콘텐츠 구조 세분화**
 
-   * 예를 들어 액세스 제어가 사용 가능한 요청 세션과 일치하는 경우 다른 위치로 이동합니다.
+   * 예를 들어 액세스 제어가 사용 가능한 요청 세션과 일치하는 다른 위치로 이동합니다.
    * 컨텐츠 세부기간을 변경합니다.
 
 * **적절한 서비스로 코드 리팩터링**

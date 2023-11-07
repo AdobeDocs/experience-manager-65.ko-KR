@@ -5,9 +5,9 @@ contentOwner: AG
 role: User
 feature: Collaboration,Asset Management
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '630'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 2%
 
 *그림: 번역에 포함할 관련 에셋의 소스 에셋*
 
-1. 의 단계에 따라 소스 폴더의 자산을 타겟 언어로 번역합니다. [새 번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project). 예를 들어 이 경우 에셋을 프랑스어로 번역합니다.
+1. 의 단계에 따라 소스 폴더의 자산을 타겟 언어로 번역합니다. [번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project). 예를 들어 이 경우 에셋을 프랑스어로 번역합니다.
 
 1. 다음에서 [!UICONTROL 프로젝트] 페이지에서 번역 폴더를 엽니다.
 

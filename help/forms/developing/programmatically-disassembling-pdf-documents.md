@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 role: Developer
 exl-id: c5e712e0-5c3f-48cd-91cf-fd347222a6b2
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1760'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ PDF 문서를 어셈블러 서비스에 전달하여 디스어셈블할 수 있�
 
 ![pd_pd_pdfsfrombookmark](assets/pd_pd_pdfsfrombookmarks.png)
 
-PDF 문서를 디스어셈블하려면 `PDFsFromBookmarks` 요소는 DDX 문서에 있습니다. 다음 `PDFsFromBookmarks` element는 결과 요소이며 의 자식 요소일 수 있습니다. `DDX` 요소를 생성하지 않습니다. 에는 가 없습니다. `result` 여러 문서가 생성될 수 있으므로 특성입니다.
+PDF 문서를 디스어셈블하려면 `PDFsFromBookmarks` 요소가 DDX 문서에 있습니다. 다음 `PDFsFromBookmarks` element는 결과 요소이며 의 자식 요소일 수 있습니다. `DDX` 요소를 생성하지 않습니다. 에는 가 없습니다. `result` 여러 문서가 생성될 수 있으므로 특성입니다.
 
 다음 `PDFsFromBookmarks` 요소를 사용하면 소스 문서의 레벨 1 책갈피마다 단일 문서가 생성됩니다.
 

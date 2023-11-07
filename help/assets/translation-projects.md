@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1869'
 ht-degree: 16%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 16%
 만들기 및 번역 워크플로우를 사용하여 처음으로 특정 언어에 대한 언어 사본을 생성합니다. 워크플로는 다음과 같은 옵션을 제공합니다.
 
 * 구조만 생성.
-* 새 번역 프로젝트 만들기.
+* 번역 프로젝트 만들기.
 * 기존 번역 프로젝트에 추가.
 
 ### 구조만 생성 {#create-structure-only}
@@ -55,7 +55,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
    ![에셋에 표시](assets/reveal-in-assets.png)
 
-### 새 번역 프로젝트 만들기 {#create-a-new-translation-project}
+### 번역 프로젝트 만들기 {#create-a-new-translation-project}
 
 이 옵션을 사용하면 번역할 에셋이 번역하려는 언어의 언어 루트에 복사됩니다. 선택한 옵션에 따라 프로젝트 콘솔에서 에셋에 대한 번역 프로젝트가 만들어집니다. 설정에 따라 번역 프로젝트를 수동으로 시작하거나 번역 프로젝트를 만드는 즉시 자동으로 실행할 수 있습니다.
 
@@ -164,10 +164,10 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 이 워크플로우를 실행하여 추가 자산 세트를 번역하고 특정 로케일의 언어 사본에 포함합니다. 이 경우 번역된 에셋은 이전에 번역된 에셋이 이미 포함된 대상 폴더에 추가됩니다. 옵션 선택에 따라 번역 프로젝트가 생성되거나 기존 번역 프로젝트가 새 에셋에 대해 업데이트됩니다. 언어 사본 업데이트 워크플로에는 다음 옵션이 포함됩니다.
 
-* 새 번역 프로젝트 만들기
+* 번역 프로젝트 만들기
 * 기존 번역 프로젝트에 추가
 
-### 새 번역 프로젝트 만들기 {#create-a-new-translation-project-1}
+### 번역 프로젝트 만들기 {#create-a-new-translation-project-1}
 
 이 옵션을 사용하면 언어 사본을 업데이트할 에셋 세트에 대해 번역 프로젝트가 만들어집니다.
 

@@ -1,19 +1,15 @@
 ---
 title: 사용자 관리
-seo-title: Managing Users
 description: 사용자 관리 API를 사용하여 역할, 권한 및 주체(사용자 또는 그룹일 수 있음)를 관리하고 사용자를 인증할 수 있는 클라이언트 애플리케이션을 만듭니다.
-seo-description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
-uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6226'
+source-wordcount: '6218'
 ht-degree: 0%
 
 ---
@@ -66,7 +62,7 @@ User Management는 기본 제공 인증 기능을 제공하며 사용자가 자�
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>User Management는 사용자 이름과 암호와 구성 정보를 인증 공급자에게 전송합니다.</p></td>
+   <td><p>User Management는 사용자 이름과 암호 및 구성 정보를 인증 공급자에게 전송합니다.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -179,7 +175,7 @@ Directory Manager Service API(Java)를 사용하여 사용자 추가:
    * 를 호출하여 보안 주체 유형 설정 `UserImpl` 개체 `setPrincipalType` 메서드를 사용합니다. 사용자 유형을 지정하는 문자열 값을 전달합니다. 예를 들어 다음을 지정할 수 있습니다 `USER`.
    * 를 호출하여 사용자 식별자 값 설정 `UserImpl` 개체 `setUserid` 메서드를 사용합니다. 사용자 식별자 값을 지정하는 문자열 값을 전달합니다. 예를 들어 다음을 지정할 수 있습니다 `wblue`.
    * 를 호출하여 표준 이름 설정 `UserImpl` 개체 `setCanonicalName` 메서드를 사용합니다. 사용자의 정식 이름을 지정하는 문자열 값을 전달합니다. 예를 들어 다음을 지정할 수 있습니다 `wblue`.
-   * 를 호출하여 지정된 이름을 설정합니다. `UserImpl` 개체 `setGivenName` 메서드를 사용합니다. 사용자의 지정된 이름을 지정하는 문자열 값을 전달합니다. 예를 들어 다음을 지정할 수 있습니다 `Wendy`.
+   * 를 호출하여 지정된 이름을 설정합니다. `UserImpl` 개체 `setGivenName` 메서드를 사용합니다. 사용자의 이름을 지정하는 문자열 값을 전달합니다. 예를 들어 다음을 지정할 수 있습니다 `Wendy`.
    * 를 호출하여 패밀리 이름 설정 `UserImpl` 개체 `setFamilyName` 메서드를 사용합니다. 사용자의 성을 지정하는 문자열 값을 전달합니다. 예를 들어 다음을 지정할 수 있습니다 `Blue`.
 
    >[!NOTE]
@@ -191,7 +187,7 @@ Directory Manager Service API(Java)를 사용하여 사용자 추가:
    호출 `DirectoryManagerServiceClient` 개체 `createLocalUser` 메서드를 실행하고 다음 값을 전달합니다.
 
    * 다음 `UserImpl` 새 사용자를 나타내는 개체
-   * 사용자의 암호를 나타내는 문자열 값
+   * 사용자 암호를 나타내는 문자열 값
 
    다음 `createLocalUser` 메서드는 로컬 사용자 식별자 값을 지정하는 문자열 값을 반환합니다.
 
@@ -251,7 +247,7 @@ Directory Manager Service API(Java)를 사용하여 사용자 추가:
    호출 `DirectoryManagerServiceClient` 개체 `createLocalUser` 메서드를 실행하고 다음 값을 전달합니다.
 
    * 다음 `UserImpl` 새 사용자를 나타내는 개체
-   * 사용자의 암호를 나타내는 문자열 값
+   * 사용자 암호를 나타내는 문자열 값
 
    다음 `createLocalUser` 메서드는 로컬 사용자 식별자 값을 지정하는 문자열 값을 반환합니다.
 
@@ -476,7 +472,7 @@ Directory Manager Service API(Java)를 사용하여 그룹을 생성합니다.
    * 만들기 `PrincipalSearchFilter` 개체를 만들 때 사용됩니다.
    * 를 호출하여 사용자 식별자 값 설정 `PrincipalSearchFilter` 개체 `setUserId` 메서드를 사용합니다. 사용자 식별자 값을 나타내는 문자열 값을 전달합니다.
    * 호출 `DirectoryManagerServiceClient` 개체 `findPrincipals` 메서드 및 전달 `PrincipalSearchFilter` 개체. 이 메서드는 `java.util.List` 인스턴스: 여기서 각 요소는 `User` 개체. 다음을 반복합니다. `java.util.List` 인스턴스를 사용하여 사용자를 찾습니다.
-   * 를 호출하여 그룹에 사용자를 추가합니다. `DirectoryManagerServiceClient` 개체 `addPrincipalToLocalGroup` 메서드를 사용합니다. 의 반환 값 전달 `User` 개체 `getOid` 메서드를 사용합니다. 의 반환 값 전달 `Group` 개체 `getOid` 메서드(사용 `Group` 새 그룹을 나타내는 인스턴스).
+   * 를 호출하여 그룹에 사용자를 추가합니다. `DirectoryManagerServiceClient` 개체 `addPrincipalToLocalGroup` 메서드를 사용합니다. 의 반환 값 전달 `User` 개체 `getOid` 메서드를 사용합니다. 의 반환 값 전달 `Group` 오브젝트 `getOid` 메서드(사용 `Group` 새 그룹을 나타내는 인스턴스).
 
 **추가 참조**
 
@@ -547,15 +543,15 @@ Directory Manager 서비스 작업을 프로그래밍 방식으로 수행하려�
 
 1. 적절한 사용자 또는 그룹 작업을 호출합니다.
 
-   사용자 또는 그룹을 찾으려면 다음 중 하나를 호출하십시오 `DirectoryManagerServiceClient` 주도자를 찾기 위한 객체의 방법(주도자는 사용자 또는 그룹일 수 있으므로). 아래 예에서는 `findPrincipals` 메서드는 검색 필터를 사용하여 호출됩니다(a `PrincipalSearchFilter` 개체)를 참조하십시오.
+   사용자 또는 그룹을 찾으려면 다음 중 하나를 호출하십시오 `DirectoryManagerServiceClient` 주도자를 찾기 위한 객체의 메소드(주도자는 사용자 또는 그룹일 수 있으므로). 아래 예에서는 `findPrincipals` 메서드는 검색 필터를 사용하여 호출됩니다(a `PrincipalSearchFilter` 개체)를 참조하십시오.
 
    이 경우의 반환 값이 `java.util.List` 다음 포함 `Principal` 객체, 결과 반복 및 캐스트 `Principal` 다음 중 하나에 오브젝트 추가 `User` 또는 `Group` 개체.
 
    결과 사용 `User` 또는 `Group` 객체(둘 다 `Principal` 인터페이스)에서 워크플로우에 필요한 정보를 검색합니다. 예를 들어 도메인 이름과 정식 이름 값을 조합하여 고유하게 사용자를 식별합니다. 이러한 속성은 를 호출하여 `Principal` 개체 `getDomainName` 및 `getCanonicalName` 메서드를 각각 사용합니다.
 
-   로컬 사용자를 삭제하려면 `DirectoryManagerServiceClient` 개체 `deleteLocalUser` 를 확인하고 사용자 식별자를 전달합니다.
+   로컬 사용자를 삭제하려면 `DirectoryManagerServiceClient` 개체 `deleteLocalUser` 메서드를 실행하고 사용자 식별자를 전달합니다.
 
-   로컬 그룹을 삭제하려면 `DirectoryManagerServiceClient` 개체 `deleteLocalGroup` 을 클릭하고 그룹의 식별자를 전달합니다.
+   로컬 그룹을 삭제하려면 `DirectoryManagerServiceClient` 개체 `deleteLocalGroup` 메서드를 사용하고 그룹 식별자를 전달합니다.
 
 **추가 참조**
 
@@ -580,7 +576,7 @@ Directory Manager Service API(웹 서비스)를 사용하여 사용자, 그룹 �
 
 1. 적절한 사용자 또는 그룹 작업을 호출합니다.
 
-   사용자 또는 그룹을 찾으려면 다음 중 하나를 호출하십시오 `DirectoryManagerServiceService` 주도자를 찾기 위한 객체의 방법(주도자는 사용자 또는 그룹일 수 있으므로). 아래 예에서는 `findPrincipalsWithFilter` 메서드는 검색 필터를 사용하여 호출됩니다(a `PrincipalSearchFilter` 개체)를 참조하십시오. 사용 시 `PrincipalSearchFilter` 객체, 로컬 주도자는 `isLocal` 속성이 로 설정되어 있습니다. `true`. 이 동작은 Java API에서 발생하는 것과 다릅니다.
+   사용자 또는 그룹을 찾으려면 다음 중 하나를 호출하십시오 `DirectoryManagerServiceService` 주도자를 찾기 위한 객체의 메소드(주도자는 사용자 또는 그룹일 수 있으므로). 아래 예에서는 `findPrincipalsWithFilter` 메서드는 검색 필터를 사용하여 호출됩니다(a `PrincipalSearchFilter` 개체)를 참조하십시오. 사용 시 `PrincipalSearchFilter` 객체, 로컬 주도자는 `isLocal` 속성이 로 설정되어 있습니다. `true`. 이 동작은 Java API에서 발생하는 것과 다릅니다.
 
    >[!NOTE]
    >
@@ -590,9 +586,9 @@ Directory Manager Service API(웹 서비스)를 사용하여 사용자, 그룹 �
 
    결과 사용 `User` 또는 `Group` 객체(둘 다 `Principal` 인터페이스)에서 워크플로우에 필요한 정보를 검색합니다. 예를 들어 도메인 이름과 정식 이름 값을 조합하여 고유하게 사용자를 식별합니다. 이러한 속성은 를 호출하여 `Principal` 개체 `domainName` 및 `canonicalName` 각각 필드입니다.
 
-   로컬 사용자를 삭제하려면 `DirectoryManagerServiceService` 개체 `deleteLocalUser` 를 확인하고 사용자 식별자를 전달합니다.
+   로컬 사용자를 삭제하려면 `DirectoryManagerServiceService` 개체 `deleteLocalUser` 메서드를 실행하고 사용자 식별자를 전달합니다.
 
-   로컬 그룹을 삭제하려면 `DirectoryManagerServiceService` 개체 `deleteLocalGroup` 을 클릭하고 그룹의 식별자를 전달합니다.
+   로컬 그룹을 삭제하려면 `DirectoryManagerServiceService` 개체 `deleteLocalGroup` 메서드를 사용하고 그룹 식별자를 전달합니다.
 
 **추가 참조**
 
@@ -814,7 +810,7 @@ Authorization Manager Service API(웹 서비스)를 사용하여 역할 및 권�
    호출 `AuthenticationManagerServiceClient` 개체 `authenticate` 메서드를 실행하고 다음 값을 전달합니다.
 
    * A `java.lang.String` 사용자의 이름이 포함된 개체입니다.
-   * 바이트 배열(a `byte[]` 사용자 암호가 포함된 개체입니다. 다음을 얻을 수 있습니다. `byte[]` 를 호출하여 개체 `java.lang.String` 개체 `getBytes` 메서드를 사용합니다.
+   * 바이트 배열(a `byte[]` 개체)에 사용자 암호가 들어 있습니다. 다음을 얻을 수 있습니다. `byte[]` 를 호출하여 개체 `java.lang.String` 개체 `getBytes` 메서드를 사용합니다.
 
    인증 메서드가 다음을 반환합니다. `AuthResult` 개체입니다. 개체에는 인증된 사용자에 대한 정보가 들어 있습니다.
 
@@ -842,8 +838,8 @@ Authorization Manager Service API(웹 서비스)를 사용하여 역할 및 권�
    호출 `AuthenticationManagerServiceClient` 개체 `authenticate` 메서드를 실행하고 다음 값을 전달합니다.
 
    * A `string` 사용자의 이름이 포함된 개체
-   * 바이트 배열(a `byte[]` 사용자 암호가 포함된 개체입니다. 다음을 얻을 수 있습니다. `byte[]` 을(를) 변환하여 개체 `string` 에 대한 암호가 포함된 개체 `byte[]` 아래 예에 표시된 논리를 사용하여 배열합니다.
-   * 반환된 값은 `AuthResult` 개체(사용자에 대한 정보를 검색하는 데 사용할 수 있음) 아래 예에서 사용자의 정보는 먼저 다음을 획득하여 검색됩니다. `AuthResult` 개체 `authenticatedUser` 필드 및 후속하여 결과물 수득 `User` 개체 `canonicalName` 및 `domainName` 필드.
+   * 바이트 배열(a `byte[]` 개체)에 사용자 암호가 들어 있습니다. 다음을 얻을 수 있습니다. `byte[]` 을(를) 변환하여 개체 `string` 에 대한 암호가 포함된 개체 `byte[]` 아래 예에 표시된 논리를 사용하여 배열합니다.
+   * 반환된 값은 `AuthResult` 개체(사용자에 대한 정보를 검색하는 데 사용할 수 있음) 아래 예에서, 사용자의 정보는 먼저 `AuthResult` 개체 `authenticatedUser` 필드 및 후속하여 결과물 수득 `User` 개체 `canonicalName` 및 `domainName` 필드.
 
 **추가 참조**
 

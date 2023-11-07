@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1106'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ExactTarget 및 Silverpop Engage와 같은 이메일 서비스에 뉴스레터�
 
 이메일을 이메일 서비스 공급자에 게시하려면 다음 단계를 수행해야 합니다.
 
-1. 이메일을 만듭니다.
+1. 이메일 만들기.
 1. 이메일에 이메일 서비스 구성을 적용합니다.
 1. 이메일을 게시합니다.
 
@@ -39,7 +39,7 @@ ExactTarget 및 Silverpop Engage와 같은 이메일 서비스에 뉴스레터�
 
 전자 메일 서비스에 게시하려는 전자 메일 또는 뉴스레터는 **Geometrixx 뉴스레터** 템플릿. 다음을 사용할 수도 있습니다 **Geometrixx Outdoors 이메일** 템플릿. 다음을 기반으로 하는 샘플 이메일/뉴스레터 **Geometrixx Outdoors 이메일** 템플릿은에서 사용할 수 있습니다. `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-구성된 이메일 서비스에 게시되는 새 이메일을 만들려면 다음 작업을 수행하십시오.
+구성된 이메일 서비스에 게시되는 이메일을 만들려면 다음 작업을 수행하십시오.
 
 1. 다음으로 이동 **웹 사이트** 그런 다음 **캠페인**. 캠페인을 선택합니다.
 1. 클릭 **신규** 을(를) 열려면 **페이지 만들기** 창.

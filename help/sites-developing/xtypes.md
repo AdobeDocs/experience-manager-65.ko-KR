@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6384'
+source-wordcount: '6381'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 이 페이지에서는 AEM(Adobe Experience Manager)에서 사용할 수 있는 모든 xtype에 대해 설명합니다.
 
-ExtJS 언어에서 xtype은 클래스에 제공되는 기호 이름입니다. 의 &quot;구성 요소 XTypes&quot; 단락을 읽을 수 있습니다. [ExtJS 2 개요](https://www.sencha.com/learn/overview-of-extjs-2) xtype의 정의와 사용 방법에 대한 자세한 설명.
+ExtJS 언어에서 xtype은 클래스에 제공되는 기호 이름입니다. 의 &quot;구성 요소 XTypes&quot; 단락을 읽을 수 있습니다. [ExtJS 2 개요](https://www.sencha.com/learn/overview-of-extjs-2) xtype의 의미와 사용 방법에 대한 자세한 설명.
 
-AEM에서 사용 가능한 모든 위젯에 대한 전체 정보는 을 참조하십시오. [위젯 API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 특정 xtype이 AEM에서 사용되는 구성 요소를 확인하려면 &#39;checkbox&#39;를 원하는 xtype으로 바꾸어 CRXDE에서 다음 Xpath 쿼리를 사용할 수 있습니다.
 
@@ -245,7 +245,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 전체 정보는 을 참조�
 
   [CQ.wcm.CreateVersionDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.CreateVersionDialog)
 
-  CreateVersionDialog는 페이지의 새 버전을 만들 수 있는 대화 상자입니다.
+  CreateVersionDialog는 페이지 버전을 만들 수 있는 대화 상자입니다.
 
 * customcontentpanel
 
@@ -761,7 +761,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 전체 정보는 을 참조�
 
   [CQ.form.SmartImage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SmartImage)
 
-  SmartImage는 지능형 이미지 업로더입니다. 이 도구는 업로드된 이미지를 처리하는 도구, 예를 들어 이미지 맵과 이미지 크롭을 정의하는 도구를 제공합니다.
+  SmartImage는 지능형 이미지 업로더입니다. 업로드된 이미지를 처리하는 도구, 예를 들어 이미지 맵과 이미지 크롭을 정의하는 도구를 제공합니다.
 
   구성 요소는 별도의 대화 상자 탭에서 사용하도록 설계되었습니다.
 
@@ -891,7 +891,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 전체 정보는 을 참조�
 
   [CQ.Ext.ToolTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ToolTip)
 
-  대상 요소 위로 마우스를 가져갈 때 추가 정보를 제공하기 위한 표준 도구 설명 구현입니다. @xtype을 선택합니다.
+  대상 요소 위로 마우스를 가져갈 때 추가 정보를 제공하기 위한 표준 도구 설명 구현입니다. @xtype을 참조하십시오.
 
 * 나무그늘막
 
@@ -933,7 +933,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 전체 정보는 을 참조�
 
   뷰포트는 문서 본문으로 렌더링되고 브라우저 뷰포트의 크기에 맞게 자동으로 크기가 조정되며 창 크기 조정을 관리합니다. 뷰포트가 하나만 생성될 수 있습니다.
 
-* 창
+* window
 
   [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)
 

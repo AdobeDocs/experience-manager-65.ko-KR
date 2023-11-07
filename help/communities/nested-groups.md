@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '599'
 ht-degree: 4%
 
 ---
@@ -148,7 +148,7 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 
 ## 게시할 때 경험 {#experience-on-publish}
 
-로그인할 때 예를 들어 을 사용하여 여러 그룹을 경험할 수 있습니다. [데모 사용자](/help/communities/tutorials.md#demo-users) 다음에 사용됨:
+예를 들어 을 사용하여 로그인할 때 여러 그룹을 경험할 수 있습니다. [데모 사용자](/help/communities/tutorials.md#demo-users) 다음에 사용됨:
 
 * 미술/역사 그룹 구성원: `emily.andrews@mailinator.com/password`
    * 제한된(비밀) 그룹, 예술/역사가 표시됩니다.

@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Trust Manager API를 사용하여 프로그래밍 방식으로 AEM Forms에 자�
 
 **자격 증명 참조**
 
-AEM Forms에 가져올 자격 증명을 참조합니다. 이 섹션과 연결된 빠른 시작은 파일 시스템에 있는 P12 파일을 참조합니다.
+AEM Forms에 가져올 자격 증명을 참조합니다. 이 섹션과 연결된 빠른 시작은 파일 시스템의 P12 파일을 참조합니다.
 
 **가져오기 작업 수행**
 
@@ -123,7 +123,7 @@ Trust Manager API(Java)를 사용하여 AEM Forms에 자격 증명을 가져옵�
       * 자격 증명의 별칭 값을 지정하는 문자열 값입니다.
       * 다음 `com.adobe.idp.Document` 자격 증명을 저장하는 인스턴스입니다.
       * 자격 증명과 연결된 암호를 지정하는 문자열 값입니다.
-      * 사용 값을 포함하는 문자열 배열입니다. 예를 들어 이 값을 지정할 수 있습니다 `truststore.usage.type.sign`. Reader 확장 자격 증명을 가져오려면 다음을 지정합니다. `truststore.usage.type.lcre`.
+      * 사용 값을 포함하는 문자열 배열입니다. 예를 들어 이 값을 지정할 수 있습니다 `truststore.usage.type.sign`. Reader 확장 자격 증명을 가져오려면 다음을 지정합니다 `truststore.usage.type.lcre`.
 
 **추가 참조**
 

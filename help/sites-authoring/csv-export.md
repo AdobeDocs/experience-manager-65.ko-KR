@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 100%
+source-wordcount: '189'
+ht-degree: 87%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 100%
 
 ![etc-01](assets/etc-01.png)
 
-**CSV 보고서** 만들기 옵션은 **사이트** 콘솔(목록 보기)을 탐색할 때 사용할 수 있습니다. 이 옵션은 **만들기** 드롭다운 메뉴의 옵션입니다.
+만들기 **CSV 보고서** 옵션은 **사이트** 콘솔(목록 보기): **만들기** 드롭다운 메뉴:
 
 ![etc-02](assets/etc-02.png)
 

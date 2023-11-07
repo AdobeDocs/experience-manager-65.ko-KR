@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 20%
@@ -79,7 +79,7 @@ ht-degree: 20%
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. 사이드 킥과 **새 구성 요소 삽입** 도구 모음에 사용 가능한 구성 요소(단락 유형) 목록이 표시됩니다. 이들은 다양한 섹션들(예를 들어, 일반, 열 등)로 분할될 수 있고, 이는 필요에 따라 확장될 수 있다.
+1. 사이드 킥과 **새 구성 요소 삽입** 도구 모음에 사용 가능한 구성 요소(단락 유형) 목록이 표시됩니다. 이러한 세그먼트는 필요에 따라 확장할 수 있는 다양한 섹션(예: 일반, 열 등)으로 분할할 수 있습니다.
 
    프로덕션 환경에 따라 이러한 선택 사항이 다를 수 있습니다. 구성 요소에 대한 자세한 내용은 [기본 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -87,7 +87,7 @@ ht-degree: 20%
 
 ### 콘텐츠 파인더를 사용하여 구성 요소 삽입 {#inserting-a-component-using-the-content-finder}
 
-에서 에셋을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. [콘텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). 이렇게 하면 자산이 포함된 적절한 유형의 새 구성 요소가 자동으로 만들어집니다.
+에서 에셋을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. [콘텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). 이렇게 하면 자산이 포함된 적절한 유형의 구성 요소가 자동으로 만들어집니다.
 
 다음은 다음 자산 유형에 대해 유효합니다(일부는 페이지/단락 시스템에 따라 다름).
 

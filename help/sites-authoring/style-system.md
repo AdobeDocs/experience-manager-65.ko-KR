@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 92%
+source-wordcount: '1304'
+ht-degree: 89%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 92%
 
 ## 사용 사례 {#use-case}
 
-템플릿 작성자는 콘텐츠 작성자에 대해 구성 요소가 작동하는 방식을 구성해야 할 뿐만 아니라 구성 요소의 다양한 시각적 변형을 구성해야 합니다.
+템플릿 작성자는 콘텐츠 작성자에 대해 구성 요소가 작동하는 방식을 구성해야 할 뿐만 아니라 구성 요소의 몇 가지 대체 시각적 변형을 구성해야 합니다.
 
 마찬가지로 콘텐츠 작성자는 콘텐츠를 구성하고 배열해야 할 뿐만 아니라 시각적으로 표시되는 방법도 선택해야 합니다.
 
@@ -111,7 +111,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 >[!CAUTION]
 >
->구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스(필요한 JavaScript 포함)는 다음으로 배포해야 합니다. [클라이언트 라이브러리](/help/sites-developing/clientlibs.md) 일 때문에.
+>구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스(및 필요한 JavaScript)는 [클라이언트 라이브러리](/help/sites-developing/clientlibs.md) 일 때문에.
 
 ## 설정 {#setup}
 
@@ -160,4 +160,4 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 스타일 이름을 정의하는 기능은 레이아웃 컨테이너 또는 콘텐츠 조각 구성 요소와 같은 매우 일반적인 구성 요소에 추가적인 의미를 제공하는 데 유용합니다.
 
-예를 들어 레이아웃 컨테이너에 `<main>`, `<aside>`, `<nav>` 등과 같은 의미 체계를 부여할 수 있습니다.
+예를 들어 레이아웃 컨테이너에 다음과 같은 의미 체계를 부여할 수 있습니다. `<main>`, `<aside>`, `<nav>`등.

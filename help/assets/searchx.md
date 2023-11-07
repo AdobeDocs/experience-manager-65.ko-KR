@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '822'
 ht-degree: 19%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 19%
 
 사용자 지정 술어를 만들려면 다음에 대한 기본 지식이 필요합니다. [위젯 프레임워크](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
-가장 좋은 방법은 기존 술어를 복사하여 조정하는 것입니다. 샘플 조건자는에 있습니다. **/libs/cq/search/components/predicates**.
+가장 좋은 방법은 기존 술어를 복사하여 조정하는 것입니다. 샘플 조건자는 다음과 같습니다. **/libs/cq/search/components/predicates**.
 
 ### 예: 간단한 속성 설명 작성 {#example-build-a-simple-property-predicate}
 
@@ -89,7 +89,7 @@ ht-degree: 19%
    
        <div class="title">Title</div>
    
-       <%-- The wrapper for the form elements. All items will be append to this wrapper. --%>
+       <%-- The wrapper for the form elements. All items are appended to this wrapper. --%>
        <div id="<%= elemId %>" class="content"></div>
    
    </div><script type="text/javascript">
@@ -108,7 +108,7 @@ ht-degree: 19%
            var id = qb.createId(predicateName);
    
            // Hidden field that defines the property to search for; in our case this
-           // is the "dc:title" metadata. The name "property" (or "1_property", "2_property" etc.)
+           // is the "dc:title" metadata. The name "property" (or "1_property", "2_property" and so on.)
            // indicates the server to use the property predicate
            // (com.day.cq.search.eval.JcrPropertyPredicateEvaluator).
            qb.addField({
@@ -182,7 +182,7 @@ ht-degree: 19%
    
        <div class="title">Image Formats</div>
    
-       <%-- The wrapper for the form elements. All items will be append to this wrapper. --%>
+       <%-- The wrapper for the form elements. All items are append to this wrapper. --%>
        <div id="<%= elemId %>" class="content"></div>
    
    </div><script type="text/javascript">
@@ -228,7 +228,7 @@ ht-degree: 19%
                qb.addField({
                    "xtype": "checkbox",
                    "renderTo": "<%= elemId %>",
-                   // 1_group.property.0_value, 1_group.property.1_value etc.
+                   // 1_group.property.0_value, 1_group.property.1_value and so on.
                    "name": groupId + "." +  predicateName + "." + i + "_value",
                    "inputValue": options[i].value,
                    "boxLabel": options[i].label,

@@ -1,19 +1,15 @@
 ---
 title: AEM에서 SPA 시작하기 - React
-seo-title: Getting Started with SPAs in AEM - React
 description: 이 문서에서는 샘플 SPA 애플리케이션을 제공하고, 구성 방법을 설명하며, React 프레임워크를 사용하여 SPA을 빠르게 시작하고 실행할 수 있도록 해 줍니다.
-seo-description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
-uuid: 2beca277-a381-4482-99f6-85005d826d06
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1161'
 ht-degree: 6%
 
 ---
@@ -52,7 +48,7 @@ AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서
 
 ## 종속성, 구성 및 작성 {#dependencies-configuration-and-building}
 
-샘플 SPA은 예상 React 종속성 외에도 추가 라이브러리를 활용하여 SPA을 보다 효율적으로 만들 수 있습니다.
+샘플 SPA은 예상 React 종속성 외에도 추가 라이브러리를 사용하여 SPA을 보다 효율적으로 만들 수 있습니다.
 
 ### 종속성 {#dependencies}
 
@@ -73,7 +69,7 @@ react
  react-dom
 ```
 
-다음 `aem-clientlib-generator` 는 빌드 프로세스의 일부로 클라이언트 라이브러리를 자동으로 만드는 데 사용됩니다.
+다음 `aem-clientlib-generator` 빌드 프로세스의 일부로 클라이언트 라이브러리를 자동으로 만드는 데 사용됩니다.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -114,7 +110,7 @@ module.exports = {
 
 ### 빌드 중 {#building}
 
-실제로 앱 빌드 시 [Webpack](https://webpack.js.org/) 자동 클라이언트 라이브러리 생성을 위해 aem-clientlib-generator와 함께 전송할 수 있습니다. 따라서 빌드 명령은 다음과 비슷합니다.
+실제로 앱 사용 빌드 [Webpack](https://webpack.js.org/) 자동 클라이언트 라이브러리 생성을 위해 aem-clientlib-generator와 함께 전송할 수 있습니다. 따라서 빌드 명령은 다음과 비슷합니다.
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -122,7 +118,7 @@ module.exports = {
 
 ### AEM Project Archetype {#aem-project-archetype}
 
-AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
+AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용해야 합니다.
 
 ## 애플리케이션 구조 {#application-structure}
 
@@ -134,7 +130,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
 
 ### index.js {#index-js}
 
-SPA의 진입점은 당연히 다음과 같습니다. `index.js` 여기에 표시된 파일은 중요한 콘텐츠에 집중할 수 있도록 단순화되었습니다.
+SPA의 진입점은 입니다. `index.js` 여기에 표시된 파일은 중요한 콘텐츠에 집중할 수 있도록 단순화되었습니다.
 
 ```
 import ReactDOM from 'react-dom';
@@ -151,7 +147,7 @@ ReactDOM.render(
 });
 ```
 
-의 주요 기능 `index.js` 을(를) 활용하기 위한 것입니다. `ReactDOM.render` dom에서 응용 프로그램을 삽입할 위치를 결정하는 함수입니다.
+의 주요 기능 `index.js` 은(는) 을(를) 사용합니다. `ReactDOM.render` dom에서 응용 프로그램을 삽입할 위치를 결정하는 함수입니다.
 
 이는 이 예제 앱에만 적용되는 것이 아니라 이 기능의 표준 사용입니다.
 

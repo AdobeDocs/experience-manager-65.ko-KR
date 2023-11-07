@@ -2,10 +2,10 @@
 title: 리치 텍스트 편집기를 사용한 컨텐츠 작성
 description: 리치 텍스트 편집기를 사용한 컨텐츠 작성 Adobe Experience Manager 6.5에서.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 71%
+source-wordcount: '266'
+ht-degree: 72%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 71%
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-다시 탭/클릭하거나 구성 요소를 느리게 더블 탭/클릭하여 처음 선택하면 도구 모음이 있는 즉석 편집이 열립니다. 여기에서 컨텐츠를 편집하고 기본적인 서식 변경을 수행할 수 있습니다.
+다시 탭/클릭하거나 처음에 구성 요소를 선택하고 느리게 두 번 탭/클릭하면 자체 도구 모음이 있는 즉석 편집이 열립니다. 여기에서 컨텐츠를 편집하고 기본적인 서식 변경을 수행할 수 있습니다.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

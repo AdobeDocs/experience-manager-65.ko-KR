@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3505'
+source-wordcount: '3501'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 예를 들어 샘플 확인 양식과 같은 양식을 미리 채울 수 있습니다. (&quot;확인 양식&quot; 참조) [대화형 PDF forms 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
-샘플 확인 양식을 미리 채우려면 양식의 세 필드와 일치하는 세 개의 XML 요소가 포함된 XML 데이터 소스를 만들어야 합니다. 이 양식에는 다음 세 가지 필드가 포함되어 있습니다. `FirstName`, `LastName`, 및 `Amount`. 첫 번째 단계는 양식 디자인에 있는 필드와 일치하는 XML 요소를 포함하는 XML 데이터 소스를 만드는 것입니다. 다음 단계에서는 다음 XML 코드와 같이 XML 요소에 데이터 값을 할당합니다.
+샘플 확인 양식을 미리 채우려면 양식의 세 필드와 일치하는 세 개의 XML 요소가 포함된 XML 데이터 소스를 만들어야 합니다. 이 양식에는 다음 세 가지 필드가 포함되어 있습니다. `FirstName`, `LastName`, 및 `Amount`. 첫 번째 단계는 양식 디자인의 필드와 일치하는 XML 요소를 포함하는 XML 데이터 소스를 만드는 것입니다. 다음 단계에서는 다음 XML 코드와 같이 XML 요소에 데이터 값을 할당합니다.
 
 ```xml
      <Untitled>
@@ -178,7 +178,7 @@ XML 데이터 원본을 사용하여 양식을 고정 레이아웃 및 흐름 �
 
 데이터 하위 그룹의 상위 XML 요소 이름은 양식 디자인에 있는 하위 양식 이름과 일치해야 합니다. 예를 들어 이전 다이어그램에서 데이터 하위 그룹의 상위 XML 요소의 이름은 입니다. `detail`. 이는 구매 주문서 양식의 기반이 되는 양식 디자인에 있는 하위 양식 이름에 해당합니다. 데이터 하위 그룹의 상위 XML 요소 이름과 하위 폼이 일치하지 않으면 서버측 폼이 미리 채워지지 않습니다.
 
-각 데이터 하위 그룹에는 하위 양식의 필드 이름과 일치하는 XML 요소가 있어야 합니다. 다음 `detail` 양식 디자인에 있는 하위 양식에는 다음 필드가 포함되어 있습니다.
+각 데이터 하위 그룹에는 하위 양식의 필드 이름과 일치하는 XML 요소가 있어야 합니다. 다음 `detail` 양식 디자인의 하위 양식에는 다음 필드가 포함되어 있습니다.
 
 * txtPartNum
 * txtDescription
@@ -187,7 +187,7 @@ XML 데이터 원본을 사용하여 양식을 고정 레이아웃 및 흐름 �
 
 >[!NOTE]
 >
->반복되는 XML 요소가 포함된 데이터 소스로 양식을 미리 채우려고 할 때 `RenderAtClient` 옵션 대상 `No`에서는 첫 번째 데이터 레코드만 양식에 병합됩니다. 모든 데이터 레코드를 폼에 병합하려면 `RenderAtClient` 끝 `Yes`. 에 대한 자세한 내용은 `RenderAtClient` 옵션, 참조 [클라이언트에서 Forms 렌더링](/help/forms/developing/rendering-forms-client.md).
+>반복되는 XML 요소가 포함된 데이터 소스로 양식을 미리 채우려고 할 때 `RenderAtClient` 옵션 대상 `No`에서는 첫 번째 데이터 레코드만 양식에 병합됩니다. 모든 데이터 레코드가 폼에 병합되도록 하려면 `RenderAtClient` 끝 `Yes`. 에 대한 자세한 내용은 `RenderAtClient` 옵션, 참조 [클라이언트에서 Forms 렌더링](/help/forms/developing/rendering-forms-client.md).
 
 >[!NOTE]
 >
@@ -253,25 +253,25 @@ Forms API(Java)를 사용하여 유동성 레이아웃으로 양식을 미리 �
    * 호출 `DocumentBuilder` 개체 `newDocument` 를 인스턴스화하는 메서드 `org.w3c.dom.Document` 개체.
    * 를 호출하여 XML 데이터 소스의 루트 요소를 만듭니다. `org.w3c.dom.Document` 개체 `createElement` 메서드를 사용합니다. 이렇게 하면 `Element` 루트 요소를 나타내는 개체입니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 루트 요소를 문서에 추가합니다. `Document` 개체 `appendChild` 루트 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
 
-      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
+     ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
    * 를 호출하여 XML 데이터 소스의 헤더 요소를 만듭니다. `Document` 개체 `createElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 헤더 요소를 루트 요소에 추가합니다. `root` 개체 `appendChild` header 요소 개체를 인수로 전달합니다. 헤더 요소에 추가된 XML 요소는 폼의 정적 부분에 해당합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
-      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
+     ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
    * 를 호출하여 헤더 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로 헤더 요소의 를 호출하여 하위 요소를 헤더 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
-      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
+     ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
    * 양식의 정적 부분에 나타나는 각 필드에 대해 마지막 하위 단계를 반복하여 나머지 모든 요소를 헤더 요소에 추가합니다(XML 데이터 소스 다이어그램에서 이러한 필드는 섹션 A에 표시됨). [데이터 하위 그룹 이해](#understanding-data-subgroups).)
    * 를 호출하여 XML 데이터 소스의 세부 요소 만들기 `Document` 개체 `createElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 세부 요소를 루트 요소에 추가합니다. `root` 개체 `appendChild` 세부 요소 개체를 인수로 전달합니다. 세부 요소에 추가된 XML 요소는 양식의 동적 부분에 해당합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
-      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
+     ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
    * 를 호출하여 세부 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로 세부 요소의 를 호출하여 하위 요소를 세부 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
-      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
+     ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
    * 모든 XML 요소에 대해 마지막 하위 단계를 반복하여 세부 요소에 추가합니다. 구매 발주 양식을 채우는 데 사용되는 XML 데이터 출처를 제대로 생성하려면 다음 XML 요소를 상세내역 요소에 추가해야 합니다. `txtDescription`, `numQty`, 및 `numUnitPrice`.
    * 양식을 미리 채우는 데 사용된 모든 데이터 항목에 대해 마지막 두 단계를 반복합니다.
@@ -306,7 +306,6 @@ Forms API(Java)를 사용하여 유동성 레이아웃으로 양식을 미리 �
    * 바이트 배열을 만들어 양식 데이터 스트림으로 채웁니다. `InputStream` 개체 `read` 메서드에서 바이트 배열을 인수로 전달합니다.
    * 호출 `javax.servlet.ServletOutputStream` 개체 `write` 클라이언트 웹 브라우저에 양식 데이터 스트림을 전송하는 방법입니다. 바이트 배열을 로 전달 `write` 메서드를 사용합니다.
 
-
 **추가 참조**
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 유동성 레이아웃으로 Forms 미리 채우기](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
@@ -331,24 +330,24 @@ Forms API(웹 서비스)를 사용하여 유동성 레이아웃으로 양식을 
    * 호출 `DocumentBuilder` 개체 `newDocument` 를 인스턴스화하는 메서드 `org.w3c.dom.Document` 개체.
    * 를 호출하여 XML 데이터 소스의 루트 요소를 만듭니다. `org.w3c.dom.Document` 개체 `createElement` 메서드를 사용합니다. 이렇게 하면 `Element` 루트 요소를 나타내는 개체입니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 루트 요소를 문서에 추가합니다. `Document` 개체 `appendChild` 루트 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
-      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
+     ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
    * 를 호출하여 XML 데이터 소스의 헤더 요소를 만듭니다. `Document` 개체 `createElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 헤더 요소를 루트 요소에 추가합니다. `root` 개체 `appendChild` header 요소 개체를 인수로 전달합니다. 헤더 요소에 추가된 XML 요소는 폼의 정적 부분에 해당합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
-      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
+     ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
    * 를 호출하여 헤더 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로 헤더 요소의 를 호출하여 하위 요소를 헤더 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
 
-      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
+     ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
    * 양식의 정적 부분에 나타나는 각 필드에 대해 마지막 하위 단계를 반복하여 나머지 모든 요소를 헤더 요소에 추가합니다(XML 데이터 소스 다이어그램에서 이러한 필드는 섹션 A에 표시됨). [데이터 하위 그룹 이해](#understanding-data-subgroups).)
    * 를 호출하여 XML 데이터 소스의 세부 요소 만들기 `Document` 개체 `createElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 세부 요소를 루트 요소에 추가합니다. `root` 개체 `appendChild` 세부 요소 개체를 인수로 전달합니다. 세부 요소에 추가된 XML 요소는 양식의 동적 부분에 해당합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
 
-      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
+     ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
    * 를 호출하여 세부 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로 세부 요소의 를 호출하여 하위 요소를 세부 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
 
-      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
+     ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
    * 모든 XML 요소에 대해 마지막 하위 단계를 반복하여 세부 요소에 추가합니다. 구매 발주 양식을 채우는 데 사용되는 XML 데이터 출처를 제대로 생성하려면 다음 XML 요소를 상세내역 요소에 추가해야 합니다. `txtDescription`, `numQty`, 및 `numUnitPrice`.
    * 양식을 미리 채우는 데 사용된 모든 데이터 항목에 대해 마지막 두 단계를 반복합니다.

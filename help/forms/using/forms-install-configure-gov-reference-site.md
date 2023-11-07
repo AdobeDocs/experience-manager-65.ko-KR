@@ -4,9 +4,9 @@ description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 지정�
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4619'
 ht-degree: 3%
 
 ---
@@ -700,7 +700,7 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함됩니다. 이러�
 
 [스타일 시스템](../../sites-authoring/style-system.md)
 
-다음을 참조할 수도 있습니다. [템플릿 사용자 정의 스타일 시스템](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) 지원되는 스타일에 대한 설명서를 참조하십시오.
+또한 다음을 확인할 수 있습니다. [템플릿 사용자 정의 스타일 시스템](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) 지원되는 스타일에 대한 설명서를 참조하십시오.
 
 ### 적응형 양식 사용자 지정 {#adaptive-forms-customization}
 
@@ -749,7 +749,7 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함됩니다. 이러�
 
 ### 접근성 테스트 Chrome 추가 기능 활성화 {#enable-chrome-add-on}
 
-접근성 테스트를 수행하려면 여기에 있는 Chrome 플러그인을 설치하십시오. `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
+접근성 테스트를 수행하려면 여기에 있는 Chrome 플러그인을 설치하십시오. `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
 페이지가 설치되면 Chrome 브라우저 내에서 테스트할 페이지를 로드합니다(참고: 여러 탭이 열려 있으면 점수에 영향을 줄 수 있으며 한 개의 탭만 열려 있는 것이 좋습니다.). 페이지가 로드되면 **마우스 오른쪽 버튼 클릭** 페이지에서 을(를) 선택하고 **감사** 탭. 개발자는 접근성 플러그인이 수행할 감사 유형을 선택할 수 있습니다. 원하는 옵션이 모두 선택되면 보고서 생성 버튼을 클릭할 수 있습니다. 이렇게 하면 전체 액세서빌러티 등급과 액세서빌러티 등급을 전체적으로 높이는 데 사용할 수 있는 항목을 보여 주는 PDF 문서가 생성됩니다.
 

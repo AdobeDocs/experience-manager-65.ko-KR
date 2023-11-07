@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ AEM Forms 작업 공간 사용자 인터페이스를 선택한 언어로 현지�
 
 >[!NOTE]
 >
->AEM Forms 작업 영역의 로그인 화면의 언어를 변경하려면 다음을 참조하십시오. [새 로그인 화면 만들기](../../forms/using/creating-new-login-screen.md).
+>AEM Forms 작업 영역의 로그인 화면의 언어를 변경하려면 다음을 참조하십시오. [로그인 화면 만들기](../../forms/using/creating-new-login-screen.md).
 
 ## 텍스트 현지화 {#localizing-text}
 
@@ -52,7 +52,7 @@ AEM Forms workspace는 이미지를 사용하여 카테고리, 큐 및 프로세
 
 >[!NOTE]
 >
->브라우저의 브라우저 언어 로케일 코드를 찾으려면 다음을 수행하십시오. 열기 `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
+>브라우저의 브라우저 언어 로케일 코드를 찾으려면 다음을 수행하십시오. `https://'[server]:[port]'/lc/libs/ws/Locale.html`를 엽니다.
 
 ![collapsing_panels_image](assets/collapsing_panels_image.png)
 

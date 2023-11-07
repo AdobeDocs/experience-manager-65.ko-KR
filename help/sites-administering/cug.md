@@ -1,20 +1,16 @@
 ---
 title: 폐쇄된 사용자 그룹 생성
-seo-title: Creating a Closed User Group
 description: 폐쇄된 사용자 그룹을 만드는 방법을 알아봅니다.
-seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
-uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 2%
+source-wordcount: '747'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +50,7 @@ ht-degree: 2%
 
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. 누르기 **만들기** 단추를 클릭하여 새 그룹을 만듭니다.
+1. 누르기 **만들기** 오른쪽 상단 모서리에서 단추를 클릭하여 그룹을 만듭니다.
 1. 새 그룹의 이름을 지정합니다(예: ). `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
@@ -82,7 +78,7 @@ CUG를 페이지에 적용하려면 다음을 수행합니다.
    1. 활성화 **사용** 틱박스.
 
    1. 에 경로 추가 **로그인 페이지**.
-선택 사항입니다. 비워 두면 표준 로그인 페이지가 사용됩니다.
+선택 사항이며 비워 두면 표준 로그인 페이지가 사용됩니다.
 
    ![CUG 추가됨](assets/cug-authentication-requirement.png)
 

@@ -4,9 +4,9 @@ description: AEM 6.5용 즉각적 업그레이드를 수행하는 방법을 알�
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1238'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 다음을 참조하십시오 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) 추가 정보. 또한 시스템이 새 AEM 버전에 대한 요구 사항을 충족하는지 확인하십시오. 패턴 감지기를 통해 업그레이드의 복잡성을 추정하는 방법을 확인하고 의 업그레이드 범위 및 요구 사항 섹션을 참조하십시오. [업그레이드 계획](/help/sites-deploying/upgrade-planning.md) 추가 정보.
 
-<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
@@ -127,7 +127,7 @@ While `FileDataStore` 외부 데이터 저장소를 사용할 필요가 없으�
 
 ## 마이그레이션 문제 해결 {#troubleshooting-migration-issues}
 
-6.3에서 업그레이드하는 경우 이 섹션을 건너뛰십시오. 제공된 crx2oak 프로필은 대부분의 고객의 요구를 충족해야 하지만, 추가 매개 변수가 필요한 경우가 있습니다. 마이그레이션 중에 오류가 발생하는 경우 추가 구성 옵션을 제공해야 하는 환경 측면이 있을 수 있습니다. 이 경우 다음 오류가 발생할 수 있습니다.
+6.3에서 업그레이드하는 경우 이 섹션을 건너뜁니다. 제공된 crx2oak 프로필은 대부분의 고객의 요구를 충족해야 하지만, 추가 매개 변수가 필요한 경우가 있습니다. 마이그레이션 중에 오류가 발생하는 경우 추가 구성 옵션을 제공해야 하는 환경 측면이 있을 수 있습니다. 이 경우 다음 오류가 발생할 수 있습니다.
 
 **외부 데이터 저장소가 지정되지 않았으므로 체크포인트가 복사되지 않습니다. 이렇게 하면 첫 번째 시작 시 전체 저장소가 리인덱싱됩니다. 사용 —체크포인트를 건너뛰어 마이그레이션을 강제로 수행하거나 https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration에서 자세한 내용을 확인하십시오.**
 
@@ -161,7 +161,7 @@ While `FileDataStore` 외부 데이터 저장소를 사용할 필요가 없으�
 
 ### 올바른 업그레이드 시작 명령 확인 {#determining-the-correct-upgrade-start-command}
 
-업그레이드를 실행하려면 jar 파일을 사용하여 AEM을 시작하여 인스턴스를 불러오는 것이 중요합니다. 6.5로 업그레이드하려면에 있는 기타 콘텐츠 재구성 및 마이그레이션 옵션을 참조하십시오. [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) 업그레이드 명령으로 선택할 수 있습니다.
+업그레이드를 실행하려면 jar 파일을 사용하여 AEM을 시작하여 인스턴스를 불러오는 것이 중요합니다. 6.5로 업그레이드하려면에서 다른 콘텐츠 재구성 및 마이그레이션 옵션을 참조하십시오. [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) 업그레이드 명령으로 선택할 수 있습니다.
 
 >[!IMPORTANT]
 >

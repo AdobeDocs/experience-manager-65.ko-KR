@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2974'
+source-wordcount: '2973'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ AEM 서비스가 호출되었습니다. **PathRewriterTransformerFactory** 다�
 
 **events.plist** - 이 항목은 좀 특별합니다. 서론에서 언급했듯이 애플리케이션은 이벤트 위치의 마커가 포함된 맵 보기를 제공해야 합니다. 필요한 위치 정보는 PLIST 형식의 별도 파일로 제공됩니다. 이를 위해 인덱스 페이지에서 사용되는 이벤트 목록 구성 요소에 plist.jsp라는 스크립트가 있습니다. 이 스크립트는 구성 요소의 리소스를 `.plist` 확장명. 평소대로 구성 요소 경로는 경로 속성에 지정되며 유형은 을 사용하려고 하므로 content로 설정됩니다 [Sling 요청 처리](/help/sites-developing/the-basics.md#sling-request-processing).
 
-**events.touch.html** - 다음은 앱에 표시될 실제 페이지입니다. path 속성은 이벤트의 루트 페이지로 설정됩니다. 딥 속성의 기본값이 true이므로, 해당 페이지 아래의 모든 이벤트 페이지도 포함됩니다. 페이지를 구성 유형으로 사용하므로 페이지의 이미지 또는 다운로드 구성 요소에서 참조할 수 있는 모든 이미지 또는 기타 파일이 포함됩니다. 또한 터치 선택기를 설정하면 모바일 버전의 페이지가 제공됩니다. 기능 팩의 구성에는 이러한 종류의 항목이 더 포함되어 있지만 여기서는 간결성을 위해 생략되었습니다.
+**events.touch.html** - 다음은 앱에 표시되는 실제 페이지입니다. path 속성은 이벤트의 루트 페이지로 설정됩니다. 딥 속성의 기본값이 true이므로, 해당 페이지 아래의 모든 이벤트 페이지도 포함됩니다. 페이지를 구성 유형으로 사용하므로 페이지의 이미지 또는 다운로드 구성 요소에서 참조할 수 있는 모든 이미지 또는 기타 파일이 포함됩니다. 또한 터치 선택기를 설정하면 모바일 버전의 페이지가 제공됩니다. 기능 팩의 구성에는 이러한 종류의 항목이 더 포함되어 있지만 여기서는 간결성을 위해 생략되었습니다.
 
 **로고** - 로고 구성 유형은 지금까지 언급되지 않았으며 빌드-인 유형 중 어느 것도 아닙니다. 그러나 Content Sync 프레임워크는 어느 정도 확장 가능하며 그 예는 다음 섹션에서 다룹니다.
 

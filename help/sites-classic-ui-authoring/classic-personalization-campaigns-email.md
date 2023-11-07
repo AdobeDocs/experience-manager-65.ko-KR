@@ -1,19 +1,15 @@
 ---
 title: 이메일 마케팅
-seo-title: E-mail Marketing
 description: '이메일 마케팅(예: 뉴스레터)은 콘텐츠를 리드에 푸시하는 데 사용하는 마케팅 캠페인의 중요한 부분입니다. AEM에서는 기존 AEM 콘텐츠에서 뉴스레터를 생성하고 뉴스레터에만 해당하는 새 콘텐츠를 추가할 수 있습니다.'
-seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
-uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1764'
 ht-degree: 1%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >Adobe은 AEM SMTP 서비스에서 보낸 열기/바운스(배달할 수 없음) 전자 메일 추적을 더 강화하지 않을 계획입니다.
->권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 통합 활용](/help/sites-administering/campaign.md).
+>권장 사항은 [Adobe Campaign 및 AEM에 통합](/help/sites-administering/campaign.md).
 
 이메일 마케팅(예: 뉴스레터)은 콘텐츠를 리드에 푸시하는 데 사용하는 마케팅 캠페인의 중요한 부분입니다. AEM에서는 기존 AEM 콘텐츠에서 뉴스레터를 생성하고 뉴스레터에만 해당하는 새 콘텐츠를 추가할 수 있습니다.
 
@@ -173,7 +169,7 @@ Geometrixx의 뉴스레터 텍스트 구성 요소에 사전 정의된 변수를
 승인된 사용자만 뉴스레터를 전송할 수 있지만 다음을 사용자 정의해야 합니다.
 
 * 제목란을 통해 사용자가 이메일을 열고 뉴스레터가 스팸으로 표시되지 않도록 할 수 있습니다.
-* 보낸 사람 주소(예: noreply@geometrixx.com)로 지정된 주소에서 이메일을 받습니다.
+* 보낸 사람 주소(예: ) `noreply@geometrixx.com`을 입력하여 사용자가 지정된 주소에서 이메일을 받도록 할 수 있습니다.
 
 뉴스레터 설정을 사용자 지정하려면:
 
@@ -188,7 +184,7 @@ Geometrixx의 뉴스레터 텍스트 구성 요소에 사전 정의된 변수를
 
 1. 수정 **제목** 필요한 경우 이메일.
 
-1. 선택 **기본 수신자 목록** 드롭다운 목록에서 선택합니다.
+1. 선택 **기본 수신자 목록** 을 클릭합니다.
 
 1. **확인**&#x200B;을 클릭합니다.
 
@@ -223,7 +219,7 @@ Geometrixx의 뉴스레터 텍스트 구성 요소에 사전 정의된 변수를
 >[!NOTE]
 >
 >Adobe은 AEM SMTP 서비스에서 보낸 열기/바운스(배달할 수 없음) 전자 메일 추적을 더 강화하지 않을 계획입니다.
->권장 사항은 다음과 같습니다 [Adobe Campaign 및 AEM에 통합 활용](/help/sites-administering/campaign.md).
+>권장 사항은 [Adobe Campaign 및 AEM에 통합](/help/sites-administering/campaign.md).
 
 뉴스레터 또는 목록에서 뉴스레터를 전송할 수 있습니다. 두 절차 모두 설명되어 있습니다.
 

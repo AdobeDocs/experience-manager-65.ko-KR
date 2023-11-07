@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 96%
+source-wordcount: '571'
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 96%
 * 비교를 시작할 때 선택한 콘텐츠는 왼쪽(비교 시작 지점)에 표시됩니다.
 * 비교 대상 콘텐츠는 오른쪽(선택한 콘텐츠를 비교할 대상)에 표시됩니다.
 
-예를 들어 버전을 비교하는 경우 현재 버전은 왼쪽에 표시되고 이전 버전이 오른쪽에 표시됩니다.
+예를 들어 버전을 비교하는 경우, 현재 버전은 왼쪽에 표시되고 이전 버전이 오른쪽에 표시됩니다.
 
 두 페이지의 소스는 브라우저 창의 맨 위에 있는 헤더 막대에 명확하게 표시됩니다.
 
@@ -102,4 +102,4 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->페이지 차이 메커니즘 작업 및 페이지 차이에 영향을 줄 수 있는 제한 사항에 대한 자세한 내용은 이 기능의 [개발자 설명서](/help/sites-developing/pagediff.md)를 참조하십시오.
+>페이지 차이 메커니즘 작업 및 페이지 차이에 영향을 줄 수 있는 제한 사항에 대한 자세한 내용은 [개발자 설명서](/help/sites-developing/pagediff.md) 을 참조하십시오.

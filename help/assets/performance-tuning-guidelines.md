@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2740'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Experience Manager Assets] 성능 조정 가이드 {#assets-performance-tuning-guide}
 
-An [!DNL Experience Manager Assets] 설치 프로그램에는 많은 하드웨어, 소프트웨어 및 네트워크 구성 요소가 포함되어 있습니다. 배포 시나리오에 따라 성능 병목 현상을 제거하기 위해 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 특정 구성 변경이 필요할 수 있습니다.
+An [!DNL Experience Manager Assets] 설치 프로그램에는 몇 가지 하드웨어, 소프트웨어 및 네트워크 구성 요소가 포함되어 있습니다. 배포 시나리오에 따라 성능 병목 현상을 제거하기 위해 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 특정 구성 변경이 필요할 수 있습니다.
 
 또한 특정 하드웨어 및 소프트웨어 최적화 지침을 식별하고 준수하면 다음과 같은 작업을 수행할 수 있는 사운드 기반을 구축할 수 있습니다 [!DNL Experience Manager Assets] 성능, 확장성 및 안정성에 대한 기대치를 충족하는 구축
 
@@ -29,7 +29,7 @@ An [!DNL Experience Manager Assets] 설치 프로그램에는 많은 하드웨�
 
 ## Platform {#platform}
 
-Experience ManagerAdobe 은 여러 플랫폼에서 지원되지만 Linux 및 Windows의 기본 도구에 대한 지원이 가장 많기 때문에 최적의 성능과 구현 편의성에 기여합니다. 이상적으로는 의 높은 메모리 요구 사항을 충족하도록 64비트 운영 체제를 배포해야 합니다 [!DNL Experience Manager Assets] 배포. 모든 Experience Manager 배포와 마찬가지로 가능한 한 TarMK를 구현해야 합니다. TarMK는 단일 작성자 인스턴스 이상으로 확장할 수 없지만 MongoMK보다 성능이 더 좋습니다. TarMK 오프로드 인스턴스를 추가하여 의 워크플로 처리 능력을 향상시킬 수 있습니다. [!DNL Experience Manager Assets] 배포.
+Experience Manager은 여러 플랫폼에서 지원되지만 Adobe은 Linux 및 Windows에서 기본 도구를 가장 많이 지원하여 최적의 성능과 구현 편의성에 기여합니다. 이상적으로는 의 높은 메모리 요구 사항을 충족하도록 64비트 운영 체제를 배포해야 합니다 [!DNL Experience Manager Assets] 배포. 모든 Experience Manager 배포와 마찬가지로 가능한 한 TarMK를 구현해야 합니다. TarMK는 단일 작성자 인스턴스 이상으로 확장할 수 없지만 MongoMK보다 성능이 더 좋습니다. TarMK 오프로드 인스턴스를 추가하여 의 워크플로 처리 능력을 향상시킬 수 있습니다. [!DNL Experience Manager Assets] 배포.
 
 ### 임시 폴더 {#temp-folder}
 
@@ -161,7 +161,7 @@ Adobe은 많은 회사에 HTTP 트래픽을 스니프하는 방화벽이 있어 
 
 1. 값 업데이트 **[!UICONTROL 최대 병렬 작업]** 및 클릭 **[!UICONTROL 저장]**.
 
-큐를 사용 가능한 프로세서의 절반으로 설정하면 시작할 수 있는 해결 방법입니다. 그러나 최대 처리량을 달성하고 환경별로 조정하려면 이 수를 늘리거나 줄여야 할 수 있습니다. 외부 워크플로우와 같은 기타 프로세스뿐만 아니라 임시 워크플로우 및 비임시 워크플로우에 대한 별도의 대기열이 있습니다. 프로세서의 50%로 설정된 여러 대기열이 동시에 활성화되면 시스템이 빠르게 오버로드될 수 있습니다. 많이 사용되는 대기열은 사용자 구현에 따라 크게 다릅니다. 따라서 서버 안정성을 떨어뜨리지 않고 최대 효율성을 위해 신중하게 구성해야 할 수 있습니다.
+큐를 사용 가능한 프로세서의 절반으로 설정하면 시작할 수 있는 해결 방법입니다. 그러나 최대 처리량을 달성하고 환경별로 조정하려면 이 수를 늘리거나 줄여야 할 수 있습니다. 임시 및 비임시 워크플로우 및 외부 워크플로우와 같은 기타 프로세스에 대한 별도의 대기열이 있습니다. 프로세서의 50%로 설정된 여러 대기열이 동시에 활성화되면 시스템이 빠르게 오버로드될 수 있습니다. 많이 사용되는 대기열은 사용자 구현에 따라 크게 다릅니다. 따라서 서버 안정성을 떨어뜨리지 않고 최대 효율성을 위해 신중하게 구성해야 할 수 있습니다.
 
 ### DAM 자산 업데이트 구성 {#dam-update-asset-configuration}
 
@@ -212,7 +212,7 @@ Adobe은 많은 회사에 HTTP 트래픽을 스니프하는 방화벽이 있어 
 >
 >ImageMagick `policy.xml` 및 `configure.xml` 파일은에서 사용할 수 있습니다. `/usr/lib64/ImageMagick-&#42;/config/` 대신 `/etc/ImageMagick/`.See [ImageMagick 설명서](https://www.imagemagick.org/script/resources.php) 구성 파일의 위치입니다.
 
-을 사용하는 경우 [!DNL Experience Manager] 대량의 PSD 또는 PSB 파일을 처리하려는 경우 Adobe Managed Services(AMS)에서 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 담당자와 협력하여 AMS 배포에 이러한 모범 사례를 구현하고 Adobe의 고유 형식에 가장 적합한 도구와 모델을 선택하십시오. [!DNL Experience Manager] 은 x 23000 픽셀보다 30000픽셀 이상 높은 해상도의 PSB 파일을 처리하지 못할 수 있습니다.
+을 사용하는 경우 [!DNL Experience Manager] Managed Services(AMS) Adobe에서 많은 대용량 PSD 또는 PSB 파일을 처리할 계획인 경우 고객 지원 Adobe에 문의하십시오. Adobe 고객 지원 담당자와 협력하여 AMS 배포에 이러한 모범 사례를 구현하고 Adobe의 고유 형식에 가장 적합한 도구와 모델을 선택하십시오. [!DNL Experience Manager] 은 x 23000 픽셀보다 30000픽셀 이상 높은 해상도의 PSB 파일을 처리하지 못할 수 있습니다.
 
 ### XMP 원본에 쓰기 {#xmp-writeback}
 

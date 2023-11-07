@@ -10,10 +10,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 79%
+source-wordcount: '521'
+ht-degree: 81%
 
 ---
 
@@ -98,7 +98,7 @@ Live Copy는 *소스 분기에서* *론치 분기로* 콘텐츠를 동기화하�
 
       * **속성 편집**&#x200B;을 선택하십시오.
 
-   세부 정보가 표시됩니다.
+   세부 사항이 표시됩니다.
 
 1. 필요한 변경 내용을 적용한 다음 **저장**&#x200B;을 사용하여 확인합니다.
 

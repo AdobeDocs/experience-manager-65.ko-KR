@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1339'
-ht-degree: 47%
+ht-degree: 46%
 
 ---
 
@@ -220,7 +220,7 @@ GITHUB의 코드
 
 ## 새 페이지 작업 추가 {#add-a-new-page-action}
 
-페이지 도구 모음에 새 페이지 작업을 추가합니다(예: **Sites로 돌아가기**(콘솔) 작업).
+페이지 도구 모음에 새 페이지 작업을 추가하려면(예: ) **사이트로 돌아가기** (콘솔) 작업.
 
 ### 코드 샘플 {#code-sample-3}
 

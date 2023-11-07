@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1745'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->새로운 구현의 경우 다음 작업을 수행하는 것이 좋습니다. **사용하지 않음** 비디오 추적에 대한 레거시 옵션입니다. 다음을 사용하십시오. **마일스톤** 메서드를 사용하십시오.
+>새로운 구현의 경우 다음 작업을 수행하는 것이 좋습니다. **사용하지 않음** 비디오 추적에 대한 레거시 옵션입니다. 사용 **마일스톤** 메서드를 사용하십시오.
 
 ## 일반적인 단계 {#common-steps}
 
@@ -376,7 +376,7 @@ eventdata.events.milestoneXX
 
    ![초](assets/lseconds.png)
 
-   *이 호출은 위의 레거시 이정표 호출과 유사합니다. pev3에 대한 정보를 참조하십시오.**[거기에 제공된](/help/sites-administering/adobeanalytics.md)**.*
+   *이 호출은 위의 레거시 이정표 호출과 유사합니다. pev3에 대한 정보 참조&#x200B;**[거기에 제공된](/help/sites-administering/adobeanalytics.md)**.*
 
 **이 자습서에 사용된 참조:**
 

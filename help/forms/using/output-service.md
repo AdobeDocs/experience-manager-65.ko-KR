@@ -10,7 +10,7 @@ topic-tags: document_services
 discoiquuid: 51ab91ff-c0c0-4165-ae02-f306e45eea03
 docset: aem65
 exl-id: 1b62e1c1-428d-4c0f-98a8-486f319fa581
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 6%
@@ -40,7 +40,7 @@ Output 서비스를 사용하면 다음과 같은 기능을 제공하는 애플�
 
 일반적으로 AEM Forms Designer를 사용하여 템플릿을 만듭니다. 다음 `generatePDFOutput` 및 `generatePrintedOutput` 출력 서비스의 API를 사용하면 이러한 템플릿을 PDF, PostScript, ZPL 및 PCL을 비롯한 다양한 형식으로 직접 변환할 수 있습니다.
 
-다음 `generatePDFOutput` 작업이 PDF을 생성하는 반면 `generatePrintedOutput` 작업은 PostScript, ZPL 및 PCL 형식을 생성합니다. 두 작업의 첫 번째 매개변수는 템플릿 파일의 이름을 허용합니다(예: `ExpenseClaim.xdp`) 또는 템플릿을 포함하는 Document 객체 템플릿 파일의 이름을 지정할 때 컨텐트 루트도 템플릿이 들어 있는 폴더의 경로로 지정합니다. 다음 중 하나를 사용하여 콘텐츠 루트를 지정할 수 있습니다. `PDFOutputOptions` 또는 `PrintedOutputOptions` 매개 변수. 이러한 매개 변수를 사용하여 지정할 수 있는 기타 옵션에 대한 자세한 내용은 Javadoc을 참조하십시오.
+다음 `generatePDFOutput` 작업이 PDF을 생성하는 반면 `generatePrintedOutput` 작업은 PostScript, ZPL 및 PCL 형식을 생성합니다. 두 작업의 첫 번째 매개 변수는 템플릿 파일의 이름 중 하나를 허용합니다(예: `ExpenseClaim.xdp`) 또는 템플릿을 포함하는 Document 객체 템플릿 파일의 이름을 지정할 때 컨텐트 루트도 템플릿이 들어 있는 폴더의 경로로 지정합니다. 다음 중 하나를 사용하여 콘텐츠 루트를 지정할 수 있습니다. `PDFOutputOptions` 또는 `PrintedOutputOptions` 매개 변수. 이러한 매개 변수를 사용하여 지정할 수 있는 기타 옵션에 대한 자세한 내용은 Javadoc을 참조하십시오.
 
 두 번째 매개 변수는 출력 문서를 생성하는 동안 템플릿과 병합되는 XML 문서를 허용합니다.
 

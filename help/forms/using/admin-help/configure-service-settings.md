@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10699'
+source-wordcount: '10694'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ IBM FileNet용 Content Repository Connector를 사용하면 IBM FileNet 저장�
 
 ## PDF 서비스 설정 변환 {#convert-pdf-service-settings}
 
-PDF 변환 서비스( `ConvertPdfService`) PDF 문서를 PostScript와 다양한 이미지 형식(JPEG, JPEG 2000, PNG 및 TIFF)으로 변환합니다. PDF 문서를 PostScript로 변환하면 모든 PostScript 프린터에서 무인 서버 기반 인쇄에 유용합니다. PDF 문서를 다중 페이지 TIFF 파일로 변환하는 것은 PDF 문서를 지원하지 않는 컨텐츠 관리 시스템에 문서를 보관할 때 실용적입니다.
+PDF 변환 서비스( `ConvertPdfService`) PDF 문서를 PostScript와 여러 이미지 형식(JPEG, JPEG 2000, PNG 및 TIFF)으로 변환합니다. PDF 문서를 PostScript로 변환하면 모든 PostScript 프린터에서 무인 서버 기반 인쇄에 유용합니다. PDF 문서를 다중 페이지 TIFF 파일로 변환하는 것은 PDF 문서를 지원하지 않는 컨텐츠 관리 시스템에 문서를 보관할 때 실용적입니다.
 
 PDF 변환 서비스에 다음 설정을 사용할 수 있습니다.
 
@@ -243,7 +243,7 @@ FTP 서비스에는 다음 설정을 사용할 수 있습니다.
 
 ## PDF 서비스 설정 생성 {#generate-pdf-service-settings}
 
-PDF 서비스 생성( `GeneratePDFService`)는 다양한 기본 형식의 파일을 PDF 문서로 변환하고 PDF 문서를 다양한 파일 형식으로 변환합니다.
+PDF 서비스 생성( `GeneratePDFService`)는 다양한 기본 형식의 파일을 PDF 문서로 변환하고 PDF 문서를 여러 파일 형식으로 변환합니다.
 
 PDF 생성 서비스에 다음 설정을 사용할 수 있습니다.
 
@@ -326,7 +326,7 @@ PDF 생성 서비스에 다음 설정을 사용할 수 있습니다.
 
 ### 서버 클러스터에서 안내서 사용 {#using-guides-in-a-server-cluster}
 
-고정 세션을 사용하지 않는 서버 클러스터에서 가이드를 렌더링하면 NullPointerException으로 실패합니다. Guides 요청은 기본적으로 생성되는 서버에 고유한 보안 URL을 활용합니다. 고정 세션을 사용하는 클러스터에서 요청이 클러스터의 한 노드에 도달한 후 해당 세션 또는 사용자에 대한 모든 후속 요청이 해당 서버로만 라우팅되고 모든 것이 정상입니다. 고정 세션을 사용하지 않는 클러스터에서는 후속 요청이 클러스터의 모든 서버에 도달할 수 있습니다. 요청이 히트한 서버가 원래 서버가 아닌 경우 보안 URL을 확인하지 못합니다.
+고정 세션을 사용하지 않는 서버 클러스터에서 가이드를 렌더링하면 NullPointerException으로 실패합니다. Guides 요청에서는 기본적으로 이 URL이 생성된 서버에 고유한 보안 URL을 사용합니다. 고정 세션을 사용하는 클러스터에서 요청이 클러스터의 한 노드에 도달한 후 해당 세션 또는 사용자에 대한 모든 후속 요청이 해당 서버로만 라우팅되고 모든 것이 정상입니다. 고정 세션을 사용하지 않는 클러스터에서는 후속 요청이 클러스터의 모든 서버에 도달할 수 있습니다. 요청이 히트한 서버가 원래 서버가 아닌 경우 보안 URL을 확인하지 못합니다.
 
 고정 세션을 사용하지 않는 서버 클러스터에서 Guides를 사용하는 경우 GuidesUtility 서비스에 대한 macKeySeed 값을 설정한 다음 클러스터를 중지하고 시작합니다.
 
@@ -826,7 +826,7 @@ forms server에서는 각 서비스에 대한 보안 설정을 구성하여 서�
    * **감독자_PERM:** 프로세스에서 생성된 서비스에 대한 프로세스 인스턴스 데이터를 보려면
    * **START_STOP_PERM:** 서비스를 시작 및 정지하려면
    * **ADD_REMOVE_ENDPOINTS_PERM:** 서비스의 끝점을 추가, 제거 및 수정하려면
-   * **CREATE_VERSION_PERM:** 서비스의 새 버전을 만들려면
+   * **CREATE_VERSION_PERM:** 서비스 버전을 생성하려면 다음을 수행하십시오
    * **DELETE_버전_PERM:** 서비스 버전을 삭제하려면
    * **MODIFY_버전_PERM:** 서비스 버전을 수정하려면 다음을 수행합니다
    * **읽기(_P):** 서비스를 보려면

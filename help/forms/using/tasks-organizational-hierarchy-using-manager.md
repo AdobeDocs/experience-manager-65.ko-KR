@@ -1,17 +1,13 @@
 ---
 title: 관리자 보기를 사용하여 조직 계층에서 작업 관리
-seo-title: Managing tasks in an organizational hierarchy using Manager View
 description: AEM Forms 작업 영역의 할 일 탭에서 관리자 및 조직 수장이 직접 및 간접 보고서의 작업에 액세스하고 작업할 수 있는 방법입니다.
-seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
-uuid: c44c55e6-6cc1-417d-8e89-c8d5c32914c8
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -68,7 +64,7 @@ AEM Forms은 사용자의 액세스를 사용자에게 ACL(액세스 제어)이 
    }
    ```
 
-1. component.xml 파일을 만듭니다. spec-id가 아래 코드 조각에 표시된 것과 동일해야 합니다. 다음은 재사용할 수 있는 샘플 코드 조각입니다.
+1. component.xml 파일을 만듭니다. spec-id가 아래 코드 조각에 표시된 것과 동일한지 확인하십시오. 다음은 재사용할 수 있는 샘플 코드 조각입니다.
 
    ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">

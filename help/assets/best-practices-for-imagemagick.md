@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%
@@ -60,7 +60,7 @@ ImageMagic 설치 파일의 여러 버전은 다양한 운영 체제에서 사�
 
    >[!NOTE]
    >
-   >다음 `convert` 명령이 기본 버전과 충돌하기 때문에 특정 Windows 버전(예: Windows SE)에서는 실행되지 않을 수 있습니다 `convert` Windows 설치의 일부인 유틸리티입니다. 이 경우 ImageMagick 유틸리티의 전체 경로를 언급하십시오. 예를 들어, 을 지정합니다.
+   >다음 `convert` 명령은 기본 버전과 충돌하기 때문에 특정 Windows 버전(예: Windows SE)에서는 실행되지 않을 수 있습니다 `convert` Windows 설치의 일부인 유틸리티입니다. 이 경우 ImageMagick 유틸리티의 전체 경로를 언급하십시오. 예를 들어, 을 지정합니다.
    >
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`

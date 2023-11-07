@@ -1,23 +1,19 @@
 ---
-title: 새 로그인 화면 만들기
-seo-title: Creating a new login screen
-description: 'LiveCycle 모듈의 로그인 페이지 수정 방법(예: AEM Forms 작업 영역 또는 Forms Manager)'
-seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
-uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
+title: 로그인 화면 만들기
+description: AEM Forms 작업 영역 또는 Forms Manager와 같은 LiveCycle 모듈의 로그인 페이지를 수정하는 방법
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '460'
 ht-degree: 7%
 
 ---
 
-# 새 로그인 화면 만들기{#creating-a-new-login-screen}
+# 로그인 화면 만들기{#creating-a-new-login-screen}
 
 AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 화면을 수정할 수 있습니다. 예를 들어 수정 사항은 Forms Manager 및 AEM Forms 작업 공간 의 로그인 화면에 모두 영향을 줍니다.
 
@@ -57,9 +53,10 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
 
 1. 폴더에서 `en`, 다음 작업을 수행합니다.
 
-   1. 지원할 로케일 이름으로 폴더 이름을 변경합니다. (예: `ar`)
+   1. 지원할 로케일 이름으로 폴더 이름을 변경합니다. 예: `ar`
 
    1. 속성 변경 `jcr:language` 값: 까지 `ar`(용) `ar` 폴더가 있어야 합니다).
+
    >[!NOTE]
    >
    >locale이 언어-국가 코드 조합인 경우, 예: `ar-DZ`을 클릭한 다음 폴더 이름 및 속성 값을 로 변경합니다. `ar-DZ`.
@@ -212,6 +209,7 @@ String browserLocale = "en";
       * 변환 전: `/libs/livecycle/core/components/login`
 
       * 끝 `/apps/livecycle/core/components/login`
+
    1. 수정 `/apps/livecycle/core/components/login/login.jsp` 를 눌러 새로 추가된 텍스트를 통합합니다.
 
    ![새 키-값 쌍 추가](assets/capture_new.png)
@@ -254,8 +252,8 @@ String browserLocale = "en";
       * 변환 전: `/libs/livecycle/core/components/login`
 
       * 끝 `/apps/livecycle/core/components/login`
-   1. 수정 `/apps/livecycle/core/components/login/login.jsp` 새로 추가된 스타일을 통합합니다.
 
+   1. 수정 `/apps/livecycle/core/components/login/login.jsp` 새로 추가된 스타일을 통합합니다.
 
 
 예:
@@ -272,15 +270,15 @@ css.newLoginContentArea {
 * 에서 다음 수정 `/apps/livecycle/core/components/login.jsp`.
 
 
-   ```jsp
-   <div class="loginContentArea">
-   ```
+  ```jsp
+  <div class="loginContentArea">
+  ```
 
-   끝
+  끝
 
-   ```jsp
-   <div class="newLoginContentArea">
-   ```
+  ```jsp
+  <div class="newLoginContentArea">
+  ```
 
 >[!NOTE]
 >

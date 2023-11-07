@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2340'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ Forms 서비스를 사용하면 HTML 양식으로 렌더링되는 도구 모음�
 
 >[!NOTE]
 >
->이 URI 위치는 adobe-forms-dsc.jar 파일에 있는 adobe-forms-core.jar 파일에 있습니다. adobe-forms-dsc.jar 파일은 C:\Adobe\Adobe_Experience_Manager_forms\ 폴더(C:\은 설치 디렉토리)에 있습니다. Win RAR과 같은 파일 추출 도구를 사용하여 adobe를 열 수 있습니다.
+>이 URI 위치는 adobe-forms-dsc.jar 파일에 있는 adobe-forms-core.jar 파일에 있습니다. adobe-forms-dsc.jar 파일은 C:\Adobe\Adobe_Experience_Manager_forms\ 폴더에 있습니다(C:\은 설치 디렉토리). Win RAR과 같은 파일 추출 도구를 사용하여 adobe를 열 수 있습니다.
 
-이 위치에서 fscmenu.xml을 복사하고 요구 사항에 맞게 수정한 다음 사용자 지정 URI 위치에 배치할 수 있습니다. 그런 다음 Forms 서비스 API를 사용하여 지정된 위치에서 fscmenu.xml 파일을 사용하는 Forms 서비스를 생성하는 런타임 옵션을 설정합니다. 이러한 작업을 수행하면 Forms 서비스에서 사용자 지정 도구 모음이 있는 HTML 양식을 렌더링합니다.
+이 위치에서 fscmenu.xml을 복사하고 요구 사항에 맞게 수정한 다음 사용자 지정 URI 위치에 배치할 수 있습니다. 그런 다음 Forms 서비스 API를 사용하여 지정된 위치에서 fscmenu.xml 파일을 사용하여 Forms 서비스를 생성하는 런타임 옵션을 설정합니다. 이러한 작업을 수행하면 Forms 서비스에서 사용자 지정 도구 모음이 있는 HTML 양식을 렌더링합니다.
 
 fscmenu.xml 파일 외에 다음 파일도 가져와야 합니다.
 
@@ -56,7 +56,7 @@ fscCSS는 특정 노드와 연결된 스타일 시트입니다. CSS 파일의 �
 >
 >이러한 파일을 참조하는 방식을 혼합하지 않는 것이 좋습니다. 즉, 다음 중 하나를 사용하여 모든 URI를 참조해야 합니다. `FSToolBarURI` 키워드 또는 절대 위치입니다.
 
-adobe-forms를 열어 JS 및 CSS 파일을 가져올 수 있습니다.&lt;appserver>.ear 파일입니다. 이 파일 내에서 adobe-forms-res.war를 엽니다. 이러한 파일은 모두 WAR 파일에 있습니다. Adobe-forms-&lt;appserver>.ear 파일은 AEM forms 설치 폴더에 있습니다(C:\ 는 설치 디렉토리). adobe-forms를 열 수 있습니다.&lt;appserver>WinRAR과 같은 파일 추출 도구를 사용하는 .ear.
+adobe-forms를 열어 JS 및 CSS 파일을 가져올 수 있습니다.&lt;appserver>.ear 파일입니다. 이 파일 내에서 adobe-forms-res.war를 엽니다. 이 모든 파일은 WAR 파일에 있습니다. Adobe-forms-&lt;appserver>.ear 파일은 AEM forms 설치 폴더에 있습니다(C:\ 는 설치 디렉토리). adobe-forms를 열 수 있습니다.&lt;appserver>WinRAR과 같은 파일 추출 도구를 사용하는 .ear.
 
 다음 XML 구문은 fscmenu.xml 파일의 예를 보여 줍니다.
 

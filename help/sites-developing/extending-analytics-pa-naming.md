@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '856'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ CQ 변수를 `s.pageName` 프레임워크의 속성, 값 `s.pageName` 은 페이
 
 ## Analytics 보고의 연속성 유지 {#maintaining-continuity-in-analytics-reporting}
 
-페이지에 대한 분석 데이터의 전체 내역을 유지 관리하려면 페이지에 사용되는 s.pageName 속성의 값이 변경되지 않아야 합니다. 그러나 기본 페이지 구성 요소가 정의하는 분석 속성은 쉽게 변경할 수 있습니다. 예를 들어 페이지를 이동하면 의 값이 변경됩니다. `pagedata.path` 보고 기록의 연속성을 깨트립니다.
+페이지에 대한 분석 데이터의 전체 내역을 유지 관리하려면 페이지에 사용되는 s.pageName 속성의 값이 변경되지 않아야 합니다. 그러나 기본 페이지 구성 요소가 정의하는 분석 속성은 쉽게 변경할 수 있습니다. 예를 들어 페이지를 이동하면 의 값이 변경됩니다 `pagedata.path` 보고 기록의 연속성을 깨트립니다.
 
 * 이전 경로에 대해 수집된 데이터는 더 이상 페이지와 연결되지 않습니다.
 * 다른 페이지가 한 번 사용한 경로를 사용하는 경우 다른 페이지는 해당 경로에 대한 데이터를 상속합니다.

@@ -1,16 +1,12 @@
 ---
 title: 데이터 소스 구성
-seo-title: Configure data sources
-description: 다양한 유형의 데이터 소스를 구성하고 을 활용하여 양식 데이터 모델을 만드는 방법을 알아봅니다.
-seo-description: Learn how to configure different types of data sources and leverage to create form data models.
-uuid: 12360c8c-b596-4f9b-837a-10a8ff5c7448
+description: 양식 데이터 모델을 만들 수 있도록 다양한 유형의 데이터 소스를 구성하는 방법에 대해 알아봅니다.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2111'
 ht-degree: 2%
@@ -103,7 +99,7 @@ AEM의 모든 클라우드 서비스 구성은 `/conf` 폴더를 AEM 리포지�
 
 클라우드 서비스 구성에 대한 폴더를 구성하려면 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > 구성 브라우저]**.
+1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다.
    * 다음을 참조하십시오. [구성 브라우저](/help/sites-administering/configurations.md) 설명서 를 참조하십시오.
 1. 클라우드 구성에 대한 전역 폴더를 활성화하려면 다음을 수행하거나 클라우드 서비스 구성에 대한 다른 폴더를 만들고 구성하려면 이 단계를 건너뜁니다.
 
@@ -111,7 +107,7 @@ AEM의 모든 클라우드 서비스 구성은 `/conf` 폴더를 AEM 리포지�
 
    1. 다음에서 **[!UICONTROL 구성 속성]** 대화 상자, 활성화 **[!UICONTROL 클라우드 구성]**.
 
-   1. 누르기 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
+   1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 구성을 저장하고 대화 상자를 종료합니다.
 
 1. 다음에서 **[!UICONTROL 구성 브라우저]**, 탭 **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자에서 폴더의 제목을 지정하고 활성화합니다. **[!UICONTROL 클라우드 구성]**.

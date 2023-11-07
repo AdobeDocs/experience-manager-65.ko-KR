@@ -1,17 +1,15 @@
 ---
 title: Adobe Campaign 구성 요소와 통합
 description: Adobe Campaign과 통합하면 뉴스레터 및 양식으로 작업할 때 사용할 수 있는 구성 요소가 있습니다.
-uuid: a858d5ca-aa6e-4bde-92db-a6dcd8b48ae6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2836'
+source-wordcount: '2835'
 ht-degree: 11%
 
 ---
@@ -24,7 +22,7 @@ Adobe Campaign과 통합하면 뉴스레터 및 양식으로 작업할 때 사�
 >
 >AEM 이메일 구성 요소는 더 이상 사용되지 않습니다. 콘텐츠와 스타일을 병합하는 이메일의 특성상 AEM에서 즉시 제공하는 이메일 구성 요소는 프로젝트에 필요한 모든 구성 요소로 사용자 정의 스타일을 구현해야 하므로 고객이 제한적으로 재사용할 수 있습니다.
 >
->이메일 구성 요소는 프로젝트 수준에서 구현할 수 있으며, 더 이상 사용되지 않는 AEM 이메일 구성 요소는 이를 구현하는 방법을 보여 줍니다. 단, 이렇게 사용되지 않는 구성 요소는 프로젝트에서 사용할 수 없습니다.
+>이메일 구성 요소는 프로젝트 수준에서 구현할 수 있으며, 더 이상 사용되지 않는 AEM 이메일 구성 요소는 이를 구현하는 방법을 보여 줍니다. 그러나 프로젝트에서 이러한 사용되지 않는 구성 요소는 사용하지 마십시오.
 
 ## Adobe Campaign 뉴스레터 구성 요소 {#adobe-campaign-newsletter-components}
 
@@ -387,7 +385,7 @@ Adobe Campaign 구성 요소에는 모든 구성 요소에서 공통되는 설�
 
 ### 날짜 필드(캠페인) 및 날짜 필드/HTML 5(캠페인) {#date-field-campaign-and-date-field-html-campaign}
 
-날짜 필드를 사용하여 수신자의 날짜를 허용할 수 있습니다. 예를 들어 수신자가 생년월일을 지정하도록 할 수 있습니다. 날짜 형식은 Adobe Campaign 인스턴스에 사용된 형식과 일치합니다.
+날짜 필드를 사용하여 수신자의 날짜를 허용할 수 있습니다. 예를 들어, 수신자가 생년월일을 지정하도록 할 수 있습니다. 날짜 형식은 Adobe Campaign 인스턴스에 사용된 형식과 일치합니다.
 
 에 더하여 [대부분의 Adobe Campaign 구성 요소에 공통되는 설정](#settings-common-to-most-components), 다음을 구성할 수 있습니다.
 
@@ -438,7 +436,7 @@ Adobe Campaign 프로필 데이터를 표시하고 수정하는 각 양식 **필
 
 ### 숫자 필드(캠페인) {#numeric-field-campaign}
 
-수신자가 나이 등의 숫자를 입력할 수 있도록 하려면 숫자 필드를 사용하십시오.
+숫자 필드를 사용하여 수신자가 숫자(예: 나이)를 입력할 수 있도록 합니다.
 
 에 더하여 [대부분의 Adobe Campaign 구성 요소에 공통되는 설정](#settings-common-to-most-components), 다음을 구성할 수 있습니다.
 

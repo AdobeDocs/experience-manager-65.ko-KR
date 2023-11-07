@@ -8,7 +8,7 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 3%
@@ -41,7 +41,7 @@ AEM Communities은 다음에 대해 이메일을 사용합니다.
 
 다음 문서에 따라 결정됩니다. [이메일 알림 구성](../../help/sites-administering/notification.md), 하지만 필드에 차이가 있음 `"From" address` 은(는) *아님* 필수 항목이며, 비워 두어야 합니다.
 
-예(설명 목적으로만 값 입력):
+예를 들어 (설명 목적으로만 값으로 채워짐),
 
 ![email-config](assets/email-config.png)
 

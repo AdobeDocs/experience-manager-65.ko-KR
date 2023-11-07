@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 2%
@@ -578,13 +578,13 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td><p>Day Communique 태깅 OSGi 번들을 다시 시작하면 이전 위치가 비어 있는 경우에만 새 위치가 태그 루트로 등록됩니다.</p> <p>이전 위치에 대한 참조는 태그 해결을 위해 AEM TagManager API를 활용하는 모든 기능에 대해 새 위치로 마이그레이션한 후에도 계속 작동합니다.</p> <p>경로를 명시적으로 참조하는 모든 사용자 지정 코드 <code>/etc/tags</code> 을(를) (으)로 업데이트해야 합니다. <span class="code">/content/
+   <td><p>Day Communique 태깅 OSGi 번들을 다시 시작하면 이전 위치가 비어 있는 경우에만 새 위치가 태그 루트로 등록됩니다.</p> <p>이전 위치에 대한 참조는 태그 해결을 위해 AEM TagManager API를 사용하는 모든 기능에 대해 새 위치로 마이그레이션한 후에도 계속 작동합니다.</p> <p>경로를 명시적으로 참조하는 모든 사용자 지정 코드 <code>/etc/tags</code> 을(를) (으)로 업데이트해야 합니다. <span class="code">/content/
       <code>
        cq
       </code>
       <code>
        :tags
-      </code></span>또는 이 마이그레이션과 함께 TagManager Java API를 활용하도록 다시 작성하는 것이 좋습니다.</p> </td>
+      </code></span>, 또는 이 마이그레이션과 함께 TagManager Java API를 사용하도록 다시 작성하는 것이 좋습니다.</p> </td>
   </tr>
  </tbody>
 </table>

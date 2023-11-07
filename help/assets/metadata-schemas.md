@@ -7,10 +7,10 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3618'
-ht-degree: 9%
+source-wordcount: '3616'
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 9%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 조직은 자산 검색, 사용, 상호 운용성 등을 향상시키는 메타데이터 모델을 고안합니다. 올바른 메타데이터 애플리케이션은 메타데이터 기반 워크플로우 및 프로세스를 유지 관리하는 데 불가항력적입니다. 조직 전체의 메타데이터 전략 및 표준을 준수하기 위해 DAM 사용자가 조정할 수 있도록 도와주는 메타데이터 스키마를 사용할 수 있습니다. [!DNL Adobe Experience Manager] 쉽고 유연한 방법으로 메타데이터 스키마를 만들고, 유지하고, 적용할 수 있습니다.
@@ -45,18 +45,18 @@ ht-degree: 9%
 
 [!DNL Experience Manager] 는 다음 메타데이터 스키마 양식 템플릿을 제공합니다.
 
-| 템플릿 |  | 설명 |
+| 템플릿 | | 설명 |
 |---|---|---|
-| [!UICONTROL 기본값] |  | 에셋의 기본 메타데이터 스키마 양식. |
-|  | 다음 자식 폼은 [!UICONTROL 기본값] 양식: |  |
-|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media 비디오용 스키마 양식. |
-|  | <ul><li>[!UICONTROL 이미지]</li></ul> | 다음과 같은 MIME 유형의 이미지에 대한 스키마 양식 `image/jpeg` 및 `image/png`. <br> 다음 [!UICONTROL 이미지] 양식에는 다음과 같은 하위 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형이 있는 에셋의 스키마 양식 [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF이 있는 에셋의 스키마 양식.</li></ul> |
-|  | <ul><li>[!UICONTROL 애플리케이션]</li></ul> | MIME 유형의 자산에 대한 스키마 양식: `application/pdf` 및 `application/zip`. <br>[!UICONTROL pdf]: 하위 유형 PDF이 있는 에셋의 스키마 양식. |
-|  | <ul><li>[!UICONTROL 비디오]</li></ul> | MIME 유형의 비디오 자산에 대한 스키마 양식: `video/avi` 및 `video/mp4`. |
-| [!UICONTROL 컬렉션] |  | 컬렉션에 대한 스키마 양식입니다. |
-| [!UICONTROL contentfragment] |  | [콘텐츠 조각용 스키마 양식](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL 양식] |  | 이 스키마 양식과 관련된 항목 [Adobe Experience Manager Forms](/help/forms/home.md). |
-| [!UICONTROL ugc_contentfragment] |  | 소셜 미디어에서 Experience Manager에 통합된 사용자 생성 콘텐츠 부분 및 에셋에 대한 스키마 양식입니다. |
+| [!UICONTROL 기본값] | | 에셋의 기본 메타데이터 스키마 양식. |
+| | 다음 자식 폼은 [!UICONTROL 기본값] 양식: | |
+| | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media 비디오용 스키마 양식. |
+| | <ul><li>[!UICONTROL 이미지]</li></ul> | 다음과 같은 MIME 유형의 이미지에 대한 스키마 양식 `image/jpeg` 및 `image/png`. <br> 다음 [!UICONTROL 이미지] 양식에는 다음과 같은 하위 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형이 있는 에셋의 스키마 양식 [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF이 있는 에셋의 스키마 양식.</li></ul> |
+| | <ul><li>[!UICONTROL 애플리케이션]</li></ul> | MIME 유형의 자산에 대한 스키마 양식: `application/pdf` 및 `application/zip`. <br>[!UICONTROL pdf]: 하위 유형 PDF이 있는 에셋의 스키마 양식. |
+| | <ul><li>[!UICONTROL 비디오]</li></ul> | MIME 유형의 비디오 자산에 대한 스키마 양식: `video/avi` 및 `video/mp4`. |
+| [!UICONTROL 컬렉션] | | 컬렉션에 대한 스키마 양식입니다. |
+| [!UICONTROL contentfragment] | | [콘텐츠 조각용 스키마 양식](/help/sites-developing/customizing-content-fragments.md). |
+| [!UICONTROL 양식] | | 이 스키마 양식과 관련된 항목 [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL ugc_contentfragment] | | 소셜 미디어에서 Experience Manager에 통합된 사용자 생성 콘텐츠 부분 및 에셋에 대한 스키마 양식입니다. |
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ ht-degree: 9%
 | [!UICONTROL 날짜] | 날짜 구성 요소를 추가합니다. |
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
 | [!UICONTROL 표준 태그] | 태그 추가. |
-| [!UICONTROL 스마트 태그] | 를 추가하여 메타데이터 태그를 자동으로 추가하여 검색 기능을 강화합니다. |
+| [!UICONTROL 스마트 태그] | 메타데이터 태그를 자동으로 추가하여 검색 기능을 보강합니다. |
 | [!UICONTROL 숨김 필드] | 숨겨진 필드를 추가합니다. 에셋이 저장될 때 POST 매개 변수로 전송됩니다. |
 | [!UICONTROL 자산 참조자] | 자산이 참조하는 자산 목록을 보려면 이 구성 요소를 추가하십시오. |
 | [!UICONTROL 자산 참조] | 를 추가하여 에셋을 참조하는 에셋 목록을 표시합니다. |
@@ -194,9 +194,9 @@ The schema editor lets you add or delete a tab. The default schema form includes
 
    ![select_form](assets/select_form.png)
 
-1. (선택 사항) 메타데이터 스키마 편집기에서 조건화할 새 필드를 만듭니다. 에서 이름 및 속성 경로 지정 **[!UICONTROL 설정]** 탭.
+1. (선택 사항) 메타데이터 스키마 편집기에서 조건화할 필드를 만듭니다. 에서 이름 및 속성 경로 지정 **[!UICONTROL 설정]** 탭.
 
-   새 탭을 만들려면 `+` 탭을 추가한 다음 메타데이터 필드를 추가합니다.
+   탭을 만들려면 `+` 탭을 추가한 다음 메타데이터 필드를 추가합니다.
 
    ![add_tab](assets/add_tab.png)
 
@@ -280,7 +280,6 @@ The schema editor lets you add or delete a tab. The default schema form includes
 >* 기본 양식에 대한 사용자 지정 변경 내용을 삭제하면 ![잠금 닫힘](assets/do-not-localize/lock_closed_icon.svg) 양식 앞에 다시 나타납니다. 양식이 기본 상태로 되돌려짐을 나타냅니다.
 >* 에서 기본 메타데이터 스키마 양식을 삭제할 수 없습니다. [!DNL Assets].
 
-
 ## MIME 유형에 대한 스키마 양식 {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] 에서는 다양한 MIME 유형에 대한 기본 양식을 즉시 제공합니다. 하지만 다양한 MIME 유형의 자산에 대한 사용자 정의 양식을 추가할 수 있습니다.
@@ -331,7 +330,7 @@ Create a form under the appropriate form type. For example, to add a template fo
 에셋의 메타데이터 상속은 계층의 최상위 폴더에 적용되는 스키마를 기반으로 합니다. 동일한 스키마가 하위 폴더에 적용되거나 하위 폴더에 상속됩니다. 하위 폴더 수준에서 다른 스키마가 적용되면 상속이 중지됩니다.
 
 1. 위치 [!DNL Experience Manager] 인터페이스, 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 메타데이터 스키마]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
-1. 양식 앞의 확인란(예: 기본 메타데이터 양식)을 선택하고 **[!UICONTROL 복사]** 사용자 정의 양식으로 저장합니다. 양식에 대한 사용자 정의 이름 지정(예: ) `my_default`. 또는 사용자 정의 양식을 만들 수 있습니다.
+1. 기본 메타데이터 양식과 같은 양식 앞에 있는 확인란을 선택하고 **[!UICONTROL 복사]** 사용자 정의 양식으로 저장합니다. 양식에 대한 사용자 정의 이름 지정(예: ) `my_default`. 또는 사용자 정의 양식을 만들 수 있습니다.
 
 1. 다음에서 **[!UICONTROL 메타데이터 스키마 Forms]** 페이지에서 `my_default` 폼을 클릭한 다음 **[!UICONTROL 편집]**.
 

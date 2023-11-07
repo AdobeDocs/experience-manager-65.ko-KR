@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3570'
+source-wordcount: '3568'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 * **활동 로그** - 이 패널은 처음에 최소화되며, 패키지를 빌드하거나 설치할 때와 같은 패키지 관리자의 활동을 자세히 설명하도록 확장됩니다. [작업 로그] 탭에는 다음과 같은 추가 버튼이 있습니다.
    * **로그 지우기**
    * **표시 / 숨기기**
-* **도구 모음** - 도구 모음에는 왼쪽 탐색 패널 및 패키지 목록에 대한 새로 고침 버튼과 패키지 검색, 생성 및 업로드를 위한 버튼이 포함되어 있습니다.
+* **도구 모음** - 도구 모음에는 왼쪽 탐색 패널 및 패키지 목록에 대한 새로 고침 버튼과 패키지를 검색, 생성 및 업로드하기 위한 버튼이 포함되어 있습니다.
 
 ![패키지 관리자 UI](assets/package-manager-ui.png)
 
@@ -581,7 +581,7 @@ AEM 패키지를 사용하여 AEM 환경에서 콘텐츠를 만들고 공유할 
 
 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com) 는 AEM 패키지의 검색 및 다운로드를 단순화하기 위해 설계된 중앙 집중식 서비스입니다.
 
-자세한 내용은 다음을 참조하십시오. [소프트웨어 배포 설명서.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+자세한 내용은 [소프트웨어 배포 설명서.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 >[!NOTE]
 >

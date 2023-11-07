@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1760'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ AEM Forms 작업 영역의 모양, 레이아웃 및 기타 프레젠테이션 �
 
 작업 영역을 사용자 정의하기 전에 /libs/ws/css/style.css에서 AEM Forms과 함께 제공되는 기본 스타일 시트를 숙지하십시오.
 
-작업 영역을 사용자 정의하려면 /libs/ws/css 폴더에 있는 기존 스타일 시트 style.css를 잘 알고 있는 것이 좋습니다. 몇 가지 주요 구성 요소가 아래에 설명되어 있습니다.
+작업 영역을 사용자 정의하려면 /libs/ws/css 폴더의 기존 스타일 시트 style.css를 잘 알고 있는 것이 좋습니다. 몇 가지 주요 구성 요소가 아래에 설명되어 있습니다.
 
 <table>
  <tbody>
@@ -203,7 +203,7 @@ AEM Forms 작업 영역은 구성 요소 기반 소프트웨어이므로 손쉽�
       * js:
 
          * libs - AEM Forms 작업 영역에서 사용되는 모든 타사 라이브러리를 포함합니다.
-         * 라이센스 - HTML 및 JS 파일에 대한 라이센스와 각 소스 파일에 이러한 라이센스를 접두사로 사용하는 코드가 포함되어 있습니다.
+         * 라이센스 - HTML 및 JS 파일에 대한 라이센스와 이러한 라이센스를 각 소스 파일에 접두사로 사용하는 코드가 포함되어 있습니다.
          * minifier - customizedJavaScript 코드의 조합, 축소 및 무효화에 사용됩니다.
          * resourcejs_optimizer - JavaScript 소스의 조합, 축소 및 문서화에 사용됩니다.
          * resource_generator - register.js 및 modelcontrollerpath.js 생성에 사용됩니다.
@@ -216,8 +216,10 @@ AEM Forms 작업 영역은 구성 요소 기반 소프트웨어이므로 손쉽�
             * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 보기의 HTML 파일을 포함합니다.
             * util - AEM Forms 작업 영역에서 사용되는 모든 유틸리티 파일(javascript)을 포함합니다.
             * 보기 - AEM Forms 작업 공간에 있는 모든 구성 요소의 백본 보기를 포함합니다.
+
          * main.js
          * router.js
+
       * libs/ws: pdf.html 및 pluginPing.pdf는 AEM Forms 작업 공간에서 PDF forms을 로드하는 데 사용되며 WSNextAdapter.swf는 AEM Forms 작업 공간에서 SWF 양식 및 안내서를 로드하는 데 사용됩니다.
       * 로케일:
 
@@ -226,11 +228,9 @@ AEM Forms 작업 영역은 구성 요소 기반 소프트웨어이므로 손쉽�
          * fr-FR - 프랑스어에 대한 translation.json이 포함되어 있습니다.
          * ja-JP - 일본어에 대한 translation.json이 포함되어 있습니다.
          * html.jsp - 현재 브라우저 로케일을 찾는 코드가 포함되어 있습니다.
+
       * html.jsp
       * GET.jsp
-
-
-
 
 ### CRX 패키지 {#crx-package}
 
@@ -261,13 +261,13 @@ CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. 다음에서 �
 
       * require - require.js가 포함되어 있습니다.
       * jqueryui - jquery.ui.datepicker.ja.js 포함.
+
    * 런타임:
 
       * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 구성 요소의 HTML 파일을 포함합니다.
+
    * main.js(결합, 축소 및 무시).
    * registry.js
-
-
 
 * 라이브러리:
 
@@ -306,13 +306,13 @@ CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. 다음에서 �
 
       * require - require.js가 포함되어 있습니다.
       * jqueryui - jquery.ui.datepicker.ja.js 포함.
+
    * 런타임:
 
       * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 구성 요소의 HTML 파일을 포함합니다.
+
    * main.js(결합).
    * registry.js
-
-
 
 * 라이브러리:
 
@@ -358,10 +358,10 @@ client-pkg에 mvn clean -P 개발 설치
       * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 구성 요소의 HTML 파일을 포함합니다.
       * util - AEM Forms 작업 영역에서 사용되는 모든 유틸리티 파일(JavaScript)을 포함합니다.
       * 보기 - AEM Forms 작업 영역의 모든 구성 요소 보기가 포함됩니다.
+
    * main.js
    * registry.js
    * router.js
-
 
 * 라이브러리:
 

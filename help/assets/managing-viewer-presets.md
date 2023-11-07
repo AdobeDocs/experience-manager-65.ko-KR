@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4519'
 ht-degree: 9%
@@ -138,7 +138,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
   </tr>
   <tr>
    <td><strong>세로 확대/축소</strong></td>
-   <td><p>수직 확대/축소 뷰어를 사용하면 제품 이미지 보기 경험을 극대화하여 사용자에게 최상의 제품 표현을 제공할 수 있습니다. 견본의 세로 위치는 다음과 같습니다.</p>
+   <td><p>수직 확대/축소 뷰어를 사용하면 제품 이미지 보기 경험을 최대화하여 사용자에게 제품을 가장 잘 표현할 수 있습니다. 견본의 세로 위치는 다음과 같습니다.</p>
     <ul>
      <li>견본이 "접힌 부분 위에" 있는지 확인합니다.<br/> 가로 색상 견본의 경우 사용자의 데스크탑 화면 크기에 따라 사용자가 페이지를 아래로 스크롤할 때까지 표시되지 않습니다. 견본을 뷰어에서 세로로 배치하면 사용자의 화면 크기에 상관없이 볼 수 있습니다.</li>
      <li>기본 이미지 크기를 최대화합니다.<br /> 수평 견본을 사용할 경우 페이지가 보이도록 공간을 예약해야 합니다. 이 위치 지정은 기본 이미지의 크기를 줄였습니다. 그러나 수직 견본 레이아웃에서는 이 공간을 할당할 필요가 없습니다. 따라서 기본 이미지 크기를 최대화할 수 있습니다.</li>
@@ -404,7 +404,7 @@ Experience Manager에서 에셋을 볼 때 다양한 뷰어 사전 설정을 표
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-1. limit 속성에서 원하는 숫자로 변경합니다. 예를 들면 다음과 같습니다 `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. limit 속성에서 숫자를 원하는 숫자로 변경합니다(예: ). `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. 선택 **[!UICONTROL 모두 저장]**.
 
 ## 뷰어 사전 설정 만들기 {#creating-a-new-viewer-preset}
@@ -428,7 +428,7 @@ Experience Manager에서 에셋을 볼 때 다양한 뷰어 사전 설정을 표
 1. 뷰어 사전 설정 페이지의 도구 모음에서 를 선택합니다 **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL 새 뷰어 사전 설정]** 대화 상자, **[!UICONTROL 사전 설정 이름]** 필드에 새 사전 설정의 이름을 입력합니다. 이름을 신중하게 선택하십시오. 선택한 후에는 편집할 수 없습니다 **[!UICONTROL 만들기]**.
 
-   이 단계의 후반부에 사전 설정을 저장하면 이 이름이 [사전 설정 제목] 열 머리글 아래의 [뷰어 사전 설정] 페이지에 나타납니다.
+   이 단계의 후반부에 사전 설정을 저장하면 이 이름이 [사전 설정 제목] 열 머리글 아래의 [뷰어 사전 설정] 페이지에 표시됩니다.
 
 1. 리치 미디어 유형 드롭다운 메뉴에서 만들려는 뷰어 사전 설정 유형을 선택한 다음 페이지의 오른쪽 상단 모서리에서 을(를) 선택합니다 **[!UICONTROL 만들기]**.
 
@@ -439,15 +439,16 @@ Experience Manager에서 에셋을 볼 때 다양한 뷰어 사전 설정을 표
 
    * 다음에서 **[!UICONTROL 선택한 유형]** 풀다운 메뉴에서 시각적 디자인을 사용자 지정할 구성 요소를 선택합니다. 또는 뷰어에서 시각적 요소를 선택하여 구성할 수 있습니다.
 
-      시각적 편집기를 사용하면 특정 속성이 스타일에 어떤 영향을 미치는지 확인할 수 있습니다. 편집기 왼쪽에 있는 샘플을 사용하여 뷰어에 미치는 영향을 즉시 확인할 수 있도록 모든 속성을 설정하거나 조정합니다.
+     시각적 편집기를 사용하면 특정 속성이 스타일에 어떤 영향을 미치는지 확인할 수 있습니다. 편집기 왼쪽에 있는 샘플을 사용하여 뷰어에 미치는 영향을 즉시 확인할 수 있도록 모든 속성을 설정하거나 조정합니다.
 
-      각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 &quot;사용자 지정&quot;에 설명되어 있습니다. *`<viewer name>`* 의 &quot;뷰어&quot; 도움말 항목 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). 예를 들어 유형의 뷰어 사전 설정을 만드는 경우 `Mixed_Media`, 참조 [혼합 미디어 뷰어 사용자 지정](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) 각 속성의 목록 및 설명.
+     각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 &quot;사용자 지정&quot;에 설명되어 있습니다. *`<viewer name>`* 의 &quot;뷰어&quot; 도움말 항목 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). 예를 들어 유형의 뷰어 사전 설정을 만드는 경우 `Mixed_Media`, 참조 [혼합 미디어 뷰어 사용자 지정](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) 각 속성의 목록 및 설명.
 
    * If you have defined style settings in a separate CSS file, you can upload the CSS file to AEM Assets. 선택 **[!UICONTROL CSS 가져오기]** 아래 **[!UICONTROL 선택한 유형]** 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결할 수 있도록 풀다운 메뉴(필요한 경우 시각적 편집기를 위로 스크롤하여 확인)를 표시합니다.
 
-      CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 뷰어 클래스 이름을 사용하여 정의해야 합니다 `.s7mixedmediaviewer` 상위 뷰어 요소에 정의됩니다.
+     CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 뷰어 클래스 이름을 사용하여 정의해야 합니다 `.s7mixedmediaviewer` 상위 뷰어 요소에 정의됩니다.
 
-      지정된 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 수제 CSS를 가져올 수 있습니다. (CSS 마커는 &quot;사용자 정의&quot;에 설명되어 있습니다. *&lt;viewer name=&quot;&quot;>* 의 &quot;뷰어&quot; 도움말 항목 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). 예를 들어 [확대/축소 뷰어]에 대한 CSS 마커를 읽으려면 다음을 참조하십시오. [확대/축소 뷰어 사용자 지정](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) 그러나 시각적 편집기에서 일부 CSS 값을 이해하지 못할 수 있습니다. 이러한 경우 시각적 편집기는 CSS가 여전히 작동할 수 있도록 오류를 재정의하려고 합니다.
+     지정된 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 수제 CSS를 가져올 수 있습니다. (CSS 마커는 &quot;사용자 정의&quot;에 설명되어 있습니다. *&lt;viewer name=&quot;&quot;>* 의 &quot;뷰어&quot; 도움말 항목 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). 예를 들어 [확대/축소 뷰어]에 대한 CSS 마커를 읽으려면 다음을 참조하십시오. [확대/축소 뷰어 사용자 지정](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) 그러나 시각적 편집기에서 일부 CSS 값을 이해하지 못할 수 있습니다. 이러한 경우 시각적 편집기는 CSS가 여전히 작동할 수 있도록 오류를 재정의하려고 합니다.
+
    >[!NOTE]
    >
    >원시 양식에서 CSS를 직접 편집하려면 다음을 선택합니다. **[!UICONTROL CSS 표시/숨기기]** 선택한 유형 풀다운 메뉴 아래에서 필요한 경우 시각적 편집기를 위로 스크롤하여 봅니다.
@@ -552,7 +553,7 @@ When you enable (select) **[!UICONTROL Auto Scroll]** in the viewer preset, duri
 
 회전 메뉴 배너 뷰어 사전 설정을 만들 때 핫스팟의 스타일을 변경하면 다음과 같이 변경할 수 있습니다.
 
-|  | **설명** | **작업** |
+| | **설명** | **액션** |
 |---|---|---|
 | **[!UICONTROL 핫스팟 아이콘]** | 핫스팟에 사용되는 아이콘 변경 | 핫스팟 아이콘 이미지를 변경하려면 **[!UICONTROL 모양]** 탭, 위치 **[!UICONTROL 선택한 구성 요소]**, 선택 **[!UICONTROL 이미지 맵 효과]**. Under **[!UICONTROL Icon]**, select **[!UICONTROL Background]** and in the **[!UICONTROL Image]** field navigate to the background image you want. |
 

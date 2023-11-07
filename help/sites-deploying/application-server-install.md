@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 0%
@@ -46,7 +46,7 @@ AEM은 단일 war 파일로 제공되며,
 * 실행 모드는 다음과 같습니다. `author`
 * 인스턴스(저장소, Felix OSGI 환경, 번들 등)가 `${user.dir}/crx-quickstart`위치 `${user.dir}` 는 현재 작업 디렉토리이며 crx-quickstart에 대한 이 경로는 이라고 합니다. `sling.home`
 
-* 컨텍스트 루트는 war 파일 이름입니다(예: ). `aem-6`
+* 컨텍스트 루트는 war 파일 이름입니다(예:  `aem-6`
 
 #### 구성 {#configuration}
 

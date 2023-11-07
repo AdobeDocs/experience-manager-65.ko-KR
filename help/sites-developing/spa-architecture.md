@@ -7,9 +7,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2055'
 ht-degree: 7%
 
 ---
@@ -89,7 +89,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
    <td><p>콘텐츠 작성자는 제한된 AEM 콘텐츠 작성 경험 세트로 제한됩니다.</p> <p>이 코드에 정적 참조 또는 라우팅이 포함되어 있으면 코드를 이동할 수 없거나 다시 사용할 수 없습니다.</p> <p>템플릿 편집기의 사용을 허용하지 않으므로 프론트엔드 개발자는 JCR을 통해 편집 가능한 템플릿을 유지 관리해야 합니다.</p> </td>
   </tr>
   <tr>
-   <td>프로젝트는 SPA Editor SDK를 완전히 활용하며 프론트엔드 구성 요소는 라이브러리로 개발되고 앱의 콘텐츠 구조는 AEM에 위임됩니다.</td>
+   <td>프로젝트는 SPA Editor SDK를 완전히 사용하며 프론트엔드 구성 요소는 라이브러리로 개발되고 앱의 콘텐츠 구조는 AEM에 위임됩니다.</td>
    <td><p>이 앱은 재사용이 가능하며 휴대가 가능합니다.</p> <p>콘텐츠 작성자는 AEM 콘텐츠 작성 경험을 사용하여 앱을 편집할 수 있습니다.<br /> </p> <p>SPA은 템플릿 편집기와 호환됩니다.</p> </td>
    <td><p>개발자가 앱의 구조 및 AEM에 위임된 콘텐츠 부분을 제어할 수 없습니다.</p> <p>개발자는 AEM을 사용하여 작성되지 않은 콘텐츠에 대해 앱 영역을 계속 예약할 수 있습니다.</p> </td>
   </tr>
@@ -190,7 +190,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
   SPA 애플리케이션 소스 및 구성 요소 소스의 소스가 체크 아웃된 위치입니다.
 
    * NPM clientlib 생성기는 SPA 프로젝트에서 클라이언트 라이브러리를 생성합니다.
-   * 해당 라이브러리는 Maven에서 가져오고 구성 요소와 함께 Maven Build 플러그인에 의해 AEM 작성자에게 배포됩니다.
+   * 이 라이브러리는 Maven에서 가져오고 구성 요소와 함께 Maven Build 플러그인에 의해 AEM Author로 배포됩니다.
 
 * **AEM Author**
 

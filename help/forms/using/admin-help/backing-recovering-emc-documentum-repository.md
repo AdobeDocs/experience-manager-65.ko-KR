@@ -1,19 +1,15 @@
 ---
 title: EMC Documentum 저장소 백업 및 복구
-seo-title: Backing up and recovering the EMC Documentum repository
 description: 이 문서에서는 AEM Forms 환경에 맞게 구성된 EMC Documentum 저장소를 백업 및 복구하는 데 필요한 작업에 대해 설명합니다.
-seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
-uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 0%
+source-wordcount: '802'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +63,7 @@ EMC Documentum Content Server에서 필요한 백업 작업을 수행하려면 E
     #
     # Parameters not shown can be set in this file (as per site customisation) #or from the command-line.
     #
-    # Please refer to the user Guides for details on all parameters, including
+    # See the user Guides for details on all parameters, including
     # those not listed below.
     # Note: DCTM environment for D6 is slightly different from D5, refer to D6
     # Installation Guide to update the values.
@@ -198,29 +194,29 @@ EMC Documentum Content Server에서 필요한 백업 작업을 수행하려면 E
 
    * 전체 데이터베이스 백업(nsrnmdbf.bat):
 
-      `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[암호&#x200B;]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[암호&#x200B;]*`-l full`*&lt;database_name>*
 
    * 증분 데이터베이스 백업(nsrnmdbi.bat):
 
-      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * 데이터베이스 로그 백업(nsrnmddbl.bat):
 
-      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
-      위치:
+     위치:
 
-      `[NetWorker_database_module_root]` 는 NetWorker Module의 설치 디렉토리입니다. 예를 들어 NetWorker Module for SQL Server의 기본 설치 디렉토리는 C:\Program Files\Legato\nsr\bin\nsrsqlsv입니다.
+     `[NetWorker_database_module_root]` 는 NetWorker Module의 설치 디렉토리입니다. 예를 들어 NetWorker Module for SQL Server의 기본 설치 디렉토리는 C:\Program Files\Legato\nsr\bin\nsrsqlsv입니다.
 
-      `NetWorker_Server_Name` 는 NetWorker가 설치된 서버입니다.
+     `NetWorker_Server_Name` 는 NetWorker가 설치된 서버입니다.
 
-      `username` 및 `password` 는 데이터베이스 관리자 사용자의 사용자 이름과 암호입니다.
+     `username` 및 `password` 는 데이터베이스 관리자 사용자의 사용자 이름과 암호입니다.
 
-      `database_name` 는 백업할 데이터베이스의 이름입니다.
+     `database_name` 는 백업할 데이터베이스의 이름입니다.
 
 **백업 장치 만들기**
 
-1. EMC Documentum 서버에 새 디렉토리를 만들고 모든 사용자에게 모든 권한을 부여하여 폴더를 공유합니다.
+1. EMC Documentum 서버에 디렉토리를 만들고 모든 사용자에게 모든 권한을 부여하여 폴더를 공유합니다.
 1. EMC NetWorker Administrator 를 시작하고 Media Management > Devices 를 클릭합니다.
 1. 장치 를 마우스 오른쪽 단추로 클릭하고 만들기 를 선택합니다.
 1. 다음 값을 입력하고 확인을 누릅니다.
@@ -243,7 +239,7 @@ AEM Forms 데이터의 전체 백업을 완료한 후 다음 작업을 수행합
 >명령 스크립트는에서 작성한 nsrnmd_win.cfg 파일에 대한 전체 경로가 필요합니다 [백업 및 복구를 위한 EMC Document Content Server 준비](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. 명령 프롬프트를 열고 다음으로 변경 `[NetWorker_root]\Legato\nsr\bin`.
-1. 다음 명령을 실행합니다.
+1. 다음 명령을 실행합니다:
 
    ```shell
     - nsrnmdsv.exe -f <path_to_cfg_file>
@@ -263,7 +259,7 @@ AEM Forms 데이터를 복원하기 전에 다음 작업을 수행하십시오. 
 1. 화면 왼쪽에서 Docbase에 대한 데이터베이스를 선택하고 도구 모음에서 시작 단추를 클릭합니다.
 1. 데이터베이스가 복원되면 Docbase 서비스를 다시 시작합니다.
 1. 명령 프롬프트를 열고 다음으로 변경 *[NetWorker_root]*\Legato\nsr\bin
-1. 다음 명령을 실행합니다.
+1. 다음 명령을 실행합니다:
 
    ```shell
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA

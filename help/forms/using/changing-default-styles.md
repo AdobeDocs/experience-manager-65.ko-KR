@@ -11,9 +11,9 @@ discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 feature: Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ HTML5 양식은 HTML5 기능을 사용하여 렌더링되며 렌더링된 양식
 
 1. **사용자 정의 스타일을 추가할 프로필 선택**
 
-   다음 URL에서 CRX DE 인터페이스에 액세스합니다. **https://&lt;server>:&lt;port>/crx/de** 프로파일을 만들거나 기존 프로파일을 선택합니다. 프로필을 만드는 방법을 알아보려면 다음을 참조하십시오. [새 프로필 만들기](/help/forms/using/custom-profile.md)
+   다음 URL에서 CRX DE 인터페이스에 액세스합니다. **https://&lt;server>:&lt;port>/crx/de** 프로파일을 만들거나 기존 프로파일을 선택합니다. 프로필을 만드는 방법을 알아보려면 다음을 참조하십시오. [프로필 만들기](/help/forms/using/custom-profile.md)
 
 1. **HTML5 양식의 스타일을 지정하는 CSS 스타일 시트 만들기**
 

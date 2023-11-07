@@ -2,10 +2,10 @@
 title: Headless 콘텐츠 및 AEM에서의 번역 방법에 대해 알아보기
 description: Headless 개념, AEM에 매핑하는 방법 및 AEM 번역 이론에 대해 알아봅니다.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 97%
+source-wordcount: '758'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Headless 개념, AEM에 매핑하는 방법 및 AEM 번역 이론에 대해 알�
 
 ## 전체 콘텐츠 게재 {#full-stack}
 
-사용하기 쉬운 대규모 콘텐츠 관리 시스템(CMS)이 부상하면서 조직은 이를 중앙 위치로 활용하여 메시지, 브랜딩 및 커뮤니케이션을 관리합니다. CMS를 경험 관리의 중심점으로 사용하면 효율성이 개선되어 서로 다른 시스템에서 작업을 복제할 필요가 없습니다.
+사용하기 쉬운 대규모 콘텐츠 관리 시스템(CMS)이 부상하면서 조직은 이를 중앙 위치로 사용하여 메시지, 브랜딩 및 커뮤니케이션을 관리합니다. CMS를 경험 관리의 중심점으로 사용하면 효율성이 개선되어 서로 다른 시스템에서 작업을 복제할 필요가 없습니다.
 
 ![클래식 전체 스택 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
@@ -47,7 +47,7 @@ Headless CMS에 대해 말하자면 CMS는 콘텐츠를 관리하고 소비자�
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-AR 경험, 웹 샵, 모바일 경험, 프로그레시브 웹 앱(PWA) 등 소비 서비스는 Headless CMS에서 콘텐츠를 가져와 자체 렌더링을 제공합니다. 콘텐츠에 대한 자체 헤드를 처리합니다.
+AR 경험, 웹 샵, 모바일 경험, 점진적 웹 앱(PWA) 등과 같은 다양한 소비 서비스는 Headless CMS에서 콘텐츠를 가져와 자체 렌더링을 제공합니다. 콘텐츠에 대한 자체 헤드를 처리합니다.
 
 헤드가 생략되면 복잡성이 제거되어 CMS를 간소화합니다. 이렇게 하면 실제로 콘텐츠가 필요하고 해당 렌더링에 가장 적합한 서비스로 콘텐츠를 렌더링하는 책임이 이전되기도 합니다.
 
@@ -78,6 +78,6 @@ AEM Headless 번역 여정을 시작해 주셔서 감사합니다! 이 문서를
 다음 문서인 [AEM Headless 번역 시작하기](getting-started.md)를 검토하여 Headless 번역 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
 * [MSM 및 번역](/help/sites-administering/msm-and-translation.md) - AEM의 다중 사이트 관리자에 대한 세부 정보 및 번역 도구 사용 방법
-* An [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
-* 다음 [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

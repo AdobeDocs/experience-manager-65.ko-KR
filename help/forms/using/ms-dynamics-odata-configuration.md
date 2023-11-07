@@ -1,19 +1,15 @@
 ---
 title: Microsoft Dynamics OData 구성
-seo-title: Microsoft Dynamics ODtata configuration
-description: 양식 데이터 모델을 통해 온라인 및 온프레미스 Microsoft Dynamics 서비스를 활용, 통합 및 사용할 수 있습니다.
-seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
-uuid: 37e59633-484b-4a20-808d-2a0bc0d336cc
+description: 양식 데이터 모델을 통해 온라인 및 온프레미스 Microsoft Dynamics 서비스를 사용, 통합 및 작업하는 방법을 알아봅니다.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 1%
+source-wordcount: '1230'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM 6.5 | 이 문서 |
 
 ![데이터 통합](assets/data-integeration.png)
@@ -32,7 +28,7 @@ Microsoft Dynamics는 고객 계정, 연락처, 리드, 기회 및 사례를 만
 * 적응형 양식 제출 시 Microsoft Dynamics에 데이터 쓰기
 * 양식 데이터 모델에 정의된 사용자 지정 엔터티를 통해 Microsoft Dynamics에서 데이터를 쓰고 반대로
 
-AEM Forms 추가 기능 패키지에는 Microsoft Dynamics를 AEM Forms과 빠르게 통합하는 데 활용할 수 있는 참조 OData 구성도 포함되어 있습니다.
+AEM Forms 추가 기능 패키지에는 Microsoft Dynamics를 AEM Forms과 빠르게 통합하는 데 사용할 수 있는 참조 OData 구성도 포함되어 있습니다.
 
 패키지를 설치하면 AEM Forms 인스턴스에서 다음 엔티티 및 서비스를 사용할 수 있습니다.
 
@@ -97,7 +93,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 >
 >AEM Forms을 온-프레미스 Microsoft Dynamics 서버와 통합하는 경우에만 이 절차를 사용하십시오.
 
-1. 다음 명령을 실행합니다.
+1. 다음 명령을 실행합니다:
 
    `Add-AdfsClient -ClientId "<Client-ID>" -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
@@ -121,7 +117,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 
 다음 **MS Dynamics OData Cloud Service(OData 서비스)** 구성은 기본 OData 구성과 함께 제공됩니다. Microsoft Dynamics 서비스와 연결하도록 구성하려면 다음을 수행하십시오.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**&#x200B;을 누르고 `global` 구성 폴더입니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**&#x200B;을 누르고 `global` 구성 폴더입니다.
 1. 선택 **MS Dynamics OData Cloud Service(OData 서비스)** 구성 및 탭 **[!UICONTROL 속성]**. 클라우드 서비스 구성 속성 대화 상자가 열립니다.
 
    다음에서 **인증 설정** 탭:

@@ -3,9 +3,9 @@ title: 외부 사용자 초대 핸들러 만들기
 description: 외부 사용자 초대 핸들러를 만드는 방법을 알아봅니다. 이를 통해 Rights Management 서비스는 외부 사용자를 Rights Management 사용자로 초대할 수 있습니다.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Rights Management 서비스에 대한 외부 사용자 초대 핸들러를 만�
 
 ## 개발 환경 설정 {#setting-up-development-environment}
 
-개발 환경을 설정하려면 Eclipse 프로젝트와 같은 새 Java 프로젝트를 만들어야 합니다. 지원되는 Eclipse 버전은 입니다 `3.2.1` 나중에
+개발 환경을 설정하려면 Eclipse 프로젝트와 같은 Java 프로젝트를 만들어야 합니다. 지원되는 Eclipse 버전은 입니다 `3.2.1` 나중에
 
 Rights Management SPI에는 `edc-server-spi.jar` 프로젝트의 클래스 경로에 설정할 파일입니다. 이 JAR 파일을 참조하지 않으면 Java 프로젝트에서 Rights Management SPI를 사용할 수 없습니다. 이 JAR 파일은 의 AEM Forms SDK와 함께 설치됩니다. `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` 폴더를 삭제합니다.
 

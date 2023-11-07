@@ -2,9 +2,9 @@
 title: IMS를 사용하여 Adobe Target과 통합
 description: IMS를 사용하여 AEM과 Adobe Target 통합에 대해 알아봅니다.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1556'
 ht-degree: 43%
 
 ---
@@ -105,7 +105,7 @@ AEM에서 사용할 수 있는 Adobe Target을 사용하여 프로젝트를 만�
 
 1. 자격 증명을 검토하고 **다음**&#x200B;을 사용하여 계속합니다.
 
-   ![새 프로젝트 만들기](assets/integration-target-io-15.png)
+   ![프로젝트 만들기](assets/integration-target-io-15.png)
 
 1. 필요한 제품 프로필을 선택한 다음 **구성된 API 저장**&#x200B;을 사용하여 계속합니다.
 

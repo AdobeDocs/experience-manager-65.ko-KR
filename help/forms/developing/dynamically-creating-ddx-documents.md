@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2163'
+source-wordcount: '2162'
 ht-degree: 0%
 
 ---
@@ -238,7 +238,7 @@ PDF 문서를 디스어셈블하려면 디스어셈블할 PDF 문서를 나타�
 
    * 만들기 `System.IO.MemoryStream` 개체를 만들 때 사용됩니다.
    * 채우기 `MemoryStream` 를 사용하여 DDX 문서가 있는 개체 `XmlElement` DDX 문서를 나타내는 개체입니다. 호출 `XmlElement` 개체 `Save` 메서드 및 전달 `MemoryStream` 개체.
-   * 바이트 배열을 만들어 의 데이터로 채웁니다. `MemoryStream` 개체. 다음 코드는 이 애플리케이션 논리를 보여 줍니다.
+   * 바이트 배열을 만들어 의 데이터로 채우기 `MemoryStream` 개체. 다음 코드는 이 애플리케이션 논리를 보여 줍니다.
 
      ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
 

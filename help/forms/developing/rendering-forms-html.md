@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4150'
+source-wordcount: '4143'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ HTML 4.0의 서버와 MSDHTML 또는 CSS2HTML에 대한 클라이언트에서 �
 
 HTML 페이지(패널) 간에 이동할 때 데이터의 상태만 유지됩니다. 배경색 또는 필수 필드 설정과 같은 설정은 유지 관리되지 않습니다(초기 설정과 다른 경우). 표시 상태를 유지하려면 필드의 표시 상태를 나타내는 필드(일반적으로 숨겨짐)를 만들어야 합니다. 의 필드에 스크립트를 추가하는 경우 `Calculate` 숨겨진 필드 값을 기반으로 프레젠테이션을 변경하는 이벤트입니다. HTML 페이지(패널) 사이를 왔다 갔다 할 때 프레젠테이션 상태를 유지할 수 있습니다.
 
-다음 스크립트는 `fillColor` 의 값을 기반으로 하는 필드의 `hiddenField`. 이 스크립트가 다음 필드에 있다고 가정합니다. `Calculate` 이벤트.
+다음 스크립트는 `fillColor` 의 값을 기반으로 하는 필드의 `hiddenField`. 이 스크립트가 필드의 `Calculate` 이벤트.
 
 ```java
      If (hiddenField.rawValue == 1)

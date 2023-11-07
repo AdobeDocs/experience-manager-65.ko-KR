@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6948'
+source-wordcount: '6946'
 ht-degree: 0%
 
 ---
@@ -289,7 +289,7 @@ BRD(비즈니스 요구 사항 문서)는 프로젝트에 대한 비즈니스 �
 
 ### 현재 콘텐츠 구조 및 형식 {#current-content-structure-and-format}
 
-현재 콘텐츠 아키텍처 및 형식에 대한 설명서입니다. 향후 콘텐츠 아키텍처를 생성하는 데 사용됩니다. 또한 마이그레이션 개념에도 사용됩니다.
+현재 콘텐츠 아키텍처 및 형식에 대한 설명서입니다. 이후 콘텐츠 아키텍처를 생성하는 데 사용됩니다. 또한 마이그레이션 개념에도 사용됩니다.
 
 ### 고객 백업 및 복원 정책 {#customer-backup-and-restore-policy}
 
@@ -666,7 +666,7 @@ Atlassian JIRA 및 HP Quality Center를 예로 들 수 있습니다.
 
 ### 사용할 개발 도구 목록 {#list-of-development-tools-to-be-used}
 
-구현에 사용될 도구의 개요입니다. 도구에는 다음이 포함되어야 합니다.
+구현에 사용되는 도구의 개요입니다. 도구에는 다음이 포함되어야 합니다.
 
 * 설명서 도구
 * 문제 추적 도구

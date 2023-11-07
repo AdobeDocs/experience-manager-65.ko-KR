@@ -1,20 +1,16 @@
 ---
 title: SPA 페이지 구성 요소
-seo-title: SPA Page Component
 description: SPA에서 페이지 구성 요소는 하위 구성 요소의 HTML 요소를 제공하지 않고, 대신 SPA 프레임워크에 위임합니다. 이 문서에서는 SPA의 페이지 구성 요소를 고유하게 만드는 방법을 설명합니다.
-seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
-uuid: d444527a-e883-4873-a55b-c2bc140d8d7f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 9%
+source-wordcount: '730'
+ht-degree: 8%
 
 ---
 
@@ -91,9 +87,9 @@ SPA 콘텐츠를 설명하는 메타 리소스 속성:
 
 >[!CAUTION]
 >
->이 문서에서는 데모용으로만 We.Retail 저널 앱을 사용합니다. 프로젝트 작업에 사용해서는 안 됩니다.
+>이 문서에서는 데모용으로만 We.Retail 저널 앱을 사용합니다. 를 프로젝트 작업에 사용하지 마십시오.
 >
->모든 AEM 프로젝트는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용합니다. AEM의 모든 SPA 프로젝트는 SPA Starter Kit용 Maven Archetype을 기반으로 해야 합니다.
+>모든 AEM 프로젝트는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 사용합니다.AEM의 모든 SPA 프로젝트는 SPA Starter Kit용 Maven Archetype을 기반으로 해야 합니다.
 
 ## 페이지 편집기 오버레이 동기화 {#page-editor-overlay-synchronization}
 

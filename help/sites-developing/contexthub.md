@@ -1,18 +1,14 @@
 ---
 title: ContextHub
-seo-title: ContextHub
 description: ContextHub는 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크입니다
-seo-description: ContextHub is a framework for storing, manipulating, and presenting context data
-uuid: 14e6ff4f-ffbe-454a-b2ec-a35333526e27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 exl-id: 3fd50655-7461-4900-a3b8-c01b04c7ba7a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '284'
 ht-degree: 1%
 
 ---
@@ -29,11 +25,11 @@ ContextHub는 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 �
 >
 >에서 사용하는 샘플 ContextHub 구성이 포함된 경로 [We.Retail 참조 구현](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`)는 자체 구성을 만들기 위한 참조로만 사용해야 합니다.
 >
->프로젝트에서 고유한 ContextHub 구성으로 사용해서는 안 됩니다.
+>프로젝트에서 를 자신의 ContextHub 구성으로 사용하지 마십시오.
 
 ## 지속성 {#persistence}
 
-ContextHub 저장소는 클라이언트에 컨텍스트 데이터를 유지합니다. ContextHub JavaScript API를 사용하면 저장소에 액세스하여 데이터를 필요에 따라 작성, 업데이트 및 삭제할 수 있습니다. 따라서 ContextHub는 페이지의 데이터 계층을 나타냅니다.
+ContextHub 저장소는 클라이언트에 컨텍스트 데이터를 유지합니다. ContextHub JavaScript API를 사용하면 저장소에 액세스하여 필요에 따라 데이터를 작성, 업데이트 및 삭제할 수 있습니다. 따라서 ContextHub는 페이지의 데이터 계층을 나타냅니다.
 
 각 ContextHub 저장소는 사전 정의된 저장소 유형의 인스턴스입니다.
 

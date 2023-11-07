@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1589'
 ht-degree: 3%
 
 ---
@@ -44,6 +44,7 @@ ht-degree: 3%
       * 구조, 텍스트 및 모든 미디어 파일이 추출됩니다.
       * PDF 및 JPG 렌디션이 생성됩니다.
       * HTML 및 IDML 렌디션이 생성됩니다.
+
    * 결과 파일을에 다시 게시 [!DNL Experience Manager Assets].
 
    >[!NOTE]
@@ -97,7 +98,7 @@ ht-degree: 3%
 
 이 워크플로우는 다양한 작성자 인스턴스에서 설정에 적용할 수 있는 기본값으로 설정됩니다(표준 워크플로이므로, 다음에서 추가 정보를 사용할 수 있습니다. [워크플로우 편집](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). 기본값(SOAP 포트 포함)을 사용하는 경우 구성이 필요하지 않습니다.
 
-설정 후 업로드 [!DNL InDesign] 에 있는 파일 [!DNL Experience Manager Assets] (일반적인 방법 중 하나로) 워크플로를 트리거하여 에셋을 처리하고 다양한 렌디션을 준비합니다. INDD 파일을에 업로드하여 구성을 테스트합니다 [!DNL Experience Manager Assets] 를 클릭하여 아래 ID에서 만든 다른 렌디션이 표시되는지 확인합니다. `<*your_asset*>.indd/Renditions`
+설정 후 업로드 [!DNL InDesign] 에 있는 파일 [!DNL Experience Manager Assets] (일반적인 방법 중 하나를 사용하여) 워크플로우를 트리거하여 에셋을 처리하고 다양한 렌디션을 준비합니다. INDD 파일을에 업로드하여 구성을 테스트합니다 [!DNL Experience Manager Assets] 를 클릭하여 아래 ID에서 만든 다른 렌디션이 표시되는지 확인합니다. `<*your_asset*>.indd/Renditions`
 
 #### 미디어 추출 {#media-extraction}
 
@@ -152,7 +153,7 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 >
 >작업자는 프록시 인스턴스에 상주합니다.
 
-1. 도구 콘솔에서 을 확장합니다. **[!UICONTROL Cloud Services 구성]** 왼쪽 창에서 을 클릭합니다. 그런 다음 를 확장합니다 **[!UICONTROL 클라우드 프록시 구성]**.
+1. 도구 콘솔에서 을 확장합니다. **[!UICONTROL Cloud Service 구성]** 왼쪽 창에서 을 클릭합니다. 그런 다음 를 확장합니다 **[!UICONTROL 클라우드 프록시 구성]**.
 
 1. Double-click the **[!UICONTROL IDS worker]** to open for configuration.
 
@@ -231,11 +232,10 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 에 액세스하기 위한 기본 관리자 자격 증명(사용자 이름 및 암호)을 변경할 수 있습니다. [!DNL InDesign Server] (으)로부터 [!DNL Experience Manager] 와 통합을 중단하지 않고 배포 [!DNL InDesign Server].
 
-1. 이동 `/etc/cloudservices/proxy.html`.
+1. `/etc/cloudservices/proxy.html`로 이동합니다.
 1. 대화 상자에서 새 사용자 이름과 암호를 지정합니다.
 1. 자격 증명을 저장합니다.
 
 >[!MORELIKETHIS]
 >
 >* [Adobe InDesign Server 정보](https://www.adobe.com/products/indesignserver/faq.html)
-

@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
    * 필터 목록에서 연산자를 선택합니다.
    * 값(Value) 상자에 선택한 속성에 적합한 값을 입력합니다.
 
-1. 다른 행을 추가하려면 [추가 필터]를 선택합니다. 다른 속성, 필터 및 값 목록과 조건 목록이 나타납니다.
+1. 다른 행을 추가하려면 [추가 필터]를 선택합니다. 다른 속성, 필터 및 값 목록 세트와 조건 목록이 나타납니다.
 1. Condition에서 AND 또는 OR를 선택합니다. 필요에 따라 1~3단계를 반복하여 검색 범위를 더 좁힙니다.
 1. 행을 추가하거나 제거하려면 [추가 필터] 또는 [더 적은 필터]를 클릭합니다. 1행에서 4행까지 가질 수 있습니다.
 1. 검색을 클릭합니다. 검색된 인스턴스를 나열하는 [프로세스 인스턴스] 페이지가 나타납니다.

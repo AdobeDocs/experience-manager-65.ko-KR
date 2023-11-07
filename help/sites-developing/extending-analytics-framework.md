@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1619'
 ht-degree: 1%
 
 ---
@@ -92,9 +92,9 @@ s.trackingServerSecure = "xxxxxxx.net";
 
 1. Adobe Analytics 프레임워크 페이지에서 를 확장합니다. **일반 분석 설정** 영역입니다.
 1. 변수 목록 아래에서 항목 추가 를 클릭하여 새 변수를 목록에 추가합니다.
-1. 왼쪽 셀에 변수 이름(예: )을 입력합니다 `prop10`.
+1. 왼쪽 셀에 변수 이름(예: )을 입력합니다. `prop10`.
 
-1. 오른쪽 열에 변수의 값을 입력합니다(예: ). `CONSTANT`.
+1. 오른쪽 열에 변수 값(예: )을 입력합니다. `CONSTANT`.
 
 1. 변수를 제거하려면 변수 옆에 있는 (-) 단추를 클릭합니다.
 
@@ -199,7 +199,7 @@ Adobe Analytics s_code.js 파일의 컨텐츠를 포함하는 analytics.sitecata
    1. 지정 `cq` 을 폴더 이름으로 설정하고 [확인]을 클릭합니다.
    1. 마찬가지로 `analytics` 및 `components` 개 폴더.
 
-1. 마우스 오른쪽 단추 클릭 `components` 방금 만든 폴더이며 만들기 > 구성 요소 만들기 를 클릭합니다. 다음 속성 값을 지정합니다.
+1. 마우스 오른쪽 단추 클릭 `components` 폴더를 만든 다음 만들기 > 구성 요소 만들기 를 클릭합니다. 다음 속성 값을 지정합니다.
 
    * 레이블: `sitecatalyst`
    * 제목: `sitecatalyst`

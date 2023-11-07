@@ -7,9 +7,9 @@ breadcrumb-title: Mobile 안내서
 user-guide-description: 모바일 앱용 컨텐츠를 생성 및 관리합니다.
 feature: Mobile
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '330'
 ht-degree: 10%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 10%
    + [앱 메타데이터 편집](phonegap-editmetadata.md)
    + [앱 정의](phonegap-app-definitions.md)
    + [앱 컨텐츠 만들기 및 관리](phonegap-manage-app-content.md)
-   + [만들기 마법사를 사용하여 새 AEM Mobile 앱 만들기](phonegap-create-new-app.md)
+   + [만들기 마법사를 사용하여 AEM Mobile 앱 만들기](phonegap-create-new-app.md)
    + [모바일 애플리케이션 작성](phonegap-authoring-apps.md)
    + [앱 타일 관리](phonegap-app-details-tile.md)
    + [AEM Mobile 콘텐츠 개인화](phonegap-aem-mobile-content-personalization.md)

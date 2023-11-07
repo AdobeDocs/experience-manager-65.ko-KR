@@ -11,7 +11,7 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2845'
 ht-degree: 9%
@@ -53,6 +53,7 @@ Experience Manager 시 비디오 구성 요소를 사용하는 방법에 대한 
 >[!NOTE]
 >
 >Experience Manager은 비동기적으로 Dynamic Media Classic에 게시됩니다. 다음을 선택한 후 **[!UICONTROL 게시]**: 에셋이 Dynamic Media Classic에 게시되는 데 몇 초 정도 소요됩니다.
+>
 
 ## Dynamic Media Classic 구성 요소 {#scene-components}
 
@@ -111,7 +112,7 @@ Experience Manager에서 사용할 수 있는 Dynamic Media Classic 구성 요�
 
 **응답형 사이트에 대화형 보기 환경을 추가하려면 다음을 수행하십시오.**
 
-1. Experience Manager에 로그인하고 다음을 수행했는지 확인합니다. [구성된 Adobe Dynamic Media Classic Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) Dynamic Media Classic 구성 요소를 사용할 수 있습니다.
+1. Experience Manager에 로그인하고 다음을 수행했는지 확인합니다. [구성된 Adobe Dynamic Media Classic Cloud Service](/help/sites-administering/scene7.md#configuring-scene-integration) Dynamic Media Classic 구성 요소를 사용할 수 있습니다.
 
    >[!NOTE]
    >
@@ -267,11 +268,10 @@ Dynamic Media Classic 컨텐츠 브라우저를 사용하면 Dynamic Media Class
 >* 날짜 [보안 미리 보기가 활성화됨](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), Dynamic Media Classic에 게시된 에셋과 게시되지 않은 에셋은 모두 Dynamic Media Classic 콘텐츠 브라우저에 표시됩니다.
 >* 표시되지 않는 경우 **[!UICONTROL Dynamic Media Classic]** 또는 **[!UICONTROL S7]** 아이콘 을 컨텐츠 브라우저의 옵션으로 사용하여 다음을 수행해야 합니다. [Experience Manager에서 작동하도록 Dynamic Media Classic 구성](/help/sites-administering/scene7.md).
 >* 비디오의 경우 Dynamic Media Classic 컨텐츠 브라우저는 다음을 지원합니다.
-   >
-   >   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
-   >   * 단일 MP4 비디오
-   >   * 단일 F4V 동영상
-
+>
+>   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
+>   * 단일 MP4 비디오
+>   * 단일 F4V 동영상
 
 ### 터치에 적합한 UI에서 콘텐츠 찾아보기 {#browsing-content-in-the-touch-optimized-ui}
 
@@ -286,7 +286,6 @@ Dynamic Media Classic 컨텐츠 브라우저를 사용하면 Dynamic Media Class
 >* Dynamic Media Classic 콘텐츠 브라우저는 약 100개의 에셋을 로드하고 이름별로 정렬합니다.
 >* 보안 미리 보기 서버가 설정되어 있는 경우 브라우저는 해당 미리 보기 서버를 사용하여 썸네일 및 자산을 렌더링합니다.
 >
-
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -321,7 +320,7 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-**[!UICONTROL 구성]** -에 Dynamic Media Classic 구성이 두 개 이상 정의되어 있는 경우 [!UICONTROL Cloud Services]여기에서 선택할 수 있습니다. 따라서 폴더는 선택한 구성에 따라 변경됩니다.
+**[!UICONTROL 구성]** -에 Dynamic Media Classic 구성이 두 개 이상 정의되어 있는 경우 [!UICONTROL Cloud Service]여기에서 선택할 수 있습니다. 따라서 폴더는 선택한 구성에 따라 변경됩니다.
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -336,7 +335,6 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 >* 비디오를 검색할 때 단일 렌디션을 검색합니다. 원본 렌디션( &amp;ast;.mp4만) 및 인코딩된 렌디션이 반환됩니다.
 >* 응용 비디오 세트를 검색할 때 폴더 및 모든 하위 폴더를 검색하게 되지만, 검색에 키워드를 추가한 경우에만 해당됩니다. 키워드를 추가하지 않은 경우 Experience Manager이 하위 폴더를 검색하지 않습니다.
 >
-
 
 **[!UICONTROL 게시 상태]** - 게시 상태에 따라 자산을 필터링할 수 있습니다. **[!UICONTROL 게시 취소됨]** 또는 **[!UICONTROL 게시됨]**. 을 선택하지 않으면 **[!UICONTROL 게시 상태]**, Experience Manager은 기본적으로 모든 게시 상태를 검색합니다.
 

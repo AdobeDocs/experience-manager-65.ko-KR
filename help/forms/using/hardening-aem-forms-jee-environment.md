@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7667'
+source-wordcount: '7665'
 ht-degree: 1%
 
 ---
@@ -662,7 +662,7 @@ JEE 웹 애플리케이션의 각 AEM Forms에 대한 다음 애플리케이션 
 
 CSRF(Cross-Site Request Forgery) 공격은 웹 사이트가 사용자에게 갖는 신뢰를 이용하여 사용자가 승인하지 않고 의도하지 않은 명령을 전송합니다. 공격은 사용자가 이미 인증된 다른 사이트에 액세스하기 위해 웹 페이지에 링크 또는 스크립트를 포함하거나 이메일 메시지에 URL을 포함하여 설정됩니다.
 
-예를 들어 다른 웹 사이트를 동시에 탐색하면서 Administration Console에 로그인할 수 있습니다. 웹 페이지 중 하나는 다음과 같은 HTML 이미지 태그를 포함할 수 있습니다. `src` 희생된 웹 사이트의 서버측 스크립트를 대상으로 하는 속성입니다. 웹 브라우저에서 제공하는 쿠키 기반 세션 인증 메커니즘을 활용함으로써 공격 웹사이트는 정당한 사용자로 가장하여 이 피해자 서버측 스크립트에 악의적인 요청을 보낼 수 있습니다. 자세한 예는 를 참조하십시오. [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
+예를 들어 다른 웹 사이트를 동시에 탐색하면서 Administration Console에 로그인할 수 있습니다. 웹 페이지 중 하나는 다음과 같은 HTML 이미지 태그를 포함할 수 있습니다. `src` 희생된 웹 사이트의 서버측 스크립트를 대상으로 하는 속성입니다. 웹 브라우저에서 제공하는 쿠키 기반 세션 인증 메커니즘을 사용하여 공격 웹 사이트는 정당한 사용자로 가장하여 이 피해자 서버측 스크립트에 악의적인 요청을 보낼 수 있습니다. 자세한 예는 를 참조하십시오. [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 CSRF에는 다음과 같은 특성이 일반적입니다.
 

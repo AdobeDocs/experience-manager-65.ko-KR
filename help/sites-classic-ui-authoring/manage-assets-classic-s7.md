@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3532'
 ht-degree: 13%
@@ -105,7 +105,7 @@ Adobe은 Dynamic Media Classic(Scene7) 대상 폴더 내의 자산에서만 Dyna
 
 1. 사이드 킥에서 **[!UICONTROL 페이지]** 아이콘 및 선택 **[!UICONTROL 페이지 속성]**.
 
-1. 선택 **[!UICONTROL Cloud Services]**.
+1. 선택 **[!UICONTROL Cloud Service]**.
 1. 선택 **[!UICONTROL 서비스 추가]**.
 1. 선택 **[!UICONTROL Dynamic Media Classic(Scene7)]**.
 1. 다음에서 **[!UICONTROL Adobe Dynamic Media Classic(Scene7)]** 드롭다운 목록에서 원하는 구성을 선택하고 **[!UICONTROL 확인]**.
@@ -175,7 +175,7 @@ Experience Manager에서 사용할 수 있는 Dynamic Media Classic(Scene7) 구�
 
 클래식 UI에서 응답형 사이트에 대화형 보기 환경을 추가하려면:
 
-1. Experience Manager에 로그인하고 다음을 수행했는지 확인합니다. [구성된 Adobe Dynamic Media Classic(Scene7) Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) Dynamic Media Classic(Scene7) 구성 요소를 사용할 수 있습니다.
+1. Experience Manager에 로그인하고 다음을 수행했는지 확인합니다. [구성된 Adobe Dynamic Media Classic(Scene7) Cloud Service](/help/sites-administering/scene7.md#configuring-scene-integration) Dynamic Media Classic(Scene7) 구성 요소를 사용할 수 있습니다.
 
    >[!NOTE]
    >
@@ -381,7 +381,7 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**구성** - Cloud Services에 Dynamic Media Classic(Scene7) 구성이 두 개 이상 정의되어 있는 경우 여기에서 선택할 수 있습니다. 따라서 폴더는 선택한 구성에 따라 변경됩니다.
+**구성** - Cloud Service에 Dynamic Media Classic(Scene7) 구성이 두 개 이상 정의되어 있는 경우 여기에서 선택할 수 있습니다. 따라서 폴더는 선택한 구성에 따라 변경됩니다.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 

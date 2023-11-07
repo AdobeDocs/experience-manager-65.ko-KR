@@ -1,18 +1,14 @@
 ---
 title: 태그 관리
-seo-title: Administering Tags
 description: Adobe Experience Manager에서 태그를 관리하고 관리하는 방법에 대해 알아봅니다.
-seo-description: Learn how to administer Tags in AEM.
-uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1761'
 ht-degree: 14%
 
 ---
@@ -78,7 +74,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 ### 네임스페이스 만들기 {#creating-a-namespace}
 
-새 네임스페이스를 만들려면 **`Create Namespace`** 아이콘.
+네임스페이스를 만들려면 **`Create Namespace`** 아이콘.
 
 네임스페이스는 그 자체로 태그이며 하위 태그를 포함할 필요가 없습니다. 그러나 분류를 계속 만들려면 다음을 수행하십시오. [하위 태그 만들기](#creating-tags): 리프 태그 또는 컨테이너 태그일 수 있습니다.
 
@@ -211,7 +207,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 분류법에 중복 태그가 있는 경우 병합 태그를 사용할 수 있습니다. 태그 A가 태그 B에 병합되면 태그 A로 태그가 지정된 모든 페이지에 태그 B로 태그가 지정되며 태그 A는 작성자가 더 이상 사용할 수 없습니다.
 
-네임스페이스나 다른 태그를 선택한 경우 **병합** 아이콘을 클릭하면 병합할 경로를 선택할 수 있는 패널이 열립니다.
+네임스페이스나 다른 태그를 선택한 경우 **병합** 아이콘으로 병합할 경로를 선택할 수 있는 패널이 열립니다.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
@@ -296,7 +292,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-일반적으로 태그에 대해 선택된 언어는 사용 가능한 경우 페이지 언어에서 가져옵니다. 다음의 경우 [`tag` 위젯](/help/sites-developing/building.md#tagging-on-the-client-side) 는 다른 경우(예: 양식 또는 대화 상자)에 사용되며 태그 언어는 컨텍스트에 따라 다릅니다.
+일반적으로 태그에 대해 선택된 언어는 사용 가능한 경우 페이지 언어에서 가져옵니다. 다음의 경우 [`tag` 위젯](/help/sites-developing/building.md#tagging-on-the-client-side) 는 다른 경우(예: 양식이나 대화 상자)에 사용되며 태그 언어는 컨텍스트에 따라 다릅니다.
 
 태깅 콘솔에서는 페이지 언어 설정 대신 사용자 언어 설정을 사용합니다. 태그 지정 콘솔에서 &#39;Animaux&#39; 태그의 경우 사용자 속성에서 언어를 프랑스어로 설정한 사용자를 위해 &#39;Animux&#39;가 표시됩니다.
 
@@ -310,6 +306,6 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 * [개발자를 위한 태깅](/help/sites-developing/tags.md)
 
-  사용자 지정 애플리케이션에서 태그를 확장 및 포함하는 방법과 태깅 프레임워크에 대한 정보입니다.
+  태깅 프레임워크에 대한 정보와 사용자 지정 애플리케이션에서 태그를 확장 및 포함하는 정보입니다.
 
 * [클래식 UI 태깅 콘솔](/help/sites-administering/classic-console.md)

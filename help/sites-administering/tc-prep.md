@@ -4,10 +4,10 @@ description: Adobe Experience Manager에서 번역할 콘텐츠를 준비하는 
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 60%
+source-wordcount: '683'
+ht-degree: 58%
 
 ---
 
@@ -47,9 +47,9 @@ ht-degree: 60%
 
 언어 루트를 만들려면 페이지를 만들고 ISO 언어 코드를 이름 속성 값으로 사용합니다. 언어 코드는 다음 형식 중 하나여야 합니다.
 
-* `<language-code>`지원되는 언어 코드는 ISO-639-1에서 정의된 두 자리 코드입니다(예: `en`.
+* `<language-code>`지원되는 언어 코드는 ISO-639-1에서 정의된 두 자리 코드입니다(예: ). `en`.
 
-* `<language-code>_<country-code>` 또는 `<language-code>-<country-code>`지원되는 국가 코드는 ISO 3166에서 정의된 소문자 또는 대문자 두 자리 코드입니다 `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` 또는 `<language-code>-<country-code>`지원되는 국가 코드는 ISO 3166에서 정의된 소문자 또는 대문자 두 자리 코드입니다. 예를 들면 다음과 같습니다. `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 전역 사이트에 대해 선택한 구조에 따라 두 형식 중 하나를 사용할 수 있습니다. 예를 들어 Geometrixx 사이트의 프랑스어 언어 사본의 루트 페이지에는 `fr` 를 이름 속성으로 설정합니다. 이름 속성은 저장소의 페이지 노드 이름으로 사용되므로 페이지 경로를 결정합니다. (http://localhost:4502/content/geometrixx/fr.html)
 
@@ -65,7 +65,7 @@ ht-degree: 60%
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. 페이지 템플릿을 선택하고 다음을 클릭하거나 탭합니다.
-1. 이름 필드에 국가 코드를 `<language-code>` 또는 `<language-code>_<country-code>`의 형식으로 입력합니다(예: `en`, `en_US`, `en_us`, `en_GB`, `en_gb`). 페이지 제목을 입력합니다.
+1. 이름 필드에 다음 형식으로 국가 코드를 입력합니다. `<language-code>` 또는 `<language-code>_<country-code>`, 예: `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. 페이지 제목을 입력합니다.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 

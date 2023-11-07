@@ -1,19 +1,15 @@
 ---
 title: Client Context
-seo-title: Client Context
 description: Client Context를 사용하여 Adobe Experience Manager의 현재 페이지 및 방문자에 대한 정보를 보는 방법에 대해 알아봅니다.
-seo-description: Learn how to use the Client Context in AEM.
-uuid: 82b2f976-cb41-42f8-ad4b-3a5cd23cc5f5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1979'
 ht-degree: 0%
 
 ---
@@ -42,7 +38,7 @@ Client Context는 현재 페이지 및 방문자에 대한 특정 정보를 제�
 ![Client Context 창의 편집, 로드 및 재설정 아이콘](do-not-localize/clientcontext_icons.png)
 
 * **편집**
-다음 작업을 수행할 수 있는 새 페이지가 열립니다. [프로필 속성 편집, 추가 또는 제거](#editingprofiledetails).
+새 페이지가 열리고 여기에서 [프로필 속성 편집, 추가 또는 제거](#editingprofiledetails).
 
 * **로드**
 다음을 수행할 수 있습니다. [프로필 목록에서 를 선택하고 프로필을 로드합니다](#loading-a-new-user-profile) 테스트하려고 합니다.
@@ -70,7 +66,7 @@ Client Context는 다음 속성([편집을 사용하여 선택한 항목에 따�
 
 캠페인 해결은 일반적으로 캠페인의 우선 순위 속성을 기반으로 합니다. 경험은 일반적으로 세그먼테이션을 기반으로 선택됩니다.
 
-**장바구니** 제품 항목(제목, 수량, 가격 형식 등), 해결된 프로모션(제목, 메시지 등) 등 장바구니 정보를 표시합니다. 및 바우처(코드, 설명 등)
+**장바구니** 제품 항목(제목, 수량, 가격 서식 등), 해결된 프로모션(제목, 메시지 등) 및 바우처(코드, 설명 등)를 포함한 장바구니 정보를 표시합니다.
 
 또한 장바구니 세션 저장소는 ClientContextCartServlet을 사용하여 해결된 프로모션 변경 사항(세그먼테이션 변경 사항 기반)에 대해 서버에 알립니다.
 
@@ -154,7 +150,7 @@ Client Context를 사용하면 대화식으로 세부 사항을 변경할 수 �
 
    ![Client Context의 프로필 로드 아이콘](do-not-localize/clientcontext_loadprofile.png)
 
-1. 대화 상자가 열리고 여기서 로드할 프로필을 선택할 수 있습니다.
+1. 이 대화 상자가 열리면 로드할 프로필을 선택할 수 있습니다.
 
    ![프로필을 선택하는 드롭다운을 표시하는 프로필 로더 대화 상자](assets/clientcontext_profileloader.png)
 
@@ -194,7 +190,7 @@ Client Context를 사용하면 대화식으로 세부 사항을 변경할 수 �
 
 ### 태그 선택 변경 {#changing-the-tag-selection}
 
-1. Client Context의 Tag Cloud 섹션을 두 번 클릭합니다. 대화 상자가 열리고 여기서 태그를 선택할 수 있습니다.
+1. Client Context의 Tag Cloud 섹션을 두 번 클릭합니다. 다음과 같은 태그를 선택할 수 있는 대화 상자가 열립니다.
 
    ![태그 클라우드 대화 상자](assets/clientcontext_tagselection.png)
 

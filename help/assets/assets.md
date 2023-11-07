@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%
@@ -18,7 +18,7 @@ AEM [!DNL Assets] 는 의 일부인 디지털 에셋 관리(DAM) 도구입니다
 
 ## Digital Asset Management 소개 {#what-is-digital-asset-management}
 
-[!DNL Assets] 는 조직의 주요 디지털 에셋에 대한 전사적 공유 및 배포를 제공합니다. 조직의 사용자는 웹 인터페이스(또는 CIFS 또는 WebDAV 폴더)를 통해 이미지, 그래픽, 오디오, 비디오 및 문서와 같은 디지털 자산을 저장, 관리 및 액세스할 수 있습니다.
+[!DNL Assets] 는 조직의 주요 디지털 에셋에 대한 전사적 공유 및 배포를 제공합니다. 조직의 사용자는 웹 인터페이스(또는 CIF 또는 WebDAV 폴더)를 통해 이미지, 그래픽, 오디오, 비디오 및 문서와 같은 디지털 자산을 저장, 관리 및 액세스할 수 있습니다.
 
 [!DNL Assets] 기능 [!DNL Experience Manager] 을 사용하면 다음 작업을 수행할 수 있습니다.
 
@@ -26,7 +26,7 @@ AEM [!DNL Assets] 는 의 일부인 디지털 에셋 관리(DAM) 도구입니다
 * 태그, Lightbox 또는 별(즐겨찾기)로 그룹화하여 자산을 관리합니다. 자산에 주석을 추가합니다.
 * 파일 이름, 문서의 전체 텍스트, 날짜, 문서 유형 및 태그를 검색하여 자산을 찾습니다.
 * 에셋의 메타데이터 정보를 추가하거나 편집합니다. 메타데이터는 해당 에셋과 함께 자동으로 버전이 지정됩니다. 에셋 메타데이터를 가져오거나 내보낼 수 있습니다.
-* 이미지 필터 크기 조절 및 추가와 같은 이미지 편집 기능을 수행합니다. WebDAV 또는 CIFS 폴더를 사용하여 여러 디지털 에셋을 동시에 가져오거나 내보냅니다.
+* 이미지 필터 크기 조절 및 추가와 같은 이미지 편집 기능을 수행합니다. WebDAV 또는 CIF 폴더를 사용하여 여러 디지털 에셋을 동시에 가져오고 내보냅니다.
 * 워크플로우 및 알림을 사용하여 모든 에셋 세트의 공동 처리 및 다운로드를 허용하고 에셋에 대한 액세스 권한을 관리합니다.
 
 ### [!DNL Experience Manager Assets] 와 통합됨 [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
@@ -66,7 +66,7 @@ AEM [!DNL Assets] 는 의 일부인 디지털 에셋 관리(DAM) 도구입니다
 
 * **태깅**: [!DNL Assets] 태그를 지정하고 분류할 수 있습니다. 다음을 참조하십시오 [에셋 구성](/help/assets/organize-assets.md).
 
-* **표현물**: 렌디션은 에셋의 바이너리 표현입니다. [!DNL Assets] 항상 업로드된 파일의 기본 표현을 사용합니다. 예를 들어 사용자 지정된 워크플로우 단계나 에셋이 업로드된 경우 생성되는 추가 표현을 원하는 수만큼 가질 수 있습니다. 렌디션의 크기가 다르고 해상도가 다르고 워터마크가 추가되거나 다른 특성이 변경될 수 있습니다.
+* **표현물**: 렌디션은 에셋의 바이너리 표현입니다. [!DNL Assets] 항상 업로드된 파일의 기본 표현을 사용합니다. 예를 들어 사용자 지정된 워크플로우 단계에 의해 또는 에셋을 업로드할 때 만들어지는 추가 표현을 얼마든지 사용할 수 있습니다. 렌디션의 크기가 다르고 해상도가 다르고 워터마크가 추가되거나 다른 특성이 변경될 수 있습니다.
 
 * **버전**: 버전 관리를 사용하면 특정 시점에 디지털 에셋의 스냅샷이 생성됩니다. 자산을 이전 버전으로 복원할 수 있습니다. 다음을 참조하십시오 [버전 관리 [!DNL Assets]](manage-assets.md#asset-versioning).
 

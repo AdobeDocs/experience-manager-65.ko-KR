@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3226'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 ### 사용자 설정 {#user-settings}
 
-**고유 식별자:** (필수) 사용자를 식별하는 데 사용되는 고유한 상수 속성입니다. 사용자의 DN이 조직의 다른 부분으로 이동할 경우 변경될 수 있으므로 DN이 아닌 속성을 고유 식별자로 사용합니다. 이 설정은 디렉터리 서버에 따라 다릅니다. 값은 Active Directory 2003의 objectGUID, Sun™ One의 nuniqueID 및 eDirectory의 guid입니다.
+**고유 식별자:** (필수) 사용자를 식별하는 데 사용되는 고유한 상수 속성입니다. 사용자의 DN이 조직의 다른 부분으로 이동할 경우 변경될 수 있으므로 DN 이외의 속성을 고유 식별자로 사용합니다. 이 설정은 디렉터리 서버에 따라 다릅니다. 값은 Active Directory 2003의 objectGUID, Sun™ One의 nuniqueID 및 eDirectory의 guid입니다.
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ Enterprise 도메인을 사용하는 경우 Business Calendar 설정을 LDAP 디
 
 ### 그룹 설정 {#group-settings}
 
-**고유 식별자:** (필수) 그룹을 식별하는 데 사용되는 고유한 상수 속성입니다. DN 이외의 속성을 고유 식별자로 사용합니다. 이 설정은 디렉터리 서버에 따라 다릅니다. 값은 Active Directory 2003의 objectGUID, Sun One의 nuniqueID 및 eDirectory의 guid입니다.
+**고유 식별자:** (필수) 그룹을 식별하는 데 사용되는 고유한 상수 속성입니다. DN 이외의 속성을 고유 식별자로 사용합니다. 이 설정은 디렉터리 서버에 따라 다릅니다. 값은 Active Directory 2003의 objectGUID, Sun One의 고유 ID 및 eDirectory의 guid입니다.
 
 >[!NOTE]
 >
@@ -307,7 +307,7 @@ VLV를 만들려면 다음을 포함하는 항목 쌍이 필요합니다. `vlvSe
     [21/Nov/2007:16:47:29 +051800] - userRoot: Finished indexing.
    ```
 
-   vlvindex 도구는 디렉토리 서버 인스턴스 디렉토리에 있습니다. Sun ONE Server에 server1과 server2를 실행하는 인스턴스가 두 개 있는 경우 vlvindex 도구는 *Sun ONE 서버 디렉토리*\server1 디렉터리입니다. 매개 변수 값 `-T` 은(는) 의 값입니다 `cn` 샘플 LDIF에서 이전에 만든 vlvindex 항목의 특성입니다. 이 경우 `lcuser`.
+   vlvindex 도구는 디렉토리 서버 인스턴스 디렉토리에 있습니다. Sun ONE Server에 server1과 server2를 실행하는 인스턴스가 두 개 있는 경우 vlvindex 툴이 *Sun ONE 서버 디렉토리*\server1 디렉터리입니다. 매개 변수 값 `-T` 은(는) 의 값입니다 `cn` 샘플 LDIF에서 이전에 만든 vlvindex 항목의 특성입니다. 이 경우 `lcuser`.
 
 1. 그룹에 대해서도 VLV를 사용할 수 있는 경우 그룹에 대해 해당 인덱스를 만듭니다. 다음 명령을 실행하여 색인이 생성되었는지 확인합니다.
 

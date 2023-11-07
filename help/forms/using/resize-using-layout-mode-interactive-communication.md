@@ -3,7 +3,7 @@ title: 레이아웃 모드를 사용하여 대화형 커뮤니케이션용 구�
 description: 레이아웃 모드에서 사용할 수 있는 응답형 그리드를 사용하여 구성 요소의 위치를 정의합니다.
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 선택 **레이아웃** 대화 상자 옆에 있는 대화형 통신 작성 인터페이스 맨 위에 표시되는 드롭다운 목록에서 **미리 보기** 옵션을 선택합니다. 양식이 레이아웃 모드로 표시됩니다.
 
 1. AEM 작성자 인스턴스에 로그인하고 다음으로 이동합니다. **Adobe Experience Manager** > **Forms** > **Forms 및 문서**.
-1. 새로 만들기 또는 기존 열기 [대화형 통신](../../forms/using/create-interactive-communication.md).
+1. 만들기 [대화형 통신](../../forms/using/create-interactive-communication.md) 또는 기존 파일을 엽니다.
 1. 선택 **레이아웃** (이)가 표시되는 드롭다운 목록에서 **미리 보기** 옵션을 선택합니다. 양식이 레이아웃 모드로 표시됩니다.
 
    ![대화형 커뮤니케이션용 레이아웃 모드](assets/layout_mode_ic_new.png)
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 1. 위치 **[!UICONTROL 편집]** 모드, 패널을 탭하고 선택 ![구성](assets/configure_icon.png), 및 선택 **[!UICONTROL 응답형 - 탐색 없이 페이지에 있는 모든 항목]** 옵션에서 **[!UICONTROL 패널 레이아웃]** 드롭다운 목록입니다.
 
-1. 누르기 ![저장](assets/save_icon.svg) 속성을 저장합니다.
+1. ![저장](assets/save_icon.svg)을 탭하여 변경 내용을 저장합니다.
 
 1. 다음에서 **[!UICONTROL 레이아웃]** 모드, 패널에서 구성 요소 중 하나를 탭하고 ![상위 선택](assets/select_parent_icon.svg)을 누르고 패널을 선택합니다.
 

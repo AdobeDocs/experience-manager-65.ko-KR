@@ -1,18 +1,14 @@
 ---
 title: AEM Brackets 확장
-seo-title: AEM Brackets Extension
 description: Brackets용 Adobe Experience Manager 확장 기능을 사용하는 방법에 대해 알아봅니다.
-seo-description: null
-uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '935'
 ht-degree: 3%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 3%
 
 ## 개요 {#overview}
 
-AEM Brackets 확장은 AEM 구성 요소 및 클라이언트 라이브러리를 편집하는 부드러운 워크플로를 제공하며 의 기능을 활용합니다. [대괄호](https://brackets.io/) 코드 편집기 내에서 Photoshop 파일 및 레이어에 대한 액세스 권한을 제공하는 코드 편집기. 확장에서 제공하는 간편한 동기화(Maven 또는 File Vault 필요 없음)를 통해 개발자 효율성을 높이고 AEM 지식이 제한된 프론트엔드 개발자가 프로젝트에 참여할 수 있습니다. 이 확장은 또한 [HTML 템플릿 언어(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html): JSP의 복잡성을 제거하여 구성 요소를 보다 쉽고 안전하게 개발할 수 있습니다.
+AEM Brackets 확장은 AEM 구성 요소 및 클라이언트 라이브러리를 편집하는 매끄러운 워크플로를 제공하며 의 기능을 사용합니다. [대괄호](https://brackets.io/) 코드 편집기 내에서 Photoshop 파일 및 레이어에 대한 액세스 권한을 제공하는 코드 편집기. 확장에서 제공하는 간편한 동기화(Maven 또는 File Vault 필요 없음)를 통해 개발자 효율성을 높이고 AEM 지식이 제한된 프론트엔드 개발자가 프로젝트에 참여할 수 있습니다. 이 확장은 또한 [HTML 템플릿 언어(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html): JSP의 복잡성을 제거하여 구성 요소를 보다 쉽고 안전하게 개발할 수 있습니다.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -71,7 +67,7 @@ AEM Brackets 확장은 Brackets 버전 1.0 이상을 지원합니다.
 
 1. a `jcr_root` 폴더(예: `myproject/jcr_root`)
 
-1. a `filter.xml` 파일(예: `myproject/META-INF/vault/filter.xml`); 의 구조에 대한 자세한 내용은 `filter.xml` 파일을 참조하십시오. [작업 영역 필터 정의](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` 파일(예: `myproject/META-INF/vault/filter.xml`); 의 구조에 대한 자세한 내용은 `filter.xml` 파일 참조 [작업 영역 필터 정의](https://jackrabbit.apache.org/filevault/filter.html).
 
 대괄호 안 **파일** 메뉴, 선택 **폴더 열기...** 다음 중 하나를 선택합니다. `jcr_root` 폴더 또는 상위 프로젝트 폴더입니다.
 

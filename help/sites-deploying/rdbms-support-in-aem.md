@@ -1,20 +1,16 @@
 ---
 title: AEM 6.4의 RDBMS 지원
-seo-title: RDBMS Support in AEM 6.4
 description: AEM 6.4의 관계형 데이터베이스 지속성 지원 및 사용 가능한 구성 옵션에 대해 알아봅니다.
-seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
-uuid: c8422b0d-c6df-488d-bb6a-af92c9afda50
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
 feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -27,7 +23,7 @@ AEM의 관계형 데이터베이스 지속성 지원은 문서 마이크로커�
 
 Mongo Java API를 기반으로 하는 Java API로 구성되어 있습니다. BlobStore API 구현도 제공됩니다. 기본적으로 블롭은 데이터베이스에 저장됩니다.
 
-구현 세부 사항에 대한 자세한 내용은 다음을 참조하십시오. [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) 및 [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) 설명서를 참조하십시오.
+구현 세부 사항에 대한 자세한 내용은 [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) 및 [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) 설명서를 참조하십시오.
 
 >[!NOTE]
 >
@@ -43,7 +39,7 @@ AEM의 관계형 데이터베이스 지원 수준에 대한 자세한 내용은 
 
 데이터 소스가 작동하려면 AEM으로 데이터 소스를 구성해야 합니다. 이 작업은 다음을 통해 수행됩니다. `org.apache.sling.datasource.DataSourceFactory.config` 파일. 각 데이터베이스의 JDBC 드라이버는 로컬 구성 내에서 OSGi 번들로 별도로 제공되어야 합니다.
 
-JDBC 드라이버용 OSGi 번들을 생성하는 단계는 다음을 참조하십시오. [설명서](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) Apache Sling 웹 사이트에서 확인하십시오.
+JDBC 드라이버용 OSGi 번들을 생성하는 방법은 다음을 참조하십시오. [설명서](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) Apache Sling 웹 사이트에서 확인하십시오.
 
 번들이 준비되면 아래 단계에 따라 RDB 지속성을 사용하여 AEM을 구성합니다.
 

@@ -9,9 +9,9 @@ topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 7%
 
 ---
@@ -91,7 +91,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
    <td>데이터 사전 </td>
   </tr>
   <tr>
-   <td>로컬라이제이션</td>
+   <td>지역화</td>
    <td>양식 데이터 모델에서 지원되지 않음</td>
    <td>데이터 사전에서 지원됨</td>
   </tr>

@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Document Security를 설치하면 기본 정책 세트가 *전역 정책 설정*
 1. 정책 탭에서 정책 집합에 추가할 정책을 검색하고 새 정책을 만듭니다.
 
    * 정책을 검색하려면 정책 ID 또는 정책 이름을 선택하고 해당 값을 입력한 다음 표시할 항목 수를 선택하고 찾기를 누릅니다.
-   * 새 정책 만들기에 대한 자세한 내용은 [정책 만들기 및 편집](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+   * 정책 만들기에 대한 자세한 내용은 [정책 만들기 및 편집](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
 ## 정책 집합 삭제 {#delete-a-policy-set}
 

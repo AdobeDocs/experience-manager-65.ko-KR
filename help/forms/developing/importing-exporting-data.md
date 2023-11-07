@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2771'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ ht-degree: 0%
 
 **XML 데이터 소스 참조**
 
-양식 데이터를 가져오려면 유효한 데이터 소스를 참조해야 합니다. Designer에서 만든 XFA XML 양식으로 데이터를 가져오려면 XDP XML 데이터 소스를 사용해야 합니다. Acrobat 양식을 참조하는 경우 XFDF 데이터 소스를 사용해야 합니다. 데이터를 가져올 각 필드에 값을 지정해야 합니다. XML 데이터 원본에 있는 요소가 양식의 필드에 해당하지 않으면 요소가 무시됩니다.
+양식 데이터를 가져오려면 유효한 데이터 소스를 참조해야 합니다. Designer에서 만든 XFA XML 양식으로 데이터를 가져오려면 XDP XML 데이터 소스를 사용해야 합니다. Acrobat 양식을 참조하는 경우 XFDF 데이터 소스를 사용해야 합니다. 데이터를 가져올 각 필드에 값을 지정해야 합니다. XML 데이터 소스의 요소가 양식의 필드에 해당하지 않으면 요소가 무시됩니다.
 
 **PDF 양식으로 데이터 가져오기**
 

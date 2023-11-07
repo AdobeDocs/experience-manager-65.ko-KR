@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 3%
@@ -61,7 +61,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 * **컨텐츠 언어 서블릿:** 현재 페이지의 언어 및 페이지를 사용할 수 있는 각 언어에 대한 정보입니다.
 * **워크플로 상태 공급자:** 페이지를 페이로드로 사용하는 실행 중인 워크플로우에 대한 상태 정보입니다.
 * **워크플로 패키지 정보 공급자:** 저장소에 저장된 각 워크플로우 패키지에 대한 정보 및 각 패키지에 현재 리소스가 포함되어 있는지 여부를 나타냅니다.
-* **에뮬레이터 정보 공급자:** 이 리소스에 사용할 수 있는 모바일 장치 에뮬레이터에 대한 정보입니다. 페이지 구성 요소가 모바일 페이지를 렌더링하지 않는 경우 에뮬레이터를 사용할 수 없습니다.
+* **에뮬레이터 정보 공급자:** 이 리소스에 사용할 수 있는 모바일 장치 에뮬레이터에 대한 정보입니다. 페이지 구성 요소가 모바일 페이지를 렌더링하지 않으면 에뮬레이터를 사용할 수 없습니다.
 * **주석 정보 공급자:** 페이지에 있는 주석에 대한 정보입니다.
 
 예를 들어 PageInfo 서블릿은 다음에 대한 다음 JSON 응답을 반환합니다 `/content/we-retail/us/en` 노드:
@@ -475,7 +475,8 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->사이드 킥의 워크플로 탭은 PageInfo 서블릿을 사용하여 워크플로 패키지 목록을 가져옵니다. 목록에서 현재 페이지를 추가할 패키지를 선택할 수 있습니다. 만든 필터는 이 목록에 영향을 줍니다.
+>Sidekick의 워크플로 탭은 PageInfo 서블릿을 사용하여 워크플로 패키지 목록을 가져옵니다. 목록에서 현재 페이지를 추가할 패키지를 선택할 수 있습니다. 만든 필터는 이 목록에 영향을 줍니다.
+>
 
 서비스의 ID는 입니다. `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. 필터를 만들려면 값을 `workflowpackageinfoprovider.filter` 속성.
 
@@ -516,7 +517,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 1. 프로젝트 소스에서 AEM 애플리케이션에 대한 구성 폴더를 찾거나 만듭니다.
 
-   예를 들어 Content Package Maven Plugin의 multimodule 원형을 사용하여 프로젝트를 만든 경우 폴더 경로는 다음과 같습니다. `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   예를 들어 Content Package Maven Plugin의 multimodule 원형을 사용하여 프로젝트를 만든 경우 폴더 경로는 다음과 같습니다. `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
 1. 구성 폴더에서 com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml이라는 텍스트 파일을 만듭니다
 1. 다음 텍스트를 파일에 복사합니다.
 

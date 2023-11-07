@@ -8,7 +8,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 * **즉석 편집**
 텍스트 및 이미지 구성 요소는 대화 상자나 명시적 저장 작업을 열지 않고도 웹 페이지에서 바로 편집할 수 있습니다.
 
-* **[사이드 킥](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
+* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
 편집 가능한 페이지에 나타나는 부동 &quot;검사기&quot; 창입니다. 여기에서 새 구성 요소를 페이지로 드래그하고 페이지별 작업을 실행할 수 있습니다.
 
 * **[콘텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
