@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 61f3079a88e39c02b29bfafc7b2b9d4d098cef6b
 workflow-type: tm+mt
-source-wordcount: '4632'
+source-wordcount: '4640'
 ht-degree: 9%
 
 ---
@@ -492,7 +492,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 #### 대화형 통신
 
-* AEM 서비스 팩 18로 업그레이드한 후에는 대화형 통신 문자를 편집할 수 없습니다. (FORMS-10578) 이 문제를 해결하려면 다음 단계를 수행하십시오.
+* AEM 서비스 팩 18로 업그레이드한 후에는 편집 모드에서 큰 인라인 이미지가 있는 대화형 통신을 열 수 없습니다. (FORMS-10578) 이 문제를 해결하려면 다음 단계를 수행하십시오.
 
    1. 다운로드 [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) SD 링크에서.
    1. 핫픽스 아카이브 파일을 추출하여 Experience Manager 패키지(.zip)와 번들(.jar) 파일을 가져올 수 있습니다.
