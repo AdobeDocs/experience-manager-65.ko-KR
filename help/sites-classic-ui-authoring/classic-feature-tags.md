@@ -1,14 +1,12 @@
 ---
 title: 태그 사용
 description: 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다. 태그는 검색을 통해 해당 콘텐츠 및 관련 콘텐츠를 찾을 수 있도록 하기 위해 페이지, 자산 또는 콘텐츠에 첨부할 수 있는 키워드 또는 레이블이라고 할 수 있습니다.
-uuid: 9799131f-4043-4022-a401-af8be93a1bf6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 27e5c7fea4e90873bf80f976e179b5af0088f550
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 45%

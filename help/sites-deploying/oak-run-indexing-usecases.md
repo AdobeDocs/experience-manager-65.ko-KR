@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: deploying
 noindex: true
 exl-id: d25e3070-080a-4594-8fdb-9f09164135fc
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1385'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Valid indexes :
 
 1. 오프라인 분석을 위한 색인 콘텐츠 덤프
 
-1. AEM에 액세스할 수 없는 경우에도 사용할 수 있습니다.
+1. AEM에 액세스할 수 없는 경우에도 사용 가능
 
 이제 다음 작업 인덱스 명령을 사용하여 위의 작업을 수행할 수 있습니다.
 

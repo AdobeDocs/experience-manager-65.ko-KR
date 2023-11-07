@@ -1,14 +1,12 @@
 ---
 title: 워크플로를 사용하여 작업
 description: AEM 워크플로에서는 페이지나 에셋에서 수행되는 일련의 단계들을 자동화할 수 있습니다. 예를 들어 편집자는 게시할 때 사이트 관리자가 페이지를 활성화하기 전에 콘텐츠를 검토해야 합니다. 이 예제를 자동화하는 워크플로는 필요한 작업을 수행할 때가 되면 각 참가자에게 알립니다.
-uuid: 3eb6e790-6589-414a-8e51-33c358f47a73
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: b11f0e4c-4dec-4b66-9f54-a0aa13ac77b9
 exl-id: 298fcfeb-dc8d-4edc-8743-83c0e5e5bc08
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 83%

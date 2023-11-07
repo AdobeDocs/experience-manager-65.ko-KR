@@ -5,7 +5,7 @@ exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1159'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ AEM Headless 번역 여정의 이전 문서인 [AEM Headless 번역 시작하기
 
 ## 목표 {#objective}
 
-이 문서는 선택한 번역 서비스에 AEM 통합을 설정하는 방법을 이해하는 데 도움이 됩니다. 문서를 읽고 나면
+이 문서는 AEM 통합 기능을 설정하여 선택한 번역 서비스에 연결하는 방법을 이해하는 데 도움이 됩니다. 문서를 읽고 나면
 
 * AEM 번역 통합 프레임워크의 중요한 매개변수를 이해할 수 있습니다.
 * 번역 서비스에 대해 나만의 연결을 설정할 수 있습니다.
