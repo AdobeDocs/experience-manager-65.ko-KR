@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 61f3079a88e39c02b29bfafc7b2b9d4d098cef6b
+source-git-commit: 31bc86f81620bdc6fe9877cdc96f4004a80d60f9
 workflow-type: tm+mt
-source-wordcount: '4640'
+source-wordcount: '4641'
 ht-degree: 9%
 
 ---
@@ -419,10 +419,19 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * GraphQL 쿼리는 `damAssetLucene` 색인 대신 `fragments` 색인입니다. 이 작업으로 인해 GraphQL 쿼리가 실패하거나 실행하는 데 시간이 오래 걸릴 수 있습니다.
 
-  문제를 해결하려면 `damAssetLucene` 다음 두 속성을 포함하도록 을 구성해야 합니다.
+  문제를 해결하려면 `damAssetLucene` 다음 두 속성을 포함하도록 구성해야 합니다. `/indexRules/dam:Asset/properties`:
 
    * `contentFragment`
+      * `jcr:primaryType="nt:unstructured"`
+      * `name="jcr:content/contentFragment"`
+      * `propertyIndex="{Boolean}true"`
+      * `type="Boolean"`
    * `model`
+      * `jcr:primaryType="nt:unstructured"`
+      * `name="jcr:content/data/cq:model"`
+      * `ordered="{Boolean}true"`
+      * `propertyIndex="{Boolean}true"`
+      * `type="String"`
 
   색인 정의를 변경한 후에는 리인덱싱이 필요합니다(`reindex` = `true`).
 
