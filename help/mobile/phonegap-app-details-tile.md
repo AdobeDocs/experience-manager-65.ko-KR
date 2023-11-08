@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1244'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 2%
 </widget>
 ```
 
-Apple App Store 또는 Google Play 스토어와 같은 각 공급업체 애플리케이션 스토어는 고객에게 애플리케이션 세부 정보를 표시하기 위해 모바일 애플리케이션의 스크린샷을 하나 이상 필요로 합니다. 이러한 스크린샷은 차원 및 콘텐츠에 대한 엄격한 요구 사항을 가질 수 있습니다(기본적으로 애플리케이션을 실제로 표시해야 함). AEM Apps에서는 각 공급업체의 애플리케이션 스토어에서 요구하는 대로 지원되는 플랫폼 및 보기 포트 차원에 대한 스크린샷을 선택하고 관리할 수 있습니다.
+Apple App Store 또는 Google Play 스토어와 같은 각 공급업체 애플리케이션 스토어는 고객에게 애플리케이션 세부 정보를 표시하기 위해 모바일 애플리케이션의 스크린샷을 하나 이상 필요로 합니다. 이러한 스크린샷은 차원 및 콘텐츠에 대한 엄격한 요구 사항을 가질 수 있습니다(기본적으로 애플리케이션을 실제로 표시해야 함). AEM Apps는 각 공급업체의 애플리케이션 스토어에서 요구하는 대로 지원되는 플랫폼 및 보기 포트 차원에 대해 이러한 스크린샷을 선택하고 관리할 수 있도록 지원합니다.
 
 >[!NOTE]
 >

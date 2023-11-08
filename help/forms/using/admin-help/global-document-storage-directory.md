@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
 exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # 글로벌 문서 스토리지 디렉터리{#global-document-storage-directory}
 
-다음 *GDS(글로벌 문서 저장소)* directory 는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사용되는 디렉토리입니다. 이러한 파일에는 PDF, 정책 및 양식 템플릿이 포함되어 있습니다. 장기 파일은 여러 AEM Forms 배포의 전체 상태에서 중요한 부분입니다. 일부 또는 모든 장기 문서가 손실되거나 손상되면 Forms 서버가 불안정해질 수 있습니다. 비동기 작업 호출에 대한 입력 문서는 GDS 디렉터리에도 저장되므로 요청을 처리할 수 있어야 합니다. GDS 디렉토리를 호스팅하는 파일 시스템의 안정성을 고려하는 것이 중요합니다. 사용자의 서비스 품질 및 수준에 적합한 RAID(Redundant Array of Independent Disks) 또는 기타 기술을 사용합니다.
+다음 *GDS(글로벌 문서 저장소)* directory 는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사용되는 디렉토리입니다. 이러한 파일에는 PDF, 정책 및 양식 템플릿이 포함되어 있습니다. 장기 파일은 여러 AEM Forms 배포의 전체 상태에서 중요한 부분입니다. 일부 또는 모든 장기 사용 문서가 손실되거나 손상되면 Forms 서버가 불안정해질 수 있습니다. 비동기 작업 호출에 대한 입력 문서는 GDS 디렉터리에도 저장되므로 요청을 처리할 수 있어야 합니다. GDS 디렉토리를 호스팅하는 파일 시스템의 안정성을 고려하는 것이 중요합니다. 사용자의 서비스 품질 및 수준에 적합한 RAID(Redundant Array of Independent Disks) 또는 기타 기술을 사용합니다.
 
 장기 보존 파일에는 중요한 사용자 정보가 포함될 수 있습니다. 이 정보는 AEM Forms API 또는 사용자 인터페이스를 사용하여 액세스할 때 특수 자격 증명이 필요할 수 있습니다. GDS 디렉토리는 운영 체제를 통해 적절하게 보호되는 것이 중요하다. 응용 프로그램 서버를 실행하는 데 사용되는 관리자 계정만 GDS 디렉터리에 대한 읽기/쓰기 액세스 권한을 가져야 합니다.
 

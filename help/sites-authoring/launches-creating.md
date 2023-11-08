@@ -9,7 +9,7 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 83%
@@ -64,9 +64,9 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 
    >[!NOTE]
    >
-   >론치에 페이지 및/또는 분기를 추가하려면 사이트 내에 있어야 합니다(예: 일반적인 최상위 루트 아래).
+   >론치에 페이지 및/또는 분기를 추가하려면 해당 페이지 및/또는 분기가 사이트 내(일반적인 최상위 수준 루트 아래)에 있어야 합니다.
    >
-   >사이트의 최상위 수준 아래에 언어 루트가 있는 경우 론치에 대한 페이지 및 분기는 공통 언어 루트 아래에 있어야 합니다.
+   >사이트에 최상위 수준 아래의 언어 루트가 포함되어 있는 경우 론치용 페이지 및 분기는 공통 언어 루트 아래에 있어야 합니다.
    >
    >소스 경로에 상위 또는 하위 페이지가 있는 론치를 만들려고 하면 실패하고 &quot;대상이 :path에 이미 존재함: 페이지에 표시됨&quot; 오류가 반환됩니다.
 

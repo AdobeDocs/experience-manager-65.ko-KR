@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 5%
+source-wordcount: '675'
+ht-degree: 6%
 
 ---
 
@@ -56,12 +56,10 @@ ht-degree: 5%
 >
 >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
 >
->1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
+>1. 필요한 항목 다시 만들기(존재하는 그대로) `/libs`) `/apps`
 >
 >1. 다음 범위 내에서 변경 `/apps`
-
 >
-
 
 템플릿의 기본 구조는 다음 아래에 유지됩니다.
 
@@ -109,7 +107,7 @@ conf
 
 * **템플릿**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>이름</th>
@@ -123,7 +121,7 @@ conf
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>필수<br /> </p> </td>
+     <td><p><code>String</code></p> <p>required<br /> </p> </td>
      <td>템플릿의 제목(에 표시됨) <strong>조각 만들기</strong> 마법사)를 참조하십시오.</td>
     </tr>
     <tr>
@@ -138,12 +136,12 @@ conf
     </tr>
     <tr>
      <td><code>precreateElements</code></td>
-     <td><p><code>Boolean</code></p> <p>필수</p> </td>
+     <td><p><code>Boolean</code></p> <p>required</p> </td>
      <td><p><code>true</code>콘텐츠 조각을 만들 때 콘텐츠 조각의 요소(마스터 요소 제외)를 나타내는 하위 에셋을 만들어야 하는 경우 <em>false</em> 필요할 경우 언제든지 생성할 수 있습니다.</p> <p><strong>참고</strong>: 현재 이 매개 변수는 (으)로 설정해야 합니다. <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
-     <td><p><code>Long</code></p> <p>필수</p> </td>
+     <td><p><code>Long</code></p> <p>required</p> </td>
      <td><p>콘텐츠 구조의 버전. 현재 지원됨:</p> <p><strong>참고</strong>: 현재 이 매개 변수는 (으)로 설정해야 합니다. <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
@@ -151,7 +149,7 @@ conf
 
 * **요소**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>이름</th>
@@ -159,8 +157,8 @@ conf
      <th>값</th>
     </tr>
     <tr>
-     <td><code>elements</code> </td>
-     <td><p><code>nt:unstructured</code></p> <p>필수</p> </td>
+     <td><code>elements</code><br /> </td>
+     <td><p><code>nt:unstructured</code></p> <p>required</p> </td>
      <td><p>콘텐츠 조각 요소의 정의가 포함된 노드입니다. 필수 항목이며,에 대해 하나 이상의 하위 노드를 포함해야 합니다. <strong>기본</strong> 요소를 포함하지만 [1..n] 하위 노드.</p> <p>템플릿을 사용하면 요소 하위 분기가 조각의 모델 하위 분기에 복사됩니다.</p> <p>첫 번째 요소(CRXDE Lite에서 볼 수 있음)는 자동으로 <i>main</i> 요소; 노드 이름은 관련이 없으며 노드 자체가 주 자산으로 표시된다는 점과 별도로 특별한 의미가 없습니다. 다른 요소는 하위 자산으로 처리됩니다.</p> </td>
     </tr>
    </tbody>
@@ -168,7 +166,7 @@ conf
 
 * **요소 이름**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>이름</th>
@@ -182,7 +180,7 @@ conf
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>필수</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>요소의 제목(조각 편집기의 요소 선택기에 표시됨)입니다.</td>
     </tr>
     <tr>
@@ -202,7 +200,7 @@ conf
     </tr>
     <tr>
      <td><code>name</code></td>
-     <td><p><code>String</code></p> <p>필수</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>요소의 내부 이름입니다. 조각 유형에 대해 고유해야 합니다.</td>
     </tr>
    </tbody>
@@ -210,7 +208,7 @@ conf
 
 * **변형**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>이름</th>
@@ -218,7 +216,7 @@ conf
      <th>값</th>
     </tr>
     <tr>
-     <td><code>variations</code> </td>
+     <td><code>variations</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>옵션</p> </td>
      <td>이 선택적 노드에는 콘텐츠 조각의 초기 변형에 대한 정의가 포함되어 있습니다.</td>
     </tr>
@@ -227,7 +225,7 @@ conf
 
 * **변형 이름**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>이름</th>
@@ -235,14 +233,14 @@ conf
      <th>값</th>
     </tr>
     <tr>
-     <td><code>&lt;<i>variation-name</i>&gt;</code> </td>
+     <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>변형 노드가 있는 경우 필요합니다.</p> </td>
      <td><p>초기 변형을 정의합니다.<br /> 변형은 기본적으로 콘텐츠 조각의 모든 요소에 추가됩니다.</p> <p>변형은 해당 요소와 동일한 초기 콘텐츠를 갖습니다(참조). <code class="code">defaultContent/
        initialContentType</code>)</p> </td>
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>필수</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>변형의 제목(조각 편집기에 표시됨) <strong>변형</strong> 탭(왼쪽 레일)</td>
     </tr>
     <tr>

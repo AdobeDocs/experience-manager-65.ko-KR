@@ -5,9 +5,9 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '1961'
 ht-degree: 24%
 
 ---
@@ -178,7 +178,7 @@ Assets REST API는 URL 매개 변수를 통해 (GET 요청에 대한) 페이징�
 
 >[!NOTE]
 >
->페이징은 요청된 엔티티의 하위 항목과 관련이 있으므로 일반적으로 컨테이너 엔티티(예: 렌디션이 있는 폴더 또는 에셋)에 적용됩니다.
+>페이징은 요청된 엔티티의 하위 항목과 관련이 있으므로 일반적으로 컨테이너 엔티티(렌디션이 있는 폴더 또는 에셋)에 적용됩니다.
 
 #### 예: 페이징 {#example-paging}
 
@@ -231,7 +231,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 * 이진 데이터를 노출하지 마십시오.
 * JSON 출력에 완전히 포함됨( `properties` 속성)을 참조하십시오.
 
-* 또한 원자로도 간주됩니다. 즉, 요소 및 변형은 조각 속성의 일부로 노출되고 링크 또는 하위 엔티티로 노출됩니다. 이를 통해 조각의 페이로드에 효율적으로 액세스할 수 있습니다.
+* 요소 및 변형은 조각의 속성 또는 링크 또는 하위 엔티티의 일부로 노출되므로 원자로도 간주됩니다. 이를 통해 조각의 페이로드에 효율적으로 액세스할 수 있습니다.
 
 #### 콘텐츠 모델 및 콘텐츠 조각 {#content-models-and-content-fragments}
 

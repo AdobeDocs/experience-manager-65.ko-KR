@@ -1,19 +1,15 @@
 ---
 title: 프로그래밍 방식으로 엔드포인트 관리
-seo-title: Programmatically Managing Endpoints
 description: Endpoint Registry 서비스를 사용하여 EJB 끝점 추가, SOAP 끝점 추가, 감시 폴더 끝점 추가, 이메일 끝점 추가, 원격 끝점 추가, 작업 관리자 끝점 추가, 끝점 수정, 끝점 제거 및 끝점 커넥터 정보 검색을 수행할 수 있습니다.
-seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
-uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '10790'
+source-wordcount: '10791'
 ht-degree: 1%
 
 ---
@@ -146,7 +142,7 @@ Java API를 사용하여 EJB 엔드포인트 추가:
 
 1. 끝점을 활성화합니다.
 
-   를 호출하여 끝점을 활성화합니다. `EndpointRegistryClient` 개체의 활성화 메서드 및 전달 `Endpoint` 에서 반환한 개체 `createEndpoint` 메서드를 사용합니다.
+   를 호출하여 끝점을 활성화합니다. `EndpointRegistryClient` 개체의 enable 메서드 및 전달 `Endpoint` 에서 반환한 개체 `createEndpoint` 메서드를 사용합니다.
 
 **추가 참조**
 
@@ -251,7 +247,7 @@ Java API를 사용하여 SOAP 끝점을 서비스에 추가합니다.
 
 1. 끝점을 활성화합니다.
 
-   를 호출하여 끝점을 활성화합니다. `EndpointRegistryClient` 개체의 활성화 메서드를 호출하고 `Endpoint` 에서 반환한 개체 `createEndpoint` 메서드를 사용합니다.
+   를 호출하여 끝점을 활성화합니다. `EndpointRegistryClient` 개체의 enable 메서드 및 전달 `Endpoint` 에서 반환한 개체 `createEndpoint` 메서드를 사용합니다.
 
 **추가 참조**
 
@@ -377,7 +373,7 @@ AEM Forms Java API를 사용하여 감시 폴더 엔드포인트를 서비스에
 
 **감시 폴더 엔드포인트 만들기**
 
-끝점의 속성, 구성 값을 설정하고 입력 및 출력 매개 변수 값을 정의한 후에는 감시 폴더 끝점을 만들어야 합니다.
+끝점의 특성, 구성 값을 설정하고 입력 및 출력 매개 변수 값을 정의한 후에는 감시 폴더 끝점을 만들어야 합니다.
 
 **끝점 활성화**
 

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4840'
+source-wordcount: '4834'
 ht-degree: 82%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 82%
 
 * 템플릿을 만들려면 공동 작업이 필요합니다. 이러한 이유로 각 작업에 대해 [역할](#roles)이 지정됩니다.
 
-* 인스턴스 구성 방식에 따라 AEM에서 제공하는 기능을 사용하는 것이 유용할 수 있습니다 [두 가지 기본 템플릿 유형](/help/sites-authoring/templates.md#editable-and-static-templates). 이는 실제 방식에 영향을 주지 않습니다 [템플릿을 사용하여 페이지 만들기](#using-a-template-to-create-a-page): 만들 수 있는 템플릿 유형 및 페이지가 해당 템플릿과 관련되는 방식에 영향을 줍니다.
+* 인스턴스 구성 방식에 따라 AEM에서 제공하는 [두 가지 기본 템플릿 유형](/help/sites-authoring/templates.md#editable-and-static-templates). 이는 실제 방식에 영향을 주지 않습니다 [템플릿을 사용하여 페이지 만들기](#using-a-template-to-create-a-page): 만들 수 있는 템플릿 유형 및 페이지가 해당 템플릿과 관련되는 방식에 영향을 줍니다.
 
 ### 역할 {#roles}
 
@@ -314,7 +314,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
   >[!NOTE]
   >
-  >위치 **초기 컨텐츠** 모드 및 결과 페이지에서 액세스 가능한 상위 구성 요소(즉, 레이아웃 컨테이너 내의 구성 요소)가 있는 잠금 해제된 모든 구성 요소를 삭제할 수 있습니다.
+  >결과 페이지 뿐만 아니라 **초기 콘텐츠** 모드에서 액세스 가능한 상위 구성 요소(예: 레이아웃 컨테이너 내의 구성 요소)가 있는 잠금 해제된 모든 구성 요소를 삭제할 수 있습니다.
 
 * [레이아웃](#editingatemplatelayout)
 

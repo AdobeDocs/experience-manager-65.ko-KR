@@ -9,9 +9,9 @@ content-strategy: max-2018
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1734'
 ht-degree: 2%
 
 ---
@@ -27,19 +27,19 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->위치 외 업그레이드의 경우 서신 관리 에셋의 경우 에셋을 가져올 때마다 마이그레이션을 실행할 수 있습니다. 서신 관리 마이그레이션의 경우 Forms 호환성 패키지가 설치되어 있어야 합니다.
+>위치 외 업그레이드가 있는 경우 서신 관리 에셋의 경우 에셋을 가져올 때마다 마이그레이션을 실행할 수 있습니다. 서신 관리 마이그레이션의 경우 Forms 호환성 패키지가 설치되어 있어야 합니다.
 
 ## 마이그레이션 방법 {#approach-to-migration}
 
 다음을 수행할 수 있습니다. [업그레이드](../../forms/using/upgrade.md) AEM Forms 6.4, 6.3 또는 6.2에서 최신 버전의 AEM Forms 6.5로 마이그레이션하거나 새로 설치하십시오. 이전 설치를 업그레이드했는지 새로 설치했는지 여부에 따라 다음 중 하나를 수행해야 합니다.
 
-**즉각적으로 업그레이드하는 경우**
+**바로 업그레이드할 수 있는 경우**
 
 원본 위치 업그레이드를 수행한 경우 업그레이드된 인스턴스에 이미 에셋과 문서가 있습니다. 그러나 에셋 및 문서를 사용하기 전에 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) (서신 관리 호환성 패키지 포함)
 
 그런 다음 다음을 수행하여 에셋 및 문서를 업데이트해야 합니다. [마이그레이션 유틸리티 실행](#runningmigrationutility).
 
-**바로 사용할 수 없는 설치의 경우**
+**잘못된 설치가 있는 경우**
 
 잘못된(새로운) 설치인 경우 에셋 및 문서를 사용하기 전에 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) (서신 관리 호환성 패키지 포함).
 

@@ -2,9 +2,9 @@
 title: SPA의 구성 요소 합성
 description: AEM 단일 페이지 애플리케이션(SPA) 편집기와 함께 작동하는 다른 구성 요소로 구성된 구성 요소인 복합 구성 요소를 직접 만드는 방법을 알아봅니다.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ AEM 내의 SPA 구현에 따라 복합 구성 요소를 구현하기 위한 세 
 
 ### 구성 요소가 AEM 프로젝트에 없습니다. {#component-does-not-exist}
 
-복합 구성 요소를 구성할 구성 요소(예: 이미지 및 해당 텍스트의 구성 요소)를 만드는 것부터 시작합니다.
+먼저 합성 구성 요소를 구성할 구성 요소, 즉 이미지와 해당 텍스트에 대한 구성 요소를 만듭니다.
 
 1. AEM 프로젝트에서 텍스트 구성 요소를 만듭니다.
 1. 해당 항목 추가 `resourceType` 구성 요소의 프로젝트에서 `editConfig` 노드.

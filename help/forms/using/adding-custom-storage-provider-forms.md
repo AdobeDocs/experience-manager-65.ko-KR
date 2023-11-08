@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -40,7 +40,7 @@ AEM Forms을 사용하면 양식을 초안으로 저장할 수 있습니다. 초
 public interface DraftDataService {
 
     /**
-     * To save/modify user data for this userDataID, it will be null in case of creation
+     * To save/modify user data for this userDataID, it will be null if there is creation
      * @param draftDataID: unique identifier associated with the form data
      * @param formName: name of the form whose draft is being saved
      * @param formData: user data associated with this draft
@@ -203,7 +203,7 @@ public interface FPKeyGeneratorService {
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-위의 주석을 사용하려면 다음 사항을 프로젝트로 가져옵니다.
+위의 주석을 사용하려면 다음 내용을 프로젝트로 가져옵니다.
 
 ```java
 import org.apache.felix.scr.annotations.Properties;

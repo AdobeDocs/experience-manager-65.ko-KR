@@ -1,19 +1,17 @@
 ---
 title: 론치 편집
 description: 페이지(또는 페이지 세트)에 대한 론치를 만든 후 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
-uuid: 1f2c2e53-73a3-4bd7-b2c7-425491bc0118
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 81%
+ht-degree: 76%
 
 ---
 
@@ -82,7 +80,7 @@ Live Copy는 *소스 분기에서* *론치 분기로* 콘텐츠를 동기화하�
 
    >[!NOTE]
    >
-   >페이지를 론치에 추가하려면 페이지가 일반 언어 루트 아래(즉, 단일 사이트 내)에 있어야 합니다.
+   >페이지를 론치에 추가하려면 페이지가 일반 언어 루트 아래(예: 단일 사이트 내)에 있어야 합니다.
 
 ## 론치 구성 편집 {#editing-a-launch-configuration}
 

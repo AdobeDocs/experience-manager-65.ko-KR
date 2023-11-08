@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Document Security는 추상 정책도 지원합니다. 추상 정책은 문서 보안 설정 및 사용 권한과 같은 모든 정책 속성을 포함하지만 주체 목록은 포함하지 않는 정책 템플릿입니다. 관리자는 문서에 액세스할 수 있어야 하는 서로 다른 주도자를 사용하여 추상적인 정책에서 원하는 수의 정책을 만들 수 있습니다. 추상적 정책에 대한 변경은 추상적 정책으로부터 생성되는 실제 정책에는 영향을 미치지 않는다.
 
-통신사에 대한 월별 청구서 생성의 경우 추상적인 정책을 생성하고 사용자를 생성한 다음 각 사용자에 대해 고유한 라이센스를 생성합니다. 라이센스는 나중에 각 사용자의 문서에 적용됩니다.
+통신사에 대한 월별 청구서가 생성되면 추상적인 정책을 생성하고 사용자를 생성한 다음 각 사용자에 대해 고유한 라이센스를 생성합니다. 라이센스는 나중에 각 사용자의 문서에 적용됩니다.
 
 추상 정책 생성은 Document Security Java SDK를 통해서만 지원됩니다. 그러나 document security 웹 페이지의 추상 정책에서 생성하는 정책을 관리할 수 있습니다. 이 방법을 사용하여 만든 정책은 문서 보안 웹 페이지에서 만든 정책과 동작이 동일합니다.
 

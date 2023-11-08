@@ -11,9 +11,9 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3935'
+source-wordcount: '3936'
 ht-degree: 2%
 
 ---
@@ -201,7 +201,7 @@ ht-degree: 2%
 
    * **[!UICONTROL 서명자와 양식 작성자가 동일합니까?]:** 선택 **예**&#x200B;양식 작성기와 첫 번째 서명자가 동일한 경우. 옵션을 로 설정한 경우 **아니요,** 그런 다음 적응형 양식에서 서명 단계 구성 요소를 사용하지 마십시오. 양식에 서명 단계 구성 요소가 포함되어 있으면 필드가 자동으로 예로 설정됩니다.
 
-   * **[!UICONTROL 서명자 이메일 주소]:** 서명자의 이메일 주소를 지정합니다. 서명자는 지정된 이메일 주소에 서명된 문서/양식을 수신합니다. 양식 필드, 로그인한 사용자의 AEM 사용자 프로필에 제공된 이메일 주소를 사용하도록 선택하거나 이메일 주소를 수동으로 입력할 수 있습니다. 필수 단계입니다. 첫 번째 서명자 또는 유일한 서명자(단일 서명자의 경우)의 이메일 주소가 [!DNL Adobe Sign] AEM 클라우드 서비스를 구성하는 데 사용되는 계정입니다.
+   * **[!UICONTROL 서명자 이메일 주소]:** 서명자의 이메일 주소를 지정합니다. 서명자는 지정된 이메일 주소에 서명된 문서/양식을 수신합니다. 양식 필드, 로그인한 사용자의 AEM 사용자 프로필에 제공된 이메일 주소를 사용하도록 선택하거나 이메일 주소를 수동으로 입력할 수 있습니다. 필수 단계입니다. 첫 번째 서명자 또는 유일한 서명자(서명자가 한 명인 경우)의 이메일 주소가 와 동일하지 않은지 확인합니다. [!DNL Adobe Sign] AEM 클라우드 서비스를 구성하는 데 사용되는 계정입니다.
 
    * **[!UICONTROL 서명자 인증 방법]:** 서명할 양식을 열기 전에 사용자를 인증하는 방법을 지정하십시오. 전화, 기술 자료 및 소셜 ID 기반 인증 중에서 선택할 수 있습니다. Adobe Acrobat Sign Solutions for Government의 경우 전화 및 지식 기반 인증 옵션만 사용할 수 있습니다.
 
@@ -355,7 +355,7 @@ ht-degree: 2%
 * 의 API 애플리케이션 확인 [!DNL Adobe Sign] 를 구성하는 데 사용되는 서버 [!DNL Adobe Sign] Cloud Service에 필요한 권한이 있습니다.
 * 여러 개를 사용하는 경우 [!DNL Adobe Sign] 클라우드 서비스, 다음을 가리키기 **[!UICONTROL oAuth URL]** 모든 서비스를 동일하게 유지 **[!UICONTROL Adobe Sign 샤드]**.
 
-* 별도의 이메일 주소를 사용하여 구성 [!DNL Adobe Sign] 첫 번째 서명자 및 단일 서명자에 대한 계정 및 입니다. 첫 번째 서명자 또는 유일한 서명자(단일 서명자의 경우)의 이메일 주소는 과 같을 수 없습니다. [!DNL Adobe Sign] AEM 클라우드 서비스를 구성하는 데 사용되는 계정입니다.
+* 별도의 이메일 주소를 사용하여 구성 [!DNL Adobe Sign] 첫 번째 서명자 및 단일 서명자에 대한 계정 및 입니다. 첫 번째 서명자 또는 유일한 서명자(단일 서명자가 있는 경우)의 이메일 주소는 과 같을 수 없습니다. [!DNL Adobe Sign] AEM 클라우드 서비스를 구성하는 데 사용되는 계정입니다.
 
 ### AEM [!DNL Forms] 다음에 대해 구성된 워크플로 [!DNL Adobe Sign] 활성화된 적응형 양식이 시작되지 않음 {#adobe-sign-aem-form-workflow-failures}
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -41,13 +41,13 @@ SPNEGO를 사용하여 SSO를 활성화할 수도 있습니다. (참조: [SPNEGO
    * **도메인용 HTTP 헤더:** (필수 아님) 값에 도메인 이름이 포함된 헤더의 이름입니다. 사용자를 고유하게 식별하는 단일 HTTP 헤더가 없는 경우에만 이 설정을 사용합니다. 여러 도메인이 존재하고 고유 식별자가 도메인 내에서만 고유한 경우에 이 설정을 사용합니다. 이 경우 이 텍스트 상자에 헤더 이름을 지정하고 도메인 매핑 상자에 여러 도메인에 대한 도메인 매핑을 지정합니다. (참조: [기존 도메인 편집 및 변환](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
    * **도메인 매핑:** (필수) 여러 도메인에 대한 매핑을 형식으로 지정합니다 *헤더 값=도메인 이름*.
 
-      예를 들어 도메인의 HTTP 헤더가 domainName이고 도메인1, 도메인2 또는 도메인3의 값을 가질 수 있는 상황을 생각해 보겠습니다. 이 경우 도메인 매핑을 사용하여 domainName 값을 사용자 관리 도메인 이름에 매핑합니다. 각 매핑은 다른 줄에 있어야 합니다.
+     예를 들어 도메인의 HTTP 헤더가 domainName이고 도메인1, 도메인2 또는 도메인3의 값을 가질 수 있는 상황을 생각해 보겠습니다. 이 경우 도메인 매핑을 사용하여 domainName 값을 사용자 관리 도메인 이름에 매핑합니다. 각 매핑은 다른 줄에 있어야 합니다.
 
-      domain1=UMdomain1
+     domain1=UMdomain1
 
-      domain2=UMdomain2
+     domain2=UMdomain2
 
-      domain3=UMdomain3
+     domain3=UMdomain3
 
 ### 허용된 참조 구성 {#configure-allowed-referers}
 
@@ -109,7 +109,7 @@ HTTP 헤더를 사용하여 SSO를 활성화할 수도 있습니다. (참조: [H
 
    제공해야 하는 값은 다음과 같이 설명되어 있습니다.
 
-   **호스트:** 양식 서버의 정규화된 이름 또는 고유한 URL입니다. 이 예제에서는 lcserver.um.lc.com으로 설정되어 있습니다.
+   **호스트:** Forms 서버의 정규화된 이름 또는 고유한 URL. 이 예제에서는 lcserver.um.lc.com으로 설정되어 있습니다.
 
    **영역:** 도메인 컨트롤러에 대한 Active Directory 영역입니다. 이 예제에서는 UM.LC.COM으로 설정되어 있습니다. 대문자를 사용하여 영역을 입력해야 합니다. Windows 2003 영역을 확인하려면 다음 단계를 완료하십시오.
 

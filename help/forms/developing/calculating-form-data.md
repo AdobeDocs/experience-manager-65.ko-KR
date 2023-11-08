@@ -1,20 +1,16 @@
 ---
 title: 양식 데이터 계산
-seo-title: Calculating Form Data
 description: Forms 서비스를 사용하여 사용자가 양식에 입력하는 값을 계산하고 결과를 표시합니다. Forms 서비스는 Java API 및 웹 서비스 API를 사용하여 값을 계산합니다.
-seo-description: Use the Forms service to calculate values that a user enters into a form and display the results. Forms service calculates the values using the Java API and Web Service API.
-uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
-discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1876'
 ht-degree: 1%
 
 ---
@@ -25,13 +21,13 @@ ht-degree: 1%
 
 Forms 서비스는 사용자가 양식에 입력하는 값을 계산하고 결과를 표시할 수 있습니다. 양식 데이터를 계산하려면 두 가지 작업을 수행해야 합니다. 먼저 양식 데이터를 계산하는 양식 디자인 스크립트를 만듭니다. 양식 디자인은 세 가지 유형의 스크립트를 지원합니다. 한 스크립트 유형은 클라이언트에서 실행되고, 다른 스크립트 유형은 서버에서 실행되며, 세 번째 스크립트 유형은 서버와 클라이언트 모두에서 실행됩니다. 이 항목에서 설명하는 스크립트 유형은 서버에서 실행됩니다. 서버측 계산은 HTML, PDF 및 양식 안내서(더 이상 사용되지 않음) 변환에 대해 지원됩니다.
 
-양식 디자인 프로세스의 일부로 계산과 스크립트를 사용하여 더 풍부한 사용자 경험을 제공할 수 있습니다. 대부분의 양식 필드 및 개체에 계산 및 스크립트를 추가할 수 있습니다. 사용자가 대화형 양식에 입력하는 데이터에 대한 계산 작업을 수행하려면 양식 디자인 스크립트를 만들어야 합니다.
+양식 디자인 프로세스의 일부로 계산 및 스크립트를 사용하여 더 풍부한 사용자 경험을 제공할 수 있습니다. 대부분의 양식 필드 및 개체에 계산 및 스크립트를 추가할 수 있습니다. 사용자가 대화형 양식에 입력하는 데이터에 대한 계산 작업을 수행하려면 양식 디자인 스크립트를 만들어야 합니다.
 
 양식에 값을 입력하고 계산 버튼을 클릭하여 결과를 확인합니다. 다음 프로세스에서는 사용자가 데이터를 계산할 수 있도록 하는 예제 응용 프로그램에 대해 설명합니다.
 
-* 사용자는 웹 애플리케이션의 시작 페이지로 작동하는 StartLoan.html이라는 HTML 페이지에 액세스합니다. 이 페이지는 이라는 Java 서블릿을 호출합니다. `GetLoanForm`.
+* 사용자가 웹 애플리케이션의 시작 페이지로 작동하는 StartLoan.html이라는 HTML 페이지에 액세스합니다. 이 페이지는 이라는 Java 서블릿을 호출합니다. `GetLoanForm`.
 * 다음 `GetLoanForm` 서블릿은 대출 양식을 렌더링합니다. 이 양식에는 스크립트, 대화형 필드, 계산 단추 및 제출 단추가 포함되어 있습니다.
-* 사용자가 양식의 필드에 값을 입력하고 계산 버튼을 클릭합니다. 양식이 다음 주소로 전송됩니다. `CalculateData` 스크립트가 실행되는 Java 서블릿. 이 양식은 계산 결과가 양식에 표시된 상태로 사용자에게 다시 전송됩니다.
+* 양식의 필드에 값을 입력하고 계산 버튼을 클릭합니다. 양식이 다음 주소로 전송됩니다. `CalculateData` 스크립트가 실행되는 Java 서블릿. 이 양식은 계산 결과가 양식에 표시된 상태로 사용자에게 다시 전송됩니다.
 * 사용자는 만족스러운 결과가 표시될 때까지 값을 계속 입력하고 계산합니다. 만족하면 사용자가 제출 단추를 클릭하여 양식을 처리합니다. 양식이 이름이 인 다른 Java 서블릿으로 전송됩니다. `ProcessForm` 이는 제출된 데이터를 검색하는 역할을 합니다. (참조: [제출된 Forms 처리](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
 
@@ -86,7 +82,7 @@ Forms 서비스는 사용자가 양식에 입력하는 값을 계산하고 결�
      NumericField3 = NumericField2 + NumericField1
 ```
 
-이 양식 디자인에서 계산 버튼은 명령 버튼이고, 스크립트는 이 버튼의 `Click` 이벤트. 사용자가 처음 두 필드(NumericField1 및 NumericField2)에 값을 입력하고 계산 단추를 클릭하면 양식이 Forms 서비스로 전송되고 스크립트가 실행됩니다. Forms 서비스는 NumericField3 필드에 표시된 계산 결과를 사용하여 양식을 클라이언트 장치로 다시 렌더링합니다.
+이 양식 디자인에서 계산 버튼은 명령 버튼이고 스크립트는 이 버튼의 `Click` 이벤트. 사용자가 처음 두 필드(NumericField1 및 NumericField2)에 값을 입력하고 계산 단추를 클릭하면 양식이 Forms 서비스로 전송되고 스크립트가 실행됩니다. Forms 서비스는 NumericField3 필드에 표시된 계산 결과를 사용하여 양식을 클라이언트 장치로 다시 렌더링합니다.
 
 >[!NOTE]
 >
@@ -163,7 +159,7 @@ Forms API(Java)를 사용하여 양식 데이터 계산:
 1. 양식 데이터 스트림을 클라이언트 웹 브라우저에 다시 씁니다.
 
    * 만들기 `javax.servlet.ServletOutputStream` 양식 데이터 스트림을 클라이언트 웹 브라우저로 전송하는 데 사용되는 개체입니다.
-   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 개체 &#39;s `getOutputContent` 메서드를 사용합니다.
+   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 의 오브젝트 `getOutputContent` 메서드를 사용합니다.
    * 만들기 `java.io.InputStream` 를 호출하여 개체 `com.adobe.idp.Document` 개체 `getInputStream` 메서드를 사용합니다.
    * 바이트 배열을 만들고 `InputStream` 개체 `read` 메서드에서 바이트 배열을 인수로 전달합니다.
    * 호출 `javax.servlet.ServletOutputStream` 개체 `write` 클라이언트 웹 브라우저에 양식 데이터 스트림을 전송하는 방법입니다. 바이트 배열을 로 전달 `write` 메서드를 사용합니다.

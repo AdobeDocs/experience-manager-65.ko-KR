@@ -10,7 +10,7 @@ discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: d8e34f6ece9e3be4c4c5372f3046bc937538536e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 | AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html) |
 | AEM 6.5 | 이 문서 |
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 모든 양식은 특정 목적을 위해 디자인되었지만 대부분의 양식에는 이름 및 주소, 가족 세부 사항, 소득 세부 사항 등과 같은 개인 세부 사항을 제공하기 위한 일부 공통 세그먼트가 있습니다. 양식 개발자는 새 양식을 만들 때마다 이러한 공통 세그먼트를 만들어야 합니다.
 
@@ -238,7 +238,7 @@ AEM Forms UI를 사용 하 여 적응형 양식 조각에 대해 여러 작업�
 ## 조각을 사용하여 작업할 때 기억해야 할 주요 사항 {#key-points-to-remember-when-working-with-fragments}
 
 * 조각 이름이 고유한지 확인합니다. 같은 이름의 기존 조각이 있는 경우 조각을 만들 수 없습니다.
-* XDP 기반 적응형 양식에서 다른 XDP 조각을 포함하는 조각으로 패널을 저장하면 결과 조각이 하위 XDP 조각에 자동으로 바인딩됩니다. XSD 기반 적응형 양식의 경우 결과 조각은 스키마 루트에 바인딩됩니다.
+* XDP 기반 적응형 양식에서 다른 XDP 조각을 포함하는 조각으로 패널을 저장하면 결과 조각이 하위 XDP 조각에 자동으로 바인딩됩니다. XSD 기반 적응형 양식이 있는 경우 결과 조각은 스키마 루트에 바인딩됩니다.
 * 적응형 양식 조각을 만들면 CRXDe Lite의 적응형 양식에 대한 guideContainer 노드와 유사한 조각 노드가 만들어집니다.
 * 다른 양식 데이터 모델을 사용하는 적응형 양식의 조각은 지원되지 않습니다. 예를 들어 XDP 기반 조각은 XSD 기반 적응형 양식에서 지원되지 않으며 그 반대의 경우도 마찬가지입니다.
 * 적응형 양식 조각은 AEM 콘텐츠 파인더의 적응형 양식 조각 탭을 통해 사용할 수 있습니다.

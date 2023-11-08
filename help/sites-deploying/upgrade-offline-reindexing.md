@@ -7,9 +7,9 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ merge-index-definitions_target: JSON file having merged definitions for the targ
 
 사용 `--doc-traversal-mode` 매개 변수는 저장소 콘텐츠를 로컬 플랫 파일로 스풀링하여 색인 재지정 시간을 크게 향상시키므로 MongoMK 설치에 편리합니다. 그러나 저장소 크기의 두 배인 추가 디스크 공간이 필요합니다.
 
-MongoMK의 경우, 이 단계가 MongoDB 인스턴스에 더 가까운 인스턴스에서 실행되면 이 프로세스를 가속화할 수 있습니다. 동일한 시스템에서 실행되면 네트워크 오버헤드를 방지할 수 있습니다.
+MongoMK가 있는 경우, 이 단계가 MongoDB 인스턴스에 더 가까운 인스턴스에서 실행되면 이 프로세스를 가속화할 수 있습니다. 동일한 시스템에서 실행되면 네트워크 오버헤드를 방지할 수 있습니다.
 
 추가 기술 세부 정보는 [색인화를 위한 oak-run 설명서](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 

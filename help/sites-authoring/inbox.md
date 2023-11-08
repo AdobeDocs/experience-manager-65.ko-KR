@@ -2,10 +2,10 @@
 title: 작업을 관리할 받은 편지함
 description: Adobe Experience Manager 6.5의 받은 편지함으로 작업 관리.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 69%
+source-wordcount: '1143'
+ht-degree: 67%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 69%
 
 ## 헤더의 받은 편지함 {#inbox-in-the-header}
 
-어떤 콘솔에서든 헤더에는 받은 편지함의 현재 알림 수가 표시됩니다. 표시기를 열어서 작업이 필요한 페이지에 바로 가거나 받은 편지함에 액세스할 수도 있습니다.
+어떤 콘솔에서든 헤더에는 받은 편지함의 현재 알림 수가 표시됩니다. 또한 표시기를 열어 작업이 필요한 페이지에 빠르게 액세스하거나 받은 편지함에 액세스할 수 있습니다.
 
 ![wf-80](assets/wf-80.png)
 

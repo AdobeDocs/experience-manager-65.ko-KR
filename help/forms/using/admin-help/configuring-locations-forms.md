@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -82,11 +82,11 @@ Forms 웹 응용 프로그램과 클라이언트 응용 프로그램이 동일�
 **기본 위치:** 이것이 기본 선택입니다. 이 옵션을 선택하면 사용 중인 애플리케이션 서버에 종속된 위치에 캐시가 만들어집니다.
 
 * **JBos:** [JBoss 홈]\server\[설치 유형]\svcdata\FormServer\Cache
-* **웹 논리:** [WebLogic 홈]\user_projects\domains\[aem-forms 도메인 이름]\adobe\[forms 서버 이름]\FormServer\Cache
+* **웹 논리:** [WebLogic 홈]\user_projects\domains\[aem-forms Domain Name]\adobe\[Forms 서버 이름]\FormServer\Cache
 * **WebSphere:** [IBM 홈]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
 **LC 임시 디렉터리:** 캐시는 AEM forms 임시 디렉터리의 하위 디렉터리에 생성되며, 이 디렉터리는 설정 > 핵심 시스템 설정 > 구성 > 임시 디렉터리 위치 아래의 관리 콘솔에 지정됩니다. 하위 디렉터리의 이름은 adobeform_입니다.[servername].
 
 >[!NOTE]
 >
->임시 청소 유틸리티를 사용하는 경우 이러한 디렉토리를 삭제해도 기능에 영향을 주지 않지만 새 캐시가 생성될 때까지 짧은 시간 동안 성능에 상당한 영향을 줄 수 있습니다. 이 문제를 방지하려면 AEM Forms 임시 디렉터리를 지우는 동안 이러한 디렉터리를 삭제하지 마십시오.
+>임시 청소 유틸리티를 사용하는 경우 이러한 디렉토리를 삭제해도 기능에 영향을 주지 않으므로 새 캐시가 생성될 때까지 잠시 동안 성능에 상당한 영향을 줄 수 있습니다. 이 문제를 방지하려면 AEM Forms 임시 디렉터리를 지우는 동안 이러한 디렉터리를 삭제하지 마십시오.

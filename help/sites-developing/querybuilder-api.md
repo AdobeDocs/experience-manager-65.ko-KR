@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: a66814fa065b7545ec39fe9109b4c5815fa199da
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2284'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ path=/content
 orderby=path
 ```
 
-동일한 쿼리(매개 변수 포함) `p.limit=-1`) **모든 결과 반환** (인스턴스에 따라 높은 숫자가 될 수 있습니다.)
+동일한 쿼리(매개 변수 사용) `p.limit=-1`) **모든 결과 반환** (인스턴스에 따라 높은 숫자가 될 수 있습니다.)
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.limit=-1&orderby=path`
 
@@ -129,7 +129,7 @@ AEM 6.0 SP2부터는 숫자 값을 사용하여 최대 사용자 정의 결과 �
 
 ### 페이지 매김 구현 {#implementing-pagination}
 
-기본적으로 Query Builder는 히트 수도 제공합니다. 결과 크기에 따라 정확한 카운트를 결정하는 데 액세스 제어에 대한 모든 결과를 확인하는 작업이 포함되므로 시간이 오래 걸릴 수 있습니다. 대부분 합계는 최종 사용자 UI에 대한 페이지 매김을 구현하는 데 사용됩니다. 정확한 수를 결정하는 것이 느릴 수 있으므로 guessTotal 기능을 사용하여 페이지 매김을 구현하는 것이 좋습니다.
+기본적으로 Query Builder는 히트 수도 제공합니다. 결과 크기에 따라 정확한 카운트를 결정하는 데 액세스 제어에 대한 모든 결과를 확인하는 작업이 포함되므로 시간이 오래 걸릴 수 있습니다. 대부분 합계는 최종 사용자 UI에 대한 페이지 매김을 구현하는 데 사용됩니다. 정확한 수를 결정하는 것은 느릴 수 있으므로 guessTotal 기능을 사용하여 페이지 매김을 구현하는 것이 좋습니다.
 
 예를 들어 UI는 다음 접근 방식을 조정할 수 있습니다.
 
@@ -141,7 +141,7 @@ AEM 6.0 SP2부터는 숫자 값을 사용하여 최대 사용자 정의 결과 �
    * `total=43`, `more=false` - 총 히트 수가 43개임을 나타냅니다. UI는 최대 10개의 결과를 첫 번째 페이지의 일부로 표시하고 다음 3개 페이지에 대한 페이지 매김을 제공할 수 있습니다. 이 구현을 사용하여 다음과 같은 설명 텍스트를 표시할 수도 있습니다 **&quot;43개의 결과 찾음&quot;**.
    * `total=100`, `more=true` - 총 히트 수가 100보다 크고 정확한 카운트를 알 수 없음을 나타냅니다. UI는 첫 번째 페이지의 일부로 최대 10개를 표시하고 다음 10개 페이지에 대한 페이지 매김을 제공할 수 있습니다. 다음과 같은 텍스트를 표시할 수도 있습니다 **&quot;100개 이상의 결과 검색됨&quot;**. 사용자가 다음 페이지로 이동하면 쿼리 빌더에 대한 호출이 `guessTotal` 및 `offset` 및 `limit` 매개 변수.
 
-`guessTotal` UI가 쿼리 빌더가 정확한 히트 수를 결정하지 않도록 하기 위해 무한 스크롤을 사용해야 하는 경우에 사용해야 합니다.
+`guessTotal` Query Builder가 정확한 히트 수를 결정하지 않도록 하기 위해 UI에서 무한 스크롤링을 사용해야 하는 경우에 사용해야 합니다.
 
 ### jar 파일을 찾아 가장 최신 버전으로 주문합니다. {#find-jar-files-and-order-them-newest-first}
 

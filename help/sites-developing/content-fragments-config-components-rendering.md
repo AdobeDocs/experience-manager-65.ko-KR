@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '461'
 ht-degree: 7%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 7%
 
 구성 요소를 등록해야 하는 서비스는 다음과 같습니다.
 
-* 게시 도중 종속성을 올바르게 결정(예: 조각 및 모델이 마지막 게시 이후 변경된 경우 페이지와 함께 자동으로 게시될 수 있는지 확인).
+* 게시 도중 종속성을 올바르게 결정(즉, 조각 및 모델이 마지막 게시 이후 변경된 경우 페이지와 함께 자동으로 게시될 수 있는지 확인).
 * 전체 텍스트 검색에서 컨텐츠 조각 지원.
 * 의 관리/처리 *중간 콘텐츠.*
 * 의 관리/처리 *혼합 미디어 에셋.*

@@ -9,9 +9,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 6%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 6%
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-의 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia):
+필요한 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` 이(가) (으)로 대체됨 `/content/venia/us/en/products/product-page`
 * `{{sku}}` 는 제품의 SKU로 대체됩니다. 예: `VP09`
@@ -63,7 +63,7 @@ ht-degree: 6%
 * `{{page}}.html/{{url_path}}.html` (기본값)
 * `{{page}}.html/{{url_key}}.html`
 
-의 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia):
+필요한 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` 이(가) (으)로 대체됨 `/content/venia/us/en/products/category-page`
 * `{{url_key}}` 이(가) 범주의 `url_key` 속성

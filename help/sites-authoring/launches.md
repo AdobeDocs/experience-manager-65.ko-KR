@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '843'
 ht-degree: 82%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 82%
 
 * 소스 페이지와 론치 페이지 동시 업데이트:
 
-   * 소스 페이지 변경 내용은 론치 사본(상속을 통해, 즉 Live Copy로 설정된 경우)에서 자동으로 구현됩니다.
+   * 소스 페이지 변경 내용은 론치 사본(상속을 통해 Live Copy로 설정된 경우)에서 자동으로 구현됩니다.
    * 론치 사본에 대한 변경은 이 자동 업데이트 또는 소스 페이지를 중단하지 않고 수행할 수 있습니다.
 
   ![업데이트 개요](assets/chlimage_1-112.png)

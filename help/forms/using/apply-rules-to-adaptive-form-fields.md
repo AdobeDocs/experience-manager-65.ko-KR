@@ -8,7 +8,7 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
-source-git-commit: 63bc43bba88a42d62fb574bc8ce42470ac61d693
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ## 2단계: 업데이트된 고객 주소를 데이터베이스에 추가 {#updated-customer-address}
 
-데이터베이스에서 고객 세부 정보를 검색한 후 배송 주소, 주 및 우편 번호를 업데이트할 수 있습니다. 다음 절차는 양식 데이터 모델 서비스를 호출하여 고객 정보를 데이터베이스에 업데이트합니다.
+데이터베이스에서 고객 세부 정보를 검색한 후 배송 주소, 상태 및 우편 번호를 업데이트할 수 있습니다. 다음 절차는 양식 데이터 모델 서비스를 호출하여 고객 정보를 데이터베이스에 업데이트합니다.
 
 1. 다음 항목 선택 **[!UICONTROL 제출]** 필드 및 탭 **[!UICONTROL 규칙 편집]** 아이콘. 규칙 편집기 창이 열립니다.
 1. 다음 항목 선택 **[!UICONTROL 제출 - 클릭]** 규칙 및 탭 **[!UICONTROL 편집]** 아이콘. 제출 규칙을 편집할 수 있는 옵션이 나타납니다.

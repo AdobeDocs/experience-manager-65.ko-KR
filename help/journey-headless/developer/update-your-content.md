@@ -2,7 +2,7 @@
 title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 REST API를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 대해 알아봅니다.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 88%
@@ -137,7 +137,7 @@ The response will contain paging information as part of the `properties` section
 
 >[!NOTE]
 >
->Paging is typically applied on container entities (i.e. folders or assets with renditions), as it relates to the children of the requested entity.
+>Paging is typically applied on container entities (that is, folders or assets with renditions), as it relates to the children of the requested entity.
 
 #### Example: Paging {#example-paging}
 
@@ -192,7 +192,7 @@ Content fragments:
 * Do not expose any binary data.
 * Are completely contained in the JSON output (within the `properties` property).
 
-* Are also considered atomic, i.e. the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
+* Are also considered atomic, that is, the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
 
 ### Content Models and Content Fragments {#content-models-and-content-fragments}
 

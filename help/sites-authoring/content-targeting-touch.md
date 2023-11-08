@@ -1,19 +1,15 @@
 ---
 title: 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성
-seo-title: Authoring Targeted Content Using Targeting Mode
 description: 타겟팅 모드 및 타겟 구성 요소는 경험을 위한 콘텐츠를 만드는 도구를 제공합니다.
-seo-description: Targeting mode and the Target component provide tools for creating content for experiences
-uuid: cea85c1b-1bc3-4498-9eaa-4ad10dc58ea4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5383'
 ht-degree: 95%
 
 ---
@@ -635,7 +631,7 @@ A/B 테스트를 사용하는 경우에는 시뮬레이션할 때 경험이 트�
 
    페이지가 현재 컨텍스트에 대해 타겟팅되는 콘텐츠를 표시하도록 변경됩니다.
 
-1. 표시되는 오퍼에 변경 작업을 수행하려면 타겟팅 모드로 전환합니다. 시뮬레이션 활동을 선택한 상태에서 미리보기 모드에서 구성한 컨텍스트에 대한 오퍼를 편집하십시오.
+1. 표시되는 오퍼를 변경하려면 타겟팅 모드로 전환합니다. 시뮬레이션 활동을 선택한 상태에서 미리보기 모드에서 구성한 컨텍스트에 대한 오퍼를 편집하십시오.
 
 ## 타겟 구성 요소 선택 사항 구성 {#configuring-target-component-options}
 

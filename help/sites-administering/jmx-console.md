@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4962'
+source-wordcount: '4963'
 ht-degree: 2%
 
 ---
@@ -597,7 +597,7 @@ CRX 저장소에 대한 정보
 
 * 반환된 값: 없음
 
-**becomeClusterMaster** 이 저장소 노드를 클러스터의 마스터 노드로 설정합니다. 아직 마스터가 아닌 경우 이 명령은 현재 마스터 인스턴스의 리스너를 중지하고 현재 노드에서 마스터 리스너를 시작합니다. 그런 다음 이 노드가 마스터 노드로 설정되고 다시 시작되어 클러스터의 다른 모든 노드(즉, 마스터에 의해 제어되는 노드)가 이 인스턴스에 연결됩니다.
+**becomeClusterMaster** 이 저장소 노드를 클러스터의 마스터 노드로 설정합니다. 아직 마스터가 아닌 경우 이 명령은 현재 마스터 인스턴스의 리스너를 중지하고 현재 노드에서 마스터 리스너를 시작합니다. 그러면 이 노드가 마스터 노드로 설정되고 다시 시작되어 클러스터의 다른 모든 노드(즉, 마스터가 제어하는 노드)가 이 인스턴스에 연결됩니다.
 
 * 인수: 없음
 * 반환된 값: 없음

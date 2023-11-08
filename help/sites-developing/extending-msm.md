@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2577'
-ht-degree: 62%
+source-wordcount: '2582'
+ht-degree: 60%
 
 ---
 
@@ -195,7 +195,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    >이는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수도 있음).
    >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
    >
-   >* 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
+   >* 필요한 항목 다시 만들기(존재하는 그대로) `/libs`) `/apps`
    >* 다음 범위 내에서 변경 `/apps`
 
 1. 이 아래에 **만들기** 다음 속성을 가진 노드:
@@ -655,11 +655,11 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 
 * 연락처 이메일:
 
-   * 이 속성은 국가(또는 브랜드 등)마다 다르기 때문에 롤아웃할 필요가 없습니다.
+   * 이 속성은 각 국가(또는 브랜드 등)에서 다르므로 롤아웃할 필요가 없습니다.
 
 * 주요 시각 스타일:
 
-   * 프로젝트 요구 사항은 이 속성이 (일반적으로) 모든 국가(또는 브랜드 등)에 공통이므로 롤아웃되어야 한다는 것입니다.
+   * 프로젝트 요구 사항은 이 속성이 모든 국가(또는 브랜드 등)에 (일반적으로) 공통된 상태로 롤아웃되어야 한다는 것입니다.
 
 그렇다면 다음과 같이 작업해야 합니다.
 

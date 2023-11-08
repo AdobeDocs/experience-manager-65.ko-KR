@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ _gaq.push(['_trackPageview']);
 
 ## 페이지에서 새 서비스 사용 {#using-your-new-service-on-pages}
 
-서비스 구성을 만든 다음에는 이 구성을 사용할 필수 페이지를 구성해야 합니다.
+서비스 구성을 만든 후에는 이를 사용할 필수 페이지를 구성해야 합니다.
 
 1. 페이지로 이동합니다.
 1. 를 엽니다. **페이지 속성** 사이드 킥에서 **Cloud Service** 탭.

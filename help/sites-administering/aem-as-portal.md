@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6092'
+source-wordcount: '6087'
 ht-degree: 1%
 
 ---
@@ -737,7 +737,7 @@ AEM WCM에서 제공하는 컨텐츠에 액세스하려면 AEM Portal Director �
 
 >[!NOTE]
 >
->이러한 절차는 Websphere 포털을 예로 사용하지만 가능한 한 일반적입니다. 다른 웹 포털에 대해 절차가 다르다는 점을 유의하십시오. 모든 웹 포털에 대해 단계가 기본적으로 동일하지만 특정 웹 포털에 대해 단계의 용도를 다시 지정해야 합니다.
+>이러한 절차는 Websphere 포털을 예로 사용하지만 가능한 한 일반적입니다. 절차는 다른 웹 포털에 따라 다릅니다. 모든 웹 포털에 대해 단계가 기본적으로 동일하지만 특정 웹 포털에 대해 단계의 용도를 다시 지정해야 합니다.
 
 #### 포틀릿 설치 {#installing-the-portlet}
 

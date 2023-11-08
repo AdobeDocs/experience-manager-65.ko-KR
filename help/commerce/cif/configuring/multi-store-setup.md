@@ -7,7 +7,7 @@ activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 2%
@@ -36,11 +36,11 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 
 3. 다음 단계에 따라 CIF Cloud Service 구성의 하위 구성을 만듭니다.
 
-   * AEM에서 도구 -> 일반 -> 로 이동합니다. [구성 브라우저](/help/sites-administering/configurations.md#using-configuration-browser)
+   * AEM에서 도구 > 일반으로 이동합니다. [구성 브라우저](/help/sites-administering/configurations.md#using-configuration-browser)
    * 생성한 기본 구성 선택
    * 위의 지점 2에 설명된 단계를 사용하여 구성을 생성
 
-   이 새 구성은 기본 구성의 하위 구성으로 작성됩니다. 이제 도구 -> 일반 -> 구성 브라우저로 이동하여 구성 설정을 만들 수 있습니다.
+   이 새 구성은 기본 구성의 하위 구성으로 작성됩니다. 이제 도구 > 일반 > 구성 브라우저로 이동하여 구성 설정을 만들 수 있습니다.
 
    >[!TIP]
    >

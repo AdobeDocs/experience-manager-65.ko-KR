@@ -2,7 +2,7 @@
 title: AEM 게재 API를 통해 콘텐츠에 액세스하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 GraphQL 쿼리를 통해 콘텐츠 조각의 콘텐츠에 액세스하는 방법을 대해 알아봅니다.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1332'
 ht-degree: 93%
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 콘텐츠에 대한 쿼리를 시작하기 전에 다음 사항을 수행해야 합니다.
 
 * 엔드포인트 활성화
-   * 도구 -> 에셋 -> GraphQL 사용
+   * 도구 > 에셋 > GraphQL 사용
    * [GraphQL 엔드포인트 활성화하기](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * GraphiQL 액세스(필요한 경우)

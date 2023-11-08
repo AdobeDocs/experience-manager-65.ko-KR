@@ -1,35 +1,31 @@
 ---
 title: 적응형 양식의 비동기 제출
-seo-title: Asynchronous submission of adaptive forms
 description: 적응형 양식에 대한 비동기 제출을 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn to configure asynchronous submission for adaptive forms.
-uuid: 6555ac63-4d99-4b39-a2d0-a7e61909106b
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
 feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 2%
+source-wordcount: '795'
+ht-degree: 13%
 
 ---
 
 # 적응형 양식의 비동기 제출{#asynchronous-submission-of-adaptive-forms}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/asynchronous-submissions-adaptive-forms.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/asynchronous-submissions-adaptive-forms.html) |
 | AEM 6.5 | 이 문서 |
 
-일반적으로 웹 양식은 동기식으로 제출하도록 구성됩니다. 동기 제출의 경우, 사용자가 양식을 제출할 때 확인 페이지, 감사 페이지 또는 제출 실패 시 오류 페이지로 리디렉션됩니다. 하지만 백그라운드에서 클라이언트-서버 상호 작용이 발생하는 동안 웹 페이지가 정적인 단일 페이지 애플리케이션과 같은 최신 웹 경험은 인기를 얻고 있습니다. 이제 비동기 제출을 구성하여 적응형 양식을 이 환경에 제공할 수 있습니다.
+일반적으로 웹 양식은 동기식으로 제출하도록 구성됩니다. 동기 제출의 경우, 사용자가 양식을 제출할 때 확인 페이지, 감사 페이지로 리디렉션되거나 제출 실패 시 오류 페이지로 리디렉션됩니다. 하지만 백그라운드에서 클라이언트-서버 상호 작용이 발생하는 동안 웹 페이지가 정적인 단일 페이지 애플리케이션과 같은 최신 웹 경험은 인기를 얻고 있습니다. 이제 비동기 제출을 구성하여 적응형 양식을 이 환경에 제공할 수 있습니다.
 
-비동기 제출의 경우, 사용자가 양식을 제출할 때 양식 개발자는 다른 양식 또는 웹 사이트의 별도 섹션으로 리디렉션하는 것과 같은 별도의 경험을 플러그인합니다. 작성자는 다른 데이터 저장소에 데이터를 보내거나 사용자 정의 분석 엔진을 추가하는 것과 같은 별도의 서비스를 플러그인할 수도 있습니다. 비동기 제출의 경우, 적응형 양식은 단일 페이지 애플리케이션처럼 동작하며, 이는 제출된 양식 데이터가 서버에서 유효성이 검사될 때 양식이 다시 로드되지 않거나 해당 URL이 변경되지 않기 때문입니다.
+비동기 제출의 경우, 사용자가 양식을 제출할 때 양식 개발자는 다른 양식 또는 웹 사이트의 별도 섹션으로 리디렉션하는 것과 같은 별도의 경험을 플러그인합니다. 작성자는 또한 데이터를 다른 데이터 저장소에 보내거나 사용자 지정 분석 엔진을 추가하는 것과 같은 별도의 서비스를 플러그인할 수 있습니다. 비동기 제출이 있는 경우, 제출된 양식 데이터가 서버에서 유효성이 검사될 때 양식이 다시 로드되지 않거나 해당 URL이 변경되지 않으므로 적응형 양식은 단일 페이지 애플리케이션처럼 동작합니다.
 
 적응형 양식의 비동기 제출에 대한 자세한 내용은 을 참조하십시오.
 
@@ -48,7 +44,7 @@ ht-degree: 2%
 
 ## 비동기 제출 작동 방식 {#how-asynchronous-submission-works}
 
-AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제공합니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. 양식을 제출하면 유효성 검사를 위해 데이터가 서버로 전송되며, 이 서버는 제출에 대한 성공 또는 오류 이벤트에 대한 정보와 함께 응답을 클라이언트에 반환합니다. 정보는 관련 핸들러에 매개 변수로 전달되어 함수를 실행합니다.
+AEM Forms에서는 양식 제출에 필요한 기본 성공 사례와 오류 핸들러를 제공합니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. 양식을 제출하면 유효성 검사를 위해 데이터가 서버로 전송되며, 이 서버는 제출에 대한 성공 또는 오류 이벤트에 대한 정보와 함께 응답을 클라이언트에 반환합니다. 정보가 매개변수로서 관련 핸들러에 전달되면 함수를 실행할 수 있습니다.
 
 또한 양식 작성자와 개발자는 양식 수준에서 규칙을 작성하여 기본 핸들러를 재정의할 수 있습니다. 자세한 내용은 [규칙을 사용하여 기본 처리기 재정의](#custom).
 
@@ -67,7 +63,7 @@ AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제�
 }
 ```
 
-양식 제출이 성공적으로 수행된 경우의 서버 응답은 다음과 같습니다.
+양식 제출이 성공적으로 수행된 경우 서버 응답은 다음을 포함합니다.
 
 * 양식 데이터 형식 유형: XML 또는 JSON
 * XML 또는 JSON 형식의 양식 데이터
@@ -93,7 +89,7 @@ AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제�
  }
 ```
 
-양식 제출에 오류가 있는 경우의 서버 응답은 다음과 같습니다.
+양식 제출에 오류가 있는 경우 서버 응답은 다음과 같습니다.
 
 * 오류 원인, CAPTCHA 또는 서버측 유효성 검사 실패
 * 유효성 검사에 실패한 필드의 SOM 표현식 및 해당 오류 메시지가 포함된 오류 개체 목록

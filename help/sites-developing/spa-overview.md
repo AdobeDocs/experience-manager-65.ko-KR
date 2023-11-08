@@ -7,7 +7,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 87%
@@ -177,7 +177,7 @@ AEM SPA Editor SDK와 구동할 수 있도록 추가 SPA 프레임워크를 구�
 
 SPA에 생성된 텍스트 구성 요소의 내부 편집기를 사용하려면 추가 구성이 필요합니다.
 
-1. 텍스트 HTML이 포함된 컨테이너 래퍼 요소의 속성(모든 속성일 수 있음)을 설정합니다. WKND Journal 샘플 콘텐츠의 경우 `<div>` 요소 및 사용된 선택기는 `data-rte-editelement`.
+1. 텍스트 HTML이 포함된 컨테이너 래퍼 요소의 속성(모든 속성일 수 있음)을 설정합니다. WKND Journal 샘플 콘텐츠가 있는 경우 `<div>` 요소 및 사용된 선택기는 `data-rte-editelement`.
 1. 해당 선택기(예: `data-rte-editelement`)를 가리키는 해당 AEM 텍스트 구성 요소의 `cq:InplaceEditingConfig`에서 구성 `editElementQuery`를 설정합니다. 이를 통해 편집기는 HTML 텍스트를 래핑하는 HTML 요소를 인식할 수 있습니다.
 
 이 작업을 수행하는 방법에 대한 예는 다음을 참조하십시오. [WKND 저널 샘플 콘텐츠입니다.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)

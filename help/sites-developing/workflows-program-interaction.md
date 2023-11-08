@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '2008'
 ht-degree: 1%
@@ -359,7 +359,7 @@ REST API에서는 다음 작업이 지원됩니다.
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>URI가 매개 변수로 전송된 작업 항목을 완료합니다. <code>item</code> 및 은 해당 워크플로우 인스턴스를 매개변수에 의해 정의된 다음 노드로 진행합니다. <code>route</code> 또는 <code>backroute</code> 한 걸음 물러나 있을 경우에.<br /> 매개 변수인 경우 <code>delegatee</code> 이(가) 전송되면 매개 변수로 식별되는 작업 항목이 <code>item</code> 은(는) 지정된 참가자에게 위임됩니다.</td>
+   <td>URI가 매개 변수로 전송된 작업 항목을 완료합니다. <code>item</code> 및 은 해당 워크플로우 인스턴스를 매개변수에 의해 정의된 다음 노드로 진행합니다. <code>route</code> 또는 <code>backroute</code> 한 걸음 물러나려면<br /> 매개 변수인 경우 <code>delegatee</code> 이(가) 전송되면 매개 변수로 식별되는 작업 항목이 <code>item</code> 은(는) 지정된 참가자에게 위임됩니다.</td>
   </tr>
  </tbody>
 </table>

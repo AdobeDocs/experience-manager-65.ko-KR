@@ -4,9 +4,9 @@ description: 독립 실행형 AEM 인스턴스를 설치할 때 사용할 수 �
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ oracle Java 11(또는 일반적으로 Java 8보다 최신 버전)을 실행하�
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* 또한 다음을 사용해야 합니다 `-XX:+UseParallelGC` 잠재적인 성능 문제를 완화하도록 전환하십시오.
+* 또한 를 사용해야 합니다 `-XX:+UseParallelGC` 잠재적인 성능 문제를 완화하도록 전환하십시오.
 
 다음은 Java 11에서 AEM을 시작할 때 추가 JVM 매개 변수가 어떻게 표시되어야 하는지에 대한 샘플입니다.
 

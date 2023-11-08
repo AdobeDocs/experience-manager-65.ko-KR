@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6818'
+source-wordcount: '6816'
 ht-degree: 1%
 
 ---
@@ -594,7 +594,7 @@ AEM 6.3부터 기본적으로 다음 주도자가 CUG 정책의 영향을 받지
 
 &quot;관리자&quot; 그룹의 제외는 의 구성 섹션에 있는 시스템 콘솔에서 변경되거나 확장될 수 있습니다. **Apache Jackrabbit Oak CUG 제외 목록**.
 
-또는 CugExclude 인터페이스의 사용자 지정 구현을 제공 및 배포하여 특별한 필요가 있는 경우 제외된 주도자 집합을 조정할 수 있습니다. 다음에서 설명서를 참조하십시오. [CUG 플러그성](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) 자세한 내용 및 예제 구현
+또는 특별한 필요가 있는 경우 제외된 주도자 집합을 조정하기 위해 CugExclude 인터페이스의 사용자 지정 구현을 제공하고 배포할 수 있습니다. 다음에서 설명서를 참조하십시오. [CUG 플러그성](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) 자세한 내용 및 예제 구현
 
 ### 인증: 설정 및 구성 {#authentication-setup-and-configuration}
 

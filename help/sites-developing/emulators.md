@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ AEM 에뮬레이터 프레임워크:
 
   `deviceGroup.drawHead(pageContext);`
 
-* 메서드 `DeviceGroup.drawHead(pageContext)` 에뮬레이터의 init 구성 요소를 포함합니다. 즉, `init.html.jsp` 에뮬레이터 구성 요소. 에뮬레이터 구성 요소에 자체 자산이 없는 경우 `init.html.jsp` 모바일 기본 에뮬레이터( `wcm/mobile/components/emulators/base)`, 모바일 기본 에뮬레이터의 init 스크립트가 호출됩니다( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* 메서드 `DeviceGroup.drawHead(pageContext)` 에뮬레이터의 init 구성 요소를 포함합니다. `init.html.jsp` 에뮬레이터 구성 요소. 에뮬레이터 구성 요소에 자체 자산이 없는 경우 `init.html.jsp` 모바일 기본 에뮬레이터( `wcm/mobile/components/emulators/base)`, 모바일 기본 에뮬레이터의 init 스크립트가 호출됩니다( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
 * 모바일 기본 에뮬레이터의 init 스크립트는 JavaScript를 통해 다음을 정의합니다.
 

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ AEM Mobile에서는 앱에서 추적 데이터를 수집하고 보고하려면 A
 
 Analytics 계정이 설정되면 콘텐츠 동기화 구성을 만들어 콘텐츠를 모바일 애플리케이션으로 가져옵니다.
 
-자세한 내용은 콘텐츠 동기화 콘텐츠 구성 을 참조하십시오. ADBMobileConfig를 /www 디렉터리에 넣으려면 Content Sync에 지시해야 합니다. 예를 들어 Geometrixx Outdoors 앱에서 컨텐츠 동기화 구성은 다음 위치에 있습니다. */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. 개발에 대한 구성도 있지만, Geometrixx Outdoors의 경우 비개발 구성과 동일합니다.
+자세한 내용은 콘텐츠 동기화 콘텐츠 구성 을 참조하십시오. ADBMobileConfig를 /www 디렉터리에 넣으려면 Content Sync에 지시해야 합니다. 예를 들어 Geometrixx Outdoors 앱에서 컨텐츠 동기화 구성은 다음 위치에 있습니다. */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. 개발을 위한 구성도 있습니다. 하지만 Geometrixx Outdoors이 있는 경우 비개발 구성과 동일합니다.
 
 모바일 애플리케이션 AEM 앱 대시보드에서 ADBMobileConfig를 다운로드하는 방법에 대한 자세한 내용은 Analytics - Mobile Services - Adobe Mobile Services SDK 구성 파일을 참조하십시오.
 

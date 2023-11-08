@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '977'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 결과에 따라 작업을 결정하고 시작하는 것은 프로젝트 관리자의 책임입니다.
 
-**참여하기** - 모든 당사자가 모든 회의(상태, 워크숍 등)에 완전히 참여하도록 하는 것은 프로젝트 관리자의 책임이지만 정보 수집 및 요구 사항 분석 프로세스를 포함하여 프로젝트 주기를 최대한 일찍 참여하도록 해야 합니다.
+**참여하기** - 모든 당사자가 모든 회의(상태, 워크숍 등)에 완전히 참여하도록 하는 것은 프로젝트 관리자의 책임이지만, 정보 수집 및 요구 사항 분석 프로세스를 포함하여 프로젝트 주기를 최대한 일찍 참여하도록 해야 합니다.
 
 **고객 참여** - 유사한 테마에서 테스트 사례 및 계획을 정의할 때 고객(가능한 경우)을 참여시키도록 하십시오.
 

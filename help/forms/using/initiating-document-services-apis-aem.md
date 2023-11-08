@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1167'
 ht-degree: 0%
@@ -54,7 +54,7 @@ DDX 호출 워크플로에는 다음 입력 문서가 필요합니다.
 * *작업 로그 수준*: 처리 로그의 로그 수준을 지정합니다.
 * *유효성 검사만*: 입력 DDX의 유효성을 확인합니다.
 
-* *오류 시 실패*: 오류 발생 시 어셈블러 서비스 호출이 실패하도록 할지 여부를 지정합니다. 기본값은 False입니다.
+* *오류 시 실패*: 오류가 있는 경우 어셈블러 서비스 호출이 실패할지 여부를 지정합니다. 기본값은 False입니다.
 
 #### 출력 문서 {#output-documents}
 

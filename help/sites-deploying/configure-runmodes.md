@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 이러한 모드를 사용하여 샘플 콘텐츠의 사용을 제어할 수 있습니다. 샘플 콘텐츠는 빠른 시작을 빌드하기 전에 정의되며 패키지, 구성 등을 포함할 수 있습니다.
 
-* 다음 `samplecontent` 실행 모드에서는 이 콘텐츠가 설치됩니다(기본 모드).
+* 다음 `samplecontent` 실행 모드는 이 콘텐츠를 설치합니다(기본 모드).
 
 * 다음 `nosamplecontent` 모드는 샘플 콘텐츠를 설치하지 않습니다.
 

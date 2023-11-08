@@ -1,18 +1,14 @@
 ---
 title: 대화형 통신 만들기
-seo-title: Create an Interactive Communication
 description: 대화형 통신 편집기를 사용하여 대화형 통신을 만듭니다. 드래그 앤 드롭 기능을 사용하여 대화형 통신을 빌드하고, 다양한 디바이스 유형에서 인쇄 및 웹 출력을 모두 미리 봅니다.
-seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
-uuid: d524a3de-00b4-444f-b3c7-be443fa24ec8
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6168'
+source-wordcount: '6163'
 ht-degree: 1%
 
 ---
@@ -141,7 +137,7 @@ ht-degree: 1%
 
 또한 이러한 요소 위로 마우스를 가져가면 필드(바인딩되지 않음) 또는 변수(바인딩되지 않음) 메시지와 함께 도구 설명이 표시됩니다.
 
-문서 조각에 사용된 언바운드 변수가 작성 인터페이스에 표시되지 않는 경우가 있습니다. 문서 조각 내의 인라인 텍스트 규칙 또는 조건 조각의 경우 발생할 수 있습니다. 이러한 경우 파란색으로 강조 표시된 도구 설명이 문서 조각의 일부로 표시됩니다. 툴팁은 문서 단편 내에 사용된 바인딩되지 않은 변수 수를 표시합니다.
+문서 조각에 사용된 언바운드 변수가 작성 인터페이스에 표시되지 않는 경우가 있습니다. 문서 조각 내의 인라인 텍스트 규칙 또는 조건 조각으로 인해 발생할 수 있습니다. 이러한 경우 파란색으로 강조 표시된 도구 설명이 문서 조각의 일부로 표시됩니다. 툴팁은 문서 단편 내에 사용된 바인딩되지 않은 변수 수를 표시합니다.
 
 ![바인딩되지 않은 변수](assets/df_unbound_variable_new.png)
 

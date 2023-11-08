@@ -1,20 +1,16 @@
 ---
 title: 세그먼테이션 구성
-seo-title: Configuring Segmentation
 description: AEM Campaign에 대한 세그멘테이션을 구성하는 방법을 알아봅니다.
-seo-description: Learn how to configure segmentation for AEM Campaign.
-uuid: 604ca34d-cdb9-49ff-8f75-02a44b60a8a2
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 14%
+source-wordcount: '1129'
+ht-degree: 13%
 
 ---
 
@@ -110,7 +106,7 @@ AEM을 사용하면 세그먼트, 티저 및 캠페인을 쉽게 만들고 업�
 
 부울 연산자 OR 및 AND를 사용하여 이러한 트레이트를 결합할 수 있습니다( 참조) [새 세그먼트 만들기](#creating-a-new-segment))을 클릭하여 이 세그먼트를 선택하기 위한 정확한 시나리오를 정의합니다.
 
-전체 명령문이 true로 평가되면 이 세그먼트가 해결됩니다. 여러 세그먼트를 적용할 수 있는 경우 **[부스트](/help/sites-administering/campaign-segmentation.md#boost-factor)** 요소도 사용됩니다.
+전체 명령문이 true로 평가되면 이 세그먼트가 해결됩니다. 적용 가능한 세그먼트가 여러 개 있는 경우 **[증폭](/help/sites-administering/campaign-segmentation.md#boost-factor)** 인자도 사용됩니다.
 
 >[!CAUTION]
 >

@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2718'
+source-wordcount: '2717'
 ht-degree: 9%
 
 ---
@@ -220,7 +220,7 @@ XMP은 데이터 모델, 스토리지 모델 및 스키마를 제공하여 메�
 
 EXIF, ID3 또는 Microsoft Office의 모든 기존 메타데이터는 자동으로 XMP으로 변환되며, 이를 제품 카탈로그와 같은 고객별 메타데이터 스키마를 지원하도록 확장할 수 있습니다.
 
-XMP의 메타데이터는 속성 세트로 구성됩니다. 이러한 속성은 항상 리소스라고 하는 특정 엔티티와 연결됩니다. 즉, 속성은 리소스 &quot;정보&quot;입니다. XMP의 경우 리소스는 항상 자산입니다.
+XMP의 메타데이터는 속성 세트로 구성됩니다. 이러한 속성은 항상 리소스라고 하는 특정 엔티티와 연결됩니다. 즉, 속성은 리소스 &quot;정보&quot;입니다. XMP이 있는 경우 리소스는 항상 자산입니다.
 
 ### XMP 에코시스템 {#xmp-ecosystem}
 

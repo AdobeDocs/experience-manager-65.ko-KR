@@ -4,9 +4,9 @@ description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 지정�
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4611'
 ht-degree: 3%
 
 ---
@@ -692,7 +692,7 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함됩니다. 이러�
 
 모든 사이트 페이지는 다음 위치에서 사용할 수 있습니다. *https://&lt;aemserver>:&lt;port>/sites.html/content/we-gov*
 
-또한 이러한 사이트 페이지는 AEM Grid 패키지를 사용하여 몇 가지 구성 요소의 레이아웃을 제어할 수 있습니다.
+또한 이러한 사이트 페이지는 AEM Grid 패키지를 사용하여 몇 가지 구성 요소의 레이아웃을 제어합니다.
 
 #### 스타일 시스템 {#style-system}
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -27,7 +27,7 @@ AEM forms는 사용자 관리에 아직 존재하지 않는 사용자의 정시 
 
 1. 사용자가 AEM Forms에 로그인하려고 하면 User Management에서 사용 가능한 모든 인증 공급자에게 사용자 자격 증명을 순차적으로 전달합니다. (로그인 자격 증명에는 사용자 이름/암호 조합, Kerberos 티켓, PKCS7 서명 등이 포함됩니다.)
 1. 인증 공급자가 자격 증명의 유효성을 검사합니다.
-1. 그런 다음 인증 공급자는 사용자가 User Management 데이터베이스에 있는지 확인합니다. 다음과 같은 결과가 가능합니다.
+1. 그런 다음 인증 공급자는 사용자가 사용자 관리 데이터베이스에 있는지 여부를 확인합니다. 다음과 같은 결과가 가능합니다.
 
    **존재함:** 사용자가 현재 상태이고 잠금 해제된 경우 User Management는 인증 성공을 반환합니다. 그러나 사용자가 현재 상태가 아니거나 잠겨 있으면 User Management에서 인증 실패를 반환합니다.
 

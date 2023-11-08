@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 0%
@@ -89,39 +89,38 @@ window.addEventListener("FormBridgeInitialized",
 
       * **widgetConfig:** 사용자가 사용자 정의 위젯으로 양식의 기본 위젯을 무시할 수 있습니다. 구성은 다음과 같이 재정의됩니다.
 
-         *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
       * **pagingConfig:** 사용자가 첫 번째 페이지만 렌더링하는 기본 동작을 무시할 수 있습니다. 구성은 다음과 같이 재정의됩니다.
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true false=&quot;&quot;>, shrinkPageDisabled: &lt;true false=&quot;&quot;> }).*
+        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true false=&quot;&quot;>, shrinkPageDisabled: &lt;true false=&quot;&quot;> }).*
 
       * **LoggingConfig:** 사용자가 로깅 수준을 재정의하거나, 범주의 로깅을 비활성화하거나, 로그 콘솔을 표시할지 또는 서버로 전송할지 여부를 지정할 수 있습니다. 구성은 다음과 같이 재정의할 수 있습니다.
 
-      ```javascript
-      formBridge.registerConfig{
-        "LoggerConfig" : {
-      {
-      "on":`<true *| *false>`,
-      "category":`<array of categories>`,
-      "level":`<level of categories>`, "
-      type":`<"console"/"server"/"both">`
-      }
-        }
-      ```
+     ```javascript
+     formBridge.registerConfig{
+       "LoggerConfig" : {
+     {
+     "on":`<true *| *false>`,
+     "category":`<array of categories>`,
+     "level":`<level of categories>`, "
+     type":`<"console"/"server"/"both">`
+     }
+       }
+     ```
 
       * **SubmitServiceProxyConfig:** 사용자가 제출 및 로거 프록시 서비스를 등록할 수 있도록 허용합니다.
 
-         ```javascript
-         window.formBridge.registerConfig("submitServiceProxyConfig",
-         {
-         "submitServiceProxy" : "`<submitServiceProxy>`",
-         "logServiceProxy": "`<logServiceProxy>`",
-         "submitUrl" : "`<submitUrl>`"
-         });
-         ```
+        ```javascript
+        window.formBridge.registerConfig("submitServiceProxyConfig",
+        {
+        "submitServiceProxy" : "`<submitServiceProxy>`",
+        "logServiceProxy": "`<logServiceProxy>`",
+        "submitUrl" : "`<submitUrl>`"
+        });
+        ```
+
    * **구성:** 구성 값
-
-
 
 * **출력:** 에서 구성의 원래 값을 포함하는 개체 *데이터* 속성.
 
@@ -176,7 +175,7 @@ window.addEventListener("FormBridgeInitialized",
 
 * **입력:** 포커스를 설정할 필드의 일부 표현식
 * **출력:** 없음
-* **오류:** 잘못된 Som 표현식의 경우 예외 발생
+* **오류:** 잘못된 Som 표현식이 있는 경우 예외를 throw합니다.
 
 **setFieldValue (som, value)** 지정된 Som 표현식에 대한 필드 값을 설정합니다.
 
@@ -186,7 +185,7 @@ window.addEventListener("FormBridgeInitialized",
    * **값:** 에 제공된 Som 표현식에 해당하는 값이 포함된 배열입니다. **솜**&#x200B;배열입니다. 값의 데이터 유형이 fieldType과 동일하지 않으면 값이 수정되지 않습니다.
 
 * **출력:** 없음
-* **오류:** 잘못된 Som 표현식의 경우 예외 발생
+* **오류:** 잘못된 Som 표현식이 있는 경우 예외를 throw합니다
 
 **getFieldValue (som)** 지정된 Som 표현식에 대한 필드 값 반환
 

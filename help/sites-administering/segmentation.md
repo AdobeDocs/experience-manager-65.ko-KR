@@ -1,19 +1,15 @@
 ---
 title: ContextHub를 사용하여 세분화 구성
-seo-title: Configuring Segmentation with ContextHub
 description: Context Hub를 사용하여 세그먼테이션을 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure segmentation with Context Hub.
-uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 76%
+source-wordcount: '1772'
+ht-degree: 75%
 
 ---
 
@@ -52,7 +48,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 
 구성 요소 브라우저를 사용하여 **AND** 및 **OR** 컨테이너를 추가하여 세그먼트 논리를 정의한 다음, 추가 구성 요소를 추가하여 속성 및 값을 비교하거나 스크립트 및 기타 세그먼트를 참조하여 선택 기준을 정의하고([새 세그먼트 작성](#creating-a-new-segment) 참조), 이를 통해 세그먼트 선택을 위한 정확한 시나리오를 정의할 수 있습니다.
 
-전체 구문이 true로 평가되면 세그먼트가 결정됩니다. 여러 세그먼트를 적용할 수 있는 경우 **부스트** 요소도 사용됩니다. 부스트 요소에 대한 자세한 내용은 [새 세그먼트 작성](#creating-a-new-segment)[을 참조하십시오.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+전체 구문이 true로 평가되면 세그먼트가 결정됩니다. 적용 가능한 세그먼트가 여러 개 있는 경우 **증폭** 인자도 사용됩니다. 부스트 요소에 대한 자세한 내용은 [새 세그먼트 작성](#creating-a-new-segment)[을 참조하십시오.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -106,7 +102,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 
 >[!NOTE]
 >
->값 비교 시 비교의 데이터 유형이 설정되지 않은 경우(즉, 자동 감지로 설정된 경우) ContextHub의 세그먼테이션 엔진은 JavaScript와 같이 단순히 값을 비교합니다. 이는 예상되는 유형에 값을 전달하지 않으므로 오해의 소지가 있는 결과가 발생할 수 있습니다. 예:
+>값 비교 시 비교의 데이터 유형이 설정되지 않은 경우(예: 자동 감지로 설정된 경우) ContextHub의 세분화 엔진은 JavaScript와 같이 단순히 값을 비교합니다. 이는 예상되는 유형에 값을 전달하지 않으므로 오해의 소지가 있는 결과가 발생할 수 있습니다. 예:
 >
 >`null < 30 // will return true`
 >
@@ -164,7 +160,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 
 AND 및 OR 컨테이너 구성 요소를 사용하여 AEM에서 복잡한 세그먼트를 구성할 수 있습니다. 이렇게 하면 몇 가지 기본 사항을 알아가는 데 도움이 됩니다.
 
-* 정의의 최상위 수준은 항상 처음 생성되는 AND 컨테이너입니다. 이를 변경할 수 없지만 나머지 세그먼트 정의에는 영향을 미치지 않습니다.
+* 정의의 최상위 수준은 항상 처음에 생성되는 AND 컨테이너입니다. 이를 변경할 수 없지만 나머지 세그먼트 정의에는 영향을 미치지 않습니다.
 * 컨테이너의 중첩이 적절한지 확인하십시오. 컨테이너는 부울 표현식의 괄호로 확인할 수 있습니다.
 
 다음 예제를 사용하여 황금기 그룹으로 간주되는 방문자를 선택합니다.

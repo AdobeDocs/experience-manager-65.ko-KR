@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2503'
 ht-degree: 0%
 
 ---
@@ -117,9 +117,9 @@ AEM Forms 서비스는 다음을 대체하여 비동기적으로 호출할 수 �
 
 ## 오류 보고 {#error-reporting}
 
-서버에서 예외가 throw되어 동기 또는 비동기 호출 요청을 완료할 수 없는 경우 이 예외는 HTTP 응답 메시지의 일부로 보고됩니다. 호출 URL(또는 `async_result` 비동기 호출의 경우 URL에 .xml 접미사가 없으면 REST 공급자는 HTTP 코드를 반환합니다 `500 Internal Server Error` 뒤에 예외 메시지가 옵니다.
+서버에서 예외가 throw되어 동기 또는 비동기 호출 요청을 완료할 수 없는 경우 이 예외는 HTTP 응답 메시지의 일부로 보고됩니다. 호출 URL(또는 `async_result` 비동기 호출이 있는 경우 URL)에 .xml 접미사가 없는 경우 REST 공급자는 HTTP 코드를 반환합니다 `500 Internal Server Error` 뒤에 예외 메시지가 옵니다.
 
-호출 URL(또는 `async_result` 비동기 호출의 경우 URL에 .xml 접미사가 있으면 REST 공급자가 HTTP 코드를 반환합니다 `200 OK`뒤에 다음 형식의 예외를 설명하는 XML 문서가 옵니다.
+호출 URL(또는 `async_result` 비동기 호출이 있는 경우 URL은 .xml 접미사를 가집니다. REST 공급자는 HTTP 코드를 반환합니다 `200 OK`뒤에 다음 형식의 예외를 설명하는 XML 문서가 옵니다.
 
 ```xml
  <exception>
@@ -143,7 +143,7 @@ AEM Forms 서비스는 다음을 대체하여 비동기적으로 호출할 수 �
 
 ## 보안 및 인증 {#security-and-authentication}
 
-REST 호출에 보안 전송을 제공하기 위해 AEM Forms 관리자는 AEM Forms을 호스팅하는 J2EE 애플리케이션 서버에서 HTTPS 프로토콜을 활성화할 수 있습니다. 이 구성은 J2EE 애플리케이션 서버에만 해당되며 Forms 서버 구성의 일부가 아닙니다.
+REST 호출에 보안 전송을 제공하기 위해 AEM Forms 관리자는 AEM Forms을 호스팅하는 J2EE 애플리케이션 서버에서 HTTPS 프로토콜을 활성화할 수 있습니다. 이 구성은 J2EE 애플리케이션 서버에만 해당되며, Forms 서버 구성의 일부가 아닙니다.
 
 >[!NOTE]
 >

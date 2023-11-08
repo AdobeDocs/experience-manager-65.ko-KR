@@ -1,5 +1,5 @@
 ---
-title: 페이지 속성 보기 사용자 지정
+title: 페이지 속성 보기 사용자 정의
 seo-title: Customizing Views of Page Properties
 description: 모든 페이지에는 필요에 따라 편집할 수 있는 속성 세트가 있습니다
 seo-description: Every page has a set of properties that you can edit as required
@@ -10,16 +10,16 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 3%
+source-wordcount: '484'
+ht-degree: 50%
 
 ---
 
-# 페이지 속성 보기 사용자 지정{#customizing-views-of-page-properties}
+# 페이지 속성 보기 사용자 정의{#customizing-views-of-page-properties}
 
-모든 페이지에는 [속성](/help/sites-authoring/editing-page-properties.md) 는 사용자가 보고 편집할 수 있습니다. 일부는 페이지를 만들 때 필요하고(보기 만들기), 일부는 나중에 보고 편집할 수 있습니다(보기 편집). 이러한 페이지 속성은 대화 상자에서 정의하고 사용할 수 있습니다. ( `cq:dialog`)을 클릭하여 제품에서 사용할 수 있습니다.
+모든 페이지에는 [속성](/help/sites-authoring/editing-page-properties.md) 는 사용자가 보고 편집할 수 있습니다. 일부는 페이지를 만들 때 필요하고(보기 만들기), 일부는 나중에 보고 편집할 수 있습니다(보기 편집). 이러한 페이지 속성은 해당 페이지 구성 요소의 대화 상자(`cq:dialog`)를 통해 정의하고 제공합니다.
 
 >[!CAUTION]
 >
@@ -31,9 +31,9 @@ ht-degree: 3%
 
 * 편집 뷰에서 사용할 수 있습니다(예: **속성 보기**)
 
-변경이 필요한 경우 필드를 구체적으로 구성해야 합니다. 이 작업은 적절한 노드 속성을 사용하여 수행됩니다.
+변경이 필요한 경우 필드를 구체적으로 구성해야 합니다. 이는 적절한 노드 속성을 사용하여 수행됩니다.
 
-* 만들기 보기에서 사용할 수 있는 페이지 속성(예: **페이지 만들기** 마법사):
+* 만들기 보기(예: **페이지 만들기** 마법사)에서 사용할 수 있는 페이지 속성:
 
    * 이름: `cq:showOnCreate`
    * 유형: `Boolean`
@@ -51,16 +51,16 @@ ht-degree: 3%
 
 >[!TIP]
 >
->다음을 참조하십시오. [페이지 속성 확장 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) 페이지 속성 맞춤화에 대한 안내서입니다.
+>페이지 속성을 사용자 정의하는 방법에 대한 안내서는 [페이지 속성 확장 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=ko-KR)을 참조하십시오.
 
 ## 페이지 속성 구성 {#configuring-your-page-properties}
 
 페이지 구성 요소의 대화 상자를 구성하고 적절한 노드 속성을 적용하여 사용 가능한 필드를 구성할 수도 있습니다.
 
-예를 들어 기본적으로 [**페이지 만들기** 마법사](/help/sites-authoring/managing-pages.md#creating-a-new-page) 아래에 그룹화된 필드를 표시합니다. **기타 제목 및 설명**. 이를 숨기려면 다음을 구성합니다.
+예를 들어 기본적으로 [**페이지 만들기** 마법사](/help/sites-authoring/managing-pages.md#creating-a-new-page)에는 **기타 제목 및 설명** 아래에 그룹화된 필드가 표시됩니다. 이를 숨기려면 다음과 같이 구성하십시오.
 
-1. 아래에 페이지 구성 요소 만들기 `/apps`.
-1. 재정의 만들기(사용) *대화 상자 차이* 에서 제공 [Sling 리소스 병합](/help/sites-developing/sling-resource-merger.md))에 사용됩니다. `basic` 섹션(예: 페이지 구성 요소):
+1. `/apps` 아래에서 페이지 구성 요소를 만듭니다.
+1. 페이지 구성 요소의 `basic` 섹션에 대해 재정의를 만듭니다([Sling 리소스 병합](/help/sites-developing/sling-resource-merger.md)에서 제공되는 *대화 상자 비교* 사용). 예를 들면 다음과 같습니다.
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -78,16 +78,16 @@ ht-degree: 3%
    >
    구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
    >
-   1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
+   1. 필요한 항목 다시 만들기(존재하는 그대로) `/libs`) `/apps`
    1. 다음 범위 내에서 변경 `/apps`
 
-1. 설정 `path` 속성 `basic` 기본 탭의 재정의를 지정합니다(다음 단계도 참조). 예:
+1. `basic`의 `path` 속성이 기본 탭의 재정의를 가리키도록 설정합니다(다음 단계도 참조). 예:
 
    ```xml
    /apps/demos/components/page/tabs/basic
    ```
 
-1. 재정의 만들기 `basic` - `moretitles` 섹션에 있는 마지막 항목이 될 필요가 없습니다. 예:
+1. 해당 경로에서 `basic` - `moretitles` 섹션의 재정의를 만듭니다. 예를 들면 다음과 같습니다.
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -99,7 +99,7 @@ ht-degree: 3%
    * **유형**: `Boolean`
    * **값**: `false`
 
-   다음 **기타 제목 및 설명** 섹션이 **페이지 만들기** 마법사.
+   **기타 제목 및 설명** 섹션이 더 이상 **페이지 만들기** 마법사에 표시되지 않습니다.
 
 >[!NOTE]
 >
@@ -107,10 +107,10 @@ ht-degree: 3%
 
 ## 페이지 속성의 샘플 구성 {#sample-configuration-of-page-properties}
 
-이 샘플은 대화 상자 비교 기술을 [Sling 리소스 병합](/help/sites-developing/sling-resource-merger.md); 사용 포함 [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). 또한 두 가지 사용 방법을 보여 줍니다 `cq:showOnCreate` 및 `cq:hideOnEdit`.
+이 샘플은 대화 상자 비교 기술을 [Sling 리소스 병합](/help/sites-developing/sling-resource-merger.md); 사용 포함 [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). 또한 `cq:showOnCreate` 및 `cq:hideOnEdit` 모두의 사용을 보여 줍니다.
 
 GITHUB의 코드
 
-GitHub에서 이 페이지의 코드를 확인할 수 있습니다
+이 페이지의 코드는 GitHub에서 확인할 수 있습니다
 
 * [GitHub에서 aem-authoring-extension-page-dialog 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

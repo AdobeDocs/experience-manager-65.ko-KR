@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4598'
 ht-degree: 7%
 
 ---
@@ -166,7 +166,7 @@ Lucene 색인은 Oak 1.0.9에서 도입되었으며 AEM 6 초기 출시에서 �
 
 ### Solr 색인화 {#solr-indexing}
 
-AEM은 또한 기본적으로 Solr 색인화를 지원합니다. 전체 텍스트 검색을 지원하는 데 사용되지만 모든 유형의 JCR 쿼리를 지원하는 데 사용할 수도 있습니다. AEM 인스턴스에 동시 사용자 수가 많은 검색 기반 웹 사이트와 같은 검색 집약적 배포에 필요한 쿼리 수를 처리할 수 있는 CPU 용량이 없는 경우 Solr을 고려해야 합니다. 대안적으로, Solr은 플랫폼의 더 진보된 특징들 중 일부를 사용하기 위해 크롤러-기반 접근법에서 구현될 수 있다.
+AEM은 기본적으로 Solr 인덱싱도 지원합니다. 전체 텍스트 검색을 지원하는 데 사용되지만 모든 유형의 JCR 쿼리를 지원하는 데 사용할 수도 있습니다. AEM 인스턴스에 동시 사용자 수가 많은 검색 기반 웹 사이트와 같은 검색 집약적 배포에 필요한 쿼리 수를 처리할 수 있는 CPU 용량이 없는 경우 Solr을 고려해야 합니다. 대안적으로, Solr은 플랫폼의 더 진보된 특징들 중 일부를 사용하기 위해 크롤러-기반 접근법에서 구현될 수 있다.
 
 개발 환경에 대해 AEM 서버에 임베드되도록 Solr 인덱스를 구성하거나 원격 인스턴스로 오프로드하여 프로덕션 및 스테이징 환경에서 검색 확장성을 개선할 수 있습니다. 오프로딩 검색은 확장성을 향상시키지만 이로 인해 지연을 도입하므로 필요한 경우가 아니면 권장되지 않습니다. Solr 통합을 구성하는 방법 및 Solr 인덱스를 만드는 방법에 대한 자세한 내용은 [Oak 쿼리 및 색인화 설명서](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 

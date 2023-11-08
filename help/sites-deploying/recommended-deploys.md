@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1779'
 ht-degree: 1%
 
 ---
@@ -157,7 +157,7 @@ MongoDB를 사용하는 최소 배포에는 일반적으로 다음 토폴로지�
 
 또한 에셋 또는 바이너리가 MongoDB 내에 저장되지 않도록 공유 파일 시스템 또는 Amazon S3에 데이터 저장소를 구성하는 것이 좋습니다. 이렇게 하면 배포 내에서 최적의 성능을 보장할 수 있습니다.
 
-작성자 인스턴스, MongoDB 복제본 또는 전체 데이터 센터 장애 발생 시 다운타임을 최소화하면서 MongoDB 복제본 세트를 두 개 이상의 작성자 인스턴스로 배포하면 추가적인 이점 중 하나가 자동화된 복구 시나리오입니다. 그럼에도 불구하고 TarMK는 제어 장애 조치 메커니즘을 통해 최소한의 다운타임 솔루션을 제공할 수 있으므로 TarMK보다 MongoMK를 선택하는 것이 복구 요구 사항에만 의존해서는 안 됩니다.
+작성자 인스턴스, MongoDB 복제본 또는 전체 데이터 센터 오류가 있는 경우 가동 중지 시간을 최소화하면서 MongoDB 복제본 세트를 두 개 이상의 작성자 인스턴스로 배포하면 추가적인 이점 중 하나가 자동화된 복구 시나리오입니다. 그럼에도 불구하고 TarMK는 제어 장애 조치 메커니즘을 통해 최소한의 다운타임 솔루션을 제공할 수 있으므로 TarMK보다 MongoMK를 선택하는 것이 복구 요구 사항에만 의존해서는 안 됩니다.
 
 배포 후 처음 18개월 동안 상기 기준을 충족하지 못할 것으로 예상되는 경우 먼저 TarMK를 사용하여 AEM을 배포한 다음 나중에 상기 기준이 적용될 때 구성을 다시 평가하고 TarMK에 남아 있는지 또는 MongoMK로 마이그레이션할지를 최종적으로 결정하는 것이 좋습니다.
 

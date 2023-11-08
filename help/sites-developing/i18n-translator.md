@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2319'
 ht-degree: 2%
 
 ---
@@ -300,7 +300,7 @@ XLIFF 파일을 사전으로 가져와서 사전을 채웁니다. 사전에 영�
 
    >[!NOTE]
    >
-   >번역자는 실제로 존재하는 언어의 번역만 저장합니다. [사전에 있음](#creating-a-dictionary) (예: 사전 경로 아래) `/apps/myProject/i18n`).
+   >번역자는 실제로 존재하는 언어의 번역만 저장합니다. [사전에 있음](#creating-a-dictionary) (즉, 다음과 같은 사전 경로 아래) `/apps/myProject/i18n`).
    >
    >이러한 언어가 격자에 표시된 언어에 해당하는지 확인하십시오.
 

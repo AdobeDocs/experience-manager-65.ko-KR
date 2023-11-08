@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 글로벌 문서 스토리지 디렉터리 {#global-document-storage-directory}
 
-GDS는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사용되는 디렉토리입니다. 오래 지속되는 파일의 수명은 AEM Forms 시스템을 한 번 이상 시작하기 위한 것이며 며칠 및 심지어 몇 년에 걸쳐 실행될 수 있습니다. 이러한 장기 보존 파일에는 PDF, 정책 및 양식 템플릿이 포함될 수 있습니다. 장기 파일은 여러 AEM Forms 배포의 전체 상태에서 중요한 부분입니다. 일부 또는 모든 장기 문서가 손실되거나 손상되면 Forms 서버가 불안정해질 수 있습니다.
+GDS는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사용되는 디렉토리입니다. 오래 지속되는 파일의 수명은 AEM Forms 시스템을 한 번 이상 시작하기 위한 것이며 며칠 및 심지어 몇 년에 걸쳐 실행될 수 있습니다. 이러한 장기 보존 파일에는 PDF, 정책 및 양식 템플릿이 포함될 수 있습니다. 장기 파일은 여러 AEM Forms 배포의 전체 상태에서 중요한 부분입니다. 일부 또는 모든 장기 사용 문서가 손실되거나 손상되면 Forms 서버가 불안정해질 수 있습니다.
 
 비동기 작업 호출을 위한 입력 문서는 GDS에도 저장되며 요청을 처리하는 데 사용할 수 있어야 합니다. 따라서 GDS를 호스팅하는 파일 시스템의 안정성을 고려하고 RAID(Redundant Array of Independent Disks) 또는 기타 기술을 사용자의 품질 및 서비스 요구 사항에 맞게 사용하는 것이 중요합니다.
 

@@ -12,7 +12,7 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 0%
@@ -186,7 +186,7 @@ ht-degree: 0%
 
    * xfa.connectionSet 스크립트에 대한 지원이 제한되어 있습니다. connectionSet의 경우 웹 서비스의 서버측 호출만 지원됩니다. 자세한 내용은 [스크립팅 지원](/help/forms/using/scripting-support.md).
    * 클라이언트측 스크립트에서는 $record 및 $data가 지원되지 않습니다. 그러나 스크립트가 formReady, layoutReady 블록으로 작성되면 이러한 이벤트가 서버측에서 실행되므로 스크립트가 계속 작동합니다.
-   * 그리기 텍스트(또는 필드의 경우 캡션 텍스트) 변경과 같은 XFA 그리기 요소별 스크립트는 지원되지 않습니다.
+   * 그리기 텍스트(또는 필드가 있는 경우 캡션 텍스트) 변경과 같은 XFA 그리기 요소별 스크립트는 지원되지 않습니다.
 
 1. formCalc를 사용하는 데 제한이 있습니까?
 
@@ -208,7 +208,7 @@ ht-degree: 0%
 
    1. CRXde lite를 열고 로 이동합니다. `/content/xfaforms/profiles/default` 노드.
    1. 속성 추가 `mfDataDependentFloatingField`문자열 형식이며 속성 값을 로 설정합니다. `true`.
-   1. 클릭 **모두 저장**. 이제 업데이트된 렌더링 프로필을 사용하여 HTML Forms에 대해 부동 필드를 사용할 수 있습니다.
+   1. **모두 저장**&#x200B;을 클릭합니다. 이제 업데이트된 렌더링 프로필을 사용하여 HTML Forms에 대해 부동 필드를 사용할 수 있습니다.
 
       >[!NOTE]
       >

@@ -3,9 +3,9 @@ title: 리치 텍스트 편집기를 구성하여 액세스 가능한 웹 페이
 description: 리치 텍스트 편집기를 구성하여 액세스 가능한 웹 페이지 및 사이트를 만듭니다.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ AEM의 접근성 기능을 추가로 확장하기 위해 RTE를 기반으로 기
 
 ### 예 - 표 속성 대화 상자에 캡션 추가 {#example-adding-the-caption-to-the-table-properties-dialog}
 
-의 생성자에서 `TablePropertiesDialog`캡션 편집에 사용되는 추가 텍스트 입력 필드를 추가합니다. 참고: `itemId` 은(는) 로 설정되어야 합니다. `caption` (즉, DOM 속성 이름) 을 사용하여 콘텐츠를 자동으로 처리할 수 있습니다.
+의 생성자에서 `TablePropertiesDialog`캡션 편집에 사용되는 추가 텍스트 입력 필드를 추가합니다. 참고: `itemId` 은(는) 로 설정되어야 합니다. `caption` (즉, DOM 속성의 이름), DOM 속성, DOM 속성, DOM 속성, DOM 속성, DOM 속성, DOM 속성, DOM 속성, DOM 속성, DOM 속성, DOM 속성, DOM 속성 및 DOM 속성 간에
 
 위치 **표**, 를 명시적으로 설정하거나 DOM 요소에서 속성을 제거합니다. 값이 의 대화 상자에 의해 전달됩니다. `config` 개체. DOM 속성은 다음을 사용하여 설정/제거해야 합니다 `CQ.form.rte.Common` 메서드 ( `com` 은(는) 의 단축키입니다. `CQ.form.rte.Common`)를 클릭하여 브라우저 구현에 일반적인 위험을 방지합니다.
 
@@ -119,7 +119,7 @@ RTE는 `strong` 및 `em` 태그 대신 `b` 및 `i`. 다음 노드를 의 형제 
 
    끝:
 
-   `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`.
+   `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
 1. 편집할 다음 파일을 엽니다(두 번 클릭하여 열기).
 
@@ -145,7 +145,7 @@ RTE는 `strong` 및 `em` 태그 대신 `b` 및 `i`. 다음 노드를 의 형제 
 
 1. 다음 파일을 엽니다.
 
-   `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`.
+   `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
 
 1. 의 끝에 다음 코드를 추가합니다. `transferConfigToTable` 방법:
 

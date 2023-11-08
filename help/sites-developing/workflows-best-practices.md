@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1922'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
 
 ### 위치 {#locations}
 
-워크플로 모델, 런처, 스크립트 및 알림의 정의는 유형에 따라 저장소에 보관됩니다(예: 기본 제공, 사용자 지정 등).
+워크플로 모델, 런처, 스크립트 및 알림의 정의는 유형에 따라 리포지토리에 유지됩니다(즉, 사용자 지정 등).
 
 >[!NOTE]
 >

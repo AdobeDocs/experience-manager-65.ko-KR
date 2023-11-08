@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '18965'
+source-wordcount: '18956'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
    >[!NOTE]
    >
-   >를 호출하여 PDF 문서를 생성하는 경우 `generatePDFOutput` 메서드에서 서명 또는 인증된 XFA PDF 양식과 데이터를 병합할 수 없습니다. (참조: [디지털 서명 및 인증 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >를 호출하여 PDF 문서를 생성하는 경우 `generatePDFOutput` 메서드에서 서명되거나 인증된 XFA PDF 양식과 데이터를 병합할 수 없습니다. (참조: [디지털 서명 및 인증 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -354,7 +354,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
    >[!NOTE]
    >
-   >를 호출하여 PDF 문서를 생성하는 경우 `generatePDFOutput` 메서드에서 서명 또는 인증된 XFA PDF 양식과 데이터를 병합할 수 없습니다. (참조: [디지털 서명 및 인증 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >를 호출하여 PDF 문서를 생성하는 경우 `generatePDFOutput` 메서드에서 서명되거나 인증된 XFA PDF 양식과 데이터를 병합할 수 없습니다. (참조: [디지털 서명 및 인증 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -2173,7 +2173,7 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 
    >[!NOTE]
    >
-   >를 호출하여 PDF 문서를 생성하는 경우 `generatePDFOutput` 메서드에서 서명되거나, 인증되거나, 사용 권한이 포함된 XFA PDF 양식과 데이터를 병합할 수 없습니다. 사용 권한에 대한 자세한 내용은 [PDF 문서에 사용 권한 적용](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+   >를 호출하여 PDF 문서를 생성하는 경우 `generatePDFOutput` 메서드에서 서명, 인증 또는 사용 권한이 포함된 XFA PDF 양식과 데이터를 병합할 수 없습니다. 사용 권한에 대한 자세한 내용은 [PDF 문서에 사용 권한 적용](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
 
 1. 작업 결과 검색
 

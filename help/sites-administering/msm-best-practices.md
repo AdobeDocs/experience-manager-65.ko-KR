@@ -4,10 +4,10 @@ description: AEM Multi Site Manager를 시작하고 실행하는 데 도움이 �
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 41%
+source-wordcount: '1604'
+ht-degree: 40%
 
 ---
 

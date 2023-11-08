@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1105'
 ht-degree: 3%
 
 ---
@@ -152,7 +152,7 @@ ExactTarget 및 Silverpop Engage와 같은 이메일 서비스에 뉴스레터�
 
    성공하면 AEM에서 ExactTarget 또는 Silverpop Engage에서 이메일을 볼 수 있음을 확인합니다.
 
-   ExactTarget의 경우 게시된 이메일을 보려면 **게시된 이메일 보기**. 이렇게 하면 ExactTarget에 게시된 뉴스레터([https://members.exacttarget.com/](https://members.exacttarget.com/).).
+   ExactTarget이 있는 경우 을 클릭하여 게시된 이메일을 볼 수 있습니다. **게시된 이메일 보기**. 이렇게 하면 ExactTarget에 게시된 뉴스레터([https://members.exacttarget.com/](https://members.exacttarget.com/).).
 
 >[!NOTE]
 >

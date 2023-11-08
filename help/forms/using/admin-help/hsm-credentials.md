@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 0%
@@ -50,7 +50,7 @@ AEM Forms 디지털 서명은 HSM에 저장된 자격 증명을 사용하여 서
 1. Slot Type 목록에서 Slot Id, Slot Index 또는 Token Name 을 선택하고 Slot Info 상자에 값을 지정합니다. AEM forms는 이러한 설정을 사용하여 HSM에서 자격 증명이 저장되는 위치를 결정합니다.
 
    * **토큰 이름:** 파티션 이름(예: HSMPART1)에 해당합니다.
-   * **슬롯 ID:** 슬롯 ID는 슬롯에 해당하는 정수로 파티션에 해당합니다. 예를 들어 클라이언트(forms 서버)가 HSMPART1 파티션에 먼저 등록되어 있습니다. 이 클라이언트의 경우 슬롯 1을 HSMPART1 파티션에 매핑합니다. HSMPART1은 등록된 첫 번째 파티션이므로 슬롯 ID는 1이고 Slot Info를 1로 설정합니다.
+   * **슬롯 ID:** 슬롯 ID는 슬롯에 해당하는 정수로 파티션에 해당합니다. 예를 들어 클라이언트(Forms 서버)가 HSMPART1 파티션에 먼저 등록되었습니다. 이 클라이언트의 경우 슬롯 1을 HSMPART1 파티션에 매핑합니다. HSMPART1은 등록된 첫 번째 파티션이므로 슬롯 ID는 1이고 Slot Info를 1로 설정합니다.
 
      슬롯 ID는 클라이언트별로 설정됩니다. 두 번째 시스템을 다른 파티션(예: 동일한 HSM 장치의 HSMPART2)에 등록한 경우 슬롯 1은 해당 클라이언트에 대한 HSMPART2 파티션과 연결됩니다.
 
@@ -73,7 +73,7 @@ AEM Forms 디지털 서명은 HSM에 저장된 자격 증명을 사용하여 서
 1. 관리 콘솔에서 설정 > 보안 저장소 관리 > HSM 자격 증명 을 클릭합니다.
 1. 확인할 자격 증명 옆의 확인란을 클릭하고 상태 확인 을 클릭합니다.
 
-상태 열에는 자격 증명의 현재 상태가 반영됩니다. 장애가 발생하면 상태 열에 빨간색 X 가 표시됩니다. 마우스를 X 위에 놓아 실패 이유가 포함된 도구 설명을 표시합니다.
+상태 열에는 자격 증명의 현재 상태가 반영됩니다. 오류가 발생하면 상태 열에 빨간색 X 가 표시됩니다. 마우스를 X 위에 놓아 실패 이유가 포함된 도구 설명을 표시합니다.
 
 ## HSM 자격 증명 별칭 속성 업데이트 {#update-hsm-credential-alias-properties}
 

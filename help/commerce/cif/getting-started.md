@@ -4,7 +4,7 @@ description: AEM Content 및 Commerce 프로젝트를 배포하는 방법에 대
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 5%
@@ -57,7 +57,7 @@ CIF 추가 기능은에서 GraphQL 프록시 서블릿을 제공합니다. `/api
 
 다음 단계에 따라 CIF Cloud Service 구성을 통해 프로젝트에 대해 이 구성을 조정할 수 있습니다.
 
-1. AEM에서 도구 -> Cloud Service -> CIF 구성으로 이동합니다.
+1. AEM에서 도구 > Cloud Service > CIF 구성으로 이동합니다.
 
 2. 변경할 상거래 구성 선택
 

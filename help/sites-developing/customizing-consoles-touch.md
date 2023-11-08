@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '670'
 ht-degree: 25%
 
 ---
@@ -50,7 +50,7 @@ AEM은 콘솔(및 [페이지 작성 기능](/help/sites-developing/customizing-p
 >
 >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
 >
->1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
+>1. 필요한 항목 다시 만들기(존재하는 그대로) `/libs`) `/apps`
 >
 >1. 다음 범위 내에서 변경 `/apps`
 >

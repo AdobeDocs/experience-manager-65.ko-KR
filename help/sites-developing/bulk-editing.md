@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 38%
+source-wordcount: '414'
+ht-degree: 37%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 38%
    >
    >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
    >
-   >    1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs`) `/apps`
+   >    1. 필요한 항목 다시 만들기(존재하는 그대로) `/libs`) `/apps`
    >    1. 다음 범위 내에서 변경 `/apps`
 
 1. **모두 저장**&#x200B;을 선택하여 업데이트 내용을 유지합니다.

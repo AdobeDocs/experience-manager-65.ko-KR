@@ -1,20 +1,18 @@
 ---
 title: 적응형 양식 테마를 만들거나 사용자 지정하는 방법
-seo-title: How to create a theme for Adaptive Forms Core Components?
 description: BEM 사양을 사용하여 적응형 Forms 핵심 구성 요소에 대한 테마를 만들거나 사용자 지정하는 방법에 대해 알아봅니다
-seo-description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications
 keywords: 적응형 양식 핵심 구성 요소 테마 만들기, 새 테마 만들기, 테마 맞춤화, 새 테마 업로드, 양식에서 테마 사용, 테마 삭제, AEM 6.5 양식에서 테마 만들기
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1973'
-ht-degree: 7%
+source-wordcount: '1971'
+ht-degree: 8%
 
 ---
-
 
 # 적응형 양식 테마 만들기 또는 사용자 지정 {#introduction-to-theme}
 
@@ -62,7 +60,7 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 ## 테마 맞춤화 {#customize-a-theme-core-components-based-adaptive-forms}
 
-테마 맞춤화란 테마의 모양을 수정하고 개인화하는 프로세스를 말합니다. 테마를 사용자 지정할 때는 디자인 요소, 레이아웃, 색상, 타이포그래피 및 경우에 따라 기본 코드를 변경합니다. 이를 통해 테마가 제공하는 기본 구조와 기능을 유지하면서 웹 사이트 또는 애플리케이션에 고유하고 맞춤화된 디자인을 만들 수 있습니다.
+테마 맞춤화란 테마의 모양을 수정하고 개인화하는 프로세스를 말합니다. 테마를 사용자 지정할 때 해당 디자인 요소, 레이아웃, 색상, 타이포그래피 및 경우에 따라 기본 코드가 변경됩니다. 이를 통해 테마가 제공하는 기본 구조와 기능을 유지하면서 웹 사이트 또는 애플리케이션에 고유하고 맞춤화된 디자인을 만들 수 있습니다.
 
 >[!NOTE]
 >
@@ -189,8 +187,8 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 AEM 인스턴스에 테마를 배포하려면 클라이언트 라이브러리로 변환해야 합니다. 테마를 클라이언트 라이브러리로 변환하려면 다음 단계를 따르십시오.
 
 1. 명령 프롬프트 또는 터미널 창을 엽니다.
-1. 다음 위치로 이동 `<your-theme-sources>` 폴더를 삭제합니다. 예, `C:\aem-forms-theme-canvas`
-1. 다음 명령을 실행합니다.
+1. `<your-theme-sources>` 폴더로 이동합니다. 예, `C:\aem-forms-theme-canvas`
+1. 다음 명령을 실행합니다:
 
    ```
       npm run create-clientlib --category=adaptiveform.theme.[yourtheme]
@@ -339,4 +337,3 @@ The selected theme is applied to the Adaptive Form.
 * [적응형 Forms 기반의 핵심 구성 요소용 템플릿 만들기](template-editor.md)
 * [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-

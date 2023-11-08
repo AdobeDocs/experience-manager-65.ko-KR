@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3446'
+source-wordcount: '3447'
 ht-degree: 2%
 
 ---
@@ -243,7 +243,7 @@ newComponent (cq:Component)
 요구 사항에 따라 다음 중 하나를 수행할 수 있습니다.
 
 * 구성 요소 상속으로 주어진 Granite UI 필드 확장( `sling:resourceSuperType`)
-* 위젯 라이브러리 API(JS/CSS 상속)를 따라 기본 위젯 라이브러리(Granite UI의 경우 Coral UI임)에서 주어진 위젯을 확장합니다.
+* 위젯 라이브러리 API(JS/CSS 상속)를 따라 기본 위젯 라이브러리(Granite UI가 있는 경우 Coral UI임)에서 주어진 위젯을 확장합니다.
 
 #### 대화 상자 필드 액세스 {#access-to-dialog-fields}
 

@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2113'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Adobe Experience Manager(AEM)는 &quot;즉시 실행&quot;할 수 있도록 하�
 
 >[!NOTE]
 >
->AEM 구성은 간단합니다. 그러나 특정 변경 사항은 애플리케이션에 중대한 영향을 미칠 수 있습니다. 이러한 이유로 AEM 구성을 시작하기 전에 필요한 경험과 지식을 갖추고 있는지 확인하고 필요한 사항만 변경합니다. OSGi 콘솔을 통해 변경한 사항은 다음과 같습니다 **즉시** 실행 중인 시스템에 적용됩니다(다시 시작할 필요가 없음).
+>AEM 구성은 간단합니다. 그러나 특정 변경 사항은 애플리케이션에 중요한 영향을 미칠 수 있습니다. 이러한 이유로 AEM 구성을 시작하기 전에 필요한 경험과 지식을 갖추고 있는지 확인하고 필요한 사항만 변경합니다. OSGi 콘솔을 통해 변경한 사항은 다음과 같습니다 **즉시** 실행 중인 시스템에 적용됩니다(다시 시작할 필요가 없음).
 
 ## 기본 구성 고려 사항 {#primary-configuration-considerations}
 

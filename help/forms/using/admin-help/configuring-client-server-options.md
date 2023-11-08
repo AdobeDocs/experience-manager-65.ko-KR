@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '10228'
+source-wordcount: '10221'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ AEM forms는 환경에 맞게 사용자 정의할 수 있는 샘플 구성을 �
 >확장 인증은 Adobe Acrobat 릴리스 11.0.6 이상의 Apple Mac OS X에서 지원됩니다.
 
 1. 샘플 WAR 파일을 가져와 배포합니다. 애플리케이션 서버에 적합한 설치 안내서를 참조하십시오.
-1. Forms 서버에 기본 URL로 IP 주소 대신 정규화된 이름이 있고 HTTPS URL인지 확인하십시오. 다음을 참조하십시오 [서버 구성 설정](configuring-client-server-options.md#server-configuration-settings).
+1. Forms 서버에 IP 주소 대신 정규화된 이름이 기본 URL로 지정되어 있고 HTTPS URL인지 확인하십시오. 다음을 참조하십시오 [서버 구성 설정](configuring-client-server-options.md#server-configuration-settings).
 1. [서버 구성] 페이지에서 확장 인증을 사용으로 설정합니다. 다음을 참조하십시오 [서버 구성 설정](configuring-client-server-options.md#server-configuration-settings).
 1. 사용자 관리 구성 파일에 필요한 SSO 리디렉션 URL을 추가합니다. 다음을 참조하십시오 [확장 인증을 위한 SSO 리디렉션 URL 추가](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
@@ -154,7 +154,7 @@ Document Security는 암호화 알고리즘 및 라이센스를 사용하여 문
 
 오프라인 문서에 대한 위협을 줄이는 한 가지 방법은 특히 중요한 문서에 대한 오프라인 액세스를 허용하지 않는 것입니다. 다른 방법은 기본 키를 주기적으로 롤오버하는 것입니다. Document Security가 키를 롤오버하면 기존 키가 더 이상 정책으로 보호된 문서에 액세스할 수 없습니다. 예를 들어, 가해자가 도난된 노트북에서 보안 키를 가져오는 경우 해당 키를 사용하여 롤오버가 발생한 후 보호되는 문서에 액세스할 수 없습니다. 특정 기본 키가 손상된 것으로 의심되는 경우 키를 수동으로 롤오버할 수 있습니다.
 
-하지만 키 롤오버는 키 롤오버가 하나가 아닌 모든 기본 키에 영향을 준다는 사실도 알고 있어야 합니다. 또한 클라이언트가 오프라인 액세스를 위해 더 많은 키를 저장해야 하므로 시스템의 확장성이 줄어듭니다. 기본 키 롤오버 빈도는 20일입니다. 이 값을 14일보다 낮게 설정하지 않는 것이 좋습니다. 오프라인 문서를 볼 수 없고 시스템 성능에 영향을 줄 수 있기 때문입니다.
+그러나 키 롤오버는 하나만 영향을 미치는 것이 아니라 모든 기본 키에 영향을 줍니다. 또한 클라이언트가 오프라인 액세스를 위해 더 많은 키를 저장해야 하므로 시스템의 확장성이 줄어듭니다. 기본 키 롤오버 빈도는 20일입니다. 이 값을 14일보다 낮게 설정하지 않는 것이 좋습니다. 오프라인 문서를 볼 수 없고 시스템 성능에 영향을 줄 수 있기 때문입니다.
 
 다음 예제에서 Key1은 두 개의 기본 키 중 이전 키이고 Key2는 최신 키입니다. [롤오버 키 지금] 단추를 처음 클릭하면 Key1이 유효하지 않게 되고 새로운 유효한 기본 키(Key3)가 생성됩니다. 사용자가 문서 보안과 동기화할 때 일반적으로 보호된 문서를 온라인으로 열어 키3을 얻습니다. 그러나 사용자는 정책에 지정된 최대 오프라인 임대 기간에 도달할 때까지 문서 보안과 동기화하지 않아도 됩니다. 첫 번째 키 롤오버 후에도 오프라인으로 남아 있는 사용자는 최대 오프라인 임대 기간에 도달할 때까지 Key3로 보호된 문서를 포함하여 오프라인 문서를 계속 열 수 있습니다. [롤오버 키 지금] 단추를 두 번 클릭하면 Key2가 유효하지 않게 되고 Key4가 만들어집니다. 두 개의 키 롤오버 동안 오프라인 상태를 유지하는 사용자는 문서 보안과 동기화하기 전까지 Key3 또는 Key4로 보호된 문서를 열 수 없습니다.
 

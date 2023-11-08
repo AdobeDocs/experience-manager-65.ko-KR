@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '937'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ AEM Brackets Extension의 주요 기능은 다음과 같습니다.
 
 또한 Brackets에는 AEM 프론트엔드 개발자에게 유용한 기능이 많이 포함되어 있습니다.
 
-* 레이어, 측정, 색상, 글꼴, 텍스트 등과 같은 PSD 파일에서 정보를 추출하기 위해 Photoshop 파일을 지원합니다.
+* Photoshop 파일은 레이어, 측정, 색상, 글꼴, 텍스트 등과 같은 PSD 파일에서 정보를 추출하도록 지원합니다.
 * 코드에서 추출된 정보를 쉽게 재사용하기 위해 PSD에서 코드 힌트를 얻습니다.
 * LESS 및 SCSS와 같은 CSS 전처리기 지원.
 * 또한 보다 구체적인 요구 사항을 충족하는 수백 개의 추가 확장 기능을 제공합니다.

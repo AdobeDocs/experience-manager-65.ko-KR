@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Workbench에서 생성된 애플리케이션을 임포트하고 관리하려면 
 
    오른쪽의 속성 탭에는 선택한 CRX 노드의 속성이 표시됩니다.
 
-   다음 **syncState** 속성은 AEM forms 서버와 CRX 저장소 간의 데이터 동기화 상태를 나타냅니다. 가져오기 프로세스가 시작되면 즉시 이 상태는 0으로 설정됩니다. 이 상태는 데이터가 현재 동기화되지 않았음을 나타냅니다. 데이터가 동기화되면 상태는 1로 설정됩니다.
+   다음 **syncState** 속성은 AEM Forms 서버와 CRX 저장소 간의 데이터 동기화 상태를 나타냅니다. 가져오기 프로세스가 시작되면 즉시 이 상태는 0으로 설정됩니다. 이 상태는 데이터가 현재 동기화되지 않았음을 나타냅니다. 데이터가 동기화되면 상태는 1로 설정됩니다.
 
 ## 애플리케이션 배포 {#deploy-an-application}
 

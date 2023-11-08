@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2689'
+source-wordcount: '2688'
 ht-degree: 2%
 
 ---
@@ -134,7 +134,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
    <td>의 모든 명시적 경로 참조
     <code>
      custom
-    </code> 이전 위치에 대한 코드는 새 위치도 고려해야 합니다. 이 코드는 AEM Workflow API를 사용하도록 리팩터링하는 것이 좋습니다.</td>
+    </code> 이전 위치에 대한 코드도 새 위치를 고려해야 합니다. 이 코드는 AEM Workflow API를 사용하도록 리팩터링하는 것이 좋습니다.</td>
   </tr>
  </tbody>
 </table>

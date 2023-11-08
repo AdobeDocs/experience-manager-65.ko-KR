@@ -1,16 +1,14 @@
 ---
 title: 모바일 애플리케이션 작성
 description: AEM Mobile Dashboard를 사용하면 모바일 애플리케이션을 생성, 빌드 및 배포하고 애플리케이션 메타데이터를 생성, 삭제 및 편집할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
-uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -67,7 +65,7 @@ AEM Sites 내에서 동일한 작업을 수행하는 것과 거의 동일한 방
 
 페이지 콘텐츠 관리 타일을 통해 콘텐츠를 추가하거나 수정한 후에는 콘텐츠 릴리스 업데이트를 통해 이러한 변경 사항을 고객에게 푸시할 수 있습니다.
 
-콘텐츠 패키지를 사용하면 AEM 앱 작성자는 AEM에서 페이지 콘텐츠를 관리하고 개발 팀이 PhoneGap Shell 애플리케이션(즉, 앱 프레임워크 또는 인프라)을 변경한 다음 개발자가 다양한 스토어에 배포용으로 다시 제출하도록 등록할 필요 없이 그러한 변경 사항을 고객에게 신속하게 푸시할 수 있습니다.
+콘텐츠 패키지를 사용하면 AEM 앱 작성자가 AEM에서 페이지 콘텐츠를 관리하고 개발 팀이 PhoneGap Shell 애플리케이션(즉, 앱 프레임워크 또는 인프라)을 변경한 다음 개발자가 다양한 스토어에 배포용으로 다시 제출하도록 등록할 필요 없이 이러한 변경 사항을 고객에게 신속하게 푸시할 수 있습니다.
 
 콘텐츠 패키지는 각 업데이트에 대해 콘텐츠 릴리스 패키지로 간주되는 ZIP 파일을 만듭니다. 이러한 패키지에는 앱을 렌더링하는 동안 생성된 html 리소스 및 html 페이지가 포함되어 있으며 지능적으로 마지막 업데이트 이후 수정된 파일만 패키징할 수 있습니다.
 

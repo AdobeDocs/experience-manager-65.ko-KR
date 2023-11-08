@@ -1,20 +1,16 @@
 ---
 title: 페이지 비교
-seo-title: Page Diff
 description: 페이지 비교 기능을 사용하면 두 페이지를 둘 사이의 차이점이 강조 표시된 상태로 편리하게 나란히 비교할 수 있습니다.
-seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
-uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 92%
+source-wordcount: '570'
+ht-degree: 86%
 
 ---
 
@@ -90,7 +86,7 @@ ht-degree: 92%
 
 페이지 비교 시 차이점이 예상대로 감지되지 않을 수 있습니다.
 
-* 버전과 론치를 비교할 때, 이동 경로, 메뉴, 제품 목록 또는 로고(콘텐츠를 렌더링하기 위해 사이트 구조에 의존하는 구성 요소)와 같은 동적 구성 요소는 고려되지 않습니다.
+* 버전과 론치를 비교할 때, 탐색 표시, 메뉴, 제품 목록 또는 로고(콘텐츠를 렌더링하기 위해 사이트 구조에 의존하는 구성 요소)와 같은 동적 구성 요소는 고려되지 않습니다.
 * 버전의 경우 비교 기능을 사용하면 액세스 제어 정책 및 Live Copy 관계가 다시 생성되지 않습니다.
 * 페이지가 이동되면 이동 전에 만든 버전으로 더 이상 다른 작업을 수행할 수 없습니다.
 

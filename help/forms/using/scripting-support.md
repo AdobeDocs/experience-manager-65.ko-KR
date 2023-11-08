@@ -11,9 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3888'
+source-wordcount: '3887'
 ht-degree: 6%
 
 ---
@@ -117,7 +117,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   <tr>
    <td><code>title</code></td>
    <td>문서의 제목을 지정합니다. 클라이언트 응용 프로그램에만 사용할 수 있습니다.</td>
-   <td>PDF forms의 경우처럼 양식 HTML 제목 대신, 양식 메타데이터 문서의 제목을 반환합니다.</td>
+   <td>PDF forms이 있는 것처럼 양식 HTML 제목 대신 양식 메타데이터 문서의 제목을 반환합니다.</td>
   </tr>
   <tr>
    <td><code>version</code></td>

@@ -9,9 +9,9 @@ docset: aem65
 feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6036'
+source-wordcount: '6035'
 ht-degree: 3%
 
 ---
@@ -533,7 +533,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 >
 이 시점에서 하이퍼링크가 설정된 웹 페이지만 사용하여 인터랙티브를 추가했다면 완료됩니다.
 >
-그러나 빠른 보기를 트리거하기 위해 대화형 활동을 추가한 경우 대화형 비디오 옆에 있는 썸네일은 표시용으로만 사용되며 기존 빠른 보기와 아직 통합되지 않았습니다. 이러한 경우 이제 대화형 비디오를 웹 사이트의 기존 빠른 보기와 통합해야 합니다.
+그러나 빠른 보기를 트리거하기 위해 대화형 활동을 추가한 경우 대화형 비디오 옆에 있는 썸네일은 표시용으로만 사용되며 기존 빠른 보기와 아직 통합되지 않았습니다. 이 경우 대화형 비디오를 웹 사이트의 기존 빠른 보기와 통합해야 합니다.
 
 **예**
 

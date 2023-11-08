@@ -1,18 +1,14 @@
 ---
 title: AEM Forms 작업 영역 작업
-seo-title: Working with AEM Forms workspace
 description: 프로세스 워크플로에 대한 이 빠른 개요를 통해 AEM Forms 작업 영역을 시작하십시오.
-seo-description: Get started with AEM Forms workspace with this quick overview of the process workflows.
-uuid: 36381e7b-1533-459c-80de-92e806a49cd5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -51,7 +47,7 @@ AEM Forms 작업 영역을 사용하여 다음 작업을 수행할 수 있습니
 
 Flex Workspace는 AEM Forms 고객에게 지원되지 않습니다. Flex 작업 영역을 사용하는 모든 고객은 AEM Forms 작업 영역으로 이동해야 합니다.
 
-AEM Forms 작업 영역에서 XDP 양식과 연결된 기본 작업 프로필의 기본 렌더링 및 제출 서비스가 변경되고 새 서비스가 도입되었습니다. 자세한 내용은 [새로운 렌더링 및 제출 서비스](/help/forms/using/new-render-submit-service.md). XDP 양식에서 작동하는 기존 프로세스를 마이그레이션하여 이러한 서비스를 사용하려면 다음을 수행할 수 있습니다. [다음 단계](new-render-submit-service.md).
+AEM Forms 작업 영역에서 XDP 양식과 연결된 기본 작업 프로필의 기본 렌더링 및 제출 서비스가 변경되고 새 서비스가 도입되었습니다. 자세한 내용은 [새로운 렌더링 및 제출 서비스](/help/forms/using/new-render-submit-service.md). XDP 양식에서 작동하는 기존 프로세스를 마이그레이션하고 이러한 서비스를 사용하려면 다음을 수행할 수 있습니다. [다음 단계](new-render-submit-service.md).
 
 **AEM Forms Workspace를 사용하여 Flex Workspace 사용자 지정 매핑**
 

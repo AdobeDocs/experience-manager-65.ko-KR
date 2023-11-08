@@ -2,7 +2,7 @@
 title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 92%
@@ -28,7 +28,7 @@ ht-degree: 92%
 <!--
 ## Enabling Content Fragment Models {#enabling-content-fragment-models}
 
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](/help/assets/content-fragments/assets/cfm-conf-01.png)
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 콘텐츠 조각 모델 만들기 {#creating-content-fragment-models}
 
-그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. 이 작업은 도구 -> 에셋 -> 콘텐츠 조각 모델에서 수행할 수 있습니다.
+그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. 이 작업은 도구 > 에셋 > 콘텐츠 조각 모델에서 수행할 수 있습니다.
 
 ![도구의 콘텐츠 조각 모델](assets/cfm-tools.png)
 

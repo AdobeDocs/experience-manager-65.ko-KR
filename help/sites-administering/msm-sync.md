@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2694'
 ht-degree: 39%
 
 ---
@@ -320,7 +320,7 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 
 일부 속성 및 노드 유형은 기본적으로 제외되며, 이들은 **제외된 페이지 속성** 아래에 있는 **CQ MSM 콘텐츠 업데이트 작업**&#x200B;의 OSGi 구성에 정의되어 있습니다.
 
-기본적으로 다음 정규 표현식과 일치하는 속성은 롤아웃 시 제외됩니다(즉 업데이트되지 않음).
+기본적으로 다음 정규 표현식과 일치하는 속성은 롤아웃 시 제외됩니다(즉, 업데이트되지 않음).
 
 ![CQ MSM 콘텐츠 업데이트 작업](assets/chlimage_1.png)
 

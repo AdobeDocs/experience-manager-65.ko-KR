@@ -2,10 +2,10 @@
 title: GraphQL 쿼리 최적화
 description: Headless 콘텐츠 전달을 위해 Adobe Experience Manager as a Cloud Service에서 콘텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법에 대해 알아봅니다.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 60%
+source-wordcount: '1964'
+ht-degree: 58%
 
 ---
 
@@ -177,10 +177,10 @@ JCR 필터(쿼리 제한 형식)를 적용한 후에 AEM 필터링을 위해 결
 
 GraphQL 표준인 페이지 매김을 사용하여 응답을 청크로 세분화함으로써, 결과 세트가 큰 복잡한 쿼리의 응답 시간을 향상시킬 수 있습니다.
 
-AEM에서 GraphQL은 2가지 유형의 페이지 매김을 지원합니다.
+AEM의 GraphQL은 두 가지 유형의 페이지 매김을 지원합니다.
 
-* [제한/오프셋 기반 페이지 매김](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
-목록 쿼리에 사용됩니다. 이 페이지 매김은 `List`로 끝납니다(예: `articleList`).
+* [limit/offset 기반 페이지 매김](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
+목록 쿼리에 사용되며 다음으로 끝납니다. `List`; 예, `articleList`.
 이 페이지 매김을 사용하려면 반환할 첫 번째 항목의 위치(`offset`)와 반환할 항목 수(`limit` 또는 페이지 크기)를 제공해야 합니다.
 
 * [커서 기반 페이지 매김](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after)(`first` 및 `after`로 표시)

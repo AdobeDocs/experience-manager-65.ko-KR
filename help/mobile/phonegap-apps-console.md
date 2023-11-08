@@ -1,16 +1,14 @@
 ---
 title: 앱 콘솔을 사용하여 앱 만들기 및 편집
 description: 이 페이지를 따라 앱 콘솔을 사용하여 앱을 만들고 편집하는 방법에 대해 알아보십시오.
-uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2687'
+source-wordcount: '2685'
 ht-degree: 1%
 
 ---

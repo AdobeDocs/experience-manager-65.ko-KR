@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2168'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ ht-degree: 0%
 
 ## 정책으로 보호된 문서에 표지 추가 {#add-cover-page-to-policy-protected-documents}
 
-대부분의 Adobe PDF 뷰어가 아닌 경우 문서 보안으로 보호된 문서를 열면 첫 페이지가 빈 페이지로 표시되거나 문서를 열지 않고 응용 프로그램이 중단됩니다.
+대부분의 Adobe PDF 뷰어가 아닌 경우, 문서 보안으로 보호된 문서를 열면 첫 페이지가 빈 페이지로 표시되거나 문서를 열지 않고 응용 프로그램이 중단됩니다.
 
 페이지 0(래퍼 문서) 지원을 사용하여 Adobe PDF이 아닌 사용자가 보호된 문서를 열고 문서에 표지를 표시하도록 할 수 있습니다.
 

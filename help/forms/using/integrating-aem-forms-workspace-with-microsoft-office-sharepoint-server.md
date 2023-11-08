@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 8990b422-f4f6-4080-871a-33cdf7ca6455
 docset: aem65
 exl-id: d080932f-d5fb-482d-9329-62da5df10362
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -58,13 +58,13 @@ AEM Forms 작업 영역을 웹 파트에 통합하려면 다음 단계를 수행
 
 1. 페이지 뷰어 페이지에서 다음 작업을 수행합니다.
 
-   1. 링크 상자에 다음과 같은 AEM Forms 작업 영역의 URL을 입력합니다. `https://[AEM_forms_Server]:8080/lc/ws` 위치 `[AEM_forms_Server]` AEM forms 서버의 IP 또는 이름을 나타냅니다.
+   1. 링크 상자에 다음과 같은 AEM Forms 작업 영역의 URL을 입력합니다. `https://[AEM_forms_Server]:8080/lc/ws` 위치 `[AEM_forms_Server]` 는 AEM Forms 서버의 IP 또는 이름을 나타냅니다.
    1. 클릭 **모양** 전체 Workspace 사용자 인터페이스를 볼 수 있도록 높이, 너비 및 제목을 수정하십시오. 예를 들어 높이와 너비를 각각 6인치와 11인치로 설정할 수 있습니다.
    1. 클릭 **테스트 링크**. 작업 영역이 표시된 새 웹 브라우저 창이 나타납니다.
    1. (선택 사항) **레이아웃** 웹 파트에서 작업 영역의 레이아웃을 수정할 수 있습니다.
    1. (선택 사항) **고급** 또한 설명 및 웹 파트에서 작업 영역을 최소화하거나 닫을 수 있는지 여부와 같은 다른 설정을 수정합니다.
 
-      클릭 **적용**.
+      **적용**&#x200B;을 클릭합니다.
 
 1. 클릭 **편집 모드 종료** 작업 영역에 액세스할 수 있는지 확인합니다.
 

@@ -3,10 +3,10 @@ title: 번역 모범 사례
 description: 번역 프로젝트를 시작하고 실행하는 데 도움이 되는 Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 모범 사례를 확인하십시오.
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 97%
+source-wordcount: '836'
+ht-degree: 96%
 
 ---
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
@@ -51,9 +51,9 @@ ht-degree: 0%
 
 **컴파일 시간:** 컴파일 시 소요된 시간입니다.
 
-**라이브 스레드 수:** 현재 AEM Forms 시스템에 있는 총 스레드 수입니다.
+**라이브 Threads 수:** 현재 AEM Forms 시스템에 있는 총 스레드 수입니다.
 
-**최대 스레드 수:** 시스템에 기록된 최대 라이브 스레드 수입니다.
+**Threads 피크 수:** 시스템에 기록된 최대 라이브 스레드 수입니다.
 
 **로드된 클래스 수:** JVM으로 로드된 클래스 수입니다.
 

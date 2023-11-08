@@ -9,9 +9,9 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 1%
     </tbody>
    </table>
 
-1. 현재 사용 중인 뷰어는 빠른 보기를 사용하는 방법을 알고 있어야 합니다.
+1. 사용 중인 뷰어는 빠른 보기를 사용하는 방법을 알고 있어야 합니다.
 
    뷰어는 라는 핸들러를 사용합니다. `QuickViewActive`.
 
@@ -109,7 +109,7 @@ ht-degree: 1%
    * 대화형 이미지 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 대화형 비디오 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. 이제 를 구성해야 합니다. `quickViewActivate` 핸들러입니다.
+1. 다음을 구성해야 합니다. `quickViewActivate` 핸들러입니다.
 
    다음 `quickViewActivate` 처리기는 뷰어의 빠른 보기를 제어합니다. 처리기에는 빠른 보기와 함께 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 빠른 보기에 설정된 SKU 변수와 샘플에 대한 매핑을 제공합니다 `loadQuickView` 함수 호출.
 
@@ -148,9 +148,10 @@ ht-degree: 1%
    * 빠른 보기에 포함된 모든 추가 변수를 매핑합니다.
 
       * 업데이트 `loadQuickView(sku,*var1*,*var2*)` 변수를 더 추가하는 경우 를 호출합니다.
+
    * 단순 만들기 `loadQuickView` () 함수가 표시기를 벗어났습니다.
 
-      예를 들어 다음 은 브라우저 콘솔에 SKU 값을 기록합니다.
+     예를 들어 다음 은 브라우저 콘솔에 SKU 값을 기록합니다.
 
    ```xml
    function loadQuickView(sku){
@@ -160,9 +161,7 @@ ht-degree: 1%
 
    * 웹 서버에 테스트 HTML 페이지를 업로드하고 엽니다.
 
-      Quickview의 변수가 매핑되고 함수 호출이 있는 경우 브라우저 콘솔은 제공된 샘플 함수를 사용하여 브라우저 콘솔에 변수 값을 기록합니다.
-
-
+     Quickview의 변수가 매핑되고 함수 호출이 있는 경우 브라우저 콘솔은 제공된 샘플 함수를 사용하여 브라우저 콘솔에 변수 값을 기록합니다.
 
 1. 이제 함수를 사용하여 빠른 보기에서 간단한 팝업을 호출할 수 있습니다. 다음 예제에서는 `DIV` 팝업용
 1. 팝업 스타일 지정 `DIV` 다음 방식으로. 원하는 대로 나만의 스타일을 추가합니다.

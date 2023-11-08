@@ -2,10 +2,10 @@
 title: 컨텐츠 페이지 게시
 description: Adobe Experience Manager 6.5에서 컨텐츠 페이지를 게시하는 방법을 알아봅니다.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 74%
+source-wordcount: '1662'
+ht-degree: 75%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->빠른 게시는 약식 게시입니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
+>빠른 게시는 약식 공개가 아닙니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
 
 #### 게시 관리 {#manage-publication}
 

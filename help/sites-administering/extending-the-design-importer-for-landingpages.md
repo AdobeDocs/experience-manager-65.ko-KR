@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3493'
 ht-degree: 0%
 
 ---
@@ -598,4 +598,4 @@ height="116" /></div>Some Text </p>
 
 >[!NOTE]
 >
->또한 디자이너는 내부에 있는 코드만 **id=cqcanvas** 태그가 가져오기에 의해 인식됩니다. 그렇지 않으면 디자인이 유지되지 않습니다.
+>디자이너는 **id=cqcanvas** 태그가 가져오기에 의해 인식됩니다. 그렇지 않으면 디자인이 유지되지 않습니다.

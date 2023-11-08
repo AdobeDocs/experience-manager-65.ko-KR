@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '6166'
+source-wordcount: '6163'
 ht-degree: 0%
 
 ---
@@ -315,7 +315,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 다음 표는 dpi로 측정한 일반적인 프린터 유형과 해상도, lpi(lines per inch)로 측정한 기본 화면 결정 및 ppi(pixels per inch)로 측정한 이미지의 리샘플링 해상도를 보여 줍니다. 예를 들어 600dpi 레이저 프린터로 인쇄하는 경우 이미지를 재샘플링할 해상도로 170을 입력합니다.
 
-**이미지** 색상, 회색 음영 및 단색 이미지에 대해 압축 및 재샘플링 옵션을 지정하려면 [이미지]를 선택합니다. 파일 크기와 이미지 품질 간의 적절한 균형을 찾기 위해 이 옵션을 시험해 볼 수 있습니다.색상 및 회색 음영 이미지의 해상도 설정은 파일이 인쇄되는 선 화면 결정의 1.5~2배여야 합니다. 단색 이미지의 해상도는 출력 장치와 동일해야 하지만 1500dpi 이상의 해상도로 단색 이미지를 저장하면 이미지 품질이 눈에 띄게 향상되지 않고 파일 크기가 증가한다는 점에 유의하십시오. 지도와 같이 확대될 이미지는 더 높은 해상도가 필요할 수 있습니다.
+**이미지** 색상, 회색 음영 및 단색 이미지에 대해 압축 및 재샘플링 옵션을 지정하려면 [이미지]를 선택합니다. 파일 크기와 이미지 품질 간의 적절한 균형을 찾기 위해 이 옵션을 시험해 볼 수 있습니다.색상 및 회색 음영 이미지의 해상도 설정은 파일이 인쇄되는 선 화면 결정의 1.5~2배여야 합니다. 단색 이미지의 해상도는 출력 장치와 동일해야 하지만 단색 이미지를 1500dpi 이상의 해상도로 저장하면 이미지 품질이 눈에 띄게 향상되지 않고 파일 크기가 증가합니다. 지도와 같이 확대될 이미지는 더 높은 해상도가 필요할 수 있습니다.
 
 >[!NOTE]
 >

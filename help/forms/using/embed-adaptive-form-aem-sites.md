@@ -10,20 +10,20 @@ topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1162'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
 # AEM sites 페이지에 적응형 양식 또는 대화형 통신 포함 {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -45,7 +45,7 @@ AEM Forms은 사이트 페이지에 추가할 수 있는 구성 요소를 제공
 
 편집 가능한 템플릿을 사용하는 AEM sites 페이지에 적응형 양식 또는 대화형 통신을 포함하려면 AEM 양식 구성 요소가 관련 템플릿에 허용된 구성 요소로 구성되어 있는지 확인하십시오. 자세한 내용은 **정책 및 속성(레이아웃 컨테이너)** 의 섹션 [페이지 템플릿 만들기](/help/sites-authoring/templates.md).
 
-정적 템플릿을 사용하는 사이트 페이지의 경우 사이트 페이지의 단락 시스템에서 구성해야 합니다. 자세한 내용은 [디자인 모드에서 구성 요소 구성](/help/sites-authoring/default-components-designmode.md)을 참조하십시오.
+정적 템플릿을 사용하는 사이트 페이지가 있는 경우 사이트 페이지의 단락 시스템에서 구성해야 합니다. 자세한 내용은 [디자인 모드에서 구성 요소 구성](/help/sites-authoring/default-components-designmode.md)을 참조하십시오.
 
 ## 적응형 양식 또는 대화형 통신 포함 {#af-component}
 

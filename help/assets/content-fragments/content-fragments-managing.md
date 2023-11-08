@@ -4,9 +4,9 @@ description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되�
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1715'
 ht-degree: 89%
 
 ---
@@ -272,7 +272,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 조각과 콘텐츠 연결 {#associating-content-with-your-fragment}
 
-조각과 [콘텐츠를 연결](/help/assets/content-fragments/content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 콘텐츠 페이지에 추가될 때 자산(즉, 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
+조각과 [콘텐츠를 연결](/help/assets/content-fragments/content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 콘텐츠 페이지에 추가될 때 자산(예: 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
 
 ## 조각의 메타데이터(속성) 보기 및 편집 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 

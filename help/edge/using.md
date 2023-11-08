@@ -2,10 +2,10 @@
 title: Edge Delivery Services 사용
 description: Edge Delivery Services 사용 (EDS)
 exl-id: 6c9178b0-c8f3-4fc7-8614-8e71ffc2f0b8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 97%
+source-wordcount: '608'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ Edge Delivery를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작�
 * 문서 기반 작성(예: Microsoft Word 또는 Google Docs) - [자세한 내용은 이 링크 참조](https://www.hlx.live/docs/authoring).
 * 페이지 편집기/Universal Editor - Adobe 영업 담당자에게 문의하십시오.
 
-문서 기반 작성의 경우 Microsoft Word 및 Google Docs 등 다양한 소스로 작업할 수 있습니다. 이러한 소스의 문서는 웹 사이트의 페이지가 됩니다. 제목, 목록, 이미지, 글꼴 요소 및 비디오는 모두 초기 소스에서 내 웹 사이트로 전송할 수 있습니다. SEO 용도로 메타데이터를 추가하거나 블록을 사용하여 구조화된 콘텐츠로 작업하고 기능을 추가할 수 있습니다.
+문서 기반 작성은 Microsoft Word 및 Google Docs와 같은 다양한 소스에서 작업할 수 있습니다. 이러한 소스의 문서는 웹 사이트의 페이지가 됩니다. 제목, 목록, 이미지, 글꼴 요소 및 비디오는 모두 초기 소스에서 내 웹 사이트로 전송할 수 있습니다. SEO 용도로 메타데이터를 추가하거나 블록을 사용하여 구조화된 콘텐츠로 작업하고 기능을 추가할 수 있습니다.
 
 ## 게시 {#publishing-edge}
 

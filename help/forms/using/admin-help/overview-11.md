@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c303e967-944d-40b0-96ca-f91e2f42a0d0
 exl-id: 05f8b430-141e-4921-98b1-a0d8f636e478
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -34,6 +34,6 @@ ht-degree: 0%
 
 상태 모니터 웹 페이지는 Gemfire API를 통해 수집된 통계로 채워집니다. 이 API는 클러스터의 모든 노드를 자동으로 검색합니다. 또한 프록시 서버나 로드 밸런서에서 통계를 수집할 때 발생하는 보안 문제도 해결합니다. Java 옵션을 사용하여 상태 모니터를 미세 조정할 수 있으므로 AEM Forms 환경의 성능에 미치는 영향을 줄일 수 있습니다. (참조: [상태 모니터 성능 미세 조정](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance).)
 
-**액세스 상태 모니터**
+**상태 모니터 액세스**
 
 1. 관리 콘솔에서 페이지의 오른쪽 상단에 있는 상태 모니터 를 클릭합니다.

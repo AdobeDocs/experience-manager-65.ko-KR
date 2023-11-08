@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '4143'
 ht-degree: 0%
@@ -67,13 +67,13 @@ Forms 서비스는 웹 브라우저의 HTTP 요청에 대한 응답으로 양식
 >
 >HTML 양식에서 디지털 서명 HTML 단추의 모양을 사용자 지정하려면 fscdigsig.css 파일(adobe-forms-ds.ear > adobe-forms-ds.war 파일 내)에서 다음 속성을 변경해야 합니다.
 
-**.fsc-ds-ssb**: 이 스타일시트는 빈 서명 필드의 경우에 적용할 수 있습니다.
+**.fsc-ds-ssb**: 이 스타일시트는 빈 서명 필드가 있는 경우에 적용할 수 있습니다.
 
-**.fsc-ds-ssv**: 이 스타일시트는 유효한 서명 필드의 경우에 적용할 수 있습니다.
+**.fsc-ds-ssv**: 유효한 서명 필드가 있는 경우 이 스타일시트를 적용할 수 있습니다.
 
-**.fsc-ds-ssc**: 이 스타일시트는 유효한 서명 필드이지만 데이터가 변경된 경우에 적용할 수 있습니다.
+**.fsc-ds-ssc**: 유효한 기호 필드가 있지만 데이터가 변경된 경우 이 스타일시트를 적용할 수 있습니다.
 
-**.fsc-ds-ssi**: 이 스타일시트는 잘못된 서명 필드의 경우에 적용할 수 있습니다.
+**.fsc-ds-ssi**: 잘못된 서명 필드가 있는 경우 이 스타일시트를 적용할 수 있습니다.
 
 **.fsc-ds-popup-bg**: 이 스타일시트의 속성이 사용되고 있지 않습니다.
 

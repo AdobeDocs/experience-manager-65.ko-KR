@@ -4,9 +4,9 @@ description: 프록시는 [!DNL Experience Manager] 프록시 작업자를 사�
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] 프록시를 사용하여 특정 작업에 대한 처리를 분산합니다.
 
-프록시는 프록시 작업자를 작업 처리 및 결과 생성을 담당하는 처리자로 사용하는 특정(및 경우에 따라 별도의) Experience Manager 인스턴스입니다. 프록시 작업자는 매우 다양한 작업에 사용할 수 있습니다. 의 경우에는 [!DNL Assets] 프록시 자산 내에서 렌더링할 자산을 로드하는 데 사용할 수 있습니다. 예를 들어 [IDS 프록시 작업자](indesign.md) 다음 사용: [!DNL Adobe InDesign] 에셋에서 사용할 파일을 처리하는 서버입니다.
+프록시는 프록시 작업자를 작업 처리 및 결과 생성을 담당하는 처리자로 사용하는 특정(및 경우에 따라 별도의) Experience Manager 인스턴스입니다. 프록시 작업자는 매우 다양한 작업에 사용할 수 있습니다. 다음 사항이 있는 경우 [!DNL Assets] 프록시 자산 내에서 렌더링할 자산을 로드하는 데 사용할 수 있습니다. 예를 들어 [IDS 프록시 작업자](indesign.md) 다음 사용: [!DNL Adobe InDesign] 에셋에서 사용할 파일을 처리하는 서버입니다.
 
 프록시가 별개인 경우 [!DNL Experience Manager] 인스턴스 를 사용하면 [!DNL Experience Manager] 작성 인스턴스. 기본적으로, [!DNL Assets] 은 동일한 JVM(프록시를 통해 외부화됨)에서 자산 처리 작업을 실행하여 의 로드를 줄입니다. [!DNL Experience Manager] 작성 인스턴스.
 

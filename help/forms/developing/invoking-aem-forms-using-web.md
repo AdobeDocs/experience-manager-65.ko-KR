@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '9887'
 ht-degree: 0%
@@ -1735,4 +1735,4 @@ JAX-WS 도구(wsimport.exe)를 실행할 때 -를 사용하여 이 XML 파일을
 
 ### 잘못된 프록시 파일을 생성할 때 문자로 시작하는 서비스 {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
-Microsoft .Net 3.5 및 WCF를 사용하는 경우 일부 AEM Forms 생성 프록시 클래스의 이름이 잘못되었습니다. 이 문제는 IBMFilenetContentRepositoryConnector, IDPSschedulerService 또는 이름이 문자 I로 시작하는 다른 서비스에 대해 프록시 클래스를 만들 때 발생합니다. 예를 들어 IBMFileNetContentRepositoryConnector의 경우 생성된 클라이언트의 이름은 입니다. `BMFileNetContentRepositoryConnectorClient`. 생성된 프록시 클래스에서 편지 I이 누락되었습니다.
+Microsoft .Net 3.5 및 WCF를 사용하는 경우 일부 AEM Forms 생성 프록시 클래스의 이름이 잘못되었습니다. 이 문제는 IBMFilenetContentRepositoryConnector, IDPSschedulerService 또는 이름이 문자 I로 시작하는 다른 서비스에 대해 프록시 클래스를 만들 때 발생합니다. 예를 들어 IBMFileNetContentRepositoryConnector가 있는 경우 생성된 클라이언트의 이름은 입니다. `BMFileNetContentRepositoryConnectorClient`. 생성된 프록시 클래스에서 편지 I이 누락되었습니다.

@@ -2,17 +2,15 @@
 title: 구성 요소
 description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다.
 page-status-flag: de-activated
-uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 14%
+source-wordcount: '218'
+ht-degree: 27%
 
 ---
 
@@ -22,9 +20,9 @@ Adobe Experience Manager(AEM)에는 웹 사이트 작성자에게 포괄적인 �
 
 >[!CAUTION]
 >
->이 섹션에서는 표준 AEM 설치에서 즉시 사용할 수 있는 구성 요소에 대해서만 설명합니다.
+>이 섹션에서는 표준 AEM 설치 시 기본적으로 사용할 수 있는 구성 요소에 대해서만 설명합니다.
 >
->사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 정의했을 수 있습니다. 이들은 심지어 여기서 논의되는 구성 요소 중 일부와 동일한 이름을 가질 수 있다.
+>사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 정의했을 수 있습니다. 이러한 구성 요소는 여기서 설명한 구성 요소 중 일부와 이름이 같을 수도 있습니다.
 
 ## 구성 요소 - 주요 영역 {#components-major-areas}
 
@@ -32,11 +30,11 @@ Adobe Experience Manager(AEM)에는 웹 사이트 작성자에게 포괄적인 �
 
 * [페이지 작성을 위한 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   표준 페이지 콘텐츠를 만드는 데 사용되는 구성 요소는 주로 그룹에 포함됩니다 **일반**, **열** 및 **Forms**.
+  표준 페이지 콘텐츠를 만드는 데 사용되는 구성 요소는 주로 그룹에 포함됩니다 **일반**, **열** 및 **Forms**.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
-   AEM 내의 eCommerce 기능에는 **상거래** 그룹입니다. 실제 사용은 사용 중인 상거래 엔진에 따라 달라질 수 있습니다.
+  AEM 내의 eCommerce 기능에는 **상거래** 그룹입니다. 실제 사용은 사용 중인 상거래 엔진에 따라 달라질 수 있습니다.
 
 ## 디자인 모드를 사용하여 구성 요소 구성 {#using-design-mode-to-configure-components}
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Java™ 코드의 경우 AEM은 메시지 로깅을 위한 표준 API로 slf4j�
 * DEBUG: 처리에 대한 하위 수준 정보. 지원을 통해 문제를 디버깅할 때 유용합니다.
 * TRACE: 입력/종료 방법과 같은 최하위 레벨 정보입니다. 일반적으로 개발자만 사용합니다.
 
-JavaScript의 경우 *console.log* 는 개발 중에만 사용해야 하며 릴리스 전에 모든 로그 문을 제거해야 합니다.
+JavaScript가 있는 경우 *console.log* 는 개발 중에만 사용해야 하며 릴리스 전에 모든 로그 문을 제거해야 합니다.
 
 ### 화물 숭배 프로그래밍 방지 {#avoid-cargo-cult-programming}
 

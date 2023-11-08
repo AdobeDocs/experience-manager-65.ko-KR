@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2623'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 이메일 설정 구성 {#configuring-email-settings}
 
-AEM Forms 사용자 및 관리자에게 전자 메일 메시지를 보내는 Forms 서버에 대한 전자 메일 계정을 지정할 수 있습니다. 이러한 이메일 메시지는 사용자에게 완료해야 하는 작업을 알리고, 기한에 도달한 작업을 사용자에게 알리고, 발생하는 프로세스 오류를 관리자에게 알리는 데 사용됩니다.
+AEM Forms 사용자 및 관리자에게 이메일 메시지를 보내는 Forms 서버에 대한 이메일 계정을 지정할 수 있습니다. 이러한 이메일 메시지는 사용자에게 완료해야 하는 작업을 알리고, 기한에 도달한 작업을 사용자에게 알리고, 발생하는 프로세스 오류를 관리자에게 알리는 데 사용됩니다.
 
 AEM Forms와 사용자 간에 전자 메일 메시지를 보낼 수 있도록 하려면 전자 메일 설정 페이지에서 발신 전자 메일 설정을 구성합니다. 발신 전자 메일은 SMTP 서버를 사용해야 합니다.
 

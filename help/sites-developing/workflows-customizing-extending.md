@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3588'
+source-wordcount: '3589'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 2%
 >
 >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
 >
->1. 필요한 항목(예:에 존재하는 대로)을 다시 생성합니다. `/libs` 아래에 `/apps`
+>1. 필요한 항목 다시 만들기(존재하는 그대로) `/libs` 아래에 `/apps`
 >2. 다음 범위 내에서 변경 `/apps`
 
 다음 `/libs/cq/workflow/components/model/step` 구성 요소는 **프로세스 단계**, **참가자 단계**, 및 **동적 참가자 단계**, 이는 모두 다음 항목을 상속합니다.

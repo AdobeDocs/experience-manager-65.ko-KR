@@ -1,16 +1,12 @@
 ---
 title: 첨부 파일 추가
-seo-title: Adding attachments
 description: AEM Forms 앱에서 사진과 스크리블 메모를 작업에 주석으로 추가합니다
-seo-description: Add photographs and scribble notes as annotations to your task in the AEM Forms app
-uuid: 3d2738b4-fd43-44ec-8eaf-a2ad4b7e5af5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -34,6 +30,7 @@ AEM Forms 앱을 사용하면 AEM Forms JEE 서버와 동기화된 양식에 이
 >[!NOTE]
 >
 >한 사용자가 추가한 첨부 파일은 다른 AEM Forms 앱 사용자에게 표시됩니다. 다른 사용자는 사용자가 추가한 첨부 파일을 삭제할 수 없습니다.
+>
 
 ### 첨부 파일 화면 {#the-attachments-screen}
 
@@ -88,4 +85,4 @@ AEM Forms OSGi 서버와 동기화된 모바일 양식의 첨부 파일은 AEM F
 
 AEM Forms OSGi 서버에서 앱에 로드된 적응형 양식에 대해서는 양식 수준 첨부 파일이 지원되지 않습니다. 이미지 또는 텍스트 메모를 첨부하려면 작성할 때 양식의 필드 수준 첨부 파일을 활성화합니다. 필드의 구성 요소 브라우저에서 첨부 파일 구성 요소를 드래그 앤 드롭합니다.
 
-적응형 양식의 경우 기록 문서(DoR)에서 첨부 파일을 볼 수 있습니다. 다음을 참조하십시오. [XFA 이외의 적응형 양식에 대한 기록 문서 생성](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+적응형 양식이 있는 경우 기록 문서(DoR)에서 첨부 파일을 볼 수 있습니다. 다음을 참조하십시오. [XFA 이외의 적응형 양식에 대한 기록 문서 생성](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
 exl-id: f64efb06-815a-4608-ba1c-39e22f344ebb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
@@ -33,6 +33,6 @@ ht-degree: 0%
 
 ## 제품 관리 팁 {#product-administration-tips}
 
-GDS(전역 문서 저장소)를 효과적으로 사용합니다. 특히 Forms 서버의 GDS 디렉토리는 프로세스에서 AEM Forms의 일부인 서비스에 전달되는 파일을 저장하는 데 사용됩니다. 성능을 향상시키기 위해 대신 작은 문서는 메모리에 저장되고 데이터베이스에 유지됩니다.
+GDS(전역 문서 저장소)를 효과적으로 사용합니다. Forms 서버의 GDS 디렉토리는 특히 프로세스에서 AEM 양식의 일부인 서비스에 전달되는 파일을 저장하는 데 사용됩니다. 성능을 향상시키기 위해 대신 작은 문서는 메모리에 저장되고 데이터베이스에 유지됩니다.
 
 관리 콘솔은 메모리에 저장되고 데이터베이스에 지속되는 문서의 최대 크기를 구성하기 위한 기본 문서 최대 인라인 크기 속성을 표시합니다. (참조: [일반 AEM 양식 설정 구성](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) 이 속성을 낮은 값으로 설정하면 대부분의 문서가 데이터베이스가 아닌 GDS 디렉터리에서 유지됩니다. GDS 디렉토리에 저장되는 경우 더 이상 필요하지 않은 파일을 보다 쉽게 삭제할 수 있다는 이점이 있습니다.

@@ -1,18 +1,14 @@
 ---
 title: 서신 만들기
-seo-title: Create Correspondence
 description: 편지 템플릿을 만든 후에는 데이터, 컨텐츠 및 첨부 파일을 관리하여 AEM Forms에서 서신을 만드는 데 사용할 수 있습니다.
-seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48cf2b26-c9b4-4127-9ea0-1b36addbff60
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3849'
 ht-degree: 0%
 
 ---
@@ -261,7 +257,7 @@ ht-degree: 0%
    >
    >Mozilla Firefox 및 HTML 렌디션 유형을 사용하는 경우 편지를 병합된 PDF으로 미리 보려면 Acrobat 플러그인이 아닌 기본 브라우저 플러그인을 사용해야 합니다. 기본 브라우저 플러그인을 선택하려면 Mozilla Firefox의 설정으로 이동하고 컨텐츠 유형 PDF에 대해 Firefox에서 미리 보기 를 선택합니다.
 
-1. 병합된 PDF 미리보기가 만족스럽다면 을 누릅니다 **제출** 편지를 제출합니다. 또는 편지를 변경하려면 다음을 누르십시오. **미리 보기 종료** 를 클릭하여 편지의 서신 만들기 UI 미리보기로 돌아갑니다. 제출 을 탭할 때 게시 인스턴스에서 편지 인스턴스 관리 구성을 사용할 수 있는 경우 제출 편지 인스턴스가 생성됩니다.
+1. 병합된 PDF 미리보기가 만족스럽다면 을 누릅니다 **제출** 편지를 제출합니다. 또는 문자를 변경하려면 을 누릅니다 **미리 보기 종료** 를 클릭하여 편지의 서신 만들기 UI 미리보기로 돌아갑니다. 제출 을 탭할 때 게시 인스턴스에서 편지 인스턴스 관리 구성을 사용할 수 있는 경우 제출 편지 인스턴스가 생성됩니다.
 
    자세한 내용은 초안 저장 및 편지 인스턴스 제출의 초안 인스턴스 를 참조하십시오.
 

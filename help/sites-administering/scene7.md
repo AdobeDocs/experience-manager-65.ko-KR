@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5484'
+source-wordcount: '5483'
 ht-degree: 1%
 
 ---
@@ -383,7 +383,7 @@ Experience Manager 인스턴스가 Dynamic Media Classic을 통해 비디오 인
 
 1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service]**.
 1. Dynamic Media 제목 아래의 사용 가능한 구성에서 을 선택합니다. **[!UICONTROL dms7 (Dynamic Media]**).
-1. 다음 항목 선택 **[!UICONTROL 고급]** 탭에서 **[!UICONTROL 자동 업로드 활성화]** 확인란을 선택한 다음 을 선택합니다 **[!UICONTROL 확인]**. 이제 Dynamic Media Classic에 업로드를 포함하도록 DAM 자산 워크플로우를 구성해야 합니다.
+1. 다음 항목 선택 **[!UICONTROL 고급]** 탭에서 **[!UICONTROL 자동 업로드 활성화]** 확인란을 선택한 다음 을 선택합니다 **[!UICONTROL 확인]**. Dynamic Media Classic에 업로드를 포함하도록 DAM 에셋 워크플로를 구성해야 합니다.
 
    >[!NOTE]
    >
