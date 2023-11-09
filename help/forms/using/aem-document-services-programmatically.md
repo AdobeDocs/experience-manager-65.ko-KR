@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '6419'
 ht-degree: 1%
@@ -4460,7 +4460,7 @@ PDF Generator 서비스는 기본 파일 형식을 PDF으로 변환하는 API를
 
 ### GeneratePDF서비스 {#generatepdfservice}
 
-GeneratePDFService는 .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, (지원되지 않음).swf, .jpg, .bmp, .tif, .png, .html 및 기타 여러 파일 형식과 같은 다양한 파일 형식을 PDF으로 변환하는 API를 제공합니다. 또한 PDF을 다양한 파일 형식으로 내보내고 PDF을 최적화할 수 있는 API를 제공합니다. 이 서비스는 다음 API를 지원합니다.
+GeneratePDFService는 .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf(더 이상 사용되지 않음), .jpg, .bmp, .tif, .png, .html 및 기타 여러 파일 형식과 같은 다양한 파일 형식을 PDF으로 변환하는 API를 제공합니다. 또한 PDF을 다양한 파일 형식으로 내보내고 PDF을 최적화할 수 있는 API를 제공합니다. 이 서비스는 다음 API를 지원합니다.
 
 * **createPDF**: 지원되는 파일 유형을 PDF 문서로 변환합니다. Microsoft Word, Microsoft PowerPoint, Microsoft Excel 및 Microsoft 프로젝트와 같은 파일 형식을 지원합니다. 이러한 애플리케이션 외에도 모든 서드파티 범용 PDF 생성 애플리케이션 유형을 API에 연결할 수도 있습니다.
 * **exportPDF**: PDF 문서를 지원되는 파일 형식으로 변환합니다. 메서드는 PDF을 입력으로 받아들이고 PDF 콘텐츠를 지정된 파일 형식 형식으로 내보냅니다. 캡슐화된 PostScript( eps), HTML 3.2( htm, html), CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel 통합 문서( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), 리치 텍스트 형식( rtf), 텍스트(액세스 가능)( txt), 텍스트(일반) HTML( tif, tiff), XML 1.0( xml), TIFF a로 PDF 문서를 내보낼 수 있습니다 1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF PDF/A-3b(sRGB) 형식 다음을 지정할 수도 있습니다. [사용자 지정 프리플라이트 프로필](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) PDF 출력용.

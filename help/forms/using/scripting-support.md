@@ -1,19 +1,15 @@
 ---
 title: HTML5 양식에 대한 스크립팅 지원
-seo-title: Scripting support for HTML5 forms
 description: JavaScript, FormCalc 속성 및 HTML 5 Forms에서 지원되는 기타 메서드.
-seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
-uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '3887'
+source-wordcount: '3896'
 ht-degree: 6%
 
 ---
@@ -36,7 +32,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td>사용자의 작업에 따라 필드의 내용이 변경되기 전에 내용을 지정합니다. 이 값은 실행 취소 기능과 유사하게 리콜할 수 있습니다.</td>
    <td><p>드롭다운 및 목록 상자에서는 작동하지 않습니다. <code>PrevText </code>이 다음 경우에 제대로 작동하지 않습니다.</p>
     <ul>
-     <li>iPad의 숫자 필드에 일부 특수 문자 키(예: $, (,), &amp;, @ 등)를 입력할 때 </li>
+     <li>iPad의 숫자 필드에 일부 특수 문자 키(예: $ 또는 또는 &amp; 또는 @ 이상)를 입력할 때 </li>
      <li>날짜 필드(달력을 통해 날짜를 입력하는 경우).<br /> </li>
     </ul> <p>스크립트를 통한 값 설정은 지원되지 않습니다.</p> </td>
   </tr>
@@ -52,7 +48,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
     <ul>
      <li>텍스트 선택-바꾸기 시</li>
      <li>텍스트 삭제, 복사 및 붙여넣기에 대한 정보.</li>
-     <li>숫자 필드에 일부 특수 문자 키(예: $, (, ), &amp;, @ 등)를 입력할 때<br /> </li>
+     <li>숫자 필드에 일부 특수 문자 키(예: $ 또는 또는 &amp; 또는 @ 이상)를 입력할 때<br /> </li>
      <li>Shift+영숫자 조합 사용 시. </li>
      <li>날짜/시간 필드 사용 시.</li>
     </ul>
@@ -67,7 +63,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
     <ul>
      <li>텍스트 선택-바꾸기 시</li>
      <li>텍스트 삭제, 복사 및 붙여넣기에 대한 정보.</li>
-     <li>숫자 필드에 일부 특수 문자 키(예: $, (,), &amp;, @ 등)를 입력할 때<br /> </li>
+     <li>숫자 필드에 일부 특수 문자 키(예: $ 또는 또는 &amp; 또는 @ 이상)를 입력할 때<br /> </li>
      <li>Shift+영숫자 조합 사용 시. </li>
      <li>날짜/시간 필드 사용 시.</li>
     </ul> <p>스크립트를 통한 값 설정은 지원되지 않습니다.</p> </td>
@@ -318,12 +314,12 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>x</td>
-   <td>배치된 레이아웃과 함께 배치할 때 부모 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 기준점의 x 좌표를 지정합니다.</td>
+   <td>배치된 레이아웃과 함께 배치할 때 부모 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 고정점의 x 좌표를 지정합니다.</td>
    <td>없음</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>배치된 레이아웃과 함께 배치할 때 상위 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 고정점의 y 좌표를 지정합니다.</td>
+   <td>배치된 레이아웃과 함께 배치할 때 부모 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 고정점의 y 좌표를 지정합니다.</td>
    <td>없음</td>
   </tr>
   <tr>
@@ -446,12 +442,12 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>x</td>
-   <td>배치된 레이아웃과 함께 배치할 때 부모 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 기준점의 x 좌표를 지정합니다.</td>
+   <td>배치된 레이아웃과 함께 배치할 때 부모 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 고정점의 x 좌표를 지정합니다.</td>
    <td>없음</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>배치된 레이아웃과 함께 배치할 때 상위 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 고정점의 y 좌표를 지정합니다.</td>
+   <td>배치된 레이아웃과 함께 배치할 때 부모 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 고정점의 y 좌표를 지정합니다.</td>
    <td>없음</td>
   </tr>
   <tr>
@@ -939,12 +935,12 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>x</td>
-   <td>배치된 레이아웃과 함께 배치할 때 부모 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 기준점의 x 좌표를 지정합니다.</td>
+   <td>배치된 레이아웃과 함께 배치할 때 부모 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 고정점의 x 좌표를 지정합니다.</td>
    <td>없음</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>배치된 레이아웃과 함께 배치할 때 상위 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 고정점의 y 좌표를 지정합니다.</td>
+   <td>배치된 레이아웃과 함께 배치할 때 부모 컨테이너의 왼쪽 위 모서리를 기준으로 컨테이너 고정점의 y 좌표를 지정합니다.</td>
    <td>없음</td>
   </tr>
   <tr>
@@ -994,7 +990,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>계산</td>
-   <td>계산 객체는 필드 값의 계산을 제어합니다.<br /> </td>
+   <td>calculate 객체는 필드 값의 계산을 제어합니다.<br /> </td>
    <td>없음</td>
   </tr>
  </tbody>

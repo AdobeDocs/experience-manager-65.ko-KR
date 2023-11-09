@@ -1,18 +1,14 @@
 ---
 title: Adobe Analytics를 위한 링크 추적 구성
-seo-title: Configuring Link Tracking for Adobe Analytics
 description: SiteCatalyst에 대한 링크 추적을 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn about configuring link tracking for SiteCatalyst.
-uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1615'
 ht-degree: 1%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 1%
 
 ## Adobe Analytics 프레임워크에 대한 링크 추적 구성 {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. 사용 **탐색**, 통과 **배포**, **Cloud Services** (으)로 **Adobe Analytics** 섹션.
+1. 사용 **탐색**, 통과 **배포**, **Cloud Service** (으)로 **Adobe Analytics** 섹션.
 
 1. 사용 **구성 표시**&#x200B;필요한 Adobe Analytics 프레임워크를 엽니다.
 1. 확장 **링크 추적 구성** 섹션 및 필요에 따라 구성(이 페이지에서는 자세한 내용을 제공합니다.)
@@ -93,7 +89,7 @@ Adobe Analytics 프레임워크에 대한 외부 링크를 추적하려면 다�
 * **쿼리 문자열 남기기**
 내부 및 외부 필터와의 일치 항목을 평가할 때 URL 매개 변수를 포함합니다.
 
-  외부 및 내부 필터에 대해 링크 대상 URL을 평가할 때 URL 매개 변수를 포함할 수 있도록 활성화합니다.
+  외부 및 내부 필터에 대해 링크 대상 URL을 평가할 때 URL 매개 변수를 포함하려면 활성화합니다.
 
 외부 링크 추적 속성은 `analytics.sitecatalyst.js` 페이지에 대해 생성된 파일입니다. 다음 예제 코드는 다음 구성으로 외부 링크 추적을 활성화하는 프레임워크와 연결된 페이지에 대해 생성됩니다.
 
@@ -215,7 +211,7 @@ Adobe Analytics 통합의 링크 추적 동작을 살펴보려면 다음 절차�
 1. 선택 취소 **쿼리 문자열 남기기**.
 1. 다음에 대한 다음 값 사용 **외부 필터** 외부 URL로 식별할 목록:
 
-   `‘yahoo.com’`
+   `'yahoo.com'`
 
 1. 에 다음 값 추가 **링크 추적 이벤트** 필드:
 
@@ -340,17 +336,17 @@ Adobe Marketing Cloud Debugger에 표시되는 호출 세부 사항은 다음 �
 
 1. Adobe Analytics (선택 사항) 링크 클릭으로 이벤트를 추적하려면 **Adobe Analytics 변수 포함** 필드. 여러 이벤트 이름(예: 쉼표)은 쉼표로 구분하십시오
 
-   `event1, event22`.
+   `event1, event22`
 
 1. Adobe Analytics (선택 사항) 링크 클릭으로 변수 데이터를 추적하려면 **Adobe Analytics 변수 포함** 필드. 다음 형식 중 하나를 사용합니다.
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
-   * *`<Variable-name>`*: *`‘CONSTANT'`*
+   * *`<Variable-name>`*: *`'CONSTANT'`*
 
    다음 예제는 각 형식을 보여 줍니다.
 
    * `eVar10:pagedata.title`
-   * `prop1: ‘Aubergine'`
+   * `prop1: 'Aubergine'`
 
    여러 값은 쉼표로 구분하십시오.
 

@@ -1,16 +1,12 @@
 ---
 title: JEE 환경에서 AEM Forms 강화
-seo-title: Hardening Your AEM Forms on JEE Environment
 description: 회사 인트라넷에서 실행되는 JEE의 AEM Forms 보안을 강화하기 위한 다양한 보안 강화 설정에 대해 알아봅니다.
-seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
-uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '7662'
 ht-degree: 1%
@@ -318,8 +314,8 @@ WSDL(웹 서비스 정의 언어) 생성은 개발자가 클라이언트 응용 
    https://[host name]:[port]/adminui
    ```
 
-1. 클릭 **설정 > 핵심 시스템 설정 > 구성**.
-1. 선택 취소 **WSDL 활성화** 및 클릭 **확인**.
+1. 선택 **설정 > 핵심 시스템 설정 > 구성**.
+1. 선택 취소 **WSDL 활성화**&#x200B;을 선택한 다음 을 선택합니다. **확인**.
 
 ### 애플리케이션 서버 보안 {#application-server-security}
 

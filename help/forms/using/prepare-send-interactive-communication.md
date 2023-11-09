@@ -1,17 +1,13 @@
 ---
 title: 에이전트 UI를 사용하여 대화형 통신 준비 및 보내기
-seo-title: Prepare and send Interactive Communication using the Agent UI
 description: 에이전트는 에이전트 UI를 통해 대화형 통신을 준비하고 게시 프로세스로 보낼 수 있습니다. 에이전트는 필요에 따라 수정하고 대화형 커뮤니케이션을 이메일 또는 인쇄와 같은 사후 프로세스에 제출합니다.
-seo-description: Prepare and send Interactive Communication using the Agent UI
-uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2021'
 ht-degree: 2%
 
 ---
@@ -69,7 +65,7 @@ ht-degree: 2%
 
    컨텐츠 또는 데이터 탭에서 컨텐츠에서 선택한 모듈 강조 표시( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) 미리보기의 왼쪽 상단에서 관련 텍스트, 단락 또는 데이터 필드를 탭/선택하면 문서 조각으로 이동하는 기능을 비활성화하거나 활성화할 수 있습니다.
 
-   대화형 통신을 만드는 동안 에이전트에서 편집할 수 있는 조각에는 선택한 콘텐츠 편집 이 있습니다. ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) 아이콘. 선택한 컨텐츠 편집 아이콘을 탭하여 조각을 편집 모드로 실행하고 변경 작업을 수행합니다. 텍스트 서식 지정 및 관리를 위해 다음 옵션을 사용합니다.
+   대화형 통신을 생성하는 동안 에이전트에서 편집할 수 있는 조각에는 선택한 콘텐츠 편집 이 있습니다. ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) 아이콘. 선택한 컨텐츠 편집 아이콘을 탭하여 조각을 편집 모드로 실행하고 변경 작업을 수행합니다. 텍스트 서식 지정 및 관리를 위해 다음 옵션을 사용합니다.
 
    * [서식 옵션](#formattingtext)
 
@@ -169,7 +165,7 @@ ht-degree: 2%
 
 * 빈 줄 삽입: 새 빈 줄을 삽입합니다.
 * 선택(눈 모양 아이콘): 대화형 커뮤니케이션에서 문서 단편을 포함합니다.\제외합니다.
-* 글머리 기호/번호 매기기 건너뛰기: 목록 문서 조각에서 글머리 기호/번호 매기기를 건너뛸 수 있습니다.
+* 글머리 기호/번호 매기기 건너뛰기: 목록 문서 조각에서 글머리 기호/번호 매기기를 건너뛰려면 활성화합니다.
 * 채워지지 않은 값(정보): 문서 조각에 채워지지 않은 변수의 수를 나타냅니다.
 
 ## 대화형 커뮤니케이션을 초안으로 저장 {#save-as-draft}

@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 1%
@@ -118,7 +118,7 @@ ht-degree: 1%
 
 1. 모바일의 카탈로그에서 Mobile On-Demand 앱을 선택합니다.
 1. 에서 삭제할 문서 선택 **문서 관리** 타일.
-1. 목록에서 선택되었는지 확인합니다(필요에 따라 삭제할 다른 항목 선택).
+1. 목록에서 선택되었는지 확인하고, 필요에 따라 삭제할 다른 항목을 선택하십시오.
 1. 클릭 **삭제** 작업 표시줄에서
 1. AEM 및 Mobile On-Demand에서 삭제하시겠습니까?
 1. **삭제**&#x200B;를 클릭합니다.

@@ -7,9 +7,9 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '5739'
+source-wordcount: '5736'
 ht-degree: 6%
 
 ---
@@ -428,7 +428,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 필요한 에셋을 더 빨리 검색하려면 검색 결과를 정렬하십시오. 검색 결과를 목록 보기에서 정렬할 수 있으며 다음을 선택할 때만 가능합니다. **[[!UICONTROL 파일]](#searchui)** 다음에서 **[!UICONTROL 필터]** 패널. [!DNL Assets] uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
 
-목록 보기에서 모든 폴더의 에셋을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, Dimension, 크기, 등급, 사용량, (날짜) 생성됨, (날짜) 수정됨, (날짜) 게시됨, 워크플로우 및 체크아웃됨 열에서 작동합니다.
+목록 보기에서 모든 폴더의 에셋을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, Dimension, 크기, 등급, 사용량, 생성됨, 수정됨, 게시됨, 워크플로우, 체크아웃됨 열에서 작동합니다.
 
 정렬 기능의 제한 사항에 대해서는 [제한 사항](#limitations).
 

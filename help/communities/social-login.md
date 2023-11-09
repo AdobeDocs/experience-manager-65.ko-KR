@@ -7,7 +7,7 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '2773'
 ht-degree: 1%
@@ -326,8 +326,8 @@ AEM Communities 구성은 [Adobe Granite OAuth 애플리케이션 및 공급자]
 
      사용자 데이터가 저장되는 저장소의 위치입니다. 커뮤니티 사이트의 경우 구성원이 서로의 프로필을 볼 수 있는 권한을 보장하려면 경로가 기본값이어야 합니다 `/home/users/community`.
 
-   * **[!UICONTROL 매개 변수 활성화]** 편집 안 함
-   * **[!UICONTROL URL 매개 변수]** 편집 안 함
+   * **[!UICONTROL 매개 변수 활성화]** - 편집 안 함
+   * **[!UICONTROL URL 매개 변수]** - 편집 안 함
    * **[!UICONTROL 사용자 업데이트]**
 
      선택하면 로그인할 때마다 저장소의 사용자 데이터를 새로 고쳐 프로필 변경 사항 또는 요청한 추가 데이터를 반영합니다. 기본값은 선택 해제되어 있습니다.
