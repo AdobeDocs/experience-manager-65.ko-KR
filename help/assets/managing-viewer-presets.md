@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '4519'
+source-wordcount: '4520'
 ht-degree: 9%
 
 ---
@@ -114,7 +114,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
   </tr>
   <tr>
    <td><strong>파노라마 이미지</strong></td>
-   <td><p>파노라마 이미지 및 PanoramicVR 뷰어는 구형의 파노라마 이미지를 렌더링하여 사용자가 공간, 속성, 위치 또는 풍경을 360° 뷰잉할 수 있도록 합니다.</p> <p>업로드된 이미지가 구면 파노라마로 적합하려면 다음 중 하나 또는 둘 다 있어야 합니다.</p>
+   <td><p>파노라마 이미지 및 PanoramicVR 뷰어는 구형의 파노라마 이미지를 렌더링하여 사용자가 공간, 속성, 위치 또는 풍경을 360도로 볼 수 있는 환경에 몰입할 수 있도록 합니다.</p> <p>업로드된 이미지가 구면 파노라마로 적합하려면 다음 중 하나 또는 둘 다 있어야 합니다.</p>
     <ul>
      <li>종횡비는 2:1입니다.</li>
      <li>키워드로 태그 지정됨 <code>equirectangular</code>, 또는 <code>spherical</code> 및 <code>panorama</code>, 또는 <code>spherical </code>및 <code>panoramic</code>. 다음을 참조하십시오 <a href="/help/sites-authoring/tags.md">태그 사용</a>.</li>

@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1457'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>새 ContextHub 세그먼트나 수정된 ContextHub 세그먼트를 AEM에서 편집하지 않고 소스 제어에서 편집하려는 경우 새 위치로 마이그레이션해야 합니다.</p>
+   <td><p>새 ContextHub 세그먼트 또는 수정된 ContextHub 세그먼트가 AEM에서 편집되지 않고 소스 제어에서 편집되는 경우 새 위치로 마이그레이션해야 합니다.</p>
     <ol>
      <li>이전 위치에서 새 ContextHub 세그먼트 또는 수정된 ContextHub 세그먼트를 적절한 새 위치(/<code>apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)</li>
      <li>이전 위치의 ContextHub 세그먼트에 대한 참조를 새 위치의 마이그레이션된 ContextHub 세그먼트로 업데이트합니다(<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>

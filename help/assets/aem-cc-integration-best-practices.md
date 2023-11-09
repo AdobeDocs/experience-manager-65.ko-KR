@@ -7,9 +7,9 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3260'
 ht-degree: 16%
 
 ---
@@ -199,7 +199,7 @@ Adobe 에셋 링크는 이 사용 사례에 대한 유용한 지원을 제공합
 * 또한 에셋은 Creative Cloud 계정에 있으므로 사용자가 보유할 수 있는 다른 장치에서도 사용할 수 있으며(예: 전용 Creative Cloud 모바일 앱에서 열거나 편집할 수 있음), 공동 작업 목적으로 다른 Creative Cloud 사용자와 공유할 수 있습니다.
 * 크리에이티브 사용자가 변경을 완료하면 Creative Cloud 애플리케이션에서 선택적 주석을 사용하여 해당 파일에 대한 체크 인 작업을 실행할 수 있습니다. 의 해당 에셋 [!DNL Experience Manager] 새 바이너리로 버전이 지정되고 업데이트됩니다. [!DNL Experience Manager] 마케터 또는 LOB 사용자와 같은 사용자는 를 통해 주요 자산 변경 사항 또는 이정표에 액세스할 수 있습니다. [!DNL Experience Manager] 에셋 타임라인 UI.
 
-[!DNL Experience Manager] 데스크탑 앱은 기본 앱에서 연 에셋에 대한 네트워크 공유를 제공합니다. 기본적으로 로컬에서 수행된 모든 변경 사항이에 업로드됩니다 [!DNL Experience Manager] 잠시 후 자동으로. 이러한 구성을 사용하면 진행 중인 작업 단계 동안 자주 저장되는 작업이 모두 로 업로드됩니다 [!DNL Experience Manager] 및 버전 관리를 통해 많은 네트워크 트래픽 및 잠재적인 확장성 문제 발생 - 의 불필요한 버전은 말할 것도 없음 [!DNL Experience Manager].
+[!DNL Experience Manager] 데스크탑 앱은 기본 앱에서 연 에셋에 대한 네트워크 공유를 제공합니다. 기본적으로 로컬에서 수행된 모든 변경 사항이에 업로드됩니다 [!DNL Experience Manager] 잠시 후 자동으로. 이러한 구성을 사용하면 진행 중인 작업 단계 동안 자주 저장되는 작업이 모두 로 업로드됩니다 [!DNL Experience Manager] 및 버전이 관리되고 신뢰할 수 있는 네트워크 트래픽 및 잠재적인 확장성 문제 - 의 불필요한 버전은 말할 것도 없음 [!DNL Experience Manager].
 
 여기에서는 옵션을 사용하는 것이 좋습니다. [!DNL Experience Manager] 데스크탑 앱으로 자동 업데이트를 해제하고 자산에 대한 변경 사항을 업로드할 수 있습니다. [!DNL Experience Manager] 앱의 에셋 상태 UI에서 변경 내용 업로드 작업을 수동으로 사용합니다.
 

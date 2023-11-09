@@ -5,7 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 1%
@@ -160,7 +160,7 @@ ht-degree: 1%
    다양한 필터를 적용하여 원하는 템플릿을 검색할 수 있습니다. 예를 들어 파일 유형 또는 태그를 기반으로 템플릿을 검색할 수 있습니다.
 
 1. 클릭 **[!UICONTROL 다음]** 을 클릭합니다.
-1. 다음에서 **[!UICONTROL 미리 보기 및 재정렬]** 화면에 필요한 경우 템플릿을 다시 정렬하고 병합할 템플릿 선택을 미리 봅니다. 그런 다음 을 클릭합니다. **[!UICONTROL 다음]** 을 클릭합니다.
+1. 다음에서 **[!UICONTROL 미리 보기 및 재정렬]** 화면을 표시하고 필요한 경우 템플릿을 다시 정렬한 다음 병합할 템플릿 선택을 미리 봅니다. 그런 다음 을 클릭합니다. **[!UICONTROL 다음]** 을 클릭합니다.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 

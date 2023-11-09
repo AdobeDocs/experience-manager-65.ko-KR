@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 39%
+ht-degree: 38%
 
 ---
 
@@ -386,7 +386,7 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 
    ![구성](assets/chlimage_1-1.png)
 
-1. 필요한 경우 **Live Copy 상속** 플래그를 조정합니다. 선택하면 라이브 카피 구성이 모든 하위 항목에 적용됩니다.
+1. 필요한 경우 를 조정합니다. **Live Copy 상속** 플래그. 선택하면 라이브 카피 구성이 모든 하위 항목에 적용됩니다.
 
 1. **상위 항목에서 롤아웃 구성 상속** 속성을 지우고 목록에서 롤아웃 구성을 한 개 이상 선택합니다.
 

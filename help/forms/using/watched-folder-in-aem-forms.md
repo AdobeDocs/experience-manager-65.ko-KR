@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '7144'
 ht-degree: 0%
@@ -486,7 +486,7 @@ log.info("Exiting workflow script!")
 
 감시 폴더 엔드포인트의 경우, 작업에 하나의 입력 파일만 필요한 경우 사용자는 해당 파일을 감시 폴더의 루트에 복사할 수 있습니다.
 
-작업에 두 개 이상의 입력 파일이 포함된 경우 사용자는 모든 필수 파일이 포함된 감시 폴더 계층 구조 외부에 폴더를 만들어야 합니다. 이 새 폴더에는 입력 파일(및 프로세스에 필요한 경우 DDX 파일)이 포함되어야 합니다. 작업 폴더가 생성되면 사용자는 이를 감시 폴더의 입력 폴더에 복사합니다.
+작업에 두 개 이상의 입력 파일이 포함된 경우 사용자는 모든 필수 파일이 포함된 감시 폴더 계층 구조 외부에 폴더를 만들어야 합니다. 이 새 폴더에는 입력 파일이 포함되어야 합니다(필요한 경우 프로세스에 DDX 파일 선택 사항). 작업 폴더가 생성되면 사용자는 이를 감시 폴더의 입력 폴더에 복사합니다.
 
 >[!NOTE]
 >

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Workflow, Renditions
 role: User, Admin
 exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 3%
+source-wordcount: '959'
+ht-degree: 2%
 
 ---
 
@@ -77,7 +77,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
    ![워크플로우 시작](assets/start-workflow.png)
 
 1. (선택 사항) 워크플로 인스턴스를 참조하는 데 사용할 수 있는 워크플로의 제목을 지정합니다.
-1. Click **[!UICONTROL Start]** and then click **[!UICONTROL Confirm]** in the dialog. The workflow runs on all the assets you selected.
+1. Click **[!UICONTROL Start]** and then click **[!UICONTROL Confirm]** in the dialog. 워크플로우는 선택한 모든 에셋에서 실행됩니다.
 
 ## 여러 폴더에 워크플로 적용 {#applying-a-workflow-to-multiple-folders}
 
@@ -98,7 +98,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 
 ## 우수 사례 및 제한 사항 {#best-practices-limitations-tips}
 
-* 워크플로우를 디자인할 때 모든 유형의 표현물에 대한 요구 사항을 고려합니다. 나중에 렌디션이 필요할 것으로 예상되지 않으면 워크플로우에서 렌디션 만들기 단계를 제거합니다. 렌디션은 이후에 일괄 삭제할 수 없습니다. 원하지 않는 렌디션은 을 장기간 사용한 후 많은 저장 공간을 차지할 수 있습니다. [!DNL Experience Manager]. 개별 에셋의 경우 사용자 인터페이스에서 렌디션을 수동으로 제거할 수 있습니다. 여러 에셋의 경우 다음 중 하나를 사용자 정의할 수 있습니다 [!DNL Experience Manager] 특정 렌디션을 삭제하거나 에셋을 삭제한 다음 다시 업로드합니다.
+* 워크플로우를 디자인할 때 모든 유형의 표현물에 대한 요구 사항을 고려합니다. 나중에 렌디션이 필요할 것으로 예상되지 않으면 워크플로우에서 렌디션 만들기 단계를 제거합니다. 렌디션은 이후에 일괄 삭제할 수 없습니다. 원하지 않는 렌디션은 을 장기간 사용하면 저장 공간이 부족해질 수 있습니다. [!DNL Experience Manager]. 개별 에셋의 경우 사용자 인터페이스에서 렌디션을 수동으로 제거할 수 있습니다. 여러 에셋의 경우 다음 중 하나를 사용자 정의할 수 있습니다 [!DNL Experience Manager] 특정 렌디션을 삭제하거나 에셋을 삭제한 다음 다시 업로드합니다.
 * 기본적으로, [!UICONTROL DAM 자산 업데이트] 워크플로에는 축소판 및 웹 변환을 만드는 몇 가지 단계가 포함되어 있습니다. 워크플로에서 기본 렌디션이 제거되면 의 사용자 인터페이스 [!DNL Assets] 가 제대로 렌더링되지 않습니다.
 
 >[!MORELIKETHIS]

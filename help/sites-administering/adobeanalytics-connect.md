@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e3a3511a5854432b9c01748f7f5ffaf9182180f8
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 6%
+source-wordcount: '1523'
+ht-degree: 7%
 
 ---
 
@@ -195,14 +195,19 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 ### 가져오기 간격 구성 {#configuring-the-import-interval}
 
-의 적절한 인스턴스 구성 **Adobe AEM 관리 폴링 구성** 서비스:
+의 적절한 인스턴스 구성 **Adobe AEM Analytics Report Sling Importer** 서비스:
 
-* **폴링 간격**: 서비스가 Adobe Analytics에서 페이지 보기 데이터를 검색하는 간격(초)입니다.
-기본 간격은 43200000ms(12시간)입니다.
+* **가져오기 시도 횟수**: 대기 중인 보고서 가져오기 시도 횟수입니다.
+기본값은 `6`입니다.
 
-* **사용**: 서비스를 활성화하거나 비활성화합니다. 기본적으로 이 서비스는 활성화되어 있습니다.
+* **가져오기 지연**: 대기 중인 보고서 가져오기 시도 사이의 시간(밀리초)
+기본값은 `10000`입니다.
+밀리초 단위이므로 10초입니다.
 
-이 OSGi 서비스를 구성하려면 다음을 사용할 수 있습니다. [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소의 osgiConfig 노드](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (서비스 PID: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).
+* **가져오기 빈도**: A `cron` Analytics 보고서를 가져오는 빈도를 결정하는 표현식입니다.
+기본값은 입니다 `0 0 0/12 * * ?`: 매시간 12회 페치에 해당합니다.
+
+이 OSGi 서비스를 구성하려면 다음을 사용할 수 있습니다. [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소의 osgiConfig 노드](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (서비스 PID: `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 
 ## Adobe Analytics 구성 및/또는 프레임워크 편집 {#editing-adobe-analytics-configurations-and-or-frameworks}
 

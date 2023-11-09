@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 73%
+ht-degree: 69%
 
 ---
 
@@ -52,7 +52,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하�
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. 필요한 경우 위치 필터를 제거(제거할 필터에서 **X** 선택)하여 모든 콘솔/리소스 유형에서 검색할 수 있습니다.
+1. 필요한 경우 위치 필터를 제거할 수 있습니다(선택 **X** 을(를) 제거하여 모든 콘솔/리소스 유형에서 검색할 수 있습니다.
 1. 콘솔 및 관련 리소스 유형에 따라 그룹화된 결과가 표시됩니다.
 
    필요한 리소스 유형(예: )을 선택하여 드릴다운하거나 추가 작업을 위해 특정 리소스를 선택할 수 있습니다. **모든 사이트 보기**:

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1825'
-ht-degree: 16%
+source-wordcount: '1823'
+ht-degree: 17%
 
 ---
 
@@ -67,7 +67,7 @@ Adobe Campaign Standard에는 기본적으로 `aemserver` AEM에서 Adobe Campai
 
 ## Campaign에서 AEMResourceTypeFilter 확인 {#resource-type-filter}
 
-다음 `AEMResourceTypeFilter` 는 Adobe Campaign에서 사용할 수 있는 AEM 리소스를 필터링하는 데 사용되는 Adobe Campaign의 옵션입니다. AEM에는 많은 콘텐츠가 포함되어 있으므로 이 옵션은 Adobe Campaign에서 Adobe Campaign에 사용하도록 특별히 디자인된 유형의 AEM 콘텐츠만 검색할 수 있도록 하는 필터 역할을 합니다.
+다음 `AEMResourceTypeFilter` 는 Adobe Campaign에서 사용할 수 있는 AEM 리소스를 필터링하는 데 사용되는 Adobe Campaign의 옵션입니다. AEM에는 많은 콘텐츠가 포함되어 있으므로 이 옵션은 Adobe Campaign이 Adobe Campaign에서 사용하도록 특별히 설계된 유형의 AEM 콘텐츠만 검색할 수 있도록 하는 필터 역할을 합니다.
 
 이 옵션은 사전 구성되어 제공됩니다. 그러나 AEM의 Campaign 구성 요소를 사용자 지정한 경우 업데이트해야 할 수 있습니다. 을(를) 확인하려면 `AEMResourceTypeFilter` 옵션이 구성되었으므로 다음 단계를 수행합니다.
 

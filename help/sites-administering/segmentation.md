@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1772'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -137,7 +137,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. **새 ContextHub 세그먼트**&#x200B;에서 세그먼트 제목 및 부스트 값을 입력(필요한 경우)한 다음 **만들기**&#x200B;를 탭하거나 클릭합니다.
+1. 다음에서 **새 ContextHub 세그먼트**, 세그먼트 제목 및 필요한 경우 부스트 값 을 입력한 다음 을 탭하거나 클릭합니다 **만들기**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 

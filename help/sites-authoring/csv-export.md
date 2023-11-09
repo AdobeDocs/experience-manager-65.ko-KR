@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 87%
+ht-degree: 81%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 87%
 
 CSV 내보내기를 만들려면:
 
-1. **사이트** 콘솔을 열고 필요한 경우 필요한 위치로 이동합니다.
+1. 를 엽니다. **사이트** 콘솔에서 필요한 경우 필요한 위치로 이동합니다.
 1. 도구 모음에서 **만들기**&#x200B;를 선택한 다음 **CSV 보고서**&#x200B;를 선택하여 마법사를 엽니다.
 
    ![etc-03](assets/etc-03.png)

@@ -1,18 +1,16 @@
 ---
 title: 페이지 컨텐츠 편집
 description: 콘텐츠는 페이지로 끌 수 있는 구성 요소를 사용하여 추가됩니다. 그런 다음 그 자리에서 편집하거나, 이동하거나 삭제할 수 있습니다.
-uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 20%
+source-wordcount: '1831'
+ht-degree: 19%
 
 ---
 
@@ -110,7 +108,7 @@ ht-degree: 20%
 
    에셋 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 에셋이 포함됩니다.
 
-1. 필요할 경우 구성 요소를 [편집](#editmovecopypastedelete)합니다.
+1. [편집](#editmovecopypastedelete) 필요한 경우 구성 요소입니다.
 
 ## 구성 요소 편집(컨텐츠 및 속성) {#editing-a-component-content-and-properties}
 
@@ -227,7 +225,7 @@ ht-degree: 20%
 
 ## 페이지 잠금 {#locking-a-page}
 
-AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이지를 잠글 수 있습니다. 이 기능은 하나의 특정 페이지를 많이 편집하거나 잠시 동안 페이지를 동결해야 할 때 유용합니다.
+AEM을 사용하면 다른 사람이 컨텐츠를 변경할 수 없도록 페이지를 잠글 수 있습니다. 이 기능은 하나의 특정 페이지를 여러 번 편집하거나 잠시 동안 페이지를 동결해야 할 때 유용합니다.
 
 >[!CAUTION]
 >

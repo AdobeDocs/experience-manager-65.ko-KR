@@ -1,25 +1,21 @@
 ---
 title: 대시보드
-seo-title: Dashboards
 description: 새 AEM 대시보드를 만들고, 구성하고, 개발하는 방법에 대해 알아봅니다.
-seo-description: Learn how to create, configure and develop new AEM dashboards.
-uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '825'
 ht-degree: 4%
 
 ---
 
 # 대시보드{#dashboards}
 
-AEM을 사용할 때 다양한 유형의 콘텐츠(예: 페이지, 에셋)를 관리할 수 있습니다. AEM 대시보드는 통합된 데이터를 표시하는 페이지를 정의하는 사용하기 쉽고 사용자 정의 가능한 방법을 제공합니다.
+AEM을 사용할 때 다양한 유형의 수많은 콘텐츠(예: 페이지, 에셋)를 관리할 수 있습니다. AEM 대시보드는 통합된 데이터를 표시하는 페이지를 정의하는 사용하기 쉽고 사용자 정의 가능한 방법을 제공합니다.
 
 >[!NOTE]
 >

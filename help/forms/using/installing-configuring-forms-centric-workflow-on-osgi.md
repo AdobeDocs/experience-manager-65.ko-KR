@@ -1,17 +1,13 @@
 ---
 title: OSGi에서 Forms 중심 워크플로우 설치 및 구성
-seo-title: Installing and Configuring Forms-centric workflow on OSGi
 description: AEM Forms Interactive Communications를 설치 및 구성하여 비즈니스 서신, 문서, 명세서, 혜택 공지, 마케팅 이메일, 청구서 및 시작 키트를 만듭니다.
-seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
-uuid: 1ceae822-215a-4b83-a562-4609a09c3a54
 topic-tags: installing
-discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1611'
 ht-degree: 7%
 
 ---
@@ -20,11 +16,11 @@ ht-degree: 7%
 
 ## 소개 {#introduction}
 
-기업은 여러 양식, 백엔드 시스템 및 기타 데이터 소스에서 데이터를 수집하고 처리합니다. 데이터 처리에는 검토 및 승인 절차, 반복 작업, 데이터 보관이 포함됩니다. 예를 들어 양식을 검토하여 PDF 문서로 변환합니다. 반복적인 작업을 수동으로 수행하는 경우 많은 시간과 자원이 소요될 수 있습니다.
+기업은 여러 양식, 백엔드 시스템 및 기타 데이터 소스에서 데이터를 수집하고 처리합니다. 데이터 처리에는 검토 및 승인 절차, 반복 작업, 데이터 보관이 포함됩니다. 예를 들어 양식을 검토하여 PDF 문서로 변환합니다. 반복적인 작업을 수동으로 수행하는 경우 많은 시간과 많은 리소스가 소요될 수 있습니다.
 
-다음을 사용할 수 있습니다. [OSGi의 Forms 중심 워크플로우](../../forms/using/aem-forms-workflow.md) 를 사용하면 적응형 양식 기반 워크플로를 신속하게 구축할 수 있습니다. 이러한 워크플로를 통해 검토 및 승인 워크플로, 비즈니스 프로세스 워크플로 및 기타 반복적인 작업을 자동화할 수 있습니다. 또한 이러한 워크플로는 문서를 처리하고(PDF 문서를 만들고, 조합하고, 배포하고, 보관하고, 디지털 서명을 추가하여 문서에 대한 액세스를 제한하고, 바코드 양식을 디코딩하는 등), 양식 및 문서와 함께 Adobe Sign 서명 워크플로를 사용하는 데 도움이 됩니다.
+다음을 사용할 수 있습니다. [OSGi의 Forms 중심 워크플로우](../../forms/using/aem-forms-workflow.md) 를 사용하면 적응형 양식 기반 워크플로를 신속하게 구축할 수 있습니다. 이러한 워크플로우는 검토 및 승인 워크플로우, 비즈니스 프로세스 워크플로우 및 기타 반복적인 작업을 자동화 하는 데 도움이 될 수 있습니다. 또한 이러한 워크플로우는 문서를 처리 하는 데 도움이 됩니다 (PDF 문서 만들기, 어셈블, 배포 및 보관, 문서에 대 한 액세스를 제한 하기 위해 디지털 서명을 추가 하 고, 바코드를 디코드 하는 등) 및 양식 및 문서와 Adobe Sign 서명을 작업 과정 사용 합니다.
 
-설정되면 이러한 워크플로우를 수동으로 트리거하여 정의된 프로세스를 완료하거나 사용자가 양식 또는 대화형 통신을 제출할 때 프로그래밍 방식으로 실행할 수 있습니다. 이 기능은 AEM Forms 추가 기능 패키지에 포함되어 있습니다.
+설정 하면 이러한 워크플로우를 수동으로 실행 하 여 정의 된 프로세스를 완료 하거나 사용자가 양식 또는 인터랙티브 통신을 전송할 때 프로그래밍 방식으로 실행할 수 있습니다. 이 기능은 AEM Forms 추가 기능 패키지에 포함 되어 있습니다.
 
 AEM Forms은 강력한 엔터프라이즈급 플랫폼입니다. OSGi에서의 Forms 중심 워크플로우는 AEM Forms의 기능 중 하나일 뿐입니다. 전체 기능 목록은 다음을 참조하십시오. [AEM Forms 소개](introduction-aem-forms.md).
 
@@ -36,7 +32,7 @@ AEM Forms은 강력한 엔터프라이즈급 플랫폼입니다. OSGi에서의 F
 
 ## 배포 토폴로지 {#deployment-topology}
 
-AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. OSGi 기능에서 Forms 중심 워크플로우를 실행하려면 최소 하나의 AEM 작성자 또는 처리 인스턴스(프로덕션 작성자)만 필요합니다. 처리 인스턴스는 [AEM 작성자 강화](/help/forms/using/hardening-securing-aem-forms-environment.md) 인스턴스. 프로덕션 작성자에서 워크플로우 또는 적응형 양식 작성과 같은 실제 작성을 수행하지 마십시오.
+AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. OSGi 기능에서 Forms 중심 워크플로우를 실행하려면 최소 하나의 AEM 작성자 또는 처리 인스턴스(프로덕션 작성자)만 필요합니다. 처리 인스턴스는 [경화 AEM 작성자](/help/forms/using/hardening-securing-aem-forms-environment.md) 인스턴스. 프로덕션 작성자에서 워크플로우 또는 적응형 양식 작성과 같은 실제 작성을 수행하지 마십시오.
 
 다음 토폴로지는 OSGi 기능에서 AEM Forms 대화형 통신, 서신 관리, AEM Forms 데이터 캡처 및 Forms 중심 워크플로우를 실행하는 토폴로지 입니다. 토폴로지에 대한 자세한 내용은 [AEM Forms의 아키텍처 및 배포 토폴로지](/help/forms/using/aem-forms-architecture-deployment.md).
 
@@ -58,7 +54,7 @@ OSGi에서 Forms 중심 워크플로를 설치하고 구성하기 전에 다음�
 * AEM 인스턴스가 실행 중입니다. AEM 용어에서 &quot;인스턴스&quot;는 작성자 또는 게시 모드의 서버에서 실행되는 AEM의 사본입니다. OSGi에서 Forms 중심 워크플로우를 실행하려면 하나 이상의 AEM 인스턴스(작성자 또는 처리)가 필요합니다.
 
    * **작성자**: 콘텐츠를 만들고, 업로드하고, 편집하고, 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 콘텐츠를 실행할 준비가 되면 게시 인스턴스에 복제됩니다.
-   * **처리 중:** 처리 인스턴스는 [AEM 작성자 강화](/help/forms/using/hardening-securing-aem-forms-environment.md) 인스턴스. 작성자 인스턴스를 설정하고 설치를 수행한 후 인스턴스를 강화할 수 있습니다.
+   * **처리 중:** 처리 인스턴스는 [경화 AEM 작성자](/help/forms/using/hardening-securing-aem-forms-environment.md) 인스턴스. 작성자 인스턴스를 설정하고 설치를 수행한 후 인스턴스를 강화할 수 있습니다.
 
    * **게시**: 인터넷 또는 내부 네트워크를 통해 게시된 콘텐츠를 일반에게 제공하는 AEM 인스턴스.
 
@@ -113,10 +109,10 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 
    에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다. [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 기사.
 
-1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 [AEM-Installation-Directory]/crx-quickstart/logs/error.log 파일이고 로그는 안정적입니다.
-1. 모든 Author 및 Publish 인스턴스에서 1~7단계를 반복합니다.
+1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms 서버를 중지 하기 전에 등록 된 ServiceEvent 및 ServiceEvent 등록 해제 메시지가 AEM-설치-디렉토리 ] /crx-quickstart/logs/error.log 파일에 [ 표시 되 고 로그는 안정적입니다.
+1. 모든 작성자 및 Publish 인스턴스에서 1-7 단계를 반복 합니다.
 
-## 설치 후 구성 {#post-installation-configurations}
+## Post-설치 구성 {#post-installation-configurations}
 
 AEM Forms에는 몇 가지 필수 구성과 선택적 구성이 있습니다. 필수 구성에는 BouncyCastle 라이브러리 및 직렬화 에이전트 구성이 포함됩니다. 선택적 구성에는 Dispatcher 및 Adobe Target 구성이 포함됩니다.
 

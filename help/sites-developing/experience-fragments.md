@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1782'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ An [경험 조각](/help/sites-authoring/experience-fragments.md) 는 페이지 
 
 >[!NOTE]
 >
->링크는 항상 게시 인스턴스를 참조합니다. 링크는 서드파티가 사용하도록 만들었으므로 작성자가 아닌 게시 인스턴스에서 항상 호출됩니다.
+>링크는 항상 게시 인스턴스를 참조합니다. 이 링크는 서드파티가 사용하므로 작성자 인스턴스가 아닌 게시 인스턴스에서 항상 호출됩니다.
 >
 >자세한 내용은 [URL 표면화](/help/sites-developing/externalizer.md).
 

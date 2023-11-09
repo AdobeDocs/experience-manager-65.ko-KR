@@ -2,16 +2,16 @@
 title: JEE Workbench의 AEM Forms에서 스크립트 서비스 실행을 사용하여 XML 데이터를 작성하는 방법
 description: JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
 
 # JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드 {#using-execute-script-service-forms-jee-workbench}
 
-XML 정보는 프로세스에서 작성되어 JEE Workspace의 AEM Forms에 있는 Flex 애플리케이션으로 보내지거나 시스템 설정에 사용되거나 양식과 정보를 전달하는 등 JEE의 AEM Forms Process Management 워크플로와 관련된 많은 XML이 있습니다. AEM Forms on JEE 개발자가 XML을 관리해야 하는 경우가 많으며, 이를 위해서는 AEM Forms on JEE 프로세스를 통해 XML을 관리해야 하는 경우가 많습니다.
+XML 정보는 프로세스에서 작성되어 JEE Workspace의 AEM Forms에 있는 Flex 애플리케이션으로 보내지거나 시스템 설정에 사용되거나 양식에서 정보를 전달하는 등 JEE의 AEM Forms Process Management 워크플로와 관련된 많은 XML이 있습니다. AEM Forms on JEE 개발자가 XML을 관리해야 하는 경우가 많으며, 이를 위해서는 AEM Forms on JEE 프로세스를 통해 XML을 관리해야 하는 경우가 많습니다.
 
 간단한 XML 설정을 처리할 때는 `Set Value` 서비스: JEE 서비스의 기본 AEM Forms. 이 서비스는 프로세스 데이터 모델에서 하나 이상의 데이터 항목의 값을 설정합니다. 간단한 조건부 논리 &quot;if this, then that&quot; 시나리오의 경우 이 서비스가 목적에 부합할 수 있습니다.
 

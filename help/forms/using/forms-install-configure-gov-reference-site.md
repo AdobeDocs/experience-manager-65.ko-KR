@@ -4,9 +4,9 @@ description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 지정�
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '4611'
+source-wordcount: '4603'
 ht-degree: 3%
 
 ---
@@ -34,8 +34,8 @@ ht-degree: 3%
 | Adobe Analytics | v1.4 Rest API | **지원됨** |
 **패키지 설치 고려 사항:**
 
-* 패키지는 다른 데모 패키지 또는 이전 데모 패키지 버전이 없는 깨끗한 서버에 설치해야 합니다
-* 패키지는 작성자 모드에서 실행되는 OSGI 서버에 설치해야 합니다.
+* 다른 데모 패키지 또는 이전 데모 패키지 버전을 사용하지 않고 깔끔한 서버에 패키지를 설치합니다.
+* 작성자 모드에서 실행되는 OSGI 서버에 패키지를 설치합니다.
 
 ### 이 패키지에는 무엇이 포함되어 있습니까 {#what-does-this-package-include}
 

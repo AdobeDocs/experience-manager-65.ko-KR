@@ -2,35 +2,34 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 31bc86f81620bdc6fe9877cdc96f4004a80d60f9
+source-git-commit: e3a3511a5854432b9c01748f7f5ffaf9182180f8
 workflow-type: tm+mt
-source-wordcount: '4641'
-ht-degree: 9%
+source-wordcount: '3392'
+ht-degree: 7%
 
 ---
 
 # [!DNL Adobe Experience Manager] 6.5 최신 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
 
-<!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/Documents/issue_tracker_sp_cfp_updates.xlsx?d=w3ea81ae4e6054153b132f2698c86f84e&csf=1&web=1&e=7yhrWb&nav=MTVfe0U0RjdDQUM3LTZCQ0EtNDk1Qy04Mjc1LTM2MUJEMzE1OEVGN30 -->
+<!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
 
 <!-- DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
 >[!NOTE]
 >
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, June 1, 2023. In addition, a list of Forms fixes and enhancements is added to this section. -->
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, November 30, 2023. In addition, a list of Forms fixes and enhancements is added to this section. -->
 
 ## 릴리스 정보 {#release-information}
 
 | 제품 | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| 버전 | 6.5.18.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 버전 | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2023년 8월 24일 목요일 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 날짜 | 2023년 11월 23일 목요일 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-## 에 포함된 항목 [!DNL Experience Manager] 6.5.18.0 {#what-is-included-in-aem-6518}
+## 에 포함된 항목 [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
 
-[!DNL Experience Manager] 6.5.18.0에는 2019년 4월 6.5의 최초 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. [이 서비스 팩 설치](#install) 날짜 [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.19.0에는 2019년 4월 6.5의 최초 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. [이 서비스 팩 설치](#install) 날짜 [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -42,245 +41,202 @@ ht-degree: 9%
 
 **주요 기능**
 
-* 에셋, Dynamic Media - [Dynamic Media 비디오에 대한 다중 자막 및 다중 오디오 트랙 지원](/help/assets/video.md#about-msma)- 이제 여러 자막과 여러 오디오 트랙을 기본 비디오에 쉽게 추가할 수 있습니다. 즉, 이러한 기능을 통해 글로벌 대상자는 비디오에 액세스할 수 있습니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 자막 및 오디오 트랙을 관리할 수도 있습니다.
-
-* 에셋 - 이제 검색 결과에서 에셋이 포함된 폴더 위치로 이동하여 다양한 에셋 관리 작업을 수행할 수 있습니다. (ASSETS-23182)
+* A
 
 **주요 개선 사항**
 
-* 컨텐츠 조각의 Sites Polaris Picker가 성능이 향상되었습니다. (SITES-14092)
-
-* 사이트 페이지 편집기/이미지 구성 요소 사용자가 원격 자산 Cloud Service의 자산을 참조할 수 있도록 했습니다. (SITES-13448, SITES-13433)
-
-* 시스템에 많은 프로젝트가 있을 수 있는 목록 보기에서 프로젝트를 빠르게 찾기 위해 이제 Adobe에서 서버측 정렬을 지원합니다. 프로젝트 노드는 사용자 인터페이스에서 렌더링하기 전에 사용자가 선택한 열을 기반으로 백엔드에서 정렬됩니다. (NPR-41027)
-
-* AEM 6.5.18.0은 MongoDB 5.0에서 6.0으로 지원합니다.
+* S
 
 **사용되지 않는 기능**
 
 * AEM의 ActiveMQ는 더 이상 사용되지 않습니다. ActiveMQ는 두 AEM Publish 인스턴스 간의 통신에 사용되었습니다. Adobe은 이제 고객이 로드 밸런서를 사용할 것을 권장합니다.
 
-**양식**
-
-* **[규칙 편집기의 사용자 지정 오류 처리기로 향상된 오류 처리](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** - 이제 외부 서비스에서 반환한 오류에 응답하여 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출할 수 있습니다. 또한 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다
-
-* **[향상된 Adobe Sign 워크플로 단계](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - AEM 워크플로의 Adobe Sign 워크플로 단계는 다음과 같은 개선 사항을 통해 사용할 수 있습니다.
-
-   * **Adobe Sign에 대한 정부 ID 기반 인증을 통해 향상된 보안** - Adobe Acrobat Sign의 정부 ID 기반 인증은 추가 인증 계층을 제공합니다. 사용자가 정부에서 발급한 신분증(운전면허증, 주민등록증, 여권)을 이용해 본인 인증을 할 수 있도록 했다. 이 향상된 기능은 신뢰할 수 있는 ID 문서를 사용함으로써 서명 프로세스에 대한 신뢰도가 한층 높아져 강화된 보안, 규정 준수 및 사용자 유효성 검사가 필요한 시나리오에 이상적입니다.
-
-   * **Adobe Sign 문서에 대한 감사 추적을 통해 투명성 향상** - 감사 추적 기능을 사용하여 Adobe Sign 문서의 라이프사이클에 대한 자세한 통찰력을 얻을 수 있습니다. 감사 추적을 사용하여 이제 문서와 관련된 모든 작업과 상호 작용에 대한 포괄적인 기록을 유지 관리할 수 있습니다. 여기에는 각 이벤트의 타임스탬프와 함께 문서를 조회하고, 편집하거나 서명한 사람 등과 같은 세부 정보가 포함됩니다. 이러한 개선된 기능은 규정 준수를 유지하고, 분쟁을 해결하고, 디지털 계약의 무결성을 보장하는 데 중요합니다.
-
-
-   * **서명자 이상으로 계약 수신자의 역할 확장** - Adobe Acrobat Sign을 사용하면 계약 수신자의 역할을 서명자 이상으로 확장하여 워크플로 요구 사항에 보다 잘 부합하도록 할 수 있습니다. 활성화된 경우 계약의 각 수신자는 자신의 역할을 개별적으로 구성할 수 있으며 기본값은 서명자입니다.
-
-
-* **[AEM Forms on JEE 전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)** - 서비스 팩은 JEE의 AEM Forms용 전체 설치 프로그램을 제공하며, 이를 통해 다음을 포함한 여러 가지 새로운 소프트웨어 조합을 지원합니다.
-   * Microsoft® 윈도우 서버 2022
-   * Microsoft® Active Directory 2022
-   * Windows Server 2022에서 WebLogic 14C oracle
-   * Red Hat® JBoss® 7.4.10
-   * MongoDB 4.4
-   * MySQL JDBC Connector 8
-
-JEE의 AEM 6.5 Forms Adobe 환경에 최신 소프트웨어를 설치하거나 사용할 계획이라면 JEE의 AEM 6.5.18.0 Forms 전체 설치 관리자를 사용하는 것이 좋습니다. 새로 추가되고 더 이상 사용되지 않는 소프트웨어의 전체 목록을 살펴보려면 JEE의 AEM Forms 또는 OSGi의 AEM Forms에 대한 설명서를 참조하십시오.
-
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## 서비스 팩 18의 문제가 해결되었습니다. {#fixed-issues}
+## 서비스 팩 19의 문제가 해결되었습니다. {#fixed-issues}
 
-### [!DNL Sites]{#sites-6518}
+### [!DNL Sites]{#sites-6519}
 
-* 대량 편집기를 사용하여 를 다운로드하여 여러 페이지의 속성을 업데이트했습니다. `tsv` 내보내고 오프라인에서 변경한 다음 `tsv` Experience Manager으로 돌아가기. 페이지가 업데이트되더라도 JCR 속성 `cq:lastModified` 은(는) 타임라인에서 업데이트되지 않았습니다. (SITES-14072)
-* 경험 조각의 라이브 카피 또는 롤아웃을 만들 때 경험 조각 내에서 링크 참조가 업데이트되지 않습니다. (SITES-14759)
-* 워크플로우 동기화 작업이 상위 페이지에서 기본 제공 Experience Manager 표준 롤아웃 구성, &quot;롤아웃 페이지 및 하위 페이지&quot;에 추가되었으며 비동기 작업이 NullPointer 예외로 인해 실패합니다. 소스 위치 페이지(en-us)가 상위 위치에 존재하지 않지만 대상 위치(라이브 카피)(en)에는 존재합니다. (SITES-12207)
-* 다음을 포함하는 &#39;en&#39; 페이지가 있습니다. `jcr:description` 번역을 위해 페이지를 보냈습니다. 다음 `jcr:description` 는 번역할 예정이며 속성은 launch 아래에 있습니다. 하지만 출시가 홍보되면 `jcr:description` 페이지에서 가 업데이트되지 않습니다. (SITES-13146)
-* 블루프린트 롤아웃 이후 Live Copy의 현지화된 콘텐츠가 유실됩니다. (SITES-12602)
+* U
 
-#### 관리 사용자 인터페이스{#sites-adminui-6518}
+#### 접근성{#sites-accessibility-6519}
 
-* 사용자의 삭제 권한이 useradmin console을 통해 제거되면 (페이지를 선택할 때) 사용자에게 sites.html 콘솔에 &#39;속성&#39; 버튼이 더 이상 표시되지 않습니다. 그러나 이 옵션은 사용자가 페이지 편집기를 여는 경우에 표시됩니다. (SITES-14341)
-* 폴더에 버전이 많은 페이지가 있는 경우 버전 비교 기능을 사용할 때 인스턴스에 대한 로드가 높아집니다. 여러 사용자가 동시에 기능을 사용하는 경우 인스턴스가 작동 중단될 수 있습니다. (SITES-13026)
+* AEM Sites 페이지에서 페이지를 200% 확대하면 링크가 연결됩니다 **[!UICONTROL 언어 복사]** 및 **[!UICONTROL CSV 보고서]** 참조 레일에서 가 사라집니다. (SITES-11011) 정상
 
-#### [!DNL Content Fragments]{#sites-contentfragments-6518}
+#### 관리 사용자 인터페이스{#sites-adminui-6519}
 
-* 의 예외 처리에서 문제가 발견되었습니다. `RemoteAssetClientImpl`. 메타데이터를 쿼리하는 동안 IOException 또는 RuntimeException이 발생하면 현재 스레드가 공유 httpClient를 닫고 다시 만들려고 하므로 스레드에 다른 오류가 캐스케이드될 수 있습니다. (SITES-14092)
-* 작성자가 컨텐츠 조각의 리치 텍스트 편집기 필드를 입력하고 링크 내에 이미지를 삽입하면 GraphQL API를 통해 컨텐츠 조각이 쿼리될 때 오류 메시지가 표시됩니다 `Exception while fetching data (/genericContentByPath) : null` 가 반환됩니다. 이 오류는 이미지가 포함된 링크가 있는 경우에만 발생했습니다. 링크에서 이미지를 제거하면 오류 메시지가 사라집니다. (SITES-13988)
-* Experience Manager 6.5의 GraphQL 구현이 마스터와 동등하지 않으며 몇 가지 중요한 수정 사항이 누락되었습니다. (SITES-13096)
-* 메타데이터 서비스 끝점에 액세스할 때 필수 HTTP 헤더가 필요합니다. (SITES-13068)
+* AEM Screens 채널 **[!UICONTROL 미리 보기]** 기능이 대시보드에서 작동하거나 표시되지 않습니다. (SITES-15730) 중요
+* 페이지 이동 작업 중에 사용자 인터페이스가 참조를 표시할 수 없지만 자동으로 다시 게시됨을 나타내면 참조가 다시 게시됩니다 *아님* 다시 게시됨. (SITES-16435) 메이저
+* 서비스 팩 16 또는 17이 있는 AEM 6.5에서 &quot;워크플로우&quot; 열이 활성화된 사이트의 목록 보기에서 해당 열의 항목을 기준으로 목록을 정렬할 수 없습니다. 정렬이 수행되지 않습니다. (SITES-15385) 메이저
+* 리디렉션 페이지 템플릿의 경우 리디렉션 필드가 필수입니다. 그러나 필수 필드에 대한 유효성 검사가 적용되지 않거나 다음 두 시나리오에서 작동하지 않습니다. 필수 리디렉션 값 없이 페이지가 만들어지면 리디렉션 페이지를 만들 수 없습니다. 키보드 단축키를 사용하여 탐색할 때는 유효성 검사가 작동하지 않으며 필드가 유효하지 않은 것으로 표시되면 진행되지 않습니다. (SITES-15903) 정상
+* 일부 **수신 링크** 이(가) 의 표시된 수에 포함되지 않았습니다. **참조** 패널. 예를 들어 패널에 **수신 링크(6)** 하지만 실제로 9개의 들어오는 링크들이 있었습니다. (SITES-14816) 정상
 
-#### 핵심 구성 요소{#sites-core-components-6518}
+#### 클래식 UI{#sites-classicui-6519}
 
-* 자산 선택기가 닫히고 다시 열리면 업데이트된 자산 목록을 가져오지 않습니다. 저장소에 새 에셋이 업로드되는 경우 에셋 선택기가 포함된 페이지를 새로 고칠 때까지 에셋 선택기에 표시되지 않습니다. (SITES-14828)
-* Sites 편집기(CS)에 통합된 에셋 선택기 사용자 인터페이스는 창을 줄였을 때 응답하지 않습니다. (SITES-14127)
-* 자산 선택기 통합을 위한 Adobe IMS(Identity Management 시스템) 구성이 잘못된 값을 수락했습니다. (SITES-13962)
-* Sites 이미지 구성 요소에 통합된 경우 에셋 선택기에서 이미지가 아닌 에셋을 선택할 수 없습니다. (SITES-13879)
-* 로그인에 성공하면 사용자가 페이지 편집기로 리디렉션됩니다. 원격 자산을 선택하려면 자산 선택기를 다시 열어야 합니다. (SITES-13851)
-* 원격 자산 선택기는 항상 Adobe IMS(Identity Management 시스템) 스테이지 환경으로 리디렉션합니다. (SITES-13448, SITES-13433)
+* SITES-15827에 핫픽스를 설치한 후 단어 사이에 공백이 있는 대화 상자 제목이 로 대체되었습니다 `" "`. 줄 바꿈도 제거 중입니다. (SITES-16089) 메이저
+* 이제 인코딩된 대화 상자 제목으로 인해 제목이 이중 인코딩됩니다. (SITES-15841) 정상
+* 서비스 팩 6.5.16에서 6.5.17로 AEM 서버를 업데이트하면 클래식 UI 대화 상자 제목이 이중 인코딩되었습니다. (SITES-15634) 정상
 
-<!-- #### [!DNL Experience Fragments]{#sites-experiencefragments-6518}
+#### [!DNL Content Fragments]{#sites-contentfragments-6519}
 
-* A -->
+* 내부 서버 오류 메시지가 콘텐츠 조각 편집기에 나타납니다. (SITES-13550) 중요
+* 의 업데이트 `org.json` npr-41291의 방식으로 라이브러리에서 데이터 오류 변환 발생 `DefaultDataTypeConverter` / `cfm-impl` 번들. 데이터 유형 전환은 보다 유연해야 합니다. (SITES-16473) 정상
+* &quot;호환되지 않는 콘텐츠로 인해 이 콘텐츠 조각 버전을 현재 버전과 비교할 수 없습니다.&quot; 오류 팝업 메시지를 가져옵니다. 콘텐츠 조각은 비교할 수 있어야 하지만 그렇지 않습니다. (SITES-16317) 정상
+* 에서 자산 선택기 JS URL을 변경했습니다.
+  `https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js`
+끝
+  `https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js` (SITES-16068) 정상
+* CFM-Polaris 통합을 위해 새로운 Polaris 메타데이터 API 응답 스키마를 조정합니다. (SITES-15166) 정상
+* 선택한 콘텐츠 조각을 참조하는 모든 콘텐츠 조각이 나열되어야 합니다. 대신 콘텐츠 조각 참조 패널의 에셋 참조에 0개의 참조가 표시됩니다. (SITES-15036) 정상
 
-#### 페이지 편집기{#sites-pageeditor-6518}
+#### 핵심 백엔드{#sites-core-backend-6519}
 
-* 작성자가 페이지 속성을 열면 대화 상자에 잘못된 보기가 표시됩니다. 즉, 추가 가로 스크롤 막대와 추가 여백이 표시됩니다. (SITES-14502)
-* 앵커 및 본문 태그를 위해 Experience Manager 6.5, 서비스 팩 17에 추가된 스타일로 인해 CSS 문제가 발생했습니다. Author에서 앵커 태그에 밑줄이 표시되지 않았습니다. (SITES-14261)
+* 개선 `StyleImpl`. (SITES-15164) 정상
 
-### [!DNL Assets]{#assets-6518}
-
-* 화면 판독기에서 의 확장 또는 축소 상태를 알리지 않습니다. [!UICONTROL 자르기 시작] 자산을 편집하는 동안 옵션입니다. (NPR-40593)
-* AEM 6.5.17.0 인스턴스에서 에셋을 업로드하는 동안 Experience Manager에 오류 및 경고 메시지가 표시됩니다. (ASSETS-26232)
-* 읽기 전용 액세스 권한이 있는 폴더의 에셋에 전체 액세스 권한이 있는 폴더의 에셋을 연결할 때 Experience Manager에 오류 메시지가 표시되지만 두 에셋 간에 부분 관계가 생성됩니다. (ASSETS-25832)
-* AMS 인스턴스와 Cloud Service 인스턴스 간에 연결된 에셋이 작동하지 않습니다. (ASSETS-24930)
-* 메타데이터 스키마 Forms을 편집하는 동안 [!UICONTROL 정시] 및 [!UICONTROL 해제 시간] 필드가 올바르게 저장되지 않습니다. (ASSETS-24871)
-* 교육된 태그에 대한 스마트 태그 보고서를 생성하는 동안 신뢰도 점수가 낮은 태그가 나열되지 않습니다. (ASSETS-24109)
-* Experience Manager은 열 보기에서 이미지를 편집하고 주석을 추가하는 동안 빈 화면을 표시합니다. (ASSETS-24108)
-* 화면 판독기는 컬렉션을 만드는 동안 사용자 추가 필드의 용도를 알려주지 않습니다. (ASSETS-21736)
-* 다음 **컬렉션** 레이블이 컬렉션 속성 페이지에서 현지화되지 않습니다. (ASSETS-21102)
-* 기본 메타데이터 스키마 양식을 사용하여 규칙을 추가하거나 기존 규칙을 편집할 때 드롭다운 목록의 언어는 현지화되지 않습니다. (ASSETS-21026)
-* Experience Manager이 메타데이터 스키마에 JSON 경로를 추가할 때 현지화되지 않은 오류 메시지를 표시합니다. (ASSETS-21025)
-* 왼쪽 탐색의 타임라인 옵션에 적절한 대비 비율이 표시되지 않습니다. (ASSETS-17348)
-* 달력 요소에서는 필수 ARIA 속성을 사용하지 않습니다. (ASSETS-17282)
-* 왼쪽 탐색 텍스트에 적절한 대비 비율이 표시되지 않습니다. (ASSETS-17268)
-* Lightbox 이미지가 화면 판독기 사용자에게 표시되지 않습니다. (ASSETS-17263, ASSETS-17242)
-* 활성 사용자 인터페이스의 상태는 배경에 대해 적절한 콘트라스트 비율을 제공하지 않는다. (ASSETS-17260)
-* 에셋에 주석을 추가하는 동안 화면 판독기에서 [!UICONTROL 다른 버전으로 저장] 또는 [!UICONTROL 워크플로우 시작] 단추를 클릭합니다. (ASSETS-17253)
-* 특정 ARIA 역할에는 자산 홈 페이지의 적절한 하위 역할이 포함되어 있지 않습니다. (ASSETS-17248)
-* 키보드를 사용하여 이미지 유형의 자산에 대한 편집 옵션으로 이동할 때 [!UICONTROL 맵 실행] 옵션이 인식되지 않고 키보드 포커스가 [취소] 단추로 이동합니다. (ASSETS-17238)
-
-#### [!DNL Dynamic Media]{#assets-dm-6518}
-
-* VTT를 다운로드하지 못하면 비디오가 표시되지 않습니다. 영상 스크러버가 앞으로 나아가는 모습이 보이는 가운데 빈 화면을 보여준다. (ASSETS-21909)
-* 키보드에서 Tab을 사용하여 탐색할 때 비디오 아래에 있는 여러 컨트롤로 포커스가 이동하지 않습니다. 따라서 액세스할 수 없습니다. 대화형 비디오에 대한 키보드 탐색이 개선되었습니다. (ASSETS-25749)
-* Dynamic Media 구성 요소에 표시되는 비활성화된 뷰어 사전 설정을 수정했습니다. (ASSETS-22922)
-* 일반 설정 보안 탭에서 &quot;이미지 제공&quot;을 제거했습니다. (ASSETS-24618)
-* Dynamic Media 및 StringIndexOutOfBoundsException에 업로드하지 못하는 자산을 수정했습니다. (ASSETS-25787)
-* &#39;기본&#39; 탭에 필수 &#39;폭&#39; 편집 필드에 대한 시각적 별표가 추가되었습니다. (ASSETS-25741)
-* 워터마크 Dynamic Media 렌디션 다운로드가 수정되었습니다. (ASSETS-26173)
-* 비디오가 아닌 에셋 이름에 대한 127자 제한을 복원했습니다. (ASSETS-26074)
-
-### [!DNL Forms]{#forms-6518}
-
-<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release. -->
-
-* **문서 서비스**
-   * 사용자가 transformPDF 서비스를 사용할 때 다음과 같은 예외로 실패합니다. `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957)
-   * PDF 문서를 생성하는 동안 서버가 종료되면 서버 시작 후 작업 처리 오류가 발생합니다. 서버를 시작하는 동안 -Dcom.adobe.livecycle.dsc.deferServiceStart=true 인수를 추가해야 합니다. (FORMS-9836)
-   * 사용자가 AssemblerService.Invoke 메서드를 사용하여 PDF을 병합하려고 하면 어셈블러가 작업을 수행하지 못합니다. (FORMS-9550)
-   * OSGI 및 JEE 환경에서 AEM 6.5.15.0 서비스 팩으로 업그레이드하면 특정 템플릿을 사용하는 어셈블러 서비스가 작동하지 않습니다. (FORMS-9355, FORMS-9445, FORMS-9408)
-   * XMLFormService에 대한 전역 시간 제한이 적절한 값으로 구성되지 않아 Java™ 가비지 수집에서 AEM Forms OSGi 서버의 오래된 힙을 지울 수 없습니다. (FORMS-9384, FORMS-9035)
-   * 적응형 양식의 PDF 미리 보기를 렌더링하는 동안 원하지 않는 Java™ 스택 덤프가 오류 로그에 표시됩니다. (FORMS-8865)
-   * 사용자가 문서 세부 정보 섹션의 문서에 대한 문서 상태를 검토할 때 올바르게 표시되지 않습니다. (FORMS-8946, FORMS-10424)
-   * 사용자가 AEM Forms으로 업그레이드하여 sendToPrinter 서비스를 사용할 때 힙 사용률이 지속적으로 증가합니다. (FORMS-10148)
-   * JBoss® 7.4 EAP 서버에서 이메일 기능이 `java.io.IOException`. (FORMS-10138)
-   * 사용자가 transformPDF 서비스를 사용할 때 다음 오류로 실패합니다. `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml`(FORMS-9957)
-   * AEM 서비스 팩 6.5.14.0으로 업그레이드한 후 특정 템플릿을 사용할 때 어셈블러 서비스에 문제가 발생합니다. (FORMS-9445, FORMS-9408)
-  <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
-* **적응형 양식**
-   * 사용자가 다른 필드의 값을 설정하는 등 필드를 수정하지 않고 사용자 정의 함수를 호출하려고 하면 실패합니다. (FORMS-9921)
-   * 적응형 양식에서 규칙 편집기의 사용자 지정 오류 함수로 작업하는 동안 다음 오류가 발생합니다.
-      * 사용자가 @param 를 사용하려고 할 때{boolean} 함수를 사용하면 규칙 편집기에서 부울 값을 함수에 전달할 수 없습니다.
-      * 사용자가 @param 를 사용하려고 할 때{string} 함수를 사용하면 규칙 편집기가 선택적 값을 전달하지 못하고 불완전한 규칙에 대한 경고를 표시합니다. (FORMS-9816, FORMS-9815)
-   * 양식 사용자 그룹이 적응형 양식에서 규칙 편집기를 두 번 호출하지 못합니다. (FORMS-9051)
-   * 시각적 편집기에서 사용자가 Form 개체를 선택하면 필드의 값 대신 전체 필드 인스턴스 개체가 사용자 지정 함수에 전달됩니다. (FORMS-10015)
-   * 사용자가 핵심 구성 요소 기반 적응형 양식을 만들고 텍스트 입력 구성 요소를 추가하면 `Is Empty` 및 `Is Not Empty` 규칙 편집기에서 작동하지 않습니다. (FORMS-10098)
-   * 필드가 적응형 양식 기반의 핵심 구성 요소에서 유효하지 않은 것으로 표시되면 필드에서 변경 이벤트가 시작됩니다. (FORMS-10087)
-   * 사용자가 복잡한 JSON 스키마를 사용하여 적응형 양식을 만들려고 하면 실패합니다. 오류는 다음과 같이 발생합니다.
-     `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`을 따르지 않는 경우입니다. (FORMS-9639)
-   * 적응형 양식에서 사용자가 &quot;약관에 동의함&quot; 확인란을 비활성화하면 사용자가 아래로 스크롤할 때 다시 활성화됩니다. (FORMS-9458)
-   * 사용자가 Google Chrome/Firefox를 사용하여 Android™ 장치에서 적응형 양식을 열고 텍스트 상자에 최대 허용 문자를 입력하면 텍스트 상자의 값이 지워지지 않습니다. (FORMS-9354)
-   * 확인란의 레이블에 &#39;,&#39;, &#39;/&#39; 또는 &#39;.&#39;와 같은 특수 문자가 포함된 경우 텍스트/레이블을 클릭해도 해당 확인란이 선택되지 않습니다. (FORMS-9313)
-   * 사용자가 약관 구성 요소의 유효성을 검사하려고 할 때 구성 요소가 포커스에 있지 않은지 확인하는 데 실패하고 다른 구성 요소는 유효성 검사를 받습니다. (FORMS-8725, FORMS-8913)
-   * AEM 6.5.16.0 서비스 팩으로 업그레이드한 후 적응형 양식을 다시 로드하면 첨부 파일을 검색할 수 없습니다. (FORMS-8906)
-   * XDP를 기반으로 하는 적응형 양식에서 확인란 구성 요소에 숫자 값이 지정된 텍스트 제목이 포함되어 있으면 텍스트 제목이 잘리고 지정된 값과 일치하지 않습니다. (FORMS-8743)
-   * 사용자가 작성자 환경을 위한 적응형 양식에 포함된 조각에 소극적 로드를 구현하려고 하면 조각에 대해 정의된 규칙/논리가 양식에 반영되지 않습니다. (FORMS-8554, FORMS-9182)
-   * AEM 6.5.16.0 서비스 팩에서 Coral 대화 상자를 열려고 하면 가 생성됩니다. `error.log: cannot render resource` 예외. (FORMS-8942)
-   * 사용자가 적응형 양식의 단일 옵션이 있는 확인란을 번역할 때 실패합니다. (FORMS-10181)
-   * 모든 기록 문서(DoR) 템플릿을 게시할 수 없습니다. 영어 로케일 기반 DoR 템플릿과 관련 Forms 기반 DoR 템플릿만 게시됩니다. (FORMS-10535)
-
-* **접근성**
-   * 적응형 양식에서 스크리블 서명 구성 요소를 사용할 때 다음 오류가 발생합니다.
-      * 스크리블 서명 구성 요소 뒤에 구성 요소가 더 있으면 Tab 키를 눌러도 서명 대화 상자로 이동하지 않고 대신 다음 구성 요소로 이동합니다. 모든 구성 요소를 트래버스한 후에만 최종적으로 서명 대화 상자로 이동합니다.
-      * 사용자가 브러쉬 또는 키보드를 사용하여 서명 대화 상자에 서명할 때 Enter 키를 눌러도 대화 상자가 닫히지 않습니다.
-      * 키보드를 사용하여 서명 지우기 확인 대화 상자에 액세스할 수 없습니다.
-      * 화면 판독기가 대화 상자에 입력한 정보를 읽지 못합니다.
-      * 마우스를 사용하지 않으면 서명을 지울 수 없습니다. (FORMS-9317)
-   * 사용자가 적응형 양식을 제출할 때 화면 판독기가 필수 필드에 대한 오류 메시지를 읽지 못합니다. (FORMS-9316)
-   * 화면 판독기가 HTML 양식을 읽을 때 커닝(간격)으로 텍스트를 읽는 동안 문제가 발생합니다. (FORMS-9258)
-   * 적응형 양식에서 텍스트에 연결된 참조/각주는 화면 판독기를 사용하여 호출되지 않습니다. (FORMS-8920)
-   * 최신 디자이너에서는 접근성 태그가 제대로 인식되지 않습니다. (FORMS-10139)
-* **대화형 통신**
-   * 서신 관리에서 현지화가 작동하지 않습니다. (FORMS-8926)
-   * publishAll 서비스를 사용하면 초안 문자가 열리지 않습니다. (FORMS-8589)
-   * Experience Manager 후, 서비스 팩 16이 서버에 설치되면 모든 대화형 통신 편지가 이러한 문자를 편집하려고 하면 작동을 멈추기 시작합니다. 속성 페이지를 미리 보거나 보기/편집할 샘플 페이로드를 제공하면 작동합니다. 그러나 글자를 편집할 수는 없습니다. (FORMS-9067)
-
-
-<!-- ### [!DNL Commerce]{#commerce-6518}
+<!--#### Core Components{#sites-core-components-6519}
 
 * A -->
 
-### Foundation{#foundation-6518}
+#### Campaign 통합{#sites-campaign-integration-6519}
 
-#### 컨텐츠 배포{#foundation-content-distribution-6518}
+* 서명 구성 요소(`/apps/fpl/components/campaign/signature`), 링크 외부화가 작동하지 않았습니다. 이미지 태그 위의 HTML 주석을 제거한 경우 도메인이 이미지 소스에 추가되지 않았습니다. 이 문제는 스테이징 환경이 아닌 프로덕션 환경의 서명 구성 요소에서만 발견되었습니다. (SITES-16120) 정상
 
-* 자산 삭제 큐를 차단해서는 안 되며 로그 파일에 오류가 발생하지 않아야 합니다. (NPR-40570)
-
-<!-- #### Integrations{#integrations-6518}
+<!--#### Experience Fragments{#sites-experiencefragments-6519}
 
 * A -->
 
-<!-- #### Oak{#oak-6518}
+#### 기초 구성 요소 (기존){#sites-foundation-components-legacy-6519}
+
+* Adobe Experience Manager(AEM) Sites 검색 구성 요소가 사용자 인터페이스를 중단합니다. (SITES-15087) 정상
+
+#### GraphQL 쿼리 편집기{#sites-graphql-query-editor-6519}
+
+* GraphQL Editor 사용자 인터페이스에서는 쿼리 수가 많은 경우(예: 25개 이상) 모든 지속 쿼리를 스크롤할 수 없습니다. (SITES-16008) 메이저
+* GraphQL 편집기에서 지속 쿼리의 게시 상태를 저장하지 않습니다. GraphQL 편집기에 게시 취소 버튼이 표시되지만, 지속된 쿼리가 게시되었음을 나타내는 아이콘이 표시되지 않습니다. 페이지를 새로 고치면 지속 쿼리가 게시되지 않은 것으로 표시됩니다. (SITES-15858) 메이저
+
+#### 론치{#sites-launches-6519}
+
+* 다음 이유로 인해 저장소의 변경 사항이 저장되지 않음 `Oak0001` 여러 페이지를 편집하거나 콘텐츠를 작성할 때 충돌합니다. 이러한 이벤트에서 재시도를 수행하는 것은 일반적이지만, 이는 발생하지 않습니다. (SITES-14840) 메이저
+
+#### MSM - 라이브 카피{#sites-msm-live-copies-6519}
+
+* MSM 롤아웃 버튼은 터치 그래픽 사용자 인터페이스에서 작동하지 않습니다. (SITES-16991) 메이저
+* 라이브 카피를 만들거나 경험 조각을 롤아웃할 때 경험 조각 내에서 링크 참조가 업데이트되지 않습니다. (SITES-15460) 정상
+
+#### 페이지 편집기{#sites-pageeditor-6519}
+
+* 에셋 유형 필터에서 여러 문서 파일 유형 선택이 페이지 콘솔에서 작동하지 않습니다. 특정 파일 유형의 결과를 사용할 수 있어도 결과를 찾을 수 없습니다. 따라서 작성자가 여러 문서를 필터링할 수 없습니다. 여러 문서 유형을 사용해야 하며 한 번에 하나씩 필터링해야 합니다. (SITES-14047) 메이저
+* AEM 6.5.17 및 AEM 6.5.18에서 인스턴스를 업그레이드한 후 페이지 편집기 내에서 을 선택합니다. **[!UICONTROL 페이지 게시]**&#x200B;가 없는 URL로 리디렉션됩니다. 사용자는 게시 마법사로 리디렉션되어야 합니다. (SITES-15856) 정상
+* (SITES-15704) 정상
+* 운영 체제의 클립보드에서 붙여넣는 동안 AEM 클립보드에서 중복 복사됩니다. (SITES-15704) 정상
+* 에셋에서 선택 **[!UICONTROL 문서]**, 다음 아래 **[!UICONTROL 필터 유형]**, 선택 **[!UICONTROL Microsoft® Word]** 또는 **[!UICONTROL Microsoft® Excel]** 두 유형의 파일이 모두 있어도 결과를 표시하지 않습니다. (SITES-14837) 정상
+
+### [!DNL Assets]{#assets-6519}
+
+* Experience Manager 또는 Brand Portal에 게시할 자산을 구분할 수 없습니다. [NPR-41320]
+* 공용 폴더를 만들거나 저장하면 관리 대시보드에 세 개의 그룹이 만들어집니다. [ASSETS-26700]
+* 검색 패널에서 확인란을 선택하고 둘 중 하나를 선택 취소하면 모든 확인란이 선택 취소됩니다. [ASSETS-26377]
+
+#### [!DNL Dynamic Media]{#assets-dm-6519}
+
+* 에셋이 AEM에 업로드되면 `update_asset` 워크플로우가 트리거됩니다. 워크플로우가 완료되지 않습니다. 워크플로 인스턴스를 보면 워크플로가 제품 업로드 단계까지 완료됩니다. 다음 단계는 scene7 일괄 업로드입니다. 사용자는 Dynamic Media Classic 앱에서 자산이 Scene7에 있음을 볼 수 있습니다. (ASSETS-30443) 위험
+* 사용자 지정 서블릿(API 끝점)이 잘못된 Dynamic Media(Scene7) 파일 이름을 반환하고 있습니다. 에셋을 삭제하고 동일한 이름의 에셋으로 대체할 때 발생합니다. 사용자 지정 서블릿은 이전 Dynamic Media(Scene7) 파일 이름을 반환하고 있지만 &quot;jcr&quot; API 호출은 올바른 파일 이름을 반환합니다. (ASSETS-29476) 주
+* 폴더 수준에서 동기화가 꺼진 후에도 로그에 &quot;Scene7 ReplicateOnModifyListener&quot; 트리거가 표시됩니다. 다음 `ReplicateOnModifyListener/Worker` 비 Dynamic Media 폴더 자산 및 컨텐츠 조각에 대한 처리를 건너뜁니다. (ASSETS-26705) 주
+* 고대비 흑백 모드의 드롭다운 요소(컨텐츠 전용, 보기, 추가 옵션)에 초점이 표시되지 않으면 시력이 낮은 사람이 영향을 받습니다. (ASSETS-25759) 정상
+* 페이지의 텍스트에 대한 광도 대비율 이 4.5:1 미만인 경우 시력이 낮은 사람이 영향을 받습니다. (ASSETS-25756) 정상
+* 화면 판독기에서 데이터를 제출한 후 표시된 팝업 메시지에 내레이션이 적용되지 않습니다. (ASSETS-25755) 정상
+* 랜드마크/영역 단축키를 사용하여 탐색할 때 화면 판독기가 페이지의 랜드마크(Dynamic Media, 비디오 인코딩 프로필 만들기)를 인식하지 못합니다 `D/R`. (ASSETS-25752) 정상
+* 랜드마크/영역 단축키를 사용하여 탐색할 때 화면 판독기가 페이지에서 여러 랜드마크를 인식하지 못합니다(Dynamic Media; 대화형 비디오 만들기) `D/R`. (ASSETS-25750) 정상
+* 화면 판독기(NVDA/JAWS/내레이터)가 의 랜드마크를 인식하지 못합니다. **에셋 편집** 단축키를 사용하여 탐색하는 동안 페이지 `D/R`. (ASSETS-25744) 정상
+* 사용자가 empty/false 비동기 작업 메시지를 가져오지만 연결된 자산이 게시되었습니다. (ASSETS-29342) TRIVIAL
+
+### [!DNL Forms]{#forms-6519}
+
+의 수정 사항 [!DNL Experience Manager] Forms은 예약한 후 1주일 후에 별도의 추가 기능 패키지를 통해 제공됩니다 [!DNL Experience Manager] 서비스 팩 릴리스 날짜. 이 경우 AEM 6.5.19.0 Forms 추가 기능 패키지 릴리스가 2023년 11월 30일 목요일에 예정되어 있습니다. Forms 수정 사항 및 개선 사항 목록은 릴리스를 게시하는 이 섹션에 추가됩니다.
+
+* 액세스 제어 목록 추가 `fd-cloudservice` 아래에서 Microsoft® 구성을 읽거나 업데이트할 수 있는 사용자 `cloudconfigs/microsoftoffice`. (FORMS-11142) 정상
+
+<!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
+* **Document Services**
+  * text
+* **Adaptive Forms** 
+  * text
+* **Accessibility**
+  * text
+* **Interactive Communications**
+  * text -->
+
+<!--### Commerce{#commerce-6519}
 
 * A -->
 
-#### Platform{#foundation-platform-6518}
+### Foundation{#foundation-6519}
 
-* 바닐라 Experience Manager, 서비스 팩 17을 설치한 후 `stderr.log`. 바닐라 설치는 오류가 발생하지 않습니다. (CQ-4353637)
-* 태깅 화면의 만들기 단추는 ACL(액세스 제어 목록)과 관련이 없습니다. (NPR-40973)
-* Experience Manager 시 ContextHub의 캐시 노드를 만들거나 액세스할 수 없음. (NPR-40515)
+* 언어 루트 수준에서 언어 사본을 만들어도 페이지의 경로가 조정되지 않습니다. 언어 루트가 아닌 그 아래의 페이지에 대한 언어 사본이 작성된 경우 경로가 올바르게 변경되었습니다. (NPR-41364) 메이저
+* &quot;상대적 날짜 표시&quot; 도구 설명은 키보드에서 Esc(Esc)를 눌러야만 닫을 수 있습니다. 사용자가 사용자 인터페이스의 일부를 선택하면 툴팁이 닫힙니다. (NPR-41394) 정상
+* 지역화되지 않은 문자열 `Something went wrong while adding the private key.` 에서 잘못된 개인 키 파일을 추가할 때 **사용자 편집** > **키 저장소**. (NPR-41366) 정상
+* 아이콘은 AEM 6.5 환경에서 Microsoft® SharePoint 및 Microsoft® One Drive에 필요합니다. (NPR-41354) 정상
+* 현지화되지 않은 &quot;UserId/Password 불일치&quot; 문자열 **보안** > **사용자** > **만들기** 대화 상자. (NPR-41245) 정상
+* 팝오버 코드와 이벤트 핸들러가 두 번 로드되어 사용자가 만든 Coral3 기반 사용자 인터페이스가 끊어집니다. (NPR-41171) 정상
+* AEM Sites 콘솔에서 &quot;모두 선택&quot;을 사용한 후에는 선택 해제가 제대로 작동하지 않습니다. (NPR-41304) 마이너
 
-#### 복제{#foundation-replication-6518}
+<!--#### Content distribution{#foundation-content-distribution-6519}
 
-* 복제 플러시는 요청된 경로의 모든 하위 항목을 삭제합니다. (NPR-40569)
+* T -->
 
-#### 슬링{#foundation-sling-6518}
+#### 통합{#integrations-6519}
 
-* 링크 공유 보고서가 생성되면 링크 열에 올바른 값이 포함되지 않습니다. (NPR-40798)
-* AEM 6.5.15.0을 사용하면 AEM을 다시 시작한 후 모든 vanity URL, sling 별칭 및 sling 매핑이 끊어집니다. (NPR-40420)
+* AEM 이메일 캠페인의 SMS 링크가 올바르게 작성되지 않습니다. 여기에는 HTML 앵커 요소가 포함되어 있습니다. (NPR-41211) 메이저
+* 계정 구성 화면에서 사용된 문구는 새 자격 증명 유형을 사용하지 않아야 합니다. (NPR-41210) 정상
+* 에서 Analytics 보고서 가져오기 스케줄러 이동 `ManagedPollConfig` 슬링 작업. 서로 다른 두 개의 분석 프레임워크가 서로 다른 보고서 세트를 사용하여 서로 다른 두 사이트에 연결된 경우 `ManagedPollConfig` 이 중 하나만 설문 조사합니다. (NPR-41209) 정상
+* 값이 기본값으로 재설정되면 이전에 선택한 일정 버튼이 활성 상태로 유지됩니다. AEM의 컨텐츠 인사이트 대시보드에서 기본적으로 시간대는 주로 설정되며 컨텐츠 인사이트를 주별 데이터로 표시합니다. 이제 사용자가 시간, 일, 월 및 년과 같은 다른 시간대 옵션을 선택하면 선택한 값에 따라 데이터가 변경됩니다. 그러나 값이 재설정되면 기본적으로 표시되는 시간대는 주이지만 이전에 선택한 시간대 옵션이 선택됩니다. (NPR-41246) 마이너
 
-#### 번역 프로젝트{#foundation-translation-6518}
+#### Oak{#oak-6519}
 
-* 번역 `rules.xml` 번역 구성 사용자 인터페이스에서 규칙이 추가되면 정렬되지 않습니다. (NPR-40431)
-* 번역 중에 쿼리 매개 변수를 사용하는 링크를 지원합니다. (NPR-40339)
-* 추가 컨텍스트 루트를 업데이트한 후 고객에 대해 사전 사용자 인터페이스를 로드할 수 없습니다. (NPR-40650)
-* 자산 중 하나가 ReferenceFragment 또는 ContentFragment 유형이 있는 다중 필드가 포함된 콘텐츠 조각인 경우 언어 사본을 만드는 동안 오류가 발생했습니다. (NPR-40892)
+* 비동기 인덱싱이 지연될 경우 AEM에 대한 쓰기 제한 속도를 계산하는 백포트 유틸리티입니다. (NPR-40985) 메이저
 
-#### 사용자 인터페이스{#foundation-ui-6518}
+#### Platform{#foundation-platform-6519}
 
-* 에 설명된 대로 [구성 브라우저 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#using-configuration-browser), _이름 은 저장소의 노드 이름이 됩니다_. 단, 구성 브라우저에서는 구성 제목 이 CRXDE Lite의 경로에 사용되며 구성 이름은 무시됩니다. (NPR-40607)
+* 대괄호가 있는 QueryBuilder 쿼리가 xpath 로 잘못 변환됩니다. (NPR-41298) 정상
 
-<!-- #### WCM{#wcm-6518}
+<!--#### Replication{#foundation-replication-6519}
+
+* R -->
+
+<!--#### Sling{#foundation-sling-6519}
+
+* W -->
+
+#### 번역 프로젝트{#foundation-translation-6519}
+
+* 페이지 &quot;A&quot;의 언어 사본을 만드는 동안 참조된 페이지, 경험 조각, 콘텐츠 조각 및 에셋의 언어 사본을 자동으로 만들어야 합니다. 또한 새 경로에 있는 페이지 &quot;A&quot;의 새로 만든 언어 사본에는 해당 참조가 페이지, 경험 조각, 콘텐츠 조각 및 에셋의 새로 만든 각각의 언어 사본으로 업데이트되어야 합니다. (NPR-41076) 정상
+
+<!--#### User interface{#foundation-ui-6519}
 
 * A -->
 
-#### 워크플로{#foundation-workflow-6518}
+<!--#### WCM{#wcm-6519}
 
-* 에셋 버전을 되돌리면 에셋 상태가 처리 모드로 유지됩니다. (NPR-41029)
-* 자산 및 프로젝트 사용자 인터페이스에서 정렬 문제. 일부는 비즈니스 요구 사항에 따라 에셋 및 프로젝트 사용자 인터페이스에 사용자 정의 열을 오버레이했습니다. 기본 제공 속성을 사용하여 정렬을 구현했습니다 `sortable=true`. 하지만 프로젝트 또는 Assets 사용자 인터페이스 아래에 많은 항목이 있는 경우 정렬에서 불일치가 표시됩니다. (NPR-41027)
-* 로그가 다음으로 채워짐 `NullPointerException` 다음에서 `EMailNotificationService`워크플로우가 전송해야 하는 , 및 이메일이 전송되지 않습니다. (NPR-40898)
-<!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST  * The timeline is not providing references to the selected content. (NPR-40806) -->
+* A -->
+
+#### 워크플로{#foundation-workflow-6519}
+
+* 받은 편지함에서 작업을 완료할 수 없습니다. 작업을 완료하고 작업을 선택하려고 할 때 드롭다운 메뉴에 &quot;정의되지 않은&quot; 값만 표시됩니다. 즉, 사용자가 AEM 6.5.18 서비스 팩을 적용할 수 없습니다. (NPR-41402) 메이저
+* 받은 편지함에서 작업을 완료할 수 없습니다. zip 파일, 에셋 보고서, 이동(성공 또는 실패) 또는 에셋 만료에 대한 작업을 완료하려고 할 때 드롭다운 목록에 값이 없음(&quot;정의되지 않음&quot;만 해당). (NPR-41305) 메이저
+* 사용자가 선택할 때 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > 인스턴스, 실행 중인 워크플로우를 선택한 다음 를 선택합니다 **[!UICONTROL 페이로드 보기]**&#x200B;로 설정하면 500개의 오류 페이지가 표시됩니다. (NPR-41325) 정상
+
 
 ## 설치 [!DNL Experience Manager] 6.5.18.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.18.0을 사용하려면 [!DNL Experience Manager] 6.5. 참조 [업그레이드 설명서](/help/sites-deploying/upgrade.md) 자세한 지침은 을 참조하십시오. <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.19.0을 사용하려면 [!DNL Experience Manager] 6.5. 참조 [업그레이드 설명서](/help/sites-deploying/upgrade.md) 자세한 지침은 을 참조하십시오. <!-- UPDATE FOR EACH NEW RELEASE -->
 * 서비스 팩은 Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip)에서 다운로드할 수 있습니다.
-* MongoDB 및 여러 인스턴스가 포함된 배포에서 다음을 설치합니다. [!DNL Experience Manager] 패키지 관리자를 사용하는 작성자 인스턴스 중 하나에서 6.5.18.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+* MongoDB 및 여러 인스턴스가 포함된 배포에서 다음을 설치합니다. [!DNL Experience Manager] 패키지 관리자를 사용하는 작성자 인스턴스 중 하나에서 6.5.19.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe은 를 제거하거나 제거하지 않는 것이 좋습니다. [!DNL Experience Manager] 6.5.18.0 패키지. 따라서 팩을 설치하기 전에 `crx-repository` 혹시라도 돌려주셔야 할 것 같은데요 <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe은 를 제거하거나 제거하지 않는 것이 좋습니다. [!DNL Experience Manager] 6.5.19.0 패키지. 따라서 팩을 설치하기 전에 `crx-repository` 혹시라도 돌려주셔야 할 것 같은데요 <!-- UPDATE FOR EACH NEW RELEASE -->
 <!-- For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
@@ -304,20 +260,20 @@ JEE의 AEM 6.5 Forms Adobe 환경에 최신 소프트웨어를 설치하거나 �
 
 **자동 설치**
 
-를 사용하여 자동으로 설치할 수 있는 두 가지 방법이 있습니다 [!DNL Experience Manager] 6.5.18.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+를 사용하여 자동으로 설치할 수 있는 두 가지 방법이 있습니다 [!DNL Experience Manager] 6.5.19.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다. 패키지가 자동으로 설치됩니다.
 * [패키지 관리자에서 HTTP API](/help/sites-administering/package-manager.md#package-share)를 사용합니다. 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
 
 >[!NOTE]
 >
->Experience Manager 6.5.18.0은 Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Experience Manager 6.5.19.0은 Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **설치 확인**
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 다음을 참조하십시오. [기술 요구 사항](/help/sites-deploying/technical-requirements.md).
 
-1. 제품 정보 페이지(`/system/console/productinfo`) 업데이트된 버전 문자열을 표시합니다 `Adobe Experience Manager (6.5.18.0)` 아래에 [!UICONTROL 설치된 제품]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`) 업데이트된 버전 문자열을 표시합니다 `Adobe Experience Manager (6.5.19.0)` 아래에 [!UICONTROL 설치된 제품]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
@@ -341,7 +297,7 @@ GraphQL을 사용하는 고객은 [GraphQL 인덱스 패키지 1.1.1로 Experien
 
 ### UberJar{#uber-jar}
 
-에 대한 UberJar [!DNL Experience Manager] 6.5.18.0은 [Maven Central 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.18/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+에 대한 UberJar [!DNL Experience Manager] 6.5.19.0은 [Maven Central 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.18/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/help/sites-developing/ht-projects-maven.md) 프로젝트 POM에 다음 종속성을 포함하십시오. <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -349,7 +305,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.18</version>
+     <version>6.5.19</version>
      <scope>provided</scope>
 </dependency>
 ```
@@ -370,9 +326,9 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* **서비스 팩 18(6.5.18.0)로 업그레이드한 후 페이지 편집기에서 페이지 게시가 작동하지 않음**
+* **서비스 팩 18(6.5.19.0)로 업그레이드한 후 페이지 편집기에서 페이지 게시가 작동하지 않음**
 
-  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> AEM 6.5.0.0—6.5.17.0의 인스턴스를 AEM 6.5.18.0으로 업그레이드한 후 **페이지 게시** 페이지 편집기 내에서 존재하지 않는 URL로 리디렉션됩니다.
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> AEM 6.5.0.0—6.5.17.0의 인스턴스를 AEM 6.5.19.0으로 업그레이드한 후 **페이지 게시** 페이지 편집기 내에서 존재하지 않는 URL로 리디렉션됩니다.
 
   이 문제를 해결하려면 다음 중 하나를 수행하십시오.
 
@@ -472,7 +428,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 #### 설치
 
 * JBoss® 7.1.4 플랫폼에서 사용자가 Experience Manager 6.5.16.0 이상의 서비스 팩을 설치하면 `adobe-livecycle-jboss.ear` 배포가 실패합니다. (CQ-4351522, CQDOC-20159)
-* Windows Server 2022에서 AEM Forms 6.5.18.0 JBoss 턴키 전체 설치 관리자 환경으로 업그레이드한 후 Java 11을 사용하여 출력 클라이언트 응용 프로그램 코드를 컴파일할 때 다음 컴파일 오류가 발생할 수 있습니다.
+* Windows Server 2022에서 AEM Forms 6.5.18.0 JBoss® Turnkey 전체 설치 관리자 환경으로 업그레이드한 후 Java™ 11을 사용하여 출력 클라이언트 응용 프로그램 코드를 컴파일할 때 다음 컴파일 오류가 발생할 수 있습니다.
 
   ```
   error: error reading [AEM_Forms_Installation_dir]\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
@@ -488,8 +444,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
       > 즉석 편집 도구(예: 7-zip)를 사용하여 `Manifest.mf` 파일.
 
    1. 업데이트된 을 저장합니다. `Manifest.mf` 다음에서 `adobe-output-client.jar` 보관.
-   1. 수정된 내용 저장 `adobe-output-client.jar` 파일을 만들고 설치 프로그램을 다시 실행합니다.  (CQDOC-20878)
-* AEM 서비스 팩 6.5.18.0 전체 설치 관리자를 설치한 후 JBoss® 턴키를 사용하여 JEE에서 EAR 배포가 실패합니다.
+   1. 수정된 내용 저장 `adobe-output-client.jar` 파일을 만들고 설치 프로그램을 다시 실행하십시오. (CQDOC-20878)
+* AEM 서비스 팩 6.5.19.0 전체 설치 관리자를 설치한 후 JBoss® 턴키를 사용하여 JEE에서 EAR 배포가 실패합니다.
 문제를 해결하려면 `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` 파일 및 업데이트 `Adobe_Adobe_JAVA_HOME` 끝 `Adobe_JAVA_HOME` 구성 관리자를 실행하기 전에 발생하는 모든 발생 횟수. (CQDOC-20803)
 
 #### 적응형 양식
@@ -510,10 +466,10 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
-다음 텍스트 문서는에 포함된 OSGi 번들 및 콘텐츠 패키지 목록입니다. [!DNL Experience Manager] 6.5.18.0: <!-- UPDATE FOR EACH NEW RELEASE -->
+다음 텍스트 문서는에 포함된 OSGi 번들 및 콘텐츠 패키지 목록입니다. [!DNL Experience Manager] 6.5.19.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [Experience Manager 6.5.18.0에 포함된 OSGi 번들 목록](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Experience Manager 6.5.18.0에 포함된 컨텐츠 패키지 목록](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager 6.5.19.0에 포함된 OSGi 번들 목록](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager 6.5.19.0에 포함된 컨텐츠 패키지 목록](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 제한된 웹 사이트{#restricted-sites}
 

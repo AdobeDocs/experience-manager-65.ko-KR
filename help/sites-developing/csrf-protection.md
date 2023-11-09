@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 5%
+source-wordcount: '247'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +27,7 @@ Apache Sling Referrer Filter 외에도 Adobe은 이러한 유형의 공격으로
 
 ### 종속성 {#dependencies}
 
-를 사용하는 모든 구성 요소 `granite.jquery` 종속성은 CSRF 보호 프레임워크를 자동으로 활용할 수 있습니다. 그렇지 않은 경우 컴포넌트를 선언해야 합니다. `granite.csrf.standalone` 프레임워크를 사용하기 전에
+를 사용하는 모든 구성 요소 `granite.jquery` 종속성은 CSRF 보호 프레임워크를 자동으로 활용할 수 있습니다. 그렇지 않은 경우 컴포넌트의 종속성을 선언해야 합니다. `granite.csrf.standalone` 프레임워크를 사용하기 전에
 
 ### 암호화 키 복제 {#replicating-crypto-keys}
 

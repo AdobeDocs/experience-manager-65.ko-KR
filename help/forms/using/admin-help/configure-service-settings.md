@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10692'
 ht-degree: 0%
@@ -610,9 +610,9 @@ Repository Provider Service는 Provider Service에 대한 인터페이스 역할
 
 **TSP 서버 URL:** 기본 타임스탬프 공급자의 URL입니다. 일부 유효한 값이 제공된 경우에만 사용됩니다. 기본값이 없습니다.
 
-**TSP 서버 사용자 이름:** 타임스탬프 공급자에 필요한 경우 사용자 이름입니다. URL에 대해 유효한 값이 제공된 경우에만 사용됩니다. 기본값이 없습니다.
+**TSP 서버 사용자 이름:** 타임스탬프 공급자가 필요한 경우 사용자 이름입니다. URL에 대해 유효한 값이 제공된 경우에만 사용됩니다. 기본값이 없습니다.
 
-**TSP 서버 암호:** 타임스탬프 공급자가 필요로 하는 경우 위의 사용자 이름에 대한 암호입니다. URL 및 사용자 이름에 유효한 값이 제공된 경우에만 사용됩니다. 기본값이 없습니다.
+**TSP 서버 암호:** 타임스탬프 공급자가 필요한 경우 위의 사용자 이름에 대한 암호입니다. URL 및 사용자 이름에 유효한 값이 제공된 경우에만 사용됩니다. 기본값이 없습니다.
 
 **요청 해시 알고리즘:** 타임스탬프 공급자에 대한 요청을 만드는 동안 사용할 해싱 알고리즘을 지정합니다. 기본값은 SHA1입니다.
 

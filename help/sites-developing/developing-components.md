@@ -12,7 +12,7 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '3447'
 ht-degree: 2%
@@ -228,7 +228,7 @@ newComponent (cq:Component)
 
 구성 요소에 대해 스타일 및 비헤이비어를 정의하려면 전용 을 만들 수 있습니다 [클라이언트 라이브러리](/help/sites-developing/clientlibs.md) 사용자 지정 CSS/LESS 및 JS를 정의합니다.
 
-구성 요소 대화 상자용으로만 클라이언트 라이브러리를 로드하려면(즉, 다른 구성 요소용으로는 로드되지 않음) 속성을 설정해야 합니다 `extraClientlibs` 클라이언트 라이브러리를 만든 대화 상자의 범주 이름입니다. 클라이언트 라이브러리가 상당히 크고/이거나 필드가 해당 대화 상자와 관련이 있어 다른 대화 상자에 필요하지 않은 경우 이 방법을 사용하는 것이 좋습니다.
+구성 요소 대화 상자용으로만 클라이언트 라이브러리를 로드하려면(즉, 다른 구성 요소용으로는 로드되지 않음) 속성을 설정해야 합니다 `extraClientlibs` 클라이언트 라이브러리를 만든 대화 상자의 범주 이름입니다. 클라이언트 라이브러리가 상당히 크고/또는 필드가 해당 대화 상자와 관련이 있으며 다른 대화 상자에는 필요하지 않은 경우 이 방법을 사용하는 것이 좋습니다.
 
 모든 대화 상자에 대해 클라이언트 라이브러리를 로드하려면 클라이언트 라이브러리의 category 속성을 로 설정합니다. `cq.authoring.dialog`. 모든 대화 상자를 렌더링할 때 기본적으로 포함되는 클라이언트 라이브러리의 범주 이름입니다. 클라이언트 라이브러리가 작거나 필드가 일반적이고 다른 대화 상자에서 다시 사용할 수 있는 경우 이 작업을 하려고 합니다.
 

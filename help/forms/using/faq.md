@@ -12,9 +12,9 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2003'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 0%
 
 1. HTML 양식의 크기가 PDF forms의 크기보다 큰 이유는 무엇입니까?
 
-   답변: XDP를 HTML 양식으로 렌더링하려면 양식 dom, 데이터 dom 및 레이아웃 dom과 같은 중간 데이터 구조와 개체가 많이 필요합니다.
+   답변: XDP를 HTML 양식으로 렌더링하려면 양식 dom, 데이터 dom 및 레이아웃 dom과 같은 다양한 중간 데이터 구조와 개체가 필요합니다.
 
    PDF forms의 경우 Adobe Acrobat에 XTG 엔진이 내장되어 있어 중간 데이터 구조 및 개체를 만들 수 있습니다. Acrobat은 레이아웃과 스크립트도 처리합니다.
 

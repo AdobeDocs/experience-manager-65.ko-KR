@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '4834'
 ht-degree: 82%
@@ -125,7 +125,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 * 필요한 경우 [템플릿용 폴더를 만들 수](#creating-a-template-folder-admin) 있습니다.
 * [템플릿 만들기](#creatinganewtemplateauthor): 처음에 비어 있음
 
-* 필요한 경우 템플릿에 대한 [추가 속성을 정의](#definingtemplatepropertiesauthor)합니다.
+* [추가 속성 정의](#definingtemplatepropertiesauthor) 필요한 경우 템플릿용
 * [템플릿을 편집](#editingtemplates)하여 다음을 정의합니다.
 
    * [구조](#editingatemplatestructureauthor) - 템플릿으로 만든 페이지에서 변경할 수 없는 사전 정의된 콘텐츠입니다.

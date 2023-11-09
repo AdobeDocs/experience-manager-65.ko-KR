@@ -7,7 +7,7 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2451'
 ht-degree: 2%
@@ -416,7 +416,7 @@ OR 규칙을 정의하려면 다음과 같이 진행합니다.
 
    >[!NOTE]
    >
-   >필요한 경우 분기 순서를 전환할 수 있습니다.
+   >필요한 경우 분기 순서를 변경할 수 있습니다.
 
 1. 의 속성 편집 **분기 2** / **OR 분할**.
 

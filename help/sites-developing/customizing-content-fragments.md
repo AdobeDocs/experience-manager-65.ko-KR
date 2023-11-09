@@ -7,7 +7,7 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2794'
 ht-degree: 2%
@@ -234,7 +234,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
      `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-     필요한 경우 이 기능을 확장할 수 있습니다.
+     필요한 경우 이를 연장할 수 있습니다.
 
    * 각 스키마 양식은 조각 편집기와 통합됩니다.
 

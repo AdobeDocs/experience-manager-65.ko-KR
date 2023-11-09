@@ -2,7 +2,7 @@
 title: 콘텐츠 페이지 버전 작업
 description: Adobe Experience Manager에서 페이지 버전을 만들고, 비교하고, 복원합니다.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1501'
 ht-degree: 67%
@@ -36,7 +36,7 @@ ht-degree: 67%
    ![타임라인 - 다른 버전으로 저장](assets/screen-shot_2019-03-05at112335.png)
 
 1. **다른 버전으로 저장**&#x200B;을 선택합니다.
-1. 필요한 경우 **레이블** 및 **댓글**&#x200B;을 입력합니다.
+1. 입력 **레이블** 및 **댓글** 필요한 경우.
 
    ![버전 만들기 - 레이블 및 댓글 추가](assets/chlimage_1-42.png)
 

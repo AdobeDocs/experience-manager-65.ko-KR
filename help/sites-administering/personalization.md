@@ -1,18 +1,14 @@
 ---
 title: 개인화
-seo-title: Personalization
 description: 사용자에게 다이내믹 콘텐츠를 표시하는 맞춤형 환경을 제공하기 위한 Adobe Experience Manager의 개인화에 대해 알아봅니다.
-seo-description: Learn about personalization in AEM.
-uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1696'
 ht-degree: 2%
 
 ---
@@ -115,7 +111,7 @@ ht-degree: 2%
 
 * 사용자의 행동을 추적하거나 사용자 프로필을 기반으로 규칙을 설정하여 실현되는 개인화는 정확하고 논리적이어야 합니다.
 * 규칙의 부정확한 논리로 인해 사용자에게 강요되거나 거부되는 콘텐츠보다 사용자에게 더 좌절감을 주는 것은 없습니다.
-* 따라서 규칙은 전경에서 사용자의 요구 사항을 고려하여 신중하게 생각해야 합니다. 이 작업에는 많은 노력이 소요될 수 있으며 너무 적게 계산해서는 안 됩니다. 비즈니스 규칙을 정의하는 것은 개인화를 구현할 때 기술적인 노력을 능가하는 경우가 많습니다.
+* 따라서 규칙은 전경에서 사용자의 요구 사항을 고려하여 신중하게 생각해야 합니다. 이 작업에는 많은 노력이 소요될 수 있으며 과소 평가되지 않습니다. 비즈니스 규칙을 정의하는 것은 개인화를 구현할 때 기술적인 노력을 종종 능가합니다.
 
 #### 사용 시기 {#when-to-use}
 

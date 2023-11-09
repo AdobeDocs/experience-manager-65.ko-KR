@@ -6,7 +6,7 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 6%
@@ -36,7 +36,7 @@ ht-degree: 6%
 
 1. 다음에서 [!DNL Assets] 사용자 인터페이스에서 링크로 공유할 자산을 선택합니다.
 
-1. 도구 모음에서 **[!UICONTROL 링크 공유]** ![에셋 공유 아이콘](assets/do-not-localize/assets_share.png). 을 클릭한 후 생성되는 링크 **[!UICONTROL 공유]** 다음에 미리 표시됩니다. [!UICONTROL 링크 공유] 필드. 링크는 다음을 선택할 때까지 만들어지지 않습니다. **[!UICONTROL 제출]**.
+1. 도구 모음에서 **[!UICONTROL 링크 공유]** ![에셋 공유 아이콘](assets/do-not-localize/assets_share.png). 을 클릭한 후 생성되는 링크 **[!UICONTROL 공유]** 다음에 미리 표시됩니다. [!UICONTROL 링크 공유] 필드. 를 선택해야 링크가 만들어집니다. **[!UICONTROL 제출]**.
 
    ![링크 공유가 있는 대화 상자](assets/share-assets-as-link.png)
 

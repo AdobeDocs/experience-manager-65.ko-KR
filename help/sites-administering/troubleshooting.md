@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
-source-git-commit: 2f3168c9bd39926ee8cf86b48cc0daef9d783a1c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '250'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ CRX는 자세한 로그를 기록합니다. 압축을 풀고 빠른 시작을 �
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
 ```
 
-디버그할 속성입니다. DEBUG 로그 수준에서 로그를 필요 이상으로 오래 두지 마십시오. 로그가 많이 생성되기 때문입니다.
+디버그할 속성입니다. DEBUG 로그 수준에서 로그를 필요 이상으로 오래 두지 마십시오. 로그 생성이 많기 때문입니다.
 
 디버그 파일의 행은 일반적으로 DEBUG로 시작한 다음 로그 수준, 설치 관리자 작업 및 로그 메시지를 제공합니다. 예:
 
