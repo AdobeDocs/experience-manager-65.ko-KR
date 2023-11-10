@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1803'
 ht-degree: 3%
 
 ---
@@ -73,7 +73,7 @@ AEM은 또한 이 기반을 기반으로 다음 관리를 위한 여러 애플�
 * **웹 사이트**
 * **모바일 애플리케이션**
 * **디지털 발행물**
-* **양식**
+* **양식 및 문서**
 * **디지털 자산**
 * **커뮤니티**
 * **온라인 상거래**
@@ -81,6 +81,10 @@ AEM은 또한 이 기반을 기반으로 다음 관리를 위한 여러 애플�
 마지막으로, 고객은 이러한 인프라와 애플리케이션 수준의 구성 요소를 사용하여 자체 애플리케이션을 구축함으로써 맞춤형 솔루션을 만들 수 있습니다.
 
 AEM 서버는 **Java 기반** 및 는 해당 플랫폼을 지원하는 대부분의 운영 체제에서 실행됩니다. AEM과의 모든 클라이언트 상호 작용은 **웹 브라우저**.
+
+>[!NOTE]
+>
+>AEM 6.5 빠른 시작에서 사용할 수 있는 적응형 Forms 기능은 탐색 및 평가 목적으로만 설계되었습니다. 프로덕션 사용을 위해서는 적응형 Forms 기능에 적절한 라이선스가 필요하므로 AEM Forms에 대한 유효한 라이선스를 얻는 것이 필수적입니다.
 
 ### 일반적인 배포 시나리오 {#typical-deployment-scenarios}
 

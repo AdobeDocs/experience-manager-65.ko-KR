@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '956'
 ht-degree: 11%
 
 ---
@@ -123,3 +123,7 @@ AEM Forms은 디지털 비즈니스 프로세스를 모바일 디바이스로 �
 ![레이아웃 2](do-not-localize/layout-02.png)
 
 능률적인 개인화된 커뮤니케이션 워크플로
+
+>[!NOTE]
+>
+>AEM 6.5 빠른 시작에서 사용할 수 있는 적응형 Forms 기능은 탐색 및 평가 목적으로만 설계되었습니다. 프로덕션 사용을 위해서는 적응형 Forms 기능에 적절한 라이선스가 필요하므로 AEM Forms에 대한 유효한 라이선스를 얻는 것이 필수적입니다.
