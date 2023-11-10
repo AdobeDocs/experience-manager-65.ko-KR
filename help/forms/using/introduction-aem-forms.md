@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
+source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '953'
 ht-degree: 11%
 
 ---
@@ -40,6 +40,7 @@ AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 �
 >[!NOTE]
 >
 >적응형 Forms과 같은 AEM Forms 기능은에서 사용할 수 있습니다. [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md)는 탐색 및 평가 목적으로만 사용됩니다. 프로덕션 사용을 위해서는 AEM Forms에 대한 유효한 라이선스를 얻는 것이 필수적입니다.
+
 
 ![AEM forms 기능](do-not-localize/4th-draft.gif)
 

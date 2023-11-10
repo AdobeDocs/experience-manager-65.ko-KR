@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
+source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
 workflow-type: tm+mt
-source-wordcount: '3432'
+source-wordcount: '3433'
 ht-degree: 7%
 
 ---
@@ -286,6 +286,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 다음을 �
 >[!NOTE]
 >
 >적응형 Forms과 같은 AEM Forms 기능은에서 사용할 수 있습니다. [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)는 탐색 및 평가 목적으로만 사용됩니다. 프로덕션 사용을 위해서는 AEM Forms에 대한 유효한 라이선스를 얻는 것이 필수적입니다.
+
 
 
 ### Experience Manager 콘텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}

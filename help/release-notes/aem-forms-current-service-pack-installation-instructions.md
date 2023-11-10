@@ -2,9 +2,9 @@
 title: AEM Forms용 AEM Forms 패치 설치 지침
 description: OSGi 및 JEE 환경에 대한 AEM Forms 서비스 팩 설치 지침
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
+source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1771'
 ht-degree: 15%
 
 ---
@@ -36,6 +36,7 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 > * Adobe은 여섯 번째 서비스 팩마다 전체 설치 관리자를 릴리스합니다. AEM 6.5 Forms 서비스 팩 18(6.5.18.0)은 최신 JEE 전체 설치 프로그램입니다. 전체 설치 관리자는 새로운 플랫폼을 지원하며 일반 서비스 팩 설치 관리자에는 새로운 기능, 버그 수정 및 일반 개선 사항이 포함되어 있습니다. 새로 설치하거나 JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 사용할 계획이라면, 2019년 4월 08일에 릴리스된 AEM 6.5 Forms 설치 프로그램이나 2022년 3월 03일에 릴리스된 AEM Forms 6.5.12 AEM 설치 프로그램 대신 2023년 8월 31일에 릴리스된 JEE의 Adobe 6.5.18.0 Forms 전체 설치 프로그램을 사용하는 것이 좋습니다. 전체 설치 관리자를 사용한 후 최신 서비스 팩을 설치합니다.
 > 
 > * 적응형 Forms과 같은 AEM Forms 기능은에서 사용할 수 있습니다. [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)는 탐색 및 평가 목적으로만 사용됩니다. 프로덕션 사용을 위해서는 AEM Forms에 대한 유효한 라이선스를 얻는 것이 필수적입니다.
+
 
 
 
