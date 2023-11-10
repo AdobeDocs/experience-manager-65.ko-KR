@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: d39b4b1d921fc93a4871b74469953f2dfc5c470b
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2112'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 AEM Forms 데이터 통합을 통해 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다. 하지만 사용자 정의가 거의 없으므로 다른 데이터 소스도 통합할 수 있습니다.
 
-* 관계형 데이터베이스 - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS 및 Sybase
+* 관계형 데이터베이스 - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS, postgreSQL 및 Sybase
 * AEM 사용자 프로필
 * RESTful 웹 서비스
 * SOAP 기반 웹 서비스
