@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
+source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 11%
 
 ---
@@ -36,6 +36,10 @@ AEM Forms은 양식 작성, 관리 및 게시와 서신 관리 기능, 문서 �
 대기업에서는 양식을 한 번 만든 다음 콘텐츠 관리 시스템에 복사하여 재사용하는 경우가 많습니다. 양식의 대규모 데이터베이스를 최신 상태로 유지하고 이를 검색 가능하게 만드는 것은 상당한 도전이 될 수 있습니다. AEM은 고객이 웹 및 모바일 채널 모두에서 필요한 양식을 찾고 액세스할 수 있도록 사용자 정의 가능한 양식 포털을 제공합니다.
 
 AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 에셋도 관리할 수 있는 양식 관리 도구를 제공합니다. 자세한 내용은 [양식 관리 소개](../../forms/using/introduction-managing-forms.md).
+
+>[!NOTE]
+>
+>적응형 Forms과 같은 AEM Forms 기능은에서 사용할 수 있습니다. [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md)는 탐색 및 평가 목적으로만 사용됩니다. 프로덕션 사용을 위해서는 AEM Forms에 대한 유효한 라이선스를 얻는 것이 필수적입니다.
 
 ![AEM forms 기능](do-not-localize/4th-draft.gif)
 
@@ -124,6 +128,3 @@ AEM Forms은 디지털 비즈니스 프로세스를 모바일 디바이스로 �
 
 능률적인 개인화된 커뮤니케이션 워크플로
 
->[!NOTE]
->
->AEM 6.5 빠른 시작에서 사용할 수 있는 적응형 Forms 기능은 탐색 및 평가 목적으로만 설계되었습니다. 프로덕션 사용을 위해서는 적응형 Forms 기능에 적절한 라이선스가 필요하므로 AEM Forms에 대한 유효한 라이선스를 얻는 것이 필수적입니다.
