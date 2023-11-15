@@ -2,10 +2,10 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
+source-git-commit: 7c5d45788583cce3403b8beca0c122a9ddf1ca49
 workflow-type: tm+mt
-source-wordcount: '3433'
-ht-degree: 7%
+source-wordcount: '3613'
+ht-degree: 8%
 
 ---
 
@@ -41,11 +41,19 @@ ht-degree: 7%
 
 **주요 기능**
 
-* A
+* 에셋, Dynamic Media - [Dynamic Media 비디오에 대한 다중 자막 및 다중 오디오 트랙 지원](/help/assets/video.md#about-msma)- 이제 여러 자막과 여러 오디오 트랙을 기본 비디오에 쉽게 추가할 수 있습니다. 즉, 이러한 기능을 통해 글로벌 대상자는 비디오에 액세스할 수 있습니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 자막 및 오디오 트랙을 관리할 수도 있습니다.
+
+* 에셋 - 이제 검색 결과에서 에셋이 포함된 폴더 위치로 이동하여 다양한 에셋 관리 작업을 수행할 수 있습니다. (ASSETS-23182)
 
 **주요 개선 사항**
 
-* S
+* 컨텐츠 조각의 Sites Polaris Picker가 성능이 향상되었습니다. (SITES-14092)
+
+* 사이트 페이지 편집기/이미지 구성 요소 사용자가 원격 자산 Cloud Service의 자산을 참조할 수 있도록 했습니다. (SITES-13448, SITES-13433)
+
+* 시스템에 많은 프로젝트가 있을 수 있는 목록 보기에서 프로젝트를 빠르게 찾기 위해 이제 Adobe에서 서버측 정렬을 지원합니다. 프로젝트 노드는 사용자 인터페이스에서 렌더링하기 전에 사용자가 선택한 열을 기반으로 백엔드에서 정렬됩니다. (NPR-41027)
+
+* AEM 6.5.18.0은 MongoDB 5.0에서 6.0으로 지원합니다.
 
 **사용되지 않는 기능**
 
@@ -57,7 +65,6 @@ ht-degree: 7%
 
 ### [!DNL Sites]{#sites-6519}
 
-* U
 
 #### 접근성{#sites-accessibility-6519}
 
