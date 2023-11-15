@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 ### 문서 내의 메타데이터 보기 및 편집 {#viewing-and-editing-the-metadata-within-an-article}
 
-기사, 배너 등과 같은 콘텐츠는 제목, 설명, 이미지와 같은 수많은 속성을 가진다. 이 작업은 이러한 속성을 보고 수정하는 데 사용됩니다. 필요한 경우 이러한 변경 사항은 저장 시 Mobile On-Demand에 업로드할 수 있습니다.
+기사, 배너 등과 같은 콘텐츠에는 제목, 설명, 이미지와 같은 수많은 속성이 있습니다. 이 작업은 이러한 속성을 보고 수정하는 데 사용됩니다. 필요한 경우 이러한 변경 사항은 저장 시 Mobile On-Demand에 업로드할 수 있습니다.
 
 문서를 보거나 편집하는 일반 워크플로:
 

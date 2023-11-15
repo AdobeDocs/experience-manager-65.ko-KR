@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 72%
+source-wordcount: '221'
+ht-degree: 65%
 
 ---
 
@@ -27,7 +27,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 | 위치 | 단축키 | 설명 |
 |---|---|---|
-| 임의 편집 창 모드 | `Ctrl-Shift-m` | **미리보기**&#x200B;와 현재 선택한 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)</a>(예: **편집**, **레이아웃** 등) 간을 전환합니다.* |
+| 임의 편집 창 모드 | `Ctrl-Shift-m` | 전환 **미리 보기** 및 현재 선택됨 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (예: **편집**, **레이아웃**&#x200B;등) |
 | **편집** 모드 | `Ctrl-z` | [마지막 변경 내용을 실행 취소합니다](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [마지막 변경 내용을 재실행합니다](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 여러 단락을 선택합니다 |
