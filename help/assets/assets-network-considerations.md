@@ -5,7 +5,7 @@ contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 샘플 시나리오에는 5개의 서버, S3 이진 저장소 및 Dynamic Media이 구성된 게시 팜이 포함됩니다.
 
-Dispatcher는 외부 및 의 두 엔티티와 100Mbps 연결을 공유합니다 [!DNL Experience Manager] 배포. 동시 업로드 및 다운로드 작업의 경우 이 숫자를 2로 나누어야 합니다. 연결된 외부 스토리지는 별도의 연결을 사용합니다.
+Dispatcher는 외부 및 의 두 엔티티와 100Mbps 연결을 공유합니다. [!DNL Experience Manager] 배포. 동시 업로드 및 다운로드 작업의 경우 이 숫자를 2로 나누어야 합니다. 연결된 외부 스토리지는 별도의 연결을 사용합니다.
 
 다음 [!DNL Experience Manager] 배포는 여러 서비스와 1Gbps 연결을 공유합니다. 네트워크 토폴로지 관점에서는 하나의 채널을 다른 서비스와 공유하는 것과 같습니다.
 

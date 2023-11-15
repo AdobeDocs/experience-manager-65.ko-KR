@@ -1,14 +1,12 @@
 ---
 title: 샘플 ContextHub UI 모듈 유형
-seo-title: Sample ContextHub UI Module Types
-description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 UI 모듈을 제공합니다
-seo-description: ContextHub provides several sample UI modules that you can use in your solutions
+description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 UI 모듈을 제공합니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 2%
@@ -57,7 +55,7 @@ JSON 형식의 JavaScript 개체를 사용하여 contexthub.base UI 모듈을 �
    * 제목: 이 항목에 대해 표시할 텍스트입니다
    * image: (선택 사항) 왼쪽에 표시해야 하는 이미지의 URL입니다
    * icon: (선택 사항) 왼쪽에 표시해야 하는 CUI 아이콘 클래스입니다. 이미지가 지정된 경우에는 무시됩니다
-   * selected: (선택 사항) 이 항목을 selected(true=selected)로 표시할지 여부를 지정하는 부울 값입니다. 기본적으로 선택한 항목은 굵은 글꼴을 사용하여 나타납니다. 사용 `listType` 속성을 사용하여 다른 모양을 구성합니다(아래 참조).
+   * selected: (선택 사항) 이 항목을 selected(true=selected)로 표시할지 여부를 지정하는 부울 값입니다. 기본적으로 선택한 항목이 굵은 글꼴을 사용하여 나타납니다. 사용 `listType` 속성을 사용하여 다른 모양을 구성합니다(아래 참조).
 
 * **listType:** 팝오버 목록 항목에 사용할 스타일입니다. 다음 값 중 하나를 사용합니다.
 

@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2853'
 ht-degree: 2%
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 이 접근 방식은 AEM에서 작동하지만 페이지 및 해당 구성 요소가 복잡해질 때 문제가 발생할 수 있습니다. 이러한 경우 동일한 JS 라이브러리의 여러 복사본이 최종 HTML 출력에 포함될 수 있습니다. 이를 방지하고 AEM이 사용하는 클라이언트측 라이브러리의 논리적 구성을 허용하려면 **클라이언트측 라이브러리 폴더**.
 
-클라이언트측 라이브러리 폴더는 유형의 저장소 노드입니다 `cq:ClientLibraryFolder`. 의 정의입니다 [CND 표기법](https://jackrabbit.apache.org/node-type-notation.html) 은(는)
+클라이언트측 라이브러리 폴더는 유형의 저장소 노드입니다 `cq:ClientLibraryFolder`. 의 정의 [CND 표기법](https://jackrabbit.apache.org/node-type-notation.html) 은(는)
 
 ```shell
 [cq:ClientLibraryFolder] > sling:Folder

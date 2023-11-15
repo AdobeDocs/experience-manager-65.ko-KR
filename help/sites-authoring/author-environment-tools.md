@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2226'
-ht-degree: 52%
+source-wordcount: '2227'
+ht-degree: 51%
 
 ---
 
@@ -174,7 +174,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ![콘텐츠 트리](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-사이드 패널을 열 때는(왼쪽에서) 밀어서 열게 됩니다. 필요한 경우 **콘텐츠 트리** 탭을 선택하십시오. 열리면 페이지나 템플릿의 트리 보기 표시를 확인하여 콘텐츠가 계층 구조로 구성되는 방식을 쉽게 이해할 수 있습니다. 또한 복잡한 페이지에서 페이지의 구성 요소 간을 더 쉽게 이동할 수 있습니다.
+사이드 패널을 열 때는(왼쪽에서) 밀어서 열게 됩니다. 필요한 경우 **콘텐츠 트리** 탭을 선택하십시오. 열리면 페이지나 템플릿의 트리 보기 표시를 확인하여 콘텐츠가 계층적으로 구성되는 방식을 쉽게 이해할 수 있습니다. 또한 복잡한 페이지에서 페이지의 구성 요소 간을 더 쉽게 이동할 수 있습니다.
 
 ![ateat-11](assets/ateat-11.png)
 

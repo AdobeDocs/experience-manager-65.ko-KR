@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3786'
+source-wordcount: '3787'
 ht-degree: 1%
 
 ---
@@ -170,7 +170,7 @@ AEM 모바일 프레임워크를 사용하면 요청을 실행하는 장치에 �
 **모바일 에뮬레이터의 주요 특성**
 
 * 장치 그룹은 하나 이상의 에뮬레이터로 구성됩니다. 예를 들어, /etc/mobile/groups/touch와 같은 장치 그룹 구성 페이지에는 `emulators` 아래 속성 `jcr:content` 노드.
-참고: 동일한 에뮬레이터가 여러 장치 그룹에 속할 수 있지만 그다지 적절하지 않습니다.
+참고: 동일한 에뮬레이터가 여러 장치 그룹에 속할 수는 있지만 그다지 적절하지 않습니다.
 
 * 장치 그룹의 구성 대화 상자를 통해 `emulators` 속성은 원하는 에뮬레이터의 경로로 설정됩니다. 예: `/libs/wcm/mobile/components/emulators/iPhone4`.
 

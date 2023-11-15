@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ conf 파일에서 메모리 인수 설정(예: `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-용 배포 스캐너를 사용하여 AEM 웹 애플리케이션을 설치하는 경우 `deployment-timeout,` 해당 세트에 대해 a `deployment-timeout` 인스턴스의 xml 파일에 있는 특성(예: `configuration/standalone.xml)`:
+배포 스캐너를 사용하여 AEM 웹 애플리케이션을 설치하는 경우 `deployment-timeout,` 해당 세트에 대해 a `deployment-timeout` 인스턴스의 xml 파일에 있는 특성(예: `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">

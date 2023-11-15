@@ -1,15 +1,13 @@
 ---
 title: JMX 콘솔과 서비스 통합
-seo-title: Integrating Services with the JMX Console
 description: JMX 콘솔을 사용하여 서비스를 관리하기 위해 MBean을 생성 및 배포하여 관리 작업을 수행할 수 있도록 서비스 속성 및 작업 표시
-seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 topic-tags: extending-aem
 content-type: reference
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
-source-git-commit: a2e5a5ae7585299de869dbf8744d7be4b86c5bf8
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '1659'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,7 +25,7 @@ Apache Felix 플랫폼에서 MBean을 OSGi 서비스로 배포합니다. MBean �
 
 ## CQ5 및 CRX용 MBean 만들기 {#creating-mbeans-for-cq-and-crx}
 
-CQ5 또는 CRX 리소스를 관리하기 위해 생성하는 MBean은 javax.management.DynamicMBean 인터페이스를 기반으로 합니다. 이러한 패턴을 생성하려면 JMX 사양에 명시된 일반적인 디자인 패턴을 따릅니다.
+CQ5 또는 CRX 리소스를 관리하기 위해 생성하는 MBean은 javax.management.DynamicMBean 인터페이스를 기반으로 합니다. 이를 생성하려면 JMX 사양에 설명된 대로 일반적인 디자인 패턴을 따릅니다.
 
 * get, set 및 is 메서드를 포함하여 관리 인터페이스를 만들어 속성을 정의하고 기타 메서드를 사용하여 작업을 정의할 수 있습니다.
 * 구현 클래스를 만듭니다. 클래스는 DynamicMBean을 구현하거나 DynamicMBean의 구현 클래스를 확장해야 합니다.
@@ -283,6 +281,7 @@ WorkflowMBeanManager 서비스에는 WorkflowMBean 서비스를 만드는 구성
 >[!NOTE]
 >
 >WorkflowMBeanManager 구현은 구성 요소 활성화 시 존재하는 모델 구성에 대해서만 MBean 서비스를 생성합니다. 보다 강력한 구현은 새 모델 구성과 기존 모델 구성의 변경 또는 삭제에 대한 저장소 이벤트를 수신합니다. 변경이 발생하면 관리자는 해당 WorkflowMBean 서비스를 생성, 수정 또는 제거할 수 있습니다.
+>
 
 #### WorkflowMBeanManager 인터페이스 {#workflowmbeanmanager-interface}
 

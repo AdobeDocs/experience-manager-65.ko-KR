@@ -7,9 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '702'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 5%
 * **추가**&#x200B;를 클릭합니다
 * **모두 저장**&#x200B;을 클릭합니다
 
-참고: 카테고리 값에 &#39;앱&#39;을 앞에 붙입니다. 는 &#39;소유 애플리케이션&#39;을 /libs가 아닌 /apps 폴더에 있는 것으로 식별하는 규칙입니다. 중요: 자리 표시자 추가 `js.tx`t 및 **`css.txt`** 파일. (이러한 폴더가 없는 cq:ClientLibraryFolder는 공식적으로 아닙니다.)
+참고: 카테고리 값에 &#39;앱&#39;을 앞에 붙입니다. 는 &#39;소유 애플리케이션&#39;을 /libs가 아닌 /apps 폴더에 있는 것으로 식별하는 규칙입니다. 중요: 자리 표시자 추가 `js.tx`t 및 **`css.txt`** 파일. (이러한 폴더가 없는 공식적으로 cq:ClientLibraryFolder는 아닙니다.)
 
 1. 마우스 오른쪽 버튼 클릭 **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. 선택 **파일 만들기...**

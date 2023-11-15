@@ -8,9 +8,9 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3574'
 ht-degree: 2%
 
 ---
@@ -358,7 +358,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 
 ##### OSGi 패키지 가져오기 유효성 검사 {#osgi-package-imports}
 
-**선택 항목**
+**선택된 항목**
 
 이 유효성 검사는 모든 JAR 파일(OSGi 번들)에 대한 패키지를 검사하고 압축을 풉니다. `manifest.xml` (해당 OSGi 번들이 사용하는 버전이 지정된 종속성이 포함됨) 및 AEM 인스턴스가 해당 종속성을 올바른 버전과 내보내는지 확인합니다.
 
@@ -376,7 +376,7 @@ AEM 인스턴스가 충족할 수 없는 버전 종속 항목은 패키지 관�
 
 ##### 오버레이 유효성 검사 {#overlays}
 
-**선택 항목**
+**선택된 항목**
 
 이 유효성 검사는 설치 중인 패키지에 대상 AEM 인스턴스에 이미 오버레이된 파일이 포함되어 있는지 확인합니다.
 
@@ -400,7 +400,7 @@ AEM 인스턴스가 충족할 수 없는 버전 종속 항목은 패키지 관�
 
 ##### ACL 유효성 검사 {#acls}
 
-**선택 항목**
+**선택된 항목**
 
 이 유효성 검사는 추가되는 권한, 처리 방법(병합/바꾸기) 및 현재 권한에 영향을 주는지 확인합니다.
 

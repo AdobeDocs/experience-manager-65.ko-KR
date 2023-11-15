@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '2669'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ AEM의 구성 요소에 기여하는 경우 오픈 소스 프로젝트에 기여
 
 하이퍼텍스트 전송 프로토콜 (HTTP)은 우리가 하는 모든 것에 핵심입니다. 따라서 AEM에 기여하기 전에 스레드 풀링으로 다중 스레드 HTTP 서버의 자체 Java™ 구현을 작성할 수 있는 범위 내에서 HTTP에 대해 깊이 있게 이해해야 합니다. 또한 HTTP/1.1 keep-alive 비헤이비어를 이해하고 JavaScript와의 서버/클라이언트측 상호 작용, 특히 AJAX으로 표현되는 비동기 상호 작용 스타일에 대한 깊이 있는 지식이 있어야 합니다.
 
-페이지 역동성과 대화형 콘텐츠는 WM 경험의 핵심이므로 문서 개체 모델 과 이벤트에 대한 프로그래밍 방식 조작에 대한 잠재력을 상당히 깊이 있게 이해해야 합니다. 예를 들어 여러 브라우저 문서(예: iframe 사용)에 대한 실시간 DOM 조작 및 드래그 앤 드롭 동작에 대한 일부 지식이 있어야 합니다.
+페이지 역동성과 대화형 콘텐츠는 WM 경험의 핵심이므로 문서 객체 모델과 이벤트에 대한 프로그래밍 방식 조작의 가능성에 대해 상당히 깊이 있게 이해해야 합니다. 예를 들어 여러 브라우저 문서(예: iframe 사용)에 대한 실시간 DOM 조작 및 드래그 앤 드롭 동작에 대한 일부 지식이 있어야 합니다.
 
 가장 높은 수준에서 다음을 확실히 이해해야 합니다.
 

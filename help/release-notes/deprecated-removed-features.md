@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 6.5 릴리스에서 더 이상 사용되지 않거나 제거된 기능.
 description: Adobe Experience Manager 6.5에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: aec2eb3303ad9747f6f56ae2eb31c3c7ed7b0c24
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 35%
+source-wordcount: '1712'
+ht-degree: 34%
 
 ---
 
@@ -41,7 +41,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | Dynamic Tag Manager (DTM) | DTM과의 통합은 더 이상 사용되지 않습니다. | Adobe Experience Platform Launch을 태그 관리자로 사용하도록 전환합니다. |   |
 | Adobe Target | 를 사용하여 AEM에서 Adobe Target 서비스에 연결할 수 있는 기능 추가 [!DNL Adobe I/O] AEM 6.5의 Adobe Target Standard API(Rest API) 기반의 Target Classic API(XML) 방법은 더 이상 사용되지 않습니다. | 통합을 다음으로 재구성 [새 API 사용](/help/sites-administering/target.md). |  |
 | Adobe Target | 사용 `mbox.js` AEM의 Adobe Target과의 기반 통합은 더 이상 사용되지 않습니다. | 사용할 전환 `at.js` 1.x |  |
-| 상거래 | [CIF REST](https://github.com/adobe/commerce-cif-api)는 AEM과 상거래 엔진 간의 통합을 가능하게 하기 위해 마이크로 서비스 세트로 2018년에 제공되었습니다. Adobe이 2018년 중반에 Adobe Commerce(이전 Magento)를 인수한 후 Adobe은 두 가지 이유로 접근 방식을 변경하기로 결정했습니다. Commerce에는 고유한 상거래 API(REST 및 GraphQL) 세트가 있으며 두 개의 API 세트를 유지 관리하는 것은 좋지 않습니다. 시장 트렌드는 GraphQL이 데이터를 쿼리하는 보다 효율적인 방법이므로 고객이 GraphQL로 이동하고 있음을 나타냅니다. 2019년 Adobe은 Commerce의 GraphQL API를 소스로 사용하여 새로운 Commerce Integration Framework를 출시했습니다. Adobe는 더 이상 CIF REST에 투자할 계획이 없습니다. 고객은 교체 솔루션을 사용하는 것이 좋습니다. | AEM-Commerce 통합의 경우 다음으로 전환 [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). AEM 및 Adobe Commerce 통합 을 참조하십시오 [commerce Integration Framework 사용](/help/commerce/cif/integrating/magento.md). 새로운 접근 방식과 타사(커머스 제외) 통합 지원이 Adobe 로드맵에 있습니다. |  |
+| 상거래 | [CIF REST](https://github.com/adobe/commerce-cif-api)는 AEM과 상거래 엔진 간의 통합을 가능하게 하기 위해 마이크로 서비스 세트로 2018년에 제공되었습니다. Adobe이 2018년 중반에 Adobe Commerce(이전 Magento)를 인수한 후 Adobe은 두 가지 이유로 접근 방식을 변경하기로 결정했습니다. Commerce에는 자체 상거래 API 세트(REST 및 GraphQL)가 있으며 두 개의 API 세트를 유지 관리하는 것은 좋지 않습니다. 시장 동향은 데이터를 쿼리하는 보다 효율적인 방법이기 때문에 고객이 GraphQL으로 이동하고 있음을 나타냈습니다. 2019년 Adobe은 Commerce의 GraphQL API를 소스로 사용하여 새로운 Commerce integration framework을 발표했습니다. Adobe는 더 이상 CIF REST에 투자할 계획이 없습니다. 고객은 교체 솔루션을 사용하는 것이 좋습니다. | AEM-Commerce 통합의 경우 다음으로 전환 [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). AEM 및 Adobe Commerce 통합 을 참조하십시오 [Commerce integration framework 사용](/help/commerce/cif/integrating/magento.md). 새로운 접근 방식과 타사(커머스 제외) 통합 지원이 Adobe 로드맵에 있습니다. |  |
 | 구성 요소(AEM Sites) | Adobe은에 저장된 대부분의 기초 구성 요소를 추가로 개선할 계획이 없습니다. `/libs/foundation/components`. 다음 항목을 찾습니다. `cq:deprecated` 및 `cq:deprecatedReason` 구성 요소 폴더의 속성. AEM 6.5에는 기초 구성 요소가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 또한 기초 구성 요소는 더 이상 사용되지 않는 경우에도 지원됩니다. | Adobe은 향후 프로젝트를 위해 핵심 구성 요소를 사용할 것을 권장합니다. 기존 사이트는 그대로 유지되거나 [AEM Modernize Tools 제품군](https://github.com/adobe/aem-modernize-tools)을 사용하여 코어 구성 요소를 사용하도록 사이트를 리팩터링할 수 있습니다. |  |
 | 구성 요소(AEM Sites) | 디자인 Importer 구성 요소 `/libs/wcm/designimporter/components` 이(가) 6.5부터 더 이상 사용되지 않는 것으로 표시되었습니다. Adobe은 디자인 임포터의 해당 구현을 더 이상 개선할 계획이 없습니다. | Adobe은 향후 릴리스에서 사용 사례에 대한 대체 구현을 제공할 계획입니다. |  |
 | Foundation | Granite 오프로딩 프레임워크. Adobe은 자산 처리를 외부화하기 위해 CQ 5.6.1에 도입된 오프로딩 프레임워크를 추가로 개선할 계획이 없습니다. | Adobe이 차세대 클라우드 기반 오프로딩 프레임워크에서 작업 중입니다. |  |

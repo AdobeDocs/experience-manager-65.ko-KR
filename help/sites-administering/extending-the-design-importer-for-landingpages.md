@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3493'
+source-wordcount: '3495'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 1. TagHandler 만들기
 
-   * 태그 처리기는 특정 종류의 HTML 태그를 처리하는 POJO입니다. TagHandler가 처리할 수 있는 HTML 태그의 &quot;종류&quot;는 TagHandlerFactory의 OSGi 속성 &quot;tagpattern.name&quot;을 통해 정의됩니다. 이 OSGi 속성은 기본적으로 처리하려는 입력 html 태그와 일치해야 하는 정규 표현식입니다. 중첩된 모든 태그는 처리를 위해 태그 처리기에 throw됩니다. 예를 들어 중첩된 가 포함된 div에 등록하는 경우 &lt;p> 태그, &lt;p> 태그는 또한 TagHandler에 던져지며, 처리 방법은 사용자가 결정합니다.
+   * 태그 처리기는 특정 종류의 HTML 태그를 처리하는 POJO입니다. TagHandler가 처리할 수 있는 HTML 태그의 &quot;종류&quot;는 TagHandlerFactory의 OSGi 속성 &quot;tagpattern.name&quot;을 통해 정의됩니다. 이 OSGi 속성은 기본적으로 처리하려는 입력 html 태그와 일치해야 하는 정규 표현식입니다. 중첩된 모든 태그는 처리를 위해 태그 처리기에 throw됩니다. 예를 들어 중첩된 가 포함된 div에 등록하는 경우 &lt;p> 태그, &lt;p> 태그는 TagHandler에도 던져지며, 처리 방법은 사용자가 결정합니다.
    * 태그 처리기 인터페이스는 SAX 콘텐츠 처리기 인터페이스와 유사합니다. 각 html 태그에 대한 SAX 이벤트를 수신합니다. 태그 처리기 공급자는 디자인 가져오기 프레임워크에서 자동으로 호출되는 특정 라이프사이클 메서드를 구현해야 합니다.
 
 1. 해당 TagHandlerFactory를 만듭니다.

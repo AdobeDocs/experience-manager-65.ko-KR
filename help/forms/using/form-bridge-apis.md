@@ -1,17 +1,13 @@
 ---
 title: HTML 5 양식용 Form Bridge API
-seo-title: Form Bridge APIs for HTML5 forms
 description: 외부 애플리케이션은 FormBridge API를 사용하여 XFA Mobile Form에 연결합니다. API는 상위 창에서 FormBridgeInitialized 이벤트를 전달합니다.
-seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
-uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
-discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 Form Bridge API를 사용하여 XFA 기반 HTML5 양식과 애플리케이션 간의 통신 채널을 열 수 있습니다. 양식 브리지 API는 다음을 제공합니다. **연결** 연결을 만들기 위한 API입니다.
 
-다음 **연결** API는 핸들러를 인수로 허용합니다. XFA 기반 HTML5 양식과 Form Bridge 간에 성공적으로 연결되면 핸들이 호출됩니다.
+다음 **연결** API는 핸들러를 인수로 허용합니다. XFA 기반 HTML5 양식과 Form Bridge 간에 연결이 성공적으로 만들어지면 핸들이 호출됩니다.
 
 다음 샘플 코드를 사용하여 연결을 만들 수 있습니다.
 

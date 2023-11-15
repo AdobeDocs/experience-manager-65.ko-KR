@@ -1,18 +1,14 @@
 ---
 title: 커뮤니티 구성 요소 기본 사항
-seo-title: Communities Components Basics
 description: 편집 모드에서 AEM 사이트에 커뮤니티 기능을 추가하고 구성 요소를 구성합니다.
-seo-description: Add Communities features to AEM sites in edit mode and configure components
-uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '360'
 ht-degree: 2%
 
 ---
@@ -55,7 +51,7 @@ ht-degree: 2%
 
 [클라이언트측 라이브러리](../../help/sites-developing/clientlibs.md) (clientlibs)는 구성 요소의 적절한 기능(JavaScript) 및 스타일(CSS)에 필요합니다.
 
-페이지에 Communities 구성 요소를 추가할 때 결과가 오류 또는 예기치 않은 표시인 경우 먼저 Communities 구성 요소에 필요한 clientlib을 추가하는 것입니다. 자세한 내용은 [커뮤니티 구성 요소에 대한 Clientlibs](clientlibs.md).
+페이지에 Communities 구성 요소를 추가할 때 결과가 오류 또는 예기치 않은 모양인 경우 먼저 Communities 구성 요소에 필요한 clientlib을 추가하는 것입니다. 자세한 내용은 [커뮤니티 구성 요소에 대한 Clientlibs](clientlibs.md).
 
 ### 예: 처음에 클라이언트 라이브러리 없이 검토를 배치했습니다. {#example-initially-placed-reviews-without-client-libraries}
 

@@ -1,17 +1,13 @@
 ---
 title: 감시 폴더 만들기 또는 구성
-seo-title: Create or Configure a watched folder
 description: 감시 폴더를 만들거나 삭제하거나 기존 감시 폴더의 속성을 수정하는 방법을 알아봅니다.
-seo-description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
-uuid: 659d4d8c-99b8-40dd-b884-bfee4d476fe1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1819'
 ht-degree: 0%
 
 ---
@@ -95,7 +91,7 @@ ht-degree: 0%
       * %m = 분
       * %s = 초
       * %l = 밀리초
-      * %R = 난수(0~9 사이)
+      * %R = 난수(0-9 사이)
       * %P = 프로세스 또는 작업 ID
       * 예를 들어, 2009년 7월 17일 오후 8시이고 C:/Test/WF0/failure/%Y/%M/%D/%H/를 지정한 경우 결과 폴더는 C:/Test/WF0/failure/2009/07/17/20입니다.
       * 경로가 절대적이 아니라 상대적이면 폴더가 감시 폴더 내에 만들어집니다. 기본값은 감시 폴더 내의 결과 폴더인 result/%Y/%M/%D/입니다. 파일 패턴에 대한 자세한 내용은 [파일 패턴 정보](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).

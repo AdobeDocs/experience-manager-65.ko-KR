@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 0%
@@ -217,7 +217,7 @@ AEM Online Backup은 백업 중인 데이터와 작성 중인 백업 파일의 �
 
      이름이 인 빈 파일 `backupInProgress.txt` 는 백업이 시작될 때 대상 디렉터리에 작성됩니다. 이 파일은 백업이 완료되면 삭제됩니다.
 
-1. 파일은 소스 디렉토리에서 대상 디렉토리(또는 zip 파일을 생성할 때 임시 디렉토리)로 복사됩니다. 저장소 손상을 방지하기 위해 세그먼트 저장소가 데이터 저장소 앞에 복사됩니다. 백업을 작성할 때 인덱스 및 캐시 데이터가 생략됩니다. 그 결과, 다음의 데이터 `crx-quickstart/repository/cache` 및 `crx-quickstart/repository/index` 가 백업에 포함되지 않습니다. 프로세스의 진행률 표시줄 표시기는 zip 파일을 만들 때 0% - 70%, zip 파일이 만들어지지 않은 경우 0% - 100% 사이입니다.
+1. 파일은 소스 디렉토리에서 대상 디렉토리(또는 zip 파일을 생성할 때 임시 디렉토리)로 복사됩니다. 저장소 손상을 방지하기 위해 세그먼트 저장소가 데이터 저장소 앞에 복사됩니다. 백업을 작성할 때 인덱스 및 캐시 데이터가 생략됩니다. 그 결과, 다음의 데이터 `crx-quickstart/repository/cache` 및 `crx-quickstart/repository/index` 가 백업에 포함되지 않습니다. 프로세스의 진행률 표시줄 표시기는 zip 파일을 만들 때 0%-70% 사이 또는 zip 파일이 만들어지지 않은 경우 0%-100% 사이입니다.
 
 1. 기존 디렉토리에 백업하는 경우 대상 디렉토리의 &quot;이전&quot; 파일이 삭제됩니다. 이전 파일은 소스 디렉토리에 없는 파일입니다.
 

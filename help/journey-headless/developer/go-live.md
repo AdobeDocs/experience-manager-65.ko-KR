@@ -2,9 +2,9 @@
 title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정 부분에서는 Headless 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1874'
 ht-degree: 51%
 
 ---
@@ -100,7 +100,7 @@ AEM Headless 프로젝트를 시작하도록 준비하려면 프로젝트의 모
 
 <!-- Start of CDN Review -->
 
-이제 아래에 요약된 모범 사례를 따라 AEM Headless 애플리케이션을 시작할 준비가 되었습니다.
+이제 아래에 요약된 모범 사례를 따라 AEM Headless 애플리케이션을 시작할 수 있도록 준비해야 합니다.
 
 ### 실행 전 Headless 애플리케이션 보안 {#secure-and-scale-before-launch}
 

@@ -1,17 +1,14 @@
 ---
 title: Oak 색인 문제 해결
-seo-title: Troubleshooting Oak Indexes
 description: 색인화가 느리는지 확인하고 원인을 찾아 문제를 해결하는 방법을 알아봅니다.
-uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1474'
 ht-degree: 2%
 
 ---
@@ -22,7 +19,7 @@ ht-degree: 2%
 
 AEM 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원하기 위해 저장소 데이터를 수집하고 Oak 인덱스에 저장합니다. 예외적인 상황에서는 프로세스가 느려지거나 심지어 중단될 수 있습니다. 이 페이지는 색인화가 느려지는지 식별하고 원인을 찾고 문제를 해결하는 데 도움이 되는 문제 해결 가이드 역할을 합니다.
 
-부적절하게 긴 시간이 소요되는 리인덱싱과 방대한 양의 컨텐츠를 인덱싱하므로 많은 시간이 소요되는 리인덱싱을 구분하는 것이 중요합니다. 예를 들어 컨텐츠 크기와 함께 컨텐츠 크기를 색인화하는 데 걸리는 시간이 짧기 때문에 큰 프로덕션 리포지토리는 작은 개발 리포지토리보다 색인을 다시 지정하는 데 더 오래 걸립니다.
+부적절하게 긴 시간이 소요되는 리인덱싱과 방대한 양의 컨텐츠를 인덱싱하는 것이므로 긴 시간이 소요되는 리인덱싱을 구분하는 것이 중요합니다. 예를 들어 컨텐츠 크기와 함께 컨텐츠 크기를 색인화하는 데 걸리는 시간이 짧기 때문에 큰 프로덕션 리포지토리는 작은 개발 리포지토리보다 색인을 다시 지정하는 데 더 오래 걸립니다.
 
 다음을 참조하십시오. [쿼리 및 색인화에 대한 우수 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md) 콘텐츠를 다시 인덱싱하는 시기 및 방법에 대한 추가 정보.
 

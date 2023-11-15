@@ -2,9 +2,9 @@
 title: AEM 커뮤니티
 description: Adobe Experience Manager 커뮤니티를 살펴보고 연결을 만듭니다.
 exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '324'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 AEM 커뮤니티는 전 세계에 수천 명의 회원을 보유하고 있습니다. 이들은 새로운 사람부터 Experience Manager, 숙련된 전문가 개발자 및 관리자에 이르기까지 다양합니다. 커뮤니티는 AEM 기능에 대한 질문에서 개발 질문에 대한 도움말에 이르기까지 도움을 드릴 수 있습니다. AEM 커뮤니티에서는 내부 및 외부 전문가 사용자와 정기적인 전문가 세션을 개최합니다. 또한 샘플, 문서 및 튜토리얼을 작성하는 데 도움이 됩니다.
 
-[지금 커뮤니티에 가입하여 최고의 콘텐츠, 사람 및 지식을 이용할 수 있습니다.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) 모든 사람들에게 열려 있습니다. AEM에 관심이 있으시면 언제든지 환영합니다. 오늘 들르세요!
+[지금 커뮤니티에 가입하여 최고의 콘텐츠, 사람 및 지식을 이용할 수 있습니다.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) 그것은 누구에게나 열려 있다. AEM에 관심이 있으시면 언제든지 환영합니다. 오늘 들르세요!
 
 ## AEM 커뮤니티 구성원에 대한 이벤트는 무엇입니까? {#events}
 

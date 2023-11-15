@@ -4,9 +4,9 @@ description: 독립 실행형 AEM 인스턴스를 설치할 때 사용할 수 �
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ oracle Java 11(또는 일반적으로 Java 8보다 최신 버전)을 실행하�
 기본적으로 폴더 `crx-quickstart/install` 는 파일이 있는지 감시됩니다.
 이 폴더는 존재하지 않지만 런타임 시 만들 수 있습니다.
 
-번들, 구성 또는 콘텐츠 패키지를 이 디렉토리에 넣으면 자동으로 선택되어 설치됩니다. 제거되면 제거됩니다.
+번들, 구성 또는 콘텐츠 패키지를 이 디렉토리에 넣으면 자동으로 선택되어 설치됩니다. 제거하면 제거됩니다.
 이는 번들, 콘텐츠 패키지 또는 구성을 저장소에 저장하는 또 다른 방법입니다.
 
 이는 몇 가지 사용 사례에 특히 유용합니다.

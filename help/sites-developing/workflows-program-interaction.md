@@ -1,18 +1,14 @@
 ---
 title: 프로그래밍 방식으로 워크플로우와 상호 작용
-seo-title: Interacting with Workflows Programmatically
 description: Adobe Experience Manager에서 프로그래밍 방식으로 워크플로우와 상호 작용하는 방법을 알아봅니다.
-seo-description: null
-uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2007'
 ht-degree: 1%
 
 ---
@@ -359,7 +355,7 @@ REST API에서는 다음 작업이 지원됩니다.
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>URI가 매개 변수로 전송된 작업 항목을 완료합니다. <code>item</code> 및 은 해당 워크플로우 인스턴스를 매개변수에 의해 정의된 다음 노드로 진행합니다. <code>route</code> 또는 <code>backroute</code> 한 걸음 물러나려면<br /> 매개 변수인 경우 <code>delegatee</code> 이(가) 전송되면 매개 변수로 식별되는 작업 항목이 <code>item</code> 은(는) 지정된 참가자에게 위임됩니다.</td>
+   <td>URI가 매개 변수로 전송된 작업 항목을 완료합니다. <code>item</code> 및 은 해당 워크플로우 인스턴스를 매개변수에 의해 정의된 다음 노드로 진행합니다. <code>route</code> 또는 <code>backroute</code> 한 걸음 뒤로 물러나는 경우.<br /> 매개 변수인 경우 <code>delegatee</code> 이(가) 전송되면 매개 변수로 식별되는 작업 항목이 <code>item</code> 은(는) 지정된 참가자에게 위임됩니다.</td>
   </tr>
  </tbody>
 </table>

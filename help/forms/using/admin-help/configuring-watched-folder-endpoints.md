@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '7174'
+source-wordcount: '7173'
 ht-degree: 0%
 
 ---
@@ -192,7 +192,7 @@ Windows에서 응용 프로그램 서버가 서비스로 실행 중인 경우 �
 * %m = 분
 * %s = 초
 * %l = 밀리초
-* %R = 난수(0~9 사이)
+* %R = 난수(0-9 사이)
 * %P = 프로세스 또는 작업 ID
 
 예를 들어 지금이 2009년 7월 17일 오후 8시이고 `C:/Test/WF0/failure/%Y/%M/%D/%H/`: 결과 폴더는 `C:/Test/WF0/failure/2009/07/17/20`.

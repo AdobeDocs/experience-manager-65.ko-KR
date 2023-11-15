@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 0%
@@ -180,7 +180,7 @@ AEM은 다음 쿼리 언어를 지원합니다.
 * JCR-SQL2
 * XPath
 
-다음 예제에서는 AEM 개발자가 사용하는 가장 일반적인 쿼리 언어인 Query Builder를 사용하지만 JCR-SQL2 및 XPath에도 동일한 원칙이 적용됩니다.
+다음 예제에서는 AEM 개발자가 사용하는 가장 일반적인 쿼리 언어로 Query Builder를 사용하지만 JCR-SQL2 및 XPath에도 동일한 원칙이 적용됩니다.
 
 1. 쿼리가 기존 Lucene 속성 인덱스로 확인되도록 노드 유형 제한을 추가합니다.
 

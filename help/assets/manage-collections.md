@@ -7,9 +7,9 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2204'
 ht-degree: 15%
 
 ---
@@ -222,7 +222,7 @@ ht-degree: 15%
 
 ## 중첩 컬렉션 만들기 {#creating-nested-collections}
 
-컬렉션을 다른 컬렉션에 추가하여 중첩된 컬렉션을 만들 수 있습니다.
+중첩된 컬렉션을 만들 수 있도록 컬렉션을 다른 컬렉션에 추가할 수 있습니다.
 
 1. 컬렉션 콘솔에서 원하는 컬렉션이나 컬렉션 그룹을 선택하고 **[!UICONTROL 대상 컬렉션]** 을 클릭합니다.
 

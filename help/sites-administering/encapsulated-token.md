@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 기본적으로 AEM은 토큰 인증 핸들러를 사용하여 각 요청을 인증합니다. 그러나 인증 요청을 처리하려면 모든 요청에 대해 토큰 인증 핸들러가 저장소에 액세스해야 합니다. 이 문제는 쿠키가 인증 상태를 유지하는 데 사용되기 때문에 발생합니다. 논리적으로 상태는 저장소에서 지속되어야 후속 요청의 유효성을 검사할 수 있습니다. 사실상, 이것은 인증 메커니즘이 상태 저장(stateful)임을 의미한다.
 
-이는 특히 수평적 확장성에 중요합니다. 아래 표시된 게시 팜과 같은 여러 인스턴스 설정에서 로드 밸런싱을 최적의 방식으로 수행할 수 없습니다. 상태 저장 인증을 사용하면 사용자가 처음 인증되는 인스턴스에서만 지속 인증 상태를 사용할 수 있습니다.
+이는 특히 수평적 확장성에 중요합니다. 아래 표시된 게시 팜과 같은 다중 인스턴스 설정에서 로드 밸런싱을 최적의 방식으로 수행할 수 없습니다. 상태 저장 인증을 사용하면 사용자가 처음 인증되는 인스턴스에서만 지속 인증 상태를 사용할 수 있습니다.
 
 ![chlimage_1-33](assets/chlimage_1-33a.png)
 

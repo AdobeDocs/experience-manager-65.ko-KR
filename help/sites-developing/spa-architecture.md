@@ -7,9 +7,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2051'
 ht-degree: 7%
 
 ---
@@ -98,7 +98,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
 
 >[!NOTE]
 >
->모든 모델은 AEM에서 지원되지만 세 번째 모델을 구현(및 권장 사항에 따라 구현)해야만 합니다 [AEM의 SPA 개발 원칙](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) 콘텐츠 작성자는 SPA의 콘텐츠가 익숙해질 때 AEM에서 이 콘텐츠와 상호 작용하고 편집할 수 있게 됩니다.
+>모든 모델은 AEM에서 지원되지만, 세 번째 모델을 구현(따라서 권장된 대로 구현)해야만 합니다 [AEM의 SPA 개발 원칙](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) 콘텐츠 작성자는 SPA의 콘텐츠가 익숙해질 때 AEM에서 이 콘텐츠와 상호 작용하고 편집할 수 있습니다.
 
 ## 기존 SPA에서 AEM으로 마이그레이션 {#migrating-existing-spas-to-aem}
 

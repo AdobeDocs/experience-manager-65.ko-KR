@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 정적 및 동적 변환을 포함한 에셋을 다운로드할 수 있습니다. 또는 에셋에 대한 링크가 포함된 이메일을 바로 보낼 수 있습니다. [!DNL Adobe Experience Manager Assets]. 다운로드한 에셋은 ZIP 파일에 번들로 제공됩니다. 압축 ZIP 파일의 내보내기 작업에 대한 최대 파일 크기는 1GB입니다. 내보내기 작업당 최대 500개의 총 자산이 허용됩니다.
@@ -48,7 +48,7 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
    | 내보내기 또는 다운로드 옵션 | 설명 |
    |---|---|
    | **[!UICONTROL 각 자산에 대해 별도의 폴더 만들기]** | 다운로드하는 각 에셋(에셋의 상위 폴더 아래에 중첩된 하위 폴더의 에셋 포함)을 로컬 컴퓨터의 한 폴더에 포함하려면 이 옵션을 선택합니다. 이 옵션을 선택하지 않으면 기본적으로 폴더 계층 구조가 무시되고 모든 자산이 로컬 컴퓨터의 한 폴더로 다운로드됩니다. |
-   | **[!UICONTROL 이메일]** | 사용자에게 이메일 알림이 전송됩니다. 표준 이메일 템플릿은 다음 위치에서 사용할 수 있습니다.<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 배포 중 사용자 정의하는 템플릿은 다음 위치에서 사용할 수 있습니다. <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>다음 위치에 테넌트별 사용자 지정 템플릿을 저장할 수 있습니다.<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL 이메일]** | 사용자에게 이메일 알림이 전송됩니다. 표준 이메일 템플릿은 다음 위치에서 사용할 수 있습니다.<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> 배포 중 사용자 정의하는 템플릿은 다음 위치에서 사용할 수 있습니다. <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>다음 위치에 테넌트별 사용자 지정 템플릿을 저장할 수 있습니다.<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
    | **[!UICONTROL 자산]** | 렌디션 없이 에셋을 원본 양식으로 다운로드하려면 이 옵션을 선택합니다.<br>원본 에셋에 하위 에셋이 있는 경우 하위 에셋 옵션을 사용할 수 있습니다. |
    | **[!UICONTROL 렌디션]** | 렌디션은 에셋의 바이너리 표현입니다. 에셋에는 업로드된 파일의 기본 표현이 있습니다. 그들은 얼마든지 표현을 할 수 있다. <br> 이 옵션을 사용하여 다운로드할 변환을 선택할 수 있습니다. 사용할 수 있는 렌디션은 선택한 에셋에 따라 다릅니다. 에셋에 렌디션이 있는 경우 옵션을 사용할 수 있습니다. |
    | **[!UICONTROL 스마트 자르기]** | AEM 내에서 선택한 에셋의 모든 스마트 자르기 렌디션을 다운로드하려면 이 옵션을 선택합니다. 스마트 자르기 렌디션이 포함된 zip 파일이 생성되고 로컬 컴퓨터에 다운로드됩니다. |
@@ -66,7 +66,7 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons 
 
 1. 게시 실행 모드를 대상으로 하는 명명 규칙을 사용하여 폴더를 만듭니다(`config.publish`): `/apps/<your-app-name>/config.publish`. 실행 모드에 대한 구성 속성을 정의하려면 [실행 모드](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
 1. 구성 폴더에서 다음 형식의 파일을 만듭니다. `nt:file` 명명된 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. 채우기 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 다음을 포함하십시오. 다운로드 최대 크기(바이트)를 값으로 설정합니다. `asset.download.prezip.maxcontentsize`. 아래 샘플은 ZIP 다운로드의 최대 크기를 100kB를 초과하지 않도록 구성합니다.
+1. 채우기 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 다음을 포함하십시오. 다운로드 최대 크기(바이트)를 값으로 설정합니다. `asset.download.prezip.maxcontentsize`. 아래 샘플은 ZIP 다운로드의 최대 크기를 100kb를 초과하지 않도록 구성합니다.
 
    ```conf
    enabled=B"true"
@@ -89,4 +89,3 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons 
 >* [DRM 보호 에셋 다운로드](drm.md).
 >* [Win 또는 Mac 데스크탑에서 Experience Manager 데스크탑 앱을 사용하여 에셋 다운로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
 >* [지원되는 Adobe Creative Cloud 앱 내에서 에셋 Adobe 링크를 사용하여 에셋을 다운로드합니다](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html).
-

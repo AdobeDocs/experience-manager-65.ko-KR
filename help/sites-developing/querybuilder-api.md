@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2285'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ orderby=path
 
 의 목적 `p.guessTotal` 매개 변수는 실행 가능한 최소 p.offset 및 p.limit 값을 결합하여 표시할 수 있는 적절한 결과 수를 반환하는 것입니다. 이 매개 변수를 사용하면 결과 세트 크기가 클수록 성능이 향상됩니다. 이렇게 하면 전체 합계를 계산하고(예: result.getSize() 호출) Oak 엔진 및 인덱스까지 최적화된 전체 결과 세트를 읽지 않습니다. 실행 시간과 메모리 사용량 모두 10만 개의 결과가 있는 경우 이는 상당한 차이가 될 수 있습니다.
 
-매개 변수의 단점은 사용자가 정확한 합계를 보지 못한다는 것입니다. 그러나 p.guessTotal=1000과 같이 최소 숫자를 설정할 수 있으므로 항상 최대 1000까지 읽히므로 작은 결과 세트에 대한 정확한 합계를 얻을 수 있지만, 그 이상이 되면 &quot;및 이상&quot;만 표시할 수 있습니다.
+매개 변수의 단점은 사용자가 정확한 합계를 보지 못한다는 것입니다. 그러나 p.guessTotal=1000과 같은 최소 숫자를 설정할 수 있으므로 항상 최대 1000까지 읽히므로 작은 결과 세트에 대한 정확한 합계를 얻을 수 있지만, 그 이상이 되면 &quot;및 더 많은&quot;만 표시할 수 있습니다.
 
 추가 `p.guessTotal=true` 작동 방식을 확인하려면 아래 쿼리를 참조하십시오.
 

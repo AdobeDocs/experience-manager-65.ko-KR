@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1832'
 ht-degree: 2%
 
 ---
@@ -436,7 +436,7 @@ ht-degree: 2%
      <li>cellCls: css 클래스 </li>
      <li>readOnly: 값을 변경할 수 없는 true </li>
      <li>확인란: true 를 클릭하여 열의 모든 셀을 확인란(true/false 값)으로 정의합니다. </li>
-     <li>forcedPosition: 열이 그리드에 배치될 위치를 지정하는 정수 값(0에서 열 개수 - 1 사이)<p><br /> </p> </li>
+     <li>forcedPosition: 열이 그리드에 배치되어야 하는 위치를 지정하는 정수 값(0-열 개수-1 사이)<p><br /> </p> </li>
     </ul> </td>
   </tr>
  </tbody>

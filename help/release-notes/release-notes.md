@@ -2,10 +2,10 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 7c5d45788583cce3403b8beca0c122a9ddf1ca49
+source-git-commit: 746f34d394a072b133ca161c04585520c7ba6716
 workflow-type: tm+mt
-source-wordcount: '3613'
-ht-degree: 8%
+source-wordcount: '3556'
+ht-degree: 9%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 8%
 
 | 제품 | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| 버전 | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 버전 | 6.5.18.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2023년 11월 23일 목요일 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 날짜 | 2023년 8월 24일 목요일 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-## 에 포함된 항목 [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
+## 에 포함된 항목 [!DNL Experience Manager] 6.5.18.0 {#what-is-included-in-aem-6519}
 
-[!DNL Experience Manager] 6.5.19.0에는 2019년 4월 6.5의 최초 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. [이 서비스 팩 설치](#install) 날짜 [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.18.0에는 2019년 4월 6.5의 최초 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. [이 서비스 팩 설치](#install) 날짜 [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -61,44 +61,44 @@ ht-degree: 8%
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## 서비스 팩 19의 문제가 해결되었습니다. {#fixed-issues}
+## 서비스 팩 18의 문제가 해결되었습니다. {#fixed-issues}
 
 ### [!DNL Sites]{#sites-6519}
 
 
 #### 접근성{#sites-accessibility-6519}
 
-* AEM Sites 페이지에서 페이지를 200% 확대하면 링크가 연결됩니다 **[!UICONTROL 언어 복사]** 및 **[!UICONTROL CSV 보고서]** 참조 레일에서 가 사라집니다. (SITES-11011) 정상
+* AEM Sites 페이지에서 페이지를 200% 확대하면 링크가 연결됩니다 **[!UICONTROL 언어 복사]** 및 **[!UICONTROL CSV 보고서]** 참조 레일에서 가 사라집니다. (SITES-11011)
 
 #### 관리 사용자 인터페이스{#sites-adminui-6519}
 
-* AEM Screens 채널 **[!UICONTROL 미리 보기]** 기능이 대시보드에서 작동하거나 표시되지 않습니다. (SITES-15730) 중요
-* 페이지 이동 작업 중에 사용자 인터페이스가 참조를 표시할 수 없지만 자동으로 다시 게시됨을 나타내면 참조가 다시 게시됩니다 *아님* 다시 게시됨. (SITES-16435) 메이저
-* 서비스 팩 16 또는 17이 있는 AEM 6.5에서 &quot;워크플로우&quot; 열이 활성화된 사이트의 목록 보기에서 해당 열의 항목을 기준으로 목록을 정렬할 수 없습니다. 정렬이 수행되지 않습니다. (SITES-15385) 메이저
-* 리디렉션 페이지 템플릿의 경우 리디렉션 필드가 필수입니다. 그러나 필수 필드에 대한 유효성 검사가 적용되지 않거나 다음 두 시나리오에서 작동하지 않습니다. 필수 리디렉션 값 없이 페이지가 만들어지면 리디렉션 페이지를 만들 수 없습니다. 키보드 단축키를 사용하여 탐색할 때는 유효성 검사가 작동하지 않으며 필드가 유효하지 않은 것으로 표시되면 진행되지 않습니다. (SITES-15903) 정상
-* 일부 **수신 링크** 이(가) 의 표시된 수에 포함되지 않았습니다. **참조** 패널. 예를 들어 패널에 **수신 링크(6)** 하지만 실제로 9개의 들어오는 링크들이 있었습니다. (SITES-14816) 정상
+* AEM Screens 채널 **[!UICONTROL 미리 보기]** 기능이 대시보드에서 작동하거나 표시되지 않습니다. (SITES-15730)
+* 페이지 이동 작업 중에 사용자 인터페이스가 참조를 표시할 수 없지만 자동으로 다시 게시됨을 나타내면 참조가 다시 게시됩니다 *아님* 다시 게시됨. (SITES-16435)
+* 서비스 팩 16 또는 17이 있는 AEM 6.5에서 &quot;워크플로우&quot; 열이 활성화된 사이트의 목록 보기에서 해당 열의 항목을 기준으로 목록을 정렬할 수 없습니다. 정렬이 수행되지 않습니다. (SITES-15385)
+* 리디렉션 페이지 템플릿의 경우 리디렉션 필드가 필수입니다. 그러나 필수 필드에 대한 유효성 검사가 적용되지 않거나 다음 두 시나리오에서 작동하지 않습니다. 필수 리디렉션 값 없이 페이지가 만들어지면 리디렉션 페이지를 만들 수 없습니다. 키보드 단축키를 사용하여 탐색할 때는 유효성 검사가 작동하지 않으며 필드가 유효하지 않은 것으로 표시되면 진행되지 않습니다. (SITES-15903)
+* 일부 **수신 링크** 이(가) 의 표시된 수에 포함되지 않았습니다. **참조** 패널. 예를 들어 패널에 **수신 링크(6)** 하지만 실제로 9개의 들어오는 링크들이 있었습니다. (SITES-14816)
 
 #### 클래식 UI{#sites-classicui-6519}
 
-* SITES-15827에 핫픽스를 설치한 후 단어 사이에 공백이 있는 대화 상자 제목이 로 대체되었습니다 `" "`. 줄 바꿈도 제거 중입니다. (SITES-16089) 메이저
-* 이제 인코딩된 대화 상자 제목으로 인해 제목이 이중 인코딩됩니다. (SITES-15841) 정상
-* 서비스 팩 6.5.16에서 6.5.17로 AEM 서버를 업데이트하면 클래식 UI 대화 상자 제목이 이중 인코딩되었습니다. (SITES-15634) 정상
+* SITES-15827에 핫픽스를 설치한 후 단어 사이에 공백이 있는 대화 상자 제목이 로 대체되었습니다 `" "`. 줄 바꿈도 제거 중입니다. (SITES-16089)
+* 이제 인코딩된 대화 상자 제목으로 인해 제목이 이중 인코딩됩니다. (SITES-15841)
+* 서비스 팩 6.5.16에서 6.5.17로 AEM 서버를 업데이트하면 클래식 UI 대화 상자 제목이 이중 인코딩되었습니다. (SITES-15634)
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6519}
 
-* 내부 서버 오류 메시지가 콘텐츠 조각 편집기에 나타납니다. (SITES-13550) 중요
-* 의 업데이트 `org.json` npr-41291의 방식으로 라이브러리에서 데이터 오류 변환 발생 `DefaultDataTypeConverter` / `cfm-impl` 번들. 데이터 유형 전환은 보다 유연해야 합니다. (SITES-16473) 정상
-* &quot;호환되지 않는 콘텐츠로 인해 이 콘텐츠 조각 버전을 현재 버전과 비교할 수 없습니다.&quot; 오류 팝업 메시지를 가져옵니다. 콘텐츠 조각은 비교할 수 있어야 하지만 그렇지 않습니다. (SITES-16317) 정상
+* 내부 서버 오류 메시지가 콘텐츠 조각 편집기에 나타납니다. (SITES-13550)
+* 의 업데이트 `org.json` npr-41291의 방식으로 라이브러리에서 데이터 오류 변환 발생 `DefaultDataTypeConverter` / `cfm-impl` 번들. 데이터 유형 전환은 보다 유연해야 합니다. (SITES-16473)
+* &quot;호환되지 않는 콘텐츠로 인해 이 콘텐츠 조각 버전을 현재 버전과 비교할 수 없습니다.&quot; 오류 팝업 메시지를 가져옵니다. 콘텐츠 조각은 비교할 수 있어야 하지만 그렇지 않습니다. (SITES-16317)
 * 에서 자산 선택기 JS URL을 변경했습니다.
   `https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js`
 끝
-  `https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js` (SITES-16068) 정상
-* CFM-Polaris 통합을 위해 새로운 Polaris 메타데이터 API 응답 스키마를 조정합니다. (SITES-15166) 정상
-* 선택한 콘텐츠 조각을 참조하는 모든 콘텐츠 조각이 나열되어야 합니다. 대신 콘텐츠 조각 참조 패널의 에셋 참조에 0개의 참조가 표시됩니다. (SITES-15036) 정상
+  `https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js` (SITES-16068)
+* CFM-Polaris 통합을 위해 새로운 Polaris 메타데이터 API 응답 스키마를 조정합니다. (SITES-15166)
+* 선택한 콘텐츠 조각을 참조하는 모든 콘텐츠 조각이 나열되어야 합니다. 대신 콘텐츠 조각 참조 패널의 에셋 참조에 0개의 참조가 표시됩니다. (SITES-15036)
 
 #### 핵심 백엔드{#sites-core-backend-6519}
 
-* 개선 `StyleImpl`. (SITES-15164) 정상
+* 개선 `StyleImpl`. (SITES-15164)
 
 <!--#### Core Components{#sites-core-components-6519}
 
@@ -106,7 +106,7 @@ ht-degree: 8%
 
 #### Campaign 통합{#sites-campaign-integration-6519}
 
-* 서명 구성 요소(`/apps/fpl/components/campaign/signature`), 링크 외부화가 작동하지 않았습니다. 이미지 태그 위의 HTML 주석을 제거한 경우 도메인이 이미지 소스에 추가되지 않았습니다. 이 문제는 스테이징 환경이 아닌 프로덕션 환경의 서명 구성 요소에서만 발견되었습니다. (SITES-16120) 정상
+* 서명 구성 요소(`/apps/fpl/components/campaign/signature`), 링크 외부화가 작동하지 않았습니다. 이미지 태그 위의 HTML 주석을 제거한 경우 도메인이 이미지 소스에 추가되지 않았습니다. 이 문제는 스테이징 환경이 아닌 프로덕션 환경의 서명 구성 요소에서만 발견되었습니다. (SITES-16120)
 
 <!--#### Experience Fragments{#sites-experiencefragments-6519}
 
@@ -114,54 +114,53 @@ ht-degree: 8%
 
 #### 기초 구성 요소 (기존){#sites-foundation-components-legacy-6519}
 
-* Adobe Experience Manager(AEM) Sites 검색 구성 요소가 사용자 인터페이스를 중단합니다. (SITES-15087) 정상
+* Adobe Experience Manager(AEM) Sites 검색 구성 요소가 사용자 인터페이스를 중단합니다. (SITES-15087)
 
 #### GraphQL 쿼리 편집기{#sites-graphql-query-editor-6519}
 
-* GraphQL Editor 사용자 인터페이스에서는 쿼리 수가 많은 경우(예: 25개 이상) 모든 지속 쿼리를 스크롤할 수 없습니다. (SITES-16008) 메이저
-* GraphQL 편집기에서 지속 쿼리의 게시 상태를 저장하지 않습니다. GraphQL 편집기에 게시 취소 버튼이 표시되지만, 지속된 쿼리가 게시되었음을 나타내는 아이콘이 표시되지 않습니다. 페이지를 새로 고치면 지속 쿼리가 게시되지 않은 것으로 표시됩니다. (SITES-15858) 메이저
+* GraphQL Editor 사용자 인터페이스에서는 쿼리 수가 많은 경우(예: 25개 이상) 모든 지속 쿼리를 스크롤할 수 없습니다. (SITES-16008)
+* GraphQL 편집기에서 지속 쿼리의 게시 상태를 저장하지 않습니다. GraphQL 편집기에 게시 취소 버튼이 표시되지만, 지속된 쿼리가 게시되었음을 나타내는 아이콘이 표시되지 않습니다. 페이지를 새로 고치면 지속 쿼리가 게시되지 않은 것으로 표시됩니다. (SITES-15858)
 
 #### 론치{#sites-launches-6519}
 
-* 다음 이유로 인해 저장소의 변경 사항이 저장되지 않음 `Oak0001` 여러 페이지를 편집하거나 콘텐츠를 작성할 때 충돌합니다. 이러한 이벤트에서 재시도를 수행하는 것은 일반적이지만, 이는 발생하지 않습니다. (SITES-14840) 메이저
+* 다음 이유로 인해 저장소의 변경 사항이 저장되지 않음 `Oak0001` 여러 페이지를 편집하거나 콘텐츠를 작성할 때 충돌합니다. 이러한 이벤트에서 재시도를 수행하는 것은 일반적이지만, 이는 발생하지 않습니다. (SITES-14840)
 
 #### MSM - 라이브 카피{#sites-msm-live-copies-6519}
 
-* MSM 롤아웃 버튼은 터치 그래픽 사용자 인터페이스에서 작동하지 않습니다. (SITES-16991) 메이저
-* 라이브 카피를 만들거나 경험 조각을 롤아웃할 때 경험 조각 내에서 링크 참조가 업데이트되지 않습니다. (SITES-15460) 정상
+* MSM 롤아웃 버튼은 터치 그래픽 사용자 인터페이스에서 작동하지 않습니다. (SITES-16991)
+* 라이브 카피를 만들거나 경험 조각을 롤아웃할 때 경험 조각 내에서 링크 참조가 업데이트되지 않습니다. (SITES-15460)
 
 #### 페이지 편집기{#sites-pageeditor-6519}
 
-* 에셋 유형 필터에서 여러 문서 파일 유형 선택이 페이지 콘솔에서 작동하지 않습니다. 특정 파일 유형의 결과를 사용할 수 있어도 결과를 찾을 수 없습니다. 따라서 작성자가 여러 문서를 필터링할 수 없습니다. 여러 문서 유형을 사용해야 하며 한 번에 하나씩 필터링해야 합니다. (SITES-14047) 메이저
-* AEM 6.5.17 및 AEM 6.5.18에서 인스턴스를 업그레이드한 후 페이지 편집기 내에서 을 선택합니다. **[!UICONTROL 페이지 게시]**&#x200B;가 없는 URL로 리디렉션됩니다. 사용자는 게시 마법사로 리디렉션되어야 합니다. (SITES-15856) 정상
-* (SITES-15704) 정상
-* 운영 체제의 클립보드에서 붙여넣는 동안 AEM 클립보드에서 중복 복사됩니다. (SITES-15704) 정상
-* 에셋에서 선택 **[!UICONTROL 문서]**, 다음 아래 **[!UICONTROL 필터 유형]**, 선택 **[!UICONTROL Microsoft® Word]** 또는 **[!UICONTROL Microsoft® Excel]** 두 유형의 파일이 모두 있어도 결과를 표시하지 않습니다. (SITES-14837) 정상
+* 에셋 유형 필터에서 여러 문서 파일 유형 선택이 페이지 콘솔에서 작동하지 않습니다. 특정 파일 유형의 결과를 사용할 수 있어도 결과를 찾을 수 없습니다. 따라서 작성자가 여러 문서를 필터링할 수 없습니다. 여러 문서 유형을 사용해야 하며 한 번에 하나씩 필터링해야 합니다. (SITES-14047)
+* AEM 6.5.17 및 AEM 6.5.18에서 인스턴스를 업그레이드한 후 페이지 편집기 내에서 을 선택합니다. **[!UICONTROL 페이지 게시]**&#x200B;가 없는 URL로 리디렉션됩니다. 사용자는 게시 마법사로 리디렉션되어야 합니다. (SITES-15856)
+* 운영 체제의 클립보드에서 붙여넣는 동안 AEM 클립보드에서 중복 복사됩니다. (SITES-15704)
+* 에셋에서 선택 **[!UICONTROL 문서]**, 다음 아래 **[!UICONTROL 필터 유형]**, 선택 **[!UICONTROL Microsoft® Word]** 또는 **[!UICONTROL Microsoft® Excel]** 두 유형의 파일이 모두 있어도 결과를 표시하지 않습니다. (SITES-14837)
 
 ### [!DNL Assets]{#assets-6519}
 
-* Experience Manager 또는 Brand Portal에 게시할 자산을 구분할 수 없습니다. [NPR-41320]
-* 공용 폴더를 만들거나 저장하면 관리 대시보드에 세 개의 그룹이 만들어집니다. [ASSETS-26700]
-* 검색 패널에서 확인란을 선택하고 둘 중 하나를 선택 취소하면 모든 확인란이 선택 취소됩니다. [ASSETS-26377]
+* 공용 폴더를 만들거나 저장하면 관리 대시보드에 세 개의 그룹이 만들어집니다. (ASSETS-26700)
+* Experience Manager 또는 Brand Portal에 게시할 자산을 구분할 수 없습니다. (NPR-41320)
+* 검색 패널에서 확인란을 선택하고 둘 중 하나를 선택 취소하면 모든 확인란이 선택 취소됩니다. (ASSETS-26377)
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
-* 에셋이 AEM에 업로드되면 `update_asset` 워크플로우가 트리거됩니다. 워크플로우가 완료되지 않습니다. 워크플로 인스턴스를 보면 워크플로가 제품 업로드 단계까지 완료됩니다. 다음 단계는 scene7 일괄 업로드입니다. 사용자는 Dynamic Media Classic 앱에서 자산이 Scene7에 있음을 볼 수 있습니다. (ASSETS-30443) 위험
-* 사용자 지정 서블릿(API 끝점)이 잘못된 Dynamic Media(Scene7) 파일 이름을 반환하고 있습니다. 에셋을 삭제하고 동일한 이름의 에셋으로 대체할 때 발생합니다. 사용자 지정 서블릿은 이전 Dynamic Media(Scene7) 파일 이름을 반환하고 있지만 &quot;jcr&quot; API 호출은 올바른 파일 이름을 반환합니다. (ASSETS-29476) 주
-* 폴더 수준에서 동기화가 꺼진 후에도 로그에 &quot;Scene7 ReplicateOnModifyListener&quot; 트리거가 표시됩니다. 다음 `ReplicateOnModifyListener/Worker` 비 Dynamic Media 폴더 자산 및 컨텐츠 조각에 대한 처리를 건너뜁니다. (ASSETS-26705) 주
-* 고대비 흑백 모드의 드롭다운 요소(컨텐츠 전용, 보기, 추가 옵션)에 초점이 표시되지 않으면 시력이 낮은 사람이 영향을 받습니다. (ASSETS-25759) 정상
-* 페이지의 텍스트에 대한 광도 대비율 이 4.5:1 미만인 경우 시력이 낮은 사람이 영향을 받습니다. (ASSETS-25756) 정상
-* 화면 판독기에서 데이터를 제출한 후 표시된 팝업 메시지에 내레이션이 적용되지 않습니다. (ASSETS-25755) 정상
-* 랜드마크/영역 단축키를 사용하여 탐색할 때 화면 판독기가 페이지의 랜드마크(Dynamic Media, 비디오 인코딩 프로필 만들기)를 인식하지 못합니다 `D/R`. (ASSETS-25752) 정상
-* 랜드마크/영역 단축키를 사용하여 탐색할 때 화면 판독기가 페이지에서 여러 랜드마크를 인식하지 못합니다(Dynamic Media; 대화형 비디오 만들기) `D/R`. (ASSETS-25750) 정상
-* 화면 판독기(NVDA/JAWS/내레이터)가 의 랜드마크를 인식하지 못합니다. **에셋 편집** 단축키를 사용하여 탐색하는 동안 페이지 `D/R`. (ASSETS-25744) 정상
-* 사용자가 empty/false 비동기 작업 메시지를 가져오지만 연결된 자산이 게시되었습니다. (ASSETS-29342) TRIVIAL
+* 에셋이 AEM에 업로드되면 `update_asset` 워크플로우가 트리거됩니다. 워크플로우가 완료되지 않습니다. 워크플로 인스턴스를 보면 워크플로가 제품 업로드 단계까지 완료됩니다. 다음 단계는 scene7 일괄 업로드입니다. 사용자는 Dynamic Media Classic 앱에서 자산이 Scene7에 있음을 볼 수 있습니다. (ASSETS-30443)
+* 사용자 지정 서블릿(API 끝점)이 잘못된 Dynamic Media(Scene7) 파일 이름을 반환하고 있습니다. 에셋을 삭제하고 동일한 이름의 에셋으로 대체할 때 발생합니다. 사용자 지정 서블릿은 이전 Dynamic Media(Scene7) 파일 이름을 반환하고 있지만 &quot;jcr&quot; API 호출은 올바른 파일 이름을 반환합니다. (ASSETS-29476)
+* 폴더 수준에서 동기화가 꺼진 후에도 로그에 &quot;Scene7 ReplicateOnModifyListener&quot; 트리거가 표시됩니다. 다음 `ReplicateOnModifyListener/Worker` 비 Dynamic Media 폴더 자산 및 컨텐츠 조각에 대한 처리를 건너뜁니다. (ASSETS-26705)
+* 고대비 흑백 모드의 드롭다운 요소(컨텐츠 전용, 보기, 추가 옵션)에 초점이 표시되지 않으면 시력이 낮은 사람이 영향을 받습니다. (ASSETS-25759)
+* 페이지의 텍스트에 대한 광도 대비율 이 4.5:1 미만인 경우 시력이 낮은 사람이 영향을 받습니다. (ASSETS-25756)
+* 화면 판독기에서 데이터를 제출한 후 표시된 팝업 메시지에 내레이션이 적용되지 않습니다. (ASSETS-25755)
+* 랜드마크/영역 단축키를 사용하여 탐색할 때 화면 판독기가 페이지의 랜드마크(Dynamic Media, 비디오 인코딩 프로필 만들기)를 인식하지 못합니다 `D/R`. (ASSETS-25752)
+* 랜드마크/영역 단축키를 사용하여 탐색할 때 화면 판독기가 페이지에서 여러 랜드마크를 인식하지 못합니다(Dynamic Media; 대화형 비디오 만들기) `D/R`. (ASSETS-25750)
+* 화면 판독기(NVDA/JAWS/내레이터)가 의 랜드마크를 인식하지 못합니다. **에셋 편집** 단축키를 사용하여 탐색하는 동안 페이지 `D/R`. (ASSETS-25744)
+* 사용자가 empty/false 비동기 작업 메시지를 가져오지만 연결된 자산이 게시되었습니다. (ASSETS-29342)
 
 ### [!DNL Forms]{#forms-6519}
 
 의 수정 사항 [!DNL Experience Manager] Forms은 예약한 후 1주일 후에 별도의 추가 기능 패키지를 통해 제공됩니다 [!DNL Experience Manager] 서비스 팩 릴리스 날짜. 이 경우 AEM 6.5.19.0 Forms 추가 기능 패키지 릴리스가 2023년 11월 30일 목요일에 예정되어 있습니다. Forms 수정 사항 및 개선 사항 목록은 릴리스를 게시하는 이 섹션에 추가됩니다.
 
-* 액세스 제어 목록 추가 `fd-cloudservice` 아래에서 Microsoft® 구성을 읽거나 업데이트할 수 있는 사용자 `cloudconfigs/microsoftoffice`. (FORMS-11142) 정상
+* 액세스 제어 목록 추가 `fd-cloudservice` 아래에서 Microsoft® 구성을 읽거나 업데이트할 수 있는 사용자 `cloudconfigs/microsoftoffice`. (FORMS-11142)
 
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
@@ -179,13 +178,13 @@ ht-degree: 8%
 
 ### Foundation{#foundation-6519}
 
-* 언어 루트 수준에서 언어 사본을 만들어도 페이지의 경로가 조정되지 않습니다. 언어 루트가 아닌 그 아래의 페이지에 대한 언어 사본이 작성된 경우 경로가 올바르게 변경되었습니다. (NPR-41364) 메이저
-* &quot;상대적 날짜 표시&quot; 도구 설명은 키보드에서 Esc(Esc)를 눌러야만 닫을 수 있습니다. 사용자가 사용자 인터페이스의 일부를 선택하면 툴팁이 닫힙니다. (NPR-41394) 정상
-* 지역화되지 않은 문자열 `Something went wrong while adding the private key.` 에서 잘못된 개인 키 파일을 추가할 때 **사용자 편집** > **키 저장소**. (NPR-41366) 정상
-* 아이콘은 AEM 6.5 환경에서 Microsoft® SharePoint 및 Microsoft® One Drive에 필요합니다. (NPR-41354) 정상
-* 현지화되지 않은 &quot;UserId/Password 불일치&quot; 문자열 **보안** > **사용자** > **만들기** 대화 상자. (NPR-41245) 정상
-* 팝오버 코드와 이벤트 핸들러가 두 번 로드되어 사용자가 만든 Coral3 기반 사용자 인터페이스가 끊어집니다. (NPR-41171) 정상
-* AEM Sites 콘솔에서 &quot;모두 선택&quot;을 사용한 후에는 선택 해제가 제대로 작동하지 않습니다. (NPR-41304) 마이너
+* 언어 루트 수준에서 언어 사본을 만들어도 페이지의 경로가 조정되지 않습니다. 언어 루트가 아닌 그 아래의 페이지에 대한 언어 사본이 작성된 경우 경로가 올바르게 변경되었습니다. (NPR-41364)
+* &quot;상대적 날짜 표시&quot; 도구 설명은 키보드에서 Esc(Esc)를 눌러야만 닫을 수 있습니다. 사용자가 사용자 인터페이스의 일부를 선택하면 툴팁이 닫힙니다. (NPR-41394)
+* 지역화되지 않은 문자열 `Something went wrong while adding the private key.` 에서 잘못된 개인 키 파일을 추가할 때 **사용자 편집** > **키 저장소**. (NPR-41366)
+* 아이콘은 AEM 6.5 환경에서 Microsoft® SharePoint 및 Microsoft® One Drive에 필요합니다. (NPR-41354)
+* 현지화되지 않은 &quot;UserId/Password 불일치&quot; 문자열 **보안** > **사용자** > **만들기** 대화 상자. (NPR-41245)
+* 팝오버 코드와 이벤트 핸들러가 두 번 로드되어 사용자가 만든 Coral3 기반 사용자 인터페이스가 끊어집니다. (NPR-41171)
+* AEM Sites 콘솔에서 &quot;모두 선택&quot;을 사용한 후에는 선택 해제가 제대로 작동하지 않습니다. (NPR-41304)
 
 <!--#### Content distribution{#foundation-content-distribution-6519}
 
@@ -193,18 +192,18 @@ ht-degree: 8%
 
 #### 통합{#integrations-6519}
 
-* AEM 이메일 캠페인의 SMS 링크가 올바르게 작성되지 않습니다. 여기에는 HTML 앵커 요소가 포함되어 있습니다. (NPR-41211) 메이저
-* 계정 구성 화면에서 사용된 문구는 새 자격 증명 유형을 사용하지 않아야 합니다. (NPR-41210) 정상
-* 에서 Analytics 보고서 가져오기 스케줄러 이동 `ManagedPollConfig` 슬링 작업. 서로 다른 두 개의 분석 프레임워크가 서로 다른 보고서 세트를 사용하여 서로 다른 두 사이트에 연결된 경우 `ManagedPollConfig` 이 중 하나만 설문 조사합니다. (NPR-41209) 정상
-* 값이 기본값으로 재설정되면 이전에 선택한 일정 버튼이 활성 상태로 유지됩니다. AEM의 컨텐츠 인사이트 대시보드에서 기본적으로 시간대는 주로 설정되며 컨텐츠 인사이트를 주별 데이터로 표시합니다. 이제 사용자가 시간, 일, 월 및 년과 같은 다른 시간대 옵션을 선택하면 선택한 값에 따라 데이터가 변경됩니다. 그러나 값이 재설정되면 기본적으로 표시되는 시간대는 주이지만 이전에 선택한 시간대 옵션이 선택됩니다. (NPR-41246) 마이너
+* AEM 이메일 캠페인의 SMS 링크가 올바르게 작성되지 않습니다. 여기에는 HTML 앵커 요소가 포함되어 있습니다. (NPR-41211)
+* 계정 구성 화면에서 사용된 문구는 새 자격 증명 유형을 사용하지 않아야 합니다. (NPR-41210)
+* 에서 Analytics 보고서 가져오기 스케줄러 이동 `ManagedPollConfig` 슬링 작업. 서로 다른 두 개의 분석 프레임워크가 서로 다른 보고서 세트를 사용하여 서로 다른 두 사이트에 연결된 경우 `ManagedPollConfig` 이 중 하나만 설문 조사합니다. (NPR-41209)
+* 값이 기본값으로 재설정되면 이전에 선택한 일정 버튼이 활성 상태로 유지됩니다. AEM의 컨텐츠 인사이트 대시보드에서 기본적으로 시간대는 주로 설정되며 컨텐츠 인사이트를 주별 데이터로 표시합니다. 이제 사용자가 시간, 일, 월 및 년과 같은 다른 시간대 옵션을 선택하면 선택한 값에 따라 데이터가 변경됩니다. 그러나 값이 재설정되면 기본적으로 표시되는 시간대는 주이지만 이전에 선택한 시간대 옵션이 선택됩니다. (NPR-41246)
 
 #### Oak{#oak-6519}
 
-* 비동기 인덱싱이 지연될 경우 AEM에 대한 쓰기 제한 속도를 계산하는 백포트 유틸리티입니다. (NPR-40985) 메이저
+* 비동기 인덱싱이 지연될 경우 AEM에 대한 쓰기 제한 속도를 계산하는 백포트 유틸리티입니다. (NPR-40985)
 
 #### Platform{#foundation-platform-6519}
 
-* 대괄호가 있는 QueryBuilder 쿼리가 xpath 로 잘못 변환됩니다. (NPR-41298) 정상
+* 대괄호가 있는 QueryBuilder 쿼리가 xpath 로 잘못 변환됩니다. (NPR-41298)
 
 <!--#### Replication{#foundation-replication-6519}
 
@@ -216,7 +215,7 @@ ht-degree: 8%
 
 #### 번역 프로젝트{#foundation-translation-6519}
 
-* 페이지 &quot;A&quot;의 언어 사본을 만드는 동안 참조된 페이지, 경험 조각, 콘텐츠 조각 및 에셋의 언어 사본을 자동으로 만들어야 합니다. 또한 새 경로에 있는 페이지 &quot;A&quot;의 새로 만든 언어 사본에는 해당 참조가 페이지, 경험 조각, 콘텐츠 조각 및 에셋의 새로 만든 각각의 언어 사본으로 업데이트되어야 합니다. (NPR-41076) 정상
+* 페이지 &quot;A&quot;의 언어 사본을 만드는 동안 참조된 페이지, 경험 조각, 콘텐츠 조각 및 에셋의 언어 사본을 자동으로 만들어야 합니다. 또한 새 경로에 있는 페이지 &quot;A&quot;의 새로 만든 언어 사본에는 해당 참조가 페이지, 경험 조각, 콘텐츠 조각 및 에셋의 새로 만든 각각의 언어 사본으로 업데이트되어야 합니다. (NPR-41076)
 
 <!--#### User interface{#foundation-ui-6519}
 
@@ -228,22 +227,22 @@ ht-degree: 8%
 
 #### 워크플로{#foundation-workflow-6519}
 
-* 받은 편지함에서 작업을 완료할 수 없습니다. 작업을 완료하고 작업을 선택하려고 할 때 드롭다운 메뉴에 &quot;정의되지 않은&quot; 값만 표시됩니다. 즉, 사용자가 AEM 6.5.18 서비스 팩을 적용할 수 없습니다. (NPR-41402) 메이저
-* 받은 편지함에서 작업을 완료할 수 없습니다. zip 파일, 에셋 보고서, 이동(성공 또는 실패) 또는 에셋 만료에 대한 작업을 완료하려고 할 때 드롭다운 목록에 값이 없음(&quot;정의되지 않음&quot;만 해당). (NPR-41305) 메이저
-* 사용자가 선택할 때 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > 인스턴스, 실행 중인 워크플로우를 선택한 다음 를 선택합니다 **[!UICONTROL 페이로드 보기]**&#x200B;로 설정하면 500개의 오류 페이지가 표시됩니다. (NPR-41325) 정상
+* 받은 편지함에서 작업을 완료할 수 없습니다. 작업을 완료하고 작업을 선택하려고 할 때 드롭다운 메뉴에 &quot;정의되지 않은&quot; 값만 표시됩니다. 즉, 사용자가 AEM 6.5.18 서비스 팩을 적용할 수 없습니다. (NPR-41402)
+* 받은 편지함에서 작업을 완료할 수 없습니다. zip 파일, 에셋 보고서, 이동(성공 또는 실패) 또는 에셋 만료에 대한 작업을 완료하려고 할 때 드롭다운 목록에 값이 없음(&quot;정의되지 않음&quot;만 해당). (NPR-41305)
+* 사용자가 선택할 때 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > 인스턴스, 실행 중인 워크플로우를 선택한 다음 를 선택합니다 **[!UICONTROL 페이로드 보기]**&#x200B;로 설정하면 500개의 오류 페이지가 표시됩니다. (NPR-41325)
 
 
 ## 설치 [!DNL Experience Manager] 6.5.18.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.19.0을 사용하려면 [!DNL Experience Manager] 6.5. 참조 [업그레이드 설명서](/help/sites-deploying/upgrade.md) 자세한 지침은 을 참조하십시오. <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.18.0을 사용하려면 [!DNL Experience Manager] 6.5. 참조 [업그레이드 설명서](/help/sites-deploying/upgrade.md) 자세한 지침은 을 참조하십시오. <!-- UPDATE FOR EACH NEW RELEASE -->
 * 서비스 팩은 Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip)에서 다운로드할 수 있습니다.
-* MongoDB 및 여러 인스턴스가 포함된 배포에서 다음을 설치합니다. [!DNL Experience Manager] 패키지 관리자를 사용하는 작성자 인스턴스 중 하나에서 6.5.19.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+* MongoDB 및 여러 인스턴스가 포함된 배포에서 다음을 설치합니다. [!DNL Experience Manager] 패키지 관리자를 사용하는 작성자 인스턴스 중 하나에서 6.5.18.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe은 를 제거하거나 제거하지 않는 것이 좋습니다. [!DNL Experience Manager] 6.5.19.0 패키지. 따라서 팩을 설치하기 전에 `crx-repository` 혹시라도 돌려주셔야 할 것 같은데요 <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe은 를 제거하거나 제거하지 않는 것이 좋습니다. [!DNL Experience Manager] 6.5.18.0 패키지. 따라서 팩을 설치하기 전에 `crx-repository` 혹시라도 돌려주셔야 할 것 같은데요 <!-- UPDATE FOR EACH NEW RELEASE -->
 <!-- For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
@@ -267,20 +266,20 @@ ht-degree: 8%
 
 **자동 설치**
 
-를 사용하여 자동으로 설치할 수 있는 두 가지 방법이 있습니다 [!DNL Experience Manager] 6.5.19.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+를 사용하여 자동으로 설치할 수 있는 두 가지 방법이 있습니다 [!DNL Experience Manager] 6.5.18.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다. 패키지가 자동으로 설치됩니다.
 * [패키지 관리자에서 HTTP API](/help/sites-administering/package-manager.md#package-share)를 사용합니다. 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
 
 >[!NOTE]
 >
->Experience Manager 6.5.19.0은 Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Experience Manager 6.5.18.0은 Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **설치 확인**
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 다음을 참조하십시오. [기술 요구 사항](/help/sites-deploying/technical-requirements.md).
 
-1. 제품 정보 페이지(`/system/console/productinfo`) 업데이트된 버전 문자열을 표시합니다 `Adobe Experience Manager (6.5.19.0)` 아래에 [!UICONTROL 설치된 제품]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`) 업데이트된 버전 문자열을 표시합니다 `Adobe Experience Manager (6.5.18.0)` 아래에 [!UICONTROL 설치된 제품]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
@@ -310,7 +309,7 @@ GraphQL을 사용하는 고객은 [GraphQL 인덱스 패키지 1.1.1로 Experien
 
 ### UberJar{#uber-jar}
 
-에 대한 UberJar [!DNL Experience Manager] 6.5.19.0은 [Maven Central 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.18/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+에 대한 UberJar [!DNL Experience Manager] 6.5.18.0은 [Maven Central 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.18/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/help/sites-developing/ht-projects-maven.md) 프로젝트 POM에 다음 종속성을 포함하십시오. <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -318,7 +317,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.19</version>
+     <version>6.5.18</version>
      <scope>provided</scope>
 </dependency>
 ```
@@ -339,7 +338,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* **서비스 팩 18(6.5.19.0)로 업그레이드한 후 페이지 편집기에서 페이지 게시가 작동하지 않음**
+* **서비스 팩 18(6.5.18.0)로 업그레이드한 후 페이지 편집기에서 페이지 게시가 작동하지 않음**
 
   <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> AEM 6.5.0.0—6.5.17.0의 인스턴스를 AEM 6.5.19.0으로 업그레이드한 후 **페이지 게시** 페이지 편집기 내에서 존재하지 않는 URL로 리디렉션됩니다.
 
@@ -479,10 +478,10 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
-다음 텍스트 문서는에 포함된 OSGi 번들 및 콘텐츠 패키지 목록입니다. [!DNL Experience Manager] 6.5.19.0: <!-- UPDATE FOR EACH NEW RELEASE -->
+다음 텍스트 문서는에 포함된 OSGi 번들 및 콘텐츠 패키지 목록입니다. [!DNL Experience Manager] 6.5.18.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [Experience Manager 6.5.19.0에 포함된 OSGi 번들 목록](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Experience Manager 6.5.19.0에 포함된 컨텐츠 패키지 목록](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager 6.5.18.0에 포함된 OSGi 번들 목록](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager 6.5.18.0에 포함된 컨텐츠 패키지 목록](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 제한된 웹 사이트{#restricted-sites}
 

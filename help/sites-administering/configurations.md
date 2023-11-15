@@ -2,9 +2,9 @@
 title: 구성 및 구성 브라우저
 description: AEM 구성 및 AEM에서 작업 공간 설정을 관리하는 방법을 이해합니다.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1483'
 ht-degree: 6%
 
 ---
@@ -157,7 +157,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 이 예에서는 여기에서 WKND별 DAM 폴더와 해당 구성을 가정할 수 있습니다. 해당 폴더에서 시작 `/content/dam/wknd`, 라는 문자열-속성이 있음을 알 수 있습니다. `cq:conf` 하위 트리에 적용해야 하는 구성을 참조합니다. 속성은 `jcr:content` 에셋 폴더 또는 페이지 다음 `conf` 링크는 명시적이므로 CRXDE의 콘텐츠만 보면 쉽게 따라갈 수 있습니다.
 
-안에서 뛰기 `/conf`, 참조를 따라 를 확인할 수 있습니다. `/conf/wknd` 노드. 이는 구성입니다. 조회는 애플리케이션 코드를 통과시킵니다. 예제 코드에는 전용 참조가 없습니다. `Conf` 개체. 적용되는 구성은 JCR 콘텐츠를 통해 제어됩니다.
+안에서 뛰기 `/conf`, 참조를 따라 를 확인할 수 있습니다. `/conf/wknd` 노드. 이는 구성입니다. 조회는 애플리케이션 코드를 통과시킵니다. 예제 코드에는 전용 참조가 없으며 `Conf` 개체. 적용되는 구성은 JCR 콘텐츠를 통해 제어됩니다.
 
 구성에 고정 이름이 인 가 포함되어 있습니다 `settings` 다음을 포함한 실제 항목을 포함하는 노드 `dam/imageserver` 이 경우에 필요한 것입니다. 이러한 항목은 &quot;설정 문서&quot;로 생각할 수 있으며 `cq:Page` 다음 포함 `jcr:content` 실제 컨텐츠 유지.
 
