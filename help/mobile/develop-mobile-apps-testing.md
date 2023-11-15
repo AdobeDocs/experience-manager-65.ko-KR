@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 2c0e3052e32e32f794faa69177d5fdad95bec72f
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -89,12 +89,12 @@ ht-degree: 0%
 
 자세한 내용은 [https://saucelabs.com/](https://saucelabs.com/).
 
-**AppTestNow**
+<!-- **AppTestNow**
 
-* 모바일 앱을 테스트하는 아웃소싱 서비스입니다.
-* 여기에는 대규모 장치 풀이 포함되며 성능, 품질, 기능, 인증, 현지화, 데이터 소비 등 다양한 유형의 테스트를 제공합니다.
+* An outsourcing service that tests your mobile apps.
+* Included is a large pool of devices and offers a wide range of types of testing: performance, quality, functional, certification, localization, data consumption, and so on.
 
-자세한 내용은 [https://apptestnow.com/](https://apptestnow.com/).
+For more information, see [https://apptestnow.com/](https://apptestnow.com/). -->
 
 **하키앱**
 
