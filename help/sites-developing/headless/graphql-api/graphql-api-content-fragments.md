@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달을 위해 AEM(Adobe Experience Manager)의 콘텐츠 조각을 AEM GraphQL API와 함께 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 5bfd8216c9d3540ac6d795d434dab5afb7bce309
 workflow-type: tm+mt
-source-wordcount: '4774'
-ht-degree: 62%
+source-wordcount: '4848'
+ht-degree: 60%
 
 ---
 
@@ -715,7 +715,28 @@ query {
 
 >[!NOTE]
 >
->[캐시할 수 있는 문서에 대한 Dispatcher의 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)을 준수하기 위해 Dispatcher는 `.json` 접미사를 모든 지속 쿼리 URL에 추가하여 결과를 캐시할 수 있도록 합니다.
+>지속 쿼리에 대해 Dispatcher 캐싱이 활성화된 경우 다음을 사용 `Define CACHE_GRAPHQL_PERSISTED_QUERIES` an `ETag` Dispatcher가 응답에 헤더를 추가합니다.
+>
+>기본적으로 `ETag` 헤더는 다음 지시문으로 구성됩니다.
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>그러나 이 설정은 응답의 작은 변경 사항을 고려하지 않으므로 지속 쿼리 응답에 사용할 때 문제를 일으킬 수 있습니다.
+>
+>개인을 달성하려면 `ETag` 계산 *각각* 에 고유한 응답 `FileETag Digest` dispatcher 구성에서 설정을 사용해야 합니다.
+>
+>```xml
+><Directory />    
+>   ...    
+>   FileETag Digest
+></Directory> 
+>```
+
+>[!NOTE]
+>
+>을 준수하려면 [캐시할 수 있는 문서에 대한 Dispatcher의 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher는 접미사를 추가합니다 `.json` 결과를 캐시할 수 있도록 모든 지속 쿼리 URL에 매핑합니다.
 >
 >이 접미사는 지속 쿼리 캐싱이 활성화되면 다시 쓰기 규칙에 의해 추가됩니다.
 
