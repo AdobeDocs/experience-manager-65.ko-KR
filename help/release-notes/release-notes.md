@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 31131af52ecb4f9c4caaf8e75e0a9213874b3a1e
+source-git-commit: c78d5f1d94ffb92a1e034b0ccb6131ac811d708f
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3530'
 ht-degree: 9%
 
 ---
@@ -462,17 +462,13 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * 적응형 양식이 게시되면 정책을 포함한 모든 종속 항목은 수정 사항이 없더라도 다시 게시됩니다. (FORMS-10454)
 * 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 적응형 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
-* 리디렉션 URL이 적응형 양식의 안내서 컨테이너에 설정되면 인라인 서명 작동이 중지됩니다. (FORMS-10493)
-* 모든 기록 문서(DoR) 템플릿을 게시할 수 없습니다. 영어 로케일 기반 DoR 템플릿과 관련 Forms 기반 DoR 템플릿만 게시됩니다. (FORMS-10535)
+* 리디렉션 URL이 적응형 양식의 안내서 컨테이너에 설정되면 인라인 서명 작동이 중지됩니다. (FORMS-10493) 문제를 해결하려면 다음을 다운로드하여 설치합니다. [6.5.18.0용 핫픽스](/help/release-notes/aem-forms-hotfix.md).
+* 모든 기록 문서(DoR) 템플릿을 게시할 수 없습니다. 영어 로케일 기반 DoR 템플릿과 관련 Forms 기반 DoR 템플릿만 게시됩니다. (FORMS-10535) 문제를 해결하려면 다음을 다운로드하여 설치합니다. [6.5.18.0용 핫픽스](/help/release-notes/aem-forms-hotfix.md).
+
 
 #### 대화형 통신
 
-* AEM 서비스 팩 18로 업그레이드한 후에는 편집 모드에서 큰 인라인 이미지가 있는 대화형 통신을 열 수 없습니다. (FORMS-10578) 이 문제를 해결하려면 다음 단계를 수행하십시오.
-
-   1. 다운로드 [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) SD 링크에서.
-   1. 핫픽스 아카이브 파일을 추출하여 Experience Manager 패키지(.zip)와 번들(.jar) 파일을 가져올 수 있습니다.
-   1. 패키지 관리자를 통해 패키지(.zip)를 업로드하고 설치합니다.
-   1. 구성 관리자 번들을 엽니다. `https://server:host/system/console/bundles`번들(.jar)을 업로드하고 설치합니다.
+* AEM 서비스 팩 18로 업그레이드한 후에는 편집 모드에서 큰 인라인 이미지가 있는 대화형 통신을 열 수 없습니다. (FORMS-10578) 문제를 해결하려면 다음을 다운로드하여 설치합니다. [6.5.18.0용 핫픽스](/help/release-notes/aem-forms-hotfix.md).
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 

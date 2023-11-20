@@ -7,10 +7,10 @@ breadcrumb-title: 릴리스 정보
 user-guide-description: 릴리스 정보에서 AEM 6.5의 최신 새로운 기능에 대해 알아봅니다.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f618dbaafbbcd1511ea2a678db398b4bcbfda366
+source-git-commit: f6069758853181f96376a77da8d46cc5228b9605
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 43%
+source-wordcount: '76'
+ht-degree: 40%
 
 ---
 
@@ -41,5 +41,6 @@ ht-degree: 43%
    + [6.5.0](previous/ga.md)
 + [AEM Forms 서비스 팩 설치 지침](aem-forms-current-service-pack-installation-instructions.md)
 + [AEM Forms JEE 패치 설치 관리자](jee-patch-installer-65.md)
++ [AEM Forms 서비스 팩 핫픽스](/help/release-notes/aem-forms-hotfix.md)
 + [이제 사용되지 않는 기능과 제거된 기능](deprecated-removed-features.md)
 + [Touch UI 기능 상태](touch-ui-features-status.md)

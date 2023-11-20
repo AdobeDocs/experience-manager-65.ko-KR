@@ -135,7 +135,7 @@ ht-degree: 2%
      <li>날짜</li>
      <li>시간</li>
      <li>숫자</li>
-     <li>지속 시간</li>
+     <li>기간</li>
      <li>청구</li>
     </ul> </td>
    <td><p>모든 값</p> <p>테이블 - 호출</p> </td>
