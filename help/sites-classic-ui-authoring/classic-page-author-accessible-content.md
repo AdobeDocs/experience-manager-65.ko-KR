@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '9152'
-ht-degree: 66%
+source-wordcount: '9151'
+ht-degree: 65%
 
 ---
 
@@ -606,7 +606,7 @@ AEM에서 이렇게 하려면 소스 편집 모드를 사용하여 직접 마크
 * 대비(최소): 텍스트 및 텍스트 이미지의 시각적 표현에는 다음을 제외하고 최소 4.5:1의 대비율이 있습니다.
 
    * 큰 텍스트: 대규모 텍스트와 대규모 텍스트 이미지에는 최소 3:1의 대비율이 있습니다.
-   * 부수적: 비활성 사용자 인터페이스 구성 요소에 속하거나, 순수 장식이거나, 아무도 볼 수 없거나, 상당한 다른 시각적 컨텐츠를 포함하는 사진에 속하는 텍스트나 텍스트 이미지에는 대비 요구 사항이 없습니다.
+   * 부수적: 순수 장식이거나 아무도 볼 수 없는 비활성 사용자 인터페이스 구성 요소에 속하거나 상당한 다른 시각적 컨텐츠를 포함하는 사진에 속하는 텍스트나 텍스트 이미지에는 대비 요구 사항이 없습니다.
    * 로고: 로고나 브랜드 이름에 속하는 텍스트에는 최소 대비 요구 사항이 없습니다.
 
 #### 목적 - 대비 (최소) (1.4.3) {#purpose-contrast-minimum}

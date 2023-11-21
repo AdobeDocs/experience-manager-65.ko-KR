@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '18956'
 ht-degree: 0%
@@ -1806,7 +1806,7 @@ Output 서비스가 XML 데이터 원본을 기반으로 여러 파일을 성공
 
 1. 프로젝트 파일 포함&quot;
 
-   Java 프로젝트의 클래스 경로에 adobe-output-client.jar과 같은 클라이언트 JAR 파일을 포함합니다. .
+   Java 프로젝트의 클래스 경로에 adobe-output-client.jar과 같은 클라이언트 JAR 파일을 포함합니다.
 
 1. 출력 클라이언트 개체 만들기
 

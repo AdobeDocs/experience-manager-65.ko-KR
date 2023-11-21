@@ -1,17 +1,12 @@
 ---
 title: '자습서: 적응형 양식 만들기'
-seo-title: Create an adaptive form
 description: 적응형 양식을 만들고, 레이아웃하고, 미리 보는 방법에 대해 알아봅니다. 또한 제출 액션을 구성하는 방법도 알아보십시오.
-seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
-page-status-flag: de-activated
-uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
-discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '1380'
-ht-degree: 3%
+source-wordcount: '1384'
+ht-degree: 8%
 
 ---
 
@@ -45,13 +40,13 @@ ht-degree: 3%
 1. 다음에 대한 옵션 **[!UICONTROL 속성 추가]** 가 표시됩니다. 다음 **[!UICONTROL 제목]** 및 **[!UICONTROL 이름]** 필드는 필수입니다.
 
    * **제목:** 지정 `Add new or update shipping address` 다음에서 **[!UICONTROL 제목]** 필드. 제목 필드는 양식의 표시 이름을 지정합니다. 제목을 통해 AEM에서 양식을 식별할 수 있습니다 [!DNL Forms] 사용자 인터페이스.
-   * **이름:** 지정 `shipping-address-add-update-form` 다음에서 **[!UICONTROL 이름]** 필드. 이름 필드는 양식 이름을 지정합니다. 지정된 이름의 노드가 저장소에 생성됩니다. 제목 입력을 시작하면 이름 필드에 대한 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자, 하이픈 및 밑줄만 포함할 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
+   * **이름:** 지정 `shipping-address-add-update-form` 다음에서 **[!UICONTROL 이름]** 필드. 이름 필드는 양식 이름을 지정합니다. 이름이 지정된 노드가 저장소에서 만들어집니다. 제목 입력이 시작되면 이름 필드 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
 
-1. 누르기 **[!UICONTROL 만들기]**. 적응형 양식이 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다. 누르기 **[!UICONTROL 열기]** 새 탭에서 새로 만든 양식을 엽니다. 편집할 양식이 열립니다. 또한 필요에 따라 새로 만든 양식을 사용자 지정할 수 있는 사이드바가 표시됩니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다. 적응형 양식이 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다. 누르기 **[!UICONTROL 열기]** 새 탭에서 새로 만든 양식을 엽니다. 편집할 양식이 열립니다. 또한 요구 사항에 따라 새로 만든 양식을 사용자 정의할 수 있는 사이드바가 표시됩니다.
 
    적응형 양식 작성 인터페이스 및 사용 가능한 구성 요소에 대한 자세한 내용은 [적응형 양식 작성 소개](/help/forms/using/creating-adaptive-form.md).
 
-   ![새로 만든 적응형 양식](assets/newly-created-adaptive-form.png)
+   ![새로 만든 적응형 양식입니다.](assets/newly-created-adaptive-form.png)
 
 ## 2단계: 머리글 및 바닥글 추가 {#step-add-header-and-footer}
 

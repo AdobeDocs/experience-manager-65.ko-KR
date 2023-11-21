@@ -1,16 +1,12 @@
 ---
 title: 적응형 양식 표현식
-seo-title: Adaptive Form Expressions
 description: 적응형 양식 표현식을 사용하여 자동 유효성 검사, 계산을 추가하고 섹션의 가시성을 켜거나 끕니다.
-seo-description: Use adaptive forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
-uuid: c274dce5-8b87-472f-bff5-53b246fa6584
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
 source-wordcount: '2802'
 ht-degree: 2%
@@ -197,7 +193,7 @@ JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 ### 필수 {#required}
 
-구성 요소를 필수 항목으로 만들려면 **편집** 구성 요소의 대화 상자에서 옵션을 선택할 수 있습니다 **제목 및 텍스트 > 필수**. 적절한 항목을 추가할 수도 있습니다 **필수 메시지** (선택 사항) 또한. .
+구성 요소를 필수 항목으로 만들려면 **편집** 구성 요소의 대화 상자에서 옵션을 선택할 수 있습니다 **제목 및 텍스트 > 필수**. 적절한 항목을 추가할 수도 있습니다 **필수 메시지** (선택 사항) 또한.
 
 ### 유효성 검사 패턴 {#validation-patterns}
 
@@ -215,7 +211,7 @@ JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 ### GuideBridge - API 및 이벤트 {#guidebridge-apis-and-events}
 
-GuideBridge는 브라우저의 메모리 모델에서 적응형 양식과 상호 작용하는 데 사용할 수 있는 API의 컬렉션입니다. Guide Bridge API, 클래스 메서드, 이벤트 노출에 대한 자세한 소개는 다음을 참조하십시오. [적응형 양식을 위한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/).
+GuideBridge는 브라우저의 메모리 모델에서 적응형 양식과 상호 작용하는 데 사용할 수 있는 &#39;API&#39; 컬렉션입니다. Guide Bridge API, 클래스 메서드, 이벤트 노출에 대한 자세한 소개는 다음을 참조하십시오. [적응형 양식을 위한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >

@@ -4,10 +4,10 @@ description: Adobe Experience Manager에서 번역할 콘텐츠를 준비하는 
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 58%
+source-wordcount: '684'
+ht-degree: 54%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 58%
              |- zh
 ```
 
-각각의 사이트 언어 분기를 언어 사본이라고 합니다. 언어 루트라고도 하는 언어 사본의 루트 페이지는 언어 사본에 있는 콘텐츠의 언어를 식별합니다. 예를 들어 `/content/geometrixx/fr`은 프랑스어 언어 사본의 언어 루트입니다. 언어 사본은 소스 사이트 번역 시 올바른 언어가 타겟팅되도록 [올바르게 구성된 언어 루트](/help/sites-administering/tc-prep.md#creating-a-language-root)를 사용해야 합니다.
+각각의 사이트 언어 분기를 언어 사본이라고 합니다. 언어 루트라고도 하는 언어 사본의 루트 페이지는 언어 사본에 있는 콘텐츠의 언어를 식별합니다. 예를 들어 `/content/geometrixx/fr`은 프랑스어 언어 사본의 언어 루트입니다. 언어 사본은 [올바르게 구성된 언어 루트](/help/sites-administering/tc-prep.md#creating-a-language-root) 소스 사이트의 번역을 수행할 때 올바른 언어가 타깃팅되도록 합니다.
 
 처음 사이트 콘텐츠를 작성하는 언어 사본은 언어 마스터입니다. 언어 마스터는 다른 언어로 번역되는 소스입니다.
 
