@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: b886336b5a66f16eb7b076aefc2ae326dedb2f52
 workflow-type: tm+mt
-source-wordcount: '3691'
+source-wordcount: '3695'
 ht-degree: 1%
 
 ---
@@ -725,8 +725,9 @@ Adobe은 JEE 릴리스의 AEM Forms에서 지원하는 타사 참조 플랫폼�
 
 다음 플랫폼은 2021년 9월 7일에 AEM Forms 6.5.10.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
 
-- Adobe Acrobat 2017 - [Adobe Acrobat 2017에 대한 핵심 지원은 2022년 6월 6일에 종료됩니다](https://helpx.adobe.com/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Adobe Acrobat 2017에 대한 핵심 지원은 2022년 6월 6일에 종료됩니다](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
 - Red Hat® Enterprise Linux® 7(커널 3.x)(64비트)
+- Microsoft® Windows Server 2016(64비트)
 - Microsoft® Office 2016
 - OpenOffice 4.1.2
 
