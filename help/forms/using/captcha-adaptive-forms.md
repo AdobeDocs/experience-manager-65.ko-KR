@@ -7,10 +7,10 @@ topic-tags: adaptive_forms, author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f2d8fd17787e756e9ee5a8fc6eaea726de6b66ba
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -303,11 +303,12 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 
 마찬가지로 규칙 편집기를 사용하여 적응형 양식에서 CAPTCHA의 유효성을 검사하는 사용자 지정 방법을 포함할 수 있습니다.
 
-### 사용자 지정 CAPTCHA 서비스 추가 {#add-custom-captcha-service}
+<!--
+### Add custom CAPTCHA services {#add-custom-captcha-service}
 
-[!DNL Experience Manager Forms] 는 reCAPTCHA를 CAPTCHA 서비스로 제공합니다. 그러나 에 표시할 사용자 지정 서비스를 추가할 수 있습니다. **[!UICONTROL CAPTCHA 서비스]** 드롭다운 목록입니다.
+[!DNL Experience Manager Forms] provides reCAPTCHA as the CAPTCHA service. However, you can add a custom service to display in the **[!UICONTROL CAPTCHA Service]** drop-down list.  
 
-다음은 적응형 양식에 추가 CAPTCHA 서비스를 추가하는 인터페이스의 샘플 구현입니다.
+The following is a sample implementation of the interface to add additional CAPTCHA service to your Adaptive Form:
 
 ```javascript
 package com.adobe.aemds.guide.service;
@@ -337,6 +338,6 @@ public interface GuideCaptchaValidator {
 }
 ```
 
-`captchaPropertyNodePath` Sling 저장소에 있는 CAPTCHA 구성 요소의 리소스 경로를 나타냅니다. 이 속성을 사용하여 CAPTCHA 구성 요소와 관련된 세부 사항을 포함합니다. 예를 들어, `captchaPropertyNodePath` 에는 CAPTCHA 구성 요소에 구성된 reCAPTCHA 클라우드 구성에 대한 정보가 포함되어 있습니다. 클라우드 구성 정보는 다음을 제공합니다 **[!UICONTROL 사이트 키]** 및 **[!UICONTROL 비밀 키]** reCAPTCHA 서비스 구현 설정.
+`captchaPropertyNodePath` Refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` 다음 참조: `g_reCAPTCHA_response` 폼에서 CAPTCHA를 푼 후에 생성됩니다.
+`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form. -->
