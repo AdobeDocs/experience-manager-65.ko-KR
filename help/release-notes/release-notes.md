@@ -2,10 +2,11 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: c78d5f1d94ffb92a1e034b0ccb6131ac811d708f
+exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
+source-git-commit: 8d06457241919095fd9802f69df426a1cc6851da
 workflow-type: tm+mt
-source-wordcount: '3530'
-ht-degree: 9%
+source-wordcount: '3675'
+ht-degree: 10%
 
 ---
 
@@ -22,14 +23,14 @@ ht-degree: 9%
 
 | 제품 | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| 버전 | 6.5.18.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 버전 | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2023년 8월 24일 목요일 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 날짜 | 2023년 11월 30일 목요일 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-## 에 포함된 항목 [!DNL Experience Manager] 6.5.18.0 {#what-is-included-in-aem-6519}
+## 에 포함된 항목 [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
 
-[!DNL Experience Manager] 6.5.18.0에는 2019년 4월 6.5의 최초 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. [이 서비스 팩 설치](#install) 날짜 [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.19.0에는 2019년 4월 6.5의 최초 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. [이 서비스 팩 설치](#install) 날짜 [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -53,7 +54,7 @@ ht-degree: 9%
 
 * 시스템에 많은 프로젝트가 있을 수 있는 목록 보기에서 프로젝트를 빠르게 찾기 위해 이제 Adobe에서 서버측 정렬을 지원합니다. 프로젝트 노드는 사용자 인터페이스에서 렌더링하기 전에 사용자가 선택한 열을 기반으로 백엔드에서 정렬됩니다. (NPR-41027)
 
-* AEM 6.5.18.0은 MongoDB 5.0에서 6.0으로 지원합니다.
+* AEM 6.5.19.0은 MongoDB 5.0에서 6.0으로 지원합니다.
 
 **사용되지 않는 기능**
 
@@ -61,10 +62,9 @@ ht-degree: 9%
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## 서비스 팩 18의 문제가 해결되었습니다. {#fixed-issues}
+## 서비스 팩 19의 문제가 해결되었습니다. {#fixed-issues}
 
 ### [!DNL Sites]{#sites-6519}
-
 
 #### 접근성{#sites-accessibility-6519}
 
@@ -99,6 +99,7 @@ ht-degree: 9%
 #### 핵심 백엔드{#sites-core-backend-6519}
 
 * 개선 `StyleImpl`. (SITES-15164)
+* 해당 모듈에 대한 통합 테스트를 실행할 수 있도록 WCM 파이프라인의 릴리스/650 분기를 개선합니다. (SITES-12938)
 
 <!--#### Core Components{#sites-core-components-6519}
 
@@ -132,8 +133,9 @@ ht-degree: 9%
 
 #### 페이지 편집기{#sites-pageeditor-6519}
 
+* Forms > 테마에서 테마 편집기에서 테마를 열고 몇 가지 변경하고 저장한 다음 미리보기 를 클릭한 경우 로드 아이콘이 표시되지만 실제 미리보기가 로드되지 않습니다. (SITES-17164)
 * 에셋 유형 필터에서 여러 문서 파일 유형 선택이 페이지 콘솔에서 작동하지 않습니다. 특정 파일 유형의 결과를 사용할 수 있어도 결과를 찾을 수 없습니다. 따라서 작성자가 여러 문서를 필터링할 수 없습니다. 여러 문서 유형을 사용해야 하며 한 번에 하나씩 필터링해야 합니다. (SITES-14047)
-* AEM 6.5.17 및 AEM 6.5.18에서 인스턴스를 업그레이드한 후 페이지 편집기 내에서 을 선택합니다. **[!UICONTROL 페이지 게시]**&#x200B;가 없는 URL로 리디렉션됩니다. 사용자는 게시 마법사로 리디렉션되어야 합니다. (SITES-15856)
+* 선택한 경우, 페이지 편집기 내에서 AEM 6.5.17 및 AEM 6.5.18에서 인스턴스를 업그레이드한 후 **[!UICONTROL 페이지 게시]**&#x200B;가 없는 URL로 리디렉션됩니다. 사용자는 게시 마법사로 리디렉션되어야 합니다. (SITES-15856)
 * 운영 체제의 클립보드에서 붙여넣는 동안 AEM 클립보드에서 중복 복사됩니다. (SITES-15704)
 * 에셋에서 선택 **[!UICONTROL 문서]**, 다음 아래 **[!UICONTROL 필터 유형]**, 선택 **[!UICONTROL Microsoft® Word]** 또는 **[!UICONTROL Microsoft® Excel]** 두 유형의 파일이 모두 있어도 결과를 표시하지 않습니다. (SITES-14837)
 
@@ -145,7 +147,7 @@ ht-degree: 9%
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
-* 에셋이 AEM에 업로드되면 `update_asset` 워크플로우가 트리거됩니다. 워크플로우가 완료되지 않습니다. 워크플로 인스턴스를 보면 워크플로가 제품 업로드 단계까지 완료됩니다. 다음 단계는 scene7 일괄 업로드입니다. 사용자는 Dynamic Media Classic 앱에서 자산이 Scene7에 있음을 볼 수 있습니다. (ASSETS-30443)
+* 에셋이 AEM에 업로드되면 `update_asset` 워크플로우가 트리거됩니다. 워크플로우가 완료되지 않습니다. 워크플로 인스턴스를 보면 워크플로가 제품 업로드 단계까지 완료됩니다. 다음 단계는 Scene7 일괄 업로드입니다. 사용자는 Dynamic Media Classic 앱에서 자산이 Scene7에 있음을 볼 수 있습니다. (ASSETS-30443)
 * 사용자 지정 서블릿(API 끝점)이 잘못된 Dynamic Media(Scene7) 파일 이름을 반환하고 있습니다. 에셋을 삭제하고 동일한 이름의 에셋으로 대체할 때 발생합니다. 사용자 지정 서블릿은 이전 Dynamic Media(Scene7) 파일 이름을 반환하고 있지만 &quot;jcr&quot; API 호출은 올바른 파일 이름을 반환합니다. (ASSETS-29476)
 * 폴더 수준에서 동기화가 꺼진 후에도 로그에 &quot;Scene7 ReplicateOnModifyListener&quot; 트리거가 표시됩니다. 다음 `ReplicateOnModifyListener/Worker` 비 Dynamic Media 폴더 자산 및 컨텐츠 조각에 대한 처리를 건너뜁니다. (ASSETS-26705)
 * 고대비 흑백 모드의 드롭다운 요소(컨텐츠 전용, 보기, 추가 옵션)에 초점이 표시되지 않으면 시력이 낮은 사람이 영향을 받습니다. (ASSETS-25759)
@@ -227,22 +229,21 @@ ht-degree: 9%
 
 #### 워크플로{#foundation-workflow-6519}
 
-* 받은 편지함에서 작업을 완료할 수 없습니다. 작업을 완료하고 작업을 선택하려고 할 때 드롭다운 메뉴에 &quot;정의되지 않은&quot; 값만 표시됩니다. 즉, 사용자가 AEM 6.5.18 서비스 팩을 적용할 수 없습니다. (NPR-41402)
+* 받은 편지함에서 작업을 완료할 수 없습니다. 작업을 완료하고 작업을 선택하려고 할 때 드롭다운 메뉴에 &quot;정의되지 않은&quot; 값만 표시됩니다. 즉, 사용자가 AEM 6.5.18 서비스 팩을 적용할 수 없습니다. (NPR-41402 및 NPR-41473)
 * 받은 편지함에서 작업을 완료할 수 없습니다. zip 파일, 에셋 보고서, 이동(성공 또는 실패) 또는 에셋 만료에 대한 작업을 완료하려고 할 때 드롭다운 목록에 값이 없음(&quot;정의되지 않음&quot;만 해당). (NPR-41305)
 * 사용자가 선택할 때 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > 인스턴스, 실행 중인 워크플로우를 선택한 다음 를 선택합니다 **[!UICONTROL 페이로드 보기]**&#x200B;로 설정하면 500개의 오류 페이지가 표시됩니다. (NPR-41325)
 
-
-## 설치 [!DNL Experience Manager] 6.5.18.0{#install}
+## 설치 [!DNL Experience Manager] 6.5.19.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.18.0을 사용하려면 [!DNL Experience Manager] 6.5. 참조 [업그레이드 설명서](/help/sites-deploying/upgrade.md) 자세한 지침은 을 참조하십시오. <!-- UPDATE FOR EACH NEW RELEASE -->
-* 서비스 팩은 Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip)에서 다운로드할 수 있습니다.
-* MongoDB 및 여러 인스턴스가 포함된 배포에서 다음을 설치합니다. [!DNL Experience Manager] 패키지 관리자를 사용하는 작성자 인스턴스 중 하나에서 6.5.18.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.19.0을 사용하려면 [!DNL Experience Manager] 6.5. 참조 [업그레이드 설명서](/help/sites-deploying/upgrade.md) 자세한 지침은 을 참조하십시오. <!-- UPDATE FOR EACH NEW RELEASE -->
+* 서비스 팩은 Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip)에서 다운로드할 수 있습니다.
+* MongoDB 및 여러 인스턴스가 포함된 배포에서 다음을 설치합니다. [!DNL Experience Manager] 패키지 관리자를 사용하는 작성자 인스턴스 중 하나에서 6.5.19.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe은 를 제거하거나 제거하지 않는 것이 좋습니다. [!DNL Experience Manager] 6.5.18.0 패키지. 따라서 팩을 설치하기 전에 `crx-repository` 혹시라도 돌려주셔야 할 것 같은데요 <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe은 를 제거하거나 제거하지 않는 것이 좋습니다. [!DNL Experience Manager] 6.5.19.0 패키지. 따라서 팩을 설치하기 전에 `crx-repository` 혹시라도 돌려주셔야 할 것 같은데요 <!-- UPDATE FOR EACH NEW RELEASE -->
 <!-- For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
@@ -252,7 +253,7 @@ ht-degree: 9%
 
 1. 설치하기 전에 스냅샷 또는 새 백업을 [!DNL Experience Manager] 인스턴스.
 
-1. 에서 서비스 팩 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 에서 서비스 팩 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 패키지 관리자를 열고 를 선택합니다 **[!UICONTROL 패키지 업로드]** 패키지를 업로드합니다. 자세한 내용은 [패키지 관리자](/help/sites-administering/package-manager.md).
 
@@ -266,24 +267,24 @@ ht-degree: 9%
 
 **자동 설치**
 
-를 사용하여 자동으로 설치할 수 있는 두 가지 방법이 있습니다 [!DNL Experience Manager] 6.5.18.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+를 사용하여 자동으로 설치할 수 있는 두 가지 방법이 있습니다 [!DNL Experience Manager] 6.5.19.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다. 패키지가 자동으로 설치됩니다.
 * [패키지 관리자에서 HTTP API](/help/sites-administering/package-manager.md#package-share)를 사용합니다. 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
 
 >[!NOTE]
 >
->Experience Manager 6.5.18.0은 Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Experience Manager 6.5.19.0은 Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **설치 확인**
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 다음을 참조하십시오. [기술 요구 사항](/help/sites-deploying/technical-requirements.md).
 
-1. 제품 정보 페이지(`/system/console/productinfo`) 업데이트된 버전 문자열을 표시합니다 `Adobe Experience Manager (6.5.18.0)` 아래에 [!UICONTROL 설치된 제품]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`) 업데이트된 버전 문자열을 표시합니다 `Adobe Experience Manager (6.5.19.0)` 아래에 [!UICONTROL 설치된 제품]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
-1. OSGi 번들 `org.apache.jackrabbit.oak-core` 는 버전 1.22.16 이상입니다(웹 콘솔 사용: `/system/console/bundles`). <!-- NPR-41010 for 6.5.18.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1. OSGi 번들 `org.apache.jackrabbit.oak-core` 는 버전 1.22.17 이상입니다(웹 콘솔 사용: `/system/console/bundles`). <!-- NPR-41292 for 6.5.19.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
 ### 서비스 팩 설치 [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
@@ -291,7 +292,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 다음을 �
 
 >[!NOTE]
 >
->적응형 Forms 기능, 사용 가능 위치 [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)는 탐색 및 평가 목적으로만 설계되었습니다. 프로덕션 사용을 위해서는 적응형 Forms 기능에 적절한 라이선스가 필요하므로 AEM Forms에 대한 유효한 라이선스를 얻는 것이 필수적입니다.
+>[AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
 ### Experience Manager 콘텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
@@ -307,7 +308,7 @@ GraphQL을 사용하는 고객은 [GraphQL 인덱스 패키지 1.1.1로 Experien
 
 ### UberJar{#uber-jar}
 
-에 대한 UberJar [!DNL Experience Manager] 6.5.18.0은 [Maven Central 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.18/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+에 대한 UberJar [!DNL Experience Manager] 6.5.19.0은 [Maven Central 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.19/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/help/sites-developing/ht-projects-maven.md) 프로젝트 POM에 다음 종속성을 포함하십시오. <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -315,7 +316,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.18</version>
+     <version>6.5.19</version>
      <scope>provided</scope>
 </dependency>
 ```
@@ -330,25 +331,22 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
 ## 알려진 문제{#known-issues}
 
-<!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
- -->
-<!-- REMOVED AS PER CQDOC-20022, JANUARY 23, 2023 * If you install [!DNL Experience Manager] 6.5 Service Pack 10 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
-To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
-`<designModelPath>/jcr:content.generate.json`. -->
+<!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.-->
 
-* **서비스 팩 18(6.5.18.0)로 업그레이드한 후 페이지 편집기에서 페이지 게시가 작동하지 않음**
+<!-- * **Page publishing not working in Page Editor after upgrading to Service Pack 18 (6.5.18.0)** -->
 
-  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> AEM 6.5.0.0—6.5.17.0의 인스턴스를 AEM 6.5.19.0으로 업그레이드한 후 **페이지 게시** 페이지 편집기 내에서 존재하지 않는 URL로 리디렉션됩니다.
+<!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0 -->
+<!-- After you upgrade an instance of AEM 6.5.0.0&mdash;6.5.17.0 to AEM 6.5.19.0, when you click **Publish Page** inside the Page Editor, you are redirected to a URL that does not exist.
 
-  이 문제를 해결하려면 다음 중 하나를 수행하십시오.
+  To work around this issue, do one of the following:
 
-   * 다음 &quot;path&quot; 속성을 제거합니다.
+  * Remove the following "path" property.
 
-     `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/publish/granite:data`
+       `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/publish/granite:data`
 
-   * 올바른 URL을 브라우저에 바로 붙여넣습니다.
+  * Paste the correct URL directly into the browser.
 
-     `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html`
+       `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html` -->
 
 
 
@@ -458,6 +456,24 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 * AEM 서비스 팩 6.5.19.0 전체 설치 관리자를 설치한 후 JBoss® 턴키를 사용하여 JEE에서 EAR 배포가 실패합니다.
 문제를 해결하려면 `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` 파일 및 업데이트 `Adobe_Adobe_JAVA_HOME` 끝 `Adobe_JAVA_HOME` 구성 관리자를 실행하기 전에 발생하는 모든 발생 횟수. (CQDOC-20803)
 
+#### 서블릿 조각 설치(AEM 서비스 팩 6.5.14.0 이하)
+
+* AEM 서비스 팩 6.5.15.0 이상의 버전으로 업그레이드하고 AEM 인스턴스가 Tomcat 8.5.88에서 작동하는 경우 서블릿 조각을 설치해야 합니다 *다음 이전* 서비스 팩 6.5.15.0 이상 버전을 계속 설치합니다.
+* JBoss® EAP 7.4.0에서 실행되는 서버를 제외한 모든 애플리케이션 서버에 대해 서블릿 조각을 설치해야 합니다.
+
+**서블릿 조각을 설치하려면:**
+
+1. 에서 서블릿 조각 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
+1. 응용 프로그램 서버를 시작합니다.
+1. 로그가 안정될 때까지 기다린 후 번들 상태를 확인합니다.
+1. 웹 콘솔 번들을 엽니다. 기본 URL은 `http://[Server]:[Port]/system/console/bundles`.
+1. 선택 **[!UICONTROL 설치]** 또는 **[!UICONTROL 업데이트]**.
+1. 다운로드한 조각 선택
+   `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`
+1. 선택 **[!UICONTROL 설치]** 또는 **[!UICONTROL 업데이트]**.
+1. 응용 프로그램 서버가 안정될 때까지 기다립니다.
+1. 응용 프로그램 서버를 중지합니다.
+
 #### 적응형 양식
 
 * 적응형 양식이 게시되면 정책을 포함한 모든 종속 항목은 수정 사항이 없더라도 다시 게시됩니다. (FORMS-10454)
@@ -472,10 +488,10 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
-다음 텍스트 문서는에 포함된 OSGi 번들 및 콘텐츠 패키지 목록입니다. [!DNL Experience Manager] 6.5.18.0: <!-- UPDATE FOR EACH NEW RELEASE -->
+다음 텍스트 문서는에 포함된 OSGi 번들 및 콘텐츠 패키지 목록입니다. [!DNL Experience Manager] 6.5.19.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [Experience Manager 6.5.18.0에 포함된 OSGi 번들 목록](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Experience Manager 6.5.18.0에 포함된 컨텐츠 패키지 목록](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager 6.5.19.0에 포함된 OSGi 번들 목록](/help/release-notes/assets/65190_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager 6.5.19.0에 포함된 컨텐츠 패키지 목록](/help/release-notes/assets/65190_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 제한된 웹 사이트{#restricted-sites}
 

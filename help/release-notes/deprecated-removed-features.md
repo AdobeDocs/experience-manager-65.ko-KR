@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 6.5 릴리스에서 더 이상 사용되지 않거나 제거된 기능.
 description: Adobe Experience Manager 6.5에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bbd18486a77d7b46454aacff23147b38860bd895
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1741'
 ht-degree: 34%
 
 ---
@@ -31,6 +31,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 | 영역 | 특별 포함 | 대체 | 버전 (SP) |
 |---|---|---|---|
+| Sites | 다음 **Adobe AEM 관리 폴링 구성** 서비스: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | 다음 **Adobe AEM Analytics Report Sling Importer** 서비스. Adobe Analytics 연결 및 프레임워크 만들기 를 참조하십시오. [가져오기 간격 구성](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | AEM의 ActiveMQ입니다. ActiveMQ는 두 AEM Publish 인스턴스 간의 통신에 사용되었습니다. | Adobe은 고객이 로드 밸런서를 사용할 것을 권장합니다. |  |
 | [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. |   | 6.5.11.0 |
 | [!DNL Sites] | 콘텐츠 조각 템플릿(단순 콘텐츠 조각 생성) | 현재는 [모델 기반 구조 콘텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)입니다. | 6.5.11.0 |
