@@ -3,10 +3,10 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 8d06457241919095fd9802f69df426a1cc6851da
+source-git-commit: f8f82ad5805095f331432471b614225f761e645c
 workflow-type: tm+mt
-source-wordcount: '3675'
-ht-degree: 10%
+source-wordcount: '3530'
+ht-degree: 9%
 
 ---
 
@@ -38,23 +38,12 @@ ht-degree: 10%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+**주요 기능 및 개선 사항**
+
 이 릴리스의 몇 가지 주요 기능 및 개선 사항은 다음과 같습니다.
 
-**주요 기능**
-
-* 에셋, Dynamic Media - [Dynamic Media 비디오에 대한 다중 자막 및 다중 오디오 트랙 지원](/help/assets/video.md#about-msma)- 이제 여러 자막과 여러 오디오 트랙을 기본 비디오에 쉽게 추가할 수 있습니다. 즉, 이러한 기능을 통해 글로벌 대상자는 비디오에 액세스할 수 있습니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 자막 및 오디오 트랙을 관리할 수도 있습니다.
-
-* 에셋 - 이제 검색 결과에서 에셋이 포함된 폴더 위치로 이동하여 다양한 에셋 관리 작업을 수행할 수 있습니다. (ASSETS-23182)
-
-**주요 개선 사항**
-
-* 컨텐츠 조각의 Sites Polaris Picker가 성능이 향상되었습니다. (SITES-14092)
-
 * 사이트 페이지 편집기/이미지 구성 요소 사용자가 원격 자산 Cloud Service의 자산을 참조할 수 있도록 했습니다. (SITES-13448, SITES-13433)
-
-* 시스템에 많은 프로젝트가 있을 수 있는 목록 보기에서 프로젝트를 빠르게 찾기 위해 이제 Adobe에서 서버측 정렬을 지원합니다. 프로젝트 노드는 사용자 인터페이스에서 렌더링하기 전에 사용자가 선택한 열을 기반으로 백엔드에서 정렬됩니다. (NPR-41027)
-
-* AEM 6.5.19.0은 MongoDB 5.0에서 6.0으로 지원합니다.
+* 이제 AEM은 목록 보기에서 더 빠른 프로젝트 탐색을 위해 서버측 정렬을 지원합니다. 프로젝트 노드는 인터페이스에 표시되기 전에 사용자가 선택한 열을 기준으로 정렬됩니다.
 
 **사용되지 않는 기능**
 
@@ -292,7 +281,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 다음을 �
 
 >[!NOTE]
 >
->[AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
+>[AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
 ### Experience Manager 콘텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
@@ -458,7 +447,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
 #### 서블릿 조각 설치(AEM 서비스 팩 6.5.14.0 이하)
 
-* AEM 서비스 팩 6.5.15.0 이상의 버전으로 업그레이드하고 AEM 인스턴스가 Tomcat 8.5.88에서 작동하는 경우 서블릿 조각을 설치해야 합니다 *다음 이전* 서비스 팩 6.5.15.0 이상 버전을 계속 설치합니다.
+* AEM 서비스 팩 6.5.15.0 이상으로 업그레이드하고 AEM 인스턴스가 Tomcat 8.5.88에서 작동하는 경우 서블릿 조각을 설치해야 합니다 *다음 이전* 서비스 팩 6.5.15.0 이상을 설치합니다.
 * JBoss® EAP 7.4.0에서 실행되는 서버를 제외한 모든 애플리케이션 서버에 대해 서블릿 조각을 설치해야 합니다.
 
 **서블릿 조각을 설치하려면:**
@@ -484,7 +473,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
 #### 대화형 통신
 
-* AEM 서비스 팩 18로 업그레이드한 후에는 편집 모드에서 큰 인라인 이미지가 있는 대화형 통신을 열 수 없습니다. (FORMS-10578) 문제를 해결하려면 다음을 다운로드하여 설치합니다. [6.5.18.0용 핫픽스](/help/release-notes/aem-forms-hotfix.md).
+* AEM 서비스 팩 18로 업그레이드한 후에는 편집 모드에서 큰 인라인 이미지가 있는 대화형 통신을 열 수 없습니다. (FORMS-10578) 문제를 해결하려면 다음을 설치합니다. [6.5.18.0용 핫픽스](/help/release-notes/aem-forms-hotfix.md).
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
