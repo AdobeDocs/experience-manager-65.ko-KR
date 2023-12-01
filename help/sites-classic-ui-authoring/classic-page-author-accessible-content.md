@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '9151'
+source-wordcount: '9148'
 ht-degree: 65%
 
 ---
@@ -577,15 +577,15 @@ AEM에서 이렇게 하려면 소스 편집 모드를 사용하여 직접 마크
    <td><p><strong>사용 가능</strong></p> </td>
   </tr>
   <tr>
-   <td><p>3월 16일 화요일<sup>번째</sup></p> </td>
+   <td><p>3월 16일 화요일</p> </td>
    <td><p>사용 가능한 시트</p> </td>
   </tr>
   <tr>
-   <td><p>3월 17일 수요일<sup>번째</p> </td>
+   <td><p>3월 17일 수요일</p> </td>
    <td><p>사용 가능한 시트</p> </td>
   </tr>
   <tr>
-   <td><p>3월 18일 목요일<sup>번째</sup></p> </td>
+   <td><p>3월 18일 목요일</p> </td>
    <td><p>매진</p> </td>
   </tr>
  </tbody>

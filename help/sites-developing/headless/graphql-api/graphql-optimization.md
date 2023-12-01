@@ -2,7 +2,7 @@
 title: GraphQL 쿼리 최적화
 description: Headless 콘텐츠 전달을 위해 Adobe Experience Manager as a Cloud Service에서 콘텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법에 대해 알아봅니다.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '1965'
 ht-degree: 58%
@@ -316,7 +316,7 @@ GraphQL 쿼리에도 이 접근 방식을 적용해야 합니다.
 
 ### 콘텐츠 조각 중첩 최소화 {#minimize-content-fragment-nesting}
 
-콘텐츠 조각 중첩은 사용자 지정 콘텐츠 구조를 모델링하는 좋은 방법입니다. 중첩된 조각이 있는 중첩된 조각이 있는 조각을 가질 수도 있습니다. 이러한 조각에는 ... 등이 있습니다.
+콘텐츠 조각 중첩은 사용자 지정 콘텐츠 구조를 모델링하는 좋은 방법입니다. 중첩된 조각이 있고, ... 등이 있는 중첩된 조각이 있는 조각을 가질 수도 있습니다.
 
 그러나 GraphQL이 중첩된 모든 콘텐츠 조각의 전체 계층 구조를 통과해야 하므로 수준이 너무 많은 구조를 만들면 GraphQL 쿼리의 처리 시간이 늘어날 수 있습니다.
 

@@ -2,9 +2,9 @@
 title: 컨텐츠 페이지 게시
 description: Adobe Experience Manager 6.5에서 컨텐츠 페이지를 게시하는 방법을 알아봅니다.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1660'
 ht-degree: 75%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 75%
    * 게시할 참조가 없으면 페이지가 직접 게시됩니다.
    * 페이지에 게시해야 하는 참조가 있을 경우 **게시 마법사**&#x200B;에 나열되며 여기서 다음과 같은 작업을 수행할 수 있습니다.
 
-      * 페이지와 함께 게시할 에셋, 태그 등 하나를 지정한 다음 를 사용합니다 **게시** 을 클릭하여 프로세스를 완료합니다.
+      * 페이지와 함께 게시할 에셋 또는 태그를 지정한 다음 를 사용합니다 **게시** 을 클릭하여 프로세스를 완료합니다.
 
       * **취소**&#x200B;를 사용하여 작업을 중단합니다.
 

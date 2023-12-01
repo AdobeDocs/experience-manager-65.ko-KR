@@ -1,17 +1,15 @@
 ---
 title: 메타데이터, 이미지 및 비디오 처리용 프로필
 description: 프로필은 폴더에 업로드된 에셋에 적용할 옵션에 대한 규칙 세트를 제공합니다. 업로드하는 비디오 자산에 적용할 메타데이터 프로필 및 비디오 인코딩 프로필을 지정합니다. 이미지 에셋의 경우 이미지 에셋을 제대로 자를 수 있도록 이미지 에셋에 적용할 이미징 프로필을 지정할 수도 있습니다.
-uuid: 6ded2a2f-a0d3-4f43-af97-02fbc0902c25
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 0%
@@ -63,7 +61,7 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 >
 >Dynamic Media 서버에서 마이그레이션 게시 에이전트를 비활성화해야 재처리 워크플로우가 예상대로 작동합니다.
 
-<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
+<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job, and so on, until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
 **폴더에서 에셋을 재처리하려면:**
 

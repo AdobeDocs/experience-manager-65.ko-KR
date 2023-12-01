@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 1%
@@ -257,7 +257,7 @@ AEM Forms은 [규칙 편집기](/help/forms/using/rule-editor.md) 을 사용하�
    * **XSD 스키마**: 적응형 양식에서 사용되는 것과 동일한 XML 스키마를 사용하는 관련 XFA 템플릿을 사용합니다.
    * **없음**: 자동 생성된 DoR을 사용합니다.
 
-* 적응형 양식 편집기의 기록 문서 탭에서 머리글, 바닥글, 이미지, 색상, 글꼴 등을 오른쪽으로 구성합니다.
+* 적응형 양식 편집기의 기록 문서 탭에서 머리글, 바닥글, 이미지, 색상, 글꼴 등을 바로 구성합니다.
 * 사용 `DoRService` 를 입력하여 프로그래밍 방식으로 DoR을 생성합니다.
 * DoR에서 숨겨진 필드를 제외합니다.
 * 사용 `afAcceptLang` 다른 로케일에서 DoR을 보려면 매개 변수를 요청하십시오.

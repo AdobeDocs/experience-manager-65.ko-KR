@@ -7,7 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 0%
@@ -249,7 +249,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 * 대상 URL, 타사 및 AEM URL 지원
 * 페이지 렌더링 옵션(같은 창, 새 창 등)
 
-가져온 zip에 클릭스루 구성 요소를 포함하는 HTML 태그입니다. 여기서 href는 대상 URL에 매핑되고 &quot;제품 세부 정보 보기&quot;는 레이블에 매핑되는 등의 작업을 수행합니다.
+가져온 zip에 클릭스루 구성 요소를 포함하는 HTML 태그입니다. 여기서 href는 대상 URL에 매핑되고 &quot;제품 세부 정보 보기&quot;는 레이블에 매핑되는 방식입니다.
 
 ```xml
 <div id="cqcanvas">
@@ -282,7 +282,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 * 대상 URL, 타사 및 AEM URL 지원
 * 페이지 렌더링 옵션(같은 창, 새 창 등)
 
-가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기서 href는 타겟 URL에 매핑되고, img src는 렌더링 이미지이며, &quot;title&quot;은 가리킨 텍스트 등으로 간주됩니다.
+가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기서 href는 타겟 URL에 매핑되고, img src는 렌더링 이미지이며, &quot;title&quot;은 마우스로 가리키면 표시되는 텍스트 등입니다.
 
 ```xml
 <div id="cqcanvas">

@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 20%
@@ -167,7 +167,7 @@ ht-degree: 20%
 
    * 모든 줄은 게시된 버전을 나타냅니다.
 페이지가 활성화되면 새 줄이 시작됩니다. 문서를 편집할 때마다 새 색상이 나타납니다.
-아래 예에서 빨간색 선은 페이지가 초기 녹색 버전의 기간 동안 편집되었음을 나타냅니다. 노란색 선은 페이지가 빨간색 버전 등의 작업 중에 편집되었음을 나타냅니다.
+아래 예에서 빨간색 선은 페이지가 초기 녹색 버전의 기간 동안 편집되었음을 나타냅니다. 노란색 선은 페이지가 빨간색 버전 중에 편집된 경우 등을 나타냅니다.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 

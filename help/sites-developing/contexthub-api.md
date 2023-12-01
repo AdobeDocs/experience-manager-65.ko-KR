@@ -7,7 +7,7 @@ topic-tags: personalization
 content-type: reference
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '5004'
 ht-degree: 2%
@@ -365,7 +365,7 @@ A `string` 참조된 키를 나타내는 값입니다. 참조가 확인되지 �
 
 저장소에 키/값 쌍을 추가합니다.
 
-트리거 `data` 이벤트 는 키에 대한 값이 현재 키에 대해 저장된 값과 다른 경우에만 발생합니다. 필요한 경우 의 트리거를 방지할 수 있습니다. `data` 이벤트.
+트리거 `data` 이벤트 는 키에 대한 값이 현재 키에 저장된 값과 다른 경우에만 발생합니다. 필요한 경우 의 트리거를 방지할 수 있습니다. `data` 이벤트.
 
 이벤트 데이터에는 저장소 이름, 키, 이전 값, 새 값 및 의 작업 유형이 포함됩니다. `set`.
 

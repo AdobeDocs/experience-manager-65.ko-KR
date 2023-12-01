@@ -6,9 +6,9 @@ feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2483'
 ht-degree: 14%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 <!-- old content
@@ -207,7 +207,7 @@ IMS 계정을 구성하려면:
 
 을(를) 구성하려면 다음을 수행하십시오. [!DNL Adobe Stock] 클라우드 서비스:
 
-1. 다음에서 [!DNL Experience Manager] 사용자 인터페이스, 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. 다음에서 [!DNL Experience Manager] 사용자 인터페이스, 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**.
 
 1. 다음에서 [!DNL Adobe Stock Configurations] 페이지, 클릭 **[!UICONTROL 만들기]**.
 
@@ -260,11 +260,11 @@ IMS 계정을 구성하려면:
    * 권한: `jcr:read`
    * 권한 유형: `Allow`
 
-   클릭 **[!UICONTROL 추가]**.
+   **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
    ![사용자 권한](assets/aem-stock-user-permissions.png)
 
-1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. 다음 항목 선택 [!DNL Adobe Stock] 클라우드 구성 및 클릭 **[!UICONTROL 속성]**.
+1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**. 다음 항목 선택 [!DNL Adobe Stock] 클라우드 구성 및 클릭 **[!UICONTROL 속성]**.
 
 1. 새로 생성된 사용자 그룹을 [!DNL Adobe Stock] 구성. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
@@ -323,7 +323,7 @@ IMS 계정을 구성하려면:
 
 이 기능을 사용하면 조직에서 해당 사용자가 을 사용하여 작업할 수 있습니다. [!DNL Adobe Stock] 의 에셋 [!DNL Experience Manager Assets]. 다음 범위 내에서 [!DNL Experience Manager] 사용자 인터페이스, 사용자가 검색 가능 [!DNL Adobe Stock] 에셋 을 선택하고 필요한 에셋에 라이선스를 부여합니다.
 
-한 번 [!DNL Adobe Stock] 자산에 라이센스가 부여됨 [!DNL Experience Manager]를 통해 일반적인 자산처럼 사용 및 관리할 수 있습니다. 위치 [!DNL Experience Manager], 사용자는 에셋을 검색하고 미리 볼 수 있고, 에셋을 복사하여 게시하고, 에셋을 공유할 수 있습니다. [!DNL Brand Portal]; 를 통해 에셋에 액세스하고 사용합니다. [!DNL Experience Manager] 데스크탑 앱 등.
+한 번 [!DNL Adobe Stock] 자산에 라이센스가 부여됨 [!DNL Experience Manager]를 통해 일반적인 자산처럼 사용 및 관리할 수 있습니다. 위치 [!DNL Experience Manager], 사용자는 에셋을 검색하고 미리 볼 수 있고, 에셋을 복사하여 게시하고, 에셋을 공유할 수 있습니다. [!DNL Brand Portal]; 의 방식으로 에셋에 액세스하고 사용합니다. [!DNL Experience Manager] 데스크탑 앱 등.
 
 ![검색 대상 [!DNL Adobe Stock] 에서 에셋 및 필터 결과 [!DNL Adobe Experience Manager] 작업 영역](assets/adobe-stock-search-results-workspace.png)
 
@@ -390,7 +390,6 @@ IMS 계정을 구성하려면:
 >* [사용에 대한 비디오 튜토리얼 [!DNL Adobe Stock] 자산 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [[!DNL Adobe Stock] 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/stock/faq.html)
-
 
 
 <!--old content

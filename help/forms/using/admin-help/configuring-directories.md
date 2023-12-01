@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '3226'
 ht-degree: 0%
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 ### 사용자 설정 {#user-settings}
 
-**고유 식별자:** (필수) 사용자를 식별하는 데 사용되는 고유한 상수 속성입니다. 사용자의 DN이 조직의 다른 부분으로 이동할 경우 변경될 수 있으므로 DN 이외의 속성을 고유 식별자로 사용합니다. 이 설정은 디렉터리 서버에 따라 다릅니다. 값은 Active Directory 2003의 objectGUID, Sun™ One의 nuniqueID 및 eDirectory의 guid입니다.
+**고유 식별자:** (필수) 사용자를 식별하는 데 사용되는 고유한 상수 속성입니다. 조직의 다른 부분으로 이동할 경우 사용자의 DN이 변경될 수 있으므로 DN이 아닌 속성을 고유 식별자로 사용합니다. 이 설정은 디렉터리 서버에 따라 다릅니다. 값은 Active Directory 2003의 objectGUID, Sun™ One의 nuniqueID 및 eDirectory의 guid입니다.
 
 >[!NOTE]
 >
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 **전체 이름:** (필수) 사용자의 전체 이름에 대한 스키마 속성
 
-**로그인 ID:** (필수) 사용자의 로그인 ID에 대한 스키마 속성
+**로그인 ID:** (필수) 사용자 로그인 ID에 대한 스키마 속성
 
 **성:** (필수) 사용자 성에 대한 스키마 속성
 
@@ -150,7 +150,7 @@ Enterprise 도메인을 사용하는 경우 Business Calendar 설정을 LDAP 디
 
 **보조 이메일:** 사용자의 보조 이메일 주소에 대한 스키마 속성.
 
-**전화:** 사용자 전화 번호에 대한 스키마 속성.
+**전화:** 사용자 전화번호에 대한 스키마 속성.
 
 **우편 주소:** 사용자 메일링 주소에 대한 스키마 속성.
 

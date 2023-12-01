@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 2%
@@ -51,7 +51,7 @@ Adobe 다이내믹 Tag Management은 디지털 마케팅 도구를 활성화하�
    >
    >* `AppMeasurement.js` 이(가) 제거되었습니다. DTM의 Adobe Analytics 도구를 통해 사용할 수 있을 것으로 예상됩니다.
    >* 에 대한 호출 `assetAnalytics.dispatcher.init()` 이(가) 제거되었습니다. 함수는 DTM의 Adobe Analytics 도구 로드가 완료되면 호출됩니다.
-   >* Assets Insights 페이지 추적기가 호스팅되는 위치(예: Experience Manager, CDN 등)에 따라 스크립트 소스의 원본을 변경해야 할 수 있습니다.
+   >* Assets Insights 페이지 추적기가 호스팅되는 위치 (예: Experience Manager, CDN 등)에 따라 스크립트 소스의 원본을 변경해야 할 수 있습니다.
    >* Experience Manager이 호스팅된 페이지 추적기의 경우 소스는 Dispatcher 인스턴스의 호스트 이름을 사용하는 게시 인스턴스를 가리켜야 합니다.
 
 1. 액세스 `https://dtm.adobe.com`. 클릭 **[!UICONTROL 개요]** 웹 속성에서 **[!UICONTROL 도구 추가]** 또는 기존 Adobe Analytics 도구를 엽니다. 도구를 만드는 동안 다음을 설정할 수 있습니다 **[!UICONTROL 구성 메서드]** 끝 **[!UICONTROL 자동]**.

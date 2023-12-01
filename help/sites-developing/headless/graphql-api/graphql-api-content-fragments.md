@@ -3,9 +3,9 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달을 위해 AEM(Adobe Experience Manager)의 콘텐츠 조각을 AEM GraphQL API와 함께 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 5bfd8216c9d3540ac6d795d434dab5afb7bce309
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '4848'
+source-wordcount: '4847'
 ht-degree: 60%
 
 ---
@@ -554,7 +554,7 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
    * 목록의 첫 번째 필드는 기본 정렬 순서를 정의합니다
       * 두 번째 필드는 기본 정렬 기준의 두 값이 동일한 경우 사용됩니다
       * 세 번째 필드는 처음 두 기준이 동일한 경우 사용됩니다.
-   * 점으로 구분된 표기법(예: field1.subfield.subfield 등)...
+   * 점선 표기법, 즉, `field1.subfield.subfield`등.
 * 선택적 정렬 방향
    * (ASC(오름차순) 또는 DESC(내림차순))이 포함되며, 기본값 ASC가 적용됩니다.
    * 방향은 필드별로 지정할 수 있습니다. 즉, 한 필드는 오름차순으로 정렬하고 다른 필드는 내림차순으로 정렬할 수 있습니다(name, firstName DESC)
