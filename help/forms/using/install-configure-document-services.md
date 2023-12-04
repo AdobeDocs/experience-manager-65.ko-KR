@@ -4,9 +4,9 @@ description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 만들고,
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 03ed3606e89d87bf2f95b56a1eeb6b7dc4bec13a
+source-git-commit: 2ad9cea10bcd152f4d2d874553bdbd3133dbe847
 workflow-type: tm+mt
-source-wordcount: '5521'
+source-wordcount: '5499'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ AEM Forms은 다양한 문서 수준 작업을 수행하기 위한 일련의 OSG
 
   서명 서비스는 신뢰 저장소에 저장된 인증서 및 자격 증명에 액세스합니다. 자세한 내용은 [서명 서비스](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms은 강력한 엔터프라이즈급 플랫폼이며 문서 서비스는 AEM Forms의 기능 중 하나일 뿐입니다. 전체 기능 목록은 다음을 참조하십시오. [AEM Forms 소개](/help/forms/using/introduction-aem-forms.md).
+AEM Forms은 강력한 엔터프라이즈급 플랫폼이며 문서 서비스는 AEM Forms의 기능 중 하나에 불과합니다. 전체 기능 목록은 다음을 참조하십시오. [AEM Forms 소개](/help/forms/using/introduction-aem-forms.md).
 
 ## 배포 토폴로지 {#deployment-topology}
 
@@ -669,10 +669,6 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 +++
 
-+++Microsoft Office 2019가 Microsoft Windows Server 2019에서 실행되고 있지 않음
-
-* AEM 서버와의 활성 원격 연결이 없는지 확인합니다.
-
 +++HTML-PDF 전환 문제
 
 * PDF Generator 구성 UI에 글꼴 디렉터리가 추가되었는지 확인합니다.
@@ -793,6 +789,8 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 문제를 해결하려면 다음을 참조하십시오. [Windows Server에서 Word 또는 Excel 파일을 PDF으로 변환할 수 없음](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
++++
+
 +++ Windows Server 2019에서 Excel 파일을 PDF으로 변환할 수 없습니다.
 
 Microsoft Excel 2019를 Microsoft Windows Server 2019에서 PDF으로 변환할 때 다음을 확인해야 합니다.
@@ -800,14 +798,17 @@ Microsoft Excel 2019를 Microsoft Windows Server 2019에서 PDF으로 변환할 
 * PDF Generator 서비스를 사용하는 동안 Windows 컴퓨터에 AEM 서버(Windows RDP 세션)와 활성 원격 연결이 없어야 합니다.
 * 기본 프린터를 Adobe PDF으로 설정해야 합니다.
 
->[!NOTE]
-* Apple macOS 및 Ubuntu OS의 경우, 위의 설정을 구성할 필요가 없습니다.
+  >[!NOTE]
+  * Apple macOS 및 Ubuntu OS의 경우, 위의 설정을 구성할 필요가 없습니다.
+
++++
 
 +++ XPS 파일을 PDF으로 변환할 수 없음
 
 문제를 해결하려면 [windows에서 기능별 레지스트리 키 만들기](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
+
 
 ## 다음 단계 {#next-steps}
 
