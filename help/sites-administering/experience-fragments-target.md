@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1539'
-ht-degree: 43%
+source-wordcount: '1513'
+ht-degree: 41%
 
 ---
 
@@ -152,19 +152,19 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
    >
    >이는 경험 조각 웹 변형이어야 합니다.
 
-1. **Adobe Target으로 내보내기**&#x200B;를 탭/클릭합니다.
+1. 클릭 **Adobe Target으로 내보내기**.
 
    >[!NOTE]
    >
    >경험 조각을 이미 내보낸 경우 **Adobe Target에서 업데이트**&#x200B;를 선택합니다.
 
-1. 필요에 따라 **게시하지 않고 내보내기** 또는 **게시**&#x200B;를 탭/클릭합니다.
+1. 클릭 **게시하지 않고 내보내기** 또는 **게시** 필요에 따라.
 
    >[!NOTE]
    >
    >선택 **게시** 경험 조각을 즉시 게시하고 Target에 전송합니다.
 
-1. 확인 대화 상자에서 **확인**&#x200B;을 탭/클릭합니다.
+1. 클릭 **확인** 확인 대화 상자에서 확인할 수 있습니다.
 
    이제 경험 조각이 Target에 있어야 합니다.
 

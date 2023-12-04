@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '6087'
-ht-degree: 1%
+source-wordcount: '6076'
+ht-degree: 0%
 
 ---
 
@@ -501,7 +501,7 @@ HTML에서 다음 자리 표시자를 사용할 수 있습니다. 이 자리 표
 
 | 자리 표시자 문자열 | 설명 |
 |---|---|
-| {이름} | 버튼의 이름(예: )**작성자, 뒤로, 새로 고침**&#x200B;등. |
+| {name} | 버튼의 이름(예: )**작성자, 뒤로, 새로 고침**&#x200B;등. |
 | {id} | 단추의 CSS ID입니다. |
 | {url} | 단추 대상의 URL. |
 | {text} | 단추의 레이블입니다. |
@@ -537,7 +537,7 @@ title="{text}"/>
 
 또한, 포털 Director HTML 재작성기는 링크 재작성을 위해 제외하도록 정의된 정규 표현식 목록으로 구성할 수 있습니다. 예를 들어 외부 시스템에 대한 상대 링크가 있는 경우 이 제외 목록에 추가해야 합니다.
 
-### 지역화 {#localization}
+### 로컬라이제이션 {#localization}
 
 AEM 컨텐츠 포틀릿에는 AEM 컨텐츠가 올바른 언어로 되어 있는지 확인하는 현지화 기능이 내장되어 있습니다.
 
@@ -719,7 +719,7 @@ AEM Quickstart JAR 파일에는 포틀릿 구성 요소 파일이 포함되어 �
    >
    >동일한 페이지에서 동일한 포틀릿을 두 번 이상 사용하려면 각 포틀릿에 다른 창 ID를 지정합니다.
 
-1. **확인**&#x200B;을 클릭합니다. 포틀릿은 AEM 페이지에 표시됩니다.
+1. 클릭 **확인**. 포틀릿은 AEM 페이지에 표시됩니다.
 
    ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -727,7 +727,7 @@ AEM Quickstart JAR 파일에는 포틀릿 구성 요소 파일이 포함되어 �
 
 AEM WCM에서 제공하는 컨텐츠에 액세스하려면 AEM Portal Director 포틀릿에 포털 서버를 설치해야 합니다. 이 섹션에 제공된 단계를 사용하여 포틀릿을 설치, 구성 및 포털 페이지에 추가하면 됩니다.
 
-기본적으로 포틀릿은 localhost:4503에 있는 게시 인스턴스와 localhost:4502에 있는 작성자 인스턴스에 연결됩니다. 이러한 값은 포틀릿을 배포하는 동안 변경할 수 있습니다. 포털 디렉터는 /libs/portal/directory 아래에 있는 저장소에서 콘텐츠로 사용할 수 있습니다. 애플리케이션 war 파일을 사용하기 전에 다운로드해야 합니다.
+기본적으로 포틀릿은 localhost:4503에 있는 게시 인스턴스와 localhost:4502에 있는 작성자 인스턴스에 연결됩니다. 이러한 값은 포틀릿을 배포하는 동안 변경할 수 있습니다. 포털 디렉터는 /libs/portal/directory 아래에 있는 저장소에서 콘텐츠로 사용할 수 있습니다. 사용하기 전에 애플리케이션 war 파일을 다운로드하십시오.
 
 ### war 파일 다운로드 {#downloading-the-war-file}
 
@@ -776,7 +776,7 @@ AEM WCM에서 제공하는 컨텐츠에 액세스하려면 AEM Portal Director �
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 
-1. **저장**&#x200B;을 클릭합니다. 이제 포털 페이지에 포틀릿을 추가하고 포털을 사용할 수 있습니다.
+1. 클릭 **저장**. 이제 포털 페이지에 포틀릿을 추가하고 포털을 사용할 수 있습니다.
 
 ### 컨텐츠 URL {#content-urls}
 

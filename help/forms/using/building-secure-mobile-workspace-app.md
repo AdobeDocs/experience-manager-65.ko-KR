@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 exl-id: 12cc2027-ae94-40c3-a7d1-553469426114
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
    **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
-1. 프로비저닝->배포 로 이동한 다음 3단계에서 구성한 앱 ID를 사용하여 새 프로필을 만듭니다.
+1. 프로비저닝>배포 로 이동한 다음 3단계에서 구성한 앱 ID를 사용하여 새 프로필을 만듭니다.
 1. 프로비저닝 프로필을 다운로드하여 Xcode 및 iPad에 추가합니다.
 1. Xcode가 있고 iOS SDK가 설치 및 구성된 Mac 컴퓨터에 로그인합니다.
 1. 를 엽니다. `AEM Forms.xcodeproj` xcode의 프로젝트입니다.

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 1%
+source-wordcount: '1954'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +84,7 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
 
 1. 액세스 **구성** 웹 콘솔의 탭은 다음 중 하나를 수행합니다.
 
-   * 의 링크에서 웹 콘솔 열기 **도구 -> 작업** 메뉴 아래의 제품에서 사용할 수 있습니다. 콘솔에 로그인하면 의 드롭다운 메뉴를 사용할 수 있습니다.
+   * 의 링크에서 웹 콘솔 열기 **도구 > 작업** 메뉴 아래의 제품에서 사용할 수 있습니다. 콘솔에 로그인하면 의 드롭다운 메뉴를 사용할 수 있습니다.
 
      **OSGi >**
 
@@ -176,7 +176,7 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
 
 >[!NOTE]
 >
->읽기 전용 [특정 인스턴스에 대해서만 저장소 기반 구성을 정의하는 방법](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=ko).
+>읽기 전용 [특정 인스턴스에 대해서만 저장소 기반 구성을 정의하는 방법](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=en).
 
 ### 저장소에 새 구성 추가 {#adding-a-new-configuration-to-the-repository}
 
@@ -197,7 +197,7 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
    * `config` - 모든 실행 모드에 대해
    * `config.author` - 작성 환경용
    * `config.publish` - 게시 환경용
-   * `config.<run-mode>` - 적절히
+   * `config.<run-mode>` - 적절함
 
 1. 다음 값: **구성** 또는 **출하 시 구성** 필요하신가요?
 1. 다시 만들어야 하는 기존 매개 변수 정의를 포함하여 구성할 개별 매개 변수입니다.

@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 1%
+source-wordcount: '1028'
+ht-degree: 0%
 
 ---
 
@@ -101,7 +101,7 @@ PhoneGap CLI를 사용하여 빌드하려면 Node.js 및 PhoneGap 클라이언�
    >
    >캐시에는 설치된 애플리케이션에 대한 콘텐츠 업데이트가 보관됩니다. 캐시된 모든 업데이트를 캐시를 지우는 중입니다.
 
-1. 도구 모음에서 CLI Assets 다운로드 아이콘을 클릭하거나 탭합니다.
+1. 도구 모음에서 CLI Assets 다운로드 아이콘을 클릭합니다.
 
    ![중복 태블릿 기호로 표시된 CLI Assets 아이콘을 다운로드하십시오.](do-not-localize/chlimage_1-1.png)
 
@@ -128,17 +128,17 @@ PhoneGap CLI를 사용하여 애플리케이션을 컴파일하고 설치합니�
 
 PhoneGap 클라우드 서비스를 사용하여 앱을 빌드합니다. 이 절차를 수행하려면 먼저 PhoneGap Build 구성을 만들어야 합니다.
 
-### PhoneGap Build에 연결하는 중 {#connecting-to-phonegap-build}
+### PhoneGap Build에 연결 중 {#connecting-to-phonegap-build}
 
 AEM 내에서 PhoneGap Build 서비스를 사용할 수 있도록 PhoneGap Build 구성을 만듭니다. 모바일 애플리케이션을 빌드하는 데 사용할 PhoneGap Build 계정의 사용자 이름과 암호를 입력합니다.
 
 1. 도구 페이지를 엽니다. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)).
-1. CQ 작업 영역에서 Cloud Services 를 클릭합니다.
+1. CQ 작업 영역에서 Cloud Service 를 클릭합니다.
 1. PhoneGap Build에 대한 지금 구성 링크를 클릭합니다.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. 구성 만들기 대화 상자에서 제목 속성의 값을 입력합니다. 기본적으로 Name 속성의 값은 제목에서 파생되지만 이름을 입력할 수 있습니다. 만들기를 클릭합니다.
+1. 구성 만들기 대화 상자에서 제목 속성의 값을 입력합니다. 기본적으로 Name 속성의 값은 제목에서 파생되지만 이름을 입력할 수 있습니다. 만들기 를 클릭합니다.
 1. [PhoneGap Build 구성] 대화 상자에서 PhoneGap Build 사용자 이름과 암호를 입력한 다음 [확인]을 클릭합니다.
 
 ### PhoneGap Build 사용 {#using-phonegap-build}

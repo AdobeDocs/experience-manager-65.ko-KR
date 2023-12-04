@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 2%
+source-wordcount: '1726'
+ht-degree: 1%
 
 ---
 
@@ -28,10 +28,10 @@ There are two options to disable ContextHub:
 
 * Edit the ContextHub's configuration and check the option **Disable ContextHub**
 
-    1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
-    1. Click or tap the appropriate **Configuration Container**
-    1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
-    1. Click or tap **Disable ContextHub** and click or tap **Save**
+    1. In the rail click **Tools &gt; Sites &gt; ContextHub**
+    1. Click the appropriate **Configuration Container**
+    1. Select the **ContextHub Configuration** and click **Edit Selected Element**
+    1. Click **Disable ContextHub** and click **Save**
 
 or
 -->
@@ -74,10 +74,10 @@ UI 모드는 도구 모음의 왼쪽에 일련의 아이콘으로 표시됩니�
 
 UI 모드를 관련 ContextHub 모듈 그룹에 추가합니다. UI 모드를 만들면 ContextHub 도구 모음에 나타나는 제목과 아이콘을 제공합니다.
 
-1. Experience Manager 레일에서 도구 > 사이트 > Context Hub 를 클릭하거나 탭합니다.
-1. 기본 구성 컨테이너를 클릭하거나 탭합니다.
-1. Context Hub 구성 을 클릭하거나 탭합니다.
-1. 만들기 버튼을 클릭하거나 탭한 다음 Context Hub UI 모드 를 클릭하거나 탭합니다.
+1. Experience Manager 레일에서 도구 > 사이트 > Context Hub 를 클릭합니다.
+1. 기본 구성 컨테이너를 클릭합니다.
+1. Context Hub 구성을 클릭합니다.
+1. 만들기 단추를 클릭한 다음 Context Hub UI 모드 를 클릭합니다.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -87,7 +87,7 @@ UI 모드를 관련 ContextHub 모듈 그룹에 추가합니다. UI 모드를 �
    * 모드 아이콘: 의 선택기 [Coral UI 아이콘](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 사용할 항목(예: ) `coral-Icon--user`
    * 활성화됨: ContextHub 도구 모음에 UI 모드를 표시하려면 선택하십시오.
 
-1. 저장을 클릭하거나 탭합니다.
+1. 저장을 클릭합니다.
 
 ### UI 모듈 추가 {#adding-a-ui-module}
 
@@ -108,11 +108,11 @@ UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 �
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | 페이지 태그에 대한 통계를 표시합니다. | tagcloud |
 | [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | authorizableID, displayName 및 familyName을 포함하여 현재 사용자의 프로필 정보를 표시합니다. displayName 및 familyName 값을 변경할 수 있습니다. | 프로필 |
 
-1. Experience Manager 레일에서 도구 > 사이트 > ContextHub 를 클릭하거나 탭합니다.
-1. UI 모듈을 추가할 구성 컨테이너를 클릭하거나 탭합니다.
+1. Experience Manager 레일에서 도구 > 사이트 > ContextHub를 클릭합니다.
+1. UI 모듈을 추가할 구성 컨테이너를 클릭합니다.
 1. UI 모듈을 추가할 ContextHub 구성을 클릭하거나 입력합니다.
-1. UI 모듈을 추가할 UI 모드를 클릭하거나 탭합니다.
-1. 만들기 버튼을 클릭하거나 탭한 다음 ContextHub UI 모듈(일반)을 클릭하거나 탭합니다.
+1. UI 모듈을 추가할 UI 모드를 클릭합니다.
+1. 만들기 단추를 클릭한 다음 ContextHub UI 모듈(일반)을 클릭합니다.
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -123,7 +123,7 @@ UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 �
    * 활성화됨: ContextHub 도구 모음에 UI 모듈을 표시하려면 선택하십시오.
 
 1. (선택 사항) 기본 저장소 구성을 무시하려면 UI 모듈을 구성할 JSON 개체를 입력합니다.
-1. 저장을 클릭하거나 탭합니다.
+1. 저장을 클릭합니다.
 
 ## ContextHub 저장소 만들기 {#creating-a-contexthub-store}
 
@@ -151,14 +151,14 @@ AEM은 스토어의 기반이 될 수 있는 다음 샘플 스토어 후보를 �
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | 장치 정보, 브라우저 유형 및 창 방향과 같은 클라이언트에 대한 정보를 저장합니다 |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | 페이지 태그 및 태그 수 저장 |
 
-1. Experience Manager 레일에서 도구 > 사이트 > ContextHub 를 클릭하거나 탭합니다.
-1. 기본 구성 컨테이너를 클릭하거나 탭합니다.
-1. Contexthub 구성 을 클릭하거나 탭합니다.
-1. 스토어를 추가하려면 만들기 아이콘을 클릭하거나 탭한 다음 ContexHub 스토어 구성 을 클릭하거나 탭합니다.
+1. Experience Manager 레일에서 도구 > 사이트 > ContextHub를 클릭합니다.
+1. 기본 구성 컨테이너를 클릭합니다.
+1. Contexthub 구성 을 클릭합니다.
+1. 저장소를 추가하려면 만들기 아이콘을 클릭한 다음 ContextHub 저장소 구성을 클릭합니다.
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. 기본 구성 속성에 대한 값을 입력한 후 다음 을 클릭하거나 탭합니다.
+1. 기본 구성 속성에 대한 값을 입력하고 다음을 클릭합니다.
 
    * **구성 제목:** 스토어를 식별하는 제목
    * **저장소 유형:** 스토어의 기반이 되는 스토어 후보의 storeType 속성 값
@@ -166,7 +166,7 @@ AEM은 스토어의 기반이 될 수 있는 다음 샘플 스토어 후보를 �
    * **활성화됨:** 스토어를 활성화하려면 선택
 
 1. (선택 사항) 기본 저장소 구성을 재정의하려면 세부 정보 구성(JSON) 상자에 JSON 개체를 입력합니다.
-1. 저장을 클릭하거나 탭합니다.
+1. 저장을 클릭합니다.
 
 ## 예: JSONP 서비스 사용  {#example-using-a-jsonp-service}
 
@@ -241,10 +241,10 @@ ContextHub에 대한 디버깅 모드를 활성화하여 문제를 해결할 수
 
 ContextHub의 구성을 편집하고 옵션을 선택합니다. **디버그**
 
-1. 레일에서 을 클릭하거나 탭합니다 **도구 > 사이트 > ContextHub**
-1. 기본값 클릭 또는 탭 **구성 컨테이너**
-1. 다음 항목 선택 **ContextHub 구성** 및 클릭 또는 탭 **선택한 요소 편집**
-1. 클릭 또는 탭 **디버그** 및 클릭 또는 탭 **저장**
+1. 레일에서 클릭 **도구 > 사이트 > ContextHub**
+1. 기본값 클릭 **구성 컨테이너**
+1. 다음 항목 선택 **ContextHub 구성** 및 클릭 **선택한 요소 편집**
+1. 클릭 **디버그** 및 클릭 **저장**
 
 ### CRXDE를 통해 {#via-crxde}
 

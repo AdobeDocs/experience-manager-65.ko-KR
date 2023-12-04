@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 2%
+source-wordcount: '1248'
+ht-degree: 1%
 
 ---
 
@@ -94,7 +94,7 @@ A [양식](/help/sites-authoring/default-components.md#form-component) 를 사�
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-프로필의 세부 사항을 보려면 다음을 클릭하십시오. **내 프로필** 페이지의 오른쪽 상단 모서리에서 다음을 수행합니다. 예: `admin` 계정:
+프로필의 세부 사항을 보려면 **내 프로필** 페이지의 오른쪽 상단 모서리에서 다음을 수행합니다. 예: `admin` 계정:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 다음을 사용하여 다른 프로필을 볼 수 있습니다. [client context](/help/sites-administering/client-context.md) (작성 환경에서 충분한 권한이 있음):

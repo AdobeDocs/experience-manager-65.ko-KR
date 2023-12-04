@@ -2,10 +2,10 @@
 title: 구성 요소 콘솔
 description: 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색하고 각 구성 요소에 대한 주요 정보를 볼 수 있습니다.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 72%
+ht-degree: 57%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 72%
 
 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색하고 각 구성 요소에 대한 주요 정보를 볼 수 있습니다.
 
-**도구 ->** **일반 ->** **구성 요소**&#x200B;에서 액세스할 수 있습니다. In the console, card and list view are available. Because there is no tree structure for components, column view is not available.
+다음에서 액세스할 수 있습니다 **도구 >** **일반 >** **구성 요소**. In the console, card and list view are available. Because there is no tree structure for components, column view is not available.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -29,7 +29,7 @@ ht-degree: 72%
 
 ### 구성 요소 세부 정보 {#component-details}
 
-특정 구성 요소에 대한 세부 정보를 보려면 필수 리소스를 탭하거나 클릭합니다. 세 탭에서 다음 정보를 제공합니다.
+특정 구성 요소에 대한 세부 정보를 보려면 필요한 리소스를 클릭하십시오. 세 탭에서 다음 정보를 제공합니다.
 
 * **속성**
 

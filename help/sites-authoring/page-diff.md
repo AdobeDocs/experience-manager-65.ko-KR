@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 86%
+source-wordcount: '569'
+ht-degree: 81%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 86%
 
 ### 전체 화면 및 종료 {#fullscreen-and-exiting}
 
-특정 콘텐츠에 집중할 수 있도록 병렬 비교의 어느 “한 쪽”에 대한 전체 화면 아이콘을 클릭하여 전체 브라우저 창으로 확대할 수 있습니다.
+특정 컨텐츠에 집중할 수 있도록 병렬 비교의 어느 &quot;한 쪽&quot;에 대한 전체 화면 아이콘을 클릭하여 전체 브라우저 창으로 확대할 수 있습니다.
 
 ![전체 화면 모드 아이콘](do-not-localize/chlimage_1-18.png)
 

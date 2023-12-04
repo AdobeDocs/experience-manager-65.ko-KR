@@ -4,10 +4,10 @@ description: 변형에서 조각에 대한 콘텐츠를 작성한 다음 목적�
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2388'
-ht-degree: 62%
+source-wordcount: '2309'
+ht-degree: 59%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 62%
 
 다음에서 **변형** 탭 다음과 같은 작업을 수행할 수 있습니다.
 
-* 조각에 사용할 [콘텐츠 입력,](#authoring-your-content)
+* [콘텐츠 입력](#authoring-your-content) 조각에 대해
 * [마스터](#managing-variations) 콘텐츠의 **변형 만들기 및 관리**
 
 편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행하십시오. 예를 들면 다음과 같습니다.
@@ -75,7 +75,7 @@ ht-degree: 62%
 
 ### 전체 화면 편집기 {#full-screen-editor}
 
-여러 줄 텍스트 필드를 편집할 때 전체 화면 편집기를 열 수 있습니다. 실제 텍스트 내에서 탭하거나 클릭한 후 다음 작업 아이콘을 선택합니다.
+여러 줄 텍스트 필드를 편집할 때 전체 화면 편집기를 열 수 있습니다. 실제 텍스트 내에서 를 클릭한 후 다음 작업 아이콘을 선택합니다.
 
 ![전체 화면 편집기 아이콘](assets/cfm-variations-03.png)
 

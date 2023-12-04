@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 19%
+source-wordcount: '1829'
+ht-degree: 17%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 19%
 * 워크플로
 * 모드
 * 스캐폴딩
-* Client Context
+* ClientContext
 * 웹 사이트
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
@@ -94,7 +94,7 @@ ht-degree: 19%
 | 이미지 | 이미지 |
 | 문서 | 다운로드 |
 | 제품 | 제품 |
-| 비디오 | Flash |
+| 비디오 | 플래시 |
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ ht-degree: 19%
 
 1. 페이지가 [**편집** 모드](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)인지 확인합니다.
 1. 를 엽니다. [콘텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. 필요한 에셋을 필요한 위치로 끕니다. [구성 요소 플레이스홀더](#componentplaceholder)는 구성 요소가 위치할 곳을 보여 줍니다.
+1. 필요한 자산을 필요한 위치로 드래그합니다. 다음 [구성 요소 플레이스홀더](#componentplaceholder) 구성 요소가 위치할 곳을 보여 줍니다.
 
    에셋 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 에셋이 포함됩니다.
 
@@ -133,7 +133,7 @@ ht-degree: 19%
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
 1. 단락을 새 위치로 드래그합니다. AEM에서 녹색 확인 표시로 단락을 이동할 수 있는 위치를 보여 줍니다. 원하는 위치에 드롭합니다.
-1. 단락이 이동됩니다:
+1. 단락이 이동됩니다.
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
@@ -301,4 +301,4 @@ AEM은 사용자가 수행한 작업 내역과 해당 작업을 수행한 순서
 
 >[!NOTE]
 >
->파일 및 이미지 변경을 취소하거나 재실행하려면 특수 권한이 필요합니다. 또한 파일 및 이미지에 대한 변경 내용 실행 취소 기록은 최소 시간 동안 지속됩니다. 이 시간이 지나면 변경을 취소하지 못할 수 있습니다. 관리자가 권한을 제공하고 기본 시간인 10시간을 변경할 수 있습니다.
+>파일 및 이미지 변경을 실행 취소하거나 재실행하려면 특수 권한이 필요합니다. 또한 파일 및 이미지에 대한 변경 내용 실행 취소 기록은 최소 시간 동안 지속됩니다. 이 시간이 지나면 변경을 취소하지 못할 수 있습니다. 관리자가 권한을 제공하고 기본 시간인 10시간을 변경할 수 있습니다.

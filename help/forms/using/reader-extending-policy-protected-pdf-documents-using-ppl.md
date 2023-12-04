@@ -11,16 +11,16 @@ topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 feature: Document Security
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 0%
+source-wordcount: '783'
+ht-degree: 1%
 
 ---
 
 # Portable Protection Library를 사용하여 정책으로 보호된 PDF 문서를 확장하는 Reader {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
-문서 보안 정책으로 보호된 PDF 문서를 리더 확장하려면 문서 보안, 리더 확장 및 Java 프로그래밍 언어의 개념을 잘 알고 있어야 합니다.
+문서 보안, 리더 확장 및 Java 프로그래밍 언어의 개념을 숙지하여 문서 보안 정책으로 보호된 PDF 문서를 리더 확장하십시오.
 
 문서 보안을 사용하여 권한이 부여된 사용자만 특정 PDF 문서에 대한 액세스를 제한할 수 있습니다. 또한 수신자가 보호된 문서를 사용할 수 있는 방법을 결정할 수 있습니다. 예를 들어 수신자가 문서 보안 정책으로 보호된 문서의 텍스트를 인쇄, 복사 또는 편집할 수 있는지 여부를 지정할 수 있습니다. 문서 보안에 대한 자세한 내용은 [문서 보안 기본 정보](/help/forms/using/admin-help/document-security.md).
 

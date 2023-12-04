@@ -2,7 +2,7 @@
 title: AEM에서 컨텐츠 페이지 작성
 description: Adobe Experience Manager 6.5에서 컨텐츠 페이지를 작성할 때 관련된 작업입니다.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 편집 가능한 페이지의 왼쪽에서는 슬라이딩 브라우저를 열 수 있습니다. 여기서 에셋을 페이지로 끌 수 있습니다. 예를 들어 에셋을 배치하거나 다른 페이지에 대한 링크를 만들 수 있습니다.
 
 * **구성 요소 도구 모음**
-한 번 또는 느리게 두 번 클릭/탭하면 모두 적절한 도구 모음이 표시됩니다(즉석 편집 도구 모음에는 한 번, 전체 도구 모음에는 느리게 두 번 클릭).
+한 번 또는 느리게 두 번 클릭하면 모두 적절한 도구 모음이 표시됩니다(즉석 편집 도구 모음에는 한 번, 전체 도구 모음에는 느리게 두 번).
 
 * **[응답형 레이아웃](/help/sites-authoring/responsive-layout.md)**
 이 레이아웃은 응답형 격자 내에 구성 요소를 배치할 수 있도록 해 주는 단락 시스템을 제공합니다.

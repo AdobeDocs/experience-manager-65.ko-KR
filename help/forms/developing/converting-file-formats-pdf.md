@@ -1,19 +1,15 @@
 ---
 title: 파일 형식과 PDF 간 변환
-seo-title: Converting Between File Formats and PDF
 description: PDF 생성 서비스를 사용하여 기본 파일 형식을 PDF으로 변환합니다. 또한 PDF 서비스 생성 은 PDF을 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다.
-seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
-uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '7847'
+source-wordcount: '7812'
 ht-degree: 0%
 
 ---
@@ -61,7 +57,7 @@ PDF 생성 서비스는 다음 표준 기반 파일 형식을 PDF으로 변환�
 PDF 생성 서비스는 PDF을 다음 파일 형식으로 변환합니다(Windows에만 해당).
 
 * 캡슐화된 포스트스크립트(EPS)
-* HTML3.2
+* HTML 3.2
 * HTML 4.01(CSS 1.0 포함)
 * DOC (Microsoft Word 형식)
 * RTF
@@ -634,7 +630,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 상자 콘
   <tr>
    <td><p>애플리케이션별 추가 대화 상자 지침 </p></td>
    <td><p>응용 프로그램별 대화 상자 지침에 대한 재정의 및 추가 사항을 지정합니다. 섹션에는 이러한 정보의 예가 나와 있습니다. </p><p>이 정보가 포함된 파일은 appmon입니다.<i>"[appname]"</i>.addition.<i>"[locale]"</i>.xml. 예로는 appmon.addition.en_US.xml이 있습니다.</p></td>
-   <td><p>이 유형의 파일은 XML 편집 응용 프로그램을 사용하여 만들고 수정할 수 있습니다. (참조: <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 생성 또는 수정</a>.) </p><p><strong>중요 사항</strong>: 서버에서 지원할 각 기본 애플리케이션에 대한 추가 애플리케이션별 대화 상자 지침을 만들어야 합니다. </p></td>
+   <td><p>이 유형의 파일은 XML 편집 응용 프로그램을 사용하여 만들고 수정할 수 있습니다. (참조: <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 생성 또는 수정</a>.) </p><p><strong>중요 사항</strong>: 서버에서 지원할 각 기본 애플리케이션에 대한 추가 애플리케이션별 대화 상자 지침을 만듭니다. </p></td>
   </tr>
  </tbody>
 </table>
@@ -673,7 +669,7 @@ PDF 생성 서비스의 스크립트 XML 파일 지원 목적은 기본 응용 �
 
 스크립트 XML 파일의 단계는 분기 없이 순서대로 실행됩니다. 지원되는 유일한 조건부 테스트는 시간 초과/다시 시도에 대한 것으로, 특정 기간 내에 및 특정 재시도 횟수 후에 단계가 성공적으로 완료되지 않으면 스크립트가 종료됩니다.
 
-단계들이 순차적인 것 외에도, 단계 내의 명령어들은 또한 순서대로 실행된다. 단계 및 지침이 사용자가 동일한 단계를 수행하는 순서를 반영하는지 확인해야 합니다.
+단계들이 순차적인 것 외에도, 단계 내의 명령어들은 또한 순서대로 실행된다. 단계 및 지침이 사용자가 동일한 단계를 수행하는 순서를 반영하는지 확인합니다.
 
 스크립트 XML 파일의 각 단계는 해당 단계의 명령이 성공적으로 수행된 경우 나타날 것으로 예상되는 창 요소를 식별합니다. 스크립트 단계를 실행하는 동안 예기치 않은 대화 상자가 나타나면 PDF 생성 서비스는 다음 섹션에 설명된 대로 대화 상자 XML 파일을 검색합니다.
 
@@ -796,7 +792,7 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
 
 #### window 및 windowList 요소 순서 지정 {#ordering-the-window-and-windowlist-elements}
 
-주문해야 합니다. `window` 및 `windowList` 요소를 다음과 같이 지정합니다.
+주문 `window` 및 `windowList` 요소를 다음과 같이 지정합니다.
 
 * 여러 개인 경우 `window` 요소는 다음에 하위 요소로 표시됩니다. `windowList` 또는 `dialog` 요소, 순서 지정 `window` 요소(내림차순, 길이 포함) `caption` 순서대로 위치를 나타내는 이름.
 * 여러 개인 경우 `windowList` 요소에 나타나는 문자 `window` 요소, 순서 지정 `windowList` 요소(내림차순, 길이 포함) `caption` 첫 번째 속성 `indexes/`순서에서 위치를 나타내는 요소입니다.
@@ -864,7 +860,7 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
 >
 native2pdfconfig.xml 구성 파일에 지정된 일반 응용 프로그램에 기본 대화 상자 XML 파일이 없습니다. 섹션 [기본 파일 형식에 대한 지원 추가 또는 수정](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) 에서는 이러한 세부 항목에 대해 설명합니다.
 
-주문해야 합니다. `windowList` 에서 하위 요소로 표시되는 요소 `window` 요소를 생성하지 않습니다. (참조: [window 및 windowList 요소 순서 지정](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
+주문 `windowList` 에서 하위 요소로 표시되는 요소 `window` 요소를 생성하지 않습니다. (참조: [window 및 windowList 요소 순서 지정](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
 ### 일반 대화 상자 XML 파일 수정 {#modifying-the-general-dialog-xml-file}
 
@@ -1062,7 +1058,7 @@ AEM Forms에는 PDF 생성 서비스에서 메모장을 사용하여 파일 확�
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the Print dialog and click on the 'Preferences' button and the expected window in this case is the dialog with the caption '"Printing Preferences' -->
+    <!-- In this step, we acquire the Print dialog and click the 'Preferences' button and the expected window in this case is the dialog with the caption '"Printing Preferences' -->
     <step>
         <acquiredWindow>
             <window caption="Print">
@@ -1080,7 +1076,7 @@ AEM Forms에는 PDF 생성 서비스에서 메모장을 사용하여 파일 확�
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the dialog "Printing Preferences' and select the combo box which is the 10th child of window with caption '"Adobe PDF Settings' and select the first index. (Note: All indeces start with 0.) Besides this we uncheck the box which  has the caption '"View Adobe PDF results' and we click on the button OK. The expectation is that 'Printing Preferences' dialog disappears. -->
+    <!-- In this step, we acquire the dialog "Printing Preferences' and select the combo box which is the 10th child of window with caption '"Adobe PDF Settings' and select the first index. (Note: All indeces start with 0.) Besides this we uncheck the box which has the caption '"View Adobe PDF results' and we click the button OK. The expectation is that 'Printing Preferences' dialog disappears. -->
     <step>
         <acquiredWindow>
             <window caption="Printing Preferences">
@@ -1104,7 +1100,7 @@ AEM Forms에는 PDF 생성 서비스에서 메모장을 사용하여 파일 확�
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the 'Print' dialog and click on the Print button. The expectation is that the dialog with caption 'Print' disappears. In this case we use the regular expression '^Print$' for specifying the caption given there could be multiple dialogs with caption that includes the word Print. -->
+    <!-- In this step, we acquire the 'Print' dialog and click the Print button. The expectation is that the dialog with caption 'Print' disappears. In this case we use the regular expression '^Print$' for specifying the caption given there could be multiple dialogs with caption that includes the word Print. -->
     <step>
         <acquiredWindow>
             <window caption="Print">
@@ -1123,7 +1119,7 @@ AEM Forms에는 PDF 생성 서비스에서 메모장을 사용하여 파일 확�
             <window caption="Save PDF File As"/>
         </expectedWindow>
     </step>
-    <!-- Finally in this step, we acquire the dialog with caption "Save PDF File As" and in the Edit widget type the destination path for the output PDF file and click on the Save button. The expectation is that the dialog disappears-->
+    <!-- Finally in this step, we acquire the dialog with caption "Save PDF File As" and in the Edit widget type the destination path for the output PDF file and click the Save button. The expectation is that the dialog disappears-->
     <step>
         <acquiredWindow>
             <window caption="Save PDF File As">

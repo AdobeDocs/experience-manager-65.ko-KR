@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ AEM의 보안을 지속적으로 개선하기 위해 Adobe은 기본적으로 SS
 
 ## 기본적으로 SSL/TLS 활성화 {#enabling-ssl-tls-by-default}
 
-AEM 홈 화면에서 관련 받은 편지함 메시지를 클릭하여 기본적으로 SSL/TLS 구성을 시작할 수 있습니다. 받은 편지함에 도달하려면 화면의 오른쪽 상단에 있는 벨 아이콘을 누릅니다. 그런 다음 을(를) 클릭합니다 **모두 보기**. 이렇게 하면 목록 보기에서 정렬된 모든 경고 목록이 표시됩니다.
+AEM 홈 화면에서 관련 받은 편지함 메시지를 클릭하여 기본적으로 SSL/TLS 구성을 시작할 수 있습니다. 받은 편지함에 도달하려면 화면의 오른쪽 상단에 있는 벨 아이콘을 누릅니다. 그런 다음 을 클릭합니다. **모두 보기**. 이렇게 하면 목록 보기에서 정렬된 모든 경고 목록이 표시됩니다.
 
 목록에서 을(를) 선택하고 **HTTPS 구성** 경고:
 

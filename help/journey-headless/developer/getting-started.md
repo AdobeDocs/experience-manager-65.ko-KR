@@ -2,10 +2,10 @@
 title: AEM Headless 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3032'
-ht-degree: 95%
+source-wordcount: '2998'
+ht-degree: 96%
 
 ---
 
@@ -113,13 +113,13 @@ AEM의 콘텐츠를 기존 외부 서비스로 제공하는 것이 최소 기본
 
 ### 단일 페이지 애플리케이션(SPA) 등 Headless 콘텐츠는 아직 외부에서 사용되지 않았습니다. {#do-not-have-a-spa}
 
-AEM의 콘텐츠를 헤드리스 소비하는 SPA을 만드는 것이 목표라면 콘텐츠 조각과 같은 기능을 사용하여 헤드리스 콘텐츠를 관리하고 AEM SPA Editor 프레임워크를 사용하여 SPA을 구축할 수도 있습니다.
+AEM에서 콘텐츠를 Headless 방식으로 사용하는 SPA를 만드는 것이 목표라면 콘텐츠 조각 기능을 사용하여 Headless 콘텐츠를 관리하고 AEM의 SPA 편집기 프레임워크로 SPA를 빌드할 수도 있습니다.
 
 SPA 편집기를 통해 SPA는 AEM에서 콘텐츠를 사용할 뿐만 아니라 콘텐츠 작성자에 의해 AEM 내부에서 완전한 편집이 가능하므로 AEM 내에서 Headless를 유연하게 게재하고 상황에 맞게 편집할 수 있습니다.
 
 ## 요구 사항 및 사전 요구 사항 {#requirements-prerequisites}
 
-Headless AEM 프로젝트를 시작하기 전에 몇 가지 요구 사항이 있습니다.
+AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지 요구 사항이 있습니다.
 
 ### 지식 {#knowledge}
 
@@ -240,7 +240,7 @@ GraphQL은 AEM과 Headless 콘텐츠 사용자 사이에서 “접착제” 역�
 
 프로젝트 성공을 위해 콘텐츠를 만들기 전에 성능을 고려해야 합니다.
 
-사용자/방문자의 기대를 파악하고 이에 맞게 설계해야 합니다. 서비스 수준 목표(SLO)를 설정하고 이를 측정하여 사용자의 기대가 충족되었는지 파악합니다.
+사용자/방문자의 기대와 이에 대한 설계를 이해해야 합니다. 서비스 수준 목표(SLO)를 설정하고 이를 측정하여 사용자의 기대가 충족되었는지 파악합니다.
 
 #### 트래픽 패턴 {#traffic-patterns}
 
@@ -291,7 +291,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [AEM 워크플로](/help/sites-authoring/workflows.md) - AEM에서 워크플로를 자동화하는 방법에 대한 기술 설명서
 * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) - 콘텐츠 조각에 대한 기술 설명서.
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서.
-* [GraphQL 기술 설명서](https://graphql.org) - GraphQL 정의 (외부 링크)
+* [GraphQL 기술 설명서](https://graphql.org) - GraphQL 정의(외부 링크)
 * [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만드는 방법에 대한 기술 설명서
 * [Assets REST API](/help/assets/assets-api-content-fragments.md) - 콘텐츠 조각(및 기타 자산)을 만들고 수정하는 방법에 대한 기술 설명서
 * [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md) - AEM의 지속 쿼리에 대한 기술 설명서

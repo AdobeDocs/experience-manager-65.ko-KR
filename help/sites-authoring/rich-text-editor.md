@@ -1,17 +1,17 @@
 ---
 title: 리치 텍스트 편집기를 사용한 컨텐츠 작성
-description: 리치 텍스트 편집기를 사용한 컨텐츠 작성 Adobe Experience Manager 6.5에서.
+description: 리치 텍스트 편집기를 사용하여 Adobe Experience Manager 6.5에서 컨텐츠를 작성합니다.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 72%
+source-wordcount: '264'
+ht-degree: 58%
 
 ---
 
 # 리치 텍스트 편집기를 사용한 컨텐츠 작성 {#use-rich-text-editor-to-author-content}
 
-리치 텍스트 편집기(RTE)는 텍스트 컨텐츠를 AEM에 입력하는 기본 빌딩 블록입니다. 이 편집기는 다음과 같은 다양한 구성 요소의 기초가 됩니다., 다음 포함:
+리치 텍스트 편집기(RTE)는 텍스트 컨텐츠를 AEM에 입력하는 기본 빌딩 블록입니다. 이는 다음을 포함한 다양한 구성 요소의 기초를 형성합니다.
 
 * 텍스트
 * 텍스트 이미지
@@ -19,11 +19,11 @@ ht-degree: 72%
 
 ## 즉석 편집 {#in-place-editing}
 
-탭/클릭하여 텍스트 기반 구성 요소를 선택하면 구성 요소에 [도구 모음](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)이 표시됩니다.
+한 번의 클릭으로 텍스트 기반 구성 요소를 선택하면 [구성 요소 도구 모음](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 다른 구성 요소와 마찬가지로
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-다시 탭/클릭하거나 처음에 구성 요소를 선택하고 느리게 두 번 탭/클릭하면 자체 도구 모음이 있는 즉석 편집이 열립니다. 여기에서 컨텐츠를 편집하고 기본적인 서식 변경을 수행할 수 있습니다.
+다시 탭/클릭하거나 처음에 구성 요소를 선택하고 느리게 두 번 클릭하면 자체 도구 모음이 있는 즉석 편집이 열립니다. 여기에서 컨텐츠를 편집하고 기본적인 서식 변경을 수행할 수 있습니다.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

@@ -2,10 +2,10 @@
 title: 콘텐츠를 모델링하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 콘텐츠 조각 모델 및 콘텐츠 조각과 함께 콘텐츠 모델링을 사용하여 AEM Headless 게재에 콘텐츠를 모델링하는 방법에 대해 알아봅니다.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 80%
+source-wordcount: '1795'
+ht-degree: 78%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-처음에, [CMS Headless 개발에 대해 알아보기](learn-about.md) headless 콘텐츠 전달 및 이를 사용해야 하는 이유를 설명합니다. 그런 다음 [AEM Headless 시작하기](getting-started.md)에서 자체 프로젝트 컨텍스트의 AEM Headless에 대해 알아보았습니다.
+처음에, [CMS Headless 개발에 대해 알아보기](learn-about.md) headless 콘텐츠 전달 및 이를 사용해야 하는 이유를 설명합니다. 그러면 [AEM Headless 시작하기](getting-started.md) 에서는 자체 프로젝트의 컨텍스트에서 AEM Headless에 대해 설명했습니다.
 
 AEM Headless 번역 여정의 이전 문서인 [AEM Headless를 사용한 첫 번째 경험으로의 경로](path-to-first-experience.md)에서 첫 번째 프로젝트 구현에 필요한 단계에 대해 알아보았습니다. 문서를 읽고 나면 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -158,7 +158,7 @@ AEM은 콘텐츠 조각을 사용하여 콘텐츠를 Headless 방식으로 애�
 콘텐츠 조각 모델은 엔티티에 대해 설명합니다.
 
 >[!NOTE]
->모델을 만들 수 있도록 구성 브라우저의 콘텐츠 조각 기능을 활성화해야 합니다.
+>모델을 만들 수 있도록 구성 브라우저에서 콘텐츠 조각 기능을 활성화합니다.
 
 >[!TIP]
 >
@@ -202,7 +202,7 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 이러한 유형의 참조는 콘텐츠 모델링에 필요한 관계를 도입하여 중첩된 콘텐츠를 만드는 데 사용됩니다.
 조각 작성자가 다음과 같은 작업을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
    * 참조된 조각 직접 편집
-   * 적절한 모델을 기반으로 콘텐츠 조각 만들기.
+   * 적절한 모델을 기반으로 콘텐츠 조각을 만듭니다.
 
 ### 콘텐츠 조각 모델 만들기 {#creating-content-fragment-models}
 

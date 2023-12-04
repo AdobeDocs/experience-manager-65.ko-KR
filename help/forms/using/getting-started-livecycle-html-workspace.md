@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 exl-id: d2a962b6-16be-4866-a856-5064f81c9610
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 0%
@@ -57,7 +57,7 @@ AEM Forms workspace 는 웹 기반 HTML 애플리케이션이며 화면 판독�
 * AEM Forms 작업 영역 도움말이 별도의 브라우저 창에서 열립니다. 도움말을 보면 포커스가 AEM Forms 작업 영역이 포함된 브라우저 창으로 돌아갑니다. 포커스가 반환되면 도움말 메뉴가 포커스를 유지합니다.
 * 프로세스를 시작하거나 작업을 완료하기 위해 양식을 열 때 포커스는 기존 요소와 함께 유지되며 양식으로 변경되지 않습니다. 탭을 사용하여 포커스를 양식으로 이동하고 전체적으로 탐색합니다. 양식을 탭한 순서는 양식의 유형과 디자인에 따라 다릅니다.
 
-   PDF forms의 경우 양식 끝까지 탭하거나 양식을 제출하면 커서 포커스가 브라우저 주소 표시줄로 이동합니다. 전체 양식이 아닌 메뉴를 다시 탭하여 초안으로 저장 및 완료와 같은 양식 작업 단추로 이동해야 합니다. 양식이 열려 있는 경우 단추를 지나서 다시 양식으로 탭할 수도 있습니다.
+  PDF forms의 경우 양식 끝까지 탭하거나 양식을 제출하면 커서 포커스가 브라우저 주소 표시줄로 이동합니다. 전체 양식이 아닌 메뉴를 다시 탭하여 초안으로 저장 및 완료와 같은 양식 작업 단추로 이동합니다. 양식이 열려 있는 경우 단추를 지나서 다시 양식으로 탭할 수도 있습니다.
 
 ## 환경 설정 관리 {#managing-preferences}
 

@@ -1,19 +1,19 @@
 ---
-title: AEM 코어 개념
+title: AEM 핵심 개념
 description: Adobe Experience Manager(AEM)를 구성하는 방식과 그 위에서 전개되는 방식에 대한 핵심 개념에 대한 개요로서 JCR, Sling, OSGi, Dispatcher, 워크플로우 및 MSM을 이해하는 것이 포함됩니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3306'
-ht-degree: 1%
+source-wordcount: '3251'
+ht-degree: 0%
 
 ---
 
-# AEM 코어 개념 {#aem-core-concepts}
+# AEM 핵심 개념 {#aem-core-concepts}
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 이를 복합 부품으로 분류할 수 있습니다.
 
-| 프로토콜 | host | 콘텐츠 경로 | 선택기 | 확장 |  | 접미사 |  | 매개 변수 |
+| 프로토콜 | 호스트 | 콘텐츠 경로 | 선택기 | 확장 |  | 접미사 |  | 매개 변수 |
 |---|---|---|---|---|---|---|---|---|
 | https:// | myhost | 도구/스파이 | .printable.a4. | html | / | a/b | ? | x=12 |
 
@@ -261,7 +261,7 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
 유형 계층:
 
 * `/x`
-   * 은(는)`[ c, b, a, <default>]`
+   * 은(는) `[ c, b, a, <default>]`
 * 동안 `/y`
    * 계층 구조: `[ c, a, <default>]`
 
@@ -444,7 +444,7 @@ AEM을 사용할 때 프로덕션 환경은 종종 두 가지 유형의 인스�
 
 ## 디스패처 {#the-dispatcher}
 
-Dispatcher는 캐싱 및/또는 로드 밸런싱을 위한 Adobe의 도구입니다. 자세한 내용은 아래에서 확인할 수 있습니다. [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko).
+Dispatcher는 캐싱 및/또는 로드 밸런싱을 위한 Adobe의 도구입니다. 자세한 내용은 아래에서 확인할 수 있습니다. [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
 
 ## FileVault(소스 버전 시스템) {#filevault-source-revision-system}
 

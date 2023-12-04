@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2051'
-ht-degree: 7%
+source-wordcount: '2037'
+ht-degree: 5%
 
 ---
 
@@ -192,7 +192,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
    * NPM clientlib 생성기는 SPA 프로젝트에서 클라이언트 라이브러리를 생성합니다.
    * 이 라이브러리는 Maven에서 가져오고 구성 요소와 함께 Maven Build 플러그인에 의해 AEM Author로 배포됩니다.
 
-* **AEM Author**
+* **AEM 작성자**
 
   SPA 작성을 포함하여 AEM 작성자에 콘텐츠가 작성됩니다.
 

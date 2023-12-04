@@ -3,9 +3,9 @@ title: 외부 사용자 초대 핸들러 만들기
 description: 외부 사용자 초대 핸들러를 만드는 방법을 알아봅니다. 이를 통해 Rights Management 서비스는 외부 사용자를 Rights Management 사용자로 초대할 수 있습니다.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## 권한 부여 처리기의 구성 요소 XML 파일 정의 {#define-component-xml-authorization-handler}
 
-외부 사용자 초대 처리기 구성 요소를 배포하려면 구성 요소 XML 파일을 정의해야 합니다. 구성 요소 XML 파일은 각 구성 요소에 대해 존재하며 구성 요소에 대한 메타데이터를 제공합니다.
+구성 요소 XML 파일을 정의하여 외부 사용자 초대 처리기 구성 요소를 배포합니다. 구성 요소 XML 파일은 각 구성 요소에 대해 존재하며 구성 요소에 대한 메타데이터를 제공합니다.
 
 다음 `component.xml` 외부 사용자 초대 핸들러에 파일이 사용됩니다. 서비스 이름은 입니다. `InviteExternalUsersSample` 및 이 서비스가 노출하는 작업 이름은 입니다. `invitedUser`. 입력 매개 변수는 `java.util.List` 인스턴스와 출력 값은 `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` 인스턴스.
 
@@ -203,7 +203,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## 외부 사용자 초대 핸들러 패키징 {#packaging-invite-external-users-handler}
 
-AEM Forms에 외부 사용자 초대 핸들러를 배포하려면 Java 프로젝트를 JAR 파일로 패키징해야 합니다. 외부 사용자 초대 핸들러의 비즈니스 논리가 종속된 외부 JAR 파일(예: )이 있는지 확인해야 합니다. `edc-server-spi.jar` 및 `adobe-rightsmanagement-client.jar` 파일도 JAR 파일에 포함됩니다. 구성 요소 XML 파일도 있어야 합니다. 다음 `component.xml` 파일 및 외부 JAR 파일은 JAR 파일의 루트에 있어야 합니다.
+AEM Forms에 외부 사용자 초대 핸들러를 배포하려면 Java 프로젝트를 JAR 파일로 패키징해야 합니다. 외부 사용자 초대 핸들러의 비즈니스 논리가 종속된 외부 JAR 파일(예: )이 있는지 확인합니다. `edc-server-spi.jar` 및 `adobe-rightsmanagement-client.jar` 파일도 JAR 파일에 포함됩니다. 구성 요소 XML 파일도 있어야 합니다. 다음 `component.xml` 파일 및 외부 JAR 파일은 JAR 파일의 루트에 있어야 합니다.
 
 >[!NOTE]
 >
@@ -215,7 +215,7 @@ AEM Forms에 외부 사용자 초대 핸들러를 배포하려면 Java 프로젝
 
 A. 구성 요소 B. JAVA 파일에 필요한 외부 JAR 파일
 
-외부 사용자 초대 핸들러를 JAR 파일로 패키징해야 합니다. 이전 다이어그램에서는 .JAVA 파일이 나열되어 있습니다. JAR 파일에 패키지된 후에는 해당 .CLASS 파일도 지정해야 합니다. .CLASS 파일이 없으면 권한 부여 처리기가 작동하지 않습니다.
+외부 사용자 초대 핸들러를 JAR 파일로 패키징합니다. 이전 다이어그램에서는 .JAVA 파일이 나열되어 있습니다. JAR 파일에 패키지된 후에는 해당 .CLASS 파일도 지정해야 합니다. .CLASS 파일이 없으면 권한 부여 처리기가 작동하지 않습니다.
 
 >[!NOTE]
 >
@@ -239,7 +239,7 @@ A. 구성 요소 B. JAVA 파일에 필요한 외부 JAR 파일
 1. 관리 콘솔 홈 페이지에서 **[!UICONTROL 설정]** > **[!UICONTROL 사용자 관리]** > **[!UICONTROL 도메인 관리]**.
 1. 클릭 **[!UICONTROL 새 로컬 도메인]**. 다음 페이지에서 의 이름 및 식별자 값으로 도메인을 만듭니다. `EDC_EXTERNAL_REGISTERED`. 변경 사항을 저장합니다.
 1. 관리 콘솔 홈 페이지에서 **[!UICONTROL 서비스]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 초대된 사용자 및 로컬 사용자]**. 다음 **[!UICONTROL 초대된 사용자 추가]** 페이지가 나타납니다.
-1. 이메일 주소를 입력합니다(현재 외부 사용자 초대 핸들러가 실제로 이메일 메시지를 보내지 않으므로 이메일 주소가 유효하지 않아도 됨). **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 사용자가 시스템에 초대됩니다.
+1. 이메일 주소를 입력합니다(현재 외부 사용자 초대 핸들러가 실제로 이메일 메시지를 보내지 않으므로 이메일 주소가 유효하지 않아도 됨). 클릭 **[!UICONTROL 확인]**. 사용자가 시스템에 초대됩니다.
 1. 관리 콘솔 홈 페이지에서 **[!UICONTROL 설정]** > **[!UICONTROL 사용자 관리]** > **[!UICONTROL 사용자 및 그룹]**.
 1. 다음에서 **[!UICONTROL 찾기]** 필드에 지정한 이메일 주소를 입력합니다. 클릭 **[!UICONTROL 찾기]**. 초대한 사용자가 로컬 의 사용자로 표시됩니다. `EDC_EXTERNAL_REGISTERED` 도메인.
 

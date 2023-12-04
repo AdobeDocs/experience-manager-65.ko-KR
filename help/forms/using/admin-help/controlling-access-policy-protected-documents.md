@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2167'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->전자 메일 메시지에 첨부된 문서의 수신자를 위해 Microsoft Outlook에서 자동으로 생성된 정책에 액세스하려면 문서 세부 정보 페이지의 정책 이름 링크를 사용해야 합니다. 이러한 정책은 정책 페이지에 표시되지 않습니다.
+>문서 세부 정보 페이지의 정책 이름 링크를 사용하여 전자 메일 메시지에 첨부된 문서의 수신자를 위해 Microsoft Outlook에서 자동으로 생성된 정책에 액세스합니다. 이러한 정책은 정책 페이지에 표시되지 않습니다.
 
 **문서 이름:** 선택한 문서의 이름입니다.
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 **게시자:** 문서에 정책을 첨부한 사용자의 이름입니다.
 
-**정책 이름:** 문서를 보호하는 데 사용되는 정책의 이름입니다. 이름을 클릭하여 정책을 열 수 있습니다. 이 링크를 사용하여 Outlook에서 전자 메일 메시지에 첨부된 문서의 수신자에 대해 Acrobat이 생성하는 정책에 액세스해야 합니다. 이러한 정책은 정책 페이지에 표시되지 않습니다.
+**정책 이름:** 문서를 보호하는 데 사용되는 정책의 이름입니다. 이름을 클릭하여 정책을 열 수 있습니다. 이 링크를 사용하여 Outlook의 전자 메일 메시지에 첨부된 문서의 수신자를 위해 Acrobat에서 생성하는 정책에 액세스할 수 있습니다. 이러한 정책은 정책 페이지에 표시되지 않습니다.
 
 **정책 유형:** 문서에 적용된 정책의 유형입니다.
 

@@ -6,9 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2929'
+source-wordcount: '2907'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Adobe Experience Manager(AEM) 일반 솔루션은 외부 전자 상거래 엔진
 
 각각의 개별 제품 유형에 대한 스캐폴드가 필요합니다. 적절한 스캐폴드는 다음 중 하나를 통해 제품과 연계됩니다.
 
-* path
+* 경로
 * 제품은 스캐폴드를 참조할 수 있습니다
 
 >[!NOTE]
@@ -194,7 +194,7 @@ Adobe Experience Manager(AEM) 일반 솔루션은 외부 전자 상거래 엔진
 
    ![참조가 열려 있는 제품 콘솔](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. 참조 유형(예: 제품 페이지)을 클릭/탭하여 목록을 확장합니다.
+1. 참조 유형(예: 제품 페이지)을 클릭하여 목록을 확장합니다.
 1. 옵션을 표시할 수 있도록 특정 참조를 선택합니다.
 
    * 제품 페이지로 이동
@@ -304,9 +304,9 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
 1. 카탈로그로 이동합니다.
 1. 선택 **속성 보기**.
 1. **편집**&#x200B;을 선택합니다.
-1. 다음 항목 선택 **에셋** 탭.
+1. **자산** 탭을 선택합니다.
 1. 필수 입력 **제품 자산 범주**.
-1. 선택 **완료**.
+1. **완료**&#x200B;를 선택합니다.
 1. [롤아웃](#rolling-out-a-catalog) 변경 사항.
 
 #### 제품 콘솔 {#products-console}
@@ -315,7 +315,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
 1. 선택 **제품 데이터 보기**.
 1. **편집**&#x200B;을 선택합니다.
 1. Type a **기본 자산 범주**.
-1. 선택 **완료**.
+1. **완료**&#x200B;를 선택합니다.
 1. [롤아웃](#rolling-out-a-catalog) 변경 사항.
 
 ### 제품 정보 게시/게시 취소 {#publishing-unpublishing-product-information}
@@ -430,7 +430,7 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 
    ![구성 아이콘](/help/sites-administering/assets/chlimage_1-96.png)
 
-1. 아래로 스크롤. 다음 항목이 있습니다. **장바구니에 추가** 탭.
+1. 아래로 스크롤합니다. 다음 항목이 있습니다. **장바구니에 추가** 탭.
 
    ![장바구니에 추가 탭](/help/sites-administering/assets/chlimage_1-97.png)
 
@@ -463,13 +463,13 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
    ![카탈로그 만들기 마법사](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. 필요한 카탈로그 블루프린트로 이동합니다.
-1. 다음 항목 선택 **선택** 버튼을 클릭하고 필요한 카탈로그 블루프린트를 탭/클릭합니다.
+1. 다음 항목 선택 **선택** 버튼을 클릭하고 필요한 카탈로그 블루프린트를 클릭합니다.
 1. **다음**&#x200B;을 선택합니다.
 
    ![카탈로그 속성 마법사](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Type a **제목** 및 a **이름**.
-1. **만들기** 버튼을 선택합니다. 카탈로그가 생성되고 대화 상자가 열립니다.
+1. 다음 항목 선택 **만들기** 단추를 클릭합니다. 카탈로그가 생성되고 대화 상자가 열립니다.
 
    ![카탈로그 생성 대화 상자](/help/sites-administering/assets/chlimage_1-101.png)
 
@@ -524,7 +524,7 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 
    ![롤아웃](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
-1. 마법사에서 필요에 따라 롤아웃을 설정한 다음 탭/클릭합니다 **롤아웃 변경 사항**.
+1. 마법사에서 필요에 따라 롤아웃을 설정한 다음 를 클릭합니다 **롤아웃 변경 사항**.
 1. 대화 상자가 열립니다. 선택 **완료** 프로세스가 완료되면 발생합니다.
 
 #### 카탈로그 롤아웃 - 클래식 UI {#rolling-out-a-catalog-classic-ui}
@@ -549,7 +549,7 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 
    ![블루프린트 가져오기 아이콘](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
-1. 마법사에서 필요에 따라 소스를 선택하고 탭/클릭합니다 **다음**.
+1. 마법사에서 필요에 따라 소스를 선택하고 **다음**.
 
    ![블루프린트 마법사](/help/sites-administering/assets/chlimage_1-102.png)
 

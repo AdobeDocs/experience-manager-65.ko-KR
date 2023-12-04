@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 5%
+source-wordcount: '951'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +87,7 @@ Granite 사용자 및 그룹 관리 콘솔은 모두 **[도구](/help/sites-admi
    * **도시**
    * **우편 번호**
    * **국가**
-   * **상태**
+   * **시/도**
    * **제목**
    * **성별**
    * **정보**
@@ -194,7 +194,7 @@ Granite 사용자 및 그룹 관리 콘솔은 모두 **[도구](/help/sites-admi
 
      그룹에 대한 설명.
 
-   * **구성원을 그룹에 추가**
+   * **그룹에 구성원 추가**
 
      선택 드롭다운을 사용하여 그룹에 추가할 사용자를 선택합니다. 이 옵션을 선택하면 **X** 저장하기 전에 선택 해제할 이름으로.
 
@@ -222,7 +222,7 @@ Granite 사용자 및 그룹 관리 콘솔은 모두 **[도구](/help/sites-admi
 
 1. 다음 **그룹 설정 편집** 양식이 열립니다.
 
-   그룹 ID가 원본과 동일하지만 접두사가 붙습니다. `Copy of`. ID에는 공백을 포함할 수 없으므로 이를 편집해야 합니다. 다른 모든 세부 사항은 원본과 동일합니다.
+   그룹 ID가 원본과 동일하지만 접두사가 붙습니다. `Copy of`. 이 ID는 공백을 포함할 수 없으므로 편집하십시오. 다른 모든 세부 사항은 원본과 동일합니다.
 
    이제 과 같이 세부 사항을 편집하고 저장할 수 있습니다. [새 그룹 추가](#adding-a-new-group).
 

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1682'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Forms 서비스에서 지원하는 작업을 프로그래밍 방식으로 수행
 
 **HTML 양식 렌더링**
 
-HTML 양식을 렌더링하려면 Designer에서 작성하여 XDP 파일로 저장한 양식 디자인을 지정해야 합니다. HTML 변환 유형도 선택해야 합니다. 예를 들어 Internet Explorer 5.0 이상의 동적 HTML을 렌더링하는 HTML 변환 유형을 지정할 수 있습니다.
+HTML 양식을 렌더링하려면 디자이너에서 만들고 XDP 파일로 저장된 양식 디자인을 지정합니다. HTML 변환 유형을 선택합니다. 예를 들어 Internet Explorer 5.0 이상의 동적 HTML을 렌더링하는 HTML 변환 유형을 지정할 수 있습니다.
 
 HTML 양식을 렌더링하려면 다른 양식 유형을 렌더링하는 데 필요한 URI 값과 같은 값도 필요합니다.
 

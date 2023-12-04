@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '586'
 ht-degree: 41%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 41%
 
 #### 작업 세부 정보 {#task-details}
 
-특정 작업에 대한 자세한 내용을 보려면 받은 편지함에서 작업을 탭하거나 클릭하여 선택한 다음 탭하거나 클릭합니다 **열기** 을 클릭합니다.
+받은 편지함에서 특정 작업에 대한 자세한 내용을 보려면 작업을 클릭하여 선택한 다음 **열기** 을 클릭합니다.
 
 ![작업 세부 정보](assets/project-task-detail.png)
 
@@ -70,12 +70,12 @@ ht-degree: 41%
 작업을 추가하려면 다음 작업을 수행하십시오.
 
 1. 프로젝트에서 **작업** 타일
-1. 타일의 오른쪽 상단에서 아래쪽 V자 버튼을 탭하거나 클릭한 다음 을 선택합니다 **작업 만들기**.
+1. 타일 오른쪽 상단의 아래쪽 V자 버튼을 클릭하고 을 선택합니다. **작업 만들기**.
 1. 다음에서 **작업 추가** 창에서 우선 순위, 담당자 및 기한 등 작업 세부 정보를 제공합니다.
 
    ![작업 추가](assets/project-add-task.png)
 
-1. **제출**&#x200B;을 탭하거나 클릭합니다.
+1. **제출**&#x200B;을 클릭합니다.
 
 ## 받은 편지함에서 작업 {#working-with-tasks-in-the-inbox}
 

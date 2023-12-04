@@ -10,10 +10,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 21%
+source-wordcount: '418'
+ht-degree: 22%
 
 ---
 
@@ -82,7 +82,7 @@ Dynamic Media 활성화 에셋에는 다음이 포함됩니다 `pyramid.tiffs`.
 
 ### 자산 보기 변경 {#asset-views-change}
 
-Dynamic Media이 활성화되면 `+` 및 `-` 단추. 클릭/탭하여 특정 영역을 확대할 수도 있습니다. 되돌리기 를 사용하면 원래 버전으로 이동할 수 있으며 대각선 화살표를 클릭하여 이미지를 전체 화면으로 만들 수 있습니다. Dynamic Media이 활성화된 형태는 다음과 같습니다.
+Dynamic Media이 활성화되면 `+` 및 `-` 단추. 을 클릭하여 특정 영역을 확대할 수도 있습니다. 되돌리기 를 사용하면 원래 버전으로 이동할 수 있으며 대각선 화살표를 클릭하여 이미지를 전체 화면으로 만들 수 있습니다. Dynamic Media이 활성화된 형태는 다음과 같습니다.
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

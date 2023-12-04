@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2582'
-ht-degree: 60%
+source-wordcount: '2444'
+ht-degree: 53%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 60%
 
 이 페이지는 다중 사이트 관리자의 기능을 확장하는 데 도움이 됩니다.
 
-* MSM Java API의 주요 멤버에 대해 알아보기.
+* MSM Java API의 주요 멤버에 대해 알아봅니다.
 * 롤아웃 구성에서 사용할 수 있는 동기화 작업을 만듭니다.
-* 기본 언어 및 국가 코드 수정.
+* 기본 언어 및 국가 코드를 수정합니다.
 
 <!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
@@ -61,7 +61,7 @@ ht-degree: 60%
 
 * **`LiveRelationship`**
 
-  `LiveRelationship`은 Live Copy 분기의 리소스와 이에 상응하는 소스/블루프린트 리소스 간의 연결(관계)을 지정합니다.
+  다음 `LiveRelationship` 라이브 카피 분기에 있는 리소스와 이에 상응하는 소스/블루프린트 리소스 간의 연결(관계)을 지정합니다.
 
    * 이 관계는 상속 및 롤아웃을 실현할 때 사용됩니다.
    * `LiveRelationship` 오브젝트는 관계와 관련된 롤아웃 구성(`RolloutConfig`), `LiveCopy` 및 `LiveStatus` 오브젝트에 대한 액세스(참조)를 제공합니다.
@@ -82,7 +82,7 @@ ht-degree: 60%
 
 * **`LiveAction`**
 
-  `LiveAction`은 롤아웃과 관련된 각 리소스에서 실행되는 작업입니다.
+  A `LiveAction` 은 롤아웃과 관련된 각 리소스에서 실행되는 작업입니다.
 
    * LiveActions는 RolloutConfigs에서만 생성됩니다.
 
@@ -92,7 +92,7 @@ ht-degree: 60%
 
 * **`RolloutConfig`**
 
-  `RolloutConfig`는 트리거되었을 때 사용될 `LiveActions`의 목록을 보유합니다. `LiveCopy`는 `RolloutConfig`를 상속하며 결과는 `LiveRelationship`에 표시됩니다.
+  다음 `RolloutConfig` 목록 보관 `LiveActions`: 트리거될 때 사용됩니다. `LiveCopy`는 `RolloutConfig`를 상속하며 결과는 `LiveRelationship`에 표시됩니다.
 
    * 처음 Live Copy를 설정하는 경우에도 LiveActions를 트리거하는 RolloutConfig를 사용합니다.
 
@@ -144,7 +144,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 * A [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) 라이브 카피의 소스를 나타내는 개체입니다.
 * A `Resource` 라이브 카피의 대상을 나타내는 개체입니다.
-* Live Copy용 [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) 오브젝트.
+* 다음 [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) 라이브 카피에 대한 객체입니다.
 * 다음 `autoSave` 값은 다음 여부를 나타냅니다. `LiveAction` 저장소에 대한 변경 사항을 저장해야 합니다.
 
 * 재설정 값은 롤아웃 재설정 모드를 나타냅니다.
@@ -168,7 +168,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 설치된 롤아웃 구성이 애플리케이션 요구 사항에 부합하지 않는 경우 롤아웃 구성을 생성합니다.
 
 * [롤아웃 구성을 만듭니다](#create-the-rollout-configuration).
-* [롤아웃 구성에 동기화 작업을 추가합니다](#add-synchronization-actions-to-the-rollout-configuration).
+* [롤아웃 구성에 동기화 작업 추가](#add-synchronization-actions-to-the-rollout-configuration).
 
 새 롤아웃 구성을 만들었다면 블루프린트 또는 Live Copy 페이지에서 롤아웃 구성을 설정할 때 사용할 수 있습니다.
 
@@ -181,7 +181,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. 오픈 CRXDE Lite. 예:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-1. 다음으로 이동합니다.
+1. 다음으로 이동:
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
@@ -191,7 +191,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
    >[!NOTE]
    >
-   >에서 변경할 수 없습니다. `/libs` 경로.
+   >의 아무 것도 변경하지 마십시오. `/libs` 경로.
    >이는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수도 있음).
    >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
    >
@@ -212,7 +212,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
      **값**: 선택적 설명입니다.
    * **이름**: `cq:trigger`
      **유형**: `String`
-     **값**: 사용할 [롤아웃 트리거](/help/sites-administering/msm-sync.md#rollout-triggers)입니다.. 다음 중에서 선택:
+     **값**: [롤아웃 트리거](/help/sites-administering/msm-sync.md#rollout-triggers) 사용합니다. 다음 중에서 선택:
       * `rollout`
       * `modification`
       * `publish`
@@ -231,13 +231,13 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    예:
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
 
-1. **다음 노드 속성을 사용하여 노드를 만듭니다.**
+1. **만들기** 다음 노드 속성을 가진 노드:
 
    * **이름**: 동기화 작업의 노드 이름입니다.
 이름은 과(와) 같아야 합니다. **작업 이름** 아래 표에서 [동기화 작업](/help/sites-administering/msm-sync.md#installed-synchronization-actions), 예: `contentCopy` 또는 `workflow`.
    * **유형**: `cq:LiveSyncAction`
 
-1. 필요한 만큼 동기화 작업 노드를 추가하고 구성합니다. 작업 노드의 순서가 원하는 순서와 일치하도록 작업 노드를 재정렬합니다. 최상위 작업 노드가 먼저 발생합니다.
+1. 필요한 만큼 동기화 작업 노드를 추가하고 구성합니다. 작업 노드의 순서를 원하는 순서와 일치하도록 작업 노드를 재배열합니다. 최상위 작업 노드가 먼저 발생합니다.
 
 ## 간단한 LiveActionFactory 클래스 만들기 및 사용 {#creating-and-using-a-simple-liveactionfactory-class}
 
@@ -249,11 +249,11 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. [롤아웃 구성을 만듭니다](#create-the-example-rollout-configuration).
 1. [Live Copy를 만듭니다](#create-the-live-copy).
 
-Maven 프로젝트 및 Java 클래스의 소스 코드는 공개 Git 저장소에서 사용할 수 있습니다.
+Maven 프로젝트 및 Java 클래스의 소스 코드는 공용 Git 저장소에서 사용할 수 있습니다.
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 experiencemanager-java-msmrollout 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
@@ -282,7 +282,7 @@ GITHUB의 코드
    * `artifactName`: `MyLiveActionFactory package`
    * `packageGroup`: `myPackages`
 
-1. Eclipse를 시작하고 [Maven 프로젝트를 가져옵니다](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
+1. Eclipse 시작 및 [Maven 프로젝트 가져오기](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
 
 ### POM 파일에 종속성 추가 {#add-dependencies-to-the-pom-file}
 
@@ -637,7 +637,7 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 
    새 폴더의 이름을 `wcm`으로 지정합니다.
 
-1. 이전 단계를 반복하여 `/apps/wcm/core` 폴더 트리를 만듭니다. `sling:Folder`에서 이름이 `core`인 `resources` 유형 노드를 만듭니다. <!-- ![Resources](assets/chlimage_1-77.png) -->
+1. 이전 단계를 반복하여 `/apps/wcm/core` 폴더 트리를 만듭니다. 유형의 노드 만들기 `sling:Folder` 위치: `core` 호출됨 `resources`. <!-- ![Resources](assets/chlimage_1-77.png) -->
 
 1. 마우스 오른쪽 버튼으로 `/libs/wcm/core/resources/languages` 노드를 클릭하고 **복사**&#x200B;를 클릭합니다.
 1. 마우스 오른쪽 버튼으로 `/apps/wcm/core/resources` 폴더를 클릭하고 **붙여넣기**&#x200B;를 클릭합니다. 필요에 따라 하위 노드를 수정합니다.
@@ -647,7 +647,7 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 
    ![일별 CQ WCM 언어 관리자](assets/chlimage_1-78.png)
 
-## 페이지 속성에서 MSM 잠금 구성 (터치 지원 UI) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
+## 페이지 속성에 대한 MSM 잠금 구성(터치 사용 UI) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
 사용자 정의 페이지 속성을 만들 때 새 속성이 모든 Live Copy에 롤아웃될 수 있는지 여부를 고려해야 할 수 있습니다.
 

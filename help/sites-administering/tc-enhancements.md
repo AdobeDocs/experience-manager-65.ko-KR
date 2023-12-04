@@ -5,10 +5,10 @@ topic-tags: site-features
 content-type: reference
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 34%
+source-wordcount: '669'
+ht-degree: 26%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 34%
 
 번역 시작 자동 홍보 및 삭제, 번역 프로젝트의 반복 실행 일정 예약 등 번역 프로젝트 관련 작업의 생산성을 향상시키는 옵션이 추가되었습니다.
 
-1. 번역 프로젝트에서 의 하단의 생략 부호를 클릭하거나 탭합니다. **번역 요약** 타일.
+1. 번역 프로젝트에서 의 맨 아래에 있는 생략 부호를 클릭합니다. **번역 요약** 타일.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -40,7 +40,7 @@ ht-degree: 34%
 
 생성된 전체 번역 프로젝트 수를 줄이기 위해 번역 프로젝트에서 여러 타겟 언어를 구성할 수 있습니다.
 
-1. 번역 프로젝트에서 아래쪽의 점을 클릭하거나 탭합니다. **번역 요약** 타일.
+1. 번역 프로젝트에서 아래쪽의 점을 클릭합니다. **번역 요약** 타일.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -110,11 +110,11 @@ AEM은 구성된 TMS의 번역 메모리에 기존 문자열의 번역을 업데
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. 클릭 또는 탭 **설정 보기**.
+1. 클릭 **설정 보기**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. 확인 **번역됨** 아래에 있는 확인란 **번역** 및 탭/클릭 **업데이트**.
+1. 확인 **번역됨** 아래에 있는 확인란 **번역** 및 클릭 **업데이트**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 

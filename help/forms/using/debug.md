@@ -11,10 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: Mobile Forms
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 1%
+source-wordcount: '811'
+ht-degree: 0%
 
 ---
 
@@ -107,9 +107,9 @@ ht-degree: 1%
 ### 문제: 예기치 않은 오류가 발생했습니다. {#problem-unexpected-error-encountered}
 
 1. 양식 URL에서 쿼리 매개 변수 debugClientLibs를 추가하고 값을 true로 설정합니다(예: https://).&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path=&quot;&quot;>템플릿(&amp;t)=&lt;name of=&quot;&quot; xdp=&quot;&quot; file=&quot;&quot;>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
-1. chrome과 같은 데스크탑 브라우저에서 개발자 도구 -> 콘솔로 이동합니다.
+1. chrome과 같은 데스크탑 브라우저에서 개발자 도구 > 콘솔로 이동합니다.
 1. 로그를 열어 오류 유형을 식별합니다. 로그에 대한 자세한 내용은 [HTML 5 양식 로그](/help/forms/using/enable-logs.md).
-1. Developer Tools -> Console로 이동합니다. 스택 추적을 사용하여 오류의 원인이 되는 코드를 찾습니다. 오류를 디버깅하여 문제를 해결합니다.
+1. 개발자 도구 > 콘솔로 이동합니다. 스택 추적을 사용하여 오류의 원인이 되는 코드를 찾습니다. 오류를 디버깅하여 문제를 해결합니다.
 
    >[!NOTE]
    >
@@ -124,7 +124,7 @@ ht-degree: 1%
 
 ## 문제: 현지화된 오류 메시지가 표시되지 않음 {#problem-localized-error-messages-do-not-display}
 
-1. 추가 쿼리 매개 변수를 사용하여 양식 렌더링 **debugClientLibs=true** 그런 다음 데스크탑 브라우저에서 개발자 도구 -> 리소스 로 이동하여 I18N.css 파일을 확인합니다.
+1. 추가 쿼리 매개 변수를 사용하여 양식 렌더링 **debugClientLibs=true** 데스크탑 브라우저에서 개발자 도구 > 리소스로 이동한 다음 I18N.css 파일을 확인합니다.
 1. 파일을 사용할 수 없는 경우 https://에서 CRX DE에 로그인합니다.&lt;server>:&lt;port>/crx/de.
 1. 왼쪽의 폴더 계층에서 /libs/fd/xfaforms/clientlibs/I18N으로 이동하여 다음 파일과 폴더가 있는지 확인합니다.
 
@@ -181,6 +181,6 @@ ht-degree: 1%
  </tbody>
 </table>
 
-1. 데스크탑 브라우저에서 개발자 도구 -> 리소스로 이동합니다.
+1. 데스크탑 브라우저에서 개발자 도구 > 리소스로 이동합니다.
 
    이미지가 표시되면 [프레임]에서 왼쪽을 선택합니다.

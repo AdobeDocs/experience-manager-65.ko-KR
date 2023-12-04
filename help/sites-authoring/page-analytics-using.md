@@ -8,10 +8,10 @@ topic-tags: site-features
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 13%
+source-wordcount: '435'
+ht-degree: 4%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 13%
 >업데이트 기간을 변경하려면 [가져오기 간격 구성](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. 를 엽니다. **사이트** 콘솔. 예: [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
-1. 도구 모음의 맨 오른쪽(오른쪽 상단)에서 아이콘을 클릭하거나 탭하여 선택합니다 **목록 보기** (표시된 아이콘은 다음에 따라 다릅니다. [현재 보기](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. 도구 모음의 맨 오른쪽(오른쪽 상단)에서 아이콘을 클릭하여 선택합니다 **목록 보기** (표시된 아이콘은 다음에 따라 다릅니다. [현재 보기](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. 도구 모음의 맨 오른쪽(오른쪽 상단)에서 아이콘을 클릭하거나 탭한 다음 을 선택합니다 **설정 보기**. 다음 **열 구성** 대화 상자가 열립니다. 필요한 사항을 변경하고 다음을 사용하여 확인합니다. **업데이트**.
+1. 도구 모음의 맨 오른쪽(오른쪽 상단)에서 아이콘을 클릭한 다음 을(를) 선택합니다 **설정 보기**. 다음 **열 구성** 대화 상자가 열립니다. 필요한 사항을 변경하고 다음을 사용하여 확인합니다. **업데이트**.
 
    ![spad-02](assets/spad-02.png)
 
@@ -85,6 +85,6 @@ Analytics-Administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
 >[!CAUTION]
 >
->Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
+>Adobe Analytics API의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
 >
 >다음 [Adobe Analytics에서 제공하는 ActivityMap 플러그인](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 이제 를 사용해야 합니다.

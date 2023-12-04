@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4963'
-ht-degree: 2%
+source-wordcount: '4830'
+ht-degree: 0%
 
 ---
 
@@ -214,7 +214,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
    * StartComment
    * WorkflowTitle
 
-## 저장소 {#repository}
+## 보관소 {#repository}
 
 CRX 저장소에 대한 정보
 
@@ -602,7 +602,7 @@ CRX 저장소에 대한 정보
 * 인수: 없음
 * 반환된 값: 없음
 
-**joinCluster** 이 저장소를 클러스터 마스터가 제어하는 노드로 클러스터에 추가합니다. 인증을 위해 사용자 이름과 암호를 제공해야 합니다. 연결은 기본 인증을 사용합니다. 보안 자격 증명은 서버로 전송되기 전에 base-64로 인코딩됩니다.
+**joinCluster** 이 저장소를 클러스터 마스터가 제어하는 노드로 클러스터에 추가합니다. 인증을 위해 사용자 이름과 암호를 입력합니다. 연결은 기본 인증을 사용합니다. 보안 자격 증명은 서버로 전송되기 전에 base-64로 인코딩됩니다.
 
 * 인수:
 
@@ -707,8 +707,8 @@ CRX 저장소에 대한 정보
 
 **활성화됨** 에이전트가 활성화되었는지 여부를 나타내는 부울 값:
 
-* `true`: 활성화됨.
-* `false`: 비활성화됨.
+* `true`: 활성화되었습니다.
+* `false`: 비활성화되었습니다.
 
 **큐 차단됨** 큐가 존재하는지, 차단되었는지 여부를 나타내는 부울 값:
 
@@ -778,7 +778,7 @@ SlingRequestProcessor 서비스의 성능을 모니터링할 수 있도록 HTTP 
 **설치됨** 패키지가 설치되었는지 여부를 나타내는 부울 값:
 
 * `true`: 설치됨.
-* `false`: 설치되지 않음.
+* `false`: 설치되지 않았습니다.
 
 **설치자** 패키지를 마지막으로 설치한 사용자의 ID.
 

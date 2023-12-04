@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '528'
 ht-degree: 7%
 
 ---
@@ -34,10 +34,10 @@ AEM을 Adobe Target과 통합하려면 유효한 Adobe Target 계정이 있어�
 
 테스트 및 타겟 [복제 에이전트](/help/sites-deploying/replication.md) 작성자 인스턴스에서 을 활성화해야 합니다. 다음을 사용한 경우 이 복제 에이전트는 기본적으로 활성화되지 않습니다. [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) AEM 설치를 위한 실행 모드입니다. 프로덕션 환경 보호에 대한 자세한 내용은 [보안 검사 목록](/help/sites-administering/security-checklist.md).
 
-1. AEM 홈페이지에서 을 클릭하거나 탭합니다. **도구** > **배포** > **복제**.
-1. 클릭 또는 탭 **작성자의 에이전트**.
-1. 을(를) 클릭하거나 탭합니다 **테스트 및 타겟(테스트 및 타겟)** 복제 에이전트를 클릭한 다음 클릭하거나 탭합니다 **편집**.
-1. 활성화 옵션을 선택한 다음 을 클릭하거나 탭합니다 **확인**.
+1. AEM 홈페이지에서 **도구** > **배포** > **복제**.
+1. 클릭 **작성자의 에이전트**.
+1. 다음을 클릭합니다. **테스트 및 타겟(테스트 및 타겟)** 복제 에이전트를 선택하고 **편집**.
+1. 활성화 옵션을 선택한 다음 를 클릭합니다. **확인**.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ AEM을 Adobe Target과 통합하려면 유효한 Adobe Target 계정이 있어�
 
 ## 활동 설정 노드 보안 설정 {#securing-the-activity-settings-node}
 
-일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호해야 합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스에만 액세스할 수 있어야 합니다.
+일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스에만 액세스할 수 있어야 합니다.
 
 다음 **cq:ActivitySettings** 노드는 아래의 CRXDE lite에서 사용할 수 있습니다 `/content/campaigns/*nameofbrand*`* *활동 jcr:content 노드 아래에* *예, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. 이 노드는 구성 요소를 타겟팅한 후에만 만들어집니다.
 

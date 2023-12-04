@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 958461b0-4cbb-452b-88ea-9b98ada14750
 exl-id: 4b3acc7c-f1f7-4837-ae3a-9435d6ce1349
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '282'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->먼저 Mobile On-Demand 연결을 연결해야 합니다.
+>먼저 Mobile On-Demand 연결을 연결합니다.
 
 ## 공유 리소스 업로드 {#uploading-shared-resources-1}
 

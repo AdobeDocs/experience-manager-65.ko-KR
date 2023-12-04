@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 89%
+source-wordcount: '1293'
+ht-degree: 85%
 
 ---
 
@@ -80,7 +80,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
    ![작성자를 위한 스타일 시스템](assets/style-system-author.png)
 
-1. **목록** 구성 요소의 도구 모음에서 **스타일** 버튼을 탭하거나 클릭하여 스타일 메뉴를 열고 구성 요소의 모양을 변경합니다.
+1. 다음을 클릭합니다. **스타일** 을 클릭합니다. **목록** 구성 요소를 사용하여 스타일 메뉴를 열고 구성 요소의 모양을 변경합니다.
 
    ![스타일 선택](assets/style-system-author2.png)
 
@@ -90,7 +90,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ### 템플릿 작성자 {#as-a-template-author}
 
-1. WKND의 영어 마스터 홈 페이지인 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`를 편집하는 동안, **페이지 정보 -> 템플릿 편집**&#x200B;에서 페이지의 템플릿을 편집합니다.
+1. WKND의 영어 마스터 홈 페이지를 편집하는 동안 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`를 통해 페이지의 템플릿을 편집합니다. **페이지 정보 > 템플릿 편집**.
 
    ![템플릿 편집](assets/style-system-edit-template.png)
 

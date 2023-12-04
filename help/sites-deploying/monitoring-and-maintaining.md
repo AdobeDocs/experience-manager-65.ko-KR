@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 인스턴스 모니터링 및 유지 관리
-description: Adobe Experience Manager 인스턴스를 모니터링하고 유지 관리하는 방법을 알아봅니다.
+description: Adobe Experience Manager 인스턴스를 모니터 하 고 유지 관리 하는 방법에 대해 알아보십시오.
 uuid: 14466552-5c92-4730-a427-85675a2b121c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '5939'
-ht-degree: 2%
+source-wordcount: '5793'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +61,7 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 
 >[!NOTE]
 >
->백업 성능에 대한 자세한 내용은 [백업 성능](/help/sites-deploying/configuring-performance.md#backup-performance) 섹션.
+>백업 성능에 대 한 자세한 내용은 뒤로 성능 ](/help/sites-deploying/configuring-performance.md#backup-performance) 섹션을 참조 [ 하십시오.
 
 ### 소프트웨어 설치 백업 {#backing-up-your-software-installation}
 
@@ -98,7 +98,7 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 
 ### 개요 {#overview}
 
-다음 **버전 제거** 도구는 주간 유지 관리 작업으로 사용할 수 있습니다. 을 처음 사용하기 전에 을 추가한 다음 구성해야 합니다. 그 후에는 요청 시 또는 매주 실행할 수 있습니다.
+**버전** 제거 도구는 주별 유지 관리 작업으로 사용할 수 있습니다. 처음 사용 하기 전에 먼저 추가 하 고 구성 해야 합니다. 그 후에는 요청 시 또는 매주 실행할 수 있습니다.
 
 ### 웹 사이트 버전 삭제 {#purging-versions-of-a-web-site}
 
@@ -178,7 +178,7 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 또한 콘솔에서는 버전에 대한 유용한 정보를 제공합니다.
 
 * `V 1.0`: 버전 번호입니다.
-* `V 1.0.1`&#42;: 별표는 버전이 현재(기본) 버전이며 삭제할 수 없음을 나타냅니다.
+* `V 1.0.1`&#42;: 스타는 버전이 현재 (기본) 버전 이며 제거할 수 없음을 나타냅니다.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: 버전의 날짜입니다.
 
@@ -211,7 +211,7 @@ AEM WCM은 세부 로그를 기록합니다. 압축을 풀고 빠른 시작을 �
 
 >[!NOTE]
 >
->AEM 설치를 업그레이드하면 AEM에서 더 이상 사용하지 않는 기존 로그 파일이 디스크에 남아 있습니다. 위험 없이 제거할 수 있습니다. 모든 새 로그 항목이 새 로그 파일에 기록됩니다.
+>AEM 설치를 업그레이드 하는 경우 AEM에서 더 이상 사용 되지 않는 기존 로그 파일는 디스크에 유지 됩니다. 위험 없이 제거할 수 있습니다. 모든 새 로그 엔트리는 새 로그 파일에 기록 됩니다.
 
 ### 로그 파일 찾기 {#finding-the-log-files}
 
@@ -292,7 +292,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 이름: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
 
-     위치 `<identifier>` 는 인스턴스를 식별하기 위해 입력해야 하는 자유 텍스트로 대체됩니다(이 정보를 생략할 수 없음).
+     `<identifier>`는 인스턴스를 식별 하기 위해 입력 해야 하는 무료 텍스트로 대체 됩니다 (이 정보는 생략할 수 없음).
 
      예, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
@@ -314,7 +314,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
      유형: 문자열[] (문자열 + 다중)
 
-     값: 로거가 메시지를 기록할 OSGi 서비스를 지정합니다(예: 다음 모두).
+     값: 로거가 메시지를 기록할 수 있도록 하는 OSGi 서비스를 지정 합니다. 예를 들어, 다음을 모두 수행 합니다.
 
       * `org.apache.sling`
       * `org.apache.felix`
@@ -332,7 +332,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
         유형: `String`
 
-        값: 필요에 따라 로그 메시지의 패턴을 지정합니다. 예:
+        값: 필요한 경우 로그 메시지 패턴을 지정 합니다. 예를 들어
 
         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
@@ -433,7 +433,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >새 파일이 만들어지는 시점(및 기존 파일의 이름이 이름 패턴에 따라 변경됨)을 나타냅니다.
    >
    >* 숫자로 크기 제한을 지정할 수 있습니다. 크기 표시기가 제공되지 않으면 바이트 수로 간주되거나 크기 표시기 중 하나를 추가할 수 있습니다. `KB`, `MB`, 또는 `GB` (대/소문자가 무시됩니다.)
-   >* 시간/날짜 일정을 다음으로 지정할 수 있습니다. `java.util.SimpleDateFormat` 패턴. 파일이 회전된 후 기간을 정의합니다. 또한 회전된 파일에 추가되는 접미사(식별용)입니다.
+   >* 시간/날짜 일정을 패턴으로 `java.util.SimpleDateFormat` 지정할 수 있습니다. 파일이 회전 된 후의 기간 정의 합니다. 또한 회전 된 파일에 추가 되는 접미사입니다 (식별 용).
    >
    >기본값은 &#39;. &#39;yyyy-MM-dd (일별 로그 순환).
    >
@@ -483,7 +483,7 @@ Felix 콘솔은에서 Sling 로그 지원에 대한 정보도 제공합니다. `
 
 #### 웹 콘솔에서 OSGi 감사 레코드 {#osgi-audit-records-from-the-web-console}
 
-또한 OSGi 이벤트는 **구성 상태** 탭 -> **로그 파일** AEM 웹 콘솔의 탭:
+또한 OSGi 이벤트는 **구성 상태** 탭 > **로그 파일** AEM 웹 콘솔의 탭:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -557,7 +557,7 @@ Felix 콘솔은에서 Sling 로그 지원에 대한 정보도 제공합니다. `
 | 애플리케이션 | 서버 CPU 사용량이 많습니다. | AEM 인스턴스를 클러스터링합니다. | CPU 및 메모리 호그를 검색하고 제거합니다(코드 검토 및 타이밍 출력 사용). |
 |   | 메모리 사용량이 많습니다. |  | 모든 수준에서 캐싱을 개선합니다. |
 |   | 응답 시간이 짧습니다. |  | 템플릿 및 구성 요소(예: 구조, 논리)를 최적화합니다. |
-| 저장소 |  |  |  |
+| 보관소 |  |  |  |
 | 캐시 |  |  |  |
 
 성능 문제는 연결 속도, CPU 로드 등의 일시적인 성능 저하를 포함하여 웹 사이트와 관련이 없는 다양한 원인에서 기인할 수 있습니다.
@@ -925,7 +925,7 @@ Percentage of the requests served within a certain time (ms)
 
 ### (J) VisualVM을 사용 하 여 성능 모니터링 {#monitoring-performance-using-j-visualvm}
 
-JDK 6-8의 경우 도구 명령 `visualvm` 을(를) 사용할 수 있습니다. JDK를 설치한 후 다음을 수행할 수 있습니다.
+JDK 6-8의 경우 도구 명령을 `visualvm` 사용할 수 있습니다. JDK를 설치한 후 다음을 수행할 수 있습니다.
 
 1. AEM 인스턴스를 시작합니다.
 
@@ -1039,9 +1039,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 폴더의 `/var/dam` 전체 크기를 결정 하려면 다음을 수행 하십시오.
 
-1. WebDAV를 사용하여 로컬 파일 시스템에 저장소를 매핑합니다.
+1. WebDAV를 사용 하 여 저장소을 로컬 파일 시스템에 매핑합니다.
 
-1. 다음 명령줄을 사용합니다.
+1. 명령줄을 사용 합니다.
 
    ```shell
    cd /Volumes/localhost/var
@@ -1098,9 +1098,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >
 자세한 내용은 다음 문서를 참조하십시오.
 >
-* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=ko)
-* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)
-* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=ko)
+* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
+* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
 * [느리고 차단된 프로세스 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1125,7 +1125,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 다음에 사용되는 JVM 설정 [AEM 시작](/help/sites-deploying/deploy.md#getting-started)
 * 기술 자료:
 
-   * [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)
+   * [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
 
 ### 디스크 I/O {#disk-i-o}
 
@@ -1134,7 +1134,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 디버그 정보 수집을 비활성화했는지 여부에 관계없이 다음을 포함하여 다양한 위치에서 구성할 수 있습니다.
 
    * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Apache Sling JavaScript 핸들러](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+   * [Apache 선회 JavaScript 핸들러](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Apache의 벌목 로그 구성](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [CQ HTML 라이브러리 관리자](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [CQ WCM Debug 필터링](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
@@ -1143,12 +1143,12 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 버전 제거를 구성 했는지 여부 및 구성 [ 방법](/help/sites-deploying/version-purging.md)
 * 기술 자료:
 
-   * [열려 있는 파일이 너무 많음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=ko)
+   * [열려 있는 파일이 너무 많음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
    * [저널에 디스크 공간이 너무 많이 사용됨](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### 정기적인 성능 저하 {#regular-performance-degradation}
 
-재부팅할 때마다(때때로 1주일 이상) 인스턴스 성능이 저하되는 경우 다음을 확인할 수 있습니다.
+각 재부트 후에 인스턴스 deteriorating의 성능이 표시 되는 경우 (주 이상) 다음을 확인할 수 있습니다.
 
 * [메모리 부족](#outofmemory)
 * 기술 자료:
@@ -1159,7 +1159,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 JVM(Java™ Virtual Machine)은 튜닝과 관련하여 개선되었습니다(특히 Java™ 7 이후). 따라서, 적절한 고정 JVM 크기를 지정하고 기본값을 사용하는 것이 종종 적절합니다.
 
-기본 설정이 적절 하지 않으면 모니터 하 고 GC 성능을 평가 하는 방법을 설정 하는 것이 중요 합니다. 이 경우에는 JVM을 튜닝 하려고 시도 합니다. 이 프로세스에는 힙 크기, 알고리즘 및 기타 측면을 포함하는 모니터링 요소가 포함될 수 있습니다.
+기본 설정이 적절 하지 않으면 모니터 하 고 GC 성능을 평가 하는 방법을 설정 하는 것이 중요 합니다. 이 경우에는 JVM을 튜닝 하려고 시도 합니다. 이 프로세스에는 힙 크기, 알고리즘 및 기타 측면을 포함 한 모니터링 요인이 포함 될 수 있습니다.
 
 몇 가지 일반적인 선택 사항은 다음과 같습니다.
 

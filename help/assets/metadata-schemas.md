@@ -7,10 +7,10 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3616'
-ht-degree: 10%
+source-wordcount: '3595'
+ht-degree: 8%
 
 ---
 
@@ -96,14 +96,14 @@ ht-degree: 10%
 | [!UICONTROL 숫자] | 숫자 구성 요소를 추가합니다. |
 | [!UICONTROL 날짜] | 날짜 구성 요소를 추가합니다. |
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
-| [!UICONTROL 표준 태그] | 태그 추가. |
+| [!UICONTROL 표준 태그] | 태그를 추가합니다. |
 | [!UICONTROL 스마트 태그] | 메타데이터 태그를 자동으로 추가하여 검색 기능을 보강합니다. |
-| [!UICONTROL 숨김 필드] | 숨겨진 필드를 추가합니다. 에셋이 저장될 때 POST 매개 변수로 전송됩니다. |
-| [!UICONTROL 자산 참조자] | 자산이 참조하는 자산 목록을 보려면 이 구성 요소를 추가하십시오. |
+| [!UICONTROL 숨겨진 필드] | 숨겨진 필드를 추가합니다. 에셋이 저장될 때 POST 매개 변수로 전송됩니다. |
+| [!UICONTROL 참조한 자산] | 자산이 참조하는 자산 목록을 보려면 이 구성 요소를 추가하십시오. |
 | [!UICONTROL 자산 참조] | 를 추가하여 에셋을 참조하는 에셋 목록을 표시합니다. |
 | [!UICONTROL 제품 참조] | 를 추가하여 자산과 연결된 제품 목록을 표시합니다. |
 | [!UICONTROL 자산 등급] | 를 추가하여 자산 등급 지정 옵션을 표시합니다. |
-| [!UICONTROL 상황에 맞는 메타데이터] | 를 추가하여 자산의 속성 페이지에서 다른 메타데이터 탭의 표시를 제어합니다. |
+| [!UICONTROL 상황별 메타데이터] | 를 추가하여 자산의 속성 페이지에서 다른 메타데이터 탭의 표시를 제어합니다. |
 
 #### 메타데이터 구성 요소 편집 {#edit-the-metadata-component}
 
@@ -155,7 +155,7 @@ Instead of specifying properties for the options in the **[!UICONTROL Settings]*
 
 #### 스키마 양식에서 탭 추가 또는 삭제 {#adding-deleting-a-tab-in-the-schema-form}
 
-The schema editor lets you add or delete a tab. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
+The schema editor lets you add or delete a tab. 기본 스키마 양식에는 **[!UICONTROL 기본]**, **[!UICONTROL 고급]** , **[!UICONTROL IPTC]**, 및 **[!UICONTROL IPTC 확장]** 탭.
 
 클릭 `+` 를 클릭하여 스키마 양식에 탭을 추가합니다. 기본적으로 새 탭의 이름은 입니다 `Unnamed-1`. 다음에서 이름을 수정할 수 있습니다. **[!UICONTROL 설정]** 탭. 클릭 `X` 탭을 삭제하려면 다음 작업을 수행하십시오.
 
@@ -257,7 +257,7 @@ The schema editor lets you add or delete a tab. The default schema form includes
 
 1. 마찬가지로 에셋 유형 필드의 값 Video와 코덱 및 지속 시간과 같은 다른 필드 간에 종속성을 만듭니다.
 1. 에서 문서 에셋(PDF 및 Word) 간에 종속성을 만들려면 단계를 반복합니다. [!UICONTROL 에셋 유형] 필드 및 필드 [!UICONTROL 페이지 수] 및 [!UICONTROL 작성자].
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 폴더에 메타데이터 스키마를 적용합니다.
+1. 클릭 **[!UICONTROL 저장]**. 폴더에 메타데이터 스키마를 적용합니다.
 
 1. 메타데이터 스키마를 적용한 폴더로 이동하고 자산의 속성 페이지를 엽니다. 에셋 유형 필드에서 선택한 사항에 따라 관련 계단식 메타데이터 필드가 표시됩니다.
 
@@ -286,7 +286,7 @@ The schema editor lets you add or delete a tab. The default schema form includes
 
 ### MIME 유형에 대한 새 양식 추가 {#add-new-forms-for-mime-types}
 
-Create a form under the appropriate form type. For example, to add a template for the `image/png` subtype, create the form under the &quot;image&quot; forms. The title for the schema form is the subtype name. In this case, the title is `png`.
+적절한 양식 유형에서 양식을 만듭니다. 예를 들어 의 템플릿을 추가하려면 `image/png` 하위 유형인 경우 &quot;이미지&quot; 양식 아래에 양식을 만듭니다. The title for the schema form is the subtype name. 이 경우 제목은 입니다. `png`.
 
 #### 다양한 MIME 유형에 기존 스키마 템플릿 사용 {#use-an-existing-schema-template-for-various-mime-types}
 
@@ -340,7 +340,7 @@ Create a form under the appropriate form type. For example, to add a template fo
 
    *그림: 메타데이터 스키마 양식 편집기에 추가된 텍스트 필드*
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다.
+1. 클릭 **[!UICONTROL 저장]**. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다.
 1. 클릭 **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
 
 1. 수정된 스키마를 적용할 폴더를 선택한 다음 **[!UICONTROL 적용]**.
@@ -368,7 +368,7 @@ Create a form under the appropriate form type. For example, to add a template fo
 
    *그림: 메타데이터 스키마 양식 편집기의 필수 필드*
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다. 양식을 선택하고 **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
+1. 클릭 **[!UICONTROL 저장]**. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다. 양식을 선택하고 **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
 
 1. 폴더로 이동하고 사용자 정의 양식에 추가한 필수 필드에 대해 메타데이터가 누락된 일부 에셋을 업로드합니다. 필수 필드에 대한 누락된 메타데이터에 대한 메시지가 에셋의 카드 보기에 표시됩니다.
 

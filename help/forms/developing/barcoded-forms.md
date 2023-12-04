@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1911'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ AEM Forms이 JBOSS가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 **바코드 데이터가 포함된 PDF 양식 받기**
 
-사용자 데이터로 채워진 바코드가 포함된 PDF 양식을 받아야 합니다.
+사용자 데이터로 채워진 바코드가 포함된 PDF 양식을 가져옵니다.
 
 **PDF 양식에서 데이터 디코딩**
 

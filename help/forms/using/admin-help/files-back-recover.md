@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ GDS의 위치는 AEM Forms 설치 프로세스 또는 그 이후에 관리 콘�
 
 ### GDS 위치 {#gds-location}
 
-설치하는 동안 위치 설정을 비워 두면 기본적으로 응용 프로그램 서버 설치 아래의 디렉토리가 됩니다. 응용 프로그램 서버에 대해 다음 디렉터리를 백업해야 합니다.
+설치하는 동안 위치 설정을 비워 두면 기본적으로 응용 프로그램 서버 설치 아래의 디렉토리가 됩니다. 응용 프로그램 서버에 대해 다음 디렉터리를 백업합니다.
 
 * (JBoss) `[appserver root]/server/'server'/svcnative/DocumentStorage`
 * (WebLogic) `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage`

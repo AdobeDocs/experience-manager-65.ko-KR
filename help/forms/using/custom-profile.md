@@ -10,9 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ footer.jsp 모듈이 비어 있습니다. 사용자 상호 작용에만 사용�
 사용자 지정 프로필을 만든 후 이 프로필에 렌더링 정보를 추가합니다. 새 프로필에 대한 요청을 받으면 CRX는 렌더링할 JSP 페이지에 대한 /apps 폴더가 있는지 확인합니다. /apps 폴더에 JSP 페이지를 만듭니다.
 
 1. 왼쪽 창에서 `/apps` 폴더를 삭제합니다.
-1. 마우스 오른쪽 버튼으로 클릭 `/apps` 폴더 및 이름으로 폴더 만들기 선택 **hrform**.
+1. 마우스 오른쪽 단추 클릭 `/apps` 폴더 및 이름으로 폴더 만들기 선택 **hrform**.
 1. 참가자 **hrform** 폴더 다음 이름의 폴더 만들기 **데모**.
 1. 다음을 클릭합니다. **모두 저장** 단추를 클릭합니다.
 1. 다음으로 이동 `/libs/xfaforms/profile/html.jsp` 노드 복사 **html.jsp**.

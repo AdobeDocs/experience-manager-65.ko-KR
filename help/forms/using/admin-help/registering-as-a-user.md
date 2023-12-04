@@ -1,8 +1,8 @@
 ---
 title: 사용자로 등록
 seo-title: Registering as a User
-description: 사용자 조직의 외부에 있더라도 Document Security 사용자로부터 받은 정책 보호 문서를 사용하는 방법에 대해 알아봅니다.
-seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
+description: 사용자 조직의 외부에 있더라도 Document Security 사용자로부터 받은 정책으로 보호된 문서를 사용하는 방법에 대해 알아봅니다.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user's organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -10,16 +10,16 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 6%
+source-wordcount: '695'
+ht-degree: 3%
 
 ---
 
 # 사용자로 등록 {#registering-as-a-user}
 
-사용자 조직의 외부에 있는 경우에도 document security 사용자로부터 받은 정책으로 보호된 문서를 사용할 수 있습니다. 정책으로 보호된 문서를 사용하려면 문서 보안에 등록해야 합니다. 이전에 등록 초대를 받지 않은 경우 다음 이벤트가 발생하면 document security에서 등록 프로세스를 시작합니다.
+사용자 조직의 외부에 있는 경우에도 문서 보안 사용자로부터 받은 정책으로 보호된 문서를 사용할 수 있습니다. 정책으로 보호된 문서를 사용하려면 문서 보안에 등록해야 합니다. 이전에 등록 초대를 받지 않은 경우 다음 이벤트가 발생하면 document security에서 등록 프로세스를 시작합니다.
 
 * 정책으로 보호된 문서를 보내려는 문서 보안 사용자가 귀하를 정책에 추가합니다.
 * Document Security 관리자가 계정을 만듭니다.
@@ -43,11 +43,11 @@ ht-degree: 6%
 1. Document Security 등록 이메일을 엽니다. 메시지에 포함된 URL은 문서 보안의 외부 사용자 등록 페이지에 대한 링크입니다.
 1. URL을 클릭하거나 복사하여 브라우저에 붙여넣습니다. 외부 사용자 등록 페이지가 표시됩니다.
 1. 해당 상자에 이름, 전화 번호, 주소, 조직 및 암호를 입력한 다음 암호 확인 상자에 암호를 다시 입력합니다. 아무 8자의 조합이 암호가 될 수 있습니다.
-1. 저장을 클릭합니다. 이메일에 활성화 이메일 메시지가 있는지 확인하라는 감사 메시지가 나타납니다. 이제 등록 프로세스를 완료하려면 계정을 활성화해야 합니다.
+1. 저장을 클릭합니다. 이메일에 활성화 이메일 메시지가 있는지 확인하라는 감사 메시지가 나타납니다. 이제 계정을 활성화하여 등록 프로세스를 완료합니다.
 
 ## 초대된 사용자 계정 활성화 {#activate-your-invited-user-account}
 
-등록하면 Document Security가 활성화 이메일을 보냅니다. 메시지의 URL을 사용하여 계정을 활성화해야 합니다. 그런 다음 document security에 로그인하여 액세스 권한이 있는 정책으로 보호된 문서를 사용할 수 있습니다. 관리자가 외부 사용자를 위해 활성화하는 기능에 따라 정책을 만들고, 문서에 정책을 적용하고, 다른 외부 사용자를 정책에 추가할 수 있는 권한이 있을 수 있습니다.
+등록하면 Document Security가 활성화 이메일을 보냅니다. 메시지의 URL을 사용하여 계정을 활성화합니다. 그런 다음 document security에 로그인하여 액세스 권한이 있는 정책으로 보호된 문서를 사용할 수 있습니다. 관리자가 외부 사용자를 위해 활성화하는 기능에 따라 정책을 만들고, 문서에 정책을 적용하고, 다른 외부 사용자를 정책에 추가할 수 있는 권한이 있을 수 있습니다.
 
 관리자가 계정을 비활성화하거나 삭제할 때까지 귀하의 계정은 활성 상태로 유지됩니다.
 

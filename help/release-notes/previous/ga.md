@@ -2,10 +2,10 @@
 title: 에 대한 일반 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: "[!DNL Adobe Experience Manager] 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 요약한 6.5 참고 사항"
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4676'
-ht-degree: 27%
+source-wordcount: '4484'
+ht-degree: 23%
 
 ---
 
@@ -81,7 +81,7 @@ UI를 보다 생산적이고 사용하기 쉽게 만들기 위해 다양한 개�
 
 * 6.4에 도입된 새로운 워크플로우 모델 편집기는 복사 및 게시, 워크플로우 단계의 변수 지원 및 개선과 같은 더 많은 작업을 포함하도록 개선되었습니다 `OR` 및 `AND` 분할됩니다.
 
-#### 저장소 {#repository}
+#### 보관소 {#repository}
 
 * Adobe Experience Manager 6.5의 기반은 업데이트된 버전의 OSGi 기반 프레임워크(Apache Sling 및 Apache Felix) 및 Java™ 콘텐츠 저장소(Apache Jackrabbit Oak 1.10.2) 위에 구축됩니다.
 * 해결된 문제에 대한 개요는 를 참조하십시오. [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [아파치 잭래빗 오크 Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) 및 [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
@@ -102,7 +102,7 @@ UI를 보다 생산적이고 사용하기 쉽게 만들기 위해 다양한 개�
 
 * 빠른 시작 배포는 Eclipse Jetty 9.4.15를 서블릿 엔진으로 사용합니다(AEM 6.4는 9.3.22와 함께 제공됨).
 
-### [!DNL Experience Manager] Sites {#experience-manager-sites}
+### [!DNL Experience Manager] 사이트 {#experience-manager-sites}
 
 #### 관리되는 단일 페이지 앱 {#managed-single-page-apps}
 
@@ -210,15 +210,15 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 
 #### 번역 {#translation}
 
-* 프로젝트 마스터를 사용하여 변역 프로젝트 생성 간소화.
-* 기본적으로 번역 작업을 승인 상태로 설정하여 번역 프로젝트 실행 간소화.
+* 프로젝트 마스터를 사용하여 번역 프로젝트 만들기를 단순화합니다.
+* 기본적으로 번역 작업을 승인 상태로 설정하여 번역 프로젝트 실행을 간소화합니다.
 * 서드파티 번역 메모리의 변경 사항을 사용하여 번역된 페이지를 업데이트할 수 있습니다.
 * JSON 형식으로 번역 작업 내보내기를 허용합니다.
 * V3 API를 사용하도록 Microsoft® 번역 통합을 업데이트합니다.
 
-#### Multi-Site Management(MSM) {#multi-site-management-msm}
+#### 다중 사이트 관리(MSM) {#multi-site-management-msm}
 
-* PushOnModify를 사용하는 롤아웃 구성의 경우, 불일치 상태를 방지하기 위해 페이지 이동 조작을 효율적으로 처리.
+* PushOnModify를 사용하는 롤아웃 구성의 경우, 일관되지 않은 상태를 방지하기 위해 페이지 이동 작업을 보다 효율적으로 처리할 수 있습니다.
 * 라이브 카피 구조 내에 페이지를 만들면 기본적으로 독립 페이지가 만들어집니다.
 * JS SDK(SPA 편집기라고도 함)를 사용하는 단일 페이지 앱에서 MSM 기능 사용
 
@@ -319,13 +319,13 @@ AEM 6.5 Communities 지원 공유 가능한 콘텐츠 개체 참조 모델의 �
 
 AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마케팅 역할의 생산성을 높이기 위해 다음과 같은 기능과 개선 사항을 도입했습니다.
 
-#### [!DNL Adobe Creative Cloud] 및 광고 워크플로우와 통합 {#integration-with-adobe-creative-cloud-and-creative-workflows}
+#### 과 통합 [!DNL Adobe Creative Cloud] 및 광고 워크플로 {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
 [!DNL Adobe Experience Manager]는 광고 및 마케팅 또는 비즈니스 팀이 밀접하게 협력하는 워크플로우에서 [!DNL Adobe Creative Cloud]와 통합하고 자산을 공유하는 다양한 방법을 제공합니다. [!DNL Experience Manager] 6.5는 통합 과정에서 지속적으로 개선되고 더 많은 기회를 노출하며 기존 방법을 간소화합니다.
 
 의 특정 기능 및 통합 관련 사항을 숙지하고 있어야 합니다. [!DNL Experience Manager] 6.5 - 콘텐츠 속도 사용 사례를 최상으로 지원하는 데 사용할 수 있습니다.
 
-##### Adobe Asset Link {#aal}
+##### Adobe 에셋 링크 {#aal}
 
 [!DNL Adobe Asset Link]는 컨텐츠 작성 프로세스에서 광고 팀과 마케터 간의 협업을 강화합니다. 광고 팀은 친숙한 앱을 종료하지 않고 [!DNL Experience Manager Assets]에 저장된 컨텐츠에 액세스할 수 있습니다. 광고 팀은 [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign] 앱에서 앱 내 패널을 사용하여 자산을 원활하게 탐색, 검색, 체크아웃 및 체크인할 수 있습니다.
 
@@ -349,7 +349,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마
 
 *그림: [!DNL Adobe Stock]에서 라이선스가 부여된* 이미지 검색 및 필터링.[!DNL Experience Manager]
 
-##### [!DNL Adobe InDesign]에서 동적 참조  {#dynamic-references-in-indesign}
+##### 의 동적 참조 [!DNL Adobe InDesign] {#dynamic-references-in-indesign}
 
 [!DNL Adobe InDesign] 파일에 사용된 [!DNL Experience Manager Assets]이 동적입니다. 참조된 자산이 저장소에서 이동하면 참조가 자동으로 업데이트됩니다. 자세한 내용은 [조합 자산을 관리하는 방법](/help/assets/managing-linked-subassets.md).
 
@@ -383,7 +383,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마
 
 이제 비디오 자체의 프레임이나 DAM에 저장된 다른 콘텐츠를 사용하여 비디오 에셋의 썸네일을 사용자 지정할 수 있습니다. 추가 지침은 [비디오 축소판 정보](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
-##### 접근성 개선 {#accessibility-enhancements}
+##### 액세스 가능성 개선 {#accessibility-enhancements}
 
 이제 [!DNL Dynamic Media] 뷰어에는 Aria 지원, 화면 판독기 및 대체 텍스트와 같은 향상된 액세스 가능성에 대한 지원이 포함되어 있습니다. 자세한 내용은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
@@ -428,7 +428,7 @@ AEM 6.5 Forms은 몇 가지 새로운 기능과 개선 사항을 제공합니다
 
 다음을 참조하십시오. [AEM 6.5 Forms의 새로운 기능 및 개선 사항 요약](/help/forms/using/whats-new.md) 새 기능 및 향상된 기능 및 설명서 리소스에 대한 자세한 내용
 
-### 고객 중심 개발 사용 {#leverage-customer-focused-development}
+### 고객 중심 개발 사용 {#use-customer-focused-development}
 
 Adobe은 사양, 개발 및 테스트 중 개발 프로세스의 모든 단계에 고객이 기여할 수 있도록 하는 고객 중심 개발 모델을 사용하고 있습니다. 이 과정에서 모든 기여 고객 및 파트너에게 감사를 드립니다.
 
@@ -468,7 +468,7 @@ Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 �
 
 * 대화 상자 변환 도구 등 AEM 현대화 도구 세트. ([GitHub 프로젝트](https://github.com/adobe/aem-modernize-tools))
 
-**자산**
+**에셋**
 
 * 향상된 PDF 래스터라이저( 를 추가하는 패키지[자세히 보기](/help/assets/aem-pdf-rasterizer.md))
 * 확장 RAW 이미지 지원을 추가할 패키지([자세히 보기](/help/assets/camera-raw.md))

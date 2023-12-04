@@ -7,10 +7,10 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3949'
-ht-degree: 17%
+source-wordcount: '3908'
+ht-degree: 15%
 
 ---
 
@@ -62,10 +62,10 @@ ht-degree: 17%
 
 | 역할 | 범위 | 사용자 그룹 | 연습의 사용자 이름 | 설명 |
 |---|---|---|---|---|
-| [!DNL Sites] administrator | 로컬 | [!DNL Experience Manager] `administrators` | `admin` | 설정 [!DNL Experience Manager] 및 원격 시스템과의 통합 구성 [!DNL Assets] 배포. |
+| [!DNL Sites] 관리자 | 로컬 | [!DNL Experience Manager] `administrators` | `admin` | 설정 [!DNL Experience Manager] 및 원격 시스템과의 통합 구성 [!DNL Assets] 배포. |
 | DAM 사용자 | 로컬 | `Authors` | `ksaner` | `/content/DAM/connectedassets/`에서 가져온 자산을 보고 복제하는 데 사용됩니다. |
 | [!DNL Sites] 작성자 | 로컬 | <ul><li>`Authors` (원격 DAM에 대한 읽기 액세스 권한과 로컬에 대한 작성자 액세스 권한 있음) [!DNL Sites]) </li> <li>`dam-users` 로컬 [!DNL Sites]</li></ul> | `ksaner` | 최종 사용자는 [!DNL Sites] 이 통합을 사용하여 콘텐츠 속도를 향상시키는 작성자. 작성자가 를 사용하여 원격 DAM에서 자산을 검색하고 찾아봅니다. [!UICONTROL 콘텐츠 파인더] 로컬 웹 페이지에서 필요한 이미지 사용. `ksaner` DAM 사용자의 자격 증명이 사용됩니다. |
-| [!DNL Assets] administrator | 원격 | [!DNL Experience Manager] `administrators` | `admin` 원격 [!DNL Experience Manager] | CORS(원본 간 리소스 공유)를 구성합니다. |
+| [!DNL Assets] 관리자 | 원격 | [!DNL Experience Manager] `administrators` | `admin` 원격 [!DNL Experience Manager] | CORS(원본 간 리소스 공유)를 구성합니다. |
 | DAM 사용자 | 원격 | `Authors` | `ksaner` 원격 [!DNL Experience Manager] | 원격에서 작성자 역할 [!DNL Experience Manager] 배포. 를 사용하여 연결된 자산에서 자산 검색 및 찾아보기 [!UICONTROL 콘텐츠 파인더]. |
 | DAM 배포자(기술 사용자) | 원격 | [!DNL Sites] `Authors` | `ksaner` 원격 [!DNL Experience Manager] | 원격 배포에 있는 이 사용자는 [!DNL Experience Manager] 로컬 서버(다음이 아님) [!DNL Sites] 작성자 역할) 을(를) 대신해 원격 자산을 가져옵니다. [!DNL Sites] 작성자. 이 역할은 위의 두 `ksaner` 역할과 동일하지 않으며 다른 사용자 그룹에 속합니다. |
 
@@ -103,7 +103,7 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
    1. A **[!UICONTROL 제목]** 을 참조하십시오.
    1. **[!UICONTROL 원격 DAM URL]** 은 의 URL입니다. [!DNL Assets] 형식에서 위치 `https://[assets_servername]:[port]`.
    1. DAM 배포자의 자격 증명(기술 사용자)
-   1. 다음에서 **[!UICONTROL 마운트 지점]** 필드에 로컬을 입력합니다. [!DNL Experience Manager] 경로: [!DNL Experience Manager] 자산을 가져옵니다. 예를 들면 `remoteassets` 폴더를 입력합니다. DAM에서 가져온 자산은 의 이 폴더에 저장됩니다. [!DNL Sites] 배포.
+   1. 다음에서 **[!UICONTROL 마운트 지점]** 필드에 로컬을 입력합니다. [!DNL Experience Manager] 경로: [!DNL Experience Manager] 자산을 가져옵니다. 예를 들어, `remoteassets` 폴더를 삭제합니다. DAM에서 가져온 자산은 의 이 폴더에 저장됩니다. [!DNL Sites] 배포.
    1. **[!UICONTROL 로컬 사이트 URL]** 는 의 위치입니다. [!DNL Sites] 배포. [!DNL Assets] 배포에서는 이 값을 사용하여 이 로 가져온 디지털 자산에 대한 참조를 유지 관리합니다. [!DNL Sites] 배포.
    1. 의 자격 증명 [!DNL Sites] 기술 사용자.
    1. 값: **[!UICONTROL 원본 이진 전송 최적화 임계값]** 필드는 원본 에셋(렌디션 포함)이 동기적으로 전송되는지 여부를 지정합니다. 상대적으로 파일 크기가 큰 자산이 비동기식으로 가장 잘 동기화되는 반면 파일 크기가 작은 자산을 쉽게 가져올 수 있습니다. 값은 네트워크 기능에 따라 다릅니다.
@@ -200,7 +200,7 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
 
    ![원격 DAM에서 자산을 검색할 때 문서 유형 및 이미지를 필터링하는 옵션](assets/filetypes_filter_connected_assets.png)
 
-   *그림: 원격 DAM에서 자산을 검색할 때 문서 유형 및 이미지를 필터링하는 옵션.*
+   *그림: 원격 DAM에서 자산을 검색할 때 문서 유형 및 이미지를 필터링하는 옵션*
 
 1. 에셋의 원본을 비동기식으로 가져오는 경우 및 가져오기 작업이 실패할 경우 사이트 작성자에게 알립니다. 작성자는 작성 중이나 작성 후에도 의 가져오기 작업 및 오류에 대한 자세한 정보를 볼 수 있습니다. [비동기 작업](/help/sites-administering/asynchronous-jobs.md) 사용자 인터페이스.
 
@@ -319,7 +319,7 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
 
 ### 권한 및 자산 관리 {#permissions-and-managing-assets}
 
-* 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager] 구성 요소는 변경되지 않은 상태로 자산을 유지한 채 편집합니다. 다른 편집 작업은 허용되지 않습니다.
+* 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager] 구성 요소는 자산을 원본에 영향을 주지 않고 편집합니다. 다른 편집 작업은 허용되지 않습니다.
 * 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로우를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
 * 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Content Fragments] 및 [!DNL Experience Fragments] 은(는) 지원되지 않습니다.
 * [!DNL Experience Manager] 메타데이터 스키마를 가져오지 않습니다. 즉, 가져온 모든 메타데이터가 표시되지 않을 수 있습니다. 스키마가 다음에서 별도로 업데이트되는 경우 [!DNL Sites] 배포하면 모든 메타데이터 속성이 표시됩니다.
@@ -339,7 +339,7 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
 
 * 작성할 때 원격 자산을 검색하고 로컬 페이지에서 드래그할 수 있습니다. 다른 기능은 지원되지 않습니다.
 * 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. 작성자가에서 원격 자산을 드래그하여 재시도할 수 있습니다. [!UICONTROL 콘텐츠 파인더] 끝 [!UICONTROL 페이지 편집기].
-*  `Image` 구성 요소를 통해 지원되는 편집과 원본에 영향을 주지 않는 간단한 편집은 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
+* 원본에 영향을 주지 않는 간단한 편집과 `Image` 구성 요소를 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
 * 자산을 다시 가져오는 유일한 방법은 페이지에서 자산을 드래그하는 것입니다. API 지원 또는 업데이트할 에셋을 다시 가져오는 다른 방법은 없습니다.
 * 자산이 DAM에서 서비스 해제된 경우에도 계속 사용할 수 있습니다 [!DNL Sites] 페이지.
 * 자산의 원격 참조 항목을 비동기식으로 가져옵니다. 참조와 총 횟수는 실시간이 아니며, DAM 사용자가 참조를 조회하는 동안 사이트 작성자가 에셋을 사용하는 경우에는 차이가 있을 수 있습니다. DAM 사용자는 페이지를 새로 고치고 몇 분 후에 다시 시도하여 총 수를 가져올 수 있습니다.

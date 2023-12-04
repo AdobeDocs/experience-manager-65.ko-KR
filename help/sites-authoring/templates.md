@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4834'
-ht-degree: 82%
+source-wordcount: '4825'
+ht-degree: 77%
 
 ---
 
@@ -51,13 +51,13 @@ ht-degree: 82%
 
 시작하기 전에 고려해야 할 사항은 다음과 같습니다.
 
-* 템플릿을 만들려면 공동 작업이 필요합니다. 이러한 이유로 각 작업에 대해 [역할](#roles)이 지정됩니다.
+* 템플릿을 만들려면 공동 작업이 필요합니다. 이러한 이유로 [역할](#roles) 은 각 작업에 대해 표시됩니다.
 
 * 인스턴스 구성 방식에 따라 AEM에서 제공하는 [두 가지 기본 템플릿 유형](/help/sites-authoring/templates.md#editable-and-static-templates). 이는 실제 방식에 영향을 주지 않습니다 [템플릿을 사용하여 페이지 만들기](#using-a-template-to-create-a-page): 만들 수 있는 템플릿 유형 및 페이지가 해당 템플릿과 관련되는 방식에 영향을 줍니다.
 
 ### 역할 {#roles}
 
-Creating a template using the **Templates Console** and the **Template Editor** requires collaboration between the following roles:
+템플릿 만들기 **템플릿 콘솔** 및 **템플릿 편집기** 은(는) 다음 역할 간의 협업이 필요합니다.
 
 * **관리자**:
 
@@ -120,7 +120,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
 * **템플릿** 콘솔을 사용합니다. **도구** 콘솔의 **일반** 섹션에서 사용할 수 있습니다.
 
-   * 또는 [에서 바로 사용할 수 있습니다.https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+   * 또는 다음 위치에서 바로 사용할 수 있습니다. [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * 필요한 경우 [템플릿용 폴더를 만들 수](#creating-a-template-folder-admin) 있습니다.
 * [템플릿 만들기](#creatinganewtemplateauthor): 처음에 비어 있음
@@ -151,7 +151,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
 ### 새 템플릿 만들기 - 템플릿 작성자 {#creating-a-new-template-template-author}
 
-1. **도구 ->** **일반**&#x200B;에서 **템플릿 콘솔**&#x200B;을 연 후 필요한 폴더로 이동합니다.
+1. 를 엽니다. **템플릿 콘솔** (경유 **도구 >** **일반**) 필요한 폴더로 이동합니다.
 
    >[!NOTE]
    >
@@ -173,7 +173,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
    * **템플릿 이름**
    * **설명**
 
-1. **만들기**&#x200B;를 선택합니다. 확인이 표시되면 **열기**[](#editingatemplate)를 선택하여 템플릿 편집을 시작하거나 **완료**&#x200B;를 선택하여 템플릿 콘솔로 돌아갑니다.
+1. **만들기**&#x200B;를 선택합니다. 확인이 표시되면 다음을 선택합니다. **열기** 시작 [템플릿 편집](#editingatemplate) 또는 **완료** 템플릿 콘솔로 돌아갑니다.
 
    >[!NOTE]
    >
@@ -221,14 +221,14 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 1. 템플릿 속성을 편집합니다.
 1. 썸네일을 업로드할지 또는 템플릿 콘텐츠에서 생성할지를 선택합니다.
 
-   * 썸네일을 업로드하려면 **이미지 업로드**&#x200B;를 클릭하거나 탭합니다.
-   * 썸네일을 생성하려면 **미리보기 생성**&#x200B;을 클릭하거나 탭합니다.
+   * 썸네일을 업로드하려면 다음을 클릭하십시오. **이미지 업로드**
+   * 썸네일을 생성하려면 를 클릭합니다. **미리보기 생성**
 
 1. 두 방법 모두, 썸네일의 미리보기가 표시됩니다.
 
-   결과가 만족스럽지 못할 경우 **지우기**&#x200B;를 클릭하거나 탭하여 다른 이미지를 업로드하거나 썸네일을 다시 생성하십시오.
+   만족스럽지 않은 경우 **지우기** 다른 이미지를 업로드하거나 썸네일을 다시 생성합니다.
 
-1. 썸네일이 만족스러우면 **저장 및 닫기**&#x200B;를 클릭하거나 탭합니다.
+1. 썸네일이 만족스러우면 을 클릭합니다. **저장 및 닫기**.
 
 ### 템플릿 활성화 및 허용 - 템플릿 작성자 {#enabling-and-allowing-a-template-template-author}
 
@@ -310,7 +310,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
 * [초기 콘텐츠](#editingatemplateinitialcontent)
 
-  구성 요소 잠금이 해제된 경우 템플릿에서 만든 결과 페이지에 복사할 초기 콘텐츠를 정의할 수 있습니다. 잠금이 해제된 이러한 구성 요소는 결과 페이지에서 편집할 수 있습니다.
+  구성 요소 잠금이 해제된 경우 템플릿에서 만든 결과 페이지에 복사할 초기 컨텐츠 를 정의할 수 있습니다. 잠금이 해제된 이러한 구성 요소는 결과 페이지에서 편집할 수 있습니다.
 
   >[!NOTE]
   >
@@ -413,7 +413,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
   콘텐츠(또는 디자인) 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다.
 
-  구성 요소에 대해 콘텐츠 정책을 만들거나 기존 콘텐츠 정책을 선택합니다. 이를 통해 디자인 세부 사항을 정의할 수 있습니다.
+  구성 요소에 대해 컨텐츠 정책을 만들거나 기존 컨텐츠 정책을 선택합니다. 이를 통해 디자인 세부 사항을 정의할 수 있습니다.
 
   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -463,13 +463,13 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
   예를 들어 이미지 구성 요소의 경우 지연 로드를 활성화하여 허용되는 폭을 정의할 수 있습니다.
 
-  설정이 여러 구성을 허용하는 경우 **추가** 버튼을 클릭하거나 탭하여 다른 구성을 추가합니다.
+  설정이 여러 구성을 허용하는 경우 **추가** 단추를 클릭하여 다른 구성을 추가합니다.
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
-  구성을 제거하려면 구성 오른쪽에 있는 **삭제** 버튼을 클릭하거나 탭합니다.
+  구성을 제거하려면 **삭제** 버튼은 구성 오른쪽에 있습니다.
 
-  구성을 제거하려면 삭제** 버튼** 클릭하거나 탭합니다.
+  구성을 제거하려면 삭제** 단추** 클릭합니다.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -487,7 +487,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
   >[!NOTE]
   >
-  >[리치 텍스트 편집기를 구현하는 구성 요소에 대한 콘텐츠 정책](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)은 RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[리치 텍스트 편집기를 구현하는 구성 요소에 대한 콘텐츠 정책](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) 은 RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **정책 및 속성(레이아웃 컨테이너)**
 
@@ -529,13 +529,13 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
   **기본 구성 요소** 탭에서는 작성자가 자산 브라우저에서 자산을 끌어 오면 AEM에서 연결할 구성 요소를 알 수 있도록, 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의합니다. 놓기 영역이 있는 구성 요소만 이렇게 구성할 수 있습니다.
 
-  완전히 새로운 구성 요소 및 MIME 유형 매핑을 추가하려면 **매핑 추가**&#x200B;를 클릭하거나 탭하십시오.
+  클릭 **매핑 추가** 완전히 새로운 구성 요소 및 MIME 유형 매핑을 추가합니다.
 
-  목록에서 구성 요소를 선택하고 **유형 추가**&#x200B;를 클릭하거나 탭하여 이미 매핑된 구성 요소에 MIME 유형을 추가합니다. MIME 유형을 제거하려면 **삭제** 아이콘을 클릭하십시오.
+  목록에서 구성 요소를 선택하고 **유형 추가** 이미 매핑된 구성 요소에 추가 MIME 유형을 추가하려면 MIME 유형을 제거하려면 **삭제** 아이콘을 클릭하십시오.
 
   ![chlimage_1-145](assets/chlimage_1-145.png)
 
-  *반응형 설정*
+  *응답형 설정*
 
   **반응형 설정** 탭에서 레이아웃 컨테이너의 최종 격자에 포함되는 열 수를 구성할 수 있습니다.
 

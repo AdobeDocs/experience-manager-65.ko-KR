@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3499'
 ht-degree: 2%
 
 ---
@@ -119,7 +119,7 @@ MetaDataMap 개체에는 세 가지 유형이 있습니다. `Workflow`, `Workflo
 >
 >* 이 단계의 편집 대화 상자는 다음과 같은 위치에 제목과 설명을 저장합니다. >
 >* `./jcr:title`
->* `./jcr:description`개 위치
+>* `./jcr:description` 위치
 >
 >  이 요구 사항은 편집 대화 상자에서 `/libs/cq/flow/components/step/step` 구성 요소가 를 구현합니다.
 >
@@ -1042,4 +1042,4 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  에서 아무 것도 수정해서는 안 됩니다. `/libs`를 예로 사용하기만 하면 됩니다. 기존 단계를 사용하려면 다음 위치에 복사합니다. `/apps` 그리고 거기서 수정하세요.
+>  에서 아무것도 편집하지 않음 `/libs`를 예로 사용하기만 하면 됩니다. 기존 단계를 사용하려면 다음 위치에 복사합니다. `/apps` 여기에서 편집하십시오.

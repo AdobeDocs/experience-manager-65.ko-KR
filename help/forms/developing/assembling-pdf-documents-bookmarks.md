@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2519'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ PDF 문서를 어셈블하려면 DDX 문서를 참조해야 합니다. 이 DDX �
 
 **맵 컬렉션에 PDF 문서 및 책갈피 XML 문서 추가**
 
-책갈피를 추가할 PDF 문서와 책갈피 XML 문서를 모두 맵 컬렉션에 추가해야 합니다. 따라서 맵 컬렉션 개체에는 PDF 문서와 책갈피 XML 문서의 두 요소가 포함됩니다.
+책갈피가 추가되는 PDF 문서와 책갈피 XML 문서를 모두 맵 컬렉션에 추가합니다. 따라서 맵 컬렉션 개체에는 PDF 문서와 책갈피 XML 문서의 두 요소가 포함됩니다.
 
 **런타임 옵션 설정**
 
@@ -164,7 +164,7 @@ PDF 문서를 어셈블하려면 DDX 문서를 참조해야 합니다. 이 DDX �
 
 **책갈피가 포함된 PDF 문서 저장**
 
-반환된 맵 개체에서 결과를 추출하고 해당 PDF 문서를 저장해야 합니다. (&quot;결과 추출&quot; 참조) [프로그래밍 방식으로 PDF 문서 어셈블](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+반환된 맵 개체에서 결과를 추출하고 해당 PDF 문서를 저장합니다. (&quot;결과 추출&quot; 참조) [프로그래밍 방식으로 PDF 문서 어셈블](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **추가 참조**
 

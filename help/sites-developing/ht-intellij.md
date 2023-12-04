@@ -8,10 +8,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 3%
+source-wordcount: '639'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +58,7 @@ IntelliJ IDEA는 JSP 작업을 지원할 수도 있습니다. 예를 들면 다�
 1. 를 엽니다. **가져오기** IntelliJ IDEA의 대화 상자
 
    * 선택 **프로젝트 가져오기** 아직 열려 있는 프로젝트가 없는 경우 시작 화면에서 다음을 수행하십시오
-   * 선택 **파일 -> 프로젝트 가져오기** 메인 메뉴에서
+   * 선택 **파일 > 프로젝트 가져오기** 메인 메뉴에서
 
 1. 가져오기 대화 상자에서 프로젝트의 POM 파일을 선택합니다.
 
@@ -86,7 +86,7 @@ IntelliJ IDEA로 JSP를 디버깅하려면 다음 단계가 필요합니다
 
 IntelliJ IDEA는 디버깅을 위해 JSP를 찾을 위치를 이해해야 합니다. IDEA는 `content-package-maven-plugin` 수동으로 구성해야 합니다.
 
-1. 다음으로 이동 **파일 -> 프로젝트 구조**
+1. 다음으로 이동 **파일 > 프로젝트 구조**
 1. 다음 항목 선택 **콘텐츠** 모듈
 1. 클릭 **+** 모듈 목록 위에 있는 을 선택합니다. **웹**
 1. 웹 리소스 디렉토리로 `content/src/main/content/jcr_root subdirectory` 아래 스크린샷에 표시된 대로 프로젝트 내에서 작동합니다.
@@ -97,14 +97,14 @@ IntelliJ IDEA는 디버깅을 위해 JSP를 찾을 위치를 이해해야 합니
 
 1. 로 이동 **플러그인** IntelliJ IDEA 설정의 창
 1. 다음 위치로 이동 **JSR45 통합** 플러그인을 선택하고 옆에 있는 확인란을 선택합니다.
-1. **적용**&#x200B;을 클릭합니다
+1. 클릭 **적용**
 1. 요청하면 IntelliJ IDEA 다시 시작
 
 ![chlimage_1-49](assets/chlimage_1-49a.png)
 
 #### 디버그 프로필 구성 {#configure-a-debug-profile}
 
-1. 다음으로 이동 **실행 -> 구성 편집**
+1. 다음으로 이동 **실행 > 구성 편집**
 1. 다음을 누르세요. **+** 및 선택 **JSR45 원격**
 1. 구성 대화 상자에서 **구성** 다음에 **응용 프로그램 서버** 일반 서버 구성
 1. 디버깅을 시작할 때 브라우저를 열려면 시작 페이지를 적절한 URL로 설정하십시오
@@ -141,7 +141,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 이제 AEM에서 JSP를 디버깅하도록 모두 설정되었습니다.
 
-1. 선택 **실행 -> 디버그 -> 디버그 프로필**
+1. 선택 **실행 > 디버그 > 디버그 프로필**
 1. 구성 요소 코드에서 중단점 설정
 1. 브라우저에서 페이지에 액세스
 

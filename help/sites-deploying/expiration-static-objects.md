@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->객체가 최신 상태로 간주되는 기간을 정의할 때는 주의해야 합니다. 있는 그대로 *지정된 기간이 만료될 때까지 확인 안 함*&#x200B;를 사용하면 클라이언트가 캐시의 이전 콘텐츠를 표시할 수 있습니다.
+>개체가 최신 상태로 간주되는 기간을 정의할 때는 주의하십시오. 있는 그대로 *지정된 기간이 만료될 때까지 확인 안 함*&#x200B;를 사용하면 클라이언트가 캐시의 이전 콘텐츠를 표시할 수 있습니다.
 
 1. **작성자 인스턴스의 경우:**
 

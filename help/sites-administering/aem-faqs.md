@@ -2,10 +2,10 @@
 title: AEM FAQ
 description: 이러한 FAQ를 사용하여 AEM의 일반적인 워크플로 또는 문제를 이해, 구성 및 해결할 수 있습니다.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 1%
+source-wordcount: '1011'
+ht-degree: 0%
 
 ---
 
@@ -88,7 +88,7 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수
 
 #### 언어 사본을 만드는 동안 OOTB 구성에 대한 기본 설정은 무엇입니까? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-Touch UI를 통해 언어 사본을 만들 때(**참조** -> **언어 사본 업데이트**) 새 언어 아래에 새 DAM 폴더가 생성되고 여기에서 에셋이 참조됩니다.
+Touch UI를 통해 언어 사본을 만들 때(**참조** > **언어 사본 업데이트**) 새 언어 아래에 새 DAM 폴더가 생성되고 여기에서 에셋이 참조됩니다.
 
 OOTB 구성의 기본 설정입니다. 다음을 설정할 수 있습니다. **페이지 에셋 번역** = **번역 안 함** 번역 구성에서.
 AEM 6.4의 경우 **도구** > **Cloud Service** > **번역 클라우드 서비스**.

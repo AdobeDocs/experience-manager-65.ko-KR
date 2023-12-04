@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 1%
+source-wordcount: '1759'
+ht-degree: 0%
 
 ---
 
@@ -111,7 +111,7 @@ AEM Communities의 경우 UGC(사용자 생성 컨텐츠)는 복제되지 않습
 
 이 접근 방식은 여러 Oak 인스턴스가 여러 데이터 센터에 걸쳐 MongoDB 복제본 세트에 액세스하는 것을 의미하며, 결과적으로 AEM 작성자 환경에 대한 활성-활성 클러스터를 생성합니다. MongoDB 복제는 여러 데이터 센터를 통해 동일한 고가용성 및 이중화를 제공하지만, 이제는 데이터 센터 가동 중단을 처리할 수 있는 기능도 제공합니다.
 
-![oakclustermongofailover2datacenters](assets/oakclustermongofailover2datacenters.png)
+![oakclustermongofailover2datacenter](assets/oakclustermongofailover2datacenters.png)
 
 장점:
 
@@ -177,7 +177,7 @@ AEM용 MongoMK 배포를 고려하는 경우 사전 요구 사항 및 권장 사
 1. 기존 또는 새로운 MongoDB 환경을 유지 및 유지할 수 있다는 자신감을 갖도록 파트너 또는 고객 팀 내에 MongoDB 전문 지식이 있어야 합니다.
 1. MongoDB의 상용 또는 오픈 소스 버전을 배포하도록 선택할 수 있지만(AEM은 두 버전 모두 지원), MongoDB 유지 관리 및 지원 계약은 MongoDB Inc.에서 직접 구매해야 합니다.
 1. 전체 AEM 및 MongoDB 아키텍처와 인프라는 Adobe AEM Architect가 잘 정의하고 검증해야 합니다.
-1. MongoDB가 포함된 AEM 배포에 대한 지원 모델을 검토해야 합니다.
+1. MongoDB가 포함된 AEM 배포에 대한 지원 모델을 검토하십시오.
 
 **MongoDB 배포에 대한 강력한 권장 사항:**
 

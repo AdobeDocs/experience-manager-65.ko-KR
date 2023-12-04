@@ -1,5 +1,5 @@
 ---
-title: SPA 및 Adobe Experience Platform Launch 통합
+title: SPA과 Adobe Experience Platform Launch 통합
 description: Adobe Experience Platform Launch은 SPA 내에서 Analytics, Target 및 Audience Manager을 구현하는 권장 방법입니다.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,14 +7,14 @@ content-type: reference
 topic-tags: spa
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 11%
+source-wordcount: '183'
+ht-degree: 1%
 
 ---
 
-# SPA 및 Adobe Experience Platform Launch 통합{#spa-and-adobe-experience-platform-launch-integration}
+# SPA과 Adobe Experience Platform Launch 통합{#spa-and-adobe-experience-platform-launch-integration}
 
 Adobe Experience Platform Launch은 단일 페이지 애플리케이션(SPA) 내에서 Analytics, Target 및 Audience Manager을 구현하는 권장 방법입니다.
 

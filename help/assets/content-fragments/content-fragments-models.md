@@ -4,10 +4,10 @@ description: 콘텐츠 조각 모델이 AEM에서 Headless 콘텐츠의 기반 �
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 74%
+source-wordcount: '2310'
+ht-degree: 73%
 
 ---
 
@@ -18,8 +18,8 @@ AEM의 콘텐츠 조각 모델은 의 콘텐츠 구조를 정의합니다. [콘�
 콘텐츠 조각 모델을 사용하려면 다음 작업을 수행할 수 있습니다.
 
 1. [인스턴스에 대해 콘텐츠 조각 모델 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-1. 콘텐츠 조각 모델 [생성](#creating-a-content-fragment-model) 및 [구성.](#defining-your-content-fragment-model)
-1. 콘텐츠 조각 생성 시 사용할 [콘텐츠 조각 모델 활성화.](#enabling-disabling-a-content-fragment-model)
+1. [만들기](#creating-a-content-fragment-model), 및 [구성](#defining-your-content-fragment-model), 콘텐츠 조각 모델
+1. [콘텐츠 조각 모델 활성화](#enabling-disabling-a-content-fragment-model) 콘텐츠 조각 생성 시 사용됩니다.
 1. **정책**&#x200B;을 구성하여 [필요한 자산 폴더에서 콘텐츠 조각 모델 허용](#allowing-content-fragment-models-assets-folder)
 
 ## 콘텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
@@ -86,7 +86,7 @@ AEM의 콘텐츠 조각 모델은 의 콘텐츠 구조를 정의합니다. [콘�
 
 1. **필드를 제거하려면**
 
-   필요한 필드를 선택한 후 휴지통 아이콘을 클릭/탭합니다. 작업을 확인하는 메시지가 표시됩니다.
+   필요한 필드를 선택한 다음 휴지통 아이콘을 클릭합니다. 작업을 확인하는 메시지가 표시됩니다.
 
    ![제거](assets/cfm-models-06.png)
 
@@ -341,7 +341,7 @@ type CompanyModel {
    * 해당 모델을 기반으로 하는 모든 콘텐츠 조각은 여전히 GraphQL 엔드포인트에서 쿼리하고 반환할 수 있습니다.
 * 해당 모델은 더 이상 참조할 수 없지만 기존 참조는 그대로 유지되므로 GraphQL 엔드포인트에서 쿼리하고 반환할 수 있습니다.
 
-**활성화됨**&#x200B;으로 플래그가 지정된 모델을 비활성화하려면, 다음 중 하나에서 **비활성화** 옵션을 사용합니다.
+**활성화됨**&#x200B;으로 플래그가 지정된 모델을 비활성화하려면 다음 중 하나에서 **비활성화** 옵션을 사용합니다.
 
 * (필요한 모델이 선택되어 있는 경우) 상단 도구 모음
 * 해당 빠른 작업(필요한 모델 위에 마우스 놓기)
@@ -400,7 +400,7 @@ type CompanyModel {
 
    >[!NOTE]
    >
-   >모델을 참조하면 경고가 표시됩니다. 적절한 조치를 취하십시오.
+   >참조되는 모델의 경우, 경고가 표시됩니다. 적절한 조치를 취하십시오.
 
 ## 콘텐츠 조각 모델 게시 {#publishing-a-content-fragment-model}
 

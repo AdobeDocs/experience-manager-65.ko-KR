@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '6945'
+source-wordcount: '6922'
 ht-degree: 0%
 
 ---
@@ -553,7 +553,7 @@ AEM과 높은 수준의 솔루션 설계 모두에 대한 타당성 조사 결�
 
 ### 과거 성과 및 과거 성과 KPI {#historical-performance-and-historical-performance-kpis}
 
-기존 시스템에서 성능 통계와 성능 KPI를 수집하고 문서화해야 합니다. 그런 다음 참조점으로 사용하여 새 솔루션을 벤치마킹합니다.
+기존 시스템에서 성능 통계 및 성능 KPI를 수집하고 문서화합니다. 그런 다음 참조점으로 사용하여 새 솔루션을 벤치마킹합니다.
 
 ### 주요 솔루션/기능 파악 {#identify-critical-key-solutions-functionalities}
 
@@ -1045,7 +1045,7 @@ Go-Live에 필요한 모든 역할을 담당하며 사용할 수 있는지 확�
 * 프레임워크 지침
 * API 사용
 
-### Security 검사 목록 {#security-checklist}
+### 보안 검사 목록 {#security-checklist}
 
 솔루션 준수를 보장하는 데 필요한 추가 정책과 보안 개념을 기반으로 하는 프로젝트별 항목 체크리스트입니다.
 

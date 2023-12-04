@@ -8,10 +8,10 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 2%
+source-wordcount: '984'
+ht-degree: 5%
 
 ---
 
@@ -56,12 +56,12 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
 혼합 미디어를 포함하는 콘텐츠 조각을 번역하려면 먼저 기본 번역 프레임워크를 편집하여 콘텐츠 조각과 연결된 인라인 에셋 및 컬렉션의 번역을 활성화하십시오.
 
-1. AEM 로고를 클릭/탭하고 다음으로 이동 **[!UICONTROL 도구 > 배포 > Cloud Service]**.
-1. 찾기 **[!UICONTROL 번역 통합]** 아래에 **[!UICONTROL Adobe Marketing Cloud]**&#x200B;및 클릭/탭 **[!UICONTROL 구성 표시]**.
+1. AEM 로고를 클릭하고 다음으로 이동 **[!UICONTROL 도구 > 배포 > Cloud Service]**.
+1. 찾기 **[!UICONTROL 번역 통합]** 아래에 **[!UICONTROL Adobe Marketing Cloud]**, 및 클릭 **[!UICONTROL 구성 표시]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. 사용 가능한 구성 목록에서 을 클릭/탭합니다 **[!UICONTROL 기본 구성(번역 통합 구성)]** 을(를) 열려면 **[!UICONTROL 기본 구성]** 페이지를 가리키도록 업데이트하는 중입니다.
+1. 사용 가능한 구성 목록에서 **[!UICONTROL 기본 구성(번역 통합 구성)]** 을(를) 열려면 **[!UICONTROL 기본 구성]** 페이지를 가리키도록 업데이트하는 중입니다.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -69,7 +69,7 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. 다음 위치로 이동 **[!UICONTROL 에셋]** 탭, 선택 **[!UICONTROL 인라인 미디어 자산 및 관련 컬렉션]** 다음에서 **[!UICONTROL 콘텐츠 조각 에셋 번역]** 목록을 표시합니다. 클릭/탭 **[!UICONTROL 확인]** 변경 내용을 저장합니다.
+1. 다음 위치로 이동 **[!UICONTROL 에셋]** 탭, 선택 **[!UICONTROL 인라인 미디어 자산 및 관련 컬렉션]** 다음에서 **[!UICONTROL 콘텐츠 조각 에셋 번역]** 목록을 표시합니다. 클릭 **[!UICONTROL 확인]** 변경 내용을 저장합니다.
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -77,7 +77,7 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. 클릭/탭 **[!UICONTROL 자산 삽입]** 아이콘.
+1. 다음을 클릭합니다. **[!UICONTROL 자산 삽입]** 아이콘.
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -85,15 +85,15 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
    ![콘텐츠 조각에 에셋 삽입](assets/column-view.png)
 
-1. 클릭/탭 **[!UICONTROL 콘텐츠 연결]** 아이콘.
+1. 다음을 클릭합니다. **[!UICONTROL 콘텐츠 연결]** 아이콘.
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. 클릭/탭 **[!UICONTROL 콘텐츠 연결]**.
+1. 클릭 **[!UICONTROL 콘텐츠 연결]**.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
-1. 컬렉션을 선택하고 컨텐츠 조각에 포함합니다. 클릭/탭 **[!UICONTROL 저장]**.
+1. 컬렉션을 선택하고 컨텐츠 조각에 포함합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
@@ -102,11 +102,11 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. 클릭/탭 **[!UICONTROL 언어 복사]** 아래에 **[!UICONTROL 사본]** 언어 사본을 표시합니다.
+1. 클릭 **[!UICONTROL 언어 복사]** 아래에 **[!UICONTROL 사본]** 언어 사본을 표시합니다.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. 클릭/탭 **[!UICONTROL 만들기 및 번역]** 패널 하단에서 을 표시하여 **[!UICONTROL 만들기 및 번역]** 대화 상자.
+1. 클릭 **[!UICONTROL 만들기 및 번역]** 패널 하단에서 을 표시하여 **[!UICONTROL 만들기 및 번역]** 대화 상자.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -118,7 +118,7 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
    ![chlimage_1-458](assets/chlimage_1-458.png)
 
-1. 에서 프로젝트의 제목을 지정합니다. **[!UICONTROL 프로젝트 제목]** 상자를 클릭한 다음 클릭/탭 **만들기**.
+1. 에서 프로젝트의 제목을 지정합니다. **[!UICONTROL 프로젝트 제목]** 상자를 클릭한 다음 **만들기**.
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
@@ -126,7 +126,7 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
-1. 프로젝트 타일을 클릭/탭하여 프로젝트 세부 정보 페이지를 엽니다.
+1. 프로젝트 타일을 클릭하여 프로젝트 세부 정보 페이지를 엽니다.
 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
@@ -139,7 +139,7 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
    ![chlimage_1-463](assets/chlimage_1-463.png)
 
-1. 콘텐츠 조각을 클릭/탭하여 번역된 관련 에셋의 경로를 확인합니다.
+1. 콘텐츠 조각을 클릭하여 번역된 관련 에셋의 경로를 확인합니다.
 
    ![chlimage_1-464](assets/chlimage_1-464.png)
 

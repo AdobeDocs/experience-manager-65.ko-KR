@@ -1,5 +1,5 @@
 ---
-title: 워크플로우 우수 사례
+title: 워크플로우 모범 사례
 seo-title: Workflow Best Practices
 description: Adobe Experience Manager에서 워크플로우 작업에 대한 모범 사례를 알아봅니다.
 seo-description: null
@@ -10,14 +10,14 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1925'
 ht-degree: 1%
 
 ---
 
-# 워크플로우 우수 사례{#workflow-best-practices}
+# 워크플로우 모범 사례{#workflow-best-practices}
 
 워크플로를 사용하면 Adobe Experience Manager(AEM) 활동을 자동화할 수 있습니다.
 
@@ -297,7 +297,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 다음을 정의할 수 있습니다. [워크플로 단계](/help/sites-developing/workflows.md#workflow-stages)을 클릭한 다음 작업/단계를 특정 워크플로 단계에 할당합니다.
 
-이 정보는 워크플로우의 진행률을 표시하는 데 사용됩니다. [**워크플로 정보** 에서 작업 항목 탭 **받은 편지함**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). 기존 워크플로 모델을 편집하여 단계를 추가할 수 있습니다.
+이 정보는 다음을 클릭할 때 워크플로우의 진행률을 표시하는 데 사용됩니다. [**워크플로 정보** 에서 작업 항목 탭 **받은 편지함**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). 기존 워크플로 모델을 편집하여 단계를 추가할 수 있습니다.
 
 ### 페이지 활성화 프로세스 단계 {#activate-page-process-step}
 

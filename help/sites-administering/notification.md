@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2067'
-ht-degree: 12%
+source-wordcount: '2037'
+ht-degree: 9%
 
 ---
 
@@ -287,7 +287,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 먼저 메일 서비스를 구성합니다.
 
 1. 로 이동하여 AEM 웹 콘솔 열기 `http://serveraddress:serverport/system/console/configMgr`
-1. 을 찾은 다음 을(를) 클릭합니다. **일별 CQ 메일 서비스**
+1. 를 찾은 다음 를 클릭합니다. **일별 CQ 메일 서비스**
 1. 다음 설정을 추가합니다.
    * SMTP 서버 호스트 이름: `smtp.gmail.com`
    * SMTP 서버 포트: `25` 또는 `587`, 요구 사항에 따라
@@ -297,7 +297,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 그런 다음 아래 절차에 따라 SMTP OAuth 공급자를 구성합니다.
 
 1. 로 이동하여 AEM 웹 콘솔 열기 `http://serveraddress:serverport/system/console/configMgr`
-1. 을 찾은 다음 을(를) 클릭합니다. **CQ Mailer SMTP OAuth2 공급자**
+1. 를 찾은 다음 를 클릭합니다. **CQ Mailer SMTP OAuth2 공급자**
 1. 다음과 같이 필요한 정보를 입력합니다.
    * 인증 URL: `https://accounts.google.com/o/oauth2/auth`
    * 토큰 URL: `https://accounts.google.com/o/oauth2/token`
@@ -336,12 +336,12 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 ### Microsoft Outlook {#microsoft-outlook}
 
 1. [https://portal.azure.com/](https://portal.azure.com/)으로 이동한 다음 로그인합니다.
-1. 검색창에서 **Azure Active Directory**&#x200B;를 검색한 다음 결과를 클릭합니다. 또는 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)에서 바로 검색할 수 있습니다.
+1. 검색창에서 **Azure Active Directory**&#x200B;를 검색한 다음, 결과를 클릭합니다. 또는 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)에서 바로 검색할 수 있습니다.
 1. **앱 등록** - **신규 등록**&#x200B;을 클릭합니다.
 
    ![Microsoft Outlook 구성 시 새 등록 버튼](assets/oauth-outlook1.png)
 
-1. 요구 사항에 따라 정보를 입력한 다음 **등록**&#x200B;을 클릭합니다.
+1. 요구 사항에 따라 정보를 입력한 다음 **등록**
 1. 새로 생성된 앱으로 이동하여 **API 권한**&#x200B;을 선택합니다.
 1. **권한 추가** - **그래프 권한** - **위임된 권한**&#x200B;으로 이동합니다.
 1. 아래의 앱에 대한 권한을 선택한 다음 **권한 추가**&#x200B;를 클릭합니다.
@@ -354,7 +354,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
    * `http://localhost:4503/services/mailer/oauth2/token`
 1. 각 게시 인스턴스에 대해 위의 내용을 반복합니다
 1. 요구 사항에 따라 설정 구성
-1. 그런 다음 **증명서 및 보안**&#x200B;으로 이동하고 **신규 클라이언트 보안**&#x200B;을 클릭한 후 화면에 표시되는 단계에 따라 보안을 생성합니다. 나중에 사용할 수 있도록 이러한 보안 내용을 메모해 두십시오.
+1. 다음으로 이동 **인증서 및 암호**, 클릭 **새 클라이언트 암호** 화면에 표시되는 단계에 따라 암호를 만드십시오. 나중에 사용할 수 있도록 이러한 보안 내용을 메모해 두십시오.
 1. 왼쪽 창에서 **개요**&#x200B;를 누르고 나중에 사용할 수 있도록 **애플리케이션(클라이언트) ID** 및 **디렉터리(테넌트) ID**&#x200B;의 값을 복사합니다.
 
 재점검하려면 AEM 측의 Mailer 서비스에 대한 OAuth2 구성에 대한 다음 정보가 있어야 합니다.
@@ -370,7 +370,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 다음으로 OAuth2 설정을 AEM과 통합합니다.
 
 1. 을 찾아 로컬 인스턴스의 웹 콘솔로 이동합니다. `http://serveraddress:serverport/system/console/configMgr`
-1. 을(를) 찾고 을(를) 클릭합니다 **일별 CQ 메일 서비스**
+1. 을(를) 찾아 클릭 **일별 CQ 메일 서비스**
 1. 다음 설정을 추가합니다.
    * SMTP 서버 호스트 이름: `smtp.office365.com`
    * SMTP 사용자: 이메일 형식의 사용자 이름
@@ -378,7 +378,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
    * SMTP 서버 포트: `25` 또는 `587` 요구 사항에 따라
    * 다음에 대한 확인란을 선택합니다. **SMPT StarTLS 사용** 및 **SMTP에 StarTLS 필요**
    * 확인 **OAuth 흐름** 및 클릭 **저장**.
-1. 을 찾은 다음 을(를) 클릭합니다. **CQ Mailer SMTP OAuth2 공급자**
+1. 를 찾은 다음 를 클릭합니다. **CQ Mailer SMTP OAuth2 공급자**
 1. 다음과 같이 필요한 정보를 입력합니다.
    * 에 설명된 대로 구성하여 인증 URL, 토큰 URL 및 새로 고침 토큰 URL을 입력합니다. [이 절차의 종료](#microsoft-outlook)
    * 클라이언트 ID 및 클라이언트 암호: 위에서 설명한 대로 검색한 값으로 이러한 필드를 구성합니다.

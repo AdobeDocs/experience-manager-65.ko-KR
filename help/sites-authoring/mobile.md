@@ -8,29 +8,29 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
 exl-id: 9c6c6386-5ffd-4fa6-9aa1-f5b0e31d1046
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 46%
+ht-degree: 63%
 
 ---
 
 # 모바일 디바이스용 페이지 작성{#authoring-a-page-for-mobile-devices}
 
-모바일 페이지를 작성할 때는 모바일 디바이스를 에뮬레이션하는 방식으로 페이지가 표시됩니다. 페이지 작성 시 여러 에뮬레이터 간을 전환하여 최종 사용자가 페이지에 액세스할 때 표시되는 내용을 확인할 수 있습니다.
+모바일 페이지를 작성할 때는 모바일 디바이스를 에뮬레이션하는 방식으로 페이지가 표시됩니다. 페이지를 작성할 때에는 몇 개의 에뮬레이터 간을 전환하여 페이지에 액세스할 때 최종 사용자에게 표시되는 내용을 확인할 수 있습니다.
 
 디바이스는 페이지를 렌더링할 디바이스의 기능에 따라 카테고리 기능, 스마트와 터치로 그룹화됩니다. 최종 사용자가 모바일 페이지에 액세스하면 AEM이 디바이스를 감지하여 디바이스 그룹에 해당하는 표현 데이터를 전송합니다.
 
 >[!NOTE]
 >
->기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 라이브 카피를 만듭니다. (참조: [다른 채널을 위한 라이브 카피 만들기](/help/sites-administering/msm-livecopy.md).)
+>기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. (참조: [다른 채널을 위한 라이브 카피 만들기](/help/sites-administering/msm-livecopy.md).)
 >
 >AEM 개발자는 새 디바이스 그룹을 만들 수 있습니다. (참조: [장치 그룹 필터 만들기](/help/sites-developing/groupfilters.md).)
 
 다음 절차를 사용하여 모바일 페이지를 작성하십시오.
 
 1. 전역 탐색에서 **Sites** 콘솔을 엽니다.
-1. 페이지 열기 **We.Retail** -> **미국** -> **영어**.
+1. 페이지 열기 **We.Retail** > **미국** > **영어**.
 
 1. 다음으로 전환 **미리 보기** 모드.
 1. 페이지 맨 위에서 장치 아이콘을 클릭하여 원하는 에뮬레이터로 전환합니다.

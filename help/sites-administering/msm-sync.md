@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 38%
+source-wordcount: '2672'
+ht-degree: 27%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 38%
 
 ### 설치된 롤아웃 구성 {#installed-rollout-configurations}
 
-다음 표에는 AEM과 함께 설치된 롤아웃 구성이 나열되어 있습니다. 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다. 설치된 롤아웃 구성 작업이 요구 사항을 충족하지 않는 경우 다음을 수행할 수 있습니다. [롤아웃 구성 만들기](#creating-a-rollout-configuration).
+다음 표에는 AEM과 함께 설치된 롤아웃 구성이 나열되어 있습니다. 이 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다. 설치된 롤아웃 구성 작업이 요구 사항을 충족하지 않는 경우 다음을 수행할 수 있습니다. [롤아웃 구성 만들기](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -64,7 +64,7 @@ ht-degree: 38%
   </tr>
   <tr>
    <td>표준 롤아웃 구성</td>
-   <td>롤아웃 트리거 시 롤아웃 프로세스를 시작할 수 있도록 하고 작업을 실행(콘텐츠 생성, 업데이트, 삭제 및 하위 노드 순서 지정)하는 표준 롤아웃 구성.</td>
+   <td>롤아웃 트리거 및 실행 작업에 대한 롤아웃 프로세스를 시작할 수 있는 표준 롤아웃 구성: 컨텐츠를 생성, 업데이트, 삭제하고 하위 노드의 순서를 지정합니다.</td>
    <td>롤아웃 시</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> 하위 주문</td>
   </tr>
@@ -118,7 +118,7 @@ ht-degree: 38%
   </tr>
   <tr>
    <td>레거시(5.6.0) 카탈로그 롤아웃 구성</td>
-   <td>더 이상 사용되지 않습니다. 카탈로그 롤아웃에 MSM 대신 Catalog Generator를 사용하십시오.</td>
+   <td>사용하지 않음. 카탈로그 롤아웃에 MSM 대신 Catalog Generator를 사용하십시오.</td>
    <td>롤아웃 시</td>
    <td>editProperties</td>
   </tr>
@@ -127,7 +127,7 @@ ht-degree: 38%
 
 ### 설치된 동기화 작업 {#installed-synchronization-actions}
 
-다음 표에는 AEM과 함께 설치되는 동기화 작업이 나열되어 있습니다. 설치된 작업이 요구 사항을 충족하지 않는 경우 [새 동기화 작업을 만들 수 있습니다](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
+다음 표에는 AEM과 함께 설치되는 동기화 작업이 나열되어 있습니다. 설치된 작업이 요구 사항을 충족하지 않는 경우 다음을 수행할 수 있습니다 [새 동기화 작업 만들기](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
 
 <table>
  <tbody>
@@ -138,17 +138,17 @@ ht-degree: 38%
   </tr>
   <tr>
    <td>contentCopy</td>
-   <td>라이브 카피에 소스 노드가 없는 경우 는 노드를 라이브 카피로 복사합니다. <a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 콘텐츠 복사 작업 서비스</a>를 구성하여 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. <br /> </td>
+   <td>라이브 카피에 소스 노드가 없는 경우 는 노드를 라이브 카피로 복사합니다. <a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 콘텐츠 복사 작업 서비스 구성</a> 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. <br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentDelete</td>
-   <td><p>소스에 존재하지 않는 라이브 카피의 노드를 삭제합니다. <a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 콘텐츠 삭제 작업 서비스</a>를 구성하여 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. </p> </td>
+   <td><p>소스에 존재하지 않는 라이브 카피의 노드를 삭제합니다. <a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 콘텐츠 삭제 작업 서비스 구성</a> 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. </p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentUpdate</td>
-   <td>소스의 변경 내용으로 라이브 카피 콘텐츠를 업데이트합니다. <a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 콘텐츠 업데이트 작업 서비스</a>를 구성하여 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. <br /> </td>
+   <td>소스의 변경 내용으로 라이브 카피 콘텐츠를 업데이트합니다. <a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 콘텐츠 업데이트 작업 서비스 구성</a> 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. <br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -172,7 +172,7 @@ ht-degree: 38%
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>라이브 카피에서 이 동기화 작업은 링크 등의 참조를 업데이트합니다.<br /> 라이브 카피에서 블루프린트 내 리소스를 나타내는 경로를 검색합니다. 경로를 찾으면 라이브 카피(블루프린트 대신) 내의 관련 리소스를 나타내는 경로를 업데이트합니다. 대상이 블루프린트 외부에 있는 참조는 변경되지 않습니다.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 참조 업데이트 작업 서비스</a>를 구성하여 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. </p> </td>
+   <td><p>라이브 카피에서 이 동기화 작업은 링크 등의 참조를 업데이트합니다.<br /> 라이브 카피에서 블루프린트 내 리소스를 나타내는 경로를 검색합니다. 경로를 찾으면 라이브 카피(블루프린트 대신) 내의 관련 리소스를 나타내는 경로를 업데이트합니다. 대상이 블루프린트 외부에 있는 참조는 변경되지 않습니다.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 참조 업데이트 작업 서비스 구성</a> 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -226,7 +226,7 @@ ht-degree: 38%
   </tr>
   <tr>
    <td>PageMoveAction</td>
-   <td><p>PageMoveAction은 페이지가 블루프린트에서 이동된 경우 적용됩니다.</p> <p>이 작업은 (관련) 라이브 카피 페이지를 한 위치에서 다른 위치로 이동하지 않고 복사합니다.</p> <p>PageMoveAction은 이동 전 위치에서 라이브 카피 페이지를 변경하지 않습니다. 따라서 연속된 RolloutConfigurations의 경우 블루프린트가 없는 LiveRelationship 상태가 됩니다.</p> <p>제외할 노드 유형, 단락 항목 및 페이지 속성을 지정하도록 <a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 페이지 이동 작업 서비스를 구성</a>합니다. </p> <p>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다.</p> </td>
+   <td><p>PageMoveAction은 페이지가 블루프린트에서 이동된 경우 적용됩니다.</p> <p>이 작업은 (관련) 라이브 카피 페이지를 한 위치에서 다른 위치로 이동하지 않고 복사합니다.</p> <p>PageMoveAction은 이동 전 위치에서 라이브 카피 페이지를 변경하지 않습니다. 따라서 연속된 RolloutConfigurations의 경우 블루프린트가 없는 LiveRelationship 상태가 됩니다.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 페이지 이동 작업 서비스 구성</a> 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. </p> <p>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다.</p> </td>
    <td><p>prop_referenceUpdate: (부울) 참조를 업데이트하려면 true로 설정합니다. 기본값은 true입니다.</p> <p> </p> </td>
   </tr>
   <tr>
@@ -261,7 +261,7 @@ ht-degree: 38%
 다음을 수행할 수 있습니다. [롤아웃 구성 만들기](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) 설치된 롤아웃 구성이 애플리케이션 요구 사항을 충족하지 않는 경우:
 
 * [롤아웃 구성을 만듭니다](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
-* [롤아웃 구성에 동기화 작업을 추가합니다](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
+* [롤아웃 구성에 동기화 작업 추가](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
 
 새 롤아웃 구성을 만들었다면 블루프린트 또는 Live Copy 페이지에서 롤아웃 구성을 설정할 때 사용할 수 있습니다.
 
@@ -394,7 +394,7 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 
    ![선택한 롤아웃 구성](assets/chlimage_1-2.png)
 
-1. **저장**&#x200B;을 클릭하거나 탭합니다.
+1. **저장**&#x200B;을 클릭합니다.
 
 ### 블루프린트 페이지에 대한 롤아웃 구성 설정 {#setting-the-rollout-configuration-for-a-blueprint-page}
 
@@ -417,7 +417,7 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 
 다음 중 하나를 사용하여 서비스를 구성합니다. [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소 노드](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
-* 웹 콘솔의 경우 구성할 속성의 이름은 기본 롤아웃 구성입니다.
+* 웹 콘솔에서 구성할 속성의 이름은 기본 롤아웃 구성입니다.
 * 저장소 노드를 사용하는 경우 구성할 속성의 이름은 `liverelationshipmgr.relationsconfig.default`입니다.
 
 시스템 기본값으로 사용할 롤아웃 구성 경로로 이 속성 값을 설정합니다. 기본값은 **표준 롤아웃 구성**&#x200B;인 `/libs/msm/wcm/rolloutconfigs/default`입니다.

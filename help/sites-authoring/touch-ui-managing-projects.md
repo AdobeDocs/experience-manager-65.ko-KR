@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 22%
+source-wordcount: '964'
+ht-degree: 18%
 
 ---
 
@@ -34,8 +34,8 @@ ht-degree: 22%
 
 다음 단계에 따라 프로젝트를 만듭니다.
 
-1. 다음에서 **프로젝트** 콘솔, 탭 또는 클릭 **만들기** 을(를) 열려면 **프로젝트 만들기** 마법사.
-1. 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다. 표준 프로젝트 템플릿에 대해 자세히 알아볼 수 있습니다 [여기.](/help/sites-authoring/projects.md#project-templates)
+1. 다음에서 **프로젝트** 콘솔, 클릭 **만들기** 을(를) 열려면 **프로젝트 만들기** 마법사.
+1. 템플릿을 선택하고 **다음**. 표준 프로젝트 템플릿에 대해 자세히 알아볼 수 있습니다 [여기.](/help/sites-authoring/projects.md#project-templates)
 
    ![프로젝트 만들기 마법사](assets/create-project-wizard.png)
 
@@ -43,7 +43,7 @@ ht-degree: 22%
 
    ![마법사의 속성 단계](assets/create-project-wizard-properties.png)
 
-1. **만들기**&#x200B;를 탭/클릭합니다. 새 프로젝트를 열거나 콘솔로 돌아갈 것인지를 묻는 확인 메시지가 표시됩니다.
+1. **만들기**&#x200B;를 클릭합니다. 새 프로젝트를 열거나 콘솔로 돌아갈 것인지를 묻는 확인 메시지가 표시됩니다.
 
 프로젝트를 만드는 절차는 모든 프로젝트 템플릿에 대해 동일합니다. 프로젝트 유형 간의 차이는 사용 가능한 것과 관련이 있습니다 [사용자 역할](/help/sites-authoring/projects.md) 및 [워크플로.](/help/sites-authoring/projects-with-workflows.md)
 
@@ -54,11 +54,11 @@ ht-degree: 22%
 리소스를 프로젝트와 연결하려면 다음 작업을 수행하십시오.
 
 1. **프로젝트** 콘솔에서 프로젝트를 엽니다.
-1. **타일 추가**&#x200B;를 탭/클릭하고 프로젝트에 연결할 타일을 선택합니다. 여러 유형의 타일을 선택할 수 있습니다.
+1. 클릭 **타일 추가** 프로젝트에 연결할 타일을 선택합니다. 여러 유형의 타일을 선택할 수 있습니다.
 
    ![타일 추가](assets/project-add-tile.png)
 
-1. **만들기**&#x200B;를 탭/클릭합니다. 리소스는 프로젝트에 연결되며, 이제부터 프로젝트에서 이 리소스에 액세스할 수 있습니다.
+1. **만들기**&#x200B;를 클릭합니다. 리소스는 프로젝트에 연결되며, 이제부터 프로젝트에서 이 리소스에 액세스할 수 있습니다.
 
 ### 타일에 항목 추가 {#adding-items-to-a-tile}
 
@@ -72,7 +72,7 @@ ht-degree: 22%
 
    ![타일 V자형 화살표](assets/project-tile-create-task.png)
 
-1. 타일을 만들 때처럼 타일에 항목을 추가합니다. 프로젝트 타일은 [여기](/help/sites-authoring/projects.md#project-tiles)에 설명됩니다.
+1. 타일을 만들 때처럼 타일에 항목을 추가합니다. 프로젝트 타일에 대해 설명합니다. [여기.](/help/sites-authoring/projects.md#project-tiles)
 
 ## 프로젝트 정보 보기 {#viewing-project-info}
 
@@ -84,7 +84,7 @@ ht-degree: 22%
 
 항목을 보거나 수정할 수 있도록 타일을 열려면 다음 작업을 수행하십시오.
 
-1. 타일의 오른쪽 하단에 있는 줄임표 아이콘을 탭하거나 클릭합니다.
+1. 타일의 오른쪽 하단에 있는 줄임표 아이콘을 클릭합니다.
 
    ![작업 타일](assets/project-tile-tasks.png)
 
@@ -96,7 +96,7 @@ ht-degree: 22%
 
 프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 다음 단계를 따르십시오.
 
-1. 다음에서 **프로젝트** 콘솔, 클릭 또는 탭 **타임라인** 을 클릭합니다.
+1. 다음에서 **프로젝트** 콘솔, 클릭 **타임라인** 을 클릭합니다.
    ![타임라인 모드 선택](assets/projects-timeline-rail.png)
 2. 콘솔에서 타임라인을 보려는 프로젝트를 선택합니다.
    ![프로젝트 타임라인 보기](assets/project-timeline-view.png)
@@ -119,7 +119,7 @@ ht-degree: 22%
 
 에서 폴더를 만들 수 있습니다. **프로젝트** 콘솔을 사용하여 유사한 프로젝트를 그룹화하고 구성할 수 있습니다.
 
-1. 다음에서 **프로젝트** 콘솔 탭 또는 클릭 **만들기** 그런 다음 **폴더 만들기**.
+1. 다음에서 **프로젝트** 콘솔 클릭 **만들기** 그런 다음 **폴더 만들기**.
 
    ![폴더 만들기](assets/project-create-folder.png)
 
@@ -141,7 +141,7 @@ ht-degree: 22%
 
    ![속성 창의 프로젝트 상태 선택기](assets/project-status.png)
 
-1. 탭 또는 클릭 **저장 및 닫기** 변경 사항을 저장합니다.
+1. 클릭 **저장 및 닫기** 변경 사항을 저장합니다.
 
 ### 프로젝트 삭제 {#deleting-a-project}
 
@@ -149,13 +149,13 @@ ht-degree: 22%
 
 1. 의 최상위 수준으로 이동합니다. **프로젝트** 콘솔.
 1. 콘솔에서 프로젝트 선택.
-1. 탭 또는 클릭 **삭제** 을 클릭합니다.
+1. 클릭 **삭제** 을 클릭합니다.
 1. AEM은 프로젝트 삭제 시 연결된 프로젝트 데이터를 제거/수정할 수 있습니다. 에서 필요한 옵션 선택 **프로젝트 삭제** 대화 상자.
    * 프로젝트 그룹 및 역할 제거
    * 프로젝트 자산 폴더 삭제
    * 프로젝트 워크플로우 종료
 
    ![프로젝트 삭제 옵션](assets/project-delete-options.png)
-1. 탭 또는 클릭 **삭제** 옵션을 선택한 상태로 프로젝트를 삭제합니다.
+1. 클릭 **삭제** 옵션을 선택한 상태로 프로젝트를 삭제합니다.
 
 프로젝트에서 자동으로 생성된 그룹에 대한 자세한 내용은 [자동 그룹 만들기](/help/sites-authoring/projects.md#auto-group-creation) 을 참조하십시오.

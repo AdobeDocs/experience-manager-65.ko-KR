@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1515'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ GDS 위치를 백업해야 하는 빈도는 AEM Forms 사용 방법과 사용 �
 
 ## 데이터베이스, GDS, AEM 저장소 및 Content Storage Root 디렉터리 백업 {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
-AEM Forms을 안전 백업(스냅샷) 모드 또는 롤링 백업(연속 적용 범위) 모드로 설정해야 합니다. AEM Forms에서 백업 모드 중 하나를 시작하도록 설정하기 전에 다음을 확인하십시오.
+AEM Forms을 안전 백업(스냅샷) 모드 또는 롤링 백업(연속 적용 범위) 모드로 전환합니다. AEM Forms에서 백업 모드 중 하나를 시작하도록 설정하기 전에 다음을 확인하십시오.
 
 * 시스템 버전을 확인하고 마지막으로 전체 시스템 이미지 백업이 수행된 이후 적용된 패치 또는 업데이트를 기록합니다.
 * 롤링 또는 스냅샷 모드 백업을 사용하는 경우 데이터베이스의 핫 백업을 허용하는 올바른 로그 설정으로 데이터베이스가 구성되어 있는지 확인하십시오. (참조: [AEM Forms 데이터베이스](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)

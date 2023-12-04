@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2319'
-ht-degree: 2%
+source-wordcount: '2320'
+ht-degree: 1%
 
 ---
 
@@ -160,7 +160,7 @@ Translator 도구와 관리하는 사전은 구성 요소 UI를 다양한 언어
 다음 절차에 따라 사전에서 문자열을 제거합니다.
 
 1. 사전 드롭다운 메뉴에서 문자열을 제거할 사전을 선택합니다.
-1. 제거를 클릭합니다.
+1. 제거 를 클릭합니다.
 
    ![chlimage_1-213](assets/chlimage_1-213.png)
 

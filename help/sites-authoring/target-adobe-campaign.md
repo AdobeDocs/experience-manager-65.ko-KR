@@ -6,14 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '801'
 ht-degree: 1%
 
 ---
 
-# Adobe Campaign 타깃팅{#targeting-your-adobe-campaign}
+# Adobe Campaign 타기팅{#targeting-your-adobe-campaign}
 
 Adobe Campaign 뉴스레터를 타겟팅하려면 먼저 Classic UI에서만 사용할 수 있는 세그먼테이션을 설정해야 합니다(클라이언트 컨텍스트용). 그런 다음 Adobe Campaign에 대한 타겟팅된 경험을 만들 수 있습니다. 두 가지 모두 이 섹션에 설명되어 있습니다.
 
@@ -74,7 +74,7 @@ Adobe Campaign 뉴스레터를 타겟팅하려면 먼저 Classic UI에서만 사
 
 타겟팅된 콘텐츠로 뉴스레터를 만들려면 다음 작업을 수행하십시오.
 
-1. 타겟팅된 콘텐츠로 뉴스레터 만들기: Geometrixx Outdoors의 이메일 캠페인 아래에서 을 클릭하거나 탭합니다. **만들기** > **페이지**&#x200B;을 클릭하고 Adobe Campaign 메일 템플릿 중 하나를 선택합니다.
+1. 타겟팅된 콘텐츠로 뉴스레터 만들기: Geometrixx Outdoors의 이메일 캠페인 아래에서 **만들기** > **페이지**&#x200B;을 클릭하고 Adobe Campaign 메일 템플릿 중 하나를 선택합니다.
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
@@ -86,7 +86,7 @@ Adobe Campaign 뉴스레터를 타겟팅하려면 먼저 Classic UI에서만 사
 
    >[!NOTE]
    >
-   >기본적으로 AEM에 포함된 이메일 샘플은 Adobe Campaign을 타겟팅 엔진으로 사용합니다. 사용자 지정 뉴스레터의 경우 타겟팅 엔진으로 Adobe Campaign을 선택해야 할 수 있습니다. 타깃팅할 때 도구 모음에서 +를 탭하거나 클릭하여 새 활동의 제목을 입력하고 를 선택합니다 **Adobe Campaign** 타겟팅 엔진으로 사용됩니다.
+   >기본적으로 AEM에 포함된 이메일 샘플은 Adobe Campaign을 타겟팅 엔진으로 사용합니다. 사용자 지정 뉴스레터의 경우 타겟팅 엔진으로 Adobe Campaign을 선택해야 할 수 있습니다. 타깃팅할 때 도구 모음에서 +를 클릭하고 새 활동의 제목을 입력한 다음 을 선택합니다. **Adobe Campaign** 타겟팅 엔진으로 사용됩니다.
 
 1. 클릭 **기본값** 그리고 추가한 텍스트 및 개인화 구성 요소를 보면 화살표가 있는 과시가 표시됩니다. 아이콘을 클릭하여 이 구성 요소를 타겟팅합니다.
 

@@ -9,10 +9,10 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 2%
+source-wordcount: '759'
+ht-degree: 3%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 테스트 콘솔을 열어 등록된 테스트 세트를 확인합니다. 테스트 패널에는 테스트 세트와 테스트 사례 목록이 포함되어 있습니다.
 
-를 통해 도구 콘솔로 이동합니다. **전역 탐색 -> 도구 > 작업 -> 테스트**.
+를 통해 도구 콘솔로 이동합니다. **전역 탐색 > 도구 > 작업 > 테스트**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -69,7 +69,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 테스트 세트를 실행하려면:
 
-1. 테스트 패널에서 실행할 테스트 사례의 이름을 클릭하거나 탭하여 작업의 세부 정보를 확장합니다.
+1. [테스트] 패널에서 실행할 테스트 사례의 이름을 클릭하여 작업의 세부 정보를 확장합니다.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -91,7 +91,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. 테스트 패널에서 다음을 탭하거나 클릭합니다. **모든 테스트 실행** 단추 또는 **테스트 실행** 실행할 테스트 세트의 제목 아래에 있는 단추입니다.
+1. 테스트 패널에서 다음을 클릭합니다. **모든 테스트 실행** 단추 또는 **테스트 실행** 실행할 테스트 세트의 제목 아래에 있는 단추입니다.
 
    ![원 안에 있는 오른쪽 포인터가 가리키는 모든 테스트 실행 단추와 테스트 실행 단추의 이미지입니다.](do-not-localize/chlimage_1-5.png)
 
@@ -116,8 +116,8 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
    | 이름 | 유형 | 값 |
    |---|---|---|
-   | `categories` | String[] | `granite.testing.hobbes.tests` |
-   | `dependencies` | String[] | `granite.testing.hobbes.testrunner` |
+   | `categories` | 문자열[] | `granite.testing.hobbes.tests` |
+   | `dependencies` | 문자열[] | `granite.testing.hobbes.testrunner` |
 
    >[!NOTE]
    >
@@ -132,7 +132,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
    >
    >**종속성**: `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
 
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 1. 마우스 오른쪽 단추 클릭 `myFirstTest` 노드 및 클릭 **만들기 > 파일 만들기**. 파일 이름을 지정합니다 `js.txt` 및 클릭 **확인**.
 1. 다음에서 `js.txt` 파일에 다음 텍스트를 입력합니다.
 

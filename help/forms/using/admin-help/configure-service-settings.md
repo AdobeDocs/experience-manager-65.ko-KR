@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10692'
+source-wordcount: '10702'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Distiller 서비스에는 다음 설정을 사용할 수 있습니다.
 
 PDF Generator 사용자 인터페이스를 통해 새 설정을 만들 수 있습니다.
 
-**보안 설정:** 생성된 PDF 문서에 적용되는 사전 구성된 보안 설정입니다. 기본값은 No Security입니다. PDF Generator을 사용하여 보안 설정을 만든 다음 여기에 설정을 입력해야 합니다.
+**보안 설정:** 생성된 PDF 문서에 적용되는 사전 구성된 보안 설정입니다. 기본값은 No Security입니다. PDF Generator을 사용하여 보안 설정을 만든 다음 여기에 설정을 입력하십시오.
 
 **풀 크기:** 풀의 초기 크기입니다. Distiller 서비스가 배포되면 이 숫자를 사용하여 만들고 호출 요청 대기 중인 자유 풀에 할당된 서비스 구현 인스턴스 수를 결정합니다. 그러면 서비스 컨테이너는 먼저 서비스 인스턴스를 초기화할 필요 없이 호출 요청에 즉시 응답할 수 있습니다.
 
@@ -332,7 +332,7 @@ macKeySeed 값은 보안 URL을 생성하는 데 사용되는 난수 생성기�
 
 보안 URL을 새로 고쳐야 하는 경우 macKeySeed 값을 변경합니다. 보안 URL을 새로 고치는 것은 보안 정책에 따라 다르며 서버의 마스터 루트 암호를 변경하는 새로 고침 정책과 유사합니다. macSeedValue는 보안 URL 생성 및 검색에 사용할 새 고유 난수를 생성하는 데 사용되므로 보안 URL에 대한 마스터 암호와 유사합니다.
 
-시스템을 시작할 때 macSeedValue가 읽기 전용이므로 클러스터를 다시 시작해야 합니다. 모든 노드는 값을 읽기 위해 다시 시작해야 합니다. 왜냐하면 내부 난수를 시드 값으로 초기화하는 데 해당 노드를 독립적으로 사용하기 때문입니다.
+시스템을 시작할 때 macSeedValue가 읽기 전용이므로 클러스터를 다시 시작합니다. 모든 노드는 값을 읽기 위해 다시 시작해야 합니다. 왜냐하면 내부 난수를 시드 값으로 초기화하는 데 해당 노드를 독립적으로 사용하기 때문입니다.
 
 ## JDBC 서비스 설정 {#jdbc-service-settings}
 

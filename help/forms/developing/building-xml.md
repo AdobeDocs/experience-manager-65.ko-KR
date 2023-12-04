@@ -2,9 +2,9 @@
 title: JEE Workbench의 AEM Forms에서 스크립트 서비스 실행을 사용하여 XML 데이터를 작성하는 방법
 description: JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ AEM Forms on JEE Workbench에서 사용할 수 있는 표준 AEM Forms on JEE �
 
 이 자습서에서는 전체 응용 프로그램 및 프로세스 만들기를 사용할 수 없지만 &quot;DemoApplication02&quot;라는 응용 프로그램이 만들어졌습니다. 응용 프로그램이 이미 만들어졌다고 가정할 경우 executeScript 서비스를 호출하려면 이 응용 프로그램에서 프로세스를 만들어야 합니다. 다음을 포함하는 응용 프로그램에 프로세스를 추가하려면 `Execute Script` 서비스:
 
-1. 애플리케이션을 마우스 오른쪽 버튼으로 클릭하고 다음을 선택합니다. **[!UICONTROL 신규]**. 위치 **[!UICONTROL 신규]** 슬라이드 아웃 메뉴에서 **[!UICONTROL 프로세스]**. 프로세스 이름을 지정하고 필요한 경우 설명을 추가한 다음 이 프로세스를 나타낼 아이콘을 선택합니다. 이 자습서에서는 프로세스를 만들고 이름을 로 지정했습니다.  `executeScriptDemoProcess`.
+1. 응용 프로그램을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 신규]**. 위치 **[!UICONTROL 신규]** 슬라이드 아웃 메뉴에서 **[!UICONTROL 프로세스]**. 프로세스 이름을 지정하고 필요한 경우 설명을 추가한 다음 이 프로세스를 나타낼 아이콘을 선택합니다. 이 자습서에서는 프로세스를 만들고 이름을 로 지정했습니다.  `executeScriptDemoProcess`.
 1. 시작 지점을 정의하거나 나중에 시작 지점을 추가하도록 간단하게 선택합니다.
 1. 이제 프로세스가 생성되고에서 자동으로 열립니다. [!UICONTROL 프로세스 디자인] 창. 이 창에서 프로세스 디자인 창 상단의 활동 선택기 아이콘을 클릭하고 새 활동을 스윔으로 드래그합니다. 이 시점에서 [!UICONTROL 활동 정의 창] 가 표시됩니다(아래 그림 참조).
    ![활동 정의](assets/define-activity.jpg)

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1890'
 ht-degree: 0%
 
 ---
@@ -109,12 +109,12 @@ TarMK가 노드 저장소와 데이터 저장소로 모두 사용되는 경우, 
 
 데이터 저장소 가비지 수집을 실행하기 전에 백업이 실행되고 있지 않은지 확인해야 합니다.
 
-1. 다음 방법으로 작업 대시보드 열기 **탐색** -> **도구** -> **작업** -> **유지 관리**.
-1. 을(를) 클릭하거나 탭합니다 **주간 유지 관리 창**.
+1. 다음 방법으로 작업 대시보드 열기 **탐색** > **도구** > **작업** > **유지 관리**.
+1. 다음을 클릭합니다. **주간 유지 관리 창**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. 다음 항목 선택 **데이터 저장소 가비지 수집** 작업 을(를) 클릭한 다음 **실행** 아이콘.
+1. 다음 항목 선택 **데이터 저장소 가비지 수집** 작업을 클릭한 다음 **실행** 아이콘.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 

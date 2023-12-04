@@ -4,10 +4,10 @@ description: AEM을 Microsoft Translator에 연결하여 번역 워크플로를 
 feature: Language Copy
 role: Admin
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 97%
+source-wordcount: '452'
+ht-degree: 80%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 97%
 
 다음 절차를 통해 Microsoft Translator 구성이 생성됩니다.
 
-1. [탐색 패널](/help/sites-authoring/basic-handling.md#first-steps)에서 **도구** -> **클라우드 서비스** -> **번역 클라우드 서비스**&#x200B;를 클릭하거나 탭합니다.
+1. 다음에서 [탐색 패널,](/help/sites-authoring/basic-handling.md#first-steps) 클릭 **도구** > **Cloud Service** > **번역 Cloud Service**.
 1. 구성을 만들고자 하는 위치로 이동합니다. 일반적으로 이는 사이트 루트에 있거나 전역 기본 구성일 수 있습니다.
-1. **만들기** 버튼을 클릭하거나 탭합니다.
+1. 다음을 클릭합니다. **만들기** 단추를 클릭합니다.
 1. 구성을 정의합니다.
    1. 드롭다운 목록에서 **Microsoft Translator**&#x200B;를 선택합니다.
    1. 구성의 제목을 입력합니다. 제목을 통해 클라우드 서비스 콘솔 및 페이지 속성 드롭다운 목록에서 구성을 식별합니다.
@@ -45,26 +45,26 @@ ht-degree: 97%
 
    ![번역 구성 편집](assets/edit-translation-config.png)
 
-1. **연결**&#x200B;을 탭하거나 클릭하여 연결을 확인합니다.
-1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
+1. 클릭 **연결** 연결을 확인합니다.
+1. **저장 및 닫기**&#x200B;를 클릭합니다.
 
 ## Microsoft Translator 체험판 라이선스 구성 업그레이드 {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Microsoft Translation 구성 페이지는 프로덕션 시스템에 적합한 계정 구독을 얻기 위한 Microsoft 웹 사이트로 간편하게 이동할 수 있는 링크를 제공합니다.
 
-1. [탐색 패널](/help/sites-authoring/basic-handling.md#first-steps)에서 **도구** -> **클라우드 서비스** -> **번역 클라우드 서비스**&#x200B;를 탭하거나 클릭합니다.
-1. 기존 Microsoft Translator 구성을 탭하거나 클릭합니다.
-1. **편집**&#x200B;을 탭하거나 클릭합니다.
-1. **구성 편집** 창에서 **구독 업그레이드**&#x200B;를 탭하거나 클릭합니다. 서비스에 대한 세부 정보가 포함된 Microsoft 웹 페이지가 열립니다.
+1. 다음에서 [탐색 패널,](/help/sites-authoring/basic-handling.md#first-steps) 클릭 **도구** > **Cloud Service** > **번역 Cloud Service**.
+1. 기존 Microsoft Translator 구성을 클릭합니다.
+1. 클릭 **편집**.
+1. 다음에서 **구성 편집** 창에서 다음을 클릭: **구독 업그레이드**. 서비스에 대한 세부 정보가 포함된 Microsoft 웹 페이지가 열립니다.
 
 ## Microsoft Translator 엔진 맞춤화 {#customizing-your-microsoft-translator-engine}
 
 Microsoft Translation 구성 페이지는 Microsoft Translator 엔진을 맞춤화하기 위한 Microsoft 웹 사이트로 간편하게 이동할 수 있는 링크를 제공합니다.
 
-1. [탐색 패널](/help/sites-authoring/basic-handling.md#first-steps)에서 **도구** -> **클라우드 서비스** -> **번역 클라우드 서비스**&#x200B;를 탭하거나 클릭합니다.
-1. 기존 Microsoft Translator 구성을 탭하거나 클릭합니다.
-1. **편집**&#x200B;을 탭하거나 클릭합니다.
-1. **구성 편집** 창에서 **Translator 맞춤화**&#x200B;를 탭하거나 클릭합니다. 화면에 표시되는 Microsoft 웹 페이지를 사용하여 서비스를 맞춤화합니다.
+1. 다음에서 [탐색 패널,](/help/sites-authoring/basic-handling.md#first-steps) 클릭 **도구** > **Cloud Service** > **번역 Cloud Service**.
+1. 기존 Microsoft Translator 구성을 클릭합니다.
+1. 클릭 **편집**.
+1. 다음에서 **구성 편집** 창에서 다음을 클릭: **Translator 맞춤화**. 화면에 표시되는 Microsoft 웹 페이지를 사용하여 서비스를 맞춤화합니다.
 
 ## Translator 서비스 구성 활성화 {#activating-the-translator-service-configurations}
 

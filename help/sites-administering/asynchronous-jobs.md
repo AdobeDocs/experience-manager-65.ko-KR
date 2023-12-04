@@ -2,10 +2,10 @@
 title: 비동기 작업
 description: Adobe Experience Manager은 리소스 집약적인 일부 작업을 비동기식으로 완료하여 성능을 최적화합니다.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 91%
+source-wordcount: '791'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 91%
 * 원격 Experience Manager 배포에서 임계값을 초과하는 자산 가져오기
 * Live Copy 롤아웃
 
-**전역 탐색** -> **도구** -> **작업** -> **작업**&#x200B;의 **[!UICONTROL 비동기 작업 상태]** 대시보드에서 비동기 작업 상태를 볼 수 있습니다.
+다음에서 비동기 작업의 상태를 볼 수 있습니다. **[!UICONTROL 비동기 작업 상태]** 다음 위치에 대시보드: **전역 탐색** > **도구** > **작업** > **작업**.
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ AEM에 대한 자산, 페이지 또는 참조의 임계값 수를 구성하여 �
 >[!MORELIKETHIS]
 >
 >* [페이지 생성 및 구성](/help/sites-authoring/managing-pages.md)
->* [Live Copy 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
+>* [라이브 카피 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
 >* [Experience Manager에서 이메일 구성](/help/sites-administering/notification.md).
 >* [에셋 메타데이터 가져오기](/help/assets/metadata.md#import-metadata).
 >* [자산 메타데이터 내보내기](/help/assets/metadata.md#export-metadata).

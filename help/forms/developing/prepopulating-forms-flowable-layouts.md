@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3478'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ XML 데이터 원본을 사용하여 양식을 고정 레이아웃 및 흐름 �
 
 **메모리 내 XML 데이터 원본 만들기**
 
-다음을 사용할 수 있습니다. `org.w3c.dom` 클래스를 사용하여 유동성 레이아웃으로 양식을 미리 채울 메모리 내 XML 데이터 소스를 만들 수 있습니다. 양식을 준수하는 XML 데이터 소스에 데이터를 배치해야 합니다. 흐름 가능한 레이아웃이 있는 양식과 XML 데이터 원본 간의 관계에 대한 자세한 내용은 [데이터 하위 그룹 이해](#understanding-data-subgroups).
+다음을 사용할 수 있습니다. `org.w3c.dom` 클래스를 사용하여 유동성 레이아웃으로 양식을 미리 채울 메모리 내 XML 데이터 소스를 만들 수 있습니다. 양식을 준수하는 XML 데이터 소스에 데이터를 배치합니다. 흐름 가능한 레이아웃이 있는 양식과 XML 데이터 원본 간의 관계에 대한 자세한 내용은 [데이터 하위 그룹 이해](#understanding-data-subgroups).
 
 **XML 데이터 소스 변환**
 
@@ -251,7 +251,7 @@ Forms API(Java)를 사용하여 유동성 레이아웃으로 양식을 미리 �
    * Java 만들기 `DocumentBuilderFactory` 를 호출하여 개체 `DocumentBuilderFactory` class&#39; `newInstance` 메서드를 사용합니다.
    * Java 만들기 `DocumentBuilder` 를 호출하여 개체 `DocumentBuilderFactory` 개체 `newDocumentBuilder` 메서드를 사용합니다.
    * 호출 `DocumentBuilder` 개체 `newDocument` 를 인스턴스화하는 메서드 `org.w3c.dom.Document` 개체.
-   * 를 호출하여 XML 데이터 소스의 루트 요소를 만듭니다. `org.w3c.dom.Document` 개체 `createElement` 메서드를 사용합니다. 이렇게 하면 `Element` 루트 요소를 나타내는 개체입니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 루트 요소를 문서에 추가합니다. `Document` 개체 `appendChild` 루트 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
+   * 다음을 호출하여 XML 데이터 소스의 루트 요소 만들기 `org.w3c.dom.Document` 개체 `createElement` 메서드를 사용합니다. 이렇게 하면 `Element` 루트 요소를 나타내는 개체입니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 루트 요소를 문서에 추가합니다. `Document` 개체 `appendChild` 루트 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
@@ -259,17 +259,17 @@ Forms API(Java)를 사용하여 유동성 레이아웃으로 양식을 미리 �
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * 를 호출하여 헤더 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로 헤더 요소의 를 호출하여 하위 요소를 헤더 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
+   * 를 호출하여 헤더 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고, 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로 헤더 요소의 를 호출하여 하위 요소를 헤더 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
    * 양식의 정적 부분에 나타나는 각 필드에 대해 마지막 하위 단계를 반복하여 나머지 모든 요소를 헤더 요소에 추가합니다(XML 데이터 소스 다이어그램에서 이러한 필드는 섹션 A에 표시됨). [데이터 하위 그룹 이해](#understanding-data-subgroups).)
-   * 를 호출하여 XML 데이터 소스의 세부 요소 만들기 `Document` 개체 `createElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 세부 요소를 루트 요소에 추가합니다. `root` 개체 `appendChild` 세부 요소 개체를 인수로 전달합니다. 세부 요소에 추가된 XML 요소는 양식의 동적 부분에 해당합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
+   * 를 호출하여 XML 데이터 소스의 세부 정보 요소를 만듭니다. `Document` 개체 `createElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 세부 요소를 루트 요소에 추가합니다. `root` 개체 `appendChild` 세부 요소 개체를 인수로 전달합니다. 세부 요소에 추가된 XML 요소는 양식의 동적 부분에 해당합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * 를 호출하여 세부 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로 세부 요소의 를 호출하여 하위 요소를 세부 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
+   * 를 호출하여 세부 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고, 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로, 세부 요소의 를 호출하여 하위 요소를 세부 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -278,7 +278,7 @@ Forms API(Java)를 사용하여 유동성 레이아웃으로 양식을 미리 �
 
 1. XML 데이터 소스 변환
 
-   * 만들기 `javax.xml.transform.Transformer` 를 호출하여 개체 `javax.xml.transform.Transformer` 개체의 정적 `newInstance` 메서드를 사용합니다.
+   * 만들기 `javax.xml.transform.Transformer` 를 호출하여 개체 `javax.xml.transform.Transformer` 오브젝트의 정적 `newInstance` 메서드를 사용합니다.
    * 만들기 `Transformer` 를 호출하여 개체 `TransformerFactory` 개체 `newTransformer` 메서드를 사용합니다.
    * 만들기 `ByteArrayOutputStream` 개체를 만들 때 사용됩니다.
    * 만들기 `javax.xml.transform.dom.DOMSource` 개체를 생성자를 사용하고 `org.w3c.dom.Document` 1단계에서 작성된 개체입니다.
@@ -301,7 +301,7 @@ Forms API(Java)를 사용하여 유동성 레이아웃으로 양식을 미리 �
    다음 `renderPDFForm` 메서드가 을 반환합니다. `FormsResult` 클라이언트 웹 브라우저에 작성해야 하는 양식 데이터 스트림이 포함된 개체입니다.
 
    * 만들기 `javax.servlet.ServletOutputStream` 양식 데이터 스트림을 클라이언트 웹 브라우저로 전송하는 데 사용되는 개체입니다.
-   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 개체 &#39;s `getOutputContent` 메서드를 사용합니다.
+   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 의 오브젝트 `getOutputContent` 메서드를 사용합니다.
    * 만들기 `java.io.InputStream` 를 호출하여 개체 `com.adobe.idp.Document` 개체 `getInputStream` 메서드를 사용합니다.
    * 바이트 배열을 만들어 양식 데이터 스트림으로 채웁니다. `InputStream` 개체 `read` 메서드에서 바이트 배열을 인수로 전달합니다.
    * 호출 `javax.servlet.ServletOutputStream` 개체 `write` 클라이언트 웹 브라우저에 양식 데이터 스트림을 전송하는 방법입니다. 바이트 배열을 로 전달 `write` 메서드를 사용합니다.
@@ -328,7 +328,7 @@ Forms API(웹 서비스)를 사용하여 유동성 레이아웃으로 양식을 
    * Java 만들기 `DocumentBuilderFactory` 를 호출하여 개체 `DocumentBuilderFactory` class&#39; `newInstance` 메서드를 사용합니다.
    * Java 만들기 `DocumentBuilder` 를 호출하여 개체 `DocumentBuilderFactory` 개체 `newDocumentBuilder` 메서드를 사용합니다.
    * 호출 `DocumentBuilder` 개체 `newDocument` 를 인스턴스화하는 메서드 `org.w3c.dom.Document` 개체.
-   * 를 호출하여 XML 데이터 소스의 루트 요소를 만듭니다. `org.w3c.dom.Document` 개체 `createElement` 메서드를 사용합니다. 이렇게 하면 `Element` 루트 요소를 나타내는 개체입니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 루트 요소를 문서에 추가합니다. `Document` 개체 `appendChild` 루트 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
+   * 다음을 호출하여 XML 데이터 소스의 루트 요소 만들기 `org.w3c.dom.Document` 개체 `createElement` 메서드를 사용합니다. 이렇게 하면 `Element` 루트 요소를 나타내는 개체입니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 루트 요소를 문서에 추가합니다. `Document` 개체 `appendChild` 루트 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
@@ -336,16 +336,16 @@ Forms API(웹 서비스)를 사용하여 유동성 레이아웃으로 양식을 
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * 를 호출하여 헤더 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로 헤더 요소의 를 호출하여 하위 요소를 헤더 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
+   * 를 호출하여 헤더 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고, 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로 헤더 요소의 를 호출하여 하위 요소를 헤더 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
    * 양식의 정적 부분에 나타나는 각 필드에 대해 마지막 하위 단계를 반복하여 나머지 모든 요소를 헤더 요소에 추가합니다(XML 데이터 소스 다이어그램에서 이러한 필드는 섹션 A에 표시됨). [데이터 하위 그룹 이해](#understanding-data-subgroups).)
-   * 를 호출하여 XML 데이터 소스의 세부 요소 만들기 `Document` 개체 `createElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 세부 요소를 루트 요소에 추가합니다. `root` 개체 `appendChild` 세부 요소 개체를 인수로 전달합니다. 세부 요소에 추가된 XML 요소는 양식의 동적 부분에 해당합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
+   * 를 호출하여 XML 데이터 소스의 세부 정보 요소를 만듭니다. `Document` 개체 `createElement` 메서드를 사용합니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드를 사용합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 세부 요소를 루트 요소에 추가합니다. `root` 개체 `appendChild` 세부 요소 개체를 인수로 전달합니다. 세부 요소에 추가된 XML 요소는 양식의 동적 부분에 해당합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * 를 호출하여 세부 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로 세부 요소의 를 호출하여 하위 요소를 세부 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
+   * 를 호출하여 세부 요소에 속하는 하위 요소를 만듭니다. `Document` 개체 `createElement` 를 반환하고, 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 다음으로 캐스트 `Element`. 그런 다음 를 호출하여 하위 요소에 대한 값을 설정합니다. `appendChild` 메서드, 및 전달 `Document` 개체 `createTextNode` 메서드를 인수로 사용합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로, 세부 요소의 를 호출하여 하위 요소를 세부 요소에 추가합니다. `appendChild` 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 애플리케이션 논리를 보여 줍니다.
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -354,7 +354,7 @@ Forms API(웹 서비스)를 사용하여 유동성 레이아웃으로 양식을 
 
 1. XML 데이터 소스 변환
 
-   * 만들기 `javax.xml.transform.Transformer` 를 호출하여 개체 `javax.xml.transform.Transformer` 개체의 정적 `newInstance` 메서드를 사용합니다.
+   * 만들기 `javax.xml.transform.Transformer` 를 호출하여 개체 `javax.xml.transform.Transformer` 오브젝트의 정적 `newInstance` 메서드를 사용합니다.
    * 만들기 `Transformer` 를 호출하여 개체 `TransformerFactory` 개체 `newTransformer` 메서드를 사용합니다.
    * 만들기 `ByteArrayOutputStream` 개체를 만들 때 사용됩니다.
    * 만들기 `javax.xml.transform.dom.DOMSource` 개체를 생성자를 사용하고 `org.w3c.dom.Document` 1단계에서 작성된 개체입니다.

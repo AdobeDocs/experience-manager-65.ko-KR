@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3787'
-ht-degree: 1%
+source-wordcount: '3720'
+ht-degree: 0%
 
 ---
 
@@ -146,8 +146,7 @@ AEM 모바일 프레임워크를 사용하면 요청을 실행하는 장치에 �
 
 * 장치 그룹이 이미지를 지원하는지 확인
   `if (deviceGroup.hasCapability(DeviceCapability.CAPABILITY_IMAGES)) {`
-...
-또는
+... 또는
   `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {`
 ...
 
@@ -337,7 +336,7 @@ AEM은 다음을 자동으로 구문 분석합니다 `wurfl.xml` 아래 노드 �
 1. 위치 **CRXDE Lite**, /apps/wcm/mobile/devicesecs/regexp 아래에 노드를 만듭니다. 예: `apple_ipad_ver1`.
 1. 노드에 다음 속성을 추가합니다.
 
-   * **regexp**: 사용자 에이전트를 정의하는 정규 표현식(예: ).&#42;모질라&#42;iPad.&#42;AppleWebkit.&#42;Safari.&#42;
+   * **regexp**: 사용자 에이전트를 정의하는 정규 표현식(예: ).&#42;모질라&#42;iPad.&#42;AppleWebkit.&#42;사파리&#42;
    * **deviceId**: wurfl.xml에 정의된 디바이스 ID(예: ) `apple_ipad_ver1`
 
 위의 구성은 사용자 에이전트가 제공된 정규 표현식과 일치하는 장치가 apple_ipad_ver1 WURFL™ 장치 ID(있는 경우)에 매핑되도록 합니다.

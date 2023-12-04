@@ -1,19 +1,15 @@
 ---
 title: 마케팅 캠페인 관리자 작업
-seo-title: Working with the Marketing Campaign Manager
 description: 마케팅 캠페인 관리자(MCM)는 멀티채널 캠페인을 관리하는 데 도움이 되는 콘솔입니다. 이 마케팅 자동화 소프트웨어를 사용하면 모든 브랜드, 캠페인 및 경험을 관련 세그먼트, 목록, 리드 및 보고서와 함께 관리할 수 있습니다.
-seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
-uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -114,10 +110,7 @@ AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 
 ![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
 * **왼쪽 창에서**: 모든 브랜드 및 캠페인 목록이 있습니다.
-브랜드를 한 번 클릭하면 다음 두 가지가 모두 수행됩니다.
-
-   * 목록을 확장하여 왼쪽 창에 모든 관련 캠페인을 표시합니다. 이 목록에는 각 캠페인에 대한 경험 수도 표시됩니다.
-   * 오른쪽 창에서 브랜드 개요 를 엽니다.
+브랜드를 클릭하면 목록이 확장되어 왼쪽 창에 모든 관련 캠페인이 표시됩니다. 이 목록에는 각 캠페인에 대한 경험 수도 표시됩니다. 오른쪽 창에 브랜드 개요도 열립니다.
 
 * **오른쪽 창에서**: 각 브랜드에 대한 아이콘이 표시됩니다(이전 캠페인은 표시되지 않음).
 이러한 아이콘을 두 번 클릭하여 브랜드 개요를 열 수 있습니다.

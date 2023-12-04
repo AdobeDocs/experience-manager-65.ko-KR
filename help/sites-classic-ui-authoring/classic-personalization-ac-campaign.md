@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 1%
+source-wordcount: '1185'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ AEM에서 이메일 콘텐츠를 만들고 Adobe Campaign 이메일에서 처리
 
 1. Adobe Campaign 관련 템플릿으로 AEM 뉴스레터를 생성할 수 있습니다.
 1. 선택 [Adobe Campaign 서비스](#selectingtheadobecampaigncloudservice) 모든 기능에 액세스하기 위해 컨텐츠를 편집하기 전에
-1. 콘텐츠 편집.
+1. 콘텐츠를 편집합니다.
 1. 콘텐츠의 유효성을 검사합니다.
 
 그런 다음 콘텐츠를 Adobe Campaign의 게재와 동기화할 수 있습니다. 자세한 지침은 이 문서에 설명되어 있습니다.
@@ -81,7 +81,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
    >[!NOTE]
    >
-   >반드시 탭/클릭 **확인** 또는 **적용** cloud service를 추가한 후. 이렇게 하면 **Adobe Campaign** 탭이 제대로 작동하지 않는 문제가 수정되었습니다.
+   >다음을 클릭하십시오. **확인** 또는 **적용** cloud service를 추가한 후. 이렇게 하면 **Adobe Campaign** 탭이 제대로 작동하지 않는 문제가 수정되었습니다.
 
 1. 기본 이외의 특정 이메일 게재 템플릿(Adobe Campaign의)을 적용하려면 **메일** 템플릿, 선택 **페이지 속성** 다시. 다음에서 **Adobe Campaign** 탭에서 관련 Adobe Campaign 인스턴스에 이메일 게재 템플릿의 내부 이름을 입력합니다.
 

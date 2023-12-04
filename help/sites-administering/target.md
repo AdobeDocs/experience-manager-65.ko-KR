@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 66%
+source-wordcount: '567'
+ht-degree: 65%
 
 ---
 
@@ -53,11 +53,11 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 
 >[!CAUTION]
 >
->일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호해야 합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스에만 액세스할 수 있어야 합니다.
+>일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스에만 액세스할 수 있어야 합니다.
 >
 >자세한 내용은 [Adobe Target과 통합하기 위한 전제 조건](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node)을 참조하십시오.
 
-통합이 완료되면 Adobe Target에 방문자 데이터를 전송하는 [타겟팅된 콘텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 수 있습니다. 콘텐츠 타겟팅을 활성화하려면 페이지 구성 요소에 특정 코드가 필요합니다. [타겟팅된 콘텐츠용 개발](/help/sites-developing/target.md)을 참조하십시오.)
+통합이 완료되면 Adobe Target에 방문자 데이터를 전송하는 [타겟팅된 콘텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 수 있습니다. 콘텐츠 타겟팅을 활성화하려면 페이지 구성 요소에 특정 코드가 필요합니다. (참조: [타깃팅된 컨텐츠를 위한 개발](/help/sites-developing/target.md).)
 
 >[!NOTE]
 >

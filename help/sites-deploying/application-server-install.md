@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ AEM은 단일 war 파일로 제공되며,
 
 * 기본 인증 헤더가 통과하도록 허용:
 
-   * AEM에서 사용자를 인증하는 한 가지 방법은 WebSphere® 서버의 전역 관리 보안을 비활성화하는 것입니다. 이렇게 하려면 보안 -> 전역 보안으로 이동하여 관리 보안 활성화 확인란을 선택 취소하고 서버를 저장한 다음 다시 시작합니다.
+   * AEM에서 사용자를 인증하는 한 가지 방법은 WebSphere® 서버의 전역 관리 보안을 비활성화하는 것입니다. 이렇게 하려면 보안 > 전역 보안으로 이동하여 관리 보안 활성화 확인란을 선택 취소하고 서버를 저장한 다음 다시 시작합니다.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
 * 컨텍스트 루트 = / 를 사용하여 AEM을 설치하려면 기존 기본 웹 응용 프로그램의 컨텍스트 루트를 변경합니다.

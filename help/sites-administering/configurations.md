@@ -2,10 +2,10 @@
 title: 구성 및 구성 브라우저
 description: AEM 구성 및 AEM에서 작업 공간 설정을 관리하는 방법을 이해합니다.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 6%
+source-wordcount: '1472'
+ht-degree: 5%
 
 ---
 
@@ -68,8 +68,8 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 
 구성 브라우저를 사용하여 AEM에서 구성을 간단하게 만들 수 있습니다.
 
-1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 를 선택합니다. **도구** -> **일반** -> **구성 브라우저**.
-1. **만들기**&#x200B;를 탭하거나 클릭합니다.
+1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 를 선택합니다. **도구** > **일반** > **구성 브라우저**.
+1. **만들기**&#x200B;를 클릭합니다.
 1. 구성의 **제목** 및 **이름**&#x200B;을 입력합니다.
 
    ![구성 만들기](assets/configuration-create.png)
@@ -83,7 +83,7 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
    * [Context Hub 세그먼트](/help/sites-administering/segmentation.md)
    * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
    * [편집 가능한 템플릿](/help/sites-authoring/templates.md)
-1. **만들기**&#x200B;를 탭하거나 클릭합니다.
+1. **만들기**&#x200B;를 클릭합니다.
 
 >[!TIP]
 >
@@ -93,8 +93,8 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 
 구성을 작업 영역으로 생각하면 해당 구성에 액세스 권한을 설정하여 누가 해당 작업 영역에 액세스할 수 있고 액세스할 수 없는지 적용할 수 있습니다.
 
-1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 를 선택합니다. **도구** -> **일반** -> **구성 브라우저**.
-1. 수정할 구성을 선택한 다음 탭하거나 클릭합니다 **속성** 도구 모음에서 다음 작업을 수행하십시오.
+1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 를 선택합니다. **도구** > **일반** > **구성 브라우저**.
+1. 수정할 구성을 선택한 다음 를 클릭합니다 **속성** 도구 모음에서 다음 작업을 수행하십시오.
 1. 구성에 추가할 추가 기능을 선택합니다.
 
    >[!NOTE]

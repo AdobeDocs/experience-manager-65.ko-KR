@@ -1,18 +1,14 @@
 ---
 title: 공간 및 엔티티
-seo-title: Developing AEM Mobile Content Services
 description: 이 페이지는 AEM Mobile Content Services 개발을 위한 랜딩 페이지 역할을 합니다.
-seo-description: This page serves a landing page for developing AEM Mobile Content Services.
-uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 3%
+source-wordcount: '1206'
+ht-degree: 4%
 
 ---
 
@@ -56,7 +52,7 @@ ht-degree: 3%
 
 ## 공간 관리 {#managing-a-space}
 
-스페이스를 만든 후 왼쪽을 클릭하여 목록의 스페이스를 관리합니다.
+공간을 만든 후 왼쪽을 클릭하여 목록의 공간을 관리합니다.
 
 스페이스의 속성을 보거나, 스페이스를 삭제하거나, 스페이스 및 스페이스의 컨텐츠를 AEM 게시 인스턴스에 게시할 수 있습니다.
 
@@ -111,7 +107,7 @@ ht-degree: 3%
 
 ### 언어 사본 추가 {#adding-language-copy}
 
-1. 공간을 만들면 해당 공간을 클릭하여 언어 사본을 만듭니다.
+1. 공간을 만든 후 해당 공간을 클릭하여 언어 사본을 만듭니다.
 
    클릭 **만들기** 및 선택 **언어 복사**.
 
@@ -164,7 +160,7 @@ ht-degree: 3%
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. 엔티티의 모델을 선택합니다. 만들려는 엔티티 유형입니다. 다음을 클릭합니다.
+1. 엔티티의 모델을 선택합니다. 만들려는 엔티티 유형입니다. 다음 을 클릭합니다.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -198,7 +194,7 @@ ht-degree: 3%
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
-   또는 을 클릭할 수 있습니다. **미리 보기** json 링크를 봅니다.
+   또는 를 클릭할 수 있습니다 **미리 보기** json 링크를 봅니다.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -220,7 +216,7 @@ ht-degree: 3%
    >
    >엔티티에 에셋을 추가한 후 다음 중 하나를 선택할 수 있습니다. **저장** 변경 내용을 저장하거나 **저장 및 닫기** 을 클릭하여 저장하고 엔티티가 정의된 스페이스 콘솔 목록으로 리디렉션합니다.
 
-   또한 공간 콘솔 목록에서 엔티티를 선택하고 을(를) 클릭합니다. **속성** 을 눌러 정의된 엔티티의 등록 정보를 보고 편집합니다.
+   또한 공간 콘솔 목록에서 엔티티를 선택하고 **속성** 을 눌러 정의된 엔티티의 등록 정보를 보고 편집합니다.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 

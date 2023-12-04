@@ -4,10 +4,10 @@ description: Adobe Experience Manager에서 번역할 콘텐츠를 준비하는 
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 54%
+source-wordcount: '669'
+ht-degree: 45%
 
 ---
 
@@ -56,20 +56,20 @@ ht-degree: 54%
 다음 절차에서는 터치에 적합한 UI를 사용하여 웹 사이트의 언어 사본을 만듭니다. 클래식 UI를 사용하는 지침은 [클래식 UI를 사용하여 언어 루트 만들기](/help/sites-administering/tc-lroot-classic.md).
 
 1. 사이트로 이동합니다.
-1. 언어 사본을 만들려는 사이트를 클릭하거나 탭합니다.
+1. 언어 사본을 만들 사이트를 클릭합니다.
 
-   예를 들어 Geometrixx Outdoors 사이트의 언어 사본을 만들려면 Geometrixx Outdoors 사이트를 클릭하거나 탭합니다.
+   예를 들어 Geometrixx Outdoors 사이트의 언어 사본을 만들려면 Geometrixx Outdoors 사이트 를 클릭합니다.
 
-1. 만들기 를 클릭하거나 탭한 다음 페이지 만들기 를 클릭하거나 탭합니다.
+1. 만들기를 클릭한 다음 페이지 만들기를 클릭합니다.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. 페이지 템플릿을 선택하고 다음을 클릭하거나 탭합니다.
+1. 페이지 템플릿을 선택하고 다음 을 클릭합니다.
 1. 이름 필드에 다음 형식으로 국가 코드를 입력합니다. `<language-code>` 또는 `<language-code>_<country-code>`, 예: `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. 페이지 제목을 입력합니다.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. 만들기를 클릭하거나 탭합니다. 확인 대화 상자에서 **완료**&#x200B;를 클릭하거나 탭하여 Sites 콘솔로 돌아가거나, **열기**&#x200B;를 클릭하거나 탭하여 언어 사본을 엽니다.
+1. 만들기 를 클릭합니다. 확인 대화 상자에서 다음을 클릭합니다. **완료** 사이트 콘솔로 돌아가려면 **열기** 언어 사본을 엽니다.
 
 ## 언어 루트 상태 보기 {#seeing-the-status-of-language-roots}
 
@@ -79,8 +79,8 @@ ht-degree: 54%
 
 다음 절차에서는 터치에 적합한 UI를 사용하여 페이지의 참조 패널을 엽니다.
 
-1. 사이트 콘솔에서 사이트의 페이지를 선택한 다음 을 클릭하거나 탭합니다 **참조**.
+1. 사이트 콘솔에서 사이트의 페이지를 선택한 다음 을 클릭합니다. **참조**.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
-1. 참조 패널에서 를 클릭하거나 탭합니다 **언어 복사**. 언어 사본 패널에는 웹 사이트의 언어 사본이 표시됩니다.
+1. 참조 패널에서 를 클릭합니다 **언어 복사**. 언어 사본 패널에는 웹 사이트의 언어 사본이 표시됩니다.

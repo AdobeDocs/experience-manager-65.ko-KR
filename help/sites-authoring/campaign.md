@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2749'
-ht-degree: 1%
+source-wordcount: '2770'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ AEM에서 이메일 콘텐츠를 만들고 Adobe Campaign 이메일에서 처리
 
 1. Adobe Campaign 관련 템플릿으로 AEM 뉴스레터를 생성할 수 있습니다.
 1. 선택 [Adobe Campaign 서비스](#selecting-the-adobe-campaign-cloud-service-and-template) 모든 기능에 액세스하기 위해 컨텐츠를 편집하기 전에
-1. 콘텐츠 편집.
+1. 콘텐츠를 편집합니다.
 1. 콘텐츠의 유효성을 검사합니다.
 
 그런 다음 콘텐츠를 Adobe Campaign의 게재와 동기화할 수 있습니다. 자세한 지침은 이 문서에 설명되어 있습니다.
@@ -102,7 +102,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. 선택 **클라우드 서비스** 및 클릭 **+** 구성을 추가합니다. 표시되는 구성을 선택합니다(어느 구성이든 상관없음). 을(를) 클릭하거나 탭합니다 **+** 다른 구성을 추가하려면 로그인한 다음 선택 **Adobe Campaign**.
+1. 선택 **클라우드 서비스** 및 클릭 **+** 구성을 추가합니다. 표시되는 구성을 선택합니다(어느 구성이든 상관없음). 다음을 클릭합니다. **+** 다른 구성을 추가하려면 로그인한 다음 선택 **Adobe Campaign**.
 
    >[!NOTE]
    >
@@ -201,7 +201,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
    ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-1. 현재 선택한 담당자와 연결된 Adobe Campaign에서 제공되는 시드 데이터를 볼 수 있습니다. 이렇게 하려면 ContextHub 막대에서 Adobe Campaign 모듈을 클릭/탭합니다. 그러면 현재 프로필의 모든 시드 데이터를 표시하는 대화 상자가 열립니다. 다시 말하지만, 데이터는 다른 성향으로 전환할 때 조정됩니다.
+1. 현재 선택한 담당자와 연결된 Adobe Campaign에서 제공되는 시드 데이터를 볼 수 있습니다. 이렇게 하려면 ContextHub 막대에서 Adobe Campaign 모듈을 클릭합니다. 그러면 현재 프로필의 모든 시드 데이터를 표시하는 대화 상자가 열립니다. 다시 말하지만, 데이터는 다른 성향으로 전환할 때 조정됩니다.
 
    ![chlimage_1-30](assets/chlimage_1-30a.png)
 

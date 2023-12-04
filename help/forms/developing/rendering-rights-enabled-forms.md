@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1455'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Forms 서비스 클라이언트 API 작업을 프로그래밍 방식으로 수�
 
 **사용 권한 런타임 옵션 설정**
 
-사용 권한 런타임 옵션을 설정하여 권한이 활성화된 양식을 렌더링합니다. 양식에 사용 권한을 적용하는 데 사용되는 자격 증명의 별칭도 지정해야 합니다. 별칭 값을 지정한 후 양식에 적용할 각 사용 권한을 지정합니다.
+사용 권한 런타임 옵션을 설정하여 권한이 활성화된 양식을 렌더링합니다. 양식에 사용 권한을 적용하는 데 사용되는 자격 증명의 별칭을 지정합니다. 별칭 값을 지정한 후 양식에 적용할 각 사용 권한을 지정합니다.
 
 **권한이 활성화된 양식 렌더링**
 
@@ -124,7 +124,7 @@ Forms API(Java)를 사용하여 권한이 활성화된 양식을 렌더링합니
 
 1. 클라이언트 웹 브라우저에 양식 데이터 스트림 작성
 
-   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 개체 &#39;s `getOutputContent` 메서드를 사용합니다.
+   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 의 오브젝트 `getOutputContent` 메서드를 사용합니다.
    * 의 콘텐츠 유형 가져오기 `com.adobe.idp.Document` 개체 `getContentType` 메서드를 사용합니다.
    * 설정 `javax.servlet.http.HttpServletResponse` 를 호출하여 객체의 콘텐츠 유형 `setContentType` 메서드와 의 콘텐츠 유형 전달 `com.adobe.idp.Document` 개체.
    * 만들기 `javax.servlet.ServletOutputStream` 개체를 사용하여 클라이언트 웹 브라우저에서 `javax.servlet.http.HttpServletResponse` 개체 `getOutputStream` 메서드를 사용합니다.

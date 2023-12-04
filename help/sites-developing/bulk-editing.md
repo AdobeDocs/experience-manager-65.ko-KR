@@ -1,7 +1,7 @@
 ---
 title: 페이지 속성의 벌크 편집을 위한 페이지 구성
 seo-title: Configuring your Page for Bulk Editing of Page Properties
-description: 페이지 속성의 일괄 편집을 통해 한 번에 여러 페이지의 속성을 편집할 수 있습니다
+description: 페이지 속성을 벌크 편집하면 여러 페이지의 속성을 한 번에 편집할 수 있습니다
 seo-description: Bulk editing of page properties lets you edit the properties of multiple pages at once
 uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 37%
+source-wordcount: '407'
+ht-degree: 24%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 37%
 
 값이 다를 수 있으므로 페이지 속성은 기본값으로 벌크 편집을 활성화하지 않습니다. 명시적으로 허용(활성화)되어야 합니다. 일괄 편집에 사용할 수 있는 페이지 속성을 정의할 때 다음과 같은 특정 영향을 고려해야 합니다.
 
-* 특정 필드는 일반적으로 고유합니다(예: 페이지 제목). 하나의 값을 적용할 때 일괄 편집을 위해 이러한 필드를 활성화하는 것이 의미가 있는지 여부를 판단해야 합니다.
+* 특정 필드는 일반적으로 고유합니다(예: 페이지 제목). 하나의 값이 적용될 때 일괄 편집에 이러한 필드를 활성화하는 것이 중요한지 여부를 결정합니다.
 * 특정 필드에는 여러 값이 있을 수 있습니다. 렌더링할 때 의미 있는 표현이 필요합니다.
 
   예를 들어 &quot;게시 준비&quot;를 나타내는 확인란입니다. 이 값에는 대량 편집 전에 몇 가지 값이 있을 수 있습니다(예: 준비, 검토 중, 진행 중).

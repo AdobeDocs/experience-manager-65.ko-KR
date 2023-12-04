@@ -1,19 +1,19 @@
 ---
-title: SPA에 대한 동적 모델과 구성 요소 간 매핑
+title: SPA용 동적 모델과 구성 요소 간 매핑
 description: Adobe Experience Manager용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 어떻게 수행되는지 알아보십시오.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 4%
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
-# SPA에 대한 동적 모델과 구성 요소 간 매핑{#dynamic-model-to-component-mapping-for-spas}
+# SPA용 동적 모델과 구성 요소 간 매핑{#dynamic-model-to-component-mapping-for-spas}
 
 이 문서에서는 Adobe Experience Manager(AEM)용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간의 매핑이 발생하는 방법을 설명합니다.
 

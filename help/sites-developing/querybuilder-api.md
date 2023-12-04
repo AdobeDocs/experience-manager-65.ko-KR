@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ REST API는 JSON으로 전송되는 응답과 함께 HTTP를 통해 동일한 �
 
 이러한 샘플은 Java™ 속성 스타일 표기법으로 제공됩니다. Java™ API와 함께 사용하려면 Java를 사용하십시오™ `HashMap` 다음 API 샘플에서와 같이.
 
-의 경우 `QueryBuilder` JSON 서블릿, 각 예에는 로컬 CQ 설치(기본 위치, `http://localhost:4502`). 이러한 링크를 사용하기 전에 CQ 인스턴스에 로그인해야 합니다.
+의 경우 `QueryBuilder` JSON 서블릿, 각 예에는 로컬 CQ 설치(기본 위치, `http://localhost:4502`). 이러한 링크를 사용하기 전에 CQ 인스턴스에 로그인합니다.
 
 >[!CAUTION]
 >

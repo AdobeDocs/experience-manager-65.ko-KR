@@ -1,14 +1,14 @@
 ---
 title: 자산 선택기
-description: 에셋 선택기를 사용하여 Adobe Experience Manager 에셋 내의 에셋에 대한 메타데이터를 검색, 필터링, 검색 및 가져오는 방법을 알아봅니다. 자산 선택기 인터페이스를 사용자 지정하는 방법도 알아봅니다.
+description: 에셋 선택기를 사용하여 Adobe Experience Manager Assets 내의 에셋에 대한 메타데이터를 검색, 필터링, 검색 및 가져오는 방법을 알아봅니다. 자산 선택기 인터페이스를 사용자 지정하는 방법도 알아봅니다.
 contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 1%
+source-wordcount: '487'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 |---|---|---|---|
 | 리소스 접미사(B) | URL의 리소스 접미사 폴더 경로:`http://localhost:4502/aem/`<br>`assetpicker.html/<folder_path>` | 특정 폴더(예: 폴더)가 선택된 상태로 자산 선택기를 실행하려면 `/content/dam/we-retail/en/activities` 선택한 경우 URL의 형식은 다음과 같아야 합니다. `http://localhost:4502/aem/assetpicker.html`<br>`/content/dam/we-retail/en/activities?assettype=images` | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 리소스 접미사로 전달합니다. |
 | 모드 | 단일, 다중 | `http://localhost:4502/aem/assetpicker.html`<br>`?mode=multiple` <br> `http://localhost:4502/aem/assetpicker.html`<br>`?mode=single` | 다중 모드에서는 에셋 선택기를 사용하여 여러 에셋을 동시에 선택할 수 있습니다. |
-| 사용할 수 없게 됩니다 | true, false | `http://localhost:4502/aem/assetpicker.html`<br>`?dialog=true` | 이러한 매개 변수를 사용하여 자산 선택기를 [Granite] 대화 상자로 엽니다. 이 옵션은 Granite 경로 필드를 통해 자산 선택기를 시작하고 pickerSrc URL로 구성하는 경우에만 적용할 수 있습니다. |
+| 대화 상자 | true, false | `http://localhost:4502/aem/assetpicker.html`<br>`?dialog=true` | 이러한 매개 변수를 사용하여 자산 선택기를 [Granite] 대화 상자로 엽니다. 이 옵션은 Granite 경로 필드를 통해 자산 선택기를 시작하고 pickerSrc URL로 구성하는 경우에만 적용할 수 있습니다. |
 | 루트 | `<folder_path>` | `http://localhost:4502/aem/`<br>`assetpicker.html?assettype=images`<br>`&root=/content/dam/we-retail/en/activities` | 이 옵션을 사용하여 자산 선택기의 루트 폴더를 지정합니다. 이 경우 에셋 선택기를 사용하면 루트 폴더 아래에서 하위 에셋(직접/간접)만 선택할 수 있습니다. |
 | 보기 모드 | 검색 |  | assettype 및 mimetype 매개 변수와 함께 검색 모드에서 자산 선택기를 시작합니다. |
 | assettype(S) | 이미지, 문서, 멀티미디어, 아카이브 | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives`</li> | 전달된 값을 기반으로 자산 유형을 필터링하려면 이 옵션을 사용합니다. |
@@ -57,4 +57,4 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
-1. 탭/클릭 **[!UICONTROL 선택]** 을 클릭합니다.
+1. 클릭 **[!UICONTROL 선택]** 을 클릭합니다.

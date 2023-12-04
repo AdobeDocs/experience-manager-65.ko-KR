@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 91%
+source-wordcount: '647'
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 91%
 
 워크플로를 적용할 때에는 다음 정보를 지정합니다.
 
-* 적용할 워크플로.
+* 적용할 워크플로입니다.
 AEM 관리자가 할당한 대로 액세스할 수 있는 워크플로를 적용할 수 있습니다.
 * 원할 경우, 사용자의 받은 편지함에서 워크플로 인스턴스를 식별하는 데 도움이 되는 제목.
 * 워크플로 페이로드. 하나 이상의 페이지일 수 있습니다.
@@ -103,7 +103,7 @@ AEM 관리자가 할당한 대로 액세스할 수 있는 워크플로를 적용
 
    >[!NOTE]
    >
-   >**워크플로 패키지 유지** 옵션은 여러 리소스 지원에 대해 워크플로를 구성했으며 여러 리소스를 선택한 경우에 사용할 수 있습니다.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
+   >다음 **워크플로우 패키지 유지** 옵션은에 대해 워크플로우를 구성했을 때 사용할 수 있습니다. [다중 리소스 지원](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) 및 여러 리소스를 선택했습니다.
 
    완료되면 **다음**&#x200B;을 사용하여 계속 진행하십시오.
 
@@ -111,7 +111,7 @@ AEM 관리자가 할당한 대로 액세스할 수 있는 워크플로를 적용
 
 1. **범위** 단계에서 다음을 선택할 수 있습니다.
 
-   * **콘텐츠 추가**: [경로 브라우저](/help/sites-authoring/author-environment-tools.md#path-browser)를 열고 추가 리소스를 선택합니다. 브라우저에서 **선택**&#x200B;을 클릭/탭하여 워크플로 인스턴스에 콘텐츠를 추가합니다.
+   * **콘텐츠 추가** 을(를) 열려면 [경로 브라우저](/help/sites-authoring/author-environment-tools.md#path-browser) 추가 리소스를 선택합니다. 브라우저에서 **선택** 워크플로 인스턴스에 컨텐츠를 추가합니다.
 
    * 추가 작업을 보기 위한 기존 리소스:
 

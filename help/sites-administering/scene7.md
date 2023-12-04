@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '5483'
+source-wordcount: '5425'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Adobe Dynamic Media Classic은 리치 미디어 자산을 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄로 관리, 향상, 게시 및 전달하기 위한 호스팅 솔루션입니다.
 
-Dynamic Media Classic을 사용하려면 Dynamic Media Classic과 Adobe Experience Manager Assets가 서로 상호 작용할 수 있도록 클라우드 구성을 구성해야 합니다. 이 문서에서는 Experience Manager 및 Dynamic Media Classic을 구성하는 방법에 대해 설명합니다.
+Dynamic Media Classic을 사용하려면 Dynamic Media Classic과 Adobe Experience Manager Assets이 상호 작용할 수 있도록 클라우드 구성을 구성해야 합니다. 이 문서에서는 Experience Manager 및 Dynamic Media Classic을 구성하는 방법에 대해 설명합니다.
 
 페이지에서 모든 Dynamic Media Classic 구성 요소를 사용하고 비디오 작업에 대한 자세한 내용은 을 참조하십시오. [Dynamic Media Classic 사용](../assets/scene7.md).
 
@@ -377,17 +377,17 @@ Experience Manager 인스턴스가 Dynamic Media Classic을 통해 비디오 인
 
 >[!NOTE]
 >
->Experience Manager Assets에서 Dynamic Media Classic으로 자동 업로드하는 최대 파일 크기는 500MB입니다.
+Experience Manager Assets에서 Dynamic Media Classic으로 자동 업로드하는 최대 파일 크기는 500MB입니다.
 
 **Experience Manager Assets에서 자동 업로드하려면:**
 
 1. Experience Manager 아이콘을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service]**.
 1. Dynamic Media 제목 아래의 사용 가능한 구성에서 을 선택합니다. **[!UICONTROL dms7 (Dynamic Media]**).
-1. 다음 항목 선택 **[!UICONTROL 고급]** 탭에서 **[!UICONTROL 자동 업로드 활성화]** 확인란을 선택한 다음 을 선택합니다 **[!UICONTROL 확인]**. Dynamic Media Classic에 업로드를 포함하도록 DAM 에셋 워크플로를 구성해야 합니다.
+1. 다음 항목 선택 **[!UICONTROL 고급]** 탭에서 **[!UICONTROL 자동 업로드 활성화]** 확인란을 선택한 다음 을 선택합니다 **[!UICONTROL 확인]**. Dynamic Media Classic에 업로드를 포함하도록 DAM 에셋 워크플로를 구성합니다.
 
    >[!NOTE]
    >
-   >다음을 참조하십시오 [Dynamic Media Classic에 푸시된 에셋의 상태(게시/게시 취소됨) 구성](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) 게시되지 않은 상태에서 Dynamic Media Classic으로 에셋을 푸시하는 방법에 대한 정보입니다.
+   다음을 참조하십시오 [Dynamic Media Classic에 푸시된 에셋의 상태(게시/게시 취소됨) 구성](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) 게시되지 않은 상태에서 Dynamic Media Classic으로 에셋을 푸시하는 방법에 대한 정보입니다.
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
@@ -398,8 +398,8 @@ Experience Manager 인스턴스가 Dynamic Media Classic을 통해 비디오 인
 
    >[!NOTE]
    >
-   >* 자동화 후 에셋을 추가할 때 CQ 대상 폴더에 배치되지 않으면 Dynamic Media Classic에 업로드되지 않습니다.
-   >* Experience Manager은 Dynamic Media Classic에 업로드하기 전에 모든 메타데이터를 XMP으로 임베드하므로 메타데이터 노드의 모든 속성을 Dynamic Media Classic as XMP에서 사용할 수 있습니다.
+   * 자동화 후 에셋을 추가할 때 CQ 대상 폴더에 배치되지 않으면 Dynamic Media Classic에 업로드되지 않습니다.
+   * Experience Manager은 Dynamic Media Classic에 업로드하기 전에 모든 메타데이터를 XMP으로 임베드하므로 메타데이터 노드의 모든 속성을 Dynamic Media Classic as XMP에서 사용할 수 있습니다.
 
 ### Dynamic Media Classic에 푸시된 에셋의 상태(게시됨/게시되지 않음)를 구성합니다. {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -424,7 +424,7 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 
 >[!NOTE]
 >
->설치 환경이 UNIX® 64비트 운영 체제인 경우 [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) 기타 구성 옵션에 대해 설정해야 합니다.
+설치 환경이 UNIX® 64비트 운영 체제인 경우 [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) 기타 구성 옵션에 대해 설정해야 합니다.
 
 #### 게시되지 않은 상태에서 에셋을 푸시하기 위한 알려진 제한 사항  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -435,13 +435,13 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 
 >[!NOTE]
 >
->자산을 즉시 게시하려면 유지하는 것이 좋습니다 **[!UICONTROL 보안 미리 보기 활성화]** 을 로 설정 **[!UICONTROL 즉시]** 및 사용 **[!UICONTROL 자동 업로드 활성화]** 기능.
+자산을 즉시 게시하려면 유지하는 것이 좋습니다 **[!UICONTROL 보안 미리 보기 활성화]** 을 로 설정 **[!UICONTROL 즉시]** 및 사용 **[!UICONTROL 자동 업로드 활성화]** 기능.
 
 ### Dynamic Media Classic에 푸시된 에셋의 상태를 게시 취소로 설정 {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
->사용자가 Experience Manager에서 에셋을 게시하면 S7 에셋이 프로덕션/라이브 에셋으로 자동으로 트리거됩니다(에셋이 더 이상 보안 미리 보기/게시 취소에 있지 않음).
+사용자가 Experience Manager에서 에셋을 게시하면 S7 에셋이 프로덕션/라이브 에셋으로 자동으로 트리거됩니다(에셋이 더 이상 보안 미리 보기/게시 취소에 있지 않음).
 
 **Dynamic Media Classic에 푸시된 에셋의 상태를 게시 취소로 설정하려면 다음을 수행합니다.**
 
@@ -459,7 +459,7 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 
 보안 미리 보기를 활성화하면 자산이 게시 취소된 보안 미리 보기 서버로 푸시됩니다.
 
-다음을 확인: **[!UICONTROL 보안 미리 보기]** 이 활성화되어 있으면 Experience Manager 페이지의 Dynamic Media Classic 구성 요소로 이동합니다. **[!UICONTROL 편집]**&#x200B;을 선택합니다. 자산에는 URL에 나열된 보안 미리보기 서버가 있습니다. Experience Manager에 게시하면 파일 참조의 서버 도메인이 미리보기 URL에서 프로덕션 URL로 업데이트됩니다.
+다음을 확인: **[!UICONTROL 보안 미리 보기]** 이 활성화되어 있으면 Experience Manager 페이지의 Dynamic Media Classic 구성 요소로 이동합니다. 선택 **[!UICONTROL 편집]**. 자산에는 URL에 나열된 보안 미리보기 서버가 있습니다. Experience Manager에 게시하면 파일 참조의 서버 도메인이 미리보기 URL에서 프로덕션 URL로 업데이트됩니다.
 
 ### WCM용 Dynamic Media Classic 활성화 {#enabling-scene-for-wcm}
 
@@ -513,7 +513,7 @@ Dynamic Media Classic 구성이 여러 개 있는 경우 그 중 하나를 Dynam
 
    >[!NOTE]
    >
-   >구성이 하나만 있는 경우 **[!UICONTROL 기본 구성]** 확인란은 영향을 주지 않습니다.
+   구성이 하나만 있는 경우 **[!UICONTROL 기본 구성]** 확인란은 영향을 주지 않습니다.
 
 ### 임시 폴더 구성 {#configuring-the-ad-hoc-folder}
 
@@ -564,17 +564,17 @@ Digital Asset Manager/Dynamic Media Classic 에셋의 동기화에 의해 트리
 1. CRXDE Lite 페이지 오른쪽에서 **[!UICONTROL 속성]** 탭.
 1. 에서 Dynamic Media Classic 업로드 작업 매개 변수를 지정합니다. **[!UICONTROL jobParam]** 값 필드.
 
-   예: `psprocess="rasterize"&psresolution=120`
+   예를 들어, `psprocess="rasterize"&psresolution=120` .
 
    다음을 참조하십시오. [Adobe Dynamic Media Classic 이미지 프로덕션 시스템 API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) 추가 업로드 작업 매개 변수를 사용할 수 있습니다.
 
    >[!NOTE]
    >
-   >PSD 파일을 업로드하고 레이어 추출이 있는 템플릿으로 처리하려면 **[!UICONTROL jobParam]** 값 필드:
+   PSD 파일을 업로드하고 레이어 추출이 있는 템플릿으로 처리하려면 **[!UICONTROL jobParam]** 값 필드:
    >
-   >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
+   `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   >PSD 파일에 &quot;레이어&quot;가 있는지 확인하십시오. 엄밀히 말하면 하나의 이미지이거나 마스크가 있는 이미지라면, 처리할 레이어가 없기 때문에 이미지로 처리된다.
+   PSD 파일에 &quot;레이어&quot;가 있는지 확인하십시오. 엄밀히 말하면 하나의 이미지이거나 마스크가 있는 이미지라면, 처리할 레이어가 없기 때문에 이미지로 처리된다.
 
 1. CRXDE Lite 페이지의 왼쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 모두 저장]**.
 
@@ -616,6 +616,6 @@ Experience Manager을 Dynamic Media Classic과 통합하는 데 문제가 있는
 
 >[!CAUTION]
 >
->기존 Dynamic Media Classic 회사 계정에서 자산을 가져오는 경우 Experience Manager에 표시되는 데 시간이 오래 걸릴 수 있습니다. Dynamic Media Classic에서 에셋이 너무 많지 않은 폴더를 지정해야 합니다. 예를 들어 루트 폴더에 에셋이 너무 많은 경우가 있습니다.
+기존 Dynamic Media Classic 회사 계정에서 자산을 가져오는 경우 Experience Manager에 표시되는 데 시간이 오래 걸릴 수 있습니다. Dynamic Media Classic에서 에셋이 너무 많지 않은 폴더를 지정해야 합니다. 예를 들어 루트 폴더에 에셋이 너무 많은 경우가 있습니다.
 >
->통합을 테스트하려면 루트 폴더가 전체 회사 대신 하위 폴더만 가리키도록 해야 합니다.
+통합을 테스트하려면 루트 폴더가 전체 회사 대신 하위 폴더만 가리키도록 해야 합니다.

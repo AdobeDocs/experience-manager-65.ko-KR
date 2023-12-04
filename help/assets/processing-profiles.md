@@ -9,9 +9,9 @@ docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 * [이미지 프로필](/help/assets/image-profiles.md)
 * [비디오 프로필](/help/assets/video-profiles.md)
 
-메타데이터, 이미지 또는 비디오 프로필을 만들고, 편집하고, 삭제하려면 관리자 권한이 있어야 합니다.
+메타데이터, 이미지 또는 비디오 프로필을 만들고, 편집하고, 삭제하려면 관리자 권한이 필요합니다.
 
 메타데이터, 이미지 또는 비디오 프로필을 만든 후에는 새로 업로드한 에셋의 대상으로 사용하는 하나 이상의 폴더에 할당합니다.
 

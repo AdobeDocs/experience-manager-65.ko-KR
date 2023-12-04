@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1823'
-ht-degree: 17%
+source-wordcount: '1787'
+ht-degree: 12%
 
 ---
 
@@ -47,19 +47,19 @@ AEM과 Adobe Campaign Standard 간의 통합을 구성하려면 두 솔루션에
 
 ## Campaign에서 aemserver 사용자 구성 {#aemserver-user}
 
-Adobe Campaign Standard에는 기본적으로 `aemserver` AEM에서 Adobe Campaign에 연결하는 데 사용하는 사용자입니다. 이 사용자에게 적절한 보안 그룹을 할당하고 암호를 설정해야 합니다.
+Adobe Campaign Standard에는 기본적으로 `aemserver` AEM에서 Adobe Campaign에 연결하는 데 사용하는 사용자입니다. 이 사용자에게 적절한 보안 그룹을 할당하고 암호를 설정합니다.
 
 1. 관리자로 Adobe Campaign에 로그인합니다.
 
-1. 메뉴 모음의 왼쪽 상단에서 Adobe Campaign 로고를 탭하거나 클릭하여 전역 탐색을 연 다음 을 선택합니다 **관리** > **사용자 및 보안** > **사용자** 를 클릭합니다.
+1. 메뉴 모음의 왼쪽 상단에서 Adobe Campaign 로고를 클릭하여 전역 탐색을 연 다음 을 선택합니다 **관리** > **사용자 및 보안** > **사용자** 를 클릭합니다.
 
-1. 을(를) 탭하거나 클릭합니다 `aemserver` 사용자 콘솔에서 을 선택합니다.
+1. 다음을 클릭합니다. `aemserver` 사용자 콘솔에서 을 선택합니다.
 
 1. 다음을 확인합니다. `aemserver` 사용자는 최소한 역할이 있는 보안 그룹에 할당됩니다. `deliveryPrepare` 할당되었습니다. 기본적으로 그룹 `Standard Users` 이(가) 이 역할을 합니다.
 
    ![Adobe Campaign의 aemserver 사용자](assets/acs-aemserver-user.png)
 
-1. **저장**&#x200B;을 탭하거나 클릭하여 변경 내용을 저장합니다.
+1. 클릭 **저장** 변경 내용을 저장합니다.
 
 사용자 `aemserver` 이제 AEM이 Adobe Campaign과 통신하는 데 사용할 수 있도록 사용자에게 필요한 권한이 있습니다.
 
@@ -73,9 +73,9 @@ Adobe Campaign Standard에는 기본적으로 `aemserver` AEM에서 Adobe Campai
 
 1. 관리자로 Adobe Campaign에 로그인합니다.
 
-1. 메뉴 모음의 왼쪽 상단에서 Adobe Campaign 로고를 탭하거나 클릭하여 전역 탐색을 연 다음 을 선택합니다 **관리** > **응용 프로그램 설정** > **옵션** 를 클릭합니다.
+1. 메뉴 모음의 왼쪽 상단에서 Adobe Campaign 로고를 클릭하여 전역 탐색을 연 다음 을 선택합니다 **관리** > **응용 프로그램 설정** > **옵션** 를 클릭합니다.
 
-1. 을(를) 탭하거나 클릭합니다 `AEMResourceTypeFilter` 옵션 콘솔에서 을 참조하십시오.
+1. 다음을 클릭합니다. `AEMResourceTypeFilter` 옵션 콘솔에서 을 참조하십시오.
 
 1. 구성 확인 `AEMResourceTypeFilter`. 경로는 쉼표로 구분되며 기본적으로 다음을 포함합니다.
 
@@ -85,17 +85,17 @@ Adobe Campaign Standard에는 기본적으로 `aemserver` AEM에서 Adobe Campai
 
    ![AEMResourceTypeFilter](assets/acs-aem-resource-type-filter.png)
 
-1. **저장**&#x200B;을 탭하거나 클릭하여 변경 내용을 저장합니다.
+1. 클릭 **저장** 변경 내용을 저장합니다.
 
 사용자 `AEMResourceTypeFilter` 이제 AEM에서 올바른 컨텐츠를 검색하도록 구성되었습니다.
 
 ## Campaign에서 AEM 관련 이메일 게재 템플릿 만들기 {#aem-email-delivery-template}
 
-기본적으로 AEM은 Adobe Campaign의 이메일 템플릿에서 활성화되지 않습니다. AEM 콘텐츠를 사용하여 이메일을 만드는 데 사용할 수 있는 새 이메일 게재 템플릿을 구성해야 합니다. AEM 관련 이메일 게재 템플릿을 만들려면 다음 단계를 수행하십시오.
+기본적으로 AEM은 Adobe Campaign의 이메일 템플릿에서 활성화되지 않습니다. AEM 콘텐츠를 사용하여 이메일을 만드는 데 사용할 수 있는 새 이메일 게재 템플릿을 구성합니다. AEM 관련 이메일 게재 템플릿을 만들려면 다음 단계를 수행하십시오.
 
 1. 관리자로 Adobe Campaign에 로그인합니다.
 
-1. 메뉴 모음의 왼쪽 상단에서 Adobe Campaign 로고를 탭하거나 클릭하여 전역 탐색을 연 다음 을 선택합니다 **리소스** > **템플릿** > **게재 템플릿** 를 클릭합니다.
+1. 메뉴 모음의 왼쪽 상단에서 Adobe Campaign 로고를 클릭하여 전역 탐색을 연 다음 을 선택합니다 **리소스** > **템플릿** > **게재 템플릿** 를 클릭합니다.
 
 1. 게재 템플릿 콘솔에서 기본 이메일 템플릿을 찾습니다 **이메일(메일)로 보내기** 마우스를 카드(또는 선) 위에 놓아 옵션을 표시합니다. 클릭 **요소 복제**.
 
@@ -163,17 +163,17 @@ AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하�
 
 1. 관리자 자격으로 AEM 제작 인스턴스에 로그인합니다.
 
-1. 전역 탐색 측면 레일에서 을 선택합니다. **도구** > **배포** > **복제** > **작성자의 에이전트**&#x200B;을 클릭한 다음 을 탭하거나 클릭합니다 **기본 에이전트(게시)**.
+1. 전역 탐색 측면 레일에서 을 선택합니다. **도구** > **배포** > **복제** > **작성자의 에이전트**&#x200B;을 클릭한 다음 을 클릭합니다 **기본 에이전트(게시)**.
 
    ![복제 에이전트 구성](assets/acc-replication-config.png)
 
-1. 탭 또는 클릭 **편집** 그런 다음 **전송** 탭.
+1. 클릭 **편집** 그런 다음 **전송** 탭.
 
 1. 구성 **URI** 기본값을 대체한 필드 `localhost` AEM 게시 인스턴스의 IP 주소가 있는 값입니다.
 
    ![전송 탭](assets/acc-transport-tab.png)
 
-1. 탭 또는 클릭 **확인** 에이전트 설정에 대한 변경 사항을 저장합니다.
+1. 클릭 **확인** 에이전트 설정에 대한 변경 사항을 저장합니다.
 
 캠페인 수신자가 콘텐츠에 액세스할 수 있도록 AEM 게시 인스턴스에 대한 복제를 구성했습니다.
 
@@ -185,7 +185,7 @@ AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하�
 
 ## AEM 외부화 구성 {#externalizer}
 
-[외부화는 AEM의 OSGi 서비스로, 리소스 경로를 외부 및 절대 URL로 변환합니다. 이는 Campaign에서 사용 가능한 콘텐츠를 AEM이 제공하는 데 필요합니다. ](/help/sites-developing/externalizer.md) Campaign 통합이 작동하도록 구성해야 합니다.
+[Externalizer](/help/sites-developing/externalizer.md) 는 AEM의 OSGi 서비스로, 리소스 경로를 외부 및 절대 URL로 변환합니다. 이는 Campaign에서 사용할 수 있는 콘텐츠를 AEM이 제공하는 데 필요합니다. Campaign 통합이 작동하도록 구성합니다.
 
 1. 관리자 자격으로 AEM 제작 인스턴스에 로그인합니다.
 1. 전역 탐색 측면 레일에서 을 선택합니다. **도구** > **작업** > **웹 콘솔** > **OSGi 구성** 및 검색 **일별 CQ 링크 외부화**.
@@ -193,7 +193,7 @@ AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하�
 
    ![외부화 구성](assets/acc-externalizer-config.png)
 
-1. **저장**&#x200B;을 탭하거나 클릭합니다.
+1. **저장**&#x200B;을 클릭합니다.
 
 외부화를 구성했으므로 Adobe Campaign에서 이제 콘텐츠에 액세스할 수 있습니다.
 
@@ -206,7 +206,7 @@ AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하�
 AEM에서 Adobe Campaign과 통신하는 데 사용할 수 있는 Adobe Campaign의 사용자가 필요한 것처럼 Adobe Campaign에서도 AEM과의 통신을 위해 AEM의 사용자가 필요합니다. 기본적으로 Campaign 통합은 `campaign-remote` AEM의 사용자 이 사용자를 구성하려면 다음 단계를 따르십시오.
 
 1. 관리자로 AEM에 로그인합니다.
-1. 메인 탐색 콘솔에서 왼쪽 레일의 **도구**&#x200B;를 클릭합니다.
+1. 메인 탐색 콘솔에서 을 클릭합니다. **도구** 왼쪽 레일에서.
 1. 그런 다음 **보안** > **사용자** 을 클릭하여 사용자 관리 콘솔을 엽니다.
 1. `campaign-remote` 사용자를 찾습니다.
 1. `campaign-remote` 사용자를 선택한 뒤 **속성**&#x200B;을 클릭하여 사용자를 편집합니다.
@@ -221,9 +221,9 @@ AEM에서 Adobe Campaign과 통신하는 데 사용할 수 있는 Adobe Campaign
 
 1. 관리자로 Adobe Campaign에 로그인합니다.
 
-1. 메뉴 모음의 왼쪽 상단에서 Adobe Campaign 로고를 탭하거나 클릭하여 전역 탐색을 연 다음 을 선택합니다 **관리** > **응용 프로그램 설정** > **외부 계정** 를 클릭합니다.
+1. 메뉴 모음의 왼쪽 상단에서 Adobe Campaign 로고를 클릭하여 전역 탐색을 연 다음 을 선택합니다 **관리** > **응용 프로그램 설정** > **외부 계정** 를 클릭합니다.
 
-1. 을(를) 탭하거나 클릭합니다 **Adobe Experience Manager 인스턴스(aemInstance)** 사용자 콘솔에서 을 선택합니다.
+1. 다음을 클릭합니다. **Adobe Experience Manager 인스턴스(aemInstance)** 사용자 콘솔에서 을 선택합니다.
 
 1. 사용자에게 다음이 있는지 확인합니다. **Adobe Experience Manager** (으)로 **유형**.
 

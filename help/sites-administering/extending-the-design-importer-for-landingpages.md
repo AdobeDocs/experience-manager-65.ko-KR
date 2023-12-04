@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3443'
 ht-degree: 0%
 
 ---
@@ -58,10 +58,10 @@ Importer 페이지를 만든 후 전체 HTML 랜딩 페이지를 가져올 수 �
 
 zip의 샘플 레이아웃은 다음과 같습니다.
 
-* /index.html -> 랜딩 페이지 HTML 파일
-* /css -> CSS clientlib에 추가합니다.
-* /img -> 모든 이미지와 에셋
-* /js -> JS clientlib에 추가
+* /index.html > 랜딩 페이지 HTML 파일
+* /css > CSS clientlib에 추가합니다.
+* /img > 모든 이미지 및 에셋
+* /js > JS clientlib에 추가
 
 레이아웃은 HTML5 Boilerplate 모범 사례 레이아웃을 기반으로 합니다. 자세한 내용: [https://html5boilerplate.com/](https://html5boilerplate.com/)
 

@@ -1,19 +1,19 @@
 ---
-title: SAP Commerce Cloud를 사용하여 개발
+title: SAP Commerce Cloud을 사용하여 개발
 description: SAP Commerce Cloud 통합 프레임워크는 API와 통합 계층을 포함합니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2288'
-ht-degree: 1%
+source-wordcount: '2303'
+ht-degree: 0%
 
 ---
 
-# SAP Commerce Cloud를 사용하여 개발 {#developing-with-sap-commerce-cloud}
+# SAP Commerce Cloud을 사용하여 개발 {#developing-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -562,16 +562,16 @@ AEM과 다양한 eCommerce 시스템 간에 통합이 제공됩니다. 이를 �
 
 AEM 프론트 엔드는 기존 hybris 구현 앞에 위치할 수 있습니다. 또한 기존 AEM 설치에 hybris 엔진을 추가할 수 있습니다. 이렇게 하려면 시스템에서 다음 두 시스템 중 하나에서 기존 사용자를 정상적으로 처리할 수 있어야 합니다.
 
-* AEM -> hybris
+* AEM > hybris
 
    * hybris에 로그인할 때 AEM 사용자가 없는 경우:
 
       * 암호학적으로 무작위 암호를 사용하여 hybris 사용자 만들기
       * AEM 사용자의 사용자 디렉토리에 hybris 사용자 이름을 저장합니다.
 
-   * 자세한 내용은: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
+   * 다음을 참조하십시오. `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
-* hybris -> AEM
+* hybris > AEM
 
    * AEM에 로그인할 때 시스템에서 사용자를 인식하는 경우:
 
@@ -580,7 +580,7 @@ AEM 프론트 엔드는 기존 hybris 구현 앞에 위치할 수 있습니다. 
 
    * 위의 알고리즘은 Sling으로 구현됩니다 `AuthenticationInfoPostProcessor`
 
-      * 자세한 내용은: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
+      * 다음을 참조하십시오. `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
 
 ### 가져오기 프로세스 사용자 정의 {#customizing-the-import-process}
 

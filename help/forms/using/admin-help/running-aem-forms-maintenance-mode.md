@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 exl-id: 6f5ce18b-26b4-4c31-b48a-43ccbb3912f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >유지 관리 모드일 때 서버를 종료해도 다시 시작할 때 유지 관리 모드가 됩니다. 유지 관리 작업을 마치면 유지 관리 모드를 해제해야 합니다.
+   >유지 관리 모드일 때 서버를 종료해도 다시 시작할 때 유지 관리 모드입니다. 유지 관리 작업을 마치면 유지 관리 모드를 해제합니다.
 
 **AEM Forms가 유지 관리 모드에서 실행되고 있는지 확인**
 

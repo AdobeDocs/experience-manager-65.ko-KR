@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 11%
+source-wordcount: '2072'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ A [조건자 범위](#predicates-and-their-settings)s는 즉시 사용할 수 �
 
    * **일반**
 
-      * **검색 양식**
+      * **Forms 검색**
 
 이 콘솔에 처음 액세스하면 모든 구성에 자물쇠 기호가 있음을 알 수 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 구성을 사용자 지정한 후에는 다음을 수행하지 않는 한 잠금이 사라집니다. [사용자 지정된 구성 삭제](#deleting-a-configuration-to-reinstate-the-default). 이 경우 기본값(및 자물쇠 표시기)이 복원됩니다.
 
@@ -72,7 +72,7 @@ A [조건자 범위](#predicates-and-their-settings)s는 즉시 사용할 수 �
 
   이 구성은 에셋 브라우저에서 비디오를 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
 
-* **자산 관리자 검색 레일:**
+* **에셋 관리자 검색 레일:**
 
   이 구성은 에셋 콘솔을 사용할 때 사용자가 사용할 수 있는 검색 옵션을 정의합니다.
 
@@ -203,7 +203,7 @@ A [조건자 범위](#predicates-and-their-settings)s는 즉시 사용할 수 �
     </ul> </td>
   </tr>
   <tr>
-   <td>옵션 속성 </td>
+   <td>Options 속성 </td>
    <td>옵션의 속성을 검색합니다.</td>
    <td>
     <ul>
@@ -506,7 +506,7 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
 1. 를 엽니다. **Forms 검색** 콘솔을 클릭하고 업데이트할 구성을 선택합니다. 예를 들어, **사이트 관리자 검색 레일**.
 
-   그런 다음 을 클릭/탭합니다. **검색 양식 편집** 아이콘.
+   그런 다음 **검색 양식 편집** 아이콘.
 
 1. 구성에 따라 **옵션** 또는 **Options 속성** 구성을 참조하십시오.
 1. 필드를 업데이트합니다. 특히

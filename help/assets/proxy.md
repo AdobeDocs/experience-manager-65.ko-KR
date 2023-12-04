@@ -4,9 +4,9 @@ description: 프록시는 [!DNL Experience Manager] 프록시 작업자를 사�
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
    예를 들어 다음을 참조하십시오. `IDSJob.IDS_EXTENDSCRIPT_JOB` IDS 프록시 작업자.
 
-1. 외부 단계는 이벤트를 트리거한 다음 완료될 때까지 기다리는 데 사용됩니다. 이 작업은 ID에 대한 폴링을 통해 수행됩니다. 새로운 기능을 구현하려면 나만의 단계를 개발해야 합니다.
+1. 외부 단계는 이벤트를 트리거한 다음 완료될 때까지 기다리는 데 사용됩니다. 이 작업은 ID에 대한 폴링을 통해 수행됩니다. 새로운 기능을 구현하기 위한 나만의 단계를 개발하십시오.
 
    구현 `WorkflowExternalProcess`그런 다음 JobService API와 작업 주제를 사용하여 작업 이벤트를 준비하고 JobService(OSGi 서비스)에 발송합니다.
 

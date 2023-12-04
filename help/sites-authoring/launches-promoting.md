@@ -1,19 +1,17 @@
 ---
 title: 론치 홍보
 description: 게시 전에 론치 페이지를 홍보하여 콘텐츠를 소스(프로덕션)로 다시 이동합니다.
-uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -62,7 +60,7 @@ ht-degree: 77%
 
    * 다음 **론치** 콘솔:
 
-      1. 론치를 선택합니다(썸네일 탭/클릭).
+      1. 론치를 선택합니다(썸네일 클릭).
       1. **홍보**&#x200B;를 선택합니다.
 
 1. 첫 번째 단계에서 다음을 지정할 수 있습니다.

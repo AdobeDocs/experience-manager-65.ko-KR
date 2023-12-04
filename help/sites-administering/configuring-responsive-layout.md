@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 5%
+source-wordcount: '1275'
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 
       * 사용자가 페이지에 추가할 수 있는 구성 요소입니다.
       * 를 페이지의 기본 parsys로 사용합니다.
-      * 모두.
+      * 둘 다.
 
         레이아웃 컨테이너를 페이지의 표준으로 사용할 수 있으며, 사용자가 이 내에 레이아웃 컨테이너를 더 추가할 수 있습니다(예: 열 제어 달성).
 
@@ -63,7 +63,7 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 
 >[!NOTE]
 >
->기본 설치에서 다음에 대한 응답형 레이아웃 이 구성되었습니다. [We.Retail 참조 사이트](/help/sites-developing/we-retail.md). 아직 다음을 수행해야 합니다 [레이아웃 컨테이너 구성 요소 활성화](#enable-the-layout-container-component-for-page) 다른 페이지의 경우.
+>기본 설치에서 다음에 대한 응답형 레이아웃 이 구성되었습니다. [We.Retail 참조 사이트](/help/sites-developing/we-retail.md). [레이아웃 컨테이너 구성 요소 활성화](#enable-the-layout-container-component-for-page) 다른 페이지의 경우.
 
 ## 응답형 에뮬레이터 구성 {#configuring-the-responsive-emulator}
 
@@ -241,7 +241,7 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
 
 예:
 
-* 이전:
+* 전:
 
    * `width=100px`
 

@@ -3,10 +3,10 @@ title: Adobe Experience Manager에서 컨텐츠를 작성하도록 리치 텍스
 description: Adobe Experience Manager에서 컨텐츠를 작성하도록 Adobe Experience Manager 리치 텍스트 편집기를 구성하는 방법에 대해 알아봅니다.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2921'
-ht-degree: 1%
+source-wordcount: '2883'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 ### 인라인 편집 {#inline-editing}
 
-열면(느리게 두 번 탭/클릭) 페이지 내에서 콘텐츠를 편집할 수 있습니다. 매우 기본적인 옵션이 있는 작은 도구 모음이 표시됩니다.
+열면(느리게 두 번 클릭) 페이지 내에서 콘텐츠를 편집할 수 있습니다. 매우 기본적인 옵션이 있는 작은 도구 모음이 표시됩니다.
 
 ![터치 지원 UI에서 기본 도구 모음을 사용하여 인라인 편집](assets/chlimage_1-36.png)
 
@@ -108,12 +108,12 @@ RTE의 기본 기능은 의 값에 따라 활성화되거나 비활성화됩니�
 | 플러그인 ID | 기능 | 설명 |
 |--- |--- |--- |
 | 편집 | 잘라내기 복사 붙여넣기-기본 붙여넣기-일반 텍스트 붙여넣기-단어 html | [잘라내기, 복사 및 세 가지 붙여넣기 모드](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| 핀드레플레이스 | 바꾸기 찾기 | 찾기 및 바꾸기. |
+| 핀드레플레이스 | 바꾸기 찾기 | 찾아 바꾸기. |
 | 형식 | 굵은 기울임꼴 밑줄 | [기본 텍스트 서식](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | 이미지 | 이미지 | 기본 이미지 지원(콘텐츠 또는 콘텐츠 파인더에서 드래그). 브라우저에 따라 작성자에 대한 지원 동작이 다릅니다 |
 | 키 |  | 이 값을 정의하려면 다음을 참조하십시오 [탭 크기](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
 | 양쪽 맞춤 | justifyleft justifycenter justifyright | 단락 정렬. |
-| links | modifylink 연결 해제 앵커 | [하이퍼링크 및 앵커](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
+| 링크 | modifylink 연결 해제 앵커 | [하이퍼링크 및 앵커](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
 | 목록 | 순서가 지정되지 않은 들여쓰기 내어쓰기 | 이 플러그인은 두 가지 작업을 모두 제어합니다. [들여쓰기 및 목록](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); 중첩된 목록 포함. |
 | misctools | specialchars sourceedit | 기타 도구를 사용하면 작성자가 입력할 수 있습니다 [특수 문자](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) 또는 HTML 소스를 편집합니다. 또한 전체를 추가할 수도 있습니다 [특수 문자 범위](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) 고유한 목록을 정의하려는 경우 |
 | Paraformat | paraformat | 기본 단락 형식은 단락, 제목 1, 제목 2 및 제목 3 입니다(`<p>`, `<h1>`, `<h2>`, 및 `<h3>`). 다음을 수행할 수 있습니다. [더 많은 단락 형식 추가](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) 또는 목록을 확장합니다. |

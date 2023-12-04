@@ -11,10 +11,10 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 3%
+source-wordcount: '1319'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-복제를 수행하는 사용자 계정을 확인해야 합니다. 게시 인스턴스에 신뢰할 수 있는 작성자 인증서를 설치할 때 인증서가 이 사용자 계정에 연결됩니다.
+복제를 수행하는 사용자 계정을 확인합니다. 게시 인스턴스에 신뢰할 수 있는 작성자 인증서를 설치할 때 인증서가 이 사용자 계정에 연결됩니다.
 
 ## MSSL에 대한 자격 증명 가져오기 또는 만들기 {#obtaining-or-creating-credentials-for-mssl}
 
@@ -43,7 +43,7 @@ ht-degree: 3%
 
 * 개인 키는 pkcs#12 또는 JKS 형식으로 포함해야 합니다.
 * 인증서는 pkcs#12 또는 JKS 형식이어야 합니다. &quot;CER&quot; 형식에 포함된 인증서를 Granite Truststore에 추가할 수도 있습니다.
-* 인증서는 자체 서명되거나 인증된 CA에 의해 서명될 수 있습니다.
+* 인증서는 자체 서명하거나 인증된 CA에 의해 서명될 수 있습니다.
 
 ### JKS 형식 {#jks-format}
 
@@ -69,7 +69,7 @@ Java를 사용하여 다음 단계를 수행합니다 `keytool` 개인 키 및 �
 
    | 옵션 | 작성 | 게시 |
    |---|---|---|
-   | -alias | 작성자 | 페이지를 |
+   | -alias | 작성자 | 게시 |
    | -keystore | author.keystore | publish.keystore |
 
 1. 인증서를 내보내려면 아래 표의 옵션 값을 사용하여 다음 명령을 입력합니다.
@@ -80,7 +80,7 @@ Java를 사용하여 다음 단계를 수행합니다 `keytool` 개인 키 및 �
 
    | 옵션 | 작성 | 게시 |
    |---|---|---|
-   | -alias | 작성자 | 페이지를 |
+   | -alias | 작성자 | 게시 |
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
@@ -120,7 +120,7 @@ pkcs#12 형식의 개인 키와 인증서를 생성합니다. 사용 [openSSL](h
    | 옵션 | 작성 | 게시 |
    |---|---|---|
    | -signkey | author.key | publish.key |
-   | -위치 | author_request.csr | publish_request.csr |
+   | -in | author_request.csr | publish_request.csr |
    | -out | author.cer | publish.cer |
 
 1. 개인 키와 서명된 인증서를 pkcs#12 파일에 추가하려면 아래 표의 옵션 값을 사용하여 다음 명령을 입력합니다.
@@ -133,8 +133,8 @@ pkcs#12 형식의 개인 키와 인증서를 생성합니다. 사용 [openSSL](h
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
-   | -위치 | author.cer | publish.cer |
-   | -이름 | 작성자 | 페이지를 |
+   | -in | author.cer | publish.cer |
+   | -name | 작성자 | 게시 |
 
 ## 작성자에 개인 키 및 TrustStore 설치 {#install-the-private-key-and-truststore-on-author}
 
@@ -148,7 +148,7 @@ pkcs#12 형식의 개인 키와 인증서를 생성합니다. 사용 [openSSL](h
 ### 작성자 개인 키 설치 {#install-the-author-private-key}
 
 1. 작성자 인스턴스의 사용자 관리 페이지를 엽니다. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. 사용자 계정의 속성을 열려면 사용자 이름을 클릭하거나 탭합니다.
+1. 사용자 계정의 속성을 열려면 사용자 이름을 클릭합니다.
 1. 계정 설정 영역에 KeyStore 만들기 링크가 나타나면 링크를 클릭합니다. 암호를 구성하고 [확인]을 클릭합니다.
 1. 계정 설정 영역에서 키 저장소 관리를 클릭합니다.
 
@@ -167,7 +167,7 @@ pkcs#12 형식의 개인 키와 인증서를 생성합니다. 사용 [openSSL](h
 ### 게시 인증서 설치 {#install-the-publish-certificate}
 
 1. 작성자 인스턴스의 사용자 관리 페이지를 엽니다. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. 사용자 계정의 속성을 열려면 사용자 이름을 클릭하거나 탭합니다.
+1. 사용자 계정의 속성을 열려면 사용자 이름을 클릭합니다.
 1. [계정 설정] 영역에 [TrustStore 생성] 링크가 나타나면 링크를 클릭하고 TrustStore에 대한 암호를 만든 다음 [확인]을 클릭합니다.
 1. 계정 설정 영역에서 TrustStore 관리를 클릭합니다.
 1. CER 파일에서 인증서 추가를 클릭합니다.
@@ -191,7 +191,7 @@ pkcs#12 형식의 개인 키와 인증서를 생성합니다. 사용 [openSSL](h
 ### Publish 개인 키 설치 {#install-the-publish-private-key}
 
 1. 게시 인스턴스에 대한 [사용자 관리] 페이지를 엽니다. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. 사용자 계정의 속성을 열려면 사용자 이름을 클릭하거나 탭합니다.
+1. 사용자 계정의 속성을 열려면 사용자 이름을 클릭합니다.
 1. 계정 설정 영역에 KeyStore 만들기 링크가 나타나면 링크를 클릭합니다. 암호를 구성하고 [확인]을 클릭합니다.
 1. 계정 설정 영역에서 키 저장소 관리를 클릭합니다.
 1. 키 저장소 파일에서 개인 키 추가를 클릭합니다.

@@ -9,10 +9,10 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 1%
+source-wordcount: '930'
+ht-degree: 2%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 1%
    * 대화형 이미지 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 대화형 비디오 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. 다음을 구성해야 합니다. `quickViewActivate` 핸들러입니다.
+1. 구성 `quickViewActivate` 핸들러입니다.
 
    다음 `quickViewActivate` 처리기는 뷰어의 빠른 보기를 제어합니다. 처리기에는 빠른 보기와 함께 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 빠른 보기에 설정된 SKU 변수와 샘플에 대한 매핑을 제공합니다 `loadQuickView` 함수 호출.
 

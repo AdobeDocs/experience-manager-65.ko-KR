@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 2%
+source-wordcount: '2687'
+ht-degree: 1%
 
 ---
 
@@ -313,7 +313,7 @@ vlt [options] <command> [arg1 [arg2 [arg3] ..]]
 | 명령 | 축약된 명령 | 설명 |
 | `export` |  | JCR 저장소(저장소 파일 시스템)에서 제어 파일이 없는 로컬 파일 시스템으로 내보냅니다. |
 | `import` |  | 로컬 파일 시스템을 JCR 저장소(저장소 파일 시스템)로 가져옵니다. |
-| `checkout` | `co` | Vault 파일 시스템을 체크아웃합니다. 로컬 파일 시스템에 대한 초기 JCR 저장소에 사용합니다. (참고: 먼저 하위 버전에서 저장소를 체크아웃해야 합니다.) |
+| `checkout` | `co` | Vault 파일 시스템을 체크아웃합니다. 로컬 파일 시스템에 대한 초기 JCR 저장소에 사용합니다. (참고: 먼저 하위 버전에서 저장소를 체크 아웃합니다.) |
 | `analyze` |  | 패키지 분석. |
 | `status` | `st` | 작업 복사본 파일 및 디렉터리의 상태를 인쇄합니다. |
 | `update` | `up` | 저장소에서 작업 복사본으로 변경 사항을 가져옵니다. |

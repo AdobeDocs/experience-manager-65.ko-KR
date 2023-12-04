@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 3%
+source-wordcount: '2306'
+ht-degree: 1%
 
 ---
 
@@ -484,13 +484,13 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    ![친환경 배지 최종 구현](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## 축하합니다 {#congratulations}
+## 축하합니다. {#congratulations}
 
 첫 번째 AEM CIF 구성 요소를 사용자 지정했습니다! 다운로드 [여기에서 솔루션 파일 완료됨](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## 보너스 챌린지 {#bonus-challenge}
 
-의 기능 검토 **신규** 제품 티저에 이미 구현된 배지입니다. 작성자가 다음을 실행할 시기를 제어할 수 있는 추가 확인란을 추가해 보십시오. **환경 친화적** 배지가 표시됩니다. 다음 위치에서 구성 요소 대화 상자를 업데이트해야 합니다. `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+의 기능 검토 **신규** 제품 티저에 이미 구현된 배지입니다. 작성자가 다음을 실행할 시기를 제어할 수 있는 추가 확인란을 추가해 보십시오. **환경 친화적** 배지가 표시됩니다. 다음 위치에서 구성 요소 대화 상자 업데이트 `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![새로운 배지 구현 과제](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 

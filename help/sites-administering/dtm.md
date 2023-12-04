@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 3%
+source-wordcount: '2148'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +58,7 @@ AEM 작성자 인스턴스가 동적 Tag Management 스테이징 코드를 사�
 
 AEM이 Dynamic Tag Management 라이브러리를 호스팅하면 Dynamic Tag Management 배포 후크 서비스를 사용하여 라이브러리 업데이트를 AEM에 자동으로 푸시할 수 있습니다. Dynamic Tag Management 웹 속성 속성을 편집할 때와 같이 라이브러리가 변경되면 라이브러리 업데이트가 푸시됩니다.
 
-배포 후크를 사용하려면 Dynamic Tag Management에서 라이브러리를 호스팅하는 AEM 인스턴스에 연결할 수 있어야 합니다. 다음을 수행해야 합니다. [AEM에 대한 액세스 활성화](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) Dynamic Tag Management 서버용
+배포 후크를 사용하려면 Dynamic Tag Management에서 라이브러리를 호스팅하는 AEM 인스턴스에 연결할 수 있어야 합니다. [AEM에 대한 액세스 활성화](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) Dynamic Tag Management 서버용
 
 AEM이 방화벽 뒤에 있는 경우와 같이 일부 상황에서 AEM에 연결할 수 없습니다. 이러한 경우 AEM 폴링 가져오기 옵션을 사용하여 라이브러리를 정기적으로 검색할 수 있습니다. cron 작업 표현식은 라이브러리 다운로드 일정을 나타냅니다.
 

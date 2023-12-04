@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 2%
+source-wordcount: '884'
+ht-degree: 3%
 
 ---
 
@@ -58,7 +58,7 @@ cURL의 소스 리포지토리는 GitHub에서도 찾을 수 있습니다.
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
 1. 클릭 **만들기** 다음에서 **페이지 만들기** 실제로 워크플로를 만드는 마법사.
-1. 결과 POST 작업을 마우스 오른쪽 버튼으로 클릭하고 다음을 선택합니다. **복사** -> **cURL로 복사**.
+1. 결과 POST 작업을 마우스 오른쪽 단추로 클릭하고 를 선택합니다 **복사** > **cURL로 복사**.
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 

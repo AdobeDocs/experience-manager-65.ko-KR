@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 웹 페이지를 열려면 문서 보안을 위해 브라우저와 URL 및 로그인 정보가 필요합니다. 사용자의 URL은 관리자의 URL과 다릅니다.
 
-Document Security는 사용자 정보를 위해 조직의 기존 디렉터리를 참조하므로 Document Security 로그인 정보는 네트워크 및 기타 애플리케이션에 로그인하는 데 사용하는 것과 동일한 정보일 수 있습니다. 계정 정보는 시스템 관리자 또는 관리자에게 문의하십시오.
+Document Security는 사용자 정보를 위해 조직의 기존 디렉터리를 참조하므로 Document Security 로그인 정보는 네트워크 및 다른 애플리케이션에 로그인하는 데 사용하는 것과 동일한 정보일 수 있습니다. 계정 정보는 시스템 관리자 또는 관리자에게 문의하십시오.
 
 관리자로 로그인하려면 관리자 역할이 할당되어 있어야 합니다. 설치 프로세스 중에 생성된 기본 수퍼 관리자 계정을 사용할 수 있습니다.
 
@@ -87,7 +87,7 @@ Document Security는 사용자 정보를 위해 조직의 기존 디렉터리를
 
 클라이언트 응용 프로그램은 문서 보안에 연결하여 문서를 보호하고 정책으로 보호된 문서를 열고 문서 보안 웹 페이지에 연결하도록 설정해야 합니다. 다음을 참조하십시오 *Acrobat 도움말* 또는 적절해 *RightsManagementExtension 도움말* 클라이언트 응용 프로그램 내에서 연결을 구성하는 방법에 대한 정보입니다.
 
-문서 보안은 SSL(Secure Sockets Layer)을 통해 액세스됩니다. 클라이언트 애플리케이션을 통해 문서 보안에 액세스할 수 있도록 인증서 저장소에 웹 사이트의 인증서를 설치해야 합니다.
+문서 보안은 SSL(Secure Sockets Layer)을 통해 액세스됩니다. 클라이언트 애플리케이션을 통해 문서 보안에 액세스할 수 있도록 인증서 저장소에 웹 사이트의 인증서를 설치합니다.
 
 <!-- Fix broken link See Configuring SSL for information on SSL.-->
 

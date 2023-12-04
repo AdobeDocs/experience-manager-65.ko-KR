@@ -1,22 +1,22 @@
 ---
 title: 작성 - AEM의 환경 및 도구
-description: AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다.
+description: AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 51%
+source-wordcount: '2246'
+ht-degree: 47%
 
 ---
 
 # 작성 - 환경 및 도구{#authoring-the-environment-and-tools}
 
-AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다. 제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스할 수 있습니다.
+AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다. 제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스됩니다.
 
 ## 사이트 관리 {#managing-your-site}
 
@@ -95,7 +95,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
    * 구성 요소를 이름별로 필터링합니다.
    * 드롭다운 선택을 사용하여 표시를 특정 그룹으로 제한합니다.
 
-  구성 요소에 대한 자세한 설명은 **구성 요소** 브라우저에서 구성 요소 옆에 있는 정보 아이콘을 클릭하거나 탭하여 확인할 수 있습니다(사용 가능한 경우). For example, for the **Layout Container**:
+  구성 요소에 대한 자세한 설명은에서 구성 요소 옆에 있는 정보 아이콘을 클릭하면 됩니다 **구성 요소** 브라우저(사용 가능한 경우). For example, for the **Layout Container**:
 
   ![ateat-06](assets/ateat-06.png)
 
@@ -243,8 +243,8 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 * [제품 페이지에 대한 참조](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (Commerce-Products 콘솔에서 사용 가능)
 * [론치](/help/sites-authoring/launches.md) 관련 론치에 대한 액세스를 제공합니다.
 * [Live Copy](/help/sites-administering/msm.md): 선택한 리소스를 기반으로 하는 모든 Live Copy의 경로 표시
-* [](/help/sites-administering/msm-best-practices.md)블루프린트: 세부 사항 및 여러 작업 제공.
-* [](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel)언어 사본: 세부 사항 및 여러 작업 제공.
+* [블루프린트](/help/sites-administering/msm-best-practices.md) 은 세부 사항 및 여러 작업을 제공합니다.
+* [언어 사본](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) 은 세부 사항 및 여러 작업을 제공합니다.
 
 예를 들어 참조 구성 요소 내에서 끊어진 참조를 수정할 수 있습니다.
 
@@ -344,8 +344,8 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* 리소스를 선택하면 대화 상자의 오른쪽 상단에 **선택** 버튼이 활성화됩니다. 클릭하거나 탭하여 옵션을 확인하거나 **취소**&#x200B;를 선택하여 중단할 수 있습니다.
-* 컨텍스트에서 여러 리소스를 선택할 수 있는 경우, 리소스를 선택하면 **선택** 버튼이 활성화되지만 선택한 리소스 수도 창의 오른쪽 상단에 추가됩니다. Click **X** next to the number to deselect all.
+* 리소스를 선택하면 대화 상자의 오른쪽 상단에 **선택** 버튼이 활성화됩니다. 클릭하여 선택 항목을 확인하거나 **취소** 중단합니다.
+* 컨텍스트에서 여러 리소스를 선택할 수 있는 경우, 리소스를 선택하면 **선택** 버튼이 활성화되지만 선택한 리소스 수도 창의 오른쪽 상단에 추가됩니다. 클릭 **X** 숫자 옆에 있는 을 클릭하여 모두 선택 취소합니다.
 * 트리를 탐색할 때 위치는 대화 상자 상단의 이동 경로에 반영됩니다. 이러한 이동 경로를 사용하여 리소스 계층 구조 내에서 빠르게 이동할 수도 있습니다.
 * 언제든지 대화 상자 상단의 검색 필드를 사용할 수 있습니다. 검색을 지우려면 검색 필드에서 **X**&#x200B;를 클릭합니다.
 * 검색 범위를 좁히려면 필터 옵션을 표시하고 특정 경로에 따라 결과를 필터링할 수 있습니다.

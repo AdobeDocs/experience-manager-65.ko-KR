@@ -8,10 +8,10 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 3%
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Communities은 다음에 대해 이메일을 사용합니다.
 
 다음 문서에 따라 결정됩니다. [이메일 알림 구성](../../help/sites-administering/notification.md), 하지만 필드에 차이가 있음 `"From" address` 은(는) *아님* 필수 항목이며, 비워 두어야 합니다.
 
-예를 들어 (설명 목적으로만 값으로 채워짐),
+예를 들어 (설명 목적으로만 값이 채워짐):
 
 ![email-config](assets/email-config.png)
 
@@ -193,11 +193,11 @@ AEM Communities은 다음에 대해 이메일을 사용합니다.
 
 * **[!UICONTROL 로그인]**
 
-  *(옵션)*
+  *(선택 사항)*
 
 * **[!UICONTROL 암호]**
 
-  *(옵션)*
+  *(선택 사항)*
 
 * 선택 **[!UICONTROL 확인]**.
 

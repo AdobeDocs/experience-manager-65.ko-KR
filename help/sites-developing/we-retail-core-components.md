@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 7%
+source-wordcount: '538'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 1. We.Retail 샘플 콘텐츠로 Adobe Experience Manager(AEM)를 시작하고 [구성 요소 콘솔](/help/sites-authoring/default-components-console.md).
 
-   **전역 탐색 -> 도구 -> 구성 요소**
+   **전역 탐색 > 도구 > 구성 요소**
 
 1. 구성 요소 콘솔에서 레일을 열면 특정 구성 요소 그룹에 대해 필터링할 수 있습니다. 핵심 구성 요소는에서 찾을 수 있습니다.
 
@@ -83,6 +83,6 @@ ht-degree: 7%
 
 ## 추가 정보 {#further-information}
 
-핵심 구성 요소에 대한 자세한 내용은 작성 문서를 참조하십시오 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko-KR) 기술 개요를 참조하십시오.
+핵심 구성 요소에 대한 자세한 내용은 작성 문서를 참조하십시오 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en) 기술 개요를 참조하십시오.
 
 또한 추가 조사를 원할 수 있습니다 [편집 가능한 템플릿](/help/sites-developing/we-retail-editable-templates.md). 작성 문서를 참조하십시오 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md) 편집 가능한 템플릿에 대한 자세한 내용을 살펴보십시오.

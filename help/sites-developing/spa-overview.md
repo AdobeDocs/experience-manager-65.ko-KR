@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 87%
+source-wordcount: '1644'
+ht-degree: 84%
 
 ---
 
@@ -50,7 +50,7 @@ SPA 페이지 구성 요소가 페이지 핵심 구성 요소로부터 상속받
 * 템플릿이 편집 가능한 경우 페이지 정책에 추가합니다.
 * 또는 `customfooterlibs.html`을 사용하여 범주를 추가합니다.
 
-SPA는 내보낸 모델의 각 리소스에 대한 렌더링을 수행할 실제 구성 요소를 매핑합니다. JSON으로 표시되는 모델은 컨테이너 내 구성 요소 매핑을 통해 렌더링됩니다.
+SPA는 내보낸 모델의 각 리소스에 대한 렌더링을 수행할 실제 구성 요소를 매핑합니다. 그런 다음 JSON으로 표시된 모델은 컨테이너 내의 구성 요소 매핑을 사용하여 렌더링됩니다.
 ![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]
@@ -78,7 +78,7 @@ SPA 편집기를 SPA와 AEM 간의 중재자로 간주하여 두 사이의 상�
 
 SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 높은 수준의 워크플로가 다음과 같이 작성자에게 표시됩니다.
 
-![untitled1](assets/untitled1.gif)
+![제목 없음1](assets/untitled1.gif)
 
 1. SPA 편집기가 로드됩니다.
 1. SPA는 별도의 프레임에 로드됩니다.
@@ -171,7 +171,7 @@ AEM SPA Editor SDK와 구동할 수 있도록 추가 SPA 프레임워크를 구�
 
 ### 여러 선택기 사용 {#multiple-selectors}
 
-추가 사용자 정의 선택기를 AEM SPA SDK용으로 개발된 SPA의 일부로 정의하고 사용할 수 있습니다. 단, 이 지원을 생성하려면 `model`선택기는 첫 번째 선택기가 되고 확장자는 JSON 내보내기의 요구 사항에 `.json`[따라야 합니다.](json-exporter-components.md#multiple-selectors)
+추가 사용자 정의 선택기를 AEM SPA SDK용으로 개발된 SPA의 일부로 정의하고 사용할 수 있습니다. 그러나 이 지원을 사용하려면 `model` 선택기는 첫 번째 선택기이며 확장은 다음과 같습니다. `.json` 다음으로: [json 내보내기에 필요합니다.](json-exporter-components.md#multiple-selectors)
 
 ### 텍스트 편집기 요구 사항 {#text-editor-requirements}
 

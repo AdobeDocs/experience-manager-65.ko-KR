@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 65%
+source-wordcount: '220'
+ht-degree: 52%
 
 ---
 
@@ -41,7 +41,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 >[!NOTE]
 >
->&amp;ast; 사용자가 미리보기 모드에서 페이지를 조작하면 `Ctrl-Shift-m` 단축키는 더 이상 사용할 수 없습니다. 이 단축키를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
+>&amp;ast; 사용자가 미리보기 모드에서 페이지를 조작하면 `Ctrl-Shift-m` 단축키는 더 이상 사용할 수 없습니다. 바로 가기를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
 
 데스크탑 사용자는 [콘솔](/help/sites-authoring/keyboard-shortcuts.md)을 사용하여 다양한 키보드 단축키를 사용할 수 있습니다.
 

@@ -1,5 +1,5 @@
 ---
-title: Client Context
+title: ClientContext
 description: Client Context를 사용하여 Adobe Experience Manager의 현재 페이지 및 방문자에 대한 정보를 보는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,15 +7,15 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1961'
 ht-degree: 0%
 
 ---
 
 
-# Client Context{#client-context}
+# ClientContext{#client-context}
 
 >[!NOTE]
 >
@@ -208,7 +208,7 @@ Client Context를 사용하면 대화식으로 세부 사항을 변경할 수 �
 
 ### 속성 구성 요소 추가 {#adding-a-property-component}
 
-을(를) 연 후 **ClientContext 디자인 페이지**, 다음과 같은 작업을 수행할 수도 있습니다 **추가** 사용 가능한 구성 요소를 사용하는 완전히 새로운 속성(구성 요소는 사이드 킥 또는 의 **새 구성 요소 삽입** 을 두 번 클릭한 후 열리는 대화 상자 **여기에 구성 요소 또는 자산을 끌어 놓으십시오.** box):
+을(를) 연 후 **ClientContext 디자인 페이지**, 다음과 같은 작업을 수행할 수도 있습니다 **추가** 사용 가능한 구성 요소를 사용하는 완전히 새로운 속성(구성 요소는 사이드 킥 또는 의 **새 구성 요소 삽입** 대화 상자를 두 번 클릭하면 열립니다. **여기에 구성 요소 또는 자산을 끌어 놓으십시오.** box):
 
 ![Client Context 창에 속성 추가](assets/clientcontext_alisonparker_new.png)
 
@@ -264,7 +264,7 @@ JSONP 저장소 구성 요소를 사용하여 만든 세션 저장소의 데이�
 
    1. 제목(Title)에 Winter를 입력합니다.
    1. 세그먼트 템플릿을 선택합니다.
-   1. 만들기를 클릭합니다.
+   1. 만들기 를 클릭합니다.
 
 1. 겨울 세그먼트를 마우스 오른쪽 버튼으로 클릭하고 열기 를 클릭합니다.
 1. 일반 저장소 속성을 기본 AND 컨테이너로 드래그합니다.
