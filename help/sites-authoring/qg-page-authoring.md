@@ -1,5 +1,5 @@
 ---
-title: 페이지 작성에 대한 빠른 안내
+title: 페이지 작성에 대한 빠른 안내서
 seo-title: Quick Guide to Authoring Pages
 description: 페이지 콘텐츠 작성의 주요 작업에 대한 빠른 개요 안내서
 seo-description: A quick, high-level guide to the key actions of authoring page content
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 77%
+source-wordcount: '1540'
+ht-degree: 62%
 
 ---
 
-# 페이지 작성에 대한 빠른 안내{#quick-guide-to-authoring-pages}
+# 페이지 작성에 대한 빠른 안내서{#quick-guide-to-authoring-pages}
 
 이러한 절차는 AEM에서 페이지 콘텐츠를 작성하는 주요 작업에 대한 빠른 안내(고급)입니다.
 
@@ -71,7 +71,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. 를 엽니다. **사이트** 콘솔 (사용 **사이트** 의 옵션 [전역 탐색](/help/sites-authoring/basic-handling.md#global-navigation)) - Adobe Experience Manager 링크(왼쪽 상단)를 선택하면 트리거됩니다(드롭다운).
 
-1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기([카드, 목록 또는 열](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources))에 따라 다릅니다.
+1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기에 따라 다릅니다. - [카드, 목록 또는 열](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
@@ -102,17 +102,17 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. 열 보기:
 
-   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 페이지가 선택되었음을 나타냅니다.
+   * 필요한 리소스에 대한 썸네일을 클릭합니다. 썸네일 위에 확인 표시가 나타나 썸네일이 선택되었음을 나타냅니다.
 
 1. 목록 보기:
 
-   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 페이지가 선택되었음을 나타냅니다.
+   * 필요한 리소스에 대한 썸네일을 클릭합니다. 썸네일 위에 확인 표시가 나타나 썸네일이 선택되었음을 나타냅니다.
 
 1. 카드 보기:
 
    * 다음 기준으로 선택 모드 시작 [필요한 리소스 선택](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) 포함:
 
-      * 모바일 장치: 길게 탭
+      * 모바일 장치: 길게 선택
       * 데스크탑: [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions) - 확인 표시 아이콘:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
@@ -158,24 +158,24 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * [페이지의](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 기존 구성 요소 콘텐츠를 편집합니다.
 
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. **편집**(연필) 아이콘을 사용하여 대화 상자를 엽니다.
-      * 탭한 상태를 유지하거나 느리게 더블 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우, 선택이 제한됨).
+      * 를 클릭하여 구성 요소 도구 모음을 엽니다. **편집**(연필) 아이콘을 사용하여 대화 상자를 엽니다.
+      * 선택하고 길게 누르거나 느리게 더블 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우, 선택이 제한됨).
       * 사용 가능한 모든 작업을 보려면 다음 아이콘을 사용하여 전체 화면 모드로 들어갑니다.
 
      ![전체 화면 모드](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [기존 구성 요소의 속성 구성](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. **구성**(렌치) 아이콘을 사용하여 대화 상자를 엽니다.
+      * 를 클릭하여 구성 요소 도구 모음을 엽니다. **구성**(렌치) 아이콘을 사용하여 대화 상자를 엽니다.
 
    * 다음 방법 중 하나로 [구성 요소를 이동](/help/sites-authoring/editing-content.md#moving-a-component)합니다.
 
       * 필요한 구성 요소를 새 위치로 끕니다.
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요한 경우 **잘라내기** 및 **붙여넣기** 아이콘을 사용합니다.
+      * 를 클릭하여 구성 요소 도구 모음을 엽니다. 사용 **잘라내기** 그러면 **붙여넣기** 필요한 아이콘입니다.
 
    * 구성 요소 [복사(및 붙여넣기):](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
 
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사** 및 **붙여넣기** 아이콘을 사용합니다.
+      * 를 클릭하여 구성 요소 도구 모음을 엽니다. 사용 **복사** 그러면 **붙여넣기** 필요에 따라 아이콘을 클릭합니다.
 
    >[!NOTE]
    >
@@ -183,7 +183,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * 구성 요소 [삭제:](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
 
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 열고 **삭제** 아이콘을 사용합니다.
+      * 를 클릭하여 구성 요소 도구 모음을 열고 다음을 사용합니다. **삭제** 아이콘.
 
    * 페이지에 [주석 추가](/help/sites-authoring/annotations.md#annotations):
 
@@ -305,7 +305,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
-1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고(해당되는 경우) 추가 작업을 수행합니다.
+1. 필요한 참조 유형을 클릭하여 자세한 내용을 표시하고(해당되는 경우) 추가 작업을 수행합니다.
 
 ### 페이지 버전 생성 {#creating-a-version-of-your-page}
 
@@ -315,7 +315,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. 타임라인 열 오른쪽 하단에 있는 위쪽 화살표를 탭/클릭하여 다음을 포함한 추가 단추를 표시합니다. **다른 버전으로 저장**.
+1. 타임라인 열 오른쪽 하단에 있는 위쪽 화살표를 클릭하여 다음을 포함한 추가 단추를 표시합니다. **다른 버전으로 저장**.
 
    ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
@@ -331,7 +331,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    페이지 버전이 이미 저장된 경우, 타임라인에 나열됩니다.
 
-1. 복원할 버전을 탭하거나 클릭합니다. 그러면 다음과 같은 추가 작업 버튼이 표시됩니다.
+1. 복원할 버전을 클릭합니다. 그러면 다음과 같은 추가 작업 버튼이 표시됩니다.
 
    * **이 버전으로 되돌리기**
 

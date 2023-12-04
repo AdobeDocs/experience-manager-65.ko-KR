@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: 654dcb7c9bbb73420df7494b21fddb8cb4fdd39a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1936'
-ht-degree: 8%
+source-wordcount: '1923'
+ht-degree: 9%
 
 ---
 
 # 적응형 양식 만들기 {#creating-an-adaptive-form}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -29,14 +29,14 @@ ht-degree: 8%
 
 1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다.
 
-   로그인한 후 왼쪽 상단에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 양식]** > **[!UICONTROL 양식 및 문서]**&#x200B;를 탭합니다.
+   로그인한 후 왼쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
 
    >[!NOTE]
    >
    >기본 설치의 경우 로그인은 다음과 같습니다. `admin` 그리고 암호는 `admin`.
 
-1. 누르기 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 적응형 양식]**.
-1. 템플릿을 선택하는 옵션이 나타납니다. 템플릿에 대한 자세한 내용은 [적응형 양식 템플릿](creating-adaptive-form.md#p-adaptive-form-templates-p). 템플릿을 탭하여 선택하고 다음 을 탭합니다.
+1. 선택 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 적응형 양식]**.
+1. 템플릿을 선택하는 옵션이 나타납니다. 템플릿에 대한 자세한 내용은 [적응형 양식 템플릿](creating-adaptive-form.md#p-adaptive-form-templates-p). 템플릿을 선택하여 선택하고 다음을 선택합니다.
 1. &#39;속성 추가&#39; 옵션이 표시됩니다. 다음 속성 필드에 대한 값을 지정합니다. 제목 및 이름 필드는 필수입니다.
 
    * **[!UICONTROL 제목:]** 양식의 표시 이름을 지정합니다. 제목은 [!DNL Experience Manager Forms] 사용자 인터페이스에서 형식을 식별하는 데 도움이 됩니다.
@@ -53,13 +53,13 @@ ht-degree: 8%
 
    다음에서 이를 구성할 수 있습니다. **[!UICONTROL 양식 모델]** 의 탭 **[!UICONTROL 속성 추가]** 페이지를 가리키도록 업데이트하는 중입니다. 기본적으로 선택된 양식 모델은 **[!UICONTROL 없음]**.
 
-1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다. 적응형 양식이 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 적응형 양식이 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다.
 
    모든 속성을 지정했으면 **[!UICONTROL 만들기]**. 적응형 양식이 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다.
 
    모든 속성을 지정했으면 **[!UICONTROL 만들기]**. 적응형 양식이 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다.
 
-1. 누르기 **[!UICONTROL 열기]** 새 탭에서 새로 만든 양식을 엽니다. 편집할 양식이 열리고 템플릿에서 사용할 수 있는 콘텐츠가 표시됩니다. 또한 요구 사항에 따라 새로 만든 양식을 사용자 정의할 수 있는 사이드바가 표시됩니다.
+1. 선택 **[!UICONTROL 열기]** 새 탭에서 새로 만든 양식을 엽니다. 편집할 양식이 열리고 템플릿에서 사용할 수 있는 콘텐츠가 표시됩니다. 또한 요구 사항에 따라 새로 만든 양식을 사용자 정의할 수 있는 사이드바가 표시됩니다.
 
    적응형 양식 유형에 따라 연관된 XFA 양식 템플릿, XML 스키마 또는 JSON 스키마에 있는 양식 요소가에 표시됩니다. **[!UICONTROL 데이터 모델 개체]** 의 탭 **[!UICONTROL 컨텐츠 브라우저]** 를 클릭합니다. 이러한 요소를 드래그 앤 드롭하여 적응형 양식을 작성할 수도 있습니다.
 
@@ -79,7 +79,7 @@ ht-degree: 8%
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. 탭하여 확장 **[!UICONTROL 양식 데이터 모델 선택]**. 사용 가능한 모든 양식 데이터 모델이 나열됩니다.
+1. 확장하려면 선택 **[!UICONTROL 양식 데이터 모델 선택]**. 사용 가능한 모든 양식 데이터 모델이 나열됩니다.
 
    데이터 모델에서 을(를) 선택합니다.
 
@@ -120,12 +120,12 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템이 데이터를 생성�
 
 XML 또는 JSON 스키마를 적응형 양식의 양식 모델로 사용하려면 다음을 수행하십시오.
 
-1. 다음에서 **[!UICONTROL 속성 추가]** 적응형 양식 만들기 페이지의 단계, **[!UICONTROL 양식 모델]** 탭.
+1. 다음에서 **[!UICONTROL 속성 추가]** 적응형 양식 만들기 페이지의 단계에서 **[!UICONTROL 양식 모델]** 탭.
 1. 양식 모델 탭에서 다음을 선택합니다. **[!UICONTROL 스키마]** 다음에서 **[!UICONTROL 다음에서 선택]** 드롭다운 필드.
 
-1. 누르기 **[!UICONTROL 스키마 선택]** 다음 중 하나를 수행합니다.
+1. 선택 **[!UICONTROL 스키마 선택]** 다음 중 하나를 수행합니다.
 
-   * **[!UICONTROL 디스크에서 업로드]** - 이 옵션을 선택하고 스키마 정의 업로드 를 탭하여 파일 시스템에서 XML 스키마 또는 JSON 스키마를 찾아 업로드합니다. 업로드된 스키마 파일은 양식과 함께 있으며 다른 적응형 양식에 액세스할 수 없습니다.
+   * **[!UICONTROL 디스크에서 업로드]** - 이 옵션을 선택하고 스키마 정의 업로드 를 선택하여 파일 시스템에서 XML 스키마 또는 JSON 스키마를 찾아 업로드합니다. 업로드된 스키마 파일은 양식과 함께 있으며 다른 적응형 양식에 액세스할 수 없습니다.
    * **[!UICONTROL 저장소에서 검색]** - 저장소에서 사용할 수 있는 스키마 정의 파일 목록에서 선택하려면 이 옵션을 선택합니다. XML 또는 JSON 스키마 파일을 양식 모델로 선택합니다. 선택한 스키마는 참조로 양식과 연결되고, 다른 적응형 양식에서 사용할 수 있습니다.
 
    >[!CAUTION]
@@ -146,7 +146,7 @@ XML 또는 JSON 스키마를 적응형 양식의 양식 모델로 사용하려�
 
 ## 적응형 양식 템플릿 {#adaptive-form-templates}
 
-템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. <!-- Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](installing-configuring-aem-forms-osgi.md).-->
+템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 여기에는 특정 속성 및 콘텐츠 구조를 포함하는 미리 형식이 지정된 구성 요소가 있습니다. <!-- Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](installing-configuring-aem-forms-osgi.md).-->
 
 또한 템플릿 편집기를 사용하여 나만의 템플릿을 만들 수도 있습니다. 템플릿 작업에 대한 자세한 내용은 [적응형 양식 템플릿](template-editor.md).
 
@@ -156,7 +156,7 @@ XML 또는 JSON 스키마를 적응형 양식의 양식 모델로 사용하려�
 
 ## 적응형 양식의 양식 모델 속성 편집 {#edit-form-model}
 
-적응형 양식은 양식 모델 없이(양식 모델에 대해 없음 옵션 사용) 또는 양식 템플릿, XML 스키마 또는 JSON 스키마와 같은 양식 모델 또는 양식 데이터 모델을 사용하여 작성됩니다. 적응형 양식의 양식 모델을 없음에서 다른 양식 모델로 변경할 수 있습니다. 양식 모델을 기반으로 하는 적응형 양식의 경우 동일한 양식 모델에 대해 다른 양식 템플릿, XML 스키마, JSON 스키마 또는 양식 데이터 모델을 선택할 수 있습니다. 그러나 양식 모델 간에 변경할 수는 없습니다.
+적응형 양식은 양식 모델 없이(양식 모델에 대해 없음 옵션 사용) 또는 양식 템플릿, XML 스키마 또는 JSON 스키마와 같은 양식 모델 또는 양식 데이터 모델을 사용하여 만들어집니다. 적응형 양식의 양식 모델을 없음에서 다른 양식 모델로 변경할 수 있습니다. 양식 모델을 기반으로 하는 적응형 양식의 경우 동일한 양식 모델에 대해 다른 양식 템플릿, XML 스키마, JSON 스키마 또는 양식 데이터 모델을 선택할 수 있습니다. 그러나 양식 모델 간에 변경할 수는 없습니다.
 
 1. 적응형 양식을 선택하고 **속성** 아이콘.
 1. **[!UICONTROL 양식 모델]** 탭을 열고 다음 중 하나를 수행합니다.
@@ -164,7 +164,7 @@ XML 또는 JSON 스키마를 적응형 양식의 양식 모델로 사용하려�
    * 적응형 양식에 양식 모델이 없는 경우 다른 양식 모델을 선택할 수 있으며, 이에 따라 양식 템플릿, XML 또는 JSON 스키마 또는 양식 데이터 모델을 선택할 수 있습니다.
    * 적응형 양식이 양식 모델을 기반으로 하는 경우 동일한 양식 모델에 대해 다른 양식 템플릿, XML 또는 JSON 스키마 또는 양식 데이터 모델을 선택할 수 있습니다.
 
-1. **[!UICONTROL 저장]**&#x200B;을 탭하여 변경 내용을 저장합니다.
+1. 선택 **[!UICONTROL 저장]** 속성을 저장합니다.
 
 ## 적응형 양식 자동 저장 {#auto-save-an-adaptive-form}
 
@@ -179,7 +179,7 @@ XML 또는 JSON 스키마를 적응형 양식의 양식 모델로 사용하려�
 
 기본적으로 자동 저장 옵션은 활성화되어 있지 않습니다. 적응형 양식의 자동 저장 탭에서 자동 저장 옵션을 활성화할 수 있습니다. 자동 저장 탭에는 다른 몇 가지 구성 옵션도 있습니다. 적응형 양식에 대해 자동 저장 옵션을 활성화하고 구성하려면 다음 단계를 수행하십시오.
 
-1. 속성의 자동 저장 섹션에 액세스하려면 구성 요소를 선택한 다음 을 누릅니다 ![필드 수준](assets/field-level.png) > **[!UICONTROL 적응형 양식 컨테이너]**&#x200B;을 누른 다음 을 누릅니다 ![cmppr](assets/cmppr.png).
+1. 속성의 자동 저장 섹션에 액세스하려면 구성 요소를 선택한 다음 를 선택합니다. ![필드 수준](assets/field-level.png) > **[!UICONTROL 적응형 양식 컨테이너]**&#x200B;을 선택한 다음 을 선택합니다 ![cmppr](assets/cmppr.png).
 1. 다음에서 **[!UICONTROL 자동 저장]** 섹션, **[!UICONTROL 사용]** 자동 저장 옵션.
 1. 다음에서 **[!UICONTROL 적응형 양식 이벤트]** 상자에 1 또는 TRUE를 지정하여 브라우저에서 양식을 로드할 때 양식 저장을 자동으로 시작합니다. 이벤트에 대해 트리거되고 true를 반환하면 양식의 콘텐츠 저장을 시작하는 조건식을 지정할 수도 있습니다.
 1. [트리거]를 지정합니다. 자동 저장은 구성에 따라 트리거됩니다. 옵션은 다음과 같습니다.

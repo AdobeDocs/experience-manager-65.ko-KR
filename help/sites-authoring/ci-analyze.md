@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 2%
+source-wordcount: '661'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 다음 절차에 따라 페이지에 대한 Analytics 및 Recommendations을 확인하십시오.
 
 1. 분석할 페이지로 이동합니다.
-1. 도구 모음에서 를 클릭하거나 탭합니다 **Analytics 및 Recommendations**.
+1. 도구 모음에서 를 클릭합니다 **Analytics 및 Recommendations**.
 
    >[!NOTE]
    >
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 Content Insight 페이지의 보고 기간을 변경하려면:
 
-1. 페이지 상단에 일정이 표시되지 않으면 일정 전환 아이콘을 클릭하거나 탭합니다.
+1. 일정이 페이지 상단에 표시되지 않으면 일정 전환 아이콘을 클릭합니다.
 
    ![일정 전환](do-not-localize/chlimage_1-22.png)
 
@@ -70,11 +70,11 @@ Content Insight 페이지의 보고 기간을 변경하려면:
 
 세부기간은 보기 및 페이지 평균 참여 분 보고서와 같이 데이터를 시간에 따라 플롯하는 보고서에 영향을 줍니다. 세부 기간은 일정 규모에도 영향을 줍니다.
 
-1. 세부 기간 컨트롤이 나타나지 않으면 세부 기간 토글 아이콘을 클릭하거나 탭합니다.
+1. 세부기간 컨트롤이 나타나지 않으면 세부기간 토글 아이콘을 클릭합니다.
 
    ![chlimage_1-128](assets/chlimage_1-128.png)
 
-1. 원하는 세부 기간을 클릭하거나 탭합니다. 선택하면 세부 기간을 반영하도록 보고서가 자동으로 업데이트됩니다.
+1. 원하는 세부 기간을 클릭합니다. 선택하면 세부 기간을 반영하도록 보고서가 자동으로 업데이트됩니다.
 
 ### SEO Recommendations에 작업 할당 {#assigning-tasks-for-seo-recommendations}
 
@@ -90,7 +90,7 @@ SEO 권장 사항의 상태는 작업이 생성되었지만 아직 완료되지 
 
 다음 절차를 사용하여 SEO 권장 사항에 대한 작업을 만듭니다.
 
-1. SEO 권장 사항에 대한 정보 아이콘을 클릭하거나 탭합니다.
+1. SEO 권장 사항에 대한 정보 아이콘을 클릭합니다.
 
    ![정보 아이콘](do-not-localize/chlimage_1-23.png)
 
@@ -98,7 +98,7 @@ SEO 권장 사항의 상태는 작업이 생성되었지만 아직 완료되지 
 
    ![chlimage_1-131](assets/chlimage_1-131.png)
 
-1. 표시되는 양식 필드를 입력한 다음 만들기 를 탭합니다.
+1. 표시되는 양식 필드를 입력한 다음 만들기 를 선택합니다.
 
    * 프로젝트: 작업을 생성할 프로젝트를 선택합니다.
    * 이름: 작업을 식별하는 이름입니다. 기본 이름은 SEO 권장 사항의 제목입니다.
@@ -109,4 +109,4 @@ SEO 권장 사항의 상태는 작업이 생성되었지만 아직 완료되지 
 
    **참고:** 생성된 작업에는 SEO 권장 사항이 적용되는 페이지에 대한 경로도 포함됩니다.
 
-1. 완료 를 클릭하거나 탭하여 작업 생성됨 메시지를 닫습니다.
+1. 완료 를 클릭하여 작업 생성 메시지를 닫습니다.

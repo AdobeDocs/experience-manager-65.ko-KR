@@ -11,7 +11,7 @@ discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -116,10 +116,10 @@ ht-degree: 0%
 
 CCR 사용자 인터페이스에서 다음 단계를 완료하여 POST 프로세스를 문자와 연결합니다.
 
-1. 편지 위로 마우스를 가져간 후 탭 **속성 보기**.
+1. 편지 위에 커서를 놓고 **속성 보기**.
 1. **편집**&#x200B;을 선택합니다.
 1. 기본 등록 정보에서 사후 프로세스 드롭다운을 사용하여 편지와 연결할 사후 프로세스를 선택합니다. AEM 및 Forms 관련 사후 프로세스가 모두 드롭다운에 나열됩니다.
-1. 누르기 **저장**.
+1. **저장**&#x200B;을 선택합니다.
 1. 게시 프로세스를 사용하여 편지를 구성한 후 편지를 게시하고 선택적으로 게시 인스턴스에 AEM DS 설정 서비스에서 처리 URL을 지정합니다. 이렇게 하면 처리 인스턴스에서 사후 프로세스가 실행됩니다.
 
 ## 초안 편지 인스턴스 다시 로드  {#reloaddraft}

@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: d0768679182567cc7cd618adaa78b6518f902f7c
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 8%
+source-wordcount: '1844'
+ht-degree: 7%
 
 ---
 
 # JSON 스키마를 사용하여 적응형 양식 만들기 {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -736,7 +736,7 @@ JSON에서 이벤트를 사용하는 몇 가지 예는 초기화 이벤트에서
 
 1. 다음 위치에서 Experience Manager 웹 콘솔로 이동 `https://server:host/system/console/configMgr`.
 1. 찾기 **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**.
-1. 을 눌러 구성을 편집 모드로 엽니다.
+1. 을(를) 선택하여 편집 모드로 구성을 엽니다.
 1. 다음 항목 선택 **[!UICONTROL 스키마 준수 데이터 생성]** 확인란.
 1. 설정을 저장합니다.
 

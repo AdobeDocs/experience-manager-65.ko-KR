@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 49%
+source-wordcount: '3015'
+ht-degree: 47%
 
 ---
 
@@ -187,11 +187,11 @@ ht-degree: 49%
   </tr>
   <tr>
    <td>비디오</td>
-   <td>Flash</td>
+   <td>플래시</td>
   </tr>
   <tr>
    <td>콘텐츠 조각</td>
-   <td>콘텐츠 조각<br /> </td>
+   <td>컨텐츠 조각<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -204,7 +204,7 @@ ht-degree: 49%
 
 1. 페이지가 [**편집** 모드](/help/sites-authoring/author-environment-tools.md#page-modes)인지 확인합니다.
 1. [자산 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser)를 엽니다.
-1. 필요한 자산을 필요한 위치로 드래그합니다. [구성 요소 플레이스홀더](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
+1. 필요한 자산을 필요한 위치로 드래그합니다. 다음 [구성 요소 플레이스홀더](#component-placeholder) 구성 요소가 있는 위치를 보여 줍니다.
 
    자산 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 자산이 포함됩니다.
 
@@ -342,12 +342,12 @@ ht-degree: 49%
 
 특정 구성 요소 유형의 경우 에셋 브라우저의 에셋을 구성 요소로 직접 끌어다 놓아 콘텐츠를 업데이트할 수 있습니다.
 
-| **자산 유형** | **구성 요소 유형** |
+| **에셋 유형** | **구성 요소 유형** |
 |---|---|
 | 이미지 | 이미지 |
 | 문서 | 다운로드 |
 | 제품 | 제품 |
-| 비디오 | Flash |
+| 비디오 | 플래시 |
 | 콘텐츠 조각 | 콘텐츠 조각 |
 
 ## (컨텐츠) 전체 화면 모드 편집 {#edit-content-full-screen-mode}
@@ -368,7 +368,7 @@ ht-degree: 49%
 
 단락 구성 요소 이동
 
-1. 탭한 상태나 클릭한 상태로 유지하여 이동할 단락을 선택합니다.
+1. 선택-및-유지 또는 클릭-및-유지로 이동할 단락을 선택합니다.
 1. 단락을 새 위치로 드래그합니다. AEM에서 단락을 둘 수 있는 위치를 보여 줍니다. 단락을 원하는 위치에 놓습니다.
 
    ![단락 구성 요소 이동](assets/screen_shot_2018-03-22at121821.png)
@@ -387,7 +387,7 @@ ht-degree: 49%
 
    ![양식의 편집 모드](assets/screen_shot_2018-03-22at133756.png)
 
-   을(를) 클릭하거나 탭합니다 **레이아웃** 구성 요소의 레이아웃을 조정할 수 있는 작업입니다.
+   다음을 클릭합니다. **레이아웃** 구성 요소의 레이아웃을 조정할 수 있는 작업입니다.
 
    ![구성 요소 도구 모음](do-not-localize/chlimage_1-21.png)
 

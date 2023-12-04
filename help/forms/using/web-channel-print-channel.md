@@ -10,7 +10,7 @@ discoiquuid: 96d2b1cc-3252-4cc7-8b06-a897cbef8599
 docset: aem65
 feature: Interactive Communication
 exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 0%
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 1. 선택 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
 
-1. 누르기 **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**.
+1. 선택 **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**.
 
-   적절한 인쇄 채널 템플릿(XDP)으로 이동하여 선택한 다음 를 누릅니다 **[!UICONTROL 열기]**.
+   해당 인쇄 채널 템플릿(XDP)으로 이동하여 선택한 다음 를 선택합니다 **[!UICONTROL 열기]**.
 
 ## 웹 채널 {#web-channel}
 
@@ -51,23 +51,23 @@ ht-degree: 0%
 
 1. 대화형 통신 웹 템플릿이 없는 경우 템플릿 폴더를 만들어 유지합니다. 자세한 내용은 의 템플릿 폴더 를 참조하십시오. [페이지 템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md).
 
-   1. 누르기 **[!UICONTROL 도구]** ![도구](assets/tools.png) > **[!UICONTROL 구성 브라우저]**.
+   1. 선택 **[!UICONTROL 도구]** ![도구](assets/tools.png) > **[!UICONTROL 구성 브라우저]**.
       * 다음을 참조하십시오. [구성 브라우저](/help/sites-administering/configurations.md) 설명서 를 참조하십시오.
-   1. 구성 브라우저 페이지에서 을 누릅니다. **[!UICONTROL 만들기]**.
-   1. 구성 만들기 대화 상자에서 폴더의 제목을 지정하고 을 선택합니다 **[!UICONTROL 편집 가능한 템플릿]**, 및 탭 **[!UICONTROL 만들기]**.
+   1. Configuration Browser 페이지에서 **[!UICONTROL 만들기]**.
+   1. 구성 만들기 대화 상자에서 폴더의 제목을 지정하고 을 선택합니다 **[!UICONTROL 편집 가능한 템플릿]**, 및 선택 **[!UICONTROL 만들기]**.
 
       폴더가 생성되고 [구성 브라우저] 페이지에 나열됩니다.
 
 1. 해당 템플릿 폴더로 이동하여 웹 템플릿을 만듭니다.
 
    1. 을 선택하여 해당 템플릿 폴더로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL 템플릿]** > **`[Folder]`**.
-   1. 누르기 **[!UICONTROL 만들기]**.
-   1. 선택 **[!UICONTROL 대화형 통신 - 웹 채널]** 및 탭 **[!UICONTROL 다음]**.
-   1. 템플릿 제목과 설명을 입력한 다음 탭합니다. **[!UICONTROL 만들기]**.
+   1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+   1. 선택 **[!UICONTROL 대화형 통신 - 웹 채널]** 및 선택 **[!UICONTROL 다음]**.
+   1. 템플릿 제목과 설명을 입력한 다음 을 선택합니다. **[!UICONTROL 만들기]**.
 
       템플릿이 생성되고 대화 상자가 나타납니다.
 
-   1. 누르기 **[!UICONTROL 열기]** 템플릿 편집기에서 만든 템플릿을 엽니다.
+   1. 선택 **[!UICONTROL 열기]** 템플릿 편집기에서 만든 템플릿을 엽니다.
 
       템플릿 편집기 가 나타납니다.
 
@@ -77,8 +77,8 @@ ht-degree: 0%
 
 1. 대화형 통신 만들기에 이 템플릿을 사용할 수 있도록 하려면 템플릿을 활성화합니다.
 
-   1. 누르기 **[!UICONTROL 도구]** ![도구](assets/tools.png) > **[!UICONTROL 템플릿]**.
-   1. 적절한 템플릿으로 이동하여 선택한 다음 을 누릅니다 **[!UICONTROL 사용]** 경고 메시지에서 을 누릅니다. **[!UICONTROL 사용]**.
+   1. 선택 **[!UICONTROL 도구]** ![도구](assets/tools.png) > **[!UICONTROL 템플릿]**.
+   1. 해당 템플릿으로 이동하여 선택한 다음 를 선택합니다 **[!UICONTROL 사용]** 경고 메시지에서 다음을 선택합니다. **[!UICONTROL 사용]**.
 
       템플릿이 활성화되고 상태가 활성화됨으로 표시됩니다. 이제 새로 만든 웹 채널 템플릿을 사용할 수 있는 대화형 통신을 만들 수 있습니다.
 

@@ -9,10 +9,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 6%
+source-wordcount: '946'
+ht-degree: 2%
 
 ---
 
@@ -41,15 +41,15 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
       >
       >서버가 실행 중이면 몇 가지 AEM Forms 번들이 설치 상태로 유지됩니다. 번들 수는 설치할 때마다 달라질 수 있습니다. 이러한 번들의 상태를 무시해도 됩니다. 번들은 https://&#39;에 나열되어 있습니다.[server]:[포트]&#39;/system/console/.
 
-1. AEM Forms 추가 기능 패키지 설치. 다음 단계가 나와 있습니다.
+1. AEM Forms 추가 기능 패키지를 설치합니다. 다음 단계가 나와 있습니다.
 
    1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID가 필요합니다.
-   1. 헤더 메뉴에 제공된 **[!UICONTROL Adobe Experience Manager]**&#x200B;를 누릅니다.
+   1. 선택 **[!UICONTROL Adobe Experience Manager]** 헤더 메뉴에서 사용할 수 있습니다.
    1. 다음에서 **[!UICONTROL 필터]** 섹션:
       1. 선택 **[!UICONTROL Forms]** 다음에서 **[!UICONTROL 솔루션]** 드롭다운 목록입니다.
       1. 패키지의 버전 및 유형을 선택합니다. 다음을 사용할 수도 있습니다 **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수 있습니다.
-   1. 운영 체제에 적용할 수 있는 패키지 이름을 탭하고 다음을 선택합니다. **[!UICONTROL EULA 약관 동의]**, 및 탭 **[!UICONTROL 다운로드]**.
-   1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+   1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**, 및 선택 **[!UICONTROL 다운로드]**.
+   1. 열기 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  및 클릭 **[!UICONTROL 패키지 업로드]** 패키지를 업로드합니다.
    1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
       에 나열된 직접 링크를 사용하여 패키지를 다운로드할 수도 있습니다. [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 기사.
@@ -64,36 +64,36 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
 
    * **마이그레이션 유틸리티 실행**
 
-      마이그레이션 유틸리티를 사용하면 이전 버전의 적응형 양식 및 서신 관리 에셋이 AEM 6.5 양식과 호환될 수 있습니다. AEM Software Distribution에서 유틸리티를 다운로드할 수 있습니다. 마이그레이션 유틸리티 구성 및 사용에 대한 단계별 정보는 다음을 참조하십시오. [마이그레이션 유틸리티](../../forms/using/migration-utility.md).
+     마이그레이션 유틸리티를 사용하면 이전 버전의 적응형 양식 및 서신 관리 에셋이 AEM 6.5 양식과 호환될 수 있습니다. AEM Software Distribution에서 유틸리티를 다운로드할 수 있습니다. 마이그레이션 유틸리티 구성 및 사용에 대한 단계별 정보는 다음을 참조하십시오. [마이그레이션 유틸리티](../../forms/using/migration-utility.md).
 
-      을 사용하는 경우 [초안 및 제출 구성 요소 통합을 위한 샘플](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) 데이터베이스를 사용하고 이전 버전에서 업그레이드한 다음 업그레이드를 수행한 후 다음 SQL 쿼리를 실행합니다.
+     을 사용하는 경우 [초안 및 제출 구성 요소 통합을 위한 샘플](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) 데이터베이스를 사용하고 이전 버전에서 업그레이드한 다음 업그레이드를 수행한 후 다음 SQL 쿼리를 실행합니다.
 
-      ```sql
-      UPDATE metadata m, additionalmetadatatable am
-      SET m.dataType = am.value
-      WHERE m.id = am.id
-      AND am.key = 'dataType'
-      ```
+     ```sql
+     UPDATE metadata m, additionalmetadatatable am
+     SET m.dataType = am.value
+     WHERE m.id = am.id
+     AND am.key = 'dataType'
+     ```
 
-      ```sql
-      DELETE from additionalmetadatatable
-      WHERE `key` = 'dataType'
-      ```
+     ```sql
+     DELETE from additionalmetadatatable
+     WHERE `key` = 'dataType'
+     ```
 
    * **(AEM 6.2 Forms 또는 이전 버전에서만 업그레이드하는 경우) Adobe Sign 다시 구성**
 
-      이전 버전의 AEM Forms에서 Adobe Sign을 구성한 경우 AEM Cloud Services에서 Adobe Sign을 다시 구성합니다. 자세한 내용은 [Adobe Sign과 AEM Forms 통합](../../forms/using/adobe-sign-integration-adaptive-forms.md).
+     이전 버전의 AEM Forms에서 Adobe Sign을 구성한 경우 AEM Cloud 서비스에서 Adobe Sign을 다시 구성합니다. 자세한 내용은 [Adobe Sign과 AEM Forms 통합](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
    * **jQuery 지원**
 
-      AEM 6.5 Forms에서 jQuery의 버전은 3.2.1로 업데이트되고 jQuery UI 버전은 1.12.1로 업데이트됩니다. AEM Form은에서 JQuery를 사용합니다. **noOverlap** 모드. 따라서 다른 jQuery 버전을 사용하는 경우 업그레이드를 수행하는 동안 문제가 표시되지 않습니다. 그러나 AEM 6.5 Forms으로 업그레이드하는 경우:
+     AEM 6.5 Forms에서 jQuery의 버전은 3.2.1로 업데이트되고 jQuery UI 버전은 1.12.1로 업데이트됩니다. AEM Form은에서 JQuery를 사용합니다. **noOverlap** 모드. 따라서 다른 jQuery 버전을 사용하는 경우 업그레이드를 수행하는 동안 문제가 표시되지 않습니다. 그러나 AEM 6.5 Forms으로 업그레이드하는 경우:
 
       * 사용자 지정 구성 요소(있는 경우)가 지원되는 jQuery 버전과 호환되는지 확인합니다.
       * 사용자 지정 구성 요소에서 지원되지 않는 API를 제거합니다. 다음을 참조하십시오 [업그레이드 안내서](https://jquery.com/upgrade-guide/3.0/) (제거된 API 목록) 예를 들어 load(), .unload() 및 .error() API에 대한 지원이 제거됩니다. 앞서 설명한 API 대신 .on() 메서드를 사용합니다. 예를 들어 $(&quot;img&quot;).load(fn)를 $(&quot;img&quot;).on(&quot;load&quot;, fn)으로 변경합니다.
+
    * **(AEM 6.2 Forms 또는 이전 버전에서만 업그레이드하는 경우) 분석 및 보고서를 다시 구성합니다**
 
-      AEM 6.4 Forms에서는 노출에 대한 소스 및 성공 이벤트에 대한 트래픽 변수를 사용할 수 없습니다. 따라서 AEM 6.2 Forms 또는 이전 버전에서 업그레이드하는 경우 AEM Forms은 Adobe Analytics 서버로 데이터 전송을 중단하고 적응형 양식에 대한 분석 보고서를 사용할 수 없습니다. 또한, AEM 6.4 Forms에서는 필드에서 보낸 시간에 대한 양식 분석 버전 트래픽 변수 및 성공 이벤트를 도입했습니다. 따라서 AEM Forms 환경에 대한 분석 및 보고서를 다시 구성합니다. 자세한 단계는 를 참조하십시오. [분석 및 보고서 구성](../../forms/using/configure-analytics-forms-documents.md).
-
+     AEM 6.4 Forms에서는 노출에 대한 소스 및 성공 이벤트에 대한 트래픽 변수를 사용할 수 없습니다. 따라서 AEM 6.2 Forms 또는 이전 버전에서 업그레이드하는 경우 AEM Forms은 Adobe Analytics 서버로 데이터 전송을 중단하고 적응형 양식에 대한 분석 보고서를 사용할 수 없습니다. 또한, AEM 6.4 Forms에서는 필드에서 보낸 시간에 대한 양식 분석 버전 트래픽 변수 및 성공 이벤트를 도입했습니다. 따라서 AEM Forms 환경에 대한 분석 및 보고서를 다시 구성합니다. 자세한 단계는 를 참조하십시오. [분석 및 보고서 구성](../../forms/using/configure-analytics-forms-documents.md).
 
 1. 서버가 성공적으로 업그레이드되었는지, 모든 데이터도 성공적으로 마이그레이션되었는지, 정상적으로 작동할 수 있는지 확인하십시오.
 
@@ -106,4 +106,5 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
+   >
    AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 다음을 참조하십시오. [AEM의 Forms 저장소 재구성](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).

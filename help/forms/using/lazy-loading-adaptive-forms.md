@@ -6,10 +6,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 8%
+source-wordcount: '1070'
+ht-degree: 7%
 
 ---
 
@@ -52,8 +52,8 @@ Forms에는 모든 사용자 및 조건에 적용할 수 없는 일부 필드 �
 적응형 양식 조각에 대한 소극적 로드를 활성화하려면 다음 단계를 수행하십시오.
 
 1. 소극적 로드를 위해 활성화할 조각이 포함된 적응형 양식을 작성 모드에서 엽니다.
-1. 적응형 양식 조각을 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png).
-1. 사이드바에서 활성화 **[!UICONTROL 느리게 단편 로드]** 및 탭 **완료**.
+1. 적응형 양식 조각을 선택하고 ![cmppr](assets/cmppr.png).
+1. 사이드바에서 활성화 **[!UICONTROL 느리게 단편 로드]** 및 선택 **완료**.
 
    ![적응형 양식 조각에 대한 소극적 로드 활성화](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Forms에는 모든 사용자 및 조건에 적용할 수 없는 일부 필드 �
 포함된 조각이 로드되지 않은 경우 스크립트에서 사용할 수 있도록 느리게 로드된 조각의 개체 값을 전역으로 표시할 수 있습니다. 다음 작업을 수행합니다.
 
 1. 작성 모드에서 적응형 양식 조각을 엽니다.
-1. 값으로 글로벌로 표시할 필드를 탭한 다음 을 누릅니다 ![cmppr](assets/cmppr.png).
+1. 값으로 글로벌로 표시할 필드를 선택한 다음 을 선택합니다 ![cmppr](assets/cmppr.png).
 1. 사이드바에서 활성화 **지연 로드 중 값 사용**.
 
    ![사이드바의 레이지 로딩 필드](assets/enable-lazy-loading.png)

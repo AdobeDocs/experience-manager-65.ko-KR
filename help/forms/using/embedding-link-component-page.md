@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 페이지에 링크 구성 요소를 추가하려면 다음 단계를 수행하십시오.
 
-1. 드래그 **링크** 구성 요소를 추가합니다. 구성 요소를 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png). 링크 구성 요소 편집 대화 상자가 열립니다.
+1. 드래그 **링크** 구성 요소를 추가합니다. 구성 요소를 선택하고 을 선택합니다. ![cmppr](assets/cmppr.png). 링크 구성 요소 편집 대화 상자가 열립니다.
 
    ![edit-link-component](assets/edit-link-component.png)
 
@@ -48,9 +48,9 @@ ht-degree: 1%
    * **HTML 프로필**: 양식을 HTML으로 렌더링하기 위한 프로필입니다.
    * **PDF 프로필**: 양식을 PDF 문서로 렌더링하기 위한 프로필입니다.
 
-1. **고급** 탭을 엽니다. 키-값 쌍 형식으로 추가 매개변수를 지정할 수 있습니다. 링크를 클릭하면 이러한 추가 매개 변수가 양식과 함께 전달됩니다.
+1. 를 엽니다. **고급** 탭. 키-값 쌍 형식으로 추가 매개변수를 지정할 수 있습니다. 링크를 클릭하면 이러한 추가 매개 변수가 양식과 함께 전달됩니다.
 
-   누르기 **완료** 구성을 저장합니다.
+   선택 **완료** 구성을 저장합니다.
 
 ## 링크 구성 요소 사용에 대한 우수 사례 {#best-practices-for-using-link-component-br}
 

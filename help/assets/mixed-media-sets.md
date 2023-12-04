@@ -11,10 +11,10 @@ docset: aem65
 feature: Mixed Media Sets,Asset Management
 role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 17%
+source-wordcount: '1500'
+ht-degree: 15%
 
 ---
 
@@ -64,7 +64,7 @@ Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMed
 
 1. [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md) 또는 [비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md).
 
-   Adobe Experience Manager Assets는 혼합 미디어 세트에 대한 URL 호출을 생성하고 혼합 미디어 세트를 게시한 후 활성화합니다. 에셋을 미리 볼 때 이러한 URL을 복사할 수 있습니다. 또는 웹 사이트에 포함할 수 있습니다.
+   Adobe Experience Manager Assets은 혼합 미디어 세트에 대한 URL 호출을 생성하고 혼합 미디어 세트를 게시한 후 활성화합니다. 에셋을 미리 볼 때 이러한 URL을 복사할 수 있습니다. 또는 웹 사이트에 포함할 수 있습니다.
 
    혼합 미디어 세트를 선택한 다음 왼쪽 레일 드롭다운 메뉴에서 을(를) 선택합니다 **[!UICONTROL 뷰어]**.
 
@@ -154,21 +154,19 @@ Start by uploading the images and videos for your Mixed Media Sets. 사용자는
 
    * 자산을 이름별로 오름차순 또는 내림차순으로 정렬하려면 왼쪽 패널에서 을 선택합니다 **[!UICONTROL 에셋]** (그림 아이콘). 의 오른쪽에 **[!UICONTROL 에셋]** 머리글에서 위쪽 또는 아래쪽 캐럿 아이콘을 선택합니다.
 
-      >[!NOTE]
-      >
-      >* 전체 혼합 미디어 세트를 모든 보기 모드(예: **[!UICONTROL 카드 보기]** 또는 **[!UICONTROL 열 보기]**) 혼합 미디어 세트로 이동합니다. 에셋 위로 마우스를 가져간 다음 확인 표시 아이콘을 선택하여 선택합니다. 누르기 **[!UICONTROL 백스페이스]** 키보드에서 또는 을(를) 선택합니다 **[!UICONTROL 자세히]** (세 점) 을 클릭하여 도구 모음에서 **[!UICONTROL 삭제]**.
-      >
-      >* 혼합 미디어 집합으로 이동한 다음 을 클릭하여 혼합 미디어 집합의 자산을 편집할 수 있습니다. **[!UICONTROL 구성원 설정]** 왼쪽 레일에서. 다음 항목 선택 **[!UICONTROL 연필]** 아이콘을 클릭하면 편집 창에서 에셋을 열 수 있습니다.
-
+     >[!NOTE]
+     >
+     >* 전체 혼합 미디어 세트를 모든 보기 모드(예: **[!UICONTROL 카드 보기]** 또는 **[!UICONTROL 열 보기]**) 혼합 미디어 세트로 이동합니다. 에셋 위로 마우스를 가져간 다음 확인 표시 아이콘을 선택하여 선택합니다. 누르기 **[!UICONTROL 백스페이스]** 키보드에서 또는 을(를) 선택합니다 **[!UICONTROL 자세히]** (세 점) 을 클릭하여 도구 모음에서 **[!UICONTROL 삭제]**.
+     >
+     >* 혼합 미디어 집합으로 이동한 다음 을 클릭하여 혼합 미디어 집합의 자산을 편집할 수 있습니다. **[!UICONTROL 구성원 설정]** 왼쪽 레일에서. 다음 항목 선택 **[!UICONTROL 연필]** 아이콘을 클릭하면 편집 창에서 에셋을 열 수 있습니다.
 
 1. 선택 **[!UICONTROL 저장]** 편집을 마치면
 
    >[!NOTE]
    >
-   >* To edit the assets in a Mixed Media Set - Navigate to the Mixed Media Set. 세트를 탭하여(선택하지 않음) Experience Manager 세트 미리보기 페이지에서 엽니다. 왼쪽 레일에서 드롭다운 캐럿을 선택하여 드롭다운 목록을 연 다음 을 선택합니다 **[!UICONTROL 구성원 설정]**. 구성원 설정 페이지에서 자산을 마우스로 가리킨 다음 을 선택합니다 **[!UICONTROL 편집]** (연필 아이콘) 을 클릭하여 편집 페이지를 엽니다.
+   >* 혼합 미디어 세트의 자산을 편집하려면 - 혼합 미디어 세트로 이동합니다. 세트를 선택(선택하지 않음)하면 Experience Manager 세트 미리보기 페이지에서 열립니다. 왼쪽 레일에서 드롭다운 캐럿을 선택하여 드롭다운 목록을 연 다음 을 선택합니다 **[!UICONTROL 구성원 설정]**. 구성원 설정 페이지에서 자산을 마우스로 가리킨 다음 을 선택합니다 **[!UICONTROL 편집]** (연필 아이콘) 을 클릭하여 편집 페이지를 엽니다.
    >
-   >* To delete an entire Mixed Media Set - From any viewing mode (such as Card view or Column view), navigate to the Mixed Media Set. 세트를 마우스로 가리킨 다음 을 선택합니다 **선택** (확인 표시 아이콘) 누르기 **[!UICONTROL 백스페이스]** 키보드에서 또는 을(를) 선택합니다 **[!UICONTROL 자세히]** (세 점의 행), 다음 선택 **[!UICONTROL 삭제]**.
-
+   >* 전체 혼합 미디어 세트를 삭제하려면 보기 모드(예: 카드 보기 또는 열 보기)에서 혼합 미디어 세트로 이동합니다. 세트를 마우스로 가리킨 다음 을 선택합니다 **선택** (확인 표시 아이콘) 누르기 **[!UICONTROL 백스페이스]** 키보드에서 또는 을(를) 선택합니다 **[!UICONTROL 자세히]** (세 점의 행), 다음 선택 **[!UICONTROL 삭제]**.
 
 ## 혼합 미디어 집합 미리 보기 {#previewing-mixed-media-sets}
 

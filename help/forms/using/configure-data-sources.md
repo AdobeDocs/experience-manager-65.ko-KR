@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: d39b4b1d921fc93a4871b74469953f2dfc5c470b
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 2%
+source-wordcount: '2073'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,7 @@ AEM Forms 데이터 통합을 통해 서로 다른 데이터 소스를 구성하
 AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 수 있습니다. 다음 작업을 수행합니다.
 
 1. 다음 위치에서 AEM 웹 콘솔로 이동 `https://server:host/system/console/configMgr`.
-1. 다음을 찾습니다. **[!UICONTROL Apache Sling 연결의 풀링된 데이터 소스]** 구성. 을 눌러 구성을 편집 모드로 엽니다.
+1. 다음을 찾습니다. **[!UICONTROL Apache Sling 연결의 풀링된 데이터 소스]** 구성. 을(를) 선택하여 편집 모드로 구성을 엽니다.
 1. 구성 대화 상자에서 다음과 같이 구성할 데이터베이스에 대한 세부 정보를 지정합니다.
 
    * 데이터 소스 이름
@@ -52,7 +52,7 @@ AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 
    >데이터 소스를 구성하기 전에 암호와 같은 중요한 정보를 암호화해야 합니다. 암호화하려면:
    >
    > 1. https://&#39;으로 이동[server]:[포트]&#39;/system/console/crypto.
-   > 1. 다음에서 **[!UICONTROL 일반 텍스트]** 필드, 암호화할 암호 또는 문자열을 지정하고 탭합니다. **[!UICONTROL Protect]**.
+   > 1. 다음에서 **[!UICONTROL 일반 텍스트]** 필드, 암호화할 암호 또는 문자열을 지정하고 선택 **[!UICONTROL Protect]**.
    >
    >암호화된 텍스트는 구성에 지정할 수 있는 보호된 텍스트 필드에 나타납니다.
 
@@ -62,7 +62,7 @@ AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 
    * 1(MySQL 및 MS SQL) 선택
    * 이중 (Oracle)에서 1 선택
 
-1. 누르기 **[!UICONTROL 저장]** 구성을 저장합니다.
+1. 선택 **[!UICONTROL 저장]** 구성을 저장합니다.
 
    >[!NOTE]
    >
@@ -73,7 +73,7 @@ AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 
 AEM 웹 콘솔에서 사용자 프로필 커넥터 구성을 사용하여 AEM 사용자 프로필을 구성할 수 있습니다. 다음 작업을 수행합니다.
 
 1. https://&#39;에서 AEM 웹 콘솔로 이동합니다.[server]:[포트]&#39;system/console/configMgr.
-1. 다음을 찾습니다. **[!UICONTROL AEM Forms 데이터 통합 - 사용자 프로필 커넥터 구성]** 을 누르고 탭하여 구성을 편집 모드로 엽니다.
+1. 다음을 찾습니다. **[!UICONTROL AEM Forms 데이터 통합 - 사용자 프로필 커넥터 구성]** 을(를) 선택하고 을(를) 선택하여 편집 모드로 구성을 엽니다.
 1. 사용자 프로필 커넥터 구성 대화 상자에서 사용자 프로필 속성을 추가, 제거 또는 업데이트할 수 있습니다. 지정된 속성은 양식 데이터 모델에서 사용할 수 있습니다. 사용자 프로필 속성을 지정하려면 다음 형식을 사용하십시오.
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -87,7 +87,7 @@ AEM 웹 콘솔에서 사용자 프로필 커넥터 구성을 사용하여 AEM �
    >
    >다음 **&#42;** 위의 예에서는 아래의 모든 노드를 나타냅니다. `profile/empLocation/` crxde 구조의 AEM 사용자 프로필에 있는 노드 즉, 양식 데이터 모델이 `city` 유형의 속성 `string` 의 모든 노드에 있음 `profile/empLocation/` 노드. 그러나 지정된 속성이 포함된 노드는 일관된 구조를 따라야 합니다.
 
-1. 누르기 **[!UICONTROL 저장]** 구성을 저장합니다.
+1. 선택 **[!UICONTROL 저장]** 구성을 저장합니다.
 
 ## 클라우드 서비스 구성을 위한 폴더 구성 {#cloud-folder}
 
@@ -103,15 +103,15 @@ AEM의 모든 클라우드 서비스 구성은 `/conf` 폴더를 AEM 리포지�
    * 다음을 참조하십시오. [구성 브라우저](/help/sites-administering/configurations.md) 설명서 를 참조하십시오.
 1. 클라우드 구성에 대한 전역 폴더를 활성화하려면 다음을 수행하거나 클라우드 서비스 구성에 대한 다른 폴더를 만들고 구성하려면 이 단계를 건너뜁니다.
 
-   1. 다음에서 **[!UICONTROL 구성 브라우저]**&#x200B;를 선택하고 `global` 폴더 및 탭 **[!UICONTROL 속성]**.
+   1. 다음에서 **[!UICONTROL 구성 브라우저]**&#x200B;를 선택하고 `global` 폴더 및 선택 **[!UICONTROL 속성]**.
 
    1. 다음에서 **[!UICONTROL 구성 속성]** 대화 상자, 활성화 **[!UICONTROL 클라우드 구성]**.
 
-   1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 구성을 저장하고 대화 상자를 종료합니다.
+   1. 선택 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
 
-1. 다음에서 **[!UICONTROL 구성 브라우저]**, 탭 **[!UICONTROL 만들기]**.
+1. 다음에서 **[!UICONTROL 구성 브라우저]**, 선택 **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자에서 폴더의 제목을 지정하고 활성화합니다. **[!UICONTROL 클라우드 구성]**.
-1. 누르기 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성에 대해 활성화된 폴더를 만듭니다.
+1. 선택 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성에 대해 활성화된 폴더를 만듭니다.
 
 ## RESTful 웹 서비스 구성 {#configure-restful-web-services}
 
@@ -119,11 +119,11 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/) Swa
 
 RESTful 서비스를 구성하려면 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](../../forms/using/configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
-1. 누르기 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL RESTful 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택한 다음 를 누릅니다 **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL RESTful 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택하고 **[!UICONTROL 다음]**.
 1. RESTful 서비스에 대해 다음 세부 정보를 지정합니다.
 
    * Swagger 소스 드롭다운에서 URL 또는 파일 을 선택한 다음 그에 따라 Swagger 정의 파일에 Swagger URL 을 지정하거나 로컬 파일 시스템에서 Swagger 파일을 업로드합니다.
@@ -140,7 +140,7 @@ RESTful 서비스를 구성하려면 다음을 수행합니다.
 
    다음을 선택하는 경우 **[!UICONTROL 상호 인증]** 인증 유형으로 다음을 참조하십시오. [RESTful 및 SOAP 웹 서비스를 위한 인증서 기반 상호 인증](#mutual-authentication).
 
-1. 누르기 **[!UICONTROL 만들기]** RESTful 서비스에 대한 클라우드 구성을 만듭니다.
+1. 선택 **[!UICONTROL 만들기]** RESTful 서비스에 대한 클라우드 구성을 만듭니다.
 
 ### 성능을 최적화하기 위한 양식 데이터 모델 HTTP 클라이언트 구성 {#fdm-http-client-configuration}
 
@@ -149,7 +149,7 @@ RESTful 서비스를 구성하려면 다음을 수행합니다.
 
 1. 에 로그인 [!DNL Experience Manager Forms] 작성자 인스턴스 관리자 권한으로 [!DNL Experience Manager] 웹 콘솔 번들. 기본 URL은 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
-1. 누르기 **[!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 Http 클라이언트 구성]**.
+1. 선택 **[!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 Http 클라이언트 구성]**.
 
 1. 다음에서 [!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 Http 클라이언트 구성] 대화 상자:
 
@@ -167,11 +167,11 @@ RESTful 서비스를 구성하려면 다음을 수행합니다.
 
 SOAP 기반 웹 서비스는 다음을 사용하여 설명합니다. [WSDL(웹 서비스 설명 언어) 사양](https://www.w3.org/TR/wsdl). AEM 클라우드 서비스에서 SOAP 기반 웹 서비스를 구성하려면 웹 서비스에 대한 WSDL URL이 있는지 확인하고 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](../../forms/using/configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
-1. 누르기 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL SOAP 웹 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택한 다음 를 누릅니다 **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL SOAP 웹 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택하고 **[!UICONTROL 다음]**.
 1. SOAP 웹 서비스에 대해 다음을 지정하십시오.
 
    * 웹 서비스용 WSDL URL입니다.
@@ -183,7 +183,7 @@ SOAP 기반 웹 서비스는 다음을 사용하여 설명합니다. [WSDL(웹 �
 
      다음을 선택하는 경우 **[!UICONTROL 상호 인증]** 인증 유형으로 다음을 참조하십시오. [RESTful 및 SOAP 웹 서비스를 위한 인증서 기반 상호 인증](#mutual-authentication).
 
-1. 누르기 **[!UICONTROL 만들기]** 를 클릭하여 SOAP 웹 서비스에 대한 클라우드 구성을 만듭니다.
+1. 선택 **[!UICONTROL 만들기]** 를 클릭하여 SOAP 웹 서비스에 대한 클라우드 구성을 만듭니다.
 
 ## OData 서비스 구성 {#config-odata}
 
@@ -194,11 +194,11 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. AEM Cloud Services�
 >양식 데이터 모델 지원 [OData 버전 4](https://www.odata.org/documentation/).
 >온라인 또는 온프레미스에서 Microsoft Dynamics 365를 구성하는 방법에 대한 단계별 안내서는 다음을 참조하십시오. [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](../../forms/using/configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
-1. 누르기 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL OData 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택한 다음 를 누릅니다 **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL OData 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택하고 **[!UICONTROL 다음]**.
 1. OData 서비스에 대해 다음 세부 정보를 지정합니다.
 
    * 구성할 OData 서비스의 서비스 루트 URL입니다.
@@ -206,9 +206,9 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. AEM Cloud Services�
 
    >[!NOTE]
    >
-   >OData 끝점을 서비스 루트로 사용하여 Microsoft Dynamics 서비스와 연결하려면 OAuth 2.0 인증 유형을 선택해야 합니다.
+   >OData 끝점을 서비스 루트로 사용하여 Microsoft Dynamics 서비스와 연결하려면 OAuth 2.0 인증 유형을 선택하십시오.
 
-1. 누르기 **만들기** 를 클릭하여 OData 서비스에 대한 클라우드 구성을 만듭니다.
+1. 선택 **만들기** 를 클릭하여 OData 서비스에 대한 클라우드 구성을 만듭니다.
 
 ## RESTful 및 SOAP 웹 서비스를 위한 인증서 기반 상호 인증 {#mutual-authentication}
 
@@ -216,11 +216,11 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. AEM Cloud Services�
 
 1. 개인 키(인증서)를에 업로드 [!DNL AEM Forms] 서버입니다. 개인 키를 업로드하려면:
    1. 에 로그인 [!DNL AEM Forms] 관리자인 서버입니다.
-   1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**. 다음 항목 선택 `fd-cloudservice` 사용자 및 탭 **[!UICONTROL 속성]**.
-   1. 를 엽니다. **[!UICONTROL 키 저장소]** 탭을 확장하고 **[!UICONTROL KeyStore 파일의 개인 키 추가]** 옵션을 선택하고 KeyStore 파일을 업로드한 다음 별칭, 암호를 지정하고 을 누릅니다 **[!UICONTROL 제출]**. 인증서가 업로드되었습니다.  개인 키 별칭은 인증서에 언급되어 있으며 인증서를 만드는 동안 설정됩니다.
+   1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**. 다음 항목 선택 `fd-cloudservice` 사용자 및 선택 **[!UICONTROL 속성]**.
+   1. 를 엽니다. **[!UICONTROL 키 저장소]** 탭을 확장하고 **[!UICONTROL KeyStore 파일의 개인 키 추가]** 옵션을 선택하고 KeyStore 파일을 업로드한 다음 별칭, 암호를 지정하고 **[!UICONTROL 제출]**. 인증서가 업로드되었습니다.  개인 키 별칭은 인증서에 언급되어 있으며 인증서를 만드는 동안 설정됩니다.
 1. 글로벌 Trust Store에 트러스트 인증서를 업로드합니다. 인증서를 업로드하려면:
    1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL Trust Store]**.
-   1. 확장 **[!UICONTROL CER 파일에서 인증서 추가]** 옵션, 탭 **[!UICONTROL 인증서 파일 선택]**&#x200B;를 클릭하고 인증서를 업로드한 다음 을 누릅니다 **[!UICONTROL 제출]**.
+   1. 확장 **[!UICONTROL CER 파일에서 인증서 추가]** 옵션, 선택 **[!UICONTROL 인증서 파일 선택]**&#x200B;를 클릭하고 인증서를 업로드한 다음 을 선택합니다 **[!UICONTROL 제출]**.
 1. 구성 [SOAP](#configure-soap-web-services) 또는 [RESTful](#configure-restful-web-services) 웹 서비스를 데이터 소스로 사용하고 선택 **[!UICONTROL 상호 인증]** 를 인증 유형으로 사용하십시오. 에 대해 여러 자체 서명된 인증서를 구성하는 경우 `fd-cloudservice` 사용자, 인증서의 키 별칭 이름을 지정합니다.
 
 ## 다음 단계 {#next-steps}

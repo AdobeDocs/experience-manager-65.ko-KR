@@ -2,10 +2,10 @@
 title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 88%
+source-wordcount: '1401'
+ht-degree: 85%
 
 ---
 
@@ -262,7 +262,7 @@ query getAdventuresByActivity($activity: String!) {
 
 ## 지속 쿼리 캐싱 {#caching-persisted-queries}
 
-지속 쿼리는 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko) 및 CDN(Content Delivery Network) 계층에서 캐시될 수 있어 궁극적으로 요청하는 클라이언트 애플리케이션의 성능이 향상되므로 이를 사용하는 것이 좋습니다.
+지속 쿼리는 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) 및 CDN(Content Delivery Network) 계층에서 캐시될 수 있어 궁극적으로 요청하는 클라이언트 애플리케이션의 성능이 향상되므로 이를 사용하는 것이 좋습니다.
 
 기본적으로 AEM은 TTL(Time To Live) 정의에 따라 캐시를 무효화합니다. 이러한 TTL은 다음 매개변수로 정의할 수 있습니다. 이러한 매개변수는 다양한 방법으로 액세스할 수 있으며, 사용되는 메커니즘에 따라 이름이 다양합니다.
 
@@ -350,7 +350,7 @@ curl -u admin:admin -X POST \
 
 ### OSGi 구성으로 캐시 관리 {#cache-osgi-configration}
 
-캐시를 전체적으로 관리하려면 [지속 쿼리 서비스 구성](/help/sites-deploying/configuring-osgi.md)에 대한 **OSGi 설정을 구성**&#x200B;하면 됩니다. 그렇지 않으면 이 OSGi 구성은 [게시 인스턴스의 기본값](#publish-instances).
+캐시를 전체적으로 관리하려면 다음을 수행할 수 있습니다. [osgI 설정 구성](/help/sites-deploying/configuring-osgi.md) 대상: **지속 쿼리 서비스 구성**. 그렇지 않으면 이 OSGi 구성은 [게시 인스턴스의 기본값](#publish-instances).
 
 >[!NOTE]
 >
@@ -401,8 +401,8 @@ URL은 다음과 같은 부분들로 나눌 수 있습니다.
 1. 패키지 정의 대화 상자에서 **일반**&#x200B;에 “wknd-persistent-queries”와 같은 **이름**&#x200B;을 입력합니다.
 1. “1.0”과 같은 버전 번호를 입력합니다.
 1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예: `wknd` 전체 경로 구성 `/conf/wknd/settings/graphql/persistentQueries`.
-1. **저장**&#x200B;을 탭하여 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
-1. 새로 생성된 패키지 정의에 있는 **빌드** 버튼을 탭합니다.
+1. 선택 **저장** 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
+1. 다음 항목 선택 **빌드** 새로 생성된 패키지 정의에 있는 단추입니다.
 
 패키지를 빌드하면 다음과 같은 작업을 수행할 수 있습니다.
 

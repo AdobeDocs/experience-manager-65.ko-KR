@@ -9,16 +9,16 @@ topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 feature: Adaptive Forms
 exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 1%
+source-wordcount: '736'
+ht-degree: 7%
 
 ---
 
 # 적응형 양식 자동 저장 {#auto-save-an-adaptive-form}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 이벤트 또는 사전 정의된 시간 간격에 따라 콘텐츠 저장을 자동으로 시작하도록 적응형 양식을 구성할 수 있습니다. 기본적으로 적응형 양식의 콘텐츠는 저장 버튼을 누르는 것과 같은 사용자 작업 시 저장됩니다. 자동 저장 옵션은 다음 경우에 유용합니다.
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 적응형 양식의 경우 자동 저장 옵션이 즉시 활성화되지 않습니다. 에서 자동 저장 옵션을 활성화할 수 있습니다. **자동 저장** 섹션을 만드십시오. 다음 **자동 저장** 이 절에서는 몇 가지 기타 구성 옵션도 제공합니다. 적응형 양식에 대해 자동 저장 옵션을 활성화하고 구성하려면 다음 단계를 수행하십시오.
 
-1. 속성의 자동 저장 섹션에 액세스하려면 구성 요소를 선택한 다음 을 누릅니다 ![필드 수준](assets/field-level.png) > **[!UICONTROL 적응형 양식 컨테이너]**&#x200B;을 누른 다음 을 누릅니다 ![cmppr](assets/cmppr.png).
+1. 속성의 자동 저장 섹션에 액세스하려면 구성 요소를 선택한 다음 를 선택합니다. ![필드 수준](assets/field-level.png) > **[!UICONTROL 적응형 양식 컨테이너]**&#x200B;을 선택한 다음 을 선택합니다 ![cmppr](assets/cmppr.png).
 1. 다음에서 **[!UICONTROL 자동 저장]** 섹션, **[!UICONTROL 사용]** 자동 저장 옵션.
 1. 다음에서 **[!UICONTROL 적응형 양식 이벤트]** 상자에 1 또는 TRUE를 지정하여 브라우저에서 양식을 로드할 때 양식 저장을 자동으로 시작합니다. 이벤트에 대해 트리거되고 true를 반환하면 양식의 콘텐츠 저장을 시작하는 조건식을 지정할 수도 있습니다.
 1. [트리거]를 지정합니다. 자동 저장은 구성에 따라 트리거됩니다. 옵션은 다음과 같습니다.
@@ -87,6 +87,6 @@ ht-degree: 1%
 
 1. 작성자 모드에서 적응형 양식을 엽니다.
 
-1. 편집 모드에서 구성 요소를 선택한 다음 을 누릅니다 ![필드 수준](assets/field-level.png) > **[!UICONTROL 적응형 양식 컨테이너]**&#x200B;을 누른 다음 을 누릅니다 ![cmppr](assets/cmppr.png).
+1. 편집 모드에서 구성 요소를 선택한 다음 를 선택합니다 ![필드 수준](assets/field-level.png) > **[!UICONTROL 적응형 양식 컨테이너]**&#x200B;을 선택한 다음 을 선택합니다 ![cmppr](assets/cmppr.png).
 1. 속성에서 **[!UICONTROL 기본]** 섹션. 다음에서 **[!UICONTROL 클라이언트 라이브러리 범주]** 상자에서 클라이언트 라이브러리 폴더를 만드는 동안 정의된 category 속성의 값을 입력합니다.
 1. 자동 저장 섹션을 엽니다. 다음에서 **[!UICONTROL 이 이벤트 후 자동 저장]** 상자에서 클라이언트 라이브러리에 이미 정의된 사용자 지정 이벤트를 지정합니다. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.

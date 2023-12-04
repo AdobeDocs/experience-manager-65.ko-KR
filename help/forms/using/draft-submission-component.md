@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ ht-degree: 0%
 초안 및 제출 구성 요소를 추가하고 구성하려면 다음 단계를 수행하십시오.
 
 1. 을(를) 드래그 앤 드롭합니다 **초안 및 제출** 구성 요소 브라우저의 문서 서비스 카테고리 아래에 있는 구성 요소를 페이지에 연결합니다.
-1. 구성 요소를 탭한 다음 을 탭합니다. ![settings_icon](assets/settings_icon.png) 구성 요소의 편집 대화 상자를 엽니다.
+1. 구성 요소를 선택한 다음 를 선택합니다 ![settings_icon](assets/settings_icon.png) 구성 요소의 편집 대화 상자를 엽니다.
 
    ![초안 및 제출 구성 요소](assets/drafts-submissions-edit.png)
 
-1. 편집 대화 상자에서 다음 세부 사항을 지정하고 을 누릅니다 **완료** 설정을 저장합니다.
+1. 편집 대화 상자에서 다음 세부 정보를 지정하고 을 선택합니다 **완료** 설정을 저장합니다.
 
 <table>
  <tbody>

@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 feature: Forms Portal
 exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 3%
+source-wordcount: '332'
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
 | AEM 6.5 | 이 문서 |
 
 기본적으로 Forms 포털 구성 요소는 사용할 수 없습니다. 구성 요소가 AEM 사이드 킥에서 사용 가능한 구성 요소 목록에 표시되도록 하려면 다음 단계를 수행하십시오.
@@ -30,15 +30,15 @@ ht-degree: 3%
 
 1. 정적 템플릿을 사용하는 페이지의 경우 다음 단계를 수행하십시오.
 
-   1. 페이지 헤더에서 을 누릅니다. ![캔버스 드롭다운](assets/canvas-drop-down.png) > **디자인** 디자인 모드에서 페이지를 엽니다.
-   1. 파란색 테두리가 있는 구성 요소를 탭한 다음 를 탭합니다 ![필드 수준](assets/field-level.png) 현재 구성 요소가 포함된 단락 시스템을 선택합니다.
-   1. 단락 시스템에서 을 누릅니다 ![settings_icon](assets/settings_icon.png) 를 클릭하여 단락 시스템의 편집 대화 상자를 엽니다.
-   1. 목록에서 **[!UICONTROL 허용된 구성 요소]**, 확인란 활성화 **[!UICONTROL 문서 서비스]** 및 **[!UICONTROL 문서 서비스 조건자]** 구성 요소. 누르기 **[!UICONTROL 확인]**.
+   1. 페이지 헤더에서 을 선택합니다. ![캔버스 드롭다운](assets/canvas-drop-down.png) > **디자인** 디자인 모드에서 페이지를 엽니다.
+   1. 파란색 테두리로 구성 요소를 선택한 다음 를 선택합니다 ![필드 수준](assets/field-level.png) 현재 구성 요소가 포함된 단락 시스템을 선택합니다.
+   1. 단락 시스템에서 을 선택합니다. ![settings_icon](assets/settings_icon.png) 를 클릭하여 단락 시스템의 편집 대화 상자를 엽니다.
+   1. 목록에서 **[!UICONTROL 허용된 구성 요소]**, 확인란 활성화 **[!UICONTROL 문서 서비스]** 및 **[!UICONTROL 문서 서비스 조건자]** 구성 요소. 선택 **[!UICONTROL 확인]**.
 
 1. 동적 템플릿을 사용하는 페이지의 경우 다음 단계를 수행하십시오.
 
-   1. 페이지 헤더에서 을 누릅니다. ![속성](assets/properties.png) > **템플릿 편집** 을 클릭하여 페이지의 템플릿을 엽니다.
-   1. 누르기 **레이아웃 컨테이너** 및 탭 ![FeedManagement](/help/forms/using/assets/feedmanagement.png). 다음에서 **허용된 구성 요소** 탭, 활성화 **문서 서비스 및 문서 서비스 조건자** 옵션 및 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. 페이지 헤더에서 을 선택합니다. ![속성](assets/properties.png) > **템플릿 편집** 을 클릭하여 페이지의 템플릿을 엽니다.
+   1. 선택 **레이아웃 컨테이너** 및 선택 ![FeedManagement](/help/forms/using/assets/feedmanagement.png). 다음에서 **허용된 구성 요소** 탭, 활성화 **문서 서비스 및 문서 서비스 조건자** 옵션 및 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >

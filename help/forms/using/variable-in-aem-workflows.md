@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2080'
 ht-degree: 1%
 
 ---
@@ -56,8 +56,8 @@ AEM 워크플로 모델에서 다음을 수행할 수 있습니다.
 다음 단계를 실행하여 변수를 생성합니다.
 
 1. AEM 인스턴스에서 도구로 이동합니다 ![도구](/help/forms/using/assets/hammer.png) > 워크플로우 > 모델.
-1. 누르기 **[!UICONTROL 만들기]** 워크플로우 모델의 제목과 선택적 이름을 지정합니다. 모델을 선택하고 을 누릅니다. **[!UICONTROL 편집]**.
-1. 워크플로우 모델의 사이드 킥에서 사용할 수 있는 변수 아이콘을 탭한 다음 을 누릅니다 **[!UICONTROL 변수 추가]**.
+1. 선택 **[!UICONTROL 만들기]** 워크플로우 모델의 제목과 선택적 이름을 지정합니다. 모델을 선택한 다음 를 선택합니다. **[!UICONTROL 편집]**.
+1. 워크플로우 모델의 사이드 킥에서 사용할 수 있는 변수 아이콘을 선택하고 를 선택합니다. **[!UICONTROL 변수 추가]**.
 
    ![변수 추가](assets/variables_add_variable_new.png)
 
@@ -69,7 +69,7 @@ AEM 워크플로 모델에서 다음을 수행할 수 있습니다.
    * 양식 데이터 모델 - 양식 데이터 모델 경로를 지정합니다.
    * ArrayList - 컬렉션에 대한 하위 유형을 지정합니다.
 
-1. 변수에 대한 선택적 설명을 지정하고 을 누릅니다 ![done_icon](assets/done_icon.png) 변경 내용을 저장합니다. 변수는 왼쪽 창에서 사용할 수 있는 목록에 표시됩니다.
+1. 변수에 대한 선택적 설명을 지정하고 을 선택합니다 ![done_icon](assets/done_icon.png) 변경 내용을 저장합니다. 변수는 왼쪽 창에서 사용할 수 있는 목록에 표시됩니다.
 
 변수를 만들 때 다음 방법을 고려하십시오.
 
@@ -102,11 +102,11 @@ JSON 점 표기법 또는 XPATH 표기법을 사용하여 JSON 또는 XML 유형
 
 다음 단계를 실행하여 변수 간에 매핑을 추가합니다.
 
-1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 있는 단계 아이콘을 탭합니다.
-1. 을(를) 드래그 앤 드롭합니다 **변수 설정** 워크플로우 편집기로 이동하여 단계를 탭하고 선택합니다. ![configure_icon](assets/configure_icon.png) (구성).
+1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 사용할 수 있는 단계 아이콘을 선택합니다.
+1. 을(를) 드래그 앤 드롭합니다 **변수 설정** 워크플로우 편집기로 이동하고 단계를 선택한 다음 를 선택합니다. ![configure_icon](assets/configure_icon.png) (구성).
 1. 변수 설정 대화 상자에서 **[!UICONTROL 매핑]** > **[!UICONTROL 매핑 추가]**.
 1. 다음에서 **변수 매핑** 섹션에서 데이터를 저장할 변수를 선택하고 매핑 모드를 선택한 다음 변수에 저장할 값을 지정합니다. 매핑 모드는 변수의 유형에 따라 다릅니다.
-1. 더 많은 변수를 매핑하여 의미 있는 표현식을 만듭니다. 누르기 ![done_icon](assets/done_icon.png) 변경 내용을 저장합니다.
+1. 더 많은 변수를 매핑하여 의미 있는 표현식을 만듭니다. 선택 ![done_icon](assets/done_icon.png) 변경 내용을 저장합니다.
 
 ### 예제 1: XML 변수를 쿼리하여 문자열 변수의 값을 설정합니다. {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -175,7 +175,7 @@ OR 분할은 워크플로우에 분할을 만들고 그 후 하나의 분기만 
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-마찬가지로 외부 스크립트 경로를 선택하거나 라우팅 표현식에 대한 ECMA 스크립트를 지정하여 활성 분기를 평가합니다. 누르기 **[!UICONTROL 분기 이름 변경]** 을 눌러 분기의 대체 이름을 지정합니다.
+마찬가지로 외부 스크립트 경로를 선택하거나 라우팅 표현식에 대한 ECMA 스크립트를 지정하여 활성 분기를 평가합니다. 선택 **[!UICONTROL 분기 이름 변경]** 을 눌러 분기의 대체 이름을 지정합니다.
 
 자세한 예는 를 참조하십시오. [워크플로우 모델 만들기](../../forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
@@ -287,9 +287,9 @@ Forms Workflow을 사용하여 처리된 데이터에는 개인 식별 정보 �
 
 ## 변수 편집 {#edit-a-variable}
 
-1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 있는 변수 아이콘을 탭합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
-1. 탭 ![편집](assets/edit.png) (편집) 아이콘을 클릭합니다.
-1. 변수 정보를 편집하고 을 누릅니다 ![done_icon](assets/done_icon.png) 변경 내용을 저장합니다. 다음을 편집할 수 없습니다. **[!UICONTROL 이름]** 및 **[!UICONTROL 유형]** 변수에 대한 필드입니다.
+1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 사용할 수 있는 변수 아이콘을 선택합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
+1. 다음 항목 선택 ![편집](assets/edit.png) (편집) 아이콘을 클릭합니다.
+1. 변수 정보를 편집하고 ![done_icon](assets/done_icon.png) 변경 내용을 저장합니다. 다음을 편집할 수 없습니다. **[!UICONTROL 이름]** 및 **[!UICONTROL 유형]** 변수에 대한 필드입니다.
 
 ## 변수 삭제 {#delete-a-variable}
 
@@ -297,9 +297,9 @@ Forms Workflow을 사용하여 처리된 데이터에는 개인 식별 정보 �
 
 다음 단계를 실행하여 변수를 삭제합니다.
 
-1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 있는 변수 아이콘을 탭합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
-1. 삭제하려는 변수 이름 옆에 있는 삭제 아이콘을 탭합니다.
-1. 누르기 ![done_icon](assets/done_icon.png) 을 클릭하여 변수를 확인하고 삭제합니다.
+1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 사용할 수 있는 변수 아이콘을 선택합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
+1. 삭제하려는 변수 이름 옆에 있는 삭제 아이콘을 선택합니다.
+1. 선택 ![done_icon](assets/done_icon.png) 을 클릭하여 변수를 확인하고 삭제합니다.
 
 ## 참조 {#references}
 

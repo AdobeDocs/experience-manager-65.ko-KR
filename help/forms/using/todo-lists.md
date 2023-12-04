@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4031'
+source-wordcount: '4024'
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ AEM Forms 작업 공간에는 다음과 같은 세 가지 유형의 할 일 목�
 
 ### 작업을 완료하지 않고 작업 저장 {#save-your-work-without-completing-the-task}
 
-1. 탭에서 을 누릅니다. **저장**.
+1. 탭에서 을 선택합니다. **저장**.
 
    초안으로 저장 대화 상자가 나타납니다. 초안의 기본 이름은 작업 템플릿의 작업 이름입니다.
 
@@ -199,7 +199,7 @@ AEM Forms 작업 공간에는 다음과 같은 세 가지 유형의 할 일 목�
    >
    >자세한 내용은 의 주기적으로 초안 저장 을 참조하십시오. [환경 설정 관리](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. 초안으로 저장 대화 상자에서 작업에 대한 고유한 이름을 지정하고 을 누릅니다 **확인**.
+1. 초안으로 저장 대화 상자에서 작업의 고유한 이름을 지정하고 을 선택합니다 **확인**.
 
    ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 

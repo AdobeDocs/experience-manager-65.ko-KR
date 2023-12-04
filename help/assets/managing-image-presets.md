@@ -13,16 +13,16 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3837'
-ht-degree: 9%
+source-wordcount: '3794'
+ht-degree: 8%
 
 ---
 
 # Dynamic Media 이미지 사전 설정 관리{#managing-image-presets}
 
-이미지 사전 설정을 사용하면 Adobe Experience Manager Assets가 다양한 크기, 다른 형식 또는 동적으로 생성된 다른 이미지 속성으로 이미지를 동적으로 전달할 수 있습니다. 각 이미지 사전 설정은 이미지를 표시하기 위한 미리 정의된 크기 조정 및 서식 지정 명령 컬렉션을 나타냅니다. 이미지 사전 설정을 만들 때 이미지 게재 크기를 선택합니다. 또한 보기 위해 이미지가 전달될 때 이미지의 모양이 최적화되도록 서식 지정 명령을 선택합니다.
+이미지 사전 설정을 사용하면 Adobe Experience Manager Assets에서 다른 크기, 다른 형식 또는 동적으로 생성되는 다른 이미지 속성으로 이미지를 동적으로 전달할 수 있습니다. 각 이미지 사전 설정은 이미지를 표시하기 위한 미리 정의된 크기 조정 및 서식 지정 명령 컬렉션을 나타냅니다. 이미지 사전 설정을 만들 때 이미지 게재 크기를 선택합니다. 또한 보기 위해 이미지가 전달될 때 이미지의 모양이 최적화되도록 서식 지정 명령을 선택합니다.
 
 관리자는 에셋 내보내기를 위한 사전 설정을 만들 수 있습니다. 사용자는 이미지를 내보낼 때 사전 설정을 선택할 수 있으며, 이 사전 설정은 관리자가 지정하는 사양으로 이미지 형식을 다시 지정할 수도 있습니다.
 
@@ -81,11 +81,11 @@ Adobe Illustrator의 파일 형식은 PDF의 변형입니다. Experience Manager
 * Adobe Illustrator 문서는 여러 레이어가 있는 단일 페이지로 구성됩니다. 각 레이어는 기본 Illustrator 에셋 아래에 PNG 하위 에셋으로 추출됩니다.
 * PDF 문서는 하나 이상의 페이지로 구성됩니다. 각 페이지는 기본 다중 페이지 PDF 문서 아래에 있는 단일 페이지 PDF 하위 자산으로 추출됩니다.
 
-하위 에셋은 `Create Sub Asset process` 전체 내 구성 요소 `DAM Update Asset` 워크플로입니다. 워크플로우 내에서 이 프로세스 구성 요소를 보려면 다음을 누르십시오. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**.
+하위 에셋은 `Create Sub Asset process` 전체 내 구성 요소 `DAM Update Asset` 워크플로입니다. 워크플로우 내에서 이 프로세스 구성 요소를 보려면 다음을 선택합니다. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**.
 
 참조: [다중 페이지 파일의 페이지 보기](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
-에셋을 열고 콘텐츠 메뉴를 탭한 다음 을 선택하면 하위 에셋 또는 페이지를 볼 수 있습니다. **[!UICONTROL 하위 자산]** 또는 **[!UICONTROL 페이지]**. 하위 자산은 실제 자산입니다. 즉, PDF 페이지는 `Create Sub Asset` 워크플로우 구성 요소입니다. 그런 다음 다음과 같이 저장됩니다. `page1.pdf`, `page2.pdf`등, 기본 에셋 아래. 파일이 저장된 후 `DAM Update Asset` 워크플로우가 처리합니다.
+에셋을 열고 콘텐츠 메뉴를 선택한 다음 을 선택하면 하위 에셋 또는 페이지를 볼 수 있습니다. **[!UICONTROL 하위 자산]** 또는 **[!UICONTROL 페이지]**. 하위 자산은 실제 자산입니다. 즉, PDF 페이지는 `Create Sub Asset` 워크플로우 구성 요소입니다. 그런 다음 다음과 같이 저장됩니다. `page1.pdf`, `page2.pdf`등, 기본 에셋 아래. 파일이 저장된 후 `DAM Update Asset` 워크플로우가 처리합니다.
 
 Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환을 미리 보고 생성하려면 다음 처리 단계가 필요합니다.
 
@@ -106,7 +106,7 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환�
 
 액세스 권한 `Rasterize PDF/AI Image Preview Rendition` 다음을 통해 구성 요소 옵션 처리 `DAM Update Asset` 워크플로입니다.
 
-왼쪽 상단의 Adobe Experience Manager을 탭하고 다음 위치로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]**. 워크플로 모델 페이지에서 을 선택합니다. **[!UICONTROL DAM 자산 업데이트]**&#x200B;을 클릭한 다음 도구 모음에서 를 탭합니다 **[!UICONTROL 편집]**. 다음에서 [!UICONTROL DAM 자산 업데이트] 워크플로우 페이지, 두 번 탭 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 사용하여 단계 속성 대화 상자를 엽니다.
+왼쪽 상단 모서리에서 Adobe Experience Manager을 선택하고 다음 위치로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]**. 워크플로 모델 페이지에서 을 선택합니다. **[!UICONTROL DAM 자산 업데이트]**&#x200B;을 클릭한 다음 도구 모음에서 를 선택합니다 **[!UICONTROL 편집]**. 다음에서 [!UICONTROL DAM 자산 업데이트] 워크플로우 페이지에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 사용하여 단계 속성 대화 상자를 엽니다.
 
 #### PDF/AI 이미지 미리 보기 렌디션 옵션 래스터화 {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -137,7 +137,7 @@ PDF 또는 AI 워크플로 래스터화 인수
    <td>생성된 미리 보기 렌디션의 최대 높이(픽셀 단위)입니다.<br /> </td>
   </tr>
   <tr>
-   <td>해결</td>
+   <td>해결 방법</td>
    <td>72</td>
    <td>첫 번째 페이지를 래스터화하는 해상도(ppi)(인치당 픽셀 수)입니다.</td>
   </tr>
@@ -208,18 +208,18 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
 
 **이미지 썸네일 크기를 구성하려면:**
 
-1. 누르기 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**.
-1. 탭 **[!UICONTROL Dynamic Media 이미지 자산 처리]** 단계 및 을(를) 탭하거나 클릭합니다 **[!UICONTROL 축소판]** 탭. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
+1. 선택 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**.
+1. 다음 항목 선택 **[!UICONTROL Dynamic Media 이미지 자산 처리]** 단계 및 클릭 **[!UICONTROL 축소판]** 탭. 필요에 따라 썸네일 크기를 변경한 다음 를 선택합니다. **[!UICONTROL 확인]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Tap the **[!UICONTROL Process Thumbnails]** step, then tap the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
+1. 다음 항목 선택 **[!UICONTROL 프로세스 썸네일]** 단계를 선택한 다음 **[!UICONTROL 축소판]** 탭. 필요에 따라 썸네일 크기를 변경한 다음 를 선택합니다. **[!UICONTROL 확인]**.
 
    >[!NOTE]
    >
    >The values in the thumbnails argument in the **[!UICONTROL Process Thumbnails]** step must match the thumbnails argument in the **[!UICONTROL Dynamic Media Process Image Assets]** step.
 
-1. 누르기 **[!UICONTROL 저장]** 워크플로우에 대한 변경 사항을 저장합니다.
+1. 선택 **[!UICONTROL 저장]** 워크플로우에 대한 변경 사항을 저장합니다.
 
 ### 표시되는 Dynamic Media 이미지 사전 설정 수 증가 또는 감소 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
@@ -238,7 +238,7 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. limit 속성에서 숫자를 원하는 숫자로 변경합니다(예: ). `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. 누르기 **[!UICONTROL 모두 저장]**.
+1. 선택 **[!UICONTROL 모두 저장]**.
 
 ## Dynamic Media 이미지 사전 설정 만들기 {#creating-image-presets}
 
@@ -260,7 +260,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 **Dynamic Media 이미지 사전 설정을 만들려면 다음 작업을 수행하십시오.**
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음 을 탭합니다 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 이미지 사전 설정]**.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 을 선택합니다 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 이미지 사전 설정]**.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 다음 **[!UICONTROL 이미지 사전 설정 편집]** 창이 열립니다.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -297,7 +297,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 이미지 사전 설정을 만들거나 편집할 때 이 섹션에 설명된 옵션이 있습니다. 또한 Adobe은 다음과 같은 &quot;모범 사례&quot; 옵션 선택 사항을 시작할 것을 권장합니다.
 
-* **[!UICONTROL Format]** (**[!UICONTROL Basic]** tab) - Select **[!UICONTROL JPEG]** or another format that meets your requirements. All web browsers support the JPEG image format; it offers a good balance between small files sizes and image quality. However, JPEG format images use a lossy compression scheme that can introduce unwanted image artifacts if the compression setting is too low. For that reason, Adobe recommends setting the compression quality to 75. This setting offers a good balance between image quality and small file size.
+* **[!UICONTROL 형식]** (**[!UICONTROL 기본]** tab) - 선택 **[!UICONTROL JPEG]** 또는 요구 사항을 충족하는 다른 형식일 수 있습니다. All web browsers support the JPEG image format; it offers a good balance between small files sizes and image quality. However, JPEG format images use a lossy compression scheme that can introduce unwanted image artifacts if the compression setting is too low. For that reason, Adobe recommends setting the compression quality to 75. This setting offers a good balance between image quality and small file size.
 
 * **[!UICONTROL Enable Simple Sharpening]** - Do not select **[!UICONTROL Enable Simple Sharpening]** (this sharpening filter offers less control than Unsharp Masking settings).
 
@@ -492,7 +492,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 ## 이미지 사전 설정 편집 {#modifying-image-presets}
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음 을 탭합니다 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 이미지 사전 설정]**.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 을 선택합니다 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 이미지 사전 설정]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -507,14 +507,14 @@ Dynamic Media - 하이브리드 모드를 실행 중인 경우 이미지 사전 
 
 **Dynamic Media - 하이브리드 모드에서 이미지 사전 설정을 게시하려면 다음을 수행하십시오.**
 
-1. Experience Manager에서 Experience Manager 로고를 탭하거나 클릭하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 탭하거나 클릭하여 다음 위치로 이동합니다. **[!UICONTROL 에셋]** > **[!UICONTROL 이미지 사전 설정]**.
-1. 이미지 사전 설정 목록에서 이미지 사전 설정 또는 여러 이미지 사전 설정을 선택하고 을 클릭하거나 탭합니다 **[!UICONTROL 게시]**.
+1. Experience Manager에서 Experience Manager 로고를 클릭하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 클릭하고 다음 위치로 이동합니다. **[!UICONTROL 에셋]** > **[!UICONTROL 이미지 사전 설정]**.
+1. 이미지 사전 설정 목록에서 이미지 사전 설정 또는 여러 이미지 사전 설정을 선택하고 **[!UICONTROL 게시]**.
 1. 이미지 사전 설정이 게시되면 상태가 게시 취소에서 게시로 변경됩니다.
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
 ## Dynamic Media 이미지 사전 설정 삭제 {#deleting-image-presets}
 
-1. Experience Manager에서 Experience Manager 로고를 탭하거나 클릭하여 전역 탐색 콘솔에 액세스합니다.
-1. 탭 **[!UICONTROL 도구]** 아이콘을 클릭한 다음 로 이동합니다. **[!UICONTROL 에셋]** > **[!UICONTROL 이미지 사전 설정]**.
-1. 사전 설정을 선택한 다음 을 클릭합니다 **[!UICONTROL 삭제]**. Dynamic Media에서 삭제할 것임을 확인합니다. 누르기 **[!UICONTROL 삭제]** 삭제 또는 탭하려면 **[!UICONTROL 취소]** 중단합니다.
+1. Experience Manager에서 Experience Manager 로고를 클릭하여 전역 탐색 콘솔에 액세스합니다.
+1. 다음 항목 선택 **[!UICONTROL 도구]** 아이콘을 클릭한 다음 로 이동합니다. **[!UICONTROL 에셋]** > **[!UICONTROL 이미지 사전 설정]**.
+1. 사전 설정을 선택한 다음 을 클릭합니다 **[!UICONTROL 삭제]**. Dynamic Media에서 삭제할 것임을 확인합니다. 선택 **[!UICONTROL 삭제]** 삭제 또는 선택 **[!UICONTROL 취소]** 중단합니다.

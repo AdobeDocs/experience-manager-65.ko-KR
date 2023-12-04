@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6489'
+source-wordcount: '6508'
 ht-degree: 3%
 
 ---
@@ -41,13 +41,13 @@ ht-degree: 3%
 >* [스마트 이미징](/help/assets/imaging-faq.md)
 >* [캐시 무효화](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 >* [핫링크 보호](/help/assets/hotlink-protection.md)
->* [콘텐츠의 HTTP/2 전달](/help/assets/http2.md)
+>* [컨텐츠의 HTTP/2 전달](/help/assets/http2.md)
 >* CDN 수준에서 URL 리디렉션
 >* Akamai ChinaCDN(중국에서 최적의 전송을 위해)
 
 ## Scene7 모드에서 Dynamic Media 활성화 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media는 기본적으로 비활성화됩니다. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Dynamic Media 기능을 활용하려면 활성화해야 합니다.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) 은 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 활용하려면 활성화해야 합니다.
 
 >[!WARNING]
 >
@@ -276,7 +276,7 @@ Dynamic Media - Scene7 모드에서 기본 에셋 업로드 파일 크기는 2GB
 
    * 위 경로를 복사하여 도구 모음 아래의 CRXDE Lite 경로 필드에 붙여넣은 다음 키를 누릅니다 `Enter`.
 
-1. 왼쪽 레일에서 을(를) 마우스 오른쪽 버튼으로 클릭합니다. `fileupload`을 클릭한 다음 팝업 메뉴에서 을 선택합니다 **[!UICONTROL 오버레이 노드]**.
+1. 왼쪽 레일에서 마우스 오른쪽 버튼 클릭 `fileupload`을 클릭한 다음 팝업 메뉴에서 을 선택합니다 **[!UICONTROL 오버레이 노드]**.
 
    ![오버레이 노드 옵션](/help/assets/assets-dm/uploadassets15gb_a.png)
 
@@ -388,7 +388,7 @@ Dynamic Media에서 처리하는 자산 유형을 정의하고 고급 자산 처
 
    * 를 두 번 클릭합니다. **[!UICONTROL 활성화됨]** 필드. 기본적으로 모든 에셋 MIME 유형이 활성화됩니다( 로 설정). **[!UICONTROL true]**) - 자산이 처리를 위해 Dynamic Media에 동기화됨을 의미합니다. 이 자산 MIME 유형을 처리 대상에서 제외하려면 이 설정을 다음으로 변경하십시오. **[!UICONTROL false]**.
 
-   * 두 번 누르기 **[!UICONTROL jobParam]** 연결된 텍스트 필드를 엽니다. 다음을 참조하십시오 [지원되는 Mime 유형](/help/assets/assets-formats.md#supported-mime-types) 특정 mime 유형에 사용할 수 있는 허용된 처리 매개 변수 값 목록.
+   * 두 번 선택 **[!UICONTROL jobParam]** 연결된 텍스트 필드를 엽니다. 다음을 참조하십시오 [지원되는 Mime 유형](/help/assets/assets-formats.md#supported-mime-types) 특정 mime 유형에 사용할 수 있는 허용된 처리 매개 변수 값 목록.
 
 1. 다음 중 하나를 수행하십시오.
 
@@ -442,7 +442,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. MIME 유형 포함 `image_vnd.dwg` 에서 아직 선택됨 **[!UICONTROL 속성]** 탭, **[!UICONTROL 활성화됨]** 행, 아래 **[!UICONTROL 값]** 열 머리글에서 값을 두 번 탭하여 열기 **[!UICONTROL 값]** 드롭다운 목록입니다.
+1. MIME 유형 포함 `image_vnd.dwg` 에서 아직 선택됨 **[!UICONTROL 속성]** 탭, **[!UICONTROL 활성화됨]** 행, 아래 **[!UICONTROL 값]** 열 머리글에서 값을 두 번 선택하여 **[!UICONTROL 값]** 드롭다운 목록입니다.
 1. 유형 `false` 필드(또는 선택)에서 **[!UICONTROL false]** 드롭다운 목록에서).
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)

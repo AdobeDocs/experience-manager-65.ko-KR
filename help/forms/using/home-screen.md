@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
@@ -29,10 +29,10 @@ AEM Forms 앱에 로그인하면 홈 화면으로 리디렉션됩니다.
 
 ![home-screen-1-1](assets/home-screen-1-1.png)-->
 
-1. **메뉴 단추**: 다음을 탭합니다. **메뉴** 단추를 클릭하여 작업, Forms, 보낼 편지함 및 설정으로 이동합니다. AEM Forms 앱이 AEM Forms JEE 서버에 연결되어 있으면 작업 옵션이 표시됩니다. 또한 작업 옵션에는 프로세스의 작업에서 생성된 초안이 저장됩니다. AEM Forms OSGi 서버의 경우 작업 옵션이 숨겨집니다. 보낼 편지함은 저장된 양식 및 초안을 서버와 동기화하기 전에 저장합니다. 아웃박스에 저장된 모든 양식 및 초안은 앱이 업로드되면 AEM Forms 서버에 업로드됩니다 [서버와 동기화됨](../../forms/using/sync-app.md). 설정에 대한 자세한 내용은 [일반 설정 업데이트](../../forms/using/update-general-settings.md).
-1. **작업 또는 양식**: 작업하려는 나열된 작업 또는 양식을 탭합니다.
-1. **가로 줄임표**: 양식에 작업을 사용할 수 있음을 나타냅니다. 생략 부호를 탭하면 작성자가 제공한 작업 및 설명이 표시됩니다. 다음 **초안 삭제** 및 **완료** 생략 부호를 탭하면 옵션이 표시됩니다.
-1. **새로 고침 아이콘**: 앱을 AEM Forms 서버와 동기화할 수 있도록 새로 고침 아이콘을 탭합니다.
+1. **메뉴 단추**: 다음을 선택합니다. **메뉴** 단추를 클릭하여 작업, Forms, 보낼 편지함 및 설정으로 이동합니다. AEM Forms 앱이 AEM Forms JEE 서버에 연결되어 있으면 작업 옵션이 표시됩니다. 또한 작업 옵션에는 프로세스의 작업에서 생성된 초안이 저장됩니다. AEM Forms OSGi 서버의 경우 작업 옵션이 숨겨집니다. 보낼 편지함은 저장된 양식 및 초안을 서버와 동기화하기 전에 저장합니다. 아웃박스에 저장된 모든 양식 및 초안은 앱이 업로드되면 AEM Forms 서버에 업로드됩니다 [서버와 동기화됨](../../forms/using/sync-app.md). 설정에 대한 자세한 내용은 [일반 설정 업데이트](../../forms/using/update-general-settings.md).
+1. **작업 또는 양식**: 작업할 작업 또는 양식을 선택합니다.
+1. **가로 줄임표**: 양식에 작업을 사용할 수 있음을 나타냅니다. 생략 부호를 탭하면 작성자가 제공한 작업 및 설명이 표시됩니다. 다음 **초안 삭제** 및 **완료** 줄임표를 선택하면 옵션이 표시됩니다.
+1. **새로 고침 아이콘**: 앱을 AEM Forms 서버와 동기화할 수 있도록 새로 고침 아이콘을 선택합니다.
 
 ### 홈 화면 사용자 정의 {#customizing-the-home-screen}
 

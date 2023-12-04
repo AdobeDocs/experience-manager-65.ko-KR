@@ -10,20 +10,20 @@ discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 feature: Adaptive Forms
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 5%
+source-wordcount: '592'
+ht-degree: 13%
 
 ---
 
 # 적응형 양식 구성 요소의 인라인 스타일 지정 {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/inline-style-adaptive-forms.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/inline-style-adaptive-forms.html) |
 | AEM 6.5 | 이 문서 |
 
 다음을 사용하여 스타일을 지정하여 적응형 양식의 전체 모양과 스타일을 정의할 수 있습니다. [테마 편집기](../../forms/using/themes.md). 또한 개별 적응형 양식 구성 요소에 인라인 CSS 스타일을 적용하고 변경 사항을 즉시 미리 볼 수 있습니다. 인라인 스타일은 테마에 제공된 스타일을 재정의합니다.
@@ -32,8 +32,8 @@ ht-degree: 5%
 
 구성 요소에 인라인 스타일을 추가하려면 다음 작업을 수행하십시오.
 
-1. 양식 편집기에서 양식을 열고 모드를 스타일 모드로 변경합니다. 모드를 스타일 모드로 변경하려면 페이지 도구 모음에서 를 누릅니다 ![캔버스 드롭다운](assets/canvas-drop-down.png) > **스타일**.
-1. 페이지에서 구성 요소를 선택하고 편집 버튼을 탭합니다 ![편집 단추](assets/edit-button.png). 스타일 속성이 사이드바에서 열립니다.
+1. 양식 편집기에서 양식을 열고 모드를 스타일 모드로 변경합니다. 모드를 스타일 모드로 변경하려면 페이지 도구 모음에서 를 선택합니다 ![캔버스 드롭다운](assets/canvas-drop-down.png) > **스타일**.
+1. 페이지에서 구성 요소를 선택하고 편집 버튼을 선택합니다 ![편집 단추](assets/edit-button.png). 스타일 속성이 사이드바에서 열립니다.
 
    사이드바의 양식 계층 구조 트리에서 구성 요소를 선택할 수도 있습니다. 양식 계층 구조 트리는 사이드바에서 양식 객체로 사용할 수 있습니다.
 
@@ -51,7 +51,7 @@ ht-degree: 5%
    * 고급(구성 요소에 대한 사용자 지정 CSS를 쓸 수 있음)
 
 1. 마찬가지로 구성 요소의 다른 부분(예: 위젯, 캡션 및 도움말)에 스타일을 적용할 수 있습니다.
-1. 누르기 **완료** 변경 사항을 확인하거나 **취소** 변경 내용을 취소합니다.
+1. 선택 **완료** 변경 사항을 확인하거나 **취소** 변경 내용을 취소합니다.
 
 ## 예: 필드 구성 요소의 인라인 스타일 {#example-inline-styles-for-a-field-component}
 
@@ -86,7 +86,7 @@ ht-degree: 5%
   <tr>
    <td><p>레이블</p> </td>
    <td><p>치수 및 위치 &gt; 너비</p> </td>
-   <td><p>100px</p> </td>
+   <td><p>100픽셀</p> </td>
    <td><p>레이블의 너비를 100px로 수정합니다.</p> </td>
   </tr>
   <tr>

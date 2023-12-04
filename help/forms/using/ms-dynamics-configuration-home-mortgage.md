@@ -4,9 +4,9 @@ description: We.Finance 참조 사이트의 홈 모기지 워크플로에 대한
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -37,17 +37,17 @@ Dynamics 365의 설정 및 구성을 시작하기 전에 다음을 확인하십�
    `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
 1. Home Mortgage Calculator로 스크롤합니다.
-1. 오른쪽 열의 (계산기의) 패널을 강조 표시하고 을 탭하여 팝업 메뉴를 표시합니다. 팝업 메뉴에서 구성을 누릅니다. AEM Forms 컨테이너 편집 대화 상자가 나타납니다.
+1. 오른쪽 열의 (계산기) 패널을 강조 표시하고 을 선택하여 팝업 메뉴를 표시합니다. 팝업 메뉴에서 구성을 선택합니다. AEM Forms 컨테이너 편집 대화 상자가 나타납니다.
 
    ![calculatorconfigurepanel](assets/calculatorconfigurepanel.png)
 
-1. AEM Forms 컨테이너 편집 대화 상자에서 에셋 경로를 탐색하고 다음 경로에서 홈 모기지 계산기 를 선택한 다음 를 탭합니다 **확인**:
+1. AEM Forms 컨테이너 편집 대화 상자에서 에셋 경로를 탐색하고 다음 경로에서 홈 모기지 계산기 를 선택한 다음 를 선택합니다 **확인**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
    ![selectassetpath](assets/selectassetpath.png)
 
-1. 누르기 **완료**.
+1. **완료**&#x200B;를 선택합니다.
 1. 편집된 페이지를 게시합니다.
 
    >[!NOTE]
@@ -60,7 +60,7 @@ Dynamics 365의 설정 및 구성을 시작하기 전에 다음을 확인하십�
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. 솔루션 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다. Microsoft® Dynamics 인스턴스에서 **설정** > **솔루션** 그런 다음 을 누릅니다 **가져오기**.
+   1. 솔루션 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다. Microsoft® Dynamics 인스턴스에서 **설정** > **솔루션** 다음을 선택합니다. **가져오기**.
 
 1. 참조 사이트에 사용되는 사용자 연락처 세부 사항을 설정하려면 Sarah Rose Contact.CSV 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다.
 
@@ -68,4 +68,4 @@ Dynamics 365의 설정 및 구성을 시작하기 전에 다음을 확인하십�
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다. Microsoft® Dynamics 인스턴스에서 **판매** > **연락처** 그런 다음 을 누릅니다 **데이터 가져오기**.
+   1. 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다. Microsoft® Dynamics 인스턴스에서 **판매** > **연락처** 다음을 선택합니다. **데이터 가져오기**.

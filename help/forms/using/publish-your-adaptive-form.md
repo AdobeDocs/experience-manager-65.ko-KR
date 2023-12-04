@@ -10,10 +10,10 @@ discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 1%
+source-wordcount: '886'
+ht-degree: 2%
 
 ---
 
@@ -42,13 +42,13 @@ ht-degree: 1%
 
 1. AEM에 로그인 [!DNL Forms] 작성자 인스턴스 및 AEM에서 shipping-address-add-update-form 적응형 양식 찾기 [!DNL Forms] UI.
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
-1. 배송 주소 추가 업데이트 양식 적응형 양식을 선택하고 을 누릅니다 **[!UICONTROL 게시]**. 적응형 양식과 관련된 자산이 포함된 대화 상자가 표시됩니다. 누르기 **[!UICONTROL 게시]**. 적응형 양식이 게시되고 성공 대화 상자가 나타납니다.
+1. 배송 주소 추가 업데이트 양식 적응형 양식을 선택하고 **[!UICONTROL 게시]**. 적응형 양식과 관련된 자산이 포함된 대화 상자가 표시됩니다. 선택 **[!UICONTROL 게시]**. 적응형 양식이 게시되고 성공 대화 상자가 나타납니다.
 1. 게시 인스턴스에서 양식을 엽니다. 최종 사용자가 양식을 작성하여 제출할 수 있습니다.
    `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
 ## AEM Sites 페이지에 적응형 양식 포함 {#embed-the-adaptive-form-in-an-aem-sites-page}
 
-AEM [!DNL Forms] 양식 개발자가 AEM에 적응형 양식을 매끄럽게 임베드할 수 있습니다. [!DNL Sites] 페이지를 가리키도록 업데이트하는 중입니다. 임베드된 적응형 양식은 완전히 기능할 수 있으며, 사용자는 페이지를 종료하지 않고도 양식을 작성하고 제출할 수 있습니다. 사용자가 웹 페이지의 다른 요소 컨텍스트에 남아 있으면서 양식과 동시에 상호 작용하는 데 도움이 됩니다.
+AEM [!DNL Forms] 양식 개발자가 AEM에 적응형 양식을 매끄럽게 임베드할 수 있습니다. [!DNL Sites] 페이지를 가리키도록 업데이트하는 중입니다. 임베드된 적응형 양식은 완전한 기능을 갖추고 있으며 사용자는 페이지를 떠나지 않고 양식을 작성하고 제출할 수 있습니다. 사용자가 웹 페이지의 다른 요소 컨텍스트에 남아 있으면서 양식과 동시에 상호 작용하는 데 도움이 됩니다.
 
 AEM [!DNL Forms] 구성 요소 제공, AEM [!DNL Forms] 컨테이너, 적응형 양식을 AEM에 포함 [!DNL Sites] 페이지를 가리키도록 업데이트하는 중입니다. 기본적으로 구성 요소는 AEM에 표시되지 않습니다 [!DNL Sites] 컨테이너. AEM을 활성화하려면 다음 단계를 수행하십시오 [!DNL Forms] 컨테이너 구성 요소 및 AEM에 적응형 양식 임베드 [!DNL Sites] 페이지:
 
@@ -58,11 +58,11 @@ AEM [!DNL Forms] 구성 요소 제공, AEM [!DNL Forms] 컨테이너, 적응형 
 
    We.Retail 사이트에는 AEM이 함께 제공됩니다. We.Retail 사이트가 설치되어 있지 않으면 다음을 참조하십시오. [We.Retail 참조 구현](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) 사이트를 설치합니다.
 
-1. 누르기 ![속성](assets/properties.png) 페이지 정보를 참조하고 **[!UICONTROL 템플릿 편집]** 새로 만든 We.Retail 사이트 페이지의 옵션 페이지의 템플릿이 브라우저의 새 탭에서 열립니다.
-1. 내부를 탭합니다. **[!UICONTROL 레이아웃 컨테이너]** 상자 및 탭 ![영양 관리](assets/feedmanagement.png). 다음에서 **[!UICONTROL 허용된 구성 요소]** 탭을 확장하고 **[!UICONTROL 일반]** 아코디언에서 **[!UICONTROL AEM 양식]** 옵션 및 탭 ![save_icon](assets/save_icon.svg). 더 AEM [!DNL Forms] 페이지에 대해 컨테이너 구성 요소를 사용할 수 있습니다.
+1. 선택 ![속성](assets/properties.png) 페이지 정보를 참조하고 **[!UICONTROL 템플릿 편집]** 새로 만든 We.Retail 사이트 페이지의 옵션 페이지의 템플릿이 브라우저의 새 탭에서 열립니다.
+1. 내에서 선택 **[!UICONTROL 레이아웃 컨테이너]** 상자 및 선택 ![영양 관리](assets/feedmanagement.png). 다음에서 **[!UICONTROL 허용된 구성 요소]** 탭을 확장하고 **[!UICONTROL 일반]** 아코디언에서 **[!UICONTROL AEM 양식]** 옵션 및 선택 ![save_icon](assets/save_icon.svg). 더 AEM [!DNL Forms] 페이지에 대해 컨테이너 구성 요소를 사용할 수 있습니다.
 
-1. AEM이 포함된 브라우저 탭을 엽니다. [!DNL Sites] 1단계에서 페이지가 열렸습니다. 탭 **[!UICONTROL 여기에 구성 요소 드래그]** 상자 및 탭 **+.** 다음에서 **[!UICONTROL 새 구성 요소 삽입]** 상자, 탭 **[!UICONTROL AEM 양식]**. 다음 **[!UICONTROL AEM Forms 컨테이너]** 구성 요소가 페이지에 추가됩니다.
-1. 탭 **[!UICONTROL AEM Forms 컨테이너]** 구성 요소 및 탭 ![configure-icon](assets/configure-icon.svg). AEM 속성이 있는 대화 상자 [!DNL Forms] 컨테이너가 나타납니다. 다음에서 **[!UICONTROL 자산 경로]** 필드에서 shipping-address-add-update-form 적응형 양식을 찾아 선택합니다. 누르기 ![save_icon](assets/save_icon.svg). 적응형 양식이 페이지에 임베드됩니다.
+1. AEM이 포함된 브라우저 탭을 엽니다. [!DNL Sites] 1단계에서 페이지가 열렸습니다. 다음 항목 선택 **[!UICONTROL 여기에 구성 요소 드래그]** 상자 및 선택 **+.** 다음에서 **[!UICONTROL 새 구성 요소 삽입]** 상자, 선택 **[!UICONTROL AEM 양식]**. 다음 **[!UICONTROL AEM Forms 컨테이너]** 구성 요소가 페이지에 추가됩니다.
+1. 다음 항목 선택 **[!UICONTROL AEM Forms 컨테이너]** 구성 요소 및 선택 ![configure-icon](assets/configure-icon.svg). AEM 속성이 있는 대화 상자 [!DNL Forms] 컨테이너가 나타납니다. 다음에서 **[!UICONTROL 자산 경로]** 필드에서 shipping-address-add-update-form 적응형 양식을 찾아 선택합니다. 선택 ![save_icon](assets/save_icon.svg). 적응형 양식이 페이지에 임베드됩니다.
 1. 적응형 양식 및 을 모두 게시합니다 [!DNL Sites] 페이지를 가리키도록 업데이트하는 중입니다. 다음은 고려해야 할 몇 가지 사항입니다.
 
    * AEM을 게시하는 경우 [!DNL Sites] 페이지가 처음 게시되고 임베드된 양식이 포함되면 [!DNL Sites] 페이지와 포함된 양식.

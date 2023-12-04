@@ -11,9 +11,9 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2608'
+source-wordcount: '2621'
 ht-degree: 1%
 
 ---
@@ -28,13 +28,13 @@ ht-degree: 1%
 
 대화형 통신에서 차트를 추가하고 구성하려면 다음 단계를 수행하십시오.
 
-1. 누르기 **구성 요소** 인터랙티브 커뮤니케이션의 사이드 킥에서.
+1. 선택 **구성 요소** 인터랙티브 커뮤니케이션의 사이드 킥에서.
 1. 을(를) 끌어다 놓습니다. **차트** 구성 요소를 다음 구성 요소 중 하나로 만듭니다.
 
    * 인쇄 채널: 대상 영역 또는 이미지 필드
    * 웹 채널: 패널 또는 대상 영역
 
-1. 대화형 통신 편집기에서 차트 구성 요소를 탭하고 을 선택합니다. **[!UICONTROL 구성 (]** ![configure_icon](assets/configure_icon.png))을 클릭하여 제품에서 사용할 수 있습니다.
+1. 대화형 통신 편집기에서 차트 구성 요소를 선택하고 **[!UICONTROL 구성 (]** ![configure_icon](assets/configure_icon.png))을 클릭하여 제품에서 사용할 수 있습니다.
 
    차트 등록 정보는 왼쪽 창에 표시됩니다.
 
@@ -47,13 +47,13 @@ ht-degree: 1%
    웹 채널에서 선 유형 차트의 기본 속성
 
 1. 구성 [차트 등록 정보](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) 채널 유형을 기반으로 합니다.
-1. (인쇄 채널만) **[!UICONTROL 에이전트 설정]**&#x200B;이 차트를 사용하기 위해 에이전트가 필요한지 여부를 지정합니다. 다음과 같은 경우 **[!UICONTROL 이 차트를 사용하려면 에이전트가 필요합니다.]** 옵션이 선택되어 있지 않으면 에이전트는 차트의 눈 모양 아이콘을 **[!UICONTROL 콘텐츠]** 차트를 표시하거나 숨길 수 있는 에이전트 UI의 탭입니다.
+1. (인쇄 채널만) **[!UICONTROL 에이전트 설정]**&#x200B;이 차트를 사용하기 위해 에이전트가 필요한지 여부를 지정합니다. 다음과 같은 경우 **[!UICONTROL 이 차트를 사용하려면 에이전트가 필요합니다.]** 옵션이 선택되어 있지 않으면 에이전트는 **[!UICONTROL 콘텐츠]** 차트를 표시하거나 숨길 수 있는 에이전트 UI의 탭입니다.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. 누르기 ![done_icon](assets/done_icon.png) 차트 등록 정보를 저장합니다.
+1. 선택 ![done_icon](assets/done_icon.png) 차트 등록 정보를 저장합니다.
 
-   누르기 **[!UICONTROL 미리 보기]** 을 클릭하여 차트와 연결된 모양과 데이터를 봅니다. 누르기 **[!UICONTROL 편집]** 을 클릭하여 차트의 속성을 다시 구성합니다.
+   선택 **[!UICONTROL 미리 보기]** 을 클릭하여 차트와 연결된 모양과 데이터를 봅니다. 선택 **[!UICONTROL 편집]** 을 클릭하여 차트의 속성을 다시 구성합니다.
 
 ## 차트 등록 정보 구성 {#configure-chart-properties}
 
@@ -132,7 +132,7 @@ ht-degree: 1%
    <td>인쇄</td>
   </tr>
   <tr>
-   <td>너비</td>
+   <td>폭</td>
    <td>차트의 픽셀 단위 폭입니다. 스타일 레이어를 사용하거나 테마를 적용하여 웹 채널에서 차트의 너비를 제어할 수 있습니다.</td>
    <td>인쇄</td>
   </tr>

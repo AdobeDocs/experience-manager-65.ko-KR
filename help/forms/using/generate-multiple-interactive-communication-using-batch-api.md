@@ -7,16 +7,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2206'
-ht-degree: 4%
+source-wordcount: '2136'
+ht-degree: 3%
 
 ---
 
 # 일괄 처리 API를 사용하여 여러 대화형 통신 생성 {#use-batch-api-to-generate-multiple-ic}
 
-배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들면 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다.
+배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들어 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다.
 
 배치 API는 JSON 형식 및 양식 데이터 모델의 레코드(데이터)를 허용합니다. 생성된 대화형 통신의 수는 구성된 양식 데이터 모델의 입력 JSON 파일에 지정된 레코드와 같습니다. API를 사용하여 인쇄 및 웹 출력을 모두 생성할 수 있습니다. PRINT 옵션은 PDF 문서를 생성하고 WEB 옵션은 각 개별 레코드에 대한 JSON 형식의 데이터를 생성합니다.
 
@@ -81,7 +81,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
 
 1. 만들기 [감시 폴더](/help/forms/using/creating-configure-watched-folder.md) 배치 API를 사용하도록 를 구성합니다.
    1. AEM Forms 작성자 인스턴스에 로그인합니다.
-   1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 감시 폴더 구성]**. 누르기 **[!UICONTROL 신규]**.
+   1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 감시 폴더 구성]**. 선택 **[!UICONTROL 신규]**.
    1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 물리적 **[!UICONTROL 경로]** 폴더의 입니다. 예: `c:\batchprocessing`
    1. 다음 항목 선택 **[!UICONTROL 서비스]** 의 옵션 **[!UICONTROL 다음을 사용하여 파일 처리]** 필드.
    1. 다음 항목 선택 **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** 의 서비스 **[!UICONTROL 서비스 이름]** 필드.
@@ -97,7 +97,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
       | batchType | 문자열 | 값을 PRINT, WEB 또는 WEB_AND_PRINT로 설정합니다. 기본값은 WEB_AND_PRINT입니다. |
       | 로케일 | 문자열 | 출력 대화형 통신의 로케일을 지정합니다. 기본 제공 서비스에서는 locale 옵션을 사용하지 않지만 사용자 지정 서비스를 만들어 지역화된 대화형 통신을 생성할 수 있습니다. 기본값은 en_US입니다. |
 
-   1. 누르기 **[!UICONTROL 만들기]** 감시 폴더가 생성됩니다.
+   1. 선택 **[!UICONTROL 만들기]** 감시 폴더가 생성됩니다.
 1. 감시 폴더를 사용하여 대화형 커뮤니케이션을 생성합니다.
    1. 감시 폴더를 엽니다. 입력 폴더로 이동합니다.
    1. 입력 폴더에 폴더를 만들고 새로 만든 폴더에 JSON 파일을 저장합니다.
@@ -113,9 +113,9 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
 
 1. 템플릿의 양식 데이터 모델을 구성합니다.
    1. 대화형 통신 템플릿에 연결된 양식 데이터 모델을 엽니다.
-   1. 최상위 수준 모델 개체를 선택하고 속성 편집을 누릅니다.
+   1. 최상위 레벨 모델 객체를 선택하고 등록 정보 편집을 선택합니다.
    1. 속성 편집 창의 서비스 읽기 필드에서 가져오기 또는 서비스 가져오기를 선택합니다.
-   1. 읽기 서비스 인수에 대해 연필 아이콘을 탭하여 인수를 요청 속성에 바인딩하고 바인딩 값을 지정합니다. 이 메서드는 서비스 인수를 지정된 바인딩 특성 또는 리터럴 값에 바인딩합니다. 이 값은 데이터 소스에서 지정된 값과 연결된 세부 정보를 가져오는 인수로 서비스에 전달됩니다.
+   1. 읽기 서비스 인수에 대해 연필 아이콘을 선택하여 인수를 요청 속성에 바인딩하고 바인딩 값을 지정합니다. 이 메서드는 서비스 인수를 지정된 바인딩 특성 또는 리터럴 값에 바인딩합니다. 이 값은 데이터 소스에서 지정된 값과 연결된 세부 정보를 가져오는 인수로 서비스에 전달됩니다.
 
       <br>
         이 예에서 id 인수는 사용자 프로필의 id 속성 값을 가져와 읽기 서비스에 인수로 전달합니다. 지정된 ID에 대한 직원 데이터 모델 개체에서 연결된 속성 값을 읽고 반환합니다. 따라서 양식의 ID 필드00250 값을 지정하면 읽기 서비스에서 직원 ID가 있는 직원의 세부 정보00250 읽습니다.
@@ -143,7 +143,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
 
 1. 만들기 [감시 폴더](/help/forms/using/creating-configure-watched-folder.md) 배치 API 서비스를 사용하도록 구성합니다.
    1. AEM Forms 작성자 인스턴스에 로그인합니다.
-   1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 감시 폴더 구성]**. 누르기 **[!UICONTROL 신규]**.
+   1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 감시 폴더 구성]**. 선택 **[!UICONTROL 신규]**.
    1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 물리적 **[!UICONTROL 경로]** 폴더의 입니다. 예: `c:\batchprocessing`
    1. 다음 항목 선택 **[!UICONTROL 서비스]** 의 옵션 **[!UICONTROL 다음을 사용하여 파일 처리]** 필드.
    1. 다음 항목 선택 **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** 의 서비스 **[!UICONTROL 서비스 이름]** 필드.
@@ -159,7 +159,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
       | batchType | 문자열 | 값을 PRINT, WEB 또는 WEB_AND_PRINT로 설정합니다. 기본값은 WEB_AND_PRINT입니다. |
       | 로케일 | 문자열 | 출력 대화형 통신의 로케일을 지정합니다. 기본 제공 서비스에서는 locale 옵션을 사용하지 않지만 사용자 지정 서비스를 만들어 지역화된 대화형 통신을 생성할 수 있습니다. 기본값은 en_US입니다. |
 
-   1. 누르기 **[!UICONTROL 만들기]** 감시 폴더가 생성됩니다.
+   1. 선택 **[!UICONTROL 만들기]** 감시 폴더가 생성됩니다.
 1. 감시 폴더를 사용하여 대화형 커뮤니케이션을 생성합니다.
    1. 감시 폴더를 엽니다. 입력 폴더로 이동합니다.
    1. 입력 폴더에 폴더를 만듭니다. 2단계에서 생성된 JSON 파일을 새로 생성된 폴더에 넣습니다.

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 2%
+source-wordcount: '1558'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ AEM을 Target과 통합하려면 유효한 Adobe Target 계정이 있는지 확�
 1. 클라이언트 코드, 이메일 및 암호 등 Target 계정 세부 사항을 지정합니다.
 1. 선택 **Rest** API 유형 드롭다운 목록
 
-1. 클릭 **Adobe Target에 연결** target과의 연결을 초기화할 수 있습니다. 정상적으로 연결되면 연결 성공이라는 메시지가 표시됩니다. 메시지에서 **확인**&#x200B;을 클릭한 다음 대화 상자에서 **확인**&#x200B;을 클릭합니다. Target 계정이 구성되었습니다.
+1. 클릭 **Adobe Target에 연결** target과의 연결을 초기화할 수 있습니다. 정상적으로 연결되면 연결 성공 이라는 메시지가 표시됩니다. 클릭 **확인** 메시지 및 **확인** 대화 상자. Target 계정이 구성되었습니다.
 
 1. 에 설명된 대로 Target 프레임워크 만들기 [프레임워크 추가](/help/sites-administering/target.md).
 
@@ -84,9 +84,9 @@ JBoss® 서버 외에 모든 애플리케이션 서버의 서버 시작 스크�
 
 AEM을 사용하면 대상을 만들고 A/B 테스트에 사용할 수 있습니다. AEM 내에서 생성하는 대상자는 AEM Forms에서 사용할 수 있습니다. AEM 내에서 대상을 만들려면 다음을 수행하십시오.
 
-1. 작성 인스턴스에서 을 누릅니다. **Adobe Experience Manager** > **개인화** > **대상**.
+1. 작성 인스턴스에서 다음을 선택합니다. **Adobe Experience Manager** > **개인화** > **대상**.
 
-1. 대상 페이지에서 을 누릅니다. **대상 만들기 > 타겟 대상 만들기**.
+1. Audiences 페이지에서 을 선택합니다. **대상 만들기 > 타겟 대상 만들기**.
 1. Adobe Target 구성 대화 상자에서 Target 구성을 선택하고 **확인**.
 1. 새 대상 만들기 페이지에서 규칙을 만듭니다. 규칙을 사용하여 대상자를 분류할 수 있습니다. 예를 들어 운영 체제에 따라 대상을 분류하려고 합니다. 대상자 A는 Windows에서 가져오고 대상자 B는 Linux®에서 가져옵니다.
 

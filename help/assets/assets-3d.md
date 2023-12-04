@@ -8,10 +8,10 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2354'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -127,7 +127,7 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관�
    | **카메라 돌리기** | 3D 장면 및 개체 주위로 보기를 궤도 회전합니다. | 마우스 왼쪽 단추를 클릭하고 드래그합니다. | 한 손가락으로 + 드래그. |
    | **카메라 회전** | 보기를 왼쪽, 오른쪽, 위쪽 또는 아래쪽으로 회전합니다. | 마우스 오른쪽 단추를 클릭하고 드래그하십시오. | 두 손가락으로 + 드래그. |
    | **카메라 확대/축소** | 3D 장면의 영역 안과 밖으로 이동합니다. | 스크롤 휠입니다. | 손가락 두 개 조입니다. |
-   | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 탭합니다. |
+   | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 선택합니다. |
    | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |   |   |
    | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |   |   |
 
@@ -160,7 +160,7 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관�
    | **카메라 돌리기** | 3D 장면 및 개체 주위로 보기를 궤도 회전합니다. | 마우스 왼쪽 단추를 클릭하고 드래그합니다. | 한 손가락으로 + 드래그. |
    | **카메라 회전** | 보기를 왼쪽, 오른쪽, 위쪽 또는 아래쪽으로 회전합니다. | 마우스 오른쪽 단추를 클릭하고 드래그하십시오. | 두 손가락으로 + 드래그. |
    | **카메라 확대/축소** | 3D 장면의 영역 안과 밖으로 이동합니다. | 스크롤 휠입니다. | 손가락 두 개 조입니다. |
-   | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 탭합니다. |
+   | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 선택합니다. |
    | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |   |   |
    | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |   |   |
 
@@ -270,7 +270,7 @@ Experience Manager을 WCM으로 사용하는 경우 이 게시 방법을 사용�
 1. 선택 **[!UICONTROL 닫기]** 대화 상자를 종료하고 에셋 세부 정보 페이지로 돌아갑니다.
 1. 3D 에셋의 파일 이름 왼쪽에 있는 드롭다운 목록에서 를 선택합니다 **[!UICONTROL 표현물]**.
 
-   ![3d-asset-renditions](/help/assets/assets-dm/3d-asset-renditions.png)
+   ![3d 자산 표현물](/help/assets/assets-dm/3d-asset-renditions.png)
 
 1. 선택 **[!UICONTROL 원본]**. 3D 자산이 게시(또는 &quot;활성화&quot;)될 때 **[!UICONTROL URL]** 다음 3D 자산 조건이 모두 충족되면 페이지의 왼쪽 하단 모서리 근처에 단추가 표시됩니다.
    * 3D 자산은 지원되는 형식(GLB, OBJ, STL 및 USDZ)입니다.
@@ -289,6 +289,6 @@ Experience Manager을 WCM으로 사용하는 경우 이 게시 방법을 사용�
 
   다음을 참조하십시오 [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
-* **[!UICONTROL 포함]** - 사용 **[!UICONTROL 포함]** 차원 뷰어를 사용하여 웹 페이지에 포함된 Dynamic Media 3D 자산을 보려는 경우. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the is not permitted in the **[!UICONTROL Embed Code]** dialog box.
+* **[!UICONTROL 포함]** - 사용 **[!UICONTROL 포함]** 차원 뷰어를 사용하여 웹 페이지에 포함된 Dynamic Media 3D 자산을 보려는 경우. You copy the embed code to the clipboard so you can paste it in your web pages. 에서는 코드를 편집할 수 없습니다. **[!UICONTROL 포함]** 대화 상자.
 
   다음을 참조하십시오 [웹 페이지에 Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

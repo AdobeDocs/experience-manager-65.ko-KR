@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '986'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ Forms 중심의 AEM 워크플로 및 기능에 대한 자세한 내용은 다음
 
    1. 다음으로 이동 `https://'[server]:[port]'/aem/start.html` 관리자 자격 증명으로 로그인합니다.
    1. 다음으로 이동 **[!UICONTROL 도구 > 워크플로 > 인스턴스]**.
-   1. 사용자에 대한 관련 워크플로우 인스턴스를 선택하고 을 누릅니다 **[!UICONTROL 종료]** 실행 중인 인스턴스를 종료합니다.
+   1. 사용자의 관련 워크플로우 인스턴스를 선택하고 **[!UICONTROL 종료]** 실행 중인 인스턴스를 종료합니다.
 
       워크플로우 인스턴스 작업에 대한 자세한 내용은 [워크플로우 인스턴스 관리](/help/sites-administering/workflows-administering.md).
 

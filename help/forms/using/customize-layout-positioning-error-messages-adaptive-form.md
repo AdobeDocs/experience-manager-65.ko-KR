@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -30,8 +30,8 @@ ht-degree: 0%
 
 ### 단일 필드의 레이아웃 사용자 정의 {#customize-layout-of-a-single-field}
 
-1. 에서 양식 열기 **스타일** 모드. 스타일 모드로 양식을 열려면 페이지 도구 모음에서 를 누릅니다 ![캔버스 드롭다운](assets/canvas-drop-down.png) > **스타일**.
-1. 사이드바에서 **양식 개체**&#x200B;필드를 선택하고 편집 버튼을 탭합니다 ![편집 단추](assets/edit-button.png).
+1. 에서 양식 열기 **스타일** 모드. 스타일 모드에서 양식을 열려면 페이지 도구 모음에서 를 선택합니다 ![캔버스 드롭다운](assets/canvas-drop-down.png) > **스타일**.
+1. 사이드바에서 **양식 개체**&#x200B;을 클릭하고 필드를 선택한 다음 편집 버튼을 선택합니다 ![편집 단추](assets/edit-button.png).
 1. 사용자 지정할 필드의 상태를 선택하고 해당 상태에 대한 스타일을 지정합니다.
 
    ![필드의 인라인 스타일 지정](assets/edit-error-state.png)
@@ -43,12 +43,12 @@ ht-degree: 0%
 테마 편집기를 사용하여 테마를 만들어 양식에 있는 모든 필드의 레이아웃을 사용자 지정합니다. 테마를 만든 후 다음 단계를 수행하여 양식에 적용합니다.
 
 1. 편집 모드에서 양식을 엽니다.
-1. 편집 모드에서 구성 요소를 선택한 다음 을 누릅니다 ![필드 수준](assets/field-level.png) > **적응형 양식 컨테이너**&#x200B;을 누른 다음 을 누릅니다 ![cmppr](assets/cmppr.png).
+1. 편집 모드에서 구성 요소를 선택한 다음 를 선택합니다 ![필드 수준](assets/field-level.png) > **적응형 양식 컨테이너**&#x200B;을 선택한 다음 을 선택합니다 ![cmppr](assets/cmppr.png).
 1. 사이드바의 적응형 양식 테마 아래에서 테마 편집기를 사용하여 만든 테마를 선택합니다.
 
 ## 사용자 정의 필드 레이아웃 만들기 {#create-a-custom-field-layout}
 
-1. CRXDE Lite를 엽니다. 기본 URL은 https://&#39;입니다.[server]:[포트]&#39;/crx/de.
+1. CRXDE Lite 열기. 기본 URL은 https://&#39;입니다.[server]:[포트]&#39;/crx/de.
 1. /libs/fd/af/layouts/field 노드(예: defaultFieldLayout)에서 /apps 노드(예: /apps/af-field-layout)로 필드 레이아웃을 복사합니다.
 1. 복사된 노드 및 defaultFieldLayout.jsp 파일의 이름을 변경합니다. 예: errorOnRight.jsp.
 

@@ -10,16 +10,16 @@ discoiquuid: a74ed6c1-3006-4baf-bd77-ad4045e23c22
 docset: aem65
 feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 1%
+source-wordcount: '1107'
+ht-degree: 4%
 
 ---
 
 # AEM Sites 단일 페이지 애플리케이션에 적응형 양식 또는 대화형 통신 포함{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 개요 {#overview}
 
@@ -59,7 +59,7 @@ SPA용 AEM Forms 컨테이너 구성 요소를 사용하여 적응형 양식 또
 1. 적응형 양식 또는 대화형 커뮤니케이션을 포함할 AEM 사이트 페이지를 편집 모드로 엽니다.
 1. 삽입 **SPA용 AEM 양식** 다음 옵션을 사용하는 페이지의 구성 요소:
 
-   * 사이트 페이지에서 레이아웃 컨테이너를 탭한 다음 을 누릅니다. **+** 및 선택 **SPA용 AEM 양식** 구성 요소.
+   * Sites 페이지에서 레이아웃 컨테이너를 선택하고 **+** 및 선택 **SPA용 AEM 양식** 구성 요소.
 
    * 구성 요소 브라우저 패널에서 를 드래그 앤 드롭합니다. **SPA용 AEM 양식** 구성 요소를 추가합니다.
    * Assets 브라우저에서 적응형 양식 또는 대화형 커뮤니케이션을 검색하고 사이트 페이지로 드래그 앤 드롭합니다. SPA용 AEM Forms 구성 요소 컨테이너에 양식을 임베드합니다.
@@ -68,7 +68,7 @@ SPA용 AEM Forms 컨테이너 구성 요소를 사용하여 적응형 양식 또
    >
    >한 페이지에서 여러 AEM Forms SPA 컨테이너 구성 요소를 렌더링하는 것은 지원되지 않습니다. 페이지에 여러 AEM Forms SPA 컨테이너가 있을 수 있지만 한 번에 하나의 구성 요소만 렌더링됩니다. 불일치를 방지하기 위해 페이지에 구성 요소가 하나만 표시되는지 확인합니다.
 
-1. 사이트 페이지에서 임베드된 AEM Forms SPA 컨테이너 구성 요소를 탭한 다음 를 탭합니다 ![settings_icon](assets/settings_icon.png) 작업 표시줄에 표시됩니다. 다음 **AEM Forms SPA 컨테이너 편집** 대화 상자가 열립니다.
+1. 사이트 페이지에서 임베드된 AEM Forms SPA 컨테이너 구성 요소를 선택한 다음 를 선택합니다. ![settings_icon](assets/settings_icon.png) 작업 표시줄에 표시됩니다. 다음 **AEM Forms SPA 컨테이너 편집** 대화 상자가 열립니다.
 1. 다음에서 **AEM Forms 컨테이너 편집** 대화 상자에서 다음을 지정합니다.
 
    * **에셋 유형:** 포함할 에셋 유형을 선택합니다. 옵션은 다음과 같습니다 **적응형 양식** 및 **대화형 통신**
@@ -78,7 +78,7 @@ SPA용 AEM Forms 컨테이너 구성 요소를 사용하여 적응형 양식 또
 
    * **테마**: 적응형 양식 또는 대화형 통신의 구성 요소에 대한 스타일을 정의하는 테마를 선택합니다. 스타일링에는 글꼴 스타일, 배경색, 치수 및 정렬과 같은 모양 속성이 포함됩니다.
 
-1. 누르기 ![done_icon](assets/done_icon.png) 설정을 저장합니다. 이제 적응형 양식 또는 대화형 통신이 페이지에 임베드됩니다.
+1. 선택 ![done_icon](assets/done_icon.png) 설정을 저장합니다. 이제 적응형 양식 또는 대화형 통신이 페이지에 임베드됩니다.
 
 ## 포함된 적응형 양식 및 대화형 통신 게시 {#publish-embedded-adaptive-form-and-interactive-communication}
 
@@ -95,7 +95,7 @@ AEM sites 페이지는 AEM Forms 컨테이너에서 적응형 양식 및 대화�
 임베드된 적응형 양식 및 대화형 통신의 구성 또는 속성을 수정하려면 다음 중 하나를 수행합니다.
 
 * 각 편집기에서 적응형 양식 또는 대화형 커뮤니케이션에서 원본 양식을 열고 수정합니다.
-* 편집 모드에서 Sites 페이지 내에서 적응형 양식 또는 대화형 통신을 탭한 다음 을 누릅니다 **새 창에서 편집**. 원본 양식이 편집 모드로 열립니다.
+* 편집 모드로 Sites 페이지 내에서 적응형 양식 또는 대화형 통신을 선택한 다음 을 선택합니다 **새 창에서 편집**. 원본 양식이 편집 모드로 열립니다.
 
 ## 고려 사항 및 우수 사례 {#considerations-and-best-practices}
 

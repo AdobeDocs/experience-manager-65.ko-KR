@@ -7,10 +7,10 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 8%
+source-wordcount: '1933'
+ht-degree: 6%
 
 ---
 
@@ -69,7 +69,7 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 ### 테마를 맞춤화하기 위한 사전 요구 사항 {#prerequisites}
 
-* [내 환경에 맞는 적응형 양식 핵심 구성 요소 활성화.](/help/forms/using/enable-adaptive-forms-core-components.md)
+* [적응형 Forms 핵심 구성 요소 활성화](/help/forms/using/enable-adaptive-forms-core-components.md) 을 참조하십시오.
 
 * 의 최신 릴리스 설치 [아파치 메이븐](https://maven.apache.org/download.cgi) Apache Maven은 Java™ 프로젝트에 일반적으로 사용되는 빌드 자동화 도구입니다. 최신 릴리스를 설치하면 테마 맞춤화에 필요한 종속성이 확보됩니다.
 
@@ -145,7 +145,7 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 다음 `variable.scss` 파일에는 테마의 전역 변수가 포함되어 있습니다. 이러한 변수를 업데이트하여 테마 수준에서 스타일 관련 변경 사항을 적용할 수 있습니다. 테마 수준 스타일을 적용하려면 다음 단계를 수행합니다.
 
-1. 편집할 `<your-theme-sources>/src/site/_variables.scss` 페이지를 엽니다.
+1. 를 엽니다. `<your-theme-sources>/src/site/_variables.scss` 편집할 파일입니다.
 1. 모든 속성의 값을 변경합니다. 예를 들어 기본 오류 색상은 빨간색입니다. 오류 색상을 빨간색에서 파란색으로 변경하려면 `$error`변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. 예: `$error: #196ee5`
 
    ![예: 오류 색상이 파란색으로 설정됨](/help/forms/using/assets/theme-level-changes.png)
@@ -187,8 +187,8 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 AEM 인스턴스에 테마를 배포하려면 클라이언트 라이브러리로 변환해야 합니다. 테마를 클라이언트 라이브러리로 변환하려면 다음 단계를 따르십시오.
 
 1. 명령 프롬프트 또는 터미널 창을 엽니다.
-1. `<your-theme-sources>` 폴더로 이동합니다. 예, `C:\aem-forms-theme-canvas`
-1. 다음 명령을 실행합니다:
+1. 다음 위치로 이동 `<your-theme-sources>` 폴더를 삭제합니다. 예, `C:\aem-forms-theme-canvas`
+1. 다음 명령을 실행합니다.
 
    ```
       npm run create-clientlib --category=adaptiveform.theme.[yourtheme]
@@ -233,7 +233,7 @@ To apply and test the customized theme with an Adaptive Form:
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
@@ -247,7 +247,7 @@ An Adaptive Form with the selected theme is created.
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Select an Adaptive Form and click Properties. 
 
@@ -283,7 +283,7 @@ The selected theme is applied to the Adaptive Form.
 적응형 양식에 테마를 적용하는 단계는 다음과 같습니다.
 
 1. 로컬 AEM 작성자 인스턴스에 로그인합니다.
-1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 누르기 **Adobe Experience Manager** > **Forms** > **Forms 및 문서**.
+1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 선택 **Adobe Experience Manager** > **Forms** > **Forms 및 문서**.
 1. 클릭 **만들기** > **적응형 Forms**.
 1. 적응형 Forms 핵심 구성 요소 템플릿을 선택하고 **다음**. 다음 **속성 추가** 표시
 1. 다음을 지정합니다. **이름** 적응형 양식용.

@@ -8,9 +8,9 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ ht-degree: 0%
 
    [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
-1. 탭 **[!UICONTROL 고객 ID]** 필드 및 탭 **[!UICONTROL 규칙 편집]** 아이콘. 규칙 편집기 창이 열립니다.
-1. 탭 **[!UICONTROL + 만들기]** 아이콘 을 클릭하여 규칙을 추가합니다. 비주얼 편집기가 열립니다.
+1. 다음 항목 선택 **[!UICONTROL 고객 ID]** 필드 및 선택 **[!UICONTROL 규칙 편집]** 아이콘. 규칙 편집기 창이 열립니다.
+1. 다음 항목 선택 **[!UICONTROL + 만들기]** 아이콘 을 클릭하여 규칙을 추가합니다. 비주얼 편집기가 열립니다.
 
    시각적 편집기에서 **[!UICONTROL 날짜]** 문이 기본적으로 선택됩니다. 또한 양식 개체(이 경우 **[!UICONTROL 고객 ID]**) 규칙 편집기를 시작한 위치는 **[!UICONTROL 날짜]** 명령문입니다.
 
-1. 탭 **[!UICONTROL 상태 선택]** 드롭다운 및 선택 **[!UICONTROL 변경됨]**.
+1. 다음 항목 선택 **[!UICONTROL 상태 선택]** 드롭다운 및 선택 **[!UICONTROL 변경됨]**.
 
    ![customeridischanged 시](assets/whencustomeridischanged.png)
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
    ![dropobjectstooutputfield-retrievedata](assets/dropobjectstooutputfield-retrievedata.png)
 
-   누르기 **[!UICONTROL 완료]** 을 눌러 규칙을 저장합니다. 규칙 편집기 창에서 다음을 탭합니다. **[!UICONTROL 닫기]**.
+   선택 **[!UICONTROL 완료]** 을 눌러 규칙을 저장합니다. 규칙 편집기 창에서 다음을 선택합니다 **[!UICONTROL 닫기]**.
 
 1. 적응형 양식을 미리 봅니다. 에 ID 입력 **[!UICONTROL 고객 ID]** 필드. 이제 양식에서 데이터베이스에서 고객 세부 정보를 검색할 수 있습니다.
 
@@ -74,8 +74,8 @@ ht-degree: 0%
 
 데이터베이스에서 고객 세부 정보를 검색한 후 배송 주소, 상태 및 우편 번호를 업데이트할 수 있습니다. 다음 절차는 양식 데이터 모델 서비스를 호출하여 고객 정보를 데이터베이스에 업데이트합니다.
 
-1. 다음 항목 선택 **[!UICONTROL 제출]** 필드 및 탭 **[!UICONTROL 규칙 편집]** 아이콘. 규칙 편집기 창이 열립니다.
-1. 다음 항목 선택 **[!UICONTROL 제출 - 클릭]** 규칙 및 탭 **[!UICONTROL 편집]** 아이콘. 제출 규칙을 편집할 수 있는 옵션이 나타납니다.
+1. 다음 항목 선택 **[!UICONTROL 제출]** 필드 및 선택 **[!UICONTROL 규칙 편집]** 아이콘. 규칙 편집기 창이 열립니다.
+1. 다음 항목 선택 **[!UICONTROL 제출 - 클릭]** 규칙을 정의하고 다음을 선택합니다. **[!UICONTROL 편집]** 아이콘. 제출 규칙을 편집할 수 있는 옵션이 나타납니다.
 
    ![submit-rule](assets/submit-rule.png)
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
    ![submit-is-clicked](assets/submit-is-clicked.png)
 
-1. 다음에서 **[!UICONTROL 그런 다음]** 옵션을 탭합니다. **[!UICONTROL + 명령문 추가]** 옵션을 선택합니다. 선택 **[!UICONTROL 서비스 호출]** 다음에서 **[!UICONTROL 작업 선택]** 드롭다운.
+1. 다음에서 **[!UICONTROL 그런 다음]** 옵션을 선택하고 **[!UICONTROL + 명령문 추가]** 옵션을 선택합니다. 선택 **[!UICONTROL 서비스 호출]** 다음에서 **[!UICONTROL 작업 선택]** 드롭다운.
 1. 다음 항목 선택 **[!UICONTROL 배송 주소 업데이트]** 다음에서 서비스: **[!UICONTROL 선택]** 드롭다운.
 
    ![update-shipping-address](assets/update-shipping-address.png)
@@ -97,7 +97,7 @@ ht-degree: 0%
    >을(를) 드래그 앤 드롭하지 마십시오 **[!UICONTROL 이름]** 및 **[!UICONTROL 고객 ID]** 해당 tablename.property(예: customerdetails.name) 필드. 실수로 고객의 이름과 ID를 업데이트하지 않도록 도와줍니다.
 
 1. 을(를) 드래그 앤 드롭합니다 **[!UICONTROL 고객 ID]** 의 필드 [!UICONTROL 양식 개체] 탭에서 id 필드를 추가할 수 있습니다 **[!UICONTROL 입력]** 상자. 접두사가 있는 tablename이 없는 필드(예: 이 사용 사례의 경우 customerdetails)는 업데이트 서비스의 검색 매개 변수 역할을 합니다. 다음 **[!UICONTROL id]** 이 사용 사례의 필드는  **customerdetails**  테이블.
-1. 누르기 **[!UICONTROL 완료]** 을 눌러 규칙을 저장합니다. 규칙 편집기 창에서 다음을 탭합니다. **[!UICONTROL 닫기]**.
+1. 선택 **[!UICONTROL 완료]** 을 눌러 규칙을 저장합니다. 규칙 편집기 창에서 다음을 선택합니다 **[!UICONTROL 닫기]**.
 1. 적응형 양식을 미리 봅니다. 고객의 세부 정보를 검색하고 배송 주소를 업데이트한 다음 양식을 제출합니다. 동일한 고객의 세부 정보를 다시 검색하면 업데이트된 배송 주소가 표시됩니다.
 
 ## 3단계: (보너스 섹션) 코드 편집기를 사용하여 유효성 검사를 실행하고 오류 메시지를 표시하십시오 {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
@@ -108,12 +108,12 @@ ht-degree: 0%
 
 다음 절차에서는 양식에 입력한 고객 ID가 데이터베이스에 없는 경우 오류 메시지를 표시하는 규칙을 만드는 방법을 보여 줍니다. 또한 이 규칙은에 포커스를 가져오고 를 재설정합니다. **[!UICONTROL 고객 ID]** 필드. 규칙에서 사용하는 항목 [양식 데이터 모델 서비스의 dataIntegrationUtils API](/help/forms/using/invoke-form-data-model-services.md) 고객 ID가 데이터베이스에 있는지 확인합니다.
 
-1. 탭 **[!UICONTROL 고객 ID]** 필드 및 탭 `Edit Rules` 아이콘. 다음 [!UICONTROL 규칙 편집기] 창이 열립니다.
-1. 탭 **[!UICONTROL + 만들기]** 아이콘 을 클릭하여 규칙을 추가합니다. 비주얼 편집기가 열립니다.
+1. 다음 항목 선택 **[!UICONTROL 고객 ID]** 필드 및 선택 `Edit Rules` 아이콘. 다음 [!UICONTROL 규칙 편집기] 창이 열립니다.
+1. 다음 항목 선택 **[!UICONTROL + 만들기]** 아이콘 을 클릭하여 규칙을 추가합니다. 비주얼 편집기가 열립니다.
 
    시각적 편집기에서 **[!UICONTROL 날짜]** 문이 기본적으로 선택됩니다. 또한 양식 개체(이 경우 **[!UICONTROL 고객 ID]**) 규칙 편집기를 시작한 위치는 **[!UICONTROL 날짜]** 명령문입니다.
 
-1. 탭 **[!UICONTROL 상태 선택]** 드롭다운 및 선택 **[!UICONTROL 변경됨]**.
+1. 다음 항목 선택 **[!UICONTROL 상태 선택]** 드롭다운 및 선택 **[!UICONTROL 변경됨]**.
 
    ![customeridischanged 시](assets/whencustomeridischanged.png)
 

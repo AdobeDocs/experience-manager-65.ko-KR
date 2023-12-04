@@ -10,10 +10,10 @@ discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 8%
+source-wordcount: '740'
+ht-degree: 7%
 
 ---
 
@@ -34,8 +34,8 @@ ht-degree: 8%
 다음 단계를 수행하여 메타데이터에 요소를 추가합니다.
 
 1. 편집 모드에서 적응형 양식을 엽니다.\
-   편집 모드에서 양식을 열려면 양식 관리자에서 양식을 선택하고 을 누릅니다 **열기**.
-1. 편집 모드에서 구성 요소를 선택하고 을 누릅니다 ![필드 수준](assets/field-level.png) > **적응형 양식 컨테이너**&#x200B;을 누른 다음 을 누릅니다 ![cmppr](assets/cmppr.png).
+   편집 모드에서 양식을 열려면 양식 관리자에서 양식을 선택하고 을 선택합니다 **열기**.
+1. 편집 모드에서 구성 요소를 선택하고 ![필드 수준](assets/field-level.png) > **적응형 양식 컨테이너**&#x200B;을 선택한 다음 을 선택합니다 ![cmppr](assets/cmppr.png).
 1. 사이드바에서 를 클릭합니다. **메타데이터**.
 1. 메타데이터 섹션에서 다음을 클릭합니다. **추가**.
 1. 메타데이터 탭의 값 필드를 사용하여 스크립트를 추가합니다. 추가하는 스크립트는 양식의 요소에서 데이터를 수집하고 메타데이터에 공급되는 값을 계산합니다.

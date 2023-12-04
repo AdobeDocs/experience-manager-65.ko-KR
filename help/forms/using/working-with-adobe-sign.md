@@ -11,10 +11,10 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3936'
-ht-degree: 2%
+source-wordcount: '3875'
+ht-degree: 1%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 2%
 서명 사용 적응형 양식을 만들려면 다음 단계를 수행하십시오.
 
 1. 다음으로 이동 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
-1. 누르기 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 적응형 양식]**. 템플릿 목록이 나타납니다. 템플릿을 선택하고 을 누릅니다 **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 적응형 양식]**. 템플릿 목록이 나타납니다. 템플릿을 선택하고 **[!UICONTROL 다음]**.
 1. 다음에서 **[!UICONTROL 기본]** 탭:
 
    1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 **[!UICONTROL 제목]** 적응형 양식용.
@@ -97,14 +97,14 @@ ht-degree: 2%
 
    * 다음 항목 선택 **[!UICONTROL 기록 문서 생성]** 옵션을 선택합니다. 기록 문서 옵션 사용 적응형 양식을 사용하는 경우 서명을 위해 전송된 문서에 적응형 양식의 모든 필드가 표시됩니다.
 
-1. **[!UICONTROL 만들기를 탭합니다.]** 기호 사용 적응형 양식이 만들어지며, 이는 추가하는 데 사용할 수 있습니다. [!DNL Adobe Sign] 필드.
+1. 선택 **[!UICONTROL 만들기.]** 기호 사용 적응형 양식이 만들어지며, 이는 추가하는 데 사용할 수 있습니다. [!DNL Adobe Sign] 필드.
 
 #### 다음에 대한 적응형 양식 편집 [!DNL Adobe Sign] {#editafsign}
 
 사용하려면 다음 단계를 수행하십시오 [!DNL Adobe Sign] 기존 적응형 양식에서:
 
 1. 다음으로 이동 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
-1. 적응형 양식을 선택하고 을 누릅니다 **[!UICONTROL 속성]**.
+1. 적응형 양식을 선택하고 **[!UICONTROL 속성]**.
 1. 다음에서 **[!UICONTROL 기본]** 탭에서 [구성 컨테이너](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) 구성하는 동안 생성됨 [!DNL Adobe Sign] AEM 사용 [!DNL Forms].
 1. 다음에서 **[!UICONTROL 양식 모델]** 탭에서 다음 옵션 중 하나를 선택합니다.
 
@@ -112,7 +112,7 @@ ht-degree: 2%
 
    * 다음 항목 선택 **[!UICONTROL 기록 문서 생성]** 옵션을 선택합니다. 기록 문서 옵션 사용 적응형 양식을 사용하는 경우 서명을 위해 전송된 문서에 적응형 양식의 모든 필드가 표시됩니다.
 
-1. 누르기 **[!UICONTROL 저장 및 닫기]**. 적응형 양식이 다음에 대해 활성화되었습니다. [!DNL Adobe Sign].
+1. 선택 **[!UICONTROL 저장 및 닫기]**. 적응형 양식이 다음에 대해 활성화되었습니다. [!DNL Adobe Sign].
 
 ### 적응형 양식에 Adobe Sign 필드 추가 {#addadobesignfieldstoanadaptiveform}
 
@@ -133,15 +133,15 @@ ht-degree: 2%
    >
    >
 
-1. 다음 항목 선택 **[!UICONTROL Adobe Sign 차단]** 구성 요소 및 탭 **편집** ![aem_6_3_edit](assets/aem_6_3_edit.png) 아이콘. 필드를 추가하고 필드의 형식 지정을 지정하는 옵션을 표시합니다.
+1. 다음 항목 선택 **[!UICONTROL Adobe Sign 차단]** 구성 요소를 선택하고 **편집** ![aem_6_3_edit](assets/aem_6_3_edit.png) 아이콘. 필드를 추가하고 필드의 형식 지정을 지정하는 옵션을 표시합니다.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** 선택 및 추가 [!DNL Adobe Sign] 필드. **B.** 확장 [!DNL Adobe Sign] 전체 화면 보기로 차단
 
-1. 탭 **[!UICONTROL Adobe Sign] 필드** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) 아이콘. 선택 및 추가 옵션이 표시됩니다 [!DNL Adobe Sign] 필드.
+1. 다음 항목 선택 **[!UICONTROL Adobe Sign] 필드** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) 아이콘. 선택 및 추가 옵션이 표시됩니다 [!DNL Adobe Sign] 필드.
 
-   확장 **[!UICONTROL 유형]** 을(를) 선택할 드롭다운 필드 [!DNL Adobe Sign] 필드 및 탭 완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 선택한 필드를 추가할 아이콘 [!DNL Adobe Sign] 차단합니다. 다음 **[!UICONTROL 유형]** 드롭다운 필드에는 서명, 서명자 정보 및 데이터 필드 유형이 포함됩니다. [!DNL Adobe Sign] AEM과 통합 [!DNL Forms] 다음에 나열된 지원 필드 [!UICONTROL 유형] 드롭다운 상자에만 해당됩니다. 에 대한 자세한 정보 [!DNL Adobe Sign] 필드, 참조 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/field-types.html).
+   확장 **[!UICONTROL 유형]** 을(를) 선택할 드롭다운 필드 [!DNL Adobe Sign] 필드 및 선택 완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 선택한 필드를 추가할 아이콘 [!DNL Adobe Sign] 차단합니다. 다음 **[!UICONTROL 유형]** 드롭다운 필드에는 서명, 서명자 정보 및 데이터 필드 유형이 포함됩니다. [!DNL Adobe Sign] AEM과 통합 [!DNL Forms] 다음에 나열된 지원 필드 [!UICONTROL 유형] 드롭다운 상자에만 해당됩니다. 에 대한 자세한 정보 [!DNL Adobe Sign] 필드, 참조 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -156,7 +156,7 @@ ht-degree: 2%
 
 기본, [!DNL Adobe Sign] 은(는) 적응형 양식에 대해 활성화되지 않습니다. 활성화하려면 다음 단계를 수행하십시오.
 
-1. 콘텐츠 브라우저에서 을 누릅니다. **[!UICONTROL 양식 컨테이너]**&#x200B;을 누르고 **[!UICONTROL 구성]** ![구성](assets/configure.png) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다.
+1. 콘텐츠 브라우저에서 다음을 선택합니다 **[!UICONTROL 양식 컨테이너]**&#x200B;을(를) 클릭하고 **[!UICONTROL 구성]** ![구성](assets/configure.png) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다.
 1. 속성 브라우저에서 **[!UICONTROL 전자 서명]** 아코디언을 선택하고 **[!UICONTROL Adobe Sign 활성화]** 옵션을 선택합니다. 다음을 가능하게 합니다. [!DNL Adobe Sign] 적응형 양식용.
 
 ### 선택 [!DNL Adobe Sign] Cloud Service 및 서명 순서 {#selectadobesigncloudserviceforanadaptiveform}
@@ -169,7 +169,7 @@ ht-degree: 2%
 
 ![cloud-service](assets/cloud-service.png)
 
-1. 콘텐츠 브라우저에서 을 누릅니다. **[!UICONTROL 양식 컨테이너]**&#x200B;을 누르고 **[!UICONTROL 구성]** ![구성](assets/configure.png) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다.
+1. 콘텐츠 브라우저에서 다음을 선택합니다 **[!UICONTROL 양식 컨테이너]**&#x200B;을(를) 클릭하고 **[!UICONTROL 구성]** ![구성](assets/configure.png) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다.
 1. 속성 브라우저에서 **[!UICONTROL 전자 서명]** 아코디언을 선택하고 **[!UICONTROL Adobe Sign 활성화]** 옵션을 선택합니다. 다음을 가능하게 합니다. [!DNL Adobe Sign] 적응형 양식용.
 1. 이미 구성된 목록에서 클라우드 서비스 선택 [!DNL Adobe Sign] Cloud Service.
 
@@ -183,16 +183,16 @@ ht-degree: 2%
 
    동시에 여러 서명자가 한 번에 양식에 서명할 수 있습니다.
 
-1. [적응형 양식에 서명자 추가](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) 완료 를 탭합니다. ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘 을 클릭하여 변경 내용을 저장합니다.
+1. [적응형 양식에 서명자 추가](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) 완료를 선택합니다. ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘 을 클릭하여 변경 내용을 저장합니다.
 
 
 ### 적응형 양식에 서명자 추가 {#addsignerstoanadaptiveform}
 
 적응형 양식에 서명자가 한 명만 있거나 여러 명이 있을 수 있습니다. 서명자를 추가할 때 서명자에 대한 인증 세부 사항을 구성할 수도 있습니다. 폼 필러와 가수가 동일인지도 선택할 수 있다. 서명자에 대한 다양한 세부 정보를 추가하고 제공하려면 다음 단계를 수행하십시오.
 
-1. 콘텐츠 브라우저에서 을 누릅니다. **[!UICONTROL 양식 컨테이너]**&#x200B;을 누르고 **[!UICONTROL 구성]** ![구성](assets/configure.png) 아이콘. 적응형 양식 컨테이너 속성이 있는 속성 브라우저를 엽니다.
+1. 콘텐츠 브라우저에서 다음을 선택합니다 **[!UICONTROL 양식 컨테이너]**&#x200B;을(를) 클릭하고 **[!UICONTROL 구성]** ![구성](assets/configure.png) 아이콘. 적응형 양식 컨테이너 속성이 있는 속성 브라우저를 엽니다.
 1. 속성 브라우저에서 **[!UICONTROL 전자 서명]** 아코디언을 선택하고 **[!UICONTROL Adobe Sign 활성화]** 옵션을 선택합니다. 다음을 가능하게 합니다. [!DNL Adobe Sign] 적응형 양식용.
-1. 누르기 **[!UICONTROL 서명자 추가]** 아래에 **[!UICONTROL 서명자 구성]**. 적응형 양식에 서명자를 추가합니다. 여러 을(를) 추가할 수 있습니다. [!DNL Adobe Sign] 적응형 양식에 서명합니다.
+1. 선택 **[!UICONTROL 서명자 추가]** 아래에 **[!UICONTROL 서명자 구성]**. 적응형 양식에 서명자를 추가합니다. 여러 을(를) 추가할 수 있습니다. [!DNL Adobe Sign] 적응형 양식에 서명합니다.
    ![phone-details](assets/phone-details.png)
 
 1. 다음을 클릭합니다. **편집** ![aem_6_3_edit](assets/aem_6_3_edit.png) 아이콘 - 서명자에 대한 다음 정보를 지정합니다.
@@ -217,7 +217,7 @@ ht-degree: 2%
 
    위의 이미지에는 두 가지 예가 있습니다 [!DNL Adobe Sign] 블록: 개인 정보 및 Office 세부 정보
 
-   완료 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘. 서명자가 추가되고 구성됩니다.
+   완료 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘. 서명자가 추가되고 구성됩니다.
 
 ### 적응형 양식에 대한 제출 액션 선택 {#selectsubmitactionforanadaptiveform}
 
@@ -243,15 +243,15 @@ ht-degree: 2%
 
    ![서명 차단](assets/sign-block-new.png)
 
-1. 다음 항목 선택 **[!UICONTROL Adobe Sign 차단]** 구성 요소 및 탭 **편집** ![aem_6_3_edit](assets/aem_6_3_edit.png) 아이콘. 필드를 추가하고 필드의 형식 지정을 지정하는 옵션을 표시합니다.
+1. 다음 항목 선택 **[!UICONTROL Adobe Sign 차단]** 구성 요소를 선택하고 **편집** ![aem_6_3_edit](assets/aem_6_3_edit.png) 아이콘. 필드를 추가하고 필드의 형식 지정을 지정하는 옵션을 표시합니다.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** 선택 및 추가 [!DNL Adobe Sign] 필드. **B.** 확장 [!DNL Adobe Sign] 전체 화면 보기로 차단
 
-1. 탭 **[!UICONTROL Adobe Sign 필드]** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) 아이콘. 선택 및 추가 옵션이 표시됩니다 [!DNL Adobe Sign] 필드.
+1. 다음 항목 선택 **[!UICONTROL Adobe Sign 필드]** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) 아이콘. 선택 및 추가 옵션이 표시됩니다 [!DNL Adobe Sign] 필드.
 
-   확장 **[!UICONTROL 유형]** 선택할 드롭다운 필드 **[!UICONTROL 디지털 서명]** 을 누릅니다. **완료** 선택한 필드를 추가할 아이콘 [!DNL Adobe Sign] 차단합니다.
+   확장 **[!UICONTROL 유형]** 선택할 드롭다운 필드 **[!UICONTROL 디지털 서명]** 및 선택 **완료** 선택한 필드를 추가할 아이콘 [!DNL Adobe Sign] 차단합니다.
 
    ![디지털 서명](assets/digital_signatures_new.png)
 
@@ -300,7 +300,7 @@ ht-degree: 2%
 
    * **[!UICONTROL CSS 클래스]**: 구성 요소의 CSS 클래스를 지정합니다.
 
-   완료 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘 을 클릭하여 변경 내용을 저장합니다.
+   완료 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘 을 클릭하여 변경 내용을 저장합니다.
 
    ![서명 단계](assets/signature_step_new.png)
 

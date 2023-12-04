@@ -4,10 +4,10 @@ description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 지정�
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4603'
-ht-degree: 3%
+source-wordcount: '4501'
+ht-degree: 1%
 
 ---
 
@@ -79,12 +79,12 @@ ht-degree: 3%
 ### 소프트웨어 배포에서 {#from-software-distribution}
 
 1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID가 필요합니다.
-1. 헤더 메뉴에 제공된 **[!UICONTROL Adobe Experience Manager]**&#x200B;를 누릅니다.
+1. 선택 **[!UICONTROL Adobe Experience Manager]** 헤더 메뉴에서 사용할 수 있습니다.
 1. 다음에서 **[!UICONTROL 필터]** 섹션:
    1. 선택 **[!UICONTROL Forms]** 다음에서 **[!UICONTROL 솔루션]** 드롭다운 목록입니다.
    2. 패키지의 버전 및 유형을 선택합니다. 다음을 사용할 수도 있습니다 **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수 있습니다.
-1. 탭 **we-gov-forms.pkg.all-&lt;version>.zip** 패키지 이름, 선택 **[!UICONTROL EULA 약관 동의]**, 및 탭 **[!UICONTROL 다운로드]**.
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. 다음 항목 선택 **we-gov-forms.pkg.all-&lt;version>.zip** 패키지 이름, 선택 **[!UICONTROL EULA 약관 동의]**, 및 선택 **[!UICONTROL 다운로드]**.
+1. 열기 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  및 클릭 **[!UICONTROL 패키지 업로드]** 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
    ![we gov forms 패키지](assets/wegov_forms_package.jpg)
@@ -172,7 +172,7 @@ ht-degree: 3%
 
 1. [기본적으로 SSL](/help/sites-administering/ssl-by-default.md)
 
-**메모:**
+**참고:**
 
 1. https:// 로 이동합니다.&lt;aemserver>:&lt;port>위의 참조 설명서 링크에 설명된 프로세스를 완료할 수 있는 /aem/inbox
 1. 다음 `we-gov-forms.pkg.all-[version].zip` 패키지에는 를 추출하여 액세스할 수 있는 샘플 SSL 키와 인증서가 포함되어 있습니다. `we-gov-forms.pkg.all-[version].zip/ssl` 패키지의 일부인 폴더입니다.
@@ -184,7 +184,7 @@ ht-degree: 3%
    1. &quot;password&quot;의 암호 값
 1. 개인 키는 *localhostprivate.der*.
 1. 인증서는 *localhost.crt*.
-1. 다음을 클릭합니다.
+1. 다음 을 클릭합니다.
 1. HTTPS 호스트 이름은 다음으로 설정되어야 합니다. *localhost*.
 1. 포트는 시스템이 표시한 포트로 설정해야 합니다.
 
@@ -330,7 +330,7 @@ ht-degree: 3%
 
    ![Dynamics CRM FDM의 속성](assets/aftia-update-data-source.jpg)
 
-1. **저장 후 닫기**&#x200B;를 클릭합니다.
+1. 클릭 **저장 및 닫기**.
 
 1. [서비스 테스트](work-with-form-data-model.md#test-data-model-objects-and-services) 구성된 데이터 소스에 성공적으로 연결하십시오.
 
@@ -407,7 +407,7 @@ ht-degree: 3%
 
 1. 모든 권한이 프로필에 매핑되었는지 확인합니다.
 
-   ![[편집] 권한](assets/aftia-admin-access-edit.jpg)
+   ![권한 편집](assets/aftia-admin-access-edit.jpg)
 
 1. 사용자가 로그인할 수 있는 기능에 대한 권한이 매핑되면 몇 시간이 걸릴 수 있습니다.
 
@@ -480,7 +480,7 @@ Forms Adobe을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 
 1. https:// 로 이동합니다.&lt;aemserver>:&lt;port> > 왼쪽 상단의 Adobe Experience Manager > 도구 > 보안 > Adobe IMS 구성 을 클릭합니다.
 
-1. 만들기를 클릭합니다.
+1. 만들기 를 클릭합니다.
 
 1. 아래 이미지에서 작업을 수행합니다.
 
@@ -500,7 +500,7 @@ Forms Adobe을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 
 1. 다음 위치로 이동 [Adobe I/O 콘솔](https://developer.adobe.com/console/).
 
-1. 통합 만들기를 클릭합니다.
+1. 통합 만들기 를 클릭합니다.
 
 1. API 액세스를 선택합니다.
 
@@ -552,7 +552,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 검토할 수 있습
 
 1. 구성을 배치할 구성 폴더를 선택합니다.
 
-1. 만들기를 클릭합니다.
+1. 만들기 를 클릭합니다.
 
 1. 아래 스크린샷에 정보를 입력하십시오.
 
@@ -566,7 +566,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 검토할 수 있습
 
 1. 테마 URL: */content/dam/formsanddocuments-themes/adobe-gov-forms-themes/we-gov-theme*
 
-1. 다음을 클릭합니다.
+1. 다음 을 클릭합니다.
 
 1. 이 구성의 경우 두 확인란 값을 비워둡니다.
 
@@ -582,7 +582,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 1. 구성을 배치할 구성 폴더를 선택합니다.
 
-1. 만들기를 클릭합니다.
+1. 만들기 를 클릭합니다.
 
 1. 아래 스크린샷에 정보를 입력하십시오.
 
@@ -596,7 +596,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 1. 테마 URL: */content/dam/formsanddocuments-themes/adobe-finance-forms-themes/we-finance-theme*
 
-1. 다음을 클릭합니다.
+1. 다음 을 클릭합니다.
 
 1. 이 구성의 경우 두 확인란 값을 비워둡니다.
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Adobe Experience Manager(AEM) Forms 앱에서 프로세스를 시작하려면 �
 1. AEM Forms 앱에서 사용할 수 있는 시작 지점을 보려면 [홈 화면](../../forms/using/home-screen.md).
 1. 다음에서 **[!UICONTROL 홈]** screen, 기본적으로 **[!UICONTROL 모든 Forms]** 목록이 표시됩니다.
 
-   시작점은 폼과 연결됩니다. 목록에서 시작 지점 관련 양식을 탭하여 엽니다.
+   시작점은 폼과 연결됩니다. 목록에서 시작 지점 관련 양식을 선택하여 엽니다.
 
    시작점과 연관된 양식이 열립니다.
 
@@ -38,7 +38,7 @@ Adobe Experience Manager(AEM) Forms 앱에서 프로세스를 시작하려면 �
 
    다음을 사용하여 이 작업에 주석을 추가할 수 있습니다. [첨부 파일](../../forms/using/add-attachments.md) 단추를 클릭합니다.
 
-1. 양식을 작성한 후 을 누릅니다 **[!UICONTROL 제출]** 단추를 클릭합니다.
+1. 양식을 작성한 후 **[!UICONTROL 제출]** 단추를 클릭합니다.
 
 앱이 오프라인 상태이면 양식 및 해당 데이터가 보낼 편지함 폴더에 저장됩니다.
 

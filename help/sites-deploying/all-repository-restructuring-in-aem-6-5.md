@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2694'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
         </ul> </li>
       </ol> </li>
      <li>워크플로 모델 편집기에서 편집 모드를 활성화하여 워크플로 모델 정의를 /conf/global/workflow/models에 복사합니다.</li>
-     <li>동기화 버튼을 탭하여 /var/workflow/models 아래의 런타임 워크플로우 모델에 변경 사항을 동기화합니다.</li>
+     <li>동기화 버튼을 선택하여 /var/workflow/models 아래의 런타임 워크플로우 모델에 변경 사항을 동기화합니다.</li>
      <li>워크플로우 모델(/conf/global/workflow/models/) 모두 내보내기&lt;workflow-model&gt;) 및 런타임 워크플로우 모델(/var/workflow/models/&lt;workflow-model&gt;)를 참조하고 AEM 프로젝트에 통합합니다.
       <ol>
        <li>예를 들어 다음과 같이 내보냅니다.

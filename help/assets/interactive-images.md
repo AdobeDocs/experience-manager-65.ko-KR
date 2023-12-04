@@ -9,9 +9,9 @@ docset: aem65
 feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4275'
+source-wordcount: '4130'
 ht-degree: 1%
 
 ---
@@ -265,7 +265,7 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 
    * 세부 사항 보기 페이지에서 이미지를 열 수 있도록 이미지를 선택합니다. 도구 모음에서 를 선택합니다. **[!UICONTROL 편집]**.
 
-1. 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 핫스팟 추가]** (손가락 누르기 아이콘) - 핫스팟 관리 페이지를 엽니다.
+1. 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 핫스팟 추가]** (손가락 선택 아이콘) - 핫스팟 관리 페이지를 엽니다.
 1. 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 핫스팟]**.
 
    1. 핫스팟 관리 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 핫스팟]**.

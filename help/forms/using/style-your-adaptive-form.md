@@ -4,10 +4,10 @@ description: 사용자 지정 테마를 만들고, 개별 구성 요소의 스�
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 10%
+source-wordcount: '1982'
+ht-degree: 8%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 10%
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. 다음의 속성 열기 **[!UICONTROL 적응형 양식 컨테이너]**. 속성 브라우저에서 다음 위치로 이동합니다 **[!UICONTROL 기본]** > **[!UICONTROL 적응형 양식 테마]**. 다음 **[!UICONTROL 적응형 양식 테마]** 필드에는 기본 제공 테마와 사용자 지정 테마가 모두 나열됩니다. 기본적으로 캔버스 테마가 적용됩니다.
-1. 다음에서 테마 선택 **[!UICONTROL 적응형 양식 테마]** 필드. 예를 들어, **설문 조사 테마**. 누르기 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 따라서 선택한 테마를 적용할 수 있습니다.
+1. 다음에서 테마 선택 **[!UICONTROL 적응형 양식 테마]** 필드. 예를 들어, **설문 조사 테마**. 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 따라서 선택한 테마를 적용할 수 있습니다.
 
    ![기본 테마를 사용한 적응형 양식](assets/default-adaptive-form.png)
 
@@ -75,17 +75,17 @@ ht-degree: 10%
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. 에서 로고 이미지 탭하기 [!UICONTROL 머리글] 구성 요소 및 탭 ![cmppr](assets/cmppr.png) **[!UICONTROL 속성]**. 다음에서 [!UICONTROL 이미지] 속성을 사용하려면 X를 눌러 기존 로고 이미지를 제거합니다.
-   1. 누르기 **[!UICONTROL 업로드]**, logo.png를 선택하고 을 누릅니다. ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 변경 내용을 저장합니다. 이미지는 다음에 다운로드되었습니다. [시작하기 전에](/help/forms/using/style-your-adaptive-form.md#before-you-start) 섹션.
-   1. 머리글 텍스트, 탭 `We.Retail`, 및 탭 ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL 편집]**. 헤더 텍스트를 다음으로 변경 `we retail`. 굵게 서식만 적용 `we`위치: `we retail`.
+   1. 에서 로고 이미지 선택 [!UICONTROL 머리글] 구성 요소 및 선택 ![cmppr](assets/cmppr.png) **[!UICONTROL 속성]**. 다음에서 [!UICONTROL 이미지] 속성을 사용하려면 X 를 선택하여 기존 로고 이미지를 제거합니다.
+   1. 선택 **[!UICONTROL 업로드]**, logo.png를 선택한 다음 를 선택합니다. ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 변경 내용을 저장합니다. 이미지는 다음에 다운로드되었습니다. [시작하기 전에](/help/forms/using/style-your-adaptive-form.md#before-you-start) 섹션.
+   1. 헤더 텍스트 선택, `We.Retail`, 및 선택 ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL 편집]**. 헤더 텍스트를 다음으로 변경 `we retail`. 굵게 서식만 적용 `we`위치: `we retail`.
 
       ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. 제목을 제거하고 자리 표시자 텍스트를 추가합니다.
 
-   1. 고객 ID 필드를 탭하고 을 누릅니다. ![cmppr](assets/cmppr.png) 속성.
+   1. 고객 ID 필드를 선택하고 ![cmppr](assets/cmppr.png) 속성.
    1. 의 콘텐츠 복사 **[!UICONTROL 제목]** 필드 대상 **[!UICONTROL 자리 표시자 텍스트]** 필드.
-   1. 의 콘텐츠 삭제 **[!UICONTROL 제목]** 필드 및 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. 의 콘텐츠 삭제 **[!UICONTROL 제목]** 필드 및 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. 양식의 모든 텍스트 상자, 숫자 상자 및 전자 메일 필드에 대해 이전 세 단계를 반복합니다.
 
       ![업데이트된 적응형 양식](assets/updated-adaptive-form.png)
@@ -101,16 +101,16 @@ ht-degree: 10%
 ### 테마 만들기 {#create-a-theme}
 
 1. AEM 작성자 인스턴스에 로그인하고 다음으로 이동합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 테마]**. 기본 URL은 [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
-1. 누르기 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 테마]**. 다음 [!UICONTROL 테마 만들기] 테마를 만드는 데 필요한 필드가 있는 페이지가 나타납니다. 다음 **[!UICONTROL 제목]** 및 **[!UICONTROL 이름]** 필드는 필수입니다.
+1. 선택 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 테마]**. 다음 [!UICONTROL 테마 만들기] 테마를 만드는 데 필요한 필드가 있는 페이지가 나타납니다. 다음 **[!UICONTROL 제목]** 및 **[!UICONTROL 이름]** 필드는 필수입니다.
 
    * **제목:** 테마의 제목을 지정합니다. 예를 들어, **글로벌 테마.** 제목을 사용하면 테마 목록에서 테마를 식별할 수 있습니다.
-   * **이름:** 테마의 이름을 지정합니다. 예를 들어, **글로벌 테마.** 이름이 지정된 노드가 저장소에서 만들어집니다. 제목 입력을 시작하면 이름 필드에 대한 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
+   * **이름:** 테마의 이름을 지정합니다. 예를 들어, **글로벌 테마.** 지정된 이름의 노드가 저장소에 생성됩니다. 제목 입력을 시작하면 이름 필드에 대한 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
 
-1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다. 테마가 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다. 누르기 **[!UICONTROL 열기]** 새 탭에서 새로 만든 테마를 엽니다. 테마가 테마 편집기에서 열립니다. 스타일링을 위해 테마 편집기는 AEM과 함께 제공되는 즉시 사용 가능한 적응형 양식을 사용합니다 [!DNL Forms].
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 테마가 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다. 선택 **[!UICONTROL 열기]** 새 탭에서 새로 만든 테마를 엽니다. 테마가 테마 편집기에서 열립니다. 스타일링을 위해 테마 편집기는 AEM과 함께 제공되는 즉시 사용 가능한 적응형 양식을 사용합니다 [!DNL Forms].
 
    테마 편집기 UI 사용에 대한 자세한 내용은 [테마 편집기 기본 정보](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. 누르기 **[!UICONTROL 테마 옵션]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 구성]**. 다음에서 **[!UICONTROL 양식 미리 보기]** 필드에서 **shipping-address-add-update-form** 적응형 양식, 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), 탭 **[!UICONTROL 저장]**. 이제 테마 편집기는 기본 적응형 양식 대신 고유한 적응형 양식을 사용하도록 구성되었습니다. 누르기 **[!UICONTROL 취소]** 테마 편집기로 돌아갑니다.
+1. 선택 **[!UICONTROL 테마 옵션]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 구성]**. 다음에서 **[!UICONTROL 양식 미리 보기]** 필드에서 **shipping-address-add-update-form** 적응형 양식, 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), 선택 **[!UICONTROL 저장]**. 이제 테마 편집기는 기본 적응형 양식 대신 고유한 적응형 양식을 사용하도록 구성되었습니다. 선택 **[!UICONTROL 취소]** 테마 편집기로 돌아갑니다.
 
    ![사용자 정의 테마](assets/custom-theme.png)
 
@@ -124,9 +124,9 @@ ht-degree: 10%
 
 머리글과 바닥글은 적응형 양식에 일관되고 고유한 모양을 제공합니다. 일반적으로 머리글에는 조직의 로고와 이름이 포함되고 바닥글에는 저작권 정보가 포함되며, 이러한 정보는 조직의 여러 양식에서 동일하게 유지됩니다. shipping-address-add-update-form 적응형 양식의 머리글 및 바닥글 스타일을 지정하려면 다음을 수행합니다.
 
-1. 탐색 **[!UICONTROL 머리글]** > **[!UICONTROL 텍스트]** 선택 사항에서 선택할 수 있습니다. 선택기 패널은 테마 편집기의 왼쪽에 있습니다. 패널이 표시되지 않으면 을 누릅니다 ![토글 사이드 패널](assets/toggle-side-panel.png) 사이드 패널을 전환합니다.
+1. 탐색 **[!UICONTROL 머리글]** > **[!UICONTROL 텍스트]** 선택 사항에서 선택할 수 있습니다. 선택기 패널은 테마 편집기의 왼쪽에 있습니다. 패널이 표시되지 않으면 을 선택합니다. ![토글 사이드 패널](assets/toggle-side-panel.png) 사이드 패널을 전환합니다.
 
-1. 에서 다음 속성을 설정합니다. **[!UICONTROL 텍스트]** 아코디언 및 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 에서 다음 속성을 설정합니다. **[!UICONTROL 텍스트]** 아코디언 및 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | 속성 | 값 |
    |---|---|
@@ -134,10 +134,10 @@ ht-degree: 10%
    | 글꼴 색상 | FFFFFF |
    | 글꼴 크기 | 54픽셀 |
 
-1. 탭 [!UICONTROL 머리글] 위젯 및 탭 **[!UICONTROL 머리글]**. 헤더 위젯의 스타일을 지정하는 옵션이 왼쪽에 나타납니다. 확장 **[!UICONTROL Dimension 및 위치]** 아코디언, 설정 **[!UICONTROL 높이]** 끝 `120px`, 및 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 다음 항목 선택 [!UICONTROL 머리글] 위젯 및 선택 **[!UICONTROL 머리글]**. 헤더 위젯의 스타일을 지정하는 옵션이 왼쪽에 나타납니다. 확장 **[!UICONTROL Dimension 및 위치]** 아코디언, 설정 **[!UICONTROL 높이]** 끝 `120px`, 및 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. 확장 **[!UICONTROL 배경]** 헤더 위젯의 아코디언에서 **[!UICONTROL 배경색]** 끝 `F6921E.`
 
-   마우스로 가리키기 **[!UICONTROL 이미지 및 그라데이션]** > **[!UICONTROL + 추가]**, 탭 **[!UICONTROL 이미지]**. 다음 속성을 설정하고 을 누릅니다 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   마우스로 가리키기 **[!UICONTROL 이미지 및 그라데이션]** > **[!UICONTROL + 추가]**, 선택 **[!UICONTROL 이미지]**. 다음 속성을 설정하고 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | 속성 | 값 |
    |---|---|
@@ -145,7 +145,7 @@ ht-degree: 10%
    | 위치 | 오른쪽 단추 |
    | 바둑판식으로 배열 | 반복 안 함 |
 
-1. 테마 편집기에서 헤더에서 로고를 탭한 다음 을 누릅니다 **[!UICONTROL 머리글 로고]**. Dimension 및 위치 아코디언을 확장하고 다음 속성을 설정한 다음 을 누릅니다 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 테마 편집기에서 헤더에서 로고를 선택하고 을 선택합니다. **[!UICONTROL 머리글 로고]**. Dimension 및 위치 아코디언을 확장하고 다음 속성을 설정한 다음 을 선택합니다 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -160,22 +160,22 @@ ht-degree: 10%
         <li>위쪽: 1.5rem</li> 
         <li>하단: -35px</li> 
         <li>왼쪽: 1rem<strong><br /> </strong></li> 
-       </ul> <p><strong>팁:</strong> 탭 <img src="assets/link.png"> 링크 아이콘 을 사용하여 각 필드에 다른 값을 입력할 수 있습니다.<br /> </p> </td> 
+       </ul> <p><strong>팁:</strong> 다음 항목 선택 <img src="assets/link.png"> 링크 아이콘 을 사용하여 각 필드에 다른 값을 입력할 수 있습니다.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>높이</td> 
-      <td>4.75rem</td> 
+      <td>4.75렘</td> 
      </tr> 
     </tbody> 
    </table>
 
-1. 바닥글 위젯을 탭하고 을 누릅니다 **[!UICONTROL 바닥글]**. 확장 **[!UICONTROL 배경]** 아코디언, 설정 **[!UICONTROL 배경색]** 끝 `F6921E`, 및 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 바닥글 위젯을 선택하고 **[!UICONTROL 바닥글]**. 확장 **[!UICONTROL 배경]** 아코디언, 설정 **[!UICONTROL 배경색]** 끝 `F6921E`, 및 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 ### 데이터 캡처 구성 요소의 스타일을 지정하고 적응형 양식에 배경을 적용합니다 {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 적응형 양식에서 여러 구성 요소를 사용하여 데이터를 캡처할 수 있습니다. 예를 들어 텍스트 상자와 숫자 상자가 있습니다. 모든 데이터 캡처 구성 요소에 동일한 스타일을 제공하거나 각 구성 요소에 별도의 스타일을 제공할 수 있습니다. 이 자습서에서는 숫자 상자(고객 ID, 우편 번호)와 텍스트 상자(고객 ID, 이름, 배송 주소, 상태, 이메일)에 동일한 스타일이 적용됩니다. 데이터 캡처 구성 요소의 스타일을 지정하려면 다음을 수행하십시오.
 
-1. 탭 **[!UICONTROL 고객 ID]** 필드 및 탭 **[!UICONTROL 필드 위젯]** 옵션을 선택합니다. 다음 속성을 설정하고 을 누릅니다 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 다음 항목 선택 **[!UICONTROL 고객 ID]** 필드 및 선택 **[!UICONTROL 필드 위젯]** 옵션을 선택합니다. 다음 속성을 설정하고 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -217,7 +217,7 @@ ht-degree: 10%
      </tr> 
      <tr> 
       <td>Dimension 및 위치</td> 
-      <td>너비</td> 
+      <td>폭</td> 
       <td>60%</td> 
      </tr> 
      <tr> 
@@ -231,7 +231,7 @@ ht-degree: 10%
     </tbody> 
     </table>
 
-1. 위의 빈 영역을 탭합니다. **[!UICONTROL 고객 ID]** 필드 및 탭 **[!UICONTROL 반응형 패널 컨테이너]**. 설정 **[!UICONTROL 배경]** > **[!UICONTROL 배경색]** F1F2F2로 이동합니다. 누르기 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 위 빈 영역 선택 **[!UICONTROL 고객 ID]** 필드 및 선택 **[!UICONTROL 반응형 패널 컨테이너]**. 설정 **[!UICONTROL 배경]** > **[!UICONTROL 배경색]** F1F2F2로 이동합니다. 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![반응형 패널 컨테이너](do-not-localize/responsive-panel-container.png)
 
@@ -239,7 +239,7 @@ ht-degree: 10%
 
 사용자 지정 테마를 사용하여 적응형 양식의 모든 버튼에 동일한 스타일을 적용하고 [인라인 스타일 지정](/help/forms/using/inline-style-adaptive-forms.md) 특정 단추에 스타일을 적용합니다. 단추 스타일을 지정하려면 다음을 수행합니다.
 
-1. 탭 **[!UICONTROL 제출]** 버튼을 클릭하고 탭 **[!UICONTROL 단추]** 옵션을 선택합니다. 다음 속성을 설정하고 을 누릅니다 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 다음 항목 선택 **[!UICONTROL 제출]** 버튼을 클릭하고 다음을 선택합니다. **[!UICONTROL 단추]** 옵션을 선택합니다. 다음 속성을 설정하고 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -300,14 +300,14 @@ ht-degree: 10%
 
    ![style-option](assets/style-option.png)
 
-1. 탭 **[!UICONTROL 첨부]** 버튼을 클릭하고 탭 ![aem_6_3_edit](assets/aem_6_3_edit.png)아이콘. 에서 다음 속성을 설정합니다. **[!UICONTROL Dimension 및 위치]** 아코디언:
+1. 다음 항목 선택 **[!UICONTROL 첨부]** 버튼을 클릭하고 다음을 선택합니다. ![aem_6_3_edit](assets/aem_6_3_edit.png)아이콘. 에서 다음 속성을 설정합니다. **[!UICONTROL Dimension 및 위치]** 아코디언:
 
    | 속성 | 값 |
    |---|---|
    | 부동 | 왼쪽 |
-   | 너비 | 10% |
+   | 폭 | 10% |
 
-1. 탭 **[!UICONTROL 정부 승인 주소 증명]** 옵션 및 탭 ![aem_6_3_edit](assets/aem_6_3_edit.png)아이콘. 다음 속성을 설정합니다.
+1. 다음 항목 선택 **[!UICONTROL 정부 승인 주소 증명]** 옵션을 선택하고 ![aem_6_3_edit](assets/aem_6_3_edit.png)아이콘. 다음 속성을 설정합니다.
 
    <table> 
     <tbody> 
@@ -323,7 +323,7 @@ ht-degree: 10%
      </tr> 
      <tr> 
       <td>치수 및 위치</td> 
-      <td>너비</td> 
+      <td>폭</td> 
       <td>73%</td> 
      </tr> 
      <tr> 
@@ -340,7 +340,7 @@ ht-degree: 10%
       <td>40픽셀</td> 
      </tr> 
      <tr> 
-      <td>치수 및 위치<br /> </td> 
+      <td>Dimension 및 위치<br /> </td> 
       <td>여백</td> 
       <td><br /> 
        <ul> 
@@ -397,7 +397,7 @@ ht-degree: 10%
     </tbody> 
    </table>
 
-1. 탭 **[!UICONTROL 제출]** 버튼을 클릭하고 탭 ![aem_6_3_edit](assets/aem_6_3_edit.png) 아이콘. 다음 속성을 설정합니다.
+1. 다음 항목 선택 **[!UICONTROL 제출]** 버튼을 클릭하고 다음을 선택합니다. ![aem_6_3_edit](assets/aem_6_3_edit.png) 아이콘. 다음 속성을 설정합니다.
 
    <table> 
     <tbody> 

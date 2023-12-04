@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. 에서 적응형 양식 열기 **[!UICONTROL 편집]** 모드.
 
-1. 다음에서 **[!UICONTROL 콘텐츠]** 탭, 탭 **[!UICONTROL 양식 컨테이너]** 및 탭 ![구성](assets/configure-icon.svg) 을 클릭하여 적응형 양식 속성을 확인하십시오.
+1. 다음에서 **[!UICONTROL 콘텐츠]** 탭, 선택 **[!UICONTROL 양식 컨테이너]** 및 선택 ![구성](assets/configure-icon.svg) 을 클릭하여 적응형 양식 속성을 확인하십시오.
 
 1. 다음에서 **[!UICONTROL 제출]** 섹션, 선택 **[!UICONTROL 이메일 보내기]** 다음에서 **[!UICONTROL 제출 액션]** 드롭다운 목록입니다.
 

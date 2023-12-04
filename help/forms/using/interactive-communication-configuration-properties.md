@@ -12,10 +12,10 @@ discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 7%
+source-wordcount: '610'
+ht-degree: 6%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 7%
 
 ## 문서 단편 구성 {#document-fragments-configuration}
 
-누르기 **문서 단편 구성** 다음에 있음 **Adobe Experience Manager 웹 콘솔 구성** 문서 조각에 대한 구성 속성을 볼 수 있는 페이지입니다.
+선택 **문서 단편 구성** 다음에 있음 **Adobe Experience Manager 웹 콘솔 구성** 문서 조각에 대한 구성 속성을 볼 수 있는 페이지입니다.
 
 <table>
  <tbody> 
@@ -62,13 +62,13 @@ ht-degree: 7%
   <tr> 
    <td>들여쓰기</td> 
    <td>목록 문서 조각의 텍스트에 적용된 단일 들여쓰기 단위 폭입니다.</td> 
-   <td>12.7mm</td> 
+   <td>12.7밀리미터</td> 
    <td>숫자</td> 
   </tr> 
   <tr> 
    <td>로마 숫자 최소 너비</td> 
    <td>목록 문서 조각에서 로마 숫자를 사용할 때 글머리 기호 또는 숫자 필드에 적용할 최소 너비입니다. </td> 
-   <td>12.7mm</td> 
+   <td>12.7밀리미터</td> 
    <td>숫자</td> 
   </tr> 
   <tr> 
@@ -82,7 +82,7 @@ ht-degree: 7%
 
 ## 서신 구성 만들기 {#create-correspondence-configuration}
 
-누르기 **서신 구성 만들기** 다음에 있음 **Adobe Experience Manager 웹 콘솔 구성** 에이전트 UI에 대한 구성 속성을 볼 수 있는 페이지입니다.
+선택 **서신 구성 만들기** 다음에 있음 **Adobe Experience Manager 웹 콘솔 구성** 에이전트 UI에 대한 구성 속성을 볼 수 있는 페이지입니다.
 
 <table>
  <tbody> 
@@ -115,7 +115,7 @@ ht-degree: 7%
 
 ## 적응형 양식 및 대화형 통신 웹 채널 구성 {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-누르기 **적응형 양식 및 대화형 통신 웹 채널 구성** 다음에 있음 **Adobe Experience Manager 웹 콘솔 구성** 적응형 Forms 및 대화형 통신 웹 채널에 대한 구성 속성을 볼 수 있는 페이지입니다. 다음 표에서는 대화형 통신 관련 속성을 설명합니다.
+선택 **적응형 양식 및 대화형 통신 웹 채널 구성** 다음에 있음 **Adobe Experience Manager 웹 콘솔 구성** 적응형 Forms 및 대화형 통신 웹 채널에 대한 구성 속성을 볼 수 있는 페이지입니다. 다음 표에서는 대화형 통신 관련 속성을 설명합니다.
 
 | 속성 | 설명 | 기본값 | 허용되는 값 |
 |---|---|---|---|
@@ -125,7 +125,7 @@ ht-degree: 7%
 
 ## 적응형 양식 및 대화형 통신 웹 채널 테마 구성 {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-누르기 **적응형 양식 및 대화형 통신 웹 채널 테마 구성** 다음에 있음 **Adobe Experience Manager 웹 콘솔 구성** 적응형 Forms 및 대화형 통신 웹 채널 테마에 대한 구성 속성을 볼 수 있는 페이지입니다.
+선택 **적응형 양식 및 대화형 통신 웹 채널 테마 구성** 다음에 있음 **Adobe Experience Manager 웹 콘솔 구성** 적응형 Forms 및 대화형 통신 웹 채널 테마에 대한 구성 속성을 볼 수 있는 페이지입니다.
 
 <table>
  <tbody> 

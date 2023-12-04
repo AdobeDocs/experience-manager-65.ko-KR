@@ -11,9 +11,9 @@ topic-tags: forms-app
 discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
 exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -30,16 +30,16 @@ AEM Forms 서버를 사용하여 온라인 상태이면 기본적으로 앱은 1
 
 **앱을 수동으로 동기화하려면**
 
-동기화 버튼 탭 ![sync-app](assets/sync-app.png) 홈 화면의 오른쪽 아래 모서리에 있습니다.
+동기화 버튼 선택 ![sync-app](assets/sync-app.png) 홈 화면의 오른쪽 아래 모서리에 있습니다.
 
 **동기화 빈도를 변경하려면**
 
-1. 설정 화면으로 이동하려면 홈 화면의 왼쪽 상단 모서리에서 메뉴 버튼을 누른 다음 을 누릅니다 **설정**.
-1. 설정 화면에서 일반 탭을 탭합니다.
+1. 설정 화면으로 이동하려면 홈 화면의 왼쪽 상단 모서리에서 메뉴 단추를 선택한 다음 을 선택합니다 **설정**.
+1. 설정 화면에서 일반 탭을 선택합니다.
 
    ![일반 설정 창의 동기화 빈도 설정](assets/gen-settings-2.png)
 
-1. 동기화 빈도 옵션에서 동기화 빈도 오른쪽에 있는 값을 탭합니다.
+1. [동기화 빈도] 옵션에서 [동기화 빈도] 오른쪽에 있는 값을 선택합니다.
 1. 드롭다운 목록에서 새 동기화 빈도를 선택합니다.
 
 ### 기술 사양 {#technical-specifications}

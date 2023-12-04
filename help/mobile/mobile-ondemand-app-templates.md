@@ -1,18 +1,14 @@
 ---
 title: 템플릿 및 구성 요소 생성 및 추가
-seo-title: Creating and Adding Templates and Components
 description: 이 페이지를 따라 템플릿 및 구성 요소를 만들고 앱에 추가하는 방법에 대해 알아보십시오. 이 페이지에서는 샘플 앱 템플릿과 페이지 템플릿을 포함하는 앱으로 Geometrixx Unlimited 앱을 사용합니다.
-seo-description: Follow this page to learn about creating and adding templates and components to your app. The page uses Geometrixx Unlimited App as the app that contains a sample app template and page templates.
-uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 0%
+source-wordcount: '1151'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +41,7 @@ We.Unlimited 앱은 완벽하게 구성 가능하고 관리 가능한 AEM Mobile
 앱 템플릿을 기반으로 앱을 만드는 절차:
 
 1. AEM Mobile 앱 카탈로그로 이동합니다. *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. 선택 **만들기** —> **앱** 아래와 같이
+1. 선택 **만들기** -> **앱** 아래와 같이
 
 이 템플릿을 사용하여 앱을 만들면 앱에 문서, 배너 및 컬렉션을 추가할 수 있습니다. 문서, 배너 및 컬렉션을 다시 방문하려면 다음을 참조하십시오. [컨텐츠 관리 작업](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
@@ -90,7 +86,7 @@ Unlimited 문서는 일반적인 AEM Mobile 온디맨드 문서 레이아웃을 
 
 작성자는 문서를 만든 후 텍스트 및 이미지와 같은 구성 요소를 추가하여 문서의 콘텐츠를 편집할 수 있습니다. 문서는 AEM 페이지 템플릿의 확장입니다.
 
-편집할 문서를 선택하고 을(를) 클릭합니다 **편집** 문서에 구성 요소를 추가합니다.
+편집할 문서를 선택한 다음 **편집** 문서에 구성 요소를 추가합니다.
 
 ![chlimage_1-72](assets/chlimage_1-72.png) ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -145,7 +141,7 @@ AEM 템플릿에 따라 기본 속성이나 하위 노드를 템플릿의 ***jcr
 **기존 구성 요소를 편집하려면 다음을 수행하십시오.**
 
 1. 해당 페이지를 선택하고 다음 위치에 있는지 확인합니다. **편집** 모드 및 구성 요소 선택
-1. 렌치 아이콘을 탭하여 구성 요소 구성
+1. 렌치 아이콘을 선택하여 구성 요소를 구성합니다.
 
 >[!NOTE]
 >

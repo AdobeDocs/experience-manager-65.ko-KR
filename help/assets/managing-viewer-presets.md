@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4520'
-ht-degree: 9%
+source-wordcount: '4422'
+ht-degree: 8%
 
 ---
 
@@ -121,7 +121,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
     </ul> <p>종횡비와 키워드 기준은 모두 자산 세부 사항 페이지 및 "파노라마 미디어" WCM 구성 요소의 파노라마 자산에 적용됩니다.</p> <p><strong>중요 사항</strong>: 이 뷰어는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.</p> </td>
   </tr>
   <tr>
-   <td><strong>스마트 크롭 비디오</strong><br /> </td>
+   <td><strong>스마트 자르기 비디오</strong><br /> </td>
    <td><p>이 뷰어를 사용하여 모든 비디오에서 초점을 자동으로 감지하고 자를 수 있습니다.</p> </td>
   </tr>
   <tr>
@@ -292,7 +292,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
    <td><code>html5_videoviewer.css</code></td>
   </tr>
   <tr>
-   <td><p>비디오360_social</p> <p>(기본 비디오 재생 컨트롤, 비디오 렌더링은 스테레오 모드에서 수행되며, 수동 POV 컨트롤은 꺼져 있지만 자이로스코프 컨트롤은 켜져 있으며 소셜 미디어 기능이 없음)</p> </td>
+   <td><p>Video360_social</p> <p>(기본 비디오 재생 컨트롤, 비디오 렌더링은 스테레오 모드에서 수행되며, 수동 POV 컨트롤은 꺼져 있지만 자이로스코프 컨트롤은 켜져 있으며 소셜 미디어 기능이 없음)</p> </td>
    <td>비디오_360</td>
    <td><code>html5_video360viewersocial.css</code></td>
   </tr>
@@ -354,7 +354,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
    <td><p>사용자 인터페이스를 표시하거나 숨깁니다.</p> </td>
   </tr>
   <tr>
-   <td><p><strong>두 번 누르기</strong></p> </td>
+   <td><p><strong>두 번 선택</strong></p> </td>
    <td><p>적용되지 않음</p> </td>
    <td><p>확대 또는 재설정</p> </td>
    <td><p>확대 또는 재설정</p> </td>
@@ -443,7 +443,7 @@ Experience Manager에서 에셋을 볼 때 다양한 뷰어 사전 설정을 표
 
      각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 &quot;사용자 지정&quot;에 설명되어 있습니다. *`<viewer name>`* 의 &quot;뷰어&quot; 도움말 항목 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). 예를 들어 유형의 뷰어 사전 설정을 만드는 경우 `Mixed_Media`, 참조 [혼합 미디어 뷰어 사용자 지정](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) 각 속성의 목록 및 설명.
 
-   * If you have defined style settings in a separate CSS file, you can upload the CSS file to AEM Assets. 선택 **[!UICONTROL CSS 가져오기]** 아래 **[!UICONTROL 선택한 유형]** 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결할 수 있도록 풀다운 메뉴(필요한 경우 시각적 편집기를 위로 스크롤하여 확인)를 표시합니다.
+   * 별도의 CSS 파일에 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 선택 **[!UICONTROL CSS 가져오기]** 아래 **[!UICONTROL 선택한 유형]** 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결할 수 있도록 풀다운 메뉴(필요한 경우 시각적 편집기를 위로 스크롤하여 확인)를 표시합니다.
 
      CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 뷰어 클래스 이름을 사용하여 정의해야 합니다 `.s7mixedmediaviewer` 상위 뷰어 요소에 정의됩니다.
 
@@ -553,9 +553,9 @@ When you enable (select) **[!UICONTROL Auto Scroll]** in the viewer preset, duri
 
 회전 메뉴 배너 뷰어 사전 설정을 만들 때 핫스팟의 스타일을 변경하면 다음과 같이 변경할 수 있습니다.
 
-| | **설명** | **액션** |
+| | **설명** | **작업** |
 |---|---|---|
-| **[!UICONTROL 핫스팟 아이콘]** | 핫스팟에 사용되는 아이콘 변경 | 핫스팟 아이콘 이미지를 변경하려면 **[!UICONTROL 모양]** 탭, 위치 **[!UICONTROL 선택한 구성 요소]**, 선택 **[!UICONTROL 이미지 맵 효과]**. Under **[!UICONTROL Icon]**, select **[!UICONTROL Background]** and in the **[!UICONTROL Image]** field navigate to the background image you want. |
+| **[!UICONTROL 핫스팟 아이콘]** | 핫스팟에 사용되는 아이콘 변경 | 핫스팟 아이콘 이미지를 변경하려면 **[!UICONTROL 모양]** 탭, 위치 **[!UICONTROL 선택한 구성 요소]**, 선택 **[!UICONTROL 이미지 맵 효과]**. 아래 **[!UICONTROL 아이콘]**, 선택 **[!UICONTROL 배경]** 및 **[!UICONTROL 이미지]** 필드는 원하는 배경 이미지로 이동합니다. |
 
 ## 뷰어 사전 설정 활성화 또는 비활성화 {#activating-or-deactivating-viewer-presets}
 

@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2459'
 ht-degree: 2%
 
 ---
 
 # 적응형 양식의 표{#tables-in-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -77,7 +77,7 @@ AEM Forms은 구성 요소 브라우저의 사이드바에 적응형 양식에�
 
 표에 대한 설명을 추가하여 화면 판독기에서 해석하고 읽을 수 있도록 정보가 구성되는 방식을 설명할 수 있습니다. 설명을 추가하려면 다음 작업을 수행하십시오.
 
-1. 표를 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png) 를 클릭하여 사이드바에서 속성을 확인합니다.
+1. 표를 선택하고 을 선택합니다. ![cmppr](assets/cmppr.png) 를 클릭하여 사이드바에서 속성을 확인합니다.
 1. [액세스 가능성] 탭에서 요약을 지정합니다.
 1. **완료**&#x200B;를 클릭합니다.
 
@@ -95,9 +95,9 @@ AEM Forms은 구성 요소 브라우저의 사이드바에 적응형 양식에�
 
 정렬을 활성화하려면
 
-1. 표를 선택하고 을 누릅니다 ![configure_icon](assets/configure_icon.png) (구성). 다음을 사용하여 테이블을 선택할 수도 있습니다. **콘텐츠** 대화형 통신의 사이드 킥에 있는 브라우저.
+1. 표를 선택하고 을 선택합니다. ![configure_icon](assets/configure_icon.png) (구성). 다음을 사용하여 테이블을 선택할 수도 있습니다. **콘텐츠** 대화형 통신의 사이드 킥에 있는 브라우저.
 1. 선택 **정렬 활성화**.
-1. 누르기 ![done_icon](assets/done_icon.png) 테이블 속성을 저장합니다. 열 헤더의 정렬 아이콘 위쪽 및 아래쪽 화살표는 정렬이 활성화되었음을 나타냅니다.
+1. 선택 ![done_icon](assets/done_icon.png) 테이블 속성을 저장합니다. 열 헤더의 정렬 아이콘 위쪽 및 아래쪽 화살표는 정렬이 활성화되었음을 나타냅니다.
 
    ![정렬 활성화](assets/enable_sorting_new.png)
 
@@ -116,7 +116,7 @@ AEM Forms은 구성 요소 브라우저의 사이드바에 적응형 양식에�
 
 다음 단계를 실행하여 테이블에 대한 열 너비를 설정합니다.
 
-1. 다음에서 **[!UICONTROL 콘텐츠]** 탭에서 다음을 누릅니다. **[!UICONTROL 표]** 구성 요소를 클릭하고 구성 을 탭합니다(![구성](assets/configure-icon.svg))아이콘 을 사용하여 메시지를 보낼 수 있습니다.
+1. 다음에서 **[!UICONTROL 콘텐츠]** 탭에서 **[!UICONTROL 표]** 구성 요소를 선택하고 구성(![구성](assets/configure-icon.svg))아이콘 을 사용하여 메시지를 보낼 수 있습니다.
 
 1. 에 쉼표로 구분된 값 목록을 입력합니다. **[!UICONTROL 열 너비]** 테이블에 있는 각 열의 비례 폭을 지정하는 필드입니다. 예를 들어 3개의 열이 포함된 테이블의 경우 2,4,6을 **[!UICONTROL 열 너비]** 필드의 결과에 따라 열의 너비는 첫 번째 열의 경우 2/12, 두 번째 열의 경우 4/12, 세 번째 열의 경우 6/12로 설정됩니다. 첫 번째 열의 너비로서 2/12는 테이블 너비의 1/6을 나타냅니다. 마찬가지로 4/12는 두 번째 열 너비를 테이블 너비의 1/3로 설정하고 6/12는 세 번째 열 너비를 테이블 너비의 절반으로 설정합니다.
 
@@ -126,7 +126,7 @@ AEM Forms은 구성 요소 브라우저의 사이드바에 적응형 양식에�
 
 1. 페이지 도구 모음에서 미리보기 전에 ![캔버스 드롭다운](assets/canvas-drop-down.png) > **스타일**.
 
-1. 사이드바에서 표를 선택하고 편집 버튼을 탭합니다 ![편집 단추](assets/edit-button.png).
+1. 사이드바에서 표를 선택하고 편집 버튼을 선택합니다. ![편집 단추](assets/edit-button.png).
 사이드바에서 스타일 속성을 확인할 수 있습니다.
 
 ![표의 스타일 속성](assets/style-table.png)
@@ -139,7 +139,7 @@ AEM Forms은 구성 요소 브라우저의 사이드바에 적응형 양식에�
 
 테이블은 런타임 시 동적으로 행을 추가하거나 삭제할 수 있는 기본 지원을 제공합니다.
 
-1. 테이블 행을 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png).
+1. 테이블 행을 선택하고 ![cmppr](assets/cmppr.png).
 1. 반복 설정 탭에서 테이블의 행 수를 제한할 최소 및 최대 개수를 지정합니다.
 1. **완료**&#x200B;를 클릭합니다.
 

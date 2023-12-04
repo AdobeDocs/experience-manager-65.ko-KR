@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 2%
+source-wordcount: '890'
+ht-degree: 1%
 
 ---
 
@@ -128,7 +128,7 @@ ht-degree: 2%
 
 AEM Forms 앱의 로그인 페이지에는 로고와 배경 이미지가 있습니다. 로고는 로그인 대화 상자 위에 있고 배경 이미지는 로그인 대화 상자 아래에 있습니다. 로그인 페이지에서 기본 이미지를 사용자 정의하려면 다음 단계를 수행하십시오.
 
-**시작하기 전**
+**시작하기 전에**
 
 다음 이미지가 있는지 확인합니다.
 
@@ -181,9 +181,9 @@ AEM Forms 앱의 로그인 페이지에는 로고와 배경 이미지가 있습�
 
 ## 앱 메뉴에서 로고 사용자 지정 {#customizing_images_on_the_login_page-1}
 
-AEM Forms 앱에 로그인하고 메뉴 버튼을 탭하면 메뉴 위에 로고가 표시됩니다. 기본 로고를 사용자 지정하려면 다음 단계를 수행하십시오.
+AEM Forms 앱에 로그인하고 메뉴 버튼을 선택하면 메뉴 위에 로고가 표시됩니다. 기본 로고를 사용자 지정하려면 다음 단계를 수행하십시오.
 
-**시작하기 전**
+**시작하기 전에**
 
 다음 이미지가 있는지 확인합니다.
 

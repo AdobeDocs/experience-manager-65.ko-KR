@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: d19cba33-0646-40d4-b4a3-b28d6db4a1f3
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Adobe Experience Manager(AEM) Forms 앱을 시작할 때 먼저 로그인 자격
 
 ## 앱을 시작하려면 {#to-start-the-app}
 
-1. 모바일 장치에서 AEM Forms 앱 아이콘을 탭합니다.
+1. 모바일 장치에서 AEM Forms 앱 아이콘을 선택합니다.
 1. 앱에 로그인하려면 사용자 이름, 암호 및 AEM Forms 서버 URL을 입력합니다.
 
    >[!NOTE]

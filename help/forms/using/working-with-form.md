@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -26,9 +26,9 @@ AEM Forms 앱에서 양식을 동기화하려면:
 
 1. 작성자 인스턴스에서 양식을 선택하고 **속성 보기**.
 1. 속성 페이지에서 **고급.**
-1. 고급 아래에서 옵션을 활성화합니다. **AEM Forms 앱과 동기화**, 및 탭 **저장**.
+1. 고급 아래에서 옵션을 활성화합니다. **AEM Forms 앱과 동기화**, 및 선택 **저장**.
 
-여러 양식을 동기화하려면 작성자 인스턴스에서 Forms Manager에서 여러 양식을 선택하고 을 누릅니다 **AEM Forms 앱과 동기화**. 양식이 게시되면 AEM Forms 앱에서 게시 서버에 연결하여 양식을 가져올 수 있습니다.
+여러 양식을 동기화하려면 작성자 인스턴스에서 Forms Manager에서 여러 양식을 선택하고 을 선택합니다 **AEM Forms 앱과 동기화**. 양식이 게시되면 AEM Forms 앱에서 게시 서버에 연결하여 양식을 가져올 수 있습니다.
 
 AFA(AEM Form Application) Android 앱이 동기화되지 않을 경우 다음 단계를 수행하여 동기화 문제를 해결합니다.
 

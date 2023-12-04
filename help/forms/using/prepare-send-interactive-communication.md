@@ -5,9 +5,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2010'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 2%
 ## 에이전트 UI를 사용하여 대화형 통신 준비 {#prepare-interactive-communication-using-the-agent-ui}
 
 1. 선택 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
-1. 적절한 대화형 통신을 선택하고 을 누릅니다 **[!UICONTROL 에이전트 UI 열기]**.
+1. 적절한 대화형 통신을 선택하고 을 선택합니다 **[!UICONTROL 에이전트 UI 열기]**.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 1. 데이터 탭에서 필요에 따라 변수, 양식 데이터 모델 속성 및 인쇄 템플릿(XDP) 필드에 대한 데이터를 입력합니다. 별표(&amp;ast;)로 표시된 모든 필수 필드를 채워 **제출** 단추를 클릭합니다.
 
-   대화형 통신 미리 보기에서 데이터 필드 값을 탭하여 데이터 탭에서 또는 그 반대로 해당 데이터 필드를 강조 표시합니다.
+   대화형 통신 미리 보기에서 데이터 필드 값을 선택하여 데이터 탭에서 해당 데이터 필드를 강조 표시하거나 반대로 선택합니다.
 
 ### 컨텐츠 관리 {#manage-content}
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
    ![agentuiconttab](assets/agentuicontenttab.png)
 
-1. 필요에 따라 콘텐츠 탭에서 문서 조각을 편집합니다. 컨텐츠 계층 구조의 관련 조각에 초점을 맞추려면 대화형 통신 미리 보기에서 관련 줄이나 단락을 탭하거나 컨텐츠 계층 구조에서 직접 조각을 탭할 수 있습니다.
+1. 필요에 따라 콘텐츠 탭에서 문서 조각을 편집합니다. 컨텐츠 계층의 관련 조각에 초점을 맞추려면 대화형 통신 미리 보기에서 관련 행이나 단락을 선택하거나 컨텐츠 계층에서 조각을 직접 선택할 수 있습니다.
 
    예를 들어 아래 그래픽의 미리 보기에서 &quot;지금 온라인으로 결제...&quot;라는 줄이 있는 문서 조각이 선택되고 콘텐츠 탭에서 동일한 문서 조각이 선택되었습니다.
 
@@ -65,7 +65,7 @@ ht-degree: 2%
 
    컨텐츠 또는 데이터 탭에서 컨텐츠에서 선택한 모듈 강조 표시( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) 미리보기의 왼쪽 상단에서 관련 텍스트, 단락 또는 데이터 필드를 탭/선택하면 문서 조각으로 이동하는 기능을 비활성화하거나 활성화할 수 있습니다.
 
-   대화형 통신을 생성하는 동안 에이전트에서 편집할 수 있는 조각에는 선택한 콘텐츠 편집 이 있습니다. ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) 아이콘. 선택한 컨텐츠 편집 아이콘을 탭하여 조각을 편집 모드로 실행하고 변경 작업을 수행합니다. 텍스트 서식 지정 및 관리를 위해 다음 옵션을 사용합니다.
+   대화형 통신을 생성하는 동안 에이전트에서 편집할 수 있는 조각에는 선택한 콘텐츠 편집 이 있습니다. ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) 아이콘. 선택한 컨텐츠 편집 아이콘을 선택하여 편집 모드에서 조각을 시작하고 해당 조각을 변경합니다. 텍스트 서식 지정 및 관리를 위해 다음 옵션을 사용합니다.
 
    * [서식 옵션](#formattingtext)
 
@@ -89,11 +89,11 @@ ht-degree: 2%
 
 1. 선택 **[!UICONTROL 첨부 파일]**. 에이전트 UI는 대화형 통신을 생성하는 동안 설정된 대로 사용 가능한 첨부 파일을 표시합니다.
 
-   보기 아이콘을 탭하여 대화형 통신과 함께 첨부 파일을 제출하지 않도록 선택할 수 있으며, 대화형 통신에서 첨부 파일의 십자가를 탭하여 삭제할 수 있습니다(에이전트가 첨부 파일을 삭제하거나 숨길 수 있는 경우). 대화형 통신을 생성하는 동안 필수로 지정된 첨부 파일의 경우 보기 및 삭제 아이콘이 비활성화됩니다.
+   보기 아이콘을 탭하여 대화형 통신과 함께 첨부 파일을 제출하지 않도록 선택할 수 있으며, 대화형 통신에서 첨부 파일에서 십자가를 선택하여 삭제할 수 있습니다(에이전트가 첨부 파일을 삭제하거나 숨길 수 있는 경우). 대화형 통신을 생성하는 동안 필수로 지정된 첨부 파일의 경우 보기 및 삭제 아이콘이 비활성화됩니다.
 
    ![첨부 파일 에이전트](assets/attachmentsagentui.png)
 
-1. 라이브러리 액세스( )를 누릅니다. ![라이브러리 액세스](assets/libraryaccess.png)) 아이콘을 클릭하여 컨텐츠 라이브러리에 액세스하여 DAM 자산을 첨부 파일로 삽입할 수 있습니다.
+1. 라이브러리 액세스 선택( ![라이브러리 액세스](assets/libraryaccess.png)) 아이콘을 클릭하여 컨텐츠 라이브러리에 액세스하여 DAM 자산을 첨부 파일로 삽입할 수 있습니다.
 
    >[!NOTE]
    >
@@ -102,7 +102,7 @@ ht-degree: 2%
 1. 대화형 통신을 만드는 동안 첨부 파일의 순서가 잠겨 있지 않은 경우 첨부 파일을 선택하고 아래쪽 및 위쪽 화살표를 눌러 첨부 파일의 순서를 변경할 수 있습니다.
 1. 웹 미리 보기 및 인쇄 미리 보기 를 사용하여 두 출력이 요구 사항에 맞는지 확인합니다.
 
-   미리보기가 만족스러우면 을 누릅니다 **[!UICONTROL 제출]** 대화형 커뮤니케이션을 게시 프로세스에 제출/전송합니다. 또는 변경 내용을 적용하려면 미리보기를 종료하고 변경 내용으로 돌아갑니다.
+   미리보기가 만족스러우면 다음을 선택합니다. **[!UICONTROL 제출]** 대화형 커뮤니케이션을 게시 프로세스에 제출/전송합니다. 또는 변경 내용을 적용하려면 미리보기를 종료하고 변경 내용으로 돌아갑니다.
 
 ## 텍스트 서식 지정 {#formattingtext}
 
@@ -122,7 +122,7 @@ ht-degree: 2%
 
 ### 텍스트 일부 강조/강조 {#highlightemphasize}
 
-편집 가능한 조각에서 텍스트 일부를 강조\강조하려면 텍스트를 선택하고 [색상 강조 표시]를 누릅니다.
+편집 가능한 조각에서 텍스트 일부를 강조\강조하려면 텍스트를 선택하고 [강조 색상]을 선택합니다.
 
 ![highlighttextagentui](assets/highlighttextagentui.png)
 
@@ -183,10 +183,10 @@ Adobe은 대화형 커뮤니케이션을 초안으로 성공적으로 저장하�
    SPI를 사용하면 대화형 통신의 초안 버전을 고유 식별자로 초안 ID를 사용하여 데이터베이스에 저장할 수 있습니다. 이러한 지침은 Maven 프로젝트를 사용하여 OSGi 번들을 작성하는 방법에 대한 사전 지식이 있다고 가정합니다.
 
    샘플 SPI 구현은 다음을 참조하십시오. [ccrDocumentInstance SPI 구현 예](#sample-ccrDocumentInstance-spi).
-1. 열기 `http://<hostname>:<port>/ system/console/bundles` 및 탭 **[!UICONTROL 설치/업데이트]** 를 클릭하여 OSGi 번들을 업로드하십시오. 업로드된 패키지의 상태가 (으)로 표시되는지 확인합니다. **활성**. 패키지의 상태가 로 표시되지 않으면 서버를 다시 시작합니다. **활성**.
+1. 열기 `http://<hostname>:<port>/ system/console/bundles` 및 선택 **[!UICONTROL 설치/업데이트]** 를 클릭하여 OSGi 번들을 업로드하십시오. 업로드된 패키지의 상태가 (으)로 표시되는지 확인합니다. **활성**. 패키지의 상태가 로 표시되지 않으면 서버를 다시 시작합니다. **활성**.
 1. `https://'[server]:[port]'/system/console/configMgr`로 이동합니다.
-1. 누르기 **[!UICONTROL 서신 구성 만들기]**.
-1. 선택 **[!UICONTROL CCRDocumentInstanceService를 사용하여 저장 활성화]** 및 탭 **[!UICONTROL 저장]**.
+1. 선택 **[!UICONTROL 서신 구성 만들기]**.
+1. 선택 **[!UICONTROL CCRDocumentInstanceService를 사용하여 저장 활성화]** 및 선택 **[!UICONTROL 저장]**.
 
 ### 대화형 커뮤니케이션을 초안으로 저장 {#save-as-draft-agent-ui}
 
@@ -194,11 +194,11 @@ Adobe은 대화형 커뮤니케이션을 초안으로 성공적으로 저장하�
 
 1. Forms Manager에서 대화형 통신을 선택하고 **[!UICONTROL 에이전트 UI 열기]**.
 
-1. 에이전트 UI에서 적절히 변경한 후 을 누릅니다 **[!UICONTROL 초안으로 저장]**.
+1. 에이전트 UI에서 적절하게 변경하고 **[!UICONTROL 초안으로 저장]**.
 
-1. 에서 초안의 이름을 지정합니다. **[!UICONTROL 이름]** 필드 및 탭 **[!UICONTROL 완료]**.
+1. 에서 초안의 이름을 지정합니다. **[!UICONTROL 이름]** 필드 및 선택 **[!UICONTROL 완료]**.
 
-대화형 통신을 초안으로 저장했으면 을 누릅니다. **[!UICONTROL 변경 내용 저장]** 초안에 대한 추가 변경 사항을 저장합니다.
+대화형 통신을 초안으로 저장했으면 을 선택합니다. **[!UICONTROL 변경 내용 저장]** 초안에 대한 추가 변경 사항을 저장합니다.
 
 ### 대화형 통신의 초안 검색 {#retrieve-draft}
 

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 5%
@@ -81,12 +81,12 @@ AEM Forms 워크플로우에 대한 디버그 로깅을 활성화할 수 있도�
    https://&#39;[server]:[포트]&#39;/system/console/configMgr
 
 1. 선택 **[!UICONTROL 슬링]** > **[!UICONTROL 로그 지원]**.
-1. 누르기 **[!UICONTROL 새 로거를 추가합니다.]**
+1. 선택 **[!UICONTROL 새 로거를 추가합니다.]**
 1. 선택 **[!UICONTROL 디버그]** (으)로 **[!UICONTROL 로그 수준]**.
 1. 로그 파일의 위치를 지정합니다. 로그 파일의 기본 위치는 다음과 같습니다. *logs\error.log*
 1. 패키지의 이름을 다음으로 지정 **com.adobe.granite.workflow.core** 다음에서 **[!UICONTROL Logger]** 열.
 
-   이 단계를 실행하면 디버그 로그를 저장할 수 있습니다 **com.adobe.granite.workflow.core** 패키지. 누르기 **[!UICONTROL +]** 목록에 다음 패키지 이름을 추가합니다.
+   이 단계를 실행하면 디버그 로그를 저장할 수 있습니다 **com.adobe.granite.workflow.core** 패키지. 선택 **[!UICONTROL +]** 목록에 다음 패키지 이름을 추가합니다.
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

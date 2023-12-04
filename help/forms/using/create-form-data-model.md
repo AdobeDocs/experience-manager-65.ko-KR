@@ -5,9 +5,9 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
@@ -56,14 +56,14 @@ AEM [!DNL Forms] 데이터 통합 모듈을 사용하면 AEM 사용자 프로필
    1. 에서 JDBC Driver OSGi 번들을 `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` 다운로드 [!DNL MySQL] 합니다.<!-- This URL is an insecure link but using https is not possible -->
    1. AEM에 로그인 [!DNL Forms] 작성자 인스턴스: 관리자 자격으로 AEM 웹 콘솔 번들로 이동합니다. 기본 URL은 [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
-   1. 누르기 **[!UICONTROL 설치/업데이트]**. An [!UICONTROL 번들 업로드/설치] 대화 상자가 나타납니다.
+   1. 선택 **[!UICONTROL 설치/업데이트]**. An [!UICONTROL 번들 업로드/설치] 대화 상자가 나타납니다.
 
-   1. 누르기 **[!UICONTROL 파일 선택]** 을(를) 찾아 선택하려면 [!DNL MySQL] JDBC 드라이버 OSGi 번들. 선택 **[!UICONTROL 번들 시작]** 및 **[!UICONTROL 패키지 새로 고침]**, 및 탭 **[!UICONTROL 설치 또는 업데이트]**. [!DNL Oracle Corporation's]JDBC 드라이버가 [!DNL MySQL] 활성화 되어 있는지 확인 합니다. 드라이버가 설치 되어 있습니다.
+   1. 선택 **[!UICONTROL 파일 선택]** 을(를) 찾아 선택하려면 [!DNL MySQL] JDBC 드라이버 OSGi 번들. 선택 **[!UICONTROL 번들 시작]** 및 **[!UICONTROL 패키지 새로 고침]**, 및 선택 **[!UICONTROL 설치 또는 업데이트]**. [!DNL Oracle Corporation's]JDBC 드라이버가 [!DNL MySQL] 활성화 되어 있는지 확인 합니다. 드라이버가 설치 되어 있습니다.
 
 1. 데이터베이스를 데이터 소스로 구성 [!DNL MySQL] 합니다.
 
    1. Https://localhost:4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr) 에서 [ AEM 웹 콘솔로 이동 합니다.
-   1. Apache 선회 비행 연결 풀링 데이터 소스 **구성을 찾습니다** . 편집 모드에서 구성을 탭 하 여 엽니다.
+   1. Apache 선회 비행 연결 풀링 데이터 소스 **구성을 찾습니다** . 편집 모드에서 구성을 열려면 선택 합니다.
    1. 구성 대화 상자에서 다음 세부 사항을 지정합니다.
 
       * **데이터 소스 이름:** 원하는 이름을 지정할 수 있습니다. 예를 들어 을 지정합니다 **WeRetailMySQL**.
@@ -87,7 +87,7 @@ AEM [!DNL Forms] 데이터 통합 모듈을 사용하면 AEM 사용자 프로필
       * **유효성 검사 쿼리:** SQL SELECT 쿼리를 지정하여 풀로부터의 연결을 검증하십시오. 쿼리는 하나 이상의 행을 반환해야 합니다. 예를 들어, **선택 &#42; 보낸 사람 customerdetails**.
       * **트랜잭션 격리**: 값을 로 설정합니다. **READ_COMMIT**.
 
-        다른 속성을 기본값으로 유지 [값](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) 및 탭 **[!UICONTROL 저장]**.
+        다른 속성을 기본값으로 유지 [값](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) 및 선택 **[!UICONTROL 저장]**.
 
         다음과 유사한 구성이 만들어집니다.
 
@@ -100,9 +100,9 @@ AEM [!DNL Forms] 는 다음과 같은 직관적인 사용자 인터페이스를 
 양식 데이터 모델을 만들려면 다음을 수행하십시오.
 
 1. AEM 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL 데이터 통합]**.
-1. 누르기 **[!UICONTROL 만들기]** > **[!UICONTROL 양식 데이터 모델]**.
-1. 양식 데이터 모델 만들기 대화 상자에서 **이름** (양식 데이터 모델) 예를 들어, **고객 운송 청구 세부 정보**. 누르기 **[!UICONTROL 다음]**.
-1. 데이터 소스 선택 화면에 구성된 모든 데이터 소스가 나열됩니다. 선택 **WeRetailMySQL** 데이터 소스 및 탭 **[!UICONTROL 만들기]**.
+1. 선택 **[!UICONTROL 만들기]** > **[!UICONTROL 양식 데이터 모델]**.
+1. 양식 데이터 모델 만들기 대화 상자에서 **이름** (양식 데이터 모델) 예를 들어, **고객 운송 청구 세부 정보**. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+1. 데이터 소스 선택 화면에 구성된 모든 데이터 소스가 나열됩니다. 선택 **WeRetailMySQL** 데이터 소스 및 선택 **[!UICONTROL 만들기]**.
 
    ![data-source-selection](assets/data-source-selection.png)
 
@@ -140,7 +140,7 @@ AEM [!DNL Forms] 는 다음과 같은 직관적인 사용자 인터페이스를 
       * get
       * 업데이트
 
-   누르기 **선택 항목 추가** 선택한 데이터 모델 개체 및 서비스를 양식 데이터 모델에 추가합니다.
+   선택 **선택 항목 추가** 선택한 데이터 모델 개체 및 서비스를 양식 데이터 모델에 추가합니다.
 
    ![WeRetail 스키마](assets/weretail_schema_new.png)
 
@@ -150,8 +150,8 @@ AEM [!DNL Forms] 는 다음과 같은 직관적인 사용자 인터페이스를 
 
 1. 데이터 모델 개체에 대한 읽기 및 쓰기 서비스를 구성합니다.
 
-   1. 다음 항목 선택 **customerdetails** 데이터 모델 개체 및 탭 **[!UICONTROL 속성 편집]**.
-   1. 선택 **[!UICONTROL get]** [읽기 서비스] 드롭다운에서 참조할 수 있습니다. 다음 **id** customerdetails 데이터 모델 개체의 기본 키인 인수가 자동으로 추가됩니다. 누르기 ![aem_6_3_edit](assets/aem_6_3_edit.png) 인수를 다음과 같이 구성합니다.
+   1. 다음 항목 선택 **customerdetails** 데이터 모델 개체 및 선택 **[!UICONTROL 속성 편집]**.
+   1. 선택 **[!UICONTROL get]** [읽기 서비스] 드롭다운에서 참조할 수 있습니다. 다음 **id** customerdetails 데이터 모델 개체의 기본 키인 인수가 자동으로 추가됩니다. 선택 ![aem_6_3_edit](assets/aem_6_3_edit.png) 인수를 다음과 같이 구성합니다.
 
       ![기본 읽기](assets/read-default.png)
 
@@ -163,7 +163,7 @@ AEM [!DNL Forms] 는 다음과 같은 직관적인 사용자 인터페이스를 
 
       ![id-인수](assets/id-arg.png)
 
-   1. 데이터 모델 개체 속성을 저장 하려면 완료 ]**을 탭**[!UICONTROL  합니다. 그런 다음 저장 ]**을 탭**[!UICONTROL  하 여 양식 데이터 모델을 저장 합니다.
+   1. 데이터 모델 개체 속성을 저장 하려면 완료 ]**을 선택**[!UICONTROL  합니다. 그런 다음 양식 데이터 모델을 저장 하려면 저장 ]**를 선택**[!UICONTROL  합니다.
 
       다음 **[!UICONTROL get]** 및 **[!UICONTROL 업데이트]** 서비스는 데이터 모델 개체에 대한 기본 서비스로 추가됩니다.
 
@@ -171,7 +171,7 @@ AEM [!DNL Forms] 는 다음과 같은 직관적인 사용자 인터페이스를 
 
 1. 로 이동 **[!UICONTROL 서비스]** 탭 및 구성 **[!UICONTROL get]** 및 **[!UICONTROL 업데이트]** 서비스.
 
-   1. 다음 항목 선택 **[!UICONTROL get]** 서비스 및 탭 **[!UICONTROL 속성 편집]**. 속성 대화 상자가 열립니다.
+   1. 다음 항목 선택 **[!UICONTROL get]** 서비스 및 선택 **[!UICONTROL 속성 편집]**. 속성 대화 상자가 열립니다.
    1. 편집 속성 대화 상자에서 다음을 지정 합니다.
 
       * **제목** : 서비스의 제목을 지정 합니다. 예: 배송 주소 검색을 참조 하십시오.
@@ -186,11 +186,11 @@ AEM [!DNL Forms] 는 다음과 같은 직관적인 사용자 인터페이스를 
       * **배열 반환**: 비활성화 **배열 반환** 옵션을 선택합니다.
       * **인수**: 다음 이름의 인수 선택 **ID**.
 
-      누르기 **[!UICONTROL 완료]**. MySQL 데이터베이스에서 고객 세부 정보를 검색하는 서비스가 구성되어 있습니다.
+      선택 **[!UICONTROL 완료]**. MySQL 데이터베이스에서 고객 세부 정보를 검색하는 서비스가 구성되어 있습니다.
 
       ![shipping-address-retrieval](assets/shiiping-address-retrieval.png)
 
-   1. 다음 항목 선택 **[!UICONTROL 업데이트]** 서비스 및 탭 **[!UICONTROL 속성 편집]**. 속성 대화 상자가 열립니다.
+   1. 다음 항목 선택 **[!UICONTROL 업데이트]** 서비스 및 선택 **[!UICONTROL 속성 편집]**. 속성 대화 상자가 열립니다.
 
    1. 다음에서 다음을 지정합니다. [!UICONTROL 속성 편집] 대화 상자:
 
@@ -207,7 +207,7 @@ AEM [!DNL Forms] 는 다음과 같은 직관적인 사용자 인터페이스를 
 
       * **인수**: 인수 이름 선택 **ID** 및 **customerdetails**.
 
-      누르기 **[!UICONTROL 완료]**. 다음 **[!UICONTROL 업데이트]** 에서 고객 세부 정보를 업데이트하는 서비스 [!DNL MySQL] 데이터베이스가 구성되었습니다.
+      선택 **[!UICONTROL 완료]**. 다음 **[!UICONTROL 업데이트]** 에서 고객 세부 정보를 업데이트하는 서비스 [!DNL MySQL] 데이터베이스가 구성되었습니다.
 
       ![shipping-address-update](assets/shiiping-address-update.png)
 
@@ -219,9 +219,9 @@ AEM [!DNL Forms] 는 다음과 같은 직관적인 사용자 인터페이스를 
 
 테스트를 실행하려면 다음을 수행하십시오.
 
-1. 로 이동 **[!UICONTROL 모델]** 탭에서 **customerdetails** 데이터 모델 개체 및 탭 **[!UICONTROL 테스트 모델 개체]**.
+1. 로 이동 **[!UICONTROL 모델]** 탭에서 **customerdetails** 데이터 모델 개체 및 선택 **[!UICONTROL 테스트 모델 개체]**.
 1. 다음에서 [!UICONTROL 테스트 모델/서비스] 창, 선택 **[!UICONTROL 모델 개체 읽기]** 다음에서 **[!UICONTROL 모델/서비스 선택]** 드롭다운.
-1. 다음에서 **customerdetails** 섹션, 다음에 대한 값 지정 **id** 가 구성된 내에 존재하는 인수 [!DNL MySQL] 데이터베이스 및 탭 **[!UICONTROL 테스트]**.
+1. 다음에서 **customerdetails** 섹션, 다음에 대한 값 지정 **id** 가 구성된 내에 존재하는 인수 [!DNL MySQL] 데이터베이스 및 선택 **[!UICONTROL 테스트]**.
 
    지정된 ID와 연결된 고객 세부 정보를 가져와서 **[!UICONTROL 출력]** 섹션에 있는 마지막 항목이 될 필요가 없습니다.
 

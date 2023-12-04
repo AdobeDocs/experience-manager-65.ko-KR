@@ -3,9 +3,9 @@ title: '자습서: 적응형 양식 만들기'
 description: 적응형 양식을 만들고, 레이아웃하고, 미리 보는 방법에 대해 알아봅니다. 또한 제출 액션을 구성하는 방법도 알아보십시오.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1313'
 ht-degree: 8%
 
 ---
@@ -35,14 +35,14 @@ ht-degree: 8%
 ## 1단계: 적응형 양식 만들기 {#step-create-the-adaptive-form}
 
 1. AEM 작성자 인스턴스에 로그인하고 다음으로 이동합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**. 기본 URL은 [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-1. 누르기 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 적응형 양식]**. 템플릿을 선택하는 옵션이 나타납니다. 탭 **[!UICONTROL 비어 있음]** 템플릿을 선택하고 탭합니다. **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 적응형 양식]**. 템플릿을 선택하는 옵션이 나타납니다. 다음 항목 선택 **[!UICONTROL 비어 있음]** 템플릿 선택 및 선택 **[!UICONTROL 다음]**.
 
 1. 다음에 대한 옵션 **[!UICONTROL 속성 추가]** 가 표시됩니다. 다음 **[!UICONTROL 제목]** 및 **[!UICONTROL 이름]** 필드는 필수입니다.
 
    * **제목:** 지정 `Add new or update shipping address` 다음에서 **[!UICONTROL 제목]** 필드. 제목 필드는 양식의 표시 이름을 지정합니다. 제목을 통해 AEM에서 양식을 식별할 수 있습니다 [!DNL Forms] 사용자 인터페이스.
    * **이름:** 지정 `shipping-address-add-update-form` 다음에서 **[!UICONTROL 이름]** 필드. 이름 필드는 양식 이름을 지정합니다. 이름이 지정된 노드가 저장소에서 만들어집니다. 제목 입력이 시작되면 이름 필드 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
 
-1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다. 적응형 양식이 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다. 누르기 **[!UICONTROL 열기]** 새 탭에서 새로 만든 양식을 엽니다. 편집할 양식이 열립니다. 또한 요구 사항에 따라 새로 만든 양식을 사용자 정의할 수 있는 사이드바가 표시됩니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 적응형 양식이 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다. 선택 **[!UICONTROL 열기]** 새 탭에서 새로 만든 양식을 엽니다. 편집할 양식이 열립니다. 또한 요구 사항에 따라 새로 만든 양식을 사용자 정의할 수 있는 사이드바가 표시됩니다.
 
    적응형 양식 작성 인터페이스 및 사용 가능한 구성 요소에 대한 자세한 내용은 [적응형 양식 작성 소개](/help/forms/using/creating-adaptive-form.md).
 
@@ -52,12 +52,12 @@ ht-degree: 8%
 
 AEM [!DNL Forms] 은 적응형 양식에 대한 정보를 표시하는 많은 구성 요소를 제공합니다. 머리글 및 바닥글 구성 요소를 사용하면 폼에 일관된 모양과 느낌을 제공할 수 있습니다. 머리글에는 일반적으로 법인의 로고, 양식의 제목 및 요약이 포함됩니다. 바닥글에는 일반적으로 저작권 정보와 다른 페이지에 대한 링크가 포함되어 있습니다.
 
-1. 누르기 ![토글 사이드 패널](assets/toggle-side-panel.png) > ![treeexpandall](assets/treeexpandall.png). 구성 요소 브라우저가 열립니다. 드래그 **[!UICONTROL 머리글]** 구성 요소 브라우저의 구성 요소를 적응형 양식으로 전환합니다.
-1. 누르기 **[!UICONTROL 로고]**. 도구 모음이 나타납니다. 누르기 ![aem_6_3_edit](assets/aem_6_3_edit.png) 도구 모음에서 를 입력합니다 **We.Retail**, 및 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 선택 ![토글 사이드 패널](assets/toggle-side-panel.png) > ![treeexpandall](assets/treeexpandall.png). 구성 요소 브라우저가 열립니다. 드래그 **[!UICONTROL 머리글]** 구성 요소 브라우저의 구성 요소를 적응형 양식으로 전환합니다.
+1. 선택 **[!UICONTROL 로고]**. 도구 모음이 나타납니다. 선택 ![aem_6_3_edit](assets/aem_6_3_edit.png) 도구 모음에서 를 입력합니다 **We.Retail**, 및 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-1. 이미지를 누릅니다. 도구 모음이 나타납니다. 누르기 ![cmppr](assets/cmppr.png). 화면 왼쪽에 속성 브라우저가 열립니다. **[!UICONTROL 찾아보기]** 로고 이미지를 업로드합니다. 누르기 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). 이미지가 헤더에 나타납니다.
+1. 이미지를 선택합니다. 도구 모음이 나타납니다. 선택 ![cmppr](assets/cmppr.png). 화면 왼쪽에 속성 브라우저가 열립니다. **[!UICONTROL 찾아보기]** 로고 이미지를 업로드합니다. 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). 이미지가 헤더에 나타납니다.
 
-   파일이 없는 경우 파일 가져오기 를 탭하여 이 문서에 사용된 로고를 다운로드할 수 있습니다.
+   파일 가져오기를 선택하여 이 문서에 사용된 로고가 없는 경우 해당 로고를 다운로드할 수 있습니다.
 
 [파일 가져오기](assets/logo.png)
 
@@ -69,7 +69,7 @@ AEM [!DNL Forms] 은 적응형 양식에 대한 정보를 표시하는 많은 �
 
 구성 요소는 적응형 양식의 기본 구성단위입니다. AEM [!DNL Forms] 은 적응형 양식에서 정보를 캡처하고 표시할 수 있는 많은 구성 요소를 제공합니다. 에서 구성 요소를 드래그할 수 있습니다. ![treeexpandall](assets/treeexpandall.png) 폼에. 사용 가능한 구성 요소 및 해당 기능에 대해 알아보려면 다음을 참조하십시오. [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md).
 
-1. 드래그 **[!UICONTROL 숫자 상자 구성 요소]** 을 클릭하여 적응형 양식에 추가합니다. 바닥글 구성 요소 앞에 놓습니다. 구성 요소의 속성 열기, 변경 **[!UICONTROL 제목]** / 구성 요소 **`Customer ID`**, 변경 **[!UICONTROL 요소 이름]** 끝 **`customer_ID`**, 활성화 **[!UICONTROL 필수 필드]** 옵션, 활성화 **[!UICONTROL HTML5 숫자 입력 유형 사용]** 옵션 및 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 드래그 **[!UICONTROL 숫자 상자 구성 요소]** 을 클릭하여 적응형 양식에 추가합니다. 바닥글 구성 요소 앞에 놓습니다. 구성 요소의 속성 열기, 변경 **[!UICONTROL 제목]** / 구성 요소 **`Customer ID`**, 변경 **[!UICONTROL 요소 이름]** 끝 **`customer_ID`**, 활성화 **[!UICONTROL 필수 필드]** 옵션, 활성화 **[!UICONTROL HTML5 숫자 입력 유형 사용]** 옵션 및 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. 세 개의 텍스트 상자 구성 요소를 적응형 양식으로 드래그합니다. 바닥글 구성 요소 앞에 배치합니다. 이러한 텍스트 상자에 대해 다음 속성을 설정합니다.:
 
    <table> 
@@ -107,7 +107,7 @@ AEM [!DNL Forms] 은 적응형 양식에 대한 정보를 표시하는 많은 �
     </tbody> 
    </table>
 
-1. 드래그 **[!UICONTROL 숫자 상자]** 구성 요소를 바닥글 구성 요소 앞에 추가합니다. 구성 요소의 속성을 열고 아래 표에 나열된 값을 설정합니다. 을 누릅니다. ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 드래그 **[!UICONTROL 숫자 상자]** 구성 요소를 바닥글 구성 요소 앞에 추가합니다. 구성 요소의 속성을 열고 아래 표에 나열된 값을 설정합니다. 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | 속성 | 값 |
    |---|---|
@@ -117,7 +117,7 @@ AEM [!DNL Forms] 은 적응형 양식에 대한 정보를 표시하는 많은 �
    | 필수 필드 | 활성화됨 |
    | 패턴 유형 표시 | 패턴 없음 |
 
-1. 드래그 **[!UICONTROL 이메일]** 구성 요소를 바닥글 구성 요소 앞에 추가합니다. 구성 요소의 속성을 열고 아래 표에 나열된 값을 설정한 다음 을 누릅니다 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 드래그 **[!UICONTROL 이메일]** 구성 요소를 바닥글 구성 요소 앞에 추가합니다. 구성 요소의 속성을 열고 아래 표에 나열된 값을 설정한 다음 를 선택합니다 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | 속성 | 값 |
    |---|---|
@@ -125,7 +125,7 @@ AEM [!DNL Forms] 은 적응형 양식에 대한 정보를 표시하는 많은 �
    | 요소 이름 | customer_Email |
    | 필수 필드 | 활성화됨 |
 
-1. 드래그 **[!UICONTROL 첨부 파일]** 구성 요소를 바닥글 구성 요소 앞에 추가합니다. 구성 요소의 속성을 열고 아래 표에 나열된 값을 설정한 다음 을 누릅니다 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 드래그 **[!UICONTROL 첨부 파일]** 구성 요소를 바닥글 구성 요소 앞에 추가합니다. 구성 요소의 속성을 열고 아래 표에 나열된 값을 설정한 다음 를 선택합니다 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -148,7 +148,7 @@ AEM [!DNL Forms] 은 적응형 양식에 대한 정보를 표시하는 많은 �
     </tbody> 
    </table>
 
-1. 드래그 **[!UICONTROL 전송 단추]** 구성 요소를 적응형 양식에 추가합니다. 바닥글 구성 요소 앞에 놓습니다. 구성 요소의 속성을 열고 요소 이름을 로 변경합니다. `address_addition_update_submit`, 탭 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). 양식의 레이아웃은 완전하며 양식은 다음과 같습니다.
+1. 드래그 **[!UICONTROL 전송 단추]** 구성 요소를 적응형 양식에 추가합니다. 바닥글 구성 요소 앞에 놓습니다. 구성 요소의 속성을 열고 요소 이름을 로 변경합니다. `address_addition_update_submit`, 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). 양식의 레이아웃은 완전하며 양식은 다음과 같습니다.
 
    ![모든 구성 요소가 포함된 적응형 양식](assets/adaptive-form-with-all-the-components.png)
 
@@ -161,8 +161,8 @@ AEM [!DNL Forms] 은 적응형 양식에 대한 정보를 표시하는 많은 �
 1. 이메일 서버를 구성합니다. 자세한 내용은 [이메일 알림 구성](/help/sites-administering/notification.md).
 
 
-1. 누르기 **[!UICONTROL 양식 컨테이너]** 콘텐츠 브라우저에서 다음을 누릅니다 ![cmppr](assets/cmppr.png). 속성 브라우저가 왼쪽에서 열립니다.
-1. 다음으로 이동 **[!UICONTROL 제출]** >  **[!UICONTROL 제출 액션]**. 선택 **[!UICONTROL 이메일 보내기]**. 다음 값을 지정하고 을 누릅니다 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. 선택 **[!UICONTROL 양식 컨테이너]** 콘텐츠 브라우저에서 다음을 선택합니다. ![cmppr](assets/cmppr.png). 속성 브라우저가 왼쪽에서 열립니다.
+1. 다음으로 이동 **[!UICONTROL 제출]** >  **[!UICONTROL 제출 액션]**. 선택 **[!UICONTROL 이메일 보내기]**. 다음 값을 지정하고 다음을 선택합니다 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | 속성 | 값 |
    |--- |--- |
@@ -180,8 +180,8 @@ AEM [!DNL Forms] 은 적응형 양식에 대한 정보를 표시하는 많은 �
 
 적응형 양식은 또한 다양한 디바이스를 위한 양식 경험을 에뮬레이션하는 옵션을 제공합니다. 예를 들어 iPhone, iPad 및 데스크톱이 있습니다. 두 가지를 모두 사용할 수 있습니다. **[!UICONTROL 미리 보기]** 및 **[!UICONTROL 에뮬레이터]** ![눈금자](assets/ruler.png) 화면 크기가 다른 장치에 대한 양식을 미리 보기 위해 서로 함께 사용하는 옵션입니다.
 
-1. 탭 **[!UICONTROL 미리 보기]** 양식 편집기 오른쪽의 옵션입니다. 양식이 미리보기 모드에서 열립니다. 자습서에서 언급된 이름을 사용한 경우 양식의 미리 보기 URL은 다음과 같습니다. [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
+1. 다음 항목 선택 **[!UICONTROL 미리 보기]** 양식 편집기 오른쪽의 옵션입니다. 양식이 미리보기 모드에서 열립니다. 자습서에서 언급된 이름을 사용한 경우 양식의 미리 보기 URL은 다음과 같습니다. [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
 1. 사용 ![눈금자](assets/ruler.png) 을 클릭하여 다양한 장치에서 양식이 어떻게 표시되는지 확인합니다.
-1. 양식의 필드를 입력한 다음 탭 **[!UICONTROL 제출]**. 양식이 제출되고 기본값으로 리디렉션됩니다. **감사합니다.** 페이지를 가리키도록 업데이트하는 중입니다. 사용자 정의 감사 페이지를 지정할 수도 있습니다. 자세한 내용은 [리디렉션 페이지 구성](/help/forms/using/configuring-redirect-page.md).
+1. 양식의 필드를 입력하고 선택 **[!UICONTROL 제출]**. 양식이 제출되고 기본값으로 리디렉션됩니다. **감사합니다.** 페이지를 가리키도록 업데이트하는 중입니다. 사용자 정의 감사 페이지를 지정할 수도 있습니다. 자세한 내용은 [리디렉션 페이지 구성](/help/forms/using/configuring-redirect-page.md).
 
 주소를 추가할 적응형 양식이 준비되었습니다. 자습서에 언급된 이름을 사용하고 AEM Forms 서버를 실행하는 컴퓨터에서 양식에 액세스한 경우에서 양식을 사용할 수 있습니다. [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 2%
+source-wordcount: '1207'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +93,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 >
 >AEM Forms을 온-프레미스 Microsoft Dynamics 서버와 통합하는 경우에만 이 절차를 사용하십시오.
 
-1. 다음 명령을 실행합니다:
+1. 다음 명령을 실행합니다.
 
    `Add-AdfsClient -ClientId "<Client-ID>" -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
@@ -117,8 +117,8 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 
 다음 **MS Dynamics OData Cloud Service(OData 서비스)** 구성은 기본 OData 구성과 함께 제공됩니다. Microsoft Dynamics 서비스와 연결하도록 구성하려면 다음을 수행하십시오.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**&#x200B;을 누르고 `global` 구성 폴더입니다.
-1. 선택 **MS Dynamics OData Cloud Service(OData 서비스)** 구성 및 탭 **[!UICONTROL 속성]**. 클라우드 서비스 구성 속성 대화 상자가 열립니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**&#x200B;을(를) 클릭하고 `global` 구성 폴더입니다.
+1. 선택 **MS Dynamics OData Cloud Service(OData 서비스)** 구성 및 선택 **[!UICONTROL 속성]**. 클라우드 서비스 구성 속성 대화 상자가 열립니다.
 
    다음에서 **인증 설정** 탭:
 

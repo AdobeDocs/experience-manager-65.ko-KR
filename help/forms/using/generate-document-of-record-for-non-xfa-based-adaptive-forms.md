@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3544'
-ht-degree: 5%
+source-wordcount: '3533'
+ht-degree: 3%
 
 ---
 
@@ -266,7 +266,7 @@ ht-degree: 5%
 
 1. AEM 작성자 인스턴스에서 **Forms > Forms 및 문서.**
 1. 양식을 선택하고 **속성 보기**.
-1. 속성 창에서 을 누릅니다. **양식 모델**.
+1. 속성 창에서 다음을 선택합니다. **양식 모델**.
 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 
    >[!NOTE]
@@ -302,8 +302,8 @@ ht-degree: 5%
 
 기록 문서 탭에 입력하는 브랜딩 정보를 현지화하려면 브라우저의 로케일이 적절하게 설정되어 있는지 확인해야 합니다. 기록 문서의 브랜딩 정보를 사용자 정의하려면 다음 단계를 완료하십시오.
 
-1. 기록 문서에서 패널(루트 패널)을 선택한 다음 을 누릅니다 ![구성](assets/configure.png).
-1. 누르기 ![도르탑](/help/forms/using/assets/dortab.png). 기록 문서 탭이 나타납니다.
+1. 기록 문서에서 패널(루트 패널)을 선택한 다음 을 선택합니다 ![구성](assets/configure.png).
+1. 선택 ![도르탑](/help/forms/using/assets/dortab.png). 기록 문서 탭이 나타납니다.
 1. 기록 문서를 렌더링하기 위한 기본 템플릿 또는 사용자 지정 템플릿을 선택합니다. 기본 템플릿을 선택하면 기록 문서의 축소판 미리 보기가 템플릿 드롭다운 아래에 나타납니다.
 
    ![브랜딩템플릿](/help/forms/using/assets/brandingtemplate.png)
@@ -315,20 +315,20 @@ ht-degree: 5%
    * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 로고 이미지를 선택하거나, 컴퓨터에서 로고 이미지를 업로드할 수 있습니다.
    * **양식 제목**
    * **머리글 텍스트**
-   * **면책 조항 레이블**
+   * **면책조항 레이블**
    * **면책조항**
    * **면책조항 텍스트**
    * **강조 색상**: 문서 또는 레코드 PDF에서 머리글 텍스트 및 구분 기호를 렌더링하는 색상입니다
    * **글꼴 모음**: 기록 문서 PDF 내 텍스트의 글꼴 패밀리
    * **확인란 및 라디오 버튼 구성 요소의 경우 선택한 값만 표시합니다**
-   * **다중 선택 값에 대한 구분 기호**
+   * **여러 개의 선택한 값에 대한 구분 기호**
    * **데이터 모델에 바인딩되지 않은 양식 개체 포함**
    * **기록 문서에서 숨겨진 필드 제외**
    * **패널 설명 숨기기**
 
    선택하는 사용자 지정 XDP 템플릿에 여러 마스터 페이지가 포함되어 있는 경우 해당 페이지에 대한 속성이 **[!UICONTROL 콘텐츠]** 의 섹션 **[!UICONTROL 기록 문서]** 탭.
 
-   ![마스터 페이지  속성](assets/master-page-properties.png)
+   ![기본 페이지 속성](assets/master-page-properties.png)
 
    마스터 페이지 속성에는 로고 이미지, 머리글 텍스트, 양식 제목, 면책조항 레이블 및 면책조항 텍스트가 포함됩니다. 적응형 양식 또는 XDP 템플릿 속성을 기록 문서에 적용할 수 있습니다. AEM Forms은 기본적으로 템플릿 속성을 기록 문서에 적용합니다. 마스터 페이지 속성에 대한 사용자 지정 값을 정의할 수도 있습니다. 기록 문서에서 여러 마스터 페이지를 적용하는 방법에 대한 자세한 내용은 [기록 문서에 여러 마스터 페이지 적용](#apply-multiple-master-pages-dor).
 
@@ -348,7 +348,7 @@ ht-degree: 5%
    </proto>
    ```
 
-1. 브랜딩 변경 사항을 저장하려면 완료를 누릅니다.
+1. 브랜딩 변경 사항을 저장하려면 완료를 선택합니다.
 
 ## 기록 문서의 패널에 대한 표 및 열 레이아웃 {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -409,12 +409,12 @@ ht-degree: 5%
 
 기록 문서에 페이지 나누기를 적용하려면
 
-1. 패널을 탭하고 을(를) 선택합니다 ![구성](/help/forms/using/assets/configure.png)
+1. 패널을 선택하고 ![구성](/help/forms/using/assets/configure.png)
 1. 확장 **[!UICONTROL 기록 문서]** 속성을 봅니다.
 
-1. 다음에서 **[!UICONTROL 쪽 매기기]** 섹션, 탭 ![폴더](/help/forms/using/assets/folder-icon.png) 다음에서 **[!UICONTROL 위치]** 필드.
-1. 누르기 **[!UICONTROL 다음 페이지 상단]** 및 탭 **[!UICONTROL 선택]**. 다음을 탭할 수도 있습니다. **[!UICONTROL 페이지 상단]**&#x200B;마스터 페이지를 선택한 다음 을 누릅니다 **[!UICONTROL 선택]** 페이지 나누기를 적용합니다.
-1. ![저장](/help/forms/using/assets/save_icon.png)을 탭하여 변경 내용을 저장합니다.
+1. 다음에서 **[!UICONTROL 쪽 매기기]** 섹션, 선택 ![폴더](/help/forms/using/assets/folder-icon.png) 다음에서 **[!UICONTROL 위치]** 필드.
+1. 선택 **[!UICONTROL 다음 페이지 상단]** 및 선택 **[!UICONTROL 선택]**. 다음을 선택할 수도 있습니다. **[!UICONTROL 페이지 상단]**&#x200B;마스터 페이지를 선택한 다음 를 선택합니다. **[!UICONTROL 선택]** 페이지 나누기를 적용합니다.
+1. 선택 ![저장](/help/forms/using/assets/save_icon.png) 속성을 저장합니다.
 
 선택한 패널이 다음 페이지로 이동합니다.
 
@@ -428,13 +428,13 @@ ht-degree: 5%
 
 두 번째 마스터 페이지 속성을 패널에 적용하고 세 번째 마스터 페이지 속성을 다음에 나오는 패널에 적용하려면 다음 단계를 실행합니다.
 
-1. 패널을 탭하여 두 번째 마스터 페이지를 적용한 다음 선택 ![구성](assets/cmppr.png).
-1. 다음에서 **[!UICONTROL 쪽 매기기]** 섹션, 탭 ![폴더](/help/forms/using/assets/folder-icon.png) 다음에서 **[!UICONTROL 위치]** 필드.
-1. 누르기 **[!UICONTROL 페이지에서]**, 두 번째 마스터 페이지를 선택하고 을 누릅니다 **[!UICONTROL 선택]**.
+1. 두 번째 마스터 페이지를 적용할 패널을 선택하고 ![구성](assets/cmppr.png).
+1. 다음에서 **[!UICONTROL 쪽 매기기]** 섹션, 선택 ![폴더](/help/forms/using/assets/folder-icon.png) 다음에서 **[!UICONTROL 위치]** 필드.
+1. 선택 **[!UICONTROL 페이지에서]**&#x200B;을 클릭하고 두 번째 마스터 페이지를 선택한 다음 을 선택합니다. **[!UICONTROL 선택]**.
 AEM Forms은 두 번째 마스터 페이지를 패널과 적응형 양식의 모든 후속 패널에 적용합니다.
-1. 다음에서 **[!UICONTROL 쪽 매기기]** 섹션, 탭 ![폴더](/help/forms/using/assets/folder-icon.png) 다음에서 **[!UICONTROL 다음 이후]** 필드.
-1. 누르기 **[!UICONTROL 페이지로 이동]**&#x200B;세 번째 마스터 페이지를 선택하고 을 누릅니다 **[!UICONTROL 선택]**.
-1. ![저장](/help/forms/using/assets/save_icon.png)을 탭하여 변경 내용을 저장합니다.
+1. 다음에서 **[!UICONTROL 쪽 매기기]** 섹션, 선택 ![폴더](/help/forms/using/assets/folder-icon.png) 다음에서 **[!UICONTROL 다음 이후]** 필드.
+1. 선택 **[!UICONTROL 페이지로 이동]**&#x200B;세 번째 마스터 페이지를 선택하고 **[!UICONTROL 선택]**.
+1. 선택 ![저장](/help/forms/using/assets/save_icon.png) 속성을 저장합니다.
 AEM Forms은 세 번째 마스터 페이지를 패널과 적응형 양식의 모든 후속 패널에 적용합니다.
 
 

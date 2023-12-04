@@ -4,9 +4,9 @@ description: We.Gov 참조 사이트 안내 문서를 참조하여 AEM Forms이 
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ We.Gov는 입양한 부모가 아이를 입양한 경우, 아이 양육비를 �
 
 ### 직접 확인 {#see-it-yourself}
 
-브라우저에서 을 엽니다. `https://<hostname>:<PublishPort>/wegov`. We.Gov 사이트에서 Applications > All Applications 를 탭합니다. 모든 응용 프로그램 페이지의 FOIA 요청에 대한 응용 프로그램 아래에서 적용 을 누릅니다.
+브라우저에서 을 엽니다. `https://<hostname>:<PublishPort>/wegov`. We.Gov 사이트에서 Applications > All Applications 를 선택합니다. 모든 응용 프로그램 페이지의 FOIA 요청에 대한 응용 프로그램 아래에서 적용을 선택합니다.
 
 ## Sarah는 FOIA에서 그녀의 정보 신청을 시작한다 {#sarah-starts-her-application-for-information-under-foia}
 
@@ -54,7 +54,7 @@ Sarah 클릭 수 **적용** 그리고 정보 자유법 요청 양식 페이지�
 
 2013~2016 회계 연도의 아동 및 가족 관리 사례 로그 사본 요청
 
-언제든지 Sarah가 을 누를 수 있습니다. **저장** 양식 초안을 저장하고 나중에 다시 돌아와 양식을 작성하고 제출합니다. Sarah가 양식을 제출합니다.
+Sarah는 언제든지 을(를) 선택할 수 있습니다. **저장** 양식 초안을 저장하고 나중에 다시 돌아와 양식을 작성하고 제출합니다. Sarah가 양식을 제출합니다.
 
 >[!NOTE]
 >

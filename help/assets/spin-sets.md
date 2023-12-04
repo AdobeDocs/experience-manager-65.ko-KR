@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '2004'
 ht-degree: 9%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 9%
 
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
-| 2D 세트당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000 |
+| 2D 세트당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000년 |
 
 참조: [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
@@ -149,9 +149,9 @@ ht-degree: 9%
 
    * [회전 집합 편집기] 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 자산 추가]**.
 
-   * 스핀 세트 편집기 페이지 가운데 있는 아래에서 **[!UICONTROL 자산 선택기를 열려면 탭하십시오.]**.
+   * 스핀 세트 편집기 페이지 가운데 있는 아래에서 **[!UICONTROL 자산 선택기를 열려면 선택하십시오.]**.
 
-   스핀 세트에 포함할 자산을 탭하여 선택합니다. Selected assets have a checkmark icon over them. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 선택]**.
+   회전 세트에 포함할 자산을 선택하려면 를 선택합니다. Selected assets have a checkmark icon over them. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 선택]**.
 
    With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. 필터를 선택한 다음 **[!UICONTROL 필터]** 아이콘을 클릭합니다. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
 

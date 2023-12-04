@@ -10,9 +10,9 @@ discoiquuid: 7c392909-ff84-4411-b44f-16f99dffac54
 docset: aem65
 feature: Form Data Model
 exl-id: 7f5978c3-6c9f-4ce4-b0fb-660ac1d49244
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '952'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -42,17 +42,17 @@ AEM Forms 데이터 통합은 양식 데이터 모델을 만들고 작업할 수
 에 설명된 대로 양식 데이터 모델에서 사용할 데이터 소스를 구성했는지 확인합니다. [데이터 소스 구성](../../forms/using/configure-data-sources.md). 구성된 데이터 소스를 기반으로 양식 데이터 모델을 만들려면 다음을 수행하십시오.
 
 1. AEM 작성자 인스턴스에서 **[!UICONTROL Forms > 데이터 통합]**.
-1. 누르기 **[!UICONTROL 만들기 > 양식 데이터 모델]**.
+1. 선택 **[!UICONTROL 만들기 > 양식 데이터 모델]**.
 1. 양식 데이터 모델 만들기 대화 상자에서
 
    * 양식 데이터 모델의 이름을 지정합니다.
    * (**선택 사항**) 양식 데이터 모델의 제목, 설명 및 태그를 지정합니다.
-   * (**선택 사항이며 데이터 소스가 구성된 경우에만 적용할 수 있습니다**) 옆에 있는 확인 표시 아이콘을 누릅니다. **[!UICONTROL 데이터 소스 구성]** 필드 를 선택하고 사용할 데이터 소스에 대한 클라우드 서비스가 있는 구성 노드를 선택합니다. 다음 페이지에서 선택할 수 있는 데이터 소스 목록을 선택한 구성 노드에서 사용할 수 있는 데이터 소스로 제한합니다. 그러나 기본적으로 모든 JDBC 데이터베이스 및 AEM 사용자 프로필 데이터 소스가 나열됩니다. 구성 노드를 선택하지 않으면 모든 구성 노드의 데이터 소스가 나열됩니다.
+   * (**선택 사항이며 데이터 소스가 구성된 경우에만 적용할 수 있습니다**) 옆에 있는 확인 표시 아이콘을 선택합니다. **[!UICONTROL 데이터 소스 구성]** 필드 를 선택하고 사용할 데이터 소스에 대한 클라우드 서비스가 있는 구성 노드를 선택합니다. 다음 페이지에서 선택할 수 있는 데이터 소스 목록을 선택한 구성 노드에서 사용할 수 있는 데이터 소스로 제한합니다. 그러나 기본적으로 모든 JDBC 데이터베이스 및 AEM 사용자 프로필 데이터 소스가 나열됩니다. 구성 노드를 선택하지 않으면 모든 구성 노드의 데이터 소스가 나열됩니다.
 
-   누르기 **[!UICONTROL 다음]**.
+   **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
 1. (**데이터 소스가 구성된 경우에만 적용 가능**) **[!UICONTROL 데이터 소스 선택]** 화면에 사용 가능한 데이터 소스(있는 경우)가 나열됩니다. 양식 데이터 모델에서 사용할 데이터 소스를 선택합니다.
-1. 누르기 **[!UICONTROL 만들기]** 확인 대화 상자에서 다음을 누릅니다. **[!UICONTROL 열기]** 양식 데이터 모델 편집기를 엽니다.
+1. 선택 **[!UICONTROL 만들기]** 확인 대화 상자에서 **[!UICONTROL 열기]** 양식 데이터 모델 편집기를 엽니다.
 
 양식 데이터 모델 편집기 UI의 다양한 구성 요소를 검토해 보겠습니다.
 
@@ -76,12 +76,12 @@ AEM Forms 데이터 통합은 양식 데이터 모델을 만들고 작업할 수
 
 기존 양식 데이터 모델에 데이터 소스를 추가하거나 업데이트하려면 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL Forms > 데이터 통합]**, 데이터 소스를 추가하거나 업데이트할 양식 데이터 모델을 선택한 다음 를 누릅니다 **[!UICONTROL 속성]**.
+1. 다음으로 이동 **[!UICONTROL Forms > 데이터 통합]**&#x200B;데이터 소스를 추가하거나 업데이트할 양식 데이터 모델을 선택한 다음 를 선택합니다 **[!UICONTROL 속성]**.
 1. 양식 데이터 모델 속성에서 **[!UICONTROL 소스 업데이트]** 탭.
 
    소스 업데이트 탭에서:
 
-   * 에서 찾아보기 아이콘을 탭합니다. **[!UICONTROL 컨텍스트 인식 구성]** 필드를 지정하고 추가하려는 데이터 소스에 대한 클라우드 구성이 있는 구성 노드를 선택합니다. 노드를 선택하지 않으면 클라우드 구성은 `global` 을 탭하면 노드가 나열됩니다. **[!UICONTROL 소스 추가]**.
+   * 에서 찾아보기 아이콘 선택 **[!UICONTROL 컨텍스트 인식 구성]** 필드를 지정하고 추가하려는 데이터 소스에 대한 클라우드 구성이 있는 구성 노드를 선택합니다. 노드를 선택하지 않으면 클라우드 구성은 `global` 를 선택하면 노드가 나열됩니다. **[!UICONTROL 소스 추가]**.
 
    * 새 데이터 소스를 추가하려면 **[!UICONTROL 소스 추가]** 및 양식 데이터 모델에 추가할 데이터 소스를 선택합니다. 모든 데이터 소스가에 구성됨 `global` 선택한 구성 노드가 있으면 표시됩니다.
 
@@ -90,7 +90,7 @@ AEM Forms 데이터 통합은 양식 데이터 모델을 만들고 작업할 수
 
    ![fdm-properties](assets/fdm-properties.png)
 
-1. 누르기 **[!UICONTROL 저장 및 닫기]** 업데이트를 저장합니다.
+1. 선택 **[!UICONTROL 저장 및 닫기]** 업데이트를 저장합니다.
 
 >[!NOTE]
 >

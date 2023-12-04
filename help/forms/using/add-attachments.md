@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## AEM Forms 워크플로 서버(JEE의 AEM Forms)와 동기화된 양식에서 첨부 파일 추가 {#adding-annotations}
 
-AEM Forms 앱을 사용하면 AEM Forms JEE 서버와 동기화된 양식에 이미지, 스크리블 메모, 텍스트 메모를 첨부할 수 있습니다. 양식이 AEM Forms Workflow 서버에서 로드되면 첨부 파일이 양식에 추가됩니다. 첨부 파일 버튼을 탭할 수 있습니다. ![attachments-app](assets/attachments-app.png) 양식의 모든 첨부 파일을 함께 봅니다. 빨간색 알림은 양식의 첨부 파일 수를 지정합니다. 양식에 첨부 파일이 없으면 빨간색 알림 버튼이 표시되지 않습니다. 양식에 첨부 파일이 없는 경우 첨부 파일 버튼을 누를 때 ![공격](assets/attch.png)사진 또는 낙서를 첨부할 수 있는 옵션이 제공됩니다.
+AEM Forms 앱을 사용하면 AEM Forms JEE 서버와 동기화된 양식에 이미지, 스크리블 메모, 텍스트 메모를 첨부할 수 있습니다. 양식이 AEM Forms Workflow 서버에서 로드되면 첨부 파일이 양식에 추가됩니다. 첨부 버튼을 선택할 수 있습니다. ![attachments-app](assets/attachments-app.png) 양식의 모든 첨부 파일을 함께 봅니다. 빨간색 알림은 양식의 첨부 파일 수를 지정합니다. 양식에 첨부 파일이 없으면 빨간색 알림 버튼이 표시되지 않습니다. 양식에 첨부 파일이 없는 경우 첨부 단추를 선택합니다. ![공격](assets/attch.png)사진 또는 낙서를 첨부할 수 있는 옵션이 제공됩니다.
 
 옵션은 다음과 같습니다.
 
@@ -34,7 +34,7 @@ AEM Forms 앱을 사용하면 AEM Forms JEE 서버와 동기화된 양식에 이
 
 ### 첨부 파일 화면 {#the-attachments-screen}
 
-한 곳에 있는 모든 첨부 파일을 보려면 ![attachments-app](assets/attachments-app.png). 여기에서 첨부 파일을 추가, 이름 변경 및 삭제할 수 있습니다.
+위치에 있는 모든 첨부 파일을 보려면 ![attachments-app](assets/attachments-app.png). 여기에서 첨부 파일을 추가, 이름 변경 및 삭제할 수 있습니다.
 
 ![한 위치의 모든 첨부 파일](assets/attachments-screen.png)
 
@@ -44,26 +44,26 @@ AEM Forms 앱을 사용하면 AEM Forms JEE 서버와 동기화된 양식에 이
 
 모바일 장치의 카메라나 장치에 저장된 사진을 사용하여 양식에 사진을 첨부할 수 있습니다.
 
-1. 첨부 파일 단추 탭 ![공격](assets/attch.png) 창 아래에요.
-1. 누르기 **갤러리** 또는 **카메라** 표시되는 팝업에 포함될 수 있습니다.
+1. 첨부 파일 단추 선택 ![공격](assets/attch.png) 창 아래에요.
+1. 선택 **갤러리** 또는 **카메라** 표시되는 팝업에 포함될 수 있습니다.
 1. 선택한 옵션에 따라 다음을 수행합니다.
 
    1. 다음을 선택하는 경우 **카메라**.
 
-      사진 찍어요 그런 다음 을 누릅니다. **사용** ![use-pic](assets/use-pic.png) 단추를 클릭합니다.
+      사진 찍어요 그런 다음 를 선택합니다. **사용** ![use-pic](assets/use-pic.png) 단추를 클릭합니다.
 
-      또는 을 누릅니다 **재촬영** ![재촬영](assets/retake.png) 단추를 클릭하여 사진을 다시 찍습니다.
+      또는 **재촬영** ![재촬영](assets/retake.png) 단추를 클릭하여 사진을 다시 찍습니다.
 
    1. 다음을 선택하는 경우 **갤러리**.
 
-      장치의 이미지 브라우저 팝업이 표시됩니다. 장치의 그림 브라우저에서 첨부할 그림을 탭합니다.
+      장치의 이미지 브라우저 팝업이 표시됩니다. 장치의 그림 브라우저에서 첨부할 그림을 선택합니다.
 
 ### 메모 추가 {#adding-a-note}
 
 다음 **메모** 옵션을 사용하면 양식에 자유 형식 스크리블 및 텍스트 첨부 파일을 추가할 수 있습니다.
 
-1. 첨부 파일 단추 탭 ![공격](assets/attch.png) 창 아래에요.
-1. 누르기 **메모** 표시되는 팝업에 포함될 수 있습니다.
+1. 첨부 파일 단추 선택 ![공격](assets/attch.png) 창 아래에요.
+1. 선택 **메모** 표시되는 팝업에 포함될 수 있습니다.
 1. 실행된 Notes 사용자 인터페이스에서 자유 형식의 스크리블 을 캡처합니다.
 
    ![낙서 인터페이스](assets/scribble-ui.png)

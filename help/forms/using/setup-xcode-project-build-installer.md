@@ -10,10 +10,10 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 exl-id: 78ce6107-8821-47d6-86ab-7ab968945e7c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 6%
+source-wordcount: '773'
+ht-degree: 3%
 
 ---
 
@@ -24,12 +24,12 @@ AEM Forms은 AEM Forms 앱의 전체 소스 코드를 제공합니다. 소스에
 AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
 1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID가 필요합니다.
-1. 헤더 메뉴에 제공된 **[!UICONTROL Adobe Experience Manager]**&#x200B;를 누릅니다.
+1. 선택 **[!UICONTROL Adobe Experience Manager]** 헤더 메뉴에서 사용할 수 있습니다.
 1. 다음에서 **[!UICONTROL 필터]** 섹션:
    1. 선택 **[!UICONTROL Forms]** 다음에서 **[!UICONTROL 솔루션]** 드롭다운 목록입니다.
    2. 패키지의 버전 및 유형을 선택합니다. 다음을 사용할 수도 있습니다 **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수 있습니다.
-1. 운영 체제에 적용할 수 있는 패키지 이름을 탭하고 다음을 선택합니다. **[!UICONTROL EULA 약관 동의]**, 및 탭 **[!UICONTROL 다운로드]**.
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**, 및 선택 **[!UICONTROL 다운로드]**.
+1. 열기 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  및 클릭 **[!UICONTROL 패키지 업로드]** 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
 1. 소스 코드 아카이브를 다운로드하려면 를 엽니다. `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` 을 클릭합니다.
@@ -45,7 +45,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
  <tbody>
   <tr>
    <th><p>디렉토리</p> </th>
-   <th><p>콘텐츠</p> </th>
+   <th><p>컨텐트</p> </th>
   </tr>
   <tr>
    <td><p><code>CordovaLib</code></p> </td>
@@ -78,7 +78,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. 에서 아카이브 추출 `[User_Home]/Projects/[your-project]`디렉토리.
 1. 다음 위치로 이동 ` [User_Home]/Projects/ `[your-project]`/adobe-lc-mobileworkspace-src-[version]/ios` 디렉토리.
 1. 를 엽니다. `AEM Forms.xcodeproj` xcode의 프로젝트입니다.
-1. 클릭 **AEM Forms**, 아래 **TARGET**, 선택 **AEM Forms**. 다음 항목 선택 **빌드 설정** 탭에서 다음을 찾습니다. **코드 서명 권한** 섹션으로 이동하여 디버그 및 릴리스 필드에서 다음 중 하나를 수행합니다.
+1. 클릭 **AEM Forms**, 아래 **타겟**, 선택 **AEM Forms**. 다음 항목 선택 **빌드 설정** 탭에서 다음을 찾습니다. **코드 서명 권한** 섹션으로 이동하여 디버그 및 릴리스 필드에서 다음 중 하나를 수행합니다.
 
    * 표준 모바일 작업 영역 앱을 빌드하려면 필드를 지정하지 마십시오
    * 에 설명된 대로 필드를에 지정합니다. [iOS용 보안 AEM Forms 앱 구축](/help/forms/using/building-secure-mobile-workspace-app.md) 보안 AEM Forms 앱을 빌드합니다.

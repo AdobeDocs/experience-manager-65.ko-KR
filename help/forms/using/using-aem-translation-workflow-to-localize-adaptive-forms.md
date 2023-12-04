@@ -10,16 +10,16 @@ discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
 feature: Adaptive Forms
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 14%
+source-wordcount: '802'
+ht-degree: 20%
 
 ---
 
 # AEM 번역 워크플로를 사용하여 적응형 양식 및 기록 문서 현지화 {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 현지화된 양식을 통해 전 세계 다양한 지역의 대상자를 지원할 수 있습니다. Adobe Experience Manager 번역 워크플로를 통해 적응형 양식 및 해당 기록 문서 를 현지화할 수 있습니다. 다음을 사용할 수 있습니다. **기계 번역** 또는 **사람 번역가** 을 클릭하여 적응형 양식을 현지화합니다.
 
@@ -32,7 +32,7 @@ ht-degree: 14%
 1. AEM Forms UI에서 양식을 선택하고 **사전 추가** 옵션을 선택합니다.
 1. 위치 **사전을 번역 프로젝트에 추가** 화면에서 **새 번역 프로젝트 만들기** 또는 **기존 번역 프로젝트에 추가** 옵션을 선택합니다.
 1. 다음에서 **프로젝트 제목** 필드, 제목을 지정합니다. 예, `Government Reference Site - German locale.`
-1. 다음에서 **Target 언어** 필드, 로케일 지정(예: `German(de)`), 클릭 **완료**. 여러 로케일을 지정할 수 있습니다. 양식이 다음에 지정된 모든 로케일로 변환됩니다. **Target 언어** 필드.
+1. 다음에서 **타겟 언어** 필드, 로케일 지정(예: `German(de)`), 클릭 **완료**. 여러 로케일을 지정할 수 있습니다. 양식이 다음에 지정된 모든 로케일로 변환됩니다. **타겟 언어** 필드.
 1. Dictionary Added 대화 상자에서 **프로젝트 열기**. 프로젝트 화면에서 새로 만든 프로젝트를 엽니다.
 1. 다음을 클릭합니다. **생략 부호** 의 맨 아래에 **번역 요약** 타일. 번역 요약 화면이 열립니다.
 1. 다음을 클릭합니다. **편집** 아이콘(맨 위에 있음) **번역 요약** 화면. 를 엽니다. **번역** 을(를) 탭하고 **번역 방법** 화면. 적절한 항목 선택 **번역 공급업체** 및 **클라우드 구성**. 다음을 클릭합니다. **완료** 화면 맨 위에 있는 아이콘.
@@ -53,7 +53,7 @@ ht-degree: 14%
 [기록 문서 설정](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [기록 문서의 브랜딩 정보 사용자 정의](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) 및 브라우저 로케일이 시스템 언어를 사용하여 적응형 양식을 지역화한 것과 동일한 언어로 설정되어 있는지 확인합니다. 브라우저 로케일은 기록 문서의 브랜딩 정보를 현지화하는 데 도움이 됩니다.
-1. 현지화된 기록 문서를 보려면 미리보기 생성 을 탭합니다. 기록 문서 PDF이 생성되고 브라우저의 새 탭에서 열립니다.
+1. 현지화된 기록 문서를 보려면 미리보기 생성을 선택합니다. 기록 문서 PDF이 생성되고 브라우저의 새 탭에서 열립니다.
 
 ## 사람 번역을 사용하여 적응형 양식 및 해당 기록 문서 현지화 {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 
