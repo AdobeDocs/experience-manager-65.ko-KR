@@ -4,10 +4,10 @@ description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 만들고,
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 03ed3606e89d87bf2f95b56a1eeb6b7dc4bec13a
 workflow-type: tm+mt
-source-wordcount: '5512'
-ht-degree: 2%
+source-wordcount: '5521'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ AEM Forms은 다양한 문서 수준 작업을 수행하기 위한 일련의 OSG
 
   서명 서비스는 신뢰 저장소에 저장된 인증서 및 자격 증명에 액세스합니다. 자세한 내용은 [서명 서비스](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms은 강력한 엔터프라이즈급 플랫폼이며 문서 서비스는 AEM Forms의 기능 중 하나에 불과합니다. 전체 기능 목록은 다음을 참조하십시오. [AEM Forms 소개](/help/forms/using/introduction-aem-forms.md).
+AEM Forms은 강력한 엔터프라이즈급 플랫폼이며 문서 서비스는 AEM Forms의 기능 중 하나일 뿐입니다. 전체 기능 목록은 다음을 참조하십시오. [AEM Forms 소개](/help/forms/using/introduction-aem-forms.md).
 
 ## 배포 토폴로지 {#deployment-topology}
 
@@ -370,7 +370,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
    1. 선택 **[!UICONTROL Forms]** 다음에서 **[!UICONTROL 솔루션]** 드롭다운 목록입니다.
    2. 패키지의 버전 및 유형을 선택합니다. 다음을 사용할 수도 있습니다 **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수 있습니다.
 1. 운영 체제에 적용할 수 있는 패키지 이름을 탭하고 다음을 선택합니다. **[!UICONTROL EULA 약관 동의]**, 및 탭 **[!UICONTROL 다운로드]**.
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. 열기 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  및 클릭 **[!UICONTROL 패키지 업로드]** 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
    에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다. [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 기사.
@@ -669,6 +669,10 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 +++
 
++++Microsoft Office 2019가 Microsoft Windows Server 2019에서 실행되고 있지 않음
+
+* AEM 서버와의 활성 원격 연결이 없는지 확인합니다.
+
 +++HTML-PDF 전환 문제
 
 * PDF Generator 구성 UI에 글꼴 디렉터리가 추가되었는지 확인합니다.
@@ -712,7 +716,7 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
       ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
       ```
 
-      with
+      포함
 
       ```
       ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
@@ -789,6 +793,21 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 문제를 해결하려면 다음을 참조하십시오. [Windows Server에서 Word 또는 Excel 파일을 PDF으로 변환할 수 없음](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
++++ Windows Server 2019에서 Excel 파일을 PDF으로 변환할 수 없습니다.
+
+Microsoft Excel 2019를 Microsoft Windows Server 2019에서 PDF으로 변환할 때 다음을 확인해야 합니다.
+
+* PDF Generator 서비스를 사용하는 동안 Windows 컴퓨터에 AEM 서버(Windows RDP 세션)와 활성 원격 연결이 없어야 합니다.
+* 기본 프린터를 Adobe PDF으로 설정해야 합니다.
+
+>[!NOTE]
+* Apple macOS 및 Ubuntu OS의 경우, 위의 설정을 구성할 필요가 없습니다.
+
++++ XPS 파일을 PDF으로 변환할 수 없음
+
+문제를 해결하려면 [windows에서 기능별 레지스트리 키 만들기](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+
++++
 
 ## 다음 단계 {#next-steps}
 
