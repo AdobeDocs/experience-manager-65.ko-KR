@@ -7,10 +7,10 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8c0c2d89fca7a5ba1a834108ae54fed524b3cbab
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 13%
+source-wordcount: '1604'
+ht-degree: 6%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 13%
 >[!NOTE]
 >
 >이 기능은 Managed Services 고객에게만 Adobe을 제공할 수 있습니다.
-
->[!NOTE]
->
->Adobe Experience Manager(AEM)는 현재 프로필에 그룹을 할당할 수 없습니다. 대신 사용자를 개별적으로 추가해야 합니다.
 
 ## 소개 {#introduction}
 
