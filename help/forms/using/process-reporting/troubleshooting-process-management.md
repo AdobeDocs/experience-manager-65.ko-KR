@@ -1,17 +1,13 @@
 ---
 title: 프로세스 보고 문제 해결
-seo-title: Troubleshooting Process Reporting
 description: JEE 프로세스 보고에서 AEM Forms 문제 해결
-seo-description: Troubleshoot issues in AEM Forms on JEE Process Reporting
 page-status-flag: de-activated
-uuid: 1c1cc27c-fbed-4366-bffe-e1581d269a93
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0a818d19-8804-4c69-b721-31c347c593c0
 exl-id: 165d4c69-d7ca-45f8-a9de-764cb8ecab7e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
@@ -27,7 +23,7 @@ ht-degree: 0%
 * 조건 필드가 표시되지 않습니다.
 * 값 필드의 Calendar 컨트롤은 표시되지 않습니다.
 
-### 해결 {#resolution}
+### 해결 방법 {#resolution}
 
 프로세스 보고에 여전히 로그인되어 있습니다.
 

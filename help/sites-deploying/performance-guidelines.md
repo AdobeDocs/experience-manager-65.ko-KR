@@ -1,20 +1,16 @@
 ---
 title: 성능 지침
-seo-title: Performance Guidelines
 description: 이 문서에서는 AEM 배포 성능을 최적화하는 방법에 대한 일반 지침을 제공합니다.
-seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
-uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2914'
-ht-degree: 6%
+source-wordcount: '2935'
+ht-degree: 5%
 
 ---
 
@@ -40,7 +36,7 @@ ht-degree: 6%
    <td><p><strong>보안</strong></p> </td>
    <td><p><strong>마이크로 커널</strong></p> </td>
    <td><p><strong>데이터 저장소</strong></p> </td>
-   <td><p><strong>색인 생성</strong></p> </td>
+   <td><p><strong>색인화</strong></p> </td>
    <td><p><strong>웹 서버</strong></p> </td>
    <td><p><strong>브라우저</strong></p> </td>
    <td><p><strong>Experience Cloud</strong></p> </td>
@@ -431,7 +427,7 @@ TarMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처�
 
 ### TarMK 설정 지침 {#tarmk-settings-guideline}
 
-성능을 향상시키려면 아래 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지 보기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko-KR).
+성능을 향상시키려면 아래 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지 보기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 <table>
  <tbody>
@@ -541,7 +537,7 @@ MongoMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처
 
 ### MongoMK 설정 지침 {#mongomk-settings-guidelines}
 
-성능을 향상시키려면 아래 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지 보기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko-KR).
+성능을 향상시키려면 아래 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지 보기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 <table>
  <tbody>
@@ -584,7 +580,7 @@ MongoMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처
   <tr>
    <td>DocumentNodeStoreService</td>
    <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td>
-   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
+   <td><p>2048</p> <p>35 (25)</p> <p>20(10)</p> <p>30조(5)</p> <p>10조(3)</p> <p>4 (4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
    <td><p>캐시의 기본 크기는 256MB로 설정됩니다.</p> <p>캐시 무효화를 수행하는 데 걸리는 시간에 영향을 줍니다.</p> </td>
   </tr>
   <tr>

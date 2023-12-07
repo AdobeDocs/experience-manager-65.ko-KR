@@ -1,20 +1,16 @@
 ---
 title: 제출된 Forms 처리
-seo-title: Handling Submitted Forms
 description: Forms 서비스를 사용하여 대화형 양식으로 입력된 제출된 데이터를 검색합니다. 사용자는 양식 데이터를 XML, PDF 및 URL UTF-16 형식으로 제출할 수 있습니다.
-seo-description: Use the Forms service to retrieve the submitted data entered in an interactive form. The user can submit the form data in XML, PDF, and URL UTF-16 formats.
-uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '2894'
 ht-degree: 0%
 
 ---
@@ -70,7 +66,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->데이터를 XML 데이터로 제출하려면 디자이너에서 양식 디자인을 올바르게 구성해야 합니다. XML 데이터를 제출하도록 양식 디자인을 제대로 구성하려면 양식 디자인에 있는 제출 단추가 XML 데이터를 제출하도록 설정되어 있는지 확인하십시오. XML 데이터를 제출하기 위한 제출 단추 설정에 대한 자세한 내용은 [AEM Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63_kr).
+>데이터를 XML 데이터로 제출하려면 디자이너에서 양식 디자인을 올바르게 구성해야 합니다. XML 데이터를 제출하도록 양식 디자인을 제대로 구성하려면 양식 디자인에 있는 제출 단추가 XML 데이터를 제출하도록 설정되어 있는지 확인하십시오. XML 데이터를 제출하기 위한 제출 단추 설정에 대한 자세한 내용은 [AEM Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## 제출된 PDF 데이터 처리 {#handling-submitted-pdf-data}
 

@@ -1,13 +1,11 @@
 ---
 title: iOS용 보안 AEM Forms 앱 구축
 description: Xcode 프로젝트를 보관하여 iOS용 보안 AEM Forms 앱을 빌드하는 방법에 대해 알아봅니다. 이렇게 하면 설치 관리자(.ipa 파일) 및 속성 목록(.plist 파일) 파일이 만들어집니다.
-uuid: 6c4b160f-4d0c-4976-9609-9196795b6c8e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 exl-id: 12cc2027-ae94-40c3-a7d1-553469426114
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%

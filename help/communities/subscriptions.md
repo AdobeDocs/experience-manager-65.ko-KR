@@ -1,17 +1,13 @@
 ---
 title: 커뮤니티 구독
-seo-title: Communities Subscriptions
 description: 커뮤니티 구성원은 이메일을 통해 다른 구성원과 상호 작용합니다
-seo-description: Community members interact with other members through email
-uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -36,7 +32,7 @@ ht-degree: 1%
 
 **이메일 구성**
 
-구독이 제대로 작동하고 회원이 이메일로 답장하려면 이메일을 구성해야 합니다.
+구독이 제대로 작동하고 회원이 이메일로 답장을 보내려면 이메일을 구성해야 합니다.
 
 이메일 설정에 대한 지침은 [이메일 구성](email.md).
 

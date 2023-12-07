@@ -1,20 +1,16 @@
 ---
 title: AEM Forms 소개
-seo-title: Introduction to AEM Forms
 description: Adobe Experience Manager Forms을 통해 비즈니스 사용자는 매력적인 반응형 적응형 양식을 웹 및 모바일 사이트에 통합하여 디지털 등록 프로세스를 간소화하고 고객 전환율을 높일 수 있습니다.
-seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
-uuid: a6564997-4227-4d5d-b27d-47a55a386238
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
-discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: f8f82ad5805095f331432471b614225f761e645c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 15%
+source-wordcount: '952'
+ht-degree: 12%
 
 ---
 
@@ -33,7 +29,7 @@ Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및
 
 AEM Forms은 양식 작성, 관리 및 게시와 서신 관리 기능, 문서 보안 및 통합 분석을 결합하여 매력적인 종단 간 경험을 만듭니다. 웹 및 모바일 채널에서 작동하도록 설계된 AEM Forms은 비즈니스 프로세스에 효율적으로 통합되어 종이 프로세스와 오류를 줄이고 효율성을 향상시킬 수 있습니다.
 
-대기업에서는 양식을 한 번 만든 다음 콘텐츠 관리 시스템에 복사하여 재사용하는 경우가 많습니다. 양식의 대규모 데이터베이스를 최신 상태로 유지하고 이를 검색 가능하게 만드는 것은 상당한 도전이 될 수 있습니다. AEM은 고객이 웹 및 모바일 채널 모두에서 필요한 양식을 찾고 액세스할 수 있도록 사용자 정의 가능한 양식 포털을 제공합니다.
+대기업에서는 양식을 한 번 만든 다음 콘텐츠 관리 시스템에 복사하여 재사용하는 경우가 많습니다. 양식의 대규모 데이터베이스를 최신 상태로 유지하고 이를 검색 가능하게 만드는 것은 상당한 도전이 될 수 있습니다. AEM은 고객이 웹 채널과 모바일 채널 모두에서 필요한 양식을 찾고 액세스할 수 있도록 사용자 정의 가능한 Forms 포털을 제공합니다.
 
 AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 에셋도 관리할 수 있는 양식 관리 도구를 제공합니다. 자세한 내용은 [양식 관리 소개](../../forms/using/introduction-managing-forms.md).
 

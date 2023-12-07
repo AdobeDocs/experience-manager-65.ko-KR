@@ -1,29 +1,25 @@
 ---
 title: 적응형 양식 필드 미리 채우기
-seo-title: Prefill adaptive form fields
 description: 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채웁니다.
-seo-description: With adaptive forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-uuid: 574de83a-7b5b-4a1f-ad37-b9717e5c14f1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 1%
+source-wordcount: '2203'
+ht-degree: 3%
 
 ---
 
 # 적응형 양식 필드 미리 채우기{#prefill-adaptive-form-fields}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html) |
 | AEM 6.5 | 이 문서 |
 
 ## 소개 {#introduction}
@@ -32,7 +28,7 @@ ht-degree: 1%
 
 ## 미리 채우기 데이터 구조 {#the-prefill-structure}
 
-적응형 양식에는 바인딩된 필드와 바인딩되지 않은 필드가 혼합되어 있을 수 있습니다. 바인딩된 필드는 콘텐츠 파인더 탭에서 드래그하고 비어 있지 않은 필드를 포함합니다 `bindRef` 필드 편집 대화 상자의 속성 값입니다. 바인딩되지 않은 필드는 Sidekick의 구성 요소 브라우저에서 직접 드래그되며 비어 있음 `bindRef` 값.
+적응형 양식에는 바인딩된 필드와 바인딩되지 않은 필드가 혼합되어 있을 수 있습니다. 바인딩된 필드는 콘텐츠 파인더 탭에서 드래그하고 비어 있지 않은 필드를 포함합니다 `bindRef` 필드 편집 대화 상자의 속성 값입니다. 바인딩되지 않은 필드는 Sidekick의 구성 요소 브라우저에서 직접 드래그되며 비어 있습니다. `bindRef` 값.
 
 적응형 양식의 바인딩된 필드와 바인딩되지 않은 필드를 모두 미리 채울 수 있습니다. 미리 채우기 데이터에는 적응형 양식의 바인딩된 필드와 바인딩되지 않은 필드를 모두 미리 채우는 afBoundData 섹션과 afUnBoundData 섹션이 포함됩니다. 다음 `afBoundData` 섹션에는 바인딩된 필드 및 패널의 미리 채우기 데이터가 포함됩니다. 이 데이터는 연결된 양식 모델 스키마와 호환되어야 합니다.
 
@@ -99,7 +95,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 ### XML 스키마 기반 적응형 양식  {#xml-schema-af}
 
-XML 스키마를 기반으로 하는 적응형 양식을 위한 미리 채우기 XML 및 제출된 XML의 구조는 다음과 같습니다.
+XML 스키마를 기반으로 하는 적응형 양식에 대해 사전 작성된 XML 및 제출된 XML의 구조는 다음과 같습니다.
 
 * **XML 구조 미리 채우기**: 미리 채우기 XML이 연결된 XML 스키마를 준수해야 합니다. 바인딩되지 않은 필드를 미리 채우려면 미리 채우기 XML 구조를 /afData/afBoundData 태그로 래핑합니다.
 * **제출된 XML 구조**: 미리 채우기 XML을 사용하지 않으면 제출된 XML에 의 바인딩된 필드와 바인딩되지 않은 필드 모두에 대한 데이터가 포함됩니다. `afData` 래퍼 태그입니다. 미리 채우기 XML을 사용하는 경우 제출된 XML의 구조는 미리 채우기 XML과 동일합니다. 미리 채우기 XML이 `afData` 루트 태그입니다. 출력 XML의 형식은 동일합니다. 미리 채우기 XML에 `afData/afBoundData` 래퍼 및 대신 와 같은 스키마 루트 태그에서 직접 시작합니다. `employeeData`로 시작하는 경우 제출된 XML도 `employeeData` 태그에 가깝게 배치하십시오.

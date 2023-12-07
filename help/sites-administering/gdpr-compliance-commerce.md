@@ -1,16 +1,12 @@
 ---
 title: AEM Commerce - GDPR 준비 완료
-seo-title: AEM Commerce - GDPR Readiness
 description: AEM Commerce에서 GDPR 요청을 처리하는 절차와 이를 사용하는 방법에 대해 알아봅니다.
-seo-description: null
-uuid: 7ca26587-8cce-4c75-8629-e0e5cfb8166c
 contentOwner: carlino
-discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 9%
+source-wordcount: '304'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +16,7 @@ ht-degree: 9%
 >
 >아래 섹션에서는 GDPR이 예로 사용되지만, 포함된 세부 사항은 GDPR 및 CCPA와 같은 모든 데이터 보호 및 개인 정보 보호 규정에 적용됩니다.
 
-데이터 사생활 보호권에 관한 유럽 연합의 GDPR(일반 데이터 보호 규정)은 2018년 5월에 발효됩니다. 다음을 참조하십시오. [Adobe 개인 정보 보호 센터의 GDPR 페이지](https://business.adobe.com/privacy/general-data-protection-regulation.html).
+데이터 개인정보 보호권에 관한 유럽 연합의 일반 데이터 보호 규정은 2018년 5월부터 시행됩니다. 다음을 참조하십시오. [Adobe 개인 정보 보호 센터의 GDPR 페이지](https://business.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >

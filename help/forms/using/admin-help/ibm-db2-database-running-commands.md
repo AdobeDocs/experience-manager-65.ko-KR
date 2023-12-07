@@ -1,18 +1,14 @@
 ---
 title: "IBM DB2 데이터베이스: 정기 유지 관리를 위한 명령 실행"
-seo-title: "IBM DB2 database: Running commands for regular maintenance"
 description: 이 문서에서는 AEM Forms 데이터베이스의 정기적인 유지 관리에 권장되는 IBM DB2 명령을 나열합니다.
-seo-description: This document lists IBM DB2 commands that are recommended for regular maintenance of your AEM forms database.
-uuid: 235d59df-b9b9-4770-8b7d-00713701c3c2
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
 exl-id: 7a4281e7-1544-473a-a471-e9a4c2819a58
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -25,7 +21,7 @@ AEM Forms 데이터베이스를 정기적으로 유지 관리하려면 다음 IB
 * **db2rbind:** 이 명령은 데이터베이스의 모든 패키지를 다시 바인딩합니다. 를 실행한 후 이 명령 사용 `runstats` 데이터베이스의 모든 패키지를 다시 확인하는 유틸리티입니다.
 * **재구성 테이블 또는 색인:** 이 명령은 일부 테이블 및 색인의 재구성이 필요한지 여부를 확인합니다.
 
-   데이터베이스가 증가하고 변경될 때 테이블 통계를 다시 계산하는 것은 데이터베이스 성능을 향상시키는 데 매우 중요하며 정기적으로 수행해야 합니다. 이러한 명령은 스크립트를 사용하거나 cron 작업을 사용하여 수동으로 실행할 수 있습니다.
+  데이터베이스가 증가하고 변경될 때 테이블 통계를 다시 계산하는 것은 데이터베이스 성능을 향상시키는 데 매우 중요하며 정기적으로 수행해야 합니다. 이러한 명령은 스크립트를 사용하거나 cron 작업을 사용하여 수동으로 실행할 수 있습니다.
 
 >[!NOTE]
 >

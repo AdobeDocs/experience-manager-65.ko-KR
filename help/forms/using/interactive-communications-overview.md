@@ -1,17 +1,13 @@
 ---
 title: 대화형 통신 개요
-seo-title: Interactive Communications Overview
 description: 이 문서에는 개요, 샘플 사용 사례, 만들기 워크플로 및 대화형 커뮤니케이션과 편지 간의 차이점이 포함되어 있습니다.
-seo-description: Interactive Communication key capabilities, sample use cases, creation workflow, and differences between Interactive Communication and Correspondence Management
-uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '487'
 ht-degree: 7%
 
 ---
@@ -91,7 +87,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
    <td>데이터 사전 </td>
   </tr>
   <tr>
-   <td>지역화</td>
+   <td>로컬라이제이션</td>
    <td>양식 데이터 모델에서 지원되지 않음</td>
    <td>데이터 사전에서 지원됨</td>
   </tr>

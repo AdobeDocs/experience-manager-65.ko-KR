@@ -1,19 +1,15 @@
 ---
 title: 워크플로 단계 참조
-seo-title: Workflow Step Reference
 description: Adobe Experience Manager의 워크플로에 대해서는 이 단계 참조 를 참조하십시오.
-seo-description: null
-uuid: 88bf6997-73a1-4639-82aa-5dff08d3ef86
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3250'
+source-wordcount: '3229'
 ht-degree: 2%
 
 ---
@@ -46,16 +42,16 @@ ht-degree: 2%
 * **설명**
 단계에 대한 설명입니다.
 
-* **워크플로우 단계**
+* **워크플로 단계**
 
   을(를) 적용할 드롭다운 선택기 [단계](/help/sites-developing/workflows.md#workflow-stages) 단계로 이동합니다.
 
-* **시간 초과**
+* **시간 제한**
 
   이후 단계가 &quot;시간 초과&quot;되는 기간입니다.
 다음 중 하나를 선택할 수 있습니다. **끔**, **즉시**, **1시간**, **6시간**, **12시간**, **24시간**.
 
-* **시간 초과 핸들러**
+* **시간 제한 핸들러**
 
   단계 제한 시간이 초과되면 워크플로우를 제어하는 핸들러입니다. 예, `Auto Advancer`
 
@@ -67,7 +63,7 @@ ht-degree: 2%
 
 에서 많은 워크플로우 단계 구성 요소에 대해 다음 속성을 사용할 수 있습니다. **사용자/그룹** 속성 대화 상자의 탭:
 
-* **사용자에게 이메일로 알립니다**
+* **사용자에게 이메일로 알림**
 
    * 워크플로우가 단계에 도달하면 참가자에게 이메일을 보내 알림을 보낼 수 있습니다.
    * 활성화된 경우 속성으로 정의된 사용자에게 이메일이 전송됩니다 **사용자/그룹**&#x200B;또는 그룹이 정의된 경우 그룹의 각 멤버로 매핑할 수도 있습니다.
@@ -199,7 +195,7 @@ function check(){
 
 * 편집 **OR 분할 속성**:
 
-   * **일반**
+   * **공통**
 
       * 분할 이름을 지정합니다.
 
@@ -579,7 +575,7 @@ A **프로세스 단계** 는 ECMAScript를 실행하거나 OSGi 서비스를 �
 * [일반](#step-properties-common-tab)
 * **프로세스**
 
-   * **프로세스**: 실행할 프로세스 구현 드롭다운 메뉴를 사용하여 ECMAScript 또는 OSGi 서비스를 선택합니다. 다음에 대한:
+   * **프로세스**: 실행할 프로세스 구현 드롭다운 메뉴를 사용하여 ECMAScript 또는 OSGi 서비스를 선택합니다. 다음에 대한 정보:
 
       * 표준 ECMAScript 및 OSGi 서비스입니다. 다음을 참조하십시오. [프로세스 단계에 내장된 프로세스](/help/sites-developing/workflows-process-ref.md).
       * 프로세스 단계에 대한 ECMAS 스크립트 생성은 다음을 참조하십시오. [ECMAScript를 사용하여 프로세스 단계 구현](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).

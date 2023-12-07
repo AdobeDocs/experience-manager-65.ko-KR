@@ -1,14 +1,12 @@
 ---
 title: 콘텐츠 페이지 편집 시 키보드 단축키
 description: 페이지 편집을 위한 일부를 포함하여 AEM 전체에서 사용할 수 있는 다양한 키보드 단축키
-uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 52%

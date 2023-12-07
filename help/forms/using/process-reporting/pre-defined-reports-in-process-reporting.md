@@ -1,18 +1,14 @@
 ---
 title: 프로세스 보고에서 사전 정의된 보고서
-seo-title: Pre-defined reports in Process Reporting
 description: 장기 실행 프로세스, 프로세스 기간 및 워크플로우 볼륨에 대한 보고서를 만들기 위해 JEE의 AEM Forms 프로세스 데이터를 쿼리합니다.
-seo-description: Query for AEM Forms on JEE process data to create reports on long running processes, Process duration, and Workflow volume
-uuid: 704a8886-90ea-4793-a3fc-f998f878c928
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 exl-id: 34e55676-6332-4616-aecc-bcc8cc1e8a29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -42,7 +38,7 @@ AEM Forms Process Reporting은 다음과 함께 제공됩니다 *즉시 사용 �
 
    ![장기 실행 프로세스 보고서 매개 변수 패널](assets/report_parameters_panel.png)
 
-   매개변수:
+   매개 변수:
 
    * **기간** (*필수*): 기간 및 시간 단위를 지정합니다. 지정된 기간 이상 실행된 모든 AEM Forms 프로세스를 표시합니다.
    * **다음 이후 시작됨** (*선택 사항*): 날짜를 선택합니다. 보고서를 필터링하여 지정된 날짜 이후에 시작된 프로세스 인스턴스를 표시합니다.
@@ -75,7 +71,7 @@ AEM Forms Process Reporting은 다음과 함께 제공됩니다 *즉시 사용 �
 
    ![장기 실행 프로세스 보고서 매개 변수 패널](assets/process_duration_params.png)
 
-   매개변수:
+   매개 변수:
 
    * **프로세스 선택** (*필수*): AEM Forms 프로세스를 선택합니다.
 
@@ -106,7 +102,7 @@ AEM Forms Process Reporting은 다음과 함께 제공됩니다 *즉시 사용 �
 
    ![장기 실행 프로세스 보고서 매개 변수 패널](assets/workflow_volume_params.png)
 
-   매개변수:
+   매개 변수:
 
    * **프로세스 선택** (*필수*): AEM Forms 프로세스를 선택합니다.
 

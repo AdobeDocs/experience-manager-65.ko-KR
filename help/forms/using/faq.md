@@ -1,20 +1,16 @@
 ---
 title: HTML5 양식에 대한 FAQ
-seo-title: Frequently asked questions (FAQ) for HTML5 forms
 description: 레이아웃, 스크립팅 지원 및 HTML 5 양식 범위에 대한 FAQ.
-seo-description: Frequently Asked Questions (FAQ) about layout, scripting support, and scope of HTML5 forms.
-uuid: 398e31de-3e46-4288-b3cd-39d51fa17abc
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '2007'
 ht-degree: 0%
 
 ---
@@ -208,7 +204,7 @@ ht-degree: 0%
 
    1. CRXde lite를 열고 로 이동합니다. `/content/xfaforms/profiles/default` 노드.
    1. 속성 추가 `mfDataDependentFloatingField`문자열 형식이며 속성 값을 로 설정합니다. `true`.
-   1. **모두 저장**&#x200B;을 클릭합니다. 이제 업데이트된 렌더링 프로필을 사용하여 HTML Forms에 대해 부동 필드를 사용할 수 있습니다.
+   1. 클릭 **모두 저장**. 이제 업데이트된 렌더링 프로필을 사용하여 HTML Forms에 대해 부동 필드를 사용할 수 있습니다.
 
       >[!NOTE]
       >

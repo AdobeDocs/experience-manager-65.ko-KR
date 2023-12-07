@@ -1,17 +1,13 @@
 ---
 title: 양식 이벤트 추적 사용자 지정
-seo-title: Customizing form event tracking
 description: 사용자가 필드에서 60초 이상 시간을 보내는 경우 필드 방문 이벤트가 트리거되고 필드의 세부 정보가 Adobe SiteCatalyst으로 전송됩니다.
-seo-description: If a user spends more than 60 seconds on a field, a fieldvisit event is triggered and the details of the field are sent to Adobe SiteCatalyst.
-uuid: 2f790085-2f1a-45be-9a69-6100c76dcae0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 60d67c6b-5994-42ef-b159-ed6edf5cf9d4
 exl-id: d0280a15-5d0d-49cf-bce9-ad1c40530eae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 1%
 <table>
  <tbody>
   <tr>
-   <th>Event</th>
+   <th>이벤트</th>
    <th>사용 가능한 변수</th>
   </tr>
   <tr>

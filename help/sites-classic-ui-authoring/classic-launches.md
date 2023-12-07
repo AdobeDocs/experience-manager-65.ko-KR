@@ -1,17 +1,15 @@
 ---
 title: 론치
 description: 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화합니다. 론치를 만들 때는 제목과 소스 페이지를 지정합니다.
-uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
 exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 43%
+source-wordcount: '172'
+ht-degree: 45%
 
 ---
 

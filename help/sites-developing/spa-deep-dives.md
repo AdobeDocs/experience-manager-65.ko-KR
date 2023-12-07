@@ -1,18 +1,14 @@
 ---
 title: SPA 깊이 들어가기
-seo-title: SPA Deep Dives
 description: AEM SPA Editor SDK는 일련의 AEM Gems 세션에 소개되었습니다. Adobe 엔지니어가 호스팅하는 이 시리즈는 Adobe 엔지니어가 호스팅하는 AEM SPA Editor SDK를 낮은 수준에서 더 깊이 있게 이해할 수 있도록 하는 좋은 지침이 될 수 있습니다.
-seo-description: The AEM SPA Editor SDK was featured in a series of AEM Gems sessions. Hosted by Adobe engineers, this series can serve as a great guide to gain a deeper understanding of the AEM SPA Editor SDK at a low level, hosted by Adobe engineers.
-uuid: 326ac431-79d4-48ed-aa48-0c9bfdbd23d0
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 48ab972b-ca26-40d1-b89e-86124ceb173b
 exl-id: aba1dc0f-eab1-40aa-8ab6-317e2fa7891c
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '266'
 ht-degree: 2%
 
 ---

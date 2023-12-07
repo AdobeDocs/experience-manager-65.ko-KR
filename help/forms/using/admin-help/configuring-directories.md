@@ -1,18 +1,14 @@
 ---
 title: 디렉터리 구성
-seo-title: Configuring directories
 description: 디렉터리를 추가, 편집 및 삭제하고 가상 목록 보기를 사용하도록 사용자 관리를 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to add, edit and delete directories and configure user management to use virtual list view.
-uuid: 0bf1a8a7-c917-4248-9937-d24e31c5ba17
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3226'
+source-wordcount: '3229'
 ht-degree: 0%
 
 ---

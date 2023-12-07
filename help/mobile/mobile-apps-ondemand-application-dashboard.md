@@ -1,18 +1,14 @@
 ---
 title: AEM Mobile 애플리케이션 대시보드
-seo-title: AEM Mobile Application Dashboard
 description: AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 및 모바일 앱 컨텐츠를 관리할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
-seo-description: You can manage your application and mobile app content from AEM Mobile Application Dashboard or the Control Center. Follow this page to learn more.
-uuid: 0d182989-eb83-4207-a8e0-050edbf98ff9
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '603'
 ht-degree: 4%
 
 ---
@@ -70,7 +66,7 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 이 3개의 타일은 앱 콘텐츠의 상태에 대한 개요를 제공합니다.
 
 * **배너**
-* **기사**
+* **문서**
 * **컬렉션**
 
 각 타일은 오른쪽 아래 모서리의 생략 부호(...)를 클릭하여 더 자세한 목록 보기를 제공하도록 확장할 수 있습니다. 이러한 목록 보기는 속성 삭제, 업로드 및 편집과 같은 일반적인 Mobile On-Demand 작업에 액세스하는 대체 방법을 제공합니다.

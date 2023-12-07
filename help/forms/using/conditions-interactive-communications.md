@@ -1,16 +1,12 @@
 ---
 title: 대화형 통신의 조건
-seo-title: Conditions in Interactive Communications
 description: 대화형 통신에 사용할 조건 조각 만들기 및 편집 - 조건은 대화형 통신을 빌드하는 데 사용되는 4가지 유형의 문서 조각 중 하나입니다. 나머지 세 가지는 텍스트, 목록, 레이아웃 단편이다.
-seo-description: Creating and editing conditions to be used in Interactive Communications
-uuid: c98f02d5-1769-46dd-ab35-6e8145a24939
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 1%

@@ -1,18 +1,16 @@
 ---
 title: 페이지에 Dynamic Media Classic(Scene7) 기능 추가
 description: Adobe Dynamic Media Classic(Scene7)는 리치 미디어 자산을 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄로 관리, 향상, 게시 및 전달하기 위한 호스팅 솔루션입니다.
-uuid: dc463e2d-a452-490e-88af-f79bdaa3b089
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3532'
-ht-degree: 13%
+source-wordcount: '3545'
+ht-degree: 12%
 
 ---
 
@@ -147,7 +145,7 @@ Experience Manager에서 사용할 수 있는 Dynamic Media Classic(Scene7) 구�
 >
 >사용자 지정 S7 뷰어를 만들고 개발하려고 하며 컨텐츠 파인더를 사용하는 경우 `allowfullscreen` 매개 변수.
 
-### Flash 뷰어 지원 중단 알림 {#flash-viewers-end-of-life-notice}
+### Flash 뷰어 서비스 종료 알림 {#flash-viewers-end-of-life-notice}
 
 2017년 1월 31일부터 Adobe Dynamic Media Classic(Scene7)는 Flash 뷰어 플랫폼에 대한 지원을 공식적으로 종료했습니다.
 
@@ -336,7 +334,7 @@ Dynamic Media Classic(Scene7) 컨텐츠 브라우저를 사용하면 Dynamic Med
 >   * 단일 MP4 비디오
 >   * 단일 F4V 동영상
 
-### 콘텐츠 검색 {#browsing-content-in-the-classic-ui}
+### 콘텐츠 찾아보기 {#browsing-content-in-the-classic-ui}
 
 다음을 선택하여 Dynamic Media Classic(Scene7)에서 컨텐츠 찾아보기 **[!UICONTROL S7]** 탭.
 

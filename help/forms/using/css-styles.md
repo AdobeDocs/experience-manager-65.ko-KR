@@ -1,20 +1,16 @@
 ---
 title: HTML5 양식용 CSS 스타일 만들기
-seo-title: Creating CSS styles for HTML5 forms
 description: HTML 양식 요소와 연결된 CSS 클래스를 수정하여 HTML5 양식의 모양을 변경하는 방법에 대해 알아봅니다.
-seo-description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element.
-uuid: 43c689b4-243c-43de-a8be-1eef10d75295
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -112,7 +108,7 @@ AEM Forms 디자이너에서 이름이 지정되지 않은 HTML의 경우, page5
   </tr>
   <tr>
    <td>캡션</td>
-   <td>caption</td>
+   <td>캡션</td>
    <td>NA</td>
   </tr>
   <tr>
@@ -139,7 +135,7 @@ AEM Forms 디자이너는 NumericField, DecimalField 및 Date Field와 같은 �
    <td><strong>HTML UI 태그</strong></td>
   </tr>
   <tr>
-   <td>버튼<br type="_moz" /> </td>
+   <td>단추<br type="_moz" /> </td>
    <td>NA</td>
    <td>xfaButton<br type="_moz" /> </td>
    <td>buttonfield위젯<br type="_moz" /> </td>

@@ -1,18 +1,16 @@
 ---
 title: 포괄적인 검색
-description: 포괄적인 검색으로 신속하게 콘텐츠 찾기.
-uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
+description: 포괄적인 검색으로 더 빠르게 콘텐츠를 찾을 수 있습니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 69%
+source-wordcount: '517'
+ht-degree: 58%
 
 ---
 
@@ -34,7 +32,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하�
 
 * 특정 키워드, 경로 또는 태그를 검색합니다.
 * 리소스별 기준(예: 수정한 날짜, 페이지 상태, 파일 크기 등)에 따라 필터링합니다.
-* 위의 기준에 따라 [저장된 검색](#saved-searches)을 정의하고 사용합니다.
+* 정의 및 사용 [저장된 검색](#saved-searches) - 위의 기준을 기반으로 합니다.
 
 >[!NOTE]
 >
@@ -85,7 +83,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하�
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 
-1. 검색어를 추가할 수도 있습니다:
+1. 검색어를 추가할 수도 있습니다.
 
    ![screen-shot_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
 

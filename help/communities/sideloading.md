@@ -1,16 +1,12 @@
 ---
 title: 구성 요소 사이드로드
-seo-title: Component Sideloading
 description: 커뮤니티 구성 요소 사이드로드는 웹 페이지가 사이트 방문자가 선택한 항목에 따라 표시되는 내용을 동적으로 변경하는 간단한 단일 페이지 앱으로 디자인될 때 유용합니다
-seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
-uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 exl-id: 960e132c-b370-43d1-bd8f-e7d0ded7c0b3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -54,11 +50,11 @@ SCF 구성 요소를 추가할 때 가장 일반적인 태그는 DIV 태그이�
 
 * **data-component-id**
 
-   추가된 구성 요소에 대한 유효 경로.
+  추가된 구성 요소에 대한 유효 경로.
 
 * **data-scf-component**
 
-   구성 요소의 resourceType.
+  구성 요소의 resourceType.
 
 다음은 추가된 주석 구성 요소의 한 예입니다.
 

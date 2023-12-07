@@ -1,20 +1,16 @@
 ---
 title: CustomToolbars를 사용하여 HTML Forms 렌더링
-seo-title: Rendering HTML Forms with CustomToolbars
 description: Forms 서비스를 사용하여 HTML 양식으로 렌더링되는 도구 모음을 사용자 지정할 수 있습니다. Java API 및 웹 서비스 API를 사용하여 사용자 지정 도구 모음으로 HTML 양식을 렌더링할 수 있습니다.
-seo-description: Use the Forms service to customize a toolbar that is rendered with an HTML form. You can render an HTML Form with a custom toolbar using the Java API and a Web Service API.
-uuid: b9c9464e-ff19-4051-a39b-4ec71c512d10
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2328'
 ht-degree: 0%
 
 ---

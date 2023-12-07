@@ -1,18 +1,14 @@
 ---
 title: HTML 5 양식 최적화
-seo-title: Optimizing HTML5 forms
 description: HTML5 양식의 출력 크기를 최적화할 수 있습니다.
-seo-description: You can optimize the output size of the HTML5 forms.
-uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -63,7 +59,6 @@ Apache는 HTTP 또는 AJP 프로토콜을 사용하여 JBoss와 통신할 수 �
    >* 액세스: *https://&lt;server>:&lt;port>/system/console/configMgr*
    * Apache Sling Referrer Filter 구성 편집
    * 호스트 허용에서 프록시 서버에 대한 항목을 추가합니다
-
 
 1. 압축을 활성화합니다.
 

@@ -1,19 +1,15 @@
 ---
 title: 자습서 - 첫 번째 대화형 통신 만들기
-seo-title: Create your first Interactive Communication
 description: 첫 번째 대화형 커뮤니케이션을 만드는 방법을 알아봅니다.
-seo-description: Learn to create your first Interactive Communication.
-uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications, introduction
-discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 feature: Interactive Communication
 exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 1%
+source-wordcount: '976'
+ht-degree: 0%
 
 ---
 

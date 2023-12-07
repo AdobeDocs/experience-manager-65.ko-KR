@@ -1,19 +1,15 @@
 ---
 title: 사용자 관리자 Java API 빠른 시작(SOAP)
-seo-title: User Manager Java API Quick Start(SOAP)
 description: 사용자 관리자 API를 사용하여 사용자 추가, 사용자 삭제, 그룹 생성, 사용자 및 그룹 관리, 역할 및 권한 관리, 프로그래밍 방식으로 사용자 동기화 및 환경 설정 노드 프로그래밍 방식으로 관리합니다.
-seo-description: Use User Manager API to add users, delete users, create groups, manage users and groups, manage roles and permissions, synchronize users programmatically, and manage the Preferences Nodes programmatically.
-uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 role: Developer
 exl-id: 7f622371-0f0f-4789-b2e7-e4b536a21c4d
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---

@@ -1,18 +1,14 @@
 ---
 title: AEM의 직렬화 문제 완화
-seo-title: Mitigating serialization issues in AEM
 description: AEM의 직렬화 문제를 완화하는 방법에 대해 알아봅니다.
-seo-description: Learn how to mitigate serialization issues in AEM.
-uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
-source-git-commit: 614c4c88f3f09feb5a400ade9f45f634ac4fbcd5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -76,9 +72,10 @@ NotSoSerial 에이전트는 애플리케이션 서버용 AEM의 표준 배포에
 1. 검색 및 클릭 **Deserialization Firewall Configuration.**
 
    >[!NOTE]
+   >
    다음 위치의 URL에 액세스하여 구성 페이지에 직접 연결할 수도 있습니다.
+   >
    * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-
 
 이 구성에는 허용 목록에 추가하다, 차단 목록에 추가하다 및 deserialization 로깅이 포함되어 있습니다.
 
@@ -109,6 +106,7 @@ URL에 액세스하면 에이전트와 관련된 상태 검사 목록이 표시�
 에이전트의 문제 해결에 대한 자세한 내용은 다음을 참조하십시오. [동적 에이전트 로드 시 오류 처리](#handling-errors-with-dynamic-agent-loading) 아래요.
 
 >[!NOTE]
+>
 을(를) 추가하면 `org.apache.commons.collections.functors` 허용 목록에 추가하다는 항상 실패한다.
 
 ## 동적 에이전트 로드 시 오류 처리 {#handling-errors-with-dynamic-agent-loading}
@@ -124,9 +122,11 @@ URL에 액세스하면 에이전트와 관련된 상태 검사 목록이 표시�
    ```
 
    >[!NOTE]
+   >
    포크된 JVM에서 에이전트가 활성화되지 않았으므로 적절한 JVM 메모리 설정과 함께 -nofork CQ/AEM 옵션도 사용해야 합니다.
 
    >[!NOTE]
+   >
    NotSoSerial 에이전트 jar의 Adobe 분포는 `crx-quickstart/opt/notsoserial/` AEM 설치 폴더.
 
 1. JVM을 중지했다가 다시 시작합니다.

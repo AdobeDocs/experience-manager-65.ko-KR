@@ -1,16 +1,14 @@
 ---
 title: 이메일 엔드포인트 구성
 description: 이메일 엔드포인트를 구성하는 방법에 대해 알아봅니다. 이메일 엔드포인트를 사용하면 지정된 이메일 계정에 하나 이상의 문서를 전송하여 서비스를 호출할 수 있습니다.
-uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3796'
 ht-degree: 0%
 
 ---

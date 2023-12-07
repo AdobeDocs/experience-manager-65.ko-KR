@@ -1,21 +1,17 @@
 ---
 title: 커뮤니티 알림
-seo-title: Communities Notifications
 description: AEM Communities에는 로그인한 커뮤니티 구성원의 관심 이벤트를 표시하는 알림이 있습니다.
-seo-description: AEM Communities has notifications that display events of interest to the signed-in community member
-uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -63,7 +59,7 @@ AEM Communities은 로그인한 커뮤니티 구성원의 관심 이벤트를 �
 
 다음을 활성화하도록 구성 요소를 구성해야 합니다. 다음을 허용하는 기능은 [블로그](/help/communities/blog-feature.md), [포럼](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [달력](/help/communities/calendar.md), [파일 라이브러리](/help/communities/file-library.md), 및 [댓글](/help/communities/comments.md).
 
-**메모**:
+**참고**:
 
 * 커뮤니티 내에서 사용되는 구성 요소 [사이트 템플릿](/help/communities/sites.md) 및 [그룹 템플릿](/help/communities/tools-groups.md) 은(는) 이미 팔로우하도록 구성되어 있습니다.
 

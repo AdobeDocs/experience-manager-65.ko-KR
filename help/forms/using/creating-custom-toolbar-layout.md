@@ -1,16 +1,12 @@
 ---
 title: 사용자 지정 도구 모음 레이아웃 만들기
-seo-title: Creating custom toolbar layout
 description: 양식에 대한 도구 모음 레이아웃을 지정할 수 있습니다. 도구 모음 레이아웃은 양식에 있는 도구 모음의 명령과 레이아웃을 정의합니다.
-seo-description: You can specify a toolbar layout for the form. The toolbar layout defines the commands and the layout of the toolbar on the form.
-uuid: 389a715a-4c91-4a63-895d-bb2d0f1054eb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 0d817a7e-2758-4308-abda-6194716c2d97
 docset: aem65
 exl-id: 44516956-00aa-41d5-a7e9-746c7618e5db
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%

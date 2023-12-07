@@ -1,19 +1,15 @@
 ---
 title: 오프로드용 작업 만들기 및 소비
-seo-title: Creating and Consuming Jobs for Offloading
 description: Apache Sling Discovery 기능은 JobManager 작업 및 이를 사용하는 JobConsumer 서비스를 만들 수 있는 Java API를 제공합니다
-seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
-uuid: d6a5beb0-0618-4b61-9b52-570862eac920
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 3%
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
 

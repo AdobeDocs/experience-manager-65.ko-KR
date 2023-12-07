@@ -1,19 +1,15 @@
 ---
 title: 인터페이스의 색상 구성표 변경
-seo-title: Changing the color scheme of the interface
 description: AEM Forms 작업 영역 사용자 인터페이스 부분의 색상 구성표를 선택적으로 수정하는 방법입니다.
-seo-description: How to modify the color scheme of AEM Forms workspace user interface portions selectively.
-uuid: 32c32f7a-8271-4d2c-8a1f-ad5ab3c90b83
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 exl-id: e0a261a2-518b-4984-a5b5-24f0b9222e24
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 3%
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 

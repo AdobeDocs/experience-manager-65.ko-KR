@@ -1,18 +1,14 @@
 ---
 title: 프로세스 인스턴스 검색
-seo-title: Searching for process instances
 description: '[프로세스 검색] 페이지에서는 프로세스 인스턴스를 찾기 위한 검색 조건을 입력할 수 있습니다.'
-seo-description: Use the Process Search page to enter search criteria for finding a process instance.
-uuid: 4a9c5b05-add5-4278-9c6f-d1928b6860d2
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---

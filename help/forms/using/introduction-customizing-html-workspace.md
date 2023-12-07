@@ -1,19 +1,15 @@
 ---
 title: AEM 양식 작업 영역 사용자 정의 소개
-seo-title: Introduction to Customizing AEM form workspace
 description: 프로세스 관리를 위해 AEM Forms 작업 영역 LiveCycle을 사용자 지정하는 개념 및 기술 정보를 간략하게 소개합니다.
-seo-description: A quick introduction, with conceptual and technical information, to customize LiveCycle AEM Forms workspace for process management.
-uuid: 38759071-e6b8-4976-8b06-909ad7a786cd
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1752'
 ht-degree: 0%
 
 ---
@@ -53,7 +49,7 @@ AEM Forms 작업 영역의 모양, 레이아웃 및 기타 프레젠테이션 �
    <th><p>사용자 인터페이스 구성 요소 수정됨</p> </th>
   </tr>
   <tr>
-   <td><p>#머리글</p> </td>
+   <td><p>#header</p> </td>
    <td><p>AEM Forms 작업 영역의 헤더</p> </td>
   </tr>
   <tr>

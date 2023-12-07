@@ -1,19 +1,15 @@
 ---
 title: 에뮬레이터
-seo-title: Emulators
 description: AEM을 사용하면 작성자가 최종 사용자가 페이지를 볼 환경을 시뮬레이션하는 에뮬레이터에서 페이지를 볼 수 있습니다
-seo-description: AEM enables authors to view a page in an emulator that simulates the environment in which an end-user will view the page
-uuid: ee1496a5-be68-4318-b5ce-b11c41e4485c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
-discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---

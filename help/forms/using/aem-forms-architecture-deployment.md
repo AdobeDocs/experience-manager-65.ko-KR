@@ -1,19 +1,15 @@
 ---
 title: AEM Forms의 아키텍처 및 배포 토폴로지
-seo-title: Architecture and deployment topologies for AEM Forms
 description: 신규 및 기존 AEM 고객과 LiveCycle ES4에서 AEM Forms으로 업그레이드하는 고객을 위한 AEM Forms 및 권장 토폴로지에 대한 아키텍처 세부 정보.
-seo-description: Architecture details for AEM Forms and recommended topologies for new and existing AEM customers and customers upgrading from LiveCycle ES4 to AEM Forms.
-uuid: 90baa57a-4785-4b49-844c-a44717d3c12d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2469'
 ht-degree: 0%
 
 ---

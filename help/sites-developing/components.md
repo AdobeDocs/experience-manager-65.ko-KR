@@ -1,19 +1,15 @@
 ---
 title: 구성 요소 개요
-seo-title: Components
 description: 구성 요소는 웹 사이트에 콘텐츠를 표시할 특정 기능을 실현하는 모듈식 단위입니다.
-seo-description: Components are modular units which realize specific functionality to present your content on your website
-uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 60%
+source-wordcount: '570'
+ht-degree: 44%
 
 ---
 
@@ -31,7 +27,7 @@ ht-degree: 60%
 * 모든 AEM 시스템 내에서 실행할 수 있습니다. 특정 구성 요소에서 실행되도록 제한할 수도 있습니다.
 * 표준화된 사용자 인터페이스가 있습니다.
 * 구성할 수 있는 편집 비헤이비어가 있습니다.
-* Granite UI 구성 요소 기반의 하위 요소를 사용하여 빌드한 대화 상자를 사용합니다
+* Granite UI 구성 요소를 기반으로 하는 하위 요소를 사용하여 빌드된 대화 상자 사용
 * 다음을 사용하여 개발됨 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (권장) 또는 JSP입니다.
 * 기본 기능을 확장하는 사용자 지정된 구성 요소를 만들기 위해 개발할 수 있습니다.
 
@@ -40,7 +36,7 @@ ht-degree: 60%
 * 로컬 인스턴스에서 새 구성 요소를 개발합니다.
 * 테스트 환경에 배포합니다.
 * 작성자 및/또는 관리자가 콘텐츠를 추가 및 구성할 수 있는 라이브 작성 환경에 배포합니다.
-* 웹 사이트 방문자의 콘텐츠를 렌더링하는 데 사용되는 라이브 게시 환경에 배포합니다. 특정 구성 요소(예: 커뮤니티)는 사용자의 입력도 수락합니다.
+* 라이브 게시 환경에 배포합니다. 이 환경은 웹 사이트 방문자에 대한 콘텐츠를 렌더링하는 데 사용됩니다. 특정 구성 요소(예: 커뮤니티)는 사용자의 입력도 수락합니다.
 
 각 AEM 구성 요소:
 
@@ -104,7 +100,7 @@ AEM 인스턴스에서 사용 가능한 모든 구성 요소에 대한 개요를
 * [개발자 모드](/help/sites-developing/developer-mode.md)
 * [UI 테스트](/help/sites-developing/hobbes.md)
 * [컨텐츠 조각용 구성 요소](/help/sites-developing/components-content-fragments.md)
-* [JSON 형식으로 페이지 정보 얻기](/help/sites-developing/pageinfo.md)
+* [JSON 형식으로 페이지 정보 가져오기](/help/sites-developing/pageinfo.md)
 * [구성 요소 다국어화](/help/sites-developing/i18n.md)
 * [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [조건 숨기기 사용](/help/sites-developing/hide-conditions.md)
@@ -113,4 +109,4 @@ AEM 인스턴스에서 사용 가능한 모든 구성 요소에 대한 개요를
    * [AEM 구성 요소(클래식 UI)](/help/sites-developing/developing-components-classic.md)
    * [위젯 사용 및 확장(클래식 UI)](/help/sites-developing/widgets.md)
    * [xtype 사용(클래식 UI)](/help/sites-developing/xtypes.md)
-   * [양식 개발(클래식 UI)](/help/sites-developing/developing-forms.md)
+   * [Forms 개발(클래식 UI)](/help/sites-developing/developing-forms.md)

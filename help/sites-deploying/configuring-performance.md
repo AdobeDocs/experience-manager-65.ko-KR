@@ -1,18 +1,16 @@
 ---
 title: 성능 최적화
 description: 성능을 최적화하기 위해 AEM의 특정 측면을 구성하는 방법에 대해 알아봅니다.
-uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6503'
-ht-degree: 12%
+source-wordcount: '6469'
+ht-degree: 11%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 12%
 >
 >성능 문제 해결 및 해결에 대한 자세한 내용은 [성능 트리](/help/sites-deploying/performance-tree.md).
 >
->또한 다음에 대한 기술 자료 문서를 검토할 수 있습니다. [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko-KR).
+>또한 다음에 대한 기술 자료 문서를 검토할 수 있습니다. [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 핵심 문제는 웹 사이트가 방문자 요청에 응답하는 데 걸리는 시간입니다. 이 값은 요청마다 다르지만 평균 대상 값을 정의할 수 있습니다. 이 값이 달성 가능하고 유지 가능한 것으로 입증되면 웹 사이트의 성능을 모니터링하고 잠재적인 문제의 발생을 나타내는 데 사용할 수 있습니다.
 
@@ -41,7 +39,7 @@ ht-degree: 12%
 >[!NOTE]
 >
 >* 성능 최적화를 위해 구성한 후 의 절차를 따릅니다. [Tough Day](/help/sites-developing/tough-day.md) 과중한 부하 상태에서 환경을 테스트합니다.
->* 참조: [성능 조정 팁입니다.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko-KR)
+>* 참조: [성능 조정 팁입니다.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
 
 ## 성능 최적화 방법론 {#performance-optimization-methodology}
 
@@ -203,7 +201,7 @@ AEM(및/또는 기본 저장소)의 특정 측면을 성능을 최적화하도�
 
 >[!NOTE]
 >
->다음을 참조하십시오 [성능 최적화](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko-KR).
+>다음을 참조하십시오 [성능 최적화](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 ### 색인 검색 {#search-indexing}
 
@@ -383,7 +381,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 게시 환경�
 
 두 경우 모두 사전 정의된 수의 사용자가 시스템을 사용할 때 초당 예상 트랜잭션 수를 정의할 수 있습니다.
 
-| 구성 요소 | 테스트 유형 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
+| 구성 요소 | 테스트 유형 | 아니. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 홈페이지 단일 사용자 | 평균 | 1 | 1 |  |  |
 |   | 피크 | 1 | 3 |  |  |
@@ -394,7 +392,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 게시 환경�
 
 구성 요소를 함께 테스트하면 애플리케이션 동작을 보다 세밀하게 반영할 수 있습니다. 다시 평균 및 피크 조건을 테스트해야 합니다.
 
-| 시나리오 | 구성 요소 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
+| 시나리오 | 구성 요소 | 아니. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 혼합 평균 | 홈 페이지 | 10 | 1 |  |  |
 |   | 검색 | 10 | 1 |  |  |
@@ -411,7 +409,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 게시 환경�
 
 웹 사이트를 사용 가능하게 한 후 처음 며칠 동안은 관심 수준이 높아질 것으로 예상됩니다. 이 시나리오는 테스트 중인 피크 값보다 훨씬 큽니다. Adobe은 실행 중 시나리오를 테스트하여 시스템이 이 상황을 지원할 수 있도록 하는 것을 권장합니다.
 
-| 시나리오 | 테스트 유형 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
+| 시나리오 | 테스트 유형 | 아니. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 라이브 피크 | 홈 페이지 | 200 | 20 |  |  |
 |   | 검색 | 100 | 10 |  |  |
@@ -428,7 +426,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 게시 환경�
 
 이러한 검사를 고안할 때 모든 시나리오가 규칙적으로 발생하는 것은 아니라는 것을 기억해야 한다. 그러나, 그들이 전체 시스템에 미치는 영향은 중요합니다.
 
-| 오류 시나리오 | 오류 유형 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
+| 오류 시나리오 | 오류 유형 | 아니. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 검색 구성 요소 오버로드 | 전역 와일드카드 검색(별표) | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast;만 검색됩니다. |
 |   | 정지어 | 20 | 2 |  | 정지어를 찾고 있습니다. |
@@ -439,7 +437,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 게시 환경�
 
 특정 문제는 시스템이 몇 시간 또는 며칠 동안 계속 실행된 후에만 발생합니다. 필요한 시간 기간 동안 일정한 평균 하중을 시험하기 위해 내구 시험을 사용한다. 그런 다음 성능 저하를 분석할 수 있습니다.
 
-| 시나리오 | 테스트 유형 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
+| 시나리오 | 테스트 유형 | 아니. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 내구 시험(72시간) | 홈 페이지 | 10 | 1 |  |  |
 |   | 검색 | 10 | 1 |  |  |
@@ -478,7 +476,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 게시 환경�
 
 ## Dispatcher 사용 시 성능 최적화 {#optimizing-performance-when-using-the-dispatcher}
 
-다음 [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko) 은 Adobe의 캐싱 및/또는 로드 밸런싱 도구입니다. Dispatcher를 사용할 때는 캐시 성능을 위해 웹 사이트를 최적화하는 것이 좋습니다.
+다음 [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) 은 Adobe의 캐싱 및/또는 로드 밸런싱 도구입니다. Dispatcher를 사용할 때는 캐시 성능을 위해 웹 사이트를 최적화하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -666,7 +664,7 @@ AEM 구성은 운영 체제 및 AEM 소프트웨어와 함께 저장소 및 데�
 
 다음 표에서는 백업 벤치마크에서 사용되는 데이터 볼륨의 크기를 보여 줍니다. 초기 기본 컨텐츠가 처음 설치된 다음 알려진 양의 데이터가 추가되어 백업된 컨텐츠의 크기가 커집니다. 특정 단위로 백업이 생성되므로 하루에 생성할 수 있는 내용과 컨텐츠가 크게 증가합니다. 콘텐츠(페이지, 이미지, 태그)의 배포는 대략적으로 실제 프로덕션 에셋 구성을 기반으로 합니다. 페이지, 이미지 및 태그는 최대 800개의 하위 페이지로 제한됩니다. 각 페이지에는 제목, Flash, 텍스트/이미지, 비디오, 슬라이드쇼, 양식, 테이블, 클라우드 및 슬라이드 구성 요소가 포함되어 있습니다. 이미지는 37KB에서 594KB까지 400개의 고유한 파일 풀에서 업로드됩니다.
 
-| 콘텐츠 | 노드 | 페이지 | 이미지 | 태그 |
+| 컨텐트 | 노드 | 페이지 | 이미지 | 태그 |
 |---|---|---|---|---|
 | 기본 설치 | 69 610 | 562 | 256 | 237 |
 | 증분 백업을 위한 소규모 컨텐츠 |  | +100 | +2 | +2 |

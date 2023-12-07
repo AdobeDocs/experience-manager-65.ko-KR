@@ -1,18 +1,14 @@
 ---
 title: 인증서 기반 인증 구성
-seo-title: Configuring certificate-based authentication
 description: CA(인증 기관) 인증서를 Trust Store로 가져오고 인증서 기반 인증을 위한 인증서 매핑을 만듭니다.
-seo-description: Import a Certificate Authority (CA) certificate into the Trust Store and create a certificate mapping for certificate-based authentication.
-uuid: 9802a969-6d29-4b80-a4ed-06eb6e66e046
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -66,21 +62,22 @@ User Management는 일반적으로 사용자 이름과 암호를 사용하여 �
 
    * &quot;Alex Pink&quot;(인증)에서 &quot;Alex Pink&quot;를 추출하려면
 
-      **정규 표현식:** (.&amp;ast;) \(Authentication\)
+     **정규 표현식:** (.&amp;ast;) \(Authentication\)
 
    * Alex (Authentication) Pink에서 &quot;Alex Pink&quot;를 추출하려면
 
-      **정규 표현식:** (.&amp;ast;)\(Authentication\)(.&amp;ast;)
+     **정규 표현식:** (.&amp;ast;)\(Authentication\)(.&amp;ast;)
 
    * Alex (Authentication) Pink에서 &quot;Pink Alex&quot;를 추출하려면
 
-      **정규 표현식:** (.&amp;ast;)\(Authentication\)(.&amp;ast;)
+     **정규 표현식:** (.&amp;ast;)\(Authentication\)(.&amp;ast;)
 
-      사용자 정의 주문: $2 $1(첫 번째 그룹에 연결된 두 번째 그룹을 반환하고 공백 문자로 캡처됨)
+     사용자 정의 주문: $2 $1(첫 번째 그룹에 연결된 두 번째 그룹을 반환하고 공백 문자로 캡처됨)
 
    * &quot;smtp:apink@sampleorg.com&quot;에서 &quot;apink@sampleorg.com&quot;을 추출하려면
 
-      **정규 표현식:** smtp:(.&amp;ast;)
+     **정규 표현식:** smtp:(.&amp;ast;)
+
    정규 표현식 사용에 대한 자세한 내용은 를 참조하십시오. [정규 표현식에 대한 Java 자습서](https://java.sun.com/docs/books/tutorial/essential/regex/).
 
 1. 도메인용 목록에서 사용자의 도메인을 선택합니다.

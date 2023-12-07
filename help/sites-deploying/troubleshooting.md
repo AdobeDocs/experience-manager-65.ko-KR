@@ -1,16 +1,14 @@
 ---
 title: AEM의 설치 문제 해결
 description: 이 문서에서는 AEM에서 발생할 수 있는 설치 문제 중 일부를 다룹니다.
-uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -57,7 +55,7 @@ jar 파일이 유비쿼터스 ZIP 형식을 사용하므로 일부 보관 프로
 * AEM WCM 빠른 시작에서 상황에 맞는 메뉴(보통 마우스 오른쪽 버튼 클릭)를 시도하고 &quot;연결 프로그램&quot;을 선택합니다....
 * Java™ 또는 Sun Java™이 나열되어 있는지 확인하고 이 목록을 사용하여 AEM WCM을 실행해 보십시오. 여러 Java™ 버전이 설치된 경우 지원되는 버전을 선택합니다.
 
-   이 단계에 성공하고 운영 체제에서 항상 선택한 프로그램을 사용하여 .jar 파일을 실행하는 옵션을 제공하는 경우 선택합니다. 두 번 클릭하는 것은 이제부터 작동합니다.
+  이 단계에 성공하고 운영 체제에서 항상 선택한 프로그램을 사용하여 .jar 파일을 실행하는 옵션을 제공하는 경우 선택합니다. 두 번 클릭하는 것은 이제부터 작동합니다.
 
 * 경우에 따라 지원되는 Java™ 버전을 다시 설치하면 올바른 연결을 복원하는 데 도움이 됩니다.
 * 이 문서의 앞부분에서 설명한 대로 항상 명령줄 또는 시작/중지 스크립트를 사용하여 CRX를 실행할 수 있습니다.
@@ -66,7 +64,7 @@ jar 파일이 유비쿼터스 ZIP 형식을 사용하므로 일부 보관 프로
 
 >[!NOTE]
 >
->참조: [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko).
+>참조: [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en).
 
 
 CRX 자체의 메모리 풋프린트가 낮습니다. CRX 내에서 실행 중인 응용 프로그램에 더 큰 메모리 요구 사항이 있거나 메모리 사용량이 많은 작업(예: 큰 트랜잭션)을 요청하는 경우, CRX가 실행되는 JVM 인스턴스는 적절한 메모리 설정으로 시작해야 합니다.

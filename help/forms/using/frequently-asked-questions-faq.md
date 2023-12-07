@@ -1,13 +1,11 @@
 ---
 title: 적응형 Forms, HTML 5 양식 및 AEM Forms에 대한 FAQ
-seo-title: Frequently asked questions (FAQ) for Adaptive Forms, HTML5 forms, and AEM Forms
 description: 레이아웃, 스크립팅 지원 및 적응형 Forms, HTML 5 양식 및 AEM Forms의 범위에 대한 FAQ.
-seo-description: Frequently Asked Questions (FAQ) about layout, scripting support, and scope of Adaptive Forms, HTML5 forms, and AEM Forms.
 docset: aem65
 exl-id: 19a6e431-de66-4d5c-924f-f9c1a195390c
-source-git-commit: 2e9b9c40f54aa54a946e4320341ed4a760c56fd1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---

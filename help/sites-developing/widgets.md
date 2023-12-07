@@ -1,18 +1,16 @@
 ---
 title: 위젯 사용 및 확장(클래식 UI)
 description: Adobe Experience Manager의 웹 기반 인터페이스는 AJAX 및 기타 최신 브라우저 기술을 사용하여 웹 페이지에서 작성자가 컨텐츠를 바로 WYSIWYG로 편집하고 형식을 지정할 수 있도록 합니다
-uuid: eb3da415-cbef-4766-a28e-837e238a4156
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 7b234f1f-4470-4de1-a3c3-ab19e5e001ad
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '4925'
-ht-degree: 1%
+source-wordcount: '4896'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +100,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 전체 참조는 다음을 �
 * JavaScript 코드만 포함하려면 다음을 수행하십시오.
   `<ui:includeClientLib js="<category-name>"/>`
 
-자세한 내용은 의 설명을 참조하십시오 [&lt;ui:includeclientlib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib) 태그에 가깝게 배치하십시오.
+자세한 내용은 태그 설명 [ &lt;ui:includeClientLib> ](/help/sites-developing/taglib.md#lt-ui-includeclientlib) &lt;/ui:includeClientLib> 을 참조 하십시오.
 
 때때로 클라이언트 라이브러리는 작성자 모드 에서만 사용할 수 있으며 게시 모드에서 제외 해야 합니다. 다음과 같이 달성할 수 있습니다.
 
@@ -280,7 +278,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 전체 참조는 다음을 �
 * 각 선택적 탭에는 &quot;&quot;에서 탭을 숨기는 수신기가 있습니다. `render`&quot;이벤트:
   `render="function(tab){Ejst.x2.hideTab(tab);}"`
 * 의 경우 `Ejst.x2.hideTab()` 메서드,
-  `tabPanel` 은(는) `tabpanel` 모든 탭을 포함하는
+  `tabPanel``tabpanel`는 모든 탭을 포함 하는입니다.
   `index` 는 선택 사항인 탭의 색인입니다.
   `tabPanel.hideTabStripItem(index)` 탭를 숨깁니다.
 
@@ -369,7 +367,7 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 * 트리 찾아보기 대화 상자( `treebrowse` node)에는 경로 찾아보기 위젯이 포함된 탭이 있는 창이 표시됩니다. 화살표를 클릭하면 계층을 찾아보고 항목을 선택할 수 있는 창이 열립니다. 그런 다음 항목의 경로가 경로 필드에 추가되고 대화 상자를 닫아도 유지됩니다.
 * 리치 텍스트 편집기 플러그인 기반 대화 상자( `rteplugin` 사용자 지정 단추를 서식 있는 텍스트 편집기에 추가하여 일부 사용자 지정 텍스트를 기본 텍스트에 삽입하는 노드입니다. 이 템플릿은 `richtext` 위젯(RTE) 및 RTE 플러그인 메커니즘을 통해 추가된 사용자 정의 기능.
 
-사용자 정의 위젯 및 플러그인은 이라는 구성 요소에 포함됩니다. **3. 사용자 정의 위젯** / **ExtJS 위젯 사용** 패키지. 이 구성 요소를 샘플 페이지에 포함하려면 다음 작업을 수행하십시오.
+사용자 정의 위젯 및 플러그인은 이라는 구성 요소에 포함됩니다. **3. 사용 하는** ExtJS widget **패키지의 사용자 지정 위젯** 이 구성 요소를 샘플 페이지에 포함 하려면 다음을 수행 하십시오.
 
 1. 3을 **추가 합니다. 사이드 킥** 에 있는 탭의 **Extjs widget** 에서 **샘플 페이지에 대 한 사용자 지정 위젯** 구성 요소입니다.
 1. 구성 요소는 제목, 일부 텍스트 및 링크 속성 **을 클릭할** 때 저장소에 저장 된 단락의 속성을 표시 합니다. 다시 클릭하면 속성이 숨겨집니다.
@@ -408,7 +406,7 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
    * `otherField` 다음 값: [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) 오브젝트
 * 포맷를 사용 하 여 CustomWidget의 값을 설정 하 고 검색 하는 CompositeField ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) 메서드 `setValue` , `getValue` 및 `getRawValue` [ 을 무시 합니다.
   `<allowField value>/<otherField value>, for example: 'Bla1/hello'`
-* 자신을 &#39; `ejstcustom` &#39; xtype:
+* 자신을 &#39;(으)로 등록 `ejstcustom`&#39; xtype:
   `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
 
 다음 **사용자 지정 다중 필드** 위젯 기반 대화 상자는 다음과 같이 표시됩니다.
@@ -455,7 +453,7 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 
 ![screen_shot_2012-02-01at120104pm](assets/screen_shot_2012-02-01at120104pm.png)
 
-#### 예제 3: 리치 텍스트 편집기(RTE) 플러그인 {#example-rich-text-editor-rte-plug-in}
+#### 예제 3: 리치 텍스트 편집기 (RTE) 플러그인 {#example-rich-text-editor-rte-plug-in}
 
 **리치 텍스트 편집기 (RTE) 플러그인** 기반 대화 상자는 사용자 지정 버튼을 사용 하 여 대괄호 내에 일부 사용자 지정 텍스트를 삽입 하는 리치 텍스트 편집기 기반 대화 상자입니다. 예를 들어 특정 경로에 정의 된 텍스트를 추가 하기 위해이 예에서 구현 되지 않은 일부 서버측 논리로 사용자 지정 텍스트를 구문 분석할 수 있습니다.
 
@@ -501,7 +499,7 @@ RTE 플러그인:
 
 ### 트리 개요 {#tree-overview}
 
-` [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)`기본 제공 개체는 트리 구조에 대 한 트리 구조적 UI 표현-구조화된 데이터를 제공 합니다. 사용 중인 ExtJS Widget 패키지에 **포함 된 트리 개요 구성 요소는 개체를 사용 `TreePanel` 하 여 지정 된 경로 아래에 jcr 트리를 표시 하는 방법을** 보여줍니다. 창 자체를 도킹/도킹 해제할 수 있습니다. 이 예에서는 창 논리가 태그 사이 &lt;script> 에 jsp 구성 요소에 포함 되어 있습니다.
+기본 제공 ` [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` 객체는 트리 구조의 데이터에 대한 트리 구조의 UI 표현을 제공합니다. 사용 중인 ExtJS Widget 패키지에 **포함 된 트리 개요 구성 요소는 개체를 사용 `TreePanel` 하 여 지정 된 경로 아래에 jcr 트리를 표시 하는 방법을** 보여줍니다. 창 자체를 도킹/도킹 해제할 수 있습니다. 이 예에서는 창 논리가 태그 사이 &lt;script> 에 jsp 구성 요소에 포함 되어 있습니다.
 
 샘플 페이지에 트리 개요 **구성 요소를 포함** 하려면 다음을 수행 하십시오.
 
@@ -587,7 +585,7 @@ RTE 플러그인:
 기본 버전의 [그리드 개요 **] 구성 요소는** 정적 데이터가 포함 된 창을 표 형식 포맷에 표시 합니다. 이 예에서 논리는 구성 요소에 다음과 같은 두 가지 방식으로 포함 됩니다.
 
 * 일반 논리는 태그 사이 &lt;script> 에서 정의 됩니다.
-* 특정 논리는 별도의 .js 파일에서 사용할 수 있으며 jsp에 연결 됩니다. 이 설정을 사용 하면 원하는 &lt;script> 태그를 주석으로 처리 하 여 두 논리 (정적/동적) 간에 전환할 수 있습니다.
+* 특정 논리는 별도의 .js 파일에서 사용할 수 있으며 jsp에서 연결됩니다. 이 설정을 사용하면 원하는 주석을 달아 두 논리(정적/동적) 간을 전환할 수 있습니다 &lt;script> 태그 사이에 코드를 삽입하지 마십시오.
 
 그리드 개요 구성 요소:
 

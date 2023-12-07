@@ -1,18 +1,14 @@
 ---
 title: "자습서: 첫 번째 적응형 양식 만들기"
-seo-title: "Tutorial: Create your first adaptive form"
 description: 비즈니스 클래스, 대화형 및 반응형 양식을 만드는 방법을 알아봅니다.
-seo-description: Learn to create business class, interactive, and responsive forms.
-uuid: ee351a3f-ea6a-4b4c-8045-4948ad51b7c1
 topic-tags: introduction
-discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 11%
+source-wordcount: '905'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +16,7 @@ ht-degree: 11%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -95,7 +91,7 @@ ht-degree: 11%
 목표:
 
 * 적응형 양식 필드에 규칙 만들기 및 적용
-* 규칙을 사용하여 양식 데이터 모델 서비스를 트리거하여 데이터베이스에 데이터 업데이트
+* 규칙을 사용하여 양식 데이터 모델 서비스를 트리거하여 데이터를 데이터베이스로 업데이트
 
 [![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
@@ -103,7 +99,7 @@ ht-degree: 11%
 
 ![적응형 양식 스타일 지정](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
-적응형 양식은 테마와 [편집자](../../forms/using/themes.md) 을 클릭하여 적용형 양식에 대한 테마를 만들 수 있습니다. 테마에는 구성 요소 및 패널의 스타일 지정 세부 정보가 포함되어 있으며 다른 양식에서 테마를 다시 사용할 수 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성이 포함됩니다. 테마를 양식에 적용하면 지정된 스타일이 양식의 해당 구성 요소를 반영합니다. 적응형 양식은 양식별 스타일에 대한 인라인 스타일링도 지원합니다.
+적응형 양식은 테마와 [편집자](../../forms/using/themes.md) 을 클릭하여 적용형 양식에 대한 테마를 만들 수 있습니다. 테마에는 구성 요소 및 패널의 스타일 지정 세부 정보가 포함되어 있으며 다른 양식에서 테마를 다시 사용할 수 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 양식에 적용하면 지정된 스타일이 양식의 해당 구성 요소를 반영합니다. 적응형 양식은 양식별 스타일에 대한 인라인 스타일링도 지원합니다.
 
 목표:
 

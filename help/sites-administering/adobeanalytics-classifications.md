@@ -1,19 +1,15 @@
 ---
 title: Adobe 분류
-seo-title: Adobe Classifications
 description: Adobe 분류를 사용하여 분류 데이터를 Adobe Analytics으로 내보내는 방법에 대해 알아봅니다.
-seo-description: Learn how to use Adobe Classifications to export classifications data to Adobe Analytics.
-uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 6%
+source-wordcount: '612'
+ht-degree: 5%
 
 ---
 
@@ -96,7 +92,7 @@ Adobe 분류의 25000에 따라 페이지 크기가 최대 한도로 설정될 �
 
 **SAINT 헤더 및 레코드:**
 
-| **키** | **제품** | **가격** | **크기** | **컬러** | **Color^Code** |
+| **키** | **제품** | **가격** | **크기** | **색상** | **Color^Code** |
 |---|---|---|---|---|---|
 | 1 | 내 제품 이름 | 120.90 | M | black | 101 |
 

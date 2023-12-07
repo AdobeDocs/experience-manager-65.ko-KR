@@ -1,24 +1,20 @@
 ---
 title: 참조 테마
-seo-title: Reference Themes
 description: AEM Forms에서는 소프트웨어 배포에서 가져온 적응형 양식 테마를 제공하고 을 사용하여 양식의 스타일을 지정할 수 있습니다.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
-uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 1%
+source-wordcount: '525'
+ht-degree: 0%
 
 ---
 
 # 참조 테마{#reference-themes}
 
-[테마](../../forms/using/themes.md) css에 대한 깊은 지식 없이 양식을 스타일링할 수 있습니다. 기본 테마 외에도 다음을 설치하여 가져올 수 있습니다. [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko):
+[테마](../../forms/using/themes.md) css에 대한 깊은 지식 없이 양식을 스타일링할 수 있습니다. 기본 테마 외에도 다음을 설치하여 가져올 수 있습니다. [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
 * 베릴
 * 실행

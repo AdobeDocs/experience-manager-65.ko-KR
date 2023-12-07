@@ -1,20 +1,16 @@
 ---
 title: PDF 문서 어셈블
-seo-title: Assembling PDF Documents
 description: 어셈블러 서비스를 사용하여 여러 PDF 문서를 하나의 PDF 문서로 어셈블하거나 하나의 PDF 문서를 여러 PDF 문서로 디스어셈블할 수 있습니다.
-seo-description: Use the Assembler service to assemble multiple PDF documents into one PDF document or disassemble one PDF document into multiple PDF documents.
-uuid: 0789feea-1bbc-4acd-9ad7-ddf4d05e1c68
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/performing_service_operations_using_apis
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 3dd2b0d3-6023-490a-9b17-e29cc21c1b9d
 role: Developer
 exl-id: 991f5a4e-4752-4c0d-9926-de7e4855ecd1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---

@@ -1,18 +1,16 @@
 ---
 title: Adobe Experience Manager 문제 해결
 description: Adobe Experience Manager에서 발생할 수 있는 몇 가지 문제를 해결하는 방법에 대해 알아봅니다.
-uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 5%
+source-wordcount: '536'
+ht-degree: 2%
 
 ---
 
@@ -100,7 +98,7 @@ ht-degree: 5%
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-다음을 참조하십시오. [JVM에서 스레드 덤프를 가져오는 방법](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=ko) 설명서 를 참조하십시오.
+다음을 참조하십시오. [JVM에서 스레드 덤프를 가져오는 방법](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en) 설명서 를 참조하십시오.
 
 ### 닫히지 않은 JCR 세션 확인 {#checking-for-unclosed-jcr-sessions}
 

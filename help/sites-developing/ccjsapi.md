@@ -1,19 +1,15 @@
 ---
 title: Client Context JavaScript API
-seo-title: Client Context JavaScript API
 description: Adobe Experience Manager의 Client Context용 JavaScript API에 대해 알아봅니다.
-seo-description: The JavaScript API for Client Context
-uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3106'
 ht-degree: 2%
 
 ---
@@ -204,7 +200,7 @@ CQ_Analytics.SessionStore를 확장합니다.
 
 상속된 메서드에 대해서는 CQ_Analytics.SessionStore 도 참조하십시오.
 
-#### 지우기() {#clear}
+#### clear() {#clear}
 
 세션 저장소 데이터를 제거하고 모든 초기화 속성을 제거합니다.
 
@@ -613,7 +609,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 반환된 값이 없습니다.
 
-#### 지우기() {#clear-1}
+#### clear() {#clear-1}
 
 저장소에서 모든 데이터 속성을 제거합니다.
 
@@ -747,7 +743,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 반환된 값이 없습니다.
 
-#### 재설정() {#reset}
+#### reset() {#reset}
 
 데이터 저장소의 초기 값을 복원합니다. 기본 구현은 모든 데이터를 제거합니다. 를 실행합니다. `update` 완료 시 이벤트입니다.
 

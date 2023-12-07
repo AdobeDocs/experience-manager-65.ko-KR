@@ -1,17 +1,13 @@
 ---
 title: PDF 내보내기 변환 설정 수정
-seo-title: Modifying the PDF Export conversion settings
 description: PDF 내보내기 변환 설정을 수정하는 방법을 알아봅니다.
-seo-description: Learn how to modify the PDF Export conversion settings.
-uuid: 7bade010-f422-4a76-a876-705e3cf346e6
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 982f7b7e-9ba9-437f-a337-76c355b328ac
 feature: PDF Generator
 exl-id: 48a5d992-4681-41a8-8d1d-4da6767134c2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
@@ -24,7 +20,7 @@ PDF, EPS, DOC, TXT, RTF, XML 또는 HTML 파일 내보내기를 위한 변환 �
 
 >[!NOTE]
 >
->한 파일 형식에 대한 다른 이름으로 저장 설정을 수정한 후에는 PDF 생성기에서 내보낼 때 동일한 유형의 모든 변환에 적용됩니다.
+>한 파일 형식에 대한 다른 이름으로 저장 설정을 수정한 후에는 PDF Generator에서 내보낼 때 동일한 유형의 모든 변환에 적용됩니다.
 
 1. Acrobat에서 PDF 파일을 연 채 파일 > 다른 이름으로 저장을 선택합니다.
 1. [파일 형식] 목록에서 적절한 형식을 선택합니다.

@@ -1,25 +1,21 @@
 ---
 title: 양식 필드에 대한 컨텍스트 내 도움말 작성
-seo-title: Authoring in-context help for form fields
 description: AEM Forms을 사용하면 상황에 맞는 도움말을 적응형 양식 필드 및 패널에 텍스트나 비디오를 비롯한 리치 미디어로 추가할 수 있습니다.
-seo-description: AEM Forms lets you add in-context help to adaptive form fields and panels, as text or rich media, including videos.
-uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 14%
+source-wordcount: '416'
+ht-degree: 12%
 
 ---
 
 # 양식 필드에 대한 컨텍스트 내 도움말 작성{#authoring-in-context-help-for-form-fields}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 소개 {#introduction}
 
@@ -31,7 +27,7 @@ ht-degree: 14%
 
 사이드바의 속성 탭에 있는 도움말 콘텐츠 섹션에서 다음 옵션을 사용하여 상황별 도움말을 지정할 수 있습니다.
 
-* [간단한 설명입니다](../../forms/using/authoring-in-field-help.md#p-short-description-p)
+* [간단한 설명](../../forms/using/authoring-in-field-help.md#p-short-description-p)
 * [긴 설명](../../forms/using/authoring-in-field-help.md#p-long-description-p)
 
 ![양식 필드에 대한 컨텍스트 내 도움말](assets/descriptions.png)
@@ -40,7 +36,7 @@ ht-degree: 14%
 >
 >긴 설명은 짧은 설명을 무시합니다. 둘 다 지정한 경우 긴 설명만 나타납니다.
 
-### 간단한 설명입니다 {#short-description}
+### 간단한 설명 {#short-description}
 
 간단한 설명 필드는 양식 필드 채우기에 대한 빠르고 짧은 힌트를 제공하기 위한 것입니다. 짧은 설명 필드에 지정된 텍스트는 마우스를 필드 위로 가져가면 도구 설명으로 표시됩니다.
 

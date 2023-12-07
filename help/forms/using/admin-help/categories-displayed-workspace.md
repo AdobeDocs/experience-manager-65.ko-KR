@@ -1,18 +1,14 @@
 ---
 title: 작업 영역에 표시되는 범주 관리
-seo-title: Managing the categories displayed in Workspace
 description: 작업 영역에서는 사용자가 시작할 수 있는 프로세스가 왼쪽 탐색 창의 카테고리로 표시됩니다. 작업 영역에 표시되는 이러한 범주를 관리하는 방법을 알아봅니다.
-seo-description: In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. Learn how you can manage these categories displayed in Workspace.
-uuid: c2a275f5-872e-467f-9f07-4b130631e8a8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---

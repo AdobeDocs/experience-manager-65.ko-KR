@@ -1,15 +1,11 @@
 ---
 title: "자습서: 대화형 통신 계획"
-seo-title: Plan your Interactive Communication
 description: 대화형 커뮤니케이션에 대한 구조 계획
-seo-description: Plan the anatomy for your Interactive Communication
-uuid: 1c2b5c5b-c655-4559-8748-3e0b343779c2
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 2%
@@ -94,7 +90,7 @@ ht-degree: 2%
      <li>상태 코드</li>
      <li>연결 수</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>청구 요약</td>
@@ -108,7 +104,7 @@ ht-degree: 2%
      <li>미수금</li>
      <li>기한</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>청구 요약</td>
@@ -126,7 +122,7 @@ ht-degree: 2%
      <li>총 AP(usagecharges 계산 필드)</li>
     </ul> <p>테이블 - 청구서</p> </td>
    <td>필드 없음</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>항목별 통화 - 발신</td>
@@ -135,25 +131,25 @@ ht-degree: 2%
      <li>날짜</li>
      <li>시간</li>
      <li>숫자</li>
-     <li>기간</li>
+     <li>지속 시간</li>
      <li>청구</li>
     </ul> </td>
    <td><p>모든 값</p> <p>테이블 - 호출</p> </td>
    <td>필드 없음</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>지금 결제</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>PayNow</td>
   </tr>
   <tr>
    <td>부가 가치 서비스</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>

@@ -1,17 +1,15 @@
 ---
 title: 이미지 편집기
 description: 이미지 편집기는 AEM의 핵심 조각으로, 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 구성 요소에서 사용할 수 있습니다.
-uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 16%
+source-wordcount: '292'
+ht-degree: 9%
 
 ---
 
@@ -48,7 +46,7 @@ ht-degree: 16%
 
 이미지 편집기에서 확장 가능한 벡터 그래픽(SVG)을 지원합니다.
 
-* DAM에서의 SVG 에셋 드래그 앤 드롭과 로컬 파일 시스템에서의 SVG 파일 업로드를 모두 지원합니다.
+* DAM에서의 SVG 자산 드래그 앤 드롭과 로컬 파일 시스템에서의 SVG 파일 업로드를 모두 지원합니다.
 
 ## MIME 유형별 플러그인 활성화 {#enabling-plugins-by-mime-type}
 

@@ -1,17 +1,13 @@
 ---
 title: 초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플
-seo-title: Sample for integrating drafts & submissions component with database
 description: 사용자 지정된 데이터 및 메타데이터 서비스의 구현을 참조하여 초안 및 제출 구성 요소를 데이터베이스와 통합합니다.
-seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
-uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1472'
 ht-degree: 1%
 
 ---
@@ -29,7 +25,6 @@ AEM Forms 포털 초안 및 제출 구성 요소를 통해 사용자는 양식�
 >* 이 문서에서 설명하는 예와 구성은 MySQL 5.6.24에 따라 다르며 데이터베이스 시스템에 맞게 적절하게 대체해야 합니다.
 >* 최신 버전의 AEM Forms 추가 기능 패키지를 설치했는지 확인하십시오. 사용 가능한 패키지 목록은 [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 기사.
 >* 샘플 패키지는 적응형 Forms 제출 작업에만 작동합니다.
-
 
 ## 샘플 설정 및 구성 {#set-up-and-configure-the-sample}
 
@@ -81,6 +76,7 @@ AEM Forms 포털 초안 및 제출 구성 요소를 통해 사용자는 양식�
    데이터 테이블에 다른 이름을 제공하려면 다음을 수행합니다.
 
    * 웹 콘솔 구성에서 Forms 포털 데이터 서비스 샘플 구현을 찾아 클릭합니다. 데이터 소스 및 데이터 테이블 이름의 값을 변경할 수 있습니다.
+
    >[!NOTE]
    >
    >테이블 이름을 변경하는 경우 양식 포털 구성에서 이름을 제공하십시오.
@@ -122,7 +118,7 @@ AEM Forms 포털 초안 및 제출 구성 요소를 통해 사용자는 양식�
   </tr>
   <tr>
    <td>최대 활성 연결</td>
-   <td>1000</td>
+   <td>1000년</td>
   </tr>
   <tr>
    <td>최대 유휴 연결</td>
@@ -163,7 +159,6 @@ AEM Forms 포털 초안 및 제출 구성 요소를 통해 사용자는 양식�
 >
 >* MySQL용 JDBC 드라이버는 샘플에서 제공되지 않습니다. JDBC 연결 풀을 구성하는 데 필요한 정보를 제공하고 프로비저닝되었는지 확인합니다.
 >* 작성자 및 게시 인스턴스가 동일한 데이터베이스를 사용하도록 지정합니다. JDBC 연결 URI 필드의 값은 모든 작성자 및 게시 인스턴스에 대해 동일해야 합니다.
-
 
 1. 다른 구성을 그대로 두고 을(를) 클릭합니다. **[!UICONTROL 저장]**.
 
@@ -328,9 +323,9 @@ Forms 포털의 데이터베이스 구현에서는 추가 메타데이터 테이
 다음 단계를 수행하여 을 만듭니다 [클라이언트 라이브러리](/help/sites-developing/clientlibs.md) 스크립트를 사용합니다.
 
 1. CRXDE에 로그인하고 /etc/clientlibs/ 로 이동합니다.
-1. 유형의 노드 만들기 **cq:ClientLibraryFolder** 노드의 이름을 입력합니다. (예: `validation`)
+1. 유형의 노드 만들기 **cq:ClientLibraryFolder** 노드의 이름을 입력합니다. 예: `validation`
 
-   클릭 **[!UICONTROL 모두 저장]**.
+   **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
 1. 노드를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 새 파일 만들기]**&#x200B;확장자가 .txt인 파일을 생성합니다. 예를 들어, `js.txt`새로 생성된 .txt 파일에 다음 코드를 추가하고 **[!UICONTROL 모두 저장]**.
 
@@ -341,7 +336,7 @@ Forms 포털의 데이터베이스 구현에서는 추가 메타데이터 테이
 
    위의 코드에서 `util` 는 폴더 이름이며, `util.js` 에 있는 파일 이름 `util` 폴더를 삭제합니다. 다음 `util` 폴더 및 `util.js` 파일은 다음 단계에서 생성됩니다.
 
-1. 마우스 오른쪽 단추 클릭 `cq:ClientLibraryFolder` 2단계에서 생성된 노드는 만들기 > 폴더 만들기를 선택합니다. 다음 이름의 폴더 만들기 `util`. 클릭 **[!UICONTROL 모두 저장]**. 마우스 오른쪽 단추 클릭 `util` 폴더에서 만들기 > 파일 만들기를 선택합니다. 이름이 인 파일 만들기 `util.js`. 클릭 **[!UICONTROL 모두 저장]**.
+1. 마우스 오른쪽 단추 클릭 `cq:ClientLibraryFolder` 2단계에서 생성된 노드는 만들기 > 폴더 만들기를 선택합니다. 다음 이름의 폴더 만들기 `util`. 클릭 **[!UICONTROL 모두 저장]**. 마우스 오른쪽 단추 클릭 `util` 폴더에서 만들기 > 파일 만들기를 선택합니다. 이름이 인 파일 만들기 `util.js`. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
 1. util.js 파일에 다음 코드를 추가하고 **[!UICONTROL 모두 저장]**. 파일 이름의 코드 유효성 검사 길이입니다.
 

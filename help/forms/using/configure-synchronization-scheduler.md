@@ -1,20 +1,16 @@
 ---
 title: 동기화 스케줄러 구성
-seo-title: Configuring the synchronization scheduler
 description: 에셋을 마이그레이션하고 동기화하고, 동기화 스케줄러를 구성하고, 폴더를 사용하여 에셋을 정렬하는 방법을 알아봅니다.
-seo-description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
-uuid: b2c89feb-2947-418a-b343-4c01e453602b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
 role: Admin
 exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 1%
+source-wordcount: '288'
+ht-degree: 0%
 
 ---
 

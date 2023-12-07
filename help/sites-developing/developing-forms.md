@@ -1,24 +1,20 @@
 ---
-title: 양식 개발(클래식 UI)
-seo-title: Developing Forms (Classic UI)
+title: Forms 개발(클래식 UI)
 description: Adobe Experience Manager의 클래식 UI에 대한 양식을 개발하는 방법 알아보기
-seo-description: Learn how to develop forms
-uuid: 33859f29-edc5-4bd5-a634-35549f3b5ccf
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1945'
+source-wordcount: '1930'
 ht-degree: 1%
 
 ---
 
-# 양식 개발(클래식 UI){#developing-forms-classic-ui}
+# Forms 개발(클래식 UI){#developing-forms-classic-ui}
 
 양식의 기본 구조는 다음과 같습니다.
 

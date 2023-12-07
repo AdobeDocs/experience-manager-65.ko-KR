@@ -1,17 +1,13 @@
 ---
 title: 적응형 및 HTML5 양식용 외관 프레임워크
-seo-title: Appearance framework for adaptive and HTML5 forms
 description: Mobile Forms은 양식 템플릿을 HTML 5 양식으로 렌더링합니다. 이러한 양식에서는 외형에 jQuery, Backbone.js 및 Underscore.js 파일을 사용하여 스크립팅을 활성화합니다.
-seo-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting.
-uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 exl-id: 3458471a-9815-463e-8044-68631073863c
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
@@ -96,7 +92,7 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
 <table>
  <tbody>
   <tr>
-   <th>Event </th>
+   <th>이벤트 </th>
    <th>설명</th>
   </tr>
   <tr>
@@ -187,7 +183,7 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
    <td>선택한 값의 배열입니다.<br /> </td>
   </tr>
   <tr>
-   <td>항목<br /> </td>
+   <td>개 항목<br /> </td>
    <td>옵션으로 표시할 개체의 배열입니다. 각 객체에는 두 개의 속성 -<br /> 저장: 저장할 값, 표시할 값: 표시할 값입니다.<br /> <br /> </td>
   </tr>
   <tr>
@@ -247,7 +243,7 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
    <th>설명</th>
   </tr>
   <tr>
-   <td>values</td>
+   <td>값</td>
    <td><p>값 배열(설정/해제/중립).</p> <p>checkButton의 다양한 상태에 대한 값 배열입니다. values[0] 은 상태가 ON일 때의 값이고 values[1] 은 상태가 OFF일 때의 값입니다.<br /> values[2] 는 상태가 NEUTRAL일 때의 값입니다. 값 배열의 길이는 상태 옵션의 값과 같습니다.<br /> </p> </td>
   </tr>
   <tr>

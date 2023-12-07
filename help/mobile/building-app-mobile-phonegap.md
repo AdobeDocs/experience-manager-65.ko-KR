@@ -1,14 +1,12 @@
 ---
 title: 모바일 애플리케이션 구축
 description: 이 페이지에서는 GitHub에서 사용할 수 있는 코드를 사용하여 모바일 애플리케이션을 빌드하는 방법에 대한 전체 단계별 문서를 여기에서 확인할 수 있습니다. 테스트하거나 앱스토어에 게시하기 위해 장치 또는 시뮬레이터에 설치할 애플리케이션을 빌드합니다. PhoneGap 명령줄 인터페이스를 사용하여 로컬로 애플리케이션을 빌드하거나 PhoneGap Build을 사용하여 클라우드에서 애플리케이션을 빌드할 수 있습니다.
-uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%

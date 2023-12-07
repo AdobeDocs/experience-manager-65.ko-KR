@@ -1,17 +1,15 @@
 ---
 title: Java Content Repository에 있는 노드의 이름 지정 규칙
 description: 저장소의 노드는 Java Content Repository의 이름 지정 규칙에 따릅니다
-uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
-source-git-commit: 8cfc42dc8fdf4dc0bfd3f002385f100c81b15993
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 7%
+source-wordcount: '284'
+ht-degree: 2%
 
 ---
 
@@ -46,7 +44,7 @@ ht-degree: 7%
 
 ### 페이지 관리자 {#page-manager}
 
-[PageManager](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) 은 다음을 기반으로 페이지 수준 작업을 위한 메서드를 제공합니다. [JCRUtil](#jcr-utilities).
+[PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) 은 다음을 기반으로 페이지 수준 작업을 위한 메서드를 제공합니다. [JCRUtil](#jcr-utilities).
 
 ### 표준 UI {#standard-ui}
 

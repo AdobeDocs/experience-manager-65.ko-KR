@@ -1,19 +1,15 @@
 ---
 title: PDF 유틸리티 서비스 Java APIQuick 시작(SOAP)
-seo-title: PDF Utilities Service Java APIQuick Start(SOAP)
 description: PDF 유틸리티 서비스를 사용하여 PDF 문서를 XDP 문서로 변환하고, XDP 문서를 PDF 문서로 변환하고, PDF 문서 속성을 검색하고, PDF 문서에 대한 저장 스타일을 설정하고, PDF 문서를 정리합니다.
-seo-description: Use the PDF Utilities service to convert a PDF document to an XDP document, convert an XDP document to a PDF document, retrieve PDF document properties, setting the save style for a PDF document, and sanitize PDF documents.
-uuid: 96bb2bd5-b274-43d4-a664-49cc1c526b3f
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 role: Developer
 exl-id: e861d848-b0b7-4ae9-a56d-c0957ec95730
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---

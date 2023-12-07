@@ -1,20 +1,16 @@
 ---
 title: HTML5 양식에 대한 그림 절 지원
-seo-title: Picture clause support for HTML5 forms
 description: HTML5 양식은 날짜, 텍스트 및 숫자 기호에 대한 표시 값과 서식 있는 값에 대한 XFA Picture 절을 지원합니다.
-seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
-uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: Mobile Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 1%
+source-wordcount: '633'
+ht-degree: 0%
 
 ---
 
@@ -138,7 +134,7 @@ HTML5 양식은 숫자 그림 기호를 지원합니다. 다만 PDF forms과 HTM
    <td>한 자리 또는 아무 것도 아님</td>
   </tr>
   <tr>
-   <td>E</td>
+   <td>오류</td>
    <td><strong>출력 서식</strong>: 지수 기호(E)로 구성된 부동 소수점 수의 지수 부분입니다. 뒤에 더하기 또는 빼기 기호(선택 사항)가 옵니다. 뒤에 지수 값이 옵니다.<br /> </td>
    <td>출력 서식과 동일</td>
   </tr>
@@ -154,7 +150,7 @@ HTML5 양식은 숫자 그림 기호를 지원합니다. 다만 PDF forms과 HTM
   </tr>
   <tr>
    <td>V</td>
-   <td>널리 사용되는 로케일의 십진수 반경. 입력 구문 분석 시 십진수 반지름을 사용할 수 있습니다.</td>
+   <td>널리 사용되는 로케일의 십진수 반경. 입력 구문 분석 시 십진수 반지름을 암시하도록 허용합니다.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>

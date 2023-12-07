@@ -1,18 +1,14 @@
 ---
 title: 어셈블러 서비스 사용
-seo-title: Using Assembler Service
 description: 어셈블러 서비스를 사용하면 PDF 및 XDP 문서를 결합, 재배열 및 강화하고 PDF 문서에 대한 정보를 얻을 수 있습니다.
-seo-description: The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents.
-uuid: 1efce50b-2d98-408e-aa43-ac4999de41a8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
 exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2118'
 ht-degree: 6%
 
 ---
@@ -346,4 +342,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-DDX 및 어셈블러 서비스를 사용하여 다른 LiveC Cycle Services를 호출하면 프로세스 다이어그램을 단순화할 수 있습니다. 워크플로우를 사용자 지정하는 데 드는 노력을 줄일 수도 있습니다. (추가 참조
+DDX 및 어셈블러 서비스를 사용하여 다른 LiveC Cycle Services를 호출하면 프로세스 다이어그램을 단순화할 수 있습니다. 워크플로우를 사용자 지정하는 데 드는 노력을 줄일 수도 있습니다. (또한 참조

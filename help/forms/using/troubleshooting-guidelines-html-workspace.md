@@ -1,19 +1,15 @@
 ---
 title: AEM Forms 작업 공간 문제 해결 지침
-seo-title: Troubleshooting guidelines for AEM Forms workspace
 description: 로그를 활성화하고 브라우저에서 디버거를 사용하여 AEM Forms 작업 공간 문제를 해결합니다.
-seo-description: Enable logs and use debugger in browser to troubleshoot AEM Forms workspace.
-uuid: 07b8c8ed-f1ff-4be5-8005-251ff7b2ac85
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 1%
+source-wordcount: '704'
+ht-degree: 0%
 
 ---
 

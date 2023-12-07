@@ -1,16 +1,12 @@
 ---
 title: AEM Sites 단일 페이지 애플리케이션에 적응형 양식 또는 대화형 통신 포함
-seo-title: Embed adaptive forms or Interactive Communications in AEM Sites pages
 description: AEM Sites 페이지에 적응형 양식 또는 대화형 통신을 임베드합니다. 사용자는 Sites 페이지를 종료하지 않고 양식을 작성하고 제출할 수 있습니다.
-seo-description: You can embed adaptive forms or Interactive Communication in AEM Sites pages. Users can fill and submit forms without leaving the Sites page.
-uuid: 4c75494e-e9d2-43b9-bbae-562e0eda8abb
 topic-tags: author, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a74ed6c1-3006-4baf-bd77-ad4045e23c22
 docset: aem65
 feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 4%

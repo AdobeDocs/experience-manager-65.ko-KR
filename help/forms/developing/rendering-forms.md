@@ -1,18 +1,14 @@
 ---
 title: Forms 렌더링
-seo-title: Rendering Forms
 description: Forms 서비스를 사용하여 일반적으로 디자이너에서 만든 양식을 확인, 처리, 변환 및 제공하는 대화형 데이터 캡처 클라이언트 애플리케이션을 만듭니다. 양식 작성자는 Forms 서비스가 다양한 브라우저 환경의 PDF, SWF 또는 HTML에서 렌더링하는 단일 양식 디자인을 개발할 수 있습니다.
-seo-description: Use the Forms service to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors can develop a single form design that the Forms service renders in PDF, SWF, or HTML in various browser environments.
-uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/performing_service_operations_using_apis
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
-discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
 exl-id: ec9ccf04-7cec-493a-91ab-0e399a905338
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%

@@ -1,20 +1,16 @@
 ---
 title: SubmittedXML 데이터를 사용하여 PDF 문서 생성
-seo-title: Creating PDF Documents with SubmittedXML Data
 description: Forms 서비스를 사용하여 사용자가 대화형 양식에 입력한 양식 데이터를 검색합니다. 양식 데이터를 다른 AEM Forms 서비스 작업에 전달하고 데이터를 사용하여 PDF 문서를 만듭니다.
-seo-description: Use the Forms service to retrieve the form data that the user entered into an interactive form. Pass the form data to another AEM Forms service operation and create a PDF document using the data.
-uuid: 2676c614-8988-451b-ac7c-bd07731a3f5f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 role: Developer
 exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -108,7 +104,7 @@ Forms, 출력 및 Document Management API(Java)를 사용하여 제출된 XML �
       * 다음을 지정하는 문자열 값 `HTTP_USER_AGENT` 헤더 값(예: ) `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` 런타임 옵션을 저장하는 개체입니다.
 
-      다음 `processFormSubmission` 메서드가 을 반환합니다. `FormsResult` 양식 제출 결과를 포함하는 개체입니다.
+     다음 `processFormSubmission` 메서드가 을 반환합니다. `FormsResult` 양식 제출 결과를 포함하는 개체입니다.
 
    * 다음을 호출하여 Forms 서비스가 양식 데이터 처리를 완료했는지 여부 확인 `FormsResult` 개체 `getAction` 메서드를 사용합니다. 이 메서드가 값을 반환하는 경우 `0`, 데이터를 처리할 준비가 되었습니다.
    * 다음을 만들어 양식 데이터 검색 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 개체 `getOutputContent` 메서드를 사용합니다. (이 개체에는 출력 서비스로 전송할 수 있는 양식 데이터가 포함되어 있습니다.)
@@ -117,7 +113,6 @@ Forms, 출력 및 Document Management API(Java)를 사용하여 제출된 XML �
    * 만들기 `org.w3c.dom.DocumentBuilder` 를 호출하여 개체 `org.w3c.dom.DocumentBuilderFactory` 개체 `newDocumentBuilder` 메서드를 사용합니다.
    * 만들기 `org.w3c.dom.Document` 를 호출하여 개체 `org.w3c.dom.DocumentBuilder` 개체 `parse` 메서드 및 전달 `java.io.InputStream` 개체.
    * XML 문서 내에서 각 노드의 값을 검색합니다. 이 작업을 수행하는 한 가지 방법은 두 매개 변수를 허용하는 사용자 지정 메서드를 만드는 것입니다. `org.w3c.dom.Document` 객체 및 값을 검색할 노드의 이름입니다. 이 메서드는 노드의 값을 나타내는 문자열 값을 반환합니다. 이 프로세스를 따르는 코드 예제에서 이 사용자 지정 메서드는 이라고 합니다 `getNodeText`. 이 메서드의 본문이 표시됩니다.
-
 
 1. 출력 서비스를 사용하여 비대화형 PDF 문서를 만듭니다.
 

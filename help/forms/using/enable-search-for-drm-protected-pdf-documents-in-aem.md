@@ -1,21 +1,17 @@
 ---
 title: AEM에서 문서 보안으로 보호된 PDF 문서를 검색할 수 있도록 설정
-seo-title: Enable AEM to search document security protected PDF documents
 description: DRM 보호 PDF 문서에서 전체 텍스트 검색을 수행할 수 있도록 기본 AEM 검색을 활성화하는 방법에 대해 알아봅니다.
-seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
-uuid: ec6e5d53-a74c-4958-a389-7937d073c083
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 1%
+source-wordcount: '684'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +60,7 @@ AEM search는 AEM assets를 검색 및 찾고 일반 텍스트 파일, Microsoft
    * **사용자 이름:** AEM 서버에서 호출을 시작하는 데 사용할 AEM Forms on JEE 계정의 사용자 이름을 지정합니다. 지정된 계정에 JEE 서버의 AEM Forms에서 문서 서비스를 시작할 수 있는 권한이 있어야 합니다.
    * **암호**: 사용자 이름 필드에 언급된 JEE의 AEM Forms 계정에 대한 암호를 지정합니다.
 
-   **저장**&#x200B;을 클릭합니다. AEM은 문서 보안으로 보호된 PDF 문서를 검색할 수 있도록 활성화됩니다.
+   클릭 **저장**. AEM은 문서 보안으로 보호된 PDF 문서를 검색할 수 있도록 활성화됩니다.
 
 #### 상호 인증을 사용하여 Adobe LiveCycle 클라이언트 SDK 번들 구성 {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
@@ -80,7 +76,7 @@ AEM search는 AEM assets를 검색 및 찾고 일반 텍스트 파일, Microsoft
    * **트러스트 스토어 암호**: truststore 파일의 암호를 지정합니다.
    * **서비스 이름**: 지정된 서비스 목록에 RightsManagementService를 추가합니다.
 
-   **저장**&#x200B;을 클릭합니다. AEM을 사용하면 문서 보안으로 보호된 PDF 문서를 검색할 수 있습니다.
+   클릭 **저장**. AEM을 사용하면 문서 보안으로 보호된 PDF 문서를 검색할 수 있습니다.
 
 ### 정책으로 보호된 샘플 PDF 문서 색인화 {#index-a-sample-policy-protected-pdf-document}
 

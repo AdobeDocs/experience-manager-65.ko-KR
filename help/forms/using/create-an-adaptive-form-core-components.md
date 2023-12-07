@@ -1,8 +1,6 @@
 ---
 title: 적응형 양식을 만드는 방법
-seo-title: Learn how to create a Core Components based Adaptive Form on AEM 6.5 Forms.
 description: 을 사용하여 적응형 양식을 만드는 방법 알아보기 [!DNL Experience Manager Forms]. 적응형 Forms은 정보 수집 및 처리를 간소화하는 반응형 HTML 5 양식입니다. 양식 데이터 모델 및 XML 또는 JSON 스키마를 기반으로 적응형 양식을 만드는 방법에 대해 자세히 알아보십시오.
-seo-description: Learn how to create an Adaptive Form using [!DNL Experience Manager Forms]. Adaptive Forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an Adaptive Form based on a Form Data Model and XML or JSON schema.
 Keywords: create adaptive form core component, create core component based adaptive form, creare adaptive form
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 contentOwner: Khushwant Singh
@@ -10,7 +8,7 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1743'
 ht-degree: 35%

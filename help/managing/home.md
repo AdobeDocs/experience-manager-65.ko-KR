@@ -1,13 +1,11 @@
 ---
 title: AEM 6.5 관리 사용 안내서
-seo-title: AEM 6.5 Managing User Guide
 description: 주요 리소스의 지원과 포괄적인 AEM 6.5 사용 안내서 컬렉션을 통해 AEM 프로젝트를 성공적으로 관리하는 방법을 알아봅니다.
-seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 85%
+source-wordcount: '292'
+ht-degree: 81%
 
 ---
 
@@ -17,7 +15,7 @@ ht-degree: 85%
 
 ## 주요 AEM 문서
 
-* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
+* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
 * [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
@@ -37,15 +35,15 @@ ht-degree: 85%
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
-| [Commerce 사용 안내서](/help/commerce/home.md) | AEM의 Commerce Integration Framework에 대해 알아봅니다. |
+| [Commerce 사용 안내서](/help/commerce/home.md) | AEM의 Commerce integration framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 
 ## 주요 AEM 리소스
 
 * [AEM 자습서](https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-4-videos.html)
-* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
+* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
-* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 * [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

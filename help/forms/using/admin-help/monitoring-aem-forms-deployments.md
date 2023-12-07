@@ -1,18 +1,14 @@
 ---
 title: AEM Forms 배포 모니터링
-seo-title: Monitoring AEM forms deployments
 description: 시스템 수준과 내부 수준 모두에서 AEM Forms 배포를 모니터링할 수 있습니다. 이 문서에서 AEM Forms 배포 모니터링에 대해 자세히 알아보십시오.
-seo-description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
-uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---

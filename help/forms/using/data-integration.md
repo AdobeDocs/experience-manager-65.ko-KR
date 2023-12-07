@@ -1,17 +1,13 @@
 ---
 title: AEM Forms 데이터 통합
-seo-title: AEM Forms Data Integration
 description: 데이터 통합을 통해 AEM Forms을 다양한 데이터 소스와 통합하고 양식 데이터 모델을 만들어 적응형 양식 및 대화형 커뮤니케이션을 만들고 작업할 수 있습니다.
-seo-description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
-uuid: 01df045e-1b26-437c-9674-fd223ecd5097
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
-discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
 docset: aem65
 feature: Form Data Model
 exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%

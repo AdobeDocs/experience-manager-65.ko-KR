@@ -1,16 +1,12 @@
 ---
 title: 양식 제출 메타데이터에 사용자 데이터의 정보 추가
-seo-title: Adding information from user data to form submission metadata
 description: 사용자 제공 데이터를 사용하여 제출된 양식의 메타데이터에 정보를 추가하는 방법을 알아봅니다.
-seo-description: Learn how to add information to metadata of a submitted form with user provided data.
-uuid: c3eea3c0-31f8-4bf8-b5cf-34f907bdbdba
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 7%

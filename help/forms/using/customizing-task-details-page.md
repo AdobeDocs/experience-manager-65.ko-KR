@@ -1,15 +1,11 @@
 ---
 title: 작업 세부 정보 페이지 사용자 정의
-seo-title: Customizing the task details page
 description: AEM Forms 작업 영역에서 작업 세부 정보 페이지를 사용자 정의하여 작업에 대해 표시되는 기본 정보를 수정하는 방법
-seo-description: How-to customize the task details page in AEM Forms workspace to modify the default information displayed about a task.
-uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 exl-id: 48c24442-22d2-4d1a-9462-0aba78340281
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -28,9 +24,9 @@ ht-degree: 0%
 작업 세부 정보 페이지를 사용자 정의하려면 다음과 같이 하십시오.
 
 1. 팔로우 [AEM Forms 작업 영역 사용자 정의에 대한 일반 단계입니다.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. 추가 정보를 표시하려면 해당 키-값 쌍을 `translation.json` 파일 위치: `todo`블록 > `details`블록 > `app`블록 > [ `required`차단].
+1. 추가 정보를 표시하려면 해당 키-값 쌍을 `translation.json` 파일 위치: `todo`블록 > `details`블록 > `app`블록 > [`required`차단].
 
-   다음 [ `required`차단] 은 작업 정보의 작업 블록, 프로세스 정보의 프로세스 블록, 보류 중인 작업 정보의 currentpendingtask 블록 등 사용 가능한 블록을 나타냅니다.
+   다음 [`required`차단] 은 작업 정보의 작업 블록, 프로세스 정보의 프로세스 블록, 보류 중인 작업 정보의 currentpendingtask 블록 등 사용 가능한 블록을 나타냅니다.
 
    예를 들어, 작업 세부 정보 페이지에서 경로 선택 필요 정보를 추가하려면 작업 블록에 다음 키-값 쌍을 추가할 수 있습니다.
 

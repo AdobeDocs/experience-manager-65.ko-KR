@@ -1,15 +1,13 @@
 ---
 title: AEM Mobile 온디맨드
 description: AEM(Adobe Experience Manager)을 사용하여 온디맨드 서비스 앱을 개발하는 시작점으로 이 페이지를 따르십시오. 이 페이지에서는 앱 개발자와 관련된 주제를 다룹니다.
-uuid: 35b64823-9451-44bf-b254-3b6767f0d109
 contentOwner: JYOTIKA SYAL
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: cc97a926-d893-46a9-8aea-b56cbee5df01
 exl-id: a2134afd-4c0e-4a93-ac58-013b98fd9a09
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '308'
 ht-degree: 1%
 
 ---

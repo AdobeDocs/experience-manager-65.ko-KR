@@ -1,17 +1,15 @@
 ---
 title: 관리자가 시작하고 실행하는 데 도움이 되는 모범 사례
 description: Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 모범 사례를 찾아 관리자가 시작하고 실행할 수 있도록 지원합니다.
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 13%
+source-wordcount: '530'
+ht-degree: 9%
 
 ---
 
@@ -75,7 +73,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 
   <tr>
    <td>GDPR 준수</td>
    <td><a href="/help/sites-administering/gdpr-compliance-sites.md">AEM Sites GDPR 규정 준수</a></td>
-   <td>데이터 사생활 보호권에 관한 유럽 연합의 GDPR(일반 데이터 보호 규정)은 2018년 5월에 발효됩니다. AEM Sites은 GDPR을 준수합니다. 이 페이지에서는 고객에게 AEM Sites에서 GDPR 요청을 처리하는 절차를 안내합니다. 저장된 개인 데이터의 위치와 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해서도 설명합니다.</td>
+   <td>데이터 개인정보 보호권에 관한 유럽 연합의 일반 데이터 보호 규정은 2018년 5월부터 시행됩니다. AEM Sites은 GDPR을 준수합니다. 이 페이지에서는 고객에게 AEM Sites에서 GDPR 요청을 처리하는 절차를 안내합니다. 저장된 개인 데이터의 위치와 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해서도 설명합니다.</td>
   </tr>
   <tr>
    <td>인스턴스에 대한 기본 UI를 정의합니다.</td>

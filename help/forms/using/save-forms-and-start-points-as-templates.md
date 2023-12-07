@@ -1,16 +1,12 @@
 ---
 title: 양식을 템플릿으로 저장
-seo-title: Save forms as templates
 description: 반복적으로 필요한 데이터가 있는 양식에서 템플릿을 만드는 방법을 알아봅니다.
-seo-description: Learn how to create templates from forms with data required repeatedly.
-uuid: 090c6271-4061-4adc-a063-9df4953b47ce
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 exl-id: b97175fd-cc3d-457a-af11-1f8c83192eb7
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%

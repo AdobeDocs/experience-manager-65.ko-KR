@@ -1,21 +1,17 @@
 ---
 title: 커뮤니티 기능
-seo-title: Community Functions
 description: 커뮤니티 기능 콘솔에 액세스하는 방법 알아보기
-seo-description: Learn how to access the Community Functions console
-uuid: d3d70134-f318-4709-a673-b01a3467d980
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2220'
-ht-degree: 6%
+source-wordcount: '2215'
+ht-degree: 2%
 
 ---
 
@@ -92,7 +88,7 @@ ht-degree: 6%
 
   선택하면 활동 페이지에 현재 구성원이 액세스할 수 있는 커뮤니티 내에서 생성된 모든 활동이 포함된 탭이 포함됩니다. 기본값이 선택되어 있습니다.
 
-* **&quot;뉴스피드&quot; 보기 표시**
+* **&quot;뉴스 피드&quot; 보기 표시**
 
   선택하면 활동 페이지에 현재 멤버가 따르는 활동을 기반으로 활동을 필터링하는 탭이 포함됩니다. 기본값이 선택되어 있습니다.
 

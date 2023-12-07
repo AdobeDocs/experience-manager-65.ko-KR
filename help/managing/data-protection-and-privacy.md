@@ -1,18 +1,16 @@
 ---
 title: 데이터 보호 및 데이터 개인정보 보호 규정 - Adobe Experience Manager 준비
 description: 다양한 데이터 보호 및 데이터 개인정보 보호 규정에 대한 Adobe Experience Manager 지원에 대해 알아봅니다. 여기에는 EU 일반 데이터 보호 규정(GDPR), 캘리포니아 소비자 개인정보 보호법 및 새 AEM 프로젝트 구현 시 준수 방법이 포함됩니다.
-uuid: 9b0b8101-929c-4232-8c6e-1f9b8b2e0aa2
 contentOwner: AEM Docs
 topic-tags: introduction, grdp
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 40%
+source-wordcount: '890'
+ht-degree: 37%
 
 ---
 
@@ -26,7 +24,7 @@ ht-degree: 40%
 
 >[!NOTE]
 >
->개인정보 보호 문제에 대한 Adobe의 대응 및 Adobe 고객에게 의미하는 바에 대한 자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
+>개인정보 보호 문제에 대한 Adobe의 대응 및 Adobe 고객에게 의미하는 바에 대한 자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html)를 참조하십시오.
 
 Adobe은 고객 개인정보 보호 관리자 또는 AEM 관리자가 데이터 보호 및 데이터 개인정보 보호 요청을 처리할 수 있도록 문서 및 절차를 제공하고 있습니다(가능한 경우 API 포함). 이러한 규정을 준수하는 데 도움이 될 수 있습니다. 고객은 문서화된 절차를 통해 수동으로 또는 가능한 경우 외부 포털 또는 서비스에서 API에 호출하여 규제 요청을 실행할 수 있습니다.
 
@@ -36,7 +34,7 @@ Adobe은 고객 개인정보 보호 관리자 또는 AEM 관리자가 데이터 
 >
 >다른 Adobe 온디맨드 서비스의 데이터 및 관련 개인정보 보호 요청 시 해당 서비스에 대한 조치가 필요합니다.
 >
->자세한 내용은 [Adobe의 개인정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
+>자세한 내용은 [Adobe의 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html)를 참조하십시오.
 
 ## 소개 {#introduction}
 
@@ -88,7 +86,7 @@ Adobe은 Adobe Experience Manager에 대한 액세스, 삭제 및 옵트아웃�
 
 AEM의 제품 영역에 대한 규제 설명서는 아래 섹션을 참조하십시오.
 
-## AEM 기반 정보 {#aem-foundation}
+## AEM Foundation {#aem-foundation}
 
 다음을 참조하십시오 [AEM Foundation에 대한 데이터 보호 및 개인 정보 보호 요청 처리](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
@@ -110,7 +108,7 @@ AEM의 제품 영역에 대한 규제 설명서는 아래 섹션을 참조하십
 
 ## Adobe Target 및 Adobe Analytics과 AEM 통합 {#aem-integration-with-adobe-target-adobe-analytics}
 
-이러한 Adobe Experience Manager 통합은 데이터 보호 및 개인정보 보호(예: GDPR 또는 CCPA) 준비 서비스와 함께 제공됩니다. 해당 통합과 관련하여 어떠한 Adobe Target 또는 Adobe Analytics의 개인 데이터도 AEM에 저장되지 않습니다.
+이러한 Adobe Experience Manager 통합은 데이터 보호 및 개인정보 보호(예: GDPR 또는 CCPA) 준비 서비스와 함께 제공됩니다. 통합과 관련하여 Adobe Target 또는 Adobe Analytics의 개인 데이터는 AEM에 저장되지 않습니다.
 
 자세한 내용은 다음을 참조하십시오.
 

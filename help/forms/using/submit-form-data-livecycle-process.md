@@ -1,15 +1,13 @@
 ---
 title: JEE의 AEM Forms 프로세스에 데이터를 제출하도록 AEM Forms 구성
 description: 양식 데이터 처리를 위해 JEE 프로세스의 AEM Forms과 적응형 양식을 통합합니다.
-uuid: 71a894d7-7c0a-43a6-afe5-40c4a15c66d6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: ff97424d-b384-4149-9a3c-b4f00aaa1def
 docset: aem65
 role: Admin
 exl-id: 025a3314-8b9d-48e1-a74f-ea0c933e21e3
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%

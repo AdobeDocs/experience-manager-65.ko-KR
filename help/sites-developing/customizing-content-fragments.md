@@ -1,16 +1,14 @@
 ---
 title: 콘텐츠 조각 맞춤화 및 확장
-seo-title: Customizing and Extending Content Fragments
 description: 컨텐츠 조각은 표준 자산을 확장합니다. 이를 맞춤화하는 방법에 대해 알아봅니다.
-seo-description: A content fragment extends a standard asset. Learn how you can customize them.
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2794'
-ht-degree: 2%
+source-wordcount: '2728'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +43,7 @@ ht-degree: 2%
 >
 >콘텐츠 조각 템플릿은 이제 더 이상 사용되지 않습니다. 조각을 만드는 데 계속 사용할 수 있지만 대신 콘텐츠 조각 모델 을 사용하는 것이 좋습니다. 조각 템플릿에 새로운 기능이 추가되지 않으며 이후 버전에서 제거됩니다.
 
-* 콘텐츠 조각 모델:
+* 컨텐츠 조각 모델:
 
    * 구조화된 컨텐츠를 포함하는 컨텐츠 조각을 정의하는 데 사용됩니다.
    * 콘텐츠 조각 모델은 콘텐츠 조각을 만들 때 콘텐츠 조각의 구조를 정의합니다.
@@ -57,7 +55,7 @@ ht-degree: 2%
   >
   >기존 콘텐츠 조각 모델을 변경하면 종속된 조각이 영향을 받을 수 있습니다. 이로 인해 해당 조각에서 고립 속성이 발생할 수 있습니다.
 
-* 컨텐츠 조각 템플릿:
+* 콘텐츠 조각 템플릿:
 
    * 간단한 콘텐츠 조각을 정의하는 데 사용됩니다.
    * 템플릿은 콘텐츠 조각을 만들 때 콘텐츠 조각의 (기본, 텍스트 전용) 구조를 정의합니다.
@@ -525,7 +523,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 * 값: `300` (5분은 300초와 동일)
 
-## 컨텐츠 조각 템플릿 {#content-fragment-templates}
+## 콘텐츠 조각 템플릿 {#content-fragment-templates}
 
 다음을 참조하십시오 [콘텐츠 조각 템플릿](/help/sites-developing/content-fragment-templates.md) 전체 정보.
 

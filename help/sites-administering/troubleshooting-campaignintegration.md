@@ -1,16 +1,14 @@
 ---
 title: Adobe Campaign Classic 통합 문제 해결
 description: Adobe Campaign Classic 통합과 관련된 문제를 해결하는 방법을 알아봅니다.
-uuid: 835ac2c3-ef2f-4963-9047-aeda3647b114
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -102,7 +100,7 @@ AEM 인스턴스에 오래된 Adobe Campaign Classic 정보가 있는 경우 이
 
 1. AEM에 있는 모든 Adobe Campaign Classic 통합 구성을 제거합니다.
 1. 통합을 다시 빌드합니다.
-1. 템플릿 만들기.
+1. 템플릿을 만듭니다.
 
 ## Cloud Service 설정 시 SSL 연결에 오류가 표시되는 경우 {#if-a-connection-to-ssl-displays-an-error-when-setting-up-the-cloud-service}
 
@@ -122,9 +120,9 @@ at sun.security.ssl.AppOutputStream.write(Unknown Source)
 
 Adobe Campaign Classic 게재에서 콘텐츠를 동기화하려고 하면 AEM에서 뉴스레터 목록을 반환합니다. 그러나 목록의 뉴스레터에 대한 URL은 HTTPS가 아닌 HTTP 주소일 수 있습니다. 목록에서 항목 중 하나를 선택하면 오류가 발생합니다. 이 오류는 다음 설정에서 발생할 수 있습니다.
 
-* AEM 작성자와의 통신에 https를 사용하여 호스팅된 Adobe Campaign
+* AEM Author와의 통신에 https를 사용하는 호스팅된 Adobe Campaign
 * SSL을 종료하는 역방향 프록시
-* 온프레미스 AEM 작성자 인스턴스
+* On-Premise AEM 작성자 인스턴스
 
 이 문제를 해결하려면 다음을 수행하십시오.
 

@@ -1,19 +1,15 @@
 ---
 title: AEM Forms 저장소 작업
-seo-title: Working with AEM Forms Repository
 description: Java API 및 웹 서비스 API를 사용하여 폴더 만들기, 쓰기, 목록, 읽기, 업데이트 및 검색 리소스를 포함하도록 AEM Forms 저장소를 관리합니다. 또한 리소스 관계를 만들고 리소스를 잠그고 삭제하는 방법도 알아봅니다.
-seo-description: Manage AEM Forms repository to create folders, write, list, read, update resources, and search resources using the Java API and Web Service API. In addition, learn how to create resource relationships, lock and delete resources.
-uuid: 6ead49f9-ca0d-4ee4-86a6-0a9ced6ec4f8
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '9095'
+source-wordcount: '9036'
 ht-degree: 0%
 
 ---
@@ -58,7 +54,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 저장소 서비스 API를 사용하여 다음 작업을 수행할 수 있습니다.
 
-* 폴더 만들기. 다음을 참조하십시오 [폴더 만들기](aem-forms-repository.md#creating-folders).
+* 폴더를 만듭니다. 다음을 참조하십시오 [폴더 만들기](aem-forms-repository.md#creating-folders).
 * 리소스 및 해당 속성을 작성합니다. 다음을 참조하십시오 [리소스 쓰기](aem-forms-repository.md#writing-resources).
 * 주어진 컬렉션이나 다른 리소스와 관련된 리소스를 나열합니다. 다음을 참조하십시오 [리소스 나열](aem-forms-repository.md#listing-resources).
 * 리소스 및 해당 속성을 읽습니다. 다음을 참조하십시오 [리소스 읽기](aem-forms-repository.md#reading-resources).
@@ -153,7 +149,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
    다음을 사용하여 폴더의 설명 설정 `setDescription` 메서드를 호출하고 다음 매개 변수를 전달합니다.
 
-   * A `String` 리소스 컬렉션을 설명합니다. 이 예에서는 `"test Folder"`가 사용되었습니다 `.`
+   * A `String` 리소스 컬렉션을 설명합니다. 이 예에서는 `"test Folder"` 사용됨 `.`
 
 1. 저장소에 폴더 쓰기
 

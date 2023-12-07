@@ -1,18 +1,16 @@
 ---
 title: 론치 만들기
 description: 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다.
-uuid: c1a32710-8189-4a2e-bf2f-428ab30d48c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -87,7 +85,7 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
    * **새 템플릿을 사용하여 페이지 바꾸기**: 자세한 내용은 [새 템플릿을 사용하여 론치 만들기](#create-launch-with-new-template)를 참조하십시오.
    * **소스 페이지의 라이브 데이터 상속**: 이 옵션을 선택하면 소스 페이지를 변경할 때 론치 페이지 콘텐츠가 자동으로 업데이트됩니다. 이 옵션은 론치를 다음으로 만들어 이 작업을 수행합니다. [live copy](/help/sites-administering/msm.md).
 
-     기본적으로 이 옵션은 선택되어 있습니다.
+     기본적으로 이 옵션이 선택되어 있습니다.
 
    * **론치 날짜**: 론치 카피가 활성화될 날짜 및 시간입니다(**프로덕션 준비** 플래그에 따라 다름). [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)를 참조하십시오.
 
@@ -97,7 +95,7 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 
    **완료**&#x200B;를 사용하여 콘솔로 돌아가면 다음에서 론치를 보고 액세스할 수 있습니다.
 
-   * [****&#x200B;론치 콘솔](/help/sites-authoring/launches.md#the-launches-console)
+   * 다음 [**론치** 콘솔](/help/sites-authoring/launches.md#the-launches-console)
    * 다음 [**참조** 다음에서 **사이트** 콘솔](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### 새 템플릿을 사용하여 론치 만들기 {#create-launch-with-new-template}

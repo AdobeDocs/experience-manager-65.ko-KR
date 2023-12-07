@@ -1,19 +1,15 @@
 ---
 title: 페이지 분석 데이터 보기
-seo-title: Seeing Page Analytics Data
 description: 페이지 분석 데이터를 사용하여 페이지 콘텐츠의 효과를 측정합니다.
-seo-description: Use page analytics data to gauge the effectiveness of their page content.
-uuid: a3d1e4d6-56af-44a5-832f-63167ea8af52
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 28529cae-6fbd-4879-a5b8-3ec8e1bcd586
 docset: aem65
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 17%
+source-wordcount: '91'
+ht-degree: 9%
 
 ---
 

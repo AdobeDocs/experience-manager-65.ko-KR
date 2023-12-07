@@ -1,20 +1,16 @@
 ---
 title: Designer 설치 및 구성
-seo-title: Installing and configuring Designer
 description: 디자이너는 독립 실행형 설치 관리자로 사용할 수 있으며 Workbench와 함께 번들로 제공됩니다. 독립형 Designer를 설치하는 방법에 대해 알아봅니다.
-seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
-uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -40,7 +36,7 @@ ht-degree: 0%
 1. setup.exe를 두 번 클릭하여 AEM Forms Designer 설치 관리자를 실행합니다.
 1. 계속 진행하여 개인화 화면에 세부 정보와 일련 번호를 입력합니다.
 1. 사용권 계약에 동의하면 다음 을 클릭하여 계속 진행하십시오.
-1. (선택 사항) 원하는 위치에 Designer를 설치하려면 기본 설치 경로를 변경합니다. 다음을 클릭합니다.
+1. (선택 사항) 원하는 위치에 Designer를 설치하려면 기본 설치 경로를 변경합니다. 다음 을 클릭합니다.
 1. 환경 설정을 변경하려면 [뒤로]를 클릭하십시오. Designer를 설치하려면 설치를 클릭합니다.
 1. 설치가 완료되면 마침 을 클릭합니다.
 

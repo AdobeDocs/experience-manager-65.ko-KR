@@ -1,17 +1,15 @@
 ---
 title: 작성 시 AEM 문제 해결
 description: 다음 섹션에서는 AEM 사용 시 발생할 수 있는 문제들과 이러한 문제의 해결 방법에 대한 제안 사항을 다룹니다.
-uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 35%
+ht-degree: 34%
 
 ---
 
@@ -33,7 +31,7 @@ ht-degree: 35%
 
    * 페이지를 변경하고 페이지를 게시 사이트에 복제했지만 *이전* 페이지 버전이 여전히 게시 사이트에 표시되고 있습니다.
 
-* **원인**:
+* **이유**:
 
    * 이는 때로 복제 큐 문제일 수 있지만 몇 가지 원인이 있을 수 있고 대개는 캐시 문제일 수 있습니다(로컬 브라우저나 디스패처 중 하나).
 
@@ -56,7 +54,7 @@ ht-degree: 35%
 
    * 작성 환경에서 Sidekick 페이지를 편집할 때 콘텐츠가 표시되지 않습니다.
 
-* **원인**:
+* **이유**:
 
    * 드물게 현재 창의 범위 밖에 사이드 킥의 헤더를 배치했을 수 있습니다. 다시 위치를 변경할 수 없음을 의미합니다.
 
@@ -70,7 +68,7 @@ ht-degree: 35%
 
    * 사용 시 **찾기 및 바꾸기** 옵션 의 모든 인스턴스가 `find` 용어가 페이지에서 대체됩니다.
 
-* **원인**:
+* **이유**:
 
    * 의 기능 **찾기 및 바꾸기** 컨텐츠가 저장되는 방식과 검색 가능 여부에 따라 다릅니다. 예를 들어 블로그 텍스트는 `jcr:text` 검색할 수 있도록 구성되지 않은 속성입니다. 찾기 및 바꾸기 서블릿의 기본 범위는 다음 속성을 포함합니다.
 

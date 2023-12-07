@@ -1,18 +1,14 @@
 ---
 title: 이메일 서비스 공급자에 이메일 게시
-seo-title: Publishing an Email to Email Service Providers
 description: ExactTarget 및 Silverpop Engage와 같은 이메일 서비스에 뉴스레터를 게시할 수 있습니다.
-seo-description: You can publish newsletters to e-mail services such as ExactTarget and Silverpop Engage.
-uuid: 1a7adcfe-8e52-49f4-9a00-99ac99881225
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1106'
 ht-degree: 3%
 
 ---
@@ -27,7 +23,7 @@ ExactTarget 및 Silverpop Engage와 같은 이메일 서비스에 뉴스레터�
 
 이메일을 이메일 서비스 공급자에 게시하려면 다음 단계를 수행해야 합니다.
 
-1. 이메일 만들기.
+1. 이메일을 만듭니다.
 1. 이메일에 이메일 서비스 구성을 적용합니다.
 1. 이메일을 게시합니다.
 

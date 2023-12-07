@@ -1,20 +1,16 @@
 ---
 title: Live Copy 개요 콘솔
-seo-title: Live Copy Overview Console
 description: 라이브 카피 개요 콘솔의 기본 사항에 대해 알아봅니다.
-seo-description: Learn about the basics of the Live Copy Overview Console.
-uuid: 6b1841ec-950e-455b-9b30-b5f5050a67b8
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
-discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 33%
+source-wordcount: '546'
+ht-degree: 30%
 
 ---
 
@@ -22,13 +18,13 @@ ht-degree: 33%
 
 다음 **라이브 카피 개요** 을 통해 다음 작업을 수행할 수 있습니다.
 
-* 사이트 전체에 걸쳐 상속을 조회/관리합니다:
+* 사이트 간 상속 보기/관리:
 
    * 블루프린트 트리 및 해당 라이브 카피 구조를 상속 상태와 함께 조회합니다.
    * 상속 상태를 변경합니다(예: 일시 중단, 다시 시작).
    * 블루프린트 및 라이브 카피 속성 보기
 
-* 롤아웃 작업을 수행합니다
+* 롤아웃 작업 수행
 
 ## Live Copy 개요 열기 {#opening-the-live-copy-overview}
 
@@ -127,7 +123,7 @@ ht-degree: 33%
 
 ## 관계 상태 {#relationship-status}
 
-**관계 상태** 콘솔에는 다양한 기능을 제공하는 두 가지 탭이 있습니다:
+다음 **관계 상태** 콘솔에는 다양한 기능을 제공하는 두 가지 탭이 있습니다.
 
 * [관계 상태 정보](#relationship-status-information)
 * [Live Copy 정보](#live-copy-information)

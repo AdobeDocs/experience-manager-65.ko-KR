@@ -1,16 +1,12 @@
 ---
 title: 데이터 캡처 기능 설치 및 구성
-seo-title: Install and configure data capture capabilities
 description: 적응형 양식, PDF forms 및 HTML5 Forms을 설치하고 구성합니다. 적응형 양식에 대한 Adobe Analytics 및 Adobe Target을 구성하여 양식 사용을 분석하고 프로필을 기반으로 사용자를 타겟팅합니다.
-seo-description: Install and configure adaptive forms, PDF Forms, and HTML5 Forms. Configure Adobe Analytics and Adobe Target for adaptive forms to analyze usage of forms and target users based on their profile.
-uuid: 5d49032a-4dea-4f21-9dad-a7a30c5872ea
 topic-tags: installing
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 4%

@@ -1,23 +1,19 @@
 ---
-title: 사용자 지정 양식 매핑 만들기
-seo-title: Creating Custom Form Mappings
+title: 사용자 정의 양식 매핑 만들기
 description: Adobe Campaign에서 사용자 지정 테이블을 만들 때 해당 사용자 지정 테이블에 매핑되는 양식을 AEM에서 빌드할 수 있습니다
-seo-description: When you create a custom table in Adobe Campaign, you may want to build a form in AEM that maps to that custom table
-uuid: f3bde513-6edb-4eb6-9048-40045ee08c4a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 4%
+source-wordcount: '534'
+ht-degree: 3%
 
 ---
 
-# 사용자 지정 양식 매핑 만들기{#creating-custom-form-mappings}
+# 사용자 정의 양식 매핑 만들기{#creating-custom-form-mappings}
 
 Adobe Campaign에서 사용자 지정 테이블을 만들 때 해당 사용자 지정 테이블에 매핑되는 양식을 AEM에서 빌드할 수 있습니다.
 
@@ -32,7 +28,7 @@ Adobe Campaign에서 사용자 지정 테이블을 만들 때 해당 사용자 �
 
 다음을 참조하십시오 [AEM과 Adobe Campaign Classic 통합](/help/sites-administering/campaignonpremise.md) 추가 정보.
 
-## 사용자 지정 양식 매핑 만들기 {#creating-custom-form-mappings-2}
+## 사용자 정의 양식 매핑 만들기 {#creating-custom-form-mappings-2}
 
 사용자 정의 양식 매핑을 생성하려면 다음 섹션에 자세히 설명되어 있는 이러한 높은 수준의 단계를 수행해야 합니다.
 

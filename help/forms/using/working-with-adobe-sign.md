@@ -1,17 +1,13 @@
 ---
 title: 적응형 양식에서 Adobe Sign 사용
-seo-title: Using Adobe Sign in an adaptive form
 description: 적응형 양식용 전자 서명(Adobe Sign) 워크플로우를 사용하여 서명 워크플로우를 자동화하고, 단일 및 다중 서명 프로세스를 간소화하며, 모바일 장치에서 양식에 전자적으로 서명할 수 있습니다.
-seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
-uuid: cc3012ed-c318-4529-9adc-61aa5b5761a0
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '3875'
 ht-degree: 1%

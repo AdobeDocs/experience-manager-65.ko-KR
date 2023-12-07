@@ -1,17 +1,15 @@
 ---
 title: 샘플 ContextHub 저장소 후보
-seo-title: Sample ContextHub Store Candidates
 description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 저장소 후보를 제공합니다
-seo-description: ContextHub provides several sample store candidates that you can use in your solutions
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 2%
+source-wordcount: '464'
+ht-degree: 1%
 
 ---
 

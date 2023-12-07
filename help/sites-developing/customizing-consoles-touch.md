@@ -1,20 +1,16 @@
 ---
 title: 콘솔 사용자 지정
-seo-title: Customizing the Consoles
 description: AEM은 작성 인스턴스의 콘솔을 사용자 지정할 수 있는 다양한 메커니즘을 제공합니다
-seo-description: AEM provides various mechanisms to enable you to customize the consoles of your authoring instance
-uuid: 8ecce9ff-5907-41e1-af3b-a8646352d633
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 25%
+source-wordcount: '646'
+ht-degree: 22%
 
 ---
 
@@ -93,7 +89,7 @@ AEM은 콘솔(및 [페이지 작성 기능](/help/sites-developing/customizing-p
 
 ### 도구 모음에 새 작업 추가 {#add-new-action-to-the-toolbar}
 
-1. 고유한 구성 요소를 빌드하고 사용자 정의 작업을 위한 해당 클라이언트 라이브러리를 포함시킬 수 있습니다. 예: **twitter으로 승격** 작업:
+1. 고유한 구성 요소를 빌드하고 사용자 지정 작업에 해당하는 클라이언트 라이브러리를 포함할 수 있습니다. 예: **twitter으로 승격** 작업:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 

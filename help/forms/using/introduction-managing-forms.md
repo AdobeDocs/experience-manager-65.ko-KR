@@ -1,18 +1,14 @@
 ---
 title: 양식 관리 소개
-seo-title: Introduction to managing forms
 description: AEM Forms은 적응형 Forms 및 관련 에셋을 관리하는 도구를 제공합니다. 이 문서에서는 주요 양식 관리 기능 및 사용자 인터페이스 요소를 소개합니다.
-seo-description: AEM Forms provides tools to manage Adaptive Forms and related assets. This article introduces you to the key forms management capabilities and user interface elements.
-uuid: 2275a0b6-b31e-4d8e-8154-ccdfff3705aa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager, introduction
-discoiquuid: c0e4c9bb-e12a-4f9a-a8fa-1a8ad41d3995
 docset: aem65
 exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1566'
 ht-degree: 1%
 
 ---
@@ -38,7 +34,7 @@ AEM [!DNL Forms] 는 양식, 문서, 테마, 편지, 문서 단편, 데이터 �
 * 문서 단편
 * 데이터 사전
 
-   ![AEM Forms 콘솔](assets/aem_forms_console_new.png)
+  ![AEM Forms 콘솔](assets/aem_forms_console_new.png)
 
 ### 양식 및 문서  {#forms-documents}
 
@@ -59,9 +55,9 @@ Forms 및 문서는 대화형 통신, 적응형 양식, 적응형 양식 단편 
    * **일반 폴더:** 이러한 폴더는 AEM 내에서 생성된 에셋에 사용됩니다 [!DNL Forms] 사용자 인터페이스. 이러한 폴더에는 엄격한 폴더 구조가 없습니다. 이러한 폴더에 적응형 양식, 대화형 통신, 적응형 양식 단편, 양식 템플릿(XDP), PDF forms, 문서 및 관련 에셋의 이름을 바꾸고, 하위 폴더를 만들고, 저장할 수 있습니다.
    * **Forms Workflow 폴더:** Forms 워크플로 폴더는 Workbench 프로세스(LiveCycle 아카이브)가 마이그레이션되고 AEM과 동기화되면 생성됩니다 [!DNL Forms] 사용자 인터페이스. 이름 변경, 하위 폴더 만들기, 대화형 통신, 적응형 양식 조각 또는 대화형 통신을 만들 수 없습니다. 또한 버전 폴더를 삭제하거나 적응형 양식, 적응형 양식 단편 또는 대화형 통신을 버전 폴더와 병렬로 만들어 업로드할 수 없습니다.
 
-   ![폴더](assets/folders.png)
+  ![폴더](assets/folders.png)
 
-   **A.** 일반 폴더 **B.** Forms Workflow 폴더
+  **A.** 일반 폴더 **B.** Forms Workflow 폴더
 
 Forms 및 문서 패널에서는 다음 옵션도 제공됩니다.
 
@@ -97,9 +93,9 @@ AEM 도구 패널에는 다양한 구성 요소용 도구가 포함되어 있습
 * **감시 폴더 구성:** 관리자는 사용자가 감시 폴더에 파일(예: PDF 파일)을 배치할 때 사전 구성된 작업이 시작되고 파일을 조작할 수 있도록 감시 폴더라고 하는 네트워크 폴더를 구성할 수 있습니다. 자세한 내용은 [감시 폴더 만들기 및 구성](/help/forms/using/creating-configure-watched-folder.md).
 * **Forms 앱 오프라인 서비스 구성:** 더 AEM [!DNL Forms] app offline 서비스는 양식에 사용된 리소스의 경로 또는 URL을 캐시합니다. 양식에 사용된 리소스의 경로 또는 URL을 캐시하면 서버측 성능이 향상됩니다. AEM Forms 앱의 서버측 오프라인 구성 요소를 구성하려면 을 참조하십시오. [오프라인 모드에서 작업](/help/forms/using/work-offline-mode.md).
 
-   ![AEM Forms 도구](assets/aem_forms_tools_new.png)
+  ![AEM Forms 도구](assets/aem_forms_tools_new.png)
 
-* **PDF 생성기 구성:** 관리자가 AEM을 구성할 수 있습니다. [!DNL Forms] PDF 생성기 설정, 사용자 계정 추가, PDF 생성기로 구성 가져오기 또는 내보내기.
+* **구성 PDF Generator:** 관리자가 AEM을 구성할 수 있습니다. [!DNL Forms] PDF Generator 설정, PDF Generator 계정 추가, 사용자 계정으로 구성 가져오기 또는 내보내기.
 * **응답 관리 에셋 게시:** AEM [!DNL Forms] 작성자 인스턴스의 모든 편지, 문서 단편, 데이터 사전 및 관련 종속성을 한 번에 게시할 수 있습니다. 게시된 에셋에는 모든 서신 관리 에셋과 관련 의존성이 포함됩니다. 자세한 내용은 [양식 및 문서 게시 및 게시 취소](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **응답 관리 에셋 내보내기:** 모든 서신 관리 에셋과 관련 종속성을 AEM에서 패키지로 다운로드할 수 있습니다 [!DNL Forms] 인스턴스. 자세한 단계는 를 참조하십시오. [AEM Forms으로 에셋 가져오기 및 내보내기](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
@@ -122,6 +118,6 @@ AEM 도구 패널에는 다양한 구성 요소용 도구가 포함되어 있습
 
 * **작업 도구 모음**: 에셋을 선택하면 에셋 목록 위에 작업 도구 모음이 표시됩니다. 여기에는 선택한 에셋에 대한 모든 관리 도구가 포함되어 있습니다. 도구 아이콘 위로 마우스를 가져가면 해당 기능을 설명하는 도구 설명을 볼 수 있습니다
 
-   ![적응형 양식에 대한 작업 도구 모음](assets/action_toolbar_new.png)
+  ![적응형 양식에 대한 작업 도구 모음](assets/action_toolbar_new.png)
 
-   적응형 양식에 대한 작업 도구 모음
+  적응형 양식에 대한 작업 도구 모음

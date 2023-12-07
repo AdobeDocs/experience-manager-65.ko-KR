@@ -1,21 +1,17 @@
 ---
 title: AEM 구성 요소 개발
-seo-title: Developing AEM Components
 description: AEM 구성 요소는 웹 페이지에서 사용할 수 있는 콘텐츠를 유지하고, 형식을 지정하며, 렌더링하는 데 사용됩니다.
-seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
-uuid: 1f39daa6-7277-45a2-adcc-74b58c93b8e4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 2%
+source-wordcount: '3246'
+ht-degree: 0%
 
 ---
 
@@ -423,7 +419,7 @@ AEM에서는 페이지에서 단락 시스템을 구성할 수 있으므로 [사
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 AEM-project-Archetype 프로젝트 열기](https://github.com/adobe/aem-project-archetype)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/adobe/aem-project-archetype/archive/master.zip)

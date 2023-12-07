@@ -1,15 +1,11 @@
 ---
 title: 오프라인 모드에서 작업
-seo-title: Working in the offline mode
 description: AEM Forms 네트워크 범위 밖이나 완전히 오프라인 모드에서 모바일 장치를 오프라인으로 전환하고 AEM Forms 앱에서 작업합니다
-seo-description: Take your mobile device offline outside your AEM Forms network range or in a completely offline mode and work on the AEM Forms app
-uuid: b900a0f8-90ce-486a-bde6-6cdf11bd2801
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 0%
@@ -47,6 +43,6 @@ AEM Forms 앱의 서버측 오프라인 구성 요소를 구성하려면 다음�
    * **캐시 지우기**: 양식 의존성의 서버측 캐시를 지웁니다.
    * **구성 재설정**: AEM Forms 앱 오프라인 구성을 재설정합니다.
    * **캐시 유효성**: 서버측 오프라인 캐시의 유효 기간을 지정합니다.
-   * **리소스 감시 경로**: 오프라인 서비스가 리소스 변경을 모니터링하는 경로를 지정합니다. 지정된 경로에 변경 사항이 있으면 모든 종속 양식의 오프라인 캐시가 업데이트됩니다. (예: `/etc/clientlibs/fd,/content/dam/images`)
+   * **리소스 감시 경로**: 오프라인 서비스가 리소스 변경을 모니터링하는 경로를 지정합니다. 지정된 경로에 변경 사항이 있으면 모든 종속 양식의 오프라인 캐시가 업데이트됩니다. 예: `/etc/clientlibs/fd,/content/dam/images`
 
 1. 다음에서 **수동 리소스 캐시** 탭에서 오프라인 서비스가 식별할 수 없는 양식 종속성을 지정합니다. JavaScript 내에서 로드된 이미지와 같은 리소스를 지정할 수 있습니다. AEM Forms 앱은 오프라인 모드에 대해서도 이러한 리소스를 다운로드합니다.

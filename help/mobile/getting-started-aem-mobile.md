@@ -1,14 +1,12 @@
 ---
 title: Adobe Experience Manager Mobile 시작하기
 description: 이 페이지는 Adobe Experience Manager Mobile의 랜딩 페이지 역할을 합니다. 앱을 만드는 세 가지 방법에 대해 알아볼 수 있도록 이 페이지를 시작점으로 따르십시오.
-uuid: a5398216-f9bb-4009-a9f8-a4f0135db67c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
-discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
 exl-id: a2bc9a50-6455-4703-8829-964fab313e96
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%

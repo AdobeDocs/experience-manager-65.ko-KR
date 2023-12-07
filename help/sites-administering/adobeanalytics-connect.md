@@ -1,20 +1,16 @@
 ---
 title: Adobe Analytics 연결 및 프레임워크 만들기
-seo-title: Connecting to Adobe Analytics and Creating Frameworks
 description: AEM을 SiteCatalyst에 연결하고 프레임워크를 만드는 방법에 대해 알아봅니다.
-seo-description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
-uuid: 3820dd24-4193-42ea-aef2-4669ebfeaa9d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: bbd18486a77d7b46454aacff23147b38860bd895
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 7%
+source-wordcount: '1484'
+ht-degree: 1%
 
 ---
 
@@ -85,7 +81,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 >[!CAUTION]
 >
->Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
+>Adobe Analytics API의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
 >
 >다음 [Adobe Analytics에서 제공하는 ActivityMap 플러그인](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 이제 를 사용해야 합니다.
 
@@ -93,7 +89,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 >[!CAUTION]
 >
->Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
+>Adobe Analytics API의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
 >
 >다음 [Adobe Analytics에서 제공하는 ActivityMap 플러그인](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 이제 를 사용해야 합니다.
 
@@ -149,7 +145,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 ![server_001](assets/server_001.png)
 
-* **서버 추적**
+* **추적 서버**
 
    * Adobe Analytics 호출을 전송하는 데 사용되는 URL을 포함합니다.
 
@@ -181,7 +177,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 1. 에 대한 드롭다운 선택기 **Adobe Analytics** 는 사용 가능한 옵션에 추가됩니다. 필요한 프레임워크 구성을 선택합니다.
 
-1. 선택 **저장 및 닫기**.
+1. **저장 후 닫기**&#x200B;를 선택합니다.
 1. 페이지 및 연결된 구성/파일을 활성화하려면 **[게시](/help/sites-authoring/publishing-pages.md)** 페이지.
 1. 마지막 단계는 게시 인스턴스의 페이지를 방문하여 를 사용하여 키워드(예: 가지)를 검색하는 것입니다. **검색** 구성 요소.
 1. 그런 다음 적절한 도구를 사용하여 Adobe Analytics에 대한 호출을 확인할 수 있습니다. 예: [Adobe Experience Cloud 디버거](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html).
@@ -201,8 +197,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 기본값은 `6`입니다.
 
 * **가져오기 지연**: 대기 중인 보고서 가져오기 시도 사이의 시간(밀리초)
-기본값은 `10000`입니다.
-밀리초 단위이므로 10초입니다.
+기본값은 입니다 `10000`. 밀리초 단위이므로 10초입니다.
 
 * **가져오기 빈도**: A `cron` Analytics 보고서를 가져오는 빈도를 결정하는 표현식입니다.
 기본값은 입니다 `0 0 0/12 * * ?`: 매시간 12회 페치에 해당합니다.

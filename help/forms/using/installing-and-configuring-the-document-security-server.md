@@ -1,16 +1,12 @@
 ---
 title: Document Security 서버 설치 및 구성
-seo-title: Installing and configuring the document security server
 description: 문서 보안을 사용하여 지원되는 형식으로 저장한 정보를 안전하게 배포합니다. 승인된 사용자만 보호된 문서에 액세스할 수 있습니다.
-seo-description: Use document security to safely distribute any information that you have saved in a supported format. Only authorized users can access protected documents.
-uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
 contentOwner: khsingh
-discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
-source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---

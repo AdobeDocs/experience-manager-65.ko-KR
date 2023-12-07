@@ -1,16 +1,12 @@
 ---
 title: 페이지 속성의 벌크 편집을 위한 페이지 구성
-seo-title: Configuring your Page for Bulk Editing of Page Properties
 description: 페이지 속성을 벌크 편집하면 여러 페이지의 속성을 한 번에 편집할 수 있습니다
-seo-description: Bulk editing of page properties lets you edit the properties of multiple pages at once
-uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 24%

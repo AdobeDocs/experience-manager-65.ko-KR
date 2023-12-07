@@ -1,16 +1,12 @@
 ---
 title: AEM Forms 중심 워크플로우 단계에 대해 사용자 또는 그룹을 동적으로 선택합니다.
-seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
 description: 런타임 시 AEM Forms 워크플로우에 대한 사용자 또는 그룹을 선택하는 방법을 알아봅니다.
-seo-description: Learn how to select a user or group for an AEM Forms workflow at the runtime.
-uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
-discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '873'
 ht-degree: 1%
 
 ---
@@ -27,7 +23,7 @@ ht-degree: 1%
 
 ECMAScript는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 서버 애플리케이션에 사용됩니다. ECMAScript를 사용하여 사용자 또는 그룹을 동적으로 선택하려면 다음 단계를 수행하십시오.
 
-1. CRXDE Lite를 엽니다. URL은 `https://'[server]:[port]'/crx/de/index.jsp`
+1. CRXDE Lite 열기. URL은 `https://'[server]:[port]'/crx/de/index.jsp`
 1. 다음 경로에서 확장명이 .ecma인 파일을 만듭니다. 경로(노드 구조)가 없는 경우 만듭니다.
 
    * (작업 할당 단계의 경로) `/apps/fd/dashboard/scripts/participantChooser`
@@ -47,9 +43,9 @@ ECMAScript는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 
       |--- |--- |--- |
       | jcr:title | 문자열 | 스크립트 이름을 지정합니다. 예를 들어 가장 가까운 필드 에이전트를 선택합니다. 이 이름은 작업 할당 및 문서 서명 단계에 표시됩니다. |
 
-   1. **모두 저장**&#x200B;을 클릭합니다. AEM Workflow의 구성 요소에서 스크립트를 선택할 수 있습니다.
+   1. 클릭 **모두 저장**. AEM Workflow의 구성 요소에서 스크립트를 선택할 수 있습니다.
 
-      ![스크립트](assets/script.png)
+      ![script](assets/script.png)
 
 ### 사용자 또는 그룹을 동적으로 선택하는 샘플 ECMAScript {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 

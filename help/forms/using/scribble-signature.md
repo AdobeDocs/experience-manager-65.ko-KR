@@ -1,18 +1,14 @@
 ---
 title: HTML5 양식에서 스크리블 서명 사용
-seo-title: Using Scribble Signature in HTML5 forms
 description: HTML5 양식은 터치 디바이스에서 점점 더 많이 사용되고 있으며, 한 가지 일반적인 요구사항은 서명을 지원하는 것입니다. 모바일 장치에서 문서에 서명하는 것은 모바일 장치에서 양식에 서명하는 허용되는 방법이 되고 있습니다.
-seo-description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices.
-uuid: 163dd55a-971a-4dd4-93a7-a14e80184d9b
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
-discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 feature: Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%

@@ -1,19 +1,15 @@
 ---
 title: 시작 콘솔 사용자 지정(클래식 UI)
-seo-title: Customizing the Welcome Console (Classic UI)
 description: 시작 콘솔은 AEM 내의 다양한 콘솔 및 기능에 대한 링크 목록을 제공합니다
-seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
-uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 10%
+source-wordcount: '449'
+ht-degree: 6%
 
 ---
 
@@ -58,13 +54,13 @@ AEM의 기본 콘솔이 나열됩니다.
 
 * **도구:** `/libs/wcm/core/content/misc`
 
-* **태깅:** `/libs/cq/tagging/content/tagadmin`
+* **태그 지정:** `/libs/cq/tagging/content/tagadmin`
 
 예:
 
 * 액세스를 제한하려면 **도구**, 읽기 액세스 제거
 
-   `/libs/wcm/core/content/misc`
+  `/libs/wcm/core/content/misc`
 
 다음을 참조하십시오. [보안 섹션](/help/sites-administering/security.md) 를 참조하십시오.
 
@@ -165,25 +161,25 @@ AEM의 기본 콘솔이 나열됩니다.
 
 * 리소스 - 다음에 대한 액세스 제거:
 
-   `/libs/cq/core/content/welcome/resources/<link-target>`
+  `/libs/cq/core/content/welcome/resources/<link-target>`
 
 * 문서 - 다음에 대한 액세스 제거:
 
-   `/libs/cq/core/content/welcome/docs/<link-target>`
+  `/libs/cq/core/content/welcome/docs/<link-target>`
 
 * 기능 - 다음에 대한 액세스 제거:
 
-   `/libs/cq/core/content/welcome/features/<link-target>`
+  `/libs/cq/core/content/welcome/features/<link-target>`
 
 예:
 
 * 에 대한 링크를 제거하려면 **보고서**, 읽기 액세스 제거
 
-   `/libs/cq/core/content/welcome/resources/reports`
+  `/libs/cq/core/content/welcome/resources/reports`
 
 * 에 대한 링크를 제거하려면 **패키지**, 읽기 액세스 제거
 
-   `/libs/cq/core/content/welcome/features/packages`
+  `/libs/cq/core/content/welcome/features/packages`
 
 다음을 참조하십시오. [보안 섹션](/help/sites-administering/security.md) 를 참조하십시오.
 
@@ -199,7 +195,6 @@ AEM의 기본 콘솔이 나열됩니다.
 >
 >* `select * from cq:Console`
 >
-
 
 사용자 또는 그룹에 mixin이 있는 노드에 대한 읽기 권한이 없는 경우 `cq:Console`로 설정되지 않은 경우 `ConsoleUtil` 검색하므로 콘솔에 나열되지 않습니다.
 

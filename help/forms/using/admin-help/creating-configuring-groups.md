@@ -1,18 +1,14 @@
 ---
 title: 그룹 만들기 및 구성
-seo-title: Creating and configuring groups
 description: 수동 또는 동적으로 그룹을 만들거나, 그룹을 편집하거나, 그룹에 대한 세부 정보를 보거나, 그룹을 삭제하는 방법에 대해 알아봅니다.
-seo-description: Learn how to create groups manually or dynamically, edit a group, view details about a group, or delete a group.
-uuid: 8532d72b-270a-4fcf-b7a5-56fca979a5fe
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1576'
 ht-degree: 0%
 
 ---
@@ -46,14 +42,14 @@ ht-degree: 0%
    * 도메인을 선택하고 표시할 항목 수를 선택한 다음 찾기를 클릭합니다.
    * 검색 결과에서 이 새 그룹에 추가할 사용자 및 그룹에 대한 확인란을 선택하고 확인을 클릭합니다.
 
-1. 다음을 클릭합니다.
+1. 다음 을 클릭합니다.
 1. 이 새 그룹을 다른 기존 그룹에 추가하려면 [그룹 찾기]를 클릭하고 다음 작업을 수행합니다.
 
    * 찾기 상자에 검색 기준을 입력합니다.
    * 도메인을 선택하고 표시할 항목 수를 선택한 다음 찾기를 클릭합니다.
    * 검색 결과에서 새 그룹이 속한 그룹의 확인란을 선택하고 확인을 누릅니다.
 
-1. 다음을 클릭합니다.
+1. 다음 을 클릭합니다.
 1. 그룹에 역할을 할당하려면 역할 찾기를 누르고 그룹에 할당할 각 역할에 대한 확인란을 선택한 다음 확인을 누릅니다. 그룹의 사용자는 그룹 수준에서 할당된 역할을 상속합니다.
 1. 마침을 클릭합니다.
 
@@ -77,7 +73,7 @@ ht-degree: 0%
    * 매일 자동 동기화를 활성화하려면 매일 발생 시간 상자에 24시간 형식으로 시간을 입력합니다. 설정을 저장하면 이 값은 아래 상자에 표시되는 cron 표현식으로 변환됩니다.
    * 주, 월 또는 특정 월의 특정 날짜에 동기화를 예약하려면 해당 cron 표현식을 상자에 입력합니다. 기본값은 입니다. `0 00 4 ? * *`(즉, 매일 오전 4시에 확인).
 
-      cron 표현식 사용은 Quartz 오픈 소스 작업 스케줄링 시스템, 버전 1.4.0을 기반으로 합니다.
+     cron 표현식 사용은 Quartz 오픈 소스 작업 스케줄링 시스템, 버전 1.4.0을 기반으로 합니다.
 
 1. 저장을 클릭합니다.
 
@@ -108,7 +104,7 @@ ht-degree: 0%
    * 도메인을 선택하고 표시할 항목 수를 선택한 다음 찾기를 클릭합니다.
    * 검색 결과에서 동적 그룹이 속한 그룹의 확인란을 선택하고 확인을 클릭합니다.
 
-1. 다음을 클릭합니다.
+1. 다음 을 클릭합니다.
 1. 동적 그룹에 역할을 할당하려면 역할 찾기를 클릭하고 그룹에 할당할 각 역할에 대한 확인란을 선택한 다음 확인을 클릭합니다. 그룹의 사용자는 그룹 수준에서 할당된 역할을 상속합니다.
 1. 마침을 클릭합니다.
 

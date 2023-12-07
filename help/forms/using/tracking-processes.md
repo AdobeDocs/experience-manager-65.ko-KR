@@ -1,16 +1,12 @@
 ---
 title: 추적 프로세스
-seo-title: Tracking processes
 description: 프로세스를 검색하고 세부 정보를 확인하여 프로세스를 추적하는 방법입니다.
-seo-description: How to track your processes by searching for them and viewing their details.
-uuid: 7bda9b61-0a40-4349-9aee-dc6636e5e692
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 exl-id: 381a46c6-c73c-476a-a1a0-20d921069c37
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

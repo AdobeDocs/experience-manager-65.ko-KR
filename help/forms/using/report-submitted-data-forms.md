@@ -1,19 +1,15 @@
 ---
 title: Forms 포털에서 제출된 양식으로 작동하는 API
-seo-title: APIs to work with submitted forms on forms portal
 description: AEM Forms은 forms 포털에서 제출된 양식 데이터를 쿼리하고 작업을 수행하는 데 사용할 수 있는 API를 제공합니다.
-seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
-uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
-discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 feature: Forms Portal
 exl-id: a685889e-5d24-471c-926d-dbb096792bc8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 7%
+source-wordcount: '538'
+ht-degree: 4%
 
 ---
 
@@ -78,11 +74,11 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
    <td>양식이 있는 CRX 저장소 경로를 지정합니다. 양식 경로를 지정하지 않으면 빈 응답이 반환됩니다.<br /> </td>
   </tr>
   <tr>
-   <td><code>offset</code> (옵션)</td>
+   <td><code>offset</code><br /> (옵션)</td>
    <td>결과 집합 인덱스의 시작점을 지정합니다. 기본값은 입니다. <strong>0</strong>.</td>
   </tr>
   <tr>
-   <td><code>limit</code> (옵션)</td>
+   <td><code>limit</code><br /> (옵션)</td>
    <td>결과 수 제한. 기본값은 입니다. <strong>30</strong>.</td>
   </tr>
   <tr>

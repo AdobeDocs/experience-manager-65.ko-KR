@@ -1,16 +1,12 @@
 ---
 title: 검색 템플릿 사용자 정의
-seo-title: Customizing search templates
 description: 작업 영역에서 사용할 검색 템플릿을 만들어 할 일 및 추적 페이지에서 프로세스 인스턴스를 검색할 수 있습니다. 기존 검색 템플릿을 편집하거나 삭제할 수도 있습니다.
-seo-description: You can create search templates to be used in Workspace to search for instances of processes from the To Do and Tracking pages. You can also edit or delete existing search templates.
-uuid: 2043ba8a-07f0-4054-af3c-f3a14c2183ab
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%

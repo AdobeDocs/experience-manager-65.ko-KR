@@ -1,17 +1,15 @@
 ---
 title: Sites Classic 작성에서 Dynamic Media 작업
 description: Dynamic Media는 다양한 시각적 머천다이징 및 마케팅 자산을 웹, 모바일 및 소셜 사이트에 맞게 자동으로 크기를 조정하여 주문형으로 제공하는 데 도움이 됩니다. 기본 소스 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
-uuid: 201d7ff5-0ebc-4680-9ac4-00c229be5f04
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
 exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
-source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 51%
+source-wordcount: '200'
+ht-degree: 53%
 
 ---
 

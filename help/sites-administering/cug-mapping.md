@@ -1,20 +1,16 @@
 ---
 title: AEM 6.5의 사용자 지정 사용자 그룹 매핑
-seo-title: Custom User Group Mapping in AEM 6.5
 description: Adobe Experience Manager에서 사용자 지정 사용자 그룹 매핑이 작동하는 방식을 알아봅니다.
-seo-description: Lear how Custom User Group Mapping works in AEM.
-uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
@@ -32,7 +28,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><p>속성: cq:cugEnabled</p> <p>노드 유형 선언: N/A, 잔여 속성</p> </td>
-   <td><p>승인:</p> <p>노드: rep:CugPolicy 노드 유형의 rep:cugPolicy</p> <p>노드 유형 선언: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> 인증:</p> <p>Mixin 유형: granite:AuthenticationRequired</p> </td>
+   <td><p>인증:</p> <p>노드: rep:CugPolicy 노드 유형의 rep:cugPolicy</p> <p>노드 유형 선언: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> 인증:</p> <p>Mixin 유형: granite:AuthenticationRequired</p> </td>
    <td><p>읽기 액세스를 제한하기 위해 전용 CUG 정책이 대상 노드에 적용됩니다.</p> <p>참고: 정책은 구성된 지원 경로에만 적용할 수 있습니다.</p> <p>rep:cugPolicy 및 rep:CugPolicy 유형이 있는 노드는 보호되며, 일반 JCR API 호출을 사용하여 작성할 수 없습니다. 대신 JCR 액세스 제어 관리를 사용하십시오.</p> <p>다음을 참조하십시오 <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">이 페이지</a> 추가 정보.</p> <p>노드에 인증 요구 사항을 적용하려면 mixin 유형 granite:AuthenticationRequired를 추가하면 됩니다.</p> <p>참고: 구성된 지원 경로 아래에만 적용됩니다.</p> </td>
   </tr>
   <tr>

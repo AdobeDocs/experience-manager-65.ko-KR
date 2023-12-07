@@ -1,15 +1,11 @@
 ---
 title: Forms 서비스
-seo-title: Forms Service
 description: 이 문서에서는 Forms 서비스 및 Forms 서비스를 사용하여 수행할 수 있는 양식 관련 작업에 대해 설명합니다.
-seo-description: The article describes Forms service and the form-related tasks you can perform using Forms service.
-uuid: 3258d3c2-8755-4815-8c97-b2cfb9a9dfd4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: a9695d10-43ec-40eb-942f-7720abaa0973
 exl-id: bd1216e4-2248-484b-a3c1-c209da4ff94f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -55,5 +51,5 @@ Forms 서비스는 AEM Forms Designer를 사용하여 만든 조각을 기반으
 다음은 조각을 사용할 때의 장점입니다.
 
 * **콘텐츠 재사용**: 여러 양식 디자인에서 콘텐츠를 재사용할 수 있습니다. 동일한 콘텐츠의 일부를 여러 양식으로 신속하게 재사용하려면 조각을 만듭니다. 콘텐츠를 복사하거나 다시 만드는 데 시간이 더 오래 걸립니다. 또한 조각을 사용하면 양식 디자인에서 자주 사용되는 부분이 참조하는 모든 양식에서 일관된 내용과 모양을 갖게 됩니다.
-* **글로벌 업데이트**: 한 파일에서 여러 양식을 전체적으로 한 번만 변경할 수 있습니다. 조각의 콘텐츠, 스크립트 개체, 데이터 바인딩, 레이아웃 또는 스타일을 변경할 수 있습니다. 조각을 참조하는 모든 XDP 양식은 변경 사항을 반영합니다.
+* **글로벌 업데이트**: 파일에서 여러 양식을 한 번만 전역으로 변경할 수 있습니다. 조각의 콘텐츠, 스크립트 개체, 데이터 바인딩, 레이아웃 또는 스타일을 변경할 수 있습니다. 조각을 참조하는 모든 XDP 양식은 변경 사항을 반영합니다.
 * **공유 양식 만들기**: 여러 리소스 간에 양식 만들기를 공유할 수 있습니다. 스크립팅 또는 AEM Forms Designer의 기타 고급 기능에 대한 전문 지식을 갖춘 양식 개발자는 스크립팅 및 동적 속성을 사용하는 조각을 개발하고 공유할 수 있습니다. 양식 디자이너는 조각을 사용하여 양식을 디자인할 수 있습니다. 또한 조각을 사용하여 양식의 모든 부분이 여러 양식에서 일관된 모양과 기능을 가지도록 할 수 있습니다.

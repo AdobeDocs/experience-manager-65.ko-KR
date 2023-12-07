@@ -3,14 +3,13 @@ title: 적응형 양식에 대한 스타일 구성
 description: 적응형 양식의 모양을 사용자 지정하려면 LESS 프레임워크를 사용하십시오.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2361'
-ht-degree: 6%
+source-wordcount: '2348'
+ht-degree: 5%
 
 ---
 
@@ -328,7 +327,7 @@ HTML 요소 **레이블** 필드에는 클래스가 포함됩니다. **left** �
  </tbody>
 </table>
 
-## 사용 약관 {#terms-and-conditions}
+## 약관 {#terms-and-conditions}
 
 약관(TnC) `` ``) 위젯을 사용하여 약관을 지정할 수 있습니다. 다음 표에 설명된 변수를 사용하여 위젯을 사용자 정의할 수 있습니다.
 
@@ -354,7 +353,7 @@ HTML 요소 **레이블** 필드에는 클래스가 포함됩니다. **left** �
 버튼은 위젯이기도 합니다. 하지만 그들의 스타일은 위젯과 약간 다릅니다. 적응형 양식에서는 다음 중 하나가 버튼을 구성합니다.
 
 * 입력[type = text]
-* 추가할 수도 있습니다
+* 단추
 * 클래스 .button이 있는 요소
 
 단추에 대한 HTML 코드:
@@ -519,7 +518,7 @@ HTML 요소 **레이블** 필드에는 클래스가 포함됩니다. **left** �
   </tr>
   <tr>
    <td><p><code>table-header-bg-color</code></p> </td>
-   <td><p>머리글 행의 배경색입니다. 기본값은 <code>#333</code>입니다.<br /> </p> </td>
+   <td><p>머리글 행의 배경색입니다. 기본값은 입니다. <code>#333</code>.<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>table-odd-row-bg-color</code></p> </td>

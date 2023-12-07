@@ -1,19 +1,15 @@
 ---
 title: 양식을 분류할 새 폴더 만들기
-seo-title: Create new folders to categorize forms
 description: 폴더를 사용하여 양식 템플릿, PDF, 리소스 및 적응형 양식을 구성하십시오.
-seo-description: Use folders to organize your form templates, PDFs, resources, and adaptive forms.
-uuid: 63fcb807-c9cf-49ae-ad69-6b1187543470
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 1%
+source-wordcount: '386'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 1%
 
 AEM Forms을 사용하면 폴더의 제목을 변경할 수 있습니다. 제목은 저장소에서 폴더가 저장되는 노드의 이름과 동일하지 않습니다. 대신 제목은 폴더의 메타데이터로 유지 관리됩니다. 폴더의 제목을 변경하면 폴더 내에 있는 에셋의 경로에는 영향을 주지 않습니다.
 
-## 폴더를 만듭니다 {#create-a-folder}
+## 폴더 만들기 {#create-a-folder}
 
 다음 방법 중 하나로 AEM Forms에서 폴더를 만들 수 있습니다.
 
@@ -44,7 +40,7 @@ AEM Forms을 사용하면 폴더의 제목을 변경할 수 있습니다. 제목
    >
    >기본적으로 이름 값 필드는 제목에서 자동으로 채워집니다. 이름에는 영숫자와 하이픈(-) 및 밑줄(_) 특수 문자만 사용할 수 있습니다. 제목에 입력된 다른 특수 문자는 자동으로 하이픈으로 대체되며 새 이름을 확인하라는 메시지가 표시됩니다. 제안된 이름을 계속 사용하거나 추가로 편집할 수 있습니다.
 
-1. **[!UICONTROL 제출]을 클릭합니다.**
+1. 클릭 **[!UICONTROL 제출].**
 
    정의한 제목이 있는 새 폴더가 자산 목록의 현재 위치에 표시됩니다.
 
@@ -55,4 +51,4 @@ AEM Forms을 사용하면 폴더의 제목을 변경할 수 있습니다. 제목
 1. 제목을 편집할 폴더를 선택합니다.
 1. 편집 클릭 ![aem6forms_edit](assets/aem6forms_edit.png) 아이콘을 클릭합니다.
 1. 새 제목을 입력합니다. 텍스트 필드는 폴더 제목의 현재 값으로 미리 채워집니다. 새 값으로 변경할 수 있습니다.
-1. **[!UICONTROL 제출]을 클릭합니다.**
+1. 클릭 **[!UICONTROL 제출].**

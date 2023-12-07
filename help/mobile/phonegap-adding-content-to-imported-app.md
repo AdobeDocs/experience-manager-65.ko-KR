@@ -1,18 +1,16 @@
 ---
 title: 하이브리드 앱이 AEM Mobile에 대해 준비되었습니까?
 description: 하이브리드 앱에 대해 알아봅니다. Experience Manager의 앱은 일반적으로 두 부분으로 나뉩니다. "쉘" 및 "콘텐츠"와 이 페이지에서는 이러한 주제에 대한 자세한 정보를 제공합니다.
-uuid: cbcce3fa-9100-46ea-9f24-931b42666709
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: b7fd7954-f2a5-402d-b259-e18b5a618be9
 pagetitle: Is your hybrid app ready for AEM Mobile?
 exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 0%
+source-wordcount: '718'
+ht-degree: 1%
 
 ---
 

@@ -1,19 +1,15 @@
 ---
 title: 검사 목록
-seo-title: The Checklist
 description: 프로젝트 체크리스트는 프로젝트 게재를 위한 모범 사례 세트입니다. 프로젝트 수명 주기의 모든 단계를 안내하고 현재 상태에 대한 높은 수준의 모니터링을 제공합니다.
-seo-description: The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
-uuid: e8ab9042-4d54-445d-b104-23d5d38f58b6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
-discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 2%
+source-wordcount: '318'
+ht-degree: 1%
 
 ---
 

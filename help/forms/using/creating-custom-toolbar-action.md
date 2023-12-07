@@ -1,16 +1,12 @@
 ---
 title: 사용자 지정 도구 모음 작업 만들기
-seo-title: Creating a custom toolbar action
 description: 양식 개발자는 AEM Forms에서 적응형 양식에 대한 사용자 지정 도구 모음 작업을 만들 수 있습니다. 양식 작성자가 사용자 지정 작업을 사용하면 최종 사용자에게 더 많은 워크플로와 옵션을 제공할 수 있습니다.
-seo-description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
-uuid: cd785cfb-e1bb-4158-be9b-d99e04eccc02
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
 docset: aem65
 exl-id: 17f7f0e1-09d8-45cd-a4f6-0846bdb079b6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%

@@ -1,17 +1,15 @@
 ---
 title: AEM 개발자를 위한 우수 사례
 description: Adobe 엔지니어링 및 컨설팅 팀은 AEM 개발자를 위한 포괄적인 모범 사례 세트를 개발했습니다.
-uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 15%
+source-wordcount: '445'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +22,7 @@ Adobe 엔지니어링 및 컨설팅 팀은 AEM 개발자를 위한 포괄적인 
 AEM 개발 프로젝트를 시작하기 전에 먼저 다음 모범 사례를 검토하십시오.
 
 * [개발 사례](/help/sites-developing/development-practices.md)
-* [컨텐츠 아키텍처](/help/sites-developing/content-architecture.md)
+* [콘텐츠 아키텍처](/help/sites-developing/content-architecture.md)
 * [소프트웨어 아키텍처](/help/sites-developing/software-architecture.md)
 * [코딩 팁](/help/sites-developing/coding-tips.md)
 * [코드 함정](/help/sites-developing/code-pitfalls.md)

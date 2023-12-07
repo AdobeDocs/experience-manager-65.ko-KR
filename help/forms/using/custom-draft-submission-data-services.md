@@ -1,13 +1,11 @@
 ---
 title: 초안 및 제출 데이터 서비스 사용자 정의
 description: AEM Forms은 기본적으로 초안 및 제출된 적응형 양식을 게시 인스턴스의 기본 노드에 저장합니다. 그러나 AEM Forms의 초안 및 제출 데이터 서비스를 구성하여 초안 및 제출된 적응형 양식의 저장소를 사용자 지정할 수 있습니다.
-uuid: c3ec1708-3b11-4142-93f0-1cffb6643f34
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%

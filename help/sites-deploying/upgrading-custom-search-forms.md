@@ -1,20 +1,16 @@
 ---
 title: 사용자 정의 검색 Forms 업그레이드
-seo-title: Upgrading Custom Search Forms
 description: 이 문서에서는 사용자 정의 검색 양식이 작동하기 위해 업그레이드 후 필요한 조정 사항에 대해 자세히 설명합니다.
-seo-description: This article details the adjustments that are required after an upgrade in order for the custom search forms to function.
-uuid: 35b8fbb9-5951-4e1c-bf04-4471a55b9cb0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 3%
+source-wordcount: '1797'
+ht-degree: 2%
 
 ---
 
@@ -99,7 +95,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1의 기본 검색 양식에 있는 노드<br /> <br /> </td>
-   <td>path</td>
+   <td>경로</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -156,7 +152,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 
 페이지 상태가 게시와 LiveCopy 상태, 이렇게 두 개의 옵션 속성 술어로 대체되었습니다.
 
-**액션:**
+**작업:**
 
 * 제거 `pagestatuspredicate` 노드
 * 노드 복사
@@ -417,12 +413,12 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 
 ### 게시 조건자 {#publish-predicate}
 
-| 6.1의 기본 검색 양식에 있는 노드 | 페이지를 |
+| 6.1의 기본 검색 양식에 있는 노드 | 게시 |
 |---|---|
 | 6.1의 리소스 유형 | dam/gui/components/admin/customsearch/searchpredicates/publishpredicate |
 | 6.2의 리소스 유형 | dam/gui/coral/components/admin/customsearch/searchpredicates/publishpredicate |
 
-**액션:**
+**작업:**
 
 * 조정 `resourceType` 속성(추가 &quot;**/coral**&quot; 위에 표시된 6.2 위치와 유사)
 
@@ -473,7 +469,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 | 6.1의 리소스 유형 | dam/gui/components/admin/customsearch/searchpredicates/tagsfilterpredicate |
 | 6.2의 리소스 유형 | cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate |
 
-**액션:**
+**작업:**
 
 * 조정 `resourceType` 속성(추가 &quot;**/coral**&quot; 위에 표시된 6.2 위치와 유사)
 
@@ -490,7 +486,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 | 6.1의 리소스 유형 | dam/gui/components/admin/customsearch/searchpredicates/tagsfilterpredicate |
 | 6.2의 리소스 유형 | cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate |
 
-**액션:**
+**작업:**
 
 * 조정 `resourceType` 속성(추가 &quot;**/coral**&quot; 위에 표시된 6.2 위치와 유사)
 

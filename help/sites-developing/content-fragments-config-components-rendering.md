@@ -1,19 +1,15 @@
 ---
 title: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
-seo-title: Content Fragments Configuring Components for Rendering
 description: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
-seo-description: Content Fragments Configuring Components for Rendering
-uuid: 3f5aaf36-e6a7-4a3c-b305-e35ebcc98d0d
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 7%
+source-wordcount: '463'
+ht-degree: 6%
 
 ---
 
@@ -89,7 +85,7 @@ OSGi 구성은 다음과 같습니다.
    <td>렌더링할 요소의 이름이 포함된 속성의 이름입니다. 예:<code>elementName</code></td>
   </tr>
   <tr>
-   <td><strong>변화 속성</strong><br /> </td>
+   <td><strong>변형 속성</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
    <td>렌더링할 변형의 이름을 포함하는 속성의 이름입니다. 예:<code>variationName</code></td>
   </tr>

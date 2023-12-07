@@ -1,20 +1,16 @@
 ---
 title: 편지 PDF 미리 보기의 사용자 지정 워터마크
-seo-title: Custom watermark in letter PDF preview
 description: 편지 PDF 미리 보기에서 사용자 지정 워터마크를 만드는 방법을 알아봅니다.
-seo-description: Learn how to create custom watermark in letter PDF preview.
-uuid: 5adfede3-9b38-4a12-bf14-6d80cfb0a05a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 0%
+source-wordcount: '336'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +54,8 @@ ht-degree: 0%
       >    * 인스턴스에서 업그레이드
       >    * 핫픽스 적용
       >    * 기능 팩 설치
-
+      >    
+      >
 
    1. 클릭 **확인** 그런 다음 을 클릭합니다. **모두 저장**. 다음 **[!UICONTROL 미리보기워터마크]** 폴더가 지정된 경로에 만들어집니다.
 
@@ -86,4 +83,4 @@ ht-degree: 0%
    >
    >ddx 파일에서 결과 및 소스에 대한 참조는 output.pdf 및 input.pdf와 변경되지 않은 상태로 유지되어야 합니다. ddx 파일의 이름도 변경하면 안 됩니다.
 
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.

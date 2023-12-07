@@ -1,20 +1,16 @@
 ---
 title: 동적으로 DDX 문서 만들기
-seo-title: Dynamically Creating DDX Documents
 description: Java API 및 웹 서비스 API를 사용하여 동적으로 DDX 문서를 만듭니다. 동적으로 DDX 문서를 만들면 런타임 중에 얻은 DDX 문서의 값을 사용할 수 있습니다.
-seo-description: Create a DDX document dynamically using the Java API and Web Service API. Dynamically creating a DDX document enables you to use values in the DDX document that are obtained during run-time.
-uuid: b73e8069-6c9f-4517-a0ae-f3d503191d2d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2153'
 ht-degree: 0%
 
 ---

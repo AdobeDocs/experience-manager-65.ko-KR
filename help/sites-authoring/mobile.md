@@ -1,14 +1,12 @@
 ---
 title: 모바일 장치용 콘텐츠 페이지 작성
 description: 모바일용 작성 시 여러 에뮬레이터 간을 전환하여 최종 사용자에게 표시되는 내용을 확인할 수 있습니다.
-uuid: a7a1ba68-d608-4819-88d1-0dab5955d3f4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
 exl-id: 9c6c6386-5ffd-4fa6-9aa1-f5b0e31d1046
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 63%

@@ -1,19 +1,15 @@
 ---
 title: 페이지 편집을 위해 실행 취소 구성
-seo-title: Configuring Undo for Page Editing
 description: AEM에서 페이지 편집에 대한 실행 취소 지원을 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure Undo support for page editing in AEM.
-uuid: e5a49587-a2a6-41d5-b449-f7a8f7e4cee6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
 exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 

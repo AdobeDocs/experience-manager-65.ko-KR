@@ -1,19 +1,15 @@
 ---
 title: 설명서 링크 업데이트
-seo-title: Updating the link to the documentation
 description: 사용자 지정 설명서 링크를 가리키도록 AEM Forms 작업 공간에서 작업 공간 도움말 링크의 대상을 업데이트하는 방법.
-seo-description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
-uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 exl-id: ca637bea-05c1-4920-9283-e782f07607de
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 

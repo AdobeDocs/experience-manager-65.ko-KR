@@ -1,19 +1,15 @@
 ---
 title: 자격 증명을 사용한 작업
-seo-title: Working with Credentials
 description: Trust Manager API 및 Java API를 사용하여 AEM Forms으로 자격 증명을 가져옵니다. 또한 Trust Manager API 및 Java API를 사용하여 자격 증명을 삭제하는 방법도 알아봅니다.
-seo-description: Import credentials into AEM Forms using the Trust Manager API and Java API. In addition, learn how to delete credentials using the Trust Manager API and Java API.
-uuid: b794428f-49bf-4a91-bc5f-d855881f4f38
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1077'
 ht-degree: 0%
 
 ---

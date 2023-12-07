@@ -1,19 +1,15 @@
 ---
 title: 양식 메타데이터 관리
-seo-title: Manage form metadata
 description: 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.
-seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
-uuid: d982df6f-a256-4bad-868f-74fcd08350f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '1967'
 ht-degree: 2%
 
 ---
@@ -37,7 +33,7 @@ AEM Forms은 기본적으로 각 에셋 유형에 대해 정의된 메타데이�
 
 AEM Forms에서 에셋과 연결된 메타데이터 속성 목록은 에셋의 유형에 따라 다릅니다. 또한 사용자 지정 메타데이터 속성을 추가하면 해당 사용자 지정 메타데이터가 추가된 유형의 모든 에셋에 추가됩니다.
 
-### 자산 유형 {#asset-types}
+### 에셋 유형 {#asset-types}
 
 AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
 

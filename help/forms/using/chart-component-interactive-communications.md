@@ -1,17 +1,13 @@
 ---
 title: 대화형 커뮤니케이션에서 차트 사용
-seo-title: Chart component in Interactive Communications
 description: 대화형 커뮤니케이션에서 차트를 사용하면 많은 양의 정보를 분석하기 쉬운 시각적 형식으로 압축할 수 있습니다
-seo-description: AEM Forms provides a chart component that you can use to create charts in your Interactive Communication. This document explains basic and agent configurations of the chart component.
-uuid: 978aa431-9a5b-4964-b37c-7bfa8c3f49b9
 content-type: reference
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 1%

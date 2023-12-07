@@ -1,17 +1,15 @@
 ---
 title: 작성자를 위한 첫 번째 단계
 description: 이 섹션에서는 AEM(Adobe Experience Manager)으로 콘텐츠를 작성할 때 사용하는 주요 작업에 대해 간략히 설명합니다.
-uuid: 1343acf9-b104-40f3-a3f2-df42060cb4fd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: page-authoring, introduction
-discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -87,6 +85,6 @@ ht-degree: 8%
 
 다음을 수행할 수 있습니다. [페이지 버전 만들기](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version) 그런 다음 [버전으로 되돌리기](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) 필요한 경우.
 
-## 자세한 내용 {#more-information}
+## 추가 정보 {#more-information}
 
 작성에 대한 자세한 내용은 아래에서 확인할 수 있습니다. [페이지 작성](/help/sites-classic-ui-authoring/classic-page-author.md) 및 [작성자 환경 작업](/help/sites-classic-ui-authoring/author-env.md).

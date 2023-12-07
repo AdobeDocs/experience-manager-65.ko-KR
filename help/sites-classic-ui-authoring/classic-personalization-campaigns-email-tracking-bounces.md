@@ -1,18 +1,14 @@
 ---
 title: 반송된 이메일 추적
-seo-title: Tracking Bounced Emails
 description: 많은 사용자에게 뉴스레터를 보낼 때 일반적으로 목록에 일부 잘못된 이메일 주소가 있습니다. 해당 주소로 뉴스레터를 전송하는 경우 다시 반송됩니다. AEM은 이러한 바운스를 관리할 수 있으며 구성된 바운스 카운터가 초과된 후 해당 주소로 뉴스레터 전송을 중지할 수 있습니다.
-seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
-uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---

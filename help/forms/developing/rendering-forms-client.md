@@ -1,20 +1,16 @@
 ---
 title: 클라이언트에서 Forms 렌더링
-seo-title: Rendering Forms at the Client
 description: Acrobat 또는 Adobe Reader의 클라이언트측 렌더링 기능을 사용하여 PDF 컨텐츠 전달을 최적화하고 Forms 서비스의 네트워크 로드 처리 기능을 개선합니다
-seo-description: Optimize the delivery of PDF content and improve the Forms service’s ability to handle network load by using the client-side rendering capability of Acrobat or Adobe Reader
-uuid: 09bcc23d-28b0-473a-87f1-bc17e87620f4
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1690'
 ht-degree: 0%
 
 ---
@@ -27,7 +23,7 @@ ht-degree: 0%
 
 Acrobat 또는 Adobe Reader의 클라이언트측 렌더링 기능을 사용하여 PDF 컨텐츠 전달을 최적화하고 Forms 서비스의 네트워크 로드 처리 기능을 향상시킬 수 있습니다. 이 프로세스를 클라이언트에서의 양식 렌더링이라고 합니다. 클라이언트에서 양식을 렌더링하려면 클라이언트 장치(일반적으로 웹 브라우저)는 Acrobat 7.0 또는 Adobe Reader 7.0 이상을 사용해야 합니다.
 
-서버측 스크립트 실행으로 인한 양식의 변경 사항은 루트 하위 양식에 가 포함되지 않는 한 클라이언트에서 렌더링되는 양식에 반영되지 않습니다. `restoreState` 로 설정된 속성 `auto`. 이 속성에 대한 자세한 내용은 [Forms 디자이너.](https://www.adobe.com/go/learn_aemforms_designer_63_kr)
+서버측 스크립트 실행으로 인한 양식의 변경 사항은 루트 하위 양식에 가 포함되지 않는 한 클라이언트에서 렌더링되는 양식에 반영되지 않습니다. `restoreState` 로 설정된 속성 `auto`. 이 속성에 대한 자세한 내용은 [Forms 디자이너.](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 >[!NOTE]
 >

@@ -1,18 +1,14 @@
 ---
 title: AEM 양식을 구성하여 도메인 정보 미리 가져오기
-seo-title: Configure AEM forms to prefetchdomain information
 description: 깊게 중첩된 그룹으로 인해 응답 시간이 느려지거나 많은 그룹의 구성원인 경우 도메인 정보를 미리 가져오도록 AEM Forms를 구성합니다.
-seo-description: Configure AEM forms to prefetch domain information if you experience a slower response time due to deeply nested groups or if you are a member of many groups.
-uuid: 53c8995e-3f9d-42e8-9f75-cee7debe6ce1
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
 exl-id: cf5283a5-dbfb-460d-a8bd-11cd15ab8640
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---

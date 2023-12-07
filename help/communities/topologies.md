@@ -1,18 +1,14 @@
 ---
 title: 커뮤니티에 대해 권장되는 토폴로지
-seo-title: Recommended Topologies for Communities
 description: UGC(사용자 생성 컨텐츠) 처리에 대한 접근 방법
-seo-description: How to approach the handling of user-generated content (UGC)
-uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 exl-id: b6658330-d862-44e3-aac0-824fb91cd087
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
@@ -40,6 +36,7 @@ AEM 플랫폼은 작성자에서 게시로 사이트 콘텐츠를 복제하는 �
 >AEM Communities의 경우 [UGC는 복제되지 않음](working-with-srp.md#ugc-never-replicated).
 >
 >배포에 다음이 포함되지 않는 경우 [공동 저장소](working-with-srp.md), UGC는 입력된 AEM 게시 또는 작성자 인스턴스에서만 볼 수 있습니다.
+>
 
 >[!NOTE]
 >
@@ -94,20 +91,20 @@ Oak 마이크로 커널에 대한 자세한 내용은 다음을 참조하십시�
 
 * [사용자 동기화](sync.md)
 
-   게시 팜 인스턴스 간의 사용자 데이터 동기화를 설명합니다.
+  게시 팜 인스턴스 간의 사용자 데이터 동기화를 설명합니다.
 
 * [사용자 및 사용자 그룹 관리](users.md)
 
-   작성자 및 게시 환경에서 사용자 및 사용자 그룹의 역할에 대해 설명합니다.
+  작성자 및 게시 환경에서 사용자 및 사용자 그룹의 역할에 대해 설명합니다.
 
 * UGC [공동 저장소](working-with-srp.md)
 
-   사이트 콘텐츠와 별도로 커뮤니티 콘텐츠 저장을 설명합니다.
+  사이트 콘텐츠와 별도로 커뮤니티 콘텐츠 저장을 설명합니다.
 
 * [노드 저장소 및 데이터 저장소](../../help/sites-deploying/data-store-config.md)
 
-   기본적으로 사이트 콘텐츠는 노드 저장소에 저장됩니다. 에셋의 경우 이진 데이터를 저장하도록 데이터 저장소를 구성할 수 있습니다. Communities의 경우 SRP를 선택하려면 공통 저장소를 구성해야 합니다.
+  기본적으로 사이트 콘텐츠는 노드 저장소에 저장됩니다. 에셋의 경우 이진 데이터를 저장하도록 데이터 저장소를 구성할 수 있습니다. Communities의 경우 SRP를 선택하려면 공통 저장소를 구성해야 합니다.
 
 * [저장소 요소](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
-   두 노드 스토리지 구현인 Tar 및 MongoDB에 대해 설명합니다.
+  두 노드 스토리지 구현인 Tar 및 MongoDB에 대해 설명합니다.

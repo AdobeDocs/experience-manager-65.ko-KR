@@ -1,25 +1,21 @@
 ---
 title: 페이지 속성 보기 사용자 정의
-seo-title: Customizing Views of Page Properties
 description: 모든 페이지에는 필요에 따라 편집할 수 있는 속성 세트가 있습니다
-seo-description: Every page has a set of properties that you can edit as required
-uuid: cbfca6e6-cb9e-43b1-8889-09a7cc9f8a51
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 50%
+source-wordcount: '475'
+ht-degree: 43%
 
 ---
 
 # 페이지 속성 보기 사용자 정의{#customizing-views-of-page-properties}
 
-모든 페이지에는 [속성](/help/sites-authoring/editing-page-properties.md) 는 사용자가 보고 편집할 수 있습니다. 일부는 페이지를 만들 때 필요하고(보기 만들기), 일부는 나중에 보고 편집할 수 있습니다(보기 편집). 이러한 페이지 속성은 해당 페이지 구성 요소의 대화 상자(`cq:dialog`)를 통해 정의하고 제공합니다.
+모든 페이지에는 [속성](/help/sites-authoring/editing-page-properties.md) 는 사용자가 보고 편집할 수 있습니다. 일부는 페이지를 만들 때 필요하고(보기 만들기), 일부는 나중에 보고 편집할 수 있습니다(보기 편집). 이러한 페이지 속성은 대화 상자에서 정의하고 사용할 수 있습니다. ( `cq:dialog`)을 클릭하여 제품에서 사용할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -111,6 +107,6 @@ ht-degree: 50%
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-authoring-extension-page-dialog 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

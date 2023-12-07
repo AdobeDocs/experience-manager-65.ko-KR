@@ -1,19 +1,15 @@
 ---
 title: 커뮤니티 구성 요소에 대한 OSGi 이벤트
-seo-title: OSGi Events for Communities Components
 description: 비동기 리스너를 트리거할 수 있는 OSGi 이벤트가 전송됩니다
-seo-description: OSGi events are sent that can trigger asynchronous listeners
-uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 exl-id: 8049d797-e758-44c2-a89b-51d2b2fca8dc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 4%
+source-wordcount: '592'
+ht-degree: 5%
 
 ---
 

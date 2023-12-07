@@ -1,17 +1,15 @@
 ---
 title: AEM에서 작성할 때 문제 해결
 description: AEM을 사용할 때 발생할 수 있는 몇 가지 문제입니다.
-uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 52%
+ht-degree: 51%
 
 ---
 
@@ -33,7 +31,7 @@ ht-degree: 52%
 
    * 페이지를 변경하고 페이지를 게시 사이트에 복제했지만 *이전* 페이지 버전이 여전히 게시 사이트에 표시되고 있습니다.
 
-* **원인**:
+* **이유**:
 
    * 이는 때로 복제 큐 문제일 수 있지만 몇 가지 원인이 있을 수 있고 대개는 캐시 문제일 수 있습니다(로컬 브라우저나 디스패처 중 하나).
 
@@ -55,7 +53,7 @@ ht-degree: 52%
 
    * 적용 가능한 구성 요소 작업의 전체 범위는 작성 환경에서 콘텐츠 페이지를 편집할 때 표시되지 않습니다.
 
-* **원인**:
+* **이유**:
 
    * 드문 경우지만 이전 작업이 도구 모음에 영향을 줄 수 있습니다.
 

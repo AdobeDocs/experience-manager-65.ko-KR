@@ -1,19 +1,15 @@
 ---
 title: Expression Builder의 원격 함수
-seo-title: Expression Builder
 description: 서신 관리의 표현식 빌더 를 사용하여 표현식과 원격 함수를 만들 수 있습니다.
-seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
-uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 feature: Correspondence Management
 exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '783'
 ht-degree: 1%
 
 ---
@@ -37,8 +33,8 @@ ht-degree: 1%
 다음은 서신 관리 솔루션에서 사용할 수 있는 일반적으로 사용되는 JSP EL 예입니다.
 
 * 두 개의 숫자를 추가하려면: ${number1 + number2}
-* 두 문자열(${str1} ${str2})을 연결하려면
-* 두 숫자 비교: ${age &lt; 18}
+* 두 문자열을 연결하려면 ${str1} ${str2}
+* 두 숫자를 비교하려면: ${age &lt; 18}
 
 다음에서 자세한 정보를 찾을 수 있습니다. [JSP EL 사양](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). 클라이언트측 표현식 관리자는 JSP EL 사양의 특정 변수 및 함수, 특히
 
@@ -118,7 +114,6 @@ ht-degree: 1%
    * java.util.Calendar
    * java.util.Date
    * java.util.List
-
 
 1. 인터페이스의 구현을 정의하고 OSGI 서비스로 구성한 다음 다음 서비스 속성을 정의합니다.
 

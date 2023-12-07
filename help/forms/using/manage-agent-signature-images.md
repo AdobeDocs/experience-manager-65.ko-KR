@@ -1,17 +1,13 @@
 ---
 title: 에이전트 서명 이미지 관리
-seo-title: Manage agent signature images
 description: 편지 템플릿을 만든 후에는 데이터, 컨텐츠 및 첨부 파일을 관리하여 AEM Forms에서 서신을 만드는 데 사용할 수 있습니다.
-seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48b2697e-6065-4e23-9aa8-333e7b11ede1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 feature: Correspondence Management
 exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 1%
@@ -36,13 +32,13 @@ agentFolder DDE의 값은 서신 관리 구성 속성에 대한 CMUserRoot 구�
 1. 에이전트 서명 이미지의 이름이 사용자의 AEM 사용자 이름과 같은지 확인합니다. 이미지 파일 이름에는 확장명이 필요하지 않습니다.
 1. CRX에서 다음 이름의 폴더를 만듭니다. `cmUserRoot` 컨텐츠 폴더에 있습니다.
 
-   1. 이동 `https://'[server]:[port]'/crx/de`. 필요한 경우 관리자로 로그인합니다.
+   1. 다음으로 이동 `https://'[server]:[port]'/crx/de`. 필요한 경우 관리자로 로그인합니다.
 
    1. 마우스 오른쪽 단추 클릭 **콘텐츠** 폴더 및 선택 **만들기** > **폴더 만들기**.
 
       ![폴더 만들기](assets/1_createnode_cmuserroot.png)
 
-   1. 폴더 만들기 대화 상자에서 폴더 이름을 로 입력합니다. `cmUserRoot`. 클릭 **모두 저장**.
+   1. 폴더 만들기 대화 상자에서 폴더 이름을 로 입력합니다. `cmUserRoot`. **모두 저장**&#x200B;을 클릭합니다.
 
       >[!NOTE]
       >
@@ -50,7 +46,7 @@ agentFolder DDE의 값은 서신 관리 구성 속성에 대한 CMUserRoot 구�
 
 1. 콘텐츠 탐색기에서 cmUserRoot 폴더로 이동하여 에이전트 서명 이미지를 추가합니다.
 
-   1. 이동 `https://'[server]:[port]'/crx/explorer/index.jsp`. 필요한 경우 관리자로 로그인합니다.
+   1. 다음으로 이동 `https://'[server]:[port]'/crx/explorer/index.jsp`. 필요한 경우 관리자로 로그인합니다.
    1. 클릭 **콘텐츠 탐색기**. 콘텐츠 탐색기가 새 창에 열립니다.
    1. 콘텐츠 탐색기에서 cmUserRoot 폴더로 이동하여 선택합니다. 마우스 오른쪽 단추 클릭 **cmUserRoot** 폴더 및 선택 **새 노드**.
 
@@ -75,7 +71,8 @@ agentFolder DDE의 값은 서신 관리 구성 속성에 대한 CMUserRoot 구�
       jcr:content의 하위 속성 중에는 흐리게 표시되는 jcr:data가 있습니다. jcr:data를 두 번 클릭합니다. 속성을 편집할 수 있고 [파일 선택] 버튼이 항목에 나타납니다. 클릭 **파일 선택** 로고로 사용할 이미지 파일을 선택합니다. 이미지 파일에는 확장명이 없습니다.
 
       ![JCR 데이터](assets/5_jcrdata.png)
-   클릭 **모두 저장**.
+
+   **모두 저장**&#x200B;을 클릭합니다.
 
 1. 편지에서 사용하는 XDP\레이아웃에 서명 이미지를 렌더링할 이미지 필드가 왼쪽 아래에 있는지(또는 레이아웃을 통해 서명을 렌더링할 위치) 확인합니다.
 1. 서신을 만드는 동안 데이터 탭에서 다음 단계를 사용하여 서명 이미지에 대한 이미지 필드를 선택합니다.

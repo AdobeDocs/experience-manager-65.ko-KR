@@ -1,14 +1,12 @@
 ---
 title: 출력을 위한 파일 위치 지정
 description: '특정 유형의 파일(예: 콘텐츠 루트 URI, XCI 구성 파일, 캐시 및 기본값)에 대한 출력의 파일 위치를 지정하는 방법을 알아봅니다.'
-uuid: 3287274f-85b5-4811-8abb-d347a9b80947
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
 exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 1%

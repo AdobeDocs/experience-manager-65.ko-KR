@@ -1,20 +1,16 @@
 ---
 title: AEM 6.5 커뮤니티로 업그레이드
-seo-title: Upgrading to AEM 6.5 Communities
 description: 이전 버전에서 AEM 6.5 Communities로 업그레이드하는 방법
-seo-description: How to upgrade from an earlier version to AEM 6.5 Communities
-uuid: 929c3892-1b3b-46a7-8e70-fa6864125911
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 1%
+source-wordcount: '636'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +55,7 @@ MSRP로 구성된 배포에 새 커뮤니티 기능 팩을 설치할 때 다음�
 
          * *선택 취소* `Cloud Storage`
 
-         * **저장**&#x200B;을 선택합니다
+         * 선택 **저장**
 
      ![유틸리티](assets/utilities.png)
 

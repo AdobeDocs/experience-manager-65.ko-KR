@@ -1,16 +1,12 @@
 ---
 title: HTML5 양식용 양식 템플릿 렌더링
-seo-title: Rendering form template for HTML5 forms
 description: HTML5 양식 프로필은 프로필 렌더링과 연결됩니다. 프로필 렌더링은 Forms OSGi 서비스를 호출하여 양식의 HTML 표시를 생성하는 JSP 페이지입니다.
-seo-description: HTML5 forms profiles are associated with profile renders. Profile Renders are JSP pages responsible for generating HTML representation of the form by calling the Forms OSGi service.
-uuid: 34daed78-0611-4355-9698-0d7f758e6b61
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 1%

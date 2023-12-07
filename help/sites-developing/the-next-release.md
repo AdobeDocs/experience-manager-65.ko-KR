@@ -1,19 +1,15 @@
 ---
 title: 다음 릴리스...
-seo-title: The next release...
 description: 후속 릴리스는 거의 항상 예측되며 현재 구현의 마지막 단계 동안에도 시작될 수 있습니다
-seo-description: A subsequent release is nearly always foreseen, and can even start during the final stages of the current implementation
-uuid: 6ae213fb-1bd3-464c-bfd0-14ddceaee11e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: a7be7d33-9d06-4d07-b7a0-e23251e26cb8
 exl-id: d38b77ae-93be-4258-8827-6178097395d5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -27,6 +23,6 @@ ht-degree: 3%
 * 다음 릴리스의 회귀 테스트로 사용할 수 있는 테스트 개발.
 * 테스트 프로세스의 경험을 통해 얻은 정보를 대조합니다.
 
-   예를 들어 테스트 중에 제품에 대한 고객의 경험이 증가했으므로 다음 릴리스에 대한 요구 사항을 형성하는 데 도움이 될 수 있습니다.
+  예를 들어 테스트 중에 제품에 대한 고객의 경험이 증가했으므로 다음 릴리스에 대한 요구 사항을 형성하는 데 도움이 될 수 있습니다.
 
 다음 릴리스는 마이그레이션이 될 수도 있으므로 이와 관련된 모든 정보가 유용할 것입니다.

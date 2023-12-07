@@ -1,17 +1,15 @@
 ---
 title: PDF Generator을 사용하여 파일 변환
 description: PDF Generator 서비스는 기본 파일 형식을 PDF으로 변환합니다. 또한 PDF을 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다.
-uuid: 295afb8f-130a-44f5-b0ab-e4c93c0c9e52
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
 exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
-source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -38,7 +36,7 @@ PDF Generator 웹 페이지를 사용하여 파일을 변환할 수 있습니다
    * 설정 파일을 업로드하는 경우 상자에 해당 경로와 이름을 입력하거나 찾아보기를 눌러 파일을 찾아 선택합니다.
 
 1. (선택 사항) XMP 메타데이터 파일에서 XMP 파일의 경로와 이름을 입력하거나 찾아보기를 눌러 파일을 찾아 선택합니다. XMP 파일을 사용하여 표준 메타데이터 정보를 포함할 수 있습니다. (참조: [XMP 파일 정보](converting-files-using-pdf-generator.md#about-xmp-files).)
-1. 만들기를 클릭합니다. 파일이 생성되면 파일에 대한 링크가 나타납니다. 변환 중에 오류가 발생하면 경고가 나타납니다. Postscript 파일을 만드는 경우 경고에 로그 파일에 대한 링크도 포함되어 있습니다.
+1. 만들기 를 클릭합니다. 파일이 생성되면 파일에 대한 링크가 나타납니다. 변환 중에 오류가 발생하면 경고가 나타납니다. Postscript 파일을 만드는 경우 경고에 로그 파일에 대한 링크도 포함되어 있습니다.
 1. PDF 파일에 대한 링크를 클릭합니다. 파일이 Acrobat에서 열립니다.
 
 ### XMP 파일 정보 {#about-xmp-files}
@@ -98,7 +96,7 @@ ZIP 파일의 폴더 계층 구조의 가장 낮은 수준에 둘 이상의 HTML
    * 기존 설정 파일을 사용하려면 설정 파일 업로드 를 선택하고 찾아보기 를 클릭하여 파일 위치로 이동합니다.
 
 1. XMP 파일을 업로드하려면 찾아보기 를 클릭하고 파일 위치로 이동합니다. XMP 파일을 사용하여 표준 메타데이터 정보를 포함할 수 있습니다. (참조: [XMP 파일 정보](converting-files-using-pdf-generator.md#about-xmp-files).)
-1. 만들기를 클릭합니다. 파일이 생성되면 PDF 파일에 대한 링크가 나타납니다.
+1. 만들기 를 클릭합니다. 파일이 생성되면 PDF 파일에 대한 링크가 나타납니다.
 1. Acrobat에서 PDF 문서를 보려면 링크를 클릭하십시오.
 
 ## PDF 파일을 다른 파일 형식으로 내보내기(Windows에만 해당) {#export-a-pdf-file-to-another-file-format-windows-only}
@@ -110,7 +108,7 @@ ZIP 파일의 폴더 계층 구조의 가장 낮은 수준에 둘 이상의 HTML
 1. 내보낼 Export PDF 파일에서 PDF 파일을 내보낼 형식을 선택합니다.
 1. 시간 제한 지정 상자에 응용 프로그램 시간이 초과되기 전에 대기할 시간을 입력합니다. 기본값은 270초입니다.
 
-   파일을 변환할 때 표시되는 변환 시간은 여기에서 지정한 값보다 클 수 있습니다. 변환 시간 에는 스레드 또는 프로세스를 기다리는 시간, 파일을 변환하는 데 걸리는 시간 및 대체 변환기에 걸리는 시간(해당하는 경우)이 포함됩니다. time. Specify a Timeout 값은 파일을 변환하는 데 걸리는 시간입니다.
+   파일을 변환할 때 표시되는 변환 시간은 여기에서 지정한 값보다 클 수 있습니다. 변환 시간 에는 스레드 또는 프로세스를 기다리는 시간, 파일을 변환하는 데 걸리는 시간 및 대체 변환기에 걸리는 시간(해당하는 경우)이 포함됩니다. 시간. Specify a Timeout 값은 파일을 변환하는 데 걸리는 시간입니다.
 
 1. (선택 사항) **사용자 지정 Preflight 프로필 지정** 옵션을 선택하고 찾아보기를 클릭한 다음 [사용자 지정 Preflight 프로필](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Preflight 프로필은 문서를 PDF 아카이브(PDF/A) 형식으로 변환하는 동안에만 사용됩니다.
 1. 내보내기를 클릭합니다. 변환이 완료되면 내보낸 파일에 대한 링크가 나타납니다.
@@ -131,4 +129,4 @@ PDF Generator은 PDF 파일 크기를 줄일 수 있도록 지원합니다.
    * 사용자 지정 설정을 사용하려면 [사용자 지정 설정 사용]을 선택하고 파일 형식 설정을 지정한 다음 시간 초과 값을 지정합니다. 기본값은 270초입니다.
    * 기존 설정 파일을 사용하려면 설정 파일 업로드 를 선택하고 찾아보기 를 클릭하여 파일 위치로 이동합니다.
 
-1. 만들기를 클릭합니다.
+1. 만들기 를 클릭합니다.

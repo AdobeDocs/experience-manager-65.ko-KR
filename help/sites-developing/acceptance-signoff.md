@@ -1,19 +1,15 @@
 ---
 title: 수락 및 승인
-seo-title: Acceptance and Sign-off
 description: 수락 테스트는 프로젝트가 고객의 요구 사항을 충족하는지 그리고 고객이 프로젝트를 수락하는지 확인하는 데 사용되는 특별한 테스트 범주입니다
-seo-description: Acceptance Tests are a special category of test used to verify that the project fulfils the customer's requirements and that the customer accepts the project
-uuid: 6bdd2a99-d141-43ef-9102-99e65aba02d3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: d8da194f-f161-4ba7-b8cc-c2c282dc9c83
 exl-id: 30ac9a63-f9e6-4075-b67e-4524d11a0e29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 

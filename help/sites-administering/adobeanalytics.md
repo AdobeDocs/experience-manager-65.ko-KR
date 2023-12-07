@@ -1,20 +1,16 @@
 ---
 title: Adobe Analytics와 통합
-seo-title: Integrating with Adobe Analytics
 description: Adobe Experience Manager(AEM)를 Adobe Analytics과 통합하는 방법을 알아봅니다.
-seo-description: Learn how to integrate Adobe Experience Manager (AEM) with Adobe Analytics.
-uuid: d8548263-6ac5-45fb-8c70-52ecd4161bbb
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
 docset: aem65
 exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 75%
+source-wordcount: '282'
+ht-degree: 58%
 
 ---
 
@@ -41,9 +37,9 @@ Adobe Analytics과 AEM을 통합하여 웹 페이지 활동을 추적할 수 있
 다음 페이지는 통합을 구성하는 데 도움이 됩니다.
 
 * [Adobe Analytics 연결 및 프레임워크 만들기](/help/sites-administering/adobeanalytics-connect.md)
-* [Adobe Analytics를 위한 링크 추적 구성](/help/sites-administering/adobeanalytics-link.md)
+* [Adobe Analytics에 대한 링크 추적 구성](/help/sites-administering/adobeanalytics-link.md)
 * [Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑](/help/sites-administering/adobeanalytics-mapping.md)
-* [Adobe Analytics를 위한 비디오 추적 구성](/help/sites-administering/adobeanalytics-video.md)
+* [Adobe Analytics에 대한 비디오 추적 구성](/help/sites-administering/adobeanalytics-video.md)
 * [Adobe 분류](/help/sites-administering/adobeanalytics-classifications.md)
 
 다음을 사용할 수도 있습니다 [옵트인 마법사](/help/sites-administering/opt-in.md) 통합을 쉽게 수행할 수 있습니다.
@@ -56,7 +52,7 @@ Adobe Analytics과 AEM을 통합하여 웹 페이지 활동을 추적할 수 있
 
 다음을 참조하십시오.
 
-* [Adobe Analytics 통합 확장](/help/sites-developing/extending-analytics.md)을 참조하여 사용자 데이터를 수집하는 구성 요소 개발 및 Adobe Analytics 프레임워크 맞춤화에 대한 자세한 내용을 알아보십시오.
+* [Adobe Analytics 통합 확장](/help/sites-developing/extending-analytics.md) 사용자 데이터를 수집하는 구성 요소를 개발하고 Adobe Analytics 프레임워크를 사용자 지정하는 방법에 대한 정보입니다.
 * 지식 기반 문서인 [Adobe Analytics 통합 - 문제 해결](https://helpx.adobe.com/kr/experience-manager/kb/sitecatalystintegrationtroubleshooting.html)을 참조하여 Adobe Analytics 통합 관련 문제를 해결하는 방법에 대해 알아보십시오.
 
 >[!NOTE]

@@ -1,17 +1,13 @@
 ---
 title: 거래 보고서 보기 및 이해
-seo-title: Viewing and Understanding Transaction Reports
 description: 트랜잭션 보고서를 사용하여 제품 사용과 하드웨어 및 소프트웨어에 대한 투자 재조정에 대해 정보에 입각한 결정을 내릴 수 있습니다.
-seo-description: Use transaction reports to make an informed decision about the product usage and rebalancing investments in hardware and software.
-uuid: 56d9f01d-4778-47c9-bbb2-6650a73a3f59
 topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -66,7 +62,7 @@ fd-administrator 그룹의 멤버만 트랜잭션 보고서를 볼 수 있습니
 
 1. 작성자 인스턴스에 관리자로 로그인합니다. 다음으로 이동 **도구** > **작업** > **웹 콘솔**.
 1. 을(를) 찾아 엽니다. **Forms 트랜잭션 저장소 저장소 저장소 공급자** 서비스.
-1. 사용자 지정 보낼 편지함의 이름 지정 **보낼 편지함** 필드. **저장**&#x200B;을 클릭합니다. 지정된 이름의 보낼 편지함이 모든 작성자 인스턴스에 만들어집니다.
+1. 사용자 지정 보낼 편지함의 이름 지정 **보낼 편지함** 필드. 클릭 **저장**. 지정된 이름의 보낼 편지함이 모든 작성자 인스턴스에 만들어집니다.
 
 ## 트랜잭션 보고서 보기 {#viewing-the-transaction-report}
 

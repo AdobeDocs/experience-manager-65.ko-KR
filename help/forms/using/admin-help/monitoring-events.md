@@ -1,17 +1,13 @@
 ---
 title: 이벤트 모니터링
-seo-title: Monitoring events
 description: 감사 기능을 사용하면 Document Security를 통해 특정 유형의 이벤트를 모니터링할 수 있습니다. 문서 보안을 사용하여 이벤트 목록을 쉽게 검색하고 정렬할 수 있습니다.
-seo-description: When the auditing capability is enabled, document security enables you to monitor certain types of events. You can easily search and sort the events list using the document security.
-uuid: 22add6ff-536d-4cb9-8eac-b72cad5c3ecf
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
 feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
@@ -48,7 +44,7 @@ ht-degree: 0%
 
 * 시스템 또는 관리자가 서버에 대한 감사 기능을 사용하도록 설정해야 합니다.
 
-   (참조: [이벤트 감사 및 개인 정보 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
+  (참조: [이벤트 감사 및 개인 정보 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
 
 * 문서를 보호하는 데 사용하는 정책에는 감사가 활성화되어 있어야 합니다. (참조: [정책 만들기 및 편집](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 

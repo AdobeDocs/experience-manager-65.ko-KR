@@ -1,17 +1,13 @@
 ---
 title: JMX 콘솔을 사용한 서버 리소스 모니터링
-seo-title: Monitoring Server Resources Using the JMX Console
 description: JMX 콘솔을 사용하여 서버 리소스를 모니터링하는 방법에 대해 알아봅니다.
-seo-description: Learn how to monitor server resources using the JMX console.
-uuid: 0a28aafe-61b2-472b-8f8f-2cd6540cbfee
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '4830'
 ht-degree: 0%

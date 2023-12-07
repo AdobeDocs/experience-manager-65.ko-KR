@@ -1,15 +1,11 @@
 ---
 title: 모범 사례
-seo-title: Best Practices
 description: 작성 모범 사례에서는 AEM을 가장 효율적이고 가장 효과적인 방법으로 사용하는 방법을 설명합니다. 이렇게 늘어나는 주제 목록은 AEM의 다양한 영역을 포함합니다.
-seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
-uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 3%
@@ -23,7 +19,7 @@ ht-degree: 3%
 
 다음 영역에는 모범 사례와 관련된 설명서가 있습니다.
 
-* [Assets](#assets)
+* [자산](#assets)
 * [Sites](#sites)
 * [Forms](#forms)
 
@@ -35,7 +31,7 @@ ht-degree: 3%
 
 특정 문서는 다음에 나오는 표에 설명되어 있고 연결됩니다.
 
-## Assets {#assets}
+## 자산 {#assets}
 
 Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
 

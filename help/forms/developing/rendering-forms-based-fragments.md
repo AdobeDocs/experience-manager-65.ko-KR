@@ -1,20 +1,16 @@
 ---
 title: 조각을 기반으로 Forms 렌더링
-seo-title: Rendering Forms Based on Fragments
 description: Designer를 사용하여 만든 조각을 기반으로 하는 양식을 렌더링하려면 Forms 서비스를 사용하십시오.
-seo-description: Use the Forms service to render forms that are based on fragments created using Designer.
-uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2189'
 ht-degree: 0%
 
 ---
@@ -27,7 +23,7 @@ ht-degree: 0%
 
 Forms 서비스는 Designer를 사용하여 만든 조각을 기반으로 하는 양식을 렌더링할 수 있습니다. A *조각* 는 양식의 재사용 가능한 부분이며 여러 양식 디자인에 삽입할 수 있는 별도의 XDP 파일로 저장됩니다. 예를 들어 조각에는 주소 블록이나 법적 텍스트가 포함될 수 있습니다.
 
-조각을 사용하면 많은 수의 양식을 간편하게 만들고 유지 관리할 수 있습니다. 양식을 작성할 때 필요한 조각에 대한 참조를 삽입하면 조각이 양식에 나타납니다. 조각 참조에는 실제 XDP 파일을 가리키는 하위 양식이 포함되어 있습니다. 조각을 기반으로 양식 디자인을 만드는 방법에 대한 자세한 내용은 [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63_kr)
+조각을 사용하면 많은 수의 양식을 간편하게 만들고 유지 관리할 수 있습니다. 양식을 작성할 때 필요한 조각에 대한 참조를 삽입하면 조각이 양식에 나타납니다. 조각 참조에는 실제 XDP 파일을 가리키는 하위 양식이 포함되어 있습니다. 조각을 기반으로 양식 디자인을 만드는 방법에 대한 자세한 내용은 [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 조각에는 선택 하위 양식 집합에 래핑된 여러 하위 양식이 포함될 수 있습니다. 선택 하위 양식 세트는 데이터 연결에서 데이터 흐름을 기반으로 하위 양식 표시를 제어합니다. 조건문을 사용하여 세트 내에서 게재된 양식에 나타나는 하위 양식을 결정합니다. 예를 들어, 집합 내의 각각의 서브폼은 특정 지리적 위치에 대한 정보를 포함할 수 있고, 디스플레이되는 서브폼은 사용자의 위치에 기초하여 결정될 수 있다.
 

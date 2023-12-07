@@ -1,20 +1,16 @@
 ---
 title: AEM 애플리케이션에 태깅 작성
-seo-title: Building Tagging into an AEM Application
 description: 프로그래밍 방식으로 사용자 지정 AEM 애플리케이션 내에서 태그를 사용하거나 태그를 확장하십시오
-seo-description: Programmatically work with tags or extending tags within a custom AEM application
-uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: 325af649564d93beedfc762a8f5beacec47b1641
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 1%
+source-wordcount: '849'
+ht-degree: 0%
 
 ---
 

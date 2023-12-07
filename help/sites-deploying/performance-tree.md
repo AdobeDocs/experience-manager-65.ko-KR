@@ -1,18 +1,15 @@
 ---
 title: 성능 트리
-seo-title: Performance Tree
 description: AEM의 성능 문제를 해결하기 위해 수행해야 하는 단계에 대해 알아봅니다.
-uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 9%
+source-wordcount: '1088'
+ht-degree: 2%
 
 ---
 
@@ -60,7 +57,7 @@ ht-degree: 9%
    <td><strong>리소스</strong></td>
   </tr>
   <tr>
-   <td><strong>0단계</strong></td>
+   <td><strong>단계 0</strong></td>
    <td>요청 흐름 분석</td>
    <td><p>브라우저에서 표준 HTTP 요청 분석을 사용하여 요청 흐름을 분석할 수 있습니다. Chrome에서 이 분석을 수행하는 방법에 대한 자세한 내용은 다음을 참조하십시오.<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
@@ -161,7 +158,7 @@ ht-degree: 9%
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">메모리 부족</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">내 응용 프로그램에서 메모리 부족 오류가 발생합니다.</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko">메모리 문제 분석.</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en">메모리 문제 분석.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -197,7 +194,7 @@ ht-degree: 9%
      <li><a href="/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing">동시 워크플로우 처리</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow">특정 워크플로우에 대한 큐 구성</a></li>
      <li><a href="/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances">정기적인 워크플로 인스턴스 제거</a></li>
-     <li><a href="/help/sites-developing/workflows.md#transient-workflows">임시 워크플로</a><br /> </li>
+     <li><a href="/help/sites-developing/workflows.md#transient-workflows">임시 워크플로우</a><br /> </li>
     </ul> <p> </p> </td>
   </tr>
   <tr>
@@ -240,13 +237,13 @@ ht-degree: 9%
    <td>요청을 캐시할 수 있도록 만들기</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko">일반 Dispatcher 구성</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">일반 Dispatcher 구성</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">Dispatcher 캐시 구성</a></li>
     </ol> <p>캐시 비율을 개선하는 방법, 캐시 가능한 요청을 하는 방법(Dispatcher 모범 사례)</p> <p>또한 캐싱 구성을 최적화하려면 아래 설정을 고려하십시오<br /> </p>
     <ol>
      <li>GET이 아닌 HTTP 요청에 대해 no-cache 규칙을 설정합니다.</li>
      <li>캐시 불가능 쿼리 문자열 구성</li>
-     <li>확장명이 누락된 URL은 캐시하지 않음</li>
+     <li>확장명이 누락된 URL을 캐시하지 않음</li>
      <li>캐시 인증 헤더(Dispatcher 버전 4.1.10 이후 가능)</li>
     </ol> </td>
   </tr>

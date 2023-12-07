@@ -1,16 +1,12 @@
 ---
 title: "자습서: 적응형 양식 게시"
-seo-title: "Tutorial: Publish your adaptive form"
 description: 적응형 양식을 AEM 페이지로 게시하거나, AEM Sites 페이지에 양식을 임베드하거나, 외부 웹 페이지에 적응형 양식을 임베드합니다
-seo-description: Publish the adaptive form as an AEM page, embed the form to an AEM Sites page, or embed the adaptive form in an external webpage
-uuid: 1b164376-e61a-40aa-9f16-c79d24a72e20
 contentOwner: khsingh
 topic-tags: introduction
-discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 2%

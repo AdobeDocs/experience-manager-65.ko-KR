@@ -1,13 +1,11 @@
 ---
 title: Adobe Experience Manager 6.5 Forms 안내서
-seo-title: AEM 6.5 Forms Guide
 description: 이 AEM 6.5 안내서를 사용하여 디지털 양식을 작성, 관리, 게시 및 업데이트합니다. 설치, 업그레이드 및 구성에 대한 도움말을 확인하고 적응형 양식 작성에 대해 알아봅니다.
-seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 81%
+source-wordcount: '318'
+ht-degree: 78%
 
 ---
 
@@ -43,12 +41,12 @@ ht-degree: 81%
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
-| [Commerce 사용 안내서](/help/commerce/home.md) | AEM의 Commerce Integration Framework에 대해 알아봅니다. |
+| [Commerce 사용 안내서](/help/commerce/home.md) | AEM의 Commerce integration framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 
 ## 주요 AEM 리소스
 
-* [AEM 자습서](https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-5-videos.html)
+* [AEM 자습서](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)
 * [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

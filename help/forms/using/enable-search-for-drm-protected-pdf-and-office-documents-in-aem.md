@@ -1,20 +1,16 @@
 ---
 title: AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검색할 수 있도록 설정
-seo-title: Enable AEM to search document security protected PDF and Microsoft Office documents
 description: DRM 보호 PDF 문서에서 전체 텍스트 검색을 수행할 수 있도록 기본 AEM 검색을 활성화하는 방법에 대해 알아봅니다.
-seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
-uuid: dba882f8-bad4-4122-a0df-03cf087afb23
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 1%
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +43,7 @@ AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검�
    * **사용자 이름:** JEE 서버의 AEM Forms에서 호출을 시작하는 데 사용할 JEE의 AEM Forms 계정의 사용자 이름을 지정합니다. 지정된 계정에는 JEE 서버의 AEM Forms에서 문서 서비스를 호출할 수 있는 권한이 있어야 합니다.
    * **암호**: 사용자 이름 필드에 언급된 JEE의 AEM Forms 계정에 대한 암호를 지정합니다.
 
-   **저장**&#x200B;을 클릭합니다. AEM은 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검색할 수 있도록 활성화됩니다.
+   클릭 **저장**. AEM은 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검색할 수 있도록 활성화됩니다.
 
 ### 상호 인증을 사용하여 AEM Forms 클라이언트 SDK 번들 구성 {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
@@ -63,7 +59,7 @@ AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검�
    * **트러스트 스토어 암호**: truststore 파일의 암호를 지정합니다.
    * **서비스 이름**: 지정된 서비스 목록에 RightsManagementService를 추가합니다.
 
-   **저장**&#x200B;을 클릭합니다. AEM은 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검색할 수 있도록 활성화됩니다
+   클릭 **저장**. AEM은 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검색할 수 있도록 활성화됩니다
 
 ## 정책으로 보호된 샘플 PDF 또는 Microsoft Office 문서 색인화 {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 

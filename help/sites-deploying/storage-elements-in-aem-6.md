@@ -1,20 +1,16 @@
 ---
 title: AEM 6.5의 저장소 요소
-seo-title: Storage Elements in AEM 6.5
 description: AEM 6.5에서 사용할 수 있는 노드 저장소 구현 및 저장소 유지 관리 방법에 대해 알아봅니다.
-seo-description: Learn about the node storage implementations available in AEM 6.5 and how to maintain the repository.
-uuid: 3b018830-c42e-48e0-9b6f-cd230b02d914
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 1%
+source-wordcount: '706'
+ht-degree: 0%
 
 ---
 
@@ -120,7 +116,7 @@ Red Hat® Linux®는 THP(Transparent Huge Pages)라는 메모리 관리 알고�
 >다음 리소스를 참조하십시오.
 >
 >* Red Hat® Linux®의 Transparent Huge Pages에 대한 자세한 내용은 다음을 참조하십시오 [기사](https://access.redhat.com/solutions/46111).
-* Linux® 조정 팁은 다음을 참조하십시오 [기사](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko-KR).
+* Linux® 조정 팁은 다음을 참조하십시오 [기사](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 >
 
 ## 저장소 유지 관리 {#maintaining-the-repository}

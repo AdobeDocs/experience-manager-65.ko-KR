@@ -1,20 +1,16 @@
 ---
 title: MSRP - MongoDB 저장소 리소스 공급자
-seo-title: MSRP - MongoDB Storage Resource Provider
 description: 관계형 데이터베이스를 공통 저장소로 사용하도록 AEM Communities 설정
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 1%
+source-wordcount: '1142'
+ht-degree: 0%
 
 ---
 
@@ -80,7 +76,7 @@ AEM Communities이 MSRP를 공통 저장소로 사용하도록 구성된 경우 
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper 호스트**
+   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) 호스트**
 
      에서 실행할 때 [SolrCloud 모드](solr.md#solrcloud-mode) 외부 ZooKeeper를 사용하여 이 값을 `HOST:PORT` ZooKeeper의 경우 다음과 같습니다. *my.server.com:2181*
 
@@ -98,7 +94,7 @@ SolrCloud 모드에서 실행하는 경우 비워 둡니다.
 Solr 컬렉션 이름입니다.
         *기본값*: collection1
 
-* **[!UICONTROL 제출]**&#x200B;을 선택합니다
+* 선택 **[!UICONTROL 제출]**
 
 >[!NOTE]
 >

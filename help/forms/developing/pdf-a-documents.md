@@ -1,19 +1,15 @@
 ---
 title: PDF/A 문서 작업
-seo-title: Working with PDF/A Documents
 description: DocConverter 서비스를 사용하여 PDF 문서가 PDF/A 문서인지 확인하고 PDF 문서를 PDF/A 문서로 변환합니다.
-seo-description: Use the  DocConverter service to determine if a PDF document is a PDF/A document and convert PDF documents to PDF/A documents.
-uuid: c258d253-068a-4412-955a-21d8a4792d6f
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2331'
 ht-degree: 1%
 
 ---
@@ -33,7 +29,7 @@ DocConverter 서비스는 PDF 문서를 PDA/A 문서로 변환할 수 있습니�
 
 ## 문서를 PDF/A 문서로 변환 {#converting-documents-to-pdf-a-documents}
 
-DocConverter 서비스를 사용하여 PDF 문서를 PDF/A 문서로 변환할 수 있습니다. PDF/A는 문서 내용을 장기간 보존하기 위한 보관 형식이므로 모든 글꼴이 임베드되고 파일이 압축 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 콘텐츠가 포함되지 않습니다. PDF 문서를 PDF/A 문서로 변환하려면 먼저 PDF 문서가 PDF/A 문서가 아닌지 확인합니다.
+DocConverter 서비스를 사용하여 PDF 문서를 PDF/A 문서로 변환할 수 있습니다. PDF/A는 문서 내용을 장기간 보존하기 위한 보관 형식이므로 모든 글꼴이 임베드되고 파일이 압축 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다. PDF 문서를 PDF/A 문서로 변환하려면 먼저 PDF 문서가 PDF/A 문서가 아닌지 확인합니다.
 
 PDF/A-1 사양은 두 가지 적합성 수준, 즉 A와 B로 구성됩니다. 두 요소의 주요 차이점은 적합성 수준 B에 필요하지 않은 논리적 구조(접근성) 지원에 대한 것입니다. 적합성 수준에 관계없이 PDF/A-1은 모든 글꼴이 생성된 PDF/A 문서 내에 임베드되어 있음을 나타냅니다. 현재 유효성 검사(및 전환)에서는 PDF/A-1b만 지원됩니다.
 

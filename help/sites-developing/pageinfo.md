@@ -1,23 +1,19 @@
 ---
-title: JSON 형식으로 페이지 정보 얻기
-seo-title: Obtaining Page Information in JSON Format
+title: JSON 형식으로 페이지 정보 가져오기
 description: 페이지 정보를 얻으려면 PageInfo 서블릿에 요청을 전송하여 JSON 형식으로 페이지 메타데이터를 얻습니다
-seo-description: To obtain the page information, send a request to the PageInfo servlet to obtain the page metadata in JSON format
-uuid: fb4f56b9-55e2-4622-a0d1-a86d6f2cce86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 3%
+source-wordcount: '931'
+ht-degree: 1%
 
 ---
 
-# JSON 형식으로 페이지 정보 얻기{#obtaining-page-information-in-json-format}
+# JSON 형식으로 페이지 정보 가져오기{#obtaining-page-information-in-json-format}
 
 페이지 정보를 얻으려면 PageInfo 서블릿에 요청을 전송하여 JSON 형식으로 페이지 메타데이터를 얻습니다.
 
@@ -539,7 +535,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 사용자 지정 페이지 정보 공급자 서비스를 만들어 응용 프로그램에서 쉽게 얻을 수 있는 페이지 메타데이터를 추가합니다.
 
-1. `com.day.cq.wcm.api.PageInfoProvider` 인터페이스를 구현합니다. 
+1. 구현 `com.day.cq.wcm.api.PageInfoProvider` 인터페이스.
 1. 클래스를 OSGi 서비스로 번들 및 배포합니다.
 1. 애플리케이션에서 페이지 구성 요소를 만듭니다. 사용 `foundation/components/page` 을 값으로 사용 `sling:resourceSuperType` 속성.
 

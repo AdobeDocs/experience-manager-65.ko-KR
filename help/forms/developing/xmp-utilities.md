@@ -1,19 +1,15 @@
 ---
 title: XMP 유틸리티 작업
-seo-title: Working with XMP Utilities
 description: XMP 유틸리티 Java 및 웹 서비스 API를 사용하여 XMP 메타데이터를 프로그래밍 방식으로 PDF 문서로 가져오고 PDF 문서에서 XMP 메타데이터를 검색하고 저장합니다.
-seo-description: Use the XMP Utilities Java and Web Service APIs to programmatically import XMP metadata into a PDF document and retrieve and save XMP metadata from a PDF document.
-uuid: 90ce6cef-efe1-456a-8e0c-5ba90249dda0
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1380'
 ht-degree: 0%
 
 ---

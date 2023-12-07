@@ -1,13 +1,11 @@
 ---
 title: 문서 단편
 description: 서신 관리의 텍스트, 목록, 조건 및 레이아웃 조각과 같은 문서 조각을 사용하면 고객 서신의 정적, 동적 및 반복 가능한 구성 요소를 구성할 수 있습니다.
-uuid: 053a17e5-69a5-463d-af4f-46a86534158f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 1f48548c-4222-454d-ad16-53da37170de2
 feature: Correspondence Management
 exl-id: ff3a4cba-a1a6-4fc9-8466-da7f28a74fb5
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 1%

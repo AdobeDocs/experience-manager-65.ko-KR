@@ -1,17 +1,13 @@
 ---
 title: Portable Protection Library를 사용하여 정책으로 보호된 PDF 문서를 확장하는 Reader
-seo-title: Reader extending policy-protected PDF documents using Portable Protection Library
 description: Reader 확장을 사용하면 Acrobat Reader을 통해 Adobe PDF 문서의 대화형 기능을 사용할 수 있습니다. PPL(Portable Protection Library)을 사용하여 DRM 보호 PDF 문서를 판독기로 확장할 수 있습니다.
-seo-description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents.
-uuid: 0da17641-d24c-43c2-b918-8b5abe1e5473
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 feature: Document Security
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 1%

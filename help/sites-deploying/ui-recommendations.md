@@ -1,19 +1,15 @@
 ---
 title: 고객을 위한 사용자 인터페이스 Recommendations
-seo-title: User Interface Recommendations for Customers
 description: 클래식 및 터치에 적합한 사용자 인터페이스와 관련된 권장 사항 목록입니다.
-seo-description: A list of recommendations related to the classic and touch-optimized user interfaces.
-uuid: 9ec2c9de-a79e-4f2c-a90f-b38ba9553e07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---

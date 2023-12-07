@@ -1,16 +1,12 @@
 ---
 title: 페이지에 링크 구성 요소 포함
-seo-title: Embedding link component in a page
 description: 링크 구성 요소를 사용하여 모든 페이지에서 적응형 문서 또는 적응형 양식을 연결할 수 있습니다.
-seo-description: You can use the link component to link an adaptive document or an adaptive form from any page.
-uuid: 22f488fc-bb1a-40aa-a5f4-6d04d7250f29
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%

@@ -1,18 +1,14 @@
 ---
 title: 작업 요약 창에 정보 표시
-seo-title: Displaying information in the Task Summary pane
 description: AEM Forms 작업 영역에서는 작업을 요약하거나 다른 웹 페이지를 표시하도록 작업 요약 창을 구성할 수 있습니다.
-seo-description: In AEM Forms workspace, a Task Summary pane can be configured to summarize the task or display any other web page.
-uuid: 2fcc3d9f-0ec2-4250-8dc1-9746fd72ea60
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 exl-id: 0b3087fe-a3fb-4eac-ad4b-c123526e8195
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---

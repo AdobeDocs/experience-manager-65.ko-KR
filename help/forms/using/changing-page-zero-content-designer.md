@@ -1,19 +1,15 @@
 ---
 title: Designer에서 Page Zero 콘텐츠 변경
-seo-title: Changing Page Zero content in Designer
 description: 비 Adobe PDF 뷰어에서 볼 때 XFA PDF의 Page Zero에 표시된 메시지를 변경하는 방법을 알고 있습니까?
-seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
-uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
 feature: Adaptive Forms
 exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 1%
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 

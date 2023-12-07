@@ -1,21 +1,17 @@
 ---
 title: HTML 5 양식에 대한 로깅 활성화
-seo-title: Enable logging for HTML5 forms
 description: 로거 유틸리티는 양식에 대한 로깅을 활성화하고 양식 관련 문제를 디버깅하는 데 도움이 됩니다.
-seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
-uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 6%
+source-wordcount: '629'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +23,7 @@ HTML 5 양식에 대한 로그 작성을 시작하도록 로거 유틸리티를 
 
 서버측 로그를 구성하려면 다음 단계를 수행하십시오.
 
-1. 이동 `https://'[server]:[port]'/system/console/configMgr`. 을(를) 찾아 엽니다. *Apace Sling 로깅 로거 구성* 옵션을 선택합니다. 대화 상자가 나타납니다:
+1. 다음으로 이동 `https://'[server]:[port]'/system/console/configMgr`. 을(를) 찾아 엽니다. *Apace Sling 로깅 로거 구성* 옵션을 선택합니다. 대화 상자가 나타납니다.
 
    ![ Api Sling 로깅 로거 구성 옵션 대화 상자](assets/logconfig.png)
 
@@ -183,7 +179,7 @@ HTML 5 양식에 대한 로그 작성을 시작하도록 로거 유틸리티를 
 1. 을(를) 검색하고 **모바일 Forms 구성**.
 1. 디버그 옵션 텍스트 상자에 이전 섹션에 설명된 대로 로그 구성을 입력합니다(예: **2-a4-b5-c6**
 
-   ![양식 구성](assets/forms_configuration.png)
+   ![Forms 구성](assets/forms_configuration.png)
 
    양식 구성
 

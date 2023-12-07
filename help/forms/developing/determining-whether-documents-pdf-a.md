@@ -1,20 +1,16 @@
 ---
 title: 문서의 PDF/A 호환 여부 확인
-seo-title: Determining Whether Documents Are PDF/A-Compliant
 description: 어셈블러 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 PDF 문서가 PDF/A를 준수하는지 확인합니다.
-seo-description: Use the Assembler service to determine if a PDF document is PDF/A-compliant using the Java API and Web Service API.
-uuid: 4e9d8c8f-2153-411b-9c4b-2d14b3c8f4bb
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2081'
+source-wordcount: '2065'
 ht-degree: 2%
 
 ---

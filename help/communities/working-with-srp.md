@@ -1,20 +1,16 @@
 ---
 title: SRP - 커뮤니티 콘텐츠 저장소
-seo-title: SRP - Community Content Storage
 description: AEM Communities 6.1부터 UGC(사용자 생성 컨텐츠)는 SRP(저장소 리소스 제공자)가 제공하는 하나의 공통 저장소에 저장됩니다
-seo-description: As of AEM Communities 6.1, user generated content (UGC) is stored in a single, common store provided by a storage resource provider (SRP)
-uuid: d45e03c4-378b-4510-a6a0-d48c8cb879d9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 6f13b21a-f4ef-4889-9b8e-4da3f846fa35
 docset: aem65
 role: Admin
 exl-id: e29aae44-67be-43d2-8004-c986412d9e63
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---

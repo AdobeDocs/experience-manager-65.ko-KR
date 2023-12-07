@@ -1,25 +1,21 @@
 ---
 title: We.Retail에서 편집 가능한 템플릿 시험 사용
-seo-title: Trying out Editable Templates in We.Retail
 description: We.Retail을 사용하여 Adobe Experience Manager에서 편집 가능한 템플릿을 테스트하는 방법을 알아봅니다.
-seo-description: null
-uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 13%
+source-wordcount: '467'
+ht-degree: 2%
 
 ---
 
 # We.Retail에서 편집 가능한 템플릿 시험 사용{#trying-out-editable-templates-in-we-retail}
 
-편집 가능한 템플릿을 사용하면 템플릿 작성 및 유지 관리가 더 이상 개발자 전용 작업이 아닙니다. 이제 템플릿 작성자라고 하는 고급 사용자 유형이 템플릿을 만들 수 있습니다. 개발자는 여전히 환경을 설정하고 클라이언트 라이브러리를 생성하고 사용할 구성 요소를 생성해야 하지만, 이러한 기본 사항이 마련되면 템플릿 작성자는 개발 프로젝트 없이도 템플릿을 생성하고 구성할 수 있습니다.
+편집 가능한 템플릿을 사용하면 템플릿 작성 및 유지 관리가 더 이상 개발자 전용 작업이 아닙니다. 이제 템플릿 작성자라고 하는 고급 사용자 유형이 템플릿을 만들 수 있습니다. 개발자는 여전히 환경을 설정하고, 클라이언트 라이브러리를 만들고, 사용할 구성 요소를 만들어야 하지만, 이러한 기본 사항이 갖추어지면 템플릿 작성자는 개발 프로젝트 없이 템플릿을 만들고 구성할 수 있는 유연성을 갖게 됩니다.
 
 We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하므로 개발자가 아닌 사용자도 템플릿을 조정하고 맞춤화할 수 있습니다.
 
@@ -71,7 +67,7 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
 
    **레이아웃** 모드는 일반 페이지에서 그대로 사용하여 템플릿의 레이아웃을 정의할 수 있습니다.
 
-## 자세한 내용 {#more-information}
+## 추가 정보 {#more-information}
 
 자세한 내용은 작성 문서를 참조하십시오 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md) 편집 가능한 템플릿에 대한 전체 기술 세부 정보.
 

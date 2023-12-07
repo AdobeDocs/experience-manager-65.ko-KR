@@ -1,19 +1,15 @@
 ---
 title: 커뮤니티에 대한 FFmpeg
-seo-title: FFmpeg for Communities
 description: 커뮤니티용 FFmpeg 설치 및 구성 방법
-seo-description: How to install and configure FFmpeg for Communities
-uuid: ef2f821c-70e9-4889-a8d7-a93b10a1d428
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '251'
 ht-degree: 1%
 
 ---
@@ -39,7 +35,7 @@ AEM을 호스팅하는 서버에 FFmpeg를 설치해야 합니다. *작성자* �
 
    시스템의 모든 디렉터리에서 FFmpeg를 실행할 수 있어야 합니다.
 
-   * (예: `ffmpeg -version`)
+   * 예: `ffmpeg -version`
 
 ## FFmpeg 코드 변환 서비스 구성 {#configure-ffmpeg-transcoding-service}
 
@@ -54,14 +50,14 @@ AEM을 호스팅하는 서버에 FFmpeg를 설치해야 합니다. *작성자* �
 * 찾기 **[!UICONTROL DAM 자산 업데이트]**.
 * 두 번 클릭하여 클래식 UI에서 편집할 워크플로를 엽니다.
 
-   결과 위치: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
+  결과 위치: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
 * 를 두 번 클릭합니다. **[!UICONTROL FFmpeg 코드 변환]** 단계 를 클릭하여 단계 속성 대화 상자에 액세스합니다.
 * 아래 **[!UICONTROL 프로세스]** 탭:
 
    * **[!UICONTROL 인수]**: 코드 변환 기능을 비활성화하려면 모든 항목을 지웁니다. 기본값: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
-   ![configure-ffmpeg](assets/configure-ffmpeg.png)
+  ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
 * 선택 **[!UICONTROL 확인]** 닫으려면 다음을 수행하십시오. `Step Properties` 대화 상자.
 

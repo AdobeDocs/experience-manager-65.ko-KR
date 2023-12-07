@@ -1,17 +1,15 @@
 ---
 title: Adobe Experience Manager 및 MongoDB
 description: MongoDB를 사용한 Adobe Experience Manager의 성공적인 배포에 필요한 작업 및 고려 사항에 대해 알아봅니다.
-uuid: 8028832d-10de-4811-a769-fab699c162ec
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6408'
+source-wordcount: '6184'
 ht-degree: 0%
 
 ---
@@ -130,7 +128,7 @@ Ganglia는 이러한 시스템의 좋은 예이며 CPU, 로드 평균 및 사용
 
 여러 서버로 구성된 클러스터에서 중앙 로그 집선은 운영 시스템의 요구 사항입니다. Splunk과 같은 소프트웨어는 로그 집계를 지원하고 팀이 로그를 수동으로 수집하지 않고도 애플리케이션의 동작 패턴을 분석할 수 있도록 합니다.
 
-## 확인 목록 {#checklists}
+## 체크리스트 {#checklists}
 
 이 섹션에서는 프로젝트를 구현하기 전에 AEM 및 MongoDB 배포가 제대로 설정되었는지 확인하기 위해 수행해야 하는 다양한 단계를 설명합니다.
 
@@ -594,7 +592,7 @@ Dispatcher는 상태를 저장하지 않으므로 수평으로 쉽게 확장할 
 
 Dispatcher 없이 AEM을 실행하려면 다른 애플리케이션에서 SSL 종료 및 로드 밸런싱을 수행해야 합니다. 세션이 만들어지는 AEM 인스턴스(고정 연결이라고 함)에 대한 친화성을 가져야 하므로 필요합니다. 그 이유는 콘텐츠에 대한 업데이트가 최소한의 지연을 보이도록 하기 위해서입니다.
 
-다음 확인: [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko) 구성 방법에 대한 자세한 내용을 참조하십시오.
+다음 확인: [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) 구성 방법에 대한 자세한 내용을 참조하십시오.
 
 ### 추가 구성 {#additional-configuration}
 
@@ -606,7 +604,7 @@ Dispatcher 없이 AEM을 실행하려면 다른 애플리케이션에서 SSL 종
 
 #### 장기 만료 {#long-expires}
 
-기본적으로 AEM Dispatcher에서 전송된 컨텐츠에는 컨텐츠 만료가 표시되지 않고 Last-Modified 및 Etag 헤더가 있습니다. 이 흐름은 사용자 인터페이스가 항상 최신 버전의 리소스를 가져오도록 합니다. 또한 브라우저가 리소스가 변경되었는지 확인하기 위해 GET 작업을 수행함을 의미합니다. 따라서 페이지 로드에 따라 HTTP 응답이 304(수정되지 않음)인 여러 요청이 발생할 수 있습니다. 만료되지 않는 리소스의 경우 만료 헤더를 설정하고 Last-Modified 및 ETag 헤더를 제거하면 콘텐츠가 캐시됩니다. 또한 Expires 헤더의 날짜가 충족될 때까지 추가 업데이트 요청이 수행되지 않습니다.
+기본적으로 AEM Dispatcher에서 전송된 컨텐츠에는 컨텐츠가 만료될 것임을 표시하지 않고 Last-Modified 및 Etag 헤더가 있습니다. 이 흐름을 사용하면 사용자 인터페이스가 항상 최신 버전의 리소스를 가져옵니다. 또한 브라우저가 리소스가 변경되었는지 확인하기 위해 GET 작업을 수행함을 의미합니다. 따라서 페이지 로드에 따라 HTTP 응답이 304(수정되지 않음)인 여러 요청이 발생할 수 있습니다. 만료되지 않는 리소스의 경우 만료 헤더를 설정하고 Last-Modified 및 ETag 헤더를 제거하면 콘텐츠가 캐시됩니다. 또한 Expires 헤더의 날짜가 충족될 때까지 추가 업데이트 요청이 수행되지 않습니다.
 
 그러나 이 방법을 사용하면 Expires 헤더가 만료되기 전에 리소스가 브라우저에서 만료되는 합리적인 방법이 없음을 의미합니다. 이 워크플로를 완화하기 위해 클라이언트 라이브러리에 변경 불가능한 URL을 사용하도록 HtmlClientLibraryManager를 구성할 수 있습니다.
 

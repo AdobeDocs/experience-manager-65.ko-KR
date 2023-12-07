@@ -5,12 +5,11 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1619'
-ht-degree: 1%
+source-wordcount: '1609'
+ht-degree: 0%
 
 ---
 
@@ -203,7 +202,7 @@ Adobe Analytics s_code.js 파일의 컨텐츠를 포함하는 analytics.sitecata
 
    * 레이블: `sitecatalyst`
    * 제목: `sitecatalyst`
-   * Super Type: `/libs/cq/analytics/components/sitecatalyst`
+   * 상위 유형: `/libs/cq/analytics/components/sitecatalyst`
    * 그룹: `hidden`
 
 1. 확인(OK) 단추가 활성화될 때까지 다음(Next)을 반복적으로 클릭한 다음 확인(OK)을 클릭합니다.

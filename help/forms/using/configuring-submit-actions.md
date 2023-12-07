@@ -1,24 +1,21 @@
 ---
 title: 제출 액션 구성
-seo-title: Configuring the Submit action
 description: Forms을 사용하면 제출 액션을 구성하여 제출 후 적응형 양식이 처리되는 방식을 정의할 수 있습니다. 기본 제공 제출 액션을 사용하거나 직접 작성할 수 있습니다.
-uuid: 4368d648-88ea-4f84-a051-46296a1a084e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2134'
 ht-degree: 51%
 
 ---
 
 # 제출 액션 구성 {#configuring-the-submit-action}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -74,7 +71,7 @@ ht-degree: 51%
 
 ![REST 엔드포인트 제출 액션 구성](assets/action-config.png)
 
-REST 엔드포인트 제출 액션 구성
+Rest 끝점 제출 작업 구성
 
 >[!NOTE]
 >
@@ -166,7 +163,7 @@ Forms 포털 및 제출 작업에 대한 자세한 내용은 을 참조하십시
 * 캡처된 데이터에 대해 복잡한 계산 수행
 * 미리 정의된 일정에 따라 적응형 양식 데이터를 스토리지 시스템에 저장
 
-적응형 Forms 편집기는 **Microsoft® Power Automate 플로우 호출** 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송하는 작업을 제출합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [AEM Forms 인스턴스와 Microsoft® Power Automate 연결](/help/forms/using/forms-microsoft-power-automate-integration.md)
+적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 작업을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [AEM Forms 인스턴스와 Microsoft® Power Automate 연결](/help/forms/using/forms-microsoft-power-automate-integration.md)
 
 성공적으로 구성한 후 [Microsoft® Power Automate 흐름 호출](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 제출 액션을 사용하여 데이터를 Power Automate 흐름으로 전송합니다.
 
@@ -200,7 +197,7 @@ Forms 포털 및 제출 작업에 대한 자세한 내용은 을 참조하십시
 
 ### 유효성 검사 표현식에서 사용자 정의 함수 지원 {#supporting-custom-functions-in-validation-expressions-br}
 
-복잡한 유효성 검사 규칙이 있는 경우에는 정확한 유효성 검사 스크립트는 사용자 정의 함수에 있고 작성자는 필드 유효성 검사 표현식에서 이러한 사용자 정의 함수를 호출합니다. 서버측 유효성 검사를 수행하면서 이 사용자 정의 함수 라이브러리를 이해하고 사용할 수 있도록 양식 작성자는 아래와 같이 적응형 양식 컨테이너 속성의 **기본** 탭 아래에서 AEM 클라이언트 라이브러리 이름을 구성할 수 있습니다.
+복잡한 유효성 검사 규칙이 있는 경우 정확한 유효성 검사 스크립트는 사용자 지정 함수에 상주하며 작성자는 필드 유효성 검사 표현식에서 이러한 사용자 지정 함수를 호출합니다. 서버측 유효성 검사를 수행하면서 이 사용자 정의 함수 라이브러리를 이해하고 사용할 수 있도록 양식 작성자는 아래와 같이 적응형 양식 컨테이너 속성의 **기본** 탭 아래에서 AEM 클라이언트 라이브러리 이름을 구성할 수 있습니다.
 
 ![유효성 검사 표현식에서 사용자 정의 함수 지원](assets/clientlib-cat.png)
 
@@ -210,6 +207,6 @@ Forms 포털 및 제출 작업에 대한 자세한 내용은 을 참조하십시
 
 ## 제출 액션 시 오류 처리 {#error-handling-on-submit-action}
 
-Experience Manager 보안 및 강화 지침의 일부로 404.jsp 및 500.jsp와 같은 사용자 지정 오류 페이지를 구성합니다. 이러한 처리기는 양식 404 또는 500 오류를 제출할 때 호출됩니다. 게시 노드에서 이러한 오류 코드가 트리거되면 핸들러가 호출되기도 합니다.
+Experience Manager 보안 및 강화 지침의 일부로 404.jsp 및 500.jsp와 같은 사용자 지정 오류 페이지를 구성합니다. 이러한 처리기는 양식 404 또는 500 오류를 제출할 때 호출됩니다. 이러한 오류 코드가 Publish 노드에서 트리거되면 핸들러도 호출됩니다.
 
 자세한 내용은 [오류 핸들러로 표시된 페이지 사용자 지정](/help/sites-developing/customizing-errorhandler-pages.md).

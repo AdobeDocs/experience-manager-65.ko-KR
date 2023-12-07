@@ -1,14 +1,12 @@
 ---
 title: AEM Forms JEE 패치 설치 관리자
 description: AEM Forms JEE 패치 설치 관리자를 사용하여 AEM 6.5 Forms 구성 요소의 문제를 해결하는 방법에 대해 알아봅니다.
-uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
-discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: f0b59ff25f49f5ca12bc6966882f68b5231a9511
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 20%
+source-wordcount: '509'
+ht-degree: 19%
 
 ---
 

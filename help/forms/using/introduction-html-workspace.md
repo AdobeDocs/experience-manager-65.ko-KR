@@ -1,17 +1,13 @@
 ---
 title: AEM Forms 작업 영역 소개
-seo-title: Introduction to AEM Forms workspace
 description: LiveCycle AEM Forms 작업 영역을 사용하여 비즈니스 프로세스 자동화를 통해 조직 효율성을 높이고 페이퍼리스 사무실을 구축할 수 있습니다.
-seo-description: Increase org efficiency and create paperless office by business process automation using LiveCycle AEM Forms workspace.
-uuid: 6493101e-1030-4579-8bb1-4825cffe8fa3
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 4c89d017-0d4b-4fa2-b648-342f3c755350
 docset: aem65
 exl-id: e6759ffd-cf63-4684-a1d7-208fbe55aaed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%

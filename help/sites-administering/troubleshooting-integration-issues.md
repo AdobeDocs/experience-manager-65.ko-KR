@@ -1,18 +1,14 @@
 ---
 title: 통합 문제 해결
-seo-title: Troubleshooting Integration Issues
 description: Adobe Experience Manager과 통합할 때 문제를 해결하는 방법을 알아봅니다.
-seo-description: Learn how to troubleshoot integration issues.
-uuid: fe080e58-a855-4308-a611-f72eb47ba82d
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1086'
 ht-degree: 1%
 
 ---

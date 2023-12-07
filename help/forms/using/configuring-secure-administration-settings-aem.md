@@ -1,16 +1,12 @@
 ---
 title: JEE에서 AEM Forms에 대한 보안 관리 설정 구성
-seo-title: Configuring Secure Administration Settings for AEM Forms on JEE
 description: 개인 개발 환경에서는 필요하지만 JEE의 AEM Forms 프로덕션 환경에서는 필요하지 않은 사용자 계정 및 서비스를 관리하는 방법에 대해 알아봅니다.
-seo-description: Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
-uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%

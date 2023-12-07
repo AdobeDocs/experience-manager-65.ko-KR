@@ -1,17 +1,13 @@
 ---
 title: 상호 SSL을 사용하여 복제
-seo-title: Replicating Using Mutual SSL
 description: 작성자 인스턴스의 복제 에이전트가 상호 SSL(MSSL)을 사용하여 게시 인스턴스와 연결하도록 AEM을 구성하는 방법에 대해 알아봅니다. 게시 인스턴스에서 MSSL을 사용하는 복제 에이전트와 HTTP 서비스는 인증서를 사용하여 서로 인증합니다.
-seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
-uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 4%

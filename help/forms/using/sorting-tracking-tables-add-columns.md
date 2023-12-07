@@ -1,18 +1,14 @@
 ---
 title: 추적 테이블 사용자 지정
-seo-title: Customize tracking tables
 description: AEM Forms 작업 영역의 추적 탭에 표시되는 작업 테이블에서 사용자 프로세스 세부 정보 표시를 사용자 지정하는 방법
-seo-description: How-to customize the display of the details of user processes in the task table displayed in the tracking tab of AEM Forms workspace.
-uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -23,7 +19,7 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 포함된 프
 * ID ( `taskId`)
 * 이름 ( `stepName`)
 * 지침 ( `instructions`)
-* 선택된 동작 ( `selectedRoute`)
+* 선택한 작업( `selectedRoute`)
 * 생성 시간( `createTime`)
 * 완료 시간 ( `completeTime`)
 * 소유자 ( `currentAssignment.queueOwner`)

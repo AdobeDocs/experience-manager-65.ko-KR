@@ -1,18 +1,14 @@
 ---
 title: 참조 편지 템플릿
-seo-title: Reference letter templates
 description: AEM Forms에서는 편지를 빠르게 작성하는 데 사용할 수 있는 서신 관리 편지 레이아웃 템플릿을 제공합니다.
-seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
-uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
-discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +16,7 @@ ht-degree: 2%
 
 서신 관리에서 편지 템플릿에는 일반적인 양식 필드, 머리글 및 바닥글과 같은 레이아웃 기능 및 컨텐츠 배치에 대한 빈 &quot;대상 영역&quot;이 포함되어 있습니다.
 
-서신 관리에서는 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko). 브랜딩 및 비즈니스 요구 사항에 따라 디자이너에서 템플릿을 사용자 지정할 수 있습니다. 패키지에는 다음 템플릿이 포함됩니다.
+서신 관리에서는 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 브랜딩 및 비즈니스 요구 사항에 따라 디자이너에서 템플릿을 사용자 지정할 수 있습니다. 패키지에는 다음 템플릿이 포함됩니다.
 
 * Classic
 * 클래식 단순

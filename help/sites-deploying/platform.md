@@ -1,20 +1,16 @@
 ---
 title: AEM 플랫폼 소개
-seo-title: Introduction to the AEM Platform
 description: 이 문서에서는 AEM 플랫폼 및 가장 중요한 구성 요소에 대한 일반적인 개요를 제공합니다.
-seo-description: This article provides a general overview of the AEM platform and its most important components.
-uuid: 214d4c49-1f5c-432c-a2c0-c1fbdceee716
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 0%
+source-wordcount: '761'
+ht-degree: 1%
 
 ---
 
@@ -57,14 +53,14 @@ Oak Core는 스토리지 레이어에 다음과 같은 여러 레이어를 추�
 
 ### 오크 JCR {#oak-jcr}
 
-Oak JCR의 주요 목적은 JCR 의미 체계를 트리 작업으로 변환하는 것입니다. 또한 다음의 원인이 됩니다.
+Oak JCR의 주요 목적은 JCR 의미 체계를 트리 작업으로 변환하는 것입니다. 또한 다음에 대한 책임이 있습니다.
 
 * JCR API 구현
 * JCR 제한을 구현하는 커밋 후크 포함
 
 또한 이제 비 Java 구현이 가능하며 Oak JCR 개념의 일부입니다.
 
-## 저장소 개요 {#storage-overview}
+## 스토리지 개요 {#storage-overview}
 
 Oak 스토리지 계층은 컨텐츠의 실제 저장을 위한 추상화 계층을 제공합니다.
 

@@ -1,19 +1,15 @@
 ---
 title: 컨텐츠 속성 및 노드
-seo-title: Content Properties and Nodes
 description: 이 페이지를 따라 콘텐츠 속성 및 노드에 대해 알아보십시오.
-seo-description: Follow this page to learn about content properties and nodes.
-uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 21%
+source-wordcount: '354'
+ht-degree: 20%
 
 ---
 
@@ -50,9 +46,9 @@ ht-degree: 21%
 | dps-shortAbstract | 문자열 |  |
 | 디피에스 주 | 문자열 |  |
 | dps-category | 문자열 |  |
-| dps-키워드 | String[] |  |
-| dps-internalKeywords | String[] |  |
-| dps 중요도 | String[] | {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;}의 중요도 |
+| dps-키워드 | 문자열[] |  |
+| dps-internalKeywords | 문자열[] |  |
+| dps 중요도 | 문자열[] | {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;}의 중요도 |
 
 ### 기사 {#articles}
 
@@ -62,7 +58,7 @@ ht-degree: 21%
 | dps-authorURL | 문자열 |  |
 | dps-hideFromBrowsePage | 부울 |  |
 | dps-access | 문자열 | {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;}의 ProtectedAccess |
-| **Social** |  |  |
+| **소셜** |  |  |
 | dps-socialShareURL | 문자열 |  |
 | dps-articleText | 문자열 |  |
 | dps-url | 문자열 |  |

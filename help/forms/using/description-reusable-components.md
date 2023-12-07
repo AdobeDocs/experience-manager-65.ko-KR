@@ -1,16 +1,12 @@
 ---
 title: 재사용 가능한 구성 요소에 대한 설명
-seo-title: Description of reusable components
 description: 파일 이름과 종속성이 포함된 재사용 가능한 구성 요소의 전체 목록으로, 웹 애플리케이션에서 AEM Forms 작업 공간 구성 요소를 통합할 수 있습니다.
-seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
-uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 exl-id: b8cb7233-3d9e-41d4-85c5-8e8c2481f89c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 9%
@@ -1085,7 +1081,7 @@ AEM Forms 작업 영역은 다음으로 구성됩니다. [재사용 가능](/hel
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
-   <td>NA<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
   <tr>
    <td><p>이벤트 수신(이벤트 이름 - 트리거)</p> </td>

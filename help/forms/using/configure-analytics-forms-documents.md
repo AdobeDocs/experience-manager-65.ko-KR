@@ -1,25 +1,21 @@
 ---
 title: 분석 및 보고서 구성
-seo-title: Configuring analytics and reports
 description: 적응형 양식, 적응형 문서 및 HTML5 양식을 사용하는 동안 사용자가 직면한 상호 작용 패턴 및 문제를 발견하도록 Adobe Analytics을 구성하는 방법에 대해 알아봅니다.
-seo-description: Learn how to configure Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms, adaptive documents, and HTML5 forms.
-uuid: ac5d1300-f303-40e8-a33e-4859a54ac10d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
-discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1532'
-ht-degree: 3%
+source-wordcount: '1531'
+ht-degree: 1%
 
 ---
 
 # Cloud Service 프레임워크를 사용한 Analytics {#analyticsusingcloudframework}
 
-AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있도록 해주는 Analytics와 통합됩니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
+AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있도록 해주는 Analytics와 통합됩니다. 이러한 지표를 분석하는 목표는 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
 
 >[!NOTE]
 >

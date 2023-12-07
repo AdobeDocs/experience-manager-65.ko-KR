@@ -1,18 +1,14 @@
 ---
 title: XDP 양식의 HTML5 미리 보기 생성
-seo-title: Generate HTML5 preview of an XDP form
 description: HTML 디자이너의 미리 보기 LiveCycle 탭을 사용하여 브라우저에 나타나는 양식을 미리 볼 수 있습니다.
-seo-description: Preview HTML tab in LiveCycle Designer can be used to preview forms as they appear in a browser.
-uuid: cbee956f-bf2d-40c5-8e03-58fce0fa215b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 feature: Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -121,7 +117,7 @@ AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 렌디�
 
 1. 다음을 클릭합니다. **미리 보기** 을 탭하고 데이터 파일 상자에 테스트 데이터 파일의 전체 경로를 입력합니다. 찾아보기 단추를 사용하여 파일을 탐색할 수도 있습니다.
 
-1. **확인**&#x200B;을 클릭합니다. 다음번에 다음에서 양식을 미리 볼 때 **미리 보기 HTML** 탭에서는 샘플 XML 파일의 데이터 값이 각 객체에 나타납니다.
+1. 클릭 **확인**. 다음번에 다음에서 양식을 미리 볼 때 **미리 보기 HTML** 탭에서는 샘플 XML 파일의 데이터 값이 각 객체에 나타납니다.
 
 ## 저장소에서 양식 미리 보기 {#html-preview-of-forms-in-forms-manager}
 

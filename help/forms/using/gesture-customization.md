@@ -1,14 +1,12 @@
 ---
 title: 제스처 사용자 지정
 description: AEM Forms 앱에서 제스처를 사용자 지정하는 방법을 알아봅니다. 제스처를 사용자 정의하여 애플리케이션과 상호 작용하는 고유한 방법을 제공할 수 있습니다.
-uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%

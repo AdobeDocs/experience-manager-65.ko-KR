@@ -1,16 +1,12 @@
 ---
 title: 자산 작업
-seo-title: Working with Assets
 description: 작성 환경 및 도구 섹션에서는 페이지 편집 시 콘텐츠 파인더를 사용하여 에셋을 찾고 사용하는 방법에 대한 정보를 제공합니다. AEM Assets은 에셋 작업을 위한 다른 방법을 제공합니다.
-seo-description: The Author Environment and Tools section provides information about using Content Finder to find and use assets when editing pages. AEM Assets provides other methods for working with assets.
-uuid: 65d1e593-9957-45b7-8831-45055aa41a1d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: f3b4d49b-5873-4825-91b9-71a3204516b1
 exl-id: daf5c934-8a98-4891-94a1-029056d87931
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 12%

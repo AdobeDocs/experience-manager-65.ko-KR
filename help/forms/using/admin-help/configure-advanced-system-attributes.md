@@ -1,19 +1,15 @@
 ---
 title: 고급 시스템 속성 구성
-seo-title: Configure advanced system attributes
 description: 고급 시스템 속성 구성 페이지에서는 파일을 내보내고 편집하고 가져올 필요 없이 구성 파일의 특정 설정을 수정할 수 있습니다.
-seo-description: Use the Configure Advanced System Attributes page to modify certain settings in the configuration file without the need to export, edit, and import the file.
-uuid: 6bcfbaa9-f492-46aa-97d2-00fc3e67d0d7
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
 exl-id: 809af2c0-6f5c-4dd4-af48-dbf476c9ea45
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 1%
+source-wordcount: '480'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +26,7 @@ ht-degree: 1%
    >
    >시스템이 올바르게 작동하지 않을 수 있으므로 세션 시간 초과 제한을 10분 미만으로 설정하지 마십시오. 권장 값은 10~120(분)입니다.
 
-   **어설션 임계값(초):** 클러스터에 있는 AEM Forms 응용 프로그램 서버 간의 시스템 시간 차이로 인한 지연을 오프셋하기 위한 버퍼 시간입니다. AEM forms는 사용자의 로그인 시간을 이 속성에 지정된 시간(초)만큼 소급 적용합니다. 유효한 값은 다음과 같습니다. `0` 끝 `3600`. 기본값은 `60`입니다. 이 설정은 `SAML/Producer/assertionThresholdInSeconds` 구성 파일의 항목 키.
+   **어설션 임계값(초):** 클러스터에 있는 AEM Forms 응용 프로그램 서버 간의 시스템 시간 차이로 인한 지연을 오프셋하기 위한 버퍼 시간입니다. AEM forms는 사용자의 로그인 시간을 이 속성에 지정된 시간(초)만큼 소급 적용합니다. 유효한 값은 다음과 같습니다. `0` 끝 `3600`. 기본값은 입니다. `60`. 이 설정은 `SAML/Producer/assertionThresholdInSeconds` 구성 파일의 항목 키.
 
    **어설션에 대해 허용되는 최대 갱신:** 로그인 없이도 사용자의 세션을 투명하게 갱신할 수 있는 최대 횟수입니다. 유효한 값은 다음과 같습니다. `0` 끝 `9999`. 값 `0` 는 주장이 갱신되지 않음을 의미합니다. 기본값은 10입니다. 이 설정은 `SAML/Producer/maxAssertionRenewalCount` 구성 파일의 항목 키.
 

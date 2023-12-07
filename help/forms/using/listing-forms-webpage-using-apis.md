@@ -1,17 +1,13 @@
 ---
 title: API를 사용하여 웹 페이지에 양식 나열
-seo-title: Listing forms on a web page using APIs
 description: 필터링된 양식 목록을 검색하고 자신의 웹 페이지에 표시하도록 프로그래밍 방식으로 Forms Manager를 쿼리합니다.
-seo-description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
-uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -32,7 +28,7 @@ REST API를 사용하여 양식을 검색하려면 다음 위치에서 서버에
   </tr>
   <tr>
    <td>익살맞<br /> </td>
-   <td><p>호출할 함수를 지정합니다. 양식을 검색하려면 <code>func </code>특성 대상 <code>searchForms</code>.</p> <p>예를 들어 <code class="code">
+   <td><p>호출할 함수를 지정합니다. 양식을 검색하려면 <code>func </code>특성 대상 <code>searchForms</code>.</p> <p>예: <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>참고:</strong> <em>이 매개 변수는 필수입니다.</em><br /> </p> </td>
   </tr>
@@ -42,7 +38,7 @@ REST API를 사용하여 양식을 검색하려면 다음 위치에서 서버에
   </tr>
   <tr>
    <td>잘라내기 지점<br /> </td>
-   <td><p>에셋으로 가져올 속성을 지정합니다. 별표(*)를 사용하여 모든 속성을 한 번에 가져올 수 있습니다. 여러 속성을 지정하려면 파이프 (|) 연산자를 사용하십시오. </p> <p>예를 들어 <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>메모</strong>: </p>
+   <td><p>에셋으로 가져올 속성을 지정합니다. 별표(*)를 사용하여 모든 속성을 한 번에 가져올 수 있습니다. 여러 속성을 지정하려면 파이프 (|) 연산자를 사용하십시오. </p> <p>예: <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>참고</strong>: </p>
     <ul>
      <li><em>ID, 경로 및 이름 등의 속성을 항상 가져옵니다. </em></li>
      <li><em>모든 자산에는 다른 속성 세트가 있습니다. formUrl, pdfUrl 및 guideUrl과 같은 속성은 cutpoints 속성에 따라 달라지지 않습니다. 이러한 속성은 자산 유형에 따라 다르며 그에 따라 가져옵니다. </em></li>
@@ -71,7 +67,7 @@ REST API를 사용하여 양식을 검색하려면 다음 위치에서 서버에
   </tr>
   <tr>
    <td>구문</td>
-   <td><p>문 목록을 지정합니다. 쿼리는 JSON 형식으로 지정된 문 목록에서 실행됩니다. </p> <p>예를 들어</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>문 목록을 지정합니다. 쿼리는 JSON 형식으로 지정된 문 목록에서 실행됩니다. </p> <p>예:</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
@@ -98,7 +94,7 @@ REST API를 사용하여 양식을 검색하려면 다음 위치에서 서버에
   </tr>
   <tr>
    <td>orderings<br /> </td>
-   <td><p>검색 결과의 순서 기준을 지정합니다. 기준은 JSON 형식으로 정의됩니다. 두 개 이상의 필드에서 검색 결과를 정렬할 수 있습니다. 질의에 필드가 나타나는 순서대로 결과가 정렬됩니다.</p> <p>예를 들어</p> <p>제목 속성별로 정렬된 쿼리 결과를 오름차순으로 검색하려면 다음 매개 변수를 추가합니다. </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>검색 결과의 순서 기준을 지정합니다. 기준은 JSON 형식으로 정의됩니다. 두 개 이상의 필드에서 검색 결과를 정렬할 수 있습니다. 질의에 필드가 나타나는 순서대로 결과가 정렬됩니다.</p> <p>예:</p> <p>제목 속성별로 정렬된 쿼리 결과를 오름차순으로 검색하려면 다음 매개 변수를 추가합니다. </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");

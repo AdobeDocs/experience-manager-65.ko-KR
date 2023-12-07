@@ -1,18 +1,14 @@
 ---
 title: 책갈피로 PDF 문서 어셈블
-seo-title: Assembling PDF Documents with Bookmarks
 description: 어셈블러 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 책갈피가 포함된 PDF 문서를 수정할 수 있습니다.
-seo-description: Use the Assembler service to modify a PDF document that does contain bookmarks to include bookmarks using the Java API and the Web Service API.
-uuid: a306d2a6-0b12-4eb3-bff4-968a33417486
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2519'
 ht-degree: 0%

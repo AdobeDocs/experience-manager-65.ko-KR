@@ -1,26 +1,24 @@
 ---
 title: AEM 현대화 도구
-seo-title: AEM Modernization Tools
 description: AEM 현대화 도구 를 사용하면 기존 AEM 기능을 최신 기술로 변환할 수 있습니다
-seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 83%
+source-wordcount: '78'
+ht-degree: 46%
 
 ---
 
 # AEM 현대화 도구 {#modernization-tools}
 
-[AEM 현대화 도구를 사용하여 다음과 같이 쉽게 변환할 수 있습니다.](https://opensource.adobe.com/aem-modernize-tools/)
+[AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/) 를 사용하여 다음과 같이 쉽게 변환할 수 있습니다.
 
-* [](page-templates-static.md)정적 템플릿을 편집 가능한 템플릿[](page-templates-editable.md)
-* [](page-templates-static.md)디자인 구성을 정책[](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)기초 구성 요소를 핵심 구성 요소로 변환[](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [](website.md)클래식 UI를 터치 사용 UI[](touch-ui-concepts.md)
+* [정적 템플릿](page-templates-static.md) 끝 [편집 가능한 템플릿](page-templates-editable.md)
+* [디자인 구성](page-templates-static.md) 끝 [정책](page-templates-editable.md)
+* [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) 끝 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [클래식 UI](website.md) 끝 [터치 지원 UI](touch-ui-concepts.md)
 
 이 도구 사용에 대한 자세한 내용은 [도구 설명서를 참조하십시오](https://opensource.adobe.com/aem-modernize-tools/).
 

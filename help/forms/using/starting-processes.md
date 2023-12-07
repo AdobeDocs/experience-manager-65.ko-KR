@@ -1,18 +1,14 @@
 ---
 title: 시작 프로세스
-seo-title: Starting processes
 description: AEM Forms 작업 공간 LiveCycle을 사용하는 방법 - 프로세스 선택, 메모 및 첨부 파일 추가, 초안 복사본 저장, 즐겨찾기에 추가
-seo-description: How to use LiveCycle AEM Forms workspace--select processes, add notes and attachments, save draft copies, and add to favorites.
-uuid: a61da785-25b4-4482-bd72-02e250d35dc7
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 exl-id: b2a6ba3a-0f4c-44b1-8f9a-c15c6fb8c305
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -82,7 +78,7 @@ Adobe PDF, HTML 및 SWF 파일을 포함하여 다양한 파일 형식 Forms이 
 1. 작업을 열고 **메모** 프로세스에서 허용하는 경우 탭입니다.
 1. 메모의 제목을 입력합니다. **제목** 상자에 메모 텍스트를 입력하고 **참고** 상자.
 1. 다음 항목 선택 **권한** 프로세스에 참여하는 다른 사용자를 위한 참고 사항 레벨.
-1. **확인**&#x200B;을 클릭합니다. 메모가 포함된 텍스트 파일이 양식에 첨부됩니다. 메모를 클릭하고 텍스트를 직접 수정하여 메모를 업데이트할 수 있습니다. 다음을 클릭하여 메모를 삭제할 수 있습니다. **삭제** 단추 ![휴지통 이미지](assets/icondelete.png) 메모 옆에.
+1. 클릭 **확인**. 메모가 포함된 텍스트 파일이 양식에 첨부됩니다. 메모를 클릭하고 텍스트를 직접 수정하여 메모를 업데이트할 수 있습니다. 다음을 클릭하여 메모를 삭제할 수 있습니다. **삭제** 단추 ![휴지통 이미지](assets/icondelete.png) 메모 옆에.
 
 ### 첨부 파일 추가 {#add-an-attachment}
 
@@ -97,7 +93,7 @@ Adobe PDF, HTML 및 SWF 파일을 포함하여 다양한 파일 형식 Forms이 
 1. 다음을 클릭합니다. **첨부 파일** 탭하고 선택 **첨부 파일**.
 1. 클릭 **찾아보기** 첨부할 파일을 선택합니다.
 1. 다음 항목 선택 **권한** 프로세스에 참여하는 다른 사용자의 첨부 파일 레벨. 다음을 선택하는 경우 **읽기**&#x200B;를 사용하여 다른 사용자가 로컬에 파일을 저장할 수 있습니다. 편집 권한 중 하나를 선택하면 다른 사용자가 새 파일을 업로드하여 첨부 파일을 바꿀 수도 있습니다.
-1. **확인**&#x200B;을 클릭합니다. 파일이 양식에 첨부됩니다. 다음을 클릭하여 파일을 삭제할 수 있습니다 **삭제** 단추 ![휴지통 이미지](assets/icondelete.png) 첨부 파일 옆에 있습니다.
+1. 클릭 **확인**. 파일이 양식에 첨부됩니다. 다음을 클릭하여 파일을 삭제할 수 있습니다 **삭제** 단추 ![휴지통 이미지](assets/icondelete.png) 첨부 파일 옆에 있습니다.
 
 ## 양식의 초안 복사본 저장 {#saving-draft-copies-of-forms}
 

@@ -1,15 +1,13 @@
 ---
 title: JEE WebLogic Server에서 EAR 배포 실패
-seo-title: EAR Deployment failing on JEE Weblogic Server
 description: JEE WebLogic Server에서 EAR 배포 실패를 해결하는 단계
-seo-description: Steps to resolve EAR Deployment failing on JEE Weblogic Server
-source-git-commit: 45bb54a2666c2c196a8fb52795a7f428aa751e4d
+exl-id: b87a9eee-ee56-4dca-b4a3-a42c91db0b4f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 6%
+source-wordcount: '97'
+ht-degree: 7%
 
 ---
-
 
 # JEE WebLogic Server에서 EAR 배포 실패 {#ear-deployment-failing-on-jee-weblogic-server}
 
@@ -36,5 +34,3 @@ ht-degree: 6%
        OPTIONS OPTIONS &#39;JAVA_LOADS=%JAVA_LOADS% -DANTLR_USE_DIRECT_CLASS_LOADING=true&#39; 설정
    
 1. 변경 사항을 저장합니다.
-
-
