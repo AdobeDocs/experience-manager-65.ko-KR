@@ -1,19 +1,17 @@
 ---
 title: Dynamic Media 에셋 관리 기본 정보
 description: 비디오 및 이미지와 같은 Dynamic Media 에셋을 업로드한 후 사용하여 작업하는 방법을 알아봅니다. 에셋을 미리 보거나, 다운로드하거나, 게시할 수 있습니다.
-uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Asset Management
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 12%
+ht-degree: 7%
 
 ---
 

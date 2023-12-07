@@ -1,20 +1,18 @@
 ---
 title: 비디오 프로필
 description: Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 시청 환경을 제공하도록 최적화되었습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
-uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '3732'
+source-wordcount: '3770'
 ht-degree: 8%
 
 ---
@@ -389,7 +387,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 1. Experience Manager 로고를 선택하고 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 비디오 프로필]**.
 1. 폴더 또는 여러 폴더에 적용할 비디오 프로필을 선택합니다.
-1. 선택 **[!UICONTROL 폴더에 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 을(를) 선택합니다 **[!UICONTROL 적용]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name while in **[!UICONTROL Card View]**.
+1. 선택 **[!UICONTROL 폴더에 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 을(를) 선택합니다 **[!UICONTROL 적용]**. 이미 프로필이 할당된 폴더는에 있는 동안 폴더 이름 바로 아래에 프로필 이름이 표시됩니다. **[!UICONTROL 카드 보기]**.
 다음을 수행할 수 있습니다. [비디오 프로필 처리 작업 진행 상황 모니터링](#monitoring-the-progress-of-an-encoding-job).
 
 #### 속성에서 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-folders-from-properties}

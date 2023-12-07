@@ -1,19 +1,17 @@
 ---
 title: 360/VR 비디오
 description: Dynamic Media에서 360 및 가상 현실(VR) 비디오로 작업하는 방법을 알아봅니다.
-uuid: c21bf2c0-7acc-401f-857e-0186de86e7a1
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: c0a60ec39e35fa8113ce9e1795561709b9c7e289
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -63,11 +61,13 @@ Adobe Experience Manager에 업로드되는 360개의 비디오 자산에는 **�
 
       * 1080p - 1920 x 1080, Full HD 또는 FHD 해상도로 알려짐,
       * 4k, UHD 또는 Ultra HD 해상도로 알려진 2160p - 3840 x 2160. 이 대형 디스플레이 해상도는 프리미엄 TV 세트와 컴퓨터 모니터에서 가장 많이 발견됩니다. 너비가 4000픽셀에 가깝기 때문에 2160p 해상도를 &quot;4k&quot;라고 하는 경우가 많습니다. 즉, 1080p의 4배 픽셀을 제공합니다.
+
    * [사용자 지정 응용 비디오 프로필 만들기](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) (고품질 렌디션 포함) 예를 들어 다음 세 가지 설정이 포함된 응용 비디오 프로필을 만듭니다.
 
       * width=auto; height=720; bitrate=2500kbps
       * width=auto; height=1080; bitrate=5000kbps
       * width=auto; height=1440; bitrate=6600kbps
+
    * 360 비디오 자산에만 사용되는 폴더에서 360 비디오 콘텐츠를 처리합니다.
 
    이 방식은 최종 사용자의 네트워크 및 CPU에 더 많은 요구 사항을 제공합니다.
@@ -117,14 +117,15 @@ Adobe Experience Manager에 업로드되는 360개의 비디오 자산에는 **�
 
    뷰어 목록에서 를 선택합니다. **[!UICONTROL Video360_social]**&#x200B;을 클릭하고 다음 중 하나를 수행합니다.
 
-   * 정적 장면의 시야각을 변경하려면 마우스 포인터를 비디오 위로 드래그합니다.
+   * 정적 장면의 시야각을 변경하려면 비디오 위로 마우스 포인터를 드래그합니다.
    * 비디오 선택 **[!UICONTROL 재생]** 재생을 시작하려면 버튼을 클릭합니다. 비디오가 재생될 때 비디오 위로 마우스 포인터를 끌어 시야각을 변경합니다.
 
    ![지구와 태양을 배경으로 우주에 떠 있는 국제우주정거장의 스크린샷&#x200B;](assets/6_5_360video-preview-video360-social.png)*360 비디오 스크린샷.*
 
    * 뷰어 목록에서 를 선택합니다. **[!UICONTROL Video360VR]**.
 
-      가상 현실(VR) 비디오는 가상 현실 헤드셋을 사용함으로써 액세스되는 몰입형 비디오 콘텐츠이다. 일반 비디오와 마찬가지로 360도 비디오 카메라를 사용하여 비디오를 녹화하고 캡처할 때 VR 비디오를 처음부터 만듭니다.
+     가상 현실(VR) 비디오는 가상 현실 헤드셋을 사용함으로써 액세스되는 몰입형 비디오 콘텐츠이다. 일반 비디오와 마찬가지로 360도 비디오 카메라를 사용하여 비디오를 녹화하고 캡처할 때 VR 비디오를 처음부터 만듭니다.
+
    ![지면과 태양이 부분적으로 배경에 보이는 채로 우주 공간에 떠 있는 국제 우주 정거장의 클로즈업 스크린샷](assets/6_5_360video-preview-video360vr.png)
    *360 VR 비디오 스크린샷.*
 

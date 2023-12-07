@@ -1,18 +1,16 @@
 ---
 title: 웹 페이지에 Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함
 description: 웹 페이지에 Dynamic Media 비디오, 이미지 또는 3D 이미지를 포함하는 방법에 대해 알아봅니다
-uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Viewers
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '383'
 ht-degree: 21%
 
 ---

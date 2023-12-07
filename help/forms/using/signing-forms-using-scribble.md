@@ -1,14 +1,12 @@
 ---
 title: 스크리블 서명을 사용하여 양식에 전자 서명 적용
 description: 스크리블 서명을 사용하여 AEM 적응형 Forms에 서명하는 방법에 대해 알아봅니다. 낙서 서명 및 서명 단계를 사용하여 양식에 서명을 그릴 수 있습니다.
-uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 9%

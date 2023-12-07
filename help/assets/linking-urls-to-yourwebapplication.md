@@ -1,19 +1,17 @@
 ---
 title: 웹 애플리케이션에 URL 연결
 description: Dynamic Media에서 웹 애플리케이션에 URL을 연결하는 방법
-uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 7%
+source-wordcount: '1284'
+ht-degree: 5%
 
 ---
 
@@ -69,19 +67,19 @@ URL 문자열을 가져오는 방법에는 여러 가지가 있습니다. 그러
 
    * 이미지를 선택한 경우 드롭다운 메뉴에서 **[!UICONTROL 표현물]**.
 
-      아래 **[!UICONTROL 동적]** 머리글에서 사전 설정 이름을 선택하여 오른쪽 프레임에서 해당 렌디션을 확인합니다. 필요한 경우 렌디션 목록을 스크롤하여 동적 머리글을 확인합니다.
+     아래 **[!UICONTROL 동적]** 머리글에서 사전 설정 이름을 선택하여 오른쪽 프레임에서 해당 렌디션을 확인합니다. 필요한 경우 렌디션 목록을 스크롤하여 동적 머리글을 확인합니다.
 
-      왼쪽 레일의 하단에서 을(를) 선택합니다 **[!UICONTROL URL]**.
+     왼쪽 레일의 하단에서 을(를) 선택합니다 **[!UICONTROL URL]**.
 
-      ![chlimage_1-270](assets/chlimage_1-270.png)
+     ![chlimage_1-270](assets/chlimage_1-270.png)
 
    * 회전 세트, 이미지 세트, 회전 메뉴 세트 또는 비디오를 선택한 경우 드롭다운 메뉴에서 를 선택합니다 **[!UICONTROL 뷰어]**.
 
-      왼쪽 레일에서 뷰어 사전 설정 이름을 선택합니다. 세트나 비디오의 미리 보기가 별도의 페이지에서 열립니다.
+     왼쪽 레일에서 뷰어 사전 설정 이름을 선택합니다. 세트나 비디오의 미리 보기가 별도의 페이지에서 열립니다.
 
-      왼쪽 레일의 하단에서 을(를) 선택합니다. **[!UICONTROL URL]**.
+     왼쪽 레일의 하단에서 을(를) 선택합니다. **[!UICONTROL URL]**.
 
-      ![chlimage_1-271](assets/chlimage_1-271.png)
+     ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. 에셋을 미리 보거나 웹 콘텐츠 페이지에 추가할 수 있도록 텍스트를 선택하고 웹 브라우저에 복사합니다.
 
@@ -115,16 +113,16 @@ Dynamic Media은 이미지 및 비디오뿐만 아니라 추가 에셋인 정적
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-         (예: `https://aem.com/is/content/adobe/image.gif`)
+        예: `https://aem.com/is/content/adobe/image.gif`
+
    * 선택 **[!UICONTROL 자산]** > **[!UICONTROL 동적 변환]**&#x200B;에서 정적 자산의 동적 렌디션을 선택하고 URL을 복사합니다.
 
-      사용할 복사된 URL 변경 `is/content` 경로 내 `is/image/`.
-
+     사용할 복사된 URL 변경 `is/content` 경로 내 `is/image/`.
 
 ## 게시된 비디오 렌디션에 대한 비디오 URL 가져오기 {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. Experience Manager에서 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**.
-1. 다음에서 **[!UICONTROL Cloud Services]** 페이지를 아래로 스크롤하여 **[!UICONTROL Dynamic Media Cloud Services]** 제목, 선택 **[!UICONTROL 구성 표시]**.
+1. Experience Manager에서 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Service]**.
+1. 다음에서 **[!UICONTROL Cloud Service]** 페이지를 아래로 스크롤하여 **[!UICONTROL Dynamic Media Cloud Service]** 제목, 선택 **[!UICONTROL 구성 표시]**.
 1. 아래 **[!UICONTROL 사용 가능한 구성]**&#x200B;원하는 구성의 이름을 선택합니다.
 
 1. 다음에서 **[!UICONTROL Dynamic Media 클라우드 설정]** 페이지, 아래 **[!UICONTROL 비디오 서비스 URL]**&#x200B;를 클릭하고 전체 URL 경로를 복사합니다. 복사한 URL 경로는 이 단계의 후반부에 수행해야 합니다.
@@ -139,7 +137,7 @@ Dynamic Media은 이미지 및 비디오뿐만 아니라 추가 에셋인 정적
 
    예를 들어 등록 ID가 `87654321|MyCompany`, 고객 이름은 다음과 같습니다 `MyCompany`.
 
-1. 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL Cloud Services]**&#x200B;을 클릭한 다음 Experience Manager 로고를 선택하고 다음 위치로 이동합니다. **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**.
+1. 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL Cloud Service]**&#x200B;을 클릭한 다음 Experience Manager 로고를 선택하고 다음 위치로 이동합니다. **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**.
 1. JCR(Java™ Content Repository)에서 전체 비디오 렌디션 경로를 복사합니다.
 
    예를 들어 비디오의 렌디션 경로가 다음과 유사하게 표시될 수 있습니다.
@@ -160,10 +158,10 @@ Dynamic Media은 이미지 및 비디오뿐만 아니라 추가 에셋인 정적
 
 ## 적응형 비트율 스트리밍을 위한 비디오 URL 얻기(DASH 또는 HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. Experience Manager에서 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**.
-1. 다음에서 **[!UICONTROL Cloud Services]** 페이지를 아래로 스크롤하여 **[!UICONTROL Dynamic Media Cloud Services]** 제목, 선택 **[!UICONTROL 구성 표시]**.
+1. Experience Manager에서 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Service]**.
+1. 다음에서 **[!UICONTROL Cloud Service]** 페이지를 아래로 스크롤하여 **[!UICONTROL Dynamic Media Cloud Service]** 제목, 선택 **[!UICONTROL 구성 표시]**.
 1. 아래 **[!UICONTROL 사용 가능한 구성]**&#x200B;원하는 구성의 이름을 선택합니다.
-1. 다음에서 **[!UICONTROL Dynamic Media Cloud Services 설정]** 페이지, 다음을 수행합니다.
+1. 다음에서 **[!UICONTROL Dynamic Media Cloud Service 설정]** 페이지, 다음을 수행합니다.
 
    * 아래 **[!UICONTROL 비디오 서비스 URL]**&#x200B;전체 URL 경로를 복사합니다. 이 단계의 후반부에 복사한 URL 경로가 필요합니다. 예를 들어 URL 경로는 다음과 유사하게 표시될 수 있습니다.
 
@@ -171,10 +169,9 @@ Dynamic Media은 이미지 및 비디오뿐만 아니라 추가 에셋인 정적
 
    (위의 경로는 예제일 뿐이며 복사하는 실제 경로가 아닙니다.)
 
-   * Under **[!UICONTROL Registration ID]**, copy the customer name found in the last part of the ID. You need the copied customer name later in these steps.
+   * 아래 **[!UICONTROL 등록 ID]**, ID의 마지막 부분에 있는 고객 이름을 복사합니다. 이 단계의 후반부에 복사한 고객 이름이 필요합니다.
 
-      예를 들어 등록 ID가 `87654321|demoCo`를 복사하는 고객 이름은 다음과 같습니다. `demoCo`.
-
+     예를 들어 등록 ID가 `87654321|demoCo`를 복사하는 고객 이름은 다음과 같습니다. `demoCo`.
 
 1. 사용 중인 비디오 제공 프로토콜을 기반으로 각 프로토콜 선택기를 복사합니다. 이 단계의 후반부에 복사된 프로토콜 선택기가 필요합니다.
 

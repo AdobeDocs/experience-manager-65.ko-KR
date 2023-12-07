@@ -2,21 +2,19 @@
 title: Dynamic Media - 하이브리드 모드 구성
 description: Dynamic Media - 하이브리드 모드를 구성하는 방법에 대해 알아봅니다.
 mini-toc-levels: 3
-uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '7791'
-ht-degree: 2%
+source-wordcount: '7684'
+ht-degree: 1%
 
 ---
 
@@ -80,7 +78,7 @@ Dynamic Media의 고객인 경우 모든 Dynamic Media 컨텐츠에 대한 게�
   </tr>
   <tr>
    <td>프로덕션에서 이미지만 제공</td>
-   <td>이미지는 Adobe의 전 세계 데이터 센터에 있는 서버를 통해 제공된 다음, 확장 가능한 성능과 글로벌 도달 범위를 위해 CDN에 의해 캐시됩니다.</td>
+   <td>이미지는 Adobe의 전 세계 데이터 센터에 있는 서버를 통해 게재된 다음 CDN에 의해 캐시되어 확장 가능한 성능과 글로벌 도달 범위를 제공합니다.</td>
    <td>
     <ol>
      <li>Experience Manager <strong>작성자</strong> 노드, <a href="#enabling-dynamic-media">Dynamic Media 활성화</a>.</li>
@@ -140,7 +138,7 @@ Dynamic Media의 고객인 경우 모든 Dynamic Media 컨텐츠에 대한 게�
 
 ## Dynamic Media 활성화 {#enabling-dynamic-media}
 
-[Dynamic Media는 기본적으로 비활성화됩니다. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Dynamic Media 기능을 활용하려면 다음을 사용하여 Dynamic Media을 활성화해야 합니다. `dynamicmedia` 예를 들어 다음과 같이 실행 모드를 실행할 수 있습니다. `publish` 실행 모드. 활성화하기 전에 다음을 검토하십시오. [기술 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) 은 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 활용하려면 다음을 사용하여 Dynamic Media을 활성화해야 합니다. `dynamicmedia` 예를 들어 다음과 같이 실행 모드를 실행할 수 있습니다. `publish` 실행 모드. 활성화하기 전에 다음을 검토하십시오. [기술 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
 >[!NOTE]
 >
@@ -440,7 +438,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 02.08.2016 14:37:44 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1470173864834, userId='admin', revision='null'}. com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised key store for user dynamic-media-replication
 ```
 
-**솔루션:**
+**해결 방법:**
 
 1. 사용자 관리 페이지로 이동합니다.
    `localhost:4502/libs/granite/security/content/useradmin.html`
@@ -469,7 +467,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 01.08.2016 18:42:59 - Error while replicating: com.day.cq.replication.ReplicationException: Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1470073379634, userId='admin', revision='null'}. java.io.IOException: Failed to execute request 'https://replicate-eu.assetsadobe2.com:443/is-publish/publish-receiver?Cmd=Test&RootId=rbroughstaging': Server returned status code 401 with message: Authorization required.
 ```
 
-**솔루션:**
+**해결 방법:**
 
 1. Experience Manager에서 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**.
 
@@ -618,7 +616,7 @@ JCR을 통해 Video Analytics 사전 설정을 확인하려면 CRXDE Lite에 대
 
 ### 비디오 보고 구성 문제 해결 {#troubleshooting-the-video-reporting-configuration}
 
-* 설치하는 동안 경우에 따라 Analytics API 서버에 대한 연결 시간이 초과됩니다. 설치가 연결을 20번 다시 시도하지만 여전히 실패합니다. 이러한 상황이 발생하면 로그 파일에 여러 오류가 기록됩니다. `SiteCatalystReportService`을 검색합니다. 
+* 설치하는 동안 경우에 따라 Analytics API 서버에 대한 연결 시간이 초과됩니다. 설치가 연결을 20번 다시 시도하지만 여전히 실패합니다. 이러한 상황이 발생하면 로그 파일에 여러 오류가 기록됩니다. 검색 대상 `SiteCatalystReportService`.
 * Analytics 사전 설정 패키지를 먼저 설치하지 않으면 새 보고서 세트가 생성될 수 있습니다.
 * Experience Manager 6.3에서 Experience Manager 6.4 또는 Experience Manager 6.4.1로 업그레이드한 후 Dynamic Media 구성(6.3 이전)을 구성해도 보고서 세트가 생성됩니다. 이 문제는 알려져 있으며 Experience Manager 6.4.2에서 수정될 예정입니다.
 
@@ -836,7 +834,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면 다음 작업을 수행
    >
    일반적으로 기본값을 변경할 필요가 없습니다. 그러나 기본값을 변경하는 경우 변경 사항을 적용하려면 번들을 다시 시작해야 합니다.
 
-   | 속성 | 기본 값 | 설명 |
+   | 속성 | 기본값 | 설명 |
    | --- | --- | --- |
    | `TcpPort.name` | *`empty`* | ImageServer 프로세스와의 통신에 사용할 포트 번호입니다. 기본적으로 사용 가능한 포트는 자동으로 검색됩니다. |
    | `AllowRemoteAccess.name` | *`empty`* | ImageServer 프로세스에 대한 원격 액세스를 허용하거나 허용하지 않습니다. false인 경우 이미지 서버는 localhost에서만 수신합니다.<br> localhost를 가리키는 기본 외부화 설정은 특정 VM 인스턴스의 실제 도메인 또는 IP 주소를 지정해야 합니다. 그 이유는 localhost가 VM의 상위 시스템을 가리키기 때문입니다.<br>VM의 도메인 또는 IP 주소에는 자체적으로 해결할 수 있도록 호스트 파일 항목이 있어야 합니다. |
@@ -853,10 +851,10 @@ Dynamic Media 이미지 서버 설정을 구성하려면 다음 작업을 수행
    >
    Dynamic Media 이미지 서버는 자체 디스크 캐시를 사용하여 응답을 캐시합니다. Experience Manager HTTP 캐시와 Dispatcher를 사용하여 Dynamic Media 이미지 서버의 응답을 캐시할 수 없습니다.
 
-   | 속성 | 기본 값 | 설명 |
+   | 속성 | 기본값 | 설명 |
    |---|---|---|
    | 캐시 활성화됨 | 선택됨 | 응답 캐시의 사용 여부 |
-   | 캐시 루트 | cache | 응답 캐시 폴더에 대한 하나 이상의 경로. 상대 경로는 내부 s7imaging 번들 폴더에 대해 확인됩니다. |
+   | 캐시 루트 | 캐시 | 응답 캐시 폴더에 대한 하나 이상의 경로. 상대 경로는 내부 s7imaging 번들 폴더에 대해 확인됩니다. |
    | 캐시 최대 크기 | 200000000 | 응답 캐시의 최대 크기(바이트)입니다. |
    | 캐시 최대 항목 | 100000 | 캐시에서 허용되는 최대 항목 수입니다. |
 
@@ -880,15 +878,15 @@ Dynamic Media 이미지 서버 설정을 구성하려면 다음 작업을 수행
 
 매니페스트 설정 표 및 그 기본값:
 
-| 속성 | 기본 값 | 설명 |
+| 속성 | 기본값 | 설명 |
 | --- | --- | --- |
-| `bkgcolor` | `FFFFFF` | 기본 배경색. 실제 이미지 데이터를 포함하지 않는 응답 이미지의 영역을 채우는 데 사용되는 RGB 값입니다. 참조: [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api) 이미지 제공 API에서. |
-| `defaultpix` | `300,300` | 기본 보기 크기. 요청에서 wid=, hei= 또는 scl=을 사용하여 보기 크기를 명시적으로 지정하지 않을 경우, 서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다.<br>2개의 정수(0 이상)로 지정되며 쉼표로 구분됩니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다. 중첩/포함된 요청에는 적용되지 않습니다.<br>참조: [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) 이미지 제공 API에서.<br>그러나 일반적으로 뷰어 사전 설정이나 이미지 사전 설정을 사용하여 에셋을 전달합니다. Defaultpix는 뷰어 사전 설정 또는 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다. |
-| `defaultthumbpix` | `100,100` | 기본 썸네일 크기. 썸네일 요청에 대해 attribute::DefaultPix 대신 사용됩니다(`req=tmb`).<br>서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다. 이 작업은 썸네일 요청(`req=tmb`) 는 크기를 명시적으로 지정하지 않으며 를 사용하여 보기 크기를 명시적으로 지정하지 않습니다. `wid=`, `hei=`, 또는 `scl=`.<br>2개의 정수(0 이상)로 지정되며 쉼표로 구분됩니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다.<br>중첩/포함된 요청에는 적용되지 않습니다.<br>참조: [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) 이미지 제공 API에서. |
+| `bkgcolor` | `FFFFFF` | 기본 배경색입니다. 실제 이미지 데이터를 포함하지 않는 응답 이미지의 영역을 채우는 데 사용되는 RGB 값입니다. 참조: [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api) 이미지 제공 API에서. |
+| `defaultpix` | `300,300` | 기본 보기 크기입니다. 요청에서 wid=, hei= 또는 scl=을 사용하여 보기 크기를 명시적으로 지정하지 않을 경우, 서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다.<br>2개의 정수(0 이상)로 지정되며 쉼표로 구분됩니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다. 중첩/포함된 요청에는 적용되지 않습니다.<br>참조: [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) 이미지 제공 API에서.<br>그러나 일반적으로 뷰어 사전 설정이나 이미지 사전 설정을 사용하여 에셋을 전달합니다. Defaultpix는 뷰어 사전 설정 또는 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다. |
+| `defaultthumbpix` | `100,100` | 기본 썸네일 크기입니다. 썸네일 요청에 대해 attribute::DefaultPix 대신 사용됩니다(`req=tmb`).<br>서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다. 이 작업은 썸네일 요청(`req=tmb`) 는 크기를 명시적으로 지정하지 않으며 를 사용하여 보기 크기를 명시적으로 지정하지 않습니다. `wid=`, `hei=`, 또는 `scl=`.<br>2개의 정수(0 이상)로 지정되며 쉼표로 구분됩니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다.<br>중첩/포함된 요청에는 적용되지 않습니다.<br>참조: [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) 이미지 제공 API에서. |
 | `expiration` | `36000000` | 기본 클라이언트 캐시 TTL(Time to Live). 특정 카탈로그 레코드에 유효한 카탈로그::Expiration 값이 없는 경우 기본 만료 간격을 제공합니다.<br>실수, 0 이상. 응답 데이터가 생성된 이후 만료까지 남은 시간(밀리초). 응답 이미지를 항상 즉시 만료하여 클라이언트 캐싱을 효과적으로 비활성화하려면 0으로 설정합니다. 기본적으로 이 값은 10시간으로 설정되어 있습니다. 즉, 새 이미지가 게시되는 경우 이전 이미지가 사용자의 캐시를 벗어나는 데 10시간이 걸립니다. 캐시를 더 빨리 정리해야 하는 경우 고객 지원 센터에 문의하십시오.<br>참조: [만료](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) 이미지 제공 API에서. |
 | `jpegquality` | `80` | 기본 JPEG 인코딩 속성입니다. JPEG 응답 이미지의 기본 특성을 지정합니다.<br>쉼표로 구분된 정수 및 플래그. 첫 번째 값은 1..100 범위에 있으며 품질을 정의합니다. 제2 값은 정상 동작에 대해 0일 수 있고, 또는 JPEG 인코더에 의해 채용된 RGB 색도 다운샘플링을 비활성화하기 위해 1일 수 있다.<br>참조: [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) 이미지 제공 API에서. |
 | `maxpix` | `2000,2000` | 응답 이미지 크기 제한. 클라이언트로 반환되는 응답 이미지의 최대 너비 및 높이입니다.<br>너비 또는 높이가 속성::MaxPix보다 큰 응답 이미지를 요청하면 서버에서 오류가 반환됩니다.<br>참조: [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) 이미지 제공 API에서. |
-| `resmode` | `SHARP2` | 기본 리샘플링 모드. 이미지 데이터 크기를 조정하는 데 사용할 기본 재샘플링 및 보간 특성을 지정합니다.<br>다음과 같은 경우에 사용됩니다. `resMode=` 요청에 이 지정되지 않았습니다.<br>허용되는 값은 다음과 같습니다. `BILIN`, `BICUB`, 또는 `SHARP2`.<br>열거형. 에 대해 2로 설정 `bilin`, 3에 대한 `bicub`에 대해 또는 4 `sharp2` 보간 모드. 사용 `sharp2` 최상의 결과를 위해<br>참조: [리소스 모드](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) 이미지 제공 API에서. |
+| `resmode` | `SHARP2` | 기본 재샘플링 모드. 이미지 데이터 크기를 조정하는 데 사용할 기본 재샘플링 및 보간 특성을 지정합니다.<br>다음과 같은 경우에 사용됩니다. `resMode=` 요청에 이 지정되지 않았습니다.<br>허용되는 값은 다음과 같습니다. `BILIN`, `BICUB`, 또는 `SHARP2`.<br>열거형. 에 대해 2로 설정 `bilin`, 3에 대한 `bicub`에 대해 또는 4 `sharp2` 보간 모드. 사용 `sharp2` 최상의 결과를 위해<br>참조: [리소스 모드](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) 이미지 제공 API에서. |
 | `resolution` | `72` | 기본 오브젝트 확인. 특정 카탈로그 레코드에 유효한 catalog::Resolution 값이 없는 경우 기본 개체 해상도를 제공합니다.<br>0보다 큰 실수. 일반적으로 인치당 픽셀로 표시되지만, 미터당 픽셀과 같은 다른 단위로도 표시할 수 있습니다.<br>참조: [해결 방법](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) 이미지 제공 API에서. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | 이 값은 비디오 재생 시간의 스냅샷을 나타내며,에 전달됩니다. [encoding.com](https://www.encoding.com/). 다음을 참조하십시오 [비디오 썸네일 기본 정보](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) 추가 정보. |
 
@@ -1101,7 +1099,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 을 12445.
    <td>Japan Web Coated (Ad)</td>
   </tr>
   <tr>
-   <td>NewsprintSNAP2007</td>
+   <td>신문 인쇄2007</td>
    <td>CMYK</td>
    <td>미국 신문용지(SNAP 2007)</td>
   </tr>

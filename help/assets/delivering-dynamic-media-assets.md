@@ -1,20 +1,18 @@
 ---
 title: Dynamic Media 자산 전송
 description: 비디오 및 이미지와 같은 Dynamic Media 자산을 웹 페이지에 전달하는 방법을 알아봅니다.
-uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 22%
+source-wordcount: '323'
+ht-degree: 19%
 
 ---
 
@@ -28,7 +26,7 @@ Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 * 웹 사이트가 Experience Manager에 없는 경우 다음 중 하나를 선택할 수 있습니다.
 
    * 웹 사이트에 비디오 또는 이미지를 포함합니다.
-   * 웹 애플리케이션에 URL 연결. 비디오 플레이어를 팝업 또는 모달 창으로 전달하려면 연결을 사용합니다.
+   * 웹 애플리케이션에 URL을 연결합니다. 비디오 플레이어를 팝업 또는 모달 창으로 전달하려면 연결을 사용합니다.
    * 사이트가 응답형인 경우 다음을 수행할 수 있습니다. [최적화된 이미지 제공](/help/assets/responsive-site.md).
 
 >[!NOTE]

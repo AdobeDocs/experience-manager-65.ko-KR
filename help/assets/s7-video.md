@@ -1,26 +1,24 @@
 ---
 title: 비디오
-description: Dynamic Media Classic에 자동 인코딩을 위한 비디오를 업로드하고 Adobe Experience Manager에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리 Experience Manager Assets Assets에 대해 알아봅니다. Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비디오의 범위를 확장합니다.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
+description: Dynamic Media Classic에 자동 인코딩을 위한 비디오를 업로드하고 Adobe Experience Manager Assets에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리 Experience Manager Assets에 대해 알아봅니다. Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비디오의 범위를 확장합니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 17%
+source-wordcount: '1551'
+ht-degree: 16%
 
 ---
 
 # 비디오 {#video}
 
-Adobe Experience Manager Assets는 Dynamic Media Classic으로의 자동 인코딩을 위해 자산으로 직접 비디오를 업로드하고, 페이지 작성을 위해 자산에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
+Adobe Experience Manager Assets에서는 Dynamic Media Classic으로의 자동 인코딩을 위해 자산에 직접 비디오를 업로드하고, 페이지 작성을 위해 자산에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
 
 Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비디오의 범위를 확장합니다(자동 장치 및 대역폭 검색).
 
@@ -80,7 +78,7 @@ Scene7 비디오 구성 요소에 대해 지원되는 형식은 다음과 같습
 
    >[!NOTE]
    >
-   >페이지에 클라우드 구성이 없는 경우 **[!UICONTROL 비디오]** 탭이 표시되지 않습니다.
+   >다음 **[!UICONTROL 비디오]** 페이지에 클라우드 구성이 없는 경우 탭이 표시되지 않습니다.
 
 1. 응용 비디오 인코딩 프로필, 곧바로 사용 가능한 단일 비디오 인코딩 프로필 또는 사용자 지정 비디오 인코딩 프로필을 선택합니다.
 

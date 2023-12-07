@@ -1,20 +1,18 @@
 ---
 title: 이미지 세트
 description: Dynamic Media에서 이미지 세트로 작업하는 방법을 알아봅니다
-uuid: ca2fd5b0-656e-4960-b10c-f0ec3d418760
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 7%
+source-wordcount: '2196'
+ht-degree: 5%
 
 ---
 
@@ -41,7 +39,7 @@ ht-degree: 7%
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
 | 세트당 중복 에셋 수 | 중복 항목 없음 | 20 |
-| 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000 |
+| 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000년 |
 
 참조: [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
@@ -101,7 +99,7 @@ ht-degree: 7%
 
 ## 이미지 세트의 자산 업로드 {#uploading-assets-in-image-sets}
 
-이미지 세트의 이미지를 업로드하여 시작합니다. 이미지를 선택할 때는 고객이 이미지 세트 뷰어에서 이미지를 확대할 수 있다는 것을 기억하십시오. Make sure that the images are least 2000 pixels in the largest dimension. 이미지 세트는 다양한 이미지 파일 형식을 지원하지만 무손실 TIFF, PNG 및 EPS 이미지를 사용하는 것이 좋습니다.
+이미지 세트의 이미지를 업로드하여 시작합니다. 이미지를 선택할 때는 고객이 이미지 세트 뷰어에서 이미지를 확대할 수 있다는 것을 기억하십시오. 가장 큰 차원에서 이미지가 2000픽셀 이상인지 확인하십시오. 이미지 세트는 다양한 이미지 파일 형식을 지원하지만 무손실 TIFF, PNG 및 EPS 이미지를 사용하는 것이 좋습니다.
 
 다음과 같이 이미지 세트의 이미지를 업로드할 수 있습니다 [assets의 다른 에셋 업로드](/help/assets/manage-assets.md#uploading-assets).
 
@@ -123,7 +121,6 @@ ht-degree: 7%
 >
 >* 같은 재킷의 검정색, 갈색, 그리고 초록색 샷입니다.
 >* 검정색, 갈색 및 녹색 썸네일.
-
 
 ## 이미지 집합 만들기 {#creating-image-sets}
 
@@ -153,7 +150,7 @@ ht-degree: 7%
 
 1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 로 이동합니다 **[!UICONTROL 탐색]** > **[!UICONTROL 에셋]**. 이미지 집합을 만들려는 위치로 이동한 다음, **[!UICONTROL 만들기]** > **[!UICONTROL 이미지 집합]** 이미지 세트 편집기 페이지를 엽니다.
 
-   You can also create the set from inside a folder that contains your assets.
+   에셋이 포함된 폴더 내에서 세트를 만들 수도 있습니다.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
@@ -166,6 +163,7 @@ ht-degree: 7%
    * 이미지 세트 편집기 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 자산 추가]**.
 
    * 이미지 세트 편집기 페이지의 중간 부분에서 다음을 선택합니다 **[!UICONTROL 자산 선택기를 열려면 탭하십시오.]**.
+
    이미지 집합에 포함할 자산을 선택합니다. Selected assets have a checkmark icon over them. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 선택]**.
 
    With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. 필터를 선택한 다음 **[!UICONTROL 필터]** 아이콘을 클릭합니다. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
@@ -187,6 +185,7 @@ ht-degree: 7%
    * 이미지를 삭제하려면 이미지를 선택하고 을 선택합니다 **[!UICONTROL 자산 삭제]**.
 
    * 페이지의 오른쪽 위 모서리 근처에서 사전 설정을 적용하려면 **[!UICONTROL 사전 설정]**&#x200B;을 클릭한 다음 사전 설정을 선택하여 모든 에셋에 한 번에 적용합니다.
+
    >[!NOTE]
    >
    >이미지 세트를 만들 때 이미지 세트 썸네일을 변경하거나 Experience Manager이 이미지 세트의 에셋에 따라 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 **[!UICONTROL 썸네일 변경]** 이미지 세트 편집기 페이지의 제목 필드 위에서 이미지를 선택한 다음 다른 폴더로 이동하여 이미지를 찾을 수도 있습니다. 썸네일을 선택한 다음 Experience Manager이 이미지 세트에서 썸네일을 생성하도록 결정한 경우 을 선택합니다 **[!UICONTROL 다음으로 전환]** > **[!UICONTROL 자동 썸네일]**.
@@ -205,17 +204,17 @@ ht-degree: 7%
 
 * 개별 자산의 속성을 엽니다. 속성은 선택한 에셋이 참조되거나 의 멤버를 설정하는 항목을 나타냅니다. 전체 세트를 보려면 세트 이름을 선택합니다.
 
-   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
+  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
 * From a member image of any set. 다음 항목 선택 **[!UICONTROL 세트]** 메뉴: 자산이 멤버로 속한 세트를 표시합니다.
 
-   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
+  ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
 * 검색에서 다음을 선택할 수 있습니다 **[!UICONTROL 필터]**, 다음 확장 **[!UICONTROL Dynamic Media]** 및 선택 **[!UICONTROL 세트]**.
 
-   UI에서 수동으로 만들었거나 일괄처리 집합 사전 설정을 통해 자동으로 만든 일치 세트가 검색 결과에 반환됩니다. 자동화된 세트의 경우 검색 쿼리는 &quot;포함&quot; 검색 기준을 사용하는 Experience Manager 검색과는 다른 &quot;다음으로 시작&quot; 검색 기준을 사용하여 수행됩니다. 필터 설정 **[!UICONTROL 세트]** 이것은 자동화된 집합을 검색하는 유일한 방법입니다.
+  UI에서 수동으로 만들었거나 일괄처리 집합 사전 설정을 통해 자동으로 만든 일치 세트가 검색 결과에 반환됩니다. 자동화된 세트의 경우 검색 쿼리는 &quot;포함&quot; 검색 기준을 사용하는 Experience Manager 검색과는 다른 &quot;다음으로 시작&quot; 검색 기준을 사용하여 수행됩니다. 필터 설정 **[!UICONTROL 세트]** 이것은 자동화된 집합을 검색하는 유일한 방법입니다.
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
@@ -244,10 +243,9 @@ ht-degree: 7%
    * 에셋 순서를 변경하려면 이미지를 새 위치로 드래그합니다(항목을 이동하려면 순서 변경 아이콘을 선택합니다.).
    * 항목을 오름차순 또는 내림차순으로 정렬하려면 열 머리글을 선택합니다.
    * 에셋을 추가하거나 기존 에셋을 업데이트하려면 **[!UICONTROL 자산 추가]**. 에셋으로 이동하여 선택한 다음 를 선택합니다 **[!UICONTROL 선택]** 페이지의 오른쪽 상단 모서리 근처.
-
-      >[!NOTE]
-      >
-      >Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제해도 원래 에셋이 계속 표시됩니다.
+     >[!NOTE]
+     >
+     >Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제해도 원래 에셋이 계속 표시됩니다.
    * 에셋을 삭제하려면 에셋을 선택한 다음 를 선택합니다 **[!UICONTROL 자산 삭제]**.
    * 페이지의 오른쪽 위 모서리 근처에서 사전 설정을 적용하려면 **[!UICONTROL 사전 설정]**&#x200B;을 클릭한 다음 뷰어 사전 설정을 선택합니다.
    * 썸네일을 추가하거나 변경하려면 에셋 오른쪽 옆에 있는 썸네일 아이콘을 선택합니다. 새 썸네일 또는 견본 에셋으로 이동하여 선택한 다음 를 선택합니다 **[!UICONTROL 선택]**.

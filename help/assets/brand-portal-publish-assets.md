@@ -1,31 +1,27 @@
 ---
-title: 자산을 Brand Portal에 게시
-seo-title: Publish assets to Brand Portal
+title: Brand Portal에 자산 게시
 description: Brand Portal에 에셋을 게시하고 게시 취소하는 방법을 알아봅니다.
-seo-description: Learn how to publish and unpublish assets to Brand Portal.
-uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 46%
+source-wordcount: '370'
+ht-degree: 41%
 
 ---
 
-# 자산을 Brand Portal에 게시 {#publish-assets-to-brand-portal}
+# Brand Portal에 자산 게시 {#publish-assets-to-brand-portal}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
 Adobe Experience Manager(AEM) Assets 관리자는 에셋 및 폴더를 조직의 AEM Assets Brand Portal 인스턴스에 게시(또는 게시 워크플로우를 나중 날짜/시간으로 예약)할 수 있습니다. 하지만 먼저 Brand Portal에서 AEM Assets를 구성해야 합니다. 자세한 내용은 [Brand Portal에서 AEM Assets 구성](/help/assets/configure-aem-assets-with-brand-portal.md)을 참조하십시오.

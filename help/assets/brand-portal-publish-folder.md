@@ -1,22 +1,18 @@
 ---
 title: 폴더를 Brand Portal에 게시
-seo-title: Publish folders to Brand Portal
 description: 폴더를 Brand Portal에 게시 및 게시 취소하는 방법에 대해 알아봅니다.
-seo-description: Learn how to publish and unpublish folders to Brand Portal.
-uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 38%
+source-wordcount: '565'
+ht-degree: 34%
 
 ---
 
@@ -43,6 +39,7 @@ AEM Assets에서 원래 에셋 또는 폴더를 추가로 수정하는 경우, �
    * 도구 모음에서 **빠른 게시**&#x200B;를 선택합니다. 그런 다음 메뉴에서 을(를) 선택합니다 **Brand Portal에 게시**.
 
    * 도구 모음에서 **게시 관리**&#x200B;를 선택합니다.
+
    1. 출처: **작업** 선택 **Brand Portal에 게시**, 출처 **예약** 선택 **지금**, 및 클릭 **다음.**
    1. **범위**&#x200B;에서 선택 내용을 확인하고 **Brand Portal에 게시**&#x200B;를 클릭합니다.
 
@@ -63,15 +60,13 @@ AEM Assets에서 원래 에셋 또는 폴더를 추가로 수정하는 경우, �
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
-
-
 ## Brand Portal에서 폴더 게시 취소 {#unpublish-folders-from-brand-portal}
 
 AEM 작성자 인스턴스에서 게시를 취소하여 Brand Portal에 게시된 모든 에셋 폴더를 제거할 수 있습니다. 원래 폴더를 게시 취소한 후에는 Brand Portal 사용자가 해당 복사본을 더 이상 사용할 수 없습니다.
 
 Brand Portal에서 폴더를 빠르게 게시 취소하거나 나중 날짜 및 시간으로 예약할 수 있습니다. Brand Portal에서 자산 폴더의 게시를 취소하려면,
 
-1. AEM 작성자 인스턴스의 AEM Assets 인터페이스에서 게시를 취소할 폴더를 선택합니다.
+1. AEM Author 인스턴스의 AEM Assets 인터페이스에서 게시를 취소할 폴더를 선택합니다.
 
    ![publish2bp-1](assets/publish2bp.png)
 
@@ -98,7 +93,6 @@ Brand Portal에서 폴더를 빠르게 게시 취소하거나 나중 날짜 및 
    1. **워크플로우**&#x200B;에서 **워크플로우 제목**&#x200B;을 지정합니다. 클릭 **나중에 게시 취소합니다.**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
-
 
 >[!NOTE]
 >

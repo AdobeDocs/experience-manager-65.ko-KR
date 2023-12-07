@@ -5,7 +5,7 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 1%
@@ -41,7 +41,7 @@ We.Unlimited 앱은 완벽하게 구성 가능하고 관리 가능한 AEM Mobile
 앱 템플릿을 기반으로 앱을 만드는 절차:
 
 1. AEM Mobile 앱 카탈로그로 이동합니다. *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. 선택 **만들기** -> **앱** 아래와 같이
+1. 선택 **만들기** > **앱** 아래와 같이
 
 이 템플릿을 사용하여 앱을 만들면 앱에 문서, 배너 및 컬렉션을 추가할 수 있습니다. 문서, 배너 및 컬렉션을 다시 방문하려면 다음을 참조하십시오. [컨텐츠 관리 작업](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 

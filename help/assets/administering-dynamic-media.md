@@ -1,16 +1,14 @@
 ---
 title: Dynamic Media 설정
 description: Dynamic Media을 설정하려면 Dynamic Media을 구성하고 이미지 및 뷰어 사전 설정을 관리해야 합니다.
-uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Configuration
-source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '255'
 ht-degree: 11%
 
 ---
@@ -43,6 +41,5 @@ Dynamic Media을 관리하는 경우 다음 항목이 유용합니다.
 >**업그레이드하는 경우:**
 >
 >* Experience Manager을 시작하고 실행한 후에는 업로드하는 모든 에셋이 자동으로 Dynamic Media을 활성화합니다(시스템 관리자가 명시적으로 비활성화하지 않은 경우). 업그레이드된 Experience Manager 인스턴스에 있고 Dynamic Media을 처음 사용하는 경우 자산을 Dynamic Media에서 사용할 수 있도록 하려면 자산을 재처리해야 합니다.
-
 
 

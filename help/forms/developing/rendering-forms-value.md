@@ -1,20 +1,16 @@
 ---
 title: 값별 Forms 렌더링
-seo-title: Rendering Forms By Value
 description: Forms API(Java)를 사용하여 Java API 및 웹 서비스 API를 사용하여 값별로 양식을 렌더링합니다.
-seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
-uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -133,7 +129,7 @@ Forms API(Java)를 사용하여 값별 양식 렌더링:
 
 1. 클라이언트 웹 브라우저에 양식 데이터 스트림 작성
 
-   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 개체 &#39;s `getOutputContent` 메서드를 사용합니다.
+   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 의 오브젝트 `getOutputContent` 메서드를 사용합니다.
    * 의 콘텐츠 유형 가져오기 `com.adobe.idp.Document` 개체 `getContentType` 메서드를 사용합니다.
    * 설정 `javax.servlet.http.HttpServletResponse` 를 호출하여 객체의 콘텐츠 유형 `setContentType` 메서드와 의 콘텐츠 유형 전달 `com.adobe.idp.Document` 개체.
    * 만들기 `javax.servlet.ServletOutputStream` 개체를 사용하여 클라이언트 웹 브라우저에서 `javax.servlet.http.HttpServletResponse` 개체 `getOutputStream` 메서드를 사용합니다.
@@ -169,7 +165,7 @@ Forms API(웹 서비스)를 사용하여 값별로 양식을 렌더링합니다.
 
    * 만들기 `java.io.FileInputStream` 개체를 만들 때 사용됩니다. XDP 파일의 위치를 지정하는 문자열 값을 전달합니다.
    * 만들기 `BLOB` 개체를 만들 때 사용됩니다. 다음 `BLOB` 개체는 암호로 암호화된 PDF 문서를 저장하는 데 사용됩니다.
-   * 의 콘텐츠를 저장하는 바이트 배열 만들기 `java.io.FileInputStream` 개체. 를 가져와서 바이트 배열의 크기를 결정할 수 있습니다 `java.io.FileInputStream` 를 사용하는 객체의 크기 `available` 메서드를 사용합니다.
+   * 의 콘텐츠를 저장하는 바이트 배열 만들기 `java.io.FileInputStream` 개체. 를 가져와서 바이트 배열의 크기를 결정할 수 있습니다 `java.io.FileInputStream` 개체를 사용한 개체 크기 `available` 메서드를 사용합니다.
    * 를 호출하여 바이트 배열을 스트림 데이터로 채우기 `java.io.FileInputStream` 개체 `read` 메서드 및 바이트 배열 전달.
    * 채우기 `BLOB` 개체 `setBinaryData` 메서드 및 바이트 배열 전달.
 

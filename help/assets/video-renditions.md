@@ -1,21 +1,19 @@
 ---
 title: 비디오 표현물
-description: Adobe Experience Manager Assets를 사용하여 OGG, FLV 등을 비롯한 다양한 형식의 비디오 에셋에 대한 비디오 렌디션을 생성하는 방법을 알아봅니다.
-uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
+description: Adobe Experience Manager Assets을 사용하여 OGG, FLV 등을 비롯한 다양한 형식의 비디오 자산에 대한 비디오 렌디션을 생성하는 방법을 알아봅니다.
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 2%
+source-wordcount: '246'
+ht-degree: 1%
 
 ---
 
 # 비디오 표현물 {#video-renditions}
 
-Adobe Experience Manager Assets는 OGG, FLV 등을 비롯한 다양한 형식의 비디오 자산에 대한 비디오 렌디션을 생성합니다.
+Adobe Experience Manager Assets은 OGG, FLV 등을 비롯한 다양한 형식의 비디오 자산에 대한 비디오 렌디션을 생성합니다.
 
 Experience Manager Assets은 미디어 자산에 대한 정적 및 동적 변환(DM 인코딩 변환)을 지원합니다.
 

@@ -1,21 +1,17 @@
 ---
 title: ASRP - Adobe 저장소 리소스 제공자
-seo-title: ASRP - Adobe Storage Resource Provider
 description: 관계형 데이터베이스를 공통 저장소로 사용하도록 AEM Communities 설정
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
-source-git-commit: 42feafa381c129117dae5345255702f0b0951a17
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 0%
+source-wordcount: '792'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +54,7 @@ UGC에 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 다�
 * **기본 보고서 세트**: 기본 보고서 세트의 이름을 입력합니다.
 * **소비자 키**: 소비자 키를 입력합니다.
 * **암호**: 암호를 입력합니다.
-* 선택 **제출**.
+* **제출**&#x200B;을 선택합니다.
 
 게시 인스턴스를 준비합니다.
 
@@ -69,7 +65,7 @@ UGC에 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 다�
 
 * 선택 **구성 테스트**.
 
-   각 작성자 및 게시 인스턴스에 대해 스토리지 구성 콘솔에서 데이터 센터에 대한 연결을 테스트합니다.
+  각 작성자 및 게시 인스턴스에 대해 스토리지 구성 콘솔에서 데이터 센터에 대한 연결을 테스트합니다.
 
 * 프로필 데이터에 대한 사이트 URL을 다음 방법으로 데이터 센터에서 라우팅할 수 있습니다. [링크 표면화](#externalize-links).
 

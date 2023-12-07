@@ -1,18 +1,16 @@
 ---
 title: Dynamic Media에서 이미지 품질 최적화 우수 사례
 description: Dynamic Media의 이미지 품질 최적화 모범 사례 알아보기
-uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -64,20 +62,19 @@ Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이�
       * **[!UICONTROL *금액&#x200B;*]**(0-5, 효과의 강도.)
       * **[!UICONTROL *반경&#x200B;*]**(0-250, 선명하게 표시된 개체 주위에 그려진 &quot;선명하게 하기 선&quot;의 폭(픽셀 단위)입니다.)
 
-      매개변수 반경과 양은 서로 영향을 받습니다. 감소된 반경은 양을 증가시킴으로써 보상될 수 있다. [반경]을 사용하면 값이 낮을수록 가장자리 픽셀만 선명하게 되고 값이 높을수록 넓은 폭의 픽셀이 선명하게 되므로 더 세밀하게 제어할 수 있습니다.
+     매개변수 반경과 양은 서로 영향을 받습니다. 감소된 반경은 양을 증가시킴으로써 보상될 수 있다. [반경]을 사용하면 값이 낮을수록 가장자리 픽셀만 선명하게 되고 값이 높을수록 넓은 폭의 픽셀이 선명하게 되므로 더 세밀하게 제어할 수 있습니다.
 
       * **[!UICONTROL *임계값&#x200B;*]**(0-255, 효과 민감도)
 
-             This parameter determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and the filter sharpens them. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. For example, a threshold value of 12 ignores slight variations in skin tone brightness to avoid adding &quot;noise&quot;, while still adding edge contrast to high contrast areas, such as where eyelashes meet skin.
-         
-         필터에 사용하는 모범 사례를 포함하여 이러한 세 매개 변수를 설정하는 방법에 대한 자세한 내용은 다음 리소스를 참조하십시오.
+            This parameter determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and the filter sharpens them. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. For example, a threshold value of 12 ignores slight variations in skin tone brightness to avoid adding &quot;noise&quot;, while still adding edge contrast to high contrast areas, such as where eyelashes meet skin.
+        
+        필터에 사용하는 모범 사례를 포함하여 이러한 세 매개 변수를 설정하는 방법에 대한 자세한 내용은 다음 리소스를 참조하십시오.
 
-         Experience Manager 도움말 항목에서 이미지 선명하게 하기를 참조하십시오.
+        Experience Manager 도움말 항목에서 이미지 선명하게 하기를 참조하십시오.
 
-         모범 사례 백서 [Adobe Dynamic Media Classic에서 이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf).
+        모범 사례 백서 [Adobe Dynamic Media Classic에서 이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf).
 
       * Experience Manager을 사용하면 네 번째 매개 변수인 모노크롬(0,1)을 제어할 수도 있습니다. 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 언샵 마스킹을 별도로 적용할지 또는 값 1을 사용하여 이미지 밝기/강도에 적용할지 여부를 결정합니다.
-
 
 언샵 마스크 반경 매개 변수로 시작하는 것이 좋습니다. 다음으로 시작할 수 있는 반경 설정은 다음과 같습니다.
 
@@ -108,7 +105,7 @@ JPG 압축 사용에 대한 우수 사례로서 `&qlt=85,0`.
 jpegSize는 메모리가 제한된 장치에 이미지가 전달될 때 특정 크기를 초과하지 않도록 하려는 경우 유용한 매개 변수입니다.
 
 * 이 매개 변수는 KB 단위로 설정됩니다(`jpegSize=&lt;size_in_kilobytes&gt;`). 이미지 게재에 허용되는 최대 크기를 정의합니다.
-* `&jpegSize=` 이 JPG 압축 매개 변수와 상호 작용합니다. `&qlt=`. JPG 응답이 지정된 JPG 압축 매개 변수를 사용하는 경우(`&qlt=`)이 jpegSize 값을 초과하지 않으면 이미지가 `&qlt=` 정의된 대로. 그렇지 않으면, `&qlt=` 이미지가 최대 허용 크기에 맞을 때까지 또는 시스템이 이미지가 맞지 않는다고 판단하여 오류를 반환할 때까지 점차적으로 감소합니다.
+* `&jpegSize=` 이 JPG 압축 매개 변수와 상호 작용합니다. `&qlt=`. 지정된 JPG 압축 매개 변수를 사용하는 JPG 응답인 경우(`&qlt=`)이 jpegSize 값을 초과하지 않으면 이미지가 `&qlt=` 정의된 대로. 그렇지 않으면, `&qlt=` 이미지가 최대 허용 크기에 맞을 때까지 또는 시스템이 이미지가 맞지 않는다고 판단하여 오류를 반환할 때까지 점차적으로 감소합니다.
 
 모범 사례로서 다음을 설정합니다. `&jpegSize=` 매개 변수 추가 `&qlt=` 메모리가 제한된 장치에 JPG 이미지를 전달하는 경우.
 

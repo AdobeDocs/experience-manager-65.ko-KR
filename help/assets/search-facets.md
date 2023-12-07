@@ -6,10 +6,10 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 16%
+source-wordcount: '2411'
+ht-degree: 15%
 
 ---
 
@@ -113,7 +113,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 1. 다음을 클릭합니다. [!DNL Experience Manager] 로고, 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms 검색]**.
 1. 다음에서 **[!UICONTROL Forms 검색]** 페이지, 선택 **[!UICONTROL 에셋 관리자 검색 레일]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL 편집]**.
 1. In the **[!UICONTROL Edit Search Form]** page, drag **[!UICONTROL Options Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
-1. In the **[!UICONTROL Settings]** tab, enter a label and a name for the property. 예를 들어, 해당 형식을 기반으로 하여 에셋을 검색하려면 레이블에 대해 사용자에게 친숙한 이름(예: )을 지정하십시오. **[!UICONTROL 파일 유형]**. Specify the property based on which the search is to be performed in the property field, for example, `jcr:content/metadata/dc:format.`
+1. In the **[!UICONTROL Settings]** tab, enter a label and a name for the property. 예를 들어, 해당 형식을 기반으로 하여 에셋을 검색하려면 레이블에 대해 사용자에게 친숙한 이름(예: )을 지정하십시오. **[!UICONTROL 파일 유형]**. 속성 필드에서 검색을 수행할 기준 속성을 지정합니다(예: ). `jcr:content/metadata/dc:format.`
 1. 다음 중 하나를 수행하십시오.
 
    * 다음에서 **[!UICONTROL 속성 이름]** 필드에서는 옵션에 대한 노드를 정의하고 해당 키-값 쌍을 지정하는 JSON 파일의 경로를 언급합니다.
@@ -167,7 +167,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 | [!UICONTROL 전체 텍스트] | 전체 에셋 노드에서 전체 텍스트 검색을 수행하는 검색 조건자입니다. jcr:contains 연산자로 매핑됩니다. 에셋 노드의 특정 부분에서 전체 텍스트 검색을 수행하려는 경우 상대 경로를 지정할 수 있습니다. | <ul><li>레이블</li><li>자리 표시자</li><li>속성 이름</li><li>설명</li></ul> |
 | [!UICONTROL 경로 브라우저] | 사전 구성된 루트 경로에서 폴더 및 하위 폴더의 에셋을 검색하는 검색 조건자 | <ul><li>자리 표시자</li><li>루트 경로</li><li>설명</li></ul> |
 | [!UICONTROL 경로] | 위치에서 결과를 필터링하는 데 사용합니다. 다른 경로를 옵션으로 지정할 수 있습니다. | <ul><li>레이블</li><li>경로</li><li>설명</li></ul> |
-| [!UICONTROL 게시 상태] | 게시 상태를 기반으로 에셋을 검색하는 검색 조건자 | <ul><li>레이블</li><li>속성 이름</li><li>설명</li></ul> |
+| [!UICONTROL 게시 상태] | 게시 상태에 따라 에셋을 검색하는 검색 조건자 | <ul><li>레이블</li><li>속성 이름</li><li>설명</li></ul> |
 | [!UICONTROL 상대적 날짜] | 만든 상대적 날짜를 기준으로 자산을 검색하는 검색 조건자입니다. 예를 들어 2개월 전, 3주 전 등과 같은 옵션을 구성할 수 있습니다. | <ul><li>레이블</li><li>속성 이름</li><li>상대적 날짜</li></ul> |
 | [!UICONTROL 범위] | 지정된 범위 내에 있는 에셋을 검색하는 검색 조건자입니다. [검색] 패널에서 범위의 최소값과 최대값을 지정할 수 있습니다. | <ul><li>레이블</li><li>속성 이름</li><li>설명</li></ul> |
 | [!UICONTROL 날짜 범위] | 날짜 속성에 대해 지정된 범위 내에 생성된 에셋을 검색하는 검색 조건자입니다. 검색 패널에서 날짜 선택기를 사용하여 시작 및 종료 날짜를 지정할 수 있습니다. | <ul><li>레이블</li><li>자리 표시자</li><li>속성 이름</li><li>범위 텍스트(시작)</li><li>범위 텍스트(종료)</li><li>설명</li></ul> |

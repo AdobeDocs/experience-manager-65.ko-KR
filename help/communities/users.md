@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1910'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 자체 등록�
 
 그룹 이름은 다음 기간 동안 사이트에 지정된 이름에서 생성됩니다 [커뮤니티 사이트 생성](sites-console.md#step13asitetemplate). 고유 ID는 동일한 서버의 비슷한 이름의 커뮤니티 사이트 및 커뮤니티 그룹에 대한 이름 충돌을 방지합니다.
 
-예를 들어 사이트 이름이 &quot;*참여*&quot;We.Retail Engage&quot;라는 사이트의 경우 생성된 사용자 그룹 중 하나는 다음과 같습니다.
+예를 들어 사이트 이름이 &quot;*참여*&quot; Engage&quot;라는 사이트의 경우 생성된 사용자 그룹 중 하나는 다음과 같습니다.
 
 * 커뮤니티 *참여* 구성원
 

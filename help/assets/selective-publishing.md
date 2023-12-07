@@ -9,10 +9,10 @@ docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
-source-git-commit: 664e22cc4c6acd74f285a4ec1a0dbd7d301240b7
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '3000'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 4%
    >
    >선택한 Dynamic Media 게시 모드 옵션에 관계없이 에셋이 나중에 업데이트됩니다. *이미* 게시됨, 이러한 업데이트는 추가 사용자 작업 없이 즉시 게시됩니다.
    >
-   >게시된 비디오가 업데이트된 경우 게재 변경 사항을 반영하도록 다시 게시해야 합니다.
+   >게시된 비디오가 업데이트된 경우 게재 시 변경 사항을 반영하도록 다시 게시해야 합니다.
 
    | Dynamic Media 게시 모드 옵션 | 설명 |
    | --- | --- |
@@ -105,9 +105,9 @@ ht-degree: 4%
    * 게시할 자산이 있는 폴더로 이동합니다. 폴더를 선택한 다음 도구 모음에서 를 선택합니다. **[!UICONTROL 게시 관리]**. 사용 **[!UICONTROL 목록 보기]** 따라서 특정 폴더의 게시 상태를 보다 쉽게 확인할 수 있습니다.
    * 게시할 자산이 있는 폴더로 이동합니다. 폴더를 연 다음 하나 이상의 에셋을 선택합니다. 도구 모음에서 를 선택합니다. **[!UICONTROL 게시 관리]**. 사용 **[!UICONTROL 목록 보기]** 따라서 특정 에셋의 게시 상태를 보다 쉽게 확인할 수 있습니다.
 
-      >[!NOTE]
-      >
-      >If **[!UICONTROL 게시 관리]** 이(가) 도구 모음에 표시되지 않습니다. 대신 줄임표 버튼을 선택한 다음 을(를) 선택합니다 **[!UICONTROL 게시 관리]** 을 클릭합니다.
+     >[!NOTE]
+     >
+     >If **[!UICONTROL 게시 관리]** 이(가) 도구 모음에 표시되지 않습니다. 대신 줄임표 버튼을 선택한 다음 을(를) 선택합니다 **[!UICONTROL 게시 관리]** 을 클릭합니다.
 
 1. 다음에서 **[!UICONTROL 게시 관리 - 옵션]** 페이지, 아래 **[!UICONTROL 작업]**&#x200B;원하는 활성화 유형을 선택합니다.
 
@@ -137,9 +137,9 @@ ht-degree: 4%
    * 게시를 취소할 에셋이 있는 폴더로 이동합니다. 폴더를 선택한 다음 도구 모음에서 를 선택합니다. **[!UICONTROL 게시 관리]**. 사용 **[!UICONTROL 목록 보기]** 따라서 특정 폴더의 게시 상태를 보다 쉽게 확인할 수 있습니다.
    * 게시를 취소할 에셋이 있는 폴더로 이동합니다. 폴더를 연 다음 하나 이상의 에셋을 선택합니다. 도구 모음에서 를 선택합니다. **[!UICONTROL 게시 관리]**. 사용 **[!UICONTROL 목록 보기]** 따라서 특정 에셋의 게시 상태를 보다 쉽게 확인할 수 있습니다.
 
-      >[!NOTE]
-      >
-      >If **[!UICONTROL 게시 관리]** 이(가) 도구 모음에 표시되지 않습니다. 대신 줄임표 버튼을 선택한 다음 을(를) 선택합니다 **[!UICONTROL 게시 관리]** 을 클릭합니다.
+     >[!NOTE]
+     >
+     >If **[!UICONTROL 게시 관리]** 이(가) 도구 모음에 표시되지 않습니다. 대신 줄임표 버튼을 선택한 다음 을(를) 선택합니다 **[!UICONTROL 게시 관리]** 을 클릭합니다.
 
 1. 다음에서 **[!UICONTROL 게시 관리 - 옵션]** 페이지, 아래 **[!UICONTROL 작업]**&#x200B;원하는 비활성화 유형을 선택합니다.
 
@@ -176,11 +176,11 @@ ht-degree: 4%
    * 게시할 자산이 있는 폴더로 이동합니다. 폴더를 선택한 다음 도구 모음에서 를 선택합니다. **[!UICONTROL 빠른 게시]**. 사용 **[!UICONTROL 목록 보기]** 따라서 특정 폴더의 게시 상태를 보다 쉽게 확인할 수 있습니다.
    * 게시할 자산이 있는 폴더로 이동합니다. 폴더를 연 다음 하나 이상의 에셋을 선택합니다. 도구 모음에서 를 선택합니다. **[!UICONTROL 빠른 게시]**. 사용 **[!UICONTROL 목록 보기]** 따라서 특정 에셋의 게시 상태를 보다 쉽게 확인할 수 있습니다.
 
-      >[!NOTE]
-      >
-      >If **[!UICONTROL 빠른 게시]** 이(가) 도구 모음에 표시되지 않습니다. 대신 줄임표 버튼을 선택한 다음 을(를) 선택합니다 **[!UICONTROL 빠른 게시]** 을 클릭합니다.
+     >[!NOTE]
+     >
+     >If **[!UICONTROL 빠른 게시]** 이(가) 도구 모음에 표시되지 않습니다. 대신 줄임표 버튼을 선택한 다음 을(를) 선택합니다 **[!UICONTROL 빠른 게시]** 을 클릭합니다.
 
-      ![Dynamic Media에 폴더 수준 빠른 게시](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
+     ![Dynamic Media에 폴더 수준 빠른 게시](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
 
 1. 에서 다음 옵션 중 하나를 선택합니다 **[!UICONTROL 빠른 게시]** 메뉴 목록.
 
@@ -236,7 +236,7 @@ ht-degree: 4%
    | 나중에 | 선택한 작업은 선택한 특정 날짜 및 시간에 실행됩니다. |
 
 1. 의 오른쪽 위 모서리에서 **[!UICONTROL 게시 관리 - 옵션]** 페이지, 선택 **[!UICONTROL 다음]**.
-1. (선택 사항) **[!UICONTROL 게시 관리 - 범위]** 페이지, 검토 **[!UICONTROL Target 게시]** 선택한 에셋에 대한 테이블의 열입니다.
+1. (선택 사항) **[!UICONTROL 게시 관리 - 범위]** 페이지, 검토 **[!UICONTROL 대상 게시]** 선택한 에셋에 대한 테이블의 열입니다.
 
    | Dynamic Media 구성의 에셋 게시 설정 | 선택한 작업 | 게시 대상 |
    | --- | --- | --- |
@@ -267,7 +267,7 @@ ht-degree: 4%
 를 사용할 때 **[!UICONTROL 목록 보기]**, 추가 열 **[!UICONTROL Dynamic Media]** 게시 상태가 나타납니다.
    * Dynamic Media에 동기화하도록 구성된 폴더에는 **[!UICONTROL Dynamic Media]** 기본적으로 열입니다.
    * 다음 위치의 폴더 *아님* Dynamic Media에 동기화하도록 구성된 에는 Dynamic Media 열이 표시되지 않습니다.
-      ![목록 보기 및 타임라인](/help/assets/assets-dm/selective-publish-status-timeline.png)
+     ![목록 보기 및 타임라인](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## 선택적 게시 문제 해결 {#selective-publish-troubleshoot}
 

@@ -1,19 +1,17 @@
 ---
 title: 페이지에 Dynamic Media Classic 기능 추가
 description: Adobe Experience Manager의 페이지에 Dynamic Media Classic 기능 및 구성 요소를 추가하는 방법
-uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: managing-assets
-discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '2845'
+source-wordcount: '2851'
 ht-degree: 9%
 
 ---
@@ -75,7 +73,7 @@ Experience Manager에서 사용할 수 있는 Dynamic Media Classic 구성 요�
 >
 >사용자 지정 뷰어를 만들고 개발하면서 콘텐츠 파인더를 사용하는 경우 `allowfullscreen` 매개 변수.
 
-### Flash 뷰어 지원 중단 알림 {#flash-viewers-end-of-life-notice}
+### Flash 뷰어 서비스 종료 알림 {#flash-viewers-end-of-life-notice}
 
 2017년 1월 31일부터 Adobe Dynamic Media Classic은 Flash 뷰어 플랫폼에 대한 지원을 종료했습니다.
 
@@ -130,7 +128,7 @@ Experience Manager에서 사용할 수 있는 Dynamic Media Classic 구성 요�
 
 구성 옵션은 다르지만 다음은 모든 사용자에게 공통됩니다 [!UICONTROL Dynamic Media Classic] 구성 요소:
 
-* **[!UICONTROL 파일 참조]** - 참조할 파일을 찾아 봅니다. 파일 참조는 에셋 URL을 보여주며 URL 명령 및 매개 변수를 포함한 전체 Dynamic Media Classic URL일 필요는 없습니다. 이 필드에는 Dynamic Media Classic URL 명령 및 매개 변수를 추가할 수 없습니다. 대신 구성 요소에서 해당 기능을 통해 추가합니다.
+* **[!UICONTROL 파일 참조]** - 참조할 파일을 찾습니다. 파일 참조는 에셋 URL을 보여주며 URL 명령 및 매개 변수를 포함한 전체 Dynamic Media Classic URL일 필요는 없습니다. 이 필드에는 Dynamic Media Classic URL 명령 및 매개 변수를 추가할 수 없습니다. 대신 구성 요소에서 해당 기능을 통해 추가합니다.
 * **[!UICONTROL 폭]** - 너비를 설정할 수 있습니다.
 * **[!UICONTROL 높이]** - 높이를 설정할 수 있습니다.
 
@@ -182,7 +180,7 @@ HTML 5 **[!UICONTROL 플라이아웃]** 구성 요소에서는 에셋이 분할 
 
 **[!UICONTROL URL 수정자]** - 추가적인 Dynamic Media Classic 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. 이러한 명령은에 설명되어 있습니다 [이미지 사전 설정](/help/assets/managing-image-presets.md) 및 [명령 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
-**[!UICONTROL 중단점]** - 웹 사이트가 응답형인 경우 중단점을 조정할 수 있습니다. 중단점은 쉼표(,)로 구분해야 합니다.
+**[!UICONTROL 중단점]** - 웹 사이트가 응답형인 경우 중단점을 조정할 수 있습니다. 중단점은 쉼표( , )로 구분해야 합니다.
 
 ### 이미지 템플릿 {#image-template}
 
