@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: ab40115c373cc06a7600494288b2670deb914e1a
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 51%
+source-wordcount: '2595'
+ht-degree: 49%
 
 ---
 
@@ -166,6 +166,64 @@ Forms 포털 및 제출 작업에 대한 자세한 내용은 을 참조하십시
 적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 작업을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [AEM Forms 인스턴스와 Microsoft® Power Automate 연결](/help/forms/using/forms-microsoft-power-automate-integration.md)
 
 성공적으로 구성한 후 [Microsoft® Power Automate 흐름 호출](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 제출 액션을 사용하여 데이터를 Power Automate 흐름으로 전송합니다.
+
+## Microsoft® SharePoint 목록에 제출{#submit-to-sharedrive}
+
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
+
+**[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint Storage와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® Sharepoint Storage에 제출할 수 있습니다.
+
+### Microsoft® SharePoint 목록에 적응형 양식 연결 {#connect-af-sharepoint-list}
+
+을(를) 사용하려면 [!UICONTROL SharePoint 목록에 제출] 적응형 양식에서 작업 제출:
+
+1. [SharePoint 목록 구성 만들기](#create-sharepoint-list-configuration): AEM Forms을 Microsoft® Sharepoint 목록 스토리지에 연결합니다.
+1. [적응형 양식에서 양식 데이터 모델을 사용하여 제출](#use-submit-using-fdm): 적응형 양식을 구성된 Microsoft® SharePoint에 연결합니다.
+
+#### SharePoint 목록 구성 만들기 {#create-sharepoint-list-configuration}
+
+AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
+
+1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. **구성 컨테이너**&#x200B;를 선택합니다. 선택한 구성 컨테이너에 구성을 저장합니다.
+1. 클릭 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 목록]** 을 클릭합니다. SharePoint 구성 마법사가 나타납니다.
+1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
+   * Microsoft® Azure 포털에서 앱의 `Client ID` 및 `Client Secret`를 검색할 수 있습니다.
+   * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 작성자 인스턴스의 URL로 대체합니다.
+   * API 권한 추가 `offline_access` 및 `Sites.Manage.All` 다음에서 **Microsoft® 그래프** 읽기/쓰기 권한을 제공하는 탭입니다. 추가 `AllSites.Manage` 의 권한 **Sharepoint** 탭으로 이동하여 SharePoint 데이터와 원격으로 상호 작용할 수 있습니다.
+   * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Microsoft® Azure 포털에서 `<tenant-id>`를 앱의 `tenant-id`로 대체합니다.
+
+     >[!NOTE]
+     >
+     **클라이언트 보안** 필드는 Azure Active Directory 애플리케이션 구성에 따라 필수 또는 선택 사항입니다. 애플리케이션을 구성하여 클라이언트 보안을 사용하는 경우 클라이언트 보안을 제공해야 합니다.
+
+1. **[!UICONTROL 연결]**&#x200B;을 클릭합니다. 연결이 완료되면 `Connection Successful` 메시지가 나타납니다.
+1. 선택 **[!UICONTROL SharePoint 사이트]** 및 **[!UICONTROL SharePoint 목록]** 을 클릭합니다.
+1. 누르기 **[!UICONTROL 만들기]** Microsoft® SharePointList에 대한 클라우드 구성을 만듭니다.
+
+#### 적응형 양식에서 양식 데이터 모델을 사용하여 제출 {#use-submit-using-fdm}
+
+적응형 양식에서 생성된 SharePoint 목록 구성을 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 적응형 양식에서 SharePoint 목록 스토리지 구성을 다음으로 사용하려면 다음 단계를 수행하십시오.
+
+1. [Microsoft® SharePoint 목록 구성을 사용하여 양식 데이터 모델 만들기](/help/forms/using/create-form-data-model.md)
+1. [데이터를 검색하고 전송하도록 양식 데이터 모델 구성](/help/forms/using/work-with-form-data-model.md#configure-services)
+1. [적응형 양식 만들기](/help/forms/using/create-adaptive-form.md).
+1. [양식 데이터 모델을 사용하여 제출 작업 구성](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
+
+양식을 제출하면 데이터가 지정된 Microsoft® Sharepoint 목록 저장소에 저장됩니다.
+
+>[!NOTE]
+>
+Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습니다.
+* 이미지 열
+* 메타데이터 열
+* 개인 열
+* 외부 데이터 열
+
+
+>[!NOTE]
+>
+구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
 
 ## 적응형 양식에서 서버측 유효성 재검사 {#server-side-revalidation-in-adaptive-form}
 

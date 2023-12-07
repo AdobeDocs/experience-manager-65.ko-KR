@@ -5,9 +5,9 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 4158315c28412bb9498c7d49d21b3f4d72681fc6
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1533'
 ht-degree: 1%
 
 ---
@@ -236,3 +236,8 @@ AEM [!DNL Forms] 는 다음과 같은 직관적인 사용자 인터페이스를 
    이제 ID 7107215에 대해 모델 읽기 서비스를 다시 테스트하면 아래와 같이 업데이트된 고객 세부 정보를 가져와서 표시합니다.
 
    ![읽기 업데이트됨](assets/read-updated.png)
+
+
+>[!NOTE]
+>
+> 적응형 양식의 양식 데이터 모델을 사용하여 SharePoint 목록 구성을 생성 및 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 을(를) 참조하십시오 [Microsoft® SharePoint 목록에 적응형 양식 연결](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration)를 참조하십시오.
