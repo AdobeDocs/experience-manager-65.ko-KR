@@ -7,14 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3533'
+source-wordcount: '3583'
 ht-degree: 3%
 
 ---
 
-# 적응형 양식을 위한 기록 문서 생성{#generate-document-of-record-for-adaptive-forms}
+# 적응형 양식 또는 적응형 양식 단편을 위한 기록 문서 생성 {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 일반적으로 양식을 제출한 후 고객은 향후 참조를 위해 양식에 작성한 정보를 인쇄 또는 문서 형식으로 기록하기를 원합니다. 이를 기록 문서라고 합니다.
 
-이 문서에서는 적응형 양식에 대한 기록 문서를 생성하는 방법에 대해 설명합니다.
+이 문서에서는 적응형 Forms 또는 적응형 양식 조각에 대한 기록 문서를 생성하는 방법에 대해 설명합니다.
 
 >[!NOTE]
 >
@@ -68,6 +68,8 @@ ht-degree: 3%
 적응형 양식에 대한 기록 문서를 생성하려면 다음 구성 요소가 필요합니다.
 
 **적응형 양식** 기록 문서를 생성할 적응형 양식입니다.
+
+**적응형 양식 단편** 기록 문서를 생성할 적응형 양식 단편.
 
 **기본 템플릿(권장)** AEM Designer에서 만든 XFA 템플릿(XDP 파일). 기본 템플릿은 기록 문서 템플릿의 스타일 및 브랜딩 정보를 지정하는 데 사용됩니다.
 
@@ -396,6 +398,10 @@ ht-degree: 3%
    * **[!UICONTROL 오버플로]** > **[!UICONTROL 콘텐츠 영역으로 이동]** > 콘텐츠 영역 이름: 지정된 콘텐츠 영역을 채우기 시작합니다.
    * **[!UICONTROL 오버플로]** > **[!UICONTROL 페이지로 이동]** > 페이지 이름: 지정된 페이지 채우기를 시작합니다.
 
+  >[!NOTE]
+  >
+  > 페이지 매김 속성은 적응형 양식 조각에 사용할 수 없습니다.
+
 기록 문서에서 페이지 나누기를 적용하고 여러 마스터 페이지를 적용하는 방법에 대한 자세한 내용은 [기록 문서에서 페이지 나누기 적용](#apply-page-breaks-in-dor) 및 [기록 문서에 여러 마스터 페이지 적용](#apply-multiple-master-pages-dor).
 
 **양식 수준 설정**
@@ -437,6 +443,9 @@ AEM Forms은 두 번째 마스터 페이지를 패널과 적응형 양식의 모
 1. 선택 ![저장](/help/forms/using/assets/save_icon.png) 속성을 저장합니다.
 AEM Forms은 세 번째 마스터 페이지를 패널과 적응형 양식의 모든 후속 패널에 적용합니다.
 
+>[!NOTE]
+>
+> 적응형 양식 단편을 위해 기록 문서에 여러 마스터 페이지를 적용할 수 없습니다.
 
 ## 기록 문서 작업 시 주요 고려 사항 {#key-considerations-when-working-with-document-of-record}
 

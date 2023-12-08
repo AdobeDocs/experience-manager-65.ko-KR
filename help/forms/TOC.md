@@ -9,9 +9,9 @@ breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성하고 관리하며 게시하고 업데이트합니다.
 role: User
 feature: Forms Service
-source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3752'
+source-wordcount: '3762'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 + [AEM 6.5 Forms 안내서](home.md)
 + 릴리스 노트 {#release-notes-new-features}
    + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
-   + [새로운 기능 요약](using/whats-new.md)
+   + [새로운 기능](/help/forms/using/whats-new.md)
    + [FAQ](/help/forms/using/frequently-asked-questions-faq.md)
    + [더 이상 사용되지 않는 기능](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + 시작하기 {#getting-started}
@@ -699,11 +699,13 @@ ht-degree: 3%
    + [CRX 저장소를 복원할 수 없음](/help/forms/using/restore-crx-repository.md)
    + [AEM 6.5.15.0 서비스 팩을 설치한 후 서비스를 사용할 수 없는 오류 발생](/help/forms/using/aem-service-pack-installation-solution.md)
    + [JBoss Linux 환경의 AEM Forms JEE 6.5.15.0 서비스 팩 설치 문제](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+   + [AEM Forms이 완전히 시작되지 않았더라도 여러 서비스 실행](/help/forms/using/executing-multiple-services-even-aem-forms-has-not-started.md)
+   + [출력 서비스, Forms 서비스 또는 기록 문서(DoR) 서비스를 사용할 수 없음](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + 레거시 설명서 {#legacy-documentation}
    + [JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드](developing/building-xml.md)
    + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](developing/compressing-decompressing-custom-dsc.md)
    + [JEE 서버 클러스터에서 AEM Forms 구성 및 문제 해결](developing/configure-server-cluster.md)
    + [동적 PDF forms에서 해시 생성 및 작업](developing/hashing-forms.md)
    + [WS-Security 헤더를 사용하여 자격 증명 전달](developing/passing-credentials.md)
-   + [출력 서비스, Forms 서비스 또는 기록 문서(DoR) 서비스를 사용할 수 없음](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
+
 

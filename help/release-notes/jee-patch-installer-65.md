@@ -3,10 +3,10 @@ title: AEM Forms JEE 패치 설치 관리자
 description: AEM Forms JEE 패치 설치 관리자를 사용하여 AEM 6.5 Forms 구성 요소의 문제를 해결하는 방법에 대해 알아봅니다.
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 19%
+source-wordcount: '528'
+ht-degree: 18%
 
 ---
 
@@ -53,7 +53,7 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 1. **[Windows 전용]:** 다음을 수행합니다.
    * 다음 중 하나를 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 **구성 관리자** 를 사용하여 **ConfigurationManager.bat** 파일 위치 `[aem-forms root]\configurationManager\bin`.
 
-   * 또는 을 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음으로 이동 *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉터리 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일.
+   * 또는 을 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음으로 이동 *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉토리 및 바꾸기 **ConfigurationManager.lax** 및 **ConfigurationManager_IPV6.lax** 최신 버전 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일, 검색 및 바꾸기 **axis-1.4.1.1.jar** 포함 **axis-1.4.1.2.jar** 이 두 파일에 있습니다.
 
    >[!NOTE]
    >

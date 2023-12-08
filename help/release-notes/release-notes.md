@@ -3,10 +3,10 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3552'
-ht-degree: 5%
+source-wordcount: '4233'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 5%
 | -------- | ---------------------------- |
 | 버전 | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2023년 11월 30일 목요일 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 날짜 | 2023년 12월 7일 목요일 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## 에 포함된 항목 [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
@@ -38,12 +38,30 @@ ht-degree: 5%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
-**주요 기능 및 개선 사항**
+## 주요 기능 및 개선 사항
 
 이 릴리스의 몇 가지 주요 기능 및 개선 사항은 다음과 같습니다.
 
 * 사이트 페이지 편집기/이미지 구성 요소 사용자가 원격 자산 Cloud Service의 자산을 참조할 수 있도록 했습니다. (SITES-13448, SITES-13433)
 * 이제 AEM은 목록 보기에서 더 빠른 프로젝트 탐색을 위해 서버측 정렬을 지원합니다. 프로젝트 노드는 인터페이스에 표시되기 전에 사용자가 선택한 열을 기준으로 정렬됩니다.
+
+### [!DNL Forms]
+
+* **새로운 적응형 양식 핵심 구성 요소**: 양식의 확장성을 높이기 위해 세로 탭, 약관 및 확인란을 추가합니다.
+   * **[확인란 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 확인란 구성 요소를 포함할 수 있습니다. 이를 통해 사용자는 특정 옵션을 선택하거나 선택 취소하는 이진 선택을 할 수 있습니다. 확인란은 일반적으로 클릭하거나 탭하여 두 가지 상태(선택됨 및 선택 취소됨) 사이를 전환할 수 있는 작은 상자 형태입니다. 확인란은 예/아니요 또는 참/거짓 선택을 표시하는 데 사용되는 일반적인 양식 요소입니다.
+
+   * **[약관 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 약관 구성 요소를 포함함 수 있습니다. 이를 통해 양식 작성자는 양식 내에 특정 섹션을 도입하여 여기에서 사용자에게 서비스, 제품 또는 플랫폼 사용과 관련된 약관 또는 법적 계약을 표시할 수 있습니다. 이 구성 요소는 양식을 제출하면 동의하는 것으로 간주되는 규칙, 규정 및 의무에 대해 사용자에게 알리도록 설계되었습니다.
+
+     ![세로 탭, 약관 및 확인란 구성 요소](/help/forms/using/assets/forms-components.png)
+
+   * **[세로 탭 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식은 양식 콘텐츠를 세로 탭 목록으로 구성하여 체계적이고 탐색 가능한 레이아웃을 제공할 수 있습니다. 양식에서 세로 탭을 사용하면 특히 양식에 여러 섹션이나 복잡한 정보가 포함되어 있을 때 탐색을 단순화하고 양식 콘텐츠 구성을 개선하여 전반적인 사용자 경험을 향상시킬 수 있습니다.
+
+* **[64비트 버전의 AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: 64비트 버전의 AEM Forms Designer는 향상된 성능, 확장성, 메모리 관리를 제공하여 양식 생성 환경을 향상시킵니다. 64비트 아키텍처를 사용하면 더 크고 복잡한 프로젝트를 간단하게 처리하여 원활한 워크플로 디자인과 최적화된 효율성을 보장할 수 있습니다. 이 혁신적인 릴리스를 통해 양식 디자인 기능을 개선하고 AEM Forms Designer를 진전시킬 수 있습니다.
+
+* **[Microsoft® SharePoint 목록과 적응형 Forms 연결](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms은 SharePoint의 목록 기능을 사용할 수 있도록 양식 데이터를 SharePoint 목록에 직접 제출할 수 있는 OOTB 통합을 제공합니다. Microsoft SharePoint 목록을 양식 데이터 모델에 대한 데이터 소스로 구성하고 양식 데이터 모델을 사용하여 제출 제출 액션을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
+
+* **[적응형 양식 조각에 대한 기록 문서 속성 구성 지원](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: 이제 적응형 양식 편집기에서 적응형 양식 단편 및 해당 필드를 쉽게 사용자 지정할 수 있습니다.
+
 
 **사용되지 않는 기능**
 
@@ -149,9 +167,11 @@ ht-degree: 5%
 
 ### [!DNL Forms]{#forms-6519}
 
-의 수정 사항 [!DNL Experience Manager] Forms은 예약한 후 1주일 후에 별도의 추가 기능 패키지를 통해 제공됩니다 [!DNL Experience Manager] 서비스 팩 릴리스 날짜. 이 경우 AEM 6.5.19.0 Forms 추가 기능 패키지 릴리스가 2023년 11월 30일 목요일에 예정되어 있습니다. Forms 수정 사항 및 개선 사항 목록은 릴리스를 게시하는 이 섹션에 추가됩니다.
+#### [!DNL Adaptive Forms]
 
-* 액세스 제어 목록 추가 `fd-cloudservice` 아래에서 Microsoft® 구성을 읽거나 업데이트할 수 있는 사용자 `cloudconfigs/microsoftoffice`. (FORMS-11142)
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on package release is scheduled for Thursday, November 30, 2023. A list of Forms fixes and enhancements would be added to this section post the release.-->
+
+<!--* Adding Access Control List for `fd-cloudservice` user to be able to read or update the Microsoft&reg; configurations under `cloudconfigs/microsoftoffice`. (FORMS-11142) -->
 
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
@@ -166,6 +186,32 @@ ht-degree: 5%
 <!--### Commerce{#commerce-6519}
 
 * A -->
+
+* 사용자가 적응형 양식에 도구 모음을 추가하면 양식 컨테이너 레이블은 작성자가 Forms에 대해 선택한 기본 언어로 변경되지 않으므로 잘못된 동작을 표시합니다. (FORMS-11371)
+* AEM Forms Workspace에서 드롭다운 필드는 UI에서 기본적으로 첫 번째 옵션을 선택합니다. (FORMS-11346)
+* 5자의 로케일을 사용하고 소수 구분 기호가 편지에 올바르게 렌더링되지 않는 경우 AEM의 언어 구성이 영향을 미치지 않습니다. (FORMS-11344)
+* 사용자가 Workbench 프로세스를 사용하여 XML 출력을 생성할 때 일부 파일에 대해 실패합니다. (FORMS-11314)
+* 사용자가 영어 이외의 언어로 DOR(Document of Record)에 대한 미리보기를 생성할 때 작동하지 않습니다. (FORMS-11106)
+* 사용자가 JDK11이 있는 Linux를 기반으로 하는 OSGI 인스턴스에서 PDFG가 있는 일부 이미지 파일을 변환할 때 변환되지 않습니다. (FORMS-11105)
+* 사용자가 AEM Forms 추가 기능을 설치하면 AEM Sites의 콘텐츠 트리 패널이 손상됩니다. (FORMS-10912)
+* 사용자가 날짜 선택기 구성 요소에서 NVDA 화면 판독기를 사용하여 날짜를 복사할 때 올바르게 읽히지 않습니다. (FORMS-10805) 
+* Forms 규칙 편집기에서 데이터 값 유형이 부울인 경우 라디오 버튼/확인란의 값을 설정할 수 없습니다. (FORMS-10713)
+* 사용자가 적응형 양식에 추가된 항목을 추가하면 드롭다운 목록에 역순으로 추가됩니다. (FORMS-10456)
+* 규칙 편집기를 사용하여 드롭다운을 지우면 값이 지워졌더라도 처음 제공된 값이 여전히 나타납니다. (FORMS-9963) 
+* 사용자는 NVDA와 같은 화면 판독기를 사용하여 양식 제목에 액세스할 수 없습니다. (FORMS-8815) 
+* 사용자는 NVDA와 같은 화면 판독기를 사용하여 양식의 하위 제목에 액세스할 수 없습니다. (FORMS-8814) 
+* html 양식의 페이지 소스에서 액세스 키 속성이 비어 있으며 작동하지 않습니다. (FORMS-5753) 
+* 작업 영역 정보 대화 상자에서 &quot;Adobe Experience Manager - Forms&quot; 텍스트가 텍스트로 표시됩니다. (FORMS-5748)
+
+#### [!DNL Forms Designer]{#forms-designer-6519}
+
+* 사용자가 화면 판독기를 통해 비대화형 PDF forms을 읽으려고 할 때 일부 목록 항목이 읽히지 않거나 건너뜁니다. (LC-3921645) 
+* 사용자가 편집 가능한 필드를 탭할 때 모든 PDF 양식 필드로 일관되게 이동하지 않습니다. (LC-3921631) 
+* Forms Designer의 태그 지정이 올바르더라도 PDF에서 태그 순서가 임의로 변경됩니다. (LC-3921313) 
+* Adobe Acrobat Reader 또는 Adobe Acrobat DC의 태그에 목록이 올바르게 표시되지 않습니다. (LC-3921306)
+* Forms Designer에서 올바르게 할당된 머리말 수준이 `<P>` Adobe Acrobat의 태그에 가깝게 배치합니다. (LC-3921305) 
+* 표에서 개체의 ID는 일단 할당되면 수정할 수 없습니다. (LC-3921134) 
+* 병합된 셀이 테이블에 있는 경우 AEM Forms Designer의 복잡한 테이블에서 범위(행 및 열) 및 범위를 설정하는 데 사용할 수 있는 GUI가 없습니다. (LC-3919532) 
 
 ### Foundation{#foundation-6519}
 
@@ -418,8 +464,6 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
 #### 지원되는 플랫폼
 
-* 1.8.0_281 이상의 JDK 버전은 WebLogic JEE 서버에서 지원되지 않습니다. (FORMS-8498, CQDOC-20383)
-* 다음으로: [!DNL Microsoft® Windows Server 2019] 은(는) 을 지원하지 않습니다. [!DNL MySQL 5.7] 및 [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] 은(는) 다음에 대한 턴키 설치를 지원하지 않습니다. [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * JDK 11.0.20은 JEE 설치 관리자에서 AEM Forms을 설치할 수 없습니다. JEE 설치 프로그램에 AEM Forms을 설치하려면 JDK 11.0.19 이하 버전만 지원됩니다. (FORMS-10659)
 
 #### 설치
@@ -467,13 +511,10 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
 * 적응형 양식이 게시되면 정책을 포함한 모든 종속 항목은 수정 사항이 없더라도 다시 게시됩니다. (FORMS-10454)
 * 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 적응형 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
-* 리디렉션 URL이 적응형 양식의 안내서 컨테이너에 설정되면 인라인 서명 작동이 중지됩니다. (FORMS-10493) 문제를 해결하려면 다음을 다운로드하여 설치합니다. [6.5.18.0용 핫픽스](/help/release-notes/aem-forms-hotfix.md).
-* 모든 기록 문서(DoR) 템플릿을 게시할 수 없습니다. 영어 로케일 기반 DoR 템플릿과 관련 Forms 기반 DoR 템플릿만 게시됩니다. (FORMS-10535) 문제를 해결하려면 다음을 다운로드하여 설치합니다. [6.5.18.0용 핫픽스](/help/release-notes/aem-forms-hotfix.md).
+* 사용자가 제출 액션을 수행할 때 다음 오류가 발생하여 제출이 실패합니다.
+  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
+문제를 해결하려면 [jsp, Java 및 Sightly와 같은 Sling 스크립트 다시 컴파일](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 
-
-#### 대화형 통신
-
-* AEM 서비스 팩 18로 업그레이드한 후에는 편집 모드에서 큰 인라인 이미지가 있는 대화형 통신을 열 수 없습니다. (FORMS-10578) 문제를 해결하려면 다음을 설치합니다. [6.5.18.0용 핫픽스](/help/release-notes/aem-forms-hotfix.md).
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 

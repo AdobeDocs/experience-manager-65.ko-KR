@@ -4,9 +4,9 @@ description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 만들고,
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '5499'
+source-wordcount: '5599'
 ht-degree: 1%
 
 ---
@@ -556,6 +556,16 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
   </tr>
  </tbody>
 </table>
+
+### (Windows만 해당) Microsoft® 프로젝트에 대한 레지스트리 항목 구성 {#configure-registry-entry-for-microsoft-project}
+
+시스템에 AEM Forms 추가 기능 및 Microsoft® 프로젝트를 설치한 후 64비트 위치에서 Microsoft® 프로젝트에 대한 항목을 등록합니다. 이를 통해 프로젝트-PDFG 전환 테스트 실행을 용이하게 합니다. 다음은 레지스트리 항목 프로세스에 대한 개요입니다.
+
+1. Microsoft® Windows 레지스트리 편집기(regedit)를 열고 레지스트리 편집기를 열려면 시작 > 실행으로 이동하고 regedit를 입력한 다음 확인 을 클릭합니다.
+1. 다음으로 이동 `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`및 새로 만들기 **이진 값** 레지스트리 및 이름 바꾸기 **프로젝트**.
+1. 작성된 이진 레지스트리의 데이터 값을 01로 수정하고 [확인]을 클릭합니다.
+1. 레지스트리 항목을 닫습니다.
+
 
 ## 알려진 문제 및 문제 해결 {#known-issues-and-troubleshooting}
 

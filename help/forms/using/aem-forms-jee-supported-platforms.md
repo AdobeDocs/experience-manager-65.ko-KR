@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 1630805be43ce9bb52a8fe1bbe50b2b934d4922c
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3984'
 ht-degree: 0%
 
 ---
@@ -242,12 +242,12 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
    <td><p><strong>지원되는 패치 정의</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 12.2.1(12c R2)(더 이상 사용되지 않음)</td>
+   <td>Oracle WebLogic Server 12.2.1(12c R2)(더 이상 사용되지 않음) <sup>[9]</sup></td>
    <td>A: 지원됨</td>
    <td>서비스 팩 및 주요 업데이트</td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 14c </td>
+   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
    <td>A: 지원됨</td>
    <td>서비스 팩 및 주요 업데이트</td>
   </tr>
@@ -355,6 +355,9 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택할 때 다음 예외
 1. JEE의 AEM Forms은 CentOS에서 WebSphere® 애플리케이션 서버를 지원하지 않습니다.
 1. JEE의 AEM Forms은 JBoss® RBAC(역할 기반 액세스 제어)를 지원하지 않습니다.
 1. AEM Forms on JEE는 애플리케이션 서버 JBoss™ EAP 7.4에만 해당하는 Oracle Java® SE 11(64비트) SDK를 지원합니다.
+1. 1.8.0_281 이상의 JDK 버전은 WebLogic 서버에 대해 지원되지 않습니다. (FORMS-8498)
+1. [!DNL Microsoft® Windows Server 2019] 은(는) 을 지원하지 않습니다. [!DNL MySQL 5.7] 및 [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] 은(는) 다음에 대한 턴키 설치를 지원하지 않습니다. [!DNL Experience Manager Forms 6.5.10.0 and later]. (CQDOC-18312)
+
 
 또한 JEE 배포에서 AEM Forms Adobe 소프트웨어를 선택할 때 다음 사항을 고려하십시오.
 
@@ -686,7 +689,7 @@ Acrobat DC 제품군에서는 &quot;클래식&quot;과 &quot;연속&quot;이라�
 
 AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 
-| **Platform** | **지원되는 장치** |
+| **플랫폼** | **지원되는 장치** |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Apple iOS | Apple iPhone, iPad, iPad Air 및 iPad mini(iOS 15.1 이상 실행) |
 | Google Android™ | Android™ 5.1 이상. AEM Forms 앱은 7인치 및 10인치 삼성 갤럭시 태블릿과 인기 있는 스마트폰에서 인증을 받았습니다. |

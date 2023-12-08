@@ -1,6 +1,7 @@
 ---
 title: Designer 설치 및 구성
 description: 디자이너는 독립 실행형 설치 관리자로 사용할 수 있으며 Workbench와 함께 번들로 제공됩니다. 독립형 Designer를 설치하는 방법에 대해 알아봅니다.
+uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
@@ -8,9 +9,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -19,22 +20,41 @@ ht-degree: 0%
 
 ## 전제 조건 {#pre-requisites}
 
-* 32비트 버전 설치  [Visual C++ 2019 재배포 가능 패키지(x86)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). 설치를 시작하기 전에 앞에서 언급한 재배포 가능 런타임 패키지가 설치되어 있는지 확인하십시오.
++++ 64비트 AEM Forms Designer용(권장)
+
+* 64비트 버전 설치  [Visual C++ 2019 재배포 가능 패키지(x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). 설치를 시작하기 전에 앞에서 언급한 재배포 가능 런타임 패키지가 설치되어 있는지 확인하십시오.
 * AEM Forms Designer를 설치 또는 제거할 수 있는 관리자 권한이 있는 사용자입니다.
+
++++
+
++++ 32비트 AEM Forms 디자이너용
+
+* 32비트 버전 설치  [Visual C++ 2019 재배포 가능 패키지(x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). 설치를 시작하기 전에 앞에서 언급한 재배포 가능 런타임 패키지가 설치되어 있는지 확인하십시오.
+* AEM Forms Designer를 설치 또는 제거할 수 있는 관리자 권한이 있는 사용자입니다.
+
++++
+
 
 ## AEM Forms Designer 설치 {#install-designer}
 
 디자이너는 독립 실행형 설치 프로그램으로 사용할 수 있으며 WorkBench와 번들로 제공됩니다. AEM Forms Designer용 독립형 설치 프로그램을 사용하는 경우 다음 단계를 수행하십시오.
 
 1. 이전 버전의 AEM Forms Designer가 이미 설치되어 있는 경우 제거합니다.
-1. 에서 Designer 다운로드 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/).
+1. 요구 사항에 따라 64비트 AEM Forms Designer(권장) 또는 32비트 AEM Forms Designer를 다운로드합니다.
 
    >[!NOTE]
-   >
-   > * Adobe Experience Manager 6.5 Forms 서비스 팩 15(6.5.15.0) 이상 Forms Designer 버전에는 서비스 팩 버전도 포함되어 있습니다. 예를 들어 서비스 팩 15의 경우 버전 번호는 6.5.15.20221112.1.0입니다. 이 예에서 6.5.15는 서비스 팩 버전입니다.
+   > 
+   >* 32비트 Forms Designer는 AEM 6.5 Forms 서비스 팩 20(6.5.20.0) 릴리스에서 더 이상 사용되지 않을 예정입니다. Adobe은 64비트 Forms 디자이너로 업그레이드하는 것을 권장합니다.
+   >* 64비트 Forms Designer는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0) 이상 릴리스에만 사용할 수 있습니다.
+   >* Adobe Experience Manager 6.5 Forms 서비스 팩 15(6.5.15.0) 이상 Forms Designer 버전에는 서비스 팩 버전도 포함되어 있습니다. 예를 들어 서비스 팩 15의 경우 버전 번호는 6.5.15.20221112.1.0입니다. 이 예에서 6.5.15는 서비스 팩 버전입니다.
 
 1. setup.exe를 두 번 클릭하여 AEM Forms Designer 설치 관리자를 실행합니다.
 1. 계속 진행하여 개인화 화면에 세부 정보와 일련 번호를 입력합니다.
+
+   >[!NOTE]
+   >
+   >* 에서 Forms Designer 라이선스 키 받기 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/).
+
 1. 사용권 계약에 동의하면 다음 을 클릭하여 계속 진행하십시오.
 1. (선택 사항) 원하는 위치에 Designer를 설치하려면 기본 설치 경로를 변경합니다. 다음 을 클릭합니다.
 1. 환경 설정을 변경하려면 [뒤로]를 클릭하십시오. Designer를 설치하려면 설치를 클릭합니다.
