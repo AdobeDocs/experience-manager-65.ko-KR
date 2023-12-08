@@ -2,10 +2,10 @@
 title: AEM Forms용 AEM Forms 패치 설치 지침
 description: OSGi 및 JEE 환경에 대한 AEM Forms 서비스 팩 설치 지침
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 74b4346c77a884878fb8409a773ef7651fb6348c
+source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
 workflow-type: tm+mt
-source-wordcount: '1771'
-ht-degree: 17%
+source-wordcount: '1711'
+ht-degree: 9%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 17%
 
 | 제품 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 버전 | 6.5.18.0 |
+| 버전 | 6.5.19.0 |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2023년 8월 31일 |
+| 날짜 | 2023년 12월 7일 |
 | 다운로드 URL | [최신 AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -26,25 +26,32 @@ ht-degree: 17%
 
 ## Experience Manager Forms 6.5에 포함된 제품
 
-Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주요 개선 사항, 성능, 안정성 및 보안 향상과 같은 새로운 기능 및 업그레이드된 기능이 포함되어 있습니다. AEM Forms은 최신 기능과 개선 사항을 제공하기 위해 서비스 팩을 정기적으로 릴리스합니다. 스택에 따라 다음 경로 중 하나를 선택하여 환경에 서비스 팩을 다운로드하고 설치합니다.
+Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주요 개선 사항, 성능, 안정성 및 보안 향상과 같은 새로운 기능 및 업그레이드된 기능이 포함되어 있습니다. AEM Forms은 최신 기능과 개선 사항을 제공하기 위해 서비스 팩을 정기적으로 릴리스합니다. 기술 스택에 따라 다음 경로 중 하나를 선택하여 환경에 서비스 팩을 다운로드하고 설치합니다.
 
 * [JEE 환경의 AEM Form에 서비스 팩 다운로드 및 설치](#download-and-install-for-jee-service-pack)
 * [OSGi 환경의 AEM Form에 서비스 팩 다운로드 및 설치](#download-and-install-for-osgi-service-pack)
 
 >[!NOTE]
 >
-> * Adobe은 여섯 번째 서비스 팩마다 전체 설치 관리자를 릴리스합니다. AEM 6.5 Forms 서비스 팩 18(6.5.18.0)은 최신 JEE 전체 설치 프로그램입니다. 전체 설치 관리자는 새로운 플랫폼을 지원하며 일반 서비스 팩 설치 관리자에는 새로운 기능, 버그 수정 및 일반 개선 사항이 포함되어 있습니다. 새로 설치하거나 JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 사용할 계획이라면, 2019년 4월 08일에 릴리스된 AEM 6.5 Forms 설치 프로그램이나 2022년 3월 03일에 릴리스된 AEM Forms 6.5.12 AEM 설치 프로그램 대신 2023년 8월 31일에 릴리스된 JEE의 Adobe 6.5.18.0 Forms 전체 설치 프로그램을 사용하는 것이 좋습니다. 전체 설치 관리자를 사용한 후 최신 서비스 팩을 설치합니다.
-> 
+> * Adobe은 여섯 번째 서비스 팩마다 전체 설치 관리자를 릴리스합니다. AEM 6.5 Forms 서비스 팩 18(6.5.18.0)은 최신 JEE 전체 설치 프로그램입니다. 전체 설치 관리자는 새로운 플랫폼을 지원하며 일반 서비스 팩 설치 관리자에는 새로운 기능, 버그 수정 및 일반 개선 사항이 포함되어 있습니다. 새로 설치하거나 JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 사용할 계획이라면, 2019년 4월 08일에 릴리스된 AEM 6.5 Forms 설치 프로그램이나 2022년 3월 03일에 릴리스된 AEM Forms 6.5.12.0 AEM 설치 프로그램 대신 2023년 8월 31일에 릴리스된 JEE의 Adobe 6.5.18.0 Forms 전체 설치 프로그램을 사용하는 것이 좋습니다. 전체 설치 관리자를 사용한 후 최신 서비스 팩을 설치합니다.
 > * 적응형 Forms과 같은 AEM Forms 기능은에서 사용할 수 있습니다. [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)는 탐색 및 평가 목적으로만 사용됩니다. 프로덕션 용도로 사용하려면 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
+<!--
 
+## Prerequisites {#prerequisites}
 
+From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available in 64-bit only, therefore you require the latest [Microsoft Visual C++ Redistributable (2015-2022) 64-bit](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) to be installed on Windows Server prior to JEE or OSGi installation.
+
+>[!NOTE]
+> This prerequisite is required in addition to the already existing Microsoft Visual C++ Redistributable 32-bit.
+
+-->
 
 ## JEE 환경의 AEM Form에 서비스 팩 다운로드 및 설치 {#download-and-install-for-jee-service-pack}
 
 ![JEE 설치](/help/forms/using/assets/jeeinstallation.png)
 
-+++1. 기존 환경의 백업 수행:
++++1 기존 환경의 백업 수행
 
 1. 백업 [CRX 저장소, 데이터베이스 스키마 및 GDS(Global Document Storage)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 1. &lt;*AEM_forms_root*>/폴더 배포
@@ -55,12 +62,22 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 +++
 
-+++2.필요한 소프트웨어 다운로드:
++++2. 필요한 소프트웨어 다운로드
 
 * [AEM Forms on JEE 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
 * [Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [조각 서블릿](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+
++++
+
++++ 3. Microsoft Visual C++ 재배포 가능 패키지 설치
+
+* 다운로드 및 설치 [Visual Studio 2015, 2017, 2019 및 2022용 Microsoft Visual C++ 재배포 가능 패키지 64비트 버전](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) AEM 6.5 Forms이 설치된 컴퓨터에서.
+
+>[!NOTE]
+>
+> 이전 버전이 설치된 경우에도 재배포 가능 패키지를 설치하여 최신 버전의 가용성을 보장해야 합니다.
 
 +++
 
@@ -91,7 +108,7 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
    * 다음 중 하나를 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 **구성 관리자** 를 사용하여 **ConfigurationManager.bat** 파일 위치 `[aem-forms root]\configurationManager\bin`.
 
-   * 또는 을 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음으로 이동 *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉터리 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일.
+   * 또는 을 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음으로 이동 *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉토리 및 바꾸기 **ConfigurationManager.lax** 및 **ConfigurationManager_IPV6.lax** 최신 버전 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일.
 
      >[!NOTE]
      >
@@ -137,7 +154,7 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 +++
 
-+++5. AEM 서비스 팩 을 설치합니다.
++++5. AEM 서비스 팩 설치
 
 1. 인스턴스가 업데이트 모드에 있는 경우(인스턴스가 이전 버전에서 업데이트된 경우) 설치 전에 인스턴스를 다시 시작하십시오. Adobe은 인스턴스의 현재 가동 시간이 높을 경우 다시 시작할 것을 권장합니다.
 1. 설치하기 전에 스냅샷 또는 새 백업을 [!DNL Experience Manager] 인스턴스.
@@ -149,10 +166,10 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 를 사용하여 자동으로 설치할 수 있는 두 가지 방법이 있습니다 [!DNL ExperienceManager] 서비스 팩입니다.<!--       UPDATE FOR EACH NEW RELEASE -->
 
-* 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다.
+* 패키지 배치 위치 `../crx-quickstart/install` 폴더를 사용하십시오.
 패키지가 자동으로 설치됩니다.
 
-* [패키지 관리자에서 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 사용합니다. 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
+* 사용 [패키지 관리자의 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). 사용  `cmd=install&recursive=true` 중첩된 패키지가 설치되도록 합니다.
 
   >[!NOTE]
   >
@@ -162,9 +179,9 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
   이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 다음을 참조하십시오. [기술 요구 사항](/help/sites-deploying/technical-requirements.md).
 
-   1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (spversion)`설치된 제품[!UICONTROL  아래에 업데이트된 버전 문자열 ]이 표시됩니다.<!-- UPDATE FOR EACH NEW RELEASE -->
+   1. 제품 정보 페이지(`/system/console/productinfo`) 업데이트된 버전 문자열을 표시합니다 `Adobe Experience Manager (spversion)` 아래에 [!UICONTROL 설치된 제품].<!-- UPDATE FOR EACH NEW RELEASE -->
    1. 모든 OSGi 번들은 **[!UICONTROL 활성]** 또는 **[!UICONTROL 조각]** OSGi 콘솔에서(웹 콘솔 사용): `/system/console/bundles`).
-   1. OSGi 번들 `org.apache.jackrabbit.oak-core` 는 버전 1.22.14 이상입니다(WebConsole 사용: `/system/console/     bundles`).
+   1. OSGi 번들 `org.apache.jackrabbit.oak-core` 는 버전 1.22.14 이상입니다(WebConsole 사용: `/system/console/bundles`).
 
 +++
 
@@ -182,7 +199,7 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 ![OSGi 설치 단계](/help/forms/using/assets/osgiinstallation.png)
 
 
-+++1. 기존 환경의 백업 수행:
++++1 기존 환경의 백업 수행
 
 1. 백업 [CRX 저장소 및 데이터베이스 스키마](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 
@@ -192,14 +209,25 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 +++
 
-+++2.필요한 소프트웨어 다운로드:
++++2. 필요한 소프트웨어 다운로드
 
 * [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
 * [Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 +++
 
-+++3. AEM 서비스 팩 을 설치합니다.
++++ 3. Microsoft Visual C++ 재배포 가능 패키지 설치
+
+* 다운로드 및 설치 [Visual Studio 2015, 2017, 2019 및 2022용 Microsoft Visual C++ 재배포 가능 패키지 64비트 버전](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) AEM 6.5 Forms이 설치된 컴퓨터에서.
+
+>[!NOTE]
+>
+>
+이전 버전이 설치된 경우에도 재배포 가능 패키지를 설치하여 최신 버전의 가용성을 보장해야 합니다.
+
++++
+
++++4. AEM 서비스 팩 설치
 
 1. 인스턴스가 업데이트 모드에 있는 경우(인스턴스가 이전 버전에서 업데이트된 경우) 설치 전에 인스턴스를 다시 시작하십시오. Adobe은 인스턴스의 현재 가동 시간이 높을 경우 다시 시작할 것을 권장합니다.
 1. 설치하기 전에 스냅샷 또는 새 백업을 [!DNL Experience Manager] 인스턴스.
@@ -211,8 +239,8 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 를 사용하여 자동으로 설치할 수 있는 두 가지 방법이 있습니다 [!DNL Experience Manager] 서비스 팩입니다.<!--  UPDATE FOR EACH NEW RELEASE -->
 
-* 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다. 패키지가 자동으로 설치됩니다.
-* [패키지 관리자에서 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 사용합니다. 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
+* 패키지 배치 위치 `../crx-quickstart/install` 폴더를 사용하십시오. 패키지가 자동으로 설치됩니다.
+* 사용 [패키지 관리자의 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
 
   >[!NOTE]
   >
@@ -230,7 +258,7 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 +++
 
-+++4. AEM Experience Manager Forms 추가 기능 패키지 설치
++++4. Adobe Experience Manager Forms(AEM) 추가 기능 패키지 설치
 
 1. 다음을 설치했는지 확인합니다. [!DNL Experience Manager] 서비스 팩입니다.
 1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.

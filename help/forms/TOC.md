@@ -6,13 +6,13 @@ solution: Experience Manager, Experience Manager Forms
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
-user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
+user-guide-description: 디지털 양식을 작성하고 관리하며 게시하고 업데이트합니다.
 role: User
 feature: Forms Service
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
 workflow-type: tm+mt
-source-wordcount: '3911'
-ht-degree: 4%
+source-wordcount: '3752'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 4%
    + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
    + [새로운 기능 요약](using/whats-new.md)
    + [FAQ](/help/forms/using/frequently-asked-questions-faq.md)
-   + [이제 사용되지 않는 기능](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
+   + [더 이상 사용되지 않는 기능](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + 시작하기 {#getting-started}
    + [AEM Forms 소개](using/introduction-aem-forms.md)
    + [적응형 양식 작성 소개](using/introduction-forms-authoring.md)
@@ -73,7 +73,7 @@ ht-degree: 4%
       + [WebSphere용 JEE에 Adobe Experience Manager 양식 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
       + [WebLogic용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
       + [AEM Forms Workbench 설치](using/install-workbench.md)
-      + [ Designer 설치 및 구성](using/installing-configuring-designer.md)
+      + [Designer 설치 및 구성](using/installing-configuring-designer.md)
       + [AEM Forms(서버 클러스터) 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
       + [JBoss 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
       + [WebSphere 클러스터에서 JEE의 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
@@ -705,4 +705,5 @@ ht-degree: 4%
    + [JEE 서버 클러스터에서 AEM Forms 구성 및 문제 해결](developing/configure-server-cluster.md)
    + [동적 PDF forms에서 해시 생성 및 작업](developing/hashing-forms.md)
    + [WS-Security 헤더를 사용하여 자격 증명 전달](developing/passing-credentials.md)
+   + [출력 서비스, Forms 서비스 또는 기록 문서(DoR) 서비스를 사용할 수 없음](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 
