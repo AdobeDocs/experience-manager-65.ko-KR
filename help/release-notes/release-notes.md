@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 1c3df6ea88f1dfbab5d9df2dcd4907e72829287a
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4232'
 ht-degree: 10%
 
 ---
@@ -61,6 +61,8 @@ ht-degree: 10%
 * **[Microsoft® SharePoint 목록과 적응형 Forms 연결](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms은 SharePoint의 목록 기능을 사용할 수 있도록 양식 데이터를 SharePoint 목록에 직접 제출할 수 있는 OOTB 통합을 제공합니다. Microsoft SharePoint 목록을 양식 데이터 모델에 대한 데이터 소스로 구성하고 양식 데이터 모델을 사용하여 제출 제출 액션을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
 
 * **[적응형 양식 조각에 대한 기록 문서 속성 구성 지원](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: 이제 적응형 양식 편집기에서 적응형 양식 단편 및 해당 필드를 쉽게 사용자 지정할 수 있습니다.
+
+* **64비트 XMLFM**: XMLFM의 64비트 반복은 강화된 성능, 확장성 및 정교한 메모리 관리를 제공합니다. 서버측에 배포된 최초의 64비트 네이티브 서비스입니다. XMLFM 64비트는 32비트보다 훨씬 더 큰 메모리 리소스에 액세스할 수 있는 고유한 기능을 활용함으로써 더 큰 렌더링 워크로드를 원활하게 처리할 수 있도록 지원합니다. 이 이정표는 성능 향상을 나타낼 뿐만 아니라 AEM Forms 서버 내의 기본 서비스 프레임워크에 대한 주요 개선 사항을 소개합니다. 이 업데이트는 AEM Forms 서버가 모든 64비트 기본 서비스를 원활하게 지원할 수 있도록 합니다.
 
 
 **사용되지 않는 기능**
@@ -469,23 +471,27 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 #### 설치
 
 * JBoss® 7.1.4 플랫폼에서 사용자가 Experience Manager 6.5.16.0 이상의 서비스 팩을 설치하면 `adobe-livecycle-jboss.ear` 배포가 실패합니다. (CQ-4351522, CQDOC-20159)
-* Windows Server 2022에서 AEM Forms 6.5.18.0 JBoss® Turnkey 전체 설치 관리자 환경으로 업그레이드한 후 Java™ 11을 사용하여 출력 클라이언트 응용 프로그램 코드를 컴파일할 때 다음 컴파일 오류가 발생할 수 있습니다.
 
+<!-- 
+* After upgrading to AEM Forms 6.5.18.0 JBoss&reg; Turnkey full installer environment on Windows Server 2022, when compiling Output client application code using Java&trade; 11, the following compilation error may occur:
+  
   ```
   error: error reading [AEM_Forms_Installation_dir]\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
   Illegal character in path at index 70: file:/[AEM_Forms_Installation_dir]/sdk/client-libs/common/${clover.jar.name} 1 error
+  
   ```
+  
+  To resolve the issue, perform the following steps:
+    1. Navigate to `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` and unzip `adobe-output-client.jar` to extract the `Manifest.mf` file.
+    1. Update the `Manifest.mf` file by removing the entry `${clover.jar.name}` from the class-path attribute. 
 
-  이 문제를 해결하려면 다음 단계를 수행하십시오.
-   1. 다음으로 이동 `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` 및 압축 풀기 `adobe-output-client.jar` 을(를) 추출하려면 `Manifest.mf` 파일.
-   1. 업데이트 `Manifest.mf` 항목을 제거하여 파일 `${clover.jar.name}` class-path 속성에서 가져옵니다.
+        >[!NOTE]
+        >
+        > You can also use an in-place editing tool, for example, 7-zip, to update the `Manifest.mf` file.  
 
-      >[!NOTE]
-      >
-      > 즉석 편집 도구(예: 7-zip)를 사용하여 `Manifest.mf` 파일.
+    1. Save the updated the `Manifest.mf` in the `adobe-output-client.jar` archive. 
+    1. Save the modified `adobe-output-client.jar` file and rerun the setup. (CQDOC-20878) -->
 
-   1. 업데이트된 을 저장합니다. `Manifest.mf` 다음에서 `adobe-output-client.jar` 보관.
-   1. 수정된 내용 저장 `adobe-output-client.jar` 파일을 만들고 설치 프로그램을 다시 실행하십시오. (CQDOC-20878)
 * AEM 서비스 팩 6.5.19.0 전체 설치 관리자를 설치한 후 JBoss® 턴키를 사용하여 JEE에서 EAR 배포가 실패합니다.
 문제를 해결하려면 `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` 파일 및 업데이트 `Adobe_Adobe_JAVA_HOME` 끝 `Adobe_JAVA_HOME` 구성 관리자를 실행하기 전에 발생하는 모든 발생 횟수. (CQDOC-20803)
 
