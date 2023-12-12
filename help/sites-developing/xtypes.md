@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 25c444e2093d118259925034e0d630ab0effc473
 workflow-type: tm+mt
-source-wordcount: '6381'
+source-wordcount: '3865'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   BulkEditorForm은 [CQ.wcm.Bulk편집기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) HTML 양식으로 둘러싸여 있습니다. 독립 실행형 버전의 입니다. [CQ.wcm.Bulk편집기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor), 가져오기 단추에 HTML 양식이 필요합니다.
 
-* 추가할 수도 있습니다
+* 단추
 
   [CQ.Ext.Button](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)
 
@@ -123,7 +123,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.chart.Chart](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart)
 
-  CQ.Ext.chart 패키지는 Flash 기반 차트를 사용하여 데이터를 시각화하는 기능을 제공합니다. 각 차트는 차트의 자동 업데이트를 활성화하는 CQ.Ext.data.Store에 직접 바인딩됩니다. 차트의 모양과 느낌을 변경하려면 [차트 스타일](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) 및 [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) 구성 옵션을 참조하십시오.
+  CQ.Ext.chart 패키지는 플래시 기반 차트로 데이터를 시각화하는 기능을 제공합니다. 각 차트는 차트의 자동 업데이트를 활성화하는 CQ.Ext.data.Store에 직접 바인딩됩니다. 차트의 모양과 느낌을 변경하려면 [차트 스타일](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) 및 [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) 구성 옵션을 참조하십시오.
 
 * 확인란
 
@@ -251,7 +251,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.CustomContentPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.CustomContentPanel)
 
-  CustomContentPanel은에서 사용할 수 있는 특별한 종류의 패널입니다 [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): 콘텐츠를 읽어들여 대화 상자의 다른 필드와 다른 URL에 제출합니다.
+  CustomContentPanel은에서 사용할 수 있는 특수 패널입니다. [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): 콘텐츠를 읽어들여 대화 상자의 다른 필드와 다른 URL에 제출합니다.
 
 * 주기
 
@@ -289,11 +289,11 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   DateTime을 사용하면 날짜 및 시간을 조합하여 입력할 수 있습니다 [CQ.Ext.form.DateField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField) 및 [CQ.Ext.form.TimeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TimeField).
 
-* 사용할 수 없게 됩니다
+* 대화 상자
 
   [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)
 
-  대화 상자는 본문에 양식이 있고 바닥글에 단추 그룹이 있는 특수한 종류의 창입니다. 일반적으로 콘텐츠를 편집하는 데 사용되지만, 정보만 표시할 수도 있습니다.
+  대화 상자는 본문에 양식이 있고 바닥글에 단추 그룹이 있는 특수 창입니다. 일반적으로 콘텐츠를 편집하는 데 사용되지만, 정보만 표시할 수도 있습니다.
 
 * 대화 상자 세트
 
@@ -463,7 +463,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.list.ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView)
 
-  CQ.Ext.list.ListView는 [격자](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) 보기 좋아요.
+  CQ.Ext.list.ListView는 [격자 모양](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) 보기.
 
 * livecopyproperties
 
@@ -793,7 +793,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.wcm.Statistics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Statistics)
 
-  통계는 페이지 노출 횟수를 차트로 표시합니다. 위젯을 사용하여 기간을 선택할 수 있으며 통계가 표시되어야 합니다.
+  통계는 페이지 노출 횟수를 차트로 표시합니다. 위젯을 사용하여 통계를 표시해야 하는 기간을 선택할 수 있습니다.
 
 * 스토어
 
