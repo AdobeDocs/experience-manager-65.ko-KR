@@ -1,9 +1,10 @@
 ---
 title: AEM Forms에도 불구하고 여러 서비스 실행이 시작되지 않았습니다.
 description: AEM Forms이 완전히 시작되지 않았더라도 여러 서비스를 처리합니다.
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+exl-id: 4ec40412-15b1-434b-a919-2cf23f48077c
+source-git-commit: faa628ac4a4631564141f68f3efc9d69a67e5c40
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '96'
 ht-degree: 4%
 
 ---
@@ -21,9 +22,4 @@ ht-degree: 4%
 
 ## 솔루션 {#solution}
 
-이 문제를 해결하기 위해 사용자가 인수를 추가합니다 `Dcom.adobe.livecycle.dsc.deferServiceStart=true` 끝 [배치 파일](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) 서버를 시작하는 동안.
-
-
-
-
-
+문제를 해결하려면 인수를 추가합니다. `Dcom.adobe.livecycle.dsc.deferServiceStart=true` 끝 [배치 파일](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) 서버를 시작하는 동안.
