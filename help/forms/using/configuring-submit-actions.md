@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 302a76fb9470e2ef177f60aea10312d6091becb9
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2581'
 ht-degree: 49%
 
 ---
@@ -203,7 +203,7 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
 적응형 양식에서 생성된 SharePoint 목록 구성을 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 적응형 양식에서 SharePoint 목록 스토리지 구성을 다음으로 사용하려면 다음 단계를 수행하십시오.
 
-1. [Microsoft® SharePoint 목록 구성을 사용하여 양식 데이터 모델 만들기](/help/forms/using/create-form-data-model.md)
+1. [Microsoft을 사용하여 양식 데이터 모델 만들기](/help/forms/using/create-form-data-model.md)
 1. [데이터를 검색하고 전송하도록 양식 데이터 모델 구성](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [적응형 양식 만들기](/help/forms/using/create-adaptive-form.md).
 1. [양식 데이터 모델을 사용하여 제출 작업 구성](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)

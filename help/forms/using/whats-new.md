@@ -5,10 +5,10 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 46%
+source-wordcount: '637'
+ht-degree: 39%
 
 ---
 
@@ -49,6 +49,11 @@ AEM Forms은 OOTB 통합을 제공하여 [양식 데이터를 SharePoint 목록�
 #### 적응형 양식 조각에 대한 기록 문서 속성 구성 지원
 
 이제 쉽게 [적응형 양식 편집기에서 적응형 양식 단편 및 해당 필드 사용자 지정](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+
+#### 64비트 버전의 XMLFM 포함
+
+XMLFM의 64비트 반복은 향상된 성능, 확장성 및 정교한 메모리 관리를 제공합니다. 서버측에 배포된 최초의 64비트 네이티브 서비스입니다. XMLFM 64비트는 32비트보다 훨씬 더 큰 메모리 리소스에 액세스할 수 있는 고유한 기능을 활용함으로써 더 큰 렌더링 워크로드를 원활하게 처리할 수 있도록 지원합니다. 이 이정표는 성능 향상을 나타낼 뿐만 아니라 AEM Forms 서버 내의 기본 서비스 프레임워크에 대한 주요 개선 사항을 소개합니다. 이 업데이트는 AEM Forms 서버가 모든 64비트 기본 서비스를 원활하게 지원할 수 있도록 합니다.
+
 
 
 ## 버그 수정
