@@ -3,10 +3,10 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
+source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
 workflow-type: tm+mt
-source-wordcount: '4232'
-ht-degree: 10%
+source-wordcount: '4225'
+ht-degree: 9%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 10%
 * **새로운 적응형 양식 핵심 구성 요소**: 양식의 확장성을 높이기 위해 세로 탭, 약관 및 확인란을 추가합니다.
    * **[확인란 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 확인란 구성 요소를 포함할 수 있습니다. 이를 통해 사용자는 특정 옵션을 선택하거나 선택 취소하는 이진 선택을 할 수 있습니다. 확인란은 일반적으로 클릭하거나 탭하여 두 가지 상태(선택됨 및 선택 취소됨) 사이를 전환할 수 있는 작은 상자 형태입니다. 확인란은 예/아니요 또는 참/거짓 선택을 표시하는 데 사용되는 일반적인 양식 요소입니다.
 
-   * **[약관 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 약관 구성 요소를 포함함 수 있습니다. 이를 통해 양식 작성자는 양식 내에 특정 섹션을 도입하여 여기에서 사용자에게 서비스, 제품 또는 플랫폼 사용과 관련된 약관 또는 법적 계약을 표시할 수 있습니다. 이 구성 요소는 양식을 제출하면 동의하는 것으로 간주되는 규칙, 규정 및 의무에 대해 사용자에게 알리도록 설계되었습니다.
+   * **[약관 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 약관 구성 요소를 포함함 수 있습니다. 이를 통해 Forms 작성자는 서비스, 제품 또는 플랫폼 사용과 관련된 약관, 조건 또는 법적 계약서를 사용자에게 제공하는 양식 내에서 특정 섹션을 소개할 수 있습니다. 이 구성 요소는 양식을 제출하면 동의하는 것으로 간주되는 규칙, 규정 및 의무에 대해 사용자에게 알리도록 설계되었습니다.
 
      ![세로 탭, 약관 및 확인란 구성 요소](/help/forms/using/assets/forms-components.png)
 
@@ -58,11 +58,11 @@ ht-degree: 10%
 
 * **[64비트 버전의 AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: 64비트 버전의 AEM Forms Designer는 향상된 성능, 확장성, 메모리 관리를 제공하여 양식 생성 환경을 향상시킵니다. 64비트 아키텍처를 사용하면 더 크고 복잡한 프로젝트를 간단하게 처리하여 원활한 워크플로 디자인과 최적화된 효율성을 보장할 수 있습니다. 이 혁신적인 릴리스를 통해 양식 디자인 기능을 개선하고 AEM Forms Designer를 진전시킬 수 있습니다.
 
-* **[Microsoft® SharePoint 목록과 적응형 Forms 연결](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms은 SharePoint의 목록 기능을 사용할 수 있도록 양식 데이터를 SharePoint 목록에 직접 제출할 수 있는 OOTB 통합을 제공합니다. Microsoft SharePoint 목록을 양식 데이터 모델에 대한 데이터 소스로 구성하고 양식 데이터 모델을 사용하여 제출 제출 액션을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
+* **[Microsoft® SharePoint 목록과 적응형 Forms 연결](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms은 SharePoint의 목록 기능을 사용할 수 있도록 양식 데이터를 SharePoint 목록에 직접 제출할 수 있는 OOTB 통합을 제공합니다. Microsoft® SharePoint 목록을 양식 데이터 모델에 대한 데이터 소스로 구성하고 양식 데이터 모델을 사용하여 제출 제출 액션을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
 
 * **[적응형 양식 조각에 대한 기록 문서 속성 구성 지원](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: 이제 적응형 양식 편집기에서 적응형 양식 단편 및 해당 필드를 쉽게 사용자 지정할 수 있습니다.
 
-* **64비트 XMLFM**: XMLFM의 64비트 반복은 강화된 성능, 확장성 및 정교한 메모리 관리를 제공합니다. 서버측에 배포된 최초의 64비트 네이티브 서비스입니다. XMLFM 64비트는 32비트보다 훨씬 더 큰 메모리 리소스에 액세스할 수 있는 고유한 기능을 활용함으로써 더 큰 렌더링 워크로드를 원활하게 처리할 수 있도록 지원합니다. 이 이정표는 성능 향상을 나타낼 뿐만 아니라 AEM Forms 서버 내의 기본 서비스 프레임워크에 대한 주요 개선 사항을 소개합니다. 이 업데이트는 AEM Forms 서버가 모든 64비트 기본 서비스를 원활하게 지원할 수 있도록 합니다.
+* **64비트 XMLFM**: XMLFM의 64비트 반복은 강화된 성능, 확장성 및 정교한 메모리 관리를 제공합니다. 서버측에 배포된 최초의 64비트 네이티브 서비스입니다. XMLFM 64비트는 32비트보다 더 큰 메모리 리소스에 액세스할 수 있는 고유한 기능을 활용함으로써 더 큰 렌더링 워크로드를 원활하게 처리할 수 있도록 지원합니다. 이 이정표는 성능 향상을 나타낼 뿐만 아니라 AEM Forms 서버 내의 기본 서비스 프레임워크에 대한 주요 개선 사항을 소개합니다. 이 업데이트는 AEM Forms 서버가 모든 64비트 기본 서비스를 원활하게 지원할 수 있도록 합니다.
 
 **사용되지 않는 기능**
 
@@ -190,17 +190,17 @@ ht-degree: 10%
 
 * 사용자가 적응형 양식에 도구 모음을 추가하면 양식 컨테이너 레이블은 작성자가 Forms에 대해 선택한 기본 언어로 변경되지 않으므로 잘못된 동작을 표시합니다. (FORMS-11371)
 * AEM Forms Workspace에서 드롭다운 필드는 UI에서 기본적으로 첫 번째 옵션을 선택합니다. (FORMS-11346)
-* 5자의 로케일을 사용하고 소수 구분 기호가 편지에 올바르게 렌더링되지 않는 경우 AEM의 언어 구성이 영향을 미치지 않습니다. (FORMS-11344)
+* 5자의 로케일을 사용하고 소수 구분 기호가 편지에 올바르게 렌더링되지 않는 경우 AEM의 언어 구성은 영향을 받지 않습니다. (FORMS-11344)
 * 사용자가 Workbench 프로세스를 사용하여 XML 출력을 생성할 때 일부 파일에 대해 실패합니다. (FORMS-11314)
 * 사용자가 영어 이외의 언어로 DOR(Document of Record)에 대한 미리보기를 생성할 때 작동하지 않습니다. (FORMS-11106)
-* 사용자가 JDK11이 있는 Linux를 기반으로 하는 OSGI 인스턴스에서 PDFG가 있는 일부 이미지 파일을 변환할 때 변환되지 않습니다. (FORMS-11105)
+* 사용자가 JDK11을 사용하는 Linux®를 기반으로 하는 OSGI 인스턴스에서 PDFG가 있는 일부 이미지 파일을 변환할 때 변환되지 않습니다. (FORMS-11105)
 * 사용자가 AEM Forms 추가 기능을 설치하면 AEM Sites의 콘텐츠 트리 패널이 손상됩니다. (FORMS-10912)
 * 사용자가 날짜 선택기 구성 요소에서 NVDA 화면 판독기를 사용하여 날짜를 복사할 때 올바르게 읽히지 않습니다. (FORMS-10805) 
 * Forms 규칙 편집기에서 데이터 값 유형이 부울인 경우 라디오 버튼/확인란의 값을 설정할 수 없습니다. (FORMS-10713)
 * 사용자가 적응형 양식에 추가된 항목을 추가하면 드롭다운 목록에 역순으로 추가됩니다. (FORMS-10456)
 * 규칙 편집기를 사용하여 드롭다운을 지우면 값이 지워졌더라도 처음 제공된 값이 여전히 나타납니다. (FORMS-9963) 
 * 사용자는 NVDA와 같은 화면 판독기를 사용하여 양식 제목에 액세스할 수 없습니다. (FORMS-8815) 
-* 사용자는 NVDA와 같은 화면 판독기를 사용하여 양식의 하위 제목에 액세스할 수 없습니다. (FORMS-8814) 
+* 사용자가 액세스할 수 없음 `Sub Title` NVDA와 같은 화면 판독기를 사용하는 양식입니다. (FORMS-8814) 
 * html 양식의 페이지 소스에서 액세스 키 속성이 비어 있으며 작동하지 않습니다. (FORMS-5753) 
 * 작업 영역 정보 대화 상자에서 &quot;Adobe Experience Manager - Forms&quot; 텍스트가 텍스트로 표시됩니다. (FORMS-5748)
 
@@ -518,7 +518,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 * 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 적응형 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
 * 사용자가 제출 액션을 수행할 때 다음 오류가 발생하여 제출이 실패합니다.
   ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-문제를 해결하려면 [jsp, Java 및 Sightly와 같은 Sling 스크립트 다시 컴파일](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+문제를 해결하려면 [jsp, Java™ 및 Sightly와 같은 Sling 스크립트 다시 컴파일](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
