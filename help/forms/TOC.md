@@ -9,9 +9,9 @@ breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성하고 관리하며 게시하고 업데이트합니다.
 role: User
 feature: Forms Service
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
 workflow-type: tm+mt
-source-wordcount: '3762'
+source-wordcount: '3765'
 ht-degree: 3%
 
 ---
@@ -699,7 +699,7 @@ ht-degree: 3%
    + [CRX 저장소를 복원할 수 없음](/help/forms/using/restore-crx-repository.md)
    + [AEM 6.5.15.0 서비스 팩을 설치한 후 서비스를 사용할 수 없는 오류 발생](/help/forms/using/aem-service-pack-installation-solution.md)
    + [JBoss Linux 환경의 AEM Forms JEE 6.5.15.0 서비스 팩 설치 문제](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-   + [AEM Forms이 완전히 시작되지 않았더라도 여러 서비스 실행](/help/forms/using/executing-multiple-services-even-aem-forms-has-not-started.md)
+   + [AEM Forms 서버가 완전히 실행되고 있지 않더라도 문서 처리](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
    + [출력 서비스, Forms 서비스 또는 기록 문서(DoR) 서비스를 사용할 수 없음](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + 레거시 설명서 {#legacy-documentation}
    + [JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드](developing/building-xml.md)

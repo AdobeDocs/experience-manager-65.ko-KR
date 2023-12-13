@@ -3,9 +3,9 @@ title: 기술 요구 사항
 description: Adobe Experience Manager에 대해 지원되는 클라이언트 및 서버 플랫폼 목록입니다.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3624'
 ht-degree: 0%
 
 ---
@@ -73,11 +73,11 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 |---|---|
 | **Z: 지원되지 않음** | 구성이 지원되지 않습니다. Adobe은 구성의 작동 여부에 대해 설명하지 않으며 이를 지원하지 않습니다. |
 
-## 지원 되는 플랫폼 {#supported-platforms}
+## 지원되는 플랫폼 {#supported-platforms}
 
-### Java™ 가상 머신 {#java-virtual-machines}
+### Java™ 가상 시스템 {#java-virtual-machines}
 
-애플리케이션를 실행 하려면 java™ 가상 컴퓨터가 필요 하며,이는 Java™ 개발 키트 (JDK) 배포에서 제공 합니다.
+응용 프로그램을 실행하려면 Java™ Virtual Machine이 필요하며, 이 시스템은 JDK(Java™ Development Kit) 배포에서 제공합니다.
 
 Adobe Experience Manager은 다음 버전의 Java™ 가상 시스템과 함께 작동합니다.
 
@@ -112,12 +112,12 @@ Adobe Experience Manager 저장소를 배포하기 위한 다양한 옵션이 �
 | **플랫폼** | **설명** | **지원 수준** |
 |---|---|---|
 | **TAR 파일이 포함된 파일 시스템** `[1]` | 보관소 | A: 지원됨 |
-| **데이터 스토어가 있는 파일 시스템** `[1]` | 바이너리 | A: 지원됨 |
-| 파일 시스템의 TAR 파일에 바이너리 저장 `[1]` | 바이너리 | Z: 프로덕션에 대해 지원 되지 않음 |
+| **데이터 스토어가 있는 파일 시스템** `[1]` | 바이너리 | A: 지원 됨 |
+| 파일 시스템의 TAR 파일에 바이너리 저장 `[1]` | 바이너리 | Z: 프로덕션에 지원되지 않음 |
 | Amazon | 바이너리 | A: 지원됨 |
 | Microsoft® Azure Blob 저장소 | 바이너리 | A: 지원됨 |
 | MongoDB Enterprise 4.4 | 보관소 | A: 지원됨 `[2, 3, 4]` |
-| MongoDB Enterprise 4.2 | 보관소 | A: 지원 됨 `[2, 3, 4]` |
+| MongoDB Enterprise 4.2 | 보관소 | A: 지원됨 `[2, 3, 4]` |
 | MongoDB Enterprise 4.0 | 보관소 | Z: 지원되지 않음 |
 | MongoDB Enterprise 3.6 | 보관소 | Z: 지원되지 않음 |
 | MongoDB Enterprise 3.4 | 보관소 | Z: 지원되지 않음 |
@@ -158,23 +158,23 @@ Adobe 고객 지원 센터는 AEM에서 MongoDB 사용과 관련된 자격 부�
 >
 위에 나열된 지원되는 관계형 데이터베이스는 타사 소프트웨어이며 AEM 라이센스 패키지에 포함되지 않습니다.
 >
-지원되는 관계형 데이터베이스로 AEM 6.5를 실행하려면 데이터베이스 공급업체와의 별도의 지원 계약이 필요합니다. Adobe 고객 지원 센터는 AEM 6.5에서 관계형 데이터베이스 사용과 관련된 자격 문제를 지원합니다.
+지원 되는 관계형 데이터베이스로 AEM 6.5을 실행 하려면 데이터베이스 공급 업체와 별도의 지원 계약이 필요 합니다. Adobe Systems 고객 지원 팀은 AEM 6.5를 사용 하 여 관계형 데이터베이스 사용과 관련 된 문제를 규정 하는 데 도움이 됩니다.
 >
-**대부분의 관계형 데이터베이스는 현재 AEM 6.5의 Level-R 내에서 지원되며, 위의 Level-R 설명에 나와 있는 대로 지원 기준과 지원 프로그램이 제공됩니다.**
+**대부분의 관계형 데이터베이스는 현재 AEM 6.5의 수준-R 내에서 지원 되며, 여기에는 위의 수준-R 설명에서 설명한 대로 지원 기준과 지원 프로그램이 함께 제공 됩니다.**
 
 ### 서브렛 엔진/애플리케이션 서버 {#servlet-engines-application-servers}
 
-Adobe Experience Manager는 독립 실행형 서버 (퀵 스타트 JAR 파일) 또는 서드파티 애플리케이션 서버 (WAR 파일) 내의 웹 애플리케이션로 실행할 수 있습니다.
+Adobe Experience Manager은 독립형 서버(quickstart JAR 파일)로 실행하거나 타사 애플리케이션 서버(WAR 파일) 내의 웹 애플리케이션으로 실행할 수 있습니다.
 
 필요한 최소 서블릿 API 버전은 서블릿 3.1입니다.
 
 | Platform | 지원 수준 |
 |---|---|
-| **Quickstart 내장 서블릿 엔진(Jetty 9.4)** | A: 지원됨 |
-| Oracle WebLogic Server 12.2(12cR2) | Z: 지원되지 않음 |
+| **Quickstart 내장 서블릿 엔진(Jetty 9.4)** | A: 지원 됨 |
+| Oracle WebLogic 서버 12.2 (12cR2) | Z: 지원되지 않음 |
 | 웹 프로필 7.0 및 IBM® JRE 1.8을 사용한 IBM® WebSphere® Application Server Continuous Delivery(LibertyProfile) | R: 신규 계약에 대한 제한된 지원 `[2]` |
 | IBM® WebSphere® Application Server 9.0 및 IBM® JRE 1.8 | R: 신규 계약에 대한 제한된 지원 `[1]` `[2]` |
-| Apache Tomcat 8.5 .x | R: 새 계약에 대 한 지원 제한 `[2]` |
+| Apache Tomcat 8.5.x | R: 신규 계약에 대한 제한된 지원 `[2]` |
 | JBoss® 애플리케이션 서버와 JBoss® EAP 7.2.x | Z: 지원되지 않음 |
 | JBoss® 애플리케이션 서버와 JBoss® EAP 7.1.4 | R: 신규 계약에 대한 제한된 지원 `[1]` `[2]` |
 | JBoss® 애플리케이션 서버와 JBoss® EAP 7.0.x | Z: 지원되지 않음 |
@@ -203,21 +203,22 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
 1. AEM Forms은 Ubuntu 20.04 LTS에서 지원됩니다.
 1. Adobe Managed Services에서 지원하는 Linux® 배포.
 
-   >[참고!]
-Linux 기반 서버(OSGI 및 JEE 스택)의 경우 AEM Forms 추가 기능에는 다음과 같은 런타임 종속성이 필요합니다.
+   >[!NOTE]
+   >
+   Linux 기반 서버(OSGI 및 JEE 스택)의 경우 AEM Forms 추가 기능에는 다음과 같은 런타임 종속성이 필요합니다.
    * glibc.x86_64 (2.17-196)
    * libX11.x86_64 (1.6.7-4)
    * zlib.x86-64 (1.2.7-17)
    * libxcb.x86_64 (1.13-1.el7)
    * libXau.x86_64 (1.0.8-2.1.el7)
 
-1. Microsoft® Windows 프로덕션 배포는 6.5로 업그레이드하는 고객 및 비프로덕션 사용을 위해 지원됩니다. AEM Sites 및 자산에 대한 새 배포는 요청 시 수행됩니다.
-1. AEM Forms은 지원 수준 R 제한 없이 Microsoft® Window Server에서 지원됩니다.
+1. Microsoft® Windows 프로덕션 배포는 6.5 및 비프로덕션 사용을 위해 업그레이드 하는 고객에 게 지원 됩니다. 새로 만들기 배포는 AEM Sites 및 Assets에 대해 요청 됩니다.
+1. AEM Forms는 지원 수준 제한이 없는 Microsoft® Window 서버에서 지원 됩니다.
 1. AEM Forms Microsoft® Windows Server 2016에 대 한 지원이 제거 되었습니다.
 
 >[!NOTE]
 >
-AEM Forms 6.5를 설치 하는 경우 다음 32 비트 Microsoft® Visual c + + 재배포 가능 패키지를 설치 했는지 확인 하십시오.
+AEM Forms 6.5를 설치하는 경우 다음 32비트 Microsoft® Visual C++ 재배포 가능 패키지를 설치했는지 확인하십시오.
 >
 * Microsoft® Visual C++ 2008 재배포 가능
 * Microsoft® Visual C++ 2010 재배포 가능
@@ -226,7 +227,7 @@ AEM Forms 6.5를 설치 하는 경우 다음 32 비트 Microsoft® Visual c + + 
 * Microsoft® Visual C++ 2019(VC14.28 이상) 재배포 가능
 
 
-### 가상 및 클라우드 컴퓨팅 환경 {#virtual-cloud-computing-environments}
+### 가상 &amp; Cloud 컴퓨팅 환경 {#virtual-cloud-computing-environments}
 
 Adobe Experience Manager은 클라우드 컴퓨팅 환경의 가상 컴퓨터에서 실행될 수 있습니다. 이러한 환경에는 이 페이지에 나열된 기술 요구 사항을 준수하고 Adobe의 표준 지원 약관에 따라 실행되는 Microsoft® Azure 및 Amazon Web Services(AWS)가 포함됩니다.
 
@@ -234,9 +235,9 @@ Adobe Experience Manager은 클라우드 컴퓨팅 환경의 가상 컴퓨터에
 
 또한 Adobe은 Azure 또는 AWS에 AEM을 배포할 수 있는 Adobe Managed Services을 제공합니다. Adobe Managed Services은 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포하고 운영하는 경험과 기술을 전문가에게 제공합니다. 다음을 참조하십시오 [Managed Services Adobe에 대한 추가 설명서](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-Azure 또는 AWS 또는 기타 클라우드 컴퓨팅 환경에서 AEM를 배포 하는 다른 모든 경우에는 가상 계산 환경에 Adobe Systems의 지원이 포함 됩니다. 해당 가상 환경은이 페이지에 나열 된 기술 사양을 준수 하 여 실행 해야 합니다. 이러한 클라우드 환경에서 실행 되는 AEM 관련 하 여 보고 된 문제는 클라우드 컴퓨팅 환경과 관련 된 클라우드 서비스와는 별개로 재현 해야 합니다. 즉, 클라우드 서비스가이 페이지에 나열 된 기술 요구 사항의 일부로 지원 되지 않는 경우 (예: Azure Blob 저장소나 AWS S3).
+Azure나 AWS 또는 기타 클라우드 컴퓨팅 환경에 AEM을 배포하는 다른 모든 경우에는 Adobe의 지원이 가상 컴퓨팅 환경에 포함됩니다. 해당 가상 환경은 이 페이지에 나열된 기술 사양을 준수하여 실행되어야 합니다. 이러한 클라우드 환경에서 실행되는 AEM과 관련하여 보고된 문제는 클라우드 컴퓨팅 환경과 관련된 클라우드 서비스와 별도로 재현할 수 있어야 합니다. 즉, Azure Blob 저장 공간 또는 AWS S3 등 이 페이지에 나열된 기술 요구 사항의 일부로 클라우드 서비스가 지원되지 않는 경우.
 
-Adobe Systems Managed Services 외부에서 Azure 또는 AWS AEM 배포 하는 방법에 대 한 권장 사항은 Adobe Systems 공급자로 직접 작업 하는 것이 좋습니다. 또는 선택한 클라우드 환경에서의 AEM 배포를 지원하는 Adobe 파트너와 협력합니다. 선택한 클라우드 공급업체 또는 파트너는 특정 성능, 로드, 확장성 및 보안 요구 사항을 충족하도록 아키텍처 크기 조정 사양, 설계 및 구현을 담당합니다.
+Adobe Managed Services 외부에 있는 Azure 또는 AWS에 AEM을 배포하는 방법에 대한 권장 사항의 경우 Adobe은 클라우드 공급자와 직접 작업하는 것을 권장합니다. 또는 선택한 클라우드 환경에서의 AEM 배포를 지원하는 Adobe 파트너와 협력합니다. 선택한 클라우드 공급업체 또는 파트너는 특정 성능, 로드, 확장성 및 보안 요구 사항을 충족하도록 아키텍처 크기 조정 사양, 설계 및 구현을 담당합니다.
 
 ### Dispatcher 플랫폼(웹 서버) {#dispatcher-platforms-web-servers}
 
@@ -247,13 +248,13 @@ Dispatcher는 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispat
 | Platform | 지원 수준 |
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A: 지원됨 |
-| Microsoft® IIS 10(Internet Information Server) | A: 지원 됨 |
+| Microsoft® IIS 10(Internet Information Server) | A: 지원됨 |
 | Microsoft® IIS 8.5 (인터넷 정보 서버) | Z: 지원 되지 않음 |
 
-1. Apache httpd 소스 코드를 기반으로 작성 된 웹 서버는 기반으로 하는 httpd의 버전으로 많은 지원을 갖게 됩니다. 확실하지 않은 경우 Adobe에게 각 서버 제품과 관련된 지원 수준을 확인하도록 요청하십시오. 다음과 같은 경우:
+1. Apache httpd 소스 코드를 기반으로 작성 된 웹 서버는 기반으로 하는 httpd의 버전으로 많은 지원을 갖게 됩니다. 확실 하지 않은 경우 해당 서버 제품과 관련 된 지원 수준에 대 한 확인을 Adobe Systems 문의 하십시오. 다음과 같은 경우:
 
-   1. HTTP 서버가 공식 Apache 소스 배포판만 사용 하 여 작성 되었거나
-   1. HTTP 서버가 실행 중인 운영 체제의 일부로 전달 되었습니다. 예: IBM® HTTP Server, Oracle HTTP 서버
+   1. HTTP 서버는 공식 Apache 소스 배포만 사용하여 빌드되었습니다. 또는
+   1. HTTP 서버는 실행 중인 운영 체제의 일부로 전달되었습니다. 예: IBM® HTTP Server, Oracle HTTP 서버
 
 1. Dispatcher는 Windows 운영 체제용 Apache 2.4. x에는 사용할 수 없습니다.
 
@@ -299,13 +300,13 @@ Mozilla Firefox, Google Chrome 및 Microsoft® Edge 릴리스 업데이트는 �
    <td>A: 지원됨</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox 마지막 ESR [1]</td>
-   <td>A: 지원됨</td>
-   <td>A: 지원됨</td>
+   <td>Mozilla Firefox 최근 ESR [1]</td>
+   <td>A: 지원 됨</td>
+   <td>A: 지원 됨</td>
   </tr>
   <tr>
    <td>MacOS의 Apple Safari (*)</td>
-   <td>A: 지원 됨</td>
+   <td>A: 지원됨</td>
    <td>A: 지원됨</td>
   </tr>
   <tr>
@@ -315,7 +316,7 @@ Mozilla Firefox, Google Chrome 및 Microsoft® Edge 릴리스 업데이트는 �
   </tr>
   <tr>
    <td>iOS 12.x의 Apple Safari</td>
-   <td>A: 지원됨 [2]</td>
+   <td>A: 지원 되는 [2]</td>
    <td>Z: 지원되지 않음</td>
   </tr>
   <tr>
@@ -327,9 +328,9 @@ Mozilla Firefox, Google Chrome 및 Microsoft® Edge 릴리스 업데이트는 �
 </table>
 
 1. Firefox의 확장 지원 릴리스 [mozilla.org에서 자세히 알아보기](https://www.mozilla.org/en-US/firefox/enterprise/)
-1. Apple iPad에 대 한 지원
+1. Apple iPad 지원
 
-### 웹 사이트에 대해 지원 되는 브라우저 {#supported-browsers-for-websites}
+### 웹 사이트에 대해 지원되는 브라우저 {#supported-browsers-for-websites}
 
 일반적으로 AEM Sites에서 렌더링하는 웹 사이트에 대한 브라우저 지원은 AEM 페이지 템플릿, 디자인 및 구성 요소 출력의 구현에 따라 다르며, 따라서 이러한 부분을 구현하는 당사자의 통제 하에 있습니다.
 
@@ -367,7 +368,7 @@ IP 주소를 지정 해야 하는 경우 다음 중에서 필요에 따라을 �
 
 ### AEM 다이내믹 미디어 추가 기능에 대 한 요구 사항 {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Dynamic Media은 기본적으로 비활성화되어 있습니다. 자세한 내용은 여기 를 참조하십시오 [Dynamic Media 활성화](/help/assets/config-dynamic.md#enabling-dynamic-media).
+AEM 다이내믹 미디어는 기본적으로 비활성화 되어 있습니다. 자세한 내용은 여기 를 참조하십시오 [Dynamic Media 활성화](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 Dynamic Media이 활성화되면 다음과 같은 추가 기술 요구 사항이 적용됩니다.
 
@@ -407,9 +408,9 @@ Linux®에서 Dynamic Media을 사용하는 경우 다음 전제 조건을 충�
 >
 **NUMA 아키텍처** AMD64 및 Intel® EM64T를 지원하는 프로세서가 장착된 시스템은 일반적으로 NUMA(Non-Uniform Memory Architecture) 플랫폼으로 구성됩니다. 즉, 커널은 하나의 메모리 노드를 구성하는 것이 아니라 부트 시에 여러 개의 메모리 노드를 구성한다.
 >
-다중 노드 구성은 다른 노드가 소진되기 전에 하나 이상의 노드에서 메모리 소진을 초래할 수 있다. 메모리 소진이 발생하면 커널은 사용 가능한 메모리가 있더라도 프로세스(예: 이미지 서버 또는 플랫폼 서버)를 종료하기로 결정할 수 있습니다.
+다중 노드 구문을 사용 하면 다른 노드가 소모 되기 전에 하나 이상의 노드에서 메모리를 소모 하 게 될 수 있습니다. 메모리를 소모 하는 경우 커널은 사용 가능한 메모리가 있지만 균일 프로세스 (예: 이미지 서버 또는 Platform 서버)를 중단 하도록 결정할 수 있습니다.
 >
-따라서 Adobe은 이러한 시스템을 실행하는 경우 **numa=off** 커널이 이러한 프로세스를 죽이는 것을 방지하기 위해 부팅 옵션.
+따라서 이러한 프로세스를 종료 하는 것을 방지 하기 위해 numa = off **boot 옵션을 사용 하 여** numa를 해제 하는 이러한 시스템을 실행 하는 경우에는 Adobe Systems 하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -465,10 +466,10 @@ Windows x86의 경우:
   </tr>
   <tr>
    <td>Microsoft® Office 2016 (더 이상 사용 되지 않음)</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF 및 TXT</td>
+   <td>DOC, .DOCX, XLS, .XLSX, PPT, .PPTX, RTF 및 TXT</td>
   </tr>
   <tr>
-   <td>워드퍼펙트 2020<br /> </td>
+   <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
