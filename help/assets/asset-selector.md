@@ -5,9 +5,10 @@ contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+hide: true
+source-git-commit: 477c62b857ab98d8617c7bd8ba226019d42d330d
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '498'
 ht-degree: 2%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->자산 선택기가 호출되었습니다. [자산 선택기](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) 이전 버전의 [!DNL Experience Manager].
+>다음 [자산 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) 이(가) 호출됨 [자산 선택기](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) 이전 버전의 [!DNL Experience Manager].
 
 에셋 선택기를 사용하여 에셋을 검색 및 필터링할 수 있습니다. [!DNL Adobe Experience Manager] 에셋. 에셋 선택기를 사용하여 선택한 에셋의 메타데이터를 가져올 수도 있습니다. 자산 선택기 인터페이스를 사용자 지정하려면 지원되는 요청 매개 변수와 함께 자산 선택기 인터페이스를 시작할 수 있습니다. 이러한 매개 변수는 특정 시나리오에 대한 에셋 선택기의 컨텍스트를 설정합니다.
 
@@ -58,3 +59,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
 1. 클릭 **[!UICONTROL 선택]** 을 클릭합니다.
+
+>[!MORELIKETHIS]
+>
+>* [AEM의 Micro-Frontend 자산 선택기 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)
