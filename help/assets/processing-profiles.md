@@ -9,7 +9,7 @@ docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bf6566bb9e3e77924b89b31fc2ef4a59545a66da
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 
 나중에 변경한 기존 처리 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다.
 
-예를 들어 이미지 프로필을 만들어 폴더에 할당했다고 가정합니다. 폴더에 업로드한 모든 이미지 에셋에는 자동으로 이미지 프로필이 에셋에 적용되었습니다. 하지만 나중에 새 스마트 자르기 비율을 프로필에 추가하기로 합니다. 이제 에셋을 선택하고 다시 폴더에 업로드하는 대신 를 실행하기만 하면 됩니다. *Scene7: 에셋 재처리* 워크플로입니다.
+예를 들어 이미지 프로필을 만들어 폴더에 할당했다고 가정합니다. 폴더에 업로드한 모든 이미지 에셋에는 자동으로 이미지 프로필이 에셋에 적용되었습니다. 하지만 나중에 새 스마트 자르기 비율을 프로필에 추가하기로 합니다. 이제 에셋을 선택하고 다시 폴더에 업로드하는 대신 를 실행하기만 하면 됩니다. *Dynamic Media 재처리* <!-- *Scene7: Reprocess Assets* --> 워크플로입니다.
 
 처음으로 처리가 실패한 자산에 대해 재처리 워크플로우를 실행할 수 있습니다. 따라서 처리 프로필을 편집하거나 처리 프로필을 적용하지 않았더라도 언제든지 자산 폴더에서 재처리 워크플로우를 실행할 수 있습니다.
 
@@ -61,11 +61,11 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 >
 >Dynamic Media 서버에서 마이그레이션 게시 에이전트를 비활성화해야 재처리 워크플로우가 예상대로 작동합니다.
 
-<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job, and so on, until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
+<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Dynamic Media Reprocess workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job, and so on, until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
 **폴더에서 에셋을 재처리하려면:**
 
-1. Experience Manager의 에셋 페이지에서 처리 프로필이 할당되어 있고 을 적용할 에셋 폴더로 이동합니다. **[!UICONTROL Scene7: 에셋 재처리]** 워크플로,
+1. Experience Manager의 에셋 페이지에서 처리 프로필이 할당되어 있고 을 적용할 에셋 폴더로 이동합니다. **[!UICONTROL Dynamic Media 재처리]** 워크플로,
 
    처리 프로필이 이미 할당된 폴더는 카드 보기에서 폴더 이름 바로 아래에 프로필 이름이 표시되어 있습니다.
 
@@ -81,7 +81,7 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
    ![에셋 재처리 워크플로 1](/help/assets/assets/reprocess-assets1.png)
 
 1. 선택 **[!UICONTROL 워크플로우 시작]**.
-1. 다음에서 **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 선택 **[!UICONTROL Scene7: 에셋 재처리]**.
+1. 다음에서 **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 선택 **[!UICONTROL Dynamic Media 재처리]**.
 1. (선택 사항) **워크플로우 제목 입력** 텍스트 필드에 워크플로우의 이름을 입력합니다. 필요한 경우 이름을 사용하여 워크플로 인스턴스를 참조할 수 있습니다.
 
    ![자산 재처리 2](/help/assets/assets/reprocess-assets2.png)
@@ -97,12 +97,12 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 **재처리 워크플로우의 배치 크기를 선택적으로 조정하려면**
 
 1. Experience Manager에서 **[!UICONTROL Adobe Experience Manager]** 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** (hammer) 아이콘 > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]**.
-1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7: 에셋 재처리]**.
+1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Dynamic Media 재처리]**.
 
-   ![Scene7이 있는 워크플로우 모델 페이지: 카드 보기에서 선택한 자산 워크플로우 재처리](/help/assets/assets-dm/reprocess-assets7.png)
+   ![카드 보기에서 Dynamic Media 재처리 워크플로우가 선택된 워크플로우 모델 페이지](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. 도구 모음에서 를 선택합니다. **[!UICONTROL 편집]**. 새 브라우저 탭에서 Scene7: 에셋 재처리 워크플로 모델 페이지를 엽니다.
-1. 오른쪽 상단 근처에 있는 Scene7: 에셋 재처리 워크플로 페이지에서 을(를) 선택합니다 **[!UICONTROL 편집]** 을 클릭하여 워크플로를 &quot;잠금 해제&quot;합니다.
+1. 도구 모음에서 를 선택합니다. **[!UICONTROL 편집]**. 새 브라우저 탭에서 Dynamic Media 재처리 워크플로우 모델 페이지가 열립니다.
+1. Dynamic Media 재처리 워크플로 페이지의 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 편집]** 을 클릭하여 워크플로를 &quot;잠금 해제&quot;합니다.
 1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 을 선택합니다. **[!UICONTROL 구성]** 을 클릭합니다.
 
    ![Scene7 일괄 업로드 구성 요소](/help/assets/assets-dm/reprocess-assets8.png)
@@ -119,11 +119,11 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 
 1. 의 오른쪽 위 모서리에서 **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자에서 **[!UICONTROL 완료]**.
 
-1. Scene7: 에셋 재처리 워크플로 모델 페이지의 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 동기화]**. 다음을 참조: **[!UICONTROL 동기화됨]**, 워크플로우 런타임 모델이 정상적으로 동기화되어 폴더에 있는 에셋을 재처리할 준비가 되었습니다.
+1. Dynamic Media 워크플로우 재처리 모델 페이지의 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 동기화]**. 다음을 참조: **[!UICONTROL 동기화됨]**, 워크플로우 런타임 모델이 정상적으로 동기화되어 폴더에 있는 에셋을 재처리할 준비가 되었습니다.
 
    ![워크플로우 모델 동기화](/help/assets/assets-dm/reprocess-assets1.png)
 
-1. Scene7: 에셋 재처리 워크플로 모델을 표시하는 브라우저 탭을 닫습니다.
+1. Dynamic Media 재처리 워크플로 모델을 보여 주는 브라우저 탭을 닫습니다.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
@@ -143,4 +143,4 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.-->
