@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
+source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
 workflow-type: tm+mt
-source-wordcount: '4225'
+source-wordcount: '4270'
 ht-degree: 9%
 
 ---
@@ -212,7 +212,8 @@ ht-degree: 9%
 * Adobe Acrobat Reader 또는 Adobe Acrobat DC의 태그에 목록이 올바르게 표시되지 않습니다. (LC-3921306)
 * Forms Designer에서 올바르게 할당된 머리말 수준이 `<P>` Adobe Acrobat의 태그에 가깝게 배치합니다. (LC-3921305) 
 * 표에서 개체의 ID는 일단 할당되면 수정할 수 없습니다. (LC-3921134) 
-* 병합된 셀이 테이블에 있는 경우 AEM Forms Designer의 복잡한 테이블에서 범위(행 및 열) 및 범위를 설정하는 데 사용할 수 있는 GUI가 없습니다. (LC-3919532) 
+* 병합된 셀이 테이블에 있는 경우 AEM Forms Designer의 복잡한 테이블에서 범위(행 및 열) 및 범위를 설정하는 데 사용할 수 있는 GUI가 없습니다. (LC-3919532)
+  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
 
 ### Foundation{#foundation-6519}
 
@@ -517,8 +518,9 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 * 적응형 양식이 게시되면 정책을 포함한 모든 종속 항목은 수정 사항이 없더라도 다시 게시됩니다. (FORMS-10454)
 * 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 적응형 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
 * 사용자가 제출 액션을 수행할 때 다음 오류가 발생하여 제출이 실패합니다.
-  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-문제를 해결하려면 [jsp, Java™ 및 Sightly와 같은 Sling 스크립트 다시 컴파일](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+  `javax.servlet.ServletException: java.lang.NoSuchMethodError`
+문제를 해결하려면 [jsp, Java 및 Sightly와 같은 Sling 스크립트 다시 컴파일](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* 사용자가 Adminui에서 홈 > 서비스 > PDF Generator > Adobe PDF 설정 경로 아래에서 PDF 문서의 글꼴을 선택하려고 하면 글꼴 목록에 비어 있는 것으로 표시됩니다. &quot;항상 포함&quot; 및 &quot;포함하지 않음&quot; 목록에 글꼴을 추가할 수 없습니다. (FORMS-12095)
 
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
