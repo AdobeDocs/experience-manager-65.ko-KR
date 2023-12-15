@@ -2,10 +2,10 @@
 title: AEM Forms용 AEM Forms 패치 설치 지침
 description: OSGi 및 JEE 환경에 대한 AEM Forms 서비스 팩 설치 지침
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
+source-git-commit: b9c204955a9858a70a8c3286dcc3e58c3666f88f
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 8%
+source-wordcount: '1714'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 | 제품 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 버전 | 6.5.19.0 (OSGi) 6.5.19.0 (JEE) |
+| 버전 | 6.5.19.0 (OSGi) 6.5.19.1 (JEE) |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2023년 12월 8일 |
 | 다운로드 URL | [최신 AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
@@ -65,9 +65,6 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2. 필요한 소프트웨어 다운로드
 
 * [AEM Forms on JEE 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-
-Java EE 웹 애플리케이션 개발을 위한 널리 사용되는 오픈 소스 웹 애플리케이션 프레임워크인 Struts 2 RCE에 심각한 보안 취약성이 보고되었습니다. Adobe은 JEE의 AEM Forms에서 발생하는 취약점을 해결하기 위해 AEM 6.5 서비스 팩 19.1(6.5.19.1)을 릴리스했습니다.
-
 * [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
 * [Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [조각 서블릿](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
