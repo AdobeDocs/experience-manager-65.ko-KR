@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
+source-git-commit: b5ecac71b07bfceb2708f20fe50965dec25e2194
 workflow-type: tm+mt
-source-wordcount: '4270'
+source-wordcount: '4259'
 ht-degree: 9%
 
 ---
@@ -145,7 +145,7 @@ ht-degree: 9%
 * 에셋 유형 필터에서 여러 문서 파일 유형 선택이 페이지 콘솔에서 작동하지 않습니다. 특정 파일 유형의 결과를 사용할 수 있어도 결과를 찾을 수 없습니다. 따라서 작성자가 여러 문서를 필터링할 수 없습니다. 여러 문서 유형을 사용해야 하며 한 번에 하나씩 필터링해야 합니다. (SITES-14047)
 * 선택한 경우, 페이지 편집기 내에서 AEM 6.5.17 및 AEM 6.5.18에서 인스턴스를 업그레이드한 후 **[!UICONTROL 페이지 게시]**&#x200B;가 없는 URL로 리디렉션됩니다. 사용자는 게시 마법사로 리디렉션되어야 합니다. (SITES-15856)
 * 운영 체제의 클립보드에서 붙여넣는 동안 AEM 클립보드에서 중복 복사됩니다. (SITES-15704)
-* 에셋에서 선택 **[!UICONTROL 문서]**, 다음 아래 **[!UICONTROL 필터 유형]**, 선택 **[!UICONTROL Microsoft® Word]** 또는 **[!UICONTROL Microsoft® Excel]** 두 유형의 파일이 모두 있어도 결과를 표시하지 않습니다. (SITES-14837)
+* 에셋에서 선택 **[!UICONTROL 문서]**, 다음 아래 **[!UICONTROL 필터 유형]**, 선택 **[!UICONTROL Microsoft®® Word]** 또는 **[!UICONTROL Microsoft®® Excel]** 두 유형의 파일이 모두 있어도 결과를 표시하지 않습니다. (SITES-14837)
 
 ### [!DNL Assets]{#assets-6519}
 
@@ -519,9 +519,9 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 * 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 적응형 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
 * 사용자가 제출 액션을 수행할 때 다음 오류가 발생하여 제출이 실패합니다.
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-문제를 해결하려면 [jsp, Java 및 Sightly와 같은 Sling 스크립트 다시 컴파일](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
-* 사용자가 Adminui에서 홈 > 서비스 > PDF Generator > Adobe PDF 설정 경로 아래에서 PDF 문서의 글꼴을 선택하려고 하면 글꼴 목록에 비어 있는 것으로 표시됩니다. &quot;항상 포함&quot; 및 &quot;포함하지 않음&quot; 목록에 글꼴을 추가할 수 없습니다. (FORMS-12095)
-
+문제를 해결하려면 [jsp, Java™ 및 Sightly와 같은 Sling 스크립트 다시 컴파일](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* AEM 서비스 팩 6.5.14.0 이상을 설치한 후으로 이동할 때 PDF 문서의 JEE 관리 UI에서 글꼴을 선택할 수 없습니다. `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`글꼴 목록이 비어 있으면 로 표시됩니다. (FORMS-12095)
+  <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
