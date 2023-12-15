@@ -2,7 +2,7 @@
 title: AEM Forms용 AEM Forms 패치 설치 지침
 description: OSGi 및 JEE 환경에 대한 AEM Forms 서비스 팩 설치 지침
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: b9c204955a9858a70a8c3286dcc3e58c3666f88f
+source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 | 제품 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 버전 | 6.5.19.0 (OSGi) 6.5.19.1 (JEE) |
+| 버전 | 6.5.19.0 (OSGi), 6.5.19.1 (JEE) |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2023년 12월 8일 |
 | 다운로드 URL | [최신 AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
