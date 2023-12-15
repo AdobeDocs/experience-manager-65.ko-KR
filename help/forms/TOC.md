@@ -9,9 +9,9 @@ breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성하고 관리하며 게시하고 업데이트합니다.
 role: User
 feature: Forms Service
-source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
+source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
 workflow-type: tm+mt
-source-wordcount: '3765'
+source-wordcount: '3774'
 ht-degree: 3%
 
 ---
@@ -701,6 +701,7 @@ ht-degree: 3%
    + [JBoss Linux 환경의 AEM Forms JEE 6.5.15.0 서비스 팩 설치 문제](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
    + [AEM Forms 서버가 완전히 실행되고 있지 않더라도 문서 처리](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
    + [출력 서비스, Forms 서비스 또는 기록 문서(DoR) 서비스를 사용할 수 없음](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
+     [Experience Manager Forms의 Struts 2 RCE 취약성 완화](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
 + 레거시 설명서 {#legacy-documentation}
    + [JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드](developing/building-xml.md)
    + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](developing/compressing-decompressing-custom-dsc.md)
