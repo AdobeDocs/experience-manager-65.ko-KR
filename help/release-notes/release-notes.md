@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: b5ecac71b07bfceb2708f20fe50965dec25e2194
+source-git-commit: e67d7aa9ab1dd00daad3518904bded258e31128c
 workflow-type: tm+mt
-source-wordcount: '4259'
+source-wordcount: '4288'
 ht-degree: 9%
 
 ---
@@ -213,7 +213,8 @@ ht-degree: 9%
 * Forms Designer에서 올바르게 할당된 머리말 수준이 `<P>` Adobe Acrobat의 태그에 가깝게 배치합니다. (LC-3921305) 
 * 표에서 개체의 ID는 일단 할당되면 수정할 수 없습니다. (LC-3921134) 
 * 병합된 셀이 테이블에 있는 경우 AEM Forms Designer의 복잡한 테이블에서 범위(행 및 열) 및 범위를 설정하는 데 사용할 수 있는 GUI가 없습니다. (LC-3919532)
-  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
+* 사용자가 AEM Forms 서비스 팩 6.5.15.0에 양식 추가 기능 패키지를 설치한 후 PDF 문서를 생성하려고 하면 간헐적으로 실패하고 다음과 같은 오류가 표시됩니다.
+   * `OutputServiceException AEM_OUT_001_003:Unexpected Exception: 0 Out of Memory Caused by: org.omg.CORBA.COMM_FAILURE: null` (LC-3921530)
 
 ### Foundation{#foundation-6519}
 
