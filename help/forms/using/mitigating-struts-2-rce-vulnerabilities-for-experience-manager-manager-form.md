@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: e35f7a683928b7de7ab0b02e6aa3401eeccacd95
+source-git-commit: 61a2fe04805478f7eaf0484edd6a1874e8e96404
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '455'
 ht-degree: 1%
 
 ---
@@ -55,25 +55,20 @@ Java EE 웹 애플리케이션 개발을 위한 널리 사용되는 오픈 소�
 
 1. 다음 명령을 실행하여 모든 struts2 jar 파일을 나열합니다. 명령을 실행하기 전에 위 명령의 경로를 AEM Form 서버의 경로로 바꿉니다.
 
-       &quot;javascript
-       
-       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
-       
-       &quot;
-   
-1. 재귀 즉석 교체에 대해 나열된 순서로 다음 명령을 실행합니다. 명령을 실행하기 전에 위의 명령의 경로를 AEM Form 서버 및 `struts2-core-2.5.33.jar` 파일.
+   ```
+   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+   ```
+
+1. 재귀 즉석 교체에 대해 나열된 순서로 다음 명령을 실행합니다. 명령을 실행하기 전에. 위 명령의 경로를 AEM Form 서버와 `struts2-core-2.5.33.jar` 파일.
 
 
-       &quot;javascript
-       
-       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
-       
-       
-       patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar -action=replace C:\Users\labuser\Desktop\struts2-core.jar
-       
-       
-       &quot;
+   ```
+   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
    
+   
+   patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar -action=replace C:\Users\labuser\Desktop\struts2-core.jar
+   ```
+
 1. AEM Forms 서버를 시작합니다.
 
 
@@ -81,23 +76,19 @@ Java EE 웹 애플리케이션 개발을 위한 널리 사용되는 오픈 소�
 
 1. 다음 명령을 실행하여 모든 struts2 jar 파일을 나열합니다. 명령을 실행하기 전에 위 명령의 경로를 AEM Form 서버의 경로로 바꿉니다.
 
-       &quot;javascript
-       
-       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
-       
-       &quot;
-   
+   ```
+   patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+   ```
+
 1. 재귀 즉석 교체에 대해 나열된 순서로 다음 명령을 실행합니다. 명령을 실행하기 전에 위의 명령의 경로를 AEM Form 서버 및 `struts2-core-2.5.33.jar` 파일.
 
-       &quot;javascript
-       
-       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
-       
-       
-       patch-archive.sh -root=\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace \Users\labuser\Desktop\struts2-core.jar -action=replace \Users\labuser\Desktop\struts2-core.jar
-       
-       &quot;
+   ```
+   patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
    
+   
+   patch-archive.sh -root=\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace \Users\labuser\Desktop\struts2-core.jar -action=replace \Users\labuser\Desktop\struts2-core.jar
+   ```
+
 1. AEM Forms 서버를 시작합니다.
 
 >[!ENDTABS]
