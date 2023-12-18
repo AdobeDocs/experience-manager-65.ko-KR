@@ -1,20 +1,20 @@
 ---
-title: JEE에서 Experience Manager Forms의 Struts 2 RCE 취약성 완화
-description: JEE에서 Experience Manager Forms의 Struts 2 RCE 취약성 완화
+title: JEE에서 Experience Manager Forms의 Struts 2 취약성 완화
+description: JEE에서 Experience Manager Forms의 Struts 2 취약성 완화
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
+source-git-commit: 5f5fcc10927d62cdfaeb0770c34052ceda02b2e8
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
 
 
-# Experience Manager Forms의 Struts 2 RCE 취약성 완화 {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
+# Experience Manager Forms의 Struts 2 취약성 완화 {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 
 ## 문제
 
@@ -46,20 +46,22 @@ Java EE 웹 애플리케이션 개발을 위한 널리 사용되는 오픈 소�
    * patch-archive.bat
    * patch-archive.sh
 1. 터미널 창을 열고 추출된 파일이 포함된 폴더로 이동합니다.
-1. 수동 패치 작업 도구를 사용하여 모든 struts2 jar 파일을 검색, 나열 및 교체합니다. struts2-core-2.5.30 jar 파일 및 struts2-core.jar를 검색하고 바꾸려면 다음을 수행합니다.
+1. 수동 패치 작업 도구를 사용하여 모든 struts2 jar 파일을 검색, 나열 및 교체합니다. 이 도구는 런타임 시 종속성을 다운로드하므로 인터넷 연결이 필요합니다. 따라서 도구를 실행하기 전에 인터넷에 연결되어 있는지 확인하십시오.
+
+struts2-core-2.5.30 jar 파일 및 struts2-core.jar를 검색하고 바꾸려면 다음을 수행합니다.
 
 
 >[!BEGINTABS]
 
 >[!TAB Windows]
 
-1. 다음 명령을 실행하여 모든 struts2 jar 파일을 나열합니다. 명령을 실행하기 전에 위 명령의 경로를 AEM Form 서버의 경로로 바꿉니다.
+1. 다음 명령을 실행하여 모든 struts2 jar 파일을 나열합니다. 명령을 실행하기 전에 명령의 경로를 AEM Forms 서버의 경로로 바꿉니다.
 
    ```
    patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. 재귀 즉석 교체에 대해 나열된 순서로 다음 명령을 실행합니다. 명령을 실행하기 전에. 위 명령의 경로를 AEM Form 서버와 `struts2-core-2.5.33.jar` 파일.
+1. 재귀 즉석 교체에 대해 나열된 순서로 다음 명령을 실행합니다. 명령을 실행하기 전에. 명령의 경로를 AEM Forms 서버 및 의 경로로 바꿉니다. `struts2-core-2.5.33.jar` 파일.
 
 
    ```
@@ -74,13 +76,13 @@ Java EE 웹 애플리케이션 개발을 위한 널리 사용되는 오픈 소�
 
 >[!TAB 리눅스]
 
-1. 다음 명령을 실행하여 모든 struts2 jar 파일을 나열합니다. 명령을 실행하기 전에 위 명령의 경로를 AEM Form 서버의 경로로 바꿉니다.
+1. 다음 명령을 실행하여 모든 struts2 jar 파일을 나열합니다. 명령을 실행하기 전에 명령의 경로를 AEM Forms 서버의 경로로 바꿉니다.
 
    ```
    patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. 재귀 즉석 교체에 대해 나열된 순서로 다음 명령을 실행합니다. 명령을 실행하기 전에 위의 명령의 경로를 AEM Form 서버 및 `struts2-core-2.5.33.jar` 파일.
+1. 재귀 즉석 교체에 대해 나열된 순서로 다음 명령을 실행합니다. 명령을 실행하기 전에 명령의 경로를 AEM Forms 서버 및 `struts2-core-2.5.33.jar` 파일.
 
    ```
    patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
