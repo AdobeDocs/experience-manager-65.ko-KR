@@ -1,22 +1,22 @@
 ---
-title: 설치  [!DNL Workfront for Experience Manager enhanced connector]
-description: 설치  [!DNL Workfront for Experience Manager enhanced connector]
+title: 설치 [!DNL Workfront for Experience Manager enhanced connector]
+description: 설치 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
 hide: true
-source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
+source-git-commit: 80cb3f696fb9050bb2135d2cd0c8f0be47272fa7
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 4%
+source-wordcount: '428'
+ht-degree: 3%
 
 ---
 
-#  설치 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+# 설치 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 에서 관리자 액세스 권한이 있는 사용자 [!DNL Adobe Experience Manager] 향상된 커넥터를 설치합니다. 설치하기 전에 플랫폼 지원 및 기타 를 검토하십시오 [커넥터 사전 요구 사항](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
@@ -46,6 +46,10 @@ ht-degree: 4%
 
 1. 다음을 사용하여 패키지 설치 [!UICONTROL 패키지 관리자]. 패키지 설치 방법은 다음을 참조하십시오. [패키지 관리자 설명서](/help/sites-administering/package-manager.md).
 1. 만들기 `wf-workfront-users` 위치: [!DNL Experience Manager] 사용자 그룹 및 권한 할당 `jcr:all` 끝 `/content/dam`.
+1. 의 기본 제공 색인 정의에 사용자 정의 속성을 추가합니다. **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**. 아래 단계를 실행합니다.
+   * 추가 **`nt:unstructured`** 이름이 인 속성 **`wfReferenceNumber`** 끝:
+     `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`
+   * 색인 재지정 `index /oak:index/ntFolderDamLucene` 색인 재지정 플래그를 다음으로 대칭 이동 `true`.
 
 시스템 사용자 `workfront-tools` 은 자동으로 만들어지며 필요한 권한은 자동으로 관리됩니다. 의 모든 사용자 [!DNL Workfront] 커넥터를 사용하는 사용자는 자동으로 이 그룹의 일부로 추가됩니다.
 
@@ -53,7 +57,7 @@ ht-degree: 4%
 
 Workfront에 대한 연결을 만들려면 다음 단계를 수행하십시오.
 
-1. 위치 [!DNL Experience Manager], 선택 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront 도구 구성]**.
+1. 위치 [!DNL Experience Manager], 선택 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront 도구 구성]**.
 
 1. 선택 `workfront-tools` 왼쪽 패널에서 을(를) 선택하고 **[!UICONTROL 만들기]** 페이지의 오른쪽 위 영역에 있는 옵션입니다.
 
