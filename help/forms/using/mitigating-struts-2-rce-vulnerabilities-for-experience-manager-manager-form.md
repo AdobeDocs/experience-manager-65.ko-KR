@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: e42d01f1e5e44b12b755c20f826331ddbad8ab58
+source-git-commit: f928256920499ab4744b5d8173b449c8fa7f3b8d
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '593'
 ht-degree: 1%
 
 ---
@@ -38,72 +38,76 @@ Java EE 웹 애플리케이션 개발을 위한 인기 있는 오픈 소스 웹 
 
 수동 완화 단계를 사용하여 서비스 팩 13을 실행하는 AEM 6.5 Form Server에서 서비스 팩 18을 실행하는 AEM 6.5 Form Server(6.5.13.0 - 6.5.18.0)로 문제를 해결할 수 있습니다.
 
-1. 모든 서버 인스턴스 및 로케이터를 종료합니다.
-1. 다운로드 [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar).
+1. 다운로드 [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar) 로컬 폴더로. 예: C:\Users\labuser\Desktop\struts2-core-2.5.33.jar.
 1. 에서 AEM Forms on JEE 수동 패치 도구 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).
-1. 수동 패치 작업 도구 아카이브의 압축을 해제합니다. 다음 파일을 추출합니다.
+1. 수동 패치 작업 도구 아카이브의 압축을 해제합니다. 예를 들어 을 로 추출합니다. `/Users/labuser/Desktop/archive-patcher-1.0.0 folder`. 다음 파일이 추출됩니다.
    * archive-patcher-1.0.0.jar
    * patch-archive.bat
    * patch-archive.sh
-1. 터미널 창을 열고 추출된 파일이 포함된 폴더로 이동합니다.
-1. 수동 패치 작업 도구를 사용하여 모든 struts2 jar 파일을 검색, 나열 및 교체합니다. 이 도구는 런타임 시 종속성을 다운로드하므로 인터넷 연결이 필요합니다. 따라서 도구를 실행하기 전에 인터넷에 연결되어 있는지 확인하십시오.
-
-을(를) 검색하고 바꾸려면 `struts2-core-2.5.30.jar` 및 `struts2-core.jar` 파일:
-
-
 
 >[!BEGINTABS]
 
 >[!TAB Windows]
 
-1. 다음 명령을 실행하여 모든 struts2 jar 파일을 나열합니다. 명령을 실행하기 전에 명령의 경로를 AEM Forms 서버의 경로로 바꿉니다.
+1. 모든 서버 인스턴스 및 로케이터를 종료합니다.
+
+1. 터미널 창을 열고 AEM Forms on JEE 수동 패치 도구(추출된 파일)가 포함된 폴더로 이동합니다.
+
+1. 이전 struts2 라이브러리가 있는 모든 파일을 검색하려면 다음 명령을 실행하십시오. 명령을 실행하기 전에 명령의 경로를 AEM Forms 서버의 경로로 바꿉니다.
 
 
    ```
-   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\configurationManager\export -pattern=.*struts2-core.*jar$
    ```
+
+   >[!NOTE]
+   >
+   >
+   >이 도구는 런타임 시 종속성을 다운로드하므로 인터넷 연결이 필요합니다. 따라서 도구를 실행하기 전에 인터넷에 연결되어 있는지 확인하십시오.
 
 1. 재귀 즉석 교체에 대해 나열된 순서로 다음 명령을 실행합니다. 명령을 실행하기 전에 명령의 경로를 AEM Forms 서버 및 `struts2-core-2.5.33.jar` 파일.
 
 
 
    ```
-   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
-   
-   
-   patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar        
+   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\configurationManager\export -pattern=.*struts2-core.*jar$ -action=replace C:\Users\labuser\Desktop\struts2-core-2.5.33.jar
    ```
 
-   위의 단계는 가 포함된 EAR 파일을 패치합니다. `struts2-core-2.5.30.jar` 및 `struts2-core.jar` 파일.
+   위의 단계는 이전 struts2 라이브러리로 모든 귀 파일을 패치합니다.
 
-1. 이전 EAR의 배포를 취소하고 패치된 EAR 파일을 애플리케이션 서버에 배포합니다.
-
+1. 이전 EAR의 배포를 취소하고 내보내기 폴더에서 사용할 수 있는 패치된 EAR 파일을 애플리케이션 서버에 배포합니다.
 
 1. AEM Forms 서버를 시작합니다.
 
-
 >[!TAB 리눅스]
 
-1. 다음 명령을 실행하여 모든 struts2 jar 파일을 나열합니다. 명령을 실행하기 전에 명령의 경로를 AEM Forms 서버의 경로로 바꿉니다.
+1. 모든 서버 인스턴스 및 로케이터를 종료합니다.
+
+1. 터미널 창을 열고 AEM Forms on JEE 수동 패치 도구(추출된 파일)가 포함된 폴더로 이동합니다.
+
+1. 이전 struts2 라이브러리가 있는 모든 파일을 검색하려면 다음 명령을 실행하십시오. 명령을 실행하기 전에 명령의 경로를 AEM Forms 서버의 경로로 바꿉니다.
 
 
    ```
-   patch-archive.sh -root=/Users/labuser/Adobe.Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$
+   ./patch-archive.sh -root=/opt/Adobe/Adobe_Experience_Manager_Forms/configurationManager/export/ -pattern=.*struts2-core.*jar$
    ```
+
+   >[!NOTE]
+   >
+   >
+   >이 도구는 런타임 시 종속성을 다운로드하므로 인터넷 연결이 필요합니다. 따라서 도구를 실행하기 전에 인터넷에 연결되어 있는지 확인하십시오.
 
 1. 재귀 즉석 교체에 대해 나열된 순서로 다음 명령을 실행합니다. 명령을 실행하기 전에 명령의 경로를 AEM Forms 서버 및 `struts2-core-2.5.33.jar` 파일.
 
 
+
    ```
-   patch-archive.sh -root=/Users/labuser/Adobe/Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$ -action=replace /temp/struts2-core-2.5.33.jar
-   
-   
-   patch-archive.sh -root=/Users/labuser/Desktop/check -pattern=.*struts2-core.jar$ -action=replace /Users/labuser/Desktop/struts2-core.jar
+   ./patch-archive.sh -root=/opt/Adobe/Adobe_Experience_Manager_Forms/configurationManager/export/ -pattern=.*struts2-core.*jar$ -action=replace /opt/struts2-core-2.5.33.jar
    ```
 
-   위의 단계는 가 포함된 EAR 파일을 패치합니다. `struts2-core-2.5.30.jar` 및 `struts2-core.jar` 파일.
+   위의 단계는 이전 struts2 라이브러리로 모든 귀 파일을 패치합니다.
 
-1. 이전 EAR의 배포를 취소하고 패치된 EAR 파일을 애플리케이션 서버에 배포합니다.
+1. 이전 EAR의 배포를 취소하고 내보내기 폴더에서 사용할 수 있는 패치된 EAR 파일을 애플리케이션 서버에 배포합니다.
 
 1. AEM Forms 서버를 시작합니다.
 
