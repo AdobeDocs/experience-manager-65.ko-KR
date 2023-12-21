@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
+source-git-commit: 241e39ae402744ac200cfd9220245b080aec33af
 workflow-type: tm+mt
 source-wordcount: '7328'
 ht-degree: 22%
@@ -260,7 +260,7 @@ ht-degree: 22%
          + [번역 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html)
          + [MSM 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR 준비 완료](/help/sites-administering/gdpr-compliance-sites.md)
-         + [AEM Foundation에 대한 GDPR 요청 처리](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/security/handling-gdpr-requests-for-aem-platform.html)
+         + [AEM Foundation에 대한 GDPR 요청 처리](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
          + [AEM Commerce - GDPR 준비 완료](/help/sites-administering/gdpr-compliance-commerce.md)
       + 콘텐츠 관리 {#contentmanagement}
          + [패키지 관리자](/help/sites-administering/package-manager.md)
@@ -1359,21 +1359,21 @@ ht-degree: 22%
          + [헤드리스 및 AEM](/help/sites-developing/headless/introduction.md)
          + 헤드리스 여정 {#journeys}
             + Headless 개발자 여정 {#developer}
-               + [AEM의 Headless 이해](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/overview.html)
-               + [CMS Headless 개발에 대해 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/learn-about.html)
-               + [AEM Headless as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/getting-started.html)
-               + [AEM Headless를 사용한 첫 번째 경험으로의 경로](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/path-to-first-experience.html)
-               + [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/model-your-content.html)
-               + [AEM 게재 API를 통해 콘텐츠에 액세스하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/access-your-content.html)
-               + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/update-your-content.html)
-               + [결합 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/put-it-all-together.html)
-               + [Headless 애플리케이션 실행 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/go-live.html)
-               + [선택 사항 - AEM으로 단일 페이지 애플리케이션을 만드는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/create-spa.html)
+               + [AEM의 Headless 이해](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html)
+               + [CMS Headless 개발에 대해 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/learn-about.html)
+               + [AEM Headless as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/getting-started.html)
+               + [AEM Headless를 사용한 첫 번째 경험으로의 경로](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html)
+               + [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/model-your-content.html)
+               + [AEM 게재 API를 통해 콘텐츠에 액세스하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/access-your-content.html)
+               + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/update-your-content.html)
+               + [결합 방법](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/put-it-all-together.html)
+               + [Headless 애플리케이션 실행 방법](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/go-live.html)
+               + [선택 사항 - AEM으로 단일 페이지 애플리케이션을 만드는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/create-spa.html)
             + Headless 콘텐츠 설계 여정 {#architect}
-               + [AEM Headless 콘텐츠 설계 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/overview.html)
-               + [AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/introduction.html)
-               + [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/basics.html)
-               + [AEM에서 컨텐츠 조각 모델을 만드는 방법에 대해 알아봅니다.](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/model-structure.html)
+               + [AEM Headless 콘텐츠 설계 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html)
+               + [AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html)
+               + [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html)
+               + [AEM에서 컨텐츠 조각 모델을 만드는 방법에 대해 알아봅니다.](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/model-structure.html)
          + 시작 안내서 {#getting-started}
             + [소개](/help/sites-developing/headless/getting-started/introduction.md)
             + [구성 만들기](/help/sites-developing/headless/getting-started/create-configuration.md)
@@ -1396,14 +1396,14 @@ ht-degree: 22%
          + 배달 API{#delivery-api}
             + [자산 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/mac-api-assets.html)
             + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html)
-            + [콘텐츠 조각 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/graphql-api-content-fragments.html)
+            + [콘텐츠 조각 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-api-content-fragments.html)
             + [GraphQL 엔드포인트 관리](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
-            + [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/graphiql-ide.html)
-            + [지속 쿼리](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/persisted-queries.html)
+            + [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphiql-ide.html)
+            + [지속 쿼리](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/persisted-queries.html)
             + [GraphQL 쿼리 최적화](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
             + [최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-            + [콘텐츠 조각의 원격 AEM GraphQL 구문 인증](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
-            + [콘텐츠 조각이 있는 AEM GraphQL API - 샘플 콘텐츠 및 구문](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/content-fragments-graphql-samples.html)
+            + [콘텐츠 조각의 원격 AEM GraphQL 구문 인증](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-authentication-content-fragments.html)
+            + [콘텐츠 조각이 있는 AEM GraphQL API - 샘플 콘텐츠 및 구문](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/content-fragments-graphql-samples.html)
       + 하이브리드 및 SPA AEM 개발 {#spas}
          + [AEM을 통한 하이브리드 및 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [SPA 소개 및 워크스루](/help/sites-developing/spa-walkthrough.md)
