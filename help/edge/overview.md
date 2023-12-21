@@ -4,8 +4,8 @@ description: Edge Delivery Services(EDS) 시작하기
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 93%
+source-wordcount: '835'
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 Edge Delivery Services를 사용하여 AEM은 참여 및 전환을 유도하는 탁월한 경험을 제공합니다. 이를 위해 AEM은 빠르게 작성 및 개발할 수 있는 영향력이 큰 경험을 제공합니다. 작성자가 콘텐츠를 빠르게 업데이트 및 게시하고 새 사이트를 신속하게 시작할 수 있는 신속한 개발 환경을 지원하는 구성 가능한 서비스 세트입니다. 그에 따라 Edge Delivery Services를 사용하여 전환을 개선하고, 비용을 절감하고, 최고의 콘텐츠 속도를 제공할 수 있습니다.
 
-Edge Delivery를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
+Edge Delivery를 활용하여 다음과 같은 작업을 수행할 수 있습니다.
 
 * 완벽한 Lighthouse Score를 사용하여 빠른 사이트를 만들고 실제 사용자 모니터링(RUM)을 통해 사이트 실적을 지속적으로 모니터링합니다.
 * 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 콘텐츠 소스로 작업할 수 있습니다.
@@ -29,7 +29,7 @@ Edge Delivery는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 
 
 예를 들어 Microsoft Word 또는 Google Docs에서 바로 콘텐츠를 사용할 수 있습니다. 즉, 해당 소스의 문서가 웹 사이트의 페이지가 될 수 있습니다. 또한 제목, 목록, 이미지, 글꼴 요소는 모두 초기 소스에서 웹 사이트로 전송할 수 있습니다. 새 콘텐츠는 리빌드 프로세스 없이 즉시 추가될 예정입니다.
 
-Edge 전달은 GitHub를 사용하므로 고객은 GitHub 저장소에서 직접 코드를 관리하고 배포할 수 있습니다. 예를 들어 Google Docs 또는 Microsoft Word에서 콘텐츠를 작성할 수 있고, GitHub의 CSS 및 JavaScript를 사용하여 사이트 기능을 개발할 수 있습니다. 준비가 되면 Sidekick 브라우저 확장 기능을 사용하여 콘텐츠 업데이트를 미리 보고 게시할 수 있습니다.
+Edge Delivery는 GitHub를 사용하므로 고객은 GitHub 저장소에서 바로 코드를 관리 및 배포할 수 있습니다. 예를 들어 Google Docs 또는 Microsoft Word에서 콘텐츠를 작성할 수 있고, GitHub의 CSS 및 JavaScript를 사용하여 사이트 기능을 개발할 수 있습니다. 준비가 되면 Sidekick 브라우저 확장 기능을 사용하여 콘텐츠 업데이트를 미리 보고 게시할 수 있습니다.
 
 추가 참조:
 
@@ -45,11 +45,11 @@ Adobe Target, Analytics, Launch와 함께 Edge Delivery Services를 사용할 �
 
 ## Edge Delivery Services에 대한 액세스 {#getting-access}
 
-Edge Delivery Services 사용을 시작하는 것은 쉽습니다. [시작하기 - 개발자 튜토리얼](https://www.hlx.live/developer/tutorial) 절차에 따라 시작합니다.
+Edge Delivery Services 사용을 쉽게 시작할 수 있습니다. [시작하기 - 개발자 튜토리얼](https://www.hlx.live/developer/tutorial) 절차에 따라 시작합니다.
 
 ## Adobe에서 도움 받기 {#adobe-gethelp}
 
-프로비저닝된 제품 협업 채널(액세스 세부 정보는 아래 참조)을 통해 Adobe 제품 팀과 협력하여 제품 사용 또는 모범 사례에 대한 질문에 답변할 수 있습니다. 제품 공동 작업 채널을 통한 대화와 연결된 서비스 수준 약관(SLT)이 없습니다. 제품 문제 해결에 추가 조사가 필요하고 응답 SLT를 충족해야 하는 경우 [지원 프로세스](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
+프로비저닝된 제품 협업 채널(액세스 세부 정보는 아래 참조)을 통해 Adobe 제품 팀과 협력하여 제품 사용 또는 모범 사례에 대한 질문에 답변할 수 있습니다. 서비스 수준 약관(SLT)은 제품 협업 채널을 통해 대화와 연결되지 않습니다. 제품 문제 해결에 추가 조사가 필요하고 응답 SLT를 충족해야 하는 경우 [지원 프로세스](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
 
 Adobe에서는 Edge Delivery Services에 도움이 되는 세 가지 채널을 제공합니다.
 
@@ -72,7 +72,7 @@ Adobe는 사용자에게 Edge Delivery Services와 문서 기반 작성에 대�
 Admin Console을 통해 지원 티켓을 기록하는 단계:
 
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
-2. 설명에 다음 세부 정보를 입력합니다.
+2. 설명에서 다음 세부 정보를 입력해 주십시오.
 
    * 라이브 웹 사이트의 URL입니다. 예: [www.mydomain.com].
    * 원본 웹 사이트의 URL(.hlx URL)입니다.
