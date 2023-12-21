@@ -3,9 +3,8 @@ title: 적응형 양식 자동 저장
 description: 이벤트 또는 사전 정의된 시간 간격에 따라 콘텐츠 저장을 자동으로 시작하도록 적응형 양식을 구성할 수 있습니다
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms
-exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+feature: Adaptive Forms, Foundation Components
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 7%

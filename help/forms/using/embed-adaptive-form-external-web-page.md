@@ -4,18 +4,18 @@ description: 외부 웹 페이지에서 적응형 양식을 임베드하는 방�
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 55%
+source-wordcount: '1028'
+ht-degree: 53%
 
 ---
 
 # 외부 웹 페이지에 적응형 양식 임베드{#embed-adaptive-form-in-external-web-page}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 [AEM Sites 페이지에서 적응형 양식을 임베드](/help/forms/using/embed-adaptive-form-aem-sites.md)하거나 AEM 외부에 호스트된 웹 페이지를 임베드할 수 있습니다. 임베드된 적응형 양식은 완전한 기능을 갖추고 있으며 사용자는 페이지를 떠나지 않고 양식을 작성하고 제출할 수 있습니다. 이로써 사용자는 웹 페이지의 다른 요소 컨텍스트에 남아 있는 동시에 양식과 상호 작용할 수 있습니다.
 
@@ -96,7 +96,7 @@ ht-degree: 55%
 
 1. 임베드된 코드에서
 
-   * 값 변경 *options.path* 적응형 양식의 게시 URL 경로가 포함된 변수입니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우, URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 확장명을 포함하여 항상 적응형 양식의 전체 이름을 표시합니다. 예를 들어 위의 코드와 적응형 양식은 동일한 AEM Forms 서버에 있으므로 이 예제에서는 적응형 양식의 컨텍스트 경로를 사용합니다 `/content/forms/af/locbasic.html`.
+   * 값 변경 *options.path* 적응형 양식의 게시 URL 경로가 포함된 변수입니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우, URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 확장을 포함한 적응형 양식의 전체 이름을 항상 언급하십시오. 예를 들어 위의 코드와 적응형 양식은 동일한 AEM Forms 서버에 있으므로 이 예제에서는 적응형 양식의 컨텍스트 경로를 사용합니다 `/content/forms/af/locbasic.html`.
    * 바꾸기 *options.dataRef* (URL로 전달할 속성 포함) dataref 변수를 사용하여 다음을 수행할 수 있습니다. [적응형 양식 미리 채우기](/help/forms/using/prepopulate-adaptive-form-fields.md).
    * 바꾸기 *options.themePath* 를 사용하십시오. 또는 요청 속성을 사용하여 테마 경로를 지정할 수 있습니다.
    * CSS 선택기는 적응형 양식이 임베드된 양식 컨테이너의 CSS 선택기입니다. 예: 위 예에서 .customafsection css 클래스는 CSS 선택기입니다.

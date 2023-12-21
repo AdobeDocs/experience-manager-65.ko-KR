@@ -6,11 +6,12 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
+feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 1da3abac8a7f09d41127818a5abacf29524f1365
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 19%
+source-wordcount: '965'
+ht-degree: 11%
 
 ---
 
@@ -155,10 +156,10 @@ AEM Archetype 41을 생성하려면 [나중에](https://github.com/adobe/aem-pro
 
 내 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화되면 빈 핵심 구성 요소 기반 적응형 양식 템플릿 및 Canvas 3.0 테마가 해당 환경에 추가됩니다. 내 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화되면 다음과 같은 작업을 수행할 수 있습니다.
 
-* 핵심 구성 요소 기반 적응형 양식 만들기.
-* 핵심 구성 요소 기반 적응형 양식 템플릿 만들기.
-* 핵심 구성 요소 기반 적응형 양식 템플릿의 사용자 정의 테마 만들기.
-* 모바일, 웹, 기본 앱 등 채널과 양식의 Headless 표현식이 필요한 서비스에 핵심 구성 요소 기반 적응형 양식의 JSON 표현식 제공.
+* 적응형 Forms 기반의 핵심 구성 요소 만들기
+* 적응형 양식 템플릿을 기반으로 핵심 구성 요소를 만듭니다.
+* 적응형 양식 템플릿을 기반으로 핵심 구성 요소에 대한 사용자 지정 테마를 만듭니다.
+* 모바일, 웹, 기본 앱 및 양식의 Headless 표시가 필요한 서비스와 같은 채널에 핵심 구성 요소 기반 적응형 양식의 JSON 표시를 제공합니다.
 
 ## 다음 단계
 

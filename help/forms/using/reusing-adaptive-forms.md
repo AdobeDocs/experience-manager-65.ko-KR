@@ -3,9 +3,10 @@ title: 적응형 양식 재사용
 description: 기존 적응형 양식을 재사용하여 새 적응형 양식을 만들 수 있습니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms
+discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
+feature: Adaptive Forms, Foundation Components
 exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 11%

@@ -1,20 +1,20 @@
 ---
 title: XML 스키마를 사용하여 적응형 Forms을 만드는 방법
 description: 적응형 양식에서 XML 스키마를 양식 모델로 사용하는 방법에 대해 알아봅니다. 기존 XSD 템플릿을 적용하여 적응형 양식을 만들고 XSD에서 적응형 양식으로 스키마 요소를 드래그 앤 드롭할 수 있습니다. XML 스키마의 샘플을 사용하여 자세히 알아보고, XML 스키마를 사용하여 필드에 특수 속성을 추가하고, 적응형 양식 구성 요소에 사용할 수 있는 값을 제한합니다.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 6%
+source-wordcount: '1121'
+ht-degree: 9%
 
 ---
 
 # XML 스키마를 사용하여 적응형 양식 만들기 {#creating-adaptive-forms-using-xml-schema}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -140,7 +140,7 @@ XML 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. 요
   <tr>
    <td><code>use=required </code></td>
    <td>필수 필드를 표시합니다.<br /> </td>
-   <td>특성</td>
+   <td>속성</td>
   </tr>
   <tr>
    <td><code>default="default value"</code></td>
@@ -296,7 +296,7 @@ XML 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. 요
 
 >[!NOTE]
 >
->속성에 `@` 기호 `bindRef`요소와 구분하는 값입니다. (예: `/config/projectDetails/@duration`)
+>속성에 `@` 기호 `bindRef`요소와 구분하는 값입니다. 예: `/config/projectDetails/@duration`
 
 **반복 가능한 하위 양식(minOccours 또는 maxOccurs 값이 1보다 큼)에 대해 하위 양식(복합 유형에서 생성된 구조)의 개별 요소를 드래그할 수 없는 이유는 무엇입니까?**
 

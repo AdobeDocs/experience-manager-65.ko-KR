@@ -5,9 +5,9 @@ contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 3%
@@ -193,7 +193,7 @@ ht-degree: 3%
    * 즉시 사용 가능한 적응형 양식 템플릿을 표시하거나 숨기려면 **즉시 사용 가능한 AF 및 AD 템플릿 포함** 옵션을 선택합니다.
    * AEM 6.0 Forms 또는 AEM 6.1 Forms 릴리스에 추가되었지만 이제 더 이상 사용되지 않는 적응형 양식 템플릿을 표시하거나 숨기려면 **AEM 6.0 AF 템플릿 포함** 옵션을 선택합니다. 이 옵션을 선택하면 다음 항목이 필요합니다. **즉시 사용 가능한 AF 및 AD 템플릿 포함** 활성화할 구성입니다.
 
-1. 클릭 **저장**. 기본 제공 템플릿에 대한 표시 옵션이 변경되었습니다.
+1. **저장**&#x200B;을 클릭합니다. 기본 제공 템플릿에 대한 표시 옵션이 변경되었습니다.
 
 ## 권장 사항 {#recommendations}
 

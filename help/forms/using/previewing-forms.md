@@ -3,9 +3,10 @@ title: 양식 미리 보기
 description: 게시하거나 활성화하기 전에 양식을 미리 보고 예상과 맞는지 확인할 수 있습니다. 미리 보기 옵션은 지원되는 양식 유형에 따라 다를 수 있습니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms
+discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
+feature: Adaptive Forms, Foundation Components
 exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 15%

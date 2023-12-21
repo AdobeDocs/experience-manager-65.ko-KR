@@ -5,11 +5,11 @@ contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
-source-wordcount: '3896'
+source-wordcount: '3916'
 ht-degree: 6%
 
 ---
@@ -323,7 +323,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td>없음</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>캡션</td>
    <td>캡션 개체는 양식 디자인 개체와 관련된 설명 레이블을 설명합니다.<br /> </td>
    <td>없음</td>
   </tr>
@@ -513,7 +513,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td>HTML에서는 스크립트를 사용하여 이름을 설정할 수 없습니다.</td>
   </tr>
   <tr>
-   <td>parent</td>
+   <td>부모</td>
    <td>이 노드의 상위 항목을 가져옵니다.</td>
    <td>없음</td>
   </tr>
@@ -546,7 +546,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
 |---|---|---|
 | instanceManager | instanceManager 객체는 양식 모델 객체의 인스턴스 생성, 제거 및 이동을 관리합니다. | 없음 |
 
-## content {#content}
+## 컨텐츠 {#content}
 
 | **속성** | **설명** | **예외** |
 |---|---|---|
@@ -716,7 +716,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td> </td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>캡션</td>
    <td>캡션 개체는 양식 디자인 개체와 관련된 설명 레이블을 설명합니다.</td>
    <td> </td>
   </tr>
@@ -944,7 +944,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td>없음</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>캡션</td>
    <td>캡션 개체는 양식 디자인 개체와 관련된 설명 레이블을 설명합니다.<br /> </td>
    <td>없음</td>
   </tr>
@@ -1030,7 +1030,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
  </tbody>
 </table>
 
-## $레이아웃 {#layout}
+## $layout {#layout}
 
 <table>
  <tbody>
@@ -1175,14 +1175,14 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
 
    1. Abs()
    1. Avg()
-   1. CEIL()
-   1. 횟수()
-   1. FLOOR()
+   1. Ceil()
+   1. Count()
+   1. Floor()
    1. Max()
-   1. 최소()
+   1. Min()
    1. Mod()
-   1. 반올림()
-   1. 합계()
+   1. Round()
+   1. Sum()
 
 1. **과학적 함수**
 
@@ -1192,9 +1192,9 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
    1. Atan2()
    1. Cos()
    1. Sin()
-   1. 연한 갈색()
+   1. Tan()
    1. Exp()
-   1. 로그()
+   1. Log()
    1. Pow()
    1. Sqrt()
    1. Deg2Rad()
@@ -1203,7 +1203,7 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
 
 1. **재무 기능**
 
-   1. 4월()
+   1. Apr()
    1. Cterm()
    1. Fv()
    1. Ipmt()
@@ -1212,7 +1212,7 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
    1. Ppmt()
    1. Pv()
    1. Rate()
-   1. 용어()
+   1. Term()
 
 1. **논리 함수**
 
@@ -1225,14 +1225,14 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
 
    1. At()
    1. Concat()
-   1. 왼쪽()
+   1. Left()
    1. Len()
    1. Lower()
    1. Ltrim()
-   1. 바꾸기()
-   1. 오른쪽()
+   1. Replace()
+   1. Right()
    1. Rtrim()
-   1. 공백()
+   1. Space()
    1. Stuff()
    1. Substr()
    1. Upper()
@@ -1240,7 +1240,7 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
 
 1. **날짜 및 시간**
 
-   1. 날짜()
+   1. Date()
    1. num2date()
    1. DateFmt()
 

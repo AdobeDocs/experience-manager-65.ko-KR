@@ -2,8 +2,9 @@
 title: 적응형 양식 데이터를 Microsoft&reg; Power Automate에 연결하고 보내는 방법
 description: 적응형 양식 데이터를 Microsoft&reg; Power Automate에 연결하고 전송하는 단계별 안내서입니다.
 keywords: 적응형 Forms Microsoft Power Automate, Microsoft Power Automate에 적응형 Forms 데이터 제출
+feature: Adaptive Forms, Foundation Components
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 15%

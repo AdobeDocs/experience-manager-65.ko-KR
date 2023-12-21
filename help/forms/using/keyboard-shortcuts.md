@@ -4,18 +4,18 @@ description: 이 문서에서는 적응형 양식 편집기, 테마 편집기, �
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 6%
+source-wordcount: '1192'
+ht-degree: 4%
 
 ---
 
 # AEM Forms 키보드 단축키 {#aem-forms-keyboard-shortcuts}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 이 문서에서는 적응형 양식 편집기, 테마 편집기, 콘텐츠 브라우저 및 Windows 및 Macintosh 운영 체제용 서신 관리와 함께 사용할 수 있는 키보드 단축키를 나열합니다.
 
@@ -28,8 +28,8 @@ ht-degree: 6%
 | 선택한 적응형 양식 구성 요소에 대한 속성 브라우저에서 변경 사항 저장 | Ctrl+S | Command+S |
 | 선택한 적응형 양식 구성 요소에 대한 규칙 편집 | Ctrl+Alt+Enter | Command+Alt+Return |
 | 미리보기 와 현재 선택한 모드 (예: 편집 및 스캐폴딩) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&amp;Ast; |
-| 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Ast; |
-| 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;ast; |
+| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&amp;Ast; |
+| 마지막 변경 내용을 재실행합니다. | Ctrl+Y | Ctrl+Y&amp;ast; |
 | 여러 구성 요소 선택 | Shift+클릭 | Shift+클릭 |
 | 선택한 구성 요소 복사 | Ctrl-C | Ctrl-C&amp;ast; |
 | 선택한 구성 요소를 잘라냅니다. 잘라낸 구성 요소는 새 위치에 붙여넣을 때까지 사라지지 않습니다. | Ctrl-X | Ctrl-X&amp;ast; |
@@ -58,8 +58,8 @@ ht-degree: 6%
 |---|---|---|
 | 테마에서 선택한 구성 요소의 속성 브라우저를 엽니다 | Alt+Enter | Alt+Return |
 | 테마에서 선택한 구성 요소의 속성 브라우저를 닫습니다. | Ctrl+Alt+W | Command+Alt+W |
-| 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Ast; |
-| 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;ast; |
+| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&amp;Ast; |
+| 마지막 변경 내용을 재실행합니다. | Ctrl+Y | Ctrl+Y&amp;ast; |
 | 선택한 구성 요소의 속성 브라우저에서 변경 내용을 테마에 저장 | Ctrl+S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
@@ -269,12 +269,12 @@ ht-degree: 6%
    <th><strong>macOS의 바로 가기</strong></th> 
   </tr>
   <tr>
-   <td><p>글꼴 크기를 늘립니다 </p> </td> 
+   <td><p>글꼴 크기 늘리기 </p> </td> 
    <td><p>Ctrl+Shift+&gt;</p> </td> 
    <td>Ctrl+Shift+&gt;</td> 
   </tr>
   <tr>
-   <td><p>글꼴 크기를 줄입니다 </p> </td> 
+   <td><p>글꼴 크기 줄이기 </p> </td> 
    <td><p>Ctrl+Shift+&lt;</p> </td> 
    <td>Ctrl+Shift+&lt;</td> 
   </tr>

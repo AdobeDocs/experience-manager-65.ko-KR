@@ -3,10 +3,11 @@ title: 적응형 양식 단편
 description: 적응형 양식은 적응형 양식에서 사용할 패널 또는 필드 그룹과 같은 양식 세그먼트를 만드는 메커니즘을 제공합니다. 기존 패널을 조각으로 저장할 수도 있습니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+feature: Adaptive Forms, Foundation Components
+discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '2359'
 ht-degree: 3%

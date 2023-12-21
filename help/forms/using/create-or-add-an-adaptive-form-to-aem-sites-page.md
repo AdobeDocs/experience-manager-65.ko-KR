@@ -2,11 +2,11 @@
 title: 적응형 양식을 만들거나 AEM Sites 페이지에 추가
 description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 원활하게 추가하는 방법을 알아봅니다. 동적 및 맞춤형 양식을 웹 사이트에 통합하는 단계별 기술과 모범 사례에 대해 알아보고 디지털 환경을 최적화하여 효과를 극대화합니다.
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '2901'
+source-wordcount: '2881'
 ht-degree: 25%
 
 ---
@@ -189,7 +189,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 
 ## 양식에 대한 제출 액션 구성 {#configure-submit-action-for-form}
 
-제출 액션을 사용하면 적응형 양식을 통해 캡처되는 데이터의 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 제출 버튼을 클릭하면 제출 액션이 트리거됩니다. 적응형 양식에는 즉시 사용 가능한 제출 액션이 포함됩니다. 기본 제출 액션을 확장하여 자신만의 사용자 지정 제출 액션을 만들 수도 있습니다. 양식에 대해 제출 액션을 구성하려면 다음 작업을 수행하십시오.
+제출 액션을 사용하면 적응형 양식을 통해 캡처되는 데이터의 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 제출 단추를 클릭하면 트리거됩니다. 적응형 양식에는 즉시 사용 가능한 제출 액션이 포함됩니다. 기본 제출 액션을 확장하여 자신만의 사용자 지정 제출 액션을 만들 수도 있습니다. 양식에 대해 제출 액션을 구성하려면 다음 작업을 수행하십시오.
 
 1. 적응형 양식이 포함된 AEM 페이지 편집기 또는 경험 조각을 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
@@ -200,11 +200,11 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 
 ## 양식에 대한 스키마 또는 양식 데이터 모델 구성 {#configure-schema-or-data-model-for-form}
 
-양식 데이터 모델을 사용하여 사용자 작업에 따라 데이터를 보내고 받기 위해 양식을 데이터 소스에 연결할 수 있습니다. 양식을 JSON 스키마에 연결하여 사전 정의된 형식으로 제출된 데이터를 받을 수도 있습니다.
+양식 데이터 모델을 사용하면 양식을 데이터 소스에 연결하여 사용자 작업에 따라 데이터를 보내고 받을 수 있습니다. 양식을 JSON 스키마에 연결하여 사전 정의된 형식으로 제출된 데이터를 받을 수도 있습니다.
 
 양식을 스키마 또는 양식 데이터 모델에 연결하기 전에
 
-* [JSON 스키마 만들기 및 환경에 업로드](adaptive-form-json-schema-form-model.md)
+* [JSON 스키마를 만들고 환경에 업로드](adaptive-form-json-schema-form-model.md)
 * [양식 데이터 모델 만들기](create-form-data-models.md)
 
 양식에 대해 JSON 스키마 또는 양식 데이터 모델을 구성하려면 다음 작업을 수행하십시오.
@@ -235,7 +235,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
 1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/using/assets/configure-icon.svg) 아이콘. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
    ![미리 채우기 서비스 fdm aem sites 페이지 편집기](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
-1. 양식 데이터 모델 선택. 를 엽니다. **[!UICONTROL 기본]** 탭. 미리 채우기 서비스에서 다음을 선택합니다. **[!UICONTROL Forms 포털 초안 미리 채우기 서비스]**.
+1. 양식 데이터 모델을 선택합니다. 를 엽니다. **[!UICONTROL 기본]** 탭. 미리 채우기 서비스에서 다음을 선택합니다. **[!UICONTROL Forms 포털 초안 미리 채우기 서비스]**.
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 ## 양식 제출 시 사용자를 새 사용자로 리디렉션하거나 감사 메시지 표시

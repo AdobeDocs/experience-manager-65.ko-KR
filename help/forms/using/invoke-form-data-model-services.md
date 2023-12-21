@@ -3,9 +3,10 @@ title: 적응형 양식에서 양식 데이터 모델 서비스를 호출하기 
 description: 적응형 양식 필드 내에서 WSDL로 작성된 웹 서비스를 호출하는 데 사용할 수 있는 invokeWebServices API에 대해 설명합니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-feature: Adaptive Forms
+discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
+feature: Adaptive Forms, Foundation Components
 exl-id: cf037174-3153-486f-85b1-c974cd5a1ace
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 10%
