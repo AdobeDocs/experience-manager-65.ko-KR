@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 097bded5ed2d1db6426dcb9ac4fa9582cdc213bf
+source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
 workflow-type: tm+mt
-source-wordcount: '7327'
+source-wordcount: '7328'
 ht-degree: 22%
 
 ---
@@ -154,7 +154,7 @@ ht-degree: 22%
    + 관리 {#administering}
       + [관리 사용 안내서 개요](/help/sites-administering/home.md)
       + Sites 기능 {#introduction}
-         + [웹 사이트 관리](/help/sites-administering/msm-and-translation.md)
+         + [MSM 및 번역](/help/sites-administering/msm-and-translation.md)
          + [비동기 작업](/help/sites-administering/asynchronous-jobs.md)
          + [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-administering/msm.md)
          + [Live Copy 개요 콘솔](/help/sites-administering/msm-livecopy-overview.md)

@@ -1,19 +1,19 @@
 ---
-title: 웹 사이트 관리
-description: Adobe Experience Manager을 사용하여 다국어 웹 사이트를 관리하는 방법을 알아봅니다.
+title: 다중 사이트 관리자 및 번역
+description: 프로젝트 간 콘텐츠를 재사용하고 Adobe Experience Manager에서 다국어 웹 사이트를 관리하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 32%
+source-wordcount: '365'
+ht-degree: 33%
 
 ---
 
-# 웹 사이트 관리{#website-administration}
+# 다중 사이트 관리자 및 번역 {#msm-and-translation}
 
 웹 사이트 및 페이지 관리에 다음 관리 도구를 사용할 수 있습니다.
 
