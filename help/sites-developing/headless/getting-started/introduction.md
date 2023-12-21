@@ -1,15 +1,15 @@
 ---
-title: 헤드리스 시작 안내서
+title: Headless 시작 안내서
 description: 이 빠른 시작 안내서를 통해 콘텐츠 모델, 콘텐츠 조각 및 GraphQL API와 같은 Adobe Experience Manager(AEM) 6.5의 강력한 Headless 기능의 필수 사항에 대해 알아보십시오.
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 42%
+ht-degree: 39%
 
 ---
 
-# 헤드리스 시작 안내서 {#introduction}
+# Headless 시작 안내서 {#introduction}
 
 Headless 시작 안내서는 AEM(Adobe Experience Manager) 6.5를 사용하여 AEM 및 Headless 기술에 이미 익숙한 사용자를 위해 5단계로 경험을 만들고 관리하고 전달하기 위한 간단한 경로를 제공합니다. 각 안내서는 이전 안내서를 기반으로 하므로 처음부터 끝까지 순서대로 살펴보는 것이 좋습니다
 
@@ -23,7 +23,7 @@ Headless 시작 안내서는 AEM(Adobe Experience Manager) 6.5를 사용하여 A
 >
 >이 시작 안내서는 AEM 및 Headless 기술에 대한 지식이 있다고 가정합니다.
 >
->AEM 또는 Headless를 처음 사용하는 경우 [Headless 설명서 여정](/help/journey-headless/home.md) headless 및 AEM에서 지원하는 방법에 대해 완벽하게 소개합니다.
+>AEM 또는 Headless를 처음 사용하는 경우 [Headless 설명서 여정](/help/journey-headless/overview.md) headless 및 AEM에서 지원하는 방법에 대해 완벽하게 소개합니다.
 
 ## 대상자 {#audience}
 

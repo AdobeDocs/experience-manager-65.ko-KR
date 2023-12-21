@@ -7,9 +7,10 @@ breadcrumb-title: Communities 안내서
 user-guide-description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다.
 feature: Communities
 role: User
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+hide: true
+source-git-commit: e0db340b4fd4e4f7fe7ed623fb2ee9f1b789e39e
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '423'
 ht-degree: 11%
 
 ---
@@ -21,7 +22,6 @@ ht-degree: 11%
 + AEM Communities 소개 {#introduction}
    + [커뮤니티 사이트](administer-landing.md)
    + [AEM Communities 개요](overview.md)
-   + [AEM Communities 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [AEM Communities 시작하기](getting-started.md)
    + [초기 설정](setup.md)
    + [새 커뮤니티 사이트 작성자](create-site.md)
@@ -34,7 +34,6 @@ ht-degree: 11%
    + [커뮤니티에 대한 Dispatcher 구성](dispatcher.md)
 + 관리 {#administer}
    + [AEM Communities의 사용자 및 UGC 관리 서비스](user-ugc-management-service.md)
-   + [커뮤니티 사이트](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [커뮤니티 콘솔](consoles.md)
    + [커뮤니티 기능에 대한 Analytics 구성](analytics.md)
    + [메시징 구성](messaging.md)
@@ -153,4 +152,3 @@ ht-degree: 11%
    + [활동 트렌드](trends.md)
    + [소셜 태그 클라우드 사용](tagcloud.md)
    + [투표 사용](voting.md)
-   + [샘플 페이지 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)

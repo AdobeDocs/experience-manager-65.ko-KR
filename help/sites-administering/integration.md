@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ee5e8ebb-773f-4aa6-9c3e-2cc3bf4a3bbd
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 719dd7b30c8ce3f02fe46c632b1589fcc74a1759
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '102'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 11%
 * [타사 서비스와 통합](/help/sites-administering/third-party-services.md)
 * [외부 공급자의 Analytics](/help/sites-administering/external-providers.md)
 * [카탈로그 제작자](/help/sites-administering/catalog-producer.md)
-* [SharePoint 커넥터](/help/sites-administering/sharepoint-connector.md)
 * [스마트 태그 이해, 적용 및 조정](/help/assets/enhanced-smart-tags.md)
 
 다른 Adobe 또는 타사 서비스와 AEM 통합에 대해 다음 정보를 사용할 수 있습니다.
