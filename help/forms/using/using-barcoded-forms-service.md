@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-exl-id: edaf12be-473f-4175-b4e0-549b41159a55
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+feature: Document Services
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 1%
+source-wordcount: '1003'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ Barcoded Forms 서비스는 다음을 지원합니다 **2차원(2D)** 스캔한 
 이 서비스는 다음과 같은 기능도 지원합니다 **1차원** 스캔한 TIFF 또는 PDF 문서로 제공되는 기호:
 
 * 코다바르
-* Code128
+* 코드128
 * 코드 3/9
 * EAN13
 * EAN8
@@ -91,7 +91,7 @@ Barcoded Forms 서비스는 바코드를 디코딩한 후 다음 XML 문서를 �
 
 ### 바코드 양식을 사용하는 워크플로우 {#workflows-that-use-barcoded-forms}
 
-양식 작성자는 디자이너를 사용하여 대화형 바코드 양식을 만듭니다. (참조: [디자이너 도움말](https://www.adobe.com/go/learn_aemforms_designer_63_kr).) 사용자가 Adobe Reader 또는 Acrobat을 사용하여 바코드 양식을 채울 때 양식 데이터를 인코딩하기 위해 바코드가 자동으로 업데이트됩니다.
+양식 작성자는 디자이너를 사용하여 대화형 바코드 양식을 만듭니다. (참조: [디자이너 도움말](https://www.adobe.com/go/learn_aemforms_designer_63).) 사용자가 Adobe Reader 또는 Acrobat을 사용하여 바코드 양식을 채울 때 양식 데이터를 인코딩하기 위해 바코드가 자동으로 업데이트됩니다.
 
 Barcoded Forms 서비스는 종이에 있는 데이터를 전자 형식으로 변환하는 데 유용합니다. 예를 들어 바코드 형식을 채워 인쇄하면 인쇄된 복사본을 스캔하여 바코드 Forms 서비스에 대한 입력으로 사용할 수 있습니다.
 
@@ -124,7 +124,7 @@ BCF API를 사용하는 경우 다음 제한 사항을 고려하십시오.
 * 이 서비스는 Adobe Reader 또는 Acrobat을 사용하여 저장된 2D 바코드가 포함된 AcroForms 및 정적 양식을 완전히 지원합니다. 그러나 1D 바코드의 경우 양식을 평면화하거나 스캔한 PDF 또는 TIFF 문서로 제공합니다.
 * 동적 XFA 양식은 완전히 지원되지 않습니다. 동적 양식에서 1D 및 2D 바코드를 올바르게 디코딩하려면 양식을 병합하거나 스캔한 PDF 또는 TIFF 문서로 제공합니다.
 
-또한 위의 제한 사항이 준수되면 지원되는 기호를 사용하는 모든 바코드를 디코딩할 수 있습니다. 대화형 바코드 양식을 만드는 방법에 대한 자세한 내용은 [디자이너 도움말](https://www.adobe.com/go/learn_aemforms_designer_63_kr).
+또한 위의 제한 사항이 준수되면 지원되는 기호를 사용하는 모든 바코드를 디코딩할 수 있습니다. 대화형 바코드 양식을 만드는 방법에 대한 자세한 내용은 [디자이너 도움말](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## 서비스의 속성 구성   {#configureproperties}
 
