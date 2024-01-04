@@ -1,11 +1,11 @@
 ---
 title: AEM 6.5 배포 사용 안내서
-description: Adobe Experience Manager 6.5 설치 및 배포에 대해 알아보고 Adobe Managed Services 클라우드 배포를 비롯한 아키텍처에 대해 알아봅니다.
+description: Adobe Managed Services 클라우드 배포를 비롯하여 Adobe Experience Manager 6.5의 설치, 배포 및 아키텍처에 대한 자세한 내용을 살펴보십시오.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 79%
+ht-degree: 86%
 
 ---
 

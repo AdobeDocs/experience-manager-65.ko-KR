@@ -1,11 +1,11 @@
 ---
 title: AEM Headless 여정
-description: Adobe Experience Manager as a Headless CMS를 사용하는 방법을 설명하는 설명서 여정 모음입니다.
+description: Adobe Experience Manager as a Headless CMS를 사용하는 방법에 대해 설명하는 설명서 여정 모음입니다.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
 source-git-commit: 719dd7b30c8ce3f02fe46c632b1589fcc74a1759
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 59%
+ht-degree: 63%
 
 ---
 

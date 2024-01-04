@@ -1,17 +1,17 @@
 ---
 title: AEM Content and Commerce
-description: 통합에 대한 유용한 문서와 AEM Storefront를 사용하여 시작하는 방법을 사용하여 AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해합니다.
+description: 통합에 대한 유용한 문서와 AEM Storefront를 사용하는 방법을 통해 AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해할 수 있습니다.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 64%
+ht-degree: 82%
 
 ---
 
 # AEM Content and Commerce {#commerce-guide}
 
-통합에 대한 유용한 문서와 AEM Storefront를 사용하여 시작하는 방법을 사용하여 AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해합니다.
+통합에 대한 유용한 문서와 AEM Storefront를 사용하는 방법을 통해 AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해할 수 있습니다.
 
 >[!NOTE]
 >

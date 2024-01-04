@@ -1,11 +1,11 @@
 ---
 title: AEM 6.5 작성 사용 안내서
-description: AEM 6.5에서 컨텐츠 만들기 및 작성의 주요 개념을 살펴보십시오. 태그, 템플릿 및 기타 페이지 기능 사용에 대한 정보도 확인할 수 있습니다.
+description: AEM 6.5에서 콘텐츠 생성 및 작성의 주요 개념을 살펴보십시오. 태그, 템플릿 및 기타 페이지 기능을 사용 방법에 대한 정보도 찾을 수 있습니다.
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 69%
+ht-degree: 78%
 
 ---
 

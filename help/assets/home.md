@@ -1,6 +1,6 @@
 ---
 title: Assets 안내서
-description: Experience Manager에서 디지털 에셋을 만들고, 관리하고, 처리하고, 배포합니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산 사용 방법에 대해 설명합니다.
+description: Experience Manager에서 디지털 자산을 작성하고, 관리하며, 처리하고, 배포합니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산 사용 방법에 대해 설명합니다.
 user-guide-title: Assets 안내서
 feature: Asset Management
 role: User, Architect, Admin
@@ -8,13 +8,13 @@ exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 59%
+ht-degree: 78%
 
 ---
 
 # Assets 안내서
 
-Experience Manager에서 디지털 에셋을 만들고, 관리하고, 처리하고, 배포합니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산 사용 방법에 대해 설명합니다.
+Experience Manager에서 디지털 자산을 작성하고, 관리하며, 처리하고, 배포합니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산 사용 방법에 대해 설명합니다.
 
 ## 주요 [!DNL Experience Manager] 문서
 
