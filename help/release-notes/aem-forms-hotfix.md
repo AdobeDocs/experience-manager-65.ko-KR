@@ -1,17 +1,17 @@
 ---
-title: AEM Form 서비스 팩용 핫픽스
-description: AEM Forms 서비스 팩용 핫픽스를 다운로드하고 설치하는 방법에 대한 정보를 제공합니다
-source-git-commit: 169d407835098add0312b0d12c2c80035b525762
+title: AEM Forms용 핫픽스
+description: AEM Forms용 핫픽스를 다운로드하고 설치하는 방법에 대해 설명합니다.
+exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
+source-git-commit: 276b0122fb3d88c584dd6b2b4c2c6f6eda9d0537
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 1%
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
+# Adobe Experience Manager Forms 핫픽스{#aem-form-hotfix}
 
-# Adobe Experience Manager 핫픽스{#aem-form-hotfix}
-
-최신 버전 설치 [AEM 서비스 팩](/help/release-notes/release-notes.md) 는 Adobe Experience Manager 6.5의 공식 출시 이후에 발표된 보안, 성능, 안정성 및 주요 고객 수정 사항과 개선 사항을 포함하는 것이 좋습니다.
+이 문서에서는 알려진 문제를 해결하고, 시스템 안정성을 향상시키며, AEM Forms의 전반적인 성능을 개선하기 위해 구현된 주요 수정 사항을 나열합니다.
 
 ## 적응형 Forms에 대한 핫픽스 {#hotfix-for-adaptive-forms}
 
@@ -19,11 +19,11 @@ ht-degree: 1%
   <tbody>
   <tr>
     <td><strong>날짜</strong></td>
-    <td><strong>핫픽스 이름</strong></td>
-    <td><strong>수정 사항</strong></td>
+    <td><strong>핫픽스 다운로드 링크(AEM Software Distribution 링크)</strong></td>
+    <td><strong>해결된 문제</strong></td>
    </tr>
    <tr>
-    <td>2023년 11월 20일</td>
+    <td>2023년 11월 20일 화요일</td>
      <td>
      <ul>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1016-002.zip">Linux용 AEM 서비스 팩 6.5.18.0 핫픽스</a> </li>
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 다음 단계를 수행하여 핫픽스를 다운로드하고 설치합니다.
 
-1. 다운로드 [핫픽스](#hotfix-for-adaptive-forms) SD 링크에서 가져옵니다.
+1. 다운로드 [핫픽스](#hotfix-for-adaptive-forms) 소프트웨어 배포 링크에서 가져옵니다.
 1. 핫픽스 아카이브 파일을 추출하여 Experience Manager 패키지(.zip)와 번들(.jar) 파일을 가져올 수 있습니다.
-1. 패키지 관리자를 통해 패키지(.zip)를 업로드하고 설치합니다.
-1. 구성 관리자 번들을 엽니다. `https://server:host/system/console/bundles`번들(.jar)을 업로드하고 설치합니다.
+1. 를 통해 패키지(.zip) 업로드 및 설치 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+1. 구성 관리자 번들을 엽니다. `https://server:host/system/console/bundles`번들(.jar)을 업로드하고 설치합니다. 핫픽스가 설치되었습니다.
