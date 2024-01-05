@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 6.5 릴리스에서 더 이상 사용되지 않거나 제거된 기능.
 description: Adobe Experience Manager 6.5에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: b0ba4e0c91d3c40acf5bf7336ba2af0c8c01cd32
+source-git-commit: 5c10c5d20338b696fdab2291c714a7d6313cca8a
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1689'
 ht-degree: 30%
 
 ---
@@ -32,7 +32,6 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | 영역 | 특별 포함 | 대체 | 버전(SP) |
 |---|---|---|---|
 | Sites | 다음 **Adobe AEM 관리 폴링 구성** 서비스: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | 다음 **Adobe AEM Analytics Report Sling Importer** 서비스. Adobe Analytics 연결 및 프레임워크 만들기 를 참조하십시오. [가져오기 간격 구성](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
-| Screens | AEM의 ActiveMQ입니다. ActiveMQ는 두 AEM Publish 인스턴스 간의 통신에 사용되었습니다. | Adobe은 고객이 로드 밸런서를 사용할 것을 권장합니다. |  |
 | [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. |   | 6.5.11.0 |
 | [!DNL Sites] | 콘텐츠 조각 템플릿(단순 콘텐츠 조각 생성) | 현재는 [모델 기반 구조 콘텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)입니다. | 6.5.11.0 |
 | Creative Cloud 통합 | Creative Cloud 폴더 공유에 대한 AEM이 AEM 6.2에 도입되었습니다. Creative 사용자가에서 열 수 있도록 AEM의 자산에 대한 액세스 권한을 제공하는 방법을 제공합니다 [!DNL Creative Cloud] 응용 프로그램을 실행하고 새 파일을 업로드하거나 변경 사항을 AEM에 저장하십시오. Creative Cloud 애플리케이션인 Adobe 에셋 링크에 출시된 새로운 기능은 Photoshop, InDesign 및 Illustrator 내에서 직접 AEM의 에셋에 액세스할 수 있도록 함으로써 사용자 경험을 향상시키고 에셋에 대한 강력한 액세스를 제공합니다. Adobe은 AEM의 Creative Cloud 폴더 공유 통합을 추가로 개선할 계획이 없습니다. 이 기능은 AEM에 포함되어 있지만 고객은 대체 솔루션을 사용하는 것이 좋습니다. | 고객은 Adobe Asset Link 또는 AEM 데스크탑 앱을 비롯한 새로운 Creative Cloud 통합 기능으로 전환하는 것이 좋습니다. |  |
@@ -76,7 +75,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | 개발자 | HTML 클라이언트 라이브러리 관리자에서 `customJavaScriptPath` 지원을 제거합니다. | 교체 없음 |  |
 | [!DNL Assets] | 자산 오프로딩 기능이에서 제거됩니다. [!DNL Adobe Experience Manager] 6.5. | 대체할 수 없습니다. |  |
 | 캐시 | `system/console/slingjsp` 가 제거되어 AEM 6.5에서 더 이상 사용할 수 없습니다. | 클래스 및 Slightly 캐시는 Apache Sling Commons FileSystem ClassLoader 번들 아래에 저장됩니다. AEM 웹 콘솔에서 번들 번호를 확인하고 파일 시스템(`crx-quickstart/launchpad/felix/bundle<ID>`)에서 직접 캐시 폴더를 제거할 수 있습니다. |  |
-| Screens | Adobe은 com.adobe.cq.screens.mq.activemq 번들 및 관련 구성을 더 이상 유지 관리하고 업데이트할 계획이 없습니다. | 대체할 수 없습니다. |  |
+| Screens | Activemq 번들 지원 및 관련 구성이 제거되었습니다. |  |  |
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 
