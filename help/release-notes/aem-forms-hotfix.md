@@ -2,10 +2,10 @@
 title: AEM Forms용 핫픽스
 description: AEM Forms용 핫픽스를 다운로드하고 설치하는 방법에 대해 설명합니다.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 276b0122fb3d88c584dd6b2b4c2c6f6eda9d0537
+source-git-commit: 4c47fc5d03732d206c9eb18feb6e44018e936472
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 2%
+source-wordcount: '201'
+ht-degree: 1%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 2%
      <td>
      <ul>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1016-002.zip">Linux용 AEM 서비스 팩 6.5.18.0 핫픽스</a> </li>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1016-002.zip">Windows용 AEM 서비스 팩 6.5.18.0용 핫픽스</a> </li>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1016-002.zip">Mac OS용 AEM 서비스 팩 6.5.18.0용 핫픽스</a></li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1016-002.zip">Microsoft Windows용 AEM 서비스 팩 6.5.18.0용 핫픽스</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1016-002.zip">Apple macOS용 AEM 서비스 팩 6.5.18.0 핫픽스</a></li>
      </ul>
      </td>
     <td>
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 다음 단계를 수행하여 핫픽스를 다운로드하고 설치합니다.
 
-1. 다운로드 [핫픽스](#hotfix-for-adaptive-forms) 소프트웨어 배포 링크에서 가져옵니다.
+1. 다운로드 [핫픽스](#hotfix-for-adaptive-forms) 소프트웨어 배포 링크에서 다운로드할 수 있습니다.
 1. 핫픽스 아카이브 파일을 추출하여 Experience Manager 패키지(.zip)와 번들(.jar) 파일을 가져올 수 있습니다.
 1. 를 통해 패키지(.zip) 업로드 및 설치 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
 1. 구성 관리자 번들을 엽니다. `https://server:host/system/console/bundles`번들(.jar)을 업로드하고 설치합니다. 핫픽스가 설치되었습니다.
