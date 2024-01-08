@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3adf2b03ac4e227af2b33099c24ec177b8ea7e1b
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,20 @@ Java™ 명령 옵션을 사용하여 JVM의 메모리 설정을 정의합니다
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-이 메서드는 힙 덤프 파일(**java_...hprof**) 프로세스에 메모리가 부족할 때마다 힙 덤프가 생성된 후에도 프로세스가 계속 실행될 수 있습니다. 일반적으로 문제를 분석하는 데 하나의 힙 덤프 파일로 충분합니다.
+이 메서드는 힙 덤프 파일(**java_...hprof**) 프로세스에 메모리가 부족할 때마다 힙 덤프가 생성된 후에도 프로세스가 계속 실행될 수 있습니다.
+
+문제를 분석하려면 종종 일정 기간 동안 수집된 세 개의 힙 덤프 파일이 필요합니다.
+
+* 오류가 발생하기 전
+* 실패 중 1
+* 실패 중 2
+* *이상적으로는 이벤트가 해결된 후 정보를 수집하는 것도 좋을 것이다*
+
+이를 비교하여 변경 사항과 객체가 메모리를 사용하는 방법을 확인할 수 있습니다.
+
+>[!NOTE]
+>
+>이러한 정보를 정기적으로 수집하거나 힙 덤프를 읽은 경험이 있는 경우 문제를 분석하는 데 하나의 힙 덤프 파일로 충분할 수 있습니다.
 
 ### AEM 빠른 시작을 두 번 클릭한 후 AEM 시작 화면이 브라우저에 표시되지 않습니다 {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
