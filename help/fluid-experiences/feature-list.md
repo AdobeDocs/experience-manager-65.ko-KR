@@ -4,10 +4,10 @@ description: Fluid Experiences 기능 목록
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -49,7 +49,7 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 |---|
 | [HTTP API](/help/assets/mac-api-assets.md) |
 | [구조화된 컨텐츠 모델](/help/assets/content-fragments/content-fragments.md) |
-| [컨텐츠 서비스](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en) |
+| [컨텐츠 서비스](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) |
 | [경험 조각](/help/sites-authoring/experience-fragments.md) |
 | 구조화된 컨텐츠를 위한 HTTP API(읽기) |
 | 구조화된 컨텐츠를 위한 HTTP API(CRUD) |
@@ -82,7 +82,7 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 
 ## 자세히 알아보기 {#learn-more}
 
-* [헤드리스 사용 사례를 위한 Fluid Experiences](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=en)
-* [AEM 컨텐츠 서비스: 무엇을, 왜, 어떻게?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
-* [타사 액세스에 대한 FAQ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=en)
+* [헤드리스 사용 사례를 위한 Fluid Experiences](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [AEM 컨텐츠 서비스: 무엇을, 왜, 어떻게?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
+* [타사 액세스에 대한 FAQ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
 * [Sling API 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

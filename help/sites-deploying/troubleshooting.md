@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -64,7 +64,7 @@ jar 파일이 유비쿼터스 ZIP 형식을 사용하므로 일부 보관 프로
 
 >[!NOTE]
 >
->참조: [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en).
+>참조: [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 
 CRX 자체의 메모리 풋프린트가 낮습니다. CRX 내에서 실행 중인 응용 프로그램에 더 큰 메모리 요구 사항이 있거나 메모리 사용량이 많은 작업(예: 큰 트랜잭션)을 요청하는 경우, CRX가 실행되는 JVM 인스턴스는 적절한 메모리 설정으로 시작해야 합니다.

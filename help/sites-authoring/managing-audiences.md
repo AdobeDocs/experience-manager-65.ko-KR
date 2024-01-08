@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 76%
@@ -79,7 +79,7 @@ Adobe Target 대상자를 만들려면 다음 작업을 수행하십시오.
 1. 다른 규칙을 추가하려면 **규칙 추가**&#x200B;를 클릭합니다. 필요한 만큼 규칙을 입력합니다. 규칙은 부울 연산자 AND와 결합되며 대상자가 활동에 적합하려면 각 규칙의 모든 요구 사항을 충족해야 합니다.
 1. **다음**&#x200B;을 클릭합니다.
 1. 대상자의 이름을 입력하고 **저장**.
-1. 클릭 **저장**. 대상자가 대상자 목록에 표시됩니다.
+1. **저장**&#x200B;을 클릭합니다. 대상자가 대상자 목록에 표시됩니다.
 
 ### 속성 및 해당 옵션 {#attributes-and-their-options}
 
@@ -91,7 +91,7 @@ Adobe Target 대상자를 만들려면 다음 작업을 수행하십시오.
 | **사용자 정의** | 사용자 정의 매개변수는 mbox 매개변수입니다. 임의의 mbox 매개변수를 mbox에 전달하거나 targetPageParams 함수를 사용하는 경우 이러한 매개변수는 대상자에서 사용할 수 있도록 여기에 표시됩니다. | Adobe Target에서 [사용자 정의 매개변수 설명서](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)를 참조하십시오. |
 | **OS** | 특정 운영 체제를 사용하는 방문자를 타겟팅할 수 있습니다. | Linux®, Macintosh 또는 Windows를 사용하는 사용자를 타깃팅합니다. |
 | **사이트 페이지** | 특정 페이지에 있거나 특정 mbox 매개변수를 가진 방문자를 타겟팅합니다. | Adobe Target에서 [사이트 페이지 설명서](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html)를 참조하십시오. |
-| **브라우저** | 페이지를 방문할 때 특정 브라우저나 특정 브라우저 옵션을 사용하는 사용자를 타겟팅할 수 있습니다. | Adobe Target에서 [브라우저 옵션 설명서](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=en)를 참조하십시오. |
+| **브라우저** | 페이지를 방문할 때 특정 브라우저나 특정 브라우저 옵션을 사용하는 사용자를 타겟팅할 수 있습니다. | Adobe Target에서 [브라우저 옵션 설명서](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html)를 참조하십시오. |
 | **방문자 프로필** | 특정 프로필 매개변수를 충족하는 Target 방문자입니다. | Adobe Target에서 [방문자 프로필 설명서](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html)를 참조하십시오. |
 | **트래픽 소스** | 사이트 방문 시 사용한 검색 엔진 또는 랜딩 페이지에 따라 방문자를 타겟팅합니다. | Adobe Target에서 [트래픽 소스 설명서](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)를 참조하십시오. |
 

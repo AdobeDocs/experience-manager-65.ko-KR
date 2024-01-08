@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2959'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ### 보안 핫픽스 설치 {#install-security-hotfixes}
 
-최신 버전을 설치했는지 확인하십시오. [Adobe에서 제공한 보안 핫픽스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko-KR?lang=ko).
+최신 버전을 설치했는지 확인하십시오. [Adobe에서 제공한 보안 핫픽스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ### AEM 및 OSGi 콘솔 관리자 계정에 대한 기본 암호 변경 {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -108,11 +108,11 @@ Adobe은 특히 404 및 500 HTTP 응답 코드에 대해 사용자 지정 오류
 
 >[!NOTE]
 >
->다음을 참조하십시오 [사용자 지정 스크립트 또는 오류 핸들러를 만드는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=en) 을 참조하십시오.
+>다음을 참조하십시오 [사용자 지정 스크립트 또는 오류 핸들러를 만드는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html) 을 참조하십시오.
 
 ### Dispatcher 보안 검사 목록 완료 {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher는 인프라의 중요한 부분입니다. Adobe은 다음을 완료할 것을 권장합니다. [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en).
+AEM Dispatcher는 인프라의 중요한 부분입니다. Adobe은 다음을 완료할 것을 권장합니다. [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
 
 >[!CAUTION]
 >

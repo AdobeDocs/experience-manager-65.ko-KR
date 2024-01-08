@@ -3,7 +3,7 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 8fc35ac465240cafdce5346f2f7e9ba15c8d1fef
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '4333'
 ht-degree: 9%
@@ -520,7 +520,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 * 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 적응형 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
 * 사용자가 제출 액션을 수행할 때 다음 오류가 발생하여 제출이 실패합니다.
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-문제를 해결하려면 [jsp, Java™ 및 Sightly와 같은 Sling 스크립트 다시 컴파일](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+문제를 해결하려면 [jsp, Java™ 및 Sightly와 같은 Sling 스크립트 다시 컴파일](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * AEM 서비스 팩 6.5.14.0 이상을 설치한 후으로 이동할 때 PDF 문서의 JEE 관리 UI에서 글꼴을 선택할 수 없습니다. `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`글꼴 목록이 비어 있으면 로 표시됩니다. (FORMS-12095)
 
 #### JEE의 AEM Forms

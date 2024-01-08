@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '5811'
+source-wordcount: '5752'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM 6.3 이상에서는 온라인 수정 정리 라는 이 기능의 온라인 버전이 도입되었습니다. AEM 인스턴스를 종료해야 하는 오프라인 개정 정리와 비교하여 온라인 개정 정리는 AEM 인스턴스가 온라인 상태에 있는 동안 실행할 수 있습니다. 온라인 개정 정리는 기본적으로 켜져 있으며 개정 정리를 수행하는 데 권장되는 방법입니다.
 
-**참고**: [비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=en) 소개 및 온라인 개정 정리 사용 방법에 대해 설명합니다.
+**참고**: [비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) 소개 및 온라인 개정 정리 사용 방법에 대해 설명합니다.
 
 개정 정리 프로세스는 다음 세 단계로 구성됩니다. **추정치**, **압축**, 및 **정리**. 예상 값은 수집된 가비지 양을 기반으로 다음 단계(압축)를 실행할지 여부를 결정합니다. 압축 단계 세그먼트 및 tar 파일은 사용되지 않은 콘텐츠를 제외하고 다시 작성됩니다. 그런 다음 정리 단계에서는 포함될 수 있는 쓰레기를 포함한 이전 세그먼트를 제거합니다. 오프라인 모드는 추가 세그먼트가 수집되지 않도록 유지하는 AEM 작업 세트를 고려해야 하므로 일반적으로 더 많은 공간을 확보할 수 있습니다.
 
@@ -173,7 +173,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>마이그레이션할 때 다운타임을 방지할 수 있습니까?</strong></td>
-   <td>아니요. 실행 중인 인스턴스에서 수행할 수 없는 일회성 작업입니다.</td>
+   <td>아니. 실행 중인 인스턴스에서 수행할 수 없는 일회성 작업입니다.</td>
    <td> </td>
   </tr>
   <tr>
@@ -183,7 +183,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>검색 색인의 색인 재지정이 필요합니까?</strong></td>
-   <td>아니요. oak-segment에서 oak-segment-tar로 마이그레이션하면 컨테이너 형식이 변경됩니다. 포함된 데이터는 영향을 받지 않으며 수정되지 않습니다.</td>
+   <td>아니. oak-segment에서 oak-segment-tar로 마이그레이션하면 컨테이너 형식이 변경됩니다. 포함된 데이터는 영향을 받지 않으며 수정되지 않습니다.</td>
    <td> </td>
   </tr>
   <tr>
@@ -210,7 +210,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>온라인 수정 정리 는 얼마나 자주 실행해야 합니까?</strong></td>
-   <td>매일 한 번. 작업 대시보드의 기본 구성입니다.</td>
+   <td>하루에 한 번. 작업 대시보드의 기본 구성입니다.</td>
    <td> </td>
   </tr>
   <tr>
@@ -266,7 +266,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>온라인 개정 정리를 실행할 때 디스크 공간 및 힙 메모리에 대한 최소 요구 사항은 무엇입니까?</strong></td>
-   <td><p>온라인 수정 버전 정리 중에 디스크 공간이 계속 모니터링됩니다. 사용 가능한 디스크 공간이 위험 값 미만으로 떨어지면 프로세스가 취소됩니다. 임계값은 저장소의 현재 디스크 풋프린트의 25%이며 구성할 수 없습니다.</p> <p><strong>Adobe은 디스크의 크기를 처음 예상한 저장소 크기보다 최소 2~3배 크게 지정할 것을 권장합니다.</strong></p> <p>사용 가능한 힙 공간은 정리 프로세스 동안 지속적으로 모니터링됩니다. 사용 가능한 힙 공간이 임계값 아래로 떨어지는 경우 프로세스가 취소됩니다. 임계값은 org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD을 통해 구성됩니다. 기본값은 15입니다%.</p> <p>최소 압축 힙 크기 조정을 위한 Recommendations은 AEM 메모리 크기 조정 권장 사항과 분리되지 않습니다. 일반적으로 <strong>AEM 인스턴스가 사용 사례와 예상 페이로드를 처리할 수 있을 만큼 크기가 조정된 경우 정리 프로세스에서 충분한 메모리를 확보합니다.</strong></p> </td>
+   <td><p>온라인 수정 버전 정리 중에 디스크 공간이 계속 모니터링됩니다. 사용 가능한 디스크 공간이 위험 값 미만으로 떨어지면 프로세스가 취소됩니다. 임계값은 저장소의 현재 디스크 풋프린트의 25%이며 구성할 수 없습니다.</p> <p><strong>Adobe은 디스크의 크기를 처음 예상한 저장소 크기보다 최소 2~3배 크게 지정할 것을 권장합니다.</strong></p> <p>사용 가능한 힙 공간은 정리 프로세스 동안 지속적으로 모니터링됩니다. 사용 가능한 힙 공간이 임계값 아래로 떨어지는 경우 프로세스가 취소됩니다. 임계값은 org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD을 통해 구성됩니다. 기본값은 15%입니다.</p> <p>최소 압축 힙 크기 조정을 위한 Recommendations은 AEM 메모리 크기 조정 권장 사항과 분리되지 않습니다. 일반적으로 <strong>AEM 인스턴스가 사용 사례와 예상 페이로드를 처리할 수 있을 만큼 크기가 조정된 경우 정리 프로세스에서 충분한 메모리를 확보합니다.</strong></p> </td>
    <td> </td>
   </tr>
   <tr>

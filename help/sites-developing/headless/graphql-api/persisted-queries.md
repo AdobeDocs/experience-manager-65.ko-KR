@@ -2,7 +2,7 @@
 title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 85%
@@ -262,7 +262,7 @@ query getAdventuresByActivity($activity: String!) {
 
 ## 지속 쿼리 캐싱 {#caching-persisted-queries}
 
-지속 쿼리는 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) 및 CDN(Content Delivery Network) 계층에서 캐시될 수 있어 궁극적으로 요청하는 클라이언트 애플리케이션의 성능이 향상되므로 이를 사용하는 것이 좋습니다.
+지속 쿼리는 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 및 CDN(Content Delivery Network) 계층에서 캐시될 수 있어 궁극적으로 요청하는 클라이언트 애플리케이션의 성능이 향상되므로 이를 사용하는 것이 좋습니다.
 
 기본적으로 AEM은 TTL(Time To Live) 정의에 따라 캐시를 무효화합니다. 이러한 TTL은 다음 매개변수로 정의할 수 있습니다. 이러한 매개변수는 다양한 방법으로 액세스할 수 있으며, 사용되는 메커니즘에 따라 이름이 다양합니다.
 

@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 9%
+source-wordcount: '471'
+ht-degree: 6%
 
 ---
 
@@ -32,7 +32,7 @@ JSON 내보내기는 다음을 기반으로 합니다. [Sling 모델](https://sl
 
 >[!NOTE]
 >
->Sling 모델 사용에 대한 예는 를 참조하십시오. [AEM에서 Sling 모델 내보내기 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=en).
+>Sling 모델 사용에 대한 예는 를 참조하십시오. [AEM에서 Sling 모델 내보내기 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko-KR).
 
 Sling 모델 구현 클래스에는 다음 주석이 포함되어야 합니다.
 

@@ -7,10 +7,10 @@ topic-tags: components
 content-type: reference
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 2%
+source-wordcount: '683'
+ht-degree: 3%
 
 ---
 
@@ -54,7 +54,7 @@ Adobe Experience Manager(AEM)에서 페이지를 편집할 때 몇 가지 [모�
 >다음을 참조하십시오.
 >
 >* 기술 자료 문서, [AEM TouchUI 문제 해결](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)추가 팁 및 도구는 를 참조하십시오.
->* 에 대한 AEM Gems 세션 [AEM 6.0 개발자 모드](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
+>* 에 대한 AEM Gems 세션 [AEM 6.0 개발자 모드](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## 개발자 모드 열기 {#opening-developer-mode}
@@ -77,7 +77,7 @@ Adobe Experience Manager(AEM)에서 페이지를 편집할 때 몇 가지 [모�
 
 * 페이지에 렌더링된 구성 요소 체인 및 템플릿(SLY, JSP 등)에 대해 설명합니다. 트리를 확장하여 계층 내에 컨텍스트를 표시할 수 있습니다.
 * 구성 요소를 렌더링할 서버측 계산 시간을 표시합니다.
-* 트리를 확장하고 트리 내에서 특정 구성 요소를 선택할 수 있습니다. 선택 항목을 통해 다음과 같은 구성 요소 세부 사항에 액세스할 수 있습니다.
+* 트리를 확장하고 트리 내에서 특정 구성 요소를 선택할 수 있습니다. 선택 항목을 통해 다음과 같은 구성 요소 세부 정보에 액세스할 수 있습니다.
 
    * 저장소 경로
    * 스크립트 링크(CRXDE Lite에서 액세스)
@@ -116,11 +116,11 @@ Adobe Experience Manager(AEM)에서 페이지를 편집할 때 몇 가지 [모�
 >
 >일부 링크는 아래의 스크립트를 가리킵니다. `/libs`. 하지만 이것은 참조용입니다. **은(는) 해서는 안 됨** 아래의 모든 항목 편집 `/libs`를 변경할 경우 변경 사항이 손실될 수 있습니다. 이는 이 분기가 핫픽스 또는 기능 팩을 업그레이드하거나 적용할 때마다 변경되기 쉽기 때문입니다. 아래에서 필요한 변경 작업을 수행합니다 `/apps`. 다음을 참조하십시오 [오버레이 및 무시](/help/sites-developing/overlays.md).
 
-### 오류 {#errors}
+### 오류수 {#errors}
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-바라건대 **오류** 탭은 위와 같이 항상 비어 있지만, 문제가 발생하면 각 구성 요소에 대해 다음 세부 정보가 표시됩니다.
+바라건대 **오류** 탭은 항상 비어 있지만(위와 같이) 문제가 발생하면 각 구성 요소에 대해 다음 세부 정보가 표시됩니다.
 
 * 구성 요소가 오류 로그에 오류의 세부 정보와 함께 항목을 쓰고 CRXDE Lite 내의 적절한 코드로 직접 연결하는 경우의 경고.
 * 구성 요소가 관리 세션을 여는 경우 경고 메시지가 표시됩니다.

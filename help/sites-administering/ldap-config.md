@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -38,7 +38,7 @@ LDAP가 AEM에서 작동하도록 하려면 세 개의 OSGi 구성을 생성해�
 
 >[!NOTE]
 >
->시청 [Oak의 외부 로그인 모듈 - LDAP 및 그 이상으로 인증](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=en) 외부 로그인 모듈을 자세히 살펴보십시오.
+>시청 [Oak의 외부 로그인 모듈 - LDAP 및 그 이상으로 인증](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) 외부 로그인 모듈을 자세히 살펴보십시오.
 >
 >Apache DS를 사용하여 Experience Manager을 구성하는 예를 보려면 를 참조하십시오. [Apache 디렉터리 서비스를 사용하도록 Adobe Experience Manager 6.5를 구성합니다.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 11%
+source-wordcount: '439'
+ht-degree: 4%
 
 ---
 
@@ -95,8 +95,8 @@ AEM에는 현재 동일한 릴리스에 클래식 UI와 터치에 적합한 UI�
   </tr>
   <tr>
    <td>CDN에 Dispatcher 사용</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn">CDN에 Dispatcher 사용</a></td>
-   <td>Akamai Edge Delivery 또는 Amazon Cloud Front와 같은 CDN(콘텐츠 게재 네트워크)은 최종 사용자에게 가까운 위치에서 콘텐츠를 제공합니다.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">CDN에 Dispatcher 사용</a></td>
+   <td>Akamai Edge Delivery 또는 Amazon Cloud Front와 같은 CDN(컨텐츠 전달 네트워크)은 최종 사용자에게 가까운 위치에서 컨텐츠를 전달합니다.</td>
   </tr>
   <tr>
    <td>성능 최적화</td>

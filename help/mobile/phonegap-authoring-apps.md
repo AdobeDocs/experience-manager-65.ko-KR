@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ AEM Sites 내에서 동일한 작업을 수행하는 것과 거의 동일한 방
 >
 >다음을 참조하십시오 [Adobe Mobile Services Cloud Service 구성](/help/mobile/configure-adobe-mobile-cloud-service.md) 을 참조하십시오.
 
-AEM Mobile은 다음을 통해 Adobe Analytics과 통합됩니다. [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) (AMS).
+AEM Mobile은 다음을 통해 Adobe Analytics과 통합됩니다. [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html) (AMS).
 
 제어 센터 **지표 타일** ams에서 가져온 애플리케이션의 요약 분석을 표시합니다. 오른쪽 하단에 있는 &#39;...&#39;를 클릭하여 분석 대시보드로 드릴다운할 수 있습니다.
 

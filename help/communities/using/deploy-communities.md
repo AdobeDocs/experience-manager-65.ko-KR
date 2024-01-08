@@ -3,10 +3,10 @@ title: 커뮤니티 배포
 description: AEM Communities 배포 방법
 content-type: reference
 topic-tags: deploying
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 2%
+source-wordcount: '1705'
+ht-degree: 1%
 
 ---
 
@@ -84,7 +84,7 @@ AEM 6.4부터 커뮤니티에 대한 업데이트는 AEM 누적 수정 팩 및 �
 
 AEM 6.5에 대한 최신 업데이트는 다음을 참조하십시오. [Adobe Experience Manager 6.4 누적 수정 팩 및 서비스 팩](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html).
 
-### 버전 내역 {#version-history}
+### 버전 기록 {#version-history}
 
 AEM 6.4 이상에서와 같이, AEM Communities 기능 및 핫픽스는 AEM Communities 누적 수정 팩 및 서비스 팩의 일부입니다. 따라서 별도의 기능 팩이 없습니다.
 
@@ -102,7 +102,7 @@ MySQL 커넥터를 별도로 가져와 설치해야 합니다.
 
    * 버전은 >= 5.1.38이어야 합니다.
 
-1. 추출 `mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive`
+1. Extract `mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive`
 1. 웹 콘솔을 사용하여 번들 을 설치하고 시작합니다.
 
    * 예: https://localhost:4502/system/console/bundles
@@ -196,7 +196,7 @@ AEM Communities에서 일반 저장소는 UGC를 저장하는 데 사용되며 �
 * 를 찾습니다. `AEM Communities Publisher Configuration`
 * 편집 아이콘 선택
 * 선택 취소 **기본 게시자** 확인란
-* **저장**&#x200B;을 선택합니다
+* 선택 **저장**
 
 ### 작성자의 복제 에이전트 {#replication-agents-on-author}
 
@@ -356,8 +356,8 @@ Apache HTTP 서버를 사용하는 경우 모든 관련 항목에 올바른 서�
 
 Dispatcher를 사용하는 경우 를 참조하십시오.
 
-* AEM [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko) 설명서
-* [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* AEM [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 설명서
+* [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
 * [커뮤니티에 대한 Dispatcher 구성](/help/communities/dispatcher.md)
 * [알려진 문제](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

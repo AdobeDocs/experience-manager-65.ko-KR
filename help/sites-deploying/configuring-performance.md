@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '6469'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 11%
 >
 >성능 문제 해결 및 해결에 대한 자세한 내용은 [성능 트리](/help/sites-deploying/performance-tree.md).
 >
->또한 다음에 대한 기술 자료 문서를 검토할 수 있습니다. [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>또한 다음에 대한 기술 자료 문서를 검토할 수 있습니다. [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 핵심 문제는 웹 사이트가 방문자 요청에 응답하는 데 걸리는 시간입니다. 이 값은 요청마다 다르지만 평균 대상 값을 정의할 수 있습니다. 이 값이 달성 가능하고 유지 가능한 것으로 입증되면 웹 사이트의 성능을 모니터링하고 잠재적인 문제의 발생을 나타내는 데 사용할 수 있습니다.
 
@@ -39,7 +39,7 @@ ht-degree: 11%
 >[!NOTE]
 >
 >* 성능 최적화를 위해 구성한 후 의 절차를 따릅니다. [Tough Day](/help/sites-developing/tough-day.md) 과중한 부하 상태에서 환경을 테스트합니다.
->* 참조: [성능 조정 팁입니다.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>* 참조: [성능 조정 팁입니다.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 ## 성능 최적화 방법론 {#performance-optimization-methodology}
 
@@ -201,7 +201,7 @@ AEM(및/또는 기본 저장소)의 특정 측면을 성능을 최적화하도�
 
 >[!NOTE]
 >
->다음을 참조하십시오 [성능 최적화](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>다음을 참조하십시오 [성능 최적화](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 ### 색인 검색 {#search-indexing}
 
@@ -476,7 +476,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 게시 환경�
 
 ## Dispatcher 사용 시 성능 최적화 {#optimizing-performance-when-using-the-dispatcher}
 
-다음 [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) 은 Adobe의 캐싱 및/또는 로드 밸런싱 도구입니다. Dispatcher를 사용할 때는 캐시 성능을 위해 웹 사이트를 최적화하는 것이 좋습니다.
+다음 [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 은 Adobe의 캐싱 및/또는 로드 밸런싱 도구입니다. Dispatcher를 사용할 때는 캐시 성능을 위해 웹 사이트를 최적화하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -492,7 +492,7 @@ Dispatcher는 웹 사이트에서 성능을 활용하는 경우 성능을 최적
 >
 >일반적으로, 많은 캐싱 전략은 좋은 URL을 선택하고 이 추가 데이터에 의존하지 않는 것을 포함합니다.
 >
->Dispatcher 버전 4.1.11에서 응답 헤더를 캐시할 수도 있습니다. 다음을 참조하십시오. [HTTP 응답 헤더 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
+>Dispatcher 버전 4.1.11에서 응답 헤더를 캐시할 수도 있습니다. 다음을 참조하십시오. [HTTP 응답 헤더 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 >
 
 ### Dispatcher 캐시 비율 계산 {#calculating-the-dispatcher-cache-ratio}
@@ -528,7 +528,7 @@ Dispatcher 버전 4.1.11에서는 응답 헤더를 캐시할 수 있습니다. D
 
 #### URL 매개 변수 방지 {#avoid-url-parameters}
 
-가능하면 캐시하려는 페이지의 URL 매개 변수를 사용하지 마십시오. 예를 들어 사진 갤러리가 있는 경우 다음 URL은 캐시되지 않습니다(Dispatcher가 [적절하게 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)되지 않은 경우).
+가능하면 캐시하려는 페이지의 URL 매개 변수를 사용하지 마십시오. 예를 들어 사진 갤러리가 있는 경우 다음 URL은 캐시되지 않습니다(Dispatcher가 [적절하게 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)되지 않은 경우).
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -616,7 +616,7 @@ www.myCompany.com/news/main.large.html
 
 #### 고정 연결 {#sticky-connections}
 
-[고정 연결](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#the-benefits-of-load-balancing) 은 한 명의 사용자에 대한 문서가 모두 동일한 서버에서 구성되도록 합니다. 사용자가 이 폴더를 떠났다가 나중에 다시 돌아와도 연결은 계속 유지됩니다. 웹 사이트에 고정 연결이 필요한 모든 문서를 보관하려면 폴더 하나를 정의합니다. 다른 문서는 여기에 넣지 마십시오. 이 시나리오는 개인화된 페이지 및 세션 데이터를 사용하는 경우 로드 밸런싱에 영향을 줍니다.
+[고정 연결](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) 은 한 명의 사용자에 대한 문서가 모두 동일한 서버에서 구성되도록 합니다. 사용자가 이 폴더를 떠났다가 나중에 다시 돌아와도 연결은 계속 유지됩니다. 웹 사이트에 고정 연결이 필요한 모든 문서를 보관하려면 폴더 하나를 정의합니다. 다른 문서는 여기에 넣지 마십시오. 이 시나리오는 개인화된 페이지 및 세션 데이터를 사용하는 경우 로드 밸런싱에 영향을 줍니다.
 
 #### MIME 유형 {#mime-types}
 

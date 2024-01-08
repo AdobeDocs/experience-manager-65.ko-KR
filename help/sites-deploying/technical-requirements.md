@@ -3,7 +3,7 @@ title: 기술 요구 사항
 description: Adobe Experience Manager에 대해 지원되는 클라이언트 및 서버 플랫폼 목록입니다.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3624'
 ht-degree: 0%
@@ -231,7 +231,7 @@ AEM Forms 6.5를 설치하는 경우 다음 32비트 Microsoft® Visual C++ 재�
 
 Adobe Experience Manager은 클라우드 컴퓨팅 환경의 가상 컴퓨터에서 실행될 수 있습니다. 이러한 환경에는 이 페이지에 나열된 기술 요구 사항을 준수하고 Adobe의 표준 지원 약관에 따라 실행되는 Microsoft® Azure 및 Amazon Web Services(AWS)가 포함됩니다.
 
-클라우드 기반 환경의 경우 AEM 제품 라인의 최신 오퍼링인 Adobe Experience Manager as a Cloud Service을 검토하십시오. 다음을 참조하십시오 [Adobe Experience Manager as a Cloud Service 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) 을 참조하십시오.
+클라우드 기반 환경의 경우 AEM 제품 라인의 최신 오퍼링인 Adobe Experience Manager as a Cloud Service을 검토하십시오. 다음을 참조하십시오 [Adobe Experience Manager as a Cloud Service 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ko-KR) 을 참조하십시오.
 
 또한 Adobe은 Azure 또는 AWS에 AEM을 배포할 수 있는 Adobe Managed Services을 제공합니다. Adobe Managed Services은 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포하고 운영하는 경험과 기술을 전문가에게 제공합니다. 다음을 참조하십시오 [Managed Services Adobe에 대한 추가 설명서](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -241,7 +241,7 @@ Adobe Managed Services 외부에 있는 Azure 또는 AWS에 AEM을 배포하는 
 
 ### Dispatcher 플랫폼(웹 서버) {#dispatcher-platforms-web-servers}
 
-Dispatcher는 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전 다운로드](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5를 사용하려면 Dispatcher 버전 4.3.2 이상이 필요합니다.
+Dispatcher는 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전 다운로드](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5를 사용하려면 Dispatcher 버전 4.3.2 이상이 필요합니다.
 
 다음 웹 서버는 Dispatcher 버전 4.3.2에서 사용할 수 있습니다.
 

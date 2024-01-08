@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3186'
 ht-degree: 4%
@@ -46,7 +46,7 @@ ht-degree: 4%
 >[!NOTE]
 >
 >다음 튜토리얼은 새 프로젝트에서 편집 가능한 페이지 템플릿을 설정하는 데 유용할 수도 있습니다.
->[AEM Sites 2부 시작하기 - 기본 페이지 및 템플릿 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=en)
+>[AEM Sites 2부 시작하기 - 기본 페이지 및 템플릿 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
 
 ## 새 템플릿 만들기 {#creating-a-new-template}
 
@@ -70,7 +70,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
    * 이 구조를 사용하여 템플릿의 구성 요소와 콘텐츠를 정의할 수 있습니다.
    * 템플릿 구조에 정의된 구성 요소는 결과 페이지 안에서 이동하거나 결과 페이지에서 삭제할 수 없습니다.
 
-      * 의 외부에 있는 사용자 지정 폴더에서 템플릿을 만드는 경우 `We.Retail` 샘플 콘텐츠에서 기초 구성 요소를 선택하거나 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
+      * 의 외부에 있는 사용자 지정 폴더에서 템플릿을 만드는 경우 `We.Retail` 샘플 콘텐츠에서 기초 구성 요소를 선택하거나 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 
    * 페이지 작성자가 구성 요소를 추가 및 제거할 수 있도록 하려면 템플릿에 단락 시스템을 추가하십시오.
    * 초기 콘텐츠를 정의할 수 있도록 하려면 구성 요소 잠금을 해제했다가 다시 잠글 수 있습니다.

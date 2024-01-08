@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3246'
 ht-degree: 0%
@@ -91,11 +91,11 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 콘텐츠를 유�
 
 ### Java 사용 {#using-java}
 
-[HTL Java Use-API를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). 이렇게 하면 Java 코드를 사용하여 구성 요소 콘텐츠를 선택하고 구성하기 위한 논리를 구현할 수 있습니다.
+[HTL Java Use-API를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). 이렇게 하면 Java 코드를 사용하여 구성 요소 콘텐츠를 선택하고 구성하기 위한 논리를 구현할 수 있습니다.
 
 ### JavaScript 사용 {#using-javascript}
 
-[HTL JavaScript Use-API를 사용하면 HTL 파일이 JavaScript로 작성된 도우미 코드에 액세스할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). 이렇게 하면 JavaScript 코드를 사용하여 구성 요소 콘텐츠를 선택하고 구성하는 논리를 구현할 수 있습니다.
+[HTL JavaScript Use-API를 사용하면 HTL 파일이 JavaScript로 작성된 도우미 코드에 액세스할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). 이렇게 하면 JavaScript 코드를 사용하여 구성 요소 콘텐츠를 선택하고 구성하는 논리를 구현할 수 있습니다.
 
 ### 클라이언트측 HTML 라이브러리 사용 {#using-client-side-html-libraries}
 
@@ -194,7 +194,7 @@ newComponent (cq:Component)
 >
 >다음을 참조하십시오.
 >
->* 의 AEM Gems 세션 [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+>* 의 AEM Gems 세션 [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 >* 관련 샘플 코드는에서 다룹니다 [코드 샘플 - 대화 상자 필드를 사용자 지정하는 방법](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -460,9 +460,9 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
    * 터치 지원 UI에서 사용할 대화 상자를 만듭니다. 그러나 호환성을 위해 터치 지원 UI에 대한 대화 상자가 정의되지 않은 경우 터치 지원 UI는 클래식 UI 대화 상자 정의를 사용할 수 있습니다.
    * 다음 [AEM 현대화 도구](/help/sites-developing/modernization-tools.md) 는 기존 구성 요소를 확장하는 데 도움이 됩니다.
    * [Granite UI 구성 요소에 ExtJS 매핑](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) 는 ExtJS xtype 및 노드 유형과 동일한 Granite UI 리소스 유형에 대한 편리한 개요를 제공합니다.
-   * 필드 사용자 정의. 자세한 내용은 의 AEM Gems 세션 을 참조하십시오. [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+   * 필드 사용자 정의. 자세한 내용은 의 AEM Gems 세션 을 참조하십시오. [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
    * 유형에서 (으)로 마이그레이션 [Granite UI 유효성 검사](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * JS 리스너 사용. 자세한 내용은 [필드 이벤트 처리](#handling-field-events) 및 의 AEM Gems 세션 [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+   * JS 리스너 사용. 자세한 내용은 [필드 이벤트 처리](#handling-field-events) 및 의 AEM Gems 세션 [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ### cq:listener 코드 마이그레이션 {#migrating-cq-listener-code}
 

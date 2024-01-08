@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Creative Cloud 폴더 공유 AEM 기능은 더 이상 사용되지 않습니다. 고객은 다음과 같은 새로운 기능을 사용하는 것이 좋습니다. [Adobe 에셋 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [AEM 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en). 다음에서 자세히 알아보기 [AEM 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md).
+>Creative Cloud 폴더 공유 AEM 기능은 더 이상 사용되지 않습니다. 고객은 다음과 같은 새로운 기능을 사용하는 것이 좋습니다. [Adobe 에셋 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [AEM 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). 다음에서 자세히 알아보기 [AEM 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

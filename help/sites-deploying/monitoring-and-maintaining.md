@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '5793'
 ht-degree: 0%
@@ -1096,9 +1096,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >
 자세한 내용은 다음 문서를 참조하십시오.
 >
-* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
-* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
-* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
+* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 * [느리고 차단된 프로세스 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1123,7 +1123,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 다음에 사용되는 JVM 설정 [AEM 시작](/help/sites-deploying/deploy.md#getting-started)
 * 기술 자료:
 
-   * [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+   * [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### 디스크 I/O {#disk-i-o}
 
@@ -1141,7 +1141,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 버전 제거를 구성 했는지 여부 및 구성 [ 방법](/help/sites-deploying/version-purging.md)
 * 기술 자료:
 
-   * [열려 있는 파일이 너무 많음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
+   * [열려 있는 파일이 너무 많음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
    * [저널에 디스크 공간이 너무 많이 사용됨](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### 정기적인 성능 저하 {#regular-performance-degradation}

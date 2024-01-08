@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 1%
+source-wordcount: '2092'
+ht-degree: 0%
 
 ---
 
@@ -62,7 +62,7 @@ Adobe Experience Manager(AEM)는 &quot;즉시 실행&quot;할 수 있도록 하�
 
 이 목록은 전체 세부 정보를 제공하는 페이지에 대한 링크와 함께 각 구성 측면에 대한 간단한 개요를 제공합니다.
 
-### Security 검사 목록 {#security-checklist}
+### 보안 검사 목록 {#security-checklist}
 
 몇 가지 주요 구성 문제가 다음에 나열됩니다. [보안 검사 목록](/help/sites-administering/security-checklist.md). 이 문서를 읽고 설치에 필요한 조치를 취했는지 확인하십시오.
 
@@ -178,7 +178,7 @@ AEM 내의 사용자 관리(액세스 권한 할당 포함)에 대해서는 다�
 
 Dispatcher는 캐싱, 로드 밸런싱 또는 둘 모두를 위한 Adobe Experience Manager의 도구입니다. 엔터프라이즈급 웹 서버와 함께 사용할 수 있습니다.
 
-다음을 참조하십시오 [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko) 특히 상세한 것은 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR) 추가 구성 세부 정보.
+다음을 참조하십시오 [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 특히 상세한 것은 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) 추가 구성 세부 정보.
 
 ### AEM LiveCycle 커넥터 구성 {#configuring-aem-livecycle-connector}
 

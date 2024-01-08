@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 41%
@@ -182,7 +182,7 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
 
 ## Adobe Target에서 경험 조각 사용 {#using-your-experience-fragments-in-adobe-target}
 
-앞의 작업을 수행하면 경험 조각이 Adobe Target의 오퍼 페이지에 표시됩니다. 다음을 살펴보십시오. [특정 Target 설명서](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=ko) 여기에서 달성할 수 있는 것에 대해 알아봅니다.
+앞의 작업을 수행하면 경험 조각이 Adobe Target의 오퍼 페이지에 표시됩니다. 다음을 살펴보십시오. [특정 Target 설명서](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) 여기에서 달성할 수 있는 것에 대해 알아봅니다.
 
 >[!NOTE]
 >

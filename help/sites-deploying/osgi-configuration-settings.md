@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3360'
 ht-degree: 0%
@@ -35,7 +35,7 @@ OSGi&quot;*는 응용 프로그램을 작고 재사용 가능하며 공동 작�
 
 >[!NOTE]
 >
->의 일부인 OSGi 구성 차이 도구 [AEM 도구](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=en)를 사용하여 기본 OSGi 구성을 나열할 수 있습니다.
+>의 일부인 OSGi 구성 차이 도구 [AEM 도구](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html)를 사용하여 기본 OSGi 구성을 나열할 수 있습니다.
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ JSON을 비활성화하지 마십시오.
 
 >[!CAUTION]
 >
->다음 중 하나에 대한 설정을 변경하는 경우 **축소** 또는 **Gzip**, clientlibs 캐시의 콘텐츠를 삭제합니다. 다음을 참조하십시오 [기술 자료 문서](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en) 을 참조하십시오.
+>다음 중 하나에 대한 설정을 변경하는 경우 **축소** 또는 **Gzip**, clientlibs 캐시의 콘텐츠를 삭제합니다. 다음을 참조하십시오 [기술 자료 문서](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) 을 참조하십시오.
 
 >[!NOTE]
 >

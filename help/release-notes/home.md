@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 6.5 릴리스 노트
 description: AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 다룹니다.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 85%
@@ -30,7 +30,7 @@ AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이�
 | [관리 안내서](/help/sites-administering/home.md) | AEM 관리 방법 이해 |
 | [작성 안내서](/help/sites-authoring/home.md) | 이 안내서에서는 AEM의 작성 개념을 설명합니다. |
 | [클래식 UI 작성 안내서](/help/sites-classic-ui-authoring/home.md) | 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 설명합니다. |
-| [Screens 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko) | 동적이고 대화형 디지털 경험을 게시할 수 있는 디지털 서명 솔루션에 대해 알아봅니다. |
+| [Screens 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | 동적이고 대화형 디지털 경험을 게시할 수 있는 디지털 서명 솔루션에 대해 알아봅니다. |
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |

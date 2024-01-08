@@ -7,10 +7,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2798'
-ht-degree: 1%
+source-wordcount: '2846'
+ht-degree: 0%
 
 ---
 
@@ -115,7 +115,7 @@ AEM은 가상화 환경에서 잘 실행되지만 CPU 또는 I/O와 같이 물�
 필요한 클러스터 노드의 수는 특정 웹 프로젝트의 기본 요구 사항과 특정 사용 사례를 기반으로 계산됩니다.
 
 * 장애 안전성의 관점에서, 모든 환경에서 클러스터 노드가 복구되는 데 걸리는 시간을 기반으로 심각한 장애와 장애 보상 시간을 결정해야 합니다.
-* 확장성의 측면에서 볼 때 기본적으로 쓰기 작업의 수가 가장 중요한 요소입니다. [동시 작업 작성자](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) 작성 환경 및 [소셜 공동 작업](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) 게시 환경용입니다. 로드 밸런싱은 읽기 작업만 처리하기 위해 시스템에 액세스하는 작업에 대해 설정할 수 있습니다. 다음을 참조하십시오. [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko) 을 참조하십시오.
+* 확장성의 측면에서 볼 때 기본적으로 쓰기 작업의 수가 가장 중요한 요소입니다. [동시 작업 작성자](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) 작성 환경 및 [소셜 공동 작업](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) 게시 환경용입니다. 로드 밸런싱은 읽기 작업만 처리하기 위해 시스템에 액세스하는 작업에 대해 설정할 수 있습니다. 다음을 참조하십시오. [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 을 참조하십시오.
 
 ## 작성자 환경별 계산 {#author-environment-specific-calculations}
 

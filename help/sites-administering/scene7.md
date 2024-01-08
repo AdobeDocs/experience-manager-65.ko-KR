@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '5425'
 ht-degree: 1%
@@ -418,7 +418,7 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 자산을 게시하지 않고 Dynamic Media Classic에 푸시하려면 먼저 다음을 설정해야 합니다.
 
 1. [Admin Console을 사용하여 지원 사례 만들기](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). 지원 사례에서 Dynamic Media Classic 계정에 대한 보안 미리 보기 활성화를 요청합니다.
-1. [Dynamic Media Classic 계정에 대한 보안 미리 보기 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en).
+1. [Dynamic Media Classic 계정에 대한 보안 미리 보기 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
 이러한 단계는 Dynamic Media Classic에서 보안 테스트 설정을 만들기 위해 따라야 하는 단계와 동일합니다.
 

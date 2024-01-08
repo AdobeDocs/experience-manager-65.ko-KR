@@ -1,6 +1,6 @@
 ---
 title: 컨텐츠 조각용 구성 요소
-description: Adobe Experience Manager (AEM) content fragments are created and managed as page-independent assets
+description: Adobe Experience Manager(AEM) 컨텐츠 조각은 페이지에 영향을 받지 않는 자산으로 제작되고 관리됩니다
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 6%
+source-wordcount: '932'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->다음 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en) 이제 가 권장됩니다. 다음을 참조하십시오 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko-KR) 을 참조하십시오.
+>다음 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) 이제 가 권장됩니다. 다음을 참조하십시오 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) 을 참조하십시오.
 >
 >이 섹션에서는 콘텐츠 조각과 함께 사용하기 위해 제공된 원래 구성 요소에 대해 자세히 설명합니다(**컨텐츠 조각** 다음에서 **일반** group).
 
@@ -37,7 +37,7 @@ ht-degree: 6%
 >
 >참조: [컨텐츠 조각 렌더링용 구성 요소 구성](/help/sites-developing/content-fragments-config-components-rendering.md) 추가 정보.
 
-Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md). 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. [그런 다음 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다](/help/sites-authoring/content-fragments.md). 다음 작업을 수행하여 기존 콘텐츠 조각 에셋을 사용할 수도 있습니다. [자산 브라우저에서 페이지로 드래그](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (기초 구성 요소 이미지와 같은 기타 에셋 기반 구성 요소의 경우). 기본 콘텐츠 조각 구성 요소는 하나만 표시합니다 [요소](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 참조된 콘텐츠 조각. 구성 요소 대화 상자를 사용하여 다음을 정의할 수 있습니다. [조각 단락의 요소, 변형 및 범위](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 을 선택합니다.
+Adobe Experience Manager(AEM) 콘텐츠 조각은 [페이지 독립적 자산으로 생성 및 관리됨](/help/assets/content-fragments/content-fragments.md). 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. [그런 다음 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다](/help/sites-authoring/content-fragments.md). 다음 작업을 수행하여 기존 콘텐츠 조각 에셋을 사용할 수도 있습니다. [자산 브라우저에서 페이지로 드래그](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (기초 구성 요소 이미지와 같은 기타 에셋 기반 구성 요소의 경우). 기본 콘텐츠 조각 구성 요소는 하나만 표시합니다 [요소](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 참조된 콘텐츠 조각. 구성 요소 대화 상자를 사용하여 다음을 정의할 수 있습니다. [조각 단락의 요소, 변형 및 범위](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 을 선택합니다.
 
 >[!NOTE]
 >

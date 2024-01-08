@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 6.5 Communities 안내서
 description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다. 커뮤니티를 배포, 관리, 개발 및 작성하는 방법을 설명하는 이 안내서를 찾아보십시오.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 70%
 
 * [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
-* [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)
+* [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.5 사용 안내서
@@ -39,10 +39,10 @@ ht-degree: 70%
 ## 주요 AEM 리소스
 
 * [AEM 자습서](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
-* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en)
+* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 * [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/#home)
 * [AEM 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)

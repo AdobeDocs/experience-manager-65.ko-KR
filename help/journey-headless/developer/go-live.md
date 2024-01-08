@@ -2,10 +2,10 @@
 title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정 부분에서는 Headless 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 51%
+source-wordcount: '1803'
+ht-degree: 53%
 
 ---
 
@@ -94,7 +94,7 @@ AEM Headless 프로젝트를 시작하도록 준비하려면 프로젝트의 모
 
 로컬 개발 환경이 설정되면 정적 노드 서버를 로컬로 배포하여 React 앱에 제공하는 콘텐츠를 시뮬레이션할 수 있습니다.
 
-로컬 개발 환경 및 콘텐츠 미리 보기에 필요한 모든 종속성 설정에 대해 자세히 알아보려면 를 참조하십시오. [프로덕션 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=en).
+로컬 개발 환경 및 콘텐츠 미리 보기에 필요한 모든 종속성 설정에 대해 자세히 알아보려면 를 참조하십시오. [프로덕션 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Go-Live를 위해 AEM Headless 애플리케이션 준비 {#prepare-your-aem-headless-application-for-golive}
 
@@ -128,7 +128,7 @@ AEM Headless 프로젝트를 시작하도록 준비하려면 프로젝트의 모
 ### Headless 콘텐츠 다운로드 시간 개선 {#improve-download-time}
 
 * HTTP 클라이언트가 HTTP/2를 사용하는지 확인합니다.
-* HTTP 클라이언트가 gzip에 대한 헤더 요청을 수락하는지 확인합니다.
+* HTTP 클라이언트가 gzip에 대한 헤더 요청을 수락하는지 확인하십시오.
 * JSON과 참조된 아티팩트를 호스팅하는 데 사용되는 도메인 수를 최소화합니다.
 * 사용 `Last-modified-since` 리소스를 새로 고칩니다.
 * JSON 파일의 `_reference`출력을 사용하여 전체 JSON 파일을 구문 분석하지 않고도 자산 다운로드를 시작합니다.
@@ -141,7 +141,7 @@ AEM Headless 프로젝트를 시작하도록 준비하려면 프로젝트의 모
 
 ## Maven을 사용하여 프로덕션에 배포 {#deploy-to-production-maven}
 
-의 경우 *기존* Maven을 사용한 배포(AMS 이외), [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en#build) 개요를 참조하십시오.
+의 경우 *기존* Maven을 사용한 배포(AMS 이외), [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) 개요를 참조하십시오.
 
 ## Cloud Manager를 사용하여 프로덕션에 배포 {#deploy-to-production-cloud-manager}
 
@@ -167,7 +167,7 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
       * 사용자 수, 요청 및 로드 확인
 * 앱 및 공간별 성능 보고서 액세스
    * 서버가 가동되면 일반 지표가 녹색/주황색/빨간색인지 확인한 다음 특정 앱 문제를 식별합니다.
-   * 앱 또는 공간으로 필터링된 위의 동일한 보고서를 엽니다(예: Photoshop 데스크탑, 유료화).
+   * 위에서 앱 또는 공간(예: Photoshop 데스크탑, Paywall)으로 필터링한 동일한 보고서 열기
    * Splunk 로그 API를 사용하여 서비스 및 애플리케이션 성능에 액세스
    * 다른 문제가 있는 경우 고객 지원 팀에 문의하십시오.
 
@@ -214,11 +214,11 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 ## 추가 리소스 {#additional-resources}
 
-* [AEM 개발 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=en)
+* [AEM 개발 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
 
-* [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
+* [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* [AEM용 Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)
+* [AEM용 Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
 * CDN 캐시
 

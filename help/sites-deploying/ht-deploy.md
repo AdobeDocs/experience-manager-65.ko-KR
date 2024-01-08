@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: e9ea9df4-a355-41fc-a102-01a5d7ca2629
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,6 @@ ht-degree: 0%
 * [로그 뷰어 사용 방법](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 * [워크플로우 및 감사 로그를 제거하는 방법](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
-* [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+* [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 * [시작 화면에서 기능을 제거하는 방법](/help/sites-developing/customizing-the-welcome-console.md)
 * [위치 추적기 기능을 끄는 방법](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)

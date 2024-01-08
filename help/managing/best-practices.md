@@ -7,10 +7,10 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3238'
-ht-degree: 2%
+source-wordcount: '3214'
+ht-degree: 0%
 
 ---
 
@@ -115,7 +115,7 @@ Adobe Experience Manager(AEM)를 구현하기 위해 프로젝트를 관리하�
    * 나중에 예산에 대한 검토나 세분화가 필요할 경우 우발사항과 검토 프로세스를 고려하십시오.
    * 비용은 구매, 리소스 사용, 수수료 등과 같은 다양한 형태로 발생한다는 점을 기억하십시오.
 
-### 계획 {#planning}
+### 계획 수립 {#planning}
 
 프로젝트를 계획하면 준비가 통합됩니다. 여기에서는 목표와 기대를 명확한 의사소통과 엄격한 검토를 통해 진행 상황을 측정하는 구체적인 작업으로 구성된 잘 정의된 로드맵으로 전환해야 합니다.
 
@@ -185,7 +185,7 @@ Adobe Experience Manager(AEM)를 구현하기 위해 프로젝트를 관리하�
 
    * 배포 및 유지 관리 요구 사항 등 각 환경에 맞는 프로세스
    * 유지 관리 활동(Datastore GC, TarPM 최적화 등)
-   * [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko) 캐싱
+   * [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 캐싱
    * [클러스터링](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
    * 클라이언트측 성능(JS 축소, concat, css 스프라이트, 총 http 요청 수 등)
 
@@ -441,7 +441,7 @@ Go-Live를 가능한 한 원활하게 진행해 보세요. 다시, 마지막 단
 
   내부 및 외부 사용자와 해당 콘텐츠에 대한 솔루션의 보안을 확인합니다.
 
-* **대체**
+* **대체 항목**
 
   시작하기 전에 폴백에 필요한 모든 시스템, 절차 및 메커니즘이 제대로 되어 있는지 확인하십시오.
 
@@ -606,7 +606,7 @@ Go-Live를 가능한 한 원활하게 진행해 보세요. 다시, 마지막 단
    * [하드웨어 크기 조정 지침](/help/managing/hardware-sizing-guidelines.md)
    * [엔터프라이즈 DevOps](/help/managing/enterprise-devops.md)
    * [SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md)
-   * [AEM 및 웹 접근성 지침](/help/managing/web-accessibility.md)
+   * [AEM 및 웹 액세스 가능성 지침](/help/managing/web-accessibility.md)
    * [일반 데이터 보호 규정](/help/managing/data-protection-and-privacy.md)* [모범 사례 배포 및 유지 관리](/help/sites-deploying/best-practices.md)
 * [모범 사례 관리](/help/sites-administering/administer-best-practices.md)
 * [모범 사례 개발](/help/sites-developing/best-practices.md)

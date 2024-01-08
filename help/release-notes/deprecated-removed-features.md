@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 6.5 릴리스에서 더 이상 사용되지 않거나 제거된 기능.
 description: Adobe Experience Manager 6.5에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 5c10c5d20338b696fdab2291c714a7d6313cca8a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 30%
@@ -63,7 +63,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | 영역 | 특별 포함 | 대체 | 버전(SP) |
 |--- |--- |--- |--- |
 | 과 통합 [!DNL Experience Cloud] | 자산을 과 동기화할 수 있습니다. [!DNL Experience Cloud] 를 통해 구성 사용 [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] 이전에 이(가) 호출되었습니다. [!DNL Adobe Experience Cloud]. | 문의사항이 있으시면, [Adobe 고객 지원 문의](https://experienceleague.adobe.com/?support-solution=General#support). |  |
-| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. 사용 [Adobe Analytics 제공 ActivityMap 플러그인](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko-KR). |  |
+| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. 사용 [Adobe Analytics 제공 ActivityMap 플러그인](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |  |
 | 통합 | ExactTarget 통합이 기본 배포(빠른 시작)에서 제거되어 더 이상 사용할 수 없습니다. | 교체 없음. |  |
 | 통합 | Salesforce Force API 통합이 기본 배포(빠른 시작)에서 제거되었으며 이제 설치할 추가 패키지입니다. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | 기능은 계속 사용할 수 있습니다. |
 | 양식 | Adobe 중앙 제품이 더 이상 지원되지 않으므로 Adobe 중앙 마이그레이션 브리지 서비스에 대한 지원이 제거되었습니다. | 교체 없음. |  |

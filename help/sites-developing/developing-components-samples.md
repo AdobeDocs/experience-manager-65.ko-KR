@@ -7,7 +7,7 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 6%
@@ -44,7 +44,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 >[!NOTE]
 >
->이 코드 샘플은 의 AEM Gems 세션과 관련되어 있습니다. [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+>이 코드 샘플은 의 AEM Gems 세션과 관련되어 있습니다. [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ## 관련 리소스 {#related-resources}
 

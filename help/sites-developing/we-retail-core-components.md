@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 4%
@@ -83,6 +83,6 @@ ht-degree: 4%
 
 ## 추가 정보 {#further-information}
 
-핵심 구성 요소에 대한 자세한 내용은 작성 문서를 참조하십시오 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en) 기술 개요를 참조하십시오.
+핵심 구성 요소에 대한 자세한 내용은 작성 문서를 참조하십시오 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) 기술 개요를 참조하십시오.
 
 또한 추가 조사를 원할 수 있습니다 [편집 가능한 템플릿](/help/sites-developing/we-retail-editable-templates.md). 작성 문서를 참조하십시오 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md) 편집 가능한 템플릿에 대한 자세한 내용을 살펴보십시오.

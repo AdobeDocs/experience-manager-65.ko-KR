@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 2%
+source-wordcount: '1387'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ AEM 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원하�
 
 >[!NOTE]
 >
->AEM 6.1의 경우 다음을 확인합니다 [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 이(가) 설치되었습니다.
+>AEM 6.1의 경우 다음을 확인합니다 [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) 이(가) 설치되었습니다.
 
 예외적인 상황에서는 비동기 인덱싱을 관리하는 데 사용되는 스레드 풀이 오버로드될 수 있습니다. 인덱싱 프로세스를 분리하기 위해 스레드 풀을 구성하여 다른 AEM 작업이 Oak의 적시 콘텐츠 인덱싱 기능을 방해하지 않도록 할 수 있습니다. 이 경우 다음을 수행합니다.
 

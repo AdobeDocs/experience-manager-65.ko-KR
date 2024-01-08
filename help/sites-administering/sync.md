@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2502'
-ht-degree: 3%
+source-wordcount: '2434'
+ht-degree: 1%
 
 ---
 
@@ -74,7 +74,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 1. 최신 코드가 설치되어 있는지 확인합니다.
 
-* [AEM 플랫폼 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko-KR?lang=ko)
+* [AEM 플랫폼 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
 * [AEM Communities 업데이트](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리 {#apache-sling-distribution-agent-sync-agents-factory}
@@ -314,7 +314,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 무시할 기본 노드:
 
    * .tokens
-   * system
+   * 시스템
 
 * **분산 폴더**
 동기화가 필요하지 않으므로 대부분의 sling:폴더가 무시됩니다. 몇 가지 예외가 여기에 나열됩니다.
@@ -506,9 +506,9 @@ User Sync Diagnostics 콘솔로 들어오면 결과가 표시됩니다.
 
 | **path** | **jcr:all** | **rep:glob** |
 |---|---|---|
-| /home | X | &#42;/활동/&#42; |
-| /home/users | X | &#42;/활동/&#42; |
-| /home/groups | X | &#42;/활동/&#42; |
+| /home | X | &#42;/activities/&#42; |
+| /home/users | X | &#42;/activities/&#42; |
+| /home/groups | X | &#42;/activities/&#42; |
 
 의 멤버로서 `administrators` 그룹, 인증된 사용자는 모든 게시 인스턴스에 대해 다음 권한을 가져야 합니다.
 

@@ -2,10 +2,10 @@
 title: 콘텐츠 페이지 속성 편집
 description: Adobe Experience Manager에서 페이지에 필요한 속성을 정의합니다.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 43%
+source-wordcount: '1855'
+ht-degree: 42%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 43%
 
   태그에 대한 자세한 내용은 [태그 사용](/help/sites-authoring/tags.md)을 참조하십시오.
 
-* **탐색 시 숨김**
+* **탐색 시 숨기기**
 
   결과 사이트의 페이지 탐색에 페이지가 표시되거나 숨겨지는지 여부를 나타냅니다.
 
@@ -60,7 +60,7 @@ ht-degree: 43%
 
   탐색에서 사용할 별도의 제목을 지정할 수 있습니다(예: 간결하게 나타내고자 하는 경우). 비어 있는 경우, **제목**&#x200B;이 사용됩니다.
 
-* **소제목**
+* **부제**
 
   페이지에서 사용할 부제입니다.
 
@@ -68,7 +68,7 @@ ht-degree: 43%
 
   페이지, 페이지 용도 또는 추가하고자 하는 기타 세부 정보에 대한 설명입니다.
 
-* **시간**
+* **정시**
 
   게시된 페이지가 활성화되는 날짜 및 시간입니다. 이 페이지는 게시되면 지정된 시간까지 휴면 상태로 유지됩니다.
 
@@ -167,7 +167,7 @@ ht-degree: 43%
 
 페이지 썸네일 이미지를 표시합니다. 다음을 작업을 수행할 수 있습니다.
 
-* **미리 보기 생성**
+* **미리보기 생성**
 
   썸네일로 사용할 페이지의 미리보기를 생성합니다.
 
@@ -187,7 +187,7 @@ ht-degree: 43%
 
 * **소셜 미디어 공유**
 
-  페이지에서 사용할 수 있는 공유 옵션을 정의합니다. 에서 사용할 수 있는 옵션을 표시합니다. [핵심 구성 요소 공유](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=en).
+  페이지에서 사용할 수 있는 공유 옵션을 정의합니다. 에서 사용할 수 있는 옵션을 표시합니다. [핵심 구성 요소 공유](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
 
    * **facebook에 대한 사용자 공유 활성화**
    * **pinterest에 대한 사용자 공유 활성화**

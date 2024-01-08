@@ -2,9 +2,9 @@
 title: GraphQL 쿼리 최적화
 description: Headless 콘텐츠 전달을 위해 Adobe Experience Manager as a Cloud Service에서 콘텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법에 대해 알아봅니다.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1949'
 ht-degree: 58%
 
 ---
@@ -81,7 +81,7 @@ GraphQL 쿼리 및 해당 JSON 응답은 타깃팅한 경우 캐시될 수 있�
 
 다음을 참조하십시오.
 
-* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn)
+* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### HTTP 캐시 제어 헤더 설정 {#set-http-cache-control-headers}
 

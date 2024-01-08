@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Adobe Analytics 계정은 다음 작업을 수행해야 합니다.
 
 ### Adobe Analytics 데이터 센터를 사용하도록 AEM 구성 {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en) Adobe Analytics 보고서 세트와 연결된 데이터를 수집, 처리 및 저장합니다. Adobe Analytics 보고서 세트를 호스팅하는 데이터 센터를 사용하도록 AEM을 구성합니다. 데이터 센터는 계약에 언급되어 있습니다. 이 정보는 조직의 관리자에게 문의하십시오.
+Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) Adobe Analytics 보고서 세트와 연결된 데이터를 수집, 처리 및 저장합니다. Adobe Analytics 보고서 세트를 호스팅하는 데이터 센터를 사용하도록 AEM을 구성합니다. 데이터 센터는 계약에 언급되어 있습니다. 이 정보는 조직의 관리자에게 문의하십시오.
 
 필요한 경우 다음을 사용하여 올바른 데이터 센터로 라우팅합니다. `https://api.omniture.com/`.
 

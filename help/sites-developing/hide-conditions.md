@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 2%
+source-wordcount: '582'
+ht-degree: 3%
 
 ---
 
 # 조건 숨기기 사용 {#using-hide-conditions}
 
-구성 요소 리소스의 렌더링 여부를 판별하기 위해 숨기기 조건을 사용할 수 있습니다. 템플릿 작성자가 핵심 구성 요소를 구성하는 경우가 이에 대한 예입니다 [목록 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en) 다음에서 [템플릿 편집기](/help/sites-authoring/templates.md) 및 은 하위 페이지를 기반으로 목록을 작성하는 옵션을 비활성화하기로 결정합니다. 디자인 대화 상자에서 이 옵션을 비활성화하면 목록 구성 요소가 렌더링될 때 숨기기 조건이 평가되고 하위 페이지 표시 옵션이 표시되지 않도록 속성이 설정됩니다.
+구성 요소 리소스의 렌더링 여부를 판별하기 위해 숨기기 조건을 사용할 수 있습니다. 템플릿 작성자가 핵심 구성 요소를 구성하는 경우가 이에 대한 예입니다 [목록 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) 다음에서 [템플릿 편집기](/help/sites-authoring/templates.md) 및 은 하위 페이지를 기반으로 목록을 작성하는 옵션을 비활성화하기로 결정합니다. 디자인 대화 상자에서 이 옵션을 비활성화하면 목록 구성 요소가 렌더링될 때 숨기기 조건이 평가되고 하위 페이지 표시 옵션이 표시되지 않도록 속성이 설정됩니다.
 
 ## 개요 {#overview}
 
@@ -53,7 +53,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 예 {#example}
 
-숨기기 조건의 예는 AEM 및 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 특히. 예를 들어 [목록 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en).
+숨기기 조건의 예는 AEM 및 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 특히. 예를 들어 [목록 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html).
 
 [템플릿 편집기 사용](/help/sites-authoring/templates.md)템플릿 작성자는 디자인 대화 상자에서 페이지 작성자가 사용할 수 있는 목록 구성 요소의 옵션을 정의할 수 있습니다. 정적 목록, 하위 페이지 목록, 태그가 지정된 페이지 목록 등을 허용할지 여부와 같은 옵션을 활성화하거나 비활성화할 수 있습니다.
 

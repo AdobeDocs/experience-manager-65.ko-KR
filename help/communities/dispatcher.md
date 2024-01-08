@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 11%
+source-wordcount: '601'
+ht-degree: 7%
 
 ---
 
@@ -23,7 +23,7 @@ AEM Communities의 경우 가 제대로 작동하도록 Dispatcher를 구성해�
 
 * [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) 문의
 
-메인 페이지 참조 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko).
+메인 페이지 참조 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
 
 ## Dispatcher 캐싱 {#dispatcher-caching}
 
@@ -39,7 +39,7 @@ Dispatcher 캐싱을 지원하도록 구성된 경우, TTL 기반 &quot;최대 �
 
 ### 요구 사항 {#requirements}
 
-* Dispatcher 버전 4.1.2 이상(참조 [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en) (최신 버전용)
+* Dispatcher 버전 4.1.2 이상(참조 [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) (최신 버전용)
 * [ACS AEM Commons 패키지](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * 버전 3.3.2 이상
@@ -66,7 +66,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 
 
 ## Dispatcher 필터 {#dispatcher-filters}
 
-의 /filter 섹션 `dispatcher.any` 파일은에 문서화되어 있습니다. [콘텐츠에 대한 액세스 구성 - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR).
+의 /filter 섹션 `dispatcher.any` 파일은에 문서화되어 있습니다. [콘텐츠에 대한 액세스 구성 - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
 
 이 섹션에서는 Communities 기능이 제대로 작동하는 데 필요한 항목에 대해 설명합니다.
 
@@ -76,7 +76,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 
 
 추가 참조:
 
-* [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en)
+* [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >

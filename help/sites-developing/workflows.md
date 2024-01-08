@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 3%
@@ -37,7 +37,7 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
 >
 >* 워크플로우에 참여하려면 다음을 참조하십시오. [워크플로우 사용](/help/sites-authoring/workflows.md).
 >* 워크플로우 및 워크플로우 인스턴스 관리 참조: [워크플로우 관리](/help/sites-administering/workflows.md).
->* 전체 커뮤니티 문서에 대한 자세한 내용은 [Adobe Experience Manager 워크플로우를 사용하여 디지털 에셋 수정.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=ko)
+>* 전체 커뮤니티 문서에 대한 자세한 내용은 [Adobe Experience Manager 워크플로우를 사용하여 디지털 에셋 수정.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)
 >* 다음을 참조하십시오. [워크플로우에 대해 AEM 전문가 웨비나에 문의하십시오.](https://communities.adobeconnect.com/p5s33iburd54/).
 >* 정보 위치에 대한 변경 내용은 [AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md) 및 [워크플로우 모범 사례 - 위치](/help/sites-developing/workflows-best-practices.md#locations).
 >
@@ -203,7 +203,7 @@ If **다중 리소스 지원** 가 워크플로우 모델에 대해 활성화되
 
 ### 워크플로우 및 Forms {#workflows-and-forms}
 
-일반적으로 워크플로는 AEM에서 양식 제출을 처리하는 데 사용됩니다. 다음과 함께 사용할 수 있습니다. [핵심 구성 요소의 양식 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=en) 표준 AEM 인스턴스에서 사용하거나 [AEM Forms 솔루션](/help/forms/using/aem-forms-workflow.md).
+일반적으로 워크플로는 AEM에서 양식 제출을 처리하는 데 사용됩니다. 다음과 함께 사용할 수 있습니다. [핵심 구성 요소의 양식 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) 표준 AEM 인스턴스에서 사용하거나 [AEM Forms 솔루션](/help/forms/using/aem-forms-workflow.md).
 
 양식을 작성할 때 양식 제출을 워크플로우 모델과 쉽게 연결할 수 있습니다. 예를 들어 저장소의 특정 위치에 콘텐츠를 저장하거나 사용자에게 양식 제출 및 해당 콘텐츠에 대해 알릴 수 있습니다.
 

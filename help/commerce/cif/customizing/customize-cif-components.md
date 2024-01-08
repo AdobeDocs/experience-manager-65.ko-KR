@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2306'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Adobe Experience Manager CIF 핵심 구성 요소 맞춤화 {#customize-cif-components}
 
-다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) Adobe Commerce에서 사용자 지정 특성을 표시할 구성 요소입니다. 또한 AEM(Adobe Experience Manager)와 Adobe Commerce 간의 GraphQL 통합 및 CIF 핵심 구성 요소에서 제공하는 확장 후크에 대해 자세히 알아봅니다.
+다음 [CIF Venia 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) Adobe Commerce에서 사용자 지정 특성을 표시할 구성 요소입니다. 또한 AEM(Adobe Experience Manager)와 Adobe Commerce 간의 GraphQL 통합 및 CIF 핵심 구성 요소에서 제공하는 확장 후크에 대해 자세히 알아봅니다.
 
 >[!TIP]
 >
@@ -190,7 +190,7 @@ AEM 코드로 이동하기 전에 다음을 살펴보는 것이 좋습니다. [A
 
 Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **코어** 생성된 프로젝트의 모듈입니다.
 
-사용 [선택한 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#set-up-the-development-ide) Venia 프로젝트를 가져옵니다. 사용된 스크린샷은 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
+사용 [선택한 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) Venia 프로젝트를 가져옵니다. 사용된 스크린샷은 [Visual Studio 코드 IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
 
 1. IDE에서 **코어** 모듈 위치: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 

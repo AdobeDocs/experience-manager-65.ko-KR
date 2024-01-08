@@ -2,7 +2,7 @@
 title: 에 대한 일반 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: "[!DNL Adobe Experience Manager] 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 요약한 6.5 참고 사항"
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '4484'
 ht-degree: 23%
@@ -18,7 +18,7 @@ ht-degree: 23%
 | 버전 | 6.5 |
 | 유형 | 주요 릴리스 |
 | 일반 가용 날짜 | 2019년 4월 8일 |
-| 권장 업데이트 | 다음을 참조하십시오 [AEM 최근 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko-KR?lang=ko). |
+| 권장 업데이트 | 다음을 참조하십시오 [AEM 최근 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html). |
 
 ### 트리비아 {#trivia}
 
@@ -115,7 +115,7 @@ AEM 6.5와 함께 AEM 6.4 SP2로 처음 제공되는 SPA 지원은 다음과 같
 
 #### 헤드리스 콘텐츠 관리 {#headless-content-management}
 
-AEM은 다양한 형식 및 다양한 스택 수준에서 콘텐츠를 제공할 수 있습니다. 일부는 2008년 이후 다음과 같은 현상이 있었습니다. [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 및 [POST 서블릿](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). 콘텐츠 서비스 ([Sling 모델 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=en))는 AEM 6.3에서 도입되었으며, AEM SJ SDK가 단일 페이지 앱을 하이드레이션하는 데 사용하는 메서드입니다. 다음 [자산용 HTTP API](/help/assets/mac-api-assets.md) 는 AEM 6.5용으로 확장된 CRUD API입니다.
+AEM은 다양한 형식 및 다양한 스택 수준에서 콘텐츠를 제공할 수 있습니다. 일부는 2008년 이후 다음과 같은 현상이 있었습니다. [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 및 [POST 서블릿](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). 콘텐츠 서비스 ([Sling 모델 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko-KR))는 AEM 6.3에서 도입되었으며, AEM SJ SDK가 단일 페이지 앱을 하이드레이션하는 데 사용하는 메서드입니다. 다음 [자산용 HTTP API](/help/assets/mac-api-assets.md) 는 AEM 6.5용으로 확장된 CRUD API입니다.
 
 새로운 HTTP API 기능:
 
@@ -137,7 +137,7 @@ AEM은 다양한 형식 및 다양한 스택 수준에서 콘텐츠를 제공할
 * 동적 자리 표시자를 사용하여 데이터 트리거된 콘텐츠의 위치 또는 구성으로 개인화합니다.
 * AEM Screens Player로의 Adobe Analytics 통합으로 추진된 통합 인사이트
 
-AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko)의 릴리스 노트를 참조하십시오.
+AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)의 릴리스 노트를 참조하십시오.
 
 #### 구성 요소 및 템플릿 개발 {#component-amp-template-development}
 
@@ -357,7 +357,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마
 
 [!DNL Experience Manager Assets Brand Portal]은 승인된 자산을 외부 공급업체/에이전시 및 내부 비즈니스 사용자가 간편하게 구매하고 효과적으로 제어하며 장치 간에 안전하게 분배할 수 있도록 지원합니다. 자산 공유의 효율성을 향상시키고, 자산 출시 시기를 앞당길 수 있으며, 규정을 준수하지 않고 무단 액세스하는 위험을 방지할 수 있습니다.
 
-자세한 내용은 [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ko-KR).
+자세한 내용은 [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 #### 연결된 자산 {#connectedassets}
 
@@ -596,4 +596,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * 의 추가 기능을 위한 제품 업데이트, 패치 및 패키지 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en).
+* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

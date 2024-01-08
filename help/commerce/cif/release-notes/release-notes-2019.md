@@ -2,10 +2,10 @@
 title: AEM Content and Commerce 릴리스 노트 2019
 description: 2019년 Adobe Experience Manager Content and Commerce 릴리스 노트.
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 10%
+source-wordcount: '946'
+ht-degree: 6%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 10%
 
 * 제품 세부 사항 페이지 및 제품 목록 페이지에 대한 완전히 작성 가능한 템플릿. 이제 작성자가 템플릿을 만들고 이러한 템플릿에서 제품 목록 및 제품 세부 사항 구성 요소를 드래그하여 놓을 수 있습니다. 이제 다른 구성 요소를 추가할 수 있을 뿐만 아니라 작성자도 이러한 템플릿의 레이아웃을 변경하여 마케팅 및 상거래 콘텐츠를 결합한 놀라운 경험을 자유롭게 만들 수 있습니다.
 
-* 작성자에게 친숙한 모든 CIF 핵심 구성 요소가 을 지원하도록 개선되었습니다 [AEM 스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). 제품 목록 구성 요소에 예제 스타일이 제공되었습니다.
+* 작성자에게 친숙한 모든 CIF 핵심 구성 요소가 을 지원하도록 개선되었습니다 [AEM 스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html). 제품 목록 구성 요소에 예제 스타일이 제공되었습니다.
 
 * 계정 관리를 위한 React 기반 클라이언트측 구성 요소입니다. 이 릴리스는 로그인, 암호 분실 및 계정 만들기 기능을 지원합니다.
 
@@ -91,9 +91,9 @@ ht-degree: 10%
 
 ### 새로운 기능 {#what-is-new-august}
 
-* 개발자에게 더 많은 유연성을 제공하기 위해 CIF 커넥터를 CIF Archetype에 임베드하는 것은 선택 사항입니다.
+* 개발자에게 보다 많은 유연성을 제공하기 위해 CIF Archetype에 CIF 커넥터 임베딩이 선택 사항입니다.
 
-* CIF 구성 요소는 &quot;Venia&quot; 특정 CSS 스타일링과 분리되어 개발자가 선택한 CSS 스타일링을 적용할 수 있습니다.
+* CIF 구성 요소는 &quot;Venia&quot; 특정 CSS 스타일링과 분리되어 개발자가 원하는 CSS 스타일링을 적용할 수 있습니다.
 
 * 여러 AEM 사이트 구조에서 CIF 핵심 구성 요소를 사용하고 기본 GraphQL 클라이언트 구현이 다른 Adobe Commerce 스토어/스토어 보기에 연결할 수 있도록 하는 다중 스토어/사이트 기능입니다.
 

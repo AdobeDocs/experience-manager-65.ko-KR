@@ -1,15 +1,15 @@
 ---
 title: 콘텐츠 서비스에 대한 JSON 내보내기
-description: AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 콘텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 콘텐츠를 게재할 수 있습니다.
+description: AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 컨텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 콘텐츠를 게재할 수 있습니다.
 contentOwner: User
 content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 38%
+source-wordcount: '411'
+ht-degree: 24%
 
 ---
 
@@ -27,7 +27,7 @@ AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 콘�
 
 >[!NOTE]
 >
->다음의 경우 여기에 설명된 기능을 모든 핵심 구성 요소에 사용할 수 있습니다. [핵심 구성 요소 릴리스 1.1.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR).
+>다음의 경우 여기에 설명된 기능을 모든 핵심 구성 요소에 사용할 수 있습니다. [핵심 구성 요소 릴리스 1.1.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 ## 콘텐츠 조각 핵심 구성 요소가 있는 JSON 내보내기 {#json-exporter-with-content-fragment-core-components}
 
@@ -87,7 +87,7 @@ AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.
 
 * JSON이 있는 AEM:
 
-   * [JSON 형식으로 페이지 정보 얻기](/help/sites-developing/pageinfo.md)
+   * [JSON 형식으로 페이지 정보 가져오기](/help/sites-developing/pageinfo.md)
 
 ## 관련 설명서 {#related-documentation}
 
@@ -99,4 +99,4 @@ AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
 
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)

@@ -8,10 +8,10 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3389'
-ht-degree: 5%
+source-wordcount: '3363'
+ht-degree: 2%
 
 ---
 
@@ -69,7 +69,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 
 >[!NOTE]
 >
->기본적으로 활성화됨 :
+>기본적으로 활성화됨:
 >
 >* 작성자의 에이전트 : 기본 에이전트(게시)
 >
@@ -105,7 +105,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 * [기본 에이전트](#replication-author-to-publish)
 작성자에서 게시로 복제하는 데 사용됩니다.
 
-* Dispatcher 플러시 Dispatcher 캐시 관리에 사용됩니다. 다음을 참조하십시오 [작성 환경에서 Dispatcher 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-the-authoring-environment) 및 [게시 인스턴스에서 Dispatcher 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance) 추가 정보.
+* Dispatcher 플러시 Dispatcher 캐시 관리에 사용됩니다. 다음을 참조하십시오 [작성 환경에서 Dispatcher 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) 및 [게시 인스턴스에서 Dispatcher 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) 추가 정보.
 
 * [역방향 복제](#reverse-replication-publish-to-author)
 게시에서 작성자로 복제하는 데 사용됩니다. 포럼, 블로그 및 댓글과 같은 커뮤니티 기능에는 역방향 복제가 사용되지 않습니다. 보낼 편지함이 활성화되지 않아 사실상 비활성화됩니다. 역방향 복제를 사용하려면 사용자 지정 구성이 필요합니다.
@@ -151,7 +151,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 
   기본값: `60000`
 
-* **에이전트 사용자 ID**
+* **에이전트 사용자 Id**
 
   환경에 따라 에이전트는 이 사용자 계정을 사용하여 다음을 수행합니다.
 
@@ -203,7 +203,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 
   여기에서 지정된 프로토콜(HTTP 또는 HTTPS)이 전송 방법을 결정합니다.
 
-  Dispatcher 플러시 에이전트의 경우, URI 속성은 경로 기반 가상 호스트 항목을 사용하여 팜을 구분하는 경우에만 사용되며 이 필드를 사용하여 무효화할 팜을 대상으로 합니다. 예를 들어 팜 #1에는 `www.mysite.com/path1/*`의 가상 호스트가 있고 팜 #2에는 `www.mysite.com/path2/*`의 가상 호스트가 있습니다. URL `/path1/invalidate.cache`를 사용하여 첫 번째 팜을 대상으로 지정하고 `/path2/invalidate.cache`를 사용하여 두 번째 팜을 대상으로 지정할 수 있습니다.
+  Dispatcher 플러시 에이전트의 경우, URI 속성은 경로 기반 가상 호스트 항목을 사용하여 팜을 구분하는 경우에만 사용되며 이 필드를 사용하여 무효화할 팜을 대상으로 합니다. 예를 들어 팜 #1에는 `www.mysite.com/path1/*`의 가상 호스트가 있고 팜 #2에는 `www.mysite.com/path2/*`의 가상 호스트가 있습니다. 다음의 URL을 사용할 수 있습니다. `/path1/invalidate.cache` 첫 번째 팜을 대상으로 지정합니다. `/path2/invalidate.cache` 두 번째 팜을 대상으로 지정합니다.
 
 * **사용자**
 
@@ -221,7 +221,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 
   NTML 인증용 호스트입니다.
 
-* **느슨한 SSL 허용**
+* **느슨한 SSL 사용**
 
   자체 인증 SSL 인증서를 허용하려면 활성화합니다.
 
@@ -294,7 +294,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
   >권장 기본 컨텍스트가 아닌 컨텍스트에 AEM을 설치한 경우 HTTP 헤더에 컨텍스트를 등록해야 합니다. 예:
   >`CQ-Handle:/<*yourContext*>{path}`
 
-* **연결 끊기**
+* **연결 닫기**
 
   활성화하면 각 요청 후에 연결을 닫을 수 있습니다.
 
@@ -338,7 +338,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 
   선택하면 에이전트가 복제 상태를 강제로 업데이트하지 않습니다.
 
-* **버전 관리 안함**
+* **버전 관리 없음**
 
   선택하면 에이전트가 활성화된 페이지에 버전 관리를 적용하지 않습니다.
 
@@ -352,7 +352,7 @@ MSSL을 사용하여 복제 에이전트를 게시 인스턴스에 연결하는 
 
 >[!NOTE]
 >
->Dispatcher가 작성자 또는 게시 인스턴스에 대한 HTTP 요청을 처리할 때 복제 에이전트의 HTTP 요청에는 PATH 헤더가 포함되어야 합니다. 다음 절차 외에도 PATH 헤더를 클라이언트 헤더의 Dispatcher 목록에 추가해야 합니다. 다음을 참조하십시오 [/clientheaders(클라이언트 헤더)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders).
+>Dispatcher가 작성자 또는 게시 인스턴스에 대한 HTTP 요청을 처리할 때 복제 에이전트의 HTTP 요청에는 PATH 헤더가 포함되어야 합니다. 다음 절차 외에도 PATH 헤더를 클라이언트 헤더의 Dispatcher 목록에 추가해야 합니다. 다음을 참조하십시오 [/clientheaders(클라이언트 헤더)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. 액세스 **도구** AEM의 탭
@@ -477,7 +477,7 @@ MSSL을 사용하여 복제 에이전트를 게시 인스턴스에 연결하는 
       * 복제에 사용되는 사이트별 사용자 계정을 입력합니다.
       * 필요에 따라 다른 매개 변수를 구성할 수 있습니다.
 
-   Dispatcher 플러시 에이전트의 경우, URI 속성은 경로 기반 가상 호스트 항목을 사용하여 팜을 구분하는 경우에만 사용되며 이 필드를 사용하여 무효화할 팜을 대상으로 합니다. 예를 들어 팜 #1에는 `www.mysite.com/path1/*`의 가상 호스트가 있고 팜 #2에는 `www.mysite.com/path2/*`의 가상 호스트가 있습니다. URL `/path1/invalidate.cache`를 사용하여 첫 번째 팜을 대상으로 지정하고 `/path2/invalidate.cache`를 사용하여 두 번째 팜을 대상으로 지정할 수 있습니다.
+   Dispatcher 플러시 에이전트의 경우, URI 속성은 경로 기반 가상 호스트 항목을 사용하여 팜을 구분하는 경우에만 사용되며 이 필드를 사용하여 무효화할 팜을 대상으로 합니다. 예를 들어 팜 #1에는 `www.mysite.com/path1/*`의 가상 호스트가 있고 팜 #2에는 `www.mysite.com/path2/*`의 가상 호스트가 있습니다. 다음의 URL을 사용할 수 있습니다. `/path1/invalidate.cache` 첫 번째 팜을 대상으로 지정합니다. `/path2/invalidate.cache` 두 번째 팜을 대상으로 지정합니다.
 
    >[!NOTE]
    >
@@ -563,7 +563,7 @@ Publisher는 모든 항목의 압축을 풀고 저장한 후 작성자에게 다
 
 ### 일괄 복제 구성 {#configuring-batch-replication}
 
-1. 다음으로 이동:`http://serveraddress:serverport/siteadmin`
+1. 다음으로 이동 `http://serveraddress:serverport/siteadmin`
 1. 누르기 **[!UICONTROL 도구]** 화면 상단에 있는 아이콘
 1. 왼쪽 탐색 레일에서 다음 위치로 이동합니다. **[!UICONTROL 복제 - 작성자의 에이전트]** 및 두 번 클릭 **[!UICONTROL 기본 에이전트]**.
    * 로 직접 이동하여 기본 게시 복제 에이전트에 연결할 수도 있습니다. `http://serveraddress:serverport/etc/replication/agents.author/publish.html`

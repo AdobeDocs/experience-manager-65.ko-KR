@@ -7,10 +7,10 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 2%
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
@@ -78,12 +78,12 @@ AEM 인스턴스에 대해 SSO를 구성하려면 다음을 구성합니다. [SS
 
 >[!NOTE]
 >
->또한 을 사용하는 경우 [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko) Microsoft® IIS(인터넷 정보 서버)를 사용하는 경우 다음에서 추가 구성이 필요합니다.
+>또한 을 사용하는 경우 [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Microsoft® IIS(인터넷 정보 서버)를 사용하는 경우 다음에서 추가 구성이 필요합니다.
 >
 * `disp_iis.ini`
 * IIS
 >
-위치 `disp_iis.ini` 설정: (참조) [Microsoft® Internet Information Server를 사용하여 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en#microsoft-internet-information-server) (전체 세부 정보)
+위치 `disp_iis.ini` 설정: (참조) [Microsoft® Internet Information Server를 사용하여 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) (전체 세부 정보)
 >
 * `servervariables=1` (IIS 서버 변수를 요청 헤더로 원격 인스턴스에 전달합니다.)
 * `replaceauthorization=1` (&quot;Basic&quot; 이외의 &quot;Authorization&quot;이라는 헤더를 &quot;Basic&quot;에 해당하는 헤더로 바꿉니다.)
