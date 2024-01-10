@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 2c5791e972deef5fe81768d10ad53acaf946332a
 workflow-type: tm+mt
-source-wordcount: '4333'
+source-wordcount: '4308'
 ht-degree: 9%
 
 ---
@@ -64,9 +64,6 @@ ht-degree: 9%
 
 * **64비트 XMLFM**: XMLFM의 64비트 반복은 강화된 성능, 확장성 및 정교한 메모리 관리를 제공합니다. 서버측에 배포된 최초의 64비트 네이티브 서비스입니다. XMLFM 64비트는 32비트보다 더 큰 메모리 리소스에 액세스할 수 있는 고유한 기능을 활용함으로써 더 큰 렌더링 워크로드를 원활하게 처리할 수 있도록 지원합니다. 이 이정표는 성능 향상을 나타낼 뿐만 아니라 AEM Forms 서버 내의 기본 서비스 프레임워크에 대한 주요 개선 사항을 소개합니다. 이 업데이트는 AEM Forms 서버가 모든 64비트 기본 서비스를 원활하게 지원할 수 있도록 합니다.
 
-**사용되지 않는 기능**
-
-* AEM의 ActiveMQ는 더 이상 사용되지 않습니다. ActiveMQ는 두 AEM Publish 인스턴스 간의 통신에 사용되었습니다. Adobe은 이제 고객이 로드 밸런서를 사용할 것을 권장합니다.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
