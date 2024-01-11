@@ -2,7 +2,7 @@
 title: 기초 구성 요소
 description: Adobe Experience Manager 6.5의 기초 구성 요소에 대해 알아봅니다.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '6872'
 ht-degree: 32%
@@ -976,7 +976,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!NOTE]
 >
->다음을 참조하십시오 [AEM Forms 도움말](/help/forms/home.md) AEM Forms에 대한 자세한 내용
+>다음을 참조하십시오 [AEM Forms 도움말](/help/forms/using/introduction-aem-forms.md) AEM Forms에 대한 자세한 내용
 
 Forms은 다음과 같은 몇 가지 구성 요소로 구성됩니다.
 

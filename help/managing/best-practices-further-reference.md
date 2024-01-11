@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 1%
@@ -34,7 +34,7 @@ AEM을 구현할 때(특히 처음으로) [AEM의 기능 및 워크플로](https
 * [자산](/help/assets/assets.md)
 * [태그](/help/sites-administering/tags.md)
 * [다중 사이트 관리 및 번역](/help/sites-administering/msm-and-translation.md)
-* [Forms](/help/forms/home.md)
+* [Forms](/help/forms/using/introduction-aem-forms.md)
 * [커뮤니티](/help/communities/deploy-communities.md)
 
 또한 다음을 확인하십시오. [릴리스 정보](/help/release-notes/release-notes.md)를 사용하여 다양한 AEM 버전에서 새 기능이 추가된 시기를 확인할 수 있습니다.

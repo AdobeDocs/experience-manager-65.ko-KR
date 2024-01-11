@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 65%
+source-wordcount: '521'
+ht-degree: 81%
 
 ---
 
@@ -79,7 +79,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 * **상대적 날짜 표시**
 
-  가독성을 높이기 위해 AEM에서는 지난 7일 이내의 날짜는 상대적 날짜(예: 3일 전)로 렌더링하고 그보다 오래된 날짜는 정확한 날짜(예: 2017년 3월 20일)로 렌더링합니다.
+  가독성을 높이기 위해 AEM에서는 최근 7일 이내의 날짜는 상대적 날짜(예: 3일 전)로 렌더링하고 그보다 오래된 날짜는 정확한 날짜(예: 2017년 3월 20일)로 렌더링합니다.
 
   이 선택 사항은 시스템 날짜가 표시되는 방법을 정의합니다. 다음 옵션을 사용할 수 있습니다.
 
@@ -101,16 +101,16 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
    * [페이지 편집을 위한 키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
 
-  키보드 단축키를 사용할 수 있도록 합니다. 기본적으로 활성화되어 있지만, 예를 들어 사용자에게 특정 액세서빌러티 요구 사항이 있는 경우 비활성화될 수 있습니다.
+  키보드 단축키를 사용할 수 있도록 합니다. 기본적으로 사용할 수 있지만 사용자에게 특정 액세스 가능성 요구 사항이 있는 경우처럼 원하는 경우에는 사용하지 않도록 설정할 수 없습니다.
 
 * **클래식 제작 환경 사용**
 
-  이 옵션을 사용하면 [클래식 UI](/help/sites-classic-ui-authoring/home.md)-기반 페이지 작성 기본적으로 표준 UI가 사용됩니다.
+  이 옵션을 사용하면 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-기반 페이지 작성 기본적으로 표준 UI가 사용됩니다.
 
 * **자산 홈 페이지 활성화**
 
-  이 옵션은 시스템 관리자가 전체 조직에 대해 [자산 홈페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
+  이 선택 사항은 시스템 관리자가 전체 조직에 대해 [자산 홈 페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
 
 * **Stock 구성**
 
-  이 옵션을 사용하면 기본 Adobe Stock 구성을 지정할 수 있으며, 이 옵션은 시스템 관리자가 활성화한 경우에만 사용할 수 있습니다 [Adobe Stock 통합](/help/assets/aem-assets-adobe-stock.md).
+  이 옵션을 통해 기본 Adobe Stock 구성을 지정할 수 있으며, 이 옵션은 시스템 관리자가 [Adobe Stock 통합](/help/assets/aem-assets-adobe-stock.md)을 사용하도록 설정한 경우에만 사용할 수 있습니다.

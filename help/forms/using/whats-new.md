@@ -5,7 +5,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: ea11ecff5be51a19ab901a588200519a70cf9efc
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 39%
@@ -58,7 +58,7 @@ XMLFM의 64비트 반복은 향상된 성능, 확장성 및 정교한 메모리 
 
 ## 버그 수정
 
-이 릴리스에는 고객이 보고한 20개 이상의 문제에 대한 수정 사항도 포함되어 있습니다. 서비스 팩에 포함된 수정 사항의 자세한 목록은 을 참조하십시오. [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#forms-6519)
+이 릴리스에는 고객이 보고한 20개 이상의 문제에 대한 수정 사항도 포함되어 있습니다. 서비스 팩에 포함된 수정 사항의 자세한 목록은 을 참조하십시오. [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR#forms-6519)
 
 
 ## 서비스 팩 설치
@@ -267,7 +267,7 @@ In line with planned EOL of Adobe Flash Player and overall direction of migratin
 #### Security improvements {#security-improvements}
 
 * AEM 6.5 Forms on JEE administration console UI is now based on Apache Struts 2.5.
-* AEM 6.5 Forms now uses jQuery to 3.2.1 and jQuery UI 1.12.1. See, [upgrade documentation](/help/forms/home.md) for the impact of the change.
+* AEM 6.5 Forms now uses jQuery to 3.2.1 and jQuery UI 1.12.1. See, [upgrade documentation](/help/forms/using/introduction-aem-forms.md) for the impact of the change.
 
 #### Accessibility improvements {#accessibility-improvements}
 

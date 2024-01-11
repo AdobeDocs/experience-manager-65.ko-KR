@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
@@ -144,7 +144,7 @@ Touch UI로의 마이그레이션과 직접 관련이 없지만, 권장되는 �
 
 AEM 개발에 대한 전체 정보는 아래의 리소스 컬렉션을 참조하십시오.
 
-* [개발 사용 안내서](/help/sites-developing/home.md)
+* [개발 사용 안내서](/help/sites-developing/getting-started.md)
 * [Granite UI 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Sites Tutorials 및 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [AEM Sites 개발 시작하기 - WKND 튜토리얼](/help/sites-developing/getting-started.md)

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1792'
 ht-degree: 3%
 
 ---
@@ -73,7 +73,7 @@ AEM은 또한 이 기반을 기반으로 다음 관리를 위한 여러 애플�
 * **웹 사이트**
 * **모바일 애플리케이션**
 * **디지털 발행물**
-* **양식 및 문서**
+* **Forms 및 문서**
 * **디지털 자산**
 * **커뮤니티**
 * **온라인 상거래**
@@ -84,7 +84,7 @@ AEM 서버는 **Java 기반** 및 는 해당 플랫폼을 지원하는 대부분
 
 >[!NOTE]
 >
->AEM 6.5 빠른 시작에서 사용할 수 있는 적응형 Forms 기능은 탐색 및 평가 목적으로만 설계되었습니다. 프로덕션 사용을 위해서는 적응형 Forms 기능에 적절한 라이선스가 필요하므로 AEM Forms에 대한 유효한 라이선스를 얻는 것이 필수적입니다.
+>AEM 6.5 빠른 시작에서 사용할 수 있는 적응형 Forms 기능은 탐색 및 평가 목적으로만 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
 ### 일반적인 배포 시나리오 {#typical-deployment-scenarios}
 
@@ -287,9 +287,9 @@ AEM은 웹 브라우저를 시작하고 자동으로 적절한 페이지(일반�
 
 로그인하면 AEM에 액세스할 수 있습니다. 자세한 내용은 역할에 따라 다음을 참조하십시오.
 
-* [작성](/help/sites-authoring/home.md)
+* [작성](/help/sites-authoring/first-steps.md)
 * [관리](/help/sites-administering/home.md)
-* [개발](/help/sites-developing/home.md)
+* [개발](/help/sites-developing/getting-started.md)
 * [관리](/help/managing/best-practices.md)
 
 ## 고급 배포 {#advanced-deployment}

@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 docset: aem65
 exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 3%
@@ -39,7 +39,7 @@ AEM 게재 및 콘텐츠 관리 API:
 
    * [JSON 내보내기](/help/sites-developing/json-exporter.md)
    * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
-   * 다음을 참조하십시오. [개발 사용 안내서의 구성 요소 섹션](/help/sites-developing/home.md) 추가 정보
+   * 다음을 참조하십시오. [개발 사용 안내서의 구성 요소 섹션](/help/sites-developing/getting-started.md) 추가 정보
 
 * **에셋**: Assets HTTP API를 사용하면 이진, 메타데이터, 렌디션 및 주석을 포함하여 에셋에서 CRUD(create-read-update-delete) 작업을 수행할 수 있습니다. 다음을 참조하십시오 [AEM ASSETS HTTP API](/help/assets/mac-api-assets.md)
 

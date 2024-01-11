@@ -2,12 +2,13 @@
 title: AEM CIF 클래식
 description: Adobe Experience Manager CIF Classic 자가 진단 리소스 및 설명서 링크.
 exl-id: ae0823b3-d847-42b6-ba92-e4e949da1799
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
+
 
 # AEM CIF 클래식 {#commerce-guide}
 
@@ -17,9 +18,8 @@ ht-degree: 5%
 >
 >CIF Classic은 유지 관리 모드입니다.
 >
->* 새 프로젝트는 다음을 사용해야 함 [AEM CIF](/help/commerce/home.md).
+>* 새 프로젝트는 다음을 사용해야 함 [AEM CIF](/help/commerce/cif/introduction.md).
 >* 기존 CIF Classic은 [AEM CIF으로 마이그레이션](/help/commerce/cif/migration.md).
->
 
 ## 주요 CIF Classic 문서 {#key-articles}
 

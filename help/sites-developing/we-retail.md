@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 11%
+source-wordcount: '727'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ We.Retail에서는 HTL, 응답형 레이아웃, 편집 가능한 템플릿, 핵�
 
 AEM 표준 참조 구현인 We.Retail에서는 AEM의 가장 강력한 기능 중 일부를 소개합니다.
 
-| **특별 포함** | **설명** | **관심 있으십니까?** |
+| **기능** | **설명** | **관심 있으십니까?** |
 |---|---|---|
 | [세계화된 부위 구조](/help/sites-administering/tc-bp.md) | We.Retail에는 국가별 사이트에 라이브 카피되는 언어 마스터가 포함되어 있습니다. | [한번 해봐!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) | 모든 페이지에는 화면 및 장치 크기에 맞게 동적으로 조정되는 반응형 레이아웃이 있습니다. | [한번 해봐!](/help/sites-developing/we-retail-responsive-layout.md) |
@@ -49,7 +49,7 @@ We.Retail은 AEM 샘플 콘텐츠로 제공됩니다. 를 사용하려면 [평�
 
 >[!CAUTION]
 >
->We.Retail은 최신 AEM 기술을 기반으로 하므로 을 지원하지 않습니다 [클래식 UI 작성](/help/sites-classic-ui-authoring/home.md).
+>We.Retail은 최신 AEM 기술을 기반으로 하므로 을 지원하지 않습니다 [클래식 UI 작성](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### 최신 버전 {#latest-version}
 
@@ -75,7 +75,7 @@ We.Retail은 기술적으로 더 강력하고 최신 AEM 기술을 활용하여 
 * **사용 가능** 는 기능의 예가 샘플 콘텐츠에서 발견됨을 의미합니다.
 * **사용할 수 없음** 는 기능의 예를 샘플 컨텐츠에서 사용할 수 없음을 의미하지만 기능 자체가 아니라는 것을 의미하지는 않습니다.
 
-| **특별 포함** | **We.Retail** | **Geometrixx** |
+| **기능** | **We.Retail** | **Geometrixx** |
 |---|---|---|
 | 세계화된 부위 구조 | 언어 마스터가 국가별 사이트에 라이브 복사됨 | 사용할 수 없음 |
 | 콘텐츠 조각 | 사용 가능 | 사용할 수 없음 |
@@ -102,7 +102,7 @@ We.Retail은 오픈 소스 프로젝트로 출시되었으며 소스 코드의 �
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다.
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다.
 
 * [GitHub에서 aem-sample-we-retail 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)

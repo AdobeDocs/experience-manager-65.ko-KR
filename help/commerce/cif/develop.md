@@ -7,10 +7,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 10%
+source-wordcount: '797'
+ht-degree: 2%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 10%
 
 AEM용 CIF(Commerce integration framework)를 기반으로 AEM Commerce 프로젝트를 개발하는 것은 다른 AEM 프로젝트와 동일한 규칙 및 모범 사례를 따릅니다. 먼저 다음 사항을 검토하십시오.
 
-- [AEM 6.5 개발 사용 안내서](/help/sites-developing/home.md)
-- [AEM 코어 개념](/help/sites-developing/the-basics.md)
+- [AEM 6.5 개발 사용 안내서](/help/sites-developing/getting-started.md)
+- [AEM 핵심 개념](/help/sites-developing/the-basics.md)
 - [AEM 개발 - 지침 및 우수 사례](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법](/help/sites-developing/ht-projects-maven.md)
 

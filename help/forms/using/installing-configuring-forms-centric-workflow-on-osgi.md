@@ -5,7 +5,7 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 4%
@@ -28,7 +28,7 @@ AEM Forms은 강력한 엔터프라이즈급 플랫폼입니다. OSGi에서의 F
 >
 >OSGi의 Forms 중심 워크플로우를 사용하면 JEE 스택에 완전한 프로세스 관리 기능을 설치하지 않고도 OSGi 스택에서 다양한 작업을 위한 워크플로우를 빠르게 빌드하고 배포할 수 있습니다. 참조: [비교](capabilities-osgi-jee-workflows.md) OSGi의 Forms 중심 AEM 워크플로우 및 JEE의 프로세스 관리를 통해 기능의 차이점과 유사점을 알아보십시오.
 >
->비교 후 JEE 스택에 프로세스 관리 기능을 설치하도록 선택하는 경우 다음을 참조하십시오. [JEE에 AEM Forms 설치 또는 업그레이드](/help/forms/home.md) jee 스택 설치 및 구성 및 프로세스 관리 기능에 대한 자세한 내용은 을 참조하십시오.
+>비교 후 JEE 스택에 프로세스 관리 기능을 설치하도록 선택하는 경우 다음을 참조하십시오. [JEE에 AEM Forms 설치 또는 업그레이드](/help/forms/using/introduction-aem-forms.md) jee 스택 설치 및 구성 및 프로세스 관리 기능에 대한 자세한 내용은 을 참조하십시오.
 
 ## 배포 토폴로지 {#deployment-topology}
 

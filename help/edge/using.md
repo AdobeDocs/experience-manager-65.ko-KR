@@ -1,11 +1,11 @@
 ---
 title: Edge Delivery Services 사용
-description: Edge Delivery Services 사용 (EDS)
+description: Edge Delivery Services 사용
 exl-id: 6c9178b0-c8f3-4fc7-8614-8e71ffc2f0b8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 93%
+source-wordcount: '586'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ Edge Delivery를 사용하여 콘텐츠 소스에 관계없이 원활하게 콘�
 
 ## Edge Delivery Services 및 GitHub {#github-edge}
 
-Edge 전달은 GitHub를 사용하므로 고객은 GitHub 저장소에서 직접 코드를 관리하고 배포할 수 있습니다. 예를 들어 Google Docs 또는 Microsoft Word에서 콘텐츠를 작성할 수 있고, GitHub의 CSS 및 JavaScript를 사용하여 사이트 기능을 개발할 수 있습니다. 콘텐츠 미리보기부터 프로덕션까지 각 분기별로 웹 사이트가 자동으로 생성됩니다. GitHub 저장소에 저장된 모든 리소스는 빌드 프로세스 없이 웹 사이트에서 제공됩니다.
+Edge Delivery는 GitHub를 사용하므로 고객은 GitHub 저장소에서 바로 코드를 관리 및 배포할 수 있습니다. 예를 들어 Google Docs 또는 Microsoft Word에서 콘텐츠를 작성할 수 있고, GitHub의 CSS 및 JavaScript를 사용하여 사이트 기능을 개발할 수 있습니다. 콘텐츠 미리보기부터 프로덕션까지 각 분기별로 웹 사이트가 자동으로 생성됩니다. GitHub 저장소에 저장된 모든 리소스는 빌드 프로세스 없이 웹 사이트에서 제공됩니다.
 
 ## Sidekick 사용 {#using-sidekick}
 
@@ -57,4 +57,4 @@ AEM Assets Sidekick 플러그인을 구성한 후에는 [Microsoft Word 또는 G
 * Edge Delivery를 시작하는 방법에 대한 자세한 내용은 Edge Delivery 설명서의 [빌드](https://www.hlx.live/docs/#build) 섹션을 참조하십시오.
 * Edge Delivery를 사용하여 콘텐츠를 작성 및 게시하는 방법을 이해하려면 [게시 섹션](https://www.hlx.live/docs/authoring)을 참조하십시오.
 * Sidekick 확장 기능을 사용하는 방법을 이해하려면 [Sidekick 사용](https://www.hlx.live/docs/sidekick) 페이지를 참조하십시오.
-* AEM 작성에 대한 자세한 내용은 [작성 개념 페이지](/help/sites-authoring/author.md) 참조)
+* AEM 작성에 대해서는 [작성 개념 페이지](/help/sites-authoring/author.md))

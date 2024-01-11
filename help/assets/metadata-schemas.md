@@ -7,7 +7,7 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '3595'
 ht-degree: 8%
@@ -55,7 +55,7 @@ ht-degree: 8%
 | | <ul><li>[!UICONTROL 비디오]</li></ul> | MIME 유형의 비디오 자산에 대한 스키마 양식: `video/avi` 및 `video/mp4`. |
 | [!UICONTROL 컬렉션] | | 컬렉션에 대한 스키마 양식입니다. |
 | [!UICONTROL contentfragment] | | [콘텐츠 조각용 스키마 양식](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL 양식] | | 이 스키마 양식과 관련된 항목 [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL 양식] | | 이 스키마 양식과 관련된 항목 [Adobe Experience Manager Forms](/help/forms/using/introduction-aem-forms.md). |
 | [!UICONTROL ugc_contentfragment] | | 소셜 미디어에서 Experience Manager에 통합된 사용자 생성 콘텐츠 부분 및 에셋에 대한 스키마 양식입니다. |
 
 >[!NOTE]
@@ -257,7 +257,7 @@ The schema editor lets you add or delete a tab. 기본 스키마 양식에는 **
 
 1. 마찬가지로 에셋 유형 필드의 값 Video와 코덱 및 지속 시간과 같은 다른 필드 간에 종속성을 만듭니다.
 1. 에서 문서 에셋(PDF 및 Word) 간에 종속성을 만들려면 단계를 반복합니다. [!UICONTROL 에셋 유형] 필드 및 필드 [!UICONTROL 페이지 수] 및 [!UICONTROL 작성자].
-1. 클릭 **[!UICONTROL 저장]**. 폴더에 메타데이터 스키마를 적용합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 폴더에 메타데이터 스키마를 적용합니다.
 
 1. 메타데이터 스키마를 적용한 폴더로 이동하고 자산의 속성 페이지를 엽니다. 에셋 유형 필드에서 선택한 사항에 따라 관련 계단식 메타데이터 필드가 표시됩니다.
 
@@ -340,7 +340,7 @@ The schema editor lets you add or delete a tab. 기본 스키마 양식에는 **
 
    *그림: 메타데이터 스키마 양식 편집기에 추가된 텍스트 필드*
 
-1. 클릭 **[!UICONTROL 저장]**. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다.
 1. 클릭 **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
 
 1. 수정된 스키마를 적용할 폴더를 선택한 다음 **[!UICONTROL 적용]**.
@@ -368,7 +368,7 @@ The schema editor lets you add or delete a tab. 기본 스키마 양식에는 **
 
    *그림: 메타데이터 스키마 양식 편집기의 필수 필드*
 
-1. 클릭 **[!UICONTROL 저장]**. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다. 양식을 선택하고 **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다. 양식을 선택하고 **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
 
 1. 폴더로 이동하고 사용자 정의 양식에 추가한 필수 필드에 대해 메타데이터가 누락된 일부 에셋을 업로드합니다. 필수 필드에 대한 누락된 메타데이터에 대한 메시지가 에셋의 카드 보기에 표시됩니다.
 

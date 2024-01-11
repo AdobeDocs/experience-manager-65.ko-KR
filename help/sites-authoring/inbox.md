@@ -2,7 +2,7 @@
 title: 작업을 관리할 받은 편지함
 description: Adobe Experience Manager 6.5의 받은 편지함으로 작업 관리.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 62%
@@ -39,7 +39,7 @@ ht-degree: 62%
 >* [프로젝트](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [프로젝트 - 작업 중](/help/sites-authoring/task-content.md)
 >* [워크플로우](/help/sites-authoring/workflows.md)
->* [양식](/help/forms/home.md)
+>* [양식](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## 헤더의 받은 편지함 {#inbox-in-the-header}

@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2963'
 ht-degree: 52%
@@ -91,7 +91,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
   </tr>
   <tr>
    <td>자산<br /> </td>
-   <td>이러한 콘솔에서는 및 <a href="/help/assets/home.md">디지털 자산 관리</a> 이미지, 비디오, 문서 및 오디오 파일 등. 그런 다음 동일한 AEM 인스턴스에서 실행되는 웹 사이트에서 이러한 자산을 사용할 수 있습니다.   </td>
+   <td>이러한 콘솔에서는 및 <a href="/help/assets/assets.md">디지털 자산 관리</a> 이미지, 비디오, 문서 및 오디오 파일 등. 그런 다음 동일한 AEM 인스턴스에서 실행되는 웹 사이트에서 이러한 자산을 사용할 수 있습니다.   </td>
   </tr>
   <tr>
    <td>커뮤니티</td>
@@ -107,7 +107,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
   </tr>
   <tr>
    <td>Forms</td>
-   <td>이 콘솔을 사용하여 다음을 만들고, 관리하고, 처리할 수 있습니다. <a href="/help/forms/home.md">양식 및 문서</a>.</td>
+   <td>이 콘솔을 사용하여 다음을 만들고, 관리하고, 처리할 수 있습니다. <a href="/help/forms/using/introduction-aem-forms.md">양식 및 문서</a>.</td>
   </tr>
   <tr>
    <td>개인화</td>

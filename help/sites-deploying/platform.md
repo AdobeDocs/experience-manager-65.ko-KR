@@ -1,18 +1,19 @@
 ---
 title: AEM 플랫폼 소개
-description: 이 문서에서는 AEM 플랫폼 및 가장 중요한 구성 요소에 대한 일반적인 개요를 제공합니다.
+description: Adobe Experience Manager 6.5 설치 및 배포를 비롯한 AEM 플랫폼과 가장 중요한 구성 요소에 대해 알아보고, Managed Services 클라우드 배포 Adobe을 비롯한 아키텍처에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '776'
 ht-degree: 1%
 
 ---
+
 
 # AEM 플랫폼 소개{#introduction-to-the-aem-platform}
 

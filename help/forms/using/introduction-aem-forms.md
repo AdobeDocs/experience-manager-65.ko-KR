@@ -1,16 +1,16 @@
 ---
 title: AEM Forms 소개
-description: Adobe Experience Manager Forms을 통해 비즈니스 사용자는 매력적인 반응형 적응형 양식을 웹 및 모바일 사이트에 통합하여 디지털 등록 프로세스를 간소화하고 고객 전환율을 높일 수 있습니다.
+description: 이 AEM 6.5 안내서를 사용하여 디지털 양식을 작성하고, 관리하고, 게시하고, 업데이트합니다. 설치, 업그레이드 및 구성에 대한 도움말을 확인하고 적응형 양식 작성에 대해 살펴봅니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 12%
+source-wordcount: '950'
+ht-degree: 15%
 
 ---
 

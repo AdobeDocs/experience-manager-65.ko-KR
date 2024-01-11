@@ -1,18 +1,19 @@
 ---
 title: AEM에서 콘텐츠를 만들 때 작성자를 위한 첫 번째 단계
-description: Adobe Experience Manager(AEM)를 사용하여 콘텐츠를 작성할 때 사용하는 주요 작업에 대한 개요입니다.
+description: AEM 6.5에서 콘텐츠 생성 및 작성의 주요 개념을 살펴보십시오. 태그, 템플릿 및 기타 페이지 기능을 사용 방법에 대한 정보도 찾을 수 있습니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 5%
+source-wordcount: '413'
+ht-degree: 11%
 
 ---
+
 
 # 작성자를 위한 첫 번째 단계{#first-steps-for-authors}
 

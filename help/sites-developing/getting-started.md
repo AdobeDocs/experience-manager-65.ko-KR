@@ -1,18 +1,19 @@
 ---
 title: AEM Sites 개발 시작하기 - WKND 튜토리얼
-description: AEM 개발이 처음이십니까? 모범 사례에 리프레셔가 필요하십니까? 이 위치에서 시작하십시오! 이 멀티 파트 튜토리얼의 목표는 AEM을 처음 사용하는 개발자를 대상으로 최신 표준 기술을 통해 AEM에서 웹 사이트를 구현하는 방법을 교육하는 것입니다.
+description: AEM 인스턴스를 빌드하는 방법을 알아봅니다. 플랫폼과 구성 요소에 대해 자세히 알아보고 개발 도구 및 개인화에 대한 정보를 살펴보십시오.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 84%
+source-wordcount: '211'
+ht-degree: 80%
 
 ---
+
 
 # AEM Sites 개발 시작하기 - WKND 튜토리얼{#getting-started-developing-aem-sites-wknd-tutorial}
 

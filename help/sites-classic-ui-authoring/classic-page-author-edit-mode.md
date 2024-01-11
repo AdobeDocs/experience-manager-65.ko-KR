@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '5991'
 ht-degree: 31%
@@ -837,7 +837,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!NOTE]
 >
->다음을 참조하십시오 [AEM Forms 도움말](/help/forms/home.md) AEM Forms에 대한 자세한 내용
+>다음을 참조하십시오 [AEM Forms 도움말](/help/forms/using/introduction-aem-forms.md) AEM Forms에 대한 자세한 내용
 
 Forms은 다음과 같은 몇 가지 구성 요소로 구성됩니다.
 

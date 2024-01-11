@@ -2,7 +2,7 @@
 title: AEM에서 컨텐츠 페이지 작성
 description: Adobe Experience Manager 6.5에서 컨텐츠 페이지를 작성할 때 관련된 작업입니다.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 섹션에서는 콘텐츠 페이지를 작성할 때 수행하는 작업에 대해 설명합니다. 페이지 작성과 밀접하게 관련된 많은 추가 기능이 있으며, 의 다른 섹션에서 다룹니다. [Authoring 안내서](/help/sites-authoring/home.md).
+>이 섹션에서는 콘텐츠 페이지를 작성할 때 수행하는 작업에 대해 설명합니다. 페이지 작성과 밀접하게 관련된 많은 추가 기능이 있으며, 의 다른 섹션에서 다룹니다. [Authoring 안내서](/help/sites-authoring/first-steps.md).
 
 ## 페이지 작성에 사용되는 기능의 빠른 개요 {#quick-overview-of-features-used-for-authoring-pages}
 

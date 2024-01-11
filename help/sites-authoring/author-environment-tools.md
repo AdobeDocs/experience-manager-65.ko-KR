@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 47%
@@ -103,7 +103,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 ## 자산 브라우저 {#assets-browser}
 
-자산 브라우저에는 현재 페이지에서 직접 사용할 수 있는 모든 [자산](/help/assets/home.md)이 표시됩니다.
+자산 브라우저에는 현재 페이지에서 직접 사용할 수 있는 모든 [자산](/help/assets/assets.md)이 표시됩니다.
 
 에셋 브라우저는 사이드 패널 내의 탭이며 [구성 요소 찾아보기](/help/sites-authoring/author-environment-tools.md#components-browser)r 및 [콘텐츠 트리](/help/sites-authoring/author-environment-tools.md#content-tree). 사이드 패널을 열거나 닫으려면 도구 모음의 왼쪽 상단에 있는 아이콘을 사용합니다.
 

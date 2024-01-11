@@ -1,14 +1,14 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] 소개'
-description: 디지털 자산 관리란 무엇이며, 그 사용 사례와 [!DNL Adobe Experience Manager Asset] 제공.
+description: Experience Manager에서 디지털 자산을 작성하고, 관리하며, 처리하고, 배포합니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산 사용 방법에 대해 설명합니다.
 contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 0%
+source-wordcount: '886'
+ht-degree: 3%
 
 ---
 

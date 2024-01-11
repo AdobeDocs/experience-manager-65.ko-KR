@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 241e39ae402744ac200cfd9220245b080aec33af
+source-git-commit: 4be8b14ca9af543cec89c85ec5750f2065033406
 workflow-type: tm+mt
-source-wordcount: '7328'
+source-wordcount: '7297'
 ht-degree: 22%
 
 ---
@@ -17,8 +17,7 @@ ht-degree: 22%
 # Adobe Experience Manager 6.5 설명서 {#content}
 
 + 릴리스 정보 {#release-notes}
-   + [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
-   + [최신 릴리스 정보](/help/release-notes/release-notes.md)
+   + [릴리스 정보](/help/release-notes/release-notes.md)
    + 이전 릴리스 정보 {#service-pack}
       + [6.5.18](/help/release-notes/previous/6.5.18.md)
       + [6.5.17](/help/release-notes/previous/6.5.17.md)
@@ -74,7 +73,6 @@ ht-degree: 22%
    + [Same Site 쿠키 지원](/help/sites-administering/same-site-cookie-support.md)
 + Sites {#sites}
    + 작성 {#authoring}
-      + [작성 사용 안내서 개요](/help/sites-authoring/home.md)
       + AEM 작성을 위한 필수 작업, 도구 및 개념 {#essentials}
          + [작성자를 위한 첫 번째 단계](/help/sites-authoring/first-steps.md)
          + [페이지 작성](/help/sites-authoring/page-authoring.md)
@@ -270,7 +268,6 @@ ht-degree: 22%
          + [Screens용 콘텐츠 관리](/help/sites-administering/content-management-screens.md)
          + [WebDAV 액세스](/help/sites-administering/webdav-access.md)
    + 클래식 UI 작성 {#classic-ui}
-      + [클래식 UI 작성 안내서 개요](/help/sites-classic-ui-authoring/home.md)
       + 클래식 UI 작성 소개 {#introduction}
          + [작성자를 위한 첫 번째 단계](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)
          + [클래식 UI에서 작성](/help/sites-classic-ui-authoring/classicui.md)
@@ -340,7 +337,6 @@ ht-degree: 22%
          + [Dynamic Media 작업](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
          + [에셋 테스트를 위한 이름 지정 규칙](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Assets {#assets}
-   + [[!DNL Assets] 사용 안내서](/help/assets/home.md)
    + [DAM 정보](/help/assets/assets.md)
    + [자산에 대한 우수 사례](/help/assets/best-practices-for-assets.md)
    + [ [!DNL Assets]에서의 접근성](/help/assets/accessibility.md)
@@ -504,7 +500,6 @@ ht-degree: 22%
       + [ [!DNL Workfront]에 [!DNL enhanced connector] 설치](/help/assets/workfront-connector-install.md)
       + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
 + 양식 {#forms}
-   + [AEM 6.5 Forms 안내서](/help/forms/home.md)
    + 릴리스 정보 {#release-notes-new-features}
       + [새로운 기능](/help/forms/using/whats-new.md)
       + [FAQ](/help/forms/using/frequently-asked-questions-faq.md)
@@ -1192,9 +1187,8 @@ ht-degree: 22%
       + [동적 PDF forms에서 해시 생성 및 작업](/help/forms/developing/hashing-forms.md)
       + [WS-Security 헤더를 사용하여 자격 증명 전달](/help/forms/developing/passing-credentials.md)
 + Content and Commerce {#commerce}
-   + [AEM Content and Commerce](/help/commerce/home.md)
-   + [AEM Content 및 Commerce의 주요 변경 내용](/help/commerce/cif/changes.md)
    + [소개 및 개요](/help/commerce/cif/introduction.md)
+   + [AEM Content 및 Commerce의 주요 변경 내용](/help/commerce/cif/changes.md)
    + 통합 {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [서드파티 상거래 솔루션](/help/commerce/cif/integrating/third-party.md)
@@ -1276,7 +1270,6 @@ ht-degree: 22%
    + [설명서 여정 소개](/help/journey-documentation/home.md)
 + 구현 {#implementing}
    + 개발 {#developing}
-      + [개발 사용 안내서 개요](/help/sites-developing/home.md)
       + 개발자를 위한 소개 {#introduction}
          + [AEM Sites 개발 시작하기 - WKND 튜토리얼](/help/sites-developing/getting-started.md)
          + [AEM 핵심 개념](/help/sites-developing/the-basics.md)
@@ -1529,7 +1522,6 @@ ht-degree: 22%
          + [모바일 장치용 사이트 만들기](/help/sites-developing/mobile.md)
          + [에뮬레이터](/help/sites-developing/emulators.md)
    + 배포 {#deploying}
-      + [배포 사용 안내서](/help/sites-deploying/home.md)
       + AEM 플랫폼 소개 {#introduction}
          + [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
          + [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
