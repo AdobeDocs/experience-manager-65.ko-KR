@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 020b92463371294706e9873e0d8962583d19ac52
 workflow-type: tm+mt
-source-wordcount: '2136'
-ht-degree: 3%
+source-wordcount: '2134'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 ## 일괄 처리 API 사용 {#using-the-batch-api}
 
-배치 API를 감시 폴더와 함께 또는 독립 실행형 REST API로 사용할 수 있습니다. 일괄 처리 API를 사용하도록 생성된 대화형 커뮤니케이션의 템플릿, 출력 유형(HTML, 인쇄 또는 둘 다), 로케일, 미리 채우기 서비스 및 이름을 구성합니다.
+감시 폴더와 함께 또는 독립 실행형 Rest API로 배치 API를 사용할 수 있습니다. 일괄 처리 API를 사용하도록 생성된 대화형 커뮤니케이션의 템플릿, 출력 유형(HTML, 인쇄 또는 둘 다), 로케일, 미리 채우기 서비스 및 이름을 구성합니다.
 
 레코드를 대화형 통신 템플릿과 결합하여 대화형 통신을 생성합니다. 배치 API는 JSON 파일 또는 양식 데이터 모델을 통해 액세스된 외부 데이터 소스에서 직접 레코드(대화형 통신 템플릿용 데이터)를 읽을 수 있습니다. 각 레코드를 별도의 JSON 파일에 보관하거나 JSON 배열을 만들어 모든 레코드를 단일 파일에 보관할 수 있습니다.
 
@@ -70,10 +70,10 @@ ht-degree: 3%
 
 API를 쉽게 경험할 수 있도록 AEM Forms은 일괄 처리 API를 사용하도록 구성된 감시 폴더 서비스를 즉시 제공합니다. AEM Forms UI를 통해 서비스에 액세스하여 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 요구 사항에 따라 사용자 정의 서비스를 만들 수도 있습니다. 아래 나열된 메서드를 사용하여 감시 폴더가 있는 일괄 처리 API를 사용할 수 있습니다.
 
-* 대화형 통신을 생성할 JSON 파일 형식의 입력 데이터(레코드)를 지정합니다
-* 외부 데이터 소스에 저장되고 양식 데이터 모델을 통해 액세스되는 입력 데이터(레코드)를 사용하여 대화형 통신을 생성합니다
+* 대화형 통신을 생성할 수 있도록 입력 데이터(레코드)를 JSON 파일 형식으로 지정합니다.
+* 외부 데이터 소스에 저장되고 양식 데이터 모델을 통해 액세스되는 입력 데이터(레코드)를 사용하여 대화형 통신을 생성합니다.
 
-#### JSON 파일 형식으로 입력 데이터 레코드를 지정하여 대화형 통신을 생성합니다. {#specify-input-data-in-JSON-file-format}
+#### 대화형 통신을 생성할 수 있도록 입력 데이터 레코드를 JSON 파일 형식으로 지정 {#specify-input-data-in-JSON-file-format}
 
 레코드를 대화형 통신 템플릿과 결합하여 대화형 통신을 생성합니다. 각 레코드에 대해 별도의 JSON 파일을 만들거나 JSON 배열을 만들어 모든 레코드를 단일 파일로 유지할 수 있습니다.
 
@@ -85,24 +85,24 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
    1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 물리적 **[!UICONTROL 경로]** 폴더의 입니다. 예: `c:\batchprocessing`
    1. 다음 항목 선택 **[!UICONTROL 서비스]** 의 옵션 **[!UICONTROL 다음을 사용하여 파일 처리]** 필드.
    1. 다음 항목 선택 **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** 의 서비스 **[!UICONTROL 서비스 이름]** 필드.
-   1. 다음 항목 지정 **[!UICONTROL 출력 파일 패턴]**. 예: %F/ [패턴](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있음을 지정합니다.
+   1. 다음 항목 지정 **[!UICONTROL 출력 파일 패턴]**. 예: %F/ [패턴](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있음을 지정합니다.
 1. 고급 매개 변수를 구성합니다.
    1. 를 엽니다. **[!UICONTROL 고급]** 을(를) 탭하고 다음 사용자 지정 속성을 추가합니다.
 
       | 속성 | 유형 | 설명 |
       |--- |--- |--- |
-      | templatePath | 문자열 | 사용할 대화형 통신 템플릿의 경로를 지정하십시오. 예: /content/dam/formsanddocuments/testsample/mediumic 필수 속성입니다. |
-      | 레코드 경로 | 문자열 | recordPath 필드의 값은 대화형 통신의 이름을 설정하는 데 도움이 됩니다. 레코드 필드의 경로를 recordPath 필드의 값으로 설정할 수 있습니다. 예를 들어 /employee/Id를 지정하면 id 필드의 값이 해당 대화형 통신의 이름이 됩니다. 기본값은 무작위입니다 [임의 UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
+      | templatePath | 문자열 | 사용할 대화형 통신 템플릿의 경로를 지정하십시오. 예, `/content/dam/formsanddocuments/testsample/mediumic`. 필수 속성입니다. |
+      | 레코드 경로 | 문자열 | recordPath 필드의 값은 대화형 통신의 이름을 설정하는 데 도움이 됩니다. 레코드 필드의 경로를 recordPath 필드의 값으로 설정할 수 있습니다. 예를 들어 /employee/Id를 지정하면 id 필드의 값이 해당 대화형 통신의 이름이 됩니다. 기본값은 입니다 [임의 UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
       | usePrefillService | 부울 | 값을 False로 설정합니다. usePrefillService 매개 변수를 사용하여 해당 대화형 통신에 대해 구성된 미리 채우기 서비스에서 가져온 데이터로 대화형 통신을 미리 채울 수 있습니다. usePrefillService를 true로 설정하면 입력 JSON 데이터(각 레코드에 대해)가 FDM 인수로 처리됩니다. 기본값은 false입니다. |
       | batchType | 문자열 | 값을 PRINT, WEB 또는 WEB_AND_PRINT로 설정합니다. 기본값은 WEB_AND_PRINT입니다. |
       | 로케일 | 문자열 | 출력 대화형 통신의 로케일을 지정합니다. 기본 제공 서비스에서는 locale 옵션을 사용하지 않지만 사용자 지정 서비스를 만들어 지역화된 대화형 통신을 생성할 수 있습니다. 기본값은 en_US입니다. |
 
-   1. 선택 **[!UICONTROL 만들기]** 감시 폴더가 생성됩니다.
-1. 감시 폴더를 사용하여 대화형 커뮤니케이션을 생성합니다.
+   1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+1. 생성된 감시 폴더를 사용하여 대화형 커뮤니케이션을 생성합니다.
    1. 감시 폴더를 엽니다. 입력 폴더로 이동합니다.
    1. 입력 폴더에 폴더를 만들고 새로 만든 폴더에 JSON 파일을 저장합니다.
-   1. 감시 폴더가 파일을 처리할 때까지 기다립니다. 처리가 시작되면 입력 파일 및 해당 파일이 포함된 하위 폴더가 준비 폴더로 이동됩니다.
-   1. 출력을 보려면 출력 폴더를 엽니다.
+   1. 감시 폴더가 파일을 처리할 때까지 기다립니다. 처리가 시작되면 파일이 포함된 입력 파일 및 하위 폴더가 준비 폴더로 이동됩니다.
+   1. 출력을 볼 수 있도록 출력 폴더를 엽니다.
       * 감시 폴더 구성에서 인쇄 옵션을 지정하면 대화형 커뮤니케이션에 대한 PDF 출력이 생성됩니다.
       * [감시 폴더 구성]에서 웹 옵션을 지정하면 레코드당 JSON 파일이 생성됩니다. JSON 파일을 사용하여 다음을 수행할 수 있습니다. [웹 템플릿 미리 채우기](#web-template).
       * PRINT와 WEB 옵션을 모두 지정하면 레코드당 PDF 문서와 JSON 파일이 모두 생성됩니다.
@@ -118,7 +118,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
    1. 읽기 서비스 인수에 대해 연필 아이콘을 선택하여 인수를 요청 속성에 바인딩하고 바인딩 값을 지정합니다. 이 메서드는 서비스 인수를 지정된 바인딩 특성 또는 리터럴 값에 바인딩합니다. 이 값은 데이터 소스에서 지정된 값과 연결된 세부 정보를 가져오는 인수로 서비스에 전달됩니다.
 
       <br>
-        이 예에서 id 인수는 사용자 프로필의 id 속성 값을 가져와 읽기 서비스에 인수로 전달합니다. 지정된 ID에 대한 직원 데이터 모델 개체에서 연결된 속성 값을 읽고 반환합니다. 따라서 양식의 ID 필드00250 값을 지정하면 읽기 서비스에서 직원 ID가 있는 직원의 세부 정보00250 읽습니다.
+        이 예에서 id 인수는 사용자 프로필의 id 속성 값을 가져와 읽기 서비스에 인수로 전달합니다. 지정된 ID에 대한 직원 데이터 모델 개체에서 연결된 속성 값을 읽고 반환합니다. 따라서 양식의 ID 필드00250 값을 지정하면 읽기 서비스가 직원 ID가 있는 직원의 세부 정보00250 읽습니다.
         <br>
 
       ![요청 속성 구성](assets/request-attribute.png)
@@ -126,7 +126,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
    1. 속성 및 양식 데이터 모델을 저장합니다.
 1. 요청 속성에 대한 값 구성:
    1. 파일 시스템에 .json 파일을 만들고 편집을 위해 엽니다.
-   1. JSON 배열을 만들고 양식 데이터 모델에서 데이터를 가져오는 기본 속성을 지정합니다. 예를 들어 다음 JSON은 FDM에 ID가 27126 또는 27127 레코드 데이터를 전송하도록 요청합니다.
+   1. 양식 데이터 모델에서 데이터를 가져올 수 있도록 JSON 배열을 만들고 기본 속성을 지정합니다. 예를 들어 다음 JSON은 FDM에 ID가 27126 또는 27127 레코드 데이터를 전송하도록 요청합니다.
 
       ```json
           [
@@ -147,37 +147,37 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
    1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 물리적 **[!UICONTROL 경로]** 폴더의 입니다. 예: `c:\batchprocessing`
    1. 다음 항목 선택 **[!UICONTROL 서비스]** 의 옵션 **[!UICONTROL 다음을 사용하여 파일 처리]** 필드.
    1. 다음 항목 선택 **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** 의 서비스 **[!UICONTROL 서비스 이름]** 필드.
-   1. 다음 항목 지정 **[!UICONTROL 출력 파일 패턴]**. 예: %F/ [패턴](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있음을 지정합니다.
+   1. 다음 항목 지정 **[!UICONTROL 출력 파일 패턴]**. 예: %F/ [패턴](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있음을 지정합니다.
 1. 고급 매개 변수를 구성합니다.
    1. 를 엽니다. **[!UICONTROL 고급]** 을(를) 탭하고 다음 사용자 지정 속성을 추가합니다.
 
       | 속성 | 유형 | 설명 |
       |--- |--- |--- |
       | templatePath | 문자열 | 사용할 대화형 통신 템플릿의 경로를 지정하십시오. 예: /content/dam/formsanddocuments/testsample/mediumic 필수 속성입니다. |
-      | 레코드 경로 | 문자열 | recordPath 필드의 값은 대화형 통신의 이름을 설정하는 데 도움이 됩니다. 레코드 필드의 경로를 recordPath 필드의 값으로 설정할 수 있습니다. 예를 들어 /employee/Id를 지정하면 id 필드의 값이 해당 대화형 통신의 이름이 됩니다. 기본값은 무작위입니다 [임의 UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
-      | usePrefillService | 부울 | 값을 True로 설정합니다. 기본값은 false입니다.  값이 true로 설정되면 배치 API가 구성된 양식 데이터 모델에서 데이터를 읽고 대화형 통신에 채웁니다. usePrefillService를 true로 설정하면 입력 JSON 데이터(각 레코드에 대해)가 FDM 인수로 처리됩니다. |
+      | 레코드 경로 | 문자열 | recordPath 필드의 값은 대화형 통신의 이름을 설정하는 데 도움이 됩니다. 레코드 필드의 경로를 recordPath 필드의 값으로 설정할 수 있습니다. 예를 들어 /employee/Id를 지정하면 id 필드의 값이 해당 대화형 통신의 이름이 됩니다. 기본값은 입니다 [임의 UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
+      | usePrefillService | 부울 | 값을 True로 설정합니다. 기본값은 false입니다. 값이 true로 설정되면 배치 API가 구성된 양식 데이터 모델에서 데이터를 읽고 대화형 통신에 채웁니다. usePrefillService를 true로 설정하면 입력 JSON 데이터(각 레코드에 대해)가 FDM 인수로 처리됩니다. |
       | batchType | 문자열 | 값을 PRINT, WEB 또는 WEB_AND_PRINT로 설정합니다. 기본값은 WEB_AND_PRINT입니다. |
       | 로케일 | 문자열 | 출력 대화형 통신의 로케일을 지정합니다. 기본 제공 서비스에서는 locale 옵션을 사용하지 않지만 사용자 지정 서비스를 만들어 지역화된 대화형 통신을 생성할 수 있습니다. 기본값은 en_US입니다. |
 
-   1. 선택 **[!UICONTROL 만들기]** 감시 폴더가 생성됩니다.
-1. 감시 폴더를 사용하여 대화형 커뮤니케이션을 생성합니다.
+   1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+1. 생성된 감시 폴더를 사용하여 대화형 커뮤니케이션을 생성합니다.
    1. 감시 폴더를 엽니다. 입력 폴더로 이동합니다.
    1. 입력 폴더에 폴더를 만듭니다. 2단계에서 생성된 JSON 파일을 새로 생성된 폴더에 넣습니다.
-   1. 감시 폴더가 파일을 처리할 때까지 기다립니다. 처리가 시작되면 입력 파일 및 해당 파일이 포함된 하위 폴더가 준비 폴더로 이동됩니다.
-   1. 출력을 보려면 출력 폴더를 엽니다.
+   1. 감시 폴더가 파일을 처리할 때까지 기다립니다. 처리가 시작되면 파일이 포함된 입력 파일 및 하위 폴더가 준비 폴더로 이동됩니다.
+   1. 출력을 볼 수 있도록 출력 폴더를 엽니다.
       * 감시 폴더 구성에서 인쇄 옵션을 지정하면 대화형 커뮤니케이션에 대한 PDF 출력이 생성됩니다.
       * [감시 폴더 구성]에서 웹 옵션을 지정하면 레코드당 JSON 파일이 생성됩니다. JSON 파일을 사용하여 다음을 수행할 수 있습니다. [웹 템플릿 미리 채우기](#web-template).
       * PRINT와 WEB 옵션을 모두 지정하면 레코드당 PDF 문서와 JSON 파일이 모두 생성됩니다.
 
 ## REST 요청을 사용하여 일괄 처리 API 호출
 
-를 호출할 수 있습니다. [일괄 처리 API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) representational State Transfer (REST) 요청을 통해 이를 통해 다른 사용자에게 REST 엔드포인트를 제공하여 API에 액세스하고 대화형 통신을 처리, 저장 및 사용자 지정하기 위한 자체 메서드를 구성할 수 있습니다. 사용자 지정 Java 서블릿을 개발하여 AEM 인스턴스에 API를 배포할 수 있습니다.
+를 호출할 수 있습니다. [일괄 처리 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) representational State Transfer (REST) 요청을 통해 이를 통해 다른 사용자에게 REST 엔드포인트를 제공하여 API에 액세스하고 대화형 통신을 처리, 저장 및 사용자 지정하기 위한 자체 메서드를 구성할 수 있습니다. 사용자 정의 Java™ 서블릿을 개발하여 AEM 인스턴스에 API를 배포할 수 있습니다.
 
-Java 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파일이 준비되었는지 확인하십시오. Java 서블릿을 만들고 배포하려면 다음 단계를 수행하십시오.
+Java™ 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파일이 준비되었는지 확인하십시오. Java™ 서블릿을 만들고 배포할 수 있도록 다음 단계를 수행합니다.
 
 1. AEM 인스턴스에 로그인하고 대화형 통신을 만듭니다. 아래 주어진 샘플 코드에 언급된 대화형 통신을 사용하려면 [여기를 클릭하십시오](assets/SimpleMediumIC.zip).
-1. [Apache Maven을 사용하여 AEM 프로젝트 빌드 및 배포](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) AEM 인스턴스에서 참조할 수 있습니다.
-1. 추가 [AEM Forms 클라이언트 SDK 버전 6.0.12](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 또는 AEM 프로젝트의 POM 파일의 종속성 목록에 있는 나중에 참조할 수 있습니다. 예:
+1. [Apache Maven을 사용하여 AEM 프로젝트 빌드 및 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) AEM 인스턴스에서 참조할 수 있습니다.
+1. 추가 [AEM Forms 클라이언트 SDK 버전 6.0.12 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (AEM 프로젝트의 POM 파일의 종속성 목록) 아래에 그룹화됩니다. 예:
 
    ```xml
        <dependency>
@@ -187,7 +187,7 @@ Java 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파�
        </dependency>
    ```
 
-1. Java 프로젝트를 열고 .java 파일(예: CCMBatchServlet.java)을 만듭니다. 파일에 다음 코드를 추가합니다.
+1. Java™ 프로젝트를 열고 .java 파일(예: CMBatchServlet.java)을 만듭니다. 파일에 다음 코드를 추가합니다.
 
    ```java
            package com.adobe.fd.ccm.multichannel.batch.integration;
@@ -323,11 +323,11 @@ Java 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파�
    ```
 
 1. 위의 코드에서 템플릿 경로(setTemplatePath)를 템플릿의 경로로 바꾸고 setBatchType API의 값을 설정합니다.
-   * 지정한 경우 대화형 통신에 대한 인쇄 옵션 PDF 출력이 생성됩니다.
-   * WEB 옵션을 지정할 때 레코드당 JSON 파일이 생성됩니다. JSON 파일을 사용하여 다음을 수행할 수 있습니다. [웹 템플릿 미리 채우기](#web-template).
+   * PRINT 옵션 PDF을 지정하면 대화형 통신에 대한 출력이 생성됩니다.
+   * WEB 옵션을 지정하면 레코드당 JSON 파일이 생성됩니다. JSON 파일을 사용하여 다음을 수행할 수 있습니다. [웹 템플릿 미리 채우기](#web-template).
    * PRINT와 WEB 옵션을 모두 지정하면 레코드당 PDF 문서와 JSON 파일이 모두 생성됩니다.
 
-1. [Maven을 사용하여 업데이트된 코드를 AEM 인스턴스에 배포합니다](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven).
+1. [Maven을 사용하여 업데이트된 코드를 AEM 인스턴스에 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
 1. 대화형 통신을 생성하려면 배치 API를 호출하십시오. 배치 API 인쇄는 레코드 수에 따라 PDF 및 .json 파일 스트림을 반환합니다. JSON 파일을 사용하여 다음을 수행할 수 있습니다. [웹 템플릿 미리 채우기](#web-template). 위의 코드를 사용하는 경우 API는에 배포됩니다. `http://localhost:4502/bin/batchServlet`. 이 코드는 PDF 및 JSON 파일의 스트림을 인쇄하고 반환합니다.
 
 ### 웹 템플릿 미리 채우기 {#web-template}
@@ -363,4 +363,4 @@ JSON 파일이에 있는 경우 `C:\batch\mergedJsonPath.json` 그리고 아래 
 
 >[!NOTE]
 >
->기본적으로 CRX 프로토콜만 활성화됩니다. 지원되는 다른 프로토콜을 활성화하려면 다음을 참조하십시오. [구성 관리자를 사용하여 미리 채우기 서비스 구성](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>기본적으로 CRX 프로토콜만 활성화됩니다. 지원되는 다른 프로토콜을 활성화하려면 다음을 참조하십시오. [구성 관리자를 사용하여 미리 채우기 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

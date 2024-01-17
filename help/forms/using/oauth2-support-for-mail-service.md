@@ -2,10 +2,10 @@
 title: Microsoft&reg; Office 365 메일 서버 프로토콜에 대한 OAuth2 기반 인증 구성
 description: Microsoft&reg; Office 365 메일 서버 프로토콜에 대한 OAuth2 기반 인증 구성
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: 020b92463371294706e9873e0d8962583d19ac52
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 7%
+source-wordcount: '980'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 1. 에 로그인 [https://portal.azure.com/](https://portal.azure.com/) 및 검색 **Azure Active Directory** 검색 창에서 결과를 클릭합니다.
 또는 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)에서 바로 검색할 수 있습니다.
-1. 클릭 **추가** > **앱 등록** > **새 등록**
+1. 클릭 **추가** > **앱 등록** > **새 등록**.
 
    ![앱 등록](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
@@ -33,7 +33,7 @@ ht-degree: 7%
 
    ![비밀 키](/help/forms/using/assets/azure_secretkey.png)
 
-1. 권한을 추가하려면 새로 만든 앱으로 이동하여 **API 권한** > **권한 추가** > **Microsoft® 그래프** > **위임된 권한**
+1. 권한을 추가하려면 새로 만든 앱으로 이동하여 **API 권한** > **권한 추가** > **Microsoft® 그래프** > **위임된 권한**.
 1. 앱에 대한 아래 권한 확인란을 선택하고 **권한 추가**:
 
    * `IMAP.AccessUser.All`
@@ -52,7 +52,7 @@ ht-degree: 7%
    이 경우, `https://login.microsoftonline.com/common/oauth2/nativeclient` 는 리디렉션 URI로 사용됩니다.
 
 1. 클릭 **구성** 각 URL을 추가하고 요구 사항에 따라 설정을 구성합니다.
-   ![URI 리디렉션](/help/forms/using/assets/azure_redirecturi.png)
+   ![리디렉션 URI](/help/forms/using/assets/azure_redirecturi.png)
 
    >[!NOTE]
    >
@@ -134,7 +134,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   Workbench에서 특정 프로세스에 대한 기본 인증으로 Auth 2.0 인증 설정을 변경하려면 다음을 설정할 수 있습니다. **OAuth 2.0 인증** 다음에서 &#39;False&#39;로서의 값: **전역 설정 사용** 다음에서 **연결 설정** 탭.
+   원하는 경우 Workbench에서 특정 프로세스에 대한 기본 인증으로 Auth 2.0 인증 설정을 변경할 수 있습니다. 이렇게 하려면 다음을 설정하십시오. **OAuth 2.0 인증** 다음에서 &#39;False&#39;로서의 값: **전역 설정 사용** 다음에서 **연결 설정** 탭.
 
 ## oAuth 작업 알림을 활성화하려면 {#enable_oauth_task}
 
@@ -148,7 +148,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   작업 알림과 관련된 자세한 정보를 보려면 [여기를 클릭하십시오](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   작업 알림과 관련된 자세한 정보를 보려면 [여기를 클릭하십시오](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## 이메일 엔드포인트를 구성하려면 {#configure_email_endpoint}
 
@@ -162,7 +162,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   이메일 엔드포인트 구성에 대한 자세한 내용을 보려면 [이메일 엔드포인트 구성](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html).
+   이메일 엔드포인트 구성에 대한 자세한 내용을 보려면 [이메일 엔드포인트 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## 문제 해결 {#troubleshooting}
 
