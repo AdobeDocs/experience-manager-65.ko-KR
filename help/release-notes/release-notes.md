@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 2c5791e972deef5fe81768d10ad53acaf946332a
+source-git-commit: 5da11d1f1a8568c12cb9f6ccea9d71e61c1310c3
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4376'
 ht-degree: 9%
 
 ---
@@ -444,6 +444,39 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
       "visualSimilaritySearch"
     ]
   "refresh": true
+  ```
+
+* 선택적 변수를 사용하여 GraphQL 쿼리를 실행할 때 특정 값이 **아님** 선택 변수에 제공된 경우 해당 변수의 값은 암시적으로 간주됩니다 `null`. 즉, 필터가 `null` 해당 속성의 값입니다.
+
+  예를 들어 아래 쿼리에서 속성에 대해 값을 지정하지 않았습니다 `lastName`:
+
+  ```graphql
+  query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+      }
+    }
+  }
+  ```
+
+  을(를) 가진 작성자만 `lastName` null로 설정된 속성이 반환됩니다.
+
+  ```graphql
+  {
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": null
+        }
+      ]
+    }
+  }
+  }
   ```
 
 * 업그레이드 시 [!DNL Experience Manager] 6.5.0 - 6.5.4에서 Java™ 11의 최신 서비스 팩까지 인스턴스가 제공됩니다. `RRD4JReporter` 의 예외 `error.log` 파일. 예외를 중지하려면 인스턴스를 [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
