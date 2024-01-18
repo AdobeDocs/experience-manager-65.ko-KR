@@ -3,10 +3,10 @@ title: 기술 요구 사항
 description: Adobe Experience Manager에 대해 지원되는 클라이언트 및 서버 플랫폼 목록입니다.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: fbf056b6b7dcbfcaa27744672c45a87316c5f761
 workflow-type: tm+mt
-source-wordcount: '3624'
-ht-degree: 0%
+source-wordcount: '3642'
+ht-degree: 1%
 
 ---
 
@@ -112,12 +112,14 @@ Adobe Experience Manager 저장소를 배포하기 위한 다양한 옵션이 �
 | **플랫폼** | **설명** | **지원 수준** |
 |---|---|---|
 | **TAR 파일이 포함된 파일 시스템** `[1]` | 보관소 | A: 지원됨 |
-| **데이터 스토어가 있는 파일 시스템** `[1]` | 바이너리 | A: 지원 됨 |
+| **데이터 스토어가 있는 파일 시스템** `[1]` | 바이너리 | A: 지원됨 |
 | 파일 시스템의 TAR 파일에 바이너리 저장 `[1]` | 바이너리 | Z: 프로덕션에 지원되지 않음 |
-| Amazon | 바이너리 | A: 지원됨 |
+| Amazon S3 | 바이너리 | A: 지원됨 |
 | Microsoft® Azure Blob 저장소 | 바이너리 | A: 지원됨 |
-| MongoDB Enterprise 4.4 | 보관소 | A: 지원됨 `[2, 3, 4]` |
-| MongoDB Enterprise 4.2 | 보관소 | A: 지원됨 `[2, 3, 4]` |
+| MongoDB Enterprise 6.0 | 보관소 | A: 지원됨 `[3, 4]` |
+| MongoDB Enterprise 5.0 | 보관소 | A: 지원됨 `[3, 4]` |
+| MongoDB Enterprise 4.4 | 보관소 | A: 지원됨 `[2, 3, 4, 7]` |
+| MongoDB Enterprise 4.2 | 보관소 | A: 지원됨 `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 | 보관소 | Z: 지원되지 않음 |
 | MongoDB Enterprise 3.6 | 보관소 | Z: 지원되지 않음 |
 | MongoDB Enterprise 3.4 | 보관소 | Z: 지원되지 않음 |
@@ -132,9 +134,10 @@ Adobe Experience Manager 저장소를 배포하기 위한 다양한 옵션이 �
 1. MongoDB 분할은 AEM에서 지원되지 않습니다.
 1. MongoDB 스토리지 엔진 WiredTiger는 만 지원됩니다.
 1. AEM Forms 업그레이드 고객을 위해 지원됩니다. 새 설치에서는 지원되지 않습니다.
-1. 적용 가능한 AEM Forms만:
+1. AEM Forms에만 적용 가능:
    * oracle 데이터베이스 12c에 대한 지원이 제거되었으며 Oracle 데이터베이스 19c에 대한 지원이 추가되었습니다.
    * Microsoft® SQL Server 2016에 대한 지원이 제거되었으며 Microsoft® SQL Server 2019에 대한 지원이 추가되었습니다.
+1. AEM Forms에서는 지원되지 않습니다.
 
 >[!NOTE]
 >
@@ -152,17 +155,17 @@ MongoDB에서 작성자와 게시를 모두 실행하려는 경우 두 개의 �
 >
 Adobe 고객 지원 센터는 AEM에서 MongoDB 사용과 관련된 자격 부여 문제를 지원합니다.
 >
-자세한 내용은 [Adobe Experience Manager MongoDB 페이지](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+자세한 내용은 Adobe Experience Manager 페이지 ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) 에 대 한 MongoDB를 참조 [ 하십시오.
 
 >[!NOTE]
 >
-위에 나열된 지원되는 관계형 데이터베이스는 타사 소프트웨어이며 AEM 라이센스 패키지에 포함되지 않습니다.
+위에 나열 된 것 처럼 지원 되는 관계형 데이터베이스는 서드파티 소프트웨어 이며 AEM 라이센스 패키지에 포함 되지 않습니다.
 >
-지원 되는 관계형 데이터베이스로 AEM 6.5을 실행 하려면 데이터베이스 공급 업체와 별도의 지원 계약이 필요 합니다. Adobe Systems 고객 지원 팀은 AEM 6.5를 사용 하 여 관계형 데이터베이스 사용과 관련 된 문제를 규정 하는 데 도움이 됩니다.
+지원되는 관계형 데이터베이스로 AEM 6.5를 실행하려면 데이터베이스 공급업체와의 별도의 지원 계약이 필요합니다. Adobe 고객 지원 센터는 AEM 6.5에서 관계형 데이터베이스 사용과 관련된 자격 문제를 지원합니다.
 >
-**대부분의 관계형 데이터베이스는 현재 AEM 6.5의 수준-R 내에서 지원 되며, 여기에는 위의 수준-R 설명에서 설명한 대로 지원 기준과 지원 프로그램이 함께 제공 됩니다.**
+**대부분의 관계형 데이터베이스는 현재 AEM 6.5의 Level-R 내에서 지원되며, 위의 Level-R 설명에 나와 있는 대로 지원 기준과 지원 프로그램이 제공됩니다.**
 
-### 서브렛 엔진/애플리케이션 서버 {#servlet-engines-application-servers}
+### 서블릿 엔진 / 애플리케이션 서버 {#servlet-engines-application-servers}
 
 Adobe Experience Manager은 독립형 서버(quickstart JAR 파일)로 실행하거나 타사 애플리케이션 서버(WAR 파일) 내의 웹 애플리케이션으로 실행할 수 있습니다.
 
@@ -170,8 +173,8 @@ Adobe Experience Manager은 독립형 서버(quickstart JAR 파일)로 실행하
 
 | Platform | 지원 수준 |
 |---|---|
-| **Quickstart 내장 서블릿 엔진(Jetty 9.4)** | A: 지원 됨 |
-| Oracle WebLogic 서버 12.2 (12cR2) | Z: 지원되지 않음 |
+| **Quickstart 내장 서블릿 엔진(Jetty 9.4)** | A: 지원됨 |
+| Oracle WebLogic Server 12.2(12cR2) | Z: 지원되지 않음 |
 | 웹 프로필 7.0 및 IBM® JRE 1.8을 사용한 IBM® WebSphere® Application Server Continuous Delivery(LibertyProfile) | R: 신규 계약에 대한 제한된 지원 `[2]` |
 | IBM® WebSphere® Application Server 9.0 및 IBM® JRE 1.8 | R: 신규 계약에 대한 제한된 지원 `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R: 신규 계약에 대한 제한된 지원 `[2]` |
@@ -209,12 +212,12 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
    * glibc.x86_64 (2.17-196)
    * libX11.x86_64 (1.6.7-4)
    * zlib.x86-64 (1.2.7-17)
-   * libxcb.x86_64 (1.13-1.el7)
-   * libXau.x86_64 (1.0.8-2.1.el7)
+   * libxcb.x86_64 (1.13 -1. el7)
+   * libXau.x86_64 (1.0.8-2.1. el7)
 
-1. Microsoft® Windows 프로덕션 배포는 6.5 및 비프로덕션 사용을 위해 업그레이드 하는 고객에 게 지원 됩니다. 새로 만들기 배포는 AEM Sites 및 Assets에 대해 요청 됩니다.
-1. AEM Forms는 지원 수준 제한이 없는 Microsoft® Window 서버에서 지원 됩니다.
-1. AEM Forms Microsoft® Windows Server 2016에 대 한 지원이 제거 되었습니다.
+1. Microsoft® Windows 프로덕션 배포는 6.5로 업그레이드하는 고객 및 비프로덕션 사용을 위해 지원됩니다. AEM Sites 및 자산에 대한 새 배포는 요청 시 수행됩니다.
+1. AEM Forms은 지원 수준 R 제한 없이 Microsoft® Window Server에서 지원됩니다.
+1. AEM Forms에서 Microsoft® Windows Server 2016에 대한 지원이 제거되었습니다.
 
 >[!NOTE]
 >
@@ -227,7 +230,7 @@ AEM Forms 6.5를 설치하는 경우 다음 32비트 Microsoft® Visual C++ 재�
 * Microsoft® Visual C++ 2019(VC14.28 이상) 재배포 가능
 
 
-### 가상 &amp; Cloud 컴퓨팅 환경 {#virtual-cloud-computing-environments}
+### 가상 및 클라우드 컴퓨팅 환경 {#virtual-cloud-computing-environments}
 
 Adobe Experience Manager은 클라우드 컴퓨팅 환경의 가상 컴퓨터에서 실행될 수 있습니다. 이러한 환경에는 이 페이지에 나열된 기술 요구 사항을 준수하고 Adobe의 표준 지원 약관에 따라 실행되는 Microsoft® Azure 및 Amazon Web Services(AWS)가 포함됩니다.
 
@@ -248,19 +251,19 @@ Dispatcher는 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispat
 | Platform | 지원 수준 |
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A: 지원됨 |
-| Microsoft® IIS 10(Internet Information Server) | A: 지원됨 |
+| Microsoft® IIS 10 (인터넷 정보 서버) | A: 지원 됨 |
 | Microsoft® IIS 8.5 (인터넷 정보 서버) | Z: 지원 되지 않음 |
 
-1. Apache httpd 소스 코드를 기반으로 작성 된 웹 서버는 기반으로 하는 httpd의 버전으로 많은 지원을 갖게 됩니다. 확실 하지 않은 경우 해당 서버 제품과 관련 된 지원 수준에 대 한 확인을 Adobe Systems 문의 하십시오. 다음과 같은 경우:
+1. Apache httpd 소스 코드를 기반으로 작성 된 웹 서버는 기반으로 하는 httpd의 버전으로 많은 지원을 갖게 됩니다. 확실하지 않은 경우 Adobe에게 각 서버 제품과 관련된 지원 수준을 확인하도록 요청하십시오. 다음과 같은 경우:
 
    1. HTTP 서버는 공식 Apache 소스 배포만 사용하여 빌드되었습니다. 또는
-   1. HTTP 서버는 실행 중인 운영 체제의 일부로 전달되었습니다. 예: IBM® HTTP Server, Oracle HTTP 서버
+   1. HTTP 서버는 실행 중인 운영 체제의 일부로 전달되었습니다. 예: IBM® HTTP 서버, Oracle HTTP 서버
 
-1. Dispatcher는 Windows 운영 체제용 Apache 2.4. x에는 사용할 수 없습니다.
+1. Dispatcher는 Windows 운영 체제용 Apache 2.4.x에서 사용할 수 없습니다.
 
-## 지원 되는 클라이언트 플랫폼 {#supported-client-platforms}
+## 지원되는 클라이언트 플랫폼 {#supported-client-platforms}
 
-### 사용자 인터페이스 작성을 위해 지원 되는 브라우저 {#supported-browsers-for-authoring-user-interface}
+### 사용자 인터페이스 작성에 지원되는 브라우저 {#supported-browsers-for-authoring-user-interface}
 
 Adobe Experience Manager 사용자 인터페이스는 다음 클라이언트 플랫폼에서 작동합니다. 모든 브라우저는 기본 플러그인 및 추가 기능 세트로 테스트됩니다.
 
@@ -297,15 +300,15 @@ Mozilla Firefox, Google Chrome 및 Microsoft® Edge 릴리스 업데이트는 �
   <tr>
    <td>Mozilla Firefox (Evergreen)</td>
    <td>A: 지원됨</td>
-   <td>A: 지원됨</td>
+   <td>A: 지원 됨</td>
   </tr>
   <tr>
    <td>Mozilla Firefox 최근 ESR [1]</td>
-   <td>A: 지원 됨</td>
-   <td>A: 지원 됨</td>
+   <td>A: 지원됨</td>
+   <td>A: 지원됨</td>
   </tr>
   <tr>
-   <td>MacOS의 Apple Safari (*)</td>
+   <td>macOS의 Apple Safari(Evergreen)</td>
    <td>A: 지원됨</td>
    <td>A: 지원됨</td>
   </tr>
@@ -316,7 +319,7 @@ Mozilla Firefox, Google Chrome 및 Microsoft® Edge 릴리스 업데이트는 �
   </tr>
   <tr>
    <td>iOS 12.x의 Apple Safari</td>
-   <td>A: 지원 되는 [2]</td>
+   <td>A: 지원됨 [2]</td>
    <td>Z: 지원되지 않음</td>
   </tr>
   <tr>
@@ -328,9 +331,9 @@ Mozilla Firefox, Google Chrome 및 Microsoft® Edge 릴리스 업데이트는 �
 </table>
 
 1. Firefox의 확장 지원 릴리스 [mozilla.org에서 자세히 알아보기](https://www.mozilla.org/en-US/firefox/enterprise/)
-1. Apple iPad 지원
+1. Apple iPad에 대 한 지원
 
-### 웹 사이트에 대해 지원되는 브라우저 {#supported-browsers-for-websites}
+### 웹 사이트에 대해 지원 되는 브라우저 {#supported-browsers-for-websites}
 
 일반적으로 AEM Sites에서 렌더링하는 웹 사이트에 대한 브라우저 지원은 AEM 페이지 템플릿, 디자인 및 구성 요소 출력의 구현에 따라 다르며, 따라서 이러한 부분을 구현하는 당사자의 통제 하에 있습니다.
 
@@ -352,7 +355,7 @@ SSL로 보호되지 않는 AEM 인스턴스에 Microsoft® Windows 7+를 연결�
 
 ### IPv4 및 IPv6 {#ipv-and-ipv}
 
-Adobe Experience Manager의 모든 요소(예: Dispatcher)는 IPv4 및 IPv6 네트워크 모두에 설치할 수 있습니다.
+Adobe Experience Manager (인스턴스, Dispatcher)의 모든 요소는 IPv4와 IPv6 네트워크 모두에 설치할 수 있습니다.
 
 특별 한 구성이 필요 하지 않으므로 작업이 원활 하 게 수행 됩니다. 필요한 경우 네트워크 유형에 적합 한 포맷를 사용 하 여 IP 주소를 지정 합니다.
 
@@ -362,13 +365,13 @@ IP 주소를 지정 해야 하는 경우 다음 중에서 필요에 따라을 �
 
 * IPv4 주소입니다. 예, `https://123.1.1.4:4502`
 
-* 서버 이름입니다. 예, `https://www.yourserver.com:4502`
+* 서버 이름. 예, `https://www.yourserver.com:4502`
 
-* 의 `localhost` 기본 사례는 IPv4 및 IPv6 네트워크 설치에 대해 모두 해석 됩니다. 예, `https://localhost:4502`
+* 의 기본 대/소문자 `localhost` 는 IPv4 및 IPv6 네트워크 설치 모두에 대해 해석됩니다. 예, `https://localhost:4502`
 
-### AEM 다이내믹 미디어 추가 기능에 대 한 요구 사항 {#requirements-for-aem-dynamic-media-add-on}
+### AEM Dynamic Media 추가 기능 요구 사항 {#requirements-for-aem-dynamic-media-add-on}
 
-AEM 다이내믹 미디어는 기본적으로 비활성화 되어 있습니다. 자세한 내용은 여기 를 참조하십시오 [Dynamic Media 활성화](/help/assets/config-dynamic.md#enabling-dynamic-media).
+AEM Dynamic Media은 기본적으로 비활성화되어 있습니다. 자세한 내용은 여기 를 참조하십시오 [Dynamic Media 활성화](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 Dynamic Media이 활성화되면 다음과 같은 추가 기술 요구 사항이 적용됩니다.
 
@@ -406,11 +409,11 @@ Linux®에서 Dynamic Media을 사용하는 경우 다음 전제 조건을 충�
 
 >[!NOTE]
 >
-**NUMA 아키텍처** AMD64 및 Intel® EM64T를 지원하는 프로세서가 장착된 시스템은 일반적으로 NUMA(Non-Uniform Memory Architecture) 플랫폼으로 구성됩니다. 즉, 커널은 하나의 메모리 노드를 구성하는 것이 아니라 부트 시에 여러 개의 메모리 노드를 구성한다.
+**NUMA 아키텍처:** AMD64 및 Intel® EM64T를 사용 하는 프로세서가 있는 시스템은 일반적으로 비 균일 메모리 아키텍처 (NUMA) 플랫폼으로 구성 됩니다. 즉, 커널은 단일 메모리 노드를 생성 하지 않고 부팅할 때 여러 메모리 노드를 생성 합니다.
 >
-다중 노드 구문을 사용 하면 다른 노드가 소모 되기 전에 하나 이상의 노드에서 메모리를 소모 하 게 될 수 있습니다. 메모리를 소모 하는 경우 커널은 사용 가능한 메모리가 있지만 균일 프로세스 (예: 이미지 서버 또는 Platform 서버)를 중단 하도록 결정할 수 있습니다.
+다중 노드 구문을 사용 하면 다른 노드가 소모 되기 전에 하나 이상의 노드에서 메모리를 소모 하 게 될 수 있습니다. 메모리 소진이 발생하면 커널은 사용 가능한 메모리가 있더라도 프로세스(예: 이미지 서버 또는 플랫폼 서버)를 종료하기로 결정할 수 있습니다.
 >
-따라서 이러한 프로세스를 종료 하는 것을 방지 하기 위해 numa = off **boot 옵션을 사용 하 여** numa를 해제 하는 이러한 시스템을 실행 하는 경우에는 Adobe Systems 하는 것이 좋습니다.
+따라서 Adobe은 이러한 시스템을 실행하는 경우 **numa=off** 커널이 이러한 프로세스를 죽이는 것을 방지하기 위해 부팅 옵션.
 
 >[!NOTE]
 >
@@ -420,16 +423,16 @@ Linux®에서 Dynamic Media을 사용하는 경우 다음 전제 조건을 충�
 
 #### Windows {#windows}
 
-* Microsoft® 윈도우 서버 2016
-* 물리적 메모리(RAM)의 최소 두 배 정도의 공간 교체
+* Microsoft® Windows Server 2016
+* 실제 메모리 (RAM)의 양 두 배 이상으로 공간을 바꿉니다.
 
 Windows에서 Dynamic Media을 사용하려면 x64 및 x86용 Microsoft® Visual Studio 2010, 2013 및 2015 재배포 가능 패키지를 설치하십시오.
 
-Windows x64의 경우
+Windows x64의 경우:
 
-* 다음에서 Microsoft® Visual Studio 2010 재배포 가능 패키지를 가져옵니다. [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
-* Microsoft® Visual Studio 2013 재배포 가능 위치: [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* 다음에서 Microsoft® Visual Studio 2015 재배포 가능 패키지를 가져옵니다. [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Https://www.microsoft.com/en-us/download/details.aspx?id=26999에서 [ Microsoft® Visual Studio 2010 재배포 가능 패키지 얻기](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
+* Https://www.microsoft.com/en-us/download/details.aspx?id=40784에서 [ Microsoft® Visual Studio 2013 재배포 가능 패키지 얻기](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+* Https://www.microsoft.com/en-us/download/details.aspx?id=48145에서 [ Microsoft® Visual Studio 2015 재배포 가능 패키지 얻기](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Windows x86의 경우:
 
@@ -450,15 +453,15 @@ Windows x86의 경우:
  <tbody>
   <tr>
    <th><p><strong>제품</strong></p> </th>
-   <th><p><strong>PDF 전환에 지원되는 형식</strong></p> </th>
+   <th><p><strong>PDF로 변환할 수 있는 지원 되는 형식</strong></p> </th>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 클래식 트랙</a> 최신 버전</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 클래식 트랙</a> 최신 버전(더 이상 사용되지 않음)</td>
-   <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 클래식 추적 </a> 최신 버전 (더 이상 사용 되지 않음)</td>
+   <td>XPS, 이미지 형식 (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPF, JP2, J2K, J2C, JPF), HTML, HTM, DWG, DXF 및 DWF</td>
   </tr>
   <tr>
    <td>Microsoft® Office 2019</td>
@@ -466,19 +469,19 @@ Windows x86의 경우:
   </tr>
   <tr>
    <td>Microsoft® Office 2016 (더 이상 사용 되지 않음)</td>
-   <td>DOC, .DOCX, XLS, .XLSX, PPT, .PPTX, RTF 및 TXT</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF 및 TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect 2020<br /> </td>
+   <td>워드퍼펙트 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (더 이상 사용 되지 않음)<br /> </td>
-   <td>.VSD, .VSDX</td>
+   <td>Microsoft® Office Visio 2016(더 이상 사용되지 않음)<br /> </td>
+   <td>VSD, VSDX</td>
   </tr>
   <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
-   <td>술집</td>
+   <td>PUB</td>
   </tr>
   <tr>
    <td>Microsoft® Publisher 2016(더 이상 사용되지 않음)<br /> </td>
@@ -519,22 +522,22 @@ PDF Generator은 지원되는 운영 체제 및 애플리케이션의 영어, �
 
 ### AEM Forms Designer 요구 사항 {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server 또는 Microsoft® Windows® 10
-* PAE, NX 및 SSE2를 지원하는 1GHz 이상의 프로세서
-* 32비트용 RAM 1GB 또는 64비트 OS용 RAM 2GB
-* 32비트용 16GB 디스크 공간 또는 64비트 OS용 20GB 디스크 공간
-* 그래픽 메모리 - 128MB GPU(256MB 권장)
+* Microsoft® Windows® 2016 서버, Microsoft® Windows® 2019 서버 또는 Microsoft® Windows® 10
+* PAE, NX 및 SSE2를 지 원하는 1 GHz 이상의 프로세서
+* 64 비트 OS의 경우 32 비트 또는 2 GB RAM의 경우 1GB RAM
+* 64 비트 OS 용 32 비트 또는 20gb 디스크 공간을 위한 16gb 디스크 공간
+* 그래픽 메모리-128 MB의 GPU (256 MB 권장)
 * 2.35GB의 사용 가능한 하드 디스크 공간
 * 1024 X 768 픽셀 이상의 모니터 해상도
 * 비디오 하드웨어 가속(옵션)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
-* Designer를 설치할 수 있는 관리 권한
+* 디자이너 설치를 위한 관리 권한
 * 32비트 AEM Forms Designer용 Microsoft Visual C++ 2019(VC 14.28 이상) 32비트 런타임
 * 64비트 AEM Forms Designer용 Microsoft Visual C++ 2019(VC 14.28 이상) 64비트 런타임(OSGI 및 JEE 스택 모두 해당)
 
 ### AEM Assets XMP 메타데이터 쓰기 되돌리기 요구 사항 {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-XMP write-back은 다음 플랫폼 및 파일 형식에 대해 지원 및 활성화됩니다.
+다음 플랫폼 및 파일 형식에 대해 XMP 쓰기를 지원 하 고 사용할 수 있습니다.
 
 * **운영 체제:**
 
@@ -547,4 +550,4 @@ XMP write-back은 다음 플랫폼 및 파일 형식에 대해 지원 및 활성
 
 ### AEM Assets이 Linux에서 메타데이터가 많은 에셋을 처리하기 위한 요구 사항입니다® {#assetsonlinux}
 
-XMPFilesProcessor 프로세스가 작동하려면 GLIBC_2.14 라이브러리가 필요합니다. GLIBC_2.14가 포함된 Linux® 커널을 사용합니다(예: Linux® 커널 버전 3.1.x). PSD 파일과 같이 대량의 메타데이터가 포함된 에셋을 처리하는 경우 성능이 향상됩니다. 이전 버전의 GLIBC를 사용하면 로 시작하는 로그에 오류가 발생합니다. `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+XMPFilesProcessor 프로세스에는 라이브러리가 GLIBC_2 해야 합니다. 14를 사용 하십시오. Linux® 커널 버전 3.1과 같이 GLIBC_2 .14 포함 된 Linux® 커널을 사용 합니다. 많은 양의 메타데이터 좋아요 PSD 파일이 포함 된 자산을 처리 하는 데 필요한 성능을 개선 합니다. 이전 버전의 GLIBC를 사용 하면로 `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` 시작 하는 로그에 오류가 발생 합니다.
