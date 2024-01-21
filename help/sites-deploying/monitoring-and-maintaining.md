@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
 workflow-type: tm+mt
-source-wordcount: '5793'
+source-wordcount: '5792'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ AEM WCM은 세부 로그를 기록합니다. 압축을 풀고 빠른 시작을 �
 
 로그 파일 순환은 주기적으로 파일을 만들어 파일의 성장을 제한하는 프로세스를 말합니다. AEM에서 라는 로그 파일 `error.log` 는 지정된 규칙에 따라 하루에 한 번 회전합니다.
 
-* 다음 `error.log` 파일 이름은 패턴에 따라 변경됩니다 {original_filename} `.yyyy-MM-dd`. 예를 들어 2010년 7월 11일에 현재 로그 파일의 이름은 변경됩니다 `error.log-2010-07-10`, 그런 다음 새 `error.og` 이(가) 만들어졌습니다.
+* 다음 `error.log` 파일 이름은 패턴에 따라 변경됩니다 `{original_filename}.yyyy-MM-dd`. 예를 들어 2010년 7월 11일에 현재 로그 파일의 이름은 변경됩니다 `error.log-2010-07-10`, 그런 다음 새 `error.log` 이(가) 만들어졌습니다.
 
 * 이전 로그 파일이 삭제 되지 않으므로 디스크 사용량을 제한 하기 위해 주기적으로 오래 된 로그 파일을 정리 해야 합니다.
 

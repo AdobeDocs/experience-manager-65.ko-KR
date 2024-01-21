@@ -4,9 +4,9 @@ description: Tough Day 테스트는 모든 작업이 동시에 진행되는 최�
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1826'
 ht-degree: 1%
 
 ---
@@ -400,7 +400,7 @@ Tough Day 2는 Tough Day 2를 실행한 동일한 디렉터리에 로그 폴더�
 * **toughday.log**: 애플리케이션 상태, 디버깅 정보 및 글로벌 메시지와 관련된 메시지가 포함되어 있습니다.
 * **toughday_&lt;testname>.log**: 지정된 테스트와 관련된 메시지입니다.
 
-로그는 덮어쓰지 않으며 후속 실행은 메시지를 기존 로그에 추가합니다. 로그에는 여러 수준이 있습니다. 자세한 내용은 다음을 참조하십시오. ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+로그는 덮어쓰지 않으며 후속 실행은 메시지를 기존 로그에 추가합니다. 로그에는 여러 수준이 있습니다. 자세한 내용은 다음을 참조하십시오. [loglevel 매개 변수.](#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}
