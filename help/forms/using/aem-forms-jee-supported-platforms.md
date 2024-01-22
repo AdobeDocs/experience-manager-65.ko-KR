@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 75139b4a951269aeacc689baec1da6bf72ce65bc
+source-git-commit: 667125e9f7f9f5c9fa438e1d55c0a059ceae64c3
 workflow-type: tm+mt
-source-wordcount: '4002'
+source-wordcount: '3984'
 ht-degree: 0%
 
 ---
@@ -483,7 +483,6 @@ PDF Generator은 지원되는 운영 체제 및 애플리케이션의 영어, �
 >
 또한,
 >
-- PDF Generator에 32비트 버전 필요 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 변환 수행.
 - PDF Generator은 Microsoft® Office Professional Plus 및 변환에 필요한 기타 소프트웨어의 32비트 소매 버전만 지원합니다.
 - PDF Generator은 Microsoft® Office 365를 지원하지 않습니다.
 - OpenOffice의 PDF Generator 전환은 Windows 및 Linux®에서만 지원됩니다.
