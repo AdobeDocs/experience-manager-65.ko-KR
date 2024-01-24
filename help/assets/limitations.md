@@ -8,10 +8,10 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
+source-git-commit: 3fa8680480e0da1c58c99e8ce127ce228ab87803
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 3%
+source-wordcount: '308'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 | --- | --- | --- |
 | **이미지** - 이미지당 스마트 자르기 수 | 5 | 100 |
 | **모든 세트** - 세트당 중복 에셋 수 | 중복 항목 없음 | 20 |
-| **모든 세트** - 세트당 최대 에셋 수 | 세트당 5-10개 이미지 | 1000 |
+| **모든 세트** - 세트당 최대 에셋 수 | 세트당 5-10개 이미지 | 1000년 |
 | **회전 집합** - 2D 세트당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000 |
 | **PDF** - 추출 시 고려할 PDF의 최대 페이지 수 |  | 100(모든 PDF) |
 
@@ -52,27 +52,29 @@ Dynamic Media은 다음 웹 브라우저 및 운영 체제 조합을 지원하�
 * Safari 8 + iOS 8.4
 * Safari 8 + OS X 10.10 Yosemite
 
-<!-- ## End of support for TLS 1.0 and 1.1 {#tls}
+## Secure Socket Layer 2.0 및 3.0 과 Transport Layer Security 1.0 및 1.1 지원 종료 {#tls}
 
-CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022)
+<!-- CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
-Effective September 30, 2022, Adobe Dynamic Media will end support for the following:
+2024년 4월 30일부터 Dynamic Media Adobe은 다음 사항에 대한 지원을 종료합니다.
 
-* TLS (Transport Layer Security) 1.0 and 1.1
-* The following weak ciphers in TLS 1.2:
-  * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
-  * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
-  * `TLS_RSA_WITH_AES_256_GCM_SHA384`
-  * `TLS_RSA_WITH_AES_256_CBC_SHA256`
-  * `TLS_RSA_WITH_AES_256_CBC_SHA`
-  * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
-  * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
-  * `TLS_RSA_WITH_AES_128_GCM_SHA256`
-  * `TLS_RSA_WITH_AES_128_CBC_SHA256`
-  * `TLS_RSA_WITH_AES_128_CBC_SHA`
-  * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
-  * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
-  * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
-  * `TLS_RSA_WITH_SDES_EDE_CBC_SHA` -->
+* SSL(Secure Socket Layer) 2.0
+* SSL 3.0
+* TLS(전송 계층 보안) 1.0 및 1.1
+* TLS 1.2의 약한 암호는 다음과 같습니다.
+   * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+   * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+   * `TLS_RSA_WITH_AES_256_GCM_SHA384`
+   * `TLS_RSA_WITH_AES_256_CBC_SHA256`
+   * `TLS_RSA_WITH_AES_256_CBC_SHA`
+   * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+   * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+   * `TLS_RSA_WITH_AES_128_GCM_SHA256`
+   * `TLS_RSA_WITH_AES_128_CBC_SHA256`
+   * `TLS_RSA_WITH_AES_128_CBC_SHA`
+   * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+   * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+   * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+   * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 
