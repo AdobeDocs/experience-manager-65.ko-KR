@@ -8,9 +8,9 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+source-git-commit: 6cec9874bff54dea63562f7a880429d54e83ba79
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '969'
 ht-degree: 11%
 
 ---
@@ -105,12 +105,11 @@ AEM Archetype 41을 생성하려면 [나중에](https://github.com/adobe/aem-pro
 1. 최신 버전의 Forms 핵심 구성 요소를 포함하도록 프로젝트 업데이트:
 
    1. 를 엽니다. [AEM Archetype 프로젝트 폴더]/pom.xml을 참조하십시오.
-   1. 버전 설정 `core.forms.components.version` 및 `core.forms.components.af.version` 끝 [최신 Forms 핵심 구성 요소](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) 버전 및 둘 다에 와 동일한 버전이 있는지 확인합니다. **Forms 핵심 구성 요소** 표에 언급된 버전 `core.wcm.components.version` 에 주어진 대로 **WCM 코어 구성 요소**.
+   1. 버전 설정 `core.forms.components.version` 및 `core.forms.components.af.version` (으)로 [최신 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) 버전 및 둘 다에 와 동일한 버전이 있는지 확인합니다. **Forms 핵심 구성 요소** 표에 언급된 버전 `core.wcm.components.version` 에 주어진 대로 [WCM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
       >[!WARNING]
       >
-      >* 을 사용하여 Archetype 프로젝트를 만드는 경우 `version 45`, [AEM Archetype 프로젝트 폴더]/pom.xml 은 처음에 forms 핵심 구성 요소 버전을 다음으로 설정합니다. `1.1.28`. Archetype 프로젝트를 빌드하거나 배포하기 전에 Forms 핵심 구성 요소 버전을 다음으로 업데이트합니다. `1.1.26`.
-
+      >* 버전 45의 Archetype 프로젝트를 만들 때 `[AEM Archetype Project Folder]/pom.xml` 처음에는 forms 핵심 구성 요소 버전을 1.1.28로 설정합니다. Archetype 프로젝트를 빌드하거나 배포하기 전에 Forms 핵심 구성 요소 버전을 1.1.26으로 업데이트합니다. 다음에서 최신 버전을 찾을 수 있습니다. [AEM 6.5 Forms 버전 내역](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
 
       >[!NOTE]
       >
