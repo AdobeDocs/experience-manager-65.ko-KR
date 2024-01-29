@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 23dd80f0555ddec1ca422b13fbf0d45acf5ab6a8
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2597'
 ht-degree: 48%
 
 ---
@@ -168,6 +168,10 @@ Forms 포털 및 제출 작업에 대한 자세한 내용은 을 참조하십시
 성공적으로 구성한 후 [Microsoft® Power Automate 흐름 호출](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 제출 액션을 사용하여 데이터를 Power Automate 흐름으로 전송합니다.
 
 ## Microsoft® SharePoint 목록에 제출{#submit-to-sharedrive}
+
+>[!NOTE]
+>
+Microsoft® SharePoint 목록으로 제출 기능은 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
 
 다음 **[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint 스토리지와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® Sharepoint Storage에 제출할 수 있습니다.
 

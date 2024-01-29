@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3608'
 ht-degree: 3%
 
 ---
@@ -29,6 +29,11 @@ ht-degree: 3%
 일반적으로 양식을 제출한 후 고객은 향후 참조를 위해 양식에 작성한 정보를 인쇄 또는 문서 형식으로 기록하기를 원합니다. 이를 기록 문서라고 합니다.
 
 이 문서에서는 적응형 Forms 또는 적응형 양식 조각에 대한 기록 문서를 생성하는 방법에 대해 설명합니다.
+
+>[!NOTE]
+>
+> 적응형 양식 편집기에서 적응형 양식 단편 및 해당 필드를 사용자 지정하는 지원은 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
+
 
 >[!NOTE]
 >
