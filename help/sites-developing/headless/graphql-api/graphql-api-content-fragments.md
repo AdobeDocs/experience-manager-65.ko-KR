@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달을 위해 AEM(Adobe Experience Manager)의 콘텐츠 조각을 AEM GraphQL API와 함께 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 3d1c3ac74c9303a88d028d957e3da6aa418e71ba
 workflow-type: tm+mt
-source-wordcount: '4847'
-ht-degree: 60%
+source-wordcount: '4697'
+ht-degree: 59%
 
 ---
 
@@ -140,7 +140,7 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 
 * `http://localhost:4502/content/graphiql.html`
 
-기록 및 온라인 설명서와 함께 구문 강조, 자동 완성, 자동 제안과 같은 기능을 제공합니다:
+기록 및 온라인 설명서와 함께 구문 강조, 자동 완성, 자동 제안과 같은 기능을 제공합니다.
 
 ![GraphiQL 인터페이스](assets/cfm-graphiql-interface.png "GraphiQL 인터페이스")
 
@@ -259,7 +259,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 | 열거 |  `String` |  모델 생성 시 정의된 옵션 목록에서 옵션을 표시하는 데 사용됨 |
 |  태그 |  `[String]` |  AEM에서 사용되는 태그를 나타내는 문자열 목록을 표시하는 데 사용됨 |
 | 콘텐츠 참조 |  `String` |  AEM에서 다른 에셋에 대한 경로를 표시하는 데 사용됨 |
-| 조각 참조 |  *모델 유형* <br><br>단일 필드:`Model` - 모델 유형, 직접 참조 <br><br> 하나의 참조 유형이 있는 다중 필드:`[Model]` - 유형의 배열`Model`, 배열에서 직접 참조됨 <br><br> 다중 참조 유형이 있는 다중 필드:`[AllFragmentModels]` - 공용 유형의 배열에서 참조되는 모든 모델 유형의 배열 |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 하나 이상 참조하는 데 사용됨 |
+| 조각 참조 |  *모델 유형* <br><br>단일 필드: `Model` - 모델 유형, 직접 참조됨 <br><br>단일 참조 유형이 있는 다중 필드: `[Model]` - 유형 배열 `Model`, 배열에서 직접 참조됨 <br><br>여러 참조 유형이 있는 다중 필드: `[AllFragmentModels]` - 유니온 유형이 있는 배열에서 참조된 모든 모델 유형의 배열 |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 하나 이상 참조하는 데 사용됨 |
 
 {style="table-layout:auto"}
 
@@ -705,40 +705,28 @@ query {
 
 ### 지속 쿼리 캐싱 활성화 {#enable-caching-persisted-queries}
 
-지속 쿼리의 캐싱을 활성화하려면 `CACHE_GRAPHQL_PERSISTED_QUERIES` Dispatcher 변수를 정의합니다.
+지속 쿼리의 캐싱을 활성화하려면 Dispatcher 구성 파일에 대한 다음 업데이트가 필요합니다.
 
-1. `global.vars` Dispatcher 파일에 변수를 추가합니다.
+* `<conf.d/rewrites/base_rewrite.rules>`
 
-   ```xml
-   Define CACHE_GRAPHQL_PERSISTED_QUERIES
-   ```
+  ```xml
+  # Allow the dispatcher to be able to cache persisted queries - they need an extension for the cache file
+  RewriteCond %{REQUEST_URI} ^/graphql/execute.json
+  RewriteRule ^/(.*)$ /$1;.json [PT] 
+  ```
 
->[!NOTE]
->
->지속 쿼리에 대해 Dispatcher 캐싱이 활성화된 경우 다음을 사용 `Define CACHE_GRAPHQL_PERSISTED_QUERIES` an `ETag` Dispatcher가 응답에 헤더를 추가합니다.
->
->기본적으로 `ETag` 헤더는 다음 지시문으로 구성됩니다.
->
->```
->FileETag MTime Size 
->```
->
->그러나 이 설정은 응답의 작은 변경 사항을 고려하지 않으므로 지속 쿼리 응답에 사용할 때 문제를 일으킬 수 있습니다.
->
->개인을 달성하려면 `ETag` 계산 *각각* 에 고유한 응답 `FileETag Digest` dispatcher 구성에서 설정을 사용해야 합니다.
->
->```xml
-><Directory />    
->   ...    
->   FileETag Digest
-></Directory> 
->```
+  >[!NOTE]
+  >
+  >Dispatcher가 접미사를 추가합니다 `.json` 결과를 캐시할 수 있도록 모든 지속 쿼리 URL에 매핑합니다.
+  >
+  >이는 쿼리가 캐시될 수 있는 문서에 대한 Dispatcher의 요구 사항을 준수하는지 확인하기 위한 것입니다.
 
->[!NOTE]
->
->을 준수하려면 [캐시할 수 있는 문서에 대한 Dispatcher의 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher는 접미사를 추가합니다 `.json` 결과를 캐시할 수 있도록 모든 지속 쿼리 URL에 매핑합니다.
->
->이 접미사는 지속 쿼리 캐싱이 활성화되면 다시 쓰기 규칙에 의해 추가됩니다.
+* `<conf.dispatcher.d/filters/ams_publish_filters.any>`
+
+  ```xml
+  # Allow GraphQL Persisted Queries & preflight requests
+  /0110 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
+  ```
 
 ### Dispatcher의 CORS 구성 {#cors-configuration-in-dispatcher}
 
@@ -921,13 +909,13 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
 >[!NOTE]
 >
->AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 를 참조하십시오. [CORS(원본 간 리소스 공유) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko-KR#understand-cross-origin-resource-sharing-(cors)).
+>AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 를 참조하십시오. [CORS(원본 간 리소스 공유) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
 
 GraphQL 엔드포인트에 액세스하려면 고객 Git 저장소에서 CORS 정책을 구성합니다. 이 구성은 하나 이상의 원하는 끝점에 대한 적절한 OSGi CORS 구성 파일을 추가하여 수행됩니다.
 
 이 구성은 신뢰할 수 있는 웹 사이트 출처를 지정해야 합니다. `alloworigin` 또는 `alloworiginregexp` 액세스 권한을 부여해야 합니다.
 
-예를 들어 GraphQL 엔드포인트  및 `https://my.domain`의 지속 쿼리 엔드포인트에 대한 액세스 권한을 부여하려면 다음을 사용할 수 있습니다.
+예를 들어 GraphQL 끝점 및 의 지속 쿼리 끝점에 대한 액세스 권한을 부여하려면 `https://my.domain` 다음을 사용할 수 있습니다.
 
 ```xml
 {
