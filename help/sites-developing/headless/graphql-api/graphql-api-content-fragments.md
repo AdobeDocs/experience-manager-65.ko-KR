@@ -3,9 +3,9 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달을 위해 AEM(Adobe Experience Manager)의 콘텐츠 조각을 AEM GraphQL API와 함께 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 3d1c3ac74c9303a88d028d957e3da6aa418e71ba
+source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
 workflow-type: tm+mt
-source-wordcount: '4697'
+source-wordcount: '4708'
 ht-degree: 59%
 
 ---
@@ -719,7 +719,7 @@ query {
   >
   >Dispatcher가 접미사를 추가합니다 `.json` 결과를 캐시할 수 있도록 모든 지속 쿼리 URL에 매핑합니다.
   >
-  >이는 쿼리가 캐시될 수 있는 문서에 대한 Dispatcher의 요구 사항을 준수하는지 확인하기 위한 것입니다.
+  >이는 쿼리가 캐시될 수 있는 문서에 대한 Dispatcher의 요구 사항을 준수하는지 확인하기 위한 것입니다. 자세한 내용은 을 참조하십시오. [Dispatcher는 문서를 어떻게 반환합니까?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
