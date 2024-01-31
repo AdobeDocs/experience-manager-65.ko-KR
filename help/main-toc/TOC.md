@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 07d44d8dea5bf27b831abd02bd42e53dd860133a
+source-git-commit: ac4d8a45478fbe48b1e3d43affeee935d7b7ca90
 workflow-type: tm+mt
-source-wordcount: '7322'
+source-wordcount: '7334'
 ht-degree: 22%
 
 ---
@@ -1181,6 +1181,7 @@ ht-degree: 22%
       + [AEM Forms 서버가 완전히 실행되고 있지 않더라도 문서 처리](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [출력 서비스, Forms 서비스 또는 기록 문서(DoR) 서비스를 사용할 수 없음](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Experience Manager Forms의 Struts 2 RCE 취약성 완화](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [PDF 생성이 WorkBench에서 많은 PDF을 인쇄하지 못했습니다.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [AEM Forms 서비스 팩으로 업그레이드할 때 데이터베이스를 백업하지 못했습니다. 6.5.12.0](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6.5.12.0.md)
    + 레거시 설명서 {#legacy-documentation}
       + [JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드](/help/forms/developing/building-xml.md)
