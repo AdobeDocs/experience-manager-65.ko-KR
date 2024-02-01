@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 26ffe17d1ddd116a749f7f02e84e91d5b9759ca8
+source-git-commit: 220e060de43758ce07e82bedcee8d26fb46a9a6f
 workflow-type: tm+mt
-source-wordcount: '7329'
+source-wordcount: '7333'
 ht-degree: 22%
 
 ---
@@ -626,6 +626,7 @@ ht-degree: 22%
       + [적응형 양식에서 CAPTCHA 사용](/help/forms/using/captcha-adaptive-forms.md)
       + [적응형 양식 키워드](/help/forms/using/adaptive-forms-keywords.md)
       + [적응형 양식의 표](/help/forms/using/adaptive-forms-tables.md)
+      + [적응형 양식의 차트](/help/forms/using/adaptive-form-charts.md)
       + [적응형 양식 자동 저장](/help/forms/using/auto-save-an-adaptive-form.md)
       + [리디렉션 페이지 구성](/help/forms/using/configuring-redirect-page.md)
       + [액세스 가능한 적응형 양식 만들기](/help/forms/using/creating-accessible-adaptive-forms.md)
