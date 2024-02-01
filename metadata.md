@@ -7,10 +7,11 @@ feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sit
 version: 6.5
 type: Documentation
 index: y
-source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
+recommendations: noDisplay
+source-git-commit: fc76dd7af48aa67380b0635589acf9322bff86fb
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 92%
+source-wordcount: '131'
+ht-degree: 80%
 
 ---
 
@@ -21,11 +22,11 @@ metadata.md 파일에는 보고서에서 사용 안내서 TOC.md 파일로 전�
 
 | 메타데이터 | 기능 |
 |--- |--- |
-| solution-title | 문서 헤더에서 링크로 사용됩니다. |
+| solution-title | 문서 헤더에 링크로 사용됩니다. |
 | solution-hub-url | [학습 및 지원] 허브 페이지를 엽니다. |
 | solution-icon | 솔루션 제목 옆에 솔루션 아이콘을 표시합니다. 아직 구현되지 않음. |
-| getting-started-url | 시작 페이지에 연결합니다. |
-| tutorials-url | 비디오 자습서에 연결합니다. |
+| getting-started-url | 시작 페이지에 대한 링크입니다. |
+| tutorials-url | 비디오 튜토리얼에 대한 링크. |
 | mini-toc-levels | 오른쪽 레일에 나타나는 제목 수준 수를 결정합니다. 기본값은 2입니다. |
 | git-repo | 내부 사용을 위한 기본 보고서의 위치를 지정합니다. |
 
@@ -33,5 +34,5 @@ In TOC.md file
 
 | 메타데이터 | 기능 |
 |--- |--- |
-| user-guide-title | 문서 헤더에서 링크로 사용됩니다. |
+| user-guide-title | 문서 헤더에 링크로 사용됩니다. |
 | user-guide-url | [학습 및 지원] 허브 페이지를 엽니다. |
