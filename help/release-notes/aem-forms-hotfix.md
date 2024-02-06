@@ -2,9 +2,9 @@
 title: AEM Forms용 핫픽스
 description: AEM Forms용 핫픽스를 다운로드하고 설치하는 방법에 대해 설명합니다.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 4685a4babbec07dc09fe19c9264b4141b9989fbb
+source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '322'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
      </td>
     <td>
     <ul>
-    <li>JEE 서버의 AEM Forms에서 컨텍스트 경로를 사용하는 HTML5 Forms이 렌더링되지 않습니다. (FORMS-12485).</li>
+    <li>JEE 서버의 AEM Forms에서 컨텍스트 경로를 사용하는 HTML5 Forms이 렌더링되지 않습니다. (FORMS-12485, FORMS-12691).</li>
     </ul>
     </td>    
   </tr>

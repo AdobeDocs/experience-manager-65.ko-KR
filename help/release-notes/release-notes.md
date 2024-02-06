@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 040170454345df352ed259806193c41c23bf953d
+source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
 workflow-type: tm+mt
-source-wordcount: '4415'
+source-wordcount: '4417'
 ht-degree: 9%
 
 ---
@@ -553,7 +553,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 문제를 해결하려면 [jsp, Java™ 및 Sightly와 같은 Sling 스크립트 다시 컴파일](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * AEM 서비스 팩 6.5.14.0 이상을 설치한 후으로 이동할 때 PDF 문서의 JEE 관리 UI에서 글꼴을 선택할 수 없습니다. `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`글꼴 목록이 비어 있으면 로 표시됩니다. (FORMS-12095)
 <!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
-* JEE의 AEM Forms에서 컨텍스트 경로를 사용하는 HTML5 Forms이 렌더링되지 않습니다. (FORMS-12485). 이 문제에 대해 핫픽스를 사용할 수 있습니다. 핫픽스를 다운로드하여 설치하려면 다음을 참조하십시오. [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md).
+* JEE의 AEM Forms에서 컨텍스트 경로를 사용하는 HTML5 Forms이 렌더링되지 않습니다. (FORMS-12485, FORMS-12691). 이 문제에 대해 핫픽스를 사용할 수 있습니다. 핫픽스를 다운로드하여 설치하려면 다음을 참조하십시오. [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md).
 
 #### JEE의 AEM Forms
 
