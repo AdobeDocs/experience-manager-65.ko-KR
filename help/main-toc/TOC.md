@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 220e060de43758ce07e82bedcee8d26fb46a9a6f
+source-git-commit: a9d59e00efe8f0c2cbfca51901c441a2d65b70f2
 workflow-type: tm+mt
 source-wordcount: '7333'
 ht-degree: 22%
@@ -19,24 +19,24 @@ ht-degree: 22%
 + 릴리스 정보 {#release-notes}
    + [릴리스 정보](/help/release-notes/release-notes.md)
    + 이전 릴리스 정보 {#service-pack}
-      + [6.5.18](/help/release-notes/previous/6.5.18.md)
-      + [6.5.17](/help/release-notes/previous/6.5.17.md)
-      + [6.5.16](/help/release-notes/previous/6.5.16.md)
-      + [6.5.15](/help/release-notes/previous/6.5.15.md)
-      + [6.5.14](/help/release-notes/previous/6.5.14.md)
-      + [6.5.13](/help/release-notes/previous/6.5.13.md)
-      + [6.5.12](/help/release-notes/previous/6.5.12.md)
-      + [6.5.11](/help/release-notes/previous/6.5.11.md)
-      + [6.5.10](/help/release-notes/previous/6.5.10.md)
-      + [6.5.9](/help/release-notes/previous/6.5.9.md)
-      + [6.5.8](/help/release-notes/previous/6.5.8.md)
-      + [6.5.7](/help/release-notes/previous/6.5.7.md)
-      + [6.5.6](/help/release-notes/previous/6.5.6.md)
-      + [6.5.5](/help/release-notes/previous/6.5.5.md)
-      + [6.5.4](/help/release-notes/previous/6.5.4.md)
-      + [6.5.3](/help/release-notes/previous/6.5.3.md)
-      + [6.5.2](/help/release-notes/previous/6.5.2.md)
-      + [6.5.1](/help/release-notes/previous/6.5.1.md)
+      + [6.5.18](/help/release-notes/previous/6-5-18.md)
+      + [6.5.17](/help/release-notes/previous/6-5-17.md)
+      + [6.5.16](/help/release-notes/previous/6-5-16.md)
+      + [6.5.15](/help/release-notes/previous/6-5-15.md)
+      + [6.5.14](/help/release-notes/previous/6-5-14.md)
+      + [6.5.13](/help/release-notes/previous/6-5-13.md)
+      + [6.5.12](/help/release-notes/previous/6-5-12.md)
+      + [6.5.11](/help/release-notes/previous/6-5-11.md)
+      + [6.5.10](/help/release-notes/previous/6-5-10.md)
+      + [6.5.9](/help/release-notes/previous/6-5-9.md)
+      + [6.5.8](/help/release-notes/previous/6-5-8.md)
+      + [6.5.7](/help/release-notes/previous/6-5-7.md)
+      + [6.5.6](/help/release-notes/previous/6-5-6.md)
+      + [6.5.5](/help/release-notes/previous/6-5-5.md)
+      + [6.5.4](/help/release-notes/previous/6-5-4.md)
+      + [6.5.3](/help/release-notes/previous/6-5-3.md)
+      + [6.5.2](/help/release-notes/previous/6-5-2.md)
+      + [6.5.1](/help/release-notes/previous/6-5-1.md)
       + [6.5.0](/help/release-notes/previous/ga.md)
    + [AEM Forms 서비스 팩 설치 지침](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
    + [AEM Forms JEE 패치 설치 관리자](/help/release-notes/jee-patch-installer-65.md)
@@ -1182,7 +1182,7 @@ ht-degree: 22%
       + [AEM Forms 서버가 완전히 실행되고 있지 않더라도 문서 처리](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [출력 서비스, Forms 서비스 또는 기록 문서(DoR) 서비스를 사용할 수 없음](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Experience Manager Forms의 Struts 2 RCE 취약성 완화](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [MySQL용 6.5.12.0으로 업그레이드하는 동안 데이터베이스를 백업하지 못했습니다.](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6.5.12.0.md)
+      + [MySQL용 6.5.12.0으로 업그레이드하는 동안 데이터베이스를 백업하지 못했습니다.](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [PDF 생성이 WorkBench에서 많은 PDF을 인쇄하지 못했습니다.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
    + 레거시 설명서 {#legacy-documentation}
       + [JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드](/help/forms/developing/building-xml.md)

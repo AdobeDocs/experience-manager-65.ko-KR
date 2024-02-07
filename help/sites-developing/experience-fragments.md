@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: a9d59e00efe8f0c2cbfca51901c441a2d65b70f2
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 1%
+source-wordcount: '1781'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +102,7 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
 에서 감지한 경험 조각 템플릿을 만들려면 **경험 조각 만들기** 마법사에서는 다음 규칙 세트 중 하나를 따라야 합니다.
 
-1. 모두:
+1. 두 가지 모두:
 
    1. 템플릿의 리소스 유형(초기 노드)은 다음 항목에서 상속해야 합니다.
       `cq/experience-fragments/components/xfpage`
@@ -127,7 +127,7 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
 유일한 추가 구성은 구성 요소가 [템플릿에서 허용되며 콘텐츠 정책으로 수행됩니다.](/help/sites-developing/page-templates-editable.md#content-policies).
 
-## 경험 조각 링크 재작성자 공급자 - HTML {#the-experience-fragment-link-rewriter-provider-html}
+## 경험 조각 링크 재작성기 공급자 - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 AEM에서는 경험 조각을 만들 수 있습니다. 경험 조각:
 
@@ -182,7 +182,7 @@ HTML 페이지를 생성한 후 Sling 재작성기 파이프라인이 출력을 
 
 >[!NOTE]
 >
->이 인터페이스는에서 도입되었습니다. [AEM 6.5 SP1(6.5.1.0)](/help/release-notes/previous/6.5.1.md).
+>이 인터페이스는에서 도입되었습니다. [AEM 6.5 SP1(6.5.1.0)](/help/release-notes/previous/6-5-1.md).
 
 보다 복잡한 경우에는 다음을 포함하지 않습니다. [기본값](#default-link-rewriting), AEM은 링크 재작성기 공급자 인터페이스를 제공합니다. (이)는 `ConsumerType` 번들에 서비스로 구현할 수 있는 인터페이스입니다. AEM이 경험 조각에서 렌더링한 대로 HTML 오퍼의 내부 링크에 대해 수행하는 수정 사항을 무시합니다. 이 인터페이스를 사용하면 비즈니스 요구 사항에 맞게 내부 HTML 링크를 다시 작성하는 프로세스를 사용자 지정할 수 있습니다.
 
@@ -216,7 +216,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 이 서비스는 경험 조각 내보내기를 Target으로 재작성에 연결하여 다양한 링크에 액세스하는 데 사용됩니다.
 
-예, `ComponentService`:
+예를 들어, `ComponentService`:
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;
