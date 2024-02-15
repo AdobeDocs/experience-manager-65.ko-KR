@@ -3,10 +3,10 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
+source-git-commit: 6a5ff6df3939c6d1576327943b428f374e987bcb
 workflow-type: tm+mt
-source-wordcount: '4417'
-ht-degree: 9%
+source-wordcount: '4451'
+ht-degree: 8%
 
 ---
 
@@ -554,6 +554,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 * AEM 서비스 팩 6.5.14.0 이상을 설치한 후으로 이동할 때 PDF 문서의 JEE 관리 UI에서 글꼴을 선택할 수 없습니다. `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`글꼴 목록이 비어 있으면 로 표시됩니다. (FORMS-12095)
 <!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
 * JEE의 AEM Forms에서 컨텍스트 경로를 사용하는 HTML5 Forms이 렌더링되지 않습니다. (FORMS-12485, FORMS-12691). 이 문제에 대해 핫픽스를 사용할 수 있습니다. 핫픽스를 다운로드하여 설치하려면 다음을 참조하십시오. [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md).
+* 사용자 지정 함수는 ECMAScript 버전 5 기능을 지원합니다. 사용자 지정 함수가 ECMAScript 버전 6 이상에서 지원하는 기능(예: let, const 또는 arrow 함수)을 사용하는 경우 규칙 편집기를 열 수 없습니다.
 
 #### JEE의 AEM Forms
 
