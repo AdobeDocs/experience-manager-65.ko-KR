@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: f41cb88406db23c2af8988f7ee584db95184c6c4
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '7335'
 ht-degree: 22%
@@ -560,7 +560,7 @@ ht-degree: 22%
       + AEM Forms 구성 {#configure-aem-forms}
          + [AEM Forms 서버의 성능 조정](/help/forms/using/performance-tuning-aem-forms.md)
          + [적응형 양식 캐시 구성](/help/forms/using/configure-adaptive-forms-cache.md)
-         + [AEM DS 설정 구성](/help/forms/using/configuring-the-processing-server-url-.md)
+         + [AEM DS 설정 구성](/help/forms/using/configuring-the-processing-server-url.md)
          + [동기화 스케줄러 구성](/help/forms/using/configure-synchronization-scheduler.md)
          + [Microsoft SharePoint용 커넥터 구성](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
          + [Adobe LiveCycle과 AEM Forms 연결](/help/forms/using/aem-livecycle-connector.md)
@@ -636,7 +636,7 @@ ht-degree: 22%
       + [적응형 양식 구성 요소의 인라인 스타일 지정](/help/forms/using/inline-style-adaptive-forms.md)
       + [다단계 양식 시퀀스 소개](/help/forms/using/introduction-form-sequence.md)
       + [적응형 양식의 레이아웃 기능](/help/forms/using/layout-capabilities-adaptive-forms.md)
-      + [AEM Forms의 자리 표시자 텍스트](/help/forms/using/placeholder-text-in-aem-forms-.md)
+      + [AEM Forms의 자리 표시자 텍스트](/help/forms/using/placeholder-text-in-aem-forms.md)
       + [양식 미리보기](/help/forms/using/previewing-forms.md)
       + [적응형 양식 재사용](/help/forms/using/reusing-adaptive-forms.md)
       + [적응형 양식의 분리자 구성 요소](/help/forms/using/separator-component-in-adaptive-forms.md)
@@ -889,7 +889,7 @@ ht-degree: 22%
    + 거래 보고서 {#transaction-reports}
       + [거래 보고서 개요](/help/forms/using/transaction-reports-overview.md)
       + [거래 보고서 보기 및 이해](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-      + [거래 보고서 청구 가능 API](/help/forms/using/transaction-reports-billable-apis.md)
+      + [트랜잭션 보고서 과금 가능한 API](/help/forms/using/transaction-reports-billable-apis.md)
       + [사용자 지정 구현에 대한 트랜잭션 기록](/help/forms/using/record-transaction-custom-implementation.md)
    + JEE의 AEM Forms에 대한 관리자 도움말 {#administrator-help}
       + 시작하기 {#get-started}

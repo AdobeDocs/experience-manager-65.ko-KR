@@ -7,7 +7,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 1. 에 로그인 `https://localhost:publishport/aem/forms`.
 1. 다음으로 이동 **[!UICONTROL 편지]** 게시 인스턴스에서 사용할 수 있는 게시된 편지를 봅니다.
-1. AEM DS 설정을 구성합니다. 다음을 참조하십시오 [AEM DS 설정 구성](../../forms/using/configuring-the-processing-server-url-.md).
+1. AEM DS 설정을 구성합니다. 다음을 참조하십시오 [AEM DS 설정 구성](../../forms/using/configuring-the-processing-server-url.md).
 
 >[!NOTE]
 >

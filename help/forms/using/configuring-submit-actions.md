@@ -6,7 +6,7 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '2597'
 ht-degree: 48%
@@ -140,7 +140,7 @@ Forms 포털 및 제출 작업에 대한 자세한 내용은 을 참조하십시
 
 **[!UICONTROL AEM Workflow 호출]** 제출 액션은 적응형 양식을 [AEM Workflow](/help/sites-developing/workflows-models.md)와 연결합니다. 양식이 제출되면 연결된 워크플로가 작성자 인스턴스에서 자동으로 시작됩니다. 데이터 파일, 첨부 파일 및 기록 문서를 상대 폴더 또는 워크플로의 페이로드 아래 또는 변수에 저장할 수 있습니다. 워크플로가 외부 데이터 스토리지에 대해 표시된 경우 페이로드 옵션이 아닌 변수 옵션을 사용할 수 있습니다. 워크플로 모델에 제공되는 변수 목록에서 선택할 수 있습니다. 워크플로 생성 시점이 아닌 이후 단계에서 워크플로가 외부 데이터 스토리지로 표시되면 필수 변수 구성이 마련되었는지 확인합니다.
 
-를 사용하기 전에 **AEM 워크플로우 호출** 제출 액션, [Experience Manager DS 설정 구성](../../forms/using/configuring-the-processing-server-url-.md). AEM 워크플로우 만들기에 대한 내용은 [OSGi의 양식 중심 워크플로](../../forms/using/aem-forms-workflow.md).
+를 사용하기 전에 **AEM 워크플로우 호출** 제출 액션, [Experience Manager DS 설정 구성](../../forms/using/configuring-the-processing-server-url.md). AEM 워크플로우 만들기에 대한 내용은 [OSGi의 양식 중심 워크플로](../../forms/using/aem-forms-workflow.md).
 
 제출 액션은 워크플로우의 페이로드 위치에 다음을 배치합니다. 그러나 워크플로 모델이 외부 데이터 저장용으로 표시된 경우에는 변수 옵션만 표시되고 페이로드 옵션은 표시되지 않습니다.
 
