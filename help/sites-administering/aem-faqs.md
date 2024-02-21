@@ -2,9 +2,9 @@
 title: AEM FAQ
 description: 이러한 FAQ를 사용하여 AEM의 일반적인 워크플로 또는 문제를 이해, 구성 및 해결할 수 있습니다.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,6 @@ ht-degree: 0%
 
 바이너리 없는 배포를 활성화하려면 공유 Blob 저장소를 사용하여 배포합니다.
 다음 확인: `useBinaryReferences` 공장 PID가 있는 OSGI 구성의 속성( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* 에이전트에서 사용 중입니다.
-
-#### AEM Sites 콘솔에서 페이지 계층 구조를 탐색하는 동안 오류 메시지를 사용자 정의하려면 어떻게 해야 합니까? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
-
-개인 설정(JS가 축소되지 않은 경우)이 있는 Chrome 브라우저의 네트워크 패널을 확인하십시오.
-
-보기 `Initiator` 요청 개시자를 결정하는 열입니다. AJAX 호출이 수행되는 위치의 파일 및 줄 번호를 제공합니다. 나중에 오류 처리 함수를 추적하고 요구 사항에 따라 오류 메시지를 변경할 수 있습니다.
 
 #### AEM에서 콘텐츠 작성자용 언어 사본을 만드는 동안 권한을 활성화하는 방법 {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
