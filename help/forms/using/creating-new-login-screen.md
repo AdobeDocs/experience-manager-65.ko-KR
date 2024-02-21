@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 7%
+source-wordcount: '444'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
 
    1. 컨텐츠 폴더를 복사합니다.
 
-      시작: `/libs/livecycle/core`
+      출처: `/libs/livecycle/core`
 
       끝: `/apps/livecycle/core`.
 
@@ -290,7 +290,7 @@ css.newLoginContentArea {
 1. 새 이미지 추가 `/apps/livecycle/core/content/login`. 이미지를 추가하려면:
 
    1. WebDAV 클라이언트를 설치합니다.
-   1. 다음으로 이동 `/apps/livecycle/core/content/login` webDAV 클라이언트를 사용하는 폴더입니다. 자세한 내용은 다음을 참조하십시오. [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR).
+   1. 다음으로 이동 `/apps/livecycle/core/content/login` webDAV 클라이언트를 사용하는 폴더입니다. 자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
    1. 새 이미지를 추가합니다.
 

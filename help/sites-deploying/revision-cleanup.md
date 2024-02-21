@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
 source-wordcount: '5752'
 ht-degree: 0%
@@ -529,7 +529,7 @@ TarMK GC: no base state available, running full compaction instead
   </td>
   </tr>
   <tr>
-    <td>N/A</td>
+    <td>해당 사항 없음</td>
     <td>TarMK GC #2: 추정이 중단됨: ${REASON}. 압축을 건너뜁니다.</td>
     <td>예상 단계가 너무 빨리 종료되었습니다. 예상 단계를 방해할 수 있는 이벤트의 일부 예: 호스트 시스템의 메모리 또는 디스크 공간이 부족합니다.</td>
     <td>주어진 이유에 따라 다릅니다.</td>
@@ -543,16 +543,16 @@ TarMK GC: no base state available, running full compaction instead
   </td>
   </tr>
    <tr>
-    <td>N/A</td>
+    <td>해당 사항 없음</td>
     <td>TarMK GC #2: 압축 취소됨: ${REASON}.</td>
     <td>압축 단계가 너무 빨리 종료되었습니다. 압축 단계를 방해할 수 있는 이벤트의 일부 예: 호스트 시스템의 메모리 또는 디스크 공간이 부족합니다. 또한 시스템을 종료하거나 작업 대시보드 내의 유지 관리 창과 같은 관리 인터페이스를 통해 명시적으로 취소하여 압축을 취소할 수도 있습니다.</td>
     <td>주어진 이유에 따라 다릅니다.</td>
   </td>
   </tr>
   <tr>
-    <td>N/A</td>
+    <td>해당 사항 없음</td>
     <td>TarMK GC #2: 5사이클 후 32.902분(1974140ms)에 압축이 실패했습니다.</td>
-    <td>이 메시지는 복구할 수 없는 오류가 있음을 의미하는 것이 아니라 몇 번의 시도 끝에 압축이 종료되었음을 의미합니다. 또한 <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">다음 단락을 참조하십시오.</a></td>
+    <td>이 메시지는 복구할 수 없는 오류가 있음을 의미하는 것이 아니라 몇 가지 시도 후 압축이 종료되었음을 의미합니다. 또한 <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">다음 단락을 참조하십시오.</a></td>
     <td>다음 내용 읽기 <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak 설명서</a>및 온라인 개정 정리 실행 섹션의 마지막 질문입니다.</a></td>
   </td>
   </tr>

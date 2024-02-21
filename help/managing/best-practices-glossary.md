@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '6922'
+source-wordcount: '6926'
 ht-degree: 0%
 
 ---
@@ -1127,11 +1127,11 @@ AEM 플랫폼의 일반적인 개발 범위를 벗어난 것으로 간주되는 
 
 ### AEM 관리자 교육을 위해 선택된 직원 {#staff-selected-for-aem-administrator-training}
 
-솔루션 관리 교육이 필요한 내부 직원입니다.
+솔루션을 관리할 수 있도록 교육이 필요한 내부 직원입니다.
 
 ### 작성자 및 최종 사용자 교육을 위해 선택된 직원 {#staff-selected-for-author-and-end-user-training}
 
-솔루션 작성 교육이 필요한 내부 직원입니다.
+솔루션을 작성할 수 있도록 교육이 필요한 내부 직원입니다.
 
 ### 이해 당사자 {#stakeholders}
 

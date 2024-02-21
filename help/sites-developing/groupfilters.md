@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ ht-degree: 0%
 
 필터를 만든 후에서 사용할 수 있습니다 [그룹 구성입니다.](/help/sites-developing/mobile.md#creating-a-device-group)
 
-## Java 클래스 필터링 {#the-filter-java-class}
+## Java™ 클래스 필터링 {#the-filter-java-class}
 
-장치 그룹 필터는 다음을 구현하는 OSGi 구성 요소입니다 [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 인터페이스. 구현 클래스가 배포되면 장치 그룹 구성에 사용할 수 있는 필터 서비스를 제공합니다.
+장치 그룹 필터는 다음을 구현하는 OSGi 구성 요소입니다 [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 인터페이스. 구현 클래스가 배포되면 장치 그룹 구성에 사용할 수 있는 필터 서비스를 제공합니다.
 
-이 문서에 설명된 솔루션은 Apache Felix Maven SCR 플러그인을 사용하여 구성 요소 및 서비스의 개발을 용이하게 합니다. 따라서 예제 Java 클래스는 `@Component`및 `@Service` 주석. 클래스의 구조는 다음과 같습니다.
+이 문서에 설명된 솔루션은 Apache Felix Maven SCR 플러그인을 사용하여 구성 요소 및 서비스의 개발을 용이하게 합니다. 따라서 예제 Java™ 클래스는 `@Component`및 `@Service` 주석. 클래스의 구조는 다음과 같습니다.
 
 ```java
 package com.adobe.example.myapp;
@@ -63,9 +63,9 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 }
 ```
 
-다음 메서드에 대한 코드를 제공해야 합니다.
+다음 메서드에 대한 코드를 제공합니다.
 
-* `getDescription`: 필터 설명을 반환합니다. 설명은 [장치 그룹 구성] 대화 상자에 나타납니다.
+* `getDescription`: 필터 설명을 반환합니다. [장치 그룹 구성] 대화 상자에 설명이 표시됩니다.
 * `getTitle`: 필터 이름을 반환합니다. 장치 그룹에 대한 필터를 선택할 때 이름이 나타납니다.
 * `matches`: 장치에 필요한 기능이 있는지 여부를 결정합니다.
 
@@ -93,7 +93,7 @@ public String getTitle() {
 * 사용자 에이전트의 이름
 * 장치 기능이 포함된 맵 개체입니다. 맵 키는 WURFL™ 기능 이름이며 값은 WURFL™ 데이터베이스의 해당 값입니다.
 
-다음 [com.day.cq.wcm.mobile.api.devicesecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 인터페이스는 정적 필드에 WURFL™ 기능 이름의 하위 집합을 포함합니다. 장치 기능 맵에서 값을 검색할 때 이러한 필드 상수를 키로 사용합니다.
+다음 [com.day.cq.wcm.mobile.api.devicesecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 인터페이스는 정적 필드에 WURFL™ 기능 이름의 하위 집합을 포함합니다. 장치 기능 맵에서 값을 검색할 때 이러한 필드 상수를 키로 사용합니다.
 
 예를 들어, 다음 코드 예제에서는 디바이스가 CSS를 지원하는지 여부를 결정합니다.
 
@@ -161,7 +161,7 @@ public class ScreenSizeLarge implements DeviceGroupFilter {
 }
 ```
 
-getTitle 메서드가 반환하는 문자열 값은 장치 그룹 속성의 드롭다운 목록에 표시됩니다.
+getTitle 메서드가 반환하는 String 값이 장치 그룹 속성의 드롭다운 목록에 나타납니다.
 
 ![filteraddtogroup](assets/filteraddtogroup.png)
 
@@ -175,7 +175,7 @@ getTitle 및 getDescription 메서드가 반환하는 String 값은 장치 그�
 
 **플러그인:**
 
-* Apache Maven 컴파일러 플러그인: 소스 코드에서 Java 클래스를 컴파일합니다.
+* Apache Maven 컴파일러 플러그인: 소스 코드에서 Java™ 클래스를 컴파일합니다.
 * Apache Felix Maven 번들 플러그인: 번들 및 매니페스트를 만듭니다.
 * Apache Felix Maven SCR 플러그인: 구성 요소 설명자 파일을 만들고 서비스 구성 요소 매니페스트 헤더를 구성합니다.
 

@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3442'
 ht-degree: 0%
 
 ---
@@ -563,7 +563,7 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-랜딩 페이지가 We.Retail 캠페인 아래에 생성되고 랜딩 페이지의 이름이 이라고 가정해 봅시다. **myBlank랜딩 페이지** Zip 파일이 저장된 위치는 다음과 같습니다.
+랜딩 페이지가 캠페인 아래에 생성되었다고 가정해 봅시다 `We.Retail` 랜딩 페이지의 이름은 입니다. **myBlank랜딩 페이지** Zip 파일이 저장된 위치는 다음과 같습니다.
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 

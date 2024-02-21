@@ -6,10 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 온디맨드 애플리케이션 생성 {#creating-an-on-demand-application}
 
-앱을 만드는 것은 AEM Mobile 온디맨드 콘텐츠를 만들고 관리하기 위한 첫 번째 단계이며 AEM 관리자 수준에서 수행되는 경우가 많습니다. 문서, 이미지, 컬렉션 등과 같이 작성자가 만든 컨텐츠를 표시할 준비가 된 모바일 디바이스에서 볼 수 있는 컨텐츠 셸을 나타냅니다.
+앱을 만드는 것은 AEM Mobile 온디맨드 콘텐츠를 만들고 관리하기 위한 첫 번째 단계이며 AEM 관리자 수준에서 수행되는 경우가 많습니다. 문서, 이미지 및 컬렉션과 같이 작성자가 만든 콘텐츠를 표시할 준비가 된 모바일 디바이스에서 볼 수 있는 콘텐츠 셸을 나타냅니다.
 
 앱의 세부 정보는 대시보드 또는 AEM Mobile 제어 센터에서 볼 수 있습니다.
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 온디맨드 애플리케이션을 만들어 해당 앱을 클라우드 구성에 연결하는 방법에 익숙해지면 다음을 참조하십시오. [컨텐츠 관리 작업](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**컨텐츠 관리 작업** 에는 다음 컨텐츠를 만들고 관리하는 작업이 포함됩니다.
+**컨텐츠 관리 작업** 에는 다음 컨텐츠 생성 및 관리 작업이 포함됩니다.
 
 * [문서 관리](/help/mobile/mobile-on-demand-managing-articles.md)
 * [배너 관리](/help/mobile/mobile-on-demand-managing-banners.md)

@@ -4,9 +4,9 @@ description: Tough Day 테스트는 모든 작업이 동시에 진행되는 최�
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1825'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
-Tough Day 2에는 정리 단계가 없습니다. 따라서 주 프로덕션 인스턴스가 아닌 복제된 스테이징 인스턴스에서 Tough Day 2를 실행하는 것이 좋습니다. 테스트 후에 스테이징 인스턴스를 삭제해야 합니다.
+>Tough Day 2에는 정리 단계가 없습니다. 따라서 주 프로덕션 인스턴스가 아닌 복제된 스테이징 인스턴스에서 Tough Day 2를 실행하는 것이 좋습니다. 테스트 후에 스테이징 인스턴스를 삭제해야 합니다.
 >
 
 ### 도움말 보기 {#getting-help}
@@ -330,7 +330,7 @@ java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --ad
 
 >[!NOTE]
 >
-병렬 실행으로 인해 실제 테스트 실행 수가 `count` 매개 변수. 실행 중인 스레드 수에 비례하는 편차 예상(에 의해 제어됨) `concurrency parameter`).
+>병렬 실행으로 인해 실제 테스트 실행 수가 `count` 매개 변수. 실행 중인 스레드 수에 비례하는 편차 예상(에 의해 제어됨) `concurrency parameter`).
 
 ### 시험 실행 {#dry-run}
 
