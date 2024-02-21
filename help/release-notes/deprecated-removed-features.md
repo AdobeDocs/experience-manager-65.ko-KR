@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 6.5 릴리스에서 더 이상 사용되지 않거나 제거된 기능.
 description: Adobe Experience Manager 6.5에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3443d331815ffb462890282a49e658693f157af0
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1715'
 ht-degree: 30%
 
 ---
@@ -29,15 +29,17 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 현재 배포에서 해당 기능을 사용 중인지 검토하고 이들 구현을 변경하여 제공되는 대체 기능을 사용하도록 계획을 세우는 것이 좋습니다.
 
-| 영역 | 특별 포함 | 대체 | 버전(SP) |
+| 영역 | 기능 | 대체 | 버전(SP) |
 |---|---|---|---|
+|   |   |   |   |
 | Sites | 다음 **Adobe AEM 관리 폴링 구성** 서비스: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | 다음 **Adobe AEM Analytics Report Sling Importer** 서비스. Adobe Analytics 연결 및 프레임워크 만들기 를 참조하십시오. [가져오기 간격 구성](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
-| [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. |   | 6.5.11.0 |
+| Screens | Adobe Experience Manager(AEM)의 ActiveMQ입니다. ActiveMQ는 두 AEM Publish 인스턴스 간의 통신에 사용되었습니다. | Adobe은 이제 고객이 로드 밸런서를 사용할 것을 권장합니다. | 6.5.18.0 |
+| **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. |   | 6.5.11.0 |
 | [!DNL Sites] | 콘텐츠 조각 템플릿(단순 콘텐츠 조각 생성) | 현재는 [모델 기반 구조 콘텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)입니다. | 6.5.11.0 |
 | Creative Cloud 통합 | Creative Cloud 폴더 공유에 대한 AEM이 AEM 6.2에 도입되었습니다. Creative 사용자가에서 열 수 있도록 AEM의 자산에 대한 액세스 권한을 제공하는 방법을 제공합니다 [!DNL Creative Cloud] 응용 프로그램을 실행하고 새 파일을 업로드하거나 변경 사항을 AEM에 저장하십시오. Creative Cloud 애플리케이션인 Adobe 에셋 링크에 출시된 새로운 기능은 Photoshop, InDesign 및 Illustrator 내에서 직접 AEM의 에셋에 액세스할 수 있도록 함으로써 사용자 경험을 향상시키고 에셋에 대한 강력한 액세스를 제공합니다. Adobe은 AEM의 Creative Cloud 폴더 공유 통합을 추가로 개선할 계획이 없습니다. 이 기능은 AEM에 포함되어 있지만 고객은 대체 솔루션을 사용하는 것이 좋습니다. | 고객은 Adobe Asset Link 또는 AEM 데스크탑 앱을 비롯한 새로운 Creative Cloud 통합 기능으로 전환하는 것이 좋습니다. |  |
 | 자산 | `AssetDownloadServlet` 는 게시 인스턴스에 대해 기본적으로 비활성화되어 있습니다. 자세한 내용은 [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md). | 다음에 설명된 구성 [AEM Security 검사 목록](/help/sites-administering/security-checklist.md). |  |
 | 통합 | 화면 **[!UICONTROL Experience Manager Cloud Service 옵트인]** 은(는) 다음 이후 더 이상 사용되지 않습니다: [!DNL Experience Manager] 및 [!DNL Adobe Target] 통합이에서 업데이트되었습니다. [!DNL Experience Manager] 6.5. 통합은 Adobe Target Standard API를 지원합니다. API는 Adobe IMS 및 [!DNL Adobe I/O Runtime]. Adobe Launch가 제공하는 악기 역할의 성장을 지원합니다 [!DNL Experience Manager] 분석 및 개인화를 위한 페이지에서, 옵트인 마법사는 기능적으로 관련이 없습니다. | 시스템 연결, Adobe IMS 인증 및 [!DNL Adobe I/O Runtime] 다음을 통한 통합 [!DNL Experience Manager] 클라우드 서비스. | 6.5.7.0 |
-| 커넥터 | Microsoft® SharePoint 2010 및 Microsoft® SharePoint 2013용 Adobe JCR 커넥터는 더 이상 사용되지 않습니다. [!DNL Experience Manager] 6.5. | N/A |  |
+| 커넥터 | Microsoft® SharePoint 2010 및 Microsoft® SharePoint 2013용 Adobe JCR 커넥터는 더 이상 사용되지 않습니다. [!DNL Experience Manager] 6.5. | 해당 사항 없음 |  |
 | Dynamic Tag Manager (DTM) | DTM과의 통합은 더 이상 사용되지 않습니다. | Adobe Experience Platform Launch을 태그 관리자로 사용하도록 전환합니다. |   |
 | Adobe Target | 를 사용하여 AEM에서 Adobe Target 서비스에 연결할 수 있는 기능 추가 [!DNL Adobe I/O] AEM 6.5의 Adobe Target Standard API(Rest API) 기반의 Target Classic API(XML) 방법은 더 이상 사용되지 않습니다. | 통합을 다음으로 재구성 [새 API 사용](/help/sites-administering/target.md). |  |
 | Adobe Target | 사용 `mbox.js` AEM의 Adobe Target과의 기반 통합은 더 이상 사용되지 않습니다. | 사용할 전환 `at.js` 1.x |  |
@@ -45,7 +47,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | 구성 요소(AEM Sites) | Adobe은에 저장된 대부분의 기초 구성 요소를 추가로 개선할 계획이 없습니다. `/libs/foundation/components`. 다음 항목을 찾습니다. `cq:deprecated` 및 `cq:deprecatedReason` 구성 요소 폴더의 속성. AEM 6.5에는 기초 구성 요소가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 또한 기초 구성 요소는 더 이상 사용되지 않는 경우에도 지원됩니다. | Adobe은 향후 프로젝트를 위해 핵심 구성 요소를 사용할 것을 권장합니다. 기존 사이트는 그대로 유지되거나 [AEM Modernize Tools 제품군](https://github.com/adobe/aem-modernize-tools)을 사용하여 코어 구성 요소를 사용하도록 사이트를 리팩터링할 수 있습니다. |  |
 | 구성 요소(AEM Sites) | 디자인 Importer 구성 요소 `/libs/wcm/designimporter/components` 이(가) 6.5부터 더 이상 사용되지 않는 것으로 표시되었습니다. Adobe은 디자인 임포터의 해당 구현을 더 이상 개선할 계획이 없습니다. | Adobe은 향후 릴리스에서 사용 사례에 대한 대체 구현을 제공할 계획입니다. |  |
 | Foundation | Granite 오프로딩 프레임워크. Adobe은 자산 처리를 외부화하기 위해 CQ 5.6.1에 도입된 오프로딩 프레임워크를 추가로 개선할 계획이 없습니다. | Adobe이 차세대 클라우드 기반 오프로딩 프레임워크에서 작업 중입니다. |  |
-| 개발자 | `Hobbes.js`을 따르지 않는 경우입니다. Adobe은 을(를) 더 이상 개선할 계획이 없습니다. `hobbes.js` 사용자 인터페이스 테스트 프레임워크. | 고객이 Selenium 자동화를 사용하는 것이 좋습니다. |  |
+| 개발자 | `Hobbes.js`. Adobe은 을(를) 더 이상 개선할 계획이 없습니다. `hobbes.js` 사용자 인터페이스 테스트 프레임워크. | 고객이 Selenium 자동화를 사용하는 것이 좋습니다. |  |
 | 개발자 | jQuery UI 클라이언트 라이브러리 Adobe은 향후 배포(빠른 시작)의 일부로 제공되는 jQuery UI 클라이언트 라이브러리를 유지 및 업데이트할 계획이 없습니다. | 코드에 여전히 jQuery UI가 필요한 고객은 코드를 해당 프로젝트 코드 베이스에 추가하시기 바랍니다. |  |
 | 개발자 | jQuery Animation 클라이언트 라이브러리(`granite.jquery.animation`). Adobe은 향후 배포(빠른 시작)의 일부로 제공되는 jQuery Animation 클라이언트 라이브러리를 유지 및 업데이트할 계획이 없습니다. | 코드에 여전히 jQuery Animation이 필요한 고객은 코드를 해당 프로젝트 코드 베이스에 추가하시기 바랍니다. |  |
 | 개발자 | Handlebars 클라이언트 라이브러리. Adobe은 배포(빠른 시작)의 일부로 제공되는 Handlebar 클라이언트 라이브러리를 유지 및 업데이트할 계획이 없습니다. | Adobe은 여전히 다음을 필요로 하는 고객을 권장합니다. `Handlebars` 코드: 를 자신의 프로젝트 코드 베이스에 추가합니다. |  |
@@ -60,7 +62,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 이 섹션에는 AEM 6.5에서 제거된 기능이 나와 있습니다. 이전 릴리스에는 이러한 기능이 더 이상 사용되지 않는 것으로 표시되었습니다.
 
-| 영역 | 특별 포함 | 대체 | 버전(SP) |
+| 영역 | 기능 | 대체 | 버전(SP) |
 |--- |--- |--- |--- |
 | 과 통합 [!DNL Experience Cloud] | 자산을 과 동기화할 수 있습니다. [!DNL Experience Cloud] 를 통해 구성 사용 [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] 이전에 이(가) 호출되었습니다. [!DNL Adobe Experience Cloud]. | 문의사항이 있으시면, [Adobe 고객 지원 문의](https://experienceleague.adobe.com/?support-solution=General#support). |  |
 | Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. 사용 [Adobe Analytics 제공 ActivityMap 플러그인](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |  |
