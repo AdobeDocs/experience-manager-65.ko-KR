@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 22235790b2bfefaa1a3bf71f888f8eb343d9e1b7
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '4257'
 ht-degree: 3%
 
 ---
@@ -460,3 +460,57 @@ AEM Forms은 세 번째 마스터 페이지를 패널과 적응형 양식의 모
 * 적응형 양식의 문서 조각은 기록 문서에 표시되지 않습니다. 그러나 적응형 양식 조각은 지원됩니다.
 * XML 스키마 기반 적응형 양식에 대해 생성된 기록 문서의 콘텐츠 바인딩은 지원되지 않습니다.
 * 기록 문서의 현지화된 버전은 사용자가 기록 문서 렌더링을 요청할 때 로케일에 대한 요청에 따라 생성됩니다. 기록 문서의 현지화는 적응형 양식의 현지화와 함께 발생합니다. 기록 문서 및 적응형 양식의 현지화에 대한 자세한 내용은 을 참조하십시오. [AEM 번역 워크플로를 사용하여 적응형 양식 및 기록 문서 현지화](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+
+## 사용자 지정 XCI 파일 사용
+
+XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다. <!-- Forms as a Cloud Service has a master XCI file.--> 사용자 지정 XCI 파일을 사용하여 기존 XCI 파일에 지정된 하나 이상의 기본 속성을 재정의할 수 있습니다. 예를 들어 글꼴을 문서에 포함하거나 모든 문서에 대해 태그가 지정된 속성을 사용하도록 선택할 수 있습니다. 다음 표는 XCI 옵션을 지정합니다.
+
+| XCI 옵션 | 설명 |
+|--- |--- |
+| config/present/pdf/creator | 문서 정보 사전의 작성자 항목을 사용하여 문서 작성자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | 문서 정보 사전의 제작자 항목을 사용하여 문서 제작자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| 구성/현재/레이아웃 | 출력이 단일 패널인지 또는 페이지 매김되어 있는지 여부를 제어합니다. |
+| config/present/pdf/compression/level | PDF 문서를 생성할 때 사용할 압축 정도를 지정합니다. |
+| config/present/pdf/fontInfo/embed | 출력 문서의 글꼴 포함을 제어합니다. |
+| config/present/pdf/scriptModel | 출력 PDF 문서에 XFA 관련 정보를 포함할지 여부를 제어합니다. |
+| config/present/common/data/adjustData | XFA 애플리케이션이 병합 후 데이터를 조정하는지 여부를 제어합니다. |
+| config/present/pdf/renderPolicy | 페이지 컨텐츠 생성이 서버에서 수행되는지 아니면 클라이언트로 연기되는지를 제어합니다. |
+| config/present/common/locale | 출력 문서에 사용되는 기본 로케일을 지정합니다. |
+| 구성/현재/대상 | 현재 요소에 포함된 경우 출력 형식을 지정합니다. openAction 요소에 포함된 경우, 대화형 클라이언트에서 문서를 열 때 수행할 작업을 지정합니다. |
+| config/present/output/type | 파일에 적용할 압축 유형이나 생성할 출력 유형을 지정합니다. |
+| config/present/common/temp/uri | 양식 URI를 지정합니다. |
+| config/present/common/template/base | 양식 디자인에서 URI의 기본 위치를 제공합니다. 이 요소가 없거나 비어 있으면 양식 디자인의 위치가 기반으로 사용됩니다. |
+| config/present/common/log/to | 로그 데이터나 출력 데이터가 기록되는 위치를 제어합니다. |
+| config/present/output/to | 로그 데이터나 출력 데이터가 기록되는 위치를 제어합니다. |
+| config/present/script/currentPage | 문서를 열 때의 초기 페이지를 지정합니다. |
+| config/present/script/exclude | 무시할 이벤트를 Forms에 as a Cloud Service으로 알립니다. |
+| config/present/pdf/linearized | 출력 PDF 문서의 선형 여부를 제어합니다. |
+| config/present/script/runScripts | Forms이 as a Cloud Service으로 실행하는 스크립트 세트를 제어합니다. |
+| config/present/pdf/태그됨 | 출력 PDF 문서에 태그를 포함하도록 제어합니다. 태그는 PDF 컨텍스트에서 문서의 논리적 구조를 노출하기 위해 문서에 포함된 추가 정보입니다. 태그는 접근성 지원 및 서식 변경을 지원합니다. 예를 들어, 화면 판독기가 텍스트 중간에 이를 발음하지 않도록 페이지 번호를 아티팩트로 태그 지정할 수 있습니다. 태그를 사용하면 문서가 더 유용해지지만 문서 크기와 문서를 만드는 처리 시간도 늘어납니다. |
+| config/present/pdf/fontInfo/alwaysEmbed | 출력 문서에 포함된 글꼴을 지정합니다. |
+| config/present/pdf/fontInfo/neverEmbed | 출력 문서에 포함해서는 안 되는 글꼴을 지정합니다. |
+| config/present/pdf/pdfa/part | 문서가 준수하는 PDF/A 사양의 버전 번호를 지정합니다. |
+| config/present/pdf/pdfa/amd | PDF/A 사양의 수정 수준을 지정합니다. |
+| config/present/pdf/pdfa/conformance | PDF/A 사양과 호환 레벨을 지정합니다. |
+| config/present/pdf/version | 생성할 PDF 문서의 버전을 지정합니다. |
+| config/present/pdf/version/map | 문서의 대체 글꼴을 지정합니다. |
+
+
+<!--
+
+### Use a custom XCI file in your AEM Forms environment
+
+  1. Add the custom XCI file to your development project.
+  1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
+  1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
+  
+-->
+
+### 로컬 Forms 개발 환경에서 사용자 지정 XCI 파일 사용
+
+1. XCI 파일을 로컬 개발 환경에 업로드합니다.
+1. 열기 <!--Cloud Service SDK--> 구성 관리자. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. 을(를) 찾아 엽니다. **[!UICONTROL 적응형 Forms 및 대화형 통신 웹 채널]** 구성.
+1. XCI 파일의 경로를 지정하고 **[!UICONTROL 저장]**.
+
+
