@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 2ffb77762af1969f3c93e7dd33cb3de9349375f8
+source-git-commit: f48e77068f286ff107bb2511660bf540fea32474
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2888'
 ht-degree: 6%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 6%
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* 중첩된 구성 폴더는 더 이상 지원되지 않으며 AEM 6.5.18 또는 AEM 6.5.19로 업그레이드한 후에는 콘텐츠 조각 모델 폴더가 더 이상 표시되지 않습니다. (SITES-18110) 메이저
+* 중첩된 구성 폴더는 더 이상 지원되지 않으며 AEM 6.5.18 또는 AEM 6.5.19로 업그레이드한 후에는 콘텐츠 조각 모델 폴더가 더 이상 표시되지 않습니다. (SITES-18110)
 * 일부 하위 폴더는 상속된 콘텐츠 조각 모델에서 선택할 수 없습니다. 이 구성 요소는 `jcr:content` 사용자 인터페이스를 통해 생성된 DAM 폴더에 이러한 노드가 있는 경우에도 속성을 사용할 수 있습니다. (SITES-17943)
 
 #### [!DNL Content Fragments] - GRAPHQL API {#sites-graphql-api-6520}
@@ -156,13 +156,7 @@ ht-degree: 6%
 
 * text -->
 
-#### [!DNL Forms Designer]{#forms-designer-6520}
-
-* text
-
-<!-- ### Foundation{#foundation-6520}
-
-* text -->
+### Foundation {#foundation-6520}
 
 #### 커뮤니티 {#communities-6520}
 
@@ -181,17 +175,9 @@ ht-degree: 6%
 * Aria 레이블 &quot;close&quot;가에 현지화되지 않았습니다. **[!UICONTROL 에셋]** > **[!UICONTROL 파일]**&#x200B;폴더를 선택한 다음 도구 모음에서 를 선택합니다. **[!UICONTROL 속성]** > **[!UICONTROL 권한]** 탭 > 멤버 이름입니다. (NPR-41705)
 * 에 대해 잘린 툴팁이 있습니다. **[!UICONTROL 키 저장소 암호]** 로케일 ENG, FRA, KOR, DEU 및 PTB에 대한 SSL 설정 페이지의 필드입니다. (NPR-41367)
 
-<!-- #### Oak{#oak-6520}
-
-* text -->
-
 #### Platform{#foundation-platform-6520}
 
 * /api 서블릿이 href json에 올바른 스키마를 반환하지 않아 AEM과 Campaign을 통합하는 문제가 발생했습니다. AEM이 X-Forward-Proto 헤더를 받지 못해서 HTTPS 대신 HTTP 스키마로 요청을 응답해야 했기 때문입니다. 따라서 OSGI 구성을 기반으로 구성표 선택을 전환하는 기능이 추가되어야 합니다. (GRANITE-48454)
-
-<!-- #### Replication{#foundation-replication-6520}
-
-* text -->
 
 #### 슬링{#foundation-sling-6520}
 
