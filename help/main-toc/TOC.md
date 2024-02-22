@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
+source-git-commit: a4ece4c2e9128e61982fb45d90ee3c63352f8349
 workflow-type: tm+mt
-source-wordcount: '7335'
+source-wordcount: '7342'
 ht-degree: 22%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 22%
 + 릴리스 정보 {#release-notes}
    + [릴리스 정보](/help/release-notes/release-notes.md)
    + 이전 릴리스 정보 {#service-pack}
+      + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
       + [6.5.17](/help/release-notes/previous/6-5-17.md)
       + [6.5.16](/help/release-notes/previous/6-5-16.md)
@@ -41,6 +42,7 @@ ht-degree: 22%
    + [AEM Forms 서비스 팩 설치 지침](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
    + [AEM Forms JEE 패치 설치 관리자](/help/release-notes/jee-patch-installer-65.md)
    + [AEM Forms 서비스 팩 핫픽스](/help/release-notes/aem-forms-hotfix.md)
+   + [누적 주요 기능 및 개선 사항](/help/release-notes/cumulative-features-enhancements.md)
    + [이제 사용되지 않는 기능과 제거된 기능](/help/release-notes/deprecated-removed-features.md)
    + [Touch UI 기능 상태](/help/release-notes/touch-ui-features-status.md)
 + 보안 {#security}
@@ -886,11 +888,11 @@ ht-degree: 22%
       + [사용자 지정 도구 모음 레이아웃 만들기](/help/forms/using/creating-custom-toolbar-layout.md)
       + [사용된 템플릿을 기반으로 구성 요소 표시](/help/forms/using/displaying-components-based-on-template.md)
       + [사용자 지정 적응형 양식 테마 만들기](/help/forms/using/creating-custom-adaptive-form-themes.md)
-   + 거래 보고서 {#transaction-reports}
+   + 트랜잭션 보고서 {#transaction-reports}
       + [거래 보고서 개요](/help/forms/using/transaction-reports-overview.md)
       + [거래 보고서 보기 및 이해](/help/forms/using/viewing-and-understanding-transaction-reports.md)
       + [트랜잭션 보고서 과금 가능한 API](/help/forms/using/transaction-reports-billable-apis.md)
-      + [사용자 지정 구현에 대한 트랜잭션 기록](/help/forms/using/record-transaction-custom-implementation.md)
+      + [사용자 정의 구현을 위한 트랜잭션 레코드](/help/forms/using/record-transaction-custom-implementation.md)
    + JEE의 AEM Forms에 대한 관리자 도움말 {#administrator-help}
       + 시작하기 {#get-started}
          + [일반 AEM Forms 설정](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)

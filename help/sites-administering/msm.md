@@ -1,21 +1,21 @@
 ---
-title: "콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy"
+title: "콘텐츠 재사용: 다중 사이트 관리자 및 라이브 카피"
 description: 라이브 카피 및 다중 사이트 관리자를 통한 콘텐츠 재사용에 대해 알아봅니다.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: fd30e16274b6d5f971120f4e360fc9d65ae21bec
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 24%
+source-wordcount: '2665'
+ht-degree: 19%
 
 ---
 
 # 콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy{#reusing-content-multi-site-manager-and-live-copy}
 
-MSM(다중 사이트 관리자)을 사용하면 여러 위치에서 동일한 사이트 콘텐츠를 사용할 수 있습니다. 이를 위해 MSM은 Live Copy 기능을 사용합니다:
+MSM(다중 사이트 관리자)을 사용하면 여러 위치에서 동일한 사이트 콘텐츠를 사용할 수 있습니다. MSM은 이를 위해 라이브 카피 기능을 사용합니다.
 
 * MSM을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -151,6 +151,10 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 >[!NOTE]
 >
+>MSM은 페이지 및 와 함께 사용할 수 있습니다. [경험 조각](/help/sites-authoring/experience-fragments.md) 따라서 이러한 조각은 경험(페이지)의 일부입니다.
+
+>[!NOTE]
+>
 >MSM 기능은 여러 다른 AEM(Adobe Experience Manager) 기능(예: 론치, 카탈로그)에 사용됩니다. 이러한 경우 라이브 카피는 해당 기능에 의해 관리됩니다.
 
 ### 사용된 용어 {#terms-used}
@@ -167,7 +171,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
   <tr>
    <td><strong>소스</strong></td>
    <td>원본 페이지입니다.</td>
-   <td>블루프린트 및/또는 블루프린트 페이지의 동의어.</td>
+   <td>블루프린트 및/또는 블루프린트 페이지의 동의어입니다.</td>
   </tr>
   <tr>
    <td><strong>Live Copy</strong></td>
@@ -186,12 +190,12 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
   </tr>
   <tr>
    <td><strong>블루프린트</strong></td>
-   <td>소스의 동의어.</td>
+   <td>소스의 동의어입니다.</td>
    <td>블루프린트 구성으로 정의할 수 있습니다.</td>
   </tr>
   <tr>
    <td><strong>블루프린트 구성</strong></td>
-   <td>소스 경로를 지정하는 사전 정의된 구성.</td>
+   <td>소스 경로를 지정하는 사전 정의된 구성입니다.</td>
    <td>블루프린트 구성에서 블루프린트 페이지가 참조되면 롤아웃 명령을 사용할 수 있습니다.</td>
   </tr>
   <tr>
@@ -281,7 +285,7 @@ MSM 라이브 카피는 원본 소스와의 라이브 관계가 유지되는 특
 
 >[!NOTE]
 >
-이 섹션의 다이어그램 및 설명은 잠재적 라이브 카피의 스냅샷을 나타냅니다. 이 스냅샷은 포괄적이지는 않지만 특정 특성을 강조하는 개요를 제공합니다.
+>이 섹션의 다이어그램 및 설명은 잠재적 라이브 카피의 스냅샷을 나타냅니다. 이 스냅샷은 포괄적이지는 않지만 특정 특성을 강조하는 개요를 제공합니다.
 
 처음 라이브 카피를 만들 때 선택한 소스 페이지는 라이브 카피에 1:1 기준으로 반영됩니다. 이후 라이브 카피 내에서 직접 새 리소스(페이지 및/또는 단락)를 만들 수도 있으므로, 이러한 변형이 동기화에 미치는 영향을 알아두는 것이 좋습니다. 가능한 구성은 다음과 같습니다.
 
@@ -323,7 +327,7 @@ AEM에서 라이브 카피를 만들 때 라이브 카피 분기를 확인하고
 
 >[!NOTE]
 >
-라이브 카피 분기 내에서 페이지를 이동/이름 변경하는 경우 (내부적으로) 이 페이지는 AEM에서 관계를 추적할 수 있도록 중첩 라이브 카피로 처리됩니다.
+>라이브 카피 분기 내에서 페이지를 이동/이름 변경하는 경우 (내부적으로) 이 페이지는 AEM에서 관계를 추적할 수 있도록 중첩 라이브 카피로 처리됩니다.
 
 #### 누적 Live Copy {#stacked-live-copies}
 
@@ -355,12 +359,12 @@ AEM에서 라이브 카피를 만들 때 라이브 카피 분기를 확인하고
 
 ### 롤아웃 및 동기화 {#rollout-and-synchronize}
 
-롤아웃은 라이브 카피를 해당 소스와 동기화하는 중앙 집중식 MSM 작업입니다. 롤아웃은 수동으로 수행할 수도 있고 자동으로 수행할 수도 있습니다:
+롤아웃은 라이브 카피를 해당 소스와 동기화하는 중앙 집중식 MSM 작업입니다. 롤아웃은 수동으로 수행하거나 자동으로 수행할 수 있습니다.
 
 * [롤아웃 구성](#rollout-configurations)을 정의하여 특정 [이벤트](/help/sites-administering/msm-sync.md#rollout-triggers)가 롤아웃을 자동으로 발생시킬 수 있도록 할 수 있습니다.
 * 블루프린트 페이지를 작성할 때 [롤아웃](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) 명령을 실행하여 변경 내용을 라이브 카피로 푸시합니다.
 
-  **롤아웃** 명령은 블루프린트 구성에서 참조되는 블루프린트 페이지에서 사용할 수 있습니다.
+  **롤아웃** 명령은 블루프린트 구성에서 참조하는 블루프린트 페이지에서 사용할 수 있습니다.
 
   ![롤아웃](assets/chlimage_1-370.png)
 
@@ -384,7 +388,7 @@ AEM에서 라이브 카피를 만들 때 라이브 카피 분기를 확인하고
 
   >[!NOTE]
   >
-  Java™ API를 사용하여 인스턴스에 대한 사용자 지정 작업을 만들 수 있습니다.
+  >Java™ API를 사용하여 인스턴스에 대한 사용자 지정 작업을 만들 수 있습니다.
 
 두 개 이상의 라이브 카피가 동일한 롤아웃 구성을 사용할 수 있도록 롤아웃 구성을 재사용할 수 있습니다. 표준 설치에는 여러 [롤아웃 구성](/help/sites-administering/msm-sync.md#installed-rollout-configurations)이 포함되어 있습니다.
 
@@ -406,13 +410,13 @@ AEM에서 라이브 카피를 만들 때 라이브 카피 분기를 확인하고
 
 >[!CAUTION]
 >
-분리 작업은 영구적이며 취소가 불가능합니다.
+>분리 작업은 영구적이며 취소가 불가능합니다.
 
 분리 는 라이브 카피와 블루프린트 페이지 간의 라이브 관계를 영구적으로 제거합니다. 모든 MSM 관련 속성이 라이브 카피에서 제거되며 라이브 카피 페이지는 독립형 사본이 됩니다.
 
 >[!NOTE]
 >
-다음을 참조하십시오 [라이브 카피 분리](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) 하위 페이지 및 상위 페이지에 미치는 영향을 포함하여 전체 세부 정보.
+>다음을 참조하십시오 [라이브 카피 분리](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) 하위 페이지 및 상위 페이지에 미치는 영향을 포함하여 전체 세부 정보.
 
 ## MSM 사용을 위한 표준 단계 {#standard-steps-for-using-msm}
 
@@ -432,7 +436,7 @@ AEM에서 라이브 카피를 만들 때 라이브 카피 분기를 확인하고
 
 ## MSM 맞춤화 {#customizing-msm}
 
-MSM은 콘텐츠를 공유할 때 발생할 수 있는 예외적인 복잡성에 맞게 구현을 조정할 수 있는 도구를 제공합니다:
+MSM은 콘텐츠를 공유할 때 발생할 수 있는 예외적인 복잡성에 맞게 구현을 조정할 수 있는 도구를 제공합니다.
 
 * **사용자 정의 롤아웃 구성**
   [롤아웃 구성 만들기](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) 설치된 롤아웃 구성이 요구 사항을 충족하지 않는 경우. 사용할 수 있는 모든 롤아웃 트리거 및 동기화 작업을 사용할 수 있습니다.

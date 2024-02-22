@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달을 위해 AEM(Adobe Experience Manager)의 콘텐츠 조각을 AEM GraphQL API와 함께 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
+source-git-commit: 452813cf50110b515c181dba1ecbde4527808cfb
 workflow-type: tm+mt
-source-wordcount: '4708'
-ht-degree: 59%
+source-wordcount: '4796'
+ht-degree: 58%
 
 ---
 
@@ -523,6 +523,53 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
     items {
       lastName
       firstName
+    }
+  }
+}
+```
+
+선택적 변수를 사용하여 GraphQL 쿼리를 실행할 때 특정 값이 **아님** 선택 변수에 제공된 경우 필터 평가에서 변수가 무시됩니다. 즉, 쿼리 결과에는 모든 값이 포함됩니다 `null` 및 아님 `null`: 필터 변수와 관련된 속성입니다.
+
+>[!NOTE]
+>
+>다음과 같은 경우 `null` 값: *명백하게* 이러한 변수에 대해 지정된 경우 필터가 `null` 해당 속성의 값입니다.
+
+예를 들어 아래 쿼리에서 속성에 대해 값을 지정하지 않았습니다 `lastName`:
+
+```graphql
+query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+    }
+  }
+}
+```
+
+모든 작성자가 반환됩니다.
+
+```graphql
+{
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": "Hammer"
+        },
+        {
+          "lastName": "Provo"
+        },
+        {
+          "lastName": "Wester"
+        },
+        {
+          "lastName": null
+        },
+         ...
+      ]
     }
   }
 }
