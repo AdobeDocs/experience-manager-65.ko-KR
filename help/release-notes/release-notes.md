@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 19fe527ce44d8ec5be50ebd32b46f13df96c52cc
+source-git-commit: 2ffb77762af1969f3c93e7dd33cb3de9349375f8
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2889'
 ht-degree: 6%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 6%
 
 #### 관리 사용자 인터페이스{#sites-adminui-6520}
 
-* 다음 `Workflow Title` 필드가 로 표시됨 `*` 필수 사항이지만 유효성 검사가 없습니다. (SITES-16491) 정상
+* 다음 `Workflow Title` 필드가 로 표시됨 `*` 필수 사항이지만 유효성 검사가 없습니다. (SITES-16491)
 
 <!--#### Classic UI{#sites-classicui-6520}
 
@@ -68,12 +68,12 @@ ht-degree: 6%
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
 * 중첩된 구성 폴더는 더 이상 지원되지 않으며 AEM 6.5.18 또는 AEM 6.5.19로 업그레이드한 후에는 콘텐츠 조각 모델 폴더가 더 이상 표시되지 않습니다. (SITES-18110) 메이저
-* 일부 하위 폴더는 상속된 콘텐츠 조각 모델에서 선택할 수 없습니다. 이 구성 요소는 `jcr:content` 사용자 인터페이스를 통해 생성된 DAM 폴더에 이러한 노드가 있는 경우에도 속성을 사용할 수 있습니다. (SITES-17943) 정상
+* 일부 하위 폴더는 상속된 콘텐츠 조각 모델에서 선택할 수 없습니다. 이 구성 요소는 `jcr:content` 사용자 인터페이스를 통해 생성된 DAM 폴더에 이러한 노드가 있는 경우에도 속성을 사용할 수 있습니다. (SITES-17943)
 
 #### [!DNL Content Fragments] - GRAPHQL API {#sites-graphql-api-6520}
 
 <!-- REMOVED AS PER EMAIL FROM SAMEER DHAWAN FEBRUARY 19, 2024 * When upgrading AEM from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-19530) CRITICAL -->
-* GraphQL 쿼리를 실행할 때 [결과 필터링](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) 특정 값이 다음과 같은 경우 선택적 변수 사용 **아님** 선택 변수에 제공된 경우 변수는 필터 평가에서 무시됩니다. (SITES-17051) 정상
+* GraphQL 쿼리를 실행할 때 [결과 필터링](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) 특정 값이 다음과 같은 경우 선택적 변수 사용 **아님** 선택 변수에 제공된 경우 변수는 필터 평가에서 무시됩니다. (SITES-17051)
 
 <!--#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6520}
 
@@ -81,24 +81,24 @@ ht-degree: 6%
 
 #### [!DNL Content Fragments] - 나머지 API{#sites-restapi-6520}
 
-* 를 업그레이드하여 `org.json` 라이브러리에서 10진수가 deserialize되는 방식이 변경되었습니다. Double로 &quot;기본적으로&quot; 변환되기 전에는 이제 BigDecimals로 변환되었습니다. 대신 REST API를 통해 저장된 메타데이터 속성 값은 BigDecimal에서 Double로 변환되어야 합니다. (SITES-16857) 정상
+* 를 업그레이드하여 `org.json` 라이브러리에서 10진수가 deserialize되는 방식이 변경되었습니다. Double로 &quot;기본적으로&quot; 변환되기 전에는 이제 BigDecimals로 변환되었습니다. 대신 REST API를 통해 저장된 메타데이터 속성 값은 BigDecimal에서 Double로 변환되어야 합니다. (SITES-16857)
 
 #### 핵심 백엔드{#sites-core-backend-6520}
 
-* 콘텐츠 조각의 빠른 게시 를 사용하면 계속해서 로드되고 게시되지 않습니다. 즉, AEM 6.5.7에서 AEM 6.5.17로 서비스 팩을 업그레이드한 후 콘텐츠 조각에 대해 빠른 게시가 작동하지 않습니다. 사용자가 관리 게시를 시도하면 제대로 작동합니다. 그러나 빠른 게시를 시도했을 때 게시되지 않았습니다. 특히, `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` 이(가) 시스템을 스래쉬(thrash)했습니다. (SITES-17311) 메이저
-* 컨텐츠 조각은 Jackson Exporter를 사용하여 직렬화할 수 없습니다. 페이지에서 참조된 컨텐츠 조각(Jackson Exporter 코드 사용)과 컨텐츠 조각에 추가된 태그가 있으면 페이지 로드가 중단됩니다. (SITES-18096) 정상
+* 콘텐츠 조각의 빠른 게시 를 사용하면 계속해서 로드되고 게시되지 않습니다. 즉, AEM 6.5.7에서 AEM 6.5.17로 서비스 팩을 업그레이드한 후 콘텐츠 조각에 대해 빠른 게시가 작동하지 않습니다. 사용자가 관리 게시를 시도하면 제대로 작동합니다. 그러나 빠른 게시를 시도했을 때 게시되지 않았습니다. 특히, `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` 이(가) 시스템을 스래쉬(thrash)했습니다. (SITES-17311)
+* 컨텐츠 조각은 Jackson Exporter를 사용하여 직렬화할 수 없습니다. 페이지에서 참조된 컨텐츠 조각(Jackson Exporter 코드 사용)과 컨텐츠 조각에 추가된 태그가 있으면 페이지 로드가 중단됩니다. (SITES-18096)
 
 #### 핵심 구성 요소{#sites-core-components-6520}
 
-* AEM에 CIF 핵심 구성 요소 패키지를 설치하면 다음과 같은 문제가 발생합니다. `:type` 변경할 기존 구성 요소의 값입니다. 이 변경 사항은 추가된 페이지에서 더 이상 렌더링하지 않음을 의미합니다. (SITES-17601) 메이저
+* AEM에 CIF 핵심 구성 요소 패키지를 설치하면 다음과 같은 문제가 발생합니다. `:type` 변경할 기존 구성 요소의 값입니다. 이 변경 사항은 추가된 페이지에서 더 이상 렌더링하지 않음을 의미합니다. (SITES-17601)
 
 #### Campaign 통합{#sites-campaign-integration-6520}
 
-* AEM은 허용 목록에 추가하다를 사용하고 있었다. `whitelist`- 취약성 보고서로 인해. 허용 목록에 추가하다으로 인해 고객이 필요한 기능을 사용할 수 없었습니다. (SITES-16822) 중요
+* AEM은 허용 목록에 추가하다를 사용하고 있었다. `whitelist`- 취약성 보고서로 인해. 허용 목록에 추가하다으로 인해 고객이 필요한 기능을 사용할 수 없었습니다. (SITES-16822)
 
 #### 경험 조각{#sites-experiencefragments-6520}
 
-* 이제 경험 조각용 MSM은 폴더 및 하위 폴더를 포함한 경험 조각 콘텐츠 구조에 대한 벌크 롤아웃을 지원합니다. (SITES-16004) 메이저
+* 이제 경험 조각용 MSM은 폴더 및 하위 폴더를 포함한 경험 조각 콘텐츠 구조에 대한 벌크 롤아웃을 지원합니다. (SITES-16004)
 
 <!--#### Foundation Components (Legacy){#sites-foundation-components-legacy-6520}
 
@@ -110,31 +110,31 @@ ht-degree: 6%
 
 #### MSM - 라이브 카피{#sites-msm-live-copies-6520}
 
-* An &quot;`Is not modifiable`구성 요소를 롤아웃할 때 예외가 throw됩니다. 특히, `org.apache.sling.servlets.post.impl.operations.ModifyOperation` 응답을 처리하는 동안 예외가 발생했습니다. (SITES-18809) 메이저
-* 경험 조각의 특정 라이브 카피에 변경 사항을 롤아웃할 수 없습니다. (SITES-17930) 메이저
-* 사용자가 블루프린트 페이지의 구성 요소에 주석을 추가한 다음 롤아웃하면 라이브 카피의 주석 수가 잘못 표시됩니다. (SITES-17099) 메이저
-* 터치 그래픽 사용자 인터페이스에서 상위 페이지에서 하위 페이지로의 MSM 롤아웃 버튼이 중단됩니다. 이 버튼을 선택하면 다음 오류가 표시됩니다. `Uncaught TypeError: _g.shared is undefined`. (SITES-16991) 메이저
+* An &quot;`Is not modifiable`구성 요소를 롤아웃할 때 예외가 throw됩니다. 특히, `org.apache.sling.servlets.post.impl.operations.ModifyOperation` 응답을 처리하는 동안 예외가 발생했습니다. (SITES-18809)
+* 경험 조각의 특정 라이브 카피에 변경 사항을 롤아웃할 수 없습니다. (SITES-17930)
+* 사용자가 블루프린트 페이지의 구성 요소에 주석을 추가한 다음 롤아웃하면 라이브 카피의 주석 수가 잘못 표시됩니다. (SITES-17099)
+* 터치 그래픽 사용자 인터페이스에서 상위 페이지에서 하위 페이지로의 MSM 롤아웃 버튼이 중단됩니다. 이 버튼을 선택하면 다음 오류가 표시됩니다. `Uncaught TypeError: _g.shared is undefined`. (SITES-16991)
 
 #### 페이지 편집기{#sites-pageeditor-6520}
 
-* Forms 테마 편집기 미리보기가 손상되었습니다. 미리보기를 선택하면 로드 아이콘만 표시됩니다. (SITES-17164) BLOCKER
+* Forms 테마 편집기 미리보기가 손상되었습니다. 미리보기를 선택하면 로드 아이콘만 표시됩니다. (SITES-17164)
 
 ### [!DNL Assets]{#assets-6520}
 
-* 메타데이터 편집기 도우미에서 규칙 기반 필드를 확인할 수 없으며 &quot;필수 필드 누락&quot; 오류 메시지를 표시합니다. (ASSETS-31396) 주
-* PDF을 다른 위치로 이동한 후 **[!UICONTROL 페이지 보기]** 옵션이 사라집니다. (ASSETS-30538) 주
-* 읽기 권한이 있는 이미지를 선택할 수 없습니다. (ASSETS-32199) 정상
-* 보기 설정에서 카드 크기를 변경할 수 없습니다. (ASSETS-31667) 정상
-* .oft 파일 형식을 업로드하는 동안 업로드가 실패합니다. (ASSETS-30109) 정상
-* 사용자 지정 메타데이터 필드를 보고서에 추가 열로 추가하려고 하면 확인란이 선택되지 않습니다. (ASSETS-31671) MINOR
-* 에셋 이동 작업이 Experience Manager 서비스 팩 16에서 제대로 작동하지 않습니다. (ASSETS-30598) MINOR
+* 메타데이터 편집기 도우미에서 규칙 기반 필드를 확인할 수 없으며 &quot;필수 필드 누락&quot; 오류 메시지를 표시합니다. (ASSETS-31396)
+* PDF을 다른 위치로 이동한 후 **[!UICONTROL 페이지 보기]** 옵션이 사라집니다. (ASSETS-30538)
+* 읽기 권한이 있는 이미지를 선택할 수 없습니다. (ASSETS-32199)
+* 보기 설정에서 카드 크기를 변경할 수 없습니다. (ASSETS-31667)
+* .oft 파일 형식을 업로드하는 동안 업로드가 실패합니다. (ASSETS-30109)
+* 사용자 지정 메타데이터 필드를 보고서에 추가 열로 추가하려고 하면 확인란이 선택되지 않습니다. (ASSETS-31671)
+* 에셋 이동 작업이 Experience Manager 서비스 팩 16에서 제대로 작동하지 않습니다. (ASSETS-30598)
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
-* 에셋이 AEM에 업로드되면 `Update_asset` 워크플로우가 트리거됩니다. 그러나 워크플로우는 완료되지 않습니다. 워크플로우는 제품 업로드 단계까지만 완료됩니다. 다음 단계는 Scene7 일괄 업로드이지만 해당 프로세스를 AEM으로 가져오지는 않습니다. (ASSETS-30443) 위험
-* Dynamic Media 구성 요소에서 Dynamic Media이 아닌 비디오를 우아하게 처리하는 더 나은 방법이 필요합니다. 이 문제로 인해 인스턴스화하는 동안 예외가 발생했습니다. `dynamicmedia_sly.js`. (ASSETS-31301) 주
-* 미리 보기는 모든 에셋, 적응형 비디오 세트 및 비디오에 대해 작동합니다. 하지만 다음에 대해 403 오류가 발생합니다. `.m3u8` 파일(부수적으로, 여전히 공개 링크를 통해 작동함). (ASSETS-31882) 주
-* 다음 `scene7SmartCropProcessingStatus` 상태가 수정되었습니다. 성공한 경우에도 실패를 표시하는 데 사용되는 스마트 자르기 비디오 메타데이터입니다. (ASSETS-31255) MINOR
+* 에셋이 AEM에 업로드되면 `Update_asset` 워크플로우가 트리거됩니다. 그러나 워크플로우는 완료되지 않습니다. 워크플로우는 제품 업로드 단계까지만 완료됩니다. 다음 단계는 Scene7 일괄 업로드이지만 해당 프로세스를 AEM으로 가져오지는 않습니다. (ASSETS-30443)
+* Dynamic Media 구성 요소에서 Dynamic Media이 아닌 비디오를 우아하게 처리하는 더 나은 방법이 필요합니다. 이 문제로 인해 인스턴스화하는 동안 예외가 발생했습니다. `dynamicmedia_sly.js`. (ASSETS-31301)
+* 미리 보기는 모든 에셋, 적응형 비디오 세트 및 비디오에 대해 작동합니다. 하지만 다음에 대해 403 오류가 발생합니다. `.m3u8` 파일(부수적으로, 여전히 공개 링크를 통해 작동함). (ASSETS-31882)
+* 다음 `scene7SmartCropProcessingStatus` 상태가 수정되었습니다. 성공한 경우에도 실패를 표시하는 데 사용되는 스마트 자르기 비디오 메타데이터입니다. (ASSETS-31255)
 
 ### [!DNL Forms]{#forms-6520}
 
@@ -166,7 +166,7 @@ ht-degree: 6%
 
 #### 커뮤니티 {#communities-6520}
 
-* 사용자 동기화를 구성한 후 사용자 동기화 진단에 실패했습니다. (NPR-41693) 정상
+* 사용자 동기화를 구성한 후 사용자 동기화 진단에 실패했습니다. (NPR-41693)
 
 <!-- #### Content distribution{#foundation-content-distribution-6520}
 
@@ -174,12 +174,12 @@ ht-degree: 6%
 
 #### 통합{#integrations-6520}
 
-* AEM 6.5에서 Adobe Search&amp;Promote의 모든 코드와 종속성을 제거합니다. (NPR-40856) 정상
+* AEM 6.5에서 Adobe Search&amp;Promote의 모든 코드와 종속성을 제거합니다. (NPR-40856)
 
 #### 현지화{#localization-6520}
 
-* Aria 레이블 &quot;close&quot;가에 현지화되지 않았습니다. **[!UICONTROL 에셋]** > **[!UICONTROL 파일]**&#x200B;폴더를 선택한 다음 도구 모음에서 를 선택합니다. **[!UICONTROL 속성]** > **[!UICONTROL 권한]** 탭 > 멤버 이름입니다. (NPR-41705) 메이저
-* 에 대해 잘린 툴팁이 있습니다. **[!UICONTROL 키 저장소 암호]** 로케일 ENG, FRA, KOR, DEU 및 PTB에 대한 SSL 설정 페이지의 필드입니다. (NPR-41367) 정상
+* Aria 레이블 &quot;close&quot;가에 현지화되지 않았습니다. **[!UICONTROL 에셋]** > **[!UICONTROL 파일]**&#x200B;폴더를 선택한 다음 도구 모음에서 를 선택합니다. **[!UICONTROL 속성]** > **[!UICONTROL 권한]** 탭 > 멤버 이름입니다. (NPR-41705)
+* 에 대해 잘린 툴팁이 있습니다. **[!UICONTROL 키 저장소 암호]** 로케일 ENG, FRA, KOR, DEU 및 PTB에 대한 SSL 설정 페이지의 필드입니다. (NPR-41367)
 
 <!-- #### Oak{#oak-6520}
 
@@ -187,7 +187,7 @@ ht-degree: 6%
 
 #### Platform{#foundation-platform-6520}
 
-* /api 서블릿이 href json에 올바른 스키마를 반환하지 않아 AEM과 Campaign을 통합하는 문제가 발생했습니다. AEM이 X-Forward-Proto 헤더를 받지 못해서 HTTPS 대신 HTTP 스키마로 요청을 응답해야 했기 때문입니다. 따라서 OSGI 구성을 기반으로 구성표 선택을 전환하는 기능이 추가되어야 합니다. (GRANITE-48454) 메이저
+* /api 서블릿이 href json에 올바른 스키마를 반환하지 않아 AEM과 Campaign을 통합하는 문제가 발생했습니다. AEM이 X-Forward-Proto 헤더를 받지 못해서 HTTPS 대신 HTTP 스키마로 요청을 응답해야 했기 때문입니다. 따라서 OSGI 구성을 기반으로 구성표 선택을 전환하는 기능이 추가되어야 합니다. (GRANITE-48454)
 
 <!-- #### Replication{#foundation-replication-6520}
 
@@ -195,21 +195,21 @@ ht-degree: 6%
 
 #### 슬링{#foundation-sling-6520}
 
-* 다음 `org.apache.sling.resourceMerger` 번들 1.4.2는 AEM 6.5, 서비스 팩 17 이상에서 예외를 throw합니다. Sling 리소스 병합 1.4.4는 서비스 팩 20에 포함되어야 합니다. (NPR-41630) 정상
+* 다음 `org.apache.sling.resourceMerger` 번들 1.4.2는 AEM 6.5, 서비스 팩 17 이상에서 예외를 throw합니다. Sling 리소스 병합 1.4.4는 서비스 팩 20에 포함되어야 합니다. (NPR-41630)
 
 #### 번역{#foundation-translation-6520}
 
-* AEM 6.5 서비스 팩 18을 배포한 후 번역 규칙 편집기의 필터 탭에 문제가 발생했습니다. 컨텍스트를 선택하고 편집 > 저장을 클릭하면 다음에 동일한 컨텍스트를 열 때 큰따옴표를 HTML 문자로 표시합니다. 기본적으로 번역 규칙이 올바르게 저장되지 않았습니다. (NPR-41624) 메이저
-* 번역된 문자열이 번역 공급자에서 AEM으로 다시 전송되지만 중단된 콘텐츠 조각 번역과 관련된 문제 `/content/projects` 콘텐츠 조각 레벨이며 업데이트되지 않습니다. (NPR-41516) 메이저
-* 언어 사본을 만들 때 오류 메시지가 표시됩니다. 이 문제는 페이지 속성에서 참조된 콘텐츠 조각이 있는 페이지에서 콘텐츠 조각 모델을 사용하여 발생합니다. (NPR-41441) 메이저
-* 언어 복사 중에 경험 조각의 링크가 올바른 언어로 조정되지 않습니다. 대신 경험 조각은 기본 로케일을 가리킵니다. (NPR-41343) 정상
+* AEM 6.5 서비스 팩 18을 배포한 후 번역 규칙 편집기의 필터 탭에 문제가 발생했습니다. 컨텍스트를 선택하고 편집 > 저장을 클릭하면 다음에 동일한 컨텍스트를 열 때 큰따옴표를 HTML 문자로 표시합니다. 기본적으로 번역 규칙이 올바르게 저장되지 않았습니다. (NPR-41624)
+* 번역된 문자열이 번역 공급자에서 AEM으로 다시 전송되지만 중단된 콘텐츠 조각 번역과 관련된 문제 `/content/projects` 콘텐츠 조각 레벨이며 업데이트되지 않습니다. (NPR-41516)
+* 언어 사본을 만들 때 오류 메시지가 표시됩니다. 이 문제는 페이지 속성에서 참조된 콘텐츠 조각이 있는 페이지에서 콘텐츠 조각 모델을 사용하여 발생합니다. (NPR-41441)
+* 언어 복사 중에 경험 조각의 링크가 올바른 언어로 조정되지 않습니다. 대신 경험 조각은 기본 로케일을 가리킵니다. (NPR-41343)
 
 #### 사용자 인터페이스{#foundation-ui-6520}
 
-* AEM 6.5, 서비스 팩 18로 업그레이드한 후 콘솔 오류가 발생합니다. 오류가 다음에 있습니다. `coralUI3.js` 이 이벤트는 AEM에서 드롭다운을 선택할 때 발생합니다. 특히 다음과 같은 경우에 발생합니다. `onOverlayToggle` 이벤트. 오류 `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` 이 표시됩니다. (NPR-41467) 메이저
-* AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 태깅]** > **[!UICONTROL 만들기]** > **[!UICONTROL 태그 만들기]**, 다음에 라틴어가 아닌 문자 입력 **제목** 필드는 다음을 발생시킵니다. **이름** 하이픈 문자로만 채울 필드( `-` ). (NPR-41623) 정상
-* 다음에서 저작권 연도가 올바르지 않음 `About Adobe Experience Manager` 대화 상자. (NPR-41526) 정상
-* 번역되지 않은 항목이 있습니다. **[!UICONTROL 프로필 속성]** 사용자 설정을 편집할 때의 문자열입니다. 모든 로케일에서 발생합니다. (NPR-41365) 정상
+* AEM 6.5, 서비스 팩 18로 업그레이드한 후 콘솔 오류가 발생합니다. 오류가 다음에 있습니다. `coralUI3.js` 이 이벤트는 AEM에서 드롭다운을 선택할 때 발생합니다. 특히 다음과 같은 경우에 발생합니다. `onOverlayToggle` 이벤트. 오류 `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` 이 표시됩니다. (NPR-41467)
+* AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 태깅]** > **[!UICONTROL 만들기]** > **[!UICONTROL 태그 만들기]**, 다음에 라틴어가 아닌 문자 입력 **제목** 필드는 다음을 발생시킵니다. **이름** 하이픈 문자로만 채울 필드( `-` ). (NPR-41623)
+* 다음에서 저작권 연도가 올바르지 않음 `About Adobe Experience Manager` 대화 상자. (NPR-41526)
+* 번역되지 않은 항목이 있습니다. **[!UICONTROL 프로필 속성]** 사용자 설정을 편집할 때의 문자열입니다. 모든 로케일에서 발생합니다. (NPR-41365)
 
 <!-- #### WCM{#wcm-6520}
 
