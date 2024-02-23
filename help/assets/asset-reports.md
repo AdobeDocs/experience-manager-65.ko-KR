@@ -6,10 +6,10 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 93d0a38d13223a8580f54786bc4ffe149efe99f1
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 10%
+source-wordcount: '1155'
+ht-degree: 8%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 10%
 * 만료
 * 수정
 * 게시
-* [!DNL Brand Portal] 페이지를
+* [!DNL Brand Portal] 게시
 * 디스크 사용량
 * 파일
 * 공유 링크
@@ -96,7 +96,7 @@ ht-degree: 10%
 
    ![파일 보고서의 세부 정보 페이지](assets/files_report.png)
 
-   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within [!DNL Assets]. It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. The columns are not customizable.
+   다음 **[!UICONTROL 링크 공유]** 내부 외부 사용자와 공유되는 자산의 URL이 보고서에 표시됩니다. [!DNL Assets]. It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. The columns are not customizable.
 
    다음 **[!UICONTROL 링크 공유]** 보고서에서는 아래에 표시되는 공유 URL만 게시하므로 하위 폴더 및 렌디션에 대한 옵션을 포함하지 않습니다. `/var/dam/share`.
 
@@ -115,7 +115,8 @@ ht-degree: 10%
 1. 클릭 **[!UICONTROL 만들기]** 을 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
 1. 다음에서 [!UICONTROL 자산 보고서] 페이지의 보고서 생성 상태는 다음과 같은 보고서 작업의 현재 상태를 기반으로 합니다. [!UICONTROL 성공], [!UICONTROL 실패], [!UICONTROL 대기열에 추가됨], 또는 [!UICONTROL 예약됨]. 받은 편지함에도 동일한 상태가 나타납니다.보고서 페이지를 보려면 보고서 링크를 클릭하십시오. 또는 보고서를 선택하고 를 클릭합니다 **[!UICONTROL 보기]** 을 클릭합니다.
 
-   ![생성된 보고서](assets/report_page.png)
+   <!--![A generated report](assets/report_page.png)-->
+   [보고서 상태](assets/report-status.JPG)
 
    클릭 **[!UICONTROL 다운로드]** 을 클릭하여 보고서를 CSV 형식으로 다운로드합니다.
 
@@ -128,7 +129,7 @@ ht-degree: 10%
 * 만료
 * 수정
 * 게시
-* [!DNL Brand Portal] 페이지를
+* [!DNL Brand Portal] 게시
 * 파일
 
 이러한 보고서에 사용자 정의 열을 추가하려면 다음 단계를 수행합니다.
