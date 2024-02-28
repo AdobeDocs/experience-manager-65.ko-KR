@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '1030'
 ht-degree: 1%
 
 ---
@@ -218,6 +218,10 @@ JBoss® Application Server는 8080을 기본 HTTP 포트로 사용합니다. JBo
 
 1. 파일을 저장하고 닫습니다.
 1. JBoss® 응용 프로그램 서버를 다시 시작합니다.
+
+>[!NOTE]
+>
+> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 ## JEE의 AEM Forms 보안 고려 사항 {#aem-forms-on-jee-security-considerations}
 

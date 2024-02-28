@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,10 @@ AEM Forms 백업 전략에는 두 가지 유형의 백업이 포함됩니다.
 1. 시스템의 정상 작동 여부를 확인할 때까지 웹, SOAP 또는 EJB 프로세스 이니시에이터와 같은 내부 또는 외부 소스에서 프로세스가 시작되지 않도록 합니다.
 
 기본 AEM Forms 데이터베이스를 이동하거나 변경하는 경우 애플리케이션 서버와 관련된 설치 안내서에서 AEM Forms 데이터 소스 IDP_DS 및 EDC_DS에 대한 데이터베이스 연결 정보 업데이트에 대한 정보를 검토하십시오.
+
+>[!NOTE]
+> 
+> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 ### AEM forms 호스트 이름 또는 IP 주소 변경 {#changing-the-aem-forms-hostname-or-ip-address}
 

@@ -6,9 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 feature: Document Services
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: 62adca19-8ed0-48b3-b7eb-9dbc3d8f96c6
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -50,6 +51,10 @@ Adobe Experience Manager Forms은 HSM 또는 eToken에 저장된 자격 증명�
 
 1. sling.properties 파일을 저장하고 닫습니다.
 1. AEM 인스턴스를 다시 시작합니다.
+
+>[!NOTE]
+>
+> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 <!--
 

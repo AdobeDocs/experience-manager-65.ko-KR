@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 3%
+source-wordcount: '355'
+ht-degree: 2%
 
 ---
 
@@ -42,6 +42,10 @@ AEMFD 호환성 패키지를 통해 다음과 같은 작업을 수행할 수 있
 
 1. 로그가 안정되면 서버를 다시 시작합니다.
 1. 자산을 6.5와 호환되도록 하려면 마이그레이션 유틸리티를 사용하십시오.
+
+   >[!NOTE]
+   >
+   > SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
    자세한 내용은 [마이그레이션 유틸리티](../../forms/using/migration-utility.md).
 

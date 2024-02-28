@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1676'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -95,6 +95,10 @@ Process Reporting Services는 AEM Forms 데이터베이스의 데이터를 일�
 1. AEM Forms 서버 인스턴스를 다시 시작합니다.
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
+
+>[!NOTE]
+>
+> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 ### ProcessDataStorage 서비스 {#processdatastorage-service}
 
@@ -275,3 +279,5 @@ AEM Forms 환경에는 환경이 설정된 시점의 데이터가 포함됩니�
 * **[!UICONTROL 동기화]**: 포함된 프로세스 보고 저장소를 AEM Forms 데이터베이스와 동기화합니다.
 * **[!UICONTROL 도움말]**: 프로세스 보고에 대한 도움말 설명서를 참조하십시오.
 * **[!UICONTROL 로그아웃]**: 프로세스 로그아웃 보고
+
+

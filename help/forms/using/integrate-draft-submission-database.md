@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
@@ -309,6 +309,10 @@ AEM Forms 포털 초안 및 제출 구성 요소를 통해 사용자는 양식�
 1. 클릭 **[!UICONTROL 파일 선택]** mysql-connector-java-5.1.39-bin.jar 파일을 찾아서 선택합니다. 또한 을 선택합니다. **[!UICONTROL 번들 시작]** 및 **[!UICONTROL 패키지 새로 고침]** 확인란.
 1. 클릭 **[!UICONTROL 설치 또는 업데이트]**. 완료되면 서버를 다시 시작합니다.
 1. (*Windows에만 해당*) 운영 체제에 대한 시스템 방화벽을 끕니다.
+
+>[!NOTE]
+>
+> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 ## Forms 포털 데이터 및 메타데이터 서비스용 샘플 코드 {#sample-code-for-forms-portal-data-and-metadata-service}
 

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ ht-degree: 0%
 1. 패키지 관리자로 이동합니다. 기본 URL은 `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. 검색 및 설치 `adobe-lc-workspace-pkg-[version].zip` 패키지.
 1. 응용 프로그램 서버를 다시 시작합니다.
+
+>[!NOTE]
+>
+> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 ## AEM Forms 작업 영역 로깅 {#aem-forms-workspace-nbsp-logging}
 
@@ -145,7 +149,7 @@ AEM Forms 작업 공간에서:
 * 정보
 * 디버그
 * TRACE
-* 끔
+* 꺼짐
 
 ## 브라우저에 대한 디버깅 정보 {#debugging-information-for-browsers}
 

@@ -4,9 +4,9 @@ description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 지정�
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '4501'
+source-wordcount: '4535'
 ht-degree: 1%
 
 ---
@@ -289,7 +289,7 @@ ht-degree: 1%
 
 클라우드 구성이 완료되면 양식 데이터 모델을 테스트할 수 있습니다.
 
-1. 다음으로 이동
+1. 다음 위치로 이동
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
 
@@ -313,6 +313,10 @@ ht-degree: 1%
    >[!NOTE]
    >
    데이터 소스가 FDM에 성공적으로 바인딩되려면 AEM Server를 다시 시작해야 한다고 보고되었습니다.
+
+   >[!NOTE]
+   >
+   SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 #### Forms 데이터 모델 테스트(Derby) {#test-fdm-derby}
 
@@ -448,7 +452,7 @@ AEM Forms Analytics 데이터는 오프라인에서 사용하거나 다음 경�
 >
 AEM Forms Analytics 데이터는 오프라인에서 사용하거나 다음 경우에 Adobe Analytics Cloud 구성을 사용하지 않고 사용할 수 있습니다. `we-gov-forms.ui.analytics-<version>.zip` 패키지가 설치되었지만, AEM Sites 데이터에 활성 클라우드 구성이 필요합니다.
 
-1. 다음으로 이동
+1. 다음 위치로 이동
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 

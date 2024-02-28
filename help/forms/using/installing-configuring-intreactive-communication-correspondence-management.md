@@ -1,13 +1,13 @@
 ---
 title: 인터랙티브한 통신 설치 및 구성
-description: AEM Forms 인터랙티브한 커뮤니케이션을 설치 하 고 구성 하 여 비즈니스 correspondences, 문서, 문, 혜택 통지, 마케팅 메일, 자재 명세서 및 시작 키트를 만듭니다.
+description: AEM Forms 인터랙티브한 Communications를 설치 및 구성하여 비즈니스 서신, 문서, 명세서, 복리후생 통지, 마케팅 메일, 청구서 및 환영 키트를 만들 수 있습니다.
 topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1383'
 ht-degree: 2%
 
 ---
@@ -46,9 +46,9 @@ AEM Forms의 대화형 통신 및 서신 관리 기능을 설치하고 구성하
 
    * **게시**: 인터넷 또는 내부 네트워크를 통해 게시된 콘텐츠를 일반에게 제공하는 AEM 인스턴스.
 
-* 메모리 요구 사항이 충족 됩니다. AEM Forms 추가 기능 패키지에는 다음이 필요 합니다.
+* 메모리 요구 사항이 충족됩니다. AEM Forms 추가 기능 패키지에는 다음이 필요합니다.
 
-   * Windows 기반 설치를® 하는 데 필요한 15 GB의 임시 공간.
+   * Microsoft® Windows 기반 설치를 위한 15GB의 임시 공간.
    * UNIX 기반 설치의 경우 6GB의 임시 공간이 필요합니다.
 
 * UNIX 기반 시스템에 대한 추가 요구 사항: UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 미디어에서 다음 패키지를 설치합니다.
@@ -62,14 +62,14 @@ AEM Forms의 대화형 통신 및 서신 관리 기능을 설치하고 구성하
    <td>libXau</td>
   </tr>
   <tr>
-   <td>용 Sm</td>
+   <td>libSM</td>
    <td>Zlib</td>
-   <td>인 아이스크림</td>
+   <td>libice</td>
    <td>리부uid</td>
   </tr>
   <tr>
    <td>아교</td>
-   <td>확장</td>
+   <td>libXext</td>
    <td><p>nss-softokn-freebl</p> </td>
    <td>fontconfig</td>
   </tr>
@@ -87,17 +87,22 @@ AEM Forms의 대화형 통신 및 서신 관리 기능을 설치하고 구성하
 AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 대화형 통신, 서신 관리 및 기타 기능이 포함되어 있습니다. 추가 기능 패키지를 설치하려면 다음 단계를 수행하십시오.
 
 1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID가 필요합니다.
-1. 헤더 메뉴에서 사용할 수 Adobe Experience Manager ]**를 선택**[!UICONTROL  합니다.
-1. [필터 ]**] 섹션에서 다음을 수행 합니다**[!UICONTROL  .
-   1. 솔루션 ]**드롭다운 목록에서 Forms]** 를 **[!UICONTROL 선택**[!UICONTROL  합니다.
-   2. 패키지의 버전 및 유형을 선택 합니다. [다운로드 ]**Search] 옵션을 사용**[!UICONTROL  하 여 결과를 필터링 할 수도 있습니다.
+1. 헤더 메뉴에서 사용할 수 있는 Adobe Experience Manager ]**를 선택합니다**[!UICONTROL .
+1. **[!UICONTROL 필터]** 섹션에서 다음을 수행합니다.
+   1. 솔루션&#x200B;]**드롭다운 목록에서**[!UICONTROL  Forms ]**를 선택합니다**[!UICONTROL .
+   2. 패키지의 버전 및 유형을 선택합니다. 다운로드 Search 옵션을 사용하여 **[!UICONTROL 결과를 필터링할 수도 있습니다]** .
 1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**, 및 선택 **[!UICONTROL 다운로드]**.
-1. 패키지 관리자 ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) 열고 [ 패키지 업로드 ]**를 클릭**[!UICONTROL  하 여 패키지를 업로드 합니다.
+1. 패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) 열고 [패키지&#x200B;]**업로드를 클릭하여**[!UICONTROL &#x200B;패키지를 업로드.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   AEM Forms 릴리스 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) 문서에 [ 나열 된 직접 링크를 통해 패키지를 다운로드 수도 있습니다.
+   AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) 문서에 나열된 [직접 링크 를 통해 패키지를 다운로드 할 수도 있습니다.
 
-1. 패키지가 설치 되 면 AEM 인스턴스를 다시 시작 하 라는 메시지가 표시 됩니다. **서버를 즉시 다시 시작 하지 마십시오.** AEM Forms 서버를 중지 하기 전에 등록 된 ServiceEvent 및 ServiceEvent 등록 해제 메시지가 AEM-설치-디렉토리 ] /crx-quickstart/logs/error.log 파일에 [ 표시 되 고 로그는 안정적입니다.
+1. 패키지가 설치되면 AEM 인스턴스 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms Server를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 AEM-Installation-Directory]/crx-quickstart/logs/error.로그 파일에 [표시되지 않고 로그가 안정적일 때까지 기다립니다.
+
+   >[!NOTE]
+   >
+   > SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+
 1. 모든 Author 및 Publish 인스턴스에서 1~7단계를 반복합니다.
 
 ## 설치 후 구성 {#post-installation-configurations}
@@ -139,9 +144,9 @@ AEM Forms에는 몇 가지 필수 구성과 선택적 구성이 있습니다. �
 
 대화형 통신은 AEM 6.5 Forms에서 고객 커뮤니케이션을 만들기 위한 기본적이고 권장되는 방법입니다. 이전 버전에서 업그레이드 또는 마이그레이션한 경우 편지(서신 관리)를 계속 사용할 계획이라면 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
-AEM AEMFD 호환성 패키지를 통해 AEM 6.5 Forms에서 AEMFD 6.4 Forms, AEM 6.3 Forms 및 AEM 6.2 Forms의 다음 자산을 사용할 수 있습니다.
+AEMFD 호환성 패키지를 사용하면 AEM 6.5 Forms에서 AEM 6.4 Forms, AEM 6.3 Forms 및 AEM 6.2 Forms의 다음 자산을 사용할 수 있습니다.
 
-* 문서 단편
+* 문서 조각
 * 편지
 * 데이터 사전
 * 적응형 양식 더 이상 사용되지 않는 템플릿 및 페이지
@@ -176,7 +181,7 @@ AEM forms는 Adobe Experience Cloud 솔루션인 Adobe Target과 통합되어 �
 
 ## 다음 단계 {#next-steps}
 
-대화형 통신 및 서신 관리 기능을 사용할 환경을 구성했습니다. 이제 기능을 사용하는 단계는 다음과 같습니다.
+대화형 통신 및 서신 관리 기능을 사용할 수 있도록 환경을 구성했습니다. 이제 이 기능을 사용하는 단계는 다음과 같습니다.
 
 * [서신 관리 개요](/help/forms/using/interactive-communications-overview.md)
 

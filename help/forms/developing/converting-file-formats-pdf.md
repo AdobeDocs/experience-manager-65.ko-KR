@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7812'
+source-wordcount: '7848'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,13 @@ PDF 생성 서비스는 기본 응용 프로그램을 사용하여 다음 파일
 
 >[!NOTE]
 >
-PDF 생성 서비스는 64비트 버전의 OpenOffice를 지원하지 않습니다.
+>PDF 생성 서비스는 64비트 버전의 OpenOffice를 지원하지 않습니다.
 
 * Adobe Photoshop® CS2를 사용하여 PSD 변환(Windows에만 해당)
 
 >[!NOTE]
 >
-Photoshop CS3 및 CS4는 Windows Server 2003 또는 Windows Server 2008을 지원하지 않으므로 지원되지 않습니다.
+>Photoshop CS3 및 CS4는 Windows Server 2003 또는 Windows Server 2008을 지원하지 않으므로 지원되지 않습니다.
 
 * Adobe FrameMaker® 7.2 및 8을 사용하여 FM 변환(Windows에만 해당)
 * Adobe PageMaker® 7.0을 사용하여 PMD, PM6, P65 및 PM 변환(Windows에만 해당)
@@ -82,7 +82,7 @@ PDF 생성 서비스를 사용하여 다음 작업을 수행할 수 있습니다
 
 >[!NOTE]
 >
-PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Word 문서를 PDF 문서로 변환 {#converting-word-documents-to-pdf-documents}
 
@@ -90,11 +90,11 @@ PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비�
 
 >[!NOTE]
 >
-추가 파일 형식에 대한 자세한 내용은 [추가 기본 파일 형식에 대한 지원 추가](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
+>추가 파일 형식에 대한 자세한 내용은 [추가 기본 파일 형식에 대한 지원 추가](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
 
 >[!NOTE]
 >
-PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary-of-steps}
 
@@ -202,7 +202,7 @@ PDF API 생성(웹 서비스)을 사용하여 Microsoft Word 문서를 PDF 문�
 
    >[!NOTE]
    >
-   바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
 
 1. PDF 클라이언트 생성을 참조하십시오.
 
@@ -260,7 +260,7 @@ PDF API 생성(웹 서비스)을 사용하여 Microsoft Word 문서를 PDF 문�
 
 >[!NOTE]
 >
-PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-1}
 
@@ -359,7 +359,7 @@ PDF API 생성(웹 서비스)을 사용하여 HTML 컨텐츠를 PDF 문서로 �
 
    >[!NOTE]
    >
-   바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
 
 1. PDF 클라이언트 생성을 참조하십시오.
 
@@ -410,7 +410,7 @@ PDF API 생성(웹 서비스)을 사용하여 HTML 컨텐츠를 PDF 문서로 �
 
 >[!NOTE]
 >
-PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-2}
 
@@ -510,7 +510,7 @@ PDF API 생성(웹 서비스)을 사용하여 PDF 문서를 RTF 파일로 변환
 
    >[!NOTE]
    >
-   바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
 
 1. PDf 클라이언트 생성을 참조하십시오.
 
@@ -845,7 +845,7 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
 
 >[!NOTE]
 >
-이 맥락에서 &#39;추가&#39;라는 용어는 다음의 내용을 의미한다 `appmon.[applicationname].addition.[locale].xml` 파일. 이러한 파일은 대화 상자 XML 파일에 대한 재정의 및 추가 사항을 지정합니다.
+>이 맥락에서 &#39;추가&#39;라는 용어는 다음의 내용을 의미한다 `appmon.[applicationname].addition.[locale].xml` 파일. 이러한 파일은 대화 상자 XML 파일에 대한 재정의 및 추가 사항을 지정합니다.
 
 다음과 같은 목적으로 기본 응용 프로그램에 대한 추가 대화 상자 XML 파일을 수정할 수도 있습니다.
 
@@ -858,7 +858,7 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
 
 >[!NOTE]
 >
-native2pdfconfig.xml 구성 파일에 지정된 일반 응용 프로그램에 기본 대화 상자 XML 파일이 없습니다. 섹션 [기본 파일 형식에 대한 지원 추가 또는 수정](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) 에서는 이러한 세부 항목에 대해 설명합니다.
+>native2pdfconfig.xml 구성 파일에 지정된 일반 응용 프로그램에 기본 대화 상자 XML 파일이 없습니다. 섹션 [기본 파일 형식에 대한 지원 추가 또는 수정](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) 에서는 이러한 세부 항목에 대해 설명합니다.
 
 주문 `windowList` 에서 하위 요소로 표시되는 요소 `window` 요소를 생성하지 않습니다. (참조: [window 및 windowList 요소 순서 지정](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
@@ -878,7 +878,7 @@ native2pdfconfig.xml 구성 파일에 지정된 일반 응용 프로그램에 �
 
 >[!NOTE]
 >
-응용 프로그램의 이름은 `GenericApp` 요소 `name` 특성. 이 값은 해당 응용 프로그램에 대해 개발하는 스크립트에 지정된 해당 이름과 정확히 일치해야 합니다. 마찬가지로 `GenericApp` 요소 `displayName` 속성은 해당 스크립트와 정확히 일치해야 함 `expectedWindow` 창 캡션입니다. 이와 같은 등가성은 다음에 나타나는 정규 표현식을 해결한 후 평가됩니다. `displayName` 또는 `caption` 속성.
+>응용 프로그램의 이름은 `GenericApp` 요소 `name` 특성. 이 값은 해당 응용 프로그램에 대해 개발하는 스크립트에 지정된 해당 이름과 정확히 일치해야 합니다. 마찬가지로 `GenericApp` 요소 `displayName` 속성은 해당 스크립트와 정확히 일치해야 함 `expectedWindow` 창 캡션입니다. 이와 같은 등가성은 다음에 나타나는 정규 표현식을 해결한 후 평가됩니다. `displayName` 또는 `caption` 속성.
 
 이 예제에서는 PDF 생성 서비스와 함께 제공된 기본 구성 데이터를 수정하여 메모장(Microsoft Word 아님)을 사용하여 확장명이 .txt인 파일을 처리하도록 했습니다. 이 수정 전에 Microsoft Word가 이러한 파일을 처리해야 하는 기본 애플리케이션으로 지정되었습니다.
 
@@ -910,6 +910,10 @@ native2pdfconfig.xml 구성 파일에 지정된 일반 응용 프로그램에 �
 기본 응용 프로그램 실행 파일의 위치를 지정하는 환경 변수를 만듭니다. 변수는 형식을 사용해야 합니다. `[applicationname]_PATH`, 여기서 *applicationname* 은(는) XML 구성 파일 및 스크립트에 사용된 애플리케이션 이름과 정확히 일치해야 하며, 여기서 경로에는 큰따옴표로 된 실행 파일의 경로가 포함됩니다. 이러한 환경 변수의 예는 다음과 같습니다. `Photoshop_PATH`.
 
 새 환경 변수를 만든 후에는 PDF 생성 서비스가 배포된 서버를 다시 시작해야 합니다.
+
+>[!NOTE]
+>
+> SDK 서버를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK 서버를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 **Windows XP 환경에서 시스템 변수 만들기**
 

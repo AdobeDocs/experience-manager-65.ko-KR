@@ -3,9 +3,9 @@ title: 외부 사용자 초대 핸들러 만들기
 description: 외부 사용자 초대 핸들러를 만드는 방법을 알아봅니다. 이를 통해 Rights Management 서비스는 외부 사용자를 Rights Management 사용자로 초대할 수 있습니다.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -233,6 +233,11 @@ A. 구성 요소 B. JAVA 파일에 필요한 외부 JAR 파일
 
 1. Workbench를 사용하여 외부 사용자 초대 핸들러의 JAR 파일을 배포합니다.
 1. 응용 프로그램 서버를 다시 시작합니다.
+
+   >[!NOTE]
+   >
+   > SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+
 1. 관리 콘솔에 로그인합니다.
 1. 클릭 **[!UICONTROL 서비스]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 구성]** > 초대됨 **[!UICONTROL 사용자 등록]**.
 1. 다음을 확인하여 초대된 사용자 등록 활성화 **[!UICONTROL 초대된 사용자 등록 활성화]** 상자. 아래 **[!UICONTROL 기본 제공 등록 시스템 사용]**, 클릭 **[!UICONTROL 아니요]**. 설정을 저장합니다.

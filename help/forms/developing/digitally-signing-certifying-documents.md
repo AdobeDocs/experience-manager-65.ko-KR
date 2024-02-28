@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '16882'
+source-wordcount: '16917'
 ht-degree: 0%
 
 ---
@@ -594,6 +594,10 @@ nCypher nShield HSM 자격 증명을 사용하여 PDF 문서에 서명하거나 
 ```
 
 이 구성 값을 cknfastrc 파일에 추가한 후에는 J2EE 애플리케이션 서버를 다시 시작하지 않고도 새 자격 증명을 사용할 수 있습니다.
+
+    >[!NOTE]
+    >
+    > &#39;Ctrl + C&#39; 명령을 사용하여 SDK를 다시 시작하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 **서명을 신뢰할 수 없습니다.**
 

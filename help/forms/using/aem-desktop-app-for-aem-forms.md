@@ -7,9 +7,9 @@ topic-tags: manage
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -38,5 +38,9 @@ AEM 데스크탑 앱은 Microsoft® Windows의 WebDAV 프로토콜과 macOS X의
 1. FormsManager 추가 기능 구성 대화 상자에서 **[!UICONTROL 리소스를 비동기적으로 동기화]** 확인란을 선택하고 **[!UICONTROL 저장]**.
 1. AEM Forms 서버를 다시 시작합니다. 다시 시작하면 AEM Forms 서버가 AEM 데스크탑 앱에서 콘텐츠를 수락하고 공유할 수 있도록 활성화됩니다.
 1. 앱을 열고 AEM Forms 서버에 연결합니다.
+
+   >[!NOTE]
+   >
+   > SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
    연결에 성공하면 앱이 `content/dam` 및 `content/dam/formsanddocuments` 개 폴더. 위 폴더에서 로컬 폴더로 파일을 이동할 수 있으며 반대로 앱을 사용하여 자동으로 채워진 폴더 간에 콘텐츠를 이동할 수 있습니다.

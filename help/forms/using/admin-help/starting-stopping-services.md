@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ AEM Forms의 일부인 서비스에는 두 가지 유형이 있습니다.
 ## AEM Forms 모듈과 연결된 서비스 시작 또는 중지 {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
 AEM forms 모듈(예: Forms, Rights Management, 출력)은 서비스로 작동합니다. 이러한 AEM Forms 모듈에 대한 서비스를 중지하거나 시작해야 하는 경우가 있습니다. 예를 들어 서비스에 대한 설정을 변경한 후 AEM Forms 서비스를 중지했다가 다시 시작해야 합니다.
+
+>[!NOTE]
+>
+> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 1. 관리 콘솔에서 다음을 클릭합니다. **서비스** > **애플리케이션 및 서비스** > **서비스 관리**.
 1. 서비스 관리 페이지에서 중지하거나 시작할 서비스 옆의 확인란을 선택하고 중지 또는 시작을 누릅니다.

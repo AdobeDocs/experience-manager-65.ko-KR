@@ -6,9 +6,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7662'
+source-wordcount: '7608'
 ht-degree: 1%
 
 ---
@@ -464,6 +464,10 @@ LDAP를 사용하는 일반적인 공격에는 공격자가 의도적으로 여�
 1. 변수의 값을 TRUE로 설정합니다.
 
 1. AEM Forms 인스턴스를 다시 시작합니다.
+
+>[!NOTE]
+>
+> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 ## 기업 외부 액세스를 위해 JEE에서 AEM Forms 구성 {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 

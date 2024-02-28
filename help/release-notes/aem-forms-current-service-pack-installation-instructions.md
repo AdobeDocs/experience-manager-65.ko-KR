@@ -2,10 +2,10 @@
 title: AEM Forms용 AEM Forms 패치 설치 지침
 description: OSGi 및 JEE 환경에 대한 AEM Forms 서비스 팩 설치 지침
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 9%
+source-wordcount: '1748'
+ht-degree: 8%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->최신 항목 보기 [AEM 서비스 팩 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR) 해결된 문제의 전체 목록.
+>최신 항목 보기 [AEM 서비스 팩 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html) 해결된 문제의 전체 목록.
 
 ## Experience Manager Forms 6.5에 포함된 제품
 
@@ -65,7 +65,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2. 필요한 소프트웨어 다운로드
 
 * [AEM Forms on JEE 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-* [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
+* [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [조각 서블릿](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
 
@@ -122,13 +122,14 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
    * [WebSphere용 AEM Forms 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
    * [WebLogic용 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
    * [JBoss® 클러스터용 AEM Forms 설치 및 배포](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
-   * [WebSphere® 클러스터용 AEM Forms 설치 및 배포](https://helpx.adobe.com/content/dam/help/kr/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
+   * [WebSphere® 클러스터용 AEM Forms 설치 및 배포](https://helpx.adobe.com/kr/content/dam/help/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
    * [WebLogic 클러스터용 AEM Forms 설치 및 배포](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
 
 >[!NOTE]
 >
-> JEE 서비스 팩에 AEM Forms을 설치한 후에서 Forms 추가 기능 패키지를 제거해야 합니다. `crx-repository\install` 폴더를 만든 다음 appserver를 다시 시작합니다. 에서 최신 Forms 추가 기능 패키지 다운로드 [소프트웨어 배포 포털](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+>* JEE 서비스 팩에 AEM Forms을 설치한 후에서 Forms 추가 기능 패키지를 제거해야 합니다. `crx-repository\install` 폴더를 만든 다음 appserver를 다시 시작합니다. 에서 최신 Forms 추가 기능 패키지 다운로드 [소프트웨어 배포 포털](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+>* SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 +++
 
@@ -173,7 +174,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
   >[!NOTE]
   >
-  Experience Manager 서비스 팩은 Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >Experience Manager 서비스 팩은 Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **설치 확인**
 
@@ -205,13 +206,13 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 >[!NOTE]
 >
-관계형 데이터베이스에 대해 AEM Forms 서비스 팩을 설치하는 경우 DB_schema를 백업해야 합니다.
+> 관계형 데이터베이스에 대해 AEM Forms 서비스 팩을 설치하는 경우 DB_schema를 백업해야 합니다.
 
 +++
 
 +++2. 필요한 소프트웨어 다운로드
 
-* [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
+* [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 +++
@@ -223,7 +224,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 >[!NOTE]
 >
 >
-이전 버전이 설치된 경우에도 재배포 가능 패키지를 설치하여 최신 버전의 가용성을 보장해야 합니다.
+> 이전 버전이 설치된 경우에도 재배포 가능 패키지를 설치하여 최신 버전의 가용성을 보장해야 합니다.
 
 +++
 
@@ -244,7 +245,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
   >[!NOTE]
   >
-  Experience Manager 서비스 팩은 Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >Experience Manager 서비스 팩은 Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **설치 확인**
 

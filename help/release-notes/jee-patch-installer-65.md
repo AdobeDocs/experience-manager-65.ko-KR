@@ -3,10 +3,10 @@ title: AEM Forms JEE 패치 설치 관리자
 description: AEM Forms JEE 패치 설치 관리자를 사용하여 AEM 6.5 Forms 구성 요소의 문제를 해결하는 방법에 대해 알아봅니다.
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 18%
+source-wordcount: '562'
+ht-degree: 17%
 
 ---
 
@@ -81,6 +81,10 @@ SAML 인증이 구성되어 있고 큰 IDP 메타데이터와 관련된 문제�
    `um.saml.enable.large.xml=true`
 1. 서버를 다시 시작합니다.
 1. 기존 SAML 인증 공급자를 삭제하고 SAML 설정에 설명된 대로 기존 도메인에 대해 다시 추가합니다.
+
+>[!NOTE]
+>
+> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 ## 영향을 받는 모듈 {#impacted-modules}
 

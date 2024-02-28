@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ AEM search는 AEM assets를 검색 및 찾고 일반 텍스트 파일, Microsoft
    * **사용자 이름:** AEM 서버에서 호출을 시작하는 데 사용할 AEM Forms on JEE 계정의 사용자 이름을 지정합니다. 지정된 계정에 JEE 서버의 AEM Forms에서 문서 서비스를 시작할 수 있는 권한이 있어야 합니다.
    * **암호**: 사용자 이름 필드에 언급된 JEE의 AEM Forms 계정에 대한 암호를 지정합니다.
 
-   클릭 **저장**. AEM은 문서 보안으로 보호된 PDF 문서를 검색할 수 있도록 활성화됩니다.
+   **저장**&#x200B;을 클릭합니다. AEM은 문서 보안으로 보호된 PDF 문서를 검색할 수 있도록 활성화됩니다.
 
 #### 상호 인증을 사용하여 Adobe LiveCycle 클라이언트 SDK 번들 구성 {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
@@ -76,7 +76,7 @@ AEM search는 AEM assets를 검색 및 찾고 일반 텍스트 파일, Microsoft
    * **트러스트 스토어 암호**: truststore 파일의 암호를 지정합니다.
    * **서비스 이름**: 지정된 서비스 목록에 RightsManagementService를 추가합니다.
 
-   클릭 **저장**. AEM을 사용하면 문서 보안으로 보호된 PDF 문서를 검색할 수 있습니다.
+   **저장**&#x200B;을 클릭합니다. AEM을 사용하면 문서 보안으로 보호된 PDF 문서를 검색할 수 있습니다.
 
 ### 정책으로 보호된 샘플 PDF 문서 색인화 {#index-a-sample-policy-protected-pdf-document}
 
@@ -84,3 +84,7 @@ AEM search는 AEM assets를 검색 및 찾고 일반 텍스트 파일, Microsoft
 1. AEM Digital Asset Manager에서 폴더를 만들고 정책으로 보호된 PDF 문서를 새로 만든 폴더에 업로드합니다.
 
    이제 AEM 검색을 사용하여 정책으로 보호된 문서를 검색할 수 있습니다.
+
+   >[!NOTE]
+   >
+   > SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
