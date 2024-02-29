@@ -2,7 +2,7 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 60c9a1d9fb03975b70ed1d7d1d65b0bd4017c794
+source-git-commit: fbdeaeca3fa05181682f94e8f71bd9bb6605762a
 workflow-type: tm+mt
 source-wordcount: '3390'
 ht-degree: 4%
@@ -217,8 +217,6 @@ ht-degree: 4%
 
 * 사용자가 AEM Forms Designer에서 XDP를 만들 때, 사용자가 양식 태그를 탐색할 때 PDF 출력 시 배경 개체에도 태그가 지정됩니다. (LC-3921687)
 
-
-<!-- #### [!DNL Adaptive Forms] -->
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
   * text
@@ -229,8 +227,6 @@ ht-degree: 4%
 * **Interactive Communications**
   * text -->
 <!--### Commerce{#commerce-6520} * text -->
-
-
 
 ### Foundation {#foundation-6520}
 

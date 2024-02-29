@@ -2,7 +2,7 @@
 title: AEM Forms용 AEM Forms 패치 설치 지침
 description: OSGi 및 JEE 환경에 대한 AEM Forms 서비스 팩 설치 지침
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 181d5ffcefcf55aa75cfaf29c42dbd8d8d665398
+source-git-commit: fbdeaeca3fa05181682f94e8f71bd9bb6605762a
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 9%
@@ -261,7 +261,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++4. Adobe Experience Manager Forms(AEM) 추가 기능 패키지 설치
++++5. Adobe Experience Manager Forms(AEM) 추가 기능 패키지 설치
 
 1. 다음을 설치했는지 확인합니다. [!DNL Experience Manager] 서비스 팩입니다.
 1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
