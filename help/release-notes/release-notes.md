@@ -2,7 +2,7 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: fbdeaeca3fa05181682f94e8f71bd9bb6605762a
+source-git-commit: c36ef1c1bd261864930039c4d60a930ead12482e
 workflow-type: tm+mt
 source-wordcount: '3390'
 ht-degree: 4%
@@ -216,17 +216,6 @@ ht-degree: 4%
 * 사용자가 AEM Forms Designer에서 XDP를 만들 때 PDF 출력 시 단추 양식 태그가 상위 단락 태그(p-태그)에 중첩되지 않습니다. (LC-3921719)
 
 * 사용자가 AEM Forms Designer에서 XDP를 만들 때, 사용자가 양식 태그를 탐색할 때 PDF 출력 시 배경 개체에도 태그가 지정됩니다. (LC-3921687)
-
-<!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
-* **Document Services**
-  * text
-* **Adaptive Forms** 
-  * text
-* **Accessibility**
-  * text
-* **Interactive Communications**
-  * text -->
-<!--### Commerce{#commerce-6520} * text -->
 
 ### Foundation {#foundation-6520}
 
