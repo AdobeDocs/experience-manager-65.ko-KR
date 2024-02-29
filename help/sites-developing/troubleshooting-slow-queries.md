@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2236'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ AEM에는 심각도별로 나열되는 세 가지 주요 슬로우 쿼리 분류
 
 각각의 잠재적 결과를 검사하는 행위는 트래버스라고 불리는 것이다.
 
-각각의 잠재적 결과는 검사되어야 하기 때문에, 실제 결과 세트를 결정하기 위한 비용은 잠재적 결과의 수에 따라 선형적으로 성장한다.
+각각의 잠재적 결과들은 검사되어야 하기 때문에, 실제 결과 세트를 결정하기 위한 비용은 잠재적 결과들의 수에 따라 선형적으로 성장한다.
 
 쿼리 제한 및 조정 인덱스를 추가하면 인덱스 데이터를 최적화된 형식으로 저장하여 빠른 결과 검색을 수행할 수 있으며, 잠재적 결과 세트에 대한 선형 검사 필요성을 줄이거나 없앨 수 있습니다.
 
@@ -119,7 +119,7 @@ cq:tags 인덱스 규칙을 추가한 후
 
 마찬가지로,에 대한 추가 색인 규칙 없음 `cq:tags` 속성, 제한 사항이 있는 전체 텍스트 쿼리 `cq:tags` 인덱스의 결과가 모든 전체 텍스트 일치 항목을 반환하므로 성능이 저하됩니다. cq:tags에 대한 제한은 이후 필터링됩니다.
 
-사후 인덱스 필터링의 또 다른 원인은 개발 중에 종종 누락되는 액세스 제어 목록입니다. 쿼리가 사용자가 액세스할 수 없는 경로를 반환하지 않는지 확인하십시오. 이렇게 하려면 쿼리에 대한 관련 경로 제한을 제공할 뿐만 아니라 콘텐츠 구조를 개선해야 합니다.
+사후 인덱스 필터링의 또 다른 원인은 개발 중에 종종 누락되는 액세스 제어 목록입니다. 쿼리가 사용자가 액세스할 수 없는 경로를 반환하지 않는지 확인하십시오. 이렇게 하려면 쿼리에 대한 관련 경로 제한 사항을 제공할 뿐만 아니라 더 나은 콘텐츠 구조를 통해 수행할 수 있습니다.
 
 Lucene 색인이 많은 결과를 반환하여 작은 하위 집합을 쿼리 결과로 반환하는지 식별하는 유용한 방법은 DEBUG 로그를 활성화하는 것입니다. `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. 이렇게 하면 색인에서 로드되는 문서 수를 볼 수 있습니다. 최종 결과 수와 로드된 문서 수가 불균형하게 달라져서는 안 됩니다. 자세한 내용은 [로깅](/help/sites-deploying/configure-logging.md).
 
@@ -176,7 +176,7 @@ AEM은 다음 쿼리 언어를 지원합니다.
 * JCR-SQL2
 * XPath
 
-다음 예제에서는 AEM 개발자가 사용하는 가장 일반적인 쿼리 언어로 Query Builder를 사용하지만 JCR-SQL2 및 XPath에도 동일한 원칙이 적용됩니다.
+다음 예제에서는 AEM 개발자가 사용하는 가장 일반적인 쿼리 언어이지만 JCR-SQL2와 XPath에는 동일한 원칙이 적용되므로 Query Builder를 사용합니다.
 
 1. 쿼리가 기존 Lucene 속성 인덱스로 확인되도록 노드 유형 제한을 추가합니다.
 
@@ -466,7 +466,7 @@ AEM의 유연한 콘텐츠 아키텍처로 인해, 콘텐츠 구조의 트래버
 
    * XPath 또는 JCR-SQL2 쿼리 문에서 최적의 Lucent 속성 인덱스를 생성합니다.
 
-* **[AEM Chrome 플러그인](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)**
+* **_AEM Chrome 플러그인_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
 
-   * 브라우저의 개발 도구 콘솔에서 실행된 쿼리와 쿼리 계획을 포함하여 요청당 로그 데이터를 표시하는 Google Chrome 웹 브라우저 확장 기능입니다.
-   * 필요 [Sling 로그 추적기 1.0.2+](https://sling.apache.org/downloads.cgi) AEM에 설치 및 활성화할 수 있습니다.
+   * 다음 _AEM Chrome 플러그인_ 는 브라우저의 개발 도구 콘솔에 실행 쿼리 및 쿼리 계획을 포함하여 요청당 로그 데이터를 표시하는 Google Chrome 웹 브라우저 확장 프로그램입니다.
+   * 설치 및 활성화 필요 [Sling 로그 추적기 1.0.2+](https://sling.apache.org/downloads.cgi) AEM에서

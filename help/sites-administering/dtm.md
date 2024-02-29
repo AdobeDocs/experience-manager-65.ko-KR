@@ -6,24 +6,24 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2146'
 ht-degree: 2%
 
 ---
 
 # Adobe Dynamic Tag Management과 통합 {#integrating-with-adobe-dynamic-tag-management}
 
-통합 [Adobe 다이내믹 Tag Management](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) Dynamic Tag Management 웹 속성을 사용하여 AEM 사이트를 추적할 수 있도록 AEM을 사용하여 Dynamic Tag Management을 통해 마케터는 데이터를 수집하기 위한 태그를 관리하고 디지털 마케팅 시스템 전반에 데이터를 배포할 수 있습니다. 예를 들어 Dynamic Tag Management 를 사용하여 AEM 웹 사이트에 대한 사용 데이터를 수집하고 Adobe Analytics 또는 Adobe Target에서 분석할 데이터를 배포합니다.
+통합 [Adobe 다이내믹 Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) Dynamic Tag Management 웹 속성을 사용하여 AEM 사이트를 추적할 수 있도록 AEM을 사용하여 Dynamic Tag Management을 통해 마케터는 데이터를 수집하기 위한 태그를 관리하고 디지털 마케팅 시스템 전반에 데이터를 배포할 수 있습니다. 예를 들어 Dynamic Tag Management 를 사용하여 AEM 웹 사이트에 대한 사용 데이터를 수집하고 Adobe Analytics 또는 Adobe Target에서 분석할 데이터를 배포합니다.
 
-통합하기 전에 Dynamic Tag Management을 만들어야 합니다 [웹 속성](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) AEM 사이트의 도메인을 추적합니다. 다음 [호스팅 옵션](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) Dynamic Tag Management 라이브러리에 액세스하도록 AEM을 구성할 수 있도록 의 웹 속성을 구성해야 합니다.
+통합하기 전에 Dynamic Tag Management을 만듭니다 [웹 속성](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) AEM 사이트의 도메인을 추적합니다. 다음 [호스팅 옵션](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) Dynamic Tag Management 라이브러리에 액세스하도록 AEM을 구성할 수 있도록 의 웹 속성을 구성해야 합니다.
 
 통합을 구성하고 나면 AEM에서 Dynamic Tag Management Tag Management 배포 도구 및 규칙을 변경할 필요가 없습니다. 변경 사항은 AEM에서 자동으로 사용할 수 있습니다.
 
 >[!NOTE]
 >
->사용자 정의 프록시 구성에서 DTM을 사용하는 경우 AEM의 일부 기능은 3.x API를 사용하고 다른 일부 기능은 4.x API를 사용하므로 HTTP 클라이언트 프록시 구성을 모두 구성해야 합니다.
+>사용자 지정 프록시 구성에서 DTM을 사용하는 경우 AEM의 일부 기능은 3.x API를 사용하고 다른 일부 기능은 4.x API를 사용하므로 HTTP 클라이언트 프록시 구성을 모두 구성합니다.
 >
 >* 3.x은(는) [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)로 구성됩니다.
 >* 4.x은(는) [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)로 구성됩니다.
@@ -37,8 +37,8 @@ ht-degree: 2%
 
 AEM은 클라우드에서 호스팅되거나 AEM에서 호스팅되는 Dynamic Tag Management을 지원합니다.
 
-* 클라우드 호스팅: 동적 Tag Management Javascript 라이브러리는 클라우드에 저장되고 AEM 페이지가 직접 참조합니다.
-* AEM 호스팅: Dynamic Tag Management은 javascript 라이브러리를 생성합니다. AEM은 워크플로우 모델을 사용하여 라이브러리를 가져오고 설치합니다.
+* 클라우드 호스팅: Dynamic Tag Management JavaScript 라이브러리는 클라우드에 저장되고 AEM 페이지가 이를 직접 참조합니다.
+* AEM 호스팅: Dynamic Tag Management은 JavaScript 라이브러리를 생성합니다. AEM은 워크플로우 모델을 사용하여 라이브러리를 가져오고 설치합니다.
 
 구현에서 사용하는 호스팅 유형에 따라 수행하는 구성 및 구현 작업 중 일부가 결정됩니다. 호스팅 옵션에 대한 자세한 내용은 [호스팅 - 포함 탭](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) Dynamic Tag Management 도움말에서 참조할 수 있습니다.
 
@@ -83,7 +83,7 @@ AEM 인스턴스가 Dynamic Tag Management을 사용하여 인증하고 웹 속�
 
 >[!NOTE]
 >
->DTM 웹 속성에 Adobe Analytics 도구가 포함되어 있고 또한 을 사용하는 경우 페이지에 Adobe Analytics 추적 코드를 두 개 포함하지 마십시오 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md). 내 [Adobe Analytics 클라우드 구성](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)를 클릭하고 추적 코드 포함하지 않음 옵션을 선택합니다.
+>DTM 웹 속성에 Adobe Analytics 도구가 포함되어 있고 또한 을 사용하는 경우 페이지에 Adobe Analytics 추적 코드를 두 개 포함하지 마십시오 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md). 내 [Adobe Analytics Cloud 구성](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)를 클릭하고 추적 코드 포함하지 않음 옵션을 선택합니다.
 
 ### 일반 설정 {#general-settings}
 
@@ -107,7 +107,7 @@ AEM 인스턴스가 Dynamic Tag Management을 사용하여 인증하고 웹 속�
   </tr>
   <tr>
    <td>작성자에 대한 프로덕션 코드 포함</td>
-   <td><p>AEM 작성자 및 게시 인스턴스가 Dynamic Tag Management 라이브러리의 프로덕션 버전을 사용하도록 하려면 이 옵션을 선택하십시오. </p> <p>이 옵션을 선택하지 않으면 스테이징 설정이 작성자 인스턴스에 적용되고 프로덕션 설정이 게시 인스턴스에 적용됩니다.</p> </td>
+   <td><p>AEM 작성자 및 게시 인스턴스에서 Dynamic Tag Management 라이브러리의 프로덕션 버전을 사용하도록 하려면 이 옵션을 선택합니다. </p> <p>이 옵션을 선택하지 않으면 스테이징 설정이 작성자 인스턴스에 적용되고 프로덕션 설정이 게시 인스턴스에 적용됩니다.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -144,15 +144,15 @@ AEM에서 Dynamic Tag Management 라이브러리를 호스팅할 때 AEM은 구�
   </tr>
   <tr>
    <td>도메인 힌트</td>
-   <td><p>(선택 사항) Dynamic Tag Management 라이브러리를 호스팅하는 AEM 서버의 도메인입니다. 다음에 대해 구성된 기본 도메인을 재정의할 값을 지정합니다. <a href="/help/sites-developing/externalizer.md">일별 CQ 링크 외부화 서비스</a>.</p> <p>Dynamic Tag Management에 연결된 경우 AEM은 이 값을 사용하여 Dynamic Tag Management 웹 속성에 대한 라이브러리 다운로드 속성의 스테이징 HTTP 경로 또는 프로덕션 HTTP 경로를 구성합니다.</p> </td>
+   <td><p>(선택 사항) Dynamic Tag Management 라이브러리를 호스팅하는 AEM 서버의 도메인입니다. 에 대해 구성된 기본 도메인을 재정의할 수 있도록 값을 지정합니다. <a href="/help/sites-developing/externalizer.md">일별 CQ 링크 외부화 서비스</a>.</p> <p>Dynamic Tag Management에 연결된 경우 AEM은 이 값을 사용하여 Dynamic Tag Management 웹 속성에 대한 라이브러리 다운로드 속성의 스테이징 HTTP 경로 또는 프로덕션 HTTP 경로를 구성합니다.</p> </td>
   </tr>
   <tr>
    <td>Secure Domain 힌트</td>
-   <td><p>(선택 사항) HTTPS를 통한 Dynamic Tag Management 라이브러리를 호스팅하는 AEM 서버의 도메인입니다. 다음에 대해 구성된 기본 도메인을 재정의할 값을 지정합니다. <a href="/help/sites-developing/externalizer.md">일별 CQ 링크 외부화 서비스</a>.</p> <p>Dynamic Tag Management에 연결된 경우 AEM은 이 값을 사용하여 Dynamic Tag Management 웹 속성에 대한 라이브러리 다운로드 속성의 스테이징 HTTPS 경로 또는 프로덕션 HTTPS 경로를 구성합니다.</p> </td>
+   <td><p>(선택 사항) HTTPS를 통한 Dynamic Tag Management 라이브러리를 호스팅하는 AEM 서버의 도메인입니다. 에 대해 구성된 기본 도메인을 재정의할 수 있도록 값을 지정합니다. <a href="/help/sites-developing/externalizer.md">일별 CQ 링크 외부화 서비스</a>.</p> <p>Dynamic Tag Management에 연결된 경우 AEM은 이 값을 사용하여 Dynamic Tag Management 웹 속성에 대한 라이브러리 다운로드 속성의 스테이징 HTTPS 경로 또는 프로덕션 HTTPS 경로를 구성합니다.</p> </td>
   </tr>
   <tr>
    <td>공유 비밀</td>
-   <td><p>(선택 사항) 다운로드 암호를 해독하는 데 사용할 공유 암호입니다. Dynamic Tag Management의 라이브러리 다운로드 페이지에 있는 공유 암호 필드에서 이 값을 가져옵니다.</p> <p><strong>참고:</strong> 다음을 보유해야 합니다. <a href="https://www.openssl.org/docs/apps/openssl.html">Openssl</a> AEM이 설치된 컴퓨터에 설치된 라이브러리로 AEM에서 다운로드한 라이브러리를 해독할 수 있습니다.</p> </td>
+   <td><p>(선택 사항) 다운로드 암호를 해독하는 데 사용할 공유 암호입니다. Dynamic Tag Management의 라이브러리 다운로드 페이지에 있는 공유 암호 필드에서 이 값을 가져옵니다.</p> <p><strong>참고:</strong> AEM에서 다운로드한 라이브러리를 해독할 수 있도록 AEM이 설치된 컴퓨터에 OpenSSL 라이브러리가 설치되어 있어야 합니다.</p> </td>
   </tr>
   <tr>
    <td>폴링 가져오기 활성화</td>
