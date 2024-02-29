@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: c36ef1c1bd261864930039c4d60a930ead12482e
+source-git-commit: 21f39dc697a5aa3944834786a627e990e7f3ca7f
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3385'
 ht-degree: 4%
 
 ---
@@ -46,12 +46,12 @@ ht-degree: 4%
 ### [!DNL Forms]
 
 * **JEE의 AEM Forms에서 거래 보고**: JEE의 AEM Forms에 트랜잭션 보고 기능이 도입되어 전환, 변환 및 제출과 같은 문서 트랜잭션을 종합적으로 기록할 수 있습니다. 이러한 향상된 기능은 효율성을 향상시키고 기록 보관을 용이하게 합니다. 이 기능은 기본적으로 비활성화되어 있습니다. 관리자 UI에서 활성화할 수 있습니다.
-* **ECDSA 지원을 통해 보안 강화**: 이제 AEM Forms은 JEE 및 OSGi 스택 모두에서 ECDSA(Elliptic Curve Digital Signature Algorithm)를 강력하게 지원합니다. 이제 사용자는 강화된 보안으로 PDF 문서에 서명, 인증 및 확인할 수 있습니다. 지원되는 EC 곡선 알고리즘은 다음과 같습니다.
+* **ECDSA 지원을 통해 보안 강화**: 이제 AEM Forms은 JEE와 OSGi 스택 모두에서 ECDSA(Elliptic Curve Digital Signature Algorithm)를 강력하게 지원합니다. 이제 사용자는 강화된 보안으로 PDF 문서에 서명, 인증 및 확인할 수 있습니다. 지원되는 EC 곡선 알고리즘은 다음과 같습니다.
    * SHA256 다이제스트 알고리즘을 사용한 ECDSA 타원 곡선 P256
    * SHA384 다이제스트 알고리즘을 사용한 ECDSA 타원 곡선 P384
    * SHA512 다이제스트 알고리즘을 사용한 ECDSA 타원 곡선 P512
 * **Forms Designer용 Windows 11과의 원활한 호환성**: 이제 AEM Forms Designer에서 Windows 11을 지원하여 원활한 설치 및 운영을 보장합니다. 사용자는 Forms Designer를 다시 설치하거나 호환성 문제에 대한 걱정 없이 Windows 11로 자신 있게 업그레이드할 수 있으므로 워크플로우가 중단되지 않습니다.
-* **AEM Forms Designer에서 사용자 지정 &quot;캡션&quot; 역할을 사용하여 접근성을 개선했습니다**: 이제 AEM Forms Designer에는 &quot;캡션&quot;이라는 사용자 정의 접근성 역할이 포함되어 사용자가 개인화된 캡션 요소로 XDP를 만들 수 있습니다. 이 기능은 사용자가 사용자 정의 캡션을 문서 디자인에 통합할 수 있도록 하여 접근성을 향상하고 포괄성 및 사용자 경험을 향상시킵니다.
+* **AEM Forms Designer에서 사용자 지정 &quot;캡션&quot; 역할을 사용하여 접근성을 개선했습니다**: 이제 AEM Forms Designer에는 &quot;캡션&quot;이라는 사용자 정의 접근성 역할이 포함되어 사용자가 개인화된 캡션 요소로 XDP를 만들 수 있습니다. 이 기능을 사용하면 사용자가 사용자 정의 캡션을 문서 디자인에 통합하여 포괄성과 사용자 경험을 향상시킬 수 있으므로 접근성을 향상시킬 수 있습니다.
 
 <!-- ### [!DNL Forms]
 
@@ -152,32 +152,32 @@ ht-degree: 4%
 
 #### [!DNL Adaptive Forms]
 
-* 사용자가 AEM이 게시된 URL이 있는 메일링 플랫폼에 AEM Forms을 통합하려고 할 때 AEM Forms는 URL이 있는 제출 작업에서 POST이 설정되어 있더라도 페이지를 렌더링하는 동안 &quot;method=post&quot;를 추가하지 않습니다. 이로 인해 메일링 플랫폼에서는 이를 양식으로 인식하지 못합니다. (FORMS-12614)
-* 사용자가 AEM Form 서비스 팩 6.5.18.0에 표시 패턴이 있는 날짜 필드를 선택할 때 키보드를 사용하여 현재 날짜를 선택할 수 없습니다. (FORMS-12736)
+* 사용자가 AEM Forms을 AEM에 게시된 URL이 있는 메일링 플랫폼에 통합하려고 할 때 AEM Forms이 를 추가하지 않습니다 `method=post` 페이지를 렌더링하는 동안. 이 문제는 다음과 같은 경우에도 발생합니다 `POST` 은 URL이 있는 제출 액션에 설정됩니다. 이로 인해 메일링 플랫폼에서는 이를 양식으로 인식하지 못합니다. (FORMS-12614)
+* 사용자가 AEM Form 서비스 팩 6.5.18.0에서 표시 패턴이 있는 날짜 필드를 선택할 때 키보드를 사용하여 현재 날짜를 선택할 수 없습니다. (FORMS-12736)
 * AEM Forms 서비스 팩 6.5.17.0 및 서비스 팩 6.5.18.0에서 사용자가 달력 위젯에서 월 간을 전환할 때 날짜 선택기 구성 요소에 추가 행이 표시됩니다. (FORMS-11869)
 * 사용자가 iOS 장치의 첨부 구성 요소에서 &quot;사진 찍기&quot;를 사용하여 이미지를 클릭하면 모든 이미지가 동일한 이름으로 폴더에 추가됩니다. (FORMS-12224)
 * 사용자가 라디오 버튼 그룹의 기존 옵션을 업데이트할 때 잘못된 번역 값이 게시됩니다. (FORMS-12575)
-* 사용자가 Android 장치의 적응형 양식에 문자를 추가하면 사용자는 Android 장치에서 포커스가 맞춰질 때 텍스트 필드에 정의된 최대 문자 수보다 많은 문자를 입력할 수 있습니다. 그러나 사용자가 HTML5 입력 유형을 선택하면 작동합니다. (FORMS-12748)
-* 일치하는 레이블 Arial labelledby와 Arial 레이블로 인해 화면 판독기에서 이 두 레이블을 구별할 수 없습니다. 이 문제를 해결하려면 양식 필드에 대해 &quot;aria-labelledby&quot;라는 레이블이 &quot;aria-describedby&quot;로 대체됩니다. (FORMS-12436)
-* 작성자가 &quot;적응형 Forms - 임베드(v2)&quot; 구성 요소를 사용하여 사이트 페이지에 적응형 양식을 임베드하고 임베드된 양식에 CAPTCHA 구성 요소가 포함된 경우(CAPTCHA 서비스 -> reCAPTCHA, 설정 -> reCAPTCHA-v2), 사용자가 작성자 인스턴스에서 &quot;게시됨으로 보기&quot;를 사용하여 사이트 페이지를 보려고 하고 오류가 다음과 같이 표시되면(FORMS-11859) 사이트 페이지가 렌더링되지 않습니다.
+* 사용자가 Android™ 장치의 적응형 양식에 문자를 추가하면 Android™ 장치에서 포커스가 맞춰질 때 텍스트 필드에 정의된 최대 문자 수보다 많은 문자를 입력할 수 있습니다. 단, 사용자가 HTML5 입력 유형을 선택하면 작동합니다. (FORMS-12748)
+* 일치하는 레이블 Arial® labelledby 및 Arial® 레이블로 인해 화면 판독기에서 이 두 레이블을 구별할 수 없습니다. 이 문제를 해결하려면 양식 필드에 대해 &quot;aria-labelledby&quot;라는 레이블이 &quot;aria-describedby&quot;로 대체됩니다. (FORMS-12436)
+* 작성자가 &quot;적응형 Forms - 임베드(v2)&quot; 구성 요소를 사용하여 사이트 페이지에 적응형 양식을 임베드하고 임베드된 양식에 CAPTCHA 구성 요소가 포함된 경우(CAPTCHA 서비스 -> reCAPTCHA, 설정 -> reCAPTCHA-v2), 사용자가 작성자 인스턴스에서 &quot;게시됨으로 보기&quot;를 사용하여 사이트 페이지를 보려고 할 때 사이트 페이지가 렌더링되지 않습니다. 다음 오류가 (FORMS-11859)로 표시됩니다.
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * 사용자가 날짜 선택기 구성 요소를 사용하여 날짜를 선택하려고 하면 값이 업데이트되지 않고 NULL이 표시됩니다. (FORMS-12742, FORMS-12736)
 
-* 사용자가 AEM Form 서비스 팩 6.5.19.0으로 업그레이드할 때 새 언어를 기존 사전에 업데이트한 후 &quot;guideContainer&quot; 행과 병합되어 양식에 새 로케일을 추가하지 않습니다. (FORMS-12947)
+* 사용자가 AEM Form 서비스 팩 6.5.19.0으로 업그레이드할 때 새 언어를 기존 사전에 업데이트한 후 양식에 로케일을 추가하기 위해 &quot;guideContainer&quot; 행과 병합되지 않습니다. (FORMS-12947)
 
-* AEM Forms 서비스 팩 6.5.19.0에서 Java 11에서 웹 서비스 호출 작업이 실패하고 다음과 같은 오류가 발생합니다(FORMS-12329).
+* AEM Forms 서비스 팩 6.5.19.0에서 Java™ 11에서 호출된 웹 서비스 작업이 오류로 실패합니다(FORMS-12329).
   `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
 
 * 사용자가 AEM Forms 서비스 팩 6.5.18.0에서 &quot;EmailService&quot;에 대한 &quot;receive&quot; 작업을 호출하면 예외가 발생합니다(FORMS-12050).
   `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
 
-* AEM Forms 서비스 팩 6.5.18.0에서 FIPS 모드가 활성화되면 다음 오류가 발생하여 기본 DOM에서 새 사용자를 만들 수 없습니다(FORMS-11857).
+* AEM Forms 서비스 팩 6.5.18.0에서 FIPS 모드가 활성화되면 다음 오류가 발생하여 기본 DOM에서 사용자를 만들 수 없습니다(FORMS-11857).
   `com.adobe.idp.cx.a: error seeding random number generator`
 
-* 사용자가 경로 아래에서 ADMINUI의 글꼴을 선택할 때 `Home>Services>PDF Generator>Adobe PDF Settings`, 선택되지 않습니다. 또한 표준 또는 개인화 프로필에서는 사용할 수 있는 글꼴 목록 상자가 비어 있으므로 의 하위 목록을 개인화할 수 없습니다. **항상 포함** 또는 **임베드 안 함**, 이로 인해 사용자가 PDF Generator PDF에 대한 글꼴을 구성할 수 없습니다. 로그에는 관련 오류 메시지가 표시되지 않습니다. (FORMS-12095)
+* 사용자가 경로 아래에서 ADMINUI의 글꼴을 선택할 때 `Home>Services>PDF Generator>Adobe PDF Settings`, 선택되지 않습니다. 또한 표준 또는 개인화된 프로필에서는 사용할 수 있는 글꼴 목록 상자가 비어 있습니다. 따라서 의 하위 목록을 개인화할 수는 없습니다. **항상 포함** 또는 **임베드 안 함**. PDF Generator PDF에 대한 글꼴을 구성할 수 없습니다. 로그에는 관련 오류 메시지가 표시되지 않습니다. (FORMS-12095)
 
-* AEM Forms 서비스 팩 6.5.18.0에서 사용자는 새 보안 설정을 만들 수 없으며 오류 또는 서버 로그가 표시되지 않지만 화면에 팝업 오류 메시지가 표시됩니다. (FORMS-12212)
+* AEM Forms 서비스 팩 6.5.18.0에서 사용자는 보안 설정을 만들 수 없으며 오류나 서버 로그가 표시되지 않지만 화면에 팝업 오류 메시지가 표시됩니다. (FORMS-12212)
 
 * AEM Forms 서비스 팩 6.5.18.0의 사용자가 JEE 워크플로우에서 적응형 양식을 제출할 때 적응형 양식의 첨부 파일이 JEE 프로세스로 전송되지 않아 애플리케이션 오류가 발생합니다. (FORMS-12232, FORMS-12228)
 
@@ -198,7 +198,7 @@ ht-degree: 4%
 
 * AEM Forms 6.5.18.0에서 적응형 양식이 게시되면 정책을 포함한 모든 종속 항목이 수정 사항이 없더라도 다시 게시됩니다. (FORMS-10454)
 
-* 사용자가 JBoss 턴키 설정이 있는 AEM Forms 6.5.19.1에서 구성 관리자를 실행하는 동안 &quot;Microsoft SharePoint&quot;를 선택하면 Livecycle Jboss EAR 설치에 실패하고 다음과 같은 오류가 표시됩니다. (FORMS-12463)
+* 사용자가 JBoss® 턴키 설정이 있는 AEM Forms 6.5.19.1에서 구성 관리자를 실행하는 동안 &quot;Microsoft SharePoint&quot;를 선택하면 JBoss® EAR LiveCycle 설치에 실패하고 다음 오류가 표시됩니다. (FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
