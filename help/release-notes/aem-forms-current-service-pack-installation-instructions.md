@@ -2,10 +2,10 @@
 title: AEM Forms용 AEM Forms 패치 설치 지침
 description: OSGi 및 JEE 환경에 대한 AEM Forms 서비스 팩 설치 지침
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: 181d5ffcefcf55aa75cfaf29c42dbd8d8d665398
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 8%
+source-wordcount: '1752'
+ht-degree: 9%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 8%
 
 | 제품 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 버전 | 6.5.19.0 (OSGi), 6.5.19.1 (JEE) |
+| 버전 | 6.5.20.0 |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2023년 12월 8일 |
+| 날짜 | 2024년 2월 29일 |
 | 다운로드 URL | [최신 AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -49,7 +49,8 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 ## JEE 환경의 AEM Form에 서비스 팩 다운로드 및 설치 {#download-and-install-for-jee-service-pack}
 
-![JEE 설치](/help/forms/using/assets/jeeinstallation.png)
+<!--
+![JEE Installation](/help/forms/using/assets/jeeinstallation.png) -->
 
 +++1 기존 환경의 백업 수행
 
@@ -71,7 +72,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++ 3. Microsoft Visual C++ 재배포 가능 패키지 설치
++++3. Microsoft Visual C++ 재배포 가능 패키지 설치
 
 * 다운로드 및 설치 [Visual Studio 2015, 2017, 2019 및 2022용 Microsoft Visual C++ 재배포 가능 패키지 64비트 버전](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) AEM 6.5 Forms이 설치된 컴퓨터에서.
 
@@ -81,7 +82,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++3. JEE 서비스 팩에 AEM Forms 설치:
++++4. JEE 서비스 팩에 AEM Forms 설치:
 
 1. 애플리케이션 서버를 중지합니다.
 1. 추출 **AEM Forms on JEE 서비스 팩 설치 관리자 아카이브** 하드 드라이브에:
@@ -108,7 +109,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
    * 다음 중 하나를 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 **구성 관리자** 를 사용하여 **ConfigurationManager.bat** 파일 위치 `[aem-forms root]\configurationManager\bin`.
 
-   * 또는 을 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음으로 이동 *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉토리 및 바꾸기 **ConfigurationManager.lax** 및 **ConfigurationManager_IPV6.lax** 최신 버전 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일.
+   * 또는 을 선택 해제합니다. **구성 관리자 시작** 클릭 전 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음으로 이동 *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉토리 및 바꾸기 **ConfigurationManager.lax** 및 **ConfigurationManager_IPV6.lax** 최신 버전 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일, 검색 및 바꾸기 **axis-1.4.1.1.jar** 포함 **axis-1.4.1.2.jar** 이 두 파일에 있습니다.
 
      >[!NOTE]
      >
@@ -133,7 +134,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++4. 서블릿 조각 설치(AEM 서비스 팩 6.5.14.0 이하)
++++5. 서블릿 조각 설치(AEM 서비스 팩 6.5.14.0 이하)
 
 >[!NOTE]
 >
@@ -145,17 +146,17 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 1. 조각을 다운로드하지 않은 경우에서 다운로드합니다 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
 
-1. 애플리케이션 서버를 시작하고 로그가 안정될 때까지 기다린 후 번들 상태를 확인합니다.
+2. 애플리케이션 서버를 시작하고 로그가 안정될 때까지 기다린 후 번들 상태를 확인합니다.
 
-1. 웹 콘솔 번들을 엽니다. 기본 URL은 `http://[Server]:[Port]/system/console/bundles`.
+3. 웹 콘솔 번들을 엽니다. 기본 URL은 `http://[Server]:[Port]/system/console/bundles`.
 
-1. 설치/업데이트를 클릭합니다. 다운로드한 조각을 선택합니다. `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`. 클릭 **설치** 또는 **업데이트**. 응용 프로그램 서버가 안정될 때까지 대기
+4. 설치/업데이트를 클릭합니다. 다운로드한 조각을 선택합니다. `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`. 클릭 **설치** 또는 **업데이트**. 응용 프로그램 서버가 안정될 때까지 대기
 
-1. 응용 프로그램 서버를 중지합니다.
+5. 응용 프로그램 서버를 중지합니다.
 
 +++
 
-+++5. AEM 서비스 팩 설치
++++6. AEM 서비스 팩 설치
 
 1. 인스턴스가 업데이트 모드에 있는 경우(인스턴스가 이전 버전에서 업데이트된 경우) 설치 전에 인스턴스를 다시 시작하십시오. Adobe은 인스턴스의 현재 가동 시간이 높을 경우 다시 시작할 것을 권장합니다.
 1. 설치하기 전에 스냅샷 또는 새 백업을 [!DNL Experience Manager] 인스턴스.
@@ -186,7 +187,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++6. AEM Experience Manager Forms 추가 기능 패키지 설치
++++7. AEM Experience Manager Forms 추가 기능 패키지 설치
 
 1. 다음을 설치했는지 확인합니다. [!DNL Experience Manager] 서비스 팩입니다.
 1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
@@ -197,8 +198,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 ## OSGi 환경의 AEM Form에 서비스 팩 다운로드 및 설치 {#download-and-install-for-osgi-service-pack}
 
-![OSGi 설치 단계](/help/forms/using/assets/osgiinstallation.png)
 
+<!-- ![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
+-->
 
 +++1 기존 환경의 백업 수행
 

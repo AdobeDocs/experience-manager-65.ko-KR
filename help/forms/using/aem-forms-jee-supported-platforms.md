@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 6c17822e5d5fcd6af63bc695a057c1eeff50f03a
+source-git-commit: 8ffe992e4b243d2a3548d214e8ac44fb5df6483c
 workflow-type: tm+mt
-source-wordcount: '4023'
+source-wordcount: '4052'
 ht-degree: 0%
 
 ---
@@ -361,6 +361,7 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택할 때 다음 예외
 1. JEE의 AEM Forms은 JBoss® RBAC(역할 기반 액세스 제어)를 지원하지 않습니다.
 1. AEM Forms on JEE는 애플리케이션 서버 JBoss™ EAP 7.4에만 해당하는 Oracle Java® SE 11(64비트) SDK를 지원합니다.
 1. 1.8.0_281 이상의 JDK 버전은 WebLogic 서버에 대해 지원되지 않습니다. (FORMS-8498)
+1. JDK 11.0.20은 JEE 설치 관리자에서 AEM Forms을 설치할 수 없습니다. JEE 설치 프로그램에 AEM Forms을 설치하려면 JDK 11.0.19 이하 버전만 지원됩니다.
 
 <!-- 
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 

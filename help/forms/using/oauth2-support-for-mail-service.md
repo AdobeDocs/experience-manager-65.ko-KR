@@ -1,15 +1,15 @@
 ---
-title: Microsoft&reg; Office 365 메일 서버 프로토콜에 대한 OAuth2 기반 인증 구성
-description: Microsoft&reg; Office 365 메일 서버 프로토콜에 대한 OAuth2 기반 인증 구성
+title: Microsoft®(Forms JEE OAuth), Office 365 메일 서버 프로토콜에 대한 OAuth2 기반 인증 구성
+description: Microsoft®(Forms JEE OAuth), Office 365 메일 서버 프로토콜에 대한 OAuth2 기반 인증 구성
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
-source-git-commit: 020b92463371294706e9873e0d8962583d19ac52
+source-git-commit: 2a67e7e54a72c31a4a0ab0a186be20a914222fa7
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '986'
 ht-degree: 5%
 
 ---
 
-# Microsoft® Office 365 메일 서버 프로토콜과 통합 {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# Microsoft® Office 365 메일 서버 프로토콜과 AEM Forms 통합 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 조직에서 이메일 요구 사항을 준수할 수 있도록 AEM Forms은 Microsoft® Office 365 메일 서버 프로토콜과의 통합을 위한 OAuth 2.0 지원을 제공합니다. Azure AD(Azure Active Directory) OAuth 2.0 인증 서비스를 사용하여 IMAP, POP 또는 SMTP 등의 다양한 프로토콜과 연결하고 Office 365 사용자의 전자 메일 데이터에 액세스할 수 있습니다. 다음은 OAuth 2.0 서비스를 통해 인증할 Microsoft® Office 365 메일 서버 프로토콜을 구성하는 단계별 지침입니다.
 
@@ -27,7 +27,7 @@ ht-degree: 5%
    >
    > * 대상 **조직 디렉터리(모든 Azure AD 디렉터리 - 다중 테넌트)의 계정** Adobe 애플리케이션에서는 개인 이메일 계정이 아닌 회사 계정을 사용하는 것이 좋습니다.
    > * **개인 Microsoft® 계정만** 응용 프로그램이 지원되지 않습니다.
-   * Adobe은 **다중 임차인 및 개인 Microsoft® 계정** 응용 프로그램.
+   > * Adobe은 **다중 임차인 및 개인 Microsoft® 계정** 응용 프로그램.
 
 1. 그런 다음 **증명서 및 보안**&#x200B;으로 이동하고, **신규 클라이언트 보안**&#x200B;을 클릭한 후 화면에 표시되는 단계에 따라 보안을 생성합니다. 나중에 사용할 수 있도록 이 암호 값을 메모해 두십시오.
 
@@ -56,7 +56,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   다음을 선택해야 합니다. **토큰 액세스** 및 **ID 토큰** 확인란.
+   > 다음을 선택해야 합니다. **토큰 액세스** 및 **ID 토큰** 확인란.
 
 1. 클릭 **개요** 왼쪽 창에서 다음 값을 복사합니다. **애플리케이션(클라이언트) ID**, **디렉터리(테넌트) ID**, 및 **클라이언트 암호** 나중에 사용합니다.
 
@@ -72,7 +72,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   단일 테넌트 응용 프로그램이 있는 경우 `common` (으)로 `[tenantid]` 인증 코드를 생성하기 위한 다음 URL: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
+   > 단일 테넌트 응용 프로그램이 있는 경우 `common` (으)로 `[tenantid]` 인증 코드를 생성하기 위한 다음 URL: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
 1. 위의 URL을 입력하면 로그인 화면으로 리디렉션됩니다.
    ![로그인 화면](/help/forms/using/assets/azure_loginscreen.png)
@@ -97,8 +97,8 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   단일 테넌트 응용 프로그램에서 새로 고침 토큰을 생성하려면 다음 cURL 명령을 사용하고 바꾸기 `common` (으)로 `[tenantid]` 위치:
-   `curl -H "ContentType application/x-www-form-urlencoded" -d "client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]" -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
+   > 단일 테넌트 응용 프로그램에서 새로 고침 토큰을 생성하려면 다음 cURL 명령을 사용하고 바꾸기 `common` (으)로 `[tenantid]` 위치:
+   >`curl -H "ContentType application/x-www-form-urlencoded" -d "client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]" -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
 
 1. 새로 고침 토큰을 기록합니다.
 
@@ -110,7 +110,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   oAuth 2.0 인증 서비스를 활성화하려면 다음을 선택해야 합니다. **SMTP 서버에 인증이 필요한지 여부(SMTP 인증)** 확인란.
+   > oAuth 2.0 인증 서비스를 활성화하려면 다음을 선택해야 합니다. **SMTP 서버에 인증이 필요한지 여부(SMTP 인증)** 확인란.
 
 1. 설정 **oAuth 2.0 인증 설정** 다음으로: `True`.
 1. 다음 값 복사 **클라이언트 ID** 및 **클라이언트 암호** Azure 포털에서.
@@ -123,8 +123,8 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   * 전송 보안 프로토콜의 유효한 값은 &#39;blank&#39;, &#39;SSL&#39; 또는 &#39;TLS&#39;입니다. 값 설정 **SMTP 전송 보안** 및 **전송 보안 수신** 끝 **TLS** oAuth 인증 서비스를 사용하도록 설정합니다.
-   * **POP3 프로토콜** 은 이메일 엔드포인트를 사용하는 동안 OAuth에 대해 지원되지 않습니다.
+   >* 전송 보안 프로토콜의 유효한 값은 &#39;blank&#39;, &#39;SSL&#39; 또는 &#39;TLS&#39;입니다. 값 설정 **SMTP 전송 보안** 및 **전송 보안 수신** 끝 **TLS** oAuth 인증 서비스를 사용하도록 설정합니다.
+   >* **POP3 프로토콜** 은 이메일 엔드포인트를 사용하는 동안 OAuth에 대해 지원되지 않습니다.
 
    ![연결 설정](/help/forms/using/assets/oauth_connectionsettings.png)
 
@@ -134,7 +134,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   원하는 경우 Workbench에서 특정 프로세스에 대한 기본 인증으로 Auth 2.0 인증 설정을 변경할 수 있습니다. 이렇게 하려면 다음을 설정하십시오. **OAuth 2.0 인증** 다음에서 &#39;False&#39;로서의 값: **전역 설정 사용** 다음에서 **연결 설정** 탭.
+   >원하는 경우 Workbench에서 특정 프로세스에 대한 기본 인증으로 Auth 2.0 인증 설정을 변경할 수 있습니다. 이렇게 하려면 다음을 설정하십시오. **OAuth 2.0 인증** 다음에서 &#39;False&#39;로서의 값: **전역 설정 사용** 다음에서 **연결 설정** 탭.
 
 ## oAuth 작업 알림을 활성화하려면 {#enable_oauth_task}
 
@@ -148,7 +148,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   작업 알림과 관련된 자세한 정보를 보려면 [여기를 클릭하십시오](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > 작업 알림과 관련된 자세한 정보를 보려면 [여기를 클릭하십시오](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## 이메일 엔드포인트를 구성하려면 {#configure_email_endpoint}
 
@@ -162,7 +162,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   이메일 엔드포인트 구성에 대한 자세한 내용을 보려면 [이메일 엔드포인트 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
+   > 이메일 엔드포인트 구성에 대한 자세한 내용을 보려면 [이메일 엔드포인트 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## 문제 해결 {#troubleshooting}
 

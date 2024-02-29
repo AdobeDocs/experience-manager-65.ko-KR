@@ -3,9 +3,9 @@ title: 기술 요구 사항
 description: Adobe Experience Manager에 대해 지원되는 클라이언트 및 서버 플랫폼 목록입니다.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: d5e7f0301259fdc12b507f9568befcc34ebe9408
+source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3650'
 ht-degree: 1%
 
 ---
@@ -213,7 +213,7 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64(1.13-1.el7)
-   >* libXau.x86_64(1.0.8-2.1.el7)
+   >* libXau.x86_64 (1.0.8-2.1.el7)
 
 1. Microsoft® Windows 프로덕션 배포는 6.5로 업그레이드하는 고객 및 비프로덕션 사용을 위해 지원됩니다. AEM Sites 및 자산에 대한 새 배포는 요청 시 수행됩니다.
 1. AEM Forms은 지원 수준 R 제한 없이 Microsoft® Window Server에서 지원됩니다.
@@ -529,13 +529,15 @@ Windows x86의 경우:
 * 그래픽 메모리 - 128MB GPU(256MB 권장)
 * 2.35GB의 사용 가능한 하드 디스크 공간
 * 1024 X 768 픽셀 이상의 모니터 해상도
-* 비디오 하드웨어 가속(옵션)
+* 비디오 하드웨어 가속(선택 사항)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
 * Designer를 설치하기 위한 관리자 권한
 * 32비트 AEM Forms Designer용 Microsoft Visual C++ 2019(VC 14.28 이상) 32비트 런타임
 * 64비트 AEM Forms Designer용 Microsoft Visual C++ 2019(VC 14.28 이상) 64비트 런타임(OSGI 및 JEE 스택 모두 해당)
 
-### AEM Assets XMP 메타데이터 쓰기 되돌리기 요구 사항 {#requirements-for-aem-assets-xmp-metadata-write-back}
+[AEM Forms 디자이너 설치 및 구성](/help/forms/using/installing-configuring-designer.md)
+
+### AEM Assets XMP 메타데이터 쓰기 저장에 대한 요구 사항 {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP 원본에 쓰기 지원되며 다음 플랫폼 및 파일 형식에 사용할 수 있습니다.
 
@@ -548,6 +550,6 @@ XMP 원본에 쓰기 지원되며 다음 플랫폼 및 파일 형식에 사용�
 
 * **파일 형식**: JPEG, PNG, TIFF, PDF, INDD, AI 및 EPS.
 
-### AEM Assets이 Linux에서 메타데이터가 많은 에셋을 처리하기 위한 요구 사항입니다® {#assetsonlinux}
+### Linux®에서 메타데이터가 많은 자산을 처리하기 위한 AEM Assets 요구 사항 {#assetsonlinux}
 
-XMPFilesProcessor 프로세스를 사용하려면 라이브러리 GLIBC_2.14가 작동해야 합니다. GLIBC_2.14가 포함된 Linux 커널(예: Linux®® 커널 버전 3.1.x)을 사용합니다. PSD 파일을 좋아요 많은 양의 메타데이터가 포함된 자산 처리 성능을 향상시킵니다. 이전 버전의 GLIBC를 사용하면 로 시작하는 `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`로그에 오류가 발생합니다.
+XMPFilesProcessor 프로세스를 사용하려면 라이브러리 GLIBC_2.14가 작동해야 합니다. GLIBC_2.14가 포함된 Linux® 커널을 사용합니다(예: Linux® 커널 버전 3.1.x). PSD 파일과 같이 대량의 메타데이터가 포함된 에셋을 처리하는 경우 성능이 향상됩니다. 이전 버전의 GLIBC를 사용하면 로 시작하는 로그에 오류가 발생합니다. `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
