@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 8ffe992e4b243d2a3548d214e8ac44fb5df6483c
+source-git-commit: 3fe9b3d4cf6ddf7d64dbece7d62d7f18dfa183f2
 workflow-type: tm+mt
-source-wordcount: '4052'
+source-wordcount: '4054'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 
 | 지원 수준 | 설명 |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| E: 작동 예정 | 구성이 작동할 것으로 예상되며, 반대의 보고서는 없습니다. |
+| E: 작동 예정 | 컨피그레이션이 작동할 것으로 예상되며 반대되는 보고서가 없습니다. |
 | Z: 지원되지 않음 | 구성이 지원되지 않습니다. Adobe은 구성의 작동 여부에 대해 설명하지 않으며 이를 지원하지 않습니다. |
 
 >[!NOTE]
@@ -172,8 +172,8 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
    <td><p>지원됨</p> </td>
   </tr>
    <tr>
-   <td>Oracle 데이터베이스 19c(Standard, RAC(Real Application Clusters) 및 Enterprise Edition) </td>
-   <td>저장소 마이크로커널 </td>
+   <td>Oracle Database 19c(Standard, Real Application Clusters(RAC) 및 Enterprise 에디션) </td>
+   <td>저장소 Microkernal </td>
    <td>지원됨</td>
   </tr>
   <tr>
@@ -199,8 +199,8 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
  </tbody>
 </table>
 
-- IBM® DB2®는 새로 설치하는 경우 지원되지 않습니다. AEM 6.5 Forms으로 업그레이드하는 기존 고객에게만 지원됩니다.
-- MongoDB는 타사 소프트웨어이며 AEM 라이선스 패키지에 포함되어 있지 않습니다. 자세한 내용은 [MongoDB 라이선스 정책](https://www.mongodb.org/about/licensing/).
+- IBM® DB2®는 새로 설치에 대해 지원되지 않습니다. 이 서비스는 AEM 6.5 Forms로 업그레이드하는 기존 고객에게만 지원됩니다.
+- MongoDB는 타사 소프트웨어이며 AEM 라이선스 패키지에 포함되어 있지 않습니다. 자세한 내용은 MongoDB 라이선스 정책 정책을](https://www.mongodb.org/about/licensing/) 참조하세요[.
 - AEM Adobe 배포를 최대한 활용하려면 MongoDB Enterprise 버전에 라이센스를 부여하여 전문적인 지원을 받는 것이 좋습니다.
 - Adobe 고객 지원 센터는 AEM에서 MongoDB 사용과 관련된 자격 부여 문제를 지원합니다. 자세한 내용은 [Adobe Experience Manager MongoDB 페이지](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 - &#39;파일 시스템&#39;에는 POSIX와 호환되는 블록 저장소가 포함되어 있습니다. 여기에는 네트워크 스토리지 기술이 포함됩니다. 파일 시스템 성능이 달라질 수 있으며 전체 성능에 영향을 줄 수 있습니다. 네트워크/원격 파일 시스템으로 테스트 AEM을 로드하는 것이 좋습니다.
@@ -271,7 +271,7 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
 
 >[!NOTE]
 >
->IBM® WebSphere® 클러스터는 Network Deployment Edition에서만 지원됩니다.
+>IBM® WebSphere® 클러스터는 Network Deployment 에디션에서만 지원됩니다.
 
 ### 서버 운영 체제 {#server-operating-systems}
 
@@ -297,7 +297,7 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
   <tr>
    <td>Ubuntu 20.04</td>
    <td>A: 지원됨</td>
-   <td>서비스 팩 및 주요 업데이트</td>
+   <td>서비스 팩 및 중요 업데이트</td>
   </tr>
   <tr>
    <td><p>Red Hat® Enterprise Linux® 8(커널 4.x)(64비트)</p> </td>
@@ -372,7 +372,7 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택할 때 다음 예외
 - AEM Forms on JEE는 지원되는 소프트웨어의 지정된 주 버전 및 부 버전 위에 업데이트, 패치 및 수정 팩을 지원합니다. 그러나 지정하지 않는 한 다음 주 버전 또는 부 버전으로의 업데이트는 지원되지 않습니다.
 - 클러스터 기반 설치는 TarMK 지속성을 지원하지 않습니다. 지원되는 지속성에 대한 자세한 내용은 [AEM Forms 설치를 위한 지속성 유형 선택](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 - AEM Forms on JEE는 Adobe에 따라 다양한 타사 소프트웨어를 지원합니다. [타사 소프트웨어 지원 정책](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
-- 타사 공급업체에서 제공한 지원에 따라 JEE의 AEM Forms 지원 플랫폼입니다. 일부 조합은 서드파티 공급업체에서 허용하지 않을 수 있습니다. 예를 들어, 많은 공급업체가 Oracle으로 애플리케이션 서버를 인증하지 않았습니다. 따라서 JEE의 AEM Forms 또한 이러한 조합을 지원하지 않습니다. 지원되는 소프트웨어 버전을 선택하려면 서드파티 공급업체의 지원 매트릭스도 확인하십시오.
+- 타사 공급업체에서 제공한 지원에 따라 JEE의 AEM Forms 지원 플랫폼입니다. 일부 조합은 서드파티 공급업체에서 허용하지 않을 수 있습니다. 예를 들어, 많은 공급업체가 Oracle으로 애플리케이션 서버를 인증하지 않았습니다. 따라서 JEE의 AEM Forms도 이러한 조합을 지원하지 않습니다. 지원되는 소프트웨어 버전을 선택하려면 서드파티 공급업체의 지원 매트릭스도 확인하십시오.
 - JEE의 AEM Forms은 TarMK 콜드 대기를 지원하지 않습니다.
 - JEE의 AEM Forms은 수직 클러스터링을 지원하지 않습니다.
 - AEM Forms on JEE는 클러스터된 환경에서 MySQL 데이터베이스를 지원하지 않습니다.
@@ -392,7 +392,7 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택할 때 다음 예외
   </tr>
   <tr>
    <td>Microsoft® Active Directory 2022</td>
-   <td>유지 관리 릴리스 및 수정 팩</td>
+   <td>유지보수 릴리스 및 수정팩</td>
   </tr>
   <tr>
    <td><p>IBM® Tivoli Directory Server 6.4</p> </td>
@@ -429,7 +429,7 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택할 때 다음 예외
    <td>8.5 수정 팩 2</td>
   </tr>
   <tr>
-   <td> IBM® Content Manager 클라이언트(더 이상 사용되지 않음)</td>
+   <td> IBM® Content Manager Client(더 이상 사용되지 않음)</td>
    <td>8.5 </td>
   </tr>
    <td>Microsoft® Sharepoint </td>
@@ -440,7 +440,7 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택할 때 다음 예외
 
 ### Cordova 지원 {#support-for-cordova}
 
-AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 지원되는 Cordova의 플랫폼별 버전은 다음과 같습니다.
+AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되는 Cordova의 플랫폼별 버전입니다.
 
 - Apache Cordova 6.4.0
 - Cordova iOS 4.3.0
@@ -489,7 +489,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 지원되는 Cordova�
 >- OpenOffice의 PDF Generator 전환은 Windows 및 Linux®에서만 지원됩니다.
 >- OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
 >- Acrobat 버전은 PDF Generator 기능을 사용할 수 있도록 AEM Forms과 번들로 제공됩니다. 번들형 버전은 AEM Forms 라이선스가 있는 동안 AEM Forms PDF Generator과 함께 사용하기 위해 AEM Forms을 통해서만 프로그래밍 방식으로 액세스해야 합니다. 자세한 내용은 배포에 따른 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
->- PDF Generator 서비스는 Microsoft® Windows 10을 지원하지 않습니다.
+>- PDF 생성기 서비스는 Microsoft® Windows 10을 지원하지 않습니다.
 >-PDF Generator이 Microsoft® Visio 2019를 사용하여 파일을 변환하지 못합니다. Microsoft® Visio 2016을 계속 사용하여 .VSD 및 .VSDX 파일을 변환할 수 있습니다.
 >- PDF Generator이 Microsoft® Project 2019를 사용하여 파일을 변환하지 못했습니다. Microsoft® Project 2016을 계속 사용하여 .MPP 파일을 변환할 수 있습니다.
 >- PDF Generator이 Microsoft® Visio 2019를 사용하여 파일을 변환하지 못했습니다.
@@ -505,7 +505,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 준�
 - 서신 관리 작성 UI
 - 관리 UI(관리 콘솔 UI)
 
-## JEE의 AEM Forms에 대한 시스템 요구 사항 {#system-requirements-for-aem-forms-on-jee}
+## JEE에서 AEM Forms 대한 시스템 요구 사항 {#system-requirements-for-aem-forms-on-jee}
 
 ### 최소 하드웨어 요구 사항 {#minimum-hardware-requirements}
 
@@ -532,7 +532,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 준�
    <td>
     <ul>
      <li><strong>인텔® 기반 환경</strong>: Intel Xeon® E5-2680, 2.4GHz 이상 듀얼 코어 프로세서를 사용하면 성능이 더욱 향상됩니다.</li>
-     <li><strong>메모리: </strong>4GB <br /> </li>
+     <li><strong>메모리: </strong>4 GB <br /> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -540,8 +540,8 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 준�
 
 추가 요구 사항은 다음을 참조하십시오.
 
-- [JEE의 단일 서버 AEM Forms 배포에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
-- [JEE 배포의 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
+- [JEE 배포의 단일 서버 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [JEE 배포의 클러스터형 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ## JEE에서 AEM Forms에 대해 지원되는 클라이언트 {#supported-clients-for-aem-forms-on-jee}
 
@@ -578,7 +578,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 준�
 
 ### 디자이너 {#designer}
 
-- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server 또는 Microsoft® Windows® 10
+- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 또는 Windows® 11
 - PAE, NX 및 SSE2를 지원하는 1GHz 이상의 프로세서
 - 32비트용 RAM 1GB 또는 64비트 OS용 RAM 2GB
 - 32비트용 16GB 디스크 공간 또는 64비트 OS용 20GB 디스크 공간
@@ -590,7 +590,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 준�
 - Designer를 설치할 수 있는 관리 권한
 - Microsoft® Visual C++ 2019(VC 14.28 이상) 32비트 런타임
 
-### Adobe Acrobat 및 Adobe Reader {#adobe-acrobat-and-adobe-reader}
+### Adobe Systems Acrobat 및 Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
 <table>
  <tbody>
@@ -651,10 +651,10 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 준�
 
 >[!NOTE]
 >
->데스크탑에 대한 일부 브라우저 관련 예외는 다음과 같습니다.
+>데스크톱에 대한 일부 브라우저 관련 예외는 다음과 같습니다.
 >
 >- Safari는 Macintosh OS X에서만 지원됩니다.
->- 작업 영역은 Acrobat DC 이상 버전의 Macintosh OS X 10.6 및 10.7에서 Safari 5.1을 지원합니다. Adobe Reader, Acrobat과의 Safari 5.1 호환성에 대한 자세한 내용은 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>- 작업 영역은 Acrobat DC 이상 버전의 Macintosh OS X 10.6 및 10.7에서 Safari 5.1을 지원합니다. Adobe Reader, Acrobat와의 Safari 5.1 호환성에 대한 자세한 내용은 https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html) 참조하십시오[.
 >- 관리 콘솔은 Safari에서 지원되지 않습니다.
 >- 서신 관리는 AEM 6.1 forms용 Windows® Internet Explorer 9.0을 지원하지 않습니다.
 >- Forms 포털은 접근성을 위해 Internet Explorer 11에서 JAWS 14.0 화면 판독기 소프트웨어를 지원합니다.
@@ -845,7 +845,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | 추가된 지원 | 제거된 지원 | 지원 중단됨 |
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 4.4 | Windows Server 2016(64비트) | Microsoft® Windows Server 2019(64비트) |
-| Oracle WebLogic Server 14c | MongoDB Enterprise 4.0 | Microsoft® Active Directory 2016 |
+| Oracle WebLogic Server 14c | MongoDB 엔터프라이즈 4.0 | Microsoft® Active Directory 2016 |
 | 내 SQL JDBC 커넥터 8 | Oracle 데이터베이스 12c 릴리스 2 (12.2.0.1.0) |  |
 | Active Directory | MySQL 5.7.35 |  |
 | Microsoft® Windows Server 2022(64비트) | Microsoft® SQL Server 2016 |  |
@@ -896,12 +896,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | | Red Hat® Enterprise Linux® 7(커널 3.x)(64비트) |
 |  | | Microsoft® Windows Server 2016(64비트) |
 |  | | Microsoft® Office 2016 |
-|  | | OpenOffice 4.1.2 |
+|  | | 오픈오피스 4.1.2 |
 
 
 >[!NOTE]
 >
-> 더 이상 사용되지 않는 플랫폼은 다음 전체 설치 프로그램 릴리스나 플랫폼에 대한 타사 공급업체 지원 중 더 빠른 버전이 종료되기 전까지 계속 지원을 받습니다.
+> 더 이상 사용되지 않는 플랫폼은 다음 전체 설치 프로그램 릴리스 또는 플랫폼에 대한 서드파티 공급업체 지원이 종료될 때까지(둘 중 더 빠른 날짜까지) 계속 지원을 받습니다.
 
 <!-- 
 - Oct 10, 2021
