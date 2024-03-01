@@ -2,9 +2,9 @@
 title: 번역 프로젝트 관리
 description: Adobe Experience Manager에서 번역 프로젝트를 관리하는 방법을 알아봅니다.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 219338b497dae6356a68429e9e8ab02c9cfcc3b4
 workflow-type: tm+mt
-source-wordcount: '3504'
+source-wordcount: '3506'
 ht-degree: 41%
 
 ---
@@ -420,9 +420,15 @@ AEM은 번역 작업이 콘텐츠의 초기 작업을 위해 생성되는지 또
 1. 선택 **언어 사본**.
 1. 업데이트할 타겟 언어를 선택합니다.
 1. 선택 **언어 사본 업데이트**.
+
+   ![언어 사본 업데이트](assets/translation-move-to.png)
+
 1. 클릭 **업데이트**. A [시작](/help/sites-authoring/launches-promoting.md) 이(가) 생성됩니다.
 1. 필요한 언어 루트로 이동하여 선택합니다.
 1. 사용 **참조** 패널, 선택 **론치**.
+
+   ![promote-launch-번역](assets/promote-launch-translation.png)
+
 1. 생성된 론치를 클릭하고 를 클릭합니다. **출시 홍보**.
 
 이제 소스 페이지와 관련 언어 사본이 이동되었습니다.
