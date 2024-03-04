@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 21f39dc697a5aa3944834786a627e990e7f3ca7f
+source-git-commit: 348b82f0bd0d99eeb771aa4ed2719ee10d8cee68
 workflow-type: tm+mt
-source-wordcount: '3385'
+source-wordcount: '3464'
 ht-degree: 4%
 
 ---
@@ -461,6 +461,12 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
 
 ### AEM Forms의 알려진 문제 {#known-issues-aem-forms-6520}
+
+* AEM 6.5 Forms 서비스 팩 18(6.5.18.0) 또는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)에서 AEM 6.5 Forms 서비스 팩 20(6.5.20.0)으로 업데이트한 후 사용자에게 JSP 컴파일 오류가 발생합니다. 적응형 양식을 열거나 만들 수 없고 페이지 편집기, AEM Forms UI 및 AEM Workflow 편집기와 같은 다른 AEM 인터페이스에서 오류가 발생합니다. 다음과 유사한 오류 메시지가 표시됩니다.
+
+`Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
+
+문제 해결은 Adobe 지원 센터에 문의할 수 있습니다.
 
 * 대화형 통신에서 미리 채우기 서비스가 실패하고 null 포인터 예외가 발생합니다. (CQDOC-21355)
 
