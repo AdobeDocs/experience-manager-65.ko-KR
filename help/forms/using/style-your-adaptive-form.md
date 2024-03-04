@@ -4,9 +4,9 @@ description: 사용자 지정 테마를 만들고, 개별 구성 요소의 스�
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: a361c194c238f0f2c999abfd77ca85e7697cb7bf
 workflow-type: tm+mt
-source-wordcount: '1982'
+source-wordcount: '2038'
 ht-degree: 8%
 
 ---
@@ -185,12 +185,12 @@ ht-degree: 8%
       <td><b>값</b></td> 
      </tr> 
      <tr> 
-      <td>테두리</td> 
+      <td>경계</td> 
       <td>테두리 색상</td> 
       <td>A7A9AC</td> 
      </tr> 
      <tr> 
-      <td>테두리</td> 
+      <td>경계</td> 
       <td>테두리 반지름 </td> 
       <td> 
        <ul> 
@@ -250,7 +250,7 @@ ht-degree: 8%
      </tr> 
      <tr> 
       <td>배경</td> 
-      <td>배경색</td> 
+      <td>배경 색상</td> 
       <td>F6921E</td> 
      </tr> 
      <tr> 
@@ -259,7 +259,7 @@ ht-degree: 8%
       <td>F6921E</td> 
      </tr> 
      <tr> 
-      <td>테두리</td> 
+      <td>경계</td> 
       <td>테두리 반지름 </td> 
       <td> 
        <ul> 
@@ -350,26 +350,26 @@ ht-degree: 8%
      </tr> 
      <tr> 
       <td>배경</td> 
-      <td>배경색</td> 
+      <td>배경 색상</td> 
       <td>FFFFFF</td> 
      </tr> 
      <tr> 
-      <td>테두리</td> 
+      <td>경계</td> 
       <td>테두리 너비</td> 
       <td>1픽셀</td> 
      </tr> 
      <tr> 
-      <td>테두리</td> 
+      <td>경계</td> 
       <td>테두리 스타일</td> 
       <td>단색</td> 
      </tr> 
      <tr> 
-      <td>테두리</td> 
+      <td>경계</td> 
       <td>테두리 색상</td> 
       <td>A7A9AC</td> 
      </tr> 
      <tr> 
-      <td>테두리</td> 
+      <td>경계</td> 
       <td>테두리 반지름</td> 
       <td>7픽셀</td> 
      </tr> 
@@ -424,11 +424,11 @@ ht-degree: 8%
      </tr> 
      <tr> 
       <td>배경</td> 
-      <td>배경색</td> 
+      <td>배경 색상</td> 
       <td>F6921E</td> 
      </tr> 
      <tr> 
-      <td>테두리</td> 
+      <td>경계</td> 
       <td>테두리 색상</td> 
       <td>F6921E</td> 
      </tr> 
@@ -442,16 +442,77 @@ ht-degree: 8%
 다양한 글꼴을 사용하여 적응형 양식을 디자인할 수 있습니다. 적응형 양식을 보는 모든 장치에는 적응형 양식을 디자인하는 데 사용되는 글꼴이 없을 수 있습니다. 웹 글꼴 서비스를 사용하여 필요한 글꼴을 대상 장치에 전달할 수 있습니다.
 
 [!DNL Adobe Fonts] 는 Web Fonts 서비스입니다. 적응형 양식에서 서비스를 구성하고 사용할 수 있습니다. 사용 [!DNL Adobe Fonts] 적응형 양식에서:
+1. 찾아보기 [Adobe 글꼴 라이브러리](https://fonts.adobe.com/) 양식의 스타일을 지정할 글꼴을 선택합니다.
+<!--
+>[!NOTE]
+>
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] 는 이제 Adobe Fonts라고 하며 Creative Cloud 및 기타 구독에 포함됩니다. [자세히 알아보기](https://fonts.adobe.com/).
+> 태그나 필터를 추가하여 글꼴 목록을 구체화할 수 있습니다.
 
-1. 만들기 [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) 계정, 키트를 만들고, Myriad Pro 글꼴을 키트에 추가하고, 키트를 게시하고 키트 ID를 가져옵니다. 다음을 사용해야 합니다. [!DNL Adobe Fonts] (Web Fonts)를 입력합니다.
-1. AEM [!DNL Forms] 서버, 다음으로 이동 ![adobeexperiencemanger](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. 이제 구성 폴더를 엽니다. 구성을 이미 사용할 수 있는 경우 **[!UICONTROL 만들기]** 단추를 클릭하여 인스턴스를 만듭니다.
+1. 원하는 글꼴이 있는 경우 &lt;/> 단추를 클릭하여 웹 프로젝트에 패밀리를 추가합니다.
 
-   구성 만들기 대화 상자에서 **제목** 을 누르고 을 누릅니다. **[!UICONTROL 만들기]**. 구성 페이지로 리디렉션됩니다. 다음에서 [!UICONTROL 구성 요소 편집] 표시되는 대화 상자에서 **키트 ID** 및 클릭 **[!UICONTROL 확인]**.
+   ![select-font-from-font-libary](assets/select-font-from-font-library.png)
 
-1. 테마를 구성하여 사용 [!DNL Adobe Fonts] 구성. 작성자 인스턴스에서 을 엽니다. **[!UICONTROL 글로벌 테마]** 를 입력합니다. 테마 편집기에서 다음으로 이동 **[!UICONTROL 테마 옵션]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 구성]**. 다음에서 **[!UICONTROL Adobe Fonts 구성]** 필드에서 키트를 선택하고 **[!UICONTROL 저장]**.
+   웹 프로젝트에 글꼴 추가 대화 상자가 나타납니다.
 
-   에 추가된 글꼴 **[!UICONTROL Adobe Fonts]** 에서 선택할 수 있습니다. **[!UICONTROL 텍스트]** 모든 구성 요소의 아코디언
+   >[!NOTE]
+   >
+   > &lt;/> 버튼을 사용할 수 있는 글꼴만 웹 프로젝트에 추가할 수 있습니다.
+
+2. 웹 프로젝트의 이름을 지정합니다.
+3. 포함할 글꼴 가중치와 스타일을 선택하려면 확인란을 선택합니다.
+
+   ![글꼴 라이브러리 추가](assets/add-a-font-window.png)
+
+4. 선택 **클릭** 프로젝트를 만듭니다.
+5. 화면에서 포함 코드와 URL을 복사합니다.
+   ![포함 코드 및 URL](assets/font-add-url.png)
+
+6. 클릭 **완료** 을 클릭하여 웹 프로젝트 창을 닫습니다.
+7. AEM 인스턴스에 로그인하고 URL로 이동합니다. `http://server:port/crx/de/index.jsp#`
+8. CRXDE에 폴더 구조를 생성합니다. 예 `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
+9. 새로 만든 (으)로 이동 `clientlibs` 폴더 및 추가 `allowProxy` 및 `categories` 속성.
+10. 다음으로 이동 `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` css 폴더를 만듭니다.
+11. 생성된 CSS 폴더로 이동하여 파일을 만듭니다. 예를 들어 다음과 같이 파일을 만듭니다. `fonts.css` 포함 코드를 URL과 함께 붙여 넣습니다.
+   ![폴더 구조](/help/forms/using/assets/fonts-add-in-crxde.png)
+12. 변경 사항을 저장합니다.
+
+>[!NOTE]
+>
+> 적응형 양식에 추가된 사용자 정의 글꼴을 사용하려면 클라이언트 라이브러리 이름이에서 **[!UICONTROL 클라이언트 라이브러리 범주]** clientlib 폴더의 카테고리 옵션에 지정된 이름을 따릅니다.
+
+이제 다음 사용자 정의 글꼴 클라이언트 라이브러리를 통해 포함된 글꼴에 적응형 양식에 액세스할 수 있습니다.
+
+
+<!--
+Create Adobe Fonts Configuration
+
+1. To create a API Token, go to **login** > **API Token** > **Make me a new API token**.
+
+   ![API token](/help/forms/using/assets/fonts-api-token.png)
+
+2. Once, you click **Make me a new API token**, a new token is generated. 
+3. Copy the generated token for future use.
+4. Now login to your AEM  author instance. On the author instance, go to **[!UICONTROL Tools]**>**[!UICONTROL Cloud Services]**> **[!UICONTROL Adobe Fonts]**.
+5. Select the configuration container and click **Create**. **[UICONTROL Create Adobe Fonts Configuration]** screen appears.
+    ![API token](/help/forms/using/adobe-font-configuration-screen.png)
+
+6. Spceify the name and paste the API token in the **[!UICONTROL Kit ID]** textbox.
+7. Click **Create**.
+
+
+
+The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.
+1. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. 
+2. In the **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
+
+
+1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
+1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
+
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
+
+
