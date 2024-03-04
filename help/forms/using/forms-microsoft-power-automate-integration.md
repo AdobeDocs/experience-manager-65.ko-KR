@@ -3,8 +3,7 @@ title: 적응형 양식 데이터를 Microsoft&reg; Power Automate에 연결하�
 description: 적응형 양식 데이터를 Microsoft&reg; Power Automate에 연결하고 전송하는 단계별 안내서입니다.
 keywords: 적응형 Forms Microsoft Power Automate, Microsoft Power Automate에 적응형 Forms 데이터 제출
 feature: Adaptive Forms, Foundation Components
-exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 15%
@@ -85,7 +84,7 @@ ht-degree: 15%
 
    >[!NOTE]
    >
-   적응형 양식을 만들 때에서 컨테이너 이름을 지정합니다 **[!UICONTROL 구성 컨테이너]** 필드.
+   >적응형 양식을 만들 때에서 컨테이너 이름을 지정합니다 **[!UICONTROL 구성 컨테이너]** 필드.
 
 1. 구성 페이지에서 을 선택합니다 **[!UICONTROL 만들기]** 만들려면 [!DNL Microsoft®® Power Automate Flow Service] AEM Forms의 구성
 1. 다음에서 **[!UICONTROL Microsoft®® Power Automate용 Dataverse 서비스 구성]** 페이지, 지정 **[!UICONTROL 클라이언트 ID]** (애플리케이션 ID라고도 함), **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL OAuth URL]** 및 **[!UICONTROL 동적 환경 URL]**. 의 클라이언트 ID, 클라이언트 암호, OAuth URL 및 동적 환경 URL 사용 [Microsoft® Azure Active Directory 응용 프로그램](#ms-power-automate-application) 이전 섹션에서 을(를) 만들었습니다. Microsoft® Azure Active Directory 애플리케이션 UI의 끝점 옵션을 사용하여 OAuth URL 찾기
@@ -100,7 +99,7 @@ ht-degree: 15%
 
    >[!NOTE]
    >
-   적응형 양식을 만들 때에서 컨테이너 이름을 지정합니다 **[!UICONTROL 구성 컨테이너]** 필드.
+   >적응형 양식을 만들 때에서 컨테이너 이름을 지정합니다 **[!UICONTROL 구성 컨테이너]** 필드.
 1. 구성 페이지에서 을 선택합니다 **[!UICONTROL 만들기]** 만들려면 [!DNL Microsoft®® Power Automate Flow Service] AEM Forms의 구성
 1. 다음에서 **[!UICONTROL Microsoft®® Power Automate용 Dataverse 구성]** 페이지, 지정 **[!UICONTROL 클라이언트 ID]** (애플리케이션 ID라고도 함), **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL OAuth URL]** 및 **[!UICONTROL 동적 환경 URL]**. 클라이언트 ID, 클라이언트 암호, OAuth URL 및 Dynamics 환경 ID를 사용합니다. Microsoft® Azure Active Directory 응용 프로그램 UI의 끝점 옵션을 사용하여 OAuth URL을 찾습니다. 를 엽니다. [내 흐름](https://us.flow.microsoft.com) 내 플로우 를 연결하고 선택합니다. URL에 나열된 ID를 Dynamics 환경 ID로 사용합니다.
 1. 선택 **[!UICONTROL 연결]**. 메시지가 표시되면 Microsoft® Azure 계정에 로그인합니다. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
@@ -126,7 +125,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >
-적응형 양식을 제출하기 전에 `When an HTTP Request is received` 아래 JSON 스키마로 트리거가 Power Automate 흐름에 추가됩니다.
+> 적응형 양식을 제출하기 전에 `When an HTTP Request is received` 아래 JSON 스키마로 트리거가 Power Automate 흐름에 추가됩니다.
 
 ```
         {
