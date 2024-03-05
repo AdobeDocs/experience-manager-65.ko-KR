@@ -2,7 +2,7 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 7b920927fe400c05f6c7a744d4cb7366db0cae86
+source-git-commit: 70f52515fc877ad5f20e14c2a26a934d3dcdfe01
 workflow-type: tm+mt
 source-wordcount: '3486'
 ht-degree: 4%
@@ -381,7 +381,6 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
   * Paste the correct URL directly into the browser.
 
        `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html` -->
-
 
 
 * **Oak 관련**
