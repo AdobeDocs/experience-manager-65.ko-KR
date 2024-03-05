@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
+source-git-commit: 7b920927fe400c05f6c7a744d4cb7366db0cae86
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3486'
 ht-degree: 4%
 
 ---
@@ -470,11 +470,11 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
    1. 운영 체제용 핫픽스를 다운로드합니다.
 
-   * [Microsoft Windows용 핫픽스](/help/release-notes/assets/Hotfix-windows.zip)
-   * [Linux용 핫픽스](/help/release-notes/assets/Hotfix-Linux.zip)
-   * [Apple macOS용 핫픽스](/help/release-notes/assets/Hotfix-osx.zip)
+      * [Microsoft Windows용 핫픽스](/help/release-notes/assets/Hotfix-windows.zip)
+      * [Linux용 핫픽스](/help/release-notes/assets/Hotfix-Linux.zip)
+      * [Apple macOS용 핫픽스](/help/release-notes/assets/Hotfix-osx.zip)
 
-   1. 패키지 관리자를 통해 패키지(.zip)를 업로드하고 설치합니다.
+   1. 를 통해 패키지(.zip) 업로드 및 설치 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
 
 * 대화형 통신에서 미리 채우기 서비스가 실패하고 null 포인터 예외가 발생합니다. (CQDOC-21355)
 
