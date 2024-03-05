@@ -2,9 +2,9 @@
 title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 5f95281130f0f2cac6d115b59b828946c2f70d33
+source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
 workflow-type: tm+mt
-source-wordcount: '3462'
+source-wordcount: '3485'
 ht-degree: 4%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 4%
    * SHA384 다이제스트 알고리즘을 사용한 ECDSA 타원 곡선 P384
    * SHA512 다이제스트 알고리즘을 사용한 ECDSA 타원 곡선 P512
 * **Forms Designer용 Windows 11과의 원활한 호환성**: 이제 AEM Forms Designer에서 Windows 11을 지원하여 원활한 설치 및 운영을 보장합니다. 사용자는 Forms Designer를 다시 설치하거나 호환성 문제에 대한 걱정 없이 Windows 11로 자신 있게 업그레이드할 수 있으므로 워크플로우가 중단되지 않습니다.
-* **AEM Forms Designer에서 사용자 지정 &quot;캡션&quot; 역할을 사용하여 접근성을 개선했습니다**: 이제 AEM Forms Designer에 맞춤형 캡션 요소로 XDP를 만들 수 있는 &quot;캡션&quot;이라는 사용자 지정 접근성 역할이 포함됩니다. 이 기능을 사용하면 사용자가 사용자 정의 캡션을 문서 디자인에 통합하여 포괄성과 사용자 경험을 향상시킬 수 있으므로 접근성을 향상시킬 수 있습니다.
+* **AEM Forms Designer에서 사용자 지정 &quot;캡션&quot; 역할을 사용하여 접근성을 개선했습니다**: 이제 AEM Forms Designer에는 &quot;캡션&quot;이라는 사용자 정의 접근성 역할이 포함되어 사용자가 개인화된 캡션 요소로 XDP를 만들 수 있습니다. 이 기능을 사용하면 사용자가 사용자 정의 캡션을 문서 디자인에 통합하여 포괄성과 사용자 경험을 향상시킬 수 있으므로 접근성을 향상시킬 수 있습니다.
 
 <!-- ### [!DNL Forms]
 
@@ -466,8 +466,15 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
   `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
 
-  Adobe 지원 담당자에게 연락하여 문제를 해결할 수 있습니다.
+  문제를 해결하려면
 
+   1. 운영 체제용 핫픽스를 다운로드합니다.
+
+   * [Microsoft Windows용 핫픽스](/help/release-notes/assets/Hotfix-windows.zip)
+   * [Linux용 핫픽스](/help/release-notes/assets/Hotfix-Linux.zip)
+   * [Apple macOS용 핫픽스](/help/release-notes/assets/Hotfix-osx.zip)
+
+   1. 패키지 관리자를 통해 패키지(.zip)를 업로드하고 설치합니다.
 
 * 대화형 통신에서 미리 채우기 서비스가 실패하고 null 포인터 예외가 발생합니다. (CQDOC-21355)
 
