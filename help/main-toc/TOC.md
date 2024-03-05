@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: e39c52bc658e3a286272d1c94106b17a2f5579ad
 workflow-type: tm+mt
-source-wordcount: '7348'
+source-wordcount: '7355'
 ht-degree: 22%
 
 ---
@@ -73,6 +73,7 @@ ht-degree: 22%
    + [컨텐츠 처리 필터](/help/sites-administering/content-disposition-filter.md)
    + [AEM 6.5의 사용자 지정 사용자 그룹 매핑](/help/sites-administering/cug-mapping.md)
    + [Same Site 쿠키 지원](/help/sites-administering/same-site-cookie-support.md)
+   + [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Sites {#sites}
    + 작성 {#authoring}
       + AEM 작성을 위한 필수 작업, 도구 및 개념 {#essentials}
@@ -510,7 +511,7 @@ ht-degree: 22%
       + [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md)
       + [대화형 통신 소개](/help/forms/using/interactive-communications-overview.md)
       + [양식 관리 소개](/help/forms/using/introduction-managing-forms.md)
-      + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
+      + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko-KR)
       + 자습서: 첫 번째 적응형 양식 만들기 {#create-first-adaptive-form}
          + [자습서: 첫 번째 적응형 양식 만들기](/help/forms/using/create-your-first-adaptive-form.md)
          + [자습서: 적응형 양식 만들기](/help/forms/using/create-adaptive-form.md)
@@ -1330,7 +1331,7 @@ ht-degree: 22%
          + [벌크 편집기 개발](/help/sites-developing/dev-bulk-editor.md)
          + [보고서 개발](/help/sites-developing/dev-reports.md)
       + 구성 요소{#components}
-         + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+         + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
          + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/style-system.html)
          + [구성 요소 개요](/help/sites-developing/components.md)
          + [AEM 구성 요소 - 기본 사항](/help/sites-developing/components-basics.md)
