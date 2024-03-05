@@ -2,7 +2,7 @@
 title: AEM Forms용 핫픽스
 description: AEM Forms용 핫픽스를 다운로드하고 설치하는 방법에 대해 설명합니다.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 1%
@@ -50,7 +50,7 @@ ht-degree: 1%
      </td>
     <td>
     <ul>
-    <li> OOTB 스크리블 서명 구성 요소가 적응형 양식의 미리 보기에 대해 렌더링되지 않습니다. (FORMS-12073).</li>
+    <li> 즉시 사용 가능한 스크리블 서명 구성 요소가 적응형 양식의 미리 보기에 대해 렌더링되지 않습니다. (FORMS-12073).</li>
     </ul>
     </td>    
    </tr>

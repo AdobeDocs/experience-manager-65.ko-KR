@@ -5,7 +5,7 @@ content-type: reference
 docset: aem65
 feature: Release Information
 role: User, Admin
-source-git-commit: 4fab3f80e01c2b7c3e4ebdc4bffdedb6f5f39d11
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '2334'
 ht-degree: 28%
@@ -37,7 +37,7 @@ ht-degree: 28%
 
 * **[64비트 버전의 AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: 64비트 버전의 AEM Forms Designer는 향상된 성능, 확장성, 메모리 관리를 제공하여 양식 생성 환경을 향상시킵니다. 64비트 아키텍처를 사용하면 더 크고 복잡한 프로젝트를 간단하게 처리하여 원활한 워크플로 디자인과 최적화된 효율성을 보장할 수 있습니다. 이 혁신적인 릴리스를 통해 양식 디자인 기능을 개선하고 AEM Forms Designer를 진전시킬 수 있습니다.
 
-* **[Microsoft® SharePoint 목록과 적응형 Forms 연결](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms은 SharePoint의 목록 기능을 사용할 수 있도록 양식 데이터를 SharePoint 목록에 직접 제출할 수 있는 OOTB 통합을 제공합니다. Microsoft® SharePoint 목록을 양식 데이터 모델에 대한 데이터 소스로 구성하고 양식 데이터 모델을 사용하여 제출 제출 액션을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
+* **[Microsoft® SharePoint 목록과 적응형 Forms 연결](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms은 SharePoint의 목록 기능을 사용할 수 있도록 양식 데이터를 SharePoint 목록에 바로 제출할 수 있는 획기적인 통합을 제공합니다. Microsoft® SharePoint 목록을 양식 데이터 모델에 대한 데이터 소스로 구성하고 양식 데이터 모델을 사용하여 제출 제출 액션을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
 
 * **[적응형 양식 조각에 대한 기록 문서 속성 구성 지원](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: 이제 적응형 양식 편집기에서 적응형 양식 단편 및 해당 필드를 쉽게 사용자 지정할 수 있습니다.
 
