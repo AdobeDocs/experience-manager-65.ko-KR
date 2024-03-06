@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2471'
-ht-degree: 2%
+source-wordcount: '2403'
+ht-degree: 0%
 
 ---
 
@@ -267,7 +267,7 @@ Apache Sling 동기화 에이전트 구성을 구성하려면 다음 작업을 �
 
    `system`
 
-   `rep:cache` (고정 세션을 사용하므로 이 노드를 다른 게시자에게 동기화할 필요가 없습니다.)
+   `rep:cache` 고정 세션이 사용되므로 이 노드를 다른 게시자에게 동기화할 필요가 없습니다.
 
    ![사용자 동기화 목록](assets/user-sync-listner.png)
 

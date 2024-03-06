@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ AEM에서 인식하지 못하는 플랫폼의 경우 AEM 개발자가 UI를 확�
 
 Apple AppStore에서 배포를 위해 애플리케이션을 제출하려면 추가 메타데이터가 필요합니다. iOS 메타데이터 섹션은 Apple의 iTMSTransporter 도구에서 관련 Apple 개발자 계정에 메타데이터를 게시하는 데 사용할 수 있는 필수 정보를 수집하려고 합니다.
 
-Apple 관련 메타데이터를 가져오려면 먼저 애플리케이션을 만들어야 합니다 [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). 애플리케이션을 만들 때 Apple은 메타데이터를 확인하고 itunesconnect.apple.com에 업로드하기 위해 Apple iTMSTransporter 도구를 사용하려는 경우 iOS 메타데이터 섹션에 필요한 메타데이터를 생성합니다. 수집할 메타데이터만 가져오려면 iOS 관련 메타데이터를 작성할 필요가 없습니다. iOS과 일반 메타데이터를 병합할 메타데이터를 내보내고 모든 스크린샷을 언제든지 다운로드할 수 있는 zip 파일로 수집할 수 있습니다.
+Apple 관련 메타데이터를 가져오려면 먼저 애플리케이션을 만들어야 합니다 [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). 애플리케이션을 만들 때 Apple은 메타데이터를 확인하고 itunesconnect.apple.com에 업로드하기 위해 Apple iTMSTransporter 도구를 사용하려는 경우 iOS 메타데이터 섹션에 필요한 메타데이터를 생성합니다. 수집할 메타데이터만 가져오려는 경우 iOS 관련 메타데이터를 작성할 필요가 없습니다. iOS과 일반 메타데이터를 병합할 메타데이터를 내보내고 모든 스크린샷을 언제든지 다운로드할 수 있는 zip 파일로 수집할 수 있습니다.
 
 다운로드한 zip 파일에는 metadata.xml을 검사할 수 있는 itmsp 파일이 포함되어 있습니다. itmsp 파일에는 연결된 모든 스크린샷과 함께 내보낸 메타데이터(metadata.xml 파일 내)가 포함되어 있습니다.
 

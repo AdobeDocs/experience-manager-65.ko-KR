@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1228'
 ht-degree: 4%
 
 ---
@@ -132,7 +132,7 @@ XDP 파일에서 적응형 양식으로 복사된 모든 속성은 작성자가 
 
 >[!NOTE]
 >
->잘못된 바인딩(잘못된 필드)이 있는 적응형 양식의 필드 `bindRef` 편집 대화 상자의 값은 삭제된 필드로도 간주됩니다. 작성자가 이러한 오류를 수정하지 않고 적응형 양식을 게시하면 필드가 일반 바인딩 해제된 적응형 양식 필드로 처리되고 출력 XML 파일의 바인딩 해제된 섹션에 포함됩니다.
+>잘못된 바인딩(잘못된 필드)이 있는 적응형 양식의 필드 `bindRef` 편집 대화 상자의 값은 삭제된 필드로도 간주됩니다. 작성자가 이러한 오류를 수정하지 않고 적응형 양식을 게시하지 않으면 필드는 일반 언바인딩된 적응형 양식 필드로 처리되며 출력 XML 파일의 언바인딩된 섹션에 포함됩니다.
 
 ## 다운로드 {#downloads}
 

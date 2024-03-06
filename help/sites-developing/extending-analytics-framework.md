@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%
@@ -59,7 +59,7 @@ s.doPlugins=s_doPlugins;
 
 ## Adobe Analytics 속성 구성 {#configuring-adobe-analytics-properties}
 
-Adobe Analytics 내에는 프레임워크에서 구성할 수 있는 몇 가지 사전 정의된 변수가 있습니다. 다음 **charset**, **cookieLife**, **currencyCode** 및 **trackInlineStats** 변수는에 포함됩니다. **일반 분석 설정** 기본적으로 나열됩니다.
+Adobe Analytics 내에는 프레임워크에서 구성할 수 있는 몇 가지 사전 정의된 변수가 있습니다. 다음 **charset**, **cookieLife**, **currencyCode**, 및 **trackInlineStats** 변수는에 포함됩니다. **일반 분석 설정** 기본적으로 나열됩니다.
 
 ![aa-22](assets/aa-22.png)
 
@@ -105,7 +105,7 @@ s.trackingServerSecure = "xxxxxxx.net";
 
 >[!CAUTION]
 >
->이 목록에 있는 변수 중 일부는 **필수** Adobe Analytics 호출이 올바르게 작동하도록 하는 경우 (예: **currencyCode**, **charSet**)
+>이 목록에 있는 변수 중 일부는 **필수** Adobe Analytics 호출이 올바르게 작동하는 경우(예: **currencyCode**, **charSet**).
 >
 >따라서 프레임워크 자체에서 제거되더라도 Adobe Analytics 호출이 수행될 때 기본값으로 계속 연결됩니다.
 

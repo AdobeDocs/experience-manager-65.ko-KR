@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1798'
-ht-degree: 74%
+ht-degree: 73%
 
 ---
 
@@ -107,7 +107,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
    에뮬레이터 도구 모음은 추가 레이아웃 옵션을 표시합니다.
 
-   * **디바이스 회전** - 디바이스를 세로(수직) 방향에서 가로(수평) 방향으로 또는 그 반대로 회전할 수 있습니다.
+   * **장치 회전** - 장치를 세로(수직) 방향에서 가로(수평) 방향으로 역으로 회전할 수 있습니다.
 
      ![장치 회전](do-not-localize/screen_shot_2018-03-23at084612.png) ![장치 회전](do-not-localize/screen_shot_2018-03-23at084637.png)
 

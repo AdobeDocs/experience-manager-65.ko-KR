@@ -6,9 +6,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2043'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라
 * `:hierarchyType`: 리소스의 계층 구조 유형입니다. 다음 `PageModelManager` 는 현재 페이지 유형을 지원합니다
 
 * `:items`: 현재 리소스의 하위 콘텐츠 리소스(중첩된 구조, 컨테이너에만 있음)
-* `:itemsOrder`: 순서가 지정된 하위 목록입니다. JSON 맵 개체는 필드의 순서를 보장하지 않습니다. 맵과 현재 배열을 모두 가짐으로써 API 소비자는 두 구조의 이점을 얻을 수 있습니다
+* `:itemsOrder`: 순서가 지정된 하위 목록입니다. JSON 맵 개체는 해당 필드의 순서를 보장하지 않습니다. 맵과 현재 배열을 모두 가짐으로써 API 소비자는 두 구조의 이점을 얻을 수 있습니다
 * `:path`: 항목의 콘텐츠 경로(페이지를 나타내는 항목에 있음)
 
 참조: [AEM Content Services 시작](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/content-services-tutorial-use.html)
@@ -152,7 +152,7 @@ Component Decorator는 페이지 편집기에서 예상하는 일련의 데이�
 
 다음 `Page` 구성 요소가 `Container` 구성 요소. 컨테이너는 하위 페이지를 포함한 하위 구성 요소를 포함하고 렌더링하기 위한 구성 요소입니다. 이를 위해 컨테이너는 다음을 반복합니다. `:itemsOrder`, `:items`, 및 `:children` 모델의 속성입니다. 다음 `Page` 구성 요소는 의 저장소에서 하위 구성 요소를 동적으로 가져옵니다. [구성 요소 매핑](/help/sites-developing/spa-blueprint.md#componentmapping) 라이브러리입니다. 다음 `Page` 은 하위 구성 요소를 인스턴스화합니다.
 
-### 응답형 격자 {#responsive-grid}
+### 반응형 그리드 {#responsive-grid}
 
 응답형 격자 구성 요소는 컨테이너입니다. 여기에는 해당 열을 나타내는 모델 공급자의 특정 변형이 포함되어 있습니다. 반응형 그리드 및 해당 열은 프로젝트 구성 요소의 외부 HTML 요소를 모델에 포함된 특정 클래스 이름으로 장식하는 역할을 합니다.
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 3%
+source-wordcount: '913'
+ht-degree: 2%
 
 ---
 
@@ -73,7 +73,7 @@ AEM Brackets 확장은 Brackets 버전 1.0 이상을 지원합니다.
 
 >[!NOTE]
 >
->콘텐츠 패키지가 있는 고유한 프로젝트가 없는 경우 다음을 시도해 볼 수 있습니다. [HTL TodoMVC 예제](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). GitHub에서 **ZIP 다운로드**&#x200B;를 클릭하고 로컬에서 파일을 추출한 다음 위의 지침에 따라 `jcr_root` 대괄호 안에 있는 폴더입니다. 그런 다음 아래 단계에 따라 **프로젝트 설정**, 그리고 마지막으로 다음을 수행하여 전체 패키지를 AEM 개발 인스턴스에 업로드합니다. **콘텐츠 패키지 내보내기** 전체 컨텐츠 패키지 동기화 섹션의 지침에 따라 수행합니다.
+>콘텐츠 패키지가 있는 프로젝트가 없는 경우 다음을 시도해 볼 수 있습니다. [HTL TodoMVC 예제](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). GitHub에서 **ZIP 다운로드**&#x200B;를 클릭하고 로컬에서 파일을 추출한 다음 위의 지침에 따라 `jcr_root` 대괄호 안에 있는 폴더입니다. 그런 다음 아래 단계에 따라 **프로젝트 설정**, 그리고 마지막으로 다음을 수행하여 전체 패키지를 AEM 개발 인스턴스에 업로드합니다. **콘텐츠 패키지 내보내기** 전체 컨텐츠 패키지 동기화 섹션의 지침에 따라 수행합니다.
 >
 >이러한 단계를 수행한 후에는 `/content/todo.html` AEM 개발 인스턴스의 URL을 사용하며, Brackets의 코드에 대한 수정을 시작하고 웹 브라우저에서 새로 고침을 수행한 후 변경 사항이 AEM 서버에 즉시 동기화되는 방법을 확인할 수 있습니다.
 
@@ -83,7 +83,7 @@ AEM 개발 인스턴스와 콘텐츠를 동기화하려면 프로젝트 설정�
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
-프로젝트 설정을 통해 다음을 정의할 수 있습니다.
+프로젝트 설정을 사용하여 다음을 정의할 수 있습니다.
 
 1. 서버 URL(예: `http://localhost:4502`)
 1. 유효한 HTTPS 인증서가 없는 서버를 허용할지 여부(필요한 경우 선택하지 않음)
@@ -146,7 +146,7 @@ AEM Brackets Extension은 HTL 속성 및 표현식을 쉽게 작성할 수 있�
 
 표현식 내 `${}`, 일반 변수 이름은 자동으로 완성됩니다.
 
-## 자세한 내용 {#more-information}
+## 추가 정보 {#more-information}
 
 AEM Brackets 확장은 GitHub에서 다음을 통해 호스팅되는 오픈 소스 프로젝트입니다. [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud) apache 라이센스 버전 2.0에서 조직:
 

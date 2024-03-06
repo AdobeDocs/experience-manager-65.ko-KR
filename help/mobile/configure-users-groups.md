@@ -6,10 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: 9f814204-8cd4-4ba9-9e25-3ff1b25c1955
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 0%
+source-wordcount: '614'
+ht-degree: 1%
 
 ---
 
@@ -101,7 +101,7 @@ app-admins 그룹의 구성원은 app-authors에 포함된 것과 동일한 권�
 
    >[!CAUTION]
    >
-   >/var/contentsync 액세스가 OOTB에 거부되었습니다.
+   >/var/contentsync 액세스가 즉시 거부됩니다.
    >
    >READ 권한을 생략하면 빈 업데이트 패키지가 빌드 및 복제될 수 있습니다.
 

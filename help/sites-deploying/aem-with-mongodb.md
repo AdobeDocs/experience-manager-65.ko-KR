@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6184'
+source-wordcount: '6185'
 ht-degree: 0%
 
 ---
@@ -355,7 +355,7 @@ WiredTiger 내부 캐시의 크기를 조정하려면 [storage.wiredTiger.engine
 
 NUMA(Non-Uniform Memory Access)를 사용하면 커널이 프로세서 코어에 메모리를 매핑하는 방법을 관리할 수 있습니다. 이 프로세스는 코어가 필요한 데이터에 액세스할 수 있도록 메모리 액세스를 더 빠르게 만들려고 시도하지만 NUMA는 읽기를 예측할 수 없어 추가적인 지연을 초래하는 MMAP을 방해합니다. 따라서 다음에 대해 NUMA를 비활성화해야 합니다. `mongod` 모든 운영 체제에서 처리.
 
-본질적으로, NUMA 아키텍처에서 메모리는 CPU에 연결되고, CPU는 버스에 연결된다. SMP 또는 UMA 아키텍처에서 메모리는 버스에 연결되고 CPU에 의해 공유된다. 스레드는 NUMA CPU에 메모리를 할당할 때 정책에 따라 할당합니다. 기본적으로 스레드의 로컬 CPU에 연결된 메모리를 할당하려면 사용 가능한 CPU가 없으면 이 때 더 높은 비용으로 사용 가능한 CPU의 메모리를 사용합니다. 일단 할당되면, 메모리는 CPU 사이에서 이동하지 않는다. 할당은 상위 스레드에서 상속된 정책에 의해 수행되며, 상위 스레드는 궁극적으로 프로세스를 시작한 스레드입니다.
+본질적으로, NUMA 아키텍처에서 메모리는 CPU에 연결되고, CPU는 버스에 연결된다. SMP 또는 UMA 아키텍처에서 메모리는 버스에 연결되고 CPU에 의해 공유된다. 스레드는 NUMA CPU에 메모리를 할당할 때 정책에 따라 할당합니다. 기본적으로 스레드의 로컬 CPU에 연결된 메모리를 할당하려면 사용 가능한 CPU가 없으면 이 때 더 높은 비용으로 사용 가능한 CPU의 메모리를 사용합니다. 일단 할당되면, 메모리는 CPU들 사이에서 이동하지 않는다. 할당은 상위 스레드에서 상속된 정책에 의해 수행되며, 상위 스레드는 궁극적으로 프로세스를 시작한 스레드입니다.
 
 컴퓨터를 멀티코어 균일 메모리 아키텍처로 보는 많은 데이터베이스에서 이 시나리오는 먼저 초기 CPU를 가득 채우고 나중에 보조 CPU를 채우는 것으로 이어집니다. 특히 중앙 스레드가 메모리 버퍼를 할당하는 경우 더욱 그렇습니다. 해결 방법은 를 시작하는 데 사용되는 기본 스레드의 NUMA 정책을 변경하는 것입니다. `mongod` 다음 명령을 실행하여 처리합니다.
 
@@ -543,7 +543,7 @@ echo "{nThreads:32,fileSizeMB:1000,r:true,mmf:true}" | mongoperf
 
 >[!NOTE]
 >
-테스트를 수행할 때 운영 체제 모니터링 시스템에서 해당 가상 시스템에 대한 I/O 사용 통계를 확인합니다. 입출력 읽기에 대해 100%보다 낮은 값을 표시하는 경우 가상 시스템에 문제가 있을 수 있습니다.
+>테스트를 수행할 때 운영 체제 모니터링 시스템에서 해당 가상 시스템에 대한 I/O 사용 통계를 확인합니다. 입출력 읽기에 대해 100%보다 낮은 값을 표시하는 경우 가상 시스템에 문제가 있을 수 있습니다.
 
 **기본 MongoDB 인스턴스의 쓰기 성능 테스트**
 
@@ -654,7 +654,7 @@ CSP를 사용하면 정책을 미세 조정할 수 있습니다. 그러나 복�
 
 >[!NOTE]
 >
-이 작동 방식에 대한 자세한 내용은 [컨텐츠 보안 정책의 OWASP 페이지](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>이 작동 방식에 대한 자세한 내용은 [컨텐츠 보안 정책의 OWASP 페이지](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### 크기 조정 {#sizing}
 
@@ -678,4 +678,4 @@ AEM이 MongoMK 지속성 관리자 배포에서 실행 중인 경우, [페이지
 
 >[!NOTE]
 >
-다음을 참조하십시오. [MongoDB 설명서](https://docs.mongodb.com/manual/reference/limits/) 따라서 MongoDB의 알려진 제한 사항과 임계값을 숙지할 수 있습니다.
+>다음을 참조하십시오. [MongoDB 설명서](https://docs.mongodb.com/manual/reference/limits/) 따라서 MongoDB의 알려진 제한 사항과 임계값을 숙지할 수 있습니다.

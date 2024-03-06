@@ -1,13 +1,13 @@
 ---
 title: Lightbox를 개인 이미지 갤러리로 사용
-description: Adobe Experience Manager Assets에서 개인 이미지 갤러리로서의 Lightbox에 대해 알아봅니다.]
+description: Adobe Experience Manager Assets에서 개인 이미지 갤러리로서 Lightbox에 대해 알아보십시오.]
 contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions
 exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Lightbox는 자산에 쉽게 액세스할 수 있는 특별한 유형의 컬렉�
 
    >[!NOTE]
    >
-   >Lightbox는 컬렉션과 유사하지만 컬렉션에서 일반적으로 수행하는 모든 작업을 수행할 수는 없습니다. 예를 들어 Lightbox에 대한 설정을 삭제, 공유 또는 볼 수 없습니다. 또한 다른 컬렉션에 추가할 수 없습니다. 그러나 Lightbox 내에서 에셋을 편집할 수 있습니다.
+   >Lightbox는 컬렉션과 유사하지만 컬렉션에서 일반적으로 수행하는 모든 작업을 수행할 수는 없습니다. 예를 들어 Lightbox에 대한 설정을 삭제, 공유 또는 볼 수 없습니다. 또한 다른 컬렉션에 추가할 수도 없습니다. 그러나 Lightbox 내에서 에셋을 편집할 수 있습니다.
 
 ## Lightbox에서 자산 제거 {#removing-assets-from-lightbox}
 

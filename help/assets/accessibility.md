@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1924'
-ht-degree: 2%
+source-wordcount: '1898'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +36,7 @@ Possible topics to cover in this article are below.
 
 [!DNL Experience Manager] 는 다음 표준에 대한 다양한 수준의 지원을 제공합니다.
 
-* [웹 콘텐츠 접근성 지침(WCAG) 2.1](https://www.w3.org/TR/WCAG/).
+* [웹 컨텐츠 액세스 가능성 지침(WCAG) 2.1](https://www.w3.org/TR/WCAG/).
 * [회생법 제508조 개정](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
 * [Accessibility Initiative - W3C에서 제공하는 WAI-ARIA(Accessible Rich Internet Applications)](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
@@ -70,9 +70,9 @@ Possible topics to cover in this article are below.
 
 <!-- TBD items:
 
-* The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
-* How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’. What about setting preferences and impersonating a user?
-* Using the [!DNL Experience Manager] tag browser and operating the options like delete tag? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
+* The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
+* How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
+* Using the [!DNL Experience Manager] tag browser and operating the options like delete tag? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
 
@@ -91,7 +91,7 @@ Possible topics to cover in this article are below.
 | [!DNL Assets] 콘솔 | `Alt + 3` | 표시 [!UICONTROL 타임라인] 선택한 에셋. |
 | [!DNL Assets] 콘솔 | `Alt + 4` | 선택한 자산의 라이브 카피 참조를 엽니다. |
 | [!DNL Assets] 콘솔 | `Alt + 5` | 선택한 폴더에서 검색 및 검색을 시작합니다. |
-| 에셋 또는 폴더가 선택되었습니다. | 백스페이스 | 선택한 에셋 또는 폴더를 삭제합니다. |
+| 에셋 또는 폴더가 선택되었습니다. | 백스페이스키 | 선택한 에셋 또는 폴더를 삭제합니다. |
 | 에셋 또는 폴더가 선택되었습니다. | `p` | 선택한 자산의 속성 페이지를 엽니다. |
 | 에셋 또는 폴더가 선택되었습니다. | `e` | 선택한 자산을 편집합니다. |
 | 에셋 또는 폴더가 선택되었습니다. | `m` | 선택한 자산을 이동합니다. |
@@ -131,7 +131,7 @@ In [!DNL Experience Manager] header section, when navigating in browse mode, scr
   * The Searching Help status message that is displayed when user enters a search string in Search for Help field under Help option
   * The error message if incorrect value is entered in Impersonate as field under User option and focus correctly moves to the text field (NPR-33804).
 
-Review CQ-4282133 before adding - Close option in a coral-dialog wasn't accessible through keyboard, due to which user cannot trigger close option through keyboard press in version preview dialog. After fix, user can close dialog through close option using keyboard.
+Review CQ-4282133 before adding - Close option in a coral-dialog was not accessible through keyboard, due to which user cannot trigger close option through keyboard press in version preview dialog. After fix, user can close dialog through close option using keyboard.
 
 * CQ-4273122 - Assets of video/audio type will have aria-label in format "Multimedia player: <Title>" so users relying on screen-reader will get to know that they are video/audio assets.
 -->

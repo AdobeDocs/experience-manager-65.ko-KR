@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 업그레이드 디자인 {#design-for-upgrades}
 
-OOTB 비헤이비어를 확장할 때는 업그레이드를 염두에 두는 것이 중요합니다. 항상 /apps 디렉토리에 사용자 정의를 적용하고 /libs 디렉토리에 있는 해당 노드의 맨 위에 오버레이하거나 sling:resourceSuperType을 사용하여 기본 동작을 확장합니다. 새 AEM 버전을 지원하려면 일부 수정이 필요할 수 있지만, 이 방법을 따를 경우 새 버전이 사용자 정의를 덮어쓰면 안 됩니다.
+기본 동작을 확장할 때는 업그레이드를 염두에 두는 것이 중요합니다. 항상 /apps 디렉토리에 사용자 정의를 적용하고 /libs 디렉토리에 있는 해당 노드의 맨 위에 오버레이하거나 sling:resourceSuperType을 사용하여 기본 동작을 확장합니다. 새 AEM 버전을 지원하려면 일부 수정이 필요할 수 있지만, 이 방법을 따를 경우 새 버전이 사용자 정의를 덮어쓰면 안 됩니다.
 
 ### 가능한 경우 템플릿 및 구성 요소 재사용 {#reuse-template-and-components-when-possible}
 
@@ -51,7 +51,7 @@ SOLID는 다음과 같이 준수해야 하는 5가지 건축 원칙을 설명하
 
 ### 자체 모듈에서 스파이크 구현 {#implement-spikes-in-their-own-modules}
 
-스파이크와 테스트 코드는 모든 애자일 소프트웨어 구현의 일부입니다. 그러나 적절한 수준의 감독 없이 프로덕션 코드 베이스에 도달하지 않도록 하려는 경우 따라서 스파이크는 자체 모듈에서 생성하는 것이 좋습니다.
+스파이크와 테스트 코드는 모든 애자일 소프트웨어 구현의 일부입니다. 그러나 적절한 감독 수준 없이 프로덕션 코드 베이스에 도달하지 않도록 하려는 경우 따라서 스파이크는 자체 모듈에서 생성하는 것이 좋습니다.
 
 ### 자체 모듈에서 데이터 마이그레이션 스크립트 구현 {#implement-data-migration-scripts-in-their-own-module}
 

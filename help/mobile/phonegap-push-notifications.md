@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3212'
+source-wordcount: '3156'
 ht-degree: 1%
 
 ---
@@ -169,7 +169,7 @@ Amazon SNS를 사용하지 않으려면 이 단계를 건너뛸 수 있습니다
    <table>
     <tbody>
      <tr>
-     <td><p> </p> <p>{</p> <p> "버전": "2012-10-17",</p> <p> "구문": [</p> <p> {</p> <p> "작업": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Subscribe"</p> <p> ],</p> <p> "효과": "허용",</p> <p> "리소스": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
+     <td><p> </p> <p>{</p> <p> "버전": "2012-10-17",</p> <p> "문": [</p> <p> {</p> <p> "작업": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Subscribe"</p> <p> ],</p> <p> "효과": "허용",</p> <p> "리소스": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
      </tr>
     </tbody>
     </table>
@@ -289,7 +289,7 @@ PhoneGap을 사용하여 앱을 빌드하고 배포하는 방법에는 두 가�
 1. 알림 보내기
 
    * 앱 대시보드에서 푸시 알림 타일을 찾습니다.
-   * 알림을 선택하거나 오른쪽 하단에 있는 세부 정보 버튼( )을 클릭합니다. . .) 알림의 목록을 표시합니다. 이 목록은 알림을 전송할 준비가 되었는지, 이미 전송되었는지 또는 전송 중 오류가 발생했는지 여부도 표시합니다.
+   * 알림을 선택하거나 오른쪽 하단에 있는 세부 정보 버튼을 클릭합니다(. . .) 알림의 목록을 표시합니다. 이 목록은 알림을 전송할 준비가 되었는지, 이미 전송되었는지 또는 전송 중 오류가 발생했는지 여부도 표시합니다.
    * 한 개의 알림에 대한 확인란을 선택하고 목록 위에 있는 &quot;알림 보내기&quot; 버튼을 클릭합니다. 표시되는 대화 상자에서 알림을 &quot;취소&quot; 또는 &quot;전송&quot;할 기회가 한 번 있습니다.
 
 1. 결과 처리

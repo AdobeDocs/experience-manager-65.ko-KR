@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2957'
+source-wordcount: '2945'
 ht-degree: 0%
 
 ---
@@ -287,7 +287,7 @@ public class OtherTypeUpdateHandler extends AbstractSlingResourceUpdateHandler {
 
 ### 사용자 지정 업데이트 처리기 구현 {#implementing-a-custom-update-handler}
 
-모든 We.Retail 모바일 페이지에는 zip 파일에 포함할 왼쪽 상단 모서리에 로고가 있습니다. 그러나 캐시 최적화를 위해 AEM은 저장소의 이미지 파일 실제 위치를 참조하지 않으므로 를 사용하지 못할 수 있습니다. **복사** 구성 유형. 대신 우리가 해야 할 일은 우리만의 것을 제공하는 것이다 **로고** AEM에서 요청한 위치에서 이미지를 사용할 수 있도록 하는 구성 유형입니다. 다음 코드 목록은 로고 업데이트 처리기의 전체 구현을 보여 줍니다.
+모든 We.Retail 모바일 페이지에는 zip 파일에 포함할 왼쪽 상단 모서리에 로고가 있습니다. 그러나 캐시 최적화를 위해 AEM은 저장소에서 이미지 파일의 실제 위치를 참조하지 않으므로 를 단순히 사용하지 못합니다. **복사** 구성 유형. 대신 우리가 해야 할 일은 우리만의 것을 제공하는 것이다 **로고** AEM에서 요청한 위치에서 이미지를 사용할 수 있도록 하는 구성 유형입니다. 다음 코드 목록은 로고 업데이트 처리기의 전체 구현을 보여 줍니다.
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

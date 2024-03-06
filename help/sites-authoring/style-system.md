@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 85%
+source-wordcount: '1297'
+ht-degree: 84%
 
 ---
 
@@ -122,11 +122,11 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-구성 요소를 구성하면 페이지 작성자가 구성한 스타일이 AEM에서 편집 가능한 모든 구성 요소를 자동으로 감싸는 데코레이션 요소에 AEM에서 자동으로 삽입됩니다. 구성 요소 자체는 이를 위해 어떤 작업도 수행할 필요가 없습니다.
+구성 요소를 구성하면 페이지 작성자가 구성한 스타일이 AEM에서 편집 가능한 모든 구성 요소를 자동으로 감싸는 데코레이션 요소에 AEM에서 자동으로 삽입됩니다. 구성 요소 자체는 이 작업을 수행하기 위해 다른 작업을 수행할 필요가 없습니다.
 
 ### 편집 대화 상자에서 스타일 탭 활성화 {#enable-styles-tab-edit}
 
-이제 AEM 버전 6.5.3.0부터 편집 대화 상자의 선택 사항 스타일 탭을 사용할 수 있습니다. 디자인 대화 상자 탭과 달리 편집 대화 상자의 탭은 스타일 시스템이 작동하는 데 반드시 필요한 것은 아니지만 컨텐츠 작성자가 스타일을 설정할 수 있는 선택적 대체 인터페이스입니다.
+이제 AEM 버전 6.5.3.0부터 편집 대화 상자의 선택 사항 스타일 탭을 사용할 수 있습니다. 디자인 대화 상자 탭과 달리 편집 대화 상자의 탭은 스타일 시스템이 작동하는 데 꼭 필요한 것은 아니지만 콘텐츠 작성자가 스타일을 설정할 수 있는 선택 가능한 대체 인터페이스입니다.
 
 편집 대화 상자 탭은 디자인 대화 상자 탭과 유사한 방식으로 포함될 수 있습니다.
 

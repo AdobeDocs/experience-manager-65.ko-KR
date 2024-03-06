@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 22235790b2bfefaa1a3bf71f888f8eb343d9e1b7
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '4257'
 ht-degree: 3%
@@ -282,7 +282,7 @@ ht-degree: 3%
 
 1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 다음 옵션 중 하나를 선택합니다.
 
-   **없음** 양식에 대한 기록 문서를 구성하지 않으려면 이 옵션을 선택합니다.
+   **없음** 양식에 기록 문서를 구성하지 않으려면 이 옵션을 선택합니다.
 
    **양식 템플릿을 기록 문서 템플릿으로 연결** 기록 문서의 템플릿으로 사용할 XDP 파일이 있는 경우 이 옵션을 선택합니다. 이 옵션을 선택하면 AEM Forms 저장소에서 사용할 수 있는 모든 XDP 파일이 표시됩니다. 적절한 파일을 선택합니다.
 

@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '2672'
-ht-degree: 27%
+ht-degree: 26%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 27%
   </tr>
   <tr>
    <td>표준 롤아웃 구성</td>
-   <td>롤아웃 트리거 및 실행 작업에 대한 롤아웃 프로세스를 시작할 수 있는 표준 롤아웃 구성: 컨텐츠를 생성, 업데이트, 삭제하고 하위 노드의 순서를 지정합니다.</td>
+   <td>롤아웃 트리거 시 롤아웃 프로세스를 시작하고 작업을 실행할 수 있는 표준 롤아웃 구성: 컨텐츠 생성, 업데이트, 삭제 및 하위 노드 순서 지정.</td>
    <td>롤아웃 시</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> 하위 주문</td>
   </tr>
@@ -108,7 +108,7 @@ ht-degree: 27%
   </tr>
   <tr>
    <td>DPS 발행물 롤아웃 구성</td>
-   <td>초기 롤아웃 시 FolioProducer 바인딩 속성을 제외하면서 롤아웃 트리거 시 롤아웃 프로세스를 시작할 수 있는 DPS 발행 롤아웃 구성</td>
+   <td>초기 롤아웃 시 FolioProducer 바인딩 속성을 제외하면서 롤아웃 트리거 시 롤아웃 프로세스를 시작할 수 있는 DPS 게시 롤아웃 구성</td>
    <td>롤아웃 시</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> 하위 주문<br /> dpsMetadataFilter</td>
   </tr>

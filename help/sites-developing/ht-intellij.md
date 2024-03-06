@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '640'
 ht-degree: 2%
 
 ---
@@ -106,7 +106,7 @@ IntelliJ IDEA는 디버깅을 위해 JSP를 찾을 위치를 이해해야 합니
 1. 다음을 누르세요. **+** 및 선택 **JSR45 원격**
 1. 구성 대화 상자에서 **구성** 다음에 **응용 프로그램 서버** 일반 서버 구성
 1. 디버깅을 시작할 때 브라우저를 열려면 시작 페이지를 적절한 URL로 설정하십시오
-1. 모두 제거 **실행 전** vlt 자동 동기화를 사용하는 경우 작업 을 수행하거나 그렇지 않은 경우 적절한 Maven 작업을 구성합니다.
+1. 모두 제거 **실행 전** vlt 자동 동기화를 사용하는 경우 작업을 수행하거나 그렇지 않은 경우 적절한 Maven 작업을 구성합니다.
 1. 다음에서 **시작/연결** 필요한 경우 창에서 포트를 조정합니다.
 1. IntelliJ IDEA에서 제안하는 명령줄 인수 복사
 

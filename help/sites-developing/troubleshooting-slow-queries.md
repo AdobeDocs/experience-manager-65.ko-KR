@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2236'
+source-wordcount: '2237'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ cq:tags 인덱스 규칙을 추가한 후
 
 사후 인덱스 필터링의 또 다른 원인은 개발 중에 종종 누락되는 액세스 제어 목록입니다. 쿼리가 사용자가 액세스할 수 없는 경로를 반환하지 않는지 확인하십시오. 이렇게 하려면 쿼리에 대한 관련 경로 제한 사항을 제공할 뿐만 아니라 더 나은 콘텐츠 구조를 통해 수행할 수 있습니다.
 
-Lucene 색인이 많은 결과를 반환하여 작은 하위 집합을 쿼리 결과로 반환하는지 식별하는 유용한 방법은 DEBUG 로그를 활성화하는 것입니다. `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. 이렇게 하면 색인에서 로드되는 문서 수를 볼 수 있습니다. 최종 결과 수와 로드된 문서 수가 불균형하게 달라져서는 안 됩니다. 자세한 내용은 [로깅](/help/sites-deploying/configure-logging.md).
+Lucene 색인이 많은 결과를 반환하여 작은 하위 집합을 쿼리 결과로 반환하는지 식별하는 유용한 방법은 DEBUG 로그를 활성화하는 것입니다. `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. 이렇게 하면 색인에서 로드되는 문서 수를 볼 수 있습니다. 최종 결과 수와 로드된 문서 수가 불균형하게 바뀌어서는 안 됩니다. 자세한 내용은 [로깅](/help/sites-deploying/configure-logging.md).
 
 #### 배포 후 {#post-deployment-1}
 

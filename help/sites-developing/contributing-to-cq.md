@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2669'
-ht-degree: 1%
+source-wordcount: '2635'
+ht-degree: 0%
 
 ---
 
@@ -175,6 +175,6 @@ java -jar <quickstartfilename>.jar -help
 
 **Tar 스토리지(TarMK)** - TarMK는 AEM의 기본 지속성 시스템입니다. AEM은 다른 지속성 시스템(예: MongoDB)을 사용하도록 구성할 수 있지만 TarMK는 일반적인 JCR 사용 사례에 맞게 성능이 최적화되어 있고(따라서 속도가 빠름), 업계 표준 데이터 형식을 사용하며, 빠르고 쉽게 백업할 수 있다는 점에서 일정한 이점이 있습니다.
 
-**템플릿** - AEM에서 템플릿은 특정 유형의 페이지를 지정합니다. 페이지 구조를 정의합니다(일반적으로 썸네일 이미지와 다양한 속성을 지정함). 예를 들어 제품 페이지, 사이트맵 및 연락처 정보에 대한 별도의 템플릿이 있을 수 있습니다.
+**템플릿** - AEM에서 템플릿은 특정 유형의 페이지를 지정합니다. 페이지 구조를 정의합니다(일반적으로 썸네일 이미지와 다양한 속성을 지정함). 예를 들어 제품 페이지, 사이트 맵 및 연락처 정보에 대해 별도의 템플릿이 있을 수 있습니다.
 
 **워크플로** - AEM Workflow 시스템을 통해 페이지 또는 에셋과 관련된 자동화된 프로세스를 만들 수 있습니다.

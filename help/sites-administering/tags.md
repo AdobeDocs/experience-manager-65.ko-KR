@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 14%
+source-wordcount: '1769'
+ht-degree: 10%
 
 ---
 
@@ -43,8 +43,8 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 * 태그는 작성자 및 사이트 방문자가 적용할 수 있습니다. 만든 사람과 관계없이 태그를 페이지에 할당하거나 검색할 때 모든 형태의 태그를 선택할 수 있습니다.
 * 태그는 &quot;태그 관리자&quot; 그룹의 구성원과 수정 권한이 있는 구성원에 의해 만들고 분류법을 수정할 수 있습니다. `/content/cq:tags`.
 
-   * 하위 태그를 포함하는 태그를 컨테이너 태그라고 합니다
-   * 컨테이너 태그가 아닌 태그를 리프 태그라고 합니다
+   * 하위 태그가 포함된 태그를 컨테이너 태그라고 합니다
+   * 컨테이너 태그가 아닌 태그는 리프 태그라고 합니다
    * 태그 네임스페이스는 리프 태그 또는 컨테이너 태그입니다
 
 * 태그는 [구성 요소 검색](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) 컨텐츠를 쉽게 찾을 수 있습니다.
@@ -76,7 +76,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 네임스페이스를 만들려면 **`Create Namespace`** 아이콘.
 
-네임스페이스는 그 자체로 태그이며 하위 태그를 포함할 필요가 없습니다. 그러나 분류를 계속 만들려면 다음을 수행하십시오. [하위 태그 만들기](#creating-tags): 리프 태그 또는 컨테이너 태그일 수 있습니다.
+네임스페이스는 그 자체로 태그이며 하위 태그를 포함하지 않습니다. 그러나 분류를 계속 만들려면 다음을 수행하십시오. [하위 태그 만들기](#creating-tags): 리프 태그 또는 컨테이너 태그일 수 있습니다.
 
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
@@ -84,7 +84,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
   *(필수)* 네임스페이스의 표시 제목입니다.
 
 * **이름**
-  *(선택 사항)* 네임스페이스의 이름입니다. 지정하지 않으면 제목을 사용해 유효한 노드 이름이 만들어집니다. [TagID](/help/sites-developing/framework.md#tagid)를 참조하십시오.
+  *(선택 사항)* 네임스페이스의 이름입니다. 지정하지 않으면 제목에서 올바른 노드 이름이 만들어집니다. [TagID](/help/sites-developing/framework.md#tagid)를 참조하십시오.
 
 * **설명**
   *(선택 사항)* 네임스페이스에 대한 설명.
@@ -157,7 +157,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 *(필수) *태그의 표시 제목입니다.
 
 * **이름**
-*(선택 사항) *태그의 이름. 지정하지 않으면 제목을 사용해 유효한 노드 이름이 만들어집니다. [TagID](/help/sites-developing/framework.md#tagid)를 참조하십시오.
+*(선택 사항) *태그의 이름. 지정하지 않으면 제목에서 올바른 노드 이름이 만들어집니다. [TagID](/help/sites-developing/framework.md#tagid)를 참조하십시오.
 
 * **설명**
 *(선택 사항) *태그에 대한 설명입니다.
@@ -221,7 +221,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 >
 >병합 후 **경로** 원래 선택된 항목은 (가상으로) 더 이상 존재하지 않습니다.
 >
->참조된 태그가 이동하거나 병합되더라도 태그가 물리적으로 삭제되지는 않으므로 참조를 유지할 수 있습니다.
+>참조된 태그를 이동하거나 병합할 때 태그가 실제로 삭제되지 않으므로 참조를 유지할 수 있습니다.
 
 ### 태그 게시 {#publishing-tags}
 
@@ -276,7 +276,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 ## 다양한 언어로 태그 관리 {#managing-tags-in-different-languages}
 
-태그의 `title` 속성은 여러 언어로 번역될 수 있습니다. 번역되면 적절한 태그 `title`사용자 언어 또는 페이지 언어에 따라 표시될 수 있습니다.
+다음 `title`태그의 속성은 여러 언어로 번역될 수 있습니다. 번역되면 적절한 태그 `title`사용자 언어 또는 페이지 언어에 따라 표시될 수 있습니다.
 
 ### 여러 언어로 태그 제목 정의 {#defining-tag-titles-in-multiple-languages}
 

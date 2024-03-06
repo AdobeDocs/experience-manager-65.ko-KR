@@ -2,10 +2,10 @@
 title: 최신 6.5.15.0 서비스 팩이 설치된 후 CRX/번들 및 시작 페이지 서비스를 사용할 수 없는 오류 발생
 description: 최신 6.5.15.0 서비스 팩이 설치된 후 CRX/번들 및 시작 페이지 서비스를 사용할 수 없는 오류 발생
 exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
-source-git-commit: e961f0c7107b4eacb0d5e50565cb64f5fa30e265
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 15%
+source-wordcount: '276'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,7 @@ AEM 6.5.15.0 서비스 팩을 설치한 후 CRX/번들 및 시작 페이지에 �
    >
    >만일의 경우에 `bundle.info` 아래에 `bundle52` 이(가) 다음을 포함하지 않음 `org.apache.felix.http.bridge` 번들, 옆에 있는 대괄호로 묶은 번들 번호를 확인합니다. `org.apache.felix.http.bridge`. 다음으로 이동 [aem-forms 루트]\crx-repository\launchpad\felix\bundle[x] 이 위치에서 다음 단계를 수행합니다.
 
-1. URL로 이동: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
+1. 다음 URL로 이동합니다. `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. 검색 대상 `bundle.jar` 및 이름 바꾸기 `bundle.jar` 끝 `bundle.jar.bak`.
 1. 다음을 복사합니다. `Bundle for AEM 6.5 Forms on JEE Service Pack 15` 에서 이 위치에 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
 1. 애플리케이션 서버를 시작하고 로그가 안정될 때까지 기다린 후 번들 상태를 확인합니다.

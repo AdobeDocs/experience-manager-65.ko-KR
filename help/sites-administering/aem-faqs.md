@@ -2,7 +2,7 @@
 title: AEM FAQ
 description: 이러한 FAQ를 사용하여 AEM의 일반적인 워크플로 또는 문제를 이해, 구성 및 해결할 수 있습니다.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 0%
@@ -80,11 +80,11 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수
 
 자산 노드에서 동영상 파일을 업로드할 때 삭제 권한이 없는 경우 청크 노드 삭제가 실패하고 업로드가 다시 시작됩니다.
 
-#### 언어 사본을 만드는 동안 OOTB 구성에 대한 기본 설정은 무엇입니까? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### 언어 사본을 만드는 동안 기본 구성에 대한 기본 설정은 무엇입니까? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 Touch UI를 통해 언어 사본을 만들 때(**참조** > **언어 사본 업데이트**) 새 언어 아래에 새 DAM 폴더가 생성되고 여기에서 에셋이 참조됩니다.
 
-OOTB 구성의 기본 설정입니다. 다음을 설정할 수 있습니다. **페이지 에셋 번역** = **번역 안 함** 번역 구성에서.
+기본 설정은 기본 구성에 대한 기본 설정입니다. 다음을 설정할 수 있습니다. **페이지 에셋 번역** = **번역 안 함** 번역 구성에서.
 AEM 6.4의 경우 **도구** > **Cloud Service** > **번역 클라우드 서비스**.
 
 #### AEM SegmentStore(AEM 6.3.1.1)의 기하급수적 증가를 유발하는 AEM 구성 요소를 비활성화하는 방법 {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

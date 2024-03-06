@@ -2,9 +2,9 @@
 title: 캐싱 및 성능
 description: GraphQL 및 콘텐츠 캐싱을 활성화하여 상거래 구현의 성능을 최적화하는 데 사용할 수 있는 다양한 구성에 대해 알아봅니다.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ venia/components/structure/navigation:true:10:600
 
 다음 사항을 고려하는 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia) 를 사용합니다. 구성 요소 프록시 이름의 사용을 확인합니다. `venia/components/structure/navigation`, 및 **아님** CIF 탐색 구성 요소의 이름(`core/cif/components/structure/navigation/v1/navigation`).
 
-다른 구성 요소에 대한 캐싱은 일반적으로 Dispatcher 수준에서 구성된 캐싱과 함께 프로젝트 기반으로 정의되어야 합니다. 이러한 캐시에 대한 활성 무효화가 없으므로 캐싱 기간을 신중하게 설정해야 합니다. 모든 가능한 프로젝트 및 사용 사례와 일치하는 &quot;한 가지 크기가 모두 맞춤&quot; 값은 없습니다. 프로젝트의 요구 사항과 가장 일치하는 프로젝트 수준에서 캐싱 전략을 정의해야 합니다.
+다른 구성 요소에 대한 캐싱은 일반적으로 Dispatcher 수준에서 구성된 캐싱과 함께 프로젝트 기반으로 정의되어야 합니다. 이러한 캐시에 대한 활성 무효화가 없으므로 캐싱 기간을 신중하게 설정해야 합니다. 가능한 모든 프로젝트 및 사용 사례와 일치하는 &quot;한 가지 크기가 모두 맞춤&quot; 값은 없습니다. 프로젝트의 요구 사항과 가장 일치하는 프로젝트 수준에서 캐싱 전략을 정의해야 합니다.
 
 ## Dispatcher 캐싱 {#dispatcher}
 

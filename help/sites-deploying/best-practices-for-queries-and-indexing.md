@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '4598'
-ht-degree: 7%
+source-wordcount: '4518'
+ht-degree: 5%
 
 ---
 
@@ -140,7 +140,7 @@ AEM 6.0 - 6.2 버전의 경우, AEM 시작 스크립트의 JVM 매개변수를 �
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-AEM 6.3에서 위의 두 매개 변수는 사전 구성된 OOTB이며 OSGi QueryEngineSettings를 통해 지속할 수 있습니다.
+AEM 6.3에서 위의 두 매개 변수는 기본적으로 사전 구성되어 있으며 OSGi QueryEngineSettings를 통해 지속할 수 있습니다.
 
 자세한 내용은에서 확인할 수 있습니다. [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -211,7 +211,7 @@ MongoDB 인스턴스에서 인덱스를 제거할 때 삭제 비용은 인덱스
 
 ### JCR 쿼리 치트 시트 {#jcrquerycheatsheet}
 
-효율적인 JCR 쿼리 및 색인 정의를 생성하는 데 도움을 얻고 싶다면 [JCR 쿼리 치트시트](assets/JCR_query_cheatsheet-v1.1.pdf)를 다운로드하여 개발 중 참조할 수 있습니다. 여기에는 쿼리 성능이 다양한 여러 시나리오를 포괄하는 QueryBuilder, XPath, SQL-2에 대한 샘플 쿼리가 포함되어 있습니다. 이 치트시트는 또한 Oak 색인을 구축하거나 사용자 정의하는 방법에 대한 권장 사항도 제공합니다. 이 치트 시트의 콘텐츠는 AEM AEM 6.5 및 as a Cloud Service에 적용됩니다.
+효율적인 JCR 쿼리 및 색인 정의를 생성하는 것을 지원하기 위해 [JCR 쿼리 치트 시트](assets/JCR_query_cheatsheet-v1.1.pdf) 는 다운로드하고 개발 중에 참조로 사용할 수 있습니다. 여기에는 쿼리 성능이 다양한 여러 시나리오를 포괄하는 QueryBuilder, XPath, SQL-2에 대한 샘플 쿼리가 포함되어 있습니다. 이 치트시트는 또한 Oak 색인을 구축하거나 사용자 정의하는 방법에 대한 권장 사항도 제공합니다. 이 치트 시트의 콘텐츠는 AEM AEM 6.5 및 as a Cloud Service에 적용됩니다.
 
 ## 리인덱싱 {#re-indexing}
 
@@ -386,7 +386,7 @@ AEM에서 아래 설명된 기준과 일치하지 않는 문제가 발생하는 
 
 * 를 통해 웹 콘솔을 사용하여 비동기적으로 속성 인덱스 다시 지정 **PropertyIndexAsyncReindex** MBean;
 
-  예,
+  예를 들어,
 
   [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
 

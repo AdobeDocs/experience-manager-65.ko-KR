@@ -6,7 +6,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 0%
@@ -85,7 +85,7 @@ ht-degree: 0%
    * 데이터 사전에서는 합성 유형만 최상위 수준 DDE로 허용됩니다.
    * 이름, 참조 이름 및 요소 유형은 데이터 사전 및 DDE의 필수 필드입니다.
    * 참조 이름은 고유해야 합니다.
-   * 상위 DDE(합성)에는 이름이 같은 두 개의 하위 항목이 있을 수 없습니다.
+   * 상위 DDE(합성)에는 이름이 같은 하위 항목이 두 개 있을 수 없습니다.
    * 열거형에는 기본 문자열 유형만 포함됩니다.
 
    합성, 컬렉션 및 프리미티브 요소와 데이터 사전 요소 작업에 대한 자세한 내용은 [XML 스키마에 데이터 사전 요소 매핑](#mappingddetoschema).
@@ -557,7 +557,7 @@ XML 스키마에서 데이터 사전을 만들거나 데이터 사전 사용자 
    <td>empty(null)<br /> </td>
   </tr>
   <tr>
-   <td>끝</td>
+   <td>대상</td>
    <td>/note/to</td>
   </tr>
   <tr>

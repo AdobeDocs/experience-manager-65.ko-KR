@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2887'
+source-wordcount: '2888'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ AEM에서 제품 정보를 사용할 수 없는 경우 **제품 사진 촬영** 
 이 섹션에서는 제품 정보 관리를 크리에이티브 프로젝트와 통합하는 방법에 대해 설명합니다.
 
 1. 제품 사진 촬영 프로젝트로 이동한 다음 **작업 추가** 아이콘 **워크플로** 카드.
-1. 다음 항목 선택 **제품 사진 촬영(Commerce 통합)** 을(를) 시작할 워크플로우 카드 **제품 사진 촬영(Commerce 통합)** 워크플로입니다. 다음 경우에 제품 정보를 사용할 수 없는 경우 `/etc/commerce`를 선택하고 **제품 사진 촬영** 워크플로우 및 시작 **제품 사진 촬영** 워크플로입니다.
+1. 다음 항목 선택 **제품 사진 촬영(Commerce 통합)** 을(를) 시작할 워크플로우 카드 **제품 사진 촬영(Commerce 통합)** 워크플로입니다. 제품 정보를 다음 위치에서 사용할 수 없는 경우 `/etc/commerce`를 선택하고 **제품 사진 촬영** 워크플로우 및 시작 **제품 사진 촬영** 워크플로입니다.
 
    ![워크플로 마법사](assets/chlimage_1-140a.png)
 

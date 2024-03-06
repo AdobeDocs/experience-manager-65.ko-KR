@@ -2,10 +2,10 @@
 title: RemotePage 구성 요소
 description: RemotePage 구성 요소는 AEM 내에서 원격 React SPA을 편집하기 위한 사용자 지정 페이지 구성 요소입니다.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 2%
+source-wordcount: '364'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 RemotePage 구성 요소는 생성된 애플리케이션에서 필요한 모든 자산을 가져옵니다 `asset-manifest.json` 및 는 AEM 내에서 SPA을 렌더링하는 데 사용합니다.
 
 * RemotePage를 사용하여 SPA의 스크립트와 스타일시트를 AEM 페이지 구성 요소의 본문에 삽입할 수 있습니다.
-* 가상 프론트엔드 구성 요소를 사용하여 AEM SPA 편집기에서 편집 가능한 섹션으로 표시할 수 있습니다.
+* 가상 프론트엔드 구성 요소를 사용하여 AEM SPA Editor에서 편집 가능한 섹션으로 표시할 수 있습니다.
 * 다른 도메인에 호스팅된 SPA을 함께 AEM에서 편집할 수 있습니다.
 
 문서 보기 [AEM 내에서 외부 SPA 편집](spa-edit-external.md) AEM의 편집 가능한 외부 SPA에 대한 자세한 내용을 참조하십시오.
@@ -39,7 +39,7 @@ RemotePage 구성 요소는 생성된 애플리케이션에서 필요한 모든 
 
 ## 제한 사항 {#limitations}
 
-* RemotePage 구성 요소에서는 구현이 자산 매니페스트와 같은 자산 매니페스트를 제공할 것으로 예상합니다 [여기에서 찾을 수 있습니다.](https://github.com/shellscape/webpack-manifest-plugin) 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 애플리케이션을 로드하는 것을 지원하지 않습니다.
+* RemotePage 구성 요소에서는 구현이 자산 매니페스트와 같은 자산 매니페스트를 제공할 것으로 예상합니다 [여기에서 찾을 수 있습니다.](https://github.com/shellscape/webpack-manifest-plugin) 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 응용 프로그램을 로드할 수 없습니다.
 * 애플리케이션의 루트 HTML 파일에 정의된 내부 CSS 및 루트 DOM 노드의 인라인 CSS는 AEM에서 원격 렌더링을 수행할 때 사용할 수 없습니다.
 
 ## 기술 세부 정보 {#technical-details}

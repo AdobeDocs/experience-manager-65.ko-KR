@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: cc219931430ba571745e6ef254a034a689acd1cf
+source-git-commit: 886edbf0e98f5cdee176aaa0a7dffcf18b1a7cc2
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '347'
 ht-degree: 2%
 
 ---
@@ -31,11 +31,12 @@ ht-degree: 2%
 | 에셋 - 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
 | **이미지** - 이미지당 스마트 자르기 수 | 5 | 100 |
-| **모든 세트** - 세트당 중복 에셋 수 | 중복 항목 없음 | 20 |
+| **모든 세트** - 세트당 중복 에셋 수 | 중복 항목 없음 | 20‡ |
 | **모든 세트** - 세트당 최대 에셋 수 | 세트당 5-10개 이미지 | 1000년 |
 | **회전 집합** - 2D 세트당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000 |
 | **PDF** - 추출 시 고려할 PDF의 최대 페이지 수 |  | 100(모든 PDF) |
 
+‡ 가장 좋은 방법은 집합에 중복 에셋이 없는 것입니다. 단일 자산에 대한 중복 횟수는 20회로 제한됩니다. 해당 에셋에 대해 다른 중복을 추가하면 해당 세트 내에서 요청에 오류가 발생하거나 중복을 무시합니다.
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
 ## Dynamic Media에서 지원되지 않는 웹 브라우저 및 운영 체제 조합 {#unsupported-browser-os}

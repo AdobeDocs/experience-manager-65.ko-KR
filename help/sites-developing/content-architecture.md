@@ -1,26 +1,26 @@
 ---
-title: 컨텐츠 아키텍처
+title: 콘텐츠 아키텍처
 description: 콘텐츠 아키텍처를 위한 팁(힌트 - 모든 것이 콘텐츠임)
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
 
-# 컨텐츠 아키텍처{#content-architecture}
+# 콘텐츠 아키텍처{#content-architecture}
 
 ## David의 모델 팔로우 {#follow-david-s-model}
 
 다윗의 모형은 수년 전에 다비드 누에스켈러가 썼지만, 오늘날에도 그 개념들은 여전히 유효하다. David&#39;s Model의 주요 개념은 다음과 같습니다.
 
 * 데이터는 먼저 가져오고, 구조는 나중에 가져옵니다. 그럴지도.
-* 콘텐츠 계층 구조를 촉진합니다. 그렇게 하지 마십시오.
+* 콘텐츠 계층 구조를 유도합니다. 이러한 상황이 발생하지 않도록 하십시오.
 * 작업 공간은 다음과 같습니다. `clone()`, `merge()`, 및 `update()`.
 * 동일한 이름의 형제 자매를 주의하십시오.
 * 참고문헌은 유해한 것으로 간주된다.

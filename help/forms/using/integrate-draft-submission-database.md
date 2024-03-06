@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1502'
 ht-degree: 1%
 
 ---
@@ -230,7 +230,7 @@ AEM Forms 포털 초안 및 제출 구성 요소를 통해 사용자는 양식�
    `key` varchar(255) NOT NULL,
    `id` varchar(60) NOT NULL,
    PRIMARY KEY (`id`,`key`),
-   CONSTRAINT ‘additionalmetadatatable_fk’ FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
+   CONSTRAINT 'additionalmetadatatable_fk' FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
@@ -397,7 +397,7 @@ Forms 포털의 데이터베이스 구현에서는 추가 메타데이터 테이
 
    >[!NOTE]
    >
-   >스크립트는 즉시 사용 가능한(OOTB) 첨부 파일 위젯 구성 요소에 사용됩니다. OOTB 첨부 파일 위젯을 사용자 정의한 경우 위의 스크립트를 변경하여 각각의 변경 사항을 통합합니다.
+   >스크립트는 기본 첨부 파일 위젯 구성 요소에 사용됩니다. 기본 첨부 파일 위젯을 사용자 정의한 경우 위의 스크립트를 변경하여 각각의 변경 사항을 통합합니다.
 
 1. 2단계에서 만든 폴더에 다음 속성을 추가하고 **[!UICONTROL 모두 저장]**.
 

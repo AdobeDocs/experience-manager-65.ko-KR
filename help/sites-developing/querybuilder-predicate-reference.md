@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: '2313'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 2%
 * [memberOf](/help/sites-developing/querybuilder-predicate-reference.md#memberof)
 * [nodename](/help/sites-developing/querybuilder-predicate-reference.md#nodename)
 * [가공되지 않음](/help/sites-developing/querybuilder-predicate-reference.md#notexpired)
-* [path](/help/sites-developing/querybuilder-predicate-reference.md#path)
+* [경로](/help/sites-developing/querybuilder-predicate-reference.md#path)
 * [속성](/help/sites-developing/querybuilder-predicate-reference.md#property)
 * [rangeproperty](/help/sites-developing/querybuilder-predicate-reference.md#rangeproperty)
 * [상대 날짜 범위](/help/sites-developing/querybuilder-predicate-reference.md#relativedaterange)
@@ -233,7 +233,7 @@ group.2_group.type=dam:Asset
 
 * **hasPermission**
 
-  현재 사용자 세션에 해당 노드가 반드시 있어야 하는 쉼표로 구분된 JCR 권한입니다. 예, `jcr:write`, `jcr:modifyAccessControl`.
+  현재 사용자 세션에 해당 노드가 반드시 있어야 하는 쉼표로 구분된 JCR 권한입니다. 예를 들어, `jcr:write`, `jcr:modifyAccessControl`.
 
 ### 언어 {#language}
 
@@ -315,7 +315,7 @@ JCR DATE 속성이 현재 서버 시간보다 크거나 같은지 확인하여 �
 
   선행 @으로 표시된 JCR 속성 이름(예: ) `@jcr:lastModified` 또는 `@jcr:content/jcr:title`또는 쿼리의 다른 조건자(예: ) `2_property`(정렬 기준)
 
-* **정렬**
+* **sort**
 
   정렬 방향, 다음 중 하나 `desc`내림차순 또는 &quot; `asc`오름차순(기본값)의 경우 &quot;.
 
@@ -323,7 +323,7 @@ JCR DATE 속성이 현재 서버 시간보다 크거나 같은지 확인하여 �
 
   로 설정된 경우 `ignore`, 이는 정렬의 대/소문자를 구분하지 않게 합니다. 즉, &quot;a&quot;가 &quot;B&quot; 앞에 옵니다. 비어 있거나 누락된 경우 정렬은 대/소문자를 구분하며, 즉 &quot;B&quot;가 &quot;a&quot; 앞에 옵니다.
 
-### path {#path}
+### 경로 {#path}
 
 지정된 경로 내에서 검색합니다.
 
@@ -343,7 +343,7 @@ JCR DATE 속성이 현재 서버 시간보다 크거나 같은지 확인하여 �
 
   직접 하위만 검색합니다(예: &quot; 추가). `/*`xpath의 &quot;&quot;(다음과 같은 경우에만 사용됨) `exact`&#39;은(는) true가 아닙니다(선택 사항).
 
-* **self**
+* **자가**
 
   하위 트리를 검색하지만 경로로 지정된 기본 노드를 포함합니다(와일드카드 없음).
 
@@ -469,7 +469,7 @@ JCR 속성 및 해당 값에 대해 일치합니다.
 
   (JSON 서블릿만 해당) 다음 표준 히트(ResultHitWriter 서비스를 통해 확장 가능)를 사용하여 히트가 JSON으로 기록되는 방법을 선택합니다.
 
-   * **단순한**:
+   * **단순**:
 
      다음과 같은 최소 항목 `path`, `title`, `lastmodified`, `excerpt` (설정된 경우).
 
@@ -573,7 +573,7 @@ JCR XPath를 사용한 유사성 검색 `rep:similar()`.
 
 * **모두**
 
-  (bool) 전체 태그 전체 텍스트, 즉 모든 제목, 설명 등을 검색합니다(&quot;l `ang`&quot;).
+  (bool) 전체 태그, 즉 모든 제목, 설명 등을 검색합니다. &quot;l&quot;보다 우선함 `ang`&quot;.
 
 ### 유형 {#type}
 

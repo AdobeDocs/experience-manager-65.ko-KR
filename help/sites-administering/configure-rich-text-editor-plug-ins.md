@@ -3,7 +3,7 @@ title: 리치 텍스트 편집기 플러그인 구성
 description: Adobe Experience Manager 리치 텍스트 편집기 플러그인을 구성하여 개별 기능을 활성화하는 방법에 대해 알아봅니다.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '4391'
 ht-degree: 2%
@@ -327,7 +327,7 @@ RTE로 작성된 모든 텍스트는 블록 태그 내에 배치되며 기본값
 
 >[!NOTE]
 >
->예를 들어 블록 태그가 인 경우 &lt;hr> 태그에 태그를 지정할 수 없습니다. 이 태그는 paraformat 플러그인에 대해 올바른 사용 사례가 아닙니다.
+>예를 들어 블록 태그가 인 경우 &lt;hr> 태그를 단락에 할당할 수 없습니다. 이 태그는 paraformat 플러그인에 유효한 사용 사례가 아닙니다.
 
 단락 서식 플러그인을 처음 활성화하면 기본 단락 서식을 사용할 수 없습니다. 팝업 목록이 비어 있습니다. 작성자에게 단락 형식을 제공하려면 다음을 수행합니다.
 

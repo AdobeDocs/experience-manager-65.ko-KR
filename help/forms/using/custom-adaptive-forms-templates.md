@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -121,7 +121,7 @@ simpleEnrollmentTemplate과 같은 사용자 지정 템플릿을 만들려면 �
 
 1. 복사된 구성 요소의 이름을 로 변경합니다. `enrollmentpage`.
 
-1. **(contentpage가 이미 있는 경우에만)** 기존 이 있는 경우 다음 단계 (a-d)를 수행합니다 `contentpage`구성 요소를 참조하십시오. 기존 항목이 없는 경우 `contentpage`웹 사이트의 구성 요소를 `resourceSuperType`속성을 사용하여 OOTB 기본 페이지를 지정합니다.
+1. **(contentpage가 이미 있는 경우에만)** 기존 이 있는 경우 다음 단계 (a-d)를 수행합니다 `contentpage`구성 요소를 참조하십시오. 기존 항목이 없는 경우 `contentpage`웹 사이트의 구성 요소를 `resourceSuperType`기본 제공 페이지를 지정하는 속성입니다.
 
    1. 의 경우 `enrollmentpage` 노드, 속성의 값 설정 `sling:resourceSuperType` mycompany/components/page/contentpage에 연결합니다. 다음 `contentpage` 구성 요소는 사이트의 기본 페이지 구성 요소입니다. 다른 페이지 구성 요소가 확장할 수 있습니다. 아래의 스크립트 파일 제거 `enrollmentpage`, 제외 `head.jsp`, `content.jsp`, 및 `library.jsp`. 다음 `sling:resourceSuperType` 구성 요소: `contentpage` 이 경우 에는 이러한 모든 스크립트가 포함됩니다. 탐색 모음 및 바닥글을 포함한 머리글은 `contentpage` 구성 요소.
 

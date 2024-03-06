@@ -7,9 +7,9 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1737'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법은 `SlingRepository.loginAdministrative()` 및 `ResourceResolverFactory.getAdministrativeResourceResolver()` sling에서 제공하는 메서드입니다.
 
-그러나 이 두 가지 방법 중 어느 것도 [최소 특권의 원칙](https://en.wikipedia.org/wiki/Principle_of_least_privilege) 개발자가 초기에 콘텐츠에 대한 적절한 구조와 해당 ACL(액세스 제어 수준)을 계획하지 않도록 할 수 있습니다. 그러한 서비스에 취약점이 존재하는 경우 해당 서비스로의 권한 에스컬레이션으로 이어지는 경우가 많습니다. `admin` 코드 자체가 작동하는 데 관리 권한이 필요하지 않더라도 사용자
+그러나 이 두 가지 방법 중 어느 것도 [최소 특권의 원칙](https://en.wikipedia.org/wiki/Principle_of_least_privilege). 개발자가 초기에 콘텐츠에 대한 적절한 구조와 해당 ACL(액세스 제어 수준)을 계획하지 않을 수 있기 때문입니다. 그러한 서비스에 취약점이 존재하는 경우 해당 서비스로의 권한 에스컬레이션으로 이어지는 경우가 많습니다. `admin` 코드 자체가 작동하는 데 관리 권한이 필요하지 않더라도 사용자
 
 ## 관리 세션을 단계적으로 종료하는 방법 {#how-to-phase-out-admin-sessions}
 
 ### 우선 순위 0: 기능이 활성/필요/중단되었습니까? {#priority-is-the-feature-active-needed-derelict}
 
-관리 세션이 사용되지 않거나 기능이 완전히 비활성화된 경우가 있을 수 있습니다. 구현이 이와 같은 경우 기능을 모두 제거하거나 크기에 맞게 조정해야 합니다 [NOP 코드](https://en.wikipedia.org/wiki/NOP).
+관리 세션이 사용되지 않거나 기능이 완전히 비활성화된 경우가 있을 수 있습니다. 구현과 함께 그런 경우에는 기능을 모두 제거하거나 크기에 맞게 조정해야 합니다 [NOP 코드](https://en.wikipedia.org/wiki/NOP).
 
 ### 우선 순위 1: 요청 세션 사용 {#priority-use-the-request-session}
 
@@ -80,7 +80,7 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 
 ## 서비스 사용자 및 매핑 {#service-users-and-mappings}
 
-위에서 언급한 내용이 실패하면 Sling 7은 번들-사용자 매핑과 두 개의 해당 API 방법을 구성할 수 있는 서비스 사용자 매핑 서비스를 제공합니다.
+위에서 언급한 내용이 실패하면 Sling 7은 번들 대 사용자 매핑과 두 개의 해당 API 방법을 구성할 수 있는 서비스 사용자 매핑 서비스를 제공합니다.
 
 * [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
 * [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
@@ -99,7 +99,7 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 
 ### admin-session을 service-user로 바꾸기 {#replacing-the-admin-session-with-a-service-user}
 
-서비스 사용자는 암호가 설정되지 않고 특정 작업을 수행하는 데 필요한 최소 권한 집합이 있는 JCR 사용자입니다. 암호가 설정되지 않으면 서비스 사용자로 로그인할 수 없습니다.
+서비스 사용자는 암호가 설정되지 않고 특정 작업을 수행하는 데 필요한 최소 권한 집합이 있는 JCR 사용자입니다. 암호가 설정되지 않았다는 것은 서비스 사용자로 로그인할 수 없음을 의미합니다.
 
 관리 세션을 사용하지 않는 방법은 서비스 사용자 세션으로 바꾸는 것입니다. 또한 필요한 경우 여러 하위 서비스 사용자로 대체될 수 있습니다.
 
@@ -116,7 +116,7 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 
 ## 서비스 사용자 만들기 {#creating-a-new-service-user}
 
-AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용자가 없고 해당 RTC 문제가 승인된 후에는 계속해서 기본 콘텐츠에 새 사용자를 추가할 수 있습니다.
+AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용자가 없고 해당 RTC 문제가 승인되었음을 확인한 후 새 사용자를 기본 콘텐츠에 추가합니다.
 
 권장되는 접근 방법은 저장소 탐색기를 사용할 서비스 사용자를 만드는 것입니다. *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
 
@@ -157,7 +157,7 @@ AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용�
 1. 이 폴더에서 org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.revised라는 파일을 만듭니다.&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>모든 하위 서비스 사용자 매핑을 포함하여 공장 구성 콘텐츠가 포함된 .xml 예:
 
 1. 만들기 `SLING-INF/content` 폴더 아래 `src/main/resources` 번들의 폴더
-1. 이 폴더에서 파일 만들기 `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` 모든 하위 서비스 사용자 매핑을 포함하여 공장 구성 콘텐츠 포함
+1. 이 폴더에서 파일을 만듭니다. `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` 모든 하위 서비스 사용자 매핑을 포함하여 공장 구성 콘텐츠 포함
 
    설명을 위해 라는 파일을 가져옵니다. `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`:
 
@@ -190,13 +190,13 @@ AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용�
 
    * 의 웹 콘솔로 이동 *https://serverhost:serveraddress/system/console/configMgr*
    * 검색 대상 **Apache Sling Service User Mapper 서비스 수정**
-   * 링크를 클릭하여 적절한 구성이 있는지 확인합니다.
+   * 링크를 클릭하면 적절한 구성이 적용되었는지 확인할 수 있습니다.
 
 ## 서비스에서 공유 세션 처리 {#dealing-with-shared-sessions-in-services}
 
 호출 대상 `loginAdministrative()` 공유 세션과 함께 표시되는 경우가 많습니다. 이러한 세션은 서비스 활성화 시 획득되며 서비스가 중지된 후에만 로그아웃됩니다. 일반적인 방법이지만 두 가지 문제로 이어집니다.
 
-* **보안:** 이러한 관리 세션은 공유 세션에 바인딩된 리소스 또는 기타 개체를 캐시하고 반환하는 데 사용됩니다. 나중에 호출 스택에서 이러한 개체는 높은 권한을 가진 세션 또는 리소스 확인자에 맞게 조정될 수 있으며, 종종 호출자가 이 개체를 사용 중인 관리 세션인지 명확하지 않습니다.
+* **보안:** 이러한 관리 세션은 공유 세션에 바인딩된 리소스 또는 기타 개체를 캐시하고 반환하는 데 사용됩니다. 나중에 호출 스택에서 이러한 개체는 높은 권한을 가진 세션 또는 리소스 확인자에 맞게 조정될 수 있습니다. 종종 호출자가 운영 중인 관리 세션인지 명확하지 않습니다.
 * **성능:** Oak에서 공유 세션은 성능 문제를 일으킬 수 있으므로 사용하지 않는 것이 좋습니다.
 
 보안 위험에 대한 가장 명백한 해결 방법은 `loginAdministrative()` 을 사용하여 호출 `loginService()` 하나는 제한된 권한을 가진 사용자에게 표시됩니다. 그러나 이는 잠재적인 성능 저하에는 영향을 주지 않습니다. 세션과 연관성이 없는 객체에서 모든 요청된 정보를 래핑하는 문제를 완화할 수 있습니다. 그런 다음 필요에 따라 세션을 생성(또는 제거)합니다.

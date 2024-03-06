@@ -7,10 +7,10 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 5%
+source-wordcount: '690'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 5%
    * 이름 : `clientlibs`
    * 유형 : `cq:ClientLibraryFolder`
 
-1. **확인**&#x200B;을 클릭합니다
+1. 클릭 **확인**
 
 ![add-client-library](assets/add-client-library.png)
 
@@ -38,8 +38,8 @@ ht-degree: 5%
 * 이름 : **카테고리**
 * 유형 : **문자열**
 * 값 : **apps.an-scf-sandbox**
-* **추가**&#x200B;를 클릭합니다
-* **모두 저장**&#x200B;을 클릭합니다
+* 클릭 **추가**
+* 클릭 **모두 저장**
 
 참고: 카테고리 값에 &#39;앱&#39;을 앞에 붙입니다. 는 &#39;소유 애플리케이션&#39;을 /libs가 아닌 /apps 폴더에 있는 것으로 식별하는 규칙입니다. 중요: 자리 표시자 추가 `js.tx`t 및 **`css.txt`** 파일. (이러한 폴더가 없는 공식적으로 cq:ClientLibraryFolder는 아닙니다.)
 
@@ -48,7 +48,7 @@ ht-degree: 5%
 1. 입력 **이름:** `css.txt`
 1. 선택 **파일 만들기...**
 1. 입력 **이름:** `js.txt`
-1. **모두 저장**&#x200B;을 클릭합니다
+1. 클릭 **모두 저장**
 
 ![clientlibs-css](assets/clientlibs-css.png)
 
@@ -94,9 +94,9 @@ css.txt의 콘텐츠를 다음으로 설정
       * **`cq.social.author.hbs.rating`**
       * **`cq.social.author.hbs.reviews`**
       * **`cq.social.author.hbs.voting`**
-      * **확인**&#x200B;을 클릭합니다
+      * 클릭 **확인**
 
-* **모두 저장**&#x200B;을 클릭합니다
+* 클릭 **모두 저장**
 
 ![scf-clientlibs](assets/scf-clientlibs.png)
 
@@ -129,7 +129,7 @@ include 문은에 포함됩니다. `head` 의 섹션 `html` 스크립트. 기본
 1. 파일 끝에 다음 줄을 추가합니다
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. **모두 저장**&#x200B;을 클릭합니다
+1. 클릭 **모두 저장**
 
 ```xml
 <%@ page session="false" %><%
@@ -151,7 +151,7 @@ include 문은에 포함됩니다. `head` 의 섹션 `html` 스크립트. 기본
 
 이 시점에는 최소 샌드박스가 존재합니다. 재생하는 동안 저장소가 손상되어 다시 시작하려는 경우 서버를 끌 수 있도록 패키지로 저장할 가치가 있을 수 있습니다. 그런 다음 crx-quickstart/ 폴더의 이름을 바꾸거나 삭제하고, 서버를 켜고, 이 저장된 패키지를 업로드하고 설치합니다. 이러한 가장 기본적인 단계를 반복하지 않아도 됩니다.
 
-이 패키지는 [샘플 페이지 만들기](/help/communities/create-sample-page.md) 어서 뛰어들어 게임을 시작하는 것을 기다릴 수있는 자습서!..
+이 패키지는 [샘플 페이지 만들기](/help/communities/create-sample-page.md) 뛰어들어 재생을 시작할 때까지 기다릴 수 없는 사용자를 위한 튜토리얼입니다.
 
 패키지를 만들려면 다음을 수행하십시오.
 
@@ -161,7 +161,7 @@ include 문은에 포함됩니다. `head` 의 섹션 `html` 스크립트. 기본
    * 패키지 이름: an-scf-sandbox-minimal-pkg
    * 버전: 0.1
    * 그룹: `leave as default`
-   * **확인**&#x200B;을 클릭합니다
+   * 클릭 **확인**
 
 * 클릭 **편집**
 
@@ -169,15 +169,15 @@ include 문은에 포함됩니다. `head` 의 섹션 `html` 스크립트. 기본
 
       * 클릭 **필터 추가**
       * 루트 경로: 다음으로 이동 `/apps/an-scf-sandbox`
-      * **완료**&#x200B;를 클릭합니다
+      * 클릭 **완료**
       * 클릭 **필터 추가**
       * 루트 경로: 다음으로 이동 `/etc/designs/an-scf-sandbox`
-      * **완료**&#x200B;를 클릭합니다
+      * 클릭 **완료**
       * 클릭 **필터 추가**
       * 루트 경로: 다음으로 이동 `/content/an-scf-sandbox**`
-      * **완료**&#x200B;를 클릭합니다
+      * 클릭 **완료**
 
-   * **저장**&#x200B;을 클릭합니다
+   * 클릭 **저장**
 
 * 클릭 **빌드**
 

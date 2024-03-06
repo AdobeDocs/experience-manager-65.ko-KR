@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0f898fd81d2952b01eac7e6b8aa9970868009b15
 workflow-type: tm+mt
-source-wordcount: '5182'
+source-wordcount: '5177'
 ht-degree: 0%
 
 ---
@@ -679,7 +679,7 @@ N:definitions
 
 다음은 의 상수 값을 해결합니다. `VersionCreated` 문자열로 변환 `New version created`.
 
-자세한 내용은 `/libs/cq/reporting/components/auditreport/typecol/definitions/data`.
+다음을 참조하십시오 `/libs/cq/reporting/components/auditreport/typecol/definitions/data`.
 
 ```xml
 N:data
@@ -692,7 +692,7 @@ N:data
 
 해당 페이지의 jcr:content (하위) 노드에서 jcr:description 속성에 대한 경로 값을 확인합니다.
 
-자세한 내용은 `/libs/cq/reporting/components/compreport/pagecol/definitions/data`.
+다음을 참조하십시오 `/libs/cq/reporting/components/compreport/pagecol/definitions/data`.
 
 ```xml
 N:data
@@ -705,7 +705,7 @@ N:data
 
 다음은 의 경로를 확인합니다. `/content/.../page` 의 콘텐츠로 `jcr:title` 즉, 페이지 경로가 페이지 제목으로 확인됩니다.
 
-자세한 내용은 `/libs/cq/reporting/components/auditreport/pagecol/definitions/data`.
+다음을 참조하십시오 `/libs/cq/reporting/components/auditreport/pagecol/definitions/data`.
 
 ```xml
 N:data
@@ -719,7 +719,7 @@ N:data
 
 다음은 값 앞에 추가됩니다 `de` 경로 확장 사용 `/libs/wcm/core/resources/languages`를 클릭한 다음 속성에서 값을 가져옵니다. `language`를 클릭하여 국가 코드를 확인합니다 `de` 언어 설명으로 `German`.
 
-자세한 내용은 `/libs/cq/reporting/components/userreport/languagecol/definitions/data`.
+다음을 참조하십시오 `/libs/cq/reporting/components/userreport/languagecol/definitions/data`.
 
 ```xml
 N:data
@@ -1013,17 +1013,17 @@ N:cq:editConfig [cq:EditConfig]
 
 개별 원본 컴포넌트에 대해 사용자정의할 수 있는 (표준) 대화상자를 사용합니다. 이 대화 상자를 사용하면 보고서 사용자가 메뉴 옵션을 사용하여 보고서 페이지에서 일반 열의 열 속성을 정의할 수 있습니다 **열 속성...**).
 
-예: **일반** 열 **사용자 보고서**. 자세한 내용은 `/libs/cq/reporting/components/userreport/genericcol`.
+예: **일반** 열 **사용자 보고서**. 다음을 참조하십시오 `/libs/cq/reporting/components/userreport/genericcol`.
 
 열을 제네릭으로 만들려면 다음을 수행합니다.
 
 * 설정 `type` 열의 속성 `definition` 노드 대상 `generic`.
 
-  자세한 내용은 `/libs/cq/reporting/components/userreport/genericcol/definitions`
+  다음을 참조하십시오 `/libs/cq/reporting/components/userreport/genericcol/definitions`
 
 * 열의 아래에 (표준) 대화 상자 정의를 지정합니다. `definition` 노드.
 
-  자세한 내용은 `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
+  다음을 참조하십시오 `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
    * 대화 상자의 필드는 해당 구성 요소 속성의 경로 등 동일한 이름을 참조해야 합니다.
 
@@ -1033,7 +1033,7 @@ N:cq:editConfig [cq:EditConfig]
 
 * 구성 편집을 정의합니다.
 
-  자세한 내용은 `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
+  다음을 참조하십시오 `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
 
 * 표준 AEM 방법론을 사용하여 (추가적인) 열 속성을 정의합니다.
 

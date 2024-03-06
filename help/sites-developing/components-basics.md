@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4907'
+source-wordcount: '4843'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 이 섹션에서는 구성 요소를 개발할 때 필요한 세부 사항을 소개하는 주요 개념과 문제를 다룹니다.
 
-### 계획 {#planning}
+### 계획 수립 {#planning}
 
 구성 요소를 실제로 구성하거나 코딩하기 전에 다음 사항을 문의해야 합니다.
 
@@ -261,7 +261,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
   <tr>
    <td>.<br /> </td>
    <td><code>cq:Component</code></td>
-   <td>현재 구성 요소. 구성 요소가 노드 유형입니다. <code>cq:Component</code>.<br /> </td>
+   <td>현재 구성 요소입니다. 구성 요소가 노드 유형입니다. <code>cq:Component</code>.<br /> </td>
   </tr>
   <tr>
    <td><code>componentGroup</code></td>
@@ -706,7 +706,7 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 이러한 자리 
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>기본 값. 구성 요소 에디션은 클릭 및/또는 상황에 맞는 메뉴를 통해 "마우스 오버"로 액세스할 수 있습니다.<br /> 고급 사용을 위해 해당 클라이언트측 객체는 다음과 같습니다. <code>CQ.wcm.EditRollover</code>.</td>
+   <td>기본값. 구성 요소 에디션은 클릭 및/또는 상황에 맞는 메뉴를 통해 "마우스 오버"로 액세스할 수 있습니다.<br /> 고급 사용을 위해 해당 클라이언트측 객체는 다음과 같습니다. <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>

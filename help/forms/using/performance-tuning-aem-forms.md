@@ -7,9 +7,9 @@ topic-tags: Configuration
 docset: aem65
 role: Admin
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Apache는 HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. �
    <Location /content/xfaforms>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don't compress
+           #Do not compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -123,7 +123,7 @@ Apache는 HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. �
    <Location /content/forms/af>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don't compress
+           #Do not compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -167,7 +167,7 @@ Apache는 HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. �
 
 >[!NOTE]
 >
-* GDS 및 임시 디렉토리에 대해 다른 위치를 사용하는 경우 다음 위치에서 AdminUI를 엽니다. `https://'[server]:[port]'/adminui`, 다음으로 이동 **홈 > 설정 > 핵심 시스템 설정 > 핵심 구성** 사용 중인 위치를 확인합니다.
+>* GDS 및 임시 디렉토리에 대해 다른 위치를 사용하는 경우 다음 위치에서 AdminUI를 엽니다. `https://'[server]:[port]'/adminui`, 다음으로 이동 **홈 > 설정 > 핵심 시스템 설정 > 핵심 구성** 사용 중인 위치를 확인합니다.
 >
 * 제안된 디렉터리를 제외하고도 AEM Forms 서버가 느리게 수행되는 경우 Java™ 실행 파일(java.exe)도 제외합니다.
 >

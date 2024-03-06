@@ -1,7 +1,6 @@
 ---
 title: Designer 설치 및 구성
 description: 디자이너는 독립 실행형 설치 관리자로 사용할 수 있으며 Workbench와 함께 번들로 제공됩니다. 독립형 Designer를 설치하는 방법에 대해 알아봅니다.
-uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
@@ -10,9 +9,9 @@ docset: aem65
 role: Admin
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---

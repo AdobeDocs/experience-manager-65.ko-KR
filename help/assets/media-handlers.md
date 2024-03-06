@@ -1,19 +1,19 @@
 ---
-title: 미디어 핸들러 및 워크플로우를 사용하여 자산 처리
+title: 미디어 핸들러 및 워크플로우를 사용하여 에셋 처리
 description: 미디어 핸들러 및 워크플로우를 사용하여 디지털 에셋에서 작업을 수행하는 방법에 대해 알아봅니다.
 mini-toc-levels: 1
 contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2156'
-ht-degree: 5%
+source-wordcount: '2136'
+ht-degree: 3%
 
 ---
 
-# 미디어 핸들러 및 워크플로우를 사용하여 자산 처리 {#processing-assets-using-media-handlers-and-workflows}
+# 미디어 핸들러 및 워크플로우를 사용하여 에셋 처리 {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets] 에는 자산을 처리하는 기본 워크플로우 및 미디어 핸들러 세트가 포함되어 있습니다. 워크플로는 에셋에서 실행할 작업을 정의한 다음 특정 작업을 미디어 핸들러에 위임합니다(예: 썸네일 생성 또는 메타데이터 추출).
 
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 다음 미디어 핸들러는 내에서 사용할 수 있습니다. [!DNL Assets] 가장 일반적인 MIME 유형을 처리합니다.
 
-<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | 핸들러 이름 | 서비스 이름(시스템 콘솔) | 지원되는 MIME 유형 |
@@ -163,7 +163,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
       * 생성된 .class 파일 호환성
       * 소스 호환성
 
-   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 대화 상자 창에서 다음을 클릭합니다. **[!UICONTROL 예]**.
+   1. 클릭 **[!UICONTROL 확인]**. 대화 상자 창에서 다음을 클릭합니다. **[!UICONTROL 예]**.
 
 1. 의 코드를 바꿉니다. `pom.xml` 다음 코드가 있는 파일:
 
@@ -412,7 +412,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
      * * @return the number of words in the string
      * */
     private long wordCount(String text) {
-     // We need to keep track of the last character, if we have two whitespaces in a row we don't want to double count.
+     // We need to keep track of the last character, if we have two whitespaces in a row we do not want to double count.
      // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true;
      boolean currentWhiteSpace = true;
@@ -485,7 +485,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
    >
    >일부 버전의 Windows에서는 convert 명령이 의 일부인 기본 convert 유틸리티와 충돌하기 때문에 실행되지 않을 수 있습니다 [!DNL Windows] 설치. 이 경우 의 전체 경로를 언급하십시오. [!DNL ImageMagick] 이미지 파일을 썸네일로 변환하는 데 사용되는 소프트웨어입니다. 예: `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
 
-1. 도구가 제대로 실행되는지 확인하려면 작업 디렉터리에 JPG 이미지를 추가하고 convert 명령을 실행합니다 `<image-name>.jpg -flip <image-name>-flipped.jpg` 명령줄에 있습니다. 대칭 이동된 이미지가 디렉토리에 추가됩니다. Then, add the command line process step to the **[!UICONTROL DAM Update Asset]** workflow.
+1. 도구가 제대로 실행되는지 확인하려면 작업 디렉터리에 JPG 이미지를 추가하고 convert 명령을 실행합니다 `<image-name>.jpg -flip <image-name>-flipped.jpg` 명령줄에 있습니다. 대칭 이동된 이미지가 디렉토리에 추가됩니다. 그런 다음 명령줄 프로세스 단계를 **[!UICONTROL DAM 자산 업데이트]** 워크플로입니다.
 1. 로 이동 **[!UICONTROL 워크플로]** 콘솔.
 1. 다음에서 **[!UICONTROL 모델]** 탭, 편집 **[!UICONTROL DAM 자산 업데이트]** 모델.
 1. 변경 [!UICONTROL 인수] / **[!UICONTROL 웹 사용 표현물]** 단계: `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.

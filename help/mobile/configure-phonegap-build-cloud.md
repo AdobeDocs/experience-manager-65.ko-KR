@@ -6,10 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: d91a00d1-12fa-4c84-a426-49413f61c126
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 1%
+source-wordcount: '647'
+ht-degree: 2%
 
 ---
 
@@ -35,15 +35,15 @@ PhoneGap Build을 활용하려면 PhoneGap Build Cloud Service 정보로 AEM Pho
 
 PhoneGap Build 계정이 활성화되어 있는지 확인한 후 AEM Cloud Management Console로 이동합니다. 특히 [PhoneGap Build Cloud Service](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
-사용 **Cloud Services 관리** 타일을 사용하여 새 클라우드 서비스 구성을 구성합니다.
+사용 **Cloud Service 관리** 타일을 사용하여 새 클라우드 서비스 구성을 구성합니다.
 
-### Cloud Services 관리 타일 사용 {#using-manage-cloud-services-tile}
+### Cloud Service 관리 타일 사용 {#using-manage-cloud-services-tile}
 
-을 사용하여 앱 빌드를 시작하기 전에 **PhoneGap Build** 타일, 다음을 사용하여 클라우드 서비스를 구성해야 합니다. **Cloud Services 관리** AEM Mobile 대시보드에서 타일을 지정합니다.
+을 사용하여 앱 빌드를 시작하기 전에 **PhoneGap Build** 타일, 다음을 사용하여 클라우드 서비스를 구성해야 합니다. **Cloud Service 관리** AEM Mobile 대시보드에서 타일을 지정합니다.
 
 앱에 대한 클라우드 서비스를 구성하려면 아래 단계를 따르십시오.
 
-1. 의 오른쪽 위 모서리를 클릭합니다. **Cloud Services 관리** 타일.
+1. 의 오른쪽 위 모서리를 클릭합니다. **Cloud Service 관리** 타일.
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -55,7 +55,7 @@ PhoneGap Build 계정이 활성화되어 있는지 확인한 후 AEM Cloud Manag
 
 1. 클라우드 구성을 만들 수 있도록 자격 증명을 입력합니다.
 
-   확인했으면 다음을 클릭합니다. **제출**. 구성된 이 클라우드 구성은 이제 **Cloud Services 관리** 타일.
+   확인했으면 다음을 클릭합니다. **제출**. 구성된 이 클라우드 구성은 이제 **Cloud Service 관리** 타일.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 

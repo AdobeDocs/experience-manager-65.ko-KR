@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: '2352'
 ht-degree: 5%
 
 ---
@@ -942,7 +942,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 위쪽 모두)와 마법사 �
 
 패널 노드는 탐색기와 콘텐츠로 나뉩니다. 거기 `` `` 콘텐츠에 대한 별도의 스타일 구성 요소가 없습니다. 설명된 변수는 네비게이터 및 콘텐츠에 적용됩니다.
 
-맨 위 패널(RootPanel)에 이 클래스가 없습니다.
+최상위 패널(RootPanel)에 이 클래스가 없습니다.
 
 ## 모바일 스타일링 {#mobile-styling}
 

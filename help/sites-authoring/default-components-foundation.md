@@ -2,9 +2,9 @@
 title: 기초 구성 요소
 description: Adobe Experience Manager 6.5의 기초 구성 요소에 대해 알아봅니다.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6872'
+source-wordcount: '6873'
 ht-degree: 32%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 32%
 >
 >대부분의 기초 구성 요소는 이제 AEM 6.5에서 더 이상 사용되지 않습니다. 자세한 내용은 [릴리스 노트](/help/release-notes/deprecated-removed-features.md)를 참조하십시오.
 >
->Adobe은 보다 현대적이고 확장 가능한 기능을 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) AEM 프로젝트에서. 이러한 구성 요소는 [We.Retail 샘플 콘텐츠](/help/sites-developing/we-retail.md) 다음과 같을 수도 있습니다. [분리되어 설치되고 개발에 사용됨](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html) 관리자.
+>Adobe은 보다 현대적이고 확장 가능한 기능을 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) AEM 프로젝트에서. 이러한 구성 요소는 [We.Retail 샘플 콘텐츠](/help/sites-developing/we-retail.md) 다음과 같을 수도 있습니다. [분리되어 설치되고 개발에 사용됨](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html) 관리자.
 >
 >[AEM 현대화 도구 세트](https://opensource.adobe.com/aem-modernize-tools/)를 사용하여 Foundation 구성 요소 기반 사이트에서 핵심 구성 요소를 사용하도록 리팩터링할 수 있습니다.
 
@@ -212,13 +212,13 @@ QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있
 
 >[!NOTE]
 >
->AEM DAM에 디지털 에셋을 표시하는 Adobe Experience Manager용 사용자 지정 회전 메뉴 구성 요소를 만들 수 있습니다. 다음을 참조하십시오 [Adobe Experience Manager에 대한 사용자 지정 회전 메뉴 구성 요소 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+>AEM DAM에 디지털 에셋을 표시하는 Adobe Experience Manager용 사용자 지정 회전 메뉴 구성 요소를 만들 수 있습니다. 다음을 참조하십시오 [Adobe Experience Manager에 대한 사용자 지정 회전 메뉴 구성 요소 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR).
 
 ### 차트 {#chart}
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 차트 구성 요소를 사용하여 막대, 선 또는 원형 차트를 추가할 수 있습니다. AEM은 사용자가 제공하는 데이터에서 차트를 생성합니다. 데이터 탭에 직접 입력하거나 스프레드시트를 복사하여 붙여 넣어 데이터를 제공합니다.
 
@@ -247,7 +247,7 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 >[!NOTE]
 >
->AEM JCR의 데이터를 표시하는 사용자 지정 AEM 차트 컨트롤을 만들 수 있습니다. 자세한 내용은 [차트에 Adobe Experience Manager 데이터 표시](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+>AEM JCR의 데이터를 표시하는 사용자 지정 AEM 차트 컨트롤을 만들 수 있습니다. 자세한 내용은 [차트에 Adobe Experience Manager 데이터 표시](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR).
 
 ### 콘텐츠 조각 {#content-fragment}
 
@@ -261,7 +261,7 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 이 구성 요소를 사용하여 디자인 패키지를 포함하는 zip 파일을 업로드할 수 있습니다.
 
@@ -269,7 +269,7 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 다운로드 구성 요소는 선택한 웹 페이지에 특정 파일을 다운로드할 수 있는 링크를 만듭니다. 콘텐츠 파인더에서 에셋을 끌어 놓거나 파일을 업로드할 수 있습니다.
 
@@ -289,7 +289,7 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 외부 애플리케이션 통합 구성 요소(**외부**)는 iframe을 사용하여 외부 애플리케이션을 AEM 페이지에 포함할 수 있도록 해줍니다.
 
@@ -320,7 +320,7 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 >[!CAUTION]
 >
@@ -534,7 +534,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 >[!CAUTION]
 >
@@ -970,7 +970,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!CAUTION]
 >
->기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 양식 구성 요소는 방문자가 입력을 제출할 양식을 만드는 데 사용됩니다. Forms 및 양식 구성 요소를 사용하여 사용자 피드백(예: 고객 만족 설문지) 및 사용자 정보(예: 사용자 등록)를 포함한 정보를 수집할 수 있습니다.
 
@@ -1100,7 +1100,7 @@ Forms은 다음과 같은 몇 가지 구성 요소로 구성됩니다.
 
 >[!NOTE]
 >
->기초 구성 요소 양식 구성 요소는 다른 기초 구성 요소 양식 구성 요소(단추, 텍스트, 숨김 등)의 사용만 지원합니다. 사용 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 기초 구성 요소 양식 내의 양식 구성 요소는 (그리고 반대로) 지원되지 않습니다.
+>기초 구성 요소 양식 구성 요소는 다른 기초 구성 요소 양식 구성 요소(단추, 텍스트, 숨김 등)의 사용만 지원합니다. 사용 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 기초 구성 요소 양식 내의 양식 구성 요소는 (그리고 반대로) 지원되지 않습니다.
 
 #### 양식 시작 {#start-of-form}
 
@@ -1340,7 +1340,7 @@ Forms은 다음과 같은 몇 가지 구성 요소로 구성됩니다.
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 >[!CAUTION]
 >
@@ -1374,7 +1374,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 신용 카드 세부 사항을 입력하는 데 필요한 필드를 제공할 수 있습니다. 허용되는 카드 유형과 필요한 정보(예: 보안 코드)를 지정하도록 구성할 수 있습니다.
 
@@ -1402,7 +1402,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 파일 업로드 구성 요소는 사용자가 파일을 선택하여 업로드하는 메커니즘을 제공합니다.
 
@@ -1442,7 +1442,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 이미지 업로드 구성 요소는 사용자가 이미지 파일을 선택하여 업로드하는 메커니즘을 제공합니다.
 
@@ -1452,7 +1452,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 링크 필드는 사용자가 URL을 지정할 수 있도록 합니다.
 
@@ -1464,7 +1464,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 사용자가 암호를 입력할 수 있습니다.
 
@@ -1474,7 +1474,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 이 구성 요소는 사용자에게 다음 두 개의 필드를 제공합니다.
 
@@ -1521,7 +1521,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 대신,
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 대신,
 
 이 필드에서는 태그를 선택할 수 있습니다.
 

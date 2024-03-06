@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 2c0e3052e32e32f794faa69177d5fdad95bec72f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 * 기능 - 앱에서 모든 요구 사항을 충족합니까?
 * 유용성 - 고객이 앱을 쉽게 사용하고 이해할 수 있습니까?
-* 성능 - 사용량이 급증하는 동안 발생하는 작업 스와이프, 카로셀 같은 앱 요소가 빠르고 경험을 손상시키지 않습니까?
+* 성능 - 사용량이 급증하는 동안 발생하는 작업 스와이프와 캐러셀 같은 앱 요소가 빠르고 경험을 손상시키지 않습니까?
 * 실패 또는 중단 - 앱이 실행되는 동안 들어오는 호출 또는 알림이 있을 때 어떻게 됩니까? 네트워크가 중단되거나 전원이 꺼지면 어떻게 됩니까?
 * 설치 및 업데이트 - 설치 경험은 어떻습니까? 업데이트는 어떻게 푸시됩니까?
 * 기술 - 앱이 장치에서 너무 많은 전력을 소비합니까?

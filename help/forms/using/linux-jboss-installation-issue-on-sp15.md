@@ -2,9 +2,9 @@
 title: JBoss® Linux® 환경의 AEM Forms JEE 6.5.15.0 서비스 팩 설치 문제
 description: AEM Forms JEE 6.5.15.0 서비스 팩이 JBoss® Linux® 환경에 제대로 설치되지 않아 패치 변경 사항이 애플리케이션 서버에 적용되지 않습니다. XML 디렉토리에 'RUP_BOM.xml' 파일을 추가합니다.
 exl-id: 96ecbe58-a859-4432-a2d8-3d5dc0eaf989
-source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '204'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## 문제 {#issue}
 
-AEM Forms JEE 6.5.15.0 서비스 팩이 JBoss® Linux® 환경에 제대로 설치되지 않았습니다. 위치 `PatchInstallerProcessing[1-9*].log` 로그 항목을 파일링합니다. `[AEM_Forms_JEE_DIR]/patch/AEMForms-6.5.0-0057/xml/RUP_BOM.xml not found! Assuming this component isn't in the installation. Skipping Processing`: 기록됩니다. 이 항목은 AEM Forms JEE 6.5.15.0 서비스 팩 설치가 실패했음을 나타냅니다.
+AEM Forms JEE 6.5.15.0 서비스 팩이 JBoss® Linux® 환경에 제대로 설치되지 않았습니다. 위치 `PatchInstallerProcessing[1-9*].log` 로그 항목을 파일링합니다. `[AEM_Forms_JEE_DIR]/patch/AEMForms-6.5.0-0057/xml/RUP_BOM.xml not found! Assuming this component is not in the installation. Skipping Processing`: 기록됩니다. 이 항목은 AEM Forms JEE 6.5.15.0 서비스 팩 설치가 실패했음을 나타냅니다.
 
 ## 적용 대상 {#applies-to}
 

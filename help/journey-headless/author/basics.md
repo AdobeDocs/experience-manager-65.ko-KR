@@ -2,10 +2,10 @@
 title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 77%
+source-wordcount: '1694'
+ht-degree: 75%
 
 ---
 
@@ -76,7 +76,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 작업 도구 모음 은 현재 시나리오에 적용할 수 있는 전체 작업 범위에 대한 액세스를 제공합니다. 사용 가능한 작업은 변경될 수 있습니다. 예를 들어, 위치에 따라 또는 여러 리소스를 선택했는지 여부에 따라 변경될 수 있습니다.
 
-![액션 툴바](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+![작업 도구 모음](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
 
 보기 선택기를 사용하여 리소스를 보는 형식을 선택할 수 있습니다.
 
@@ -98,11 +98,11 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 #### 폴더 만들기 {#creating-folder}
 
-자산 콘솔의 **파일** 섹션에서 일련의 폴더를 만들어 이 작업을 수행할 수 있습니다. **만들기** 옵션(오른쪽 상단)을 선택한 다음 **폴더**&#x200B;를 선택합니다.
+이 작업은 내에 일련의 폴더를 만들어 수행할 수 있습니다 **파일** 섹션에 자세히 설명되어 있습니다. **만들기** 옵션(오른쪽 상단)을 선택한 다음 **폴더**&#x200B;를 선택합니다.
 
 ![폴더 만들기 옵션](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-세부 정보를 입력한 다음 을 확인할 수 있는 대화 상자가 열립니다 **만들기**:
+세부 정보를 입력할 수 있는 대화 상자를 연 다음 **만들기**&#x200B;로 확인합니다.
 
 ![폴더 만들기 대화 상자](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -126,7 +126,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 해당되는 경우에만...
 
-폴더를 만들 수 있는 초기 폴더가 제공될 수 있습니다. (일반적으로 개발자 또는 시스템 관리자에 의해) 일부 구성 세부 정보가 루트 폴더에 적용되어야 하기 때문입니다. 관심은 없지만 필요한 경우 폴더 **속성**&#x200B;의 **Cloud Services**&#x200B;에서 **구성**&#x200B;을 확인할 수 있습니다.
+폴더를 만들 수 있는 초기 폴더가 제공될 수 있습니다. (일반적으로 개발자 또는 시스템 관리자에 의해) 일부 구성 세부 정보가 루트 폴더에 적용되어야 하기 때문입니다. 이 작업은 귀하에게 별로 흥미가 없겠지만, 필요한 경우 다음을 확인할 수 있습니다. **구성** 다음에서 **Cloud Service** / 폴더 **속성**:
 
 ![폴더 속성 만들기 - 구성](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 

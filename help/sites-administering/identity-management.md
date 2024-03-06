@@ -7,9 +7,9 @@ topic-tags: Security
 content-type: reference
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1249'
 ht-degree: 1%
 
 ---
@@ -147,7 +147,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 * 은 사용자가 보고 액세스할 수 있습니다.
 * 각 속성에 대해 두 가지 상태를 정의합니다.
-* 정의된 두 상태 간 전환 허용
+* 정의된 두 상태 간을 전환할 수 있습니다.
 
 이 작업은 다음 작업을 통해 수행됩니다.
 

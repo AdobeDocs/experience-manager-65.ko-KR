@@ -7,10 +7,10 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '5736'
-ht-degree: 6%
+source-wordcount: '5650'
+ht-degree: 5%
 
 ---
 
@@ -121,7 +121,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 1. 다음에서 [!DNL Assets] 사용자 인터페이스에서 에셋에 대한 속성 페이지를 엽니다. 클릭 **[!UICONTROL 고급]** 및 클릭 **[!UICONTROL 추가]** 아래에 **[!UICONTROL 검색 키워드에 대한 개선]**.
 1. 다음에서 **[!UICONTROL Search Promote]** 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 **[!UICONTROL 추가]**. 동일한 방법으로 여러 키워드를 지정할 수 있습니다.
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 중에 나타납니다.
+1. 클릭 **[!UICONTROL 저장 및 닫기]**. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 중에 나타납니다.
 
 타겟팅된 키워드에 대한 검색 결과에서 일부 에셋의 등급을 높여 이점을 활용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 내용은 [에서 검색 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
@@ -155,7 +155,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 ### Dynamic Media assets {#dmassets}
 
-You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets.
+You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. 이미지 세트, 회전 메뉴, 혼합 미디어 세트 및 스핀 세트와 같은 에셋을 필터링하고 표시합니다.
 
 ### 메타데이터 필드의 특정 값을 사용하는 GQL 검색 {#gql-search}
 
@@ -164,14 +164,14 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 | 메타데이터 필드 | Facet 값 및 사용 |
 |---|---|
 | 제목 | title:John |
-| 작성자 | creator:John |
+| 크리에이터 | creator:John |
 | 위치 | 위치:NA |
 | 설명 | description:&quot;샘플 이미지&quot; |
-| 작성자 도구 | creatortool:&quot;Adobe Photoshop&quot; |
+| 크리에이터 도구 | creatortool:&quot;Adobe Photoshop&quot; |
 | 저작권 소유자 | 저작권 소유자:&quot;Adobe Systems&quot; |
 | 참여자 | 기여자:존 |
 | 사용 약관 | usageterms:&quot;CopyRights Reserved&quot; |
-| 작성일 | created:YYYY-MM-DDTHH |
+| 생성됨 | created:YYYY-MM-DDTHH |
 | 만료 날짜 | 만료: YYYY-MM-DDTHH |
 | 정시 | ontime:YYYY-MM-DDTHH |
 | 해제 시간 | offtime:YYYY-MM-DDTHH |
@@ -291,7 +291,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 * 전체 텍스트 검색은 다음과 같은 연산자를 지원합니다. `-` 및 `^`. 이러한 문자를 문자열 리터럴로 검색하려면 검색 표현식을 큰따옴표로 묶습니다. 예를 들어, `"Notebook - Beauty"` 대신 `Notebook - Beauty`.
 * 검색 결과가 너무 많으면 [검색 범위](#scope) 을 눌러 원하는 에셋에 대해 제로인을 수행합니다. 특정 파일 유형, 특정 위치, 특정 메타데이터 등과 같은 원하는 에셋을 더 잘 찾는 방법에 대한 아이디어가 있을 때 가장 잘 작동합니다.
 
-* **태깅**: 태그를 사용하여 보다 효율적으로 검색 및 검색할 수 있는 에셋을 분류할 수 있습니다. 태그 지정은 적절한 분류 체계를 다른 사용자 및 워크플로에 전파하는 데 도움이 됩니다. [!DNL Experience Manager] 은 사용 및 교육으로 자산에 태그를 지정하는 데 계속 더 능숙해지는 Adobe Sensei의 인위적인 인텔리전트 서비스를 사용하여 자산에 자동으로 태그를 지정하는 메서드를 제공합니다. 에셋을 검색할 때 계정에서 기능이 활성화되어 있으면 스마트 태그가 팩토링됩니다. 기본 제공 검색 기능과 함께 작동합니다. 다음을 참조하십시오 [검색 동작](#searchbehavior). 검색 결과가 표시되는 순서를 최적화하려면 다음을 수행할 수 있습니다 [검색 순위 높이기](#searchrank) 몇 개 중 일부 자산을 선택합니다.
+* **태깅**: 태그를 사용하여 보다 효율적으로 검색 및 검색할 수 있는 에셋을 분류할 수 있습니다. 태깅은 적절한 분류법을 다른 사용자 및 워크플로우에 전달하는 데 도움이 됩니다. [!DNL Experience Manager] 은 사용 및 교육으로 자산에 태그를 지정하는 데 계속 더 능숙해지는 Adobe Sensei의 인위적인 인텔리전트 서비스를 사용하여 자산에 자동으로 태그를 지정하는 메서드를 제공합니다. 에셋을 검색할 때 계정에서 기능이 활성화되어 있으면 스마트 태그가 팩토링됩니다. 기본 제공 검색 기능과 함께 작동합니다. 다음을 참조하십시오 [검색 동작](#searchbehavior). 검색 결과가 표시되는 순서를 최적화하려면 다음을 수행할 수 있습니다 [검색 순위 높이기](#searchrank) 몇 개 중 일부 자산을 선택합니다.
 
 * **색인화**: 인덱싱된 메타데이터 및 에셋만 검색 결과에 반환됩니다. 더 나은 적용 범위와 성능을 위해 적절한 색인화를 보장하고 모범 사례를 따르십시오. 다음을 참조하십시오 [색인화](#searchindex).
 
@@ -397,7 +397,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 | 검색 필드 | 속성 값 검색 |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | MIME 유형 | 이미지, 문서, 멀티미디어, 아카이브 또는 기타 |
-| 마지막 수정 날짜 | 시간, 일, 주, 월 또는 년. |
+| 마지막 수정일 | 시간, 일, 주, 월 또는 년. |
 | 파일 크기 | Small, Medium 또는 Large |
 | 게시 상태 | 게시 또는 게시 취소. |
 | 승인됨 상태 | 승인 또는 거부됨. |
@@ -426,7 +426,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 ### 검색 결과 정렬 {#sort}
 
-필요한 에셋을 더 빨리 검색하려면 검색 결과를 정렬하십시오. 검색 결과를 목록 보기에서 정렬할 수 있으며 다음을 선택할 때만 가능합니다. **[[!UICONTROL 파일]](#searchui)** 다음에서 **[!UICONTROL 필터]** 패널. [!DNL Assets] uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
+필요한 에셋을 더 빨리 검색하려면 검색 결과를 정렬하십시오. 검색 결과를 목록 보기에서 정렬할 수 있으며 다음을 선택할 때만 가능합니다. **[[!UICONTROL 파일]](#searchui)** 다음에서 **[!UICONTROL 필터]** 패널. [!DNL Assets] 는 서버측 정렬을 사용하여 폴더 또는 검색 쿼리 결과 내의 모든 에셋(그러나 그 수가 많음)을 빠르게 정렬합니다. Server-side sorting provides faster and more accurate results than client-side sorting.
 
 목록 보기에서 모든 폴더의 에셋을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, Dimension, 크기, 등급, 사용량, 생성됨, 수정됨, 게시됨, 워크플로우, 체크아웃됨 열에서 작동합니다.
 
@@ -483,7 +483,7 @@ You can create smart collections based on the search criteria. From the **[!UICO
 | 검색 결과가 너무 많습니다. | 광범위한 검색 매개 변수. | 제한 고려: [검색 범위](#scope). 스마트 태그를 사용하면 예상보다 많은 검색 결과를 얻을 수 있습니다. 다음을 참조하십시오 [스마트 태그를 사용한 검색 동작](#withsmarttags). |
 | 관련이 없거나 부분적으로 관련된 검색 결과. | 스마트 태깅으로 검색 동작이 변경됩니다. | 이해 [스마트 태그 지정 후 검색 변경 방법](#withsmarttags). |
 | 자산에 대한 자동 완성 제안이 없습니다. | 새로 업로드한 자산은 아직 색인화되지 않았습니다. Omnisearch 막대에 검색 키워드를 입력할 때 메타데이터를 즉시 제안으로 사용할 수 없습니다. | [!DNL Experience Manager] 는 배경 작업을 실행하여 새로 업로드되거나 업데이트된 모든 에셋의 메타데이터를 인덱싱한 다음 제안 목록에 메타데이터를 추가하기 전에 시간 초과 기간(기본적으로 1시간)이 만료될 때까지 대기합니다. |
-| 검색 결과 없음. | <ul><li>쿼리와 일치하는 에셋이 없습니다. </li><li> 검색 쿼리 앞에 공백을 추가했습니다. </li><li> 지원되지 않는 메타데이터 필드에 검색한 키워드가 포함되어 있습니다.</li><li> 에셋의 휴무 중 검색. </li></ul> | <ul><li>다른 키워드를 사용하여 검색합니다. 또는 스마트 태깅 또는 유사성 검색을 사용하여 검색 결과를 향상시킬 수 있습니다. </li><li>[알려진 제한 사항](#limitations).</li><li>모든 메타데이터 필드는 검색용으로 고려되지 않습니다. 다음을 참조하십시오 [범위](#scope).</li><li>필요한 에셋에 대해 나중에 검색하거나 정시 및 휴무를 수정합니다.</li></ul> |
+| 검색 결과가 없습니다. | <ul><li>쿼리와 일치하는 에셋이 없습니다. </li><li> 검색 쿼리 앞에 공백을 추가했습니다. </li><li> 지원되지 않는 메타데이터 필드에 검색한 키워드가 포함되어 있습니다.</li><li> 에셋의 휴무 중 검색. </li></ul> | <ul><li>다른 키워드를 사용하여 검색합니다. 또는 스마트 태깅 또는 유사성 검색을 사용하여 검색 결과를 향상시킬 수 있습니다. </li><li>[알려진 제한 사항](#limitations).</li><li>모든 메타데이터 필드는 검색용으로 고려되지 않습니다. 다음을 참조하십시오 [범위](#scope).</li><li>필요한 에셋에 대해 나중에 검색하거나 정시 및 휴무를 수정합니다.</li></ul> |
 | 검색 필터 또는 술어를 사용할 수 없습니다. | <ul><li>검색 필터가 구성되지 않았습니다.</li><li>로그인에 사용할 수 없습니다.</li><li>(가능성이 낮음) 사용 중인 배포에서 검색 옵션이 사용자 지정되지 않습니다.</li></ul> | <ul><li>관리자에게 문의하여 검색 사용자 지정을 사용할 수 있는지 확인하십시오.</li><li>관리자에게 문의하여 계정에 사용자 지정을 사용할 수 있는 권한/권한이 있는지 확인하십시오.</li><li>관리자에게 문의하여 다음에 사용할 수 있는 사용자 지정 사항을 확인하십시오. [!DNL Assets] 사용 중인 배포.</li></ul> |
 | 시각적으로 유사한 이미지를 검색할 때 예상 이미지가 누락됩니다. | <ul><li>에서 이미지를 사용할 수 없음 [!DNL Experience Manager].</li><li>이미지가 인덱싱되지 않았습니다. 일반적으로 최근에 업로드된 경우.</li><li>이미지가 스마트 태그가 지정되지 않았습니다.</li></ul> | <ul><li>에 이미지 추가 [!DNL Assets].</li><li>관리자에게 문의하여 저장소를 다시 색인화하십시오. 또한 적절한 색인을 사용하고 있는지 확인하십시오.</li><li>관련 에셋에 스마트 태그를 지정하려면 관리자에게 문의하십시오.</li></ul> |
 | 시각적으로 유사한 영상을 검색할 때, 무관한 영상이 표시된다. | 시각적 검색 동작. | [!DNL Experience Manager] 는 관련성이 있을 수 있는 에셋을 가능한 한 많이 표시합니다. 연관성이 낮은 이미지가 있는 경우 결과에 추가되지만 검색 순위가 낮습니다. 검색 결과를 아래로 스크롤하면 검색된 에셋의 일치 품질과 관련성이 감소합니다. |

@@ -6,10 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 1%
+source-wordcount: '494'
+ht-degree: 2%
 
 ---
 
@@ -95,7 +95,7 @@ app-admins 그룹의 구성원은 app-authors에 포함된 것과 동일한 권�
 
    >[!CAUTION]
    >
-   >/var/contentsync 액세스가 OOTB에 거부되었습니다.
+   >/var/contentsync 액세스가 즉시 거부됩니다.
    >
    >READ 권한을 생략하면 빈 업데이트 패키지가 빌드 및 복제될 수 있습니다.
 

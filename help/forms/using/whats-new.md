@@ -5,7 +5,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 39%
@@ -44,7 +44,7 @@ Experience Manager 6.5.19.0에는 2019년 4월 6.5의 초기 출시 이후 릴�
 
 #### Microsoft® SharePoint 목록과 적응형 Forms 연결
 
-AEM Forms은 OOTB 통합을 제공하여 [양식 데이터를 SharePoint 목록에 직접 제출](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list))을 클릭하여 SharePoint의 목록 기능을 사용할 수 있습니다. Microsoft® SharePoint 목록을 양식 데이터 모델에 대한 데이터 소스로 구성하고 양식 데이터 모델을 사용하여 제출 제출 액션을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
+AEM Forms은 다음과 같은 기본 제공 통합을 제공합니다. [양식 데이터를 SharePoint 목록에 직접 제출](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list))을 클릭하여 SharePoint의 목록 기능을 사용할 수 있습니다. Microsoft® SharePoint 목록을 양식 데이터 모델에 대한 데이터 소스로 구성하고 양식 데이터 모델을 사용하여 제출 제출 액션을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
 
 #### 적응형 양식 조각에 대한 기록 문서 속성 구성 지원
 

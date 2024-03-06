@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 3%
  </tbody>
 </table>
 
-즉, 클래식 UI에서 Touch UI로 UI 섹션을 마이그레이션하는 것은 *ExtJS 위젯* (으)로 *Sling 구성 요소*. 이를 쉽게 하기 위해 터치 UI는 UI에 대한 일부 Sling 구성 요소(Granite UI 구성 요소라고 함)를 이미 제공하고 있는 Granite UI 프레임워크를 기반으로 합니다.
+즉, 클래식 UI에서 Touch UI로 UI 섹션을 마이그레이션하면 가 *ExtJS 위젯* (으)로 *Sling 구성 요소*. 이를 쉽게 하기 위해 터치 UI는 UI에 대한 일부 Sling 구성 요소(Granite UI 구성 요소라고 함)를 이미 제공하고 있는 Granite UI 프레임워크를 기반으로 합니다.
 
 시작하기 전에 상태 및 관련 권장 사항을 확인하십시오.
 
@@ -133,7 +133,7 @@ Touch UI 개발의 기본 사항은 견고한 기반을 제공합니다.
 Touch UI로의 마이그레이션과 직접 관련이 없지만, 권장되는 연습 방법이므로 동시에 고려할 만한 관련 문제가 있습니다.
 
 * [템플릿](/help/sites-developing/templates.md) - [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)
-* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]

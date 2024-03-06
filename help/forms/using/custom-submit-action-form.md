@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1543'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 | AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
 | AEM 6.5 | 이 문서 |
 
-적응형 양식을 처리하려면 제출 액션이 필요합니다. 제출 액션은 적응형 양식을 사용하여 제출하는 데이터에 대해 수행되는 작업을 결정합니다. Adobe Experience Manager(AEM)에 포함되는 항목 [OOTB 제출 액션](../../forms/using/configuring-submit-actions.md) 사용자가 제출한 데이터를 사용하여 수행할 수 있는 사용자 정의 작업을 보여 줍니다. 예를 들어 이메일 전송 또는 데이터 저장과 같은 작업을 수행할 수 있습니다.
+적응형 양식을 처리하려면 제출 액션이 필요합니다. 제출 액션은 적응형 양식을 사용하여 제출하는 데이터에 대해 수행되는 작업을 결정합니다. Adobe Experience Manager(AEM)에 포함되는 항목 [즉시 사용 가능한 제출 액션](../../forms/using/configuring-submit-actions.md) 사용자가 제출한 데이터를 사용하여 수행할 수 있는 사용자 정의 작업을 보여 줍니다. 예를 들어 이메일 전송 또는 데이터 저장과 같은 작업을 수행할 수 있습니다.
 
 ## 제출 액션 워크플로우 {#workflow-for-a-submit-action}
 
@@ -80,11 +80,11 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 필요한 작업을 수행한 후 제출 서블릿은 요청을 전달 경로로 전달합니다. 작업은 setForwardPath API를 사용하여 안내서 제출 서블릿에서 전달 경로를 설정합니다.
 
-작업이 전달 경로를 제공하지 않으면 제출 서블릿은 리디렉션 URL을 사용하여 브라우저를 리디렉션합니다. 작성자는 적응형 양식 편집 대화 상자에서 감사 페이지 구성을 사용하여 리디렉션 URL을 구성합니다. 제출 액션 또는 안내서 제출 서블릿의 setRedirectUrl API를 통해 리디렉션 URL을 구성할 수도 있습니다. 안내서 제출 서블릿에서 setRedirectParameters API를 사용하여 리디렉션 URL로 전송된 요청 매개 변수를 구성할 수도 있습니다.
+작업이 전달 경로를 제공하지 않으면 제출 서블릿이 리디렉션 URL을 사용하여 브라우저를 리디렉션합니다. 작성자는 적응형 양식 편집 대화 상자에서 감사 페이지 구성을 사용하여 리디렉션 URL을 구성합니다. 제출 액션 또는 안내서 제출 서블릿의 setRedirectUrl API를 통해 리디렉션 URL을 구성할 수도 있습니다. 안내서 제출 서블릿에서 setRedirectParameters API를 사용하여 리디렉션 URL로 전송된 요청 매개 변수를 구성할 수도 있습니다.
 
 >[!NOTE]
 >
->작성자는 리디렉션 URL(감사 페이지 구성 사용)을 제공합니다. [OOTB 제출 액션](../../forms/using/configuring-submit-actions.md) 리디렉션 URL을 사용하여 전달 경로가 참조하는 리소스에서 브라우저를 리디렉션합니다.
+>작성자는 리디렉션 URL(감사 페이지 구성 사용)을 제공합니다. [즉시 사용 가능한 제출 액션](../../forms/using/configuring-submit-actions.md) 리디렉션 URL을 사용하여 전달 경로가 참조하는 리소스에서 브라우저를 리디렉션합니다.
 >
 >요청을 리소스 또는 서블릿에 전달하는 사용자 지정 제출 액션을 작성할 수 있습니다. Adobe은 전달 경로에 대한 리소스 처리를 수행하는 스크립트가 처리가 완료될 때 요청을 리디렉션 URL로 리디렉션하도록 권장합니다.
 
@@ -99,11 +99,11 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
    * **guideComponentType** 문자열 및 값 유형의 **fd/af/components/guidesubmittype**
    * **가이드 데이터 모델** 제출 액션을 적용할 수 있는 적응형 양식의 유형을 지정하는 문자열 유형입니다. **xfa** 은 다음 기간 동안 XFA 기반 적응형 양식에 대해 지원됩니다. **xsd** 은 XSD 기반 적응형 양식에 대해 지원됩니다. **기본** 는 XDP 또는 XSD를 사용하지 않는 적응형 양식에 대해 지원됩니다. 여러 유형의 적응형 양식에 작업을 표시하려면 해당 문자열을 추가합니다. 각 문자열은 쉼표로 구분합니다. 예를 들어 XFA 및 XSD 기반 적응형 양식에 작업을 표시하려면 값을 지정합니다 **xfa** 및 **xsd** 각각.
 
-   * **jcr:description** 유형 문자열. 이 속성의 값은 적응형 양식 편집 대화 상자의 제출 액션 탭에 있는 제출 액션 목록에 표시됩니다. OOTB 작업은 해당 위치의 CRX 저장소에 있습니다 **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:description** 유형 문자열. 이 속성의 값은 적응형 양식 편집 대화 상자의 제출 액션 탭에 있는 제출 액션 목록에 표시됩니다. 기본 작업은 위치의 CRX 저장소에 있습니다 **/libs/fd/af/components/guidesubmittype**.
 
 ## 사용자 지정 제출 액션 만들기 {#creating-a-custom-submit-action}
 
-다음 단계를 수행하여 CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 지정 제출 액션을 만듭니다. 적응형 양식에는 CRX 저장소에 데이터를 저장하는 OOTB 제출 액션 저장소 콘텐츠(더 이상 사용되지 않음)가 포함되어 있습니다. 또한 CQ는 [메일](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 이메일을 전송하는 데 사용할 수 있는 API입니다. Mail API를 사용하기 전에 [구성](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) 시스템 콘솔을 통한 일별 CQ 메일 서비스. 콘텐츠 저장(더 이상 사용되지 않음) 작업을 다시 사용하여 저장소에 데이터를 저장할 수 있습니다. 콘텐츠 저장(더 이상 사용되지 않음) 작업은 CRX 저장소의 /libs/fd/af/components/guidesubmittype/store에서 사용할 수 있습니다.
+다음 단계를 수행하여 CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 지정 제출 액션을 만듭니다. 적응형 양식에는 CRX 저장소에 데이터를 저장하는 즉시 사용 가능한 제출 액션 저장소 콘텐츠(더 이상 사용되지 않음)가 포함되어 있습니다. 또한 CQ는 [메일](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 이메일을 전송하는 데 사용할 수 있는 API입니다. Mail API를 사용하기 전에 [구성](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) 시스템 콘솔을 통한 일별 CQ 메일 서비스. 콘텐츠 저장(더 이상 사용되지 않음) 작업을 다시 사용하여 저장소에 데이터를 저장할 수 있습니다. 콘텐츠 저장(더 이상 사용되지 않음) 작업은 CRX 저장소의 /libs/fd/af/components/guidesubmittype/store에서 사용할 수 있습니다.
 
 1. URL https://에서 CRXDE Lite에 로그인합니다.&lt;server>:&lt;port>/crx/de/index.jsp입니다. /apps/custom_submit_action 폴더에 sling:Folder 및 name store_and_mail 속성을 사용하여 노드를 만듭니다. custom_submit_action 폴더가 아직 없는 경우 만듭니다.
 
@@ -139,7 +139,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
    작업에 post.user.jsp POST을 추가합니다. (/apps/custom_submit_action/store_and_mail/).
 
-   OOTB 저장소 작업 실행(post.store.jsp POST) 사용 [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)CQ가 스토어 작업을 실행하기 위해 코드에 제공하는 (java.lang.String, java.lang.String, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API입니다. JSP 파일에 다음 코드를 추가합니다.
+   기본 제공 저장 작업(post.store.jsp POST)을 실행합니다. 사용 [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)CQ가 스토어 작업을 실행하기 위해 코드에 제공하는 (java.lang.String, java.lang.String, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API입니다. JSP 파일에 다음 코드를 추가합니다.
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

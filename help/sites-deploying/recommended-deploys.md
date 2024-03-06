@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ AEM Communities의 경우 UGC(사용자 생성 컨텐츠)는 복제되지 않습
 
 ### 단일 데이터 센터에서 고가용성을 위한 MongoMK 장애 조치 기능이 있는 Oak 클러스터 {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
-이 방법은 여러 Oak 인스턴스가 단일 데이터 센터 내의 MongoDB 복제본 세트에 액세스하고 결과적으로 AEM 작성자 환경에 대한 활성-활성 클러스터를 생성함을 의미합니다. MongoDB의 복제본 세트는 하드웨어나 네트워크 장애 발생 시 고가용성과 이중화를 제공하는 데 사용됩니다.
+이 방법은 여러 Oak 인스턴스가 단일 데이터 센터 내의 MongoDB 복제본 세트에 액세스하고 결과적으로 AEM 작성자 환경에 대한 활성-활성 클러스터를 생성함을 의미합니다. MongoDB의 복제본 세트는 하드웨어나 네트워크 장애 시 고가용성과 이중화를 제공하는 데 사용됩니다.
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 

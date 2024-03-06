@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 SAML(Security Assertion Markup Language)은 엔터프라이즈 또는 하이브리드 도메인에 대한 인증을 구성할 때 선택할 수 있는 옵션 중 하나입니다. SAML은 주로 여러 도메인에서 SSO를 지원하는 데 사용됩니다. SAML이 인증 공급자로 구성된 경우 사용자는 지정된 타사 ID 공급자(IDP)를 통해 AEM Forms에 로그인하고 인증합니다.
 
-SAML에 대한 설명은 [SAML(Security Assertion Markup Language) V2.0 기술 개요](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
+SAML에 대한 설명은 [SAML(Security Assertion Markup Language) V2.0 기술 개요](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > SAML 서비스 공급자 설정 을 클릭합니다.
 1. 서비스 공급자 엔티티 ID 상자에 AEM forms 서비스 공급자 구현에 대한 식별자로 사용할 고유 ID를 입력합니다. 또한 IDP를 구성할 때 이 고유 ID를 지정합니다(예: `um.lc.com`.) AEM 양식에 액세스하는 데 사용되는 URL을 사용할 수도 있습니다(예: `https://AEMformsserver`).

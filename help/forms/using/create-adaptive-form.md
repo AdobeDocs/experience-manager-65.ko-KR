@@ -3,9 +3,9 @@ title: '자습서: 적응형 양식 만들기'
 description: 적응형 양식을 만들고, 레이아웃하고, 미리 보는 방법에 대해 알아봅니다. 또한 제출 액션을 구성하는 방법도 알아보십시오.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1314'
 ht-degree: 8%
 
 ---
@@ -166,10 +166,10 @@ AEM [!DNL Forms] 은 적응형 양식에 대한 정보를 표시하는 많은 �
 
    | 속성 | 값 |
    |--- |--- |
-   | 시작 | `donotreply@weretail.com` |
+   | 출처 | `donotreply@weretail.com` |
    | 끝 | `${customer_Email}` |
    | 제목 | 승인: We.Retail 웹 사이트에 배송 주소를 추가했습니다. |
-   | 이메일 템플릿 | 안녕하세요. `${customer_Name}`, 다음 주소가 계정의 배송 주소로 추가됩니다. <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> 감사합니다. We.Retail |
+   | 전자 메일 템플릿 | 안녕하세요. `${customer_Name}`, 다음 주소가 계정의 배송 주소로 추가됩니다. <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> 감사합니다. We.Retail |
    | 첨부 파일 포함 | 활성화됨 |
 
    양식이 준비되었습니다. 이제 양식을 미리 보고 기능을 테스트할 수 있습니다. 자습서에 언급된 이름을 사용하고 AEM을 실행하는 컴퓨터에서 양식에 액세스한 경우 [!DNL Forms] 서버의 경우 다음에서 양식을 사용할 수 있습니다. [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).

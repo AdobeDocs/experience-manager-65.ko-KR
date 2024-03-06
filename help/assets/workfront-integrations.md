@@ -5,10 +5,10 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 6%
+source-wordcount: '1174'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 | AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
-[!DNL Adobe Workfront]는 업무의 전체 라이프사이클을 한 곳에서 관리할 수 있도록 도와주는 작업 관리 애플리케이션입니다. 통합 대상 [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets] 에서는 작업과 디지털 에셋 관리를 본질적으로 연결하여 콘텐츠 속도와 마켓 출시 속도를 개선할 수 있습니다. Workfront에서 작업을 관리하는 맥락에서 사용자는 필요한 문서 및 이미지에 액세스할 수 있습니다.
+[!DNL Adobe Workfront] 는 업무의 전체 라이프사이클을 한 곳에서 관리할 수 있도록 도와주는 작업 관리 애플리케이션입니다. 통합 대상 [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets] 에서는 작업과 디지털 에셋 관리를 본질적으로 연결하여 콘텐츠 속도와 마켓 출시 속도를 개선할 수 있습니다. Workfront에서 작업을 관리하는 맥락에서 사용자는 필요한 문서 및 이미지에 액세스할 수 있습니다.
 
 다음 [!DNL Workfront for Experience Manager enhanced connector] 엔드 투 엔드 워크플로우를 통해 향상된 비즈니스 프로세스를 구현하고 개인화된 엔드 투 엔드 클라이언트 경험과 중앙 스토리지를 제공합니다. Adobe은 표준 커넥터와 두 솔루션을 통합할 수 있는 향상된 커넥터를 제공합니다. 비교에 대해서는 아래의 지원되는 기능 을 참조하십시오. [의 새로운 기능 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
@@ -47,9 +47,9 @@ ht-degree: 6%
 
 다음은 다양한 유형의 통합을 통해 사용할 수 있는 기능에 대한 세부 정보입니다 [!DNL Assets] 및 [!DNL Workfront].
 
-| 특별 포함 | 설명 | [!DNL Workfront] 및 [!DNL Assets Essentials] *커넥터 없음(OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *커넥터 필요* | Workfront 및 [!DNL Experience Manager as a Cloud Service] *커넥터 없음(OOTB)* |
+| 기능 | 설명 | [!DNL Workfront] 및 [!DNL Assets Essentials] *커넥터 없음(기본 제공)* | [!DNL Workfront for Experience Manager enhanced connector] *커넥터 필요* | Workfront 및 [!DNL Experience Manager as a Cloud Service] *커넥터 없음(기본 제공)* |
 |----|----|----|-----|-----|
-| 배포 메서드 | 다음에 적합 [!DNL Assets] 제공. | Assets Essentials | Adobe Managed Services, On-Premise | 클라우드 서비스 |
+| 배포 메서드 | 다음에 적합 [!DNL Assets] 제공. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
 | **일반** |
 | 에서 디지털 파일 보내기 [!DNL Workfront] 끝 [!DNL Assets] | WF 문서의 최신 버전은 문서의 새 버전으로 연결된 AEM Assets에 업로드할 수 있습니다. | ✓ | ✓ | ✓ |
 | 수동으로 AEM 폴더에 Workfront 개체 연결 | 기존 AEM 폴더는 Workfront 폴더로 연결되고 하위 자산은 새 Workfront 문서로 연결됩니다. | ✓ | ✓ | ✓ |

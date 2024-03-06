@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2963'
+source-wordcount: '2964'
 ht-degree: 52%
 
 ---
@@ -517,7 +517,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 >
 >[키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)를 사용하면 레일 디스플레이 옵션 간을 빠르게 전환할 수 있습니다.
 
-### 컨텐츠 트리 {#content-tree}
+### 콘텐츠 트리 {#content-tree}
 
 콘텐츠 트리를 사용하여 사이드 패널에서 사이트 계층 구조를 빠르게 탐색하고, 현재 폴더의 페이지에 대한 다양한 정보를 볼 수 있습니다.
 

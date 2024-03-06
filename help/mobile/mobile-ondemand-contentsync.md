@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2971'
 ht-degree: 0%
 
 ---
@@ -38,12 +38,12 @@ Content Sync Handler 개발에 대한 몇 가지 지침은 다음과 같습니�
 
 * 처리기는 다음을 구현해야 합니다. *com.day.cq.contentsync.handler.ContentUpdateHandler* (작업을 수행하는 클래스를 직접 확장하거나 확장)
 * 처리기는 확장할 수 있습니다. *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* 처리기는 ContentSync 캐시를 업데이트하는 경우에만 true를 보고해야 합니다. true를 잘못 보고하면 업데이트가 실제로 발생하지 않았을 때 AEM에서 업데이트를 만듭니다.
+* 처리기는 ContentSync 캐시를 업데이트하는 경우에만 true를 보고해야 합니다. true를 잘못 보고하면 업데이트가 실제로 발생하지 않았을 때 AEM에서 업데이트를 만들게 됩니다.
 * 처리기는 콘텐츠가 변경된 경우에만 캐시를 업데이트해야 합니다. 흰색이 필요하지 않은 경우 캐시에 쓰지 마십시오. 따라서 불필요한 업데이트가 생성됩니다.
 
 >[!NOTE]
 >
->사용 *ContentSync 디버그 로깅* 패키지의 OSGI 로거 구성을 통해 *com.day.cq.contentsync*. 그러면 어떤 핸들러가 실행되었는지, 캐시가 업데이트되었는지, 캐시 업데이트가 보고되었는지 여부를 추적할 수 있습니다.
+>사용 *ContentSync 디버그 로깅* 패키지의 OSGI 로거 구성을 통해 *com.day.cq.contentsync*. 그러면 어떤 핸들러가 실행되었는지, 그리고 핸들러가 캐시를 업데이트했는지, 그리고 캐시 업데이트를 보고했는지 추적할 수 있습니다.
 
 ## 컨텐츠 동기화 컨텐츠 구성 {#configuring-the-content-sync-content}
 
@@ -281,7 +281,7 @@ public class OtherTypeUpdateHandler extends AbstractSlingResourceUpdateHandler {
 
 ### 사용자 지정 업데이트 처리기 구현 {#implementing-a-custom-update-handler}
 
-모든 We.Retail 모바일 페이지에는 zip 파일에 포함되어야 하는 로고가 왼쪽 상단 모서리에 있습니다. 그러나 캐시 최적화를 위해 AEM은 저장소의 이미지 파일 실제 위치를 참조하지 않으므로 를 사용하지 못할 수 있습니다. **복사** 구성 유형. 대신 당신이 해야 할 일은 우리의 것을 제공하는 것입니다 **로고** AEM에서 요청한 위치에서 이미지를 사용할 수 있도록 하는 구성 유형입니다. 다음 코드 목록은 로고 업데이트 처리기의 전체 구현을 보여 줍니다.
+모든 We.Retail 모바일 페이지에는 zip 파일에 포함되어야 하는 로고가 왼쪽 상단 모서리에 있습니다. 그러나 캐시 최적화를 위해 AEM은 저장소에서 이미지 파일의 실제 위치를 참조하지 않으므로 를 단순히 사용하지 못합니다. **복사** 구성 유형. 대신 당신이 해야 할 일은 우리의 것을 제공하는 것입니다 **로고** AEM에서 요청한 위치에서 이미지를 사용할 수 있도록 하는 구성 유형입니다. 다음 코드 목록은 로고 업데이트 처리기의 전체 구현을 보여 줍니다.
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

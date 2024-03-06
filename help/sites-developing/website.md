@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4941'
-ht-degree: 4%
+source-wordcount: '4920'
+ht-degree: 3%
 
 ---
 
@@ -461,7 +461,7 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
    <div class="topnav">topnav</div>
    ```
 
-   with:
+   포함:
 
    ```xml
    <cq:include path="topnav" resourceType="mywebsite/components/topnav" />
@@ -676,7 +676,7 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
       * 유형: `String`
       * 값: `This is a description of the Product 1!.`
 
-   1. **추가**&#x200B;를 클릭합니다.
+   1. 클릭 **추가**.
    1. 다음에서 **속성** 탭에서 다음 값을 사용하여 다른 속성을 만듭니다.
 
       * 이름: 날짜
@@ -695,7 +695,7 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
       * 유형: 문자열
       * 값: 제품 2에 대한 설명입니다.
 
-   1. **추가**&#x200B;를 클릭합니다.
+   1. 클릭 **추가**.
    1. 동일한 텍스트 상자에서 이전 값을 다음 값으로 바꿉니다.
 
       * 이름: 날짜
@@ -925,7 +925,7 @@ listchildren 구성 요소를 contentpage 구성 요소에 포함하려면 다�
    |---|---|---|
    | fileNameParameter | 문자열 | ./imageName |
    | fileReferenceParameter | 문자열 | ./imageReference |
-   | 이름 | 문자열 | ./이미지 |
+   | 이름 | 문자열 | ./image |
    | 제목 | 문자열 | 이미지 |
    | xtype | 문자열 | html5smartimage |
 
@@ -968,7 +968,7 @@ public class img_GET extends AbstractImageServlet {
 
     protected Layer createLayer(ImageContext c)
             throws RepositoryException, IOException {
-        /* don't create the layer yet. handle everything later */
+        /* do not create the layer yet. handle everything later */
         return null;
     }
 
@@ -1054,7 +1054,7 @@ public class img_GET extends AbstractImageServlet {
    <div>trail</div>
    ```
 
-   with:
+   포함:
 
    ```xml
    <cq:include path="trail" resourceType="foundation/components/breadcrumb" />
@@ -1075,7 +1075,7 @@ public class img_GET extends AbstractImageServlet {
    <div>title</div>
    ```
 
-   with:
+   포함:
 
    ```xml
    <cq:include path="title" resourceType="foundation/components/title" />
@@ -1120,7 +1120,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 #### 이미지 구성 요소 만들기 {#creating-the-image-component-1}
 
-1. 마우스 오른쪽 버튼으로 `/apps/mywebsite/components/logo` 노드를 클릭하고 복사를 클릭합니다.
+1. 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components/logo` 노드를 클릭하고 복사를 클릭합니다.
 1. 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components` 노드를 클릭하고 붙여넣기를 클릭합니다.
 1. 마우스 오른쪽 단추 클릭 `Copy of logo` 노드를 클릭하고 이름 바꾸기를 클릭한 다음 기존 텍스트와 유형을 삭제합니다. `image`.
 
@@ -1520,7 +1520,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
    <div>iparsys</div>
    ```
 
-   with:
+   포함:
 
    ```java
    <cq:include path="rightpar" resourceType="foundation/components/iparsys" />

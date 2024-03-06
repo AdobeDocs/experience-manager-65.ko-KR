@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2939'
 ht-degree: 5%
 
 ---
@@ -349,7 +349,7 @@ AEM에서 바이너리 데이터는 컨텐츠 노드와 독립적으로 저장�
 
 * 다음과 같은 경우 JCR API를 직접 사용하지 마십시오.
 * /libs를 변경하지 말고 오버레이를 사용하십시오.
-* 가능하면 쿼리를 사용하지 않음
+* 가능하면 쿼리를 사용하지 마십시오.
 * Sling 바인딩을 사용하여 Java™ 코드로 OSGi 서비스를 가져오지 않고 다음을 사용합니다.
 
    * DS 구성 요소의 @Reference
@@ -452,7 +452,7 @@ TarMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처�
   <tr>
    <td>JVM 매개변수</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> </td>
-   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> </td>
+   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>참</p> </td>
    <td>확장 쿼리가 시스템을 오버로드할 수 없도록 하려면 AEM 시작 스크립트에서 이러한 JVM 매개변수를 추가하십시오.</td>
   </tr>
   <tr>
@@ -470,13 +470,13 @@ TarMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처�
   <tr>
    <td>DAM 자산 업데이트 워크플로우</td>
    <td><code>Transient Workflow</code></td>
-   <td>선택함</td>
+   <td>선택됨</td>
    <td>이 워크플로우는 자산 업데이트를 관리합니다.</td>
   </tr>
   <tr>
    <td>DAM 메타데이터 원본에 쓰기</td>
    <td><code>Transient Workflow</code></td>
-   <td>선택함</td>
+   <td>선택됨</td>
    <td>이 워크플로우는 원본 이진에 대한 XMP 다시 쓰기를 관리하고 JCR에서 마지막으로 수정된 날짜를 설정합니다.</td>
   </tr>
  </tbody>
@@ -562,7 +562,7 @@ MongoMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처
   <tr>
    <td>JVM 매개변수</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> <p><code>Doak.mongo.maxQueryTimeMS</code></p> </td>
-   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> <p>60000</p> </td>
+   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>참</p> <p>60000</p> </td>
    <td>확장 쿼리가 시스템을 오버로드할 수 없도록 하려면 AEM 시작 스크립트에서 이러한 JVM 매개변수를 추가하십시오.</td>
   </tr>
   <tr>
@@ -605,11 +605,11 @@ MongoMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처
 | CPU/코어 | Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8코어 | Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8코어 |
 | RAM | 32GB | 32GB |
 | 디스크 | 마그네틱 - >1k IOPS | 마그네틱 - >1k IOPS |
-| Java™ | Oracle JRE 버전 8 | N/A |
-| JVM 힙 | 16GB | N/A |
+| Java™ | Oracle JRE 버전 8 | 해당 사항 없음 |
+| JVM 힙 | 16GB | 해당 사항 없음 |
 | 제품 | AEM 6.2 | MongoDB 3.2 WiredTiger |
-| Nodestore | 몽고 | N/A |
-| 데이터 저장소 | 파일 DS | N/A |
+| Nodestore | 몽고 | 해당 사항 없음 |
+| 데이터 저장소 | 파일 DS | 해당 사항 없음 |
 | 시나리오 | 단일 제품: 에셋 / 동시 스레드 30개 | 단일 제품: 에셋 / 동시 스레드 30개 |
 
 ### 성능 벤치마크 결과 {#performance-benchmark-results-1}
@@ -695,13 +695,13 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
   <tr>
    <td>Java™</td>
    <td>Oracle JRE 버전 8</td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
    <td> </td>
   </tr>
   <tr>
    <td>JVM 힙16GB</td>
    <td>16GB</td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
    <td> </td>
   </tr>
   <tr>
@@ -713,13 +713,13 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
   <tr>
    <td>Nodestore</td>
    <td>TarMK 또는 MongoMK</td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
    <td> </td>
   </tr>
   <tr>
    <td>데이터 저장소</td>
    <td>파일 DS </td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
    <td> </td>
   </tr>
   <tr>
@@ -783,13 +783,13 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
    <td>Java™</td>
    <td>Oracle JRE 버전 8</td>
    <td><br /> Oracle JRE 버전 8</td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td>JVM 힙16GB</td>
    <td>30GB</td>
    <td>30GB</td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td>제품 </td>
@@ -801,13 +801,13 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
    <td>Nodestore</td>
    <td>TarMk </td>
    <td>몽고</td>
-   <td><br /> N/A</td>
+   <td><br /> 해당 사항 없음</td>
   </tr>
   <tr>
    <td>데이터 저장소</td>
    <td>파일 DS </td>
    <td><br /> 파일 DS</td>
-   <td><br /> N/A</td>
+   <td><br /> 해당 사항 없음</td>
   </tr>
   <tr>
    <td>시나리오</td>

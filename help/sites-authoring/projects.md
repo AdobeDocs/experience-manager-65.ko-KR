@@ -1,11 +1,11 @@
 ---
 title: 프로젝트
-description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화하여 공통, 공유 환경에서 프로젝트를 쉽게 관리할 수 있습니다..
+description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 이 엔티티는 공유 환경을 통해 프로젝트를 쉽게 관리할 수 있습니다.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 33%
+source-wordcount: '1360'
+ht-degree: 27%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 33%
 
 프로젝트는 함께 관리하려는 다양한 유형의 정보로 구성됩니다. 이 정보는 다른 로 표시됩니다. **타일**.
 
-다음 타일을 프로젝트와 연결할 수 있습니다.
+다음과 같은 타일을 프로젝트와 연결할 수 있습니다.
 
 * [자산](#assets)
 * [자산 컬렉션](#asset-collections)
@@ -102,7 +102,7 @@ ht-degree: 33%
 
 ![자산 타일](assets/project-tile-assets.png)
 
-타일에서 바로 자산을 업로드할 수 있습니다.
+타일에서 바로 에셋을 업로드할 수 있습니다.
 
 ### 자산 컬렉션 {#asset-collections}
 
@@ -221,9 +221,9 @@ ht-degree: 33%
 
 ### 자동 그룹 만들기 {#auto-group-creation}
 
-프로젝트를 생성하고 다양한 역할에 사용자를 추가하면 프로젝트와 연결된 그룹이 자동으로 생성되어 관련 권한을 관리합니다.
+프로젝트를 만들고 사용자를 다양한 역할에 추가하면 연결된 권한을 관리하기 위해 프로젝트와 연결된 그룹이 자동으로 만들어집니다.
 
-예를 들어 Myproject라는 프로젝트에는 세 개의 그룹(**Myproject 소유자**, **Myproject 편집자**, **Myproject 관찰자**)이 있습니다.
+예를 들어 Myproject라는 프로젝트에는 세 개의 그룹이 있습니다 **내 프로젝트 소유자**, **내 프로젝트 편집기**, **내 프로젝트 옵저버**.
 
 프로젝트가 삭제되면 해당 그룹은 적절한 옵션을 선택한 경우에만 삭제됩니다 [프로젝트를 삭제할 때.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) 관리자는 의 그룹을 수동으로 삭제할 수도 있습니다. **도구** > **보안** > **그룹**.
 

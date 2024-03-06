@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -261,7 +261,7 @@ CRXDE Lite을 사용하여 속성 설정 `debug` 끝 **true** 아래:
 
 자동 모드에서는 모든 디버그 정보가 표시되지 않습니다. 각 ContextHub 구성에 대해 독립적으로 설정할 수 있는 일반 디버그 옵션과 달리, 자동 모드는 ContextHub 구성 수준의 디버그 설정에 우선하는 전역 설정입니다.
 
-디버그 정보가 전혀 필요하지 않은 게시 인스턴스에 유용합니다. 전역 설정이므로 OSGi를 통해 활성화됩니다.
+이 기능은 디버그 정보를 전혀 원하지 않는 게시 인스턴스에 유용합니다. 전역 설정이므로 OSGi를 통해 활성화됩니다.
 
 1. 를 엽니다. **Adobe Experience Manager 웹 콘솔 구성** 위치: `http://<host>:<port>/system/console/configMgr`
 1. 검색 대상 **Adobe Granite ContextHub**

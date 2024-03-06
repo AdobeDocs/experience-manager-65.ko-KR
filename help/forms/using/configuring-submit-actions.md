@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2593'
 ht-degree: 48%
 
 ---
@@ -235,7 +235,7 @@ Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습�
 
 ### 서버에서의 유효성 검사 대상은 무엇입니까? {#what-to-validate-on-server-br}
 
-서버에서 다시 실행되는 적응형 양식의 모든 즉시 사용 가능한(OOTB) 필드 유효성 검사는 다음과 같습니다.
+서버에서 다시 실행되는 적응형 양식의 모든 기본 필드 유효성 검사는 다음과 같습니다.
 
 * 필수
 * 유효성 검사 픽처 구절

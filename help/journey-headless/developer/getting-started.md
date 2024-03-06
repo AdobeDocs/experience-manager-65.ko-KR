@@ -2,9 +2,9 @@
 title: AEM Headless 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2998'
+source-wordcount: '2999'
 ht-degree: 96%
 
 ---
@@ -206,7 +206,7 @@ AEM에서는 유연한 콘텐츠 구조를 사용하고 계층은 임의적으�
 
 AEM 페이지 이름 지정 규칙에 대한 추가 설명서는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
-##### 콘텐츠 중첩을 지나치게 확장하지 마십시오. {#content-nesting}
+##### 컨텐츠 중첩을 과도하게 확장하지 않음 {#content-nesting}
 
 [콘텐츠 조각](#content-fragments)은 AEM에서 Headless 콘텐츠를 만드는 데 사용됩니다. AEM은 콘텐츠 조각에 대해 최대 10개의 콘텐츠 중첩 수준을 지원합니다. 단, AEM은 상위 콘텐츠 조각에 정의된 각 참조를 반복적으로 해결한 다음 하위 참조가 동일한 수준의 참조에 모두 있는지 확인해야 하는 것이 중요합니다. 해당 작업은 빠르게 합산되어 성능 관련 문제가 될 수 있습니다.
 
@@ -258,7 +258,7 @@ GraphQL은 AEM과 Headless 콘텐츠 사용자 사이에서 “접착제” 역�
 경험 섹션이 다르면 콘텐츠 업데이트 주기가 달라지는 경우가 있습니다. 이 정보를 이해하려면 CDN 및 캐시 구성을 미세 조정할 수 있어야 합니다. [콘텐츠 설계자](#content-architects)가 모델을 디자인하여 콘텐츠를 나타내는 경우 중요한 정보입니다. 고려해야 할 사항:
 
 * 특정 기간이 경과하면 특정 유형의 콘텐츠는 만료되어야 합니까?
-* 사용자별로 지정되어 캐시될 수 없는 요소가 있습니까?
+* 사용자별로 다르므로 캐시할 수 없는 요소가 있습니까?
 
 ## 다음 단계 {#what-is-next}
 
@@ -282,7 +282,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
 
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 튜토리얼을 사용하여 AEM을 통해 콘텐츠를 Headless 엔드포인트를 게재하는 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택합니다.
-* [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. AdobeID를 통한 인증이 필수입니다.
+* [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. Adobe ID를 통한 인증이 필요합니다.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM의 GraphQL API를 강조 표시하는 예제 애플리케이션이 포함됩니다.
 * [작성 개념](/help/sites-authoring/author.md) - 작성-게시 설정의 세부 정보가 포함된 AEM의 작성 환경을 대한 기술 설명서
 * [페이지 게시](/help/sites-authoring/publishing-pages.md) - AEM에서 콘텐츠 게시에 대한 기술 설명서
@@ -295,4 +295,4 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만드는 방법에 대한 기술 설명서
 * [Assets REST API](/help/assets/assets-api-content-fragments.md) - 콘텐츠 조각(및 기타 자산)을 만들고 수정하는 방법에 대한 기술 설명서
 * [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md) - AEM의 지속 쿼리에 대한 기술 설명서
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR)

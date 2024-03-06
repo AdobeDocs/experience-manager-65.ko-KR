@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ GDS가 원래 위치가 아닌 다른 위치로 복원되면 LCSetGDS 스크립�
 
 >[!NOTE]
 >
->데이터베이스에서 문서 저장소를 활성화한 경우에는 GDS 위치를 변경할 필요가 없습니다.
+>데이터베이스에서 문서 저장을 활성화한 경우에는 GDS 위치를 변경할 필요가 없습니다.
 
 >[!NOTE]
 >

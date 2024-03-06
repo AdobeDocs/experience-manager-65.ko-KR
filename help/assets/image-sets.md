@@ -9,9 +9,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 886edbf0e98f5cdee176aaa0a7dffcf18b1a7cc2
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2274'
 ht-degree: 5%
 
 ---
@@ -38,8 +38,10 @@ ht-degree: 5%
 
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
-| 세트당 중복 에셋 수 | 중복 항목 없음 | 20 |
+| 세트당 중복 에셋 수 | 중복 항목 없음 | 20‡ |
 | 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000년 |
+
+‡ 가장 좋은 방법은 집합에 중복 에셋이 없는 것입니다. 단일 자산에 대한 중복 횟수는 20회로 제한됩니다. 해당 에셋에 대해 다른 중복을 추가하면 해당 세트 내에서 요청에 오류가 발생하거나 중복을 무시합니다.
 
 참조: [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
@@ -141,8 +143,10 @@ ht-degree: 5%
 
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
-| 세트당 중복 에셋 수 | 중복 항목 없음 | 20 |
+| 세트당 중복 에셋 수 | 중복 항목 없음 | 20‡ |
 | 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000 |
+
+‡ 가장 좋은 방법은 집합에 중복 에셋이 없는 것입니다. 단일 자산에 대한 중복 횟수는 20회로 제한됩니다. 해당 에셋에 대해 다른 중복을 추가하면 해당 세트 내에서 요청에 오류가 발생하거나 중복을 무시합니다.
 
 참조: [Dynamic Media 제한 사항](/help/assets/limitations.md).
 

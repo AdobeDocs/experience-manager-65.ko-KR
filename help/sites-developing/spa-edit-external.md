@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 내에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 Adobe Experience Manager 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 1%
+source-wordcount: '2391'
+ht-degree: 0%
 
 ---
 
@@ -153,7 +153,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 작성 가능한 React 구성 요소가 생성되면 애플리케이션 전체에서 사용할 수 있습니다.
 
-WKND SPA 프로젝트의 텍스트를 추가해야 하는 예제 페이지를 예로 들어 보겠습니다. 이 예제에서는 &quot;Hello World!&quot; 텍스트를 표시합니다. 켜짐 `/content/wknd-spa-react/us/en/home.html`.
+WKND SPA 프로젝트의 텍스트를 추가해야 하는 예제 페이지를 예로 들어 보겠습니다. 이 예제에서는 &quot;Hello World!&quot; 텍스트를 표시합니다. 날짜 `/content/wknd-spa-react/us/en/home.html`.
 
 1. 표시할 노드의 경로를 결정합니다.
 
@@ -360,7 +360,7 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 ## 프레임워크 제한 사항 {#framework-limitations}
 
-RemotePage 구성 요소에서는 구현이 자산 매니페스트와 같은 자산 매니페스트를 제공할 것으로 예상합니다 [여기에서 찾음](https://github.com/shellscape/webpack-manifest-plugin). 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 애플리케이션을 로드하는 것을 지원하지 않습니다.
+RemotePage 구성 요소에서는 구현이 자산 매니페스트와 같은 자산 매니페스트를 제공할 것으로 예상합니다 [여기에서 찾음](https://github.com/shellscape/webpack-manifest-plugin). 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 응용 프로그램을 로드할 수 없습니다.
 
 ## 추가 리소스 {#additional-resources}
 

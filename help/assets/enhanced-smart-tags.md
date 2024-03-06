@@ -6,9 +6,9 @@ feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1559'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 디지털 에셋을 다루는 조직은 에셋 메타데이터에서 분류 제어 어휘를 사용하는 경우가 점점 늘어나고 있습니다. 기본적으로 직원, 파트너 및 고객이 특정 클래스의 디지털 에셋을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록을 포함합니다. 분류 제어 어휘를 사용하여 자산에 태그를 지정하면 자산을 쉽게 식별하고 검색할 수 있습니다.
@@ -99,7 +99,6 @@ ht-degree: 1%
 >1. 훈련은 돌이킬 수 없는 과정이다. Adobe은 태그에 대한 스마트 컨텐츠 서비스를 교육하기 전에 조정된 자산 세트의 태그를 검토할 것을 권장합니다.
 >1. 태그 교육 전에 다음을 참조하십시오. [스마트 컨텐츠 서비스 교육 지침](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 >1. 스마트 컨텐츠 서비스를 처음 교육할 때 Adobe은 두 개 이상의 서로 다른 태그에 대해 교육하는 것을 권장합니다.
-
 
 ## 이해 [!DNL Experience Manager] 스마트 태그를 사용한 검색 결과 {#understandsearch}
 

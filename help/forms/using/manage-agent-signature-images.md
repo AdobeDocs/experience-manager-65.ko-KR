@@ -7,9 +7,9 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -68,7 +68,7 @@ agentFolder DDE의 값은 서신 관리 구성 속성에 대한 CMUserRoot 구�
 
       ![jcr:content 속성](assets/3_jcrcontentntresource.png)
 
-      jcr:content의 하위 속성 중에는 흐리게 표시되는 jcr:data가 있습니다. jcr:data를 두 번 클릭합니다. 속성을 편집할 수 있고 [파일 선택] 버튼이 항목에 나타납니다. 클릭 **파일 선택** 로고로 사용할 이미지 파일을 선택합니다. 이미지 파일에는 확장명이 없습니다.
+      jcr:content의 하위 속성 중에는 흐리게 표시되는 jcr:data가 있습니다. jcr:data를 두 번 클릭합니다. 속성을 편집할 수 있고 [파일 선택] 버튼이 항목에 나타납니다. 클릭 **파일 선택** 로고로 사용할 이미지 파일을 선택합니다. 이미지 파일에는 확장명이 필요하지 않습니다.
 
       ![JCR 데이터](assets/5_jcrdata.png)
 

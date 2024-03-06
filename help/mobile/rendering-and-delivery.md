@@ -5,9 +5,9 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '574'
 ht-degree: 6%
 
 ---
@@ -74,42 +74,42 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
   </tr>
   <tr>
    <td>includeComponents</td>
-   <td>문자열[]</td>
+   <td>String[]</td>
    <td>모든 항목 포함</td>
    <td>sling:resourceType</td>
    <td>sling:resourceType이 지정된 노드에 대한 세부 사항을 JSON 내보내기에서 제외</td>
   </tr>
   <tr>
    <td>excludeComponents</td>
-   <td>문자열[]</td>
+   <td>String[]</td>
    <td>제외 안 함</td>
    <td>sling:resourceType</td>
    <td>json 내보내기에서 sling:resourceType이 지정된 노드에 대한 세부 정보만 포함</td>
   </tr>
   <tr>
    <td>excludePropertyPrefix</td>
-   <td>문자열[]</td>
+   <td>String[]</td>
    <td>제외 안 함</td>
    <td>속성 접두사</td>
    <td>지정된 접두사로 시작하는 속성을 JSON 내보내기에서 제외</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
-   <td>문자열[]</td>
+   <td>String[]</td>
    <td>제외 안 함</td>
    <td>속성 이름</td>
    <td>json 내보내기에서 지정된 속성 제외</td>
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>문자열[]</td>
+   <td>String[]</td>
    <td>모든 항목 포함</td>
    <td>속성 이름</td>
    <td><p>excludePropertyPrefixes가 설정된 경우<br /> 여기에는 제외되는 접두사와 일치하지만 지정된 속성이 포함됩니다.</p> <p>else(속성 제외 무시됨)에는 다음 속성만 포함됩니다</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
-   <td>문자열[]</td>
+   <td>String[]</td>
    <td>모든 항목 포함</td>
    <td>하위 이름</td>
    <td>json 내보내기에서 지정된 하위 항목 제외</td>
@@ -152,7 +152,7 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
   </tr>
   <tr>
    <td>&lt;SELECTOR_TO_INC&gt;</td>
-   <td>문자열[] </td>
+   <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
    <td>다음 sling 리소스 유형의 경우 기본 CaaS json 내보내기를 반환하지 마십시오.<br /> 리소스를 (으)로 렌더링하여 고객 json 내보내기를 반환합니다.<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>

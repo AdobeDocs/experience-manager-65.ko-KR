@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3089'
-ht-degree: 4%
+source-wordcount: '3084'
+ht-degree: 0%
 
 ---
 
@@ -250,11 +250,11 @@ ht-degree: 4%
 
 UGC(사용자 생성 컨텐츠) 중재에 대한 전역 설정은 이러한 설정에 의해 제어됩니다. 개별 구성 요소에는 중재 제어를 위한 추가 설정이 있습니다.
 
-* **컨텐츠가 미리 중재되었음**
+* **컨텐츠가 미리 중재됨**
 
   선택하면 중재자가 승인할 때까지 게시된 커뮤니티 컨텐츠가 표시되지 않습니다. 기본값은 선택 취소되어 있습니다. 자세한 내용은 [커뮤니티 컨텐츠 중재](/help/communities/moderate-ugc.md#premoderation).
 
-* **컨텐츠가 숨겨지기 전에 임계값에 플래그 지정**
+* **콘텐츠가 숨겨지기 전에 임계값에 플래그 지정**
 
   0보다 큰 경우 주제나 게시물이 공개 보기에서 숨겨지기 전에 플래그 지정해야 하는 횟수입니다. -1로 설정하면 플래그가 지정된 항목이나 게시물이 공개 보기에서 숨겨지지 않습니다. 기본값은 5입니다.
 
@@ -284,7 +284,7 @@ UGC(사용자 생성 컨텐츠) 중재에 대한 전역 설정은 이러한 설�
 
 ![기계 번역 허용](assets/allow-machine-translation.png)
 
-* **선택한 언어에 대한 기계 번역 사용**
+* **선택한 언어에 대해 기계 번역 사용**
 
   기계 번역을 위해 활성화된 언어는 기본적으로 [번역 통합 구성](/help/communities/translate-ugc.md#translation-integration-configuration). 기본값을 삭제하거나 풀다운 메뉴에서 다른 언어를 선택하여 이 사이트에 대해 이러한 기본 설정이 재정의될 수 있습니다.
 
@@ -320,7 +320,7 @@ UGC(사용자 생성 컨텐츠) 중재에 대한 전역 설정은 이러한 설�
 
      기본값은 입니다 *선택되지 않음*.
 
-   * **번역을 유지하지 않습니다**
+   * **번역 유지 안 함**
 
      선택하면 번역이 저장소에 저장되지 않습니다.
 
@@ -332,7 +332,7 @@ UGC(사용자 생성 컨텐츠) 중재에 대한 전역 설정은 이러한 설�
 
   다음 중 하나를 선택합니다.
 
-   * `Always show contributions in the original language` (기본값)
+   * `Always show contributions in the original language`(기본값)
    * `Always show contributions in user preferred language`
    * `Show contributions in user preferred language for only logged-in users`
 

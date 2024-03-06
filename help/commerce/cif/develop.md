@@ -7,9 +7,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '798'
 ht-degree: 2%
 
 ---
@@ -158,7 +158,7 @@ Venia Reference Store를 시작하려면 다음을 복제하십시오. [Git 저�
 
 AEM Commerce 추가 기능 및 CIF 핵심 구성 요소는 AEM 서버를 통해 직접 브라우저를 통해 commerce GraphQL 엔드포인트에 연결합니다. 클라이언트측 CIF 핵심 구성 요소 및 CIF 추가 기능 작성 도구 기본적으로 다음으로 연결 `/api/graphql`. 필요한 경우 CIF Cloud Service 구성을 통해 조정할 수 있습니다(아래 참조).
 
-CIF 추가 기능은에서 GraphQL 프록시 서블릿을 제공합니다. `/api/graphql`. 로컬 AEM Dispatcher를 사용할 계획이 없는 경우 GraphQL 프록시 서블릿도 구성하는 것이 좋습니다.
+CIF 추가 기능은에서 GraphQL 프록시 서블릿을 제공합니다. `/api/graphql`. 로컬 AEM Dispatcher를 사용하지 않을 경우에는 GraphQL 프록시 서블릿도 구성하는 것이 좋습니다.
 
 http://localhost:4502/system/console/configMgr으로 이동하여 `Adobe CIF GraphQL Proxy Configuration` 서비스. 위의 GraphQL 클라이언트에 사용된 것과 동일한 상거래 시스템의 GraphQL 엔드포인트를 사용합니다.
 

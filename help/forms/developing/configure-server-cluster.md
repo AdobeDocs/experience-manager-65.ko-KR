@@ -2,9 +2,9 @@
 title: JEE 서버 클러스터에서 AEM Forms을 구성하고 문제를 해결하는 방법
 description: JEE 서버 클러스터에서 Adobe Experience Manager(AEM) Forms을 구성하고 문제를 해결하는 방법에 대해 알아봅니다.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3959'
+source-wordcount: '3945'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ GemFire는 GemFire 캐시에서 어떤 클러스터 멤버가 발견되고 채�
 [info 2011/08/05 09:28:10.128 EDT GemfireCacheAdapter <server.startup : 0> tid=0x64] DistributionManager ap-hp7(2821)<v1>:19498/59136 started on 239.192.81.1[33456]. There were 1 other DMs. others: [ap-hp8(4268)<v0>:18763/56449]
 ```
 
-**만약 GemFire가 해서는 안 될 노드를 찾는 것이라면 어떻게 해야 할까?**
+**GemFire가 해서는 안 되는 노드를 찾는 경우 어떻게 해야 합니까?**
 
 기업 네트워크를 공유하는 각 클러스터는 TCP 로케이터를 사용하는 경우 별도의 TCP 로케이터 집합을 사용하고, 멀티캐스트 UDP 구성을 사용하는 경우에는 별도의 UDP 포트 번호를 사용해야 합니다. UDP 자동 검색은 JEE의 AEM Forms에 대한 기본 구성이며 여러 클러스터에서 동일한 기본 포트를 사용하고 33456 때문에 통신을 시도하지 않아야 하는 클러스터가 예기치 않게 그럴 수 있습니다. 예를 들어, 프로덕션 클러스터와 QA 클러스터는 별도로 유지되어야 하지만 UDP 멀티캐스트를 통해 서로 연결될 수 있습니다.
 
@@ -244,7 +244,7 @@ and ones like:
 
 ### Quartz 스케줄러 {#quartz-scheduler}
 
-일반적으로 AEM Forms on JEE가 클러스터에서 내부 Quartz 스케줄러를 사용하는 것은 일반적으로 AEM Forms on JEE의 전역 클러스터 구성을 자동으로 따르도록 하기 위한 것입니다. 그러나 TCP 로케이터가 멀티캐스트 자동 검색 대신 Gemfire에 사용되는 경우 Quartz의 자동 클러스터 구성이 실패하는 버그가 #2794033. 이 경우 Quartz가 비클러스터형 모드에서 잘못 실행됩니다. 이로 인해 쿼츠 테이블에 교착 상태와 데이터 손상이 발생합니다. 버전 8.2.x는 9.0보다 부작용이 더 심한데, 이는 쿼츠를 많이 사용하지 않지만 여전히 있기 때문이다.
+일반적으로 AEM Forms on JEE가 클러스터에서 내부 Quartz 스케줄러를 사용하는 것은 일반적으로 AEM Forms on JEE의 전역 클러스터 구성을 자동으로 따르도록 하기 위한 것입니다. 그러나 TCP 로케이터가 멀티캐스트 자동 검색 대신 Gemfire에 사용되는 경우 Quartz의 자동 클러스터 구성이 실패하는 버그가 #2794033. 이 경우 Quartz가 비클러스터형 모드에서 잘못 실행됩니다. 이로 인해 쿼츠 테이블에 교착 상태와 데이터 손상이 발생합니다. 버전 8.2.x가 9.0보다 부작용이 더 심한데, 이는 석영을 많이 사용하지 않지만 여전히 있기 때문이다.
 
 이 문제에 대한 수정 사항은 다음과 같습니다. 8.2.1.2 QF2.143 및 9.0.0.2 QF2.44.
 
@@ -273,7 +273,7 @@ Quartz가 단일 노드로 실행되도록 설정되어 있지만 클러스터�
 
 ```xml
 [1/20/11 10:40:57:584 EST] 00000035 ErrorLogger   E org.quartz.core.ErrorLogger schedulerError An error occured while marking executed job complete. job= 'Asynchronous.TaskFormDataSaved:12955380518320.5650479324757354'
- org.quartz.JobPersistenceException: Couldn't remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
+ org.quartz.JobPersistenceException: Could not remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.removeTrigger(JobStoreSupport.java:1405)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:2888)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport$38.execute(JobStoreSupport.java:2872)

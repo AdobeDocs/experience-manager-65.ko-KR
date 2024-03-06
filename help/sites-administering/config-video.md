@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
 
 # 비디오 구성 요소 구성 {#configure-the-video-component}
 
-다음 [비디오 구성 요소](/help/sites-authoring/default-components-foundation.md#video) 사전 정의된 기본 제공(OOTB) 비디오 에셋을 페이지에 배치할 수 있습니다.
+다음 [비디오 구성 요소](/help/sites-authoring/default-components-foundation.md#video) 사전 정의된 기본 비디오 에셋을 페이지에 배치할 수 있습니다.
 
 적절한 코드 변환이 일어나도록 관리자가 FFmpeg를 별도로 설치합니다. 다음을 참조하십시오 [FFmpeg 설치 및 AEM 구성](#install-ffmpeg). 관리자 [비디오 프로필 구성](#configure-video-profiles) HTML5 요소와 함께 사용됩니다.
 
@@ -81,4 +81,4 @@ FFmpeg를 설치하려면 **macOS x 10.6**, 미리 컴파일된 버전을 사용
 
 >[!NOTE]
 >
->AEM 인스턴스를 업그레이드할 때 기본 OOTB(기본 제공) 워크플로우 모델에 대한 변경 사항은 유지되지 않습니다. Adobe은 수정된 워크플로우 모델을 편집하기 전에 복사하는 것을 권장합니다. 예를 들어 OOTB를 복사합니다 [!UICONTROL DAM 자산 업데이트] 에서 FFmpeg 코드 변환 단계를 편집하기 전에 모델을 만듭니다. [!UICONTROL DAM 자산 업데이트] 모델 을 사용하여 업그레이드 전에 있었던 비디오 프로필 이름을 선택할 수 있습니다. 그런 다음 를 오버레이할 수 있습니다. `/apps` AEM이 OOTB 모델에 대한 사용자 지정 변경 사항을 검색할 수 있도록 해 주는 노드입니다.
+>AEM 인스턴스를 업그레이드할 때 기본 기본 워크플로우 모델에 대한 변경 사항은 유지되지 않습니다. Adobe은 수정된 워크플로우 모델을 편집하기 전에 복사하는 것을 권장합니다. 예를 들어 기본 제공 을 복사합니다. [!UICONTROL DAM 자산 업데이트] 에서 FFmpeg 코드 변환 단계를 편집하기 전에 모델을 만듭니다. [!UICONTROL DAM 자산 업데이트] 모델 을 사용하여 업그레이드 전에 있었던 비디오 프로필 이름을 선택할 수 있습니다. 그런 다음 를 오버레이할 수 있습니다. `/apps` 노드를 통해 AEM이 기본 제공 모델에 대한 사용자 지정 변경 사항을 검색할 수 있습니다.

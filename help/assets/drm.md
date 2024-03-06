@@ -6,10 +6,10 @@ role: User, Admin
 feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 7%
+source-wordcount: '1425'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 디지털 에셋은 종종 사용 약관 및 기간을 지정하는 라이선스와 연결됩니다. 이유 [!DNL Adobe Experience Manager Assets] 와 완전히 통합되었습니다. [!DNL Experience Manager] 플랫폼에서 에셋 만료 정보 및 에셋 상태를 효율적으로 관리할 수 있습니다. 라이선스 정보를 자산과 연결할 수도 있습니다.
@@ -91,7 +91,7 @@ ht-degree: 7%
 다음 [!DNL Assets] 콘솔에는 에셋에 대한 다양한 상태가 표시될 수 있습니다. 특정 에셋의 현재 상태에 따라 해당 카드 보기에는 만료됨, 게시됨, 승인됨, 거부됨 등과 같은 에셋 상태를 설명하는 레이블이 표시됩니다.
 
 1. 다음에서 [!DNL Assets] 사용자 인터페이스에서 자산을 선택합니다.
-1. 클릭 **[!UICONTROL 게시]** 을 클릭합니다. 표시되지 않으면 **게시** 도구 모음에서 를 클릭합니다 **[!UICONTROL 자세히]** 도구 모음에서 를 찾아 **[!UICONTROL 게시]** ![게시 옵션](assets/do-not-localize/publish-globe.png) 옵션을 선택합니다.
+1. 클릭 **[!UICONTROL 게시]** 을 클릭합니다. 표시되지 않는 경우 **게시** 도구 모음에서 를 클릭합니다 **[!UICONTROL 자세히]** 도구 모음에서 를 찾아 **[!UICONTROL 게시]** ![게시 옵션](assets/do-not-localize/publish-globe.png) 옵션을 선택합니다.
 1. 선택 **[!UICONTROL 게시]** 메뉴에서 확인 대화 상자를 닫습니다.
 1. 선택 모드를 종료합니다. 에셋의 게시 상태는 카드 보기의 에셋 썸네일 하단에 나타납니다. 목록 보기의 게시됨 열에는 에셋이 게시된 시간이 표시됩니다.
 

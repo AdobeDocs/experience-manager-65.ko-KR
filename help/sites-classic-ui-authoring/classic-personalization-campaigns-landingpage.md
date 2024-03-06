@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '3323'
-ht-degree: 3%
+source-wordcount: '3360'
+ht-degree: 4%
 
 ---
 
@@ -451,7 +451,7 @@ zip 파일을 다운로드하면 특정 랜딩 페이지와 함께 가져온 zip
 
 랜딩 페이지를 삭제하는 것은 일반 AEM 페이지를 삭제하는 것과 같습니다.
 
-유일한 예외는 데스크탑 랜딩 페이지를 삭제할 때 해당 모바일 랜딩 페이지(있는 경우)도 삭제하지만 그 반대의 경우는 삭제하지 않는다는 것입니다.
+유일한 예외는 데스크탑 랜딩 페이지를 삭제할 때 해당 모바일 랜딩 페이지(있는 경우)도 삭제하지만 반대는 삭제하지 않는다는 것입니다.
 
 ### 랜딩 페이지 게시 {#publishing-a-landing-page}
 

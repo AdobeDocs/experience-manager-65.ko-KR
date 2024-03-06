@@ -5,16 +5,16 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 9%
+source-wordcount: '2665'
+ht-degree: 7%
 
 ---
 
 # 메타데이터 개념 이해 {#why-we-need-metadata}
 
-메타데이터는 데이터에 대한 데이터를 의미합니다. 이와 관련하여 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 자산 관리에 있어 매우 중요합니다.
+메타데이터는 데이터에 대한 데이터를 의미합니다. 이와 관련하여 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 에셋 관리에 중요합니다.
 
 메타데이터는 에셋에 사용할 수 있는 모든 데이터의 집합이지만 해당 이미지에 반드시 포함되지는 않습니다. 메타데이터의 일부 예는 다음과 같습니다.
 
@@ -134,7 +134,7 @@ Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 성격�
 * 참조 - [!DNL Creative Commons].
 * [!DNL XMPRights]
 * 플러스 - [Picture Licensing Universal System](https://www.useplus.com).
-* 프리즘 - [업계 표준 메타데이터에 대한 게시 요구 사항](https://www.idealliance.org/prism-metadata).
+* 프리즘 - [업계 표준 메타데이터에 대한 게시 요구 사항](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * PRL - PRISM Rights 언어.
 * PUR - 프리즘 사용 권한.
 * `xmpPlus` - PLUS와 XMP 통합.
@@ -149,7 +149,7 @@ Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 성격�
 ### 인쇄별 메타데이터 {#print-specific-metadata}
 
 * PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션.
-* 프리즘 - [업계 표준 메타데이터에 대한 게시 요구 사항](https://www.idealliance.org/prism-metadata).
+* 프리즘 - [업계 표준 메타데이터에 대한 게시 요구 사항](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - 페이징된 텍스트에 대한 XMP 메타데이터
 
@@ -183,7 +183,7 @@ DCMES 외에도, 더블린 코어 이니셔티브에 의해 생성된 다른 메
 | 게시자 | 에셋을 사용할 수 있도록 만드는 담당자 또는 회사입니다. |
 | 관계 | 관련 에셋. |
 | 권한 | 이 자산에 대한 권한이 있는 사용자에 대한 정보입니다. |
-| source | 에셋이 파생된 관련 에셋. |
+| 소스 | 에셋이 파생된 관련 에셋. |
 | 제목 | 에셋의 주제입니다. |
 | 제목 | 에셋의 이름입니다. |
 | 유형 | 에셋의 특성 또는 장르. |

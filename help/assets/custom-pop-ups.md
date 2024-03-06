@@ -1,6 +1,6 @@
 ---
 title: 빠른 보기를 사용하여 사용자 정의 팝업 제작
-description: 기본 빠른 보기는 팝업이 제품 정보와 함께 표시되어 구매를 유도하는 전자 상거래 경험에 사용됩니다. 팝업에 표시할 사용자 지정 콘텐츠를 트리거할 수 있습니다.
+description: 기본 빠른 보기는 전자 상거래 경험에서 제품 정보와 함께 팝업이 표시되어 구매를 유도하는 데 사용됩니다. 팝업에 표시할 사용자 지정 콘텐츠를 트리거할 수 있습니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -8,16 +8,16 @@ content-type: reference
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
 
 # 빠른 보기를 사용하여 사용자 정의 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
 
-기본 빠른 보기는 팝업이 제품 정보와 함께 표시되어 구매를 유도하는 전자 상거래 경험에 사용됩니다. 하지만 사용자 지정 콘텐츠를 트리거하여 팝업에 표시할 수 있습니다. 이 기능을 사용하면 뷰어에 따라 핫스팟, 썸네일 이미지 또는 이미지 맵에서 선택하여 정보 또는 관련 콘텐츠를 볼 수 있습니다.
+기본 빠른 보기는 전자 상거래 경험에서 제품 정보와 함께 팝업이 표시되어 구매를 유도하는 데 사용됩니다. 하지만 사용자 지정 콘텐츠를 트리거하여 팝업에 표시할 수 있습니다. 이 기능을 사용하면 뷰어에 따라 핫스팟, 썸네일 이미지 또는 이미지 맵에서 선택하여 정보 또는 관련 콘텐츠를 볼 수 있습니다.
 
 빠른 보기는 Dynamic Media의 다음 뷰어에서 지원됩니다.
 

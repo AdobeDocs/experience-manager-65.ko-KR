@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media 뷰어를 Analytics 및 Adobe Experience Platform 태그와 통합
+title: Dynamic Media 뷰어를 Adobe Analytics 및 Experience Platform 태그와 통합
 description: Experience Platform 태그 및 Dynamic Media 뷰어 5.13용 Dynamic Media 뷰어 확장에 대해 알아봅니다. 이를 통해 Adobe Analytics 및 Experience Platform 태그의 고객은 Experience Platform 태그 구성에서 Dynamic Media 뷰어에 대한 특정 이벤트 및 데이터를 사용할 수 있습니다.
 mini-toc-levels: 3
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6618'
-ht-degree: 7%
+source-wordcount: '6664'
+ht-degree: 5%
 
 ---
 
-# Dynamic Media 뷰어를 Analytics 및 Adobe Experience Platform 태그와 통합 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Dynamic Media 뷰어를 Adobe Analytics 및 Experience Platform 태그와 통합 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Adobe Analytics 및 Experience Platform 태그와 Dynamic Media Viewer 통합이란 무엇입니까? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -41,7 +41,7 @@ Adobe 확장 또는 타사 확장에 대한 자세한 내용은 [Adobe 확장](h
 
 ### 통합에 대한 사용 사례 {#use-cases-for-the-integration}
 
-Experience Platform 태그와 통합하기 위한 주요 사용 사례는 Adobe Experience Manager Assets와 Adobe Experience Manager Sites을 모두 사용하는 고객입니다. 이러한 시나리오에서는 Experience Manager 작성자 노드와 Experience Platform 태그 간에 표준 통합을 설정한 다음 Sites 인스턴스를 Experience Platform 태그 속성과 연결할 수 있습니다. 이후 Sites 페이지에 추가된 모든 Dynamic Media WCM 구성 요소는 뷰어의 데이터 및 이벤트를 추적합니다.
+Experience Platform 태그와 통합하기 위한 주요 사용 사례는 Adobe Experience Manager Assets과 Adobe Experience Manager Sites을 모두 사용하는 고객입니다. 이러한 시나리오에서는 Experience Manager 작성자 노드와 Experience Platform 태그 간에 표준 통합을 설정한 다음 Sites 인스턴스를 Experience Platform 태그 속성과 연결할 수 있습니다. 이후 Sites 페이지에 추가된 모든 Dynamic Media WCM 구성 요소는 뷰어의 데이터 및 이벤트를 추적합니다.
 
 다음을 참조하십시오 [Experience Manager Sites에서 Dynamic Media 뷰어 추적](#tracking-dynamic-media-viewers-in-aem-sites).
 
@@ -598,7 +598,7 @@ Experience Platform 태그 구성(속성, 확장, 규칙 및 설정된 데이터
 
 Experience Platform 태그에는 잠재적으로 여러 개발 환경, 하나의 스테이징 환경 및 하나의 프로덕션 환경이 있을 수 있습니다. 기본적으로 Experience Manager의 Experience Platform 태그 클라우드 구성 은 Experience Manager 작성자 노드를 Experience Platform 태그의 스테이지 환경으로 지정합니다. Experience Manager 게시 노드는 Experience Platform 태그의 프로덕션 환경을 가리킵니다. 즉, 기본 Experience Manager 설정을 사용하여 Experience Platform 태그 라이브러리를 스테이징 환경에 게시해야 합니다. 이렇게 하면 Experience Manager 작성자에서 사용할 수 있습니다. 그런 다음 Experience Manager 게시에서 사용할 수 있도록 프로덕션 환경에 게시할 수 있습니다.
 
-다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
+다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
 
 라이브러리 게시에는 다음 두 단계가 포함됩니다.
 
@@ -739,7 +739,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
 1. Return to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page that you left open previously. 페이지의 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 다음]** 을(를) 열려면 **[!UICONTROL 계정]** 페이지의 **[!UICONTROL Adobe IMS 기술 계정 구성]** 창.
 
-   (이전에 페이지를 닫았다면 Experience Manager 작성자로 돌아가서 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 다음에서 **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 다음을 선택합니다. **[!UICONTROL Experience Platform 태그]**. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.)
+   (이전에 페이지를 닫았다면 Experience Manager 작성자로 돌아가서 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 다음에서 **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 다음을 선택합니다. **[!UICONTROL Experience Platform 태그]**. 다음에서 **[!UICONTROL 인증서]** 드롭다운 목록에서 이전에 만든 인증서의 이름을 선택합니다.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 
@@ -756,7 +756,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
    * **[!UICONTROL 제목]** - 설명 계정 제목을 입력합니다.
    * **[!UICONTROL 인증 서버]** - 이전에 연 통합 세부 정보 페이지로 돌아갑니다. 다음 항목 선택 **[!UICONTROL JWT]** 탭. 아래 강조 표시된 대로 경로 없이 서버 이름을 복사합니다.
 
-   Return to the **[!UICONTROL Account]** page, then paste the name into the respective field.
+   (으)로 돌아가기 **[!UICONTROL 계정]** 페이지를 만든 다음 해당 필드에 이름을 붙여넣습니다.
 예를 들어, `https://ims-na1.adobelogin.com/`
 (서버 이름은 예제일 뿐입니다)
 
@@ -772,7 +772,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    통합 세부 정보 페이지.
 
-1. **[!UICONTROL Client Secret]**- Return to the Integration details page. 다음에서 **[!UICONTROL 개요]** 탭, 선택 **[!UICONTROL 클라이언트 암호 검색]**. 의 오른쪽에 **[!UICONTROL 클라이언트 암호]** 필드, 선택 **[!UICONTROL 복사]**.
+1. **[!UICONTROL 클라이언트 암호]** - 통합 세부 정보 페이지로 돌아갑니다. 다음에서 **[!UICONTROL 개요]** 탭, 선택 **[!UICONTROL 클라이언트 암호 검색]**. 의 오른쪽에 **[!UICONTROL 클라이언트 암호]** 필드, 선택 **[!UICONTROL 복사]**.
 
    Return to the **[!UICONTROL Account]** page, then paste the key into the respective field.
 
@@ -804,7 +804,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    샘플 목적으로만, **`We.Retail`** 아래 스크린샷에서 사이트가 선택되어 있습니다.
 
-   ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
+   ![2019년 7월 26일 12월 20일](assets/2019-07-26_12-20-06.png)
 
 1. 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL 일반]** 페이지 (1/3 페이지) / **[!UICONTROL Experience Platform 태그 구성 만들기]** 창에서 다음 필드를 입력합니다.

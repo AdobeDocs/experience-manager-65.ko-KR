@@ -4,9 +4,9 @@ description: 가상 사용자 및 그룹을 사용하여 We.Gov 및 We.Finance �
 contentOwner: anujkapo
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2478'
 ht-degree: 1%
 
 ---
@@ -194,7 +194,7 @@ Aya는 휴대폰에 짧은 적응형 양식을 작성하여 자격이 있는지 
 
    >[!NOTE]
    >
-   >사용자가 $200,000/yr을 초과하는 수익을 얻는 경우 자격이 없습니다.
+   >사용자가 $200,000/year 이상을 버는 경우, 해당 사용자는 자격이 없습니다.
 
 1. 클릭 **제가 자격이 되나요?**.
 1. 클릭 **지금 적용** 계속합니다.
@@ -506,7 +506,7 @@ George는 Aya의 애플리케이션을 승인하며, 기존의 자동화된 워�
 
 ### Adobe Analytics Forms 보고(카밀라) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
 
-1. 다음으로 이동
+1. 다음 위치로 이동
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
@@ -64,4 +64,4 @@ Jackalope 및 Prosper와 같은 사용자 정의 프레임워크를 사용하여
 
 ### YAGNI 기능 구현 방지 {#avoid-implementing-yagni-features}
 
-YAGNI(You Are not Gonna Gonna Be Need It) 기능은 현재 필요하지 않지만 향후 필요한 것이 있을 것으로 예상할 때 구현되는 기능입니다. 이상적으로, 우리는 오늘날 작동할 가장 간단한 것을 구현하고 시스템의 아키텍처가 시간이 지남에 따라 요구 사항을 충족하도록 지속적인 리팩터링을 사용해야 합니다. 이를 통해 중요한 사항에 집중하고 코드 오류 및 기능 크리프를 방지할 수 있습니다.
+YAGNI(You Are Gonna Not Gonna Need It) 기능은 현재 필요하지 않지만 향후 필요한 것이 있을 것으로 예상할 때 구현되는 기능입니다. 이상적으로, 우리는 오늘날 작동할 가장 간단한 것을 구현하고 시스템의 아키텍처가 시간이 지남에 따라 요구 사항을 충족하도록 지속적인 리팩터링을 사용해야 합니다. 이를 통해 중요한 사항에 집중하고 코드 오류 및 기능 크리프를 방지할 수 있습니다.

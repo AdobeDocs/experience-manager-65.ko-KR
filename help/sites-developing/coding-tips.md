@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ AEM 코드 베이스에서는 다음 규칙이 사용됩니다.
  </tbody>
 </table>
 
-### 반복하지 마세요  {#don-t-repeat-yourself}
+### 반복하지 마십시오.  {#don-t-repeat-yourself}
 
 DRY는 동일한 코드 세트를 복제해서는 안 된다고 설명합니다. 이는 문자열 리터럴과 같은 것에도 적용됩니다. 코드 복제는 무언가를 변경해야 할 때마다 결함을 찾아 제거해야 하는 문을 열어줍니다.
 

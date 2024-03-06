@@ -2,7 +2,7 @@
 title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정 부분에서는 Headless 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 53%
@@ -149,7 +149,7 @@ Cloud Manager를 사용하는 AMS 고객의 경우 모든 것이 테스트되고
 
 업데이트가 Cloud Manager에 업로드된 후 다음을 사용하여 AEM에 배포합니다. [Cloud Manager의 CI/CD 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
-<!-- Can't find a parallel link -->
+<!-- Cannot find a parallel link -->
 <!--
 You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
@@ -216,7 +216,7 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 * [AEM 개발 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
 
-* [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
 
 * [AEM용 Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 

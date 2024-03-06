@@ -2,9 +2,9 @@
 title: 동적 PDF forms에서 해시를 생성하고 사용하는 방법
 description: 동적 PDF forms에서 해시 생성 및 작업
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 시작
 
-PDF 양식에서 암호를 숨기고 소스 코드 내부나 PDF 문서의 다른 곳에서 일반 텍스트로 암호를 숨기고 싶은 경우 MD4, MD5, SHA-1 및 SHA-256 해시를 생성하고 사용하는 방법을 알고 있으면 됩니다.
+PDF 양식에서 암호를 숨기고 소스 코드 내부나 PDF 문서의 다른 곳에서 일반 텍스트로 숨기고 싶지 않을 경우 MD4, MD5, SHA-1 및 SHA-256 해시를 생성하고 사용하는 방법을 잘 알고 있어야 합니다.
 
 고유한 해시를 생성하여 암호를 난독화하고 이 해시를 PDF 문서에 저장하자는 아이디어입니다. 이 고유한 해시는 다른 해시 함수에 의해 생성될 수 있으며 이 문서에서는 PDF 양식 내에서 해시 함수를 생성하는 방법과 이 함수를 사용하는 방법에 대해 설명합니다.
 
@@ -31,7 +31,7 @@ AEM Forms on JEE Designer를 사용하면 스크립트 개체에 있는 서로 �
 
 * SHA-1 및 SHA-256 - NIST에 의해 정의된 대로
 
-해시를 사용할 때 가장 큰 장점은 명확한 텍스트 문자열을 비교하여 암호를 직접 비교할 필요가 없다는 것입니다. 대신 두 암호 중 두 개의 해시를 비교할 수 있습니다. 두 개의 다른 문자열이 동일한 해시를 가질 가능성은 없으므로 두 해시가 동일하면 비교된 문자열(이 경우 암호)도 동일하다고 가정할 수 있습니다.
+해시를 사용할 때 가장 큰 장점은 명확한 텍스트 문자열을 비교하여 암호를 직접 비교할 필요가 없다는 것입니다. 대신 두 암호의 두 해시를 비교할 수 있습니다. 두 개의 다른 문자열이 동일한 해시를 가질 가능성은 없으므로 두 해시가 동일하면 비교된 문자열(이 경우 암호)도 동일하다고 가정할 수 있습니다.
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층
 
 첫 번째 샘플을 시도하려면 아래 단계를 따르십시오.
 
-1. 샘플 파일을 다운로드하여 압축을 푼 후에 JEE Designer에서 AEM Forms으로 hashing_forms_sample1.pdf를 엽니다. 또는 Adobe Reader 또는 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수는 있지만 소스 코드는 볼 수 없습니다.
+1. 샘플 파일을 다운로드하여 압축을 푼 후에 JEE Designer에서 AEM Forms으로 hashing_forms_sample1.pdf를 엽니다. 또는 Adobe Reader 또는 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수 있지만 소스 코드는 볼 수 없습니다.
 1. 레이블이 지정된 텍스트 필드에서 [!UICONTROL 텍스트 지우기] 암호나 해시할 다른 메시지를 입력합니다.
 1. 4개의 버튼 중 하나를 클릭하여 MD4, MD5, SHA-1 또는 SHA-256 해시를 생성합니다. 누른 단추에 따라 16진수 출력을 생성하는 네 개의 해시 함수 중 하나가 호출되고 문자열이나 메시지가 해시됩니다.
 
@@ -89,7 +89,7 @@ JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층
 
 두 번째 샘플을 시도하려면 아래 단계를 따르십시오.
 
-1. 열기 `hashing_forms_sample2.pdf` AEM Forms on JEE Designer. 또는 Adobe Reader 또는 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수는 있지만 소스 코드는 볼 수 없습니다.
+1. 열기 `hashing_forms_sample2.pdf` AEM Forms on JEE Designer. 또는 Adobe Reader 또는 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수 있지만 소스 코드는 볼 수 없습니다.
 1. 레이블이 지정된 두 개의 암호 필드 중 하나를 선택합니다. [!UICONTROL 비밀번호 담당자] 또는 [!UICONTROL 비밀번호 여자] 암호를 입력합니다.
    1. 그 남자의 암호는 `bob`
    1. 그 여자의 암호는 `alice`
@@ -109,7 +109,7 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## 여기서 어디로 가야 합니까 {#next-steps}
 
-이런 게 필요한 곳은 어디죠? 권한이 있는 개인만 채워야 하는 필드가 있는 PDF 양식을 생각해 보십시오. Sample_2.pdf에서처럼 문서의 어디에서든 일반 텍스트에서 볼 수 없는 암호로 이러한 필드를 보호하면 암호를 아는 사용자만 해당 필드에 액세스할 수 있습니다.
+이런 게 필요한 곳은 어디죠? 권한이 있는 개인만 채워야 하는 필드가 있는 PDF 양식을 생각해 보십시오. Sample_2.pdf에서처럼 문서의 어디에서든 일반 텍스트로 볼 수 없는 암호로 이러한 필드를 보호하면 암호를 아는 사용자만 해당 필드에 액세스할 수 있습니다.
 
 두 샘플 PDF 파일을 계속 살펴보시기 바랍니다.  Sample_1.pdf로 새 해시 값을 생성하고 생성된 값을 사용하여 Sample_2.pdf에서 사용되는 암호 또는 해시 함수를 변경할 수 있습니다.  속성 섹션에 나열된 리소스는 해시 및 이 문서에 사용된 특정 JavaScript 구현에 대한 추가 정보도 제공합니다.
 

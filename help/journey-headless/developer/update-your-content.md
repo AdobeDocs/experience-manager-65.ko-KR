@@ -2,10 +2,10 @@
 title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 REST API를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 대해 알아봅니다.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 88%
+source-wordcount: '1029'
+ht-degree: 87%
 
 ---
 
@@ -43,7 +43,7 @@ Headless 여정의 이전 단계에서는 쿼리를 사용하여 콘텐츠를 �
 
 Assets HTTP API를 사용하면 다음 작업을 수행할 수 있습니다 **읽기** 콘텐츠를 볼 수 있지만 **만들기**, **업데이트** 및 **삭제** content - GraphQL API로 사용할 수 없는 작업입니다.
 
-Assets REST API는 기본적으로 제공되는 최신 Adobe Experience Manager 버전 설치에서 사용할 수 있습니다.
+Assets REST API는 최신 Adobe Experience Manager 버전의 각 기본 설치에서 사용할 수 있습니다.
 
 ## Assets HTTP API {#assets-http-api}
 
@@ -300,7 +300,7 @@ API 참조 설명서에 지원되는 요청의 정확한 형식을 정의합니�
 AEM Assets REST API 사용에 대한 자세한 내용은 다음 자료를 참조하십시오.
 
 * Adobe Experience Manager Assets HTTP API (추가 리소스)
-* AEM Assets HTTP API의 콘텐츠 조각 지원 (추가 리소스)
+* AEM Assets HTTP API의 콘텐츠 조각 지원(추가 리소스)
 
 ## 다음 단계 {#whats-next}
 
@@ -313,7 +313,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * Have experience with sample code and know how the API works in practice.
 -->
 
-<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+<!-- The "How to put it all together" page is not going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
@@ -327,8 +327,8 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [Adobe Experience Manager Assets API - 콘텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
 * [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
-* [비디오 - AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)에서 CORS용 개발
+* [CORS/AEM 설명](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
+* [비디오 - AEM](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)에서 CORS용 개발
 * [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
 * [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

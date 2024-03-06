@@ -5,9 +5,9 @@ topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 6%
 
 모바일 친화적인 제품을 찾고 계십니까 **양식 경험** 등록을 간소화하고 참여를 늘리며 소요 시간을 단축합니다. **적응형 양식** 당신에게 딱 맞는군요 적응형 양식은 모바일, 자동화 및 분석 친화적 양식 경험을 제공합니다. 반응형 및 대화형 양식을 손쉽게 제작하고, 자동화된 프로세스를 사용하여 관리 및 반복 작업을 줄이고, 데이터 분석을 사용하여 고객의 양식 사용 경험을 개선하고 개인화할 수 있습니다.
 
-이 튜토리얼에서는 적응형 양식을 만들기 위한 전체적인 프레임워크를 제공합니다. 자습서는 사용 사례와 여러 안내서로 구성됩니다. 각 안내서는 이 자습서에서 만든 적응형 양식에 새로운 기능을 학습하고 추가하는 데 도움이 됩니다. 모든 안내서 다음에 작업 적응형 양식이 있습니다. 적응형 양식 만들기 안내서를 사용할 수 있습니다. 다음 안내서는 곧 제공될 예정입니다. 이 자습서를 마치면 다음을 수행할 수 있습니다.
+이 튜토리얼에서는 적응형 양식을 만들기 위한 전체적인 프레임워크를 제공합니다. 자습서는 사용 사례와 여러 안내서로 구성됩니다. 각 안내서는 이 자습서에서 만든 적응형 양식에 새로운 기능을 학습하고 추가하는 데 도움이 됩니다. 모든 안내서 다음에 작업 적응형 양식이 있습니다. 적응형 양식 만들기 안내서를 사용할 수 있습니다. 다음 안내서가 곧 제공될 예정입니다. 이 자습서를 마치면 다음을 수행할 수 있습니다.
 
 * 적응형 양식 및 양식 데이터 모델 만들기
 * 적응형 양식에 스타일을 지정합니다.
@@ -43,11 +43,11 @@ ht-degree: 6%
 
 ### 전제 조건 {#prerequisite}
 
-* 설정 [AEM 작성자 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
+* 설정 [AEM 작성자 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * 설치 [AEM Forms 추가 기능](../../forms/using/installing-configuring-aem-forms-osgi.md) 작성자 인스턴스에서 참조할 수 있습니다.
 * 데이터베이스 공급자로부터 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 자습서의 예는 다음을 기반으로 합니다 [!DNL MySQL] 데이터베이스 및 사용 [!DNL Oracle's] [MySQL JDBC 데이터베이스 드라이버](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
-* 아래 표시된 필드를 사용하여 고객 데이터가 포함된 데이터베이스를 설정합니다. 적응형 양식을 만드는 데 데이터베이스가 반드시 필요한 것은 아닙니다. 이 자습서에서는 데이터베이스를 사용하여 AEM의 양식 데이터 모델 및 지속성 기능을 표시합니다 [!DNL Forms].
+* 아래 필드가 표시된 고객 데이터를 포함하는 데이터베이스를 설정합니다. 적응형 양식을 만드는 데 데이터베이스가 반드시 필요한 것은 아닙니다. 이 자습서에서는 데이터베이스를 사용하여 AEM의 양식 데이터 모델 및 지속성 기능을 표시합니다 [!DNL Forms].
 
 ![적응형 양식 데이터](assets/adaptiveformdata.png)
 
@@ -59,10 +59,10 @@ ht-degree: 6%
 
 목표:
 
-* 고객이 배송 주소를 추가할 수 있도록 하는 적응형 양식 만들기
-* 적응형 양식의 레이아웃 필드를 통해 고객의 정보를 표시하고 수락
+* 고객이 배송 주소를 추가할 수 있도록 하는 적응형 양식을 만듭니다.
+* 적응형 양식의 레이아웃 필드를 통해 고객의 정보를 표시하고 수락합니다.
 * 제출 액션을 만들어 양식 콘텐츠가 포함된 이메일을 보냅니다.
-* 적응형 양식 미리 보기 및 제출
+* 적응형 양식을 미리 보고 제출합니다.
 
 [![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
 
@@ -70,15 +70,15 @@ ht-degree: 6%
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-양식 데이터 모델을 사용하면 적응형 양식을 서로 다른 데이터 소스에 연결할 수 있습니다. 예를 들어 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스가 있습니다. 양식 데이터 모델은 연결된 데이터 소스에서 사용할 수 있는 비즈니스 엔터티 및 서비스의 통합 데이터 표시 스키마입니다. 양식 데이터 모델을 적응형 양식과 함께 사용하여 데이터를 검색, 업데이트, 삭제 및 연결된 데이터 소스에 추가할 수 있습니다.
+양식 데이터 모델을 사용하면 적응형 양식을 개별 데이터 소스에 연결할 수 있습니다. 예를 들어 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스가 있습니다. 양식 데이터 모델은 연결된 데이터 소스에서 사용할 수 있는 비즈니스 엔터티 및 서비스의 통합 데이터 표시 스키마입니다. 양식 데이터 모델을 적응형 양식과 함께 사용하여 데이터를 검색, 업데이트, 삭제 및 연결된 데이터 소스에 추가할 수 있습니다.
 
 목표:
 
-* 웹 사이트의 데이터베이스 인스턴스 구성([!DNL MySQL] 데이터베이스)를 데이터 소스로 사용
-* 다음을 사용하여 양식 데이터 모델 만들기 [!DNL MySQL] 데이터베이스를 데이터 소스로 사용
-* 양식 데이터 모델에 데이터 모델 개체 추가
-* 양식 데이터 모델에 대한 읽기 및 쓰기 서비스 구성
-* 테스트 데이터를 사용하여 양식 데이터 모델 및 구성된 서비스 테스트
+* 웹 사이트의 데이터베이스 인스턴스 구성([!DNL MySQL] 데이터베이스)를 데이터 소스로 사용하는 경우입니다.
+* 다음을 사용하여 양식 데이터 모델 만들기 [!DNL MySQL] 데이터베이스를 데이터 소스로 사용합니다.
+* 데이터 모델을 형성할 수 있도록 데이터 모델 개체를 추가합니다.
+* 양식 데이터 모델에 대한 읽기 및 쓰기 서비스를 구성합니다.
+* 테스트 데이터를 사용하여 양식 데이터 모델 및 구성된 서비스를 테스트합니다.
 
 [![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
@@ -86,12 +86,12 @@ ht-degree: 6%
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-적응형 양식은 적응형 양식 오브젝트에 대한 규칙을 작성할 편집기를 제공합니다. 이러한 규칙은 양식에 대한 사전 설정 조건, 사용자 입력 및 사용자 작업을 기반으로 양식 개체에서 트리거하는 작업을 정의합니다. 정확성을 보장하고 양식 채우기 환경을 가속화하는 데 도움이 됩니다.
+적응형 양식은 적응형 양식 오브젝트에 대한 규칙을 작성할 편집기를 제공합니다. 이러한 규칙은 양식에 대한 사전 설정 조건, 사용자 입력 및 사용자 작업을 기반으로 양식 개체에서 트리거하는 작업을 정의합니다. 정확도를 보장하고 양식 작성 시간을 단축하는 데 도움이 됩니다.
 
 목표:
 
-* 적응형 양식 필드에 규칙 만들기 및 적용
-* 규칙을 사용하여 양식 데이터 모델 서비스를 트리거하여 데이터를 데이터베이스로 업데이트
+* 적응형 양식 필드에 규칙을 만들어 적용합니다.
+* 규칙을 사용하여 양식 데이터 모델 서비스를 트리거하여 데이터베이스에 데이터를 업데이트합니다.
 
 [![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
@@ -103,9 +103,9 @@ ht-degree: 6%
 
 목표:
 
-* 적응형 양식에 즉시 사용 가능한 테마 적용
-* 테마 편집기를 사용하여 적응형 양식에 대한 테마 만들기
-* 사용자 지정 테마에서 웹 글꼴 사용
+* 적응형 양식에 즉시 사용 가능한 테마를 적용합니다.
+* 테마 편집기를 사용하여 적응형 양식에 대한 테마를 만듭니다.
+* 사용자 지정 테마에서 Web Fonts을 사용합니다.
 
 [![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
@@ -117,8 +117,8 @@ ht-degree: 6%
 
 목표:
 
-* 적응형 양식을 AEM 페이지로 게시
-* AEM에 적응형 양식 포함 [!DNL Sites] 페이지
-* 적응형 양식을 외부 웹 페이지(AEM 외부에 호스트된 비 AEM 웹 페이지)에 포함
+* 적응형 양식을 AEM 페이지로 게시합니다.
+* AEM에 적응형 양식 포함 [!DNL Sites] 페이지.
+* 적응형 양식을 외부 웹 페이지(AEM 외부에 호스트된 비 AEM 웹 페이지)에 임베드합니다.
 
 [![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3227'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 2%
 
 * **사용자에게 이메일로 알림**
 
-   * 워크플로우가 단계에 도달하면 참가자에게 이메일을 보내 알림을 보낼 수 있습니다.
+   * 워크플로우가 단계에 도달하면 이메일을 보내어 참가자에게 알립니다.
    * 활성화된 경우 속성으로 정의된 사용자에게 이메일이 전송됩니다 **사용자/그룹**&#x200B;또는 그룹이 정의된 경우 그룹의 각 멤버로 매핑할 수도 있습니다.
 
 * **사용자/그룹**

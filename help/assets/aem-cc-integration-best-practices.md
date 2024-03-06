@@ -7,10 +7,10 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3260'
-ht-degree: 16%
+source-wordcount: '3173'
+ht-degree: 11%
 
 ---
 
@@ -86,9 +86,9 @@ This article focuses primarily on the first two aspects of the collaboration nee
 * **Work-in-progress or creative work-in-progress (WIP):** A phase in asset lifecycle where an asset undergoes multiple changes and is typically not yet ready to be shared with broader teams.
 * **크리에이티브 준비 자산:** [!DNL Assets] 더 광범위한 팀과 공유할 준비가 되었거나 마케팅 또는 LOB 팀과 공유할 크리에이티브 팀이 선택 또는 승인했습니다.
 * **Asset approvals:** The approval process that runs for assets already uploaded to DAM, which typically includes brand approvals, legal approvals, and so on.
-* **Final asset:** An asset that has gone through all  approvals/metadata  tagging and is ready to be used by the broader team. Such an asset is stored in DAM and made available to all (or all interested) users. It can be used in marketing channels or by creative teams to create designs.
-* **Minor asset  update/change :** A quick and small change to a digital asset. It is often made in response to a retouching or minor editing request, asset review, or approval (for example, reposition, change text size, adjust saturation/brightness, color, and so on).
-* **Major asset  update/change :** A change to a digital asset that requires considerable work, and sometimes must be done over a longer period of time. It typically includes multiple changes. The asset must be saved multiple times while being updated. Major asset updates typically cause the asset to enter a WIP stage.
+* **최종 자산:** 모든 승인/메타데이터 태깅을 수행했으며 더 광범위한 팀에서 사용할 준비가 된 에셋입니다. Such an asset is stored in DAM and made available to all (or all interested) users. It can be used in marketing channels or by creative teams to create designs.
+* **부수적 자산 업데이트/변경 :** 디지털 자산에 대한 빠르고 작은 변경입니다. It is often made in response to a retouching or minor editing request, asset review, or approval (for example, reposition, change text size, adjust saturation/brightness, color, and so on).
+* **주요 자산 업데이트/변경 :** 디지털 에셋으로의 변경은 상당한 작업이 필요하며 때로는 더 오랜 기간에 걸쳐 수행되어야 합니다. It typically includes multiple changes. The asset must be saved multiple times while being updated. Major asset updates typically cause the asset to enter a WIP stage.
 * **DAM:** Digital asset management. 이 문서에서 이는 와 동의어입니다 [!DNL Experience Manager Assets]별도로 언급되지 않는 한
 * **Creative user:** A creative professional, who creates digital assets using Creative Cloud apps and services. In some cases, a creative user may be a member of a creative team who may use Creative Cloud, but does not create digital assets (like a creative director or creative team manager).
 * **DAM user:** A typical user of a DAM system. 조직에 따라 DAM 사용자는 마케팅 또는 비마케팅 사용자(예: LOB(Line of Business) 사용자, 라이브러리 관리자, 영업 담당자 등)가 될 수 있습니다.
@@ -97,16 +97,16 @@ This article focuses primarily on the first two aspects of the collaboration nee
 
 * 다음을 참조하십시오 [데스크탑 앱 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * 다음을 참조하십시오 [Adobe Stock 통합](aem-assets-adobe-stock.md)
-* [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 참조하십시오
+* 다음을 참조하십시오 [Adobe 에셋 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
 
 다음에 대한 모범 사례를 간략하게 요약한 것입니다. [!DNL Experience Manager] 및 [!DNL Creative Cloud] 통합. 이 문서의 나머지 부분을 읽고 자세한 내용을 이해하십시오.
 
-* **For creative users, working in Photoshop, InDesign, or Illustrator:** Adobe Asset Link provides the best user experience, including clean handling of the Work-in-progress on assets checked out from [!DNL Experience Manager].
-* **For simplifying access to assets from desktop for any generic file format or application:**[!DNL Experience Manager] use desktop app.
-* **Understand why and when to store assets in DAM:** Updates to be made available to the broader team in your organization.
+* **Photoshop, InDesign 또는 Illustrator에서 작업하는 크리에이티브 사용자의 경우:** Adobe 에셋 링크 는 체크아웃된 에셋에 대한 진행 중인 작업을 깔끔하게 처리하는 등 최상의 사용자 경험을 제공합니다 [!DNL Experience Manager].
+* **일반 파일 형식 또는 애플리케이션에서 데스크탑의 자산에 대한 액세스를 단순화하려면 다음을 수행합니다.** 사용 [!DNL Experience Manager] 데스크탑 앱입니다.
+* **DAM에 에셋을 저장하는 이유 및 시기를 이해합니다.** 조직의 더 광범위한 팀에서 사용할 수 있는 업데이트입니다.
 * **Mind the volume of assets shared:** If your use case is asset distribution, governance and security might be the most important aspects. Consider using tools built for doing that at scale, like Brand Portal.
 * **Understand asset lifecycle:** Know how assets are handled in your organization by different teams
-* **Handle frequent saves to assets with care:** Adobe Asset Link takes care of that for you with PS, AI, ID. For other applications, don&#39;t carry out work in progress tasks in mapped/shared folder unless you need all the changes in DAM
+* **Handle frequent saves to assets with care:** Adobe Asset Link takes care of that for you with PS, AI, ID. 다른 애플리케이션의 경우 DAM에서 모든 변경 사항이 필요하지 않은 경우 매핑된/공유 폴더에서 진행 중인 작업을 수행하지 마십시오
 
 ### 액세스 대상: [!DNL Adobe Stock] 자산 출처: [!DNL Assets] {#access-to-adobe-stock-assets-from-aem-assets}
 

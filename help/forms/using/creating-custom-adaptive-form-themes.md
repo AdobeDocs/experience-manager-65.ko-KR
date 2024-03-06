@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ An **적응형 양식 테마** 는 적응형 양식의 스타일(모양 및 느�
 
    **변수 파일 줄이기**: CSS 스타일 정의에 사용되는 변수를 정의하거나 재정의하는 파일입니다.
 
-   적응형 양식은 다음에 정의된 OOTB 변수를 제공합니다 `.less` 파일:
+   적응형 양식은 다음에 정의된 기본 변수를 제공합니다 `.less` 파일:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -107,7 +107,7 @@ An **적응형 양식 테마** 는 적응형 양식의 스타일(모양 및 느�
 
    **Mixin 파일 줄이기:** 변수를 인수로 사용하는 함수를 정의할 수 있습니다. 이러한 함수의 출력은 결과 스타일입니다. CSS 스타일이 반복되지 않도록 다양한 스타일 내에서 이러한 mixin을 사용하십시오.
 
-   적응형 양식은 다음에 정의된 OOTB mixin을 제공합니다.
+   적응형 양식은에 정의된 즉시 사용 가능한 mixin을 제공합니다.
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 

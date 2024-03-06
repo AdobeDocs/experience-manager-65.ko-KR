@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: spa
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '184'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,6 @@ SPA을 Adobe Experience Platform Launch과 통합하는 방법을 이해하려�
 
 >[!NOTE]
 >
->Adobe Experience Manager SPA 편집기를 사용하지 않는 SPA과의 Adobe Experience Platform Launch 통합을 활성화하기 위해 참조된 KB가 생성되었습니다. 이러한 방법을 사용하면 Adobe Experience Platform Launch 통합이 SPA 편집기를 사용하도록 빌드된 SPA과 공존할 수도 있습니다.
+>Adobe Experience Manager SPA 편집기를 사용하지 않는 SPA과 Adobe Experience Platform Launch 통합을 활성화하기 위해 참조된 KB가 생성되었습니다. 이러한 방법을 사용하면 Adobe Experience Platform Launch 통합이 SPA 편집기를 사용하도록 빌드된 SPA과 공존할 수도 있습니다.
 >
 >JavaScript SPA 라이브러리와 함께 Redux를 사용하는 방법에 대해 완전히 살펴보지 않았습니다. Redux의 지원은 SPA Editor의 향후 릴리스에서 제공될 예정입니다.

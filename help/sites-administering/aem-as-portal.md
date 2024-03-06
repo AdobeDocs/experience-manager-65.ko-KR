@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '6076'
+source-wordcount: '6074'
 ht-degree: 0%
 
 ---
@@ -537,7 +537,7 @@ title="{text}"/>
 
 또한, 포털 Director HTML 재작성기는 링크 재작성을 위해 제외하도록 정의된 정규 표현식 목록으로 구성할 수 있습니다. 예를 들어 외부 시스템에 대한 상대 링크가 있는 경우 이 제외 목록에 추가해야 합니다.
 
-### 로컬라이제이션 {#localization}
+### 현지화 {#localization}
 
 AEM 컨텐츠 포틀릿에는 AEM 컨텐츠가 올바른 언어로 되어 있는지 확인하는 현지화 기능이 내장되어 있습니다.
 
@@ -612,7 +612,7 @@ AEM 컨텐츠 포틀릿에는 AEM 컨텐츠가 올바른 언어로 되어 있는
 | **이름** | **설명** | **기본 동작** |
 |---|---|---|
 | 인증자 | AEM에 인증 정보 제공 | 작성자와 게시 모두에 구성 가능한 기술 사용자를 사용합니다. 또는 SSO를 사용할 수 있습니다. |
-| HTMLRewriter | 링크, 이미지 등을 재작성합니다. | AEM 링크를 포털 링크에 재작성합니다. UrlMapper 및 TextMapper를 통해 확장할 수 있습니다. |
+| HTMLRewriter | 링크 및 이미지 재작성 | AEM 링크를 포털 링크에 재작성합니다. UrlMapper 및 TextMapper를 통해 확장할 수 있습니다. |
 | HttpClientService | 모든 http 연결을 처리합니다. | 표준 구현 |
 | LocaleHandler | 로케일 정보를 처리합니다. | 로케일을 기준으로 콘텐츠에 대한 링크를 재작성합니다. |
 | 로케일 탐지기 | 사용자의 로케일을 검색합니다. | 포털에서 제공하는 로케일을 사용합니다. |
@@ -776,7 +776,7 @@ AEM WCM에서 제공하는 컨텐츠에 액세스하려면 AEM Portal Director �
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 
-1. 클릭 **저장**. 이제 포털 페이지에 포틀릿을 추가하고 포털을 사용할 수 있습니다.
+1. **저장**&#x200B;을 클릭합니다. 이제 포털 페이지에 포틀릿을 추가하고 포털을 사용할 수 있습니다.
 
 ### 컨텐츠 URL {#content-urls}
 
