@@ -7,9 +7,9 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: bd3c3c2f833e4d7e763e7726c5c75597523605d7
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ TarMK가 노드 저장소와 데이터 저장소로 모두 사용되는 경우, 
 >
 >동시에 실행하지 않는 이유는 오래된(및 사용되지 않은) 데이터 저장소 파일도 백업되기 때문에 이전 버전으로 롤백해야 하는 경우 바이너리가 여전히 백업에 있기 때문입니다.
 
-작업 대시보드의 주간 유지 관리 창에서 데이터 저장소 가비지 수집을 실행하지 않으려면 Wget 또는 curl HTTP 클라이언트를 사용하여 자동화할 수도 있습니다. 다음은 curl을 사용하여 백업을 자동화하는 방법의 예입니다.
+작업 대시보드의 주간 유지 관리 창에서 데이터 저장소 가비지 수집을 실행하지 않으려면 Wget 또는 curl HTTP 클라이언트를 사용하여 자동화할 수도 있습니다. 다음은 curl을 사용하여 가비지 수집을 자동화하는 방법의 예입니다.
 
 >[!CAUTION]
 >
