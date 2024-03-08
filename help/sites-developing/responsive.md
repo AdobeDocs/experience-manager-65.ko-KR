@@ -7,10 +7,10 @@ topic-tags: mobile-web
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '5375'
-ht-degree: 1%
+source-wordcount: '5293'
+ht-degree: 0%
 
 ---
 
@@ -96,12 +96,12 @@ CSS 파일에서 타겟팅하는 장치의 속성을 기반으로 미디어 쿼�
   <tr>
    <td>style.css</td>
    <td>일반적인 스타일.</td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td>bootstrap.css</td>
    <td>twitter Bootstrap으로 정의된 일반적인 스타일.</td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td>responsive-1200px.css</td>
@@ -200,7 +200,7 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 
   다음 - `*alias*` mobileEmulatorProvider 서비스가 공장 서비스이므로 접미사가 필요합니다. 이 팩토리에 대해 고유한 별칭을 사용합니다.
 
-* jcr:primaryType: `sling:OsgiConfig`
+* `jcr:primaryType`: `sling:OsgiConfig`
 
 다음 노드 속성을 추가합니다.
 

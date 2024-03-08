@@ -7,9 +7,9 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -143,8 +143,8 @@ Forms 포털은 자리 표시자가 사용자 지정/기본 제공 메타데이�
 * **diffTime**: 초안에 대한 현재 시간과 마지막 저장 작업의 차이입니다. 또는 현재 시간과 제출에 대해 마지막으로 제출된 작업 간의 차이입니다.
 * **iconClass**: 초안/제출의 첫 번째 문자를 표시하는 데 사용되는 CSS 클래스입니다. Forms 포털에는 다양한 색상 배경을 제공하는 다음 클래스가 포함되어 있습니다.
 * **소유자**: 초안/제출을 작성한 사용자.
-* **오늘**: 초안 작성일 또는 제출일(DD):MM:YYYY 형식입니다.
-* **TimeNow**: HH에서 초안 또는 제출 시간:MM:SS 24시간 형식
+* **오늘**: 초안 작성일 또는 제출일 `DD:MM:YYYY` 포맷.
+* **TimeNow**: 초안 작성 또는 제출 시간 `HH:MM:SS` 24시간 형식
 
 *참고:*
 

@@ -4,9 +4,9 @@ description: SCF와 작업할 수 있도록 Handlebars 도우미 메서드
 topic-tags: developing
 content-type: reference
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 787e5a87f13498006e2ce897e85ee12704b58f09
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1445'
 ht-degree: 2%
 
 ---
@@ -135,7 +135,7 @@ Then content-loadmore would return
 
 * **형식**: 문자열
 
-  (선택 사항) 적용할 날짜 형식입니다. 기본값은 &quot;YYYY-MM-DDTHH&quot;입니다.:mm:ss.sssZ와 결과는 &quot;2015-03-18T18로 표시됩니다:17:13-07:00형
+  (선택 사항) 적용할 날짜 형식입니다. 기본값은 &quot;입니다.`YYYY-MM-DDTHH:mm:ss.sssZ`&quot;&quot;이고 결과는 &quot;&quot;로 표시됩니다.`2015-03-18T18:17:13-07:00`&quot;
 
 ### 예 {#examples-1}
 

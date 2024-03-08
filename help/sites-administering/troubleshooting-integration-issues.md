@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1078'
 ht-degree: 1%
 
 ---
@@ -98,10 +98,10 @@ AEM에서 사용자 지정 데이터 가져오기 서비스를 만드는 방법�
 * 에 대한 ACL 확인 `/etc/cloudservices`. ACL은 다음과 같아야 합니다.
 
    * allow; jcr:read; webservice-support-servicelibfinder
-   * allow; jcr:read; everyone; rep:glob:&amp;ast;/defaults/&amp;ast;
-   * allow; jcr:read; everyone; rep:glob:&amp;ast;/default
-   * allow; jcr:read; everyone; rep:glob:&amp;ast;/public/&amp;ast;
-   * allow; jcr:read; everyone; rep:glob:&amp;ast;/public
+   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
+   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults`
+   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public/`&amp;ast;
+   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public`
 
 ACL 관리에 대한 자세한 내용은 [사용자 관리 및 보안](/help/sites-administering/security.md#permissions-in-aem) 페이지를 가리키도록 업데이트하는 중입니다.
 

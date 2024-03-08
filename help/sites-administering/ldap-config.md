@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,7 @@ LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
 
 >[!NOTE]
 >
-AEM 인스턴스와 함께 LDAP 구성을 두 개 이상 가질 계획이라면 각 구성에 대해 별도의 ID 공급자와 동기화 핸들러를 만들어야 합니다.
+>AEM 인스턴스와 함께 LDAP 구성을 두 개 이상 가질 계획이라면 각 구성에 대해 별도의 ID 공급자와 동기화 핸들러를 만들어야 합니다.
 
 ## SSL을 통한 LDAP 구성 {#configure-ldap-over-ssl}
 
@@ -277,12 +277,12 @@ SSL을 통해 LDAP를 인증하도록 AEM을 구성할 때 자체 서명된 인�
 
 * 로그 수준: 디버그
 * 로그 파일 logs/ldap.log
-* 메시지 패턴: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* 메시지 패턴: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * 로거: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * 로그 수준: 디버그
 * 로그 파일: logs/external.log
-* 메시지 패턴: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* 메시지 패턴: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * 로거: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## 그룹 소속에 대한 단어 {#a-word-on-group-affiliation}

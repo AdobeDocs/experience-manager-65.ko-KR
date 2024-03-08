@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2433'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * **사용자**: *사용자 동기화를 위해 생성된 사용자 검색*
    * **유형**: `Allow`
    * **권한**: `jcr:all`
-   * **제한 사항** rep:glob: `*/activities/*`
+   * **제한 사항** `rep:glob`: `*/activities/*`
    * 선택 **확인**
 
 * 선택 **모두 저장**

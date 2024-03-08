@@ -7,7 +7,7 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
 source-wordcount: '6084'
 ht-degree: 2%
@@ -119,7 +119,7 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
   </tr>
   <tr>
    <td>4.</td>
-   <td>작성일</td>
+   <td>생성됨</td>
    <td>아니요</td>
    <td>테마 생성 날짜</td>
   </tr>
@@ -178,7 +178,7 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
      <li>이 테마에 해당하는 clientlib이 저장되는 '/etc' 내의 사용자 정의 저장소 경로입니다.</li>
      <li>기본값 - '/etc/clientlibs/fd/themes' + 테마 에셋의 상대 경로.</li>
      <li>위치가 없으면 폴더 계층 구조가 자동으로 생성됩니다.</li>
-     <li>이 값을 변경하면 clientlib 노드 구조가 입력한 새 위치로 이동됩니다.<br /> <em><strong>참고:</strong> 기본 clientlib 위치를 변경하는 경우 CRXDE 저장소에서 를 할당합니다 <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>끝 <code>forms-users</code> 및 <code>crx:replicate</code>, <code>jcr:read </code>끝 <code>fd-service</code> 를 새 위치에 추가합니다. 를 추가하여 다른 ACL 연결 <code>deny jcr:addChildNodes</code> 대상 <code>forms-user</code></em></li>
+     <li>이 값을 변경하면 clientlib 노드 구조가 입력한 새 위치로 이동됩니다.<br /> <em><strong>참고:</strong> 기본 clientlib 위치를 변경하는 경우 CRXDE 저장소에서 를 할당합니다 <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> 끝 <code>forms-users</code> 및 <code>crx:replicate</code>, <code>jcr:read</code> 끝 <code>fd-service</code> 를 새 위치에 추가합니다. 를 추가하여 다른 ACL 연결 <code>deny jcr:addChildNodes</code> 대상 <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -231,7 +231,7 @@ AEM Forms은 테마 편집기와 함께 제공됩니다. 다양한 적응형 양
 
 [![레일 및 캔버스 가 강조 표시된 테마 편집기.](assets/themes.png)](assets/themes-1.png) **A.** 사이드바 **B.** 캔버스
 
-### 구성 요소 스타일링 {#styling-components}
+### 구성 요소 스타일 지정 {#styling-components}
 
 여러 적응형 양식 및 대화형 커뮤니케이션에서 테마를 사용하여 테마에 지정한 구성 요소 형식을 가져올 수 있습니다. 제목, 설명, 패널, 필드, 아이콘 및 텍스트 상자와 같은 다양한 구성 요소의 스타일을 지정할 수 있습니다. 위젯을 사용하여 테마에서 구성 요소 속성을 구성합니다. CSS 무시 섹션을 통해 CSS 코드를 작성하거나 사용자 지정 선택기를 제공할 수 있지만 CSS 이하에 대한 사전 지식은 필요하지 않지만 원하는 것입니다. 사이드바에서 구성 요소를 선택하면 CSS Overrides 섹션이 나타납니다.
 
@@ -413,7 +413,7 @@ AEM Forms의 테마는 양식 및 대화형 통신에서 패널 레이아웃의 
    <td><p>이미지 또는 색상으로 구성 요소의 배경을 채울 수 있습니다. </p> </td>
   </tr>
   <tr>
-   <td><p>테두리</p> </td>
+   <td><p>경계</p> </td>
    <td><p>구성 요소의 테두리 모양을 선택할 수 있습니다. 예를 들어 텍스트 상자에 점선이 있는 진한 빨간색 테두리가 나타나도록 할 수 있습니다. </p> <p>테두리의 폭, 스타일, 반경 및 색상을 선택할 수 있습니다.</p> </td>
   </tr>
   <tr>

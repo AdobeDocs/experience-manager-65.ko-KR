@@ -1,5 +1,5 @@
 ---
-title: Adobe Analytics를 위한 비디오 추적 구성
+title: Adobe Analytics에 대한 비디오 추적 구성
 description: SiteCatalyst을 위한 비디오 추적 구성에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,14 +7,14 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 2%
+source-wordcount: '1754'
+ht-degree: 0%
 
 ---
 
-# Adobe Analytics를 위한 비디오 추적 구성{#configuring-video-tracking-for-adobe-analytics}
+# Adobe Analytics에 대한 비디오 추적 구성{#configuring-video-tracking-for-adobe-analytics}
 
 비디오 이벤트를 추적하는 데 사용할 수 있는 몇 가지 방법이 있는데, 그 중 두 가지 방법은 이전 버전의 Adobe Analytics에 대한 레거시 옵션입니다. 이러한 레거시 옵션은 레거시 이정표 및 레거시 초입니다.
 
@@ -117,7 +117,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>본 세그먼트에 대한 정보를 포함합니다(예: 2).:O:4-8 </td>
+   <td>본 세그먼트에 대한 정보(예: <code>2:O:4-8</code> </td>
   </tr>
  </tbody>
 </table>
@@ -199,7 +199,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>eVar3</td>
+   <td>eVar</td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -207,7 +207,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>eVar2</td>
+   <td>eVar</td>
   </tr>
  </tbody>
 </table>
@@ -317,7 +317,7 @@ eventdata.events.milestoneXX
 
    **샘플 호출** 제공된 예제를 사용하는 Adobe Analytics의 경우 DigitalPulse Debugger에서 볼 때 다음과 같이 표시되어야 합니다.
 
-   ![lmilestones1](assets/lmilestones1.png)
+   ![마일스톤1](assets/lmilestones1.png)
 
    *다음&#x200B;**pev3**호출에서 전송된 변수에는 다음 정보가 포함됩니다.*
 
