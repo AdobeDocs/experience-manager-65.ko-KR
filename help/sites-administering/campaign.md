@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: dac156251ae48e9d83e84ba6a4685689def9e396
+source-git-commit: 3e4d05de6668656ad4a042b7109cfcbc958b0e26
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 8%
+source-wordcount: '298'
+ht-degree: 9%
 
 ---
 
@@ -34,7 +34,6 @@ Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 
 |---|---|---|
 | [v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 지원됨 | 지원됨 |
 | [v8 클라이언트 콘솔](https://experienceleague.adobe.com/docs/campaign-v8.html) | 지원됨 | 지원됨 |
-| [v8 웹 사용자 인터페이스](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html) | 지원됨 | 지원됨 |
 
 다음 설명서는 AEM을 Adobe Campaign Classic과 통합하는 방법을 설명합니다.
 
@@ -44,13 +43,6 @@ Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 
 
 * [이메일 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html) - AEM에서 Campaign 콘텐츠를 작성하는 데 사용할 수 있는 표준 이메일 구성 요소에 대해 알아봅니다.
 * [Adobe Campaign Classic 통합 문제 해결](/help/sites-administering/troubleshooting-campaignintegration.md) - AEM-ACC 통합에서 가장 일반적인 문제를 해결하는 방법을 알아봅니다.
-
-
-다음 설명서에서는 AEMas a Cloud Service 를 Adobe Campaign v8 웹 사용자 인터페이스와 통합하는 방법을 설명합니다.
-
-* [Adobe Campaign v8 웹 사용자 인터페이스에서 Adobe Experience Manager as a Cloud Service로 템플릿 관리](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html) - AEM 템플릿과의 통합 구성 및 사용에 대한 단계별 세부 사항을 알아봅니다.
-* [Adobe Campaign v8 웹 사용자 인터페이스에서 Adobe Experience Manager as a Cloud Service를 사용하여 에셋 관리](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) - AEM Assets과의 통합 구성 및 사용에 대한 단계별 세부 사항을 알아봅니다.
-
 
 ## Adobe Campaign Standard와 통합 {#acs}
 
