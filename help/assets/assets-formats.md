@@ -7,10 +7,10 @@ role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
-source-git-commit: c99d6f3c67c97ea382ace2e102b2cacbbd2e5db5
+source-git-commit: a19f07bc42d2918338b07418bed56ac2bb73ba2d
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 26%
+source-wordcount: '1872'
+ht-degree: 25%
 
 ---
 
@@ -275,17 +275,17 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 | 형식 | 업로드 (입력 형식) | 이미지 사전 설정 만들기(출력 형식) | 동적 렌디션 미리 보기 | 동적 렌디션 전달 | 동적 렌디션 다운로드 | 이 형식을 지원하는 형식 설정 |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| AVIF | − | − | − | ✓ | − | − |
 | BMP | ✓ | − | − | − | − | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| HEIC | − | − | − | ✓ | − | − |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
-| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ 병합된 이미지가 PSD 파일에서 추출됩니다. Adobe Photoshop에서 생성되고 PSD 파일에 포함된 이미지입니다. 설정에 따라 병합된 이미지가 실제 이미지가 될 수도 있고 그렇지 않을 수도 있습니다.
@@ -333,7 +333,7 @@ Dynamic Media은 다음과 같은 3D 형식을 지원합니다.
 
 참조: [Dynamic Media에서 3D 자산 작업](/help/assets/assets-3d.md).
 
-| 3D 파일 확장명 | 파일 형식 | MIME 유형 | 메모 |
+| 3D 파일 확장명 | 파일 포맷 | MIME 유형 | 메모 |
 |---|---|---|---|
 | GLB | 이진 GL 전송 | model/gltf-binary | 재료 및 텍스처를 단일 자산으로 포함합니다. |
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
