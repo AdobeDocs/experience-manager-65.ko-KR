@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2317'
 ht-degree: 1%
 
 ---
@@ -283,7 +283,7 @@ Apache Sling 작업 소비자 관리자 서비스는 주제 허용 목록 및 �
    | 전송 >전송 사용자 | 대상 인스턴스의 복제 사용자 |
    | 전송 >전송 암호 | 대상 인스턴스의 복제 사용자 암호 |
    | Extended > HTTP 메서드 | POST |
-   | 트리거 > 기본값 무시 | True |
+   | 트리거 > 기본값 무시 | 참 |
 
 ### 역방향 에이전트 만들기 {#creating-the-reverse-agent}
 
@@ -307,7 +307,7 @@ Apache Sling 작업 소비자 관리자 서비스는 주제 허용 목록 및 �
    |---|---|
    | 설정 > 직렬화 유형 | 기본값 |
    | 전송 >전송 URI | repo://var/replication/outbox |
-   | 트리거 > 기본값 무시 | True |
+   | 트리거 > 기본값 무시 | 참 |
 
 ### Sling ID 찾기 {#finding-the-sling-id}
 

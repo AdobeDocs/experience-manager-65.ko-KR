@@ -4,7 +4,7 @@ description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 지정�
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '4535'
 ht-degree: 1%
@@ -155,8 +155,8 @@ ht-degree: 1%
 
 1. 원하는 SMTP 서버에 연결하도록 서비스를 구성합니다.
 
-   1. **SMTP 서버 호스트 이름**: 예, (smtp.gmail.com)
-   1. **서버 포트**: 예를 들어 SSL을 사용하는 gmail의 경우 (465)
+   1. **SMTP 서버 호스트 이름**: 예(smtp.gmail.com)
+   1. **서버 포트**: 예(465)(SSL을 사용하는 gmail)
    1. **SMTP 사용자:** demo@ &lt;companyname> .com
    1. **&quot;보낸 사람&quot; 주소**: aemformsdemo@adobe.com
 

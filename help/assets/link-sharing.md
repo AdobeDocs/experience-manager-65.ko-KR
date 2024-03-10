@@ -6,10 +6,10 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 6%
+source-wordcount: '1026'
+ht-degree: 7%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 6%
 
 1. 사용자가 원본 에셋을 다운로드할 수 있도록 하려면 **[!UICONTROL 원본 파일 다운로드 허용]**. 사용자가 공유 에셋의 렌디션만 다운로드하도록 하려면 다음을 선택합니다. **[!UICONTROL 파일의 렌디션 다운로드 허용]**.
 
-1. 클릭 **[!UICONTROL 공유]**. 이메일을 통해 링크가 사용자와 공유됨을 확인하는 메시지가 표시됩니다.
+1. 클릭 **[!UICONTROL 공유]**. 링크가 이메일을 통해 사용자와 공유됨을 확인하는 메시지가 표시됩니다.
 
 1. 공유 에셋을 보려면 사용자에게 전송된 이메일의 링크를 클릭합니다. 에셋 미리보기를 생성하려면 공유 에셋을 클릭합니다. 미리보기를 닫으려면 **[!UICONTROL 뒤로]**. 폴더를 공유한 경우 **[!UICONTROL 상위 폴더]** 을 눌러 상위 폴더로 돌아갑니다.
 

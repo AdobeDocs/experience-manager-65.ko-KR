@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
@@ -1378,7 +1378,7 @@ Forms 서비스 API를 사용하는 애플리케이션 논리는 Java™ 서블�
 
 >[!NOTE]
 >
-사용 시 `com.adobe.idp.Document` 오브젝트 및 `org.w3c.dom.Document` 동일한 응용 프로그램에서 `org.w3c.dom.Document`.
+>사용 시 `com.adobe.idp.Document` 오브젝트 및 `org.w3c.dom.Document` 동일한 응용 프로그램에서 `org.w3c.dom.Document`.
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 PDF으로 제출된 PDF forms 처리 {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 

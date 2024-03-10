@@ -4,10 +4,10 @@ description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 �
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms, Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2882'
-ht-degree: 25%
+source-wordcount: '2884'
+ht-degree: 24%
 
 ---
 
@@ -189,7 +189,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 
 ## 양식에 대한 제출 액션 구성 {#configure-submit-action-for-form}
 
-제출 액션을 사용하면 적응형 양식을 통해 캡처되는 데이터의 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 제출 단추를 클릭하면 트리거됩니다. 적응형 양식에는 즉시 사용 가능한 제출 액션이 포함됩니다. 기본 제출 액션을 확장하여 자신만의 사용자 지정 제출 액션을 만들 수도 있습니다. 양식에 대해 제출 액션을 구성하려면 다음 작업을 수행하십시오.
+제출 액션을 사용하면 적응형 양식을 통해 캡처된 데이터 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 제출 단추를 클릭하면 트리거됩니다. 적응형 양식에는 즉시 사용 가능한 제출 액션이 포함됩니다. 기본 제출 액션을 확장하여 자신만의 사용자 지정 제출 액션을 만들 수도 있습니다. 양식에 대해 제출 액션을 구성하려면 다음 작업을 수행하십시오.
 
 1. 적응형 양식이 포함된 AEM 페이지 편집기 또는 경험 조각을 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.

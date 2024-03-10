@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '6650'
 ht-degree: 0%
@@ -322,7 +322,7 @@ while (isSupportedPath(path)) {
 
 #### 주도자별 CUG 정책 관리 {#managing-cug-policies-by-pincipal}
 
-에서 정의한 확장 `JackrabbitAccessControlManager` 주체가 액세스 제어 정책을 편집할 수 있도록 허용하는 것은 CUG 액세스 제어 관리를 사용하여 구현되지 않습니다. 정의에 따라 CUG 정책은 모든 주체(다음과 함께 나열된 주체)에 항상 영향을 미칩니다. `PrincipalSetPolicy` 읽기 액세스 권한이 부여되지만 다른 모든 주도자는 대상 노드에 의해 정의된 트리에서 콘텐츠를 읽을 수 없습니다.
+에서 정의한 확장 `JackrabbitAccessControlManager` 주체가 액세스 제어 정책을 편집할 수 있도록 해 주는 기능은 CUG 액세스 제어 관리를 사용하여 구현되지 않습니다. CUG 정책은 기본적으로 모든 주체(다음과 함께 나열된 주체에 항상 영향을 미칩니다. `PrincipalSetPolicy` 읽기 액세스 권한이 부여되지만 다른 모든 주도자는 대상 노드에 의해 정의된 트리에서 콘텐츠를 읽을 수 없습니다.
 
 해당 메서드는 항상 빈 정책 배열을 반환하지만 예외를 throw하지 않습니다.
 

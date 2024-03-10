@@ -7,9 +7,9 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
+source-git-commit: 7c83cdf779fc2b72b73e29064b2feec594e2e4b8
 workflow-type: tm+mt
-source-wordcount: '6084'
+source-wordcount: '6086'
 ht-degree: 2%
 
 ---
@@ -282,7 +282,7 @@ AEM Forms의 테마는 양식 및 대화형 통신에서 패널 레이아웃의 
 
 캔버스에서 구성 요소를 선택하면 스타일 속성이 사이드바에 나열됩니다. 객체 유형과 해당 상태를 선택한 다음 스타일을 제공합니다.
 
-### 테마 편집기에서 최근에 사용한 스타일 {#recently-used-styles-in-theme-editor}
+### 테마 편집기에서 최근에 사용된 스타일 {#recently-used-styles-in-theme-editor}
 
 테마 편집기는 구성 요소에 적용된 최대 10개의 스타일을 캐시합니다. 캐싱된 스타일을 테마의 다른 구성 요소와 함께 사용할 수 있습니다. 최근에 사용한 스타일은 사이드바에서 선택한 구성 요소 바로 아래에 목록 상자로 사용할 수 있습니다. 처음에는 최근에 사용한 스타일 목록이 비어 있습니다.
 

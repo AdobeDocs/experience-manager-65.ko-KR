@@ -9,10 +9,10 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 35%
+source-wordcount: '1733'
+ht-degree: 34%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 35%
 
 ## 적응형 양식에 대한 제출 액션 구성 {#configure-submit-action-for-form}
 
-제출 액션을 사용하면 적응형 양식을 통해 캡처되는 데이터의 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 제출 단추를 클릭하면 트리거됩니다. 적응형 양식에는 즉시 사용 가능한 제출 액션이 포함됩니다. 기본 제출 액션을 확장하여 자신만의 사용자 지정 제출 액션을 만들 수도 있습니다. 양식에 대해 제출 액션을 구성하려면 다음 작업을 수행하십시오.
+제출 액션을 사용하면 적응형 양식을 통해 캡처된 데이터 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 제출 단추를 클릭하면 트리거됩니다. 적응형 양식에는 즉시 사용 가능한 제출 액션이 포함됩니다. 기본 제출 액션을 확장하여 자신만의 사용자 지정 제출 액션을 만들 수도 있습니다. 양식에 대해 제출 액션을 구성하려면 다음 작업을 수행하십시오.
 
 1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/using/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.

@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## CSRF 공격 작동 방식 {#how-csrf-attacks-work}
 
-CSRF(크로스 사이트 요청 위조)는 유효한 사용자의 브라우저를 사용하여 iFrame을 통해 악의적인 요청을 보내는 웹 사이트 취약성입니다. 브라우저는 도메인 기반으로 쿠키를 보내기 때문에 사용자가 애플리케이션에 로그인하면 사용자의 데이터가 손상될 수 있습니다.
+CSRF(크로스 사이트 요청 위조)는 유효한 사용자의 브라우저를 사용하여 악의적인 요청을 보내는 웹 사이트 취약성입니다(iFrame 사용 가능). 브라우저는 도메인 기반으로 쿠키를 보내기 때문에 사용자가 애플리케이션에 로그인하면 사용자의 데이터가 손상될 수 있습니다.
 
 예를 들어, 브라우저에서 관리 콘솔에 로그인하는 시나리오를 생각해 보십시오. 링크가 포함된 이메일 메시지를 받게 됩니다. 링크를 클릭하면 브라우저에 새 탭이 열립니다. 연 페이지에는 인증된 AEM Forms 세션의 쿠키를 사용하여 Forms 서버에 악의적인 요청을 하는 숨겨진 iFrame이 포함되어 있습니다. 사용자 관리는 유효한 쿠키를 수신하므로 요청을 전달합니다.
 

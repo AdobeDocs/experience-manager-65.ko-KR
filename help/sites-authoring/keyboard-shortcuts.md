@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '383'
 ht-degree: 75%
 
 ---
@@ -79,7 +79,7 @@ AEM은 자주 사용되는 브라우저에서 이미 사용되고 있는 공통�
 
 ## 키보드 단축키 비활성화 {#deactivating-keyboard-shortcuts}
 
-AEM에서는 일반적으로 사용되는 일부 기능(편집, 속성, 복사/붙여넣기, 다양한 사이드 레일 메뉴 표시 등)에 대한 키보드 단축키를 제공합니다.
+AEM에서는 일반적으로 사용되는 기능(편집, 속성, 복사/붙여넣기, 다양한 사이드 레일 메뉴 표시 등)에 대한 키보드 단축키를 제공합니다.
 
 키보드 단축키를 사용하지 않거나 특정 접근성 요구 사항이 없는 사용자의 경우 모든 키보드 단축키를 비활성화할 수 있습니다.
 

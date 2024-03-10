@@ -2,10 +2,10 @@
 title: 콘텐츠 조각 액세스 및 게재 Headless 빠른 시작 안내서
 description: AEM Assets REST API를 사용하여 콘텐츠 조각을 관리하고, 콘텐츠 조각 콘텐츠의 Headless 전달을 위한 GraphQL API를 사용하는 방법에 대해 알아봅니다.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 48%
+ht-degree: 43%
 
 ---
 
@@ -17,7 +17,7 @@ AEM Assets REST API를 사용하여 콘텐츠 조각을 관리하고, 콘텐츠 
 
 [일부 콘텐츠 조각을 만들었으므로](create-content-fragment.md) 이제 AEM의 API를 사용하여 Headless 방식으로 전달할 수 있습니다.
 
-* [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 사용하여 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 생성할 수 있습니다.
+* [GRAPHQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만들 수 있습니다.
    * 이 항목을 사용하려면 [끝점은 AEM에서 정의하고 활성화해야 합니다.](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint), 그리고 필요한 경우 [GraphiQL 인터페이스가 설치됨](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [Assets REST API](/help/assets/assets-api-content-fragments.md)를 사용하면 콘텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 

@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1580'
 ht-degree: 0%
 
 ---

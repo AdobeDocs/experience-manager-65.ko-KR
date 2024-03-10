@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '763'
 ht-degree: 2%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 2%
 * [개념](/help/commerce/cif-classic/administering/concepts.md)
 * [관리(일반)](/help/commerce/cif-classic/administering/generic.md)
 
-Adobe은 Commerce Integration Framework의 두 가지 버전을 제공합니다.
+Adobe은 두 가지 버전의 Commerce integration framework을 제공합니다.
 
 <table>
  <tbody>
   <tr>
    <th><p> </p> </th>
    <th><p>CIF 온-프레미스</p> </th>
-   <th><p>CIF 클라우드</p> </th>
+   <th><p>CIF Cloud</p> </th>
   </tr>
   <tr>
    <td><p>지원되는 AEM 버전</p> </td>

@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 0%
@@ -218,7 +218,7 @@ Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 AEM JCR �
 
 AEM과 SharePoint 모두에서 인증된 사용자만 커넥터를 통해 SharePoint 콘텐츠에 액세스할 수 있습니다.
 
-또한 인증에 커넥터 확장을 사용하여 AEM 사용자의 액세스를 특정 SharePoint 사용자에게 매핑하는 사용자 지정 인증 모듈을 만들 수도 있습니다. 커넥터 인스턴스에 매핑된 SharePoint 컨텐츠를 볼 수 있도록 SharePoint 사용자에 해당하는 AEM 사용자를 만듭니다(사용자 이름과 암호가 일치해야 함).
+인증에 커넥터 확장을 사용하여 사용자 지정 인증 모듈을 만들 수도 있습니다. 예를 들어, AEM 사용자의 액세스를 특정 SharePoint 사용자에게 매핑합니다. 커넥터 인스턴스에 매핑된 SharePoint 컨텐츠를 볼 수 있도록 SharePoint 사용자에 해당하는 AEM 사용자를 만듭니다(사용자 이름과 암호가 일치해야 함).
 
 AEM에서 사용자를 만들려면 다음 작업을 수행하십시오.
 

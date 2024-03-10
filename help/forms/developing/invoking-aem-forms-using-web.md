@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9887'
+source-wordcount: '9814'
 ht-degree: 0%
 
 ---
@@ -1518,7 +1518,7 @@ JAX-WS 도구(wsimport.exe)를 실행할 때 -를 사용하여 이 XML 파일을
 * `Roles`
 * `BLOB`
 
-이 문제를 방지하려면 데이터 형식을 완전히 정규화하는 것이 좋습니다. 예를 들어 서비스 참조를 사용하여 Forms 서비스와 서명 서비스를 모두 참조하는 .NET 응용 프로그램을 생각해 보십시오. 두 서비스 참조에 모두 `BLOB` 클래스. 을(를) 사용하려면 `BLOB` 인스턴스, 의 자격을 완전히 갖춤 `BLOB` 개체를 선언할 때 개체가 반환됩니다. 이 접근 방식은 다음 코드 예제와 같습니다. 이 코드 예제에 대한 자세한 내용은 [대화형 Forms 디지털 서명](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
+이 문제를 방지하려면 데이터 형식을 완전히 사용하는 것이 좋습니다. 예를 들어 서비스 참조를 사용하여 Forms 서비스와 서명 서비스를 모두 참조하는 .NET 응용 프로그램을 생각해 보십시오. 두 서비스 참조에 모두 `BLOB` 클래스. 을(를) 사용하려면 `BLOB` 인스턴스, 의 자격을 완전히 갖춤 `BLOB` 개체를 선언할 때 개체가 반환됩니다. 이 접근 방식은 다음 코드 예제와 같습니다. 이 코드 예제에 대한 자세한 내용은 [대화형 Forms 디지털 서명](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
 
 다음 C# 코드 예제는 Forms 서비스에서 렌더링하는 대화형 양식에 서명합니다. 클라이언트 응용 프로그램에는 두 개의 서비스 참조가 있습니다. 다음 `BLOB` Forms 서비스와 연결된 인스턴스는 `SignInteractiveForm.ServiceReference2` 네임스페이스입니다. 마찬가지로 `BLOB` 서명 서비스와 연결된 인스턴스는 `SignInteractiveForm.ServiceReference1` 네임스페이스입니다. 서명된 대화형 양식은 이름이 인 PDF 파일로 저장됩니다. *LoanXFASigned.pdf*.
 
@@ -1553,7 +1553,7 @@ JAX-WS 도구(wsimport.exe)를 실행할 때 -를 사용하여 이 XML 파일을
                 try
                 {
                     //Because BLOB objects are used in both service references
-                    //it is necessary to fully-qualify the BLOB objects
+                    //it is necessary to fully qualify the BLOB objects
  
                     //Retrieve the form -- invoke the Forms service
                     SignInteractiveForm.ServiceReference2.BLOB formData = GetForm();

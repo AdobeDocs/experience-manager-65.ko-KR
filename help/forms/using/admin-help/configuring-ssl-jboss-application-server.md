@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ JBoss 애플리케이션 서버에서 SSL을 구성하려면 인증을 위한 SS
    `keytool -import -alias "AEMForms Cert" -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. 유형 `changeit` 을 암호로 사용하십시오. 이 암호는 Java 설치의 기본 암호이며 시스템 관리자가 변경했을 수 있습니다.
-1. 을 묻는 메시지가 표시되면 `Trust this certificate? [no]`:, 유형 `yes`. &quot;인증서가 키 저장소에 추가됨&quot; 확인이 표시됩니다.
+1. 을 묻는 메시지가 표시되면 `Trust this certificate? [no]`, 유형 `yes`. &quot;인증서가 키 저장소에 추가됨&quot; 확인이 표시됩니다.
 1. Workbench에서 SSL을 통해 연결하는 경우 Workbench 컴퓨터에 인증서를 설치합니다.
 1. 텍스트 편집기에서 편집할 다음 파일을 엽니다.
 

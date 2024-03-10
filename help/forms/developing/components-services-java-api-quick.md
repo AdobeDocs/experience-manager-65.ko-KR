@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
-사용자 지정 구성 요소가 있고 SOAP 또는 EJB 프로토콜을 사용하여 동일한 로컬 서버에서 DSC를 호출하고 이러한 호출이 업그레이드 후 작동을 중지하는 경우 VM 내 호출 전략을 사용합니다. 기본 ServiceClientFactory와 함께 VM 내 DSC 호출 메서드를 사용하고 SOAP 또는 EJB 프로토콜을 사용하여 ServiceClientFactory를 만들지 않습니다.
+>사용자 지정 구성 요소가 있고 SOAP 또는 EJB 프로토콜을 사용하여 동일한 로컬 서버에서 DSC를 호출하고 이러한 호출이 업그레이드 후 작동을 중지하는 경우 VM 내 호출 전략을 사용합니다. 기본 ServiceClientFactory와 함께 VM 내 DSC 호출 메서드를 사용하고 SOAP 또는 EJB 프로토콜을 사용하여 ServiceClientFactory를 만들지 않습니다.
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 구성 요소 배포 {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 

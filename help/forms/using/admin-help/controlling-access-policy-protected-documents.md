@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 0%
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 * 문서가 온라인 상태이고 닫혀 있는 경우, 정책으로 보호된 문서를 열어 수신자가 다음 번에 문서 보안과 동기화할 때 변경 사항이 적용됩니다.
 * 문서가 온라인 상태이고 열려 있는 경우 수신자가 문서를 닫으면 변경 사항이 적용됩니다.
-* 문서가 오프라인 상태인 경우(노트북과 같이 인터넷 연결 없이 사용 중), 다음에 수신자가 문서 보안과 동기화할 때 변경 사항이 적용됩니다.
+* 문서가 오프라인 상태인 경우(즉, 노트북과 같이 인터넷 연결 없이 사용 중인 경우), 다음에 수신자가 문서 보안과 동기화할 때 변경 사항이 적용됩니다.
 
 **정책으로 보호된 문서에 대한 액세스 취소**
 

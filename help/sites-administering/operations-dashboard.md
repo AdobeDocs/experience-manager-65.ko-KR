@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '6061'
+source-wordcount: '5868'
 ht-degree: 2%
 
 ---
@@ -199,7 +199,7 @@ A **복합 상태 검사** 은 여러 개별 검사의 정보를 집계하는 �
    <td><p>관찰 큐 길이는 모든 이벤트 리스너 및 백그라운드 관찰자를 반복하고 해당 이벤트 리스너와 백그라운드 관찰자를 비교합니다 <code>queueSize </code>대상 <code>maxQueueSize</code> 및:</p>
     <ul>
      <li>다음 경우에 중요 상태를 반환합니다. <code>queueSize</code> 값이 을 초과합니다. <code>maxQueueSize</code> 값(이벤트 삭제 시)</li>
-     <li>다음 경우 Warn 반환 <code>queueSize</code> 값이 <code>maxQueueSize * WARN_THRESHOLD</code> (기본값은 0.75입니다) </li>
+     <li>다음 경우에 Warn 반환 <code>queueSize</code> 값이 <code>maxQueueSize * WARN_THRESHOLD</code> (기본값은 0.75입니다) </li>
     </ul> <p>각 큐의 최대 길이는 별도의 구성(Oak 및 AEM)에서 가져오며, 이 상태 검사에서는 구성할 수 없습니다. 이 상태 검사의 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -223,11 +223,11 @@ A **복합 상태 검사** 은 여러 개별 검사의 정보를 집계하는 �
    <td>비동기 색인</td>
    <td><p>비동기 인덱스 검사:</p>
     <ul>
-     <li>하나 이상의 인덱싱 레인이 실패하는 경우 위험 상태를 반환합니다.</li>
+     <li>하나 이상의 인덱싱 레인이 실패한 경우 위험 상태를 반환합니다.</li>
      <li>다음 확인: <code>lastIndexedTime</code> 모든 인덱싱 레인의 경우:
       <ul>
        <li>2시간 이상 지난 경우 위험 상태를 반환합니다. </li>
-       <li>2시간에서 45분 전까지인 경우 경고 상태를 반환합니다. </li>
+       <li>2시간과 45분 사이의 경우 경고 상태를 반환합니다. </li>
        <li>45분 미만인 경우 확인 상태를 반환합니다. </li>
       </ul> </li>
      <li>이러한 조건이 하나도 충족되지 않으면 OK 상태를 반환합니다</li>
@@ -265,7 +265,7 @@ A **복합 상태 검사** 은 여러 개별 검사의 정보를 집계하는 �
     </div>
     <ul>
      <li>보다 큰 경우 위험 반환 <code>maxNumQueueJobs</code> 큐에 있음</li>
-     <li>1시간 이상 오래된 장기 실행 활성 작업이 있는 경우 위험 반환</li>
+     <li>1시간 이상 오래된 장기 실행 활성 작업이 있는 경우 위험 을 반환합니다.</li>
      <li>큐에 있는 작업이 있고 마지막으로 완료된 작업 시간이 1시간보다 오래된 경우 요일을 반환합니다.</li>
     </ul> <p>대기열에 추가된 최대 작업 수 매개 변수만 구성할 수 있으며 기본값은 1000입니다.</p> <p>이 상태 검사의 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
   </tr>
@@ -273,7 +273,7 @@ A **복합 상태 검사** 은 여러 개별 검사의 정보를 집계하는 �
    <td>요청 성능</td>
    <td><p>이 검사는 다음을 확인합니다. <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Sling 지표 </a>및:</p>
     <ul>
-     <li>75번째 백분위수 값이 중요 임계값을 초과하는 경우 중요 반환(기본값은 500밀리초)</li>
+     <li>75번째 백분위수 값이 중요 임계값을 초과하는 경우 위험(기본값: 500밀리초) 반환</li>
      <li>75번째 백분위수 값이 경고 임계값을 초과하는 경우 경고 반환(기본값은 200밀리초)</li>
     </ul> <p>이 상태 검사의 MBean은<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck</a>.</p> </td>
   </tr>
@@ -286,7 +286,7 @@ A **복합 상태 검사** 은 여러 개별 검사의 정보를 집계하는 �
    <td><p>디스크 공간 검사에서 다음을 확인합니다. <code>FileStoreStats</code> MBean은 노드 저장소의 크기와 노드 저장소 파티션에서 사용 가능한 디스크 공간의 크기를 검색하고,</p>
     <ul>
      <li>저장소 크기 대비 사용 가능한 디스크 공간 비율이 경고 임계값보다 작은 경우 경고 를 반환합니다(기본값은 10).</li>
-     <li>저장소 크기 대비 사용 가능한 디스크 공간 비율이 중요 임계값보다 작은 경우 위험 반환(기본값은 2)</li>
+     <li>저장소 크기 대비 사용 가능한 디스크 공간 비율이 중요 임계값보다 작은 경우 위험(기본값: 2) 반환</li>
     </ul> <p>두 임계값 모두 구성할 수 있습니다. 이 검사는 세그먼트 스토어가 있는 인스턴스에서만 작동합니다.</p> <p>이 상태 검사의 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -310,7 +310,7 @@ A **복합 상태 검사** 은 여러 개별 검사의 정보를 집계하는 �
    <td><p>Java™ 7에 있는 CodeCache 버그를 트리거할 수 있는 여러 JVM 조건을 확인하는 상태 검사:</p>
     <ul>
      <li>인스턴스가 Java™ 7에서 실행 중이며 코드 캐시 플러시가 활성화된 경우 경고를 반환합니다.</li>
-     <li>인스턴스가 Java™ 7에서 실행 중이고 예약된 코드 캐시 크기가 최소 임계값보다 작은 경우 경고를 반환합니다(기본값은 90MB).</li>
+     <li>인스턴스가 Java™ 7에서 실행 중이고 예약된 코드 캐시 크기가 최소 임계값보다 작은 경우 경고(기본값: 90MB)를 반환합니다.</li>
     </ul> <p>다음 <code>minimum.code.cache.size</code> 임계값은 구성할 수 있습니다. 버그에 대한 자세한 내용은 <a href="https://bugs.java.com/bugdatabase/"> 그런 다음 버그 ID 를 검색합니다8012547</a>.</p> <p>이 상태 검사의 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -604,7 +604,7 @@ Lucene 바이너리 정리 작업을 사용하면 Lucene 바이너리를 제거�
 
 버전 제거 유지 관리 작업을 예약하여 이전 버전을 자동으로 삭제할 수 있습니다. 이 작업은 를 수동으로 사용해야 하는 필요성을 최소화합니다. [버전 삭제 도구](/help/sites-deploying/version-purging.md). 에 액세스하여 버전 제거 작업을 예약하고 구성할 수 있습니다 **도구 > 작업 > 유지 관리 > 주간 유지 관리 창** 및 다음 단계를 수행합니다.
 
-1. **추가**&#x200B;를 클릭합니다.
+1. 클릭 **추가**.
 1. 선택 **버전 삭제** 드롭다운 메뉴에서 을(를) 선택합니다.
 
    ![version_purge_maintenancetask](assets/version_purge_maintenancetask.png)
@@ -876,7 +876,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
     <ul>
      <li>사용자는 예기치 않은 상태에 있거나 개수가 많은 작업이 있는 경우 조사해야 합니다.</li>
     </ul> </td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td>예상 노드 수</td>
@@ -898,11 +898,11 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
    <td>N/A</td>
   </tr>
   <tr>
-   <td>색인 생성</td>
-   <td><p>디스플레이:</p>
+   <td>색인화</td>
+   <td><p>표시:</p>
     <ul>
-     <li>"색인 생성 진행 중"</li>
-     <li>"진행 중인 쿼리"</li>
+     <li>"색인화 진행 중"</li>
+     <li>"쿼리 진행 중"</li>
     </ul> <p>스레드 덤프에 인덱싱 또는 쿼리 스레드가 있는 경우.</p> </td>
    <td>N/A</td>
    <td>N/A</td>

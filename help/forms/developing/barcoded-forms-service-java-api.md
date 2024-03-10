@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -217,4 +217,4 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
-다음 두 가지를 모두 사용하는 경우 `org.w3c.dom.Document` 오브젝트 및 a `com.adobe.idp.Document` 동일한 응용 프로그램 논리에 있는 객체인 경우 두 객체 모두에 대해 자격을 부여하는 것이 좋습니다.
+>다음 두 가지를 모두 사용하는 경우 `org.w3c.dom.Document` 오브젝트 및 a `com.adobe.idp.Document` 동일한 응용 프로그램 논리에 있는 객체인 경우 두 객체 모두에 대해 자격을 부여하는 것이 좋습니다.

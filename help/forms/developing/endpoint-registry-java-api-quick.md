@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
-웹 서비스를 사용하여 끝점으로 작업할 수 없습니다.
+>웹 서비스를 사용하여 끝점으로 작업할 수 없습니다.
 
 ## QuickStart: Java™ API를 사용하여 EJB 엔드포인트 추가 {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
@@ -251,7 +251,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
-다음 빠른 시작을 컴파일하고 실행할 수 있도록 프로젝트에 WatchedFolderEndpointConfigConstants.java 파일을 포함합니다. (참조: [감시 폴더 구성 값 상수 파일](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+>다음 빠른 시작을 컴파일하고 실행할 수 있도록 프로젝트에 WatchedFolderEndpointConfigConstants.java 파일을 포함합니다. (참조: [감시 폴더 구성 값 상수 파일](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -386,7 +386,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
-다음 빠른 시작을 컴파일하고 실행할 수 있도록 프로젝트에 EmailEndpointConfigConstants.java 파일을 포함합니다. (참조: [이메일 구성 값 상수 파일](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>다음 빠른 시작을 컴파일하고 실행할 수 있도록 프로젝트에 EmailEndpointConfigConstants.java 파일을 포함합니다. (참조: [이메일 구성 값 상수 파일](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*

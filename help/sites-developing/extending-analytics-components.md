@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 2%
+source-wordcount: '1244'
+ht-degree: 0%
 
 ---
 
@@ -155,7 +155,7 @@ Adobe Analytics 프레임워크와 상호 작용하는 구성 요소는 프레�
 
 CQ 애플리케이션에 topnav 구성 요소를 복사합니다. 이 절차를 수행하려면 응용 프로그램이 CRXDE Lite에서 설정되어 있어야 합니다.
 
-1. 마우스 오른쪽 버튼으로 `/libs/foundation/components/topnav` 노드를 클릭하고 복사를 클릭합니다.
+1. 마우스 오른쪽 단추 클릭 `/libs/foundation/components/topnav` 노드를 클릭하고 복사를 클릭합니다.
 1. 응용 프로그램 폴더 아래의 구성 요소 폴더를 마우스 오른쪽 단추로 클릭하고 붙여넣기를 클릭합니다.
 1. 모두 저장을 클릭합니다.
 
@@ -230,7 +230,7 @@ topnav 구성 요소를 구성하고 JSP 파일을 편집하여 추적 이벤트
   All Rights Reserved.
 
   This software is the confidential and proprietary information of
-  Day Management AG, ("Confidential Information"). You shall not
+  Day Management AG ("Confidential Information"). You shall not
   disclose such Confidential Information and shall use it only in
   accordance with the terms of the license agreement you entered into
   with Day.

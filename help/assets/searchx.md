@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 19%
+source-wordcount: '814'
+ht-degree: 16%
 
 ---
 
@@ -126,7 +126,7 @@ ht-degree: 19%
                "name": id + ".value"
            });
    
-           // Depending on the predicate additional parameters allow to configure the
+           // Depending on the predicate, additional parameters let you configure the
            // predicate. Here we add an operation parameter to create a "like" query.
            // Again note the name set to the id and a suffix.
            qb.addField({
@@ -255,32 +255,32 @@ ht-degree: 19%
 
 | 속성 | 유형 | 설명 |
 |---|---|---|
-| predicateName | 문자열 | 술어 이름. 기본값은 입니다.`fulltext` |
-| searchCallback | 함수 | 이벤트에서 검색을 트리거하기 위한 콜백 `keyup`. 기본값은 입니다.`CQ.wcm.SiteAdmin.doSearch` |
+| predicateName | 문자열 | 술어 이름. 기본값은 입니다. `fulltext` |
+| searchCallback | 함수 | 이벤트에서 검색을 트리거하기 위한 콜백 `keyup`. 기본값은 입니다. `CQ.wcm.SiteAdmin.doSearch` |
 
 ### 속성 조건자 {#propertypredicate}
 
 | 속성 | 유형 | 설명 |
 |---|---|---|
-| predicateName | 문자열 | 술어 이름. 기본값은 입니다.`property` |
-| propertyName | 문자열 | JCR 속성의 이름입니다. 기본값은 입니다.`jcr:title` |
+| predicateName | 문자열 | 술어 이름. 기본값은 입니다. `property` |
+| propertyName | 문자열 | JCR 속성의 이름입니다. 기본값은 입니다. `jcr:title` |
 | defaultValue | 문자열 | 기본값이 미리 채워져 있습니다. |
 
 ### 경로 조건자 {#pathpredicate}
 
 | 속성 | 유형 | 설명 |
 |---|---|---|
-| predicateName | 문자열 | 술어 이름. 기본값은 입니다.`path` |
-| rootPath | 문자열 | 술어의 루트 경로. 기본값은 입니다.`/content/dam` |
-| pathFieldPredicateName | 문자열 | 기본값은 입니다.`folder` |
+| predicateName | 문자열 | 술어 이름. 기본값은 입니다. `path` |
+| 루트 경로 | 문자열 | 술어의 루트 경로. 기본값은 입니다. `/content/dam` |
+| pathFieldPredicateName | 문자열 | 기본값은 입니다. `folder` |
 | showFlatOption | 부울 | 확인란을 표시하는 플래그 `search in subfolders`. 기본값은 true입니다. |
 
 ### 날짜 조건자 {#datepredicate}
 
 | 속성 | 유형 | 설명 |
 |---|---|---|
-| predicateName | 문자열 | 술어 이름. 기본값은 입니다.`daterange` |
-| propertyname | 문자열 | JCR 속성의 이름입니다. 기본값은 입니다.`jcr:content/jcr:lastModified` |
+| predicateName | 문자열 | 술어 이름. 기본값은 입니다. `daterange` |
+| propertyname | 문자열 | JCR 속성의 이름입니다. 기본값은 입니다. `jcr:content/jcr:lastModified` |
 | defaultValue | 문자열 | 미리 채워진 기본값 |
 
 ### 옵션 조건자 {#optionspredicate}
@@ -288,11 +288,11 @@ ht-degree: 19%
 | 속성 | 유형 | 설명 |
 |---|---|---|
 | 제목 | 문자열 | 상단 제목 추가 |
-| predicateName | 문자열 | 술어 이름. 기본값은 입니다.`daterange` |
-| propertyname | 문자열 | JCR 속성의 이름입니다. 기본값은 입니다.`jcr:content/metadata/cq:tags` |
-| 접기 | 문자열 | 수준을 접습니다. 기본값은 입니다.`level1` |
+| predicateName | 문자열 | 술어 이름. 기본값은 입니다. `daterange` |
+| propertyname | 문자열 | JCR 속성의 이름입니다. 기본값은 입니다. `jcr:content/metadata/cq:tags` |
+| 접기 | 문자열 | 수준을 접습니다. 기본값은 입니다. `level1` |
 | triggerSearch | 부울 | 검사 시 검색을 트리거하기 위한 플래그입니다. 기본값은 false입니다. |
-| searchCallback | 함수 | 검색을 트리거하기 위한 콜백입니다. 기본값은 입니다.`CQ.wcm.SiteAdmin.doSearch` |
+| searchCallback | 함수 | 검색을 트리거하기 위한 콜백입니다. 기본값은 입니다. `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | 숫자 | searchCallback이 실행되기 전에 시간이 초과되었습니다. 기본값은 800ms입니다. |
 
 ## 검색 결과 사용자 지정 {#customizing-search-results}

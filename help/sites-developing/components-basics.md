@@ -7,7 +7,7 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '4843'
 ht-degree: 1%
@@ -1026,7 +1026,7 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 이러한 자리 
 >  * `aftermove`
 >  * `aftercopy`
 
-이벤트 처리기는 사용자 지정 구현으로 구현할 수 있습니다. 예, (여기서 `project.customerAction` 은 정적 메서드입니다).
+이벤트 처리기는 사용자 지정 구현으로 구현할 수 있습니다. 예를 들어, `project.customerAction` 은 정적 메서드입니다.
 
 `afteredit = "project.customerAction"`
 

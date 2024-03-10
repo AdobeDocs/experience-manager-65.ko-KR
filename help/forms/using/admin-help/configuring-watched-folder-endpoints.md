@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '7173'
+source-wordcount: '7192'
 ht-degree: 0%
 
 ---
@@ -239,8 +239,8 @@ Windows에서 응용 프로그램 서버가 서비스로 실행 중인 경우 �
 
 관리자는 서비스를 호출할 수 있는 파일 유형을 지정할 수 있습니다. 각 감시 폴더에 대해 여러 파일 패턴을 설정할 수 있습니다. 파일 패턴은 다음 파일 속성 중 하나일 수 있습니다.
 
-* 특정 파일 이름 확장명을 가진 파일(예: &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf,;)
-* 특정 이름을 가진 파일(예: 데이터).&amp;ast;
+* 특정 파일 이름 확장명을 가진 파일. 예: &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
+* 특정 이름을 가진 파일. 예: 데이터.&amp;ast;
 * 다음 예제와 같이 이름과 확장명에 복합 표현식이 있는 파일
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;포트&#39;

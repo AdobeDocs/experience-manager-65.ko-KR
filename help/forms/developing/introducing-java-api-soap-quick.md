@@ -1,15 +1,15 @@
 ---
 title: Java&trade 소개, API QuickStart
-description: SOAP 연결을 통해 활성화된 강력한 형식의 API인 AEM Forms Java&trade를 사용하여 AEM Forms 작업을 수행하는 방법에 대해 알아봅니다.
+description: SOAP 연결을 통해 활성화된 강력한 형식의 API인 AEM Forms Java&trade를 사용하여 AEM Forms 작업을 수행하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -85,4 +85,4 @@ JAR 파일 목록은 빠른 시작 부분의 주석 섹션에 있습니다. 예�
 
 >[!NOTE]
 >
-대부분의 웹 서비스 빠른 시작은 C#으로 작성되며 .NET Framework를 사용합니다. 그러나 SOAP 표준을 지원하는 모든 개발 환경에서 AEM Forms 서비스를 호출할 수 있는 클라이언트 응용 프로그램 논리를 만들 수 있습니다. (참조: [웹 서비스를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+>대부분의 웹 서비스 빠른 시작은 C#으로 작성되며 .NET Framework를 사용합니다. 그러나 SOAP 표준을 지원하는 모든 개발 환경에서 AEM Forms 서비스를 호출할 수 있는 클라이언트 응용 프로그램 논리를 만들 수 있습니다. (참조: [웹 서비스를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)

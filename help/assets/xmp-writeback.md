@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 7%
+source-wordcount: '798'
+ht-degree: 6%
 
 ---
 
@@ -87,7 +87,7 @@ XMP 원본에 쓰기 기능이 메타데이터를 렌디션 썸네일 140.100.pn
 
 1. Configuration Manager를 열려면 `https://[aem_server]:[port]/system/console/configMgr`.
 1. 를 엽니다. **[!UICONTROL Adobe CQ DAM XmpFilter]** 구성.
-1. 허용 목록을 통해 필터링을 적용하려면 다음을 선택합니다. **[!UICONTROL XMP 속성에 허용 목록에 추가하다 적용]**&#x200B;을 클릭하고 가져올 속성을 지정합니다. **[!UICONTROL XMP 필터링에 허용된 XML 이름]** 상자.
+1. 허용 목록 방식으로 필터링을 적용하려면 다음을 선택합니다. **[!UICONTROL XMP 속성에 허용 목록에 추가하다 적용]**&#x200B;을 클릭하고 가져올 속성을 지정합니다. **[!UICONTROL XMP 필터링에 허용된 XML 이름]** 상자.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 

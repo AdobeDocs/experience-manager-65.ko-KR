@@ -3,9 +3,9 @@ title: 개발(일반)
 description: 통합 프레임워크는 API와의 통합 계층을 포함하므로 eCommerce 기능을 위한 AEM 구성 요소를 빌드할 수 있습니다.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1856'
 ht-degree: 0%
 
 ---

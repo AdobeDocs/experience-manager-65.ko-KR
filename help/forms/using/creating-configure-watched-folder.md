@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 0%
@@ -48,7 +48,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >을(를) 선택한 경우 **서비스** 대상: **다음을 사용하여 파일 처리** 필드에서는 서비스 이름(inputProcessorType) 필드의 값을 괄호로 묶어야 합니다. 예: (foo=bar)
+   >을(를) 선택한 경우 **서비스** 대상: **다음을 사용하여 파일 처리** 필드에서는 서비스 이름(inputProcessorType) 필드의 값을 괄호로 묶어야 합니다. 예(foo=bar).
 
    ```java
    @Component(metatype = true, immediate = true, label = "WF Test Service", description = "WF Test Service")
