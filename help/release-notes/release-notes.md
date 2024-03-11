@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 39261357c17ef565a39ebc441aed356d69b4d8f9
+source-git-commit: a0ad6c5d61a971c5210f7d6dd7ef85e5effab44a
 workflow-type: tm+mt
-source-wordcount: '3560'
+source-wordcount: '3765'
 ht-degree: 4%
 
 ---
@@ -469,17 +469,24 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
   문제를 해결하려면
 
    1. 운영 체제용 핫픽스를 다운로드합니다.
-
       * [Microsoft Windows용 핫픽스](/help/release-notes/assets/Hotfix-windows.zip)
       * [Linux용 핫픽스](/help/release-notes/assets/Hotfix-Linux.zip)
       * [Apple macOS용 핫픽스](/help/release-notes/assets/Hotfix-osx.zip)
 
    1. 를 통해 패키지(.zip) 업로드 및 설치 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
-
    1. AEM 서버를 다시 시작하고 다시 시작 프로세스가 완료되면 모든 번들의 활성화 상태를 확인합니다. 다음에 액세스하여 번들 상태를 모니터링할 수 있습니다. `https://server:host/system/console/bundles`. 추가 작업을 진행하기 전에 모든 번들이 활성 상태인지 확인하십시오.
 
 * 대화형 통신에서 미리 채우기 서비스가 실패하고 null 포인터 예외가 발생합니다. (CQDOC-21355)
 * 적응형 Forms을 사용하면 ECMAScript 버전 5 이하에 사용자 지정 기능을 사용할 수 있습니다. 사용자 지정 함수에서 &#39;let&#39;, &#39;const&#39; 또는 화살표 함수와 같은 ECMAScript 버전 6 이상을 사용하는 경우 규칙 편집기가 제대로 열리지 않을 수 있습니다.
+* 서신 관리 편지를 만들 수 없습니다. 사용자가 문자를 만들 때 &quot;Object Object&quot; 설명과 함께 오류가 나타나고 문자가 만들어지지 않습니다. 레이아웃의 축소판도 편지 만들기 화면에서 로드되지 않습니다. (FORMS-13496)
+* 대화형 통신 서비스에서 PDF 문서를 만들지만 사용자의 데이터가 양식 필드에 자동으로 채워지지 않습니다. 미리 채우기 서비스가 예상대로 작동하지 않습니다. (FORMS-13413, FORMS-13493)
+* automated forms conversion 서비스의 RnC(Review and Correct) 편집기를 로드하지 못했습니다. (FORMS-13491)
+* AEM 6.5 Forms 서비스 팩 18(6.5.18.0) 또는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)에서 AEM 6.5 Forms 서비스 팩 20(6.5.20.0)으로 업데이트한 후 사용자에게 JSP 컴파일 오류가 발생합니다. 적응형 양식을 열거나 만들 수 없고 페이지 편집기, AEM Forms UI 및 AEM Workflow 편집기와 같은 다른 AEM 인터페이스에서 오류가 발생합니다. (FORMS-13492)
+
+고객은 최신 AEM 6.5 Forms 서비스 팩을 설치하여 앞서 언급한 문제를 해결할 수 있습니다.  지원되는 운영 체제에 대한 직접 링크는 다음과 같습니다.
+* [Apple macOS용 AEM 6.5 Forms 서비스 팩 20](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
+* [Microsoft Windows용 AEM 6.5 Forms 서비스 팩 20](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
+* [Linux용 AEM 6.5 Forms 서비스 팩 20](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
 
 <!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
 
