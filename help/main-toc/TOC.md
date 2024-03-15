@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: e39c52bc658e3a286272d1c94106b17a2f5579ad
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '7355'
+source-wordcount: '7397'
 ht-degree: 22%
 
 ---
@@ -890,10 +890,16 @@ ht-degree: 22%
       + [사용된 템플릿을 기반으로 구성 요소 표시](/help/forms/using/displaying-components-based-on-template.md)
       + [사용자 지정 적응형 양식 테마 만들기](/help/forms/using/creating-custom-adaptive-form-themes.md)
    + 트랜잭션 보고서 {#transaction-reports}
-      + [거래 보고서 개요](/help/forms/using/transaction-reports-overview.md)
-      + [거래 보고서 보기 및 이해](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-      + [트랜잭션 보고서 과금 가능한 API](/help/forms/using/transaction-reports-billable-apis.md)
-      + [사용자 정의 구현을 위한 트랜잭션 레코드](/help/forms/using/record-transaction-custom-implementation.md)
+      + [거래 보고 개요](/help/forms/using/transaction-reports-overview-jee-osgi.md)
+      + OSGi의 AEM Forms에 대한 거래 보고서 {#transaction-reports-osgi}
+         + [거래 보고서](/help/forms/using/transaction-reports-overview.md)
+         + [거래 보고서 보기 및 이해](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+         + [OSGi의 AEM Forms에 대한 청구 가능 API 목록](/help/forms/using/transaction-reports-billable-apis.md)
+         + [사용자 정의 구현을 위한 트랜잭션 레코드](/help/forms/using/record-transaction-custom-implementation.md)
+      + JEE의 AEM Forms에 대한 거래 보고서 {#transaction-reports-jee}
+         + [트랜잭션 보고서 활성화 및 보기](/help/forms/using/transaction-report-overview-jee.md)
+         + [JEE의 AEM Forms에 대한 청구 가능 API 목록](/help/forms/using/transaction-reports-billable-apis-jee.md)
+         + [사용자 지정 구성 요소 API에 대한 트랜잭션 기록](/help/forms/using/record-transaction-custom-component-jee.md)
    + JEE의 AEM Forms에 대한 관리자 도움말 {#administrator-help}
       + 시작하기 {#get-started}
          + [일반 AEM Forms 설정](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)

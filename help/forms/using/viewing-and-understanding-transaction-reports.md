@@ -6,14 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
 
-# 거래 보고서 보기 및 이해{#viewing-and-understanding-transaction-reports}
+# OSGi에서 AEM Forms에 대한 거래 보고서 보기 및 이해{#viewing-and-understanding-transaction-reports}
 
 트랜잭션 보고서를 사용하여 제출된 양식, 처리된 문서 및 렌더링된 문서의 수를 캡처하고 추적할 수 있습니다. 이러한 거래를 추적하는 목적은 제품 사용과 하드웨어 및 소프트웨어에 대한 투자 재조정에 대한 정보에 입각한 결정을 내리는 것입니다. 자세한 내용은 [AEM Forms 거래 보고서 개요](../../forms/using/transaction-reports-overview.md).
 
@@ -88,6 +88,6 @@ AEM Forms은 아래 요약 보고서에 표시된 대로 구성된 날짜 이후
 
 ## 관련 문서 {#related-articles}
 
-* [거래 보고서 개요](../../forms/using/transaction-reports-overview.md)
-* [거래 보고서 청구 가능 API](../../forms/using/transaction-reports-billable-apis.md)
-* [사용자 지정 구현에 대한 트랜잭션 기록](/help/forms/using/record-transaction-custom-implementation.md)
+* [OSGi의 AEM Forms에 대한 거래 보고서 개요](../../forms/using/transaction-reports-overview.md)
+* [OSGi의 AEM Forms에 대한 거래 보고서 청구 가능 API](../../forms/using/transaction-reports-billable-apis.md)
+* [OSGi에서 AEM Forms에 대한 사용자 지정 구현에 대한 트랜잭션을 기록합니다](/help/forms/using/record-transaction-custom-implementation.md)

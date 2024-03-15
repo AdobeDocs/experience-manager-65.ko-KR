@@ -6,24 +6,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
-# 거래 보고서 개요{#transaction-reports-overview}
+# OSGi의 AEM Forms에 대한 거래 보고서 {#transaction-reports-overview}
 
-## 소개 {#introduction}
+<!--## Introduction {#introduction}
 
-AEM Forms의 트랜잭션 보고서를 사용하면 AEM Forms 배포에서 지정된 날짜 이후 발생한 모든 트랜잭션의 수를 유지할 수 있습니다. 제품 사용에 대한 정보를 제공하고 비즈니스 이해 당사자가 디지털 처리 볼륨을 이해할 수 있도록 지원하는 것이 목표입니다. 거래의 예는 다음과 같습니다.
+Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
-* 적응형 양식, HTML5 양식 또는 양식 세트 제출
-* 대화형 통신의 인쇄 또는 웹 버전 렌디션
-* 한 파일 형식에서 다른 파일 형식으로 문서 변환
+* Submission of an adaptive form, an HTML5 Form, or a form set
+* Rendition of a print or a web version of an interactive communication
+* Conversion of a document from one file format to another
 
-거래로 간주되는 항목에 대한 자세한 내용은 [청구 가능 API](../../forms/using/transaction-reports-billable-apis.md).
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
 
 거래 기록은 기본적으로 비활성화되어 있습니다. 다음을 수행할 수 있습니다. [트랜잭션 기록 활성화](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) AEM 웹 콘솔에서 가져왔습니다. 작성자, 처리 또는 게시 인스턴스에 대한 거래 보고서를 볼 수 있습니다. 작성자 또는 처리 인스턴스에 대한 모든 트랜잭션의 집계된 합계에 대한 트랜잭션 보고서를 봅니다. 보고서가 실행되는 게시 인스턴스에서만 수행되는 모든 트랜잭션의 수에 대한 게시 인스턴스의 트랜잭션 보고서를 봅니다.
 
@@ -57,6 +57,6 @@ PDF 양식 제출, 에이전트 UI를 사용하여 대화형 통신 미리 보�
 
 ## 관련 문서 {#related-articles}
 
-* [거래 보고서 보기 및 이해](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [거래 보고서 청구 가능 API](../../forms/using/transaction-reports-billable-apis.md)
-* [사용자 지정 구현에 대한 트랜잭션 기록](/help/forms/using/record-transaction-custom-implementation.md)
+* [OSGi에서 AEM Forms에 대한 거래 보고서 보기 및 이해](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [OSGi의 AEM Forms에 대한 거래 보고서 청구 가능 API](../../forms/using/transaction-reports-billable-apis.md)
+* [OSGi에서 AEM Forms에 대한 사용자 지정 구현에 대한 트랜잭션을 기록합니다](/help/forms/using/record-transaction-custom-implementation.md)

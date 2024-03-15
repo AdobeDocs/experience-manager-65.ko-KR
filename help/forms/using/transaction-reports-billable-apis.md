@@ -1,18 +1,19 @@
 ---
-title: 거래 보고서 청구 가능 API
+title: 트랜잭션 보고서 과금 가능한 API
 description: 트랜잭션으로 계산되는 모든 API 목록
 topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1739'
 ht-degree: 7%
 
 ---
 
-# 거래 보고서 청구 가능 API{#transaction-reports-billable-apis}
+# OSGi의 AEM Forms에 대한 거래 보고서 청구 가능 API {#transaction-reports-billable-apis}
 
 AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여러 API를 제공합니다. 일부 API는 트랜잭션으로 계산되며 다른 API는 무료로 사용할 수 있습니다. 이 문서에서는 거래 보고서에서 거래로 간주되는 모든 API 목록을 제공합니다. 다음은 청구 가능한 API가 사용되는 몇 가지 일반적인 시나리오입니다.
 
@@ -500,6 +501,6 @@ PDF 양식 제출, 에이전트 UI를 사용하여 대화형 통신 미리 보�
 
 ## 관련 문서 {#related-articles}
 
-* [거래 보고서 개요](../../forms/using/transaction-reports-overview.md)
-* [거래 보고서 보기 및 이해](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [사용자 지정 구현에 대한 트랜잭션 기록](/help/forms/using/record-transaction-custom-implementation.md)
+* [OSGi의 AEM Forms에 대한 거래 보고서 개요](../../forms/using/transaction-reports-overview.md)
+* [OSGi에서 AEM Forms에 대한 거래 보고서 보기 및 이해](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [OSGi에서 AEM Forms에 대한 사용자 지정 구현에 대한 트랜잭션을 기록합니다](/help/forms/using/record-transaction-custom-implementation.md)

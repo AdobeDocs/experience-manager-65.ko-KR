@@ -1,18 +1,19 @@
 ---
-title: 사용자 지정 구현에 대한 트랜잭션 기록
+title: 사용자 정의 구현을 위한 트랜잭션 레코드
 description: TransactionRecorder API를 사용하여 트랜잭션으로 계산되지 않은 작업을 자동으로 기록합니다.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 0%
+source-wordcount: '222'
+ht-degree: 3%
 
 ---
 
-# 사용자 지정 구현에 대한 트랜잭션 기록 {#record-a-transaction-for-custom-implementations}
+# OSGi에서 AEM Forms에 대한 사용자 지정 구현에 대한 트랜잭션을 기록합니다 {#record-a-transaction-for-custom-implementations}
 
 TransactionRecorder API를 사용하여 트랜잭션으로 계상되지 않은 작업을 자동으로 기록합니다
 
@@ -88,6 +89,6 @@ $.ajax({
 
 ## 관련 문서 {#related-articles}
 
-* [거래 보고서 개요](/help/forms/using/transaction-reports-overview.md)
-* [거래 보고서 보기 및 이해](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [거래 보고서 청구 가능 API](/help/forms/using/transaction-reports-billable-apis.md)
+* [OSGi의 AEM Forms에 대한 거래 보고서 개요](/help/forms/using/transaction-reports-overview.md)
+* [OSGi에서 AEM Forms에 대한 거래 보고서 보기 및 이해](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [OSGi의 AEM Forms에 대한 거래 보고서 청구 가능 API](/help/forms/using/transaction-reports-billable-apis.md)
