@@ -3,9 +3,9 @@ title: 기술 요구 사항
 description: Adobe Experience Manager에 대해 지원되는 클라이언트 및 서버 플랫폼 목록입니다.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
+source-git-commit: b9a5b6f8f990a9dd0fcf77ea3972ad0c6f401831
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3652'
 ht-degree: 1%
 
 ---
@@ -202,7 +202,7 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
 | Oracle Solaris™ 11 | Z: 지원되지 않음 |
 | IBM® AIX® 7.2 | Z: 지원되지 않음 |
 
-1. Linux® 커널 2.6, 3. x, 4. x와 5. x에는 Red Hat® Enterprise Linux®, CentOS, Oracle Linux® 및 Amazon Linux®를 비롯한 Red Hat 배포판의 파생물이 포함되어 ®. AEM Forms 추가 기능 기능은 CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 및 Red Hat® Enterprise Linux® 9에서만 지원됩니다.
+1. Linux® 커널 2.6, 3. x, 4. x, 5. x와 6. x에는 Red Hat® Enterprise Linux®, CentOS, Oracle Linux® 및 Amazon Linux®를 비롯한 Red Hat 배포판의 파생물이 포함되어 ®. AEM Forms 추가 기능 기능은 CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 및 Red Hat® Enterprise Linux® 9에서만 지원됩니다.
 1. AEM Forms은 Ubuntu 20.04 LTS에서 지원됩니다.
 1. Adobe Managed Services에서 지원하는 Linux® 배포.
 
@@ -213,7 +213,7 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64(1.13-1.el7)
-   >* libXau.x86_64 (1.0.8-2.1.el7)
+   >* libXau.x86_64(1.0.8-2.1.el7)
 
 1. Microsoft® Windows 프로덕션 배포는 6.5로 업그레이드하는 고객 및 비프로덕션 사용을 위해 지원됩니다. AEM Sites 및 자산에 대한 새 배포는 요청 시 수행됩니다.
 1. AEM Forms은 지원 수준 R 제한 없이 Microsoft® Window Server에서 지원됩니다.
@@ -244,7 +244,7 @@ Adobe Managed Services 외부에 있는 Azure 또는 AWS에 AEM을 배포하는 
 
 ### Dispatcher 플랫폼(웹 서버) {#dispatcher-platforms-web-servers}
 
-Dispatcher는 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전 다운로드](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5를 사용하려면 Dispatcher 버전 4.3.2 이상이 필요합니다.
+Dispatcher는 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전 다운로드](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5에는 Dispatcher 버전 4.3.2 이상이 필요합니다.
 
 다음 웹 서버는 Dispatcher 버전 4.3.2에서 사용할 수 있습니다.
 
@@ -330,10 +330,10 @@ AEM 사용자 인터페이스는 더 큰 화면(일반적으로 노트북 및 �
  </tbody>
 </table>
 
-1. Firefox의 확장 지원 릴리스 [mozilla.org에서 자세히 알아보기](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Firefox [의 확장 지원 릴리스 mozilla.org 에서 더 알아보기](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. Apple iPad 지원
 
-### 웹 사이트에서 지원되는 브라우저 {#supported-browsers-for-websites}
+### 웹 사이트에 대해 지원되는 브라우저 {#supported-browsers-for-websites}
 
 일반적으로 AEM Sites에서 렌더링하는 웹 사이트에 대한 브라우저 지원은 AEM 페이지 템플릿, 디자인 및 구성 요소 출력의 구현에 따라 다르며, 따라서 이러한 부분을 구현하는 당사자의 통제 하에 있습니다.
 
@@ -409,11 +409,11 @@ Linux®에서 Dynamic Media을 사용하는 경우 다음 전제 조건을 충�
 
 >[!NOTE]
 >
->**NUMA 아키텍처:** AMD64 및 Intel® EM64T를 특징으로 하는 프로세서가 있는 시스템은 일반적으로 NUMA(Non-Uniform Memory Architecture) 플랫폼으로 구성됩니다. 즉, 커널은 단일 메모리 노드 구성하지 않고 부팅 시 여러 메모리 노드를 구성합니다.
+>**NUMA 아키텍처:** AMD64 및 Intel® EM64T를 특징으로 하는 프로세서가 있는 시스템은 일반적으로 NUMA(Non-Uniform Memory Architecture) 플랫폼으로 구성됩니다. 즉, 커널은 하나의 메모리 노드를 구성하는 것이 아니라 부트 시에 여러 개의 메모리 노드를 구성한다.
 >
->여러 노드 구문으로 인해 다른 노드가 소진되기 전에 하나 이상의 노드에서 메모리가 고갈될 수 있습니다. 메모리 소진이 발생하면 커널은 사용 가능한 메모리가 있더라도 프로세스(예: 이미지 서버 또는 플랫폼 서버)를 종료하기로 결정할 수 있습니다.
+>다중 노드 구성은 다른 노드가 소진되기 전에 하나 이상의 노드에서 메모리 소진을 초래할 수 있다. 메모리 소진이 발생하면 커널은 사용 가능한 메모리가 있더라도 프로세스(예: 이미지 서버 또는 플랫폼 서버)를 종료하기로 결정할 수 있습니다.
 >
->따라서 Adobe은 이러한 시스템을 실행하는 경우 **numa=off** 커널이 이러한 프로세스를 죽이는 것을 방지하기 위해 부팅 옵션.
+>Adobe Systems따라서 이러한 시스템을 실행하는 경우 커널이 이러한 프로세스를 종료하지 않도록 numa=off **부팅 옵션을 사용하여** NUMA를 끄는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -428,7 +428,7 @@ Linux®에서 Dynamic Media을 사용하는 경우 다음 전제 조건을 충�
 
 Windows에서 Dynamic Media을 사용하려면 x64 및 x86용 Microsoft® Visual Studio 2010, 2013 및 2015 재배포 가능 패키지를 설치하십시오.
 
-Windows x64의 경우:
+Windows x64의 경우
 
 * https://www.microsoft.com/en-us/download/details.aspx?id=26999 에서 [Microsoft® Visual Studio 2010 재배포 가능 패키지 받기](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * https://www.microsoft.com/en-us/download/details.aspx?id=40784 에서 [Microsoft® Visual Studio 2013 재배포 가능 패키지 받기](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
@@ -438,7 +438,7 @@ Windows x86의 경우:
 
 * 다음에서 Microsoft® Visual Studio 2010 재배포 가능 패키지를 가져옵니다. [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Microsoft® Visual Studio 2013 재배포 가능 위치: [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* 다음에서 Microsoft® Visual Studio 2015 재배포 가능 패키지를 가져옵니다. [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* https://www.microsoft.com/en-us/download/details.aspx?id=52685 에서 [Microsoft® Visual Studio 2015 재배포 가능 패키지 받기](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
 #### macOS {#macos}
 
@@ -522,13 +522,13 @@ Windows x86의 경우:
 
 ### AEM Forms Designer 요구 사항 {#requirements-for-aem-forms-designer}
 
-* Microsoft Windows 2016 Server, Microsoft Windows 2019 Server, Microsoft®®® Windows 10 또는 Windows®®®® 11
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 또는 Windows® 11
 * PAE, NX 및 SSE2를 지원하는 1GHz 이상의 프로세서.
 * 32비트 OS의 경우 1GB RAM 또는 64비트 OS의 경우 2GB RAM
 * 32비트의 경우 16GB 디스크 공간 또는 64비트 OS의 경우 20GB 디스크 공간
 * 그래픽 메모리 - 128MB GPU(256MB 권장)
 * 2.35GB의 사용 가능한 하드 디스크 공간
-* 1024 X 768 픽셀 이상의 모니터 해상도
+* 1024 X 768픽셀 이상의 모니터 해상도
 * 비디오 하드웨어 가속(선택 사항)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
 * Designer를 설치하기 위한 관리자 권한
@@ -537,7 +537,7 @@ Windows x86의 경우:
 
 [AEM Forms 디자이너 설치 및 구성](/help/forms/using/installing-configuring-designer.md)
 
-### AEM Assets XMP 메타데이터 쓰기 저장에 대한 요구 사항 {#requirements-for-aem-assets-xmp-metadata-write-back}
+### AEM Assets XMP 메타데이터 쓰기 되돌리기 요구 사항 {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP 원본에 쓰기 지원되며 다음 플랫폼 및 파일 형식에 사용할 수 있습니다.
 
@@ -552,4 +552,4 @@ XMP 원본에 쓰기 지원되며 다음 플랫폼 및 파일 형식에 사용�
 
 ### Linux®에서 메타데이터가 많은 자산을 처리하기 위한 AEM Assets 요구 사항 {#assetsonlinux}
 
-XMPFilesProcessor 프로세스를 사용하려면 라이브러리 GLIBC_2.14가 작동해야 합니다. GLIBC_2.14가 포함된 Linux® 커널을 사용합니다(예: Linux® 커널 버전 3.1.x). PSD 파일과 같이 대량의 메타데이터가 포함된 에셋을 처리하는 경우 성능이 향상됩니다. 이전 버전의 GLIBC를 사용하면 로 시작하는 로그에 오류가 발생합니다. `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+XMPFilesProcessor 프로세스가 작동하려면 GLIBC_2.14 라이브러리가 필요합니다. GLIBC_2.14가 포함된 Linux® 커널을 사용합니다(예: Linux® 커널 버전 3.1.x). PSD 파일과 같이 대량의 메타데이터가 포함된 에셋을 처리하는 경우 성능이 향상됩니다. 이전 버전의 GLIBC를 사용하면 로 시작하는 로그에 오류가 발생합니다. `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
