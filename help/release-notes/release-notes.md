@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 31ad82fca920efcb1c5f4b56673928754a2d1763
+source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
 workflow-type: tm+mt
-source-wordcount: '3640'
+source-wordcount: '3688'
 ht-degree: 4%
 
 ---
@@ -202,6 +202,9 @@ ht-degree: 4%
 * 사용자가 JBoss® 턴키 설정이 있는 AEM Forms 6.5.19.1에서 구성 관리자를 실행하는 동안 &quot;Microsoft SharePoint&quot;를 선택하면 JBoss® EAR LiveCycle 설치에 실패하고 다음 오류가 표시됩니다. (FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
+
+* 사용자가 AEM Forms 서비스 팩 6.5.19.0의 양식 데이터 모델을 사용하여 문서 조각을 만들 때 측면 패널에 변수 이름이 정의되지 않은 것처럼 표시되지만, 양식 패널에 끌어 놓거나 클릭할 때 변수 이름이 표시됩니다. (FORMS-13238)
+
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
 
