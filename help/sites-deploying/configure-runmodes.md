@@ -7,9 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
@@ -63,7 +64,7 @@ ht-degree: 1%
 
 * `publish` + `intranet`
 
-* 필요에 따라 . . .
+* 필요에 따라 . .
 
 각 시작 시 사용자 정의된 실행 모드를 선택할 수도 있습니다.
 
@@ -157,7 +158,7 @@ java -jar cq-56-p4545.jar -r dev
 
 설치하기 전에 설치 jar 파일의 이름을 바꾸어 다음 두 가지 설치 실행 모드를 활성화할 수 있습니다.
 
-* 페이지를
+* 게시
 * 작성자
 
 jar 파일은 명명 규칙을 사용해야 합니다.

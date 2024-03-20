@@ -8,7 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5398'
 ht-degree: 1%
@@ -59,7 +60,7 @@ AEM WCM은 여러 사용자와 그룹을 설치합니다. 이러한 컬렉션은
    <td>사용자 ID</td>
    <td>유형</td>
    <td>설명</td>
-   <td>추천</td>
+   <td>권장 사항</td>
   </tr>
   <tr>
    <td><p>admin</p> <p>기본 암호: admin</p> </td>
@@ -365,7 +366,7 @@ AEM WCM은 ACL(액세스 제어 목록)을 사용하여 다양한 페이지에 �
 
 다음은 권한 및 권한을 사용하여 작업할 때의 모범 사례에 대해 설명합니다.
 
-| 규칙 | 원인 |
+| 규칙 | 이유 |
 |--- |--- |
 | *그룹 사용* | 사용자별로 액세스 권한을 할당하지 마십시오. 이 조언에는 다음과 같은 몇 가지 이유가 있습니다.<ul><li>그룹보다 사용자가 많으므로 그룹이 구조를 단순화합니다.</li><li>그룹 은 모든 계정에 대한 개요를 제공합니다.</li> <li>그룹을 사용하면 상속이 더 간단합니다.</li><li>사용자가 왔다 갔다 합니다. 그룹은 장기적입니다.</li></ul> |
 | *긍정적이* | 항상 Allow 문을 사용하여 그룹의 권한을 지정합니다(가능한 경우). Deny 문을 사용하지 마십시오. 그룹은 순서대로 평가되며, 그 순서는 사용자마다 다르게 정의될 수 있다. 즉, 명령문이 구현되고 평가되는 순서를 거의 제어할 수 없습니다. Allow 문만 사용하는 경우에는 순서가 중요하지 않습니다. |

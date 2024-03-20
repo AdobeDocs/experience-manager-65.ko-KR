@@ -4,7 +4,9 @@ description: Adobe Experience Manager Assets을 사용하여 OGG, FLV 등을 비
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+feature: Video
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 1%
@@ -41,4 +43,4 @@ DM 인코딩 변환을 위한 프록시 서버를 구성하려면 다음을 수�
 >
 >Microsoft® Internet Explorer 11의 OGG 및 WAV 파일에 대해 오디오 재생이 작동하지 않습니다. 오류 `Invalid Source` 확장이 OGG 또는 WAV인 에셋의 에셋 세부 사항 페이지에 표시됩니다.
 >
-MS® Edge 및 iPad에서 OGG 파일이 재생되지 않고 지원되지 않는 형식 오류가 발생합니다.
+>MS® Edge 및 iPad에서 OGG 파일이 재생되지 않고 지원되지 않는 형식 오류가 발생합니다.

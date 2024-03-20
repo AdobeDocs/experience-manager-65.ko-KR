@@ -3,13 +3,14 @@ title: 적응형 양식 데이터를 Microsoft&reg; Power Automate에 연결하�
 description: 적응형 양식 데이터를 Microsoft&reg; Power Automate에 연결하고 전송하는 단계별 안내서입니다.
 keywords: 적응형 Forms Microsoft Power Automate, Microsoft Power Automate에 적응형 Forms 데이터 제출
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
+exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 15%
 
 ---
-
 
 # Microsoft® Power Automate에 적응형 양식 데이터 연결 및 제출 {#connect-adaptive-form-with-power-automate}
 
@@ -192,4 +193,3 @@ ht-degree: 15%
 * [적응형 양식 만들기](create-an-adaptive-form-core-components.md)
 * [제출 액션 구성](configuring-submit-actions.md)
 * [Microsoft® Power Automate용 Adobe Experience Manager 커넥터](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-

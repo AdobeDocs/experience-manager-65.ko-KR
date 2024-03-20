@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5425'
 ht-degree: 1%
@@ -99,58 +100,58 @@ Dynamic Media 및 Dynamic Media Classic을 동시에 사용하려면
     <tr>
     <td>Sites 및 Dynamic Media의 새로운 기능</td>
     <td>에셋을 업로드하고 Experience Manager Experience Manager Dynamic Media 구성 요소를 사용하여 Sites 페이지에 에셋을 작성합니다</td>
-    <td><p>사용</p> <p>(3단계 참조)</p> </td>
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">사용</a></td>
-    <td>끔</td>
-    <td>끔</td>
+    <td><p>(요)일</p> <p>(3단계 참조)</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">(요)일</a></td>
+    <td>끄기</td>
+    <td>끄기</td>
     </tr>
     <tr>
     <td>소매 및 Sites 및 Dynamic Media의 새로운 기능</td>
     <td>관리 및 전달을 위해 Experience Manager에 비제품 자산을 업로드합니다. 제품 에셋을 Dynamic Media Classic에 업로드하고 Experience Manager 및 구성 요소의 Dynamic Media Classic 콘텐츠 브라우저를 사용하여 Sites의 제품 세부 사항 페이지를 작성합니다.</td>
-    <td><p>사용</p> <p>(3단계 참조)</p> </td>
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">사용</a></td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">사용</a></td>
-    <td>끔</td>
+    <td><p>(요)일</p> <p>(3단계 참조)</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">(요)일</a></td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">(요)일</a></td>
+    <td>끄기</td>
     </tr>
     <tr>
     <td>Assets 및 Dynamic Media의 새로운 기능</td>
     <td>에셋을 Experience Manager Assets에 업로드하고 Dynamic Media에서 게시된 URL/포함 코드를 사용합니다.</td>
-    <td><p>사용</p> <p>(3단계 참조)</p> </td>
-    <td>끔</td>
-    <td>끔</td>
-    <td>끔</td>
+    <td><p>(요)일</p> <p>(3단계 참조)</p> </td>
+    <td>끄기</td>
+    <td>끄기</td>
+    <td>끄기</td>
     </tr>
     <tr>
     <td>Dynamic Media 및 템플릿 처음 사용</td>
     <td>이미징 및 비디오에 Dynamic Media을 사용합니다. Dynamic Media Classic에서 이미지 템플릿을 작성하고 Dynamic Media Classic 콘텐츠 파인더를 사용하여 사이트 페이지에 템플릿을 포함합니다.</td>
-    <td><p>사용</p> <p>(3단계 참조)</p> </td>
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">사용</a></td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">사용</a></td>
-    <td>끔</td>
+    <td><p>(요)일</p> <p>(3단계 참조)</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">(요)일</a></td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">(요)일</a></td>
+    <td>끄기</td>
     </tr>
     <tr>
     <td>기존 Dynamic Media Classic 고객 및 Sites를 처음 사용하는 고객</td>
     <td>에셋을 Dynamic Media Classic에 업로드하고 Dynamic Media Classic 콘텐츠 브라우저 Experience Manager 를 사용하여 Sites 페이지에서 에셋을 검색하고 작성합니다</td>
-    <td>끔</td>
-    <td>끔</td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">사용</a></td>
-    <td>끔</td>
+    <td>끄기</td>
+    <td>끄기</td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">(요)일</a></td>
+    <td>끄기</td>
     </tr>
     <tr>
     <td>Sites 및 Assets를 처음 사용하는 기존 Dynamic Media Classic 고객</td>
     <td>자산을 DAM에 업로드하고 게재를 위해 Dynamic Media Classic에 자동으로 게시합니다. Experience Manager Dynamic Media Classic 콘텐츠 브라우저를 사용하여 Sites 페이지에서 에셋을 검색하고 작성할 수 있습니다.</td>
-    <td>끔</td>
-    <td>끔</td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">사용</a></td>
-    <td><p><a href="#configuringautouploadingfromaemassets">사용</a></p> <p>(4단계 참조)</p> </td>
+    <td>끄기</td>
+    <td>끄기</td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">(요)일</a></td>
+    <td><p><a href="#configuringautouploadingfromaemassets">(요)일</a></p> <p>(4단계 참조)</p> </td>
     </tr>
     <tr>
     <td>기존 Dynamic Media Classic 고객 및 Assets 신규 고객</td>
     <td><p>Experience Manager에 에셋을 업로드하고 Dynamic Media을 사용하여 다운로드/공유를 위한 렌디션을 생성합니다. 게재를 위해 Experience Manager 에셋을 Dynamic Media Classic에 자동으로 게시합니다.</p> <p><strong>중요 사항:</strong> 중복 처리가 발생하고 Experience Manager에서 생성된 렌디션이 Dynamic Media Classic에 동기화되지 않음</p> </td>
-    <td><p>사용</p> <p>(3단계 참조)</p> </td>
-    <td>끔</td>
-    <td>끔</td>
-    <td><p><a href="#configuringautouploadingfromaemassets">사용</a></p> <p>(4단계 참조)</p> </td>
+    <td><p>(요)일</p> <p>(3단계 참조)</p> </td>
+    <td>끄기</td>
+    <td>끄기</td>
+    <td><p><a href="#configuringautouploadingfromaemassets">(요)일</a></p> <p>(4단계 참조)</p> </td>
     </tr>
     </tbody>
     </table>
@@ -377,7 +378,7 @@ Experience Manager 인스턴스가 Dynamic Media Classic을 통해 비디오 인
 
 >[!NOTE]
 >
-Experience Manager Assets에서 Dynamic Media Classic으로 자동 업로드하는 최대 파일 크기는 500MB입니다.
+>Experience Manager Assets에서 Dynamic Media Classic으로 자동 업로드하는 최대 파일 크기는 500MB입니다.
 
 **Experience Manager Assets에서 자동 업로드하려면:**
 
@@ -387,7 +388,7 @@ Experience Manager Assets에서 Dynamic Media Classic으로 자동 업로드하�
 
    >[!NOTE]
    >
-   다음을 참조하십시오 [Dynamic Media Classic에 푸시된 에셋의 상태(게시/게시 취소됨) 구성](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) 게시되지 않은 상태에서 Dynamic Media Classic으로 에셋을 푸시하는 방법에 대한 정보입니다.
+   >다음을 참조하십시오 [Dynamic Media Classic에 푸시된 에셋의 상태(게시/게시 취소됨) 구성](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) 게시되지 않은 상태에서 Dynamic Media Classic으로 에셋을 푸시하는 방법에 대한 정보입니다.
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
@@ -398,8 +399,8 @@ Experience Manager Assets에서 Dynamic Media Classic으로 자동 업로드하�
 
    >[!NOTE]
    >
-   * 자동화 후 에셋을 추가할 때 CQ 대상 폴더에 배치되지 않으면 Dynamic Media Classic에 업로드되지 않습니다.
-   * Experience Manager은 Dynamic Media Classic에 업로드하기 전에 모든 메타데이터를 XMP으로 임베드하므로 메타데이터 노드의 모든 속성을 Dynamic Media Classic as XMP에서 사용할 수 있습니다.
+   >* 자동화 후 에셋을 추가할 때 CQ 대상 폴더에 배치되지 않으면 Dynamic Media Classic에 업로드되지 않습니다.
+   >* Experience Manager은 Dynamic Media Classic에 업로드하기 전에 모든 메타데이터를 XMP으로 임베드하므로 메타데이터 노드의 모든 속성을 Dynamic Media Classic as XMP에서 사용할 수 있습니다.
 
 ### Dynamic Media Classic에 푸시된 에셋의 상태(게시됨/게시되지 않음)를 구성합니다. {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -424,7 +425,7 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 
 >[!NOTE]
 >
-설치 환경이 UNIX® 64비트 운영 체제인 경우 [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) 기타 구성 옵션에 대해 설정해야 합니다.
+>설치 환경이 UNIX® 64비트 운영 체제인 경우 [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) 기타 구성 옵션에 대해 설정해야 합니다.
 
 #### 게시되지 않은 상태에서 에셋을 푸시하기 위한 알려진 제한 사항  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -435,13 +436,13 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 
 >[!NOTE]
 >
-자산을 즉시 게시하려면 유지하는 것이 좋습니다 **[!UICONTROL 보안 미리 보기 활성화]** 을 로 설정 **[!UICONTROL 즉시]** 및 사용 **[!UICONTROL 자동 업로드 활성화]** 기능.
+>자산을 즉시 게시하려면 유지하는 것이 좋습니다 **[!UICONTROL 보안 미리 보기 활성화]** 을 로 설정 **[!UICONTROL 즉시]** 및 사용 **[!UICONTROL 자동 업로드 활성화]** 기능.
 
 ### Dynamic Media Classic에 푸시된 에셋의 상태를 게시 취소로 설정 {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
-사용자가 Experience Manager에서 에셋을 게시하면 S7 에셋이 프로덕션/라이브 에셋으로 자동으로 트리거됩니다(에셋이 더 이상 보안 미리 보기/게시 취소에 있지 않음).
+>사용자가 Experience Manager에서 에셋을 게시하면 S7 에셋이 프로덕션/라이브 에셋으로 자동으로 트리거됩니다(에셋이 더 이상 보안 미리 보기/게시 취소에 있지 않음).
 
 **Dynamic Media Classic에 푸시된 에셋의 상태를 게시 취소로 설정하려면 다음을 수행합니다.**
 
@@ -513,7 +514,7 @@ Dynamic Media Classic 구성이 여러 개 있는 경우 그 중 하나를 Dynam
 
    >[!NOTE]
    >
-   구성이 하나만 있는 경우 **[!UICONTROL 기본 구성]** 확인란은 영향을 주지 않습니다.
+   >구성이 하나만 있는 경우 **[!UICONTROL 기본 구성]** 확인란은 영향을 주지 않습니다.
 
 ### 임시 폴더 구성 {#configuring-the-ad-hoc-folder}
 
@@ -570,11 +571,11 @@ Digital Asset Manager/Dynamic Media Classic 에셋의 동기화에 의해 트리
 
    >[!NOTE]
    >
-   PSD 파일을 업로드하고 레이어 추출이 있는 템플릿으로 처리하려면 **[!UICONTROL jobParam]** 값 필드:
+   >PSD 파일을 업로드하고 레이어 추출이 있는 템플릿으로 처리하려면 **[!UICONTROL jobParam]** 값 필드:
    >
-   `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
+   >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   PSD 파일에 &quot;레이어&quot;가 있는지 확인하십시오. 엄밀히 말하면 하나의 이미지이거나 마스크가 있는 이미지라면, 처리할 레이어가 없기 때문에 이미지로 처리된다.
+   >PSD 파일에 &quot;레이어&quot;가 있는지 확인하십시오. 엄밀히 말하면 하나의 이미지이거나 마스크가 있는 이미지라면, 처리할 레이어가 없기 때문에 이미지로 처리된다.
 
 1. CRXDE Lite 페이지의 왼쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 모두 저장]**.
 
@@ -616,6 +617,6 @@ Experience Manager을 Dynamic Media Classic과 통합하는 데 문제가 있는
 
 >[!CAUTION]
 >
-기존 Dynamic Media Classic 회사 계정에서 자산을 가져오는 경우 Experience Manager에 표시되는 데 시간이 오래 걸릴 수 있습니다. Dynamic Media Classic에서 에셋이 너무 많지 않은 폴더를 지정해야 합니다. 예를 들어 루트 폴더에 에셋이 너무 많은 경우가 있습니다.
+>기존 Dynamic Media Classic 회사 계정에서 자산을 가져오는 경우 Experience Manager에 표시되는 데 시간이 오래 걸릴 수 있습니다. Dynamic Media Classic에서 에셋이 너무 많지 않은 폴더를 지정해야 합니다. 예를 들어 루트 폴더에 에셋이 너무 많은 경우가 있습니다.
 >
-통합을 테스트하려면 루트 폴더가 전체 회사 대신 하위 폴더만 가리키도록 해야 합니다.
+>통합을 테스트하려면 루트 폴더가 전체 회사 대신 하위 폴더만 가리키도록 해야 합니다.

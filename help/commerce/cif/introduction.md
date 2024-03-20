@@ -3,7 +3,8 @@ title: 소개 및 개요
 description: 통합에 대한 유용한 문서와 AEM Storefront를 사용하는 방법을 통해 AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해할 수 있습니다.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 88%

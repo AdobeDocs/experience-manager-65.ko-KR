@@ -2,9 +2,10 @@
 title: 페이지 내보내기
 description: Adobe Experience Manager(AEM) 페이지 익스포터를 사용하는 방법을 알아봅니다.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -136,7 +137,7 @@ Adobe Experience Manager(AEM)를 사용하면 이미지를 포함하여 페이�
 * `design`
 디자인 노드는 내보낸 페이지에 사용된 디자인을 복사하는 데 사용됩니다. 다음과 같은 특징이 있습니다.
 
-   * 옵션.
+   * 선택 사항입니다.
    * 아래에 위치 `/etc/contentsync/templates/<mysite>`.
    * 속성으로 정의됨 `Name` 을 로 설정 `design`.
    * 노드 유형: `nt:unstructured`.
@@ -150,7 +151,7 @@ Adobe Experience Manager(AEM)를 사용하면 이미지를 포함하여 페이�
 * `generic`
 일반 노드는 clientlib과 같은 리소스를 복사하는 데 사용됩니다 `.js` 또는 `.css` 파일을 zip 파일로 복사합니다. 다음과 같은 특징이 있습니다.
 
-   * 옵션.
+   * 선택 사항입니다.
    * 아래에 위치 `/etc/contentsync/templates/<mysite>`.
    * 특정 이름이 없습니다.
    * 노드 유형: `nt:unstructured`.

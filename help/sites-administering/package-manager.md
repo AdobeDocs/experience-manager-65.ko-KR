@@ -8,7 +8,8 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3565'
 ht-degree: 1%
@@ -79,7 +80,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 패키지 세부 사항을 확장할 때 사용할 수 있는 도구 모음 버튼을 통해 패키지에서 수행할 수 있는 여러 작업이 있습니다.
 
 * [편집](#edit-package)
-* [작성](#building-a-package)
+* [빌드](#building-a-package)
 * [다시 설치](#reinstalling-packages)
 * [다운로드](#downloading-packages-to-your-file-system)
 * [공유](#share)

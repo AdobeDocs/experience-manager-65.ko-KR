@@ -8,10 +8,11 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 946c7c2a-806b-4461-a38b-9c2e5ef1e958
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 6%
+source-wordcount: '693'
+ht-degree: 2%
 
 ---
 
@@ -57,5 +58,5 @@ ht-degree: 6%
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6.4 | 지연됨 | 정리 **/etc/cloudsettings** (ContextHub 구성 포함). 구성은 첫 번째 액세스 시 자동으로 마이그레이션됩니다. 의 이 콘텐츠 업그레이드와 함께 레이지 콘텐츠 마이그레이션이 시작되는 경우 **/etc/cloudsettings** 는 업그레이드 전에 패키지를 통해 보존하고 암시적 변환이 시작되도록 다시 설치하고 완료 후 패키지를 후속 제거해야 합니다. |
 | `CQ64UsersTitleFixTask` | &lt; 6.4 | 지연됨 | 기존 제목 구조를 사용자 프로필 노드의 제목으로 조정합니다. |
 | `CQ64CommerceMigrationTask` | &lt; 6.4 | 지연됨 | 다음에서 상거래 콘텐츠 마이그레이션 **/etc/commerce** 끝 **/var/commerce**. 마이그레이션 중에 콘텐츠가 이동되고 이동된 콘텐츠에 대한 참조가 새 위치를 반영하도록 업데이트됩니다. |
-| `CQ65DMMigrationTask` | &lt; 6.5 | 지연됨 | 에서 레거시 카탈로그 설정 및 Dynamic Media Cloud Services 설정 마이그레이션 **/etc** 끝 **/conf** |
+| `CQ65DMMigrationTask` | &lt; 6.5 | 지연됨 | 에서 레거시 카탈로그 설정 및 Dynamic Media Cloud Service 설정 마이그레이션 **/etc** 끝 **/conf** |
 | `CQ65LegacyClientlibsCleanupTask` | &lt; 6.5 | 지연됨 | 아래에 있는 기존 clientlibs 정리 **/etc/clientlibs** |

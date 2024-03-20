@@ -6,9 +6,10 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1047'
 ht-degree: 2%
 
 ---
@@ -52,7 +53,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
   </tr>
  </tbody>
 </table>
@@ -87,7 +88,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 없음<br /> </td>
+   <td>해당 사항 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -117,7 +118,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 없음<br /> </td>
+   <td>해당 사항 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -160,8 +161,8 @@ ht-degree: 2%
 | **이전 위치** | `/etc/dam/drm/licenses/` |
 |---|---|
 | **새 위치** | `/libs/settings/dam/drm` |
-| **구조 조정 지침** | N/A |
-| **메모** | N/A |
+| **구조 조정 지침** | 해당 사항 없음 |
+| **메모** | 해당 사항 없음 |
 
 ### 링크 공유 전자 메일 알림 템플릿 {#link-share-e-mail-notification-template}
 
@@ -252,7 +253,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
   </tr>
  </tbody>
 </table>
@@ -279,7 +280,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>N/A</td>
+   <td>해당 사항 없음</td>
   </tr>
  </tbody>
 </table>
@@ -302,7 +303,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 없음<br /> </td>
+   <td>해당 사항 없음<br /> </td>
   </tr>
  </tbody>
 </table>

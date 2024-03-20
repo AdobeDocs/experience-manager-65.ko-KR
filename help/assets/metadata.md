@@ -7,10 +7,11 @@ feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2359'
-ht-degree: 11%
+source-wordcount: '2332'
+ht-degree: 10%
 
 ---
 
@@ -113,8 +114,8 @@ XMP write-back은에 설명된 플랫폼 및 파일 형식에 대해 지원 및 
 
    | 메타데이터 가져오기 매개 변수 | 설명 |
    |:---|:---|
-   | [!UICONTROL 배치 크기] | 메타데이터를 가져올 일괄 처리의 자산 수입니다. 기본값은 50입니다. 최대값은 100입니다. |
-   | [!UICONTROL 필드 분리 기호] | 기본값은 입니다. `,` (쉼표). 다른 문자를 지정할 수 있습니다. |
+   | [!UICONTROL 일괄 처리 크기] | 메타데이터를 가져올 일괄 처리의 자산 수입니다. 기본값은 50입니다. 최대값은 100입니다. |
+   | [!UICONTROL 필드 구분 기호] | 기본값은 입니다. `,` (쉼표). 다른 문자를 지정할 수 있습니다. |
    | [!UICONTROL 다중 값 구분 기호] | 메타데이터 값에 대한 구분 기호입니다. 기본값은 입니다. `|`. |
    | [!UICONTROL 워크플로우 실행] | 기본적으로 False입니다. 로 설정된 경우 `true` 및 기본 설정은 [!UICONTROL DAM 메타데이터 WriteBack] 워크플로우(이진 XMP 데이터에 메타데이터를 기록합니다.) 워크플로우를 활성화하면 시스템 속도가 느려집니다. |
    | [!UICONTROL 자산 경로 열 이름] | 자산이 있는 CSV 파일의 열 이름을 정의합니다. |

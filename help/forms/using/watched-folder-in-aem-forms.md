@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '7143'
+source-wordcount: '7164'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ ht-degree: 0%
 
    지원되는 속성의 전체 목록은 다음을 참조하십시오. [감시 폴더 속성](#watchedfolderproperties).
 
-1. **모두 저장**&#x200B;을 클릭합니다. 노드가 만들어지고 속성이 저장되면 다음 `input`, `result`, `failure`, `preserve`, 및 `stage`폴더는에 지정된 경로에 만들어집니다. `folderPath` 속성.
+1. 클릭 **모두 저장**. 노드가 만들어지고 속성이 저장되면 다음 `input`, `result`, `failure`, `preserve`, 및 `stage`폴더는에 지정된 경로에 만들어집니다. `folderPath` 속성.
 
    스캔 작업은 정의된 시간 간격으로 감시 폴더 스캔을 시작합니다.
 
@@ -71,9 +72,9 @@ ht-degree: 0%
 
    * 작성자
 
-   * 페이지를
+   * 게시
 
-   * 작성자,게시
+   * 작성자, 게시
 
    * 게시, 작성자
 

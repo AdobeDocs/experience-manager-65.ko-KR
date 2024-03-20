@@ -5,16 +5,17 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3148'
-ht-degree: 2%
+source-wordcount: '3060'
+ht-degree: 0%
 
 ---
 
 # Adobe 에셋 링크에 대한 Experience Manager Assets 구성 {#adobe-asset-link}
 
-[AAL(Adobe 에셋 링크)](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html) 컨텐츠 작성 프로세스에서 광고 팀과 마케터 간의 협업을 간소화합니다. Adobe Experience Manager Assets를 Creative Cloud 데스크탑 앱 Adobe InDesign, Adobe Photoshop 및 Adobe Illustrator과 연결합니다. Asset Link Adobe 패널을 사용하면 크리에이티브가 가장 익숙한 크리에이티브 앱을 종료하지 않고도 AEM Assets에 저장된 컨텐츠에 액세스하고 이를 수정할 수 있습니다.
+[AAL(Adobe 에셋 링크)](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html) 컨텐츠 작성 프로세스에서 광고 팀과 마케터 간의 협업을 간소화합니다. Adobe Experience Manager Assets을 Creative Cloud 데스크탑 앱 Adobe InDesign, Adobe Photoshop 및 Adobe Illustrator과 연결합니다. Asset Link Adobe 패널을 사용하면 크리에이티브가 가장 익숙한 크리에이티브 앱을 종료하지 않고도 AEM Assets에 저장된 컨텐츠에 액세스하고 이를 수정할 수 있습니다.
 
 Asset Link에 사용할 Experience Manager Assets을 구성하려면 다음 작업을 구현하십시오. Experience Manager 관리자 계정을 사용하여 구성을 수행합니다.
 
@@ -48,7 +49,7 @@ Adobe은 설치를 권장합니다. [adobe-asset-link-config](https://experience
 
 1. 패키지 관리자를 열려면 Experience Manager 웹 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 패키지 공유]**. 설치 `adobe-asset-link-config` 패키지.
 
-1. **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스합니다. 찾기 **[!UICONTROL Adobe Granite OAuth IMS 공급자]** 을 누르고 을 눌러 편집합니다.
+1. 액세스 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**. 찾기 **[!UICONTROL Adobe Granite OAuth IMS 공급자]** 을 누르고 을 눌러 편집합니다.
 
    다음 속성을 설정하고 변경 사항을 저장합니다.
 

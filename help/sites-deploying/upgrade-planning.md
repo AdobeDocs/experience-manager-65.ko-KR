@@ -8,9 +8,10 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2423'
 ht-degree: 0%
 
 ---
@@ -172,7 +173,7 @@ Adobe은에서 업그레이드 및 롤백 절차를 제공했습니다. [업그�
 * 스테이징 환경 업그레이드
 * 통합, 성능 및 로드 테스트
 * 환경 인증
-* 실행
+* 라이브 진행
 
 ### 개발 및 QA 수행 {#performing-development-and-qa}
 

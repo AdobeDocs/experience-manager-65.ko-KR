@@ -3,10 +3,11 @@ title: Adobe Experience Manager Foundation에 대한 GDPR 요청 처리
 description: Adobe Experience Manager Foundation에 대한 GDPR 요청 처리
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 48%
+source-wordcount: '458'
+ht-degree: 40%
 
 ---
 
@@ -55,7 +56,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-*사용자 데이터 검색*
+*사용자 데이터 검색 중*
 
 위 명령에서 반환된 JSON 페이로드의 홈 속성에서 노드 경로 사용:
 
@@ -78,7 +79,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![userdisable](assets/userdisable.png)
 
-1. 마지막으로, 작업을 확인합니다:
+1. 마지막으로 다음 작업을 확인합니다.
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 

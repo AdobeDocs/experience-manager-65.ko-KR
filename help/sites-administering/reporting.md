@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2777'
-ht-degree: 4%
+source-wordcount: '2782'
+ht-degree: 3%
 
 ---
 
@@ -301,7 +302,7 @@ ht-degree: 4%
 * 작성자
 * 구성 요소 경로
 * 구성 요소 유형
-* 마지막 수정 날짜
+* 마지막 수정일
 * 페이지
 
 즉, 다음을 볼 수 있습니다.
@@ -345,13 +346,13 @@ ht-degree: 4%
 
   기본값: `24`
 
-* **최대. 결과**
+* **최대 결과**
 
   최대 출력 라인 수.
 
   기본값: `50`
 
-* **최대. 요청**
+* **최대 요청**
 
   분석할 최대 요청 수.
 
@@ -488,7 +489,7 @@ ht-degree: 4%
 [정보 열](#selecting-and-positioning-the-data-columns) 정보:
 
 * 완료됨
-* 지속 시간
+* 기간
 * 개시자
 * 모델
 * 페이로드
@@ -558,7 +559,7 @@ ht-degree: 4%
 
   `contributors` - 읽기 및 쓰기
 
-* **워크플로우 상속 보고서**
+* **워크플로 인스턴스 보고서**
 
   `workflow-users` - 읽기 및 쓰기
 

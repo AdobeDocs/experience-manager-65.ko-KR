@@ -4,10 +4,11 @@ description: 다국어 사이트를 위한 콘텐츠를 번역하는 방법을 �
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 6ccfe612-8cfd-4ca2-ad01-8e4af36d44fa
-source-git-commit: 3f5173c0c2b17e8cf560753088451f78c6529f5c
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 83%
+ht-degree: 74%
 
 ---
 
@@ -15,8 +16,8 @@ ht-degree: 83%
 
 페이지 콘텐츠, 에셋 및 사용자 생성 콘텐츠의 번역을 자동화하여 다국어 웹 사이트를 만들고 관리할 수 있습니다. 번역 워크플로를 자동화하려면 번역 서비스 공급업체를 AEM과 통합하고 콘텐츠를 다국어로 번역하는 프로젝트를 제작해야 합니다. AEM은 인간 번역 및 기계 번역 워크플로를 지원합니다.
 
-* 인간 번역: 콘텐츠를 전문 번역사가 번역할 수 있도록 번역 공급업체로 보냅니다. 번역이 완료되면 번역된 콘텐츠는 반환되어 AEM으로 가져와집니다. 번역 공급업체를 AEM과 통합하면 콘텐츠는 자동으로 AEM과 번역 공급업체 간 전송됩니다.
-* 기계 번역: 콘텐츠가 기계 번역 서비스를 통해 즉시 번역됩니다.
+* 사람 번역: 콘텐츠를 전문 번역사가 번역할 수 있도록 번역 공급업체로 보냅니다. 번역이 완료되면 번역된 콘텐츠는 반환되어 AEM으로 가져와집니다. 번역 공급업체를 AEM과 통합하면 콘텐츠는 자동으로 AEM과 번역 공급업체 간 전송됩니다.
+* 기계 번역: 콘텐츠를 즉시 번역합니다.
 
 콘텐츠 번역의 단계는 다음과 같습니다.
 

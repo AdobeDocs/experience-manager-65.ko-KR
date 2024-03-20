@@ -1,19 +1,20 @@
 ---
-title: 계획
+title: 계획 수립
 description: Adobe Experience Manager 테스트를 계획하기 위해 알아야 할 사항에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 2%
+source-wordcount: '979'
+ht-degree: 0%
 
 ---
 
-# 계획{#planning}
+# 계획 수립{#planning}
 
 이 문서에서는 테스트 계획을 수립하기 위해 알아야 할 사항에 대해 설명합니다. 또한 테스트를 수행하기 전에 다음 질문에 답해야 합니다.
 
@@ -71,7 +72,7 @@ AEM 프로젝트를 테스트할 때 사용하기에 적합한 다양한 테스�
 
 서로 다른 조건에서 성능을 보여 주는 데 사용됩니다.
 
-* 일반
+* 기본
 
   사이트에서 경험하게 될 조건은 시간의 90%라고 합니다. 예를 들어 작성자의 비율만 시스템을 사용하는 경우입니다.
 

@@ -8,7 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 0%
@@ -215,7 +216,7 @@ Forms API(Java)를 사용하여 제출된 양식을 처리합니다.
 
       * 다음 `com.adobe.idp.Document` 양식 데이터가 포함된 개체입니다.
       * 모든 관련 HTTP 헤더를 포함하는 환경 변수를 지정하는 문자열 값입니다. 처리할 콘텐츠 유형을 지정합니다. XML 데이터를 처리하려면 이 매개 변수에 대해 다음 문자열 값을 지정합니다. `CONTENT_TYPE=text/xml`. PDF 데이터를 처리하려면 이 매개 변수에 대해 다음 문자열 값을 지정하십시오. `CONTENT_TYPE=application/pdf`.
-      * 다음을 지정하는 문자열 값 `HTTP_USER_AGENT` 헤더 값(예: ). `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`을 따르지 않는 경우입니다. 이 매개 변수 값은 선택 사항입니다.
+      * 다음을 지정하는 문자열 값 `HTTP_USER_AGENT` 헤더 값(예: ). `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. 이 매개 변수 값은 선택 사항입니다.
       * A `RenderOptionsSpec` 런타임 옵션을 저장하는 개체입니다.
 
      다음 `processFormSubmission` 메서드가 을 반환합니다. `FormsResult` 양식 제출 결과를 포함하는 개체입니다.

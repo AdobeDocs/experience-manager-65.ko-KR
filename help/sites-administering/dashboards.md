@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '832'
 ht-degree: 4%
 
 ---
@@ -122,7 +123,7 @@ AEM은 의 여러 지표를 렌더링하는 구성 요소 세트와 함께 제�
 
 **지표** 표시할 이벤트입니다.
 
-**아니요. 상위 항목 중** 보고서에 표시된 항목 수입니다.
+**아니. 상위 항목 중** 보고서에 표시된 항목 수입니다.
 
 #### 등급 보고서 {#ranked-report}
 
@@ -138,7 +139,7 @@ AEM은 의 여러 지표를 렌더링하는 구성 요소 세트와 함께 제�
 
 ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-**아니요. 상위 항목 중** 보고서에 표시되는 섹션 수.
+**아니. 상위 항목 중** 보고서에 표시되는 섹션 수.
 
 #### 트렌드 보고서 {#trended-report}
 

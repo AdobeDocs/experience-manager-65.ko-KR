@@ -1,16 +1,17 @@
 ---
 title: 구성 요소
-description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다.
+description: AEM에는 웹 사이트 작성자에게 포괄적인 기능을 제공하는 다양하고 특별한 구성 요소가 포함되어 있습니다.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 27%
+ht-degree: 20%
 
 ---
 

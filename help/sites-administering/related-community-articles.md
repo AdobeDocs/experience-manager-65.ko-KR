@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ebf6d4ef-20ba-487b-b301-52de8936628f
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 6%
+source-wordcount: '79'
+ht-degree: 0%
 
 ---
 
@@ -20,5 +21,5 @@ Adobe Experience Manager(AEM) 커뮤니티에서는 AEM과의 Experience Cloud �
 다음은 사용 가능한 컨텐츠 목록입니다.
 
 * [Adobe Experience Manager 웹 페이지에서 활성화 규칙 사용](https://helpx.adobe.com/experience-manager/using/dtm.html)
-* [DTM을 사용하여 AEM과 Adobe Analytics 및 Target 통합](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)
+* [DTM을 사용하여 AEM을 Adobe Analytics 및 Target과 통합](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)
 * [Adobe Experience Manager 및 Adobe Campaign Standard을 통합하여 뉴스레터 만들기](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)

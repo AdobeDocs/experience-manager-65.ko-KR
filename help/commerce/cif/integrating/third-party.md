@@ -3,7 +3,8 @@ title: Commerce integration framework을 사용한 AEM 및 서드파티 상거�
 description: 기업 비즈니스의 매장 환경을 향상하기 위해 추가 타사 상거래 솔루션이 필요할 수 있습니다. 이러한 통합 시나리오에서는 Commerce integration framework(CIF)를 사용하여 I/O Runtime을 사용하여 서드파티 상거래 솔루션을 Adobe Experience Manager에 연결할 수 있습니다.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
-source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%

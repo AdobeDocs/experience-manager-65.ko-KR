@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 3%
+source-wordcount: '291'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수
 >
 >GDPR 및 CCPA와 같은 다양한 데이터 보호 및 개인 정보 보호 규정이 있습니다. AEM Sites은 데이터 보호 및 개인정보 보호 규정 준수 의무와 관련하여 고객을 지원할 준비가 되어 있습니다. 이 페이지는 고객에게 집계된 사용 통계 수집을 옵트인(또는 옵트아웃)하는 절차를 안내합니다.
 >
->자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/privacy.html).
+>자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html).
 
 >[!NOTE]
 >
@@ -67,7 +68,7 @@ AEM을 처음 시작하면 다음과 같이 Touch UI를 사용하여 옵트인�
 
    ![usage_statisticscollectionedit](assets/usage_statisticscollectionedit.png)
 
-1. **활성화** 확인란을 선택합니다. 또는 사용 통계 수집을 옵트아웃하려는 경우 확인란을 선택 취소할 수 있습니다.
+1. 다음 항목 선택 **활성화됨** 확인란. 또는 사용 통계 수집을 옵트아웃하려는 경우 확인란을 선택 취소할 수 있습니다.
 
    ![usage_statisticsselect](assets/usage_statisticsselect.png)
 

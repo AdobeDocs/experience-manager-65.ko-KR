@@ -7,14 +7,15 @@ content-type: reference
 feature: Accessibility
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 1%
+source-wordcount: '585'
+ht-degree: 0%
 
 ---
 
-# [!DNL Dynamic Media]에서의 접근성  {#working-with-three-d-assets-dm}
+# 에서의 접근성 [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
 [!DNL Dynamic Media] 는 작성 사용자 인터페이스에서 키보드 제어와 JAWS 및 NVDA 화면 판독기와 같은 보조 기술을 지원합니다.
 
@@ -69,4 +70,4 @@ Dynamic Media은 자막이 있는 비디오 및 적응형 비디오 세트 배�
 >[!MORELIKETHIS]
 >
 >* [Adobe 솔루션에 대한 접근성](https://www.adobe.com/accessibility.html)
->* [ [!DNL Experience Manager Assets]](/help/assets/accessibility.md)에서의 접근성
+>* [에서의 접근성 [!DNL Experience Manager Assets]](/help/assets/accessibility.md)

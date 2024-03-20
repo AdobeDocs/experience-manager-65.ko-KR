@@ -2,7 +2,8 @@
 title: 컨텐츠 페이지 게시
 description: Adobe Experience Manager 6.5에서 컨텐츠 페이지를 게시하는 방법을 알아봅니다.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1673'
 ht-degree: 69%

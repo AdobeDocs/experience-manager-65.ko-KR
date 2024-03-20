@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 30%
+ht-degree: 25%
 
 ---
 
@@ -307,7 +308,7 @@ ht-degree: 30%
   </tr>
   <tr>
    <td> </td>
-   <td>Twitter 소셜 로그인 구성<br /> </td>
+   <td>소셜 로그인 구성 twitter<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -319,11 +320,11 @@ ht-degree: 30%
   </tr>
   <tr>
    <td> </td>
-   <td>저장소 구성</td>
+   <td>스토리지 구성</td>
   </tr>
   <tr>
    <td> </td>
-   <td>구성 요소 가이드<br /> </td>
+   <td>구성 요소 안내서<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -373,7 +374,7 @@ ht-degree: 30%
    <td>Client Context는 동적으로 조립된 사용자 데이터의 컬렉션을 나타냅니다. 기본 및 Experience Cloud 구성은 여기에 있습니다.<br /> </td>
   </tr>
   <tr>
-   <td>클라우드 서비스 구성<br /> </td>
+   <td>Cloud Service 구성<br /> </td>
    <td>Adobe Experience Cloud과의 통합과 관련된 구성을 보유하고 있습니다.</td>
   </tr>
   <tr>

@@ -3,10 +3,11 @@ title: 개념
 description: Adobe Experience Manager과 함께 전자 상거래의 일반 개념에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '4481'
-ht-degree: 2%
+source-wordcount: '4439'
+ht-degree: 1%
 
 ---
 
@@ -266,7 +267,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 
      SKU(Stock Keeping Unit) 정보.
 
-   * **컬러**
+   * **색상**
    * **크기**
    * **가격**
 
@@ -747,7 +748,7 @@ eCommerce 엔진 또는 AEM에 보관된 주문에 대한 구현 정보에 따�
 
   주문에 대한 참조 번호입니다.
 
-* **주문 날짜**
+* **배치됨**
 
   주문이 이루어진 날짜.
 
@@ -803,7 +804,7 @@ eCommerce 엔진 또는 AEM에 보관된 주문에 대한 구현 정보에 따�
 
   배송 회사에서 사용하는 모든 추적 번호.
 
-* **추적 링크**
+* **링크 추적**
 
   배송 중 주문 추적에 사용되는 링크입니다.
 

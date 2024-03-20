@@ -1,20 +1,21 @@
 ---
-title: Adobe Analytics를 위한 링크 추적 구성
+title: Adobe Analytics에 대한 링크 추적 구성
 description: SiteCatalyst에 대한 링크 추적을 구성하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 
-# Adobe Analytics를 위한 링크 추적 구성{#configuring-link-tracking-for-adobe-analytics}
+# Adobe Analytics에 대한 링크 추적 구성{#configuring-link-tracking-for-adobe-analytics}
 
 사용자가 웹 사이트의 페이지에서 링크를 클릭하면 Adobe Analytics에서 관련 정보를 캡처할 수 있습니다. 예를 들어, 링크 추적을 사용하여 사용자가 사이트와 상호 작용하는 방법을 배우고, 파일 다운로드를 추적하고, 종료 링크를 추적합니다.
 
@@ -41,7 +42,7 @@ ht-degree: 1%
 * 갤런당
 * avi
 * wmv
-* doc
+* 문서
 * pdf
 * xls
 
@@ -165,7 +166,7 @@ Adobe Analytics 통합의 링크 추적 동작을 살펴보려면 다음 절차�
   <tr>
    <td>pagedata.title</td>
    <td>사용자 지정 eVar 1(eVar1)</td>
-   <td>eVar1</td>
+   <td>eVar</td>
   </tr>
   <tr>
    <td>eventdata.events.pageView</td>
@@ -187,12 +188,12 @@ Adobe Analytics 통합의 링크 추적 동작을 살펴보려면 다음 절차�
   <tr>
    <td>eventdata.keyword</td>
    <td>사용자 지정 eVar 2 (eVar2)</td>
-   <td>eVar2</td>
+   <td>eVar</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
    <td>사용자 지정 eVar 3(eVar 3)</td>
-   <td>eVar3</td>
+   <td>eVar</td>
   </tr>
   <tr>
    <td>eventdata.events.search</td>

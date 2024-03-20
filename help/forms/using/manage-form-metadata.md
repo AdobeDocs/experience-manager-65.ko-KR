@@ -7,7 +7,8 @@ topic-tags: forms-manager
 docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1967'
 ht-degree: 2%
@@ -78,7 +79,7 @@ AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>작성일</td> 
+   <td>생성됨</td> 
    <td>모두</td> 
    <td>에셋 생성 시간을 지정하는 읽기 전용 값입니다.</td> 
   </tr> 

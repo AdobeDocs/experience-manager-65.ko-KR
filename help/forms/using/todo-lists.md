@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4024'
 ht-degree: 0%
@@ -54,7 +55,7 @@ AEM Forms 작업 공간에는 다음과 같은 세 가지 유형의 할 일 목�
 * 참조
 * 반환
 * 메모
-* 첨부 파일
+* 첨부
 
 ## 작업 열기 {#opening-tasks}
 
@@ -162,7 +163,7 @@ AEM Forms 작업 공간에는 다음과 같은 세 가지 유형의 할 일 목�
    >
    >첨부 파일과 함께 주석을 추가할 수도 있습니다.
 
-1. 클릭 **업로드**. 파일이 양식에 첨부됩니다.
+1. **업로드**&#x200B;를 클릭합니다. 파일이 양식에 첨부됩니다.
 
 **첨부 파일 보기**
 

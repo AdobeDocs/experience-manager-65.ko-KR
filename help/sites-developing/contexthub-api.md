@@ -7,9 +7,10 @@ topic-tags: personalization
 content-type: reference
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '5004'
+source-wordcount: '4913'
 ht-degree: 2%
 
 ---
@@ -410,7 +411,7 @@ ContextHub.Store.JSONPtore 확장 [ContextHub.Store.Core](/help/sites-developing
    * port: (숫자) 서비스의 포트 번호입니다.
    * secure: (문자열 또는 부울) 서비스 URL에 사용할 프로토콜을 결정합니다.
 
-      * auto: //
+      * 자동: //
       * true: https://
       * false: https://
 
@@ -440,7 +441,7 @@ JSONP 서비스에 대한 마지막 호출 이후 캐시된 원시 응답을 반
 * **포트:** (번호) 서비스의 포트 번호입니다.
 * **보안:** (문자열 또는 부울) 서비스 URL에 사용할 프로토콜을 결정합니다.
 
-   * auto: //
+   * 자동: //
    * true: https://
    * false: https://
 
@@ -477,7 +478,7 @@ A `string` 서비스 URL을 나타내는 값입니다.
       * port: (숫자) 서비스의 포트 번호입니다.
       * secure: (문자열 또는 부울) 서비스 URL에 사용할 프로토콜을 결정합니다.
 
-         * auto: //
+         * 자동: //
          * true: https://
          * false: https://
 

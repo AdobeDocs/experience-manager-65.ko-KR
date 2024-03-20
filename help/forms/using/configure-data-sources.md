@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2073'
 ht-degree: 1%
@@ -93,7 +94,7 @@ AEM 웹 콘솔에서 사용자 프로필 커넥터 구성을 사용하여 AEM �
 
 >[!NOTE]
 >
->RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하려면 클라우드 서비스 폴더에 대한 구성이 필요합니다.
+RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하려면 클라우드 서비스 폴더에 대한 구성이 필요합니다.
 
 AEM의 모든 클라우드 서비스 구성은 `/conf` 폴더를 AEM 리포지토리에 추가합니다. 기본적으로 `conf` 폴더에는 `global` 클라우드 서비스 구성을 만들 수 있는 폴더입니다. 그러나 클라우드 구성에 대해서는 수동으로 활성화해야 합니다. 에서 추가 폴더를 만들 수도 있습니다. `conf` 클라우드 서비스 구성을 만들고 구성합니다.
 
@@ -191,8 +192,8 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. AEM Cloud Services�
 
 >[!NOTE]
 >
->양식 데이터 모델 지원 [OData 버전 4](https://www.odata.org/documentation/).
->온라인 또는 온프레미스에서 Microsoft Dynamics 365를 구성하는 방법에 대한 단계별 안내서는 다음을 참조하십시오. [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md).
+양식 데이터 모델 지원 [OData 버전 4](https://www.odata.org/documentation/).
+온라인 또는 온프레미스에서 Microsoft Dynamics 365를 구성하는 방법에 대한 단계별 안내서는 다음을 참조하십시오. [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
@@ -206,7 +207,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. AEM Cloud Services�
 
    >[!NOTE]
    >
-   >OData 끝점을 서비스 루트로 사용하여 Microsoft Dynamics 서비스와 연결하려면 OAuth 2.0 인증 유형을 선택하십시오.
+   OData 끝점을 서비스 루트로 사용하여 Microsoft Dynamics 서비스와 연결하려면 OAuth 2.0 인증 유형을 선택하십시오.
 
 1. 선택 **만들기** 를 클릭하여 OData 서비스에 대한 클라우드 구성을 만듭니다.
 

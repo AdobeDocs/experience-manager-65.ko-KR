@@ -1,18 +1,19 @@
 ---
-title: 관련 자산
+title: 관련 에셋
 description: 몇 가지 일반적인 특성을 공유하는 디지털 에셋의 연결 방법을 알아봅니다. 또한 디지털 에셋 간의 소스 파생 관계를 만듭니다.
 contentOwner: AG
 role: User
 feature: Collaboration,Asset Management
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 2%
+source-wordcount: '640'
+ht-degree: 3%
 
 ---
 
-# 관련 자산 {#related-assets}
+# 관련 에셋 {#related-assets}
 
 [!DNL Adobe Experience Manager Assets] 관련 에셋 기능을 사용하여 조직의 요구 사항에 따라 에셋을 수동으로 연결할 수 있습니다. 예를 들어 유사한 주제에 대한 에셋 또는 이미지/비디오와 라이선스 파일을 연결할 수 있습니다. 특정 공통 속성을 공유하는 에셋의 관계를 설정할 수 있습니다. 이 기능을 사용하여 에셋 간의 소스/파생 관계를 만들 수도 있습니다. 예를 들어 INDD 파일에서 생성된 PDF 파일이 있는 경우 PDF 파일을 해당 소스 INDD 파일과 연결할 수 있습니다.
 

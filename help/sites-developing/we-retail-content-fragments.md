@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 19%
+source-wordcount: '400'
+ht-degree: 17%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 19%
 
 변형(채널별로 가능)과 함께 콘텐츠 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. **We.Retail** (Adobe Experience Manager의 기본 인스턴스에서 사용 가능한 경우) 조각을 제공합니다 **로포텐의 북극 서핑** 를 기본 샘플로 사용하십시오. 이는 다음을 보여 줍니다.
 
-* Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md). 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다.
+* Adobe Experience Manager(AEM) 콘텐츠 조각은 [페이지 독립적 자산으로 생성 및 관리됨](/help/assets/content-fragments/content-fragments.md). 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다.
 
    * 다음을 참조하십시오 [We.Retail에서 컨텐츠 조각 자산을 찾을 수 있는 위치](#where-to-find-content-fragments-in-we-retail)
 

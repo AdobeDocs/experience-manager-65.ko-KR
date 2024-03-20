@@ -6,9 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -45,7 +46,7 @@ ht-degree: 0%
    * REST 끝점을 추가하려면 REST 추가 를 클릭하고 끝점의 이름과 설명을 지정합니다. REST 끝점 추가 페이지에 표시된 REST 호출 URL을 확인합니다.
    * 끝점을 제거하려면 끝점 옆에 있는 확인란을 선택하고 제거를 클릭합니다.
 
-1. 다음을 클릭합니다.
+1. 다음 을 클릭합니다.
 1. LCA의 프로세스나 서비스에 구성 매개변수가 있는 경우 서비스 매개변수를 구성하고 다음을 누를 수 있는 매개변수 구성 페이지가 나타납니다.
 1. 보안 프로파일 구성 페이지에서 필요한 사항을 변경합니다.
 
@@ -112,7 +113,7 @@ ht-degree: 0%
    * REST 끝점을 추가하려면 REST 추가 를 클릭하고 끝점의 이름과 설명을 지정합니다. REST 끝점 추가 페이지에 표시된 REST 호출 URL을 확인합니다.
    * 끝점을 제거하려면 끝점 옆에 있는 확인란을 선택하고 제거를 클릭합니다.
 
-1. 다음을 클릭합니다.
+1. 다음 을 클릭합니다.
 1. LCA의 프로세스나 서비스에 구성 매개변수가 있는 경우 서비스 매개변수를 구성하고 다음을 누를 수 있는 매개변수 구성 페이지가 나타납니다.
 1. 보안 프로파일 구성 페이지에서 다음과 같이 필요한 사항을 변경할 수 있습니다.
 

@@ -9,10 +9,11 @@ docset: aem65
 feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '6035'
-ht-degree: 3%
+source-wordcount: '5926'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +44,7 @@ ht-degree: 3%
 ### 대화형 비디오가 만들어지는 방식 보기 {#watch-how-interactive-videos-are-created}
 
 연습: [대화형 비디오를 만드는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7분 30초).
-비디오 연습이 Assets on Demand로 브랜딩되었지만 원칙과 단계는 Adobe Experience Manager Assets의 대화형 비디오에 여전히 적용됩니다.
+비디오 연습이 Assets on Demand로 브랜딩되었지만, 원칙과 단계는 Adobe Experience Manager Assets의 대화형 비디오에 여전히 적용됩니다.
 
 ### Adobe 고객 솔루션 웨비나 {#adobe-customer-success-webinar}
 
@@ -104,7 +105,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 >* 빠른 보기로 트리거하여 비디오에 대화형 기능을 추가하려는 경우.
 >* Experience Manager 구현은 다음을 수행합니다 *아님* IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오려면 eCommerce 통합 프레임워크를 사용합니다. 다음을 참조하십시오 [Experience Manager Assets의 eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md).
 >
-Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
+>Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
 먼저 대화형 비디오 만들기 프로세스 중에 제품 썸네일을 해당 제품 빠른 보기에 매핑할 수 있도록 기존 빠른 보기 구현에서 사용되는 동적 변수를 식별합니다.
 
@@ -245,7 +246,7 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
 
 >[!NOTE]
 >
-MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 없습니다 .
+>MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 없습니다 .
 
 잘못된 비디오나 이미지를 업로드했거나 업로드한 비디오나 이미지를 더 이상 필요하지 않게 삭제하려면 다음을 참조하십시오. [에셋 삭제](/help/assets/manage-assets.md#deleting-assets).
 
@@ -268,11 +269,11 @@ MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 �
 
 >[!NOTE]
 >
-뷰어를 경험 조각에 포함할 때 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+>뷰어를 경험 조각에 포함할 때 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
 >[!NOTE]
 >
-대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+>대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 
 페이지의 오른쪽 상단 모서리 근처에 있는 실행 취소 및 재실행 옵션은 현재 생성/편집 세션 중에 지원됩니다.
 
@@ -320,7 +321,7 @@ MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 �
         <td>30초</td>
         </tr>
         <tr>
-        <td>1 ~ 2분</td>
+        <td>1-2분</td>
         <td>20초<br /> </td>
         </tr>
         <tr>
@@ -495,7 +496,7 @@ MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 �
 
    >[!NOTE]
    >
-   When you save your interactive video, an associated `.vtt` file is automatically saved with it. The `.vtt` file is saved to the `_VTT` folder at the root of **[!UICONTROL Assets]**. The file and folder is necessary for your interactive video to play correctly on your website. As such, do not move, edit, or delete the `_VTT` folder or its contents.
+   >When you save your interactive video, an associated `.vtt` file is automatically saved with it. 다음 `.vtt` 파일이 `_VTT` 루트에 있는 폴더 **[!UICONTROL 에셋]**. The file and folder is necessary for your interactive video to play correctly on your website. As such, do not move, edit, or delete the `_VTT` folder or its contents.
 
 1. 대화형 비디오를 게시합니다. 게시하면 포함 코드 또는 URL이 만들어지므로 이를 복사하여 웹 사이트 경험에 붙여넣을 수 있습니다.
 
@@ -505,7 +506,7 @@ MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 �
 
    >[!NOTE]
    >
-   Quickview로 구매 가능한 비디오를 게시하려면 상거래 영역에서 비디오와 관련된 각 이미지 에셋도 별도로 게시해야 합니다.
+   >Quickview로 구매 가능한 비디오를 게시하려면 상거래 영역에서 비디오와 관련된 각 이미지 에셋도 별도로 게시해야 합니다.
 
    타임라인 세그먼트를 추가하고 대화형 비디오를 게시하면 기존 웹 사이트 랜딩 페이지에 추가할 수 있습니다. 다음을 참조하십시오 [웹 사이트와 대화형 비디오 통합](#integrating-an-interactive-video-with-your-website).
 
@@ -531,9 +532,9 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 >[!NOTE]
 >
-이 시점에서 하이퍼링크가 설정된 웹 페이지만 사용하여 인터랙티브를 추가했다면 완료됩니다.
+>이 시점에서 하이퍼링크가 설정된 웹 페이지만 사용하여 인터랙티브를 추가했다면 완료됩니다.
 >
-그러나 빠른 보기를 트리거하기 위해 대화형 활동을 추가한 경우 대화형 비디오 옆에 있는 썸네일은 표시용으로만 사용되며 기존 빠른 보기와 아직 통합되지 않았습니다. 이 경우 대화형 비디오를 웹 사이트의 기존 빠른 보기와 통합해야 합니다.
+>그러나 빠른 보기를 트리거하기 위해 대화형 활동을 추가한 경우 대화형 비디오 옆에 있는 썸네일은 표시용으로만 사용되며 기존 빠른 보기와 아직 통합되지 않았습니다. 이 경우 대화형 비디오를 웹 사이트의 기존 빠른 보기와 통합해야 합니다.
 
 **예**
 
@@ -576,7 +577,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 >[!NOTE]
 >
-이 작업은 독립형 Experience Manager Assets 고객인 경우에만 적용됩니다.
+>이 작업은 독립형 Experience Manager Assets 고객인 경우에만 적용됩니다.
 
 이 프로세스의 마지막 단계는 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합하는 것입니다. 모든 경우에 작동하는 통합 솔루션은 없습니다. 모든 Quickview 구현은 고유합니다. 따라서 프론트엔드 IT 담당자의 지원을 포함하는 구체적인 접근 방식이 필요합니다.
 

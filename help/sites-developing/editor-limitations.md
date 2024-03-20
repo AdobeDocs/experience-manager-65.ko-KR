@@ -6,16 +6,17 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 11%
+source-wordcount: '308'
+ht-degree: 6%
 
 ---
 
 # 편집기 제한 사항{#editor-limitations}
 
-터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 콘텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
+터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 콘텐츠와 상호 작용합니다. 이러한 상호 작용은 편집기와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
 
 ## 기능 제한 사항 {#functional-limitations}
 

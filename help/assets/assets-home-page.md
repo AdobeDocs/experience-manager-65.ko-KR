@@ -2,13 +2,14 @@
 title: "[!DNL Assets] 홈 페이지 경험"
 description: 개인화 [!DNL Experience Manager Assets] 에셋에 대한 최근 활동 스냅숏을 포함하여 풍부한 시작 화면 경험을 위한 홈 페이지입니다.
 contentOwner: AG
-feature: Developer Tools, Asset Management
+feature: Asset Management
 role: Admin, User
 exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 1%
+source-wordcount: '562'
+ht-degree: 2%
 
 ---
 

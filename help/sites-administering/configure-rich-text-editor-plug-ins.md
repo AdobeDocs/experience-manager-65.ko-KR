@@ -3,7 +3,8 @@ title: 리치 텍스트 편집기 플러그인 구성
 description: Adobe Experience Manager 리치 텍스트 편집기 플러그인을 구성하여 개별 기능을 활성화하는 방법에 대해 알아봅니다.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4391'
 ht-degree: 2%

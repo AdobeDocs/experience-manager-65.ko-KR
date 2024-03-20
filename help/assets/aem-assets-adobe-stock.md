@@ -6,7 +6,8 @@ feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2446'
 ht-degree: 8%
@@ -313,7 +314,7 @@ IMS 계정을 구성하려면:
 
 | 사용자 | 그룹 | 권한 | 사용자 환경 설정에서 Stock 구성 수락 | 에셋 액세스 | Adobe Stock 액세스 |
 | --- | --- | --- | --- | --- | --- |
-| admin | N/A | 모두 | N/A | 예 | 예 |
+| admin | 해당 사항 없음 | 모두 | 해당 사항 없음 | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global /settings/stock/cloud-config | 예 | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global /settings/stock/cloud-config | 아니요 | 오류: 데이터를 로드하지 못했습니다. | 아니요 |
 | test-doc1 | DAM 사용자 | **허용**: /conf/global /settings/stock     **거부**: /cloud-config | Stock 구성이 표시되지 않음 | 예 | 아니요 |

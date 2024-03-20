@@ -2,10 +2,11 @@
 title: AEM Content and Commerce 릴리스 노트 2020
 description: Adobe Experience Manager Content and Commerce 릴리스 노트 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 15%
+source-wordcount: '1257'
+ht-degree: 9%
 
 ---
 
@@ -113,7 +114,7 @@ ht-degree: 15%
 
 * CIF Venia 참조 사이트는 CIF Archetype 저장소에서 추출되었으며 이제 독립 실행형 GitHub 저장소입니다.
 
-* CIF Archetype이 AEM Project Archetype과 병합됩니다. 새 프로젝트의 경우 다음을 사용하십시오. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 을(를) 시작점으로 선택합니다.
+* CIF Archetype이 AEM Project Archetype과 병합되었습니다. 새 프로젝트의 경우 다음을 사용하십시오. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 을(를) 시작점으로 선택합니다.
 
 * 로그인한 사용자가 주소를 관리할 수 있도록 주소록 관리가 추가되었습니다.
 

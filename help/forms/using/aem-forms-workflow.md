@@ -5,7 +5,8 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3667'
 ht-degree: 1%
@@ -165,7 +166,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
    <td>선택 <a href="../../forms/using/prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">미리 채우기 서비스</a> 적응형 양식용.<br /> </td>
   </tr>
   <tr>
-   <td>워크플로우 모델</td>
+   <td>워크플로 모델</td>
    <td>선택 <a href="../../forms/using/aem-forms-workflow.md#create-a-workflow-model">워크플로 모델</a> 응용 프로그램용. 워크플로우 모델은 비즈니스 프로세스의 로직과 플로우로 구성됩니다. </td>
   </tr>
   <tr>
@@ -235,7 +236,7 @@ fd-administrators 그룹의 구성원인 관리자는 사용자가 파일(예: P
    <td>다음 항목 선택 <span class="uicontrol">워크플로 </code>옵션을 선택합니다. </td>
   </tr>
   <tr>
-   <td><span class="uicontrol">워크플로우 모델</code></td>
+   <td><span class="uicontrol">워크플로 모델</code></td>
    <td>워크플로우 모델을 선택합니다.<br /> </td>
   </tr>
   <tr>

@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 3%
+source-wordcount: '1555'
+ht-degree: 2%
 
 ---
 
@@ -120,7 +121,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 >[!CAUTION]
 >
->Do not change the ExtendScript library. 이 라이브러리는 Sling과 통신하는 데 필요한 HTTP 기능을 제공합니다. 이 설정은 로 보낼 라이브러리를 지정합니다. [!DNL InDesign Server] 거기에서 사용할 수 있습니다.
+>ExtendScript 라이브러리를 변경하지 마십시오. 이 라이브러리는 Sling과 통신하는 데 필요한 HTTP 기능을 제공합니다. 이 설정은 로 보낼 라이브러리를 지정합니다. [!DNL InDesign Server] 거기에서 사용할 수 있습니다.
 
 다음 `ThumbnailExport.jsx` 미디어 추출 워크플로우 단계에서 실행되는 스크립트는 JPG 형식의 썸네일 렌디션을 생성합니다. 이 렌디션은 프로세스 썸네일 워크플로 단계에서 필요한 정적 렌디션을 생성하는 데 사용됩니다. [!DNL Experience Manager].
 

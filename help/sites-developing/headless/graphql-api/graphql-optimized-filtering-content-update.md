@@ -1,21 +1,22 @@
 ---
 title: 최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트
 description: Headless 콘텐츠 게재를 위해 Adobe Experience Manager에서 최적화된 GraphQL 필터링을 위해 콘텐츠 조각을 업데이트하는 방법을 알아봅니다.
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 35%
+source-wordcount: '255'
+ht-degree: 49%
 
 ---
 
-
 # 최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트 {#updating-content-fragments-for-optimized-graphql-filtering}
 
-GraphQL 필터의 성능을 최적화하려면 컨텐츠 조각을 업데이트하는 절차를 실행합니다.
+GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트하는 절차를 실행합니다.
 
 >[!NOTE]
 >
->콘텐츠 조각을 업데이트한 후에는 다음 권장 사항을 따를 수 있습니다. [GraphQL 쿼리 최적화](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
+>콘텐츠 조각을 업데이트한 후에는 [GraphQL 쿼리 최적화](/help/sites-developing/headless/graphql-api/graphql-optimization.md) 권장 사항을 따를 수 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -47,7 +48,7 @@ AEM의 릴리스 6.5.17.0 이상이 있는지 확인하십시오.
 
 ## 제한 사항 {#limitations}
 
-다음 제한 사항에 유의하십시오.
+다음 제한 사항을 알아 두십시오.
 
 * GraphQL 필터의 성능 최적화는 모든 콘텐츠 조각을 완전히 업데이트한 후에만 가능합니다(JCR 노드 `/content/dam`에 `cfGlobalVersion` 속성이 있으면 업데이트가 완료된 것).
 

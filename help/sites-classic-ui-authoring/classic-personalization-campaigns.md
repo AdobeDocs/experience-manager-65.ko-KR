@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 1%
+source-wordcount: '620'
+ht-degree: 0%
 
 ---
 
@@ -59,13 +60,13 @@ Adobe Experience Manager(AEM)에서 브랜드는 최상위 수준의 단위이�
 
      이를 통해 Adobe Target(이전의 Test&amp;Target)와 통합하여 마케터에게 지속적인 온라인 콘텐츠 및 고객 산출 더 큰 전환과 관련된 오퍼를 만드는 데 필요한 기능을 갖춘 전환 웹 사이트 최적화 도구를 제공합니다. Adobe Target은 테스트 디자인 및 실행, 대상 세그먼트 만들기 및 단일 애플리케이션에서 콘텐츠 타겟팅을 위한 직관적인 인터페이스를 제공합니다.
 
-* **터치포인트**
+* **접점**
 
   다음은 방문자와 캠페인 간의 연락 지점입니다. 터치포인트는 사용자가 만든 경험에 연결됩니다.
 
   예를 들어 티저의 경우 티저 단락이 있는 콘텐츠 페이지이고 뉴스레터의 경우 메일링 목록입니다.
 
-* **리드**
+* **잠재 고객**
 
   방문자에 대해 수집한 정보와 연락하는 방법은 리드의 기초가 됩니다. **참고:** Adobe은 이 기능을 더 강화하지 않을 계획입니다.
 

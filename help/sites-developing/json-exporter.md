@@ -6,7 +6,8 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 24%
@@ -27,7 +28,7 @@ AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 콘�
 
 >[!NOTE]
 >
->다음의 경우 여기에 설명된 기능을 모든 핵심 구성 요소에 사용할 수 있습니다. [핵심 구성 요소 릴리스 1.1.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+>다음의 경우 여기에 설명된 기능을 모든 핵심 구성 요소에 사용할 수 있습니다. [핵심 구성 요소 릴리스 1.1.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR).
 
 ## 콘텐츠 조각 핵심 구성 요소가 있는 JSON 내보내기 {#json-exporter-with-content-fragment-core-components}
 
@@ -99,4 +100,4 @@ AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
 
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)

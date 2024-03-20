@@ -5,7 +5,8 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 0%
@@ -111,13 +112,13 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 >
 >다음 명령은 My SQL 및 IBM® DB2® 데이터베이스에서 데이터베이스 테이블 이름을 사용합니다. oracle 및 MS® SQL 데이터베이스에서 이러한 명령을 실행할 때 명령에서 다음 테이블 이름을 바꿉니다.
 >
-* 바꾸기 `EdcPrincipalLocalAccountEntity` 포함 `EdcPrincipalLocalAccount`
+>* 바꾸기 `EdcPrincipalLocalAccountEntity` 포함 `EdcPrincipalLocalAccount`
 >
-* 바꾸기 `EdcPrincipalEmailAliasEntity` 포함 `EdcPrincipalEmailAliasEn`
+>* 바꾸기 `EdcPrincipalEmailAliasEntity` 포함 `EdcPrincipalEmailAliasEn`
 >
-* 바꾸기 `EdcPrincipalMappingEntity` 포함 `EdcPrincipalMappingEntit`
+>* 바꾸기 `EdcPrincipalMappingEntity` 포함 `EdcPrincipalMappingEntit`
 >
-* 바꾸기 `EdcPrincipalGrpCtmntEntity` 포함 `EdcPrincipalGrpCtmntEnti`
+>* 바꾸기 `EdcPrincipalGrpCtmntEntity` 포함 `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql

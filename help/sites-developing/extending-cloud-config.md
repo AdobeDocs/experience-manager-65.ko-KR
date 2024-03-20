@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '552'
 ht-degree: 3%
 
 ---
@@ -34,7 +35,7 @@ ht-degree: 3%
 
 구성의 기본 경로는 다음과 같습니다.
 
-`/etc/cloudservices`.
+`/etc/cloudservices`
 
 각 구성 유형에 대해 템플릿과 구성 요소가 제공됩니다. 이를 통해 맞춤화된 후 대부분의 요구 사항을 충족할 수 있는 구성 템플릿을 가질 수 있습니다.
 
@@ -137,7 +138,7 @@ API에 대한 참조 설명서는 다음을 참조하십시오. [com.day.cq.wcm.
 
 ### AEM 통합 {#aem-integration}
 
-사용 가능한 서비스는 **Cloud Services** 의 탭 **페이지 속성** 을 상속하는 모든 페이지의 대화 상자 `foundation/components/page` 또는 `wcm/mobile/components/page`).
+사용 가능한 서비스는 **Cloud Service** 의 탭 **페이지 속성** 을 상속하는 모든 페이지의 대화 상자 `foundation/components/page` 또는 `wcm/mobile/components/page`).
 
 탭에는 다음 기능도 제공됩니다.
 

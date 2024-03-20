@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '18956'
+source-wordcount: '18860'
 ht-degree: 0%
 
 ---
@@ -367,7 +368,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
    * 만들기 `System.IO.BinaryWriter` 개체를 호출하고 `System.IO.FileStream` 개체.
    * 바이트 배열의 내용을 XML 파일에 씁니다. `System.IO.BinaryWriter` 개체 `Write` 메서드 및 바이트 배열 전달.
 
-   참고 항목
+   추가 참조
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
@@ -383,7 +384,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
 출력 서비스를 사용하여 PDF/A 문서를 만들 수 있습니다. PDF/A는 문서 내용을 장기간 보존하기 위한 보관 형식이므로 모든 글꼴이 임베드되고 파일이 압축 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다. 다른 출력 서비스 작업과 마찬가지로 양식 디자인과 데이터를 모두 제공하여 양식 디자인과 병합하여 PDF/A 문서를 만듭니다.
 
-PDF/A-1 사양은 두 가지 적합성 수준, 즉 a와 b로 구성됩니다. 두 요소의 주요 차이점은 적합성 수준 b에 필요하지 않은 논리적 구조(접근성) 지원에 관한 것입니다. 적합성 수준에 관계없이 PDF/A-1은 모든 글꼴이 생성된 PDF/A 문서에 포함됨을 지시합니다.
+PDF/A-1 사양은 두 가지 적합성 수준, 즉 a와 b로 구성됩니다. 두 요소의 주요 차이점은 적합성 수준 b에 필요하지 않은 논리적 구조(접근성) 지원에 대한 것입니다. 적합성 수준에 관계없이 PDF/A-1은 모든 글꼴이 생성된 PDF/A 문서에 포함되었음을 나타냅니다.
 
 PDF/A가 PDF 문서를 보관하는 표준이지만 표준 PDF 문서가 회사의 요구 사항에 부합하는 경우 PDF/A를 보관에 사용해야 하는 것은 아닙니다. PDF/A 표준은 장기간 보관이 가능하고 문서 보존 요건을 충족하는 PDF 파일을 구축하는 것이 목적이다. 예를 들어 시간이 지남에 따라 URL이 유효하지 않게 될 수 있으므로 URL을 PDF/A에 포함할 수 없습니다.
 
@@ -1433,15 +1434,15 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
    <td><p>기본 또는 사용자 지정 xdc 출력 스트림으로 dpl203.xdc를 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 300 DPI </p></td>
+   <td><p>DPL300DPI </p></td>
    <td><p>DPL 300 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 406 DPI </p></td>
+   <td><p>DPL406DPI </p></td>
    <td><p>DPL 400 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 600 DPI </p></td>
+   <td><p>DPL600DPI </p></td>
    <td><p>DPL 600 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
@@ -1457,11 +1458,11 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
    <td><p>사용자 지정 IPL 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>IPL 300 DPI </p></td>
+   <td><p>IPL300DPI </p></td>
    <td><p>IPL 300 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>IPL 400 DPI </p></td>
+   <td><p>IPL400DPI </p></td>
    <td><p>IPL 400 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
@@ -1477,11 +1478,11 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
    <td><p>사용자 지정 TPCL 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL 305 DPI </p></td>
+   <td><p>TPCL305DPI </p></td>
    <td><p>TPCL 305 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL 600 DPI </p></td>
+   <td><p>TPCL600DPI </p></td>
    <td><p>TPCL 600 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
@@ -1489,7 +1490,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
    <td><p>ZPL 203 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>ZPL 300 DPI </p></td>
+   <td><p>ZPL300DPI </p></td>
    <td><p>ZPL 300 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
  </tbody>

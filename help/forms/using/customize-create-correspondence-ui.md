@@ -7,9 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1099'
 ht-degree: 1%
 
 ---
@@ -81,7 +82,7 @@ ht-degree: 1%
       >    
       >
 
-   1. **확인**&#x200B;을 클릭합니다. 지정된 경로에 css 폴더가 만들어집니다.
+   1. 클릭 **확인**. 지정된 경로에 css 폴더가 만들어집니다.
 
 1. 앱 폴더에서 이라는 폴더를 만듭니다. `imgs` 와 유사한 경로/구조 `imgs` 폴더(ccrui 폴더).
 
@@ -112,7 +113,7 @@ ht-degree: 1%
 
 다음 단계를 사용하여 사용자 지정 로고 파일을 CRX에 업로드합니다.
 
-1. `https://'[server]:[port]'/[contextpath]/crx/de`로 이동합니다. 필요한 경우 관리자로 로그인합니다.
+1. 다음으로 이동 `https://'[server]:[port]'/[contextpath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
 1. CRXDE에서 **imgs** 다음 경로에 있는 폴더를 선택하고 **만들기 > 파일 만들기**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -155,7 +156,7 @@ ht-degree: 1%
 
 다음 단계를 사용하여 UI로 로고를 렌더링하기 위한 스타일 시트를 만듭니다.
 
-1. `https://'[server]:[port]'/[contextpath]/crx/de`로 이동합니다. 필요한 경우 관리자로 로그인합니다.
+1. 다음으로 이동 `https://'[server]:[port]'/[contextpath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
 1. 다음 위치에 customcss.css라는 파일(다른 파일 이름을 사용할 수 없음)을 만듭니다.
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`

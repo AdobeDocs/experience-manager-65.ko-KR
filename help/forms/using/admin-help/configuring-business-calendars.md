@@ -6,9 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1889'
 ht-degree: 0%
 
 ---
@@ -143,4 +144,4 @@ AEM forms를 사용하면 비즈니스 캘린더를 XML 파일로 내보내고 �
 
 1. 관리 콘솔에서 서비스 > Forms 워크플로 > 비즈니스 캘린더 를 클릭합니다.
 1. 달력을 선택합니다.
-1. 삭제를 클릭합니다.
+1. 삭제를 누릅니다.

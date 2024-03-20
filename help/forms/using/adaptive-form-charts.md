@@ -4,7 +4,9 @@ description: 적응형 양식의 차트를 사용하여 양식을 보다 유용�
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 53a6914792bb15773c8f91a2bb6295ab69b3b1bf
+exl-id: 973d5ddb-cbcc-454d-859f-144442828a1a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 0%
@@ -190,5 +192,3 @@ chartType 속성은 차트의 유형을 지정합니다. 가능한 값은 원형
 1. 완료 를 클릭하여 규칙을 저장합니다.
 
 이제 드롭다운 목록에서 차트 유형을 선택하고 새로 고침 을 클릭하여 차트를 다시 그릴 수 있습니다.
-
-

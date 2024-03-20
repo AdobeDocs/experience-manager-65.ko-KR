@@ -2,7 +2,8 @@
 title: Adobe Experience Manager용 액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성)
 description: AEM을 사용하여 장애가 있는 사람이 액세스하여 사용 가능한 웹 컨텐츠 제작 관련
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '13636'
 ht-degree: 83%

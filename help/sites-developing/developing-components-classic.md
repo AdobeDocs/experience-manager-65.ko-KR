@@ -7,10 +7,11 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2384'
-ht-degree: 2%
+source-wordcount: '2340'
+ht-degree: 1%
 
 ---
 
@@ -89,7 +90,7 @@ AEM WCM에서 콘텐츠에 액세스하는 방법에는 세 가지가 있습니�
 
 * 를 통해 `currentPage` 에 도입된 개체 `global.jsp`:
 
-  다음 `currentPage` 개체는 페이지의 인스턴스입니다( 참조). [AEM API](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). 페이지 클래스는 콘텐츠에 액세스하는 몇 가지 메서드를 제공합니다.
+  다음 `currentPage` 개체는 페이지의 인스턴스입니다( 참조). [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). 페이지 클래스는 콘텐츠에 액세스하는 몇 가지 메서드를 제공합니다.
 
   예: `String pageTitle = currentPage.getTitle();`
 
@@ -386,7 +387,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
    ![chlimage_1-63](assets/chlimage_1-63a.png)
 
-1. **모두 저장**&#x200B;을 클릭합니다. 구성 요소를 테스트할 준비가 되었습니다.
+1. 클릭 **모두 저장**. 구성 요소를 테스트할 준비가 되었습니다.
 1. 영어/회사와 같은 Geometrixx에서 페이지를 엽니다.
 1. 디자인 모드로 전환하고 이미지(확장)를 활성화합니다.
 1. 편집 모드로 다시 전환하고 단락 시스템에 추가합니다. 다음 그림에서는 원본 이미지 구성 요소와 만든 이미지 구성 요소의 차이점을 확인할 수 있습니다.

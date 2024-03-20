@@ -7,7 +7,8 @@ feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 9%
@@ -31,7 +32,7 @@ Experience Manager은 작성 프로세스의 일부로 3D 에셋의 업로드, �
 
 대화형 3D 미리보기는 다음 파일 형식을 지원합니다.
 
-| 3D 파일 확장명 | 파일 형식 | MIME 유형 | 메모 |
+| 3D 파일 확장명 | 파일 포맷 | MIME 유형 | 메모 |
 |---|---|---|---|
 | GLB | 이진 GL 전송 | model/gltf-binary | |
 | GLTF | GL 전송 형식 | model/gltf+json | 다음을 참조하십시오 **참고** 아래요. |

@@ -2,10 +2,11 @@
 title: 기본 구성 요소
 description: Adobe Experience Manager에는 웹 사이트 작성자에게 포괄적인 기능을 제공하는 다양한 기본 구성 요소가 포함되어 있습니다.
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 37%
+source-wordcount: '420'
+ht-degree: 34%
 
 ---
 
@@ -32,7 +33,7 @@ Adobe Experience Manager(AEM)에는 웹 사이트 작성자에게 포괄적인 �
 
 * [콘텐츠 편집 - 전체 화면 모드](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-페이지에 구성 요소를 추가하는 방법에 대한 자세한 내용은 [페이지 콘텐츠 편집](/help/sites-authoring/editing-content.md)을 참조하십시오.
+페이지에 구성 요소를 추가하는 방법에 대한 자세한 내용은 [페이지 컨텐츠 편집](/help/sites-authoring/editing-content.md).
 구성 요소는 구성 요소 그룹이라는 다양한 범주에 따라 정렬됩니다. 이러한 구성 요소 그룹의 예는 다음과 같습니다.
 
 * **We.Retail**: 와 함께 사용하기 위해 프록시화된 핵심 구성 요소를 포함합니다. [We.Retail 참조 구현](/help/sites-developing/we-retail.md).
@@ -49,7 +50,7 @@ Adobe Experience Manager(AEM)에는 웹 사이트 작성자에게 포괄적인 �
 
 다음 페이지는 구성 요소에 대한 몇 가지 중요한 추가 정보에 대한 링크를 제공합니다.
 
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) - 핵심 구성 요소는 페이지를 작성하는 데 필요한 콘텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) - 핵심 구성 요소는 페이지를 작성하는 데 필요한 콘텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
 * [커뮤니티](/help/communities/author-communities.md) - 구성 요소는 포럼 및 댓글과 같은 웹 사이트에 대화형 기능을 제공합니다. 다음과 같은 경우 이러한 구성 요소 대부분이 포함됩니다. [커뮤니티 사이트](/help/communities/overview.md) 이(가) 만들어졌습니다.
 

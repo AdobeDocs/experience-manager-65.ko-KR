@@ -5,10 +5,11 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Asset Management
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2110'
-ht-degree: 6%
+source-wordcount: '2088'
+ht-degree: 1%
 
 ---
 
@@ -376,7 +377,7 @@ Geometrixx 에셋 편집기 템플릿을 사용하여 만든 기본 페이지는
 | 작업 | 설명 |
 |---|---|
 | [!UICONTROL 다운로드] | 사용자가 선택한 자산을 컴퓨터에 다운로드할 수 있습니다. |
-| [!UICONTROL 편집기] | 사용자가 이미지를 편집할 수 있습니다(대화형 편집). |
+| [!UICONTROL 편집자] | 사용자가 이미지를 편집할 수 있습니다(대화형 편집). |
 | [!UICONTROL Lightbox] | 자산을 다른 작업을 수행할 수 있는 &quot;lightbox&quot;에 저장합니다. 여러 페이지의 에셋으로 작업할 때 유용합니다. |
 | [!UICONTROL 잠금] | 사용자가 자산을 잠글 수 있습니다. 이 기능은 기본적으로 활성화되어 있지 않으므로 구성 요소 목록에서 활성화해야 합니다. |
 | [!UICONTROL 참조] | 자산을 사용 중인 페이지에 표시하려면 이 아이콘을 클릭합니다. |

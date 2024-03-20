@@ -7,10 +7,11 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2204'
-ht-degree: 15%
+source-wordcount: '2183'
+ht-degree: 14%
 
 ---
 
@@ -105,7 +106,7 @@ ht-degree: 15%
 
 1. 클릭 **[!UICONTROL 저장]** 스마트 컬렉션을 만든 다음 메시지 상자를 닫아 프로세스를 완료합니다.
 
-   The new smart collection is also added to the **[!UICONTROL Saved Searches]** list.
+   새 스마트 컬렉션도 **[!UICONTROL 저장한 검색 결과]** 목록을 표시합니다.
 
    ![collection_listing](assets/collection_listing.png)
 

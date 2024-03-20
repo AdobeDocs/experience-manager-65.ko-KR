@@ -4,7 +4,8 @@ description: Fluid Experiences 기능 목록
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager Sites,Experience Manager Assets
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 87%
@@ -19,7 +20,7 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 
 다음 표에서는 AEM Fluid Experiences의 기능을 정의하고 적절한 지원 설명서에 연결합니다.
 
-* [보관소](#repository-features)
+* [저장소](#repository-features)
 * [액세스, API 및 게재](#access-api-and-delivery-features)
 * [관리 및 통합](#admin-and-integration-features)
 * [Analytics 및 개인화](#analytics-and-personalization)
@@ -53,7 +54,7 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 | [경험 조각](/help/sites-authoring/experience-fragments.md) |
 | 구조화된 컨텐츠를 위한 HTTP API(읽기) |
 | 구조화된 컨텐츠를 위한 HTTP API(CRUD) |
-| [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |
+| [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## 관리 및 통합 기능 {#admin-and-integration-features}

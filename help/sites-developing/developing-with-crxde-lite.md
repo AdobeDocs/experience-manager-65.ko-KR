@@ -1,5 +1,5 @@
 ---
-title: CRXDE Lite를 사용한 개발
+title: CRXDE Lite을 사용한 개발
 description: CRXDE Lite은 Adobe Experience Manager(AEM)에 포함되어 있으며 브라우저에서 표준 개발 작업을 수행할 수 있도록 해 줍니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,14 +7,15 @@ topic-tags: development-tools
 content-type: reference
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 3%
+source-wordcount: '2118'
+ht-degree: 1%
 
 ---
 
-# CRXDE Lite를 사용한 개발{#developing-with-crxde-lite}
+# CRXDE Lite을 사용한 개발{#developing-with-crxde-lite}
 
 이 섹션에서는 CRXDE Lite을 사용하여 Adobe Experience Manager(AEM) 애플리케이션을 개발하는 방법에 대해 설명합니다.
 
@@ -38,7 +39,7 @@ AEM 서버에 직접 액세스할 수 없는 경우 CRXDE Lite을 사용하는 �
 CRXDE Lite을 시작하려면 다음과 같이 진행합니다.
 
 1. AEM을 설치합니다.
-1. 브라우저에 을 입력합니다. `https://<host>:<port>/crx/de`.  이는 기본적으로 `https://localhost:4502/crx/de`입니다.
+1. 브라우저에 을 입력합니다. `https://<host>:<port>/crx/de`. 기본적으로 입니다. `https://localhost:4502/crx/de`.
 1. 다음을 입력하십시오. **사용자 이름** 및 **암호**. 기본적으로 입니다. `admin` 및 `admin`.
 
 1. **확인**&#x200B;을 클릭합니다.
@@ -77,7 +78,7 @@ CRXDE Lite은 다음 기능을 제공합니다.
   </tr>
   <tr>
    <td>액세스 제어 탭</td>
-   <td><p>경로, 저장소 수준 또는 사용자에 따라 권한을 표시합니다.</p> <p>권한은 다음과 같이 분류됩니다</p> <p>- <strong>적용 가능한 액세스 제어 정책</strong>: 선택에 적용할 수 있는 정책입니다.</p> <p>- <strong>로컬 액세스 제어 정책</strong>: 선택 항목에 로컬로 적용된 정책입니다.</p> <p>- <strong>유효 액세스 제어 정책</strong>: 선택에 적용되는 정책은 로컬로 설정되거나 상위 노드에서 상속될 수 있습니다.</p> <p>메모. 액세스 제어 정보를 전혀 보려면 CRXDE Lite에 로그인한 사용자에게 ACL 항목에 대한 읽기 권한이 있어야 합니다. 익명 사용자는 기본적으로 이 정보를 볼 수 없습니다. 예를 들어, 정보를 보려면 관리자로 로그인하십시오.</p> </td>
+   <td><p>경로, 저장소 수준 또는 사용자에 따라 권한을 표시합니다.</p> <p>권한은 다음과 같이 분류됩니다</p> <p>- <strong>적용 가능한 액세스 제어 정책</strong>: 선택에 적용할 수 있는 정책입니다.</p> <p>- <strong>로컬 액세스 제어 정책</strong>: 선택 항목에 로컬로 적용된 정책입니다.</p> <p>- <strong>유효 액세스 제어 정책</strong>: 선택에 적용되는 정책은 로컬로 설정되거나 상위 노드에서 상속될 수 있습니다.</p> <p>참고. 액세스 제어 정보를 전혀 보려면 CRXDE Lite에 로그인한 사용자에게 ACL 항목에 대한 읽기 권한이 있어야 합니다. 익명 사용자는 기본적으로 이 정보를 볼 수 없습니다. 예를 들어, 정보를 보려면 관리자로 로그인하십시오.</p> </td>
   </tr>
   <tr>
    <td>복제 탭</td>
@@ -158,7 +159,7 @@ CRXDE Lite으로 템플릿을 만들려면 다음 작업을 수행하십시오.
 
 1. 다음을 입력합니다. **레이블**, **제목**, **설명**, **리소스 유형**, 및 **순위** 템플릿의 일부입니다. **다음**&#x200B;을 클릭합니다.
 
-1. 이 단계는 선택 사항입니다. **허용된 경로**. **다음**&#x200B;을 클릭합니다
+1. 이 단계는 선택 사항입니다. **허용된 경로**. 클릭 **다음**
 
 1. 이 단계는 선택 사항입니다. **허용된 상위**. **다음**&#x200B;을 클릭합니다.
 
@@ -241,7 +242,7 @@ CRXDE Lite을 사용하여 속성을 만들려면 다음 작업을 수행하십�
 
 1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 새 속성을 추가할 노드를 선택합니다.
-1. 다음에서 **속성** 아래 창에서 탭을 입력하고 **이름**, **유형**&#x200B;및 **값**. **추가**&#x200B;를 클릭합니다.
+1. 다음에서 **속성** 아래 창에서 탭을 입력하고 **이름**, **유형**&#x200B;및 **값**. 클릭 **추가**.
 
 1. 클릭 **모두 저장** 변경 사항을 서버에 저장합니다.
 

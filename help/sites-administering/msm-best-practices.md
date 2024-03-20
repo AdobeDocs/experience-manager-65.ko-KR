@@ -4,10 +4,11 @@ description: AEM Multi Site Manager를 시작하고 실행하는 데 도움이 �
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 40%
+source-wordcount: '1599'
+ht-degree: 35%
 
 ---
 
@@ -37,7 +38,7 @@ MSM은 콘텐츠 배포 자동화를 위한 구성 가능 프레임워크입니�
 >다음을 사용할 수도 있습니다 [참조 구성 요소](/help/sites-authoring/default-components-foundation.md#reference) 한 페이지나 단락을 재사용합니다. 그러나 다음 사항에 유의하십시오.
 >
 >* MSM은 보다 유연하고 동기화된 콘텐츠 및 시기를 세부적으로 제어할 수 있습니다.
->* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 이제 foundation 구성 요소보다 권장됩니다.
+>* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 는 이제 foundation 구성 요소보다 권장됩니다.
 >
 
 ## Live Copy 소스 및 블루프린트 구성 {#live-copy-sources-and-blueprint-configurations}
@@ -136,7 +137,7 @@ MSM은 두 가지 방법으로 다국어 웹 사이트 생성을 지원할 수 �
 >
 >이 옵션은 [롤아웃 트리거 시](/help/sites-administering/msm-sync.md#rollout-triggers).
 
-* 사용자 정의 롤아웃 구성을 만듭니다:
+* 사용자 정의 롤아웃 구성 만들기:
 
    * 이 새 구성은 다음 작업을 포함해야 합니다.
 
@@ -144,7 +145,7 @@ MSM은 두 가지 방법으로 다국어 웹 사이트 생성을 지원할 수 �
 
      이 구성에 다른 작업을 추가하지 마십시오.
 
-* 새 구성을 배치합니다:
+* 새 구성을 배치합니다.
 
    * 각 페이지를 라이브 카피의 이전 위치에서 삭제하면서 페이지 이동을 완전히 롤아웃하려면 다음 작업을 수행하십시오.
 
@@ -171,7 +172,7 @@ MSM 롤아웃 구성은 맞춤화가 매우 용이합니다. 롤아웃을 자동
 
 [롤아웃 트리거](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify`를 사용할 때에는 다음을 참고하십시오.
 
-* `onModify` 트리거를 사용하여 롤아웃을 자동화하면 모든 페이지 수정 시 롤아웃이 트리거되므로 작성 성능에 부정적인 영향을 미칠 수 있습니다.**
+* 다음을 사용하여 롤아웃 자동화 `onModify` 트리거는 이후에 롤아웃을 트리거하므로 작성 성능에 부정적인 영향을 줄 수 있습니다 *매* 페이지 수정.
 
 * 롤아웃 결과는 예상과 다를 수 있습니다. 그 이유는 다음과 같습니다.
 

@@ -6,10 +6,11 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 7%
+source-wordcount: '1978'
+ht-degree: 3%
 
 ---
 
@@ -93,7 +94,7 @@ ht-degree: 7%
 | [!UICONTROL 날짜] | 필드 레이블, <br> 속성에 매핑, <br> 기본값 |
 | [!UICONTROL 표준 태그] | 필드 레이블, <br> 속성에 매핑, <br> 기본값, <br> 설명 |
 
-1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다. 메타데이터 프로필이 의 프로필 목록에 추가됩니다 **[!UICONTROL 메타데이터 프로필]** 페이지를 가리키도록 업데이트하는 중입니다.<br>
+1. 클릭 **[!UICONTROL 완료]**. 메타데이터 프로필이 의 프로필 목록에 추가됩니다 **[!UICONTROL 메타데이터 프로필]** 페이지를 가리키도록 업데이트하는 중입니다.<br>
 
    ![메타데이터 프로필 페이지에 추가된 메타데이터 프로필](assets/MetadataProfiles-page.png)
 
@@ -138,7 +139,7 @@ To apply a metadata profile globally, follow these steps:
 
 ## 폴더에 대한 메타데이터 스키마 {#folder-metadata-schema}
 
-[!DNL Adobe Experience Manager Assets]을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 생성할 수 있습니다. 
+[!DNL Adobe Experience Manager Assets] 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 생성할 수 있습니다.
 
 ### 폴더 메타데이터 스키마 양식 추가 {#add-a-folder-metadata-schema-form}
 
@@ -190,8 +191,8 @@ To apply a metadata profile globally, follow these steps:
 | [!UICONTROL 숫자] | 숫자 구성 요소를 추가합니다. |
 | [!UICONTROL 날짜] | 날짜 구성 요소를 추가합니다. |
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
-| [!UICONTROL 표준 태그] | 태그 추가. |
-| [!UICONTROL 숨김 필드] | 숨겨진 필드를 추가합니다. 에셋이 저장될 때 POST 매개 변수로 전송됩니다. |
+| [!UICONTROL 표준 태그] | 태그를 추가합니다. |
+| [!UICONTROL 숨겨진 필드] | 숨겨진 필드를 추가합니다. 에셋이 저장될 때 POST 매개 변수로 전송됩니다. |
 
 #### 양식 항목 편집 {#editing-form-items}
 

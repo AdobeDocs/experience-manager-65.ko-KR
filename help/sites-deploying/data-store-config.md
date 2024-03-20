@@ -6,10 +6,11 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3549'
-ht-degree: 2%
+source-wordcount: '3476'
+ht-degree: 0%
 
 ---
 
@@ -174,7 +175,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
    * `jcr_root/libs/system/config`
 
-   끝
+   대상
 
    * `<aem-install>/crx-quickstart/install`
 
@@ -236,24 +237,24 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 | --- | --- | --- | --- |
 | accessKey | 버킷에 액세스할 수 있는 IAM 사용자의 액세스 키 ID입니다. | | 예. IAM 역할을 사용하지 않을 때 사용합니다. |
 | 비밀 키 | 버킷에 액세스할 수 있는 IAM 사용자의 보안 액세스 키입니다. | | 예. IAM 역할을 사용하지 않을 때 사용합니다. |
-| cacheSize | 로컬 캐시의 크기(바이트)입니다. | 64GB | 아니요. |
-| 연결 시간 제한 | 처음 연결을 설정할 때 시간 초과되기 전까지 대기할 시간(밀리초)을 설정합니다. | 10000 | 아니요. |
-| maxCachedBinarySize | 크기가 이 값보다 작거나 같은 바이너리(바이트)는 메모리 캐시에 저장됩니다. | 17408(17KB) | 아니요. |
-| maxConnection | 허용되는 최대 열린 HTTP 연결 수를 설정합니다. | 50 | 아니요. |
-| maxErrorRetry | 실패한(재시도 가능) 요청의 최대 재시도 횟수를 설정하십시오. | 3 | 아니요. |
-| minRecordLength | 데이터 저장소에 저장해야 하는 개체의 최소 크기(바이트)입니다. | 16384 | 아니요. |
-| path | AEM 데이터 저장소의 로컬 경로입니다. | `crx-quickstart/repository/datastore` | 아니요. |
-| proxyHost | 클라이언트가 연결하는 선택적 프록시 호스트를 설정합니다. | | 아니요. |
-| proxyPort | 클라이언트가 연결하는 선택적 프록시 포트를 설정합니다. | | 아니요. |
+| cacheSize | 로컬 캐시의 크기(바이트)입니다. | 64GB | 아니. |
+| 연결 시간 제한 | 처음 연결을 설정할 때 시간 초과되기 전까지 대기할 시간(밀리초)을 설정합니다. | 10000 | 아니. |
+| maxCachedBinarySize | 크기가 이 값보다 작거나 같은 바이너리(바이트)는 메모리 캐시에 저장됩니다. | 17408(17KB) | 아니. |
+| maxConnection | 허용되는 최대 열린 HTTP 연결 수를 설정합니다. | 50 | 아니. |
+| maxErrorRetry | 실패한(재시도 가능) 요청의 최대 재시도 횟수를 설정하십시오. | 3 | 아니. |
+| minRecordLength | 데이터 저장소에 저장해야 하는 개체의 최소 크기(바이트)입니다. | 16384 | 아니. |
+| 경로 | AEM 데이터 저장소의 로컬 경로입니다. | `crx-quickstart/repository/datastore` | 아니. |
+| proxyHost | 클라이언트가 연결하는 선택적 프록시 호스트를 설정합니다. | | 아니. |
+| proxyPort | 클라이언트가 연결하는 선택적 프록시 포트를 설정합니다. | | 아니. |
 | s3Bucket | S3 버킷의 이름입니다. | | 예 |
-| s3EndPoint | S3 REST API 엔드포인트. | | 아니요. |
-| s3Region | 버켓이 있는 지역. 이 항목 보기 [페이지](https://docs.aws.amazon.com/general/latest/gr/s3.html) 을 참조하십시오. | AWS 인스턴스가 실행 중인 지역입니다. | 아니요. |
-| socketTime | 연결 시간이 초과되어 닫히기 전에 설정된 열려 있는 연결을 통해 데이터를 전송할 때까지 대기할 시간(밀리초)을 설정합니다. | 50000 | 아니요. |
-| stagingPurgeInterval | 스테이징 캐시에서 완료된 업로드를 지우는 간격(초)입니다. | 300 | 아니요. |
-| stagingRetryInterval | 실패한 업로드를 다시 시도할 간격(초)입니다. | 600 | 아니요. |
-| stagingSplitPercentage | 백분율 `cacheSize` 비동기 업로드를 스테이징하는 데 사용됩니다. | 10 | 아니요. |
-| uploadThread | 비동기 업로드에 사용되는 업로드 스레드 수입니다. | 10 | 아니요. |
-| writeThread | S3 전송 관리자를 통한 쓰기에 사용되는 동시 스레드 수입니다. | 10 | 아니요. |
+| s3Endpoint | S3 REST API 엔드포인트. | | 아니. |
+| s3Region | 버켓이 있는 지역. 이 항목 보기 [페이지](https://docs.aws.amazon.com/general/latest/gr/s3.html) 을 참조하십시오. | AWS 인스턴스가 실행 중인 지역입니다. | 아니. |
+| socketTime | 연결 시간이 초과되어 닫히기 전에 설정된 열려 있는 연결을 통해 데이터를 전송할 때까지 대기할 시간(밀리초)을 설정합니다. | 50000 | 아니. |
+| stagingPurgeInterval | 스테이징 캐시에서 완료된 업로드를 지우는 간격(초)입니다. | 300 | 아니. |
+| stagingRetryInterval | 실패한 업로드를 다시 시도할 간격(초)입니다. | 600 | 아니. |
+| stagingSplitPercentage | 백분율 `cacheSize` 비동기 업로드를 스테이징하는 데 사용됩니다. | 10 | 아니. |
+| uploadThread | 비동기 업로드에 사용되는 업로드 스레드 수입니다. | 10 | 아니. |
+| writeThread | S3 전송 관리자를 통한 쓰기에 사용되는 동시 스레드 수입니다. | 10 | 아니. |
 
 <!---
 ### Bucket region options {#bucket-region-options}

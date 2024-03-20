@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 2%
@@ -57,7 +58,7 @@ Acrobat Reader DC 확장 인증서의 &quot;친숙한&quot; 이름은 다음 예
   <tr>
    <td><p>P1</p></td>
    <td><p>SAP 운영</p></td>
-   <td><p>Max</p></td>
+   <td><p>최대</p></td>
    <td><p>프로덕션</p></td>
   </tr>
   <tr>
@@ -69,7 +70,7 @@ Acrobat Reader DC 확장 인증서의 &quot;친숙한&quot; 이름은 다음 예
   <tr>
    <td><p>P3</p></td>
    <td><p>Acrobat Reader DC 확장, 프로덕션</p></td>
-   <td><p>Max</p></td>
+   <td><p>최대</p></td>
    <td><p>프로덕션</p></td>
   </tr>
   <tr>
@@ -93,49 +94,49 @@ Acrobat Reader DC 확장 인증서의 &quot;친숙한&quot; 이름은 다음 예
   <tr>
    <td><p>P8</p></td>
    <td><p>Forms, 프로덕션</p></td>
-   <td><p>Max</p></td>
+   <td><p>최대</p></td>
    <td><p>프로덕션</p></td>
   </tr>
   <tr>
    <td><p>P9</p></td>
    <td><p>Adobe Acrobat 7.x, 프로덕션</p></td>
-   <td><p>Max</p></td>
+   <td><p>최대</p></td>
    <td><p>프로덕션</p></td>
   </tr>
   <tr>
    <td><p>I10</p></td>
    <td><p>Forms, OEM에서 사용 가능</p></td>
-   <td><p>Max</p></td>
+   <td><p>최대</p></td>
    <td><p>제작 및 평가</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
    <td><p>Forms, OEM에서 사용 가능</p></td>
-   <td><p>Max</p></td>
+   <td><p>최대</p></td>
    <td><p>제작 및 평가</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
    <td><p>서명만 가능, OEM에서 사용 가능</p></td>
-   <td><p>Max</p></td>
+   <td><p>최대</p></td>
    <td><p>제작 및 평가</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
    <td><p>오프라인 댓글 달기 전용, OEM에서 사용 가능</p></td>
-   <td><p>Max</p></td>
+   <td><p>최대</p></td>
    <td><p>제작 및 평가</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
    <td><p>댓글 달기 전용, OEM에서 사용 가능</p></td>
-   <td><p>Max</p></td>
+   <td><p>최대</p></td>
    <td><p>제작 및 평가</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
    <td><p>전체 권한, OEM에서 사용 가능</p></td>
-   <td><p>Max</p></td>
+   <td><p>최대</p></td>
    <td><p>제작 및 평가</p></td>
   </tr>
  </tbody>

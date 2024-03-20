@@ -8,10 +8,11 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 5%
+source-wordcount: '507'
+ht-degree: 2%
 
 ---
 
@@ -106,7 +107,7 @@ https://localhost:4503/에 대한 요청 앞에 를 붙이는 매핑을 만들�
    * **이름** `localhost_any`
 
 1. **모두 저장**&#x200B;을 클릭합니다.
-1. **이 노드에 다음 속성을 추가합니다.**
+1. **추가** 이 노드에 대한 다음 속성:
 
    * **이름** `sling:match`
 

@@ -3,7 +3,8 @@ title: 외부 사용자 초대 핸들러 만들기
 description: 외부 사용자 초대 핸들러를 만드는 방법을 알아봅니다. 이를 통해 Rights Management 서비스는 외부 사용자를 Rights Management 사용자로 초대할 수 있습니다.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%

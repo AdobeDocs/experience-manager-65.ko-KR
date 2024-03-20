@@ -6,9 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ AEM Forms 디지털 서명은 HSM에 저장된 자격 증명을 사용하여 서
 1. 관리 콘솔에서 설정 > Trust Store Management > HSM 자격 증명 을 클릭한 다음 추가 를 클릭합니다.
 1. 프로파일 이름 상자에 별칭을 식별하는 데 사용되는 문자열을 입력합니다. 이 값은 서명 필드 작업과 같은 일부 디지털 서명 작업에 속성으로 사용됩니다.
 1. PKCS11 Library 상자에 서버에 있는 HSM 클라이언트 라이브러리의 정규화된 경로를 입력합니다. 예, `c:\Program Files\LunaSA\cryptoki.dll`. 클러스터된 환경에서 이 경로는 클러스터의 모든 서버에 대해 동일해야 합니다.
-1. HSM 연결 테스트 를 클릭합니다. AEM Forms에서 HSM 장치에 연결할 수 있는 경우 HSM을 사용할 수 있다는 메시지가 표시됩니다. 다음을 클릭합니다.
+1. HSM 연결 테스트 를 클릭합니다. AEM Forms에서 HSM 장치에 연결할 수 있는 경우 HSM을 사용할 수 있다는 메시지가 표시됩니다. 다음 을 클릭합니다.
 1. 토큰 이름, 슬롯 ID 또는 슬롯 목록 인덱스를 사용하여 HSM에서 자격 증명이 저장되는 위치를 식별합니다.
 
    * **토큰 이름:** 사용할 HSM 파티션 이름(예: HSMPART1)에 해당합니다.
@@ -45,7 +46,7 @@ AEM Forms 디지털 서명은 HSM에 저장된 자격 증명을 사용하여 서
 1. 관리 콘솔에서 설정 > Trust Store Management > HSM 자격 증명 을 클릭한 다음 추가 를 클릭합니다.
 1. 프로파일 이름 상자에 별칭을 식별하는 데 사용되는 문자열을 입력합니다. 이 값은 서명 필드 작업과 같은 일부 디지털 서명 작업에 속성으로 사용됩니다.
 1. PKCS11 Library 상자에 서버에 있는 HSM 클라이언트 라이브러리의 정규화된 경로를 입력합니다. 예, `c:\Program Files\LunaSA\cryptoki.dll`. 클러스터된 환경에서 이 경로는 클러스터의 모든 서버에 대해 동일해야 합니다.
-1. 오프라인 프로필 만들기 확인란을 선택합니다. 다음을 클릭합니다.
+1. 오프라인 프로필 만들기 확인란을 선택합니다. 다음 을 클릭합니다.
 1. HSM 장치 목록에서 자격 증명이 저장된 HSM 장치의 제조업체를 선택합니다.
 1. Slot Type 목록에서 Slot Id, Slot Index 또는 Token Name 을 선택하고 Slot Info 상자에 값을 지정합니다. AEM forms는 이러한 설정을 사용하여 HSM에서 자격 증명이 저장되는 위치를 결정합니다.
 

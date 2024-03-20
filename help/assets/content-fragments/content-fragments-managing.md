@@ -4,10 +4,11 @@ description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되�
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 89%
+source-wordcount: '1712'
+ht-degree: 87%
 
 ---
 
@@ -134,7 +135,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
 >[!CAUTION]
 >
->콘텐츠 조각을 편집하려면 적절한 권한이 있어야 합니다. 문제가 발생하는 경우, 시스템 관리자에게 문의하십시오.
+>컨텐츠 조각을 편집하려면 적절한 권한이 필요합니다. 문제가 발생하는 경우, 시스템 관리자에게 문의하십시오.
 
 1. **자산** 콘솔을 사용하여 컨텐츠 조각의 위치로 이동합니다.
 1. 다음 방법 중 하나를 사용하여 편집할 조각을 엽니다.
@@ -299,16 +300,16 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
-댓글은
+>댓글은
 >
-* 모든 자산에 대한 표준 기능입니다.
-* 타임라인에서 만들어집니다.
-* 조각 자산과 관련되어 있습니다.
+>* 모든 자산에 대한 표준 기능입니다.
+>* 타임라인에서 만들어집니다.
+>* 조각 자산과 관련되어 있습니다.
 >
-주석(콘텐츠 조각)은
+>주석(콘텐츠 조각)은
 >
-* 조각 편집기에서 입력됩니다.
-* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
+>* 조각 편집기에서 입력됩니다.
+>* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
 >
 
 예:
@@ -339,7 +340,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
-조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
+>조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
 
 ![비교](assets/cfm-managing-06.png)
 
@@ -357,9 +358,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!CAUTION]
 >
-조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
+>조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
 >
-모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+>모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
 게시 환경에서 사용하려면 콘텐츠 조각을 게시해야 합니다. 게시할 수 있는 시점:
 
@@ -369,7 +370,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!CAUTION]
 >
-조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
+>조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
 
 ## 조각 삭제 {#deleting-a-fragment}
 
@@ -380,11 +381,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!NOTE]
    >
-   **삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
+   >**삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
 
 3. 도구 모음에서 **삭제**&#x200B;를 선택합니다.
 4. **삭제** 작업을 확인합니다.
 
    >[!CAUTION]
    >
-   조각이 페이지에서 이미 참조되어 있다면 경고 메시지가 표시되고 **강제 삭제**&#x200B;로 진행하겠다고 확인해야 합니다. 해당 컨텐츠 조각 구성 요소와 함께 조각이 모든 컨텐츠 페이지에서 삭제됩니다.
+   >조각이 페이지에서 이미 참조되어 있다면 경고 메시지가 표시되고 **강제 삭제**&#x200B;로 진행하겠다고 확인해야 합니다. 해당 컨텐츠 조각 구성 요소와 함께 조각이 모든 컨텐츠 페이지에서 삭제됩니다.

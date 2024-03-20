@@ -4,10 +4,11 @@ description: 구성 브라우저에서 특정 콘텐츠 조각 기능을 활성�
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 45%
+ht-degree: 49%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 45%
 >
 >**콘텐츠 조각 모델**&#x200B;을 활성화하지 않는 경우
 >
->* 다음 **만들기** 모델을 만드는 데 옵션을 사용할 수 없습니다.
+>* 모델을 만들 때 **만들기** 옵션을 사용할 수 없습니다.
 >* 다음을 수행할 수 없음 [사이트 구성을 선택하여 관련 끝점을 생성합니다.](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
 콘텐츠 조각 기능을 활성화하려면 다음 작업을 수행해야 합니다.

@@ -2,9 +2,10 @@
 title: AEM에서 사용자 인터페이스 선택
 description: Adobe Experience Manager 6.5에서 작동하는 데 사용하는 인터페이스를 구성합니다.
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '738'
 ht-degree: 1%
 
 ---

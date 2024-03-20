@@ -8,9 +8,10 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: cfa822c8-f9a9-4122-9eac-0293d525f6b5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 0%
 
 어떤 이유로 복제(비역방향 복제)가 실패했습니다.
 
-## 해결 {#resolution}
+## 해결 방법 {#resolution}
 
 복제가 실패하는 이유는 다양합니다. 이 문서에서는 이러한 문제를 분석할 때 취할 수 있는 접근 방식에 대해 설명합니다.
 

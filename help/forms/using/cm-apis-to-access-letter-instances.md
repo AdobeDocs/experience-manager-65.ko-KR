@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '591'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,8 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->LetterInstanceService는 OSGI 서비스이며 Java™ Class의 @Reference 또는 sling.getService(LetterInstanceService)를 사용하여 인스턴스를 검색할 수 있습니다. JSP의 클래스 )
+>LetterInstanceService는 OSGI 서비스이며 Java로 JavaScript를 사용하여 인스턴스를 @Reference 수 있습니다™
+>클래스 또는 sling.getService(LetterInstanceService) JSP의 클래스 )
 
 ### getAllLetterInstances 사용 {#using-nbsp-getallletterinstances}
 
@@ -119,7 +121,7 @@ LetterInstanceVO letterInstance = letterInstanceService.getLetterInstance(letter
 
 **구문**: `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
 
-| **매개변수** | **설명** |
+| **매개 변수** | **설명** |
 |---|---|
 | 편지 인스턴스 이름 | 존재하는지 확인할 편지 인스턴스의 이름입니다. |
 
@@ -145,7 +147,7 @@ CCR UI는 문자를 다시 로드하는 데 사용할 수 있는 cmLetterInstanc
 
 >[!NOTE]
 >
-제출된 데이터에는 다시 로드되는 서신에 대한 모든 세부 사항이 이미 포함되어 있으므로 서신을 다시 로드할 때 cmLetterId 또는 cmLetterName/State/Version을 지정하지 않아도 됩니다. RandomNo는 브라우저 캐시 문제를 방지하기 위해 사용되며 타임스탬프를 임의의 숫자로 사용할 수 있습니다.
+>제출된 데이터에는 다시 로드되는 서신에 대한 모든 세부 사항이 이미 포함되어 있으므로 서신을 다시 로드할 때 cmLetterId 또는 cmLetterName/State/Version을 지정하지 않아도 됩니다. RandomNo는 브라우저 캐시 문제를 방지하기 위해 사용되며 타임스탬프를 임의의 숫자로 사용할 수 있습니다.
 
 ### 제출된 편지 인스턴스 열기 {#opening-submitted-letter-instance}
 

@@ -10,7 +10,8 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c30630f0cd561256414a2883d29c9ee4be470ce1
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '11187'
 ht-degree: 2%
@@ -744,7 +745,7 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 >기본 오디오 재생은 다음 브라우저에 설정된 내용에 따라 달라질 수 있습니다.
 >
 >* Chrome - 비디오에 설정된 기본 오디오가 재생됩니다.
-* Safari - Safari에 기본 언어가 설정되어 있으면 비디오의 매니페스트와 함께 사용할 수 있는 경우 설정된 기본 언어로 오디오가 재생됩니다. 그렇지 않으면 비디오 속성의 일부로 설정된 기본 오디오가 재생됩니다.
+>* Safari - Safari에 기본 언어가 설정되어 있으면 비디오의 매니페스트와 함께 사용할 수 있는 경우 설정된 기본 언어로 오디오가 재생됩니다. 그렇지 않으면 비디오 속성의 일부로 설정된 기본 오디오가 재생됩니다.
 
 **여러 오디오 트랙이 있는 비디오의 기본 오디오를 설정하려면 다음 작업을 수행하십시오.**
 
@@ -773,7 +774,7 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 
 >[!NOTE]
 >
-기본 Experience Manager 미리 보기 탭에는 여러 개의 자막 및 오디오 트랙이 표시되지 않습니다. 그 이유는 해당 트랙이 Dynamic Media과 연결되어 있으며 Dynamic Media 뷰어 미리 보기를 통해서만 볼 수 있기 때문입니다.
+>기본 Experience Manager 미리 보기 탭에는 여러 개의 자막 및 오디오 트랙이 표시되지 않습니다. 그 이유는 해당 트랙이 Dynamic Media과 연결되어 있으며 Dynamic Media 뷰어 미리 보기를 통해서만 볼 수 있기 때문입니다.
 
 **여러 자막 및 오디오 트랙이 있는 비디오를 미리 보려면 다음 작업을 수행하십시오.**
 
@@ -852,7 +853,7 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 
 >[!IMPORTANT]
 >
-Adobe은 다음을 권장합니다. [다중 자막 및 다중 오디오 추적 기능 활성화](#enable-dash) Dynamic Media 계정에서. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로를 활용할 수 있습니다.
+>Adobe은 다음을 권장합니다. [다중 자막 및 다중 오디오 추적 기능 활성화](#enable-dash) Dynamic Media 계정에서. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로를 활용할 수 있습니다.
 
 단일 비디오 또는 응용 비디오 세트에 자막 기능을 추가하여 비디오를 글로벌 시장으로 확장할 수 있습니다. 폐쇄 캡션을 추가하면 오디오를 더빙하거나 원어민을 사용하여 각 언어의 오디오를 다시 녹음할 필요가 없습니다. 이 비디오는 녹화된 언어로 재생됩니다. 외국어 자막이 등장해 다른 언어를 사용하는 사람들도 여전히 오디오 부분을 이해할 수 있다.
 
@@ -860,7 +861,7 @@ Adobe은 다음을 권장합니다. [다중 자막 및 다중 오디오 추적 �
 
 >[!NOTE]
 >
-사용하는 비디오 플레이어는 캡션 표시를 지원해야 합니다.
+>사용하는 비디오 플레이어는 캡션 표시를 지원해야 합니다.
 
 참조: [Dynamic Media의 접근성](/help/assets/accessibility-dm.md).
 
@@ -888,7 +889,7 @@ Dynamic Media은 캡션 파일을 JSON(JavaScript Object Notation) 형식으로 
 
    >[!NOTE]
    >
-   여러 언어로 비디오 자막을 전체적으로 지원하려면 WebVTT 표준을 사용하려면 지원하려는 각 언어에 대해 별도의 .vtt 파일과 호출을 만들어야 합니다.
+   >여러 언어로 비디오 자막을 전체적으로 지원하려면 WebVTT 표준을 사용하려면 지원하려는 각 언어에 대해 별도의 .vtt 파일과 호출을 만들어야 합니다.
 
    일반적으로 캡션 VTT 파일의 이름을 비디오 파일과 같은 이름으로 지정하고 언어 로케일(예: -EN, -FR 또는 -DE)과 함께 추가합니다. 이렇게 하면 기존 웹 컨텐츠 관리 시스템을 사용하여 비디오 URL의 생성을 자동화하는 데 도움이 될 수 있습니다.
 
@@ -919,7 +920,7 @@ Dynamic Media은 캡션 파일을 JSON(JavaScript Object Notation) 형식으로 
 
 >[!NOTE]
 >
-사용되는 비디오 플레이어는 챕터 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 챕터 마커를 지원하지만 서드파티 비디오 플레이어를 사용하면 지원하지 않을 수 있습니다.
+>사용되는 비디오 플레이어는 챕터 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 챕터 마커를 지원하지만 서드파티 비디오 플레이어를 사용하면 지원하지 않을 수 있습니다.
 
 원하는 경우 비디오 뷰어 사전 설정을 사용하는 대신 챕터로 사용자 지정 비디오 뷰어를 만들고 브랜드화할 수 있습니다. 챕터 탐색으로 자신만의 HTML5 뷰어를 만드는 방법에 대한 지침은 Adobe HTML5 뷰어 SDK API의 클래스 아래 &quot;수정자를 사용하여 동작 사용자 지정&quot; 제목을 참조하십시오 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber`. 다음을 참조하십시오. [HTML5 뷰어 SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) 설명서를 참조하십시오.
 

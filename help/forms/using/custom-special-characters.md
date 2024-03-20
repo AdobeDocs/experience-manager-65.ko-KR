@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 3%
+source-wordcount: '656'
+ht-degree: 1%
 
 ---
 
@@ -88,7 +89,7 @@ ht-degree: 3%
 <table>
  <tbody>
   <tr>
-   <td><strong>끝...</strong></td>
+   <td><strong>받는 사람...</strong></td>
    <td><strong>다음 단계를 완료합니다</strong></td>
   </tr>
   <tr>
@@ -96,7 +97,7 @@ ht-degree: 3%
    <td>
     <ol>
      <li>필수 속성을 가진 "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" 아래에 하위 노드를 추가합니다.</li>
-     <li>모두 저장을 클릭합니다</li>
+     <li>모두 저장 을 클릭합니다.</li>
      <li>변경 사항을 볼 수 있도록 텍스트 편집기를 새로 고칩니다.\서신 UI를 만듭니다.</li>
     </ol> </td>
   </tr>

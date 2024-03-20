@@ -9,10 +9,11 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 29%
+source-wordcount: '2068'
+ht-degree: 22%
 
 ---
 
@@ -24,7 +25,7 @@ ht-degree: 29%
 | AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
-Adobe Experience Manager Assets Brand Portal을 사용하면 Adobe Experience Manager Assets에서 승인된 브랜드 자산을 Brand Portal에 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
+Adobe Experience Manager Assets Brand Portal을 사용하면 승인된 브랜드 자산을 Adobe Experience Manager Assets에서 Brand Portal으로 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
 
 AEM Assets은 Brand Portal 테넌트의 인증을 위해 Adobe Identity Management 서비스(IMS) 계정 토큰을 조달하는 Adobe Developer 콘솔을 통해 Brand Portal으로 구성됩니다.
 
@@ -49,7 +50,7 @@ AEM Assets은 Brand Portal 테넌트의 인증을 위해 Adobe Identity Manageme
 
 제공된 정보는 이 도움말을 읽는 사람이 다음 기술을 잘 알고 있다는 가정을 기반으로 합니다.
 
-* Adobe Experience Manager 및 AEM 패키지 설치, 구성 및 관리.
+* Adobe Experience Manager 및 AEM 패키지 설치, 구성 및 관리
 
 * Linux® 및 Microsoft® Windows 운영 체제를 사용합니다.
 
@@ -59,7 +60,7 @@ Brand Portal을 사용하여 AEM Assets를 구성하려면 다음 항목이 필�
 
 * 최신 서비스 팩으로 실행 중인 AEM Assets 작성자 인스턴스
 * Brand Portal 테넌트 URL
-* Brand Portal 임차인의 IMS 조직에 대한 시스템 관리자 권한이 있는 사용자
+* Brand Portal 테넌트의 IMS 조직에 대한 시스템 관리자 권한이 있는 사용자
 
 [AEM 6.5 다운로드 및 설치](#aemquickstart)
 
@@ -77,7 +78,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 ### AEM 최신 서비스 팩 다운로드 및 설치 {#servicepack}
 
-자세한 지침은 현재 를 참조하십시오. [AEM 6.5 서비스 팩 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR).
+자세한 지침은 현재 를 참조하십시오. [AEM 6.5 서비스 팩 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html).
 
 **Adobe 고객 지원 문의** 최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우.
 
@@ -294,7 +295,7 @@ IMS 계정을 구성하려면:
 
    ![Brand Portal 구성 창](assets/create-cloud-service.png)
 
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 클라우드 구성이 만들어집니다.
+1. 클릭 **[!UICONTROL 저장 및 닫기]**. 클라우드 구성이 생성됩니다.
 
    이제 AEM Assets 작성자 인스턴스가 Brand Portal 테넌트로 구성됩니다.
 
@@ -341,9 +342,9 @@ IMS 계정을 구성하려면:
 
 이제 다음을 수행할 수 있습니다.
 
-* [AEM Assets의 자산을 Brand Portal에 게시](../assets/brand-portal-publish-assets.md)
-* [Brand Portal에서 AEM Assets으로 자산 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Brand Portal의 에셋 소싱
-* [AEM Assets의 폴더를 Brand Portal에 게시](../assets/brand-portal-publish-folder.md)
+* [AEM Assets에서 Brand Portal으로 자산 게시](../assets/brand-portal-publish-assets.md)
+* [Brand Portal에서 AEM Assets으로 자산 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR) - Brand Portal의 에셋 소싱
+* [AEM Assets에서 Brand Portal으로 폴더 게시](../assets/brand-portal-publish-folder.md)
 * [AEM Assets의 컬렉션을 Brand Portal에 게시](../assets/brand-portal-publish-collection.md)
 * [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [태그를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)

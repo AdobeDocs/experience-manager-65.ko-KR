@@ -3,9 +3,10 @@ title: 리치 텍스트 편집기를 구성하여 액세스 가능한 웹 페이
 description: 리치 텍스트 편집기를 구성하여 액세스 가능한 웹 페이지 및 사이트를 만듭니다.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---

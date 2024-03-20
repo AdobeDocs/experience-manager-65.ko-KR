@@ -7,10 +7,11 @@ content-type: reference
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3101'
-ht-degree: 1%
+source-wordcount: '3073'
+ht-degree: 0%
 
 ---
 
@@ -173,7 +174,7 @@ CRX의 액세스 권한은 다음과 같이 평가됩니다.
  <tbody>
   <tr>
    <td>추천...</td>
-   <td>원인...</td>
+   <td>이유...</td>
   </tr>
   <tr>
    <td><i>그룹 사용</i></td>

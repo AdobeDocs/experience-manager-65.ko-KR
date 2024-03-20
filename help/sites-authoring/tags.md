@@ -1,16 +1,17 @@
 ---
 title: 태그 사용
-description: 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다.
+description: 태그는 웹 사이트 내의 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: 27e5c7fea4e90873bf80f976e179b5af0088f550
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 

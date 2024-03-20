@@ -8,10 +8,11 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3033'
-ht-degree: 6%
+source-wordcount: '3048'
+ht-degree: 5%
 
 ---
 
@@ -77,7 +78,7 @@ You use **[!UICONTROL Unsharp mask]** to fine-tune a sharpening filter effect on
 | 옵션 | 설명 |
 | --- | --- |
 | 양 | 가장자리 픽셀에 적용된 대비의 양을 제어합니다. 기본값은 1.75입니다. 고해상도 이미지의 경우 최대 5까지 늘릴 수 있습니다. 양을 필터 강도를 나타내는 척도로 간주합니다. 범위는 0~5입니다. |
-| 반경 | 선명하게 하기가 적용되는 가장자리 픽셀 주위의 픽셀 수를 결정합니다. 고대비 이미지의 경우 1~2를 입력합니다. 작은 값은 가장자리 픽셀만 선명하게 하고 큰 값은 넓은 폭의 픽셀을 선명하게 합니다. 정확한 값은 이미지의 크기에 따라 다릅니다. 기본값은 0.2입니다. 범위는 0~250입니다. |
+| 반경 | 선명하게 하기가 적용되는 가장자리 픽셀 주위의 픽셀 수를 결정합니다. 고해상도 이미지의 경우 1~2를 입력합니다. 낮은 값은 가장자리 픽셀만 선명하게 하고 높은 값은 넓은 폭의 픽셀을 선명하게 합니다. 올바른 값은 이미지의 크기에 따라 다릅니다. 기본값은 0.2입니다. 범위는 0~250입니다. |
 | 임계값 | 언샵 마스크 필터가 적용될 때 무시할 수 있도록 대비 범위를 결정합니다. 즉, 이 옵션은 가장자리 픽셀로 간주하여 선명하게 되기 전에 선명해진 픽셀이 주변 영역과 얼마나 달라야 하는지 결정합니다. 소음이 발생하지 않도록 하려면 0-255 사이의 값으로 실험하십시오. |
 
 선명하게 하기는에 설명되어 있습니다. [이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf).

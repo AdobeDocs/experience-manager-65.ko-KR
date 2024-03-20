@@ -4,9 +4,10 @@ description: 클래식 UI를 사용하여 Adobe Experience Manager에서 언어 
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -45,7 +46,7 @@ ht-degree: 0%
 
    | 언어 사본 유형 | 설명 |
    |---|---|
-   | auto | 상위 페이지의 비헤이비어 사용 |
+   | 자동 | 상위 페이지의 비헤이비어 사용 |
    | 무시 | 이 페이지 및 하위 페이지의 복사본을 만들지 않습니다. |
    | `<language>+` (예: 프랑스어+) | 해당 언어에서 페이지 및 모든 하위 항목 복사 |
    | `<language>` (예: 프랑스어) | 해당 언어의 페이지만 복사합니다. |

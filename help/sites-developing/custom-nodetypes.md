@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 9%
+source-wordcount: '1848'
+ht-degree: 5%
 
 ---
 
@@ -50,7 +51,7 @@ Adobe Experience Manager(AEM)는 Sling을 기반으로 하며 JCR 저장소를 �
 * `- cq:category (string)`
 * `- cq:properties (binary)`
 
-## 설명 {#comment}
+## 댓글 {#comment}
 
 ### cq:Comment {#cq-comment}
 
@@ -982,7 +983,7 @@ Wiki 속성
    * `- wiki:isGlobal (boolean)`
    * `- * (undefined)`
 
-## 워크플로우 {#workflow}
+## 워크플로 {#workflow}
 
 ### cq:Workflow {#cq-workflow}
 

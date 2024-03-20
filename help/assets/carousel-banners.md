@@ -9,10 +9,11 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '4722'
-ht-degree: 2%
+source-wordcount: '4680'
+ht-degree: 3%
 
 ---
 
@@ -50,7 +51,7 @@ ht-degree: 2%
 
 1. [핫스팟 및 이미지 맵 변수 식별](#identifying-hotspot-and-image-map-variables) (Experience Manager Assets + Dynamic Media을 사용하는 고객만 해당)
 
-   Adobe Experience Manager Assets의 회전 배너 만들기 프로세스 중에 핫스팟과 이미지 맵 데이터를 제대로 입력할 수 있도록 기존 빠른 보기 구현에서 사용하는 동적 변수를 식별하는 것으로 시작합니다.
+   Adobe Experience Manager Assets에서 회전 배너 만들기 프로세스 중에 핫스팟과 이미지 맵 데이터를 제대로 입력할 수 있도록 기존 빠른 보기 구현에서 사용하는 동적 변수를 식별하는 것부터 시작합니다.
 
    >[!NOTE]
    >
@@ -257,11 +258,11 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 >
 >이미지에 핫스팟을 추가하는 경우 [대화형 이미지](/help/assets/interactive-images.md) 캐러셀 배너인 경우 핫스팟 정보는 동일한 메타데이터 위치에 저장됩니다. 이 위치는 대화형 이미지인지 아니면 회전 배너인지에 관계없이 이미지의 위치를 기준으로 합니다. 이 기능은 정의된 핫스팟 데이터와 함께 동일한 이미지를 두 뷰어에서 쉽게 재사용할 수 있음을 의미합니다.
 >
-그러나 회전 배너는 핫스팟을 포함할 수도 있는 이미지에 대한 이미지 맵을 지원하지만 대화형 이미지는 지원하지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려면 이 규칙을 염두에 두십시오. 동일한 이미지의 별도의 사본을 대신 사용하여 대화형 이미지 및 회전 배너를 만드는 것이 좋습니다.
+>그러나 회전 배너는 핫스팟을 포함할 수도 있는 이미지에 대한 이미지 맵을 지원하지만 대화형 이미지는 지원하지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려면 이 규칙을 염두에 두십시오. 동일한 이미지의 별도의 사본을 대신 사용하여 대화형 이미지 및 회전 배너를 만드는 것이 좋습니다.
 
 >[!NOTE]
 >
-핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르는 경우 핫스팟이 제거됩니다.
+>핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르는 경우 핫스팟이 제거됩니다.
 
 참조: [이미지 맵 추가](/help/assets/image-maps.md).
 
@@ -299,7 +300,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
       * Experience Manager Sites 고객의 경우 사이트 선택기 아이콘(폴더)을 선택하여 URL로 이동합니다.
         >[!NOTE]
         >
-        대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+        >대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 
       * 독립형 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지에 대한 전체 URL 경로를 지정합니다.
 
@@ -316,9 +317,9 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
         >[!NOTE]
         >
-        뷰어를 경험 조각에 포함할 때 회전 배너의 소셜 미디어 공유 도구가 지원되지 않습니다.
+        >뷰어를 경험 조각에 포함할 때 회전 배너의 소셜 미디어 공유 도구가 지원되지 않습니다.
         >
-        이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 만듭니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+        >이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 만듭니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -335,7 +336,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
 >[!NOTE]
 >
-관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
+>관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
 
 회전판 세트에 대해 다음과 같은 다양한 편집 작업을 수행할 수 있습니다.
 
@@ -368,7 +369,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
    >[!NOTE]
    >
-   핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르는 경우 핫스팟이 제거됩니다.
+   >핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르는 경우 핫스팟이 제거됩니다.
    >
    >
 
@@ -391,7 +392,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. **[!UICONTROL 미리보기]**&#x200B;를 선택합니다.
+1. 선택 **[!UICONTROL 미리 보기]**.
 1. 연결된 작업을 테스트할 수 있도록 이미지에서 핫스팟 또는 이미지 맵을 선택합니다.
 
 **뷰어 목록에서 회전 배너를 미리 보려면 다음을 수행하십시오.**
@@ -407,9 +408,9 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
 >[!NOTE]
 >
-회전 배너에 핫스팟이 있는 기존 대화형 이미지를 사용하는 경우 회전 배너를 게시한 후 대화형 이미지를 별도로 게시해야 합니다.
+>회전 배너에 핫스팟이 있는 기존 대화형 이미지를 사용하는 경우 회전 배너를 게시한 후 대화형 이미지를 별도로 게시해야 합니다.
 >
-또한, 캐러셀 배너에 사용 중인 기존의 게시된 대화형 이미지를 수정하는 경우, 해당 변경 사항이 캐러셀 배너에 반영되기 전에 대화형 이미지를 게시해야 합니다.
+>또한, 캐러셀 배너에 사용 중인 기존의 게시된 대화형 이미지를 수정하는 경우, 해당 변경 사항이 캐러셀 배너에 반영되기 전에 대화형 이미지를 게시해야 합니다.
 
 다음을 참조하십시오 [Dynamic Media Assets 게시](/help/assets/publishing-dynamicmedia-assets.md) 회전 배너를 게시하는 방법에 대한 정보입니다.
 
@@ -419,7 +420,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
 >[!NOTE]
 >
-Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 회전식 배너를 페이지에 바로 추가할 수 있습니다. 다음을 참조하십시오 [페이지에 Dynamic Media 에셋 추가](/help/assets/adding-dynamic-media-assets-to-pages.md).
+>Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 회전식 배너를 페이지에 바로 추가할 수 있습니다. 다음을 참조하십시오 [페이지에 Dynamic Media 에셋 추가](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 그러나 독립형 Experience Manager 에셋 고객의 경우 이 섹션에 설명된 대로 웹 사이트 랜딩 페이지에 슬라이드 배너를 수동으로 추가할 수 있습니다.
 
@@ -433,7 +434,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 >[!NOTE]
 >
-이 단계는 독립형 Experience Manager Assets 고객인 경우에만 적용됩니다.
+>이 단계는 독립형 Experience Manager Assets 고객인 경우에만 적용됩니다.
 
 이 프로세스의 마지막 단계는 웹 사이트의 기존 빠른 보기 구현과 회전 배너를 통합하는 것입니다. 모든 Quickview 구현은 고유하며 프론트엔드 IT 직원의 지원을 포함하는 특정 접근 방식이 필요합니다.
 

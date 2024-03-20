@@ -7,10 +7,11 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
-source-git-commit: 56632bd6ce9fc90f0bc61f903f84f7ea8bbcd12d
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3288'
-ht-degree: 10%
+source-wordcount: '3284'
+ht-degree: 9%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 10%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 의 다중 사이트 관리자(MSM) 기능 [!DNL Adobe Experience Manager] 한 번 작성되어 여러 웹 위치에서 재사용되는 콘텐츠를 다시 사용할 수 있습니다. 디지털 에셋에 대해서도 MSM과 동일한 기능을 사용할 수 있습니다. [!DNL Assets] 기능. 에 MSM 사용 [!DNL Assets], 다음 작업을 수행할 수 있습니다.
@@ -161,7 +162,7 @@ MSM은 소스 에셋과 해당 라이브 카피 간에 라이브 관계를 유�
 * 특정 라이브 카피에 대해 관계를 일시 중단하거나 롤아웃 구성을 변경합니다.
 * 라이브 카피 개요 콘솔에 액세스합니다.
 
-소스 에셋 또는 폴더를 선택하고 왼쪽 레일을 연 다음 **[!UICONTROL 참조]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.
+소스 에셋 또는 폴더를 선택하고 왼쪽 레일을 연 다음 **[!UICONTROL 참조]**. 또는 에셋 또는 폴더를 선택하고 키보드 단축키를 사용합니다 `Alt + 4`.
 
 ![선택한 소스에 대해 참조 레일에서 사용할 수 있는 작업 및 정보](assets/referencerail_source.png)
 
@@ -181,7 +182,7 @@ MSM은 소스 에셋과 해당 라이브 카피 간에 라이브 관계를 유�
 * 에서 특정 라이브 카피 열기 또는 표시 [!DNL Experience Manager] 사용자 인터페이스.
 * 업데이트 롤아웃
 
-Select a live copy asset or folder, open the left rail, and click **[!UICONTROL References]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.
+Select a live copy asset or folder, open the left rail, and click **[!UICONTROL References]**. 또는 에셋 또는 폴더를 선택하고 키보드 단축키를 사용합니다 `Alt + 4`.
 
 ![Actions available in the References rail for the selected live copy](assets/referencerail_livecopy.png)
 
@@ -282,7 +283,7 @@ However, you have the flexibility to make local modifications to a live copy to 
 
 1. 소스 폴더를 선택합니다. 클릭 **[!UICONTROL 속성]** 을 클릭합니다. 또는 키보드 단축키를 사용합니다 `p`.
 1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**.
-1. In this dashboard, select a live copy asset from a live copy folder. Click the desired actions from the toolbar. The actions available are **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]**, and **[!UICONTROL Detach]**. 선택한 소스 폴더와 라이브 관계에 있는 모든 라이브 카피 폴더의 에셋에 대해 이러한 작업을 신속하게 시작할 수 있습니다.
+1. In this dashboard, select a live copy asset from a live copy folder. Click the desired actions from the toolbar. 사용 가능한 작업은 다음과 같습니다 **[!UICONTROL 동기화]**, **[!UICONTROL 재설정]**, **[!UICONTROL 일시 중단]**, 및 **[!UICONTROL 분리]**. 선택한 소스 폴더와 라이브 관계에 있는 모든 라이브 카피 폴더의 에셋에 대해 이러한 작업을 신속하게 시작할 수 있습니다.
 
    ![라이브 카피 개요 콘솔에서 라이브 카피 폴더의 많은 에셋을 쉽게 업데이트할 수 있습니다](assets/livecopyconsole_update_many_assets.png)
 
@@ -311,7 +312,7 @@ However, you have the flexibility to make local modifications to a live copy to 
 * 페이지 속성(터치 사용 UI)에 대한 MSM 잠금 구성은 MSM에서 지원되지 않습니다. [!DNL Assets].
 * MSM용 [!DNL Assets], 다음만 사용 **[!UICONTROL 표준 롤아웃 구성]**. 다른 롤아웃 구성은 다음에 대한 MSM에 사용할 수 없습니다. [!DNL Assets].
 
-## 우수 사례 {#best-practices}
+## 모범 사례 {#best-practices}
 
 MSM에 대한 몇 가지 우수 사례는 다음과 같습니다.
 

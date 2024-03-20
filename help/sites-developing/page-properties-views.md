@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 43%
@@ -68,14 +69,14 @@ ht-degree: 43%
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   하지만, 당신은 ***필수*** 의 아무 것도 변경하지 마십시오. `/libs` 경로.
+   >하지만, 당신은 ***필수*** 의 아무 것도 변경하지 마십시오. `/libs` 경로.
    >
-   이는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수도 있음).
+   >이는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수도 있음).
    >
-   구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
+   >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
    >
-   1. 필요한 항목 다시 만들기(존재하는 그대로) `/libs`) `/apps`
-   1. 다음 범위 내에서 변경 `/apps`
+   >1. 필요한 항목 다시 만들기(존재하는 그대로) `/libs`) `/apps`
+   >1. 다음 범위 내에서 변경 `/apps`
 
 1. `basic`의 `path` 속성이 기본 탭의 재정의를 가리키도록 설정합니다(다음 단계도 참조). 예:
 
@@ -99,7 +100,7 @@ ht-degree: 43%
 
 >[!NOTE]
 >
-라이브 카피와 함께 사용할 페이지 속성을 구성할 때에는 다음을 참조하십시오. [페이지 속성에서 MSM 잠금 구성](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) 을 참조하십시오.
+>라이브 카피와 함께 사용할 페이지 속성을 구성할 때에는 다음을 참조하십시오. [페이지 속성에서 MSM 잠금 구성](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) 을 참조하십시오.
 
 ## 페이지 속성의 샘플 구성 {#sample-configuration-of-page-properties}
 

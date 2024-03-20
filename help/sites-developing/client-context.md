@@ -8,10 +8,11 @@ content-type: reference
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3000'
-ht-degree: 1%
+source-wordcount: '2969'
+ht-degree: 0%
 
 ---
 
@@ -415,7 +416,7 @@ function getName(){
 
 의 등록 정보를 방지하려면 `PersistedSessionStore` 지속되지 않음(즉, 다음에서 제외) `sessionpersistence` cookie), 지속 세션 저장소의 비지속 속성 목록에 속성을 추가합니다.
 
-자세한 내용은 ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
+다음을 참조하십시오 ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
 
 ```
 CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) {
@@ -503,7 +504,7 @@ CQ 응용 프로그램을 만들고 geoloc 구성 요소를 추가합니다.
 
 컨텍스트 저장소 구성 요소에는 편집 대화 상자가 필요합니다. geoloc 편집 대화 상자에는 구성할 속성이 없음을 나타내는 정적 메시지가 포함되어 있습니다.
 
-1. 마우스 오른쪽 버튼으로 `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` 노드를 클릭하고 복사를 클릭합니다.
+1. 마우스 오른쪽 단추 클릭 `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` 노드를 클릭하고 복사를 클릭합니다.
 1. 마우스 오른쪽 단추 클릭 `/apps/myapp/contextstores/geoloc` 노드를 클릭하고 붙여넣기를 클릭합니다.
 1. /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items 노드 아래의 모든 하위 노드를 삭제합니다.
 

@@ -2,7 +2,8 @@
 title: 비동기 작업
 description: Adobe Experience Manager은 리소스 집약적인 일부 작업을 비동기식으로 완료하여 성능을 최적화합니다.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 84%

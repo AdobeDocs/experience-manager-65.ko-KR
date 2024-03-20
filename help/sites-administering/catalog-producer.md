@@ -6,10 +6,11 @@ topic-tags: integration
 content-type: reference
 description: 카탈로그 제작자
 exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -43,7 +44,7 @@ Adobe Experience Manager(AEM) Assets 카탈로그 제작자를 사용하면 InDe
 
    ![create_catalog](assets/create_catalog.png)
 
-1. 클릭 **저장**. 확인 대화 상자에 카탈로그가 생성되었다는 알림이 표시됩니다. 클릭 **완료** 대화 상자를 닫습니다.
+1. **저장**&#x200B;을 클릭합니다. 확인 대화 상자에 카탈로그가 생성되었다는 알림이 표시됩니다. 클릭 **완료** 대화 상자를 닫습니다.
 1. 만든 카탈로그를 열려면 **카탈로그** 페이지를 가리키도록 업데이트하는 중입니다.
 
    >[!NOTE]

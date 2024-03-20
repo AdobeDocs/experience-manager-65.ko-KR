@@ -2,9 +2,10 @@
 title: 개인화 및 콘텐츠 타겟팅
 description: Adobe Experience Manager 6.5에서 개인화된 콘텐츠를 만드는 방법을 알아봅니다.
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '526'
 ht-degree: 73%
 
 ---

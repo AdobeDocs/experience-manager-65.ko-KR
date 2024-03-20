@@ -9,7 +9,8 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 9%
@@ -80,7 +81,7 @@ ht-degree: 9%
 
 1. [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md) 또는 [비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md).
 
-   Adobe Experience Manager Assets는 스핀 세트에 대한 URL 호출을 만들고 스핀 세트를 게시한 후 이를 활성화합니다. 에셋을 미리 볼 때 이러한 URL을 복사할 수 있습니다. 또는 웹 사이트에 포함할 수 있습니다.
+   Adobe Experience Manager Assets은 스핀 세트에 대한 URL 호출을 생성하고 스핀 세트를 게시한 후 이를 활성화합니다. 에셋을 미리 볼 때 이러한 URL을 복사할 수 있습니다. 또는 웹 사이트에 포함할 수 있습니다.
 
    Select the Spin Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
 

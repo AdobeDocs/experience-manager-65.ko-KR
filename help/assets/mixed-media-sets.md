@@ -9,7 +9,8 @@ docset: aem65
 feature: Mixed Media Sets,Asset Management
 role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 15%
@@ -74,7 +75,7 @@ Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMed
 >
 >세트를 생성하는 데 문제가 있는 경우 다음을 참조하십시오. [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md).
 
-## 자산 업로드 {#uploading-assets}
+## 에셋 업로드 {#uploading-assets}
 
 Start by uploading the images and videos for your Mixed Media Sets. 사용자는 혼합 미디어 집합 뷰어에서 이미지를 확대할 수 있으므로 이미지를 신중하게 선택하십시오. Make sure that the images are least 2000 pixels in the largest dimension.
 

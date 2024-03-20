@@ -1,17 +1,18 @@
 ---
-title: AEM Content 및 Commerce 시작하기
+title: AEM Content and Commerce 시작하기
 description: AEM Content 및 Commerce 프로젝트를 배포하는 방법에 대해 알아봅니다.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 5%
+source-wordcount: '685'
+ht-degree: 3%
 
 ---
 
-# AEM Content 및 Commerce 시작하기 {#start}
+# AEM Content and Commerce 시작하기 {#start}
 
 AEM Content and Commerce를 시작하려면 AEM 6.5용 AEM Content and Commerce 추가 기능을 설치해야 합니다.
 

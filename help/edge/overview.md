@@ -2,7 +2,9 @@
 title: Edge Delivery Services 시작하기
 description: Edge Delivery Services 시작하기
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager Assets
+feature: Edge Delivery Services
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 100%
@@ -15,7 +17,7 @@ Edge Delivery Services를 사용하여 AEM은 참여 및 전환을 유도하는 
 
 Edge Delivery를 활용하여 다음과 같은 작업을 수행할 수 있습니다.
 
-* 완벽한 Lighthouse Score를 사용하여 빠른 사이트를 만들고 실제 사용자 모니터링(RUM)을 통해 사이트 실적을 지속적으로 모니터링합니다.
+* 완벽한 Lighthouse Score를 사용하여 빠른 사이트를 만들고 실제 사용자 모니터링(RUM)을 통해 사이트 성과를 지속적으로 모니터링합니다.
 * 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 콘텐츠 소스로 작업할 수 있습니다.
 * 기본 제공 실험 프레임워크를 사용하여 성능에 영향을 주지 않고도 빠르게 테스트를 작성 및 실행하고 테스트 승자 프로덕션에 대한 빠른 릴리스를 제공할 수 있습니다.
 

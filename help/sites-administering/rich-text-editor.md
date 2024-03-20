@@ -3,7 +3,8 @@ title: Adobe Experience Manager에서 컨텐츠를 작성하도록 리치 텍스
 description: Adobe Experience Manager에서 컨텐츠를 작성하도록 Adobe Experience Manager 리치 텍스트 편집기를 구성하는 방법에 대해 알아봅니다.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2887'
 ht-degree: 0%

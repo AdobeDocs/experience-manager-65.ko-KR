@@ -5,10 +5,11 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 16%
+source-wordcount: '1889'
+ht-degree: 15%
 
 ---
 
@@ -29,9 +30,9 @@ ht-degree: 16%
 
 만들기 및 번역 워크플로우를 사용하여 처음으로 특정 언어에 대한 언어 사본을 생성합니다. 워크플로는 다음과 같은 옵션을 제공합니다.
 
-* 구조만 생성.
-* 번역 프로젝트 만들기.
-* 기존 번역 프로젝트에 추가.
+* 구조만 생성합니다.
+* 번역 프로젝트를 만듭니다.
+* 기존 번역 프로젝트에 을 추가합니다.
 
 ### 구조만 생성 {#create-structure-only}
 
@@ -160,7 +161,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 1. 번역이 완료되면 상태가 검토 준비됨으로 변경됩니다. 다음 위치로 이동 [!DNL Assets] 사용자 인터페이스를 참조하고 번역된 각 에셋의 속성 페이지를 열어 번역된 메타데이터를 봅니다.
 
-## 언어 사본 업데이트 {#update-language-copies}
+## 언어 복사 업데이트 {#update-language-copies}
 
 이 워크플로우를 실행하여 추가 자산 세트를 번역하고 특정 로케일의 언어 사본에 포함합니다. 이 경우 번역된 에셋은 이전에 번역된 에셋이 이미 포함된 대상 폴더에 추가됩니다. 옵션 선택에 따라 번역 프로젝트가 생성되거나 기존 번역 프로젝트가 새 에셋에 대해 업데이트됩니다. 언어 사본 업데이트 워크플로에는 다음 옵션이 포함됩니다.
 

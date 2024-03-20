@@ -7,10 +7,11 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 68%
+source-wordcount: '1138'
+ht-degree: 67%
 
 ---
 
@@ -43,7 +44,7 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
 
 * **Creative 프로그램**
 
-   * 콘텐츠 조각과 관련된 컬렉션을 통해 Creative 자산을 추적합니다.
+   * 콘텐츠 조각과 관련된 컬렉션을 통해 크리에이티브 자산을 추적합니다.
 
 * **사본 작성자**
 

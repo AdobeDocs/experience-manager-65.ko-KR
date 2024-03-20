@@ -2,7 +2,8 @@
 title: WS-security 헤더를 사용하여 자격 증명 전달
 description: WS-security 헤더를 사용하여 자격 증명을 전달하는 방법 알아보기
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%

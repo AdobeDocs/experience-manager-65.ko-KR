@@ -8,7 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2433'
 ht-degree: 1%
@@ -147,7 +148,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 ![ACL 추가 창](assets/chlimage_1-21.png)
 
-참고 항목
+추가 참조
 
 * [액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * 문제 해결 섹션 [응답을 처리하는 동안 작업 예외 수정](#modify-operation-exception-during-response-processing).

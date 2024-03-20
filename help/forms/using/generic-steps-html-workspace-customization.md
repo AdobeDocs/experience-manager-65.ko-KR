@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 45e50b47-1b36-4937-9e1a-cc7bfb953861
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '300'
 ht-degree: 9%
 
 ---
@@ -49,7 +50,7 @@ ht-degree: 9%
    <link lang="en" rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
    ```
 
-   끝
+   대상
 
    ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="../../libs/ws/css/style.css" />
@@ -67,7 +68,7 @@ ht-degree: 9%
    <script data-main="js/main" src="js/libs/require/require.js"></script>
    ```
 
-   끝
+   대상
 
    ```jsp
    <script data-main="js/main" src="../../libs/ws/js/libs/require/require.js"></script>

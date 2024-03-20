@@ -5,7 +5,8 @@ contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 7%
@@ -82,12 +83,12 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
    <td>인쇄</td>
   </tr>
   <tr>
-   <td>Schema</td>
+   <td>스키마</td>
    <td>양식 데이터 모델 </td>
    <td>데이터 사전 </td>
   </tr>
   <tr>
-   <td>로컬라이제이션</td>
+   <td>현지화</td>
    <td>양식 데이터 모델에서 지원되지 않음</td>
    <td>데이터 사전에서 지원됨</td>
   </tr>

@@ -2,14 +2,15 @@
 title: Adobe Experience Manager(AEM) 및 웹 액세스 가능성 지침
 description: Adobe Experience Manager(AEM) 및 웹 액세스 가능성 지침 소개
 exl-id: db8785b9-09eb-444a-addc-74c520e710a9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 68%
+source-wordcount: '397'
+ht-degree: 65%
 
 ---
 
-# AEM 및 웹 접근성 지침{#aem-and-the-web-accessibility-guidelines}
+# AEM 및 웹 액세스 가능성 지침{#aem-and-the-web-accessibility-guidelines}
 
 웹 콘텐츠를 장애나 제한 사항에 관계없이 타깃 대상자가 가능한 한 쉽게 액세스할 수 있도록 설계하기 위한 많은 사회적, 경제적 및 법적 동기가 있습니다. 따라서 Adobe Experience Manager(AEM)를 통한 웹 접근성은 좋은 웹 디자인에서 점점 더 중요해지고 있습니다.
 

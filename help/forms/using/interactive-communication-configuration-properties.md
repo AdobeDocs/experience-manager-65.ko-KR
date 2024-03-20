@@ -8,7 +8,8 @@ topic-tags: interactive-communications
 docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 6%
@@ -115,7 +116,7 @@ ht-degree: 6%
 
 | 속성 | 설명 | 기본값 | 허용되는 값 |
 |---|---|---|---|
-| 자리 표시자 표시 | 적응형 양식 및 대화형 커뮤니케이션에 포함된 필드에 대한 자리 표시자 표시를 활성화하려면 확인란을 선택합니다. | 선택 항목 | 해당되지 않음 |
+| 자리 표시자 표시 | 적응형 양식 및 대화형 커뮤니케이션에 포함된 필드에 대한 자리 표시자 표시를 활성화하려면 확인란을 선택합니다. | 선택됨 | 해당되지 않음 |
 | 최대 캐시 항목 수 | 캐시 메모리를 사용하여 검색할 수 있는 적응형 양식 및 대화형 통신의 최대 수를 설정합니다. | 100 | 숫자 |
 | 파일 이름을 고유하게 지정 | 적응형 Forms 및 대화형 커뮤니케이션에 첨부 파일로 포함된 파일의 고유한 이름을 설정하려면 확인란을 선택합니다. | 선택되지 않음 | 해당되지 않음 |
 
@@ -134,7 +135,7 @@ ht-degree: 6%
   <tr> 
    <td>글꼴 목록 이름</td> 
    <td>적응형 Forms 및 대화형 커뮤니케이션을 만드는 동안 사용할 수 있는 글꼴 목록입니다.</td> 
-   <td><p>조지아</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>영향</p> <p>Palatino Linotype</p> </td> 
+   <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>영향</p> <p>Palatino Linotype</p> </td> 
    <td>유효한 모든 Adobe 서버 글꼴</td> 
   </tr> 
  </tbody> 

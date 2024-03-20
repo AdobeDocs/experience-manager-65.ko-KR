@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 9092977b-b558-42a3-8092-4615fbc0a08e
-source-git-commit: c67aaef1bbda80f355f8a6f23eac4d9e471fd510
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 54%
+source-wordcount: '553'
+ht-degree: 49%
 
 ---
 
@@ -45,7 +46,7 @@ ht-degree: 54%
 
 **행동 트레이트** - 행동 트레이트는 웹 사이트에서의 방문자 행동과 관련된 트레이트입니다. 여기에는 다음이 포함됩니다.
 
-* 웹 사이트 내의 관심 분야(예: 방문한 페이지 및 구매한 제품).
+* 웹 사이트 내 관심 분야(예: 방문한 페이지 및 구매한 제품)
 * 참조 웹 사이트에 대한 관심 분야(예: 사용한 검색어 또는 클릭한 광고)
 * 다른 사이트에 대한 관심 분야(Spyjax와 같은 도구를 사용하여 파악).
 * 방문자 충성도(방문 기간, 방문 빈도).

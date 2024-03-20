@@ -4,7 +4,8 @@ description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 �
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms, Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
-source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2884'
 ht-degree: 24%
@@ -251,7 +252,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 
    * 사용자 정의 메시지 또는 감사 메시지를 구성하려면 제출 시 옵션에서 메시지 표시 옵션을 선택하고 메시지 콘텐츠 상자에 메시지를 제공합니다. 서식 있는 텍스트 상자입니다. 전체 화면 옵션을 사용하여 사용 가능한 모든 서식 있는 텍스트 항목을 볼 수 있습니다.
 
-## 참고 항목 {#see-also}
+## 추가 참조 {#see-also}
 
 * [적응형 양식 기반의 독립 실행형 코어 구성 요소 만들기](/help/forms/using/create-an-adaptive-form-core-components.md)
 * [양식에 맞는 스타일 또는 테마 만들기](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)

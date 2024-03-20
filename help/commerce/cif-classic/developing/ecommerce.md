@@ -2,10 +2,11 @@
 title: API를 통한 eCommerce 통합 레이어
 description: 통합 프레임워크를 사용하면 제품 데이터를 AEM으로 가져오고 상거래 기능을 위한 AEM 구성 요소를 빌드할 수 있습니다.
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 7%
+source-wordcount: '144'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 7%
 자세한 내용은 다음 문서를 참조하십시오.
 
 * [개발(일반)](/help/commerce/cif-classic/developing/generic.md)
-* [SAP Commerce Cloud를 사용하여 개발](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
+* [SAP Commerce Cloud을 사용하여 개발](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
 
 >[!NOTE]
 >

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 46%
+source-wordcount: '1257'
+ht-degree: 39%
 
 ---
 
@@ -80,7 +81,7 @@ MSM 보기의 새 레이어인 레이어(모드)를 만드는 방법을 보여�
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem 작성-새 레이어 모드 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip)
@@ -95,7 +96,7 @@ GITHUB의 코드
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-authoring-extension-assetfinder-flickr 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip)
@@ -104,7 +105,7 @@ GITHUB의 코드
 
 페이지를 작성할 때 사용자는 종종 리소스(예: 페이지, 구성 요소 및 에셋)에서 선택해야 합니다. 예를 들어 작성자가 항목을 선택해야 하는 목록 형식을 취할 수 있습니다.
 
-목록을 적당한 크기로 유지하고 사용 사례와도 관련되게 하려면 필터를 사용자 정의 조건자 형태로 구현할 수 있습니다. 예를 들어 [`pathbrowser` Granite 구성 요소는 사용자가 특정 리소스에 대한 경로를 선택할 수 있도록 하는 데 사용하며, 표시된 경로는 다음과 같은 방식으로 필터링할 수 있습니다.](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)[](/help/sites-developing/touch-ui-concepts.md#granite-ui)
+목록을 적당한 크기로 유지하고 사용 사례와도 관련되게 하려면 필터를 사용자 정의 조건자 형태로 구현할 수 있습니다. 예를 들어 [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) 구성 요소를 사용하여 사용자가 특정 리소스에 대한 경로를 선택할 수 있습니다. 제공된 경로는 다음과 같은 방식으로 필터링될 수 있습니다.
 
 * [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) 상호 작용을 구현하여 사용자 정의 조건자를 구현합니다.
 * 조건자의 이름을 지정하고, `pathbrowser`를 사용할 때 해당 이름을 참조합니다.
@@ -127,7 +128,7 @@ GITHUB의 코드
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem 작성-확장 도구 모음-스크린샷 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
@@ -157,7 +158,7 @@ GITHUB의 코드
 
 1. 편집기의 추가 구성 세부 정보는 `config` 구성 및 `plugin` 필요한 플러그인 구성 세부 정보를 포함할 노드입니다.
 
-   다음은 이미지 구성 요소의 이미지 자르기 플러그인의 화면 비율을 정의한 예입니다. 제한된 화면 크기의 잠재적 때문에 자르기 종횡비는 전체 화면 편집기로 이동되었으며 해당 편집기에서만 볼 수 있습니다.
+   다음은 이미지 구성 요소의 이미지 자르기 플러그인에 대한 종횡비를 정의하는 예입니다. 제한된 화면 크기의 잠재적 때문에 자르기 종횡비는 전체 화면 편집기로 이동되었으며 해당 편집기에서만 볼 수 있습니다.
 
    ```xml
    <cq:inplaceEditing
@@ -209,7 +210,7 @@ GITHUB의 코드
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-authoring-extension-inplace-editor 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
@@ -228,7 +229,7 @@ GITHUB의 코드
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-authoring-extension-header-backtosites 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)

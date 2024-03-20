@@ -7,10 +7,11 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 72cbe589-14a1-40f5-a7cb-8960f02e0ebb
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 3%
+source-wordcount: '664'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +40,7 @@ ht-degree: 3%
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다.
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다.
 
 * [GitHub에서 aem-search-custom-predicate-evaluator 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
@@ -102,13 +103,13 @@ replic.action=Activate
 
 >[!NOTE]
 >
-Maven을 사용하는 새 Adobe Experience Manager(AEM) 프로젝트 설정은 다음 문서에서에 의해 문서화됩니다. [Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법](/help/sites-developing/ht-projects-maven.md).
+>Maven을 사용하는 새 Adobe Experience Manager(AEM) 프로젝트 설정은 다음 문서에서에 의해 문서화됩니다. [Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법](/help/sites-developing/ht-projects-maven.md).
 
 먼저 프로젝트의 Maven 종속성을 업데이트합니다. 다음 `PredicateEvaluator` 의 일부임 `cq-search` Maven pom.xml 파일에 추가해야 합니다.
 
 >[!NOTE]
 >
-의 범위 `cq-search` 종속성이 다음으로 설정됨 `provided` 이유 `cq-search` 에서 제공합니다. `OSGi` 컨테이너.
+>의 범위 `cq-search` 종속성이 다음으로 설정됨 `provided` 이유 `cq-search` 에서 제공합니다. `OSGi` 컨테이너.
 
 pom.xml
 
@@ -137,7 +138,7 @@ pom.xml
 
 >[!NOTE]
 >
-다음 절차에서는 `Xpath` 데이터를 필터링할 표현식입니다. 다른 옵션은 를 구현하는 것입니다. `includes` 행 단위로 데이터를 선택하는 메서드입니다. 다음을 참조하십시오. [Java™ 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) 추가 정보.
+>다음 절차에서는 `Xpath` 데이터를 필터링할 표현식입니다. 다른 옵션은 를 구현하는 것입니다. `includes` 행 단위로 데이터를 선택하는 메서드입니다. 다음을 참조하십시오. [Java™ 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) 추가 정보.
 
 1. 다음을 확장하는 Java™ 클래스 만들기 `com.day.cq.search.eval.AbstractPredicateEvaluator`
 1. 을(를) 사용하여 클래스에 주석 달기 `@Component` 다음과 같이
@@ -165,13 +166,13 @@ pom.xml
 
 >[!NOTE]
 >
-다음 `factory`은(는) 다음으로 시작하는 고유한 문자열이어야 합니다. `com.day.cq.search.eval.PredicateEvaluator/`사용자 정의 이름으로 끝나는 경우 `PredicateEvaluator`.
+>다음 `factory`은(는) 다음으로 시작하는 고유한 문자열이어야 합니다. `com.day.cq.search.eval.PredicateEvaluator/`사용자 정의 이름으로 끝나는 경우 `PredicateEvaluator`.
 
 >[!NOTE]
 >
-의 이름입니다. `PredicateEvaluator` 는 쿼리를 작성할 때 사용되는 술어 이름입니다.
+>의 이름입니다. `PredicateEvaluator` 는 쿼리를 작성할 때 사용되는 술어 이름입니다.
 
-1. 오버라이드:
+1. 재정의:
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)

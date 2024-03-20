@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 feature: HTML5 Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3916'
 ht-degree: 6%
@@ -568,7 +569,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td><strong>예외</strong></td>
   </tr>
   <tr>
-   <td>컬러</td>
+   <td>색상</td>
    <td>color 속성은 패턴 개체에 대한 고유한 색상을 설명합니다.</td>
    <td>
     <ul>
@@ -589,7 +590,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td><strong>예외</strong></td>
   </tr>
   <tr>
-   <td>컬러</td>
+   <td>색상</td>
    <td>색상 속성은 고유한 채우기 색상을 정의합니다.</td>
    <td>
     <ul>
@@ -610,7 +611,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td><strong>예외</strong></td>
   </tr>
   <tr>
-   <td>컬러</td>
+   <td>색상</td>
    <td>color 속성은 폼의 선형 그라디언트 채우기에 대한 고유한 색상을 설명합니다.</td>
    <td>
     <ul>
@@ -648,7 +649,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td><strong>예외</strong></td>
   </tr>
   <tr>
-   <td>컬러</td>
+   <td>색상</td>
    <td>color 속성은 패턴 개체에 대한 고유한 색상을 설명합니다. </td>
    <td>
     <ul>
@@ -669,7 +670,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td><strong>예외</strong></td>
   </tr>
   <tr>
-   <td>컬러</td>
+   <td>색상</td>
    <td>color 속성은 방사형 개체에 대한 고유한 색상을 설명합니다</td>
    <td>
     <ul>
@@ -690,7 +691,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td><strong>예외</strong></td>
   </tr>
   <tr>
-   <td>컬러</td>
+   <td>색상</td>
    <td>color 속성은 stipple 개체에 대한 고유한 색상을 설명합니다.</td>
    <td>
     <ul>
@@ -748,7 +749,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
    <td><strong>예외</strong></td>
   </tr>
   <tr>
-   <td>컬러</td>
+   <td>색상</td>
    <td>color 속성은 모서리 객체의 고유한 색상을 설명합니다.</td>
    <td>
     <ul>

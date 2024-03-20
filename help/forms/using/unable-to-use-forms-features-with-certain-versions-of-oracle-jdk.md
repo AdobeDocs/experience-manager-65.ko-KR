@@ -2,7 +2,8 @@
 title: 특정 버전의 Oracle JDK에서 Experience Manager Forms을 사용할 수 없음
 description: 특정 버전의 Oracle JDK에서 Experience Manager Forms을 사용할 수 없음
 exl-id: 6a8a7cb7-77d6-4bfc-82f3-82d0fddfc10a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 1%
@@ -22,7 +23,7 @@ ht-degree: 1%
 사용자에게 다음 예외가 발생했습니다.
 `Caused by: javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: JAXP0801002: the compiler encountered an XPath expression containing '101' operators that exceeds the '100' limit set by 'FEATURE_SECURE_PROCESSING'.`
 
-## 원인 {#reason}
+## 이유 {#reason}
 
 단, Experience Manager Forms을 다음 버전보다 크거나 같은 Oracle JDK(Java Development Kit) 버전으로 실행할 때는 예외입니다.
 

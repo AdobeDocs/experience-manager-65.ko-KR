@@ -2,7 +2,8 @@
 title: 장식 태그
 description: 웹 페이지의 구성 요소를 렌더링할 때 HTML 요소를 생성하여 자체에 렌더링된 구성 요소를 둘러쌀 수 있습니다. 개발자를 위해 AEM에서는 포함된 구성 요소를 감싸는 데코레이션 태그를 제어하는 분명하고 단순한 로직을 제공합니다.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 8%

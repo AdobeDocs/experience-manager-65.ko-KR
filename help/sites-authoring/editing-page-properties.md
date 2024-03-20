@@ -2,7 +2,8 @@
 title: 콘텐츠 페이지 속성 편집
 description: Adobe Experience Manager에서 페이지에 필요한 속성을 정의합니다.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 42%
@@ -46,7 +47,7 @@ ht-degree: 42%
 
 * **브랜딩**
 
-  각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
+  각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
 
    * **재정의** - 이 페이지의 브랜드 슬러그를 정의하려면 선택합니다.
       * 하위 페이지에 **재정의** 값이 설정되지 않은 경우 이 값이 모든 하위 페이지에 상속됩니다.

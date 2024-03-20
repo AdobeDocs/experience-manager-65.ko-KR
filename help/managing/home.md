@@ -2,7 +2,8 @@
 title: AEM 6.5 관리 사용 안내서
 description: 주요 리소스의 지원과 AEM 6.5 사용 안내서의 포괄적인 컬렉션을 통해 AEM 프로젝트를 성공적으로 관리하는 방법에 대해 알아봅니다.
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 02dd950111a45908f0a65deb9e5c28b4b119269f
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 37%

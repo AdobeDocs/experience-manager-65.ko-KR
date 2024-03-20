@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 76a8f93f-eb8a-4e68-8626-efa6dc67668f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 1%
@@ -44,7 +45,7 @@ AEM Forms 작업 영역을 통해 formset에서 지원되는 작업은 다음과
 * 초안으로 저장
 * 잠금
 * 중단
-* 전송
+* 제출
 * 첨부 파일 추가
 * 메모 추가
 * 뒤로 또는 다음 단추를 사용하여 양식 세트에서 양식 간에 이동

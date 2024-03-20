@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 2%
+source-wordcount: '340'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 2%
 1. 에서 다음 구성을 제공합니다. **[!UICONTROL 축소판]** 탭:
 
    * **[!UICONTROL 축소판]**: `140:100:false, 48:48:false, 319:319:false`
-   * **[!UICONTROL MIME 유형 건너뛰기]**: `skip:image/dng, skip:image/x-raw-(.*)`
+   * **[!UICONTROL Mime 유형 건너뛰기]**: `skip:image/dng, skip:image/x-raw-(.*)`
 
    ![chlimage_1-128](assets/chlimage_1-334.png)
 

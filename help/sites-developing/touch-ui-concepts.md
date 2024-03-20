@@ -7,9 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2147'
 ht-degree: 1%
 
 ---
@@ -75,7 +76,7 @@ AEM은 Granite 플랫폼을 기반으로 하며, Granite 플랫폼에는 특히 
 
 ## Granite {#granite}
 
-Granite는 Adobe의 오픈 웹 스택으로, 다음을 포함한 다양한 구성 요소를 제공합니다.
+Granite는 Adobe의 Open Web Stack으로, 다음을 포함한 다양한 구성 요소를 제공합니다.
 
 * 애플리케이션 런처
 * 모든 것이 배포되는 OSGi 프레임워크
@@ -209,7 +210,7 @@ Granite UI와 ExtJS(클래식 UI에 사용됨) 간의 차이점도 관심 대상
 
 이 라이브러리에는 각 Coral 요소에 대한 Granite UI 구성 요소가 포함되어 있습니다. 구성 요소는 저장소에 상주하면서 컨텐츠를 기반으로 합니다. 이를 통해 손으로 HTML 마크업을 작성하지 않고도 Granite UI 애플리케이션을 구성할 수 있다.
 
-용도:
+목적:
 
 * HTML 요소의 구성 요소 모델
 * 구성 요소 구성
@@ -260,7 +261,7 @@ Granite UI를 사용하도록 ExtJS 코드를 업그레이드할 때 다음 목�
 * 레일(스켈레톤)
 * 검색 패널
 
-용도:
+목적:
 
 * 관리 애플리케이션을 위한 통합 디자인
 * 관리 애플리케이션용 Rad
@@ -284,7 +285,7 @@ Coral UI(CUI)는 여러 제품에서 사용자 경험에 일관성을 제공하�
 >Coral UI 사용은 다음 경우에만 허용됩니다.
 >
 >
->* AEM과 함께 배송되어 번들로 제공된 경우.
+>* AEM과 함께 배송되고 번들로 제공된 경우.
 >* 작성 환경의 기존 UI를 확장할 때 사용합니다.
 >* Adobe 회사 자료, 광고 및 프레젠테이션.
 >* Adobe 브랜드 애플리케이션의 UI(글꼴을 다른 용도로 사용할 수 없음).
@@ -313,7 +314,7 @@ HTML 요소는 모든 기본 UI 요소(탐색 막대, 버튼, 메뉴, 레일 등
 
 CSS를 사용하여 실제 모양과 느낌을 제공합니다. 모양과 느낌을 쉽게 사용자 지정할 수 있도록 하기 위해(예: 브랜딩의 경우) 실제 스타일 값은 [간단히](https://lesscss.org/) 런타임 중 전처리기입니다.
 
-용도:
+목적:
 
 * 일반적인 모양과 느낌의 기본 UI 요소 제공
 * 기본 그리드 시스템 제공
@@ -380,7 +381,7 @@ CSS를 사용하여 실제 모양과 느낌을 제공합니다. 모양과 느낌
 >
 >HTML5 기본 양식 유효성 검사는 가능한 한 항상 사용하거나 확장해야 합니다.
 
-용도:
+목적:
 
 * HTML 요소에 동적 동작 제공
 * 순수 CSS로는 불가능한 사용자 정의 레이아웃 제공
@@ -434,7 +435,7 @@ $('.cards').cardlayout ();
 
 위젯은 사용자 정의 이벤트를 트리거하고 수신하여 페이지의 다른 위젯과 협력할 수 있습니다. 일부 위젯은 Coral HTML 요소를 사용하는 기본 jQuery 위젯입니다.
 
-용도:
+목적:
 
 * 복잡한 동작을 나타내는 높은 수준의 UI 요소 구현
 * 이벤트 트리거 및 처리
@@ -488,7 +489,7 @@ $(".tagManager").tagsManager({
 
 HTML 요소 플러그인 및 위젯은 유틸리티 라이브러리에서 제공하는 기능에 의존할 수 있지만 유틸리티 라이브러리는 요소 또는 위젯 자체에 대한 엄격한 종속성을 가질 수 없습니다.
 
-용도:
+목적:
 
 * 공통 기능 제공
 * 이벤트 버스 구현

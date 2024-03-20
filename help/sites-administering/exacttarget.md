@@ -7,20 +7,21 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 1%
+source-wordcount: '460'
+ht-degree: 2%
 
 ---
 
 # ExactTarget과 통합{#integrating-with-exacttarget}
 
-Adobe Experience Manager(AEM)를 정확한 Target과 통합하면 정확한 Target 방식으로 AEM에서 생성된 이메일을 관리하고 보낼 수 있습니다. 또한 AEM 페이지에서 AEM Forms를 통해 정확한 Target 의 리드 관리 기능을 사용할 수 있습니다.
+Adobe Experience Manager(AEM)를 정확한 타겟과 통합하면 정확한 타겟을 통해 AEM에서 생성된 이메일을 관리하고 전송할 수 있습니다. 또한 AEM 페이지에서 AEM Forms를 통해 Exact Target의 리드 관리 기능을 사용할 수 있습니다.
 
 통합은 다음과 같은 기능을 제공합니다.
 
-* AEM에서 이메일을 만들고 정확한 Target에 게시하여 배포하는 기능.
+* AEM에서 이메일을 만들고 배포를 위해 정확한 Target에 게시하는 기능입니다.
 * 정확한 Target 구독자를 만들기 위해 AEM 양식의 작업을 설정하는 기능입니다.
 
 ExactTarget이 구성되면 뉴스레터 또는 이메일을 ExactTarget에 게시할 수 있습니다. 다음을 참조하십시오 [이메일 서비스에 뉴스레터 게시](/help/sites-authoring/personalization.md).
@@ -31,9 +32,9 @@ ExactTarget 구성은 Cloudservices 또는 도구를 통해 추가할 수 있습
 
 ### Cloudservices를 통해 ExactTarget 구성 {#configuring-exacttarget-via-cloudservices}
 
-Cloud Services에서 ExactTarget 구성을 만들려면 다음 작업을 수행하십시오.
+Cloud Service에서 ExactTarget 구성을 만들려면 다음 작업을 수행하십시오.
 
-1. 시작 페이지에서 **Cloud Services**. (또는 다음 위치에 직접 액세스: `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. 시작 페이지에서 **Cloud Service**. (또는 다음 위치에 직접 액세스: `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. 클릭 **정확한 타겟** 그런 다음 **구성**. ExactTarget 구성 창이 열립니다.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
@@ -62,7 +63,7 @@ Cloud Services에서 ExactTarget 구성을 만들려면 다음 작업을 수행�
 도구에서 ExactTarget 구성을 만들려면 다음 작업을 수행하십시오.
 
 1. 시작 페이지에서 **도구**. 또는 다음 위치로 직접 이동하여 탐색합니다. `https://<hostname>:<port>/misadmin#/etc`.
-1. 선택 **도구**, 그런 다음 **Cloud Services 구성,** 그러면 **정확한 타겟**.
+1. 선택 **도구**, 그런 다음 **Cloud Service 구성,** 그러면 **정확한 타겟**.
 1. 클릭 **신규** **페이지 만들기**창을 엽니다.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
@@ -74,5 +75,5 @@ Cloud Services에서 ExactTarget 구성을 만들려면 다음 작업을 수행�
 
 여러 구성을 추가하려면 다음 작업을 수행하십시오.
 
-1. 시작 페이지에서 **Cloud Services** 및 클릭 **정확한 타겟**. 클릭 **구성 표시** 하나 이상의 ExactTarget 구성을 사용할 수 있는 경우 표시됩니다. 사용 가능한 모든 구성이 나열됩니다.
+1. 시작 페이지에서 **Cloud Service** 및 클릭 **정확한 타겟**. 클릭 **구성 표시** 하나 이상의 ExactTarget 구성을 사용할 수 있는 경우 표시됩니다. 사용 가능한 모든 구성이 나열됩니다.
 1. 다음을 클릭합니다. **+** 사용 가능한 구성 옆에 로그인합니다. 이렇게 하면 **구성 만들기** 창. 구성을 만들려면 이전 구성 절차를 따르십시오.

@@ -4,9 +4,10 @@ description: AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이
 feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '510'
 ht-degree: 100%
 
 ---
@@ -61,7 +62,7 @@ AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요
 >
 >모든 콘텐츠 조각이 `/content/dam`에 저장되므로 여기에 대한 권한을 설정할 수도 있습니다.
 >
->하지만 이 작업을 수행하면 다른 *모든* 에셋 유형에도 동일한 삭제 권한이 적용됩니다.
+>하지만 이 작업을 수행하면 다른 *모든* 자산 유형에도 동일한 삭제 권한이 적용됩니다.
 
 특정 사용자 및/또는 그룹이 콘텐츠 조각을 편집/업데이트할 수 있도록 허용하기 위한 권한 전제 조건은 다음과 같습니다.
 

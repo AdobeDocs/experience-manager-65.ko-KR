@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 1%
+source-wordcount: '790'
+ht-degree: 0%
 
 ---
 
@@ -239,7 +240,7 @@ AEM Forms 데이터의 전체 백업을 완료한 후 다음 작업을 수행합
 >명령 스크립트는에서 작성한 nsrnmd_win.cfg 파일에 대한 전체 경로가 필요합니다 [백업 및 복구를 위한 EMC Document Content Server 준비](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. 명령 프롬프트를 열고 다음으로 변경 `[NetWorker_root]\Legato\nsr\bin`.
-1. 다음 명령을 실행합니다:
+1. 다음 명령을 실행합니다.
 
    ```shell
     - nsrnmdsv.exe -f <path_to_cfg_file>
@@ -259,7 +260,7 @@ AEM Forms 데이터를 복원하기 전에 다음 작업을 수행하십시오. 
 1. 화면 왼쪽에서 Docbase에 대한 데이터베이스를 선택하고 도구 모음에서 시작 단추를 클릭합니다.
 1. 데이터베이스가 복원되면 Docbase 서비스를 다시 시작합니다.
 1. 명령 프롬프트를 열고 다음으로 변경 *[NetWorker_root]*\Legato\nsr\bin
-1. 다음 명령을 실행합니다:
+1. 다음 명령을 실행합니다.
 
    ```shell
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA

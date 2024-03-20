@@ -9,16 +9,17 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 3%
+source-wordcount: '2338'
+ht-degree: 0%
 
 ---
 
 # 스타일 AEM CIF 핵심 구성 요소 {#style-aem-cif-core-components}
 
-다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 Venia 참조 프로젝트를 검사하고 AEM CIF 핵심 구성 요소에서 사용하는 CSS 및 JavaScript를 구성하는 방법을 알아봅니다. CSS를 사용하여 스타일을 만들어 의 기본 스타일을 업데이트합니다. **제품 티저** 구성 요소.
+다음 [CIF Venia 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 Venia 참조 프로젝트를 검사하고 AEM CIF 핵심 구성 요소에서 사용하는 CSS 및 JavaScript를 구성하는 방법을 알아봅니다. CSS를 사용하여 스타일을 만들어 의 기본 스타일을 업데이트합니다. **제품 티저** 구성 요소.
 
 >[!TIP]
 >
@@ -176,7 +177,7 @@ Storefront의 테마/스타일을 렌더링하는 CSS 및 JavaScript는 AEM에�
 
    이러한 클라이언트 라이브러리는 `ui.frontend` 모듈. 대신 이러한 클라이언트 라이브러리에는 Adobe에서 제공하는 CSS 및 JavaScript 종속성이 포함됩니다. 이러한 클라이언트 라이브러리에 대한 정의는 `.content.xml` 각 폴더 아래에 있는 파일입니다.
 
-   **clientlib-base** - 다음의 필요한 종속성을 임베드하는 빈 클라이언트 라이브러리입니다. [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 범주는 다음과 같습니다 `venia.base`.
+   **clientlib-base** - 다음의 필요한 종속성을 임베드하는 빈 클라이언트 라이브러리입니다. [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR). 범주는 다음과 같습니다 `venia.base`.
 
    **clientlib-cif** - 또한 이 라이브러리는 필요한 종속성을 임베드하는 빈 클라이언트 라이브러리입니다. [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 범주는 다음과 같습니다 `venia.cif`.
 
@@ -465,7 +466,7 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
 
 AEM은 성능을 위해 클라이언트 라이브러리를 캐시하려고 시도합니다. 코드 배포 후 이전 파일이 제공되는 경우가 있습니다. 다음을 사용하여 AEM 클라이언트 라이브러리 캐시를 수동으로 무효화할 수 있습니다. [클라이언트 라이브러리 다시 빌드 도구](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Invalidate Caches는 AEM이 클라이언트 라이브러리의 이전 버전을 캐시했다고 의심되는 경우 선호되는 방법입니다. 라이브러리 리빌딩은 비효율적이고 시간이 많이 소요됩니다.*
 
-## 축하합니다 {#congratulations}
+## 축하합니다. {#congratulations}
 
 첫 번째 AEM CIF 핵심 구성 요소를 스타일링하고 Webpack 개발 서버를 사용했습니다!
 

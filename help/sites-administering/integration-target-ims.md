@@ -2,10 +2,11 @@
 title: IMS를 사용하여 Adobe Target과 통합
 description: IMS를 사용하여 AEM과 Adobe Target 통합에 대해 알아봅니다.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 43%
+source-wordcount: '1533'
+ht-degree: 40%
 
 ---
 
@@ -89,7 +90,7 @@ AEM에서 사용할 수 있는 Adobe Target을 사용하여 프로젝트를 만�
 
 1. **프로젝트에 추가**&#x200B;를 선택한 다음 **API**&#x200B;를 선택합니다.
 
-   ![Adobe Developer Console](assets/integration-target-io-10.png)
+   ![Adobe Developer 콘솔](assets/integration-target-io-10.png)
 
 1. **Adobe Target**&#x200B;을 선택하고 **다음**&#x200B;을 선택합니다.
 
@@ -241,7 +242,7 @@ AEM으로 돌아가면 Target용 Adobe Developer 콘솔 통합에서 필요한 �
 
    * **API 유형**: REST
 
-   * **A4T Analytics Cloud 구성**: 타겟 활동 목표 및 지표에 사용되는 Analytics Cloud 구성을 선택합니다. 이는 콘텐츠를 타겟팅할 때 보고 소스로서의 Adobe Analytics를 사용하는 경우 필요합니다. 클라우드 구성이 표시되지 않으면 의 참고 사항을 참조하십시오. [A4T Analytics Cloud 구성](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+   * **A4T Analytics Cloud 구성**: 타겟 활동 목표 및 지표에 사용되는 Analytics Cloud 구성을 선택합니다. 이는 콘텐츠를 타겟팅할 때 보고 소스로 Adobe Analytics을 사용하는 경우에 필요합니다. 클라우드 구성이 표시되지 않으면 의 참고 사항을 참조하십시오. [A4T Analytics Cloud 구성](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
 
    * **정확한 타겟팅 사용**: 기본적으로 이 확인란은 선택되어 있습니다. 이 옵션을 선택하면 클라우드 서비스 구성은 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기합니다. 다음 사항에 주의하십시오.
 
@@ -259,7 +260,7 @@ AEM으로 돌아가면 Target용 Adobe Developer 콘솔 통합에서 필요한 �
 
 1. 클릭 **Target에 연결** Adobe Target에 대한 연결을 초기화합니다.
 
-   정상적으로 연결되면 **연결 성공**&#x200B;이라는 메시지가 표시됩니다.
+   연결에 성공하면 메시지가 표시됩니다 **연결 성공** 이 표시됩니다.
 
 1. 선택 **확인** 메시지, 다음 메시지 **확인** 대화 상자에서 구성을 확인할 수 있습니다.
 

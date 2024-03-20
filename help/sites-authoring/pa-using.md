@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 4%
@@ -149,7 +150,7 @@ Analytics-Administrators 사용자 그룹의 구성원은 작성자가 추가 An
    * 표시(링크 유형 및 수)
    * 조회 수가 없는 링크에 대한 오버레이 숨기기
 
-* 라이브 버전
+* 라이브
 
    * 상위 표시(승자 또는 패자)
    * 하위 % 제외

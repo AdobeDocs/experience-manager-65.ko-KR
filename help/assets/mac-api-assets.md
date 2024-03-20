@@ -3,13 +3,14 @@ title: "[!DNL Assets] HTTP API."
 description: 에서 HTTP API를 사용하여 디지털 에셋을 생성, 읽기, 업데이트, 삭제 및 관리 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
-feature: APIs,Assets HTTP API,Developer Tools
+feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1743'
-ht-degree: 2%
+source-wordcount: '1775'
+ht-degree: 1%
 
 ---
 
@@ -124,7 +125,7 @@ Experience Manager 시 자산에는 다음 요소가 포함됩니다.
 
 **응답**: 반환된 엔티티의 클래스가 에셋 또는 폴더입니다. 포함된 엔티티의 등록 정보는 각 엔티티의 전체 등록 정보 세트의 하위 집합입니다. 엔티티의 전체 표현을 가져오려면 클라이언트는 링크가 가리키는 URL의 콘텐츠를 `rel` / `self`.
 
-## 폴더를 만듭니다 {#create-a-folder}
+## 폴더 만들기 {#create-a-folder}
 
 새로 만들기 `sling`: `OrderedFolder` 지정된 경로에서. 다음과 같은 경우 `*` 가 노드 이름 대신 제공되면 서블릿은 매개 변수 이름을 노드 이름으로 사용합니다. 요청으로 수락됨 데이터는 새 폴더의 Siren 표시 또는 다음과 같이 인코딩된 이름-값 쌍 세트입니다. `application/www-form-urlencoded` 또는 `multipart`/ `form`- `data`: HTML 양식에서 직접 폴더를 만드는 데 유용합니다. 또한 폴더의 속성을 URL 쿼리 매개 변수로 지정할 수 있습니다.
 

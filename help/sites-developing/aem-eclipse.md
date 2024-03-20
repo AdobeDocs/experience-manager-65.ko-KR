@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '746'
 ht-degree: 4%
 
 ---
@@ -127,7 +128,7 @@ AEM Development Tools for Eclipse에는 AEM 프로젝트 및 인스턴스를 완
 1. 생성된 모든 프로젝트를 선택합니다.
 1. 마우스 오른쪽 버튼을 클릭합니다. 메뉴에서 **Maven**, 선택 **프로젝트 업데이트**.
 1. 확인 **스냅샷/릴리스 강제 업데이트**.
-1. **확인**&#x200B;을 클릭합니다. Eclipse는 필요한 종속성을 다운로드하려고 합니다.
+1. 클릭 **확인**. Eclipse는 필요한 종속성을 다운로드하려고 합니다.
 
 ### JSP 파일에서 태그 라이브러리 자동 완성 사용 {#enabling-tag-library-autocompletion-in-jsp-files}
 

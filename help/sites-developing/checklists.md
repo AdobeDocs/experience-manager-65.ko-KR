@@ -1,23 +1,24 @@
 ---
-title: 확인 목록
+title: 체크리스트
 description: 다음 체크리스트에서는 몇 가지 주요 테스트 문제를 중점적으로 설명합니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
-# 확인 목록{#checklists}
+# 체크리스트{#checklists}
 
 다음 체크리스트에서는 몇 가지 주요 문제를 중점적으로 다룹니다. 자세한 내용은 테스트 와 관련된 다른 섹션을 참조하십시오.
 
-| 확인 | 응답 | 작업 | 소유자 | 마감 |
+| 확인 | 응답 | 작업 | 소유자 | 예정 |
 |---|---|---|---|---|
 | 명확하고 정기적인 보고 메커니즘이 설정되어 있습니까? |  |  |  |  |
 | (테스트 팀의) 주요 플레이어가 상태 회의에 참여합니까? |  |  |  |  |

@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '846'
 ht-degree: 3%
 
 ---
@@ -30,7 +31,7 @@ ht-degree: 3%
   <tr>
    <td><p>들여쓰기</p> </td>
    <td>모듈의 들여쓰기<p> </p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12.7밀리미터</p> </td>
    <td><p>모든 숫자</p> </td>
   </tr>
   <tr>
@@ -42,7 +43,7 @@ ht-degree: 3%
   <tr>
    <td><p>로마 숫자 최소 너비</p> </td>
    <td><p>로마자 숫자를 사용할 때 글머리 기호/숫자 필드에 적용할 최소 너비</p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12.7밀리미터</p> </td>
    <td><p>모든 숫자</p> </td>
   </tr>
   <tr>
@@ -157,7 +158,7 @@ ht-degree: 3%
    <td><p>데이터 편집 형식</p> </td>
    <td><p>데이터의 형식을 편집합니다. 데이터를 문자열로 쓰거나 문자열에서 데이터를 구문 분석할 때 사용됩니다.</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>--<p> </p> </td>
+   <td>—<p> </p> </td>
   </tr>
   <tr>
    <td><p>게시할 때 편지 인스턴스 관리</p> </td>
@@ -240,7 +241,7 @@ ht-degree: 3%
   <tr>
    <td><p>CM 사용자 루트</p> </td>
    <td><p>모든 서신 관리 사용자 자산이 포함된 폴더의 URL</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
    <td><p>유효한 폴더 위치</p> </td>
   </tr>
   <tr>

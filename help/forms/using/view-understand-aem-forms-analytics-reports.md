@@ -6,16 +6,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 docset: aem65
 exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 2%
+source-wordcount: '1056'
+ht-degree: 0%
 
 ---
 
 # AEM Forms 분석 보고서 보기 및 이해 {#view-and-understand-aem-forms-analytics-reports}
 
-Adobe Experience Manager Forms은 Adobe Analytics과 통합되어 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있습니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
+Adobe Experience Manager Forms은 Adobe Analytics과 통합되어 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있습니다. 이러한 지표를 분석하는 목표는 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
 
 ## 분석 설정 {#setting-up-analytics}
 

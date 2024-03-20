@@ -4,10 +4,11 @@ description: Adobe Experience Manager에서 번역해야 하는 콘텐츠를 식
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 66%
+source-wordcount: '1158'
+ht-degree: 62%
 
 ---
 
@@ -31,8 +32,8 @@ ht-degree: 66%
 
 규칙에는 다음과 같은 정보가 포함됩니다.
 
-* 규칙이 적용되는 노드의 경로. 규칙은 노드의 하위 항목에도 적용됩니다.
-* 번역할 콘텐츠가 포함된 노드 속성의 이름. 속성은 특정 리소스 타입 또는 모든 리소스 타입에 한정될 수 있습니다.
+* 규칙이 적용되는 노드의 경로입니다. 규칙은 노드의 하위 항목에도 적용됩니다.
+* 번역할 콘텐츠가 포함된 노드 속성의 이름입니다. 속성은 특정 리소스 타입 또는 모든 리소스 타입에 한정될 수 있습니다.
 
 예를 들어 작성자가 페이지의 모든 AEM Foundation 텍스트 구성 요소에 추가하는 콘텐츠를 번역하는 규칙을 만들 수 있습니다. 규칙은 `foundation/components/text` 구성 요소에 대한 `/content` 노드 및 `text` 속성을 식별할 수 있습니다.
 
@@ -101,8 +102,8 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 
 각 `assetNode` 요소는 다음과 같은 특성을 가지고 있습니다.
 
-* 구성 요소로 확인되는 경로와 동일한 `resourceType` 속성.
-* 자산 바이너리(임베드된 자산의 경우) 또는 참조된 자산으로의 경로를 저장하는 속성의 이름과 동일한 `assetReferenceAttribute` 속성.
+* 1개 `resourceType` 구성 요소로 확인되는 경로와 동일한 속성.
+* 1개 `assetReferenceAttribute` 에셋 바이너리(임베드된 에셋의 경우) 또는 참조된 에셋으로의 경로를 저장하는 속성의 이름과 동일한 속성.
 
 다음 예제에서는 기본 이미지 구성 요소에서 이미지를 추출합니다.
 

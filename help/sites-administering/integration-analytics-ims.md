@@ -2,10 +2,11 @@
 title: IMS를 사용하여 Adobe Analytics과 통합
 description: IMS를 사용하여 AEM과 Adobe Analytics 통합에 대해 알아보기
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 55%
+source-wordcount: '1042'
+ht-degree: 52%
 
 ---
 
@@ -217,7 +218,7 @@ AEM으로 돌아가면 Analytics에 대한 통합 프로젝트에서 필요한 �
 
 1. Adobe Analytics 연결을 초기화하려면 **Analytics에 연결**.
 
-   정상적으로 연결되면 **연결 성공**&#x200B;이라는 메시지가 표시됩니다.
+   연결에 성공하면 메시지가 표시됩니다 **연결 성공** 이 표시됩니다.
 
 1. 선택 **확인** 메시지를 표시합니다.
 

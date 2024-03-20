@@ -5,7 +5,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 exl-id: 3458471a-9815-463e-8044-68631073863c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 2%
@@ -251,7 +252,7 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
    <td><p>허용되는 상태 수. </p> <p>적응형 양식에 대해 2개(켜기, 끄기) 및 HTML 5 양식에 대해 3개(켜기, 끄기, 중립).</p> </td>
   </tr>
   <tr>
-   <td>상태</td>
+   <td>시/도</td>
    <td><p>요소의 현재 상태입니다.</p> <p>적응형 양식에 대해 2개(켜기, 끄기) 및 HTML 5 양식에 대해 3개(켜기, 끄기, 중립).</p> </td>
   </tr>
  </tbody>

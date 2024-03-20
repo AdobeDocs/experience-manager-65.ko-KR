@@ -9,10 +9,11 @@ docset: aem65
 feature: Panoramic Images,Asset Management
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 4%
+source-wordcount: '578'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +35,7 @@ ht-degree: 4%
 
 * 키워드로 태그 지정됨 `equirectangular`, 또는 `spherical`및 `panorama`, 또는 `spherical` 및 `panoramic`. 다음을 참조하십시오 [태그 사용](/help/sites-authoring/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
+종횡비와 키워드 기준은 모두 자산 세부 사항 페이지 및 의 파노라마 자산에 적용됩니다. `Panoramic Media` WCM 구성 요소입니다.
 
 파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 다음을 참조하십시오. [자산 업로드](/help/assets/manage-assets.md#uploading-assets).
 

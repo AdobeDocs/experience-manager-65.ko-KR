@@ -3,10 +3,12 @@ title: AEM과 함께 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐
 description: 샘플 콘텐츠 및 쿼리를 탐색하여 AEM과 함께 GraphQL을 사용하여 headless로 콘텐츠를 제공하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+solution: Experience Manager, Experience Manager Sites
+role: Developer
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 74%
+source-wordcount: '1588'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +23,6 @@ ht-degree: 74%
 >* [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)
 >* [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
-
 
 GraphQL 쿼리를 시작하고 쿼리가 AEM 콘텐츠 조각과 함께 작동하는 방식을 살펴보려면 몇 가지 실제 사례를 살펴보는 것이 좋습니다.
 
@@ -38,7 +39,7 @@ GraphQL 쿼리를 시작하고 쿼리가 AEM 콘텐츠 조각과 함께 작동�
 
 >[!NOTE]
 >
->인스턴스에 따라 [AEM GraphQL API에 포함된 GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) 쿼리 제출 및 테스트용.
+>인스턴스에 따라 쿼리를 제출하고 테스트하기 위해 [AEM GraphQL API에 포함되어 있는 GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)에 직접 액세스할 수 있습니다.
 >
 >예를 들어`http://localhost:4502/content/graphiql.html`
 
@@ -152,7 +153,7 @@ GraphQL 쿼리를 시작하고 쿼리가 AEM 콘텐츠 조각과 함께 작동�
 }
 ```
 
-실행 시 시스템은 모든 필드를 포함하도록 쿼리를 자동으로 확장합니다.
+실행되면 시스템은 모든 필드를 포함하도록 쿼리를 자동으로 확장합니다.
 
 ```graphql
 {
@@ -356,14 +357,14 @@ query {
 }
 ```
 
-### 샘플 쿼리 - 모든 도시의 이름 City Break로 태그 지정됨 {#sample-names-all-cities-tagged-city-breaks}
+### 샘플 쿼리 - 구/군/시 구분으로 태그가 지정된 모든 구의 이름 {#sample-names-all-cities-tagged-city-breaks}
 
-다음과 같은 경우:
+다음 작업을 수행하는 경우:
 
-* 이름이 인 다양한 태그 만들기 `Tourism` : `Business`, `City Break`, `Holiday`
+* `Tourism`이라는 다양한 태그 생성: `Business`, `City Break`, `Holiday`
 * 및 이러한 태그를 다양한 의 기본 변형에 할당 `City` 인스턴스
 
-그런 다음 쿼리를 사용하여 `name` 및 `tags`의 모든 게시물에 도시 브레이크로 태그가 지정됨 `city`스키마.
+그러면 쿼리를 사용하여 `city`스키마에서 City Break로 태그된 모든 항목에 대한 `name` 및 `tags`의 세부 정보를 반환할 수 있습니다.
 
 **샘플 쿼리**
 
@@ -704,7 +705,7 @@ query {
 
 ### 샘플 쿼리 - 독일 또는 스위스의 인구 400000~999999인 모든 도시 {#sample-all-cities-d-ch-population}
 
-여기에서는 필드 조합이 필터링됩니다. An `AND`(묵시적)는 `population`범위를 선택하는 데 사용되며, `OR`(명시적)는 필요한 도시를 선택하는 데 사용됩니다.
+여기에서는 필드를 조합하여 필터링됩니다. An `AND`(묵시적)는 `population`범위를 선택하는 데 사용되며, `OR`(명시적)는 필요한 도시를 선택하는 데 사용됩니다.
 
 **샘플 쿼리**
 
@@ -1146,13 +1147,13 @@ query {
 
 ## WKND 프로젝트를 사용하는 샘플 쿼리 {#sample-queries-using-wknd-project}
 
-이러한 샘플 쿼리는 WKND 프로젝트를 기반으로 합니다. 여기에는 다음과 같은 항목이 있습니다.
+이러한 샘플 쿼리는 WKND 프로젝트를 기반으로 합니다. 다음 항목이 있습니다.
 
 * 콘텐츠 조각 모델은 다음에서 사용할 수 있습니다.
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * 콘텐츠 조각(및 기타 콘텐츠)은 다음에서 사용할 수 있습니다.
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1332,7 +1333,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리는 `fragments`의 배열로 `[Article]` 제공.
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리 전달 `fragments` 의 배열로서 `[Article]`.
 
 ```graphql
 {
@@ -1427,7 +1428,7 @@ query {
 
 #### 첨부 파일이 포함된 복수 콘텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-multiple-fragments-attachments}
 
-다음 쿼리는 모두 반환합니다 `attachments` - 유형의 특정 필드(하위 그룹) `content-reference`:
+다음 쿼리는 `content-reference` 유형의 특정 필드(하위 그룹)인 모든 `attachments`를 반환합니다.
 
 >[!NOTE]
 >
@@ -1561,11 +1562,11 @@ query {
 }
 ```
 
-### 주어진 모델의 여러 콘텐츠 조각 및 해당 변형에 대한 샘플 쿼리 {#sample-wknd-multiple-fragment-variations-given-model}
+### 주어진 모델의 복수 콘텐츠 조각과 변형에 대한 샘플 쿼리 {#sample-wknd-multiple-fragment-variations-given-model}
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 유형의 콘텐츠 조각 `article` 및 모든 변형
+* `article` 유형과 모든 변형의 콘텐츠 조각
 
 **샘플 쿼리**
 
@@ -1588,11 +1589,11 @@ query {
 }
 ```
 
-### 특정 태그가 첨부된 특정 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리{#sample-wknd-fragment-variations-given-model-specific-tag}
+### 특정 태그가 첨부된 주어진 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 유형의 콘텐츠 조각 `article` 하나 이상의 변형 포함(태그 포함) `WKND : Activity / Hiking`
+* 태그가 있는 하나 이상의 변형이 포함된 `article` 유형의 콘텐츠 조각 `WKND : Activity / Hiking`
 
 **샘플 쿼리**
 
@@ -1666,7 +1667,7 @@ query {
 
 | 필드 이름 | 데이터 형식 | 참조 |
 |--- |--- |--- |
-| 회사 이름 | 한 줄 텍스트 |  |
+| 회사 이름 | 한 줄 텍스트 | |
 | CEO | 조각 참조 (단일) | [개인](#model-person) |
 | 직원 | 조각 참조 (다중 필드) | [개인](#model-person) |
 
@@ -1676,8 +1677,8 @@ query {
 
 | 필드 이름 | 데이터 형식 | 참조 |
 |--- |--- |--- |
-| 이름 | 한 줄 텍스트 |  |
-| 이름 | 한 줄 텍스트 |  |
+| 이름 | 한 줄 텍스트 | |
+| 이름 | 한 줄 텍스트 | |
 | 상 | 조각 참조 (다중 필드) | [상](#model-award) |
 
 #### 상 {#model-award}
@@ -1686,8 +1687,8 @@ query {
 
 | 필드 이름 | 데이터 형식 | 참조 |
 |--- |--- |--- |
-| 단축키/ID | 한 줄 텍스트 |  |
-| 제목 | 한 줄 텍스트 |  |
+| 단축키/ID | 한 줄 텍스트 | |
+| 제목 | 한 줄 텍스트 | |
 
 #### 도시 {#model-city}
 
@@ -1695,10 +1696,10 @@ query {
 
 | 필드 이름 | 데이터 형식 | 참조 |
 |--- |--- |--- |
-| 이름 | 한 줄 텍스트 |  |
-| 국가 | 한 줄 텍스트 |  |
-| 인구 | 숫자 |  |
-| 범주 | 태그 |  |
+| 이름 | 한 줄 텍스트 | |
+| 국가 | 한 줄 텍스트 | |
+| 인구 | 숫자 | |
+| 범주 | 태그 | |
 
 ### 샘플 콘텐츠 조각 {#sample-content-fragments}
 
@@ -1716,7 +1717,7 @@ query {
 
 | 이름 | 이름 | 상 |
 |--- |--- |--- |
-| Lincoln |  Abe |  |
+| Lincoln |  Abe | |
 | Smith | Adam |   |
 | Slade |  Cutter |  Gameblitz<br>Gamestar |
 | Marsh |  Duke |   |   |

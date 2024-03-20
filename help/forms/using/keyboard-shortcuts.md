@@ -6,10 +6,11 @@ content-type: reference
 topic-tags: author, correspondence-management
 feature: Adaptive Forms, Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1192'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -46,10 +47,10 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->데스크탑 장치에서 다중 선택:
+데스크탑 장치에서 다중 선택:
 >
->* Windows: 필요한 구성 요소를 Ctrl+클릭합니다.
->* macOS: 필요한 구성 요소를 Command+클릭합니다.
+* Windows: 필요한 구성 요소를 Ctrl+클릭합니다.
+* macOS: 필요한 구성 요소를 Command+클릭합니다.
 >
 
 ## 테마 편집기  {#themeeditor}
@@ -64,7 +65,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->&#39;&amp;ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
+&#39;&amp;ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
 
 ## 컨텐츠 브라우저  {#contentbrowser}
 

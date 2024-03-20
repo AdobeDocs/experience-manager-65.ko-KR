@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 6%
+source-wordcount: '235'
+ht-degree: 1%
 
 ---
 
@@ -41,4 +42,4 @@ Apache Sling Referrer Filter 외에도 Adobe은 이러한 유형의 공격으로
 >
 >웹 응용 프로그램에서 매니페스트 캐시를 사용하는 경우 &quot;**&amp;ast;**&#x200B;토큰이 CSRF 토큰 생성 호출을 오프라인으로 전환하지 않도록 매니페스트에 &quot;를 추가합니다. 자세한 내용은 다음을 참조하십시오. [링크](https://www.w3.org/TR/offline-webapps/).
 >
->CSRF 공격 및 이를 완화하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [사이트 간 요청 위조 OWASP 페이지](https://owasp.org/www-community/attacks/csrf).
+CSRF 공격 및 이를 완화하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [사이트 간 요청 위조 OWASP 페이지](https://owasp.org/www-community/attacks/csrf).

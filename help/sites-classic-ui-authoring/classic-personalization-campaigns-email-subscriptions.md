@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '917'
 ht-degree: 1%
 
 ---
@@ -54,7 +55,7 @@ AEM 페이지를 구성하려면 다음 작업을 수행하십시오.
    >
    >대화 상자는 전자 메일 서비스 공급자에 따라 다를 수 있습니다.
 
-1. 다음에서 **양식** 탭에서 사용자가 양식을 제출한 후 이동할 감사 페이지를 선택합니다(비워 두면 제출 시 양식이 다시 표시됨). **확인**&#x200B;을 클릭합니다. An **이메일 ID** 구성 요소가 양식에 표시되면 사용자가 이메일 주소를 제출하여 메일링 목록을 구독하거나 구독 취소할 수 있는 양식을 만들 수 있습니다.
+1. 다음에서 **양식** 탭에서 사용자가 양식을 제출한 후 이동할 감사 페이지를 선택합니다(비워 두면 제출 시 양식이 다시 표시됨). 클릭 **확인**. An **이메일 ID** 구성 요소가 양식에 표시되면 사용자가 이메일 주소를 제출하여 메일링 목록을 구독하거나 구독 취소할 수 있는 양식을 만들 수 있습니다.
 1. 추가 **제출** 의 버튼 구성 요소 **양식** 사이드 킥의 섹션.
 
    양식이 준비되었습니다. 위의 단계에서 구성된 페이지를 게시와 함께 **감사합니다.** 페이지를 게시 인스턴스로 복사합니다. 페이지를 방문하는 모든 잠재적 구독자는 양식을 작성하고 구성에 제공된 목록을 구독할 수 있습니다.

@@ -2,9 +2,10 @@
 title: SPA의 구성 요소 합성
 description: AEM 단일 페이지 애플리케이션(SPA) 편집기와 함께 작동하는 다른 구성 요소로 구성된 구성 요소인 복합 구성 요소를 직접 만드는 방법을 알아봅니다.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '783'
 ht-degree: 1%
 
 ---

@@ -6,7 +6,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 1%
@@ -155,7 +156,7 @@ AEM Forms 앱은 PhoneGap 5.0 기반 애플리케이션으로, Backbone 모델�
 
 AEM Forms 앱은 조직별 요구 사항에 맞게 손쉽게 맞춤화할 수 있습니다. 애플리케이션의 소스 코드는 AEM Forms과 함께 제공됩니다. 소스 코드를 변경하고 고유한 모바일 인력 솔루션을 구축할 수 있습니다. 자신의 엔터프라이즈 키로 앱에 서명할 수도 있습니다.
 
-### 사용자 지정 {#customize}
+### 맞춤화 {#customize}
 
 다음에 대해 앱을 사용자 지정할 수 있습니다.
 

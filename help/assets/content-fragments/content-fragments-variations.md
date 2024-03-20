@@ -4,7 +4,8 @@ description: 변형에서 조각에 대한 콘텐츠를 작성한 다음 목적�
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 59%
@@ -234,14 +235,14 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!CAUTION]
 >
-영어는 즉시 이용 가능합니다.
+>영어는 즉시 이용 가능합니다.
 >
-다른 언어는 패키지 공유에서 언어 모델 패키지로 사용할 수 있습니다.
+>다른 언어는 패키지 공유에서 언어 모델 패키지로 사용할 수 있습니다.
 >
-* [프랑스어(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [독일어(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [이탈리아어(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [스페인어(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [프랑스어(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [독일어(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [이탈리아어(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [스페인어(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. **마스터** 또는 필요한 변형을 선택합니다.
@@ -310,7 +311,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
   >[!NOTE]
   >
-  여러 개의 주석이 하나의 텍스트에 적용된 경우 드롭다운 선택기가 제공됩니다.
+  >여러 개의 주석이 하나의 텍스트에 적용된 경우 드롭다운 선택기가 제공됩니다.
 
 * 주석이 적용된 전체 텍스트를 삭제하면 주석도 삭제됩니다.
 
@@ -328,13 +329,13 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!CAUTION]
 >
-참조 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
+>참조 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
 >
-그러나 자산의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-authoring/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 자산 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
+>그러나 자산의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-authoring/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 자산 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
 
 >[!NOTE]
 >
-[이미지](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
+>[이미지](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
 
 1. 이미지를 추가할 위치에 커서를 놓습니다.
 1. **자산 삽입** 아이콘을 사용하여 검색 대화 상자를 엽니다.
@@ -352,10 +353,10 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    >[!CAUTION]
    >
-   에셋으로 추가 후 형식을 변경하는 경우:
+   >에셋으로 추가 후 형식을 변경하는 경우:
    >
-   * **일반 텍스트**: 에셋이 조각에서 유실됩니다.
-   * **Markdown**: 에셋이 표시되진 않지만 로 돌아가면 여전히 여기에 있습니다. **리치 텍스트**.
+   >* **일반 텍스트**: 에셋이 조각에서 유실됩니다.
+   >* **Markdown**: 에셋이 표시되진 않지만 로 돌아가면 여전히 여기에 있습니다. **리치 텍스트**.
 
 ### 조각에 콘텐츠 조각 삽입 {#inserting-content-fragment-into-your-fragment}
 
@@ -365,17 +366,17 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!NOTE]
 >
-이 옵션은 **여러 줄 텍스트**&#x200B;가 **조각 참조 허용**&#x200B;으로 구성된 경우 사용할 수 있습니다.
+>이 옵션은 **여러 줄 텍스트**&#x200B;가 **조각 참조 허용**&#x200B;으로 구성된 경우 사용할 수 있습니다.
 
 >[!CAUTION]
 >
-참조 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
+>참조 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
 >
-그러나 자산의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-authoring/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 자산 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
+>그러나 자산의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-authoring/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 자산 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
 
 >[!NOTE]
 >
-[이미지](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
+>[이미지](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
 
 1. 조각을 추가할 위치에 커서를 놓습니다.
 1. **콘텐츠 조각 삽입** 아이콘을 사용하여 검색 대화 상자를 엽니다.
@@ -393,10 +394,10 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    >[!CAUTION]
    >
-   다른 조각에 대한 참조를 추가한 후 형식을 변경하는 경우 다음을 수행할 수 있습니다.
+   >다른 조각에 대한 참조를 추가한 후 형식을 변경하는 경우 다음을 수행할 수 있습니다.
    >
-   * **일반 텍스트**: 참조가 조각에서 손실됩니다.
-   * **Markdown**: 참조가 유지됩니다.
+   >* **일반 텍스트**: 참조가 조각에서 손실됩니다.
+   >* **Markdown**: 참조가 유지됩니다.
 
 ## 변형 관리 {#managing-variations}
 
@@ -414,11 +415,11 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    >[!NOTE]
    >
-   변형을 만들 때 항상 **기본** 열려 있는 변형이 아니라 복사됩니다.
+   >변형을 만들 때 항상 **기본** 열려 있는 변형이 아니라 복사됩니다.
 
    >[!NOTE]
    >
-   변형을 만들 때 **태그** (으)로 현재 할당됨 **기본** 변형이 새 변형에 복사됩니다.
+   >변형을 만들 때 **태그** (으)로 현재 할당됨 **기본** 변형이 새 변형에 복사됩니다.
 
 ### 변형 편집 {#editing-a-variation}
 
@@ -443,7 +444,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!NOTE]
 >
-이 작업은 변형 **제목**&#x200B;에만 영향을 줍니다.
+>이 작업은 변형 **제목**&#x200B;에만 영향을 줍니다.
 
 ### 변형 삭제 {#deleting-a-variation}
 
@@ -457,7 +458,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!NOTE]
 >
-**마스터**&#x200B;는 삭제할 수 없습니다.
+>**마스터**&#x200B;는 삭제할 수 없습니다.
 
 ### 마스터와 동기화 {#synchronizing-with-master}
 
@@ -467,13 +468,13 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!CAUTION]
 >
-동기화는 **마스터**&#x200B;의 변경 내용을 변형에 복사하는 데에만&#x200B;*사용할 수 있습니다.*
+>동기화는 **마스터**&#x200B;의 변경 내용을 변형에 복사하는 데에만&#x200B;*사용할 수 있습니다.*
 >
-변형의 현재 요소만 동기화됩니다.
+>변형의 현재 요소만 동기화됩니다.
 >
-동기화는 **여러 줄 텍스트** 데이터 유형에서만 작동합니다.
+>동기화는 **여러 줄 텍스트** 데이터 유형에서만 작동합니다.
 >
-*변형의 변경 내용을&#x200B;**마스터***에 전송하는 선택은 할 수 없습니다.
+>*변형의 변경 내용을&#x200B;**마스터***에 전송하는 선택은 할 수 없습니다.
 
 <!-- needs new screenshot for synchronize effect -->
 

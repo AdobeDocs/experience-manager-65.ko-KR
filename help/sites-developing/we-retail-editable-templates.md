@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 2%
@@ -71,4 +72,4 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
 
 자세한 내용은 작성 문서를 참조하십시오 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md) 편집 가능한 템플릿에 대한 전체 기술 세부 정보.
 
-조사를 원할 수도 있습니다. [핵심 구성 요소](/help/sites-developing/we-retail-core-components.md). 작성 문서 참조 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 기술 개요를 참조하십시오.
+조사를 원할 수도 있습니다. [핵심 구성 요소](/help/sites-developing/we-retail-core-components.md). 작성 문서 참조 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 기술 개요를 참조하십시오.

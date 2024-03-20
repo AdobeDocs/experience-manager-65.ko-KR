@@ -8,7 +8,8 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 6%
@@ -330,7 +331,7 @@ The selected theme is applied to the Adaptive Form.
 
 1. 파일을 저장하고 테마를 다시 배포합니다.
 
-## 참고 항목
+## 추가 참조
 
 * [핵심 구성 요소 기반 적응형 양식 만들기](create-an-adaptive-form-core-components.md)
 * [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)

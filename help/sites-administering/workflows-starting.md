@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 5%
+source-wordcount: '790'
+ht-degree: 3%
 
 ---
 
@@ -119,7 +120,7 @@ ht-degree: 5%
 
      워크플로우를 시작하는 이벤트 유형:
 
-      * 작성일
+      * 생성됨
       * 수정됨
       * 제거됨
 
@@ -131,7 +132,7 @@ ht-degree: 5%
 
      워크플로우 런처가 적용되는 경로입니다.
 
-   * **모드 실행**
+   * **실행 모드**
 
      워크플로 시작 관리자가 적용되는 서버 유형입니다. 선택 **작성자**, **게시**, 또는 **작성 및 게시**.
 
@@ -149,7 +150,7 @@ ht-degree: 5%
 
    비활성화할 기능 목록입니다. 드롭다운 선택기를 사용하여 필요한 기능을 선택합니다.
 
-   * **워크플로우 모델**
+   * **워크플로 모델**
 
      정의된 조건 아래의 노드 유형 및/또는 경로에서 이벤트 유형이 발생할 때 실행할 워크플로우입니다.
 

@@ -5,9 +5,10 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1574'
 ht-degree: 2%
 
 ---
@@ -38,7 +39,7 @@ ht-degree: 2%
 1. **편집기 열기** 대상: **Clothescatalog에 대한 샘플 Solr 구성**.
 
 1. 아래 **카탈로그 버전** 사용 **카탈로그 버전 추가** 추가하려면 `outdoors-Staged` 및 `outdoors-Online` 목록에 추가합니다.
-1. **구성을 저장합니다.**
+1. **저장** 구성.
 1. 열기 **SOLR 항목 유형** 추가하려면 **SOLR 정렬** 끝 `ClothesVariantProduct`:
 
    * 관련성(&quot;관련성&quot;, 점수)
@@ -83,7 +84,7 @@ ht-degree: 2%
 
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
-1. **변경 사항을 저장합니다.**
+1. **저장** 변경 사항.
 1. 다음에서 다시 **SOLR 항목 유형**, 조정 `price` 다음 스크린샷에 따른 facet. 에서와 같이 `category`, 두 번 클릭 `price` 을(를) 열려면 **인덱싱된 속성** 탭:
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
@@ -92,7 +93,7 @@ ht-degree: 2%
 
    ![chlimage_1-41](/help/sites-administering/assets/chlimage_1-41a.png)
 
-1. **변경 사항을 저장합니다.**
+1. **저장** 변경 사항.
 1. 열기 **시스템**, **Facet 검색**, 그런 다음 **인덱서 작업 마법사**. cronjob 시작:
 
    * **인덱서 작업**: `full`

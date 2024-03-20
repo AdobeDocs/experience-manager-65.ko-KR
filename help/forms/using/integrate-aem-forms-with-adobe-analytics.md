@@ -3,7 +3,8 @@ title: AEM Forms을 Adobe Analytics과 통합하는 방법
 description: AEM Forms은 Adobe Analytics과 통합되어 게시된 양식에 대한 성능 지표를 캡처하고 추적합니다.
 docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 0%

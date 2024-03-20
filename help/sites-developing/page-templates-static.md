@@ -7,10 +7,11 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 3%
+source-wordcount: '1601'
+ht-degree: 2%
 
 ---
 
@@ -45,17 +46,17 @@ ht-degree: 3%
   </tr>
   <tr>
    <td> allowedChildren </td>
-   <td> 문자열[]</td>
+   <td> String[]</td>
    <td>이 템플릿의 하위 템플릿으로 사용할 수 있는 템플릿 경로<br /> </td>
   </tr>
   <tr>
    <td> allowedParents</td>
-   <td> 문자열[]</td>
+   <td> String[]</td>
    <td>이 템플릿의 상위가 되도록 허용되는 템플릿의 경로입니다.<br /> </td>
   </tr>
   <tr>
    <td> allowedPath</td>
-   <td> 문자열[]</td>
+   <td> String[]</td>
    <td>이 템플릿을 기반으로 할 수 있는 페이지의 경로입니다.<br /> </td>
   </tr>
   <tr>
@@ -75,7 +76,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td> 등급</td>
-   <td> 긴</td>
+   <td> Long</td>
    <td>템플릿의 등급. 사용자 인터페이스에 템플릿을 표시하는 데 사용됩니다.<br /> </td>
   </tr>
   <tr>
@@ -142,10 +143,10 @@ AEM에는 즉시 사용할 수 있는 다양한 기본 템플릿이 제공됩니
 
 예를 들어 AEM에는 contentpage 및 홈 페이지를 포함한 여러 템플릿이 제공됩니다.
 
-| **제목** | **구성 요소** | **위치** | **용도** |
+| **제목** | **구성 요소** | **위치** | **목적** |
 |---|---|---|---|
-| 홈 페이지 | 홈 페이지 | geometrixx | Geometrixx 홈페이지 템플릿. |
-| 콘텐츠 페이지 | contentpage | geometrixx | Geometrixx 컨텐츠 페이지 템플릿입니다. |
+| 홈 페이지 | homepage | geometrixx | Geometrixx 홈페이지 템플릿. |
+| 컨텐츠 페이지 | contentpage | geometrixx | Geometrixx 컨텐츠 페이지 템플릿입니다. |
 
 #### 기본 템플릿 표시 {#displaying-default-templates}
 

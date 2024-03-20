@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 11%
+source-wordcount: '763'
+ht-degree: 10%
 
 ---
 
@@ -80,7 +81,7 @@ ht-degree: 11%
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* 스케치 모드에서 커서가 크로스와이어로 바뀝니다. 서로 구분되는 여러 선을 그릴 수 있습니다.
+* 스케치 모드에서 커서가 크로스와이어로 바뀝니다. 서로 다른 여러 선을 그릴 수 있습니다.
 * 스케치 선은 주석 색상을 반영하며 다음 중 하나일 수 있습니다.
 
    * 자유롭게

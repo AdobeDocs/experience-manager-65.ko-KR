@@ -7,7 +7,8 @@ topic-tags: publish
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 2%
@@ -75,7 +76,7 @@ Forms 포털 구성 요소 범주
    <td>AEM Forms UI를 사용하여 에셋을 업로드하는 폴더를 구성합니다. 기본적으로 업로드된 모든 에셋이 나열됩니다. AEM Forms UI에 대한 자세한 내용은 <a href="../../forms/using/introduction-managing-forms.md" target="_blank">양식 관리 소개</a>.</td>
   </tr>
   <tr>
-   <td><p><span class="uicontrol"><strong>표시</strong></code></p> </td>
+   <td><p><span class="uicontrol"><strong>디스플레이</strong></code></p> </td>
    <td>제목 텍스트</td>
    <td>검색 및 목록 작성자 구성 요소의 제목입니다. 기본 제목은 입니다. <strong>Forms 포털</strong></td>
   </tr>

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: 5a16be40-eede-4a47-b03b-3993e285232e
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 4%
   <tr>
    <td>테스트 팀</td>
    <td>책임... </td>
-   <td>http 화이트보드...</td>
+   <td>다음과 같은 경우...</td>
   </tr>
   <tr>
    <td>개발 팀</td>

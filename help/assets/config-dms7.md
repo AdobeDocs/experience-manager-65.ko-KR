@@ -10,7 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6508'
 ht-degree: 3%
@@ -121,7 +122,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * **[!UICONTROL 회사]** - Dynamic Media 계정 이름.
      >[!IMPORTANT]
      >
-     Cloud Service의 Dynamic Media 구성은 Experience Manager 인스턴스에서 하나만 지원됩니다. 구성을 두 개 이상 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성 _아님_ Adobe에서 지원하거나 권장합니다.
+     >Cloud Service의 Dynamic Media 구성은 Experience Manager 인스턴스에서 하나만 지원됩니다. 구성을 두 개 이상 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성 _아님_ Adobe에서 지원하거나 권장합니다.
 
      <!-- CQDOC-19579 and CQDOC-19612 -->
 
@@ -152,9 +153,9 @@ Adobe 고유한 회사의 서버나 특수 서버를 사용할 특별한 배열�
 
    >[!NOTE]
    >
-   Dynamic Media - Scene7 모드에서는 버전 관리를 지원하지 않습니다. Also, delayed activation applies only if **[!UICONTROL Publish Assets]** in the Edit Dynamic Media Configuration page is set to **[!UICONTROL Upon Activation]**, and then only until the first time the asset is activated.
+   >Dynamic Media - Scene7 모드에서는 버전 관리를 지원하지 않습니다. Also, delayed activation applies only if **[!UICONTROL Publish Assets]** in the Edit Dynamic Media Configuration page is set to **[!UICONTROL Upon Activation]**, and then only until the first time the asset is activated.
    >
-   자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 라이브로 게시됩니다.
+   >자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 라이브로 게시됩니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. Dynamic Media 콘텐츠가 게시되기 전에 안전하게 미리 보기 위해 Experience Manager 작성자는 토큰 기반 유효성 검사를 사용하므로 Experience Manager 작성자는 기본적으로 Dynamic Media 콘텐츠를 미리 봅니다. 그러나 더 많은 IP를 &quot;허용 목록&quot;하여 사용자가 콘텐츠를 안전하게 미리 볼 수 있도록 액세스할 수 있습니다. Experience Manager에서 이 작업을 설정하려면 다음을 참조하십시오. [이미지 서버에 대한 Dynamic Media 게시 설정 구성 - 보안 탭](/help/assets/dm-publish-settings.md#security-tab).
@@ -255,7 +256,7 @@ Dynamic Media - Scene7 모드에서 기본 에셋 업로드 파일 크기는 2GB
 
   >[!NOTE]
   >
-  Blob 스토리지 구성에서 이 대용량 업로드 기능은 AzureSas에서 지원되지 않으므로 액세스 키 및 비밀 키로 Azure Blob 스토리지를 구성합니다.
+  >Blob 스토리지 구성에서 이 대용량 업로드 기능은 AzureSas에서 지원되지 않으므로 액세스 키 및 비밀 키로 Azure Blob 스토리지를 구성합니다.
 
 * 오크스 [다이렉트 바이너리 액세스 다운로드](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) 활성화됨(Oak *다이렉트 바이너리 액세스 업로드* 가 필수가 아닙니다).
 
@@ -361,7 +362,7 @@ Dynamic Media 색상 관리를 사용하면 올바른 에셋에 색상을 지정
 
 >[!NOTE]
 >
-기본적으로 를 선택하면 15개의 렌디션이 표시됩니다 **[!UICONTROL 표현물]** 을 선택할 때 15개의 뷰어 사전 설정 **[!UICONTROL 뷰어]** (자산의 세부 사항 보기에서) You can increase this limit. 다음을 참조하십시오 [표시되는 이미지 사전 설정 수 늘리기](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수 늘리기](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>기본적으로 를 선택하면 15개의 렌디션이 표시됩니다 **[!UICONTROL 표현물]** 을 선택할 때 15개의 뷰어 사전 설정 **[!UICONTROL 뷰어]** (자산의 세부 사항 보기에서) You can increase this limit. 다음을 참조하십시오 [표시되는 이미지 사전 설정 수 늘리기](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수 늘리기](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### 지원되는 형식의 MIME 유형 편집 {#editing-mime-types-for-supported-formats}
 
@@ -480,7 +481,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
    >[!NOTE]
    >
-   비활성화한 양식 필드는 정규식이 올바른지 확인하지 않습니다. 결과 라인 뒤에 각 요소에 대해 작성하고 있는 정규 표현식의 결과가 표시됩니다. 전체 정규 표현식은 페이지 하단에 표시됩니다.
+   >비활성화한 양식 필드는 정규식이 올바른지 확인하지 않습니다. 결과 라인 뒤에 각 요소에 대해 작성하고 있는 정규 표현식의 결과가 표시됩니다. 전체 정규 표현식은 페이지 하단에 표시됩니다.
 
 1. 필요에 따라 각 요소를 확장하고 사용할 이름 지정 규칙을 입력합니다.
 1. 필요에 따라 다음 중 하나를 수행합니다.
@@ -602,7 +603,7 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
    >[!NOTE]
    >
-   행 및 열 정규 표현식의 조합으로 다차원 회전 집합 배열 내에서 에셋의 위치를 결정할 수 없는 경우 에셋이 집합에 추가되지 않습니다. 오류도 기록됩니다.
+   >행 및 열 정규 표현식의 조합으로 다차원 회전 집합 배열 내에서 에셋의 위치를 결정할 수 없는 경우 에셋이 집합에 추가되지 않습니다. 오류도 기록됩니다.
 
 1. 이름 지정 및 생성 규칙 설정의 경우 에셋 이름 지정 규칙에서 정의한 기본 이름에 접미사 또는 접두어를 지정합니다.
 
@@ -658,7 +659,7 @@ Granite Transit Workflow 큐는 **[!UICONTROL DAM 자산 업데이트]** 워크�
 
    >[!NOTE]
    >
-   OSGi PID가 동적으로 생성되므로 직접 URL 대신 텍스트 검색이 필요합니다.
+   >OSGi PID가 동적으로 생성되므로 직접 URL 대신 텍스트 검색이 필요합니다.
 
 1. 다음에서 **[!UICONTROL 최대 병렬 작업]** 필드에서 숫자를 원하는 값으로 변경합니다.
 
@@ -682,7 +683,7 @@ Granite Workflow 큐는 임시 워크플로우에 사용됩니다. Dynamic Media
 
    >[!NOTE]
    >
-   OSGi PID가 동적으로 생성되므로 직접 URL 대신 텍스트 검색이 필요합니다.
+   >OSGi PID가 동적으로 생성되므로 직접 URL 대신 텍스트 검색이 필요합니다.
 
 1. 다음에서 **[!UICONTROL 최대 병렬 작업]** 필드에서 숫자를 원하는 값으로 변경합니다.
 
@@ -730,7 +731,7 @@ Dynamic Media이 아닌 배포에서는 다음을 복제할 수 있습니다 *�
 
 >[!NOTE]
 >
-필터는 MIME 유형에 적용되며 경로별로 지정할 수 없습니다.
+>필터는 MIME 유형에 적용되며 경로별로 지정할 수 없습니다.
 
 #### 복제를 위한 자산 필터 사용자 지정 {#customizing-asset-filters-for-replication}
 

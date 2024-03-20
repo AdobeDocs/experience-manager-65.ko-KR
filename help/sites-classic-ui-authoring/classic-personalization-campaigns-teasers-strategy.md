@@ -7,10 +7,11 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 7%
+source-wordcount: '1202'
+ht-degree: 4%
 
 ---
 
@@ -101,7 +102,7 @@ AEM 내의 티저는 다음과 같은 몇 가지 부분으로 구성됩니다.
    <td>C1 </td>
    <td>T6</td>
    <td>S6</td>
-   <td>상업<br /> </td>
+   <td>비즈니스<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -199,7 +200,7 @@ AEM 내의 티저는 다음과 같은 몇 가지 부분으로 구성됩니다.
    <td>댓글</td>
   </tr>
   <tr>
-   <td>처음</td>
+   <td>첫 번째</td>
    <td>T5</td>
    <td>T5 와 T6 만 세그먼트로 간주됩니다 <i>및</i> 가장 높은 부스트 요소를 가지고 있습니다. 반환된 목록은 T5, T6 순서이므로 T5 가 선택되어 표시됩니다.</td>
   </tr>

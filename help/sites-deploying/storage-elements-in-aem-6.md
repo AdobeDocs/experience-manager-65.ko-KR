@@ -7,7 +7,8 @@ topic-tags: platform
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 0%
@@ -116,7 +117,7 @@ Red Hat® Linux®는 THP(Transparent Huge Pages)라는 메모리 관리 알고�
 >다음 리소스를 참조하십시오.
 >
 >* Red Hat® Linux®의 Transparent Huge Pages에 대한 자세한 내용은 다음을 참조하십시오 [기사](https://access.redhat.com/solutions/46111).
-* Linux® 조정 팁은 다음을 참조하십시오 [기사](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>* Linux® 조정 팁은 다음을 참조하십시오 [기사](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 >
 
 ## 저장소 유지 관리 {#maintaining-the-repository}

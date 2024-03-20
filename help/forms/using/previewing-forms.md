@@ -1,19 +1,20 @@
 ---
-title: 양식 미리 보기
+title: 양식 미리보기
 description: 게시하거나 활성화하기 전에 양식을 미리 보고 예상과 맞는지 확인할 수 있습니다. 미리 보기 옵션은 지원되는 양식 유형에 따라 다를 수 있습니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 feature: Adaptive Forms, Foundation Components
 exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 15%
+ht-degree: 17%
 
 ---
 
-# 양식 미리 보기 {#previewing-a-form}
+# 양식 미리보기 {#previewing-a-form}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
@@ -50,7 +51,7 @@ AEM Forms에서는 저장소에 있는 양식 및 문서를 미리 볼 수 있�
  </tbody>
 </table>
 
-## 양식 미리 보기 {#previewing-a-form-1}
+## 양식 미리보기 {#previewing-a-form-1}
 
 1. 미리 보려는 에셋을 선택하고 미리 보기 를 클릭합니다 ![aem6forms_preview](assets/aem6forms_preview.png) ( 작업 도구 모음)을 참조하십시오.
 

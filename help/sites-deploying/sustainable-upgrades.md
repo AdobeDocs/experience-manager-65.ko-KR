@@ -8,10 +8,11 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 1%
+source-wordcount: '860'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +60,7 @@ AEM은 고객이 AEM 기능을 확장하고 사용자 정의할 수 있도록 �
 
 >[!NOTE]
 >
-이러한 정책은 Sling 검색 경로 기반 메커니즘에 대해서만 적용됩니다. 의 기타 영역 **/libs** 클라이언트측 라이브러리가 다음과 같이 표시될 수 있습니다. `Internal`, 하지만 여전히 표준 clientlib 포함에 사용할 수 있습니다. 이러한 경우 고객이 내부 분류를 계속 준수하는 것이 중요합니다.
+>이러한 정책은 Sling 검색 경로 기반 메커니즘에 대해서만 적용됩니다. 의 기타 영역 **/libs** 클라이언트측 라이브러리가 다음과 같이 표시될 수 있습니다. `Internal`, 하지만 여전히 표준 clientlib 포함에 사용할 수 있습니다. 이러한 경우 고객이 내부 분류를 계속 준수하는 것이 중요합니다.
 
 #### CRXDE Lite 컨텐츠 유형 표시기 {#crxde-lite-content-type-indicators}
 
@@ -81,9 +82,9 @@ CRXDE Lite에 적용된 Mixin은 다음으로 표시된 컨텐츠 노드 및 트
 
 >[!NOTE]
 >
-AEM Adobe 6.5부터는 패턴 감지기를 사용하여 컨텐츠 액세스 위반을 감지하는 것이 좋습니다. 패턴 탐지기 보고서가 더 상세하고, 더 많은 문제를 탐지하고, 긍정 오류(false positive)의 확률을 줄입니다.
+>AEM Adobe 6.5부터는 패턴 감지기를 사용하여 컨텐츠 액세스 위반을 감지하는 것이 좋습니다. 패턴 탐지기 보고서가 더 상세하고, 더 많은 문제를 탐지하고, 긍정 오류(false positive)의 확률을 줄입니다.
 >
-자세한 내용은 [패턴 감지기를 사용한 업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md).
+>자세한 내용은 [패턴 감지기를 사용한 업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md).
 
 AEM 6.5는 오버레이되거나 참조된 콘텐츠가 콘텐츠 분류와 일치하지 않는 방식으로 사용되는 경우 고객에게 경고하기 위해 상태 확인과 함께 제공됩니다.
 

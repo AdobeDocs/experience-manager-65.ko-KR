@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 8%
+source-wordcount: '1161'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 8%
 >* 이 페이지는 Adobe Experience Manager(AEM) 작성 환경을 사용할 때 기본 처리에 대한 개요를 알 수 있도록 설계되었습니다. **사이트** 콘솔을 기본으로 사용합니다.
 >
 >* 일부 기능은 일부 콘솔에서 사용할 수 없으며, 추가 기능은 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔 및 관련 기능에 대한 특정 정보는 다른 페이지에서 더 자세히 다룹니다.
->* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
+>* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 다음의 경우에 [콘솔 사용](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) 및 [페이지 편집](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## 시작 화면 {#the-welcome-screen}
@@ -129,13 +130,13 @@ ht-degree: 8%
 >
 >속성 값을 설정합니다.
 >`treeAutoExpandMax`
->켜짐:
+>날짜:
 >`/apps/wcm/core/content/siteadmin`
 >
 >또는 테마에서 전역적으로:
 >값 설정:
 >`TREE_AUTOEXPAND_MAX`
->in:
+>위치:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
 >다음을 참조하십시오 [CQ 위젯 API의 SiteAdmin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) 을 참조하십시오.
@@ -211,7 +212,7 @@ ht-degree: 8%
 
 에서 페이지 옆에 있는 색상 **게시됨** 및 **수정됨** 열은 게시 상태를 나타냅니다.
 
-| **열** | **컬러** | **설명** |
+| **열** | **색상** | **설명** |
 |---|---|---|
 | 게시됨 | 녹색 | 게시가 정상적으로 완료되었습니다. 콘텐츠가 게시되었습니다. |
 | 게시됨 | 노란색 | 게시가 보류 중입니다. 게시 확인은 시스템에서 아직 받지 못했습니다. |

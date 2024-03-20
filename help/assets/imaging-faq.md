@@ -8,7 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3547'
 ht-degree: 0%
@@ -144,7 +145,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * AVIF 전환이 유용하지 않거나 브라우저가 AVIF를 지원하지 않는 경우 자동으로 WebP로 전환합니다.
 * Safari에서 WebP를 지원하지 않는 경우 자동으로 JPEG2000으로 전환
 * IE 9+용 JPEGXR로 자동 변환하거나 Edge에서 WebP를 지원하지 않는 경우\
-  | 이미지 형식 | 지원되는 브라우저 | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  | 이미지 형식 | 지원되는 브라우저 | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | 웹P | [https://caniuse.com/webp](https://caniuse.com/webp) | | 2000 JPEG | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 * 이러한 형식을 지원하지 않는 브라우저의 경우 원래 요청한 이미지 형식이 제공됩니다.
 
 원본 이미지 크기가 Smart Imaging에서 생성하는 크기보다 작으면 원본 이미지가 제공됩니다.

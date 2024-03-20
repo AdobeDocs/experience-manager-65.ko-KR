@@ -1,12 +1,14 @@
 ---
 title: 컨텐츠 조각의 원격 Adobe Experience Manager GraphQL 쿼리 인증
-description: Headless 콘텐츠 전송을 보호하기 위해 원격 Adobe Experience Manager GraphQL 쿼리에 필요한 인증을 이해합니다.
+description: Headless 콘텐츠 게재를 보호하기 위해 원격 Adobe Experience Manager GraphQL 쿼리에 필요한 인증을 이해합니다.
 feature: Content Fragments,GraphQL API
 exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+solution: Experience Manager, Experience Manager Sites
+role: Developer
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 11%
+ht-degree: 42%
 
 ---
 
@@ -16,7 +18,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->테스트 및 개발을 위해 다음을 사용하여 AEM GraphQL API에 직접 액세스할 수도 있습니다. [GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
+>테스트 및 개발을 위해 [GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)를 사용하여 AEM GraphQL API에 직접 액세스할 수도 있습니다.
 
 인증을 위해 서드파티 서비스는 AEM 계정 사용자 이름과 암호를 사용하여 인증해야 합니다.
 

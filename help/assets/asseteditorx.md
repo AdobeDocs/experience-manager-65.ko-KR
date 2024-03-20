@@ -5,10 +5,11 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 14%
+source-wordcount: '653'
+ht-degree: 12%
 
 ---
 
@@ -196,7 +197,7 @@ HTML 부분에서 앞의 제목 세트(에셋 또는 페이지 제목)를 사용
    </div>
    ```
 
-1. To make the component available, you need to be able to edit it. 구성 요소를 편집할 수 있도록 하려면 CRXDE Lite에서 노드를 추가합니다 `cq:editConfig` 일차제품의 것 `cq:EditConfig`. So that you can remove paragraphs, add a multi-value property `cq:actions` with a single value of `DELETE`.
+1. To make the component available, you need to be able to edit it. 구성 요소를 편집할 수 있도록 하려면 CRXDE Lite에서 노드를 추가합니다 `cq:editConfig` 일차제품의 것 `cq:EditConfig`. 단락을 제거하고 다중 값 속성을 추가할 수 있습니다 `cq:actions` 단일 값 `DELETE`.
 
 1. 브라우저로 이동한 다음 샘플 페이지에서 찾습니다(예: `asseteditor.html`) 디자인 모드로 전환하고 단락 시스템의 새 구성 요소를 활성화합니다.
 

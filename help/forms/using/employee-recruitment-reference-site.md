@@ -4,9 +4,10 @@ description: AEM Forms 참조 사이트에서는 조직이 AEM Forms 기능을 �
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -72,7 +73,7 @@ We.Finance 홈 페이지
 
 We.Finance 경력 페이지
 
-Sarah는 구인 공고를 접수하는 것을 클릭합니다. 작업 지원 양식이 열립니다. 그녀는 신청서에 모든 세부 사항을 기재하여 제출한다.
+Sarah가 구인 공고를 접수하는 것을 클릭합니다. 작업 지원 양식이 열립니다. 그녀는 신청서에 모든 세부 사항을 기재하여 제출한다.
 
 ![job-application-form](assets/job-application-form.png)
 

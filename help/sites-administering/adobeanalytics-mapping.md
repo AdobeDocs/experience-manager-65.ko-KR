@@ -7,10 +7,11 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 1%
+source-wordcount: '1449'
+ht-degree: 0%
 
 ---
 
@@ -197,9 +198,9 @@ RSID를 선택하면 해당 RSID에 속하는 모든 변수가 목록에 추가�
 >
 >예를 들어 다음 `prop3` 다음을 추가할 수 있습니다.
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-을(를) 전송하려면 *제목* 와 연결된 페이지 *sitesection* 사용 *:* (콜론) 및 접두사가 있는 *Adobe* 다음으로: `prop3`
+>을(를) 전송하려면 *제목* 와 연결된 페이지 *sitesection* 사용 *:* (콜론) 및 접두사가 있는 *Adobe* 다음으로: `prop3`
 >
 
 >[!CAUTION]
 >
-주어진 시간에 하나의 CQ 변수만 Adobe Analytics 변수에 매핑할 수 있습니다.
+>주어진 시간에 하나의 CQ 변수만 Adobe Analytics 변수에 매핑할 수 있습니다.

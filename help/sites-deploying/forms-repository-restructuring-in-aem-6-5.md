@@ -6,9 +6,10 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: d555422e-dc97-4d45-9525-4299d22315e2
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '519'
 ht-degree: 7%
 
 ---
@@ -42,49 +43,49 @@ ht-degree: 7%
 |---|---|
 | **새 위치** | `/libs/fd/rte` |
 | **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 | **이전 위치** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **새 위치** | `/libs/fd/af/authoring/clientlibs` |
 | **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 | **이전 위치** | `/etc/clientlibs/fd/xfaforms` |
 |---|---|
 | **새 위치** | `/libs/fd/xfaforms/clientlibs/` |
 | **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 | **이전 위치** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **새 위치** | `/libs/fd/af/runtime/clientlibs` |
 | **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 | **이전 위치** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **새 위치** | `/libs/fd/af/runtime/clientlibs` |
 | **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 | **이전 위치** | `/etc/clientlibs/fd/expeditor` |
 |---|---|
 | **새 위치** | `/libs/fd/expeditor/clientlibs` |
 | **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스에 대해서는 새 에셋에서 새 경로를 사용해야 합니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 | **이전 위치** | `/etc/clientlibs/fd/fmaddon` |
 |---|---|
 | **새 위치** | `/libs/fd/fmaddon` |
 | **구조 조정 지침** | 이러한 clientlib 변경은 권장되거나 지원되지 않습니다. 이러한 clientlib을 수정한 경우 AEM 제공 코드를 사용하도록 롤백해야 합니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 | **이전 위치** | `/etc/aep` |
 |---|---|
 | **새 위치** | `/var/fd/content/annotations` |
 | **구조 조정 지침** | 이러한 clientlib 변경은 권장되거나 지원되지 않습니다. 이러한 clientlib을 수정한 경우 AEM 제공 코드를 사용하도록 롤백해야 합니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 ## 향후 업그레이드 전 {#prior-to-upgrade}
 
@@ -94,7 +95,7 @@ ht-degree: 7%
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
 | **구조 조정 지침** | 다음 [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거할 유틸리티입니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 ### Recaptcha Cloud Service 구성 {#recaptcha-cloud-service-configurations}
 
@@ -102,7 +103,7 @@ ht-degree: 7%
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
 | **구조 조정 지침** | 다음 [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거할 유틸리티입니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 ### Typekit Cloud Service 구성 {#typekit-cloud-service-configurations}
 
@@ -110,7 +111,7 @@ ht-degree: 7%
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
 | **구조 조정 지침** | 다음 [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거할 유틸리티입니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 ### 기타 {#misc-1}
 
@@ -118,10 +119,10 @@ ht-degree: 7%
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
 | **구조 조정 지침** | 다음 [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거할 유틸리티입니다. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |
 
 | **이전 위치** | `/etc/designs/fd/fp` |
 |---|---|
 | **새 위치** | `/libs/fd/fp` |
 | **구조 조정 지침** | /etc 템플릿에 대한 참조를 업데이트하여 해당 템플릿을 가리킵니다 `/libs` 대응 항목. |
-| **메모** | N/A |
+| **메모** | 해당 사항 없음 |

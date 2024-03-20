@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: ff9d054d0b08f5f98f5edb63975a0dbc8370d42f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -23,11 +24,11 @@ Adobe Experience Cloud의 일부인 Adobe CQ 저장소 내에 있는 노드 및 
 
 >[!NOTE]
 >
-JCR API를 사용하려면 다음을 추가합니다. `jackrabbit-standalone-2.4.0.jar` 파일을 Java™ 응용 프로그램의 클래스 경로로 복사합니다. 다음 Java™ JCR API 웹 페이지에서 이 JAR 파일을 가져올 수 있습니다. [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>JCR API를 사용하려면 다음을 추가합니다. `jackrabbit-standalone-2.4.0.jar` 파일을 Java™ 응용 프로그램의 클래스 경로로 복사합니다. 다음 Java™ JCR API 웹 페이지에서 이 JAR 파일을 가져올 수 있습니다. [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
-JCR 쿼리 API를 사용하여 Adobe CQ JCR을 쿼리하는 방법은 다음을 참조하십시오. [JCR API를 사용하여 Adobe Experience Manager 데이터 쿼리](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
+>JCR 쿼리 API를 사용하여 Adobe CQ JCR을 쿼리하는 방법은 다음을 참조하십시오. [JCR API를 사용하여 Adobe Experience Manager 데이터 쿼리](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## 저장소 인스턴스 만들기 {#create-a-repository-instance}
 

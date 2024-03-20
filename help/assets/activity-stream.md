@@ -5,10 +5,11 @@ contentOwner: AG
 feature: Asset Management
 role: User, Admin
 exl-id: 28dc0aa5-f2be-4e27-b7d8-415569b7ecd4
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 23%
+source-wordcount: '204'
+ht-degree: 12%
 
 ---
 
@@ -27,7 +28,7 @@ ht-degree: 23%
 * 거부
 * 이동
 
-The activity logs to be displayed in the timeline are fetched from the location `/var/audit/com.day.cq.dam/content/dam` in CRX, where log files are stored. 또한 타임라인 활동은 새 에셋이 업로드되거나 기존 에셋을 수정하고 체크 인하면 기록됩니다 [!DNL Experience Manager] 경유 [Adobe 에셋 링크](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 또는 [Experience Manager 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+타임라인에 표시될 활동 로그를 위치에서 가져옵니다 `/var/audit/com.day.cq.dam/content/dam` 로그 파일이 저장되는 CRX에서 또한 타임라인 활동은 새 에셋이 업로드되거나 기존 에셋을 수정하고 체크 인하면 기록됩니다 [!DNL Experience Manager] 경유 [Adobe 에셋 링크](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 또는 [Experience Manager 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >

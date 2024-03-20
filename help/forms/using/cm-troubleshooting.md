@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '217'
 ht-degree: 1%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 1%
 * 텍스트 모듈에 대한 데이터 바인딩이 없습니다.
 * 다음에 필요한 속성 정보 제공
 
-### 원인 {#reason}
+### 이유 {#reason}
 
 이러한 오류는 다음 중 하나로 인해 발생할 수 있습니다.
 

@@ -2,7 +2,8 @@
 title: Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법
 description: 이 문서에서는 Apache Maven을 기반으로 하는 AEM 프로젝트를 설정하는 방법에 대해 설명합니다
 exl-id: 451913bf-bb1e-4444-aee5-968ac30b5c9d
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 1%

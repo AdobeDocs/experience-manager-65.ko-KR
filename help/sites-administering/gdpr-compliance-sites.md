@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '824'
 ht-degree: 92%
 
 ---
@@ -105,7 +106,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 * 브라우저의 콘솔 사용. 예를 들어
 
-   * 크롬:
+   * Chrome:
 
       * Developer Tools > Application > Storage를 엽니다.
 
@@ -155,7 +156,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 * 브라우저의 콘솔 사용:
 
-   * 크롬 - Developer Tools > Application > Storage 열기:
+   * Chrome - Developer Tools > Application > Storage 열기:
 
       * Local Storage > (웹 사이트) > ContextHubPersistence
       * Session Storage > (웹 사이트) > ContextHubPersistence

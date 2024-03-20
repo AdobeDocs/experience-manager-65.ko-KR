@@ -7,9 +7,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ PDF Generator을 사용하면 특정 유형의 파일에 대해 다중 스레드
 
 >[!NOTE]
 >
-다중 스레드 파일 변환은 Microsoft® Excel, Microsoft® Visio, Microsoft® Project 또는 Microsoft® Publisher에서 지원되지 않습니다.
+>다중 스레드 파일 변환은 Microsoft® Excel, Microsoft® Visio, Microsoft® Project 또는 Microsoft® Publisher에서 지원되지 않습니다.
 
 OpenOffice 또는 PDFMaker의 각 인스턴스는 별도의 사용자 계정을 사용하여 실행됩니다. 추가하는 각 사용자 계정은 Forms 서버 컴퓨터에 대한 관리 권한이 있는 유효한 사용자여야 합니다. 클러스터된 환경에서는 클러스터의 모든 노드에 대해 동일한 사용자 세트가 유효해야 합니다.
 
@@ -67,7 +68,7 @@ Windows Server 2008에서 OpenOffice, Microsoft® Word 또는 Microsoft® PowerP
 
    >[!NOTE]
    >
-   시스템 사용자 및 PDFG 사용자 역할을 &#39;user1&#39; 및 &#39;user2&#39;에 할당했는지 확인합니다. 사용자에게 PDFG 역할을 할당하려면 [사용자 계정 추가](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >시스템 사용자 및 PDFG 사용자 역할을 &#39;user1&#39; 및 &#39;user2&#39;에 할당했는지 확인합니다. 사용자에게 PDFG 역할을 할당하려면 [사용자 계정 추가](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. /etc/sudoers 파일에서도 줄 앞에 숫자 기호(#)를 추가하여 이 줄을 찾아 주석 처리합니다.
 
@@ -88,7 +89,7 @@ Windows Server 2008에서 OpenOffice, Microsoft® Word 또는 Microsoft® PowerP
 
 >[!NOTE]
 >
-OpenOffice는 모든 PDFG 사용자가 액세스할 수 있는 디렉토리 위치에 설치해야 합니다. PDFG 사용자로 로그인한 다음 문제 없이 OpenOffice를 시작할 수 있는지 확인하여 이를 확인할 수 있습니다.
+>OpenOffice는 모든 PDFG 사용자가 액세스할 수 있는 디렉토리 위치에 설치해야 합니다. PDFG 사용자로 로그인한 다음 문제 없이 OpenOffice를 시작할 수 있는지 확인하여 이를 확인할 수 있습니다.
 
 ### 사용자 계정 추가 {#add-a-user-account}
 
@@ -97,7 +98,7 @@ OpenOffice는 모든 PDFG 사용자가 액세스할 수 있는 디렉토리 위�
 
    >[!NOTE]
    >
-   OpenOffice용 사용자를 구성하는 경우 OpenOffice의 인스턴스 수는 이 단계에서 지정된 사용자 계정 수보다 클 수 없습니다.
+   >OpenOffice용 사용자를 구성하는 경우 OpenOffice의 인스턴스 수는 이 단계에서 지정된 사용자 계정 수보다 클 수 없습니다.
 
 1. Forms 서버를 다시 시작합니다.
 

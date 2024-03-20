@@ -7,7 +7,8 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -80,19 +81,20 @@ AEM 인스턴스에 대해 SSO를 구성하려면 다음을 구성합니다. [SS
 >
 >또한 을 사용하는 경우 [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Microsoft® IIS(인터넷 정보 서버)를 사용하는 경우 다음에서 추가 구성이 필요합니다.
 >
-* `disp_iis.ini`
-* IIS
+>* `disp_iis.ini`
+>* IIS
 >
-위치 `disp_iis.ini` 설정: (참조) [Microsoft® Internet Information Server를 사용하여 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) (전체 세부 정보)
+>위치 `disp_iis.ini` 설정:
+>(참조 [Microsoft® Internet Information Server를 사용하여 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) (전체 세부 정보)
 >
-* `servervariables=1` (IIS 서버 변수를 요청 헤더로 원격 인스턴스에 전달합니다.)
-* `replaceauthorization=1` (&quot;Basic&quot; 이외의 &quot;Authorization&quot;이라는 헤더를 &quot;Basic&quot;에 해당하는 헤더로 바꿉니다.)
+>* `servervariables=1` (IIS 서버 변수를 요청 헤더로 원격 인스턴스에 전달합니다.)
+>* `replaceauthorization=1` (&quot;Basic&quot; 이외의 &quot;Authorization&quot;이라는 헤더를 &quot;Basic&quot;에 해당하는 헤더로 바꿉니다.)
 >
-IIS에서:
+>IIS에서:
 >
-* disable **익명 액세스**
+>* disable **익명 액세스**
 >
-* 활성화 **통합 Windows 인증**
+>* 활성화 **통합 Windows 인증**
 >
 
 를 사용하여 콘텐츠 트리의 모든 섹션에 적용되는 인증 핸들러를 확인할 수 있습니다. **인증자** felix 콘솔 옵션. 예:
@@ -151,7 +153,7 @@ Transfer-Encoding: chunked
 
 >[!NOTE]
 >
-브라우저에서 요청 매개 변수를 사용할 때 CSS 없이 일부 HTML만 표시됩니다. 이것은 HTML의 모든 요청이 요청 매개 변수 없이 수행되기 때문입니다.
+>브라우저에서 요청 매개 변수를 사용할 때 CSS 없이 일부 HTML만 표시됩니다. 이것은 HTML의 모든 요청이 요청 매개 변수 없이 수행되기 때문입니다.
 
 ## AEM 로그아웃 링크 제거 {#removing-aem-sign-out-links}
 

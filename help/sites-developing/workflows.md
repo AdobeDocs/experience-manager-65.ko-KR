@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 3%
@@ -194,7 +195,7 @@ If **다중 리소스 지원** 가 워크플로우 모델에 대해 활성화되
    |---|---|
    | 1단계 | 만들기 |
    | 2단계 | 만들기 |
-   | 3단계 | 리뷰 |
+   | 3단계 | 검토 |
    | 4단계 | 승인 |
    | 5단계 | 완료 |
    | 6단계 | 완료 |

@@ -9,10 +9,11 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 6%
+source-wordcount: '805'
+ht-degree: 3%
 
 ---
 
@@ -38,7 +39,7 @@ ht-degree: 6%
 
 제품 페이지의 URL을 구성하고 다음 옵션을 지원합니다.
 
-* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (기본값)
+* `{{page}}.html/{{sku}}.html#{{variant_sku}}`(기본값)
 * `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
@@ -60,7 +61,7 @@ ht-degree: 6%
 
 범주 또는 제품 목록 페이지의 URL을 구성하고 다음 옵션을 지원합니다.
 
-* `{{page}}.html/{{url_path}}.html` (기본값)
+* `{{page}}.html/{{url_path}}.html`(기본값)
 * `{{page}}.html/{{url_key}}.html`
 
 필요한 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia):

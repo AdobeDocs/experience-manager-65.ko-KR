@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 1%
+source-wordcount: '1857'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +36,7 @@ ht-degree: 1%
 
 다음 표에서는 워크플로우와 프로그래밍 방식으로 상호 작용할 때 사용할 여러 주요 Java 개체의 참조 설명서에 대한 링크를 제공합니다. 다음 예제에서는 코드에서 클래스 개체를 가져오고 사용하는 방법을 보여 줍니다.
 
-| 기능 | 오브젝트 |
+| 기능 | 개체 |
 |---|---|
 | 워크플로우 액세스 | [`WorkflowSession`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
 | 워크플로우 인스턴스 실행 및 쿼리 | [`Workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
@@ -151,7 +152,7 @@ REST API에서는 다음 작업이 지원됩니다.
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>새 워크플로우 모델 만들기. 매개 변수인 경우 <code>title</code> 가 전송되면 지정된 제목을 가진 새 모델이 만들어집니다. JSON 모델 정의를 매개 변수로 첨부 <code>model</code> 제공된 정의에 따라 새 워크플로우 모델을 만듭니다.<br /> A <code>201</code> 응답(<code>CREATED</code>)는 새 워크플로우 모델 리소스의 URL이 포함된 위치 헤더로 다시 전송됩니다.<br /> 모델 정의가 이라는 파일 매개변수로 첨부된 경우에도 마찬가지입니다 <code>modelfile</code>.<br /> 다음의 두 경우에 <code>model</code> 및 <code>modelfile</code> 매개 변수, 라는 추가 매개 변수 <code>type</code> 직렬화 형식을 정의하는 데 필요합니다. OSGI API를 사용하여 새로운 직렬화 형식을 통합할 수 있습니다. 표준 JSON 직렬 변환기는 워크플로우 엔진과 함께 제공됩니다. 유형은 JSON입니다. 형식의 예는 아래를 참조하십시오.</td>
+   <td>새 워크플로우 모델을 만듭니다. 매개 변수인 경우 <code>title</code> 가 전송되면 지정된 제목을 가진 새 모델이 만들어집니다. JSON 모델 정의를 매개 변수로 첨부 <code>model</code> 제공된 정의에 따라 새 워크플로우 모델을 만듭니다.<br /> A <code>201</code> 응답(<code>CREATED</code>)는 새 워크플로우 모델 리소스의 URL이 포함된 위치 헤더로 다시 전송됩니다.<br /> 모델 정의가 이라는 파일 매개변수로 첨부된 경우에도 마찬가지입니다 <code>modelfile</code>.<br /> 다음의 두 경우에 <code>model</code> 및 <code>modelfile</code> 매개 변수, 라는 추가 매개 변수 <code>type</code> 직렬화 형식을 정의하는 데 필요합니다. OSGI API를 사용하여 새로운 직렬화 형식을 통합할 수 있습니다. 표준 JSON 직렬 변환기는 워크플로우 엔진과 함께 제공됩니다. 유형은 JSON입니다. 형식의 예는 아래를 참조하십시오.</td>
   </tr>
  </tbody>
 </table>

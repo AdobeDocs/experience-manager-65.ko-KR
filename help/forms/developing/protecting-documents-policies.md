@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '15462'
+source-wordcount: '15394'
 ht-degree: 0%
 
 ---
@@ -1745,7 +1746,7 @@ Rights Management API(웹 서비스)를 사용하여 이벤트를 검색합니�
     </tr>
     <tr>
     <td><p><code>USER_CHANGE_PASSWORD_EVENT</code></p></td>
-    <td><p>1000</p></td>
+    <td><p>1000년</p></td>
     </tr>
     <tr>
     <td><p><code>USER_REGISTER_EVENT</code></p></td>

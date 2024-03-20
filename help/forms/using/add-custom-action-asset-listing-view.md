@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 4%
+source-wordcount: '1333'
+ht-degree: 3%
 
 ---
 
@@ -68,7 +69,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 
       ![오버레이 노드](assets/2_createnodedownloadflatpdf.png)
 
-   1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다.
+   1. 클릭 **확인**. 폴더 구조는 앱 폴더에 생성됩니다.
 
       **모두 저장**&#x200B;을 클릭합니다.
 
@@ -94,7 +95,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
         <td><strong>값 및 설명</strong></td>
         </tr>
         <tr>
-        <td>class</td>
+        <td>클래스</td>
         <td>문자열</td>
         <td>foundation-collection-action</td>
         </tr>
@@ -150,7 +151,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 
       **노드 유형 일치:** 선택됨
 
-   1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다. **모두 저장**&#x200B;을 클릭합니다.
+   1. 클릭 **확인**. 폴더 구조는 앱 폴더에 생성됩니다. **모두 저장**&#x200B;을 클릭합니다.
 
 1. js 폴더에서 다음 단계를 사용하여 버튼의 작업 처리에 대한 코드로 formation.js 파일을 만듭니다.
 
@@ -240,7 +241,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 
       **노드 유형 일치:** 선택됨
 
-   1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다.
+   1. 클릭 **확인**. 폴더 구조는 앱 폴더에 생성됩니다.
 
    1. **모두 저장**&#x200B;을 클릭합니다.
 

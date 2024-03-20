@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2244'
-ht-degree: 25%
+source-wordcount: '2227'
+ht-degree: 20%
 
 ---
 
@@ -24,12 +25,12 @@ ht-degree: 25%
 
 스마트 컨텐츠 서비스를 사용하기 전에 다음을 확인하십시오.
 
-* [Adobe 개발자 콘솔과 통합](#integrate-adobe-io).
+* [Adobe Developer 콘솔과 통합](#integrate-adobe-io).
 * [스마트 컨텐츠 서비스 교육](#training-the-smart-content-service).
 
 * 최신 버전 설치 [[!DNL Experience Manager] 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
-## Adobe 개발자 콘솔과 통합 {#integrate-adobe-io}
+## Adobe Developer 콘솔과 통합 {#integrate-adobe-io}
 
 Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요청을 스마트 컨텐츠 서비스로 전달하기 전에 Adobe Developer 콘솔 게이트웨이로 서비스 자격 증명을 인증합니다. 통합하려면 조직에 대한 관리자 권한이 있는 Adobe ID 계정과, 조직에 대해 구매 및 활성화된 Smart Content Service 라이선스가 필요합니다.
 
@@ -123,7 +124,7 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
 1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. **[!UICONTROL 제품 프로필 선택]** 페이지에서 **[!UICONTROL 스마트 컨텐츠 서비스]**&#x200B;를 선택합니다. **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 제품 프로필 선택]** 페이지에서 **[!UICONTROL 스마트 컨텐츠 서비스]**&#x200B;를 선택합니다. 클릭 **[!UICONTROL 구성된 API 저장]**.
 
    페이지에 구성에 대한 자세한 정보가 표시됩니다. 이 값을 복사하고 추가하려면 이 페이지를 열어 두십시오. [!UICONTROL 자산 스마트 태그 지정 서비스 설정] 의 클라우드 구성 [!DNL Experience Manager] 스마트 태그를 구성합니다.
 
@@ -144,14 +145,14 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
 1. 필드용 [!UICONTROL Api 키], [!UICONTROL 기술 계정 ID], [!UICONTROL 조직 ID], 및 [!UICONTROL 클라이언트 암호]에서 생성된 다음 값을 복사하여 사용합니다. [Adobe Developer 콘솔 통합](#create-adobe-i-o-integration).
 
-   | [!UICONTROL 자산 스마트 태깅 서비스 설정] | [!DNL Adobe Developer Console] 통합 필드 |
+   | [!UICONTROL 자산 스마트 태그 지정 서비스 설정] | [!DNL Adobe Developer Console] 통합 필드 |
    |--- |--- |
    | [!UICONTROL Api 키] | [!UICONTROL 클라이언트 ID] |
    | [!UICONTROL 기술 계정 ID] | [!UICONTROL 기술 계정 ID] |
    | [!UICONTROL 조직 ID] | [!UICONTROL 조직 ID] |
    | [!UICONTROL 클라이언트 암호] | [!UICONTROL 클라이언트 암호] |
 
-### 구성 유효성 확인 {#validate-the-configuration}
+### 구성 유효성 검사 {#validate-the-configuration}
 
 구성을 완료한 후 JMX MBean을 사용하여 구성의 유효성을 검사할 수 있습니다. 유효성을 검사하려면 다음 단계를 수행합니다.
 
@@ -177,7 +178,7 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
    ![DAM 자산 업데이트 워크플로우에서 프로세스 썸네일 단계 이후 스마트 태그 자산 단계 추가](assets/smart-tag-in-dam-update-asset-workflow.png)
 
-   *그림: DAM 자산 업데이트 워크플로우에서 프로세스 썸네일 단계 이후에 스마트 태그 자산 단계를 추가합니다.*
+   *그림: 의 프로세스 썸네일 단계 이후에 스마트 태그 자산 단계 추가 [!UICONTROL DAM 자산 업데이트] 워크플로입니다.*
 
 1. Open the step in edit mode. **[!UICONTROL 고급 설정]**&#x200B;에서 **[!UICONTROL 핸들러 고급]** 옵션을 선택해야 합니다.
 
@@ -200,7 +201,7 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
    *그림: 스마트 태그 단계를 추가하도록 DAM 자산 업데이트 워크플로우를 구성하고 스마트 태그 플래그 무시 를 선택합니다.*
 
-1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 프로세스 단계를 닫은 다음 워크플로우를 저장합니다.
+1. 클릭 **[!UICONTROL 확인]** 을 클릭하여 프로세스 단계를 닫은 다음 워크플로우를 저장합니다.
 
 ## 스마트 컨텐츠 서비스 교육 {#training-the-smart-content-service}
 
@@ -238,7 +239,7 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
 ![교육 지침을 설명하는 예제 이미지](/help/assets/assets/do-not-localize/distraction.png)
 
-**Completeness:** If an image qualifies for more than one tag, add all applicable tags before including the image for training. For example, for tags, such as `raincoat` and `model-side-view`, add both the tags on the eligible asset before including it for training.
+**Completeness:** If an image qualifies for more than one tag, add all applicable tags before including the image for training. (예: 태그) `raincoat` 및 `model-side-view`을(를) 통해 적격 에셋의 태그를 모두 추가한 다음 교육에 포함합니다.
 
 ![교육 지침을 설명하는 예제 이미지](/help/assets/assets/do-not-localize/completeness.png)
 

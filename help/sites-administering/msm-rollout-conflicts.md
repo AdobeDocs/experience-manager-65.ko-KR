@@ -7,10 +7,11 @@ topic-tags: site-features
 content-type: reference
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 23%
+ht-degree: 20%
 
 ---
 
@@ -46,7 +47,7 @@ ht-degree: 23%
 
   라이브 카피 분기에 수동으로 생성된 페이지. 한 개의 하위 페이지, `lc-level-1`.
 
-   * 게시에서 하위 페이지와 함께 `/b`로 활성화됨.
+   * 게시에서 다음으로 활성화됨 `/b`을 추가합니다.
 
 **롤아웃 이전**
 
@@ -94,12 +95,12 @@ AEM은 다음을 제공합니다.
 
    * `ResourceNameRolloutConflictHandler`
 
-* [맞춤화된 핸들러](#customized-handlers) 구현 가능성.
-* 각 개별 핸들러의 우선 순위를 설정할 수 있는 서비스 순위 메커니즘. 순위가 가장 높은 서비스가 사용됩니다.
+* 구현 가능성 [사용자 지정 처리기](#customized-handlers).
+* 각 개별 처리기의 우선 순위를 설정할 수 있는 서비스 순위 메커니즘. 순위가 가장 높은 서비스가 사용됩니다.
 
 ### 기본 충돌 핸들러 {#default-conflict-handler}
 
-기본 충돌 핸들러:
+기본 충돌 처리기는
 
 * 이(가) 호출됨 `ResourceNameRolloutConflictHandler`
 

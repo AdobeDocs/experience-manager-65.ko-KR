@@ -8,7 +8,8 @@ content-type: reference
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 22%
@@ -41,7 +42,7 @@ Dynamic Media 전용 기능에는 다음이 포함됩니다.
 * [스핀 세트](spin-sets.md)
 * [비디오](video.md)
 * [Dynamic Media 자산 전송](delivering-dynamic-media-assets.md)
-* [에셋 관리](managing-assets.md)
+* [자산 관리](managing-assets.md)
 * [빠른 보기를 사용하여 사용자 정의 팝업 제작](custom-pop-ups.md)
 
 참조: [Dynamic Media 설정](administering-dynamic-media.md).

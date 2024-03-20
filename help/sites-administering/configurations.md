@@ -2,7 +2,8 @@
 title: 구성 및 구성 브라우저
 description: AEM 구성 및 AEM에서 작업 공간 설정을 관리하는 방법을 이해합니다.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 5%

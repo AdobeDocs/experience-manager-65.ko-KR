@@ -2,7 +2,8 @@
 title: 프로젝트
 description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 이 엔티티는 공유 환경을 통해 프로젝트를 쉽게 관리할 수 있습니다.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 27%

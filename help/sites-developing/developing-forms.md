@@ -7,7 +7,8 @@ topic-tags: components
 content-type: reference
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 1%
@@ -36,7 +37,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 문서에서는 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) 클래식 UI에서. Adobe은 새 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md) 터치 지원 UI에서 양식 개발용
+>이 문서에서는 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) 클래식 UI에서. Adobe은 새 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md) 터치 지원 UI에서 양식 개발용
 
 ## 양식 값 미리 로드 {#preloading-form-values}
 

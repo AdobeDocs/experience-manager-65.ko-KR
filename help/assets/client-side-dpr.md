@@ -3,9 +3,11 @@ title: 클라이언트측 장치 픽셀 비율이 있는 스마트 이미징 사
 description: Dynamic Media을 사용하는 Adobe Experience Manager as a Cloud Service에서 스마트 이미징과 함께 클라이언트측 장치 픽셀 비율을 사용하는 방법에 대해 알아봅니다.
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
-source-git-commit: c8682118f15132063073df5cdc2b576b6e62a0c8
+solution: Experience Manager, Experience Manager Assets
+feature: Smart Imaging
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -70,4 +72,3 @@ ht-degree: 0%
 >[!MORELIKETHIS]
 >
 >* [스마트 이미징](/help/assets/imaging-faq.md)
-

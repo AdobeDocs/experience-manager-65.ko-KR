@@ -7,10 +7,11 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 1%
+source-wordcount: '1767'
+ht-degree: 0%
 
 ---
 
@@ -141,7 +142,7 @@ Geometrixx의 뉴스레터 텍스트 구성 요소에 사전 정의된 변수를
 >
 >기본적으로 매개 변수의 값은 입니다. `localhost:4502` 실행 중인 인스턴스의 포트가 변경되면 및 작업을 완료할 수 없습니다.
 
-널리 사용되는 여러 이메일 클라이언트에서 뉴스레터가 리드에게 어떻게 표시되는지 시험해 봅니다. 기본적으로 뉴스레터는 선택된 이메일 클라이언트가 없는 상태로 열립니다.
+일반 이메일 클라이언트 간에 전환하여 뉴스레터가 리드에게 어떻게 표시되는지 확인합니다. 기본적으로 뉴스레터는 선택된 이메일 클라이언트가 없는 상태로 열립니다.
 
 현재 다음 이메일 클라이언트에서 뉴스레터를 볼 수 있습니다.
 

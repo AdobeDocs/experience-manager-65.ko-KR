@@ -8,7 +8,8 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2354'
 ht-degree: 2%
@@ -35,7 +36,7 @@ Dynamic Media은 다음과 같은 3D 형식을 지원합니다.
 
 참조: [지원되는 3D 형식](/help/assets/assets-formats.md).
 
-| 3D 파일 확장명 | 파일 형식 | MIME 유형 | 메모 |
+| 3D 파일 확장명 | 파일 포맷 | MIME 유형 | 메모 |
 |---|---|---|---|
 | GLB | 이진 GL 전송 | model/gltf-binary | 재료 및 텍스처를 단일 자산으로 포함합니다. |
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |

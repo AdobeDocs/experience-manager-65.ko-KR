@@ -7,7 +7,8 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 17%
@@ -89,7 +90,7 @@ ht-degree: 17%
 
 다음은 다음 자산 유형에 대해 유효합니다(일부는 페이지/단락 시스템에 따라 다름).
 
-| 자산 유형 | 결과 구성 요소 유형 |
+| 에셋 유형 | 결과 구성 요소 유형 |
 |---|---|
 | 이미지 | 이미지 |
 | 문서 | 다운로드 |

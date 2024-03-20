@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1895'
 ht-degree: 20%
 
 ---
@@ -287,7 +288,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지에 대한 내부 링�
 
      각 참조 페이지에 대해 선택/선택 취소할 수 있습니다.
 
-   * **재게시**
+   * **다시 게시**
 
      참조 페이지를 다시 게시합니다. 각 개별 페이지에 대해 이 페이지를 선택할 수 있습니다.
 

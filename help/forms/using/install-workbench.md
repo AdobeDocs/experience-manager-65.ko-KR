@@ -5,9 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -158,13 +159,13 @@ Workbench를 설치하기 전에 환경에 Workbench를 실행하는 데 필요�
 
    >[!NOTE]
    >
-   이 옵션을 선택 취소하여 Acrobat 10과 함께 설치된 디자이너를 계속 사용할 수 있습니다.
+   >이 옵션을 선택 취소하여 Acrobat 10과 함께 설치된 디자이너를 계속 사용할 수 있습니다.
 
 1. 나열된 기본 디렉터리를 그대로 사용하거나 [선택]을 클릭하고 Workbench를 설치할 디렉터리로 이동한 후 [다음]을 클릭합니다.
 
    >[!NOTE]
    >
-   설치 디렉토리 경로에는 #(파운드) 및 $(달러) 문자를 사용할 수 없습니다.
+   >설치 디렉토리 경로에는 #(파운드) 및 $(달러) 문자를 사용할 수 없습니다.
 
 1. 사전 설치 요약을 검토하고 설치 를 클릭합니다. 설치 프로그램에 설치 진행률이 표시됩니다.
 1. 설치 요약을 검토합니다. AEM Forms Workbench 시작을 선택하여 Workbench를 시작한 후 다음을 클릭합니다.
@@ -184,7 +185,7 @@ Workbench를 사용하려면 일반적으로 별도의 컴퓨터에서 실행 �
 
 >[!NOTE]
 >
-EMC Documentum® 또는 IBM® FileNet Repository Provider를 사용하도록 AEM Forms을 구성한 경우 AEM Forms 관리 콘솔에서 기본값으로 구성된 저장소 이외의 저장소에 로그인하려면 사용자 이름을 username@Repository으로 입력합니다.
+>EMC Documentum® 또는 IBM® FileNet Repository Provider를 사용하도록 AEM Forms을 구성한 경우 AEM Forms 관리 콘솔에서 기본값으로 구성된 저장소 이외의 저장소에 로그인하려면 사용자 이름을 username@Repository으로 입력합니다.
 
 ### 시간 초과 설정 구성 {#configuring-timeout-settings}
 
@@ -196,7 +197,7 @@ HTTPS를 통해 Workbench를 AEM Forms 서버에 연결하려면 공개 키를 �
 
 >[!NOTE]
 >
-[Workbench_HOME] Workbench를 설치한 디렉토리를 나타냅니다. 기본 위치는 C:\Program Files (x86)\Adobe Experience Manager forms Workbench입니다.
+>[Workbench_HOME] Workbench를 설치한 디렉토리를 나타냅니다. 기본 위치는 C:\Program Files (x86)\Adobe Experience Manager forms Workbench입니다.
 
 인증서에 지정된 이름을 사용하여 HTTPS에 연결해야 합니다. 이 이름은 일반적으로 정규화된 호스트 이름입니다.
 
@@ -205,7 +206,7 @@ HTTPS를 통해 Workbench를 AEM Forms 서버에 연결하려면 공개 키를 �
 
    >[!NOTE]
    >
-   인증서를 내보내려면 웹 브라우저를 열고 관리 콘솔에 로그인합니다. 브라우저에 인증서를 설치한 다음 브라우저에서 임시 저장소 위치로(또는 로 직접) 인증서를 내보냅니다. [Workbench_HOME]/workbench/jre/lib/security directory).
+   >인증서를 내보내려면 웹 브라우저를 열고 관리 콘솔에 로그인합니다. 브라우저에 인증서를 설치한 다음 브라우저에서 임시 저장소 위치로(또는 로 직접) 인증서를 내보냅니다. [Workbench_HOME]/workbench/jre/lib/security directory).
 
 1. 에 인증서 복사 [Workbench_HOME]/workbench/jre/lib/security 디렉터리.
 

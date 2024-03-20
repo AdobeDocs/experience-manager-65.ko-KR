@@ -5,7 +5,8 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 2%
@@ -64,7 +65,7 @@ AEM Forms의 대화형 통신 및 서신 관리 기능을 설치하고 구성하
   <tr>
    <td>libSM</td>
    <td>Zlib</td>
-   <td>libice</td>
+   <td>리브아이스(libICE)</td>
    <td>리부uid</td>
   </tr>
   <tr>
@@ -144,7 +145,7 @@ AEM Forms에는 몇 가지 필수 구성과 선택적 구성이 있습니다. �
 
 대화형 통신은 AEM 6.5 Forms에서 고객 커뮤니케이션을 만들기 위한 기본적이고 권장되는 방법입니다. 이전 버전에서 업그레이드 또는 마이그레이션한 경우 편지(서신 관리)를 계속 사용할 계획이라면 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
-AEMFD 호환성 패키지를 사용하면 AEM 6.5 Forms에서 AEM 6.4 Forms, AEM 6.3 Forms 및 AEM 6.2 Forms의 다음 자산을 사용할 수 있습니다.
+AEM AEMFD 호환성 패키지를 통해 AEM 6.5 Forms에서 AEMFD 6.4 Forms, AEM 6.3 Forms 및 AEM 6.2 Forms의 다음 자산을 사용할 수 있습니다.
 
 * 문서 조각
 * 편지

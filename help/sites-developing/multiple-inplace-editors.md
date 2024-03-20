@@ -3,10 +3,11 @@ title: 여러 즉석 편집기에 대한 RTE를 구성합니다.
 description: 리치 텍스트 편집기를 구성하여 Adobe Experience Manager에서 여러 즉석 편집기를 만들 수 있습니다.
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 2%
+source-wordcount: '437'
+ht-degree: 1%
 
 ---
 
@@ -119,4 +120,3 @@ ht-degree: 2%
 >[!MORELIKETHIS]
 >
 >* [Experience Manager에서 리치 텍스트 편집기 구성](/help/sites-administering/rich-text-editor.md).
-

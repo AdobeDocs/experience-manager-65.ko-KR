@@ -1,5 +1,5 @@
 ---
-title: 디지털 에셋 관리
+title: 디지털 자산 관리
 description: 디지털 에셋의 업로드, 다운로드, 편집, 검색, 삭제, 주석 달기 및 버전 지정과 같은 에셋 관리 작업에 대해 알아봅니다.
 contentOwner: AG
 role: User
@@ -7,14 +7,15 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10038'
 ht-degree: 3%
 
 ---
 
-# 디지털 에셋 관리 {#manage-digital-assets}
+# 디지털 자산 관리 {#manage-digital-assets}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -45,7 +46,7 @@ ht-degree: 3%
 
 자산 파일 이름의 확장에 특수 문자를 포함하지 마십시오.
 
-## 에셋 업로드 {#uploading-assets}
+## 자산 업로드 {#uploading-assets}
 
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.

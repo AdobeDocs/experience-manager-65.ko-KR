@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 5%
@@ -94,7 +95,7 @@ Adobe 분류의 25000에 따라 페이지 크기가 최대 한도로 설정될 �
 
 | **키** | **제품** | **가격** | **크기** | **색상** | **Color^Code** |
 |---|---|---|---|---|---|
-| 1 | 내 제품 이름 | 120.90 | M | black | 101 |
+| 1 | 내 제품 이름 | 120.90 | 월 | black | 101 |
 
 속성에는 다음이 포함됩니다.
 

@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 1%
@@ -357,7 +358,7 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
   | 출력 캐시 | AEM 서버의 서버 메모리(주 메모리 및 하드 드라이브). | 출력 캐시의 페이지 수 및 크기, 페이지당 종속성 수. Dispatcher 캐시는 이 볼륨을 낮춥니다. |
   | 웹 서버 | 웹 서버의 계산 능력. | 요청 수. 캐싱은 이 볼륨을 낮춥니다. |
   | 템플릿 | 웹 서버의 계산 능력. | 템플릿의 복잡성입니다. |
-  | 보관소 | 저장소의 성능. | 저장소에서 로드한 페이지 수입니다. |
+  | 저장소 | 저장소의 성능. | 저장소에서 로드한 페이지 수입니다. |
 
 ### 기타 지표 {#other-metrics}
 
@@ -574,7 +575,7 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
 Adobe은 모든 단계 및 대상에 대해 추가 모범 사례를 제공합니다.
 
-* [배포](/help/sites-deploying/best-practices.md)
+* [배포 중](/help/sites-deploying/best-practices.md)
 * [작성](/help/sites-authoring/best-practices.md)
 * [관리](/help/sites-administering/administer-best-practices.md)
 * [개발](/help/sites-developing/best-practices.md)

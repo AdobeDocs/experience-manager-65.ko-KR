@@ -5,7 +5,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 3%
@@ -61,7 +62,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
    >[!NOTE]
    >
-   프로젝트를 Android™ Studio로 가져오기 전에 추출한 Android 프로젝트를 시스템 드라이브에 보관하는 것이 좋습니다.
+   >프로젝트를 Android™ Studio로 가져오기 전에 추출한 Android 프로젝트를 시스템 드라이브에 보관하는 것이 좋습니다.
 
 1. Android™ Studio를 시작합니다.
 

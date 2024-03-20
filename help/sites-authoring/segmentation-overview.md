@@ -1,15 +1,16 @@
 ---
-title: 세그먼테이션 이해 캠페인을 만들 때
+title: 캠페인 생성 시 세분화 이해
 description: 세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: 61a5875f-ad09-4971-a886-b0d88e0c9967
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 52%
+source-wordcount: '546'
+ht-degree: 46%
 
 ---
 
@@ -45,7 +46,7 @@ ht-degree: 52%
 
 **행동 트레이트** - 행동 트레이트는 웹 사이트에서의 방문자 행동과 관련된 트레이트입니다. 여기에는 다음이 포함됩니다.
 
-* 웹 사이트 내의 관심 분야(예: 방문한 페이지 및 구매한 제품).
+* 웹 사이트 내 관심 분야(예: 방문한 페이지 및 구매한 제품)
 * 참조 웹 사이트에 대한 관심 분야(예: 사용한 검색어 또는 클릭한 광고)
 * 다른 사이트에 대한 관심 분야(Spyjax와 같은 도구를 사용하여 파악).
 * 방문자 충성도(방문 기간, 방문 빈도).

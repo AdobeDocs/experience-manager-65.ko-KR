@@ -6,10 +6,11 @@ role: User
 feature: Asset Management
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 3%
+source-wordcount: '433'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets] 편집을 위해 자산을 체크아웃하고 변경을 완료한 후 다시 체크인할 수 있도록 해 줍니다. 에셋을 체크 아웃한 후에는 에셋만 편집, 주석 달기, 게시, 이동 또는 삭제할 수 있습니다. 에셋을 체크 아웃하면 에셋이 잠깁니다. 다른 사용자는에 자산을 다시 체크 인할 때까지 자산에 대해 이러한 작업을 수행할 수 없습니다. [!DNL Assets]. 그러나 여전히 잠긴 에셋의 메타데이터를 변경할 수 있습니다.
@@ -71,4 +72,3 @@ ht-degree: 3%
 >
 >* [체크인 및 체크아웃 이해 [!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
 >* [체크인 및 체크아웃을 이해하는 비디오 튜토리얼 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
-

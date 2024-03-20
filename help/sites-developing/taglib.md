@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 1%
+source-wordcount: '2452'
+ht-degree: 0%
 
 ---
 
@@ -220,7 +221,7 @@ AEM 구성 요소의 jsp 스크립트를 개발할 때 스크립트 상단에 �
 * 포함할 리소스가 리소스로 확인할 수 없는 경로 속성으로 지정된 경우, 태그는 경로 및 이 리소스 유형에서 합성 리소스 객체를 만들 수 있습니다.
 * 경로 및 resourceType 또는 스크립트를 지정해야 합니다.
 
-**스크립트**
+**script**
 
 * 포함할 jsp 스크립트입니다. 경로 및 resourceType 또는 스크립트를 지정해야 합니다.
 
@@ -518,7 +519,7 @@ Sling 태그 라이브러리에는 유용한 Sling 기능이 포함되어 있습
 
 * 대상을 포함하기 전에 출력을 플러시할지 여부를 정의하는 부울.
 
-**resource**
+**리소스**
 
 * 현재 요청 처리에 포함될 리소스 개체입니다. 리소스 또는 경로를 지정해야 합니다. 둘 다 지정하면 리소스가 우선합니다.
 
@@ -595,7 +596,7 @@ Sling 태그 라이브러리에는 유용한 Sling 기능이 포함되어 있습
 
 * 스크립트에 대한 편의 메서드를 포함하는 SlingScriptHelper 개체로서, 주로 sling.include(&#39;/some/other/resource&#39;) 는 이 응답 내에 있는 다른 리소스의 응답(예: 헤더 html 코드 조각 포함)과 sling에서 사용할 수 있는 OSGi 서비스를 검색하기 위한 sling.getService(foo.bar.Service.class)를 포함합니다(스크립트 언어에 따른 클래스 표기법).
 
-**resource**
+**리소스**
 
 * 요청의 URL에 따라 처리할 현재 리소스 개체입니다. slingRequest.getResource() 와 동일합니다.
 

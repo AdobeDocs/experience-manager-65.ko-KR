@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 6%
@@ -129,7 +130,7 @@ A [조건자 범위](#predicates-and-their-settings)s는 즉시 사용할 수 �
    <td>
     <ul>
      <li>필드 레이블</li>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름*</li>
      <li>속성 깊이</li>
      <li>설명</li>
@@ -151,7 +152,7 @@ A [조건자 범위](#predicates-and-their-settings)s는 즉시 사용할 수 �
    <td>
     <ul>
      <li>필드 레이블</li>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름*</li>
      <li>범위 텍스트(시작)*</li>
      <li>범위 텍스트(종료)*</li>
@@ -319,7 +320,7 @@ A [조건자 범위](#predicates-and-their-settings)s는 즉시 사용할 수 �
    <td>태그를 기반으로 검색합니다.</td>
    <td>
     <ul>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름*</li>
      <li>설명</li>
     </ul> </td>

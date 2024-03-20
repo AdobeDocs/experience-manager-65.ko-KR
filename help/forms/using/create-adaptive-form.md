@@ -3,7 +3,8 @@ title: '자습서: 적응형 양식 만들기'
 description: 적응형 양식을 만들고, 레이아웃하고, 미리 보는 방법에 대해 알아봅니다. 또한 제출 액션을 구성하는 방법도 알아보십시오.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1314'
 ht-degree: 8%

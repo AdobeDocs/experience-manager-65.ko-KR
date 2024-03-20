@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: c46c9f0c-b0d2-4f2f-b95c-90fd3ced32a9
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 6%
+source-wordcount: '267'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +38,7 @@ AEM Repo Tool의 소스를 다운로드하려면 아래 연결된 GitHub 프로�
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 도구 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/tools)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip)

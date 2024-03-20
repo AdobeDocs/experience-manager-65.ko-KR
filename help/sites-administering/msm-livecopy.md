@@ -3,7 +3,8 @@ title: Live Copy 생성 및 동기화
 description: Adobe Experience Manager에서 라이브 카피를 만들고 동기화하는 방법을 알아봅니다.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4194'
 ht-degree: 40%

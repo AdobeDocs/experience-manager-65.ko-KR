@@ -9,7 +9,8 @@ docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 3%
@@ -232,7 +233,7 @@ ht-degree: 3%
 
    | 선택한 일정 | 다음 단계 |
    | --- | --- |
-   | 지금 | 선택한 작업이 즉시 수행됩니다. |
+   | 현재 | 선택한 작업이 즉시 수행됩니다. |
    | 나중에 | 선택한 작업은 선택한 특정 날짜 및 시간에 실행됩니다. |
 
 1. 의 오른쪽 위 모서리에서 **[!UICONTROL 게시 관리 - 옵션]** 페이지, 선택 **[!UICONTROL 다음]**.

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 5%
+source-wordcount: '825'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +50,7 @@ AEM과 Analytics 통합에 대한 자세한 내용은 [Adobe Analytics과 통합
 
 ## Adobe Target과 통합 {#integrating-with-adobe-target}
 
-[마케터는 Adobe Target을 사용하여 온라인 테스트를 디자인 및 실행하고, 즉석으로 대상자 세그먼트를 만들고(행동 기반), 콘텐츠 및 온라인 경험의 타겟팅을 자동화합니다.](https://business.adobe.com/products/target/adobe-target.html)
+[Adobe Target](https://business.adobe.com/products/target/adobe-target.html) 마케터는 를 사용하여 온라인 테스트를 디자인 및 실행하고, 즉석으로 대상 세그먼트를 만들고(행동 기반), 콘텐츠 및 온라인 경험의 타겟팅을 자동화합니다.
 
 오늘날 온라인 소비자는 끊임없이 변화하는 요구 사항을 충족하고 선택할 수 있는 다양한 사이트 및 콘텐츠 소스에서 가져온 개인화된 적절한 콘텐츠를 기대합니다. 온라인 대상자를 참여시키려면 온라인 마케터가 대상자와 관련성이 있고 매력적인 오퍼와 콘텐츠를 신속하게 파악하는 것이 중요합니다. 이러한 지식을 갖춘 마케터는 사이트를 지속적으로 발전시키고 다양한 대상에게 적절한 콘텐츠를 타깃팅하는 능력이 필요합니다.
 

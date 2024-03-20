@@ -3,7 +3,8 @@ title: 레이아웃 모드를 사용하여 대화형 커뮤니케이션용 구�
 description: 레이아웃 모드에서 사용할 수 있는 응답형 그리드를 사용하여 구성 요소의 위치를 정의합니다.
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%

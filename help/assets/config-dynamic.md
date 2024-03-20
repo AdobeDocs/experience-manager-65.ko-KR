@@ -11,7 +11,8 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: cc219931430ba571745e6ef254a034a689acd1cf
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '7738'
 ht-degree: 1%
@@ -1020,7 +1021,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 을 12445.
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpointcompensation</a></td>
    <td>부울</td>
-   <td>True</td>
+   <td>참</td>
    <td>색상 교정 중에 검은 점 보상이 수행되는지 여부를 지정합니다. Adobe은 이 설정이 켜져 있도록 권장합니다.</td>
   </tr>
   <tr>
