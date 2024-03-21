@@ -3,12 +3,12 @@ title: 적응형 양식 작업 모범 사례
 description: AEM Forms 프로젝트 설정, 적응형 양식 개발 및 AEM Forms 시스템 성능 최적화를 위한 모범 사례에 대해 설명합니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 474a14a247afecdd8415f75997279d1ecd394cda
 workflow-type: tm+mt
-source-wordcount: '4668'
+source-wordcount: '5504'
 ht-degree: 1%
 
 ---
@@ -355,5 +355,66 @@ AEM은 적응형 양식을 현지화하는 데 사용할 수 있는 번역 워�
 
 * 데이터베이스와 같은 안전한 외부 저장소를 사용하여 초안 및 제출된 양식의 데이터를 저장합니다. 다음을 참조하십시오 [초안 및 제출된 양식 데이터에 대한 외부 저장소 구성](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * 자동 저장을 활성화하기 전에 약관 양식 구성 요소를 사용하여 사용자의 명시적 동의를 얻으십시오. 이 경우 사용자가 약관 구성 요소의 약관에 동의하는 경우에만 자동 저장을 활성화하십시오.
+
+## 적응형 양식에 대한 규칙 편집기, 코드 편집기 또는 사용자 지정 클라이언트 라이브러리를 선택합니다 {#RuleEditor-CodeEditor-ClientLibs}
+
+### 규칙 편집기 {#rule-editor}
+
+<!--The AEM Forms Rule Editor offers predefined functions for defining rules in adaptive forms without extensive programming. It facilitates the implementation of conditional logic, data validation, and integration with external sources. This visual interface is especially valuable for business users and form designers, enabling them to create dynamic and complex rules with ease, here we discusss few use cases where rule editor allows you to:-->
+
+AEM Forms 규칙 편집기는 규칙을 만들고 관리하기 위한 시각적 인터페이스를 제공하여 광범위한 코딩의 필요성을 줄입니다. 고급 프로그래밍 기술은 없지만 양식 내에서 비즈니스 규칙을 정의하고 유지 관리해야 하는 비즈니스 사용자 또는 양식 디자이너에게 특히 유용할 수 있습니다. 여기서는 규칙 편집기를 통해 다음과 같은 작업을 수행할 수 있는 몇 가지 사용 사례에 대해 설명합니다.
+
+* <!-- Allows you --> 포괄적인 프로그래밍을 하지 않고도 양식에 대한 비즈니스 규칙을 정의할 수 있습니다.
+* <!-- Use the Rule Editor when you need --> 양식 내에 조건부 논리를 구현합니다. 여기에는 양식 요소 표시 또는 숨기기, 특정 조건에 따라 필드 값 변경 또는 양식의 동작 동적 변경이 포함됩니다.
+* <!--When you want --> 양식 제출에 데이터 검증 규칙을 적용하려면 규칙 편집기 를 사용하여 검증 조건을 정의할 수 있습니다.
+* <!-- When you need --> 양식을 외부 데이터 소스(FDM) 또는 서비스와 통합하기 위해 규칙 편집기는 양식 상호 작용 중에 데이터를 가져오고, 표시하거나, 조작하기 위한 규칙을 정의하는 데 도움이 될 수 있습니다.
+* <!-- If you want -->사용자 작업에 응답하는 동적 및 대화형 양식을 만들기 위해 규칙 편집기를 사용하여 양식 요소의 동작을 실시간으로 제어하는 규칙을 정의할 수 있습니다.
+
+규칙 편집기는 AEM Forms Foundation 구성 요소와 핵심 구성 요소 모두에서 사용할 수 있습니다.
+
+### 코드 편집기 {#code-editor}
+
+코드 편집기는 Adobe Experience Manager(AEM) Forms 내의 도구로서, 여기에서는 몇 가지 사용 사례에 대해 논의하여 양식에 보다 복잡하고 고급 기능을 위한 사용자 지정 스크립트 및 코드를 작성할 수 있습니다.
+
+* AEM Forms 규칙 편집기의 기능을 벗어나는 사용자 지정 클라이언트측 논리 또는 비헤이비어를 구현해야 하는 경우. 코드 편집기를 사용하면 복잡한 상호 작용, 계산 또는 유효성 검사를 처리하는 JavaScript 코드를 작성할 수 있습니다.
+* 양식에 서버측 처리 또는 외부 시스템과의 통합이 필요한 경우 코드 편집기를 사용하여 사용자 지정 서버측 스크립트를 작성할 수 있습니다. 코드 편집기에서 guideBridge API에 액세스하여 양식 이벤트 및 개체에 대한 복잡한 논리를 구현할 수 있습니다.
+* AEM Forms 구성 요소의 표준 기능을 뛰어넘는 고도로 맞춤화된 사용자 인터페이스가 필요한 경우 코드 편집기를 사용하여 사용자 정의 스타일, 비헤이비어를 구현하거나 사용자 정의 양식 구성 요소를 만들 수 있습니다.
+* 양식에 비동기 데이터 로드와 같은 비동기 작업이 포함된 경우, 코드 편집기를 사용하여 사용자 지정 비동기 JavaScript 코드를 통해 이러한 작업을 관리할 수 있습니다.
+
+코드 편집기를 사용하려면 JavaScript 및 AEM Forms 아키텍처에 대한 올바른 이해가 필요합니다. 또한 사용자 지정 코드를 구현할 때에는 모범 사례를 따르고, 보안 지침을 준수하고, 프로덕션 환경에서 발생할 수 있는 문제를 방지하기 위해 코드를 철저히 테스트해야 합니다. 코드 편집기를 사용하여 FDM에 대한 콜백을 구현할 수 있습니다.
+
+코드 편집기는 AEM Forms Foundation 구성 요소에만 사용할 수 있습니다. 적응형 양식 핵심 구성 요소의 경우 다음 섹션에 설명된 대로 사용자 정의 함수를 사용하여 고유한 양식 규칙을 만들 수 있습니다.
+
+### 사용자 정의 함수 {#custom-client-libs}
+
+AEM Forms(Adobe Experience Manager Forms)에서 사용자 지정 클라이언트 라이브러리를 사용하면 다양한 시나리오에서 양식의 기능, 스타일 또는 동작을 개선하는 데 유용할 수 있습니다. 다음은 사용자 지정 클라이언트 라이브러리를 사용하는 것이 적절할 수 있는 몇 가지 상황입니다.
+
+* AEM Forms에서 제공하는 기본 스타일 옵션의 기능을 벗어나는 양식에 고유한 디자인이나 브랜딩을 구현해야 하는 경우 사용자 지정 클라이언트 라이브러리를 만들어 모양과 느낌을 제어할 수 있습니다.
+* 사용자 지정 클라이언트측 논리가 필요한 경우, 표준 AEM Forms 기능을 통해 달성할 수 없는 여러 양식 또는 동작에서 메서드를 재사용할 수 있습니다. 여기에는 동적 양식 상호 작용, 사용자 지정 유효성 검사 또는 서드파티 라이브러리와의 통합이 포함될 수 있습니다.
+* 클라이언트측 리소스를 최적화 및 축소하여 양식의 성능을 개선하십시오. 사용자 지정 클라이언트 라이브러리를 사용하여 JavaScript 및 CSS 파일을 번들로 제공하고 압축할 수 있으므로 전체 페이지 로드 시간이 줄어듭니다.
+* 기본 AEM Forms 설정에 포함되지 않은 추가 JavaScript 라이브러리 또는 프레임워크를 통합해야 하는 경우. 이 작업은 고급 날짜 선택기, 차트 또는 기타 대화형 구성 요소와 같은 기능에 필요할 수 있습니다.
+
+사용자 정의 클라이언트 라이브러리를 사용하기 전에 유지 관리 오버헤드, 향후 업데이트와의 잠재적 충돌 및 모범 사례를 준수하는 것을 고려해야 합니다. 업그레이드 중이나 다른 개발자와 공동 작업할 때 발생하는 문제를 방지하기 위해 맞춤화 사항이 잘 문서화되고 테스트되었는지 확인하십시오.
+
+>[!NOTE]
+> 사용자 지정 기능은 AEM Forms Foundation 구성 요소와 핵심 구성 요소 모두에서 사용할 수 있습니다.
+
+**사용자 정의 함수의 장점:**
+
+**사용자 정의 함수** 보다 주목할 만한 이점 제공 **코드 편집기** 이는 콘텐츠와 코드 간의 명확한 분리를 통해 공동 작업을 향상시키고 워크플로를 간소화하기 때문입니다. 다음과 같은 이점을 얻으려면 사용자 지정 함수를 사용하는 것이 좋습니다.
+
+* **Git과 같은 버전 관리 제어를 원활하게 사용할 수 있습니다.**
+   * 콘텐츠에서 코드를 분리하면 콘텐츠 관리 중에 Git 충돌이 크게 줄어들고 잘 정리된 저장소가 촉진됩니다.
+   * 사용자 지정 함수는 여러 기여자가 동시에 작업하는 프로젝트에 유용합니다.
+
+* **기술적 이점:**
+   * 맞춤형 기능은 모듈화 및 캡슐화를 제공합니다.
+   * 모듈은 독립적으로 개발, 테스트 및 유지 관리할 수 있습니다.
+   * 코드 재사용 및 유지 관리 기능이 향상됩니다.
+
+* **효율적인 개발 프로세스:**
+   * 모듈화를 통해 개발자는 특정 기능에 집중할 수 있습니다.
+   * 전체 코드 베이스의 복잡성을 줄여 개발자의 부담을 줄여 개발 프로세스를 보다 효율적으로 진행할 수 있습니다.
+
 
 
