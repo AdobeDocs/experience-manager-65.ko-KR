@@ -7,7 +7,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20fb57a51e47562a290e3608a2fe080a39774998
 workflow-type: tm+mt
 source-wordcount: '2781'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 적응형 양식은 동적 스크립팅 기능을 갖춘 최종 사용자에게 최적화되고 간소화된 양식 작성 환경을 제공합니다. 동적 표시/숨기기 필드 및 패널과 같은 다양한 동작을 추가하는 표현식을 작성할 수 있습니다. 또한 계산된 필드를 추가하고, 필드를 읽기 전용으로 만들고, 유효성 검사 논리를 추가하는 등 다양한 작업을 수행할 수 있습니다. 동적 동작은 사용자 입력 또는 미리 채워진 데이터를 기반으로 합니다.
 
-JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은 유효한 JavaScript 표현식이며 적응형 양식 스크립팅 모델 API를 사용합니다. 이 표현식은 특정 유형의 값을 반환합니다. 적응형 양식 클래스, 이벤트, 개체 및 공개 API의 전체 목록은 다음을 참조하십시오. [적응형 양식을 위한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은 유효한 JavaScript 표현식이며 적응형 양식 스크립팅 모델 API를 사용합니다. 이 표현식은 특정 유형의 값을 반환합니다. 적응형 양식 클래스, 이벤트, 개체 및 공개 API의 전체 목록은 다음을 참조하십시오. [적응형 양식에 대한 JavaScript 라이브러리 API 참조.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 
 ## 표현식 작성 모범 사례 {#best-practices-for-writing-expressions}
 
@@ -35,7 +35,7 @@ JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은
 * 반복 패널을 만들려면 패널 대화 상자에서 설정을 열고 최대 개수 필드의 값을 1 이상으로 설정합니다.
 * 패널 반복 설정의 최소 개수 값은 하나 이상일 수 있지만 최대 개수 값보다 클 수 없습니다.
 * 표현식이 반복 패널의 필드를 참조하는 경우 표현식의 필드 이름은 가장 가까운 반복 요소로 확인됩니다.
-* 적응형 양식은 sum, count, min, max, filter 등과 같은 반복 가능한 패널의 계산을 단순화하는 몇 가지 특수 기능을 제공합니다. 전체 함수 목록은 다음을 참조하십시오. [적응형 양식을 위한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
+* 적응형 양식은 sum, count, min, max, filter 등과 같은 반복 가능한 패널의 계산을 단순화하는 몇 가지 특수 기능을 제공합니다. 전체 함수 목록은 다음을 참조하십시오. [적응형 양식을 위한 JavaScript 라이브러리 API 참조](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 * 반복 패널의 인스턴스를 조작하기 위한 API는 다음과 같습니다.
 
    * 패널 인스턴스를 추가하려면: `panel1.instanceManager.addInstance()`
@@ -81,7 +81,7 @@ JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 ### 표현식 클릭 {#click-expression}
 
-클릭 표현식은 단추의 클릭 이벤트에 수행된 작업을 처리합니다. 기본적으로 GuideBridge는 클릭 표현식과 함께 사용되는 제출, 유효성 검사 등의 다양한 기능을 수행하기 위한 API를 제공합니다. API의 전체 목록은 다음을 참조하십시오. [GuideBridge API](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+클릭 표현식은 단추의 클릭 이벤트에 수행된 작업을 처리합니다. 기본적으로 GuideBridge는 클릭 표현식과 함께 사용되는 제출, 유효성 검사 등의 다양한 기능을 수행하기 위한 API를 제공합니다. API의 전체 목록은 다음을 참조하십시오. [GuideBridge APIs.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
 
 **적용 대상**: 단추 필드
 
@@ -212,7 +212,7 @@ JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 ### GuideBridge - API 및 이벤트 {#guidebridge-apis-and-events}
 
-GuideBridge는 브라우저의 메모리 모델에서 적응형 양식과 상호 작용하는 데 사용할 수 있는 &#39;API&#39; 컬렉션입니다. Guide Bridge API, 클래스 메서드, 이벤트 노출에 대한 자세한 소개는 다음을 참조하십시오. [적응형 양식을 위한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/).
+GuideBridge는 브라우저의 메모리 모델에서 적응형 양식과 상호 작용하는 데 사용할 수 있는 &#39;API&#39; 컬렉션입니다. Guide Bridge API, 클래스 메서드, 이벤트 노출에 대한 자세한 소개는 다음을 참조하십시오. [적응형 양식에 대한 JavaScript 라이브러리 API 참조.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 #### GuideBridge 이벤트 {#guidebridge-events}
 
-GuideBridge는 또한 호스팅 페이지의 외부 스크립트에 대한 특정 이벤트를 제공합니다. 외부 스크립트는 이러한 이벤트를 수신하고 다양한 작업을 수행할 수 있습니다. 예를 들어 양식의 사용자 이름이 변경될 때마다 페이지 헤더에 표시된 이름도 변경됩니다. 이러한 이벤트에 대한 자세한 내용은 [적응형 양식을 위한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge는 또한 호스팅 페이지의 외부 스크립트에 대한 특정 이벤트를 제공합니다. 외부 스크립트는 이러한 이벤트를 수신하고 다양한 작업을 수행할 수 있습니다. 예를 들어 양식의 사용자 이름이 변경될 때마다 페이지 헤더에 표시된 이름도 변경됩니다. 이러한 이벤트에 대한 자세한 내용은 [적응형 양식에 대한 JavaScript 라이브러리 API 참조.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
 
 다음 코드를 사용하여 처리기를 등록합니다.
 
