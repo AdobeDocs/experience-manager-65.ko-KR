@@ -11,10 +11,10 @@ role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: cbf8a5ac22049b3372a8282b9c061d7abeacc5dc
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 41%
+source-wordcount: '415'
+ht-degree: 40%
 
 ---
 
@@ -78,3 +78,15 @@ Adobe Experience Manager(AEM) Assets 관리자는 에셋 및 폴더를 조직의
 이제 Brand Portal에 로그인하여 게시된 자산을 Brand Portal 인터페이스에서 사용할 수 있는지 확인합니다.
 
 ![bp_landingpage](assets/bp_landingpage.png)
+
+## Brand Portal에 게시된 파일 또는 폴더 보기 {#view-published-file-folder}
+
+1. Brand Portal 인터페이스에 로그인하여 게시된 자산을 확인합니다(예약된 날짜 또는 시간에 따라 다름).
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+1. 목록 보기로 전환 ![목록 보기](assets/list-view.svg) 를 클릭하여 자산의 현재 게시 상태를 확인합니다.
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+![생성된 보고서 상태](assets/report-status.JPG)
