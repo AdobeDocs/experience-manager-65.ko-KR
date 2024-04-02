@@ -3,10 +3,10 @@ title: 경험 조각
 description: Adobe Experience Manager Sites 작성의 경험 조각.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 5d37e4ec23bbbd838f4787622648aad7e1c1905b
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 75%
+source-wordcount: '1489'
+ht-degree: 74%
 
 ---
 
@@ -225,6 +225,10 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    * **변형**
    * **변형 대상: [live-copy](/help/sites-administering/msm.md#live-copies)**.
+
+     >[!NOTE]
+     >
+     >초기 변형을 라이브 카피로 만들면 라이브 카피 소스를 기본 변형으로 사용하여 제목이 상속됩니다.
 
 1. 필수 속성을 정의합니다.
 
