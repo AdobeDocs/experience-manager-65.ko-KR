@@ -8,9 +8,9 @@ content-type: reference
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -199,4 +199,4 @@ AEM에서 언어는 페이지 언어 또는 사용자 언어에서 가져올 수
 
 >[!CAUTION]
 >
->서비스 팩을 설치하면 /content/cq:tags 노드의 언어 속성이 기본값으로 재설정됩니다. 따라서 설치하기 전에 속성에서 추가해야 합니다.
+>공식 업데이트 패키지(서비스 팩, 보안 서비스 팩, 확장 기능 팩, 누적 기능 팩, 패치 등)를 통해 태깅 관련 기본 제공 콘텐츠를 설치하면 의 언어 속성이 재설정됩니다. `/content/cq:tags` 노드를 기본값으로 설정합니다. 따라서 설치하기 전에 속성에서 추가해야 합니다.

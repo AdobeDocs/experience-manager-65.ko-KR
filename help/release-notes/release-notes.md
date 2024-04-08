@@ -3,9 +3,9 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '3688'
+source-wordcount: '3735'
 ht-degree: 4%
 
 ---
@@ -462,6 +462,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
 * AEM 6.5.15부터 Rhino JavaScript Engine은 ```org.apache.servicemix.bundles.rhino``` 번들에 새로운 호스팅 동작이 있습니다. 엄격 모드를 사용하는 스크립트(```use strict;```) 변수를 올바르게 선언해야 합니다. 그렇지 않으면 런타임 오류가 발생하는 대신 실행되지 않습니다.
 
+* 공식 업데이트 패키지(서비스 팩, 보안 서비스 팩, 확장 기능 팩, 누적 기능 팩, 패치 등)를 통해 태깅 관련 기본 제공 콘텐츠를 설치하면 의 언어 속성이 재설정됩니다. `/content/cq:tags` 노드를 기본값으로 설정합니다. 따라서 설치하기 전에 속성에서 추가해야 합니다.
 
 ### AEM Forms의 알려진 문제 {#known-issues-aem-forms-6520}
 
