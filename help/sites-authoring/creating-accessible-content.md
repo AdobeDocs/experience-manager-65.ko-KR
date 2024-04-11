@@ -3,7 +3,9 @@ title: Adobe Experience Manager용 액세스 가능한 컨텐츠 만들기(WCAG 
 description: AEM을 사용하여 장애가 있는 사람이 액세스하여 사용 가능한 웹 컨텐츠 제작 관련
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '13636'
 ht-degree: 83%

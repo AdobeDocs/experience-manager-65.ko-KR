@@ -3,7 +3,9 @@ title: 기본 구성 요소
 description: Adobe Experience Manager에는 웹 사이트 작성자에게 포괄적인 기능을 제공하는 다양한 기본 구성 요소가 포함되어 있습니다.
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 34%
@@ -38,7 +40,7 @@ Adobe Experience Manager(AEM)에는 웹 사이트 작성자에게 포괄적인 �
 
 * **We.Retail**: 와 함께 사용하기 위해 프록시화된 핵심 구성 요소를 포함합니다. [We.Retail 참조 구현](/help/sites-developing/we-retail.md).
 
-* **We.Retail 상거래**: 장바구니 및 제품 그리드와 같은 상거래 구성 요소를 포함합니다
+* **We.Retail Commerce**: 장바구니 및 제품 그리드와 같은 상거래 구성 요소를 포함합니다
 
 * **일반**: 레이아웃 컨테이너 및 경험 조각을 포함합니다.
 

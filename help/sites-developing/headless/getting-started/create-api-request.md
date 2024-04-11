@@ -3,7 +3,9 @@ title: 콘텐츠 조각 액세스 및 게재 Headless 빠른 시작 안내서
 description: AEM Assets REST API를 사용하여 콘텐츠 조각을 관리하고, 콘텐츠 조각 콘텐츠의 Headless 전달을 위한 GraphQL API를 사용하는 방법에 대해 알아봅니다.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 43%

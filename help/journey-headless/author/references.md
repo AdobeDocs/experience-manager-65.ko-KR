@@ -2,10 +2,13 @@
 title: 콘텐츠 조각의 참조 사용에 대해 알아보기
 description: 콘텐츠, 다른 조각과 자산(미디어)의 콘텐츠 조각에서 참조를 사용하는 방법에 대해 알아봅니다. Headless CMS 작성에서 중첩된 조각의 필요성과 메커니즘을 소개합니다.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -39,11 +42,11 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 ## 콘텐츠 참조 {#content-references}
 
-콘텐츠 참조는 다른 모든 콘텐츠를 참조할 수 있도록 해 줍니다. 그러면 콘텐츠 항목을 선택할 수 있는 브라우저가 열립니다.
+콘텐츠 참조는 다른 모든 콘텐츠를 참조할 수 있도록 해 줍니다. 이러면 콘텐츠 항목을 선택할 수 있는 브라우저가 열립니다.
 
 ## 자산/미디어 참조 {#assets-media-references}
 
-**자산 삽입** 옵션을 사용하여 텍스트 블록 내에서 자산(예: 이미지 또는 미디어)을 참조할 수 있습니다. 이렇게 하면 에셋을 선택할 수 있는 브라우저가 열립니다.
+**자산 삽입** 옵션을 사용하여 텍스트 블록 내에서 자산(예: 이미지 또는 미디어)을 참조할 수 있습니다. 이러면 자산 항목을 선택할 수 있는 브라우저가 열립니다.
 
 ![콘텐츠 조각 - 자산 삽입](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -58,7 +61,7 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 * 개인
 * 상
 
-간단해 보이지만, 회사는 CEO와 직원을 모두 보유하고 있습니다....이 모두 사람이고 각각은 개인으로 정의됩니다.
+매우 간단한 것처럼 보이지만 회사에는 CEO와 직원이 있습니다.이 모두 사람이고 각각은 개인으로 정의됩니다.
 
 개인에게 상 한 개(또는 두 개)가 제공될 수 있습니다.
 

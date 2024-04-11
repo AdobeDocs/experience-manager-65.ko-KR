@@ -2,7 +2,10 @@
 title: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 description: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 98%

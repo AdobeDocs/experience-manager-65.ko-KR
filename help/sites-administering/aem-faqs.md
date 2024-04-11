@@ -3,7 +3,9 @@ title: AEM FAQ
 description: 이러한 FAQ를 사용하여 AEM의 일반적인 워크플로 또는 문제를 이해, 구성 및 해결할 수 있습니다.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Configuring
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 0%

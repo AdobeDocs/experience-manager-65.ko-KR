@@ -2,10 +2,13 @@
 title: Headless 콘텐츠 및 AEM에서의 번역 방법에 대해 알아보기
 description: Headless 개념, AEM에 매핑하는 방법 및 AEM 번역 이론에 대해 알아봅니다.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 94%
+source-wordcount: '747'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +50,7 @@ Headless CMS에 대해 말하자면 CMS는 콘텐츠를 관리하고 소비자�
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-AR 경험, 웹 샵, 모바일 경험, 점진적 웹 앱(PWA) 등과 같은 다양한 소비 서비스는 Headless CMS에서 콘텐츠를 가져와 자체 렌더링을 제공합니다. 콘텐츠에 대한 자체 헤드를 처리합니다.
+AR 경험, 웹 샵, 모바일 경험, 프로그레시브 웹 앱(PWA) 등 소비 서비스는 Headless CMS에서 콘텐츠를 가져와 자체 렌더링을 제공합니다. 콘텐츠에 대한 자체 헤드를 처리합니다.
 
 헤드가 생략되면 복잡성이 제거되어 CMS를 간소화합니다. 이렇게 하면 실제로 콘텐츠가 필요하고 해당 렌더링에 가장 적합한 서비스로 콘텐츠를 렌더링하는 책임이 이전되기도 합니다.
 
@@ -66,7 +69,7 @@ AEM의 강력한 도구를 통해 Headless 방식, 전체 스택 방식 또는 �
 
 ## 다음 단계 {#what-is-next}
 
-AEM Headless 번역 여정을 시작해 주셔서 감사합니다! 이 문서를 읽고 나면
+AEM Headless 번역 여정을 시작해 주셔서 감사합니다! 지금까지 이 문서를 통해 다음과 같은 성과를 달성했습니다.
 
 * Headless 콘텐츠 게재에 대한 기본적인 개념을 이해할 수 있습니다.
 * AEM이 Headless 및 번역을 지원하는 방법을 파악할 수 있습니다.

@@ -2,10 +2,10 @@
 title: 미리보기 - JSON 표현식
 description: AEM Headless 솔루션을 구현할 때 콘텐츠 조각의 JSON 표현식을 쉽게 미리 보는 방법에 대해 알아봅니다.
 feature: Content Fragments
-role: User
+role: User,Developer
 exl-id: c58a3cfd-6348-4a2e-996a-5fdb96415adb
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%

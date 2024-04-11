@@ -3,7 +3,9 @@ title: WCAG 2.1에 대한 빠른 안내서
 description: 웹 컨텐츠 액세스 가능성 지침(WCAG) 버전 2.1에 대한 빠른 안내서입니다.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Compliance
+role: Developer,Leader,Architect,Data Architect,User
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 92%

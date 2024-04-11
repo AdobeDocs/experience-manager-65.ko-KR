@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 47%
@@ -223,7 +225,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 * 언어 사본
 * 수신 링크
 * 참조 구성 요소 사용: 빌린 콘텐츠 및 빌려준 콘텐츠
-* 제품 페이지 참조(상거래 - 제품 콘솔 참조)
+* 제품 페이지에 대한 참조(Commerce - 제품 콘솔 참조)
 
 필수 콘솔을 연 다음 필수 리소스로 이동하고 다음을 사용하여 **참조**&#x200B;를 엽니다.
 
@@ -241,7 +243,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 * **참조** 구성 요소를 사용하여 빌린 콘텐츠와 빌려준 콘텐츠의 인스턴스: 여기서 참조하는/참조한 페이지로 이동할 수 있음
 
-* [제품 페이지에 대한 참조](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (Commerce-Products 콘솔에서 사용 가능)
+* [제품 페이지에 대한 참조](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (Commerce-제품 콘솔에서 사용 가능)
 * [론치](/help/sites-authoring/launches.md) 관련 론치에 대한 액세스를 제공합니다.
 * [Live Copy](/help/sites-administering/msm.md): 선택한 리소스를 기반으로 하는 모든 Live Copy의 경로 표시
 * [블루프린트](/help/sites-administering/msm-best-practices.md) 은 세부 사항 및 여러 작업을 제공합니다.

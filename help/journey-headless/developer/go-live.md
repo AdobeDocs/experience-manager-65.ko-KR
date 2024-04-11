@@ -2,7 +2,10 @@
 title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정 부분에서는 Headless 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 53%

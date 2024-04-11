@@ -2,10 +2,13 @@
 title: Adobe Experience Manager Headless 콘텐츠 설계 여정
 description: Adobe Experience Manager의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아봅니다.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 79%
+source-wordcount: '720'
+ht-degree: 83%
 
 ---
 
@@ -50,7 +53,7 @@ Headless CMS에 대해 말하자면 CMS는 콘텐츠를 관리하고 소비자�
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-AR 경험, 웹샵, 모바일 경험, 점진적 웹 앱(PWA) 등과 같은 다양한 서비스를 통해 Headless CMS에서 콘텐츠를 가져와 자체 렌더링을 제공할 수 있습니다. 콘텐츠에 대한 자체 헤드를 처리합니다.
+AR 경험, 웹 샵, 모바일 경험, 프로그레시브 웹 앱(PWA) 등 소비 서비스는 Headless CMS에서 콘텐츠를 가져와 자체 렌더링을 제공합니다. 콘텐츠에 대한 자체 헤드를 처리합니다.
 
 헤드가 생략되면 복잡성이 제거되어 CMS를 간소화합니다. 이렇게 하면 실제로 콘텐츠가 필요하고 해당 렌더링에 가장 적합한 서비스로 콘텐츠를 렌더링하는 책임이 이전되기도 합니다.
 

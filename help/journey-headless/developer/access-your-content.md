@@ -2,7 +2,10 @@
 title: AEM 게재 API를 통해 콘텐츠에 액세스하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 GraphQL 쿼리를 통해 콘텐츠 조각의 콘텐츠에 액세스하는 방법을 대해 알아봅니다.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 93%
@@ -22,7 +25,7 @@ AEM Headless 여정의 이전 문서인 [콘텐츠를 모델링하는 방법](mo
 * AEM 콘텐츠 조각 모델을 사용(및 콘텐츠 조각으로 콘텐츠 작성)하여 이 구조를 실현하는 방법을 이해합니다.
 * 기본 샘플을 사용하여 콘텐츠와 원칙을 모델링하는 방법을 이해합니다.
 
-이 문서는 해당 기본 사항을 기본으로 하며, 이를 통해 AEM GraphQL API를 통해 AEM의 기존 Headless 콘텐츠에 액세스하는 방법에 대해 살펴볼 수 있습니다.
+이 문서는 해당 기본 사항을 기본으로 하며, 이를 통해 AEM GraphQL API를 통해 AEM의 기존 Headless 콘텐츠에 액세스하는 방법을 살펴볼 수 있습니다.
 
 * **대상자**: 초급
 * **목표**: AEM GraphQL 쿼리를 통해 콘텐츠 조각의 콘텐츠에 액세스하는 방법에 대해 알아보기:
@@ -374,7 +377,7 @@ query {
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
    * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
    * [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md)
-* [원본 간 리소스 공유(CORS) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko-KR#understand-cross-origin-resource-sharing-(cors))
+* [원본 간 리소스 공유(CORS) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))
 * [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 콘텐츠 모델링 및 GraphQL을 포함하여 AEM의 Headless 기능 사용 개요를 제공하는 짧은 비디오 튜토리얼 시리즈.
 
 <!--

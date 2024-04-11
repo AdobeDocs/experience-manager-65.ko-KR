@@ -3,7 +3,9 @@ title: AEM을 사용하여 페이지 생성 및 구성
 description: Adobe Experience Manager으로 페이지를 만들고 관리하는 방법을 알아봅니다.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2417'
 ht-degree: 77%

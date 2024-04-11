@@ -3,7 +3,9 @@ title: AEM 6.5 Sites를 위한 헤드리스 개발
 description: 콘텐츠 모델, 콘텐츠 조각, GraphQL API와 같은 AEM 6.5의 강력한 Headless 기능을 함께 사용하여 경험을 중앙에서 관리하고 여러 채널에서 제공할 수 있는 방법에 대해 알아봅니다.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 35%

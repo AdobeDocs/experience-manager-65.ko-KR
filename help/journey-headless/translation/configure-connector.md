@@ -2,7 +2,10 @@
 title: 번역 통합 구성
 description: AEM을 번역 서비스에 연결하는 방법에 대해 알아봅니다.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 92%
@@ -93,7 +96,7 @@ AEM의 번역 통합 프레임워크(TIF)를 서드파티 번역 서비스와 �
 
    1. **번역 방식** - 번역 공급업체에 따라 **기계 번역** 또는 **인간 번역**&#x200B;을 선택합니다. 이 여정에서는 기계 번역을 사용한다고 가정합니다.
    1. **번역 공급업체** - 목록에서 번역 서비스에 대해 설치한 커넥터를 선택합니다.
-   1. **콘텐츠 범주** - 번역 타기팅에 가장 적합한 범주를 선택합니다(기계 번역만 해당).
+   1. **콘텐츠 범주** - 번역 타겟팅에 가장 적합한 범주를 선택합니다(기계 번역만 해당).
    1. **콘텐츠 조각 자산 번역** - 이 속성을 선택하여 콘텐츠 조각과 연결된 자산을 번역합니다.
    1. **자산 번역** - 이 속성을 선택하여 자산을 번역합니다.
    1. **메타데이터 번역** - 이 속성을 선택하여 자산 메타데이터를 번역합니다.

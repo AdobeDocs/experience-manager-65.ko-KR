@@ -7,7 +7,9 @@ topic-tags: projects
 content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 1%
@@ -59,7 +61,7 @@ Creative Project는 다양한 프로젝트 요구 사항을 충족하기 위해 
 
 A **제품 사진 촬영 프로젝트** 에는 다음과 같은 기본 워크플로가 포함되어 있습니다.
 
-* **제품 사진 촬영(Commerce 통합) 워크플로우**: 이 워크플로에서는 PIM(제품 정보 관리) 시스템과의 상거래 통합을 사용하여 선택한 제품(계층)에 대한 촬영 목록을 자동으로 생성합니다. 워크플로우가 완료된 후 제품 데이터를 에셋 메타데이터의 일부로 볼 수 있습니다.
+* **제품 사진 촬영(Commerce 통합) 워크플로**: 이 워크플로에서는 PIM(제품 정보 관리) 시스템과의 상거래 통합을 사용하여 선택한 제품(계층)에 대한 촬영 목록을 자동으로 생성합니다. 워크플로우가 완료된 후 제품 데이터를 에셋 메타데이터의 일부로 볼 수 있습니다.
 * **제품 사진 촬영 워크플로우**: 이 워크플로우를 사용하면 상거래 통합에 의존하는 대신 촬영 목록을 제공할 수 있습니다. 업로드된 이미지를 프로젝트 자산 폴더의 CSV 파일에 매핑합니다.
 
 사용 **제품 사진 촬영(Commerce 통합)** 이미지 자산을 AEM의 제품과 매핑하는 워크플로우입니다. 이 워크플로에서는 상거래 통합을 사용하여 승인된 이미지를 해당 위치의 기존 제품 데이터에 연결합니다 `/etc/commerce`.
@@ -139,7 +141,7 @@ AEM에서 제품 정보를 사용할 수 없는 경우 **제품 사진 촬영** 
 
 다음에 대한 추가 작업을 구성할 수 있습니다. **제품 사진 촬영** 유사한 방식으로 작업 과정.
 
-동일한 단계를 수행하여에서 작업을 구성합니다. **제품 사진 촬영(Commerce 통합) 워크플로우**.
+동일한 단계를 수행하여에서 작업을 구성합니다. **제품 사진 촬영(Commerce 통합) 워크플로**.
 
 ## 프로젝트 워크플로 시작 {#starting-a-project-workflow}
 

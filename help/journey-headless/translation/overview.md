@@ -2,7 +2,10 @@
 title: AEM Headless 번역 여정
 description: AEM의 강력한 번역 도구를 사용하여 Headless 콘텐츠 번역을 통한 가이드 여정을 시작해 보십시오.
 exl-id: 1a9d4c88-b676-4168-a9ef-7d218b39129f
-source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 93%

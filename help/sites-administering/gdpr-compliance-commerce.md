@@ -1,10 +1,12 @@
 ---
 title: AEM Commerce - GDPR 준비 완료
-description: AEM Commerce에서 GDPR 요청을 처리하는 절차와 이를 사용하는 방법에 대해 알아봅니다.
+description: AEM Commerce에서 GDPR 요청을 처리하는 절차 및 사용 방법에 대해 알아봅니다.
 contentOwner: carlino
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Compliance
+role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 2%
@@ -25,7 +27,7 @@ ht-degree: 2%
 
 ![screen_shot_2018-03-22at111606](assets/screen_shot_2018-03-22at111606.jpg)
 
-Adobe의 획기적인 Commerce 통합을 통해 AEM은 서비스를 소비하고 Headless 모드에서 실행되는 고객 상거래 플랫폼으로 데이터를 다시 전송하는 경험 계층입니다.
+Adobe의 획기적인 Commerce 통합 기능을 통해 AEM은 서비스를 이용하고, 헤드리스 모드에서 실행되는 고객 상거래 플랫폼으로 데이터를 다시 전송하는 경험 계층입니다.
 
 일부 상거래 플랫폼의 경우 Adobe은 프로필 정보( `/home/users`) 및 상거래 토큰(commerce platform에 로그온하기 위해)을 AEM에서 사용할 수 있습니다. 이러한 사용 사례에 대해서는 다음을 참조하십시오. [AEM Platform에 대한 GDPR 요청 처리](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 

@@ -2,7 +2,10 @@
 title: AEM Headless를 사용한 첫 번째 경험으로의 경로
 description: 이 AEM Headless 개발자 여정의 부분에서는 계획 고려 사항을 비롯해 AEM에서 첫 번째 Headless 경험을 구현하는 단계를 이해하고, 경로를 최대한 원활하게 만드는 모범 사례에 대해 알아보기도 합니다.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 91%

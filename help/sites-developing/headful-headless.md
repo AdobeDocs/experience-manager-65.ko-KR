@@ -3,7 +3,9 @@ title: AEM Headful 및 Headless
 description: AEM 프로젝트는 Headful 및 Headless model 모델에서 구현될 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 92%

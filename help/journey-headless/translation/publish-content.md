@@ -2,7 +2,10 @@
 title: 번역된 콘텐츠 게시
 description: 번역된 콘텐츠를 게시하고 콘텐츠가 업데이트될 때 번역을 업데이트하는 방법에 대해 알아봅니다.
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 80%
@@ -15,7 +18,7 @@ ht-degree: 80%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-connector.md)에서는 AEM 번역 프로젝트를 사용하여 Headless 콘텐츠를 번역하는 방법에 대해 알아보았습니다. 이제 다음과 같은 작업을 수행할 수 있습니다.
+AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-connector.md)에서는 AEM 번역 프로젝트를 사용하여 Headless 콘텐츠를 번역하는 방법에 대해 알아보았습니다. 이제
 
 * 번역 프로젝트에 대해 이해할 수 있습니다.
 * 번역 프로젝트를 만들 수 있습니다.
@@ -154,7 +157,7 @@ You see that a new job card was added to the project. In this example, another S
 
 ## 여정의 끝 {#end-of-journey}
 
-축하합니다! Headless 번역 여정을 완료하셨습니다! 이제 다음과 같은 작업을 수행할 수 있습니다.
+축하합니다! Headless 번역 여정을 완료하셨습니다! 이제
 
 * Headless 콘텐츠 게재에 대한 개요를 살펴볼 수 있습니다.
 * AEM의 Headless 기능에 대한 기본 사항을 이해할 수 있습니다.

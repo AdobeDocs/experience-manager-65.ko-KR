@@ -3,7 +3,9 @@ title: 콘텐츠 페이지 속성 편집
 description: Adobe Experience Manager에서 페이지에 필요한 속성을 정의합니다.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 42%

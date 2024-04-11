@@ -2,7 +2,10 @@
 title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 92%

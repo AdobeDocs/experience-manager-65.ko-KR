@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1449'
 ht-degree: 0%
@@ -78,7 +80,7 @@ AEM에서는 Adobe Analytics 제품 관련 속성에 매핑될 제품 관련 변
 | `product.events.<eventName>` | 보고서에서 제품과 연결할 성공 이벤트입니다. | `product.events` 는 이라는 이벤트의 접두사입니다. *eventName.* |
 | `product.evars.<eVarName>` | 전환 변수( `eVar`)을 클릭하여 제품과 연결합니다. | `product.evars` 는 eVar 변수의 접두사입니다. *eVarName.* |
 
-여러 AEM Commerce 구성 요소는 이러한 변수 이름을 사용합니다.
+몇 가지 AEM Commerce 구성 요소는 이러한 변수 이름을 사용합니다.
 
 >[!NOTE]
 >

@@ -3,7 +3,9 @@ title: AEM에서 GraphQL 엔드포인트 관리
 description: Headless 콘텐츠 전달을 위해 Adobe Experience Manager에서 GraphQL 엔드포인트를 관리하는 방법에 대해 알아봅니다.
 exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 91%

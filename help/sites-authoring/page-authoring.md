@@ -3,7 +3,9 @@ title: AEM에서 컨텐츠 페이지 작성
 description: Adobe Experience Manager 6.5에서 컨텐츠 페이지를 작성할 때 관련된 작업입니다.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%

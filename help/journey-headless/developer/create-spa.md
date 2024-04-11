@@ -2,9 +2,12 @@
 title: 선택 사항 - Adobe Experience Manager으로 단일 페이지 애플리케이션(SPA)을 만드는 방법
 description: Adobe Experience Manager(AEM) Headless 개발자 여정의 이 선택적 계속에서 AEM이 Headless 전달을 기존의 전체 스택 CMS 기능과 결합하는 방법과 AEM SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법을 알아봅니다.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1257'
 ht-degree: 76%
 
 ---

@@ -2,7 +2,10 @@
 title: 콘텐츠 번역
 description: 번역 커넥터 및 규칙을 사용하여 Headless 콘텐츠를 번역합니다.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 71%
