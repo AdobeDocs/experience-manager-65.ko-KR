@@ -3,7 +3,9 @@ title: 링크 검사기
 description: 링크 검사기는 내부 및 외부 링크의 유효성을 검사하고 링크 재작성을 가능하게 합니다.
 exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 0%

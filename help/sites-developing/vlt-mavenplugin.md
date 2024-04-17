@@ -3,7 +3,9 @@ title: Adobe 컨텐츠 패키지 Maven 플러그인
 description: Content Package Maven 플러그인을 사용하여 AEM 애플리케이션 배포
 exl-id: 002c00ba-eda1-4481-bc35-1f4d972e4073
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Developer Tools
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%

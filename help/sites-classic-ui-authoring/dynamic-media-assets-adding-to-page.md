@@ -7,7 +7,9 @@ topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1635'
 ht-degree: 38%
@@ -159,6 +161,6 @@ Experience Manager 6.2에서 다음을 설치할 때 [FP-13480](https://experien
 
 **[!UICONTROL 제품 자산 표시]** - 기본적으로 이 값이 선택되어 있습니다. 제품 에셋은 Commerce 모듈에 정의된 대로 제품의 이미지를 표시합니다. 제품 자산을 표시하지 않으려면 확인 표시를 지웁니다.
 
-**[!UICONTROL 제품 가격 표시]** - 기본적으로 이 값이 선택되어 있습니다. 제품 가격은 상거래 모듈에 정의된 대로 항목의 가격을 표시합니다. 제품 가격을 표시하지 않으려면 확인 표시를 지웁니다.
+**[!UICONTROL 제품 가격 표시]** - 기본적으로 이 값이 선택되어 있습니다. 제품 가격은 Commerce 모듈에 정의된 대로 항목의 가격을 보여줍니다. 제품 가격을 표시하지 않으려면 확인 표시를 지웁니다.
 
 **[!UICONTROL 제품 양식 표시]** - 기본적으로 이 값은 선택되어 있지 않습니다. 제품 양식에는 크기 및 색상과 같은 제품 변형이 포함됩니다. 제품 변형을 표시하지 않으려면 확인 표시를 지웁니다.

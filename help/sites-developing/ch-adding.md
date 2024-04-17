@@ -3,7 +3,9 @@ title: 페이지에 ContextHub 추가 및 저장소 액세스
 description: 페이지에 ContextHub를 추가하여 ContextHub 기능을 활성화하고 ContextHub JavaScript 라이브러리에 연결합니다
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Personalization
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
