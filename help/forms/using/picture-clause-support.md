@@ -9,9 +9,9 @@ discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9e1c93a0d55d88c08b67392a9f16bfce2ac62445
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,10 @@ Date Picture 절에 지원되는 표현식:
   </tr>
  </tbody>
 </table>
+
+>[!NOTE]
+>
+> 설계에 따라 HTML5 Forms의 날짜 필드는 `MM-YYYY` (편집 형식). 그러나 이 형식은 표시 형식에서 지원됩니다.
 
 ## 숫자 그림 절 {#numeric-picture-clause}
 

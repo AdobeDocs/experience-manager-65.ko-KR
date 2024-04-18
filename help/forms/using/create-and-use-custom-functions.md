@@ -5,15 +5,21 @@ keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 �
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: d1348a964e664cf502f6eded14a1054641ebc740
+exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
+source-git-commit: 91ab786cd7e0dd75b9ad15058a125605245ec5bb
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 4%
+source-wordcount: '1119'
+ht-degree: 5%
 
 ---
 
 
 # 적응형 Forms(핵심 구성 요소)의 사용자 지정 기능
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+| AEM 6.5 | 이 문서 |
 
 ## 소개
 
@@ -266,4 +272,3 @@ JavaScript 파일에 다음 코드를 추가하여 생년월일(YYYY-MM-DD)을 �
 ![사용자 정의 함수 클라이언트 라이브러리 추가](/help/forms/using//assets/calculateage-customfunction.png)
 
 이제 를 사용하여 사용자 지정 기능을 구성하고 사용하는 방법을 이해하겠습니다. [AEM Forms에서 규칙 편집기의 호출 서비스](/help//forms/using/rule-editor.md).
-
