@@ -9,7 +9,7 @@ exl-id: e14a9cda-890f-46b7-9433-1b52eb91eae3
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 2%
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 실행 방법을 알려 주는 파일 내의 주석을 가져옵니다.
 
-CQ 분석 `access.log` 다양한 정보 외삽하고 의 Markdown 출력 생성 `stdout`.
+CQ 분석 `access.log` 다양한 정보를 외삽하고 의 Markdown 출력을 생성합니다. `stdout`.
 
 ## 사용 {#usage}
 

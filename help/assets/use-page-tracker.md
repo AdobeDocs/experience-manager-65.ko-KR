@@ -6,7 +6,7 @@ role: Architect, Admin
 feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 페이지 추적기는 Adobe Analytics에서 사용 데이터를 캡처할 수 있도록 서드파티 웹 사이트의 코드에 포함하는 JavaScript 코드의 일부입니다 [!DNL Adobe Experience Manager Assets] 다음 웹 사이트에서 확인하십시오.
 
-자산에 고유한 이벤트(예: 클릭 수)를 캡처하려면 타사 웹 사이트의 코드에도 포함 코드를 포함합니다.
+에셋과 관련된 클릭 수와 같은 이벤트를 캡처하려면 타사 웹 사이트의 코드에도 포함 코드를 포함합니다.
 
 다음 샘플 코드는 페이지 추적기 코드와 포함 코드가 모두 포함된 웹 페이지의 모양을 표시합니다.
 

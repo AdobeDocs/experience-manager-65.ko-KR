@@ -10,9 +10,9 @@ exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6074'
+source-wordcount: '6073'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ AEM 컨텐츠 포틀릿을 사용하면 포털에 AEM 컨텐츠를 표시할 수
 
 #### OSGi 웹 콘솔 {#osgi-web-console}
 
-포털 서버가 localhost 호스트, 포트 8080에서 실행된다고 가정하고 AEM 포틀릿 웹 응용 프로그램이 웹 응용 프로그램 컨텍스트에 마운트되어 있습니다 *cqportlet*&#x200B;웹 콘솔의에 대한 url은 입니다. `https://localhost:8080/cqportlet/cqbridge/system/console`. 기본 사용자 및 암호는 입니다. **admin**.
+포털 서버가 localhost 호스트, 포트 8080에서 실행된다고 가정하고 AEM 포틀릿 웹 응용 프로그램이 웹 응용 프로그램 컨텍스트에 마운트되어 있습니다 *cqportlet*&#x200B;웹 콘솔의 URL은 `https://localhost:8080/cqportlet/cqbridge/system/console`. 기본 사용자 및 암호는 입니다. **admin**.
 
 를 엽니다. **구성** 탭하고 선택 **포털 디렉터리 CQ 서버 구성**. 여기에서는 작성자 및 게시 인스턴스에 대한 기본 URL을 지정합니다. 이 절차는에 설명되어 있습니다. [포틀릿 구성](#configuring-the-portlet).
 

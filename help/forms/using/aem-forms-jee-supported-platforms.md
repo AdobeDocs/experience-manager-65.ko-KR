@@ -8,9 +8,9 @@ docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d3822f4dee1b0d571aa06142f4a4f6e27874cf53
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4010'
 ht-degree: 0%
 
 ---
@@ -722,7 +722,7 @@ Adobe은 타사 공급업체가 JEE의 AEM Forms이 지원하는 버전과의 �
 
 경우에 따라 Adobe은 주요 기능을 변경하는 서드파티 업데이트를 지원하지 않으므로 전체 이전 버전과의 호환성을 지원하지 않습니다. 지원되는 업데이트에 대한 자세한 내용은 다음을 참조하십시오. [지원되는 패치 정의](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) 특정 공급업체 제품 및 패치 유형 Adobe이 지원하는 경우
 
-Adobe이 통제할 수 없는 상황에서 이전 버전과의 호환성을 주장하는 타사 패치는 Adobe 제품이나 고객 환경에 부정적인 영향을 미칠 수 있습니다. 이러한 경우, Adobe은 중요한 시스템에 적용하기 전에 제3자의 긴급 패치가 미치는 영향을 평가하도록 권장합니다. Adobe은 일반적인 Adobe 지원 프로그램을 통해 또는 제3자가 해당 패치의 문제를 수정하여 이러한 문제를 해결하기 위해 합리적인 비즈니스 노력을 사용하여 제3자와 협력합니다. 이는 Adobe이 지원할 새로 릴리스된 타사 패치가 공급업체나 JEE의 AEM Forms에서 문서화한 대로 작동함을 보장하지 않습니다.
+Adobe이 통제할 수 없는 상황에서 이전 버전과의 호환성을 주장하는 타사 패치는 Adobe 제품이나 고객 환경에 부정적인 영향을 미칠 수 있습니다. 이러한 경우, Adobe은 중요한 시스템에 적용하기 전에 먼저 서드파티의 긴급 패치가 미치는 영향을 평가하도록 권장합니다. Adobe은 일반적인 Adobe 지원 프로그램을 통해 또는 제3자가 해당 패치의 문제를 수정하여 이러한 문제를 해결하기 위해 합리적인 비즈니스 노력을 사용하여 제3자와 협력합니다. 이는 Adobe이 지원할 새로 릴리스된 타사 패치가 공급업체나 JEE의 AEM Forms에서 문서화한 대로 작동함을 보장하지 않습니다.
 
 Adobe은 JEE 릴리스의 AEM Forms에서 지원하는 타사 참조 플랫폼과 해당 시점에 지원되는 패치 정의를 변경할 수 있는 권한을 보유합니다.
 

@@ -8,9 +8,9 @@ content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2318'
 ht-degree: 1%
 
 ---
@@ -234,7 +234,7 @@ Apache Sling 작업 소비자 관리자 서비스는 주제 허용 목록 및 �
 
 >[!CAUTION]
 >
->자동 생성된 복제 에이전트에 대해 알려진 문제는 새 복제 에이전트를 수동으로 생성해야 합니다.
+>자동으로 생성된 복제 에이전트에 대해 알려진 문제는 새 복제 에이전트를 수동으로 생성해야 합니다.
 
 오프로드할 인스턴스 간에 작업 페이로드를 전송하는 복제 에이전트를 만듭니다. 다음 그림은 작성자에서 작업자 인스턴스로 오프로드하는 데 필요한 에이전트를 보여 줍니다. 작성자의 Sling ID는 1이고 작업자 인스턴스의 Sling ID는 2입니다.
 

@@ -10,9 +10,9 @@ role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3218'
 ht-degree: 14%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 14%
 
 웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어**, 또는 **Video 360 Media** 구성 요소를 페이지에서 바로 사용할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화하여 구성 요소를 추가합니다. Then you can add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
 
-Adobe Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 에셋을 페이지에 직접 추가합니다. WCM에 서드파티를 사용하는 경우 [링크](/help/assets/linking-urls-to-yourwebapplication.md) 또는 [임베드](/help/assets/embed-code.md) 에셋. For a responsive third-party web site, see [delivering optimized images to a responsive site](/help/assets/responsive-site.md).
+Adobe Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 에셋을 페이지에 직접 추가합니다. If you are using a third-party for your WCM, either [link](/help/assets/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/embed-code.md) your assets. For a responsive third-party web site, see [delivering optimized images to a responsive site](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
@@ -303,7 +303,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 * **[!UICONTROL 제품 자산 표시]** - 기본적으로 이 값이 선택되어 있습니다. 제품 에셋은 Commerce 모듈에 정의된 대로 제품의 이미지를 표시합니다. 제품 자산을 표시하지 않으려면 확인 표시를 지웁니다.
 
-* **[!UICONTROL 제품 가격 표시]** - 기본적으로 이 값이 선택되어 있습니다. 제품 가격은 상거래 모듈에 정의된 대로 항목의 가격을 표시합니다. 제품 가격을 표시하지 않으려면 확인 표시를 지웁니다.
+* **[!UICONTROL 제품 가격 표시]** - 기본적으로 이 값이 선택되어 있습니다. 제품 가격은 Commerce 모듈에 정의된 대로 항목의 가격을 보여줍니다. 제품 가격을 표시하지 않으려면 확인 표시를 지웁니다.
 
 * **[!UICONTROL 제품 양식 표시]** - 기본적으로 이 값은 선택되어 있지 않습니다. 제품 양식에는 크기 및 색상과 같은 제품 변형이 포함됩니다. 제품 변형을 표시하지 않으려면 확인 표시를 지웁니다.
 

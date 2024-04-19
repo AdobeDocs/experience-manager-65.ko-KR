@@ -10,9 +10,9 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4130'
+source-wordcount: '4132'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 1%
 >이 작업은 다음이 참인 경우에만 필요합니다.
 >
 >* 빠른 보기로 트리거하여 이미지에 대화형 기능을 추가하려는 경우.
->* Experience Manager 구현은 다음을 수행합니다 *아님* IBM® WebSphere® Commerce, Elastic Path, hybris 또는 Intershop과 같은 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오려면 eCommerce 통합 프레임워크를 사용합니다. 다음을 참조하십시오 [Experience Manager Assets의 eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md).
+>* Experience Manager 구현은 다음을 수행합니다 *아님* IBM® WebSphere® Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오려면 eCommerce 통합 프레임워크를 사용합니다. 다음을 참조하십시오 [Experience Manager Assets의 eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md).
 >
 >Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -113,7 +113,7 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 
 가장 간단한 경우, 빠른 보기 URL에 있는 유일한 변수 부분은 제품 SKU입니다. 이 경우 SKU 값은 배너 이미지에 핫스팟을 추가하는 데 필요한 유일한 데이터 부분입니다.
 
-그러나 복잡한 경우 빠른 보기 URL에는 SKU 외에도 카테고리 ID, 색상 코드 및 크기 코드와 같은 다양한 요소가 있습니다. 이러한 경우 모든 요소는 Experience Manager Assets의 구매 가능한 대화형 이미지 기능에서 핫스팟 데이터 정의에 있는 별도의 변수입니다.
+그러나 복잡한 경우 빠른 보기 URL에는 카테고리 ID, 색상 코드 및 크기 코드와 같이 SKU와는 다른 다양한 요소가 있습니다. 이러한 경우 모든 요소는 Experience Manager Assets의 구매 가능한 대화형 이미지 기능에서 핫스팟 데이터 정의에 있는 별도의 변수입니다.
 
 다음 Quickview URL 및 결과 핫스팟 변수 예를 생각해 보십시오.
 
@@ -271,7 +271,7 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 
    1. 핫스팟 관리 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 핫스팟]**.
    1. 이미지에서 핫스팟을 표시할 위치를 선택합니다. If necessary, drag the hotspot to adjust its location.
-   1. 필요에 따라 a단계와 b단계를 반복하여 핫스팟을 추가합니다.
+   1. 필요에 따라 a단계와 b단계를 반복하여 추가 핫스팟을 추가합니다.
    1. (선택 사항) 핫스팟을 삭제하려면 이미지에서 핫스팟을 선택한 다음 를 선택합니다 **[!UICONTROL 삭제]** (휴지통 아이콘) **[!UICONTROL 핫스팟]** 제목.
 
 1. 이름 텍스트 필드에 핫스팟의 이름을 입력합니다. 이 이름은 선택한 핫스팟 드롭다운 목록에도 나타납니다.
@@ -279,7 +279,7 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 
    * 선택 **[!UICONTROL 빠른 보기]**.
 
-      * Experience Manager Sites 또는 eCommerce 고객의 경우 제품 선택기 아이콘(돋보기)을 선택하여 제품 선택 페이지를 엽니다. 사용할 제품을 선택한 다음 을 선택합니다. **[!UICONTROL 선택]** 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단 모서리에서 를 클릭합니다.
+      * Experience Manager Sites 또는 eCommerce 고객의 경우 제품 선택기 아이콘(돋보기)을 선택하여 제품 선택 페이지를 엽니다. 사용할 제품을 선택한 다음 를 선택합니다 **[!UICONTROL 선택]** 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단 모서리에서 를 클릭합니다.
       * 다음과 같은 경우 *아님* Experience Manager Sites 또는 eCommerce 고객
 
          * 다음을 참조하십시오 [핫스팟 변수 식별](#optional-identifying-hotspot-variables); 이러한 변수를 정의해야 합니다.
@@ -375,9 +375,9 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 응답형 환경에 대해 구매 가능한 대화형 이미지에 &quot;자르기&quot;를 적용하려면 대화형 이미지 구성 속성을 포함할 수 있습니다 `ZoomView.iscommand` 경로를 표시합니다. 구성 요소 `ZoomView` 이(가) 및 (이)라고 함 `iscommand` 는 사용자가 적용하는 &quot;자르기&quot; 이미지 제공 명령입니다.
 
-다음을 참조하십시오 [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) 구성 속성입니다.
+다음을 참조하십시오 [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) 구성 속성입니다.
 
-다음을 참조하십시오 [자르기](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) 이미지 제공 명령.
+다음을 참조하십시오 [자르기](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) 이미지 제공 명령.
 
 이제 대화형 이미지를 웹 사이트의 기존 빠른 보기와 통합할 준비가 되었습니다.
 

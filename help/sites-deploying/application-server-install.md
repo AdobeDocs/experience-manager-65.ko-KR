@@ -9,9 +9,9 @@ exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -236,17 +236,17 @@ conf 파일에서 메모리 인수 설정(예: `standalone.conf`)
 
 * **AEM 웹 애플리케이션 배포**
 
-   * AEM war 파일 다운로드
-   * 필요한 경우 web.xml에서 구성 수행(일반 설명의 위 참조)
+   * AEM war 파일을 다운로드합니다.
+   * 필요한 경우 web.xml에서 구성을 만듭니다(일반 설명의 위 참조).
 
-      * WEB-INF/web.xml 파일 압축 풀기
-      * sling.run.modes 매개 변수를 게시로 변경
+      * WEB-INF/web.xml 파일의 압축을 풉니다.
+      * sling.run.modes 매개 변수를 게시로 변경합니다.
       * sling.home 초기 매개 변수의 주석 처리를 제거하고 필요에 따라 이 경로를 설정합니다.
-      * web.xml 파일 다시 압축
+      * web.xml 파일을 다시 압축합니다.
 
-   * AEM war 파일을 ROOT.war로 이름 바꾸기 루트 웹 앱으로 배포하려면 이름을 aemaauthor.war과 같이 컨텍스트 루트로 바꾸십시오
-   * tomcat의 webapps 폴더에 복사
-   * AEM이 설치될 때까지 대기
+   * AEM war 파일을 루트 웹 앱으로 배포하려면 이름을 ROOT.war로 변경합니다. aemaauthor를 컨텍스트 루트로 사용하려면 이름을 aemaauthor.war로 바꿉니다.
+   * tomcat의 webapps 폴더에 복사합니다.
+   * AEM이 설치될 때까지 기다립니다.
 
 ## 문제 해결 {#troubleshooting}
 

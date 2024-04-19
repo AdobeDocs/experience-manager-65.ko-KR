@@ -9,9 +9,9 @@ exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1610'
 ht-degree: 0%
 
 ---
@@ -210,7 +210,7 @@ Adobe Analytics s_code.js 파일의 컨텐츠를 포함하는 analytics.sitecata
 
 1. 확인(OK) 단추가 활성화될 때까지 다음(Next)을 반복적으로 클릭한 다음 확인(OK)을 클릭합니다.
 
-   Sitecatalyst 구성 요소에는 자동으로 생성된 Sitecatalyst.jsp 파일이 포함되어 있습니다.
+   Sitecatalyst 구성 요소에는 자동으로 생성된 sitecatalyst.jsp 파일이 포함되어 있습니다.
 
 1. Sitecatalyst.jsp 파일을 마우스 오른쪽 단추로 클릭하고 삭제를 클릭합니다.
 

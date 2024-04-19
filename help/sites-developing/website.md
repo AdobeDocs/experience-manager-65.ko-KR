@@ -1,6 +1,6 @@
 ---
 title: 모든 기능을 갖춘 웹 사이트(JSP) 만들기
-description: 이 자습서에서는 Adobe Experience Manager(AEM)를 사용하여 모든 기능을 갖춘 웹 사이트를 만드는 방법을 설명합니다.
+description: 이 튜토리얼에서는 Adobe Experience Manager(AEM)를 사용하여 모든 기능을 갖춘 웹 사이트를 만드는 방법을 설명합니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -10,9 +10,9 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4920'
+source-wordcount: '4919'
 ht-degree: 3%
 
 ---

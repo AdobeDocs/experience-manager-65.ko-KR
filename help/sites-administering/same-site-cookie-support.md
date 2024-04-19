@@ -6,16 +6,16 @@ exl-id: e1616385-0855-4f70-b787-b01701929bbc
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 72%
+source-wordcount: '221'
+ht-degree: 81%
 
 ---
 
 # AEM 6.5에 대한 Same Site 쿠키 지원 {#same-site-cookie-support-for-aem-65}
 
-버전 80부터 Chrome과 이후 Safari에 쿠키 보안을 위한 새로운 모델이 도입되었습니다. 이 모드는 라는 설정을 통해 서드파티 사이트에 대한 쿠키 가용성의 보안 제어를 도입하기 위해 설계되었습니다. `SameSite`. 자세한 내용은 이 [문서](https://web.dev/samesite-cookies-explained/)를 참조하십시오.
+버전 80부터 Chrome과 이후 Safari에 쿠키 보안을 위한 새로운 모델이 도입되었습니다. 이 모드는 `SameSite`라는 설정을 통해 서드파티 사이트에 대한 쿠키 가용성의 보안 제어를 도입하기 위해 설계되었습니다. 자세한 내용은 이 [문서](https://web.dev/samesite-cookies-explained/)를 참조하십시오.
 
 이 설정의 기본값(`SameSite=Lax`)으로 인해 AEM 인스턴스 또는 서비스 간 인증이 제대로 작동하지 않을 수 있습니다. 이들 서비스의 도메인 또는 URL 구조가 이 쿠키 정책의 제한 조건에 해당하지 않을 수 있기 때문입니다.
 

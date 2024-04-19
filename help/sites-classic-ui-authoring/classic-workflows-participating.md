@@ -9,10 +9,10 @@ exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 42%
+ht-degree: 39%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 42%
 
 * **뒤로 이동**
 
-  단계 또는 일련의 단계를 반복해야 하는 경우, 다시 돌아갈 수 있습니다. 따라서 워크플로에서 이전에 발생한 단계를 선택하여 다시 처리할 수 있습니다. 워크플로가 사용자가 지정한 단계로 돌아가서 그 단계에서부터 진행됩니다.
+  단계 또는 일련의 단계를 반복해야 하는 경우, 다시 돌아갈 수 있습니다. 워크플로우에서 이전에 발생한 단계를 선택하여 다시 처리할 수 있습니다. 워크플로가 사용자가 지정한 단계로 돌아가서 그 단계에서부터 진행됩니다.
 
 ## 워크플로우에 참여 {#participating-in-a-workflow}
 

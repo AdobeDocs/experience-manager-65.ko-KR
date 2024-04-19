@@ -5,9 +5,9 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: b90b62418edfa9cef36d99de554a340fad07d978
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1505'
 ht-degree: 73%
 
 ---
@@ -368,7 +368,7 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌
 
 >[!NOTE]
 >
->브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 정의 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/sites-developing/experience-fragments.md#the-plain-html-rendition)
+>브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 정의 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
 ## 경험 조각 내보내기 {#exporting-experience-fragments}
 

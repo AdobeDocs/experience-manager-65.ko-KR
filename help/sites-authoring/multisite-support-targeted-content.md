@@ -9,9 +9,9 @@ exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2837'
+source-wordcount: '2838'
 ht-degree: 84%
 
 ---
@@ -210,7 +210,7 @@ AEM에서 이렇게 하려면 다음 작업을 수행합니다.
 
 ## 영역에 사이트 연결 {#linking-sites-to-an-area}
 
-페이지나 사이트에 영역을 연결할 수 있습니다. 이들 페이지가 하위 페이지의 매핑에 의해 오버레이되지 않으면 영역이 모든 하위 페이지에 상속됩니다. 그러나 일반적으로 사이트 수준에서 연결하게 됩니다.
+페이지나 사이트에 영역을 연결할 수 있습니다. 영역은 해당 페이지가 하위 페이지의 매핑에 의해 겹치지 않는 한 모든 하위 페이지에 상속됩니다. 그러나 일반적으로 사이트 수준에서 연결하게 됩니다.
 
 연결하면 선택한 영역의 해당 활동, 경험 및 오퍼만 사용할 수 있습니다. 이렇게 되면 독립적으로 관리되는 콘텐츠가 우발적으로 혼동되는 것을 방지할 수 있습니다. 다른 영역이 구성되지 않으면 각 브랜드의 마스터 영역이 사용됩니다.
 

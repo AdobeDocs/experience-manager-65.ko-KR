@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1658'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 **의 경우 [커뮤니티 기능](/help/communities/overview.md)**
 
-* 배포 시 [팜 게시](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [기본 게시자 식별](#primary-publisher)
+* 배포 시 [게시 팜](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [기본 게시자 식별](#primary-publisher)
 
 * [터널 서비스 활성화](#tunnel-service-on-author)
 * [소셜 로그인 활성화](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
@@ -84,7 +84,7 @@ AEM 6.5 Communities GA에는 Communities 패키지가 포함됩니다. AEM 6.5 �
 
 AEM 6.4부터 커뮤니티에 대한 업데이트는 AEM 누적 수정 팩 및 서비스 팩의 일부로 제공됩니다.
 
-AEM 6.5에 대한 최신 업데이트는 다음을 참조하십시오. [Adobe Experience Manager 6.4 누적 수정 팩 및 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+AEM 6.5에 대한 최신 업데이트는 다음을 참조하십시오. [Adobe Experience Manager 6.4 누적 수정 팩 및 서비스 팩](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
 ### 버전 기록 {#version-history}
 
@@ -168,7 +168,7 @@ SRP 컬렉션(MSRP 또는 DSRP)이 고급 다국어 검색(MLS)을 지원하려�
 
 AEM Communities에서 일반 저장소는 UGC를 저장하는 데 사용되며 종종 다음과 같이 지칭됩니다. [SRP(저장소 리소스 제공자)](/help/communities/working-with-srp.md). 권장 배포는 일반 저장소에 대한 SRP 옵션을 선택하는 데 중점을 둡니다.
 
-일반 저장소는 게시 환경에서 UGC의 중재 및 분석을 지원하면서도 의 필요성을 제거합니다 [복제](/help/communities/sync.md) UGC의
+일반 저장소는 게시 환경에서 UGC의 중재 및 분석을 지원하면서 의 필요성을 제거합니다 [복제](/help/communities/sync.md) UGC의
 
 * [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) : AEM Communities의 SRP 스토리지 옵션에 대해 설명합니다.
 
@@ -208,7 +208,7 @@ AEM Communities에서 일반 저장소는 UGC를 저장하는 데 사용되며 �
 
 복제는 커뮤니티 그룹과 같이 게시 환경에서 만들어진 사이트 콘텐츠에 사용되며, 를 사용하여 작성 환경에서 구성원 및 구성원 그룹을 관리합니다. [터널 업무](#tunnel-service-on-author).
 
-기본 게시자의 경우 [복제 에이전트 구성](/help/sites-deploying/replication.md) 은(는) 게시 서버 및 인증된 사용자를 올바르게 식별합니다. 기본 승인된 사용자, `admin,` 은(는) 이미 적절한 권한을 가지고 있습니다( 은(는) 의 구성원임). `Communities Administrators`).
+기본 게시자의 경우 [복제 에이전트 구성](/help/sites-deploying/replication.md) 는 게시 서버 및 인증된 사용자를 올바르게 식별합니다. 기본 승인된 사용자, `admin,` 은(는) 이미 적절한 권한을 가지고 있습니다( 은(는) 의 구성원임). `Communities Administrators`).
 
 일부 다른 사용자가 적절한 권한을 가지려면 해당 사용자를에 멤버로 추가해야 합니다. `administrators` 사용자 그룹(또한 의 구성원) `Communities Administrators`).
 
@@ -358,8 +358,8 @@ Apache HTTP 서버를 사용하는 경우 모든 관련 항목에 올바른 서�
 
 Dispatcher를 사용하는 경우 다음을 참조하십시오.
 
-* AEM [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 설명서
-* [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
+* AEM [디스패처](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) 설명서
+* [Dispatcher 설치](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [커뮤니티에 대한 Dispatcher 구성](/help/communities/dispatcher.md)
 * [알려진 문제](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

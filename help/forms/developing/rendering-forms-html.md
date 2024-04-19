@@ -1,6 +1,6 @@
 ---
 title: Forms을 HTML으로 렌더링
-description: 웹 브라우저의 HTTP 요청에 대한 응답으로 양식을 HTML으로 렌더링하려면 Forms 서비스를 사용하십시오. Java API 및 웹 서비스 API를 사용하여 양식을 HTML으로 렌더링할 수 있습니다.
+description: 웹 브라우저의 HTTP 요청에 대한 응답으로 양식을 HTML으로 렌더링하려면 Forms 서비스를 사용하십시오. Java&trade; API 및 웹 서비스 API를 사용하여 양식을 HTML으로 렌더링할 수 있습니다.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,9 +9,9 @@ topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4104'
+source-wordcount: '4099'
 ht-degree: 0%
 
 ---
@@ -64,17 +64,17 @@ Forms 서비스는 웹 브라우저의 HTTP 요청에 대한 응답으로 양식
 >
 >HTML 양식에서 디지털 서명 HTML 단추의 모양을 사용자 지정하려면 fscdigsig.css 파일(adobe-forms-ds.ear > adobe-forms-ds.war 파일 내)에서 다음 속성을 변경해야 합니다.
 
-**.fsc-ds-ssb**: 이 스타일시트는 빈 서명 필드가 있는 경우에 적용할 수 있습니다.
+**`.fsc-ds-ssb`**: 이 스타일시트는 빈 서명 필드가 있는 경우에 적용할 수 있습니다.
 
-**.fsc-ds-ssv**: 유효한 서명 필드가 있는 경우 이 스타일시트를 적용할 수 있습니다.
+**`.fsc-ds-ssv`**: 유효한 서명 필드가 있는 경우 이 스타일시트를 적용할 수 있습니다.
 
-**.fsc-ds-ssc**: 유효한 기호 필드가 있지만 데이터가 변경된 경우 이 스타일시트를 적용할 수 있습니다.
+**`.fsc-ds-ssc`**: 유효한 기호 필드가 있지만 데이터가 변경된 경우 이 스타일시트를 적용할 수 있습니다.
 
-**.fsc-ds-ssi**: 잘못된 서명 필드가 있는 경우 이 스타일시트를 적용할 수 있습니다.
+**`.fsc-ds-ssi`**: 잘못된 서명 필드가 있는 경우 이 스타일시트를 적용할 수 있습니다.
 
-**.fsc-ds-popup-bg**: 이 스타일시트의 속성이 사용되고 있지 않습니다.
+**`.fsc-ds-popup-bg`**: 이 스타일시트의 속성이 사용되고 있지 않습니다.
 
-**.fsc-ds-popup-btn**: 이 스타일시트의 속성이 사용되고 있지 않습니다.
+**`fsc-ds-popup-btn`**: 이 스타일시트의 속성이 사용되고 있지 않습니다.
 
 ## 스크립트 실행 {#running-scripts}
 

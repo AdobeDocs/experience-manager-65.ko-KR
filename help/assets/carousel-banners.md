@@ -10,9 +10,9 @@ feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4680'
+source-wordcount: '4677'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
+>관리자가 아닌 사용자를 **[!UICONTROL `dam-users`]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL `dam-users`]** 그룹입니다.
 
 ## 빠른 시작: 회전 배너 {#quick-start-carousel-banners}
 
@@ -72,7 +72,7 @@ ht-degree: 3%
 
    회전 메뉴 세트에서 사용자는 배너 이미지를 탐색하고 핫스팟 또는 이미지 맵을 선택하여 관련 콘텐츠에 액세스합니다.
 
-   에셋에서 회전 메뉴 세트를 만들려면 다음을 선택합니다. **[!UICONTROL 만들기]**&#x200B;을 선택한 다음 을 선택합니다. **[!UICONTROL 회전 메뉴 세트]**. 슬라이드에 에셋 추가 및 선택 **[!UICONTROL 저장]**. You can also edit the appearance and behavior of the carousel directly within the editor.
+   에셋에서 회전 메뉴 세트를 만들려면 다음을 선택합니다. **[!UICONTROL 만들기]**&#x200B;을 선택한 다음 을 선택합니다. **[!UICONTROL 회전 메뉴 세트]**. 각 슬라이드에 에셋 추가 및 선택 **[!UICONTROL 저장]**. You can also edit the appearance and behavior of the carousel directly within the editor.
 
 1. [이미지 배너에 핫스팟 또는 이미지 맵 추가](#adding-hotspots-or-image-maps-to-an-image-banner).
 
@@ -134,7 +134,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
 가장 간단한 경우, 빠른 보기 URL에 있는 유일한 변수 부분은 제품 SKU입니다. 이 경우 SKU 값은 배너 이미지에 핫스팟 또는 이미지 맵을 추가하는 데 필요한 유일한 데이터 부분입니다.
 
-그러나 복잡한 경우 빠른 보기 URL에는 SKU 외에도 범주 ID, 색상 코드 및 크기 코드와 같은 다양한 요소가 있습니다. 이러한 경우 모든 요소는 핫스팟의 개별 변수이거나 회전 배너 기능의 이미지 맵 데이터 정의입니다.
+그러나 복잡한 경우 빠른 보기 URL에는 카테고리 ID, 색상 코드 및 크기 코드와 같이 SKU와는 다른 다양한 요소가 있습니다. 이러한 경우 모든 요소는 핫스팟의 개별 변수이거나 회전 배너 기능의 이미지 맵 데이터 정의입니다.
 
 다음 Quickview URL 및 결과 핫스팟 또는 이미지 맵 변수 예를 생각해 보십시오.
 
@@ -186,7 +186,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
 >[!NOTE]
 >
->관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
+>관리자가 아닌 사용자를 **[!UICONTROL `dam-users`]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL `dam-users`]** 그룹입니다.
 
 **회전 메뉴 세트를 생성하려면**
 
@@ -277,7 +277,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
    * 핫스팟의 경우: 이미지에서 핫스팟을 표시할 위치를 선택합니다.
    * 이미지 맵의 경우: 이미지에서 을 선택한 다음 왼쪽 상단에서 오른쪽 하단으로 드래그하여 이미지 맵 영역을 만듭니다. 모퉁이를 드래그하여 이미지 맵의 크기를 조정할 수 있습니다.
 
-   필요한 경우 핫스팟 또는 이미지 맵을 새 위치로 드래그합니다. 필요에 따라 추가 핫스팟 또는 이미지 맵을 추가합니다.
+   필요한 경우 핫스팟 또는 이미지 맵을 새 위치로 드래그합니다. 필요에 따라 더 많은 핫스팟 또는 이미지 맵을 추가합니다.
 
    핫스팟 또는 이미지 맵을 삭제하려면 **[!UICONTROL 작업]** 탭. Under the **[!UICONTROL Maps &amp; Hotspots]** heading, from the **[!UICONTROL Selected Type]** drop-down menu, select the name of the hotspot or image map you want to remove. 다음 항목 선택 **[!UICONTROL 휴지통]** 아이콘을 클릭한 다음 선택 **[!UICONTROL 삭제]**.
 
@@ -336,7 +336,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
 >[!NOTE]
 >
->관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
+>관리자가 아닌 사용자를 **[!UICONTROL `dam-users`]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
 
 회전판 세트에 대해 다음과 같은 다양한 편집 작업을 수행할 수 있습니다.
 

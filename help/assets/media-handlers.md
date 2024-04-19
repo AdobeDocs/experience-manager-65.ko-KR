@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2136'
+source-wordcount: '2113'
 ht-degree: 3%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] 에는 자산을 처리하는 기본 워크플로우 및 미디어 핸들러 세트가 포함되어 있습니다. 워크플로는 에셋에서 실행할 작업을 정의한 다음 특정 작업을 미디어 핸들러에 위임합니다(예: 썸네일 생성 또는 메타데이터 추출).
 
-특정 MIME 유형의 자산이 업로드되면 자동으로 실행되도록 워크플로우를 구성할 수 있습니다. 처리 단계는 일련의 [!DNL Assets] 미디어 핸들러. [!DNL Experience Manager] 일부 제공 [내장 처리기,](#default-media-handlers) 및 추가 필드는 다음 중 하나일 수 있습니다. [주문 개발](#creating-a-new-media-handler) 또는에 프로세스를 위임하여 정의됩니다. [명령줄 도구](#command-line-based-media-handler).
+특정 MIME 유형의 자산이 업로드되면 자동으로 실행되도록 워크플로우를 구성할 수 있습니다. 처리 단계는 일련의 [!DNL Assets] 미디어 핸들러. [!DNL Experience Manager] 일부 제공 [기본 제공 처리기](#default-media-handlers)및 추가 필드는 다음 중 하나일 수 있습니다 [주문 개발](#creating-a-new-media-handler) 또는에 프로세스를 위임하여 정의됩니다. [명령줄 도구](#command-line-based-media-handler).
 
-미디어 핸들러는 의 서비스입니다. [!DNL Assets] 에셋에 대해 특정 작업을 수행합니다. 예를 들어 MP3 오디오 파일이에 업로드되는 경우 [!DNL Experience Manager]워크플로우는 메타데이터를 추출하고 썸네일을 생성하는 MP3 핸들러를 트리거합니다. 미디어 핸들러는 일반적으로 워크플로우와 함께 사용됩니다. 가장 일반적인 MIME 유형은 내에서 지원됩니다. [!DNL Experience Manager]. 자산에 대해 워크플로우 확장/만들기, 미디어 핸들러 확장/만들기 또는 미디어 핸들러를 비활성화/활성화하여 특정 작업을 수행할 수 있습니다.
+미디어 핸들러는 의 서비스입니다. [!DNL Assets] 에셋에 대해 특정 작업을 수행합니다. 예를 들어 MP3 오디오 파일이에 업로드되는 경우 [!DNL Experience Manager]워크플로우는 메타데이터를 추출하고 썸네일을 생성하는 MP3 핸들러를 트리거합니다. 미디어 처리기는 워크플로우에서 사용됩니다. 가장 일반적인 MIME 유형은 내에서 지원됩니다. [!DNL Experience Manager]. 자산에 대해 워크플로우를 확장 또는 생성하거나, 미디어 핸들러를 확장 또는 생성하거나, 미디어 핸들러를 비활성화 및 활성화하여 특정 작업을 수행할 수 있습니다.
 
 >[!NOTE]
 >
->다음을 참조하십시오. [에셋 지원 형식](assets-formats.md) 에서 지원하는 모든 형식에 대한 설명 페이지입니다. [!DNL Assets] 및 각 형식에 대해 지원되는 기능입니다.
+>다음을 참조하십시오. [지원되는 자산 형식](assets-formats.md) 에서 지원하는 모든 형식에 대한 설명 페이지입니다. [!DNL Assets] 및 각 형식에 대해 지원되는 기능입니다.
 
 ## 기본 미디어 핸들러 {#default-media-handlers}
 
@@ -38,7 +38,7 @@ ht-degree: 3%
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>중요 사항</b> - MP3 파일을 업로드할 때 [타사 라이브러리를 사용하여 처리됨](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). MP3에 가변 비트율(VBR)이 있는 경우 라이브러리는 정확하지 않은 근사 길이를 계산합니다. |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>중요 사항</b> - 업로드된 MP3 파일은 [타사 라이브러리를 사용하여 처리됨](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). MP3에 가변 비트율(VBR)이 있는 경우 라이브러리는 정확하지 않은 근사 길이를 계산합니다. |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -65,7 +65,7 @@ ht-degree: 3%
 
 ## 워크플로우의 미디어 핸들러를 사용하여 자산에 대한 작업을 수행합니다 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
-미디어 핸들러는 일반적으로 워크플로와 함께 사용되는 서비스입니다.
+미디어 핸들러는 워크플로우에 사용되는 서비스입니다.
 
 [!DNL Experience Manager] 에는 에셋을 처리하는 몇 가지 기본 워크플로가 있습니다. 이를 보려면 워크플로 콘솔을 열고 **[!UICONTROL 모델]** 탭: 다음으로 시작하는 워크플로우 제목 [!DNL Assets] 는 에셋별 에셋입니다.
 
@@ -108,14 +108,14 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 인터페이스 및 클래스는 다음과 같습니다.
 
-* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스: 이 인터페이스에서는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. 새 MIME 유형을 추가하려면 이 인터페이스를 구현해야 합니다. 인터페이스에는 특정 문서를 가져오고 내보내는 방법, 축소판을 만들고 메타데이터를 추출하는 방법이 포함되어 있습니다.
+* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스: 이 인터페이스에서는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. MIME 유형을 추가하려면 이 인터페이스를 구현해야 합니다. 인터페이스에는 특정 문서를 가져오고 내보내는 방법, 축소판을 만들고 메타데이터를 추출하는 방법이 포함되어 있습니다.
 * `com.day.cq.dam.core.AbstractAssetHandler` 클래스: 이 클래스는 다른 모든 에셋 처리기 구현의 기초 역할을 하며 일반적으로 사용되는 기능을 제공합니다.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:
-   * 이 클래스는 다른 모든 에셋 핸들러 구현의 기반으로 사용되며 하위 에셋 추출을 위해 일반적으로 사용되는 기능과 함께 일반적으로 사용되는 기능을 제공합니다.
+   * 이 클래스는 다른 모든 에셋 처리기 구현의 기초 역할을 하며 일반적으로 사용되는 기능과 하위 에셋 추출에 일반적으로 사용되는 기능을 제공합니다.
    * 구현을 시작하는 가장 좋은 방법은 대부분의 항목을 처리하고 적절한 기본 동작을 제공하는 제공된 추상 구현에서 상속하는 것입니다. com.day.cq.dam.core.AbstractAssetHandler 클래스.
    * 이 클래스는 이미 추상 서비스 설명자를 제공합니다. 따라서 이 클래스에서 상속하고 maven-sling-plugin을 사용하는 경우 상속 플래그를 true로 설정해야 합니다.
 
-다음과 같은 방법을 구현해야 합니다.
+다음 메서드를 구현해야 합니다.
 
 * `extractMetadata()`: 이 메서드는 사용 가능한 모든 메타데이터를 추출합니다.
 * `getThumbnailImage()`: 이 메서드는 전달된 에셋에서 썸네일 이미지를 생성합니다.
@@ -127,13 +127,13 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 인터페이스 및 클래스는 다음과 같습니다.
 
-* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스: 이 인터페이스에서는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. 새 MIME 유형을 추가하려면 이 인터페이스를 구현해야 합니다. 인터페이스에는 특정 문서를 가져오고 내보내는 방법, 축소판을 만들고 메타데이터를 추출하는 방법이 포함되어 있습니다.
+* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스: 이 인터페이스에서는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. MIME 유형을 추가하려면 이 인터페이스를 구현해야 합니다. 인터페이스에는 특정 문서를 가져오고 내보내는 방법, 축소판을 만들고 메타데이터를 추출하는 방법이 포함되어 있습니다.
 * `com.day.cq.dam.core.AbstractAssetHandler` 클래스: 이 클래스는 다른 모든 에셋 처리기 구현의 기초 역할을 하며 일반적으로 사용되는 기능을 제공합니다.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` 클래스: 이 클래스는 다른 모든 에셋 처리기 구현의 기초 역할을 하며 하위 에셋 추출에 공통으로 사용되는 기능과 함께 공통으로 사용되는 기능을 제공합니다.
 
 #### 예: 특정 텍스트 핸들러 만들기 {#example-create-a-specific-text-handler}
 
-이 섹션에서는 워터마크로 썸네일을 생성하는 특정 텍스트 처리기를 만듭니다.
+이 섹션에서는 워터마크로 썸네일을 생성하는 특정 텍스트 핸들러를 만듭니다.
 
 다음과 같이 진행합니다.
 
@@ -144,8 +144,8 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 1. Eclipse에서 만들기 `myBundle` [!DNL Maven] 프로젝트:
 
    1. 메뉴 모음에서 를 클릭합니다 **[!UICONTROL 파일]** > **[!UICONTROL 신규]** > **[!UICONTROL 기타]**.
-   1. 대화 상자에서 다음을 확장합니다. [!DNL Maven] 폴더, 선택 [!DNL Maven] 프로젝트 및 클릭 **[!UICONTROL 다음]**.
-   1. 단순 프로젝트 만들기 상자와 기본 작업 공간 위치 사용 상자를 선택한 다음 를 클릭합니다 **[!UICONTROL 다음]**.
+   1. 대화 상자에서 [!DNL Maven] 폴더에서 [!DNL Maven] 프로젝트를 클릭한 다음 **[!UICONTROL 다음]**.
+   1. 간단한 프로젝트 만들기 상자와 기본 작업 공간 위치 사용 상자를 선택한 다음 를 클릭합니다 **[!UICONTROL 다음]**.
    1. 정의 [!DNL Maven] 프로젝트:
 
       * 그룹 ID: `com.day.cq5.myhandler`.
@@ -155,10 +155,10 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
    1. 클릭 **[!UICONTROL 완료]**.
 
-1. 설정 [!DNL Java] 버전 1.5로의 컴파일러:
+1. 설정 [!DNL Java™] 버전 1.5로의 컴파일러:
 
    1. 마우스 오른쪽 단추 클릭 `myBundle` 프로젝트, 선택 [!UICONTROL 속성].
-   1. 선택 [!UICONTROL Java 컴파일러] 및 다음 속성을 1.5로 설정합니다.
+   1. 선택 [!UICONTROL Java™ 컴파일러] 및 다음 속성을 1.5로 설정합니다.
 
       * 컴파일러 규정 준수 수준
       * 생성된 .class 파일 호환성
@@ -283,16 +283,16 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
     </dependencies>
    ```
 
-1. 패키지 만들기 `com.day.cq5.myhandler` 다음을 포함하는 [!DNL Java] 클래스 `myBundle/src/main/java`:
+1. 패키지 만들기 `com.day.cq5.myhandler` 다음을 포함하는 [!DNL Java™] 클래스 `myBundle/src/main/java`:
 
    1. myBundle에서 마우스 오른쪽 단추를 클릭합니다. `src/main/java`새로 만들기, 패키지 순으로 선택합니다.
    1. 이름 지정 `com.day.cq5.myhandler` 마침을 클릭합니다.
 
-1. 만들기 [!DNL Java] 클래스 `MyHandler`:
+1. 만들기 [!DNL Java™] 클래스 `MyHandler`:
 
    1. 위치 [!DNL Eclipse], 아래 `myBundle/src/main/java`을(를) 마우스 오른쪽 단추로 클릭합니다. `com.day.cq5.myhandler` 패키지. 선택 [!UICONTROL 신규], 그런 다음 [!UICONTROL 클래스].
-   1. 대화 상자 창에서 이름을 로 지정합니다. [!DNL Java] 클래스 `MyHandler` 및 클릭 [!UICONTROL 완료]. [!DNL Eclipse] 파일을 만들고 엽니다. `MyHandler.java`.
-   1. 위치 `MyHandler.java` 기존 코드를 다음으로 바꾼 다음 변경 내용을 저장합니다.
+   1. 대화 상자 창에서 이름을 로 지정합니다. [!DNL Java™] 클래스 `MyHandler` 및 클릭 [!UICONTROL 완료]. [!DNL Eclipse] 파일을 만들고 엽니다. `MyHandler.java`.
+   1. 위치 `MyHandler.java`를 클릭하고 기존 코드를 다음으로 바꾼 다음 변경 사항을 저장합니다.
 
    ```java
    package com.day.cq5.myhandler;
@@ -434,7 +434,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
    }
    ```
 
-1. 컴파일 [!DNL Java] 클래스를 만들고 번들을 만듭니다.
+1. 컴파일 [!DNL Java™] 클래스를 만들고 번들을 만듭니다.
 
    1. 마우스 오른쪽 단추 클릭 `myBundle` 프로젝트, 선택 **[!UICONTROL 다음으로 실행]**, 그런 다음 **[!UICONTROL Maven 설치]**.
    1. 번들 `myBundle-0.0.1-SNAPSHOT.jar` (컴파일된 클래스 포함)은 `myBundle/target`.
@@ -445,20 +445,20 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 ## 명령줄 기반 미디어 핸들러 {#command-line-based-media-handler}
 
-[!DNL Experience Manager] 워크플로우 내에서 명령줄 도구를 실행하여 자산을 변환할 수 있습니다(예: [!DNL ImageMagick]) 새 렌디션을 에셋에 추가합니다. 를 호스팅하는 디스크에는 명령줄 도구만 설치하면 됩니다. [!DNL Experience Manager] 워크플로우에 프로세스 단계를 추가하고 구성하는 서버 및 입니다. 호출된 프로세스 `CommandLineProcess`를 사용하면 특정 MIME 유형에 따라 필터링하고 새 렌디션을 기반으로 여러 썸네일을 만들 수도 있습니다.
+[!DNL Experience Manager] 워크플로우 내에서 명령줄 도구를 실행하여 자산을 변환할 수 있습니다(예: [!DNL ImageMagick]) 새 렌디션을 에셋에 추가합니다. 를 호스팅하는 디스크에만 명령줄 도구를 설치합니다. [!DNL Experience Manager] 워크플로우에 프로세스 단계를 추가하고 구성하려면 서버 및 을 선택합니다. 호출된 프로세스 `CommandLineProcess`또한 특정 MIME 유형에 따라 필터링하고 새 렌디션을 기반으로 여러 썸네일을 만들 수 있습니다.
 
 다음 변환은 내에서 자동으로 실행되고 저장될 수 있습니다. [!DNL Assets]:
 
 * 를 사용하는 EPS 및 AI 변환 [ImageMagick](https://www.imagemagick.org/script/index.php) 및 [고스트스크립트](https://www.ghostscript.com/).
 * 를 사용한 FLV 비디오 코드 변환 [FFmpeg](https://ffmpeg.org/).
 * 를 사용한 MP3 인코딩 [절름발이](https://lame.sourceforge.io/).
-* 를 사용한 오디오 처리 [SOX](https://sox.sourceforge.io/).
+* 를 사용한 오디오 처리 [SOX](https://sourceforge.net/projects/sox/).
 
 >[!NOTE]
 >
 >Windows가 아닌 시스템에서 FFmpeg 도구는 파일 이름에 작은 따옴표(&#39;)가 있는 비디오 에셋에 대한 렌디션을 생성하는 동안 오류를 반환합니다. 비디오 파일의 이름에 작은 따옴표가 포함되어 있는 경우 업로드하기 전에 제거합니다. [!DNL Experience Manager].
 
-다음 `CommandLineProcess` 프로세스는 나열된 순서대로 다음 작업을 수행합니다.
+다음 `CommandLineProcess` 프로세스는 나열된 순서로 다음 작업을 수행합니다.
 
 * 지정된 경우 특정 MIME 유형에 따라 파일을 필터링합니다.
 * 를 호스팅하는 디스크에 임시 디렉터리를 만듭니다. [!DNL Experience Manager] 서버입니다.
@@ -470,14 +470,14 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 ### 를 사용하는 예 [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-다음 예에서는 miMIME e-type GIF 또는 TIFF이 있는 자산이에 추가될 때마다 명령줄 프로세스 단계를 설정하는 방법을 보여 줍니다 `/content/dam` 다음에 있음 [!DNL Experience Manager] 서버에서는 3개의 추가 썸네일(140x100, 48x48, 10x250)과 함께 원본의 대칭 이미지가 생성됩니다.
+다음 예에서는 miMIME e-type GIF 또는 TIFF이 있는 자산이에 추가될 때마다 명령줄 프로세스 단계를 설정하는 방법을 보여 줍니다 `/content/dam` 다음에 있음 [!DNL Experience Manager] 서버에서는 원본의 대칭 이동 이미지가 생성됩니다. 140x100, 48x48, 10x250 축소판 세 개가 더 만들어집니다.
 
 이렇게 하려면 다음을 사용합니다. [!DNL ImageMagick]. [!DNL ImageMagick] 는 비트맵 이미지를 작성, 편집 및 작성하는 데 사용되는 무료 명령줄 소프트웨어입니다.
 
 설치 [!DNL ImageMagick] 을(를) 호스팅하는 디스크에서 [!DNL Experience Manager] 서버:
 
 1. 설치 [!DNL ImageMagick]: 를 참조하십시오 [ImageMagick 설명서](https://www.imagemagick.org/script/download.php).
-1. 명령줄에서 변환(convert)을 실행할 수 있도록 도구를 설정합니다.
+1. 명령줄 하나를 실행할 수 있도록 도구를 설정합니다. `convert`.
 1. 도구가 제대로 설치되었는지 확인하려면 다음 명령을 실행합니다 `convert -h` 명령줄에 있습니다.
 
    변환 도구의 가능한 모든 옵션이 있는 도움말 화면이 표시됩니다.
@@ -506,7 +506,7 @@ This section describes how to set the [!UICONTROL Process Arguments] of the [!UI
 
 | Argument-Format | 설명 |
 |---|---|
-| mime:&lt;mime-type> | 선택적 인수입니다. 자산이 인수 중 하나와 동일한 MIME 유형을 갖는 경우 프로세스가 적용됩니다. <br>몇 가지 MIME 유형을 정의할 수 있습니다. |
+| mime:&lt;mime-type> | 선택적 인수입니다. 에셋이 인수의 MIME 유형과 동일한 MIME 유형인 경우 프로세스가 적용됩니다. <br>몇 가지 MIME 유형을 정의할 수 있습니다. |
 | tn:&lt;width>:&lt;height> | 선택적 인수입니다. 이 프로세스는 인수에 정의된 차원으로 썸네일을 만듭니다. <br>여러 썸네일을 정의할 수 있습니다. |
 | cmd: &lt;command> | 실행되는 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 명령은 하나만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다.<br>`${filename}`: 입력 파일 이름(예: original.jpg) <br> `${file}`: 입력 파일의 전체 경로 이름(예: ) `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: 입력 파일의 디렉토리(예: ) `/tmp/cqdam0816.tmp` <br>`${basename}`: 확장명이 없는 입력 파일의 이름(예: 원본) <br>`${extension}`: 입력 파일의 확장자(예: JPG). |
 
@@ -514,7 +514,7 @@ This section describes how to set the [!UICONTROL Process Arguments] of the [!UI
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-그런 다음 워크플로우가 실행되면 단계가 인 자산에만 적용됩니다. `image/gif` 또는 `mime:image/tiff` 다음으로: `mime-types`, 원본 이미지의 대칭 이동을 만들고, JPG으로 변환하고, 140x100, 48x48 및 10x250 크기의 세 개의 썸네일을 만듭니다.
+그런 다음 워크플로우가 실행되면 단계가 가 있는 자산에만 적용됩니다. `image/gif` 또는 `mime:image/tiff` 다음으로: `mime-types`. 원본 이미지의 대칭 이동 이미지를 만들어 JPG으로 변환하고 140x100, 48x48 및 10x250 치수의 세 가지 썸네일을 만듭니다.
 
 다음 사용 [!UICONTROL 프로세스 인수] 을 사용하여 세 개의 표준 축소판을 만들려면 [!DNL ImageMagick]:
 

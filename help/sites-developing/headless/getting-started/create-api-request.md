@@ -5,9 +5,9 @@ exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '548'
 ht-degree: 43%
 
 ---
@@ -28,7 +28,7 @@ AEM Assets REST API를 사용하여 콘텐츠 조각을 관리하고, 콘텐츠 
 
 ## GraphQL을 사용하여 컨텐츠 조각을 전달하는 방법 {#how-to-deliver-a-content-fragment}
 
-정보 설계자는 콘텐츠를 전달할 채널 끝점에 대한 쿼리를 설계해야 합니다. 이러한 쿼리는 모델당 끝점당 한 번만 고려해야 합니다. 이 시작 안내서에서는 하나만 만들어야 합니다.
+정보 설계자는 콘텐츠를 전달할 채널 끝점에 대한 쿼리를 설계해야 합니다. 이러한 쿼리는 엔드포인트, 모델당 한 번만 고려하십시오. 이 시작 안내서에서는 하나만 만듭니다.
 
 1. AEM에 로그인하고 [GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * 예: `http://<host>:<port>/aem/graphiql.html`.

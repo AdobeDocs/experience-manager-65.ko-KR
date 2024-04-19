@@ -10,9 +10,9 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '5926'
+source-wordcount: '5927'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->사용자가 썸네일 이미지를 선택할 때 웹 페이지를 시작하는 대화형 비디오를 만드는 경우 일부 장치에서 팝업 웹 페이지가 열리지 않도록 차단합니다. 이러한 경우 장치에서 팝업 차단 설정을 변경해야 합니다. 예를 들어 Apple iPhone 6에서 **[!UICONTROL 설정]** > **Safari** > **팝업 차단**&#x200B;을 클릭한 다음 컨트롤을 다음으로 밀기 **[!UICONTROL 끔]**. 이제 대화형 비디오를 재생하고 썸네일을 선택하면 팝업을 열겠다는 메시지가 표시됩니다. 수락하면 웹 페이지가 열립니다.
+>사용자가 썸네일 이미지를 선택할 때 웹 페이지를 시작하는 대화형 비디오를 만드는 경우 일부 장치에서 팝업 웹 페이지가 열리지 않도록 차단합니다. 이러한 경우 장치에서 팝업 차단 설정을 변경해야 합니다. 예를 들어 Apple iPhone 6에서 **[!UICONTROL 설정]** > **Safari** > **팝업 차단**&#x200B;을 클릭한 다음 컨트롤을 다음으로 밀기 **[!UICONTROL 끔]**. 이제 대화형 비디오를 재생하고 썸네일을 선택할 때 팝업을 열겠다는 메시지가 표시됩니다. 수락하면 웹 페이지가 열립니다.
 
 ### 대화형 비디오가 만들어지는 방식 보기 {#watch-how-interactive-videos-are-created}
 
@@ -73,7 +73,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 1. **(선택 사항) Quickview 변수 식별** - 기존 Quickview 구현에서 사용하는 동적 변수를 식별하여 시작합니다. 대화형 비디오를 만들 때 변수를 사용하여 제품 썸네일을 해당 제품 빠른 보기에 매핑합니다. 다음을 참조하십시오 [(선택 사항) Quickview 변수 식별](#optional-identifying-quickview-variables).
    *이 단계는 다음 내용이 모두 참인 경우에만 필요합니다*:
    * 빠른 보기로 트리거하여 비디오에 대화형 기능을 추가하려는 경우.
-   * Experience Manager 구현은 다음을 수행합니다 *아님* IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오려면 eCommerce 통합 프레임워크를 사용합니다. 다음을 참조하십시오 [Experience Manager Assets의 eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md).
+   * Experience Manager 구현은 다음을 수행합니다 *아님* IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오려면 eCommerce 통합 프레임워크를 사용합니다. 다음을 참조하십시오 [Experience Manager Assets의 eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(선택 사항) 대화형 비디오 뷰어 사전 설정 만들기** - 비디오 스크러버 및 대화형 썸네일과 같이 플레이어를 구성하는 다양한 구성 요소의 모양과 동작을 사용자 지정합니다.
 곧바로 사용할 수 있는 대화형 비디오 뷰어 사전 설정을 사용하려는 경우 자체 대화형 비디오 뷰어 사전 설정을 만들 필요가 없습니다 `Shoppable_Video_Light` 또는 `Shoppable_Video_Dark` 대신,
@@ -103,7 +103,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 >이 작업은 다음이 참인 경우에만 필요합니다.
 >
 >* 빠른 보기로 트리거하여 비디오에 대화형 기능을 추가하려는 경우.
->* Experience Manager 구현은 다음을 수행합니다 *아님* IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오려면 eCommerce 통합 프레임워크를 사용합니다. 다음을 참조하십시오 [Experience Manager Assets의 eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md).
+>* Experience Manager 구현은 다음을 수행합니다 *아님* IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오려면 eCommerce 통합 프레임워크를 사용합니다. 다음을 참조하십시오 [Experience Manager Assets의 eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md).
 >
 >Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -140,7 +140,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
 가장 간단한 경우, 빠른 보기 URL에 있는 유일한 변수 부분은 제품 SKU입니다. 이 경우 제품 SKU 값은 Experience Manager의 대화형 비디오에서 시간 세그먼트에 썸네일을 추가하는 데 필요한 유일한 데이터 조각입니다.
 
-그러나 복잡한 경우 빠른 보기 URL에는 제품 SKU 외에도 카테고리 ID, 색상 코드 및 크기 코드와 같은 다양한 요소가 있습니다. 이러한 경우 그러한 모든 요소는 Experience Manager의 썸네일 데이터 정의에서 별도의 변수가 됩니다.
+그러나 복잡한 경우 빠른 보기 URL에는 제품 SKU 외에도 카테고리 ID, 색상 코드 및 크기 코드와 같이 다른 다양한 요소가 있습니다. 이러한 경우 그러한 모든 요소는 Experience Manager의 썸네일 데이터 정의에서 별도의 변수가 됩니다.
 
 다음 Quickview URL 및 결과 썸네일 변수 예를 생각해 보십시오.
 
@@ -300,7 +300,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
      비디오 끝에 도달할 때까지 세그먼트를 추가하려는 타임라인의 지점에서 비디오를 계속 재생하고 일시 중지합니다.
 
-1. (선택 사항) **[!UICONTROL 타임라인 크기 슬라이더]** 왼쪽에서 확대하여 보거나 오른쪽으로 축소하여 추가했던 세그먼트에 표시되는 세부 정보의 양을 제어할 수 있습니다.
+1. (선택 사항) **[!UICONTROL 타임라인 크기 슬라이더]** 왼쪽 - 확대 또는 오른쪽 - 축소 - 추가한 세그먼트에서 표시되는 세부 사항의 양을 제어할 수 있습니다.
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
@@ -335,7 +335,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
       </tbody>
     </table>
 
-   비디오 타임라인에서는 사용할 수 있는 만큼의 화면 공간을 사용합니다. 따라서 브라우저 크기를 조정하면 추가한 세그먼트의 너비가 올바르게 유지됩니다.
+   비디오 타임라인에서는 사용할 수 있는 만큼의 화면 공간을 사용합니다. 따라서 추가한 세그먼트는 브라우저 크기가 변경될 때 올바른 폭을 유지합니다.
 
    예를 들어 다음 세 스크린샷에서 동일한 비디오를 사용하고 있습니다. 각 세그먼트의 너비는 타임라인 배율 설정에 따라 변경됩니다.
 
@@ -375,7 +375,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
    * 세그먼트를 삭제하려면
 
-     타임라인에 있는 마지막 세그먼트를 선택한 다음 도구 모음에서 를 선택합니다. **[!UICONTROL 세그먼트 삭제]**. 둘 이상의 세그먼트를 선택한 경우 세그먼트 삭제 기능이 비활성화됩니다.
+     타임라인에 있는 마지막 세그먼트를 선택한 다음 도구 모음에서 를 선택합니다. **[!UICONTROL 세그먼트 삭제]**. 두 개 이상의 세그먼트를 선택한 경우 **[!UICONTROL 세그먼트 삭제]** 이(가) 비활성화되었습니다.
 
      마지막 세그먼트만 삭제할 수 있습니다. 예를 들어 타임라인에서 모든 세그먼트를 삭제하려면 항상 마지막 세그먼트를 선택한 다음 를 선택해야 합니다 **[!UICONTROL 세그먼트 삭제]**.
 
@@ -534,7 +534,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 >
 >이 시점에서 하이퍼링크가 설정된 웹 페이지만 사용하여 인터랙티브를 추가했다면 완료됩니다.
 >
->그러나 빠른 보기를 트리거하기 위해 대화형 활동을 추가한 경우 대화형 비디오 옆에 있는 썸네일은 표시용으로만 사용되며 기존 빠른 보기와 아직 통합되지 않았습니다. 이 경우 대화형 비디오를 웹 사이트의 기존 빠른 보기와 통합해야 합니다.
+>그러나 빠른 보기를 트리거하기 위해 대화형 활동을 추가한 경우 대화형 비디오 옆에 있는 썸네일은 표시용으로만 사용되며 기존 빠른 보기와 아직 통합되지 않았습니다. 이러한 경우 대화형 비디오를 웹 사이트의 기존 빠른 보기와 통합해야 합니다.
 
 **예**
 
@@ -693,7 +693,7 @@ Experience Manager에서 반환한 포함 코드에 이미 사용할 준비가 �
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
-내에서 이 URL을 쉽게 재구성할 수 있습니다. `quickViewActivate` 핸들러 사용 `categoryId` 및 `sku` 에서 사용할 수 있는 필드 `inData` 다음과 같이 뷰어 코드를 통해 처리기에 전달된 개체
+내에서 이 URL을 쉽게 재구성할 수 있습니다. `quickViewActivate` 를 사용한 핸들러 `categoryId` 및 `sku` 에서 사용할 수 있는 필드 `inData` 다음과 같이 뷰어 코드를 통해 처리기에 전달된 개체
 
 ```xml
 var sku=inData.sku;
@@ -707,7 +707,7 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 loadQuickView(quickViewUrl);
 ```
 
-마지막으로 빠른 보기 대화 상자가 뷰어의 컨테이너 요소에 연결되어 있는지 확인합니다. 기본 포함 코드는 이 기능을 수행하는 샘플 단계를 제공합니다. 뷰어의 컨테이너 요소에 대한 참조를 가져오려면 다음 코드 행을 사용할 수 있습니다.
+마지막으로 빠른 보기 대화 상자가 뷰어의 컨테이너 요소에 연결되어 있는지 확인합니다. 포함된 코드는 이 기능을 구현하는 샘플 단계를 제공합니다. 뷰어의 컨테이너 요소에 대한 참조를 가져오려면 다음 코드 행을 사용할 수 있습니다.
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component

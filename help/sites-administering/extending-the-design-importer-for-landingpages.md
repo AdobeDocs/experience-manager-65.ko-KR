@@ -10,9 +10,9 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '3442'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -368,11 +368,11 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 ### Parsys {#parsys}
 
-AEM parsys 구성 요소는 다른 AEM 구성 요소를 포함할 수 있는 컨테이너 구성 요소입니다. 가져온 HTML에 parsys 구성 요소를 추가할 수 있습니다. 이를 통해 사용자는 편집 가능한 AEM 구성 요소를 가져온 후에도 랜딩 페이지에 추가/삭제할 수 있습니다.
+AEM Parsys 구성 요소는 다른 AEM 구성 요소를 포함할 수 있는 컨테이너 구성 요소입니다. 가져온 HTML에 Parsys 구성 요소를 추가할 수 있습니다. 이를 통해 사용자는 편집 가능한 AEM 구성 요소를 가져온 후에도 랜딩 페이지에 추가/삭제할 수 있습니다.
 
 단락 시스템은 사용자에게 사이드 킥을 사용하여 구성 요소를 추가할 수 있는 기능을 제공합니다.
 
-parsys 구성 요소를 삽입하기 위한 HTML 마크업( `foundation/components/parsys`HTML )를 클릭하여 제품에서 사용할 수 있습니다.
+Parsys 구성 요소를 삽입하기 위한 HTML 마크업( `foundation/components/parsys`HTML )를 클릭하여 제품에서 사용할 수 있습니다.
 
 ```xml
 <div data-cq-component="parsys">
@@ -383,9 +383,9 @@ parsys 구성 요소를 삽입하기 위한 HTML 마크업( `foundation/componen
 
 위의 마크업을 HTML에 포함하면 다음 작업이 수행됩니다.
 
-* 디자인 패키지를 가져온 후 생성된 랜딩 페이지에 AEM parsys 구성 요소(foundation/components/parsys)를 삽입합니다.
-* 기본 구성 요소로 사이드 킥을 초기화합니다. 사이드 킥에서 parsys 구성 요소로 구성 요소를 드래그하여 새 구성 요소를 랜딩 페이지에 추가할 수 있습니다.
-* 두 개의 제목 구성 요소도 parsys의 일부입니다.
+* 디자인 패키지를 가져온 후 생성된 랜딩 페이지에 AEM Parsys 구성 요소(foundation/components/parsys)를 삽입합니다.
+* 기본 구성 요소로 사이드 킥을 초기화합니다. 사이드 킥에서 Parsys 구성 요소로 구성 요소를 드래그하여 새 구성 요소를 랜딩 페이지에 추가할 수 있습니다.
+* 두 개의 제목 구성 요소도 Parsys의 일부입니다.
 
 ### 대상 {#target}
 
@@ -441,7 +441,7 @@ HTML 태그에 설정된 Lang 속성은 디자인 임포터에서 &quot;jcr:lang
 
 ### 템플릿 오버레이 {#overlaying-template}
 
-빈 랜딩 페이지 템플릿은에서 하나를 만들어 오버레이할 수 있습니다. `/apps/<appName>/designimporter/templates/<templateName>`
+빈 랜딩 페이지 템플릿은에서 하나를 만들어 겹칠 수 있습니다. `/apps/<appName>/designimporter/templates/<templateName>`
 
 AEM에서 템플릿을 만드는 단계가 설명되어 있습니다 [여기](/help/sites-developing/templates.md).
 
@@ -543,7 +543,7 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
 
 ### 랜딩 페이지 관련 구성 요소로 사이드 킥 초기화 {#initialization-of-sidekick-with-landing-page-relevant-components}
 
-디자인 패키지에 parsys 구성 요소 마크업이 포함된 경우 가져온 후 사이드 킥에서 랜딩 페이지 관련 구성 요소를 표시하기 시작합니다. 새 구성 요소를 랜딩 페이지 내의 parsys 구성 요소로 끌어다 놓을 수 있습니다. 디자인 모드로 이동하여 사이드 킥에 새 구성 요소를 추가할 수도 있습니다.
+디자인 패키지에 Parsys 구성 요소 마크업이 포함된 경우 가져온 후 사이드 킥에서 랜딩 페이지 관련 구성 요소를 표시하기 시작합니다. 새 구성 요소를 랜딩 페이지 내의 Parsys 구성 요소로 끌어다 놓을 수 있습니다. 디자인 모드로 이동하여 사이드 킥에 새 구성 요소를 추가할 수도 있습니다.
 
 ### 가져오는 동안 오류 메시지가 표시됨 {#error-messages-displayed-during-import}
 

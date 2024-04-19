@@ -7,20 +7,20 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2099'
 ht-degree: 2%
 
 ---
 
 # 액세스 가능한 적응형 양식 만들기{#creating-accessible-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 ## 소개 {#introduction}
 
-액세스 가능한 양식은 특별한 요구 사항이 있는 사용자를 포함하여 모든 사용자가 사용할 수 있는 양식입니다. 적응형 Forms에는 다양한 능력을 가진 사용자의 사용성을 향상시키는 몇 가지 기능이 포함되어 있습니다. 적응형 양식에 액세스 가능성을 구축하면 가능한 가장 광범위한 콘텐츠 대상자가 될 수 있을 뿐만 아니라, 액세스 가능성 표준 준수가 요구되는 지역에서 문서를 제공할 때 반드시 필요합니다. AEM Forms은 양식 개발자가 접근성 표준을 준수하도록 지원합니다.
+액세스 가능한 양식은 특별한 요구 사항이 있는 사용자를 포함하여 모든 사용자가 사용할 수 있는 양식입니다. 적응형 Forms에는 다양한 능력을 가진 사용자의 사용성을 향상시키는 몇 가지 기능이 포함되어 있습니다. 적응형 양식에 액세스 가능성을 구축하면 가능한 가장 광범위한 콘텐츠 대상자가 될 수 있을 뿐만 아니라, 액세스 가능성 표준 준수가 필수적인 지역에서 문서를 제공할 때 이 작업이 반드시 필요합니다. AEM Forms은 양식 개발자가 접근성 표준을 준수하도록 지원합니다.
 
 작성자는 적응형 양식을 작성하는 동안 액세스 가능한 적응형 양식을 만들려면 다음 사항을 고려해야 합니다.
 
@@ -43,7 +43,7 @@ ANDI(Accessible Name and Description Inspector) 도구를 사용하면 웹 콘�
 * 키보드 접근성 및 색상 대비 문제 감지
 * 표준에 따라 화면 판독기 콘텐츠를 명확하게 식별합니다.
 
-ANDI는 모든 주요 인터넷 브라우저에서 작동합니다. 다음을 참조하십시오. [ANDI의 설명서](https://www.ssa.gov/accessibility/andi/help/install.html) 도구 구성 및 사용에 대한 자세한 지침은 을 참조하십시오.
+ANDI는 모든 주요 인터넷 브라우저에서 작동합니다. 다음을 참조하십시오 [ANDI의 설명서](https://www.ssa.gov/accessibility/andi/help/install.html) 도구 구성 및 사용 방법에 대한 자세한 지침은 을 참조하십시오.
 
 ### Ultramarine에서 액세스할 수 있는 테마 다운로드 및 설치
 
@@ -70,7 +70,7 @@ Ultramarine-Accessible 테마를 기존 적응형 양식에 적용합니다. 테
 
 1. 로고 이미지에 대한 의미 있는 대체 텍스트를 적응형 양식에 추가합니다.
 
-   적응형 양식 템플릿의 머리글 및 바닥글 구성 요소에서 이미지에 대한 의미 있는 대체 텍스트를 제공합니다. 템플릿을 수정하고 이 템플릿을 사용하여 적응형 양식을 만들면 적응형 양식은 템플릿의 머리글 및 바닥글에 적용된 모든 액세스 가능성 관련 수정 사항을 상속합니다.  기존 적응형 양식의 경우 적응형 양식 수준에서 변경합니다. 적응형 양식 템플릿에 대한 변경 사항은 기존 적응형 양식으로 자동 전달되지 않습니다.
+   적응형 양식 템플릿의 머리글 및 바닥글 구성 요소에서 이미지에 대한 의미 있는 대체 텍스트를 제공합니다. 템플릿을 수정하고 이 템플릿을 사용하여 적응형 양식을 만들면 적응형 양식은 템플릿의 머리글 및 바닥글에 적용된 모든 접근성 관련 수정 사항을 상속합니다.  기존 적응형 양식의 경우 적응형 양식 수준에서 변경합니다. 적응형 양식 템플릿에 대한 변경 사항은 기존 적응형 양식으로 자동 전달되지 않습니다.
 
 1. 양식 이름이 포함된 제목 구성 요소를 적응형 양식에 추가합니다. 양식 디자인에서 회사 이름을 지정하는 경우 회사 이름에 대한 별도의 제목 구성 요소도 추가하십시오.
 

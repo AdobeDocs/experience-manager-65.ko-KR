@@ -10,10 +10,10 @@ exl-id: e47270e8-bace-4d0f-a088-7269b6356315
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1521'
-ht-degree: 74%
+ht-degree: 73%
 
 ---
 
@@ -173,7 +173,7 @@ ht-degree: 74%
 
 ### 참가자 단계에서 뒤로 이동 수행 {#performing-step-back-on-a-participant-step}
 
-단계 또는 일련의 단계를 반복해야 하는 경우, 다시 돌아갈 수 있습니다. 따라서 워크플로에서 이전에 발생한 단계를 선택하여 다시 처리할 수 있습니다. 워크플로가 사용자가 지정한 단계로 돌아가서 그 단계에서부터 진행됩니다.
+단계 또는 일련의 단계를 반복해야 하는 경우, 다시 돌아갈 수 있습니다. 워크플로우에서 이전에 발생한 단계를 선택하여 다시 처리할 수 있습니다. 워크플로가 사용자가 지정한 단계로 돌아가서 그 단계에서부터 진행됩니다.
 
 이 작업에서는 다음 내용을 표시할 수 있습니다.
 

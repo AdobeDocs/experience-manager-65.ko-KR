@@ -10,7 +10,7 @@ exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 1%
@@ -106,8 +106,8 @@ ht-degree: 1%
 
 AEM 받은 편지함에서 알림을 받도록 선택한 경우 받은 편지함이 알림으로 가득 채워집니다. 다음을 수행할 수 있습니다. [알림 보기](#viewing-your-notifications)필요한 알림을 선택하여 다음 작업을 수행합니다.
 
-* 다음을 클릭하여 승인 **승인**: 의 값 **읽기** 열이 다음으로 설정됨 **true**.
+* 다음을 클릭하여 수락 **승인**: 의 값 **읽기** 열이 다음으로 설정됨 **true**.
 
-* 클릭하여 삭제 **삭제**.
+* 다음을 클릭하여 제거 **삭제**.
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)
