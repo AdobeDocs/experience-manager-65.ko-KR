@@ -9,10 +9,10 @@ exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -35,10 +35,10 @@ AEM 표준 참조 구현인 We.Retail에서는 AEM의 가장 강력한 기능 �
 | [세계화된 부위 구조](/help/sites-administering/tc-bp.md) | We.Retail에는 국가별 사이트에 라이브 카피되는 언어 마스터가 포함되어 있습니다. | [한번 해봐!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) | 모든 페이지에는 화면 및 장치 크기에 맞게 동적으로 조정되는 반응형 레이아웃이 있습니다. | [한번 해봐!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md) | 모든 페이지는 편집 가능한 템플릿을 기반으로 하므로 개발자가 아닌 사용자도 템플릿을 조정하고 맞춤화할 수 있습니다. | [한번 해봐!](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML 템플릿 언어](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | 모든 구성 요소는 HTL을 기반으로 합니다. |  |
+| [HTML 템플릿 언어](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview) | 모든 구성 요소는 HTL을 기반으로 합니다. |  |
 | [eCommerce 기능](/help/commerce/cif-classic/developing/ecommerce.md) | 제품 카탈로그 기능 |  |
 | [커뮤니티 사이트](/help/communities/overview.md) | 방문자가 커뮤니티 토론에 참여하고 블로그를 읽는 등 다양한 활동을 할 수 있도록 허용 |  |
-| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며, 보다 유용하고 즉시 구성 가능한 구성 요소입니다 | [한번 해봐!](/help/sites-developing/we-retail-core-components.md) |
+| [핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며, 보다 유용하고 즉시 구성 가능한 구성 요소입니다 | [한번 해봐!](/help/sites-developing/we-retail-core-components.md) |
 | [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) | We.Retail 경험 섹션에서는 콘텐츠 조각을 통해 콘텐츠를 재사용할 수 있는 기능을 보여줍니다. | [한번 해봐!](/help/sites-developing/we-retail-content-fragments.md) |
 | [경험 조각](/help/sites-authoring/experience-fragments.md) | 경험 조각 은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. | [한번 해봐!](/help/sites-developing/we-retail-experience-fragments.md) |
 

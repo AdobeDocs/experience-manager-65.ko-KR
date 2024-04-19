@@ -1,15 +1,16 @@
 ---
 title: JEE의 AEM Forms에 대한 거래 보고서 개요
-description: 제출된 모든 양식, 렌더링된 양식, 한 형식으로 변환된 문서, 기타 문서 수를 유지합니다.
+description: 제출된 모든 양식, 렌더링된 양식, 한 형식으로 변환된 문서 등을 세어 봅니다.
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# JEE의 AEM Forms에 대한 트랜잭션 보고서 활성화 및 보기 {#transaction-reports-overview}
+# JEE에서 AEM Forms에 대한 거래 보고서 활성화 및 보기 {#transaction-reports-overview}
 
 <!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -74,7 +75,7 @@ For Jboss Cluster:
 ```
 
 샘플 트랜잭션 레코드의 예:
-`[2024-02-28 06:11:27] [INFO] TransactionRecord{service=‘GeneratePDFService’, operation=‘HtmlFileToPDF’, internalService=‘GeneratePDFService’, internalOperation=‘HtmlFileToPDF’, transactionOperationType=‘CONVERT’, transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
+`[2024-02-28 06:11:27] [INFO] TransactionRecord{service='GeneratePDFService', operation='HtmlFileToPDF', internalService='GeneratePDFService', internalOperation='HtmlFileToPDF', transactionOperationType='CONVERT', transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
 
 #### 거래 기록 {#transaction-record-structure-jee}
 
@@ -96,8 +97,8 @@ TransactionRecord
 
 * **서비스**: 서비스 이름입니다.
 * **작업**: 작업 이름입니다.
-* **internalService**: 내부 호출 시 수신자 이름. 그렇지 않으면 서비스 이름과 동일합니다.
-* **internalOperation**: 내부 호출 시 피호출자 이름. 그렇지 않으면 작업 이름과 동일합니다.
+* **internalService**: 내부 호출이 있는 경우 피호출자의 이름입니다. 그렇지 않으면 서비스 이름과 동일합니다.
+* **internalOperation**: 내부 호출이 있는 경우 호출자의 이름입니다. 그렇지 않으면 작업 이름과 동일합니다.
 * **transactionOperationType**: 거래 유형(제출, 렌더링, 변환)
 * **transactionCount**: 총 거래 수.
 * **elapsedTime**: 호출 시작과 응답을 받은 시간 사이의 시간입니다.
@@ -125,7 +126,7 @@ TransactionRecord
 
 트랜잭션 기록 빈도는 제출, 렌더링 또는 변환된 각 폼에 대한 서버의 업데이트 작업에 의해 결정됩니다.
 
-* 위치 **대시보드** 거래 횟수는 주기적으로 업데이트되며, 기본값은 1분으로 설정됩니다. 다음 위치에 시스템 속성을 설정하여 빈도를 업데이트할 수 있습니다. `"com.adobe.idp.dsc.transaction.recordFrequency"`. 예를 들어, JBoss®의 AEM Forms for JEE에서 을 추가합니다. `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` 위치: `JAVA_OPTS` 업데이트 빈도를 5분으로 설정합니다.
+* 위치 **대시보드**, 트랜잭션 수는 정기적으로 업데이트되며, 기본값은 1분으로 설정됩니다. 다음 위치에 시스템 속성을 설정하여 빈도를 업데이트할 수 있습니다. `"com.adobe.idp.dsc.transaction.recordFrequency"`. 예를 들어, JBoss®의 AEM Forms for JEE에서 을 추가합니다. `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` 위치: `JAVA_OPTS` 업데이트 빈도를 5분으로 설정합니다.
 
 * 위치 **트랜잭션 로그**, 각 트랜잭션에 대한 업데이트는 양식이 성공적으로 제출, 렌더링 또는 변환될 때 즉시 발생합니다.
 
