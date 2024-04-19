@@ -5,16 +5,16 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
+source-git-commit: b90b62418edfa9cef36d99de554a340fad07d978
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1509'
 ht-degree: 73%
 
 ---
 
 # 경험 조각{#experience-fragments}
 
-경험 조각 은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
+Adobe Experience Manager(AEM)에서 경험 조각은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
 
 경험 조각:
 
