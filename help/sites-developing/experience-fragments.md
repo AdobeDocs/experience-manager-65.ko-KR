@@ -10,9 +10,9 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1795'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,8 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 >[!CAUTION]
 >
 >***전용*** [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md) 경험 조각에 대해 지원됩니다.
+>
+>경험 조각은 편집 가능한 템플릿을 기반으로 하는 페이지에서만 사용할 수 있습니다.
 
 경험 조각용 새 템플릿을 개발할 때 의 표준 사례를 따를 수 있습니다. [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md).
 
