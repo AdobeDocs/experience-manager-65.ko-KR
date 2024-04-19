@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
-source-git-commit: 91ab786cd7e0dd75b9ad15058a125605245ec5bb
+source-git-commit: a5b48f1f4072f3e10273ec90d6f505815fe584a3
 workflow-type: tm+mt
 source-wordcount: '1119'
 ht-degree: 5%
@@ -27,7 +27,6 @@ AEM Forms 6.5에는 규칙 편집기를 사용하여 복잡한 비즈니스 규�
 
 사용자 지정 함수는 지정된 요구 사항을 충족하도록 입력된 데이터의 조작 및 처리를 용이하게 하여 양식의 기능을 확장합니다. 또한 사전 정의된 기준에 따라 양식 동작을 동적으로 변경할 수 있습니다.
 적응형 Forms에서는 [적응형 양식의 규칙 편집기](/help/forms/using/rule-editor.md) 을 입력하여 양식 필드에 대한 특정 유효성 검사 규칙을 만듭니다.
-
 사용자가 이메일 주소를 입력하는 사용자 정의 함수의 사용을 이해하고 입력된 이메일 주소가 특정 형식(&quot;@&quot; 기호 및 도메인 이름 포함)을 따르는지 확인하겠습니다. 이메일 주소를 입력으로 사용하고 유효한 경우 true를 반환하고 그렇지 않은 경우 false를 반환하는 사용자 지정 함수를 &quot;ValidateEmail&quot;로 만듭니다.
 
 ```javascript
