@@ -9,9 +9,9 @@ exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1603'
 ht-degree: 6%
 
 ---
@@ -127,7 +127,7 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 >
 >사용자 동기화 도구는 설명된 절차를 사용하여 Adobe I/O 클라이언트 UMAPI로 등록해야 합니다 [여기](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->Adobe I/O 콘솔 설명서를 찾을 수 있습니다 [여기](https://developer.adobe.com/developer-console/docs/guides/).
+>Adobe Developer 콘솔 설명서를 찾을 수 있습니다 [여기](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
 >다음 [!DNL User Management] 사용자 동기화 도구에서 사용하는 API는 여기에서 다룹니다 [위치](https://adobe-apiplatform.github.io/umapi-documentation/en/).
