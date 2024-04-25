@@ -7,9 +7,12 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '428'
 ht-degree: 2%
 
 ---
@@ -94,7 +97,7 @@ AEM 6.1 커뮤니티에서 [공동 저장소](/help/communities/working-with-srp
 
 **저장소에서 UGC의 위치 및 형식은 경고 없이 변경될 수 있습니다**.
 
-다음을 참조하십시오.
+를 참조하십시오.
 
 * [저장소 리소스 공급자 개요](/help/communities/srp.md) - 소개 및 저장소 사용 개요.
 * [SRP 및 UGC 필수 패키지](/help/communities/srp-and-ugc.md) - SRP 유틸리티 메서드 및 예제.

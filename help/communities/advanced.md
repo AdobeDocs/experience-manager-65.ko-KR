@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 1%
+source-wordcount: '1056'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +43,7 @@ ht-degree: 1%
 * 고급 채점 규칙:
 
    * `scoringType` 을 로 설정 `advanced`
-   * 필수 항목 `stopwords`
+   * 필요 `stopwords`
 
 * 고급 배지 규칙:
 
@@ -130,12 +132,12 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>배지 경로</td>
-   <td>문자열[]</td>
+   <td>String[]</td>
    <td><em>(필수)</em> 배지 레벨 수까지 배지 이미지의 다중 값 문자열. 배지 이미지 경로의 순서를 지정해야 하므로 첫 번째 경로가 가장 높은 전문가에게 수여됩니다. badgingLevels에서 표시된 것보다 배지가 적은 경우 배열의 마지막 배지가 나머지 배열을 채웁니다. 예제 항목:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>배지 레벨</td>
-   <td>긴</td>
+   <td>Long</td>
    <td><em>(선택 사항)</em> 수여할 전문 지식 수준을 지정합니다. 예를 들어, <code>expert </code>및 <code>almost expert</code> (배지 2개), 그런 다음 값을 2로 설정해야 합니다. 배지 수준은 badgingPath 속성에 대해 나열된 전문가 관련 배지 이미지 수와 일치해야 합니다. 기본값은 1입니다.</td>
   </tr>
   <tr>
@@ -145,7 +147,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>scoringRules</td>
-   <td>문자열[]</td>
+   <td>String[]</td>
    <td><em>(선택 사항)</em> 나열된 하나 이상의 채점 규칙으로 식별된 채점 이벤트로 배지 규칙을 제한하는 다중 값 문자열.<br /> 예제 항목:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> 기본값은 제한이 없습니다.</td>
   </tr>
  </tbody>
@@ -196,7 +198,7 @@ ht-degree: 1%
    /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
    ```
 
-**메모:**
+**참고:**
 
 * 모두 `rules` 및 `sub-rules` 노드 유형은 다음과 같습니다 `cq:Page`.
 * `subRules` 은(는) String 유형의 속성입니다.`[]` 규칙에 따라 `jcr:content` 노드.
@@ -211,7 +213,7 @@ ht-degree: 1%
 * `/libs/settings/community/badging/rules/adv-comments-badging`
 * `/libs/settings/community/badging/rules/adv-forums-badging`
 
-**메모:**
+**참고:**
 
 * `rules` 노드는 cq:Page 유형입니다.
 * `rules` 은(는) 모든 사람에 대한 읽기 권한이 있는 저장소 위치에 있어야 합니다.

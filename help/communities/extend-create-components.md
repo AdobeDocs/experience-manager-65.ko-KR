@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 4%
+source-wordcount: '591'
+ht-degree: 0%
 
 ---
 
@@ -56,15 +59,15 @@ ht-degree: 4%
       * **상위 유형**: *social/commons/components/hbs/comments*
       * **그룹**: *사용자 정의*
 
-   * **[!UICONTROL 다음]**&#x200B;을 선택합니다
-   * **[!UICONTROL 다음]**&#x200B;을 선택합니다
-   * **[!UICONTROL 다음]**&#x200B;을 선택합니다
+   * 선택 **[!UICONTROL 다음]**
+   * 선택 **[!UICONTROL 다음]**
+   * 선택 **[!UICONTROL 다음]**
    * 선택 **[!UICONTROL 확인]**
 
 1. 생성된 노드를 확장합니다. `/apps/custom/components/comments`
 1. 선택 **[!UICONTROL 모두 저장]**
 1. 마우스 오른쪽 버튼 클릭 `comments.jsp`
-1. **[!UICONTROL 삭제]**&#x200B;를 선택합니다
+1. 선택 **[!UICONTROL 삭제]**
 1. 선택 **[!UICONTROL 모두 저장]**
 
 ![create-component](assets/create-component.png)
@@ -86,15 +89,15 @@ ht-degree: 4%
       * **상위 유형**: *social/commons/components/hbs/comments/comments/comment*
       * **그룹**: `*.hidden*`
 
-   * **[!UICONTROL 다음]**&#x200B;을 선택합니다
-   * **[!UICONTROL 다음]**&#x200B;을 선택합니다
-   * **[!UICONTROL 다음]**&#x200B;을 선택합니다
+   * 선택 **[!UICONTROL 다음]**
+   * 선택 **[!UICONTROL 다음]**
+   * 선택 **[!UICONTROL 다음]**
    * 선택 **[!UICONTROL 확인]**
 
 1. 생성된 노드를 확장합니다. `/apps/custom/components/comments/comment`
 1. 선택 **[!UICONTROL 모두 저장]**
 1. 마우스 오른쪽 버튼 클릭 `comment.jsp`
-1. **[!UICONTROL 삭제]**&#x200B;를 선택합니다
+1. 선택 **[!UICONTROL 삭제]**
 1. 선택 **[!UICONTROL 모두 저장]**
 
 ![create-child-component](assets/create-child-component.png)
@@ -114,8 +117,8 @@ ht-degree: 4%
 
    * 값 변경 `data-scf-component` 특성(~20행):
 
-      * 시작 `social/commons/components/hbs/comments`
-      * 끝 `/apps/custom/components/comments`
+      * 출처: `social/commons/components/hbs/comments`
+      * 종료 `/apps/custom/components/comments`
 
    * 사용자 지정 댓글 구성 요소를 포함하도록 수정합니다(~75행).
 
@@ -131,8 +134,8 @@ ht-degree: 4%
 
    * data-scf-component 특성의 값을 변경합니다(~ 19행).
 
-      * 시작 `social/commons/components/hbs/comments/comment`
-      * 끝 `/apps/custom/components/comments/comment`
+      * 출처: `social/commons/components/hbs/comments/comment`
+      * 종료 `/apps/custom/components/comments/comment`
 
 * 선택 `/apps/custom` 노드
 * 선택 **[!UICONTROL 모두 저장]**

@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '658'
 ht-degree: 2%
 
 ---
@@ -88,9 +91,9 @@ phonegap run ios
 >1. 실행 `phonegap create helloWorld`
 >1. helloWorld(cd helloWorld)로 이동
 >1. 실행 `phonegap run android` (또는 위와 같이 Android™을 iOS으로 바꾸십시오.)
-1. JavaScript Bridge to Native가 작동 중인 경우 에뮬레이터가 &#39;장치 준비&#39;라고 말하며 새로 만든 PhoneGap 앱을 실행하도록 열립니다.
+>1. JavaScript Bridge to Native가 작동 중인 경우 에뮬레이터가 &#39;장치 준비&#39;라고 말하며 새로 만든 PhoneGap 앱을 실행하도록 열립니다.
 >
-이 문제 해결은 PhoneGap CLI 개발 환경이 올바르게 실행되고 있는지 확인합니다.
+>이 문제 해결은 PhoneGap CLI 개발 환경이 올바르게 실행되고 있는지 확인합니다.
 
 ## Safari 및 IOS 디버그로 JavaScript 디버그 {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -151,7 +154,7 @@ phonegap run <platform> --emulator
 
 >[!NOTE]
 >
-현재 메서드의 변수 값을 보려면 마우스를 가리킵니다.
+>현재 메서드의 변수 값을 보려면 마우스를 가리킵니다.
 
 ## 다음 단계 {#the-next-steps}
 

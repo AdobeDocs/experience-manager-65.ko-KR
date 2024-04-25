@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 8%
+source-wordcount: '1233'
+ht-degree: 1%
 
 ---
 
@@ -79,7 +82,7 @@ ht-degree: 8%
 
   선택하는 경우, 게시물 사이트에 게시하기 전에 주제 및 댓글 게시를 승인해야 합니다. 기본값은 선택 취소되어 있습니다.
 
-* **닫힘**
+* **종료됨**
 
   선택하면 포럼에 새 주제 및 주석이 표시됩니다. 기본값은 선택 취소되어 있습니다.
 
@@ -134,7 +137,7 @@ ht-degree: 8%
 
   선택하면 구성원이 자신이 게시한 댓글과 주제를 삭제할 수 있도록 허용합니다. 기본값은 선택 취소되어 있습니다.
 
-* **탐색 흔적 표시**
+* **탐색 표시**
 
   선택한 경우 주제 페이지에 탐색 이동 경로를 표시합니다. 기본값은 선택되어 있습니다.
 
@@ -198,7 +201,7 @@ ht-degree: 8%
 
   선택하면 구성원이 주제나 댓글을 부적절한 것으로 플래그를 지정하는 이유를 직접 입력할 수 있습니다. 기본값은 선택 취소되어 있습니다.
 
-* **관리 임계값**
+* **중재 임계값**
 
   구성원에 의해 주제나 댓글에 플래그가 지정되어야 중재자에게 통지되는 횟수를 입력합니다. 기본값은 1(1회)입니다.
 
@@ -230,7 +233,7 @@ ht-degree: 8%
 
 아래 **정렬 설정** 탭에서는 표시된 게시한 댓글을 어떻게 정렬할지 지정합니다.
 
-* **정렬 기준**
+* **정렬 기준:**
 
   허용되는 모든 정렬 선택 사항을 확인합니다. `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 기본값은 입니다 `Newest, Oldest, Last Updated`.
 

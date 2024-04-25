@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 25%
+ht-degree: 15%
 
 ---
 
@@ -39,16 +42,16 @@ AEM Communities에 라이센스가 부여되면 커뮤니티 사이트를 만들
 >
 >읽기 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md) 커뮤니티 구성 요소로 작성하는 데 필요한 정보가 포함되어 있습니다.
 
-| **구성 요소 제목** | **특별 포함** |
+| **구성 요소 제목** | **기능** |
 |---|---|
 | 활동 스트림 | [활동 스트림](/help/communities/activities.md) |
 | 블로그 | [블로그](/help/communities/blog-feature.md) |
 | 블로그 세로 막대 | [블로그](/help/communities/blog-feature.md) |
-| 달력 | [달력](/help/communities/calendar.md) |
+| 달력 | [캘린더](/help/communities/calendar.md) |
 | 댓글 | [댓글](/help/communities/comments.md) |
 | 커뮤니티 활동 목록 | [활동 트렌드](/help/communities/trends.md) |
 | 커뮤니티 그룹 구성원 목록 | [커뮤니티 그룹](/help/communities/creating-groups.md) |
-| 메시지 작성 | [메시지](/help/communities/configure-messaging.md) |
+| 메시지 작성 | [메시징](/help/communities/configure-messaging.md) |
 | 특별 포함된 컨텐츠 | [특별 포함된 컨텐츠](/help/communities/featured.md) |
 | 파일 라이브러리 | [파일 라이브러리](/help/communities/file-library.md) |
 | 팔로우 | [소셜 그래프](/help/communities/socialgraph.md) |
@@ -56,13 +59,13 @@ AEM Communities에 라이센스가 부여되면 커뮤니티 사이트를 만들
 | 포럼 | [포럼](/help/communities/forum.md) |
 | 관념화 | [관념화](/help/communities/ideation-feature.md) |
 | 리더보드 | [채점 및 배지](/help/communities/enabling-leaderboard.md) |
-| 연결 | [연결](/help/communities/liking.md) |
-| 메시지 | [메시지](/help/communities/configure-messaging.md) |
-| 메시지 목록 | [메시지](/help/communities/configure-messaging.md) |
-| QnA | [질문과 대답](/help/communities/working-with-qna.md) |
+| 연결 | [좋아요](/help/communities/liking.md) |
+| 메시지 | [메시징](/help/communities/configure-messaging.md) |
+| 메시지 목록 | [메시징](/help/communities/configure-messaging.md) |
+| QnA | [질문 및 답변](/help/communities/working-with-qna.md) |
 | 빠른 검색 | [검색](/help/communities/search.md) |
 | 등급 | [등급](/help/communities/rating.md) |
-| 관련 질문 | [질문과 대답](/help/communities/working-with-qna.md) |
+| 관련 질문 | [질문 및 답변](/help/communities/working-with-qna.md) |
 | 리뷰 | [리뷰](/help/communities/reviews.md) |
 | 리뷰 요약(표시) | [리뷰](/help/communities/reviews.md) |
 | 검색 | [검색](/help/communities/search.md) |

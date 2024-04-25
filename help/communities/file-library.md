@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 8%
+source-wordcount: '741'
+ht-degree: 1%
 
 ---
 
@@ -119,7 +122,7 @@ ht-degree: 8%
 
 아래 **사용자 중재** 탭이 있고, 댓글이 허용되는 경우 댓글 중재를 구성합니다.
 
-* **사전 관리**
+* **사전 중재**
 
   선택하면 게시 사이트에 댓글이 표시되기 전에 승인되어야 합니다. 기본값은 선택 취소되어 있습니다.
 
@@ -135,7 +138,7 @@ ht-degree: 8%
 
   선택하면 신뢰할 수 있는 구성원 중재자가 주석을 닫았다가 다시 열 수 있습니다. 기본값은 선택 취소되어 있습니다.
 
-* **댓글에 플래그 지정**
+* **댓글 플래그 지정**
 
   선택하면 방문자가 주석을 부적절한 항목으로 표시하도록 허용합니다. 기본값은 선택 취소되어 있습니다.
 
@@ -147,7 +150,7 @@ ht-degree: 8%
 
   선택하면 방문자가 주석을 부적절한 항목으로 플래그를 지정하는 이유를 직접 입력할 수 있습니다. 기본값은 선택 취소되어 있습니다.
 
-* **관리 임계값**
+* **중재 임계값**
 
   댓글에 방문자가 플래그를 지정해야 중재자에게 알리는 횟수를 입력합니다. 기본값은 1회입니다(**1**).
 

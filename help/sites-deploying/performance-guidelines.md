@@ -8,7 +8,8 @@ topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 5%
@@ -497,10 +498,10 @@ TarMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처�
 | RAM | 32GB |
 | 디스크 | 자기 |
 | Java™ | Oracle JRE 버전 8 |
-| JVM 힙 | 16GB |
+| JVM 힙 | 16 기가바이트 |
 | 제품 | AEM 6.2 |
-| Nodestore | TarMk |
-| 데이터 저장소 | 파일 DS |
+| 노드 저장소 | TarMK |
+| Datastore | 파일 DS |
 | 시나리오 | 단일 제품: 에셋 / 동시 스레드 30개 |
 
 #### 성능 벤치마크 결과 {#performance-benchmark-results}
@@ -570,7 +571,7 @@ MongoMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처
    <td>Lucene 인덱스 구성</td>
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
    <td><p>활성화됨</p> <p>활성화됨</p> <p>활성화됨</p> </td>
-   <td>사용 가능한 매개 변수에 대한 자세한 내용은 <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">이 페이지</a>.</td>
+   <td>사용 가능한 매개 변수에 대한 자세한 내용은 이 페이지</a> 를 참조하십시오<a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">.</td>
   </tr>
   <tr>
    <td>데이터 저장소 = S3 데이터 저장소</td>
@@ -581,11 +582,11 @@ MongoMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처
   <tr>
    <td>DocumentNodeStoreService</td>
    <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td>
-   <td><p>2048</p> <p>35 (25)</p> <p>20(10)</p> <p>30조(5)</p> <p>10조(3)</p> <p>4 (4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
+   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>./캐시, 크기=2048, 이진수=0,-컴팩트, -압축</p> </td>
    <td><p>캐시의 기본 크기는 256MB로 설정됩니다.</p> <p>캐시 무효화를 수행하는 데 걸리는 시간에 영향을 줍니다.</p> </td>
   </tr>
   <tr>
-   <td>oak-observation</td>
+   <td>참나무 관찰</td>
    <td><p><code>thread pool</code></p> <p><code>length</code></p> </td>
    <td><p>최소 및 최대 = 20</p> <p>50000</p> </td>
    <td> </td>
@@ -621,9 +622,9 @@ MongoMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
 
-## TarMK vs MongoMK {#tarmk-vs-mongomk}
+## TarMK 대 MongoMK {#tarmk-vs-mongomk}
 
-둘 중 하나를 선택할 때 고려해야 할 기본 규칙은 TarMK는 성능을 위해 설계된 반면, MongoMK는 확장성을 위해 사용된다는 것입니다. Adobe은 AEM 작성자 및 게시 인스턴스 모두에 대해 TarMK를 모든 배포 시나리오에서 고객이 사용하는 기본 지속성 기술로 설정할 것을 권장합니다.
+둘 중 하나를 선택할 때 계정해야 할 기본 규칙 TarMK는 성능을 위해 설계되고 MongoMK는 확장성에 사용된다는 것입니다. Adobe Systems는 TarMK를 AEM 작성자 인스턴스와 Publish 인스턴스 모두에 대해 배포 모든 시나리오에서 고객이 사용하는 기본 지속성 기술로 권장합니다.
 
 TarMK보다 MongoMK 지속성 백엔드를 선택하는 주된 이유는 인스턴스의 크기를 수평으로 확장하기 위해서입니다. 이 기능은 두 개 이상의 활성 작성자 인스턴스가 항상 실행되고 MongoDB를 지속성 스토리지 시스템으로 사용하는 것을 의미합니다. 일반적으로 작성자 인스턴스를 두 개 이상 실행해야 하는 이유는 모든 동시 작성 작업을 지원하는 단일 서버의 CPU 및 메모리 용량이 더 이상 지속 가능하지 않기 때문입니다.
 
@@ -633,18 +634,18 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
 
 **TarMK의 이점**
 
-* 컨텐츠 관리 애플리케이션을 위해 특별히 제작된 솔루션
-* 파일은 항상 일관되며 모든 파일 기반 백업 툴을 사용하여 백업할 수 있습니다.
-* 페일오버 메커니즘 제공 - 참조 [콜드 대기](/help/sites-deploying/tarmk-cold-standby.md) 추가 세부 정보
-* 운영 오버헤드를 최소화하면서 높은 성능과 안정적인 데이터 스토리지 제공
-* TCO( 총 소유 비용 ) 절감
+* 컨텐츠 관리 애플리케이션을 위한 특수 제작
+* 파일 항상 일관되며 모든 파일 기반 백업 도구 사용하여 백업할 수 있습니다.
+* 장애 조치(failover) 메커니즘 제공 - 자세한 내용은 Cold Standby](/help/sites-deploying/tarmk-cold-standby.md)를 참조하십시오[.
+* 최소한의 운영 오버헤드로 고성능의 안정적인 데이터 스토리지 제공
+* TCO(총 소유 비용) 절감
 
 **MongoMK 선택 기준**
 
-* 하루에 연결된 명명된 사용자 수: 천 명 이상
-* 동시 사용자 수: 100명 이상
-* 일별 자산 수집 볼륨: 수십만 개 이상
-* 하루 페이지 편집 볼륨: 수십만 개 이상
+* 하루에 연결된 명명된 사용자 수: 수천 명 이상
+* 동시 사용자 수: 수백 명 이상
+* 일일 자산 수집량: 수십만 개 이상
+* 일일 페이지 편집량: 수십만 개 이상
 * 일별 검색 볼륨: 수만 개 이상
 
 ### TarMK 대 MongoMK 벤치마크 {#tarmk-vs-mongomk-benchmarks}
@@ -701,7 +702,7 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
   </tr>
   <tr>
    <td>JVM 힙16GB</td>
-   <td>16GB</td>
+   <td>16 기가바이트</td>
    <td>해당 사항 없음</td>
    <td> </td>
   </tr>
@@ -740,7 +741,7 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
 
 >[!NOTE]
 >
->MongoDB를 사용하는 작성자 수가 한 개의 TarMK 시스템과 동일하도록 하려면 두 개의 AEM 노드가 있는 클러스터가 필요합니다. 4개의 노드 MongoDB 클러스터는 하나의 TarMK 인스턴스보다 1.8배의 작성자 수를 처리할 수 있습니다. 8개의 노드 MongoDB 클러스터는 하나의 TarMK 인스턴스보다 2.3배의 작성자 수를 처리할 수 있습니다.
+>MongoDB를 사용하는 작성자 수가 한 개의 TarMK 시스템과 동일하도록 하려면 두 개의 AEM 노드가 있는 클러스터가 필요합니다. 4개의 노드 MongoDB 클러스터는 하나의 TarMK 인스턴스보다 1.8배의 작성자 수를 처리할 수 있습니다. 8개의 노드 MongoDB 클러스터는 TarMK 인스턴스 1개보다 2.3배의 작성자 수를 처리할 수 있습니다.
 
 <table>
  <tbody>
@@ -758,9 +759,9 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
   </tr>
   <tr>
    <td>운영 체제</td>
-   <td>Red Hat® Linux®</td>
-   <td>Red Hat® Linux®</td>
-   <td>Red Hat® Linux®</td>
+   <td>레드햇® 리눅스®</td>
+   <td>레드햇® 리눅스®</td>
+   <td>레드햇® 리눅스®</td>
   </tr>
   <tr>
    <td>CPU/코어</td>
@@ -769,8 +770,8 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
    <td>32</td>
   </tr>
   <tr>
-   <td>RAM</td>
-   <td>60GB</td>
+   <td>Ram</td>
+   <td>60 기가바이트</td>
    <td>60GB</td>
    <td>60GB</td>
   </tr>
@@ -801,7 +802,7 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
   <tr>
    <td>Nodestore</td>
    <td>TarMk </td>
-   <td>몽고</td>
+   <td>몽고MK</td>
    <td><br /> 해당 사항 없음</td>
   </tr>
   <tr>
@@ -819,7 +820,7 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
  </tbody>
 </table>
 
-### 시나리오 2 성능 벤치마크 결과 {#scenario-performance-benchmark-results-1}
+### 시나리오 2: 성능 벤치마크 결과 {#scenario-performance-benchmark-results-1}
 
 ![chlimage_1-13](assets/chlimage_1-13a.png)
 
@@ -845,8 +846,8 @@ TarMK와 MongoMK에 대한 자세한 내용은 다음을 참조하십시오. [�
 * 사용 시 **Amazon**:
 
    * Amazon S3 데이터 저장소는 작성자 및 게시 계층 간에 공유됩니다
-   * 바이너리 없는 복제를 설정해야 합니다.
-   * 데이터 저장소 가비지 수집을 사용하려면 모든 작성자 및 게시 노드에서 먼저 실행한 다음 작성자에서 다시 실행해야 합니다
+   * 이진 없는 복제를 켜야 합니다.
+   * Datastore 가비지 수집을 사용하려면 모든 작성자 및 Publish 노드에서 첫 번째 실행이 필요하고 작성자 노드에서 두 번째 실행이 필요합니다
 
 * **기본 제공 색인과 함께 사용자 지정 색인을 만들어야 합니다** - 가장 일반적인 검색 기반
 

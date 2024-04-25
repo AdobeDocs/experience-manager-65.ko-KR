@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 8%
+ht-degree: 5%
 
 ---
 
@@ -81,8 +84,8 @@ ht-degree: 8%
 
   예:
 
-   * 선택됨: `Geometrixx Media: Gadgets / Cars`
-   * 선택되지 않음: `Cars`
+   * 선택함: `Geometrixx Media: Gadgets / Cars`
+   * 선택 취소됨: `Cars`
 
   단순 태그는 차이가 없습니다.
 

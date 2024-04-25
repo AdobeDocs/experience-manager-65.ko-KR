@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 4%
+source-wordcount: '959'
+ht-degree: 1%
 
 ---
 
@@ -108,7 +110,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
   (*선택 사항*) 기존 구성원 그룹에서 선택하여 해당 그룹에 구성원을 추가합니다.
 
-* **[!UICONTROL 저장]**&#x200B;을 선택합니다
+* 선택 **[!UICONTROL 저장]**
 
 ### 일반 - 계정 설정 {#general-account-settings}
 
@@ -196,7 +198,7 @@ AEM Communities 기능은 종종 게시 환경에서 커뮤니티에 참여하�
 
   (*선택 사항*) 그룹의 초기 멤버로 포함할 게시측 멤버를 선택합니다.
 
-* **[!UICONTROL 저장]**&#x200B;을 선택합니다
+* 선택 **[!UICONTROL 저장]**
 
 ## 권한 있는 관리자 {#authorized-administrators}
 

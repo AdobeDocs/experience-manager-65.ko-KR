@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 9%
+source-wordcount: '411'
+ht-degree: 6%
 
 ---
 
@@ -67,7 +69,7 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
   커뮤니티 사이트를 선택합니다.
 
-* **[!UICONTROL 콘텐츠 유형]**
+* **[!UICONTROL 컨텐츠 유형]**
 
   모든 콘텐츠를 선택하거나 사이트에 있는 기능 중 하나를 선택할 수 있습니다.
 
@@ -75,8 +77,8 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
   다음 중 하나를 선택합니다.
 
-   * 최근 7일
-   * 최근 30일
+   * 지난 7일
+   * 지난 30일
    * 최근 90일
    * 지난 해
 
@@ -96,7 +98,7 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
   커뮤니티 사이트를 선택합니다.
 
-* **[!UICONTROL 콘텐츠 유형]**
+* **[!UICONTROL 컨텐츠 유형]**
 
   모든 콘텐츠를 선택하거나 사이트에 있는 기능 중 하나를 선택할 수 있습니다.
 
@@ -104,8 +106,8 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
   다음 중 하나를 선택합니다.
 
-   * 최근 7일
-   * 최근 30일
+   * 지난 7일
+   * 지난 30일
    * 최근 90일
    * 지난 해
 

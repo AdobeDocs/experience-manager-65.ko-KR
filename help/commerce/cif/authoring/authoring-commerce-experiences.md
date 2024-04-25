@@ -1,16 +1,18 @@
 ---
-title: 상거래 경험 작성
+title: Commerce 경험 작성
 description: CIF 추가 기능은 상업용 기능을 사용하여 Adobe Experience Manager 작성을 확장합니다.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
 
 ---
 
-# 상거래 경험 작성 {#authoring-commerce-experiences}
+# Commerce 경험 작성 {#authoring-commerce-experiences}
 
 ## 개요 {#overview}
 
@@ -66,7 +68,7 @@ CIF 추가 기능은 상거래 관련 기능으로 AEM 작성을 확장합니다
 
 ### RTE를 사용하여 텍스트 필드에 링크 추가 {#rte}
 
-CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입니다. 따라서 일반 AEM 페이지처럼 하이퍼링크를 포함할 수 없습니다. CIF은 새 작업 &quot;Commerce Links&quot;를 RTE(리치 텍스트 편집기)에 추가합니다. 이 작업은 일반적인 &quot;하이퍼링크&quot; 작업과 정확히 비슷하게 작동하지만 작성자가 선택기를 사용하여 제품이나 카테고리를 선택할 수 있습니다.
+CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입니다. 따라서 일반 AEM 페이지처럼 하이퍼링크를 포함할 수 없습니다. CIF은 새 작업 &quot;Commerce 링크&quot;를 RTE(리치 텍스트 편집기)에 추가합니다. 이 작업은 일반적인 &quot;하이퍼링크&quot; 작업과 정확히 비슷하게 작동하지만 작성자가 선택기를 사용하여 제품이나 카테고리를 선택할 수 있습니다.
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
@@ -78,7 +80,7 @@ CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입�
 
 ### 관련 제품 콘텐츠 액세스 {#associated-content}
 
-유니버설 편집기가 페이지에서 1:n 제품을 인식하면 사이드 패널에 &quot;관련 상거래 콘텐츠&quot; 탭이 자동으로 표시됩니다. 이 탭을 사용하면 작성자가 제품과 함께 태그가 지정된 AEM 콘텐츠에 빠르게 액세스할 수 있습니다(참조) [관련 AEM 콘텐츠를 사용하여 제품 데이터 강화](./enrich-product-associated-content.md) 을 참조하십시오. 이 탭은 페이지에 여러 제품이 있는 경우 콘텐츠 유형 및 특정 제품을 필터링할 수 있는 드롭다운을 제공합니다. 콘텐츠 사용은 &quot;에셋&quot; 탭의 콘텐츠를 사용하는 것과 정확히 동일하게 작동합니다.
+범용 편집기가 페이지에서 1:n 제품을 인식하면 사이드 패널에 &quot;연결된 Commerce 컨텐츠&quot; 탭이 자동으로 표시됩니다. 이 탭을 사용하면 작성자가 제품과 함께 태그가 지정된 AEM 콘텐츠에 빠르게 액세스할 수 있습니다(참조) [관련 AEM 콘텐츠를 사용하여 제품 데이터 강화](./enrich-product-associated-content.md) 을 참조하십시오. 이 탭은 페이지에 여러 제품이 있는 경우 콘텐츠 유형 및 특정 제품을 필터링할 수 있는 드롭다운을 제공합니다. 콘텐츠 사용은 &quot;에셋&quot; 탭의 콘텐츠를 사용하는 것과 정확히 동일하게 작동합니다.
 
 ![제품 데이터 사이드 패널](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 

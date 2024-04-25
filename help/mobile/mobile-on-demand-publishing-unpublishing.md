@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '271'
 ht-degree: 2%
 
 ---
@@ -27,7 +30,7 @@ ht-degree: 2%
 
 ## 콘텐츠 게시/게시 취소 {#publishing-unpublishing-the-content}
 
-이는 &quot;AEM 게시&quot;와 다릅니다. 콘텐츠를 공개적으로 볼 수 있도록 하기 위해 AEM Publish 서버 인스턴스로 푸시하지 않습니다. 여기에서는 선택한 콘텐츠를 라이브 Mobile On-Demand 앱 내에서 공개해야 함을 Mobile On-Demand에 알립니다.
+이는 &quot;AEM Publish&quot;와 다릅니다. 공개적으로 볼 수 있도록 콘텐츠를 AEM Publish 서버 인스턴스로 푸시하지 않습니다. 여기에서는 선택한 콘텐츠를 라이브 Mobile On-Demand 앱 내에서 공개해야 함을 Mobile On-Demand에 알립니다.
 
 >[!NOTE]
 >

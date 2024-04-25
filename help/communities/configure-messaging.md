@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 4%
+source-wordcount: '952'
+ht-degree: 0%
 
 ---
 
@@ -115,7 +118,7 @@ AEM Communities의 메시징 기능을 사용하면 포럼 및 댓글에서 공�
 
   선택하면 가 표시됩니다. **`Reply`**, **`Reply All`**, **`Forward`**, 및 **`Delete`** 메시지를 다시 보내거나 삭제할 수 있는 단추. 다음과 같은 경우 삭제 기능을 복제합니다. **`Delete Button`** 도 선택되어 있습니다.
 
-* **페이지당 메시지**
+* **페이지당 메시지 수**
 
   지정된 숫자는 페이지 매김 체계에서 페이지당 표시되는 최대 메시지 수입니다. 번호를 지정하지 않은 경우(왼쪽 공백) 모든 메시지가 표시되고 페이지 매김이 없습니다.
 
@@ -149,15 +152,15 @@ AEM Communities의 메시징 기능을 사용하면 포럼 및 댓글에서 공�
 
   메시지를 보낸 후 표시되는 페이지의 URL을 입력합니다. 예: `../messaging.html`
 
-* **취소 URL**
+* **URL 취소**
 
   보낸 사람이 메시지를 취소할 경우 표시되는 페이지의 URL을 입력합니다. 예: `../messaging.html`
 
-* **메시지 제목의 최대 길이입니다**
+* **메시지 제목의 최대 길이**
 
   제목 필드에 입력할 수 있는 최대 문자 수입니다. 예를 들어 500입니다. 기본값은 제한이 없습니다.
 
-* **메시지 본문의 최대 길이입니다**
+* **메시지 본문의 최대 길이**
 
   콘텐츠 필드에 허용되는 최대 문자 수입니다. 예: 10000. 기본값은 제한이 없습니다.
 

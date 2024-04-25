@@ -4,7 +4,9 @@ description: Adobe Experience Manager과 함께 전자 상거래의 일반 개�
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4439'
 ht-degree: 1%
@@ -128,7 +130,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 >
 >  표준 AEM 설치에는 다음과 같은 기본 사항이 포함되어 있습니다. [일반 eCommerce 구현](/help/commerce/cif-classic/administering/generic.md).
 
-### 상거래 공급자 {#commerce-providers}
+### Commerce 공급자 {#commerce-providers}
 
 상거래 엔진에서 AEM eCommerce 사이트로 데이터를 가져올 때 상거래 공급자를 사용하여 가져오기에 데이터를 제공합니다. 한 상거래 공급자가 여러 수입업체를 지원할 수 있습니다.
 
@@ -148,7 +150,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 >
 >Geometrixx 가져오기는 CSV 파일을 사용합니다. 구현 위의 주석에 허용되는 스키마(허용된 사용자 지정 속성 포함)에 대한 설명이 있습니다.
 
-다음 [제품 서비스 관리자](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) 유지(에서 까지) [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) 의 구현 목록 [제품 가져오기](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) 및 [카탈로그 블루프린트 가져오기](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) 인터페이스. 다음 목록에 나열되어 있습니다 **가져오기/상거래 공급자** importer 마법사의 드롭다운 필드( `commerceProvider` 속성을 이름)으로 사용할 수 있습니다.
+다음 [제품 서비스 관리자](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) 유지(에서 까지) [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) 의 구현 목록 [제품 가져오기](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) 및 [카탈로그 블루프린트 가져오기](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) 인터페이스. 다음 목록에 나열되어 있습니다 **Importer/Commerce 공급자** importer 마법사의 드롭다운 필드( `commerceProvider` 속성을 이름)으로 사용할 수 있습니다.
 
 드롭다운에서 특정 Importer/Commerce 공급자를 사용할 수 있는 경우 다음 중 하나에서 필요한 보조 데이터를 정의해야 합니다(Importer 유형에 따라 다름).
 
@@ -454,7 +456,7 @@ AEM eCommerce 구현에서 성능 테스트를 고려해야 합니다.
 
 제품 페이지는 개별 제품에 대한 포괄적인 정보를 제공합니다. 의 동적 업데이트도 반영됩니다(예: eCommerce 엔진에 등록된 가격 변경).
 
-제품 페이지는 다음을 사용하는 AEM 페이지입니다. **제품** 구성 요소(예: **상거래 제품** 템플릿:
+제품 페이지는 다음을 사용하는 AEM 페이지입니다. **제품** 구성 요소(예: **Commerce 제품** 템플릿:
 
 ![ecommerce_nairobirunnersgreen](/help/sites-administering/assets/ecommerce_nairobirunnersgreen.png)
 

@@ -4,7 +4,9 @@ description: 통합에 대한 유용한 문서와 AEM Storefront를 사용하는
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 88%
@@ -18,7 +20,7 @@ Adobe Experience Manager 콘텐츠 및 상거래를 통해 브랜드 확장과 �
 
 ## Content and Commerce를 통해 고객의 성공적인 여정을 지원하는 방법
 
-온라인 상거래 경험에 대한 고객 기대가 높아지면서 브랜드는 차별화된 경험과 더 많은 콘텐츠를 신속하게 제공해야 한다는 압박에 시달리고 있습니다. 하지만 콘텐츠 관리 플랫폼을 구현하려면 사용자 정의 구성 요소와 저작 도구 등 기본 요소 개발에 막대한 시간과 예산을 투자해야 하고 유지 관리 및 업그레이드 시 비용이 발생하는 경우가 있습니다. Experience Manager Sites은 Experience Manager을 위한 추가 모듈로서 컨텐츠 및 상거래를 제공하여 즉시 사용 가능한 상거래 핵심 구성 요소, 작성 도구 및 참조 스토어를 제공하여 go-live를 가속화하고, 팀 간의 원활한 공동 작업을 가능하게 하며, 전환을 유도합니다.
+온라인 상거래 경험에 대한 고객 기대가 높아지면서 브랜드는 차별화된 경험과 더 많은 콘텐츠를 신속하게 제공해야 한다는 압박에 시달리고 있습니다. 하지만 콘텐츠 관리 플랫폼을 구현하려면 사용자 정의 구성 요소와 저작 도구 등 기본 요소 개발에 막대한 시간과 예산을 투자해야 하고 유지 관리 및 업그레이드 시 비용이 발생하는 경우가 있습니다. Experience Manager Sites은 Experience Manager을 위한 추가 모듈로서 컨텐츠 및 Commerce을 제공하여 즉시 사용 가능한 상거래 핵심 구성 요소, 작성 도구 및 참조 스토어를 제공하므로 라이브를 가속화하고, 팀 간의 원활한 공동 작업을 가능하게 하며, 전환을 유도합니다.
 
 브랜드는 Experience Manager를 Adobe Experience Cloud에 포함된 Adobe Commerce 및 선택한 모든 상거래 엔진과 통합할 수 있습니다. Experience Manager Content and Commerce를 통해 브랜드는 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -60,7 +62,7 @@ AEM의 강력한 CIF 도구를 통해 콘텐츠 제작자는 확장 가능하고
 
 ### 가치 창출 시간 (TTV)
 
-을 통해 프로젝트 개발 가속화 [AEM 핵심 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 상점](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)및 PWA의 통합 패턴(Headless Content 및 Commerce)입니다.
+을 통해 프로젝트 개발 가속화 [AEM 핵심 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 상점](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), PWA의 통합 패턴(Headless 콘텐츠 및 Commerce).
 
 지속적인 혁신을 위해 CIF를 항상 최신 상태를 유지하는 추가 기능으로 빌드하면 고객은 새로운 기능과 개선 사항에 액세스할 수 있습니다.
 

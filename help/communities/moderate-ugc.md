@@ -8,9 +8,11 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1519'
 ht-degree: 2%
 
 ---
@@ -72,8 +74,8 @@ UGC(게시 콘텐츠)에서 수행할 수 있는 작업은 사용자 ID 및 환�
    <td> </td>
    <td><strong>관리자</strong></td>
    <td><strong>중재자 </strong></td>
-   <td><strong>작성자</strong></td>
-   <td><strong>구성원</strong></td>
+   <td><strong>크리에이터</strong></td>
+   <td><strong>멤버</strong></td>
    <td><strong>방문자</strong></td>
    <td><strong>이벤트<br /> 트리거됨</strong></td>
    <td><strong>미리 중재됨</strong></td>

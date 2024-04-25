@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 6%
+source-wordcount: '1696'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +102,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
   활성화되면 작성자 모드에서 편집하는 동안 사용자 생성 컨텐츠를 차단합니다.
 
-* **저널 제목입니다**
+* **저널 제목**
 
   페이지에 표시할 블로그 제목입니다.
 
@@ -109,7 +112,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 >
 >여기서 지정한 저널 제목에서 최대 50자(고유성에는 5자가 추가됨)를 사용하여 블로그의 URL을 만듭니다.
 
-* **저널 설명입니다**
+* **저널 설명**
 
   블로그 설명.
 
@@ -121,7 +124,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
   선택한 경우 블로그 게시물 및 댓글이 게시된 사이트에 표시되려면 먼저 게시를 승인해야 합니다. 기본값은 선택 취소되어 있습니다.
 
-* **닫힘**
+* **종료됨**
 
   선택하면 블로그가 새 블로그 항목과 주석으로 닫힙니다. 기본값은 선택 취소되어 있습니다.
 
@@ -215,7 +218,7 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
   선택하면 구성원이 주제나 댓글을 부적절한 것으로 플래그를 지정하는 이유를 직접 입력할 수 있습니다. 기본값은 선택 취소되어 있습니다.
 
-* **관리 임계값**
+* **중재 임계값**
 
   구성원에 의해 주제나 댓글에 플래그가 지정되어야 중재자에게 통지되는 횟수를 입력합니다. 기본값은 1(1회)입니다.
 

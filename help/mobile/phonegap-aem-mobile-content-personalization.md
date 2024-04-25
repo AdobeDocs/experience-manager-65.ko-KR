@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2571'
 ht-degree: 1%
 
 ---
@@ -248,7 +251,7 @@ head.html 및 body.html의 예는 [AEM Mobile 하이브리드 참조 애플리�
    <td>true인 경우 오퍼에 포함된 모든 비디오가 렌더링됩니다. false인 경우 비디오를 건너뜁니다.</td>
   </tr>
   <tr>
-   <td>path</td>
+   <td>경로</td>
    <td>/content/campaigns/&lt;brand&gt;</td>
    <td>오퍼가 참여하는 캠페인의 브랜드를 가리킵니다. 현재 모든 오퍼는 동일한 캠페인에서 가져와야 합니다.</td>
   </tr>
@@ -275,7 +278,7 @@ AEM Mobile에서는 모바일 애플리케이션용으로 콘텐츠를 렌더링
 
 각 mbox에 대해 의 속성 **cq-targeting** 애플리케이션 개발자가 원하는 대로 사용하고 사용할 사용자 지정 코드를 작성할 수 있도록 가 추가되었습니다. 다음 [AEM Mobile 하이브리드 참조 앱](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) 에는 cq-targeting 속성을 사용하는 Angular 지시문의 예제가 있습니다. 콘텐츠 교체의 개념, 시기 및 방법은 모바일 애플리케이션 개발자가 결정합니다. Adobe 타깃팅 서비스를 호출하기 위한 API를 제공하는 AEM /etc/clientlibs/mobileapps/js/mobileapps.js 를 통해 제공되는 Mobile SDK가 있습니다. 응용 프로그램의 디자인에 따라 호출이 언제 수행되어야 하는지 지정하는 것은 응용 프로그램 개발자의 책임입니다.
 
-## 다음 단계? {#what-s-next}
+## 다음은 무엇입니까? {#what-s-next}
 
 1. [내 AEM Mobile 앱 경험 시작](/help/mobile/starting-aem-phonegap-app.md)
 1. [내 앱 콘텐츠 관리](/help/mobile/phonegap-manage-app-content.md)

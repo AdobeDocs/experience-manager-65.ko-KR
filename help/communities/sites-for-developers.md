@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '488'
 ht-degree: 1%
 
 ---
@@ -24,13 +27,13 @@ ht-degree: 1%
 * 사용자 지정 템플릿을 만듭니다.
 * 기본 사이트 템플릿 경로를 오버레이합니다.
 * 사용자 지정 템플릿을 오버레이 경로에 추가합니다.
-* 을(를) 추가하여 사용자 지정 템플릿 지정 `page-template` 에 대한 속성 `configuration` 노드.
+* 노드에 속성을 추가하여 `page-template` 사용자 지정 템플릿을 `configuration` 지정합니다.
 
 **기본 템플릿**:
 
 `/libs/social/console/components/hbs/sitepage/sitepage.hbs`
 
-**오버레이 경로의 사용자 정의 템플릿**:
+**오버레이 경로**&#x200B;의 사용자 지정 템플릿:
 
 `/apps/social/console/components/hbs/sitepage/template-name.hbs`
 
@@ -38,7 +41,7 @@ ht-degree: 1%
 
 **유형**: 문자열
 
-**값**: `template-name` (확장 없음)
+**값**: `template-name` (확장자 없음)
 
 **구성 노드**:
 
@@ -48,11 +51,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->오버레이된 경로의 모든 노드는 유형만 사용해야 합니다. `Folder`.
+>오버레이된 경로의 모든 노드는 `Folder`.
 
 >[!CAUTION]
 >
->사용자 지정 템플릿에 이름이 지정된 경우 *sitepage.hbs*&#x200B;을 선택한 다음 모든 커뮤니티 사이트를 사용자 지정합니다.
+>사용자 지정 템플릿 이름에 sitepage.hbs *라는 이름을*&#x200B;지정하면 모든 커뮤니티 사이트가 사용자 지정됩니다.
 
 ### 사용자 지정 사이트 템플릿 예 {#custom-site-template-example}
 
@@ -81,7 +84,7 @@ ht-degree: 1%
 
 UGC 및 사용자 지정 코드는 커뮤니티 사이트 패키지에 포함되지 않습니다.
 
-UGC를 내보내려면 [AEM Communities UGC 마이그레이션 도구](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration): GitHub에서 사용할 수 있는 오픈 소스 마이그레이션 도구입니다.
+UGC 내보내려면 GitHub에서 [사용할 수 있는 오픈 소스 마이그레이션 도구인 AEM Communities UGC 마이그레이션 도구를](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration) 사용합니다.
 
 ## 커뮤니티 사이트 삭제 {#deleting-a-community-site}
 
@@ -93,11 +96,11 @@ AEM Communities 6.3 서비스 팩 1부터 사이트 삭제 아이콘이에서 �
 
 ### 커뮤니티 고유 사이트 ID {#community-unique-site-id}
 
-CRXDE를 사용하여 커뮤니티 사이트와 연결된 고유한 사이트 ID를 식별하려면 다음을 수행하십시오.
+CRXDE를 사용하여 커뮤니티 사이트와 연결된 고유 사이트 ID를 식별하려면 다음을 수행하십시오.
 
-* 다음과 같이 사이트의 언어 루트로 이동합니다. `/content/sites/*<site name>*/en/rep:policy`.
+* 사이트의 언어 루트(예: `/content/sites/*<site name>*/en/rep:policy`)로 이동합니다.
 
-* 다음 찾기 `allow<#>` 가 있는 노드 `rep:principalName` 이 형식으로 `rep:principalName = *community-enable-nrh9h-members*`.
+* `allow<#>` 이 포맷 `rep:principalName = *community-enable-nrh9h-members*`에서 a `rep:principalName` 가 있는 노드 찾기.
 
 * 사이트 ID는 의 세 번째 구성 요소입니다 `rep:principalName`
 
@@ -109,23 +112,23 @@ CRXDE를 사용하여 커뮤니티 사이트와 연결된 고유한 사이트 ID
 
 ### 사용자 생성 컨텐츠 {#user-generated-content}
 
-GitHub에서 communities-srp-tools 프로젝트 가져오기:
+GitHub에서 communities-srp-tools 프로젝트를 가져옵니다.
 
 * [https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 여기에는 SRP에서 모든 UGC를 삭제하는 서블릿이 포함되어 있습니다.
 
-모든 UGC를 제거하거나 특정 사이트에 대해 다음을 수행할 수 있습니다.
+모든 UGC는 제거되거나 특정 사이트에 대해 제거될 수 있습니다. 예를 들면 다음과 같습니다.
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-이렇게 하면 사용자 생성 콘텐츠(게시 시 입력됨)만 제거되고 작성된 콘텐츠(작성 시 입력됨)는 제거되지 않습니다. 따라서 [그림자 노드](srp.md#shadownodes) 영향을 받지 않습니다.
+사용자 생성 콘텐츠(게시에 입력)만 제거되고 작성되지 않은 컨텐츠(작성자에 입력)만 제거됩니다. [따라서 섀도우 노드](srp.md#shadownodes)는 영향을 받지 않습니다.
 
 ### 커뮤니티 사용자 그룹 {#community-user-groups}
 
-모든 작성자 및 게시 인스턴스에서 [보안 콘솔](../../help/sites-administering/security.md)를 찾아 제거합니다. [사용자 그룹](users.md) 즉,
+모든 작성자 및 게시 인스턴스의 보안 콘솔에서 [다음과 같은 사용자 그룹을](users.md) 찾아 제거합니다[.](../../help/sites-administering/security.md)
 
-* 접두사 `community`
-* 뒤에 오는 [고유 사이트 id](#community-unique-site-id)
+* 접두사로 `community`
+* 고유한 사이트 ID가 뒤에 옵니다.[](#community-unique-site-id)
 
-(예: `community-engage-x0e11-members`)
+예: `community-engage-x0e11-members`

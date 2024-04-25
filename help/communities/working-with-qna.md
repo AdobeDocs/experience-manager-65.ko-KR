@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 7%
+source-wordcount: '1389'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +82,7 @@ QnA(질문과 대답) 포럼 기능은 커뮤니티 구성원이 질문을 하�
 
   선택하는 경우, 게시물 사이트에 게시하기 전에 주제 및 댓글 게시를 승인해야 합니다. 기본값은 선택 해제되어 있습니다.
 
-* **닫힘**
+* **종료됨**
 
   선택하면 포럼에 새로운 질문과 의견이 표시되지 않습니다. 기본값은 선택 해제되어 있습니다.
 
@@ -189,7 +192,7 @@ QnA(질문과 대답) 포럼 기능은 커뮤니티 구성원이 질문을 하�
 
   선택하면 구성원이 질문을 게시하거나 답변이 부적절한 이유를 직접 입력할 수 있습니다. 기본값은 선택 해제되어 있습니다.
 
-* **관리 임계값**
+* **중재 임계값**
 
   중재자에게 통지하기 전에 구성원에게 질문이나 답변에 플래그를 지정해야 하는 횟수를 입력합니다. 기본값은 1(1회)입니다.
 
@@ -213,7 +216,7 @@ QnA(질문과 대답) 포럼 기능은 커뮤니티 구성원이 질문을 하�
 
 아래 **정렬 설정** 탭에서는 표시된 게시한 댓글을 어떻게 정렬할지 지정합니다.
 
-* **정렬 기준**
+* **정렬 기준:**
 
   허용되는 모든 정렬 선택 사항을 확인하십시오. `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 기본값은 입니다 `Newest, Oldest, Last Updated`.
 

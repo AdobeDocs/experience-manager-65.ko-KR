@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 5%
+source-wordcount: '983'
+ht-degree: 1%
 
 ---
 
@@ -103,7 +106,7 @@ ht-degree: 5%
 
 아래 **사용자 중재** 탭에서 게시된 댓글을 관리하는 방법을 지정합니다. 자세한 내용은 [사용자 생성 컨텐츠 중재](/help/communities/moderate-ugc.md).
 
-* **사전 관리**
+* **사전 중재**
 
   선택하면 게시 사이트에 댓글이 표시되기 전에 승인되어야 합니다. 기본값은 선택 해제되어 있습니다.
 
@@ -119,7 +122,7 @@ ht-degree: 5%
 
   선택하면 중재자가 댓글을 닫거나 다시 열 수 있습니다. 기본값은 선택 해제되어 있습니다.
 
-* **댓글에 플래그 지정**
+* **댓글 플래그 지정**
 
   선택하면 구성원이 주석을 부적절한 항목으로 표시하도록 허용합니다. 기본값은 선택 해제되어 있습니다.
 
@@ -131,7 +134,7 @@ ht-degree: 5%
 
   선택하면 구성원이 주석을 부적절한 것으로 플래그 지정한 이유를 직접 입력할 수 있습니다. 기본값은 선택 해제되어 있습니다.
 
-* **관리 임계값**
+* **중재 임계값**
 
   댓글에 구성원이 플래그를 지정해야 중재자에게 알림이 표시되는 횟수를 입력합니다. 기본값은 1회입니다.
 

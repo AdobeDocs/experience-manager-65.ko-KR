@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1054'
 ht-degree: 1%
 
 ---
@@ -104,7 +107,7 @@ Mobile Services 계정 설정을 완료하면 앱을 선택하라는 메시지�
 
 이제 모바일 앱에서 ADBMobileConfig.json 파일에 액세스할 수 있으므로 Adobe Analytics에 다시 통신하고 앱 성공을 이끄는 데 도움이 되는 중요한 지표 값에 대한 보고를 시작하는 방법에 대한 지식을 보유하고 있습니다.
 
-## 다음 단계? {#what-s-next}
+## 다음은 무엇입니까? {#what-s-next}
 
 1. [내 AEM Mobile 앱 경험 시작](/help/mobile/starting-aem-phonegap-app.md)
 1. [내 앱 콘텐츠 관리](/help/mobile/phonegap-manage-app-content.md)

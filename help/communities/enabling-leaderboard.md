@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 9%
+source-wordcount: '418'
+ht-degree: 2%
 
 ---
 
@@ -81,7 +84,7 @@ ht-degree: 9%
 
   (필수) 채점/배지 규칙이 구성되는 위치입니다.
 
-* **점수 지정 규칙**
+* **채점 규칙**
 
   (필수) 표시할 점수를 생성하는 특정 규칙입니다.
 
@@ -111,7 +114,7 @@ ht-degree: 9%
 * 규칙 탭:
 
    * 규칙 위치 = `/content/sites/<site name>/jcr:content`
-   * 점수 지정 규칙 = `/libs/settings/community/scoring/rules/forums-scoring`
+   * 채점 규칙 = `/libs/settings/community/scoring/rules/forums-scoring`
    * 배지 규칙 = `/libs/settings/community/badging/rules//reference-badging`
    * 표시 제한 = `10`
 
@@ -134,7 +137,7 @@ ht-degree: 9%
 * 규칙 탭:
 
    * 규칙 위치 = `/content/sites/<site name>/jcr:content`
-   * 점수 지정 규칙 = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+   * 채점 규칙 = `/libs/settings/community/scoring/rules/adv-forums-scoring`
    * 배지 규칙 = `/libs/settings/community/badging/rules/adv-forums-badging`
    * 표시 제한 = `10`
 

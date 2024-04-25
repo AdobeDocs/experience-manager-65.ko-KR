@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 1%
+source-wordcount: '840'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +101,7 @@ AEM Communities의 메시징 기능은 로그인한 사이트 방문자(구성�
 
   그룹 메시지를 사용할 수 있는 경우 그룹 메시지를 한 번에 보낼 수 있는 최대 수신자 수를 지정합니다. 기본값은 입니다 *10*.
 
-* **배치 크기**
+* **일괄 처리 크기**
 
   대규모 수신자 그룹에 전송할 때 전송을 위해 함께 일괄 처리할 메시지 수입니다. 기본값은 입니다 *10*.
 

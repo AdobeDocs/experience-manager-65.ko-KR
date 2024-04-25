@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 3%
+source-wordcount: '589'
+ht-degree: 0%
 
 ---
 
@@ -87,7 +89,7 @@ Oak 컬렉션과 SRP 컬렉션을 모두 집중적으로 사용하는 경우 성
 
 * **SolrConfiguration**
 
-   * **[](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)Zookeeper 호스트**
+   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) 호스트**
 
      내부 ZooKeeper를 사용하여 Solr을 실행하는 경우 이 값을 비워 둡니다. Else, 실행 시 [SolrCloud 모드](solr.md#solrcloud-mode) 외부 ZooKeeper를 사용하여 이 값을 ZooKeeper의 URI로 설정합니다. 예: *my.server.com:80*
 

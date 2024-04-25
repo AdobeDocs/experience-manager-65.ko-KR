@@ -9,7 +9,8 @@ docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '5792'
 ht-degree: 0%
@@ -25,14 +26,14 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 | 확인 | 고려 사항 | 댓글 / 작업 |
 |---|---|---|
 | 백업 계획. |  | 방법 보기 [인스턴스 백업](/help/sites-deploying/monitoring-and-maintaining.md#backups). |
-| 재해 복구 계획 | 귀사의 재해 복구 지침 |  |
-| 오류 추적 시스템은 보고 문제에 사용할 수 있습니다. | 예를 들어, [부질라](https://www.bugzilla.org/), [지라](https://www.atlassian.com/software/jira)또는 기타 여러 항목 중 하나를 선택할 수 있습니다. |  |
-| 파일 시스템을 모니터링하고 있습니다. | 사용 가능한 디스크 공간이 부족한 경우 CRX 저장소가 &quot;정지&quot;됩니다. 공간을 사용할 수 있게 되면 다시 시작됩니다. | &quot; `*ERROR* LowDiskSpaceBlocker`사용 가능한 공간이 부족해지면 로그 파일에서 메시지를 볼 수 있습니다. |
+| 재해 복구 계획. | 회사의 재해 복구 지침입니다. |  |
+| 오류 추적 시스템을 사용하여 문제를 보고할 수 있습니다. | 예를 들어 Bugzilla, Jira](https://www.atlassian.com/software/jira) 또는 기타 여러 가지 중 하나가 있습니다[. [](https://www.bugzilla.org/) |  |
+| 파일 시스템을 모니터링하고 있습니다. | 무료 디스크 공간이 부족하면 CRX 저장소가 &quot;고정&quot;됩니다. 공간을 사용할 수 있게 되면 다시 시작됩니다. | &quot; `*ERROR* LowDiskSpaceBlocker`사용 가능한 공간이 부족해지면 로그 파일에서 메시지를 볼 수 있습니다. |
 | [로그 파일](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) 모니터링 중입니다. |  |  |
 | 시스템 모니터링이 백그라운드에서 계속 실행됩니다. | CPU, 메모리, 디스크 및 네트워크 사용량 포함 예를 들어 iostat / vmstat / perfmon을 사용합니다. | 기록된 데이터는 시각화되며 성능 문제를 추적하는 데 사용할 수 있습니다. 원시 데이터에도 액세스할 수 있습니다. |
 | [AEM 성능이 모니터링 중입니다.](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | 포함 [요청 카운터](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) 트래픽 수준을 모니터링합니다. | 중대한, 장기적 성과 손실이 보이면 정밀한 조사를 해야 한다. |
 | 다음을 모니터링하고 있습니다. [복제 에이전트](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
-| 정기적으로 워크플로우 인스턴스를 제거합니다. | 저장소 크기 및 워크플로 성능. | 다음을 참조하십시오 [정기적인 워크플로 인스턴스 제거](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
+| 작업 과정 인스턴스를 정기적으로 제거합니다. | 저장소 크기 및 워크플로 성능. | 다음을 참조하십시오 [정기적인 워크플로 인스턴스 제거](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## 백업 {#backups}
 
@@ -69,15 +70,15 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 이 작업을 [수행하려면 전체 저장소](#backing-up-your-repository) 백업을 한 후 다음을 수행합니다.
 
 1. 정지 AEM.
-1. 전체 백업 `<cq-installation-dir>` 사용 중인 파일 시스템에서 가져옵니다.
+1. 파일 시스템에서 전체를 `<cq-installation-dir>` 뒤로 올리십시오.
 
 >[!CAUTION]
 >
->타사 애플리케이션 서버를 운영하는 경우 추가 폴더가 다른 위치에 있을 수 있으므로 백업해야 합니다. 다음을 참조하십시오 [응용 프로그램 서버에 AEM을 설치하는 방법](/help/sites-deploying/application-server-install.md) 애플리케이션 서버 설치에 대한 자세한 내용
+>서드파티 애플리케이션 서버를 운영하는 경우 추가 폴더가 다른 위치에 있을 수 있으므로 백업해야 합니다. 애플리케이션 서버 설치에 대한 자세한 내용은 애플리케이션 서버에](/help/sites-deploying/application-server-install.md) AEM을 설치하는 방법을 참조하십시오[.
 
 >[!CAUTION]
 >
->파일 데이터 저장소의 증분 백업이 지원됩니다. 다른 구성 요소(예: Lucene 인덱스)에 증분 백업을 사용할 때는 삭제된 파일도 백업에서 삭제된 것으로 표시되는지 확인하십시오.
+>파일 데이터 스토어의 증분 백업이 지원됩니다. 다른 구성 요소(예: Lucene 인덱스)에 증분 백업을 사용하는 경우 삭제된 파일도 백업에서 삭제된 것으로 표시되는지 확인합니다.
 
 >[!NOTE]
 >
@@ -103,22 +104,22 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 
 웹 사이트의 버전을 제거하려면 다음과 같이 진행하십시오.
 
-1. 다음 위치로 이동 **[도구](/help/sites-administering/tools-consoles.md)** **콘솔**, 선택 **작업**, **유지 관리**, 그런 다음 **주간 유지 관리 창**.
+1. 도구&#x200B;](/help/sites-administering/tools-consoles.md)**콘솔로 이동하여 Operation(작업**), **Maintenance(유지 관리****), Weekly Maintenance Window(주별 유지 관리 기간**)를 차례로 선택합니다&#x200B;**.**[****
 
-1. 선택 **+ 추가** 을 클릭하여 제품에서 사용할 수 있습니다.
+1. 위쪽 도구 모음에서 + 추가&#x200B;**를 선택합니다**.
 
    ![버전 삭제 추가](assets/version-purge-add.png)
 
-1. 선택 **버전 삭제** 의 드롭다운 목록에서 **새 작업 추가** 대화 상자. 그러면 **저장**.
+1. 선택 **버전 삭제** 의 드롭다운 목록에서 **새 작업 추가** 대화 상자. 그런 다음 **저장**.
 
    ![버전 삭제 추가](assets/version-purge-add-new-task.png)
 
-1. 다음 **버전 삭제** 작업이 추가되었습니다. 카드 작업을 사용하여 다음을 수행합니다.
-   * 선택 - 상단 도구 모음에 추가 작업이 표시됩니다.
-   * 실행 - 구성된 제거를 즉시 실행합니다.
-   * 구성 - 주별 제거 작업을 구성합니다.
+1. **버전 삭제** 작업이 추가됩니다. 카드 작업을 사용하여 다음을 수행할 수 있습니다.
+   * 선택 - 상단 도구 모음에 추가 작업 표시
+   * Run - 구성된 제거를 즉시 실행합니다.
+   * 구성 - 주간 삭제 작업을 구성합니다.
 
-   ![버전 제거 작업](assets/version-purge-actions.png)
+   ![버전 삭제 작업](assets/version-purge-actions.png)
 
 1. 다음 항목 선택 **구성** 웹 콘솔 열기 작업 **일 CQ WCM 버전 제거 작업**&#x200B;를 사용하여 다음을 구성할 수 있습니다.
 
@@ -184,13 +185,13 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 다음 예제에서:
 
 * **[!DNL Shirts]** 버전 사용 기간이 2일보다 길기 때문에 버전이 제거됩니다.
-* 다음 **[!DNL Tonga Fashions!]** 버전 수가 5보다 크므로 버전이 삭제됩니다.
+* **[!DNL Tonga Fashions!]** 버전 수가 5보다 많기 때문에 버전이 제거됩니다.
 
-![global_version_screenshot](assets/global_version_screenshot.png)
+![global_version_스크린샷](assets/global_version_screenshot.png)
 
 ## 감사 레코드 및 로그 파일 작업 {#working-with-audit-records-and-log-files}
 
-Adobe Experience Manager(AEM)와 관련된 감사 레코드 및 로그 파일은 다양한 위치에서 찾을 수 있습니다. 다음은 찾을 수 있는 내용과 찾을 수 있는 위치에 대한 개요를 제공하기 위해 제공됩니다.
+Adobe Experience Manager(AEM)과 관련된 감사 레코드 및 로그 파일은 다양한 위치에서 찾을 수 있습니다. 다음은 찾을 수 있는 항목과 위치에 대한 개요를 제공하기 위해 제공됩니다.
 
 ### 로그 작업 {#working-with-logs}
 
@@ -221,23 +222,19 @@ AEM을 설치한 파일 서버에는 다양한 로그 파일이 보관되어 있
    * `access.log`
 AEM WCM 및 저장소에 대한 모든 액세스 요청이 여기에 등록됩니다.
 
-   * `audit.log`
-중재 작업은 여기에 등록됩니다.
+   * `audit.log`중재 작업은 여기에 등록됩니다.
 
-   * `error.log`
-여기에는 (다양한 심각도 수준의) 오류 메시지가 등록됩니다.
+   * `error.log`다양한 심각도 수준의 오류 메시지가 여기에 등록됩니다.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
-이 로그는 다음과 같은 경우에만 사용됩니다. [!DNL Dynamic Media] 이(가) 활성화되었습니다. 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)이 로그는 활성화된 경우에만 [!DNL Dynamic Media] 사용됩니다. 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
 
    * `request.log`
 각 액세스 요청은 응답과 함께 여기에 등록됩니다.
 
    * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
-이 로그는 다음과 같은 경우에만 사용됩니다. [!DNL Dynamic Media] 이(가) 활성화되었습니다. s7access 로그는 각 요청을 기록합니다. [!DNL Dynamic Media] 에서 `/is/image` 및 `/is/content`.
+이 로그는 다음과 같은 경우에만 사용됩니다. [!DNL Dynamic Media] 이(가) 활성화되었습니다. s7access 로그는 를 통해 `/is/image` 이루어진 [!DNL Dynamic Media] 각 요청 및 를 기록합니다`/is/content`.
 
-   * `stderr.log`
-시작 중에 생성된 다양한 심각도 수준의 오류 메시지를 다시 저장합니다. 기본적으로 로그 수준은 로 설정됩니다. `Warning` ( `WARN`)
+   * `stderr.log`시작 중에 생성되는 다양한 심각도 수준의 오류 메시지를 보관합니다. 기본적으로 로그 수준은 로 설정됩니다. `Warning` ( `WARN`)
 
    * `stdout.log`
 시작 중 이벤트를 나타내는 로깅 메시지를 보관합니다.
@@ -252,13 +249,13 @@ AEM WCM 및 저장소에 대한 모든 액세스 요청이 여기에 등록됩�
 
 >[!NOTE]
 >
->ImageServer 및 s7액세스 로그는 **시스템/콘솔/상태**번들리스트**페이지에서 생성된 전체 다운로드**패키지에 포함되지 않습니다. 다음을 보유한 경우 지원 목적으로 [!DNL Dynamic Media] 문제, 고객 지원 센터에 문의할 때 ImageServer 및 s7access 로그를 추가합니다.
+>ImageServer 및 s7액세스 로그는 **시스템/콘솔/상태**번들리스트**페이지에서 생성된 전체 다운로드**패키지에 포함되지 않습니다. 지원을 위해 문제가 있는 [!DNL Dynamic Media] 경우 고객 지원 센터에 문의할 때 ImageServer 및 s7access 로그를 추가하십시오.
 
 ### DEBUG 로그 수준 활성화 {#activating-the-debug-log-level}
 
-기본 로그 수준([Apache Sling 로깅 구성](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration))는 정보이므로 디버그 메시지가 기록되지 않습니다.
+기본 로그 수준([Apache Sling 로깅 구성](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration))은 정보이므로 디버그 메시지가 기록되지 않습니다.
 
-로거에 대한 디버그 로그 수준을 활성화하려면 속성을 설정합니다 `org.apache.sling.commons.log.level` 저장소에서 디버그합니다. 예를 들어, `/libs/sling/config/org.apache.sling.commons.log.LogManager` 을(를) 구성하려면 [글로벌 Apache Sling 로깅](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
+로거의 디버그 로그 수준을 활성화하려면 저장소에서 속성 `org.apache.sling.commons.log.level` 디버그로 설정합니다. 예를 들어, `/libs/sling/config/org.apache.sling.commons.log.LogManager` 을(를) 구성하려면 [글로벌 Apache Sling 로깅](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 >[!CAUTION]
 >
@@ -307,11 +304,11 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
      유형: 문자열
 
-     값: 로그 파일을 지정합니다. 예: `logs/myLogFile.log`
+     값: 로그 파일 지정; 예를 들어 `logs/myLogFile.log`
 
    * 이름: `org.apache.sling.commons.log.names`
 
-     유형: 문자열[] (문자열 + 다중)
+     유형: 문자열[] (문자열 + 멀티)
 
      값: 로거가 메시지를 기록할 OSGi 서비스를 지정합니다. 예를 들어 다음과 같습니다.
 
@@ -343,7 +340,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >
    >{1} 로그 마커
    >
-   >{2} 현재 스레드 이름
+   >{2} 현재 스레드의 이름
    >
    >{3} 로거의 이름
    >
@@ -376,17 +373,17 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >디렉터리에 쓰기:
    >
    >`<cq-installation-dir>/logs/`\
-   >(즉, 옆에 있음) `<cq-installation-dir>/crx-quickstart/`)
+   >(즉, )`<cq-installation-dir>/crx-quickstart/`
 
 1. 이 단계는 새 작성기가 필요한 경우(즉, 기본 작성기와 다른 구성을 사용하는 경우)에만 필요합니다.
 
    >[!CAUTION]
    >
-   >새 로깅 작성기 구성은 기존 기본값이 적합하지 않은 경우에만 필요합니다.
+   >새 로깅 기록기 구성은 기존 기본값이 적합하지 않은 경우에만 필요합니다.
    >
-   >명시적 Writer가 구성되어 있지 않으면 시스템은 기본값을 기반으로 암시적 Writer를 자동으로 생성합니다.
+   >명시적 작성기가 구성되지 않은 경우 시스템은 기본값에 따라 암시적 작성기를 자동으로 생성합니다.
 
-   아래 `/apps/<project-name>/config`, 새 노드에 대한 노드 만들기 [Apache Sling 로깅 작성기 구성](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
+   에서 `/apps/<project-name>/config`새 [Apache Sling 로깅 작성기 구성](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration)에 대한 노드 를 만듭니다.
 
    * 이름: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (작성자)
 
@@ -440,8 +437,8 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >
    >| `'.'yyyy-MM` | 매월 초에 순환 |
    >|---|---|
-   >| `'.'yyyy-ww` | 매주 첫째 날의 순환(로케일에 따라 다름) |
-   >| `'.'yyyy-MM-dd` | 매일 자정에 순환. |
+   >| `'.'yyyy-ww` | 매주 첫 요일에 회전(로캘에 따라 다름) |
+   >| `'.'yyyy-MM-dd` | 매일 자정에 회전합니다. |
    >| `'.'yyyy-MM-dd-a` | 매일 자정과 정오에 순환. |
    >| `'.'yyyy-MM-dd-HH` | 매시간 맨 위에 회전. |
    >| `'.'yyyy-MM-dd-HH-mm` | 매 분 시작 시 회전. |
@@ -466,8 +463,8 @@ Felix 콘솔은에서 Sling 로그 지원에 대한 정보도 제공합니다. `
 
 #### 페이지 작성 시 표시되는 AEM WCM 감사 레코드 {#aem-wcm-audit-records-shown-when-page-authoring}
 
-1. 페이지를 엽니다.
-1. 사이드 킥에서 잠금 아이콘이 있는 탭을 선택한 다음 더블 클릭합니다 **감사 로그..**
+1. 페이지 열기.
+1. 사이드 킥에서 잠금 아이콘이 있는 탭을 선택한 다음 감사 로그를 두 번 클릭 **할 수 있습니다.**
 1. 현재 페이지에 대한 감사 레코드 목록을 표시하는 새 창이 열립니다.
 
    ![screen_shot_2012-02-02at43601pm](assets/screen_shot_2012-02-02at43601pm.png)
@@ -488,10 +485,10 @@ Felix 콘솔은에서 Sling 로그 지원에 대한 정보도 제공합니다. `
 
 ## 복제 에이전트 모니터링 {#monitoring-your-replication-agents}
 
-다음을 모니터링할 수 있습니다. [복제 큐](/help/sites-deploying/replication.md) 큐가 작동 중지 또는 차단되는 시점을 감지하려면 - 이는 결과적으로 게시 인스턴스 또는 외부 시스템에 문제가 있음을 나타낼 수 있습니다.
+복제 큐를 [](/help/sites-deploying/replication.md) 모니터하여 큐가 다운되거나 차단된 경우를 감지할 수 있으며, 이는 게시 인스턴스 또는 외부 시스템에 문제가 있음을 나타낼 수 있습니다.
 
-* 모든 필수 대기열이 활성화되었습니까?
-* 비활성화된 대기열이 계속 필요합니까?
+* 필요한 모든 큐가 활성화되어 있습니까?
+* 비활성화된 큐가 여전히 필요합니까?
 * 모두 `enabled` 대기열은 상태를 가져야 합니다. `idle` 또는 `active`: 정상적인 작업을 나타냅니다. 큐는 다음과 같지 않아야 합니다. `blocked`: 수신자측에서 종종 문제가 발생할 수 있습니다.
 
 * 큐 크기가 시간이 지남에 따라 커지면 차단된 큐를 나타낼 수 있습니다.
@@ -550,12 +547,12 @@ Felix 콘솔은에서 Sling 로그 지원에 대한 정보도 제공합니다. `
 |   | 어떤 고객은 빠르고, 어떤 고객은 느립니다. |  |  |
 | 서버 |  |  |  |
 | 네트워크 | 서버와 클라이언트의 CPU 사용량이 낮습니다. | 네트워크 병목 현상을 제거합니다. | 클라이언트 캐시의 구성을 개선/최적화합니다. |
-|   | 서버에서 로컬로 탐색하는 것이 (비교적) 빠릅니다. | 네트워크 대역폭 향상. | 웹 페이지의 &quot;가중치&quot;를 줄입니다(예: 더 적은 수의 이미지, 최적화된 HTML). |
+|   | 서버에서 로컬로 탐색하는 것은 (비교적으로) 빠릅니다. | 네트워크 대역폭 향상. | 웹 페이지의 &quot;가중치&quot;를 줄입니다(예: 더 적은 수의 이미지, 최적화된 HTML). |
 | 웹 서버 | 웹 서버의 CPU 사용량이 높습니다. | 웹 서버를 클러스터링합니다. | 페이지당(방문) 히트 수를 줄입니다. |
 |   |  | 하드웨어 로드 밸런서를 사용합니다. |  |
-| 애플리케이션 | 서버 CPU 사용량이 많습니다. | AEM 인스턴스를 클러스터링합니다. | CPU 및 메모리 호그를 검색하고 제거합니다(코드 검토 및 타이밍 출력 사용). |
-|   | 메모리 사용량이 많습니다. |  | 모든 수준에서 캐싱을 개선합니다. |
-|   | 응답 시간이 짧습니다. |  | 템플릿 및 구성 요소(예: 구조, 논리)를 최적화합니다. |
+| 애플리케이션 | 서버 CPU 사용량이 많습니다. | AEM 인스턴스를 클러스터링합니다. | CPU 및 메모리 호그를 Search 및 제거합니다(코드 검토 및 타이밍 출력 사용). |
+|   | 메모리 사용량이 많습니다. |  | 모든 수준에서 캐싱 개선. |
+|   | 낮은 응답 시간. |  | 템플릿 및 구성 요소(예: 구조, 논리)를 최적화합니다. |
 | 저장소 |  |  |  |
 | 캐시 |  |  |  |
 
@@ -636,12 +633,12 @@ Felix 콘솔은에서 Sling 로그 지원에 대한 정보도 제공합니다. `
   </tr>
   <tr>
    <td>JProfiler</td>
-   <td>심층적인 CPU 및 메모리 프로파일링</td>
+   <td>심층적인 CPU 및 메모리 프로파일링.</td>
    <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td>
   </tr>
   <tr>
-   <td>Java™ 비행 레코더</td>
-   <td>Java™ Flight Recorder(JFR)는 실행 중인 Java™ 애플리케이션에 대한 진단 및 프로파일링 데이터를 수집하는 도구입니다.</td>
+   <td>자바™ 플라이트 레코더</td>
+   <td>JFR(Java™ Flight Recorder)은 실행 중인 Java™ 애플리케이션에 대한 진단 및 프로파일링 데이터를 수집하기 위한 도구입니다.</td>
    <td><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE</a></td>
   </tr>
   <tr>
@@ -714,7 +711,7 @@ Adobe은 &quot;느린&quot; 페이지를 `request.log`그런 다음 더 나은 �
 이 로그에는 요청 또는 응답당 한 줄이 있습니다.
 
 * 각 요청 또는 응답이 수행된 날짜입니다.
-* 대괄호 안의 요청 번호입니다. 이 숫자는 요청 및 응답과 일치합니다.
+* 대괄호 안의 요청 번호입니다. 이 숫자는 요청 및 응답에 대해 일치합니다.
 * 요청(오른쪽을 가리키는 화살표)인지 아니면 응답(왼쪽을 가리키는 화살표)인지를 나타내는 화살표입니다.
 * 요청의 경우 행에 다음이 포함됩니다.
 
@@ -722,26 +719,26 @@ Adobe은 &quot;느린&quot; 페이지를 `request.log`그런 다음 더 나은 �
    * 요청된 페이지
    * 프로토콜
 
-* 응답의 경우 행에 다음이 포함됩니다.
+* 응답의 경우 줄에 다음이 포함됩니다.
 
-   * 상태 코드(200은 &quot;성공&quot;을, 404는 &quot;페이지를 찾을 수 없음&quot;을 의미합니다.
+   * 상태 코드(200은 &quot;성공&quot;을 의미하고 404는 &quot;페이지 없음&quot;을 의미합니다.
    * MIME 유형
    * 응답 시간
 
-작은 스크립트를 사용하여 로그 파일에서 필요한 정보를 추출하고 원하는 통계를 조합할 수 있습니다. 이러한 통계를 통해 어떤 페이지 또는 페이지 유형이 느리고 전반적인 성능이 만족스러운지 확인할 수 있습니다.
+작은 스크립트를 사용하여 로그 파일 파일에서 필요한 정보를 추출하고 원하는 통계를 조합할 수 있습니다. 이러한 통계를 통해 어떤 페이지 또는 페이지 유형이 느리고 전반적인 성능이 만족스러운지 확인할 수 있습니다.
 
-#### request.log로 검색 응답 시간 모니터링 {#monitoring-search-response-times-with-the-request-log}
+#### 요청.log를 사용하여 검색 응답 시간 모니터링 {#monitoring-search-response-times-with-the-request-log}
 
-검색 요청도 로그 파일에 등록됩니다.
+Search 요청은 로그 파일에도 등록됩니다.
 
 ```xml
 31/Mar/2009:11:35:34 +0200 [338] -> GET /author/playground/en/tools/search.html?query=dilbert&size=5&dispenc=utf-8 HTTP/1.1
 31/Mar/2009:11:35:34 +0200 [338] <- 200 text/html 1562ms
 ```
 
-따라서 위와 같이 스크립트를 사용하여 관련 정보를 추출하고 통계를 작성할 수 있습니다.
+따라서 위와 같이 스크립트를 사용하여 관련 정보를 추출하고 통계를 빌드 할 수 있습니다.
 
-그러나 응답 시간을 결정한 후 요청이 왜 시간이 걸리고 있는지, 응답을 개선하기 위해 수행할 수 있는 작업을 분석합니다.
+그러나 응답 시간을 결정한 후에는 요청 요청에 시간이 걸리는 이유와 응답을 개선하기 위해 수행할 수 있는 작업을 분석합니다.
 
 #### 동시 사용자의 수 및 영향 모니터링 {#monitoring-the-number-and-impact-of-concurrent-users}
 
@@ -934,10 +931,10 @@ JDK 6-8의 경우 도구 명령을 `visualvm` 사용할 수 있습니다. JDK를
 
 1. 다음 중 하나를 실행합니다.
 
-   * `jvisualvm`: JDK 1.6 bin 폴더(테스트된 버전)
-   * `visualvm`: 다음에서 다운로드할 수 있습니다. [비주얼 브이엠](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) (출혈 가장자리 버전)
+   * `jvisualvm`: JDK 1.6 bin 폴더 (테스트 버전)
+   * `visualvm`: VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/)(최첨단 버전)에서 [다운로드 가능
 
-1. 다음 범위 내에서 `Local` 응용 프로그램, 두 번 클릭 `com.day.crx.quickstart.Main`. 개요가 기본값으로 표시됩니다.
+1. 애플리케이션 내에서 `Local` 을 두 번 클릭합니다 `com.day.crx.quickstart.Main`. 개요가 기본값으로 표시됩니다.
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -945,25 +942,25 @@ JDK 6-8의 경우 도구 명령을 `visualvm` 사용할 수 있습니다. JDK를
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
-이 도구를 사용하여 스레드 덤프와 메모리 헤드 덤프를 생성할 수 있습니다. 이 정보는 기술 지원 팀에서 요청하는 경우가 많습니다.
+이 도구 를 사용하여 스레드 덤프 및 메모리 헤드 덤프를 생성할 수 있습니다. 이 정보는 기술 지원 팀 에서 요청하는 경우가 많습니다.
 
 ### 정보 수집 {#information-collection}
 
-설치에 대해 가능한 한 많이 알고 있으면 성능에 변화를 일으켰을 수 있는 원인과 이러한 변화가 정당한지 추적하는 데 도움이 될 수 있습니다. 중요한 변경 사항을 쉽게 볼 수 있도록 이러한 지표를 정기적으로 수집합니다.
+설치에 대해 가능한 한 많이 알면 성능 변경의 원인과 이러한 변경이 정당한지 여부를 추적하는 데 도움이 될 수 있습니다. 중요한 변경 사항을 쉽게 볼 수 있도록 정기적으로 이러한 지표를 수집합니다.
 
 다음 정보가 유용할 수 있습니다.
 
 * [몇 명의 작성자가 시스템을 사용하고 있습니까?](#how-many-authors-are-working-with-the-system)
 * [하루 평균 페이지 활성화 수는 얼마입니까?](#what-is-the-average-number-of-page-activations-per-day)
 * [현재 이 시스템에서 몇 페이지를 유지 관리하고 있습니까?](#how-many-pages-do-you-currently-maintain-on-this-system)
-* [MSM을 사용하는 경우 월별 평균 롤아웃 수는 얼마입니까?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
+* [MSM을 사용하는 경우 월별 평균 롤아웃 수는 얼마나 됩니까?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
 * [월별 평균 라이브 카피 수는 얼마입니까?](#what-is-the-average-number-of-live-copies-per-month)
 * [AEM Assets을 사용하는 경우 Assets에서 현재 유지 관리하는 에셋은 몇 개입니까?](#ifyouusecqdamhowmanyassetsdoyoucurrentlymaintainincqdam)
 * [에셋의 평균 크기는 얼마입니까?](#what-is-the-average-size-of-the-assets)
 * [현재 몇 개의 템플릿이 사용됩니까?](#how-many-templates-are-currently-used)
 * [현재 사용되는 구성 요소는 몇 개입니까?](#how-many-components-are-currently-used)
 * [피크 타임에 작성자 시스템에 시간당 몇 개의 요청이 있습니까?](#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time)
-* [피크 타임에 게시 시스템에 시간당 몇 개의 요청이 있습니까?](#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time)
+* [피크 시간에 게시 시스템에 시간당 몇 개의 요청이 있습니까?](#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time)
 
 #### 몇 명의 작성자가 시스템을 사용하고 있습니까? {#how-many-authors-are-working-with-the-system}
 
@@ -982,9 +979,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 하루 평균 페이지 활성화 수는 얼마입니까? {#what-is-the-average-number-of-page-activations-per-day}
 
-서버 설치 이후 총 페이지 활성화 수를 보려면 저장소 쿼리를 사용하십시오. CRXDE - Tools - Query를 사용하면 됩니다.
+서버 설치 이후 총 페이지 활성화 수를 보려면 저장소 쿼리를 사용합니다. CRXDE를 통해 - 도구 - 쿼리:
 
-* **유형** `XPath`
+* **형식** `XPath`
 
 * **경로** `/`
 
@@ -992,7 +989,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 그런 다음 설치 이후 경과된 일 수를 계산하여 평균을 계산합니다.
 
-#### 현재 이 시스템에서 몇 페이지를 유지 관리하고 있습니까? {#how-many-pages-do-you-currently-maintain-on-this-system}
+#### 현재 이 시스템에서 몇 개의 페이지를 유지 관리하고 있습니까? {#how-many-pages-do-you-currently-maintain-on-this-system}
 
 현재 서버에 있는 페이지 수를 보려면 CRXDE - Tools - Query를 통해 저장소 쿼리를 사용합니다.
 
@@ -1016,15 +1013,15 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 월별 평균 라이브 카피 수는 얼마입니까? {#what-is-the-average-number-of-live-copies-per-month}
 
-설치 이후 수행된 총 라이브 카피 수를 확인하려면 CRXDE - Tools - Query를 통해 저장소 쿼리를 사용합니다.
+설치 이후 만들어진 Live Copy의 총 수를 확인하려면 저장소 쿼리를 사용하십시오. CRXDE를 통해 - 도구 - 쿼리:
 
-* **유형** `XPath`
+* **형식** `XPath`
 
 * **경로** `/`
 
 * **쿼리** `//element(*, cq:LiveSyncConfig)`
 
-설치 이후 경과된 개월 수를 다시 사용하여 평균을 계산합니다.
+설치 후 경과된 개월 수를 다시 사용하여 평균을 계산합니다.
 
 #### AEM Assets을 사용하는 경우 Assets에서 현재 유지 관리하는 에셋은 몇 개입니까? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
@@ -1051,9 +1048,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 현재 몇 개의 템플릿이 사용됩니까? {#how-many-templates-are-currently-used}
 
-현재 서버에 있는 템플릿 수를 보려면 CRXDE - Tools - Query를 통해 저장소 쿼리를 사용합니다.
+현재 서버에 있는 템플리트의 수를 보려면 저장소 쿼리를 사용하십시오. CRXDE를 통해 - 도구 - 쿼리:
 
-* **유형** `XPath`
+* **형식** `XPath`
 * **경로** `/`
 * **쿼리** `//element(*, cq:Template)`
 
@@ -1061,13 +1058,13 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 현재 서버에 있는 구성 요소의 수를 보려면 CRXDE - Tools - Query를 통해 저장소 쿼리를 사용하십시오.
 
-* **유형** `XPath`
+* **형식** `XPath`
 * **경로** `/`
 * **쿼리** `//element(*, cq:Component)`
 
-#### 피크 타임에 작성자 시스템에 시간당 몇 개의 요청이 있습니까? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
+#### 사용량이 가장 많은 시간에 작성 시스템에 시간당 몇 개의 요청이 있습니까? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
 
-피크 타임에 작성자 시스템에 있는 시간당 요청을 확인하려면 다음을 수행하십시오.
+피크 시간에 작성 시스템에 있는 시간당 요청 수를 확인하려면 다음을 수행합니다.
 
 1. 설치 이후 총 요청 수를 확인하려면 다음 명령줄을 사용합니다.
 
@@ -1113,15 +1110,15 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 ### 메모리 부족 {#out-of-memory}
 
-개발 및 테스트 중에 이러한 오류를 감지해야 하지만 특정 시나리오가 실수로 인해 발생할 수 있습니다.
+이러한 오류는 개발 및 테스트 중에 감지되어야 하지만 특정 시나리오가 누락될 수 있습니다.
 
-시스템에 메모리가 부족한 경우 성능 저하 및 하위 텍스트를 포함한 오류 메시지를 포함하여 다양한 방식으로 이 문제를 볼 수 있습니다.
+시스템의 메모리가 부족한 경우 이 문제는 성능 저하 및 하위 텍스트를 포함한 오류 메시지를 포함하여 다양한 방식으로 나타날 수 있습니다.
 
 `java.lang.OutOfMemoryError`
 
 이 경우 다음을 확인하십시오.
 
-* 다음에 사용되는 JVM 설정 [AEM 시작](/help/sites-deploying/deploy.md#getting-started)
+* AEM 시작에 [사용되는 JVM 설정](/help/sites-deploying/deploy.md#getting-started)
 * 기술 자료:
 
    * [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
@@ -1142,8 +1139,8 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 버전 제거를 구성 [했는지 여부 및 방법](/help/sites-deploying/version-purging.md)
 * 기술 자료:
 
-   * [열려 있는 파일이 너무 많음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
-   * [저널에 디스크 공간이 너무 많이 사용됨](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
+   * [열려 있는 파일 수가 너무 많음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
+   * [저널이 너무 많은 디스크 공간을 차지합니다.](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### 정기적인 성능 저하 {#regular-performance-degradation}
 
@@ -1177,7 +1174,7 @@ JVM(Java™ Virtual Machine)은 튜닝과 관련하여 개선되었습니다(특
 
 또는 JConsole:
 
-* 이러한 설정은 &quot;와이드 오픈&quot; JMX 연결용입니다.
+* 이러한 설정은 &quot;활짝 열린&quot; JMX 연결을 위한 것입니다.
 
   ```
   -Dcom.sun.management.jmxremote \
@@ -1186,10 +1183,10 @@ JVM(Java™ Virtual Machine)은 튜닝과 관련하여 개선되었습니다(특
    -Dcom.sun.management.jmxremote.ssl=false
   ```
 
-* 그런 다음 JConsole을 사용하여 JVM에 연결합니다. 다음을 참조하십시오.
+* 그런 다음 JConsole을 사용하여 JVM에 연결하십시오. 다음을 참조하십시오.
   ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
 
-사용 중인 메모리 양, 사용 중인 GC 알고리즘, 실행 소요 시간 및 이 프로세스가 애플리케이션 성능에 미치는 영향을 확인할 수 있습니다. 그것이 없으면, 동조는 단지 &quot;무작위로 뒤틀리는 꼭지&quot;일 뿐입니다.
+사용 중인 메모리 양, 사용 중인 GC 알고리즘, 실행 시간 및 이 프로세스가 애플리케이션 성능에 미치는 영향을 확인할 수 있습니다. 그것 없이는 튜닝은 &quot;무작위로 노브를 돌리는 것&quot;에 불과합니다.
 
 >[!NOTE]
 >

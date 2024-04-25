@@ -10,7 +10,8 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 0%
@@ -86,7 +87,7 @@ Storefront의 테마/스타일을 렌더링하는 CSS 및 JavaScript는 AEM에�
 
    ![ui.frontend 상거래 폴더](../assets/style-cif-component/ui-frontend-commerce-folder.png)
 
-   여러 Sass(`.scss`) 폴더 아래에 있는 파일입니다. 각 Commerce 구성 요소에 대한 Commerce 관련 스타일입니다.
+   여러 Sass(`.scss`) 폴더 아래에 있는 파일입니다. 각 Commerce 구성 요소에 대한 Commerce 고유의 스타일입니다.
 
 1. 파일 열기 `_productteaser.scss`.
 

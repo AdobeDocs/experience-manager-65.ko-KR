@@ -6,7 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 1%
@@ -110,7 +112,7 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 >
 >이 작업을 완료하려면 [그루비](https://groovy-lang.org/) 이(가) 시스템에 설치되었습니다.
 
-1. 다운로드 **hybris Commerce Suite** hybris 다운로드 사이트에서 배포
+1. 다운로드 **hybris Commerce 스위트** hybris 다운로드 사이트에서 배포
 
    >[!CAUTION]
    >

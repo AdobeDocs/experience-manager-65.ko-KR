@@ -7,9 +7,11 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -38,7 +40,7 @@ AEM Communities이 JSRP를 저장소 옵션(기본값)으로 사용하는 경우
 
 * 선택 **[!UICONTROL JCR 저장소 리소스 제공자(JSRP)]**
 
-* **[!UICONTROL 제출]**&#x200B;을 선택합니다
+* 선택 **[!UICONTROL 제출]**
 
 ![jsrp-configuration](assets/jsrp-configuration.png)
 

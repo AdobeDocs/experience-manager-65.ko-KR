@@ -1,27 +1,30 @@
 ---
-title: 커뮤니티 구성 요소에 대한 OSGi 이벤트
+title: OSGi Events for Communities 구성 요소
 description: 비동기 리스너를 트리거할 수 있는 OSGi 이벤트가 전송됩니다
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8049d797-e758-44c2-a89b-51d2b2fca8dc
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 5%
 
 ---
 
-# 커뮤니티 구성 요소에 대한 OSGi 이벤트  {#osgi-events-for-communities-components}
+# OSGi Events for Communities 구성 요소  {#osgi-events-for-communities-components}
 
 ## 개요 {#overview}
 
-구성원이 커뮤니티 기능과 상호 작용할 때 알림 또는 게임화(점수 및 배지)와 같은 비동기 리스너를 트리거할 수 있는 OSGi 이벤트가 전송됩니다.
+구성원이 Communities 기능과 상호 작용하면 비동기 리스너, 좋아요 알림 또는 게임화(점수 매기기 및 배지)를 트리거할 수 있는 OSGi 이벤트가 전송됩니다.
 
-구성 요소 [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) 인스턴스는 이벤트를 다음으로 기록합니다. `actions` 다음 기간 동안 발생 `topic`. SocialEvent에는 를 반환하는 메서드가 포함되어 있습니다. `verb` 작업과 연결되었습니다. 다음 항목이 있습니다. *-* 다음 사이의 관계 `actions` 및 `verbs`.
+구성 요소의 [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) 인스턴스 는 에 대해 `topic`발생하는 이벤트를 `actions` 기록합니다. SocialEvent에는 작업과 연결된 를 `verb` 반환하는 메서드가 포함되어 있습니다. 와 사이에는 `actions` n-1 *관계가 있습니다*`verbs`.
 
-릴리스에 제공된 Communities 구성 요소의 경우 다음 표에서는 다음을 설명합니다. `verbs` 각각에 대해 정의됨 `topic` 사용할 수 있습니다.
+릴리스에서 제공되는 Communities 구성 요소의 경우 다음 표에서는 사용 가능한 각 `topic` 구성 요소에 대해 정의된 구성 요소에 대해 설명합니다`verbs`.
 
 ## 주제 및 동사 {#topics-and-verbs}
 
@@ -30,7 +33,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **동사** | **설명** |
 |---|---|
-| POST | 구성원이 캘린더 이벤트를 만듭니다. |
+| 올리기 | 멤버 구성원이 달력 이벤트를 만듭니다. |
 | 추가 | 일정 이벤트에 대한 구성원 댓글 |
 | 업데이트 | 구성원의 일정 이벤트 또는 댓글이 편집되었습니다. |
 | 삭제 | 구성원의 일정 이벤트 또는 댓글이 삭제되었습니다. |
@@ -51,12 +54,12 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 | **동사** | **설명** |
 |---|---|
 | POST | 구성원이 폴더를 만듭니다. |
-| 첨부 | 구성원이 파일을 업로드합니다. |
-| 업데이트 | 구성원이 폴더 또는 파일을 업데이트합니다. |
-| 삭제 | 구성원이 폴더 또는 파일을 삭제합니다. |
+| 첨부 | 멤버 업로드 |
+| 업데이트 | 멤버 업데이트 폴더 또는 파일 |
+| 삭제 | 멤버 삭제 폴더 또는 파일 |
 
 [포럼 구성 요소](essentials-forum.md)
-SocialEvent `topic`= com/adobe/cq/social/forum
+SocialEvent `topic`= com/adobe/cq/social/포럼
 
 | **동사** | **설명** |
 |---|---|
@@ -70,21 +73,21 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **동사** | **설명** |
 |---|---|
-| POST | 구성원이 블로그 문서를 만듭니다. |
-| 추가 | 블로그 기사에 대한 구성원 댓글 |
-| 업데이트 | 멤버의 블로그 문서 또는 댓글이 편집되었습니다. |
-| 삭제 | 멤버의 블로그 문서나 댓글이 삭제되었습니다. |
+| 올리기 | 멤버 블로그 기사 작성 |
+| 추가 | 블로그 기사에서 멤버 댓글 |
+| 업데이트 | 멤버 블로그 기사 또는 댓글이 편집됨 |
+| 삭제 | 멤버 블로그 기사 또는 댓글이 삭제되었습니다. |
 
-[QnA 구성 요소](qna-essentials.md)
+[Q&amp;A 구성 요소](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **동사** | **설명** |
 |---|---|
-| POST | 멤버가 QnA 질문을 만듭니다. |
-| 추가 | 멤버가 QnA 답변을 만듭니다. |
-| 업데이트 | 멤버의 Q&amp;A 질문 또는 답변이 편집되었습니다. |
-| 선택 | 멤버의 답변이 선택됨 |
-| 선택 취소 | 멤버의 답변이 선택 해제되었습니다. |
+| 올리기 | 멤버 만들기 QnA 질문 |
+| 추가 | 멤버 만들기 QnA 답변 |
+| 업데이트 | 멤버 QnA 질문 또는 답변이 편집됨 |
+| 선택 | 멤버 답변이 선택되었습니다. |
+| 선택을 취소 | 멤버의 답변이 선택 해제되었습니다. |
 | 삭제 | 멤버의 Q&amp;A 질문 또는 답변이 삭제되었습니다. |
 
 [리뷰 구성 요소](reviews-basics.md)
@@ -118,23 +121,23 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 | **동사** | **설명** |
 |---|---|
 | 거부 | 구성원의 콘텐츠가 거부되었습니다. |
-| 부적절한 항목으로 표시 | 멤버의 컨텐츠에 플래그가 지정되었습니다. |
+| 부적절한 항목으로 표시 | 멤버 컨텐츠에 플래그가 지정됨 |
 | 부적절한 항목으로 플래그 해제 | 구성원의 콘텐츠에 플래그가 지정되지 않음 |
 | ACCEPT | 구성원의 콘텐츠가 중재자에 의해 승인되었습니다. |
-| 닫기 | 구성원이 댓글을 닫아 편집 및 답글 작성 |
-| 열기 | 구성원이 주석을 다시 엽니다. |
+| 닫기 | 멤버 닫기, 편집 및 답글에 댓글 닫기 |
+| 열기 | 댓글을 다시 여는 멤버 |
 
 ## 사용자 지정 구성 요소에 대한 이벤트 {#events-for-custom-components}
 
-사용자 지정 구성 요소의 경우 [SocialEvent 추상 클래스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) 구성 요소의 이벤트를 다음으로 기록하려면 d를 확장해야 합니다. `actions`다음 기간 동안 발생 `topic`.
+사용자 지정 구성 요소의 경우 [SocialEvent 추상 클래스를](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) 확장하여 에 대해 발생하는 구성 요소의 이벤트를 `actions`기록해야 합니다 `topic`.
 
-사용자 지정 이벤트는 메서드를 재정의합니다. `getVerb()` 그래서 적절한 `verb`다음에 대해 반환됩니다 `action`. 다음 `verb` 작업에 대해 반환되는 항목은 일반적으로 사용되는 항목(예: `POST`) 또는 구성 요소용으로 특수 제작된 것(예: `ADD RATING`). 다음 항목이 있습니다. *-* 다음 사이의 관계 `actions`및 `verbs`.
+사용자 지정 이벤트 가 메서드를 `getVerb()` 재정의하여 `verb`각 `action`. 작업에 대해 반환되는 것은 `verb` 일반적으로 사용되는 것(예 `POST`: )이거나 구성 요소에 특화된 것(예 `ADD RATING`: )일 수 있습니다. 와 사이에는 `actions`n-1 *관계가 있습니다*`verbs`.
 
 >[!NOTE]
 >
->사용자 지정 확장이 제품의 기존 구현보다 낮은 순위로 등록되었는지 확인합니다.
+>사용자 지정 확장이 제품의 기존 구현보다 낮은 등급으로 등록되었는지 확인합니다.
 
-### 사용자 지정 구성 요소 이벤트에 대한 의사 코드 {#pseudo-code-for-custom-component-event}
+### 사용자 지정 구성 요소 이벤트에 대한 의사 Code {#pseudo-code-for-custom-component-event}
 
 [org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
@@ -235,15 +238,15 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 }
 ```
 
-## 활동 스트림 데이터를 필터링할 샘플 EventListener {#sample-eventlistener-to-filter-activity-stream-data}
+## 활동 스트림 데이터 필터링에 대한 샘플 EventListener {#sample-eventlistener-to-filter-activity-stream-data}
 
-활동 스트림에 나타나는 것을 수정하기 위한 목적으로 이벤트를 들을 수 있다.
+활동 스트림에 표시되는 내용을 수정하기 위해 이벤트를 수신할 수 있습니다.
 
-다음 의사 코드 샘플은 활동 스트림에서 Comments 구성 요소에 대한 DELETE 이벤트를 제거합니다.
+다음 의사 코드 샘플은 활동 스트림에서 댓글 구성 요소에 대한 DELETE 이벤트를 제거합니다.
 
-### EventListener용 의사 코드 {#pseudo-code-for-eventlistener}
+### EventListener에 대한 의사 코드 {#pseudo-code-for-eventlistener}
 
-필요 [최신 기능 팩](deploy-communities.md#latestfeaturepack).
+최신 기능 팩](deploy-communities.md#latestfeaturepack)이 필요합니다[.
 
 ```java
 package my.company.comments;

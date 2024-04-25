@@ -1,17 +1,19 @@
 ---
-title: Commerce integration framework을 사용한 AEM 및 서드파티 상거래 통합
+title: Commerce integration framework을 사용한 AEM 및 타사 Commerce 통합
 description: 기업 비즈니스의 매장 환경을 향상하기 위해 추가 타사 상거래 솔루션이 필요할 수 있습니다. 이러한 통합 시나리오에서는 Commerce integration framework(CIF)를 사용하여 I/O Runtime을 사용하여 서드파티 상거래 솔루션을 Adobe Experience Manager에 연결할 수 있습니다.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
 
 ---
 
-# Commerce integration framework을 사용한 AEM 및 서드파티 상거래 통합 {#aem-third-party}
+# Commerce integration framework을 사용한 AEM 및 타사 Commerce 통합 {#aem-third-party}
 
 비 Adobe Commerce 솔루션 통합은 CIF의 일반적인 시나리오입니다. 다른 API 및 스키마를 사용하는 서드파티 솔루션은 통합 계층을 통해 연결됩니다.
 
@@ -57,7 +59,7 @@ Adobe은 다음을 권장합니다. [Adobe I/O Runtime](https://developer.adobe.
 
 커넥터는 프로젝트를 잘 시작할 수 있도록 도와줍니다. 상거래 솔루션별 연결 및 기본 API 매핑이 함께 제공됩니다. 이러한 커넥터는 타사에서 빌드하며 Adobe에서 유지 관리하지 않습니다. 자세한 내용은 해당 파트너에게 문의하십시오.
 
-* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), Diconium 제작
+* [SAP COMMERCE](https://github.com/diconium/commerce-cif-graphql-integration-hybris), Diconium 제작
 * [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), Diconium 제작
 
 >[!TIP]

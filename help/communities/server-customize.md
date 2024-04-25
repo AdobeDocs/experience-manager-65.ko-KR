@@ -1,29 +1,32 @@
 ---
-title: 서버측 사용자 지정
-description: Adobe Experience Manager Communities에서 서버측 사용자 지정을 사용하는 방법에 대해 알아봅니다.
+title: 서버 측 사용자 지정
+description: Adobe Experience Manager Communities에서 사용자 지정을 서버측 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 190735bc-1909-4b92-ba4f-a221c0cd5be7
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
 
-# 서버측 사용자 지정 {#server-side-customization}
+# 서버 측 사용자 지정 {#server-side-customization}
 
 | **[⇐ 기능 기본 사항](essentials.md)** | **[클라이언트측 사용자 지정 ⇒](client-customize.md)** |
 |---|---|
-|   | **[SCF Handlebars 도우미 ⇒](handlebars-helpers.md)** |
+|   | **[SCF 핸들바 도우미 ⇒](handlebars-helpers.md)** |
 
 ## Java™ API {#java-apis}
 
 >[!NOTE]
 >
->Communities API의 패키지 위치는 한 주요 릴리스에서 다음 릴리스로 업그레이드할 때 변경될 수 있습니다.
+>Communities API의 패키지 위치는 하나의 주요 릴리스에서 다음 릴리스로 업그레이드할 때 변경될 수 있습니다.
 
 ### SocialComponent 인터페이스 {#socialcomponent-interface}
 
@@ -47,9 +50,9 @@ SocialComponentFactory는 DI 사례를 사용하여 팩토리에서 SocialCompon
 
 SocialComponentFactory는 OSGi 서비스이며 생성자를 통해 SocialComponent에 전달할 수 있는 다른 OSGi 서비스에 액세스할 수 있습니다.
 
-모든 SocialComponentFactory 클래스는 인터페이스를 구현해야 합니다. `com.adobe.cq.social.scf.SocialComponentFactory`
+모든 SocialComponentFactory 클래스는 인터페이스를 구현 해야합니다 `com.adobe.cq.social.scf.SocialComponentFactory`
 
-SocialComponentFactory.getPriority() 메서드를 구현하면 getResourceType()에서 반환된 것처럼 지정된 resourceType에 사용할 팩토리에 대해 가장 높은 값이 반환됩니다.
+SocialComponentFactory.getPriority() 메소드의 구현 getResourceType()에 의해 반환된 대로 주어진 resourceType에 사용할 팩터리의 가장 높은 값을 반환해야 합니다.
 
 ### SocialComponentFactoryManager 인터페이스 {#socialcomponentfactorymanager-interface}
 
@@ -63,9 +66,9 @@ OSGi 서비스에 대한 핸들은 `com.adobe.cq.social.scf.SocialComponentFacto
 
 #### PostOperation 클래스 {#postoperation-class}
 
-HTTP API POST 끝점은 를 구현하여 정의된 PostOperation 클래스입니다. `SlingPostOperation` 인터페이스(패키지) `org.apache.sling.servlets.post`).
+HTTP API POST 끝점은 인터페이스(패키지`org.apache.sling.servlets.post`)를 `SlingPostOperation` 구현하여 정의된 PostOperation 클래스입니다.
 
-다음 `PostOperation` 끝점 구현 집합 `sling.post.operation` 을 입력합니다. 해당 값으로 설정된 an:operation 매개 변수를 사용하는 모든 POST 요청은 이 구현 클래스로 위임됩니다.
+끝점 구현 집합은 `PostOperation` 작업이 응답하는 값으로 설정됩니다 `sling.post.operation` . 해당 값으로 설정된 an:operation 매개 변수를 사용하는 모든 POST 요청은 이 구현 클래스로 위임됩니다.
 
 다음 `PostOperation` 호출 `SocialOperation` 작업에 필요한 작업을 수행합니다.
 
@@ -93,7 +96,7 @@ HTTP API POST 끝점은 를 구현하여 정의된 PostOperation 클래스입니
 
 #### OperationException 클래스 {#operationexception-class}
 
-An `OperationExcepton` 요청이 유효하지 않거나 다른 오류가 발생하는 경우 작업을 수행할 때 throw됩니다. 예를 들어, 내부 오류, 잘못된 매개 변수 값 또는 부적절한 권한이 있습니다. An `OperationException` 는 HTTP 상태 코드와 오류 메시지로 구성되며, 클라이언트에 대한 응답으로 반환됩니다. `PostOperatoin`.
+`OperationExcepton` 요청 이 유효하지 않거나 다른 오류가 발생하는 경우 작업을 수행할 때 AN이 throw됩니다. 예를 들어, 내부 오류, 잘못된 매개 변수 값 또는 부적절한 권한이 있습니다. An `OperationException` 는 HTTP 상태 코드와 오류 메시지로 구성되며, 클라이언트에 대한 응답으로 반환됩니다. `PostOperatoin`.
 
 #### OperationService 클래스 {#operationservice-class}
 
@@ -112,9 +115,9 @@ An `OperationExcepton` 요청이 유효하지 않거나 다른 오류가 발생�
 
 다음 `OperationExtension` 클래스는 비즈니스 요구 사항에 맞게 작업을 사용자 지정할 수 있도록 작업에 삽입할 수 있는 사용자 지정 코드 조각입니다. 구성 요소의 소비자는 구성 요소에 기능을 동적으로 점증적으로 추가할 수 있습니다. 확장/후크 패턴을 통해 개발자는 확장 자체에만 집중할 수 있으며 전체 작업 및 구성 요소를 복사하고 오버라이드할 필요가 없습니다.
 
-## 샘플 코드 {#sample-code}
+## 샘플 Code {#sample-code}
 
-샘플 코드는에서 사용할 수 있습니다. [Adobe Experience Cloud Github](https://github.com/Adobe-Marketing-Cloud) 리포지토리. 다음 중 하나가 접두사로 추가된 프로젝트 검색 `aem-communities` 또는 `aem-scf`.
+샘플 코드는 Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) 저장소에서 사용할 수 [있습니다. 접두사 또는 `aem-scf`가 붙은 `aem-communities` 프로젝트의 경우 Search.
 
 ## 모범 사례 {#best-practices}
 
@@ -122,6 +125,6 @@ An `OperationExcepton` 요청이 유효하지 않거나 다른 오류가 발생�
 
 참조: [UGC용 SRP(저장소 리소스 제공자)](srp.md) 사용자 생성 콘텐츠에 액세스하는 방법에 대해 알아봅니다.
 
-| **[⇐ 기능 기본 사항](essentials.md)** | **[클라이언트측 사용자 지정 ⇒](client-customize.md)** |
+| **[⇐ 기능 필수 사항](essentials.md)** | **[클라이언트측 사용자 지정 ⇒](client-customize.md)** |
 |---|---|
-|   | **[SCF Handlebars 도우미 ⇒](handlebars-helpers.md)** |
+|   | **[SCF 핸들바 도우미 ⇒](handlebars-helpers.md)** |

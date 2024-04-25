@@ -7,7 +7,10 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 1%
@@ -18,17 +21,17 @@ ht-degree: 1%
 
 ## 소개 {#introduction}
 
-다음 `Community Activity List` 구성 요소를 사용하여 구성원의 게시물 및 보기, 콘텐츠의 게시물 및 보기에 대한 트렌드 정보를 추가할 수 있습니다.
+이 `Community Activity List` 구성 요소를 사용하면 게시물과 구성원별 보기, 게시물과 컨텐츠 보기에 대한 트렌딩 정보를 추가할 수 있습니다.
 
-이 문서에서는 다음 사항을 설명합니다.
+이 문서에서는 다음 사항에 대해 설명합니다.
 
-* 추가 `Community Activity List` 구성 요소를 a로 [커뮤니티 사이트](/help/communities/overview.md#community-sites).
+* `Community Activity List` 커뮤니티 사이트에](/help/communities/overview.md#community-sites) 구성 요소 [추가
 
-* 에 대한 구성 설정 `Community Activity List` 구성 요소.
+* 구성 요소에 대한 구성 설정입니다 `Community Activity List` .
 
 ### 요구 사항 {#requirement}
 
-다음에 대한 데이터 `Community Activity List` Adobe Analytics에 라이선스가 부여되고 커뮤니티 사이트에 대해 구성된 경우에만 사용할 수 있습니다.
+에 `Community Activity List` 대한 데이터는 커뮤니티 사이트에 대해 라이센스가 부여되고 구성된 경우에만 사용할 Adobe Analytics 있습니다.
 
 다음을 참조하십시오 [커뮤니티 기능에 대한 Analytics 구성](/help/communities/analytics.md).
 
@@ -54,23 +57,23 @@ ht-degree: 1%
 
 * **유형**
 
-  커뮤니티 구성원에 대한 데이터를 표시할지 또는 UGC(사용자 생성 컨텐츠)를 표시할지를 지정합니다.
+  커뮤니티 구성원 또는 사용자 생성 콘텐츠(UGC)에 대한 데이터를 표시할지 여부를 지정합니다.
 
-  다음 중에서 선택:
+  다음에서 선택:
 
    * `Members`
    * `Content`
 
-  기본값은 입니다 `Members`.
+  `Members`기본값은 입니다.
 
-* **제목 표시**
+* **표시 제목**
 
-  데이터 위에 표시할 설명적인 제목입니다. 예: `Trending Content`.
-기본값은 제목이 없습니다.
+  (예: 데이터 위에 표시할 설명이 포함된 제목) `Trending Content`입니다.
+기본값은 제목 없음입니다.
 
-* **개수 표시**
+* **표시 개수**
 
-  나열할 항목의 수입니다.
+  나열할 항목 수입니다.
 기본값은 10입니다.
 
 * **활동 유형**
@@ -107,14 +110,14 @@ ht-degree: 1%
   선택을 취소(해제)하면 최상위 수준의 게시물만 카운트됩니다. 예를 들어 컨텍스트가 루트 페이지(기본값)이면 `Activity Type` / `Posts` 루트 페이지에 콘텐츠를 게시할 수 없으므로 활동을 표시하지 않습니다. 선택하면 모든 하위 페이지의 카운트가 포함됩니다.
 기본값은 선택되어 있습니다.
 
-### 4개의 구성 요소가 있는 예제 페이지 {#example-page-with-components}
+### 네 개의 구성 요소가 있는 예제 페이지 {#example-page-with-components}
 
-**상위 방문자 수** config: 유형 = 멤버, 활동 유형 = 보기
+**상위 방문자** 구성: 유형 = 구성원, 활동 유형 = 보기
 
-**상위 기여자** config: Type = Members, Activity type = Posts
+**상위 기여자** 구성: 유형 = 구성원, 활동 유형 = 게시물
 
-**상위 콘텐츠** 구성: 유형 = 컨텐츠, 활동 유형 = 보기,
+**상위 컨텐츠** 구성: 유형 = 컨텐츠, 활동 유형 = 보기,
 
-**트렌드 콘텐츠** 구성: 유형 = 컨텐츠, 활동 유형 = 게시물
+**트렌드 컨텐츠** 구성: 유형 = 컨텐츠, 활동 유형 = 게시물
 
 ![구성 요소](assets/activity-list-components.png)

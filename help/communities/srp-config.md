@@ -1,5 +1,5 @@
 ---
-title: 저장소 구성
+title: 스토리지 구성
 description: 사용자 생성 콘텐츠라고도 하는 커뮤니티 콘텐츠에 대해 선택한 저장소를 식별하는 수단으로서 저장소 구성 콘솔에 대해 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -7,14 +7,16 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 4%
 
 ---
 
-# 저장소 구성 {#storage-configuration}
+# 스토리지 구성 {#storage-configuration}
 
 스토리지 구성은 UGC(사용자 생성 컨텐츠)라고도 하는 커뮤니티 컨텐츠에 대해 선택된 스토리지를 식별하는 수단입니다.
 

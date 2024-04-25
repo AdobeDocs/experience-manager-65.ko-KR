@@ -7,7 +7,9 @@ content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2907'
 ht-degree: 2%
@@ -114,7 +116,7 @@ Adobe Experience Manager(AEM) 일반 솔루션은 외부 전자 상거래 엔진
 
      `/etc/commerce/products/<*store name*>/`
 
-   * **상거래 공급자**
+   * **Commerce 공급자**
 
      에 대한 가져오기 [상거래 공급자](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); 기본적으로 Geometrixx.
 
@@ -633,7 +635,7 @@ OSGI 이벤트의 웹 콘솔에서 이러한 이벤트를 볼 수 있습니다( 
 
 ### 장바구니에 바우처 추가 {#adding-vouchers-to-a-cart}
 
-사용자가 장바구니에 바우처를 추가할 수 있도록 하려면 기본 제공 기능을 사용합니다 **바우처** 구성 요소(상거래 범주). 장바구니가 표시되는 페이지와 동일한 페이지에 추가합니다(하지만 필수 페이지는 아님). 바우처 구성 요소는 사용자가 바우처 코드를 입력할 수 있는 형식일 뿐이며, 실제로 적용된 바우처 목록과 할인을 보여 주는 장바구니 구성 요소입니다.
+사용자가 장바구니에 바우처를 추가할 수 있도록 하려면 기본 제공 기능을 사용합니다 **바우처** 구성 요소(Commerce 범주). 장바구니가 표시되는 페이지와 동일한 페이지에 추가합니다(하지만 필수 페이지는 아님). 바우처 구성 요소는 사용자가 바우처 코드를 입력할 수 있는 형식일 뿐이며, 실제로 적용된 바우처 목록과 할인을 보여 주는 장바구니 구성 요소입니다.
 
 데모 사이트(Geometrixx Outdoors - 영어)의 장바구니 페이지에 있는 실제 장바구니 아래의 바우처 양식을 볼 수 있습니다.
 

@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 8%
+source-wordcount: '289'
+ht-degree: 1%
 
 ---
 
@@ -48,7 +51,7 @@ ht-degree: 8%
       * 레이블 입력: `comments`
       * 제목 입력: `Comments`
       * 설명 입력: `List of comments without showing avatars`
-      * Super Type: `social/commons/components/comments`
+      * 상위 유형: `social/commons/components/comments`
       * 그룹 입력: `Communities`
       * 클릭 **[!UICONTROL 다음]** 종료 시간 **[!UICONTROL 확인]**
 1. 선택 `comments` 노드
@@ -58,16 +61,16 @@ ht-degree: 8%
       * 레이블 입력: `comment`
       * 제목 입력: `Comment`
       * 설명 입력: `A comment instance without avatars`
-      * Super Type: `social/commons/components/comments/comment`
+      * 상위 유형: `social/commons/components/comments/comment`
       * 그룹 입력: `.hidden`
       * 클릭 **[!UICONTROL 다음]** 종료 시간 **[!UICONTROL 확인]**
    * 선택 **[!UICONTROL 모두 저장]**
 1. 기본값 삭제 `comments.jsp`
    * 노드 선택 `/apps/social/commons/components/hbs/comments/comments.jsp`
-   * **[!UICONTROL 삭제]**&#x200B;를 선택합니다
+   * 선택 **[!UICONTROL 삭제]**
 1. 기본 comment.jsp 삭제
    * 노드 선택 `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
-   * **[!UICONTROL 삭제]**&#x200B;를 선택합니다
+   * 선택 **[!UICONTROL 삭제]**
    * 선택 **[!UICONTROL 모두 저장]**
 
 >[!NOTE]

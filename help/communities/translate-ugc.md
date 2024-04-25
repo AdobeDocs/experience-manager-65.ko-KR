@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 1%
+source-wordcount: '1111'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +104,7 @@ AEM Communities에는 다음이 포함됩니다. [체험판 라이선스](../../
 
   (선택 사항) 구성 이름을 입력합니다. 기본값은 제목 을 기반으로 하는 노드 이름입니다.
 
-* **[!UICONTROL 만들기]**&#x200B;를 선택합니다
+* 선택 **[!UICONTROL 만들기]**
 
 #### 번역 구성 대화 상자 {#translation-config-dialog}
 

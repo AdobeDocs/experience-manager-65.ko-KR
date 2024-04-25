@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 1%
@@ -31,7 +33,7 @@ UGC에 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 다�
 
 * 데이터 센터 URL(ASRP 끝점 주소)
 * 소비자 키
-* 비밀 키
+* 암호 키
 * 보고서 세트 ID
 
 소비자 및 비밀 키는 회사의 모든 보고서 세트에서 공유됩니다. 테넌트당 보고서 세트가 한 개 있습니다.

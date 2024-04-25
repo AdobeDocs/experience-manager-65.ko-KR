@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 4%
+source-wordcount: '2658'
+ht-degree: 1%
 
 ---
 
@@ -109,12 +111,12 @@ Adobe Experience Cloud 사용 [보고서 세트 관리자](https://experiencelea
    * 비디오 보고 콘솔
 
       * 사용 `Video Core`
-      * 저장을 선택합니다
+      * 저장 선택
 
    * 비디오 코어 측정 콘솔
 
       * 선택 `Use Solution Variables`
-      * 저장을 선택합니다
+      * 저장 선택
 
 를 사용하는 경우 **새 보고서 세트**, 새 보고서 세트에는 4개의 evar와 6개의 이벤트 변수만 있을 수 있지만, 커뮤니티에는 11개의 evar와 7개의 이벤트 변수가 필요합니다.
 
@@ -186,7 +188,7 @@ Video Heartbeat Analytics에 라이센스가 있으면 `Marketing Cloud Org Id` 
 
   선택 `Adobe Analytics Configuration`
 
-* **만들기**&#x200B;를 선택합니다
+* 선택 **만들기**
 
    * 구성 페이지를 시작하고 엽니다. `Analytics Settings` 대화 상자
 
@@ -302,7 +304,7 @@ Sidekick은 필요하지 않으며, 보고서 세트 설정에 대한 액세스�
 
 1. 선택 `Run Mode`.
 
-1. 선택 **게시**.
+1. **게시**&#x200B;를 선택합니다.
 
 ![analytics-framework2](assets/analytics-framework2.png)
 
@@ -407,20 +409,20 @@ evar1 - evar11 및 event1 - event7 내의 변수를 매핑한 기존 보고서 �
   </tr>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>eVar1</strong></td>
-   <td><strong>eVar2</strong></td>
-   <td><strong>eVar3</strong></td>
-   <td><strong>eVar4</strong></td>
-   <td><strong>eVar5</strong></td>
-   <td><strong>eVar6</strong></td>
-   <td><strong>eVar7</strong></td>
-   <td><strong>eVar8</strong></td>
-   <td><strong>eVar9</strong></td>
-   <td><strong>eVar10</strong></td>
+   <td><strong>eVar</strong></td>
+   <td><strong>eVar</strong></td>
+   <td><strong>eVar</strong></td>
+   <td><strong>eVar</strong></td>
+   <td><strong>EVAR 5</strong></td>
+   <td><strong>EVAR 6</strong></td>
+   <td><strong>EVAR 7</strong></td>
+   <td><strong>eVar</strong></td>
+   <td><strong>EVAR9</strong></td>
+   <td><strong>eVar</strong></td>
   </tr>
   <tr>
    <td><strong>event1<br /> 리소스 재생</strong></td>
-   <td><em>(a)</em></td>
+   <td><em>가.</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
@@ -433,79 +435,79 @@ evar1 - evar11 및 event1 - event7 내의 변수를 매핑한 기존 보고서 �
   </tr>
   <tr>
    <td><strong>event2<br /> SCFView</strong></td>
-   <td><em>(a)</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>가.</em></td>
+   <td><em>나.</em></td>
+   <td><em>다.</em></td>
+   <td><em>라.</em></td>
+   <td><em>마.</em></td>
    <td><em>바.</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>사.</em></td>
+   <td><em>아.</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
   </tr>
   <tr>
    <td><strong>event3<br /> SCFCreate(게시물)</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>나.</em></td>
+   <td><em>다.</em></td>
+   <td><em>라.</em></td>
+   <td><em>마.</em></td>
    <td><em>바.</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>사.</em></td>
+   <td><em>아.</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
   </tr>
   <tr>
    <td><strong>event4<br /> SCFFollow</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>나.</em></td>
+   <td><em>다.</em></td>
+   <td><em>라.</em></td>
+   <td><em>마.</em></td>
    <td><em>바.</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>사.</em></td>
+   <td><em>아.</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
   </tr>
   <tr>
    <td><strong>event5<br /> SCFVoteUp</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>나.</em></td>
+   <td><em>다.</em></td>
+   <td><em>라.</em></td>
+   <td><em>마.</em></td>
    <td><em>바.</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>사.</em></td>
+   <td><em>아.</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
   </tr>
   <tr>
    <td><strong>event6<br /> SCFVoteDown</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>나.</em></td>
+   <td><em>다.</em></td>
+   <td><em>라.</em></td>
+   <td><em>마.</em></td>
    <td><em>바.</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>사.</em></td>
+   <td><em>아.</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
   </tr>
   <tr>
    <td><strong>event7<br /> SCFRate</strong></td>
    <td><em>-</em></td>
-   <td><em>(b)</em></td>
-   <td><em>(c)</em></td>
-   <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
+   <td><em>나.</em></td>
+   <td><em>다.</em></td>
+   <td><em>라.</em></td>
+   <td><em>마.</em></td>
    <td><em>바.</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>사.</em></td>
+   <td><em>아.</em></td>
    <td><em>(i)</em></td>
    <td><em>차.</em></td>
   </tr>

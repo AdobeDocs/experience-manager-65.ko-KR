@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 2%
+source-wordcount: '1556'
+ht-degree: 0%
 
 ---
 
@@ -132,7 +135,7 @@ Adobe Analytics에 라이센스가 부여되고 Analytics Cloud 서비스 및 �
 
 다음을 참조하십시오 [커뮤니티 기능에 대한 Analytics 구성](/help/communities/analytics.md).
 
-![분석](assets/analytics.png)
+![analytics](assets/analytics.png)
 
 #### 번역 {#translation}
 
@@ -149,7 +152,7 @@ Adobe Analytics에 라이센스가 부여되고 Analytics Cloud 서비스 및 �
 
 ### 4단계: 커뮤니티 사이트 만들기 {#step-create-communities-site}
 
-**만들기**&#x200B;를 선택합니다.
+선택 **만들기.**
 
 ![create-site](assets/create-site2.png)
 
@@ -179,7 +182,7 @@ Adobe Analytics에 라이센스가 부여되고 Analytics Cloud 서비스 및 �
 
   속성 아이콘을 선택하면 제목이나 테마 변경 등의 속성을 수정할 수 있는 커뮤니티 사이트가 열립니다.
 
-* **게시 사이트**
+* **사이트 게시**
 
   world 아이콘을 선택하면 커뮤니티 사이트가 게시됩니다(예: 게시 서버가 로컬 컴퓨터에서 실행 중인 경우 기본적으로 localhost:4503으로).
 

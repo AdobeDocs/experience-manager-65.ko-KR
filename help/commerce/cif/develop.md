@@ -8,7 +8,8 @@ kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 2%
@@ -17,14 +18,14 @@ ht-degree: 2%
 
 # AEM Commerce 개발 {#develop}
 
-AEM용 CIF(Commerce integration framework)를 기반으로 AEM Commerce 프로젝트를 개발하는 것은 다른 AEM 프로젝트와 동일한 규칙 및 모범 사례를 따릅니다. 먼저 다음 사항을 검토하십시오.
+AEM용 Commerce integration framework(CIF)를 기반으로 AEM Commerce 프로젝트를 개발하는 것은 다른 AEM 프로젝트와 동일한 규칙과 모범 사례를 따릅니다. 먼저 다음 사항을 검토하십시오.
 
 - [AEM 6.5 개발 사용 안내서](/help/sites-developing/getting-started.md)
 - [AEM 핵심 개념](/help/sites-developing/the-basics.md)
 - [AEM 개발 - 지침 및 우수 사례](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법](/help/sites-developing/ht-projects-maven.md)
 
-## AEM Commerce를 위한 로컬 개발 {#local}
+## AEM Commerce을 위한 로컬 개발 {#local}
 
 CIF 프로젝트에서 작업하려면 로컬 개발 환경을 사용하는 것이 좋습니다.
 
@@ -149,7 +150,7 @@ Venia Reference Store를 시작하려면 다음을 복제하십시오. [Git 저�
 >
 >Venia 참조 스토어 프로젝트에는 AEM as a Cloud Service과 AEM 6.5용 빌드 프로필이 두 개 포함되어 있습니다. 다음 확인: [프로젝트 readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) 어떻게 사용되는지 알아보십시오. AEM 6.5의 경우 `classic` 프로필.
 
-### 상거래 시스템에 AEM 연결
+### Commerce 시스템에 AEM 연결
 
 프로젝트를 상거래 시스템에 연결하려면 상거래 시스템의 GraphQL 끝점을 사용하여 AEM을 구성해야 합니다.
 
@@ -157,7 +158,7 @@ Venia Reference Store를 시작하려면 다음을 복제하십시오. [Git 저�
 
 값 바꾸기 `url` 위치: `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` 프로젝트에서 사용하는 상거래 시스템의 GraphQL 엔드포인트
 
-AEM Commerce 추가 기능 및 CIF 핵심 구성 요소는 AEM 서버를 통해 직접 브라우저를 통해 commerce GraphQL 엔드포인트에 연결합니다. 클라이언트측 CIF 핵심 구성 요소 및 CIF 추가 기능 작성 도구 기본적으로 다음으로 연결 `/api/graphql`. 필요한 경우 CIF Cloud Service 구성을 통해 조정할 수 있습니다(아래 참조).
+AEM Commerce 추가 기능 및 CIF 핵심 구성 요소는 AEM 서버를 통해, 그리고 브라우저를 통해 commerce GraphQL 엔드포인트에 직접 연결합니다. 클라이언트측 CIF 핵심 구성 요소 및 CIF 추가 기능 작성 도구 기본적으로 다음으로 연결 `/api/graphql`. 필요한 경우 CIF Cloud Service 구성을 통해 조정할 수 있습니다(아래 참조).
 
 CIF 추가 기능은에서 GraphQL 프록시 서블릿을 제공합니다. `/api/graphql`. 로컬 AEM Dispatcher를 사용하지 않을 경우에는 GraphQL 프록시 서블릿도 구성하는 것이 좋습니다.
 

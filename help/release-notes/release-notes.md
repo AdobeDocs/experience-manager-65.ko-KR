@@ -3,7 +3,10 @@ title: 의 릴리스 정보 [!DNL Adobe Experience Manager] 6.5
 description: 에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 확인하십시오. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '3735'
 ht-degree: 4%
@@ -159,7 +162,7 @@ ht-degree: 4%
 * 사용자가 iOS 장치의 첨부 구성 요소에서 &quot;사진 찍기&quot;를 사용하여 이미지를 클릭하면 모든 이미지가 동일한 이름으로 폴더에 추가됩니다. (FORMS-12224)
 * 사용자가 라디오 버튼 그룹의 기존 옵션을 업데이트할 때 잘못된 번역 값이 게시됩니다. (FORMS-12575)
 * 사용자가 Android™ 장치의 적응형 양식에 문자를 추가하면 Android™ 장치에서 포커스가 맞춰질 때 텍스트 필드에 정의된 최대 문자 수보다 많은 문자를 입력할 수 있습니다. 단, 사용자가 HTML5 입력 유형을 선택하면 작동합니다. (FORMS-12748)
-* 일치하는 레이블 Arial® labelledby 및 Arial® 레이블로 인해 화면 판독기에서 이 두 레이블을 구별할 수 없습니다. 이 문제를 해결하려면 양식 필드에 대해 &quot;aria-labelledby&quot;라는 레이블이 &quot;aria-describedby&quot;로 대체됩니다. (FORMS-12436)
+* 일치하는 레이블 Arial® labelledby 및 Arial® 레이블로 인해 화면 판독기에서 이 두 레이블을 구별할 수 없습니다. 문제를 해결하기 위해 양식 필드의 “aria-labelledby” 레이블이 “aria-describedby”로 대체됩니다. (FORMS-12436)
 * 작성자가 &quot;적응형 Forms - 임베드(v2)&quot; 구성 요소를 사용하여 사이트 페이지에 적응형 양식을 임베드하고 임베드된 양식에 CAPTCHA 구성 요소가 포함된 경우(CAPTCHA 서비스 -> reCAPTCHA, 설정 -> reCAPTCHA-v2), 사용자가 작성자 인스턴스에서 &quot;게시됨으로 보기&quot;를 사용하여 사이트 페이지를 보려고 할 때 사이트 페이지가 렌더링되지 않습니다. 다음 오류가 (FORMS-11859)로 표시됩니다.
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 

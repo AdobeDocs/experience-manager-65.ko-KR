@@ -5,9 +5,12 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '313'
 ht-degree: 2%
 
 ---
@@ -34,7 +37,7 @@ Content Services는 컨텐츠를 에셋, 패키지된 HTML(HTML/CSS/JS) 또는 �
 
 >[!CAUTION]
 >
->**전제 조건:**
+>**사전 요구 사항:**
 >
 >Content Services를 시작하기 전에 Content Services 플래그를 활성화해야 합니다. 앱에서 모델을 생성하고 관리하려면 구성 브라우저에서 데이터 모델을 활성화합니다.
 >

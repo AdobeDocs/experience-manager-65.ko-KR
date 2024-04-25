@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '593'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 
@@ -152,7 +155,7 @@ CRXDE Lite 사용:
 * 이미지
 * 표
 * 텍스트
-* 제목 (Foundation)
+* 제목(Foundation)
 
 >[!NOTE]
 >
@@ -173,9 +176,9 @@ CRXDE Lite 사용:
 * 고급 탭에서
 
    * 리디렉션 항목의 경우 **[!UICONTROL 웹 사이트]** > **[!UICONTROL SCF 샌드박스 사이트]** > **[!UICONTROL SCF 샌드박스]**
-   * **[!UICONTROL 확인]**&#x200B;을 클릭합니다
+   * 클릭 **[!UICONTROL 확인]**
 
-* **[!UICONTROL 확인]**&#x200B;을 클릭합니다
+* 클릭 **[!UICONTROL 확인]**
 
 사이트가 게시된 후 게시 인스턴스에서 루트 페이지를 탐색하면 영어 페이지로 리디렉션됩니다.
 

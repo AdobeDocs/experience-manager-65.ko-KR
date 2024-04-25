@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
 exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '761'
 ht-degree: 1%
 
 ---
@@ -37,7 +40,7 @@ AEM Preflight 앱은 게시하기 전에 앱과 콘텐츠를 미리 보는 테�
 
 >[!NOTE]
 >
->위의 다이어그램에서 AEM Mobile On-demand Services에 대한 일반적인 배포 시나리오에는 AEM 게시 인스턴스가 필요하지 않습니다.
+>위의 다이어그램에서 AEM Publish 인스턴스는 AEM Mobile On-demand Services에 대한 일반적인 배포 시나리오에 필요하지 않습니다.
 
 ## 새 모바일 앱 시작 {#starting-a-new-mobile-app}
 
@@ -72,7 +75,7 @@ AEM 관리자는 AEM Mobile On-demand Services을 사용하여 앱을 만드는 
 
 ## AEM 개발자 {#aem-developer}
 
-An **AEM 개발자** *AEM 작성자 *가 아름답고 매력적인 모바일 경험을 만들 수 있도록 맞춤형 웹 템플릿 및 구성 요소를 확장하고 만듭니다. 이러한 템플릿과 구성 요소는 모바일 앱 환경에 최적화될 뿐만 아니라, 옴니채널 서비스 엔드포인트에 대해 디바이스와 AEM 서버(임의 원격 서버) 모두에 통신합니다. AEM 기본 제공 콘텐츠 편집기는 *AEM 작성자* Adobe Experience Cloud의 나머지 부분과의 통합을 포함하여 앱 내에서 풍부하고 관련 있는 경험을 만들 수 있습니다.
+An **AEM 개발자** *AEM 작성자 *가 아름답고 매력적인 모바일 경험을 만들 수 있도록 맞춤형 웹 템플릿과 구성 요소를 확장하고 만듭니다. 이러한 템플릿과 구성 요소는 모바일 앱 환경에 최적화될 뿐만 아니라, 옴니채널 서비스 엔드포인트에 대해 디바이스와 AEM 서버(임의 원격 서버) 모두에 통신합니다. AEM 기본 제공 콘텐츠 편집기는 *AEM 작성자* Adobe Experience Cloud의 나머지 부분과의 통합을 포함하여 앱 내에서 풍부하고 관련 있는 경험을 만들 수 있습니다.
 
 AEM 개발자는 AEM Mobile On-demand Services을 사용하여 앱을 만드는 동안 다음 작업을 담당합니다.
 

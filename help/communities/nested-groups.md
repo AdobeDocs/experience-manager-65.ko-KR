@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '599'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -51,7 +54,7 @@ AEM 작성자 인스턴스의 전역 탐색에서:
    * **[!UICONTROL 추가 사용 가능한 커뮤니티 그룹 언어]**: 드롭다운 메뉴를 사용하여 사용 가능한 커뮤니티 그룹 언어를 선택합니다. 이 메뉴에는 상위 커뮤니티 사이트가 만들어지는 모든 언어가 표시됩니다. 사용자는 이러한 언어 중에서 선택하여 이 단일 단계에서 여러 로케일에 그룹을 만들 수 있습니다. 동일한 그룹이 각 커뮤니티 사이트의 그룹 콘솔에서 지정된 여러 언어로 생성됩니다.
    * **[!UICONTROL 커뮤니티 그룹 이름]**: 예술
    * **[!UICONTROL 템플릿]**: 선택 드롭다운 `Reference Group`
-   * **[!UICONTROL 다음]**&#x200B;을 선택합니다
+   * 선택 **[!UICONTROL 다음]**
 
 ![중첩된 커뮤니티 그룹](assets/parent-to-nestedgroup.png)
 
@@ -64,7 +67,7 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 
 * **[!UICONTROL 설정]**
 
-   * **[!UICONTROL 관리]**
+   * **[!UICONTROL 중재]**
 
       * 비워 둡니다(상위 사이트에서 상속).
 
@@ -75,7 +78,7 @@ AEM 작성자 인스턴스의 전역 탐색에서:
       * **[!UICONTROL 썸네일]**
          * `optional.*`
 
-      * **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+      * **[!UICONTROL 다음 선택]**.
 
 * **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
@@ -111,7 +114,7 @@ AEM 작성자 인스턴스의 전역 탐색에서:
    * 템플릿: `Reference Group`
    * 멤버십: 선택 `Required Membership`(구성원이 참여할 수 있는 열린 그룹)입니다.
 
-1. **[!UICONTROL 역사]**
+1. **[!UICONTROL 기록]**
 
    * 제목: `Art History`
    * 이름: `history`

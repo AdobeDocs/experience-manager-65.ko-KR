@@ -1,9 +1,11 @@
 ---
 title: AEM Content and Commerce 릴리스 노트 2019
-description: 2019년 Adobe Experience Manager Content and Commerce 릴리스 노트.
+description: 2019년 Adobe Experience Manager 컨텐츠 및 Commerce 릴리스 노트.
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 7%

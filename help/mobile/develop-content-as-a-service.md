@@ -5,9 +5,12 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '976'
 ht-degree: 1%
 
 ---
@@ -28,7 +31,7 @@ ht-degree: 1%
 
 Content Services가 제공하는 자료에는 세 가지 주요 유형이 있습니다.
 
-1. **자산**
+1. **에셋**
 1. **패키지된 HTML 컨텐츠(HTML/CSS/JS)**
 1. **채널 독립적인 콘텐츠**
 

@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 3%
+source-wordcount: '1290'
+ht-degree: 0%
 
 ---
 
@@ -71,13 +74,13 @@ ht-degree: 3%
 
 아래 **[!UICONTROL 리뷰]** 탭에서 검토 처리 방법을 지정합니다.
 
-![리뷰 수](assets/configure-review3.png)
+![리뷰](assets/configure-review3.png)
 
 * **[!UICONTROL 답변 허용]**
 
   선택하면 리뷰에 답글을 허용합니다. 기본값은 선택 취소되어 있습니다.
 
-* **[!UICONTROL 닫힘]**
+* **[!UICONTROL 종료됨]**
 
   선택하면 검토는 새 검토 및 답글로 닫힙니다. 기본값은 선택 취소되어 있습니다.
 
@@ -109,7 +112,7 @@ ht-degree: 3%
 
 ![user-moderation](assets/configure-review4.png)
 
-* **[!UICONTROL 사전 관리]**
+* **[!UICONTROL 사전 중재]**
 
   선택하면 게시 사이트에 표시되기 전에 검토를 승인해야 합니다. 기본값은 선택 취소되어 있습니다.
 
@@ -121,7 +124,7 @@ ht-degree: 3%
 
   선택하면 중재자의 리뷰 거부 허용. 기본값은 선택 취소되어 있습니다.
 
-* **[!UICONTROL 리뷰 닫기/다시 열기]**
+* **[!UICONTROL 리뷰 닫기 / 다시 열기]**
 
   선택하면 중재자가 리뷰를 닫았다가 다시 열 수 있습니다. 기본값은 선택 취소되어 있습니다.
 
@@ -137,7 +140,7 @@ ht-degree: 3%
 
   선택하면 멤버가 검토 플래그 지정에 대한 자신의 이유를 부적절한 항목으로 입력할 수 있습니다. 기본값은 선택 취소되어 있습니다.
 
-* **[!UICONTROL 관리 임계값]**
+* **[!UICONTROL 중재 임계값]**
 
   중재자에게 통지하기 전에 구성원이 리뷰에 플래그를 지정해야 하는 횟수를 입력합니다. 기본값은 1회입니다.
 

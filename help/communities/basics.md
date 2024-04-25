@@ -1,23 +1,26 @@
 ---
 title: 커뮤니티 구성 요소 기본 사항
-description: 편집 모드에서 AEM 사이트에 커뮤니티 기능을 추가하고 구성 요소를 구성합니다.
+description: 편집 모드에서 AEM 사이트에 Communities 기능 추가 및 구성 요소 구성
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# 커뮤니티 구성 요소 기본 사항 {#communities-components-basics}
+# Communities 구성 요소 기본 사항 {#communities-components-basics}
 
 ## 개요 {#overview}
 
-설명서의 작성 섹션에서는 작성자 편집 모드에서 AEM 사이트에 커뮤니티 기능을 추가하고 구성 요소 구성을 설명하는 방법에 대해 설명합니다.
+설명서의 작성 섹션에서는 작성자 편집 모드에서 AEM 사이트에 Communities 기능을 추가하는 방법과 구성 요소 구성을 설명하는 방법을 설명합니다.
 
 구성 요소는 AEM 인스턴스와 대화형 인스턴스를 사용하여 탐색할 수 있습니다 [커뮤니티 구성 요소 안내서](components-guide.md).
 
@@ -35,11 +38,11 @@ ht-degree: 2%
 
 ### 디자인 모드 시작 {#entering-design-mode}
 
-다음과 같은 경우 **커뮤니티** 구성 요소 브라우저(sidekick)에서 구성 요소를 찾을 수 없습니다. `Design Mode` 다른 Communities 구성 요소를 추가합니다. [필수 클라이언트측 라이브러리](#required-clientlibs) (clientlibs)를 추가해야 할 수도 있습니다.
+**구성 요소 브라우저(사이드 킥)에서 Communities** 구성 요소를 찾을 수 없는 경우 다른 Communities 구성 요소를 추가하려면 입력 `Design Mode` 해야 합니다. [필수 클라이언트측 라이브러리](#required-clientlibs) (clientlibs)를 추가해야 할 수도 있습니다.
 
-자세한 내용은 [디자인 모드에서 구성 요소 구성](../../help/sites-authoring/default-components-designmode.md).
+자세한 내용은 디자인 모드에서](../../help/sites-authoring/default-components-designmode.md) 구성 요소 구성을 참조하십시오[.
 
-다음은 몇 가지 커뮤니티 구성 요소를 선택하고 구성 요소 브라우저에서 보는 이미지입니다.
+다음은 몇 가지 Communities 구성 요소를 선택하고 구성 요소 브라우저 브라우저에서 보는 이미지입니다.
 
 ![구성 요소 디자인](assets/component-design.png)
 
@@ -57,7 +60,7 @@ ht-degree: 2%
 
 ![clientlibs1](assets/clientlibs1.png)
 
-### ... 클라이언트 라이브러리 사용 {#and-with-client-libraries}
+### ... 그리고 클라이언트 라이브러리 사용 {#and-with-client-libraries}
 
 ![clientlibs2](assets/clientlibs2.png)
 
@@ -77,8 +80,8 @@ ht-degree: 2%
 
 관리 정보의 경우:
 
-* 태그 네임스페이스 만들기(분류): [태그 관리](../../help/sites-administering/tags.md)
-* 커뮤니티 사이트 구성: 을 참조하십시오. [태깅](sites-console.md#tagging)
+* 태그 네임스페이스(분류) 작성: [태그 관리](../../help/sites-administering/tags.md)
+* 커뮤니티 사이트 구성: TAGGING 참조 [](sites-console.md#tagging)
 * [사용자 생성 컨텐츠 태깅](../../help/sites-authoring/tags.md)
 
 개발자 정보:

@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 2%
+source-wordcount: '405'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +70,7 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
 
 * 선택 **`Create`** 아이콘
 
-* 단계 `1 - Site Template`
+* `1 - Site Template`단계
 
    * `Title`: 간단한 커뮤니티 사이트
    * `Description`: 실험을 위한 단일 페이지로 구성된 커뮤니티 사이트
@@ -82,7 +85,7 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
      ![create-community-site-template](assets/create-community-site-template.png)
 
 * 선택 `Next`
-* 단계 `2 - Design`
+* `2 - Design`단계
 
    * 원하는 디자인 선택
 

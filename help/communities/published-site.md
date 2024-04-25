@@ -1,35 +1,38 @@
 ---
-title: 게시된 사이트 경험
-description: 사이트를 만들 때 게시 서버에 표시되는 URL을 찾는 방법에 대해 알아봅니다.
+title: 게시된 사이트 체험
+description: 사이트를 만들 때 게시 서버에 표시되는 URL을 탐색하는 방법을 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 1%
+source-wordcount: '1195'
+ht-degree: 0%
 
 ---
 
-# 게시된 사이트 경험 {#experience-the-published-site}
+# 게시된 사이트 체험 {#experience-the-published-site}
 
 ## 게시할 때 새 사이트 찾아보기 {#browse-to-new-site-on-publish}
 
 새로 만든 커뮤니티 사이트가 게시되었으니 사이트를 만들 때 표시되는 URL이 아닌 게시 서버에서 예를 들면 다음과 같습니다.
 
 * 작성자 URL = https://localhost:4502/content/sites/engage/en.html
-* 게시 URL = https://localhost:4503/content/sites/engage/en.html
+* Publish URL = https://localhost:4503/content/sites/engage/en.html
 
-작성자 및 게시에서 로그인한 구성원에 대한 혼동을 최소화하기 위해 각 인스턴스마다 다른 브라우저를 사용하는 것이 좋습니다.
+작성자 및 게시 시 로그인한 구성원에 대한 혼동을 최소화하려면 각 인스턴스에 대해 서로 다른 브라우저를 사용하는 것이 좋습니다.
 
-게시된 사이트에 처음 도달하면 일반적으로 사이트 방문자는 이미 로그인되어 있지 않고 익명이 됩니다.
+게시된 사이트에 처음 도착하는 경우 사이트 방문자 대개는 로그인되어 있지 않고 익명입니다.
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
-![authorpublished](assets/authorpublished.png)
+![저자게시됨](assets/authorpublished.png)
 
 ## 익명 사이트 방문자 {#anonymous-site-visitor}
 
@@ -68,24 +71,24 @@ jcr 콘텐츠 및 json 을 통해 익명 사용자가 커뮤니티 사이트의 
 
    ![사이트 인증](assets/site-authentication.png)
 
-1. 로그인 페이지의 경로를 추가합니다. 예를 들어, **/content/......./시작**.
-1. 페이지를 게시합니다.
+1. 로그인 페이지의 경로를 추가합니다. 예: **/컨텐츠/......./GetStarted**&#x200B;입니다.
+1. 페이지 게시(Publish)를 클릭합니다.
 
-## 신뢰할 수 있는 커뮤니티 구성원 {#trusted-community-member}
+## 신뢰할 수 있는 커뮤니티 멤버 {#trusted-community-member}
 
-이 경험은 다음을 가정합니다 [애런 맥도널드](/help/communities/tutorials.md#demo-users) 이(가) 다음의 역할을 할당했습니다. [커뮤니티 관리자 및 중재자](/help/communities/create-site.md#roles). 그렇지 않은 경우 작성자 환경으로 돌아가서 [사이트 설정 수정](/help/communities/sites-console.md#modifying-site-properties) 커뮤니티 관리자와 중재자로 Aaron McDonald를 선택합니다.
+이 경험에서는 Aaron McDonald](/help/communities/tutorials.md#demo-users)가 커뮤니티 관리자 및 중재자](/help/communities/create-site.md#roles) 역할을 [할당받았다고 가정합니다[. 그렇지 않은 경우 작성 환경 [으로 돌아가 사이트 설정을](/help/communities/sites-console.md#modifying-site-properties) 수정하고 Aaron McDonald를 커뮤니티 관리자 및 중재자로 선택합니다.
 
-오른쪽 상단 모서리에서 을(를) 선택합니다. `Log in`을 누르고 사용자 이름(aaron.mcdonald@mailinator.com) 및 암호(암호)로 로그인합니다. twitter 또는 Facebook 자격 증명으로 로그인할 수 있는 기능에 주목합니다.
+오른쪽 상단에서 을 선택하고 `Log in`사용자 이름(aaron.mcdonald@mailinator.com)과 암호(암호)으로 로그인합니다. twitter 또는 Facebook 자격 증명으로 로그인할 수 있는 기능에 주목합니다.
 
 ![로그인](assets/login.png)
 
 등록된 커뮤니티 구성원으로 로그인하면 커뮤니티 사이트를 클릭하고 탐색하기 위해 다음 메뉴 항목에 주목합니다.
 
 * **프로필** 옵션을 사용하면 프로필을 보고 편집할 수 있습니다.
-* [메시지](/help/communities/configure-messaging.md) 옵션은 다음을 수행할 수 있는 직접 메시징 섹션으로 이동합니다.
+* [메시지](/help/communities/configure-messaging.md) 옵션은 다음을 수행할 수 있는 다이렉트 메시지 섹션으로 안내합니다.
 
-   1. 수신(받은 편지함), 전송(보낸 항목) 및 삭제(휴지통)한 DM을 봅니다.
-   1. 개인 및 그룹에 보낼 수 있도록 새 DM을 작성합니다.
+   1. 수신(받은 편지함), 보낸 메시지(보낸 편지함) 및 삭제한 쪽지(휴지통)를 보기.
+   1. 개인 및 그룹에 보낼 수 있도록 새 쪽지를 작성합니다.
 
 * [알림](/help/communities/notifications.md) 옵션을 사용하면 관심 이벤트를 보고 알림 설정을 편집할 수 있는 알림 섹션으로 이동합니다.
 * [관리](/help/communities/published-site.md#moderationlink) 중재 권한이 있는 경우 AEM Communities 중재 페이지로 이동합니다.
@@ -94,14 +97,14 @@ jcr 콘텐츠 및 json 을 통해 익명 사용자가 커뮤니티 사이트의 
 
 선택한 참조 사이트 템플릿에 달력 기능, 활동 스트림 기능, 포럼 기능 등이 먼저 포함되었기 때문에 달력 페이지가 홈 페이지임을 알 수 있습니다. 이 구조는 [사이트 템플릿](/help/communities/sites.md#edit-site-template) 콘솔 또는 작성 환경에서 사이트 속성을 수정하는 경우:
 
-![sitemplate](assets/sitetemplate.png)
+![사이트템플릿](assets/sitetemplate.png)
 
 >[!NOTE]
 >
->Communities 구성 요소 및 기능에 대한 자세한 내용은 다음을 참조하십시오.
+>Communities 구성 요소 및 기능에 대한 자세한 내용은 다음을 방문 참조하십시오.
 >
->* [커뮤니티 구성 요소](/help/communities/author-communities.md) (작성자용)
->* [구성 요소, 기능 및 기능 핵심 사항](/help/communities/essentials.md) (개발자용)
+>* [Communities 구성 요소](/help/communities/author-communities.md) (작성자용)
+>* [구성 요소, 기능 및 기능 필수 사항](/help/communities/essentials.md) (개발자용)
 
 ### 포럼 링크 {#forum-link}
 
@@ -115,11 +118,11 @@ jcr 콘텐츠 및 json 을 통해 익명 사용자가 커뮤니티 사이트의 
 
 ### 그룹 링크 {#groups-link}
 
-Aaron은 그룹 관리자이므로 그룹 링크를 선택하면 Aaron이 그룹 템플릿, 이미지, 그룹 공개 여부, 멤버 초대 등을 선택하여 커뮤니티 그룹을 만들 수 있습니다.
+Aaron은 그룹 관리자이므로 그룹 링크 선택하면 Aaron이 그룹 템플릿, 이미지, 그룹 공개 또는 비밀 여부를 선택하고 구성원을 초대하여 커뮤니티 그룹 만들 수 있습니다.
 
-그룹이 게시 환경에서 만들어지는 예입니다.
+게시 환경에서 그룹 만들기의 예입니다.
 
-작성 환경에서 그룹을 만들고 작성 환경의 커뮤니티 사이트 내에서 관리할 수도 있습니다([커뮤니티 그룹 콘솔](/help/communities/groups.md)). 의 경험 [작성자에 대한 그룹 만들기](/help/communities/nested-groups.md) 은 이 자습서의 다음 부분입니다.
+그룹은 작성 환경에서 만들고 작성 환경([커뮤니티 그룹 콘솔](/help/communities/groups.md))의 커뮤니티 사이트 내에서 관리할 수도 있습니다. 작성자](/help/communities/nested-groups.md)에 대한 그룹을 만드는 경험 [다음은 이 튜토리얼 내용입니다.
 
 ![grouplink](assets/grouplink.png)
 
@@ -130,8 +133,8 @@ Aaron은 그룹 관리자이므로 그룹 링크를 선택하면 Aaron이 그룹
 
    * 그룹 이름 : `Sports`
    * 설명 : `A parent group for various sporting groups`.
-   * 그룹 URL 이름 : `sports`
-   * 선택 `Open Group` (모든 커뮤니티 구성원이 가입하여 참여할 수 있도록 허용)
+   * 그룹 URL 이름: `sports`
+   * 선택 `Open Group` (모든 커뮤니티 구성원이 참가할 수 있도록 허용)
 
 1. **템플릿 탭**
 
@@ -159,7 +162,7 @@ Aaron은 그룹 관리자이므로 그룹 링크를 선택하면 Aaron이 그룹
    * 설정을 다음으로 변경 `Member Only Group` (제한된 멤버십).
    * 템플릿 탭에서 다음을 선택합니다. `Conversational Group`.
 
-**알림**:
+**공지**:
 
 * 두 그룹이 모두 표시되기 전에 페이지를 새로 고쳐야 할 수 있습니다.
 * 이 템플릿은 다음을 수행합니다. *아님* group 함수를 포함하므로 그룹을 더 이상 중첩할 수 없습니다.
@@ -173,14 +176,14 @@ Aaron은 그룹 관리자이므로 그룹 링크를 선택하면 Aaron이 그룹
 
 ![grouplink2](assets/grouplink2.png)
 
-작성자 - 관리 권한이 있는 경우 [커뮤니티 그룹 콘솔](/help/communities/members.md) 및 Weston McCall을 `Community Engage Gymnastics <uid> Members` 그룹입니다.
+작성자 - 관리자 권한이 있는 경우 Communities 그룹 콘솔](/help/communities/members.md)로 [이동하여 Weston McCall을 `Community Engage Gymnastics <uid> Members` 그룹 그룹에 추가합니다.
 
-게시를 계속하는 동안 Aaron McDonald로 로그아웃하고 스포츠 그룹의 그룹을 익명 사이트 방문자로 봅니다.
+계속 게시 상태에서 Aaron McDonald로 로그아웃하고 익명의 사이트 방문자 로 Sports Group의 그룹을 봅니다.
 
-* 홈 페이지에서
-* 선택 `Groups` 링크
-* 선택 `Sports` 링크
-* 스포츠 선택&#39; `Groups` 링크
+* 홈 페이지
+* 링크 선택 `Groups`
+* 링크 선택 `Sports`
+* 스포츠의 `Groups` 링크 선택
 
 Baseball 그룹만 표시됩니다.
 
@@ -198,15 +201,15 @@ Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인하고 동일한 �
 
 ### 중재 링크 {#moderationlink}
 
-커뮤니티 회원이 중재 권한을 가지고 있으면 중재 링크가 표시됩니다. 링크를 선택하면 게시된 커뮤니티 컨텐츠가 표시되고 다음과 같이 표시됩니다. [중재됨](/help/communities/moderate-ugc.md) 과 유사한 방식으로 [관리 콘솔](/help/communities/moderation.md) 작성 환경에서 사용할 수 있습니다.
+커뮤니티 회원이 중재 권한을 가지고 있으면 중재 링크가 표시됩니다. 링크 선택하면 게시된 커뮤니티 컨텐츠 표시되며 작성 환경의 중재 콘솔](/help/communities/moderation.md)과 [유사한 방식으로 중재](/help/communities/moderate-ugc.md)할 수 [있습니다.
 
-브라우저의 뒤로 단추를 사용하여 게시된 사이트로 돌아갑니다. 대부분의 콘솔은 게시 환경의 전역 탐색에서 액세스할 수 없습니다.
+브라우저의 [뒤로] 버튼 을 사용하여 게시된 사이트로 돌아갑니다. 대부분의 콘솔은 게시 환경의 전역 탐색에서 액세스할 수 없습니다.
 
-![moderationlink](assets/moderationlink.png)
+![모더레이션(moderation)link](assets/moderationlink.png)
 
-## 자가 등록 {#self-registration}
+## 자체 등록 {#self-registration}
 
-로그아웃한 후 사용자 등록을 만들 수 있습니다.
+로깅 아웃 후 사용자 등록 만들 수 있습니다.
 
 * 선택 `Log In`
 * 선택 `Sign up for a new account`
@@ -215,14 +218,14 @@ Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인하고 동일한 �
 
 ![등록](assets/signup.png)
 
-기본적으로 이메일 주소는 로그인 ID입니다. 선택하지 않으면 방문자가 자신의 로그인 ID(사용자 이름)를 입력할 수 있습니다. 사용자 이름은 게시 환경에서 고유해야 합니다.
+기본적으로 이메일 주소는 로그인 ID입니다. 선택을 취소하면 방문자가 자신의 로그인 ID(사용자 이름)를 입력할 수 있습니다. 사용자 이름은 게시 환경에서 고유해야 합니다.
 
-사용자 이름, 이메일 및 암호를 지정한 후 `Sign Up` 는 사용자를 만들고 사용자가 서명할 수 있도록 합니다.
+사용자의 이름, 이메일 및 암호를 지정한 후 선택하면 `Sign Up` 사용자가 만들어지고 서명할 수 있습니다.
 
-로그인 후 표시되는 첫 번째 페이지는 다음과 같습니다. `Profile` 페이지 - 개인화할 수 있습니다.
+로그인한 후 표시되는 첫 번째 페이지는 `Profile` 개인화할 수 있는 페이지입니다.
 
 ![프로필](assets/profile.png)
 
-회원이 로그인 ID를 잊어버린 경우 이메일 주소를 사용하여 을 복구할 수 있습니다.
+회원이 로그인 ID를 잊어버린 경우 이메일 주소를 사용하여 복구가 가능합니다.
 
 ![forgotusername](assets/forgotusername.png)

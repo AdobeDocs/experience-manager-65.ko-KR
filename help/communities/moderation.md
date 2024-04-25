@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 4%
+source-wordcount: '2028'
+ht-degree: 2%
 
 ---
 
@@ -156,17 +158,17 @@ AEM Communities에서 일괄 처리 [커뮤니티 콘텐츠 중재](/help/commun
 
 * **댓글**
 * **포럼 주제**
-* **포럼 답글**
-* **QnA 질문**
+* **포럼 회신**
+* **Q&amp;A 질문**
 * **QnA 답변**
-* **블로그 항목**
+* **블로그 문서**
 * **블로그 댓글**
 * **달력 이벤트**
-* **달력 댓글**
+* **달력 주석**
 * **파일 라이브러리 폴더**
 * **파일 라이브러리 문서**
 * **아이디어**
-* **관념화 댓글**
+* **관념화 주석**
 
 ![content-types](assets/content-types.png)
 
@@ -252,7 +254,7 @@ AEM Communities에서 일괄 처리 [커뮤니티 콘텐츠 중재](/help/commun
 
    * 새 범주 추가 `cq.social.hbs.moderation.v2.`
 
-1. 다음으로 이동:`/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
+1. 다음으로 이동 `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
    * 새 구성 요소로 설정 `sling:resourceType = social/moderation/v2/filters.`
 

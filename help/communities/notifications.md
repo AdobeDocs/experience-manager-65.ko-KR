@@ -1,6 +1,6 @@
 ---
-title: 커뮤니티 알림
-description: AEM Communities에는 로그인한 커뮤니티 구성원의 관심 이벤트를 표시하는 알림이 있습니다.
+title: Communities 알림
+description: AEM Communities에는 로그인한 커뮤니티 구성원에게 관심도 이벤트를 표시하는 알림이 있습니다
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,34 +8,36 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
-# 커뮤니티 알림 {#communities-notifications}
+# Communities 알림 {#communities-notifications}
 
 ## 개요 {#overview}
 
 AEM Communities은 로그인한 커뮤니티 구성원의 관심 이벤트를 표시하는 알림 섹션을 제공합니다.
 
-알림은 과 유사합니다. [활동](/help/communities/essentials-activities.md) 및 [구독](/help/communities/subscriptions.md) 그 결과는 다음과 같습니다.
+알림은 활동 및 구독과 [유사하며,](/help/communities/subscriptions.md) 그 결과는 다음과 같습니다.[](/help/communities/essentials-activities.md)
 
-* 콘텐츠를 게시하는 멤버입니다.
-* 멤버가 다른 멤버를 따르도록 선택합니다.
-* 특정 주제, 문서 및 기타 콘텐츠 스레드를 따르도록 선택하는 멤버.
-* 구성원이 사용자 생성 콘텐츠의 다른 커뮤니티 구성원에 태그 지정(@mention)합니다.
+* 컨텐츠 게시 회원입니다.
+* 다른 회원을 팔로우하기로 선택한 회원입니다.
+* 특정 주제, 기사 및 기타 컨텐츠 스레드를 팔로우하기로 선택한 회원.
+* 구성원이 사용자 생성 컨텐츠에서 다른 커뮤니티 구성원을 태그 지정(@mention)합니다.
 
 알림을 활동 및 구독과 구분하는 것은 다음과 같습니다.
 
 * 알림 섹션에 대한 링크는 항상 커뮤니티 사이트의 헤더에 있습니다.
 
-   * 활동에는 다음 항목이 필요합니다. [활동 스트림 기능](/help/communities/functions.md#activity-stream-function) 커뮤니티 사이트의 구조에 포함될 수 있습니다.
-   * 구독에는 다음이 필요합니다. [이메일 구성](/help/communities/email.md).
+   * 활동을 사용하려면 [활동 스트림 기능이](/help/communities/functions.md#activity-stream-function) 커뮤니티 사이트의 구조에 포함되어야 합니다.
+   * 구독하려면 [전자 메일을](/help/communities/email.md) 구성해야 합니다.
 
-* 알림은 확장 가능하고 플러그할 수 있는 채널을 통해 구현됩니다.
+* 알림의 구현 확장 가능하고 플러그 가능 채널을 통해 이루어집니다.
 
    * 활동은 웹에서만 사용할 수 있습니다.
    * 구독은 이메일을 통해서만 사용할 수 있습니다.
@@ -51,31 +53,31 @@ AEM Communities은 로그인한 커뮤니티 구성원의 관심 이벤트를 �
 
 **이메일 구성**
 
-알림을 위한 이메일 채널이 작동하려면 이메일을 구성해야 합니다.
+알림에 대한 이메일 채널이 작동하려면 이메일을 구성해야 합니다.
 
-이메일 설정에 대한 지침은 [이메일 구성](/help/communities/analytics.md).
+이메일 설정에 대한 지침은 이메일](/help/communities/analytics.md) 구성을 참조하십시오[.
 
 **팔로우 활성화**
 
-다음을 활성화하도록 구성 요소를 구성해야 합니다. 다음을 허용하는 기능은 [블로그](/help/communities/blog-feature.md), [포럼](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [달력](/help/communities/calendar.md), [파일 라이브러리](/help/communities/file-library.md), 및 [댓글](/help/communities/comments.md).
+다음을 활성화하도록 구성 요소를 구성해야 합니다. 다음을 [허용하는 기능은 블로그](/help/communities/blog-feature.md), 포럼](/help/communities/forum.md), [[QnA](/help/communities/working-with-qna.md), [일정](/help/communities/calendar.md), [파일 라이브러리](/help/communities/file-library.md) 및 [댓글](/help/communities/comments.md) 입니다.
 
 **참고**:
 
-* 커뮤니티 내에서 사용되는 구성 요소 [사이트 템플릿](/help/communities/sites.md) 및 [그룹 템플릿](/help/communities/tools-groups.md) 은(는) 이미 팔로우하도록 구성되어 있습니다.
+* 커뮤니티 [사이트 서식 파일](/help/communities/sites.md) 및 [그룹 서식 파일](/help/communities/tools-groups.md) 내에서 사용되는 구성 요소는 이미 팔로우하도록 구성되어 있을 수 있습니다.
 
-* 다른 구성원이 따를 수 있도록 구성원 프로필이 이미 구성되어 있습니다.
+* 멤버 프로필은 이미 다른 밈이 팔로우 할 수 있도록 구성되어 있습니다.
 
-## 다음 항목의 알림 {#notifications-from-following}
+## 다음의 알림 {#notifications-from-following}
 
-![알림](assets/notifications.png)
+![알림을](assets/notifications.png)
 
-다음 **[!UICONTROL 팔로우]** 단추는 항목을 활동, 구독 및/또는 알림으로 따르는 수단을 제공합니다. 매번 **[!UICONTROL 팔로우]** 버튼을 선택한 경우 선택 항목을 켜거나 끌 수 있습니다. 다음 `Email Subscriptions` 선택한 항목은 구성된 경우에만 표시됩니다.
+다음 **[!UICONTROL 팔로우]** 단추는 항목을 활동, 구독 및/또는 알림으로 따르는 수단을 제공합니다. [팔로우&#x200B;]**] 버튼 을 선택할 때마다**[!UICONTROL &#x200B;선택 항목을 켜거나 끌 수 있습니다. 다음 `Email Subscriptions` 선택한 항목은 구성된 경우에만 표시됩니다.
 
-다음 방법을 선택하면 단추 텍스트가 다음으로 변경됩니다. **[!UICONTROL 팔로잉]**. 편의를 위해 다음을 선택할 수 있습니다. `Unfollow All` 모든 메서드를 해제합니다.
+다음 방법을 선택하면 버튼 텍스트가 다음으로&#x200B;]**변경됩니다**[!UICONTROL . 편의상 모든 방법을 끄도록 선택할 `Unfollow All` 수 있습니다.
 
-다음 **[!UICONTROL 팔로우]** 버튼이 표시됩니다.
+**[!UICONTROL 팔로우]** 버튼 이 나타납니다.
 
-* 다른 구성원의 프로필을 볼 때
+* 다른 회원의 프로필을 볼 때.
 * 포럼, QnA 및 블로그 등 주요 기능 페이지에서:
 
    * 해당 일반 기능에 대한 모든 활동을 따릅니다.
@@ -86,13 +88,13 @@ AEM Communities은 로그인한 커뮤니티 구성원의 관심 이벤트를 �
 
 ## 알림 설정 관리 {#managing-notification-settings}
 
-알림 페이지에서 알림 설정 링크를 선택하면 각 구성원이 알림을 받는 방법을 관리할 수 있습니다.
+알림 페이지에서 알림 설정 링크 선택하면 각 구성원이 알림 수신 방법을 관리 수 있습니다.
 
 웹 채널은 항상 활성화되어 있습니다.
 
-![notifications14](assets/notifications1.png)
+![알림14](assets/notifications1.png)
 
-적절한 것에 의존하는 이메일 채널 [이메일 구성](/help/communities/email.md)는 웹 채널에 대해 와 동일한 설정을 제공합니다.
+이메일](/help/communities/email.md)의 적절한 [구성에 의존하는 이메일 채널은 웹 채널과 동일한 설정을 제공합니다.
 
 이메일 채널은 기본적으로 꺼져 있습니다.
 
@@ -106,7 +108,7 @@ AEM Communities은 로그인한 커뮤니티 구성원의 관심 이벤트를 �
 
 ### 웹 알림 {#web-notifications}
 
-A [마법사가 커뮤니티 사이트를 만들었습니다.](/help/communities/sites-console.md) 이제 에 대한 링크가 포함됩니다. `Notifications` 배너 위에 있는 사이트의 헤더 막대에 있는 기능입니다. 메시지와 달리 알림은 모든 커뮤니티 사이트에 대해 생성되지만 메시지는 사이트 생성 프로세스 중에 활성화되어야 합니다.
+마법사가 만든 커뮤니티 사이트](/help/communities/sites-console.md)에는 [이제 배너 위의 사이트 헤더 표시줄에 기능에 대한 `Notifications` 링크가 포함됩니다. 메시지와 달리 알림은 모든 커뮤니티 사이트에 대해 만들어지지만 메시지는 사이트 생성 프로세스 중에 사용하도록 설정해야 합니다.
 
 게시된 사이트를 방문할 때 `Notifications` 링크에 구성원에 대한 모든 알림이 표시됩니다.
 
@@ -120,11 +122,11 @@ A [마법사가 커뮤니티 사이트를 만들었습니다.](/help/communities
 
 ## 이메일 알림 사용자 지정 {#customize-email-notifications}
 
-조직에서는 다음을 통해 이메일 알림을 사용자 지정할 수 있습니다. [오버레이](/help/communities/client-customize.md#overlays) 의 템플릿 **/libs/settings/community/templates/email/html**.
+조직은 /libs/settings/커뮤니티/templates/email/html **에서**&#x200B;템플릿을 오버레이](/help/communities/client-customize.md#overlays)하여 이메일 알림을 [사용자 지정할 수 있습니다.
 
-예를 들어, (커뮤니티 구성 요소에 대한) 언급 이메일 알림을 수정하려면 **if** 동사 조건 **언급** 를 활성화한 구성 요소의 템플릿에서 **@mentions** 지원.
+예를 들어, 멘션 이메일 알림(커뮤니티 구성 요소의 경우)을 수정하려면 @mentions **지원을 활성화**&#x200B;한 구성 요소의 템플릿에서 동사 **멘션**&#x200B;에 대한 if **조건을 추가합니다**.
 
-블로그 댓글에 추가할 이메일 알림 @mention을 수정하려면 의 기본 템플릿을 배치합니다. **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en**
+블로그 댓글에서 @mention에 대한 이메일 알림 템플릿 수정하려면 /libs/settings/커뮤니티/templates/email/html/social.journal.components.hbs.comment/en에 즉시 템플릿하십시오. ****
 
 ```java
 {{#equals this.verb "mention"}}\

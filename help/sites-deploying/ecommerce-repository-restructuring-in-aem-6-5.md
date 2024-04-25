@@ -1,20 +1,21 @@
 ---
-title: AEM 6.5의 전자 상거래 저장소 재구성
-description: 전자 상거래용 AEM 6.5에서 새 저장소 구조로 마이그레이션하는 데 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
+title: AEM 6.5의 E-Commerce 저장소 재구성
+description: AEM 6.5 for E-Commerce에서 새 저장소 구조로 마이그레이션하는 데 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: 78b7c497-c474-4308-bfab-8f424b5f7268
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 1%
 
 ---
 
-# AEM 6.5의 전자 상거래 저장소 재구성{#e-commerce-repository-restructuring-in-aem}
+# AEM 6.5의 E-Commerce 저장소 재구성{#e-commerce-repository-restructuring-in-aem}
 
 상위에 설명된 대로 [AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md) AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM E-Commerce 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
 
@@ -34,7 +35,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>다음을 사용할 수 있습니다. <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">지연 마이그레이션</a> 전자 상거래 데이터를 마이그레이션하는 작업입니다.</p> <p>다음 단계를 수행합니다.</p>
+   <td><p>다음을 사용할 수 있습니다. <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">지연 마이그레이션</a> e-Commerce 데이터를 마이그레이션하는 작업입니다.</p> <p>다음 단계를 수행합니다.</p>
     <ul>
      <li>새 위치를 가리키도록 이전 위치에 대한 참조를 조정합니다.</li>
      <li>콘텐츠를 이전 위치에서 새 위치로 이동</li>

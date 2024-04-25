@@ -2,7 +2,10 @@
 title: 에 대한 일반 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: "[!DNL Adobe Experience Manager] 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 요약한 6.5 참고 사항"
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4484'
 ht-degree: 23%
@@ -81,7 +84,7 @@ UI를 보다 생산적이고 사용하기 쉽게 만들기 위해 다양한 개�
 
 * 6.4에 도입된 새로운 워크플로우 모델 편집기는 복사 및 게시, 워크플로우 단계의 변수 지원 및 개선과 같은 더 많은 작업을 포함하도록 개선되었습니다 `OR` 및 `AND` 분할됩니다.
 
-#### 보관소 {#repository}
+#### 저장소 {#repository}
 
 * Adobe Experience Manager 6.5의 기반은 업데이트된 버전의 OSGi 기반 프레임워크(Apache Sling 및 Apache Felix) 및 Java™ 콘텐츠 저장소(Apache Jackrabbit Oak 1.10.2) 위에 구축됩니다.
 * 해결된 문제에 대한 개요는 를 참조하십시오. [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [아파치 잭래빗 오크 Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) 및 [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
@@ -509,7 +512,7 @@ Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 �
 >
 >Oracle이 Oracle Java™ SE 제품에 대한 LTS(장기 지원) 모델로 전환되었습니다. Java™ 9 및 10은 Oracle에서 LTS가 아닌 릴리스입니다. 다음을 참조하십시오 [Oracle Java™ SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe은 Java™의 LTS 릴리스를 지원하여 프로덕션에서 AEM만 실행할 수 있습니다. AEM 6.5에서 Java™ 11을 사용하는 것이 좋습니다.
 
-## 더 이상 사용되지 않는/제거된 기능 {#deprecated-and-removed-features}
+## 사용 중단되거나 제거된 기능 {#deprecated-and-removed-features}
 
 Adobe은 제품의 기능을 지속적으로 평가하고 시간이 지남에 따라 기능을 보다 강력한 버전으로 교체하기 위한 계획을 세우거나 향후 기대치 또는 확장에 더 잘 대비하기 위해 선택한 부품을 재구현하기로 합니다.
 

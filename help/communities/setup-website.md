@@ -6,7 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 1%
@@ -39,8 +42,8 @@ ht-degree: 1%
 >* 노드 이름에 공백이 포함될 수 있지만 URI에 사용할 경우 공백을 &#39;%20&#39; 또는 &#39;+&#39;로 인코딩해야 합니다.
 >* 노드 이름에는 하이픈과 밑줄이 포함될 수 있지만 Java™ 파일 내에서 패키지 이름으로 참조되는 경우 인코딩해야 합니다. 하이픈과 밑줄은 모두 밑줄 다음에 유니코드 값이 오는 밑줄로 이스케이프됩니다.
 >
-* 하이픈이 &#39;_002d&#39;가 됨
-* 밑줄이 &#39;_005f&#39;가 됨
+>   * 하이픈이 &#39;_002d&#39;가 됨
+>   * 밑줄이 &#39;_005f&#39;가 됨
 
 ## 애플리케이션 디렉터리(/apps) 설정 {#setup-the-application-directory-apps}
 

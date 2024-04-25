@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2658'
+source-wordcount: '2587'
 ht-degree: 0%
 
 ---
@@ -53,15 +56,15 @@ head.jsp 및 body.jsp를 포함합니다.
 
 ### body.jsp {#body-jsp}
 
-angular 페이지의 본문은 wcmMode의 감지 여부에 따라 다르게 렌더링됩니다(!= WCMMode.DISABLED) - 페이지를 작성용으로 열지 또는 게시된 페이지로 열지를 결정합니다.
+angular 페이지의 본문은 wcmMode의 감지 여부에 따라 다르게 렌더링됩니다(!= WCMMode.DISABLED)를 사용하여 페이지 작성을 위해 열지 아니면 게시된 페이지로 열지를 결정합니다.
 
 **작성자 모드**
 
-작성 모드에서는 각 개별 페이지가 개별적으로 렌더링됩니다. Angular은 페이지 간 라우팅을 처리하지 않으며 페이지의 구성 요소를 포함하는 부분 템플릿을 로드하는 데 사용되는 ng-view도 아닙니다. 대신 페이지 템플릿의 콘텐츠(template.jsp)는 `cq:include` 태그에 가깝게 배치하십시오.
+작성 모드에서는 각 개별 페이지 가 별도로 렌더링됩니다. Angular는 페이지 간 라우팅을 처리하지 않으며 ng-view는 페이지 구성 요소가 포함된 부분 템플릿을 로드하는 데 사용되지 않습니다. 대신 페이지 템플릿의 컨텐츠(템플릿.jsp)이 태그를 통해 서버 측에 `cq:include` 포함됩니다.
 
-이 전략을 사용하면 작성자 기능(예: 단락 시스템, Sidekick, 디자인 모드에서 구성 요소 추가 및 편집 등)을 수정 없이 사용할 수 있습니다. 앱용 페이지와 같이 클라이언트측 렌더링에 의존하는 페이지는 AEM 작성자 모드에서 잘 작동하지 않습니다.
+이 전략을 사용하면 작성 기능(예: 단락 시스템, 사이드 킥, 디자인 모드 등에서 구성 요소 추가 및 편집)이 수정 없이 작동할 수 있습니다. 앱용 페이지와 같이 클라이언트측 렌더링에 의존하는 페이지는 AEM 작성자 모드에서 잘 작동하지 않습니다.
 
-template.jsp include가 `div` 을 포함하는 요소 `ng-controller` 지시문입니다. 이 구조는 DOM 콘텐츠와 컨트롤러의 연결을 가능하게 합니다. 따라서 클라이언트측에서 자체 렌더링하는 페이지는 실패하지만 개별 구성 요소는 제대로 작동합니다(아래 구성 요소에 대한 섹션 참조).
+템플릿.jsp include는 지시문이 포함된 요소에 래핑 `div` 됩니다 `ng-controller` . 이 구조를 사용하면 DOM 콘텐츠를 컨트롤러와 연결할 수 있습니다. 따라서 클라이언트 측에서 자체적으로 렌더링되는 페이지는 실패하지만 그렇게 하는 개별 구성 요소는 제대로 작동합니다(아래 구성 요소에 대한 섹션 참조).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -69,11 +72,11 @@ template.jsp include가 `div` 을 포함하는 요소 `ng-controller` 지시문�
 </div>
 ```
 
-**게시 모드**
+**Publish 모드**
 
-게시 모드(예: Content Sync를 사용하여 앱을 내보내는 경우)에서는 모든 페이지가 단일 페이지 앱(SPA)이 됩니다. (SPA에 대해 알아보려면 Angular 자습서를 사용하십시오. [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
+게시 모드(예: 컨텐츠 동기화를 사용하여 앱을 내보내는 경우)에서는 모든 페이지가 SPA(단일 페이지 앱)가 됩니다. (SPA에 대해 알아보려면 Angular 튜토리얼, 특히 [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07) 를 사용하십시오.)
 
-SPA에는 HTML 페이지가 하나만 있습니다(다음을 포함하는 페이지). `<html>` element). 이 페이지를 &quot;레이아웃 템플릿&quot;이라고 합니다. angular 용어에서 &quot;...애플리케이션의 모든 보기에 일반적인 템플릿&quot;입니다. 이 페이지를 &#39;최상위 앱 페이지&#39;로 간주합니다. 규칙상 최상위 앱 페이지는 다음과 같습니다. `cq:Page` 루트에 가장 가까운 애플리케이션 노드(리디렉션이 아님).
+SPA에는 HTML 페이지가 하나만 있습니다(요소가 포함된 `<html>` 페이지). 이 페이지를 &quot;레이아웃 템플릿&quot;이라고 합니다. angular 용어에서 &quot;...애플리케이션의 모든 보기에 일반적인 템플릿&quot;입니다. 이 페이지를 &#39;최상위 앱 페이지&#39;로 간주합니다. 규칙상 최상위 앱 페이지는 다음과 같습니다. `cq:Page` 루트에 가장 가까운 애플리케이션 노드(리디렉션이 아님).
 
 게시 모드에서는 앱의 실제 URI가 변경되지 않으므로 이 페이지의 외부 에셋에 대한 참조는 상대 경로를 사용해야 합니다. 따라서 내보낼 이미지를 렌더링할 때 이 최상위 페이지를 고려하는 특수 이미지 구성 요소가 제공됩니다.
 
@@ -150,21 +153,21 @@ controller.js.jsp 스크립트는 각 페이지에 대한 컨트롤러 조각을
 
 ### template.jsp {#template-jsp}
 
-body.jsp 섹션에 처음 도입된 template.jsp에는 페이지의 parsys가 간단히 포함되어 있습니다. 게시 모드에서 이 콘텐츠는 직접 참조됩니다( &lt;page-path>.template.html)을 참조하고 \$routeProvider에 구성된 templateUrl을 통해 SPA에 로드합니다.
+body.jsp 섹션에서 처음 소개된 템플릿.jsp에는 단순히 페이지의 parsys가 포함되어 있습니다. 게시 모드에서 이 컨텐츠는 . &lt;page-path>템플릿.html에서 직접 참조되고 \$routeProvider에 구성된 templateUrl을 통해 SPA에 로드됩니다.&lt;/page-path>
 
-이 스크립트의 parsys는 모든 유형의 구성 요소를 수락하도록 구성할 수 있습니다. 그러나 기존 웹 사이트용으로 빌드된 구성 요소를 처리할 때는(SPA이 아니라) 주의해야 합니다. 예를 들어 기초 이미지 구성 요소는 앱 내의 자산을 참조하도록 디자인되지 않았기 때문에 최상위 앱 페이지에서만 올바르게 작동합니다.
+이 스크립트의 parsys는 모든 유형의 구성 요소를 허용하도록 구성할 수 있습니다. 그러나 기존 웹 사이트(SPA와 반대)용으로 빌드된 구성 요소를 처리할 때는 주의해야 합니다. 예를 들어 기초 이미지 구성 요소는 앱 내의 자산을 참조하도록 디자인되지 않았기 때문에 최상위 앱 페이지에서만 올바르게 작동합니다.
 
 ### angular-module-list.js.jsp {#angular-module-list-js-jsp}
 
-이 스크립트는 최상위 Angular 앱 모듈의 Angular 종속성을 출력하기만 합니다. angular-app-module.js.jsp에서 참조합니다.
+이 스크립트는 단순히 최상위 Angular 앱 모듈 의 Angular 종속성을 출력합니다. angular-app-module.js.jsp에서 참조합니다.
 
 ### header.jsp {#header-jsp}
 
-앱의 맨 위에 정적 콘텐츠를 배치하는 스크립트입니다. 이 컨텐츠는 ng-view의 범위를 벗어난 최상위 페이지에 포함됩니다.
+앱의 맨 위에 정적 컨텐츠 배치하는 스크립트입니다. 이 컨텐츠는 ng-view의 범위 외부에 있는 최상위 페이지에 포함됩니다.
 
 ### footer.jsp {#footer-jsp}
 
-앱 하단에 정적 콘텐츠를 배치하는 스크립트. 이 컨텐츠는 ng-view의 범위를 벗어난 최상위 페이지에 포함됩니다.
+앱의 맨 아래에 정적 컨텐츠 배치하는 스크립트입니다. 이 컨텐츠는 ng-view의 범위를 벗어난 최상위 페이지에 포함됩니다.
 
 ### js_clientlibs.jsp {#js-clientlibs-jsp}
 
@@ -183,17 +186,17 @@ CSS clientlib을 포함하도록 이 스크립트를 재정의합니다.
 
 ### 상대 자산 {#relative-assets}
 
-PhoneGap 애플리케이션에서 제공된 에셋의 URI는 플랫폼별로 다를 뿐만 아니라 앱의 각 설치에서 고유합니다. 예를 들어 iOS 시뮬레이터에서 실행되는 앱의 다음 URI를 참고하십시오.
+PhoneGap 애플리케이션에서 제공된 에셋의 URI는 플랫폼별로 다를 뿐만 아니라 앱의 각 설치에서 고유합니다. 예를 들어 iOS 시뮬레이터에서 실행 중인 앱의 다음 URI를 확인합니다.
 
 `file:///Users/userId/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/24BA22ED-7D06-4330-B7EB-F6FC73251CA3/Library/files/www/content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en/home.html`
 
-경로의 GUID &#39;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&#39;을 확인하십시오.
+경로에서 GUID &#39;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&#39;를 확인합니다.
 
-PhoneGap 개발자로서 관련 콘텐츠는 www 디렉터리 아래에 있습니다. 앱 자산에 액세스하려면 상대 경로를 사용하십시오.
+PhoneGap 개발자로서 관심 있는 컨텐츠 파일은 www 디렉토리 아래에 있습니다. 앱 자산에 액세스하려면 상대 경로를 사용합니다.
 
-문제를 종합하기 위해 PhoneGap 애플리케이션은 단일 페이지 앱(SPA) 패턴을 사용하여 기본 URI(해시 제외)가 변경되지 않도록 합니다. 따라서 참조하는 모든 에셋, 템플릿 또는 스크립트 **은(는) 최상위 페이지에 상대적이어야 합니다.** 최상위 페이지는 다음을 통해 Angular 라우팅 및 컨트롤러를 초기화합니다 `*<name>*.angular-app-module.js` 및 `*<name>*.angular-app-controllers.js`. 이 페이지는 sling:redirect를 *확장하지 *않는 저장소 루트와 가장 가까운 페이지여야 합니다.
+문제를 복잡하게 만들기 위해 PhoneGap 애플리케이션는 기본 URI(해시 제외)가 변경되지 않도록 SPA(단일 페이지 앱) 패턴을 사용합니다. 따라서 참조 **하는 모든 자산, 템플릿 또는 스크립트는 최상위 페이지를 기준으로 해야 합니다.** 최상위 페이지는 다음을 통해 Angular 라우팅 및 컨트롤러를 초기화합니다 `*<name>*.angular-app-module.js` 및 `*<name>*.angular-app-controllers.js`. 이 페이지는 *sling:리디렉션를 확장하지 않는 저장소의 루트에 가장 가까운 페이지이어야 합니다.
 
-상대 경로를 처리하는 데 여러 도우미 메서드를 사용할 수 있습니다.
+상대 경로를 처리하는 데 사용할 수 있는 몇 가지 도우미 메서드:
 
 * FrameworkContentExporterUtils.getTopLevelAppResource
 * FrameworkContentExporterUtils.getRelativePathToRootLevel
@@ -306,21 +309,21 @@ www/
 
 #### .cordova/hooks/ {#cordova-hooks}
 
-이 디렉터리에는 [CLI 후크](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). hooks 디렉토리의 폴더에는 작성 중에 정확한 지점에서 실행되는 node.js 스크립트가 있습니다.
+이 디렉토리에는 CLI 후크가 [포함되어 있습니다](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). hooks 디렉터리의 폴더에는 빌드 중에 정확한 지점에서 실행되는 노드.js 스크립트가 포함되어 있습니다.
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 
-after-platform_add 디렉토리에는 `copy_AMS_Conifg.js` 파일. 이 스크립트는 Adobe Mobile Services 분석 컬렉션을 지원하는 구성 파일을 복사합니다.
+platform_add 후 디렉토리에는 `copy_AMS_Conifg.js` 파일이 포함되어 있습니다. 이 스크립트는 Adobe Mobile Services 분석 컬렉션을 지원하는 구성 파일을 복사합니다.
 
 #### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
 
-준비 후 디렉터리에는 `copy_resource_files.js` 파일. 이 스크립트는 여러 아이콘 및 스플래시 화면 이미지를 플랫폼별 위치에 복사합니다.
+after-prepare 디렉토리에는 `copy_resource_files.js` 파일이 포함되어 있습니다. 이 스크립트는 여러 아이콘 및 시작 화면 이미지를 플랫폼별 위치에 복사합니다.
 
-#### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
+#### .cordova/후크/before_platform_add/ {#cordova-hooks-before-platform-add}
 
-before_platform_add 디렉토리에는 `install_plugins.js` 파일. 이 스크립트는 Cordova 플러그인 식별자 목록을 반복하며, 가 감지한 식별자를 아직 사용할 수 없습니다.
+before_platform_add 디렉토리에는 `install_plugins.js` 파일이 포함되어 있습니다. 이 스크립트는 Cordova 플러그인 ID 목록을 반복하여 아직 사용할 수 없는 것으로 감지된 ID를 설치합니다.
 
-이 전략에서는 Maven이 실행될 때마다 AEM에 플러그인을 번들로 및 설치할 필요가 없습니다 `content-package:install` 명령이 실행됩니다. 파일을 SCM 시스템에 체크 인하는 대체 전략은 반복적인 번들 결합 및 설치 활동을 필요로 합니다.
+이 전략에서는 Maven `content-package:install` 명령을 실행할 때마다 플러그인을 번들로 묶어 AEM 에 설치할 필요가 없습니다. 파일을 SCM 시스템에 체크인하는 대체 전략에는 반복적인 번들링 및 설치 작업이 필요합니다.
 
 #### .cordova/훅/기타 후크 {#cordova-hooks-other-hooks}
 
@@ -393,7 +396,7 @@ res 디렉토리에는 스플래시 화면 이미지와 아이콘이 있습니�
 
 #### www/apps {#www-apps}
 
-앱 디렉토리에는 스플래시 페이지와 관련된 코드가 포함되어 있습니다. AEM 앱의 시작 페이지의 고유한 특징은 사용자 상호 작용 없이 앱을 초기화한다는 것입니다. 따라서 앱의 clientlib 콘텐츠(CSS 및 JS 모두)는 성능을 최대화하기 위해 최소한입니다.
+apps 디렉토리에는 시작 페이지 관련 코드가 포함되어 있습니다. AEM 앱의 시작 페이지의 고유한 특징은 사용자 상호 작용 없이 앱을 초기화한다는 것입니다. 따라서 앱의 clientlib 컨텐츠(CSS 및 JS 모두)는 성능을 최대화하기 위해 최소한으로 필요합니다.
 
 #### www/content {#www-content}
 

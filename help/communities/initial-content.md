@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 4%
+source-wordcount: '487'
+ht-degree: 1%
 
 ---
 
@@ -50,7 +53,7 @@ ht-degree: 4%
    * 제목: `SCF Sandbox Site`
    * 이름: `an-scf-sandbox`
    * 선택 **[!UICONTROL SCF 샌드박스 재생 템플릿]**
-   * **[!UICONTROL 만들기]**&#x200B;를 클릭합니다
+   * 클릭 **[!UICONTROL 만들기]**
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
@@ -59,14 +62,14 @@ ht-degree: 4%
    * 제목: `SCF Sandbox`
    * 이름: `en`
    * 선택 **[!UICONTROL SCF 샌드박스 재생 템플릿]**
-   * **[!UICONTROL 만들기]**&#x200B;를 클릭합니다
+   * 클릭 **[!UICONTROL 만들기]**
 
 1. 탐색기 창에서 만든 페이지를 선택합니다. `/Websites/SCF Sandbox Site/SCF Sandbox`, 및 클릭 **[!UICONTROL 신규]** > **[!UICONTROL 새 페이지]**
 
    * 제목: `SCF Play`
    * 이름: `play`
    * 선택 **[!UICONTROL SCF 샌드박스 재생 템플릿]**
-   * **[!UICONTROL 만들기]**&#x200B;를 클릭합니다
+   * 클릭 **[!UICONTROL 만들기]**
 
 1. 이제 웹 사이트가 웹 사이트 콘솔에 표시되는 방식입니다. 탐색기 창에서 선택한 항목의 하위 페이지는 관리할 수 있는 오른쪽 창에 표시됩니다.
 
@@ -97,7 +100,7 @@ ht-degree: 4%
 
 ![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
-* **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다
+* 클릭 **[!UICONTROL 모두 저장]**
 
 구성을 저장하는 데 문제가 있으면 다시 로그인하고 다시 구성하십시오.
 

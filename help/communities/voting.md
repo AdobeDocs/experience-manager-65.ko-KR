@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: aa90bf1b-6053-4949-b061-232d72b80682
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -41,7 +44,7 @@ ht-degree: 4%
 
   (*필수*) 긍정적인 응답을 위한 내부 속성 이름입니다.
 
-* **[!UICONTROL 부정적인 응답 레이블]**
+* **[!UICONTROL 부정적 응답 레이블]**
 
   (*필수*) 부정적 응답에 대한 내부 속성 이름입니다.
 

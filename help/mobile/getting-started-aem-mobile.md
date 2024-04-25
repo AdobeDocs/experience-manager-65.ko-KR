@@ -6,7 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
 exl-id: a2bc9a50-6455-4703-8829-964fab313e96
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -23,7 +26,7 @@ ht-degree: 0%
 >
 >AEM 6.2 또는 6.3에서 AEM 6.5로 마이그레이션하는 기존 AEM(Adobe Experience Manager) 모바일 앱 고객은 패키지 공유에서 패키지를 다운로드하여 AEM Mobile 앱을 계속 사용할 수 있습니다. 그러나 AEM 6.5의 새 설치는 AEM Mobile 앱 기능을 지원하지 않습니다.
 
-AEM Mobile은 AEM Assets, Sites, Screens, Workflow, User Manager, Commerce 및 Forms도 사용하는 Adobe Experience Manager 다중 채널 디지털 플랫폼의 일부입니다. AEM Mobile은 기업이 다양한 콘텐츠 소스를 사용할 수 있도록 해주는 놀라운 배포 유연성을 제공합니다.
+AEM Mobile은 AEM Assets, Sites, Screens, Workflow, User Manager, Commerce 및 Forms을 사용하는 Adobe Experience Manager 다중 채널 디지털 플랫폼의 일부입니다. AEM Mobile은 기업이 다양한 콘텐츠 소스를 사용할 수 있도록 해주는 놀라운 배포 유연성을 제공합니다.
 
 AEM Mobile은 앱을 만드는 여러 가지 방법을 제공합니다. 앱을 만들 수 있는 세 가지 방법은 다음과 같습니다.
 

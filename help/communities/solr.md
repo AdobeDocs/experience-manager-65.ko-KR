@@ -7,7 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: 1f1deb4f5d2033420aa1cece95666894b2f56aad
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 2%
@@ -126,7 +128,7 @@ AEM Communities용 MLS는 표준 MLS 또는 고급 MLS로 사용할 수 있습�
 |---|---|---|
 | 불가리아어 | 그리스어 | 폴란드어 |
 | 중국어 (간체) | 아이티 크리올 | 포르투갈어 |
-| 대만어 | 히브리어 | 루마니아어 |
+| 중국어(번체) | 히브리어 | 루마니아어 |
 | 체코어 | 헝가리어 | 러시아어 |
 | 덴마크어 | 인도네시아어 | 슬로바키아어 |
 | 네덜란드어 | 이탈리아어 | 슬로베니아어 |
