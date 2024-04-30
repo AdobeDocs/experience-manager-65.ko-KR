@@ -6,9 +6,9 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 685d8016400570170dc02dc2be77651aea6e028c
 workflow-type: tm+mt
-source-wordcount: '3735'
+source-wordcount: '3783'
 ht-degree: 4%
 
 ---
@@ -43,8 +43,7 @@ ht-degree: 4%
 
 이 릴리스의 몇 가지 주요 기능 및 개선 사항은 다음과 같습니다.
 
-* 이제 Dynamic Media은 Apple iOS/iPadOS에 대해 무손실 HEIC 이미지 형식을 지원합니다. 다음을 참조하십시오 [fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html?lang=en) Dynamic Media 이미지 제공 및 렌더링 API에서.
-
+* 이제 Dynamic Media은 Apple iOS/iPadOS에 대해 무손실 HEIC 이미지 형식을 지원합니다. 다음을 참조하십시오 [fmt](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) Dynamic Media 이미지 제공 및 렌더링 API에서.
 * 이제 MSM(Multisite Manager)은 경험 조각을 라이브 카피로 효율적으로 대량 롤아웃하기 위해 폴더 및 하위 폴더를 포함한 경험 조각 구조를 지원합니다.
 
 ### [!DNL Forms]
@@ -145,6 +144,28 @@ ht-degree: 4%
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
+* 2024년 5월 1일부터 Dynamic Media Adobe은 다음 사항에 대한 지원을 종료합니다.
+
+   * SSL(Secure Socket Layer) 2.0
+   * SSL 3.0
+   * TLS(전송 계층 보안) 1.0 및 1.1
+   * TLS 1.2의 약한 암호는 다음과 같습니다.
+      * TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+      * TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+      * TLS_RSA_WITH_AES_256_GCM_SHA384
+      * TLS_RSA_WITH_AES_256_CBC_SHA256
+      * TLS_RSA_WITH_AES_256_CBC_SHA
+      * TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+      * TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+      * TLS_RSA_WITH_AES_128_GCM_SHA256
+      * TLS_RSA_WITH_AES_128_CBC_SHA256
+      * TLS_RSA_WITH_AES_128_CBC_SHA
+      * TLS_RSA_WITH_CAMELIA_256_CBC_SHA
+      * TLS_RSA_WITH_CAMELIA_128_CBC_SHA
+      * TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+      * TLS_RSA_WITH_SDES_EDE_CBC_SHA
+
+  참조: [Dynamic Media 제한 사항](/help/assets/limitations.md).
 * 에셋이 AEM에 업로드되면 `Update_asset` 워크플로우가 트리거됩니다. 그러나 워크플로우는 완료되지 않습니다. 워크플로우는 제품 업로드 단계까지만 완료됩니다. 다음 단계는 Scene7 일괄 업로드이지만 해당 프로세스를 AEM으로 가져오지는 않습니다. (ASSETS-30443)
 * Dynamic Media 구성 요소에서 Dynamic Media이 아닌 비디오를 우아하게 처리하는 더 나은 방법이 필요합니다. 이 문제로 인해 인스턴스화하는 동안 예외가 발생했습니다. `dynamicmedia_sly.js`. (ASSETS-31301)
 * 미리 보기는 모든 에셋, 적응형 비디오 세트 및 비디오에 대해 작동합니다. 하지만 다음에 대해 403 오류가 발생합니다. `.m3u8` 파일(부수적으로, 여전히 공개 링크를 통해 작동함). (ASSETS-31882)
@@ -163,7 +184,7 @@ ht-degree: 4%
 * 사용자가 라디오 버튼 그룹의 기존 옵션을 업데이트할 때 잘못된 번역 값이 게시됩니다. (FORMS-12575)
 * 사용자가 Android™ 장치의 적응형 양식에 문자를 추가하면 Android™ 장치에서 포커스가 맞춰질 때 텍스트 필드에 정의된 최대 문자 수보다 많은 문자를 입력할 수 있습니다. 단, 사용자가 HTML5 입력 유형을 선택하면 작동합니다. (FORMS-12748)
 * 일치하는 레이블 Arial® labelledby 및 Arial® 레이블로 인해 화면 판독기에서 이 두 레이블을 구별할 수 없습니다. 문제를 해결하기 위해 양식 필드의 “aria-labelledby” 레이블이 “aria-describedby”로 대체됩니다. (FORMS-12436)
-* 작성자가 &quot;적응형 Forms - 임베드(v2)&quot; 구성 요소를 사용하여 사이트 페이지에 적응형 양식을 임베드하고 임베드된 양식에 CAPTCHA 구성 요소가 포함된 경우(CAPTCHA 서비스 -> reCAPTCHA, 설정 -> reCAPTCHA-v2), 사용자가 작성자 인스턴스에서 &quot;게시됨으로 보기&quot;를 사용하여 사이트 페이지를 보려고 할 때 사이트 페이지가 렌더링되지 않습니다. 다음 오류가 (FORMS-11859)로 표시됩니다.
+* 작성자는 &quot;적응형 Forms - 임베드 (v2)&quot; 구성 요소를 사용하여 Sites 페이지에 적응형 양식을 임베드합니다. 임베드된 폼에 CAPTCHA 구성 요소가 포함되어 있으면(CAPTCHA 서비스 > reCAPTCHA, 설정 > reCAPTCHA-v2) 사이트 페이지가 렌더링되지 않습니다. 이 문제는 사용자가 작성자 인스턴스에서 &quot;게시됨으로 보기&quot;를 사용하여 사이트 페이지를 보려고 할 때 발생합니다. 다음 오류가 (FORMS-11859)로 표시됩니다.
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * 사용자가 날짜 선택기 구성 요소를 사용하여 날짜를 선택하려고 하면 값이 업데이트되지 않고 NULL이 표시됩니다. (FORMS-12742, FORMS-12736)
@@ -202,11 +223,11 @@ ht-degree: 4%
 
 * AEM Forms 6.5.18.0에서 적응형 양식이 게시되면 정책을 포함한 모든 종속 항목이 수정 사항이 없더라도 다시 게시됩니다. (FORMS-10454)
 
-* 사용자가 JBoss® 턴키 설정이 있는 AEM Forms 6.5.19.1에서 구성 관리자를 실행하는 동안 &quot;Microsoft SharePoint&quot;를 선택하면 JBoss® EAR LiveCycle 설치에 실패하고 다음 오류가 표시됩니다. (FORMS-12463)
+* 사용자가 JBoss® 턴키 설정이 있는 AEM Forms 6.5.19.1에서 구성 관리자를 실행하는 동안 &quot;Microsoft® SharePoint&quot;를 선택하면 JBoss® EAR LiveCycle 설치에 실패하고 다음 오류가 표시됩니다. (FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
-* 사용자가 AEM Forms 서비스 팩 6.5.19.0의 양식 데이터 모델을 사용하여 문서 조각을 만들 때 측면 패널에 변수 이름이 정의되지 않은 것처럼 표시되지만, 양식 패널에 끌어 놓거나 클릭할 때 변수 이름이 표시됩니다. (FORMS-13238)
+* 사용자가 AEM Forms 서비스 팩 6.5.19.0의 양식 데이터 모델을 사용하여 문서 조각을 만들 때 변수 이름이 사이드 패널에 정의되지 않은 상태로 표시됩니다. 그러나 변수 이름은 양식 패널에 끌어 놓거나 클릭할 때 표시됩니다. (FORMS-13238)
 
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
@@ -332,7 +353,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 다음을 �
 
 >[!NOTE]
 >
->[AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
+>[AEM 6.5 QuickStart](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
 ### Experience Manager 콘텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
@@ -471,10 +492,10 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
 * 대화형 통신에서 미리 채우기 서비스가 실패하고 null 포인터 예외가 발생합니다. (CQDOC-21355)
 * 적응형 Forms을 사용하면 ECMAScript 버전 5 이하에 사용자 지정 기능을 사용할 수 있습니다. 사용자 지정 함수에서 &#39;let&#39;, &#39;const&#39; 또는 화살표 함수와 같은 ECMAScript 버전 6 이상을 사용하는 경우 규칙 편집기가 제대로 열리지 않을 수 있습니다.
-* 서신 관리 편지를 만들 수 없습니다. 사용자가 문자를 만들 때 &quot;Object Object&quot; 설명과 함께 오류가 나타나고 문자가 만들어지지 않습니다. 레이아웃의 축소판도 편지 만들기 화면에서 로드되지 않습니다. 다음을 설치할 수 있습니다. [최신 AEM 6.5 양식 서비스 팩 20(6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 을 클릭하여 문제를 해결하십시오. (FORMS-13496)
-* 대화형 통신 서비스에서 PDF 문서를 만들지만 사용자의 데이터가 양식 필드에 자동으로 채워지지 않습니다. 미리 채우기 서비스가 예상대로 작동하지 않습니다. 다음을 설치할 수 있습니다. [최신 AEM 6.5 양식 서비스 팩 20(6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 을 클릭하여 문제를 해결하십시오. (FORMS-13413, FORMS-13493)
-* automated forms conversion 서비스의 RnC(Review and Correct) 편집기를 로드하지 못했습니다. 다음을 설치할 수 있습니다. [최신 AEM 6.5 양식 서비스 팩 20(6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 을 클릭하여 문제를 해결하십시오. (FORMS-13491)
-* AEM 6.5 Forms 서비스 팩 18(6.5.18.0) 또는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)에서 AEM 6.5 Forms 서비스 팩 20(6.5.20.0)으로 업데이트한 후 사용자에게 JSP 컴파일 오류가 발생합니다. 적응형 양식을 열거나 만들 수 없고 페이지 편집기, AEM Forms UI 및 AEM Workflow 편집기와 같은 다른 AEM 인터페이스에서 오류가 발생합니다. 다음을 설치할 수 있습니다. [최신 AEM 6.5 양식 서비스 팩 20(6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 을 클릭하여 문제를 해결하십시오. (FORMS-13492)
+* 서신 관리 편지를 만들 수 없습니다. 사용자가 문자를 만들 때 설명 &quot;&quot;에 오류가 표시됩니다.`Object Object`&quot;&quot;가 나타나고 문자가 만들어지지 않습니다. 레이아웃의 축소판도 편지 만들기 화면에서 로드되지 않습니다. 다음을 설치할 수 있습니다. [최신 AEM 6.5 양식 서비스 팩 20(6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 을 클릭하여 문제를 해결하십시오. (FORMS-13496)
+* 대화형 통신 서비스에서 PDF 문서를 만들지만 사용자의 데이터가 양식 필드에 자동으로 채워지지 않습니다. 미리 채우기 서비스가 예상대로 작동하지 않습니다. 다음을 설치할 수 있습니다. [최신 AEM 6.5 양식 서비스 팩 20(6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 을 클릭하여 문제를 해결하십시오. (FORMS-13413, FORMS-13493)
+* automated forms conversion 서비스의 RnC(Review and Correct) 편집기를 로드하지 못했습니다. 다음을 설치할 수 있습니다. [최신 AEM 6.5 양식 서비스 팩 20(6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 을 클릭하여 문제를 해결하십시오. (FORMS-13491)
+* AEM 6.5 Forms 서비스 팩 18(6.5.18.0) 또는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)에서 AEM 6.5 Forms 서비스 팩 20(6.5.20.0)으로 업데이트한 후 사용자에게 JSP 컴파일 오류가 발생합니다. 적응형 양식을 열거나 만들 수 없고 페이지 편집기, AEM Forms UI 및 AEM Workflow 편집기와 같은 다른 AEM 인터페이스에서 오류가 발생합니다. 다음을 설치할 수 있습니다. [최신 AEM 6.5 양식 서비스 팩 20(6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 을 클릭하여 문제를 해결하십시오. (FORMS-13492)
 
 <!--Customers can install the  latest AEM 6.5 Forms Service Pack to resolve the aforementioned issues.  Here are the direct links for the supported operating systems:
 * [AEM 6.5 Forms Service Pack 20 for Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
@@ -517,10 +538,10 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 문의](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* [Adobe 고객 지원 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+>* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
