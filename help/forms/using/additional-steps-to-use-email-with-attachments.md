@@ -3,7 +3,8 @@ title: 첨부 파일이 있는 이메일을 받는 추가 단계
 description: JEE 플랫폼에서 AEM Forms용 첨부 파일이 있는 이메일을 검색할 수 없는 경우 오류를 해결하는 방법에 대해 알아봅니다.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%

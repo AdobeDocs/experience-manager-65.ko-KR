@@ -3,7 +3,8 @@ title: JEE와 OSGI 모두에 적용할 수 있는 PDFG 구성에 대한 UAC를 �
 description: PDFG 구성에 대한 UAC를 비활성화하여 Word에서 PDF으로 변환하는 방법에 대해 알아봅니다.
 exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 3%

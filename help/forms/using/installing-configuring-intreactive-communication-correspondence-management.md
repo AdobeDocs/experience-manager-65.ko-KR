@@ -3,10 +3,10 @@ title: 인터랙티브한 통신 설치 및 구성
 description: AEM Forms 인터랙티브한 Communications를 설치 및 구성하여 비즈니스 서신, 문서, 명세서, 복리후생 통지, 마케팅 메일, 청구서 및 환영 키트를 만들 수 있습니다.
 topic-tags: installing
 docset: aem65
-role: Admin
+role: Admin, User, Developer
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 2%

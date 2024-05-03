@@ -3,7 +3,8 @@ title: JEE의 AEM Forms에 대한 사용자 지정 구성 요소 API에 대한 �
 description: TransactionRecorder API를 사용하여 사용자 지정 구성 요소의 트랜잭션을 기록하는 방법에 대해 알아봅니다.
 feature: Transaction Reports
 exl-id: 33e1868a-2a7f-4785-8571-95651e661e21
-source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%

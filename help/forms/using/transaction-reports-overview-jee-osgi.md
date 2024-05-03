@@ -3,7 +3,9 @@ title: 거래 보고서 개요 AEM Forms.
 description: 제출된 모든 양식, 제출된 문서, 렌더링된 대화형 통신, 한 형식으로 다른 형식으로 변환된 문서 등의 수를 유지합니다.
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 6e5e29ef-eb90-4573-8745-1966a238bc03
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -33,5 +35,3 @@ AEM Forms 기술 스택을 기반으로 트랜잭션을 활성화하는 방법, 
 * [OSGi에서 AEM Forms에 대한 거래 보고서 보기 및 이해](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [OSGi의 AEM Forms에 대한 청구 가능 API 목록](/help/forms/using/transaction-reports-billable-apis.md)
 * [OSGi에서 AEM Forms에 대한 사용자 지정 구현에 대한 트랜잭션을 기록합니다](/help/forms/using/record-transaction-custom-implementation.md)
-
-
