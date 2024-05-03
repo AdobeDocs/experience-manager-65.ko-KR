@@ -6,9 +6,9 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 685d8016400570170dc02dc2be77651aea6e028c
+source-git-commit: 4f4d5494d4e630e6f16f8a8e6a6a609925a91457
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3828'
 ht-degree: 4%
 
 ---
@@ -244,6 +244,12 @@ ht-degree: 4%
 * 사용자가 AEM Forms Designer에서 XDP를 만들 때 PDF 출력 시 단추 양식 태그가 상위 단락 태그(p-태그)에 중첩되지 않습니다. (LC-3921719)
 
 * 사용자가 AEM Forms Designer에서 XDP를 만들 때, 사용자가 양식 태그를 탐색할 때 PDF 출력 시 배경 개체에도 태그가 지정됩니다. (LC-3921687)
+
+#### [!DNL Document Services] {#forms-document-services-6520}
+
+* (JEE의 AEM Forms만 해당) PDF Generator 서비스가 서버에서 사용할 수 있는 글꼴을 열거하지 못합니다. 따라서 PDFG 관리 UI의 Adobe PDF 설정 페이지에 있는 글꼴 선택 패널이 비어 있어 선택한 글꼴이 임베드되지 않은 상태로 유지됩니다. (FORMS-12095)
+
+
 
 ### Foundation {#foundation-6520}
 
