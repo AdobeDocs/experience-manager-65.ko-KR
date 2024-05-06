@@ -4,12 +4,11 @@ description: 을 사용하여 적응형 양식을 만드는 방법 알아보기 
 role: User, Developer
 level: Beginner
 feature: Adaptive Forms, Foundation Components
-exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 9%
+source-wordcount: '1984'
+ht-degree: 8%
 
 ---
 
@@ -210,3 +209,18 @@ XML 또는 JSON 스키마를 적응형 양식의 양식 모델로 사용하려�
    >익명 사용자에 대해 자동 저장 옵션이 작동하려면 모든 사용자가 양식을 미리 보고, 확인하고, 서명할 수 있도록 Forms 일반 구성 서비스를 구성해야 합니다.
    >
    >서비스를 구성하려면 다음 위치에서 Adobe Experience Manager 웹 콘솔 구성으로 이동합니다. `https://'[server]:[port]'system/console/configMgr` 및 편집 **[!UICONTROL Forms 공통 구성 서비스]** 선택: **[!UICONTROL 모든 사용자]** 의 옵션 **[!UICONTROL 허용]** 필드 및 구성을 저장합니다.
+
+
+## AEM 적응형 양식의 이름을 변경하는 방법 {#rename-an-AEM-Adaptive-Form}
+
+적응형 양식의 이름을 변경하려면 다음 단계를 수행하십시오.
+
+1. AEM Forms 사용자 인터페이스에서 적응형 양식을 선택합니다.
+1. 을(를) 클릭합니다 **속성** 위쪽 레일에 있습니다.
+
+   ![속성](/help/forms/using/assets/rename-form-properties.png)
+
+1. 에서 양식 이름 변경 **제목** 아래 이미지에 표시된 대로 탭입니다.
+1. 클릭 **저장 및 닫기**.
+
+   ![AEM 적응형 양식 이름 바꾸기](/help/forms/using/assets/rename-form-title.png)

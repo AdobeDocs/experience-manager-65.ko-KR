@@ -8,12 +8,11 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
-exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 34%
+source-wordcount: '1794'
+ht-degree: 33%
 
 ---
 
@@ -166,6 +165,21 @@ ht-degree: 34%
    ![렌치 아이콘을 클릭하여 적응형 양식 컨테이너 대화 상자를 열고 리디렉션 페이지 또는 감사 메시지를 구성합니다](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
 1. 양식 데이터 모델을 선택합니다. 를 엽니다. **[!UICONTROL 기본]** 탭. 미리 채우기 서비스에서 다음을 선택합니다. **[!UICONTROL 양식 데이터 모델 미리 채우기 서비스]**.
 1. 클릭 **[!UICONTROL 완료]**. 이제 적응형 양식이 양식 데이터 모델 미리 채우기를 사용하도록 구성되었습니다. 이제 다음을 사용할 수 있습니다. [규칙 편집기](rule-editor.md) 을 클릭하여 양식의 필드를 미리 채우는 규칙을 만듭니다.
+
+## AEM 적응형 양식의 이름을 변경하는 방법{#rename-an-AEM-Adaptive-Form}
+
+적응형 양식의 이름을 변경하려면 다음 단계를 수행하십시오.
+
+1. AEM Forms 사용자 인터페이스에서 적응형 양식을 선택합니다.
+1. 을(를) 클릭합니다 **속성** 위쪽 레일에 있습니다.
+
+   ![속성](/help/forms/using/assets/rename-form-properties.png)
+
+1. 에서 양식 이름 변경 **제목** 아래 이미지에 표시된 대로 탭입니다.
+1. 클릭 **저장 및 닫기**.
+
+   ![AEM 적응형 양식 이름 바꾸기](/help/forms/using/assets/rename-form-title.png)
+
 
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}
