@@ -5,10 +5,10 @@ feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
 workflow-type: tm+mt
-source-wordcount: '4796'
-ht-degree: 58%
+source-wordcount: '4984'
+ht-degree: 55%
 
 ---
 
@@ -1047,6 +1047,39 @@ CORS 구성 외에도 서드파티 호스트에서 액세스를 허용하도록 
 >모든 GraphQL [스키마](#schema-generation)(**활성화됨** 상태인 콘텐츠 조각 모델에서 파생)는 GraphQL 엔드포인트를 통해 읽을 수 있습니다.
 >
 >이 기능은 이러한 방식으로 유출될 수 있으므로 민감한 데이터가 없는지 확인해야 함을 의미합니다. 예를 들어 모델 정의에서 필드 이름으로 존재할 수 있는 정보가 포함됩니다.
+
+## 제한 사항 {#limitations}
+
+잠재적인 문제로부터 보호하기 위해 쿼리에 적용되는 기본 제한 사항이 있습니다.
+
+* 쿼리에 1M(1024 * 1024)자를 초과할 수 없습니다.
+* 쿼리에 15000개 이상의 토큰을 포함할 수 없습니다.
+* 쿼리에 200000개 이상의 공백 토큰을 포함할 수 없습니다.
+
+또한 다음 사항을 알고 있어야 합니다.
+
+* GraphQL 쿼리에 둘 이상의 모델에서 이름이 같은 필드가 포함되어 있고 다음 조건이 충족되면 필드 충돌 오류가 반환됩니다.
+
+   * 여기서
+
+      * 두 개(또는 그 이상의 모델)가 허용된 참조로 정의된 경우 가능한 참조로 사용됩니다 **모델 유형** 콘텐츠 조각 참조.
+
+     및:
+
+      * 이 두 모델에는 공통 이름을 갖는 필드가 있습니다. 즉, 두 모델에서 동일한 이름이 발생합니다.
+
+     및
+
+      * 이러한 필드는 다른 데이터 유형입니다.
+
+   * 예:
+
+      * 모델이 다른 두 개(또는 이상) 조각인 경우(예: `M1`, `M2`)는 다른 조각에서 가능한 참조(콘텐츠 참조 또는 조각 참조)로 사용됩니다. 예를 들면 다음과 같습니다. `Fragment1` `MultiField/List`
+      * 다른 모델이 있는 이 두 조각(`M1`, `M2`)에는 이름은 같지만 유형은 다른 필드가 있습니다.
+예시:
+         * `M1.Title` 다음으로: `Text`
+         * `M2.Title` 다음으로: `Text/MultiField`
+      * GraphQL 쿼리에 다음이 포함되어 있으면 필드 충돌 오류가 발생합니다. `Title` 필드.
 
 ## 인증 {#authentication}
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 52aa367a8d7ebff2f2e1355274ffe357979cac85
+source-git-commit: d5554718d663515d84878ff94555ac6cadcab891
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7408'
 ht-degree: 22%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 22%
 + 릴리스 정보 {#release-notes}
    + [릴리스 정보](/help/release-notes/release-notes.md)
    + 이전 릴리스 정보 {#service-pack}
+      + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
       + [6.5.17](/help/release-notes/previous/6-5-17.md)
@@ -1605,7 +1606,7 @@ ht-degree: 22%
          + [AEM 6.5의 Assets 저장소 재구성](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
          + [AEM 6.5에서 Dynamic Media 저장소 재구성](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
          + [AEM 6.5에서 Forms 저장소 재구성](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
-         + [AEM 6.5의 전자 상거래 저장소 재구성](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
+         + [AEM 6.5의 E-Commerce 저장소 재구성](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
          + [6.5의 AEM Communities에 대한 저장소 재구성](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
       + 우수 사례 {#practices}
          + [모범 사례 배포](/help/sites-deploying/best-practices.md)
