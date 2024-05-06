@@ -5,10 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: d6435255835d91729519f7822b9677608b6b9f1e
+source-git-commit: 14b52e7763c4d83a4dcce593f155cb1bb8f56b97
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 9%
+source-wordcount: '2356'
+ht-degree: 7%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 9%
 
 #### 접근성 {#sites-accessibility-6521}
 
-* 다음 **[!UICONTROL 저장한 검색 결과]** 레이블이 지속되지 않습니다. 자리 표시자가 텍스트 필드에 대한 유일한 시각적 레이블로 사용되고 있습니다.(SITES-3050)
+* 다음 **[!UICONTROL 저장한 검색 결과]** 레이블이 지속되지 않습니다. 자리 표시자가 텍스트 필드의 유일한 시각적 레이블로 사용되고 있습니다. (SITES-3050)
 
 #### 관리 사용자 인터페이스{#sites-adminui-6521}
 
@@ -69,7 +69,7 @@ ht-degree: 9%
 #### [!DNL Content Fragments]{#sites-contentfragments-6521}
 
 * 양식 요소의 이중 포함을 수정했습니다. (SITES-21109) BLOCKER
-* 콘텐츠 조각을 만들 때 닫기 버튼이 응답하지 않는 경우가 있어 전체 페이지가 동결되고 콘텐츠 조각을 닫으려면 페이지를 새로 고쳐야 합니다. 버전 생성 문제는 사용자가 변경하지 않은 경우에도 RTE 또는 텍스트 필드와 상호 작용하여 새로운 버전의 콘텐츠 조각을 만드는 것입니다. (SITES-21187) 메이저
+* 콘텐츠 조각을 만들 때 닫기 버튼이 응답하지 않는 경우가 있어 전체 페이지가 동결되고 콘텐츠 조각을 닫으려면 페이지를 새로 고쳐야 합니다. 버전 생성 문제는 시스템에서 콘텐츠 조각의 새 버전을 생성 중입니다. 사용자가 RTE 또는 텍스트 필드와 상호 작용하여 변경하지 않은 경우에도 이 문제가 발생합니다. (SITES-21187) 메이저
 
 
 #### [!DNL Content Fragments] - GRAPHQL API {#sites-graphql-api-6521}
@@ -110,7 +110,7 @@ ht-degree: 9%
 
 #### 론치{#sites-launches-6521}
 
-* 다음 `sourceRootResource` CRXDE Lite 내의 Launch 구성에 더 이상 존재하지 않는 콘텐츠를 가리키도록 구성되어 있어 실행을 삭제하려고 할 때 오작동이 발생합니다. 페이지가 삭제되거나 경로가 동일하지 않은 경우에도 론치를 삭제할 수 있어야 합니다. (SITES-20750)
+* 다음 `sourceRootResource` CRXDE Lite 내의 Launch 구성에 더 이상 존재하지 않는 콘텐츠를 가리키도록 구성되어 있어 실행을 삭제하려고 할 때 오작동이 발생합니다. 삭제 는 페이지가 삭제되거나 경로가 동일하지 않은 경우에도 실행됩니다. (SITES-20750)
 
 #### MSM - 라이브 카피{#sites-msm-live-copies-6521}
 
@@ -163,24 +163,36 @@ ht-degree: 9%
 
 ### Foundation {#foundation-6521}
 
-
-
 #### Apache Felix {#felix-6521}
 
 * SP19 설치 후 Apache Felix에 대한 권한 없는 요청에 대해 애플리케이션 서버 컨텍스트 루트 경로가 누락되는 AEM 6.5 서비스 팩 19(SP19)의 업그레이드 문제. Apache Felix Web Management Console 4.9.8로 업데이트합니다. (NPR-41933)
 
 * U
 
+#### 캠페인{#campaign-6521}
+
+* AEM 6.5 서비스 팩 15에서 중요 항목이 있는 연속 오류 로그를 생성하고 있습니다. 다음 문제가 보고됨:
+
+   * 404 경로에 리소스가 누락되어 INFO 오류 발생 `/libs/granite/ui/content/shell/start.html`
+   * 다음 원인으로 인해 발견되지 않은 SlingException에 대한 오류 로그 항목 `NullPointerException` 위치: `CampaignsDataSourceServlet.java:147`
+
+  오류 로그는 빈번하고 방대한 오류 항목으로 채워서는 안 되며, AEM 인스턴스는 누락된 리소스 또는 예외와 관련된 문제 없이 작동해야 합니다. (CQ-4357064)
+
 #### 커뮤니티 {#communities-6521}
 
-* 화
+* U
 
 #### 컨텐츠 배포{#foundation-content-distribution-6521}
 
 * 화
 
+#### Granite{#granite-6521}
+
+* **삭제** 또는 **수정** 권한 은(는) 다음 없이 선택할 수 없습니다. **찾아보기** 구성 브라우저의 권한. (GRANITE-51002)
+
 #### 통합{#integrations-6521}
 
+* 관련 항목 `cq-target-integration`, Google Guava의 비테스트 사용을 제거해야 합니다. (CQ-4357101)
 * 서비스 계정(JSON 웹 토큰 또는 JWT) 자격 증명을 OAuth2 서버 간 자격 증명(서비스 주체)으로 바꿉니다.(NPR-41994) 메이저
 * IMS(Identity Management System) 구성으로 대상 만들기 요청이 실패합니다. (NPR-41888) 메이저
 * 고객이 페이로드 페이지를 보려고 할 때 잘못된 URL로 인해 콘텐츠가 제대로 표시되지 않습니다. 404 오류가 표시됩니다. 이(가) 쿼리 매개 변수 앞에 URL에 물음표 기호를 누락하여 오류가 발생합니다. 이 문제를 해결하려면 고객이 물음표 기호를 수동으로 삽입하여 페이로드 페이지를 올바르게 조회해야 합니다. (NPR-41957)
@@ -190,6 +202,7 @@ ht-degree: 9%
 #### 현지화{#localization-6521}
 
 * 템플릿 편집기에서 텍스트 문자열 *`No video available.`* 은(는) 현지화되지 않습니다. (SITES-13190)
+* 사용자를 활성화하거나 비활성화한 후의 문자열은에서 현지화되지 않습니다. **도구** > **보안** > **사용자** > *any_user_name* > **활성화** > **확인**, 및 선택 *any_user_name* > **비활성화** > **확인**. (NPR-41737)
 
 #### Platform{#foundation-platform-6521}
 
@@ -201,12 +214,17 @@ ht-degree: 9%
 
 #### 번역{#foundation-translation-6521}
 
+* AEM 6.5.19 기본 번역 상태가 시작에 대해 예상대로 업데이트되지 않는 문제가 있습니다. 번역된 파일을 AEM 시작과 연결된 번역 작업으로 가져온 다음에는 상태가 (으)로 변경될 예정입니다. `Approved`. 대신 상태가 (으)로 변경되었습니다. `Ready for Review`: 이는 예상 비헤이비어가 아닙니다. (NPR-41756) 메이저
 * 여러 구성을 만들고 번역 Cloud Service 구성으로 이동할 때 일부 요소가 UI에 표시되는 것은 아닙니다. 처음 40개 요소/폴더만 표시되고 소극적 로드가 트리거되지만 더 이상 컨텐츠를 추가하지 않습니다. (NPR-41829)
+* 터치 사용자 인터페이스의 사용 권한 페이지에 일본어가 있으면 깨진 문자가 표시됩니다. (NPR-41794)
 
 #### 사용자 인터페이스{#foundation-ui-6521}
 
+* 도구 > 보안 > 사용자 >에서 &lt;user_name> > 프로필, **사용자 설정 편집** 대화 상자에서 취소를 클릭해도 대화 상자가 종료되지 않습니다. (NPR-41793) 메이저
 * 더 그래닛 `pathfield` 구성 요소 `/libs/granite/ui/components/coral/foundation/form/pathfield` 을(를) 활성화하지 못했습니다. **[!UICONTROL 선택]** 자산을 선택할 때 단추입니다. pathfield가 팝업되고 에셋 확인란을 선택하면 **[!UICONTROL 선택]** 버튼이 활성화되지 않고 회색에서 파란색으로 변경되지 않습니다. (NPR-41970)
 * AEM 내의 CFM(Content Fragment Model) 참조 필드에 문제가 있습니다. CFM 참조 필드가 필수로 설정되었더라도 특정 시나리오에서 사용자가 저장 을 클릭하여 CFM이 아닌 값으로 콘텐츠를 저장할 수 있습니다. 저장 버튼이 흐리게 표시됩니다(사용할 수 없음). (NPR-41894)
+* 를 사용하는 표준 Coral 사용자 인터페이스 대화 상자 `successresponse` 작업은 작업 후에 성공 응답을 트리거해야 합니다. 그러나 AEM 6.5 서비스 팩 19에서는 다시 로드 작업이 호출되지 않고 메시지가 표시되지 않습니다. (NPR-41797)
+* AEM 알림 링크가 AEM 6.5 서비스 팩 18에서 작동하지 않습니다. 서비스 팩 18로 업그레이드할 때 알림 버튼을 통해 메시지를 선택하면 AEM 알림 링크가 작동하지 않습니다. (NPR-41792)
 
 #### WCM{#wcm-6521}
 
@@ -214,14 +232,14 @@ ht-degree: 9%
 
 #### 워크플로{#foundation-workflow-6521}
 
-* 화
+* AEM 6.5.18에서 제거 중에 사용자 메타데이터 캐시에서 제거하는 동안 오류가 반복되었습니다. (NPR-41762)
 
 ## 설치 [!DNL Experience Manager] 6.5.21.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.21.0을 사용하려면 [!DNL Experience Manager] 6.5. 참조 [업그레이드 설명서](/help/sites-deploying/upgrade.md) 자세한 지침은 을 참조하십시오. <!-- UPDATE FOR EACH NEW RELEASE -->
-* 서비스 팩은 Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip)에서 다운로드할 수 있습니다.
+* 서비스 팩은 Adobe 시 다운로드할 수 있습니다. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip).
 * MongoDB 및 여러 인스턴스가 포함된 배포에서 다음을 설치합니다. [!DNL Experience Manager] 패키지 관리자를 사용하는 작성자 인스턴스 중 하나에서 6.5.21.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -236,7 +254,7 @@ ht-degree: 9%
 
 1. 설치하기 전에 스냅샷 또는 새 백업을 [!DNL Experience Manager] 인스턴스.
 
-1. 에서 서비스 팩 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 에서 서비스 Sack 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 패키지 관리자를 열고 를 선택합니다 **[!UICONTROL 패키지 업로드]** 패키지를 업로드합니다. 자세한 내용은 [패키지 관리자](/help/sites-administering/package-manager.md).
 
@@ -246,7 +264,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->패키지 관리자 UI에 대한 대화 상자가 서비스 팩을 설치하는 동안 종료되는 경우가 있습니다. 배포에 액세스하기 전에 오류 로그가 안정될 때까지 기다리는 것이 좋습니다. 업데이터 번들 제거와 관련된 특정 로그를 기다린 후 설치가 성공했는지 확인합니다. 일반적으로 이 문제는에서 발생합니다. [!DNL Safari] 브라우저이지만 모든 브라우저에서 간헐적으로 발생할 수 있습니다.
+>패키지 관리자 UI의 대화 상자가 서비스 팩을 설치하는 동안 종료되는 경우가 있습니다. 배포에 액세스하기 전에 오류 로그가 안정될 때까지 기다리는 것이 좋습니다. 업데이터 번들 제거와 관련된 특정 로그를 기다린 후 설치가 성공했는지 확인합니다. 일반적으로 이 문제는에서 발생합니다. [!DNL Safari] 브라우저이지만 모든 브라우저에서 간헐적으로 발생할 수 있습니다.
 
 **자동 설치**
 
