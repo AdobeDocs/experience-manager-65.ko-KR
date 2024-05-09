@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 566230aa14f24c2401d1e77965b542825eeb7fc9
+source-git-commit: c165755c19ac64fdd253bff9163f48ddf4732623
 workflow-type: tm+mt
-source-wordcount: '3908'
+source-wordcount: '4046'
 ht-degree: 5%
 
 ---
@@ -530,6 +530,11 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 1. Stop the application server.
 
 -->
+* 확인란에 스크립트가 포함된 XDP를 기반으로 하는 적응형 양식에서는 이러한 확인란 이후의 요소에 대해 스크립트가 실행되지 않습니다. (FORMS-14244)
+* 날짜 선택기 위젯의 행은 편집/표시 패턴이 있는 필드의 팝업 위젯에서 월을 트래버스할 때 잘립니다. (FORMS-13620)
+* 백엔드에서 DOR(기록 문서) 서비스를 사용하려고 할 때 양식 제출이 실패했습니다. 오류 메시지: &quot;양식 리소스가 올바르게 할당되지 않아 제출 액션을 완료할 수 없습니다.&quot; (FORMS-13798)
+* Adobe Experience Manager 게시 인스턴스에서 Adobe Experience Manager 워크플로우로 적응형 양식을 제출하는 경우 워크플로우가 첨부 파일을 저장하지 못합니다. (FORMS-14209)
+* AEM 6.5 Forms 서비스 팩 20 패키지(SP20용 AEM Forms 추가 기능 패키지)를 설치할 때 AEM Sites UI(사용자 인터페이스)의 성능이 크게 저하되었습니다. (FORMS-13791)
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
