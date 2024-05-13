@@ -8,14 +8,19 @@ feature: Transaction Reports
 exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 3%
+source-wordcount: '237'
+ht-degree: 9%
 
 ---
 
 # OSGi에서 AEM Forms에 대한 사용자 지정 구현에 대한 트랜잭션을 기록합니다 {#record-a-transaction-for-custom-implementations}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation) |
+| AEM 6.5 | 이 문서 |
 
 TransactionRecorder API를 사용하여 트랜잭션으로 계상되지 않은 작업을 자동으로 기록합니다
 
