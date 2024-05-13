@@ -6,9 +6,9 @@ feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: b7082aaee83fba88b47447b8553563264eedb713
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1493'
 ht-degree: 41%
 
 ---
@@ -28,7 +28,7 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만듭니다. AEM에는 기본적으로 Microsoft Translator에 연결할 수 있는 기능이 포함되어 있습니다.
 다음 번역 공급업체는 번역 프로젝트에 대한 새로운 API의 구현을 제공합니다. 통합에 대해 자세히 알아보기 위한 링크:
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange 프리미어 파트너)
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
