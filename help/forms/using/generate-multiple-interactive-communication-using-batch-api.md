@@ -9,7 +9,7 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 066528bd9c2d7db9705a9d47ed6ea91a584129cb
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 4%
@@ -119,9 +119,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
    1. 속성 편집 창의 서비스 읽기 필드에서 가져오기 또는 서비스 가져오기를 선택합니다.
    1. 읽기 서비스 인수에 대해 연필 아이콘을 선택하여 인수를 요청 속성에 바인딩하고 바인딩 값을 지정합니다. 이 메서드는 서비스 인수를 지정된 바인딩 특성 또는 리터럴 값에 바인딩합니다. 이 값은 데이터 소스에서 지정된 값과 연결된 세부 정보를 가져오는 인수로 서비스에 전달됩니다.
 
-      <br>
-        이 예에서 id 인수는 사용자 프로필의 id 속성 값을 가져와 읽기 서비스에 인수로 전달합니다. 지정된 ID에 대한 직원 데이터 모델 개체에서 연결된 속성 값을 읽고 반환합니다. 따라서 양식의 ID 필드00250 값을 지정하면 읽기 서비스가 직원 ID가 있는 직원의 세부 정보00250 읽습니다.
-        <br>
+      이 예에서 id 인수는 사용자 프로필의 id 속성 값을 가져와 읽기 서비스에 인수로 전달합니다. 지정된 ID에 대한 직원 데이터 모델 개체에서 연결된 속성 값을 읽고 반환합니다. 따라서 양식의 ID 필드00250 값을 지정하면 읽기 서비스가 직원 ID가 있는 직원의 세부 정보00250 읽습니다.
 
       ![요청 속성 구성](assets/request-attribute.png)
 
