@@ -4,13 +4,13 @@ description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 만들고,
 topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
+exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
+source-git-commit: 0a1a0d8e3a2794bda247e7b07a2ef9d9fcac7c13
 workflow-type: tm+mt
-source-wordcount: '5703'
+source-wordcount: '5660'
 ht-degree: 1%
 
 ---
-
 
 # 문서 서비스 설치 및 구성 {#installing-and-configuring-document-services}
 
@@ -300,7 +300,7 @@ Microsoft® Office 트러스트 센터 설정을 변경하여 PDF Generator 서�
 
 >[!NOTE]
 >
-> AEM 서버가 LSA에서 서비스로 실행 중인 경우 이 권한을 사용자에게 명시적으로 할당할 필요가 없을 수 있으며, 이는 VM의 PDFG에 필요한 애플리케이션/구성 요소 외에 다른 애플리케이션/구성 요소가 설치되어 있지 않은 경우 **프로세스 수준 토큰 오른쪽 바꾸기** 로컬 서비스 및 네트워크 서비스 계정만 권한을 가져야 합니다.
+> 위에서 언급했듯이 AEM 서버가 LSA(LocalSystem 계정) 하의 서비스로 실행 중인 경우 이 권한을 사용자에게 명시적으로 할당할 필요가 없습니다.
 
 ### (Windows 전용) 관리자가 아닌 사용자를 위해 PDF Generator 서비스를 사용하도록 설정합니다. {#enable-the-pdf-generator-service-for-non-administrators}
 
