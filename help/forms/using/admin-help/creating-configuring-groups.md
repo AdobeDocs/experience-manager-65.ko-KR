@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 55421ab730382eb9aa603f898182865649f66349
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ### 이메일 도메인을 기반으로 동적 그룹 자동 생성 {#automatically-create-dynamic-groups-based-on-email-domains}
 
-1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > 고급 시스템 속성 구성을 클릭합니다.
+1. 설정 > 사용자 관리 > 구성 > 고급 시스템 속성 구성을 클릭합니다.
 1. 동적 그룹의 자동 생성 아래에서 확인란을 선택합니다.
 1. 사용자 관리자가 새 이메일 도메인을 확인하는 시점을 지정합니다. 동적 그룹의 생성은 도메인 동기화가 완료된 경우에만 논리적이므로 이 시간은 도메인 동기화 시간 이후여야 합니다.
 
