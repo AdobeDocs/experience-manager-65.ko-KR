@@ -10,7 +10,7 @@ exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -183,13 +183,13 @@ it for any subsequent updating of the private key or certificate.</dd>
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
    ```
 
-개인 키를 DER 형식으로 변환합니다. 이는 SSL 마법사에서 키가 DER 형식이어야 하기 때문입니다.
+1. 개인 키를 DER 형식으로 변환합니다. 이는 SSL 마법사에서 키가 DER 형식이어야 하기 때문입니다.
 
-```shell
-openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
-```
+   ```shell
+   openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
+   ```
 
-마지막으로 **localhostprivate.der** 개인 키로 및 **localhost.crt** 그래픽 SSL/TLS 마법사의 2단계에서 이 페이지의 시작 부분에 설명되어 있는 SSL/TLS 인증서
+1. 마지막으로 **localhostprivate.der** 개인 키로 및 **localhost.crt** 그래픽 SSL/TLS 마법사의 2단계에서 이 페이지의 시작 부분에 설명되어 있는 SSL/TLS 인증서
 
 ### cURL을 통해 SSL/TLS 구성 업데이트 {#updating-the-ssl-tls-configuration-via-curl}
 
