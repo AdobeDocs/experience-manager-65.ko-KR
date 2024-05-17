@@ -9,20 +9,27 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: ad8f849384e58511de97611d1b26c4fc96022062
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 3%
+source-wordcount: '313'
+ht-degree: 2%
 
 ---
 
 # Adobe Campaign 양식 구성 요소를 사용하여 사용자 지정 AEM 페이지 템플릿 만들기{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-이 페이지에서는 을 사용하는 사용자 정의 페이지 템플릿을 작성하는 방법을 설명합니다. [Adobe Campaign 양식](/help/sites-authoring/adobe-campaign-components.md) Geometrixx-outdoors 템플릿( `/apps/geometrixx-outdoors/components/page_campaign_profile`)가 구현되었으며, 고유한 사용자 지정 템플릿을 만들 때 필요할 수 있는 중요한 정보를 가리킵니다.
+이 페이지에서는 을 사용하는 사용자 정의 페이지 템플릿을 작성하는 방법을 설명합니다. [Adobe Campaign 양식](/help/sites-authoring/adobe-campaign-components.md) Geometrixx-outdoors 템플릿(`/apps/geometrixx-outdoors/components/page_campaign_profile`)가 구현되었으며, 고유한 사용자 지정 템플릿을 만들 때 필요할 수 있는 중요한 정보를 가리킵니다.
 
 >[!NOTE]
 >
 >[이메일 및 양식 샘플은 Geometrixx에서만 사용할 수 있습니다.](/help/sites-developing/we-retail.md). 패키지 공유에서 샘플 Geometrixx 콘텐츠를 다운로드합니다.
+
+>[!CAUTION]
+>
+>AEM 이메일 구성 요소는 더 이상 사용되지 않습니다. 콘텐츠와 스타일을 병합하는 이메일의 특성상 AEM에서 즉시 제공하는 이메일 구성 요소는 프로젝트에 필요한 모든 구성 요소로 사용자 정의 스타일을 구현해야 하므로 고객이 제한적으로 재사용할 수 있습니다.
+>
+>이메일 구성 요소는 프로젝트 수준에서 구현할 수 있으며, 더 이상 사용되지 않는 AEM 이메일 구성 요소는 이를 구현하는 방법을 보여 줍니다. 그러나 프로젝트에서 이러한 사용되지 않는 구성 요소는 사용하지 마십시오.
+
 
 Adobe Campaign Form 구성 요소를 사용하여 사용자 지정 AEM 페이지 템플릿을 만들려면 다음을 수행해야 합니다.
 
