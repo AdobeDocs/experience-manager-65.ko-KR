@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media의 비디오
-description: 비디오 인코딩 모범 사례, 비디오에 다중 오디오 및 다중 캡션 추가, 비디오 썸네일과 같이 Dynamic Media에서 비디오로 작업하는 방법에 대해 알아봅니다.
+description: 비디오 인코딩 모범 사례, 비디오에 여러 오디오 및 캡션 트랙 추가, 비디오 썸네일과 같이 Dynamic Media에서 비디오로 작업하는 방법에 대해 알아봅니다.
 mini-toc-levels: 3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
 workflow-type: tm+mt
-source-wordcount: '11187'
+source-wordcount: '11213'
 ht-degree: 2%
 
 ---
@@ -425,7 +425,7 @@ VBR 대 CBR을 선택할 때는 거의 항상 미디어 파일에 VBR을 사용�
 
 Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하는 것이 좋습니다. MP4 파일은 H.264 비디오 코덱을 사용하기 때문에 고품질의 비디오를 제공하지만 압축된 파일 크기입니다.
 
-### Dynamic Media 계정에서 DASH, 다중 자막 및 다중 오디오 트랙 지원 활성화 {#enable-dash}
+### Dynamic Media 계정에서 DASH, 다중 캡션 및 오디오 트랙 지원 활성화 {#enable-dash}
 
 **계정에서 DASH 활성화 정보**
 DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 국제 표준이며 다양한 비디오 뷰어에서 널리 채택됩니다. 계정에서 DASH가 활성화되면 적응형 비디오 스트리밍을 위해 DASH 또는 HLS 중에서 선택할 수 있는 옵션이 제공됩니다. 또는 다음과 같은 경우 플레이어 간에 자동 전환으로 두 옵션을 모두 선택할 수 있습니다 **[!UICONTROL auto]** 는 뷰어 사전 설정에서 재생 유형으로 선택됩니다.
@@ -444,15 +444,15 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 �
 * DASH를 사용하도록 Dynamic Media을 구성하여 쉽게 수행할 수 있습니다.
 * 사용자가 만들고 제출한 Adobe 고객 지원 사례를 통해 수행되는 DASH를 사용하도록 Experience Manager 6.5를 구성합니다.
 
-**계정에서 다중 자막 및 다중 오디오 트랙 지원 활성화 정보**
+**계정에서 여러 캡션 및 오디오 트랙 지원 활성화 정보**
 
-동시에 계정에서 DASH를 활성화하도록 Adobe 지원 사례를 만들면 다중 자막 및 다중 오디오 트랙 지원이 자동으로 활성화될 수도 있습니다. 지원 후 업로드하는 모든 후속 비디오는 다중 자막 및 다중 오디오 트랙을 비디오에 추가하는 지원이 포함된 새로운 백엔드 아키텍처로 처리됩니다.
+동시에 계정에서 DASH를 활성화하도록 Adobe 지원 사례를 만들면 여러 캡션 및 오디오 트랙 지원이 자동으로 활성화될 수도 있습니다. 활성화한 후 업로드하는 모든 후속 비디오는 비디오에 다중 캡션 및 오디오 트랙을 추가하는 지원이 포함된 새로운 백엔드 아키텍처로 처리됩니다.
 
 >[!IMPORTANT]
 >
->업로드한 모든 비디오 *다음 이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원 활성화, [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
+>업로드한 모든 비디오 *다음 이전* Dynamic Media 계정에서 여러 캡션 및 오디오 트랙 지원 활성화, [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 여러 캡션 및 오디오 트랙 기능을 사용할 수 있도록 필요합니다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
 
-**Dynamic Media 계정에서 DASH, 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 다음을 수행합니다.**
+**Dynamic Media 계정에서 DASH, 다중 캡션 및 다중 오디오 트랙 지원을 활성화하려면:**
 
 <!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
@@ -471,7 +471,7 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 �
 
    * 기본 담당자 이름, 이메일, 전화.
    * Dynamic Media 계정 이름.
-   * Experience Manager 6.5에서 Dynamic Media 계정에서 DASH, 다중 자막 및 다중 오디오 트랙 지원을 활성화하도록 지정합니다.
+   * Experience Manager 6.5에서 Dynamic Media 계정에서 DASH, 다중 캡션 및 다중 오디오 트랙 지원을 활성화하도록 지정합니다.
 
 1. Adobe 고객 지원에서 요청을 제출한 순서에 따라 사용자를 고객 대기 목록에 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 고객 지원 센터에서 연락하여 지원 대상 날짜를 조정하고 설정합니다.
@@ -479,7 +479,7 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 �
 1. 이제 다음 중 하나를 수행할 수 있습니다.
 
    * 사용자 만들기 [비디오 뷰어 사전 설정](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) 평상시처럼
-   * [다중 자막 및 다중 오디오 트랙 추가](#add-msma) 을 비디오에 추가합니다.
+   * [여러 캡션 및 오디오 트랙 추가](#add-msma) 을 비디오에 추가합니다.
 
 ## 비디오 보고서 보기 {#viewing-video-reports}
 
@@ -593,13 +593,13 @@ Dynamic Media에서 제공하는 기본 제공 비디오 뷰어를 사용하거�
 
 
 
-## Dynamic Media의 비디오에 대한 다중 자막 및 다중 오디오 트랙 지원 정보{#about-msma}
+## Dynamic Media의 비디오에 대한 여러 캡션 및 오디오 트랙 지원 정보{#about-msma}
 
-Dynamic Media의 다중 자막 및 다중 오디오 트랙 기능을 사용하면 기본 비디오에 여러 자막 및 오디오 트랙을 쉽게 추가할 수 있습니다. 즉, 이러한 기능을 통해 글로벌 대상자는 비디오에 액세스할 수 있습니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 자막 및 오디오 트랙을 관리할 수도 있습니다.
+Dynamic Media의 다중 캡션 및 오디오 트랙 기능을 사용하면 여러 자막 및 오디오 트랙을 기본 비디오에 쉽게 추가할 수 있습니다. 즉, 이러한 기능을 통해 글로벌 대상자는 비디오에 액세스할 수 있습니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 자막 및 오디오 트랙을 관리할 수도 있습니다.
 
 ![Dynamic Media의 자막 및 오디오 트랙 탭과 업로드된 .VTT 자막 파일 및 업로드된 .MP3 비디오 오디오 트랙 파일을 보여 주는 표를 함께 제공합니다.](assets-dm/msma-subtitle-audiotracks-tab.png)
 
-다중 자막 및 다중 오디오 트랙을 기본 비디오에 추가하는 데 고려할 사용 사례는 다음과 같습니다.
+기본 비디오에 여러 캡션 및 오디오 트랙을 추가하는 데 고려할 사용 사례는 다음과 같습니다.
 
 | 유형 | 사용 사례 |
 |--- |--- |
@@ -609,28 +609,28 @@ Dynamic Media의 다중 자막 및 다중 오디오 트랙 기능을 사용하�
 |  | 주석 트랙 |
 |  | 설명 오디오 |
 
-모두 [Dynamic Media에서 지원되는 비디오 형식](/help/assets/assets-formats.md) 및 Dynamic Media을 제외한 모든 Dynamic Media 비디오 뷰어 *비디오_360* 뷰어 - 다중 자막 및 다중 오디오 트랙과 함께 사용할 수 있도록 지원됩니다.
+모두 [Dynamic Media에서 지원되는 비디오 형식](/help/assets/assets-formats.md) 및 Dynamic Media을 제외한 모든 Dynamic Media 비디오 뷰어 *비디오_360* 뷰어 - 여러 캡션 및 오디오 트랙에 사용할 수 있습니다.
 
-다중 자막 및 다중 오디오 추적 기능은 고객 지원 Adobe에서 활성화(켜기)해야 하는 기능 전환을 통해 Dynamic Media 계정에 사용할 수 있습니다.
+고객 지원 Adobe에서 활성화(켜기)해야 하는 기능 전환을 통해 Dynamic Media 계정에 여러 캡션 및 오디오 추적 기능을 사용할 수 있습니다.
 
-### 비디오에 다중 자막 및 다중 오디오 트랙 추가 {#add-msma}
+### 비디오에 여러 캡션 및 오디오 트랙 추가 {#add-msma}
 
-비디오에 다중 자막 및 다중 오디오 트랙을 추가하기 전에 이미 다음 내용이 준비되어 있는지 확인하십시오.
+비디오에 여러 캡션 및 오디오 트랙을 추가하기 전에 이미 다음 캡션 및 오디오 트랙이 있는지 확인하십시오.
 
 * Dynamic Media은 AEM 환경에 설정됩니다.
 * A [Dynamic Media 비디오 프로필은 비디오가 수집되는 폴더에 적용됩니다](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙을 사용할 수 있습니다.](#enable-dash).
+* [Dynamic Media 계정에서 여러 캡션 및 오디오 트랙을 사용할 수 있습니다.](#enable-dash).
 
 추가된 자막 및 캡션은 WebVTT 및 Adobe VTT 형식으로 지원됩니다. 또한 추가된 오디오 트랙 파일은 MP3 포맷으로 지원됩니다.
 
 >[!IMPORTANT]
 >
->업로드한 모든 비디오 *다음 이전* Dynamic Media 계정에서 다중 자막 및 다중 오디오 트랙 지원 활성화, [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 멀티-자막 및 멀티-오디오 트랙 능력이 그들에 이용가능하도록 하기 위해 필요하다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
+>업로드한 모든 비디오 *다음 이전* Dynamic Media 계정에서 여러 캡션 및 오디오 트랙 지원 활성화, [을(를) 다시 처리해야 합니다.](/help/assets/processing-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 여러 캡션 및 오디오 트랙 기능을 사용할 수 있도록 필요합니다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
 
-**비디오에 다중 자막 및 다중 오디오 트랙을 추가하려면:**
+**비디오에 여러 캡션 및 오디오 트랙을 추가하려면:**
 
 1. [폴더에 기본 비디오 업로드](/help/assets/managing-video-assets.md#upload-and-preview-video-assets) 에 이미 비디오 프로필이 할당되어 있습니다.
-1. 다중 자막 및 다중 오디오 트랙을 추가하려는 업로드된 비디오 자산으로 이동합니다.
+1. 여러 캡션 및 오디오 트랙을 추가하려는 업로드된 비디오 자산으로 이동합니다.
 1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
 1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
    ![비디오 썸네일 이미지 위에 체크 표시가 있고 도구 모음에서 속성 보기 가 강조 표시된 비디오 자산을 선택했습니다.](assets-dm/msma-selectedasset-propertiesbutton.png)*카드 보기에서 선택한 비디오 자산입니다.*
@@ -853,7 +853,7 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 
 >[!IMPORTANT]
 >
->Adobe은 다음을 권장합니다. [다중 자막 및 다중 오디오 추적 기능 활성화](#enable-dash) Dynamic Media 계정에서. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로를 활용할 수 있습니다.
+>Adobe은 다음을 권장합니다. [다중 캡션 및 오디오 추적 기능 활성화](#enable-dash) Dynamic Media 계정에서. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로를 활용할 수 있습니다.
 
 단일 비디오 또는 응용 비디오 세트에 자막 기능을 추가하여 비디오를 글로벌 시장으로 확장할 수 있습니다. 폐쇄 캡션을 추가하면 오디오를 더빙하거나 원어민을 사용하여 각 언어의 오디오를 다시 녹음할 필요가 없습니다. 이 비디오는 녹화된 언어로 재생됩니다. 외국어 자막이 등장해 다른 언어를 사용하는 사람들도 여전히 오디오 부분을 이해할 수 있다.
 
