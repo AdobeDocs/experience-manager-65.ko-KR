@@ -1,19 +1,11 @@
 ---
 title: CIF 핵심 구성 요소 사용자 지정
 description: Adobe Experience Manager CIF 핵심 구성 요소를 사용자 지정하는 방법을 알아봅니다. 이 튜토리얼에서는 비즈니스별 요구 사항을 충족하도록 CIF 핵심 구성 요소를 안전하게 확장하는 방법을 다룹니다. GraphQL 쿼리를 확장하여 사용자 지정 특성을 반환하고 CIF 핵심 구성 요소에 새 특성을 표시하는 방법을 알아봅니다.
-sub-product: Commerce
-topics: Development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
-feature: Commerce Integration Framework
-kt: 4279
-thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
+feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 54f2b7fda39f97c4f8a1d28ac51b7b998bf8e4a1
 workflow-type: tm+mt
 source-wordcount: '2302'
 ht-degree: 1%
@@ -58,7 +50,7 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. AEM 인스턴스를 Adobe Commerce 인스턴스에 연결하거나 새로 만든 프로젝트에 구성을 추가할 수 있도록 필요한 OSGi 구성을 추가합니다.
@@ -400,7 +392,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. 새 브라우저 창을 열고 AEM으로 이동한 다음 **OSGi 콘솔** > **상태** > **Sling 모델**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -479,7 +471,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. 로 새로 고침 **Venia 홈 페이지** 위치: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) 제품 티저가 추가된 위치입니다.
