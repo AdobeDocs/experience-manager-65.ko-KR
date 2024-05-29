@@ -10,38 +10,14 @@ exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1438'
 ht-degree: 41%
 
 ---
 
 # Adobe Target으로 경험 조각 내보내기{#exporting-experience-fragments-to-adobe-target}
-
->[!CAUTION]
->
->이 페이지의 일부 기능을 사용하려면 AEM 6.5.3.0(또는 이상)을 적용해야 합니다.
->
->6.5.3.0:
->
->* **Externalizer 도메인** 이제 을(를) 선택할 수 있습니다.
->  **참고:** 외부화 도메인은 오퍼 콘텐츠 보기와 같은 메타데이터가 아닌 Target에 전송되는 경험 조각의 콘텐츠에만 관련이 있습니다.
->
->6.5.2.0:
->
->* 경험 조각을 다음 중 하나로 내보낼 수 있습니다.
->
->   * 기본 작업 영역입니다.
->   * 클라우드 구성에 지정된 이름이 지정된 작업 영역입니다.
->   * **참고:** 특정 작업 공간으로 내보내려면 Adobe Target Premium이 필요합니다.
->
->* AEM은(는) 다음과 같아야 합니다. [ims를 사용하여 Adobe Target과 통합](/help/sites-administering/integration-target-ims.md).
->
->AEM 6.5.0.0 및 6.5.1.0:
->
->* AEM 경험 조각은 Adobe Target의 기본 작업 영역으로 내보내집니다.
->* [Adobe Target과 통합](/help/sites-administering/target.md)의 지침에 따라 Adobe Target과 AEM을 통합해야 합니다.
 
 내보낼 수 있습니다. [경험 조각](/help/sites-authoring/experience-fragments.md): Adobe Experience Manager(AEM)에서 만든 후 Adobe Target(Target)으로 복사합니다. 그런 다음 Target 활동에서 오퍼로 사용하여 경험을 대규모로 테스트하고 개인화할 수 있습니다.
 
@@ -51,7 +27,13 @@ ht-degree: 41%
 * JSON: Headless 콘텐츠 게재 지원
 * HTML 및 JSON
 
-AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Target의 사용자 정의 작업 영역으로 내보낼 수 있습니다. 이 작업은 Adobe Developer 콘솔을 사용하여 수행되며, AEM은 다음과 같아야 합니다. [ims를 사용하여 Adobe Target과 통합](/help/sites-administering/integration-target-ims.md).
+AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Target의 사용자 정의 작업 영역으로 내보낼 수 있습니다. 이 작업은 Adobe Developer 콘솔을 사용하여 수행되며, AEM은 다음과 같아야 합니다. [ims를 사용하여 Adobe Target과 통합](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+>[!NOTE]
+>
+>[이제 IMS 통합이 S2S OAuth로 구성되었습니다](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+>
+>이전 구성은 [이제 Adobe Developer 콘솔에서 더 이상 사용되지 않는 JWT 자격 증명](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -71,14 +53,17 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 
 ## 사전 요구 사항 {#prerequisites}
 
->[!CAUTION]
->
->이 페이지의 일부 기능을 사용하려면 AEM 6.5.3.0을 적용해야 합니다.
-
 다음과 같은 다양한 작업을 수행해야 합니다.
 
-1. 다음을 수행해야 합니다. [ims를 사용하여 AEM과 Adobe Target 통합](/help/sites-administering/integration-target-ims.md).
-2. 경험 조각은 AEM 작성자 인스턴스에서 내보내지므로 다음과 같이 해야 합니다. [AEM 링크 외부화 구성](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) 경험 조각 내의 모든 참조가 웹 전송에 대해 외부화되도록 작성자 인스턴스에서 를 참조하십시오.
+1. 다음을 수행해야 합니다. [ims를 사용하여 AEM과 Adobe Target 통합](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+   >[!NOTE]
+   >
+   >[이제 IMS 통합이 S2S OAut으로 구성되었습니다.](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+   >
+   >이전 구성은 [이제 Adobe Developer 콘솔에서 더 이상 사용되지 않는 JWT 자격 증명](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+
+1. 경험 조각은 AEM 작성자 인스턴스에서 내보내지므로 다음과 같이 해야 합니다. [AEM 링크 외부화 구성](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) 경험 조각 내의 모든 참조가 웹 전송에 대해 외부화되도록 작성자 인스턴스에서 를 참조하십시오.
 
    >[!NOTE]
    >

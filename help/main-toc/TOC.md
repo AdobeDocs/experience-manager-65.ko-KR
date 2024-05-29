@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 9bacc16657c83329ff7b02dc8b233908e9deb2e1
+source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7400'
 ht-degree: 22%
 
 ---
@@ -74,6 +74,7 @@ ht-degree: 22%
    + [AEM 6.5의 사용자 지정 사용자 그룹 매핑](/help/sites-administering/cug-mapping.md)
    + [Same Site 쿠키 지원](/help/sites-administering/same-site-cookie-support.md)
    + [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [AEM용 IMS 통합 설정](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
    + 작성 {#authoring}
       + AEM 작성을 위한 필수 작업, 도구 및 개념 {#essentials}
@@ -226,7 +227,6 @@ ht-degree: 22%
          + [Adobe Analytics에 대한 링크 추적 구성](/help/sites-administering/adobeanalytics-link.md)
          + [Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑](/help/sites-administering/adobeanalytics-mapping.md)
          + [Adobe Analytics에 대한 비디오 추적 구성](/help/sites-administering/adobeanalytics-video.md)
-         + [IMS를 사용하여 Adobe Analytics과 통합](/help/sites-administering/integration-analytics-ims.md)
          + [콘텐츠 FAQ의 HTTP2 게재](/help/sites-administering/scene7-http2faq.md)
          + [Adobe Campaign 통합 문제 해결](/help/sites-administering/troubleshooting-campaignintegration.md)
          + [SharePoint 커넥터 라이선스, 저작권 공지 및 면책조항](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -250,7 +250,6 @@ ht-degree: 22%
          + [Adobe Marketing Cloud과 통합](/help/sites-administering/marketing-cloud.md)
          + [Adobe Target과의 통합 수동 구성](/help/sites-administering/target-configuring.md)
          + [Adobe Target과 통합하기 위한 사전 요구 사항](/help/sites-administering/target-requirements.md)
-         + [IMS를 사용하여 Adobe Target과 통합](/help/sites-administering/integration-target-ims.md)
          + [Adobe 분류](/help/sites-administering/adobeanalytics-classifications.md)
          + [솔루션 통합](/help/sites-administering/integration.md)
          + [Adobe Target으로 경험 조각 내보내기](/help/sites-administering/experience-fragments-target.md)
@@ -1292,7 +1291,7 @@ ht-degree: 22%
          + [AEM 핵심 개념](/help/sites-developing/the-basics.md)
          + [AEM 터치 지원 UI의 구조](/help/sites-developing/touch-ui-structure.md)
          + [AEM 터치 지원 UI의 개념](/help/sites-developing/touch-ui-concepts.md)
-         + [AEM 개발 - 지침 및 우수 사례](/help/sites-developing/dev-guidelines-bestpractices.md)
+         + [AEM 개발 - 가이드라인 및 모범 사례](/help/sites-developing/dev-guidelines-bestpractices.md)
          + [클라이언트측 라이브러리 사용](/help/sites-developing/clientlibs.md)
          + [개발 및 페이지 비교](/help/sites-developing/pagediff.md)
          + [편집기 제한 사항](/help/sites-developing/editor-limitations.md)
