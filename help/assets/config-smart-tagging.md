@@ -6,10 +6,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 20%
+source-wordcount: '2415'
+ht-degree: 19%
 
 ---
 
@@ -135,6 +135,13 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
 ### 스마트 컨텐츠 서비스 구성 {#configure-smart-content-service}
 
+>[!CAUTION]
+>
+>이전에는 JWT 자격 증명으로 구성된 구성은 이제 Adobe Developer 콘솔에서 더 이상 사용되지 않습니다. 2024년 6월 3일 이후에는 새 JWT 자격 증명을 만들 수 없습니다. 이러한 구성은 더 이상 만들거나 업데이트할 수 없지만 OAuth 구성으로 마이그레이션할 수 있습니다.
+> 다음을 참조하십시오 [AEM용 IMS 통합 설정](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+>다음을 참조하십시오 [온-프레미스 사용자를 위한 OAuth 구성 단계](#config-oauth-onprem)
+> 다음을 참조하십시오 [OAuth 자격 증명에 대한 스마트 태그 문제 해결](#config-smart-tagging.md)
+
 통합을 구성하려면 다음 값을 사용합니다. [!UICONTROL 기술 계정 ID], [!UICONTROL 조직 ID], [!UICONTROL 클라이언트 암호], 및 [!UICONTROL 클라이언트 ID] Adobe Developer 콘솔 통합의 필드입니다. 스마트 태그 클라우드 구성을 만들면 [!DNL Experience Manager] 배포.
 
 1. 위치 [!DNL Experience Manager], 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 이전 Cloud Service]** 을(를) 열려면 [!UICONTROL Cloud Service] 콘솔.
@@ -151,6 +158,37 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
    | [!UICONTROL 기술 계정 ID] | [!UICONTROL 기술 계정 ID] |
    | [!UICONTROL 조직 ID] | [!UICONTROL 조직 ID] |
    | [!UICONTROL 클라이언트 암호] | [!UICONTROL 클라이언트 암호] |
+
+### 온-프레미스 사용자를 위한 OAuth 구성 {#config-oauth-onprem}
+
+#### 사전 요구 사항 {#prereqs-config-oauth-onprem}
+
+인증 범위는 다음 사전 요구 사항을 포함하는 OAuth 문자열입니다.
+
+* 에서 새 OAuth 통합 만들기 [개발자 콘솔](https://developer.adobe.com/console/user/servicesandapis) 사용 `ClientID`, `ClientSecretID`, 및 `OrgID`.
+* 이 경로에 다음 파일 추가 `/apps/system/config in crx/de`:
+   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+
+#### 온-프레미스 사용자를 위한 OAuth 구성 {#steps-config-oauth-onprem}
+
+1. 에서 아래 속성을 추가하거나 업데이트합니다. `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
+
+   * `auth.token.provider.authorization.grants="client_credentials"`
+   * `auth.token.provider.orgId="<OrgID>"`
+   * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
+   * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+     `auth.token.validator.type="adobe-ims-similaritysearch"`
+   * 업데이트 `auth.token.provider.client.id` (새 OAuth 구성의 클라이언트 ID 포함)
+   * 업데이트 `auth.access.token.request` 끝 `"https://ims-na1.adobelogin.com/ims/token/v3"`
+2. 파일 이름을 로 변경합니다. `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
+3. 에서 아래 단계를 수행합니다. `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
+   * 새 OAuth 통합에서 클라이언트 암호로 auth.ims.client.secret 속성을 업데이트합니다.
+   * 파일 이름을 로 변경합니다. `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
+4. CRXDE와 같은 콘텐츠 저장소 개발 콘솔의 모든 변경 사항을 저장합니다.
+5. 다음으로 이동 `/system/console/configMgr` 및 에서 OSGi 구성을 바꿉니다. `.<randomnumber>` 끝 `-<randomnumber>`.
+6. 에 대한 이전 구성 삭제 `"Access Token provider name: adobe-ims-similaritysearch"` 위치: `/system/console/configMgr`.
+7. 콘솔을 다시 시작합니다.
 
 ### 구성 유효성 검사 {#validate-the-configuration}
 
@@ -299,5 +337,6 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
 >[!MORELIKETHIS]
 >
->* [스마트 태그 개요 및 교육 방법](enhanced-smart-tags.md)
+>* [OAuth 자격 증명에 대한 스마트 태그 문제 해결](#config-smart-tagging.md)
+>* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
 >* [스마트 태그에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

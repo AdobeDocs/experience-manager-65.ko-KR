@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1575'
 ht-degree: 1%
 
 ---
@@ -194,3 +194,9 @@ ht-degree: 1%
 * 스마트 컨텐츠 서비스의 사용은 연간 최대 200만 개의 태그가 지정된 이미지로 제한됩니다. 처리되고 태그된 임의의 복제 이미지들은 각각 태그된 이미지로서 카운팅된다.
 * 타임라인에서 태깅 워크플로우를 실행하는 경우 한 번에 최대 15개의 에셋에 태그를 적용할 수 있습니다.
 * 스마트 태그는 PNG 및 JPG 이미지 형식에서만 작동합니다. 따라서 이러한 두 형식으로 만들어진 렌디션이 있는 지원되는 에셋에는 스마트 태그가 지정됩니다.
+
+>[!MORELIKETHIS]
+>
+>* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
+>* [스마트 태깅 구성](config-smart-tagging.md)
+>* [스마트 태그에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
