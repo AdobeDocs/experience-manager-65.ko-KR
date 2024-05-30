@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
+source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
 workflow-type: tm+mt
-source-wordcount: '1575'
+source-wordcount: '1581'
 ht-degree: 1%
 
 ---
@@ -199,4 +199,5 @@ ht-degree: 1%
 >
 >* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
 >* [스마트 태깅 구성](config-smart-tagging.md)
+>* [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)
 >* [스마트 태그에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
