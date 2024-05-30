@@ -4,9 +4,9 @@ description: 에서 스마트 태그 지정 및 향상된 스마트 태그 지�
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 109a608db0724050f6e505394da9138855ba992e
+source-git-commit: d8d821a64b39b312168733126de8929c04016ff1
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1034'
 ht-degree: 7%
 
 ---
@@ -41,7 +41,9 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
    * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
    * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
-### 온-프레미스 사용자를 위한 OAuth 구성 {#steps-config-oauth-onprem}
+### 기존 AMS 및 On prem 사용자에 대한 OAuth 구성 {#steps-config-oauth-onprem}
+
+시스템 관리자가 아래 단계를 수행할 수 있습니다. AMS 고객은 Adobe 담당자에게 연락하거나 다음 사항에 따라 지원 티켓을 제출할 수 있습니다. [지원 프로세스](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 1. 에서 아래 속성을 추가하거나 업데이트합니다. `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -52,14 +54,17 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * 업데이트 `auth.token.provider.client.id` (새 OAuth 구성의 클라이언트 ID 포함)
    * 업데이트 `auth.access.token.request` 끝 `"https://ims-na1.adobelogin.com/ims/token/v3"`
-2. 파일 이름을 로 변경합니다. `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
-3. 에서 아래 단계를 수행합니다. `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
+1. 파일 이름을 로 변경합니다. `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
+1. 에서 아래 단계를 수행합니다. `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
    * 새 OAuth 통합에서 클라이언트 암호로 auth.ims.client.secret 속성을 업데이트합니다.
    * 파일 이름을 로 변경합니다. `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
-4. CRXDE와 같은 콘텐츠 저장소 개발 콘솔의 모든 변경 사항을 저장합니다.
-5. 다음으로 이동 `/system/console/configMgr` 및 에서 OSGi 구성을 바꿉니다. `.<randomnumber>` 끝 `-<randomnumber>`.
-6. 에 대한 이전 OSGi 구성 삭제 `"Access Token provider name: adobe-ims-similaritysearch"` 위치: `/system/console/configMgr`.
-7. 콘솔을 다시 시작합니다.
+1. CRXDE와 같은 콘텐츠 저장소 개발 콘솔의 모든 변경 사항을 저장합니다.
+<!--
+1. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
+1. Delete the old OSGi configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
+-->
+1. 위치 `System/console/configMgr`, 의 이전 구성을 삭제합니다. `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` 및 액세스 토큰 공급자 이름 `adobe-ims-similaritysearch`.
+1. 콘솔을 다시 시작합니다.
 
 ## 구성 유효성 검사 {#validate-the-configuration}
 
