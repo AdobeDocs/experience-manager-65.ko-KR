@@ -6,7 +6,7 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
+source-git-commit: 17a8dc53d77dfbc3dc3a4dc2f2176eaba3e1cb7c
 workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 19%
@@ -337,6 +337,6 @@ Adobe Developer 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
 >[!MORELIKETHIS]
 >
->* [OAuth 자격 증명에 대한 스마트 태그 문제 해결](#config-smart-tagging.md)
 >* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
+>* [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-smart-tagging.md)
 >* [스마트 태그에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

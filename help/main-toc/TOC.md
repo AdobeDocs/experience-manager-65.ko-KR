@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
+source-git-commit: 671d35086981b5967c28b399050aef0e070ecddf
 workflow-type: tm+mt
-source-wordcount: '7400'
+source-wordcount: '7406'
 ht-degree: 22%
 
 ---
@@ -351,6 +351,7 @@ ht-degree: 22%
       + [3D 자산 미리보기](/help/assets/previewing-3d-assets.md)
       + [폴더 자산 및 컬렉션 검토](/help/assets/bulk-approval.md)
       + [향상된 스마트 태그](/help/assets/enhanced-smart-tags.md)
+      + [OAuth 자격 증명에 대한 스마트 태그 문제 해결](/help/assets/config-oauth.md)
       + [타임라인의 활동 스트림](/help/assets/activity-stream.md)
       + [자산 처리](/help/assets/assets-workflow.md)
       + [이미지 맵 추가](/help/assets/image-maps.md)
