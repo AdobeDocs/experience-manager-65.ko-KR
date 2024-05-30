@@ -5,7 +5,7 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 54f2b7fda39f97c4f8a1d28ac51b7b998bf8e4a1
+source-git-commit: ddd411a5dde57cf66cbcb458578b0aa32139b649
 workflow-type: tm+mt
 source-wordcount: '2302'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. AEM 인스턴스를 Adobe Commerce 인스턴스에 연결하거나 새로 만든 프로젝트에 구성을 추가할 수 있도록 필요한 OSGi 구성을 추가합니다.
@@ -392,7 +392,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. 새 브라우저 창을 열고 AEM으로 이동한 다음 **OSGi 콘솔** > **상태** > **Sling 모델**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -471,7 +471,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. 로 새로 고침 **Venia 홈 페이지** 위치: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) 제품 티저가 추가된 위치입니다.
