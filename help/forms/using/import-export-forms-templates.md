@@ -8,9 +8,9 @@ docset: aem65
 role: Admin,User
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 0e2c9c911ae824c55d958180a84f23079bae8263
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2508'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Forms 및 Documents 에셋을 다운로드하려면:
 
 Forms 및 문서 에셋을 업로드하려면:
 
->[!VIDEO](https://vimeo.com/)
+<!--[!VIDEO](https://vimeo.com/)-->
 
 1. AEM Forms 인스턴스에 로그인합니다.
 1. Experience Manager 선택 ![adobeexperiencemanger](assets/adobeexperiencemanager.png) 아이콘 > 탐색 ![나침반](assets/compass.png) 아이콘> Forms> Forms 및 문서.
