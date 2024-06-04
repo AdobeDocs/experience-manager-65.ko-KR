@@ -10,10 +10,10 @@ role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: ba60ff06097b7f88ad64dda8ad1575bb88743588
+source-git-commit: 2a6cf0e85aace1516818ce87bc35b1b35f3da6e8
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 23%
+source-wordcount: '672'
+ht-degree: 24%
 
 ---
 
@@ -45,11 +45,12 @@ AEM Assets은 Brand Portal 테넌트의 인증을 위해 Adobe Identity Manageme
 >
 >Adobe은 기존 OAuth 게이트웨이 구성을 계속 사용할 것을 권장합니다. 기존 OAuth 게이트웨이 구성 문제가 발생하는 경우 기존 구성을 삭제하고 Adobe Developer 콘솔을 통해 구성을 만드십시오.
 
-이 도움말은 다음 두 가지 사용 사례에 대해 설명합니다.
+<!--
+This help describes the following two use-cases:
 
-* [새 구성](#configure-new-integration-65): 새 Brand Portal 사용자이고 Brand Portal을 사용하여 AEM Assets 작성자 인스턴스를 구성하려는 경우 Adobe Developer 콘솔을 통해 구성을 만들 수 있습니다.
-* [구성 업그레이드](#upgrade-integration-65): 기존 OAuth 게이트웨이에 대한 구성을 가진 기존 Brand Portal 사용자인 경우 기존 구성을 삭제하고 Adobe Developer 콘솔을 통해 구성을 만드십시오.
-
+* [New configuration](#configure-new-integration-65): If you are a new Brand Portal user and want to configure your AEM Assets Author instance with Brand Portal, you can create a configuration by way of the Adobe Developer Console. 
+* [Upgrade configuration](#upgrade-integration-65): If you are an existing Brand Portal user having configuration on legacy OAuth Gateway, delete the existing configuration and create a configuration by way of Adobe Developer Console.
+-->
 제공된 정보는 이 도움말을 읽는 사람이 다음 기술을 잘 알고 있다는 가정을 기반으로 합니다.
 
 * Adobe Experience Manager 및 AEM 패키지 설치, 구성 및 관리
@@ -112,7 +113,7 @@ Brand Portal을 사용하여 AEM Assets을 구성하려면 AEM Assets 작성자 
 
 Brand Portal을 사용하여 AEM Assets을 처음 구성하는 경우 나열된 순서로 다음 단계를 수행하십시오.
 
-### 구성 만들기 {#create-new-configuration}
+### 새 구성 만들기 {#create-new-configuration}
 
 지정된 시퀀스에서 다음 단계를 수행하여 Brand Portal을 사용하여 Experience Manager Assets을 구성합니다.
 
