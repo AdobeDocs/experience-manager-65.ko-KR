@@ -8,7 +8,7 @@ docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: c49bff425ccbd00480e5b17fa50ca8f25df80d2f
 workflow-type: tm+mt
 source-wordcount: '4010'
 ht-degree: 0%
@@ -545,6 +545,26 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 준�
 - [JEE의 단일 서버 AEM Forms 배포에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
 - [JEE 배포의 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
+### Adobe Acrobat 및 Adobe Reader {#adobe-acrobat-and-adobe-reader}
+
+<table>
+ <tbody>
+  <tr>
+   <th><p><strong>Acrobat 및 Adobe Reader(기본)</strong></p> </th>
+   <th><p><strong>지원되는 패치 정의</strong></p> </th>
+  </tr>
+  <tr>
+   <td>Acrobat 2020 (클래식 트랙)</td>
+   <td>버전 20.004.30006 이상<br /> </td>
+  </tr>
+
+</tbody>
+</table>
+
+>[!NOTE]
+>
+>Acrobat DC 제품군에서는 &quot;클래식&quot;과 &quot;연속&quot;이라는 서로 다른 제품인 Acrobat과 Reader에 대한 두 가지 트랙을 도입했습니다. 두 트랙에 대한 자세한 내용 및 비교는 를 참조하십시오. [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+
 ## JEE에서 AEM Forms에 대해 지원되는 클라이언트 {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
@@ -591,26 +611,6 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 준�
 - Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
 - Designer를 설치할 수 있는 관리 권한
 - Microsoft® Visual C++ 2019(VC 14.28 이상) 32비트 런타임
-
-### Adobe Acrobat 및 Adobe Reader {#adobe-acrobat-and-adobe-reader}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Acrobat 및 Adobe Reader(기본)</strong></p> </th>
-   <th><p><strong>지원되는 패치 정의</strong></p> </th>
-  </tr>
-  <tr>
-   <td>Acrobat 2020 (클래식 트랙)</td>
-   <td>버전 20.004.30006 이상<br /> </td>
-  </tr>
-
-</tbody>
-</table>
-
->[!NOTE]
->
->Acrobat DC 제품군에서는 &quot;클래식&quot;과 &quot;연속&quot;이라는 서로 다른 제품인 Acrobat과 Reader에 대한 두 가지 트랙을 도입했습니다. 두 트랙에 대한 자세한 내용 및 비교는 를 참조하십시오. [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ### 브라우저 {#browsers}
 
