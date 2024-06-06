@@ -8,9 +8,9 @@ feature: Accessibility
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 Dynamic Media은 자막이 있는 비디오 및 적응형 비디오 세트 배달을 지원합니다. 캡션은 비디오 콘텐츠 위에 표시되어야 합니다.
 
-다음을 참조하십시오 [Dynamic Media의 비디오 - 비디오에 폐쇄 캡션 또는 자막 추가](/help/assets/video.md#adding-captions-to-video).
+다음을 참조하십시오 [Dynamic Media의 비디오 - 비디오에 폐쇄 캡션 추가](/help/assets/video.md#adding-captions-to-video).
 
 >[!MORELIKETHIS]
 >

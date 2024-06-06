@@ -10,7 +10,7 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
 workflow-type: tm+mt
 source-wordcount: '4919'
 ht-degree: 3%
@@ -477,7 +477,7 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
 
 #### 자막으로 페이지 향상 {#enhancing-pages-with-subtitles}
 
-페이지 구성 요소는 페이지에 자막을 제공할 수 있는 속성을 정의합니다. 페이지 콘텐츠에 대한 정보를 제공하는 자막을 추가합니다.
+페이지 구성 요소는 페이지에 캡션을 제공할 수 있는 속성을 정의합니다. 페이지 콘텐츠에 대한 정보를 제공하는 캡션을 추가합니다.
 
 1. 브라우저에서 **제품** 페이지를 가리키도록 업데이트하는 중입니다.
 1. Sidekick **페이지** 탭을 클릭하고 **페이지 속성**.

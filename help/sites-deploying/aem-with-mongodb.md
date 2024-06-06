@@ -10,9 +10,9 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
 workflow-type: tm+mt
-source-wordcount: '6185'
+source-wordcount: '6192'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ MongoDB는 일반적으로 다음 기준 중 하나가 충족되는 AEM 작성�
 * 대량의 페이지 편집
 * 대규모 롤아웃 또는 활성화.
 
-위의 기준은 작성자 인스턴스에만 해당되며, 모두 TarMK 기반이어야 하는 게시 인스턴스에는 해당되지 않습니다. 작성자 인스턴스는 인증되지 않은 액세스를 허용하지 않으므로 사용자 수는 인증된 사용자를 참조합니다.
+위의 기준은 작성자 인스턴스용일 뿐이며 TarMK 기반이어야 하는 모든 게시 인스턴스에 대한 것은 아닙니다. 작성자 인스턴스는 인증되지 않은 액세스를 허용하지 않으므로 사용자 수는 인증된 사용자를 참조합니다.
 
 기준을 충족하지 않으면 가용성을 해결하기 위해 TarMK 활성/대기 배포를 사용하는 것이 좋습니다. 일반적으로 MongoDB는 단일 하드웨어 항목으로 확장 요구 사항을 달성할 수 있는 것보다 더 많은 상황에서 고려되어야 합니다.
 
@@ -113,7 +113,7 @@ MongoDB Cloud Manager는 MongoDB가 제공하는 무료 서비스로 MongoDB 인
 * 다음을 모니터링할 수 있는 모니터링 에이전트 `mongod` 인스턴스,
 * 데이터의 스케줄 지정 백업을 수행할 수 있는 백업 에이전트입니다.
 
-MongoDB 클러스터의 유지 관리 자동화에 Cloud Manager를 사용하면 많은 일상적인 작업이 더 쉬워지지만 필요하지 않으며 둘 다 백업에 사용하지 않습니다. 모니터링할 Cloud Manager를 선택할 때는 모니터링이 필요합니다.
+MongoDB 클러스터의 유지 관리 자동화에 Cloud Manager를 사용하면 많은 일상적인 작업이 더 쉬워지지만 필요하지 않으며 둘 다 백업에 사용하지 않습니다. 모니터링할 Cloud Manager를 선택할 때는 모니터링이 필요하지만
 
 MongoDB Cloud Manager에 대한 자세한 내용은 [MongoDB 설명서](https://docs.cloud.mongodb.com/).
 
@@ -125,7 +125,7 @@ MongoDB Ops Manager는 MongoDB Cloud Manager와 동일한 소프트웨어입니�
 
 AEM MongoDB 클러스터를 실행하려면 운영 체제 수준 모니터링이 필요합니다.
 
-Ganglia는 이러한 시스템의 좋은 예이며 CPU, 로드 평균 및 사용 가능한 디스크 공간과 같은 기본 상태 지표를 뛰어넘는 필요한 정보의 범위와 세부 정보에 대한 그림을 제공합니다. 문제를 진단하려면 엔트로피 풀 수준, CPU I/O 대기, FIN_WAIT2 상태의 소켓과 같은 하위 수준 정보가 필요합니다.
+Ganglia는 이러한 시스템의 좋은 예이며 CPU, 부하 평균 및 여유 디스크 공간과 같은 기본 상태 지표를 뛰어넘는 필요한 정보의 범위와 세부 정보를 제공합니다. 문제를 진단하려면 엔트로피 풀 수준, CPU I/O 대기, FIN_WAIT2 상태의 소켓과 같은 하위 수준 정보가 필요합니다.
 
 ### 로그 집계 {#log-aggregation}
 
@@ -188,7 +188,7 @@ MongoDB 서버 AEM이에 연결해야 합니다. 기본 복제 데이터베이�
 캐시 크기(MB)입니다. 이 공간은 에서 사용되는 다양한 캐시 간에 분산됩니다. `DocumentNodeStore`. 기본값은 256MB입니다. 그러나 Oak 읽기 성능은 더 큰 캐시에서 혜택을 받습니다.
 
 * `blobCacheSize`
-자주 사용되는 블롭은 데이터 저장소에서 다시 참조하지 않도록 AEM에 의해 캐시될 수 있습니다. 특히 MongoDB 데이터베이스에 Blob을 저장할 때 성능에 더 많은 영향을 줍니다. 모든 파일 시스템 기반 데이터 저장소는 운영 체제 수준의 디스크 캐시를 통해 이점을 얻을 수 있습니다.
+자주 사용되는 블롭은 데이터 저장소에서 다시 참조하지 않도록 AEM에 의해 캐시될 수 있습니다. 이렇게 하면 특히 MongoDB 데이터베이스에 Blob을 저장할 때 성능에 더 많은 영향을 줍니다. 모든 파일 시스템 기반 데이터 저장소는 운영 체제 수준의 디스크 캐시를 통해 이점을 얻을 수 있습니다.
 
 #### 데이터 저장소 구성 {#data-store-configuration}
 
@@ -233,7 +233,7 @@ MongoDB 배포에 대해 영구 캐시 구성을 활성화하여 I/O 읽기 성�
 
 ### 운영 체제 지원 {#operating-system-support}
 
-MongoDB 2.6은 RAM과 디스크 간의 운영 체제 수준 관리에 민감한 메모리 매핑 스토리지 엔진을 사용합니다. MongoDB 인스턴스의 쿼리 및 읽기 성능은 종종 페이지 오류라고 하는 느린 I/O 작업을 방지하거나 제거하는 데 의존합니다. 이러한 문제는 다음에 적용되는 페이지 폴트입니다. `mongod` 특히 프로세스. 운영 체제 수준의 페이지 오류와 혼동하지 마십시오.
+MongoDB 2.6은 RAM과 디스크 간의 운영 체제 수준 관리에 민감한 메모리 매핑 스토리지 엔진을 사용합니다. MongoDB 인스턴스의 쿼리 및 읽기 성능은 종종 페이지 오류라고 하는 느린 I/O 작업을 방지하거나 제거하는 데 의존합니다. 이러한 문제는 다음에 적용되는 페이지 폴트입니다. `mongod` 특히 프로세스. 이를 운영 체제 수준의 페이지 오류와 혼동하지 마십시오.
 
 빠른 작업을 위해 MongoDB 데이터베이스는 이미 RAM에 있는 데이터에만 액세스해야 합니다. 액세스해야 하는 데이터는 인덱스 및 데이터로 구성됩니다. 이러한 인덱스 및 데이터 컬렉션을 작업 세트라고 합니다. 작업 세트가 사용 가능한 RAM MongoDB보다 큰 경우 디스크에서 해당 데이터를 페이징해야 I/O 비용이 발생하여 메모리에 이미 있는 다른 데이터를 제거할 수 있습니다. 데이터가 디스크에서 다시 로드되는 경우 페이지 장애가 우세하고 성능이 저하됩니다. 작업 세트가 동적이고 가변적인 경우 작업을 지원하기 위해 더 많은 페이지 오류가 발생합니다.
 
@@ -241,7 +241,7 @@ MongoDB는 다양한 Linux® 버전, Windows 및 macOS을 포함한 여러 운�
 
 #### Linux® {#linux}
 
-* 투명 확대/축소 및 조각 모음을 끕니다. 다음을 참조하십시오 [투명 대용량 페이지 설정](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) 추가 정보.
+* 투명 조각 및 조각 모음을 끕니다. 다음을 참조하십시오 [투명 대용량 페이지 설정](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) 추가 정보.
 * [미리 보기 설정 조정](https://docs.mongodb.com/manual/administration/production-notes/#readahead) 사용 사례에 맞게 데이터베이스 파일을 저장하는 장치입니다.
 
    * MMAPv1 스토리지 엔진의 경우 작업 집합이 사용 가능한 RAM보다 크고 문서 액세스 패턴이 임의인 경우 미리 보기를 32 또는 16으로 낮추는 것이 좋습니다. 다른 설정을 평가하여 상주 메모리를 최대화하고 페이지 폴트 수를 낮추는 최적의 값을 찾을 수 있습니다.
@@ -340,9 +340,9 @@ MongoDB는 WiredTiger를 사용하여 WiredTiger 내부 캐시와 파일 시스�
 
 기본적으로 WiredTiger는 모든 컬렉션에 대해 스냅 블록 압축을 사용하고 모든 인덱스에 대해 접두사 압축을 사용합니다. 압축 기본값은 글로벌 수준에서 구성할 수 있으며, 수집 및 색인 생성 중에 수집 및 색인별로 설정할 수도 있습니다.
 
-다른 표현은 WiredTiger 내부 캐시의 데이터와 디스크 상의 형식에 사용됩니다.
+다른 표현은 On-Disk 포맷과 WiredTiger 내부 캐시의 데이터에 사용됩니다.
 
-* 파일 시스템 캐시의 데이터는 디스크 상의 포맷과 동일하며 데이터 파일에 대한 압축의 이점도 있습니다. 운영 체제에서 디스크 I/O를 줄이기 위해 파일 시스템 캐시를 사용합니다.
+* 파일 시스템 캐시의 데이터는 디스크 상의 포맷과 동일하며 데이터 파일에 대한 압축의 이점도 포함됩니다. 운영 체제에서 디스크 I/O를 줄이기 위해 파일 시스템 캐시를 사용합니다.
 
 WiredTiger 내부 캐시에 로드된 인덱스의 데이터 표현은 디스크 포맷과 다르지만 인덱스 접두사 압축을 사용하여 RAM 사용을 줄일 수 있습니다.
 
@@ -392,7 +392,7 @@ MongoDB 프로세스는 서로 다른 할당 정책에 따라 다르게 동작�
 나열된 CPU(코어)에서만 실행됩니다. Mongod는 나열된 CPU에서만 실행되며 해당 CPU에서 사용 가능한 메모리만 사용합니다.
 
 * `--localalloc`
-항상 현재 노드에 메모리를 할당하지만 스레드가 실행되는 모든 노드를 사용하십시오. 하나의 스레드가 할당을 수행하면 해당 CPU에 사용할 수 있는 메모리만 사용됩니다.
+항상 현재 노드에 메모리를 할당하지만 스레드가 실행되는 모든 노드를 사용하십시오. 한 스레드가 할당을 수행하면 해당 CPU에서 사용할 수 있는 메모리만 사용됩니다.
 
 * `--preferred=<node>`
 노드보다 할당을 선호하지만, 기본 설정 노드가 가득 찬 경우 다른 노드보다 폴백됩니다. 노드를 정의하기 위한 상대 표기법(relative notation)이 사용될 수 있다. 또한 스레드는 모든 노드에서 실행됩니다.
@@ -405,11 +405,11 @@ MongoDB 프로세스는 서로 다른 할당 정책에 따라 다르게 동작�
 
 #### 원격 파일 시스템 {#remote-filesystems}
 
-MongoDB의 내부 데이터 파일(Mongod 프로세스 데이터베이스 파일)은 지연 시간이 너무 길기 때문에 NFS와 같은 원격 파일 시스템을 사용하지 않는 것이 좋습니다. NFS가 권장되는 Oak Blob(FileDataStore)의 스토리지에 필요한 공유 파일 시스템과 혼동하지 마십시오.
+MongoDB의 내부 데이터 파일(Mongod 프로세스 데이터베이스 파일)은 지연 시간이 너무 길기 때문에 NFS와 같은 원격 파일 시스템은 사용하지 않는 것이 좋습니다. NFS가 권장되는 Oak Blob(FileDataStore)의 스토리지에 필요한 공유 파일 시스템과 혼동하지 마십시오.
 
 #### 미리 읽기 {#read-ahead}
 
-임의 읽기를 사용하여 페이지가 페이징될 때 디스크에서 불필요한 블록을 읽지 않도록 미리 읽기 를 조정합니다. 이러한 결과는 불필요한 I/O 대역폭 소비를 의미합니다.
+임의 읽기를 사용하여 페이지가 페이징될 때 디스크에서 불필요한 블록을 읽지 않도록 미리 읽기 조정 이러한 결과는 불필요한 I/O 대역폭 소비를 의미합니다.
 
 ### Linux® 요구 사항 {#linux-requirements}
 
@@ -569,11 +569,11 @@ WMWare ESX를 사용하여 가상화 환경을 관리하고 배포하는 경우 
 1. 스토리지 I/O 컨트롤을 사용하여 `mongod` 프로세스.
 1. 다음을 설정하여 MongoDB를 호스팅하는 컴퓨터의 CPU 리소스 보장 [CPU 예약](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
 
-1. ParaVirtual I/O 드라이버 사용을 고려해 보십시오. 다음을 참조하십시오 [기술 자료 문서](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1010398).
+1. ParaVirtual I/O 드라이버 사용을 고려해 보십시오. <!-- URL is a 404 See [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).-->
 
 ### Amazon Web Services {#amazon-web-services}
 
-Amazon Web Services으로 MongoDB를 설정하는 방법에 대한 설명서는 [AWS 통합 구성](https://docs.cloud.mongodb.com/tutorial/configure-aws-settings/) MongoDB 웹 사이트에 있는 문서입니다.
+Amazon Web Services으로 MongoDB를 설정하는 방법에 대한 설명서는 [AWS 통합 구성](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/) MongoDB 웹 사이트에 있는 문서입니다.
 
 ## 배포 전 MongoDB 보안 {#securing-mongodb-before-deployment}
 
@@ -595,7 +595,7 @@ Dispatcher는 상태를 저장하지 않으므로 수평으로 쉽게 확장할 
 
 Dispatcher 없이 AEM을 실행하려면 다른 애플리케이션에서 SSL 종료 및 로드 밸런싱을 수행해야 합니다. 세션이 만들어지는 AEM 인스턴스(고정 연결이라고 함)에 대한 친화성을 가져야 하므로 필요합니다. 그 이유는 콘텐츠에 대한 업데이트가 최소한의 지연을 보이도록 하기 위해서입니다.
 
-다음 확인: [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 구성 방법에 대한 자세한 내용을 참조하십시오.
+다음 확인: [Dispatcher 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) 구성 방법에 대한 자세한 내용을 참조하십시오.
 
 ### 추가 구성 {#additional-configuration}
 
