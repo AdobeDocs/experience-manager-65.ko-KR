@@ -5,9 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 6bf2d6409a15be02a247fab84caa743e8542da13
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 4035bfae6a525292ca71b182ebed2ac9839426b8
 workflow-type: tm+mt
-source-wordcount: '3032'
+source-wordcount: '3050'
 ht-degree: 5%
 
 ---
@@ -219,6 +220,12 @@ ht-degree: 5%
 
 * 템플릿 편집기에서 텍스트 문자열 *`No video available.`* 은(는) 현지화되지 않습니다. (SITES-13190)
 * 사용자를 활성화하거나 비활성화한 후의 문자열은에서 현지화되지 않습니다. **도구** > **보안** > **사용자** > *any_user_name* > **활성화** > **확인**, 및 선택 *any_user_name* > **비활성화** > **확인**. (NPR-41737)
+
+#### Oak {#foundation-oak-6521}
+
+* 성능 회귀 수정 - 유사한 조건에서 범위 쿼리를 방지합니다. (OAK-9481)
+
+* 새 Oak 버전은 1.22.20입니다.
 
 #### Platform{#foundation-platform-6521}
 
@@ -484,4 +491,3 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 >* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
-
