@@ -1,13 +1,12 @@
 ---
 title: AEM Forms용 AEM Forms 패치 설치 지침
 description: OSGi 및 JEE 환경에 대한 AEM Forms 서비스 팩 설치 지침
-exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+role: User, Admin, Architect, Developer
+source-git-commit: c3fd2b1198c7c856d6d68e9b9cfc711c941e657c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1734'
 ht-degree: 9%
 
 ---
@@ -18,9 +17,9 @@ ht-degree: 9%
 
 | 제품 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 버전 | 6.5.20.0 |
+| 버전 | 6.5.21.0 |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2024년 2월 29일 |
+| 날짜 | 2024년 5월 29일 |
 | 다운로드 URL | [최신 AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -69,9 +68,12 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2. 필요한 소프트웨어 다운로드
 
 * [AEM Forms on JEE 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+
+* [조각 서블릿](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+
 * [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-* [조각 서블릿](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+
 
 +++
 
@@ -137,12 +139,11 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++5. 서블릿 조각 설치(AEM 서비스 팩 6.5.14.0 이하)
++++5. 서블릿 조각 설치(AEM 서비스 팩 6.5.14.0 이하)(**필수 설치**)
 
 >[!NOTE]
 >
-> * 에서 업그레이드하는 경우 **AEM 서비스 팩 6.5.15.0**, 설치 **서블릿 조각** 은 필수가 아닙니다. 버전 **AEM 서비스 팩 6.5.14.0** 또는 이전 버전에서는 서블릿 조각을 설치해야 합니다.
-> * 다음을 설치해야 합니다. **서블릿 조각** 에서 실행 중인 애플리케이션 서버를 제외한 모든 애플리케이션 서버 **JBoss® EAP 7.4.0**.
+> * 에서 업그레이드하는 경우 **AEM 서비스 팩 6.5.15.0**, 설치 **서블릿 조각** 은 필수가 아닙니다. 버전 **AEM 서비스 팩 6.5.14.0** 또는 그 이전 **필수 설치** 서블릿 조각.
 
 
 서블릿 조각을 다운로드하여 설치하려면 다음을 수행합니다.

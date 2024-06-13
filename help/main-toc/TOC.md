@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 79ae35f35d33a072480bd9cde19274d89c8ef903
+source-git-commit: bd661b0a73046e7ccfb07a430983857f753ed442
 workflow-type: tm+mt
-source-wordcount: '7408'
+source-wordcount: '7421'
 ht-degree: 22%
 
 ---
@@ -621,6 +621,8 @@ ht-degree: 22%
       + [적응형 양식에서 적응형 Forms 조각 생성 및 사용](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [적응형 Forms 기반의 핵심 구성 요소에 대한 테마 만들기](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
       + [적응형 양식에서 사용자 정의 함수 만들기 및 사용](/help/forms/using/create-and-use-custom-functions.md)
+      + [규칙 편집기](/help/forms/using/rule-editor-core-components.md)
+      + [적응형 양식 핵심 구성 요소에서 사용자 정의 기능 만들기 및 사용](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [적응형 Forms 기반의 핵심 구성 요소에 대한 사용자 지정 오류 처리기 만들기 및 사용](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
    + 적응형 Forms - 기본 작성 {#adaptive-forms-basic-authoring}
       + [적응형 양식 작업 모범 사례](/help/forms/using/adaptive-forms-best-practices.md)

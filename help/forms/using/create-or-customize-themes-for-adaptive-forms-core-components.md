@@ -9,10 +9,10 @@ role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: aa8f8ea6ec3787cd1de76a72fe05f0993c2d6b22
 workflow-type: tm+mt
-source-wordcount: '1921'
-ht-degree: 6%
+source-wordcount: '1939'
+ht-degree: 5%
 
 ---
 
@@ -35,6 +35,10 @@ AEM 6.5 환경은 적응형 Forms 기반의 핵심 구성 요소에 대해 아�
 * [캔버스 테마](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
 * [이젤 테마](https://github.com/adobe/aem-forms-theme-easel)
+* [FSI 테마](https://github.com/adobe/aem-forms-theme-fsi)
+* [헬스케어 테마](https://github.com/adobe/aem-forms-theme-healthcare)
+* [공개 테마](https://github.com/adobe/aem-forms-theme-public)
+* [제조 테마](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 ## 테마 구조 이해 {#understanding-structure-of-theme}
 
@@ -57,6 +61,8 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 * [캔버스 테마](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
 * [이젤 테마](https://github.com/adobe/aem-forms-theme-easel)
+* [공개 테마](https://github.com/adobe/aem-forms-theme-public)
+* [제조 테마](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 다음을 수행할 수 있습니다. [테마를 만들려면 다음 테마 중 하나를 맞춤화하십시오](#customize-a-theme-core-components).
 

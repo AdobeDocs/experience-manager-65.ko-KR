@@ -10,9 +10,9 @@ role: Admin, User, Developer
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 09eae6e3550e9e8505c042e23d6569971841d441
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -37,9 +37,10 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 64비트 버전의 디자이너는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
+>* 64비트 버전의 디자이너는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
+>* 32비트 버전의 디자이너는 릴리스 이후 더 이상 사용되지 않습니다. [AEM Forms 서비스 팩 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
-
+Forms Designer 설치에 대한 자세한 내용은 [FAQ(자주 묻는 질문)](#fandq).
 
 ## AEM Forms Designer 설치 {#install-designer}
 
@@ -104,3 +105,18 @@ AEM Forms Designer용 독립형 설치 프로그램을 사용하는 경우 다�
 1. 다운로드한 설치 관리자 파일을 두 번 클릭하여 최신 버전의 AEM Forms Designer를 설치합니다.
 
 +++
+
+## 자주 묻는 질문 {#fandq}
+
+* **사용자가 직접 64비트로 업그레이드할 수 있습니까?**
+   * 예. 사용자가 직접 64비트 디자이너로 업그레이드할 수 있습니다. 업그레이드하려면 다음을 설치하십시오. [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) designer 전체 설치 관리자 및 그 위에 후속 디자이너 패치 릴리스를 적용합니다.
+
+* **사용자가 시스템에 32비트와 64비트를 모두 설치할 수 있습니까?**
+   * 아니요. 32비트 및 64비트 설치는 동일한 시스템에서 작동하지 않습니다. 사용자는 32비트 디자이너 또는 64비트 디자이너를 가질 수 있습니다.
+
+* **사용자가 64비트 디자이너 또는 32비트 디자이너에 있는지 어떻게 확인합니까?**
+   * Forms Designer 버전을 확인하는 방법에는 두 가지가 있습니다.
+
+      1. 디자이너를 열고 도움말로 이동한 다음 디자이너 정보를 클릭하면 디자이너 버전 정보가 비트 정보와 함께 표시됩니다. 예를 들어 64비트가 아래와 같이 끝에 작성됩니다.
+         `6.5.21.20240522.1.161 | 64 bit`
+      1. 디자이너를 열면 왼쪽 상단에 제품 이름에 대한 64비트 정보가 포함된 브랜딩 아이콘이 표시됩니다.

@@ -1,17 +1,16 @@
 ---
 title: 적응형 양식을 위한 기록 문서 생성
-description: 적응형 양식의 기록 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
+description: 적응형 양식에 대한 기록 문서(DoR)를 생성하는 방법을 설명합니다.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
-exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
 workflow-type: tm+mt
-source-wordcount: '4256'
+source-wordcount: '4308'
 ht-degree: 3%
 
 ---
@@ -114,7 +113,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td>확인란</td>
-   <td>체크 상자</td>
+   <td>확인란</td>
    <td>true</td>
    <td> </td>
   </tr>
@@ -315,47 +314,52 @@ ht-degree: 3%
 1. 선택 ![도르탑](/help/forms/using/assets/dortab.png). 기록 문서 탭이 나타납니다.
 1. 기록 문서를 렌더링하기 위한 기본 템플릿 또는 사용자 지정 템플릿을 선택합니다. 기본 템플릿을 선택하면 기록 문서의 축소판 미리 보기가 템플릿 드롭다운 아래에 나타납니다.
 
-   ![브랜딩템플릿](/help/forms/using/assets/brandingtemplate.png)
+   ![브랜딩템플릿](/help/forms/using/assets/brandingtemplateupdate.png)
 
    사용자 지정 템플릿을 선택하기로 선택한 경우 AEM Forms 서버에서 XDP 선택 을 찾아봅니다. AEM Forms 서버에 아직 없는 템플릿을 사용하려면 먼저 XDP를 AEM Forms 서버에 업로드해야 합니다.
 
-1. 기본 또는 사용자 지정 템플릿 선택 여부에 따라 다음 속성 중 일부 또는 모두가 기록 문서 탭에 표시됩니다. 다음을 적절히 지정합니다.
+### 기본 페이지 속성(#master-page-properties)
 
-   * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 로고 이미지를 선택하거나, 컴퓨터에서 로고 이미지를 업로드할 수 있습니다.
-   * **양식 제목**
-   * **머리글 텍스트**
-   * **면책조항 레이블**
-   * **면책조항**
-   * **면책조항 텍스트**
-   * **강조 색상**: 문서 또는 레코드 PDF에서 머리글 텍스트 및 구분 기호를 렌더링하는 색상입니다
-   * **글꼴 모음**: 기록 문서 PDF 내 텍스트의 글꼴 패밀리
-   * **확인란 및 라디오 버튼 구성 요소의 경우 선택한 값만 표시합니다**
-   * **여러 개의 선택한 값에 대한 구분 기호**
-   * **데이터 모델에 바인딩되지 않은 양식 개체 포함**
-   * **기록 문서에서 숨겨진 필드 제외**
-   * **패널 설명 숨기기**
+기본 또는 사용자 지정 템플릿 선택 여부에 따라 다음 기본 페이지 속성 중 일부 또는 모두가 위의 이미지와 같이 기록 문서 탭에 표시됩니다. 다음을 적절히 지정합니다.
 
-   선택하는 사용자 지정 XDP 템플릿에 여러 마스터 페이지가 포함되어 있는 경우 해당 페이지에 대한 속성이 **[!UICONTROL 콘텐츠]** 의 섹션 **[!UICONTROL 기록 문서]** 탭.
+* **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 로고 이미지를 선택하거나, 컴퓨터에서 로고 이미지를 업로드할 수 있습니다.
+* **양식 제목**
+* **머리글 텍스트**
+* **면책조항 레이블**
+* **면책조항**
+* **면책조항 텍스트**
 
-   ![기본 페이지 속성](assets/master-page-properties.png)
+  <!--
+    * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF
+    * **Font Family**: Font family of the text in the document of record PDF
+    * **For Check Box and Radio Button components, show only the selected values**
+    * **Separator for multiple selected value(s)**
+    * **Include form objects that are not bound to data model**
+    * **Exclude hidden fields from the document of record**
+    * **Hide description of panels**
+    -->
 
-   마스터 페이지 속성에는 로고 이미지, 머리글 텍스트, 양식 제목, 면책조항 레이블 및 면책조항 텍스트가 포함됩니다. 적응형 양식 또는 XDP 템플릿 속성을 기록 문서에 적용할 수 있습니다. AEM Forms은 기본적으로 템플릿 속성을 기록 문서에 적용합니다. 마스터 페이지 속성에 대한 사용자 지정 값을 정의할 수도 있습니다. 기록 문서에서 여러 마스터 페이지를 적용하는 방법에 대한 자세한 내용은 [기록 문서에 여러 마스터 페이지 적용](#apply-multiple-master-pages-dor).
+  선택하는 사용자 지정 XDP 템플릿에 여러 마스터 페이지가 포함되어 있는 경우 해당 페이지에 대한 속성이 **[!UICONTROL 콘텐츠]** 의 섹션 **[!UICONTROL 기록 문서]** 탭.
 
-   >[!NOTE]
-   >
-   >6.3 이전 버전의 Designer로 만든 적응형 양식 템플릿을 사용하는 경우 Accent Color 및 Font Family 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 템플릿에 다음 항목이 있는지 확인하십시오.
+  ![기본 페이지 속성](assets/master-page-properties.png)
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+  마스터 페이지 속성에는 로고 이미지, 머리글 텍스트, 양식 제목, 면책조항 레이블 및 면책조항 텍스트가 포함됩니다. 적응형 양식 또는 XDP 템플릿 속성을 기록 문서에 적용할 수 있습니다. AEM Forms은 기본적으로 템플릿 속성을 기록 문서에 적용합니다. 마스터 페이지 속성에 대한 사용자 지정 값을 정의할 수도 있습니다. 기록 문서에서 여러 마스터 페이지를 적용하는 방법에 대한 자세한 내용은 [기록 문서에 여러 마스터 페이지 적용](#apply-multiple-master-pages-dor).
+
+  >[!NOTE]
+  >
+  >6.3 이전 버전의 Designer로 만든 적응형 양식 템플릿을 사용하는 경우 Accent Color 및 Font Family 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 템플릿에 다음 항목이 있는지 확인하십시오.
+
+  ```xml
+  <proto>
+  <font typeface="Arial"/>
+  <fill>
+  <color value="4,166,203"/>
+  </fill>
+  <edge>
+  <color value="4,166,203"/>
+  </edge>
+  </proto>
+  ```
 
 1. 브랜딩 변경 사항을 저장하려면 완료를 선택합니다.
 
@@ -413,8 +417,23 @@ ht-degree: 3%
 
 **양식 수준 설정**
 
-* **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 기록 문서에 있는 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
-* **숨겨진 경우 DoR에서 필드 제외:** 숨겨진 필드를 제외하려면 속성을 설정하십시오. [!UICONTROL 기록 문서] (양식 제출 시) 활성화 시 [서버에서 다시 유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)에서 숨겨진 필드를 제외하기 전에 서버에서 다시 계산함 [!UICONTROL 기록 문서].
+* **[!UICONTROL 기본]**
+   * **템플릿:** 템플릿 기본값 또는 사용자 지정을 선택할 수 있습니다.
+     ![대체 텍스트](image.png)
+   * **강조 색상:** 의 템플릿 색상을 미리 정의할 수 있습니다. [!UICONTROL 기록 문서].
+   * **글꼴 모음:** 글꼴 유형 선택 [!UICONTROL 기록 문서] 텍스트.
+   * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 의 스키마 기반 적응형 양식에서 바인딩되지 않은 필드가 포함됩니다. [!UICONTROL 기록 문서]. 기본적으로 true입니다.
+   * **숨겨진 경우 DoR에서 필드 제외:** 숨겨진 필드를 제외하려면 속성을 설정하십시오. [!UICONTROL 기록 문서] (양식 제출 시) 활성화 시 [서버에서 다시 유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)에서 숨겨진 필드를 제외하기 전에 서버에서 다시 계산함 [!UICONTROL 기록 문서]
+* **[!UICONTROL 양식 필드 속성]**
+   * 옵션을 선택하면 **확인란 및 라디오 버튼 구성 요소의 경우 선택한 값만 표시합니다.**&#x200B;에서는 선택한 값만 포함하는 DoR 출력이 생성됩니다.
+   * 선택한 여러 값에 대해 분리자를 선택하거나 다른 분리자 유형을 선택할 수 있습니다.
+   * 옵션 정렬
+      * 세로
+      * 가로
+      * 적응형 양식과 동일
+     >[!NOTE]
+     > 세로 및 가로 정렬은 라디오 단추와 확인란에만 적용할 수 있습니다
+* **[!UICONTROL 기본 페이지 속성]** 자세한 내용을 보려면 클릭 [기본 페이지 속성](#master-page-properties-master-page-properties)
 
 ## 기록 문서에서 페이지 나누기 적용 {#apply-page-breaks-in-dor}
 
