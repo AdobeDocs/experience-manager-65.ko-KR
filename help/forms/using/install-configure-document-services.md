@@ -5,7 +5,7 @@ topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 0a1a0d8e3a2794bda247e7b07a2ef9d9fcac7c13
+source-git-commit: 7b0f8222408d43a298fa2036020963721cfbd1f9
 workflow-type: tm+mt
 source-wordcount: '5660'
 ht-degree: 1%
@@ -78,8 +78,8 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 
 >[!NOTE]
 >
->* Microsoft® Windows에서 PDF Generator은 HTML 파일을 PDF 문서로 변환하기 위한 WebKit, Acrobat WebCapture 및 PhantomJS 변환 경로를 지원합니다.
->* UNIX 기반 운영 체제에서 PDF Generator은 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 PhantomJS 변환 경로를 지원합니다.
+>* Microsoft® Windows에서 PDF Generator은 HTML 파일을 PDF 문서로 변환하기 위한 WebKit, Acrobat WebCapture 및 WebToPDF 변환 경로를 지원합니다.
+>* UNIX 기반 운영 체제에서 PDF Generator은 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 WebToPDF 변환 경로를 지원합니다.
 >
 
 ### UNIX 기반 운영 체제에 대한 추가 요구 사항 {#extrarequirements}
@@ -168,7 +168,7 @@ UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 
    * /usr/lib/libcrypto.so
    * /usr/lib/libssl.so
 
-* **(PDF Generator 전용)** PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 PhantomJS 경로를 지원합니다. PhantomJS 경로에 대한 변환을 활성화하려면 아래에 나열된 64비트 라이브러리를 설치합니다. 일반적으로 이러한 라이브러리는 이미 설치되어 있습니다. 라이브러리가 누락된 경우 수동으로 설치합니다.
+* **(PDF Generator 전용)** PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 WebToPDF 경로를 지원합니다. WebToPDF 경로에 대한 변환을 활성화하려면 아래에 나열된 64비트 라이브러리를 설치하십시오. 일반적으로 이러한 라이브러리는 이미 설치되어 있습니다. 라이브러리가 누락된 경우 수동으로 설치합니다.
 
    * linux-gate.so.1
    * libz.so.1
@@ -336,7 +336,7 @@ Windows Server에서 PDF Generator 서비스를 사용하여 문서를 PDF으로
 
 ### (Windows만 해당) HTML에서 PDF 전환으로 구성 {#configure-html-to-pdf-conversion}
 
-PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 WebKit, WebCapture 및 PhantomJS 경로 또는 메서드를 제공합니다. Windows에서 WebKit 및 Acrobat WebCapture 경로에 대한 변환을 활성화하려면 유니코드 글꼴을 %windir%\fonts 디렉터리에 복사합니다.
+PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 WebKit, WebCapture 및 WebToPDF 경로 또는 메서드를 제공합니다. Windows에서 WebKit 및 Acrobat WebCapture 경로에 대한 변환을 활성화하려면 유니코드 글꼴을 %windir%\fonts 디렉터리에 복사합니다.
 
 >[!NOTE]
 >
@@ -344,7 +344,7 @@ PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 WebKit, Web
 
 ### (UNIX 기반 플랫폼만 해당) HTML-PDF 변환을 위한 추가 구성  {#extra-configurations-for-html-to-pdf-conversion}
 
-UNIX 기반 플랫폼에서 PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 PhantomJS 경로를 지원합니다. HTML-PDF 변환을 활성화하려면 원하는 변환 경로에 적용할 수 있는 다음 구성을 수행합니다.
+UNIX 기반 플랫폼에서 PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 WebToPDF 경로를 지원합니다. HTML-PDF 변환을 활성화하려면 원하는 변환 경로에 적용할 수 있는 다음 구성을 수행합니다.
 
 ### (UNIX 기반 플랫폼만 해당) 유니코드 글꼴 지원 활성화(WebKit만 해당) {#enable-support-for-unicode-fonts-webkit-only}
 
@@ -485,7 +485,7 @@ Microsoft® Windows에서 PDF Generator 서비스는 Adobe Acrobat을 사용하�
 
 ### (Windows만 해당) HTML-PDF 변환을 위한 기본 경로 구성 {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 여러 경로(Webkit, Acrobat WebCapture(Windows에만 해당) 및 PhantomJS)를 제공합니다. Adobe은 동적 콘텐츠를 처리할 수 있고 32비트 라이브러리에 대한 종속성이 없거나 추가 글꼴이 필요 없으므로 PhantomJS 라우트를 사용하는 것이 좋습니다. 또한 PhantomJS 경로는 변환을 실행하기 위해 sudo 또는 root 액세스가 필요하지 않습니다.
+PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 여러 경로(Webkit, Acrobat WebCapture(Windows만 해당) 및 WebToPDF)를 제공합니다. WebToPDF 경로는 다이내믹 콘텐츠를 처리할 수 있는 기능을 가지고 있으며 32비트 라이브러리에 대한 종속성이 없거나 추가 글꼴이 필요하지 않으므로 Adobe에서 사용하는 것이 좋습니다. 또한 WebToPDF 경로는 변환을 실행하기 위해 sudo 또는 root 액세스가 필요하지 않습니다.
 
 HTML-PDF 전환의 기본 기본 기본 경로는 Webkit입니다. 변환 경로를 변경하려면:
 
@@ -583,7 +583,7 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
 
 1. 다음으로 이동 `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.
 
-1. 다음 명령을 실행하여 PhantomJS에서 HTML으로 PDF 전환하는 데 필요한 모든 라이브러리를 나열합니다.
+1. 다음 명령을 실행하여 WebToPDF에서 HTML으로 PDF 변환하는 데 필요한 모든 라이브러리를 나열합니다.
 
    `ldd phantomjs`
 
@@ -691,11 +691,11 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 * PDF Generator 구성 UI에 글꼴 디렉터리가 추가되었는지 확인합니다.
 
-**Linux 및 Solaris(PhantomJS 변환 경로)**
+**Linux 및 Solaris(WebToPDF 변환 경로)**
 
-* Webkit 기반 HTMLToPDF 변환에 32비트 라이브러리(libicudata.so.42)를 사용할 수 있고 PhantomJS 기반 HTMLToPDF 변환에 64비트 라이브러리(libicudata.so.42 lib)를 사용할 수 있는지 확인합니다.
+* Webkit 기반 HTMLToPDF 변환에 32비트 라이브러리(libicudata.so.42)를 사용할 수 있고 WebToPDF 기반 HTMLToPDF 변환에 64비트 라이브러리(libicudata.so.42)를 사용할 수 있는지 확인합니다.
 
-* 다음 명령을 실행하여 phantomjs에 대해 누락된 라이브러리를 나열합니다.
+* 다음 명령을 실행하여 WebToPDF에 대해 누락된 라이브러리를 나열합니다.
 
   ```
   ldd phantomjs | grep not
