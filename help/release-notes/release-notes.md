@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 371d325287c9d3d11d154c3121f001dad3f3b986
+source-git-commit: 1ba2782fcc81e5090dced4eed83a3a4911676f09
 workflow-type: tm+mt
-source-wordcount: '3842'
+source-wordcount: '3819'
 ht-degree: 4%
 
 ---
@@ -49,10 +49,10 @@ ht-degree: 4%
    * 을 사용한 중첩 조건 구현 지원 `When-then-else` 기능.
    * 필드를 포함한 패널 및 양식의 유효성을 검사하거나 재설정합니다.
    * 사용자 지정 함수 내에서 let 및 arrow 함수(ES10 지원)와 같은 최신 JavaScript 기능을 지원합니다.
-* PDF 접근성을 위한 AutoTag API: 이제 OSGi의 AEM Forms은 단락 및 목록에 태그를 추가하여 접근성 표준에 대한 PDF을 개선하기 위해 새로운 AutoTag API를 지원합니다. 보조 기술을 가진 사용자가 PDF에 보다 쉽게 액세스할 수 있도록 해줍니다.
+* PDF 접근성을 위한 AutoTag API: 이제 OSGi의 AEM Forms에서 새로운 AutoTag API를 지원하여 단락 및 목록을 추가하여 접근성 표준에 대한 PDF을 강화합니다. 보조 기술을 가진 사용자가 PDF에 보다 쉽게 액세스할 수 있도록 해줍니다.
 * 16비트 PNG 지원: 이제 PDF Generator의 ImageToPdf 서비스에서 16비트 색상 깊이의 PNG 변환을 지원합니다.
-* XDP의 개별 텍스트 블록에 아티팩트 적용: Forms Designer에 새로운 기능이 도입되어 사용자가 XDP 파일의 개별 텍스트 블록에 대한 설정을 구성하여 결과 PDF에서 아티팩트로 처리되는 요소(예: 머리글 및 바닥글)를 제어하여 보조 기술에 액세스할 수 있습니다. 주요 기능에는 텍스트 블록을 아티팩트로 표시하고 이러한 설정을 XDP 메타데이터에 포함시키는 작업이 포함됩니다. Forms 출력 서비스는 PDF 생성 중에 이러한 설정을 적용하여 적절한 PDF/UA 태깅을 보장합니다.
-* AEM Forms Designer 인증 `GB18030:2022` 표준. 이 인증을 통해 이제 Forms Designer는 편집 가능한 모든 필드와 대화 상자에 중국어 문자를 입력할 수 있는 중국어 유니코드 문자 세트를 지원합니다.
+* XDP의 개별 텍스트 블록에 아티팩트 적용: 이제 Forms Designer를 사용하여 사용자가 XDP 파일의 개별 텍스트 블록에 대한 설정을 구성할 수 있습니다. 이 기능을 사용하면 결과 PDF에서 아티팩트로 처리되는 요소를 제어할 수 있습니다. 머리글 및 바닥글과 같은 이러한 요소는 보조 기술에 액세스할 수 있습니다. 주요 기능에는 텍스트 블록을 아티팩트로 표시하고 이러한 설정을 XDP 메타데이터에 포함시키는 작업이 포함됩니다. Forms 출력 서비스는 PDF 생성 중에 이러한 설정을 적용하여 적절한 PDF/UA 태깅을 보장합니다.
+* AEM Forms Designer 인증 `GB18030:2022` 표준. 이 인증을 통해 이제 Forms Designer에서는 편집 가능한 모든 필드와 대화 상자에 중국어 문자를 입력할 수 있는 중국어 유니코드 문자 세트를 지원합니다.
 
 
 ### [!DNL Assets]
@@ -183,17 +183,17 @@ ht-degree: 4%
 #### [!DNL Adaptive Forms] {#forms-6520}
 
 * Adobe Experience Manager 게시 인스턴스에서 Adobe Experience Manager 워크플로우로 적응형 양식을 제출하는 경우 워크플로우가 첨부 파일을 저장하지 못합니다. (FORMS-14209)
-* 사용자가 OSGi의 AEM Forms 서비스 팩 15(6.5.15.0)에서 PDF으로 인쇄 단추를 클릭하면 클라이언트측 유효성 검사가 실패하고, 개발자 도구 콘솔 창에 표시되는 오류 메시지로 인해 알 수 있습니다. (FORMS-14029)
-* 사용자가 AEM 6.5 Forms 서비스 팩 17(6.5.17.0), AEM 6.5 Forms 서비스 팩 18(6.5.18.0) 또는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)에서 양식을 제출할 때 &quot;감사합니다&quot; 메시지 번역이 제대로 작동하지 않습니다. 메시지가 사전에 올바르게 번역되어 있더라도. (FORMS-13846)
+* 사용자가 클릭할 때 **PDF으로 인쇄** osgi의 AEM Forms 서비스 팩 15(6.5.15.0)에서 클라이언트측 유효성 검사가 실패하고 개발자 도구 콘솔 창에 표시되는 오류 메시지로 인해 알 수 있습니다. (FORMS-14029)
+* 사용자가 AEM 6.5 Forms 서비스 팩 17(6.5.17.0) 또는 서비스 팩 18(6.5.18.0), 서비스 팩 19(6.5.19.0)에서 양식을 제출할 때 &quot;감사합니다&quot; 메시지 번역이 제대로 작동하지 않습니다. 그러나 메시지는 사전에서 올바르게 번역됩니다. (FORMS-13846)
 * 사용자가 날짜 선택기 구성 요소가 있는 양식을 미리 볼 때 날짜 선택기 필드가 다른 양식 필드와 일치하지 않습니다. (FORMS-13763)
-* 환경 AEM Forms 서비스 팩 19(6.5.19.0)의 사용자가 API를 호출하여 숫자의 형식을 지정할 때 형식이 지정된 숫자가 해당 로케일과 정렬되지 않고 통화 기호가 올바르게 표시되지 않습니다. 이 문제는 &quot;de_DE&quot; 또는 &quot;en_US&quot;로 설정된 로케일 매개 변수에 관계없이 지속됩니다. (FORMS-13759)
+* 환경 AEM Forms 서비스 팩 19(6.5.19.0)의 사용자가 API를 호출하여 숫자의 형식을 지정할 때 형식이 지정된 숫자가 해당 로케일과 정렬되지 않습니다. 따라서 통화 기호가 올바르게 표시되지 않습니다. 이 문제는 &quot;de_DE&quot; 또는 &quot;en_US&quot;로 설정된 로케일 매개 변수에 관계없이 지속됩니다. (FORMS-13759)
 * 환경 AEM Forms 서비스 팩 19(6.5.19.0)의 사용자가 Img2Pdf PDFG 서비스를 사용하여 16비트 PNG를 PDF으로 변환하면 실패하고 &quot;Acrobat 이미지 변환 사용&quot; 서비스를 사용할 수 없습니다. (FORMS-13754)
-* AEM Forms 서비스 팩 19(6.5.19.1)에서 사용자가 AEM Forms JEE(adminui)의 관리 웹 인터페이스의 서비스/PDF Generator/Adobe PDF 설정 섹션에서 기존 JobOptions 파일을 업로드할 때 업로드가 실패하고 오류 메시지가 표시됩니다(FORMS-13597).
+* AEM Forms 서비스 팩 19(6.5.19.1)에서 사용자가 AEM Forms JEE의 광고에서 서비스/PDF Generator/Adobe PDF 설정 섹션에 있는 기존 JobOptions 파일을 업로드할 때 업로드가 실패합니다. 또한 다음 오류 메시지가 표시됩니다(FORMS-13597).
   `"An error has occurred while processing your request. Please use the breadcrumb links to navigate to another page."`
 * 사용자가 AEM Forms 서비스 팩 15(6.5.15.0)에서 AEM Forms 서비스 팩(6.5.17.0) 또는 AEM Forms 서비스 팩(6.5.19.0)으로 마이그레이션할 때 FD 키가 중복되어 양식이 올바르게 번역되지 않습니다. (FORMS-13461)
-* 사용자가 AMS의 배포 토폴로지에서 지원하는 작성자 앞에 dispatcher를 놓으면 작업 할당 제출이 중단/실패합니다. (FORMS-8010)
+* 사용자가 AMS의 배포 토폴로지에서 지원하는 작성자 앞에 dispatcher를 놓으면 작업 할당 제출이 중단되거나 실패합니다. (FORMS-8010)
 * 접근성 관련 수정 사항:
-   * 이제 &quot;formsanddocuments&quot; 페이지의 아이콘은 ANDI 표준에 따라 액세스할 수 있습니다. (FORMS-13094)
+   * 이제 ANDI 표준에 따라 &quot;formsanddocuments&quot; 페이지의 아이콘에 액세스할 수 있습니다. (FORMS-13094)
    * 사용자는 키보드를 통해 도구 모음에 액세스하여 편집 페이지의 콘텐츠를 저장하거나 편집할 수 있으며, 도구 모음은 ANDI 표준에 따라 향상됩니다. (FORMS-13102)
    * &quot;필수 또는 필수&quot; 양식 필드는 ANDI 표준에 따라 액세스할 수 있습니다. (FORMS-13097)
 
@@ -201,11 +201,11 @@ ht-degree: 4%
 * Internet Explorer 호환성 모드에서 날짜 입력 필드 구성 요소가 Microsoft Edge에서 제대로 작동하지 않습니다. (FORMS-13170)
 * 다음에 대한 수정 사항이 있을 때 첨부 파일이 있는 정지된 이메일 알림을 보내지 못했습니다. [첨부 파일이 있는 이메일 사용 추가 단계](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) 서버에서 수행됩니다. (FORMS-14227)
 * AEM Forms Workspace on Service Pack 18(6.5.18.0)에서 사용자가 업로드한 문서에 주석을 다는 경우 문서 파일이 손상됩니다. (FORMS-13735)
-* AEM Forms 서비스 팩 18(6.5.18.0), AEM Forms 서비스 팩 19(6.5.19.0) 또는 AEM Forms 서비스 팩 20(6.5.20.0)에서 사용자가 편집 인터페이스 내의 사이드 패널 에셋 탭에서 적응형 양식을 검색하려고 하면(전환하여) 검색이 실패합니다. (FORMS-14117)
+* AEM Forms 서비스 팩 18(6.5.18.0), 서비스 팩 19(6.5.19.0) 또는 서비스 팩 20(6.5.20.0)에서 사용자가 사이드 패널에서 적응형 양식을 검색하려고 하면 검색이 실패합니다. (FORMS-14117)
 * 사용자가 독일어로 만들어져 영어로 번역된 양식을 편집할 때 &#39;미리보기&#39; 모드와 &#39;편집&#39; 모드 간에 언어가 일관되지 않게 표시됩니다. 이렇게 하면 RadioButton 및 Checkbox 구성 요소가 &#39;편집&#39; 모드 중에는 영어로 표시되고, &#39;미리 보기&#39; 모드 중에는 독일어로 올바르게 표시됩니다. (FORMS-13910)
 * 프로세스 제거 프로세스 도구가 실패하고 오류가 발생했습니다. `NoClassDefFoundError: org/omg/CORBA/UserException`. (FORMS-13751)
-* 사용자가 임베드 컨테이너를 사용하여 외부 또는 AEM Sites의 웹 페이지 내에 적응형 양식(AF)을 임베드하려고 하면 적응형 양식 가이드 컨테이너는 임베드된 양식에 대해 role=&quot;main&quot;(으)로 ARIA LABEL을 전달합니다. ARIA 지침에 따르면 페이지당 하나의 역할=&quot;기본&quot;만 있어야 합니다. 따라서 사용자가 페이지의 기본 컨텐츠에 다른 role=&quot;main&quot;을 추가하면 액세서빌러티 문제로 플래그가 지정됩니다. (FORMS-13538)
-* AEM Forms 서비스 팩 19(6.5.19.0)의 경우 적응형 양식에서 드롭다운을 사용할 때 자리 표시자 텍스트가 있는 드롭다운은 id=&quot;emptyValue&quot; 값을 유지합니다. 따라서 양식에 여러 드롭다운 구성 요소가 있는 경우, 각각 id=&quot;emptyValue&quot;가 지정되며, 이는 ARIA 지침에 따라 올바르지 않습니다. (FORMS-13370).
+* 사용자가 웹 페이지 내(외부 또는 AEM Sites)에 임베드 컨테이너를 사용하여 적응형 양식(AF)을 임베드하려고 하면 적응형 양식 가이드 컨테이너가 ARIA 레이블을 도입합니다. 레이블에는 포함된 양식에 대한 role=&quot;main&quot; 이 있습니다. ARIA 지침에 따르면 페이지당 하나의 role=&quot;main&quot; 만 있어야 합니다. 따라서 사용자가 페이지의 기본 컨텐츠에 다른 role=&quot;main&quot;을 추가하면 액세서빌러티 문제로 플래그가 지정됩니다. (FORMS-13538)
+* AEM Forms 서비스 팩 19(6.5.19.0)에서 적응형 양식에서 드롭다운을 사용할 때 자리 표시자 텍스트가 있는 드롭다운은 값을 유지합니다 `id="emptyValue"`. 따라서 양식에 여러 드롭다운 구성 요소가 있는 경우 각 구성 요소에는 `id="emptyValue"` 이는 ARIA 지침에 따라 정확하지 않습니다. (FORMS-13370).
 * XML을 통해 데이터가 제출된 후 사용자가 대화형 통신을 다시 로드하면 생성된 PDF에서 텍스트 블록 사이에 빈 공간이 발생합니다. (FORMS-13481)
 * ConfigurationManager를 실행하는 동안 &quot;DSC 배포 단계 준비&quot; 화면에 대한 IPH가 누락되었습니다. (FORMS-10699)
 * 사용자가 새 사전을 추가하여 기존 사전이 있는 양식을 번역할 때 이전 번역이 무효화됩니다. 다음 문제가 발생합니다. (FORMS-13576)
@@ -215,13 +215,13 @@ ht-degree: 4%
 #### [!DNL Forms Designer] {#forms-desgner-6520}
 
 * 사용자가 환경 AEM Forms 서비스 팩 19(6.5.19.0)에서 AEM Forms Designer를 사용하여 기존 양식에 새 테이블을 추가하면 충돌이 발생합니다. (LC-3921978)
-* 사용자가 Linux 환경에서 적응형 양식을 렌더링할 때 필드 구성 요소 사이에 추가 공간이 발생합니다. (LC-3921957)
+* 사용자가 Linux® 환경에서 적응형 양식을 렌더링할 때 필드 구성 요소 사이에 추가 공간이 발생합니다. (LC-3921957)
 * 사용자가 출력 서비스를 사용하여 XTG 파일을 PostScript 형식으로 변환할 때 다음 오류로 실패합니다.           `(AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE)`. (LC-3921720)
 
   문제를 해결하려면: 데이터에 너비 0 공백(0x200b)과 같은 특수 문자가 포함되어 있는지 확인합니다. 그렇다면 태그를 추가하여 플래그를 사용하십시오 `<behaviorOverride>patch-LC3921720:1</behaviorOverride>` 에 제공된 대로 XCI 파일에서 [custom_xfa.xci](/help/forms/using/assets/custom_xfa.xci) 파일.
 
-* Linux 환경에서 AEM Forms 서비스 팩 18(6.5.18.0)을 사용하는 경우 AMD 프로세서를 탑재한 AVX /AVX2 명령을 지원하지 않는 CPU에서 XMLFM이 충돌합니다. (LC-3921718)
-* 사용자가 Forms 출력 서비스를 사용하여 XDP에서 PDF을 만들 때 XDP의 &quot;개별 텍스트 블록&quot;에서 &quot;설정&quot;을 구성하여 &quot;아티팩트&quot;된 항목을 제어할 수 없습니다. (LC-3921954)
+* Linux® 환경에서 AEM Forms 서비스 팩 18(6.5.18.0)을 사용하는 경우 AMD® 프로세서가 탑재된 AVX/AVX2 명령을 지원하지 않는 CPU에서 XMLFM이 충돌합니다. (LC-3921718)
+* 사용자가 Forms 출력 서비스를 사용하여 XDP에서 PDF을 만들 때 XDP의 &quot;개별 텍스트 블록&quot;에서 &quot;설정&quot;을 구성하여 &quot;아티팩트&quot;를 제어할 수 없습니다. (LC-3921954)
 
 <!--
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.21.0 Forms add-on package release is scheduled for Thursday, June 13, 2024. A list of Forms fixes and enhancements is added to this section post the release.
@@ -300,8 +300,8 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### 번역{#foundation-translation-6521}
 
-* AEM 6.5.19 기본 번역 상태가 시작에 대해 예상대로 업데이트되지 않는 문제가 있습니다. 번역된 파일을 AEM 시작과 연결된 번역 작업으로 가져온 다음에는 상태가 (으)로 변경될 예정입니다. `Approved`. 대신 상태가 (으)로 변경되었습니다. `Ready for Review`: 이는 예상 비헤이비어가 아닙니다. (NPR-41756)
-* 여러 구성을 만들고 번역 Cloud Service 구성으로 이동할 때 일부 요소가 UI에 표시되는 것은 아닙니다. 처음 40개의 요소/폴더만 표시됩니다. 지연 로드는 트리거되지만 더 이상의 컨텐츠는 추가되지 않습니다. (NPR-41829)
+* AEM 6.5.19 기본 번역 상태가 시작에 대해 예상대로 업데이트되지 않는 문제가 있습니다. 번역된 파일을 AEM 시작과 연결된 번역 작업으로 가져온 후 상태는 다음과 같아야 합니다 `Approved`. 대신 상태는 다음과 같이 변경됩니다 `Ready for Review`: 이는 예상 비헤이비어가 아닙니다. (NPR-41756)
+* 여러 구성을 만들고 번역 Cloud Service 구성으로 이동할 때 일부 요소가 UI에 표시되는 것은 아닙니다. 처음 40개의 요소/폴더만 표시됩니다. 소극적 로드가 트리거되지만 더 이상의 컨텐츠는 추가되지 않습니다. (NPR-41829)
 * 터치 사용자 인터페이스의 권한 페이지에 일본어가 있으면 깨진 문자가 발생합니다. (NPR-41794)
 * AEM 6.5.14 및 6.5.9에서는 번역을 위해 이모지를 보내지 않습니다. (CQ-4357000)
 
@@ -505,9 +505,9 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
 * 설치 중에 다음과 같은 오류 및 경고 메시지가 표시될 수 있습니다. [!DNL Experience Manager] 6.5.x.x:
    * &quot;Adobe Target 통합이에서 구성된 경우 [!DNL Experience Manager] target Standard API(IMS 인증)를 사용한 다음 경험 조각을 Target으로 내보내면 잘못된 오퍼 유형이 생성됩니다. 경험 조각/소스 &quot;Adobe Experience Manager&quot; 유형 대신 Target은 &quot;HTML&quot;/소스 &quot;Adobe Target Classic&quot; 유형으로 여러 오퍼를 만듭니다.
-   * `com.adobe.granite.maintenance.impl.TaskScheduler`: granite/operations/maintenance에 유지 관리 창이 없습니다.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler`: 다음 위치에 유지 관리 창이 없습니다. `granite/operations/maintenance`.
    * SUM, MAX 및 MIN과 같은 집계 함수를 사용하는 경우 적용형 양식 서버측 유효성 검사가 실패합니다(CQ-4274424).
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` : granite/operations/maintenance에 유지 관리 창이 없습니다.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler` : 다음 위치에 유지 관리 창이 없습니다. `granite/operations/maintenance`.
    * 쇼퍼블 배너 뷰어를 통해 자산을 미리 볼 때 Dynamic Media 대화형 이미지의 핫스팟이 표시되지 않습니다.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : 등록 변경이 등록 취소를 완료할 때까지 기다리는 동안 시간이 초과되었습니다.
 
@@ -527,7 +527,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 ### AEM Forms의 알려진 문제 {#known-issues-aem-forms-6521}
 
 
-* AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 Geode JAR의 중복 항목을 찾으면 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` 다음 아래에 `<AEM_Forms_Installation>/lib/caching/lib` 폴더(FORMS-14926).
+* AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 Geode jar의 중복 항목을 찾으면 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` 다음 아래에 `<AEM_Forms_Installation>/lib/caching/lib` 폴더(FORMS-14926).
 
   문제를 해결하려면 다음 단계를 수행하십시오.
 
