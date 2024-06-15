@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 1ba2782fcc81e5090dced4eed83a3a4911676f09
+source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
 workflow-type: tm+mt
-source-wordcount: '3819'
+source-wordcount: '3825'
 ht-degree: 4%
 
 ---
@@ -199,7 +199,7 @@ ht-degree: 4%
 
 * 사용자가 페이지 로드 시 양식을 보려고 하면 렌더링되지 않습니다. (FORMS-13594)
 * Internet Explorer 호환성 모드에서 날짜 입력 필드 구성 요소가 Microsoft Edge에서 제대로 작동하지 않습니다. (FORMS-13170)
-* 다음에 대한 수정 사항이 있을 때 첨부 파일이 있는 정지된 이메일 알림을 보내지 못했습니다. [첨부 파일이 있는 이메일 사용 추가 단계](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) 서버에서 수행됩니다. (FORMS-14227)
+* 다음에 대한 수정 사항이 있을 때 첨부 파일이 있는 정지된 이메일 알림을 보내지 못했습니다. [첨부 파일이 있는 이메일을 사용하는 추가 단계](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) 서버에서 수행됩니다. (FORMS-14227)
 * AEM Forms Workspace on Service Pack 18(6.5.18.0)에서 사용자가 업로드한 문서에 주석을 다는 경우 문서 파일이 손상됩니다. (FORMS-13735)
 * AEM Forms 서비스 팩 18(6.5.18.0), 서비스 팩 19(6.5.19.0) 또는 서비스 팩 20(6.5.20.0)에서 사용자가 사이드 패널에서 적응형 양식을 검색하려고 하면 검색이 실패합니다. (FORMS-14117)
 * 사용자가 독일어로 만들어져 영어로 번역된 양식을 편집할 때 &#39;미리보기&#39; 모드와 &#39;편집&#39; 모드 간에 언어가 일관되지 않게 표시됩니다. 이렇게 하면 RadioButton 및 Checkbox 구성 요소가 &#39;편집&#39; 모드 중에는 영어로 표시되고, &#39;미리 보기&#39; 모드 중에는 독일어로 올바르게 표시됩니다. (FORMS-13910)
@@ -212,7 +212,7 @@ ht-degree: 4%
    * 일부 필드에서 번역된 데이터를 채우지 못했습니다.
    * 데이터가 사전에 성공적으로 저장되더라도 일부 필드가 새 언어로 번역되지 않습니다.
 
-#### [!DNL Forms Designer] {#forms-desgner-6520}
+#### [!DNL Forms Designer] {#forms-desgner-6521}
 
 * 사용자가 환경 AEM Forms 서비스 팩 19(6.5.19.0)에서 AEM Forms Designer를 사용하여 기존 양식에 새 테이블을 추가하면 충돌이 발생합니다. (LC-3921978)
 * 사용자가 Linux® 환경에서 적응형 양식을 렌더링할 때 필드 구성 요소 사이에 추가 공간이 발생합니다. (LC-3921957)

@@ -10,9 +10,9 @@ role: Admin, User, Developer
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 09eae6e3550e9e8505c042e23d6569971841d441
+source-git-commit: 6ef7e07f0b83b76981240533122aee8c3ee298c7
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -108,8 +108,11 @@ AEM Forms Designer용 독립형 설치 프로그램을 사용하는 경우 다�
 
 ## 자주 묻는 질문 {#fandq}
 
-* **사용자가 직접 64비트로 업그레이드할 수 있습니까?**
-   * 예. 사용자가 직접 64비트 디자이너로 업그레이드할 수 있습니다. 업그레이드하려면 다음을 설치하십시오. [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) designer 전체 설치 관리자 및 그 위에 후속 디자이너 패치 릴리스를 적용합니다.
+* **사용자가 64비트 디자이너를 직접 업그레이드하거나 설치할 수 있습니까?**
+   * 예. 사용자는 64비트 디자이너를 직접 업그레이드하거나 설치할 수 있습니다. 업그레이드하려면 다음을 설치하십시오. [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) designer 전체 설치 관리자 및 그 위에 후속 디자이너 패치 릴리스를 적용합니다.
+
+     >[!NOTE]
+     > 64비트 디자이너로 업그레이드하기 전에 먼저 32비트 디자이너가 있는 경우 제거합니다.
 
 * **사용자가 시스템에 32비트와 64비트를 모두 설치할 수 있습니까?**
    * 아니요. 32비트 및 64비트 설치는 동일한 시스템에서 작동하지 않습니다. 사용자는 32비트 디자이너 또는 64비트 디자이너를 가질 수 있습니다.
@@ -117,6 +120,6 @@ AEM Forms Designer용 독립형 설치 프로그램을 사용하는 경우 다�
 * **사용자가 64비트 디자이너 또는 32비트 디자이너에 있는지 어떻게 확인합니까?**
    * Forms Designer 버전을 확인하는 방법에는 두 가지가 있습니다.
 
-      1. 디자이너를 열고 도움말로 이동한 다음 디자이너 정보를 클릭하면 디자이너 버전 정보가 비트 정보와 함께 표시됩니다. 예를 들어 64비트가 아래와 같이 끝에 작성됩니다.
+      1. 디자이너를 열고 도움말로 이동한 다음 디자이너 정보를 클릭하면 디자이너 버전 정보가 비트 정보와 함께 표시됩니다. 예를 들어 64비트가 아래와 같이 버전 끝에 작성됩니다.
          `6.5.21.20240522.1.161 | 64 bit`
-      1. 디자이너를 열면 왼쪽 상단에 제품 이름에 대한 64비트 정보가 포함된 브랜딩 아이콘이 표시됩니다.
+      1. Designer를 열면 왼쪽 위에 제품 이름이 있는 64비트 정보가 있는 브랜딩 아이콘이 표시됩니다.

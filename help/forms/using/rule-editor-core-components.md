@@ -4,20 +4,19 @@ description: 적응형 Forms 규칙 편집기를 사용하면 코딩 또는 스�
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 7e9b4cc233d4040faf61241b3cbe52d26bfdba1e
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5588'
 ht-degree: 1%
 
 ---
 
 # 적응형 양식 핵심 구성 요소에 규칙 추가 {#adaptive-forms-rule-editor}
 
-<span class="preview"> 이 문서에는 일부 프리릴리스 기능에 대한 내용이 포함되어 있습니다. 이러한 프리릴리스 기능은 다음을 통해서만 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). 프리릴리스 프로그램의 기능은 다음과 같습니다.
+이 문서에는 다음 적응형 Forms 핵심 구성 요소의 최신 규칙 편집기 기능이 포함되어 있습니다.
 * When-else 기능을 사용하여 중첩된 조건 구현 지원
 * 필드를 포함한 패널 및 양식의 유효성 검사 또는 재설정
 * 사용자 정의 함수 내에서 let 및 arrow 함수(ES10 지원)와 같은 최신 JavaScript 기능을 지원합니다.
-</span>
 
 규칙 편집기 기능을 사용하면 Forms 비즈니스 사용자 및 개발자가 적응형 양식 개체에 대한 규칙을 쉽게 작성할 수 있습니다. 이러한 규칙은 양식에 대한 사전 설정 조건, 사용자 입력 및 사용자 작업을 기반으로 양식 개체에서 트리거하는 작업을 정의합니다. 정확성과 속도를 보장하는 양식 채우기 환경을 더욱 간소화하는 데 도움이 됩니다.
 
@@ -269,27 +268,23 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 개체 A의 값을 다음으로 설정:
 
-(문자열 ABC) 또는
-(객체 C의 객체 속성 X) 또는
-(함수의 값) 또는
-(수학 표현식의 값) 또는
-(데이터 모델 서비스의 출력 값);
+(문자열 ABC) OR (개체 C의 개체 속성 X) OR (함수의 값) OR (수학 표현식의 값) OR (데이터 모델 서비스의 출력 값);
 
-시기(선택 사항):
+다음과 같은 경우(선택 사항):
 
 (조건 1 및 조건 2 및 조건 3)은 TRUE입니다.
 
-다음 예제에서는 다음 값을 선택합니다. `Question2` 다음으로: `True` 및 값 설정 `Result` 다음으로: `correct`.
+다음 예제에서는 as `True` 의 `Question2` 값을 선택하고 as`correct`의 `Result` 값을 설정합니다.
 
-![Set-value-web-service](assets/set-value-web-service.png)
+![값 웹 서비스 설정](assets/set-value-web-service.png)
 
-양식 데이터 모델 서비스를 사용한 값 설정 규칙의 예입니다.
+양식 데이터 모델 서비스를 사용한 값 규칙 설정의 예.
 
-### [!UICONTROL 표시] {#show}
+### [!UICONTROL 보이다] {#show}
 
 사용 **[!UICONTROL 표시]** 규칙 유형을 사용하면 조건 충족 여부에 따라 양식 객체를 표시하거나 숨기는 규칙을 작성할 수 있습니다. 또한 Show 규칙 유형은 조건이 충족되지 않거나 반환되는 경우 숨기기 작업을 트리거합니다 `False`.
 
-일반적인 보기 규칙는 다음과 같이 구성됩니다.
+일반적인 표시 규칙은 다음과 같이 구성됩니다.
 
 `Show Object A;`
 
@@ -453,9 +448,9 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. Click **[!UICONTROL Save]**.
 -->
 
-### E. 완료 및 취소 버튼 {#done-and-cancel-buttons}
+### E. 완료 및 취소 단추 {#done-and-cancel-buttons}
 
-**[!UICONTROL 완료]** 버튼는 규칙 저장하는 데 사용됩니다. 불완전한 규칙 파일을 저장할 수 있습니다. 그러나 불완전한 것은 잘못된 것이며 실행되지 않습니다. 양식 개체에 저장된 규칙은 다음에 동일한 양식 개체에서 규칙 편집기 실행 때 나열됩니다. 해당 보기에서 기존 규칙을 관리 할 수 있습니다. 자세한 내용은 규칙](rule-editor.md#p-manage-rules-p) 관리를 참조하세요[.
+다음 **[!UICONTROL 완료]** 버튼을 사용하여 규칙을 저장합니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 불완전한 것은 잘못된 것이며 실행되지 않습니다. 양식 개체에 저장된 규칙은 다음에 동일한 양식 개체에서 규칙 편집기 실행 때 나열됩니다. 해당 보기에서 기존 규칙을 관리 할 수 있습니다. 자세한 내용은 규칙](rule-editor.md#p-manage-rules-p) 관리를 참조하세요[.
 
 취소&#x200B;]**버튼는**[!UICONTROL &#x200B;규칙에 대한 모든 변경 사항을 무시하고 규칙 편집기 닫습니다.
 
@@ -467,11 +462,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### 시각적 편집기 사용 {#using-visual-editor}
 
-다음 예제 양식을 사용하여 비주얼 편집기 에서 규칙 생성 방법을 이해합시다.
+다음 예제 양식을 사용하여 시각적 편집기에서 규칙을 만드는 방법을 살펴보겠습니다.
 
 ![Create-rule-예제](assets/create-rule-example.png)
 
-예제 대출 신청서의 대출 요건 섹션에서는 신청자가 결혼 여부, 급여 및 기혼인 경우 배우자의 급여를 지정해야 합니다. 사용자 입력을 기반으로 규칙이 대출 자격 금액을 계산하고 대출 자격 필드에 표시합니다. 다음 규칙을 적용하여 시나리오를 구현합니다.
+예제 대출 애플리케이션 양식의 대출 요건 섹션에는 신청자가 결혼 여부, 급여 및 결혼한 경우 배우자의 급여를 명시해야 합니다. 사용자 입력을 기반으로 규칙이 대출 자격 금액을 계산하고 대출 자격 필드에 표시합니다. 다음 규칙을 적용하여 시나리오를 구현합니다.
 
 * [배우자 임금] 필드는 [결혼 상태]가 [기혼]인 경우에만 표시됩니다.
 * 대출 가능 금액은 총 급여의 50%입니다.
@@ -564,9 +559,9 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 그런 다음 표현식 필드 주위의 강조 표시된 영역에서 을 선택하고 을 선택합니다 **[!UICONTROL 표현식 확장]**.
 
-   ![write-rules-visual-편집기-13](assets/write-rules-visual-editor-13-cc.png)
+   ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   확장 표현식 필드의 Select Operator 필드에서 **[!UICONTROL 나누기 by]**&#x200B;를 **[!UICONTROL 선택하고 Select Option]** 필드에서 Number ]**를**[!UICONTROL &#x200B;선택합니다&#x200B;**[!UICONTROL .]** 그런 다음 숫자 필드에 2 ]**를 지정합니다**[!UICONTROL .
+   확장 표현식 필드에서 다음을 선택합니다. **[!UICONTROL 다음으로 나눔]** 다음에서 **[!UICONTROL 연산자 선택]** 필드 및 **[!UICONTROL 숫자]** 다음에서 **[!UICONTROL 옵션 선택]** 필드. 그런 다음 을 지정합니다 **[!UICONTROL 2]** 번호 필드에서 을 클릭합니다.
 
    ![write-rules-visual-편집기-14](assets/write-rules-visual-editor-14-cc.png)
 
@@ -574,11 +569,11 @@ Users in the forms-power-users group can access code editor. For other users, co
    >
    >옵션 선택 필드에서 구성 요소, 함수, 수학 표현식 및 속성 값을 사용하여 복잡한 표현식을 만들 수 있습니다.
 
-   그런 다음 조건을 만들어 True를 반환하면 표현식이 실행됩니다.
+   다음, True를 반환할 때 표현식이 실행되는 조건을 만듭니다.
 
-1. 선택 **[!UICONTROL 조건 추가]** When 문을 추가합니다.
+1. 조건&#x200B;]**추가를 선택하여**[!UICONTROL  When 문을 추가합니다.
 
-   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
+   ![write-rules-visual-편집기-15](assets/write-rules-visual-editor-15-cc.png)
 
    When 문에서:
 
@@ -588,7 +583,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    * 다른 하나에서 문자열 선택 **[!UICONTROL 개체를 놓거나 여기를 선택]** 필드 및 지정 **[!UICONTROL 기혼]** 다음에서 **[!UICONTROL 문자열 입력]** 필드.
 
-   규칙이 최종적으로 규칙 편집기에 다음과 같이 표시됩니다.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
+   규칙이 최종적으로 규칙 편집기에 다음과 같이 표시됩니다.  ![write-rules-visual-편집기-16](assets/write-rules-visual-editor-16-cc.png)
 
 1. 선택 **[!UICONTROL 완료]**. 규칙을 저장합니다.
 
@@ -856,7 +851,7 @@ var c = {
 
 ![복합 표현식](assets/complexexpression.png)
 
-규칙 내에서 조건을 드래그 앤 드롭하여 편집할 수도 있습니다. 을(를) 선택하고 핸들을 마우스로 가리킵니다( ![핸들](assets/drag-handle.svg)) 아래에 그룹화됩니다. 포인터가 아래와 같이 손 기호로 바뀌면 규칙 내의 아무 곳에나 조건을 끌어다 놓습니다. 규칙 구조가 변경됩니다.
+규칙 내에서 조건을 드래그 앤 드롭하여 편집할 수도 있습니다. 을(를) 선택하고 핸들을 마우스로 가리킵니다( ![핸들](assets/drag-handle.svg)) 아래에 그룹화됩니다. 포인터가 아래 표시된 대로 손 기호로 바뀌면 규칙을 규칙 내의 아무 곳에나 드래그하여 놓습니다. 규칙 구조가 변경됩니다.
 
 ![드래그 앤 드롭](assets/drag-and-drop.png)
 
@@ -866,7 +861,7 @@ var c = {
 
 다음은 주택에 대한 모기지가 이미 있는 경우 정적 텍스트 개체를 표시하는 예제 조건으로, 사용자 날짜 필드를 채워 나타냅니다.
 
-사용자가 입력한 부동산의 담보대출 일자가 과거인 경우 적응형 양식에 소득 계산에 대한 메모가 표시됩니다. 다음 규칙은 사용자가 입력한 날짜와 현재 날짜를 비교하며 사용자가 입력한 날짜가 현재 날짜보다 이전인 경우 양식에 텍스트 메시지(소득)가 표시됩니다.
+사용자 사용자가 입력한 속성 담보 대출 날짜가 과거인 경우 적응형 양식에 소득 계산에 대한 메모가 표시됩니다. 다음 규칙은 사용자가 입력한 날짜를 현재 날짜와 비교하고 사용자가 입력한 날짜가 현재 날짜보다 이전인 경우 양식에 텍스트 메시지(Income)가 표시됩니다.
 
 ![날짜 표현식 조건](assets/dateexpressioncondition.png)
 
@@ -878,7 +873,7 @@ var c = {
 
 규칙 편집기를 사용하면 두 숫자를 비교하는 조건을 만들 수 있습니다.
 
-다음은 지원자가 현재 주소에 있는 개월 수가 36개월 미만인 경우 정적 텍스트 객체를 표시하는 예제 조건입니다.
+다음은 신청자가 현재 주소에 머무는 개월 수가 36개월 미만인 경우 정적 텍스트 개체를 표시하는 예제 조건입니다.
 
 ![숫자 비교 조건](assets/numbercomparisoncondition.png)
 

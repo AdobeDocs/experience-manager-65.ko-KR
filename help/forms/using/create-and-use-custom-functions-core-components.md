@@ -4,22 +4,21 @@ description: AEM Forms은 사용자가 규칙 편집기 내에서 자체 함수�
 keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 사용하고, 사용자 지정 함수를 만들고, 규칙 편집기에서 사용자 지정 함수를 사용합니다.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: e7ad5c0149e428265598c806421131fe74fad350
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '3394'
+source-wordcount: '3385'
 ht-degree: 2%
 
 ---
 
 # 적응형 Forms 핵심 구성 요소의 사용자 정의 기능
 
-<span class="preview"> 이 문서에는 얼리어답터 프로그램 아래의 기능에 대한 내용이 포함되어 있습니다. 이러한 프리릴리스 기능은 다음을 통해서만 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). 프리릴리스 프로그램의 기능은 다음과 같습니다.
-<!-- * Optional parameter support in Custom Functions-->
+이 문서에서는 다음과 같은 최신 기능이 포함된 최신 적응형 양식 핵심 구성 요소로 사용자 정의 기능을 만드는 방법에 대해 설명합니다.
 * 사용자 정의 기능을 위한 캐싱 기능
 * 사용자 지정 함수에 대한 전역 범위 개체 및 필드 개체 지원
 * let 및 arrow 함수와 같은 최신 JavaScript 기능 지원(ES10 지원)
 
-을(를) 설정하십시오. [최신 양식 버전](https://github.com/adobe/aem-core-forms-components/tree/release/650) 을 클릭하여 AEM Forms 핵심 구성 요소 환경에서 사용자 지정 함수의 프리릴리스 기능을 사용할 수 있습니다. </span>
+을(를) 설정하십시오. [최신 양식 버전](https://github.com/adobe/aem-core-forms-components/tree/release/650) 사용자 지정 함수의 최신 기능을 사용하려면 AEM Forms 핵심 구성 요소 환경에서 을 참조하십시오. </span>
 
 
 | 버전 | 문서 링크 |
