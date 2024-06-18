@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
+source-git-commit: 84e56b9e9552903fa210cd680a64c268d5e15626
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3823'
 ht-degree: 4%
 
 ---
@@ -527,16 +527,15 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 ### AEM Forms의 알려진 문제 {#known-issues-aem-forms-6521}
 
 
-* AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 Geode jar의 중복 항목을 찾으면 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` 다음 아래에 `<AEM_Forms_Installation>/lib/caching/lib` 폴더(FORMS-14926).
+* AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 Geode jar의 중복 항목을 찾으면 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` 다음 아래에 `<AEM_Forms_Installation>/lib/caching/lib` 폴더(FORMS-14926), 다음 단계를 수행하여 문제를 해결합니다.
 
-  문제를 해결하려면 다음 단계를 수행하십시오.
+   1. 로케이터가 실행 중인 경우 중지합니다.
+   1. AEM 서버를 중지합니다.
+   1. 로 이동 `<AEM_Forms_Installation>/lib/caching/lib`.
+   1. 다음을 제외한 모든 Geode 패치 파일 제거 `geode-*-1.15.1.2.jar`. 를 사용하여 Geode jar만 확인합니다. `version 1.15.1.2` 있음.
+   1. 관리자 모드에서 명령 프롬프트를 엽니다.
+   1. 를 사용하여 Geode 패치 설치 `geode-*-1.15.1.2.jar` 파일.
 
-   1. 로케이터와 서버가 실행 중인 경우 지정된 순서로 중지합니다.
-   1. 관리자 모드에서 패치 설치 관리자를 실행하여 패치를 다시 설치합니다(중요).
-   1. 를 사용하여 Geode jar만 확인합니다. `version 1.15.1.2` 있음.
-
-  >[!NOTE]
-  > Geode가 와 함께 사용되는 경우에만 작업이 필요하지 않습니다. `version 1.15.1.2` 있음.
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
