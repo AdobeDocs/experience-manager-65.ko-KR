@@ -10,7 +10,7 @@ feature: HTML5 Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 0%
@@ -173,7 +173,6 @@ ht-degree: 0%
    답변: HTML 5 양식은 부동 필드에 대한 표시 패턴을 지원하지 않습니다.
 
 1. HTML 5 Forms의 날짜 필드 형식은 무엇입니까?
-
 답변: 날짜 필드는 ISO 형식인 YYYY-MM-DD를 허용합니다. 날짜를 다른 형식으로 지정하는 경우 사용자가 필드 바깥쪽을 탭할 때까지 날짜 필드에서 형식을 허용하지 않습니다.
 
 ### 스크립팅 {#scripting}
