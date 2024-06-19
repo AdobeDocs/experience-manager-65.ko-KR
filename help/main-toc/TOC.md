@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: bd661b0a73046e7ccfb07a430983857f753ed442
+source-git-commit: 4994a015099e1e50bf59342a8973ce68b9347568
 workflow-type: tm+mt
 source-wordcount: '7421'
 ht-degree: 22%
