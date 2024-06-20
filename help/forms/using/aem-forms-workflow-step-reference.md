@@ -6,8 +6,9 @@ topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Foundation Components, Workflow
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '7640'
 ht-degree: 0%
@@ -85,7 +86,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 
    * **다음을 사용하여 웹 채널 데이터 저장:** 페이로드에 상대적인 경로를 사용하여 웹 채널 데이터 파일을 저장하거나 문서, JSON 또는 양식 데이터 모델 데이터 유형의 변수에 저장합니다. 이 옵션은 유형 드롭다운 목록에서 대화형 통신 에이전트 UI를 선택하는 경우에만 사용할 수 있습니다.
    * **다음을 사용하여 PDF 문서 저장:** 페이로드에 상대적인 경로를 사용하여 PDF 문서를 저장하거나 문서 데이터 유형의 변수에 저장합니다. 이 옵션은 유형 드롭다운 목록에서 대화형 통신 에이전트 UI를 선택하는 경우에만 사용할 수 있습니다.
-   * **다음을 사용하여 레이아웃 템플릿 저장:** 페이로드에 상대적인 경로를 사용하여 레이아웃 템플릿을 저장하거나 문서 데이터 유형의 변수에 저장합니다. 다음 [레이아웃 템플릿](../../forms/using/layout-design-details.md) 는 Forms Designer를 사용하여 만드는 XDP 파일을 나타냅니다. 이 옵션은 유형 드롭다운 목록에서 대화형 통신 에이전트 UI를 선택하는 경우에만 사용할 수 있습니다.
+   * **다음을 사용하여 레이아웃 템플릿 저장:** 페이로드에 상대적인 경로를 사용하여 레이아웃 템플릿을 저장하거나 문서 데이터 유형의 변수에 저장합니다. 다음 [레이아웃 템플릿](../../forms/using/layout-design-details.md) 는 Forms Designer을 사용하여 만드는 XDP 파일을 나타냅니다. 이 옵션은 유형 드롭다운 목록에서 대화형 통신 에이전트 UI를 선택하는 경우에만 사용할 수 있습니다.
 
 * **할당자 > 할당 옵션:** 사용자에게 작업을 할당할 방법을 지정하십시오. 참가자 선택기 스크립트를 사용하여 작업을 사용자 또는 그룹에 동적으로 할당하거나 작업을 특정 AEM 사용자 또는 그룹에 할당할 수 있습니다.
 * **참가자 선택기:** 옵션은 다음과 같은 경우에 사용할 수 있습니다. **동적으로 사용자 또는 그룹 대상** [할당 옵션] 필드에서 옵션이 선택됩니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자에게 동적으로 워크플로 할당](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 및 [사용자 지정 Adobe Experience Manager 동적 참가자 단계 만들기.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
@@ -395,7 +396,7 @@ PDF 문서를 선택한 형식으로 변환합니다.
 
 ### PDF 양식 단계 렌더링 {#renderpdf}
 
-XDP(양식 디자이너)에서 만든 양식을 PDF 양식으로 렌더링합니다.
+XDP(양식 Designer)에서 만든 양식을 PDF 양식으로 렌더링합니다.
 
 >[!NOTE]
 >
@@ -459,7 +460,7 @@ XDP(양식 디자이너)에서 만든 양식을 PDF 양식으로 렌더링합니
 * **[!UICONTROL 다음을 사용하여 XCI 파일 선택]**: XCI 파일은 양식 디자인 요소에 사용되는 글꼴 및 기타 속성을 설명하는 데 사용됩니다. 페이로드에 상대적인 XCI 파일을 절대 경로에 두거나 문서 데이터 유형의 변수를 사용할 수 있습니다.
 
 * **[!UICONTROL 로케일]**: PDF 문서 생성에 사용되는 언어를 지정합니다. 리터럴 값을 제공하는 경우 목록에서 언어를 선택하거나 다음 값 중 하나를 선택합니다.
-   * **서버 기본값을 사용하려면**: (기본값) AEM Forms 서버에 구성된 로케일 설정을 사용합니다. 로케일 설정은 관리 콘솔을 사용하여 구성됩니다. (참조: [디자이너 도움말](https://www.adobe.com/go/learn_aemforms_designer_65_kr).)
+   * **서버 기본값을 사용하려면**: (기본값) AEM Forms 서버에 구성된 로케일 설정을 사용합니다. 로케일 설정은 관리 콘솔을 사용하여 구성됩니다. (참조: [Designer 도움말](https://www.adobe.com/go/learn_aemforms_designer_65_kr).)
 
    * **사용자 지정 값을 사용하려면**: 리터럴 상자에 로케일 코드를 입력하거나 로케일 코드가 포함된 문자열 변수를 선택합니다. 지원되는 로케일 코드의 전체 목록은 https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html 을 참조하십시오.
 

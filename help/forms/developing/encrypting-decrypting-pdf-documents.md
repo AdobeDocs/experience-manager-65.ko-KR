@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 29cc7281e34487881ff9334f4cf00f3d013de11b
 workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 0%
@@ -165,6 +165,7 @@ PDF 문서를 암호화할 때 보안 문서와 관련된 권한을 지정할 �
 [빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 암호화](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 

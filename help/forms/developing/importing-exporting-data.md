@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 0%
@@ -24,12 +24,12 @@ ht-degree: 0%
 양식 데이터 통합 서비스는 데이터를 PDF 양식으로 가져오고 PDF 양식에서 데이터를 내보낼 수 있습니다. 가져오기 및 내보내기 작업은 두 가지 유형의 PDF forms을 지원합니다.
 
 * Acrobat 양식(Acrobat에서 작성)은 양식 필드를 포함하는 PDF 문서입니다.
-* Adobe XML 양식(디자이너에서 생성)은 XML Adobe XML Forms 아키텍처(XFA)를 준수하는 PDF 문서입니다.
+* Adobe XML 양식(Designer에서 작성)은 XML Adobe XML Forms 아키텍처(XFA)를 준수하는 PDF 문서입니다.
 
 양식 데이터는 PDF 양식 유형에 따라 다음 형식 중 하나로 존재할 수 있습니다.
 
 * Acrobat 양식 데이터 형식의 XML 버전인 XFDF 파일입니다.
-* 양식 필드 정의가 포함된 XML 파일인 XDP 파일입니다. 또한 양식 필드 데이터 및 임베드된 PDF 파일이 포함될 수 있습니다. Designer에서 생성한 XDP 파일은 포함된 base-64로 인코딩된 PDF 문서를 포함하는 경우에만 사용할 수 있습니다.
+* 양식 필드 정의가 포함된 XML 파일인 XDP 파일입니다. 또한 양식 필드 데이터 및 임베드된 PDF 파일이 포함될 수 있습니다. Designer에서 생성한 XDP 파일은 포함된 base 64로 인코딩된 PDF 문서를 포함하는 경우에만 사용할 수 있습니다.
 
 양식 데이터 통합 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 양식 데이터 통합 서비스를 사용하여 양식 데이터를 대화형 PDF forms으로 가져올 수 있습니다. 대화형 PDF 양식은 사용자로부터 정보를 수집하거나 사용자 정의 정보를 표시하기 위한 하나 이상의 필드가 포함된 PDF 문서입니다. 양식 데이터 통합 서비스는 양식 계산, 유효성 검사 또는 스크립팅을 지원하지 않습니다.
 
-데이터를 디자이너에서 만든 양식으로 가져오려면 유효한 XDP XML 데이터 원본을 참조해야 합니다. 다음 예제 모기지 신청 양식을 고려하십시오.
+Designer에서 만든 양식으로 데이터를 가져오려면 유효한 XDP XML 데이터 소스를 참조해야 합니다. 다음 예제 모기지 신청 양식을 고려하십시오.
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
@@ -116,7 +116,7 @@ ht-degree: 0%
 
 **PDF 양식 참조**
 
-데이터를 PDF 양식으로 가져오려면 디자이너에서 만든 XML 양식 또는 Acrobat에서 만든 Acrobat 양식을 참조해야 합니다.
+데이터를 PDF 양식으로 가져오려면 Designer에서 만든 XML 양식 또는 Acrobat에서 만든 Acrobat 양식을 참조해야 합니다.
 
 **XML 데이터 소스 참조**
 
@@ -256,7 +256,7 @@ PDF 양식과 유효한 XML 데이터 소스를 참조한 후 데이터를 PDF �
 
 ## 양식 데이터 내보내기 {#exporting-form-data}
 
-양식 데이터 통합 서비스를 사용하여 대화형 PDF 양식에서 양식 데이터를 내보낼 수 있습니다. 내보내는 데이터의 형식은 양식 유형에 따라 다릅니다. 양식 유형이 Acrobat에서 생성된 Acrobat 양식인 경우 내보낸 데이터는 XFDF입니다. 양식 유형이 디자이너에서 만든 XML 양식인 경우 내보낸 데이터는 XDP입니다.
+양식 데이터 통합 서비스를 사용하여 대화형 PDF 양식에서 양식 데이터를 내보낼 수 있습니다. 내보내는 데이터의 형식은 양식 유형에 따라 다릅니다. 양식 유형이 Acrobat에서 생성된 Acrobat 양식인 경우 내보낸 데이터는 XFDF입니다. 양식 유형이 Designer에서 생성된 XML 양식인 경우 내보낸 데이터는 XDP입니다.
 
 >[!NOTE]
 >
@@ -290,7 +290,7 @@ PDF 양식에서 양식 데이터를 내보내려면 다음 단계를 수행하�
 
 **PDF 양식 참조**
 
-PDF 양식에서 데이터를 내보내려면 Designer 또는 Acrobat에서 만들고 양식 데이터를 포함하는 PDF 양식을 참조해야 합니다. 빈 PDF 양식에서 데이터를 내보내려고 하면 빈 XML 스키마가 만들어집니다.
+PDF 양식에서 데이터를 내보내려면 Designer 또는 Acrobat에서 만들어지고 양식 데이터를 포함하는 PDF 양식을 참조해야 합니다. 빈 PDF 양식에서 데이터를 내보내려고 하면 빈 XML 스키마가 만들어집니다.
 
 **PDF 양식에서 데이터 내보내기**
 

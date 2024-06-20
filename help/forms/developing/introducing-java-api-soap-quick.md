@@ -1,6 +1,6 @@
 ---
 title: Java&trade 소개, API QuickStart
-description: SOAP 연결을 통해 활성화된 강력한 형식의 API인 AEM Forms Java&trade를 사용하여 AEM Forms 작업을 수행하는 방법을 알아봅니다.
+description: SOAP 연결에 활성화된 AEM Forms Java&trade; 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,8 @@ topic-tags: develop, development-tools
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms
+source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 0%
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 AEM Forms API 빠른 시작 Adobe을 통해 AEM Forms 서비스와 상호 작용하는 프로그램 개발을 위한 노력을 가속화할 수 있습니다. *빠른 시작*&#x200B;는 자체 프로젝트에 복사하여 붙여 넣고 시작점으로 사용할 수 있는 완전한 프로그램입니다. 빠른 시작을 실행하여 작동 방식을 확인하고 필요에 따라 수정할 수 있습니다.
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 Java™ 강력한 형식의 API 빠른 시작은 Java™ 애플리케이션을 실행하는 데 필요한 JAR 파일 목록을 제공합니다. 대부분의 Java™ 빠른 시작은 내에서 실행되는 콘솔 애플리케이션입니다. `main`. 그러나 Forms Java™ 강력한 형식의 API 빠른 시작은 웹 애플리케이션 내에서 실행되는 Java™ 서블릿으로 구현됩니다.
 
@@ -68,7 +69,7 @@ JAR 파일 목록은 빠른 시작 부분의 주석 섹션에 있습니다. 예�
 
 [빠른 시작(SOAP 모드): Java™ API를 사용하여 AEM Forms 저장소의 문서를 출력 서비스로 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) ( 저장소 및 출력 서비스 호출)
 
-[빠른 시작(SOAP 모드): Java™ API를 사용하여 조각을 기반으로 한 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) ( 어셈블러 및 출력 서비스 호출)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 조각을 기반으로 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) ( 어셈블러 및 출력 서비스 호출)
 
 [빠른 시작(SOAP 모드): Java™ API를 사용하여 제출된 XML 데이터로 PDF 문서 생성](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (Forms, 출력 및 문서 관리 서비스 호출)
 
@@ -78,7 +79,7 @@ JAR 파일 목록은 빠른 시작 부분의 주석 섹션에 있습니다. 예�
 
 [빠른 시작(SOAP 모드): Java™ API를 사용하여 역할 및 권한 관리](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) ( DirectoryManager 및 AuthorizationManager 서비스 호출)
 
-[빠른 시작(SOAP 모드): Java™ API를 사용하여 출력 서비스에 문서 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) (출력 및 문서 관리 서비스 호출)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 문서를 출력 서비스에 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) (출력 및 문서 관리 서비스 호출)
 
 >[!NOTE]
 >

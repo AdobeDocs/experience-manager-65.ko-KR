@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1442'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # 출력에 대한 캐싱 구성  {#configuring-caching-for-output}
 
-출력 서비스는 XML 양식 데이터를 디자이너에서 만든 양식 디자인과 병합하여 다양한 형식의 문서 출력 스트림을 만듭니다.
+출력 서비스는 XML 양식 데이터를 Designer에서 만든 양식 디자인과 병합하여 다양한 형식의 문서 출력 스트림을 만듭니다.
 
 관리 콘솔의 출력 페이지에는 출력 서비스가 항목을 캐시하는 방식을 제어하는 설정이 포함되어 있습니다. 이러한 설정을 조정하여 출력 서비스의 성능을 최적화할 수 있습니다.
 

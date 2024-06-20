@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1611'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # Forms에 대한 캐싱 구성{#configuring-caching-for-forms}
 
-Forms 서비스는 디자이너에서 만든 양식 디자인을 가져와 다양한 형식으로 렌더링합니다.
+Forms 서비스는 Designer에서 생성된 양식 디자인을 가져와 다양한 형식으로 렌더링합니다.
 
 관리 콘솔의 Forms 페이지에는 Forms 서비스가 항목을 캐시하는 방식을 제어하는 설정이 포함되어 있습니다. 이러한 설정을 조정하여 Forms 서비스의 성능을 최적화할 수 있습니다.
 
@@ -93,7 +94,7 @@ Forms에서 캐싱에 사용하는 설정을 지정하여 AEM Forms 환경의 �
 
 **최대 캐시 문서 크기(KB):** 메모리 내 캐시에 저장할 수 있는 양식 디자인 또는 기타 리소스의 최대 크기(KB)입니다. 모든 인메모리 캐시에 적용되는 전역 설정입니다. 리소스가 이 값보다 큰 경우 메모리에 캐시되지 않습니다. 기본값은 1024KB입니다. 이 설정은 디스크 캐시에 영향을 주지 않습니다.
 
-**양식 렌더링 캐시 활성화됨:** 기본적으로 이 옵션이 선택되어 있으므로 렌더링된 양식이 후속 검색을 위해 캐시됩니다. 이 설정은 Forms 서비스가 특정 양식을 한 번만 렌더링한 다음 캐시된 버전을 사용하기 때문에 성능이 향상됩니다. 이 옵션은 양식 디자인의 캐싱 속성과 함께 작동합니다. 양식 디자인에서 이 값을 구성하는 방법에 대한 자세한 내용은 디자이너 도움말을 참조하십시오.
+**양식 렌더링 캐시 활성화됨:** 기본적으로 이 옵션이 선택되어 있으므로 렌더링된 양식이 후속 검색을 위해 캐시됩니다. 이 설정은 Forms 서비스가 특정 양식을 한 번만 렌더링한 다음 캐시된 버전을 사용하기 때문에 성능이 향상됩니다. 이 옵션은 양식 디자인의 캐싱 속성과 함께 작동합니다. 양식 디자인에서 이 값을 구성하는 방법에 대한 자세한 내용은 Designer 도움말을 참조하십시오.
 
 ### 양식 디자인 캐싱 {#caching-form-designs}
 

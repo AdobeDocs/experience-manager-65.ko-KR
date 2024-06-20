@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Forms 서비스에서는 다음 빠른 시작을 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드): Java를 사용하여 제출된 XML 데이터로 PDF 문서 생성](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 유동성 레이아웃으로 Forms 미리 채우기](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[빠른 시작(SOAP 모드): Java를 사용하여 흐름 가능한 레이아웃으로 Forms 미리 채우기](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java를 사용하여 계산 스크립트가 포함된 양식 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
 
@@ -51,7 +51,7 @@ Forms 서비스에서는 다음 빠른 시작을 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드): Java를 사용하여 Forms 서비스에 문서 전달](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-Forms 서비스 API를 사용하는 애플리케이션 논리는 Java™ 서블릿으로 구현됩니다. AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+Forms 서비스 API를 사용하는 애플리케이션 논리는 Java™ 서블릿으로 구현됩니다. AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >
@@ -1963,7 +1963,7 @@ Forms 서비스 API를 사용하는 애플리케이션 논리는 Java™ 서블�
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java™ API를 사용하여 Forms에 흐름 가능한 레이아웃 미리 채우기 {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java™ API를 사용하여 흐름 가능한 레이아웃으로 Forms 미리 채우기 {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
 
 다음 코드 예제에서는 동적 데이터 소스로 양식을 미리 채웁니다. 즉, 데이터 소스는 런타임에 만들어지며 XML 파일에 포함되지 않거나 디자인 타임에 만들어지지 않습니다. 이 코드 예에는 세 가지 사용자 정의 메서드가 포함되어 있습니다.
 
@@ -2494,7 +2494,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java™ API를 사용한 값별 렌더링 {#quick-start-soap-mode-rendering-by-value-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java™ API를 사용하여 값별 렌더링 {#quick-start-soap-mode-rendering-by-value-using-the-java-api}
 
 다음 Java™ 빠른 시작은 이라는 양식 디자인을 기반으로 하는 대화형 PDF 양식을 렌더링합니다 *Loan.xdp* 값 기준. 양식 디자인을 사용하여 `com.adobe.idp.Document` 개체 이름 지정 *inputXDP*. (참조: [값별 Forms 렌더링](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
 

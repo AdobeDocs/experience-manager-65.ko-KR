@@ -3,9 +3,10 @@ title: 문서 서비스 설치 및 구성
 description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 만들고, 조합하고, 배포하고, 보관하고, 디지털 서명을 추가하여 문서에 대한 액세스를 제한하고, 바코드 Forms을 디코딩합니다.
 topic-tags: installing
 role: Admin, User, Developer
-solution: Experience Manager, Experience Manager Forms
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 7b0f8222408d43a298fa2036020963721cfbd1f9
+solution: Experience Manager, Experience Manager Forms
+feature: Interactive Communication
+source-git-commit: cf3247e437af7447fd6a6121c6a4e2ef750d06b7
 workflow-type: tm+mt
 source-wordcount: '5660'
 ht-degree: 1%

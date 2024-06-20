@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 0%
@@ -42,7 +43,7 @@ ht-degree: 0%
    * 감시 폴더 엔드포인트를 추가하려면 감시 폴더 추가를 클릭합니다. 감시 폴더 설정에 대한 자세한 내용은 [감시 폴더 끝점 설정](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * 이메일 엔드포인트를 추가하려면 이메일 추가를 클릭합니다. 이메일 설정에 대한 자세한 내용은 [이메일 엔드포인트 설정](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * EJB 끝점을 추가하려면 EJB 추가 를 클릭하고 끝점의 이름과 설명을 지정합니다.
-   * SOAP 끝점을 추가하려면 SOAP 추가 를 클릭하고 끝점의 이름과 설명을 지정합니다.
+   * SOAP 끝점을 추가하려면 SOAP 추가를 클릭하고 끝점의 이름과 설명을 지정합니다.
    * 원격 끝점을 추가하려면 원격 추가를 클릭합니다. 원격 설정에 대한 자세한 내용은 [원격 끝점 설정](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * REST 끝점을 추가하려면 REST 추가 를 클릭하고 끝점의 이름과 설명을 지정합니다. REST 끝점 추가 페이지에 표시된 REST 호출 URL을 확인합니다.
    * 끝점을 제거하려면 끝점 옆에 있는 확인란을 선택하고 제거를 클릭합니다.
@@ -109,7 +110,7 @@ ht-degree: 0%
    * 감시 폴더 엔드포인트를 추가하려면 감시 폴더 추가를 클릭합니다. 감시 폴더 설정에 대한 자세한 내용은 [감시 폴더 끝점 설정](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * 이메일 엔드포인트를 추가하려면 이메일 추가를 클릭합니다. 이메일 설정에 대한 자세한 내용은 [이메일 엔드포인트 설정](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * EJB 끝점을 추가하려면 EJB 추가 를 클릭하고 끝점의 이름과 설명을 지정합니다.
-   * SOAP 끝점을 추가하려면 SOAP 추가 를 클릭하고 끝점의 이름과 설명을 지정합니다.
+   * SOAP 끝점을 추가하려면 SOAP 추가를 클릭하고 끝점의 이름과 설명을 지정합니다.
    * 원격 끝점을 추가하려면 원격 추가를 클릭합니다. 원격 설정에 대한 자세한 내용은 [원격 끝점 설정](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * REST 끝점을 추가하려면 REST 추가 를 클릭하고 끝점의 이름과 설명을 지정합니다. REST 끝점 추가 페이지에 표시된 REST 호출 URL을 확인합니다.
    * 끝점을 제거하려면 끝점 옆에 있는 확인란을 선택하고 제거를 클릭합니다.

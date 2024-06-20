@@ -7,8 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -30,7 +31,7 @@ ht-degree: 0%
 프로세스 보고는 다음과 같은 모듈을 기반으로 구축됩니다.
 
 * AEM Forms 데이터베이스에서 프로세스 데이터 읽기
-* 포함된 Process Reporting 저장소에 프로세스 데이터 게시
+* Publish 프로세스 데이터를 포함된 Process Reporting 저장소로
 * 보고서를 볼 수 있는 브라우저 기반 사용자 인터페이스를 제공합니다.
 
 ## 주요 기능 {#key-capabilities}

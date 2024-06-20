@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -31,7 +32,7 @@ CSRF(크로스 사이트 요청 위조)는 유효한 사용자의 브라우저�
 
 **Null 참조:** 새 브라우저 창이나 탭을 연 다음 주소를 입력하고 Enter 키를 누르면 레퍼러가 null입니다. 이 요청은 완전히 새로운 것으로, 상위 웹 페이지에서 시작하지 않습니다. 따라서 요청에 대한 레퍼러가 없습니다. Forms 서버는 다음 위치에서 null 레퍼러를 수신할 수 있습니다.
 
-* Acrobat의 SOAP 또는 REST 끝점에 대한 요청
+* Acrobat의 SOAP 또는 REST 종단점에 대한 요청
 * AEM forms SOAP 또는 REST 끝점에서 HTTP 요청을 하는 모든 데스크탑 클라이언트
 * 새 브라우저 창을 열고 AEM forms 웹 응용 프로그램 로그인 페이지의 URL을 입력하면
 

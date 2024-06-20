@@ -8,7 +8,8 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms, Foundation Components
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 1%
@@ -56,7 +57,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-TarMK는 성능을 위해 설계된 반면, MongoMK와 RDBMK는 확장성을 위해 설계되었습니다. Adobe은 섹션에 설명된 사용 사례를 제외하고 작성자 및 게시 인스턴스 모두에 대해 모든 AEM Forms 배포 시나리오에 대한 기본 지속성 기술로 TarMK를 강력히 권장합니다 [TarMK를 통해 Mongo 또는 관계형 데이터베이스 마이크로커널 선택](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
+TarMK는 성능을 위해 설계된 반면, MongoMK와 RDBMK는 확장성을 위해 설계되었습니다. Adobe은 섹션에 설명된 사용 사례를 제외하고 Author 및 Publish 인스턴스 모두에 대해 모든 AEM Forms 배포 시나리오에 대한 기본 지속성 기술로 TarMK를 강력히 권장합니다 [TarMK를 통해 Mongo 또는 관계형 데이터베이스 마이크로커널 선택](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
 
 지원되는 마이크로커널 목록은 다음을 참조하십시오. [AEM Forms on OSGi 기술 요구 사항](/help/sites-deploying/technical-requirements.md) 또는 [AEM Forms on JEE 지원되는 플랫폼 조합](/help/forms/using/aem-forms-jee-supported-platforms.md) 문서.
 

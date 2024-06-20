@@ -8,7 +8,8 @@ docset: aem65
 role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1967'
 ht-degree: 2%
@@ -113,12 +114,12 @@ AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
    <td>양식을 마지막으로 게시한 시간을 지정하는 읽기 전용 값입니다.</td> 
   </tr> 
   <tr> 
-   <td>게시 설정/해제 시간</td> 
+   <td>Publish 설정/해제 시간</td> 
    <td>리소스를 제외한 모든 항목</td> 
    <td><p>양식이 자동으로 게시/게시 취소되도록 예약된 시간입니다. 사용자가 메타데이터 편집 시 이 값을 설정합니다.</p> 
     <ul> 
-     <li>게시 켜기 및 끄기 시간은 모두 현재 날짜 이후여야 합니다. </li> 
-     <li>게시 해제 시간은 게시 설정 시간 이후여야 합니다. </li> 
+     <li>Publish 켜기 및 끄기 시간은 모두 현재 날짜 이후여야 합니다. </li> 
+     <li>Publish 해제 시간은 게시 설정 시간 이후여야 합니다. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -126,7 +127,7 @@ AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
    <td><p>양식 템플릿</p> <p>PDF 양식</p> </td> 
    <td><p>양식 데이터를 서블릿에 제출하기 위해 사용자 지정 URL을 구성하려면 다음 작업을 수행하십시오.</p> <p>제출 URL은 우선순위 순서로 나열된 다음 방법 중 하나를 사용하여 구성할 수 있습니다.</p> 
     <ul> 
-     <li>AEM Forms Designer에서 XFA 양식을 만들 때 HTTP 제출 단추를 사용하여 양식 템플릿에서 직접 제출 URL을 지정합니다.</li> 
+     <li>AEM Forms Designer에서 XFA 양식을 만드는 동안 HTTP 제출 단추를 사용하여 양식 템플릿에서 직접 제출 URL을 지정합니다.</li> 
      <li>AEM Forms UI에서 양식을 선택하고 메타데이터 속성 편집 시 제출 URL을 지정합니다.</li> 
      <li>Forms 포털에서 검색 및 목록 구성 요소를 편집하고 양식 링크 탭에서 제출 URL을 지정합니다.</li> 
     </ul> </td> 
@@ -242,7 +243,7 @@ AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
 >* 새 이미지가 업로드되거나 생성되면 썸네일이 이 이미지로 대체되며 이전 이미지로 재설정할 수 없습니다.
 >
 
-## 사용자 지정 메타데이터 추가 {#add-custom-metadata}
+## 사용자 정의 메타데이터 추가 {#add-custom-metadata}
 
 기본적으로 제공되는 메타데이터 외에도 AEM Forms은 새로운 사용자 지정 메타데이터를 지원합니다.
 

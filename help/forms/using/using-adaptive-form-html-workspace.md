@@ -7,8 +7,9 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%
@@ -43,7 +44,7 @@ HTML 작업 영역에서는 모바일 양식에 사용할 수 있는 컨트롤 �
 
 1. 적응형 양식을 제출하려면 **제출** Mobile Forms의 경우와 마찬가지로 단추 또는 경로 작업을 사용할 수 있습니다. 적응형 양식의 모든 제출 유형 버튼은 숨겨집니다.
 
-1. **적응형 양식 전역 도구 모음 가시성**: 프로세스 디자이너가 전역/최상위 도구 모음, 도구 모음 및 단추를 숨기는 경우 적응형 양식에 해당 단추가 표시되지 않습니다.
+1. **적응형 양식 전역 도구 모음 가시성**: Process Designer에서 전역/최상위 도구 모음, 도구 모음 및 단추가 적응형 양식에 표시되지 않습니다.
 
 1. **적응형 Forms을 위한 작업 영역 탐색 제어** HTML : Analysis Workspace의 적응형 양식에 대한 저장, 제출 및 경로 지정 작업 버튼과 함께 다음/이전 버튼을 사용할 수 있습니다. HTML Analysis Workspace에서 적응형 양식의 패널을 탐색할 수 있도록 다음/이전 단추를 클릭하십시오. 다음/이전 단추는 적응형 양식의 모바일 보기에서 탐색 컨트롤과 유사한 딥 탐색을 제공합니다.
 

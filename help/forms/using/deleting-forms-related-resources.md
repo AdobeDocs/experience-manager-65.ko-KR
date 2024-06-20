@@ -7,7 +7,8 @@ topic-tags: forms-manager
 role: Admin,User
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 양식 및 에셋을 삭제하여 저장소에서 이러한 에셋을 제거할 수 있습니다. 삭제 작업은 모든 자산 유형 및 폴더에서 작동합니다.
 
-작성자 인스턴스에서 에셋을 삭제하는 경우 에셋은 게시 인스턴스에서도 삭제됩니다. AEM Forms 서버는 작성자 및 게시 인스턴스로 구성됩니다. 작성자 인스턴스는 양식 에셋 및 리소스를 만들고 관리하기 위한 것입니다. 게시 인스턴스에는 최종 사용자가 사용할 수 있는 게시된 양식 에셋 및 관련 리소스가 포함되어 있습니다.
+작성자 인스턴스에서 자산을 삭제하는 경우 해당 자산도 Publish 인스턴스에서 삭제됩니다. AEM Forms 서버는 작성자 및 Publish 인스턴스로 구성됩니다. 작성자 인스턴스는 양식 에셋 및 리소스를 만들고 관리하기 위한 것입니다. Publish 인스턴스에는 최종 사용자가 사용할 수 있는 게시된 양식 에셋 및 관련 리소스가 포함되어 있습니다.
 
 ## 양식을 삭제하는 방법 {#how-to-delete-a-form}
 

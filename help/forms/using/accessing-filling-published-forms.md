@@ -7,8 +7,9 @@ topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
@@ -29,7 +30,7 @@ Forms 포털 및 해당 기능에 대한 자세한 내용은 [포털에 양식 �
 
 게시된 Forms 포털 페이지로 이동합니다. Forms 포털 페이지 만들기에 대한 자세한 내용은 [Forms 포털 페이지 만들기](../../forms/using/creating-form-portal-page.md).
 
-Forms 포털의 검색 및 목록 구성 요소에는 AEM 서버의 게시 인스턴스에서 사용할 수 있는 양식이 표시됩니다. 이 목록에는 Forms 포털 페이지 작성 시 필터에 정의된 모든 양식 또는 양식이 포함됩니다. Forms 포털 페이지는 다음 이미지와 유사합니다.
+Forms 포털의 검색 및 목록 구성 요소에는 AEM 서버의 Publish 인스턴스에서 사용할 수 있는 양식이 표시됩니다. 이 목록에는 Forms 포털 페이지 작성 시 필터에 정의된 모든 양식 또는 양식이 포함됩니다. Forms 포털 페이지는 다음 이미지와 유사합니다.
 
 ![샘플 Forms 포털 페이지 ](assets/forms-portal-page.png)
 

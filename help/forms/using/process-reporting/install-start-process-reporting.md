@@ -7,8 +7,9 @@ topic-tags: process-reporting
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 0%
@@ -176,7 +177,7 @@ ProcessDataPublisher 서비스는 AEM Forms 데이터베이스에서 프로세�
 
 ![processdatapublisherservice-1](assets/processdatapublisherservice-1.png)
 
-**데이터 게시**
+**Publish 데이터**
 
 프로세스 데이터 게시를 시작하려면 이 옵션을 활성화하십시오. 이 옵션은 기본적으로 비활성화되어 있습니다.
 
@@ -206,7 +207,7 @@ ProcessDataPublisher 서비스가 실행될 때마다 이 서비스는 먼저 �
 
 `Unit`: `Seconds`
 
-**다음에서 데이터 게시**
+**Publish 데이터 출처**
 
 AEM Forms 환경에는 환경이 설정된 시점의 데이터가 포함됩니다.
 

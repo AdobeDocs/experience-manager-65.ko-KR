@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 98c96349-f253-475f-b646-352269814a38
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1396'
 ht-degree: 0%
@@ -180,10 +181,10 @@ AEM 보조 노드의 재해 복구 시나리오에 사용할 파일을 백업하
 ### 단일 게시자 노드 복구 {#recover-a-single-publisher-node}
 
 1. 복구해야 하는 노드를 종료하고 노드가 다시 시작될 때까지 게시 활동을 수행하지 않습니다.
-1. 다음을 사용하여 게시 노드 복원 [백업 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. 다음을 사용하여 Publish 노드 복원 [백업 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### 클러스터 복구 {#recover-a-cluster}
 
 1. 클러스터를 종료합니다.
-1. 다음을 사용하여 게시 노드 복원 [백업 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. 다음을 사용하여 Publish 노드 복원 [백업 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 1. 주 노드 다음에 작성자 클러스터의 보조 노드가 올 때 시작합니다.

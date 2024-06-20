@@ -10,7 +10,8 @@ docset: aem65
 role: Admin,User
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1736'
 ht-degree: 1%
@@ -58,7 +59,7 @@ ht-degree: 1%
 * 텍스트 모듈의 목록이 개선되어 이제 다르게 렌더링됩니다. 시각적인 차이가 있을 수 있습니다. Adobe은 텍스트 모듈에서 목록을 사용하는 문자를 렌더링하고 볼 것을 권장합니다.
 * 이미지 콘텐츠 모듈이 DAM 에셋으로 변환되고 마이그레이션 중에 레이아웃 및 조각이 양식에 추가되므로 이러한 모듈에 대한 업데이트한 사람 속성이 관리자로 변경됩니다.
 * 에셋의 버전 내역은 마이그레이션되지 않으며 마이그레이션 후에는 사용할 수 없습니다. 마이그레이션 후 후속 버전 내역이 유지됩니다.
-* AEM 6.1 Forms 이후 게시 준비 상태가 더 이상 사용되지 않으므로 게시 준비 상태의 모든 자산이 수정됨 상태로 변경됩니다.
+* AEM 6.1 Forms 이후 Publish 준비 상태가 더 이상 사용되지 않으므로 Publish 준비 상태의 모든 자산이 수정됨 상태로 변경됩니다.
 * 사용자 인터페이스가 AEM Forms 6.3에서 업데이트되므로 맞춤화를 수행하는 단계도 다릅니다. 6.3 이전 버전에서 마이그레이션하는 경우 사용자 지정을 다시 실행합니다.
 * 레이아웃 단편 이동 위치 `/content/apps/cm/layouts/fragmentlayouts/1001` 끝 `/content/apps/cm/modules/fragmentlayouts`. 에셋의 데이터 사전 참조는 이름 대신 데이터 사전의 경로를 표시합니다.
 * 텍스트 모듈에서 정렬에 사용되는 모든 탭 공간을 재조정해야 합니다. 자세한 내용은 [서신 관리 - 탭 간격을 사용하여 텍스트 정렬](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
@@ -176,6 +177,6 @@ ht-degree: 1%
    1. 최신 Designer에서 XFA 파일을 열고 저장합니다. XFA 버전이 최신 버전으로 업데이트됩니다.
    1. Forms 사용자 인터페이스에서 XFA를 업로드합니다.
 
-1. 마이그레이션 전에 이전 시스템에 게시된 모든 자산을 게시합니다. 마이그레이션 유틸리티는 작성자 인스턴스의 자산만 업데이트하며 게시 인스턴스의 자산을 업데이트하려면 자산을 게시해야 합니다.
+1. Publish 마이그레이션 전에 이전 시스템에 게시된 모든 에셋입니다. 마이그레이션 유틸리티는 작성자 인스턴스의 자산만 업데이트하며 Publish 인스턴스의 자산을 업데이트하려면 자산을 게시해야 합니다.
 
 1. AEM Forms 6.4 및 6.5에서 양식 사용자 그룹의 일부 권한이 변경되었습니다. 모든 사용자가 스크립트가 포함된 XDP 및 적응형 Forms을 업로드하거나 코드 편집기를 사용할 수 있도록 하려면 해당 사용자를 forms-power-users 그룹에 추가해야 합니다. 마찬가지로 템플릿 작성자는 더 이상 규칙 편집기에서 코드 편집기를 사용할 수 없습니다. 사용자가 코드 편집기를 사용할 수 있도록 하려면 af-template-script-writers 그룹에 추가합니다. 그룹에 사용자를 추가하는 방법에 대한 지침은 [사용자 및 사용자 그룹 관리](/help/communities/users.md).

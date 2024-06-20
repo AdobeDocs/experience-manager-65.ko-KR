@@ -9,7 +9,8 @@ topic-tags: operations
 role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 0%
@@ -174,7 +175,7 @@ PDF 문서를 어셈블하려면 입력 PDF 문서를 참조해야 합니다. �
 
 **추가 참조**
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 번호 매기기를 사용한 페이지 문서 어셈블](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 번호 매기기를 사용하여 페이지 문서 어셈블](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

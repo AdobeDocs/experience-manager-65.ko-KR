@@ -1,13 +1,13 @@
 ---
 title: 초안 및 제출 데이터 서비스 사용자 정의
-description: AEM Forms은 기본적으로 초안 및 제출된 적응형 양식을 게시 인스턴스의 기본 노드에 저장합니다. 그러나 AEM Forms의 초안 및 제출 데이터 서비스를 구성하여 초안 및 제출된 적응형 양식의 저장소를 사용자 지정할 수 있습니다.
+description: AEM Forms은 기본적으로 초안 및 제출된 적응형 양식을 Publish 인스턴스의 기본 노드에 저장합니다. 그러나 AEM Forms의 초안 및 제출 데이터 서비스를 구성하여 초안 및 제출된 적응형 양식의 저장소를 사용자 지정할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM Forms을 사용하면 적응형 양식을 초안으로 저장할 수 있습니다. 초안 기능은 사용자에게 진행 중인 작업 양식을 유지 관리할 수 있는 옵션을 제공합니다. 그런 다음 사용자는 모든 장치에서 언제든지 양식을 작성하여 제출할 수 있습니다.
 
-기본적으로 AEM Forms은 초안 및 제출과 연관된 사용자 데이터를에 게시 인스턴스에 저장합니다. `/content/forms/fp` 노드.
+기본적으로 AEM Forms은 Publish 인스턴스의 초안 및 제출과 연관된 사용자 데이터를 `/content/forms/fp` 노드.
 
 그러나 AEM Forms 포털 구성 요소는 초안 및 제출에 대한 사용자 데이터 저장의 구현을 사용자 정의할 수 있는 데이터 서비스를 제공합니다. 예를 들어 조직에 현재 구현된 데이터 저장소에 데이터를 저장할 수 있습니다.
 

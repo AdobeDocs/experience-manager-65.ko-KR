@@ -3,8 +3,9 @@ title: 동적 PDF forms에서 해시를 생성하고 사용하는 방법
 description: 동적 PDF forms에서 해시 생성 및 작업
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Document Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 ## 전제 조건 지식 {#prerequisite-knowledge}
 
-스크립트 개체의 함수에 액세스하고 호출하는 기능과 마찬가지로 JEE Designer의 AEM Forms에 대한 일부 경험이 필요합니다.
+스크립트 객체의 함수에 액세스하고 호출하는 기능과 마찬가지로 JEE Designer에서 AEM Forms에 대한 일부 경험이 필요합니다.
 
 ## 사용자 수준 {#user-level}
 
@@ -27,7 +28,7 @@ PDF 양식에서 암호를 숨기고 소스 코드 내부나 PDF 문서의 다�
 
 해시 함수는 임의의 길이의 긴 문자열(또는 메시지)을 입력으로 취하여 고정 길이의 문자열을 출력으로 생성하며, 메시지 다이제스트 또는 디지털 지문이라고도 합니다.
 
-AEM Forms on JEE Designer를 사용하면 스크립트 개체에 있는 서로 다른 해시 함수를 JavaScript로 구현하고 동적 PDF 문서 내에서 실행할 수 있습니다. 이 문서의 샘플 파일에 포함된 예제 PDF은 다음 해시 함수의 오픈 소스 구현을 사용합니다.
+JEE Designer의 AEM Forms을 사용하면 스크립트 개체에 있는 서로 다른 해시 함수를 JavaScript로 구현하고 동적 PDF 문서 내에서 실행할 수 있습니다. 이 문서의 샘플 파일에 포함된 예제 PDF은 다음 해시 함수의 오픈 소스 구현을 사용합니다.
 
 * MD4 및 MD5 - Ronald Rivest 설계
 
@@ -41,7 +42,7 @@ AEM Forms on JEE Designer를 사용하면 스크립트 개체에 있는 서로 �
 
 ## 스크립트 오브젝트 검사 {#examining-script-objects}
 
-JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층 팔레트에서 네 개의 스크립트 개체가 표시됩니다(아래 그림 참조).
+JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층 팔레트에서 네 개의 스크립트 개체를 찾을 수 있습니다(아래 그림 참조).
 
 ![변수](assets/variables.jpg)
 
@@ -91,7 +92,7 @@ JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층
 
 두 번째 샘플을 시도하려면 아래 단계를 따르십시오.
 
-1. 열기 `hashing_forms_sample2.pdf` AEM Forms on JEE Designer. 또는 Adobe Reader 또는 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수 있지만 소스 코드는 볼 수 없습니다.
+1. 열기 `hashing_forms_sample2.pdf` jee Designer의 AEM Forms과 함께. 또는 Adobe Reader 또는 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수 있지만 소스 코드는 볼 수 없습니다.
 1. 레이블이 지정된 두 개의 암호 필드 중 하나를 선택합니다. [!UICONTROL 비밀번호 담당자] 또는 [!UICONTROL 비밀번호 여자] 암호를 입력합니다.
    1. 그 남자의 암호는 `bob`
    1. 그 여자의 암호는 `alice`

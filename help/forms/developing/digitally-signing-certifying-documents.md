@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '16917'
 ht-degree: 0%
@@ -608,7 +608,7 @@ nCypher nShield HSM 자격 증명을 사용하여 PDF 문서에 서명하거나 
 
 서명 서비스 API를 사용하여 XFA 기반 양식에 서명하려고 하면 데이터가에서 누락될 수 있습니다. `View` `Signed` `Version` Acrobat. 예를 들어 다음 워크플로를 고려하십시오.
 
-* 디자이너를 사용하여 만든 XDP 파일을 사용하면 서명 필드가 포함된 양식 디자인과 양식 데이터가 포함된 XML 데이터를 병합할 수 있습니다. Forms 서비스를 사용하여 대화형 PDF 문서를 생성합니다.
+* Designer을 사용하여 만든 XDP 파일을 사용하여 서명 필드가 포함된 양식 디자인과 양식 데이터가 포함된 XML 데이터를 병합합니다. Forms 서비스를 사용하여 대화형 PDF 문서를 생성합니다.
 * 서명 서비스 API를 사용하여 PDF 문서에 서명합니다.
 
 ### 단계 요약 {#summary_of_steps-3}
@@ -639,7 +639,7 @@ PDF 문서에 디지털 서명하려면 다음 작업을 수행하십시오.
 
 **서명할 PDF 문서 가져오기**
 
-PDF 문서에 서명하려면 서명 필드가 포함된 PDF 문서를 가져와야 합니다. PDF 문서에 서명 필드가 없으면 서명할 수 없습니다. 서명 필드는 디자이너를 사용하거나 프로그래밍 방식으로 추가할 수 있습니다.
+PDF 문서에 서명하려면 서명 필드가 포함된 PDF 문서를 가져와야 합니다. PDF 문서에 서명 필드가 없으면 서명할 수 없습니다. 서명 필드는 Designer을 사용하거나 프로그래밍 방식으로 추가할 수 있습니다.
 
 **PDF 문서에 서명**
 
@@ -821,7 +821,7 @@ PDF 문서에 디지털 서명하려면 보안 자격 증명도 참조해야 합
 
 Forms 서비스에서 만드는 대화형 양식에 서명할 수 있습니다. 예를 들어 다음 워크플로를 고려하십시오.
 
-* 디자이너를 사용하여 만든 XFA 기반 PDF 양식과 양식 데이터를 Forms 서비스를 사용하여 XML 문서에 병합할 수 있습니다. Forms 서버는 대화형 양식을 렌더링합니다.
+* Designer을 사용하여 만든 XFA 기반 PDF 양식과 Forms 서비스를 사용하여 양식 데이터를 XML 문서에 병합합니다. Forms 서버는 대화형 양식을 렌더링합니다.
 * 서명 서비스 API를 사용하여 대화형 양식에 서명합니다.
 
 그 결과 디지털 서명된 대화형 PDF 양식이 만들어집니다. XFA 양식을 기반으로 하는 PDF 양식에 서명할 때 PDF 파일을 Adobe 정적 PDF 양식으로 저장해야 합니다. Adobe 동적 PDF 양식으로 저장된 PDF 양식에 서명하려고 하면 예외가 발생합니다. Forms 서비스에서 반환된 양식에 서명하고 있으므로 양식에 서명 필드가 포함되어 있는지 확인하십시오.
@@ -1122,13 +1122,13 @@ PDF 문서를 인증하려면 다음 작업을 수행합니다.
 
 **인증할 PDF 문서 가져오기**
 
-PDF 문서를 인증하려면 서명 필드가 포함된 PDF 문서를 받아야 합니다. PDF 문서에 서명 필드가 없으면 인증을 받을 수 없습니다. 서명 필드는 디자이너를 사용하거나 프로그래밍 방식으로 추가할 수 있습니다. 서명 필드를 프로그래밍 방식으로 추가하는 방법에 대한 자세한 내용은 [서명 필드 추가](digitally-signing-certifying-documents.md#adding-signature-fields).
+PDF 문서를 인증하려면 서명 필드가 포함된 PDF 문서를 받아야 합니다. PDF 문서에 서명 필드가 없으면 인증을 받을 수 없습니다. 서명 필드는 Designer을 사용하거나 프로그래밍 방식으로 추가할 수 있습니다. 서명 필드를 프로그래밍 방식으로 추가하는 방법에 대한 자세한 내용은 [서명 필드 추가](digitally-signing-certifying-documents.md#adding-signature-fields).
 
 **PDF 문서 인증**
 
 PDF 문서를 성공적으로 인증하려면 서명 서비스에서 PDF 문서를 인증하는 데 사용하는 다음 입력 값이 필요합니다.
 
-* **PDF 문서**: 서명 필드가 포함된 PDF 문서입니다. 이 필드는 인증된 서명을 그래픽으로 표시하는 양식 필드입니다. 인증을 받으려면 PDF 문서에 서명 필드가 있어야 합니다. 서명 필드는 디자이너를 사용하거나 프로그래밍 방식으로 추가할 수 있습니다. (참조: [서명 필드 추가](digitally-signing-certifying-documents.md#adding-signature-fields).)
+* **PDF 문서**: 서명 필드가 포함된 PDF 문서입니다. 이 필드는 인증된 서명을 그래픽으로 표시하는 양식 필드입니다. 인증을 받으려면 PDF 문서에 서명 필드가 있어야 합니다. 서명 필드는 Designer을 사용하거나 프로그래밍 방식으로 추가할 수 있습니다. (참조: [서명 필드 추가](digitally-signing-certifying-documents.md#adding-signature-fields).)
 * **서명 필드 이름**: 인증된 서명 필드의 정규화된 이름입니다. 다음 값은 예입니다. `form1[0].#subform[1].SignatureField3[3]`. XFA 양식 필드를 사용할 때 서명 필드의 부분 이름을 사용할 수도 있습니다. `SignatureField3[3]`. 필드 이름에 대해 null 값이 전달되면 보이지 않는 서명 필드가 동적으로 생성되고 인증됩니다.
 * **보안 자격 증명**: PDF 문서를 인증하는 데 사용되는 자격 증명입니다. 이 보안 자격 증명에는 암호 및 별칭이 포함되어 있으며, 이 별칭은 자격 증명 서비스 내에 있는 자격 증명에 나타나는 별칭과 일치해야 합니다. 별칭은 PKCS#12 파일(.pfx 확장명 포함) 또는 HSM(하드웨어 보안 모듈)에 있을 수 있는 실제 자격 증명에 대한 참조입니다.
 * **해시 알고리즘**: PDF 문서를 요약하는 데 사용할 해시 알고리즘입니다.

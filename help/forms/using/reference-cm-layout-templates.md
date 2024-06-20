@@ -6,8 +6,9 @@ content-type: reference
 topic-tags: correspondence-management
 exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 서신 관리에서 편지 템플릿에는 일반적인 양식 필드, 머리글 및 바닥글과 같은 레이아웃 기능 및 컨텐츠 배치에 대한 빈 &quot;대상 영역&quot;이 포함되어 있습니다.
 
-서신 관리에서는 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 브랜딩 및 비즈니스 요구 사항에 따라 디자이너에서 템플릿을 사용자 지정할 수 있습니다. 패키지에는 다음 템플릿이 포함됩니다.
+서신 관리에서는 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 브랜딩 및 비즈니스 요구 사항에 따라 Designer에서 템플릿을 사용자 정의할 수 있습니다. 패키지에는 다음 템플릿이 포함됩니다.
 
 * Classic
 * 클래식 단순

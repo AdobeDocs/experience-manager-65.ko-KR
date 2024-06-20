@@ -3,8 +3,9 @@ title: MySQL용 6.5.12.0으로 업그레이드하는 동안 데이터베이스�
 description: 사용자가 Experience Manager 6.5.12.0으로 업그레이드하고 "MySQL 업그레이드"를 클릭하면 구성 관리자가 이전 Experience Manager Forms 데이터베이스를 백업하지 못합니다.
 exl-id: 1af000fa-439b-4ffd-8b5a-3ba45f0c524c
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Troubleshooting
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%

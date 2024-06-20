@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '15394'
 ht-degree: 0%
@@ -2183,7 +2183,7 @@ Document Security API(Java)를 사용하여 정책으로 보호된 Word 문서�
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
-* &quot;빠른 시작(SOAP 모드): Java API를 사용하여 Word 문서에서 정책 제거 &quot;
+* &quot;빠른 시작(SOAP 모드): Java API를 사용하여 Word 문서에서 정책 제거&quot;
 
 ### 웹 서비스 API를 사용하여 Word 문서에서 정책 제거 {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 

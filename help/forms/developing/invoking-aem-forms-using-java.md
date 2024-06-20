@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '5333'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Java API는 다음 기능을 지원합니다.
 
 * 원격 호출을 위한 RMI 전송 프로토콜
 * 로컬 호출을 위한 VM 전송
-* 원격 호출용 SOAP
+* 원격 호출을 위한 SOAP
 * 다른 인증(예: 사용자 이름 및 암호)
 * 동기 및 비동기 호출 요청
 
@@ -249,7 +249,7 @@ Java API를 사용하여 AEM Forms 서비스를 프로그래밍 방식으로 호
      <li>xercesImpl.jar<br /> </li>
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
-   <td><p>soap 모드를 사용하여 AEM Forms을 호출하는 경우 이러한 JAR 파일을 포함하십시오.</p> </td>
+   <td><p>SOAP 모드를 사용하여 AEM Forms이 호출되는 경우 이러한 JAR 파일을 포함합니다.</p> </td>
    <td><p>&lt;<em>설치 디렉토리</em>&gt;/sdk/client-libs/thirdparty</p> </td>
   </tr>
   <tr>
@@ -415,7 +415,7 @@ AEM Forms으로 업그레이드한다고 가정합니다. Rights Management 서�
 
 Java API를 사용할 때 AEM Forms을 호출하도록 연결 속성을 설정합니다. 연결 속성을 설정할 때 서비스를 원격으로 호출할지 로컬로 호출할지 지정하고 연결 모드 및 인증 값도 지정합니다. 서비스 보안이 활성화된 경우 인증 값이 필요합니다. 그러나 서비스 보안이 비활성화되어 있으면 인증 값을 지정할 필요가 없습니다.
 
-연결 모드는 SOAP 또는 EJB 모드일 수 있습니다. EJB 모드는 RMI/IIOP 프로토콜을 사용하며 EJB 모드의 성능이 SOAP 모드의 성능보다 좋습니다. SOAP 모드는 J2EE 애플리케이션 서버 종속성을 제거하거나 AEM Forms과 클라이언트 애플리케이션 사이에 방화벽이 있는 경우에 사용됩니다. SOAP 모드는 https 프로토콜을 기본 전송으로 사용하며 방화벽 경계를 넘어 통신할 수 있습니다. J2EE 애플리케이션 서버 종속성과 방화벽이 모두 문제가 되지 않는 경우 EJB 모드를 사용하는 것이 좋습니다.
+연결 모드는 SOAP 또는 EJB 모드일 수 있습니다. EJB 모드는 RMI/IIOP 프로토콜을 사용하며 EJB 모드의 성능이 SOAP 모드의 성능보다 좋습니다. SOAP 모드는 J2EE 애플리케이션 서버 종속성을 제거하거나 AEM Forms과 클라이언트 애플리케이션 사이에 방화벽이 있는 경우 사용됩니다. SOAP 모드는 https 프로토콜을 기본 전송으로 사용하며 방화벽 경계를 넘어 통신할 수 있습니다. J2EE 애플리케이션 서버 종속성과 방화벽이 모두 문제가 되지 않는 경우 EJB 모드를 사용하는 것이 좋습니다.
 
 AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 설정하십시오.
 
@@ -425,11 +425,11 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
    * WebSphere: `iiop://<ServerName>:2809 (default port)`
    * 웹 논리: `t3://<ServerName>:7001 (default port)`
 
-* **DSC_DEFAULT_SOAP_ENDPOINT**: SOAP 연결 모드를 사용하는 경우 이 값은 호출 요청이 전송되는 종단점을 나타냅니다. AEM Forms을 원격으로 호출하려면 AEM Forms이 배포되는 J2EE 응용 프로그램 서버 이름을 지정합니다. 클라이언트 응용 프로그램이 동일한 J2EE 응용 프로그램 서버에 있는 경우 `localhost` (예: `http://localhost:8080`.)
+* **DSC_DEFAULT_SOAP_ENDPOINT**: SOAP 연결 모드를 사용하는 경우 이 값은 호출 요청이 전송되는 의 끝점을 나타냅니다. AEM Forms을 원격으로 호출하려면 AEM Forms이 배포되는 J2EE 응용 프로그램 서버 이름을 지정합니다. 클라이언트 응용 프로그램이 동일한 J2EE 응용 프로그램 서버에 있는 경우 `localhost` (예: `http://localhost:8080`.)
 
    * 포트 값 `8080` J2EE 응용 프로그램이 JBoss인 경우 적용됩니다. J2EE 응용 프로그램 서버가 IBM® WebSphere®인 경우 포트를 사용합니다 `9080`. 마찬가지로, J2EE 응용 프로그램 서버가 WebLogic인 경우 포트를 사용합니다 `7001`. 이 값은 기본 포트 값입니다. 포트 값을 변경하는 경우 해당 포트 번호를 사용하십시오.)
 
-* **DSC_TRANSPORT_PROTOCOL**: EJB 연결 모드를 사용하는 경우 다음을 지정합니다 `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 이 값에 사용할 수 있습니다. SOAP 연결 모드를 사용하는 경우 `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
+* **DSC_TRANSPORT_PROTOCOL**: EJB 연결 모드를 사용하는 경우 다음을 지정합니다 `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 이 값에 사용할 수 있습니다. SOAP 연결 모드를 사용하는 경우 다음을 지정합니다 `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
 * **DSC_SERVER_TYPE**: AEM Forms이 배포되는 J2EE 애플리케이션 서버를 지정합니다. 유효한 값은 다음과 같습니다. `JBoss`, `WebSphere`, `WebLogic`.
 
    * 이 연결 속성을 다음으로 설정하는 경우 `WebSphere`, `java.naming.factory.initial` 값이 (으)로 설정됨 `com.ibm.ws.naming.util.WsnInitCtxFactory`.
@@ -443,7 +443,7 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 
 * **DSC_CREDENTIAL_USERNAME:** AEM Forms 사용자 이름을 지정합니다. 사용자가 AEM Forms 서비스를 성공적으로 호출하려면 서비스 사용자 역할이 필요합니다. 사용자는 서비스 호출 권한을 포함하는 다른 역할도 가질 수 있습니다. 그렇지 않으면 서비스를 호출하려고 할 때 예외가 throw됩니다. 서비스 보안이 비활성화되어 있으면 이 연결 속성을 지정할 필요가 없습니다.
 * **DSC_CREDENTIAL_PASSWORD:** 해당 암호 값을 지정합니다. 서비스 보안이 비활성화되어 있으면 이 연결 속성을 지정할 필요가 없습니다.
-* **DSC_REQUEST_TIMEOUT:** SOAP 요청에 대한 기본 요청 시간 제한1200000 밀리초(20분)입니다. 작업을 완료하는 데 요청이 더 오래 걸릴 수 있는 경우가 있습니다. 예를 들어 큰 레코드 집합을 검색하는 SOAP 요청에는 더 긴 시간 제한 제한이 필요할 수 있습니다. 다음을 사용할 수 있습니다. `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` SOAP 요청에 대한 요청 호출 시간 제한 을 늘리려면 다음을 수행하십시오.
+* **DSC_REQUEST_TIMEOUT:** SOAP 요청에 대한 기본 요청 시간 제한1200000 밀리초(20분)입니다. 작업을 완료하는 데 요청이 더 오래 걸릴 수 있는 경우가 있습니다. 예를 들어, 큰 레코드 집합을 검색하는 SOAP 요청에는 더 긴 시간 초과 제한이 필요할 수 있습니다. 다음을 사용할 수 있습니다. `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` SOAP 요청에 대한 요청 호출 시간 제한을 늘리려면 다음을 수행합니다.
 
   **참고**: SOAP 기반 호출만 DSC_REQUEST_TIMEOUT 속성을 지원합니다.
 
@@ -525,7 +525,7 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 
 **SOAP 연결 모드 설정**
 
-다음 Java 코드 예제에서는 JBoss에 배포된 AEM Forms을 호출하기 위해 SOAP 모드의 연결 속성을 설정합니다.
+다음 Java 코드 예제에서는 SOAP 모드에서 연결 속성을 설정하여 JBoss에 배포된 AEM Forms을 호출합니다.
 
 ```java
  Properties ConnectionProps = new Properties();
@@ -555,7 +555,7 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 >
 >AEM Forms을 사용한 프로그래밍과 연결된 모든 Java 빠른 시작은 EJB 및 SOAP 연결 설정을 모두 표시합니다.
 
-**사용자 지정 요청 시간 제한을 사용하여 SOAP 연결 모드 설정**
+**사용자 지정 요청 시간 초과 제한을 사용하여 SOAP 연결 모드 설정**
 
 ```java
  Properties ConnectionProps = new Properties();
@@ -639,7 +639,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 
 응용 프로그램 서버가 중지되면 클라이언트 응용 프로그램과 AEM Forms 간의 연결이 종료되므로 특정 J2EE 응용 프로그램 서버를 참조하지 않는 것이 좋습니다. 공급자 URL은 특정 J2EE 응용 프로그램 서버 대신 셀 레벨 JNDI 관리자를 참조하는 것이 좋습니다.
 
-SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러스터에 대해 HTTP 로드 밸런서 포트를 사용할 수 있습니다. EJB 연결 모드를 사용하는 클라이언트 응용 프로그램은 특정 J2EE 응용 프로그램 서버의 EJB 포트에 연결할 수 있습니다. 이 작업은 클러스터 노드 간의 로드 밸런싱을 처리합니다.
+SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러스터에 대한 HTTP 로드 밸런서 포트를 사용할 수 있습니다. EJB 연결 모드를 사용하는 클라이언트 응용 프로그램은 특정 J2EE 응용 프로그램 서버의 EJB 포트에 연결할 수 있습니다. 이 작업은 클러스터 노드 간의 로드 밸런싱을 처리합니다.
 
 **WebSphere**
 
@@ -651,7 +651,7 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
-**Weblogic**
+**웹로직(WebLogic)**
 
 다음 예는 WebLogic에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 내용을 보여줍니다.
 
@@ -660,7 +660,7 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
-**Jboss**
+**제이보스**
 
 다음 예는 JBoss에 배포된 AEM Forms 에 연결하는 데 사용되는 jndi.properties 파일의 내용을 보여줍니다.
 

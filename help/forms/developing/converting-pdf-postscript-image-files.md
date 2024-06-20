@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2774'
 ht-degree: 0%
@@ -249,7 +249,7 @@ PDF 문서를 검색하여 이미지로 변환합니다. 대화형 PDF 문서를
 
 **컬렉션에서 이미지 파일 검색**
 
-PDF 변환 서비스가 반환하는 컬렉션 개체에서 이미지 파일을 검색할 수 있습니다. 컬렉션의 각 요소는 `com.adobe.idp.Document` 인스턴스(또는 a `BLOB` JPG 파일과 같은 이미지 파일로 저장할 수 있는 웹 서비스를 사용하는 경우의 인스턴스입니다.
+PDF 변환 서비스가 반환하는 컬렉션 개체에서 이미지 파일을 검색할 수 있습니다. 컬렉션의 각 요소는 `com.adobe.idp.Document` 인스턴스(또는 a `BLOB` 인스턴스: 웹 서비스를 사용하는 경우) JPG 파일과 같은 이미지 파일로 저장할 수 있습니다.
 
 이미지 파일의 형식은 다음에 따라 다릅니다. `ImageConvertFormat` 런타임 옵션입니다. 즉, `ImageConvertFormat` 런타임 옵션 대상 `ImageConvertFormat.JPEG`, 이미지 파일을 JPG 파일로 저장할 수 있습니다.
 

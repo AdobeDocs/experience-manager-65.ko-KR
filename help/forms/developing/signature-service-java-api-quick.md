@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 34069505-a6cf-4540-932b-604f81823178
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 0%
@@ -39,7 +39,7 @@ AEM Forms JEE 서명 서비스에는 다음 Java API 빠른 시작(SOAP)을 사�
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 문서 타임스탬프 적용](#quick-start-soap-mode-apply-document-timestamp-using-the-java-api)
 
-AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >

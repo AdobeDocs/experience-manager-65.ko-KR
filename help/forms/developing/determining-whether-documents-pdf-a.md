@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 2%
@@ -170,7 +170,7 @@ PDF 문서가 PDF/A를 준수하는지 여부를 확인하려면 PDF 문서를 �
 
 **추가 참조**
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 문서가 PDF/A를 준수하는지 여부 확인](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (SOAP 모드)
+[빠른 시작(SOAP 모드): Java API를 사용하여 문서가 PDF/A를 준수하는지 확인](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (SOAP 모드)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

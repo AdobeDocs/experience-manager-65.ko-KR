@@ -3,8 +3,9 @@ title: AEM Forms 서버는 모든 서비스가 실행되고 실행되기 전에�
 description: AEM Forms 서버는 JEE 서버와 OSGi 서버에서 모든 서비스가 실행되고 실행되기 전에도 문서 처리를 시작합니다.
 exl-id: 1a1bc1cb-e0ce-49a0-9b05-ae59f900cfb2
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Troubleshooting
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 3%

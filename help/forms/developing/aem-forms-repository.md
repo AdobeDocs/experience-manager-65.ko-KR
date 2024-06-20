@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '9036'
 ht-degree: 0%
@@ -941,7 +941,7 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 [리소스 관계 만들기](aem-forms-repository.md#creating-resource-relationships)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 리소스 간 관계 만들기](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 리소스 간의 관계 만들기](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1142,7 +1142,7 @@ URI를 지정하여 리소스의 잠금을 해제하려면 저장소 서비스 �
 
 ## 리소스 삭제 {#deleting-resources}
 
-저장소 서비스 SOAP(Java API)를 사용하여 저장소의 지정된 위치에서 리소스를 프로그래밍 방식으로 삭제할 수 있습니다.
+SOAP(저장소 서비스 Java API)를 사용하여 저장소의 지정된 위치에서 리소스를 프로그래밍 방식으로 삭제할 수 있습니다.
 
 리소스를 삭제하면 삭제는 일반적으로 영구적이지만 경우에 따라 ECM 저장소가 기록 메커니즘에 따라 리소스 버전을 저장할 수 있습니다. 따라서 리소스를 삭제할 때는 해당 리소스가 다시 필요하지 않도록 해야 합니다. 리소스를 삭제하는 일반적인 이유에는 데이터베이스에서 사용 가능한 공간을 늘려야 한다는 요구가 포함됩니다. 리소스 버전을 삭제할 수 있지만 이 경우 LID(논리적 식별자) 또는 경로가 아닌 리소스 식별자를 지정해야 합니다. 폴더를 삭제하면 하위 폴더 및 리소스를 포함하여 해당 폴더의 모든 항목이 자동으로 삭제됩니다.
 

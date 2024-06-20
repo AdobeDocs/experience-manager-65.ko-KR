@@ -1,14 +1,15 @@
 ---
 title: 출력 서비스 개요
-description: 출력을 사용하면 XML 양식 데이터를 디자이너에서 만든 양식 디자인과 병합하여 다양한 형식의 문서 출력 스트림을 만들 수 있습니다.
+description: 출력을 사용하면 XML 양식 데이터를 Designer에서 만든 양식 디자인과 병합하여 다양한 형식의 문서 출력 스트림을 만들 수 있습니다.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e99b72d0-fbd5-4150-a225-1a91ad4c5867
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # 출력 서비스 개요 {#overview-of-output-service}
 
-출력을 사용하면 XML 양식 데이터를 디자이너에서 만든 양식 디자인과 병합하여 다양한 형식의 문서 출력 스트림을 만들 수 있습니다. 출력 스트림은 네트워크 프린터, 로컬 프린터 또는 디스크 파일로 전송될 수 있습니다
+출력을 사용하면 XML 양식 데이터를 Designer에서 만든 양식 디자인과 병합하여 다양한 형식의 문서 출력 스트림을 만들 수 있습니다. 출력 스트림은 네트워크 프린터, 로컬 프린터 또는 디스크 파일로 전송될 수 있습니다
 
 관리 콘솔의 [출력] 페이지를 사용하여 출력 서비스를 관리할 수 있습니다. 사용자가 구성하는 설정은 동일한 설정이 AEM Forms API를 통해 지정되지 않은 경우 런타임에 사용됩니다. AEM Forms SDK를 통해 수행한 구성은 관리 콘솔을 사용하여 구성된 설정을 무시합니다.
 

@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 3%
@@ -106,7 +106,7 @@ ht-degree: 3%
  </tbody>
 </table>
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >
@@ -760,7 +760,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 Java 코드 예제에서는 라는 프로세스를 호출합니다 `MyApplication/EncryptDocument` HTTP를 통해 데이터를 사용합니다. (참조: [HTTP를 통해 BLOB 데이터를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
-다음 이름의 PDF 파일을 기반으로 하는 비보안 PDF 문서 *Loan.pdf* 는 HTTP를 통해 SOAP를 사용하여 AEM Forms 프로세스로 전달됩니다. PDF 파일은 다음 URL에 있습니다. `https://'[server]:[port]'/FormsQS`. 이 프로세스는 이라는 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedDocument.pdf*.
+다음 이름의 PDF 파일을 기반으로 하는 비보안 PDF 문서 *Loan.pdf* HTTP를 통해 SOAP을 사용하여 AEM Forms 프로세스로 전달됩니다. PDF 파일은 다음 URL에 있습니다. `https://'[server]:[port]'/FormsQS`. 이 프로세스는 이라는 PDF 파일로 저장된 암호로 암호화된 PDF 문서를 반환합니다 *EncryptedDocument.pdf*.
 
 ```java
  /**

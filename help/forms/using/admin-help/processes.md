@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 0%
@@ -129,7 +130,7 @@ SUSPENDED 상태의 프로세스 인스턴스만 UNSUSPENDED로 변경할 수 �
 
 **프로세스 ID:** 프로세스가 인스턴스화될 때(즉, 사용자 또는 자동화된 단계가 프로세스를 시작할 때) 워크플로우를 형성하는 이 양의 정수입니다. 이 식별자를 사용하여 프로세스 인스턴스의 라이프사이클을 추적할 수 있습니다.
 
-**프로세스 이름 - 버전:** Designer에서 정의한 프로세스의 이름입니다.
+**프로세스 이름 - 버전:** Designer에 정의된 프로세스의 이름.
 
 **상태:** 프로세스 인스턴스가 정상적으로 실행 중인지, 상태를 변경 중인지 또는 중지되었는지 여부를 나타냅니다. 자세한 내용은 프로세스 인스턴스 상태 정보를 참조하십시오.
 

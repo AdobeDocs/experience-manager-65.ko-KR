@@ -7,8 +7,9 @@ topic-tags: forms-manager, introduction
 docset: aem65
 exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: Admin, User
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -98,7 +99,7 @@ AEM 도구 패널에는 다양한 구성 요소용 도구가 포함되어 있습
   ![AEM Forms 도구](assets/aem_forms_tools_new.png)
 
 * **구성 PDF Generator:** 관리자가 AEM을 구성할 수 있습니다. [!DNL Forms] PDF Generator 설정, PDF Generator 계정 추가, 사용자 계정으로 구성 가져오기 또는 내보내기.
-* **응답 관리 에셋 게시:** AEM [!DNL Forms] 작성자 인스턴스의 모든 편지, 문서 단편, 데이터 사전 및 관련 종속성을 한 번에 게시할 수 있습니다. 게시된 에셋에는 모든 서신 관리 에셋과 관련 의존성이 포함됩니다. 자세한 내용은 [양식 및 문서 게시 및 게시 취소](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
+* **Publish 서신 관리 에셋:** AEM [!DNL Forms] 작성자 인스턴스의 모든 편지, 문서 단편, 데이터 사전 및 관련 종속성을 한 번에 게시할 수 있습니다. 게시된 에셋에는 모든 서신 관리 에셋과 관련 의존성이 포함됩니다. 자세한 내용은 [양식 및 문서 게시 및 게시 취소](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **응답 관리 에셋 내보내기:** 모든 서신 관리 에셋과 관련 종속성을 AEM에서 패키지로 다운로드할 수 있습니다 [!DNL Forms] 인스턴스. 자세한 단계는 를 참조하십시오. [AEM Forms으로 에셋 가져오기 및 내보내기](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## 사용자 인터페이스의 일반적인 요소 {#commonelements}

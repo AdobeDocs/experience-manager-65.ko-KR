@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Java™ API 빠른 시작(SOAP)은 Endpoint Registry에서 사용할 수 있습�
 
 [QuickStart: Java를 사용하여 엔드포인트 커넥터 정보 검색](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## QuickStart: Java™ API를 사용하여 SOAP 끝점 추가 {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-다음 Java™ 코드 예제에서는 SOAP 끝점을 라는 서비스에 추가합니다. *MyApplication/EncryptDocument*. (참조: [SOAP 끝점 추가](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
+다음 Java™ 코드 예제에서는 SOAP 끝점을 라는 서비스에 추가합니다. *MyApplication/EncryptDocument*. (참조: [SOAP 엔드포인트 추가](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```java
  /*

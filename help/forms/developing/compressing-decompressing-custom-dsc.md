@@ -3,8 +3,9 @@ title: JEE Custom DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 �
 description: JEE Custom DSC에서 AEM Forms을 사용하여 파일을 압축하고 압축 해제하는 방법에 대해 알아봅니다
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%

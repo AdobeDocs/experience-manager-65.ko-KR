@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Security, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '7608'
 ht-degree: 1%
@@ -835,9 +836,9 @@ CSRF 필터에 의해 적합한 서버 요청이 차단되는 경우 다음 중 
    <td> 
     <ul> 
      <li><p>.NET 응용 프로그램과 같은 웹 서비스 클라이언트 응용 프로그램</p> </li> 
-     <li><p>Adobe Reader®는 JEE 서버의 AEM Forms 웹 서비스에 SOAP를 사용합니다</p> </li> 
-     <li><p>Adobe Flash® 응용 프로그램은 Forms Server 웹 서비스에 SOAP를 사용합니다</p> </li> 
-     <li><p>SOAP 모드에서 사용될 때 JEE의 AEM Forms SDK 호출</p> </li> 
+     <li><p>Adobe Reader®는 JEE 서버 웹 서비스에서 AEM Forms용 SOAP을 사용합니다</p> </li> 
+     <li><p>Adobe Flash® 응용 프로그램은 SOAP for Forms Server 웹 서비스를 사용합니다</p> </li> 
+     <li><p>SOAP 모드에서 사용 시 JEE의 AEM Forms SDK 호출</p> </li> 
      <li><p>Workbench 디자인 환경</p> </li> 
     </ul> </td> 
   </tr> 
@@ -954,7 +955,7 @@ JEE의 AEM Forms에 필요한 WebSphere 포트에 대한 자세한 내용을 보
 
 ### SSL 구성 {#configuring-ssl}
 
-섹션에 설명된 물리적 아키텍처 참조 [AEM Forms on JEE 물리적 아키텍처](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), 사용하려는 모든 연결에 대해 SSL을 구성해야 합니다. 특히 모든 SOAP 연결은 SSL을 통해 수행되어 네트워크에서 사용자 자격 증명이 노출되지 않도록 해야 합니다.
+섹션에 설명된 물리적 아키텍처 참조 [AEM Forms on JEE 물리적 아키텍처](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), 사용하려는 모든 연결에 대해 SSL을 구성해야 합니다. 특히, 네트워크에서 사용자 자격 증명이 노출되지 않도록 모든 SOAP 연결을 SSL을 통해 수행해야 합니다.
 
 JBoss, WebLogic 및 WebSphere에서 SSL을 구성하는 방법에 대한 지침은 의 &quot;SSL 구성&quot;을 참조하십시오. [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_64).
 

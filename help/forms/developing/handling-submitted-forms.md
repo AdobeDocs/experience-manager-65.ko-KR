@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 사용자가 대화형 양식을 작성할 수 있도록 해 주는 웹 기반 응용 프로그램을 사용하려면 데이터를 서버에 다시 제출해야 합니다. Forms 서비스를 사용하면 사용자가 대화형 양식에 입력한 데이터를 검색할 수 있습니다. 데이터를 검색한 후 비즈니스 요구 사항을 충족하도록 데이터를 처리할 수 있습니다. 예를 들어, 데이터베이스에 데이터를 저장하고, 다른 응용 프로그램으로 데이터를 보내고, 다른 서비스로 데이터를 보내고, 양식 디자인에서 데이터를 병합하고, 웹 브라우저에 데이터를 표시하는 등의 작업을 수행할 수 있습니다.
 
-양식 데이터는 Designer에서 설정한 옵션인 XML 또는 PDF 데이터로 Forms 서비스에 제출됩니다. XML로 제출된 양식을 사용하면 개별 필드 데이터 값을 추출할 수 있습니다. 즉, 사용자가 양식에 입력한 각 양식 필드의 값을 추출할 수 있습니다. PDF 데이터로 제출되는 양식은 XML 데이터가 아닌 이진 데이터이다. 양식을 PDF 파일로 저장하거나 다른 서비스로 전송할 수 있습니다. XML로 제출된 양식에서 데이터를 추출한 다음 양식 데이터를 사용하여 PDF 문서를 만들려면 다른 AEM Forms 작업을 호출하십시오. (참조: [제출된 XML 데이터를 사용하여 PDF 문서 생성](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+양식 데이터는 Forms에 설정된 옵션인 XML 또는 PDF 데이터로 Designer 서비스에 제출됩니다. XML로 제출된 양식을 사용하면 개별 필드 데이터 값을 추출할 수 있습니다. 즉, 사용자가 양식에 입력한 각 양식 필드의 값을 추출할 수 있습니다. PDF 데이터로 제출되는 양식은 XML 데이터가 아닌 이진 데이터이다. 양식을 PDF 파일로 저장하거나 다른 서비스로 전송할 수 있습니다. XML로 제출된 양식에서 데이터를 추출한 다음 양식 데이터를 사용하여 PDF 문서를 만들려면 다른 AEM Forms 작업을 호출하십시오. (참조: [제출된 XML 데이터를 사용하여 PDF 문서 생성](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
 다음 다이어그램은 이름이 인 Java 서블릿에 제출되는 데이터를 보여 줍니다. `HandleData` 웹 브라우저에 표시된 대화형 양식에서 가져온 것입니다.
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->데이터를 XML 데이터로 제출하려면 디자이너에서 양식 디자인을 올바르게 구성해야 합니다. XML 데이터를 제출하도록 양식 디자인을 제대로 구성하려면 양식 디자인에 있는 제출 단추가 XML 데이터를 제출하도록 설정되어 있는지 확인하십시오. XML 데이터를 제출하기 위한 제출 단추 설정에 대한 자세한 내용은 [AEM Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63).
+>데이터를 XML 데이터로 제출하려면 Designer에서 양식 디자인을 올바르게 구성해야 합니다. XML 데이터를 제출하도록 양식 디자인을 제대로 구성하려면 양식 디자인에 있는 제출 단추가 XML 데이터를 제출하도록 설정되어 있는지 확인하십시오. XML 데이터를 제출하기 위한 제출 단추 설정에 대한 자세한 내용은 [AEM Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## 제출된 PDF 데이터 처리 {#handling-submitted-pdf-data}
 
@@ -95,7 +95,7 @@ Forms 서비스를 호출하는 웹 애플리케이션을 고려합니다. Forms
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>사용자가 대화형 양식을 입력하고 제출 버튼을 클릭합니다. 양식은 PDF 데이터로 Forms 서비스에 다시 제출됩니다. 이 옵션은 Designer에서 설정됩니다.</p></td>
+   <td><p>사용자가 대화형 양식을 입력하고 제출 버튼을 클릭합니다. 양식은 PDF 데이터로 Forms 서비스에 다시 제출됩니다. 이 옵션은 Designer에 설정되어 있습니다.</p></td>
   </tr>
   <tr>
    <td><p>4</p></td>
@@ -106,7 +106,7 @@ Forms 서비스를 호출하는 웹 애플리케이션을 고려합니다. Forms
 
 ## 제출된 URL UTF-16 데이터 처리 {#handling-submitted-url-utf-16-data}
 
-양식 데이터가 URL UTF-16 데이터로 제출된 경우 클라이언트 컴퓨터에는 Adobe Reader 또는 Acrobat 8.1 이상이 필요합니다. 또한 양식 디자인에 URL로 인코딩된 데이터(HTTP Post)가 있는 제출 단추가 포함되어 있고 데이터 인코딩 옵션이 UTF-16인 경우 메모장과 같은 텍스트 편집기에서 양식 디자인을 수정해야 합니다. 인코딩 옵션을 다음 중 하나로 설정할 수 있습니다 `UTF-16LE` 또는 `UTF-16BE` 제출 단추 디자이너는 이 기능을 제공하지 않습니다.
+양식 데이터가 URL UTF-16 데이터로 제출된 경우 클라이언트 컴퓨터에는 Adobe Reader 또는 Acrobat 8.1 이상이 필요합니다. 또한 양식 디자인에 URL로 인코딩된 데이터(HTTP Post)가 있는 제출 단추가 포함되어 있고 데이터 인코딩 옵션이 UTF-16인 경우 메모장과 같은 텍스트 편집기에서 양식 디자인을 수정해야 합니다. 인코딩 옵션을 다음 중 하나로 설정할 수 있습니다 `UTF-16LE` 또는 `UTF-16BE` 제출 단추 Designer에서는 이 기능을 제공하지 않습니다.
 
 >[!NOTE]
 >

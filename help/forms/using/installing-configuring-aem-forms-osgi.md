@@ -7,7 +7,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms, OSGI
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1882'
 ht-degree: 4%
@@ -18,7 +19,7 @@ ht-degree: 4%
 
 ## 소개 {#introduction}
 
-AEM Forms은 최종 사용자로부터 데이터를 가져오기 위한 적응형 양식, HTML 5 Forms 및 PDF forms 양식 세트를 제공합니다. 또한 웹 페이지에 사용 가능한 모든 양식을 나열하고 양식 사용을 분석하며 프로필을 기반으로 사용자를 타깃팅하는 도구를 제공합니다. 이러한 기능은 AEM Forms 추가 기능 패키지에 포함되어 있습니다. 추가 기능 패키지는 AEM의 작성자 또는 게시 인스턴스에 배포됩니다.
+AEM Forms은 최종 사용자로부터 데이터를 가져오기 위한 적응형 양식, HTML 5 Forms 및 PDF forms 양식 세트를 제공합니다. 또한 웹 페이지에 사용 가능한 모든 양식을 나열하고 양식 사용을 분석하며 프로필을 기반으로 사용자를 타깃팅하는 도구를 제공합니다. 이러한 기능은 AEM Forms 추가 기능 패키지에 포함되어 있습니다. 추가 기능 패키지는 AEM의 작성자 또는 Publish 인스턴스에 배포됩니다.
 
 **적응형 양식:** 이러한 형태는 장치의 화면 크기에 따라 모양을 변경하고, 매력적인 형태이며, 본질적으로 대화형입니다. 적응형 Forms은 Adobe Analytics, Adobe Sign 및 Adobe Target과도 통합할 수 있습니다. 이를 통해 인구 통계학 및 기타 기능을 기반으로 개인화된 양식 및 프로세스 지향 경험을 사용자에게 제공할 수 있습니다. 적응형 양식을 Adobe Sign과 통합할 수도 있습니다.
 
@@ -30,7 +31,7 @@ AEM Forms은 강력한 엔터프라이즈급 플랫폼이며 데이터 캡처(�
 
 ## 배포 토폴로지 {#deployment-topology}
 
-AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. AEM Forms 데이터 캡처 기능을 실행하려면 AEM Author 및 AEM Publish 인스턴스가 최소 하나만 필요합니다. AEM Forms AEM Forms 데이터 캡처 기능을 실행하려면 다음 토폴로지를 사용하는 것이 좋습니다. 토폴로지에 대한 자세한 내용은 [AEM Forms의 아키텍처 및 배포 토폴로지](/help/forms/using/aem-forms-architecture-deployment.md).
+AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. AEM Forms 데이터 캡처 기능을 실행하려면 AEM Author 및 AEM Publish 인스턴스가 최소 한 개 이상 있어야 합니다. AEM Forms AEM Forms 데이터 캡처 기능을 실행하려면 다음 토폴로지를 사용하는 것이 좋습니다. 토폴로지에 대한 자세한 내용은 [AEM Forms의 아키텍처 및 배포 토폴로지](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![recommended-topology](assets/recommended-topology.png)
 
@@ -41,7 +42,7 @@ AEM Forms의 데이터 캡처 기능을 설치하고 구성하기 전에 다음�
 * 하드웨어 및 소프트웨어 인프라가 구축되어 있습니다. 지원되는 하드웨어 및 소프트웨어에 대한 자세한 목록은 [기술 요구 사항](/help/sites-deploying/technical-requirements.md).
 
 * AEM 인스턴스의 설치 경로에 공백이 포함되어 있지 않습니다.
-* AEM 인스턴스가 실행 중입니다. Windows 사용자의 경우 관리자 모드로 AEM 인스턴스를 설치합니다. AEM 용어에서 &quot;인스턴스&quot;는 작성자 또는 게시 모드의 서버에서 실행되는 AEM의 사본입니다. 최소 두 개가 필요합니다. [AEM 인스턴스(작성자 1명 및 게시 1명)](/help/sites-deploying/deploy.md) AEM Forms 데이터 캡처 기능을 실행하려면 다음 작업을 수행하십시오.
+* AEM 인스턴스가 실행 중입니다. Windows 사용자의 경우 관리자 모드로 AEM 인스턴스를 설치합니다. AEM 용어에서 &quot;인스턴스&quot;는 작성자 또는 게시 모드의 서버에서 실행되는 AEM의 사본입니다. 최소 두 개가 필요합니다. [AEM 인스턴스(작성자 1명 및 Publish 1명)](/help/sites-deploying/deploy.md) AEM Forms 데이터 캡처 기능을 실행하려면 다음 작업을 수행하십시오.
 
    * **작성자**: 콘텐츠를 만들고, 업로드하고, 편집하고, 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 콘텐츠를 실행할 준비가 되면 게시 인스턴스에 복제됩니다.
    * **게시**: 인터넷 또는 내부 네트워크를 통해 게시된 콘텐츠를 일반에게 제공하는 AEM 인스턴스.
@@ -170,7 +171,7 @@ AEM Forms에는 몇 가지 필수 구성과 선택적 구성이 있습니다. �
 
 #### 직렬화 에이전트 구성 {#configure-the-serialization-agent}
 
-모든 작성자 및 게시 인스턴스에서 다음 단계를 수행하여 패키지를 허용 목록에 추가하다에 추가합니다.
+모든 작성자 및 Publish 인스턴스에서 다음 단계를 수행하여 패키지를 허용 목록에 추가하다에 추가합니다.
 
 1. 브라우저 창에서 AEM 구성 관리자를 엽니다. 기본 URL은 `https://'[server]:[port]'/system/console/configMgr`.
 1. 검색 대상 **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** 구성을 엽니다.

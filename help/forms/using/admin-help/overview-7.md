@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 169f3d94-ac00-41c7-853e-ecf0dbee559f
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # 양식 구성의 기본 사항 {#basics-of-configuring-forms}
 
-Forms 서비스를 사용하면 일반적으로 디자이너에서 만든 양식을 확인, 처리, 변환 및 제공하는 대화형 데이터 캡처 클라이언트 애플리케이션을 만들 수 있습니다. 양식 작성자는 Forms 서비스에서 다양한 형식으로 렌더링하는 단일 양식 디자인을 개발합니다.
+Forms 서비스를 사용하면 일반적으로 Designer에서 만든 양식을 확인, 처리, 변환 및 제공하는 대화형 데이터 캡처 클라이언트 애플리케이션을 만들 수 있습니다. 양식 작성자는 Forms 서비스에서 다양한 형식으로 렌더링하는 단일 양식 디자인을 개발합니다.
 
 * Adobe Reader 또는 브라우저에서 PDF으로
 * 를 호환 XHTML 1.0 렌더링을 포함하여 다양한 브라우저 환경에서 HTML으로 사용

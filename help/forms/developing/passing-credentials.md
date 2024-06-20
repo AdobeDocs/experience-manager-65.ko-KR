@@ -3,8 +3,9 @@ title: WS-security 헤더를 사용하여 자격 증명 전달
 description: WS-security 헤더를 사용하여 자격 증명을 전달하는 방법 알아보기
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Document Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # WS-Security 헤더를 사용하여 자격 증명 전달 {#using-execute-script-service-aem-forms-jee-workbench}
 
-웹 서비스를 사용하여 JEE 서비스에서 AEM Forms을 호출할 때 WS-Security 헤더를 사용하여 JEE에서 AEM Forms에 필요한 클라이언트 인증 정보를 전달할 수 있습니다. WS-Security는 클라이언트 인증, 메시지 기밀 유지 및 메시지 무결성을 구현하기 위한 SOAP 확장을 정의합니다. 따라서 JEE의 AEM Forms이 독립 실행형 서버로 배포되거나 클러스터된 환경 내에 배포될 때 JEE 서비스에서 AEM Forms을 호출할 수 있습니다.
+웹 서비스를 사용하여 JEE 서비스에서 AEM Forms을 호출할 때 WS-Security 헤더를 사용하여 JEE에서 AEM Forms에 필요한 클라이언트 인증 정보를 전달할 수 있습니다. WS-Security는 SOAP 확장을 정의하여 클라이언트 인증, 메시지 기밀 및 메시지 무결성을 구현합니다. 따라서 JEE의 AEM Forms이 독립 실행형 서버로 배포되거나 클러스터된 환경 내에 배포될 때 JEE 서비스에서 AEM Forms을 호출할 수 있습니다.
 
 JEE의 AEM Forms에 WS-Security 헤더를 전달하는 방법은 Axis 생성 Java 클래스를 사용하는지 또는 서비스의 기본 SOAP 스택을 사용하는 .NET 클라이언트 어셈블리를 사용하는지에 따라 다릅니다.
 

@@ -10,7 +10,8 @@ docset: aem65
 role: Developer
 exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 0%
@@ -73,7 +74,7 @@ DDX 문서에는 XDP가 포함되어 있습니다. `result` 태그로 결과의 
 
 다음 `XDP source` 태그는 XDP 조각을 추가하기 위한 컨테이너나 순서대로 첨부된 여러 문서 중 하나로 사용할 수 있는 전체 XDP 문서를 나타내는 XDP 파일을 지정합니다. 이 경우 XDP 문서는 컨테이너로만 사용됩니다(첫 번째 그림은에 나와 있음) *여러 XDP 조각 어셈블*). 즉, 다른 XDP 파일은 XDP 컨테이너 내에 배치됩니다.
 
-각 하위 양식에 대해 `XDPContent` 요소(이 요소는 선택 사항입니다.) 위의 예에서 세 가지 하위 양식이 있습니다. `subPatientContact`, `subPatientPhysical`, 및 `subPatientHealth`. 두 가지 모두 `subPatientPhysical` 하위 양식 및 `subPatientHealth` 하위 양식은 동일한 XDP 파일인 tuc018_patient.xdp에 있습니다. 조각 요소는 디자이너에서 정의한 대로 하위 양식의 이름을 지정합니다.
+각 하위 양식에 대해 `XDPContent` 요소(이 요소는 선택 사항입니다.) 위의 예에서 세 가지 하위 양식이 있습니다. `subPatientContact`, `subPatientPhysical`, 및 `subPatientHealth`. 두 가지 모두 `subPatientPhysical` 하위 양식 및 `subPatientHealth` 하위 양식은 동일한 XDP 파일인 tuc018_patient.xdp에 있습니다. 조각 요소는 Designer에 정의된 대로 하위 양식의 이름을 지정합니다.
 
 >[!NOTE]
 >

@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '18860'
 ht-degree: 0%
@@ -540,7 +540,7 @@ Output API(Java)를 사용하여 PDF/A 문서를 만듭니다.
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF/문서 생성](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF/A 문서 생성](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -629,7 +629,7 @@ Output API(웹 서비스)를 사용하여 PDF/A 문서를 만듭니다.
 
 ## 컨텐츠 서비스(사용 중단됨)의 문서를 출력 서비스로 전달 {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
-출력 서비스는 일반적으로 XDP 파일로 저장되고 디자이너에서 만들어지는 양식 디자인을 기반으로 하는 비대화형 PDF 양식을 렌더링합니다. 다음을 전달할 수 있습니다. `com.adobe.idp.Document` 출력 서비스에 대한 양식 디자인을 포함하는 개체입니다. 그런 다음 Output 서비스는 `com.adobe.idp.Document` 개체.
+출력 서비스는 일반적으로 XDP 파일로 저장되고 Designer에서 생성된 양식 디자인을 기반으로 하는 비대화형 PDF 양식을 렌더링합니다. 다음을 전달할 수 있습니다. `com.adobe.idp.Document` 출력 서비스에 대한 양식 디자인을 포함하는 개체입니다. 그런 다음 Output 서비스는 `com.adobe.idp.Document` 개체.
 
 를 전달할 때의 이점 `com.adobe.idp.Document` 출력 서비스의 개체는 다른 AEM Forms 서비스 작업에서 `com.adobe.idp.Document` 인스턴스. 즉, 다음을 얻을 수 있습니다. `com.adobe.idp.Document` 다른 서비스 작업의 인스턴스를 렌더링합니다. 예를 들어 XDP 파일이 Content Services(더 이상 사용되지 않음) 노드에 저장되어 있다고 가정해 보겠습니다 `/Company Home/Form Designs`다음 그림과 같이 을 참조하십시오.
 
@@ -818,7 +818,7 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
 ## 저장소의 문서를 출력 서비스로 전달 {#passing-documents-located-in-the-repository-to-the-output-service}
 
-출력 서비스는 일반적으로 XDP 파일로 저장되고 디자이너에서 만들어지는 양식 디자인을 기반으로 하는 비대화형 PDF 양식을 렌더링합니다. 다음을 전달할 수 있습니다. `com.adobe.idp.Document` 출력 서비스에 대한 양식 디자인을 포함하는 개체입니다. 그런 다음 Output 서비스는 `com.adobe.idp.Document` 개체.
+출력 서비스는 일반적으로 XDP 파일로 저장되고 Designer에서 생성된 양식 디자인을 기반으로 하는 비대화형 PDF 양식을 렌더링합니다. 다음을 전달할 수 있습니다. `com.adobe.idp.Document` 출력 서비스에 대한 양식 디자인을 포함하는 개체입니다. 그런 다음 Output 서비스는 `com.adobe.idp.Document` 개체.
 
 를 전달할 때의 이점 `com.adobe.idp.Document` 출력 서비스의 개체는 다른 AEM Forms 서비스 작업에서 `com.adobe.idp.Document` 인스턴스. 즉, 다음을 얻을 수 있습니다. `com.adobe.idp.Document` 다른 서비스 작업의 인스턴스를 렌더링합니다. 예를 들어 다음 그림과 같이 XDP 파일이 AEM Forms 저장소에 저장되어 있다고 가정해 보겠습니다.
 
@@ -1052,7 +1052,7 @@ ResourceRepositoryClient
 
 [빠른 시작(EJB 모드): Java API를 사용하여 조각을 기반으로 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 조각을 기반으로 PDF 문서 생성](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 조각을 기반으로 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1272,7 +1272,7 @@ Output 서비스는 작업을 수행한 후 작업이 성공했는지 여부를 
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 파일에 인쇄](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 파일로 인쇄](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2299,7 +2299,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 [빠른 시작(EJB 모드): Java API를 사용하여 PDF 문서 변환](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 변형](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 변환](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

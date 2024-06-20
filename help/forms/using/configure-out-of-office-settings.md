@@ -3,8 +3,9 @@ title: 부재 설정 구성
 description: 부재 중 설정을 Adobe Experience Manager Forms 인스턴스에 구성하는 방법에 대해 알아봅니다.
 exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 5%

@@ -8,24 +8,24 @@ topic-tags: develop
 role: Developer
 exl-id: b856a93b-91fa-47a5-9e46-6a537218fd4e
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
 
 ---
 
-# PDF 서비스 Java API 빠른 시작(SOAP) 생성 {#generate-pdf-service-java-api-quickstart-soap}
+# PDF 서비스 Java API 빠른 시작 생성(SOAP) {#generate-pdf-service-java-api-quickstart-soap}
 
-Java API 빠른 시작(SOAP)은 PDF 생성 서비스에 사용할 수 있습니다.
+SOAP(Java API Quick Start)는 PDF 생성 서비스에 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 Microsoft Word 문서를 PDF 문서로 변환](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 콘텐츠를 PDF 문서로 변환](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서를 RTF 파일로 변환(SOAP 모드)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 HTML 콘텐츠를 PDF 문서로 변환 {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환 {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
 다음 Java 코드 예제에서는 https://www.adobe.com에 있는 HTML 콘텐츠를 라는 PDF 문서로 변환합니다. *AdobeHTML.pdf*. (참조: [HTML 문서를 PDF 문서로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
 

@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '6201'
 ht-degree: 0%
@@ -82,7 +82,7 @@ User Management는 기본 제공 인증 기능을 제공하며 사용자가 자�
 
 >[!NOTE]
 >
->서버 시간대가 클라이언트 시간대와 다른 경우 WebSphere Application Server 클러스터에서 .NET 클라이언트를 사용하여 기본 SOAP 스택에서 AEM Forms에 대한 WSDL PDF 서비스 생성을 사용할 때 다음과 같은 사용자 관리 인증 오류가 발생할 수 있습니다.
+>서버 시간대가 클라이언트 시간대와 다른 경우, WebSphere Application Server 클러스터에서 .NET 클라이언트를 사용하여 기본 SOAP 스택에서 AEM Forms PDF 생성 서비스에 대한 WSDL을 사용할 때 다음과 같은 사용자 관리 인증 오류가 발생할 수 있습니다.
 
 `[com.adobe.idp.um.webservices.WSSecurityHandler] errorCode:12803 errorCodeHEX:0x3203 message:WSSecurityHandler: UM authenticate returns exception : An error was discovered processing the <wsse:Security> header. (WSSecurityEngine: Invalid timestamp The security semantics of message have expired).`
 

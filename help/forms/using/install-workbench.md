@@ -6,7 +6,8 @@ topic-tags: author
 role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Workbench, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -61,7 +62,7 @@ Workbench는 개발자와 양식 작성자가 자동화된 비즈니스 프로�
 
 다음 그림은 다음을 포함한 Workbench 설치를 보여 줍니다.
 * Workbench를 사용한 프로세스 디자인
-* 디자이너를 사용한 양식 디자인
+* Designer을 사용한 양식 디자인
 
 >[!NOTE]
 >
@@ -102,8 +103,8 @@ Workbench에서 지원되는 플랫폼의 전체 목록을 참조하십시오. [
 
 ## 디자이너 설치 고려 사항 {#designer-installation-considerations}
 
-기본적으로 Workbench 설치에는 해당 영어 전용 버전의 Designer가 포함되어 있습니다. Workbench 설치 응용 프로그램에서 컴퓨터에 있는 기존 버전의 디자이너를 검색하면 설치가 종료될 수 있으며, 계속하려면 현재 버전의 디자이너를 제거해야 합니다.
-아래 표에는 Workbench를 설치할 때 발생할 수 있는 가능한 Designer 설치 시나리오와 수행해야 하는 모든 작업의 전체 목록이 나와 있습니다.
+기본적으로 Workbench 설치에는 해당 영어 전용 버전의 Designer이 포함되어 있습니다. Workbench 설치 응용 프로그램이 컴퓨터에서 기존 버전의 Designer을 감지하면 설치가 종료될 수 있으며, 계속하려면 현재 버전의 Designer을 제거해야 합니다.
+아래 표에는 Workbench를 설치할 때 발생할 수 있는 가능한 Designer 설치 시나리오와 수행해야 하는 작업의 전체 목록이 나와 있습니다.
 
 <table>
  <tbody>
@@ -115,12 +116,12 @@ Workbench에서 지원되는 플랫폼의 전체 목록을 참조하십시오. [
    <td><p>Acrobat Pro 또는 Acrobat Pro Extended(Designer 포함)</p> </td>
    <td><p>없음.<br /> 
 Workbench 설치는 Acrobat Pro 또는 Acrobat Pro Extended와 함께 설치된 컴퓨터에서 Designer 인스턴스를 검색합니다.<br />
-Workbench 6.4용 Designer 6.4.x 및 Workbench 6.5용 Designer 6.5.0.x와 같은 동일한 시스템에 서로 다른 버전의 Designer가 함께 사용할 수 있습니다. Acrobat 10 Pro 또는 Acrobat 10 Pro Extended 이상과 함께 설치된 Designer 버전은 제거할 필요가 없습니다.
+동일한 시스템에 다른 버전의 Designer을 함께 사용할 수 있습니다(예: Workbench 6.4용 Designer 6.4.x 및 Workbench 6.5용 Designer 6.5.0.x). Acrobat 10 Pro 또는 Acrobat 10 Pro Extended 이상과 함께 설치된 Designer 버전은 제거할 필요가 없습니다.
 <br /></p> </td>
   </tr>
   <tr>
-   <td><p>디자이너(독립형)</p> </td>
-   <td><p>없음. <br />Workbench에 포함된 Designer 버전은 영어로만 사용할 수 있습니다. <br />Workbench 설치 관리자는 새 버전의 디자이너를 다시 설치하지 않습니다. 대신 Workbench 설치 프로그램과 번들로 제공되는 업데이트된 버전이 패치됩니다. 또한 Workbench 내에서 현지화된 버전의 디자이너를 사용할 수 있습니다.<br /> </p> </td>
+   <td><p>Designer(독립형)</p> </td>
+   <td><p>없음. <br />Workbench에 포함된 Designer 버전은 영어 전용입니다. <br />Workbench 설치 관리자는 새 버전의 Designer을 다시 설치하지 않습니다. 대신 Workbench 설치 프로그램과 번들로 제공되는 업데이트된 버전이 패치됩니다. 또한 Workbench 내에서 현지화된 버전의 Designer을 사용할 수 있습니다.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -128,7 +129,7 @@ Workbench 6.4용 Designer 6.4.x 및 Workbench 6.5용 Designer 6.5.0.x와 같은 
 ### Windows 10에서 Designer(독립 실행형)를 제거하려면 {#uninstall-designer-standalone-windows10}
 
 1. 다음으로 이동 **Campaign 컨트롤 패널 > 프로그램 > 프로그램 및 기능**
-1. 현재 설치된 프로그램 목록에서 **Adobe 디자이너**.
+1. 현재 설치된 프로그램 목록에서 **Designer Adobe**.
 1. 클릭 **제거** 그런 다음 을 클릭합니다. **예**.
 
 ## Workbench 설치 {#installing-workbench}
@@ -155,11 +156,11 @@ Workbench를 설치하기 전에 환경에 Workbench를 실행하는 데 필요�
 
 1. 소개 화면에서 다음을 클릭합니다.
 1. 제품 사용권 계약을 읽고 I accept the terms of the License Agreement 를 선택한 후 Next 를 클릭합니다.
-1. (선택 사항) 양식을 만들고 수정하는 데 이 도구가 필요한 경우 Adobe 디자이너 설치를 선택합니다.
+1. (선택 사항) 양식을 만들고 수정하는 데 이 도구가 필요한 경우 Adobe Designer 설치 를 선택합니다.
 
    >[!NOTE]
    >
-   >이 옵션을 선택 취소하여 Acrobat 10과 함께 설치된 디자이너를 계속 사용할 수 있습니다.
+   >이 옵션을 선택 취소하여 Acrobat 10과 함께 설치된 Designer을 계속 사용할 수 있습니다.
 
 1. 나열된 기본 디렉터리를 그대로 사용하거나 [선택]을 클릭하고 Workbench를 설치할 디렉터리로 이동한 후 [다음]을 클릭합니다.
 
@@ -172,7 +173,7 @@ Workbench를 설치하기 전에 환경에 Workbench를 실행하는 데 필요�
 1. 릴리스 정보를 검토하고 완료 를 클릭합니다.
 1. 이제 다음 항목이 컴퓨터에 설치됩니다.
    * **Workbench**: 시작 메뉴에서 Workbench를 실행하려면 모든 프로그램 > AEM Forms > Workbench를 선택합니다(바로 가기 폴더를 여기에 저장하기로 선택한 경우). 자세한 내용은 <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Workbench 사용</a> 설명서를 참조하십시오.
-   * **디자이너**: Workbench 내에서 Designer에 액세스할 수 있습니다. 자세한 내용은 의 시작하기 항목을 참조하십시오. <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">디자이너 도움말</a>.
+   * **디자이너**: Workbench 내에서 Designer에 액세스할 수 있습니다. 자세한 내용은 의 시작하기 항목을 참조하십시오. <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer 도움말</a>.
    * **AEM FORMS SDK**: SDK 사용에 대한 자세한 내용은 다음을 참조하십시오. <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">AEM Forms을 사용한 프로그래밍</a>.
 
 ## 프로세스 업그레이드 {#upgrading-processes}
@@ -229,7 +230,7 @@ HTTPS를 통해 Workbench를 AEM Forms 서버에 연결하려면 공개 키를 �
 
 * **템플릿 파일 이름**: 캐시된 양식의 기본 고유 식별자로 사용되는 템플릿의 위치 및 파일 이름입니다.
 * **타임스탬프**: 템플릿 파일에는 양식의 마지막 업데이트 시간을 결정하는 데 사용되는 타임스탬프가 포함되어 있습니다.
-* **템플릿 UUID**: 디자이너가 양식 및 해당 버전에 대한 고유 식별자(UUID)를 각 템플릿에 삽입합니다. 양식이 업데이트될 때마다 임베드된 UUID가 업데이트됩니다. 예를 들어 XDP 템플릿은 다음 콘텐츠를 표시할 수 있습니다.
+* **템플릿 UUID**: Designer은 양식 및 해당 버전에 대한 고유 식별자(UUID)를 각 템플릿에 삽입합니다. 양식이 업데이트될 때마다 임베드된 UUID가 업데이트됩니다. 예를 들어 XDP 템플릿은 다음 콘텐츠를 표시할 수 있습니다.
 
   `<?xml version="1.0" encoding="UTF-8"?>`
   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`

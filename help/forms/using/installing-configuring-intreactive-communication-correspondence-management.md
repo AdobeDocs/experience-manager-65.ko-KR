@@ -6,7 +6,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Interactive Communication
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 2%
@@ -17,7 +18,7 @@ ht-degree: 2%
 
 ## 소개 {#introduction}
 
-AEM Form은 비즈니스 서신, 문서, 명세서, 혜택 공지, 마케팅 이메일, 청구서 및 환영 키트와 같은 안전한 대화형 문서의 작성, 조립, 관리 및 전달을 중앙 집중화하는 기능을 제공합니다. 이 기능을 대화형 통신이라고 합니다. 이 기능은 AEM Forms 추가 기능 패키지에 포함되어 있습니다. 추가 기능 패키지는 AEM의 작성자 또는 게시 인스턴스에 배포됩니다.
+AEM Form은 비즈니스 서신, 문서, 명세서, 혜택 공지, 마케팅 이메일, 청구서 및 환영 키트와 같은 안전한 대화형 문서의 작성, 조립, 관리 및 전달을 중앙 집중화하는 기능을 제공합니다. 이 기능을 대화형 통신이라고 합니다. 이 기능은 AEM Forms 추가 기능 패키지에 포함되어 있습니다. 추가 기능 패키지는 AEM의 작성자 또는 Publish 인스턴스에 배포됩니다.
 
 대화형 통신 기능을 사용하여 여러 형식으로 통신을 생성할 수 있습니다. 예: 웹 및 PDF. 대화형 커뮤니케이션을 AEM Workflow와 통합하여 고객이 선택한 채널에서 조립된 커뮤니케이션을 처리하고 고객에게 전달할 수 있습니다. (예: 이메일을 통해 최종 사용자에게 커뮤니케이션 전송)
 
@@ -31,7 +32,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 
 ![recommended-topology](assets/recommended-topology.png)
 
-AEM Forms Interactive Communications는 AEM Forms 작성자 인스턴스에서 관리, 작성 및 에이전트 사용자 인터페이스를 실행합니다. 게시 인스턴스는 최종 사용자가 사용할 수 있는 대화형 통신의 최종 버전을 호스팅합니다.
+AEM Forms Interactive Communications는 AEM Forms 작성자 인스턴스에서 관리, 작성 및 에이전트 사용자 인터페이스를 실행합니다. Publish 인스턴스는 최종 사용자가 사용할 수 있는 대화형 통신의 최종 버전을 호스팅합니다.
 
 ## 시스템 요구 사항 {#system-requirements}
 
@@ -64,7 +65,7 @@ AEM Forms의 대화형 통신 및 서신 관리 기능을 설치하고 구성하
   </tr>
   <tr>
    <td>libSM</td>
-   <td>Zlib</td>
+   <td>즐립</td>
    <td>리브아이스(libICE)</td>
    <td>리부uid</td>
   </tr>
@@ -132,7 +133,7 @@ AEM Forms에는 몇 가지 필수 구성과 선택적 구성이 있습니다. �
 
 #### 직렬화 에이전트 구성 {#configure-the-serialization-agent}
 
-모든 작성자 및 게시 인스턴스에서 다음 단계를 수행하여 패키지를 허용 목록에 추가하다에 추가합니다.
+모든 작성자 및 Publish 인스턴스에서 다음 단계를 수행하여 패키지를 허용 목록에 추가하다에 추가합니다.
 
 1. 브라우저 창에서 AEM 구성 관리자를 엽니다. 기본 URL은 https://&#39;입니다.[server]:[포트]&#39;/system/console/configMgr.
 1. 검색 및 열기 **역직렬화 방화벽 구성**.

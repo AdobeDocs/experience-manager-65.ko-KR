@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -33,7 +33,7 @@ AEM Forms 저장소 서비스에서는 다음 빠른 시작을 사용할 수 있
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 리소스 검색](repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 리소스 간 관계 만들기](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 리소스 간의 관계 만들기](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 리소스 잠금](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
@@ -41,7 +41,7 @@ AEM Forms 저장소 서비스에서는 다음 빠른 시작을 사용할 수 있
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 리소스 삭제](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다
 
 **Applications/FormsApplication**
 
@@ -731,7 +731,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 리소스 간 관계 만들기 {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 리소스 간의 관계 만들기 {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
 다음 Java 코드 예제에서는 AEM Forms 저장소의 두 리소스 간의 관계를 만듭니다. (참조: [리소스 관계 만들기](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
 

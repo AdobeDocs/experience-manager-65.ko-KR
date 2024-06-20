@@ -7,8 +7,9 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 solution: Experience Manager, Experience Manager Forms
+feature: HTML5 Forms, Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +28,7 @@ AEM Forms workspace 는 AEM Forms의 일부입니다. 작업 영역은 PDF forms
 
 ## 친숙해지기 {#getting-familiar}
 
-비즈니스 프로세스를 자동화하는 Forms 응용 프로그램을 만드는 전체 프로세스에 익숙해지려면 연습에 따르십시오. 이 연습을 따라 Workbench, Designer 및 AEM Forms 작업 영역을 사용하여 응용 프로그램을 만들고 관리하고 테스트할 수 있습니다. 구현에 대한 자세한 내용은 [첫 번째 AEM Forms 애플리케이션 만들기](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
+비즈니스 프로세스를 자동화하는 Forms 응용 프로그램을 만드는 전체 프로세스에 익숙해지려면 연습에 따르십시오. 이 연습에 따라 Workbench, Designer 및 AEM Forms 작업 영역을 사용하여 애플리케이션을 만들고 관리하고 테스트할 수 있습니다. 구현에 대한 자세한 내용은 [첫 번째 AEM Forms 애플리케이션 만들기](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
 ## 기능 개요 {#functional-overview}
 

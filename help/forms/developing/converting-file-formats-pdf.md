@@ -8,7 +8,8 @@ topic-tags: operations
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '7848'
 ht-degree: 0%
@@ -342,9 +343,9 @@ PDF API 생성(Java)을 사용하여 HTML 문서를 PDF 문서로 변환합니�
 
 [HTML 문서를 PDF 문서로 변환](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 콘텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 콘텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -495,7 +496,7 @@ PDF API 생성(Java)을 사용하여 PDF 문서를 RTF 파일로 변환:
 
 [단계 요약](converting-file-formats-pdf.md#summary-of-steps)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 콘텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

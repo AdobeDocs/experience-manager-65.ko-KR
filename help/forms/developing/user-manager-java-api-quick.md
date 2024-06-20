@@ -8,16 +8,16 @@ topic-tags: develop
 role: Developer
 exl-id: 7f622371-0f0f-4789-b2e7-e4b536a21c4d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
 
 ---
 
-# 사용자 관리자 Java API 빠른 시작(SOAP) {#user-manager-java-api-quick-start-soap}
+# User Manager Java API 빠른 시작(SOAP) {#user-manager-java-api-quick-start-soap}
 
-Java API 빠른 시작(SOAP)은 사용자 관리자 API에 사용할 수 있습니다.
+SOAP(Java API Quick Start)는 사용자 관리자 API에 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 사용자 추가](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
@@ -31,9 +31,9 @@ Java API 빠른 시작(SOAP)은 사용자 관리자 API에 사용할 수 있습�
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 사용자를 프로그래밍 방식으로 동기화](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 기본 설정 노드를 프로그래밍 방식으로 관리](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 기본 설정 노드를 프로그래밍 방식으로 관리합니다.](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >
@@ -899,7 +899,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드) 기본 설정 노드 관리 {#quick-start-soap-mode-managing-preferences-nodes}
+## 빠른 시작(SOAP 모드) 환경 설정 노드 관리 {#quick-start-soap-mode-managing-preferences-nodes}
 
 사용자 관리 API를 사용하여 기본 설정 노드를 관리하는 다음 Java 코드 모델입니다. ( 참조 [프로그래밍 방식으로 기본 설정 노드 관리](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
@@ -1002,7 +1002,7 @@ public class ManagePreferences {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 기본 설정 노드를 프로그래밍 방식으로 관리 {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 기본 설정 노드를 프로그래밍 방식으로 관리합니다. {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
 
 사용자 관리 API를 사용하여 기본 설정 노드를 관리하는 다음 Java 코드 모델( 참조 [프로그래밍 방식으로 기본 설정 노드 관리](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 

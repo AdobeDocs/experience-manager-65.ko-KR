@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '3674'
 ht-degree: 0%
@@ -422,7 +422,7 @@ Java 서블릿은 다음 Java 코드를 사용하여 HTML 페이지에서 게시
 
 >[!NOTE]
 >
->이전 그림에서 JPG 파일은 모든 JPG 이미지 파일로 대체할 수 있습니다.
+>이전 그림에서 JPG 파일은 JPG 이미지 파일로 대체할 수 있습니다.
 
 **웹 응용 프로그램을 WAR 파일로 패키지합니다.**
 

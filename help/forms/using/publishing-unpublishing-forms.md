@@ -8,8 +8,9 @@ content-strategy: max-2018
 docset: aem65
 exl-id: f26c4268-7885-4e61-a258-219d98288548
 solution: Experience Manager, Experience Manager Forms
+feature: Correspondence Management
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1402'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 AEM Forms을 사용하면 양식을 쉽게 만들고, 게시하고, 게시를 취소할 수 있습니다. AEM Forms에 대한 자세한 내용은 [양식 관리 소개](../../forms/using/introduction-managing-forms.md).
 
-AEM Forms 서버는 Author와 Publish, 이렇게 두 개의 인스턴스를 제공합니다. 작성자 인스턴스는 양식 에셋 및 리소스를 만들고 관리하기 위한 것입니다. 게시 인스턴스는 최종 사용자가 사용할 수 있는 에셋 및 관련 리소스를 유지하기 위한 것입니다. 작성자 모드에서 XDP 및 PDF forms을 가져올 수 있습니다. 자세한 내용은 [AEM Forms에서 XDP 및 PDF 문서 가져오기](../../forms/using/get-xdp-pdf-documents-aem.md).
+AEM Forms 서버는 Author와 Publish의 두 가지 인스턴스를 제공합니다. 작성자 인스턴스는 양식 에셋 및 리소스를 만들고 관리하기 위한 것입니다. Publish 인스턴스는 최종 사용자가 사용할 수 있는 에셋 및 관련 리소스를 보관하기 위한 것입니다. 작성자 모드에서 XDP 및 PDF forms을 가져올 수 있습니다. 자세한 내용은 [AEM Forms에서 XDP 및 PDF 문서 가져오기](../../forms/using/get-xdp-pdf-documents-aem.md).
 
 ## 지원되는 에셋   {#supported-assets-nbsp}
 
@@ -59,10 +60,10 @@ AEM Forms은 다음 유형의 자산을 지원합니다.
 자산은 다음과 같은 상태를 가질 수 있습니다.
 
 * **게시 취소됨:** 게시된 적이 없는 에셋(게시되지 않은 상태는 Forms 에셋에만 적용됩니다. 서신 관리 에셋에 게시 취소 상태가 없습니다.)
-* **게시됨**: 게시되었으며 게시 인스턴스에서 사용할 수 있는 에셋입니다
+* **게시됨**: 게시되었으며 Publish 인스턴스에서 사용할 수 있는 에셋입니다
 * **수정됨**: 게시된 후 수정되는 에셋
 
-## 자산 게시 {#publish-an-asset}
+## Publish an 에셋 {#publish-an-asset}
 
 1. AEM Forms 서버에 로그인.
 1. 다음 중 하나를 사용하여 자산을 선택하고 게시합니다.
@@ -79,7 +80,7 @@ AEM Forms은 다음 유형의 자산을 지원합니다.
       >
       >여러 에셋을 선택하지 마십시오. 한 번에 여러 자산을 게시할 수 없습니다.
 
-1. 게시 프로세스가 시작되면 관련 에셋 및 리소스가 모두 나열된 확인 대화 상자가 나타납니다. 관련 에셋이 포함된 대화 상자에서 **[!UICONTROL 게시]**. 에셋이 게시되고 에셋 게시 성공 대화 상자가 나타납니다.
+1. Publish 프로세스가 시작되면 관련 에셋 및 리소스가 모두 나열된 확인 대화 상자가 나타납니다. 관련 에셋이 포함된 대화 상자에서 **[!UICONTROL 게시]**. 에셋이 게시되고 Publish 에셋 성공 대화 상자가 나타납니다.
 
    >[!NOTE]
    >
@@ -91,13 +92,13 @@ AEM Forms은 다음 유형의 자산을 지원합니다.
 
    >[!NOTE]
    >
-   >Forms Manager의 경우, 사용자에게 나열된 자산을 게시할 권한이 없으면 게시 작업이 비활성화됩니다. 추가 권한이 필요한 에셋은 빨간색으로 표시됩니다.
+   >Forms Manager의 경우, 사용자에게 나열된 에셋을 게시할 권한이 없으면 Publish 작업이 비활성화됩니다. 추가 권한이 필요한 에셋은 빨간색으로 표시됩니다.
 
-   에셋이 게시되면 에셋의 메타데이터 속성이 게시 인스턴스에 복사되고 에셋의 상태가 게시됨으로 변경됩니다. 게시된 종속 에셋의 상태도 게시됨으로 변경됩니다.
+   에셋이 게시되면 에셋의 메타데이터 속성이 Publish 인스턴스에 복사되고 에셋의 상태가 게시됨으로 변경됩니다. 게시된 종속 에셋의 상태도 게시됨으로 변경됩니다.
 
    에셋을 게시한 후 Forms 포털을 사용하여 웹 페이지에 모든 에셋을 표시할 수 있습니다. 자세한 내용은 [포털에 양식 게시 소개](../../forms/using/introduction-publishing-forms.md).
 
-## 모든 응답 관리 에셋 게시 {#publish-all-the-correspondence-management-assets}
+## 모든 응답 관리 에셋 Publish {#publish-all-the-correspondence-management-assets}
 
 AEM Forms을 사용하면 한 번에 모든 서신 관리 에셋을 서버에 게시할 수 있습니다. 게시된 에셋에는 모든 서신 관리 에셋과 관련 의존성이 포함됩니다.
 
@@ -106,11 +107,11 @@ AEM Forms을 사용하면 한 번에 모든 서신 관리 에셋을 서버에 �
 1. AEM Forms 서버에 로그인.
 1. 선택 **Adobe Experience Manager** 전역 탐색 막대에서 을 참조하십시오.
 1. 선택 ![도구](assets/tools.png)을 선택한 다음 을 선택합니다 **Forms**.
-1. 선택 **응답 관리 에셋 게시**.
+1. 선택 **Publish 서신 관리 에셋**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
-   모든 응답 관리 에셋 게시 페이지가 나타나고 응답 관리 에셋 게시 프로세스를 마지막으로 시도한 시간에 대한 정보가 표시됩니다.
+   Publish 모든 응답 관리 에셋 페이지가 나타나고 Publish 응답 관리 에셋 프로세스를 마지막으로 시도한 시간에 대한 정보가 표시됩니다.
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
@@ -120,7 +121,7 @@ AEM Forms을 사용하면 한 번에 모든 서신 관리 에셋을 서버에 �
 
    >[!NOTE]
    >
-   >게시 프로세스는 일단 시작되면 취소할 수 없습니다. 또한 게시 작업이 진행 중일 때는 에셋을 만들거나, 삭제하거나, 수정하거나, 게시하거나, 모든 응답 관리 에셋 내보내기 작업을 시작하지 마십시오.
+   >Publish 프로세스는 일단 시작되면 취소할 수 없습니다. 또한 Publish 작업이 진행 중일 때는 에셋을 만들거나, 삭제하거나, 수정하거나, 게시하거나, 모든 응답 관리 에셋 내보내기 작업을 시작하지 마십시오.
 
 ## Forms 및 문서에 대한 게시 및 게시 취소 자동화 {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
@@ -130,7 +131,7 @@ Forms 및 문서 에셋의 게시 및 게시 취소 날짜와 시간을 예약�
 
 1. 에셋 선택 및 선택 **[!UICONTROL 속성 보기]**. 메타데이터 속성 페이지가 열립니다.
 1. 메타데이터 속성 페이지에서 을 선택합니다. **[!UICONTROL 고급]**&#x200B;을 선택한 다음 을 선택합니다 **[!UICONTROL 편집]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-1. 다음에서 **[!UICONTROL 게시 시간]** 및 **[!UICONTROL 게시 해제 시간]** 필드에서 날짜 및 시간을 선택합니다.\
+1. 다음에서 **[!UICONTROL Publish 정시]** 및 **[!UICONTROL Publish 해제 시간]** 필드에서 날짜 및 시간을 선택합니다.\
    선택 **[!UICONTROL 완료]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## 자산 게시 취소 {#unpublish-an-asset}

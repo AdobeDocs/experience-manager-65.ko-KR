@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2455'
 ht-degree: 0%
@@ -146,7 +146,7 @@ Forms 애플리케이션에서 리소스의 경로는 다음과 같습니다.
 
 대화형 양식을 렌더링할 때 양식 데이터가 게시되는 위치에 대한 대상 URL과 같은 URI 값을 정의할 수 있습니다. 대상 URL은 다음 방법 중 하나로 정의할 수 있습니다.
 
-* Designer에서 양식 디자인을 디자인하는 동안 제출 단추 사용
+* Designer에서 양식 디자인을 디자인할 때 제출 단추 사용
 * Forms 서비스 클라이언트 API 사용
 
 대상 URL이 양식 디자인 내에 정의된 경우 Forms 서비스 클라이언트 API로 재정의하지 마십시오. 즉, Forms API를 사용하여 대상 URL을 설정하면 양식 디자인에서 지정된 URL이 API를 사용하여 지정된 URL로 재설정됩니다. PDF 양식을 양식 디자인에 지정된 대상 URL에 제출하려면 프로그래밍 방식으로 대상 URL을 빈 문자열로 설정합니다.
@@ -167,7 +167,7 @@ Forms 애플리케이션에서 리소스의 경로는 다음과 같습니다.
 
 **대화형 PDF 양식 렌더링**
 
-양식을 렌더링하려면 디자이너에서 작성하여 XDP 또는 PDF 파일로 저장한 양식 디자인을 사용합니다. Acrobat을 사용하여 만들고 PDF 파일로 저장된 양식을 렌더링할 수도 있습니다. 대화형 PDF 양식을 렌더링하려면 `FormsServiceClient` 개체 `renderPDFForm` 방법 또는 `renderPDFForm2` 메서드를 사용합니다.
+양식을 렌더링하려면 Designer에서 작성하여 XDP 또는 PDF 파일로 저장한 양식 디자인을 사용합니다. Acrobat을 사용하여 만들고 PDF 파일로 저장된 양식을 렌더링할 수도 있습니다. 대화형 PDF 양식을 렌더링하려면 `FormsServiceClient` 개체 `renderPDFForm` 방법 또는 `renderPDFForm2` 메서드를 사용합니다.
 
 다음 `renderPDFForm` 를 사용합니다. `URLSpec` 개체. XDP 파일에 대한 컨텐츠 루트는 다음을 사용하여 Forms 서비스로 전달됩니다. `URLSpec` 개체 `setContentRootURI` 메서드를 사용합니다. 양식 디자인 이름( `formQuery`)는 별도의 매개 변수 값으로 전달됩니다. 두 값을 연결하여 양식 디자인에 대한 절대 참조를 가져옵니다.
 

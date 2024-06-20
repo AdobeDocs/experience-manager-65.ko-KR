@@ -7,8 +7,9 @@ topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 1%
@@ -80,7 +81,7 @@ Forms 포털을 사용하면 양식 저장소의 양식을 포털 페이지에 �
 1. **초안 및 제출된 양식 데이터의 저장소를 구성합니다.** 기본적으로 초안 및 제출 데이터는 AEM 저장소에 저장됩니다. 프로덕션 환경에서는 초안 또는 제출된 양식 데이터를 AEM 저장소에 저장하지 않는 것이 좋습니다. [데이터를 보안 위치에 저장하도록 Forms 포털 구성 요소 구성](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(선택 사항) Forms 포털 구성 요소 사용자 지정:** [Forms 포털 페이지 템플릿 사용자 지정](../../forms/using/customizing-templates-forms-portal-components.md) 구성 요소에 고유한 모양을 제공합니다.
 1. **(선택 사항) 양식에 사용자 지정 메타데이터 추가:** [양식에 사용자 지정 메타데이터 추가](../../forms/using/customizing-templates-forms-portal-components.md) 목록 및 검색 환경을 개선합니다.
-1. **Forms 포털 페이지 게시:** 이제 Forms 포털 페이지가 준비되었습니다. 페이지를 게시합니다.
+1. **Forms 포털 페이지 Publish:** 이제 Forms 포털 페이지가 준비되었습니다. 페이지를 Publish으로 이동합니다.
 
 ## 관련 문서 {#related-articles}
 

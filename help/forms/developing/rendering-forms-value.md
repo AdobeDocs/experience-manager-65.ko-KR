@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1822'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
-일반적으로 Designer에서 만든 양식 디자인은 Forms 서비스에 대한 참조로 전달됩니다. 양식 디자인은 크기가 클 수 있으므로 값별로 양식 디자인 바이트를 마샬링하지 않도록 참조로 전달하는 것이 더 효율적입니다. Forms 서비스는 양식 디자인을 캐시할 수 있으므로 캐시될 때 양식 디자인을 계속 읽을 필요가 없습니다.
+일반적으로 Designer에서 만든 양식 디자인은 Forms 서비스를 참조하여 전달됩니다. 양식 디자인은 크기가 클 수 있으므로 값별로 양식 디자인 바이트를 마샬링하지 않도록 참조로 전달하는 것이 더 효율적입니다. Forms 서비스는 양식 디자인을 캐시할 수 있으므로 캐시될 때 양식 디자인을 계속 읽을 필요가 없습니다.
 
 양식 디자인에 UUID 속성이 포함된 경우 캐시됩니다. UUID 값은 모든 양식 디자인에 대해 고유하며 양식을 고유하게 식별하는 데 사용됩니다. 값으로 양식을 렌더링할 때 양식이 반복적으로 사용될 때만 캐시되어야 합니다. 그러나 양식이 반복적으로 사용되지 않고 고유해야 하는 경우 AEM Forms API를 사용하여 설정된 캐싱 옵션을 사용하여 양식을 캐싱하지 않아도 됩니다.
 
@@ -143,7 +143,7 @@ Forms API(Java)를 사용하여 값별 양식 렌더링:
 
 [값별 Forms 렌더링](/help/forms/developing/rendering-forms.md)
 
-[빠른 시작(SOAP 모드): Java API를 사용한 값별 렌더링](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 값별 렌더링](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

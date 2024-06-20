@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
-AEM Forms 서비스는 대화형 PDF forms을 클라이언트 장치(일반적으로 웹 브라우저)로 렌더링하여 사용자로부터 정보를 수집합니다. 대화형 PDF 양식은 일반적으로 XDP 파일로 저장되고 디자이너에서 만들어지는 양식 디자인을 기반으로 합니다. AEM Forms에서 를 전달할 수 있습니다. `com.adobe.idp.Document` Forms 서비스에 대한 양식 디자인이 포함된 객체입니다. 그런 다음 Forms 서비스는에서 양식 디자인을 렌더링합니다 `com.adobe.idp.Document` 개체.
+AEM Forms 서비스는 대화형 PDF forms을 클라이언트 장치(일반적으로 웹 브라우저)로 렌더링하여 사용자로부터 정보를 수집합니다. 대화형 PDF 양식은 일반적으로 XDP 파일로 저장되고 Designer에서 생성된 양식 디자인을 기반으로 합니다. AEM Forms에서 를 전달할 수 있습니다. `com.adobe.idp.Document` Forms 서비스에 대한 양식 디자인이 포함된 객체입니다. 그런 다음 Forms 서비스는에서 양식 디자인을 렌더링합니다 `com.adobe.idp.Document` 개체.
 
 를 전달할 때의 이점 `com.adobe.idp.Document` Forms 서비스의 개체는 다른 서비스 작업에서 `com.adobe.idp.Document` 인스턴스. 즉, 다음을 얻을 수 있습니다. `com.adobe.idp.Document` 다른 서비스 작업의 인스턴스를 렌더링합니다. 예를 들어 XDP 파일이 Content Services(더 이상 사용되지 않음) 노드에 저장되어 있다고 가정해 보겠습니다 `/Company Home/Form Designs`다음 그림과 같이 을 참조하십시오.
 

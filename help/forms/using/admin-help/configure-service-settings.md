@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '10702'
 ht-degree: 0%
@@ -451,7 +452,7 @@ Microsoft SharePoint 구성 서비스에 사용할 수 있는 설정은 다음�
 
 ## 출력 서비스 설정 {#output-service-settings}
 
-출력 서비스 `(OutputService)`xml 양식 데이터를 AEM Forms Designer에서 만든 양식 디자인과 병합하여 다음 형식 중 하나로 문서 출력 스트림을 만들 수 있습니다.
+출력 서비스 `(OutputService)`를 사용하면 XML 양식 데이터를 AEM forms Designer에서 생성된 양식 디자인과 병합하여 다음 형식 중 하나로 문서 출력 스트림을 만들 수 있습니다.
 
 * PDF 또는 PDF/A 문서 출력 스트림입니다.
 * Adobe PostScript 출력 스트림.
@@ -749,7 +750,7 @@ Repository Provider Service는 Provider Service에 대한 인터페이스 역할
 
 웹 서비스 서비스를 통해 프로세스에서 웹 서비스 작업을 호출할 수 있습니다. 예를 들어, 조직은 서비스 공급자의 노출된 웹 서비스를 호출하여 연락처 및 계정 세부 사항과 같은 정보를 저장하고 검색하기 위한 프로세스를 통합할 수 있습니다. 웹 서비스 서비스는 지정된 웹 서비스를 호출하고 각 매개 변수에 대한 값을 전달합니다. 그런 다음 작업의 반환 값을 프로세스 내의 지정된 변수에 저장합니다.
 
-웹 서비스는 SOAP 메시지를 주고받으며 웹 서비스와 상호 작용합니다. 또한 이 서비스는 WS-Attachment 프로토콜을 사용하여 SOAP 메시지와 함께 MIME, MTOM 및 SwaRef 첨부 파일을 전송할 수 있도록 지원합니다. 웹 서비스 상호 작용은 SAP 시스템 및 .NET 웹 서비스와 호환됩니다.
+웹 서비스는 SOAP 메시지를 보내고 받는 방식으로 웹 서비스와 상호 작용합니다. 또한 이 서비스는 WS-Attachment 프로토콜을 사용하여 SOAP 메시지와 함께 MIME, MTOM 및 SwaRef 첨부 파일을 전송할 수 있도록 지원합니다. 웹 서비스 상호 작용은 SAP 시스템 및 .NET 웹 서비스와 호환됩니다.
 
 웹 서비스 서비스에 다음 설정을 사용할 수 있습니다.
 
