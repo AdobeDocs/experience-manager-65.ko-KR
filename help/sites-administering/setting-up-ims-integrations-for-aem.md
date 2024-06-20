@@ -1,26 +1,28 @@
 ---
 title: AEM용 IMS 통합 설정
 description: AEM용 IMS 통합을 설정하는 방법 알아보기
-source-git-commit: bca98907b79f12572879273ece41ec8d82fed1b8
+feature: Security
+role: Admin
+exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
+source-git-commit: c2d996586d2ec7299e856a97ae1b744245c730bb
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 79%
+source-wordcount: '433'
+ht-degree: 63%
 
 ---
-
 
 # AEM용 IMS 통합 설정 {#setting-up-ims-integrations-for-aem}
 
 
 >[!NOTE]
 >
->Adobe 고객은 [Adobe Developer Console](https://developer.adobe.com/console)을 사용하여 다양한 API에 액세스할 수 있는 자격 증명을 생성합니다. 고객은 OAuth 서버 간 자격 증명에서 단일 페이지 앱에 이르기까지 다양한 자격 증명 유형 중에서 선택합니다. 이러한 자격 증명 유형 중 하나인 서비스 계정(JWT) 자격 증명은 서비스 팩 20의 OAuth 서버 간 자격 증명을 위해 더 이상 사용되지 않습니다. 이 변경 사항은 다운로드할 수 있는 핫픽스를 사용하여 서비스 팩 11부터 서비스 팩 20까지 이전 서비스 팩으로 다시 포팅할 수 있습니다 [여기](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Adobe 고객은 [Adobe Developer 콘솔](https://developer.adobe.com/console) 다양한 API에 액세스할 수 있는 자격 증명을 생성할 수 있습니다. 고객은 OAuth 서버 간 자격 증명에서 단일 페이지 앱에 이르기까지 다양한 자격 증명 유형 중에서 선택합니다. 이제 JWT(자격 증명 유형 서비스 계정)는 더 이상 사용되지 않으며, 서비스 팩 20의 OAuth 서버 간 자격 증명이 제공됩니다. 이 변경 사항은 다운로드할 수 있는 핫픽스를 사용하여 서비스 팩 11부터 서비스 팩 20까지 이전 서비스 팩으로 다시 포팅할 수 있습니다 [여기](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
 
 Adobe Experience Manager(AEM)는 다른 많은 Adobe 솔루션과 통합할 수 있습니다. 예를 들어 Adobe Target, Adobe Analytics 등이 있습니다.
 
 통합은 S2S OAuth로 구성된 IMS 통합을 사용합니다.
 
-* 우선 다음을 만듭니다.
+* 을(를) 만든 후:
 
    * [Developer Console의 자격 증명](#credentials-in-the-developer-console)
 
@@ -38,9 +40,9 @@ Adobe Experience Manager(AEM)는 다른 많은 Adobe 솔루션과 통합할 수 
 
 ## Developer Console의 자격 증명 {#credentials-in-the-developer-console}
 
-첫 번째 단계로 Adobe Developer Console에서 OAuth 자격 증명을 구성해야 합니다.
+첫 번째 단계로 Adobe Developer 콘솔에서 OAuth 자격 증명을 구성해야 합니다.
 
-이를 수행하는 방법에 대한 자세한 내용은 요구 사항에 따라 Developer Console 설명서를 참조하십시오.
+이 구성을 수행하는 방법에 대한 자세한 내용은 요구 사항에 따라 Developer Console 설명서를 참조하십시오.
 
 * 개요:
 
@@ -101,4 +103,4 @@ JWT 자격 증명을 기반으로 기존 Adobe IMS 통합을 마이그레이션�
    ![OAuth 세부 정보 작성](assets/ims-migrate-jwt-complete-oauth-details.png)
 
 1. **저장 믿 닫기**를 사용하여 업데이트 내용을 유지합니다.
-콘솔로 돌아오면 **JWT 자격 증명(사용 안 함)** 경고가 사라집니다.
+콘솔로 돌아가면 **JWT 자격 증명(더 이상 사용되지 않음)** 경고가 사라졌습니다.
