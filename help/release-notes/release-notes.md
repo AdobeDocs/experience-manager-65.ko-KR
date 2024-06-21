@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
+source-git-commit: 2513ae7e193bdae3387210b07661b9c7a22b0156
 workflow-type: tm+mt
-source-wordcount: '3907'
+source-wordcount: '4006'
 ht-degree: 4%
 
 ---
@@ -540,6 +540,11 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
    1. 관리자 모드에서 명령 프롬프트를 엽니다.
    1. 를 사용하여 Geode 패치 설치 `geode-*-1.15.1.2.jar` 파일.
 
+* 사용자가 저장된 XML 데이터가 있는 초안 편지를 미리 보려고 하면 고장이 납니다 `Loading` 일부 특정 문자에 대해 설명합니다. (FORMS-14521) 이 문제를 해결하려면 다음 단계를 수행하십시오.
+   1. 다운로드 [핫픽스](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fccm-ccr-content-10.0.206.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7C6fb8db1c81c84470d7ff08dc911c1e41%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638544797146701276%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=MhuthPPLjZcWuQsRAtSiwEZ2MljeNrpLumlWo6iolFI%3D&amp;reserved=0) 소프트웨어 배포 포털에서.
+   1. 를 통해 패키지(.zip) 업로드 및 설치 [CRX 패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+
+* AEM Forms 서비스 팩 6.5.21.0으로 업그레이드한 후 `PaperCapture` 서비스가 PDF에서 OCR(광학 문자 인식) 작업을 수행하지 못했습니다. 이 서비스는 PDF 또는 로그 파일의 형태로 출력을 생성하지 않습니다. 문제를 해결하려면 다음을 참조하십시오. [문제 해결](/help/forms/using/papercapture-service-resolution.md) 기사. (CQDOC-21680)
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
