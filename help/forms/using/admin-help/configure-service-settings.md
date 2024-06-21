@@ -9,9 +9,9 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
+source-git-commit: f1a18575e8b8f925f8adbe18e189f3916b5e353d
 workflow-type: tm+mt
-source-wordcount: '10828'
+source-wordcount: '10824'
 ht-degree: 0%
 
 ---
@@ -260,9 +260,9 @@ PDF 생성 서비스에 다음 설정을 사용할 수 있습니다.
 
 **HTML에서 PDF 전환에 대한 폴백 변환기:** 기본 변환기가 실패할 경우 HTML-PDF 변환을 위한 변환기를 지정합니다. 기본적으로 WebCapture(Windows에만 해당)가 선택되어 있습니다.
 
-**Acrobat 이미지 변환 사용(Windows에만 해당):** 이 설정이 true이면 PDF 생성 서비스는 모든 이미지에 Acrobat X Pro를 사용하여 전환을 PDF 합니다. 이 설정은 기본 순수 Java 변환 메커니즘에서 입력 이미지의 상당수를 성공적으로 변환할 수 없는 경우에만 유용합니다. 기본값은 false입니다.
+**Acrobat 이미지 변환 사용(Windows에만 해당):** 이 설정이 true이면 PDF 생성 서비스는 모든 이미지에 대해 Acrobat을 사용하여 전환을 PDF 합니다. 이 설정은 기본 순수 Java 변환 메커니즘에서 입력 이미지의 상당수를 성공적으로 변환할 수 없는 경우에만 유용합니다. 기본값은 false입니다.
 
-**Acrobat 기반 AutoCAD 변환 사용(Windows에만 해당):** 이 설정이 true인 경우 PDF 생성 서비스는 모든 DWG에 대해 Acrobat X Pro를 사용하여 전환을 PDF 합니다. 이 설정은 AutoCAD가 서버에 설치되지 않았거나 AutoCAD 변환 메커니즘이 파일을 성공적으로 변환할 수 없는 경우에만 유용합니다.
+**Acrobat 기반 AutoCAD 변환 사용(Windows에만 해당):** 이 설정이 true인 경우 PDF 생성 서비스는 모든 DWG에 대해 Acrobat을 사용하여 전환을 PDF 합니다. 이 설정은 AutoCAD가 서버에 설치되지 않았거나 AutoCAD 변환 메커니즘이 파일을 성공적으로 변환할 수 없는 경우에만 유용합니다.
 
 **사용자 이름에서 금지된 특수 문자를 찾기 위한 정규 표현식(Windows에만 해당):** 문자가 사용자 이름에 나타날 때 Export PDF 및 Optimize PDF 작업을 방해하는 문자를 지정합니다.
 
