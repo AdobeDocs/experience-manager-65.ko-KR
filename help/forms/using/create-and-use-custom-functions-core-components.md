@@ -4,7 +4,9 @@ description: AEM Forms은 사용자가 규칙 편집기 내에서 자체 함수�
 keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 사용하고, 사용자 지정 함수를 만들고, 규칙 편집기에서 사용자 지정 함수를 사용합니다.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
+roles: Admin, Developer
+exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
+source-git-commit: 6c902ca08b7689e428facdc4150f443dad089bff
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 2%
@@ -14,6 +16,7 @@ ht-degree: 2%
 # 적응형 Forms 핵심 구성 요소의 사용자 정의 기능
 
 이 문서에서는 다음과 같은 최신 기능이 포함된 최신 적응형 양식 핵심 구성 요소로 사용자 정의 기능을 만드는 방법에 대해 설명합니다.
+
 * 사용자 정의 기능을 위한 캐싱 기능
 * 사용자 지정 함수에 대한 전역 범위 개체 및 필드 개체 지원
 * let 및 arrow 함수와 같은 최신 JavaScript 기능 지원(ES10 지원)
@@ -1003,5 +1006,3 @@ In case, the custom submit action fails to perform as expected in existing AEM p
    * 클래스 메서드
    * 기본 매개 변수
    * 나머지 매개 변수
-
-
