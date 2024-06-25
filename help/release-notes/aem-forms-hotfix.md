@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: ad71f1c92bba90000f72319536fffd255fb4db6e
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 1%
      </td>
     <td>
     <ul>
-    <li> AEM Forms 서비스 팩 6.5.21.0으로 업그레이드한 후 PaperCapture 서비스가 PDF에서 OCR(Optical Character Recognition) 작업을 수행하지 못합니다. 문제를 해결하려면 다음을 참조하십시오. <a href="/help/forms/using/papercapture-service-resolution.md"> 문제 해결</a> 기사.(CQDOC-21680) </li>
+    <li> AEM Forms 서비스 팩 6.5.21.0으로 업그레이드한 후 PaperCapture 서비스가 PDF에서 OCR(Optical Character Recognition) 작업을 수행하지 못합니다. 설치 지침은 <a href="/help/forms/using/papercapture-service-resolution.md"> 문제 해결</a> 기사.(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
@@ -54,7 +54,7 @@ ht-degree: 1%
      </td>
     <td>
     <ul>
-    <li>미리 보는 동안 XML 데이터가 있는 초안 문자가 로드 상태에서 멈춥니다. 핫픽스를 다운로드하여 설치하려면 다음을 참조하십시오.<a href="#install-hotfix"> 초안 편지 문제에 대한 핫픽스 다운로드 및 설치</a> 섹션.(FORMS-14521)</li>
+    <li>미리 보는 동안 XML 데이터가 있는 초안 문자가 로드 상태에서 멈춥니다. 핫픽스의 다운로드 및 설치 지침은<a href="#install-hotfix"> 초안 편지 문제에 대한 핫픽스 다운로드 및 설치</a> 섹션.(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
