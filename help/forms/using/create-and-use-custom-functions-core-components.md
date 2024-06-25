@@ -4,9 +4,9 @@ description: AEM Forms은 사용자가 규칙 편집기 내에서 자체 함수�
 keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 사용하고, 사용자 지정 함수를 만들고, 규칙 편집기에서 사용자 지정 함수를 사용합니다.
 content-type: reference
 feature: Adaptive Forms, Core Components
-roles: Admin, Developer
+role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
-source-git-commit: 6c902ca08b7689e428facdc4150f443dad089bff
+source-git-commit: 7f1283898cbeebdedb7bdea6f0a8d9db567617ee
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 2%
