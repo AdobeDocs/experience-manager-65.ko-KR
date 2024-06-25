@@ -3,9 +3,9 @@ title: JEE 클러스터 서버에 적용할 수 있는 손상된 CRX 저장소�
 description: 손상된 CRX 저장소를 복원하는 방법에 대한 단계를 알아봅니다.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 1%

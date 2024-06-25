@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-feature: Document Services
+feature: Document Services,Output Service
 exl-id: 82b0293a-711f-4769-9b11-b4cff4fec021
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 5%
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 ## 개요 {#overview}
 
-출력 서비스는 AEM Document Services의 일부인 OSGi 서비스입니다. 출력 서비스는 AEM Forms Designer의 다양한 출력 형식과 출력 디자인 기능을 지원합니다. 출력 서비스는 XFA 템플릿 및 XML 데이터를 변환하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다.
+출력 서비스는 AEM Document Services의 일부인 OSGi 서비스입니다. 출력 서비스는 AEM Forms Designer의 다양한 출력 형식 및 출력 디자인 기능을 지원합니다. 출력 서비스는 XFA 템플릿 및 XML 데이터를 변환하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다.
 
 Output 서비스를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
 
@@ -37,7 +37,7 @@ Output 서비스를 사용하면 다음과 같은 기능을 제공하는 애플�
 
 ![using output_modified](assets/usingoutput_modified.png)
 
-일반적으로 AEM Forms Designer를 사용하여 템플릿을 만듭니다. 다음 `generatePDFOutput` 및 `generatePrintedOutput` 출력 서비스의 API를 사용하면 이러한 템플릿을 PDF, PostScript, ZPL 및 PCL을 비롯한 다양한 형식으로 직접 변환할 수 있습니다.
+일반적으로 AEM Forms Designer을 사용하여 템플릿을 만듭니다. 다음 `generatePDFOutput` 및 `generatePrintedOutput` 출력 서비스의 API를 사용하면 이러한 템플릿을 PDF, PostScript, ZPL 및 PCL을 비롯한 다양한 형식으로 직접 변환할 수 있습니다.
 
 다음 `generatePDFOutput` 작업이 PDF을 생성하는 반면 `generatePrintedOutput` 작업은 PostScript, ZPL 및 PCL 형식을 생성합니다. 두 작업의 첫 번째 매개 변수는 템플릿 파일의 이름 중 하나를 허용합니다(예: `ExpenseClaim.xdp`) 또는 템플릿을 포함하는 Document 객체 템플릿 파일의 이름을 지정할 때 컨텐트 루트도 템플릿이 들어 있는 폴더의 경로로 지정합니다. 다음 중 하나를 사용하여 콘텐츠 루트를 지정할 수 있습니다. `PDFOutputOptions` 또는 `PrintedOutputOptions` 매개 변수. 이러한 매개 변수를 사용하여 지정할 수 있는 기타 옵션에 대한 자세한 내용은 Javadoc을 참조하십시오.
 

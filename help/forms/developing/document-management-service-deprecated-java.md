@@ -8,14 +8,15 @@ topic-tags: develop
 role: Developer
 exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
-# 문서 관리 서비스(사용하지 않음) Java API 빠른 시작(SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
+# Document Management Service(더 이상 사용되지 않음) Java API 빠른 시작(SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
 
 문서 관리 서비스에서 다음 빠른 시작을 사용할 수 있습니다(더 이상 사용되지 않음).
 
@@ -25,11 +26,11 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 공간 만들기](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠를 삭제합니다](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠 삭제](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 Content Services에 콘텐츠 추가](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스에 컨텐츠 추가](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 Content Services에서 콘텐츠 검색](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스에서 콘텐츠 검색](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠 이동](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
 
@@ -39,13 +40,13 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스 권한 설정](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >
 >AEM Forms를 사용한 프로그래밍의 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 공간 만들기(더 이상 사용되지 않음) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스 공간 만들기(더 이상 사용되지 않음) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
 다음 Java 코드 예제에서는 라는 새 공간을 만듭니다. *테스트 디렉터리* 회사 홈에서. 새 스페이스의 식별 값이 콘솔에 기록됩니다.
 
@@ -141,7 +142,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠를 삭제합니다(더 이상 사용되지 않음) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠를 삭제합니다(삭제 예정) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 다음 Java 코드 예제에서는 /Company Home/Test Directory 라는 공간을 삭제합니다.
 
@@ -241,7 +242,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 Content Services에 콘텐츠 추가(더 이상 사용되지 않음) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스에 콘텐츠 추가(더 이상 사용되지 않음) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
 다음 Java 코드 예제에서는 라는 PDF 파일을 추가합니다 *MortgageForm.pdf* /Company Home/Test Directory라는 폴더에 작성자 및 설명 속성이 설정됩니다. 새 콘텐츠의 식별 값이 콘솔에 작성됩니다.
 
@@ -364,7 +365,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 Content Services에서 콘텐츠 검색(더 이상 사용되지 않음) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스에서 콘텐츠 검색(더 이상 사용되지 않음) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
 다음 Java 코드 예제에서는 라는 PDF 파일을 검색합니다. *MortgageForm.pdf* /Company 홈에서. PDF 파일이 로컬 파일 시스템에 저장되고 이름이 로 지정됩니다 *UpdatedMortgageForm.pdf*.
 
@@ -571,7 +572,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠를 나열합니다(더 이상 사용되지 않음) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 컨텐츠를 나열합니다(더 이상 사용되지 않음) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
 다음 Java 코드 예제에서는 /Company 홈에 있는 컨텐츠를 나열합니다. 각 노드 유형 및 노드 이름이 표시됩니다.
 

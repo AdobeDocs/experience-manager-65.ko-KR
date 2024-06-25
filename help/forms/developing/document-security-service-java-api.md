@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: 76d855cf-ebfa-487a-b1c8-755e7e45dd73
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # Document Security Service Java API 빠른 시작(SOAP) {#document-security-service-javaapi-quick-start-soap}
 
-Java API 빠른 시작(SOAP)은 Rights Management 서비스에 사용할 수 있습니다.
+Rights Management 서비스에는 SOAP(Java API Quick Start)를 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 정책 만들기](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
@@ -43,7 +44,7 @@ Java API 빠른 시작(SOAP)은 Rights Management 서비스에 사용할 수 있
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 Word 문서에서 정책 제거](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >
@@ -2053,7 +2054,7 @@ public class DeleteAbstractPolicySoap {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Protect은 Java API를 사용하여 기존 사용자를 위한 명령문 워크플로에서 PDF을 생성합니다 {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
+## 빠른 시작(SOAP 모드): Protect은 Java API를 사용하여 기존 사용자에 대한 명령문 워크플로의 PDF을 생성합니다 {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
 
 다음 Java 코드 예제에서는 기존 사용자에 대해 Statement Workflow의 문서를 보호하는 방법을 보여 줍니다.
 

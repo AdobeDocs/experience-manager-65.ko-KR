@@ -1,12 +1,12 @@
 ---
 title: XML 스키마를 사용하여 적응형 Forms을 만드는 방법
 description: 적응형 양식에서 XML 스키마를 양식 모델로 사용하는 방법에 대해 알아봅니다. 기존 XSD 템플릿을 적용하여 적응형 양식을 만들고 XSD에서 적응형 양식으로 스키마 요소를 드래그 앤 드롭할 수 있습니다. XML 스키마의 샘플을 사용하여 자세히 알아보고, XML 스키마를 사용하여 필드에 특수 속성을 추가하고, 적응형 양식 구성 요소에 사용할 수 있는 값을 제한합니다.
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 9%

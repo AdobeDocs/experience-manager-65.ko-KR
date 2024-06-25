@@ -6,11 +6,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 2%
@@ -37,7 +37,7 @@ XFA 기반 양식 템플릿의 HTML5 렌디션은 여러 HTML 요소로 구성�
 >
 >일부 XFA 요소에는 이름이 없습니다. 이러한 구성 요소의 스타일을 변경하려면 해당 특정 유형의 모든 구성 요소를 수정합니다.
 
-AEM Forms 디자이너에서 이름이 지정되지 않은 HTML의 경우, page5 폼의 페이지는 숫자가 증가하는 순서로 이름이 지정됩니다. 예를 들어 페이지가 두 개인 HTML 5 양식의 경우 페이지 이름은 Page1, Page2입니다.
+AEM Forms Designer에서 이름이 지정되지 않은 페이지의 경우 HTML5 양식의 페이지가 해당 번호의 증가 순서로 이름이 지정됩니다. 예를 들어 페이지가 두 개인 HTML 5 양식의 경우 페이지 이름은 Page1, Page2입니다.
 
 ## 필드 요소 {#field-element}
 
@@ -124,7 +124,7 @@ AEM Forms 디자이너에서 이름이 지정되지 않은 HTML의 경우, page5
 
 ## 다른 필드에 대한 CSS 클래스 {#css-classes-for-different-fields}
 
-AEM Forms 디자이너는 NumericField, DecimalField 및 Date Field와 같은 양식에서 다양한 유형의 필드를 지원합니다. HTML의 이러한 모든 필드에는 위에서 언급한 CSS 클래스가 포함되어 있습니다. 또한 필드 유형에 따라 몇 가지 추가 클래스가 포함되어 있습니다.
+AEM Forms Designer은 NumericField, DecimalField 및 Date Field와 같은 양식에서 다양한 유형의 필드를 지원합니다. HTML의 이러한 모든 필드에는 위에서 언급한 CSS 클래스가 포함되어 있습니다. 또한 필드 유형에 따라 몇 가지 추가 클래스가 포함되어 있습니다.
 
 모든 필드에는 UI 요소를 나타내는 연관된 위젯이 있습니다. 각 필드의 클래스 및 각 필드와 연결된 위젯이 아래에 나열됩니다.
 
@@ -226,7 +226,7 @@ AEM Forms 디자이너는 NumericField, DecimalField 및 Date Field와 같은 �
 
 ## 다른 그리기 요소에 대한 CSS 클래스 {#css-classes-for-different-draw-elements}
 
-AEM Forms Designer를 사용하여 텍스트 및 이미지와 같은 정적 그리기 요소를 삽입할 수 있습니다. 각 그리기 요소에 대해 별도의 CSS 클래스가 해당 요소와 연결됩니다. 그리기 요소의 CSS 클래스 목록은 아래에 나와 있습니다. 모든 그리기 요소에는 그리기 클래스가 연결되어 있습니다.
+AEM Forms Designer을 사용하여 텍스트 및 이미지와 같은 정적 그리기 요소를 삽입할 수 있습니다. 각 그리기 요소에 대해 별도의 CSS 클래스가 해당 요소와 연결됩니다. 그리기 요소의 CSS 클래스 목록은 아래에 나와 있습니다. 모든 그리기 요소에는 그리기 클래스가 연결되어 있습니다.
 
 | **그리기 유형** | **CSS 클래스** |
 |---|---|

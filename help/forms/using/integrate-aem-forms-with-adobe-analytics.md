@@ -5,7 +5,8 @@ docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 0%
@@ -178,7 +179,7 @@ AEM Forms을 구성하려면 다음 단계를 수행하십시오. [Adobe Analyti
    >[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
-### 플로우 게시 {#publish-flow}
+### Publish 흐름 {#publish-flow}
 
 데이터 요소를 만들어 규칙에서 사용한 후에서 양식 데이터를 수집하도록 구성을 게시합니다 [!DNL Adobe Analytics].
 
@@ -190,11 +191,11 @@ AEM Forms을 구성하려면 다음 단계를 수행하십시오. [Adobe Analyti
 
 1. 선택 **[!UICONTROL 변경된 모든 리소스 추가]** 다음을 선택합니다. **[!UICONTROL 개발에 저장 및 구축]**.
 
-1. 다음에서 **[!UICONTROL 개발]** 섹션, 선택 ![추가 옵션](/help/forms/using/assets/more-options-icon.svg) 다음을 선택합니다. **[!UICONTROL 승인 및 프로덕션에 게시]**.
+1. 다음에서 **[!UICONTROL 개발]** 섹션, 선택 ![추가 옵션](/help/forms/using/assets/more-options-icon.svg) 다음을 선택합니다. **[!UICONTROL 승인 및 Publish-프로덕션]**.
 
 1. 변경 사항을 확인하고 곧 게시 플로우가에 표시됩니다. **[!UICONTROL 게시됨]** 섹션.
 
-![플로우 게시](/help/forms/using/assets/publish-flow.png)
+![Publish 흐름](/help/forms/using/assets/publish-flow.png)
 
 ## 2. AEM Forms 구성 {#configure-aem-forms}
 
@@ -218,7 +219,7 @@ Adobe Launch 구성을 만들려면 다음 단계를 수행하십시오.
 
 1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 선택합니다.
 
-1. 구성을 게시합니다.
+1. 구성을 Publish에 추가합니다.
 
 ### 사용 [!DNL Adobe Analytics] 적응형 양식용 {#enable-analytics-adaptive-form}
 
@@ -228,7 +229,7 @@ Adobe Launch 구성을 만들려면 다음 단계를 수행하십시오.
 1. 적응형 양식을 선택하고 **[!UICONTROL 속성]**.
 1. 다음에서 **[!UICONTROL 기본]** 탭에서 [구성 컨테이너](#create-adobe-launch-configuration) Adobe 실행 구성을 만드는 동안 사용됩니다.
 1. 선택 **[!UICONTROL 저장 및 닫기]**. 적응형 양식이 다음에 대해 활성화되어 있습니다. [!DNL Adobe Analytics].
-1. 양식을 게시합니다.
+1. 양식 Publish.
 
 활성화한 후 [!DNL Adobe Analytics] 적응형 양식의 경우 다음을 수행할 수 있습니다 [유효성 검사](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) AEM Forms과 간에 적절한 데이터 이벤트 흐름이 있는 경우 [!DNL Adobe Analytics]. AEM Forms과 Adobe Analytics 통합이 완료되었습니다. 이제 다음을 수행할 수 있습니다. [Adobe Analytics에서 보고서 구성 및 보기](#view-reports-adobe-analytics).
 

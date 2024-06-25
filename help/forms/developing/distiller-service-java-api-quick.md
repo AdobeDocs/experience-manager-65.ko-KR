@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: c5bf9184-a837-4033-9962-7b3052498e75
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -21,7 +22,7 @@ Java™ API 빠른 시작(SOAP)은 Distiller® 서비스에 사용할 수 있습
 
 [빠른 시작(SOAP 모드): Java를 사용하여 PostScript 파일을 PDF 문서로 변환](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >

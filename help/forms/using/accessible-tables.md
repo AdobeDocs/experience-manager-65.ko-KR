@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 HTML5 Forms의 기본 테이블 구현에서는 HTML DIV 요소를 사용하여 테이블을 렌더링합니다. 렌더링에는 접근성 요구 사항을 충족하기 위해 ARIA 역할을 사용하는 작업이 포함됩니다.
 
-데이터 테이블에 사용되는 ARIA 역할을 완전히 지원하지 않는 화면 판독기의 접근성 문제를 방지하기 위해 HTML5 Forms에서는 테이블에 대한 대체 렌디션을 제공합니다. 이러한 테이블은 디자이너에 소개된 새로운 테이블 형식을 기반으로 합니다.
+데이터 테이블에 사용되는 ARIA 역할을 완전히 지원하지 않는 화면 판독기의 접근성 문제를 방지하기 위해 HTML5 Forms에서는 테이블에 대한 대체 렌디션을 제공합니다. 이러한 테이블은 Designer에서 도입된 새로운 테이블 형식을 기반으로 하며,
 
 * 행 머리글
 * 행 범위

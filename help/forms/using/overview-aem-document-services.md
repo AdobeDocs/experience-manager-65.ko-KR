@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-feature: Document Services
+feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 1%
@@ -39,7 +39,7 @@ AEM Document Services는 PDF 문서 생성, 어셈블 및 보안을 위한 일�
 
 >[!NOTE]
 >
->폼 디자인은 일반적으로 디자이너를 사용하여 만들어집니다. Output 서비스의 양식 디자인을 만드는 방법에 대한 자세한 내용은 디자이너 도움말을 참조하십시오.
+>양식 디자인은 일반적으로 Designer을 사용하여 만듭니다. 출력 서비스의 양식 디자인 만들기에 대한 자세한 내용은 Designer 도움말을 참조하십시오.
 
 출력 서비스를 사용하여 XML 데이터를 양식 디자인과 병합하면 비대화형 PDF 문서가 만들어집니다. 비대화형 PDF 문서에서는 사용자가 해당 필드에 데이터를 입력할 수 없습니다. 반대로 Forms 서비스를 사용하여 사용자가 해당 필드에 데이터를 입력할 수 있는 대화형 PDF 양식을 만들 수 있습니다.
 
@@ -58,7 +58,7 @@ AEM Document Services는 PDF 문서 생성, 어셈블 및 보안을 위한 일�
 위에서 언급한 기능 외에도 어셈블러 서비스는 다음과 같습니다.
 
 * PDF 문서를 PDF/A 표준으로 변환합니다.
-* PDF forms, XML 양식(디자이너에서 생성) 및 PDF forms(Acrobat에서 생성)를 PDF/A-1b, PDF/A-2b 및 PDFA/A-3b로 변환합니다.
+* PDF forms, XML 양식(Designer에서 생성됨) 및 PDF forms(Acrobat에서 생성됨)를 PDF/A-1b, PDF/A-2b 및 PDFA/A-3b로 변환합니다.
 * 서명되거나 서명되지 않은 PDF 문서를 변환합니다(디지털 서명 필요).
 * PDF/A 파일의 준수 여부를 확인하고 필요한 경우 변환합니다.
 

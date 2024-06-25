@@ -5,11 +5,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '6086'
 ht-degree: 2%
@@ -145,13 +145,13 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
   </tr>
   <tr>
    <td>8.</td>
-   <td>게시 시간</td>
+   <td>Publish 정시</td>
    <td>예</td>
    <td>테마를 자동으로 게시할 시간입니다.</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>게시 해제 시간</td>
+   <td>Publish 해제 시간</td>
    <td>예</td>
    <td>테마를 자동으로 게시 취소하는 시간입니다.</td>
   </tr>
@@ -604,7 +604,7 @@ AEM Forms을 사용하면 기본 제공 캔버스 테마와 함께 다른 많은
 
 ## 다른 적응형 양식 사용 사례에 미치는 영향 {#impact-on-other-adaptive-form-use-cases}
 
-* **양식 게시/게시 취소:** 양식을 게시할 때에에 적용된 테마도 게시됩니다(아직 게시되지 않은 경우)
+* **양식 Publish/게시 취소:** 양식을 게시할 때에에 적용된 테마도 게시됩니다(아직 게시되지 않은 경우)
 * **양식 가져오기/내보내기:** 양식을 가져오거나 내보낼 때 관련 테마를 자동으로 가져오거나 내보냅니다.
 * **양식의 참조:** 양식 참조의 참조 섹션에는 테마에 대한 추가 항목이 포함되어 있습니다.
 * **양식의 마지막 수정 시간:** 연결된 테마가 변경되면 업데이트됩니다.

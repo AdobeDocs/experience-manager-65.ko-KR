@@ -2,11 +2,11 @@
 title: 적응형 양식을 만들거나 AEM Sites 페이지에 추가
 description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 원활하게 추가하는 방법을 알아봅니다. 동적 및 맞춤형 양식을 웹 사이트에 통합하는 단계별 기술과 모범 사례에 대해 알아보고 디지털 환경을 최적화하여 효과를 극대화합니다.
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2884'
 ht-degree: 24%
@@ -116,7 +116,7 @@ AEM 페이지 편집기에서 적응형 양식 컨테이너를 사용하면 동�
        </sly> 
    ```
 
-1. 환경의 모든 작성자 및 게시 인스턴스에서 위의 단계를 반복합니다.
+1. 사용자 환경의 모든 작성자 및 Publish 인스턴스에서 위의 단계를 반복합니다.
 
 +++
 

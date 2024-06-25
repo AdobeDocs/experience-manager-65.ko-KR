@@ -4,11 +4,11 @@ description: 이 문서에서는 Forms 서비스 및 Forms 서비스를 사용�
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-feature: Document Services
+feature: Document Services,Forms Service,PDF Generator
 exl-id: 6580fe6f-3cdb-45ec-8ba3-51dc60d1965e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 개요 {#overview}
 
-Forms 서비스를 사용하면 일반적으로 디자이너에서 만들어지는 양식을 확인, 처리, 변환 및 제공하는 대화형 데이터 캡처 클라이언트 애플리케이션을 만들 수 있습니다. Forms 서비스는 사용자가 개발하는 모든 양식 디자인을 PDF 문서로 렌더링합니다.
+Forms 서비스를 사용하면 일반적으로 Designer에서 생성되는 양식을 확인, 처리, 변환 및 제공하는 대화형 데이터 캡처 클라이언트 애플리케이션을 만들 수 있습니다. Forms 서비스는 사용자가 개발하는 모든 양식 디자인을 PDF 문서로 렌더링합니다.
 
 또한 Forms 서비스를 통해 조직은 전자 양식을 Adobe PDF으로 배포하여 지능형 데이터 캡처 프로세스를 확장할 수 있습니다. 또한 이 서비스를 사용하여 기존 PDF forms으로 데이터를 가져오거나 기존 도메인에서 데이터를 내보낼 수도 있습니다.
 
@@ -43,11 +43,11 @@ Forms 서비스를 사용하여 다음을 수행합니다.
 
 ## PDF forms으로 데이터 가져오기 {#importing-data-into-pdf-forms}
 
-또한 Forms 서비스를 사용하면 AEM Forms Designer 또는 를 사용하여 만든 PDF 양식을 병합할 수 있습니다. `renderPDFForm` xml 데이터를 사용한 작업. 다음 `importData` Forms 서비스의 (Javadoc) 작업은 PDF 양식과 XML 데이터를 수락하고 데이터 XML이 있는 PDF 양식을 반환합니다.
+또한 Forms 서비스를 사용하면 AEM Forms Designer 또는 을 사용하여 만든 PDF 양식을 병합할 수 있습니다. `renderPDFForm` xml 데이터를 사용한 작업. 다음 `importData` Forms 서비스의 (Javadoc) 작업은 PDF 양식과 XML 데이터를 수락하고 데이터 XML이 있는 PDF 양식을 반환합니다.
 
 ## 조각을 기반으로 한 양식 렌더링 {#rendering-forms-based-on-fragments}
 
-Forms 서비스는 AEM Forms Designer를 사용하여 만든 조각을 기반으로 양식을 렌더링할 수 있습니다. 조각은 양식의 재사용 가능한 부분입니다. 여러 양식 디자인에 삽입할 수 있는 별도의 XDP 파일로 저장됩니다. 예를 들어 조각에는 주소 블록이나 법적 텍스트가 포함될 수 있습니다.
+Forms 서비스는 AEM Forms Designer을 사용하여 만든 조각을 기반으로 양식을 렌더링할 수 있습니다. 조각은 양식의 재사용 가능한 부분입니다. 여러 양식 디자인에 삽입할 수 있는 별도의 XDP 파일로 저장됩니다. 예를 들어 조각에는 주소 블록이나 법적 텍스트가 포함될 수 있습니다.
 
 조각을 사용하면 많은 수의 양식을 간편하게 만들고 유지 관리할 수 있습니다. 양식을 작성할 때 조각이 양식에 표시되는 데 필요한 조각에 대한 참조를 삽입합니다. 조각 참조에는 실제 XDP 파일을 가리키는 하위 양식이 포함되어 있습니다.
 

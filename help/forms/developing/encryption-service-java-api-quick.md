@@ -1,5 +1,5 @@
 ---
-title: 암호화 서비스 Java&trade, API 빠른 시작(SOAP)
+title: 암호화 서비스 Java&trade, API QuickStart(SOAP)
 description: SOAP 모드에서 Java&trade; API를 사용하여 암호/인증서 기반 암호화를 암호화, 제거, 잠금 해제 및 PDF 문서의 암호화 유형을 결정하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -29,7 +30,7 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java를 사용하여 암호화 유형 확인](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >

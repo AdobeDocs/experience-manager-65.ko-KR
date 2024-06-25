@@ -4,11 +4,11 @@ description: 외부 웹 페이지에서 적응형 양식을 임베드하는 방�
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 53%
@@ -25,7 +25,7 @@ ht-degree: 53%
 
 먼저 다음 단계를 수행한 다음 외부 웹 사이트에 적응형 양식을 임베드합니다.
 
-* AEM Forms 서버의 게시 인스턴스에 임베드할 적응형 양식을 게시합니다.
+* Publish은 AEM Forms 서버의 Publish 인스턴스에 임베드할 적응형 양식입니다.
 * 웹 사이트에서 적응형 양식을 호스팅할 수 있는 웹 페이지를 만들거나 식별합니다. 웹 페이지가 [cdn에서 jQuery 파일 읽기](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) 또는 에는 jQuery의 로컬 사본이 포함되어 있습니다. 적응형 양식을 렌더링하는 데 jQuery가 필요합니다.
 * AEM 서버와 웹 페이지가 서로 다른 도메인에 있는 경우 섹션에 나열된 단계를 수행합니다. [AEM Forms에서 도메인 간 사이트에 적응형 양식을 제공할 수 있도록 활성화](#cross-site).
 

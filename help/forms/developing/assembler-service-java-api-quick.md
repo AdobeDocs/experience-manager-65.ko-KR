@@ -1,6 +1,6 @@
 ---
-title: 어셈블러 서비스 Java&trade, API QuickStart(SOAP)
-description: 어셈블러 서비스 Java&trade; API QuickStart(SOAP)를 사용하여 PDF 문서를 어셈블, 디스어셈블 및 동적으로 작성하는 방법에 대해 알아봅니다.
+title: 어셈블러 서비스 Java&trade; API QuickStart(SOAP)
+description: 어셈블러 서비스 Java&trade; API 빠른 시작(SOAP)을 사용하여 PDF 문서를 어셈블, 디스어셈블 및 동적으로 만드는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,15 @@ topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
 
 ---
 
-# 어셈블러 서비스 Java™ API 빠른 시작(SOAP) {#assembler-service-java-api-quickstart-soap}
+# 어셈블러 서비스 Java™ API QuickStart(SOAP) {#assembler-service-java-api-quickstart-soap}
 
 어셈블러 서비스에 Java API 빠른 시작(SOAP)을 사용할 수 있습니다
 
@@ -25,11 +26,11 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 암호화된 PDF 문서 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 번호 매기기를 사용한 페이지 문서 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 번호 매기기를 사용하여 페이지 문서 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 비대화형 PDF 문서 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 문서가 PDF/A를 준수하는지 여부 확인](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 문서가 PDF/A를 준수하는지 확인](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 DDX 문서 유효성 검사](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
 
@@ -41,7 +42,7 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 여러 XDP 조각 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >
@@ -453,7 +454,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 번호 매기기를 사용한 페이지 문서 어셈블 {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 번호 매기기를 사용하여 페이지 문서 어셈블 {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
 
 다음 Java 코드 예제에서는 고유한 페이지 식별자(bates 번호 매기기)를 사용하여 PDF 문서를 어셈블합니다. DDX 문서의 이름은 입니다. *shell_Bates.xml*. 어셈블러 서비스에서 반환되는 PDF 문서는 라는 PDF 파일로 저장됩니다 *AssemblerResultBatesPDF.pdf*. (참조: [Bates 번호 매기기를 사용하여 문서 어셈블](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering).)
 
@@ -735,7 +736,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 문서가 PDF/A를 준수하는지 여부 확인 {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 문서가 PDF/A를 준수하는지 확인 {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
 다음 Java 코드 예제에서는 입력 PDF 문서가 PDF/A를 준수하는지 여부를 확인합니다. 어셈블러 서비스에 전달되는 입력 PDF 문서의 이름은 입니다 *Loan.pdf*. DDX 문서의 이름은 shell_PDFA.xml입니다. 어셈블러 서비스에서 반환되고 입력 PDF 문서가 PDF/A 규격 문서인지 여부를 지정하는 XML 문서가 result.xml이라는 XML 파일로 저장됩니다. 에 대한 자세한 내용은 *shell_PDFA.xml* 이 코드 예제에 사용된 DDX 문서는 [문서의 PDF/A 호환 여부 확인](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 

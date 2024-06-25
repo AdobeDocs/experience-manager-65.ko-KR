@@ -3,13 +3,13 @@ title: 적응형 양식 규칙 편집기
 description: 적응형 양식 규칙 편집기를 사용하면 코딩 또는 스크립팅 없이 동적 행동을 추가하고 복잡한 논리를 양식에 빌드할 수 있습니다.
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '6607'
 ht-degree: 1%

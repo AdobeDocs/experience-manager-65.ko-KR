@@ -3,11 +3,11 @@ title: 적응형 양식 작업 모범 사례
 description: AEM Forms 프로젝트 설정, 적응형 양식 개발 및 AEM Forms 시스템 성능 최적화를 위한 모범 사례에 대해 설명합니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components, Core Components
+feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 1%

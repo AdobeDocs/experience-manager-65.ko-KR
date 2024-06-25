@@ -3,11 +3,11 @@ title: 적응형 양식 조각이란 무엇입니까?
 description: 적응형 Forms은 적응형 양식에서 사용할 패널 또는 필드 그룹과 같은 양식 세그먼트를 만드는 메커니즘을 제공합니다. 기존 패널을 조각으로 저장할 수도 있습니다.
 topic-tags: author
 keywords: 적응형 양식 단편 추가, 적응형 양식 단편, 양식 단편 만들기, 적응형 양식에 단편 추가, 단편 관리
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: 4a1ba259-8eb5-408f-8ee7-4868f98cca03
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 5%

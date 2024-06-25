@@ -6,11 +6,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
 docset: aem65
-feature: Forms Designer
+feature: Forms Designer,Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # HTML5 양식에서 스크리블 서명 사용{#using-scribble-signature-in-html-forms}
 
-HTML5 양식은 터치 디바이스에서 점점 더 많이 사용되고 있으며, 한 가지 일반적인 요구사항은 서명을 지원하는 것입니다. 스크라이빙(스타일러스 또는 손가락으로 쓰기)은 모바일 장치에서 양식에 서명하는 허용되는 방법이 되고 있습니다. 이제 HTML 5 Forms 및 Forms Designer에서 양식에 스크리블 서명 필드를 사용할 수 있습니다. 브라우저에서 양식을 렌더링하면 스타일러스, 마우스 또는 터치를 사용하여 이러한 필드에 로그인할 수 있습니다.
+HTML5 양식은 터치 디바이스에서 점점 더 많이 사용되고 있으며, 한 가지 일반적인 요구사항은 서명을 지원하는 것입니다. 스크라이빙(스타일러스 또는 손가락으로 쓰기)은 모바일 장치에서 양식에 서명하는 허용되는 방법이 되고 있습니다. 이제 HTML 5 Forms 및 Forms Designer을 사용하여 양식에 스크리블 서명 필드를 사용할 수 있습니다. 브라우저에서 양식을 렌더링하면 스타일러스, 마우스 또는 터치를 사용하여 이러한 필드에 로그인할 수 있습니다.
 
 ## 스크리블 서명 필드를 사용하여 양식을 디자인하는 방법 {#how-to-design-a-form-using-scribble-signature-field}
 

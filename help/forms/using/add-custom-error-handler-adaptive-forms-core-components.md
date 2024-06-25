@@ -4,11 +4,11 @@ description: AEM Forms에서는 외부 서비스를 호출하도록 구성된 RE
 keywords: 사용자 정의 오류 핸들러 추가, 기본 오류 핸들러 추가, 양식에서 오류 핸들러 추가, 규칙 편집기의 호출 서비스를 사용하여 사용자 정의 오류 핸들러 추가, 규칙 편집기를 구성하여 사용자 정의 오류 핸들러 추가, 규칙 편집기를 사용하여 사용자 정의 오류 핸들러 추가
 contentOwner: Ruchita Srivastav
 content-type: reference
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2278'
 ht-degree: 89%

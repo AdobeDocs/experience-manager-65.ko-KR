@@ -4,11 +4,11 @@ description: 적응형 양식에서 지원되는 XFA 이벤트, 속성, 스크�
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 11%
@@ -48,8 +48,8 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
    <td><p>버튼</p> </td>
   </tr>
   <tr>
-   <td><p>체크 상자 </p> </td>
-   <td><p>체크 상자</p> </td>
+   <td><p>확인란 </p> </td>
+   <td><p>확인란</p> </td>
   </tr>
   <tr>
    <td><p>목록 상자 </p> </td>

@@ -3,11 +3,11 @@ title: HTML5 양식에 대한 오류 메시지 사용자 지정
 description: 위치 및 모양을 변경하는 방법을 포함하여 HTML 5 양식에 대한 오류 메시지 표시를 사용자 지정하는 방법에 대해 알아봅니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 3%

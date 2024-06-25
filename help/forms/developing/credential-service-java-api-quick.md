@@ -1,6 +1,6 @@
 ---
 title: 자격 증명 서비스 Java&trade, API 빠른 시작(SOAP)
-description: Java&trade; API 빠른 시작(SOAP)을 사용하여 AEM Forms에서 자격 증명을 가져오고 삭제하는 방법을 알아봅니다.
+description: Java&trade; API 빠른 시작(SOAP)을 사용하여 AEM Forms에서 자격 증명을 가져오고 삭제하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -23,7 +24,7 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java를 사용하여 자격 증명 삭제](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >

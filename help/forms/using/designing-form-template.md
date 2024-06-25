@@ -1,15 +1,15 @@
 ---
 title: HTML5 양식용 양식 템플릿 디자인
-description: AEM Forms은 XFA 양식 템플릿을 HTML5 형식으로 렌더링할 수 있습니다. 양식 디자이너는 디자이너를 사용하여 양식 템플릿을 디자인하고 HTML5 렌디션 기능을 사용할 수 있습니다.
+description: AEM Forms은 XFA 양식 템플릿을 HTML5 형식으로 렌더링할 수 있습니다. 양식 디자이너는 Designer을 사용하여 양식 템플릿을 디자인하고 HTML 5 렌디션 기능을 사용할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
@@ -36,10 +36,10 @@ HTML5 양식은 PDF forms의 동작과 거의 일치하지만 두 형식 모두�
 
 #### 스크리블 서명 {#scribble-signature}
 
-HTML5 양식의 주요 대상은 터치 장치입니다. 따라서 새 스크리블 서명 컨트롤이 AEM Forms Designer에 추가됩니다. 양식 서식 파일에서 스크리블 서명 컨트롤을 클릭하거나 드래그 앤 드롭하여 구성할 수 있습니다. HTML5 렌디션의 스크리블 필드로 렌더링되어 터치 디바이스에서 스크리블 서명을 하는 데 사용할 수 있습니다. 데스크탑 컴퓨터에서는 마우스 컨트롤을 사용하여 스크리블 필드로 사용할 수 있습니다. 이 기능을 사용하는 방법에 대한 자세한 내용은 [XFA 스크리블 필드](../../forms/using/scribble-signature.md).
+HTML5 양식의 주요 대상은 터치 장치입니다. 따라서 새로운 스크리블 서명 컨트롤이 AEM Forms Designer에 추가됩니다. 양식 서식 파일에서 스크리블 서명 컨트롤을 클릭하거나 드래그 앤 드롭하여 구성할 수 있습니다. HTML5 렌디션의 스크리블 필드로 렌더링되어 터치 디바이스에서 스크리블 서명을 하는 데 사용할 수 있습니다. 데스크탑 컴퓨터에서는 마우스 컨트롤을 사용하여 스크리블 필드로 사용할 수 있습니다. 이 기능을 사용하는 방법에 대한 자세한 내용은 [XFA 스크리블 필드](../../forms/using/scribble-signature.md).
 
 ![4](assets/4.png)
 
 #### 리치 텍스트 형식 {#rich-text-format}
 
-텍스트 필드를 서식 있는 텍스트 필드로 변환할 수 있습니다. 텍스트 필드에 서식 옵션 목록을 추가합니다. 변환하려면 Forms Designer를 열고 **[!UICONTROL 디자인 보기]**. 다음에서 **[!UICONTROL 필드]** 탭, 선택 **[!UICONTROL 리치 텍스트]** 다음에서 **[!UICONTROL 필드 형식]** 드롭다운 목록입니다. 이제 XFA 양식이 HTML5 양식으로 렌더링되면 필드가 리치 텍스트 필드로 렌더링됩니다. 선택 ![최대화](assets/maximize_icon.svg) 추가 서식 옵션을 보려면
+텍스트 필드를 서식 있는 텍스트 필드로 변환할 수 있습니다. 텍스트 필드에 서식 옵션 목록을 추가합니다. 변환하려면 Forms Designer을 열고 의 텍스트 필드를 선택합니다. **[!UICONTROL 디자인 보기]**. 다음에서 **[!UICONTROL 필드]** 탭, 선택 **[!UICONTROL 리치 텍스트]** 다음에서 **[!UICONTROL 필드 형식]** 드롭다운 목록입니다. 이제 XFA 양식이 HTML5 양식으로 렌더링되면 필드가 리치 텍스트 필드로 렌더링됩니다. 선택 ![최대화](assets/maximize_icon.svg) 추가 서식 옵션을 보려면

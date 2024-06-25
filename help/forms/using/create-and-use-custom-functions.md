@@ -4,10 +4,10 @@ description: AEM Forms은 사용자가 규칙 편집기 내에서 자체 함수�
 keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 사용하고, 사용자 지정 함수를 만들고, 규칙 편집기에서 사용자 지정 함수를 사용합니다.
 contentOwner: Ruchita Srivastav
 content-type: reference
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1119'
 ht-degree: 5%
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
 | AEM 6.5 | 이 문서 |
 
 ## 소개

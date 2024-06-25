@@ -5,11 +5,11 @@ contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: Adaptive Forms, Foundation Components, Acrobat Sign
+feature: Adaptive Forms,Foundation Components,Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 16%
@@ -34,7 +34,7 @@ ht-degree: 16%
 
 ## AEM Forms과 Adobe Acrobat Sign 연결 {#adobe-sign}
 
-연결하려면 **[!DNL AEM Forms]** 포함 **[!DNL Adobe Acrobat Sign]**&#x200B;의 사전 요구 사항 섹션에 나열된 소프트웨어 및 계정을 설정하고 Adobe Sign을 모든 AEM Forms 작성자 및 게시 인스턴스에 연결합니다.
+연결하려면 **[!DNL AEM Forms]** 포함 **[!DNL Adobe Acrobat Sign]**&#x200B;의 사전 요구 사항 섹션에 나열된 소프트웨어 및 계정을 설정하고 Adobe Sign을 모든 AEM Forms 작성자 및 Publish 인스턴스에 연결합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -146,7 +146,7 @@ ht-degree: 16%
 1. AEM 웹 콘솔을 엽니다. URL은 `https://'[server]:[port]'/system/console/configMgr`
 1. 열기 **[!UICONTROL Forms 공통 구성 서비스].**
 1. 다음에서 **[!UICONTROL 허용]** 필드, **선택** 모든 사용자 - 익명 또는 로그인한 모든 사용자는 첨부 파일을 미리 보고, 양식을 확인 및 서명하고, **[!UICONTROL 저장].** 작성자 인스턴스가 다음을 사용하도록 구성되었습니다. [!DNL Adobe Sign].
-1. 구성을 게시합니다.
+1. 구성을 Publish에 추가합니다.
 1. 사용 [복제](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) 를 클릭하여 해당 게시 인스턴스에 동일한 구성을 만듭니다.
 
 자, [!DNL Adobe Sign] AEM과 통합됨 [!DNL Forms] 적응형 양식에서 사용할 수 있습니다. 종료 [적응형 양식에서 Adobe Sign 서비스 사용](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), 적응형 양식 속성에서 위에서 만든 구성 컨테이너를 지정합니다.
@@ -261,7 +261,7 @@ Adobe Acrobat Sign for Government Solutions 팀은 `re-direct URL` 또한 Adobe 
 1. 열기 **[!UICONTROL Forms 공통 구성 서비스].**
 1. 다음에서 **[!UICONTROL 허용]** 필드, **선택** 모든 사용자 - 익명 또는 로그인한 모든 사용자는 첨부 파일을 미리 보고, 양식을 확인 및 서명하고, **[!UICONTROL 저장].** 작성자 인스턴스가 다음을 사용하도록 구성되었습니다. [!DNL Adobe Sign].
 
-1. 구성을 게시합니다.
+1. 구성을 Publish에 추가합니다.
 1. 사용 [복제](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) 를 클릭하여 해당 게시 인스턴스에 동일한 구성을 만듭니다.
 
 이제 다음을 수행할 수 있습니다. [적응형 양식에서 Adobe Acrobat Sign 필드 추가 사용](working-with-adobe-sign.md) 또는 [AEM 워크플로](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Cloud Service 구성에 사용되는 구성 컨테이너를 활성화할 모든 적응형 Forms에 추가해야 합니다 [!DNL Adobe Acrobat Sign]. 적응형 양식의 속성에서 구성 컨테이너를 지정할 수 있습니다.

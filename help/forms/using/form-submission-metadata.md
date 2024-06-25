@@ -3,13 +3,13 @@ title: 양식 제출 메타데이터에 사용자 데이터의 정보 추가
 description: 사용자 제공 데이터를 사용하여 제출된 양식의 메타데이터에 정보를 추가하는 방법을 알아봅니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 7%

@@ -3,10 +3,10 @@ title: JSON 스키마를 사용하여 적응형 Forms을 만드는 방법
 description: JSON 스키마를 양식 모델로 사용하여 적응형 양식을 만드는 방법을 알아봅니다. 기존 JSON 스키마를 사용하여 적응형 양식을 만들 수 있습니다. JSON 스키마 샘플을 자세히 살펴보고, JSON 스키마 정의의 필드를 사전 구성하고, 적응형 양식 구성 요소에 사용할 수 있는 값을 제한하고, 지원되지 않는 구문에 대해 알아봅니다.
 role: User, Developer
 level: Beginner, Intermediate
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 7%
@@ -478,7 +478,7 @@ aem:afproperties 속성을 사용하여 적응형 양식 구성 요소에 대한
    <td> </td>
   </tr>
   <tr>
-   <td>체크 상자</td>
+   <td>확인란</td>
    <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>
    <td><img alt="예 확인 아이콘" src="assets/yes_tick.png" /></td>

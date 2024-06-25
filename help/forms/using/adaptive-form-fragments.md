@@ -3,13 +3,13 @@ title: 적응형 양식 단편
 description: 적응형 양식은 적응형 양식에서 사용할 패널 또는 필드 그룹과 같은 양식 세그먼트를 만드는 메커니즘을 제공합니다. 기존 패널을 조각으로 저장할 수도 있습니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2372'
 ht-degree: 3%
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 모든 양식은 특정 목적을 위해 디자인되었지만 대부분의 양식에는 이름 및 주소, 가족 세부 사항 및 소득 세부 사항과 같은 개인 세부 사항을 제공하는 것과 같은 일부 일반적인 세그먼트가 있습니다. 양식 개발자는 새 양식을 만들 때마다 이러한 공통 세그먼트를 만들어야 합니다.
 
-적응형 양식은 패널 또는 필드 그룹세그먼트 좋아요 양식을 한 번만 만들고 적응형 양식에서 재사용할 수 있는 편리한 메커니즘을 제공합니다. 이러한 재사용 가능한 독립형 세그먼트를 적응형 양식 조각이라고 합니다.
+적응형 양식은 패널이나 필드 그룹과 같은 양식 세그먼트를 한 번만 만들어 적응형 양식 간에 재사용할 수 있는 편리한 메커니즘을 제공합니다. 이러한 재사용 가능한 독립형 세그먼트를 적응형 양식 조각이라고 합니다.
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ ht-degree: 3%
 
 1. **확인**&#x200B;을 클릭합니다.
 
-   패널은 저장소 내의 지정된 위치 또는 기본 위치에 저장됩니다. 적응형 양식에서 패널은 조각의 스냅숏으로 대체됩니다. 아래 그림과 같이 일반 정보 패널과 해당 하위 패널인 개인 정보 및 주소는 조각으로 저장됩니다.
+   패널은 저장소 내의 지정된 위치 또는 기본 위치에 저장됩니다. 적응형 양식에서 패널은 조각의 스냅숏으로 대체됩니다. 아래 그림과 같이 [일반 정보] 패널과 하위 패널인 [개인 정보] 및 [주소]는 단편으로 저장됩니다.
 
    조각을 편집하려면 다음을 클릭하십시오. **[!UICONTROL 에셋 편집]** 을 클릭합니다. 조각이 편집 모드의 새 탭이나 창에서 열립니다.
 

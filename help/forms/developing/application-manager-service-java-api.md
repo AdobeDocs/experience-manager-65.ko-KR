@@ -8,18 +8,19 @@ topic-tags: develop
 role: Developer
 exl-id: 1d2d6d64-f16e-4381-8691-f3c2744481ea
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
-# Application Manager 서비스 JavaAPI 빠른 시작(SOAP) {#application-manager-service-javaapi-quick-start-soap}
+# Application Manager Service JavaAPI 빠른 시작(SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
-Java API 빠른 시작(SOAP)은 Application Manager 서비스에 사용할 수 있습니다.
+SOAP(Java API Quick Start)는 Application Manager 서비스에 사용할 수 있습니다.
 
-[빠른 시작: Java API(SOAP)를 사용하여 애플리케이션 배포](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
+[빠른 시작: SOAP(Java API)를 사용하여 애플리케이션 배포](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
 [빠른 시작: Java API(SOAP)를 사용하여 애플리케이션 제거](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
 
@@ -27,11 +28,11 @@ Java API 빠른 시작(SOAP)은 Application Manager 서비스에 사용할 수 �
 >
 >애플리케이션 관리자 API는 AEM Forms LCA 파일만 지원합니다. LiveCycle ES2 및 ES4의 LCA 파일을 지원하지 않습니다.
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍의 SOAP(Java API) 빠른 시작은 Unix와 같은 다른 운영 체제를 사용하는 경우 Forms을 기반으로 하며 windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms를 사용한 프로그래밍의 SOAP(Java API) 빠른 시작은 Forms을 기반으로 합니다. Unix와 같은 다른 운영 체제를 사용하는 경우 windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 배포 {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
