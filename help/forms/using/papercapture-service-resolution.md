@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 64e120ee-5f16-4cd3-9ae9-95b165169e47
-source-git-commit: e682381f08e143c1bf14d7dcee4f022e684ee1f2
+source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 1%
+source-wordcount: '196'
+ht-degree: 2%
 
 ---
 
@@ -18,6 +18,12 @@ ht-degree: 1%
 ## 문제
 
 AEM Forms 서비스 팩 6.5.21.0으로 업그레이드한 후 `PaperCapture` 서비스가 PDF에서 OCR(광학 문자 인식) 작업을 수행하지 못했습니다. 이 서비스는 PDF 또는 로그 파일의 형태로 출력을 생성하지 않습니다.
+
+## 적용 대상
+
+이 솔루션은 다음에 적용됩니다.
+* 모든 (JBoss, Weblogic, Websphere) JEE 서버의 AEM Forms
+* OSGi 서버의 AEM Forms
 
 ## 솔루션
 
