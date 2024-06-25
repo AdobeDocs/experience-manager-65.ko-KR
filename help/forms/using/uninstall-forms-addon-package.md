@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 975f1f580404ea1f2940aec5981f5668dced4b95
+source-git-commit: 2755e414ea23ebc1472e9c08d832eca93f28311b
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 전제 조건
 
-데이터 손실을 방지하기 위해 양식 및 데이터를 백업해야 합니다.
+데이터 손실을 방지하려면 백업을 수행해야 합니다.
 
 ## AEM Forms 추가 기능 패키지를 제거하려면
 
