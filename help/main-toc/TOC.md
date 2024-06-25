@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 2513ae7e193bdae3387210b07661b9c7a22b0156
+source-git-commit: 17e10214732b25c89e0bb3f7b435fe05cd2f3595
 workflow-type: tm+mt
-source-wordcount: '7429'
+source-wordcount: '7434'
 ht-degree: 22%
 
 ---
@@ -1199,6 +1199,7 @@ ht-degree: 22%
       + [PDF 생성이 WorkBench에서 많은 PDF을 인쇄하지 못했습니다.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [AEM SDK를 올바르게 다시 시작하는 방법](/help/forms/using/restart-aem-sdk.md)
       + [PaperCapture 서비스가 PDF에서 OCR을 수행하지 못함](/help/forms/using/papercapture-service-resolution.md)
+      + [AEM Forms 추가 기능 패키지 제거](/help/forms/using/uninstall-forms-addon-package.md)
    + 레거시 설명서 {#legacy-documentation}
       + [JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드](/help/forms/developing/building-xml.md)
       + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](/help/forms/developing/compressing-decompressing-custom-dsc.md)
