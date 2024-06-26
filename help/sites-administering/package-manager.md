@@ -9,9 +9,9 @@ content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3565'
+source-wordcount: '3568'
 ht-degree: 1%
 
 ---
@@ -168,18 +168,22 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 
 ![필터 탭](assets/edit-filter.png)
 
-필터를 만들 때 경로를 정의하거나 정규 표현식을 사용하여 포함 또는 제외할 모든 노드를 지정할 수 있습니다.
+규칙을 생성할 때 정규 표현식(regex, regexp 또는 rational expression이라고도 함)을 정의하여 포함 또는 제외할 모든 노드를 지정합니다.
 
 | 규칙 유형 | 설명 |
 |---|---|
-| include | 디렉토리를 포함하면 해당 디렉토리와 해당 디렉토리에 있는 모든 파일 및 폴더(즉, 전체 하위 트리)가 포함되지만 **다음이 아님** 지정된 루트 경로 아래에 있는 다른 파일 또는 폴더를 포함합니다. |
-| 제외 | 디렉토리를 제외하면 해당 디렉토리와 해당 디렉토리에 있는 모든 파일 및 폴더(즉, 전체 하위 트리)가 제외됩니다. |
+| include | 포함 은 정규 표현식과 일치하는 지정된 디렉터리의 모든 파일 및 폴더를 포함합니다. 포함 **다음이 아님** 지정된 루트 경로 아래에 있는 다른 파일 또는 폴더를 포함합니다. |
+| 제외 | 제외를 선택하면 정규 표현식과 일치하는 모든 파일 및 폴더가 제외됩니다. |
 
 패키지 필터는 처음 정의할 때 가장 자주 정의됩니다 [패키지를 만듭니다.](#creating-a-new-package) 그러나 나중에 편집할 수도 있으며, 이후 새 필터 정의를 기반으로 콘텐츠를 업데이트하기 위해 패키지를 다시 빌드해야 합니다.
 
 >[!TIP]
 >
 >하나의 패키지에 여러 필터 정의가 포함될 수 있으므로 서로 다른 위치의 노드를 하나의 패키지로 쉽게 결합할 수 있습니다.
+
+>[!TIP]
+>
+>배경 정보는 [Apache Jackrabbit - 작업 영역 필터](https://jackrabbit.apache.org/filevault/filter.html) 설명서를 참조하십시오.
 
 ### 종속성 {#dependencies}
 
