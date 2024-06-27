@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 17e10214732b25c89e0bb3f7b435fe05cd2f3595
+source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
 workflow-type: tm+mt
-source-wordcount: '7434'
+source-wordcount: '7456'
 ht-degree: 22%
 
 ---
@@ -268,7 +268,7 @@ ht-degree: 22%
          + [태그 관리](/help/sites-administering/tags.md)
          + [페이지 내보내기](/help/sites-administering/page-exporter.md)
          + [클래식 UI 태깅 콘솔](/help/sites-administering/classic-console.md)
-         + [Screens용 콘텐츠 관리](/help/sites-administering/content-management-screens.md)
+         + [Screens용 컨텐츠 관리](/help/sites-administering/content-management-screens.md)
          + [WebDAV 액세스](/help/sites-administering/webdav-access.md)
    + 클래식 UI 작성 {#classic-ui}
       + 클래식 UI 작성 소개 {#introduction}
@@ -331,10 +331,10 @@ ht-degree: 22%
          + [Adobe Campaign 구성 요소](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
          + [Adobe Campaign 타기팅](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
          + [AEM에서 Adobe Campaign Forms 만들기](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-      + 클래식 UI에서 에셋 작성 {#assets}
+      + 클래식 UI에서 Assets 작성 {#assets}
          + [자산 작업](/help/sites-classic-ui-authoring/classicui-assets.md)
          + [Dynamic Media Assets 제공](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
-         + [페이지에 Dynamic Media 에셋 추가](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
+         + [페이지에 Dynamic Media Assets 추가](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
          + [Scene7 기능을 페이지에 추가](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
          + [비디오](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
          + [Dynamic Media 작업](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
@@ -348,7 +348,7 @@ ht-degree: 22%
       + [디지털 자산 검색](/help/assets/search-assets.md)
       + [에셋 메타데이터 작업](/help/assets/metadata.md)
       + [다국어 자산](/help/assets/multilingual-assets.md)
-      + [사용 [!DNL Adobe Stock] 자산의 자산](/help/assets/aem-assets-adobe-stock.md)
+      + [사용 [!DNL Adobe Stock] Assets의 자산](/help/assets/aem-assets-adobe-stock.md)
       + [3D 자산 미리보기](/help/assets/previewing-3d-assets.md)
       + [폴더 자산 및 컬렉션 검토](/help/assets/bulk-approval.md)
       + [향상된 스마트 태그](/help/assets/enhanced-smart-tags.md)
@@ -357,14 +357,14 @@ ht-degree: 22%
       + [자산 처리](/help/assets/assets-workflow.md)
       + [이미지 맵 추가](/help/assets/image-maps.md)
       + [MSM을 사용하여 자산 재사용](/help/assets/reuse-assets-using-msm.md)
-      + [연결된 자산 [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
+      + [연결된 Assets [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
    + Dynamic Media{#dynamic}
       + [뉴스레터 Experience League 아카이브](/help/assets/dynamic-media-newsletter.md)
       + [Dynamic Media 설정](/help/assets/administering-dynamic-media.md)
       + [Dynamic Media를 사용하여 작업](/help/assets/dynamic-media.md)
       + [Dynamic Media 구성 - Scene7 모드](/help/assets/config-dms7.md)
       + [선택 사항 - Dynamic Media 구성 - Scene7 모드, 일반 설정](/help/assets/dm-general-settings.md)
-      + [선택 사항 - Dynamic Media 구성 - Scene7 모드, 게시 설정](/help/assets/dm-publish-settings.md)
+      + [선택 사항 - Dynamic Media 구성 - Scene7 모드, Publish 설정](/help/assets/dm-publish-settings.md)
       + [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md)
       + [Dynamic Media 회사 별칭 계정 구성](/help/assets/dm-alias-account.md)
       + [Dynamic Media - 하이브리드 모드 구성](/help/assets/config-dynamic.md)
@@ -437,7 +437,7 @@ ht-degree: 22%
       + [태그 지정을 위한 스마트 컨텐츠 서비스 구성](/help/assets/config-smart-tagging.md)
       + [메타데이터, 이미지 및 비디오 처리 프로필](/help/assets/processing-profiles.md)
       + [자산 편집기 페이지 만들기 및 구성](/help/assets/assets-finder-editor.md)
-      + [자산 크기 조정 안내서](/help/assets/assets-sizing-guide.md)
+      + [Assets 크기 조정 안내서](/help/assets/assets-sizing-guide.md)
       + [자산 번역 우수 사례](/help/assets/best-practices-for-translating-assets-efficiently.md)
       + [[!DNL Assets] 성능 조정 가이드](/help/assets/performance-tuning-guidelines.md)
       + [[!DNL Assets] 마이그레이션 안내서](/help/assets/assets-migration-guide.md)
@@ -451,7 +451,7 @@ ht-degree: 22%
       + [자산 통찰력에 데모 패키지 사용](/help/assets/use-demo-package-for-asset-insights.md)
       + [Adobe 에셋 링크 구성](/help/assets/configure-asset-link.md)
       + [Adobe InDesign용 FPO 렌디션 생성](/help/assets/configure-fpo-renditions.md)
-      + [자산 파일 형식 우수 사례](/help/assets/assets-file-format-best-practices.md)
+      + [Assets 파일 형식 우수 사례](/help/assets/assets-file-format-best-practices.md)
       + [자산 모니터링 우수 사례](/help/assets/assets-monitoring-best-practices.md)
       + [Camera Raw 지원](/help/assets/camera-raw.md)
       + [Apache Tika를 사용하여 MIME 유형의 자산 탐지](/help/assets/detect-asset-mime-type-with-tika.md)
@@ -462,8 +462,8 @@ ht-degree: 22%
    + Brand Portal {#brandportal}
       + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [ [!DNL Brand Portal]에 자산 게시](/help/assets/brand-portal-publish-assets.md)
-      + [폴더 게시 위치 [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
-      + [컬렉션 게시 위치 [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
+      + [Publish 폴더 대상 [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
+      + [Publish 컬렉션 대상 [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
    + 콘텐츠 조각 {#content-fragments}
       + [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
       + [콘텐츠 조각 및 GraphQL을 사용하여 Headless 게재](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -489,7 +489,7 @@ ht-degree: 22%
       + [번역을 위한 자산 준비](/help/assets/preparing-assets-for-translation.md)
       + [Experience Manager에서 에셋 다운로드](/help/assets/download-assets-from-aem.md)
       + [Lightbox](/help/assets/light-box.md)
-      + [자산 통찰력](/help/assets/asset-insights.md)
+      + [Assets 인사이트](/help/assets/asset-insights.md)
       + [DTM을 통해 자산 통찰력 활성화](/help/assets/use-dtm-for-asset-insights.md)
       + [자산 통찰력 구성](/help/assets/configure-asset-insights.md)
       + [에셋 체크인 및 체크아웃](/help/assets/check-out-and-submit-assets.md)
@@ -519,7 +519,7 @@ ht-degree: 22%
          + [자습서: 양식 데이터 모델 만들기](/help/forms/using/create-form-data-model.md)
          + [자습서: 적응형 양식 필드 l에 규칙 적용](/help/forms/using/apply-rules-to-adaptive-form-fields.md)
          + [자습서: 적응형 양식 스타일 지정](/help/forms/using/style-your-adaptive-form.md)
-         + [자습서: 적응형 양식 게시](/help/forms/using/publish-your-adaptive-form.md)
+         + [자습서: 적응형 양식 Publish](/help/forms/using/publish-your-adaptive-form.md)
       + 자습서: 첫 번째 대화형 통신 만들기 {#create-first-interactive-communication}
          + [자습서: 첫 번째 대화형 통신 만들기](/help/forms/using/create-your-first-interactive-communication.md)
          + [자습서: 대화형 통신 계획](/help/forms/using/planning-interactive-communications.md)
@@ -699,7 +699,7 @@ ht-degree: 22%
       + [AEM 워크플로우의 변수](/help/forms/using/variable-in-aem-workflows.md)
       + [사용자의 받은 편지함 항목 공유 및 액세스 요청](/help/forms/using/configure-shared-queues-osgi.md)
       + [부재 중 구성](/help/forms/using/configure-out-of-office-settings.md)
-   + AEM Forms 작업 공간 {#use-aem-forms-workspace}
+   + AEM Forms Workspace {#use-aem-forms-workspace}
       + [AEM Forms 작업 영역 소개](/help/forms/using/introduction-html-workspace.md)
       + [AEM Forms 작업 영역 작업](/help/forms/using/html-workspace-overview.md)
       + [AEM Forms Workspace 아키텍처](/help/forms/using/html-workspace-architecture.md)
@@ -742,7 +742,7 @@ ht-degree: 22%
       + [시작 프로세스](/help/forms/using/starting-processes.md)
       + [추적 프로세스](/help/forms/using/tracking-processes.md)
       + [단일 사인온 및 시간 제한 핸들러](/help/forms/using/single-sign-timeout-handlers.md)
-      + [HTML 작업 영역에서 적응형 양식 사용](/help/forms/using/using-adaptive-form-html-workspace.md)
+      + [Workspace HTML에서 적응형 양식 사용](/help/forms/using/using-adaptive-form-html-workspace.md)
       + [AEM forms 작업 영역과 Microsoft Office SharePoint Server 통합](/help/forms/using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
       + [할 일 목록 작업](/help/forms/using/todo-lists.md)
       + [AEM Forms 작업 공간 문제 해결 지침](/help/forms/using/troubleshooting-guidelines-html-workspace.md)
@@ -788,7 +788,7 @@ ht-degree: 22%
       + [HTML 5 양식용 화면 판독기](/help/forms/using/screen-readers.md)
       + [HTML5 양식에 대한 사용자 지정 프로필 만들기](/help/forms/using/custom-profile.md)
       + [HTML 5 양식의 오른쪽에서 왼쪽 언어](/help/forms/using/right-left-languages.md)
-      + [Form Bridge와 HTML 5 Forms용 사용자 정의 포털 통합](/help/forms/using/integrate-form-bridge-forms-portal.md)
+      + [Form BridgeHTML 과 Form 5 Forms에 대한 사용자 정의 포털 통합](/help/forms/using/integrate-form-bridge-forms-portal.md)
       + [HTML5 양식에서 사용자 정의 표시 만들기](/help/forms/using/custom-widgets.md)
       + [HTML5 양식의 기본 스타일 변경](/help/forms/using/changing-default-styles.md)
       + [HTML5 양식에 대한 그림 절 지원](/help/forms/using/picture-clause-support.md)
@@ -809,7 +809,7 @@ ht-degree: 22%
       + [서신 만들기](/help/forms/using/create-correspondence.md)
       + [Expression Builder의 원격 함수](/help/forms/using/expression-builder.md)
       + [에이전트 서명 이미지 관리](/help/forms/using/manage-agent-signature-images.md)
-      + [편지 및 대화형 커뮤니케이션의 사후 처리](/help/forms/using/submit-letter-topostprocess.md)
+      + [편지 및 대화형 커뮤니케이션의 Post 처리](/help/forms/using/submit-letter-topostprocess.md)
       + [자산 목록 보기에 사용자 지정 작업 추가](/help/forms/using/add-custom-action-asset-listing-view.md)
       + [서신 UI 만들기에 사용자 지정 작업/버튼 추가](/help/forms/using/add-action-button-in-create-correspondence-ui.md)
       + [서신 관리 에셋에 사용자 지정 속성 추가](/help/forms/using/add-custom-properties-cm-assets.md)
@@ -831,7 +831,7 @@ ht-degree: 22%
       + [Adobe Launch를 사용한 Analytics](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)
       + [AEM Forms 분석 보고서 보기 및 이해](/help/forms/using/view-understand-aem-forms-analytics-reports.md)
       + [적응형 양식에 대한 A/B 테스트 만들기 및 관리](/help/forms/using/ab-testing-adaptive-forms.md)
-   + AEM Forms 게시 및 처리 {#publish-process-aem-forms}
+   + Publish 및 프로세스 AEM Forms {#publish-process-aem-forms}
       + [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)
       + [초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
       + [초안 및 제출을 위한 스토리지 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md)
@@ -872,12 +872,18 @@ ht-degree: 22%
       + [Forms Designer 도움말](/help/forms/using/forms-designer-help.md)
       + [Designer 사용](https://www.adobe.com/go/learn_aemforms_designer_65_kr)
       + [Designer 빠른 시작 Tutorials](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-      + [디자이너 샘플](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
+      + [Designer 샘플](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
       + [Designer 스크립팅 기본 사항](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-      + [디자이너 스크립팅 참조](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-      + [디자이너 FormCalc 참조](https://www.adobe.com/go/learn_aemforms_formCalc_65)
+      + [Designer 스크립팅 참조](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+      + [Designer FormC 참조](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [HTML5 양식에서 스크리블 서명 사용](/help/forms/using/scribble-signature.md)
       + [Designer에서 Page Zero 콘텐츠 변경](/help/forms/using/changing-page-zero-content-designer.md)
+      + [접근성 모범 사례]{#accessibility-best-practices}
+         + [소개](/help/forms/using/introduction-accessibility-forms-designer.md)
+         + [양식 생성 모범 사례](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
+         + [양식 접근성 테스트 기법](/help/forms/using/techniques-for-testing-form-accessibility.md)
+         + [지침과 모범 사례 간 매핑](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
+         + [유용한 링크](/help/forms/using/useful-links-accessibility-forms-designer.md)
    + AEM Forms 사용자 지정 {#customize-aem-forms}
       + [적응형 및 HTML5 양식용 외관 프레임워크](/help/forms/using/introduction-widgets.md)
       + [사용자 지정 적응형 양식 템플릿 만들기](/help/forms/using/custom-adaptive-forms-templates.md)
@@ -1028,12 +1034,12 @@ ht-degree: 22%
          + [정지된 작업 및 분기 작업](/help/forms/using/admin-help/stalled-operations-branches.md)
          + [공유 큐 구성](/help/forms/using/admin-help/configuring-shared-queues.md)
          + [작업](/help/forms/using/admin-help/tasks.md)
-      + 작업 영역 구성 {#configure-workspace}
-         + [작업 영역 개요](/help/forms/using/admin-help/overview-10.md)
+      + Workspace 구성 {#configure-workspace}
+         + [Workspace 개요](/help/forms/using/admin-help/overview-10.md)
          + [전역 설정 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-global-settings.md)
          + [오늘의 메시지 설정](/help/forms/using/admin-help/setting-message-day.md)
          + [검색 템플릿 사용자 정의](/help/forms/using/admin-help/customizing-search-templates.md)
-         + [작업 영역에 표시되는 범주 관리](/help/forms/using/admin-help/categories-displayed-workspace.md)
+         + [Workspace에 표시되는 카테고리 관리](/help/forms/using/admin-help/categories-displayed-workspace.md)
       + 상태 모니터 {#health-monitor}
          + [상태 모니터 개요](/help/forms/using/admin-help/overview-11.md)
          + [상태 모니터 성능 미세 조정](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
@@ -1086,7 +1092,7 @@ ht-degree: 22%
       + [적응형 양식을 디버깅하는 AEM 플러그인](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
       + [AEM Forms Java API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
       + [AEM Forms on JEE Java API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
-      + [HTML 5 양식용 Form Bridge API](/help/forms/using/form-bridge-apis.md)
+      + [HTML 5 양식용 양식 Bridge API](/help/forms/using/form-bridge-apis.md)
       + [적응형 Forms에 대한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [어셈블러 서비스 및 DDX 참조](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
       + [Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_65)
@@ -1100,12 +1106,12 @@ ht-degree: 22%
             + [외부 사용자 초대 핸들러 만들기](/help/forms/developing/creating-invite-external-users-handler.md)
          + Java API 빠른 시작 - 코드 예 {#java-api-quick-start-code-examples}
             + [Application Manager 클라이언트 JavaAPI 빠른 시작(SOAP)](/help/forms/developing/application-manager-client-java-api.md)
-            + [Application Manager 서비스 JavaAPI 빠른 시작(SOAP)](/help/forms/developing/application-manager-service-java-api.md)
-            + [어셈블러 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/assembler-service-java-api-quick.md)
+            + [Application Manager Service JavaAPI 빠른 시작(SOAP)](/help/forms/developing/application-manager-service-java-api.md)
+            + [어셈블러 서비스 Java API QuickStart(SOAP)](/help/forms/developing/assembler-service-java-api-quick.md)
             + [Acrobat Reader DC 확장 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md)
             + [백업 및 복원 서비스 API빠른 시작](/help/forms/developing/backup-restore-service-api-quick.md)
-            + [바코드 Forms 서비스 Java APIuick 시작(SOAP)](/help/forms/developing/barcoded-forms-service-java-api.md)
-            + [구성 요소 및 서비스 Java API빠른 시작(SOAP)](/help/forms/developing/components-services-java-api-quick.md)
+            + [바코드 Forms 서비스 Java APIQuick Start(SOAP)](/help/forms/developing/barcoded-forms-service-java-api.md)
+            + [구성 요소 및 서비스 Java APIuick Start(SOAP)](/help/forms/developing/components-services-java-api-quick.md)
             + [PDF 서비스 Java API 빠른 시작(SOAP) 변환](/help/forms/developing/convert-pdf-service-java-api.md)
             + [자격 증명 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/credential-service-java-api-quick.md)
             + [Distiller 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/distiller-service-java-api-quick.md)
@@ -1116,14 +1122,14 @@ ht-degree: 22%
             + [Endpoint Registry Java API QuickStart(SOAP)](/help/forms/developing/endpoint-registry-java-api-quick.md)
             + [양식 데이터 통합 서비스 JavaAPI 빠른 시작(SOAP)](/help/forms/developing/form-data-integration-service-java.md)
             + [Forms 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md)
-            + [PDF 서비스 Java API 빠른 시작(SOAP) 생성](/help/forms/developing/generate-pdf-service-java-api.md)
+            + [PDF 서비스 Java API 빠른 시작 생성(SOAP)](/help/forms/developing/generate-pdf-service-java-api.md)
             + [호출 API 빠른 시작](/help/forms/developing/invocation-api-quick-starts.md)
-            + [LiveCycleProcess Java API(SOAP)빠른 시작](/help/forms/developing/livecycleprocess-java-api-soap-quick.md)
+            + [LiveCycleProcess Java API(SOAP)Quick Start](/help/forms/developing/livecycleprocess-java-api-soap-quick.md)
             + [출력 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/output-service-java-api-quick.md)
             + [PDF 유틸리티 서비스 Java APIQuick 시작(SOAP)](/help/forms/developing/pdf-utilities-service-java-api.md)
             + [저장소 서비스 API 빠른 시작](/help/forms/developing/repository-service-api-quick-starts.md)
             + [서명 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/signature-service-java-api-quick.md)
-            + [작업 관리자 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/task-manager-service-java-api.md)
+            + [작업 관리자 서비스 Java API QuickStart(SOAP)](/help/forms/developing/task-manager-service-java-api.md)
             + [사용자 관리자 Java API 빠른 시작(SOAP)](/help/forms/developing/user-manager-java-api-quick.md)
             + [XMP 유틸리티 서비스 Java APIQuick 시작(SOAP)](/help/forms/developing/xmp-utilities-service-java-api.md)
          + API를 사용하여 JEE에서 AEM Forms 호출 {#invoking-aem-forms-jee-apis}
@@ -1307,7 +1313,7 @@ ht-degree: 22%
          + [보안](/help/sites-developing/security.md)
          + [참조 자료](/help/sites-developing/reference-materials.md)
          + [모든 기능을 갖춘 웹 사이트 만들기(클래식 UI)](/help/sites-developing/website.md)
-         + [디자인과 디자이너(클래식 UI)](/help/sites-developing/designer.md)
+         + [디자인 및 Designer(클래식 UI)](/help/sites-developing/designer.md)
          + [Touch UI로 마이그레이션](/help/sites-developing/touch-ui-migration.md)
       + 플랫폼 {#platform}
          + [Sling 치트시트](/help/sites-developing/sling-cheatsheet.md)
@@ -1557,12 +1563,12 @@ ht-degree: 22%
          + [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
          + [AEM 6에서 노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md)
          + [개정 정리](/help/sites-deploying/revision-cleanup.md)
-         + [Oak 쿼리 및 색인 지정](/help/sites-deploying/queries-and-indexing.md)
+         + [Oak 쿼리 및 색인화](/help/sites-deploying/queries-and-indexing.md)
          + [TarMK 콜드 대기로 AEM을 실행하는 방법](/help/sites-deploying/tarmk-cold-standby.md)
          + [AEM 6.5의 RDBMS 지원](/help/sites-deploying/rdbms-support-in-aem.md)
-         + [Oak-run Jar를 통한 인덱싱](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
+         + [Oak 실행 Jar를 통한 인덱싱](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Oak-run.jar 색인화 사용 사례](/help/sites-deploying/oak-run-indexing-usecases.md)
-         + [Oak 색인 문제 해결](/help/sites-deploying/troubleshooting-oak-indexes.md)
+         + [Oak 인덱스 문제 해결](/help/sites-deploying/troubleshooting-oak-indexes.md)
          + [집계된 사용 통계 수집 선택](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
          + [문제 해결](/help/sites-deploying/troubleshooting.md)
       + AEM 구성 {#configuring}
@@ -1597,7 +1603,7 @@ ht-degree: 22%
          + [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md)
          + [CRX2Oak 마이그레이션 도구 사용](/help/sites-deploying/using-crx2oak.md)
          + [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-         + [업그레이드 후 확인 및 문제 해결](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+         + [Post 업그레이드 확인 및 문제 해결](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [사용자 정의 검색 Forms 업그레이드](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [지속 가능한 업그레이드](/help/sites-deploying/sustainable-upgrades.md)
          + [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)
@@ -1607,7 +1613,7 @@ ht-degree: 22%
          + [AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md)
          + [AEM 6.5의 일반적인 저장소 재구성](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
          + [AEM 6.5의 Sites 저장소 재구성](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
-         + [AEM 6.5의 Assets 저장소 재구성](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
+         + [AEM 6.5에서 Assets 저장소 재구성](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
          + [AEM 6.5에서 Dynamic Media 저장소 재구성](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
          + [AEM 6.5에서 Forms 저장소 재구성](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
          + [AEM 6.5의 E-Commerce 저장소 재구성](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
