@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 2266f67d834341715b7300ff366f93d960110dac
+source-git-commit: f2f6f7efe67efdfc88863593844cc172a4815622
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1697'
 ht-degree: 9%
 
 ---
@@ -140,12 +140,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++5. 서블릿 조각 설치(AEM 서비스 팩 6.5.14.0 이하)(**필수 설치**)
++++5. 설치되지 않은 경우 서블릿 조각 설치(**필수 단계**)
 
->[!NOTE]
->
-> * 에서 업그레이드하는 경우 **AEM 서비스 팩 6.5.15.0**, 설치 **서블릿 조각** 은 필수가 아닙니다. 버전 **AEM 서비스 팩 6.5.14.0** 또는 그 이전 **필수 설치** 서블릿 조각.
-
+<!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
 
 서블릿 조각을 다운로드하여 설치하려면 다음을 수행합니다.
 
