@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
+source-git-commit: 4883ed159b945093b8530e6ec2c2217d4f3c2409
 workflow-type: tm+mt
-source-wordcount: '4070'
+source-wordcount: '4099'
 ht-degree: 3%
 
 ---
@@ -546,7 +546,10 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
 
 * 사용자가 AEM 6.5 Forms 서비스 팩 18(6.5.18.0) 또는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)에서 AEM 6.5 Forms 서비스 팩 20(6.5.20.0) 또는 AEM 6.5 Forms 서비스 팩 21(6.5.21.0)로 업데이트하면 JSP 컴파일 오류가 발생하여 적응형 양식을 열거나 만들 수 없고 페이지 편집기, AEM UI 및 AEM Forms 워크플로우 편집기와 같은 다른 AEM 인터페이스에 오류가 발생합니다. (FORMS-15256)
 
-
+  이러한 문제가 발생하면 다음 단계를 수행하여 해결하십시오.
+   1. 디렉토리로 이동합니다. `/libs/fd/aemforms/install/` CRXDE.
+   1. 이름이 인 번들 삭제 `com.adobe.granite.ui.commons-5.10.26.jar`.
+   1. AEM 서버를 다시 시작합니다.
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
