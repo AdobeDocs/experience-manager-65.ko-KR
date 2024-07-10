@@ -9,10 +9,10 @@ exl-id: a7281ca0-461f-4762-a631-6bb539596200
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 53%
+source-wordcount: '1564'
+ht-degree: 52%
 
 ---
 
@@ -89,6 +89,10 @@ AEM과 Campaign 간의 통합에는 두 솔루션에서 몇 가지 단계가 필
 
 1. 적절한 보안 영역을 선택하고 필요에 따라 신뢰할 수 있는 IP 마스크를 정의합니다.
 
+   >[!CAUTION]
+   >
+   >구성할 보안 영역은 입니다. **개인 회사 네트워크(VPN+LAN)**.
+
 1. **저장**&#x200B;을 클릭합니다.
 
 1. Adobe Campaign 클라이언트에서 로그아웃합니다.
@@ -155,7 +159,7 @@ AEM 사용 [Campaign에서 이미 설정한 연산자](#create-operator) Campaig
 >
 >Adobe Campaign 서버가 인터넷을 통해 접근 가능해야 합니다. AEM에서 개인 네트워크에 액세스할 수 없습니다.
 
-## AEM 게시 인스턴스에 대한 복제 구성 {#replication}
+## AEM Publish 인스턴스에 복제 구성 {#replication}
 
 캠페인 콘텐츠는 AEM 작성 인스턴스의 콘텐츠 작성자가 작성합니다. 이 인스턴스는 일반적으로 조직 내부에서만 사용할 수 있습니다. 이미지 및 에셋과 같은 콘텐츠를 캠페인 수신자가 액세스할 수 있도록 하려면 해당 콘텐츠를 게시해야 합니다.
 
