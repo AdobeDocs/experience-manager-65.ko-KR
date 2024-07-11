@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: ad71f1c92bba90000f72319536fffd255fb4db6e
+source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '903'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,23 @@ ht-degree: 1%
     <td><strong>날짜</strong></td>
     <td><strong>핫픽스 다운로드 링크(AEM Software Distribution 링크)</strong></td>
     <td><strong>해결된 문제</strong></td>
+  </tr>
+  <tr>
+    <td>2024년 7월 10일 목요일</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-jboss.zip.zip">JBoss JEE 서버용 Windows의 AEM 서비스 팩 6.5.21.0용 핫픽스 </a> </li>
+      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-jboss.tar.gz">JBoss JEE 서버용 Linux의 AEM 서비스 팩 6.5.21.0용 핫픽스 </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-websphere.zip.zip">Webshpere JEE 서버용 Windows의 AEM 서비스 팩 6.5.21.0용 핫픽스 </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-websphere.tar.gz">Webshpere JEE 서버용 Linux의 AEM 서비스 팩 6.5.21.0용 핫픽스</a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-weblogic.zip.zip">Weblogic JEE 서버용 Windows의 AEM 서비스 팩 6.5.21.0용 핫픽스 </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-weblogic.tar.gz">Weblogic JEE 서버용 Linux의 AEM 서비스 팩 6.5.21.0용 핫픽스</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul><li>사용자가 JEE 서버에서 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트하고 출력 서비스를 사용하여 PDF을 생성하는 경우 PDF이 접근성 문제로 렌더링됩니다. (LC-3922112)</li><li>AEM Forms JEE의 출력 서비스를 사용하여 생성된 태그가 지정된 PDF에 "부적절한 구조 경고"가 표시됩니다. (LC-3922038)</li><li>AEM Forms JEE에서 양식을 제출하면 반복되는 XML 요소의 인스턴스가 데이터에서 제거됩니다. (LC-3922017)</li><li>Linux 환경의 사용자가 HTML에서 적응형 양식(JEE의)을 렌더링할 때 제대로 렌더링되지 않습니다. (LC-3921957)</li><li>사용자가 AEM Forms JEE의 출력 서비스를 사용하여 XTG 파일을 PostScript 형식으로 변환할 때 다음 오류로 인해 실패합니다. AEM_OUT_001_003: 예기치 않은 예외: PAExecute 실패: XFA_RENDER_FAILURE. (LC-3921720)</li><li>JEE 서버에서 AEM Forms 서비스 팩 18(6.5.18.0)으로 업그레이드한 후 사용자가 양식을 제출할 때 HTML5를 렌더링하지 못하거나 PDF forms 및 XMLFM이 충돌합니다. (LC-3921718)
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>2024년 6월 21일 토요일</td>
@@ -72,7 +89,7 @@ ht-degree: 1%
     <li>확인란에 스크립트가 포함된 XDP를 기반으로 하는 적응형 양식에서는 이러한 확인란 이후의 요소에 대해 스크립트가 실행되지 않습니다. 이 문제에 대해 핫픽스를 사용할 수 있습니다. (FORMS-14244) </li>
      <li> 날짜 선택기 위젯의 행은 편집/표시 패턴이 있는 필드의 팝업 위젯에서 월을 트래버스할 때 잘립니다. 이 문제에 대해 핫픽스를 사용할 수 있습니다. (FORMS-13620) </li>
      <li>백엔드에서 DOR(기록 문서) 서비스를 사용하려고 할 때 양식 제출이 실패했습니다. 오류 메시지: "양식 리소스가 올바르게 할당되지 않아 제출 액션을 완료할 수 없습니다." (FORMS-13798) </li>
-     <li>Adobe Experience Manager 게시 인스턴스에서 Adobe Experience Manager 워크플로우로 적응형 양식을 제출하는 경우 워크플로우가 첨부 파일을 저장하지 못합니다.  (FORMS-14209) </li>
+     <li>Adobe Experience Manager Publish 인스턴스에서 Adobe Experience Manager 워크플로우로 적응형 양식을 제출하는 경우 워크플로우가 첨부 파일을 저장하지 못합니다.  (FORMS-14209) </li>
      <li> AEM 6.5 Forms 서비스 팩 20 패키지(SP20용 AEM Forms 추가 기능 패키지)를 설치할 때 AEM Sites UI(사용자 인터페이스)의 성능이 크게 저하되었습니다.  (FORMS-13791) </li>
      <li>대화형 통신에서 미리 채우기 서비스가 실패하고 null 포인터 예외가 발생합니다. (CQDOC-21355)</li>
     </ul>

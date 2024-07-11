@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4883ed159b945093b8530e6ec2c2217d4f3c2409
+source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
 workflow-type: tm+mt
-source-wordcount: '4099'
+source-wordcount: '4332'
 ht-degree: 3%
 
 ---
@@ -46,18 +46,17 @@ ht-degree: 3%
 이 릴리스의 몇 가지 주요 기능 및 개선 사항은 다음과 같습니다.
 
 * **Oauth 자격 증명 지원**: 기존 서비스 계정(JWT) 자격 증명을 대체하는 서버 간 인증에 대한 새롭고 사용하기 쉬운 자격 증명입니다. (NPR-41994)
-* **AEM Forms의 규칙 편집기 개선 사항**:
+* [AEM Forms의 규칙 편집기 개선 사항](/help/forms/using/rule-editor-core-components.md):
    * 을 사용한 중첩 조건 구현 지원 `When-then-else` 기능.
    * 필드를 포함한 패널 및 양식의 유효성을 검사하거나 재설정합니다.
    * 사용자 지정 함수 내에서 let 및 arrow 함수(ES10 지원)와 같은 최신 JavaScript 기능을 지원합니다.
-* **PDF 접근성을 위한 AutoTag API**: 이제 OSGi의 AEM Forms에서 태그: 단락 및 목록을 추가하여 접근성 표준에 대한 PDF을 개선하기 위해 새로운 AutoTag API를 지원합니다. 보조 기술을 가진 사용자가 PDF에 보다 쉽게 액세스할 수 있도록 해줍니다.
+* [PDF 접근성을 위한 AutoTag API](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services): 이제 OSGi의 AEM Forms에서 태그: 단락 및 목록을 추가하여 접근성 표준에 대한 PDF을 개선하기 위해 새로운 AutoTag API를 지원합니다. 보조 기술을 가진 사용자가 PDF에 보다 쉽게 액세스할 수 있도록 해줍니다.
 * **16비트 PNG 지원**: 이제 PDF Generator의 ImageToPdf 서비스에서 16비트 색상 깊이의 PNG 변환을 지원합니다.
 * **XDP의 개별 텍스트 블록에 아티팩트 적용**: 이제 Forms Designer을 사용하여 XDP 파일의 개별 텍스트 블록에 대한 설정을 구성할 수 있습니다. 이 기능을 사용하면 결과 PDF에서 아티팩트로 처리되는 요소를 제어할 수 있습니다. 머리글 및 바닥글과 같은 이러한 요소는 보조 기술에 액세스할 수 있습니다. 주요 기능에는 텍스트 블록을 아티팩트로 표시하고 이러한 설정을 XDP 메타데이터에 포함시키는 작업이 포함됩니다. Forms 출력 서비스는 PDF 생성 중에 이러한 설정을 적용하여 적절한 PDF/UA 태깅을 보장합니다.
 * **AEM Forms Designer 인증 `GB18030:2022` 표준**: 사용 `GB18030:2022` 인증, 이제 Forms Designer은 편집 가능한 모든 필드 및 대화 상자에 중국어 문자를 입력할 수 있는 중국어 유니코드 문자 세트를 지원합니다.
-* **JEE 서버에서 WebToPDF 경로 지원**: 이제 PDF Generator 서비스에서 Webkit 및 WebCapture(Windows만 해당) 경로 외에도 HTML 파일을 JEE의 PDF 문서로 변환하는 WebToPDF 경로를 지원합니다. WebToPDF 경로는 OSGi에서 이미 사용할 수 있지만 이제 JEE에도 포함하도록 확장되었습니다. JEE 및 OSGi 플랫폼 모두에서 PDF Generator 서비스는 서로 다른 운영 체제에서 다음 경로를 지원합니다.
+* [JEE 서버에서 WebToPDF 경로 지원](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) 이제 PDF Generator 서비스를 사용하면 기존 Webkit 및 WebCapture(Windows만 해당) 경로 외에도 HTML 파일을 JEE의 PDF 문서로 변환하는 WebToPDF 경로가 지원됩니다. WebToPDF 경로는 OSGi에서 이미 사용할 수 있고 JEE로 확장되어 있습니다. 이제 JEE 및 OSGi 플랫폼 모두에서 PDF Generator 서비스는 서로 다른 운영 체제에서 다음 경로를 지원합니다.
    * **Windows**: Webkit, WebCapture, WebToPDF
-   * **리눅스**: Webkit, WebToPDF
-
+   * **Linux®**: Webkit, WebToPDF
 
 ### [!DNL Assets]
 
@@ -550,6 +549,13 @@ Maven 프로젝트에서 UberJar를 사용하려면 [uberJar 사용 방법](/hel
    1. 디렉토리로 이동합니다. `/libs/fd/aemforms/install/` CRXDE.
    1. 이름이 인 번들 삭제 `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. AEM 서버를 다시 시작합니다.
+
+* 사용자가 JEE 서버에서 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트하고 출력 서비스를 사용하여 PDF을 생성하는 경우 PDF이 접근성 문제로 렌더링됩니다. 핫픽스를 다운로드하여 설치하려면 다음을 참조하십시오. [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 기사. (LC-3922112)
+* 사용자가 JEE의 출력 서비스를 사용하여 태그가 지정된 PDF을 생성하면 &quot;부적절한 구조 경고&quot;가 표시됩니다. 핫픽스를 다운로드하여 설치하려면 다음을 참조하십시오. [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 기사. (LC-3922038)
+* AEM Forms JEE에서 양식을 제출하면 반복되는 XML 요소의 인스턴스가 데이터에서 제거됩니다. 핫픽스를 다운로드하여 설치하려면 다음을 참조하십시오. [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 기사. (LC-3922017)
+* Linux 환경의 사용자가 HTML에서 적응형 양식(JEE의)을 렌더링할 때 제대로 렌더링되지 않습니다. 핫픽스를 다운로드하여 설치하려면 다음을 참조하십시오. [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 기사. (LC-3921957)
+* 사용자가 AEM Forms JEE의 출력 서비스를 사용하여 XTG 파일을 PostScript 형식으로 변환할 때 다음 오류로 실패합니다. `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. 핫픽스를 다운로드하여 설치하려면 다음을 참조하십시오. [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 기사. (LC-3921720)
+* JEE 서버에서 AEM Forms 서비스 팩 18(6.5.18.0)으로 업그레이드한 후 사용자가 양식을 제출할 때 HTML5를 렌더링하지 못하거나 PDF forms 및 XMLFM이 충돌합니다. 핫픽스를 다운로드하여 설치하려면 다음을 참조하십시오. [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 기사. (LC-3921718)
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
