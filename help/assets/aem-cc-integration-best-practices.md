@@ -8,7 +8,7 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a144f7cc75b1a5cdb45d2aaf90e87013ac68a431
 workflow-type: tm+mt
 source-wordcount: '3173'
 ht-degree: 11%
@@ -19,7 +19,7 @@ ht-degree: 11%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets] 는 과 통합할 수 있는 디지털 에셋 관리(DAM) 솔루션입니다. [!DNL Adobe Creative Cloud] DAM 사용자가 크리에이티브 팀과 함께 작업할 수 있도록 지원하여 콘텐츠 작성 프로세스에서 공동 작업을 간소화합니다.
@@ -32,7 +32,7 @@ ht-degree: 11%
 >
 >[!DNL Experience Manager] 끝 [!DNL Creative Cloud] 폴더 공유는 더 이상 사용되지 않으며 이 안내서에서 더 이상 다루지 않습니다. Adobe은 다음과 같은 최신 기능을 사용할 것을 권장합니다. [Adobe 에셋 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [Experience Manager 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html) 크리에이티브 사용자에게 에서 관리하는 자산에 대한 액세스 권한을 제공하려면 [!DNL Experience Manager].
 
-## 크리에이티브, 마케터 및 DAM 사용자의 공동 작업 요구 {#collaboration-needs-of-creatives-marketers-and-dam-users}
+## 크리에이티브, 마케터 및 DAM 사용자의 Collaboration 요구 사항 {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
 | 요구 사항 | 사용 사례 | 관련 표면 |
 |---|---|---|
@@ -144,14 +144,14 @@ DAM에 에셋을 저장하면 에셋에 쉽게 액세스하고 검색할 수 있
 
 크리에이티브 팀(및 조직)은 일반적으로 에셋 수명주기의 각 단계에서 에셋을 저장하는 데 관심이 없습니다. 예를 들어 다음과 같은 경우에는 에셋을 저장하지 않습니다.
 
-* 아직 확정되지 않았거나 실험이 필요한 에셋.
-* 크리에이티브/내부 팀 검토 주기를 통과하지 못한 에셋.
+* 아직 확정되지 않았거나 실험이 필요한 Assets.
+* 크리에이티브/내부 팀 검토 주기를 통과하지 못한 Assets.
 * 해당 에셋에 비해 팀은 외부 팀에 자신의 작업을 대표하는 더 나은 후보자를 보유하고 있습니다.
 
 일반적으로 다음 클래스 자산은 DAM에 저장됩니다.
 
-* 일정 성숙기에 도달하여 공유할 준비가 된 것으로 간주되는 자산입니다.
-* 크리에이티브 팀이 사전 선택한 에셋입니다.
+* 일정 성숙도에 도달하여 공유할 준비가 된 것으로 간주되는 Assets
+* 크리에이티브 팀이 사전 선택한 Assets.
 * 특정 계약 또는 계약에 따라 마케팅에서 사용할 수 있거나 요청한 특정 에셋 형식(예: RAW 파일에서 변환된 JPG 파일, PSD 원본의 TIFF/이미지).
 
 #### 자산 업데이트가 DAM에 저장되는 경우 {#when-updates-to-assets-are-stored-in-dam}
