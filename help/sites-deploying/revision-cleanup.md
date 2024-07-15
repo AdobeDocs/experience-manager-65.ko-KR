@@ -9,9 +9,9 @@ feature: Administering
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a2d7d82e0d6729e08b464d3843a9b44bcabd154b
 workflow-type: tm+mt
-source-wordcount: '5753'
+source-wordcount: '5696'
 ht-degree: 0%
 
 ---
@@ -385,7 +385,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>마지막 온라인 수정 버전 정리 실행의 통계는 어디에서 찾을 수 있습니까?</strong></td>
-   <td><p>상태, 진행 상황 및 통계는 JMX(<code>SegmentRevisionGarbageCollection</code>MBean)를 통해 노출됩니다. <code>SegmentRevisionGarbageCollection</code>MBean에 대한 자세한 내용은 <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">다음 단락</a>을 참조하십시오.</p> <p>진행률은 <code>EstimatedRevisionGCCompletion</code> 특성을 통해 추적할 수 있습니다. <code>SegmentRevisionGarbageCollection MBean.</code></p> <p><code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>을(를) 사용하여 MBean의 참조를 가져올 수 있습니다.</p> <p>통계는 마지막 시스템이 시작된 이후에만 사용할 수 있습니다. 외부 모니터링 도구를 사용하여 데이터를 AEM 가동 시간 이상으로 유지할 수 있습니다. 외부 모니터링 도구의 예로 Nagios에 상태 검사를 첨부하려면 <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">AEM 설명서를 참조하십시오</a>.</p> </td>
+   <td><p>상태, 진행 상황 및 통계는 JMX(<code>SegmentRevisionGarbageCollection</code>MBean)를 통해 노출됩니다. <code>SegmentRevisionGarbageCollection</code>MBean에 대한 자세한 내용은 <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">다음 단락</a>을 참조하십시오.</p> <p>진행률은 <code>EstimatedRevisionGCCompletion</code> 특성을 통해 추적할 수 있습니다. <code>SegmentRevisionGarbageCollection MBean.</code></p> <p><code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>을(를) 사용하여 MBean의 참조를 가져올 수 있습니다.</p> <p>통계는 마지막 시스템이 시작된 이후에만 사용할 수 있습니다. <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-external-services" target="_blank">외부 모니터링 도구를 사용하여 데이터를 AEM 가동 시간 이상으로 유지할 수 있습니다</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -428,12 +428,12 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>개정 정리 상태 검사에서 노출되는 정보는 무엇입니까? 색상 코드 상태 수준은 언제 어떻게 기여합니까? </strong></td>
-   <td><p>수정 정리 상태 검사는 <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">작업 대시보드</a>의 일부입니다.<br /> </p> <p>온라인 수정 정리 유지 관리 작업의 마지막 실행이 완료된 경우 상태는 <strong>GREEN</strong>입니다.</p> <p>온라인 수정 정리 유지 관리 작업이 한 번 취소된 경우 <strong>YELLOW</strong>입니다.<br /> </p> <p>온라인 수정 정리 유지 관리 작업이 연속 3회 취소된 경우 <strong>RED</strong>입니다. <strong>이 경우 수동 상호 작용이 필요합니다</strong> 또는 온라인 수정 버전 정리가 다시 실패할 수 있습니다. 자세한 내용은 아래의 <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">문제 해결</a> 섹션을 참조하십시오.<br /> </p> <p>또한 시스템을 다시 시작하면 상태 검사 상태가 재설정됩니다. 따라서 새로 시작한 인스턴스는 개정 정리 상태 검사에서 녹색 상태를 표시합니다. 외부 모니터링 도구를 사용하여 데이터를 AEM 가동 시간 이상으로 유지할 수 있습니다. 외부 모니터링 도구의 예로 Nagios에 상태 검사를 첨부하려면 <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">AEM 설명서를 참조하십시오</a>.</p> </td>
+   <td><p>수정 정리 상태 검사는 <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">작업 대시보드</a>의 일부입니다.<br /> </p> <p>온라인 수정 정리 유지 관리 작업의 마지막 실행이 완료된 경우 상태는 <strong>GREEN</strong>입니다.</p> <p>온라인 수정 정리 유지 관리 작업이 한 번 취소된 경우 <strong>YELLOW</strong>입니다.<br /> </p> <p>온라인 수정 정리 유지 관리 작업이 연속 3회 취소된 경우 <strong>RED</strong>입니다. <strong>이 경우 수동 상호 작용이 필요합니다</strong> 또는 온라인 수정 버전 정리가 다시 실패할 수 있습니다. 자세한 내용은 아래의 <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">문제 해결</a> 섹션을 참조하십시오.<br /> </p> <p>또한 시스템을 다시 시작하면 상태 검사 상태가 재설정됩니다. 따라서 새로 시작한 인스턴스는 개정 정리 상태 검사에서 녹색 상태를 표시합니다.  <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-external-services" target="_blank">외부 모니터링 도구를 사용하여 데이터를 AEM 가동 시간 이상으로 유지할 수 있습니다</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td><p><strong>대기 인스턴스에서 자동 정리를 모니터링하는 방법</strong></p> </td>
-   <td><p><code>SegmentRevisionGarbageCollection</code>MBean을 사용하여 JMX를 통해 상태, 진행 상황 및 통계가 노출됩니다. 다음 <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Oak 설명서</a>도 참조하세요. </p> <p><code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>을(를) 사용하여 MBean의 참조를 가져올 수 있습니다.</p> <p>통계는 마지막 시스템이 시작된 이후에만 사용할 수 있습니다. 외부 모니터링 도구를 사용하여 데이터를 AEM 가동 시간 이상으로 유지할 수 있습니다. 또한 외부 모니터링 도구의 예로 Nagios에 상태 검사를 첨부하는 방법은 <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">AEM 설명서를 참조하십시오</a>.</p> <p>로그 파일을 사용하여 자동 정리의 상태, 진행률 및 통계를 확인할 수도 있습니다.</p> </td>
+   <td><p><code>SegmentRevisionGarbageCollection</code>MBean을 사용하여 JMX를 통해 상태, 진행 상황 및 통계가 노출됩니다. 다음 <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Oak 설명서</a>도 참조하세요. </p> <p><code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>을(를) 사용하여 MBean의 참조를 가져올 수 있습니다.</p> <p>통계는 마지막 시스템이 시작된 이후에만 사용할 수 있습니다.  <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-external-services" target="_blank">외부 모니터링 도구를 사용하여 데이터를 AEM 가동 시간 이상으로 유지할 수 있습니다</a>.</p> <p>로그 파일을 사용하여 자동 정리의 상태, 진행률 및 통계를 확인할 수도 있습니다.</p> </td>
    <td> </td>
   </tr>
   <tr>
