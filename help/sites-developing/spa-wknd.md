@@ -27,4 +27,4 @@ ht-degree: 5%
 * [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 * [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
-그러나 AEM용 SPA 프로젝트를 시작하기 전에 [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) 문서.
+그러나 AEM용 SPA 프로젝트를 시작하기 전에 [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) 문서도 검토하십시오.

@@ -28,7 +28,7 @@ ht-degree: 0%
    * 네트워크 지연
    * 사용 가능한 대역폭
 
-* **연산 속도**
+* **계산 속도**
 
    * 캐싱 효율성
    * 예상 트래픽
@@ -36,7 +36,7 @@ ht-degree: 0%
    * 동시 작성자
    * 작성 작업의 복잡성(간단한 콘텐츠 편집, MSM 롤아웃 등)
 
-* **입출력 성능**
+* **I/O 성능**
 
    * 파일 또는 데이터베이스 스토리지의 성능 및 효율성
 
@@ -51,23 +51,23 @@ ht-degree: 0%
 
 ## 아키텍처 {#architecture}
 
-일반적인 AEM 설정은 작성자와 게시 환경으로 구성됩니다. 이러한 환경은 기본 하드웨어 크기 및 시스템 구성과 관련하여 서로 다른 요구 사항을 가지고 있습니다. 두 환경에 대한 자세한 고려 사항은 [작성 환경](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) 및 [게시 환경](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) 섹션.
+일반적인 AEM 설정은 작성자와 게시 환경으로 구성됩니다. 이러한 환경은 기본 하드웨어 크기 및 시스템 구성과 관련하여 서로 다른 요구 사항을 가지고 있습니다. 두 환경에 대한 자세한 고려 사항은 [작성 환경](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) 및 [게시 환경](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) 섹션에 설명되어 있습니다.
 
 일반적인 프로젝트 설정에서는 프로젝트 단계를 스테이징할 수 있는 몇 가지 환경이 있습니다.
 
 * **개발 환경**
 새로운 기능을 개발하거나 중요한 변경 작업을 수행하기 위해 가장 좋은 방법은 개발자별 개발 환경(개인 시스템에 로컬 설치)을 사용하여 작업하는 것입니다.
 
-* **작성자 테스트 환경**
+* **테스트 환경 작성**
 변경 내용을 확인하려면 테스트 환경의 수는 프로젝트 요구 사항에 따라 달라질 수 있습니다(예: QA, 통합 테스트 또는 사용자 승인 테스트의 경우 각각 다름).
 
-* **테스트 환경 게시**
+* **Publish 테스트 환경**
 주로 소셜 공동 작업 사용 사례 및/또는 작성자와 여러 게시 인스턴스 간의 상호 작용을 테스트하기 위한 것입니다.
 
-* **작성자 프로덕션 환경**
+* **프로덕션 환경**
 작성자가 컨텐츠를 편집할 수 있습니다.
 
-* **프로덕션 환경 게시**
+* **Publish 프로덕션 환경**
 게시된 콘텐츠를 제공합니다.
 
 또한 AEM 및 애플리케이션 서버를 실행하는 단일 서버 시스템에서 확장성이 높은 다중 서버, 다중 CPU 클러스터 인스턴스 세트에 이르기까지 환경이 달라질 수 있습니다. Adobe은 각 프로덕션 시스템에 대해 별도의 컴퓨터를 사용하고 이러한 컴퓨터에서 다른 응용 프로그램을 실행하지 말 것을 권장합니다.
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 아래 섹션에서는 다양한 고려 사항을 고려하여 하드웨어 요구 사항을 계산하는 방법에 대한 지침을 제공합니다. 대규모 시스템의 경우, Adobe은 참조 구성에 대해 간단한 사내 벤치마크 테스트를 수행할 것을 제안합니다.
 
-성능 최적화는 특정 프로젝트에 대한 벤치마킹을 수행하기 전에 수행해야 하는 기본적인 작업입니다. 에 제공된 조언을 적용하십시오. [성능 최적화 설명서](/help/sites-deploying/configuring-performance.md) 벤치마크 테스트를 수행하고 그 결과를 사용하여 하드웨어 크기 조정 계산을 수행하기 전에
+성능 최적화는 특정 프로젝트에 대한 벤치마킹을 수행하기 전에 수행해야 하는 기본적인 작업입니다. 벤치마크 테스트를 수행하고 그 결과를 하드웨어 크기 조정 계산에 사용하기 전에 [성능 최적화 설명서](/help/sites-deploying/configuring-performance.md)에 제공된 조언을 적용하십시오.
 
 고급 사용 사례에 대한 하드웨어 크기 조정 요구 사항은 프로젝트에 대한 자세한 성능 평가를 기반으로 해야 합니다. 뛰어난 하드웨어 리소스를 필요로 하는 고급 사용 사례의 특징은 다음과 같습니다.
 
@@ -113,12 +113,12 @@ AEM은 가상화 환경에서 잘 실행되지만 CPU 또는 I/O와 같이 물�
 
 **시스템 리소스 확장성**
 
-모든 시스템이 실행되는 동안 향상된 컴퓨팅 성능을 사용할 수 있습니다. 이 관계는 기술 환경에 크게 의존하기 때문에 추가 성능이 클러스터 노드 수와 반드시 일치하는 것은 아닙니다. 다음을 참조하십시오 [클러스터 설명서](/help/sites-deploying/recommended-deploys.md) 추가 정보.
+모든 시스템이 실행되는 동안 향상된 컴퓨팅 성능을 사용할 수 있습니다. 이 관계는 기술 환경에 크게 의존하기 때문에 추가 성능이 클러스터 노드 수와 반드시 일치하는 것은 아닙니다. 자세한 내용은 [클러스터 설명서](/help/sites-deploying/recommended-deploys.md)를 참조하세요.
 
 필요한 클러스터 노드의 수는 특정 웹 프로젝트의 기본 요구 사항과 특정 사용 사례를 기반으로 계산됩니다.
 
 * 장애 안전성의 관점에서, 모든 환경에서 클러스터 노드가 복구되는 데 걸리는 시간을 기반으로 심각한 장애와 장애 보상 시간을 결정해야 합니다.
-* 확장성의 측면에서 볼 때 기본적으로 쓰기 작업의 수가 가장 중요한 요소입니다. [동시 작업 작성자](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) 작성 환경 및 [소셜 공동 작업](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) 게시 환경용입니다. 로드 밸런싱은 읽기 작업만 처리하기 위해 시스템에 액세스하는 작업에 대해 설정할 수 있습니다. 다음을 참조하십시오. [디스패처](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 을 참조하십시오.
+* 확장성의 측면에서는 쓰기 작업 횟수가 기본적으로 가장 중요한 요소입니다. 작성 환경의 경우 [동시에 작업하고 있는 작성자](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel), 게시 환경의 경우 [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations)을 참조하십시오. 읽기 작업만 처리하기 위해 시스템에 액세스하는 작업에 대해 부하 분산을 설정할 수 있습니다. 자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)을(를) 참조하십시오.
 
 ## 작성자 환경별 계산 {#author-environment-specific-calculations}
 
@@ -144,7 +144,7 @@ AEM은 가상화 환경에서 잘 실행되지만 CPU 또는 I/O와 같이 물�
 
 ### 캐싱 {#caching}
 
-작성 환경에서는 웹 사이트를 변경하는 경우가 더 많고 콘텐츠의 대화형 및 개인화가 향상되므로 일반적으로 캐싱 효율성이 훨씬 낮습니다. Dispatcher를 사용하여 AEM 라이브러리, JavaScript, CSS 파일 및 레이아웃 이미지를 캐시할 수 있습니다. 이렇게 하면 작성 프로세스의 일부 측면이 빨라집니다. 이러한 리소스에 대한 브라우저 캐싱을 위한 헤더도 설정하도록 웹 서버를 구성하면 HTTP 요청 수가 감소하므로 작성자가 경험한 대로 시스템 응답성이 향상됩니다.
+작성 환경에서는 웹 사이트를 변경하는 경우가 더 많고 콘텐츠의 대화형 및 개인화가 향상되므로 일반적으로 캐싱 효율성이 훨씬 낮습니다. Dispatcher을 사용하여 AEM 라이브러리, JavaScript, CSS 파일 및 레이아웃 이미지를 캐시할 수 있습니다. 이렇게 하면 작성 프로세스의 일부 측면이 빨라집니다. 이러한 리소스에 대한 브라우저 캐싱을 위한 헤더도 설정하도록 웹 서버를 구성하면 HTTP 요청 수가 감소하므로 작성자가 경험한 대로 시스템 응답성이 향상됩니다.
 
 ### 동시 작업 작성자 {#authors-working-in-parallel}
 
@@ -176,9 +176,9 @@ AEM은 가상화 환경에서 잘 실행되지만 CPU 또는 I/O와 같이 물�
 
 `n = numberOfParallelAuthors / 30`
 
-이 공식은 작성자가 AEM으로 기본 작업을 수행할 때 CPU 크기를 조정하는 일반적인 지침으로 사용할 수 있습니다. 시스템과 애플리케이션이 최적화되어 있다고 가정합니다. 그러나 공식은 MSM 또는 에셋과 같은 고급 기능에 대해서는 적용되지 않습니다(아래 섹션 참조).
+이 공식은 작성자가 AEM으로 기본 작업을 수행할 때 CPU 크기를 조정하는 일반적인 지침으로 사용할 수 있습니다. 시스템과 애플리케이션이 최적화되어 있다고 가정합니다. 그러나 공식은 MSM 또는 Assets과 같은 고급 기능에 대해서는 적용되지 않습니다(아래 섹션 참조).
 
-추가 정보 [평행화](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) 및 [성능 최적화](/help/sites-deploying/configuring-performance.md).
+[병렬화](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) 및 [성능 최적화](/help/sites-deploying/configuring-performance.md)도 참조하세요.
 
 ### 하드웨어 Recommendations {#hardware-recommendations}
 
@@ -195,11 +195,11 @@ Adobe 시 벤치마크 테스트는 Hewlett-Packard ProLiant DL380 G5 하드웨�
 
 AEM 인스턴스는 최소 힙 크기가 256M이고 최대 힙 크기가 1024M인 상태로 실행되고 있었습니다.
 
-## 환경별 계산 게시 {#publish-environment-specific-calculations}
+## Publish 환경별 계산 {#publish-environment-specific-calculations}
 
 ### 캐싱 효율성 및 트래픽 {#caching-efficiency-and-traffic}
 
-캐시 효율성은 웹 사이트 속도에 매우 중요합니다. 다음 표는 최적화된 AEM 시스템이 Dispatcher와 같은 역방향 프록시를 사용하여 처리할 수 있는 초당 페이지 수를 보여 줍니다.
+캐시 효율성은 웹 사이트 속도에 매우 중요합니다. 다음 표는 최적화된 AEM 시스템이 Dispatcher과 같은 역방향 프록시를 사용하여 처리할 수 있는 초당 페이지 수를 보여 줍니다.
 
 | 캐시 비율 | 페이지/초(최대) | 백만 페이지/일(평균) |
 |---|---|---|
@@ -214,7 +214,7 @@ AEM 인스턴스는 최소 힙 크기가 256M이고 최대 힙 크기가 1024M�
 >
 >면책조항: 이 수치는 기본 하드웨어 구성을 기반으로 하며 사용되는 특정 하드웨어에 따라 달라질 수 있습니다.
 
-캐시 비율은 Dispatcher가 AEM에 액세스하지 않고도 반환할 수 있는 페이지의 백분율입니다. 100%는 Dispatcher가 모든 요청에 응답함을 나타내고 0%는 AEM이 모든 페이지를 계산함을 의미합니다.
+캐시 비율은 AEM에 액세스하지 않고도 Dispatcher이 반환할 수 있는 페이지의 백분율입니다. 100%는 Dispatcher이 모든 요청에 응답함을 나타내고, 0%는 AEM이 모든 페이지를 계산함을 나타냅니다.
 
 ### 템플릿 및 애플리케이션의 복잡성 {#complexity-of-templates-and-applications}
 
@@ -259,7 +259,7 @@ AEM 인스턴스는 최소 힙 크기가 256M이고 최대 힙 크기가 1024M�
   </tr>
   <tr>
    <td>활성화</td>
-   <td>시간당 평균 활성화(작성자의 평균 크기 페이지 및 에셋을 게시 계층으로 복제)의 수를 x로 나눈 값입니다. 여기서 x는 시스템에서 처리한 다른 작업에 대해 성능 부작용이 없는 시스템에서 수행된 활성화의 수입니다. x = 100과 같은 비관적 초기 값을 미리 정의할 수도 있습니다.<br /> </td>
+   <td>시간당 평균 활성화(작성자의 평균 크기 페이지 및 에셋을 게시 계층으로 복제)의 수를 x로 나눈 값입니다. 여기서 x는 시스템에서 처리한 다른 작업에 대해 성능 부작용이 없는 시스템에서 수행된 활성화의 수입니다. x = 100.<br />과 같은 비관적 초기 값을 미리 정의할 수도 있습니다. </td>
   </tr>
  </tbody>
 </table>
@@ -286,11 +286,11 @@ AEM 인스턴스는 최소 힙 크기가 256M이고 최대 힙 크기가 1024M�
 
 기본 웹 응용 프로그램에 대한 계산 외에 다음 사용 사례에 대한 특정 요소를 고려하십시오. 계산된 값이 기본 계산에 추가됩니다.
 
-### 에셋별 고려 사항 {#assets-specific-considerations}
+### Assets 관련 고려 사항 {#assets-specific-considerations}
 
 디지털 에셋을 광범위하게 처리하려면 최적화된 하드웨어 리소스가 필요하며, 가장 관련성이 높은 요소는 이미지 크기와 처리된 이미지의 최대 처리량입니다.
 
-16GB 이상의 힙 할당 및 구성 [!UICONTROL DAM 자산 업데이트] 사용할 워크플로 [Camera Raw 패키지](/help/assets/camera-raw.md) 원시 이미지 수집용
+Camera Raw 최소 16GB의 힙을 할당하고 원시 이미지 수집에 [패키지](/help/assets/camera-raw.md)를 사용하도록 [!UICONTROL DAM 자산 업데이트] 워크플로우를 구성합니다.
 
 >[!NOTE]
 >
@@ -300,7 +300,7 @@ TarPM, 데이터 저장소 및 검색 색인에 대해 별도의 디스크를 �
 
 >[!NOTE]
 >
-다음 항목도 참조하십시오. [Assets 성능 안내서](/help/sites-deploying/assets-performance-sizing.md).
+[Assets 성능 가이드](/help/sites-deploying/assets-performance-sizing.md)도 참조하세요.
 
 ### 다중 사이트 관리자 {#multi-site-manager}
 

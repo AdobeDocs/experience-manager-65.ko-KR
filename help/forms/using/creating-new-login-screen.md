@@ -22,56 +22,56 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
 
 ## 전제 조건 {#prerequisite}
 
-1. 에 로그인합니다 `/lc/crx/de` 관리자 권한으로.
+1. 관리자 권한으로 `/lc/crx/de`에 로그인합니다.
 1. 다음 작업을 수행합니다.
 
-   1. 계층 구조 복제: / `/libs/livecycle/core/content` 위치: `/apps/livecycle/core/content`.
+   1. `/apps/livecycle/core/content`에 있는 `/libs/livecycle/core/content`의 계층 구조를 복제합니다.
 
       동일한 (노드/폴더) 속성 및 액세스 제어를 유지합니다.
 
    1. 컨텐츠 폴더를 복사합니다.
 
-      출처: `/libs/livecycle/core`
+      보낸 사람: `/libs/livecycle/core`
 
-      끝: `/apps/livecycle/core`.
+      받는 사람: `/apps/livecycle/core`.
 
-   1. 콘텐츠 삭제 `/apps/livecycle/core` 폴더를 삭제합니다.
+   1. `/apps/livecycle/core` 폴더의 내용을 삭제합니다.
 
 1. 다음 작업을 수행합니다.
 
-   1. 계층 구조 복제: / `/libs/livecycle/core/components/login` 위치: `/apps/livecycle/core/components/login`. 동일한 (노드/폴더) 속성 및 액세스 제어를 유지합니다.
+   1. `/apps/livecycle/core/components/login`에 있는 `/libs/livecycle/core/components/login`의 계층 구조를 복제합니다. 동일한 (노드/폴더) 속성 및 액세스 제어를 유지합니다.
 
-   1. 구성 요소 폴더 복사: 부터 `/libs/livecycle/core` 끝 `/apps/livecycle/core`.
+   1. 구성 요소 폴더를 `/libs/livecycle/core`에서 `/apps/livecycle/core`(으)로 복사합니다.
 
-   1. 폴더의 컨텐츠를 삭제합니다. `/apps/livecycle/core/components/login`.
+   1. `/apps/livecycle/core/components/login` 폴더의 내용을 삭제합니다.
 
 ### 새 로케일 추가 {#adding-a-new-locale}
 
-1. 다음을 복사합니다. `i18n` 폴더:
+1. `i18n` 폴더 복사:
 
    * 변환 전: `/libs/livecycle/core/components/login`
-   * 끝 `/apps/livecycle/core/components/login`
+   * `/apps/livecycle/core/components/login`에
 
-1. 내의 모든 폴더 삭제 `i18n` 하나만 제외하고 `en`.
+1. `i18n` 내의 폴더 중 하나를 제외한 모든 폴더를 삭제합니다. `en`.
 
-1. 폴더에서 `en`, 다음 작업을 수행합니다.
+1. `en` 폴더에서 다음 작업을 수행합니다.
 
    1. 지원할 로케일 이름으로 폴더 이름을 변경합니다. 예: `ar`
 
-   1. 속성 변경 `jcr:language` 값: 까지 `ar`(용) `ar` 폴더가 있어야 합니다).
+   1. 속성 `jcr:language` 값을 `ar` 폴더의 `ar`(으)로 변경합니다.
 
    >[!NOTE]
    >
-   >locale이 언어-국가 코드 조합인 경우, 예: `ar-DZ`을 클릭한 다음 폴더 이름 및 속성 값을 로 변경합니다. `ar-DZ`.
+   >locale이 언어-국가 코드 조합인 경우(예: `ar-DZ`) 폴더 이름과 속성 값을 `ar-DZ`(으)로 변경합니다.
 
-1. 복사 `login.jsp`:
+1. `login.jsp` 복사:
 
    * 변환 전: `/libs/livecycle/core/components/login`
-   * 끝 `/apps/livecycle/core/components/login`
+   * `/apps/livecycle/core/components/login`에
 
-1. 다음에 대한 코드 조각을 수정합니다. `/apps/livecycle/core/components/login/login.jsp`:
+1. `/apps/livecycle/core/components/login/login.jsp`에 대해 다음 코드 조각을 수정합니다.
 
-***로케일은 언어 코드입니다.***
+***로케일은 언어 코드입니다***
 
 ```jsp
 String browserLocale = "en";
@@ -197,23 +197,23 @@ String browserLocale = "en";
 
 ### 새 텍스트 추가 또는 기존 텍스트 수정 {#adding-new-text-or-modifying-existing-text}
 
-1. 복사 `i18n` 폴더:
+1. `i18n` 폴더 복사:
 
    * 변환 전: `/libs/livecycle/core/components/login`
-   * 끝 `/apps/livecycle/core/components/login`
+   * `/apps/livecycle/core/components/login`에
 
-1. 이제 속성 값을 수정합니다 `sling:message` 텍스트를 변경할 노드(원하는 로케일 코드 폴더 아래)의 입니다. 번역은 의 값에 언급된 키를 통해 수행됩니다. `sling:key` 노드의 속성입니다.
+1. 이제 텍스트를 변경할 노드의 `sling:message` 속성 값(원하는 로케일 코드 폴더 아래)을 수정합니다. 변환은 노드의 `sling:key` 속성 값에 언급된 키를 통해 수행됩니다.
 
 1. 새 키-값 쌍을 추가하려면 다음 작업을 수행합니다. 다음 스크린샷에서 예를 확인하십시오.
 
-   1. 유형의 노드 만들기 `sling:MessageEntry`를 클릭하거나 모든 로케일 폴더에서 기존 노드를 복사하고 이름을 변경합니다.
-   1. 복사 `login.jsp` :
+   1. 모든 로케일 폴더에서 `sling:MessageEntry` 유형의 노드를 만들거나 기존 노드를 복사하고 이름을 바꾸십시오.
+   1. `login.jsp` 복사:
 
       * 변환 전: `/libs/livecycle/core/components/login`
 
-      * 끝 `/apps/livecycle/core/components/login`
+      * `/apps/livecycle/core/components/login`에
 
-   1. 수정 `/apps/livecycle/core/components/login/login.jsp` 를 눌러 새로 추가된 텍스트를 통합합니다.
+   1. `/apps/livecycle/core/components/login/login.jsp`을(를) 수정하여 새로 추가된 텍스트를 통합합니다.
 
    ![새 키-값 쌍 추가](assets/capture_new.png)
 
@@ -240,28 +240,28 @@ String browserLocale = "en";
 
 ### 새 스타일 추가 또는 기존 스타일 수정 {#adding-new-style-or-modifying-existing-style}
 
-1. 복사 `login` 노드:
+1. `login` 노드 복사:
 
    * 변환 전: `/libs/livecycle/core/content`
-   * 끝 `/apps/livecycle/core/content`
+   * `/apps/livecycle/core/content`에
 
-1. 파일 삭제 `login.js` 및 `jquery-1.8.0.min.js`: 노드에서 `/apps/livecycle/core/content/login.`
+1. `/apps/livecycle/core/content/login.` 노드에서 `login.js` 및 `jquery-1.8.0.min.js` 파일을 삭제합니다.
 1. CSS 파일의 스타일을 수정합니다.
 1. 새 스타일을 추가하려면:
 
-   1. 새 스타일 추가 `/apps/livecycle/core/content/login/login.css`
-   1. 복사 `login.jsp`
+   1. `/apps/livecycle/core/content/login/login.css`에 새 스타일 추가
+   1. `login.jsp` 복사
 
       * 변환 전: `/libs/livecycle/core/components/login`
 
-      * 끝 `/apps/livecycle/core/components/login`
+      * `/apps/livecycle/core/components/login`에
 
-   1. 수정 `/apps/livecycle/core/components/login/login.jsp` 새로 추가된 스타일을 통합합니다.
+   1. `/apps/livecycle/core/components/login/login.jsp`을(를) 수정하여 새로 추가된 스타일을 통합합니다.
 
 
 예:
 
-* 다음에 추가 `/apps/livecycle/core/content/login/login.css`.
+* `/apps/livecycle/core/content/login/login.css`에 다음 내용을 추가하십시오.
 
 ```
 css.newLoginContentArea {
@@ -270,7 +270,7 @@ css.newLoginContentArea {
    }
 ```
 
-* 에서 다음 수정 `/apps/livecycle/core/components/login.jsp`.
+* `/apps/livecycle/core/components/login.jsp`에서 다음을 수정합니다.
 
 
   ```jsp
@@ -285,20 +285,20 @@ css.newLoginContentArea {
 
 >[!NOTE]
 >
->에 기존 이미지가 있는 경우 `/apps/livecycle/core/content/login` (다음에서 복사됨) `/libs/livecycle/core/content/login`)을 제거한 다음 CSS에서 해당 참조를 제거합니다.
+>`/apps/livecycle/core/content/login`의 기존 이미지(`/libs/livecycle/core/content/login`에서 복사됨)가 제거되면 CSS에서 해당 참조를 제거하십시오.
 
 ### 새 이미지 추가 {#add-new-images}
 
 1. 새 스타일을 추가하거나 기존 스타일을 수정하는 단계(위에 설명된)를 따릅니다.
-1. 새 이미지 추가 `/apps/livecycle/core/content/login`. 이미지를 추가하려면:
+1. `/apps/livecycle/core/content/login`에 새 이미지를 추가합니다. 이미지를 추가하려면:
 
    1. WebDAV 클라이언트를 설치합니다.
-   1. 다음으로 이동 `/apps/livecycle/core/content/login` webDAV 클라이언트를 사용하는 폴더입니다. 자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   1. webDAV 클라이언트를 사용하여 `/apps/livecycle/core/content/login` 폴더로 이동합니다. 자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)를 참조하십시오.
 
    1. 새 이미지를 추가합니다.
 
-1. 에서 새 스타일 추가 `/apps/livecycle/core/content/login/login.css,` 에 추가된 새 이미지에 해당 `/apps/livecycle/core/content/login`.
-1. 에서 새 스타일 사용 `login.jsp` 위치: `/apps/livecycle/core/components`.
+1. `/apps/livecycle/core/content/login`에 추가된 새 이미지에 해당하는 새 스타일을 `/apps/livecycle/core/content/login/login.css,`에 추가합니다.
+1. `login.jsp`의 `/apps/livecycle/core/components`에서 새 스타일을 사용합니다.
 
 예:
 

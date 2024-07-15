@@ -22,17 +22,17 @@ ht-degree: 2%
 >
 >Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-다음 **`Manage App`** 앱 대시보드의 타일을 사용하여 애플리케이션에 대한 세부 정보를 편집할 수 있습니다. 세부 정보 페이지를 열려면 다음을 클릭하십시오. **`Manage App`** 타일의 세부 정보 링크입니다. 다음 범위 내에서 **`Manage App`** 페이지에서 PhoneGap Application Configuration(config.xml) 설정을 편집하고 응용 프로그램을 여러 응용 프로그램 저장소에 제출하도록 준비할 수 있습니다.
+앱 대시보드의 **`Manage App`** 타일을 사용하여 응용 프로그램에 대한 세부 정보를 편집할 수 있습니다. 세부 정보 페이지를 열려면 **`Manage App`** 타일의 세부 정보 링크를 클릭합니다. **`Manage App`** 페이지에서 PhoneGap 응용 프로그램 구성(config.xml) 설정을 편집하고 응용 프로그램을 여러 응용 프로그램 저장소에 제출하도록 준비할 수 있습니다.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-## 이해 `Manage App` 타일 {#understanding-the-manage-app-tile}
+## `Manage App` 타일 이해 {#understanding-the-manage-app-tile}
 
-에서 각 타일로 드릴다운할 수 있습니다. **`Manage App`** 오른쪽 아래 모서리에 있는 &#39;...&#39;를 클릭하여 세부 정보를 보거나 편집할 수 있는 타일을 표시합니다.
+오른쪽 아래 모서리에 있는 &#39;...&#39;를 클릭하여 **`Manage App`** 타일의 각 타일을 자세히 들여다 보고 편집할 수 있습니다.
 
 ### 기본 탭 {#the-basic-tab}
 
-다음을 편집할 수 있습니다. **이름**, **작성자**, **간단한 설명**&#x200B;및 **설명** 앱에 대해 이 탭에서 확인할 수 있습니다.
+이 탭에서 앱의 **이름**, **작성자**, **간단한 설명** 및 **설명**&#x200B;을 편집할 수 있습니다.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -55,7 +55,7 @@ Apple App Store 또는 Google Play 스토어와 같은 각 공급업체 애플�
 >
 >AEM 확인 앱을 사용하면 스크린샷을 AEM의 앱 세부 사항으로 직접 보낼 수 있습니다.
 >
->다음을 참조하십시오 [AEM 확인을 위한 모바일 빠른 시작](/help/mobile/phonegap-mobile-quickstart.md) 을 참조하십시오.
+>자세한 내용은 [AEM 확인을 위한 모바일 빠른 시작](/help/mobile/phonegap-mobile-quickstart.md)을 참조하십시오.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -63,7 +63,7 @@ Apple App Store 또는 Google Play 스토어와 같은 각 공급업체 애플�
 
 >[!NOTE]
 >
->를 잘 알고 있으면 **`Manage App`** 타일, 참조 [앱 메타데이터 편집](/help/mobile/phonegap-editmetadata.md) 메타데이터를 보고 편집합니다.
+>**`Manage App`** 타일에 익숙해지면 [앱 메타데이터 편집](/help/mobile/phonegap-editmetadata.md)을 참조하여 메타데이터를 보고 편집하십시오.
 
 #### 공통 메타데이터 {#common-metadata}
 
@@ -73,11 +73,11 @@ Apple App Store 또는 Google Play 스토어와 같은 각 공급업체 애플�
 
 이 섹션에서는 콘텐츠 업데이트 서버 URL, 모바일 애플리케이션의 랜딩 페이지, 컴파일을 위한 PhoneGap 버전, 애플리케이션 버전, 이름, 설명 등을 정의합니다.
 
-**앱 버전** 는 애플리케이션의 작업 버전입니다. 일반적인 우수 사례는 3진수 표기법을 사용하고 첫 번째 릴리스 전에 1.0.0 미만에서 시작하는 것입니다.
+**앱 버전**&#x200B;은(는) 응용 프로그램의 작업 버전입니다. 일반적인 우수 사례는 3진수 표기법을 사용하고 첫 번째 릴리스 전에 1.0.0 미만에서 시작하는 것입니다.
 
-**PhoneGap 버전** 는 PhoneGap을 사용하여 응용 프로그램을 컴파일할 버전입니다. 가장 좋은 방법은 최신 기능과 버그 수정 사항을 얻을 수 있도록 현재 버전을 최신 상태로 유지하는 것입니다.
+**PhoneGap 버전**&#x200B;은 PhoneGap으로 응용 프로그램을 컴파일할 버전입니다. 가장 좋은 방법은 최신 기능과 버그 수정 사항을 얻을 수 있도록 현재 버전을 최신 상태로 유지하는 것입니다.
 
-**컨텐츠 업데이트 서버 URL** 는 애플리케이션이 ContentSync 업데이트를 호출하는 데 사용하는 URL입니다. Dispatcher URL로 설정하거나 Dispatcher를 사용하지 않는 경우 애플리케이션에 ContentSync 업데이트를 제공하는 데 사용되는 게시 인스턴스 중 하나로 설정해야 합니다.
+**Content Update Server URL**&#x200B;은 응용 프로그램에서 ContentSync 업데이트를 호출하는 데 사용하는 URL입니다. Dispatcher URL로 설정해야 합니다. 또는 Dispatcher을 사용하지 않는 경우 애플리케이션에 ContentSync 업데이트를 제공하는 데 사용되는 게시 인스턴스 중 하나로 설정해야 합니다.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -91,7 +91,7 @@ Apple App Store 또는 Google Play 스토어와 같은 각 공급업체 애플�
 
 PhoneGap config.xml에 정의된 모든 플랫폼에는 사용자 지정 플랫폼 속성을 포함할 수 있습니다. AEM 개발자는 이러한 속성을 캡처하려면 콘텐츠 구조를 기여해야 합니다. 플랫폼별 속성에 대한 예는 iOS에 대해 제공됩니다.
 
-이제 구성된 모든 플랫폼의 메타데이터가 의 고급 탭에 동시에 표시됩니다. `Manage App` 타일.
+이제 구성된 모든 플랫폼의 메타데이터가 `Manage App` 타일의 고급 탭에 동시에 표시됩니다.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ AEM에서 인식하지 못하는 플랫폼의 경우, AEM 개발자가 UI를 확
 
 Apple AppStore에서 배포를 위해 애플리케이션을 제출하려면 추가 메타데이터가 필요합니다. iOS 메타데이터 섹션은 Apple의 iTMSTransporter 도구에서 관련 Apple 개발자 계정에 메타데이터를 게시하는 데 사용할 수 있는 필수 정보를 수집하려고 합니다.
 
-Apple 관련 메타데이터를 가져오려면에 애플리케이션을 만듭니다. [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). 애플리케이션을 만들 때 Apple은 메타데이터를 확인하고 itunesconnect.apple.com에 업로드하기 위해 Apple iTMSTransporter 도구를 사용하려는 경우 iOS 메타데이터 섹션에 필요한 메타데이터를 생성합니다. 수집할 메타데이터를 가져오려면 iOS 관련 메타데이터를 작성할 필요가 없습니다. iOS과 일반 메타데이터를 병합하는 메타데이터를 내보내고 모든 스크린샷을 언제든지 다운로드할 수 있는 zip 파일로 수집할 수 있습니다.
+Apple 관련 메타데이터를 가져오려면 [https://itunesconnect.apple.com](https://itunesconnect.apple.com/)에서 응용 프로그램을 만드십시오. 애플리케이션을 만들 때 Apple은 메타데이터를 확인하고 itunesconnect.apple.com에 업로드하기 위해 Apple iTMSTransporter 도구를 사용하려는 경우 iOS 메타데이터 섹션에 필요한 메타데이터를 생성합니다. 수집할 메타데이터를 가져오려면 iOS 관련 메타데이터를 작성할 필요가 없습니다. iOS과 일반 메타데이터를 병합하는 메타데이터를 내보내고 모든 스크린샷을 언제든지 다운로드할 수 있는 zip 파일로 수집할 수 있습니다.
 
 다운로드한 zip 파일에는 metadata.xml을 검사할 수 있는 itmsp 파일이 포함되어 있습니다. itmsp 파일에는 연결된 모든 스크린샷과 함께 내보낸 메타데이터(metadata.xml 파일 내)가 포함되어 있습니다.
 
@@ -113,7 +113,7 @@ Apple 관련 메타데이터를 가져오려면에 애플리케이션을 만듭�
 
 #### Android™ 메타데이터 {#android-metadata}
 
-Android™ 플랫폼을 선택할 때 이 시점에서 설정할 수 있는 사용자 지정 메타데이터가 없습니다. 다운로드 버튼을 클릭하면 모든 메타데이터 및 관련 스크린샷이 포함된 속성 파일과 함께 zip 파일이 생성됩니다.
+Android™ 플랫폼을 선택할 때 현재 설정할 수 있는 사용자 지정 메타데이터가 없습니다. 다운로드 버튼을 클릭하면 모든 메타데이터 및 관련 스크린샷이 포함된 속성 파일과 함께 zip 파일이 생성됩니다.
 
 내보내기 기능은 공급업체별 애플리케이션 스토어에 입력하기 위해 애플리케이션 게시자에게 전달할 수 있는 스크린샷과 메타데이터를 편리하게 수집하는 방법을 제공하는 데 사용됩니다.
 
@@ -133,23 +133,23 @@ Content Update Server URL 속성은 게시 인스턴스를 가리켜야 하는 U
 
 ### 플러그인 탭 {#the-plugins-tab}
 
-다음 **플러그인** 탭에서는 앱과 연결된 플러그인에 대해 설명합니다. 이 정보는 빌드 중에 적절한 플러그인을 검색하는 데 사용됩니다.
+**플러그인** 탭에서는 앱과 관련된 플러그인에 대해 설명합니다. 이 정보는 빌드 중에 적절한 플러그인을 검색하는 데 사용됩니다.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### 스크린샷 탭 {#the-screenshots-tab}
 
-다음 **스크린샷** 탭에는 다른 플랫폼에서 지원되는 스크린샷 해상도가 표시됩니다.
+**스크린샷** 탭에는 다른 플랫폼에서 지원되는 스크린샷 해상도가 표시됩니다.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
 >[!NOTE]
 >
->스크린샷을 추가하거나 제거하려면 다음을 참조하십시오. [앱 메타데이터 편집](/help/mobile/phonegap-editmetadata.md).
+>스크린샷을 추가하거나 제거하려면 [앱 메타데이터 편집](/help/mobile/phonegap-editmetadata.md)을 참조하십시오.
 
 ### 인증 탭 {#the-authentication-tab}
 
-다음 **인증** 탭에서는 응용 프로그램과 연결할 OAuth 클라이언트를 선택할 수 있고 개발자가 Adobe Experience Manager의 OAuth 인증을 사용할 수 있습니다.
+**인증** 탭을 사용하면 응용 프로그램과 연결할 OAuth 클라이언트를 선택할 수 있으며 개발자가 Adobe Experience Manager의 OAuth 인증을 사용할 수 있습니다.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 

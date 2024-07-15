@@ -29,7 +29,7 @@ ht-degree: 2%
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">include</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component">포함</a></td>
    <td>아니요</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td> 속성</td>
-   <td>다음을 참조하십시오 <a href="working-with-qna.md">Q&amp;A 포럼 기능</a></td>
+   <td><a href="working-with-qna.md">Q&amp;A 포럼 기능</a>을 참조하세요.</td>
   </tr>
  </tbody>
 </table>
@@ -57,26 +57,26 @@ ht-degree: 2%
 
 * [QnA API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [QnA 엔드포인트](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [QnA 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 
 ### QnA 기능 {#qna-function}
 
-다음을 포함하는 커뮤니티 사이트 구조 [QnA 기능](functions.md#qna-function) 이(가) 구성되었습니다. `QnA` 중재 및 태깅에 영향을 주는 구성 요소 및 설정입니다. QnA 기능은 [권한이 있는 구성원 사용자 그룹](users.md#privileged-members-group).
+[QnA 함수](functions.md#qna-function)을(를) 포함하는 커뮤니티 사이트 구조에는 구성된 `QnA` 구성 요소와 중재 및 태깅에 영향을 주는 설정이 있습니다. QnA 기능은 [권한이 있는 구성원 사용자 그룹](users.md#privileged-members-group)을(를) 식별하는 것을 지원합니다.
 
 ### QnA 포럼 게시물 액세스(UGC) {#accessing-qna-forum-posts-ugc}
 
 UGC는 중재에 대한 표준 방법 중 하나를 사용하여 중재되어야 합니다.
-다음을 참조하십시오 [사용자 생성 컨텐츠 중재](moderate-ugc.md).
+[사용자 생성 콘텐츠 중재](moderate-ugc.md)를 참조하십시오.
 
-AEM 6.1 커뮤니티에서 [공동 저장소](working-with-srp.md) ugc의 경우 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 관계없이 UGC에 프로그래밍 방식으로 액세스하는 기능이 포함됩니다.
+AEM 6.1 커뮤니티에서 UGC에 대한 [일반 저장소](working-with-srp.md)를 사용하면 선택한 저장소 옵션(예: ASRP, MSRP 또는 JSRP)에 관계없이 UGC에 프로그래밍 방식으로 액세스할 수 있습니다.
 
 **저장소에서 UGC의 위치 및 형식은 경고 없이 변경될 수 있습니다**.
 
 다음을 참조하십시오.
 
 * [저장소 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요.
-* [SRP 및 UGC 필수 패키지](srp-and-ugc.md) - SRP 유틸리티 메서드 및 예제.
-* [SRP를 사용하여 UGC에 액세스](accessing-ugc-with-srp.md) - 코딩 지침
+* [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 메서드 및 예제.
+* [SRP를 사용하여 UGC에 액세스](accessing-ugc-with-srp.md) - 코딩 지침.
 * [SocialUtils 리팩터링](socialutils.md) - 더 이상 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑합니다.

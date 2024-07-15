@@ -1,6 +1,6 @@
 ---
-title: 구성 요소 및 서비스 Java&trade, APIQuick Start(SOAP)
-description: Java&trade; API 빠른 시작(SOAP)을 사용하여 AEM Forms 구성 요소 및 서비스를 프로그래밍 방식으로 조작하는 방법에 대해 알아봅니다.
+title: 구성 요소 및 서비스 Java&trade; APIQuick 시작(SOAP)
+description: Java&trade; API 빠른 시작(SOAP)을 사용하여 AEM Forms 구성 요소 및 서비스를 프로그래밍 방식으로 조작하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -42,7 +42,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍의 빠른 시작은 JBoss® 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX®와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms를 사용한 프로그래밍의 빠른 시작은 JBoss® 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX®와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 구성 요소 배포 {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-다음 Java™ 예제에서는 라는 JAR 파일을 기반으로 하는 구성 요소를 배포합니다 *adobe-emailSample-dsc.jar*.
+다음 Java™ 예제에서는 *adobe-emailSample-dsc.jar*&#x200B;이라는 JAR 파일을 기반으로 하는 구성 요소를 배포합니다.
 
 ```java
  /* 
@@ -152,7 +152,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 서비스 실행 컨텍스트 설정 {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-다음 Java™ 코드 예제에서는 실행 호출자 실행 컨텍스트를 라는 예제 서비스로 설정합니다. *EncryptDocument*.
+다음 Java™ 코드 예제에서는 실행 호출자 실행 컨텍스트를 *EncryptDocument*(이)라는 예제 서비스로 설정합니다.
 
 ```java
  /* 
@@ -357,7 +357,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 서비스 시작 {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-다음 Java™ 코드 예제에서는 라는 서비스를 시작합니다. *SendEmailService*.
+다음 Java™ 코드 예제에서는 *SendEmailService*(이)라는 서비스를 시작합니다.
 
 ```java
  package com.adobe.sample.servicemanager; 

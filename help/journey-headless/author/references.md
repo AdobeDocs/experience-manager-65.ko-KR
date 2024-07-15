@@ -126,7 +126,7 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
       * [콘텐츠 조각 모델 - 속성](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * 시작 안내서
-   * [에셋 폴더 헤드리스 빠른 시작 안내서 만들기](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [Assets 폴더 헤드리스 빠른 시작 안내서 만들기](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [AEM Headless 콘텐츠 설계자 여정](/help/journey-headless/architect/overview.md)
 

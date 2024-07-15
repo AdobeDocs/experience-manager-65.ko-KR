@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # 적응형 양식 조각 참조{#reference-adaptive-form-fragments}
 
-[적응형 양식 단편](../../forms/using/adaptive-form-fragments.md) 는 필드 그룹이거나 양식을 만들 때 사용할 수 있는 필드 그룹이 포함된 패널입니다. 이를 통해 양식을 쉽고 빠르게 만들 수 있습니다. 사이드바의 에셋 브라우저를 사용하여 적응형 양식 조각을 양식으로 드래그 앤 드롭할 수 있으며 양식 편집기에서 편집할 수 있습니다.
+[적응형 양식 조각](../../forms/using/adaptive-form-fragments.md)은(는) 필드 그룹이거나 양식을 만들 때 사용할 수 있는 필드 그룹이 포함된 패널입니다. 이를 통해 양식을 쉽고 빠르게 만들 수 있습니다. 사이드바의 에셋 브라우저를 사용하여 적응형 양식 조각을 양식으로 드래그 앤 드롭할 수 있으며 양식 편집기에서 편집할 수 있습니다.
 
-적응형 양식 작성자의 경우 다음에서 참조 조각을 제공합니다. [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 여기에는 다음 조각이 포함됩니다.
+적응형 양식 작성자의 경우 참조 조각이 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)에 제공됩니다. 여기에는 다음 조각이 포함됩니다.
 
 * 주소
 * 연락처 정보
@@ -32,7 +32,7 @@ ht-degree: 1%
 * 약관
 * 스크리블 사용 약관
 
-패키지를 설치하면 Forms 및 문서 아래에 참조 조각이 포함된 참조 조각 폴더가 만들어집니다. 패키지 설치는 다음을 참조하십시오. [패키지를 사용하여 작업하는 방법](/help/sites-administering/package-manager.md).
+패키지를 설치하면 Forms 및 문서 아래에 참조 조각이 포함된 참조 조각 폴더가 만들어집니다. 패키지를 설치하려면 [패키지를 사용하여 작업하는 방법](/help/sites-administering/package-manager.md)을 참조하세요.
 
 ![나열된 모든 조각](assets/ootb-frags.png)
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 우편 주소를 지정하는 필드를 포함합니다. 사용 가능한 필드는 주소, 우편 번호, 도시, 주 및 국가입니다. 또한 지정된 미국 우편번호에 대해 시 및 주를 채우는 사전 구성된 웹 서비스가 포함되어 있습니다.
 
-![주소 단편](assets/address.png)
+![주소 조각](assets/address.png)
 
 <!--[Click to enlarge
 
@@ -85,7 +85,7 @@ ht-degree: 1%
 
 고용 내역을 캡처하는 필드를 포함합니다. 여러 조직을 추가할 수 있습니다.
 
-![고용 내역 조각](assets/emp-history.png)
+![고용 기록 조각](assets/emp-history.png)
 
 <!--[Click to enlarge
 
@@ -115,7 +115,7 @@ ht-degree: 1%
 
 사용자가 양식을 제출하기 전에 동의할 약관을 지정합니다.
 
-![사용 약관 조각](assets/tnc.png)
+![약관 조각](assets/tnc.png)
 
 <!--[Click to enlarge
 

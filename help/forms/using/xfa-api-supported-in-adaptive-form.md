@@ -141,39 +141,39 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
    <td><p>적응형 양식의 짧은 설명 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>캡션<em> (모든 필드 유형)</em></p> </td>
+   <td><p>caption<em>(모든 필드 형식)</em></p> </td>
    <td><p>적응형 양식의 제목 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>displayFormat<em> (모든 필드 유형)</em></p> </td>
+   <td><p>displayFormat<em>(모든 필드 형식)</em></p> </td>
    <td><p>적응형 양식의 표시 패턴에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>rawValue<em> (모든 필드 유형)</em></p> </td>
+   <td><p>rawValue<em>(모든 필드 형식)</em></p> </td>
    <td><p>적응형 양식의 값 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>개 항목<em> (목록 상자, 확인란)</em></p> </td>
+   <td><p>항목<em>(목록 상자, 확인란)</em></p> </td>
    <td><p>적응형 양식의 옵션 속성에 매핑됩니다. Options 표현식을 사용하여 재정의할 수 있습니다.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (텍스트 필드)</em></p> </td>
+   <td><p>maxChar<em>(텍스트 필드)</em></p> </td>
    <td><p>적응형 양식의 최대 문자 허용 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>여러 행<em> (텍스트 필드)</em></p> </td>
+   <td><p>여러 줄 <em>(텍스트 필드)</em></p> </td>
    <td><p>적응형 양식의 여러 줄 허용 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>FracDigit<em> (숫자 필드, 십진수 필드)</em></p> </td>
+   <td><p>fracDigit<em>(숫자 필드, 십진수 필드)</em></p> </td>
    <td><p>적응형 양식의 Frac 자릿수 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>리드 숫자<em> (숫자 필드, 십진수 필드)</em></p> </td>
+   <td><p>leadDigit<em>(숫자 필드, 십진수 필드)</em></p> </td>
    <td><p>적응형 양식의 잠재 고객 수 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>다중 선택<em> (목록 상자)</em></p> </td>
+   <td><p>multiSelect<em>(목록 상자)</em></p> </td>
    <td><p>적응형 양식의 다중 선택 허용 속성에 매핑됩니다.</p> </td>
   </tr>
  </tbody>

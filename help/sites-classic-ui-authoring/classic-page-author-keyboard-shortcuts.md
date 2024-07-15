@@ -18,11 +18,11 @@ ht-degree: 14%
 
 # 페이지 편집 시 키보드 단축키{#keyboard-shortcuts-when-editing-pages}
 
-AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지 편집 시 적용되고 일부는 [콘솔 사용](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지를 편집할 때 적용되고 일부는 [콘솔 사용](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)에 적용됩니다.
 
 >[!NOTE]
 >
->다음 표에서 의 키 조합에 대해 **단축키** 열, Ctrl 키와 Command 키가 모두 macOS에서 작동합니다.
+>다음 표에서 **바로 가기** 열의 키 조합의 경우 Ctrl 키와 Command 키가 모두 macOS에서 작동합니다.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>선택한 단락을 잘라냅니다.<strong><br /> 참고:</strong> 잘라낸 단락은 새 위치에 붙여넣을 때까지 사라지지 않습니다.</td>
+   <td>선택한 단락을 잘라냅니다.<strong><br /> 참고:</strong> 잘라낸 단락은 새 위치에 붙여 넣을 때까지 사라지지 않습니다.</td>
   </tr>
   <tr>
    <td> </td>
@@ -99,7 +99,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Alt-c</code></strong></td>
-   <td>다음을 표시합니다. <a href="/help/sites-administering/client-context.md">client context</a>.</td>
+   <td><a href="/help/sites-administering/client-context.md">클라이언트 컨텍스트</a>를 표시합니다.</td>
   </tr>
   <tr>
    <td>리치 텍스트 편집기<br /> </td>

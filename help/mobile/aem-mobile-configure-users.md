@@ -34,7 +34,7 @@ ht-degree: 2%
 
 1. &#39;app-authors&#39;라는 사용자 그룹 만들기:
 
-   사용 Admin Console으로 이동합니다. [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   사용자 Admin Console([http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html))로 이동합니다.
 
    사용자 그룹 콘솔 내에서 &#39;+&#39; 버튼을 선택하여 그룹을 만듭니다.
 
@@ -44,11 +44,11 @@ ht-degree: 2%
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. 앱 작성자 사용자 그룹을 만들었으므로 이제 다음을 통해 개별 팀원을 이 새 그룹에 추가할 수 있습니다. [사용 Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. 앱 작성자 사용자 그룹을 만들었으므로 이제 [사용자 Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md)을 통해 개별 팀원을 이 새 그룹에 추가할 수 있습니다.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. 다음을 AEM 콘텐츠 작성자 그룹에 추가할 수 있습니다.
+1. 다음을 AEM의 콘텐츠 작성자 그룹에 추가할 수 있습니다.
 
    (읽기) 일자
 
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 ### AEM Mobile 애플리케이션 관리자 그룹(app-admins 그룹) {#aem-mobile-application-administrators-group-app-admins-group}
 
-app-admins 그룹의 구성원은 app-authors에 포함된 것과 동일한 권한으로 애플리케이션 콘텐츠를 작성할 수 있습니다 **및** 또한 다음에 대한 책임도 있습니다.
+app-admins 그룹의 구성원은 app-authors **AND**&#x200B;에 포함된 권한과 동일한 권한으로 응용 프로그램 콘텐츠를 작성할 수 있으며, 다음 작업도 담당합니다.
 
 * 응용 프로그램 스테이징, 게시 및 지우기 ContentSync OTA 업데이트
 
@@ -83,7 +83,7 @@ app-admins 그룹의 구성원은 app-authors에 포함된 것과 동일한 권�
    >
    >워크플로우 사용자는 PhoneGap Build 서비스를 사용하여 원격 빌드를 수행해야 합니다.
 
-1. 다음 위치로 이동 [권한 콘솔](http://localhost:4502/useradmin) 및 cloudservices 관리에 대한 권한 추가
+1. [권한 콘솔](http://localhost:4502/useradmin)(으)로 이동하여 cloudservices를 관리할 권한을 추가하십시오.
 
    * /etc/cloudservices/mobileservices에서 (읽기, 수정, 만들기, 삭제, 복제)
 

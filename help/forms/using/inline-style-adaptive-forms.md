@@ -24,14 +24,14 @@ ht-degree: 13%
 | AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/inline-style-adaptive-forms.html) |
 | AEM 6.5 | 이 문서 |
 
-다음을 사용하여 스타일을 지정하여 적응형 양식의 전체 모양과 스타일을 정의할 수 있습니다. [테마 편집기](../../forms/using/themes.md). 또한 개별 적응형 양식 구성 요소에 인라인 CSS 스타일을 적용하고 변경 사항을 즉시 미리 볼 수 있습니다. 인라인 스타일은 테마에 제공된 스타일을 재정의합니다.
+[테마 편집기](../../forms/using/themes.md)를 사용하여 스타일을 지정하여 적응형 양식의 전체 모양과 스타일을 정의할 수 있습니다. 또한 개별 적응형 양식 구성 요소에 인라인 CSS 스타일을 적용하고 변경 사항을 즉시 미리 볼 수 있습니다. 인라인 스타일은 테마에 제공된 스타일을 재정의합니다.
 
 ## 인라인 CSS 속성 적용 {#apply-inline-css-properties}
 
 구성 요소에 인라인 스타일을 추가하려면 다음 작업을 수행하십시오.
 
-1. 양식 편집기에서 양식을 열고 모드를 스타일 모드로 변경합니다. 모드를 스타일 모드로 변경하려면 페이지 도구 모음에서 를 선택합니다 ![캔버스 드롭다운](assets/canvas-drop-down.png) > **스타일**.
-1. 페이지에서 구성 요소를 선택하고 편집 버튼을 선택합니다 ![편집 단추](assets/edit-button.png). 스타일 속성이 사이드바에서 열립니다.
+1. 양식 편집기에서 양식을 열고 모드를 스타일 모드로 변경합니다. 모드를 스타일 모드로 변경하려면 페이지 도구 모음에서 ![캔버스 드롭다운](assets/canvas-drop-down.png) > **스타일**&#x200B;을 선택합니다.
+1. 페이지에서 구성 요소를 선택하고 편집 단추 ![편집 단추](assets/edit-button.png)를 선택합니다. 스타일 속성이 사이드바에서 열립니다.
 
    사이드바의 양식 계층 구조 트리에서 구성 요소를 선택할 수도 있습니다. 양식 계층 구조 트리는 사이드바에서 양식 객체로 사용할 수 있습니다.
 
@@ -49,7 +49,7 @@ ht-degree: 13%
    * 고급(구성 요소에 대한 사용자 지정 CSS를 쓸 수 있음)
 
 1. 마찬가지로 구성 요소의 다른 부분(예: 위젯, 캡션 및 도움말)에 스타일을 적용할 수 있습니다.
-1. 선택 **완료** 변경 사항을 확인하거나 **취소** 변경 내용을 취소합니다.
+1. **완료**&#x200B;를 선택하여 변경 내용을 확인하거나 **취소**&#x200B;를 선택하여 변경 내용을 취소합니다.
 
 ## 예: 필드 구성 요소의 인라인 스타일 {#example-inline-styles-for-a-field-component}
 
@@ -102,7 +102,7 @@ ht-degree: 13%
  </tbody>
 </table>
 
-![인라인 스타일이 적용된 후 텍스트 상자 스타일](assets/applied-style.png)
+![인라인 스타일을 적용한 후 텍스트 상자 스타일](assets/applied-style.png)
 
 인라인 스타일 속성을 적용한 후 텍스트 상자 구성 요소
 

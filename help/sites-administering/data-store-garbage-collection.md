@@ -28,15 +28,15 @@ AEM은 저장소를 여러 내부 및 하우스키핑 활동을 위한 저장소
 * 패키지 빌드 및 다운로드
 * 게시 복제를 위해 생성된 임시 파일
 * 워크플로우 페이로드
-* DAM 렌더링 중에 임시로 만들어진 자산
+* Assets이 DAM 렌더링 중에 일시적으로 생성됨
 
-이러한 임시 개체가 데이터 저장소에 저장해야 할 만큼 충분히 크고 개체가 결국 사용 중단되면 데이터 저장소 레코드 자체는 &quot;가비지&quot;로 유지됩니다. 일반적인 WCM 작성자/게시 애플리케이션에서 이 유형의 가장 큰 가비지 소스는 일반적으로 게시 활성화 프로세스입니다. 데이터가 Publish에 복제되는 경우 데이터가 먼저 &quot;Durbo&quot;라는 효율적인 데이터 형식으로 컬렉션에 수집되고 아래의 저장소에 저장되는 경우 `/var/replication/data`. 데이터 번들은 종종 데이터 저장소에 대한 임계 크기보다 크므로 데이터 저장소 레코드로 저장됩니다. 복제가 완료되면 의 노드가 `/var/replication/data` 가 삭제되지만 데이터 저장소 레코드는 &quot;가비지&quot;로 유지됩니다.
+이러한 임시 개체가 데이터 저장소에 저장해야 할 만큼 충분히 크고 개체가 결국 사용 중단되면 데이터 저장소 레코드 자체는 &quot;가비지&quot;로 유지됩니다. 일반적인 WCM 작성자/게시 애플리케이션에서 이 유형의 가장 큰 가비지 소스는 일반적으로 게시 활성화 프로세스입니다. 데이터가 Publish에 복제되는 경우 데이터가 &quot;Durbo&quot;라는 효율적인 데이터 형식으로 컬렉션에 처음 수집되고 `/var/replication/data` 아래의 저장소에 저장되는 경우입니다. 데이터 번들은 종종 데이터 저장소에 대한 임계 크기보다 크므로 데이터 저장소 레코드로 저장됩니다. 복제가 완료되면 `/var/replication/data`의 노드가 삭제되지만 데이터 저장소 레코드는 &quot;가비지&quot;로 유지됩니다.
 
 복구 가능한 또 다른 가비지 소스는 패키지입니다. 다른 모든 것과 마찬가지로 패키지 데이터는 저장소에 저장되므로 데이터 저장소의 4KB 이상 패키지에 대해 저장됩니다. 개발 프로젝트 과정에서 또는 시스템을 유지 관리하는 동안 시간이 지남에 따라 패키지를 여러 번 빌드 및 다시 빌드할 수 있으며 각 빌드는 이전 빌드의 레코드를 고립시키는 새 데이터 저장소 레코드를 생성합니다.
 
 ## 데이터 저장소 가비지 수집은 어떻게 작동합니까? {#how-does-data-store-garbage-collection-work}
 
-저장소가 외부 데이터 저장소로 구성된 경우 [데이터 저장소 가비지 수집이 자동으로 실행됩니다.](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) 주별 유지 관리 창의 일부로 사용됩니다. 시스템 관리자는 다음과 같은 작업을 수행할 수도 있습니다 [수동으로 데이터 저장소 가비지 수집 실행](#running-data-store-garbage-collection) 필요에 따라. 일반적으로 데이터 저장소 가비지 수집은 주기적으로 수행되는 것이 좋지만 데이터 저장소 가비지 수집을 계획할 때는 다음 요소를 고려해야 합니다.
+저장소가 외부 데이터 저장소로 구성된 경우 [데이터 저장소 가비지 수집이 자동으로 실행됩니다](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection). 시스템 관리자는 필요에 따라 데이터 저장소 가비지 수집을 수동으로 [실행](#running-data-store-garbage-collection)할 수도 있습니다. 일반적으로 데이터 저장소 가비지 수집은 주기적으로 수행되는 것이 좋지만 데이터 저장소 가비지 수집을 계획할 때는 다음 요소를 고려해야 합니다.
 
 * 데이터 저장소 가비지 수집은 시간이 걸리고 성능에 영향을 줄 수 있으므로 적절하게 계획해야 합니다.
 * 데이터 저장소 가비지 레코드를 제거해도 정상 성능에 영향을 주지 않으므로 성능 최적화는 아닙니다.
@@ -61,10 +61,10 @@ AEM은 저장소를 여러 내부 및 하우스키핑 활동을 위한 저장소
 
 AEM이 실행 중인 데이터 저장소 설정에 따라 데이터 저장소 가비지 수집을 실행하는 세 가지 방법이 있습니다.
 
-1. 경유 [개정 정리](/help/sites-deploying/revision-cleanup.md) - 일반적으로 노드 저장소 정리에 사용되는 가비지 수집 메커니즘.
+1. [수정 정리](/help/sites-deploying/revision-cleanup.md)를 통해 - 일반적으로 노드 저장소 정리에 사용되는 가비지 수집 메커니즘입니다.
 
-1. 경유 [데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) - 작업 대시보드에서 사용할 수 있는 외부 데이터 저장소용 가비지 수집 메커니즘입니다.
-1. 를 통해 [JMX 콘솔](/help/sites-administering/jmx-console.md).
+1. [데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard)을 통해 - 작업 대시보드에서 사용할 수 있는 외부 데이터 저장소용 가비지 수집 메커니즘입니다.
+1. [JMX 콘솔](/help/sites-administering/jmx-console.md)을 통해.
 
 TarMK가 노드 저장소와 데이터 저장소로 모두 사용되는 경우, 개정 정리는 노드 저장소와 데이터 저장소의 가비지 수집에 사용될 수 있습니다. 그러나 파일 시스템 데이터 저장소와 같이 외부 데이터 저장소가 구성된 경우 데이터 저장소 가비지 수집은 수정 정리 와 별도로 명시적으로 트리거되어야 합니다. 데이터 저장소 가비지 수집은 작업 대시보드 또는 JMX 콘솔을 통해 트리거할 수 있습니다.
 
@@ -102,18 +102,18 @@ TarMK가 노드 저장소와 데이터 저장소로 모두 사용되는 경우, 
 
 ### 작업 대시보드를 통해 데이터 저장소 가비지 수집 실행 {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-내장된 주간 유지 관리 창(다음을 통해 사용 가능) [작업 대시보드](/help/sites-administering/operations-dashboard.md)에는 일요일 오전 1시에 데이터 저장소 가비지 수집을 트리거하는 기본 제공 작업이 포함되어 있습니다.
+[작업 대시보드](/help/sites-administering/operations-dashboard.md)를 통해 사용할 수 있는 기본 제공 주별 유지 관리 창에는 일요일 오전 1시에 데이터 저장소 가비지 수집을 트리거하는 기본 제공 작업이 포함되어 있습니다.
 
 이 시간 외에 데이터 저장소 가비지 수집을 실행해야 하는 경우 작업 대시보드를 통해 수동으로 트리거할 수 있습니다.
 
 데이터 저장소 가비지 수집을 실행하기 전에 백업이 실행되고 있지 않은지 확인해야 합니다.
 
-1. 다음 방법으로 작업 대시보드 열기 **탐색** > **도구** > **작업** > **유지 관리**.
-1. 다음을 클릭합니다. **주간 유지 관리 창**.
+1. **탐색** > **도구** > **작업** > **유지 관리**&#x200B;로 작업 대시보드를 엽니다.
+1. **주별 유지 관리 기간**&#x200B;을 클릭합니다.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. 다음 항목 선택 **데이터 저장소 가비지 수집** 작업을 클릭한 다음 **실행** 아이콘.
+1. **데이터 저장소 가비지 수집** 작업을 선택한 다음 **실행** 아이콘을 클릭합니다.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -123,11 +123,11 @@ TarMK가 노드 저장소와 데이터 저장소로 모두 사용되는 경우, 
 
 >[!NOTE]
 >
->데이터 저장소 가비지 수집 작업은 외부 파일 데이터 저장소를 구성한 경우에만 표시됩니다. 다음을 참조하십시오 [AEM 6에서 노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md#file-data-store) 파일 데이터 저장소를 설정하는 방법에 대한 정보를 제공합니다.
+>데이터 저장소 가비지 수집 작업은 외부 파일 데이터 저장소를 구성한 경우에만 표시됩니다. 파일 데이터 저장소를 설정하는 방법에 대한 자세한 내용은 [AEM에서 노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md#file-data-store)을 참조하십시오.
 
 ### JMX 콘솔을 통해 데이터 저장소 가비지 수집 실행 {#running-data-store-garbage-collection-via-the-jmx-console}
 
-이 섹션은 JMX 콘솔을 통해 데이터 저장소 가비지 수집을 수동으로 실행하는 방법에 대한 것입니다. 외부 데이터 저장소 없이 설치가 설정된 경우 설치에 적용되지 않습니다. 대신 아래에서 개정 정리를 실행하는 방법에 대한 지침을 참조하십시오. [저장소 유지 관리](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+이 섹션은 JMX 콘솔을 통해 데이터 저장소 가비지 수집을 수동으로 실행하는 방법에 대한 것입니다. 외부 데이터 저장소 없이 설치가 설정된 경우 설치에 적용되지 않습니다. 대신 [저장소 유지 관리](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)에서 수정 정리 작업을 실행하는 방법에 대한 지침을 참조하십시오.
 
 >[!NOTE]
 >
@@ -135,16 +135,16 @@ TarMK가 노드 저장소와 데이터 저장소로 모두 사용되는 경우, 
 
 가비지 수집을 실행하려면:
 
-1. Apache Felix OSGi 관리 콘솔에서 다음을 강조 표시합니다. **기본** 탭하고 선택 **JMX** 다음 메뉴를 참조하십시오.
-1. 그런 다음 을(를) 검색하고 **저장소 관리자** MBean(또는 다음으로 이동) `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
-1. 클릭 **startDataStoreGC(부울 markOnly)**.
-1. &quot; 입력`true`에 대해 &quot; `markOnly` 필요한 경우 매개 변수:
+1. Apache Felix OSGi 관리 콘솔에서 **Main** 탭을 강조 표시하고 다음 메뉴에서 **JMX**&#x200B;을(를) 선택합니다.
+1. 그런 다음 **저장소 관리자** MBean을 검색하고 클릭합니다(또는 `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`(으)로 이동).
+1. **startDataStoreGC(부울 markOnly)**&#x200B;을(를) 클릭합니다.
+1. 필요한 경우 `markOnly` 매개 변수에 &quot;`true`&quot;을(를) 입력하십시오.
 
    | **옵션** | **설명** |
    |---|---|
    | 부울 markOnly | 표시 및 스윕 작업에서 참조를 표시하고 스윕하지 않으려면 true로 설정합니다. 이 모드는 기본 BlobStore가 여러 다른 저장소 간에 공유될 때 사용됩니다. 다른 모든 경우에 대해 전체 가비지 수집을 수행하려면 false로 설정하십시오. |
 
-1. 클릭 **호출**. CRX는 가비지 수집을 실행하고 완료 시기를 나타냅니다.
+1. **호출**&#x200B;을 클릭합니다. CRX은 가비지 수집을 실행하고 완료 시기를 나타냅니다.
 
 >[!NOTE]
 >
@@ -152,13 +152,13 @@ TarMK가 노드 저장소와 데이터 저장소로 모두 사용되는 경우, 
 
 >[!NOTE]
 >
->데이터 저장소 가비지 수집 작업은 외부 파일 데이터 저장소를 구성한 경우에만 시작됩니다. 외부 파일 데이터 저장소가 구성되지 않은 경우 작업에서 메시지를 반환합니다 `Cannot perform operation: no service of type BlobGCMBean found` 호출 후. 다음을 참조하십시오 [AEM 6에서 노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md#file-data-store) 파일 데이터 저장소를 설정하는 방법에 대한 정보를 제공합니다.
+>데이터 저장소 가비지 수집 작업은 외부 파일 데이터 저장소를 구성한 경우에만 시작됩니다. 외부 파일 데이터 저장소가 구성되지 않은 경우 호출한 후 작업에서 `Cannot perform operation: no service of type BlobGCMBean found` 메시지를 반환합니다. 파일 데이터 저장소를 설정하는 방법에 대한 자세한 내용은 [AEM에서 노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md#file-data-store)을 참조하십시오.
 
 ## 데이터 저장소 가비지 수집 자동화 {#automating-data-store-garbage-collection}
 
 가능하면 시스템에 부하가 적은 경우(예: 아침에) 데이터 저장소 가비지 수집을 실행해야 합니다.
 
-내장된 주간 유지 관리 창(다음을 통해 사용 가능) [작업 대시보드](/help/sites-administering/operations-dashboard.md)에는 일요일 오전 1시에 데이터 저장소 가비지 수집을 트리거하는 기본 제공 작업이 포함되어 있습니다. 또한 현재 실행 중인 백업이 없는지 확인해야 합니다. 유지 관리 창의 시작은 필요에 따라 대시보드를 통해 사용자 정의할 수 있습니다.
+[작업 대시보드](/help/sites-administering/operations-dashboard.md)를 통해 사용할 수 있는 기본 제공 주별 유지 관리 창에는 일요일 오전 1시에 데이터 저장소 가비지 수집을 트리거하는 기본 제공 작업이 포함되어 있습니다. 또한 현재 실행 중인 백업이 없는지 확인해야 합니다. 유지 관리 창의 시작은 필요에 따라 대시보드를 통해 사용자 정의할 수 있습니다.
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ TarMK가 노드 저장소와 데이터 저장소로 모두 사용되는 경우, 
 
 >[!CAUTION]
 >
->다음 예에서 `curl` 명령에 인스턴스에 대해 다양한 매개 변수를 구성해야 할 수 있습니다. 예: 호스트 이름( `localhost`), 포트( `4502`), 관리자 암호( `xyz`)와 실제 데이터 저장소 가비지 수집에 대한 다양한 매개 변수.
+>다음 예제 `curl`에서는 인스턴스에 대해 다양한 매개 변수를 구성해야 할 수 있습니다. 예: 호스트 이름( `localhost`), 포트( `4502`), 관리자 암호( `xyz`) 및 실제 데이터 저장소 가비지 수집에 대한 다양한 매개 변수.
 
 다음은 명령줄을 통해 데이터 저장소 가비지 수집을 호출하는 curl 명령의 예입니다.
 
@@ -182,11 +182,11 @@ curl 명령은 즉시 반환됩니다.
 
 데이터 저장소 일관성 검사는 누락되었지만 여전히 참조되는 모든 데이터 저장소 바이너리를 보고합니다. 일관성 검사를 시작하려면 다음 단계를 수행합니다.
 
-1. JMX 콘솔로 이동합니다. JMX 콘솔 사용 방법에 대한 자세한 내용은 [이 문서](/help/sites-administering/jmx-console.md#using-the-jmx-console).
-1. 검색 **BlobGarbageCollection** Mbean을 누르고 클릭합니다.
-1. 다음을 클릭합니다. `checkConsistency()` 링크를 클릭합니다.
+1. JMX 콘솔로 이동합니다. JMX 콘솔 사용 방법에 대한 자세한 내용은 [이 문서](/help/sites-administering/jmx-console.md#using-the-jmx-console)를 참조하십시오.
+1. **BlobGarbageCollection** Mbean을 검색하고 클릭합니다.
+1. `checkConsistency()` 링크를 클릭합니다.
 
-일관성 검사가 완료되면 누락된 것으로 보고된 바이너리 수가 표시됩니다. 숫자가 0보다 큰 경우 `error.log` 누락된 바이너리에 대한 자세한 내용은 을 참조하십시오.
+일관성 검사가 완료되면 누락된 것으로 보고된 바이너리 수가 표시됩니다. 숫자가 0보다 크면 `error.log`에서 누락된 바이너리에 대한 자세한 내용을 확인하십시오.
 
 다음은 누락된 바이너리가 로그에 보고되는 방식에 대한 예입니다.
 

@@ -31,11 +31,11 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 * 가장 대상
 
-   * 포함 [다음 사용자로 가장](/help/sites-administering/security.md#impersonating-another-user) 사용자가 다른 사용자를 대신하여 작업할 수 있는 기능입니다.
+   * [다음 사용자로 가장](/help/sites-administering/security.md#impersonating-another-user) 기능을 사용하면 사용자가 다른 사용자를 대신하여 작업할 수 있습니다.
 
 * 프로필
 
-   * 에 대한 편리한 링크를 제공합니다. [사용자 설정](/help/sites-administering/security.md))
+   * [사용자 설정](/help/sites-administering/security.md)에 대한 편리한 링크를 제공합니다.
 
 * [내 환경 설정](/help/sites-authoring/user-properties.md#my-preferences)
 
@@ -108,7 +108,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 * **클래식 제작 환경 사용**
 
-  이 옵션을 사용하면 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-기반 페이지 작성 기본적으로 표준 UI가 사용됩니다.
+  이 옵션을 사용하면 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) 기반 페이지 작성을 사용할 수 있습니다. 기본적으로 표준 UI가 사용됩니다.
 
 * **자산 홈 페이지 활성화**
 

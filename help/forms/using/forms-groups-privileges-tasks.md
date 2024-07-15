@@ -24,9 +24,9 @@ ht-degree: 6%
 | AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
 | AEM 6.5 | 이 문서 |
 
-다음을 수행할 수 있습니다. [그룹 만들기](/help/sites-administering/user-group-ac-admin.md#group-administration) 및 정책 할당 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration) Adobe Experience Manager(AEM)의 그룹에 연결합니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
+[그룹을 만들고](/help/sites-administering/user-group-ac-admin.md#group-administration) 정책 및 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration)를 Adobe Experience Manager(AEM)의 그룹에 할당할 수 있습니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
 
-를 설치한 후 [AEM Forms 추가 기능 패키지](../../forms/using/installing-configuring-aem-forms-osgi.md)이 문서에 언급된 그룹(예: forms-users 및 forms-power-user)은 자동으로 할당에 사용할 수 있습니다. 다음 표에는 사용자가 그룹 할당을 기반으로 OSGi에서 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
+[AEM Forms 추가 기능 패키지](../../forms/using/installing-configuring-aem-forms-osgi.md)를 설치하면 이 문서에 언급된 그룹(예: forms-users 및 forms-power-user)을 자동으로 할당할 수 있습니다. 다음 표에는 사용자가 그룹 할당을 기반으로 OSGi에서 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
 
 <table>
  <tbody>
@@ -97,7 +97,7 @@ ht-degree: 6%
    <td>워크플로 사용자</td> 
    <td>
     <ul> 
-     <li>AEM 받은 편지함 애플리케이션 사용<br /> <strong>참고: </strong>AEM 받은 편지함에서 대화형 통신 에이전트 UI에 액세스하려면 cm-agent-users 및 workflow-users 그룹을 할당해야 합니다.</li> 
+     <li>AEM 받은 편지함 응용 프로그램 사용<br /> <strong>참고: </strong>AEM 받은 편지함의 Interactive Communications Agent UI에 액세스하려면 cm-agent-users 및 workflow-users 그룹을 할당해야 합니다.</li> 
      <li>워크플로우 인스턴스 관리</li> 
     </ul> </td> 
   </tr>

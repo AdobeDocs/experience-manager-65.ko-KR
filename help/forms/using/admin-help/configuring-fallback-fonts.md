@@ -24,12 +24,12 @@ ht-degree: 0%
 >
 >대체 글꼴 구성은 어셈블러 서비스에도 적용됩니다.
 
-1. adobe-livecycle로 이동합니다.*`[appserver]`*.ear 파일 *`[aem-forms root]`*/configurationManager/export 디렉터리를 만들고 백업 복사본을 만든 다음 원본 패키지를 해제합니다.
+1. *`[aem-forms root]`*/configurationManager/export 디렉터리에서 adobe-livecycle-*`[appserver]`*.ear 파일로 이동하여 백업 복사본을 만들고 원본 패키지를 해제합니다.
 1. adobe-fontmanager.jar 파일을 찾아 패키지를 제거합니다.
 1. FontManagerResources.properties 파일을 찾아 텍스트 편집기에서 엽니다.
 1. 필요에 따라 원본 및 대체 글꼴 위치와 이름을 수정하고 파일을 저장합니다.
 
-   FontManagerResources.properties 파일의 글꼴 항목은 *`[aem-forms root]`*/fonts 디렉토리입니다. 기본 AEM Forms 글꼴이 아닌 글꼴을 지정하는 경우 이러한 글꼴을 이 디렉터리 구조(기존 디렉터리 내 또는 새로 만든 디렉터리 구조) 내에 설치해야 합니다.
+   FontManagerResources.properties 파일의 글꼴 항목은 *`[aem-forms root]`*/fonts 디렉터리를 기준으로 합니다. 기본 AEM Forms 글꼴이 아닌 글꼴을 지정하는 경우 이러한 글꼴을 이 디렉터리 구조(기존 디렉터리 내 또는 새로 만든 디렉터리 구조) 내에 설치해야 합니다.
 
    >[!NOTE]
    >
@@ -40,8 +40,8 @@ ht-degree: 0%
    * 대체 테이블의 순서 집합별로 검색된 일반 글꼴
 
 1. adobe-fontmanager.jar 파일을 다시 패키징합니다.
-1. adobe-livecycle 다시 패키지-*`[appserver]`*.ear 파일을 만든 다음 수동으로 또는 구성 관리자를 실행하여 다시 배포합니다.
+1. adobe-livecycle-*`[appserver]`*.ear 파일을 다시 패키징한 다음 수동으로 또는 Configuration Manager를 실행하여 다시 배포합니다.
 
 >[!NOTE]
 >
->Configuration Manager를 사용하여 adobe-livecycle을 다시 패키징하지 않음-`[appserver]`.ear 파일을 사용하십시오. 수정 사항을 AEM forms 기본값으로 덮어씁니다.
+>수정 사항을 AEM Forms 기본값으로 덮어쓰게 되므로 구성 관리자를 사용하여 adobe-livecycle-`[appserver]`.ear 파일을 다시 패키징하지 마십시오.

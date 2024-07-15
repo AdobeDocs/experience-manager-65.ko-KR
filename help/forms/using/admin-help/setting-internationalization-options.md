@@ -30,6 +30,6 @@ PDF 양식을 렌더링할 때 사용되는 로케일을 지정할 수 있습니
 
 1. 국제화 아래의 문자 집합 목록에서 문자 집합을 선택합니다. 이 설정은 사용된 API(renderHTMLForm 또는 renderPDFForm)에 따라 다릅니다. 나열된 문자 세트 이외의 문자 세트를 지정하려면 사용자 정의를 선택하고 표시되는 상자에서 인코딩 값을 지정합니다.
 
-   HTML 변환의 경우 AEM Forms에서는 `java.nio.charset` 패키지. sFormPreference가 PDFForm이면 특정 문자 집합만 지원됩니다. 문자 집합은 유효한 정식 이름이어야 합니다. 기본값은 ISO-8859-1입니다.
+   HTML 변환의 경우 AEM Forms는 `java.nio.charset` 패키지로 정의된 문자 인코딩 값을 지원합니다. sFormPreference가 PDFForm이면 특정 문자 집합만 지원됩니다. 문자 집합은 유효한 정식 이름이어야 합니다. 기본값은 ISO-8859-1입니다.
 
 1. 저장을 클릭합니다.

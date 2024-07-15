@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 오버레이 커뮤니티 구성 요소 {#overlay-communities-components}
 
-의 의도 [오버레이](/help/communities/client-customize.md#overlays) 기본 구성 요소는 구성 요소에 대한 모든 상대 참조에 대해 구성 요소의 모양이나 동작을 전체적으로 변경하는 것입니다. /libs 폴더에서 검색하기 전에 sling 특성에 따라 /apps 폴더로 해결됩니다. 따라서 구성 요소에 대한 경로는 /libs 폴더가 아닌 /apps 폴더에 있다는 점을 제외하면 기본 구성 요소에 대한 경로와 동일합니다.
+기본 구성 요소를 [오버레이](/help/communities/client-customize.md#overlays)하려는 의도는 해당 구성 요소에 대한 모든 상대 참조에 대해 구성 요소의 모양이나 동작을 전체적으로 변경하는 것입니다. /libs 폴더에서 검색하기 전에 sling 특성에 따라 /apps 폴더로 해결됩니다. 따라서 구성 요소에 대한 경로는 /libs 폴더가 아닌 /apps 폴더에 있다는 점을 제외하면 기본 구성 요소에 대한 경로와 동일합니다.
 
 ## 예 {#example}
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 **오버레이 알림 이메일**
 
-이메일 알림 메시지를 사용자 정의하려는 경우 다음 작업을 수행할 수 있습니다. [오버레이](/help/communities/client-customize.md#overlays) 의 템플릿 `/libs/settings/community/templates/email/html`.
+전자 메일 알림 메시지를 사용자 지정하려는 경우 `/libs/settings/community/templates/email/html`에 템플릿을 [오버레이](/help/communities/client-customize.md#overlays)할 수 있습니다.
 
-예를 들어 언급 이메일 알림(UGC가 생성된 특정 커뮤니티 구성 요소의 경우)을 편집하려고 한다고 가정합니다. 이러한 경우 **if** 동사 조건 **언급** 를 활성화한 구성 요소의 템플릿에서 **@mentions** 지원.
+예를 들어 언급 이메일 알림(UGC가 생성된 특정 커뮤니티 구성 요소의 경우)을 편집하려고 한다고 가정합니다. 이러한 경우 **@mentions** 지원을 사용하도록 설정한 구성 요소의 템플릿에서 동사 **mention**&#x200B;에 대한 **if** 조건을 추가하십시오.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -45,4 +45,4 @@ ht-degree: 0%
 {{/equals}}\
 ```
 
-블로그 댓글에 추가할 이메일 알림 @mention을 수정하려면 의 기본 템플릿을 배치합니다. `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
+블로그 댓글에 추가할 전자 메일 알림 @mention을 수정하려면 `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`의 기본 템플릿을 배치하십시오.

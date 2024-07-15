@@ -44,19 +44,19 @@ ht-degree: 0%
 
 **문서 이름:** 선택한 문서의 이름입니다.
 
-**문서 ID:** 정책이 문서에 적용될 때 document security가 할당하는 고유 식별자입니다. document security는 이 번호를 사용하여 문서를 추적합니다.
+**문서 ID:** 정책이 문서에 적용될 때 문서 보안에 할당하는 고유 식별자입니다. document security는 이 번호를 사용하여 문서를 추적합니다.
 
-**문서 상태:** 문서의 상태(예: 활성 또는 취소)
+**문서 상태:** 문서의 상태(예: 활성 또는 해지됨)
 
-**게시자:** 문서에 정책을 첨부한 사용자의 이름입니다.
+**게시자:** 정책을 문서에 첨부한 사용자의 이름입니다.
 
 **정책 이름:** 문서를 보호하는 데 사용되는 정책의 이름입니다. 이름을 클릭하여 정책을 열 수 있습니다. 이 링크를 사용하여 Outlook의 전자 메일 메시지에 첨부된 문서의 수신자를 위해 Acrobat에서 생성하는 정책에 액세스할 수 있습니다. 이러한 정책은 정책 페이지에 표시되지 않습니다.
 
-**정책 유형:** 문서에 적용된 정책의 유형입니다.
+**정책 유형:** 문서에 적용된 정책 유형입니다.
 
-**게시한 날짜:** 정책이 문서에 적용된 날짜입니다.
+**게시된 날짜:** 정책이 문서에 적용된 날짜입니다.
 
-**관련 반복:** 문서에 관련 이터레이션이 있는 경우 이 항목도 목록에 나타납니다. 문서에 대한 관련 이터레이션 목록을 보려면 링크를 클릭합니다.
+**관련 반복:** 문서에 관련 반복이 있으면 이 항목도 목록에 나타납니다. 문서에 대한 관련 이터레이션 목록을 보려면 링크를 클릭합니다.
 
 사용자는 보호된 문서에 대한 정보를 볼 수 있습니다. 관리자는 모든 사용자가 정책으로 보호한 문서에 대한 정보를 볼 수 있습니다. 정책 세트 코디네이터는 정책 세트에서 정책으로 보호되는 문서에 대한 정보를 볼 수 있습니다.
 
@@ -71,13 +71,13 @@ ht-degree: 0%
 
 이 기능이 활성화되어 있으면 문서 페이지에서 문서의 관련 이터레이션을 볼 수 있습니다.
 
-1. 문서에 대한 문서 세부 정보 페이지를 봅니다. (참조: [문서에 대한 정보 보기](controlling-access-policy-protected-documents.md#view-information-about-a-document).)
+1. 문서에 대한 문서 세부 정보 페이지를 봅니다. [문서에 대한 정보 보기](controlling-access-policy-protected-documents.md#view-information-about-a-document)를 참조하세요.
 1. 관련 이터레이션 보기를 클릭합니다. 이 옵션은 기능이 활성화되어 있을 경우에만 사용할 수 있습니다. 관련 이터레이션 목록이 나타납니다. 각 반복에 대해 다음 정보를 볼 수 있습니다.
 
    * **반복:** 파일 이름입니다. 원래 파일 이름과 다를 수 있으며 파일 이름 끝에 버전 번호가 추가됩니다.
    * **게시자:** 원본 문서의 게시자입니다.
    * **작성자:** 반복을 저장한 사용자입니다.
-   * **만든 날짜:** 반복이 저장된 날짜 및 시간입니다.
+   * **만든 날짜:** 반복이 저장된 날짜와 시간입니다.
    * **정책:** 반복을 보호하는 정책입니다. 서로 다른 반복은 서로 다른 정책에 의해 보호될 수 있습니다.
 
 1. 해당 이터레이션에 대한 문서 세부 정보 페이지를 표시하려면 이터레이션의 파일 이름을 클릭합니다.
@@ -86,11 +86,11 @@ ht-degree: 0%
 
 정책으로 보호된 문서에 대한 액세스를 취소하고 복원할 수 있습니다.
 
-**사용자:** 자체 개인 정책 또는 정책을 적용하는 사용자에 대해 취소 기능이 활성화된 공유 정책으로 보호하는 문서에 대한 액세스를 취소하거나 복원할 수 있습니다. 문서에 대한 액세스를 취소하거나 정책을 전환할 수 없는 사용자는 관리자에게 문의해야 합니다.
+**사용자:** 자신의 개인 정책 또는 정책을 적용하는 사용자에 대해 해지 기능이 활성화된 공유 정책으로 보호하는 문서에 대한 액세스를 해지하거나 복원할 수 있습니다. 문서에 대한 액세스를 취소하거나 정책을 전환할 수 없는 사용자는 관리자에게 문의해야 합니다.
 
-**관리자:** 개인 또는 공유 정책으로 보호되는 문서를 포함하여 정책으로 보호된 모든 문서에 대한 액세스 권한을 취소하거나 복원할 수 있습니다. 관리자가 공유 정책으로 보호된 문서에 대한 액세스를 취소하면 관리자만 해당 문서에 대한 액세스 권한을 복원할 수 있습니다.
+**관리자:** 개인 또는 공유 정책으로 보호되는 문서를 포함하여 정책으로 보호된 문서에 대한 액세스 권한을 취소하거나 복원할 수 있습니다. 관리자가 공유 정책으로 보호된 문서에 대한 액세스를 취소하면 관리자만 해당 문서에 대한 액세스 권한을 복원할 수 있습니다.
 
-**정책 집합 코디네이터:** 정책 세트에서 보호하는 문서에 대한 액세스 권한을 취소하거나 복원할 수 있습니다.
+**정책 집합 코디네이터:** 정책 집합에서 보호하는 문서에 대한 액세스 권한을 취소하거나 복원할 수 있습니다.
 
 문서 액세스 권한을 취소하거나 복원할 때 변경 사항은 다음과 같이 적용됩니다.
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
    * **일반 메시지:** 작성자가 문서를 취소했음을 나타냅니다.
    * **문서 종료됨:** 작성자가 문서를 종료했음을 나타냅니다.
-   * **문서가 수정됨**: 작성자가 문서를 수정했음을 나타냅니다
+   * **수정된 문서**: 작성자가 문서를 수정했음을 나타냅니다.
 
 1. (선택 사항) 새 버전의 문서를 사용할 수 있는 경우 URL을 입력하고 테스트 를 클릭하여 URL을 확인합니다.
 1. 확인을 클릭한 다음 확인을 다시 클릭하여 문서 페이지로 돌아갑니다.
@@ -144,11 +144,11 @@ ht-degree: 0%
 
 일부 추가 검색 옵션은 관리자만 사용할 수 있습니다.
 
-**문서 ID:** 정책이 적용될 때 document security가 문서에 할당하는 고유 ID 번호입니다.
+**문서 ID:** 정책이 적용될 때 문서 보안이 문서에 할당하는 고유 ID 번호입니다.
 
 **문서 이름:** 문서 이름.
 
-**게시자 이름:** 문서에 정책을 첨부한 사용자의 이름입니다. 모든 도메인 또는 지정된 도메인에서 사용자를 선택할 수 있습니다.
+**게시자 이름:** 정책을 문서에 첨부한 사용자의 이름입니다. 모든 도메인 또는 지정된 도메인에서 사용자를 선택할 수 있습니다.
 
 **정책 ID:** 문서에 첨부된 정책의 ID 번호입니다.
 
@@ -194,12 +194,13 @@ ht-degree: 0%
 
 Workbench에서 다음 프로세스를 사용합니다.
 
-**표지가 있는 Protect 문서:** 지정된 정책으로 PDF 문서를 보호하고 문서에 표지를 추가합니다
+**Protect
+표지가 있는 문서:** 지정된 정책으로 PDF 문서를 보호하고 문서에 표지를 추가합니다
 
-**보호된 문서 추출:** 표지가 있는 PDF 문서에서 정책으로 보호된 PDF 문서 추출
+**보호된 문서 추출:** 표지가 있는 PDF 문서에서 정책으로 보호된 PDF 문서를 추출합니다.
 
 다음 문서 보안 API 사용:
 
-**protectDocumentWithCoverPage:** 지정된 PDF으로 지정된 정책을 보호하고 표지가 있는 문서와 보호된 문서를 첨부 파일로 반환합니다.
+**protectDocumentWithCoverPage:** 지정된 정책으로 지정된 PDF을 보호하고, 표지가 있는 문서와 보호된 문서를 첨부 파일로 반환합니다
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** 표지가 있는 문서의 첨부 파일인 보호된 문서를 추출합니다. protectDocumentWithCoverPage 메서드를 사용하여 표지가 있는 문서를 만들 수 있습니다
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`

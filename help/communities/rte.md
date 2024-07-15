@@ -22,15 +22,15 @@ ht-degree: 3%
 
 리치 텍스트 편집기(RTE)를 사용하면 마크업이 있는 텍스트를 입력할 수 있습니다.
 
-Communities 구성 요소용 [작성 환경의 리치 텍스트 편집기](../../help/sites-authoring/rich-text-editor.md): 게시 환경에 입력된 텍스트에 영향을 줍니다.
+커뮤니티 구성 요소의 경우 [작성 환경의 리치 텍스트 편집기](../../help/sites-authoring/rich-text-editor.md)와 유사하지만 게시 환경에 입력된 텍스트에 영향을 줍니다.
 
 ![리치 텍스트 편집기](assets/rich-text-editor.png)
 
 ## 리치 텍스트 편집기 활성화 {#enabling-rich-text-editor}
 
-UGC(사용자 생성 컨텐츠)를 허용하는 커뮤니티 구성 요소를 활성화하여 RTE를 허용할 수 있습니다. 구성 요소가 페이지에 추가되거나 내에 포함된 경우 [함수](functions.md), RTE는 기본적으로 활성화되어 있을 수도 있고, 활성화되어 있지 않을 수도 있습니다.
+UGC(사용자 생성 컨텐츠)를 허용하는 커뮤니티 구성 요소를 활성화하여 RTE를 허용할 수 있습니다. 구성 요소가 페이지에 추가되거나 [function](functions.md) 내에 포함된 경우 기본적으로 RTE가 활성화되거나 활성화되지 않을 수 있습니다.
 
-활성화되지 않은 경우 을 입력하기만 하면 됩니다. [작성자 편집 모드](sites-console.md#authoring-site-content)를 클릭하고 편집할 구성 요소를 선택한 다음, `Rich Text Editor` 확인란.
+활성화되지 않은 경우 [작성자 편집 모드](sites-console.md#authoring-site-content)를 입력하고 편집할 구성 요소를 선택한 다음 `Rich Text Editor` 확인란을 선택하면 됩니다.
 
 RTE는 다음 커뮤니티 구성 요소에 사용할 수 있습니다.
 
@@ -45,9 +45,9 @@ RTE는 다음 커뮤니티 구성 요소에 사용할 수 있습니다.
 
 ## 사용자 지정 {#customization}
 
-구현이 다음을 기반으로 하므로 리치 텍스트 편집기를 사용자 지정할 수 있습니다. [편집기](https://ckeditor.com/).
+구현은 [CKEditor](https://ckeditor.com/)을 기반으로 하므로 서식 있는 텍스트 편집기를 사용자 지정할 수 있습니다.
 
-Communities 구성 요소에 대한 현재 구성은 `cq.social.  scf   clientlib`, 저장소의
+커뮤니티 구성 요소에 대한 현재 구성은 저장소의 `cq.social.  scf   clientlib`에 있습니다.
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
@@ -59,9 +59,9 @@ Communities 구성 요소에 대한 현재 구성은 `cq.social.  scf   clientli
 
 도구 모음에 하이퍼링크 옵션을 추가하려면 다음을 수행합니다.
 
-* &quot;&quot;라는 도구 모음 추가 `links`&quot;
+* 이름이 &quot; `links`&quot;인 도구 모음 추가
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* 선택 **[!UICONTROL 모두 저장]**
+* **[!UICONTROL 모두 저장]** 선택
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 

@@ -21,7 +21,7 @@ AEM Forms은 forms 포털을 통해 제출된 양식 데이터를 쿼리하는 �
 
 >[!NOTE]
 >
->API를 호출하는 사용자는에 설명된 대로 검토자 그룹에 추가해야 합니다. [제출 서류를 양식에 연결](/help/forms/using/adding-reviewers-form.md).
+>[제출 검토자를 양식에 연결](/help/forms/using/adding-reviewers-form.md)에 설명된 대로 API를 호출하는 사용자를 검토자 그룹에 추가해야 합니다.
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -77,27 +77,27 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>offset</code><br /> (옵션)</td>
-   <td>결과 집합 인덱스의 시작점을 지정합니다. 기본값은 입니다. <strong>0</strong>.</td>
+   <td>결과 집합 인덱스의 시작점을 지정합니다. 기본값은 <strong>0</strong>입니다.</td>
   </tr>
   <tr>
    <td><code>limit</code><br /> (옵션)</td>
-   <td>결과 수 제한. 기본값은 입니다. <strong>30</strong>.</td>
+   <td>결과 수 제한. 기본값은 <strong>30</strong>입니다.</td>
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (옵션)</td>
-   <td>정렬 결과에 대한 속성을 지정합니다. 기본값은 입니다. <strong>jcr:last수정됨</strong>마지막 수정 시간을 기준으로 결과를 정렬합니다.</td>
+   <td>정렬 결과에 대한 속성을 지정합니다. 기본값은 마지막 수정 시간을 기준으로 결과를 정렬하는 <strong>jcr:lastModified</strong>입니다.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (옵션)</td>
-   <td>결과 정렬 순서를 지정합니다. 기본값은 입니다. <strong>desc</strong>을 반환합니다. 다음을 지정할 수 있습니다. <code>asc</code> 을 눌러 결과를 오름차순으로 정렬합니다.</td>
+   <td>결과 정렬 순서를 지정합니다. 기본값은 결과를 내림차순으로 정렬하는 <strong>desc</strong>입니다. 결과를 오름차순으로 정렬하도록 <code>asc</code>을(를) 지정할 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (옵션)</td>
-   <td>결과에 포함할 양식 속성을 쉼표로 구분한 목록을 지정합니다. 기본 속성은 다음과 같습니다.<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>결과에 포함할 양식 속성을 쉼표로 구분한 목록을 지정합니다. 기본 속성은 <br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>입니다. <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (옵션)</td>
-   <td>양식 속성에서 지정된 값을 검색하고 일치하는 값이 있는 양식을 반환합니다. 기본값은 입니다. <strong>""</strong>.</td>
+   <td>양식 속성에서 지정된 값을 검색하고 일치하는 값이 있는 양식을 반환합니다. 기본값은 <strong>"</strong>입니다.</td>
   </tr>
  </tbody>
 </table>

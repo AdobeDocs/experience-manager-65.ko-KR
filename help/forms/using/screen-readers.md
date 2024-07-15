@@ -24,7 +24,7 @@ HTML5 양식은 표준 HTML 구문을 사용하여 HTML에 대한 일반 접근�
 
 ## 접근성 표준 {#accessibility-standards}
 
-HTML5 양식은 알려진 예외를 제외하고 접근성을 위한 섹션 508을 준수합니다. 다음을 참조하십시오 [HTML5 양식용 VPAT](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf) 을 참조하십시오.
+HTML5 양식은 알려진 예외를 제외하고 접근성을 위한 섹션 508을 준수합니다. 자세한 내용은 [HTML 5 양식용 VPAT](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf)을 참조하십시오.
 
 ## HTML5 양식용 인증된 화면 판독기 {#certified-screen-readers-for-html-forms}
 
@@ -33,15 +33,15 @@ HTML5 양식은 알려진 예외를 제외하고 접근성을 위한 섹션 508�
 
 ### JAWS {#jaws}
 
-모든 기본 키 입력과 바로 가기는 HTML 5 양식에 대해 작동합니다. JAWS 사용에 대한 자세한 내용은 다음을 참조하십시오. [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
+모든 기본 키 입력과 바로 가기는 HTML 5 양식에 대해 작동합니다. JAWS 사용에 대한 자세한 내용은 [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp)을(를) 참조하십시오.
 
 ### 보이스오버 {#voiceover}
 
-HTML5 forms는 Voice over의 모든 기본 키 입력과 제스처를 지원합니다. VoiceOver 설정 및 사용에 대한 자세한 내용은 [https://www.apple.com/accessibility/vision/](https://www.apple.com/accessibility/vision/).
+HTML5 forms는 Voice over의 모든 기본 키 입력과 제스처를 지원합니다. VoiceOver 설정 및 사용에 대한 자세한 내용은 [https://www.apple.com/accessibility/vision/](https://www.apple.com/accessibility/vision/)을(를) 참조하세요.
 
 ## 알려진 문제 {#known-issues}
 
-* **(Internal Explorer 9만 해당)** HTML 5 양식에서 페이지는 요청에 따라(동적으로) 로드됩니다. 온디맨드 페이지 로드로 인해 화면 판독기 기능에 문제가 발생합니다. 화면 판독기의 포커스가 페이지의 마지막 필드에 있고 사용자가 탭을 누르면 화면 판독기는 양식에 있는 첫 번째 페이지의 첫 번째 필드에 포커스를 반환합니다.
-* **(Internal Explorer 9만 해당)** 키보드를 사용하여 HTML5 양식의 날짜 선택기 컨트롤에 완전히 액세스할 수 없습니다. Date Picker 컨트롤에서 Up/Down 키를 여러 번 누르면 Date Picker 컨트롤이 닫히고 포커스가 다음/마지막 필드로 이동합니다.
+* **(Internal Explorer 9만 해당)** HTML5 양식에서 페이지가 필요할 때(동적으로) 로드됩니다. 온디맨드 페이지 로드로 인해 화면 판독기 기능에 문제가 발생합니다. 화면 판독기의 포커스가 페이지의 마지막 필드에 있고 사용자가 탭을 누르면 화면 판독기는 양식에 있는 첫 번째 페이지의 첫 번째 필드에 포커스를 반환합니다.
+* **(Internal Explorer 9만 해당)** 키보드를 사용하여 HTML 5 양식의 날짜 선택기 컨트롤에 완전히 액세스할 수 없습니다. Date Picker 컨트롤에서 Up/Down 키를 여러 번 누르면 Date Picker 컨트롤이 닫히고 포커스가 다음/마지막 필드로 이동합니다.
 
 * VoiceOver가 iPad safari에서 날짜 위젯에 대한 화살표 키를 감지할 수 없습니다.

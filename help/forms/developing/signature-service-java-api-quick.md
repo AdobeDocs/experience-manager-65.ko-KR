@@ -44,11 +44,11 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍의 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms을 사용한 프로그래밍의 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 서명 필드 추가 {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 서명 필드를 추가합니다 *SignatureField1* PDF 파일을 기반으로 하는 PDF 문서로&#x200B;*Loan.pdf*. 새 서명 필드가 포함된 PDF 문서는 라는 PDF 파일로 저장됩니다. *LoanSig.pdf*. (참조: [서명 필드 추가](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
+다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;이라는 PDF 파일을 기반으로 하는 PDF 문서에 *SignatureField1*&#x200B;이라는 서명 필드를 추가합니다. 새 서명 필드가 포함된 PDF 문서가 *LoanSig.pdf*(이)라는 PDF 파일로 저장됩니다. ([서명 필드 추가](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields)를 참조하십시오.)
 
 ```java
  /*
@@ -164,7 +164,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 서명 필드 이름 검색 {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-다음 Java 코드 예제는 PDF 문서의 서명 필드 이름을 검색합니다. *LoanSig.pdf*. (참조: [서명 필드 이름 검색 중](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 문서의 서명 필드 이름을 검색합니다. ([서명 필드 이름 검색](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)을 참조하십시오.)
 
 ```java
  /*
@@ -270,7 +270,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 서명 필드 수정 {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-다음 Java 코드 예제에서는 서명이 서명 필드에 적용될 때 양식의 모든 필드를 잠그고 변경이 허용되지 않도록 하여 SignatureField1이라는 서명 필드를 수정합니다. 서명 서비스에서 수정된 서명 필드가 포함된 PDF 문서를 반환하면 PDF 문서가 LoanSig.pdf라는 PDF 파일로 저장됩니다. (이 예제에서는 서명 서비스에 전달되는 PDF 파일을 덮어씁니다.) (참조: [서명 필드 수정](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
+다음 Java 코드 예제에서는 서명이 서명 필드에 적용될 때 양식의 모든 필드를 잠그고 변경이 허용되지 않도록 하여 SignatureField1이라는 서명 필드를 수정합니다. 서명 서비스에서 수정된 서명 필드가 포함된 PDF 문서를 반환하면 PDF 문서가 LoanSig.pdf라는 PDF 파일로 저장됩니다. (이 예제에서는 서명 서비스에 전달되는 PDF 파일을 덮어씁니다.) ([서명 필드 수정](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)을 참조하십시오.)
 
 ```java
  /*
@@ -398,7 +398,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 디지털 서명 {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 이라는 PDF 파일을 기반으로 하는 PDF 문서에 디지털 서명합니다 *LoanSig.pdf*. 보안 자격 증명에 대해 지정된 별칭은 안전하며 해지 검사가 수행됩니다. CRL 또는 OCSP 서버 정보가 지정되지 않았으므로 서버 정보는 PDF 문서에 디지털 서명하는 데 사용된 인증서에서 가져옵니다. 서명된 문서는 다음 이름의 PDF 파일로 저장됩니다. *LoanSigned.pdf*. (참조: [PDF 문서에 디지털 서명](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 PDF 문서에 디지털 서명합니다. 보안 자격 증명에 대해 지정된 별칭은 안전하며 해지 검사가 수행됩니다. CRL 또는 OCSP 서버 정보가 지정되지 않았으므로 서버 정보는 PDF 문서에 디지털 서명하는 데 사용된 인증서에서 가져옵니다. 서명된 문서는 *LoanSigned.pdf*(이)라는 PDF 파일로 저장됩니다. ([PDF 문서에 디지털 서명하기](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)를 참조하십시오.)
 
 ```java
  /*
@@ -547,7 +547,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 XFA 기반 양식에 디지털 서명합니다 {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
-다음 Java 코드 예제에서는 Forms 서비스에서 렌더링하는 대화형 양식에 서명합니다. 다음 `com.adobe.idp.Document` Forms 서비스에서 반환한 인스턴스는 Signature 서비스로 전달됩니다. 서명된 대화형 양식은 이름이 인 PDF 파일로 저장됩니다. *LoanXFASigned.pdf*.
+다음 Java 코드 예제에서는 Forms 서비스에서 렌더링하는 대화형 양식에 서명합니다. Forms 서비스에서 반환한 `com.adobe.idp.Document` 인스턴스가 Signature 서비스로 전달됩니다. 서명된 대화형 양식이 *LoanXFASigned.pdf*(이)라는 PDF 파일로 저장됩니다.
 
 ```java
  /*
@@ -759,7 +759,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 인증 {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 PDF 파일을 기반으로 하는 PDF 문서를 인증합니다 *LoanSig.pdf*. 보안 자격 증명에 대해 지정된 별칭은 안전하며 해지 검사가 수행되지 않습니다. 인증된 문서는 다음 이름의 PDF 파일로 저장됩니다. *LoanCertified.pdf*. (참조: [PDF 문서 인증](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
+다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 PDF 문서를 인증합니다. 보안 자격 증명에 대해 지정된 별칭은 안전하며 해지 검사가 수행되지 않습니다. 인증 문서가 *LoanCertified.pdf*(이)라는 PDF 파일로 저장됩니다. ([PDF 문서 인증](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents)을 참조하십시오.)
 
 ```java
  /*
@@ -908,7 +908,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 디지털 서명 확인 {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
-다음 Java 코드 예제에서는 LoanSigned.pdf라는 PDF 파일을 기반으로 서명된 PDF 문서에 있는 디지털 서명을 확인합니다. 확인 시간은 현재 시간으로 설정되고 해지 확인 옵션은 최상으로 설정됩니다. (참조: [디지털 서명 확인](#verifying-digital-signatures).)
+다음 Java 코드 예제에서는 LoanSigned.pdf라는 PDF 파일을 기반으로 서명된 PDF 문서에 있는 디지털 서명을 확인합니다. 확인 시간은 현재 시간으로 설정되고 해지 확인 옵션은 최상으로 설정됩니다. ([디지털 서명 확인](#verifying-digital-signatures)을 참조하십시오.)
 
 ```java
  /*
@@ -1072,7 +1072,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 여러 디지털 서명 확인 {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
-다음 Java 코드 예제에서는 LoanAllSigs.pdf라는 PDF 파일을 기반으로 하는 서명된 PDF 문서에 있는 여러 디지털 서명을 확인합니다. 확인 시간은 현재 시간으로 설정되고 해지 확인 옵션은 최상으로 설정됩니다. (참조: [여러 디지털 서명 확인](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
+다음 Java 코드 예제에서는 LoanAllSigs.pdf라는 PDF 파일을 기반으로 하는 서명된 PDF 문서에 있는 여러 디지털 서명을 확인합니다. 확인 시간은 현재 시간으로 설정되고 해지 확인 옵션은 최상으로 설정됩니다. ([여러 디지털 서명 확인](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)을 참조하십시오.)
 
 ```java
  /*
@@ -1234,7 +1234,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 디지털 서명 제거 {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
 
-다음 Java 코드 예제에서는 이라는 서명 필드에서 디지털 서명을 제거합니다 *SignatureField1*. 서명 필드가 포함된 PDF 파일의 이름은 입니다. *LoanSigned.pdf*. (참조: [디지털 서명 제거](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
+다음 Java 코드 예제에서는 *SignatureField1*(이)라는 서명 필드에서 디지털 서명을 제거합니다. 서명 필드가 포함된 PDF 파일의 이름은 *LoanSigned.pdf*&#x200B;입니다. ([디지털 서명 제거](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures)를 참조하십시오.)
 
 ```java
  /*

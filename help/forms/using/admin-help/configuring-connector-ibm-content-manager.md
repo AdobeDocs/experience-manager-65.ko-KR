@@ -1,6 +1,6 @@
 ---
 title: IBM&reg; Content Manager용 커넥터 구성
-description: AEM Forms와 IBM&reg; Content Manager 간에 통신할 수 있도록 IBM&reg; Content Manager용 커넥터를 구성합니다.
+description: AEM Forms와 IBM&reg; Content Manager 간에 통신을 활성화하려면 IBM&reg; Content Manager용 커넥터를 구성하십시오.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # IBM® Content Manager용 커넥터 구성{#configuring-connector-for-ibm-content-manager}
 
-IBM® Content Manager용 커넥터를 사용하면 AEM Forms와 IBM® Content Manager 간에 통신할 수 있습니다. 추가 배경 정보는 의 &quot;ECM용 커넥터&quot;를 참조하십시오. [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+IBM® Content Manager용 커넥터를 사용하면 AEM Forms와 IBM® Content Manager 간에 통신할 수 있습니다. 추가 배경 정보는 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)의 &quot;ECM용 커넥터&quot;를 참조하십시오.
 
 ## IBM® Content Manager 연결 구성 {#configure-the-ibm-content-manager-connection}
 

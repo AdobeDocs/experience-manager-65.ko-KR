@@ -32,7 +32,7 @@ ht-degree: 1%
 
   여기에서 다운로드 가능한 웹 페이지를 볼 수 있습니다.
 
-이 자습서의 코드는 기본 폴더 이름이 애플리케이션, 디자인 및 컨텐츠에 대해 동일해야 합니다. 웹 사이트의 다른 이름을 선택하는 경우 항상 바꾸기 `an-scf-sandbox` 을 선택합니다.
+이 자습서의 코드는 기본 폴더 이름이 애플리케이션, 디자인 및 컨텐츠에 대해 동일해야 합니다. 웹 사이트의 다른 이름을 선택하는 경우 항상 `an-scf-sandbox`을(를) 선택한 이름으로 바꾸십시오.
 
 >[!NOTE]
 >
@@ -51,31 +51,31 @@ ht-degree: 1%
 
 /apps 디렉토리는 보호되며 /content 및 /etc/designs 디렉토리처럼 공개적으로 액세스할 수 없습니다.
 
-1. 만들기 `/apps/an-scf-sandbox` 폴더를 삭제합니다.
+1. `/apps/an-scf-sandbox` 폴더를 만듭니다.
 
-   사용 **[!UICONTROL CRXDE Lite]**, 탐색기 창
+   탐색기 창에서 **[!UICONTROL CRXDE Lite]** 사용 중
 
-   1. 다음 항목 선택 `/apps` 폴더를 삭제합니다.
-   1. 마우스 오른쪽 버튼 클릭 **[!UICONTROL 만들기]**... 또는 아래로 당기십시오. **[!UICONTROL 만들기...]** 메뉴 아래의 제품에서 사용할 수 있습니다.
-   1. 선택 **[!UICONTROL 폴더 만들기...]**.
-   1. 다음에서 **[!UICONTROL 폴더 만들기]** 대화 상자, 입력 `an-scf-sandbox`.
+   1. `/apps` 폴더를 선택하십시오.
+   1. **[!UICONTROL 만들기]**...를 마우스 오른쪽 단추로 클릭하거나 **[!UICONTROL 만들기...]** 메뉴를 아래로 당기세요.
+   1. **[!UICONTROL 폴더 만들기...]**&#x200B;를 선택합니다.
+   1. **[!UICONTROL 폴더 만들기]** 대화 상자에서 `an-scf-sandbox`을(를) 입력하십시오.
    1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-1. 만들기 **[!UICONTROL 구성 요소]** 하위 폴더.
+1. **[!UICONTROL 구성 요소]** 하위 폴더를 만듭니다.
 
-   1. 다음 항목 선택 `/apps/an-scf-sandbox` 폴더를 삭제합니다.
-   1. 클릭 **[!UICONTROL 만들기 > 폴더 만들기]**.
-   1. 다음에서 **[!UICONTROL 폴더 만들기]** 대화 상자, 입력 **[!UICONTROL 구성 요소]**.
+   1. `/apps/an-scf-sandbox` 폴더를 선택하십시오.
+   1. **[!UICONTROL 만들기 > 폴더 만들기]**&#x200B;를 클릭합니다.
+   1. **[!UICONTROL 폴더 만들기]** 대화 상자에서 **[!UICONTROL 구성 요소]**&#x200B;를 입력합니다.
    1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-1. 만들기 **[!UICONTROL 템플릿]** 하위 폴더.
+1. **[!UICONTROL 템플릿]** 하위 폴더를 만듭니다.
 
-   1. 다음 항목 선택 `/apps/an-scf-sandbox` 폴더를 삭제합니다.
-   1. 클릭 **[!UICONTROL 만들기 > 폴더 만들기]**.
-   1. 다음에서 **[!UICONTROL 폴더 만들기]** 대화 상자, 입력 **[!UICONTROL 템플릿]**.
+   1. `/apps/an-scf-sandbox` 폴더를 선택하십시오.
+   1. **[!UICONTROL 만들기 > 폴더 만들기]**&#x200B;를 클릭합니다.
+   1. **[!UICONTROL 폴더 만들기]** 대화 상자에서 **[!UICONTROL 템플릿]**&#x200B;을 입력하십시오.
    1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
-   1. 다시 선택 `/apps/an-scf-sandbox`.
-   1. 선택 **[!UICONTROL 모두 저장]**.
+   1. `/apps/an-scf-sandbox` 다시 선택
+   1. **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 
    다른 편집 프로세스와 마찬가지로 자주 저장해야 합니다. 데이터 입력 문제가 발생하는 경우 로그인 시간이 초과되었거나 이전 편집 내용을 저장해야 하기 때문일 수 있습니다.
 
@@ -87,17 +87,17 @@ ht-degree: 1%
 
 /etc/designs 디렉토리에는 페이지 컨텐츠와 함께 다운로드할 이미지, 스크립트 및 스타일 시트가 포함되어 있습니다.
 
-1. 클래식 UI에서 Designer 도구를 사용하려면 [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
+1. 클래식 UI에서 Designer 도구를 사용하려면 [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin)로 이동하십시오.
 
-   참고: CRXDE Lite을 사용하여 유형의 노드를 생성하는 경우 `cq:Page`, 액세스 제어 및 복제 가 페이지의 기본 설정으로 설정되지 않습니다.
+   참고: CRXDE Lite을 사용하여 `cq:Page` 유형의 노드를 만드는 경우 액세스 제어 및 복제가 페이지의 기본 설정으로 설정되지 않습니다.
 
-1. 탐색기 창에서 **[!UICONTROL 디자인]** 폴더를 클릭한 다음 **[!UICONTROL 신규]** > **[!UICONTROL 새 페이지]**.
+1. 탐색기 창에서 **[!UICONTROL 디자인]** 폴더를 선택한 다음 **[!UICONTROL 새로 만들기]** > **[!UICONTROL 새 페이지]**&#x200B;를 클릭합니다.
 
    다음을 입력합니다.
 
    * 제목: **[!UICONTROL SCF 샌드박스]**
    * 이름: **[!UICONTROL an-scf-sandbox]**
-   * 선택 **[!UICONTROL 디자인 페이지 템플릿]**
+   * **[!UICONTROL 디자인 페이지 템플릿]** 선택
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -115,4 +115,4 @@ ht-degree: 1%
 
 저장소의 /content 디렉토리는 웹 사이트 컨텐츠가 있는 위치입니다. /content 아래의 경로는 브라우저 요청에 대한 URL의 경로를 구성합니다.
 
-*다음 이후* 다음 [페이지 템플릿](initial-app.md#createthepagetemplate) 는 초기 애플리케이션의 일부로 작성되며, 초기 페이지 콘텐츠는 템플릿을 기반으로 작성할 수 있습니다.... [**⇒**](initial-app.md)
+*초기 응용 프로그램의 일부로 [페이지 템플릿](initial-app.md#createthepagetemplate)이 만들어지면&#x200B;[**⇒**](initial-app.md).... 템플릿을 기반으로 초기 페이지 콘텐츠를 만들 수 있습니다.*

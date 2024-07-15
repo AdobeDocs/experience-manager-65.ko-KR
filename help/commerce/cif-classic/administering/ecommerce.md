@@ -123,15 +123,15 @@ AEM eCommerce는 마케터가 웹, 모바일 및 소셜 터치포인트 전반�
 
 >[!NOTE]
 >
->외부 전자 상거래 공급자와 통합 프레임워크를 사용하려면 먼저 필요한 패키지를 설치해야 합니다. 자세한 내용은 [전자 상거래 배포](/help/commerce/cif-classic/deploying/ecommerce.md).
+>외부 전자 상거래 공급자와 통합 프레임워크를 사용하려면 먼저 필요한 패키지를 설치해야 합니다. 자세한 내용은 [전자 상거래 배포](/help/commerce/cif-classic/deploying/ecommerce.md)를 참조하십시오.
 >
->전자 상거래 기능 확장에 대한 자세한 내용은 [eCommerce 개발](/help/commerce/cif-classic/developing/ecommerce.md).
+>전자 상거래 기능 확장에 대한 자세한 내용은 [전자 상거래 개발](/help/commerce/cif-classic/developing/ecommerce.md)을 참조하십시오.
 
 ## 주요 기능 {#main-features}
 
 AEM eCommerce는 다음을 제공합니다.
 
-* 숫자 **기본 AEM 구성 요소** 프로젝트에 대해 달성할 수 있는 사항을 보여 주는 방법:
+* 프로젝트에 달성할 수 있는 작업을 보여 주는 **바로 사용 가능한 AEM 구성 요소**&#x200B;의 수입니다.
 
    * 제품 표시
    * 장바구니
@@ -155,15 +155,15 @@ AEM eCommerce는 다음을 제공합니다.
 
   ![검색 예](/help/sites-administering/assets/chlimage_1-131.png)
 
-* AEM 기능을 사용하여 다음을 수행합니다 **여러 채널에서 콘텐츠 제공**, 전체 브라우저 창 또는 모바일 디바이스이어야 합니다. 방문자가 필요로 하는 형식으로 콘텐츠를 제공합니다.
+* AEM 기능을 사용하여 **여러 채널에 콘텐츠를 제공**&#x200B;합니다. 전체 브라우저 창 또는 모바일 장치여야 합니다. 방문자가 필요로 하는 형식으로 콘텐츠를 제공합니다.
 
   ![모바일 보기 예](/help/sites-administering/assets/chlimage_1-132.png)
 
-* 다음에 대한 기능: **를 기반으로 자체 통합 구현 개발 [AEM eCommerce 프레임워크](#the-framework)**.
+* **AEM 전자 상거래 프레임워크](#the-framework)**&#x200B;를 기반으로 고유한 통합 구현을 개발하는 기능.[
 
   현재 사용할 수 있는 두 구현은 모두 일반 API(프레임워크)를 기반으로 동일한 기반으로 구축됩니다. 새 통합 구현에는 통합에 필요한 기능 구현만 포함됩니다. 프론트엔드 구성 요소는 인터페이스를 사용하기 때문에 새로운 구현에서 사용할 수 있습니다(따라서 구현과 독립적).
 
-* 개발 가능성 **쇼퍼 데이터 및 활동을 기반으로 한 경험 기반 상거래**. 이를 통해 다음과 같은 많은 시나리오를 실현할 수 있습니다.
+* 쇼핑객 데이터 및 활동을 기반으로 **경험 기반 상거래를 개발할 수 있습니다**. 이를 통해 다음과 같은 많은 시나리오를 실현할 수 있습니다.
 
    * 예를 들어 총 주문이 특정 금액을 초과할 경우 배송 비용을 절감할 수 있습니다.
    * 또 다른 방법에서는 프로필 데이터(예: 위치)를 사용하는 시즌 오퍼를 제공할 수 있습니다. 그런 다음 필요할 때 다른 요인에 따라 다시 강조할 수 있습니다.
@@ -174,7 +174,7 @@ AEM eCommerce는 다음을 제공합니다.
 
   장바구니의 콘텐츠가 $75를 초과하는 경우 변경할 수 있습니다.
 
-  ![변경 후 클라이언트 컨텍스트가 있는 장바구니](/help/sites-administering/assets/chlimage_1-134.png)
+  변경 후 클라이언트 컨텍스트가 있는 ![장바구니](/help/sites-administering/assets/chlimage_1-134.png)
 
 * 및 다음을 포함한 기타 기능:
 
@@ -184,7 +184,7 @@ AEM eCommerce는 다음을 제공합니다.
 
 ## 프레임워크 {#the-framework}
 
-다음 [개념](/help/commerce/cif-classic/administering/concepts.md) 이 섹션에서는 프레임워크를 좀 더 자세히 살펴보지만, 다음에서는 프레임워크를 세부적으로 고속으로 볼 수 있습니다.
+[개념](/help/commerce/cif-classic/administering/concepts.md) 섹션에서는 프레임워크를 자세히 설명하지만, 다음에서는 프레임워크를 높은 수준으로 빠르게 볼 수 있습니다.
 
 ### 뭐? {#what}
 

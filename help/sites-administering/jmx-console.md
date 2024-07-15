@@ -21,9 +21,9 @@ ht-degree: 0%
 
 JMX 콘솔을 사용하여 CRX 서버의 서비스를 모니터링하고 관리할 수 있습니다. 다음 섹션에서는 JMX 프레임워크를 통해 노출되는 속성 및 작업을 요약합니다.
 
-콘솔 컨트롤 사용 방법에 대한 자세한 내용은 [JMX 콘솔 사용](#using-the-jmx-console). JMX에 대한 배경 정보는 [JMX(Java Management Extensions) 기술](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) oracle 웹 사이트의 페이지입니다.
+콘솔 컨트롤 사용 방법에 대한 자세한 내용은 [JMX 콘솔 사용](#using-the-jmx-console)을 참조하십시오. JMX에 대한 배경 정보는 Oracle 웹 사이트의 [JMX(Java Management Extensions) 기술](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) 페이지를 참조하십시오.
 
-JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대한 자세한 내용은 [JMX 콘솔과 서비스 통합](/help/sites-developing/jmx-integration.md).
+JMX 콘솔을 사용하여 서비스를 관리하기 위해 MBean을 만드는 방법에 대한 자세한 내용은 [JMX 콘솔과 서비스 통합](/help/sites-developing/jmx-integration.md)을 참조하십시오.
 
 ## 워크플로우 유지 관리 {#workflow-maintenance}
 
@@ -34,21 +34,21 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
 >[!NOTE]
 >
->다음을 참조하십시오. [워크플로 콘솔](/help/sites-administering/workflows-administering.md) 추가 워크플로우 관리 도구 및 가능한 워크플로우 인스턴스 상태에 대한 설명.
+>추가 워크플로우 관리 도구 및 가능한 워크플로우 인스턴스 상태에 대한 설명은 [워크플로우 콘솔](/help/sites-administering/workflows-administering.md)을 참조하십시오.
 
 ### 작업 {#operations}
 
-**listRunningWorkflowsPerModel** 각 워크플로우 모델에 대해 실행 중인 워크플로우 인스턴스 수를 나열합니다.
+**listRunningWorkflowPerModel** 각 워크플로 모델에 대해 실행 중인 워크플로 인스턴스 수를 나열합니다.
 
 * 인수: 없음
 * 반환된 값: Count 및 ModelId 열이 포함된 표 형식의 데이터입니다.
 
-**listCompletedWorkflowsPerModel** 각 워크플로우 모델에 대해 완료된 워크플로우 인스턴스 수를 나열합니다.
+**listCompletedWorkflowPerModel** 각 워크플로 모델의 완료된 워크플로 인스턴스 수를 나열합니다.
 
 * 인수: 없음
 * 반환된 값: Count 및 ModelId 열이 포함된 표 형식의 데이터입니다.
 
-**returnWorkflowQueueInfo** 처리되었으며 처리 큐에 있는 워크플로 항목에 대한 정보를 나열합니다.
+**returnWorkflowQueueInfo** 처리된 워크플로 항목 및 처리 대기 중인 워크플로 항목에 대한 정보를 나열합니다.
 
 * 인수: 없음
 * 반환되는 값: 다음 열이 포함된 테이블 형식 데이터:
@@ -64,7 +64,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
    * 처리된 작업
    * 대기열에 추가된 작업
 
-**returnWorkflowJobTopicInfo** 주제별로 구성된 워크플로우 작업의 처리 정보를 나열합니다.
+**returnWorkflowJobTopicInfo** 항목별로 구성된 워크플로 작업의 처리 정보를 나열합니다.
 
 * 인수: 없음
 * 반환된 값: 다음 열이 포함된 테이블 형식 데이터입니다.
@@ -92,12 +92,12 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 * 인수: 없음.
 * 반환된 값: Count 및 Model ID 열이 포함된 표 형식의 데이터입니다.
 
-**terminateFailedInstance** 실패한 워크플로우 인스턴스를 종료합니다. 특정 모델에 대해 실패한 모든 인스턴스 또는 실패한 인스턴스만 종료할 수 있습니다. 선택적으로 인스턴스가 종료된 후 다시 시작할 수 있습니다. 작업을 실제로 수행하지 않고도 결과를 보기 위해 작업을 테스트할 수도 있습니다.
+**terminateFailedInstances** 실패한 워크플로 인스턴스를 종료합니다. 특정 모델에 대해 실패한 모든 인스턴스 또는 실패한 인스턴스만 종료할 수 있습니다. 선택적으로 인스턴스가 종료된 후 다시 시작할 수 있습니다. 작업을 실제로 수행하지 않고도 결과를 보기 위해 작업을 테스트할 수도 있습니다.
 
 * 인수:
 
-   * 인스턴스 재시작: (선택 사항) 다음 값을 지정합니다. `true` 인스턴스를 종료한 후 다시 시작합니다. 기본값 `false` 종료된 워크플로 인스턴스를 다시 시작하지 않습니다.
-   * 시험 실행: (선택 사항) 다음 값을 지정합니다. `true` 실제로 작업을 수행하지 않고도 작업 결과를 볼 수 있습니다. 기본값 `false` 작업을 수행합니다.
+   * 인스턴스 다시 시작: (선택 사항) `true` 값을 지정하여 인스턴스가 종료된 후 다시 시작합니다. `false`의 기본값으로 인해 종료된 워크플로 인스턴스가 다시 시작되지 않습니다.
+   * 시험 실행: (선택 사항) 실제로 작업을 수행하지 않고 작업 결과를 보려면 `true` 값을 지정합니다. 기본값인 `false`을(를) 사용하면 작업이 수행됩니다.
    * 모델: (선택 사항) 작업이 적용되는 모델의 ID입니다. 모든 워크플로우 모델의 실패한 인스턴스에 작업을 적용할 모델을 지정하지 않습니다. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
@@ -111,11 +111,11 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
    * StartComment
    * WorkflowTitle
 
-**재시도 실패 작업 항목** 실패한 작업 항목 단계를 실행하려고 합니다. 실패한 모든 작업 항목을 다시 시도하거나 특정 워크플로우 모델에 대해 실패한 작업 항목만 다시 시도할 수 있습니다. 선택적으로 작업을 테스트하여 실제로 작업을 수행하지 않고도 결과를 확인할 수 있습니다.
+**retryFailedWorkItems** 실패한 작업 항목 단계를 실행하려고 시도합니다. 실패한 모든 작업 항목을 다시 시도하거나 특정 워크플로우 모델에 대해 실패한 작업 항목만 다시 시도할 수 있습니다. 선택적으로 작업을 테스트하여 실제로 작업을 수행하지 않고도 결과를 확인할 수 있습니다.
 
 * 인수:
 
-   * 시험 실행: (선택 사항) 다음 값을 지정합니다. `true` 실제로 작업을 수행하지 않고도 작업 결과를 볼 수 있습니다. 기본값 `false` 작업을 수행합니다.
+   * 시험 실행: (선택 사항) 실제로 작업을 수행하지 않고 작업 결과를 보려면 `true` 값을 지정합니다. 기본값인 `false`을(를) 사용하면 작업이 수행됩니다.
    * 모델: (선택 사항) 작업이 적용되는 모델의 ID입니다. 모든 워크플로우 모델의 실패한 작업 항목에 작업을 적용할 모델을 지정하지 않습니다. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
@@ -129,7 +129,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
    * StartComment
    * WorkflowTitle
 
-**PurgeActive** 특정 기간의 활성 워크플로우 인스턴스를 제거합니다. 모든 모델의 활성 인스턴스를 제거하거나 특정 모델의 인스턴스만 제거할 수 있습니다. 선택적으로 작업을 테스트하여 실제로 작업을 수행하지 않고도 결과를 확인할 수 있습니다.
+**PurgeActive** 특정 기간의 활성 워크플로 인스턴스를 제거합니다. 모든 모델의 활성 인스턴스를 제거하거나 특정 모델의 인스턴스만 제거할 수 있습니다. 선택적으로 작업을 테스트하여 실제로 작업을 수행하지 않고도 결과를 확인할 수 있습니다.
 
 * 인수:
 
@@ -137,7 +137,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * 워크플로우가 시작된 이후 일 수: 제거할 워크플로우 인스턴스의 수명(일)입니다.
-   * 시험 실행: (선택 사항) 다음 값을 지정합니다. `true` 실제로 작업을 수행하지 않고도 작업 결과를 볼 수 있습니다. 기본값 `false` 작업을 수행합니다.
+   * 시험 실행: (선택 사항) 실제로 작업을 수행하지 않고 작업 결과를 보려면 `true` 값을 지정합니다. 기본값인 `false`을(를) 사용하면 작업이 수행됩니다.
 
 * 반환된 값: 다음 열을 포함하여 삭제되는 활성 워크플로우 인스턴스에 대한 테이블 형식 데이터입니다.
 
@@ -148,7 +148,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
    * StartComment
    * WorkflowTitle
 
-**countStaleWorkflow** 오래된 워크플로 인스턴스 수를 반환합니다. 모든 워크플로우 모델 또는 특정 모델에 대해 오래된 인스턴스 수를 검색할 수 있습니다.
+**countStaleWorkflow**&#x200B;은(는) 오래된 워크플로 인스턴스 수를 반환합니다. 모든 워크플로우 모델 또는 특정 모델에 대해 오래된 인스턴스 수를 검색할 수 있습니다.
 
 * 인수:
 
@@ -158,23 +158,23 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
 * 반환된 값: 부실 워크플로 인스턴스 수입니다.
 
-**restartStaleWorkflow** 부실 워크플로 인스턴스를 다시 시작합니다. 모든 부실 인스턴스를 재시작하거나 특정 모델의 부실 인스턴스만 재시작할 수 있습니다. 작업을 실제로 수행하지 않고도 결과를 보기 위해 작업을 테스트할 수도 있습니다.
+**restartStaleWorkflows** 오래된 워크플로 인스턴스를 다시 시작합니다. 모든 부실 인스턴스를 재시작하거나 특정 모델의 부실 인스턴스만 재시작할 수 있습니다. 작업을 실제로 수행하지 않고도 결과를 보기 위해 작업을 테스트할 수도 있습니다.
 
 * 인수:
 
    * 모델: (선택 사항) 작업이 적용되는 모델의 ID입니다. 모든 워크플로우 모델의 부실 인스턴스에 작업을 적용할 모델을 지정하지 않습니다. ID는 모델 노드로의 경로입니다. 예를 들면 다음과 같습니다.
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * 시험 실행: (선택 사항) 다음 값을 지정합니다. `true` 실제로 작업을 수행하지 않고도 작업 결과를 볼 수 있습니다. 기본값 `false` 작업을 수행합니다.
+   * 시험 실행: (선택 사항) 실제로 작업을 수행하지 않고 작업 결과를 보려면 `true` 값을 지정합니다. 기본값인 `false`을(를) 사용하면 작업이 수행됩니다.
 
 * 반환되는 값: 다시 시작되는 워크플로 인스턴스 목록입니다.
 
-**fetchModelist** 모든 워크플로우 모델을 나열합니다.
+**fetchModelList** 모든 워크플로 모델을 나열합니다.
 
 * 인수: 없음
 * 반환된 값: ModelId 및 ModelName 열을 포함하여 워크플로 모델을 식별하는 테이블 형식 데이터입니다.
 
-**countRunningWorkflows** 실행 중인 워크플로 인스턴스 수를 반환합니다. 모든 워크플로우 모델 또는 특정 모델에 대해 실행 중인 인스턴스 수를 검색할 수 있습니다.
+**countRunningWorkflow**&#x200B;실행 중인 워크플로 인스턴스 수를 반환합니다. 모든 워크플로우 모델 또는 특정 모델에 대해 실행 중인 인스턴스 수를 검색할 수 있습니다.
 
 * 인수:
 
@@ -184,7 +184,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
 * 반환된 값: 실행 중인 워크플로 인스턴스 수입니다.
 
-**countCompletedWorkflows** 완료된 워크플로 인스턴스 수를 반환합니다. 모든 워크플로우 모델 또는 특정 모델에 대해 완료된 인스턴스 수를 검색할 수 있습니다.
+**countCompletedWorkflow** 완료된 워크플로 인스턴스 수를 반환합니다. 모든 워크플로우 모델 또는 특정 모델에 대해 완료된 인스턴스 수를 검색할 수 있습니다.
 
 * 인수:
 
@@ -194,7 +194,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
 * 반환된 값: 완료된 워크플로 인스턴스 수입니다.
 
-**purgeComplete** 저장소에서 특정 시대의 완료된 워크플로 기록을 제거합니다. 워크플로우를 많이 사용하는 경우 저장소 크기를 최소화하려면 이 작업을 정기적으로 사용하십시오. 모든 모델의 완료된 인스턴스를 제거하거나 특정 모델의 인스턴스만 제거할 수 있습니다. 선택적으로 작업을 테스트하여 실제로 작업을 수행하지 않고도 결과를 확인할 수 있습니다.
+**purgeCompleted** 특정 연령의 완료된 워크플로우의 레코드를 저장소에서 제거합니다. 워크플로우를 많이 사용하는 경우 저장소 크기를 최소화하려면 이 작업을 정기적으로 사용하십시오. 모든 모델의 완료된 인스턴스를 제거하거나 특정 모델의 인스턴스만 제거할 수 있습니다. 선택적으로 작업을 테스트하여 실제로 작업을 수행하지 않고도 결과를 확인할 수 있습니다.
 
 * 인수:
 
@@ -202,7 +202,7 @@ JMX 콘솔을 사용하여 서비스를 관리하기 위한 MBean 생성에 대�
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * 워크플로우가 완료된 이후 일 수: 워크플로우 인스턴스가 완료된 상태입니다.
-   * 시험 실행: (선택 사항) 다음 값을 지정합니다. `true` 실제로 작업을 수행하지 않고도 작업 결과를 볼 수 있습니다. 기본값 `false` 작업을 수행합니다.
+   * 시험 실행: (선택 사항) 실제로 작업을 수행하지 않고 작업 결과를 보려면 `true` 값을 지정합니다. 기본값인 `false`을(를) 사용하면 작업이 수행됩니다.
 
 * 반환된 값: 다음 열을 포함하여 삭제된 완료된 워크플로 인스턴스에 대한 테이블 형식 데이터입니다.
 
@@ -224,13 +224,13 @@ CRX 저장소에 대한 정보
 
 **이름** JCR 저장소 구현의 이름입니다. 읽기 전용.
 
-**버전** 저장소 구현 버전. 읽기 전용.
+**버전** 저장소 구현 버전입니다. 읽기 전용.
 
-**HomeDir** 저장소가 있는 디렉토리입니다. 기본 위치는 입니다. &lt;quickstart_jar_location>/crx-quickstart/repository. 읽기 전용.
+**HomeDir** 리포지토리가 있는 디렉터리입니다. 기본 위치는 &lt;QuickStart_Jar_Location>/crx-quickstart/repository입니다. 읽기 전용.
 
-**고객 이름** 소프트웨어 라이선스를 발급받은 고객의 이름입니다. 읽기 전용.
+**CustomerName** 소프트웨어 라이선스를 발급받은 고객의 이름입니다. 읽기 전용.
 
-**라이센스 키** 이 저장소 설치에 대한 고유 라이센스 키입니다. 읽기 전용.
+**LicenseKey** 이 저장소 설치에 대한 고유한 라이선스 키입니다. 읽기 전용.
 
 **AvailableDiskSpace** 이 저장소 인스턴스에 사용할 수 있는 디스크 공간(MB)입니다. 읽기 전용.
 
@@ -488,21 +488,21 @@ CRX 저장소에 대한 정보
  </tbody>
 </table>
 
-**작업 영역 이름** 저장소에 있는 작업 공간의 이름입니다. 읽기 전용.
+**WorkspaceNames** 저장소의 작업 공간 이름입니다. 읽기 전용.
 
-**DataStoreGarageCollectionDelay** 10번째 노드마다 검색한 후 가비지 수집이 중단되는 시간(밀리초)입니다. 읽기/쓰기.
+**DataStoreGarbageCollectionDelay** 10번째 노드마다 검색한 후 가비지 수집이 중단되는 시간(밀리초)입니다. 읽기/쓰기.
 
 **BackupDelay** 백업의 각 단계 사이에 백업 프로세스가 중단되는 시간(밀리초)입니다. 읽기/쓰기.
 
-**백업 진행 중** 값이 true이면 백업 프로세스가 실행 중임을 나타냅니다. 읽기 전용.
+**BackupInProgress** true 값은 백업 프로세스가 실행 중임을 나타냅니다. 읽기 전용.
 
-**백업 진행 상황** 현재 백업의 경우 백업된 모든 파일의 비율입니다. 읽기 전용.
+**BackupProgress** 현재 백업의 경우 백업된 모든 파일의 비율입니다. 읽기 전용.
 
-**현재 백업 대상** 현재 백업의 경우 백업 파일이 저장되는 ZIP 파일입니다. 백업이 진행 중이 아니면 값이 나타나지 않습니다. 읽기 전용.
+**CurrentBackupTarget** 현재 백업의 경우 백업 파일이 저장되는 ZIP 파일입니다. 백업이 진행 중이 아니면 값이 나타나지 않습니다. 읽기 전용.
 
-**BackupWasSucceeded** 값이 true이면 현재 백업 중에 오류가 발생하지 않았거나 진행 중인 백업이 없음을 나타냅니다. false는 현재 백업 중에 오류가 발생했음을 나타냅니다. 읽기 전용.
+**BackupWasSuccessful** true 값은 현재 백업 중에 오류가 발생하지 않았거나 진행 중인 백업이 없음을 나타냅니다. false는 현재 백업 중에 오류가 발생했음을 나타냅니다. 읽기 전용.
 
-**백업 결과** 현재 백업의 상태입니다. 다음 값을 사용할 수 있습니다.
+**BackupResult** 현재 백업의 상태입니다. 다음 값을 사용할 수 있습니다.
 
 * 백업 진행 중: 백업이 현재 실행 중입니다.
 * 백업 취소됨: 백업이 취소되었습니다.
@@ -514,21 +514,21 @@ CRX 저장소에 대한 정보
 
 **TarOptimizationRunningSince** 현재 TAR 파일 최적화 프로세스가 시작된 시간입니다. 읽기 전용.
 
-**TarOptimizationDelay** TAR 최적화 프로세스가 프로세스의 각 단계 간에 휴지(sleep)하는 시간(밀리초)입니다. 읽기/쓰기.
+**TarOptimizationDelay** TAR 최적화 프로세스가 프로세스의 각 단계 사이에서 절전 모드로 전환하는 시간(밀리초)입니다. 읽기/쓰기.
 
-**클러스터 속성** 클러스터 속성 및 값을 나타내는 키-값 쌍 집합입니다. 테이블의 각 행은 클러스터 속성을 나타냅니다. 읽기 전용.
+**ClusterProperties** 클러스터 속성 및 값을 나타내는 키-값 쌍 집합입니다. 테이블의 각 행은 클러스터 속성을 나타냅니다. 읽기 전용.
 
-**클러스터 노드** 저장소 클러스터의 멤버입니다.
+**ClusterNodes** 저장소 클러스터의 구성원입니다.
 
-**클러스터 ID** 이 저장소 클러스터의 식별자입니다. 읽기 전용.
+**ClusterId** 이 저장소 클러스터의 식별자입니다. 읽기 전용.
 
-**클러스터 마스터 ID** 이 저장소 클러스터의 마스터 노드 식별자입니다. 읽기 전용.
+**ClusterMasterId** 이 저장소 클러스터의 마스터 노드 식별자입니다. 읽기 전용.
 
-**ClusterNodeId** 저장소 클러스터의 해당 노드에 대한 식별자. 읽기 전용.
+**ClusterNodeId** 저장소 클러스터의 이 노드에 대한 식별자입니다. 읽기 전용.
 
 ### 작업 {#operations-1}
 
-**createWorkspace** 이 저장소에 작업 공간을 만듭니다.
+**createWorkspace** 이 리포지토리에 작업 영역을 만듭니다.
 
 * 인수:
 
@@ -536,7 +536,7 @@ CRX 저장소에 대한 정보
 
 * 반환된 값: 없음
 
-**runDataStoreGarbageCollection** 저장소 노드에 대한 가비지 수집을 실행합니다.
+**runDataStoreGarbageCollection** 저장소 노드에서 가비지 수집을 실행합니다.
 
 * 인수:
 
@@ -549,36 +549,36 @@ CRX 저장소에 대한 정보
 * 인수: 없음
 * 반환된 값: 현재 상태의 문자열 표현
 
-**startBackup** ZIP 파일에 저장소 데이터를 백업합니다.
+**startBackup** ZIP 파일의 저장소 데이터를 백업합니다.
 
 * 인수:
 
-   * `target`: (선택 사항) A `String` 저장소 데이터를 보관할 ZIP 파일 또는 디렉터리의 이름을 나타내는 값입니다. ZIP 파일을 사용하려면 ZIP 파일 이름 확장명을 포함하십시오. 디렉터리를 사용하려면 파일 이름 확장명을 포함하지 않습니다.
+   * `target`: (선택 사항) 저장소 데이터를 보관할 ZIP 파일 또는 디렉터리의 이름을 나타내는 `String` 값입니다. ZIP 파일을 사용하려면 ZIP 파일 이름 확장명을 포함하십시오. 디렉터리를 사용하려면 파일 이름 확장명을 포함하지 않습니다.
 
      증분 백업을 수행하려면 이전에 백업에 사용한 디렉토리를 지정합니다.
 
      절대 경로나 상대 경로를 지정할 수 있습니다. 상대 경로는 crx-quickstart 디렉토리의 상위에 상대적입니다.
 
-     값을 지정하지 않으면 기본값은 `backup-currentdate.zip` 사용됨, 위치 `currentdate` 이(가) 형식입니다. `yyyyMMdd-HHmm`.
+     값을 지정하지 않으면 `backup-currentdate.zip`의 기본값이 사용됩니다. 여기서 `currentdate`은(는) `yyyyMMdd-HHmm` 형식입니다.
 
 * 반환된 값: 없음
 
-**cancelBackup** 현재 백업 프로세스를 중지하고 데이터 보관을 위해 작성된 임시 아카이브를 삭제합니다.
+**cancelBackup** 현재 백업 프로세스를 중지하고 데이터 보관을 위해 만든 임시 보관을 삭제합니다.
 
 * 인수: 없음
 * 반환된 값: 없음
 
-**blockRepositoryWrite** 저장소 데이터에 대한 변경을 차단합니다. 모든 저장소 백업 리스너는 블록에 대한 알림을 받습니다.
+**blockRepositoryWrites** 저장소 데이터의 변경 내용을 차단합니다. 모든 저장소 백업 리스너는 블록에 대한 알림을 받습니다.
 
 * 인수: 없음
 * 반환된 값: 없음
 
-**저장소 쓰기 차단 해제** 저장소에서 블록을 제거합니다. 모든 저장소 백업 리스너는 블록 제거에 대한 알림을 받습니다.
+**unblockRepositoryWrites** 저장소에서 블록을 제거합니다. 모든 저장소 백업 리스너는 블록 제거에 대한 알림을 받습니다.
 
 * 인수: 없음
 * 반환된 값: 없음
 
-**startTar최적화** tarOptimizationDelay의 기본값을 사용하여 TAR 파일 최적화 프로세스를 시작합니다.
+**startTarOptimization** tarOptimizationDelay의 기본값을 사용하여 TAR 파일 최적화 프로세스를 시작합니다.
 
 * 인수: 없음
 * 반환된 값: 없음
@@ -588,7 +588,7 @@ CRX 저장소에 대한 정보
 * 인수: 없음
 * 반환된 값: 없음
 
-**tarIndexMerge** 모든 TAR 세트의 최상위 인덱스 파일을 병합합니다. 상위 인덱스 파일은 주요 버전이 다른 파일입니다. 예를 들어 index_1_1.tar, index_2_0.tar, index_3_0.tar 파일은 index_3_1.tar 파일에 병합됩니다. 병합된 파일이 삭제됩니다(이전 예에서는 index_1_1.tar, index_2_0.tar 및 index_3_0.tar가 삭제됨).
+**tarIndexMerge** 모든 TAR 집합의 최상위 인덱스 파일을 병합합니다. 상위 인덱스 파일은 주요 버전이 다른 파일입니다. 예를 들어 index_1_1.tar, index_2_0.tar, index_3_0.tar 파일은 index_3_1.tar 파일에 병합됩니다. 병합된 파일이 삭제됩니다(이전 예에서는 index_1_1.tar, index_2_0.tar 및 index_3_0.tar가 삭제됨).
 
 * 인수:
 
@@ -605,7 +605,7 @@ CRX 저장소에 대한 정보
 
 * 인수:
 
-   * `master`: 마스터 저장소 노드를 실행하는 컴퓨터의 IP 주소 또는 컴퓨터 이름을 나타내는 문자열 값입니다.
+   * `master`: 마스터 리포지토리 노드를 실행하는 컴퓨터의 IP 주소 또는 컴퓨터 이름을 나타내는 문자열 값입니다.
    * `username`: 클러스터로 인증하는 데 사용할 이름입니다.
    * `password`: 인증에 사용할 암호입니다.
 
@@ -617,11 +617,11 @@ CRX 저장소에 대한 정보
 
 ## 저장소 통계(시계열) {#repository-statistics-timeseries}
 
-다음을 수행하는 각 통계 유형에 대한 시계열 필드의 값 `org.apache.jackrabbit.api.stats.RepositoryStatistics` 을 정의합니다.
+`org.apache.jackrabbit.api.stats.RepositoryStatistics`이(가) 정의하는 각 통계 형식에 대한 시계열 필드의 값입니다.
 
 * 도메인: `com.adobe.granite`
 * 유형: `TimeSeries`
-* 이름: 다음 값 중 하나 `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` 열거형 클래스:
+* 이름: `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Enum 클래스의 다음 값 중 하나:
 
    * BUNDLE_CACHE_ACCESS_COUNTER
    * BUNDLE_CACHE_MISS_AVERAGE
@@ -664,13 +664,13 @@ CRX 저장소에 대한 정보
 
 ### 속성 {#attributes-2}
 
-**느린 쿼리** 완료하는 데 가장 오랜 시간이 걸린 저장소 쿼리에 대한 정보입니다. 읽기 전용.
+**SlowQueries** 완료하는 데 가장 오래 걸린 저장소 쿼리에 대한 정보입니다. 읽기 전용.
 
 **SlowQueriesQueueSize** SlowQueries 목록에 포함할 최대 쿼리 수입니다. 읽기-쓰기.
 
-**인기 쿼리** 가장 많이 발생한 저장소 쿼리에 대한 정보입니다. 읽기 전용.
+**자주 찾는 쿼리** 가장 많이 발생한 저장소 쿼리에 대한 정보입니다. 읽기 전용.
 
-**PopularQueryQueueSize** PopularQueries 목록의 최대 쿼리 수입니다. 읽기-쓰기.
+**PopularQueriesQueueSize** PopularQueries 목록의 최대 쿼리 수입니다. 읽기-쓰기.
 
 ### 작업 {#operations-2}
 
@@ -691,51 +691,51 @@ CRX 저장소에 대한 정보
 * **도메인:** com.adobe.granite.replication
 * **유형:** 에이전트
 * **이름:** 값 없음
-* **속성:** {id=&quot;*이름*&quot;}, 여기서 *이름* 는 에이전트 이름 속성의 값입니다.
+* **속성:** {id=&quot;*이름*&quot;}. 여기서 *이름*&#x200B;은(는) 에이전트 이름 속성의 값입니다.
 
 ### 속성 {#attributes-3}
 
 **Id** 복제 에이전트 구성의 식별자를 나타내는 문자열 값입니다. 여러 에이전트가 동일한 구성을 사용할 수 있습니다. 읽기 전용.
 
-**유효** 에이전트가 올바르게 구성되었는지 여부를 나타내는 부울 값:
+**유효** 에이전트가 올바르게 구성되었는지 여부를 나타내는 부울 값입니다.
 
-* `true`: 유효한 구성입니다.
+* `true`: 올바른 구성입니다.
 * `false` : 구성에 오류가 있습니다.
 
 읽기 전용.
 
 **활성화됨** 에이전트가 활성화되었는지 여부를 나타내는 부울 값:
 
-* `true`: 활성화되었습니다.
-* `false`: 비활성화되었습니다.
+* `true`: 사용.
+* `false`: 사용하지 않도록 설정되었습니다.
 
-**큐 차단됨** 큐가 존재하는지, 차단되었는지 여부를 나타내는 부울 값:
+**QueueBlocked** 큐가 있고 차단되었는지 여부를 나타내는 부울 값입니다.
 
 * `true`: 차단됨. 자동 재시도가 보류 중입니다.
 * `false`: 차단되지 않았거나 존재하지 않습니다.
 
 읽기 전용.
 
-**큐 일시 중지됨** 작업 큐가 일시 중지되었는지 여부를 나타내는 부울 값:
+**QueuePaused** 작업 큐가 일시 중지되었는지 여부를 나타내는 부울 값입니다.
 
 * `true`: 일시 중단됨(일시 중단됨)
-* `false`: 일시 정지되지 않았거나 존재하지 않습니다.
+* `false`: 일시 중지되지 않았거나 존재하지 않습니다.
 
 읽기-쓰기.
 
-**QueueNumEntry** 에이전트 큐의 작업 수를 나타내는 int 값입니다. 읽기 전용.
+**QueueNumEntries** 에이전트 큐의 작업 수를 나타내는 int 값입니다. 읽기 전용.
 
-**QueueStatusTime** 표시된 상태 값을 가져올 때 서버의 시간을 나타내는 날짜 값입니다. 값은 페이지가 로드된 시간과 일치합니다. 읽기 전용.
+**QueueStatusTime** 표시된 상태 값을 가져올 때 서버의 시간을 나타내는 Date 값입니다. 값은 페이지가 로드된 시간과 일치합니다. 읽기 전용.
 
-**QueueNextRetryTime** 차단된 대기열의 경우 다음 자동 재시도 발생 시기를 나타내는 날짜 값. 시간이 나타나지 않으면 큐가 차단되지 않습니다. 읽기 전용.
+**QueueNextRetryTime** 차단된 큐의 경우 다음 자동 다시 시도 시간을 나타내는 Date 값입니다. 시간이 나타나지 않으면 큐가 차단되지 않습니다. 읽기 전용.
 
-**이후 큐 처리** 현재 작업에 대한 처리가 시작된 시기를 나타내는 날짜 값입니다. 시간이 나타나지 않으면 대기열이 차단되거나 유휴 상태가 됩니다. 읽기 전용.
+**QueueProcessingSince** 현재 작업에 대한 처리가 시작된 시기를 나타내는 Date 값입니다. 시간이 나타나지 않으면 대기열이 차단되거나 유휴 상태가 됩니다. 읽기 전용.
 
-**큐 마지막 처리 시간** 이전 작업이 완료된 시기를 나타내는 날짜 값입니다. 읽기 전용.
+**QueueLastProcessTime** 이전 작업이 완료된 시기를 나타내는 날짜 값입니다. 읽기 전용.
 
 ### 작업 {#operations-3}
 
-**queueForceRetry** 차단된 대기열의 경우 다시 시도 명령을 대기열에 실행합니다.
+**queueForceRetry** 차단된 대기열의 경우 다시 시도 명령을 대기열로 보냅니다.
 
 * 인수: 없음
 * 반환된 값: 없음
@@ -755,19 +755,19 @@ SlingRequestProcessor 서비스의 성능을 모니터링할 수 있도록 HTTP 
 
 ### 속성 {#attributes-4}
 
-**요청 수** 통계가 마지막으로 재설정된 이후 발생한 요청 수입니다.
+**RequestsCount** 통계를 마지막으로 다시 설정한 후 발생한 요청 수입니다.
 
 **MinRequestDurationMsec** 통계가 마지막으로 재설정된 이후 요청을 처리하는 데 필요한 가장 짧은 시간(밀리초)입니다.
 
 **MaxRequestDurationMsec** 통계가 마지막으로 재설정된 이후 요청을 처리하는 데 필요한 가장 긴 시간(밀리초)입니다.
 
-**표준 편차 기간(밀리초)** 요청을 처리하는 데 필요한 시간의 표준 편차입니다. 표준 편차는 통계가 마지막으로 재설정된 이후 모든 요청을 사용하여 계산됩니다.
+**StandardDeviationDurationMsec** 요청을 처리하는 데 필요한 시간의 표준 편차입니다. 표준 편차는 통계가 마지막으로 재설정된 이후 모든 요청을 사용하여 계산됩니다.
 
-**MeanRequestDurationMs** 요청을 처리하는 데 필요한 평균 시간입니다. 평균은 통계가 마지막으로 재설정된 이후 모든 요청을 사용하여 계산됩니다
+**MeanRequestDurationMsec** 요청을 처리하는 데 필요한 평균 시간입니다. 평균은 통계가 마지막으로 재설정된 이후 모든 요청을 사용하여 계산됩니다
 
 ### 작업 {#operations-4}
 
-**reset통계량** 모든 통계를 0으로 설정합니다. 특정 기간 동안 요청 처리 성능을 분석해야 하는 경우 통계를 재설정합니다.
+**resetStatistics** 모든 통계를 0으로 설정합니다. 특정 기간 동안 요청 처리 성능을 분석해야 하는 경우 통계를 재설정합니다.
 
 * 인수: 없음
 * 반환된 값: 없음
@@ -779,11 +779,11 @@ SlingRequestProcessor 서비스의 성능을 모니터링할 수 있도록 HTTP 
 * `true`: 설치됨.
 * `false`: 설치되지 않았습니다.
 
-**설치자** 패키지를 마지막으로 설치한 사용자의 ID.
+**설치자** 패키지를 마지막으로 설치한 사용자의 ID입니다.
 
 **installedDate** 패키지를 마지막으로 설치한 날짜입니다.
 
-**크기** 패키지 크기를 바이트 단위로 유지하는 긴 값입니다.
+**size** 패키지 크기를 바이트 단위로 유지하는 Long 값입니다.
 
 
 ## 빠른 시작 런처 {#quickstart-launcher}
@@ -801,7 +801,7 @@ SlingRequestProcessor 서비스의 성능을 모니터링할 수 있도록 HTTP 
 
 인수:
 
-* p1: A `String` 표시할 메시지를 나타내는 값입니다.
+* p1: 표시할 메시지를 나타내는 `String` 값입니다.
 * 반환된 값: 없음
 
 **startupFinished**
@@ -893,9 +893,9 @@ JMX 콘솔의 기본 페이지에는 서비스 테이블이 포함되어 있습�
 
 ## 모니터링을 위해 외부 JMX 응용 프로그램 사용 {#using-external-jmx-applications-for-monitoring}
 
-CRX를 통해 외부 애플리케이션이 를 통해 Managed Bean(MBean)과 상호 작용할 수 있습니다. [JMX(Java Management Extensions)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). 다음과 같은 범용 콘솔 사용 [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) 또는 도메인별 모니터링 애플리케이션을 통해 CRX 구성 및 속성을 가져오고 설정하고 성능 및 리소스 사용을 모니터링할 수 있습니다.
+CRX을 사용하면 외부 애플리케이션이 [JMX(Java Management Extensions)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html)을(를) 통해 MBean(Managed Beans)과 상호 작용할 수 있습니다. [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) 또는 도메인별 모니터링 응용 프로그램과 같은 일반 콘솔을 사용하면 CRX 구성 및 속성을 가져오고 설정할 수 있으며 성능 및 리소스 사용을 모니터링할 수 있습니다.
 
-### JConsole을 사용하여 CRX에 연결 {#using-jconsole-to-connect-to-crx}
+### JConsole을 사용하여 CRX 연결 {#using-jconsole-to-connect-to-crx}
 
 JConsole을 사용하여 CRX에 연결하려면 다음 단계를 따르십시오.
 
@@ -920,13 +920,13 @@ JConsole은 로컬 Java Virtual Machine 프로세스 목록을 표시합니다. 
 
 `com.sun.management.jmxremote.port=portNum`
 
-위의 속성에서, `portNum` 는 JMX RMI 연결을 활성화할 포트 번호입니다. 사용하지 않는 포트 번호를 지정해야 합니다. 이 속성을 설정하면 로컬 액세스용 RMI 커넥터를 게시하는 것 외에도 잘 알려진 이름인 &quot;jmxrmi&quot;를 사용하여 지정된 포트의 개인 읽기 전용 레지스트리에 추가 RMI 커넥터가 게시됩니다.
+위의 속성에서 `portNum`은(는) JMX RMI 연결을 사용할 포트 번호입니다. 사용하지 않는 포트 번호를 지정해야 합니다. 이 속성을 설정하면 로컬 액세스용 RMI 커넥터를 게시하는 것 외에도 잘 알려진 이름인 &quot;jmxrmi&quot;를 사용하여 지정된 포트의 개인 읽기 전용 레지스트리에 추가 RMI 커넥터가 게시됩니다.
 
 기본적으로 원격 모니터링을 위해 JMX 에이전트를 활성화하면 Java VM을 시작할 때 다음 시스템 속성을 사용하여 지정해야 하는 암호 파일을 기반으로 하는 암호 인증이 사용됩니다.
 
 `com.sun.management.jmxremote.password.file=pwFilePath`
 
-다음을 참조하십시오. [관련 JMX 설명서](https://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html) 암호 파일 설정에 대한 자세한 지침을 보려면 여기를 클릭하십시오.
+암호 파일 설정에 대한 자세한 지침은 [관련 JMX 설명서](https://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html)를 참조하세요.
 
 예:
 
@@ -939,7 +939,7 @@ $ java
 
 ### CRX에서 제공한 MBean 사용 {#using-the-mbeans-provided-by-crx}
 
-JConsole은 빠른 시작 프로세스에 연결한 후 CRX가 실행 중인 JVM에 대한 다양한 일반 모니터링 도구를 제공합니다.
+JConsole은 빠른 시작 프로세스에 연결한 후 CRX이 실행 중인 JVM에 대한 다양한 일반 모니터링 도구를 제공합니다.
 
 ![screen_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
 

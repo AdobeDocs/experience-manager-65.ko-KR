@@ -20,17 +20,17 @@ ht-degree: 10%
 
 AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 옵트인 절차가 있습니다. 관리자 사용자 그룹에 할당된 미리 로드된 작업으로 즉시 사용할 수 있습니다.
 
-관리자로 로그인할 때 이 작업(**Analytics &amp; Targeting 구성**)은 다음에서 사용할 수 있습니다. [받은 편지함](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks). 제공한 자격 증명을 기반으로 이러한 서비스를 구성하고 통합하는 데 도움이 됩니다.
+관리자로 로그인하면 [받은 편지함](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks)에서 이 작업(**분석 및 타깃팅 구성**)을 사용할 수 있습니다. 제공한 자격 증명을 기반으로 이러한 서비스를 구성하고 통합하는 데 도움이 됩니다.
 
 통합을 구성하기 위한 다음과 같은 옵션이 있습니다.
 
 * 작업을 통해 통합을 구성합니다.
 
-  이 작업은 즉시 또는 나중에 수행할 수 있으며, 일부 작업이 수행될 때까지 작업은 받은 편지함에 유지됩니다. 두 경우 모두 UI에서 직접 구성하거나 사전 정의된 를 사용하여 구성할 수 있습니다 `.properties` 파일.
+  이 작업은 즉시 또는 나중에 수행할 수 있으며, 일부 작업이 수행될 때까지 작업은 받은 편지함에 유지됩니다. 두 경우 모두 UI에서 직접 구성하거나 사전 정의된 `.properties` 파일을 사용하여 구성할 수 있습니다.
 
 * 통합을 옵트아웃합니다.
 
-  다음을 원하는 경우 이 옵션을 고려하십시오. [수동으로 통합 구성](/help/sites-administering/marketing-cloud.md). 참조: [DTM을 사용하여 AEM과 Adobe Target 및 Adobe Analytics 통합](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+  [수동으로 통합을 구성](/help/sites-administering/marketing-cloud.md)하려면 이 옵션을 고려하십시오. [DTM을 사용하여 AEM과 Adobe Target 및 Adobe Analytics 통합](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)도 참조하세요.
 
 * 스크립트를 사용하여 설정 및 프로비저닝을 구성합니다.
 
@@ -45,7 +45,7 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
 
 >[!NOTE]
 >
->서버 시작 시 읽히는 속성 파일을 사용하여 Analytics 및 Target 계정 정보를 선택적으로 제공할 수 있습니다. 다음을 참조하십시오 [속성 파일을 사용하여 계정 정보 제공](/help/sites-administering/opt-in.md#providing-account-information-using-a-properties-file).
+>서버 시작 시 읽히는 속성 파일을 사용하여 Analytics 및 Target 계정 정보를 선택적으로 제공할 수 있습니다. [속성 파일을 사용하여 계정 정보 제공](/help/sites-administering/opt-in.md#providing-account-information-using-a-properties-file)을 참조하세요.
 
 통합을 선택하면 AEM이 다음 작업을 수행합니다.
 
@@ -55,31 +55,31 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
 
 >[!NOTE]
 >
->AT.js는 기본 클라이언트 라이브러리입니다. 이 구성은 [target cloud services 구성](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration).
+>AT.js는 기본 클라이언트 라이브러리입니다. [대상 클라우드 서비스 구성](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration)에 구성되어 있습니다.
 >
 >Adobe은 AT.js를 클라이언트 라이브러리로 사용할 것을 권장합니다.
 
 사전 로드된 기본 작업에서 옵트인하려면:
 
-1. 출처: [받은 편지함, 선택 및 **열기** 분석 및 타깃팅 구성](/help/sites-authoring/inbox.md#taking-action-on-an-item) 작업.
+1. [받은 편지함에서 Analytics 및 타깃팅 구성](/help/sites-authoring/inbox.md#taking-action-on-an-item) 작업을 선택하고 **열기**&#x200B;합니다.
 
    ![optin-01](assets/optin-01.png)
 
 1. Analytics용:
 
-   1. Analytics에 대한 사용자 계정 정보를 입력한 다음 해당 을 클릭합니다 **추가** 단추를 클릭합니다.
+   1. Analytics의 사용자 계정 정보를 입력한 다음 해당 **추가** 단추를 클릭합니다.
    1. 적절한 자격 증명이 인증됩니다.
-   1. Analytics 계정이 인증되면 사용할 Analytics 보고서 세트를 선택합니다. AEM은 해당 Analytics 보고서 세트를 검색합니다. 상태가 다음으로 업데이트됨 **추가됨**.
+   1. Analytics 계정이 인증되면 사용할 Analytics 보고서 세트를 선택합니다. AEM은 해당 Analytics 보고서 세트를 검색합니다. 상태가 **추가됨**(으)로 업데이트되었습니다.
 
 1. Target용:
 
-   1. Target에 대한 사용자 계정 정보를 입력한 다음 해당 을 클릭합니다 **추가** 단추를 클릭합니다.
-   1. 적절한 자격 증명이 인증됩니다. 상태가 다음으로 업데이트됨 **추가됨**.
+   1. Target에 대한 사용자 계정 정보를 입력한 다음 해당 **추가** 단추를 클릭합니다.
+   1. 적절한 자격 증명이 인증됩니다. 상태가 **추가됨**(으)로 업데이트되었습니다.
 
 1. **다음**&#x200B;을 선택합니다.
 1. Analytics 및/또는 Target을 사용해야 하는 사이트를 선택합니다.
 
-1. 선택 **완료** 완료를 위해.
+1. **완료**&#x200B;를 선택하여 완료하십시오.
 
    >[!CAUTION]
    >
@@ -92,11 +92,11 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
 * 이러한 제품과 통합하지 않으려고 합니다.
 * 통합을 수동으로 구성하기를 선호합니다.
 
-  수동으로 통합 구성에 대한 자세한 내용은 다음을 참조하십시오. [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics.md) 및 [Adobe Target과 통합](/help/sites-administering/target.md).
+  수동으로 통합을 구성하는 방법에 대한 자세한 내용은 [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics.md) 및 [Adobe Target과 통합](/help/sites-administering/target.md)을 참조하십시오.
 
 옵트아웃하려면 사전 로드된 작업을 완료해야 합니다.
 
-* 출처: [받은 편지함, 선택 및 **완료** 분석 및 타깃팅 구성](/help/sites-authoring/inbox.md#taking-action-on-an-item) 작업.
+* [받은 편지함에서 Analytics 및 타깃팅 구성](/help/sites-authoring/inbox.md#taking-action-on-an-item) 작업을 선택하고 **완료**&#x200B;합니다.
 
 ## 속성 파일을 사용하여 계정 정보 제공 {#providing-account-information-using-a-properties-file}
 
@@ -113,9 +113,9 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
 * target.email: Target 계정을 인증하는 데 사용하는 이메일 주소입니다.
 * target.password: 이메일 주소와 연결된 암호입니다.
 
-속성과 값은 등호(=)로 구분됩니다. Analytics 속성 앞에는 가 붙습니다. `analytics`, Target 속성 앞에 가 붙습니다. `target`. 서비스를 구성하려면 해당 서비스의 모든 속성에 대한 값을 제공합니다. 서비스를 구성하지 않으려면 해당 서비스에 대한 값을 제공하지 마십시오.
+속성과 값은 등호(=)로 구분됩니다. Analytics 속성에는 접두사가 `analytics`이고 Target 속성에는 접두사가 `target`입니다. 서비스를 구성하려면 해당 서비스의 모든 속성에 대한 값을 제공합니다. 서비스를 구성하지 않으려면 해당 서비스에 대한 값을 제공하지 마십시오.
 
-다음 예 `.properties` 파일에는 Analytics용 클라우드 구성을 만들기 위한 속성 값이 포함되어 있습니다.
+다음 예제 `.properties` 파일에는 Analytics에 대한 클라우드 구성을 만들기 위한 속성 값이 포함되어 있습니다.
 
 ```xml
 analytics.server=https://test.omniture.com/login/
@@ -130,11 +130,11 @@ target.password=
 
 다음 절차에서는 속성 파일을 사용하여 통합을 옵트인하는 방법을 설명합니다.
 
-1. 만들기 `marketingcloud.properties` AEM 프로세스에서 사용 중인 작업 디렉토리(작성자 인스턴스)의 파일입니다.
+1. AEM 프로세스에서 사용 중인 작업 디렉터리에 `marketingcloud.properties` 파일을 만듭니다(작성자 인스턴스).
 
    >[!NOTE]
    >
-   >작업 디렉토리는 일반적으로 jar 또는 `license.properties` 파일.
+   >작업 디렉터리는 일반적으로 jar 또는 `license.properties` 파일을 포함하는 디렉터리입니다.
    >
    >그러나 시스템 속성에 의해 절대 경로로 정의될 수도 있습니다.
    >
@@ -142,9 +142,9 @@ target.password=
 
 1. Analytics 및/또는 Target 계정에 따라 속성 값을 추가합니다.
 1. 서버를 시작하거나 다시 시작한 다음 관리자 계정을 사용하여 로그인합니다.
-1. 에 설명된 대로 Analytics &amp; Targeting 구성 작업을 엽니다 [통합 구성](/help/sites-administering/opt-in.md#configuring-the-integration). 마법사에서는 계정 정보를 요청하는 대신 `.properties` 파일.
+1. [통합 구성](/help/sites-administering/opt-in.md#configuring-the-integration)에 설명된 대로 Analytics &amp; Targeting 구성 작업을 엽니다. 마법사에서는 계정 정보를 요청하는 대신 `.properties` 파일의 값을 사용합니다.
 
-   선택 **추가** 그런 다음 마법사를 계속 사용하십시오.
+   적절한 서비스에 대해 **추가**&#x200B;를 선택한 다음 마법사를 계속합니다.
 
    ![optin-02](assets/optin-02.png)
 
@@ -152,7 +152,7 @@ target.password=
 
 Analytics 및 Target과의 통합을 구성하면 AEM이 필요한 클라우드 구성 및 프레임워크를 자동으로 생성합니다. 예를 들어 Analytics 클라우드 구성을 프로비저닝된 Analytics 계정이라고 합니다.
 
-클라우드 구성을 변경할 필요가 없습니다. 그러나 필요에 따라 프레임워크를 구성할 수 있습니다. (참조: [Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑](/help/sites-administering/adobeanalytics-mapping.md) 및 [Target 프레임워크 추가](/help/sites-administering/target.md).)
+클라우드 구성을 변경할 필요가 없습니다. 그러나 필요에 따라 프레임워크를 구성할 수 있습니다. ([구성 요소 데이터를 Adobe Analytics 속성과 매핑](/help/sites-administering/adobeanalytics-mapping.md) 및 [대상 프레임워크 추가](/help/sites-administering/target.md)를 참조하십시오.)
 
 >[!NOTE]
 >
@@ -166,19 +166,19 @@ Analytics 및 Target과의 통합을 구성하면 AEM이 필요한 클라우드 
 
 >[!CAUTION]
 >
->Analytics 구성 및 특정 `reportsuite` 을 선택하면 프레임워크가 게시 실행 모드로 제한됩니다. 즉, 추적은 게시 인스턴스에서만 작동합니다.
+>Analytics 구성을 선택하고 특정 `reportsuite`을(를) 선택하면 프레임워크가 게시 실행 모드로 제한됩니다. 즉, 추적은 게시 인스턴스에서만 작동합니다.
 >
->작성 인스턴스뿐만 아니라 추적이 필요한 경우 값을 (으)로 변경해야 합니다. `all`.
+>작성 인스턴스뿐만 아니라 추적도 필요한 경우 값을 `all`(으)로 변경해야 합니다.
 
 ## 스크립트를 통해 설정 및 프로비저닝 구성 {#configuring-the-setup-and-provisioning-via-script}
 
 관리자는 수동으로 마법사를 실행하는 대신 스크립트로 설정 및 프로비저닝을 트리거할 수 있습니다. 다음을 통해 작업을 수행할 수 있습니다.
 
-* 에 POST 요청 보내기 **/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json** 필수 매개 변수와 함께
+* 필수 매개 변수를 사용하여 **/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json**(으)로 POST 요청을 보내는 중입니다.
 
 보낼 매개 변수는 다음에 따라 다릅니다.
 
-* 을(를) 사용하려면 **marketingcloud.properties** 필요한 모든 자격 증명으로 채워진 파일을 보내려면 다음 매개 변수를 보내야 합니다.
+* 필요한 모든 자격 증명으로 채워진 **marketingcloud.properties** 파일을 사용하려면 다음 매개 변수를 전송해야 합니다.
 
    * `automaticProvisioning`= `true`
    * `servicename`= `analytics|target`
@@ -190,7 +190,7 @@ Analytics 및 Target과의 통합을 구성하면 AEM이 필요한 클라우드 
   curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
   ```
 
-* 를 사용하지 않으려면 **marketingcloud.properties** 그러면 자격 증명과 매개 변수를 전송해야 합니다. 예:
+* **marketingcloud.properties** 파일을 사용하지 않으려면 자격 증명과 매개 변수를 보내야 합니다. 예:
    * automaticProvisioning= `true`
    * servicename= `analytics|target`
    * path=생성된 클라우드 서비스 구성을 첨부할 AEM 페이지에 대한 경로. 여러 경로를 정의할 수 있습니다.

@@ -21,18 +21,18 @@ ht-degree: 0%
 
 AEM Forms을 사용하면 양식을 초안으로 저장할 수 있습니다. 초안 기능을 사용하면 모든 장치에서 나중에 작성 및 제출할 수 있는 진행 중인 양식 을 유지 관리할 수 있습니다.
 
-기본적으로 AEM Forms은 양식 초안 및 제출과 관련된 사용자 데이터를 `/content/forms/fp` 게시 인스턴스의 노드 또한 AEM Forms 포털 구성 요소는 데이터 서비스를 제공합니다. 이 데이터 서비스를 사용하여 초안 및 제출에 대한 사용자 데이터 저장 구현을 사용자 지정할 수 있습니다. 예를 들어 데이터 저장소에 사용자 데이터를 저장할 수 있습니다.
+기본적으로 AEM Forms은 Publish 인스턴스의 `/content/forms/fp` 노드에 양식 초안 및 제출과 관련된 사용자 데이터를 저장합니다. 또한 AEM Forms 포털 구성 요소는 데이터 서비스를 제공합니다. 이 데이터 서비스를 사용하여 초안 및 제출에 대한 사용자 데이터 저장 구현을 사용자 지정할 수 있습니다. 예를 들어 데이터 저장소에 사용자 데이터를 저장할 수 있습니다.
 
 ## 사전 요구 사항  {#prerequisites}
 
-* 사용 [Forms 포털 구성 요소](/help/forms/using/enabling-forms-portal-components.md)
-* 만들기 [Forms 포털 페이지](/help/forms/using/creating-form-portal-page.md)
-* 사용 [Forms 포털용 적응형 양식](/help/forms/using/draft-submission-component.md)
-* 학습 [사용자 정의 스토리지의 구현 세부 정보](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* [Forms 포털 구성 요소 사용](/help/forms/using/enabling-forms-portal-components.md)
+* [Forms 포털 페이지 만들기](/help/forms/using/creating-form-portal-page.md)
+* [Forms 포털용 적응형 양식 사용](/help/forms/using/draft-submission-component.md)
+* [사용자 지정 저장소의 구현 세부 정보](/help/forms/using/draft-submission-component.md#customizing-the-storage) 알아보기
 
 ## 초안 데이터 서비스 {#draft-data-service}
 
-초안에 대한 사용자 데이터 저장소를 사용자 지정하려면 의 모든 메서드를 구현해야 합니다 `DraftDataService` 인터페이스. 다음 샘플 코드에서는 메서드와 인수에 대해 설명합니다.
+초안에 대한 사용자 데이터 저장소를 사용자 지정하려면 `DraftDataService` 인터페이스의 모든 메서드를 구현해야 합니다. 다음 샘플 코드에서는 메서드와 인수에 대해 설명합니다.
 
 ```java
 /**
@@ -101,7 +101,7 @@ public interface DraftDataService {
 
 ## 제출 데이터 서비스 {#submission-data-service}
 
-제출을 위해 사용자 데이터의 저장소를 사용자 정의하려면 `SubmitDataService` 인터페이스. 다음 샘플 코드에서는 메서드와 인수에 대해 설명합니다.
+제출을 위해 사용자 데이터의 저장소를 사용자 지정하려면 `SubmitDataService` 인터페이스의 모든 메서드를 구현해야 합니다. 다음 샘플 코드에서는 메서드와 인수에 대해 설명합니다.
 
 ```java
 /**

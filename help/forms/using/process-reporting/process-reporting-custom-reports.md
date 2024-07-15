@@ -24,16 +24,16 @@ QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API를 사�
 
 사용자 정의 보고서를 추가하기 전에 다음 템플릿 절차를 수행하십시오.
 
-1. 사용자 지정 보고서에 사용된 데이터는 프로세스 보고에서 사용할 수 있어야 합니다. 데이터의 가용성을 보장하려면 cron 작업을 예약하거나 를 사용하십시오 **[동기화](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** 옵션을 사용할 수 있습니다.
-1. 원하는 쿼리를 캡슐화하는 URL 요청은 적절한 쿼리 결과 개체를 반환해야 합니다. 쿼리를 만들려면 다음 중 REST 인터페이스를 사용합니다. [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) QueryBuilder API를 사용하여 OSGi 서비스를 만듭니다. 동적 또는 정적 쿼리를 만들 수 있습니다.
+1. 사용자 지정 보고서에 사용된 데이터는 프로세스 보고에서 사용할 수 있어야 합니다. 데이터의 가용성을 확인하려면 cron 작업을 예약하거나 프로세스 보고 UI에서 **[동기화](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** 옵션을 사용하십시오.
+1. 원하는 쿼리를 캡슐화하는 URL 요청은 적절한 쿼리 결과 개체를 반환해야 합니다. 쿼리를 만들려면 [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)의 REST 인터페이스를 사용하여 QueryBuilder API를 사용하여 OSGi 서비스를 만들 수 있습니다. 동적 또는 정적 쿼리를 만들 수 있습니다.
 
 1. 결과를 표시할 사용자 지정 사용자 인터페이스를 만듭니다. 독립형 사용자 인터페이스를 만들거나 결과를 기존 프로세스 보고 UI와 통합할 수 있습니다.
 
 ## QueryBuilder의 REST 인터페이스 사용 {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 사용 방법 알아보기 [CRX QueryBuilder REST 인터페이스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en), 다음 단계를 수행하기 전에:
+CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 다음 단계를 수행하기 전에 [CRX QueryBuilder REST 인터페이스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)를 사용하는 방법을 알아보십시오.
 
-1. URL로 이동 `https://'[server]:[port]'/lc/bin/querybuilder.json`
+1. URL `https://'[server]:[port]'/lc/bin/querybuilder.json`(으)로 이동
 1. 프로세스 보고 저장 영역 노드 구조 및 노드 속성을 기반으로 쿼리를 만듭니다.
 
    선택적 매개 변수를 지정하여 오프셋, 제한, 히트 및 속성을 지정할 수 있습니다. 정적 보고서의 인수를 하드코딩하고 동적 보고서의 UI에서 매개 변수를 가져올 수 있습니다.
@@ -48,7 +48,7 @@ CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 
 
 ## Query Builder API를 사용하여 서비스 만들기  {#creating-a-service-using-query-builder-api-nbsp}
 
-Query Builder API를 사용하여 서비스를 만들기 위한 사전 요구 사항은 다음과 같습니다 [cq OSGI 번들 생성 및 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 및 [Query Builder API 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
+Query Builder API를 사용하여 서비스를 만들기 위한 필수 조건은 [CQ OSGI 번들 만들기 및 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 및 [Query Builder API 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)입니다.
 
 1. 적절한 주석을 사용하여 OSGi 서비스를 만듭니다. QueryBuilder에 액세스하려면 다음을 사용합니다.
 
@@ -64,7 +64,7 @@ Query Builder API를 사용하여 서비스를 만들기 위한 사전 요구 �
     predicateGroup.setAllRequired(true);
    ```
 
-1. 새로 생성된 predicateGroup에 술어를 추가합니다. 몇 가지 유용한 설명 구문은 다음과 같습니다 [5.3의 JcrBoolPropertyPredicateEvaluator](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR), [5.3의 JcrPropertyPredicateEvaluator](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR), [5.3의 RangePropertyPredicateEvaluator](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR), [5.3의 DateRangePredicateEvaluator](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR), 및 [5.3의 TypePredicateEvaluator](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR).
+1. 새로 생성된 predicateGroup에 술어를 추가합니다. 몇 가지 유용한 조건자 구문은 [5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 JcrBoolPropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [JcrPropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [RangePropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [DateRangePredicateEvaluator 및 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [TypePredicateEvaluator입니다.
 
    정적 보고서의 경우 술어를 하드코딩하지만 동적 보고서의 경우 요청에서 술어를 가져옵니다.
 
@@ -135,13 +135,13 @@ Query Builder API를 사용하여 서비스를 만들기 위한 사전 요구 �
                        out.write(row.toString().getBytes());
    ```
 
-1. 사용 `org.apache.felix maven-bundle-plugin` 을 눌러 서블릿에 대한 OSGi 번들을 생성합니다.
+1. `org.apache.felix maven-bundle-plugin`을(를) 사용하여 서블릿에 대한 OSGi 번들을 만드십시오.
 
 1. CRX 서버에 번들을 배포합니다.
 
 ### 서비스 예 {#service-example}
 
-다음 서비스 예제는 **실행 중** 및 **완료** 는 매월, 분기 및 연도의 끝에 표시됩니다.
+다음 서비스 예제에서는 매월, 분기 및 연말에 **RUNNING** 및 **COMPLETE** 상태인 프로세스의 인스턴스를 계산합니다.
 
 ```java
 package custom.reporting.service;
@@ -339,7 +339,7 @@ public class PeriodicProcessVolume {
 }
 ```
 
-샘플 `pom.xml`서비스 위에 빌드할 파일:
+서비스 위에 빌드할 샘플 `pom.xml`파일은 다음과 같습니다.
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
@@ -423,10 +423,10 @@ public class PeriodicProcessVolume {
 
 ## 별도의 UI 만들기  {#creating-a-separate-ui-nbsp}
 
-결과를 표시하기 위한 별도의 UI를 만들기 위한 사전 요구 사항은 다음과 같습니다 [5.6.1의 Sling 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR), [CRX 노드 만들기](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 및 적절한 [액세스 권한](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR).
+결과를 표시하는 별도의 UI를 만들기 위한 필수 조건은 [5.6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 Sling 기본 사항, [CRX 노드 만들기](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 및 적절한 [액세스 권한 제공](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)입니다.
 
-1. 에서 CRX 노드 만들기 `/apps` 적절한 액세스 권한을 부여합니다. (PERM_PROCESS_REPORTING_USER)
-1. 에서 렌더러를 정의합니다. `/content` 노드.
+1. `/apps` 노드에 CRX 노드를 만들고 적절한 액세스 권한을 부여합니다. (PERM_PROCESS_REPORTING_USER)
+1. `/content` 노드에서 렌더러를 정의합니다.
 1. 1단계에서 만든 노드에 JSP 또는 HTML 파일을 추가합니다. CSS 파일을 추가할 수도 있습니다.
 
    ![JSP 및 CSS 파일이 있는 샘플 노드](assets/nodewith_jsp_css_new.png)
@@ -631,33 +631,33 @@ response.setCharacterEncoding("utf-8");
 
 ## 기존 프로세스 보고 UI에 보고서 UI 통합  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-결과를 표시하기 위한 별도의 UI를 만들기 위한 사전 요구 사항은 다음과 같습니다 [Sling 기본 사항](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [CRX 노드 만들기](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) 및 적절한 [액세스 권한](/help/sites-developing/developing-with-crxde-lite.md#access-control).
+결과를 표시하기 위한 별도의 UI를 만들기 위한 필수 조건은 [Sling 기본 사항](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [CRX 노드 만들기](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) 및 적절한 [액세스 권한 제공](/help/sites-developing/developing-with-crxde-lite.md#access-control)입니다.
 
 1. 별도의 UI를 만듭니다.
-1. 하위 만들기 `nt:unstructured` 노드의 노드 `/content/process-reporting-runtime/custom-reports` 모든 플러그형 보고서에 대한 노드입니다.
+1. 모든 플러그 가능한 보고서에 대해 `/content/process-reporting-runtime/custom-reports` 노드에 하위 `nt:unstructured` 노드를 만듭니다.
 
-   * **id**- 보고서의 고유 식별 번호를 지정합니다.
+   * **id**- 보고서의 고유 ID 번호를 지정합니다.
    * **이름**- 보고서 이름을 지정합니다. 이름이 UI에 표시됩니다.
-   * **링크**- 개별 UI의 렌더러에 대한 상대 링크를 지정합니다. 링크는 1단계에서 만들어집니다.
+   * **link**- 개별 UI의 렌더러에 대한 상대 링크를 지정합니다. 링크는 1단계에서 만들어집니다.
    * **설명**- 보고서에 대한 한 줄 설명을 지정합니다. 설명 필드를 비워 둘 수 있습니다.
-   * **아이콘**- 보고서를 그림으로 나타낼 이미지를 지정합니다. 아이콘 필드를 비워 둘 수 있습니다.
+   * **icon**- 보고서를 그림으로 나타낼 이미지를 지정합니다. 아이콘 필드를 비워 둘 수 있습니다.
 
-   ![노드 속성 ](assets/node_properties_new.png)
+   ](assets/node_properties_new.png) 노드의 ![속성
 
    노드 속성
 
 1. 보고서 UI는 프로세스 보고 UI에 통합됩니다. UI를 통합하면 업데이트된 UI는 다음 이미지와 유사합니다.
 
-   ![새로 추가된 사용자 정의 보고서의 사용자 인터페이스](assets/sampleui_screenshot_new.png)
+   ![새로 추가된 사용자 지정 보고서의 사용자 인터페이스](assets/sampleui_screenshot_new.png)
 
    새로 추가된 사용자 정의 보고서의 사용자 인터페이스
 
-   ![사용자 정의 보고서의 결과 화면](assets/jsp_display_new.png)
+   사용자 지정 보고서의 ![결과 화면](assets/jsp_display_new.png)
 
    사용자 정의 보고서의 결과 화면
 
 ## 샘플 패키지 {#sample-package}
 
-가져오기 `sample-report-pkg-1.zip` 문서에서 설명한 사용자 지정 보고서 및 UI를 프로세스 관리 UI에 통합하는 패키지입니다.
+문서에서 설명한 사용자 지정 보고서 및 UI를 프로세스 관리 UI에 통합하려면 `sample-report-pkg-1.zip` 패키지를 가져옵니다.
 
 [파일 가져오기](assets/sample-report-pkg-1.zip)

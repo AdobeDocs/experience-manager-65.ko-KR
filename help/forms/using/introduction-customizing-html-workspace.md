@@ -37,7 +37,7 @@ AEM Forms 작업 영역은 사용자 인터페이스의 레이아웃, 모양, �
 
 AEM Forms 작업 영역의 모양, 레이아웃 및 기타 프레젠테이션 의미 체계를 변경할 수 있습니다. CSS, HTML 템플릿 및 JavaScript™ 파일을 사용자 정의하여 작업 영역을 변경합니다. 모든 기본 파일은 기본 설치에 제공됩니다.
 
-가장 일반적으로 적용 가능한 단계는에 설명되어 있습니다 [AEM Forms 작업 공간 사용자 정의에 대한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md). 자세한 단계를 포함하여 이러한 사용자 지정의 특정 예에 대해서는 이 문서의 끝에 있는 관련 문서를 참조하십시오.
+가장 일반적으로 적용 가능한 단계는 [AEM Forms 작업 영역 사용자 지정에 대한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md)에 나와 있습니다. 자세한 단계를 포함하여 이러한 사용자 지정의 특정 예에 대해서는 이 문서의 끝에 있는 관련 문서를 참조하십시오.
 
 #### 스타일 시트 이해 {#understanding-the-style-sheet}
 
@@ -126,22 +126,22 @@ CSS 사용자 지정의 최상위 단계는 다음과 같습니다.
 
 * CSS 파일을 만듭니다.
 * 이 CSS에 스타일 항목을 추가합니다. 자세한 내용은 CSS 스타일 이해 를 참조하십시오.
-* 에서 참조 업데이트 `html.jsp`.
+* `html.jsp`에서 참조를 업데이트합니다.
 
-이러한 사용자 정의를 수행하는 정확한 단계는 [AEM Forms 작업 공간 사용자 정의에 대한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md). AEM Forms 작업 영역과 함께 제공되는 CSS 파일은 /libs/ws/css/에 있습니다. CSS 관련 사용자 지정의 경우 [배송 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). CSS 관련 사용자 지정의 특정 예는 이 문서 끝에 있는 관련 도움말 항목을 참조하십시오.
+이러한 사용자 지정을 수행하는 정확한 단계는 [AEM Forms 작업 영역 사용자 지정을 위한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md)를 참조하십시오. AEM Forms 작업 영역과 함께 제공되는 CSS 파일은 /libs/ws/css/에 있습니다. CSS 관련 사용자 지정의 경우 [패키지 배달](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)을 사용하십시오. CSS 관련 사용자 지정의 특정 예는 이 문서 끝에 있는 관련 도움말 항목을 참조하십시오.
 
 #### 이미지 {#image}
 
-AEM Forms 작업 영역을 사용자 정의하여 사용자의 아바타를 추가하거나 조직의 로고를 추가할 수 있습니다. 이러한 사용자 지정의 경우 [배송 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+AEM Forms 작업 영역을 사용자 정의하여 사용자의 아바타를 추가하거나 조직의 로고를 추가할 수 있습니다. 이러한 사용자 지정의 경우 [패키지 배달](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)을 사용하십시오.
 
 이미지 맞춤화에 대한 최상위 단계는 다음과 같습니다.
 
 * WebDAV를 설치하고 구성합니다.
 * 새 이미지를 추가합니다.
 * 추가된 이미지에 해당하는 새 스타일을 추가합니다.
-* 의 새 CSS 파일에 대한 링크 `html.jsp` 파일.
+* `html.jsp` 파일의 새 CSS 파일에 연결합니다.
 
-AEM Forms 작업 영역에서 이미지 사용자 지정을 시작하려면 다음을 따르십시오. [AEM Forms 작업 공간 사용자 정의에 대한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md). 이미지 관련 사용자 지정의 특정 예는 이 문서 끝에 있는 관련 도움말 항목을 참조하십시오.
+AEM Forms 작업 영역에서 이미지 맞춤화를 시작하려면 [AEM Forms 작업 영역 맞춤화에 대한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md)를 따르십시오. 이미지 관련 사용자 지정의 특정 예는 이 문서 끝에 있는 관련 도움말 항목을 참조하십시오.
 
 #### HTML 템플릿 {#html-template}
 
@@ -153,7 +153,7 @@ HTML 템플릿에 대한 사용자 지정의 최상위 단계는 다음과 같�
 * 사용자 정의 폴더에 새 템플릿을 추가합니다.
 * 복사된 파일과 관련된 업데이트(예: 새 템플릿의 경로)를 수행합니다.
 
-이러한 사용자 지정의 특정 예는 이 문서의 끝에 제공된 도움말 항목을 참조하십시오. 다음 중 선택: [배송 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) 또는 [개발 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)사용자 지정할 템플릿에 따라 다릅니다.
+이러한 사용자 지정의 특정 예는 이 문서의 끝에 제공된 도움말 항목을 참조하십시오. 사용자 지정할 템플릿에 따라 [패키지 배송](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) 또는 [패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) 중에서 선택하십시오.
 
 ### 의미 변화 {#semantic-changes}
 
@@ -166,23 +166,23 @@ AEM Forms 작업 영역의 기능을 수정하기 위해 의미 체계 변경을
 * 기본 JavaScript 파일에서 새로 추가된 모델 및 보기의 경로를 업데이트하는 것과 같이 관련 있는 업데이트를 수행합니다.
 * 성능을 최적화하도록 패키지를 축소합니다.
 
-소스 코드의 일부인 구성 요소에 대한 자세한 개념적 정보는 [재사용 가능한 구성 요소에 대한 설명](/help/forms/using/description-reusable-components.md). 이러한 사용자 지정의 경우 개발 패키지를 사용하십시오.
+소스 코드의 일부인 구성 요소에 대한 개념적인 정보를 보려면 [재사용 가능한 구성 요소에 대한 설명](/help/forms/using/description-reusable-components.md)을 참조하십시오. 이러한 사용자 지정의 경우 개발 패키지를 사용하십시오.
 
 ### 재사용 가능한 구성 요소 {#reusable-components}
 
 AEM Forms 작업 영역은 구성 요소 기반 소프트웨어이므로 손쉽게 맞춤화하고 재사용할 수 있습니다. 작업 영역 구성 요소를 웹 애플리케이션과 쉽게 통합할 수 있습니다.
 
-자세한 개념적 정보는 [재사용 가능한 구성 요소에 대한 설명](/help/forms/using/description-reusable-components.md) 구성 요소 사용에 대한 지침은 [웹 애플리케이션에서 AEM Forms 작업 공간 구성 요소 통합](/help/forms/using/description-reusable-components.md).
+자세한 개념적 정보는 [재사용 가능한 구성 요소에 대한 설명](/help/forms/using/description-reusable-components.md)을 참조하고, 구성 요소 사용에 대한 지침은 [웹 응용 프로그램에서 AEM Forms 작업 영역 구성 요소 통합](/help/forms/using/description-reusable-components.md)을 참조하십시오.
 
 ## AEM Forms 작업 공간 코드 작성 {#building-html-workspace-code}
 
 ### SDK 패키지 {#sdk-package}
 
-패키지에는 AEM Forms 작업 공간의 소스 코드가 포함되어 있습니다. 패키지는 다음 위치에서 사용할 수 있습니다. `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
+패키지에는 AEM Forms 작업 공간의 소스 코드가 포함되어 있습니다. 패키지를 `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`에서 사용할 수 있습니다.
 
 다음을 생성하는 기능을 제공하므로 주로 사용자 지정을 위한 것입니다.
 
-* 배송, 디버그 및 개발 프로필용 CRX 패키지(다음에서 설명) [CRX 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
+* 배송, 디버그 및 개발 프로필용 CRX 패키지([CRX 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)에서 아래에 설명).
 * 사용자 지정된 코드의 축소된 버전(의미 체계 변경용).
 
 #### WS 콘텐츠 {#ws-content}
@@ -233,21 +233,21 @@ AEM Forms 작업 영역은 구성 요소 기반 소프트웨어이므로 손쉽�
 
 ### CRX 패키지 {#crx-package}
 
-CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. 다음에서 사용할 수 있습니다. `[LC root]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
+CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. `[LC root]\crx-repository\install\adobe-lc-workspace-pkg.zip`에서 사용할 수 있습니다.
 
 이 패키지는 아래에 설명된 세 가지 프로필을 사용하여 빌드할 수 있습니다.
 
 | **프로필** | **설명** | **사용량** |
 |---|---|---|
 | 출하 프로파일 | 이 프로필은 축소를 사용하여 가능한 가장 작은 크기의 CRX 패키지를 만듭니다. 이 패키지가 가장 효율적입니다. 모든 JavaScript™ 파일이 결합되어 단일 JS 파일로 축소됩니다. | JS 파일에서 추가적인 의미 있는 변경이 필요하지 않은 경우 이 프로필을 사용합니다. |
-| 프로필 디버그 | 이 프로필은 중간 효율의 CRX 패키지를 만듭니다. 패키지의 크기는 Ship profile을 사용하여 만든 패키지보다 약간 큽니다. 이 패키지에는 대부분의 JavaScript 파일이 단일 JS 파일로 결합되어 있습니다. | 디버깅에 이 프로필을 사용합니다. |
-| 개발 프로필 | 이 프로필은 가능한 가장 큰 크기의 CRX 패키지를 만듭니다. 모든 JavaScript 파일은 SDK 패키지에 있는 것처럼 별도로 사용할 수 있습니다. | 의미 체계 변경 사항을 통합할 때 이 프로필을 사용합니다. |
+| 프로필 디버그 | 이 프로필은 중간 수준의 효율적인 CRX 패키지를 만듭니다. 패키지의 크기는 Ship profile을 사용하여 만든 패키지보다 약간 큽니다. 이 패키지에는 대부분의 JavaScript 파일이 단일 JS 파일로 결합됩니다. | 디버깅에 이 프로필을 사용합니다. |
+| 개발 프로필 | 이 프로필은 가능한 가장 큰 크기의 CRX 패키지를 만듭니다. 모든 JavaScript 파일은 SDK 패키지에 있으므로 별도로 사용할 수 있습니다. | 의미 체계 변경 사항을 통합할 때 이 프로필을 사용합니다. |
 
 #### 출하 프로파일 {#ship-profile}
 
 #### 명령 {#command}
 
-* mvn clean -P 클라이언트에 배송된 소스 패키지의 client-pkg 폴더에 설치 배송.
+* mvn clean -P 클라이언트에 배송된 Source 패키지의 client-pkg 폴더에 설치 배송.
 * 배송 프로필 명령 실행은 64비트 JVM에서만 작동합니다.
 
 #### WS 콘텐츠 {#ws-content-1}

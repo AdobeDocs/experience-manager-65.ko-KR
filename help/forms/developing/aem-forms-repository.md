@@ -18,21 +18,21 @@ ht-degree: 0%
 
 # AEM Forms 저장소 작업 {#working-with-aem-forms-repository}
 
-**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
+**이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 **저장소 서비스 정보**
 
-저장소 서비스는 AEM Forms에 리소스 저장 및 관리 서비스를 제공합니다. 개발자가 다음을 만들 때 *AEM Forms* 애플리케이션에서 파일 시스템 대신 저장소에 에셋을 배포할 수 있습니다. 자산에는 XML 양식, PDF forms(Acrobat 양식 포함), 양식 단편, 이미지, 프로필, SWF, 정책 파일, DDX 파일, XML 스키마, WSDL 파일 및 테스트 데이터를 비롯한 모든 유형의 자료가 포함될 수 있습니다.
+저장소 서비스는 AEM Forms에 리소스 저장 및 관리 서비스를 제공합니다. 개발자가 *AEM Forms* 응용 프로그램을 만들 때 파일 시스템 대신 저장소에 자산을 배포할 수 있습니다. 자산에는 XML 양식, PDF forms(Acrobat 양식 포함), 양식 단편, 이미지, 프로필, SWF, 정책 파일, DDX 파일, XML 스키마, WSDL 파일 및 테스트 데이터를 비롯한 모든 유형의 자료가 포함될 수 있습니다.
 
-예를 들어 다음과 같은 Forms 애플리케이션을 고려해 보십시오. *Applications/FormsApplication*:
+예를 들어, 이름이 *Applications/FormsApplication*&#x200B;인 다음 Forms 응용 프로그램을 생각해 보십시오.
 
 ![ww_ww_formrepository](assets/ww_ww_formrepository.png)
 
-FormsFolder에 Loan.xdp라는 파일이 있습니다. 이 양식 디자인에 액세스하려면 전체 경로(버전 포함)를 지정합니다. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+FormsFolder에 Loan.xdp라는 파일이 있습니다. 이 양식 디자인에 액세스하려면 전체 경로(버전 포함)를 지정하십시오. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
->Workbench를 사용하여 Forms 애플리케이션을 만드는 방법에 대한 자세한 내용은 다음을 참조하십시오. [Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Workbench를 사용하여 Forms 응용 프로그램을 만드는 방법에 대한 자세한 내용은 [Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_63)을 참조하세요.
 
 AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
@@ -46,7 +46,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 >[!NOTE]
 >
->웹 브라우저를 사용하여 AEM Forms 저장소를 탐색할 수 있습니다. 저장소를 탐색하려면 웹 브라우저에 다음 URL을 입력합니다 `https://[server name]:[server port]/repository`. 웹 브라우저를 사용하여 AEM Forms 저장소를 사용하여 작업 섹션과 연관된 빠른 시작 결과를 확인할 수 있습니다. 예를 들어 AEM Forms 저장소에 컨텐츠를 추가하는 경우 웹 브라우저에서 컨텐츠를 볼 수 있습니다. (참조: [빠른 시작(SOAP 모드): Java API를 사용하여 리소스 쓰기](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
+>웹 브라우저를 사용하여 AEM Forms 저장소를 탐색할 수 있습니다. 저장소를 탐색하려면 웹 브라우저 `https://[server name]:[server port]/repository`에 다음 URL을 입력하십시오. 웹 브라우저를 사용하여 AEM Forms 저장소를 사용하여 작업 섹션과 연관된 빠른 시작 결과를 확인할 수 있습니다. 예를 들어 AEM Forms 저장소에 컨텐츠를 추가하는 경우 웹 브라우저에서 컨텐츠를 볼 수 있습니다. ([빠른 시작(SOAP 모드): Java API를 사용하여 리소스 쓰기](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)를 참조하십시오.)
 
 저장소 API는 저장소에서 정보를 저장하고 검색하는 데 사용할 수 있는 여러 작업을 제공합니다. 예를 들어, 리소스 목록을 가져오거나 응용 프로그램 처리의 일부로 리소스가 필요할 때 저장소에 저장된 특정 리소스를 검색할 수 있습니다.
 
@@ -56,15 +56,15 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 저장소 서비스 API를 사용하여 다음 작업을 수행할 수 있습니다.
 
-* 폴더를 만듭니다. 다음을 참조하십시오 [폴더 만들기](aem-forms-repository.md#creating-folders).
-* 리소스 및 해당 속성을 작성합니다. 다음을 참조하십시오 [리소스 쓰기](aem-forms-repository.md#writing-resources).
-* 주어진 컬렉션이나 다른 리소스와 관련된 리소스를 나열합니다. 다음을 참조하십시오 [리소스 나열](aem-forms-repository.md#listing-resources).
-* 리소스 및 해당 속성을 읽습니다. 다음을 참조하십시오 [리소스 읽기](aem-forms-repository.md#reading-resources).
-* 리소스 및 해당 속성을 업데이트합니다. 다음을 참조하십시오 [리소스 업데이트](aem-forms-repository.md#updating-resources).
-* 내역, 관련 리소스 및 속성을 포함한 리소스를 검색합니다. 다음을 참조하십시오 [리소스 검색](aem-forms-repository.md#searching-for-resources).
-* 리소스 간의 관계를 지정합니다. 다음을 참조하십시오 [리소스 관계 만들기](aem-forms-repository.md#creating-resource-relationships).
-* 리소스 잠금 및 잠금 해제, ACL(액세스 제어 목록) 읽기 및 쓰기를 포함하여 리소스 액세스 제어를 관리합니다. 다음을 참조하십시오 [리소스 잠금](aem-forms-repository.md#locking-resources).
-* 리소스 및 해당 속성을 삭제합니다. 다음을 참조하십시오 [리소스 삭제](aem-forms-repository.md#deleting-resources).
+* 폴더를 만듭니다. [폴더 만들기](aem-forms-repository.md#creating-folders)를 참조하세요.
+* 리소스 및 해당 속성을 작성합니다. [리소스 쓰기](aem-forms-repository.md#writing-resources)를 참조하세요.
+* 주어진 컬렉션이나 다른 리소스와 관련된 리소스를 나열합니다. [리소스 나열](aem-forms-repository.md#listing-resources)을 참조하세요.
+* 리소스 및 해당 속성을 읽습니다. [리소스 읽기](aem-forms-repository.md#reading-resources)를 참조하세요.
+* 리소스 및 해당 속성을 업데이트합니다. [리소스 업데이트](aem-forms-repository.md#updating-resources)를 참조하세요.
+* 내역, 관련 리소스 및 속성을 포함한 리소스를 검색합니다. [리소스 검색](aem-forms-repository.md#searching-for-resources)을 참조하세요.
+* 리소스 간의 관계를 지정합니다. [리소스 관계 만들기](aem-forms-repository.md#creating-resource-relationships)를 참조하세요.
+* 리소스 잠금 및 잠금 해제, ACL(액세스 제어 목록) 읽기 및 쓰기를 포함하여 리소스 액세스 제어를 관리합니다. [리소스 잠금](aem-forms-repository.md#locking-resources)을 참조하세요.
+* 리소스 및 해당 속성을 삭제합니다. [리소스 삭제](aem-forms-repository.md#deleting-resources)를 참조하세요.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 >[!NOTE]
 >
->저장소 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>리포지토리 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ## 폴더 만들기 {#creating-folders}
 
@@ -86,7 +86,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 >[!NOTE]
 >
->저장소 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>리포지토리 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary-of-steps}
 
@@ -135,29 +135,29 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 1. 서비스 클라이언트 만들기
 
-   만들기 `ResourceRepositoryClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `ResourceRepositoryClient` 개체를 만듭니다.
 
 1. 폴더 만들기
 
-   리소스 컬렉션을 만들려면 먼저 `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean` 개체.
+   리소스 컬렉션을 만들려면 먼저 `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean` 개체를 만들어야 합니다.
 
-   호출 `repositoryInfomodelFactoryBean` 개체 `newResourceCollection` 메서드를 호출하고 다음 매개 변수를 전달합니다.
+   `repositoryInfomodelFactoryBean` 개체의 `newResourceCollection` 메서드를 호출하고 다음 매개 변수를 전달합니다.
 
-   * A `com.adobe.repository.infomodel.Id` 리소스에 할당할 UUID 식별자입니다.
-   * A `com.adobe.repository.infomodel.Lid` 리소스에 할당할 UUID 식별자입니다.
-   * A `java.lang.String` 리소스 컬렉션의 이름을 포함합니다. 예: `FormsFolder`
+   * 리소스에 할당할 `com.adobe.repository.infomodel.Id` UUID 식별자입니다.
+   * 리소스에 할당할 `com.adobe.repository.infomodel.Lid` UUID 식별자입니다.
+   * 리소스 컬렉션 이름이 포함된 `java.lang.String`입니다. 예: `FormsFolder`
 
-   이 메서드는 `com.adobe.repository.infomodel.bean.ResourceCollection` 새 폴더를 나타내는 개체입니다.
+   이 메서드는 새 폴더를 나타내는 `com.adobe.repository.infomodel.bean.ResourceCollection` 개체를 반환합니다.
 
-   다음을 사용하여 폴더의 설명 설정 `setDescription` 메서드를 호출하고 다음 매개 변수를 전달합니다.
+   `setDescription` 메서드를 사용하여 폴더의 설명을 설정하고 다음 매개 변수를 전달합니다.
 
-   * A `String` 리소스 컬렉션을 설명합니다. 이 예에서는 `"test Folder"` 사용됨 `.`
+   * 리소스 컬렉션을 설명하는 `String`입니다. 이 예제에서는 `"test Folder"`이(가) `.`에 사용되었습니다.
 
 1. 저장소에 폴더 쓰기
 
-   호출 `ResourceRepositoryClient` 개체 `writeResource` 폴더 및 의 URI에 메서드 및 를 전달합니다. `ResourceCollection` 개체. 예를 들어 폴더에 대한 URI는 다음 값일 수 있습니다 `/Applications/FormsApplication/1.0/`.
+   `ResourceRepositoryClient` 개체의 `writeResource` 메서드를 호출하고 폴더 및 `ResourceCollection` 개체의 URI를 전달하십시오. 예를 들어 폴더의 URI는 다음 값 `/Applications/FormsApplication/1.0/`일 수 있습니다.
 
-   메서드는 새로 만든 의 인스턴스를 반환합니다 `com.adobe.repository.infomodel.bean.Resource` 개체. 예를 들어 를 호출하여 새 리소스의 식별자 값을 검색할 수 있습니다 `com.adobe.repository.infomodel.bean.Resource` 개체 `getId` 메서드를 사용합니다.
+   메서드가 새로 만든 `com.adobe.repository.infomodel.bean.Resource` 개체의 인스턴스를 반환합니다. 예를 들어 `com.adobe.repository.infomodel.bean.Resource` 개체의 `getId` 메서드를 호출하여 새 리소스의 식별자 값을 검색할 수 있습니다.
 
 **추가 참조**
 
@@ -180,24 +180,24 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 1. 서비스 클라이언트 만들기
 
-   Microsoft .NET 클라이언트 어셈블리를 사용하여 `RepositoryServiceService` 기본 생성자를 호출하여 개체를 작성합니다. 설정 `Credentials` 를 사용하는 속성 `System.Net.NetworkCredential` 사용자 이름과 암호가 포함된 개체입니다.
+   Microsoft .NET 클라이언트 어셈블리를 사용하여 기본 생성자를 호출하여 `RepositoryServiceService` 개체를 만듭니다. 사용자 이름과 암호가 포함된 `System.Net.NetworkCredential` 개체를 사용하여 해당 `Credentials` 속성을 설정합니다.
 
 1. 폴더 만들기
 
-   에 대한 기본 생성자를 사용하여 폴더를 만듭니다. `ResourceCollection` 클래스에서 를 만들고 다음 매개 변수를 전달합니다.
+   `ResourceCollection` 클래스에 대한 기본 생성자를 사용하여 폴더를 만들고 다음 매개 변수를 전달합니다.
 
-   * An `Id` 개체의 기본 생성자를 호출하여 `Id` 클래스 및 할당됨 `Resource` 개체 `id` 필드.
-   * An `Lid` 개체의 기본 생성자를 호출하여 `Lid` 클래스 및 할당됨 `Resource` 개체 `lid` 필드.
-   * 에 할당된 리소스 컬렉션의 이름을 포함하는 문자열 `Resource` 개체 `name` 필드. 이 예제에 사용된 이름은 다음과 같습니다. `"testfolder"`.
-   * 에 할당된 리소스 컬렉션에 대한 설명이 포함된 문자열 `Resource` 개체 `description` 필드. 이 예제에 사용된 설명은 다음과 같습니다. `"test folder"`.
+   * `Id` 클래스에 대한 기본 생성자를 호출하여 만들어지고 `Resource` 개체의 `id` 필드에 할당된 `Id` 개체입니다.
+   * `Lid` 클래스에 대한 기본 생성자를 호출하여 만들어지고 `Resource` 개체의 `lid` 필드에 할당된 `Lid` 개체입니다.
+   * `Resource` 개체의 `name` 필드에 할당된 리소스 컬렉션의 이름을 포함하는 문자열입니다. 이 예제에 사용된 이름은 `"testfolder"`입니다.
+   * `Resource` 개체의 `description` 필드에 할당된 리소스 컬렉션에 대한 설명을 포함하는 문자열입니다. 이 예제에 사용된 설명은 `"test folder"`입니다.
 
 1. 저장소에 폴더 쓰기
 
-   호출 `RepositoryServiceService` 개체 `writeResource` 메서드, 다음 매개 변수를 전달하십시오.
+   `RepositoryServiceService` 개체의 `writeResource` 메서드를 호출하고 다음 매개 변수를 전달합니다.
 
    * 폴더를 만들 경로입니다.
-   * 다음 `ResourceCollection` 폴더를 나타내는 개체입니다.
-   * 합격 `null` 다른 두 매개 변수.
+   * 폴더를 나타내는 `ResourceCollection` 개체입니다.
+   * 다른 두 매개 변수에 대해 `null`을(를) 전달합니다.
 
 **추가 참조**
 
@@ -217,7 +217,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 >[!NOTE]
 >
->저장소 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>리포지토리 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-1}
 
@@ -236,9 +236,9 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 리소스를 프로그래밍 방식으로 읽으려면 먼저 연결을 설정하고 자격 증명을 제공해야 합니다. 이 작업은 서비스 클라이언트를 작성하여 수행할 수 있습니다.
 
-**리소스에 대한 대상 폴더의 URI를 지정합니다.**
+**리소스에 대한 대상 폴더의 URI를 지정하십시오**
 
-읽을 리소스의 URI를 포함하는 문자열을 만듭니다. 구문에는 다음 예제와 같이 슬래시가 포함됩니다. &quot;/*경로*/*폴더*&quot;.
+읽을 리소스의 URI를 포함하는 문자열을 만듭니다. 구문에는 &quot;/*경로*/*폴더*&quot;과 같이 슬래시가 포함되어 있습니다.
 
 **리소스 만들기**
 
@@ -274,36 +274,36 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 1. 서비스 클라이언트 만들기
 
-   만들기 `ResourceRepositoryClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `ResourceRepositoryClient` 개체를 만듭니다.
 
 1. 리소스에 대한 대상 폴더의 URI를 지정합니다.
 
-   리소스에 대한 대상 폴더의 URI를 지정합니다. 이 경우, 리소스가 `testResource` 이(가) 다음 폴더에 저장됩니다. `testFolder`, 폴더의 URI는 입니다. `"/testFolder"`. URI는 `java.lang.String` 개체.
+   리소스에 대한 대상 폴더의 URI를 지정합니다. 이 경우 `testResource` 리소스가 `testFolder` 폴더에 저장되므로 폴더의 URI는 `"/testFolder"`입니다. URI가 `java.lang.String` 개체로 저장됩니다.
 
 1. 리소스 만들기
 
-   리소스를 만들려면 먼저 `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean` 개체.
+   리소스를 만들려면 먼저 `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean` 개체를 만들어야 합니다.
 
-   호출 `RepositoryInfomodelFactoryBean` 개체 `newResource` 메서드, `com.adobe.repository.infomodel.bean.Resource` 개체. 이 예에서는 다음 매개 변수가 제공됩니다.
+   `com.adobe.repository.infomodel.bean.Resource` 개체를 만드는 `RepositoryInfomodelFactoryBean` 개체의 `newResource` 메서드를 호출합니다. 이 예에서는 다음 매개 변수가 제공됩니다.
 
-   * A `com.adobe.repository.infomodel.Id` 개체의 기본 생성자를 호출하여 `Id` 클래스.
-   * A `com.adobe.repository.infomodel.Lid` 개체의 기본 생성자를 호출하여 `Lid` 클래스.
-   * A `java.lang.String` 리소스의 파일 이름을 포함합니다.
+   * `Id` 클래스에 대한 기본 생성자를 호출하여 만든 `com.adobe.repository.infomodel.Id` 개체입니다.
+   * `Lid` 클래스에 대한 기본 생성자를 호출하여 만든 `com.adobe.repository.infomodel.Lid` 개체입니다.
+   * 리소스의 파일 이름이 포함된 `java.lang.String`.
 
-   리소스의 설명을 지정하려면 를 호출합니다 `Resource` 개체 `setDescription` 메서드, 설명이 포함된 문자열 전달 이 예에서 설명은 다음과 같습니다. `"test resource"`.
+   리소스의 설명을 지정하려면 `Resource` 개체의 `setDescription` 메서드를 호출하고 설명을 포함하는 문자열을 전달합니다. 이 예제에서 설명은 `"test resource"`입니다.
 
 1. 리소스 콘텐츠 지정
 
-   리소스에 대한 콘텐츠를 만들려면 `RepositoryInfomodelFactoryBean` 개체 `newResourceContent` 메서드, 반환 `com.adobe.repository.infomodel.bean.ResourceContent` 개체. 에 콘텐츠 추가 `ResourceContent` 개체. 이 예에서는 다음 작업을 수행하여 이 작업을 수행합니다.
+   리소스에 대한 콘텐츠를 만들려면 `com.adobe.repository.infomodel.bean.ResourceContent` 개체를 반환하는 `RepositoryInfomodelFactoryBean` 개체의 `newResourceContent` 메서드를 호출하십시오. `ResourceContent` 개체에 내용을 추가합니다. 이 예에서는 다음 작업을 수행하여 이 작업을 수행합니다.
 
-   * 호출 `ResourceContent` 개체 `setDataDocument` 메서드 및 전달에 `com.adobe.idp.Document` 오브젝트
-   * 호출 `ResourceContent` 개체 `setSize` 메서드 및 크기(바이트) `Document` 오브젝트
+   * `ResourceContent` 개체의 `setDataDocument` 메서드를 호출하고 `com.adobe.idp.Document` 개체를 전달합니다.
+   * `ResourceContent` 개체의 `setSize` 메서드를 호출하고 `Document` 개체의 크기(바이트)를 전달합니다.
 
-   를 호출하여 콘텐츠를 리소스에 추가합니다. `Resource` 개체 `setContent` 메서드 및 전달 `ResourceContent` 개체. 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   `Resource` 개체의 `setContent` 메서드를 호출하고 `ResourceContent` 개체를 전달하여 리소스에 내용을 추가하십시오. 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)를 참조하십시오.
 
 1. 대상 폴더에 리소스 쓰기
 
-   호출 `ResourceRepositoryClient` 개체 `writeResource` 폴더의 URI에 메서드 및 을 전달합니다. `Resource` 개체.
+   `ResourceRepositoryClient` 개체의 `writeResource` 메서드를 호출하고 폴더의 URI와 `Resource` 개체를 전달하십시오.
 
 **추가 참조**
 
@@ -326,33 +326,33 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 1. 서비스 클라이언트 만들기
 
-   Microsoft .NET 클라이언트 어셈블리를 사용하여 `RepositoryServiceService` 기본 생성자를 호출하여 개체를 작성합니다. 설정 `Credentials` 를 사용하는 속성 `System.Net.NetworkCredential` 사용자 이름과 암호가 포함된 개체입니다.
+   Microsoft .NET 클라이언트 어셈블리를 사용하여 기본 생성자를 호출하여 `RepositoryServiceService` 개체를 만듭니다. 사용자 이름과 암호가 포함된 `System.Net.NetworkCredential` 개체를 사용하여 해당 `Credentials` 속성을 설정합니다.
 
 1. 리소스에 대한 대상 폴더의 URI를 지정합니다.
 
-   리소스에 대한 대상 폴더의 URI를 지정합니다. 이 경우, 리소스가 `testResource` 이(가) 다음 폴더에 저장됩니다. `testFolder`, 폴더의 URI는 입니다. `"/testFolder"`. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 URI를 `System.String` 개체.
+   리소스에 대한 대상 폴더의 URI를 지정합니다. 이 경우 `testResource` 리소스가 `testFolder` 폴더에 저장되므로 폴더의 URI는 `"/testFolder"`입니다. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 `System.String` 개체에 URI를 저장합니다.
 
 1. 리소스 만들기
 
-   리소스를 만들려면 의 기본 생성자를 호출합니다 `Resource` 클래스. 이 예제에서 다음 정보는 `Resource` 개체:
+   리소스를 만들려면 `Resource` 클래스의 기본 생성자를 호출하십시오. 이 예제에서는 `Resource` 개체에 다음 정보가 저장됩니다.
 
-   * A `com.adobe.repository.infomodel.Id` 개체의 기본 생성자를 호출하여 `Id` 클래스 및 할당됨 `Resource` 개체 `id` 필드.
-   * A `com.adobe.repository.infomodel.Lid` 개체의 기본 생성자를 호출하여 `Lid` 클래스 및 할당됨 `Resource` 개체 `lid` 필드.
-   * 리소스에 할당된 리소스의 파일 이름을 포함하는 문자열 `Resource` 개체 `name` 필드. 이 예제에 사용된 이름은 다음과 같습니다. `"testResource"`.
-   * 에 할당된 리소스에 대한 설명이 포함된 문자열 `Resource` 개체 `description` 필드. 이 예제에 사용된 설명은 다음과 같습니다. `"test resource"`.
+   * `Id` 클래스에 대한 기본 생성자를 호출하여 만들어지고 `Resource` 개체의 `id` 필드에 할당된 `com.adobe.repository.infomodel.Id` 개체입니다.
+   * `Lid` 클래스에 대한 기본 생성자를 호출하여 만들어지고 `Resource` 개체의 `lid` 필드에 할당된 `com.adobe.repository.infomodel.Lid` 개체입니다.
+   * `Resource` 개체의 `name` 필드에 할당된 리소스의 파일 이름을 포함하는 문자열입니다. 이 예제에 사용된 이름은 `"testResource"`입니다.
+   * `Resource` 개체의 `description` 필드에 할당된 리소스에 대한 설명이 포함된 문자열입니다. 이 예제에 사용된 설명은 `"test resource"`입니다.
 
 1. 리소스 콘텐츠 지정
 
-   리소스에 대한 콘텐츠를 만들려면 `ResourceContent` 클래스. 그런 다음 컨텐츠를 `ResourceContent` 개체. 이 예에서는 다음 작업을 수행하여 이 작업을 수행합니다.
+   리소스에 대한 콘텐츠를 만들려면 `ResourceContent` 클래스의 기본 생성자를 호출하십시오. `ResourceContent` 개체에 내용을 추가합니다. 이 예에서는 다음 작업을 수행하여 이 작업을 수행합니다.
 
-   * 할당 `BLOB` 에 대한 문서가 포함된 개체 `ResourceContent` 개체 `dataDocument` 필드.
-   * 크기 할당(바이트) `BLOB` 에 대한 오브젝트 `ResourceContent` 개체 `size` 필드.
+   * 문서가 포함된 `BLOB` 개체를 `ResourceContent` 개체의 `dataDocument` 필드에 할당합니다.
+   * `ResourceContent` 개체의 `size` 필드에 `BLOB` 개체의 크기(바이트)를 할당합니다.
 
-   을(를) 할당하여 콘텐츠를 리소스에 추가합니다. `ResourceContent` 에 대한 오브젝트 `Resource` 개체 `content` 필드.
+   `ResourceContent` 개체를 `Resource` 개체의 `content` 필드에 할당하여 콘텐츠를 리소스에 추가합니다.
 
 1. 대상 폴더에 리소스 쓰기
 
-   호출 `RepositoryServiceService` 개체 `writeResource` 폴더의 URI에 메서드 및 을 전달합니다. `Resource` 개체. 합격 `null` 다른 두 매개 변수.
+   `RepositoryServiceService` 개체의 `writeResource` 메서드를 호출하고 폴더의 URI와 `Resource` 개체를 전달하십시오. 다른 두 매개 변수에 대해 `null`을(를) 전달합니다.
 
 **추가 참조**
 
@@ -370,7 +370,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 >[!NOTE]
 >
->저장소 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>리포지토리 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-2}
 
@@ -391,7 +391,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 **폴더 경로 지정**
 
-리소스가 포함된 폴더의 경로를 포함하는 문자열을 만듭니다. 구문에는 다음 예제와 같이 슬래시가 포함됩니다. &quot;/*경로*/*폴더*&quot;.
+리소스가 포함된 폴더의 경로를 포함하는 문자열을 만듭니다. 구문에는 &quot;/*경로*/*폴더*&quot;과 같이 슬래시가 포함되어 있습니다.
 
 **리소스 목록 검색**
 
@@ -419,17 +419,17 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 1. 서비스 클라이언트 만들기
 
-   만들기 `ResourceRepositoryClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `ResourceRepositoryClient` 개체를 만듭니다.
 
 1. 폴더 경로 지정
 
-   쿼리할 리소스 컬렉션의 URI를 지정하십시오. 이 경우 해당 URI는 `"/testFolder"`. URI는 `java.lang.String` 개체.
+   쿼리할 리소스 컬렉션의 URI를 지정하십시오. 이 경우 해당 URI는 `"/testFolder"`입니다. URI가 `java.lang.String` 개체로 저장됩니다.
 
 1. 리소스 목록 검색
 
-   호출 `ResourceRepositoryClient` 개체 `listMembers` 폴더의 URI에 메서드 및 를 전달합니다.
+   `ResourceRepositoryClient` 개체의 `listMembers` 메서드를 호출하고 폴더의 URI를 전달하십시오.
 
-   이 메서드는 `java.util.List` / `com.adobe.repository.infomodel.bean.Resource` 의 소스인 오브젝트 `com.adobe.repository.infomodel.bean.Relation` 유형 `Relation.TYPE_MEMBER_OF` 리소스 컬렉션 URI를 대상으로 사용합니다. 이 과정을 반복할 수 있습니다 `List` 을 클릭하여 각 리소스를 검색합니다. 이 예제에서는 각 리소스의 이름과 설명을 표시합니다.
+   메서드는 `Relation.TYPE_MEMBER_OF` 형식의 `com.adobe.repository.infomodel.bean.Relation`의 원본이고 리소스 컬렉션 URI를 대상으로 하는 `com.adobe.repository.infomodel.bean.Resource`개 개체 중 `java.util.List`개를 반환합니다. 이 `List`을(를) 반복하여 각 리소스를 검색할 수 있습니다. 이 예제에서는 각 리소스의 이름과 설명을 표시합니다.
 
 **추가 참조**
 
@@ -452,17 +452,17 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 1. 서비스 클라이언트 만들기
 
-   Microsoft .NET 클라이언트 어셈블리를 사용하여 `RepositoryServiceService` 기본 생성자를 호출하여 개체를 작성합니다. 설정 `Credentials` 를 사용하는 속성 `System.Net.NetworkCredential` 사용자 이름과 암호가 포함된 개체입니다.
+   Microsoft .NET 클라이언트 어셈블리를 사용하여 기본 생성자를 호출하여 `RepositoryServiceService` 개체를 만듭니다. 사용자 이름과 암호가 포함된 `System.Net.NetworkCredential` 개체를 사용하여 해당 `Credentials` 속성을 설정합니다.
 
 1. 폴더 경로 지정
 
-   쿼리할 폴더의 URI가 포함된 문자열을 지정합니다. 이 경우 해당 URI는 `"/testFolder"`. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 URI를 `System.String` 개체.
+   쿼리할 폴더의 URI가 포함된 문자열을 지정합니다. 이 경우 해당 URI는 `"/testFolder"`입니다. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 `System.String` 개체에 URI를 저장합니다.
 
 1. 리소스 목록 검색
 
-   호출 `RepositoryServiceService` 개체 `listMembers` 첫 번째 매개 변수로 폴더의 URI에 를 전달합니다. 합격 `null` 다른 두 매개 변수.
+   `RepositoryServiceService` 개체의 `listMembers` 메서드를 호출하고 폴더의 URI를 첫 번째 매개 변수로 전달하십시오. 다른 두 매개 변수에 대해 `null`을(를) 전달합니다.
 
-   이 메서드는 캐스팅할 수 있는 개체 배열을 반환합니다. `Resource` 개체. 객체 배열을 반복하여 관련된 각 리소스를 검색할 수 있습니다. 이 예제에서는 각 리소스의 이름과 설명을 표시합니다.
+   이 메서드는 `Resource` 개체로 캐스팅할 수 있는 개체 배열을 반환합니다. 객체 배열을 반복하여 관련된 각 리소스를 검색할 수 있습니다. 이 예제에서는 각 리소스의 이름과 설명을 표시합니다.
 
 **추가 참조**
 
@@ -476,10 +476,10 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 저장소에는 다음과 같은 네 가지 권한 유형이 있습니다.
 
-* **횡단**: 리소스를 나열할 수 있습니다. 즉, 리소스 메타데이터를 읽지만 리소스 콘텐츠는 읽지 않습니다
+* **트래버스**: 리소스를 나열할 수 있습니다. 즉, 리소스 메타데이터를 읽을 수 있지만 리소스 콘텐츠는 읽을 수 없습니다.
 * **읽기**: 리소스 콘텐츠를 읽을 수 있도록 해줍니다
-* **쓰기**: 리소스 콘텐츠를 쓸 수 있도록 해줍니다
-* **acl(액세스 제어 목록) 관리**: 리소스에서 ACL을 조작할 수 있습니다
+* **쓰기**: 리소스 콘텐츠를 쓸 수 있습니다.
+* **ACL(액세스 제어 목록) 관리**: 리소스의 ACL을 조작할 수 있습니다.
 
 사용자는 프로세스를 실행할 권한이 있을 때만 프로세스를 실행할 수 있습니다. IDE 사용자는 저장소와 동기화하려면 트래버스 및 읽기 권한이 필요합니다. 런타임이 시스템 컨텍스트 내에서 발생하므로 ACL은 디자인 타임에만 적용됩니다.
 
@@ -487,7 +487,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 >[!NOTE]
 >
->저장소 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>리포지토리 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-3}
 
@@ -506,9 +506,9 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 리소스를 프로그래밍 방식으로 읽으려면 먼저 연결을 설정하고 자격 증명을 제공해야 합니다. 이 작업은 서비스 클라이언트를 작성하여 수행할 수 있습니다.
 
-**읽을 리소스의 URI를 지정하십시오.**
+**읽을 리소스의 URI를 지정하십시오**
 
-읽을 리소스의 URI를 포함하는 문자열을 만듭니다. 구문에는 다음 예제와 같이 슬래시가 포함됩니다. &quot;/*경로*/*리소스*&quot;.
+읽을 리소스의 URI를 포함하는 문자열을 만듭니다. 구문에는 &quot;/*경로*/*리소스*&quot;과 같이 슬래시가 포함되어 있습니다.
 
 **리소스 읽기**
 
@@ -536,15 +536,15 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 1. 서비스 클라이언트 만들기
 
-   만들기 `ResourceRepositoryClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `ResourceRepositoryClient` 개체를 만듭니다.
 
 1. 읽을 리소스의 URI를 지정하십시오.
 
-   검색할 리소스의 URI를 나타내는 문자열 값을 지정합니다. 예를 들어 리소스의 이름이 이라고 가정하면 *testResource* 다음 폴더에 있음: *testFolder*, 지정 `/testFolder/testResource`.
+   검색할 리소스의 URI를 나타내는 문자열 값을 지정합니다. 예를 들어 *testFolder* 폴더에 있는 *testResource* 리소스가 이름이 있다고 가정할 경우 `/testFolder/testResource`을(를) 지정하십시오.
 
 1. 리소스 읽기
 
-   호출 `ResourceRepositoryClient` 개체 `readResource` 메서드에서 리소스의 URI를 매개 변수로 전달합니다. 이 메서드는 `Resource` 리소스를 나타내는 인스턴스입니다.
+   `ResourceRepositoryClient` 개체의 `readResource` 메서드를 호출하고 리소스의 URI를 매개 변수로 전달합니다. 이 메서드는 리소스를 나타내는 `Resource` 인스턴스를 반환합니다.
 
 **추가 참조**
 
@@ -562,20 +562,20 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 1. 프로젝트 파일 포함
 
-   * 저장소 WSDL을 사용하는 Microsoft .NET 클라이언트 어셈블리를 만듭니다. (참조: [Base64 인코딩을 사용하는 .NET 클라이언트 어셈블리 만들기](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
-   * Microsoft .NET 클라이언트 어셈블리를 참조합니다. (참조: [Base64 인코딩을 사용하는 .NET 클라이언트 어셈블리 만들기](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
+   * 저장소 WSDL을 사용하는 Microsoft .NET 클라이언트 어셈블리를 만듭니다. [Base64 인코딩을 사용하는 .NET 클라이언트 어셈블리 만들기](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)를 참조하십시오.
+   * Microsoft .NET 클라이언트 어셈블리를 참조합니다. [Base64 인코딩을 사용하는 .NET 클라이언트 어셈블리 만들기](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)를 참조하십시오.
 
 1. 서비스 클라이언트 만들기
 
-   Microsoft .NET 클라이언트 어셈블리를 사용하여 `RepositoryServiceService` 기본 생성자를 호출하여 개체를 작성합니다. 설정 `Credentials` 를 사용하는 속성 `System.Net.NetworkCredential` 사용자 이름과 암호가 포함된 개체입니다.
+   Microsoft .NET 클라이언트 어셈블리를 사용하여 기본 생성자를 호출하여 `RepositoryServiceService` 개체를 만듭니다. 사용자 이름과 암호가 포함된 `System.Net.NetworkCredential` 개체를 사용하여 해당 `Credentials` 속성을 설정합니다.
 
 1. 읽을 리소스의 URI를 지정하십시오.
 
-   검색할 리소스의 URI를 포함하는 문자열을 지정합니다. 이 경우, 리소스가 `testResource` 이(가) 다음 폴더에 있음: `testFolder`, 해당 URI는 `"/testFolder/testResource"`. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 URI를 `System.String` 개체.
+   검색할 리소스의 URI를 포함하는 문자열을 지정합니다. 이 경우 이름이 `testResource`인 리소스가 이름이 `testFolder`인 폴더에 있으므로 해당 URI는 `"/testFolder/testResource"`입니다. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 `System.String` 개체에 URI를 저장합니다.
 
 1. 리소스 읽기
 
-   호출 `RepositoryServiceService` 개체 `readResource` 첫 번째 매개 변수로 리소스의 URI를 전달합니다. 합격 `null` 다른 두 매개 변수.
+   `RepositoryServiceService` 개체의 `readResource` 메서드를 호출하고 리소스의 URI를 첫 번째 매개 변수로 전달합니다. 다른 두 매개 변수에 대해 `null`을(를) 전달합니다.
 
 **추가 참조**
 
@@ -597,7 +597,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 >[!NOTE]
 >
->저장소 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>리포지토리 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-4}
 
@@ -616,9 +616,9 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 리소스를 프로그래밍 방식으로 읽으려면 먼저 연결을 설정하고 자격 증명을 제공해야 합니다. 이 작업은 서비스 클라이언트를 작성하여 수행할 수 있습니다.
 
-**업데이트할 리소스 검색**
+**업데이트할 리소스를 검색합니다**
 
-리소스를 읽습니다. 자세한 내용은 [리소스 읽기](aem-forms-repository.md#reading-resources).
+리소스를 읽습니다. 자세한 내용은 [리소스 읽기](aem-forms-repository.md#reading-resources)를 참조하세요.
 
 **리소스 업데이트**
 
@@ -646,21 +646,21 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 1. 서비스 클라이언트 만들기
 
-   만들기 `ResourceRepositoryClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `ResourceRepositoryClient` 개체를 만듭니다.
 
 1. 업데이트할 리소스 검색
 
-   리소스를 검색하고 읽을 리소스의 URI를 지정합니다. 이 예에서 리소스의 URI는 입니다. `"/testFolder/testResource"`.
+   리소스를 검색하고 읽을 리소스의 URI를 지정합니다. 이 예제에서 리소스의 URI는 `"/testFolder/testResource"`입니다.
 
 1. 리소스 업데이트
 
-   업데이트 `Resource` 개체 정보. 이 예에서 설명을 업데이트하려면 `Resource` 개체 `setDescription` 메서드, 새 설명 문자열을 매개 변수로 전달합니다.
+   `Resource` 개체의 정보를 업데이트합니다. 이 예에서 설명을 업데이트하려면 `Resource` 개체의 `setDescription` 메서드를 호출하고 새 설명 문자열을 매개 변수로 전달합니다.
 
-   그런 다음 를 호출합니다 `ServiceClientFactory` 개체 `updateResource` 메서드를 호출하고 다음 매개 변수를 전달합니다.
+   그런 다음 `ServiceClientFactory` 개체의 `updateResource` 메서드를 호출하고 다음 매개 변수를 전달합니다.
 
-   * A `java.lang.String` 리소스의 URI가 포함된 개체입니다.
-   * 다음 `Resource` 업데이트된 리소스 정보가 포함된 객체입니다.
-   * A `boolean` 주 버전 또는 부 버전을 업데이트할지 여부를 나타내는 값입니다. 이 예에서 값은 `true` 는 메이저 버전이 증가함을 나타내기 위해 전달됩니다.
+   * 리소스의 URI가 포함된 `java.lang.String` 개체입니다.
+   * 업데이트된 리소스 정보가 포함된 `Resource` 개체입니다.
+   * 주 버전 또는 부 버전을 업데이트할지 여부를 나타내는 `boolean` 값입니다. 이 예에서는 `true` 값이 전달되어 메이저 버전이 증가함을 나타냅니다.
 
 **추가 참조**
 
@@ -683,22 +683,22 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 1. 서비스 클라이언트 만들기
 
-   Microsoft .NET 클라이언트 어셈블리를 사용하여 `RepositoryServiceService` 기본 생성자를 호출하여 개체를 작성합니다. 설정 `Credentials` 를 사용하는 속성 `System.Net.NetworkCredential` 사용자 이름과 암호가 포함된 개체입니다.
+   Microsoft .NET 클라이언트 어셈블리를 사용하여 기본 생성자를 호출하여 `RepositoryServiceService` 개체를 만듭니다. 사용자 이름과 암호가 포함된 `System.Net.NetworkCredential` 개체를 사용하여 해당 `Credentials` 속성을 설정합니다.
 
 1. 업데이트할 리소스 검색
 
-   검색할 리소스의 URI를 지정하고 리소스를 읽습니다. 이 예에서 리소스의 URI는 입니다. `"/testFolder/testResource"`. 자세한 내용은 [리소스 읽기](aem-forms-repository.md#reading-resources).
+   검색할 리소스의 URI를 지정하고 리소스를 읽습니다. 이 예제에서 리소스의 URI는 `"/testFolder/testResource"`입니다. 자세한 내용은 [리소스 읽기](aem-forms-repository.md#reading-resources)를 참조하세요.
 
 1. 리소스 업데이트
 
-   업데이트 `Resource` 개체 정보. 이 예에서 설명을 업데이트하려면 새 값을 `Resource` 개체 `description` 필드.
+   `Resource` 개체의 정보를 업데이트합니다. 이 예제에서 설명을 업데이트하려면 `Resource` 개체의 `description` 필드에 새 값을 지정하십시오.
 
-1. 호출 `RepositoryServiceService` 개체 `updateResource` 메서드를 호출하고 다음 매개 변수를 전달합니다.
+1. `RepositoryServiceService` 개체의 `updateResource` 메서드를 호출하고 다음 매개 변수를 전달합니다.
 
-   * A `System.String` 리소스의 URI가 포함된 개체입니다.
-   * 다음 `Resource` 업데이트된 리소스 정보가 포함된 객체입니다.
-   * A `boolean` 주 버전 또는 부 버전을 업데이트할지 여부를 나타내는 값입니다. 이 예에서 값은 `true` 는 메이저 버전이 증가함을 나타내기 위해 전달됩니다.
-   * 합격 `null` 를 참조하십시오.
+   * 리소스의 URI가 포함된 `System.String` 개체입니다.
+   * 업데이트된 리소스 정보가 포함된 `Resource` 개체입니다.
+   * 주 버전 또는 부 버전을 업데이트할지 여부를 나타내는 `boolean` 값입니다. 이 예에서는 `true` 값이 전달되어 메이저 버전이 증가함을 나타냅니다.
+   * 나머지 두 매개 변수에 대해 `null`을(를) 전달합니다.
 
 **추가 참조**
 
@@ -714,19 +714,19 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 **쿼리 문**
 
-A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함합니다. A *구문* 왼쪽 피연산자, 연산자 및 오른쪽 피연산자로 구성됩니다. 또한 검색 결과에 사용할 정렬 순서를 지정할 수 있습니다. 다음 *정렬 순서* SQL과 같은 정보를 포함합니다. `ORDER BY` 및 절은 검색이 기준으로 삼은 속성과 오름차순 또는 내림차순 중 어느 것을 사용할지 나타내는 값을 포함하는 요소로 구성됩니다.
+*쿼리*&#x200B;에 조건을 사용하여 논리적으로 연결된 문이 하나 이상 포함되어 있습니다. *문*&#x200B;은(는) 왼쪽 피연산자, 연산자 및 오른쪽 피연산자로 구성됩니다. 또한 검색 결과에 사용할 정렬 순서를 지정할 수 있습니다. *정렬 순서*&#x200B;은(는) SQL `ORDER BY` 절에 해당하는 정보를 포함하며 검색의 기준이 되는 특성과 오름차순 또는 내림차순 사용 여부를 나타내는 값을 포함하는 요소로 구성됩니다.
 
 저장소 서비스 Java API를 사용하여 프로그래밍 방식으로 리소스를 검색할 수 있습니다. 현재 웹 서비스 API를 사용하여 리소스를 검색할 수 없습니다.
 
 **정렬 동작**
 
-을(를) 호출할 때 정렬 순서가 적용되지 않음 `ResourceRepositoryClient` 개체 `searchProperties` 메서드 및 정렬 순서 지정. 예를 들어 속성 이름이 인 세 개의 사용자 지정 속성으로 리소스를 만든다고 가정합니다. `name`, `secondName`, 및 `asecondName`. 그런 다음 속성 이름에 정렬 순서 요소를 만들고 `ascending` 값: 까지 `true`.
+`ResourceRepositoryClient` 개체의 `searchProperties` 메서드를 호출하고 정렬 순서를 지정할 때 정렬 순서가 적용되지 않습니다. 예를 들어 특성 이름이 `name`, `secondName` 및 `asecondName`인 세 개의 사용자 지정 속성으로 리소스를 만든다고 가정합니다. 그런 다음 특성 이름에 정렬 순서 요소를 만들고 `ascending` 값을 `true`(으)로 설정합니다.
 
-그런 다음 를 호출합니다 `ResourceRepositoryClient` 개체 `searchProperties` 정렬 순서에 따라 메서드 및 를 전달합니다. 다음 세 가지 속성을 갖는 올바른 리소스를 반환합니다. 그러나 속성은 속성 이름별로 정렬되지 않습니다. 추가된 순서대로 반환됩니다. `name`, `secondName`, 및 `asecondName`.
+그런 다음 `ResourceRepositoryClient` 개체의 `searchProperties` 메서드를 호출하고 정렬 순서로 전달합니다. 다음 세 가지 속성을 갖는 올바른 리소스를 반환합니다. 그러나 속성은 속성 이름별로 정렬되지 않습니다. 추가된 순서대로 반환됩니다. `name`, `secondName`, `asecondName`.
 
 >[!NOTE]
 >
->저장소 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>리포지토리 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-5}
 
@@ -751,17 +751,17 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 **검색할 대상 폴더 지정**
 
-검색을 수행할 기본 경로를 포함하는 문자열을 만듭니다. 구문에는 다음 예제와 같이 슬래시가 포함됩니다. &quot;/*경로*/*폴더*&quot;.
+검색을 수행할 기본 경로를 포함하는 문자열을 만듭니다. 구문에는 &quot;/*경로*/*폴더*&quot;과 같이 슬래시가 포함되어 있습니다.
 
-**검색에 사용되는 속성 지정**
+**검색에 사용되는 특성을 지정합니다**
 
 리소스 내에 포함된 속성을 기준으로 검색할 수 있습니다. 검색을 수행할 속성의 값을 지정합니다.
 
-**검색에 사용되는 쿼리 만들기**
+**검색에 사용되는 쿼리를 만듭니다**
 
 문과 조건을 사용하여 쿼리를 구성합니다. 각 문은 검색의 기반이 되는 속성, 사용할 조건 및 검색에 사용할 속성 값을 지정합니다.
 
-**검색 결과에 대한 정렬 순서 만들기**
+**검색 결과의 정렬 순서를 만듭니다**
 
 정렬 순서는 각 요소에 검색에 사용되는 속성 중 하나와 오름차순 또는 내림차순 사용 여부를 나타내는 값이 포함됩니다.
 
@@ -793,54 +793,54 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 1. 서비스 클라이언트 만들기
 
-   만들기 `ResourceRepositoryClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `ResourceRepositoryClient` 개체를 만듭니다.
 
 1. 검색할 대상 폴더 지정
 
-   검색을 실행할 기본 경로의 URI를 지정합니다. 이 예에서 리소스의 URI는 입니다. `/testFolder`.
+   검색을 실행할 기본 경로의 URI를 지정합니다. 이 예제에서 리소스의 URI는 `/testFolder`입니다.
 
 1. 검색에 사용되는 속성 지정
 
-   검색을 수행할 속성에 대한 값을 지정합니다. 속성은 다음 내에 있습니다. `com.adobe.repository.infomodel.bean.Resource` 개체. 이 예에서 검색은 이름 속성에 대해 수행됩니다. 따라서 `java.lang.String` 다음 포함 `Resource` 개체의 이름이 사용됩니다. `testResource` 이 경우.
+   검색을 수행할 속성에 대한 값을 지정합니다. `com.adobe.repository.infomodel.bean.Resource` 개체 내에 특성이 있습니다. 이 예제에서는 name 특성에 대해 검색을 수행합니다. 따라서 `Resource` 개체의 이름이 포함된 `java.lang.String`이(가) 사용됩니다(이 경우 `testResource`).
 
 1. 검색에 사용되는 쿼리 만들기
 
-   쿼리를 만들려면 `com.adobe.repository.query.Query` 개체에 대한 기본 생성자를 호출하여 `Query` 클래스를 만들고 쿼리에 문을 추가합니다.
+   쿼리를 만들려면 `Query` 클래스에 대한 기본 생성자를 호출하여 `com.adobe.repository.query.Query` 개체를 만들고 쿼리에 문을 추가합니다.
 
-   문을 만들려면 `com.adobe.repository.query.Query.Statement` 클래스에서 를 만들고 다음 매개 변수를 전달합니다.
+   문을 만들려면 `com.adobe.repository.query.Query.Statement` 클래스의 생성자를 호출하고 다음 매개 변수를 전달합니다.
 
-   * 리소스 속성 상수를 포함하는 왼쪽 피연산자입니다. 이 예제에서 리소스의 이름은 검색의 기반으로 사용되기 때문에 정적 값입니다 `Resource.ATTRIBUTE_NAME` 를 사용합니다.
-   * 속성 검색에 사용되는 조건을 포함하는 연산자입니다. 연산자는 의 정적 상수 중 하나여야 합니다. `Query.Statement` 클래스. 이 예에서 정적 값은 `Query.Statement.OPERATOR_BEGINS_WITH` 를 사용합니다.
-   * 검색을 수행할 속성 값을 포함하는 오른쪽 피연산자입니다. 이 예제에서 name 속성은 `String` 값 포함 `"testResource"`가 사용됩니다.
+   * 리소스 속성 상수를 포함하는 왼쪽 피연산자입니다. 이 예제에서는 리소스의 이름이 검색의 기반으로 사용되므로 정적 값 `Resource.ATTRIBUTE_NAME`이(가) 사용됩니다.
+   * 속성 검색에 사용되는 조건을 포함하는 연산자입니다. 연산자는 `Query.Statement` 클래스의 정적 상수 중 하나여야 합니다. 이 예제에서는 정적 값 `Query.Statement.OPERATOR_BEGINS_WITH`이(가) 사용됩니다.
+   * 검색을 수행할 속성 값을 포함하는 오른쪽 피연산자입니다. 이 예제에서는 name 특성, 값 `"testResource"`을(를) 포함하는 `String`이(가) 사용됩니다.
 
-   왼쪽 피연산자의 네임스페이스를 지정하십시오. `Query.Statement` 개체 `setNamespace` 메서드에 포함된 정적 값 중 하나를 전달하는 방법 및 `com.adobe.repository.infomodel.bean.ResourceProperty` 클래스. 이 예에서는 `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY`가 사용되었습니다.
+   `Query.Statement` 개체의 `setNamespace` 메서드를 호출하고 `com.adobe.repository.infomodel.bean.ResourceProperty` 클래스에 포함된 정적 값 중 하나를 전달하여 왼쪽 피연산자의 네임스페이스를 지정하십시오. 이 예에서는 `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY`가 사용되었습니다.
 
-   를 호출하여 쿼리에 각 문을 추가합니다. `Query` 개체 `addStatement` 메서드 및 전달 `Query.Statement` 개체.
+   `Query` 개체의 `addStatement` 메서드를 호출하고 `Query.Statement` 개체를 전달하여 쿼리에 각 문을 추가하십시오.
 
 1. 검색 결과에 대한 정렬 순서 만들기
 
-   검색 결과에 사용되는 정렬 순서를 지정하려면 `com.adobe.repository.query.sort.SortOrder` 개체에 대한 기본 생성자를 호출하여 `SortOrder` 을 반환하고, 정렬 순서에 요소를 추가합니다.
+   검색 결과에 사용되는 정렬 순서를 지정하려면 `SortOrder` 클래스에 대한 기본 생성자를 호출하여 `com.adobe.repository.query.sort.SortOrder` 개체를 만들고 정렬 순서에 요소를 추가합니다.
 
-   정렬 순서에 대한 요소를 만들려면 `com.adobe.repository.query.sort.SortOrder.Element` 클래스. 이 예제에서 리소스의 이름은 검색의 기반으로 사용되기 때문에 정적 값입니다 `Resource.ATTRIBUTE_NAME` 는 첫 번째 매개 변수로 사용되며 오름차순(a `boolean` 값 `true`)가 두 번째 매개 변수로 지정됩니다.
+   정렬 순서에 대한 요소를 만들려면 `com.adobe.repository.query.sort.SortOrder.Element` 클래스에 대한 생성자 중 하나를 호출합니다. 이 예제에서는 리소스 이름이 검색의 기반으로 사용되므로 정적 값 `Resource.ATTRIBUTE_NAME`이(가) 첫 번째 매개 변수로 사용되고 오름차순(`boolean` 값 `true`)이 두 번째 매개 변수로 지정됩니다.
 
-   를 호출하여 정렬 순서에 각 요소를 추가합니다. `SortOrder` 개체 `addSortElement` 메서드 및 전달 `SortOrder.Element` 개체.
+   `SortOrder` 개체의 `addSortElement` 메서드를 호출하고 `SortOrder.Element` 개체를 전달하여 정렬 순서에 각 요소를 추가합니다.
 
 1. 리소스 검색
 
-   을 검색하려면 `resources` 속성 속성에 따라 `ResourceRepositoryClient` 개체 `searchProperties` 메서드, 다음 매개 변수를 전달하십시오.
+   특성 속성을 기준으로 `resources`을(를) 검색하려면 `ResourceRepositoryClient` 개체의 `searchProperties` 메서드를 호출하고 다음 매개 변수를 전달하십시오.
 
-   * A `String` 검색을 실행할 기본 경로를 포함합니다. 이 경우, `"/testFolder"` 를 사용합니다.
+   * 검색을 실행할 기본 경로를 포함하는 `String`입니다. 이 경우 `"/testFolder"`이(가) 사용됩니다.
    * 검색에 사용되는 쿼리입니다.
-   * 검색 깊이. 이 경우, `com.adobe.repository.infomodel.bean.ResourceCollection.DEPTH_INFINITE` 는 기본 경로와 해당 폴더를 모두 사용함을 나타내는 데 사용됩니다.
-   * An `int` 페이징되지 않은 결과 세트를 선택할 첫 번째 행을 나타내는 값입니다. 이 예에서는 `0` 이(가) 지정되었습니다.
-   * An `int` 반환할 최대 결과 수를 나타내는 값입니다. 이 예에서는 `10` 이(가) 지정되었습니다.
+   * 검색 깊이. 이 경우 `com.adobe.repository.infomodel.bean.ResourceCollection.DEPTH_INFINITE`을(를) 사용하여 기본 경로와 해당 폴더를 모두 사용할 것임을 나타냅니다.
+   * 페이징되지 않은 결과 집합을 선택할 첫 번째 행을 나타내는 `int` 값입니다. 이 예제에서는 `0`을(를) 지정합니다.
+   * 반환할 최대 결과 수를 나타내는 `int` 값입니다. 이 예제에서는 `10`을(를) 지정합니다.
    * 검색에 사용되는 정렬 순서.
 
-   이 메서드는 `java.util.List` / `Resource` 지정된 정렬 순서의 개체입니다.
+   메서드는 지정된 정렬 순서로 `Resource`개 개체 중 `java.util.List`개를 반환합니다.
 
 1. 검색 결과에서 리소스 검색
 
-   검색 결과에 포함된 리소스를 검색하려면 `List` 각 개체를 `Resource` 를 클릭하여 정보를 추출합니다. 이 예제에서는 각 리소스의 이름이 표시됩니다.
+   검색 결과에 포함된 리소스를 검색하려면 `List`을(를) 반복하고 각 개체를 `Resource`(으)로 캐스팅하여 해당 정보를 추출하십시오. 이 예제에서는 각 리소스의 이름이 표시됩니다.
 
 **추가 참조**
 
@@ -856,9 +856,9 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 저장소에 있는 리소스 간의 관계를 지정할 수 있습니다. 관계에는 세 가지가 있습니다.
 
-* **의존**: 리소스가 다른 리소스에 의존하는 관계입니다. 즉, 저장소에 모든 관련 리소스가 필요합니다.
-* **멤버십(파일 시스템)**: 리소스가 주어진 폴더 내에 있는 관계입니다.
-* **사용자 정의**: 리소스 간에 지정하는 관계입니다. 예를 들어 한 리소스가 더 이상 사용되지 않고 다른 리소스가 저장소에 도입된 경우, 고유한 대체 관계를 지정할 수 있습니다.
+* **종속성**: 리소스가 다른 리소스에 종속되는 관계입니다. 즉, 저장소에 모든 관련 리소스가 필요합니다.
+* **구성원(파일 시스템)**: 리소스가 지정된 폴더 내에 있는 관계입니다.
+* **사용자 지정**: 리소스 간에 지정한 관계입니다. 예를 들어 한 리소스가 더 이상 사용되지 않고 다른 리소스가 저장소에 도입된 경우, 고유한 대체 관계를 지정할 수 있습니다.
 
 자신만의 사용자 지정 관계를 만들 수 있습니다. 예를 들어, 저장소에 HTML 파일을 저장하고 이미지를 사용하는 경우 HTML 파일을 이미지와 연결할 사용자 지정 관계를 지정할 수 있습니다(일반적으로 XML 파일만 저장소 정의 종속성 관계를 사용하여 이미지와 연결되기 때문). 사용자 지정 관계의 또 다른 예는 트리 구조 대신 주기적 그래프 구조로 다른 저장소 보기를 빌드하려는 경우입니다. 뷰어와 함께 원형 그래프를 정의하여 해당 관계를 트래버스할 수 있습니다. 마지막으로, 두 리소스가 완전히 다른데도 리소스가 다른 리소스를 대체함을 나타낼 수 있습니다. 이 경우 예약된 범위를 벗어나는 관계 유형을 정의하고 이러한 두 리소스 간의 관계를 만들 수 있습니다. 응용 프로그램은 관계를 감지하고 처리할 수 있는 유일한 클라이언트이며 해당 관계를 검색하는 데 사용할 수 있습니다.
 
@@ -866,7 +866,7 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 >[!NOTE]
 >
->저장소 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>리포지토리 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-6}
 
@@ -885,9 +885,9 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 리소스를 프로그래밍 방식으로 읽으려면 먼저 연결을 설정하고 자격 증명을 제공해야 합니다. 이 작업은 서비스 클라이언트를 작성하여 수행할 수 있습니다.
 
-**연결할 리소스의 URI를 지정하십시오.**
+**연결할 리소스의 URI를 지정하십시오**
 
-연결할 리소스의 URI를 포함하는 문자열을 만듭니다. 구문에는 다음 예제와 같이 슬래시가 포함됩니다. &quot;/*경로*/*리소스*&quot;.
+연결할 리소스의 URI를 포함하는 문자열을 만듭니다. 구문에는 &quot;/*경로*/*리소스*&quot;과 같이 슬래시가 포함되어 있습니다.
 
 **관계 만들기**
 
@@ -915,28 +915,28 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 1. 서비스 클라이언트 만들기
 
-   만들기 `ResourceRepositoryClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `ResourceRepositoryClient` 개체를 만듭니다.
 
 1. 연결할 리소스의 URI를 지정하십시오.
 
-   연결할 리소스의 URI를 지정합니다. 이 경우 리소스에 이름이 지정되기 때문입니다 `testResource1` 및 `testResource2` 및 이(가) 다음 폴더에 있음: `testFolder`, 해당 URI는 `"/testFolder/testResource1"` 및 `"/testFolder/testResource2"`. URI는 `java.lang.String` 개체. 이 예제에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 작성에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources).
+   연결할 리소스의 URI를 지정합니다. 이 경우 리소스의 이름이 `testResource1` 및 `testResource2`이고 이름이 `testFolder`인 폴더에 있으므로 해당 URI는 `"/testFolder/testResource1"` 및 `"/testFolder/testResource2"`입니다. URI는 `java.lang.String` 개체로 저장됩니다. 이 예제에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 쓰기에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources)를 참조하십시오.
 
 1. 관계 만들기
 
-   호출 `ResourceRepositoryClient` 개체 `createRelationship` 메서드, 다음 매개 변수를 전달하십시오.
+   `ResourceRepositoryClient` 개체의 `createRelationship` 메서드를 호출하고 다음 매개 변수를 전달합니다.
 
    * 소스 리소스의 URI입니다.
    * 대상 리소스의 URI입니다.
-   * 의 정적 상수 중 하나인 관계의 유형입니다. `com.adobe.repository.infomodel.bean.Relation` 클래스. 이 예에서는 그 값을 특정함으로써 의존 관계를 설정한다 `Relation.TYPE_DEPENDANT_OF`.
-   * A `boolean` 대상 리소스가 자동으로 `com.adobe.repository.infomodel.Id`새 head 리소스의 기반 식별자입니다. 이 예제에서는 종속 관계 때문에 값이 `true` 이(가) 지정되었습니다.
+   * `com.adobe.repository.infomodel.bean.Relation` 클래스의 정적 상수 중 하나인 관계의 형식입니다. 이 예제에서는 `Relation.TYPE_DEPENDANT_OF` 값을 지정하여 종속 관계를 설정합니다.
+   * 대상 리소스가 새 head 리소스의 `com.adobe.repository.infomodel.Id` 기반 식별자로 자동으로 업데이트되는지 여부를 나타내는 `boolean` 값입니다. 이 예제에서는 종속성 관계로 인해 값 `true`이(가) 지정되었습니다.
 
-   또한 를 호출하여 주어진 리소스에 대한 관련 리소스 목록을 검색할 수 있습니다. `ResourceRepositoryClient` 개체 `getRelated` 메서드 및 다음 매개 변수 전달:
+   `ResourceRepositoryClient` 개체의 `getRelated` 메서드를 호출하고 다음 매개 변수를 전달하여 지정된 리소스에 대한 관련 리소스 목록을 검색할 수도 있습니다.
 
-   * 관련 리소스를 검색할 리소스의 URI입니다. 이 예에서 소스 리소스( `"/testFolder/testResource1"`)를 지정합니다.
-   * A `boolean` 지정된 리소스가 관계의 원본 리소스인지 여부를 나타내는 값입니다. 이 예에서 값은 `true` 이 경우 이므로 가 지정됩니다.
-   * 에서 정적 상수 중 하나인 관계 유형 `Relation` 클래스. 이 예에서 종속 관계는 앞에서 사용한 것과 동일한 값을 사용하여 지정됩니다. `Relation.TYPE_DEPENDANT_OF`.
+   * 관련 리소스를 검색할 리소스의 URI입니다. 이 예제에서는 원본 리소스(`"/testFolder/testResource1"`)를 지정합니다.
+   * 지정한 리소스가 관계의 원본 리소스인지 여부를 나타내는 `boolean` 값입니다. 이 예제에서는 값 `true`을(를) 지정합니다.
+   * `Relation` 클래스의 정적 상수 중 하나인 관계 형식입니다. 이 예제에서는 이전에 사용한 값과 동일한 값 `Relation.TYPE_DEPENDANT_OF`을(를) 사용하여 종속 관계를 지정합니다.
 
-   다음 `getRelated` 메서드가 을 반환합니다. `java.util.List` / `Resource` 에 포함된 객체를 캐스팅하여 각 관련 리소스를 검색하기 위해 반복할 수 있는 객체 `List` 끝 `Resource` 그렇게 하잖아요. 이 예에서는 `testResource2` 은(는) 반환된 리소스 목록에 있어야 합니다.
+   `getRelated` 메서드는 `Resource`개의 개체 중 `java.util.List`을(를) 반환하며, 이를 통해 각 관련 리소스를 검색하기 위해 반복할 수 있으며, `List`에 포함된 개체를 `Resource`에 캐스팅합니다. 이 예제에서 `testResource2`은(는) 반환된 리소스 목록에 있어야 합니다.
 
 **추가 참조**
 
@@ -959,33 +959,33 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 1. 서비스 클라이언트 만들기
 
-   Microsoft .NET 클라이언트 어셈블리를 사용하여 `RepositoryServiceService` 기본 생성자를 호출하여 개체를 작성합니다. 설정 `Credentials` 를 사용하는 속성 `System.Net.NetworkCredential` 사용자 이름과 암호가 포함된 개체입니다.
+   Microsoft .NET 클라이언트 어셈블리를 사용하여 기본 생성자를 호출하여 `RepositoryServiceService` 개체를 만듭니다. 사용자 이름과 암호가 포함된 `System.Net.NetworkCredential` 개체를 사용하여 해당 `Credentials` 속성을 설정합니다.
 
 1. 연결할 리소스의 URI를 지정하십시오.
 
-   연결할 리소스의 URI를 지정합니다. 이 경우 리소스에 이름이 지정되기 때문입니다 `testResource1` 및 `testResource2` 및 이(가) 다음 폴더에 있음: `testFolder`, 해당 URI는 `"/testFolder/testResource1"` 및 `"/testFolder/testResource2"`. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 URI는 `System.String` 개체. 이 예제에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 작성에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources).
+   연결할 리소스의 URI를 지정합니다. 이 경우 리소스의 이름이 `testResource1` 및 `testResource2`이고 이름이 `testFolder`인 폴더에 있으므로 해당 URI는 `"/testFolder/testResource1"` 및 `"/testFolder/testResource2"`입니다. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 URI는 `System.String` 개체로 저장됩니다. 이 예제에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 쓰기에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources)를 참조하십시오.
 
 1. 관계 만들기
 
-   호출 `RepositoryServiceService` 개체 `createRelationship` 메서드, 다음 매개 변수를 전달하십시오.
+   `RepositoryServiceService` 개체의 `createRelationship` 메서드를 호출하고 다음 매개 변수를 전달합니다.
 
    * 소스 리소스의 URI입니다.
    * 대상 리소스의 URI입니다.
-   * 관계 유형. 이 예에서는 그 값을 특정함으로써 의존 관계를 설정한다 `3`.
-   * A `boolean` 관계 유형을 지정했는지 여부를 나타내는 값입니다. 이 예에서 값은 `true` 이(가) 지정되었습니다.
-   * A `boolean` 대상 리소스가 자동으로 `Id`새 head 리소스의 기반 식별자입니다. 이 예제에서는 종속 관계 때문에 값이 `true` 이(가) 지정되었습니다.
-   * A `boolean` 대상 헤드가 지정되었는지 여부를 나타내는 값입니다. 이 예에서 값은 `true` 이(가) 지정되었습니다.
-   * 합격 `null` 을 참조하십시오.
+   * 관계 유형. 이 예제에서는 `3` 값을 지정하여 종속 관계를 설정합니다.
+   * 관계 형식이 지정되었는지 여부를 나타내는 `boolean` 값입니다. 이 예제에서는 `true` 값을 지정합니다.
+   * 대상 리소스가 새 head 리소스의 `Id` 기반 식별자로 자동으로 업데이트되는지 여부를 나타내는 `boolean` 값입니다. 이 예제에서는 종속성 관계로 인해 값 `true`이(가) 지정되었습니다.
+   * 대상 헤드가 지정되었는지 여부를 나타내는 `boolean` 값입니다. 이 예제에서는 `true` 값을 지정합니다.
+   * 마지막 매개 변수에 대해 `null`을(를) 전달합니다.
 
-   또한 를 호출하여 주어진 리소스에 대한 관련 리소스 목록을 검색할 수 있습니다. `RepositoryServiceService` 개체 `getRelated` 메서드 및 다음 매개 변수 전달:
+   `RepositoryServiceService` 개체의 `getRelated` 메서드를 호출하고 다음 매개 변수를 전달하여 지정된 리소스에 대한 관련 리소스 목록을 검색할 수도 있습니다.
 
-   * 관련 리소스를 검색할 리소스의 URI입니다. 이 예에서 소스 리소스( `"/testFolder/testResource1"`)를 지정합니다.
-   * A `boolean` 지정된 리소스가 관계의 원본 리소스인지 여부를 나타내는 값입니다. 이 예에서 값은 `true` 이 경우 이므로 가 지정됩니다.
-   * A `boolean` 원본 리소스가 지정되었는지 여부를 나타내는 값입니다. 이 예에서 값은 `true` 이(가) 제공됩니다.
-   * 관계 유형을 포함하는 정수 배열입니다. 이 예에서 종속 관계는 앞에서 사용했던 것과 동일한 배열 값을 사용하여 지정됩니다. `3`.
-   * 합격 `null` 를 참조하십시오.
+   * 관련 리소스를 검색할 리소스의 URI입니다. 이 예제에서는 원본 리소스(`"/testFolder/testResource1"`)를 지정합니다.
+   * 지정한 리소스가 관계의 원본 리소스인지 여부를 나타내는 `boolean` 값입니다. 이 예제에서는 값 `true`을(를) 지정합니다.
+   * 원본 리소스가 지정되었는지 여부를 나타내는 `boolean` 값입니다. 이 예제에서는 값 `true`이(가) 제공됩니다.
+   * 관계 유형을 포함하는 정수 배열입니다. 이 예제에서는 이전에 사용한 것과 동일한 값을 배열에 사용하여 종속성 관계를 지정합니다. `3`.
+   * 나머지 두 매개 변수에 대해 `null`을(를) 전달합니다.
 
-   다음 `getRelated` 메서드는 캐스팅할 수 있는 개체 배열을 반환합니다. `Resource` 관련된 각 리소스를 검색하기 위해 반복할 수 있는 객체입니다. 이 예에서는 `testResource2` 은(는) 반환된 리소스 목록에 있어야 합니다.
+   `getRelated` 메서드는 `Resource` 개체로 캐스팅할 수 있는 개체 배열을 반환합니다. 이를 통해 관련된 각 리소스를 검색하기 위해 반복할 수 있습니다. 이 예제에서 `testResource2`은(는) 반환된 리소스 목록에 있어야 합니다.
 
 **추가 참조**
 
@@ -1005,7 +1005,7 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 >[!NOTE]
 >
->저장소 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>리포지토리 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-7}
 
@@ -1026,15 +1026,15 @@ A *쿼리* 조건부로 논리적으로 연결된 하나 이상의 문을 포함
 
 리소스를 프로그래밍 방식으로 읽으려면 먼저 연결을 설정하고 자격 증명을 제공해야 합니다. 이 작업은 서비스 클라이언트를 작성하여 수행할 수 있습니다.
 
-**잠글 리소스의 URI를 지정하십시오.**
+**잠글 리소스의 URI를 지정하십시오**
 
-잠글 리소스의 URI를 포함하는 문자열을 만듭니다. 구문에는 다음 예제와 같이 슬래시가 포함됩니다. &quot;/*경로*/*리소스*&quot;.
+잠글 리소스의 URI를 포함하는 문자열을 만듭니다. 구문에는 &quot;/*경로*/*리소스*&quot;과 같이 슬래시가 포함되어 있습니다.
 
 **리소스 잠금**
 
 URI, 잠금 유형 및 잠금 깊이를 지정하여 리소스를 잠그려면 저장소 서비스 메서드를 호출합니다.
 
-**리소스에 대한 잠금 검색**
+**리소스에 대한 잠금을 검색합니다**
 
 저장소 서비스 메서드를 호출하여 리소스에 대한 잠금을 검색하고 URI를 지정합니다.
 
@@ -1064,31 +1064,31 @@ URI를 지정하여 리소스의 잠금을 해제하려면 저장소 서비스 �
 
 1. 서비스 클라이언트 만들기
 
-   만들기 `ResourceRepositoryClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `ResourceRepositoryClient` 개체를 만듭니다.
 
 1. 잠글 리소스의 URI를 지정하십시오.
 
-   잠글 리소스의 URI를 지정합니다. 이 경우, 리소스가 `testResource` 이(가) 다음 폴더에 있음: `testFolder`, 해당 URI는 `"/testFolder/testResource"`. URI는 `java.lang.String` 개체.
+   잠글 리소스의 URI를 지정합니다. 이 경우 이름이 `testResource`인 리소스가 이름이 `testFolder`인 폴더에 있으므로 해당 URI는 `"/testFolder/testResource"`입니다. URI가 `java.lang.String` 개체로 저장됩니다.
 
 1. 리소스 잠금
 
-   호출 `ResourceRepositoryClient` 개체 `lockResource` 메서드, 다음 매개 변수를 전달하십시오.
+   `ResourceRepositoryClient` 개체의 `lockResource` 메서드를 호출하고 다음 매개 변수를 전달합니다.
 
    * 리소스의 URI입니다.
-   * 잠금 범위입니다. 이 예제에서는 리소스가 배타적으로 사용되도록 잠기므로 잠금 범위가 다음과 같이 지정됩니다. `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE`.
-   * 잠금 깊이입니다. 이 예제에서는 잠금이 특정 리소스에만 적용되고 해당 멤버나 자식은 적용되지 않으므로 잠금 깊이가 로 지정됩니다. `Lock.DEPTH_ZERO`.
+   * 잠금 범위입니다. 이 예제에서는 리소스가 배타적으로 사용되도록 잠기므로 잠금 범위가 `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE`(으)로 지정됩니다.
+   * 잠금 깊이입니다. 이 예제에서는 잠금이 특정 리소스에만 적용되고 해당 멤버나 자식은 적용되지 않으므로 잠금 깊이는 `Lock.DEPTH_ZERO`(으)로 지정됩니다.
 
    >[!NOTE]
    >
-   >의 오버로드된 버전 `lockResource` 4개의 매개 변수가 필요한 메서드에서 예외가 발생합니다. 다음을 사용하십시오. `lockResource` 이 연습에 표시된 대로 매개 변수가 세 개 필요한 메서드입니다.
+   >4개의 매개 변수가 필요한 `lockResource` 메서드의 오버로드된 버전에서 예외가 발생합니다. 이 연습에 표시된 대로 매개 변수가 세 개인 `lockResource` 메서드를 사용해야 합니다.
 
 1. 리소스에 대한 잠금 검색
 
-   호출 `ResourceRepositoryClient` 개체 `getLocks` 메서드에서 리소스의 URI를 매개 변수로 전달합니다. 이 메서드는 반복할 수 있는 Lock 개체 목록을 반환합니다. 이 예제에서 각 Lock 객체의 을 호출하여 각 객체에 대해 잠금 소유자, 깊이 및 범위가 인쇄됩니다 `getOwnerUserId`, `getDepth`, 및 `getType` 메서드를 각각 사용합니다.
+   `ResourceRepositoryClient` 개체의 `getLocks` 메서드를 호출하고 리소스의 URI를 매개 변수로 전달합니다. 이 메서드는 반복할 수 있는 Lock 개체 목록을 반환합니다. 이 예제에서는 각 Lock 개체의 `getOwnerUserId`, `getDepth` 및 `getType` 메서드를 각각 호출하여 각 개체에 대해 잠금 소유자, 깊이 및 범위가 인쇄됩니다.
 
 1. 리소스 잠금 해제
 
-   호출 `ResourceRepositoryClient` 개체 `unlockResource` 메서드에서 리소스의 URI를 매개 변수로 전달합니다. 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   `ResourceRepositoryClient` 개체의 `unlockResource` 메서드를 호출하고 리소스의 URI를 매개 변수로 전달합니다. 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)를 참조하십시오.
 
 **추가 참조**
 
@@ -1111,29 +1111,29 @@ URI를 지정하여 리소스의 잠금을 해제하려면 저장소 서비스 �
 
 1. 서비스 클라이언트 만들기
 
-   Microsoft .NET 클라이언트 어셈블리를 사용하여 `RepositoryServiceService` 기본 생성자를 호출하여 개체를 작성합니다. 설정 `Credentials` 를 사용하는 속성 `System.Net.NetworkCredential` 사용자 이름과 암호가 포함된 개체입니다.
+   Microsoft .NET 클라이언트 어셈블리를 사용하여 기본 생성자를 호출하여 `RepositoryServiceService` 개체를 만듭니다. 사용자 이름과 암호가 포함된 `System.Net.NetworkCredential` 개체를 사용하여 해당 `Credentials` 속성을 설정합니다.
 
 1. 잠글 리소스의 URI를 지정하십시오.
 
-   잠글 리소스의 URI를 포함하는 문자열을 지정합니다. 이 경우, 리소스가 `testResource` 폴더에 있음 `testFolder`, 해당 URI는 `"/testFolder/testResource"`. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 URI를 `System.String` 개체.
+   잠글 리소스의 URI를 포함하는 문자열을 지정합니다. 이 경우 이름이 `testResource`인 리소스가 `testFolder` 폴더에 있으므로 해당 URI는 `"/testFolder/testResource"`입니다. Microsoft .NET Framework와 호환되는 언어(예: C#)를 사용하는 경우 `System.String` 개체에 URI를 저장합니다.
 
 1. 리소스 잠금
 
-   호출 `RepositoryServiceService` 개체 `lockResource` 메서드, 다음 매개 변수를 전달하십시오.
+   `RepositoryServiceService` 개체의 `lockResource` 메서드를 호출하고 다음 매개 변수를 전달합니다.
 
    * 리소스의 URI입니다.
-   * 잠금 범위입니다. 이 예제에서는 리소스가 배타적으로 사용되도록 잠기므로 잠금 범위가 다음과 같이 지정됩니다. `11`.
-   * 잠금 깊이입니다. 이 예제에서는 잠금이 특정 리소스에만 적용되고 해당 멤버나 자식은 적용되지 않으므로 잠금 깊이가 로 지정됩니다. `2`.
-   * An `int` 잠금이 만료될 때까지의 시간(초)을 나타내는 값입니다. 이 예에서 값은 `1000` 를 사용합니다.
-   * 합격 `null` 을 참조하십시오.
+   * 잠금 범위입니다. 이 예제에서는 리소스가 배타적으로 사용되도록 잠기므로 잠금 범위가 `11`(으)로 지정됩니다.
+   * 잠금 깊이입니다. 이 예제에서는 잠금이 특정 리소스에만 적용되고 해당 멤버나 자식은 적용되지 않으므로 잠금 깊이는 `2`(으)로 지정됩니다.
+   * 잠금이 만료될 때까지의 시간(초)을 나타내는 `int` 값입니다. 이 예제에서는 `1000` 값을 사용합니다.
+   * 마지막 매개 변수에 대해 `null`을(를) 전달합니다.
 
 1. 리소스에 대한 잠금 검색
 
-   호출 `RepositoryServiceService` 개체 `getLocks` 메서드에서 첫 번째 매개 변수로 리소스의 URI를 전달합니다. `null` (두 번째 매개 변수) 메서드는 다음을 반환합니다. `object` 다음 포함 배열 `Lock` 반복할 수 있는 객체. 이 예제에서는 각 객체에 액세스하여 각 객체에 대해 잠금 소유자, 깊이 및 범위가 인쇄됩니다 `Lock` 개체 `ownerUserId`, `depth`, 및 `type` 각각 필드입니다.
+   `RepositoryServiceService` 개체의 `getLocks` 메서드를 호출하고 리소스의 URI를 첫 번째 매개 변수로, 두 번째 매개 변수에 대해 `null`을(를) 전달합니다. 이 메서드는 반복할 수 있는 `Lock` 개체가 포함된 `object` 배열을 반환합니다. 이 예제에서는 각 `Lock` 개체의 `ownerUserId`, `depth` 및 `type` 필드에 각각 액세스하여 각 개체에 대해 잠금 소유자, 깊이 및 범위가 인쇄됩니다.
 
 1. 리소스 잠금 해제
 
-   호출 `RepositoryServiceService` 개체 `unlockResource` 메서드에서 첫 번째 매개 변수로 리소스의 URI를 전달합니다. `null` (두 번째 매개 변수)
+   `RepositoryServiceService` 개체의 `unlockResource` 메서드를 호출하고 리소스의 URI를 첫 번째 매개 변수로, 두 번째 매개 변수에 대해 `null`을(를) 전달합니다.
 
 **추가 참조**
 
@@ -1153,11 +1153,11 @@ SOAP(저장소 서비스 Java API)를 사용하여 저장소의 지정된 위치
 
 >[!NOTE]
 >
->사용 시 `com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()` emc Documentum Content Server 및 IBM FileNet P8 Content Manager를 사용하는 메서드에서는 지정된 리소스 중 하나에 대해 삭제가 실패하면 트랜잭션이 롤백되지 않습니다. 즉, 삭제된 파일은 삭제할 수 없습니다.
+>ECM 저장소(EMC Documentum Content Server 및 IBM FileNet P8 Content Manager)와 함께 `com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()` 메서드를 사용할 때 지정된 리소스 중 하나에 대해 삭제가 실패하면 트랜잭션이 롤백되지 않습니다. 즉, 삭제된 파일은 삭제할 수 없습니다.
 
 >[!NOTE]
 >
->저장소 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>리포지토리 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-8}
 
@@ -1176,9 +1176,9 @@ SOAP(저장소 서비스 Java API)를 사용하여 저장소의 지정된 위치
 
 리소스를 프로그래밍 방식으로 읽으려면 먼저 연결을 설정하고 자격 증명을 제공해야 합니다. 이 작업은 서비스 클라이언트를 작성하여 수행할 수 있습니다.
 
-**삭제할 리소스의 URI를 지정하십시오.**
+**삭제할 리소스의 URI를 지정하십시오**
 
-삭제할 리소스의 URI를 포함하는 문자열을 만듭니다. 구문에는 다음 예제와 같이 슬래시가 포함됩니다. &quot;/*경로*/*리소스*&quot;. 삭제할 리소스가 폴더인 경우 삭제는 재귀적입니다.
+삭제할 리소스의 URI를 포함하는 문자열을 만듭니다. 구문에는 &quot;/*경로*/*리소스*&quot;과 같이 슬래시가 포함되어 있습니다. 삭제할 리소스가 폴더인 경우 삭제는 재귀적입니다.
 
 **리소스 삭제**
 
@@ -1206,15 +1206,15 @@ URI를 지정하여 리소스를 삭제하려면 저장소 서비스 메서드�
 
 1. 서비스 클라이언트 만들기
 
-   만들기 `ResourceRepositoryClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `ResourceRepositoryClient` 개체를 만듭니다.
 
 1. 삭제할 리소스의 URI를 지정하십시오.
 
-   검색할 리소스의 URI를 지정합니다. 이 경우 testResourceToBeDeleted라는 리소스가 testFolder라는 폴더에 있으므로 해당 URI는 입니다. `/testFolder/testResourceToBeDeleted`. URI는 `java.lang.String` 개체. 이 예에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 작성에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources).
+   검색할 리소스의 URI를 지정합니다. 이 경우 testResourceToBeDeleted라는 리소스가 testFolder라는 폴더에 있으므로 해당 URI는 `/testFolder/testResourceToBeDeleted`입니다. URI가 `java.lang.String` 개체로 저장됩니다. 이 예에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 쓰기에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources)를 참조하십시오.
 
 1. 리소스 삭제
 
-   호출 `ResourceRepositoryClient` 개체 `deleteResource` 메서드에서 리소스의 URI를 매개 변수로 전달합니다.
+   `ResourceRepositoryClient` 개체의 `deleteResource` 메서드를 호출하고 리소스의 URI를 매개 변수로 전달합니다.
 
 **추가 참조**
 
@@ -1237,15 +1237,15 @@ URI를 지정하여 리소스를 삭제하려면 저장소 서비스 메서드�
 
 1. 서비스 클라이언트 만들기
 
-   Microsoft .NET 클라이언트 어셈블리를 사용하여 `RepositoryServiceService` 기본 생성자를 호출하여 개체를 작성합니다. 설정 `Credentials` 를 사용하는 속성 `System.Net.NetworkCredential` 사용자 이름과 암호가 포함된 개체입니다.
+   Microsoft .NET 클라이언트 어셈블리를 사용하여 기본 생성자를 호출하여 `RepositoryServiceService` 개체를 만듭니다. 사용자 이름과 암호가 포함된 `System.Net.NetworkCredential` 개체를 사용하여 해당 `Credentials` 속성을 설정합니다.
 
 1. 삭제할 리소스의 URI를 지정하십시오.
 
-   검색할 리소스의 URI를 지정합니다. 이 경우, 리소스가 `testResourceToBeDeleted` 이(가) 다음 폴더에 있음: `testFolder`, 해당 URI는 `"/testFolder/testResourceToBeDeleted"`. 이 예에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 작성에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources).
+   검색할 리소스의 URI를 지정합니다. 이 경우 이름이 `testResourceToBeDeleted`인 리소스가 이름이 `testFolder`인 폴더에 있으므로 해당 URI는 `"/testFolder/testResourceToBeDeleted"`입니다. 이 예에서 리소스는 먼저 저장소에 기록되고 해당 URI가 검색됩니다. 리소스 쓰기에 대한 자세한 내용은 [리소스 쓰기](aem-forms-repository.md#writing-resources)를 참조하십시오.
 
 1. 리소스 삭제
 
-   호출 `RepositoryServiceService` 개체 `deleteResources` 방법 및 전달 `System.String` 리소스의 URI를 첫 번째 매개 변수로 포함하는 배열입니다. 합격 `null` (두 번째 매개 변수)
+   `RepositoryServiceService` 개체의 `deleteResources` 메서드를 호출하고 리소스의 URI를 첫 번째 매개 변수로 포함하는 `System.String` 배열을 전달합니다. 두 번째 매개 변수에 대해 `null`을(를) 전달합니다.
 
 **추가 참조**
 

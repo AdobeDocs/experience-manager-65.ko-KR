@@ -1,6 +1,6 @@
 ---
 title: 콘텐츠 조각 액세스 및 게재 Headless 빠른 시작 안내서
-description: AEM Assets REST API를 사용하여 콘텐츠 조각을 관리하고, 콘텐츠 조각 콘텐츠의 Headless 전달을 위한 GraphQL API를 사용하는 방법에 대해 알아봅니다.
+description: AEM의 Assets REST API를 사용하여 콘텐츠 조각을 관리하고, 콘텐츠 조각 콘텐츠의 Headless 전달을 위한 GraphQL API를 사용하는 방법에 대해 알아봅니다.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
@@ -20,8 +20,8 @@ AEM Assets REST API를 사용하여 콘텐츠 조각을 관리하고, 콘텐츠 
 
 [일부 콘텐츠 조각을 만들었으므로](create-content-fragment.md) 이제 AEM의 API를 사용하여 Headless 방식으로 전달할 수 있습니다.
 
-* [GRAPHQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만들 수 있습니다.
-   * 이 항목을 사용하려면 [끝점은 AEM에서 정의하고 활성화해야 합니다.](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint), 그리고 필요한 경우 [GraphiQL 인터페이스가 설치됨](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
+* [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 사용하여 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만들 수 있습니다.
+   * 이 기능을 사용하려면 [끝점을 AEM에서 정의하고 활성화해야 합니다](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint). 필요한 경우 [GraphiQL 인터페이스를 설치](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [Assets REST API](/help/assets/assets-api-content-fragments.md)를 사용하면 콘텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
 이 안내서의 나머지 부분에서는 GraphQL 액세스 및 콘텐츠 조각 게재에 중점을 둡니다.
@@ -30,7 +30,7 @@ AEM Assets REST API를 사용하여 콘텐츠 조각을 관리하고, 콘텐츠 
 
 정보 설계자는 콘텐츠를 전달할 채널 끝점에 대한 쿼리를 설계해야 합니다. 이러한 쿼리는 엔드포인트, 모델당 한 번만 고려하십시오. 이 시작 안내서에서는 하나만 만듭니다.
 
-1. AEM에 로그인하고 [GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
+1. AEM에 로그인하고 [GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphiql-ide.md)에 액세스합니다.
    * 예: `http://<host>:<port>/aem/graphiql.html`.
 
 1. GraphiQL은 GraphQL용 브라우저 내 쿼리 편집기입니다. 이를 사용하여 콘텐츠 조각을 검색하여 JSON으로 원활하게 전달하는 쿼리를 작성할 수 있습니다.
@@ -60,13 +60,13 @@ AEM Assets REST API를 사용하여 콘텐츠 조각을 관리하고, 콘텐츠 
    ![GraphiQL query](assets/graphiql-query.png)
 -->
 
-1. 다음을 클릭합니다. **쿼리 실행** (오른쪽 화살표) 아이콘 또는 `Ctrl-Enter` 핫키 및 결과는 오른쪽 패널에 JSON으로 표시됩니다.
+1. **쿼리 실행**(오른쪽 화살표) 아이콘을 클릭하거나 `Ctrl-Enter` 핫키를 사용하면 결과가 오른쪽 패널에 JSON으로 표시됩니다.
    ![GraphiQL 결과](assets/graphiql-results.png)
 
 1. 클릭:
-   * **문서** 페이지 오른쪽 상단에 상황에 맞는 설명서를 표시하여 자신의 모델에 맞는 쿼리를 작성할 수 있습니다.
-   * **기록** 을 클릭하여 이전 쿼리를 표시할 수 있습니다.
-   * **다른 이름으로 저장** 및 **저장** 쿼리를 저장하고 나중에는 **지속 쿼리** 패널 및 **게시**.
+   * 페이지 오른쪽 상단의 **설명서**&#x200B;를 통해 상황에 맞는 설명서를 표시하여 자신의 모델에 맞는 쿼리를 만드는 데 도움이 됩니다.
+   * 이전 쿼리를 표시하기 위해 맨 위 도구 모음의 **기록**
+   * 쿼리를 저장하려면 **다른 이름으로 저장** 및 **저장**&#x200B;을 클릭하세요. 이후 **지속 쿼리** 패널 및 **Publish**에서 쿼리를 나열하고 검색할 수 있습니다.
      ![GraphiQL 설명서](assets/graphiql-documentation.png)
 
 GraphQL은 특정 데이터 세트 또는 개별 데이터 오브젝트를 대상으로 할 수 있을 뿐만 아니라 오브젝트의 특정 요소 및 중첩된 결과를 전달할 수 있는 구조화된 쿼리를 가능하게 하고, 쿼리 변수 등에 대한 지원을 제공합니다.
@@ -77,9 +77,9 @@ GraphQL은 반복적인 API 요청 및 초과 전달을 방지할 수 있습니�
 
 이번 단계가 끝났습니다! 이제 AEM의 Headless 콘텐츠 관리에 대한 기본 사항을 이해했습니다. 사용 가능한 기능을 포괄적으로 이해하기 위해 더 자세히 알아볼 수 있는 더 많은 리소스가 있습니다.
 
-* **[구성 브라우저](create-configuration.md)** - AEM 구성 브라우저에 대한 자세한 내용
+* **[구성 브라우저](create-configuration.md)** - AEM 구성 브라우저에 대한 자세한 정보
 * **[콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)** - 콘텐츠 조각 생성 및 관리에 대한 자세한 내용
-* **[GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)** GraphiQL IDE 사용에 대한 자세한 내용은
-* **[지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)** 지속 쿼리에 대한 자세한 정보
+* GraphiQL IDE 사용에 대한 자세한 내용은 **[GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)**&#x200B;을 참조하십시오.
+* 지속 쿼리에 대한 자세한 내용은 **[지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)**&#x200B;를 참조하세요.
 * **[AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/assets-api-content-fragments.md)** - CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 통해 HTTP API로 직접 AEM 콘텐츠에 액세스하는 방법에 대한 자세한 내용
 * **[GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)** - 콘텐츠 조각을 Headless 방식으로 전달하는 방법에 대한 자세한 내용

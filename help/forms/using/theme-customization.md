@@ -28,15 +28,15 @@ HTML 코드 및 CSS 파일을 사용자 정의하여 AEM Forms 앱에 고유한 
 
 1. 프로젝트를 엽니다.
 
-   * iOS의 경우 를 엽니다. `Capture.xcodeproj` Xcode에서
+   * iOS의 경우 Xcode에서 `Capture.xcodeproj` 열기
    * Android의 경우 Eclipse에서 Android 프로젝트를 엽니다.
-   * Windows의 경우 열기 `MWSWindows.sln` Visual Studio에서.
+   * Windows의 경우 Visual Studio에서 `MWSWindows.sln`을(를) 엽니다.
 
 1. 템플릿 폴더로 이동합니다.
 
-   * Xcode에서 **캡처 > www > wsmobile > js > 런타임 > 템플릿** 폴더를 삭제합니다.
-   * Eclipse에서 **assets > www > wsmobile > js > 런타임 > 템플릿** 폴더를 삭제합니다.
-   * Visual Studio에서 **MWSWindows > www > wsmobile > js > 런타임 > 템플릿** 폴더를 삭제합니다.
+   * Xcode에서 **캡처 > www > wsmobile > js > 런타임 > 템플릿** 폴더로 이동합니다.
+   * Eclipse에서 **자산 > www > wsmobile > js > 런타임 > 템플릿** 폴더로 이동합니다.
+   * Visual Studio에서 **MWSWindows > www > wsmobile > js > runtime > templates** 폴더로 이동합니다.
 
 1. 편집할 `template.html` 페이지를 엽니다.
 1. 다음 문자열을 찾습니다.
@@ -49,9 +49,9 @@ HTML 코드 및 CSS 파일을 사용자 정의하여 AEM Forms 앱에 고유한 
                  <%} else
    ```
 
-   다음으로 바꾸기 `<%`.
+   `<%`(으)로 바꿉니다.
 
-1. 에서 다음 코드를 찾습니다. `template.html` 파일:
+1. `template.html` 파일에서 다음 코드를 찾습니다.
 
    ```jsp
    <ul id="task_menu_list">
@@ -73,13 +73,13 @@ HTML 코드 및 CSS 파일을 사용자 정의하여 AEM Forms 앱에 고유한 
 
 1. css 폴더로 이동합니다.
 
-   * Xcode에서 다음으로 이동합니다. **Capture > www > wsmobile > css**.
-   * Eclipse에서 다음으로 이동 **assets > www > wsmobile > css**.
-   * Visual Studio에서 다음으로 이동합니다. **MWSWindows > www > wsmobile > css**.
+   * Xcode에서 **캡처 > www > wsmobile > css**&#x200B;로 이동합니다.
+   * Eclipse에서 **자산 > www > wsmobile > css**&#x200B;로 이동합니다.
+   * Visual Studio에서 **MWSWindows > www > wsmobile > css**&#x200B;로 이동합니다.
 
 1. 편집할 `_style.css` 페이지를 엽니다.
-1. 배경 이미지의 경우 변경 `#323232` 끝 `#fff`.
-1. 변경 내용을 저장하고 닫기 `_style.css` 파일.
+1. 배경 이미지의 경우 `#323232`을(를) `#fff`(으)로 변경하십시오.
+1. 변경 내용을 저장하고 `_style.css` 파일을 닫습니다.
 1. AEM Forms 앱을 엽니다.
 
    이제 AEM Forms 앱에 설명 대신 지침이 표시됩니다.

@@ -48,7 +48,7 @@ ht-degree: 9%
 
 * 비즈니스 사용자가 AEM 콘텐츠 페이지에서 이 구성 요소를 드래그 앤 드롭하여 상거래 데이터로 콘텐츠 페이지를 보강할 수 있도록 새 카테고리 캐러셀 구성 요소를 추가했습니다.
 
-* 상거래 데이터를 전송하여 Adobe 클라이언트 데이터 레이어를 하이드레이션하도록 확장된 CIF 핵심 구성 요소입니다. Adobe 클라이언트 데이터 계층 은 데이터를 수집하고 데이터를 Digital Analytics 및 보고 서버에 전달하는 표준화된 방법입니다. 자세한 내용은 [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer/wiki).
+* 상거래 데이터를 전송하여 Adobe 클라이언트 데이터 레이어를 하이드레이션하도록 확장된 CIF 핵심 구성 요소입니다. Adobe 클라이언트 데이터 계층 은 데이터를 수집하고 데이터를 Digital Analytics 및 보고 서버에 전달하는 표준화된 방법입니다. 자세한 내용은 [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer/wiki)를 참조하십시오.
 
 * Adobe Commerce 관리 UI 내에서 구성된 SEO 메타데이터(예: 제목, 메타 설명, 메타 키워드)를 자동으로 채우도록 제품 세부 사항 및 제품 목록 페이지가 확장되었습니다
 
@@ -92,7 +92,7 @@ ht-degree: 9%
 
 * 콘텐츠 및 상거래 페이지를 지원하기 위해 이동 경로 구성 요소가 추가되었습니다.
 
-* 랜딩 페이지 및 경험 조각에 대한 CIF 속성을 노출하기 위해 페이지 속성에 상거래 탭이 추가되었습니다.
+* 랜딩 페이지 및 경험 조각에 대한 CIF 속성을 노출하기 위해 페이지 속성에 Commerce 탭이 추가되었습니다.
 
 * 자리 표시자 텍스트를 표시하는 옵션을 지원하도록 검색 막대 구성 요소가 개선되었습니다
 
@@ -116,7 +116,7 @@ ht-degree: 9%
 
 * CIF Venia 참조 사이트는 CIF Archetype 저장소에서 추출되었으며 이제 독립 실행형 GitHub 저장소입니다.
 
-* CIF Archetype이 AEM Project Archetype과 병합되었습니다. 새 프로젝트의 경우 다음을 사용하십시오. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 을(를) 시작점으로 선택합니다.
+* CIF Archetype이 AEM Project Archetype과 병합되었습니다. 새 프로젝트의 경우 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)을(를) 시작점으로 사용하십시오.
 
 * 로그인한 사용자가 주소를 관리할 수 있도록 주소록 관리가 추가되었습니다.
 
@@ -172,7 +172,7 @@ Adobe Experience Manager에서 지원되는 CIF 핵심 구성 요소의 첫 번�
 
 * 구매자가 제품 패싯을 기반으로 검색 결과를 필터링할 수 있도록 검색 페이지 및 제품 목록 페이지에 패싯된 검색 지원이 추가되었습니다.
 
-* SEO 목적으로 PDP/PLP URL을 사용자 정의하기 위해 새 OSGi 서비스가 추가되었습니다. 자세한 내용은 [설명서](https://github.com/adobe/aem-core-cif-components).
+* SEO 목적으로 PDP/PLP URL을 사용자 정의하기 위해 새 OSGi 서비스가 추가되었습니다. 자세한 내용은 [설명서](https://github.com/adobe/aem-core-cif-components)를 참조하세요.
 
 * 클라우드 구성이 생성되면 제품 바인딩이 자동으로 생성됩니다.
 
@@ -192,7 +192,7 @@ Adobe Experience Manager에서 지원되는 CIF 핵심 구성 요소의 첫 번�
 
 ### 새로운 기능 {#what-is-new-april}
 
-* CIF Connector에 대한 구성 설정이 통합 및 단순화되었습니다. 자세한 내용은 체크아웃을 참조하십시오 [시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) 또는 [새 AEM CIF 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
+* CIF Connector에 대한 구성 설정이 통합 및 단순화되었습니다. 자세한 내용은 체크 아웃 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) 또는 [새 AEM CIF 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)을 참조하십시오.
 
 ### 개선 사항 {#what-is-improved-april}
 

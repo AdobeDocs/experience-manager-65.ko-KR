@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >Adobe은 AEM SMTP 서비스에서 보낸 열림/반송된 이메일의 추적을 더 강화하지 않을 계획입니다.
 >
->권장 사항은 다음과 같습니다. [Adobe Campaign 및 해당 AEM 통합 사용](/help/sites-administering/campaign.md).
+>권장 사항은 [Adobe Campaign 및 해당 AEM 통합을 사용](/help/sites-administering/campaign.md)하는 것입니다.
 
 많은 사용자에게 뉴스레터를 보낼 때 일반적으로 목록에 일부 잘못된 이메일 주소가 있습니다. 해당 주소로 뉴스레터를 전송하는 경우 다시 반송됩니다. AEM은 이러한 바운스를 관리할 수 있으며 구성된 바운스 카운터가 초과된 후 해당 주소로 뉴스레터 전송을 중지할 수 있습니다. 기본적으로 바운스 비율은 3으로 설정되지만 구성할 수 있습니다.
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 
 반송된 이메일을 추적하도록 피드 가져오기를 구성하려면 다음을 수행합니다.
 
-1. 위치 **도구**&#x200B;피드 가져오기를 선택합니다.
+1. **도구**&#x200B;에서 피드 가져오기를 선택합니다.
 
-1. 클릭 **추가** 구성을 만듭니다.
+1. 구성을 만들려면 **추가**&#x200B;를 클릭하십시오.
 
    ![chlimage_1](assets/chlimage_1a.png)
 
@@ -64,9 +64,9 @@ ht-degree: 0%
 
    검색할 플래그를 설정할 수 있습니다.
 
-   `imap.flag.SEEN`:새/보이지 않는 메시지에 대해 false를 설정하고, 이미 읽은 메시지에 대해 true를 설정합니다.
+   `imap.flag.SEEN`:새/확인되지 않은 메시지에 대해 false를 설정하고, 이미 읽은 메시지에 대해 true를 설정합니다.
 
-   다음을 참조하십시오 [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) 플래그 전체 목록.
+   전체 플래그 목록은 [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html)을(를) 참조하십시오.
 
    **IMAP 예:**
 
@@ -83,7 +83,7 @@ Feed Importer를 구성한 후 From 주소 및 바운스 카운터를 구성합�
 
 뉴스레터 서비스를 구성하려면:
 
-1. OSGi 콘솔에서, `<host>:<port>/system/console/configMgr`, 다음으로 이동 **MCM 뉴스레터**.
+1. OSGi 콘솔에서 `<host>:<port>/system/console/configMgr`에 있는 **MCM 뉴스레터**(으)로 이동합니다.
 
 1. 서비스를 구성하고 완료되면 변경 사항을 저장합니다.
 

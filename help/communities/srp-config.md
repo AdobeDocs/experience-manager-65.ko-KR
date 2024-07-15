@@ -33,16 +33,16 @@ ht-degree: 4%
 
 작성자 환경에서 스토리지 구성 콘솔로 이동합니다.
 
-* 전역 탐색에서 을 선택합니다. **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 스토리지 구성]**
+* 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 저장소 구성]**&#x200B;을 선택합니다.
 
 기본 JCR 이외의 저장 영역 옵션을 선택하려면 다음과 같이 하십시오.
 
 * 옵션 선택
 * 적절히 구성
 
-   * 다음에 대한 세부 사항 보기 [msrp 선택](msrp.md#select-msrp)
-   * 다음에 대한 세부 사항 보기 [dsrp 선택](dsrp.md#select-dsrp)
-   * 다음에 대한 세부 사항 보기 [ASRP 선택](asrp.md#select-asrp)
+   * [MSRP 선택](msrp.md#select-msrp)에 대한 세부 정보 보기
+   * [DSRP 선택](dsrp.md#select-dsrp)에 대한 세부 정보 보기
+   * [ASRP 선택](asrp.md#select-asrp)에 대한 세부 정보 보기
 
 * **[!UICONTROL 제출]**&#x200B;을 선택합니다.
 
@@ -50,10 +50,10 @@ ht-degree: 4%
 
 선택하지 않으면 기본값은 AEM 저장소인 JCR입니다.
 
-JCR: *아님* 작성자 및 게시 환경에서 공유하는 공통 저장소입니다. 커뮤니티 콘텐츠는 콘텐츠가 만들어진 작성자 또는 게시 환경에서만 볼 수 있습니다.
+JCR은 작성자 및 Publish 환경에서 공유하는 공통 저장소가 *아님*&#x200B;입니다. 커뮤니티 컨텐츠는 컨텐츠가 생성된 작성자 또는 Publish 환경에서만 볼 수 있습니다.
 
-방문 [JCR 저장소](jsrp.md) 추가 정보.
+자세한 내용은 [JCR 저장소](jsrp.md)를 참조하세요.
 
 >[!NOTE]
 >
->노드가 없음 `srpc` 아래에 `/etc/socialconfig` 기본값을 나타냅니다. [JCR 저장소](jsrp.md).
+>`/etc/socialconfig` 아래에 `srpc` 노드가 없으면 기본 [JCR 저장소](jsrp.md)를 나타냅니다.

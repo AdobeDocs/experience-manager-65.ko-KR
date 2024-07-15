@@ -23,17 +23,17 @@ ht-degree: 0%
 
 AEM Forms 앱에서 양식을 동기화하려면:
 
-1. 작성자 인스턴스에서 양식을 선택하고 **속성 보기**.
-1. 속성 페이지에서 **고급.**
-1. 고급 아래에서 옵션을 활성화합니다. **AEM Forms 앱과 동기화**, 및 선택 **저장**.
+1. 작성자 인스턴스에서 양식을 선택하고 **속성 보기**&#x200B;를 클릭합니다.
+1. 속성 페이지에서 **고급**&#x200B;을 클릭합니다.
+1. [고급]에서 옵션 **AEM Forms 앱과 동기화**&#x200B;를 사용하도록 설정하고 **저장**&#x200B;을 선택합니다.
 
-여러 양식을 동기화하려면 작성자 인스턴스에서 Forms Manager에서 여러 양식을 선택하고 을 선택합니다 **AEM Forms 앱과 동기화**. 양식이 게시되면 AEM Forms 앱에서 게시 서버에 연결하여 양식을 가져올 수 있습니다.
+작성자 인스턴스에서 여러 양식을 동기화하려면 Forms Manager에서 여러 양식을 선택하고 **AEM Forms 앱과 동기화**&#x200B;를 선택합니다. 양식이 게시되면 AEM Forms 앱에서 게시 서버에 연결하여 양식을 가져올 수 있습니다.
 
 AFA(AEM Form Application) Android 앱이 동기화되지 않을 경우 다음 단계를 수행하여 동기화 문제를 해결합니다.
 
-1. 로 이동 **https://[server]:[포트]/system/console/configMgr**.
-1. 검색 **[!UICONTROL Adobe Granite 토큰 인증 핸들러]** 및 클릭 **[!UICONTROL 편집]**.
-1. 다음 항목 선택 **[!UICONTROL 없음]** 드롭다운 메뉴의 옵션 **[!UICONTROL 로그인 토큰 쿠키에 대한 SameSite 속성]** 특성.
+1. **https://[server]:[port]/system/console/configMgr**(으)로 이동합니다.
+1. **[!UICONTROL Adobe Granite 토큰 인증 처리기]**&#x200B;를 검색하고 **[!UICONTROL 편집]**&#x200B;을(를) 클릭합니다.
+1. 로그인 토큰 쿠키&#x200B;]**특성에 대한**[!UICONTROL  SameSite 특성에 대한 드롭다운 메뉴에서 **[!UICONTROL 없음]** 옵션을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ![AFA Android 앱과 이미지 동기화](/help/forms/using/assets/afaandroid.png)
@@ -50,5 +50,5 @@ AFA(AEM Form Application) Android 앱이 동기화되지 않을 경우 다음 �
 
 **양식을 열고 업데이트하려면**
 
-1. 양식을 열려면 **[!UICONTROL 양식]** 홈 화면에서 다음을 수행합니다.
+1. 양식을 열려면 홈 화면에서 **[!UICONTROL 양식]**&#x200B;을 선택합니다.
 1. 양식의 필드를 업데이트하고, 첨부 파일을 추가하고, 초안으로 저장하고, 제출할 수 있습니다.

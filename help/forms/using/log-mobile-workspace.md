@@ -32,7 +32,7 @@ Adobe Experience Manager(AEM) Forms 앱을 시작할 때 먼저 로그인 자격
    >    * 서버 URL 목록을 표시하려면 서버 URL 텍스트 상자의 오른쪽 모서리에 있는 목록 화살표를 클릭합니다.
    >    * 앱을 통해 로그인할 AEM Forms 서버 URL을 선택합니다.
 
-앱에 로그인하면 다음 위치로 이동됩니다. [**홈** 화면](../../forms/using/home-screen.md).
+앱에 로그인하면 [**홈** 화면](../../forms/using/home-screen.md)(으)로 이동합니다.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: 커뮤니티에 대한 Dispatcher 구성
-description: 커뮤니티 사이트가 제대로 작동하도록 AEM Communities용 Dispatcher를 구성하는 방법에 대해 알아봅니다.
+description: 커뮤니티 사이트가 제대로 작동하도록 AEM Communities용 Dispatcher을 구성하는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
@@ -20,29 +20,29 @@ ht-degree: 7%
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities의 경우 가 제대로 작동하도록 Dispatcher를 구성해야 합니다 [커뮤니티 사이트](overview.md#community-sites). 소셜 로그인과 같은 기능을 포함할 때 추가 구성이 필요합니다.
+AEM Communities의 경우 [커뮤니티 사이트](overview.md#community-sites)가 제대로 작동하도록 Dispatcher을 구성해야 합니다. 소셜 로그인과 같은 기능을 포함할 때 추가 구성이 필요합니다.
 
 특정 배포 및 사이트 디자인에 필요한 사항을 알아보려면
 
 * [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) 문의
 
-메인 페이지 참조 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
+기본 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)도 참조하세요.
 
 ## Dispatcher 캐싱 {#dispatcher-caching}
 
 ### 개요 {#overview}
 
-AEM Communities용 Dispatcher 캐싱은 Dispatcher가 커뮤니티 사이트 페이지의 전체 캐시 버전을 제공하는 기능입니다.
+AEM Communities용 Dispatcher 캐싱은 Dispatcher에서 커뮤니티 사이트 페이지의 전체 캐시 버전을 제공하는 기능입니다.
 
 현재, 커뮤니티 사이트를 탐색하거나 검색 결과로 커뮤니티 페이지에 도착하는 사용자와 같은 익명 사이트 방문자 및 페이지를 색인화하는 검색 엔진에 대해서만 지원됩니다. 익명의 사용자 및 검색 엔진이 향상된 성능을 경험한다는 이점이 있습니다.
 
-로그인한 멤버의 경우 Dispatcher가 캐시를 우회하여 요청을 게시자에게 직접 전달하므로 모든 페이지가 동적으로 생성되고 전달됩니다.
+로그인한 멤버의 경우 Dispatcher이 캐시를 무시하고 요청을 게시자에게 직접 전달하므로 모든 페이지가 동적으로 생성되고 전달됩니다.
 
-Dispatcher 캐싱을 지원하도록 구성된 경우, TTL 기반 &quot;최대 기간&quot; 만료가 헤더에 추가되어 Dispatcher 캐시된 페이지가 최신 상태인지 확인합니다.
+Dispatcher 캐싱을 지원하도록 구성된 경우, TTL 기반 &quot;최대 기간&quot; 만료가 헤더에 추가되어 Dispatcher 캐싱된 페이지가 최신 상태인지 확인합니다.
 
 ### 요구 사항 {#requirements}
 
-* Dispatcher 버전 4.1.2 이상(참조 [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) (최신 버전용)
+* Dispatcher 버전 4.1.2 이상(최신 버전은 [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) 참조)
 * [ACS AEM Commons 패키지](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * 버전 3.3.2 이상
@@ -50,13 +50,13 @@ Dispatcher 캐싱을 지원하도록 구성된 경우, TTL 기반 &quot;최대 �
 
 ### 구성 {#configuration}
 
-OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 기간** 지정된 경로에 나타나는 캐시된 페이지의 만료를 설정합니다.
+OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - Max Age**&#x200B;는 지정된 경로에 나타나는 캐시된 페이지의 만료를 설정합니다.
 
-* 다음에서 [웹 콘솔](../../help/sites-deploying/configuring-osgi.md).
+* [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)에서.
 
-   * 예를 들어, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * 예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* 찾기 `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
+* `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` 찾기
 * 연결 구성을 만들 수 있도록 &#39;+&#39; 아이콘을 선택합니다.
 
   ![dispatcher](assets/dispatcher.png)
@@ -69,13 +69,13 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 
 
 ## Dispatcher 필터 {#dispatcher-filters}
 
-의 /filter 섹션 `dispatcher.any` 파일은에 문서화되어 있습니다. [콘텐츠에 대한 액세스 구성 - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
+`dispatcher.any` 파일의 /filter 섹션은 [콘텐츠에 대한 액세스 구성 - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)에 설명되어 있습니다.
 
 이 섹션에서는 Communities 기능이 제대로 작동하는 데 필요한 항목에 대해 설명합니다.
 
 필터 속성 이름은 필터 패턴을 적용할 순서를 나타내기 위해 4자리 숫자를 사용하는 규칙을 따릅니다. 여러 필터 패턴이 요청에 적용되는 경우 마지막으로 적용된 필터 패턴이 유효합니다. 따라서 첫 번째 필터 패턴은 종종 모든 것을 거부하는 데 사용되므로 다음 패턴은 제어된 방식으로 액세스를 복원하는 역할을 합니다.
 
-다음 샘플은 특정 속성에 맞게 수정해야 하는 속성 이름을 사용합니다 `dispatcher.any` 파일.
+다음 샘플에서는 특정 `dispatcher.any` 파일에 맞도록 수정해야 하는 속성 이름을 사용합니다.
 
 추가 참조:
 
@@ -83,8 +83,8 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 
 
 >[!NOTE]
 >
->**속성 이름 예**
->다음과 같은 모든 속성 이름이 표시됩니다. **/0050** 및 **/0170**&#x200B;를 기존 항목 내에 맞게 조정해야 합니다 `dispatcher.any` 구성 파일입니다.
+>**속성 이름 예제**
+>**/0050** 및 **/0170**&#x200B;과(와) 같이 표시된 모든 속성 이름은 기존 `dispatcher.any` 구성 파일에 맞게 조정해야 합니다.
 >
 
 >[!CAUTION]
@@ -224,7 +224,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 
 
 ## Dispatcher 규칙 {#dispatcher-rules}
 
-의 규칙 섹션 `dispatcher.any` 요청된 URL을 기반으로 캐시할 응답을 정의합니다. Communities에서는 규칙 섹션을 사용하여 캐시해서는 안 되는 항목을 정의합니다.
+`dispatcher.any`의 규칙 섹션은 요청된 URL을 기반으로 캐시할 응답을 정의합니다. Communities에서는 규칙 섹션을 사용하여 캐시해서는 안 되는 항목을 정의합니다.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -278,7 +278,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 사용 
 
 ## 샘플 dispatcher.any {#sample-dispatcher-any}
 
-다음은 샘플입니다 `dispatcher.any` 커뮤니티 /filters 및 /rules를 포함하는 파일입니다.
+다음은 Communities /filters 및 /rules가 포함된 샘플 `dispatcher.any` 파일입니다.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->

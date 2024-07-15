@@ -18,7 +18,7 @@ ht-degree: 91%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM Headless 여정의 이전 문서에서는 [AEM Headless 시작하기](getting-started.md) headless CMS에 대한 기본 이론을 배웠고 이제 다음과 같은 작업을 수행할 수 있습니다.
+AEM Headless 여정의 이전 문서인 [AEM Headless 시작하기](getting-started.md)에서는 Headless CMS에 대한 기본 이론을 배웠고, 이제 다음과 같은 작업을 수행할 수 있습니다.
 
 * AEM의 Headless 기능에 대한 기본 사항을 이해합니다.
 * AEM의 Headless 기능 사용에 대한 사전 요구 사항을 알아봅니다.
@@ -38,7 +38,7 @@ AEM Headless 여정의 이전 문서에서는 [AEM Headless 시작하기](gettin
 
 ## 요구 사항 {#requirements}
 
-이 문서를 계속하기 전에 AEM Headless 개발자 여정에서 이전 문서를 검토했는지 확인하십시오. [AEM Headless 시작하기](getting-started.md) 다음을 확인하십시오.
+이 문서를 계속하기 전에 AEM Headless 개발자 여정에서 이전 문서를 검토했는지, [AEM Headless 시작하기](getting-started.md)에서 다음을 확인하십시오.
 
 * 나열된 요구 사항을 수행합니다.
 * 범위, 역할 및 성과를 비롯해 자체 프로젝트 정의를 고려했습니다.
@@ -79,7 +79,7 @@ Headless 프로젝트의 스테이징 환경은 프로덕션으로 배포되기 
 
 AEM에서 Headless를 시작하기 전에 필요한 모든 기능이 활성화되어 있는지 확인해야 합니다. 이 섹션에서는 필요한 사항에 대해 간략히 소개합니다. 다음 단계를 수행하기 위한 실제 단계는 [AEM Headless 개발자 여정](#overview.md) 후반부에 자세히 설명되어 있습니다.
 
-또한 다음을 선택적으로 볼 수 있습니다. [추가 리소스](#additional-resources) 개별 항목에 대한 자세한 내용은 을 참조하십시오.
+또한 [추가 리소스](#additional-resources)를 선택하여 개별 항목에 대한 자세한 내용을 볼 수도 있습니다.
 
 ### 구성 {#configuration}
 
@@ -146,11 +146,11 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 다음 문서인 [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](model-your-content.md)을 검토하여 Headless 개발 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
-* [AEM Sites용 헤드리스 개발](/help/sites-developing/headless/introduction.md) - AEM Headless 개발자에게 필요한 기능을 간단히 소개합니다
+* [AEM Sites용 Headless 개발](/help/sites-developing/headless/introduction.md) - AEM Headless 개발자에게 필요한 기능을 제공하기 위한 간략한 소개
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 튜토리얼을 사용하여 AEM을 통해 콘텐츠를 Headless 엔드포인트를 게재하는 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택합니다.
 * [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. Adobe ID를 통한 인증이 필요합니다.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM의 GraphQL API를 강조 표시하는 예제 애플리케이션이 포함됩니다.
-* [Headless 시작 안내서](/help/sites-developing/headless/introduction.md#getting-started) - AEM에 대해 이미 알고 있는 사용자를 위한 AEM Headless 기능을 간략하게 소개합니다.
+* [Headless 시작 안내서](/help/sites-developing/headless/introduction.md#getting-started) - AEM에 대한 지식이 있는 사용자를 위해 AEM의 Headless 기능을 간략하게 소개합니다.
 * [콘텐츠 조각 모델 만들기](/help/assets/content-fragments/content-fragments-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서
 * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments.md) - 콘텐츠 조각에 대한 기술 설명서
 * [GraphQL로 콘텐츠 쿼리](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - GraphQL API에 대한 기술 설명서

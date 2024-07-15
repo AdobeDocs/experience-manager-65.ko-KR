@@ -1,5 +1,5 @@
 ---
-title: Brand Portal에 컬렉션 게시
+title: Brand Portal에 Publish 컬렉션
 description: Brand Portal에 컬렉션을 게시하고 게시 취소하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -17,7 +17,7 @@ ht-degree: 30%
 
 ---
 
-# Brand Portal에 컬렉션 게시 {#publish-collections-to-brand-portal}
+# Brand Portal에 Publish 컬렉션 {#publish-collections-to-brand-portal}
 
 Adobe Experience Manager(AEM) Assets 관리자는 조직의 AEM Assets Brand Portal 인스턴스에 컬렉션을 게시할 수 있습니다. 그러나 먼저 AEM Assets을 Brand Portal과 통합해야 합니다. 자세한 내용은 [Brand Portal에서 AEM Assets 구성](/help/assets/configure-aem-assets-with-brand-portal.md)을 참조하십시오.
 
@@ -25,14 +25,14 @@ AEM Assets에서 원래 컬렉션을 차후에 수정하는 경우 컬렉션을 
 
 >[!NOTE]
 >
->컨텐츠 조각은 Brand Portal에 게시할 수 없습니다. 따라서 AEM Author에서 콘텐츠 조각을 선택한 경우 **Brand Portal에 게시** 작업을 사용할 수 없습니다.
+>컨텐츠 조각은 Brand Portal에 게시할 수 없습니다. 따라서 AEM Author에서 콘텐츠 조각을 선택하면 **Brand Portal에 Publish** 동작을 사용할 수 없습니다.
 >
 >컨텐츠 조각이 포함된 컬렉션이 AEM 작성자에서 Brand Portal으로 게시되면 컨텐츠 조각을 제외한 폴더의 모든 컨텐츠가 Brand Portal 인터페이스에 복제됩니다.
 
-## Brand Portal에 컬렉션 게시 {#publish-a-collection-to-brand-portal}
+## Brand Portal에 컬렉션 Publish {#publish-a-collection-to-brand-portal}
 
 1. AEM Assets UI에서 AEM 로고를 클릭합니다.
-1. 출처: **탐색** 페이지, 이동 **에셋 > 컬렉션**.
+1. **탐색** 페이지에서 **Assets > 컬렉션**(으)로 이동합니다.
 1. 컬렉션 콘솔에서 Brand Portal에 게시할 컬렉션을 선택합니다.
 
    ![select_collection](assets/select_collection.png)

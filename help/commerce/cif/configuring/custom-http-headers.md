@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ## 구성 {#configuration}
 
-사용자 지정 HTTP 헤더를 구성하려면 먼저 헤더를 정의해야 합니다. 사용자 지정 HTTP 헤더를에 추가하여 먼저 정의해야 합니다 `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` osgi 구성을 사용하는 서비스 구성입니다.
+사용자 지정 HTTP 헤더를 구성하려면 먼저 헤더를 정의해야 합니다. 사용자 지정 HTTP 헤더는 먼저 OSGi 구성을 사용하여 `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` 서비스 구성에 추가하여 정의해야 합니다.
 
 프로젝트의 [Cloud Service 구성] 페이지에서 HTTP 헤더 값을 구성할 수 있습니다.
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 ## 제한 사항 {#restrictions}
 
-서비스를 통해 표준 헤더 이름을 비롯한 모든 헤더 이름을 정의할 수 있지만, 구성할 때는 사용할 수 없습니다. 즉, 이 기능을 사용하여 표준 HTTP 헤더를 재정의할 수 없습니다. 제한된 헤더 이름 목록을 찾을 수 있음 [여기](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 이들 외에도 사용할 수 없는 두 개의 헤더가 더 있습니다.
+서비스를 통해 표준 헤더 이름을 비롯한 모든 헤더 이름을 정의할 수 있지만, 구성할 때는 사용할 수 없습니다. 즉, 이 기능을 사용하여 표준 HTTP 헤더를 재정의할 수 없습니다. 제한된 헤더 이름 목록을 [여기](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)에서 찾을 수 있습니다. 이들 외에도 사용할 수 없는 두 개의 헤더가 더 있습니다.
 
 * &quot;Store&quot; - CIF에서 Adobe Commerce 스토어를 식별하는 데 사용됨
 * &quot;Preview-Version&quot; - CIF에서 스테이징된 제품을 검색하는 데 사용

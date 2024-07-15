@@ -42,7 +42,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 콘텐츠 조각 모델 만들기 {#creating-content-fragment-models}
 
-그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. 이 작업은 도구 > 에셋 > 콘텐츠 조각 모델에서 수행할 수 있습니다.
+그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. 이 작업은 도구 > Assets > 콘텐츠 조각 모델에서 수행할 수 있습니다.
 
 ![도구의 콘텐츠 조각 모델](assets/cfm-tools.png)
 
@@ -113,7 +113,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [작성 개념](/help/sites-authoring/author.md)
 
-* [기본 처리](/help/sites-authoring/basic-handling.md) - 이 페이지는 주로 다음을 기반으로 합니다. **사이트** 콘솔이지만 많은/대부분의 기능은 로 이동하고 조치를 취하는 데에도 관련이 있습니다. **컨텐츠 조각 모델** 다음 아래에 **에셋** 콘솔.
+* [기본 처리](/help/sites-authoring/basic-handling.md) - 이 페이지는 주로 **사이트** 콘솔을 기반으로 하지만 대부분의 기능은 **Assets** 콘솔에서 **콘텐츠 조각 모델**(으)로 이동하고 조치를 취하는 데에도 관련성이 있습니다.
 
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
 

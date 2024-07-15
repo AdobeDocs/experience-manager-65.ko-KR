@@ -26,7 +26,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 다음을 참조하십시오. [AEM Mobile 앱에 대한 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 온라인 도움말에서 참조할 수 있습니다.
+>AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 온라인 도움말에서 [AEM Mobile 앱의 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)을 참조하십시오.
 
 >[!CAUTION]
 >
@@ -36,16 +36,16 @@ ht-degree: 1%
 
 일반적으로 기사와 같은 콘텐츠는 모든 작성자 및 앱에서 동일한 모양과 느낌을 가져야 합니다. 따라서 모든 사용자가 스크립트, css 및 글꼴을 사용할 수 있도록 하는 것은 필수적입니다. 이 작업은 그러한 공유 리소스를 Mobile On-Demand로 전송하여 필요에 따라 소비할 수 있습니다.
 
-앱을 구성하고 클라우드 구성에 연결하면 공유 리소스를 업로드할 수 있습니다. 앱을 클라우드 구성에 연결하는 방법에 대한 자세한 단계를 보려면 [여기](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
+앱을 구성하고 클라우드 구성에 연결하면 공유 리소스를 업로드할 수 있습니다. 앱을 클라우드 구성에 연결하는 자세한 단계는 [여기](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)를 클릭하세요.
 
 >[!NOTE]
 >
->공유 리소스는 ContentSync를 사용하여 다양한 리소스를 모두 수집합니다. 다음을 참조하십시오 [ContentSync가 있는 모바일](/help/mobile/mobile-ondemand-contentsync.md) 을 참조하십시오.
+>공유 리소스는 ContentSync를 사용하여 다양한 리소스를 모두 수집합니다. 자세한 내용은 [Mobile with ContentSync](/help/mobile/mobile-ondemand-contentsync.md)를 참조하십시오.
 
 문서에 대한 공유 리소스를 업로드하려면 다음 단계를 따르십시오.
 
-1. 다음에서 문서 선택 **문서 관리** 타일.
-1. 클릭 **공유 리소스 업로드** 공유 HTML 리소스를 업로드합니다.
+1. **문서 관리** 타일에서 문서를 선택하십시오.
+1. 공유 HTML 리소스를 업로드하려면 **공유 리소스 업로드**&#x200B;를 클릭하십시오.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

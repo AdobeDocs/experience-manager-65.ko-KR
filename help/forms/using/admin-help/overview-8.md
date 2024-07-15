@@ -22,16 +22,16 @@ ht-degree: 0%
 
 관리 콘솔의 [출력] 페이지를 사용하여 출력 서비스를 관리할 수 있습니다. 사용자가 구성하는 설정은 동일한 설정이 AEM Forms API를 통해 지정되지 않은 경우 런타임에 사용됩니다. AEM Forms SDK를 통해 수행한 구성은 관리 콘솔을 사용하여 구성된 설정을 무시합니다.
 
-출력 서비스에 대한 자세한 내용은 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_61).
+출력 서비스에 대한 자세한 내용은 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_61)를 참조하십시오.
 
 관리 콘솔의 출력 페이지에서 다음과 같은 여러 작업을 수행할 수 있습니다.
 
-* 다국어화를 위해 문자 집합을 지정합니다. (참조: [문자 집합 변경](/help/forms/using/admin-help/change-character-set.md#change-the-character-set).)
-* URL, URI, XCI 및 파일 위치에 대한 절대 및 상대 경로를 지정합니다. (참조: [출력을 위한 파일 위치 지정](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
-* 캐시 크기 및 정책을 구성합니다. (참조: [캐시 모드 지정](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) 및 [캐시 설정 구성](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings).)
-* 애플리케이션 서버에서 글꼴을 사용할 수 있도록 합니다. (참조: [글꼴 사용 가능](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available).)
-* 포함할 글꼴을 지정합니다. (참조: [포함할 글꼴 지정](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed).)
-* XCI 구성 옵션을 지정합니다. (참조: [XCI 구성 옵션 지정](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options).)
-* 보안 설정을 지정합니다. (참조: [보안 설정 지정](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings).)
+* 다국어화를 위해 문자 집합을 지정합니다. [문자 집합 변경](/help/forms/using/admin-help/change-character-set.md#change-the-character-set)을 참조하세요.
+* URL, URI, XCI 및 파일 위치에 대한 절대 및 상대 경로를 지정합니다. [출력의 파일 위치 지정](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)을 참조하십시오.
+* 캐시 크기 및 정책을 구성합니다. ([캐시 모드 지정](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) 및 [캐시 설정 구성](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings)을 참조하십시오.)
+* 애플리케이션 서버에서 글꼴을 사용할 수 있도록 합니다. [사용할 수 있는 글꼴 만들기](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available)를 참조하십시오.
+* 포함할 글꼴을 지정합니다. [포함할 글꼴 지정](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed)을 참조하세요.
+* XCI 구성 옵션을 지정합니다. ([XCI 구성 옵션 지정](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options)을 참조하십시오.)
+* 보안 설정을 지정합니다. ([보안 설정 지정](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings)을 참조하세요.)
 
 설정을 변경한 후 [저장]을 클릭하여 [출력]에 적용합니다. 변경 사항을 적용하려면 서버를 다시 시작하지 않아도 되지만 캐시 설정을 구성할 때 출력 서비스를 다시 시작해야 할 수도 있습니다.

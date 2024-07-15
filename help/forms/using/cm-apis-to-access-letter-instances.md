@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ### getAllLetterInstances 사용 {#using-nbsp-getallletterinstances}
 
-다음 API는 쿼리 개체(제출됨 및 초안 모두)를 기반으로 편지 인스턴스를 검색합니다. 쿼리 개체가 null이면 모든 문자 인스턴스를 반환합니다. 이 API는 다음 목록을 반환합니다. [편지 인스턴스 VO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) 객체: 편지 인스턴스의 추가 정보를 추출하는 데 사용할 수 있습니다.
+다음 API는 쿼리 개체(제출됨 및 초안 모두)를 기반으로 편지 인스턴스를 검색합니다. 쿼리 개체가 null이면 모든 문자 인스턴스를 반환합니다. 이 API는 편지 인스턴스의 추가 정보를 추출하는 데 사용할 수 있는 [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) 개체 목록을 반환합니다.
 
 **구문**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 #### 예제 1: SUBMITTED 유형의 모든 편지 인스턴스 가져오기 {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-다음 코드는 제출된 편지 인스턴스 목록을 반환합니다. 초안만 가져오려면 `LetterInstanceType.COMPLETE.name()` 끝 `LetterInstanceType.DRAFT.name().`
+다음 코드는 제출된 편지 인스턴스 목록을 반환합니다. 초안만 가져오려면 `LetterInstanceType.COMPLETE.name()`을(를) `LetterInstanceType.DRAFT.name().`(으)로 변경하십시오.
 
 ```java
 @Reference

@@ -29,14 +29,14 @@ SPA 작성 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을
 
 ## 소개 {#introduction}
 
-AEM에서 필요로 하고 SPA과 SPA 편집기 간에 설정되는 간단하고 가벼운 계약 덕분에 기존 JavaScript 애플리케이션을 AEM에서 SPA에 사용하도록 채택하는 것은 간단한 일입니다.
+AEM에서 필요로 하고 SPA과 SPA 편집기 간에 설정되는 간단하고 가벼운 계약 덕분에 기존 JavaScript 애플리케이션을 AEM에서 SPA과 함께 사용하기 위해 채택하는 것은 간단한 일입니다.
 
 이 문서에서는 We.Retail 저널 샘플 SPA에 있는 날씨 구성 요소의 예를 보여줍니다.
 
-다음 사항을 잘 알고 있어야 합니다. [AEM용 SPA 애플리케이션 구조](/help/sites-developing/spa-getting-started-react.md) 이 문서를 읽기 전에.
+이 문서를 읽기 전에 AEM용 SPA 응용 프로그램의 [구조](/help/sites-developing/spa-getting-started-react.md)에 익숙해야 합니다.
 
 >[!CAUTION]
->이 문서에서는 [We.Retail 저널 앱](https://github.com/adobe/aem-sample-we-retail-journal) 데모용으로만 사용됩니다. 프로젝트 작업에는 사용하지 마십시오.
+>이 문서에서는 데모용으로만 [We.Retail 저널 앱](https://github.com/adobe/aem-sample-we-retail-journal)을 사용합니다. 프로젝트 작업에는 사용하지 마십시오.
 >
 >AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용해야 합니다.
 
@@ -62,20 +62,20 @@ SPA 편집기에서 SPA 콘텐츠를 작성할 때 날씨 구성 요소는 도�
 
 ### 날씨 구성 요소 구현 {#weather-component-implementation}
 
-날씨 구성 요소는 공개적으로 사용 가능한 React 구성 요소인 [React Open Weather](https://www.npmjs.com/package/react-open-weather). We.Retail Journal 샘플 SPA 애플리케이션 내에서 구성 요소로 작동하도록 조정되었습니다.
+날씨 구성 요소는 공개적으로 사용 가능한 React 구성 요소([React Open Weather](https://www.npmjs.com/package/react-open-weather))를 기반으로 합니다. We.Retail Journal 샘플 SPA 애플리케이션 내에서 구성 요소로 작동하도록 조정되었습니다.
 
 다음은 React Open Weather 구성 요소 사용에 대한 NPM 설명서의 스니펫입니다.
 
 ![screen_shot_2018-06-08at144723](assets/screen_shot_2018-06-08at144723.png) ![screen_shot_2018-06-08at144215](assets/screen_shot_2018-06-08at144215.png)
 
-사용자 지정된 날씨 구성 요소의 코드 검토( `Weather.js`) We.Retail 저널 애플리케이션의
+We.Retail Journal 응용 프로그램에서 사용자 지정된 날씨 구성 요소(`Weather.js`)의 코드 검토:
 
-* **라인 16**: 필요에 따라 React 열기 날씨 위젯이 로드됩니다.
-* **라인 46**: `MapTo` 함수는 SPA 편집기에서 편집할 수 있도록 이 React 구성 요소를 해당 AEM 구성 요소와 연결합니다.
+* **줄 16**: 필요에 따라 React Open Weather 위젯이 로드됩니다.
+* **줄 46**: `MapTo` 함수는 SPA 편집기에서 편집할 수 있도록 이 React 구성 요소를 해당 AEM 구성 요소와 연결합니다.
 
-* **라인 22-29**: `EditConfig` 시가 채워졌는지 확인하고 비어 있는 경우 값을 정의하는 가 정의됩니다.
+* **줄 22-29**: `EditConfig`이(가) 정의되어 있으며, 도시가 채워졌는지 확인하고 비어 있는 경우 값을 정의합니다.
 
-* **라인 31-44**: 날씨 구성 요소가 를 확장합니다. `Component` 및 는 React Open Weather 구성 요소에 대한 NPM 사용 설명서에 정의된 대로 필요한 데이터를 제공하고 구성 요소를 렌더링합니다.
+* **줄 31-44**: 날씨 구성 요소는 `Component` 클래스를 확장하고 React Open Weather 구성 요소에 대한 NPM 사용 설명서에 정의된 대로 필요한 데이터를 제공하고 구성 요소를 렌더링합니다.
 
 ```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -130,4 +130,4 @@ MapTo('we-retail-journal/global/components/weather')(Weather, WeatherEditConfig)
 
 ## 다음 단계 {#next-step}
 
-AEM용 SPA 개발에 대한 자세한 내용은 문서 를 참조하십시오 [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md).
+AEM용 SPA 개발에 대한 자세한 내용은 문서 [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md)을 참조하십시오.

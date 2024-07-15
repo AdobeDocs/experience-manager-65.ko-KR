@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 적응형 및 HTML5 양식용 외관 프레임워크 {#appearance-framework-for-adaptive-and-html-forms}
 
-Forms(적응형 양식 및 HTML 5 양식) 사용 [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) 및 [Underscore.js](https://underscorejs.org/) 모양 및 스크립팅용 라이브러리. 양식에서는 [jQuery UI](https://jqueryui.com/) **위젯** 양식의 모든 대화형 요소(예: 필드 및 버튼)에 대한 아키텍처입니다. 이 아키텍처를 통해 양식 개발자는 Forms에서 사용 가능한 다양한 jQuery 위젯 및 플러그인을 사용할 수 있습니다. 또한 leadDigits/trailDigits 제한 사항이나 그림 절 구현과 같은 사용자의 데이터를 캡처하는 동안 양식별 논리를 구현할 수도 있습니다. 양식 개발자는 사용자 정의 응용 프로그램을 만들고 사용하여 데이터 캡처 환경을 개선하고 보다 사용자 친화적으로 만들 수 있습니다.
+Forms(적응형 양식 및 HTML5 양식)에서는 모양 및 스크립팅을 위해 [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) 및 [Underscore.js](https://underscorejs.org/) 라이브러리를 사용합니다. 양식에서는 양식의 모든 대화형 요소(예: 필드 및 버튼)에 대해 [jQuery UI](https://jqueryui.com/) **위젯** 아키텍처도 사용합니다. 이 아키텍처를 통해 양식 개발자는 Forms에서 사용 가능한 다양한 jQuery 위젯 및 플러그인을 사용할 수 있습니다. 또한 leadDigits/trailDigits 제한 사항이나 그림 절 구현과 같은 사용자의 데이터를 캡처하는 동안 양식별 논리를 구현할 수도 있습니다. 양식 개발자는 사용자 정의 응용 프로그램을 만들고 사용하여 데이터 캡처 환경을 개선하고 보다 사용자 친화적으로 만들 수 있습니다.
 
 이 문서는 jQuery 및 jQuery 위젯에 대한 지식이 풍부한 개발자를 위한 것입니다. 모양 프레임워크에 대한 통찰력을 제공하고 개발자가 양식 필드에 대한 대체 모양을 만들 수 있도록 합니다.
 
@@ -51,7 +51,7 @@ Forms(적응형 양식 및 HTML 5 양식) 사용 [jQuery](https://jquery.com/), 
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>화면 Reader은 이 값을 사용하여 필드에 대한 정보를 내레이팅합니다. 양식에서 값을 제공하며 사용자는 값을 재정의할 수 있습니다.<br /> </td>
+   <td>화면 Reader은 이 값을 사용하여 필드에 대한 정보를 내레이팅합니다. 양식이 값을 제공하므로 값을 재정의할 수 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -100,19 +100,19 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
   </tr>
   <tr>
    <td>XFA_ENTER_EVENT</td>
-   <td>이 이벤트는 필드가 포커스에 있을 때마다 트리거됩니다. 필드에서 "enter" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 다음과 같습니다<br /> (위젯)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>이 이벤트는 필드가 포커스에 있을 때마다 트리거됩니다. 필드에서 "enter" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 <br />(위젯)입니다._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENT</td>
-   <td>이 이벤트는 사용자가 필드를 떠날 때마다 트리거됩니다. 이 옵션을 통해 엔진은 필드의 값을 설정하고 "종료" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 다음과 같습니다<br /> (위젯)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
+   <td>이 이벤트는 사용자가 필드를 떠날 때마다 트리거됩니다. 이 옵션을 통해 엔진은 필드의 값을 설정하고 "종료" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 <br />(위젯)입니다._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENT</td>
-   <td>이 이벤트는 엔진이 필드에 작성된 "변경" 스크립트를 실행할 수 있도록 트리거됩니다. 이벤트를 트리거하는 구문은 다음과 같습니다<br /> (위젯)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
+   <td>이 이벤트는 엔진이 필드에 작성된 "변경" 스크립트를 실행할 수 있도록 트리거됩니다. 이벤트를 트리거하는 구문은 <br />(위젯)입니다._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CLICK_EVENT</td>
-   <td>이 이벤트는 필드를 클릭할 때마다 트리거됩니다. 이 옵션을 통해 엔진은 필드에 쓰여진 "click" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 다음과 같습니다<br /> (위젯)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
+   <td>이 이벤트는 필드를 클릭할 때마다 트리거됩니다. 이 옵션을 통해 엔진은 필드에 쓰여진 "click" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 <br />(위젯)입니다._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -136,7 +136,7 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
    <td>필드에 포커스를 두고 XFA_CLICK_EVENT를 호출합니다.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>오류 메시지: 문자열 </em>오류 표시<br /> <em>errorType: 문자열("warning"/"error")</em></p> <p><strong>참고</strong>: HTML 5 양식에만 적용됩니다.</p> </td>
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: 문자열 </em>오류를 나타냄<br /> <em>errorType: 문자열("warning"/"error")</em></p> <p><strong>참고</strong>: HTML 5 양식에만 적용됩니다.</p> </td>
    <td>위젯에 오류 메시지와 오류 유형을 보냅니다. 위젯에 오류가 표시됩니다.</td>
   </tr>
   <tr>
@@ -186,12 +186,12 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
    <td>선택한 값의 배열입니다.<br /> </td>
   </tr>
   <tr>
-   <td>개 항목<br /> </td>
-   <td>옵션으로 표시할 개체의 배열입니다. 각 객체에는 두 개의 속성 -<br /> 저장: 저장할 값, 표시할 값: 표시할 값입니다.<br /> <br /> </td>
+   <td>항목<br /> </td>
+   <td>옵션으로 표시할 개체의 배열입니다. 각 개체에는 두 개의 속성이 있습니다. <br /> 저장: 저장할 값, 표시할 값.<br /> <br /> </td>
   </tr>
   <tr>
    <td><p>편집 가능</p> <p><strong>참고</strong>: HTML 5 양식에만 적용됩니다.<br /> </p> </td>
-   <td>값이 true이면 위젯에서 사용자 정의 텍스트 항목을 사용할 수 있습니다.<br /> </td>
+   <td>값이 true이면 위젯에서 사용자 지정 텍스트 항목을 사용할 수 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>displayValue<br /> </td>
@@ -199,7 +199,7 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
   </tr>
   <tr>
    <td>다중 선택<br /> </td>
-   <td>다중 선택이 허용되면 true이고, 그렇지 않으면 false입니다.<br /> </td>
+   <td>여러 항목을 선택할 수 있으면 true이고, 그렇지 않으면 false입니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -213,11 +213,11 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
    <th>설명</th>
   </tr>
   <tr>
-   <td><p>추가 항목:<em> function(itemValues)<br /> itemValues: 표시 및 저장 값이 포함된 객체 <br /> {sDisplayVal: &lt;displayvalue&gt;, sSaveVal: &lt;save value=""&gt;}</em></p> </td>
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: 표시 및 저장 값이 포함된 개체 <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;save Value&gt;}</em></p> </td>
    <td>항목을 목록에 추가합니다.</td>
   </tr>
   <tr>
-   <td>deleteItem<em>: function(nIndex)<br /> nIndex: 목록에서 제거할 항목의 색인<br /> </em><br /> <br /> </td>
+   <td>deleteItem<em>: 함수(nIndex)<br /> nIndex: 목록에서 제거할 항목의 인덱스<br /> </em><br /> <br /> </td>
    <td>목록에서 옵션을 삭제합니다.</td>
   </tr>
   <tr>
@@ -247,7 +247,7 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
   </tr>
   <tr>
    <td>값</td>
-   <td><p>값 배열(설정/해제/중립).</p> <p>checkButton의 다양한 상태에 대한 값 배열입니다. values[0] 은 상태가 ON일 때의 값이고 values[1] 은 상태가 OFF일 때의 값입니다.<br /> values[2] 는 상태가 NEUTRAL일 때의 값입니다. 값 배열의 길이는 상태 옵션의 값과 같습니다.<br /> </p> </td>
+   <td><p>값 배열(설정/해제/중립).</p> <p>checkButton의 다양한 상태에 대한 값 배열입니다. values[0] 은 상태가 ON일 때의 값이고, values[1] 은 상태가 OFF일 때의 값이고, <br /> values[2] 는 상태가 NEUTRAL일 때의 값입니다. 값 배열의 길이가 상태 옵션의 값과 같습니다.<br /> </p> </td>
   </tr>
   <tr>
    <td>상태</td>

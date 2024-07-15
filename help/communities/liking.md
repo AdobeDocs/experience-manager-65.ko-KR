@@ -18,29 +18,29 @@ ht-degree: 1%
 
 # 연결 사용 {#using-liking}
 
-다음 `Liking` 구성 요소는 사용자가 포럼 내의 댓글과 같은 특정 콘텐츠에 대한 의견을 표현할 수 있는 유용한 도구입니다. 포함 `Liking` 구성 요소에서 구성원은 긍정적인 의견을 나타내는 하트 아이콘을 선택합니다.
+`Liking` 구성 요소는 사용자가 포럼 내의 댓글과 같은 특정 콘텐츠에 대한 의견을 표시할 수 있는 유용한 도구입니다. `Liking` 구성 요소를 사용하여 구성원은 긍정적인 의견을 나타내는 하트 아이콘을 선택합니다.
 
 ## 페이지에 좋아요 추가 {#adding-liking-to-a-page}
 
-을(를) 추가하려면 `Liking` 구성 요소를 페이지에 추가하려면 작성자 모드에서 구성 요소 브라우저를 사용하여
+작성자 모드에서 페이지에 `Liking` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 찾습니다
 
 * `Communities / Liking`
 
 사용자가 좋아할 기능을 기준으로 한 위치와 같이 페이지에 적절히 드래그합니다.
 
-필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](basics.md).
+필요한 정보는 [커뮤니티 구성 요소 기본 사항](basics.md)을 참조하세요.
 
-다음의 경우 [필수 클라이언트측 라이브러리](essentials-liking.md#essentials-for-client-side) 포함됩니다. 이렇게 하면 `Liking` 구성 요소가 표시됩니다.
+[필수 클라이언트측 라이브러리](essentials-liking.md#essentials-for-client-side)가 포함된 경우 `Liking` 구성 요소가 표시되는 방식입니다.
 
-![호감 구성 요소](assets/liking-component.png)
+![좋아요 구성 요소](assets/liking-component.png)
 
 ## 연결 구성 {#configuring-liking}
 
-배치된 을(를) 선택합니다 `Liking` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 `Liking` 구성 요소를 선택하여 편집 대화 상자를 여는 `Configure` 아이콘에 액세스하고 선택합니다.
 
 ![새로 구성](assets/configure-new.png)
 
-아래 **[!UICONTROL 텍스트 및 레이블]** 탭에서 [좋아요]를 기록하는 데 사용되는 속성을 지정합니다.
+**[!UICONTROL 텍스트 및 레이블]** 탭에서 좋아요 녹화에 사용되는 속성을 지정합니다.
 
 ![연결 구성](assets/configure-liking.png)
 
@@ -52,9 +52,9 @@ ht-degree: 1%
 
   (*필수*) 부정적 응답에 대한 속성 이름입니다.
 
-* **[!UICONTROL Tally 이름]**
+* **[!UICONTROL 집계 이름]**
 
-  (*필수*) 투표 구성 요소의 이 인스턴스에 대해 식별할 수 있는 내부 속성 이름입니다.
+  (*필수*) 이 투표 구성 요소 인스턴스에 대한 내부 식별 가능한 속성 이름입니다.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
@@ -68,4 +68,4 @@ ht-degree: 1%
 
 ## 추가 정보 {#additional-information}
 
-자세한 내용은 [좋아요 기본 사항](essentials-liking.md) 개발자용 페이지입니다.
+자세한 내용은 개발자를 위한 [Liking Essentials](essentials-liking.md) 페이지에서 확인할 수 있습니다.

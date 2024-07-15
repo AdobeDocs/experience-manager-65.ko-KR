@@ -65,16 +65,16 @@ ht-degree: 1%
 ## JBoss에 Java 옵션 추가 {#add-java-options-to-jboss}
 
 1. JBoss 애플리케이션 서버를 중지합니다.
-1. 를 엽니다. *[appserver 루트]*&#x200B;편집기에서 /bin/run.bat (Windows) 또는 run.sh (Linux 또는 UNIX) 를 실행하고 필요에 따라 Java 옵션을 추가합니다.
+1. 편집기에서 *[appserver root]*/bin/run.bat(Windows) 또는 run.sh(Linux 또는 UNIX)를 열고 필요에 따라 Java 옵션을 추가합니다.
 1. 서버를 다시 시작합니다.
 
 ## WebLogic에 Java 옵션 추가 {#add-java-options-to-weblogic}
 
-1. https://을 입력하여 WebLogic 관리 콘솔을 시작합니다.[호스트 이름]: 웹 브라우저의 URL 줄에 있는 &#39;포트&#39;/콘솔입니다.
+1. 웹 브라우저의 URL 줄에 https://[호스트 이름]:&#39;포트&#39;/console을 입력하여 WebLogic 관리 콘솔을 시작합니다.
 1. WebLogic Server 도메인에 대해 생성한 사용자 이름과 암호를 입력하고 Log(로그) 를 클릭합니다. Change Center(변경 센터)에서 Lock &amp; Edit(잠금 및 편집)를 클릭합니다.
 1. 도메인 구조에서 환경 > 서버 를 클릭하고 오른쪽 창에서 관리 대상 서버 이름을 클릭합니다.
 1. 다음 화면에서 구성 탭 > 서버 시작 탭을 클릭합니다.
-1. 인수 상자에서 현재 컨텐츠의 끝에 필요한 인수를 추가합니다. 예: - `Dadobe.healthmonitor.enabled=false` 상태 모니터를 사용하지 않도록 설정합니다.
+1. 인수 상자에서 현재 컨텐츠의 끝에 필요한 인수를 추가합니다. 예를 들어 - `Dadobe.healthmonitor.enabled=false`을(를) 추가하면 상태 모니터가 비활성화됩니다.
 1. 저장 을 클릭한 다음 변경 내용 활성화 를 클릭합니다.
 1. WebLogic 관리 서버를 다시 시작합니다.
 

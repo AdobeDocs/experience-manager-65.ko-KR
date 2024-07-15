@@ -23,29 +23,29 @@ AEM의 보안을 지속적으로 개선하기 위해 Adobe은 기본적으로 SS
 
 ## 기본적으로 SSL/TLS 활성화 {#enabling-ssl-tls-by-default}
 
-AEM 홈 화면에서 관련 받은 편지함 메시지를 클릭하여 기본적으로 SSL/TLS 구성을 시작할 수 있습니다. 받은 편지함에 도달하려면 화면의 오른쪽 상단에 있는 벨 아이콘을 누릅니다. 그런 다음 을 클릭합니다. **모두 보기**. 이렇게 하면 목록 보기에서 정렬된 모든 경고 목록이 표시됩니다.
+AEM 홈 화면에서 관련 받은 편지함 메시지를 클릭하여 기본적으로 SSL/TLS 구성을 시작할 수 있습니다. 받은 편지함에 도달하려면 화면의 오른쪽 상단에 있는 벨 아이콘을 누릅니다. 그런 다음 **모두 보기**&#x200B;를 클릭합니다. 이렇게 하면 목록 보기에서 정렬된 모든 경고 목록이 표시됩니다.
 
-목록에서 을(를) 선택하고 **HTTPS 구성** 경고:
+목록에서 **HTTPS 구성** 경고를 선택하고 엽니다.
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
->다음과 같은 경우 **HTTPS 구성** 받은 편지함에 경고가 없으면 다음 위치로 이동하여 HTTPS 마법사로 직접 이동할 수 있습니다. *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>받은 편지함에 **HTTPS 구성** 경고가 없는 경우 *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*(으)로 이동하여 HTTPS 마법사로 직접 이동할 수 있습니다.
 
-서비스 사용자 호출 **ssl 서비스** 이 기능에 대해 만들어졌습니다. 경고를 열면 다음 구성 마법사 가 표시됩니다.
+이 기능에 대해 **ssl-service**(이)라는 서비스 사용자가 생성되었습니다. 경고를 열면 다음 구성 마법사 가 표시됩니다.
 
-1. 먼저 저장소 자격 증명을 설정합니다. 다음에 대한 자격 증명입니다. **ssl 서비스** https 수신자에 대한 개인 키 및 트러스트 스토어를 포함하는 시스템 사용자의 키 저장소입니다.
+1. 먼저 저장소 자격 증명을 설정합니다. HTTPS 수신자에 대한 개인 키 및 신뢰 저장소를 포함할 **ssl-service** 시스템 사용자의 키 저장소에 대한 자격 증명입니다.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. 자격 증명을 입력한 후 을(를) 클릭합니다. **다음** 페이지의 오른쪽 상단에 있습니다. 그런 다음 SSL/TLS 연결에 대한 관련 개인 키 및 인증서를 업로드합니다.
+1. 자격 증명을 입력한 후 페이지의 오른쪽 상단에 있는 **다음**&#x200B;을(를) 클릭합니다. 그런 다음 SSL/TLS 연결에 대한 관련 개인 키 및 인증서를 업로드합니다.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    >[!NOTE]
    >
-   >마법사에서 사용할 개인 키 및 인증서를 생성하는 방법에 대한 자세한 내용은 [이 절차](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) 아래요.
+   >마법사에 사용할 개인 키 및 인증서를 생성하는 방법에 대한 자세한 내용은 아래의 [이 절차](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard)를 참조하십시오.
 
 1. 마지막으로 HTTPS 수신자에 대한 HTTPS 호스트 이름과 TCP 포트를 지정합니다.
 
@@ -96,7 +96,7 @@ Content-Disposition: form-data; name="httpsPort"
 
 다음은 성공적인 응답과 오류 모두에 대한 예입니다.
 
-**성공 예** (상태 = 200):
+**성공 예**(상태 = 200):
 
 ```xml
 <!DOCTYPE html>
@@ -127,7 +127,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**오류 예** (상태 = 500):
+**오류 예**(상태 = 500):
 
 ```xml
 <!DOCTYPE html>
@@ -153,8 +153,8 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 또는 다음 필수 항목이 이미 들어 있는 패키지를 업로드하여 SSL/TLS 설정을 자동화할 수 있습니다.
 
-* ssl 서비스 사용자의 키 저장소입니다. 다음 위치에 있습니다. */home/users/system/security/ssl-service/keystore* 저장소에서 입니다.
-* 다음 `GraniteSslConnectorFactory` 구성
+* ssl 서비스 사용자의 키 저장소입니다. 저장소의 */home/users/system/security/ssl-service/keystore* 아래에 있습니다.
+* `GraniteSslConnectorFactory` 구성
 
 ### 마법사에서 사용할 개인 키/인증서 쌍 생성 {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
@@ -189,17 +189,17 @@ it for any subsequent updating of the private key or certificate.</dd>
    openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
    ```
 
-1. 마지막으로 **localhostprivate.der** 개인 키로 및 **localhost.crt** 그래픽 SSL/TLS 마법사의 2단계에서 이 페이지의 시작 부분에 설명되어 있는 SSL/TLS 인증서
+1. 마지막으로 이 페이지의 시작 부분에 설명된 그래픽 SSL/TLS 마법사의 2단계에서 **localhostprivate.der**&#x200B;을(를) 개인 키로 업로드하고 **localhost.crt**&#x200B;을(를) SSL/TLS 인증서로 업로드합니다.
 
 ### cURL을 통해 SSL/TLS 구성 업데이트 {#updating-the-ssl-tls-configuration-via-curl}
 
 >[!NOTE]
 >
->다음을 참조하십시오 [AEM에서 cURL 사용](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) AEM에서 유용한 cURL 명령의 중앙 집중식 목록입니다.
+>AEM에서 유용한 cURL 명령의 중앙 집중식 목록은 [AEM에서 cURL 사용](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html)을 참조하십시오.
 
 cURL 도구를 사용하여 SSL/TLS 구성을 자동화할 수도 있습니다. 이 URL에 구성 매개 변수를 게시하여 이 작업을 수행할 수 있습니다.
 
-*https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
+*https://&lt;서버 주소>:&lt;서버 포트>/libs/granite/security/post/sslSetup.html*
 
 다음은 구성 마법사에서 다양한 설정을 변경하는 데 사용할 수 있는 매개 변수입니다.
 
@@ -209,20 +209,20 @@ cURL 도구를 사용하여 SSL/TLS 구성을 자동화할 수도 있습니다. 
 
 * `-F "truststorePassword=password"` - truststore 암호;
 
-* `-F "truststorePasswordConfirm=password"` - truststore 암호 확인
+* `-F "truststorePasswordConfirm=password"` - truststore 암호 확인;
 
-* `-F "privatekeyFile=@localhostprivate.der"` - 개인 키를 지정합니다.
+* `-F "privatekeyFile=@localhostprivate.der"` - 개인 키 지정;
 
-* `-F "certificateFile=@localhost.crt"` - 인증서를 지정합니다.
+* `-F "certificateFile=@localhost.crt"` - 인증서 지정;
 
-* `-F "httpsHostname=host.example.com"`- 호스트 이름을 지정합니다.
-* `-F "httpsPort=8443"` - HTTPS 수신자가 작동할 포트입니다.
+* `-F "httpsHostname=host.example.com"`- 호스트 이름 지정;
+* `-F "httpsPort=8443"` - HTTPS 수신기가 작동할 포트입니다.
 
 >[!NOTE]
 >
->cURL을 실행하여 SSL/TLS 구성을 자동화하는 가장 빠른 방법은 DER 및 CRT 파일이 있는 폴더에서 가져옵니다. 또는 `privatekeyFile` 및 certificateFile 인수
+>cURL을 실행하여 SSL/TLS 구성을 자동화하는 가장 빠른 방법은 DER 및 CRT 파일이 있는 폴더에서 가져옵니다. 또는 `privatekeyFile` 및 certificateFile 인수에 전체 경로를 지정할 수 있습니다.
 >
->또한 업데이트를 수행하려면 인증을 받아야 하므로 cURL 명령을 `-u user:passeword` 매개 변수.
+>업데이트를 수행하려면 인증해야 하므로 cURL 명령을 `-u user:passeword` 매개 변수와 함께 추가해야 합니다.
 >
 >올바른 cURL post 명령은 다음과 같아야 합니다.
 
@@ -236,14 +236,14 @@ curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-명령을 실행한 후에는 모든 인증서가 키 저장소에 대해 작업을 수행했는지 확인합니다. 다음 확인: **키 저장소** 시작 위치:
+명령을 실행한 후에는 모든 인증서가 키 저장소에 대해 작업을 수행했는지 확인합니다. 다음에서 **Keystore** 항목을 확인하십시오.
 [http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### TLS 1.3 연결 활성화 {#enabling-tls-connection}
 
 1. 웹 콘솔로 이동
-1. 그런 다음 로 이동합니다. **OSGi** - **구성** - **Adobe Granite SSL 커넥터 팩토리**
-1. 로 이동 **포함된 암호 세트** 을(를) 필드에 추가하고 다음 항목을 추가합니다. 를 눌러 각 추가를 확인할 수 있습니다.**+**&quot;각 필드를 추가한 후 필드 왼쪽에 있는 버튼:
+1. 그런 다음 **OSGi** - **구성** - **Granite SSL 커넥터 팩토리 Adobe**&#x200B;로 이동합니다.
+1. **포함된 암호 집합** 필드로 이동하여 다음 항목을 추가하십시오. 다음 위치에 추가한 후 필드 왼쪽에 있는 &quot;**+**&quot; 단추를 눌러 각 추가를 확인할 수 있습니다.
 
    * `TLS_AES_256_GCM_SHA384`
    * `TLS_AES_128_GCM_SHA256`

@@ -30,18 +30,18 @@ Apache Sling Referrer Filter 외에도 Adobe은 이러한 유형의 공격으로
 
 ### 종속성 {#dependencies}
 
-를 사용하는 모든 구성 요소 `granite.jquery` 종속성은 CSRF 보호 프레임워크를 자동으로 활용할 수 있습니다. 그렇지 않은 경우 컴포넌트의 종속성을 선언해야 합니다. `granite.csrf.standalone` 프레임워크를 사용하기 전에
+`granite.jquery` 종속성에 의존하는 모든 구성 요소는 자동으로 CSRF 보호 프레임워크의 혜택을 받을 수 있습니다. 그렇지 않으면 구성 요소에 대해 `granite.csrf.standalone`에 대한 종속성을 선언해야 프레임워크를 사용할 수 있습니다.
 
 ### 암호화 키 복제 {#replicating-crypto-keys}
 
-토큰을 사용하려면 HMAC 바이너리를 배포의 모든 인스턴스에 복제해야 합니다. 다음을 참조하십시오 [HMAC 키 복제](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) 을 참조하십시오.
+토큰을 사용하려면 HMAC 바이너리를 배포의 모든 인스턴스에 복제해야 합니다. 자세한 내용은 [HMAC 키 복제](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key)를 참조하십시오.
 
 >[!NOTE]
 >
->필요한 사항도 만들어야 합니다 [디스패처 구성 변경 사항](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html) CSRF 보호 프레임워크를 사용합니다.
+>CSRF 보호 프레임워크를 사용하려면 필요한 [Dispatcher 구성을 변경](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html)해야 합니다.
 
 >[!NOTE]
 >
->웹 응용 프로그램에서 매니페스트 캐시를 사용하는 경우 &quot;**&amp;ast;**&#x200B;토큰이 CSRF 토큰 생성 호출을 오프라인으로 전환하지 않도록 매니페스트에 &quot;를 추가합니다. 자세한 내용은 다음을 참조하십시오. [링크](https://www.w3.org/TR/offline-webapps/).
+>웹 응용 프로그램에서 매니페스트 캐시를 사용하는 경우 토큰이 CSRF 토큰 생성 호출을 오프라인으로 전환하지 않도록 매니페스트에 &quot;**&amp;ast;**&quot;을(를) 추가해야 합니다. 자세한 내용은 이 [링크](https://www.w3.org/TR/offline-webapps/)를 참조하세요.
 >
-CSRF 공격 및 이를 완화하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [사이트 간 요청 위조 OWASP 페이지](https://owasp.org/www-community/attacks/csrf).
+CSRF 공격 및 이를 완화하는 방법에 대한 자세한 내용은 [크로스 사이트 요청 위조 OWASP 페이지](https://owasp.org/www-community/attacks/csrf)를 참조하십시오.

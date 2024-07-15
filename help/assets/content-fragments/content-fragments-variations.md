@@ -14,18 +14,18 @@ ht-degree: 59%
 
 # 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
-[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 는 특정 채널 및/또는 시나리오에서 사용할 마스터 콘텐츠의 사본을 만들고 편집할 수 있는 AEM 콘텐츠 조각의 중요한 기능으로, headless 콘텐츠 전달을 보다 유연하게 해 줍니다.
+[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)은(는) AEM 콘텐츠 조각의 중요한 기능으로, 특정 채널 및/또는 시나리오에서 사용할 마스터 콘텐츠의 사본을 만들고 편집할 수 있기 때문에 headless 콘텐츠 전달을 보다 유연하게 해 줍니다.
 
-다음에서 **변형** 탭 다음과 같은 작업을 수행할 수 있습니다.
+**변형** 탭에서 다음을 수행할 수 있습니다.
 
-* [콘텐츠 입력](#authoring-your-content) 조각에 대해
+* 조각에 대한 [콘텐츠 입력](#authoring-your-content),
 * [마스터](#managing-variations) 콘텐츠의 **변형 만들기 및 관리**
 
 편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행하십시오. 예를 들면 다음과 같습니다.
 
 * [조각에 시각적 자산 삽입](#inserting-assets-into-your-fragment)(이미지)
 
-* 다음 사이 선택 [리치 텍스트](#rich-text), [일반 텍스트](#plain-text), 및 [Markdown](#markdown) 편집용
+* 편집할 [서식 있는 텍스트](#rich-text), [일반 텍스트](#plain-text) 및 [Markdown](#markdown) 중에서 선택
 
 * [콘텐츠 업로드](#uploading-content)
 
@@ -51,17 +51,17 @@ ht-degree: 59%
 
 * **변형** 탭에서 직접 콘텐츠를 편집합니다. 각 데이터 유형은 다음 예와 같이 다양한 편집 옵션을 제공합니다.
 
-   * 대상 **여러 줄 텍스트** 필드, 열 수도 있습니다 [전체 화면 편집기](#full-screen-editor) 끝:
+   * **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 열어 다음을 수행할 수도 있습니다.
 
       * [형식](#formats) 선택
       * 더 많은 편집 옵션 보기([리치 텍스트](#rich-text) 형식)
       * 다양한 [작업](#actions) 액세스
 
-   * 대상 **조각 참조** 필드, [컨텐츠 조각 편집](#fragment-references-edit-content-fragment) 모델 정의에 따라 옵션을 사용할 수 있습니다.
+   * **조각 참조** 필드의 경우 모델 정의에 따라 [콘텐츠 조각 편집](#fragment-references-edit-content-fragment) 옵션을 사용할 수 있습니다.
 
-* 할당 **태그** 현재 변형에 태그를 추가, 업데이트 및 제거할 수 있습니다.
+* 현재 변형에 **태그**&#x200B;을(를) 할당합니다. 태그를 추가, 업데이트 및 제거할 수 있습니다.
 
-   * [태그](/help/sites-authoring/tags.md) 는 콘텐츠 분류 및 분류법에 사용될 수 있으므로 조각을 구성할 때 매우 유용합니다. 태그는 태그별로 콘텐츠를 찾고 일괄 작업을 적용하는 데 사용할 수 있습니다.
+   * [태그](/help/sites-authoring/tags.md)은(는) 콘텐츠 분류 및 분류법에 사용될 수 있으므로 조각을 구성할 때 강력합니다. 태그는 태그별로 콘텐츠를 찾고 일괄 작업을 적용하는 데 사용할 수 있습니다.
 
       * 태그 변형이 강조 표시된 조각을 반환하는 태그를 검색합니다.
       * 변형 이름을 사용하는 대신 변형 태그를 사용하여 특정 CDN(Content Delivery Network) 프로필(CDN 캐싱용)의 변형을 그룹화할 수도 있습니다.
@@ -144,7 +144,7 @@ ht-degree: 59%
 
 >[!CAUTION]
 >
->다음을 선택하는 경우 **일반 텍스트**, 다음 중 하나에 삽입한 형식 지정, Markdown 및/또는 자산을 잃을 수 있습니다 **리치 텍스트** 또는 **Markdown**.
+>**일반 텍스트**&#x200B;을(를) 선택하면 **서식 있는 텍스트** 또는 **Markdown**&#x200B;에 삽입한 서식, Markdown 및/또는 자산을 잃을 수 있습니다.
 
 ### Markdown {#markdown}
 
@@ -181,7 +181,7 @@ Markdown을 사용하여 텍스트 서식을 지정할 수 있습니다. 다음�
 
 #### 콘텐츠 조각 편집 {#fragment-references-edit-content-fragment}
 
-옵션 **컨텐츠 조각 편집** 새 창 탭에서 해당 조각을 엽니다.
+**콘텐츠 조각 편집** 옵션은 새 창 탭에서 해당 조각을 엽니다.
 
 <!--
 The option **Edit Content Fragment** opens that fragment in a new editor tab (within the same browser tab).
@@ -193,21 +193,21 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 #### 새 콘텐츠 조각 {#fragment-references-new-content-fragment}
 
-옵션 **새 콘텐츠 조각** 조각을 만들 수 있습니다. 이를 위해 편집기에서 콘텐츠 조각 만들기 마법사의 변형이 열립니다.
+**새 콘텐츠 조각** 옵션을 사용하면 조각을 만들 수 있습니다. 이를 위해 편집기에서 콘텐츠 조각 만들기 마법사의 변형이 열립니다.
 
 그런 다음 다음을 수행하여 조각을 만들 수 있습니다.
 
 1. 필요한 폴더로 이동한 다음 선택합니다.
 1. **다음**&#x200B;을 선택합니다.
-1. 속성 지정(예: ) **제목**.
+1. 속성을 지정합니다(예: **Title**).
 1. **만들기**&#x200B;를 선택합니다.
 1. 마지막으로
-   1. **완료** 는 (원래 조각으로) 를 반환하고 새 조각을 참조합니다.
-   1. **열기** 는 새 조각을 참조하고 새 브라우저 탭에서 편집할 새 조각을 엽니다.
+   1. **완료**&#x200B;은(는) 원래 조각으로 돌아가서 새 조각을 참조합니다.
+   1. **열기**&#x200B;에서 새 조각을 참조하고 편집할 새 조각을 새 브라우저 탭에서 엽니다.
 
 ### 주요 통계 보기 {#viewing-key-statistics}
 
-전체 화면 편집기가 열리면 다음 작업을 수행합니다 **텍스트 통계** 텍스트에 대한 다양한 정보를 표시합니다.
+전체 화면 편집기가 열리면 **텍스트 통계** 작업에 텍스트에 대한 다양한 정보가 표시됩니다.
 
 예:
 
@@ -223,7 +223,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!NOTE]
 >
->기술적인 수준에서 이 시스템은 를 제공하는 것으로 평가되는 문장을 유지합니다. *정보 밀도와 고유성의 최상의 비율* 특정 알고리즘에 따라.
+>기술적인 수준에서, 시스템은 특정 알고리즘에 따라 *정보 밀도와 고유성의 최상의 비율*&#x200B;을 제공하는 것으로 평가되는 문장을 유지합니다.
 
 >[!CAUTION]
 >
@@ -287,7 +287,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    ![주석](assets/cfm-variations-07a.png)
 
-1. 선택 **적용** 대화 상자에서 확인할 수 있습니다.
+1. 대화 상자에서 **적용**&#x200B;을 선택합니다.
 
    ![주석](assets/cfm-variations-annotations-apply-icon.png)
 
@@ -319,11 +319,11 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
   ![주석](assets/cfm-variations-08.png)
 
-* 에서 보고 삭제할 수 있습니다. [타임라인](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) 선택한 조각에 사용됩니다.
+* 선택한 조각에 대한 [타임라인](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)에서 보고 삭제할 수 있습니다.
 
 ### 조각에 자산 삽입 {#inserting-assets-into-your-fragment}
 
-콘텐츠 조각 작성 프로세스를 간소화하기 위해 다음을 추가할 수 있습니다. [에셋](/help/assets/manage-assets.md) (이미지) 조각에 바로 연결됩니다.
+콘텐츠 조각 작성 프로세스를 간소화하기 위해 [Assets](/help/assets/manage-assets.md)(이미지)을 조각에 바로 추가할 수 있습니다.
 
 자산은 형식을 지정하지 않고 조각의 단락 시퀀스에 추가됩니다. [페이지에서 조각을 사용/참조](/help/sites-authoring/content-fragments.md)할 때 형식을 지정할 수 있습니다.
 
@@ -355,8 +355,8 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
    >
    >에셋으로 추가 후 형식을 변경하는 경우:
    >
-   >* **일반 텍스트**: 에셋이 조각에서 유실됩니다.
-   >* **Markdown**: 에셋이 표시되진 않지만 로 돌아가면 여전히 여기에 있습니다. **리치 텍스트**.
+   >* **일반 텍스트**: 에셋이 조각에서 손실됩니다.
+   >* **Markdown**: 에셋이 표시되지 않지만 **서식 있는 텍스트**(으)로 돌아가면 여전히 여기에 있습니다.
 
 ### 조각에 콘텐츠 조각 삽입 {#inserting-content-fragment-into-your-fragment}
 
@@ -403,23 +403,23 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 ### 변형 만들기 {#creating-a-variation}
 
-변형을 사용하면 다음 작업을 수행할 수 있습니다. **기본** 컨텐츠를 작성하고 목적에 따라 변경합니다(필요한 경우).
+변형을 사용하면 **기본** 콘텐츠를 표시하고 목적에 따라 변경할 수 있습니다(필요한 경우).
 
 변형을 만들려면 다음 작업을 수행하십시오.
 
 1. 조각을 열고 사이드 패널이 표시되는지 확인합니다.
 1. 사이드 패널의 아이콘 막대에서 **변형**&#x200B;을 선택합니다.
 1. **변형 만들기**&#x200B;를 선택합니다.
-1. 대화 상자가 열리면 **제목** 및 **설명** 를 참조하십시오.
+1. 대화 상자가 열리면 새 변형에 대해 **제목** 및 **설명**&#x200B;을 지정하십시오.
 1. **추가**&#x200B;를 선택합니다. 조각 **마스터**&#x200B;가 현재[편집](#editing-a-variation)을 위해 열려 있는 새 변형에 복사됩니다.
 
    >[!NOTE]
    >
-   >변형을 만들 때 항상 **기본** 열려 있는 변형이 아니라 복사됩니다.
+   >변형을 만들 때 항상 복사되는 **기본**&#x200B;이며 열려 있는 변형이 아닙니다.
 
    >[!NOTE]
    >
-   >변형을 만들 때 **태그** (으)로 현재 할당됨 **기본** 변형이 새 변형에 복사됩니다.
+   >변형을 만들 때 현재 **기본** 변형에 할당된 모든 **태그**&#x200B;가 새 변형에 복사됩니다.
 
 ### 변형 편집 {#editing-a-variation}
 
@@ -462,7 +462,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 ### 마스터와 동기화 {#synchronizing-with-master}
 
-**기본** 는 콘텐츠 조각의 일부이며, 정의에 따라 콘텐츠의 마스터 사본은 보존되지만 변형에는 해당 콘텐츠의 개별 업데이트 및 맞춤화 버전이 포함됩니다. 기본이 업데이트되면 이러한 변경 사항은 변형과도 관련되어 있을 수 있으므로 변형에도 전파되어야 합니다.
+**기본**&#x200B;은(는) 콘텐츠 조각의 일부이며, 정의에 따라 콘텐츠의 마스터 사본은 보존되지만 변형에는 해당 콘텐츠의 개별 업데이트 및 맞춤 버전이 포함됩니다. 기본이 업데이트되면 이러한 변경 사항은 변형과도 관련되어 있을 수 있으므로 변형에도 전파되어야 합니다.
 
 변형을 편집할 때 변형의 현재 요소를 기본으로 동기화하는 작업에 액세스할 수 있습니다. 이렇게 하면 마스터에 수행된 변경 내용을 필요한 변형에 자동으로 복사할 수 있습니다.
 

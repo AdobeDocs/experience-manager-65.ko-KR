@@ -26,7 +26,7 @@ ht-degree: 0%
 
 또한 프로세스 보고에서는 임시 쿼리를 실행하고 사용자 지정 보고서 보기를 프로세스 보고 사용자 인터페이스에 통합하는 인터페이스를 제공합니다.
 
-지원되는 브라우저 목록에 대해서는 다음을 참조하십시오. [AEM Forms 지원 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md).
+지원되는 브라우저 목록에 대해서는 [AEM Forms 지원 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md)을 참조하십시오.
 
 프로세스 보고는 다음과 같은 모듈을 기반으로 구축됩니다.
 

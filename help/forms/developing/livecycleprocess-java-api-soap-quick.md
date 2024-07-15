@@ -1,5 +1,5 @@
 ---
-title: LiveCycleProcess Java API(SOAP)빠른 시작
+title: LiveCycleProcess Java API(SOAP)Quick Start
 description: LiveCycleProcess SOAP(Java API) 빠른 시작을 사용하여 프로세스 인스턴스 검색, 프로세스 인스턴스 일시 중단, 일시 중단된 프로세스 인스턴스 시작, 프로세스 인스턴스 종료, 프로세스 데이터 제거 및 작업 상태 검색을 수행합니다.
 contentOwner: admin
 content-type: reference
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # LiveCycleProcess SOAP(Java API) 빠른 시작 {#livecycleprocess-java-api-soap-quick-start}
 
-Java API(SOAP) 빠른 시작은 프로세스에 사용할 수 있습니다. A *프로세스 인스턴스* 는 Invocation API와 같은 호출 방법 또는 작업 영역 내에서 시작된 특정 프로세스의 발생입니다.
+Java API(SOAP) 빠른 시작은 프로세스에 사용할 수 있습니다. *프로세스 인스턴스*&#x200B;은(는) Invocation API와 같은 호출 방법 또는 Workspace 내에서 시작된 특정 프로세스의 발생입니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 인스턴스 검색](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -36,11 +36,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍의 빠른 시작은 Forms을 기반으로 합니다. Unix와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. (참조: [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>AEM Forms을 사용한 프로그래밍의 빠른 시작은 Forms을 기반으로 합니다. Unix와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. ([연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.)
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 인스턴스 검색 {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-다음 Java 코드 예제에서는 다음을 기반으로 하는 프로세스 인스턴스를 검색합니다. *MortgageLoan - 사전 구축* 프로세스.
+다음 Java 코드 예제에서는 *MortgageLoan - Prebuilt* 프로세스를 기반으로 하는 프로세스 인스턴스를 검색합니다.
 
 ```java
  /*
@@ -429,7 +429,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 데이터 삭제 {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-다음 Java 코드는 이라는 프로세스의 데이터를 삭제합니다. *SecureDocument*. 이름이 인 프로세스 변수에 대한 데이터를 제거하도록 지정하는 필터가 사용됩니다. *inValue* 이(가) 200보다 큽니다.
+다음 Java 코드는 *SecureDocument*(이)라는 프로세스의 데이터를 삭제합니다. 이름이 *inValue*&#x200B;인 프로세스 변수가 200보다 큰 프로세스 인스턴스의 데이터를 제거하도록 지정하는 필터가 사용됩니다.
 
 ```java
  /*

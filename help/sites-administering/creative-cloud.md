@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Creative Cloud 폴더 공유 AEM 기능은 더 이상 사용되지 않습니다. 고객은 다음과 같은 새로운 기능을 사용하는 것이 좋습니다. [Adobe 에셋 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [AEM 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). 다음에서 자세히 알아보기 [AEM 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md).
+>Creative Cloud 폴더 공유 AEM 기능은 더 이상 사용되지 않습니다. 고객은 [Adobe 에셋 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [AEM 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)과 같은 최신 기능을 사용하는 것이 좋습니다. 자세한 내용은 [AEM 및 Creative Cloud 통합 모범 사례](/help/assets/aem-cc-integration-best-practices.md)를 참조하세요.
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

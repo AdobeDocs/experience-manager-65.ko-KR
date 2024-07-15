@@ -40,7 +40,7 @@ Adobe Experience Manager에는 통합 Experience Cloud UI(터치 지원 UI라고
 * **DAM/Assets 관리자**
 디지털 에셋(이미지, 비디오, 문서, 다운로드 포함)을 관리하는 기능입니다.
 
-* **컨텍스트 허브**
+* **ContextHub**
 방문자에 대한 정보를 집계하여 다양한 용도로 사용하는 기능입니다. 사이트를 방문하는 사용자를 시뮬레이션할 수 있는 사용자 인터페이스를 제공합니다. AEM 6.2부터 ContextHub는 이전 기술인 Client Context를 대체했습니다.
 
 ## 일반 {#general}
@@ -68,50 +68,50 @@ Adobe은 2018/19에 새로운 UI로 전환할 것을 권장합니다. 이 작업
    <td>기본 UI를 사용합니다.</td>
   </tr>
   <tr>
-   <td><p>잠시 AEM을 사용했습니다.</p> <p>에서 제품 UI를 즉시 사용할 수 있으며 사이트에 대해 개발된 맞춤형 구성 요소를 사용했습니다.<br /> </p> </td>
+   <td><p>잠시 AEM을 사용했습니다.</p> <p>이(가) 제품 UI를 즉시 사용하고 사이트에 대한 사용자 지정 구성 요소를 개발했습니다.<br /> </p> </td>
    <td>
     <ol>
      <li>6.5로 업데이트</li>
      <li>사이트 관리, 에셋 등에 기본 UI를 사용합니다. 등<br /> </li>
-     <li>클래식 UI 페이지 편집기를 열려면 "페이지 편집" 작업을 구성하십시오. 다음을 참조하십시오 <a href="#selecting-your-ui">UI 선택</a>.</li>
+     <li>클래식 UI 페이지 편집기를 열려면 "페이지 편집" 작업을 구성하십시오. <a href="#selecting-your-ui">내 UI 선택</a>을 참조하세요.</li>
     </ol> <p>그런 다음 두 번째 단계에서:</p>
     <ol>
-     <li>코랄 3 대화 상자 형식을 사용하도록 구성 요소 대화 상자를 업데이트합니다. Adobe은 <a href="/help/sites-developing/modernization-tools.md">AEM 현대화 도구</a> 구성 요소를 업데이트합니다.</li>
+     <li>코랄 3 대화 상자 형식을 사용하도록 구성 요소 대화 상자를 업데이트합니다. Adobe은 <a href="/help/sites-developing/modernization-tools.md">AEM 현대화 도구</a>를 사용하여 구성 요소를 업데이트할 것을 권장합니다.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>이(가) 통합과 함께 ClientContext을 사용하는 사이트를 구축했습니다.<br /> </td>
+   <td>이(가) 통합을 통해 ClientContext을 사용하는 사이트를 빌드했습니다.<br /> </td>
    <td>
     <ol>
      <li>6.5로 업데이트</li>
      <li>사이트 관리, 에셋 등에 기본 UI를 사용합니다. 등</li>
-     <li>클래식 UI 페이지 편집기를 열려면 "페이지 편집" 작업을 구성하십시오. 다음을 참조하십시오 <a href="#selecting-your-ui">UI 선택</a>.</li>
+     <li>클래식 UI 페이지 편집기를 열려면 "페이지 편집" 작업을 구성하십시오. <a href="#selecting-your-ui">내 UI 선택</a>을 참조하세요.</li>
     </ol> <p>그런 다음 두 번째 단계에서:</p>
     <ol>
-     <li>코랄 3 대화 상자 형식을 사용하도록 구성 요소 대화 상자를 업데이트합니다. Adobe은 <a href="/help/sites-developing/modernization-tools.md">AEM 현대화 도구</a> 구성 요소를 업데이트합니다.</li>
+     <li>코랄 3 대화 상자 형식을 사용하도록 구성 요소 대화 상자를 업데이트합니다. Adobe은 <a href="/help/sites-developing/modernization-tools.md">AEM 현대화 도구</a>를 사용하여 구성 요소를 업데이트할 것을 권장합니다.</li>
      <li>ContextHub(ClientContext 대체)를 구성하고 ContextHub를 사용하도록 페이지 템플릿을 업데이트합니다. ContextHub에는 사용자 지정 ClientContext 저장소를 로드할 수 있는 호환성 모드가 있습니다.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><p>은(는) 수년간 CQ/AEM을 사용했습니다.</p> <p>는 제품 UI를 확장했으며(예: 사이트 관리자) 광범위한 편집 대화 상자를 통해 구성 요소를 빌드했습니다.</p> </td>
-   <td><p>6.5로 업데이트하고 모든 사용자의 페이지 작성에 대한 기본값으로 클래식 UI를 구성합니다. 다음을 참조하십시오 <a href="#selecting-your-ui">UI 선택</a>.</p> <p>그런 다음 프로젝트를 시작하여 맞춤화를 적용하고 구성 요소 대화 상자를 코랄 3 형식으로 최적화합니다. 다음을 참조하십시오 <a href="#resources-to-help">도움말 리소스</a>.<br /> </p> </td>
+   <td><p>6.5로 업데이트하고 모든 사용자의 페이지 작성에 대한 기본값으로 클래식 UI를 구성합니다. <a href="#selecting-your-ui">내 UI 선택</a>을 참조하세요.</p> <p>그런 다음 프로젝트를 시작하여 맞춤화를 적용하고 구성 요소 대화 상자를 코랄 3 형식으로 최적화합니다. <a href="#resources-to-help">도움이 될 리소스</a>.<br />를 참조하세요. </p> </td>
   </tr>
  </tbody>
 </table>
 
 ### FAQ {#faq}
 
-기술 자료 문서 를 참조하십시오. [Touch UI 작성 FAQ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), 세부 정보: 클래식 UI의 사용 중단 일정에 대한 정보를 포함합니다.
+클래식 UI의 사용 중단 일정에 대한 정보를 포함하여 자세한 내용은 기술 자료 문서인 [Touch UI 작성 FAQ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html)를 참조하십시오.
 
 ### UI 선택 {#selecting-your-ui}
 
-다음을 참조하십시오 [UI 선택](/help/sites-authoring/select-ui.md) 필요한 경우 시스템을 구성하는 방법에 대한 정보입니다.
+필요에 따라 시스템을 구성하는 방법은 [UI 선택](/help/sites-authoring/select-ui.md)을 참조하십시오.
 
 ### 터치 지원 UI 상태 {#touch-enabled-ui-status}
 
-AEM 6.5의 터치 지원 UI에 대한 향상된 기능에 대한 자세한 내용은 을 참조하십시오. [새로운 기능](/help/release-notes/release-notes.md#what-s-new) 을 참조하십시오.
+AEM 6.5에서 터치 사용 UI에 향상된 기능에 대한 자세한 내용은 릴리스 정보에서 [새로운 기능](/help/release-notes/release-notes.md#what-s-new)을 참조하세요.
 
-전체 개요 [Touch UI 기능 상태](/help/release-notes/touch-ui-features-status.md) 페이지
+전체 개요는 [Touch UI 기능 상태](/help/release-notes/touch-ui-features-status.md) 페이지를 참조하십시오.
 
 ### 도움말 리소스 {#resources-to-help}
 
@@ -121,13 +121,13 @@ AEM 6.5의 터치 지원 UI에 대한 향상된 기능에 대한 자세한 내�
 
 자세한 개발 정보는 다음을 참조하십시오.
 
-* [터치 지원 UI 아키텍처](/help/sites-developing/touch-ui-concepts.md).
-* 사용 [AEM 현대화 도구](/help/sites-developing/modernization-tools.md) 구성 요소 편집 대화 상자를 클래식 UI에서 터치 사용 UI로 변환합니다.
+* [터치 사용 UI 아키텍처](/help/sites-developing/touch-ui-concepts.md).
+* [AEM 현대화 도구](/help/sites-developing/modernization-tools.md)를 사용하여 구성 요소 편집 대화 상자를 클래식 UI에서 터치 사용 UI로 변환합니다.
 
-* [터치 지원 UI의 구조](/help/sites-developing/touch-ui-structure.md).
+* [터치 사용 UI 구조](/help/sites-developing/touch-ui-structure.md).
 
-* [터치 지원 UI에서 콘솔 맞춤화](/help/sites-developing/customizing-consoles-touch.md) (샘플 코드 포함).
+* [터치 사용 UI에서 콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md)(샘플 코드 포함).
 
-* [터치 지원 UI에서 페이지 작성 사용자 지정](/help/sites-developing/customizing-page-authoring-touch.md) (샘플 코드 포함).
+* [터치 사용 UI에서 페이지 작성 사용자 지정](/help/sites-developing/customizing-page-authoring-touch.md)(샘플 코드 포함).
 
 * [Granite UI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).

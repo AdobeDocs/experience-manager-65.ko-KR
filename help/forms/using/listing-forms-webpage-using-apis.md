@@ -19,7 +19,7 @@ ht-degree: 1%
 
 AEM Forms은 웹 개발자가 검색 기준을 충족하는 양식 세트를 쿼리하고 검색하는 데 사용할 수 있는 REST 기반 검색 API를 제공합니다. API를 사용하여 다양한 필터를 기반으로 양식을 검색할 수 있습니다. 응답 개체에는 양식 특성, 속성 및 양식의 렌더링 끝점이 포함되어 있습니다.
 
-REST API를 사용하여 양식을 검색하려면 다음 위치에서 서버에 GET 요청을 전송하십시오. `https://'[server]:[port]'/libs/fd/fm/content/manage.json` 아래에 설명된 쿼리 매개 변수와 함께
+REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매개 변수를 사용하여 `https://'[server]:[port]'/libs/fd/fm/content/manage.json`의 서버에 GET 요청을 보내십시오.
 
 ## 쿼리 매개 변수 {#query-parameters}
 
@@ -30,17 +30,17 @@ REST API를 사용하여 양식을 검색하려면 다음 위치에서 서버에
    <td><strong>설명<br /> </strong></td>
   </tr>
   <tr>
-   <td>익살맞<br /> </td>
-   <td><p>호출할 함수를 지정합니다. 양식을 검색하려면 <code>func </code>특성 대상 <code>searchForms</code>.</p> <p>예: <code class="code">
+   <td>func<br /> </td>
+   <td><p>호출할 함수를 지정합니다. 양식을 검색하려면 <code>func </code>특성 값을 <code>searchForms</code>(으)로 설정하십시오.</p> <p>예: <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>참고:</strong> <em>이 매개 변수는 필수입니다.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>양식을 검색할 응용 프로그램 경로를 지정합니다. 기본적으로 appPath 속성은 루트 노드 수준에서 사용할 수 있는 모든 애플리케이션을 검색합니다.<br /> </p> <p>단일 검색 쿼리에 여러 애플리케이션 경로를 지정할 수 있습니다. 여러 경로는 파이프(|) 문자로 구분하십시오. </p> </td>
+   <td><p>양식을 검색할 응용 프로그램 경로를 지정합니다. 기본적으로 appPath 특성은 루트 노드 수준에서 사용할 수 있는 모든 응용 프로그램을 검색합니다.<br /> </p> <p>단일 검색 쿼리에 여러 애플리케이션 경로를 지정할 수 있습니다. 여러 경로는 파이프(|) 문자로 구분하십시오. </p> </td>
   </tr>
   <tr>
-   <td>잘라내기 지점<br /> </td>
+   <td>cutPoints<br /> </td>
    <td><p>에셋으로 가져올 속성을 지정합니다. 별표(*)를 사용하여 모든 속성을 한 번에 가져올 수 있습니다. 여러 속성을 지정하려면 파이프 (|) 연산자를 사용하십시오. </p> <p>예: <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>참고</strong>: </p>
     <ul>
      <li><em>ID, 경로 및 이름 등의 속성을 항상 가져옵니다. </em></li>
@@ -53,7 +53,7 @@ REST API를 사용하여 양식을 검색하려면 다음 위치에서 서버에
     <ul>
      <li><strong>NO_RELATION</strong>: 관련 에셋을 가져오지 않습니다.</li>
      <li><strong>즉시</strong>: 검색 결과와 직접 관련된 자산을 가져옵니다.</li>
-     <li><strong>모두</strong>: 직접 및 간접적으로 관련된 에셋을 가져옵니다.</li>
+     <li><strong>모두</strong>: 직접 및 간접적으로 관련된 자산을 가져옵니다.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -76,9 +76,9 @@ REST API를 사용하여 양식을 검색하려면 다음 위치에서 서버에
        statement.put("value", "SimpleSurveyAF");
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>위의 예에서, </p>
     <ul>
-     <li><strong>이름</strong>: 검색할 속성의 이름을 지정합니다.</li>
+     <li><strong>name</strong>: 검색할 속성의 이름을 지정합니다.</li>
      <li><strong>값</strong>: 검색할 속성의 값을 지정합니다.</li>
-     <li><strong>연산자</strong>: 검색 중에 적용할 연산자를 지정합니다. 지원되는 연산자는 다음과 같습니다.
+     <li><strong>operator</strong>: 검색 중에 적용할 연산자를 지정합니다. 지원되는 연산자는 다음과 같습니다.
       <ul>
        <li>EQ - 같음 </li>
        <li>NEQ - 같지 않음</li>
@@ -92,7 +92,7 @@ REST API를 사용하여 양식을 검색하려면 다음 위치에서 서버에
        <li>ENDSWITH - B가 A의 끝 부분인 경우 A는 B로 끝납니다.</li>
        <li>LIKE - LIKE 연산자 구현</li>
        <li>AND - 여러 문 결합</li>
-      </ul> <p><strong>참고:</strong> <em>GT, LT, GTEQ 및 LTEQ 연산자는 LONG, DOUBLE 및 DATE와 같은 선형 유형의 속성에 적용할 수 있습니다.</em></p> </li>
+      </ul> <p><strong>참고:</strong> <em>GT, LT, GTEQ 및 LTEQ 연산자를 LONG, DOUBLE 및 DATE와 같은 선형 형식의 속성에 적용할 수 있습니다.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -104,17 +104,17 @@ REST API를 사용하여 양식을 검색하려면 다음 위치에서 서버에
        orderingsArray.put(orderings);
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
-     <li><strong>이름</strong>: 검색 결과의 순서를 지정하는 데 사용할 속성의 이름을 지정합니다.</li>
-     <li><strong>기준</strong>: 결과 순서를 지정합니다. order 속성은 다음 값을 허용합니다.
+     <li><strong>name</strong>: 검색 결과를 정렬하는 데 사용할 속성의 이름을 지정합니다.</li>
+     <li><strong>기준</strong>: 결과의 순서를 지정합니다. order 속성은 다음 값을 허용합니다.
       <ul>
-       <li>ASC - ASC를 사용하여 결과를 오름차순으로 정렬합니다.<br /> </li>
+       <li>ASC - ASC를 사용하여 오름차순으로 결과를 정렬합니다.<br /> </li>
        <li>DES - DES를 사용하여 결과를 내림차순으로 정렬합니다.</li>
       </ul> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>이진 콘텐츠를 검색할지 여부를 지정합니다. 다음 <code>includeXdp</code> 속성은 유형의 자산에 적용할 수 있습니다. <code>FORM</code>, <code>PDFFORM</code>, 및 <code>PRINTFORM</code>.</td>
+   <td>이진 콘텐츠를 검색할지 여부를 지정합니다. <code>includeXdp</code> 특성은 <code>FORM</code>, <code>PDFFORM</code> 및 <code>PRINTFORM</code> 유형의 자산에 적용할 수 있습니다.</td>
   </tr>
   <tr>
    <td>assetType</td>

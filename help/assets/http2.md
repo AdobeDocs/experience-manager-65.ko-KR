@@ -61,7 +61,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 요청을 시작하여 HTTP/2로 전환합니다. 이 작업은 자동으로 수행되지 않습니다.
 
-1. HTTP/2로 전환하려면 Adobe 고객 지원 요청을 시작합니다. 다음을 참조하십시오 [지원 티켓 열기](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
+1. HTTP/2로 전환하려면 Adobe 고객 지원 요청을 시작합니다. [지원 티켓 열기](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support)를 참조하세요.
 
    1. 지원 요청에 다음 정보를 제공합니다.
 
@@ -97,4 +97,4 @@ HTTP/2로 전환하면 새 CDN 구성으로 이동하는 작업이 포함되므�
 
 브라우저는 이 사실을 기술하지 않으므로 확장을 다운로드해야 합니다.
 
-Firefox 및 Chrome의 경우 &quot;HTTP/2 및 SPDY 표시기&quot;라는 확장이 있습니다. 브라우저는 http/2만 안전하게 지원하므로, URL을 https로 호출하여 확인해야 합니다. http/2가 지원되면 파란색 Flash 기호 및 헤더 형식으로 확장으로 표시됩니다 `X-Firefox-Spdy` : `h2`.
+Firefox 및 Chrome의 경우 &quot;HTTP/2 및 SPDY 표시기&quot;라는 확장이 있습니다. 브라우저는 http/2만 안전하게 지원하므로, URL을 https로 호출하여 확인해야 합니다. http/2가 지원되는 경우 파란색 Flash 기호 형식으로 확장에 의해 표시되고 헤더 `X-Firefox-Spdy`: `h2`이(가) 표시됩니다.

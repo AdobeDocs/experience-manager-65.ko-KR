@@ -43,46 +43,46 @@ ht-degree: 0%
 
 ### 다운타임이 있는 오프라인 백업 {#offline-backup-with-downtime}
 
-1. 전체 클러스터 및 관련 서비스를 종료합니다. (참조 [서비스 시작 및 중지](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. 모든 노드에서 데이터베이스, GDS 및 커넥터를 백업합니다. (참조 [백업 및 복구할 파일](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. 전체 클러스터 및 관련 서비스를 종료합니다. ([서비스 시작 및 중지](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services) 참조)
+1. 모든 노드에서 데이터베이스, GDS 및 커넥터를 백업합니다. ([백업 및 복구할 파일](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover) 참조)
 1. AEM 저장소를 오프라인으로 백업하려면 다음 단계를 수행하십시오.
 
    1. 각 클러스터 노드에 대해 클러스터 노드 ID가 포함된 파일을 백업합니다.
    1. 하위 디렉토리를 포함하여 모든 보조 클러스터 노드의 모든 파일을 백업합니다.
    1. 각 클러스터 노드의 저장소/시스템 ID를 별도로 백업합니다.
 
-   자세한 단계는 를 참조하십시오. [백업 및 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   자세한 단계는 [백업 및 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)을 참조하세요.
 
 1. 고객 글꼴과 같은 다른 모든 데이터를 백업합니다.
 1. 클러스터를 다시 시작합니다.
 
 ### 다운타임 없는 오프라인 백업 {#offline-backup-with-no-downtime}
 
-1. 롤링 백업 모드로 들어갑니다. (참조 [백업 모드 시작](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
+1. 롤링 백업 모드로 들어갑니다. ([백업 모드 입력](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes) 참조)
 
    복구 후 롤링 백업 모드를 둡니다.
 
-1. AEM과 관련하여 클러스터의 보조 노드를 종료합니다. (참조 [서비스 시작 및 중지](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. 모든 노드에서 데이터베이스, GDS 및 커넥터를 백업합니다. (참조 [백업 및 복구할 파일](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. AEM과 관련하여 클러스터의 보조 노드를 종료합니다. ([서비스 시작 및 중지](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services) 참조)
+1. 모든 노드에서 데이터베이스, GDS 및 커넥터를 백업합니다. ([백업 및 복구할 파일](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover) 참조)
 1. AEM 저장소를 오프라인으로 백업하려면 다음 단계를 수행하십시오.
 
    1. 각 클러스터 노드에 대해 클러스터 노드 ID가 포함된 파일을 백업합니다.
    1. 하위 디렉토리를 포함하여 모든 보조 클러스터 노드의 모든 파일을 백업합니다.
    1. 각 클러스터 노드의 repository/system.id 를 별도로 백업합니다.
 
-   자세한 단계는 를 참조하십시오. [백업 및 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   자세한 단계는 [백업 및 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)을 참조하세요.
 
 1. 고객 글꼴과 같은 다른 모든 데이터를 백업합니다.
 1. 클러스터를 다시 시작합니다.
 
 ### 다운타임 없이 응답이 지연되는 온라인 백업 {#online-backup-with-no-downtime-but-delay-in-response}
 
-1. 롤링 백업 모드로 들어갑니다. (참조 [백업 모드 시작](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
+1. 롤링 백업 모드로 들어갑니다. ([백업 모드 입력](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes) 참조)
 
    복구 후 롤링 백업 모드를 둡니다.
 
-1. AEM과 관련하여 클러스터의 보조 노드를 종료합니다. (참조 [서비스 시작 및 중지](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. 모든 노드에서 데이터베이스, GDS 및 커넥터를 백업합니다. (참조 [백업 및 복구할 파일](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. AEM과 관련하여 클러스터의 보조 노드를 종료합니다. ([서비스 시작 및 중지](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services) 참조)
+1. 모든 노드에서 데이터베이스, GDS 및 커넥터를 백업합니다. ([백업 및 복구할 파일](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover) 참조)
 1. AEM 저장소를 온라인으로 백업하려면 다음 단계를 수행합니다.
 
    1. 각 클러스터 노드에 대해 cluster_node.id가 포함된 파일을 백업합니다.
@@ -133,7 +133,7 @@ AEM 보조 노드의 재해 복구 시나리오에 사용할 파일을 백업하
    1. 노드에서 파일 clusterNode/revision.log 을 삭제합니다.
    1. 존재하는 경우 노드에서 .lock을 삭제합니다.
    1. 존재하는 경우 노드에서 repository/system.id을 삭제합니다.
-   1. 존재하는 경우 노드에서 파일 &amp;ast;&amp;ast;/listener.properties을 삭제합니다.
+   1. 노드에서 파일 &amp;ast;&amp;ast;/listener.properties(있는 경우)를 삭제합니다.
    1. 개별 클러스터 노드의 경우 repository/cluster_node.id을 복원합니다.
 
 >[!NOTE]
@@ -176,15 +176,15 @@ AEM 보조 노드의 재해 복구 시나리오에 사용할 파일을 백업하
 
 ## 서신 관리 솔루션 게시 노드 백업 및 복원 {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-클러스터된 환경에 게시자 노드에 기본-보조 관계가 없습니다. 다음을 수행하여 모든 게시자 노드를 백업할 수 있습니다. [백업 및 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+클러스터된 환경에 게시자 노드에 기본-보조 관계가 없습니다. [백업 및 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)을 수행하여 게시자 노드를 백업할 수 있습니다.
 
 ### 단일 게시자 노드 복구 {#recover-a-single-publisher-node}
 
 1. 복구해야 하는 노드를 종료하고 노드가 다시 시작될 때까지 게시 활동을 수행하지 않습니다.
-1. 다음을 사용하여 Publish 노드 복원 [백업 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. [백업 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)을 사용하여 Publish 노드를 복원합니다.
 
 ### 클러스터 복구 {#recover-a-cluster}
 
 1. 클러스터를 종료합니다.
-1. 다음을 사용하여 Publish 노드 복원 [백업 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. [백업 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)을 사용하여 Publish 노드를 복원합니다.
 1. 주 노드 다음에 작성자 클러스터의 보조 노드가 올 때 시작합니다.

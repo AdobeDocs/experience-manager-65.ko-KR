@@ -42,7 +42,7 @@ ht-degree: 45%
 
 작성 환경에서 작성자는 페이지 속성에 액세스하고 **태그/키워드** 필드에 하나 이상의 태그를 입력하여 태그를 적용할 수 있습니다.
 
-적용하려면 [사전 정의된 태그](/help/sites-administering/tags.md), **페이지 속성** 창 사용 `Tags/Keywords` 필드 풀다운 : 페이지에 허용된 태그 목록에서 선택합니다. 다음 **표준 태그** tab 은 기본 네임스페이스이며, 즉, `namespace-string:` 분류 접두사가 추가되었습니다.
+[사전 정의된 태그](/help/sites-administering/tags.md)을(를) 적용하려면 **페이지 속성** 창에서 `Tags/Keywords` 필드 드롭다운을 사용하여 페이지에 허용된 태그 목록에서 선택하십시오. **표준 태그** 탭은 기본 네임스페이스이며, 이는 분류법에 접두사로 추가된 `namespace-string:`이(가) 없음을 의미합니다.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -68,7 +68,7 @@ ht-degree: 45%
 
 태그 클라우드는 현재 페이지, 전체 웹 사이트 또는 가장 일반적으로 액세스하는 태그에 대한 태그 클라우드를 표시합니다. 태그 클라우드는 사용자가 관심을 가지고 있는(관심을 가지고 있는) 문제를 강조 표시하는 수단입니다. 태그를 표시하는 데 사용되는 텍스트 크기는 사용과 관련하여 달라집니다.
 
-다음 [태그 클라우드](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) 구성 요소 (일반 구성 요소 그룹)는 페이지에 태그 클라우드를 추가하는 데 사용됩니다.
+[Tag Cloud](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) 구성 요소(일반 구성 요소 그룹)는 페이지에 태그 클라우드를 추가하는 데 사용됩니다.
 
 ## 태그 검색 {#searching-on-tags}
 
@@ -76,6 +76,6 @@ ht-degree: 45%
 
 ### 검색 구성 요소 사용 {#using-search-component}
 
-추가 [구성 요소 검색](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) 페이지에 대한 는 태그를 포함하는 검색 기능을 제공하며 작성자 및 게시 환경 모두에서 사용할 수 있습니다.
+페이지에 [검색 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search)를 추가하면 태그를 포함하는 검색 기능이 제공되며 작성자 및 게시 환경 모두에서 사용할 수 있습니다.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)

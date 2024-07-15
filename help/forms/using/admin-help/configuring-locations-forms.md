@@ -42,17 +42,17 @@ ht-degree: 1%
 
 `(BaseURL)/subdir/image1.jpg`
 
-**FS 웹 루트 URI:** Forms 웹 애플리케이션의 URL. Forms 웹 응용 프로그램과 클라이언트 응용 프로그램이 동일한 응용 프로그램 서버에 배포된 경우 이 상자를 비워 둘 수 있습니다. Forms API 웹 루트 URL이 사용됩니다.
+**FS 웹 루트 URI:** Forms 웹 응용 프로그램의 URL입니다. Forms 웹 응용 프로그램과 클라이언트 응용 프로그램이 동일한 응용 프로그램 서버에 배포된 경우 이 상자를 비워 둘 수 있습니다. Forms API 웹 루트 URL이 사용됩니다.
 
 Forms 웹 응용 프로그램과 클라이언트 응용 프로그램이 동일한 응용 프로그램 서버에 배포되지 않은 경우 다음 예제와 같이 이 상자에 Forms 웹 응용 프로그램의 URL을 입력합니다.
 
 `https://<host name>:<port>/FormServer`
 
-위치 `host name`및 `port` 는 Forms 웹 애플리케이션을 호스팅하는 서버의 서버 이름 및 포트 번호입니다.
+여기서 `host name` 및 `port`은(는) Forms 웹 응용 프로그램을 호스팅하는 서버의 서버 이름 및 포트 번호입니다.
 
 기본값은 빈 문자열입니다.
 
-**웹 루트 URI:** 애플리케이션의 웹 루트. 이 값은 AEM Forms SDK를 통해 지정된 sTargetURL 매개 변수(sTargetURL이 상대적인 값으로 제공되는 경우)와 결합하여 애플리케이션별 웹 콘텐츠에 액세스할 수 있는 절대 URL을 구성합니다.
+**웹 루트 URI:** 응용 프로그램의 웹 루트입니다. 이 값은 AEM Forms SDK를 통해 지정된 sTargetURL 매개 변수(sTargetURL이 상대적인 값으로 제공되는 경우)와 결합하여 애플리케이션별 웹 콘텐츠에 액세스할 수 있는 절대 URL을 구성합니다.
 
 기본값은 빈 문자열입니다.
 
@@ -60,7 +60,7 @@ Forms 웹 응용 프로그램과 클라이언트 응용 프로그램이 동일�
 
 기본값은 빈 문자열입니다.
 
-**XCI 구성 URI:** 렌더링에 사용된 XCI 파일이 발견되는 상대 위치 또는 절대 위치입니다. 상대적인 값의 경우 XCI 파일이 배포 가능한 AEM Forms EAR 파일에 있다고 가정합니다.
+**XCI 구성 URI:** 렌더링에 사용된 XCI 파일이 있는 상대 또는 절대 위치입니다. 상대적인 값의 경우 XCI 파일이 배포 가능한 AEM Forms EAR 파일에 있다고 가정합니다.
 
 기본값은 `com/adobe/formServer/PA/pa.xci`입니다.
 
@@ -80,13 +80,13 @@ Forms 웹 응용 프로그램과 클라이언트 응용 프로그램이 동일�
 
 **캐시 위치:** Forms 디스크 캐시의 위치를 지정합니다. 이 설정을 변경하면 현재 위치의 모든 기존 캐시 정보가 재설정되고 새 위치에 새 캐시가 만들어집니다. 다음 옵션 중 하나를 선택합니다.
 
-**기본 위치:** 이것이 기본 선택입니다. 이 옵션을 선택하면 사용 중인 애플리케이션 서버에 종속된 위치에 캐시가 만들어집니다.
+**기본 위치:** 기본 선택입니다. 이 옵션을 선택하면 사용 중인 애플리케이션 서버에 종속된 위치에 캐시가 만들어집니다.
 
-* **JBos:** [JBoss 홈]\server\[설치 유형]\svcdata\FormServer\Cache
-* **웹 논리:** [WebLogic 홈]\user_projects\domains\[aem-forms Domain Name]\adobe\[Forms 서버 이름]\FormServer\Cache
+* **JBoss:** [JBoss 홈]\server\[설치 유형]\svcdata\FormServer\Cache
+* **WebLogic:** [WebLogic Home]\user_projects\domains\[aem-forms 도메인 이름]\adobe\[Forms 서버 이름]\FormServer\Cache
 * **WebSphere:** [IBM 홈]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**LC 임시 디렉터리:** 캐시는 AEM forms 임시 디렉터리의 하위 디렉터리에 생성되며, 이 디렉터리는 설정 > 핵심 시스템 설정 > 구성 > 임시 디렉터리 위치 아래의 관리 콘솔에 지정됩니다. 하위 디렉터리의 이름은 adobeform_입니다.[servername].
+**LC 임시 디렉터리:** 캐시가 AEM forms 임시 디렉터리의 하위 디렉터리에 생성되며, 이 디렉터리는 설정 > 코어 시스템 설정 > 구성 > 임시 디렉터리 위치 아래의 관리 콘솔에 지정됩니다. 하위 디렉터리의 이름은 adobeform_[servername]입니다.
 
 >[!NOTE]
 >

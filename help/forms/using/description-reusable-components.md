@@ -18,7 +18,7 @@ ht-degree: 9%
 
 # 재사용 가능한 구성 요소에 대한 설명 {#description-of-reusable-components}
 
-AEM Forms 작업 영역은 다음으로 구성됩니다. [재사용 가능](/help/forms/using/integrating-html-ws-components-web.md) 특정 구성 요소로 구성된 구성 요소 [폴더 구조](/help/forms/using/folder-structure.md) CRX™. 각 구성 요소에는 폴더 구조에 지정된 위치에 모델, 보기 및 템플릿 파일이 있으며, JavaScript™은 다른 구성 요소 파일에 대한 종속성, 구성 요소가 수신하는 이벤트 및 AEM Forms 작업 영역에서 이러한 이벤트를 트리거하는 JavaScript 개체가 있습니다. 여기에 구성 파일 이름 및 종속성을 포함하여 재사용 가능한 구성 요소의 전체 목록이 제공됩니다.
+AEM Forms 작업 영역은 CRX™의 특정 [폴더 구조](/help/forms/using/folder-structure.md)에 구성된 [재사용 가능](/help/forms/using/integrating-html-ws-components-web.md) 구성 요소로 구성됩니다. 각 구성 요소에는 폴더 구조에 지정된 위치에 모델, 보기 및 템플릿 파일이 있으며, JavaScript™은 다른 구성 요소 파일에 대한 종속성, 구성 요소가 수신하는 이벤트 및 AEM Forms 작업 공간에서 이러한 이벤트를 트리거하는 JavaScript 개체가 있습니다. 여기에 구성 파일 이름 및 종속성을 포함하여 재사용 가능한 구성 요소의 전체 목록이 제공됩니다.
 
 ## 작업 목록 {#tasklist}
 
@@ -110,7 +110,7 @@ AEM Forms 작업 영역은 다음으로 구성됩니다. [재사용 가능](/hel
 
 >[!NOTE]
 >
->작업 영역은 TaskList 모델의 fetchTasks 함수를 호출하여 이 구성 요소에 대한 작업 모델을 생성합니다.
+>Workspace은 이 구성 요소에 대한 작업 모델을 만들기 위해 TaskList 모델의 fetchTasks 함수를 호출합니다.
 
 ## 필터 목록 {#filterlist}
 
@@ -1084,7 +1084,7 @@ AEM Forms 작업 영역은 다음으로 구성됩니다. [재사용 가능](/hel
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
-   <td>해당 없음<br /> </td>
+   <td>NA<br /> </td>
   </tr>
   <tr>
    <td><p>이벤트 수신(이벤트 이름 - 트리거)</p> </td>

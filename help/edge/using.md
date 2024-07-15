@@ -60,4 +60,4 @@ AEM Assets Sidekick 플러그인을 구성한 후에는 [Microsoft Word 또는 G
 * Edge Delivery를 시작하는 방법에 대한 자세한 내용은 Edge Delivery 설명서의 [빌드](https://www.hlx.live/docs/#build) 섹션을 참조하십시오.
 * Edge Delivery를 사용하여 콘텐츠를 작성 및 게시하는 방법을 이해하려면 [게시 섹션](https://www.hlx.live/docs/authoring)을 참조하십시오.
 * Sidekick 확장 기능을 사용하는 방법을 이해하려면 [Sidekick 사용](https://www.hlx.live/docs/sidekick) 페이지를 참조하십시오.
-* AEM 작성에 대해서는 [작성 개념 페이지](/help/sites-authoring/author.md))
+* AEM 작성에 대해서는 [작성 개념 페이지](/help/sites-authoring/author.md)를 참조하십시오.

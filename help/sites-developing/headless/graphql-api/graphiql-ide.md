@@ -14,7 +14,7 @@ ht-degree: 93%
 
 # GraphiQL IDE 사용 {#graphiql-ide}
 
-표준 구현 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE는 AEM(Adobe Experience Manager)의 GraphQL API와 함께 사용할 수 있습니다.
+표준 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE의 구현은 AEM(Adobe Experience Manager)의 GraphQL API와 함께 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ GraphiQL 로고 바로 아래 왼쪽 중간 패널에 있는 편집기에 새 �
 
 두 경우 모두 편집기 패널에 표시되는 쿼리는 다음 두 가지 작업을 수행하는 경우 실행되는 쿼리입니다.
 
-* 클릭: **쿼리 실행** 아이콘
+* **쿼리 실행** 아이콘을 클릭합니다
 * 키보드 조합 `Control-Enter` 사용
 
 ## 쿼리 변수 {#query-variables}
@@ -135,7 +135,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## 지속 쿼리 게시 {#publishing-persisted-queries}
 
-을(를) 선택하면 [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md) 목록(왼쪽 패널)에서 **게시** 및 **게시 취소** 작업. 테스트할 때 애플리케이션에서 간편하게 액세스할 수 있도록 게시 환경(예: `dev-publish`)에 맞게 액션을 활성화합니다.
+목록(왼쪽 패널)에서 [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)를 선택하면 **Publish** 및 **게시 취소** 액션을 사용할 수 있습니다. 테스트할 때 애플리케이션에서 간편하게 액세스할 수 있도록 게시 환경(예: `dev-publish`)에 맞게 액션을 활성화합니다.
 
 >[!NOTE]
 >

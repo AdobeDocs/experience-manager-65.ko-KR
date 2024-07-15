@@ -1,6 +1,6 @@
 ---
-title: 자산 통찰력에 데모 패키지 사용
-description: 데모 패키지를 사용하여 Adobe 자산 통찰력 이 웹 페이지에서 데이터를 캡처하고 통찰력을 생성할 수 있도록 합니다.
+title: Assets Insights용 데모 패키지 사용
+description: 데모 패키지를 사용하여 Adobe Assets Insights에서 데이터를 캡처하고 웹 페이지에 대한 인사이트를 생성할 수 있습니다.
 contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
@@ -13,13 +13,13 @@ ht-degree: 2%
 
 ---
 
-# 자산 통찰력에 데모 패키지 사용 {#using-demo-package-for-asset-insights}
+# Assets Insights용 데모 패키지 사용 {#using-demo-package-for-asset-insights}
 
-데모 패키지를 사용하여 Adobe 자산 통찰력 을 활성화하여 샘플 웹 페이지의 데이터를 캡처하고 통찰력을 생성할 수 있습니다.
+데모 패키지를 사용하여 Adobe Assets Insights를 활성화하여 샘플 웹 페이지의 데이터를 캡처하고 통찰력을 생성할 수 있습니다.
 
-## [!DNL Use Experience Manager Assets] 샘플 웹 페이지를 통한 인사이트  {#using-aem-assets-insights-with-sample-web-page}
+## 샘플 웹 페이지가 있는 [!DNL Use Experience Manager Assets] 인사이트  {#using-aem-assets-insights-with-sample-web-page}
 
-1. 의 지침을 사용하여 Assets Insights 구성 [자산 통찰력 구성](configure-asset-insights.md).
+1. [Assets 인사이트 구성](configure-asset-insights.md)의 지침을 사용하여 Assets 인사이트를 구성합니다.
 1. 아래에서 샘플 Assets 패키지를 다운로드하고 CRXDE 패키지 관리자에서 패키지를 설치합니다.
 
 [파일 가져오기](assets/insightsdemo.zip)
@@ -36,4 +36,4 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >외부 웹 페이지는 다음 위치에 있을 수 있습니다. [!DNL Experience Manager] 그 자체.
+   >외부 웹 페이지는 [!DNL Experience Manager] 자체에 있을 수 있습니다.

@@ -22,11 +22,11 @@ ht-degree: 1%
 >
 >Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-[단일 페이지 애플리케이션](https://en.wikipedia.org/wiki/Single-page_application) (SPA)는 웹 기술을 사용하여 원활한 경험을 구축하는 데 가장 효과적인 패턴으로 널리 간주되는 중요한 수준에 도달했습니다. SPA 패턴을 따라 데스크탑 또는 모바일 애플리케이션과 동일하게 수행되지만 개방형 웹 표준에서의 기반 때문에 다양한 디바이스 플랫폼 및 폼 팩터에 도달하는 애플리케이션을 만들 수 있습니다.
+[단일 페이지 애플리케이션](https://en.wikipedia.org/wiki/Single-page_application)(SPA)이 웹 기술을 사용하여 원활한 경험을 구축하는 데 가장 효과적인 패턴으로 널리 간주되는 중요한 대규모에 도달했습니다. SPA 패턴을 따라 데스크탑 또는 모바일 애플리케이션과 동일하게 수행되지만 개방형 웹 표준에서의 기반 때문에 다양한 디바이스 플랫폼 및 폼 팩터에 도달하는 애플리케이션을 만들 수 있습니다.
 
-일반적으로 SPA은 전체 HTML 페이지를 로드하기 때문에 기존 페이지 기반 웹 사이트보다 성능이 더 우수합니다 **한 번만** (CSS, JS 및 지원 글꼴 콘텐츠 포함), 그런 다음 앱에서 상태가 변경될 때마다 필요한 내용만 로드합니다. 이 상태 변경에 필요한 사항은 선택한 기술 세트에 따라 다를 수 있지만, 일반적으로 기존 &#39;보기&#39;를 대체할 단일 HTML 조각과 새 보기를 연결하고 필요할 수 있는 모든 클라이언트측 템플릿 렌더링을 수행하는 JS 코드 블록 실행을 포함합니다. 템플릿 캐싱 메커니즘을 지원하거나 Adobe PhoneGap을 사용하는 경우 템플릿 콘텐츠에 대한 오프라인 액세스를 통해 이 상태 변경 속도를 더욱 향상시킬 수 있습니다.
+일반적으로 SPA은 전체 HTML 페이지 **한 번만**(CSS, JS 및 지원 글꼴 콘텐츠 포함)을 로드한 다음 앱에서 상태가 변경될 때마다 필요한 항목만 로드하므로 기존 페이지 기반 웹 사이트보다 성능이 향상됩니다. 이 상태 변경에 필요한 사항은 선택한 기술 세트에 따라 다를 수 있지만, 일반적으로 기존 &#39;보기&#39;를 대체할 단일 HTML 조각과 새 보기를 연결하고 필요할 수 있는 모든 클라이언트측 템플릿 렌더링을 수행하는 JS 코드 블록 실행을 포함합니다. 템플릿 캐싱 메커니즘을 지원하거나 Adobe PhoneGap을 사용하는 경우 템플릿 콘텐츠에 대한 오프라인 액세스를 통해 이 상태 변경 속도를 더욱 향상시킬 수 있습니다.
 
-AEM 6.1은 AEM 앱을 통해 SPA의 구축 및 관리를 지원합니다. 이 문서에서는 SPA 이면의 개념과 해당 개념 사용 방법에 대해 소개합니다 [AngularJs](https://angularjs.org/) 브랜드를 App Store 및 Google Play으로 가져오기.
+AEM 6.1은 AEM 앱을 통해 SPA의 구축 및 관리를 지원합니다. 이 문서에서는 SPA에 포함된 개념과 [AngularJS](https://angularjs.org/)을(를) 사용하여 브랜드를 App Store 및 Google Play으로 가져오는 방법에 대해 소개합니다.
 
 ## AEM 앱의 SPA {#spa-in-aem-apps}
 
@@ -38,7 +38,7 @@ AEM Apps는 앱의 최상위 모듈을 구성하는 등 AngularJS 구성의 대�
 
 앱 초기화의 일부에는 앱이 종속된 AngularJS 모듈을 지정하는 작업이 포함됩니다. 앱에서 사용하는 모듈 목록은 /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp에 있는 스크립트에 의해 지정되며 앱의 페이지 구성 요소에 의해 오버레이되어 앱에 필요한 추가 AngularJS 모듈을 가져올 수 있습니다. 예를 들어 위의 스크립트를 Geometrixx 구현(/apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp에 있음)과 비교합니다.
 
-앱의 고유한 상태 간 탐색을 지원하기 위해 angular-앱-모듈 스크립트는 최상위 앱 페이지의 모든 하위 페이지를 반복하여 &#39;경로&#39; 집합을 생성하고 Angular의 $routeProvider 서비스에서 각 경로를 구성합니다. 실제 모습에 대한 예를 보려면 Geometrixx Outdoors 앱 샘플에서 생성한 angular-앱-모듈 스크립트를 참조하십시오. (링크에는 로컬 인스턴스가 필요합니다.) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
+앱의 고유한 상태 간 탐색을 지원하기 위해 angular-앱-모듈 스크립트는 최상위 앱 페이지의 모든 하위 페이지를 반복하여 &#39;경로&#39; 집합을 생성하고 Angular의 $routeProvider 서비스에서 각 경로를 구성합니다. 실제 모습의 예를 보려면 Geometrixx Outdoors 앱 샘플에서 생성된 angular 앱 모듈 스크립트를 참조하십시오. (링크는 로컬 인스턴스가 필요) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
 
 생성된 AEMAngularApp을 자세히 살펴보면 다음과 같이 일련의 경로가 지정됩니다.
 
@@ -56,7 +56,7 @@ $routeProvider
 
 ## 페이지 컨트롤러 {#page-controllers}
 
-angular 자신의 표현으로, &quot;컨트롤러는 Angular 범위를 확장하는 데 사용되는 JavaScript 생성자 함수입니다.&quot; ([소스](https://docs.angularjs.org/guide/controller)) AEM 앱의 각 페이지는 컨트롤러까지 자동으로 배선됩니다. 이 컨트롤러는 `frameworkType` / `angular`. angular 예로서 ng-text 구성 요소(/libs/mobileapps/components/template/ng-text)를 살펴봅니다. cq:template 노드는 이 구성 요소가 페이지에 추가될 때마다 이 중요한 속성을 포함하도록 합니다.
+angular 자신의 표현으로, &quot;컨트롤러는 Angular 범위를 확장하는 데 사용되는 JavaScript 생성자 함수입니다.&quot; ([source](https://docs.angularjs.org/guide/controller)) AEM 앱의 각 페이지는 `angular`의 `frameworkType`을(를) 지정하는 모든 컨트롤러에 의해 추가될 수 있는 컨트롤러까지 자동으로 배선됩니다. angular 예로서 ng-text 구성 요소(/libs/mobileapps/components/template/ng-text)를 살펴봅니다. cq:template 노드는 이 구성 요소가 페이지에 추가될 때마다 이 중요한 속성을 포함하도록 합니다.
 
 보다 복잡한 컨트롤러 예제의 경우 ng-template-page controller.jsp 스크립트( /apps/geometrixx-outdoors-app/components/angular/ng-template-page에서)를 엽니다. 특히 중요한 것은 실행 시 생성되는 JavaScript 코드이며, 이는 다음과 같이 렌더링됩니다.
 
@@ -81,10 +81,10 @@ angular 자신의 표현으로, &quot;컨트롤러는 Angular 범위를 확장�
 ])
 ```
 
-위의 예에서 의 매개 변수는 `$routeParams` 서비스를 가져온 다음 JSON 데이터가 저장된 디렉터리 구조로 마이그레이션합니다. SKU 처리 `id` 이러한 방식으로 잠재적으로 수천 개의 개별 제품에 대한 제품 데이터를 렌더링할 수 있는 단일 제품 템플릿을 전달할 수 있습니다. 이는 (잠재적으로) 대규모 제품 데이터베이스의 각 항목에 대한 개별 경로가 필요한 훨씬 확장 가능한 모델입니다.
+위의 예에서는 `$routeParams` 서비스의 매개 변수를 가져온 다음 JSON 데이터가 저장된 디렉터리 구조로 마스터합니다. 이러한 방식으로 SKU `id`을(를) 처리하면 잠재적으로 수천 개의 개별 제품에 대한 제품 데이터를 렌더링할 수 있는 단일 제품 템플릿을 제공할 수 있습니다. 이는 (잠재적으로) 대규모 제품 데이터베이스의 각 항목에 대한 개별 경로가 필요한 훨씬 확장 가능한 모델입니다.
 
-여기에는 두 가지 구성 요소도 있습니다. ng-product는 위에서 추출한 데이터로 범위를 늘립니다 `$http` 호출합니다. 또한 이 페이지에는 ng-image가 있으며, 이는 또한 응답에서 검색하는 값으로 범위를 늘립니다. angular의 덕택으로 `$http` 서비스에서는 각 구성 요소가 요청이 완료되고 작성된 약속이 이행될 때까지 인내심을 갖고 기다립니다.
+여기에는 두 가지 구성 요소도 있습니다. ng-product는 위의 `$http` 호출에서 추출한 데이터로 범위를 늘립니다. 또한 이 페이지에는 ng-image가 있으며, 이는 또한 응답에서 검색하는 값으로 범위를 늘립니다. angular의 `$http` 서비스를 통해 각 구성 요소는 요청이 완료되고 만들어진 약속이 이행될 때까지 인내심을 가지고 기다립니다.
 
 ## 다음 단계 {#the-next-steps}
 
-단일 페이지 애플리케이션에 대해 알아본 후에는 [PhoneGap CLI를 사용한 앱 개발](/help/mobile/phonegap-apps-pg-cli.md).
+단일 페이지 애플리케이션에 대한 자세한 내용은 [PhoneGap CLI를 사용하여 앱 개발](/help/mobile/phonegap-apps-pg-cli.md)을 참조하십시오.

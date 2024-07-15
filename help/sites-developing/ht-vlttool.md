@@ -18,13 +18,13 @@ ht-degree: 1%
 
 # VLT 도구 사용 방법 {#how-to-use-the-vlt-tool}
 
-Jackrabbit FileVault 툴(VLT)은 [Apache Foundation](https://www.apache.org/) Jackrabbit/AEM 인스턴스의 내용을 파일 시스템에 매핑합니다. VLT 도구는 SVN(Subversion) 클라이언트와 같은 소스 제어 시스템 클라이언트와 유사한 기능을 가지며, 일반적인 체크 인, 체크 아웃 및 관리 작업 및 프로젝트 내용을 유연하게 표현하기 위한 구성 옵션을 제공합니다.
+Jackrabbit FileVault 도구(VLT)는 [Apache Foundation](https://www.apache.org/)에서 개발한 도구로서 Jackrabbit/AEM 인스턴스의 내용을 파일 시스템에 매핑합니다. VLT 도구는 SVN(Subversion) 클라이언트와 같은 소스 제어 시스템 클라이언트와 유사한 기능을 가지며, 일반적인 체크 인, 체크 아웃 및 관리 작업 및 프로젝트 내용을 유연하게 표현하기 위한 구성 옵션을 제공합니다.
 
-명령줄에서 VLT 도구를 실행합니다. 이 문서에서는 시작 및 도움말 방법을 포함하여 도구 사용 방법과 모든 항목에 대한 목록을 설명합니다 [명령](#vlt-commands) 및 사용 가능 [옵션](#vlt-global-options).
+명령줄에서 VLT 도구를 실행합니다. 이 문서에서는 시작 및 도움말 방법과 모든 [명령](#vlt-commands) 및 사용 가능한 [옵션](#vlt-global-options) 목록을 포함하여 도구를 사용하는 방법을 설명합니다.
 
 ## 개념 및 아키텍처 {#concepts-and-architecture}
 
-다음을 참조하십시오. [Filevault 개요](https://jackrabbit.apache.org/filevault/overview.html) 및 [자격 증명 모음 FS](https://jackrabbit.apache.org/filevault/vaultfs.html) 공식 페이지 [Apache Jackrabbit Filevault 설명서](https://jackrabbit.apache.org/filevault/index.html) Filevault 도구의 개념과 구조에 대한 자세한 개요
+Filevault 도구의 개념과 구조에 대한 자세한 개요는 공식 [Apache Jackrabbit Filevault 설명서](https://jackrabbit.apache.org/filevault/index.html)의 [Filevault 개요](https://jackrabbit.apache.org/filevault/overview.html) 및 [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) 페이지를 참조하십시오.
 
 ## VLT 시작하기 {#getting-started-with-vlt}
 
@@ -40,16 +40,16 @@ VLT 사용을 시작하려면 다음을 수행해야 합니다.
 
 VLT 도구를 사용하려면 먼저 설치해야 합니다. 추가 도구이므로 기본적으로 설치되지 않습니다. 또한 시스템의 환경 변수를 설정해야 합니다.
 
-1. FileVault 아카이브 파일을 [Maven 아티팩트 리포지토리.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
+1. [Maven 아티팩트 리포지토리에서 FileVault 보관 파일을 다운로드합니다.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
-   >VLT 도구의 소스는 다음과 같습니다. [gitHub에서 사용할 수 있습니다.](https://github.com/apache/jackrabbit-filevault)
+   >VLT 도구의 원본은 [GitHub에서 사용할 수 있습니다.](https://github.com/apache/jackrabbit-filevault)
 1. 아카이브를 추출합니다.
-1. 추가 `<archive-dir>/vault-cli-<version>/bin` 내 환경에 `PATH` 따라서 명령 파일이 `vlt` 또는 `vlt.bat` 적절하게 액세스됩니다. 예:
+1. 명령 파일 `vlt` 또는 `vlt.bat`에 적절하게 액세스할 수 있도록 `<archive-dir>/vault-cli-<version>/bin`을(를) 환경 `PATH`에 추가하십시오. 예:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
-1. 명령줄 셸을 열고 를 실행합니다. `vlt --help`. 출력이 다음 도움말 화면과 유사한지 확인합니다.
+1. 명령줄 셸을 열고 `vlt --help`을(를) 실행합니다. 출력이 다음 도움말 화면과 유사한지 확인합니다.
 
    ```shell
    vlt --help
@@ -88,11 +88,11 @@ global-ignores = .vlt
 
 VLT는 다음 규칙에 따라 EOF(줄 끝)를 자동으로 처리합니다.
 
-* Windows에서 체크 아웃된 파일 행은 `CRLF`
-* linux/Unix에서 체크 아웃된 파일 행은 `LF`
-* 저장소에 커밋된 파일 행은 `LF`
+* Windows에서 체크 아웃된 파일 줄이 `CRLF`(으)로 끝남
+* linux/Unix에서 체크 아웃된 파일 행은 `LF`(으)로 끝납니다.
+* 저장소에 커밋된 파일 줄이 `LF`(으)로 끝남
 
-VLT와 SVN 구성이 일치하는지 확인하려면 `svn:eol-style` 다음으로 속성: `native` 저장소에 저장된 파일의 확장명. svn 설정을 편집하고 다음을 추가합니다.
+VLT와 SVN 구성이 일치하는지 확인하려면 저장소에 저장된 파일의 확장명에 대해 `svn:eol-style` 속성을 `native`(으)로 설정해야 합니다. svn 설정을 편집하고 다음을 추가합니다.
 
 ```xml
 [auto-props]
@@ -121,8 +121,8 @@ svn co https://svn.server.com/repos/myproject
 
 파일을 저장소와 동기화해야 합니다. 이를 위해 진행되는 작업:
 
-1. 명령줄에서 다음 위치로 이동합니다 `content/jcr_root`.
-1. 다음을 입력하여 저장소를 체크 아웃합니다(포트 번호 대체). **4502** 및 관리자 암호):
+1. 명령줄에서 `content/jcr_root`(으)로 이동합니다.
+1. 다음을 입력하여 저장소를 체크 아웃합니다(**4502** 및 관리자 암호로 포트 번호 대체).
 
    ```shell
    vlt --credentials admin:admin co --force http://localhost:4502/crx
@@ -130,19 +130,19 @@ svn co https://svn.server.com/repos/myproject
 
    >[!NOTE]
    >
-   >초기 체크아웃 시 자격 증명을 한 번만 지정해야 합니다. 그런 다음 내 홈 디렉터리에 저장됩니다. `.vault/auth.xml`.
+   >초기 체크아웃 시 자격 증명을 한 번만 지정해야 합니다. 그러면 `.vault/auth.xml` 내의 홈 디렉터리에 저장됩니다.
 
 ### 동기화가 작동했는지 테스트 {#testing-whether-the-synchronization-worked}
 
-저장소를 체크아웃하고 동기화한 후에는 모든 것이 제대로 작동하는지 테스트해야 합니다. 이를 수행하는 쉬운 방법은 를 편집하는 것입니다. **.jsp** 파일을 만들고 변경 사항을 커밋한 후 변경 사항이 반영되는지 확인합니다.
+저장소를 체크아웃하고 동기화한 후에는 모든 것이 제대로 작동하는지 테스트해야 합니다. **.jsp** 파일을 편집하여 변경 내용을 커밋한 후 변경 내용이 반영되었는지 확인하는 것이 쉬운 방법입니다.
 
 동기화를 테스트하려면 다음을 수행하십시오.
 
 1. 다음으로 이동 `.../jcr_content/libs/foundation/components/text`.
-1. 에서 항목 편집 `text.jsp`.
-1. 다음을 입력하여 수정된 파일 보기 `vlt st`
-1. 입력하여 변경 사항을 확인합니다. `vlt diff text.jsp`
-1. 변경 사항을 커밋합니다. `vlt ci test.jsp`.
+1. `text.jsp`에서 항목을 편집합니다.
+1. `vlt st`을(를) 입력하여 수정된 파일을 확인합니다.
+1. `vlt diff text.jsp`을(를) 입력하여 변경 내용을 확인합니다.
+1. 변경 내용을 커밋합니다. `vlt ci test.jsp`.
 1. 텍스트 구성 요소가 포함된 페이지를 다시 로드하고 변경 사항이 있는지 확인합니다.
 
 ## VLT 도구 도움말 {#getting-help-with-the-vlt-tool}
@@ -214,21 +214,21 @@ Options:
 
 ## VLT에서 수행되는 일반적인 작업 {#common-tasks-performed-in-vlt}
 
-다음은 VLT에서 수행되는 몇 가지 일반적인 작업입니다. 각 명령에 대한 자세한 내용은 다음을 참조하십시오 [명령](#vlt-commands).
+다음은 VLT에서 수행되는 몇 가지 일반적인 작업입니다. 각 명령에 대한 자세한 내용은 개별 [명령](#vlt-commands)을 참조하세요.
 
 ### 하위 트리 체크 아웃 {#checking-out-a-subtree}
 
-예를 들어 저장소의 하위 트리만 체크 아웃하려는 경우 `/apps/geometrixx`를 채우기 위해 다음을 입력할 수 있습니다.
+리포지토리의 하위 트리(예: `/apps/geometrixx`)만 체크 아웃하려면 다음을 입력합니다.
 
 ```shell
 vlt co http://localhost:4502/crx/-/jcr:root/apps/geometrixx geo
 ```
 
-이렇게 하면 새 내보내기 루트가 만들어집니다 `geo` 포함 `META-INF` 및 `jcr_root` 디렉터리 및 모든 파일을 아래에 넣습니다. `/apps/geometrixx` 위치: `geo/jcr_root`.
+이 작업을 수행하면 `META-INF` 및 `jcr_root` 디렉터리가 있는 새 내보내기 루트 `geo`이(가) 만들어지고 `geo/jcr_root`의 `/apps/geometrixx` 아래에 모든 파일이 저장됩니다.
 
 ### 필터링된 체크아웃 수행 {#performing-a-filtered-checkout}
 
-기존 작업 공간 필터가 있고 이 필터를 사용하여 체크아웃하려는 경우 먼저 `META-INF/vault` 필터를 디렉토리와 거기에 두거나 다음과 같이 명령줄에 지정합니다.
+기존 작업 영역 필터가 있고 이 필터를 체크 아웃에 사용하려면 먼저 `META-INF/vault` 디렉터리를 만들어 필터를 배치하거나 다음과 같이 명령줄에 지정할 수 있습니다.
 
 ```shell
 $ vlt co --filter filter.xml http://localhost:4502/crx/-/jcr:root geo
@@ -248,7 +248,7 @@ $ vlt co --filter filter.xml http://localhost:4502/crx/-/jcr:root geo
 
 제어 파일을 사용하지 않고도 JCR 저장소와 로컬 파일 시스템 간에 콘텐츠를 가져오고 내보낼 수 있습니다.
 
-를 사용하지 않고 콘텐츠를 가져오고 내보내려면 `.vlt` 제어:
+`.vlt` 컨트롤을 사용하지 않고 콘텐츠를 가져오고 내보내려면 다음을 수행하십시오.
 
 1. 처음에 저장소 설정:
 
@@ -336,7 +336,7 @@ vlt [options] <command> [arg1 [arg2 [arg3] ..]]
 
 ### 내보내기 {#export}
 
-다음 위치에 마운트된 Vault 파일 시스템 내보내기 &lt;uri> 로컬 파일 시스템으로 &lt;local-path>. 선택 사항입니다 &lt;jcr-path> 하위 트리만 내보내도록 지정할 수 있습니다.
+&lt;uri>에 마운트된 자격 증명 모음 파일 시스템을 &lt;local-path>에 있는 로컬 파일 시스템으로 내보냅니다. 하위 트리만 내보내도록 선택적 &lt;jcr-path>를 지정할 수 있습니다.
 
 #### 구문 {#syntax}
 
@@ -363,7 +363,7 @@ vlt export http://localhost:4502/crx /apps/geometrixx myproject
 
 ### 가져오기 {#import}
 
-로컬 파일 시스템 가져오기(다음 위치에서 시작) `<local-path>` 다음 위치의 vault 파일 시스템으로 이동합니다. `<uri>`. 다음을 지정할 수 있습니다. `<jcr-path>` 가져오기 루트로 사용됩니다. If `--sync` 을 지정하면 가져온 파일이 자동으로 자격 증명 모음 제어에 저장됩니다.
+로컬 파일 시스템(`<local-path>`부터 시작)을 자격 증명 모음 파일 시스템(`<uri>`부터)으로 가져옵니다. `<jcr-path>`을(를) 가져오기 루트로 지정할 수 있습니다. `--sync`을(를) 지정하면 가져온 파일이 자동으로 자격 증명 모음 제어에 저장됩니다.
 
 #### 구문 {#syntax-1}
 
@@ -389,7 +389,7 @@ vlt import http://localhost:4502/crx . /
 
 ### 체크아웃(co) {#checkout-co}
 
-다음 위치에서 시작하여 JCR 저장소에서 로컬 파일 시스템으로 초기 체크 아웃 수행 &lt;uri> 로컬 파일 시스템으로 &lt;local-path>. 다음을 추가할 수도 있습니다. &lt;jcrpath> 원격 트리의 하위 디렉터리를 체크 아웃하기 위한 인수입니다. META-INF 디렉토리에 복사된 작업 영역 필터를 지정할 수 있습니다.
+JCR 저장소에서 &lt;uri>로 시작하는 로컬 파일 시스템으로 &lt;local-path>의 로컬 파일 시스템으로 초기 체크 아웃을 수행합니다. &lt;jcrPath> 인수를 추가하여 원격 트리의 하위 디렉토리를 체크 아웃할 수도 있습니다. META-INF 디렉터리에 복사된 Workspace 필터를 지정할 수 있습니다.
 
 #### 구문 {#syntax-2}
 
@@ -443,7 +443,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | 핫픽스 링크(name,id)의 printf 형식(예: ) `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | 핫픽스 링크(name,id)의 printf 형식(예: `[CQ520_HF_%s|%s]`) |
 | `-v (--verbose)` | 자세한 정보 출력 |
 | `-q (--quiet)` | 가능한 적게 인쇄합니다. |
 | `<localPaths> [<localPaths> ...]` | 로컬 경로 |
@@ -452,7 +452,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 작업 복사본 파일 및 디렉터리의 상태를 인쇄합니다.
 
-If `--show-update` 을 지정하면 각 파일이 원격 버전에 대해 확인됩니다. 그런 다음 두 번째 문자는 업데이트 작업에서 수행할 작업을 지정합니다.
+`--show-update`을(를) 지정하면 각 파일이 원격 버전에 대해 확인됩니다. 그런 다음 두 번째 문자는 업데이트 작업에서 수행할 작업을 지정합니다.
 
 #### 구문 {#syntax-4}
 
@@ -549,7 +549,7 @@ revert -q|-R <file1> [<file2> ...]
 
 ### 해결됨 {#resolved}
 
-제거 **충돌** 작업 복사본 파일 또는 디렉터리의 상태입니다.
+작업 복사본 파일 또는 디렉터리에서 **충돌** 상태를 제거합니다.
 
 >[!NOTE]
 >
@@ -709,7 +709,7 @@ console -F <file>
 
 ### Rcp {#rcp}
 
-한 원격 저장소에서 다른 원격 저장소로 노드 트리를 복사합니다. `<src>` 소스 노드 및 `<dst>` 부모 노드가 있어야 하는 대상 경로를 지정합니다. Rcp는 데이터를 스트리밍하여 노드를 처리합니다.
+한 원격 저장소에서 다른 원격 저장소로 노드 트리를 복사합니다. `<src>`은(는) 원본 노드를 가리키고 `<dst>`은(는) 부모 노드가 있어야 하는 대상 경로를 지정합니다. Rcp는 데이터를 스트리밍하여 노드를 처리합니다.
 
 #### 구문 {#syntax-17}
 
@@ -739,7 +739,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 >[!NOTE]
 >
->다음 `--exclude` 옵션 다음에 다른 옵션이 와야 합니다. `<src>` 및 `<dst>` 인수. 예:
+>`<src>` 및 `<dst>` 인수 앞에 `--exclude` 옵션 다음에 다른 옵션이 와야 합니다. 예:
 >
 >`vlt rcp -e ".*\.txt" -r`
 
@@ -788,9 +788,9 @@ VLT에서 사용하는 상태 코드는 다음과 같습니다.
 
 ### vlt를 사용하여 서비스 설치 {#installing-the-service-using-vlt}
 
-다음 `vlt sync install` vault 동기화 서비스 번들 및 구성을 자동으로 설치하는 데 명령을 사용할 수 있습니다.
+자격 증명 모음 동기화 서비스 번들 및 구성을 자동으로 설치하는 데 `vlt sync install` 명령을 사용할 수 있습니다.
 
-번들은 아래에 설치됩니다. `/libs/crx/vault/install` 구성 노드가 다음 위치에 만들어집니다. `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. 처음에는 서비스를 사용할 수 있지만 동기화 루트가 구성되지 않습니다.
+번들이 `/libs/crx/vault/install` 아래에 설치되고 구성 노드가 `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`에 만들어집니다. 처음에는 서비스를 사용할 수 있지만 동기화 루트가 구성되지 않습니다.
 
 다음 예제에서는 지정된 uri가 액세스할 수 있는 CRX 인스턴스에 동기화 서비스를 설치합니다.
 
@@ -800,7 +800,7 @@ $ vlt --credentials admin:admin sync --uri http://localhost:4502/crx install
 
 ### 서비스 상태 표시 {#displaying-the-service-status}
 
-다음 `status` 명령을 사용하여 실행 중인 동기화 서비스에 대한 정보를 표시할 수 있습니다. &quot;
+`status` 명령을 사용하여 실행 중인 동기화 서비스에 대한 정보를 표시할 수 있습니다. &quot;
 
 ```shell
 $ vlt sync status --uri http://localhost:4502/crx
@@ -812,11 +812,11 @@ Listing sync status for http://localhost:4502/crx/server/-/jcr:root
 
 >[!NOTE]
 >
->다음 `status` 명령은 서비스에서 라이브 데이터를 가져오지 않고 의 구성을 읽습니다. `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`.
+>`status` 명령은 서비스에서 라이브 데이터를 가져오지 않고 `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`에서 구성을 읽습니다.
 
 ### 동기화 폴더 추가 {#adding-a-sync-folder}
 
-다음 `register` 명령은 구성에 동기화할 폴더를 추가하는 데 사용됩니다.
+`register` 명령은 구성에 동기화할 폴더를 추가하는 데 사용됩니다.
 
 ```shell
 $ vlt sync register
@@ -826,11 +826,11 @@ Added new sync directory: /tmp/workspace/vltsync/jcr_root
 
 >[!NOTE]
 >
->다음 `register` 명령은 다음을 구성할 때까지 동기화를 트리거하지 않습니다. `sync-once` 구성.
+>`register` 명령은 `sync-once` 구성을 구성할 때까지 동기화를 트리거하지 않습니다.
 
 ### 동기화 폴더 제거 {#removing-a-sync-folder}
 
-다음 `unregister` 명령은 구성에서 동기화할 폴더를 제거하는 데 사용됩니다.
+`unregister` 명령은 구성에서 동기화할 폴더를 제거하는 데 사용됩니다.
 
 ```shell
 $  vlt sync unregister
@@ -848,16 +848,16 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
 
 서비스가 실행되면 다음 매개 변수로 구성할 수 있습니다.
 
-* `vault.sync.syncroots`: 동기화 루트를 정의하는 하나 이상의 로컬 파일 시스템 경로.
+* `vault.sync.syncroots`: 동기화 루트를 정의하는 하나 이상의 로컬 파일 시스템 경로입니다.
 
-* `vault.sync.fscheckinterval`: 파일 시스템에서 변경 사항을 스캔해야 하는 빈도(초)입니다. 기본값은 5초입니다.
+* `vault.sync.fscheckinterval`: 파일 시스템에서 변경 내용을 스캔해야 하는 빈도(초)입니다. 기본값은 5초입니다.
 * `vault.sync.enabled`: 서비스를 활성화/비활성화하는 일반 플래그.
 
 >[!NOTE]
 >
->이 서비스는 웹 콘솔 또는 `sling:OsgiConfig` 노드(이름 포함) `com.day.jcr.sync.impl.VaultSyncServiceImpl`)을 클릭하여 저장소에 추가합니다.
+>웹 콘솔 또는 저장소의 `sling:OsgiConfig` 노드(이름 `com.day.jcr.sync.impl.VaultSyncServiceImpl`)로 서비스를 구성할 수 있습니다.
 >
->AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 다음을 참조하십시오. [OSGi 구성](/help/sites-deploying/configuring-osgi.md) 전체 세부 정보.
+>AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용은 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 참조하십시오.
 
 #### 폴더 구성 동기화 {#sync-folder-configuration}
 
@@ -866,13 +866,13 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
 * `.vlt-sync-config.properties`: 구성 파일입니다.
 
 * `.vlt-sync.log`: 동기화 중에 수행된 작업에 대한 정보가 포함된 로그 파일입니다.
-* `.vlt-sync-filter.xml`: 동기화되는 저장소의 부분을 정의하는 필터. 이 파일의 형식은 [필터링된 체크아웃 수행](#performing-a-filtered-checkout) 섹션.
+* `.vlt-sync-filter.xml`: 동기화되는 저장소의 부분을 정의하는 필터입니다. 이 파일의 형식은 [필터링된 체크 아웃 수행](#performing-a-filtered-checkout) 섹션에서 설명합니다.
 
-다음 `.vlt-sync-config.properties` 파일을 사용하면 다음 속성을 구성할 수 있습니다.
+`.vlt-sync-config.properties` 파일을 사용하면 다음 속성을 구성할 수 있습니다.
 
 **비활성화됨** 동기화를 켜거나 끕니다. 기본적으로 이 매개 변수는 동기화를 허용하도록 false로 설정됩니다.
 
-**한번 동기화** 비어 있지 않으면 다음 검사에서 지정된 방향으로 폴더를 동기화하면 매개 변수가 지워집니다. 두 가지 값이 지원됩니다.
+**sync-once** 비어 있지 않으면 다음 검사에서 지정된 방향으로 폴더를 동기화하면 매개 변수가 지워집니다. 두 가지 값이 지원됩니다.
 
 * `JCR2FS`: JCR 저장소의 모든 콘텐츠를 내보내고 로컬 디스크에 씁니다.
 * `FS2JCR`: 디스크의 모든 콘텐츠를 JCR 저장소로 가져옵니다.
@@ -891,7 +891,7 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
 
    >[!NOTE]
    >
-   >필터를 사용하여 적절한 경로만 확인할 수 있습니다. 다음을 참조하십시오. [필터링된 체크아웃 수행](#performing-a-filtered-checkout) 섹션을 참조하십시오.
+   >필터를 사용하여 적절한 경로만 확인할 수 있습니다. 자세한 내용은 [필터링된 체크 아웃 수행](#performing-a-filtered-checkout) 섹션을 참조하십시오.
 
 1. 작업 사본의 루트 폴더로 이동합니다.
 
@@ -922,7 +922,7 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
    appropriate flag in the /Users/trushton/Applications/aem/vltsync/sandbox/dev/jcr_root/.vlt-sync-config.properties file.
    ```
 
-1. 편집 `.vlt-sync-config.properties` 숨겨진 파일 및 저장소의 콘텐츠를 동기화하도록 동기화 구성:
+1. `.vlt-sync-config.properties` 숨김 파일을 편집하고 저장소의 콘텐츠를 동기화하도록 동기화를 구성하십시오.
 
    ```xml
    sync-once=JCR2FS
@@ -932,7 +932,7 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
    >
    >이 단계에서는 필터 구성에 따라 전체 저장소를 다운로드합니다.
 
-1. 로그 파일 확인 `.vlt-sync.log` 진행률을 보려면 다음 작업을 수행하십시오.
+1. 진행률을 보려면 로그 파일 `.vlt-sync.log`을(를) 확인하십시오.
 
    ```xml
    ***

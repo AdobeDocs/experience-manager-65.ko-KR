@@ -56,14 +56,14 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 작은 온라인 튜토리얼에 처음 로그인하면 사용자 인터페이스의 주요 기능 중 일부가 강조 표시됩니다.
 
-그런 다음 탐색 패널을 사용하여 AEM의 주요 영역에 액세스할 수 있습니다. 콘텐츠 조각의 경우 다음을 사용합니다. **에셋 콘솔**.
+그런 다음 탐색 패널을 사용하여 AEM의 주요 영역에 액세스할 수 있습니다. 콘텐츠 조각의 경우 **Assets 콘솔**&#x200B;을 사용합니다.
 
 왼쪽 상단에서 Adobe 아이콘을 선택한 후 작은 나침반 아이콘을 선택하여 탐색 패널을 열 수 있습니다.
 
 ![탐색 패널](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->컨텐츠 조각은 AEM의 기능이지만 **사이트**&#x200B;에서 찾을 수 있습니다. **에셋** 콘솔. 이는 영향을 미치지 않지만 알아두면 유용한 기술 세부 사항입니다.
+>콘텐츠 조각은 AEM **Sites**&#x200B;의 기능이지만 **Assets** 콘솔에 있습니다. 이는 영향을 미치지 않지만 알아두면 유용한 기술 세부 사항입니다.
 
 콘솔 내에서 컨텐츠 조각으로 이동할 폴더를 선택하거나 헤더에서 탐색 표시를 선택하여 다시 트리 탐색할 수 있습니다.
 
@@ -71,9 +71,9 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 ### 액션, 선택, 보기 {#actions-selecting-viewing}
 
-다음 **에셋** 콘솔에 전용 **작업 도구 모음**, 및 **빠른 작업** 리소스(예: 폴더 또는 콘텐츠 조각)를 선택한 후 사용할 수 있습니다.
+**Assets** 콘솔에는 리소스(예: 폴더 또는 콘텐츠 조각)를 선택한 후 사용할 수 있는 전용 **작업 도구 모음** 및 **빠른 작업**&#x200B;이 있습니다.
 
-빠른 작업은 단일 리소스에 대해 사용할 수 있습니다. **바젤** 아래 예에서:
+빠른 작업은 단일 리소스에 사용할 수 있습니다. 아래 예에서 **기본**&#x200B;을(를) 참조하십시오.
 
 ![빠른 작업](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,7 +101,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 #### 폴더 만들기 {#creating-folder}
 
-이 작업은 내에 일련의 폴더를 만들어 수행할 수 있습니다 **파일** 섹션에 자세히 설명되어 있습니다. **만들기** 옵션(오른쪽 상단)을 선택한 다음 **폴더**&#x200B;를 선택합니다.
+이렇게 하려면 Assets 콘솔의 **파일** 섹션 내에 일련의 폴더를 만들면 됩니다. **만들기** 옵션(오른쪽 상단)을 선택한 다음 **폴더**&#x200B;를 선택합니다.
 
 ![폴더 만들기 옵션](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -129,7 +129,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 해당되는 경우에만...
 
-폴더를 만들 수 있는 초기 폴더가 제공될 수 있습니다. (일반적으로 개발자 또는 시스템 관리자에 의해) 일부 구성 세부 정보가 루트 폴더에 적용되어야 하기 때문입니다. 이 작업은 귀하에게 별로 흥미가 없겠지만, 필요한 경우 다음을 확인할 수 있습니다. **구성** 다음에서 **Cloud Service** / 폴더 **속성**:
+폴더를 만들 수 있는 초기 폴더가 제공될 수 있습니다. (일반적으로 개발자 또는 시스템 관리자에 의해) 일부 구성 세부 정보가 루트 폴더에 적용되어야 하기 때문입니다. 이 작업은 사용자의 관심 대상이 아닐 수 있지만 필요한 경우 **Cloud Service** 폴더의 **속성**&#x200B;에서 **구성**&#x200B;을(를) 확인할 수 있습니다.
 
 ![폴더 속성 만들기 - 구성](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -139,7 +139,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 ### 콘텐츠 조각 만들기 {#creating-fragment}
 
-콘텐츠 조각 생성은 매우 유사합니다. 다음 코드를 사용하면 됩니다. **컨텐츠 조각** 옵션 대신:
+콘텐츠 조각 만들기는 매우 유사합니다. 대신 **콘텐츠 조각** 옵션을 사용합니다.
 
 ![콘텐츠 조각 만들기 옵션](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
@@ -147,15 +147,15 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 ![콘텐츠 조각 만들기 - 모델 선택](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-을(를) 계속한 후 **다음** 세부 정보(**기본** 및 **고급**)을 참조하십시오.
+**다음**&#x200B;을(를) 계속하면 조각에 대한 세부 정보(**기본** 및 **고급**)를 제공할 수 있습니다.
 
 ![새 콘텐츠 조각 만들기 - 이름 입력](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-다음을 사용하여 확인 **만들기** 그리고 나서 **열기** 편집기의 조각.
+**만들기**&#x200B;로 확인한 다음 편집기에서 조각을 **열기**&#x200B;할 수 있습니다.
 
 ### 조각 편집 {#editing-fragment}
 
-조각을 만든 직후에 또는 에셋 콘솔에서 선택하여 조각을 열 수 있습니다.
+조각을 만든 직후에 또는 Assets 콘솔에서 선택하여 조각을 열 수 있습니다.
 
 편집기가 처음 열리면 다음을 확인할 수 있습니다.
 
@@ -220,7 +220,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 조각이 완료되면 Headless 애플리케이션에서 사용할 수 있도록 **게시**&#x200B;해야 합니다.
 
-게시 작업은 편집기(또는 의 도구 모음)에서 사용할 수 있습니다. **에셋** console):
+게시 작업은 편집기(또는 **Assets** 콘솔의 도구 모음)에서 사용할 수 있습니다.
 
 ![콘텐츠 조각 편집기 - 내 조각](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -265,7 +265,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
       * [콘텐츠 조각 모델 - 자산 폴더에서 콘텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * 시작 안내서
-   * [에셋 폴더 헤드리스 빠른 시작 안내서 만들기](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [Assets 폴더 헤드리스 빠른 시작 안내서 만들기](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [AEM Headless 콘텐츠 설계자 여정](/help/journey-headless/architect/overview.md)
 

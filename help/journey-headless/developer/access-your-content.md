@@ -245,7 +245,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 콘텐츠에 대한 쿼리를 시작하기 전에 다음 사항을 수행해야 합니다.
 
 * 엔드포인트 활성화
-   * 도구 > 에셋 > GraphQL 사용
+   * 도구 > Assets > GraphQL 사용
    * [GraphQL 엔드포인트 활성화하기](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * GraphiQL 액세스(필요한 경우)
@@ -272,7 +272,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 ### 쿼리를 테스트할 위치 {#where-to-test-your-queries}
 
-쿼리는 다음에 입력할 수 있습니다. [GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphiql-ide.md), 예를 들어, at:
+쿼리는 [GraphiQL 인터페이스](/help/sites-developing/headless/graphql-api/graphiql-ide.md)에 입력할 수 있습니다(예: 다음 위치).
 
 * `http://localhost:4502/aem/graphiql.html`
 

@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager Content 및 Commerce 릴리스 노트 2021
-description: 2021년 Adobe Experience Manager Content and Commerce 릴리스 노트
+description: Adobe Experience Manager Content 및 Commerce 릴리스 노트 2021.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 ## 시스템 요구 사항 개요
 
-현재 사용 중이거나 향후 사용할 계획인 CIF 버전에 대한 아래 표의 최소 시스템 요구 사항을 검토하십시오.
+현재 사용 중이거나 향후 사용할 CIF 버전에 대한 아래 표의 최소 시스템 요구 사항을 검토하십시오.
 
 | 구성 요소 | 시스템 요구 사항 |
 |:-------|:-----:|
@@ -30,7 +30,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF 추가 기능 | 2021.11.18.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
 | CIF 핵심 구성 요소 | 2.4.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
-| CIF 베니아 참조 사이트 | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
+| CIF Venia 참조 사이트 | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
 
 ### 새로운 기능 {#what-is-new-november}
 
@@ -47,7 +47,7 @@ ht-degree: 12%
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
 | CIF 추가 기능 | 2021.10.20.02 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
-| CIF 코어 구성 요소 | 2.4.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
+| CIF 핵심 구성 요소 | 2.4.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
 | CIF Venia 참조 사이트 | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
 
 ### 새로운 기능 {#what-is-new-october}
@@ -66,7 +66,7 @@ ht-degree: 12%
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
-| CIF 추가 기능 | 2021.09.27 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| CIF 추가 기능 | 2021.09.27 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
 | CIF 핵심 구성 요소 | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
 | CIF Venia 참조 사이트 | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
 
@@ -74,7 +74,7 @@ ht-degree: 12%
 
 * 사이트 편집기의 새로운 &quot;연결된 상거래 콘텐츠&quot; 탭은 현재 컨텍스트에 대한 관련 AEM 제품 콘텐츠에 빠르게 액세스하여 작성자의 효율성을 높입니다
 
-  ![연계된 상거래 콘텐츠](/help/assets/CIF/associated-commerce-content.png)
+  ![연결된 상거래 콘텐츠](/help/assets/CIF/associated-commerce-content.png)
 
 * 향상된 사용자 경험, 향상된 효율성 및 복잡한 제품 카탈로그에 대한 지원을 위해 제품 선택기 UI가 개선되었습니다
 
@@ -88,14 +88,14 @@ ht-degree: 12%
 
 * AEM CS 배포 단계 중 및 클라이언트측 구성 요소를 사용하지 않는 경우 JS 오류 발생
 
-* sling:configs 노드가 있는 폴더에서 CIF 클라우드 구성을 만들 수 없습니다.
+* sling:configs 노드가 있는 폴더에 CIF 클라우드 구성을 만들 수 없음
 
 ## 릴리스 날짜: 2021년 8월
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
 | CIF 추가 기능 | 2021.09.02 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
-| CIF 코어 구성 요소 | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
+| CIF 핵심 구성 요소 | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
 | CIF Venia 참조 사이트 | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
 
 ### 새로운 기능 {#what-is-new-august}
@@ -131,7 +131,7 @@ ht-degree: 12%
    * 향후 변경 사항에 대한 가시성을 개선하기 위해 작성 모드에서 스테이징된 제품 데이터에 대한 시각적 표시기
    * 콘텐츠 및 상거래 페이지를 위한 새 사이트맵 구성 요소
 
-* 지원 대상 [Adobe Commerce Sensei 제품 추천, Adobe Sensei 제공](https://business.adobe.com/products/magento/product-recommendations.html) 미리 정의되거나 즉석에서 생성된 권장 사항을 사용하는 AEM Storefront에서
+* 미리 정의되거나 즉석에서 생성된 권장 사항을 사용하여 AEM Storefront에서 [Adobe Sensei에서 제공하는 Adobe Commerce Sensei 제품 권장 사항](https://business.adobe.com/products/magento/product-recommendations.html)을 지원합니다.
 
 ## 릴리스 날짜: 2021년 6월
 
@@ -147,15 +147,15 @@ ht-degree: 12%
 * 새 Commerce 콘텐츠 조각 핵심 구성 요소
 * AEM 백엔드에서 전체 텍스트 상거래 검색 지원
 * Commerce 핵심 구성 요소는 Adobe Commerce Sensei Recs 데이터 수집
-* 카테고리 페이지에 대한 SEO 친화적인 URL 개선
+* 범주 페이지에 대한 SEO 친화적인 URL이 개선되었습니다
 * 사이트/구성당 사용자 지정 HTTP 헤더 지원
 
 ## 릴리스 날짜: 2021년 5월
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
-| CIF 추가 기능 | 2021.05.26 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
-| CIF 코어 구성 요소 | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
+| CIF 추가 기능 | 2021.05.26 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
+| CIF 핵심 구성 요소 | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
 | CIF Venia 참조 사이트 | 2021.05.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
 
 ### 새로운 기능 {#what-is-new-may}
@@ -172,7 +172,7 @@ ht-degree: 12%
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
-| CIF 추가 기능 | 2021.04.22 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| CIF 추가 기능 | 2021.04.22 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | CIF 핵심 구성 요소 | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia 참조 사이트 | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -210,17 +210,17 @@ ht-degree: 12%
 
 ## 릴리스 날짜: 2021년 2월
 
-| GitHub | 버전 | 자세한 릴리스 노트 |
+| GitHub | 버전 | 자세한 릴리스 정보 |
 |:-------|:-----:|---------------------:|
 | CIF 커넥터 | 1.8.0 | [릴리스 정보](https://github.com/adobe/commerce-cif-connector/releases) |
 | CIF 핵심 구성 요소 | 1.8.0 | [릴리스 정보](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF 베니아 참조 사이트 | 2021.02.24 | [릴리스 정보](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| CIF Venia 참조 사이트 | 2021.02.24 | [릴리스 정보](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### 새로운 기능 {#what-is-new-february}
 
 * 제품 경험 관리: 경험 조각을 사용하여 제품 카탈로그 페이지를 개별적으로 풍성하게 만듭니다.
 
-* 연결된 콘텐츠로 빠르게 이동하는 작업을 포함하여 연결된 에셋 및 경험 조각을 표시하도록 제품 콘솔 속성을 확장했습니다.
+* 연결된 콘텐츠로 빠르게 이동하는 작업을 포함하여 연결된 Assets 및 경험 조각을 표시하도록 제품 콘솔 속성을 확장했습니다.
 
 ### 개선 사항  {#what-is-improved-february}
 
@@ -234,11 +234,11 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF 커넥터 | 1.7.0 | [릴리스 정보](https://github.com/adobe/commerce-cif-connector/releases) |
 | CIF 핵심 구성 요소 | 1.7.0 | [릴리스 정보](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF 베니아 참조 사이트 | 2021.02.02 | [릴리스 정보](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| CIF Venia 참조 사이트 | 2021.02.02 | [릴리스 정보](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### 새로운 기능 {#what-is-new-january}
 
-* 제품 경험 관리: 에셋 및 경험 조각에 대한 새로운 &#39;Commerce&#39; 속성 탭입니다. 이 탭에서는 에셋 및 경험 조각을 제품 및 카테고리에 연결할 수 있습니다. 탭에는 연결된 상거래 개체에 대한 실시간 데이터와 제품 콘솔에 세부 정보를 표시하는 링크도 표시됩니다.
+* 제품 경험 관리: Assets 및 경험 조각에 대한 새로운 &#39;Commerce&#39; 속성 탭 이 탭에서는 Assets 및 경험 조각을 제품 및 카테고리에 연결할 수 있습니다. 탭에는 연결된 상거래 개체에 대한 실시간 데이터와 제품 콘솔에 세부 정보를 표시하는 링크도 표시됩니다.
 
 ### 개선 사항  {#what-is-improved-january}
 

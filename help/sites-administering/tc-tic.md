@@ -38,7 +38,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 * [RWS](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [알트랑](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
+* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft(Microsoft Translator가 AEM에 사전 설치되어 있음)
 
 >[!NOTE]
@@ -46,7 +46,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 >사람 번역 공급업체 및 기계 번역 공급업체의 최신 목록을 찾으려면 다음 페이지를 살펴보십시오.
 >
 >
->* [AEM 사람 번역](https://www.adobe.com/go/aem-human-translation-connectors)
+>* AEM [사람 번역](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [AEM 기계 번역](https://www.adobe.com/go/aem-machine-translation-connectors)
 >
 
@@ -70,7 +70,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 
 번역 통합 프레임워크를 구성하고 나면 이를 사용하는 [페이지와 연결](/help/sites-administering/tc-prep.md)할 수 있습니다.
 
-**참고:** AEM의 콘텐츠 번역 기능에 대한 개요를 알려면 다음을 참조하십시오. [다국어 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md).
+**참고:** AEM의 콘텐츠 번역 기능에 대한 개요는 [다국어 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md)을 참조하세요.
 
 프레임워크의 단일 구성은 페이지 콘텐츠, 커뮤니티 콘텐츠 및 에셋의 번역 방법을 제어합니다.
 ![chlimage_1-386](assets/translation-config-65.jpg)
@@ -112,11 +112,11 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
   </tr>
   <tr>
    <td>페이지 자산 번역</td>
-   <td><p>파일 시스템의 구성 요소에 추가되거나 에셋에서 참조된 에셋의 번역 방법을 선택하십시오.</p>
+   <td><p>파일 시스템의 구성 요소에 추가되거나 Assets에서 참조된 에셋의 번역 방법을 선택하십시오.</p>
     <ul>
      <li>번역하지 않음: 페이지 에셋은 번역되지 않습니다.</li>
-     <li>사이트 번역 워크플로 사용: 에셋이 사이트 탭의 구성 속성에 따라 처리됩니다.</li>
-     <li>에셋 번역 워크플로 사용: 에셋이 에셋 탭의 속성 구성에 따라 처리됩니다.</li>
+     <li>사이트 번역 워크플로 사용: Assets은 사이트 탭의 구성 속성에 따라 처리됩니다.</li>
+     <li>Assets 번역 워크플로 사용: Assets은 Assets 탭의 속성 구성에 따라 처리됩니다.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -128,13 +128,13 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 
 ### 커뮤니티 구성 속성 {#communities-configuration-properties}
 
-커뮤니티 속성은 사용자 생성 콘텐츠의 번역을 어떻게 수행할지 제어합니다. 사용자 생성 콘텐츠의 번역은 항상 기계 번역을 사용합니다. 자세한 내용은 [사용자 생성 콘텐츠 번역](/help/communities/translate-ugc.md).
+커뮤니티 속성은 사용자 생성 콘텐츠의 번역을 어떻게 수행할지 제어합니다. 사용자 생성 콘텐츠의 번역은 항상 기계 번역을 사용합니다. 자세한 내용은 [사용자 생성 콘텐츠 번역](/help/communities/translate-ugc.md)을 참조하세요.
 
 | 속성 | 설명 |
 |---|---|
 | 번역 공급업체 | 번역을 수행할 번역 공급업체를 선택합니다. 클라우드 구성이 생성되는 공급자가 목록에 나타납니다. |
 | 콘텐츠 범주 | 번역 중인 콘텐츠를 설명하는 카테고리입니다. 범주는 콘텐츠를 번역할 때 용어 및 구문 선택에 영향을 미칠 수 있습니다. |
-| 글로벌 공유 저장소로 사용할 로케일 선택 | (선택 사항) UGC를 저장할 로케일을 선택하면 모든 언어 사본의 게시물이 하나의 글로벌 대화에 표시됩니다. 규칙에 따라 로케일을 선택합니다 [기본 언어](/help/communities/sites-console.md#translation) 웹 사이트용. [일반 스토어 없음]을 선택하면 전역 번역이 비활성화됩니다. 기본적으로 글로벌 번역은 비활성화되어 있습니다. |
+| 글로벌 공유 저장소로 사용할 로케일 선택 | (선택 사항) UGC를 저장할 로케일을 선택하면 모든 언어 사본의 게시물이 하나의 글로벌 대화에 표시됩니다. 규칙에 따라 웹 사이트의 [기본 언어](/help/communities/sites-console.md#translation)에 대한 로케일을 선택하십시오. [일반 스토어 없음]을 선택하면 전역 번역이 비활성화됩니다. 기본적으로 글로벌 번역은 비활성화되어 있습니다. |
 
 ### 자산 구성 속성 {#assets-configuration-properties}
 
@@ -152,7 +152,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
     <ul>
      <li>기계 번역: 번역 제공업체가 기계 번역을 사용해 즉시 번역을 진행합니다.</li>
      <li>사람 번역: 콘텐츠를 사람이 직접 번역할 수 있도록 자동으로 번역 공급업체에 보냅니다. </li>
-     <li>번역하지 않음: 에셋을 번역하도록 보내지 않습니다.</li>
+     <li>번역하지 않음: Assets은 번역하도록 전송되지 않습니다.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -189,7 +189,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
    * 구성이 이미 있는 경우 구성 표시 를 클릭한 다음 사용 가능한 구성 옆에 나타나는 + 링크를 클릭합니다.
 
 1. 구성의 이름을 입력한 다음 [만들기]를 클릭합니다.
-1. 사이트, 커뮤니티 및 에셋 탭에서 속성을 구성한 다음 확인을 클릭합니다.
+1. 사이트, 커뮤니티 및 Assets 탭에서 속성을 구성한 다음 확인을 클릭합니다.
 
 ## 번역을 위한 페이지 구성 {#configuring-pages-for-translation}
 
@@ -204,7 +204,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 
 필요에 따라 하위 페이지에 연결을 재정의할 수 있습니다. 예를 들어 웹 사이트의 컨텐츠는 대부분 의류에 관한 것입니다. 페이지 중 한 분기가 회사에 대해 설명합니다. 사이트의 루트 페이지는 의류 범주를 사용하여 기계 번역을 지정하는 번역 통합 프레임워크와 연결됩니다. 회사를 설명하는 분기는 일반 범주를 사용하여 기계번역을 수행하는 프레임워크를 사용한다.
 
-또한 모든 커뮤니티에 대해 [SCF 구성 요소](/help/communities/scf.md) 페이지에서 사용자 생성 콘텐츠(UGC)에는 사용자가 콘텐츠를 번역할 수 있는 기능이 포함됩니다. 자세한 내용은 [사용자 생성 콘텐츠 번역](/help/communities/translate-ugc.md).
+또한 페이지의 모든 커뮤니티 [SCF 구성 요소](/help/communities/scf.md)에 대해 사용자 생성 콘텐츠(UGC)에 사용자가 콘텐츠를 번역할 수 있는 기능이 포함됩니다. 자세한 내용은 [사용자 생성 콘텐츠의 번역](/help/communities/translate-ugc.md)을 참조하십시오.
 
 ### 페이지를 번역 공급업체와 연결 {#associating-a-page-with-a-translation-provider}
 

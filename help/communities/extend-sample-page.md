@@ -25,21 +25,21 @@ ht-degree: 0%
 
 기본 Comments의 스타일 및 기능에 필요한 클라이언트 라이브러리는 확장 Comments에도 필요합니다.
 
-다음 [커뮤니티 구성 요소 안내서](/help/communities/components-guide.md) 는 필요한 클라이언트 라이브러리를 식별합니다. 구성 요소 안내서 로 이동하여 설명 구성 요소를 확인합니다. 예를 들면 다음과 같습니다.
+[커뮤니티 구성 요소 안내서](/help/communities/components-guide.md)는 필요한 클라이언트 라이브러리를 식별합니다. 구성 요소 안내서 로 이동하여 설명 구성 요소를 확인합니다. 예를 들면 다음과 같습니다.
 
 [https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
-주석이 렌더링되고 제대로 작동하는 데 필요한 세 개의 클라이언트 라이브러리를 확인합니다. 확장된 Comments를 참조하는 위치에 포함되어야 하며 [확장 주석의 클라이언트 라이브러리](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
+주석이 렌더링되고 제대로 작동하는 데 필요한 세 개의 클라이언트 라이브러리를 확인합니다. 확장된 댓글을 참조하는 곳과 [확장된 댓글의 클라이언트 라이브러리](/help/communities/extend-create-components.md#create-a-client-library-folder)( `apps.custom.comments`)에 포함되어야 합니다.
 
 ![comments-component1](assets/comments-component1.png)
 
 ### 페이지에 사용자 정의 주석 추가 {#add-custom-comments-to-a-page}
 
-페이지당 하나의 주석 시스템만 있을 수 있으므로 간단한 설명에 따라 샘플 페이지를 만드는 것이 더 쉽습니다 [샘플 페이지 만들기](/help/communities/create-sample-page.md) 튜토리얼.
+페이지당 하나의 주석 시스템만 있을 수 있으므로 간단한 [샘플 페이지 만들기](/help/communities/create-sample-page.md) 자습서에 설명된 대로 샘플 페이지를 만드는 것이 더 간단합니다.
 
-만들어지면 디자인 모드로 전환하고 사용자 지정 구성 요소 그룹을 사용하여 `Alt Comments` 페이지에 추가할 구성 요소입니다.
+만든 후에는 디자인 모드로 전환하고 사용자 지정 구성 요소 그룹을 사용하여 `Alt Comments` 구성 요소를 페이지에 추가할 수 있도록 합니다.
 
-주석이 표시되고 제대로 작동하려면 주석의 클라이언트 라이브러리를 페이지의 clientlibslist에 추가해야 합니다( 참조) [커뮤니티 구성 요소에 대한 Clientlibs](/help/communities/clientlibs.md)).
+댓글이 표시되고 제대로 작동하려면 댓글용 클라이언트 라이브러리를 페이지의 clientlibslist에 추가해야 합니다([커뮤니티 구성 요소에 대한 Clientlibs](/help/communities/clientlibs.md) 참조).
 
 #### 샘플 페이지의 설명 Clientlibs {#comments-clientlibs-on-sample-page}
 
@@ -47,21 +47,21 @@ ht-degree: 0%
 
 #### 작성자: 샘플 페이지에 대한 대체 댓글 {#author-alt-comment-on-sample-page}
 
-![alt-주석](assets/alt-comment.png)
+![alt-comment](assets/alt-comment.png)
 
 #### 작성자: 샘플 페이지 주석 노드 {#author-sample-page-comments-node}
 
-다음 위치에서 샘플 페이지에 대한 설명 노드의 속성을 보고 CRXDE에서 resourceType을 확인할 수 있습니다. `/content/sites/sample/en/jcr:content/content/primary/comments`.
+`/content/sites/sample/en/jcr:content/content/primary/comments`에 있는 샘플 페이지에 대한 설명 노드의 속성을 보고 CRXDE에서 resourceType을 확인할 수 있습니다.
 
 ![verify-comment-crxde](assets/verify-comment-crxde.png)
 
-#### 샘플 페이지 게시 {#publish-sample-page}
+#### Publish 샘플 페이지 {#publish-sample-page}
 
-사용자 지정 구성 요소가 페이지에 추가되면 (재)해야 합니다 [페이지 게시](/help/communities/sites-console.md#publishing-the-site).
+사용자 지정 구성 요소가 페이지에 추가되면 [페이지를 게시](/help/communities/sites-console.md#publishing-the-site)해야 합니다.
 
-#### 게시: 샘플 페이지의 Alt 주석 {#publish-alt-comment-on-sample-page}
+#### Publish: 샘플 페이지의 Alt 댓글 {#publish-alt-comment-on-sample-page}
 
-사용자 지정 응용 프로그램과 샘플 페이지를 모두 게시한 후 주석을 입력할 수 있습니다. 로그인할 때 다음 중 하나를 사용하여 [데모 사용자](/help/communities/tutorials.md#demo-users) 관리자 또는 댓글을 게시하는 것이 가능합니다.
+사용자 지정 응용 프로그램과 샘플 페이지를 모두 게시한 후 주석을 입력할 수 있습니다. 로그인하면 [데모 사용자](/help/communities/tutorials.md#demo-users) 또는 관리자와 함께 댓글을 게시할 수 있습니다.
 
 여기 aaron.mcdonald@mailinator.com 댓글을 게시하는 것이 있습니다.
 

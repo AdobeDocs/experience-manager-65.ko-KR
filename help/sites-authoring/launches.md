@@ -35,7 +35,7 @@ ht-degree: 81%
 * 다중 루트 분기용으로 만들 수도 있습니다. 전체 사이트용으로 론치를 만들 수는 있지만(그리고 거기에서 변경을 수행할 수는 있지만) 전체 사이트를 복사해야 하므로 터무니없는 일입니다. 수백 또는 수천 개의 페이지가 관련되어 있는 경우, 시스템 요구 사항과 성능이 복사 작업과 홍보에 필요한 향후의 비교 작업 모두에 영향을 받습니다.
 * 기존 론치에서 론치를 만들 수 있도록 중첩(론치 내 론치)할 수 있으므로, 작성자는 각 론치에 대해 동일한 변경을 여러 번 수행하지 않고 이미 수행된 변경 사항을 이용할 수 있습니다.
 
-이 섹션에서는 만들기, 편집 및 홍보 방법(필요한 경우)에 대해 설명합니다 [삭제](/help/sites-authoring/launches-creating.md#deleting-a-launch)) 사이트 콘솔 또는 [론치 콘솔](#the-launches-console):
+이 섹션에서는 사이트 콘솔 또는 [론치 콘솔](#the-launches-console)에서 론치 페이지를 만들고, 편집하고, 홍보하고, 필요한 경우 [삭제](/help/sites-authoring/launches-creating.md#deleting-a-launch)하는 방법에 대해 설명합니다.
 
 * [론치 만들기](/help/sites-authoring/launches-creating.md)
 * [론치 편집](/help/sites-authoring/launches-editing.md)
@@ -54,7 +54,7 @@ ht-degree: 81%
 
       * 소스 페이지를 여러 개의(독립된) 분기에서 가져올 수 있습니다.
 
-  ![Launch 작업 개요](assets/chlimage_1-111.png)
+  ![실행 작업 개요](assets/chlimage_1-111.png)
 
 * 론치 구성을 편집합니다.
 
@@ -89,7 +89,7 @@ ht-degree: 81%
    * 소스는 기존 론치입니다.
    * 어떤 타겟으로든 [중첩 론치를 홍보](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch)할 수 있습니다. 이 타겟은 상위 론치나 최상위 수준 소스 페이지(프로덕션)일 수 있습니다.
 
-  ![중첩 론치 개요](assets/chlimage_1-113.png)
+  ![중첩 실행 개요](assets/chlimage_1-113.png)
 
   >[!CAUTION]
   >
@@ -114,16 +114,16 @@ ht-degree: 81%
 
 * **도구** 콘솔: **도구**, **사이트**, **론치**
 
-* 또는 을 사용하여 직접 [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* 또는 직접 [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html) 사용
 
 ## 참조의 론치 (Sites 콘솔) {#launches-in-references-sites-console}
 
 1. **Sites** 콘솔에서 론치의 소스로 이동합니다.
 1. **참조** 레일을 열고 소스 페이지를 선택합니다.
-1. 선택 **론치**&#x200B;기존 론치가 나열됩니다.
+1. **시작**&#x200B;을(를) 선택하면 기존 시작 목록이 표시됩니다.
 
-   ![참조 탭 - 론치](assets/screen-shot_2019-03-05at121901-1.png)
+   ![참조 탭 - 시작](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. 적절한 론치를 클릭하면 가능한 작업 목록이 표시됩니다.
 
-   ![실행 을 선택하여 가능한 작업 표시](assets/screen-shot_2019-03-05at121952-1.png)
+   ![가능한 작업을 표시하려면 시작 선택](assets/screen-shot_2019-03-05at121952-1.png)

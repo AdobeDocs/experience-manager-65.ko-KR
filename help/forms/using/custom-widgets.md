@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # HTML5 양식에서 사용자 정의 표시 만들기{#create-custom-appearances-in-html-forms}
 
-모바일 Forms에 사용자 정의 위젯을 연결할 수 있습니다. 기존 jQuery 위젯을 확장하거나 모양새 프레임워크를 사용하여 사용자 정의 위젯을 개발할 수 있습니다. XFA 엔진은 다양한 위젯을 사용합니다. 참조 [적응형 및 HTML5 양식용 외관 프레임워크](/help/forms/using/introduction-widgets.md) 을 참조하십시오.
+모바일 Forms에 사용자 정의 위젯을 연결할 수 있습니다. 기존 jQuery 위젯을 확장하거나 모양새 프레임워크를 사용하여 사용자 정의 위젯을 개발할 수 있습니다. XFA 엔진은 다양한 위젯을 사용합니다. 자세한 내용은 [적응형 및 HTML5 양식에 대한 모양 프레임워크](/help/forms/using/introduction-widgets.md)를 참조하십시오.
 
-![기본 및 사용자 정의 위젯의 예](assets/custom-widgets.jpg)
+![기본 및 사용자 지정 위젯의 예](assets/custom-widgets.jpg)
 
 기본 및 사용자 정의 위젯의 예
 
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 ### 프로필 만들기  {#create-a-profile-nbsp}
 
-프로필을 만들거나 기존 프로필을 선택하여 사용자 지정 위젯을 추가할 수 있습니다. 프로필 만들기에 대한 자세한 내용은 [사용자 지정 프로필 만들기](/help/forms/using/custom-profile.md).
+프로필을 만들거나 기존 프로필을 선택하여 사용자 지정 위젯을 추가할 수 있습니다. 프로필 만들기에 대한 자세한 내용은 [사용자 지정 프로필 만들기](/help/forms/using/custom-profile.md)를 참조하십시오.
 
 ### 위젯 만들기 {#create-a-widget}
 
-HTML5 양식은 새 위젯을 만들기 위해 확장할 수 있는 위젯 프레임워크의 구현을 제공합니다. 구현은 jQuery 위젯입니다 *abstract위젯* 를 확장하여 새 위젯을 작성할 수 있습니다. 새로운 위젯은 아래에 언급된 기능들을 확장/재정의해야만 기능할 수 있다.
+HTML5 양식은 새 위젯을 만들기 위해 확장할 수 있는 위젯 프레임워크의 구현을 제공합니다. 구현은 새 위젯을 작성하기 위해 확장할 수 있는 jQuery 위젯 *abstractWidget*&#x200B;입니다. 새로운 위젯은 아래에 언급된 기능들을 확장/재정의해야만 기능할 수 있다.
 
 <table>
  <tbody>
@@ -43,11 +43,11 @@ HTML5 양식은 새 위젯을 만들기 위해 확장할 수 있는 위젯 프�
   </tr>
   <tr>
    <td>렌더링</td>
-   <td>렌더링 함수는 위젯의 기본 HTML 요소에 대한 jQuery 개체를 반환합니다. 기본 HTML 요소는 집중 가능한 유형이어야 합니다. 예를 들어, &lt;a&gt;, &lt;input&gt;, 및 &lt;li&gt;. 반환된 요소가 $userControl로 사용됩니다. $userControl이 위의 제약 조건을 지정하면 AbstractWidget 클래스의 함수가 예상대로 작동하고 그렇지 않으면 일부 일반 API(포커스, 클릭)를 변경해야 합니다. </td>
+   <td>렌더링 함수는 위젯의 기본 HTML 요소에 대한 jQuery 개체를 반환합니다. 기본 HTML 요소는 집중 가능한 유형이어야 합니다. 예: &lt;a&gt;, &lt;input&gt; 및 &lt;li&gt;. 반환된 요소가 $userControl로 사용됩니다. $userControl이 위의 제약 조건을 지정하면 AbstractWidget 클래스의 함수가 예상대로 작동하고 그렇지 않으면 일부 일반 API(포커스, 클릭)를 변경해야 합니다. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>HTML 이벤트를 XFA 이벤트로 변환하는 맵을 반환합니다. <br /> {<br /> 블러: XFA_EXIT_EVENT,<br /> }<br /> 이 예는 흐림이 HTML 이벤트이고 XFA_EXIT_EVENT가 해당 XFA 이벤트임을 보여 줍니다. </td>
+   <td>HTML 이벤트를 XFA 이벤트로 변환하는 맵을 반환합니다. <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> 이 예제는 흐림이 HTML 이벤트이고 XFA_EXIT_EVENT가 해당 XFA 이벤트임을 보여 줍니다. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -68,7 +68,7 @@ HTML5 양식은 새 위젯을 만들기 위해 확장할 수 있는 위젯 프�
  </tbody>
 </table>
 
-나만의 위젯을 만들려면 위에서 만든 프로필에 재정의된 함수와 새로 추가된 함수가 포함된 JavaScript 파일의 참조를 포함합니다. 예를 들어 *sliderNumericField위젯* 숫자 필드에 대한 위젯입니다. 헤더 섹션의 프로필에서 위젯을 사용하려면 다음 줄을 포함하십시오.
+나만의 위젯을 만들려면 위에서 만든 프로필에 재정의된 함수와 새로 추가된 함수가 포함된 JavaScript 파일의 참조를 포함합니다. 예를 들어 *sliderNumericFieldWidget*&#x200B;은 숫자 필드에 대한 위젯입니다. 헤더 섹션의 프로필에서 위젯을 사용하려면 다음 줄을 포함하십시오.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -76,7 +76,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### XFA 스크립팅 엔진을 사용하여 사용자 정의 위젯 등록  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-사용자 정의 위젯 코드가 준비되면 다음을 사용하여 스크립팅 엔진에 위젯을 등록합니다. `registerConfig`용 API [양식 브리지](/help/forms/using/form-bridge-apis.md). widgetConfigObject를 입력으로 사용합니다.
+사용자 지정 위젯 코드가 준비되면 [Form Bridge](/help/forms/using/form-bridge-apis.md)용 `registerConfig`API를 사용하여 스크립팅 엔진에 위젯을 등록합니다. widgetConfigObject를 입력으로 사용합니다.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

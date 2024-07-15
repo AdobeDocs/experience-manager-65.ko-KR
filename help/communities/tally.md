@@ -22,15 +22,15 @@ Tally는 특정 제품과 서비스를 어떻게 중시하는지에 대한 구�
 
 추상 tally 클래스를 확장하여 사용자 지정 tally 구성 요소를 만들 수 있습니다.
 
-[좋아요](essentials-liking.md) 단순한 형태의 긍정적인 의견을 표명하는 tally의 구현이다.
+[좋아요](essentials-liking.md)는 긍정적인 의견을 표현하는 간단한 형식의 집계 구현입니다.
 
-[투표](essentials-voting.md) 긍정적인 혹은 부정적인 의견을 표현하는 단순한 형태의 tally의 구현이다.
+[투표](essentials-voting.md)는 긍정적 또는 부정적 의견을 표현하는 간단한 형식의 집계를 구현한 것입니다.
 
-[등급](rating-basics.md) 긍정에서 부정으로 의견의 범위를 표현하기 위해 별표를 사용하는 tally의 구현이다.
+[등급](rating-basics.md)은(는) 긍정적인 의견부터 부정적인 의견까지 다양한 의견을 표현하는 데 별표를 사용하는 집계의 구현입니다.
 
 AEM 6.1부터는 폴링 구성 요소를 더 이상 사용할 수 없습니다.
 
-[리뷰](reviews-basics.md) 는 의 하이브리드인 SCF 구성 요소입니다 [댓글](essentials-comments.md) 및 [등급](rating-basics.md).
+[리뷰](reviews-basics.md)은(는) [댓글](essentials-comments.md)과(와) [평점](rating-basics.md)의 하이브리드인 SCF 구성 요소입니다.
 
 ## 클라이언트측 핵심 사항 {#essentials-for-client-side}
 
@@ -47,15 +47,15 @@ AEM 6.1부터는 폴링 구성 요소를 더 이상 사용할 수 없습니다.
 ### 게시한 집계 액세스(UGC) {#accessing-posted-tallies-ugc}
 
 UGC는 중재에 대한 표준 방법 중 하나를 사용하여 중재되어야 합니다.
-다음을 참조하십시오 [사용자 생성 컨텐츠 중재](moderate-ugc.md).
+[사용자 생성 콘텐츠 중재](moderate-ugc.md)를 참조하십시오.
 
-AEM 6.1 커뮤니티에서 [공동 저장소](working-with-srp.md) ugc의 경우 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 관계없이 UGC에 프로그래밍 방식으로 액세스하는 기능이 포함됩니다.
+AEM 6.1 커뮤니티에서 UGC에 대한 [일반 저장소](working-with-srp.md)를 사용하면 선택한 저장소 옵션(예: ASRP, MSRP 또는 JSRP)에 관계없이 UGC에 프로그래밍 방식으로 액세스할 수 있습니다.
 
 **저장소에서 UGC의 위치 및 형식은 경고 없이 변경될 수 있습니다**.
 
 다음을 참조하십시오.
 
 * [저장소 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요.
-* [SRP 및 UGC 필수 패키지](srp-and-ugc.md) - SRP 유틸리티 메서드 및 예제.
-* [SRP를 사용하여 UGC에 액세스](accessing-ugc-with-srp.md) - 코딩 지침
+* [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 메서드 및 예제.
+* [SRP를 사용하여 UGC에 액세스](accessing-ugc-with-srp.md) - 코딩 지침.
 * [SocialUtils 리팩터링](socialutils.md) - 더 이상 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑합니다.

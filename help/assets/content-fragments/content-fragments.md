@@ -14,7 +14,7 @@ ht-degree: 71%
 
 # 콘텐츠 조각을 사용하여 작업 {#working-with-content-fragments}
 
-Adobe Experience Manager(AEM)을 사용하면 콘텐츠 조각을 사용하여 디자인하고 만들고 선별하고 [페이지에 영향을 받지 않는 콘텐츠 게시](/help/sites-authoring/content-fragments.md). 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다.
+Adobe Experience Manager(AEM)를 사용하면 콘텐츠 조각을 사용하여 페이지 독립적인 콘텐츠를 디자인하고 만들고 선별하고 [게시할 수 있습니다](/help/sites-authoring/content-fragments.md). 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다.
 
 콘텐츠 조각에는 구조화된 콘텐츠가 포함되어 있습니다.
 
@@ -39,12 +39,12 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 * [인스턴스에 대해 콘텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) - 모델 활성화, 생성 및 정의
-* [컨텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md) - 콘텐츠 조각을 만든 다음 편집, 게시 및 참조
+* [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md) - 콘텐츠 조각을 만든 다음 편집, 게시 및 참조
 * [변형 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md) - 조각 콘텐츠를 작성 및 마스터의 변형 만들기
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - 조각에 Markdown 구문 사용
 * [관련 콘텐츠 사용](/help/assets/content-fragments/content-fragments-assoc-content.md) - 관련 콘텐츠 추가
 * [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md) - 조각 속성 보기 및 편집
-* 사용 [컨텐츠 조각과 GraphQL, 컨텐츠 전달](/help/assets/content-fragments/content-fragments-graphql.md) 애플리케이션에 사용할 수 있습니다. 이를 위해 다음을 미리 볼 수 있습니다. [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [콘텐츠 조각 및 GraphQL을 사용하여 응용 프로그램에서 사용할 콘텐츠를 전달](/help/assets/content-fragments/content-fragments-graphql.md)합니다. 이를 위해 [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md)을 미리 볼 수 있습니다.
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >**콘텐츠 조각** 및 **[경험 조각](/help/sites-authoring/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
 >
->* **컨텐츠 조각** 는 텍스트, 숫자 및 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있는 에디토리얼 콘텐츠입니다. 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃을 포함하지 않는 순수 콘텐츠입니다.
+>* **콘텐츠 조각**&#x200B;은(는) 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있는 에디토리얼 콘텐츠입니다. 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃을 포함하지 않는 순수 콘텐츠입니다.
 >
 >* **경험 조각**&#x200B;은 전체적으로 배치된 콘텐츠, 즉 웹 페이지 조각입니다.
 >
@@ -131,7 +131,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
    * 컨텐츠 조각(및 그 변형)은 **자산** 콘솔에서 만들고 유지 관리할 수 있습니다.
    * 컨텐츠 조각 편집기에서 작성 및 편집됩니다.
 
-* 에 사용됨 [콘텐츠 조각 구성 요소를 사용한 페이지 편집기](/help/sites-authoring/content-fragments.md) (참조 구성 요소):
+* [페이지 편집기에서 콘텐츠 조각 구성 요소](/help/sites-authoring/content-fragments.md)(참조 구성 요소)와 함께 사용됩니다.
 
    * **콘텐츠 조각** 구성 요소는 페이지 작성자가 사용할 수 있습니다. 따라서 페이지 작성자가 HTML 또는 JSON 형식으로 필요한 콘텐츠 조각을 참조하고 게재할 수 있습니다.
 
@@ -140,7 +140,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 콘텐츠 조각은 다음과 같은 콘텐츠 구조입니다.
 
 * 레이아웃이나 디자인이 없습니다(일부 텍스트 서식은 리치 텍스트 모드에서 가능).
-* 하나 이상 있음 [구성 부분](#constituent-parts-of-a-content-fragment).
+* 하나 이상의 [구성 부분](#constituent-parts-of-a-content-fragment)이 있습니다.
 * [이미지를 포함하거나 이미지에 연결](#fragments-with-visual-assets)할 수 있습니다.
 * 페이지에서 참조할 때 [중간적인 콘텐츠](#in-between-content-when-page-authoring-with-content-fragments)를 사용할 수 있습니다.
 * 게재 메커니즘(예: 페이지, 채널)에 독립적입니다.
@@ -149,11 +149,11 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 작성자가 콘텐츠를 더 잘 제어할 수 있도록 이미지를 콘텐츠 조각에 추가하거나 콘텐츠 조각과 통합할 수 있습니다.
 
-자산은 각각 고유한 장점이 있는 여러 가지 방법으로 컨텐츠 조각에 사용할 수 있습니다.
+Assets은 각각 고유한 장점이 있는 여러 가지 방법으로 컨텐츠 조각에 사용할 수 있습니다.
 
 * 조각에 **자산 삽입**(혼합 미디어 조각)
 
-   * 조각의 일부입니다( 참조) [컨텐츠 조각의 구성 성분 부분](#constituent-parts-of-a-content-fragment)).
+   * 조각의 일부입니다([콘텐츠 조각의 구성 성분 부분](#constituent-parts-of-a-content-fragment) 참조).
    * 자산의 위치를 정의합니다.
    * 자세한 내용은 조각 편집기에서 [조각에 자산 삽입](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)을 참조하십시오.
 
@@ -201,7 +201,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
    * 조각의 단락 시스템에 임베드됩니다.
    * [페이지에서 조각을 사용/참조](/help/sites-authoring/content-fragments.md)할 때 형식을 지정할 수 있습니다.
    * 조각 편집기를 사용해야 조각에 추가, 조각에서 삭제 또는 조각 내에서 이동할 수 있습니다. 페이지 편집기에서는 이러한 작업을 수행할 수 없습니다.
-   * 를 사용해야만 조각에 추가, 조각에서 삭제 또는 조각 내에서 이동할 수 있습니다. [조각 편집기의 리치 텍스트 형식](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+   * 조각 편집기에서 [리치 텍스트 형식](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)을 사용해야만 조각에 추가, 조각에서 삭제 또는 조각 내에서 이동할 수 있습니다.
    * 여러 줄 텍스트 요소(임의의 조각 유형)에만 추가할 수 있습니다.
    * 선행하는 텍스트(단락)에 첨부됩니다.
 
@@ -251,7 +251,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 * **변형**
 
    * 에디토리얼 목적에 맞는 조각 텍스트의 표현물은 채널과 관련을 지을 수 있지만, 의무적이지는 않으며, 임시적 로컬 수정용일 수도 있습니다.
-   * 의 사본으로 생성 **기본**, 그러나 필요에 따라 편집할 수 있습니다. 변형 간에 컨텐츠가 겹치게 됩니다.
+   * **기본**&#x200B;의 사본으로 만들어지지만 필요에 따라 편집할 수 있습니다. 변형 간에 콘텐츠가 겹치게 됩니다.
    * 조각 작성 중에 정의할 수 있습니다.
    * 조각 내에 저장되므로 콘텐츠 사본 살포를 방지할 수 있습니다.
    * 마스터 콘텐츠가 업데이트된 경우 변형을 마스터와 [동기화](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master)할 수 있습니다.
@@ -263,7 +263,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 중간 콘텐츠는
 
 * 콘텐츠 조각을 사용하여 작업할 때 페이지 편집기에서 사용할 수 있습니다.
-* 다음과 같음 [조각 플로우 내에 추가된 추가 콘텐츠](/help/sites-authoring/content-fragments.md#adding-in-between-content) 페이지에서 사용하거나 참조한 적이 있습니다.
+* 페이지에서 조각을 사용하거나 참조한 후 [조각의 흐름 내에 추가된 ](/help/sites-authoring/content-fragments.md#adding-in-between-content)입니다.
 * [콘텐츠 조각을 사용하여 작업할 때 페이지 편집기](/help/sites-authoring/content-fragments.md)에서 사용할 수 있습니다.
 * 중간적 콘텐츠는 어떤 조각에든 추가할 수 있으며, 이 경우 요소는 하나만 표시됩니다.
 * 연결된 콘텐츠는 적절한 브라우저에서 자산 및/또는 구성 요소처럼 사용할 수 있습니다.

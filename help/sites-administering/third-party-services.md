@@ -32,13 +32,13 @@ AEM을 사용하면 다음과 같은 Adobe 이외 제품과 즉시 통합할 수
 * YouTube - 비디오 공유
 <!-- * Silverpop Engage - marketing automation, email, mobile, and social NO LONGER EXISTS; ITS REPLACEMENT IS UNKNOWN -->
 
-또한 AEM을 [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+또한 AEM을 [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)와 통합할 수 있습니다.
 
 ## Salesforce와 통합 {#integrating-with-salesforce}
 
 Salesforce.com은 소셜 기업으로의 전환을 선도하는 기업 클라우드 컴퓨팅 회사입니다.
 
-AEM 사이트와 Salesforce 통합에 대한 자세한 내용은 [Salesforce와 통합](/help/sites-administering/salesforce.md).
+AEM 사이트와 Salesforce 통합에 대한 자세한 내용은 [Salesforce와 통합](/help/sites-administering/salesforce.md)을 참조하십시오.
 
 <!-- THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
 ## Integrating with Silverpop Engage {#integrating-with-silverpop-engage}
@@ -55,14 +55,14 @@ For information about integrating your AEM site and ExactTarget, see [Integratin
 
 ExactTarget의 이메일 마케팅 솔루션은 모든 크기의 조직이 타겟 집중력이 높고 완전히 통합되었으며 매우 중요한 이메일 캠페인을 디자인하고 제공할 수 있도록 해줍니다.
 
-AEM 사이트와 ExactTarget 통합에 대한 자세한 내용은 [ExactTarget 구성](/help/sites-administering/exacttarget.md).
+AEM 사이트와 ExactTarget 통합에 대한 자세한 내용은 [ExactTarget 구성](/help/sites-administering/exacttarget.md)을 참조하십시오.
 
 ## facebook 및 Twitter과 통합 {#integrating-with-facebook-and-twitter}
 
-Facebook과 Twitter은 인기 있는 소셜 네트워킹 서비스입니다. Facebook 및 Twitter과 AEM을 통합하면 조직은 소유한 디지털 속성에 Facebook 또는 Twitter 로그인 옵션을 제공한 다음 프로필 정보를 기반으로 사용자 경험을 개인화할 수 있습니다. 마케터는 프로필 정보를 고객 관계 관리 시스템 또는 웹 사이트 프로필과 같은 추가 소스의 데이터와 결합하여 고객에 대한 통합 보기를 만들 수도 있습니다.
+Facebook과 Twitter은 인기 있는 소셜 네트워킹 서비스입니다. AEM은 Facebook 및 Twitter과 통합되므로 조직은 소유한 디지털 속성에 Facebook 또는 Twitter 로그인 옵션을 제공한 다음 프로필 정보를 기반으로 사용자 경험을 개인화할 수 있습니다. 마케터는 프로필 정보를 고객 관계 관리 시스템 또는 웹 사이트 프로필과 같은 추가 소스의 데이터와 결합하여 고객에 대한 통합 보기를 만들 수도 있습니다.
 
-다음을 참조하십시오 [소셜 로그인](/help/communities/social-login.md) 추가 정보.
+자세한 내용은 [소셜 로그인](/help/communities/social-login.md)을 참조하세요.
 
 ## 다른 공급자와 통합 {#integrating-with-other-providers}
 
-AEM을 사용하면 을 사용하여 다른 외부 공급자에 연결할 수 있습니다. [범용 Analytics 코드 조각.](/help/sites-administering/external-providers.md)
+AEM을 사용하면 [일반 Analytics 코드 조각](/help/sites-administering/external-providers.md)을 사용하여 다른 외부 공급자에 연결할 수 있습니다.

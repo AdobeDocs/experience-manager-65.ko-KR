@@ -18,13 +18,13 @@ ht-degree: 6%
 
 # 렌더링용 구성 요소를 구성하는 콘텐츠 조각{#content-fragments-configuring-components-for-rendering}
 
-몇 개 있습니다 [고급 서비스](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) 콘텐츠 조각 렌더링과 관련이 있습니다. 이러한 서비스를 사용하려면 이러한 구성 요소의 리소스 유형을 콘텐츠 조각 프레임워크에 알려야 합니다.
+콘텐츠 조각 렌더링과 관련된 [고급 서비스](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration)가 몇 개 있습니다. 이러한 서비스를 사용하려면 이러한 구성 요소의 리소스 유형을 콘텐츠 조각 프레임워크에 알려야 합니다.
 
-이 작업은 다음을 구성하여 수행합니다 [OSGi 서비스 - 콘텐츠 조각 구성 요소 구성](#osgi-service-content-fragment-component-configuration).
+이 작업은 [OSGi 서비스 - 콘텐츠 조각 구성 요소 구성](#osgi-service-content-fragment-component-configuration)을(를) 구성하여 수행됩니다.
 
 >[!CAUTION]
 >
->필요하지 않은 경우 [고급 서비스](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) 아래에 설명되어 있으므로 이 구성을 무시할 수 있습니다.
+>아래에 설명된 [고급 서비스](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration)가 필요하지 않은 경우 이 구성을 무시할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -42,22 +42,22 @@ ht-degree: 6%
 
 * 게시 도중 종속성을 올바르게 결정(즉, 조각 및 모델이 마지막 게시 이후 변경된 경우 페이지와 함께 자동으로 게시될 수 있는지 확인).
 * 전체 텍스트 검색에서 컨텐츠 조각 지원.
-* 의 관리/처리 *중간 콘텐츠.*
-* 의 관리/처리 *혼합 미디어 에셋.*
-* 참조된 조각에 대한 Dispatcher 플러시(조각이 포함된 페이지가 다시 게시되는 경우).
+* 중간 콘텐츠 *의 관리/처리입니다.*
+* *혼합 미디어 자산의 관리/처리.*
+* 참조된 조각에 대한 Dispatcher 플러시(조각이 포함된 페이지를 다시 게시하는 경우).
 * 단락 기반 렌더링 사용.
 
 이러한 기능 중 하나 이상이 필요한 경우 (일반적으로) 처음부터 개발하는 대신 기본 기능을 사용하는 것이 더 쉽습니다.
 
 ## OSGi 서비스 - 콘텐츠 조각 구성 요소 구성 {#osgi-service-content-fragment-component-configuration}
 
-구성은 OSGi 서비스에 바인딩되어야 합니다. **콘텐츠 조각 구성 요소 구성**:
+구성은 OSGi 서비스 **콘텐츠 조각 구성 요소 구성**&#x200B;에 바인딩되어야 합니다.
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->다음을 참조하십시오 [OSGi 구성](/help/sites-deploying/configuring-osgi.md) 을 참조하십시오.
+>자세한 내용은 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 참조하십시오.
 
 예:
 
@@ -75,12 +75,12 @@ OSGi 구성은 다음과 같습니다.
   <tr>
    <td><strong>리소스 유형</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>등록할 리소스 유형(예: ) <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>등록할 리소스 유형(예: <br />) <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>참조 속성</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>조각에 대한 참조가 포함된 속성의 이름입니다(예: ). <code>fragmentPath</code> 또는 <code>fileReference</code></td>
+   <td>조각에 대한 참조가 포함된 속성의 이름입니다(예: <code>fragmentPath</code> 또는 <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>요소 속성</strong></td>
@@ -105,15 +105,15 @@ OSGi 구성은 다음과 같습니다.
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>다음과 같은 경우 출력할 단락 범위를 정의하는 문자열 속성입니다. <em>단일 요소 렌더링 모드</em>.</p> <p>형식:</p>
+   <td><p><em>단일 요소 렌더링 모드</em>인 경우 출력할 단락의 범위를 정의하는 문자열 속성입니다.</p> <p>형식:</p>
     <ul>
      <li><code>1</code> 또는 <code>1-3</code> 또는 <code>1-3;6;7-8</code> 또는 <code>*-3;5-*</code></li>
-     <li>다음과 같은 경우에만 평가됨 <code>paragraphScope</code> 이(가) (으)로 설정됨 <code>range</code></li>
+     <li><code>paragraphScope</code>이(가) 다음으로 설정된 경우에만 평가됨 <code>range</code></li>
     </ul> </td>
   </tr>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>다음과 같은 경우 단락이 출력되는 방법을 정의하는 문자열 속성 <em>단일 요소 렌더링 모드</em>.</p> <p>값:</p>
+   <td><p><em>단일 요소 렌더링 모드</em>인 경우 단락이 출력되는 방법을 정의하는 문자열 속성입니다.</p> <p>값:</p>
     <ul>
      <li><code>all</code> : 모든 단락을 렌더링합니다</li>
      <li><code>range</code> : 제공된 단락의 범위를 렌더링합니다. <code>paragraphRange</code></li>
@@ -121,7 +121,7 @@ OSGi 구성은 다음과 같습니다.
   </tr>
   <tr>
    <td><code>paragraphHeadings</code></td>
-   <td>머리글의 정의(예: <code>h1</code>, <code>h2</code>, <code>h3</code>)는 단락( )으로 계산됩니다<code>true</code>) 여부를 불문한다(<code>false</code>)</td>
+   <td>머리글(예: <code>h1</code>, <code>h2</code>, <code>h3</code>)이 단락(<code>true</code>) 또는 단락(<code>false</code>)으로 계산되는지 여부를 정의하는 부울 속성</td>
   </tr>
  </tbody>
 </table>

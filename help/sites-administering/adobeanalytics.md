@@ -45,7 +45,7 @@ Adobe Analytics과 AEM을 통합하여 웹 페이지 활동을 추적할 수 있
 * [Adobe Analytics에 대한 비디오 추적 구성](/help/sites-administering/adobeanalytics-video.md)
 * [Adobe 분류](/help/sites-administering/adobeanalytics-classifications.md)
 
-다음을 사용할 수도 있습니다 [옵트인 마법사](/help/sites-administering/opt-in.md) 통합을 쉽게 수행할 수 있습니다.
+[옵트인 마법사](/help/sites-administering/opt-in.md)를 사용하여 쉽게 통합을 수행할 수도 있습니다.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Adobe Analytics과 AEM을 통합하여 웹 페이지 활동을 추적할 수 있
 
 다음을 참조하십시오.
 
-* [Adobe Analytics 통합 확장](/help/sites-developing/extending-analytics.md) 사용자 데이터를 수집하는 구성 요소를 개발하고 Adobe Analytics 프레임워크를 사용자 지정하는 방법에 대한 정보입니다.
+* 사용자 데이터를 수집하는 구성 요소 개발 및 Adobe Analytics 프레임워크 사용자 지정에 대한 자세한 내용은 [Adobe Analytics 통합 확장](/help/sites-developing/extending-analytics.md)을 참조하십시오.
 * 지식 기반 문서인 [Adobe Analytics 통합 - 문제 해결](https://helpx.adobe.com/kr/experience-manager/kb/sitecatalystintegrationtroubleshooting.html)을 참조하여 Adobe Analytics 통합 관련 문제를 해결하는 방법에 대해 알아보십시오.
 
 >[!NOTE]

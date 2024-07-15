@@ -21,15 +21,15 @@ ht-degree: 0%
 
 작업 세부 정보 페이지에 다음 정보를 추가할 수 있습니다.
 
-* 작업의 JSON 개체에서 사용할 수 있는 정보(의 작업 섹션) [AEM Forms 작업 영역 JSON 개체 설명](/help/forms/using/html-workspace-json-object-description.md))
-* 프로세스 인스턴스의 JSON 개체에서 사용할 수 있는 정보(의 프로세스 인스턴스 섹션) [AEM Forms 작업 영역 JSON 개체 설명](/help/forms/using/html-workspace-json-object-description.md))
+* 작업의 JSON 개체에서 사용할 수 있는 정보([AEM Forms 작업 영역 JSON 개체 설명](/help/forms/using/html-workspace-json-object-description.md)의 작업 섹션)
+* 프로세스 인스턴스의 JSON 개체에서 사용할 수 있는 정보([AEM Forms 작업 영역 JSON 개체 설명](/help/forms/using/html-workspace-json-object-description.md)의 프로세스 인스턴스 섹션)
 
 작업 세부 정보 페이지를 사용자 정의하려면 다음과 같이 하십시오.
 
-1. 팔로우 [AEM Forms 작업 영역 사용자 정의에 대한 일반 단계입니다.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. 추가 정보를 표시하려면 해당 키-값 쌍을 `translation.json` 파일 위치: `todo`블록 > `details`블록 > `app`블록 > [`required`차단].
+1. [AEM Forms 작업 영역 사용자 지정에 대한 일반 단계를 따르십시오.](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. 추가 정보를 표시하려면 `todo`블록 > `details`블록 > `app`블록 > [`required`블록]에서 해당 키-값 쌍을 `translation.json` 파일에 추가하십시오.
 
-   다음 [`required`차단] 은 작업 정보의 작업 블록, 프로세스 정보의 프로세스 블록, 보류 중인 작업 정보의 currentpendingtask 블록 등 사용 가능한 블록을 나타냅니다.
+   [`required`block]은(는) 작업 정보에 대한 작업 블록, 프로세스 정보에 대한 프로세스 블록, 보류 중인 작업 정보에 대한 currentpendingtask 블록 등 사용 가능한 블록을 나타냅니다.
 
    예를 들어, 작업 세부 정보 페이지에서 경로 선택 필요 정보를 추가하려면 작업 블록에 다음 키-값 쌍을 추가할 수 있습니다.
 
@@ -54,9 +54,9 @@ ht-degree: 0%
    >
    >지원되는 모든 언어에 해당하는 키-값 쌍을 추가합니다.
 
-1. 복사 `/libs/ws/js/runtime/templates/taskdetails.html` 끝 `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. `/libs/ws/js/runtime/templates/taskdetails.html`을(를) `/apps/ws/js/runtime/templates/taskdetails.html`에 복사합니다.
 
-   새 정보 추가 `/apps/ws/js/runtime/templates/taskdetails.html`. 예:
+   `/apps/ws/js/runtime/templates/taskdetails.html`에 새 정보를 추가합니다. 예:
 
    ```css
    <div class="detailsContainer">
@@ -79,10 +79,10 @@ ht-degree: 0%
 
 1. 편집하려면 /apps/ws/js/registry.js을 여십시오.
 
-   검색 및 바꾸기 `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` 포함 `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
+   `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`을(를) 검색하여 `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`(으)로 바꾸십시오.
 
 >[!NOTE]
 >
->에서 생성된 작업으로 작업 세부 정보 페이지를 사용자 정의하려면 **프로세스 시작** AEM Forms 작업 영역의 탭에서 새 정보를 추가할 위치: `/apps/ws/js/runtime/templates/startprocess.html`.
+>AEM Forms 작업 영역의 **프로세스 시작** 탭에서 만든 작업으로 작업 세부 정보 페이지를 사용자 지정하려면 `/apps/ws/js/runtime/templates/startprocess.html`에 새 정보를 추가하십시오.
 >
->세부 정보 페이지에 추가된 정보에 대한 새 스타일을 추가하려면 다음을 사용하여 CSS 파일을 수정합니다. *사용자 인터페이스 변경 사항* 의 섹션 [작업 영역 사용자 지정](changing-locale-user-interface.md).
+>세부 정보 페이지에 추가된 정보에 새 스타일을 추가하려면 [Workspace 사용자 지정](changing-locale-user-interface.md)의 *사용자 인터페이스 변경* 섹션을 사용하여 CSS 파일을 수정하십시오.

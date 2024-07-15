@@ -26,15 +26,15 @@ ht-degree: 3%
 
 다음 작업을 수행합니다.
 
-1. 시스템 구성 유틸리티에 액세스하려면 **[!UICONTROL 시작 > 실행]** 입력한 다음 **[!UICONTROL MSCONFIG]**.
-1. 다음을 클릭합니다. **[!UICONTROL 도구]** 탭을 누르고 아래로 스크롤한 다음 선택 **[!UICONTROL UAC 설정 변경]**. 클릭 **[!UICONTROL 시작]** 새 창에서 명령을 실행할 수 있습니다.
+1. 시스템 구성 유틸리티에 액세스하려면 **[!UICONTROL 시작 > 실행]**(으)로 이동한 다음 **[!UICONTROL MSCONFIG]**&#x200B;를 입력하십시오.
+1. **[!UICONTROL 도구]** 탭을 클릭하고 아래로 스크롤한 다음 **[!UICONTROL UAC 설정 변경]**&#x200B;을 선택합니다. 새 창에서 명령을 실행할 수 있도록 **[!UICONTROL 시작]**&#x200B;을 클릭합니다.
 1. 슬라이더를 알림 안 함 레벨로 조정합니다. 완료되면 명령 창을 닫고 시스템 구성 창을 닫습니다.
 1. UAC에 대한 레지스트리 설정이 0으로 설정되어 있는지 확인하십시오. 다음 단계를 수행하여 확인합니다.
 
-   1. Microsoft®는 레지스트리를 수정하기 전에 백업하는 것을 권장합니다. 자세한 단계는 를 참조하십시오. [Windows에서 레지스트리를 백업 및 복원하는 방법](https://support.microsoft.com/en-us/help/322756).
+   1. Microsoft®는 레지스트리를 수정하기 전에 백업하는 것을 권장합니다. 자세한 단계는 [Windows에서 레지스트리를 백업 및 복원하는 방법](https://support.microsoft.com/en-us/help/322756)을 참조하십시오.
    1. Microsoft® Windows 레지스트리 편집기를 엽니다. 레지스트리 편집기를 열려면 시작 > 실행으로 이동하고 regedit 를 입력한 다음 확인 을 클릭합니다.
-   1. 다음으로 이동 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. EnableLUA 값이 0(영)으로 설정되어 있는지 확인합니다.
-   1. 값 확인 **EnableLUA** 0으로 설정되어 있습니다. 값이 0이 아니면 값을 0으로 변경합니다. 레지스트리 편집기를 닫습니다.
+   1. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`(으)로 이동합니다. EnableLUA 값이 0(영)으로 설정되어 있는지 확인합니다.
+   1. **EnableLUA** 값이 0으로 설정되어 있는지 확인하십시오. 값이 0이 아니면 값을 0으로 변경합니다. 레지스트리 편집기를 닫습니다.
 
 1. 컴퓨터를 다시 시작합니다.
 

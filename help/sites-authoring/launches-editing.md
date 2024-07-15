@@ -35,10 +35,10 @@ ht-degree: 75%
 
 ### Live Copy에 따른 론치 페이지 편집 {#editing-launch-pages-subject-to-a-live-copy}
 
-론치를 기반으로 하는 경우 [live copy](/help/sites-administering/msm.md) 그러면 다음을 수행합니다.
+론치가 [Live Copy](/help/sites-administering/msm.md)을(를) 기반으로 하는 경우 다음 작업을 수행할 수 있습니다.
 
 * 구성 요소(콘텐츠 및/또는 속성)를 편집할 때 자물쇠 기호(작은 자물쇠)가 표시됩니다.
-* 다음 참조: **Live Copy** 의 탭 **페이지 속성**
+* **페이지 속성**&#x200B;에서 **Live Copy** 탭 보기
 
 Live Copy는 *소스 분기에서* *론치 분기로* 콘텐츠를 동기화하여 소스에 적용된 변경 내용으로 론치를 최신 상태로 유지하는 데 사용됩니다.
 
@@ -53,7 +53,7 @@ Live Copy는 *소스 분기에서* *론치 분기로* 콘텐츠를 동기화하�
 
 적용한 변경 내용을 추적하기 위해 **참조**&#x200B;에서 론치를 확인하고 론치 페이지를 소스 페이지와 비교할 수 있습니다.
 
-1. 다음에서 **사이트** 콘솔, [론치의 소스 페이지로 이동하여 선택합니다.](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
+1. **사이트** 콘솔에서 [론치의 원본 페이지로 이동하여 선택](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources)합니다.
 1. **[참조](/help/sites-authoring/basic-handling.md#references)** 패널을 열고 **론치**&#x200B;를 선택합니다.
 1. 특정 론치를 선택한 다음, **소스와 비교**&#x200B;를 선택합니다.
 

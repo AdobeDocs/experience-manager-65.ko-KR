@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Adobe Experience Manager 6.5에서 Dynamic Media 저장소 재구성 {#dynamic-media-repository-restructuring-in-aem}
 
-상위에 설명된 대로 [Adobe Experience Manager 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md) Experience Manager 페이지 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 Dynamic Media에 영향을 주는 저장소 변경 사항과 관련된 작업을 평가해야 합니다. 일부 변경 사항은 Experience Manager 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
+Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md)의 상위 [저장소 재구성 페이지에 설명된 대로 Experience Manager 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 Dynamic Media에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 Experience Manager 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
 
 **향후 업그레이드 전**
 
@@ -47,7 +47,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -66,7 +66,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>고객은 다음 위치에서 마이그레이션 스크립트를 실행할 수 있습니다.<br /> </p>
+   <td><p>고객은 <br /> 위치에서 마이그레이션 스크립트를 실행할 수 있습니다. </p>
     <ul>
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
      <li>Dynamic Media OSGi 번들을 다시 시작합니다.</li>
@@ -97,7 +97,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -116,11 +116,11 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>1. YouTube에서 모든 비디오 게시 취소<br /> 2. 새로운 TouchUI를 사용하여 YouTube 구성 만들기(에서) <code>/conf</code>) 이전 위치에서 모든 채널 복사 포함<br /> 3. 모든 비디오를 YouTube에 다시 게시합니다.</p> <p>이 워크플로우로 인해 새 YouTube URL이 생성됩니다. TouchUI YouTube 구성을 만들기 전에 게시를 취소하지 않는 경우 기회가 주어지면 다시 만든 채널이 다시 게시되므로 속성 아래에 여러 YouTube URL이 나열됩니다. 이 기능은 속성에 나열된 URL이 쓸모없다는 것을 의미합니다.</p> </td>
+   <td><p>1. YouTube의 모든 비디오 게시 취소<br /> 2. 이전 위치에서 모든 채널을 복사하는 것을 포함하여 새 TouchUI(<code>/conf</code>부터)를 사용하여 YouTube 구성을 만듭니다<br /> 3. Publish 모든 비디오가 YouTube으로 돌아갑니다.</p> <p>이 워크플로우로 인해 새 YouTube URL이 생성됩니다. TouchUI YouTube 구성을 만들기 전에 게시를 취소하지 않는 경우 기회가 주어지면 다시 만든 채널이 다시 게시되므로 속성 아래에 여러 YouTube URL이 나열됩니다. 이 기능은 속성에 나열된 URL이 쓸모없다는 것을 의미합니다.</p> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>

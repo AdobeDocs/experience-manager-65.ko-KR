@@ -18,7 +18,7 @@ ht-degree: 6%
 
 # 어셈블러 서비스 사용{#using-assembler-service}
 
-어셈블러 서비스를 사용하면 PDF 및 XDP 문서를 결합, 재배열 및 강화하고 PDF 문서에 대한 정보를 얻을 수 있습니다. 어셈블러 서비스에 제출된 각 작업에는 DDX(Document Description XML) 문서, 소스 문서 및 외부 리소스(문자열 및 그래픽)가 포함됩니다. 어셈블러 서비스에 대한 자세한 내용은 [어셈블러 서비스 개요](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
+어셈블러 서비스를 사용하면 PDF 및 XDP 문서를 결합, 재배열 및 강화하고 PDF 문서에 대한 정보를 얻을 수 있습니다. 어셈블러 서비스에 제출된 각 작업에는 DDX(Document Description XML) 문서, 소스 문서 및 외부 리소스(문자열 및 그래픽)가 포함됩니다. 어셈블러 서비스에 대한 자세한 내용은 [어셈블러 서비스 개요](../../forms/using/overview-aem-document-services.md#p-assembler-service-p)를 참조하십시오.
 
 다음 작업에 어셈블 서비스를 사용할 수 있습니다.
 
@@ -149,11 +149,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td>상대적</td> 
-   <td>소스 XDP에 상대 참조를 통해 참조된 모든 이미지를 임베드합니다.<br /> 문서.</td> 
+   <td>소스 XDP<br /> 문서에 상대 참조를 통해 참조된 모든 이미지를 임베드합니다.</td> 
   </tr> 
   <tr> 
    <td>절대</td> 
-   <td>절대 참조를 통해 참조되는 모든 이미지를 소스 XDP에 임베드합니다.<br /> 문서.</td> 
+   <td>원본 XDP<br /> 문서에 절대 참조를 통해 참조되는 모든 이미지를 임베드합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -223,11 +223,11 @@ fragment="myFragment"/>
 
 양식 조각의 동적 삽입에 대한 지원은 단일 소스 제어를 지원합니다. 일반적으로 사용되는 구성 요소의 단일 소스를 유지 관리합니다. 예를 들어 회사 배너에 대한 조각을 만들 수 있습니다. 배너가 변경되면 조각만 수정하면 됩니다. 조각을 포함하는 다른 양식은 변경되지 않습니다.
 
-양식 디자이너는 LiveCycle 디자이너를 사용하여 양식 조각을 만듭니다. 이러한 조각은 XFA 양식 내에서 고유한 이름이 지정된 하위 양식입니다. 또한 양식 디자이너는 Designer를 사용하여 고유하게 이름이 지정된 삽입 지점이 있는 XFA 양식을 만듭니다. 프로그래머는 조각이 XFA 양식에 삽입되는 방법을 지정하는 DDX 문서를 작성합니다.
+양식 디자이너는 LiveCycle Designer을 사용하여 양식 조각을 만듭니다. 이러한 조각은 XFA 양식 내에서 고유한 이름이 지정된 하위 양식입니다. 양식 디자이너는 또한 Designer을 사용하여 고유하게 이름이 지정된 삽입 지점이 있는 XFA 양식을 만듭니다. 프로그래머는 조각이 XFA 양식에 삽입되는 방법을 지정하는 DDX 문서를 작성합니다.
 
 다음 그림은 두 개의 XML 양식(XFA 템플릿)을 보여 줍니다. 왼쪽의 폼에 myInsertionPoint라는 삽입 포인터가 있습니다. 오른쪽의 양식에는 myFragment 라는 조각이 포함되어 있습니다.
 
-![XFA 양식에 양식 단편 삽입](assets/as_assembler_fragment_assy_assembled.png)
+![XFA 양식에 양식 조각 삽입](assets/as_assembler_fragment_assy_assembled.png)
 
 XFA 양식에 양식 단편 삽입
 
@@ -267,7 +267,7 @@ source="myFragmentSource"/>
 
 다음 그림에서는 소스 문서에서 페이지 1-3을 추출하여 새 결과 문서에 배치합니다.
 
-![소스 문서에서 특정 페이지 추출](assets/as_intro_page_extraction.png)
+![원본 문서에서 특정 페이지 추출](assets/as_intro_page_extraction.png)
 
 소스 문서에서 특정 페이지 추출
 
@@ -283,7 +283,7 @@ source="myFragmentSource"/>
 
 다음 그림에서 DocA는 여러 결과 문서로 나뉩니다. 페이지의 첫 번째 수준 1 책갈피는 새 결과 문서의 시작을 식별합니다.
 
-![책갈피를 기반으로 한 소스 문서를 여러 문서로 나누기](assets/as_intro_pdfsfrombookmarks.png)
+![책갈피를 기반으로 소스 문서를 여러 문서로 나누기](assets/as_intro_pdfsfrombookmarks.png)
 
 책갈피를 기반으로 한 소스 문서를 여러 문서로 나누기
 
@@ -328,7 +328,7 @@ source="myFragmentSource"/>
 
 **Reader 확장 서비스**: Adobe Reader 사용자가 결과 PDF 문서에 디지털 서명할 수 있습니다.
 
-**Forms 서비스**: XDP 파일과 XML 데이터 파일을 병합하여 채워진 대화형 양식이 포함된 PDF 문서를 생성합니다.
+**Forms 서비스**: XDP 파일과 XML 데이터 파일을 병합하여 채워진 대화형 양식이 포함된 PDF 문서를 만듭니다.
 
 **출력 서비스**: 동적 XML 양식을 비대화형 양식이 포함된 PDF 문서로 변환합니다(양식을 병합함). 어셈블러 서비스는 출력 서비스를 호출하지 않고 정적 XML 양식 및 Acrobat 양식을 병합합니다.
 

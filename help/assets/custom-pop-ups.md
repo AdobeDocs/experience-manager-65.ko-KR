@@ -28,7 +28,7 @@ ht-degree: 2%
 
 각 뷰어의 기능은 다르지만 빠른 보기를 만드는 프로세스는 지원되는 세 개의 뷰어 모두에서 동일합니다.
 
-**빠른 보기를 사용하여 사용자 지정 팝업을 만들려면 다음 작업을 수행하십시오.**
+**빠른 보기를 사용하여 사용자 지정 팝업을 만들려면:**
 
 1. 업로드된 에셋에 대한 빠른 보기를 만듭니다.
 
@@ -42,11 +42,11 @@ ht-degree: 2%
     </tr>
     <tr>
     <td>대화형 이미지</td>
-    <td><a href="/help/assets/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">이미지 배너에 핫스팟 추가</a>.</td>
+    <td><a href="/help/assets/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">이미지 배너에 핫스팟을 추가하는 중</a>.</td>
     </tr>
     <tr>
     <td>대화형 비디오</td>
-    <td><a href="/help/assets/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">비디오에 인터랙티브 추가</a>.</td>
+    <td><a href="/help/assets/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">비디오에 대화형 기능을 추가</a>.</td>
     </tr>
     <tr>
     <td>회전 배너</td>
@@ -60,38 +60,38 @@ ht-degree: 2%
    <table>
     <tbody>
     <tr>
-    <td><strong>사용 중인 뷰어</strong><br /> </td>
+    <td>사용 중인 <strong>뷰어</strong><br /> </td>
     <td><strong>뷰어를 웹 사이트와 통합하려면 다음 단계를 완료하십시오</strong></td>
     </tr>
     <tr>
     <td>대화형 이미지</td>
-    <td><a href="/help/assets/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">웹 사이트와 대화형 이미지 통합</a>.<br /> </td>
+    <td><a href="/help/assets/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">대화형 이미지를 웹 사이트와 통합</a>.<br /> </td>
     </tr>
     <tr>
     <td>대화형 비디오<br /> </td>
-    <td><a href="/help/assets/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">웹 사이트와 대화형 비디오 통합</a>.<br /> </td>
+    <td><a href="/help/assets/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">대화형 비디오와 웹 사이트 통합</a>.<br /> </td>
     </tr>
     <tr>
     <td>회전 배너</td>
-    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">웹 사이트 페이지에 슬라이드 배너 추가</a>.<br /> </td>
+    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">웹 사이트 페이지에 회전 배너를 추가</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
 
 1. 사용 중인 뷰어는 빠른 보기를 사용하는 방법을 알고 있어야 합니다.
 
-   뷰어는 라는 핸들러를 사용합니다. `QuickViewActive`.
+   뷰어에서 `QuickViewActive`(이)라는 처리기를 사용합니다.
 
    **예**
 대화형 이미지에 대해 웹 페이지에서 다음 샘플 포함 코드를 사용한다고 가정해 보십시오.
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
-   처리기는 를 사용하여 뷰어에 로드됩니다. `setHandlers`:
+   처리기가 `setHandlers`을(를) 사용하여 뷰어에 로드되었습니다.
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **위의 샘플 포함 코드 예를 사용하면 다음 코드가 있습니다.**
+   **위의 샘플 포함 코드 예제를 사용하면 다음 코드가 있습니다.**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -104,14 +104,14 @@ ht-degree: 2%
    })
    ```
 
-   자세히 알아보기 `setHandlers()` 메서드 위치:
+   다음에서 `setHandlers()` 메서드에 대해 자세히 알아보세요.
 
    * 대화형 이미지 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 대화형 비디오 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. 구성 `quickViewActivate` 핸들러입니다.
+1. `quickViewActivate` 처리기를 구성합니다.
 
-   다음 `quickViewActivate` 처리기는 뷰어의 빠른 보기를 제어합니다. 처리기에는 빠른 보기와 함께 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 빠른 보기에 설정된 SKU 변수와 샘플에 대한 매핑을 제공합니다 `loadQuickView` 함수 호출.
+   `quickViewActivate` 처리기는 뷰어에서 빠른 보기를 제어합니다. 처리기에는 빠른 보기와 함께 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 빠른 보기에 설정된 SKU 변수 및 샘플 `loadQuickView` 함수 호출에 대한 매핑을 제공합니다.
 
    **변수 매핑**
 웹 페이지에서 사용할 변수를 빠른 보기에 포함된 SKU 값 및 일반 변수에 매핑합니다.
@@ -134,9 +134,9 @@ ht-degree: 2%
 
    `loadQuickView(sku)`
 
-   샘플 함수 호출은 함수를 가정합니다 `loadQuickView()` 존재하는데다가 액세스할 수 있습니다.
+   샘플 함수 호출은 함수 `loadQuickView()`이(가) 있고 액세스할 수 있다고 가정합니다.
 
-   자세히 알아보기 `quickViewActivate` 메서드 위치:
+   다음에서 `quickViewActivate` 메서드에 대해 자세히 알아보세요.
 
    * 대화형 이미지 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
    * 대화형 비디오 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
@@ -147,9 +147,9 @@ ht-degree: 2%
    * 포함 코드의 setHandlers 섹션의 주석 처리를 제거합니다.
    * 빠른 보기에 포함된 모든 추가 변수를 매핑합니다.
 
-      * 업데이트 `loadQuickView(sku,*var1*,*var2*)` 변수를 더 추가하는 경우 를 호출합니다.
+      * 변수를 더 추가하는 경우 `loadQuickView(sku,*var1*,*var2*)` 호출을 업데이트하십시오.
 
-   * 단순 만들기 `loadQuickView` () 함수가 표시기를 벗어났습니다.
+   * 뷰어 외부의 페이지에 간단한 `loadQuickView`() 함수를 만듭니다.
 
      예를 들어 다음 은 브라우저 콘솔에 SKU 값을 기록합니다.
 
@@ -163,8 +163,8 @@ ht-degree: 2%
 
      Quickview의 변수가 매핑되고 함수 호출이 있는 경우 브라우저 콘솔은 제공된 샘플 함수를 사용하여 브라우저 콘솔에 변수 값을 기록합니다.
 
-1. 이제 함수를 사용하여 빠른 보기에서 간단한 팝업을 호출할 수 있습니다. 다음 예제에서는 `DIV` 팝업용
-1. 팝업 스타일 지정 `DIV` 다음 방식으로. 원하는 대로 나만의 스타일을 추가합니다.
+1. 이제 함수를 사용하여 빠른 보기에서 간단한 팝업을 호출할 수 있습니다. 다음 예제에서는 팝업에 `DIV`을(를) 사용합니다.
+1. 다음과 같은 방법으로 팝업 `DIV`의 스타일을 지정합니다. 원하는 대로 나만의 스타일을 추가합니다.
 
    ```xml
    <style type="text/css">
@@ -176,7 +176,7 @@ ht-degree: 2%
    </style>
    ```
 
-1. 팝업 배치 `DIV` HTML 페이지의 본문에서 확인할 수 있습니다.
+1. 팝업 `DIV`을(를) HTML 페이지의 본문에 넣습니다.
 
    요소 중 하나는 사용자가 빠른 보기를 호출할 때 SKU 값으로 업데이트되는 ID로 설정됩니다. 이 예에는 팝업이 표시된 후 다시 숨길 수 있는 간단한 버튼도 포함되어 있습니다.
 
@@ -200,20 +200,20 @@ ht-degree: 2%
    </script>
    ```
 
-1. 웹 서버에 테스트 HTML 페이지를 업로드하고 엽니다. 뷰어에 팝업이 표시됩니다 `DIV` 사용자가 빠른 보기를 호출하는 경우.
+1. 웹 서버에 테스트 HTML 페이지를 업로드하고 엽니다. 사용자가 빠른 보기를 호출하면 뷰어에 팝업 `DIV`이(가) 표시됩니다.
 1. **전체 화면 모드에서 사용자 지정 팝업을 표시하는 방법**
 
    대화형 비디오 뷰어와 같은 일부 뷰어는 전체 화면 모드의 표시를 지원합니다. 그러나 이전 단계에서 설명한 대로 팝업을 사용하면 전체 화면 모드에 있는 동안 뷰어 뒤에 팝업이 표시됩니다.
 
-   팝업이 표준 및 전체 화면 모드로 모두 표시되도록 하려면 팝업을 뷰어 컨테이너에 첨부합니다. 두 번째 핸들러 메서드를 사용합니다. `initComplete`.
+   팝업이 표준 및 전체 화면 모드로 모두 표시되도록 하려면 팝업을 뷰어 컨테이너에 첨부합니다. 두 번째 처리기 메서드 `initComplete`을(를) 사용합니다.
 
-   다음 `initComplete` 뷰어가 초기화된 후 핸들러가 호출됩니다.
+   뷰어가 초기화된 후 `initComplete` 처리기가 호출됩니다.
 
    ```xml
    "initComplete":function() { code block }
    ```
 
-   자세히 알아보기 `init()` 메서드 위치:
+   다음에서 `init()` 메서드에 대해 자세히 알아보세요.
 
    * 대화형 이미지 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
    * 대화형 비디오 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
@@ -265,4 +265,4 @@ ht-degree: 2%
 
    `s7interactiveimageviewer.init()`
 
-   뷰어를 호스트 페이지에 포함시킨 후에는 를 사용하여 뷰어를 호출하기 전에 뷰어 인스턴스가 만들어지고 핸들러가 로드되는지 확인하십시오. `init()`.
+   뷰어를 호스트 페이지에 포함시킨 후 `init()`을(를) 사용하여 뷰어를 호출하기 전에 뷰어 인스턴스가 만들어지고 처리기가 로드되었는지 확인하십시오.

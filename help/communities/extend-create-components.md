@@ -33,72 +33,72 @@ ht-degree: 0%
 
 ## 주석 구성 요소 만들기 {#create-the-comments-component}
 
-다음 지침은 **그룹** 이외의 값 `.hidden` 따라서 구성 요소 브라우저(sidekick)에서 구성 요소를 사용할 수 있습니다.
+이 지침은 구성 요소 브라우저(사이드 킥)에서 구성 요소를 사용할 수 있도록 `.hidden` 이외의 **그룹** 값을 지정합니다.
 
 자동 생성된 JSP 파일이 삭제되는 것은 기본 HBS 파일이 대신 사용되기 때문입니다.
 
-1. 다음으로 이동 **CRXDE|Lite** ([http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp))
+1. **CRXDE|Lite**([http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)) 탐색
 
 1. 사용자 정의 응용 프로그램의 위치를 만듭니다.
 
-   * 다음 항목 선택 `/apps` 노드
+   * `/apps` 노드 선택
 
-      * **폴더 만들기** 명명된 **[!UICONTROL 사용자 정의]**
+      * **폴더 만들기** 이름 **[!UICONTROL 사용자 지정]**
 
-   * 다음 항목 선택 `/apps/custom` 노드
+   * `/apps/custom` 노드 선택
 
-      * **폴더 만들기** 명명된 **[!UICONTROL 구성 요소]**
+      * **[!UICONTROL 구성 요소]**(이)라는 이름의 **폴더 만들기**
 
-1. 다음 항목 선택 `/apps/custom/components` 노드
+1. `/apps/custom/components` 노드 선택
 
    * **[!UICONTROL 만들기 > 구성 요소...]**
 
       * **레이블**: *댓글*
-      * **제목**: *대체 주석*
-      * **설명**: *대체 주석 스타일*
-      * **상위 유형**: *social/commons/components/hbs/comments*
-      * **그룹**: *사용자 정의*
+      * **제목**: *대체 댓글*
+      * **설명**: *대체 댓글 스타일*
+      * **슈퍼 유형**: *social/commons/components/hbs/comments*
+      * **그룹**: *사용자 지정*
 
-   * 선택 **[!UICONTROL 다음]**
-   * 선택 **[!UICONTROL 다음]**
-   * 선택 **[!UICONTROL 다음]**
-   * 선택 **[!UICONTROL 확인]**
+   * **[!UICONTROL 다음]** 선택
+   * **[!UICONTROL 다음]** 선택
+   * **[!UICONTROL 다음]** 선택
+   * **[!UICONTROL 확인]** 선택
 
-1. 생성된 노드를 확장합니다. `/apps/custom/components/comments`
-1. 선택 **[!UICONTROL 모두 저장]**
-1. 마우스 오른쪽 버튼 클릭 `comments.jsp`
-1. 선택 **[!UICONTROL 삭제]**
-1. 선택 **[!UICONTROL 모두 저장]**
+1. 만든 노드를 확장합니다. `/apps/custom/components/comments`
+1. **[!UICONTROL 모두 저장]** 선택
+1. `comments.jsp`을(를) 마우스 오른쪽 단추로 클릭
+1. **[!UICONTROL 삭제]** 선택
+1. **[!UICONTROL 모두 저장]** 선택
 
-![create-component](assets/create-component.png)
+![구성 요소 만들기](assets/create-component.png)
 
 ### 하위 주석 구성 요소 만들기 {#create-the-child-comment-component}
 
-이 지침은 다음과 같이 설정됩니다 **그룹** 끝 `.hidden` 상위 구성 요소만 페이지 내에 포함되어야 합니다.
+이러한 지침은 **그룹**&#x200B;을(를) `.hidden`(으)로 설정하므로 상위 구성 요소만 페이지 내에 포함되어야 합니다.
 
 자동 생성된 JSP 파일이 삭제되는 것은 기본 HBS 파일이 대신 사용되기 때문입니다.
 
-1. 다음 위치로 이동 `/apps/custom/components/comments` 노드
+1. `/apps/custom/components/comments` 노드로 이동
 1. 노드를 마우스 오른쪽 버튼으로 클릭합니다.
 
-   * 선택 **[!UICONTROL 만들기]** > **[!UICONTROL 구성 요소...]**
+   * **[!UICONTROL 만들기]** > **[!UICONTROL 구성 요소...]** 선택
 
       * **레이블**: *댓글*
-      * **제목**: *대체 주석*
-      * **설명**: *대체 주석 스타일*
-      * **상위 유형**: *social/commons/components/hbs/comments/comments/comment*
+      * **제목**: *대체 댓글*
+      * **설명**: *대체 댓글 스타일*
+      * **슈퍼 유형**: *social/commons/components/hbs/comments/comment*
       * **그룹**: `*.hidden*`
 
-   * 선택 **[!UICONTROL 다음]**
-   * 선택 **[!UICONTROL 다음]**
-   * 선택 **[!UICONTROL 다음]**
-   * 선택 **[!UICONTROL 확인]**
+   * **[!UICONTROL 다음]** 선택
+   * **[!UICONTROL 다음]** 선택
+   * **[!UICONTROL 다음]** 선택
+   * **[!UICONTROL 확인]** 선택
 
-1. 생성된 노드를 확장합니다. `/apps/custom/components/comments/comment`
-1. 선택 **[!UICONTROL 모두 저장]**
-1. 마우스 오른쪽 버튼 클릭 `comment.jsp`
-1. 선택 **[!UICONTROL 삭제]**
-1. 선택 **[!UICONTROL 모두 저장]**
+1. 만든 노드를 확장합니다. `/apps/custom/components/comments/comment`
+1. **[!UICONTROL 모두 저장]** 선택
+1. `comment.jsp`을(를) 마우스 오른쪽 단추로 클릭
+1. **[!UICONTROL 삭제]** 선택
+1. **[!UICONTROL 모두 저장]** 선택
 
 ![create-child-component](assets/create-child-component.png)
 
@@ -106,73 +106,73 @@ ht-degree: 0%
 
 ### 기본 HBS 스크립트 복사 및 수정 {#copy-and-modify-the-default-hbs-scripts}
 
-사용 [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) 사용:
 
-* 복사 `comments.hbs`
+* `comments.hbs` 복사
 
-   * 출처: [/libs/social/commons/components/hbs/comments](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
-   * 종료 [/apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
+   * [/libs/social/commons/components/hbs/comments에서](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
+   * 대상: [/apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
 
-* 편집 `comments.hbs` 끝:
+* `comments.hbs`을(를) 편집할 대상:
 
-   * 값 변경 `data-scf-component` 특성(~20행):
+   * `data-scf-component` 특성 값 변경(~20행):
 
       * 출처: `social/commons/components/hbs/comments`
-      * 종료 `/apps/custom/components/comments`
+      * 대상: `/apps/custom/components/comments`
 
    * 사용자 지정 댓글 구성 요소를 포함하도록 수정합니다(~75행).
 
-      * 바꾸기 `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
-      * 포함 `{{include this resourceType='/apps/custom/components/comments/comment'}}`
+      * `{{include this resourceType='social/commons/components/hbs/comments/comment'}}` 바꾸기
+      * `{{include this resourceType='/apps/custom/components/comments/comment'}}` 사용
 
-* 복사 `comment.hbs`
+* `comment.hbs` 복사
 
-   * 출처: [/libs/social/commons/components/hbs/comments/comments/comments](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments/comment)
-   * 종료 [/apps/custom/components/comments/comments/comment](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
+   * [/libs/social/commons/components/hbs/comments/comments에서](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments/comment)
+   * 대상: [/apps/custom/components/comments/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
 
-* 편집 `comment.hbs` 끝:
+* `comment.hbs`을(를) 편집할 대상:
 
    * data-scf-component 특성의 값을 변경합니다(~ 19행).
 
       * 출처: `social/commons/components/hbs/comments/comment`
-      * 종료 `/apps/custom/components/comments/comment`
+      * 대상: `/apps/custom/components/comments/comment`
 
-* 선택 `/apps/custom` 노드
-* 선택 **[!UICONTROL 모두 저장]**
+* `/apps/custom` 노드 선택
+* **[!UICONTROL 모두 저장]** 선택
 
 ## 클라이언트 라이브러리 폴더 만들기 {#create-a-client-library-folder}
 
-이 클라이언트 라이브러리를 포함하지 않으려면 기본 주석 시스템의 clientlib에 대한 카테고리 값을 사용할 수 있습니다( `cq.social.author.hbs.comments`). 그러나 기본 구성 요소의 모든 인스턴스에 대해서도 이 clientlib을 포함해야 합니다.
+이 클라이언트 라이브러리를 포함하지 않으려면 기본 주석 시스템의 clientlib에 대한 범주 값을 사용할 수 있습니다(`cq.social.author.hbs.comments`). 그러나 기본 구성 요소의 모든 인스턴스에 대해서도 이 clientlib을 포함해야 합니다.
 
-사용 [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) 사용:
 
-* 선택 `/apps/custom/components/comments` 노드
-* 선택 **[!UICONTROL 노드 만들기]**
+* `/apps/custom/components/comments` 노드 선택
+* **[!UICONTROL 노드 만들기]** 선택
 
    * **이름**: `clientlibs`
    * **유형**: `cq:ClientLibraryFolder`
-   * 추가 **[!UICONTROL 속성]** 탭:
+   * **[!UICONTROL 속성]** 탭에 추가:
 
       * **이름** `categories` **유형** `String` **값** `cq.social.author.hbs.comments` `Multi`
       * **이름** `dependencies` **유형** `String` **값** `cq.social.scf` `Multi`
 
-* 선택 **[!UICONTROL 모두 저장]**
-* 포함 `/apps/custom/components/comments/clientlib`s 노드를 선택하고 다음 세 개의 파일을 만듭니다.
+* **[!UICONTROL 모두 저장]** 선택
+* `/apps/custom/components/comments/clientlib`의 노드를 선택한 상태에서 다음 세 개의 파일을 만듭니다.
 
    * **이름**: `css.txt`
    * **이름**: `js.txt`
    * **이름**: customcommentsystem.js
 
-* 콘텐츠로 &#39;customcommentsystem.js&#39;를 입력합니다. `js.txt`
-* 선택 **[!UICONTROL 모두 저장]**
+* `js.txt`의 콘텐츠로 &#39;customcommentsystem.js&#39;를 입력하십시오.
+* **[!UICONTROL 모두 저장]** 선택
 
 ![comments-clientlibs](assets/comments-clientlibs.png)
 
 ## SCF 모델 및 뷰 등록 {#register-the-scf-model-view}
 
-SCF 구성 요소를 확장(재정의)할 때 resourceType은 다릅니다(오버레이는 다음을 검색하는 상대 검색 메커니즘을 사용함) `/apps` 다음 이전 `/libs` 따라서 resourceType은 그대로 유지됩니다. SCF JS 모델을 등록하고 사용자 지정 resourceType에 대한 보기를 위해 클라이언트 라이브러리에 JavaScript를 작성해야 하는 이유입니다.
+SCF 구성 요소를 확장(재정의)할 때 resourceType은 다릅니다. 오버레이는 `/libs` 전에 `/apps`을(를) 통해 검색하여 resourceType이 동일하게 유지되도록 하는 상대 검색 메커니즘을 사용합니다. SCF JS 모델을 등록하고 사용자 지정 resourceType에 대한 보기를 위해 클라이언트 라이브러리에 JavaScript을 작성해야 하는 이유입니다.
 
-다음 텍스트를 콘텐츠로 입력하십시오. `customcommentsystem.js`:
+`customcommentsystem.js`의 콘텐츠로 다음 텍스트를 입력하십시오.
 
 ### customcommentsystem.js {#customcommentsystem-js}
 
@@ -192,9 +192,9 @@ SCF 구성 요소를 확장(재정의)할 때 resourceType은 다릅니다(오�
 })($CQ, _, Backbone, SCF);
 ```
 
-* 선택 **[!UICONTROL 모두 저장]**
+* **[!UICONTROL 모두 저장]** 선택
 
-## 앱 게시 {#publish-the-app}
+## 앱 Publish {#publish-the-app}
 
 게시 환경에서 확장 구성 요소를 경험하려면 사용자 지정 구성 요소를 복제해야 합니다.
 
@@ -202,8 +202,8 @@ SCF 구성 요소를 확장(재정의)할 때 resourceType은 다릅니다(오�
 
 * 전역 탐색에서,
 
-   * 선택 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]**
-   * 선택 **[!UICONTROL 트리 활성화]**
-   * 설정 `Start Path` 끝 `/apps/custom`
-   * 선택 취소 **[!UICONTROL 수정된 항목만]**
-   * 선택 **[!UICONTROL 활성화]** 단추
+   * **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** 선택
+   * **[!UICONTROL 트리 활성화]** 선택
+   * `Start Path`을(를) `/apps/custom`(으)로 설정
+   * **[!UICONTROL 수정된 항목만]** 선택 취소
+   * **[!UICONTROL 활성화]** 단추 선택

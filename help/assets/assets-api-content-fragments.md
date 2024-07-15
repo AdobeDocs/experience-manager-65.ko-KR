@@ -1,6 +1,6 @@
 ---
 title: Assets HTTP API의 Adobe Experience Manager 콘텐츠 조각 지원
-description: AEM Headless 게재 기능의 중요한 부분인 Assets HTTP API의 콘텐츠 조각에 대한 지원에 대해 알아봅니다.
+description: AEM의 Headless 게재 기능의 중요한 부분인 Assets HTTP API에서의 콘텐츠 조각 지원에 대해 알아봅니다.
 feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
@@ -23,24 +23,24 @@ ht-degree: 23%
 
 ## 개요 {#overview}
 
-AEM Headless 게재 기능의 중요한 부분인 Assets HTTP API의 콘텐츠 조각에 대한 지원에 대해 알아봅니다.
+AEM의 Headless 게재 기능의 중요한 부분인 Assets HTTP API에서의 콘텐츠 조각 지원에 대해 알아봅니다.
 
 >[!NOTE]
 >
->다음 [Assets HTTP API](/help/assets/mac-api-assets.md) 는 다음을 포함합니다.
+>[Assets HTTP API](/help/assets/mac-api-assets.md)는 다음을 포함합니다.
 >
 >* Assets REST API
 >* 콘텐츠 조각의 지원 포함
 >
->Assets HTTP API의 현재 구현은 [나머지](https://en.wikipedia.org/wiki/Representational_state_transfer) 아키텍처 스타일입니다.
+>Assets HTTP API의 현재 구현은 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 아키텍처 스타일을 기반으로 합니다.
 
-다음 [Assets REST API](/help/assets/mac-api-assets.md) 개발자는 Adobe Experience Manager에서 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 통해 HTTP API를 통해 직접 콘텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
+[Assets REST API](/help/assets/mac-api-assets.md)를 사용하면 Adobe Experience Manager의 개발자가 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 통해 HTTP API를 통해 직접 콘텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
 
-API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Headless CMS(컨텐츠 관리 시스템)를 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 모든 애플리케이션.
+API를 사용하면 JavaScript 프론트엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Headless CMS(컨텐츠 관리 시스템)를 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 모든 애플리케이션.
 
 예를 들어 프레임워크 기반 또는 사용자 지정 SPA(단일 페이지 애플리케이션)에서는 HTTP API를 통해 제공되는 콘텐츠(종종 JSON 형식)가 필요합니다.
 
-While [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 이를 위해 필요한 읽기 작업을 수행할 수 있는 유연하고 사용자 지정 가능한 API를 제공하며, JSON 출력을 사용자 지정할 수 있습니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현에 AEM WCM(Web Content Management) 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식에 직접 액세스할 수 있는 것은 아닙니다.
+[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)는 이 용도로 필요한 읽기 작업을 수행하고 JSON 출력을 사용자 지정할 수 있는 매우 포괄적이고 유연하며 사용자 지정 가능한 API를 제공하지만 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현에 AEM WCM(웹 콘텐츠 관리) 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식에 직접 액세스할 수 있는 것은 아닙니다.
 
 이때 Assets REST API를 사용할 수 있습니다. 이를 통해 개발자는 페이지에 에셋을 먼저 임베드할 필요 없이 에셋(예: 이미지 및 콘텐츠 조각)에 직접 액세스하고 콘텐츠를 직렬화된 JSON 형식으로 전달할 수 있습니다.
 
@@ -52,9 +52,9 @@ Assets REST API를 사용하면 개발자가 기존 에셋, 콘텐츠 조각 및
 
 Assets REST API:
 
-* 다음 [하테오아스의 원리](https://en.wikipedia.org/wiki/HATEOAS)
+* [HATEOAS 원칙](https://en.wikipedia.org/wiki/HATEOAS)을 따릅니다.
 
-* 를 구현합니다. [SIREN 형식](https://github.com/kevinswiber/siren)
+* [SIREN 형식](https://github.com/kevinswiber/siren)을 구현합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -62,9 +62,9 @@ Assets REST API는 최신 AEM 버전의 각 기본 설치에서 사용할 수 �
 
 ## 주요 개념 {#key-concepts}
 
-자산 REST API 오퍼 [나머지](https://en.wikipedia.org/wiki/Representational_state_transfer)- AEM 인스턴스 내에 저장된 자산에 대한 스타일 액세스.
+Assets REST API는 AEM 인스턴스 내에 저장된 자산에 대한 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 스타일 액세스를 제공합니다.
 
-다음을 사용합니다. `/api/assets` 끝점 및 이에 액세스하려면 자산의 경로가 필요합니다(행간 제외). `/content/dam`).
+`/api/assets` 끝점을 사용하며 자산 경로를 사용하여 액세스합니다(선행 `/content/dam` 없음).
 
 * 즉, 다음 위치에서 자산에 액세스할 수 있습니다.
    * `/content/dam/path/to/asset`
@@ -90,22 +90,22 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 >
 >요청 본문 및/또는 URL 매개변수를 사용하여 해당 작업 중 일부를 구성할 수 있습니다(예: **POST** 요청에 의해 폴더 또는 자산이 생성될 수 있도록 정의).
 
-지원되는 요청의 정확한 형식은 [API 참조](/help/assets/assets-api-content-fragments.md#api-reference) 설명서를 참조하십시오.
+지원되는 요청의 정확한 형식은 [API 참조](/help/assets/assets-api-content-fragments.md#api-reference) 설명서에 정의되어 있습니다.
 
 ### 트랜잭션 동작 {#transactional-behavior}
 
 모든 요청은 원자입니다.
 
-즉, 다음 (`write`) 요청은 단일 엔티티로 성공하거나 실패할 수 있는 단일 트랜잭션으로 결합할 수 없습니다.
+즉, 후속(`write`) 요청은 단일 엔터티로 성공하거나 실패할 수 있는 단일 트랜잭션으로 결합할 수 없습니다.
 
-### AEM (Assets) REST API 및 AEM 구성 요소 {#aem-assets-rest-api-versus-aem-components}
+### AEM(Assets) REST API 및 AEM 구성 요소 {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <thead>
   <tr>
    <td>Aspect</td>
    <td>Assets REST API<br/> </td>
-   <td>AEM 구성 요소<br/> (Sling 모델을 사용하는 구성 요소)</td>
+   <td>AEM 구성 요소<br/>(Sling 모델을 사용하는 구성 요소)</td>
   </tr>
  </thead>
  <tbody>
@@ -121,16 +121,16 @@ HTTP 메서드는 실행할 작업을 결정합니다.
   </tr>
   <tr>
    <td>액세스</td>
-   <td><p>직접 액세스할 수 있습니다.</p> <p>를 사용합니다. <code>/api/assets </code>끝점, 매핑됨 <code>/content/dam</code> (저장소에서).</p> 
+   <td><p>직접 액세스할 수 있습니다.</p> <p>리포지토리의 <code>/content/dam</code>에 매핑된 <code>/api/assets </code>끝점을 사용합니다.</p> 
    <p>예제 경로는 다음과 같습니다. <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
-    <td><p>AEM 페이지에서 AEM 구성 요소를 통해 참조되어야 합니다.</p> <p>를 사용합니다. <code>.model</code> JSON 표현식을 만드는 선택기입니다.</p> <p>예제 경로는 다음과 같습니다.<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
+    <td><p>AEM 페이지에서 AEM 구성 요소를 통해 참조되어야 합니다.</p> <p><code>.model</code> 선택기를 사용하여 JSON 표현을 만듭니다.</p> <p>예제 경로는 다음과 같습니다.<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
    </td>
   </tr>
   <tr>
    <td>보안</td>
    <td><p>여러 옵션이 가능합니다.</p> <p>OAuth가 제안됩니다. 표준 설정과 별도로 구성할 수 있습니다.</p> </td>
-   <td>AEM 표준 설정을 사용합니다.</td>
+   <td>AEM의 표준 설정을 사용합니다.</td>
   </tr>
   <tr>
    <td>아키텍처 설명</td>
@@ -147,7 +147,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 ### 보안 {#security}
 
-Assets REST API가 특정 인증 요구 사항 없이 환경 내에서 사용되는 경우 AEM CORS 필터를 올바르게 구성해야 합니다.
+Assets REST API가 특정 인증 요구 사항 없이 환경 내에서 사용되는 경우 AEM의 CORS 필터를 올바르게 구성해야 합니다.
 
 >[!NOTE]
 >
@@ -161,21 +161,21 @@ Assets REST API가 특정 인증 요구 사항 없이 환경 내에서 사용되
 
 ## 사용 가능한 기능 {#available-features}
 
-컨텐츠 조각은 특정 유형의 자산입니다. 다음을 참조하십시오. [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md).
+콘텐츠 조각은 특정 유형의 자산입니다. [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)을 참조하세요.
 
 API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음을 참조하십시오.
 
-* 다음 [Assets REST API](/help/assets/mac-api-assets.md)
-* [엔티티 유형](/help/assets/assets-api-content-fragments.md#entity-types)지원되는 각 유형과 관련된 기능(콘텐츠 조각과 관련)이 설명되어 있습니다
+* [Assets REST API](/help/assets/mac-api-assets.md)
+* [엔터티 형식](/help/assets/assets-api-content-fragments.md#entity-types)(지원되는 각 형식과 관련된 기능(콘텐츠 조각과 관련된 기능) 설명)
 
 ### 페이징 {#paging}
 
 Assets REST API는 URL 매개 변수를 통해 (GET 요청에 대한) 페이징을 지원합니다.
 
 * `offset` - 검색할 첫 번째(하위) 엔티티 수
-* `limit` - 반환되는 최대 엔티티 수
+* `limit` - 반환되는 최대 엔터티 수
 
-응답에는 페이징 정보가 `properties` SIREN 출력의 섹션입니다. 이 `srn:paging` 속성에는 (하위) 엔티티의 총 수( `total`), 오프셋 및 제한( `offset`, `limit`)을 추가합니다.
+응답에는 SIREN 출력의 `properties` 섹션의 일부로 페이징 정보가 포함됩니다. 이 `srn:paging` 속성에는 요청에 지정된 총 (하위) 엔티티 수(`total`), 오프셋 및 제한(`offset`, `limit`)이 포함됩니다.
 
 >[!NOTE]
 >
@@ -205,7 +205,7 @@ Assets REST API는 URL 매개 변수를 통해 (GET 요청에 대한) 페이징�
 
 폴더는 에셋 및 기타 폴더의 컨테이너 역할을 합니다. 이는 AEM 콘텐츠 저장소의 구조를 반영합니다.
 
-Assets REST API는 이름, 제목 등과 같은 폴더의 속성에 대한 액세스를 노출합니다. 에셋은 폴더 및 하위 폴더의 하위 엔티티로 표시됩니다.
+Assets REST API는 이름, 제목 등과 같은 폴더의 속성에 대한 액세스를 노출합니다. Assets은 폴더 및 하위 폴더의 하위 엔티티로 노출됩니다.
 
 >[!NOTE]
 >
@@ -215,28 +215,28 @@ Assets REST API는 이름, 제목 등과 같은 폴더의 속성에 대한 액�
 
 에셋이 요청되면 응답은 해당 에셋 스키마에서 정의한 제목, 이름 및 기타 정보와 같은 메타데이터를 반환합니다.
 
-에셋의 이진 데이터는 유형의 SIREN 링크로 노출됩니다 `content`.
+자산의 이진 데이터가 `content` 유형의 SIREN 링크로 노출됩니다.
 
-자산은 여러 변환을 가질 수 있습니다. 이러한 렌디션은 일반적으로 하위 엔티티로 노출되는데, 한 가지 예외는 썸네일 렌디션이며 유형의 링크로 노출됩니다 `thumbnail` ( `rel="thumbnail"`).
+Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식 엔터티로 노출됩니다. 한 가지 예외는 썸네일 렌디션으로, `thumbnail`(`rel="thumbnail"`) 형식의 링크로 노출됩니다.
 
 ### 콘텐츠 조각 {#content-fragments}
 
-A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
+[콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)은(는) 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
 
-다음과 같은 몇 가지 차이점이 있습니다. *표준* 에셋(예: 이미지 또는 오디오), 일부 추가 규칙이 에셋 처리에 적용됩니다.
+*표준* 자산(예: 이미지 또는 오디오)에 몇 가지 차이점이 있으므로 이를 처리하는 데 일부 추가 규칙이 적용됩니다.
 
 #### 표시 {#representation}
 
 컨텐츠 조각:
 
 * 이진 데이터를 노출하지 마십시오.
-* JSON 출력에 완전히 포함됨( `properties` 속성)을 참조하십시오.
+* JSON 출력(`properties` 속성 내)에 완전히 포함되어 있습니다.
 
 * 요소 및 변형은 조각의 속성 또는 링크 또는 하위 엔티티의 일부로 노출되므로 원자로도 간주됩니다. 이를 통해 조각의 페이로드에 효율적으로 액세스할 수 있습니다.
 
 #### 콘텐츠 모델 및 콘텐츠 조각 {#content-models-and-content-fragments}
 
-현재 콘텐츠 조각의 구조를 정의하는 모델은 HTTP API를 통해 노출되지 않습니다. 따라서 *소비자* 조각 모델(최소 이상)에 대해 알아야 합니다. 하지만 대부분의 정보는 페이로드에서 데이터 유형 등으로 유추할 수 있습니다. 정의의 일부입니다.
+현재 콘텐츠 조각의 구조를 정의하는 모델은 HTTP API를 통해 노출되지 않습니다. 따라서 *consumer*&#x200B;은(는) 페이로드에서 대부분의 정보를 데이터 형식 등으로 유추할 수 있지만 최소한 조각 모델에 대해 알고 있어야 합니다. 정의의 일부입니다.
 
 콘텐츠 조각을 만들려면 모델의 (내부 저장소) 경로를 제공해야 합니다.
 
@@ -248,7 +248,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 사용량은 특정 사용 사례와 함께 AEM 작성자 또는 게시 환경 사용 여부에 따라 다를 수 있습니다.
 
-* 작성자 인스턴스에 바인딩하는 것이 좋습니다([현재 이 API를 사용하여 게시할 조각을 복제하는 방법은 없습니다](/help/assets/assets-api-content-fragments.md#limitations)).
+* 작성자 인스턴스([에 바인딩되고 현재 이 API를 사용하여 게시할 조각을 복제할 방법이 없습니다](/help/assets/assets-api-content-fragments.md#limitations)).
 * AEM은 JSON 형식으로만 요청된 콘텐츠를 제공하므로 모두에서 게재할 수 있습니다.
 
    * AEM 작성자 인스턴스 저장 및 게재는 방화벽 뒤 미디어 라이브러리 애플리케이션에 충분할 수 있습니다.
@@ -257,11 +257,11 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 >[!CAUTION]
 >
->AEM 인스턴스의 Dispatcher 구성이 다음에 대한 액세스를 차단할 수 있습니다. `/api`.
+>AEM 인스턴스의 Dispatcher 구성이 `/api`에 대한 액세스를 차단할 수 있습니다.
 
 >[!NOTE]
 >
->자세한 내용은 [API 참조](/help/assets/assets-api-content-fragments.md#api-reference). 특히, [Adobe Experience Manager Assets API - 콘텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>자세한 내용은 [API 참조](/help/assets/assets-api-content-fragments.md#api-reference)를 참조하십시오. 특히, [Adobe Experience Manager Assets API - 콘텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
 
 ### 읽기/게재 {#read-delivery}
 
@@ -308,28 +308,31 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 몇 가지 제한 사항이 있습니다.
 
-* **컨텐츠 조각 모델은 현재 지원되지 않습니다**: 읽거나 만들 수 없습니다. 콘텐츠 조각을 만들거나 기존 콘텐츠 조각을 업데이트하려면 개발자가 콘텐츠 조각 모델에 대한 올바른 경로를 알고 있어야 합니다. 현재 이러한 기능에 대한 개요를 얻는 유일한 방법은 관리 UI를 사용하는 것입니다.
-* **참조는 무시됩니다.**. 현재 기존 콘텐츠 조각이 참조되는지 여부에 대한 검사가 없습니다. 따라서 예를 들어 콘텐츠 조각을 삭제하면 삭제된 콘텐츠 조각에 대한 참조가 포함된 페이지에 문제가 발생할 수 있습니다.
-* **JSON 데이터 유형** 의 REST API 출력 *JSON 데이터 유형* 현재 *문자열 기반 출력*.
+* **콘텐츠 조각 모델은 현재 지원되지 않습니다**: 읽거나 만들 수 없습니다. 콘텐츠 조각을 만들거나 기존 콘텐츠 조각을 업데이트하려면 개발자가 콘텐츠 조각 모델에 대한 올바른 경로를 알고 있어야 합니다. 현재 이러한 기능에 대한 개요를 얻는 유일한 방법은 관리 UI를 사용하는 것입니다.
+* **참조가 무시됩니다**. 현재 기존 콘텐츠 조각이 참조되는지 여부에 대한 검사가 없습니다. 따라서 예를 들어 콘텐츠 조각을 삭제하면 삭제된 콘텐츠 조각에 대한 참조가 포함된 페이지에 문제가 발생할 수 있습니다.
+* **JSON 데이터 형식** *JSON 데이터 형식*&#x200B;의 REST API 출력은 현재 *문자열 기반 출력*&#x200B;입니다.
 
 ## 상태 코드 및 오류 메시지 {#status-codes-and-error-messages}
 
 관련 상황에서 다음 상태 코드를 볼 수 있습니다.
 
-* **20** (OK) 다음과 같은 경우에 반환됨:
+* **200**(확인)
+다음과 같은 경우에 반환됨:
 
-   * 다음을 통해 콘텐츠 조각 요청 `GET`
-   * 다음을 통해 콘텐츠 조각 업데이트 성공 `PUT`
+   * `GET`을(를) 통해 콘텐츠 조각 요청
+   * `PUT`을(를) 통해 콘텐츠 조각을 업데이트했습니다.
 
-* **201** (생성됨) 다음과 같은 경우에 반환됨:
+* **201**(생성됨)
+다음과 같은 경우에 반환됨:
 
-   * 을(를) 통해 콘텐츠 조각을 성공적으로 만들기 `POST`
+   * `POST`을(를) 통해 콘텐츠 조각을 만들었습니다.
 
-* **404** (찾을 수 없음) 다음 경우에 반환됨:
+* **404**(찾을 수 없음)
+다음과 같은 경우에 반환됨:
 
    * 요청한 콘텐츠 조각이 존재하지 않습니다.
 
-* **500** (내부 서버 오류)
+* **500**(내부 서버 오류)
 
   >[!NOTE]
   >
@@ -340,7 +343,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
   다음은 생성된 오류 메시지(단공간)와 함께 이 오류 상태가 반환될 때의 일반적인 시나리오를 나열합니다.
 
-   * 상위 폴더가 없습니다(을 통해 콘텐츠 조각을 만들 때). `POST`)
+   * 상위 폴더가 없습니다(`POST`을(를) 통해 콘텐츠 조각을 만드는 경우).
    * 제공된 콘텐츠 조각 모델이 없거나(cq:model이 누락됨), 잘못된 경로 또는 권한 문제로 인해 읽을 수 없거나, 유효한 조각 모델이 없습니다.
 
       * `No content fragment model specified`

@@ -32,27 +32,27 @@ Adobe Experience Manager(AEM)는 AEM Forms의 필수적인 부분입니다. 따�
 
 AEM Forms 백업 전략에는 두 가지 유형의 백업이 포함됩니다.
 
-**시스템 이미지:** 하드 드라이브 또는 전체 컴퓨터가 작동을 중지하는 경우 컴퓨터의 내용을 복원하는 데 사용할 수 있는 전체 시스템 백업입니다. AEM Forms의 프로덕션 배포 전에만 시스템 이미지 백업이 필요합니다. 그런 다음 내부 기업 정책에 따라 시스템 이미지 백업이 필요한 빈도가 결정됩니다.
+**시스템 이미지:** 하드 드라이브 또는 전체 컴퓨터가 작동을 중지하는 경우 컴퓨터 내용을 복원하는 데 사용할 수 있는 전체 시스템 백업입니다. AEM Forms의 프로덕션 배포 전에만 시스템 이미지 백업이 필요합니다. 그런 다음 내부 기업 정책에 따라 시스템 이미지 백업이 필요한 빈도가 결정됩니다.
 
-**AEM Forms 관련 데이터:** 응용 프로그램 데이터는 데이터베이스, GDS(Global Document Storage) 및 AEM 저장소에 있으며 실시간으로 백업해야 합니다. GDS는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사용되는 디렉토리입니다. 이러한 파일에는 PDF, 정책 또는 양식 템플릿이 포함될 수 있습니다.
+**AEM Forms 관련 데이터:** 응용 프로그램 데이터가 데이터베이스, GDS(Global Document Storage) 및 AEM 저장소에 있으며 실시간으로 백업해야 합니다. GDS는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사용되는 디렉토리입니다. 이러한 파일에는 PDF, 정책 또는 양식 템플릿이 포함될 수 있습니다.
 
 >[!NOTE]
 >
->Content Services(사용 중단됨)가 설치되어 있으면 Content Storage Root 디렉터리도 백업합니다. 다음을 참조하십시오 [콘텐츠 저장소 루트 디렉터리(Content Services만 해당)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
+>Content Services(사용 중단됨)가 설치되어 있으면 Content Storage Root 디렉터리도 백업합니다. [콘텐츠 저장소 루트 디렉터리(Content Services만 해당)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only)를 참조하십시오.
 
 데이터베이스는 양식 객체, 서비스 구성, 프로세스 상태 및 GDS 파일에 대한 데이터베이스 참조를 저장하는 데 사용됩니다. 데이터베이스에서 문서 저장을 활성화한 경우 GDS의 영구 데이터와 문서도 데이터베이스에 저장됩니다. 다음 방법을 사용하여 데이터베이스를 백업 및 복구할 수 있습니다.
 
-* **스냅샷 백업** 모드는 AEM forms 시스템이 무기한 또는 지정된 시간(분) 동안 백업 모드에 있음을 나타내며, 그 이후에는 더 이상 백업 모드가 활성화되지 않습니다. 스냅샷 백업 모드를 시작하거나 종료하려면 다음 옵션 중 하나를 사용할 수 있습니다. 복구 시나리오 후에는 스냅샷 백업 모드를 사용하지 않아야 합니다.
+* **스냅샷 백업** 모드는 AEM Forms 시스템이 무기한으로 또는 지정된 시간(분) 동안 백업 모드에 있음을 나타내며, 그 이후에는 더 이상 백업 모드가 활성화되지 않습니다. 스냅샷 백업 모드를 시작하거나 종료하려면 다음 옵션 중 하나를 사용할 수 있습니다. 복구 시나리오 후에는 스냅샷 백업 모드를 사용하지 않아야 합니다.
 
    * 관리 콘솔의 [백업 설정] 페이지를 사용합니다. 스냅샷 모드로 전환하려면 안전 백업 모드에서 작동 확인란을 선택합니다. 스냅샷 모드를 종료하려면 확인란을 선택 취소합니다.
-   * LCBackupMode 스크립트 사용(참조) [데이터베이스, GDS 및 Content Storage Root 디렉터리 백업](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). 스냅샷 백업 모드를 종료하려면 스크립트 인수에서 다음을 설정합니다. `continuousCoverage` 매개 변수 `false` 또는 `leaveContinuousCoverage` 옵션을 선택합니다.
-   * 제공된 백업/복구 API를 사용합니다. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+   * LCBackupMode 스크립트를 사용합니다([데이터베이스, GDS 및 콘텐츠 저장소 루트 디렉터리 백업](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories) 참조). 스냅숏 백업 모드를 종료하려면 스크립트 인수에서 `continuousCoverage` 매개 변수를 `false`(으)로 설정하거나 `leaveContinuousCoverage` 옵션을 사용하십시오.
+   * 제공된 백업/복구 API를 사용하십시오. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
-* **롤링 백업** 모드는 시스템이 항상 백업 모드에 있음을 나타내며, 이전 세션이 릴리스되는 즉시 새 백업 모드 세션이 시작됩니다. 롤링 백업 모드와 관련된 시간 초과가 없습니다. LCBackupMode 스크립트나 API가 롤링 백업 모드를 종료하기 위해 호출되면 새로운 롤링 백업 모드 세션이 시작됩니다. 이 모드는 지속적인 백업을 지원하면서도 GDS 디렉토리에서 오래된 문서와 필요하지 않은 문서를 정리할 수 있도록 하는 데 유용합니다. [백업 및 복구] 페이지에서는 롤링 백업 모드를 지원하지 않습니다. 복구 시나리오 후에도 롤링 백업 모드가 계속 활성화됩니다. LCBackupMode 스크립트를 사용하여 연속 백업 모드(롤링 백업 모드)에서 `leaveContinuousCoverage` 옵션을 선택합니다.
+* **롤링 백업** 모드는 시스템이 항상 백업 모드에 있음을 나타내며, 이전 세션이 릴리스되는 즉시 새 백업 모드 세션이 시작됩니다. 롤링 백업 모드와 관련된 시간 초과가 없습니다. LCBackupMode 스크립트나 API가 롤링 백업 모드를 종료하기 위해 호출되면 새로운 롤링 백업 모드 세션이 시작됩니다. 이 모드는 지속적인 백업을 지원하면서도 GDS 디렉토리에서 오래된 문서와 필요하지 않은 문서를 정리할 수 있도록 하는 데 유용합니다. [백업 및 복구] 페이지에서는 롤링 백업 모드를 지원하지 않습니다. 복구 시나리오 후에도 롤링 백업 모드가 계속 활성화됩니다. LCBackupMode 스크립트를 `leaveContinuousCoverage` 옵션과 함께 사용하여 연속 백업 모드(롤링 백업 모드)를 그대로 둘 수 있습니다.
 
 >[!NOTE]
 >
->롤링 백업 모드를 종료하면 새 백업 모드 세션이 즉시 시작됩니다. 롤링 백업 모드를 완전히 비활성화하려면 `leaveContinuousCoverage` 스크립트의 옵션입니다. 기존 순환 백업 세션을 덮어씁니다. 스냅샷 백업 모드에서는 일반적인 백업 모드를 그대로 둘 수 있습니다.
+>롤링 백업 모드를 종료하면 새 백업 모드 세션이 즉시 시작됩니다. 롤링 백업 모드를 완전히 비활성화하려면 스크립트에서 `leaveContinuousCoverage` 옵션을 사용하여 기존 롤링 백업 세션을 덮어씁니다. 스냅샷 백업 모드에서는 일반적인 백업 모드를 그대로 둘 수 있습니다.
 
 데이터 손실을 방지하려면 GDS 및 Content Storage Root 디렉터리 문서가 데이터베이스 참조와 상호 연관되도록 AEM Forms 관련 데이터를 백업해야 합니다.
 
@@ -81,10 +81,10 @@ AEM Forms 백업 전략에는 두 가지 유형의 백업이 포함됩니다.
 1. 유지 관리 모드로 시스템을 시작합니다.
 1. 다음을 수행하여 Form Manager가 유지 관리 모드에서 AEM Forms와 동기화되도록 합니다.
 
-   1. https://으로 이동&lt;*server*>:&lt;*포트*>/lc/fm에서 관리자/암호 자격 증명을 사용하여 로그인합니다.
+   1. https://&lt;*server*>:&lt;*port*>/lc/fm으로 이동한 다음 관리자/암호 자격 증명을 사용하여 로그인합니다.
    1. 오른쪽 상단에서 사용자(이 경우 수퍼 관리자)의 이름을 클릭합니다.
-   1. 클릭 **관리 옵션**.
-   1. 클릭 **시작** 저장소에서 에셋을 동기화합니다.
+   1. **관리 옵션**&#x200B;을 클릭합니다.
+   1. 저장소의 자산을 동기화하려면 **시작**&#x200B;을 클릭하세요.
 
 1. 클러스터된 환경에서 기본 노드(AEM과 관련하여)는 보조 노드보다 먼저 작동해야 합니다.
 1. 시스템의 정상 작동 여부를 확인할 때까지 웹, SOAP 또는 EJB 프로세스 이니시에이터와 같은 내부 또는 외부 소스에서 프로세스가 시작되지 않도록 합니다.
@@ -105,10 +105,10 @@ AEM Forms 백업 전략에는 두 가지 유형의 백업이 포함됩니다.
 
 클러스터된 환경에서는 백업 전과 복구 후 저장소의 파일 시스템 경로 구성이 모든 클러스터 노드에 대해 동일해야 합니다.
 
-사용 `LCSetGDS`스크립트 `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` 파일 시스템 경로를 변경한 후 GDS 경로를 설정할 폴더입니다. 다음을 참조하십시오. `ReadMe.txt` 동일한 폴더에 파일을 저장합니다. 이전 GDS 디렉토리 경로를 사용할 수 없는 경우 `LCSetGDS` AEM forms를 시작하기 전에 스크립트를 사용하여 GDS에 대한 새 경로를 설정해야 합니다.
+파일 시스템 경로를 변경한 후 `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` 폴더의 `LCSetGDS`스크립트를 사용하여 GDS 경로를 설정하십시오. 자세한 내용은 같은 폴더에 있는 `ReadMe.txt` 파일을 참조하십시오. 이전 GDS 디렉터리 경로를 사용할 수 없는 경우 AEM Forms를 시작하기 전에 `LCSetGDS` 스크립트를 사용하여 새 경로를 GDS로 설정해야 합니다.
 
 >[!NOTE]
 >
->이 상황은 이 스크립트를 사용하여 GDS 위치를 변경해야 하는 유일한 환경입니다. AEM Forms가 실행되는 동안 GDS 위치를 변경하려면 관리 콘솔을 사용합니다. (참조: [일반 AEM 양식 설정 구성](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
+>이 상황은 이 스크립트를 사용하여 GDS 위치를 변경해야 하는 유일한 환경입니다. AEM Forms가 실행되는 동안 GDS 위치를 변경하려면 관리 콘솔을 사용합니다. ([일반 AEM 양식 설정 구성](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*을 참조하십시오.) *
 
 GDS 경로를 설정한 후 Forms 서버를 유지 관리 모드로 시작하고 관리 콘솔을 사용하여 새 노드의 나머지 파일 시스템 경로를 업데이트합니다. 필요한 구성이 모두 업데이트되었는지 확인한 후 AEM 양식을 다시 시작하고 테스트합니다.

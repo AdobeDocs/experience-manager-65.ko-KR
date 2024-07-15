@@ -1,6 +1,6 @@
 ---
 title: 선택 사항 - Adobe Experience Manager으로 단일 페이지 애플리케이션(SPA)을 만드는 방법
-description: Adobe Experience Manager(AEM) Headless 개발자 여정의 이 선택적 계속에서 AEM이 Headless 전달을 기존의 전체 스택 CMS 기능과 결합하는 방법과 AEM SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법을 알아봅니다.
+description: Adobe Experience Manager(AEM) Headless 개발자 여정의 이 선택적 계속에서는 AEM이 Headless 전달을 기존의 전체 스택 CMS 기능과 결합하는 방법과 AEM의 SPA 편집기 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법에 대해 알아봅니다.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
@@ -14,7 +14,7 @@ ht-degree: 76%
 
 # AEM을 통해 단일 페이지 애플리케이션(SPA)을 제작하는 방법 {#create-spa}
 
-의 이 선택적 연속에서 [AEM Headless 개발자 여정,](overview.md) Adobe Experience Manager(AEM)에서 headless 전달을 기존의 전체 스택 CMS 기능과 결합하는 방법과 SPA Editor 프레임워크를 사용하여 편집 가능한 SPAAEM 를 만들고 외부 SPA을 통합하여 필요에 따라 편집 기능을 활성화하는 방법에 대해 알아봅니다.
+[AEM Headless 개발자 여정의 선택적 연속](overview.md)에서 AEM(Adobe Experience Manager)이 Headless 전달을 기존의 전체 스택 CMS 기능과 결합하는 방법과 AEM의 SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 만들고 외부 SPA을 통합하여 필요에 따라 편집 기능을 활성화하는 방법에 대해 알아봅니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
@@ -29,7 +29,7 @@ ht-degree: 76%
 
 따라서 이제 첫 번째 AEM Headless 프로젝트와 함께 시작했거나 이러한 작업을 수행하는 데 필요한 지식을 보유하고 있습니다. 축하합니다!
 
-그러면 이 지속적인 여정의 선택적인 추가 구성을 읽는 이유는 무엇입니까? 아마, 당신은 [시작](getting-started.md#integration-levels)에서는 AEM이 headless 전달 및 기존 전체 스택 모델을 지원할 뿐만 아니라 두 가지 장점을 모두 결합한 하이브리드 모델을 지원할 수 있는 방법에 대한 간략한 논의가 있었습니다. 기존 Headless 모델은 아니지만 해당 하이브리드 모델은 특정 프로젝트에 탁월한 유연성을 제공할 수 있습니다.
+그러면 이 지속적인 여정의 선택적인 추가 구성을 읽는 이유는 무엇입니까? [시작하기](getting-started.md#integration-levels)에서 AEM이 Headless 전달 및 기존 전체 스택 모델을 지원할 뿐만 아니라 두 가지 장점을 모두 결합한 하이브리드 모델을 지원할 수 있는 방법에 대해 간략하게 설명했을 가능성이 있습니다. 기존 Headless 모델은 아니지만 해당 하이브리드 모델은 특정 프로젝트에 탁월한 유연성을 제공할 수 있습니다.
 
 이 문서는 AEM Headless에 대한 지식을 기본으로 하며, 이를 통해 AEM에서 편집할 수 있는 자체 단일 페이지 애플리케이션(SPA)을 제작하는 방법에 대해 자세히 살펴볼 수 있습니다. 이러한 방식으로 컨텐츠를 만들고 SPA에 헤드리스 없이 전달할 수 있지만, 해당 SPA은 AEM에서 편집할 수 있습니다.
 
@@ -50,7 +50,7 @@ AEM에서 SPA로 작업을 시작하기 전에 알아 두어야 할 여러 요�
 
 * React 또는 Angular 프레임워크를 통해 SPA를 만드는 개발 경험
 * 콘텐츠 조각을 만들고 편집기를 사용하는 기본 AEM 기술
-* 문서를 검토하십시오. [AEM 헤드풀 및 헤드리스](/help/sites-developing/headful-headless.md) 가능한 다양한 SPA 통합 수준을 이해합니다.
+* [AEM의 Headful과 Headless](/help/sites-developing/headful-headless.md) 문서를 검토하여 SPA 통합의 가능한 다양한 수준을 이해하십시오.
 
 ### 도구 {#tools}
 

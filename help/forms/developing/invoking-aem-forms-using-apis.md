@@ -1,6 +1,6 @@
 ---
 title: API를 사용하여 AEM Forms을 호출하는 방법
-description: Java&trade, API, 웹 서비스, 원격 및 REST를 사용하여 AEM Forms 서비스를 호출하는 방법을 알아봅니다.
+description: Java&trade; API, 웹 서비스, 원격 및 REST를 사용하여 AEM Forms 서비스를 호출하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # API를 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-apis}
 
-**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
+**이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 Adobe Experience Manager Forms은 공유 인프라 내에서 작동하는 서비스로 구성된 J2EE 기반 엔터프라이즈 소프트웨어입니다. 서비스 작업은 일반적으로 문서를 사용하거나 생성합니다. AEM Forms을 사용하면 통합적이고 통합된 서비스 세트에서 Forms Workflow을 전자 양식, 문서 보안 및 문서 생성과 결합할 수 있습니다. 이러한 서비스는 방화벽 내부 및 외부에서 액세스할 수 있습니다.
 

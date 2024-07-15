@@ -27,7 +27,7 @@ ht-degree: 24%
 
 Adobe Experience Manager Assets Brand Portal을 사용하면 승인된 브랜드 자산을 Adobe Experience Manager Assets에서 Brand Portal으로 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
 
-AEM Assets은 Brand Portal 테넌트의 인증을 위해 Adobe Identity Management 서비스(IMS) 계정 토큰을 조달하는 Adobe Developer 콘솔을 통해 Brand Portal으로 구성됩니다.
+AEM Assets은 Brand Portal 테넌트의 인증을 위해 IMS(Adobe Identity Management Services) 계정 토큰을 조달하는 Adobe Developer Console을 통해 Brand Portal으로 구성됩니다.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ AEM Assets은 Brand Portal 테넌트의 인증을 위해 Adobe Identity Manageme
 >
 >***기존 고객 전용***
 >
->Adobe은 기존 OAuth 게이트웨이 구성을 계속 사용할 것을 권장합니다. 기존 OAuth 게이트웨이 구성 문제가 발생하는 경우 기존 구성을 삭제하고 Adobe Developer 콘솔을 통해 구성을 만드십시오.
+>Adobe은 기존 OAuth 게이트웨이 구성을 계속 사용할 것을 권장합니다. 기존 OAuth 게이트웨이 구성 문제가 발생하는 경우 기존 구성을 삭제하고 Adobe Developer Console을 통해 구성을 만드십시오.
 
 <!--
 This help describes the following two use-cases:
@@ -73,17 +73,17 @@ Brand Portal을 사용하여 AEM Assets를 구성하려면 다음 항목이 필�
 
 AEM 작성자 인스턴스를 설정하려면 AEM 6.5가 있어야 합니다. AEM을 실행하지 않은 경우 다음 위치에서 다운로드하십시오.
 
-* 기존 AEM AEM 고객의 경우 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com).
+* 기존 AEM 고객의 경우 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com)에서 AEM 6.5를 다운로드하십시오.
 
-* Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) AEM 6.5를 요청합니다.
+* Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)을 사용하여 AEM 6.5를 요청하십시오.
 
-AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 를 참조하십시오. [배포 및 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
+AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 [배포 및 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install)를 참조하십시오.
 
 ### AEM 최신 서비스 팩 다운로드 및 설치 {#servicepack}
 
-자세한 지침은 현재 를 참조하십시오. [AEM 6.5 서비스 팩 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html).
+자세한 지침은 현재 [AEM 6.5 서비스 팩 릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)를 참조하세요.
 
-**Adobe 고객 지원 문의** 최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우.
+최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 **Adobe 고객 지원 센터에 문의**&#x200B;하십시오.
 
 ## 구성 만들기 {#configure-new-integration-65}
 
@@ -91,7 +91,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 >
 >2024년 6월 이후부터는 새 JWT 자격 증명을 만들 수 없습니다. 앞으로 OAuth 자격 증명만 생성됩니다. OAuth 구성 만들기에 대해 자세히 알아보십시오.
 
-Brand Portal을 사용하여 AEM Assets을 구성하려면 AEM Assets 작성자 인스턴스와 Adobe Developer 콘솔 모두에서 구성해야 합니다.
+Brand Portal을 사용하여 AEM Assets을 구성하려면 AEM Assets 작성자 인스턴스와 Adobe Developer Console 모두에서 구성해야 합니다.
 
 1. Adobe 개발자 콘솔에서 Brand Portal 테넌트(조직)에 대한 프로젝트를 만듭니다.
 1. Experience Manager Assets에서 IMS 계정 및 Brand Portal 끝점(조직 URL)을 사용하여 Brand Portal 클라우드 서비스를 구성합니다.
@@ -117,17 +117,17 @@ Brand Portal을 사용하여 AEM Assets을 처음 구성하는 경우 나열된 
 
 지정된 시퀀스에서 다음 단계를 수행하여 Brand Portal을 사용하여 Experience Manager Assets을 구성합니다.
 
-1. [Adobe Developer 콘솔에서 OAuth 자격 증명 구성](#config-oauth)
+1. [Adobe Developer Console에서 OAuth 자격 증명 구성](#config-oauth)
 1. [OAuth를 사용하여 새 Adobe IMS 통합 만들기](#create-ims-account-configuration)
 1. [클라우드 서비스 구성](#configure-cloud-service)
 
-#### Adobe Developer 콘솔에서 OAuth 자격 증명 구성 {#config-oauth}
+#### Adobe Developer Console에서 OAuth 자격 증명 구성 {#config-oauth}
 
-[Adobe Developer 콘솔에서 OAuth 자격 증명 구성](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console)  Brand Portal API를 선택합니다.
+[Adobe Developer Console에서 OAuth 자격 증명을 구성하고](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) Brand Portal API를 선택합니다.
 
 #### OAuth를 사용하여 새 Adobe IMS 통합 만들기 {#create-ims-account-configuration}
 
-[OAuth를 사용하여 새 Adobe IMS 통합 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) 드롭다운에서 Brand Portal 를 선택합니다.
+[OAuth를 사용하여 새 Adobe IMS 통합을 만들고](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) 드롭다운에서 Brand Portal을 선택합니다.
 
 #### 클라우드 서비스 구성 {#configure-cloud-service}
 
@@ -323,11 +323,11 @@ To configure the IMS account:
 
    [IMS 계정을 구성](#create-ims-account-configuration)하는 동안 만든 IMS 구성을 선택합니다.
 
-   다음에서 **[!UICONTROL 서비스 URL]** 필드에 Brand Portal 테넌트 URL을 지정합니다.
+   **[!UICONTROL 서비스 URL]** 필드에 Brand Portal 테넌트 URL을 지정하십시오.
 
    ![Brand Portal 구성 창](assets/create-cloud-service.png)
 
-1. 클릭 **[!UICONTROL 저장 및 닫기]**. 클라우드 구성이 생성됩니다.
+1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 클라우드 구성이 생성됩니다.
 
    이제 AEM Assets 작성자 인스턴스가 Brand Portal 테넌트로 구성됩니다.
 

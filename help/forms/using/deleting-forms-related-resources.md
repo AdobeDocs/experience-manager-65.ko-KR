@@ -23,8 +23,8 @@ ht-degree: 0%
 
 ## 양식을 삭제하는 방법 {#how-to-delete-a-form}
 
-1. 에 액세스하여 AEM Forms 사용자 인터페이스에 로그인합니다. `https://[hostname]:'port'/aem/forms.html.`
-1. 삭제할 양식으로 이동하여 선택합니다. 삭제 를 클릭합니다 ![aem6forms_delete2](assets/aem6forms_delete2.png) 을 클릭하고 삭제 작업을 확인합니다.
+1. `https://[hostname]:'port'/aem/forms.html.`에 액세스하여 AEM Forms 사용자 인터페이스에 로그인합니다
+1. 삭제할 양식으로 이동하여 선택합니다. 도구 모음에서 ![aem6forms_delete2](assets/aem6forms_delete2.png) 삭제를 클릭하고 삭제 작업을 확인합니다.
 
    >[!NOTE]
    >
@@ -44,6 +44,6 @@ ht-degree: 0%
 
 AEM Forms에서 XFA 양식 템플릿은 적응형 양식 또는 다른 XFA 양식 템플릿으로 참조할 수 있습니다. 또한 템플릿은 리소스 또는 다른 XFA 템플릿을 참조할 수 있습니다.
 
-적응형 양식에서 참조하는 XFA 양식은 적응형 양식을 손상시킬 수 있으므로 삭제하지 않는 것이 좋습니다. 적응형 양식이 XFA 양식을 참조하는 경우 해당 필드가 바인딩됩니다. XFA를 삭제한 후 적응형 양식은 해당 필드를 XFA 필드와 동기화할 수 없으며 해당 필드에 대한 오류 메시지를 표시합니다. 참조된 XFA 삭제의 영향 및 더티 AF에 대한 자세한 내용은 [참조된 XFA 양식 업데이트](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
+적응형 양식에서 참조하는 XFA 양식은 적응형 양식을 손상시킬 수 있으므로 삭제하지 않는 것이 좋습니다. 적응형 양식이 XFA 양식을 참조하는 경우 해당 필드가 바인딩됩니다. XFA를 삭제한 후 적응형 양식은 해당 필드를 XFA 필드와 동기화할 수 없으며 해당 필드에 대한 오류 메시지를 표시합니다. 참조된 XFA 삭제의 영향 및 더티 AF에 대한 자세한 내용은 [참조된 XFA 양식 업데이트](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p)를 참조하십시오.
 
 이러한 XFA 양식을 삭제하려면 적응형 양식을 업데이트하고 XFA 필드가 있는 바인딩을 제거합니다.

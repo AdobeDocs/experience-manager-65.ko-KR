@@ -1,5 +1,5 @@
 ---
-title: PDF 서비스 Java API 빠른 시작(SOAP) 생성
+title: PDF 서비스 Java API 빠른 시작 생성(SOAP)
 description: PDF 생성 서비스를 사용하여 Microsoft Word 문서를 PDF 문서로 변환하고, HTML 컨텐츠를 PDF 문서로 변환하고, PDF 문서를 Java API를 사용하여 RTF 파일로 변환할 수 있습니다.
 contentOwner: admin
 content-type: reference
@@ -30,11 +30,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍의 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms을 사용한 프로그래밍의 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 Microsoft Word 문서를 PDF 문서로 변환 {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
-다음 코드 예제에서는 이름이 인 Word 파일을 *Loan.doc* (이)라는 PDF 문서에 *Loan.pdf*. (참조: [Word 문서를 PDF 문서로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
+다음 코드 예제에서는 Word 파일 *Loan.doc*&#x200B;을(를) *Loan.pdf*&#x200B;이라는 PDF 문서로 변환합니다. ([Word 문서를 PDF 문서로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents)을 참조하십시오.)
 
 ```java
  /*
@@ -148,7 +148,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환 {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 https://www.adobe.com에 있는 HTML 콘텐츠를 라는 PDF 문서로 변환합니다. *AdobeHTML.pdf*. (참조: [HTML 문서를 PDF 문서로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
+다음 Java 코드 예제에서는 https://www.adobe.com에 있는 HTML 콘텐츠를 *AdobeHTML.pdf*&#x200B;이라는 PDF 문서로 변환합니다. ([HTML 문서를 PDF 문서로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)을 참조하십시오.)
 
 ```java
  /*
@@ -254,7 +254,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서를 RTF 파일로 변환(SOAP 모드) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
 
-다음 코드 예제에서는 PDF 문서 *Loan.pdf* RTF 문서 *Loan.rtf*. (참조: [PDF 문서를 이미지가 아닌 형식으로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
+다음 코드 예제에서는 PDF 문서 *Loan.pdf*&#x200B;을(를) RTF 문서 *Loan.rtf*(으)로 변환합니다. [PDF 문서를 이미지가 아닌 형식으로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats)을 참조하십시오.
 
 ```java
  /*

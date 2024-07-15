@@ -57,14 +57,14 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 | # | 문서 | 설명 |
 |---|---|---|
 | 0 | AEM Headless 콘텐츠 작성자 여정 | 이 문서 |
-| 1 | [AEM Headless 작성 - 소개](introduction.md) | Adobe Experience Manager의 Headless 기능에 대한 소개 및 프로젝트 콘텐츠를 작성하는 방법. |
+| 1 | [AEM Headless용 작성 - 소개](introduction.md) | Adobe Experience Manager의 Headless 기능에 대한 소개 및 프로젝트 콘텐츠를 작성하는 방법. |
 | 2 | [AEM을 통한 Headless 작성 기본 사항 - 소개](basics.md) | 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다. |
 | 3 | [콘텐츠 조각의 참조 사용에 대해 알아보기](references.md) | 콘텐츠 조각의 참조를 사용하는 방법에 대해 알아봅니다. 또한 중첩된 조각을 사용하여 Headless CMS에 대한 여러 수준의 구조를 만들고 관리할 수 있습니다. |
 | 4 | [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](metadata-tagging.md) | 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기. |
 
 ## 다음 단계 {#what-is-next}
 
-이제 Adobe Headless 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 진행하여 이 문서를 읽어보시기 바랍니다. [AEM Headless 작성 - 소개.](introduction.md)
+이제 Adobe Headless 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 진행하여 [AEM Headless 작성 - 소개 문서를 읽어보시기 바랍니다.](introduction.md)
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

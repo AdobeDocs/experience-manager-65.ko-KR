@@ -63,10 +63,10 @@ AEM Forms on JEE가 지원하는 운영 체제에 대한 보안 정보는 다음
   </tr>
   <tr>
    <td>Oracle Linux® 7 업데이트 3</td>
-   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">릴리스 7에 대한 보안 안내서</a><br /> </td>
+   <td>릴리스 7</a><br />에 대한 <a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">보안 가이드 </td>
   </tr>
   <tr>
-   <td>센트OS 7<sup> </sup></td>
+   <td>CentOS 7<sup> </sup></td>
    <td><a href="https://wiki.centos.org/HowTos/OS_Protection" target="_blank">보호 설명서</a></td>
   </tr>
  </tbody>
@@ -96,7 +96,7 @@ JEE의 AEM Forms이 지원하는 애플리케이션 서버에 대한 보안 정�
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>에서 WebLogic 보안 이해 검색 <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
+   <td><p><a href="https://docs.oracle.com/">https://docs.oracle.com/</a>에서 WebLogic 보안 이해를 검색하십시오.</p> </td>
   </tr>
   <tr>
    <td><p>IBM® WebSphere®</p> </td>
@@ -142,12 +142,12 @@ JEE의 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보는 �
   </tr>
   <tr>
    <td><p>Oracle® 12c</p> </td>
-   <td><p>의 보안 챕터를 참조하십시오. <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g 설명서</a></p> </td>
+   <td><p><a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g 설명서</a>의 보안 챕터를 참조하십시오.</p> </td>
   </tr>
  </tbody>
 </table>
 
-이 표에서는 JEE에서 AEM Forms 구성 프로세스 중에 열어야 하는 기본 포트에 대해 설명합니다. https를 통해 연결하는 경우 그에 따라 포트 정보와 IP 주소를 조정합니다. 포트 구성에 대한 자세한 내용은 *JEE에 AEM Forms 설치 및 배포* 애플리케이션 서버용 문서입니다.
+이 표에서는 JEE에서 AEM Forms 구성 프로세스 중에 열어야 하는 기본 포트에 대해 설명합니다. https를 통해 연결하는 경우 그에 따라 포트 정보와 IP 주소를 조정합니다. 포트 구성에 대한 자세한 내용은 응용 프로그램 서버용 *JEE에 AEM Forms 설치 및 배포* 문서를 참조하십시오.
 
 <table>
  <thead>
@@ -214,7 +214,7 @@ JBoss® Application Server는 8080을 기본 HTTP 포트로 사용합니다. JBo
 
    클러스터 설치: [JBoss® 루트]/domain/configuration/domain.xml
 
-1. 값 변경 **포트** 의 속성 **&lt;socket-binding>** 사용자 지정 포트 번호로 태그 지정합니다. 예를 들어, 다음은 포트 8090을 사용합니다.
+1. **&lt;socket-binding>** 태그의 **port** 특성 값을 사용자 지정 포트 번호로 변경합니다. 예를 들어, 다음은 포트 8090을 사용합니다.
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
@@ -241,7 +241,7 @@ AEM Forms on JEE는 AEM Forms on JEE 데이터베이스를 사용하여 중요�
 
 JEE에서 AEM Forms을 실행하는 데 사용되는 애플리케이션 서버에는 애플리케이션 서버에 구성된 데이터 소스를 통해 데이터베이스에 액세스하기 위한 자체 구성이 필요합니다. 응용 프로그램 서버가 데이터 소스 구성 파일의 일반 텍스트로 데이터베이스 암호를 노출하지 않도록 합니다.
 
-lc_[데이터베이스].xml 파일에는 일반 텍스트 형식의 암호를 사용할 수 없습니다. 애플리케이션 서버의 암호를 암호화하는 방법에 대해서는 애플리케이션 서버 공급업체에 문의하십시오.
+lc_[database].xml 파일에는 일반 텍스트 형식의 암호를 사용할 수 없습니다. 애플리케이션 서버의 암호를 암호화하는 방법에 대해서는 애플리케이션 서버 공급업체에 문의하십시오.
 
 >[!NOTE]
 >

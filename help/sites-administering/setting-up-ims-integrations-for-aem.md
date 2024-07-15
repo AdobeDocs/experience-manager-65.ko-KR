@@ -16,7 +16,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->Adobe 고객은 [Adobe Developer 콘솔](https://developer.adobe.com/console) 다양한 API에 액세스할 수 있는 자격 증명을 생성할 수 있습니다. 고객은 OAuth 서버 간 자격 증명에서 단일 페이지 앱에 이르기까지 다양한 자격 증명 유형 중에서 선택합니다. 이제 JWT(자격 증명 유형 서비스 계정)는 더 이상 사용되지 않으며, 서비스 팩 20의 OAuth 서버 간 자격 증명이 제공됩니다. 이 변경 사항은 다운로드할 수 있는 핫픽스를 사용하여 서비스 팩 11부터 서비스 팩 20까지 이전 서비스 팩으로 다시 포팅할 수 있습니다 [여기](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Adobe 고객은 [Adobe Developer Console](https://developer.adobe.com/console)을(를) 사용하여 다양한 API에 액세스할 수 있는 자격 증명을 생성합니다. 고객은 OAuth 서버 간 자격 증명에서 단일 페이지 앱에 이르기까지 다양한 자격 증명 유형 중에서 선택합니다. 이제 JWT(자격 증명 유형 서비스 계정)는 더 이상 사용되지 않으며, 서비스 팩 20의 OAuth 서버 간 자격 증명이 제공됩니다. 이 변경 사항은 [여기](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip)에서 다운로드할 수 있는 핫픽스를 사용하여 서비스 팩 11부터 서비스 팩 20까지 이전 서비스 팩으로 다시 포팅할 수 있습니다.
 
 Adobe Experience Manager(AEM)는 다른 많은 Adobe 솔루션과 통합할 수 있습니다. 예를 들어 Adobe Target, Adobe Analytics 등이 있습니다.
 
@@ -40,7 +40,7 @@ Adobe Experience Manager(AEM)는 다른 많은 Adobe 솔루션과 통합할 수 
 
 ## Developer Console의 자격 증명 {#credentials-in-the-developer-console}
 
-첫 번째 단계로 Adobe Developer 콘솔에서 OAuth 자격 증명을 구성해야 합니다.
+첫 번째 단계로 Adobe Developer Console에서 OAuth 자격 증명을 구성해야 합니다.
 
 이 구성을 수행하는 방법에 대한 자세한 내용은 요구 사항에 따라 Developer Console 설명서를 참조하십시오.
 
@@ -103,4 +103,4 @@ JWT 자격 증명을 기반으로 기존 Adobe IMS 통합을 마이그레이션�
    ![OAuth 세부 정보 작성](assets/ims-migrate-jwt-complete-oauth-details.png)
 
 1. **저장 믿 닫기**를 사용하여 업데이트 내용을 유지합니다.
-콘솔로 돌아가면 **JWT 자격 증명(더 이상 사용되지 않음)** 경고가 사라졌습니다.
+콘솔로 돌아오면 **JWT 자격 증명(더 이상 사용되지 않음)** 경고가 사라집니다.

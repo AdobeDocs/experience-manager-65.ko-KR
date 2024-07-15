@@ -37,7 +37,7 @@ ht-degree: 4%
 
 ## Oak {#oak}
 
-[Oak](/help/sites-deploying/platform.md) 는 AEM의 기반이 되는 확장 가능하고 성능이 뛰어난 계층적 콘텐츠 저장소입니다.
+[Oak](/help/sites-deploying/platform.md)은(는) AEM의 기반이 되는 확장 가능하고 성능이 뛰어난 계층 구조 콘텐츠 저장소입니다.
 
 <table>
  <tbody>
@@ -63,7 +63,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td>Oak에서 검색</td>
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">쿼리 및 색인 생성에 대한 우수 사례</a><br /> </td>
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">쿼리 및 색인화 모범 사례</a><br /> </td>
    <td>콘텐츠를 색인화하는 방법에 대한 모범 사례를 설명합니다.</td>
   </tr>
  </tbody>
@@ -73,9 +73,9 @@ ht-degree: 4%
 
 AEM Communities을 사용하면 On-Premise 커뮤니티를 간편하게 만들고 관리할 수 있습니다. AEM Communities에 대한 우수 사례는 여기에 설명되어 있습니다.
 
-[커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) - 사용자 생성 컨텐츠(UGC)에 대한 새로운 공유 스토리지 기능과 기본 컨텐츠 선택 시 고려할 사항에 대해 설명합니다. [토폴로지](/help/communities/topologies.md).
+[커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) - 사용자 생성 콘텐츠(UGC)에 대한 새 공유 저장소 기능과 기본 [토폴로지](/help/communities/topologies.md)를 선택할 때 고려할 사항에 대해 설명합니다.
 
-[커뮤니티에 대한 권장 배포](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - 커뮤니티에 권장되는 배포를 설명합니다. |
+[커뮤니티에 대한 권장 배포](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - 커뮤니티에 대한 권장 배포를 설명합니다. |
 
 ## UI {#ui}
 
@@ -94,11 +94,11 @@ AEM에는 현재 동일한 릴리스에 클래식 UI와 터치에 적합한 UI�
   <tr>
    <td>품질 보증 우수 사례</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">품질 보증 우수 사례</a></td>
-   <td>에 대한 성능 테스트를 위해 테스트 개념을 정의하는 것과 관련된 문제에 대한 표준화된 개요입니다. <em>게시</em> 환경. 이는 주로 QA 엔지니어, 프로젝트 관리자 및 시스템 관리자가 관심을 가질 사항입니다.</td>
+   <td><em>게시</em> 환경의 성능 테스트를 위해 테스트 개념을 정의하는 것과 관련된 문제에 대한 표준화된 개요입니다. 이는 주로 QA 엔지니어, 프로젝트 관리자 및 시스템 관리자가 관심을 가질 사항입니다.</td>
   </tr>
   <tr>
-   <td>CDN에 Dispatcher 사용</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">CDN에 Dispatcher 사용</a></td>
+   <td>콘텐츠 전송 네트워크에 Dispatcher 사용</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">콘텐츠 전송 네트워크에 Dispatcher 사용</a></td>
    <td>Akamai Edge Delivery 또는 Amazon Cloud Front와 같은 CDN(컨텐츠 전달 네트워크)은 최종 사용자에게 가까운 위치에서 컨텐츠를 전달합니다.</td>
   </tr>
   <tr>
@@ -109,7 +109,7 @@ AEM에는 현재 동일한 릴리스에 클래식 UI와 터치에 적합한 UI�
   <tr>
    <td>성능 테스트</td>
    <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">성능 테스트 우수 사례</a></td>
-   <td>AEM 배포에서 성능 테스트를 실행하는 모범 사례에 대해 설명합니다.<br /> </td>
+   <td>AEM 배포에서 성능 테스트를 실행하기 위한 모범 사례를 설명합니다.<br /> </td>
   </tr>
  </tbody>
 </table>

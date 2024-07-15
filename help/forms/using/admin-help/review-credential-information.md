@@ -22,7 +22,7 @@ ht-degree: 0%
 
 1. 웹 브라우저를 열고 다음 URL을 입력합니다.
 
-   http://localhost:port/ReaderExtensions (여기서 *포트* 은 애플리케이션 서버의 포트 번호입니다.
+   http://localhost:port/ReaderExtensions (*port*&#x200B;은(는) 응용 프로그램 서버의 포트 번호입니다.)
 
 1. 기본 사용자 이름 및 암호를 사용하여 로그인합니다.
 

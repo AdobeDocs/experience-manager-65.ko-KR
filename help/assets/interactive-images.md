@@ -31,13 +31,13 @@ ht-degree: 1%
 
 ## 대화형 이미지 배너가 생성되는 방식 보기 {#watch-how-interactive-image-banners-are-created}
 
-연습: [대화형 이미지 배너를 만드는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10분 33초). 또한 대화형 이미지 배너를 미리 보고, 편집하고, 전달하는 방법도 알아봅니다.
+[대화형 이미지 배너를 만드는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10분 33초)에 대해 연습하세요. 또한 대화형 이미지 배너를 미리 보고, 편집하고, 전달하는 방법도 알아봅니다.
 
 ## 빠른 시작: 대화형 이미지 {#quick-start-interactive-images}
 
 다음 단계별 워크플로 설명은 Adobe Experience Manager Assets에서 대화형 이미지를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다.
 
-다음 항목을 찾습니다. **예** 일부 빠른 시작 작업 내 제목 여기에는 아직 대화형 이미지가 추가되지 않은 다음 웹 페이지 예를 기반으로 하는 간단한 자습서가 포함되어 있습니다.
+일부 빠른 시작 작업에서 **예제** 제목을 찾습니다. 여기에는 아직 대화형 이미지가 추가되지 않은 다음 웹 페이지 예를 기반으로 하는 간단한 자습서가 포함되어 있습니다.
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
@@ -45,27 +45,27 @@ ht-degree: 1%
 
 대화형 이미지 단계:
 
-1. **(선택 사항) 핫스팟 변수를 식별합니다** - Experience Manager Assets 및 Dynamic Media 독립 실행형을 사용하는 경우 기존 빠른 보기 구현에 사용된 동적 변수를 식별하여 시작합니다. 그런 다음 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있습니다. 다음을 참조하십시오 [(선택 사항) 핫스팟 변수를 식별합니다](#optional-identifying-hotspot-variables).
+1. **(선택 사항) 핫스팟 변수를 식별합니다** - Experience Manager Assets 및 Dynamic Media 독립 실행형을 사용하는 경우 기존 Quickview 구현에 사용된 동적 변수를 식별하여 시작합니다. 그런 다음 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있습니다. [(선택 사항) 핫스팟 변수 식별](#optional-identifying-hotspot-variables)을 참조하십시오.
 그러나 Adobe Experience Manager Sites, Adobe Experience Manager eCommerce 또는 둘 다를 사용하는 경우 이 단계는 필요하지 않습니다.
-다음을 참조하십시오 [Experience Manager Assets의 eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md).
+Experience Manager Assets의 [eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md)을 참조하세요.
 
-1. **(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기** - 핫스팟을 표시하는 데 사용되는 그래픽 이미지를 사용자 지정합니다. 기본 제공 대화형 이미지 뷰어 사전 설정을 로 사용하려면 고유한 대화형 이미지 뷰어 사전 설정을 만들 필요가 없습니다 `Shoppable_Banner` 대신,
-다음을 참조하십시오 [(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
+1. **(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기** - 핫스팟을 나타내는 데 사용되는 그래픽 이미지를 사용자 지정합니다. 기본 제공 대화형 이미지 뷰어 사전 설정 `Shoppable_Banner`을(를) 대신 사용하려면 고유한 대화형 이미지 뷰어 사전 설정을 만들 필요가 없습니다.
+[(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)를 참조하십시오.
 
 1. **이미지 배너 업로드** - 대화형으로 만들 이미지 배너를 업로드합니다.
-다음을 참조하십시오 [이미지 배너 업로드](#uploading-an-image-banner).
+[이미지 배너 업로드](#uploading-an-image-banner)를 참조하십시오.
 
-1. **이미지 배너에 핫스팟 추가** - 이미지 배너에 핫스팟을 하나 이상 추가하고 각 핫스팟을 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 연결합니다. 핫스팟을 추가한 후 대화형 이미지를 게시하여 이 작업을 완료합니다.
+1. **이미지 배너에 핫스팟 추가** - 이미지 배너에 핫스팟을 하나 이상 추가하고 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 각 핫스팟을 연결합니다. 핫스팟을 추가한 후 대화형 이미지를 게시하여 이 작업을 완료합니다.
 
-   * 다음을 참조하십시오 [이미지 배너에 핫스팟 추가](#adding-hotspots-to-an-image-banner).
-   * 다음을 참조하십시오 [대화형 이미지 미리 보기](#optional-previewing-interactive-images) - 선택 사항입니다. 원하는 경우 구매 가능한 배너의 표현을 보고 상호 작용을 테스트할 수 있습니다.
-   * 다음을 참조하십시오 [자산 게시](/help/assets/publishing-dynamicmedia-assets.md) 인터랙티브 이미지 에셋을 게시하는 방법에 대한 자세한 정보.
+   * [이미지 배너에 핫스팟 추가](#adding-hotspots-to-an-image-banner)를 참조하십시오.
+   * [대화형 이미지 미리 보기](#optional-previewing-interactive-images) - 선택 사항을 참조하십시오. 원하는 경우 구매 가능한 배너의 표현을 보고 상호 작용을 테스트할 수 있습니다.
+   * 대화형 이미지 에셋을 게시하는 방법에 대한 자세한 내용은 [Publish Assets](/help/assets/publishing-dynamicmedia-assets.md)을 참조하십시오.
 
-1. **웹 사이트에 대화형 이미지 추가** - Experience Manager Sites나 eCommerce 또는 둘 다 사용하는 경우 Experience Manager의 웹 페이지에 대화형 이미지를 추가할 수 있습니다. 대화형 미디어 구성 요소를 페이지로 드래그합니다. 다음을 참조하십시오 [페이지에 Dynamic Media 에셋 추가](/help/assets/adding-dynamic-media-assets-to-pages.md).
+1. **웹 사이트에 대화형 이미지를 추가** - Experience Manager Sites나 전자 상거래 또는 두 가지 모두를 사용하는 경우 Experience Manager의 웹 페이지에 대화형 이미지를 추가할 수 있습니다. 대화형 미디어 구성 요소를 페이지로 드래그합니다. [페이지에 Dynamic Media Assets 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
-   Experience Manager Assets 및 Dynamic Media 독립 실행형을 사용하는 경우 웹 사이트에서 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. 다음을 참조하십시오 [대화형 이미지를 웹 사이트에 통합](#integrating-an-interactive-image-with-your-website).
+   Experience Manager Assets 및 Dynamic Media 독립 실행형을 사용하는 경우 웹 사이트에서 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. [대화형 이미지를 웹 사이트와 통합](#integrating-an-interactive-image-with-your-website)을 참조하십시오.
 
-   타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 빠른 보기 구현과 통합해야 합니다. 다음을 참조하십시오 [기존 빠른 보기와 대화형 이미지 통합](#integrating-an-interactive-image-with-an-existing-quickview).
+   타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 빠른 보기 구현과 통합해야 합니다. [대화형 이미지를 기존 빠른 보기와 통합](#integrating-an-interactive-image-with-an-existing-quickview)을 참조하십시오.
 
 ## (선택 사항) 핫스팟 변수를 식별합니다 {#optional-identifying-hotspot-variables}
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 >이 작업은 다음이 참인 경우에만 필요합니다.
 >
 >* 빠른 보기로 트리거하여 이미지에 대화형 기능을 추가하려는 경우.
->* Experience Manager 구현은 다음을 수행합니다 *아님* IBM® WebSphere® Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오려면 eCommerce 통합 프레임워크를 사용합니다. 다음을 참조하십시오 [Experience Manager Assets의 eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md).
+>* Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 Experience Manager으로 가져오는 데 전자 상거래 통합 프레임워크를 사용하지 *않습니다*. Experience Manager Assets의 [eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md)을 참조하세요.
 >
 >Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -107,7 +107,7 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 
 브라우저에서 네트워크 모니터링이 켜지면 페이지에서 빠른 보기를 트리거합니다.
 
-이제 네트워크 로그에서 Quickview Ajax URL을 찾아 기록된 URL을 복사하여 향후 분석할 수 있습니다. 일반적으로 빠른 보기를 트리거하면 서버로 전송되는 요청이 많이 있습니다. 일반적으로 Quickview Ajax URL은 목록의 첫 번째 URL 중 하나입니다. 복잡한 쿼리 문자열 부분 또는 경로가 있으며 응답 MIME 유형은 다음 중 하나입니다. `text/html`, `text/xml`, 또는 `text/javascript`.
+이제 네트워크 로그에서 Quickview Ajax URL을 찾아 기록된 URL을 복사하여 향후 분석할 수 있습니다. 일반적으로 빠른 보기를 트리거하면 서버로 전송되는 요청이 많이 있습니다. 일반적으로 Quickview Ajax URL은 목록의 첫 번째 URL 중 하나입니다. 복합 쿼리 문자열 부분 또는 경로가 있으며 응답 MIME 유형은 `text/html`, `text/xml` 또는 `text/javascript`입니다.
 
 이 프로세스 중에 다양한 제품 카테고리와 유형을 사용하여 웹 사이트의 다양한 영역을 방문하는 것이 중요합니다. 그 이유는 Quickview URL이 특정 웹 사이트 카테고리에 대해 공통적인 부분을 가질 수 있지만, 웹 사이트의 다른 영역을 방문하는 경우에만 변경되기 때문입니다.
 
@@ -127,7 +127,7 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>URL에서 유일한 변수 부분은 productId= 쿼리 문자열 매개 변수의 값이며 이는 명백히 SKU 값입니다. 따라서 핫스팟에는 다음과 같은 값으로 채워진 SKU 필드만 필요합니다. <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
+    </ul> <p>URL에서 유일한 변수 부분은 productId= 쿼리 문자열 매개 변수의 값이며 이는 명백히 SKU 값입니다. 따라서 핫스팟에는 <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>과(와) 같은 값으로 채워진 SKU 필드만 필요합니다.</p> </td>
   </tr>
   <tr>
     <td><p>URL 경로에 있는 단일 SKU.</p> </td>
@@ -145,11 +145,11 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>이 경우 URL에는 두 가지 다양한 부분이 있습니다. SKU는에 저장됩니다. <code>prodId</code> 매개 변수 및 범주 ID<code></code> 에 저장됩니다. <code>category=</code> 매개 변수.</p> <p>따라서 핫스팟 정의는 쌍입니다. 즉, SKU 값과 라는 추가 변수입니다. <code>categoryId</code>. 결과 쌍은 다음과 같습니다.</p>
+    </ul> <p>이 경우 URL에는 두 가지 다양한 부분이 있습니다. SKU는 <code>prodId</code> 매개 변수에 저장되고 범주 ID<code></code>은(는) <code>category=</code> 매개 변수에 저장됩니다.</p> <p>따라서 핫스팟 정의는 쌍입니다. 즉, SKU 값과 <code>categoryId</code>이라는 추가 변수입니다. 결과 쌍은 다음과 같습니다.</p>
     <ul>
-      <li><p>SKU: <strong><code>305466</code></strong> 및 <code>categoryId</code> 은(는) <code>1100004</code>.</p> </li>
-      <li><p>SKU: <strong><code>310181</code></strong> 및 <code>categoryId</code> 은(는) <strong><code>1100004</code></strong>.</p> </li>
-      <li><p>SKU: <strong><code>308706</code></strong> 및 <code>categoryId</code> 은(는) <strong><code>1740148</code></strong>.</p> </li>
+      <li><p>SKU는 <strong><code>305466</code></strong>이고 <code>categoryId</code>은(는) <code>1100004</code>입니다.</p> </li>
+      <li><p>SKU는 <strong><code>310181</code></strong>이고 <code>categoryId</code>은(는) <strong><code>1100004</code></strong>입니다.</p> </li>
+      <li><p>SKU는 <strong><code>308706</code></strong>이고 <code>categoryId</code>은(는) <strong><code>1740148</code></strong>입니다.</p> </li>
     </ul> <p> </p> </td>
   </tr>
   </tbody>
@@ -177,51 +177,51 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 
 `/datafeed/$categoryId$-$SKU$.json`
 
-이러한 분석을 기반으로 다음을 사용할 수 있습니다 `categoryId` 및 `SKU` 핫스팟용
+이러한 분석을 기반으로 핫스팟에 `categoryId` 및 `SKU`을(를) 사용합니다.
 
 이제 Experience Manager Assets에서 구매 가능한 대화형 이미지 기능을 사용하여 이미지 배너를 업로드하고 핫스팟을 추가할 준비가 되었습니다.
 
 ## (선택 사항) 대화형 이미지 뷰어 사전 설정 만들기 {#optional-creating-an-interactive-image-viewer-preset}
 
-라는 기본 제공 대화형 이미지 뷰어 사전 설정을 사용하도록 선택할 수 있습니다. `Shoppable_Banner` Experience Manager Assets과 함께 제공됩니다. 또는 대화형 이미지에 사용할 사용자 지정 뷰어 사전 설정을 만들 수 있습니다.
+Experience Manager Assets과 함께 제공되는 `Shoppable_Banner`(이)라는 기본 기본 대화형 이미지 뷰어 사전 설정을 사용하도록 선택할 수 있습니다. 또는 대화형 이미지에 사용할 사용자 지정 뷰어 사전 설정을 만들 수 있습니다.
 
 사용자 지정 대화형 이미지 뷰어 사전 설정을 만들 때 이미지 배너에 핫스팟의 모양을 결정할 수 있습니다. 뷰어 사전 설정을 만들 때 미리 정의된 이미지 갤러리에서 핫스팟 그래픽을 사용하도록 선택할 수 있습니다.
 
-뷰어 사전 설정을 저장하면 Experience Manager Assets의 뷰어 사전 설정 목록 페이지에서 자동으로 활성화(켜짐)됩니다. 이 기능은 자산을 볼 때마다 대화형 미디어 구성 요소에서 볼 수 있음을 의미합니다. 단, 종료 *게재* 이 뷰어 사전 설정을 사용하는 대화형 배너, 다음 작업을 수행해야 합니다. *게시* 뷰어 사전 설정도 참조하십시오. 이 규칙은 사용자 지정 또는 기본 뷰어 사전 설정에 대해 적용됩니다.
+뷰어 사전 설정을 저장하면 Experience Manager Assets의 뷰어 사전 설정 목록 페이지에서 자동으로 활성화(켜짐)됩니다. 이 기능은 자산을 볼 때마다 대화형 미디어 구성 요소에서 볼 수 있음을 의미합니다. 그러나 이 뷰어 사전 설정을 사용하여 대화형 배너를 *배달*&#x200B;하려면 뷰어 사전 설정도 *게시*&#x200B;해야 합니다. 이 규칙은 사용자 지정 또는 기본 뷰어 사전 설정에 대해 적용됩니다.
 
-**대화형 이미지 뷰어 사전 설정을 만들려면 다음을 수행하십시오.**
+**대화형 이미지 뷰어 사전 설정을 만들려면:**
 
-1. 왼쪽 레일에서 다음 위치에 대한 네비게이터 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 뷰어 사전 설정]**.
-1. 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 만들기]**.
+1. 왼쪽 레일에서 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 뷰어 사전 설정]**(으)로 이동합니다.
+1. 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 새 뷰어 사전 설정 대화 상자에서 대화형 배너 뷰어 사전 설정을 설명하는 이름을 입력합니다.
 
    제목을 저장하면 뷰어 사전 설정 목록 페이지에 나타납니다.
 
 1. In the Rich Media Type pull-down menu, select **[!UICONTROL Interactive Image]**.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
-1. 뷰어 사전 설정 편집 페이지에서 **[!UICONTROL 모양]** 탭.
+1. 뷰어 사전 설정 편집 페이지에서 **[!UICONTROL 모양]** 탭을 선택합니다.
 1. 다음 중 하나를 수행하십시오.
 
    * 이미지에 사용할 자신만의 핫스팟 이미지를 업로드하려면 에셋 선택기 아이콘을 선택합니다. [컨텐츠 선택] 페이지에서 사용할 핫스팟 이미지로 이동하여 선택한 다음 오른쪽 상단의 확인 표시 아이콘을 선택합니다.
    * 미리 정의된 핫스팟 이미지를 선택하려면 [핫스팟 갤러리] 아이콘을 선택합니다. 핫스팟 갤러리 팔레트에서 사용할 핫스팟 이미지를 선택합니다.
 
-1. 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 저장]**.
+1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
    새 뷰어 사전 설정을 게시해야 합니다.
 
-   다음을 참조하십시오 [추가한 뷰어 사전 설정 게시](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
+   [추가한 뷰어 사전 설정 게시](/help/assets/managing-viewer-presets.md#publishing-viewer-presets)를 참조하십시오.
 
    이제 이미지 배너를 업로드할 준비가 되었습니다.
 
 ## 이미지 배너 업로드 {#uploading-an-image-banner}
 
-사용할 이미지를 이미 업로드한 경우 다음 단계로 이동하십시오. [이미지 배너에 핫스팟 추가](#adding-hotspots-to-an-image-banner).
+사용할 이미지를 이미 업로드한 경우 다음 단계인 [이미지 배너에 핫스팟을 추가](#adding-hotspots-to-an-image-banner)로 이동하십시오.
 
 **이미지 배너를 업로드하려면:**
 
 1. 대화형으로 만들 이미지 배너를 업로드합니다.
 
-   다음을 참조하십시오 [에셋 업로드](/help/assets/manage-assets.md#uploading-assets).
+   [자산 업로드](/help/assets/manage-assets.md#uploading-assets)를 참조하십시오.
 
    이제 이미지 배너에 핫스팟을 추가할 준비가 되었습니다. 아래 다음 작업을 참조하십시오.
 
@@ -231,7 +231,7 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 
 핫스팟을 추가할 때 빠른 보기 팝업 표시, 하이퍼링크 또는 경험 조각으로 정의할 수 있습니다.
 
-다음을 참조하십시오 [경험 조각](/help/sites-authoring/experience-fragments.md).
+[경험 조각](/help/sites-authoring/experience-fragments.md)을 참조하세요.
 
 >[!NOTE]
 >
@@ -241,7 +241,7 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 
 대화형 이미지 만들기가 완료되면 미리보기 를 사용하여 대화형 이미지가 고객에게 표시되는 방식을 확인할 수 있습니다.
 
-다음을 참조하십시오 [(선택 사항) 대화형 이미지 미리 보기](#optional-previewing-interactive-images).
+[(선택 사항) 대화형 이미지 미리 보기](#optional-previewing-interactive-images)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -249,7 +249,7 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 >
 >회전 배너는 핫스팟을 포함할 수도 있는 이미지에 대한 이미지 맵을 지원합니다. 대화형 이미지는 지원하지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려면 이 규칙을 염두에 두십시오. 동일한 이미지의 별도의 복사본을 대신 사용하여 대화형 이미지 및 회전식 배너를 만들 수 있습니다.
 >
->참조: [회전 배너](/help/assets/carousel-banners.md).
+>[회전 배너](/help/assets/carousel-banners.md)도 참조하세요.
 
 >[!NOTE]
 >
@@ -257,48 +257,48 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 
 **이미지 배너에 핫스팟을 추가하려면:**
 
-1. 자산 보기에서 대화형으로 만들 이미지 배너로 이동합니다.
+1. Assets 보기에서 대화형으로 만들 이미지 배너로 이동합니다.
 1. 다음 중 하나를 수행하십시오.
 
-   * 이미지를 마우스로 가리킨 다음, **[!UICONTROL 선택]** (확인 표시 아이콘) 도구 모음에서 를 선택합니다. **[!UICONTROL 편집]**.
+   * 이미지를 마우스로 가리킨 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다(확인 표시 아이콘). 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
 
-   * 이미지를 마우스로 가리킨 다음, **[!UICONTROL 추가 작업]** (세 점 아이콘) **[!UICONTROL 편집]**.
+   * 이미지를 마우스로 가리킨 다음 **[!UICONTROL 추가 작업]**(세 점 아이콘)을 선택합니다&#x200B;**[!UICONTROL 편집]**.
 
-   * 세부 사항 보기 페이지에서 이미지를 열 수 있도록 이미지를 선택합니다. 도구 모음에서 를 선택합니다. **[!UICONTROL 편집]**.
+   * 세부 사항 보기 페이지에서 이미지를 열 수 있도록 이미지를 선택합니다. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
 
-1. 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 핫스팟 추가]** (손가락 선택 아이콘) - 핫스팟 관리 페이지를 엽니다.
-1. 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 핫스팟]**.
+1. 페이지의 왼쪽 상단 모서리 근처에서 **[!UICONTROL 핫스팟 추가]**(손가락 선택 아이콘)를 선택하여 핫스팟 관리 페이지를 엽니다.
+1. 페이지의 왼쪽 상단 모서리 근처에서 **[!UICONTROL 핫스팟]**&#x200B;을 선택합니다.
 
-   1. 핫스팟 관리 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 핫스팟]**.
+   1. 핫스팟 관리 페이지의 왼쪽 상단 모서리 근처에서 **[!UICONTROL 핫스팟]**&#x200B;을 선택합니다.
    1. 이미지에서 핫스팟을 표시할 위치를 선택합니다. If necessary, drag the hotspot to adjust its location.
    1. 필요에 따라 a단계와 b단계를 반복하여 추가 핫스팟을 추가합니다.
-   1. (선택 사항) 핫스팟을 삭제하려면 이미지에서 핫스팟을 선택한 다음 를 선택합니다 **[!UICONTROL 삭제]** (휴지통 아이콘) **[!UICONTROL 핫스팟]** 제목.
+   1. (선택 사항) 핫스팟을 삭제하려면 이미지에서 핫스팟을 선택한 다음 **[!UICONTROL 핫스팟]** 제목 아래에서 **[!UICONTROL 삭제]**(휴지통 아이콘)을 선택합니다.
 
 1. 이름 텍스트 필드에 핫스팟의 이름을 입력합니다. 이 이름은 선택한 핫스팟 드롭다운 목록에도 나타납니다.
 1. 다음 중 하나를 수행하십시오.
 
-   * 선택 **[!UICONTROL 빠른 보기]**.
+   * **[!UICONTROL 빠른 보기]**&#x200B;를 선택합니다.
 
-      * Experience Manager Sites 또는 eCommerce 고객의 경우 제품 선택기 아이콘(돋보기)을 선택하여 제품 선택 페이지를 엽니다. 사용할 제품을 선택한 다음 를 선택합니다 **[!UICONTROL 선택]** 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단 모서리에서 를 클릭합니다.
-      * 다음과 같은 경우 *아님* Experience Manager Sites 또는 eCommerce 고객
+      * Experience Manager Sites 또는 eCommerce 고객의 경우 제품 선택기 아이콘(돋보기)을 선택하여 제품 선택 페이지를 엽니다. 사용할 제품을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+      * Experience Manager Sites 또는 eCommerce 고객이 *아님*&#x200B;인 경우
 
-         * 다음을 참조하십시오 [핫스팟 변수 식별](#optional-identifying-hotspot-variables); 이러한 변수를 정의해야 합니다.
+         * [핫스팟 변수 식별](#optional-identifying-hotspot-variables)을 참조하십시오. 이러한 변수를 정의해야 합니다.
          * 그런 다음 수동으로 SKU 값을 입력합니다. SKU 값 텍스트 필드에 제품의 SKU(Stock Keeping Unit)를 입력합니다. 이 SKU는 제공하는 각 고유 제품이나 서비스에 대한 고유 식별자입니다. 입력한 SKU 값은 빠른 보기 템플릿의 변수 부분을 자동으로 입력하므로 선택한 핫스팟을 특정 SKU의 빠른 보기와 연결해야 한다는 것을 시스템에서 알 수 있습니다.
-         * (선택 사항) Quickview 내에 제품을 추가로 식별하는 데 사용해야 하는 다른 변수가 있는 경우 다음을 선택합니다. **[!UICONTROL 일반 변수 추가]**. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어, `category=Males` 는 추가된 변수입니다.
+         * (선택 사항) Quickview 내에 제품을 추가로 식별하는 데 사용해야 하는 다른 변수가 있는 경우 **[!UICONTROL 일반 변수 추가]**&#x200B;를 선택합니다. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어 `category=Males`은(는) 추가된 변수입니다.
 
-   * 선택 **[!UICONTROL 하이퍼링크]**.
+   * **[!UICONTROL 하이퍼링크]**&#x200B;를 선택하십시오.
 
       * Experience Manager Sites 고객의 경우 사이트 선택기 아이콘(폴더)을 선택하여 URL로 이동합니다. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
       * 독립형 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지에 대한 전체 URL 경로를 지정합니다.
 
    링크를 새 브라우저 탭(권장 기본값)에서 열지 또는 동일한 탭에서 열지를 지정해야 합니다.
 
-   다음을 참조하십시오 [선택기를 사용한 작업](/help/assets/working-with-selectors.md) 추가 정보.
+   자세한 내용은 [선택기를 사용하여 작업](/help/assets/working-with-selectors.md)을 참조하세요.
 
-   * 선택 **[!UICONTROL 경험 조각]**.
+   * **[!UICONTROL 경험 조각]**&#x200B;을 선택합니다.
 
-      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택한 다음 를 선택합니다 **[!UICONTROL 선택]** 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단 모서리에서 를 클릭합니다.
-다음을 참조하십시오 [경험 조각](/help/sites-authoring/experience-fragments.md).
+      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**을 선택합니다.
+[경험 조각](/help/sites-authoring/experience-fragments.md)을 참조하세요.
 
       * 배너에 표시할 경험 조각의 너비와 높이를 지정합니다.
 
@@ -306,14 +306,14 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
         >
         >뷰어를 경험 조각에 포함할 때에는 대화형 이미지의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
-1. 선택 **[!UICONTROL 저장]** 작업을 저장하고 찾아보기 페이지로 돌아갑니다.
-1. 대화형 이미지를 게시합니다. 게시를 사용하면 배너를 클라우드를 통해 게재할 수 있으며 서드파티 웹 사이트와 통합해야 하는 경우 포함 코드를 생성할 수도 있습니다.
+1. 작업을 저장하고 찾아보기 페이지로 돌아가려면 **[!UICONTROL 저장]**&#x200B;을 선택하십시오.
+1. 대화형 이미지를 Publish합니다. 게시를 사용하면 배너를 클라우드를 통해 게재할 수 있으며 서드파티 웹 사이트와 통합해야 하는 경우 포함 코드를 생성할 수도 있습니다.
 
-   다음을 참조하십시오 [자산 게시](/help/assets/manage-assets.md#publishing-assets).
+   [Publish 자산](/help/assets/manage-assets.md#publishing-assets)을 참조하세요.
 
    핫스팟을 추가하고 대화형 이미지를 게시하면 이제 기존 웹 사이트에 추가할 준비가 된 것입니다.
 
-   다음을 참조하십시오 [대화형 이미지를 웹 사이트에 통합](#integrating-an-interactive-image-with-your-website).
+   [대화형 이미지를 웹 사이트와 통합](#integrating-an-interactive-image-with-your-website)을 참조하십시오.
 
    >[!NOTE]
    >
@@ -324,31 +324,31 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 미리보기 를 사용하여 대화형 이미지가 고객에게 어떻게 표시되는지 재현하고 이미지의 핫스팟을 테스트하여 예상대로 작동하는지 확인할 수 있습니다.
 
 대화형 이미지가 만족스러우면 게시할 수 있습니다.
-다음을 참조하십시오 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md).
-다음을 참조하십시오 [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md). 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
-다음을 참조하십시오 [페이지에 Dynamic Media 에셋 추가](/help/assets/adding-dynamic-media-assets-to-pages.md).
+[웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
+[웹 응용 프로그램에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+[페이지에 Dynamic Media Assets 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
-**대화형 이미지를 미리 보려면 다음을 수행하십시오.**
+**대화형 이미지를 미리 보려면:**
 
-1. 에셋 보기에서 생성한 기존 대화형 이미지로 이동한 다음 선택하여 미리보기에서 엽니다.
-1. 미리보기 페이지의 왼쪽 상단 모서리 근처에 있는 콘텐츠 드롭다운 목록에서 을(를) 선택합니다. **[!UICONTROL 뷰어]**.
-1. 뷰어 목록에서 다음을 선택합니다. **[!UICONTROL Shopable_Banner]** 또는 만든 대화형 이미지 뷰어 사전 설정의 이름입니다.
+1. Assets 보기에서 생성한 기존 대화형 이미지로 이동한 다음 선택하여 미리보기에서 엽니다.
+1. 미리 보기 페이지의 왼쪽 상단 모서리 부근의 콘텐츠 드롭다운 목록에서 **[!UICONTROL 뷰어]**&#x200B;를 선택합니다.
+1. 뷰어 목록에서 **[!UICONTROL Shoppable_Banner]** 또는 만든 대화형 이미지 뷰어 사전 설정 이름을 선택합니다.
 1. 연결된 작업을 테스트하려면 이미지에서 핫스팟을 선택합니다.
 
-## 대화형 이미지 자산 게시 {#publishing-interactive-image-assets}
+## Publish 대화형 이미지 자산 {#publishing-interactive-image-assets}
 
-다음을 참조하십시오 [자산 게시](/help/assets/publishing-dynamicmedia-assets.md) 인터랙티브 이미지 에셋을 게시하는 방법에 대한 자세한 정보.
+대화형 이미지 에셋을 게시하는 방법에 대한 자세한 내용은 [Publish 에셋](/help/assets/publishing-dynamicmedia-assets.md)을 참조하십시오.
 
 ## 대화형 이미지를 웹 사이트에 통합 {#integrating-an-interactive-image-with-your-website}
 
 배너 이미지를 업로드하고, 이미지에 핫스팟을 추가하고, 대화형 이미지를 게시하면 이제 웹 사이트 페이지에 추가할 준비가 된 것입니다.
 
-Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 페이지에 드래그하여 대화형 이미지를 추가할 수 있습니다. 다음을 참조하십시오 [페이지에 Dynamic Media 에셋 추가](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 페이지에 드래그하여 대화형 이미지를 추가할 수 있습니다. [페이지에 Dynamic Media Assets 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 독립형 Experience Manager Assets 고객인 경우 이 섹션에 설명된 대로 대화형 이미지를 웹 사이트에 수동으로 추가할 수 있습니다.
 
 1. 게시된 대화형 이미지의 포함 코드를 복사합니다.
-다음을 참조하십시오 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md).
+[웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
 
 1. 복사한 포함 코드를 웹 페이지 내의 원하는 위치에 추가합니다.
 복사된 포함 코드는 지정된 영역에 자동으로 맞도록 응답형 환경에 대해 설정됩니다.
@@ -359,13 +359,13 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-세 수컷의 그림은 정적이다 `IMG` 태그:
+세 남자의 사진은 정적 `IMG` 태그입니다.
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-통합은 를 제거하는 것만큼 간단합니다. `IMG` 태그를 지정하고 Experience Manager Assets에서 복사한 포함 코드로 대체합니다. 3개의 원형 핫스팟이 있는 페이지에서 구매 가능한 대화형 이미지를 표시하는 다음 URL에서 결과를 볼 수 있습니다.
+통합은 `IMG` 태그를 제거하고 Experience Manager Assets에서 복사한 포함 코드로 바꾸는 것만큼 간단합니다. 3개의 원형 핫스팟이 있는 페이지에서 구매 가능한 대화형 이미지를 표시하는 다음 URL에서 결과를 볼 수 있습니다.
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
@@ -373,11 +373,11 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 >
 >이 시점에서 데모 웹 사이트의 구매 가능한 대화형 이미지에 있는 핫스팟은 표시용으로만 사용되며 기존 Quickview와 아직 통합되지 않았습니다.
 
-응답형 환경에 대해 구매 가능한 대화형 이미지에 &quot;자르기&quot;를 적용하려면 대화형 이미지 구성 속성을 포함할 수 있습니다 `ZoomView.iscommand` 경로를 표시합니다. 구성 요소 `ZoomView` 이(가) 및 (이)라고 함 `iscommand` 는 사용자가 적용하는 &quot;자르기&quot; 이미지 제공 명령입니다.
+응답형 환경의 구매 가능한 대화형 이미지에 &quot;자르기&quot;를 적용하려면 대화형 이미지 구성 특성 `ZoomView.iscommand`을(를) 경로에 포함할 수 있습니다. 구성 요소 `ZoomView`이(가) 호출되었으며 `iscommand`은(는) 사용자가 적용하는 &quot;자르기&quot; 이미지 제공 명령입니다.
 
-다음을 참조하십시오 [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) 구성 속성입니다.
+[ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) 구성 특성을 참조하십시오.
 
-다음을 참조하십시오 [자르기](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) 이미지 제공 명령.
+[자르기](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) 이미지 제공 명령을 참조하십시오.
 
 이제 대화형 이미지를 웹 사이트의 기존 빠른 보기와 통합할 준비가 되었습니다.
 
@@ -437,7 +437,7 @@ Experience Manager Assets에서 반환한 포함 코드에는 이미 다음 강�
 
 Quickview URL을 구성하는 프로세스는 이전에 설명한 핫스팟 변수를 식별하는 데 사용되는 프로세스와 반대입니다.
 
-다음을 참조하십시오 [핫스팟 변수 식별](#optional-identifying-hotspot-variables).
+[핫스팟 변수 식별](#optional-identifying-hotspot-variables)을 참조하십시오.
 
 앞의 Quickview URL 예제를 사용하면 다음 예에서 각 경우에 Quickview URL이 구성되는 방식을 확인할 수 있습니다.
 
@@ -478,7 +478,7 @@ Quickview URL을 구성하는 프로세스는 이전에 설명한 핫스팟 변�
 /datafeed/$categoryId$-$SKU$.json
 ```
 
-내에서 이 URL을 재구성하려면 `quickViewActivate` 핸들러에서 `categoryId` 및 `SKU` 에서 사용할 수 있는 필드 `inData` 뷰어의 코드에서 처리기에 전달되는 개체:
+`quickViewActivate` 처리기 내에서 이 URL을 다시 구성하려면 뷰어의 코드로 처리기에 전달되는 `inData` 개체에서 사용할 수 있는 `categoryId` 및 `SKU` 필드를 사용할 수 있습니다.
 
 ```xml
 var sku=inData.sku;
@@ -486,7 +486,7 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-데모 웹 사이트에서 간단한 을 사용하여 빠른 보기 대화 상자를 트리거하고 있습니다. `loadQuickView()` 함수 호출. 이 함수는 Quickview 데이터 URL인 인수를 하나만 사용합니다. 따라서 구매 가능한 대화형 이미지를 통합하는 마지막 단계는 다음에 다음 코드 행을 추가하는 것입니다 `quickViewActivate` 핸들러:
+데모 웹 사이트에서 간단한 `loadQuickView()` 함수 호출을 사용하여 빠른 보기 대화 상자를 트리거하고 있습니다. 이 함수는 Quickview 데이터 URL인 인수를 하나만 사용합니다. 따라서 구매 가능한 대화형 이미지를 통합하는 마지막 단계는 `quickViewActivate` 처리기에 다음 코드 행을 추가하는 것입니다.
 
 ```xml
 loadQuickView(quickViewUrl);
@@ -520,4 +520,4 @@ loadQuickView(quickViewUrl);
 
 ## 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
-다음을 참조하십시오 [빠른 보기를 사용하여 사용자 지정 팝업 만들기](/help/assets/custom-pop-ups.md).
+[빠른 보기를 사용하여 사용자 지정 팝업 만들기](/help/assets/custom-pop-ups.md)를 참조하십시오.

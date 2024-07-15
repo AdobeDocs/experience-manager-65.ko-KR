@@ -20,11 +20,11 @@ ht-degree: 1%
 
 검색 기능은 포럼과 같은 다양한 다른 기능과 함께 작동하여 콘텐츠를 검색하는 기능을 제공합니다.
 
-커뮤니티 회원이 입력한 게시물을 검색하는 기능(UGC)을 추가할 때 두 가지 구성 요소가 있습니다. [검색](#search) 및 [검색 결과](#search-results).
+커뮤니티 회원이 입력한 게시물을 검색하는 기능(UGC(사용자 생성 컨텐츠)을 추가하면 [검색](#search) 및 [검색 결과](#search-results)의 두 가지 구성 요소가 있습니다.
 
-다음을 포함하는 페이지 `Search Results` 구성 요소는 검색과 결과 표시를 모두 지원합니다.
+`Search Results` 구성 요소가 포함된 페이지는 검색과 결과 표시를 모두 지원합니다.
 
-다음을 포함하는 페이지 `Search` 구성 요소는에 표시되는 결과와 함께 검색을 시작할 수 있는 위치를 제공합니다. `Search Results` 페이지를 가리키도록 업데이트하는 중입니다.
+`Search` 구성 요소가 포함된 페이지에서는 `Search Results` 페이지에 나타나는 결과를 사용하여 검색을 시작할 수 있습니다.
 
 검색 기능은 사이트 방문자 및 구성원이 콘텐츠를 볼 수 있는 다른 기능과 함께 사용할 수 있습니다.
 
@@ -32,21 +32,21 @@ ht-degree: 1%
 
 ### 페이지에 검색 추가 {#add-search-to-a-page}
 
-을(를) 추가하려면 `Search` 구성 요소를 페이지에 추가하려면 작성자 모드에서 구성 요소 브라우저를 사용하여 `Communities / Search` 을 페이지에 끌어서 놓습니다. 사용 `Search` 을(를) 위해 두 번째 페이지가 필요합니다. `Search Results.`
+작성자 모드에서 페이지에 `Search` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 `Communities / Search`을(를) 찾아 페이지에서 제자리에 끌어서 놓습니다. `Search`을(를) 사용하려면 `Search Results.`에 대한 두 번째 페이지가 필요합니다.
 
-필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](basics.md).
+필요한 정보는 [커뮤니티 구성 요소 기본 사항](basics.md)을 참조하세요.
 
-필요한 클라이언트측 라이브러리가 있는 경우 `cq.social.hbs.search`, 포함, 이렇게 하면 `Search` 구성 요소가 표시됩니다.
+필수 클라이언트측 라이브러리 `cq.social.hbs.search`이(가) 포함된 경우 `Search` 구성 요소가 표시되는 방식입니다.
 
-![add-search](assets/add-search.png)
+![추가 검색](assets/add-search.png)
 
 ### 추가된 검색 구성 {#configure-the-added-search}
 
-배치된 을(를) 선택합니다 `Search` 에 액세스하고 선택할 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 `Search` 구성 요소를 선택하여 액세스하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![컨피규어](assets/configure-new.png)
+![구성](assets/configure-new.png)
 
-아래 **[!UICONTROL 검색 설정]** 탭에서 방문자가 쿼리를 입력할 때 경로를 검색하는 방법을 지정합니다.
+**[!UICONTROL 검색 설정]** 탭에서 방문자가 쿼리를 입력할 때 검색할 경로를 지정합니다.
 
 ![검색 설정](assets/search-settings.png)
 
@@ -56,37 +56,37 @@ ht-degree: 1%
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL 결과 페이지]**
-결과는 브라우저를 사용하여 이 포함된 페이지를 선택하여 지정된 별도의 페이지에 표시됩니다. `Search Results` 구성 요소.
+`Search Results` 구성 요소가 포함된 페이지를 선택하기 위해 브라우저를 사용하여 지정된 별도의 페이지에 결과가 표시됩니다.
 
 ## 검색 결과 {#search-results}
 
 ### 페이지에 검색 결과 추가 {#add-search-results-to-a-page}
 
-을(를) 추가하려면 `Search Results` 구성 요소를 페이지에 추가하려면 작성자 모드에서 구성 요소 브라우저를 사용하여
+작성자 모드에서 페이지에 `Search Results` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 찾습니다
 
 * `Communities / Search Results`
 
 을 페이지에 끌어서 놓습니다. 검색 구성 요소와 달리 결과가 동일한 페이지에 표시되므로 두 번째 페이지는 필요하지 않습니다.
 
-웹 사이트 내 다른 곳에서 검색을 사용하는 경우 이 한 페이지는 `Search Results` 다음과 같이 구성될 수 있습니다. `Result Page` 의 일부 또는 모든 인스턴스에 대해 `Search`.
+웹 사이트 내의 다른 곳에서 검색을 사용하는 경우 `Search Results`이(가) 있는 이 한 페이지는 `Search`의 일부 또는 모든 인스턴스에 대해 `Result Page`이(가) 되도록 구성할 수 있습니다.
 
-필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](basics.md).
+필요한 정보는 [커뮤니티 구성 요소 기본 사항](basics.md)을 참조하세요.
 
-필요한 클라이언트측 라이브러리가 있는 경우 `cq.social.hbs.search`, 포함, 이렇게 하면 `Search Result` 구성 요소가 표시됩니다.
+필수 클라이언트측 라이브러리 `cq.social.hbs.search`이(가) 포함된 경우 `Search Result` 구성 요소는 다음과 같이 표시됩니다.
 
 ![검색 결과](assets/search-result1.png)
 
 ### 추가된 검색 결과 구성 {#configure-the-added-search-result}
 
-배치된 을(를) 선택합니다 `Search Results` 에 액세스하고 선택할 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 `Search Results` 구성 요소를 선택하여 액세스하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
 ![구성](assets/configure-new.png)
 
-아래 **[!UICONTROL 검색 결과 설정]** 탭에서는 방문자가 쿼리를 입력할 때 검색에 포함되는 경로를 지정할 수 있습니다.
+**[!UICONTROL 검색 결과 설정]** 탭에서 방문자가 쿼리를 입력할 때 검색에 포함되는 경로를 지정할 수 있습니다.
 
 ![검색 결과 설정](assets/search-result-settings.png)
 
-* **[!UICONTROL 페이지당 검색 결과 수]**
+* **[!UICONTROL 페이지당 검색 결과]**
 
   페이지 하나에 표시되는 항목/게시물 수를 정의합니다. 기본값은 10입니다.
 
@@ -96,4 +96,4 @@ ht-degree: 1%
 
 ## 추가 정보 {#additional-information}
 
-자세한 내용은 [Essentials 검색](search-implementation.md) 개발자용 페이지입니다.
+자세한 내용은 개발자를 위한 [Search Essentials](search-implementation.md) 페이지에서 확인할 수 있습니다.

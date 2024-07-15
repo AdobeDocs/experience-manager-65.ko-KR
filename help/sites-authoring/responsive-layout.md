@@ -41,7 +41,7 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 
 * [**레이아웃 컨테이너**](#adding-a-layout-container-and-its-content-edit-mode) 구성 요소
 
-  이 구성 요소는에서 사용할 수 있습니다. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser) 응답형 그리드 내에 구성 요소를 추가 및 배치할 수 있도록 해주는 그리드 단락 시스템을 제공합니다. 또한 페이지에서 기본 단락 시스템으로 설정할 수도 있습니다.
+  이 구성 요소는 [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)에서 사용할 수 있으며 응답형 그리드 내에 구성 요소를 추가 및 배치할 수 있도록 해주는 그리드 단락 시스템을 제공합니다. 또한 페이지에서 기본 단락 시스템으로 설정할 수도 있습니다.
 
 * [**레이아웃 모드**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
@@ -62,11 +62,11 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 
 >[!NOTE]
 >
->Adobe 제공 [GitHub 설명서](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) 응답형 레이아웃 을 프런트엔드 개발자에게 참조용으로 제공하여 AEM 외부의 AEM 그리드를 사용할 수 있도록 합니다. 예를 들어 나중에 AEM 사이트에 대한 정적 HTML mock-up을 생성할 때 이를 사용할 수 있습니다.
+>Adobe은 응답형 레이아웃의 [GitHub 설명서](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)를 프런트엔드 개발자에게 참조용으로 제공하여 AEM 외부 AEM 그리드를 사용할 수 있도록 합니다. 예를 들어 나중에 사용하기 위해 AEM 사이트에 대한 정적 HTML mock-up을 생성할 때 이를 사용할 수 있습니다.
 
 >[!NOTE]
 >
->위의 메커니즘은 템플릿에 대한 구성으로 사용할 수 있게 됩니다. 다음을 참조하십시오 [응답형 레이아웃 구성](/help/sites-administering/configuring-responsive-layout.md) 추가 정보.
+>위의 메커니즘은 템플릿에 대한 구성으로 사용할 수 있게 됩니다. 자세한 내용은 [응답형 레이아웃 구성](/help/sites-administering/configuring-responsive-layout.md)을 참조하십시오.
 
 ## 레이아웃 정의, 디바이스 에뮬레이션 및 중단점 {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -132,7 +132,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
-   * 파란색 점선은 *접기* 선택한 디바이스(여기서는 **IPHONE 6**).
+   * 파란색 점선은 선택한 장치(여기서는 **iPhone 6**)에 대한 *접기*&#x200B;를 나타냅니다.
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
@@ -150,7 +150,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
 >[!NOTE]
 >
->아직 사용할 수 없는 경우 **레이아웃 컨테이너** 은(는) 명시적으로 있어야 합니다. [단락 시스템/페이지에 대해 활성화됨](/help/sites-administering/configuring-responsive-layout.md) (예: 를 사용하여 [**디자인** 모드](/help/sites-authoring/default-components-designmode.md)).
+>아직 사용할 수 없는 경우 **레이아웃 컨테이너**&#x200B;를 단락 시스템/페이지에 대해 명시적으로 [활성화](/help/sites-administering/configuring-responsive-layout.md)해야 합니다(예: [**디자인** 모드](/help/sites-authoring/default-components-designmode.md)를 사용).
 
 1. **레이아웃 컨테이너**&#x200B;는 [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)에서 표준 구성 요소로 사용할 수 있습니다. 여기에서 해당 페이지의 필요한 위치로 드래그하면 **구성 요소를 여기로 드래그하십시오** 플레이스홀더가 나타납니다.
 1. 그런 다음 구성 요소를 레이아웃 컨테이너에 추가할 수 있습니다. 이러한 구성 요소는 실제 콘텐츠를 담게 됩니다.
@@ -223,7 +223,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
      전체적으로 작업을 수행할 전체 레이아웃 컨테이너 구성 요소를 선택할 수 있습니다.
 
-   * **새 라인으로 이동**
+   * **새 줄로 이동**
 
      그리드 내에서 사용할 수 있는 공간에 따라 구성 요소가 새 라인으로 이동됩니다.
 
@@ -233,7 +233,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* 위치 **레이아웃** 모드 다음을 클릭할 수 있습니다 **여기에 구성 요소 드래그** 전체 구성 요소를 선택합니다. 그러면 이 모드에 대한 도구 모음이 표시됩니다.
+* **레이아웃** 모드에서 **구성 요소를 여기로 드래그하십시오**&#x200B;를 클릭하여 전체 구성 요소를 선택할 수 있습니다. 그러면 이 모드에 대한 도구 모음이 표시됩니다.
 
   도구 모음은 레이아웃 구성 요소의 상태 및 이에 속하는 구성 요소에 따라 옵션이 달라집니다. 예:
 

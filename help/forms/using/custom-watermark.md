@@ -24,7 +24,7 @@ ht-degree: 1%
 
 이 데이터의 무단 사용을 방지하기 위해 조직은 미리보기 PDF에 워터마크를 적용할 수 있습니다. 기본 워터마크는 &quot;PREVIEW&quot;이며 PDF 전체에 나타납니다.
 
-미리보기 PDF에서 워터마크를 활성화하려면 **[!UICONTROL 워터마크 적용]** 의 미리 보기 중 옵션 **[!UICONTROL 서신 관리 구성]** at https://&#39;[server]:[포트]&#39;/system/console/configMgr.
+미리 보기 PDF에서 워터마크를 사용하려면 https://&#39;[server]:[port]&#39;/system/console/configMgr의 **[!UICONTROL 서신 관리 구성]**&#x200B;에서 **[!UICONTROL 미리 보기 중에 워터마크 적용]** 옵션을 선택하십시오.
 
 ![기본 워터마크](assets/default-watermark.png)
 
@@ -32,10 +32,10 @@ ht-degree: 1%
 
 ## 서신 만들기 UI의 PDF 미리 보기에서 워터마크 맞춤화 {#customizewatermark-}
 
-1. 다음으로 이동 `https://'[server]:[port]'/[ContextPath]/crx/de` 관리자로 로그인합니다.
-1. 앱 폴더에서 이라는 폴더를 만듭니다. **[!UICONTROL 미리보기워터마크]** libs 폴더의 previewwatermark 폴더와 유사한 경로/구조:
+1. `https://'[server]:[port]'/[ContextPath]/crx/de`(으)로 이동하여 관리자로 로그인합니다.
+1. 앱 폴더에서 경로/구조가 libs 폴더의 previewwatermark 폴더와 유사한 **[!UICONTROL previewwatermark]** 폴더를 만듭니다.
 
-   1. 마우스 오른쪽 단추 클릭 **미리보기워터마크** 다음 경로에 있는 폴더를 선택하고 **오버레이 노드**:
+   1. 다음 경로에서 **previewwatermark** 폴더를 마우스 오른쪽 단추로 클릭하고 **오버레이 노드**&#x200B;를 선택합니다.
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
@@ -59,9 +59,9 @@ ht-degree: 1%
       >    
       >
 
-   1. 클릭 **확인** 그런 다음 을 클릭합니다. **모두 저장**. 다음 **[!UICONTROL 미리보기워터마크]** 폴더가 지정된 경로에 만들어집니다.
+   1. **확인**&#x200B;을 클릭한 다음 **모두 저장**&#x200B;을 클릭합니다. 지정한 경로에 **[!UICONTROL previewwatermark]** 폴더가 만들어집니다.
 
-1. &quot;/libs/fd/cm/configFiles/previewwatermark&quot; 폴더에서 &quot;/apps/fd/cm/configFiles/previewwatermark&quot; 폴더로 ddx 파일을 복사하여 붙여 넣고 **[!UICONTROL 모두 저장]**.
+1. &quot;/libs/fd/cm/configFiles/previewwatermark&quot; 폴더에서 &quot;/apps/fd/cm/configFiles/previewwatermark&quot; 폴더로 ddx 파일을 복사하여 붙여 넣고 **[!UICONTROL 모두 저장]**&#x200B;을(를) 클릭합니다.
 1. /apps/fd/cm/configFiles/previewwatermark/ 아래의 ddx 파일에서 원하는 대로 변경합니다.
 
    ```xml
@@ -79,7 +79,7 @@ ht-degree: 1%
    </DDX>
    ```
 
-   워터마크 모양, 텍스트 및 정렬 사용자 지정에 대한 자세한 내용은 [어셈블러 서비스 및 DDX 참조](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) 문서.
+   워터마크 모양, 텍스트 및 맞춤 사용자 지정에 대한 자세한 내용은 [어셈블러 서비스 및 DDX 참조](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) 문서에서 워터마크 및 배경 추가 및 제거를 참조하십시오.
 
    >[!NOTE]
    >

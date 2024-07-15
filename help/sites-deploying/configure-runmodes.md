@@ -22,13 +22,13 @@ ht-degree: 1%
 
 다음과 같은 작업을 수행할 수 있습니다.
 
-* [각 실행 모드에 대한 구성 매개 변수의 컬렉션 정의](#defining-configuration-properties-for-a-run-mode).
+* [각 실행 모드에 대한 구성 매개 변수의 컬렉션을 정의](#defining-configuration-properties-for-a-run-mode)합니다.
 
   기본 구성 매개변수 세트가 모든 실행 모드에 적용됩니다. 그런 다음 특정 환경의 목적에 맞게 추가 세트를 조정할 수 있습니다. 이는 필요에 따라 적용됩니다.
 
-* [특정 모드에 대해 설치할 추가 번들 정의](#defining-additional-bundles-to-be-installed-for-a-run-mode).
+* [특정 모드에 대해 설치할 추가 번들을 정의합니다](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
-모든 설정 및 정의는 하나의 저장소에 저장되며 **실행 모드**.
+모든 설정 및 정의는 하나의 저장소에 저장되며 **실행 모드**&#x200B;를 설정하여 활성화됩니다.
 
 ## 설치 실행 모드 {#installation-run-modes}
 
@@ -43,15 +43,15 @@ ht-degree: 1%
 
 상호 배타적인 실행 모드의 두 쌍입니다. 예를 들어 다음과 같은 작업을 수행할 수 있습니다.
 
-* 다음 중 하나를 정의합니다. `author` 또는 `publish`, 동시에 두 가지 모두 아님
+* `author` 또는 `publish`을(를) 동시에 정의하지 않음
 
-* 결합 `author` 다음 중 하나를 사용하여 `samplecontent` 또는 `nosamplecontent` (둘 다 아님)
+* `author`을(를) `samplecontent` 또는 `nosamplecontent`과(와) 결합(둘 다 아님)
 
 >[!CAUTION]
 >
->위의 실행 모드(author, publish, samplecontent, nosamplecontent) 중 하나를 사용할 때 설치 시 사용되는 값은 의 실행 모드를 정의합니다. *전체 라이프타임* 설치.
+>위의 실행 모드(author, publish, samplecontent, nosamplecontent) 중 하나를 사용할 때 설치 시 사용되는 값은 해당 설치의 *전체 수명*&#x200B;에 대한 실행 모드를 정의합니다.
 >
->이러한 실행 모드의 경우 *할 수 없음* 설치 후 변경합니다.
+>이러한 실행 모드에 대해 *설치 후에는 변경할 수 없습니다*.
 
 ## 사용자 지정된 실행 모드 {#customized-run-modes}
 
@@ -73,9 +73,9 @@ ht-degree: 1%
 
 이러한 모드를 사용하여 샘플 콘텐츠의 사용을 제어할 수 있습니다. 샘플 콘텐츠는 빠른 시작을 빌드하기 전에 정의되며 패키지, 구성 등을 포함할 수 있습니다.
 
-* 다음 `samplecontent` 실행 모드는 이 콘텐츠를 설치합니다(기본 모드).
+* `samplecontent` 실행 모드에서는 이 콘텐츠를 설치합니다(기본 모드).
 
-* 다음 `nosamplecontent` 모드는 샘플 콘텐츠를 설치하지 않습니다.
+* `nosamplecontent` 모드에서는 샘플 콘텐츠가 설치되지 않습니다.
 
 nosamplecontent 실행 모드는 프로덕션 설치용으로 설계되었습니다.
 
@@ -101,11 +101,11 @@ nosamplecontent 실행 모드는 프로덕션 설치용으로 설계되었습니
 
   적용 가능한 실행 모드에 사용됩니다(예: config).
 
-다음을 참조하십시오 [저장소의 OSGi 구성](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) 이러한 폴더 내의 개별 구성 노드를 정의하는 방법과 여러 실행 모드 조합에 대한 구성을 만드는 방법에 대한 자세한 내용은 을 참조하십시오.
+이러한 폴더 내의 개별 구성 노드를 정의하고 여러 실행 모드 조합에 대한 구성을 만드는 방법에 대한 자세한 내용은 [저장소의 OSGi 구성](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)을 참조하십시오.
 
 >[!NOTE]
 >
->대상 [설치 실행 모드](#installation-run-modes) (예: 작성자) 설치 후에는 실행 모드를 변경할 수 없습니다. 그러나 개별 구성 속성에 대한 변경 사항은 다시 시작할 때 적용됩니다.
+>[설치 실행 모드](#installation-run-modes)(예: 작성자)의 경우 설치 후에는 실행 모드를 변경할 수 없습니다. 그러나 개별 구성 속성에 대한 변경 사항은 다시 시작할 때 적용됩니다.
 
 ## 실행 모드에 대해 설치할 추가 번들 정의 {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
@@ -114,7 +114,7 @@ nosamplecontent 실행 모드는 프로덕션 설치용으로 설계되었습니
 * `install.author`
 * `install.publish`
 
-이 폴더는 다음과 같은 유형입니다. `nt:folder` 적절한 번들을 포함해야 합니다.
+이 폴더는 `nt:folder` 형식이며 적절한 번들을 포함해야 합니다.
 
 ## 특정 실행 모드로 CQ 시작 {#starting-cq-with-a-specific-run-mode}
 
@@ -125,11 +125,11 @@ nosamplecontent 실행 모드는 프로덕션 설치용으로 설계되었습니
 1. [](#using-the-r-option)
 1. [파일 이름 감지](#filename-detection-renaming-the-jar-file)
 
-응용 프로그램 서버를 사용하는 경우 다음 작업을 수행할 수도 있습니다 [web.xml에서 실행 모드 정의](#defining-the-run-mode-in-web-xml-with-application-server).
+응용 프로그램 서버를 사용하는 경우 [web.xml에서 실행 모드를 정의](#defining-the-run-mode-in-web-xml-with-application-server)할 수도 있습니다.
 
 ### sling.properties 파일 사용 {#using-the-sling-properties-file}
 
-다음 `sling.properties` 파일을 사용하여 필요한 실행 모드를 정의할 수 있습니다.
+`sling.properties` 파일을 사용하여 필요한 실행 모드를 정의할 수 있습니다.
 
 1. 구성 파일을 편집합니다.
 
@@ -141,7 +141,7 @@ nosamplecontent 실행 모드는 프로덕션 설치용으로 설계되었습니
 
 ### -r 옵션 사용 {#using-the-r-option}
 
-사용자 지정 실행 모드는 `-r` 빠른 시작을 실행할 때의 옵션입니다. 예를 들어 다음 명령을 사용하여 실행 모드가 dev로 설정된 AEM 인스턴스를 시작합니다. &quot;
+빠른 시작을 시작할 때 `-r` 옵션을 사용하여 사용자 지정 실행 모드를 활성화할 수 있습니다. 예를 들어 다음 명령을 사용하여 실행 모드가 dev로 설정된 AEM 인스턴스를 시작합니다. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -166,7 +166,7 @@ jar 파일은 명명 규칙을 사용해야 합니다.
 
 `cq5-<run-mode>-p<port-number>`
 
-예를 들어, `publish` jar 파일의 이름을 지정하여 실행 모드:
+예를 들어 jar 파일의 이름을 지정하여 `publish` 실행 모드를 설정합니다.
 
 `cq5-publish-p4503`
 
@@ -180,6 +180,6 @@ jar 파일은 명명 규칙을 사용해야 합니다.
 
 `WEB-INF/web.xml`
 
-AEM에 있습니다. `war` 배포 전에 파일 및 를 업데이트해야 합니다.
+이 파일은 AEM `war` 파일에 있으며 배포 전에 업데이트해야 합니다.
 
-다음을 참조하십시오 [응용 프로그램 서버에 AEM 설치](/help/sites-deploying/application-server-install.md) 을 참조하십시오.
+자세한 내용은 [응용 프로그램 서버에 AEM 설치](/help/sites-deploying/application-server-install.md)를 참조하십시오.

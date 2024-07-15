@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # AEM Forms 백업 준비 {#preparing-aem-forms-for-backup}
 
-**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
+**이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 ## 백업 및 복원 서비스 정보 {#about-the-backup-and-restore-service}
 
-백업 및 복원 서비스를 사용하면 AEM Forms을 *백업 모드*&#x200B;핫 백업을 수행할 수 있도록 해 줍니다. 백업 및 복원 서비스는 실제로 AEM Forms의 백업을 수행하거나 시스템을 복원하지 않습니다. 대신 서버를 계속 실행할 수 있도록 하면서 일관성 있고 안정적인 백업을 위한 상태로 만듭니다. GDS(전역 문서 저장소) 및 Forms 서버에 연결된 데이터베이스를 백업하는 작업을 담당합니다. GDS는 오래 지속되는 프로세스 내에서 사용되는 파일을 저장하는 데 사용되는 디렉토리입니다.
+백업 및 복원 서비스를 사용하면 AEM Forms을 *백업 모드*&#x200B;로 전환하여 핫 백업을 수행할 수 있습니다. 백업 및 복원 서비스는 실제로 AEM Forms의 백업을 수행하거나 시스템을 복원하지 않습니다. 대신 서버를 계속 실행할 수 있도록 하면서 일관성 있고 안정적인 백업을 위한 상태로 만듭니다. GDS(전역 문서 저장소) 및 Forms 서버에 연결된 데이터베이스를 백업하는 작업을 담당합니다. GDS는 오래 지속되는 프로세스 내에서 사용되는 파일을 저장하는 데 사용되는 디렉토리입니다.
 
 백업 모드는 백업 절차가 진행되는 동안 GDS의 파일이 제거되지 않도록 서버가 입력하는 상태입니다. 대신 GDS 디렉터리 아래에 하위 디렉터리가 만들어져 백업 모드가 끝난 후 삭제될 파일 레코드를 유지 관리합니다. 파일은 시스템 재시작에서 살아남기 위한 것이며 며칠 또는 몇 년에 걸쳐 실행될 수 있습니다. 이러한 파일은 Forms 서버의 전체 상태에 중요한 부분이며 PDF 파일, 정책 또는 양식 템플릿을 포함할 수 있습니다. 이러한 파일이 손실되거나 손상되면 Forms 서버의 프로세스가 불안정해지고 데이터가 손실될 수 있습니다.
 
@@ -43,11 +43,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Forms에 대한 백업을 수행할 때 고려할 사항에 대한 자세한 내용은 [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_63).
+>AEM Forms 백업을 수행할 때 고려할 사항에 대한 자세한 내용은 [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_63)을 참조하십시오.
 
 >[!NOTE]
 >
->백업 및 복원 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>백업 및 복원 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ## Forms 서버에서 백업 모드 시작 {#entering-backup-mode-on-the-forms-server}
 
@@ -57,11 +57,11 @@ Forms 서버의 핫 백업을 허용하려면 백업 모드로 들어갑니다. 
 * 백업 절차가 완료되는 시간입니다.
 * 연속 백업 모드에 있는지 여부를 나타내는 플래그입니다. 이는 롤링 백업을 수행하는 경우에만 유용합니다.
 
-백업 모드로 전환할 응용 프로그램을 작성하기 전에 Forms 서버를 백업 모드로 설정한 후에 사용되는 백업 절차를 이해하는 것이 좋습니다. AEM Forms에 대한 백업을 수행할 때 고려할 사항에 대한 자세한 내용은 [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_63).
+백업 모드로 전환할 응용 프로그램을 작성하기 전에 Forms 서버를 백업 모드로 설정한 후에 사용되는 백업 절차를 이해하는 것이 좋습니다. AEM Forms 백업을 수행할 때 고려할 사항에 대한 자세한 내용은 [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_63)을 참조하십시오.
 
 >[!NOTE]
 >
->백업 및 복원 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>백업 및 복원 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary-of-steps}
 
@@ -78,21 +78,21 @@ Forms 서버의 핫 백업을 허용하려면 백업 모드로 들어갑니다. 
 
 개발 프로젝트에 필요한 파일을 포함합니다. 이러한 파일은 코드를 제대로 컴파일하고 백업 및 복원 서비스 API를 사용하기 위해 프로젝트에 포함해야 합니다.
 
-이러한 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
 
 **BackupService 클라이언트 API 개체 만들기**
 
 백업 모드를 프로그래밍 방식으로 종료하려면 백업 및 복원 서비스 API를 사용할 BackupService 클라이언트 개체를 만듭니다.
 
-**고유한 레이블을 결정하고, 백업을 수행할 시간을 결정하고, 연속 백업 모드에 있는지 여부를 결정합니다.**
+**고유 레이블을 결정하고 백업을 수행할 시간을 결정하고 연속 백업 모드에 있는지 여부를 결정합니다**
 
-백업 모드로 전환하기 전에 고유한 레이블을 결정하고, 백업을 수행하기 위해 할당할 시간을 결정하고, Forms 서버가 백업 모드를 유지할 것인지 여부를 결정해야 합니다. 이러한 고려 사항은 조직에서 설정한 백업 절차와 통합하기 위해 중요합니다. (참조: [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_63).)
+백업 모드로 전환하기 전에 고유한 레이블을 결정하고, 백업을 수행하기 위해 할당할 시간을 결정하고, Forms 서버가 백업 모드를 유지할 것인지 여부를 결정해야 합니다. 이러한 고려 사항은 조직에서 설정한 백업 절차와 통합하기 위해 중요합니다. ([관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_63)을 참조하세요.)
 
 **백업 모드 시작**
 
 조직의 백업 절차와 일치하는 매개 변수를 사용하여 백업 모드로 전환합니다.
 
-**서버의 백업 모드 세션에 대한 정보를 검색합니다.**
+**서버의 백업 모드 세션에 대한 정보를 검색합니다**
 
 백업 모드로 전환한 후에는 세션에 대한 정보를 검색할 수 있습니다. 이 정보는 백업 절차와 통합하는 데 사용할 수 있습니다
 
@@ -116,10 +116,10 @@ Forms 서버의 핫 백업을 허용하려면 백업 모드로 들어갑니다. 
 
 1. BackupService 클라이언트 API 개체 만들기
 
-   다음을 사용합니다. `ServiceClientFactory` 개체와 BackupService 클라이언트 API 개체를 함께 사용합니다.
+   `ServiceClientFactory` 개체와 BackupService 클라이언트 API 개체를 함께 사용합니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다. (참조: [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * 만들기 `BackupService` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다. ([연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.)
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `BackupService` 개체를 만듭니다.
 
 1. 고유한 레이블을 결정하고, 백업을 수행할 시간을 결정하고, 연속 백업 모드에 있는지 여부를 결정합니다.
 
@@ -127,17 +127,17 @@ Forms 서버의 핫 백업을 허용하려면 백업 모드로 들어갑니다. 
 
 1. 백업 모드 시작
 
-   다음을 호출하여 백업 모드 시작 `enterBackupMode` 다음 매개 변수를 사용하는 메서드:
+   다음 매개 변수를 사용하여 `enterBackupMode` 메서드를 호출하여 백업 모드에 들어갑니다.
 
-   * A `String` 백업 모드 세션을 식별하는 사람이 인식할 수 있는 고유한 레이블을 지정하는 값입니다. XML 형식으로 인코딩할 수 없는 공백이나 문자는 사용하지 않는 것이 좋습니다.
-   * An `int` 백업 모드를 유지할 시간(분)을 지정하는 값입니다. 다음에서 값을 지정할 수 있습니다. `1` 끝 `10080` (1주 동안의 분 수). 연속 백업 모드를 사용할 때는 이 값이 무시됩니다.
-   * A `Boolean` 연속 백업 모드인지 여부를 지정하는 값입니다. 값 `True` 연속 백업 모드로 지정합니다. 연속 백업 모드에 있는 경우 백업 모드에 있는 시간(분) 동안 지정한 값은 무시됩니다.
+   * 백업 모드 세션을 식별하는 사람이 읽을 수 있는 고유한 레이블을 지정하는 `String` 값입니다. XML 형식으로 인코딩할 수 없는 공백이나 문자는 사용하지 않는 것이 좋습니다.
+   * 백업 모드를 유지할 시간(분)을 지정하는 `int` 값입니다. `1`에서 `10080`까지의 값(1주 동안의 분 수)을 지정할 수 있습니다. 연속 백업 모드를 사용할 때는 이 값이 무시됩니다.
+   * 연속 백업 모드에 있는지 여부를 지정하는 `Boolean` 값입니다. 값이 `True`이면 연속 백업 모드로 지정됩니다. 연속 백업 모드에 있는 경우 백업 모드에 있는 시간(분) 동안 지정한 값은 무시됩니다.
 
-     연속 백업 모드는 현재 백업 모드 세션이 완료된 후 새 백업 모드 세션이 시작됨을 의미합니다. 값 `False` 즉, 연속 백업 모드가 사용되지 않고 백업 모드를 종료한 후 GDS에서 파일 제거가 다시 시작됩니다.
+     연속 백업 모드는 현재 백업 모드 세션이 완료된 후 새 백업 모드 세션이 시작됨을 의미합니다. 값이 `False`이면 연속 백업 모드가 사용되지 않으며 백업 모드를 종료한 후 GDS에서 파일 제거가 다시 시작됩니다.
 
 1. 서버의 백업 모드 세션에 대한 정보를 검색합니다.
 
-   를 사용하여 정보 검색 `BackupModeEntryResult` 를 호출한 후 반환되는 개체 `enterBackupMode` 메서드를 사용합니다. 백업 모드를 시작한 후 검색할 수 있는 정보는 백업 프로시저와 통합하는 데 유용할 수 있습니다. 예를 들어 레이블, 백업 ID 및 시작 시간은 백업 절차의 파일 이름에 대한 입력으로 유용할 수 있습니다.
+   `enterBackupMode` 메서드를 호출한 후 반환되는 `BackupModeEntryResult` 개체를 사용하여 정보를 검색합니다. 백업 모드를 시작한 후 검색할 수 있는 정보는 백업 프로시저와 통합하는 데 유용할 수 있습니다. 예를 들어 레이블, 백업 ID 및 시작 시간은 백업 절차의 파일 이름에 대한 입력으로 유용할 수 있습니다.
 
 1. GDS 및 데이터베이스 백업 수행
 
@@ -154,7 +154,7 @@ Forms 서버의 핫 백업을 허용하려면 백업 모드로 들어갑니다. 
 
 1. BackupService 클라이언트 API 개체 만들기
 
-   Microsoft .NET 클라이언트 어셈블리를 사용하여 `BackupServiceService` 기본 생성자를 호출하여 개체를 만들고, `Credentials` 메서드를 사용합니다.
+   Microsoft .NET 클라이언트 어셈블리를 사용하여 기본 생성자를 호출하여 `BackupServiceService` 개체를 만들고 `Credentials` 메서드를 사용하여 자격 증명을 지정합니다.
 
 1. 고유한 레이블을 결정하고, 백업을 수행할 시간을 결정하고, 연속 백업 모드에 있는지 여부를 결정합니다.
 
@@ -164,11 +164,11 @@ Forms 서버의 핫 백업을 허용하려면 백업 모드로 들어갑니다. 
 
    백업 모드를 시작하려면 enterBackupMode 메서드를 호출하고 다음 값을 전달합니다.
 
-   * A `String` 백업 모드 세션을 식별하는 사람이 인식할 수 있는 고유한 레이블을 지정하는 값입니다. XML 형식으로 인코딩할 수 없는 공백이나 문자는 사용하지 않는 것이 좋습니다.
-   * A `Uint32` 백업 모드를 유지할 시간(분)을 지정하는 값입니다. 다음에서 값을 지정할 수 있습니다. `1` 끝 `10080` (1주 동안의 분 수). 연속 백업 모드를 사용할 때는 이 값이 무시됩니다.
-   * A `Boolean` 연속 백업 모드인지 여부를 지정하는 값입니다. 값 `True` 연속 백업 모드로 지정합니다. 연속 백업 모드에 있는 경우 백업 모드에 있는 시간(분) 동안 지정한 값은 무시됩니다. 연속 백업 모드는 현재 백업 모드 세션이 완료된 후 새 백업 모드 세션이 시작됨을 의미합니다.
+   * 백업 모드 세션을 식별하는 사람이 읽을 수 있는 고유한 레이블을 지정하는 `String` 값입니다. XML 형식으로 인코딩할 수 없는 공백이나 문자는 사용하지 않는 것이 좋습니다.
+   * 백업 모드를 유지할 시간(분)을 지정하는 `Uint32` 값입니다. `1`에서 `10080` 사이의 값을 지정할 수 있습니다(1주일 동안의 분 수). 연속 백업 모드를 사용할 때는 이 값이 무시됩니다.
+   * 연속 백업 모드에 있는지 여부를 지정하는 `Boolean` 값입니다. 값이 `True`이면 연속 백업 모드로 지정됩니다. 연속 백업 모드에 있는 경우 백업 모드에 있는 시간(분) 동안 지정한 값은 무시됩니다. 연속 백업 모드는 현재 백업 모드 세션이 완료된 후 새 백업 모드 세션이 시작됨을 의미합니다.
 
-     값 `False` 즉, 연속 백업 모드가 사용되지 않고 백업 모드를 종료한 후 GDS에서 파일 제거가 다시 시작됩니다.
+     값이 `False`이면 연속 백업 모드가 사용되지 않으며 백업 모드를 종료한 후 GDS에서 파일 제거가 다시 시작됩니다.
 
 1. 서버의 백업 모드 세션에 대한 정보를 검색합니다.
 
@@ -182,11 +182,11 @@ Forms 서버의 핫 백업을 허용하려면 백업 모드로 들어갑니다. 
 
 Forms 서버가 Forms 서버의 GDS(Global Document Storage)에서 파일 제거를 다시 시작하도록 백업 모드를 종료합니다.
 
-나가기 모드로 전환하기 위해 응용 프로그램을 작성하기 전에 AEM Forms에서 사용되는 백업 절차를 이해하는 것이 좋습니다. AEM Forms에 대한 백업을 수행할 때 고려할 사항에 대한 자세한 내용은 [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_63).
+나가기 모드로 전환하기 위해 응용 프로그램을 작성하기 전에 AEM Forms에서 사용되는 백업 절차를 이해하는 것이 좋습니다. AEM Forms 백업을 수행할 때 고려할 사항에 대한 자세한 내용은 [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_63)을 참조하십시오.
 
 >[!NOTE]
 >
->백업 및 복원 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>백업 및 복원 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-1}
 
@@ -201,7 +201,7 @@ Forms 서버가 Forms 서버의 GDS(Global Document Storage)에서 파일 제거
 
 개발 프로젝트에 필요한 모든 파일을 포함합니다. 이러한 파일은 코드를 제대로 컴파일하고 백업 및 복원 서비스 API를 사용하는 데 중요합니다.
 
-이러한 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
 
 **BackupService 클라이언트 API 개체 만들기**
 
@@ -211,7 +211,7 @@ Forms 서버가 Forms 서버의 GDS(Global Document Storage)에서 파일 제거
 
 GDS(Global Document Storage)에서 정상적인 파일 제거를 재개하려면 백업 모드를 종료하십시오. 백업 모드를 종료하기 전에 백업 절차가 완료되었는지 확인해야 합니다.
 
-**종료된 백업 모드 세션에 대한 정보 검색**
+**종료된 백업 모드 세션에 대한 정보를 검색합니다**
 
 백업 모드를 종료한 후 세션에 대한 정보를 검색할 수 있습니다. 이 정보는 백업 절차와 통합하는 데 사용할 수 있습니다.
 
@@ -231,18 +231,18 @@ GDS(Global Document Storage)에서 정상적인 파일 제거를 재개하려면
 
 1. BackupService 클라이언트 API 개체 만들기
 
-   다음을 사용합니다. `ServiceClientFactory` 개체와 BackupService 클라이언트 API 개체를 함께 사용합니다.
+   `ServiceClientFactory` 개체와 BackupService 클라이언트 API 개체를 함께 사용합니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다. (참조: [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * 만들기 `BackupService` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체를 매개 변수로 사용합니다.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다. ([연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.)
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 매개 변수로 전달하여 `BackupService` 개체를 만듭니다.
 
 1. 백업 모드 시작
 
-   다음을 호출하여 백업 모드 종료 `leaveBackupMode` 메서드를 사용합니다.
+   `leaveBackupMode` 메서드를 호출하여 백업 모드를 종료하십시오.
 
 1. 서버의 백업 모드 세션에 대한 정보를 검색합니다.
 
-   를 사용하여 작업에 대한 정보 검색 `BackupModeResult` 반환되는 개체입니다. 백업 모드를 시작한 후 검색할 수 있는 정보는 백업 프로시저와 통합하는 데 유용할 수 있습니다. 예를 들어 레이블, 백업 ID 및 시작 시간은 백업 절차의 파일 이름에 대한 입력으로 유용할 수 있습니다.
+   반환된 `BackupModeResult` 개체를 사용하여 작업에 대한 정보를 검색합니다. 백업 모드를 시작한 후 검색할 수 있는 정보는 백업 프로시저와 통합하는 데 유용할 수 있습니다. 예를 들어 레이블, 백업 ID 및 시작 시간은 백업 절차의 파일 이름에 대한 입력으로 유용할 수 있습니다.
 
 ### 웹 서비스 API를 사용하여 백업 모드 종료 {#leave-backup-mode-using-the-web-service-api}
 
@@ -257,11 +257,11 @@ GDS(Global Document Storage)에서 정상적인 파일 제거를 재개하려면
 
 1. BackupService 클라이언트 API 개체 만들기
 
-   Microsoft .NET 클라이언트 어셈블리를 사용하여 `BackupServiceService` 기본 생성자를 호출하여 개체를 작성합니다.
+   Microsoft .NET 클라이언트 어셈블리를 사용하여 기본 생성자를 호출하여 `BackupServiceService` 개체를 만듭니다.
 
 1. 백업 모드 시작
 
-   다음을 호출하여 백업 모드 종료 `leaveBackupMode` 웹 서비스 작업.
+   `leaveBackupMode` 웹 서비스 작업을 호출하여 백업 모드를 종료하십시오.
 
 1. 서버의 백업 모드 세션에 대한 정보를 검색합니다.
 

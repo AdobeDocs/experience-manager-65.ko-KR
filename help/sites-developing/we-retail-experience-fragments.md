@@ -20,7 +20,7 @@ ht-degree: 25%
 
 We.Retail에서 경험 조각 시험 사용
 
-An [경험 조각](/help/sites-authoring/experience-fragments.md) 는 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
+[경험 조각](/help/sites-authoring/experience-fragments.md)은(는) 페이지 내에서 참조할 수 있는 콘텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
 
 이를 통해 작성자는 콘텐츠를 복사하여 붙여넣을 필요 없이 페이지의 일부(경험 조각)를 다시 사용할 수 있습니다.
 
@@ -37,11 +37,11 @@ An [경험 조각](/help/sites-authoring/experience-fragments.md) 는 페이지 
 
 ## We.Retail에서 경험 조각을 만드는 위치 {#where-to-create-experience-fragments-in-we-retail}
 
-선택 **경험 조각** 전역 탐색에서 가져왔습니다. 여기에서 을(를) 구성합니다. [만들기](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) 및 [편집](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) 내 경험 조각 및 관련 항목 [변형](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
+전역 탐색에서 **경험 조각**&#x200B;을(를) 선택합니다. 여기서 경험 조각 및 관련 [변형](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation)을(를) 구성, [만들기](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) 및 [편집](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment)할 수 있습니다.
 
 ## We.Retail에서 경험 조각을 사용하는 위치 {#where-to-use-experience-fragments-in-we-retail}
 
-다음을 사용할 수 있습니다. [경험 조각](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (다른 구성 요소에서와 같이) [모든 페이지](/help/sites-authoring/editing-content.md) 아래에 **사이트** 전역 탐색에서.
+전역 탐색에서 **Sites**&#x200B;의 [모든 페이지](/help/sites-authoring/editing-content.md)에서 [경험 조각](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment)을(를) 사용할 수 있습니다(다른 구성 요소에서와 같이).
 
 ## 추가 정보 {#further-information}
 

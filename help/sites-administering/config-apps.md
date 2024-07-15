@@ -24,13 +24,13 @@ Adobe Experience Manager 앱을 사용하면 애플리케이션 OTA의 콘텐츠
 
 레퍼러 필터 서비스를 구성하려면 다음 작업을 수행하십시오.
 
-* Apache Felix 콘솔 열기(**구성**) 위치:
+* 다음 위치에서 Apache Felix 콘솔(**구성**)을 엽니다.
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * 관리자로 로그인합니다.
-* 다음에서 **구성** 메뉴에서 다음을 선택합니다. *Apache Sling Referrer 필터*
+* **구성** 메뉴에서 다음을 선택합니다. *Apache Sling Referrer 필터*
 * 빈/누락된 레퍼러 헤더를 허용할 수 있도록 빈 허용 필드를 선택합니다.
-* 클릭 **저장** 변경 사항을 저장합니다.
+* 변경 내용을 저장하려면 **저장**&#x200B;을 클릭하세요.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
-다음을 참조하십시오. [OSGI 구성 설정](/help/sites-deploying/osgi-configuration-settings.md) 및 [보안 확인 목록 - 크로스 사이트 요청 위조 문제](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) 을 참조하십시오.
+자세한 내용은 [OSGI 구성 설정](/help/sites-deploying/osgi-configuration-settings.md) 및 [보안 검사 목록 - 사이트 간 요청 위조 문제](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery)를 참조하십시오.

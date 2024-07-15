@@ -36,7 +36,7 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 
 >[!TIP]
 >
->원하시면 **다음을 수행하여 학습** 및 은 기술적으로 설명되어 있으며 API 및 프레임워크로 구성되어 다음에서 사용할 수 있는 AEM Headless 튜토리얼을 참조하십시오. [추가 리소스 섹션](#additional-resources) 이 문서의 끝에 있습니다.
+>**직접 학습**&#x200B;을 선호하고 기술 관련 소양을 갖추고 있는 경우, API 및 프레임워크로 구성된 AEM Headless 튜토리얼을 방문하십시오. 튜토리얼은 이 문서의 끝에 있는 [추가 리소스 섹션](#additional-resources)에서 사용할 수 있습니다.
 
 ## 대상자 {#audience}
 
@@ -70,11 +70,11 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 | 6 | [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](update-your-content.md) | REST API를 사용하여 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법에 대해 알아봅니다. |
 | 7 | [결합 방법 - AEM Headless의 앱과 콘텐츠](put-it-all-together.md) | AEM 프로젝트를 가져와 AEM Headless SDK 실행을 준비하는 방법에 대해 알아봅니다. |
 | 8 | [Headless 애플리케이션 실행 방법](go-live.md) | 애플리케이션을 라이브로 배포하고 Git에서 로컬 코드를 가져와 CI/CD 파이프라인용 Cloud Manager Git으로 이동하는 방법에 대해 알아봅니다. |
-| 9 | [옵션 - AEM을 통해 단일 페이지 애플리케이션(SPA)을 제작하는 방법](create-spa.md) | AEM Headless 기능을 이해했으면 Headful과 Headless 전달을 결합하는 방법을 살펴보고 AEM SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법을 알아봅니다. |
+| 9 | [옵션 - AEM을 통해 단일 페이지 애플리케이션(SPA)을 제작하는 방법](create-spa.md) | AEM의 Headless 기능을 이해했으면 Headful과 Headless 전달을 결합하는 방법을 살펴보고 AEM의 SPA 편집기 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법을 알아봅니다. |
 
 ## 다음 단계 {#what-is-next}
 
-이제 Adobe Headless 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 진행하여 이 문서를 읽어보시기 바랍니다. [CMS Headless 개발에 대해 알아봅니다.](learn-about.md)
+이제 Adobe Headless 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 진행하여 [CMS Headless 개발에 대해 알아보기](learn-about.md) 문서를 읽어보시기 바랍니다.
 
 ### 나만의 어드벤처 선택 {#choose-your-path}
 

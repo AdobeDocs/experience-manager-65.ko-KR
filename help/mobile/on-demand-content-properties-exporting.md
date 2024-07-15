@@ -22,13 +22,13 @@ ht-degree: 3%
 >
 >Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-앱은 로 표시됩니다. *cq:Pages* AEM.
+앱은 AEM에서 *cq:Pages*(으)로 표시됩니다.
 
-이 속성은 다음 위치에서 발견되는 동일한 공통 속성을 공유합니다. *cq:Page* 통합을 지원하는 속성을 나타내는 아래에 표시된 다른 항목 외에 추가로 사용할 수도 있습니다.
+이러한 속성은 통합 지원 속성을 나타내는 아래에 표시된 다른 속성뿐만 아니라 모든 *cq:Page*&#x200B;에서 발견된 동일한 공통 속성을 공유합니다.
 
 ## 앱 속성 {#app-properties}
 
-다음 표는 를 보여 줍니다 **앱 속성 및 노드**.
+다음 표는 **앱 속성 및 노드**&#x200B;를 보여 줍니다.
 
 <table>
  <tbody>
@@ -45,7 +45,7 @@ ht-degree: 3%
   <tr>
    <td>dps-exportTemplate</td>
    <td>문자열:경로</td>
-   <td><p>앱의 내보내기 구성 경로. 내보내기 구성이 2개의 하위 ContentSync 내보내기 구성 템플릿이 있는 폴더입니다.</p> <p><i>dps-article</i>: 문서 콘텐츠를 내보내는 ContentSync 내보내기 구성</p> <p><i>dps-HTMLResources</i>: 앱/문서 공유 리소스를 내보내는 ContentSync 내보내기 구성</p> </td>
+   <td><p>앱의 내보내기 구성 경로. 내보내기 구성이 2개의 하위 ContentSync 내보내기 구성 템플릿이 있는 폴더입니다.</p> <p><i>dps-article</i>: 문서 콘텐츠를 내보내기 위한 ContentSync 내보내기 구성</p> <p><i>dps-HTMLResources</i>: 앱/문서 공유 리소스를 내보내는 ContentSync 내보내기 구성</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -80,12 +80,12 @@ ht-degree: 3%
   <tr>
    <td>sling:resourceType</td>
    <td>문자열:경로</td>
-   <td><p>또는으로 확장되는 cq:Component에 대한 경로 <i>mobileapps/core/components/instance.</i></p> <p>이렇게 하면 앱 카탈로그의 존재 및 렌더링이 제공됩니다.</p> </td>
+   <td><p><i>mobileapps/core/components/instance.</i>이거나 확장하는 cq:Component의 경로</p> <p>이렇게 하면 앱 카탈로그의 존재 및 렌더링이 제공됩니다.</p> </td>
   </tr>
  </tbody>
 </table>
 
-다음을 사용할 수 있습니다. ***컨텐츠 속성*** 컨텐츠를 작성합니다. 문서 및 공유 리소스를 만들고 내보내려면 다음 리소스를 참조하십시오.
+***콘텐츠 속성***&#x200B;을 사용하여 콘텐츠를 만들 수 있습니다. 문서 및 공유 리소스를 만들고 내보내려면 다음 리소스를 참조하십시오.
 
 * [컨텐츠 속성](/help/mobile/content-properties.md)
 * [문서 내보내기 구성 만들기](/help/mobile/creating-article-export-configuration.md)

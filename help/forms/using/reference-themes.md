@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 참조 테마{#reference-themes}
 
-[테마](../../forms/using/themes.md) css에 대한 깊은 지식 없이 양식을 스타일링할 수 있습니다. 기본 테마 외에도 다음을 설치하여 가져올 수 있습니다. [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
+[테마](../../forms/using/themes.md)를 사용하면 CSS에 대한 깊은 지식 없이 양식을 스타일링할 수 있습니다. 기본 테마 외에 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)를 설치하여 다음 테마를 가져올 수 있습니다.
 
 * 베릴
 * 실행
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 이 패키지에 포함된 테마는 응답형이며, 이러한 테마의 스타일은 모바일 및 데스크탑 디스플레이에 대해 정의됩니다. 다양한 장치의 최신 브라우저는 이러한 테마 중 하나와 함께 적용된 양식을 번거로움 없이 렌더링할 수 있습니다.
 
-패키지 설치에 대한 자세한 내용은 [패키지를 사용하여 작업하는 방법](/help/sites-administering/package-manager.md).
+패키지 설치에 대한 자세한 내용은 [패키지를 사용하여 작업하는 방법](/help/sites-administering/package-manager.md)을 참조하세요.
 
 ## 베릴 {#beryl}
 
@@ -80,7 +80,7 @@ Exec Light 테마는 공백을 사용하여 원활한 경험을 만듭니다. [�
 
 고요한 테마는 고요한 색상 구성표의 밝은 색조와 어두운 색조를 제공하여 양식의 다양한 구성 요소를 강조 표시합니다. 예를 들어 라디오 단추, 패널 및 탭의 녹색 음영이 다릅니다.
 
-![고요한 테마](assets/tranquil.png)
+![조용한 테마](assets/tranquil.png)
 
 <!--[Click to enlarge
 
@@ -90,7 +90,7 @@ Exec Light 테마는 공백을 사용하여 원활한 경험을 만듭니다. [�
 
 울트라마린 테마는 진한 파란색 음영을 사용하여 탭, 패널, 텍스트 상자 및 버튼과 같은 구성 요소를 강조 표시합니다.
 
-![울트라마린 테마](assets/ultramarine.png)
+![Ultramarine 테마](assets/ultramarine.png)
 
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
@@ -98,7 +98,7 @@ Exec Light 테마는 공백을 사용하여 원활한 경험을 만듭니다. [�
 
 Urbane theme는 귀하의 양식에 대해 미니멀하고 기능적인 모습을 강조합니다. 양식에 도시 테마를 적용하면 구성 요소가 균일함을 알 수 있습니다. 패널의 윤곽선이 얇아 현대적인 느낌을 줍니다.
 
-![도회 테마](assets/urbane.png)
+![도시 테마](assets/urbane.png)
 
 <!--[Click to enlarge
 

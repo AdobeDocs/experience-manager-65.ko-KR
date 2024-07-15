@@ -30,8 +30,8 @@ ht-degree: 1%
 
 편지에 특수 문자를 삽입할 수 있습니다.
 
-* 다음에서 [텍스트 편집기](/help/forms/using/document-fragments.md#createtext)
-* 다음에서 [서신에 있는 편집 가능한 인라인 모듈](../../forms/using/create-correspondence.md#managecontent)
+* [텍스트 편집기](/help/forms/using/document-fragments.md#createtext)에서
+* [편집 가능한 서신의 인라인 모듈](../../forms/using/create-correspondence.md#managecontent)에서
 
 ![specialcharactersinlinemodule](assets/specialcharactersinlinemodule.png)
 
@@ -41,10 +41,10 @@ ht-degree: 1%
 
 다음 단계를 사용하여 사용자 지정 특수 문자에 대한 지원을 추가하십시오.
 
-1. 다음으로 이동 `https://'[server]:[port]'/[ContextPath]/crx/de` 관리자로 로그인합니다.
-1. 앱 폴더에서 이라는 폴더를 만듭니다. **[!UICONTROL 특수 문자]** libs 아래의 textEditorConfig 폴더에 있는 specialcharacters 폴더와 유사한 경로/구조를 사용합니다.
+1. `https://'[server]:[port]'/[ContextPath]/crx/de`(으)로 이동하여 관리자로 로그인합니다.
+1. 앱 폴더에 libs 아래의 textEditorConfig 폴더에 있는 specialcharacters 폴더와 유사한 경로/구조를 가진 **[!UICONTROL specialcharacters]** 폴더를 만듭니다.
 
-   1. 마우스 오른쪽 단추 클릭 **특수 문자** 다음 경로에 있는 폴더를 선택하고 **오버레이 노드**:
+   1. 다음 경로에서 **specialcharacters** 폴더를 마우스 오른쪽 단추로 클릭하고 **오버레이 노드**&#x200B;를 선택합니다.
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
@@ -68,20 +68,20 @@ ht-degree: 1%
       >
       >
 
-   1. 클릭 **확인** 그런 다음 을 클릭합니다. **모두 저장**. 지정한 경로에 specialcharacters 폴더가 만들어집니다.
+   1. **확인**&#x200B;을 클릭한 다음 **모두 저장**&#x200B;을 클릭합니다. 지정한 경로에 specialcharacters 폴더가 만들어집니다.
 
       오버레이를 만든 후 노드 구조 태그를 확인합니다. 오버레이를 사용하여 /apps에서 만든 각 노드에는 해당 노드에 대해 /libs에 정의된 것과 동일한 클래스와 속성이 있어야 합니다. 속성 또는 태그가 /apps 위치 아래의 노드 구조에 없는 경우 해당 태그를 /libs의 해당 노드와 동기화합니다.
 
-1. 다음을 확인합니다. **[!UICONTROL textEditorConfig]** 노드에는 다음과 같은 속성과 값이 있습니다.
+1. **[!UICONTROL textEditorConfig]** 노드에 다음 속성 및 값이 있는지 확인합니다.
 
    | 이름 | 유형 | 값 |
    |---|---|---|
    | cmConfigurationType | 문자열 | cmTextEditorConfiguration |
    | cssPath | 문자열 | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. 마우스 오른쪽 단추 클릭 **[!UICONTROL 특수 문자]** 다음 경로에 있는 폴더를 선택하고 **만들기 > 하위 노드** 그런 다음 을 클릭합니다. **모두 저장**:
+1. 다음 경로에서 **[!UICONTROL specialcharacters]** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 하위 노드**&#x200B;를 선택한 다음 **모두 저장**&#x200B;을 클릭합니다.
 
-   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;yourchildnode>
+   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
 
 1. 텍스트 편집기\서신 UI 만들기 페이지를 새로 고칩니다. 추가한 노드는 UI의 특수 문자 목록에 있는 마지막 노드입니다.
 1. **모두 저장**&#x200B;을 클릭합니다.
@@ -119,7 +119,7 @@ ht-degree: 1%
      <li>"/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" 아래에 숨길 노드를 오버레이합니다.</li>
      <li>숨길 노드(앱 아래)에 sling:hideResource(부울) 속성을 추가합니다. </li>
      <li>모두 저장을 클릭합니다. </li>
-     <li>변경 사항을 볼 수 있도록 텍스트 편집기를 새로 고칩니다.\서신 UI를 만듭니다.<br /> </li>
+     <li>변경 내용을 볼 수 있도록 텍스트 편집기를 새로 고칩니다.\서신 UI를 만듭니다.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -129,7 +129,7 @@ ht-degree: 1%
      <li>속성 "sling:hideChildren (String 또는 String[])"을 "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"에 추가합니다. </li>
      <li>노드 이름(숨길 특수 문자)을 "sling:hideChildren" 속성 값으로 추가합니다. </li>
      <li>모두 저장을 클릭합니다. </li>
-     <li>변경 사항을 볼 수 있도록 텍스트 편집기를 새로 고칩니다.\서신 UI를 만듭니다.<br /> </li>
+     <li>변경 내용을 볼 수 있도록 텍스트 편집기를 새로 고칩니다.\서신 UI를 만듭니다.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -140,7 +140,7 @@ ht-degree: 1%
      <li>새로 만든 하위 노드에 "sling:orderBefore (String)" 속성을 추가합니다. </li>
      <li>노드 이름을 새로 추가된 특수 문자를 표시할 값으로 추가합니다. </li>
      <li>모두 저장을 클릭합니다. </li>
-     <li>변경 사항을 볼 수 있도록 텍스트 편집기를 새로 고칩니다.\서신 UI를 만듭니다.<br /> </li>
+     <li>변경 내용을 볼 수 있도록 텍스트 편집기를 새로 고칩니다.\서신 UI를 만듭니다.<br /> </li>
     </ol> </td>
   </tr>
  </tbody>

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Forms을 HTML으로 렌더링 {#rendering-forms-as-html}
 
-**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
+**이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 Forms 서비스는 웹 브라우저의 HTTP 요청에 대한 응답으로 양식을 HTML으로 렌더링합니다. 양식을 HTML으로 렌더링하면 클라이언트 웹 브라우저가 있는 컴퓨터에 Adobe Reader, Acrobat 또는 Flash Player이 필요하지 않다는 이점이 있습니다(양식 가이드용(더 이상 사용되지 않음)).
 
@@ -27,11 +27,11 @@ Forms 서비스는 웹 브라우저의 HTTP 요청에 대한 응답으로 양식
 
 * 개체의 테두리 속성을 사용하여 폼에 선, 상자 또는 그리드를 그리지 마십시오. 일부 브라우저는 미리 보기에 표시되는 것과 정확히 같은 테두리가 정렬되지 않을 수 있습니다. 물체는 층상으로 보이거나 다른 물체를 예상 위치에서 밀어낼 수 있습니다.
 * 선, 사각형 및 원을 사용하여 배경을 정의할 수 있습니다.
-* 텍스트를 맞추는 데 필요한 것보다 약간 큰 텍스트를 그립니다. 일부 웹 브라우저에서는 텍스트를 읽을 수 있게 표시하지 않습니다.
+* Draw 텍스트가 텍스트를 수용하는 데 필요한 것보다 약간 큽니다. 일부 웹 브라우저에서는 텍스트를 읽을 수 있게 표시하지 않습니다.
 
 >[!NOTE]
 >
->TIFF 이미지가 포함된 양식을 렌더링할 때 `FormServiceClient` 개체 `(Deprecated) renderHTMLForm` 및 `renderHTMLForm2` 메서드, TIFF 이미지는 Internet Explorer 또는 Mozilla Firefox 브라우저에 표시되는 렌더링된 HTML 양식에 표시되지 않습니다. 이러한 브라우저는 TIFF 이미지에 대한 기본 지원을 제공하지 않습니다.
+>`FormServiceClient` 개체의 `(Deprecated) renderHTMLForm` 및 `renderHTMLForm2` 메서드를 사용하여 TIFF 이미지가 포함된 양식을 렌더링하는 경우 Internet Explorer 또는 Mozilla Firefox 브라우저에 표시되는 렌더링된 HTML 양식에 TIFF 이미지가 표시되지 않습니다. 이러한 브라우저는 TIFF 이미지에 대한 기본 지원을 제공하지 않습니다.
 
 ## HTML 페이지 {#html-pages}
 
@@ -55,7 +55,7 @@ Forms 서비스는 웹 브라우저의 HTTP 요청에 대한 응답으로 양식
 
 양식이 HTML 양식으로 렌더링될 때 PDF 양식으로 렌더링된 양식에 페이지를 매기는 데 필요한 페이지 크기는 의미가 없습니다. 유동성 레이아웃이 있는 폼은 HTML 페이지를 무제한으로 확장할 수 있으므로 마스터 페이지에 바닥글을 사용하지 않는 것이 중요합니다. 마스터 페이지의 콘텐츠 영역 아래에 있는 바닥글은 페이지 경계를 지나는 HTML 콘텐츠를 덮어쓸 수 있습니다.
 
-를 사용하여 패널에서 패널로 명시적으로 이동해야 합니다. `xfa.host.pageUp` 및 `xfa.host.pageDown` 메서드를 사용합니다. 양식을 Forms 서비스로 전송하고 Forms 서비스에서 양식을 클라이언트 장치(일반적으로 웹 브라우저)로 다시 렌더링하도록 하여 페이지를 변경합니다.
+`xfa.host.pageUp` 및 `xfa.host.pageDown` 메서드를 사용하여 패널에서 패널로 명시적으로 이동해야 합니다. 양식을 Forms 서비스로 전송하고 Forms 서비스에서 양식을 클라이언트 장치(일반적으로 웹 브라우저)로 다시 렌더링하도록 하여 페이지를 변경합니다.
 
 >[!NOTE]
 >
@@ -65,13 +65,13 @@ Forms 서비스는 웹 브라우저의 HTTP 요청에 대한 응답으로 양식
 >
 >HTML 양식에서 디지털 서명 HTML 단추의 모양을 사용자 지정하려면 fscdigsig.css 파일(adobe-forms-ds.ear > adobe-forms-ds.war 파일 내)에서 다음 속성을 변경해야 합니다.
 
-**`.fsc-ds-ssb`**: 이 스타일시트는 빈 서명 필드가 있는 경우에 적용할 수 있습니다.
+**`.fsc-ds-ssb`**: 이 스타일시트는 빈 서명 필드가 있는 경우에 적용됩니다.
 
-**`.fsc-ds-ssv`**: 유효한 서명 필드가 있는 경우 이 스타일시트를 적용할 수 있습니다.
+**`.fsc-ds-ssv`**: 이 스타일시트는 유효한 기호 필드가 있는 경우에 적용됩니다.
 
 **`.fsc-ds-ssc`**: 유효한 기호 필드가 있지만 데이터가 변경된 경우 이 스타일시트를 적용할 수 있습니다.
 
-**`.fsc-ds-ssi`**: 잘못된 서명 필드가 있는 경우 이 스타일시트를 적용할 수 있습니다.
+**`.fsc-ds-ssi`**: 잘못된 기호 필드가 있는 경우 이 스타일시트를 적용할 수 있습니다.
 
 **`.fsc-ds-popup-bg`**: 이 스타일시트의 속성이 사용되고 있지 않습니다.
 
@@ -79,11 +79,11 @@ Forms 서비스는 웹 브라우저의 HTTP 요청에 대한 응답으로 양식
 
 ## 스크립트 실행 {#running-scripts}
 
-양식 작성자는 스크립트가 서버에서 실행되는지 아니면 클라이언트에서 실행되는지를 지정합니다. Forms 서비스는 를 사용하여 클라이언트와 서버 간에 배포할 수 있는 양식 인텔리전스 실행을 위한 분산 이벤트 처리 환경을 만듭니다. `runAt` 특성. 이 속성 또는 양식 디자인 내에서 스크립트를 만드는 방법에 대한 자세한 내용은 [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63)
+양식 작성자는 스크립트가 서버에서 실행되는지 아니면 클라이언트에서 실행되는지를 지정합니다. Forms 서비스는 `runAt` 특성을 사용하여 클라이언트와 서버 간에 배포할 수 있는 폼 인텔리전스를 실행하기 위한 분산 이벤트 처리 환경을 만듭니다. 이 특성 또는 양식 디자인에서 스크립트를 만드는 방법에 대한 자세한 내용은 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)을 참조하세요.
 
-Forms 서비스는 양식이 렌더링되는 동안 스크립트를 실행할 수 있습니다. 따라서 클라이언트에서 사용할 수 없는 데이터베이스나 웹 서비스에 연결하여 양식을 데이터로 미리 채울 수 있습니다. 단추를 설정할 수도 있습니다 `Click` 클라이언트에서 서버로 왕복하는 데이터를 가져오도록 서버에서 실행할 이벤트입니다. 이렇게 하면 사용자가 양식과 상호 작용하는 동안 클라이언트에서 엔터프라이즈 데이터베이스와 같은 서버 리소스를 필요로 하는 스크립트를 실행할 수 있습니다. HTML 양식의 경우 formcalc 스크립트는 서버에서만 실행할 수 있습니다. 따라서 이 스크립트를에 표시해야 합니다. `server` 또는 `both`.
+Forms 서비스는 양식이 렌더링되는 동안 스크립트를 실행할 수 있습니다. 따라서 클라이언트에서 사용할 수 없는 데이터베이스나 웹 서비스에 연결하여 양식을 데이터로 미리 채울 수 있습니다. 클라이언트에서 서버에 왕복 데이터를 보내도록 단추의 `Click` 이벤트를 서버에서 실행하도록 설정할 수도 있습니다. 이렇게 하면 사용자가 양식과 상호 작용하는 동안 클라이언트에서 엔터프라이즈 데이터베이스와 같은 서버 리소스를 필요로 하는 스크립트를 실행할 수 있습니다. HTML 양식의 경우 formcalc 스크립트는 서버에서만 실행할 수 있습니다. 따라서 이러한 스크립트를 `server` 또는 `both`에서 실행하도록 표시해야 합니다.
 
-를 호출하여 페이지(패널) 간에 이동하는 양식을 디자인할 수 있습니다. `xfa.host.pageUp` 및 `xfa.host.pageDown` 메서드를 사용합니다. 이 스크립트는 단추의 `Click` 이벤트 및 `runAt` 속성이 로 설정되어 있습니다. `Both`. 선택하는 이유 `Both` 로 렌더링되는 양식의 경우 Adobe Reader 또는 AcrobatPDF 가 서버로 이동하지 않고 페이지를 변경할 수 있으며 HTML 양식이 데이터를 서버로 라운드트림하여 페이지를 변경할 수 있도록 하기 위해 입니다. 즉, 양식이 Forms 서비스로 전송되고, 양식이 새 페이지가 표시된 HTML으로 다시 렌더링됩니다.
+`xfa.host.pageUp` 및 `xfa.host.pageDown` 메서드를 호출하여 페이지(패널) 간에 이동하는 양식을 디자인할 수 있습니다. 이 스크립트는 단추의 `Click` 이벤트에 있으며 `runAt` 특성이 `Both`(으)로 설정되어 있습니다. `Both`을(를) 선택하는 이유는 PDF으로 렌더링되는 양식의 경우 Adobe Reader 또는 Acrobat이 서버로 이동하지 않고 페이지를 변경할 수 있고 HTML 양식이 데이터를 서버로 라운드트림하여 페이지를 변경할 수 있기 때문입니다. 즉, 양식이 Forms 서비스로 전송되고, 양식이 새 페이지가 표시된 HTML으로 다시 렌더링됩니다.
 
 스크립트 변수와 양식 필드에 항목과 같은 이름을 지정하지 않는 것이 좋습니다. Internet Explorer와 같은 일부 웹 브라우저는 스크립트 오류가 발생하는 양식 필드와 이름이 같은 변수를 초기화할 수 없습니다. 양식 필드 및 스크립트 변수에 서로 다른 이름을 지정하는 것이 좋습니다.
 
@@ -95,11 +95,11 @@ form:ready 이벤트에 있는 양식 스크립트는 양식의 초기 렌더링
 >
 다중 페이지 양식에서는 다른 페이지로 이동할 경우 페이지에 대한 JavaScript의 변경 사항이 유지되지 않습니다.
 
-양식을 제출하기 전에 사용자 지정 스크립트를 호출할 수 있습니다. 이 기능은 사용 가능한 모든 브라우저에서 작동합니다. 그러나 이 변수는 사용자가 가 있는 HTML 양식을 렌더링할 때만 사용할 수 있습니다 `Output Type` 속성이 로 설정됨 `Form Body`. 다음 경우에는 작동하지 않습니다. `Output Type` 은(는) `Full HTML`. 이 기능을 구성하는 단계는 관리 도움말의 양식 구성 을 참조하십시오.
+양식을 제출하기 전에 사용자 지정 스크립트를 호출할 수 있습니다. 이 기능은 사용 가능한 모든 브라우저에서 작동합니다. 그러나 사용자가 `Output Type` 속성이 `Form Body`(으)로 설정된 HTML 양식을 렌더링하는 경우에만 사용할 수 있습니다. `Output Type`이(가) `Full HTML`인 경우 작동하지 않습니다. 이 기능을 구성하는 단계는 관리 도움말의 양식 구성 을 참조하십시오.
 
-먼저 양식을 제출하기 전에 호출되는 콜백 함수를 정의합니다. 여기서 함수의 이름은 입니다. `_user_onsubmit`. 함수에서 예외를 throw하지 않는다고 가정하거나 예외가 throw되지 않는다고 가정합니다. JavaScript 함수를 html의 head 섹션에 배치하는 것이 좋습니다. 하지만 다음을 포함하는 스크립트 태그의 끝 전 어디에서든 선언할 수 있습니다. `xfasubset.js`.
+먼저 폼을 제출하기 전에 호출되는 콜백 함수를 정의합니다. 여기서 함수의 이름은 `_user_onsubmit`입니다. 함수에서 예외를 throw하지 않는다고 가정하거나 예외가 throw되지 않는다고 가정합니다. JavaScript 함수를 html의 head 섹션에 배치하는 것이 좋습니다. 하지만 `xfasubset.js`을(를) 포함하는 스크립트 태그의 끝 전 어디에서든 선언할 수 있습니다.
 
-formserver가 드롭다운 목록을 포함하는 XDP를 렌더링할 때 드롭다운 목록을 만들 뿐만 아니라 숨겨진 텍스트 필드도 두 개 만듭니다. 이러한 텍스트 필드는 드롭다운 목록의 데이터를 저장합니다(하나는 옵션의 표시 이름을 저장하고 다른 하나는 옵션 값을 저장함). 따라서 사용자가 양식을 제출할 때마다 드롭다운 목록의 전체 데이터가 제출됩니다. 매번 그렇게 많은 데이터를 제출하지 않으려는 경우 사용자 지정 스크립트를 작성하여 사용하지 않도록 설정할 수 있습니다. 예를 들어 드롭다운 목록의 이름은 입니다. `drpOrderedByStateProv` 하위 양식 머리글로 래핑됩니다. HTML 입력 요소의 이름은 다음과 같습니다 `header[0].drpOrderedByStateProv[0]`. 드롭다운의 데이터를 저장하고 제출하는 숨겨진 필드의 이름은 다음과 같습니다. `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
+formserver가 드롭다운 목록을 포함하는 XDP를 렌더링할 때 드롭다운 목록을 만들 뿐만 아니라 숨겨진 텍스트 필드도 두 개 만듭니다. 이러한 텍스트 필드는 드롭다운 목록의 데이터를 저장합니다(하나는 옵션의 표시 이름을 저장하고 다른 하나는 옵션 값을 저장함). 따라서 사용자가 양식을 제출할 때마다 드롭다운 목록의 전체 데이터가 제출됩니다. 매번 그렇게 많은 데이터를 제출하지 않으려는 경우 사용자 지정 스크립트를 작성하여 사용하지 않도록 설정할 수 있습니다. 예: 드롭다운 목록의 이름은 `drpOrderedByStateProv`이고 하위 양식 머리글 아래에 래핑됩니다. HTML 입력 요소의 이름은 `header[0].drpOrderedByStateProv[0]`이(가) 됩니다. 드롭다운의 데이터를 저장하고 제출하는 숨겨진 필드의 이름은 `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`입니다.
 
 데이터를 게시하지 않으려면 다음과 같은 방법으로 이러한 입력 요소를 비활성화할 수 있습니다. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
@@ -121,7 +121,7 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 HTML으로 렌더링할 양식 디자인을 생성할 때 JavaScript 언어의 스크립트에 대한 스크립팅을 XFA 하위 집합으로 제한해야 합니다.
 
-클라이언트에서 실행되거나 클라이언트와 서버 모두에서 실행되는 스크립트는 XFA 하위 집합 내에 작성되어야 합니다. 서버에서 실행되는 스크립트는 전체 XFA 스크립팅 모델을 사용하고 FormCalc도 사용할 수 있습니다. JavaScript 사용에 대한 자세한 내용은 [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63).
+클라이언트에서 실행되거나 클라이언트와 서버 모두에서 실행되는 스크립트는 XFA 하위 집합 내에 작성되어야 합니다. 서버에서 실행되는 스크립트는 전체 XFA 스크립팅 모델을 사용하고 FormCalc도 사용할 수 있습니다. JavaScript 사용에 대한 자세한 내용은 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)을 참조하세요.
 
 클라이언트에서 스크립트를 실행할 때 표시되는 현재 패널만 스크립트를 사용할 수 있습니다. 예를 들어 패널 B가 표시될 때 패널 A에 있는 필드에 대해 스크립팅할 수 없습니다. 서버에서 스크립트를 실행할 때 모든 패널에 액세스할 수 있습니다.
 
@@ -129,20 +129,20 @@ HTML으로 렌더링할 양식 디자인을 생성할 때 JavaScript 언어의 �
 
 ## 이벤트 시간 {#event-timing}
 
-XFA 하위 집합은 HTML 이벤트에 매핑되는 XFA 이벤트를 정의합니다. 이벤트 계산 및 유효성 검사 시기에 대해서는 동작에 약간의 차이가 있습니다. 웹 브라우저에서 필드를 종료하면 전체 계산 이벤트가 실행됩니다. 필드 값을 변경할 때 계산 이벤트가 자동으로 실행되지 않습니다. 를 호출하여 이벤트를 강제로 계산할 수 있습니다. `xfa.form.execCalculate` 메서드를 사용합니다.
+XFA 하위 집합은 HTML 이벤트에 매핑되는 XFA 이벤트를 정의합니다. 이벤트 계산 및 유효성 검사 시기에 대해서는 동작에 약간의 차이가 있습니다. 웹 브라우저에서 필드를 종료하면 전체 계산 이벤트가 실행됩니다. 필드 값을 변경할 때 계산 이벤트가 자동으로 실행되지 않습니다. `xfa.form.execCalculate` 메서드를 호출하여 계산 이벤트를 강제 적용할 수 있습니다.
 
-웹 브라우저에서 확인 이벤트는 필드를 종료하거나 양식을 제출할 때만 실행됩니다. 를 사용하여 유효성 검사 이벤트를 강제 적용할 수 있습니다. `xfa.form.execValidate` 메서드를 사용합니다.
+웹 브라우저에서 확인 이벤트는 필드를 종료하거나 양식을 제출할 때만 실행됩니다. `xfa.form.execValidate` 메서드를 사용하여 유효성 검사 이벤트를 강제 적용할 수 있습니다.
 
 웹 브라우저에 표시되는 Forms(Adobe Reader 또는 Acrobat이 아님)는 필수 필드에 대한 XFA null 테스트(오류 또는 경고)를 준수합니다.
 
 * Null 테스트에서 오류가 발생하여 값을 지정하지 않고 필드를 종료하면 메시지 상자가 표시되고 확인을 클릭하면 필드의 위치가 변경됩니다.
 * Null 테스트에서 경고가 발생하고 값을 지정하지 않고 필드를 종료하면 확인 또는 취소를 클릭하라는 메시지가 표시되며 값을 지정하지 않고 진행하거나 필드로 돌아가 값을 입력할 수 있습니다.
 
-Null 테스트에 대한 자세한 내용은 [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63).
+Null 테스트에 대한 자세한 내용은 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)을(를) 참조하십시오.
 
 ## 양식 버튼 {#form-buttons}
 
-제출 단추를 클릭하면 양식 데이터가 Forms 서비스로 전송되고 양식 처리의 종료를 나타냅니다. 다음 `preSubmit` 이벤트는 클라이언트 또는 서버에서 실행되도록 설정할 수 있습니다. 다음 `preSubmit` 클라이언트에서 실행되도록 구성된 경우 양식 제출 전에 이벤트가 실행됩니다. 그렇지 않으면 `preSubmit` 양식을 제출하는 동안 서버에서 이벤트가 실행됩니다. 에 대한 자세한 내용은 `preSubmit` event, 참조 [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63).
+제출 단추를 클릭하면 양식 데이터가 Forms 서비스로 전송되고 양식 처리의 종료를 나타냅니다. `preSubmit` 이벤트는 클라이언트 또는 서버에서 실행되도록 설정할 수 있습니다. 클라이언트에서 실행되도록 구성된 경우 양식 제출 전에 `preSubmit` 이벤트가 실행됩니다. 그렇지 않으면 양식을 제출하는 동안 서버에서 `preSubmit` 이벤트가 실행됩니다. `preSubmit` 이벤트에 대한 자세한 내용은 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)를 참조하십시오.
 
 단추에 연결된 클라이언트측 스크립트가 없는 경우 데이터가 서버에 제출되고 서버에서 계산이 수행되며 HTML 양식이 다시 생성됩니다. 단추에 클라이언트측 스크립트가 있는 경우 데이터가 서버로 전송되지 않고 클라이언트측 스크립트가 웹 브라우저에서 실행됩니다.
 
@@ -154,9 +154,9 @@ HTML 4.0의 서버와 MSDHTML 또는 CSS2HTML에 대한 클라이언트에서 �
 
 ## 프레젠테이션 변경 사항 유지 {#maintaining-presentation-changes}
 
-HTML 페이지(패널) 간에 이동할 때 데이터의 상태만 유지됩니다. 배경색 또는 필수 필드 설정과 같은 설정은 유지 관리되지 않습니다(초기 설정과 다른 경우). 표시 상태를 유지하려면 필드의 표시 상태를 나타내는 필드(일반적으로 숨겨짐)를 만들어야 합니다. 필드에 스크립트를 추가하는 경우 `Calculate` 숨겨진 필드 값을 기반으로 프레젠테이션을 변경하는 이벤트입니다. HTML 페이지(패널) 사이를 왔다 갔다 할 때 프레젠테이션 상태를 유지할 수 있습니다.
+HTML 페이지(패널) 간에 이동할 때 데이터의 상태만 유지됩니다. 배경색 또는 필수 필드 설정과 같은 설정은 유지 관리되지 않습니다(초기 설정과 다른 경우). 표시 상태를 유지하려면 필드의 표시 상태를 나타내는 필드(일반적으로 숨겨짐)를 만들어야 합니다. 숨겨진 필드 값을 기반으로 프레젠테이션을 변경하는 필드의 `Calculate` 이벤트에 스크립트를 추가하면 HTML 페이지(패널) 간에 앞뒤로 이동할 때 프레젠테이션 상태를 유지할 수 있습니다.
 
-다음 스크립트는 `fillColor` 의 값을 기반으로 하는 필드의 `hiddenField`. 이 스크립트가 필드의 `Calculate` 이벤트.
+다음 스크립트는 `hiddenField`의 값을 기반으로 필드의 `fillColor`을(를) 유지합니다. 이 스크립트가 필드의 `Calculate` 이벤트에 있다고 가정합니다.
 
 ```java
      If (hiddenField.rawValue == 1)
@@ -178,7 +178,7 @@ HTML 페이지(패널) 간에 이동할 때 데이터의 상태만 유지됩니�
 * 정적 HTML
 * NoScriptXHTML
 
-문서에 디지털 서명하는 방법에 대한 자세한 내용은 [디지털 서명 및 인증 문서](/help/forms/developing/digitally-signing-certifying-documents.md)
+문서에 디지털 서명하는 방법에 대한 자세한 내용은 [문서에 디지털 서명 및 인증](/help/forms/developing/digitally-signing-certifying-documents.md)을 참조하세요.
 
 ## 액세스 가능성 지침 호환 XHTML 양식 렌더링 {#rendering-an-accessibility-guidelines-compliant-xhtml-form}
 
@@ -186,11 +186,11 @@ HTML 페이지(패널) 간에 이동할 때 데이터의 상태만 유지됩니�
 
 ## 양식 데이터 유효성 검사 {#validating-form-data}
 
-양식을 HTML 양식으로 렌더링할 때 양식 필드에 대한 유효성 검사 규칙 사용을 제한하는 것이 좋습니다. 일부 유효성 검사 규칙은 HTML 양식에 대해 지원되지 않을 수 있습니다. 예를 들어 MM-DD-YYYY라는 유효성 검사 패턴이 `Date/Time` HTML 양식으로 렌더링되는 양식 디자인에 있는 필드입니다. 날짜를 제대로 입력해도 제대로 작동하지 않습니다. 하지만 이 유효성 검사 패턴은 PDF으로 렌더링된 양식에 대해 제대로 작동합니다.
+양식을 HTML 양식으로 렌더링할 때 양식 필드에 대한 유효성 검사 규칙 사용을 제한하는 것이 좋습니다. 일부 유효성 검사 규칙은 HTML 양식에 대해 지원되지 않을 수 있습니다. 예를 들어 HTML 양식으로 렌더링되는 양식 디자인의 `Date/Time` 필드에 MM-DD-YYYY라는 유효성 검사 패턴을 적용하면 날짜를 제대로 입력해도 제대로 작동하지 않습니다. 하지만 이 유효성 검사 패턴은 PDF으로 렌더링된 양식에 대해 제대로 작동합니다.
 
 >[!NOTE]
 >
-Forms 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+Forms 서비스에 대한 자세한 내용은 AEM Forms용 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ## 단계 요약 {#summary-of-steps}
 
@@ -214,8 +214,8 @@ HTML 양식을 렌더링하려면 다음 단계를 수행하십시오.
 
 HTML 양식을 렌더링할 때 HTML 런타임 옵션을 설정합니다. 예를 들어 HTML 양식에 도구 모음을 추가하여 사용자가 클라이언트 컴퓨터에 있는 첨부 파일을 선택하거나 HTML 양식으로 렌더링된 첨부 파일을 검색할 수 있도록 할 수 있습니다. 기본적으로 HTML 도구 모음이 비활성화되어 있습니다. HTML 양식에 도구 모음을 추가하려면 런타임 옵션을 프로그래밍 방식으로 설정해야 합니다. 기본적으로 HTML 도구 모음은 다음 버튼으로 구성됩니다.
 
-* `Home`: 애플리케이션의 웹 루트에 대한 링크를 제공합니다.
-* `Upload`: 현재 양식에 첨부할 파일을 선택하는 사용자 인터페이스를 제공합니다.
+* `Home`: 응용 프로그램의 웹 루트에 대한 링크를 제공합니다.
+* `Upload`: 현재 양식에 첨부할 파일을 선택할 수 있는 사용자 인터페이스를 제공합니다.
 * `Download`: 첨부 파일을 표시하는 사용자 인터페이스를 제공합니다.
 
 HTML 양식에 HTML 도구 모음이 표시되면 사용자는 양식 데이터와 함께 제출할 파일을 최대 10개까지 선택할 수 있습니다. 파일이 제출되면 Forms 서비스가 파일을 검색할 수 있습니다.
@@ -270,43 +270,43 @@ Forms API(Java)를 사용하여 HTML 양식 렌더링:
 
 1. Forms 클라이언트 API 개체 만들기
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `FormsServiceClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `FormsServiceClient` 개체를 만듭니다.
 
 1. HTML 런타임 옵션 설정
 
-   * 만들기 `HTMLRenderSpec` 개체를 만들 때 사용됩니다.
-   * 도구 모음으로 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체 `setHTMLToolbar` 방법 및 전달 `HTMLToolbar` 열거형 값입니다. 예를 들어 세로 HTML 도구 모음을 표시하려면 를 전달합니다 `HTMLToolbar.Vertical`.
-   * HTML 양식에 대한 로케일 값을 설정하려면 `HTMLRenderSpec` 개체 `setLocale` 메서드, 로케일 값을 지정하는 문자열 값 전달 (선택적 설정입니다.)
-   * 전체 HTML 태그 내에서 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체 `setOutputType` 방법 및 통과 `OutputType.FullHTMLTags`. (선택적 설정입니다.)
+   * 해당 생성자를 사용하여 `HTMLRenderSpec` 개체를 만듭니다.
+   * 도구 모음을 사용하여 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체의 `setHTMLToolbar` 메서드를 호출하고 `HTMLToolbar` 열거형 값을 전달합니다. 예를 들어 세로 HTML 도구 모음을 표시하려면 `HTMLToolbar.Vertical`을(를) 전달합니다.
+   * HTML 양식에 대한 로케일 값을 설정하려면 `HTMLRenderSpec` 개체의 `setLocale` 메서드를 호출하고 로케일 값을 지정하는 문자열 값을 전달하십시오. (선택적 설정입니다.)
+   * 전체 HTML 태그 내에서 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체의 `setOutputType` 메서드를 호출하고 `OutputType.FullHTMLTags`을(를) 전달합니다. (선택적 설정입니다.)
 
    >[!NOTE]
    >
-   다음과 같은 경우 Forms이 HTML에서 성공적으로 렌더링되지 않습니다. `StandAlone` 옵션은 다음과 같습니다. `true` 및 `ApplicationWebRoot` 는 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 참조합니다( `ApplicationWebRoot` 값은 다음을 사용하여 지정됩니다 `URLSpec` 에 전달되는 개체 `FormsServiceClient` 개체 `(Deprecated) renderHTMLForm` 메서드). 다음의 경우 `ApplicationWebRoot` 는 AEM Forms을 호스팅하는 서버의 다른 서버이며, 관리 콘솔의 웹 루트 URI 값을 양식의 웹 애플리케이션 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > Forms 를 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer 로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.
+   `StandAlone` 옵션이 `true`이고 `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 참조하는 경우 Forms이 HTML에서 렌더링되지 않았습니다(`ApplicationWebRoot` 값은 `FormsServiceClient` 개체의 `(Deprecated) renderHTMLForm` 메서드에 전달된 `URLSpec` 개체를 사용하여 지정됨). `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 서버의 다른 서버인 경우 관리 콘솔의 웹 루트 URI 값을 양식의 웹 응용 프로그램 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > Forms 를 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer 로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.
 
 1. HTML 양식 렌더링
 
-   호출 `FormsServiceClient` 개체 `(Deprecated) renderHTMLForm` 메서드를 실행하고 다음 값을 전달합니다.
+   `FormsServiceClient` 개체의 `(Deprecated) renderHTMLForm` 메서드를 호출하고 다음 값을 전달하십시오.
 
-   * 파일 이름 확장명을 포함하여 양식 디자인 이름을 지정하는 문자열 값입니다. Forms 애플리케이션의 일부인 양식 디자인을 참조하는 경우 다음과 같은 전체 경로를 지정해야 합니다. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `TransformTo` HTML 환경 설정 유형을 지정하는 열거형 값입니다. 예를 들어, Internet Explorer 5.0 이상의 동적 HTML과 호환되는 HTML 양식을 렌더링하려면 다음을 지정합니다 `TransformTo.MSDHTML`.
-   * A `com.adobe.idp.Document` 양식과 병합할 데이터가 포함된 개체입니다. 데이터를 병합하지 않으려면 비워 둡니다. `com.adobe.idp.Document` 개체.
-   * 다음 `HTMLRenderSpec` HTML 런타임 옵션을 저장하는 개체입니다.
-   * 다음을 지정하는 문자열 값 `HTTP_USER_AGENT` 헤더 값, 예: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * A `URLSpec` HTML 양식을 렌더링하는 데 필요한 URI 값을 저장하는 개체입니다.
-   * A `java.util.HashMap` 첨부 파일을 저장하는 객체입니다. 이는 선택적 매개 변수이며 다음을 지정할 수 있습니다 `null` 양식에 파일을 첨부하지 않으려면.
+   * 파일 이름 확장명을 포함하여 양식 디자인 이름을 지정하는 문자열 값입니다. Forms 응용 프로그램의 일부인 양식 디자인을 참조하는 경우 `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`과 같은 전체 경로를 지정해야 합니다.
+   * HTML 환경 설정 유형을 지정하는 `TransformTo` 열거형 값입니다. 예를 들어 Internet Explorer 5.0 이상의 동적 HTML과 호환되는 HTML 양식을 렌더링하려면 `TransformTo.MSDHTML`을(를) 지정하십시오.
+   * 양식과 병합할 데이터가 포함된 `com.adobe.idp.Document` 개체입니다. 데이터를 병합하지 않으려면 빈 `com.adobe.idp.Document` 개체를 전달하십시오.
+   * HTML 런타임 옵션을 저장하는 `HTMLRenderSpec` 개체입니다.
+   * `HTTP_USER_AGENT` 헤더 값을 지정하는 문자열 값입니다(예: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`).
+   * HTML 양식을 렌더링하는 데 필요한 URI 값을 저장하는 `URLSpec` 개체입니다.
+   * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 선택적 매개 변수이며, 양식에 파일을 첨부하지 않으려면 `null`을(를) 지정할 수 있습니다.
 
-   다음 `(Deprecated) renderHTMLForm` 메서드가 을 반환합니다. `FormsResult` 클라이언트 웹 브라우저에 작성할 수 있는 양식 데이터 스트림이 포함된 개체입니다.
+   `(Deprecated) renderHTMLForm` 메서드는 클라이언트 웹 브라우저에 쓸 수 있는 양식 데이터 스트림이 포함된 `FormsResult` 개체를 반환합니다.
 
 1. 클라이언트 웹 브라우저에 양식 데이터 스트림 작성
 
-   * 만들기 `com.adobe.idp.Document` 를 호출하여 개체 `FormsResult` 의 오브젝트 `getOutputContent` 메서드를 사용합니다.
-   * 의 콘텐츠 유형 가져오기 `com.adobe.idp.Document` 개체 `getContentType` 메서드를 사용합니다.
-   * 설정 `javax.servlet.http.HttpServletResponse` 를 호출하여 객체의 콘텐츠 유형 `setContentType` 메서드와 의 콘텐츠 유형 전달 `com.adobe.idp.Document` 개체.
-   * 만들기 `javax.servlet.ServletOutputStream` 개체를 사용하여 클라이언트 웹 브라우저에서 `javax.servlet.http.HttpServletResponse` 개체 `getOutputStream` 메서드를 사용합니다.
-   * 만들기 `java.io.InputStream` 를 호출하여 개체 `com.adobe.idp.Document` 개체 `getInputStream` 메서드를 사용합니다.
-   * 바이트 배열을 만들고 `InputStream` 개체 `read` 메서드에서 바이트 배열을 인수로 전달합니다.
-   * 호출 `javax.servlet.ServletOutputStream` 개체 `write` 클라이언트 웹 브라우저에 양식 데이터 스트림을 전송하는 방법입니다. 바이트 배열을 로 전달 `write` 메서드를 사용합니다.
+   * `FormsResult` 개체의 `getOutputContent` 메서드를 호출하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 해당 `getContentType` 메서드를 호출하여 `com.adobe.idp.Document` 개체의 콘텐츠 형식을 가져옵니다.
+   * `setContentType` 메서드를 호출하고 `com.adobe.idp.Document` 개체의 콘텐츠 형식을 전달하여 `javax.servlet.http.HttpServletResponse` 개체의 콘텐츠 형식을 설정합니다.
+   * `javax.servlet.http.HttpServletResponse` 개체의 `getOutputStream` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `javax.servlet.ServletOutputStream` 개체를 만듭니다.
+   * `com.adobe.idp.Document` 개체의 `getInputStream` 메서드를 호출하여 `java.io.InputStream` 개체를 만듭니다.
+   * `InputStream` 개체의 `read` 메서드를 호출하고 바이트 배열을 인수로 전달하여 바이트 배열을 만들어 양식 데이터 스트림으로 채웁니다.
+   * `javax.servlet.ServletOutputStream` 개체의 `write` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저로 보냅니다. 바이트 배열을 `write` 메서드에 전달합니다.
 
 **추가 참조**
 
@@ -329,48 +329,48 @@ Forms API(웹 서비스)를 사용하여 HTML 양식 렌더링:
 
 1. Forms 클라이언트 API 개체 만들기
 
-   만들기 `FormsService` 개체로 설정하고 인증 값을 설정합니다.
+   `FormsService` 개체를 만들고 인증 값을 설정하십시오.
 
 1. HTML 런타임 옵션 설정
 
-   * 만들기 `HTMLRenderSpec` 개체를 만들 때 사용됩니다.
-   * 도구 모음으로 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체 `setHTMLToolbar` 방법 및 전달 `HTMLToolbar` 열거형 값입니다. 예를 들어 세로 HTML 도구 모음을 표시하려면 를 전달합니다 `HTMLToolbar.Vertical`.
-   * HTML 양식에 대한 로케일 값을 설정하려면 `HTMLRenderSpec` 개체 `setLocale` 메서드, 로케일 값을 지정하는 문자열 값 전달 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * 전체 HTML 태그 내에서 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체 `setOutputType` 방법 및 통과 `OutputType.FullHTMLTags`.
+   * 해당 생성자를 사용하여 `HTMLRenderSpec` 개체를 만듭니다.
+   * 도구 모음을 사용하여 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체의 `setHTMLToolbar` 메서드를 호출하고 `HTMLToolbar` 열거형 값을 전달합니다. 예를 들어 세로 HTML 도구 모음을 표시하려면 `HTMLToolbar.Vertical`을(를) 전달합니다.
+   * HTML 양식에 대한 로케일 값을 설정하려면 `HTMLRenderSpec` 개체의 `setLocale` 메서드를 호출하고 로케일 값을 지정하는 문자열 값을 전달하십시오. 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)를 참조하십시오.
+   * 전체 HTML 태그 내에서 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체의 `setOutputType` 메서드를 호출하고 `OutputType.FullHTMLTags`을(를) 전달합니다.
 
    >[!NOTE]
    >
-   다음과 같은 경우 Forms이 HTML에서 성공적으로 렌더링되지 않습니다. `StandAlone` 옵션은 다음과 같습니다. `true` 및 `ApplicationWebRoot` 는 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 참조합니다( `ApplicationWebRoot` 값은 다음을 사용하여 지정됩니다 `URLSpec` 에 전달되는 개체 `FormsServiceClient` 개체 `(Deprecated) renderHTMLForm` 메서드). 다음의 경우 `ApplicationWebRoot` 는 AEM Forms을 호스팅하는 서버의 다른 서버이며, 관리 콘솔의 웹 루트 URI 값을 양식의 웹 애플리케이션 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > Forms 를 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer 로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.
+   `StandAlone` 옵션이 `true`이고 `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 참조하는 경우 Forms이 HTML에서 렌더링되지 않았습니다(`ApplicationWebRoot` 값은 `FormsServiceClient` 개체의 `(Deprecated) renderHTMLForm` 메서드에 전달된 `URLSpec` 개체를 사용하여 지정됨). `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 서버의 다른 서버인 경우 관리 콘솔의 웹 루트 URI 값을 양식의 웹 응용 프로그램 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > Forms 를 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer 로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.
 
 1. HTML 양식 렌더링
 
-   호출 `FormsService` 개체 `(Deprecated) renderHTMLForm` 메서드를 실행하고 다음 값을 전달합니다.
+   `FormsService` 개체의 `(Deprecated) renderHTMLForm` 메서드를 호출하고 다음 값을 전달하십시오.
 
-   * 파일 이름 확장명을 포함하여 양식 디자인 이름을 지정하는 문자열 값입니다. Forms 애플리케이션의 일부인 양식 디자인을 참조하는 경우 다음과 같은 전체 경로를 지정해야 합니다. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `TransformTo` HTML 환경 설정 유형을 지정하는 열거형 값입니다. 예를 들어, Internet Explorer 5.0 이상의 동적 HTML과 호환되는 HTML 양식을 렌더링하려면 다음을 지정합니다 `TransformTo.MSDHTML`.
-   * A `BLOB` 양식과 병합할 데이터가 포함된 개체입니다. 데이터를 병합하지 않으려면 를 전달합니다. `null`. (참조: [유동성 레이아웃으로 Forms 미리 채우기](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).)
-   * 다음 `HTMLRenderSpec` HTML 런타임 옵션을 저장하는 개체입니다.
-   * 다음을 지정하는 문자열 값 `HTTP_USER_AGENT` 헤더 값, 예: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. 이 값을 설정하지 않으려는 경우 빈 문자열을 전달할 수 있습니다.
-   * A `URLSpec` HTML 양식을 렌더링하는 데 필요한 URI 값을 저장하는 개체입니다. (참조: [URI 값 지정](/help/forms/developing/rendering-interactive-pdf-forms.md).)
-   * A `java.util.HashMap` 첨부 파일을 저장하는 객체입니다. 이는 선택적 매개 변수이며 다음을 지정할 수 있습니다 `null` 양식에 파일을 첨부하지 않으려면. (참조: [양식에 파일 첨부](/help/forms/developing/rendering-interactive-pdf-forms.md).)
-   * 비어 있음 `com.adobe.idp.services.holders.BLOBHolder` 메서드에서 채운 개체입니다. 이 매개 변수 값은 렌더링된 양식을 저장합니다.
-   * 비어 있음 `com.adobe.idp.services.holders.BLOBHolder` 메서드에서 채운 개체입니다. 이 매개 변수는 출력 XML 데이터를 저장합니다.
-   * 비어 있음 `javax.xml.rpc.holders.LongHolder` 메서드에서 채운 개체입니다. 이 인수는 양식의 페이지 수를 저장합니다.
-   * 비어 있음 `javax.xml.rpc.holders.StringHolder` 메서드에서 채운 개체입니다. 이 인수는 로케일 값을 저장합니다.
-   * 비어 있음 `javax.xml.rpc.holders.StringHolder` 메서드에서 채운 개체입니다. 이 인수는 사용된 HTML 렌더링 값을 저장합니다.
-   * 비어 있음 `com.adobe.idp.services.holders.FormsResultHolder` 이 작업의 결과를 포함할 개체입니다.
+   * 파일 이름 확장명을 포함하여 양식 디자인 이름을 지정하는 문자열 값입니다. Forms 응용 프로그램의 일부인 양식 디자인을 참조하는 경우 `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`과 같은 전체 경로를 지정해야 합니다.
+   * HTML 환경 설정 유형을 지정하는 `TransformTo` 열거형 값입니다. 예를 들어 Internet Explorer 5.0 이상의 동적 HTML과 호환되는 HTML 양식을 렌더링하려면 `TransformTo.MSDHTML`을(를) 지정하십시오.
+   * 양식과 병합할 데이터가 포함된 `BLOB` 개체입니다. 데이터를 병합하지 않으려면 `null`을(를) 전달하십시오. [유동성 레이아웃으로 Forms 미리 채우기](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)를 참조하십시오.
+   * HTML 런타임 옵션을 저장하는 `HTMLRenderSpec` 개체입니다.
+   * `HTTP_USER_AGENT` 헤더 값을 지정하는 문자열 값입니다(예: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`). 이 값을 설정하지 않으려는 경우 빈 문자열을 전달할 수 있습니다.
+   * HTML 양식을 렌더링하는 데 필요한 URI 값을 저장하는 `URLSpec` 개체입니다. ([URI 값 지정](/help/forms/developing/rendering-interactive-pdf-forms.md)을 참조하세요.)
+   * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 선택적 매개 변수이며, 양식에 파일을 첨부하지 않으려면 `null`을(를) 지정할 수 있습니다. [양식에 파일 첨부](/help/forms/developing/rendering-interactive-pdf-forms.md)를 참조하십시오.
+   * 메서드로 채워진 빈 `com.adobe.idp.services.holders.BLOBHolder` 개체입니다. 이 매개 변수 값은 렌더링된 양식을 저장합니다.
+   * 메서드로 채워진 빈 `com.adobe.idp.services.holders.BLOBHolder` 개체입니다. 이 매개 변수는 출력 XML 데이터를 저장합니다.
+   * 메서드로 채워진 빈 `javax.xml.rpc.holders.LongHolder` 개체입니다. 이 인수는 양식의 페이지 수를 저장합니다.
+   * 메서드로 채워진 빈 `javax.xml.rpc.holders.StringHolder` 개체입니다. 이 인수는 로케일 값을 저장합니다.
+   * 메서드로 채워진 빈 `javax.xml.rpc.holders.StringHolder` 개체입니다. 이 인수는 사용된 HTML 렌더링 값을 저장합니다.
+   * 이 작업의 결과를 포함할 빈 `com.adobe.idp.services.holders.FormsResultHolder` 개체입니다.
 
-   다음 `(Deprecated) renderHTMLForm` 메서드는 `com.adobe.idp.services.holders.FormsResultHolder` 클라이언트 웹 브라우저에 작성해야 하는 양식 데이터 스트림을 사용하여 마지막 인수 값으로 전달되는 개체입니다.
+   `(Deprecated) renderHTMLForm` 메서드는 마지막 인수 값으로 전달된 `com.adobe.idp.services.holders.FormsResultHolder` 개체를 클라이언트 웹 브라우저에 작성해야 하는 양식 데이터 스트림으로 채웁니다.
 
 1. 클라이언트 웹 브라우저에 양식 데이터 스트림 작성
 
-   * 만들기 `FormResult` 의 값을 가져와서 개체 `com.adobe.idp.services.holders.FormsResultHolder` 개체 `value` 데이터 구성원입니다.
-   * 만들기 `BLOB` 를 호출하여 양식 데이터를 포함하는 개체 `FormsResult` 개체 `getOutputContent` 메서드를 사용합니다.
-   * 의 콘텐츠 유형 가져오기 `BLOB` 개체 `getContentType` 메서드를 사용합니다.
-   * 설정 `javax.servlet.http.HttpServletResponse` 를 호출하여 객체의 콘텐츠 유형 `setContentType` 메서드와 의 콘텐츠 유형 전달 `BLOB` 개체.
-   * 만들기 `javax.servlet.ServletOutputStream` 개체를 사용하여 클라이언트 웹 브라우저에서 `javax.servlet.http.HttpServletResponse` 개체 `getOutputStream` 메서드를 사용합니다.
-   * 바이트 배열을 만들고 `BLOB` 개체 `getBinaryData` 메서드를 사용합니다. 이 작업은 의 콘텐츠를 할당합니다. `FormsResult` 개체를 바이트 배열에 추가합니다.
-   * 호출 `javax.servlet.http.HttpServletResponse` 개체 `write` 클라이언트 웹 브라우저에 양식 데이터 스트림을 전송하는 방법입니다. 바이트 배열을 로 전달 `write` 메서드를 사용합니다.
+   * `com.adobe.idp.services.holders.FormsResultHolder` 개체의 `value` 데이터 멤버의 값을 가져와서 `FormResult` 개체를 만듭니다.
+   * `FormsResult` 개체의 `getOutputContent` 메서드를 호출하여 양식 데이터를 포함하는 `BLOB` 개체를 만듭니다.
+   * 해당 `getContentType` 메서드를 호출하여 `BLOB` 개체의 콘텐츠 형식을 가져옵니다.
+   * `setContentType` 메서드를 호출하고 `BLOB` 개체의 콘텐츠 형식을 전달하여 `javax.servlet.http.HttpServletResponse` 개체의 콘텐츠 형식을 설정합니다.
+   * `javax.servlet.http.HttpServletResponse` 개체의 `getOutputStream` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `javax.servlet.ServletOutputStream` 개체를 만듭니다.
+   * 바이트 배열을 만들고 `BLOB` 개체의 `getBinaryData` 메서드를 호출하여 바이트 배열을 채웁니다. 이 작업은 `FormsResult` 개체의 콘텐츠를 바이트 배열에 할당합니다.
+   * `javax.servlet.http.HttpServletResponse` 개체의 `write` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저로 보냅니다. 바이트 배열을 `write` 메서드에 전달합니다.
 
 **추가 참조**
 

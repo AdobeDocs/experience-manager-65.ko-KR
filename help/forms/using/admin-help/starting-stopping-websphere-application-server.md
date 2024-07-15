@@ -22,24 +22,24 @@ ht-degree: 0%
 
 ## WebSphere Application Server 상태 보기 {#view-the-status-of-websphere-application-server}
 
-1. 명령 프롬프트에서 `[appserver root]/bin` 디렉토리.
-1. 다음 명령을 입력하여 을 바꿉니다. *server_name* WebSphere Application Server의 이름:
+1. 명령 프롬프트에서 `[appserver root]/bin` 디렉터리로 이동합니다.
+1. 다음 명령을 입력하여 *server_name*&#x200B;을(를) WebSphere Application Server의 이름으로 바꿉니다.
 
    * (Windows) `serverStatus.bat`*server_name*
    * (Linux, UNIX) 를 참조하십시오./ `serverStatus.sh`*server_name*
 
 ## WebSphere 애플리케이션 서버 시작 {#start-websphere-application-server}
 
-1. 명령 프롬프트에서 `[appserver root]/bin` 디렉토리.
-1. 다음 명령을 입력하여 을 바꿉니다. *server_name* WebSphere Application Server의 이름:
+1. 명령 프롬프트에서 `[appserver root]/bin` 디렉터리로 이동합니다.
+1. 다음 명령을 입력하여 *server_name*&#x200B;을(를) WebSphere Application Server의 이름으로 바꿉니다.
 
    * (Windows) `startServer.bat`*server_name*
    * (Linux, UNIX) 를 참조하십시오./ `startServer.sh`*server_name*
 
 ## WebSphere 애플리케이션 서버 중지 {#stop-websphere-application-server}
 
-1. 명령 프롬프트에서 `[appserver root]/bin` 디렉토리.
-1. 다음 명령을 입력하여 을 바꿉니다. *server_name* WebSphere Application Server의 이름:
+1. 명령 프롬프트에서 `[appserver root]/bin` 디렉터리로 이동합니다.
+1. 다음 명령을 입력하여 *server_name*&#x200B;을(를) WebSphere Application Server의 이름으로 바꿉니다.
 
    * (Windows) `stopServer.bat`*server_name*
    * (Linux, UNIX) 를 참조하십시오./ `stopServer.sh`*server_name*

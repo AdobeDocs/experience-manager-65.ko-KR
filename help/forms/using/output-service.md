@@ -35,21 +35,21 @@ Output 서비스를 사용하면 다음과 같은 기능을 제공하는 애플�
 
 ## 비대화형 양식 문서 만들기 {#creating-non-interactive-form-documents}
 
-![using output_modified](assets/usingoutput_modified.png)
+![usingoutput_modified](assets/usingoutput_modified.png)
 
-일반적으로 AEM Forms Designer을 사용하여 템플릿을 만듭니다. 다음 `generatePDFOutput` 및 `generatePrintedOutput` 출력 서비스의 API를 사용하면 이러한 템플릿을 PDF, PostScript, ZPL 및 PCL을 비롯한 다양한 형식으로 직접 변환할 수 있습니다.
+일반적으로 AEM Forms Designer을 사용하여 템플릿을 만듭니다. 출력 서비스의 `generatePDFOutput` 및 `generatePrintedOutput` API를 사용하면 이러한 템플릿을 PDF, PostScript, ZPL, PCL을 비롯한 다양한 형식으로 직접 변환할 수 있습니다.
 
-다음 `generatePDFOutput` 작업이 PDF을 생성하는 반면 `generatePrintedOutput` 작업은 PostScript, ZPL 및 PCL 형식을 생성합니다. 두 작업의 첫 번째 매개 변수는 템플릿 파일의 이름 중 하나를 허용합니다(예: `ExpenseClaim.xdp`) 또는 템플릿을 포함하는 Document 객체 템플릿 파일의 이름을 지정할 때 컨텐트 루트도 템플릿이 들어 있는 폴더의 경로로 지정합니다. 다음 중 하나를 사용하여 콘텐츠 루트를 지정할 수 있습니다. `PDFOutputOptions` 또는 `PrintedOutputOptions` 매개 변수. 이러한 매개 변수를 사용하여 지정할 수 있는 기타 옵션에 대한 자세한 내용은 Javadoc을 참조하십시오.
+`generatePDFOutput` 작업은 PDF을 생성하는 반면 `generatePrintedOutput` 작업은 PostScript, ZPL 및 PCL 형식을 생성합니다. 두 작업의 첫 번째 매개 변수는 템플릿 파일(예: `ExpenseClaim.xdp`)의 이름 또는 템플릿을 포함하는 Document 개체를 허용합니다. 템플릿 파일의 이름을 지정할 때 컨텐트 루트도 템플릿이 들어 있는 폴더의 경로로 지정합니다. `PDFOutputOptions` 또는 `PrintedOutputOptions` 매개 변수를 사용하여 콘텐츠 루트를 지정할 수 있습니다. 이러한 매개 변수를 사용하여 지정할 수 있는 기타 옵션에 대한 자세한 내용은 Javadoc을 참조하십시오.
 
 두 번째 매개 변수는 출력 문서를 생성하는 동안 템플릿과 병합되는 XML 문서를 허용합니다.
 
-다음 `generatePDFOutput` 또한 작업에서는 XFA 기반 PDF 양식을 입력으로 받아들이고 비대화형 버전의 PDF 양식을 출력으로 반환할 수 있습니다.
+`generatePDFOutput` 작업에서는 XFA 기반 PDF 양식을 입력으로 허용하고 비대화형 버전의 PDF 양식을 출력으로 반환할 수도 있습니다.
 
 ## 비대화형 양식 문서 생성 {#generating-non-interactive-form-documents}
 
 하나 이상의 템플릿과 각 템플릿에 대한 여러 XML 데이터 레코드가 있는 시나리오를 고려하십시오.
 
-사용 `generatePDFOutputBatch` 및 `generatePrintedOutputBatch` 각 레코드에 대한 인쇄 문서를 생성하는 출력 서비스 작업.
+출력 서비스의 `generatePDFOutputBatch` 및 `generatePrintedOutputBatch` 작업을 사용하여 각 레코드에 대한 인쇄 문서를 생성합니다.
 
 레코드를 하나의 문서로 결합할 수도 있습니다. 두 작업 모두 4개의 매개 변수를 사용합니다.
 
@@ -57,10 +57,10 @@ Output 서비스를 사용하면 다음과 같은 기능을 제공하는 애플�
 
 두 번째 매개변수는 값이 XML 데이터가 포함된 문서 객체인 다른 맵입니다. 키는 첫 번째 매개변수에 지정한 키와 동일합니다.
 
-에 대한 세 번째 매개 변수 `generatePDFOutputBatch` 또는 `generatePrintedOutputBatch` 은(는) 유형입니다. `PDFOutputOptions` 또는 `PrintedOutputOptions` 각각.
+`generatePDFOutputBatch` 또는 `generatePrintedOutputBatch`에 대한 세 번째 매개 변수는 각각 `PDFOutputOptions` 또는 `PrintedOutputOptions` 형식입니다.
 
-매개 변수 유형은 의 매개 변수 유형과 동일합니다. `generatePDFOutput` 및 `generatePrintedOutput` 작업과 이 동일한 효과를 갖습니다.
+매개 변수 형식은 `generatePDFOutput` 및 `generatePrintedOutput` 작업에 대한 매개 변수 형식과 동일하며 동일한 효과를 갖습니다.
 
-네 번째 매개 변수는 다음과 같습니다. `BatchOptions`각 레코드에 대해 별도의 파일을 생성할 수 있는지 여부를 지정하는 데 사용하는 입니다. 이 매개 변수의 기본값은 false입니다.
+네 번째 매개 변수는 각 레코드에 대해 별도의 파일을 생성할 수 있는지 여부를 지정하는 데 사용하는 `BatchOptions` 형식입니다. 이 매개 변수의 기본값은 false입니다.
 
-모두 `generatePrintedOutputBatch` 및 `generatePDFOutputBatch` 유형의 값 반환 `BatchResult`. 값에는 생성된 문서 목록이 포함됩니다. 또한 생성된 각 문서와 관련된 정보가 들어 있는 XML 형식의 메타데이터 문서가 포함되어 있습니다.
+`generatePrintedOutputBatch`과(와) `generatePDFOutputBatch`이(가) 모두 `BatchResult` 형식의 값을 반환합니다. 값에는 생성된 문서 목록이 포함됩니다. 또한 생성된 각 문서와 관련된 정보가 들어 있는 XML 형식의 메타데이터 문서가 포함되어 있습니다.

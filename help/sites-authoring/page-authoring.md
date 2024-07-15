@@ -16,13 +16,13 @@ ht-degree: 0%
 
 다음은 AEM으로 작성하는 방법에 대한 두 가지 유형의 개요를 제공합니다.
 
-* [작성자를 위한 첫 번째 단계](/help/sites-authoring/first-steps.md) - 새로운 작성자를 위한 소개
+* [작성자를 위한 첫 번째 단계](/help/sites-authoring/first-steps.md) - 새 작성자를 위한 소개
 
-* [페이지 작성에 대한 빠른 안내서](/help/sites-authoring/qg-page-authoring.md) - 주요 작업에 대한 빠른 안내(고급)
+* [페이지 작성에 대한 빠른 안내](/help/sites-authoring/qg-page-authoring.md) - 기본 작업에 대한 빠른 안내(높은 수준)
 
 >[!NOTE]
 >
->이 섹션에서는 콘텐츠 페이지를 작성할 때 수행하는 작업에 대해 설명합니다. 페이지 작성과 밀접하게 관련된 많은 추가 기능이 있으며, 의 다른 섹션에서 다룹니다. [Authoring 안내서](/help/sites-authoring/first-steps.md).
+>이 섹션에서는 콘텐츠 페이지를 작성할 때 수행하는 작업에 대해 설명합니다. 페이지 작성과 밀접하게 관련된 많은 추가 기능이 [작성 가이드](/help/sites-authoring/first-steps.md)의 다른 섹션에서 다룹니다.
 
 ## 페이지 작성에 사용되는 기능의 빠른 개요 {#quick-overview-of-features-used-for-authoring-pages}
 
@@ -31,10 +31,10 @@ ht-degree: 0%
 * **드래그 앤 드롭**
 구성 요소(예: 텍스트, 이미지)와 디지털 자산(예: 이미지)을 원하는 위치에 드래그 앤 드롭하여 페이지에 배치할 수 있습니다.
 
-* **편집 중**
+* **편집**
 페이지에 배치되면 구성 요소별 대화 상자를 열어 콘텐츠를 입력하거나 해당 구성 요소의 특성(예: 이미지 크기)을 구성할 수 있습니다.
 
-* **즉석 편집**
+* **바로 편집**
 텍스트 및 이미지 구성 요소는 대화 상자나 명시적 저장 작업을 열지 않고도 웹 페이지에서 바로 편집할 수 있습니다.
 
 * **[구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**

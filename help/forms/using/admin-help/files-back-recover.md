@@ -32,7 +32,7 @@ GDS는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사
 
 비동기 작업 호출을 위한 입력 문서는 GDS에도 저장되며 요청을 처리하는 데 사용할 수 있어야 합니다. 따라서 GDS를 호스팅하는 파일 시스템의 안정성을 고려하고 RAID(Redundant Array of Independent Disks) 또는 기타 기술을 사용자의 품질 및 서비스 요구 사항에 맞게 사용하는 것이 중요합니다.
 
-GDS의 위치는 AEM Forms 설치 프로세스 또는 그 이후에 관리 콘솔을 사용하여 결정됩니다. GDS에 대한 고가용성 위치를 유지하는 것 외에도 문서에 대한 데이터베이스 스토리지를 활성화할 수도 있습니다. 다음을 참조하십시오 [데이터베이스를 문서 저장소로 사용할 때의 백업 옵션](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
+GDS의 위치는 AEM Forms 설치 프로세스 또는 그 이후에 관리 콘솔을 사용하여 결정됩니다. GDS에 대한 고가용성 위치를 유지하는 것 외에도 문서에 대한 데이터베이스 스토리지를 활성화할 수도 있습니다. [데이터베이스를 문서 저장소에 사용할 때 백업 옵션](files-back-recover.md#backup-options-when-database-is-used-for-document-storage)을 참조하십시오.
 
 ### GDS 위치 {#gds-location}
 
@@ -49,7 +49,7 @@ GDS 위치를 기본값이 아닌 위치로 변경한 경우 다음과 같이 �
 
 클러스터된 환경에서 GDS는 일반적으로 네트워크에서 공유되고 모든 클러스터 노드에 대해 읽기/쓰기 가능한 디렉토리를 가리킵니다.
 
-GDS의 위치는 원래 위치가 더 이상 이용 가능하지 않은 경우 복구 중에 변경될 수 있다. (참조: [복구하는 동안 GDS 위치 변경](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
+GDS의 위치는 원래 위치가 더 이상 이용 가능하지 않은 경우 복구 중에 변경될 수 있다. [복구하는 동안 GDS 위치 변경](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)을 참조하십시오.
 
 ### 데이터베이스를 문서 저장소로 사용할 때의 백업 옵션 {#backup-options-when-database-is-used-for-document-storage}
 
@@ -71,9 +71,9 @@ AEM forms를 설치하는 동안 crx-repository가 구성된 경우 AEM 저장�
 
 forms manager는 양식의 업데이트, 관리 및 중단 프로세스를 간소화합니다.
 
-### AEM Forms 작업 공간 {#html-workspace}
+### AEM Forms Workspace {#html-workspace}
 
-AEM Forms Workspace는 (JEE에서는 AEM Forms가 더 이상 사용되지 않음) Flex Workspace의 기능과 일치하며, Workspace를 확장 및 통합하고 보다 사용하기 쉬운 새로운 기능을 추가합니다.
+AEM Forms Workspace은 (JEE에서 AEM Forms의 더 이상 사용되지 않는) Flex Workspace의 기능과 일치하며 새로운 기능을 추가하여 Workspace을 확장 및 통합하고 보다 사용자 친화적으로 만듭니다.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ AEM Forms 데이터베이스는 양식 객체, 서비스 구성, 프로세스 �
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. 다음을 참조하십시오 [제품 라이프사이클 문서 Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. [제품 수명 주기 문서 Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)을 참조하세요.
 
 ### DB2 {#db2}
 
@@ -110,13 +110,13 @@ DB2에는 Tivoli Storage Manager에 데이터베이스를 백업하는 기능이
 
 ### Oracle {#oracle}
 
-스냅샷 백업을 사용하거나 아카이브 로그 모드에서 실행되도록 Oracle 데이터베이스를 구성합니다. (참조: [Oracle 백업: 소개](https://www.databasedesign-resource.com/oracle-backup.md).) oracle 데이터베이스 백업 및 복구에 대한 자세한 내용은 다음 사이트를 참조하십시오.
+스냅샷 백업을 사용하거나 아카이브 로그 모드에서 실행되도록 Oracle 데이터베이스를 구성합니다. ([Oracle 백업: 소개](https://www.databasedesign-resource.com/oracle-backup.md)를 참조하십시오.) oracle 데이터베이스 백업 및 복구에 대한 자세한 내용은 다음 사이트를 참조하십시오.
 
-[Oracle 백업 및 복구:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) 백업 및 복구의 개념과 백업, 복구 및 보고를 위해 RMAN(Recovery Manager)을 사용하는 가장 일반적인 기술에 대해 자세히 설명하고 백업 및 복구 전략을 계획하는 방법에 대한 자세한 정보를 제공합니다.
+[Oracle 백업 및 복구:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) 백업 및 복구의 개념과 백업, 복구 및 보고를 위해 RMAN(복구 관리자)을 사용하는 가장 일반적인 기술에 대해 자세히 설명하고 백업 및 복구 전략을 계획하는 방법에 대한 자세한 정보를 제공합니다.
 
-[Oracle 데이터베이스 백업 및 복구 사용 설명서:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) RMAN 아키텍처, 백업 및 복구 개념과 메커니즘, 시점 복구 및 데이터베이스 플래시백 기능과 같은 고급 복구 기술, 백업 및 복구 성능 튜닝에 대한 심층적인 정보를 제공합니다. 또한 RMAN 대신 호스트 운영 체제 기능을 사용하는 사용자 관리 백업 및 복구도 포함됩니다. 이 볼륨은 보다 정교한 데이터베이스 배포의 백업 및 복구와 고급 복구 시나리오에 필수적입니다.
+[Oracle 데이터베이스 백업 및 복구 사용 안내서:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) RMAN 아키텍처, 백업 및 복구 개념과 메커니즘, 지정 시간 복구 및 데이터베이스 플래시백 기능과 같은 고급 복구 기술, 백업 및 복구 성능 조정에 대한 자세한 정보를 제공합니다. 또한 RMAN 대신 호스트 운영 체제 기능을 사용하는 사용자 관리 백업 및 복구도 포함됩니다. 이 볼륨은 보다 정교한 데이터베이스 배포의 백업 및 복구와 고급 복구 시나리오에 필수적입니다.
 
-[Oracle 데이터베이스 백업 및 복구 참조:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) 모든 RMAN 명령의 구문과 의미에 대한 전체 정보를 제공하고 백업 및 복구 작업에 대한 보고에 사용할 수 있는 데이터베이스 보기에 대해 설명합니다.
+[Oracle 데이터베이스 백업 및 복구 참조:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) 모든 RMAN 명령의 구문과 의미 체계에 대한 전체 정보를 제공하고 백업 및 복구 작업에 대한 보고에 사용할 수 있는 데이터베이스 보기에 대해 설명합니다.
 
 ### SQL 서버 {#sql-server}
 
@@ -127,19 +127,19 @@ SQL Server는 두 가지 백업 및 복구 도구도 제공합니다.
 * SQL Server Management Studio(GUI)
 * T-SQL(명령줄)
 
-자세한 내용은 [백업 및 복원](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+자세한 내용은 [백업 및 복원](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx)을 참조하세요.
 
 ### MySQL {#mysql}
 
-MySQLAdmin을 사용하거나 Windows에서 INI 파일을 수정하여 이진 로그 모드에서 실행되도록 MySQL 데이터베이스를 구성합니다. (참조: [MySQL 이진 로깅](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) MySQL용 핫 백업 툴은 InnoBase 소프트웨어도 사용할 수 있습니다. (참조: [Innobase 핫 백업](https://www.innodb.com/hot-backup/features.md).)
+MySQLAdmin을 사용하거나 Windows에서 INI 파일을 수정하여 이진 로그 모드에서 실행되도록 MySQL 데이터베이스를 구성합니다. [MySQL 이진 로깅](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)을 참조하십시오. MySQL용 핫 백업 툴은 InnoBase 소프트웨어도 사용할 수 있습니다. ([Innobase 핫 백업](https://www.innodb.com/hot-backup/features.md)을 참조하십시오.)
 
 >[!NOTE]
 >
->MySQL의 기본 바이너리 로깅 모드는 &quot;문&quot;으로, Content Services에서 사용하는 테이블과 호환되지 않습니다(더 이상 사용되지 않음). 이 기본 모드에서 바이너리 로깅을 사용하면 Content Services(더 이상 사용되지 않음)가 실패합니다. 시스템에 컨텐츠 서비스(사용 중단됨)가 포함되어 있는 경우 &quot;혼합&quot; 로깅 모드를 사용하십시오. &quot;혼합&quot; 로깅을 활성화하려면 my.ini 파일에 다음 인수를 추가합니다. `binlog_format=mixed log-bin=logname`
+>MySQL의 기본 바이너리 로깅 모드는 &quot;문&quot;으로, Content Services에서 사용하는 테이블과 호환되지 않습니다(더 이상 사용되지 않음). 이 기본 모드에서 바이너리 로깅을 사용하면 Content Services(더 이상 사용되지 않음)가 실패합니다. 시스템에 컨텐츠 서비스(사용 중단됨)가 포함되어 있는 경우 &quot;혼합&quot; 로깅 모드를 사용하십시오. &quot;혼합&quot; 로깅을 사용하려면 my.ini 파일에 다음 인수를 추가하십시오. `binlog_format=mixed log-bin=logname`
 
-mysqldump 유틸리티를 사용하여 전체 데이터베이스 백업을 가져올 수 있습니다. 전체 백업이 필요하지만 항상 편리한 것은 아닙니다. 대용량 백업 파일을 생성하고 생성하는 데 시간이 걸립니다. 증분 백업을 수행하려면 -를 사용하여 서버를 시작해야 합니다. `log-bin` 이전 섹션에 설명된 대로 옵션입니다. MySQL Server가 다시 시작될 때마다 현재 이진 로그로의 쓰기가 중지되고 새 이진 로그가 만들어지며 그때부터 새 이진 로그는 현재 이진 로그가 됩니다. 를 사용하여 스위치를 수동으로 강제 적용할 수 있습니다. `FLUSH LOGS SQL` 명령입니다. 첫 번째 전체 백업 후 후속 증분 백업은 mysqladmin 유틸리티를 `flush-logs` 다음 로그 파일을 만드는 명령입니다.
+mysqldump 유틸리티를 사용하여 전체 데이터베이스 백업을 가져올 수 있습니다. 전체 백업이 필요하지만 항상 편리한 것은 아닙니다. 대용량 백업 파일을 생성하고 생성하는 데 시간이 걸립니다. 증분 백업을 수행하려면 이전 섹션에 설명된 대로 - `log-bin` 옵션으로 서버를 시작해야 합니다. MySQL Server가 다시 시작될 때마다 현재 이진 로그로의 쓰기가 중지되고 새 이진 로그가 만들어지며 그때부터 새 이진 로그는 현재 이진 로그가 됩니다. `FLUSH LOGS SQL` 명령을 사용하여 수동으로 스위치를 강제 전환할 수 있습니다. 첫 번째 전체 백업 후 다음 로그 파일을 만드는 `flush-logs` 명령과 함께 mysqladmin 유틸리티를 사용하여 후속 증분 백업을 수행합니다.
 
-다음을 참조하십시오 [백업 전략 요약](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
+[백업 전략 요약](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html)을 참조하세요.
 
 ```text
 binlog_format=mixed
@@ -154,7 +154,7 @@ Content Storage Root 디렉토리에는 모든 문서, 객체 및 인덱스가 �
 
 Content Services(더 이상 사용되지 않음)를 설치하면 콘텐츠 저장소 루트 디렉터리가 만들어집니다. 컨텐트 저장 영역 루트 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 결정됩니다.
 
-콘텐츠 저장소 루트 디렉토리의 기본 위치는 입니다. `[aem-forms root]/lccs_data`.
+콘텐츠 저장소 루트 디렉터리의 기본 위치는 `[aem-forms root]/lccs_data`입니다.
 
 Content Storage Root 디렉터리에서 다음 디렉터리를 백업합니다.
 
@@ -172,11 +172,11 @@ Content Storage Root 디렉터리에서 다음 디렉터리를 백업합니다.
 
 클러스터된 환경에 Content Services(사용되지 않음)를 설치하면 Content Storage Root 디렉터리는 두 개의 개별 디렉터리로 분할됩니다.
 
-**콘텐츠 저장소 루트 디렉터리:** 일반적으로 클러스터의 모든 노드에 대해 읽기/쓰기 액세스 가능한 공유 네트워크 디렉토리입니다
+**콘텐츠 저장소 루트 디렉터리:** 일반적으로 클러스터의 모든 노드에 대해 읽기/쓰기 액세스 가능한 공유 네트워크 디렉터리입니다
 
-**인덱스 루트 디렉터리:** 클러스터의 각 노드에 생성되며 항상 동일한 경로와 디렉토리 이름을 갖는 디렉토리
+**인덱스 루트 디렉터리:** 클러스터의 각 노드에서 만들어지는 디렉터리로, 항상 같은 경로와 디렉터리 이름을 사용합니다
 
-콘텐츠 저장소 루트 디렉토리의 기본 위치는 입니다. `[GDS root]/lccs_data`, 여기서 `[GDS root]` 는에 설명된 위치입니다. [GDS 위치](files-back-recover.md#gds-location). Content Storage Root 디렉터리에서 다음 디렉터리를 백업합니다.
+콘텐츠 저장소 루트 디렉터리의 기본 위치는 `[GDS root]/lccs_data`입니다. 여기서 `[GDS root]`은(는) [GDS 위치](files-back-recover.md#gds-location)에 설명된 위치입니다. Content Storage Root 디렉터리에서 다음 디렉터리를 백업합니다.
 
 /audit.contentstore
 
@@ -188,7 +188,7 @@ Content Storage Root 디렉터리에서 다음 디렉터리를 백업합니다.
 
 /backup-lucene-indexes 디렉토리가 없으면 /lucene-indexes 디렉토리도 컨텐트 저장 영역 루트 디렉토리에 백업합니다. /backup-lucene-indexes 디렉터리가 있으면 오류가 발생할 수 있으므로 /lucene-indexes 디렉터리를 백업하지 마십시오.
 
-인덱스 루트 디렉토리의 기본 위치는 다음과 같습니다. `[aem-forms root]/lucene-indexes` 각 노드에서
+인덱스 루트 디렉터리의 기본 위치는 각 노드의 `[aem-forms root]/lucene-indexes`입니다.
 
 ## 고객 설치 글꼴 {#customer-installed-fonts}
 
@@ -196,6 +196,6 @@ AEM Forms 환경에 추가 글꼴을 설치한 경우 별도로 백업해야 합
 
 >[!NOTE]
 >
->기본적으로 AEM Forms와 함께 설치되는 Adobe 글꼴은 `[aem-forms root]/fonts` 디렉토리.
+>기본적으로 AEM Forms와 함께 설치된 Adobe 글꼴은 `[aem-forms root]/fonts` 디렉터리에 있습니다.
 
 호스트 컴퓨터에서 운영 체제를 다시 초기화하고 이전 운영 체제의 글꼴을 사용하려면 시스템 글꼴 디렉터리의 내용도 백업해야 합니다. 자세한 지침은 해당 운영 체제 설명서를 참조하십시오.

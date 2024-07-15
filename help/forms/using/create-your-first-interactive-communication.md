@@ -27,7 +27,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 다음 이미지는 대화형 통신을 만드는 데 필요한 구성 요소를 보여 줍니다.
 
-![워크플로우](assets/workflow.gif)
+![워크플로](assets/workflow.gif)
 
 이 자습서를 마치면 다음을 수행할 수 있습니다.
 
@@ -48,9 +48,9 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 ## 사전 요구 사항 {#prerequisites}
 
 * AEM 작성자 인스턴스를 설정합니다.
-* 설치 [AEM Forms 추가 기능](/help/forms/using/installing-configuring-aem-forms-osgi.md) 작성자 인스턴스에서
+* 작성자 인스턴스에 [AEM Forms 추가 기능](/help/forms/using/installing-configuring-aem-forms-osgi.md) 설치
 * MYSQL 데이터베이스 설정
-* 데이터베이스 공급자로부터 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 자습서의 예제는 MySQL 데이터베이스를 기반으로 하며 Oracle [MySQL JDBC 데이터베이스 드라이버](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* 데이터베이스 공급자로부터 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 자습서의 예는 MySQL 데이터베이스를 기반으로 하며 Oracle의 [MySQL JDBC 데이터베이스 드라이버](https://dev.mysql.com/downloads/connector/j/5.1.html)를 사용합니다.
 
 ## 1단계: 대화형 통신 계획 {#step-plan-the-interactive-communication}
 
@@ -74,7 +74,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-양식 데이터 모델을 사용하면 대화형 통신을 개별 데이터 소스에 연결할 수 있습니다. 예를 들어 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스가 있습니다. 양식 데이터 모델은 연결된 데이터 소스에서 사용할 수 있는 비즈니스 엔터티 및 서비스의 통합 데이터 표시 스키마입니다. 양식 데이터 모델을 대화형 통신과 함께 사용하여 연결된 데이터 소스에서 데이터를 검색할 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합](/help/forms/using/data-integration.md).
+양식 데이터 모델을 사용하면 대화형 통신을 개별 데이터 소스에 연결할 수 있습니다. 예를 들어 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스가 있습니다. 양식 데이터 모델은 연결된 데이터 소스에서 사용할 수 있는 비즈니스 엔터티 및 서비스의 통합 데이터 표시 스키마입니다. 양식 데이터 모델을 대화형 통신과 함께 사용하여 연결된 데이터 소스에서 데이터를 검색할 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합](/help/forms/using/data-integration.md)을 참조하십시오.
 
 **목표:**
 
@@ -109,13 +109,13 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 대화형 통신을 만들려면 인쇄 및 웹 채널에 대해 AEM 서버에서 사용할 수 있는 템플릿이 있어야 합니다.
 
-인쇄 채널의 템플릿은 Adobe Forms Designer에서 만들고 AEM 서버에 업로드합니다. 그런 다음 대화형 통신을 만드는 동안 이러한 템플릿을 사용할 수 있습니다.
+인쇄 채널의 템플릿은 Forms Designer Adobe에서 만들어 AEM 서버에 업로드됩니다. 그런 다음 대화형 통신을 만드는 동안 이러한 템플릿을 사용할 수 있습니다.
 
 웹 채널에 대한 템플릿은 AEM에서 만들어집니다. 템플릿 작성자 및 관리자는 웹 템플릿을 만들고 편집하고 활성화할 수 있습니다. 이러한 템플릿을 만들고 활성화하면 대화형 통신을 만드는 동안 사용할 수 있습니다.
 
 **목표:**
 
-* Adobe Forms Designer를 사용하여 인쇄 채널용 XDP 템플릿 만들기
+* Forms Designer Adobe을 사용하여 인쇄 채널용 XDP 템플릿 만들기
 * AEM Forms 서버에 XDP 템플릿 업로드
 * 웹 채널에 대한 템플릿 만들기 및 활성화
 
@@ -140,7 +140,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 [](/help/forms/using/create-interactive-communication0.md)
 
-## 6단계: 대화형 통신 게시 {#step-publish-your-interactive-communication}
+## 6단계: 대화형 통신 Publish {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

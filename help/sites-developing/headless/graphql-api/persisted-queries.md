@@ -290,7 +290,7 @@ query getAdventuresByActivity($activity: String!) {
 이들:
 
 * osgi 구성으로 덮어쓸 수 없습니다.
-* cURL을 사용하여 HTTP 헤더 설정을 정의하는 요청으로 덮어쓸 수 있습니다. 여기에는 적합한 설정이 포함되어야 합니다. `cache-control` 및/또는 `surrogate-control`; 예를 들면 다음과 같습니다 [지속 쿼리 수준에서 캐시 관리](#cache-persisted-query-level)
+* cURL을 사용하여 HTTP 헤더 설정을 정의하는 요청으로 덮어쓸 수 있습니다. 여기에는 `cache-control` 및/또는 `surrogate-control`에 적합한 설정이 포함되어야 합니다. 예를 들어 [지속 쿼리 수준에서 캐시 관리](#cache-persisted-query-level)를 참조하십시오.
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -353,7 +353,7 @@ curl -u admin:admin -X POST \
 
 ### OSGi 구성으로 캐시 관리 {#cache-osgi-configration}
 
-캐시를 전체적으로 관리하려면 다음을 수행할 수 있습니다. [osgI 설정 구성](/help/sites-deploying/configuring-osgi.md) 대상: **지속 쿼리 서비스 구성**. 그렇지 않으면 이 OSGi 구성은 [게시 인스턴스의 기본값](#publish-instances).
+캐시를 전체적으로 관리하려면 **지속 쿼리 서비스 구성**&#x200B;에 대해 [OSGi 설정을 구성](/help/sites-deploying/configuring-osgi.md)할 수 있습니다. 그렇지 않으면 이 OSGi 구성은 [게시 인스턴스의 기본값](#publish-instances)을 사용합니다.
 
 >[!NOTE]
 >
@@ -400,12 +400,12 @@ URL은 다음과 같은 부분들로 나눌 수 있습니다.
 패키지를 제작하려면 다음 작업을 수행하십시오.
 
 1. **도구** > **배포** > **패키지**&#x200B;로 이동합니다.
-1. 탭하여 패키지 만들기 **패키지 만들기**. 그러면 패키지를 정의하는 대화 상자가 열립니다.
+1. **패키지 만들기**&#x200B;를 탭하여 패키지를 만듭니다. 그러면 패키지를 정의하는 대화 상자가 열립니다.
 1. 패키지 정의 대화 상자에서 **일반**&#x200B;에 “wknd-persistent-queries”와 같은 **이름**&#x200B;을 입력합니다.
 1. “1.0”과 같은 버전 번호를 입력합니다.
-1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예: `wknd` 전체 경로 구성 `/conf/wknd/settings/graphql/persistentQueries`.
-1. 선택 **저장** 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
-1. 다음 항목 선택 **빌드** 새로 생성된 패키지 정의에 있는 단추입니다.
+1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예를 들어 `wknd` 구성의 경우 전체 경로는 `/conf/wknd/settings/graphql/persistentQueries`입니다.
+1. **저장**&#x200B;을 선택하여 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
+1. 새로 만든 패키지 정의에서 **빌드** 단추를 선택합니다.
 
 패키지를 빌드하면 다음과 같은 작업을 수행할 수 있습니다.
 

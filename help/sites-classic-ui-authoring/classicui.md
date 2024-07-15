@@ -22,7 +22,7 @@ ht-degree: 0%
 
 클래식 UI는 CQ5(AEM의 전설) 이후 사용할 수 있는 데스크탑 지향 사용자 인터페이스입니다. 작성에 대한 다음 설명서는 이 UI에 중점을 둡니다.
 
-터치 지원 UI는 터치 및 데스크탑 장치 모두에서 사용하도록 설계된 AEM용 새로운 표준 사용자 인터페이스입니다. 다음을 참조하십시오. [표준 작성 설명서](/help/sites-authoring/author.md) 추가 정보.
+터치 지원 UI는 터치 및 데스크탑 장치 모두에서 사용하도록 설계된 AEM용 새로운 표준 사용자 인터페이스입니다. 자세한 내용은 [표준 제작 설명서](/help/sites-authoring/author.md)를 참조하세요.
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ ht-degree: 0%
 
 ## 작성(및 게시)의 개념 {#concept-of-authoring-and-publishing}
 
-UI의 선택에 관계없이, 작성에 공통되는 특정 개념과 아이디어가 있으며, 이는 잘 설명되어 있습니다 [표준 작성 설명서의 여기](/help/sites-authoring/author.md#concept-of-authoring-and-publishing).
+UI 선택에 관계없이 작성에 공통되는 특정 개념과 아이디어가 있습니다. 이는 [표준 작성 설명서의 여기](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)에 설명되어 있습니다.

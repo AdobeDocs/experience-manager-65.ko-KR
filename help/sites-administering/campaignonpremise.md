@@ -25,7 +25,7 @@ AEM을 ACC(Adobe Campaign Classic)와 통합하여 AEM에서 이메일 게재, �
 
 >[!INFO]
 >
->이 문서에서는 Adobe Campaign Classic을 AEM 6.5와 통합하는 방법에 대해 자세히 설명합니다. 다른 Campaign 통합에 대해서는 문서를 참조하십시오 [AEM 6.5와 Adobe Campaign 통합.](campaign.md)
+>이 문서에서는 Adobe Campaign Classic을 AEM 6.5와 통합하는 방법에 대해 자세히 설명합니다. 다른 Campaign 통합에 대해서는 [AEM 6.5와 Adobe Campaign 통합](campaign.md) 문서를 참조하십시오.
 
 ## 통합 단계 {#integration-steps}
 
@@ -44,12 +44,12 @@ AEM과 Campaign 간의 통합에는 두 솔루션에서 몇 가지 단계가 필
 
 * Adobe Campaign Classic에 대한 관리자 액세스
    * 통합을 수행하려면 구성된 데이터베이스를 포함하는 작동 중인 Adobe Campaign Classic 인스턴스가 필요합니다.
-   * Adobe Campaign Classic 설정 및 구성 방법에 대한 자세한 내용은 다음을 참조하십시오. [Adobe Campaign Classic 설명서,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) 특히 설치 및 구성 안내서를 참조하십시오.
+   * Adobe Campaign Classic 설정 및 구성 방법에 대한 자세한 내용은 [Adobe Campaign Classic 설명서,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html)를 참조하십시오. 특히 설치 및 구성 안내서를 참조하십시오.
 * AEM에 대한 관리자 액세스
 
 ## Campaign에 AEM 통합 패키지 설치 {#install-package}
 
-다음 **AEM 통합** Adobe Campaign의 패키지에는 AEM에 연결하는 데 필요한 몇 가지 표준 구성이 포함되어 있습니다.
+Adobe Campaign의 **AEM 통합** 패키지에는 AEM에 연결하는 데 필요한 몇 가지 표준 구성이 포함되어 있습니다.
 
 1. 관리자 자격으로 클라이언트 콘솔을 사용해 Adobe Campaign 인스턴트에 로그인합니다.
 
@@ -77,7 +77,7 @@ AEM과 Campaign 간의 통합에는 두 솔루션에서 몇 가지 단계가 필
 
 1. 클라이언트 콘솔을 사용해 관리자 자격으로 Adobe Campaign에 로그인합니다.
 
-1. 선택 **도구** > **탐색기** 메뉴 표시줄에서 을 클릭합니다.
+1. 메뉴 표시줄에서 **도구** > **탐색기**&#x200B;를 선택합니다.
 
 1. 탐색기에서 **관리** > **액세스 관리** > **연산자** 노드로 이동합니다.
 
@@ -91,7 +91,7 @@ AEM과 Campaign 간의 통합에는 두 솔루션에서 몇 가지 단계가 필
 
    >[!CAUTION]
    >
-   >구성할 보안 영역은 입니다. **개인 회사 네트워크(VPN+LAN)**.
+   >구성할 보안 영역은 **개인 회사 네트워크(VPN+LAN)**&#x200B;입니다.
 
 1. **저장**&#x200B;을 클릭합니다.
 
@@ -119,7 +119,7 @@ AEM과 Campaign 간의 통합에는 두 솔루션에서 몇 가지 단계가 필
    >
    >기본적으로, 연산자에 대해 보안 영역이 구성되어 있지 않습니다. AEM이 Adobe Campaign에 연결되려면 앞의 단계들에서 자세히 설명한 대로 영역을 반드시 선택해야 합니다.
    >
-   >Adobe는 잠재적인 보안 문제를 예방할 수 있도록 AEM 전용 보안 영역을 생성할 것을 적극 권장합니다. 이 항목에 대한 자세한 내용은 [Adobe Campaign Classic 설명서입니다.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+   >Adobe는 잠재적인 보안 문제를 예방할 수 있도록 AEM 전용 보안 영역을 생성할 것을 적극 권장합니다. 이 항목에 대한 자세한 내용은 [Adobe Campaign Classic 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
 
 1. Campaign 클라이언트에서 `aemserver` 연산자로 돌아간 뒤 **일반** 탭을 선택합니다.
 
@@ -131,7 +131,7 @@ AEM과 Campaign 간의 통합에는 두 솔루션에서 몇 가지 단계가 필
 
 ## AEM에서 Campaign 통합 구성 {#campaign-integration}
 
-AEM 사용 [Campaign에서 이미 설정한 연산자](#create-operator) Campaign과 통신하려면
+AEM은 [Campaign에서 이미 설정한 연산자](#create-operator)를 사용하여 Campaign과 통신합니다.
 
 1. 관리자 자격으로 AEM 제작 인스턴스에 로그인합니다.
 
@@ -169,17 +169,17 @@ AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하�
 
 1. 관리자 자격으로 AEM 제작 인스턴스에 로그인합니다.
 
-1. 전역 탐색 측면 레일에서 을 선택합니다. **도구** > **배포** > **복제** > **작성자의 에이전트**&#x200B;을 클릭한 다음 을 클릭합니다 **기본 에이전트(게시)**.
+1. 전역 탐색 측면 레일에서 **도구** > **배포** > **복제** > **작성자의 에이전트**&#x200B;를 선택한 다음 **기본 에이전트(게시)**&#x200B;를 클릭합니다.
 
    ![복제 에이전트 구성](assets/acc-replication-config.png)
 
-1. 클릭 **편집** 그런 다음 **전송** 탭.
+1. **편집**&#x200B;을 클릭한 다음 **전송** 탭을 선택합니다.
 
-1. 구성 **URI** 기본값을 대체한 필드 `localhost` AEM 게시 인스턴스의 IP 주소가 있는 값입니다.
+1. 기본 `localhost` 값을 AEM 게시 인스턴스의 IP 주소로 대체하여 **URI** 필드를 구성하십시오.
 
    ![전송 탭](assets/acc-transport-tab.png)
 
-1. 클릭 **확인** 에이전트 설정에 대한 변경 사항을 저장합니다.
+1. 에이전트 설정에 대한 변경 내용을 저장하려면 **확인**&#x200B;을 클릭합니다.
 
 캠페인 수신자가 콘텐츠에 액세스할 수 있도록 AEM 게시 인스턴스에 대한 복제를 구성했습니다.
 
@@ -187,15 +187,15 @@ AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하�
 >
 >복제 URL을 사용하지 않고 대신 공개 URL을 사용하려는 경우 OSGi를 통해 다음 구성 설정에서 공개 URL을 설정할 수 있습니다
 >
->전역 탐색 측면 레일에서 을 선택합니다. **도구** > **작업** > **웹 콘솔** > **OSGi 구성** 및 검색 **AEM Campaign 통합 - 구성**. 구성 편집 및 필드 변경 **공개 URL** (`com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl`).
+>전역 탐색 측면 레일에서 **도구** > **작업** > **웹 콘솔** > **OSGi 구성**&#x200B;을 선택하고 **AEM Campaign 통합 - 구성**&#x200B;을 검색합니다. 구성을 편집하고 필드 **공개 URL**(`com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl`)을 변경합니다.
 
 ## AEM 외부화 구성 {#externalizer}
 
-[Externalizer](/help/sites-developing/externalizer.md) 는 AEM의 OSGi 서비스로, 리소스 경로를 외부 및 절대 URL로 변환합니다. 이는 Campaign에서 사용할 수 있는 콘텐츠를 AEM이 제공하는 데 필요합니다. Campaign 통합이 작동하도록 구성합니다.
+[외부화](/help/sites-developing/externalizer.md)은(는) AEM의 OSGi 서비스로, 리소스 경로를 외부 및 절대 URL로 변환합니다. 이는 Campaign에서 사용할 수 있는 콘텐츠를 AEM에서 제공하는 데 필요합니다. Campaign 통합이 작동하도록 구성합니다.
 
 1. 관리자 자격으로 AEM 제작 인스턴스에 로그인합니다.
-1. 전역 탐색 측면 레일에서 을 선택합니다. **도구** > **작업** > **웹 콘솔** > **OSGi 구성** 및 검색 **일별 CQ 링크 외부화**.
-1. 기본적으로 의 마지막 항목은 **도메인** 필드는 게시 인스턴스를 위한 것입니다. 기본값에서 URL 변경 `http://localhost:4503` 을 클릭하여 공개적으로 사용할 수 있는 게시 인스턴스에 게시합니다.
+1. 전역 탐색 측면 레일에서 **도구** > **작업** > **웹 콘솔** > **OSGi 구성**&#x200B;을 선택하고 **일 CQ 링크 외부화**&#x200B;를 검색합니다.
+1. 기본적으로 **도메인** 필드의 마지막 항목은 게시 인스턴스용입니다. URL을 기본 `http://localhost:4503`에서 공개적으로 사용 가능한 게시 인스턴스로 변경합니다.
 
    ![외부화 구성](assets/acc-externalizer-config.png)
 
@@ -205,15 +205,15 @@ AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하�
 
 >[!NOTE]
 >
-게시 인스턴스는 Adobe Campaign 서버에서 접근 가능해야 합니다. 다음을 가리킬 경우 `localhost:4503` 또는 Adobe Campaign에서 연결할 수 없는 다른 서버에서는 AEM의 이미지가 Adobe Campaign 콘솔에 표시되지 않습니다.
+게시 인스턴스는 Adobe Campaign 서버에서 접근 가능해야 합니다. `localhost:4503` 또는 Adobe Campaign에서 연결할 수 없는 다른 서버를 가리키면 AEM의 이미지가 Adobe Campaign 콘솔에 표시되지 않습니다.
 
 ## AEM에서 캠페인 원격 사용자 구성 {#configure-user}
 
 Campaign에서 AEM과 통신하려면 AEM에서 `campaign-remote` 사용자에 대한 암호를 설정해야 합니다.
 
 1. 관리자로 AEM에 로그인합니다.
-1. 기본 탐색 콘솔에서 을 클릭하고 **도구** 왼쪽 레일에서.
-1. 그런 다음 **보안** > **사용자** 을 클릭하여 사용자 관리 콘솔을 엽니다.
+1. 기본 탐색 콘솔에서 왼쪽 레일의 **도구**&#x200B;를 클릭합니다.
+1. 그런 다음 **보안** > **사용자**&#x200B;를 클릭하여 사용자 관리 콘솔을 엽니다.
 1. `campaign-remote` 사용자를 찾습니다.
 1. `campaign-remote` 사용자를 선택한 뒤 **속성**&#x200B;을 클릭하여 사용자를 편집합니다.
 1. **사용자 설정 편집** 창에서 **암호 변경**&#x200B;을 클릭합니다.
@@ -227,7 +227,7 @@ Campaign에서 AEM과 통신하려면 AEM에서 `campaign-remote` 사용자에 �
 
 1. 클라이언트 콘솔을 사용해 관리자 자격으로 Adobe Campaign에 로그인합니다.
 
-1. 선택 **도구** > **탐색기** 메뉴 표시줄에서 을 클릭합니다.
+1. 메뉴 표시줄에서 **도구** > **탐색기**&#x200B;를 선택합니다.
 
 1. 탐색기에서 **관리** > **플랫폼** > **외부 계정** 노드로 이동합니다.
 

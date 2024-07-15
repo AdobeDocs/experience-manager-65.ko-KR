@@ -18,27 +18,27 @@ ht-degree: 1%
 
 # 투표 사용 {#using-voting}
 
-다음 `Voting` 구성 요소는 커뮤니티 구성원이 QnA 구성 요소 내의 답변과 같은 특정 콘텐츠에 대해 등급을 지정할 수 있는 유용한 도구입니다. 포함 `Voting` 구성 요소, 멤버는 위쪽 또는 아래쪽 화살표를 선택하여 의견을 나타냅니다.
+`Voting` 구성 요소는 커뮤니티 구성원이 QnA 구성 요소 내의 답변과 같은 특정 콘텐츠에 등급을 지정할 수 있는 유용한 도구입니다. `Voting` 구성 요소에서 구성원은 의견을 나타내는 위쪽 또는 아래쪽 화살표를 선택합니다.
 
 ## 페이지에 투표 추가 {#adding-voting-to-a-page}
 
-을(를) 추가하려면 `Voting` 작성자 모드에서 페이지에 대한 구성 요소를 보려면 구성 요소 브라우저를 사용하십시오. 찾기 `Communities / Voting` 및 을 페이지에 드래그하여 사용자가 투표할 수 있는 기능에 상대적인 위치와 같은 작업을 수행합니다.
+작성자 모드에서 페이지에 `Voting` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하십시오. `Communities / Voting`을(를) 찾아 사용자가 투표할 기능에 상대적인 위치와 같이 페이지에서 제자리에 끌어서 놓습니다.
 
-필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](basics.md).
+필요한 정보는 [커뮤니티 구성 요소 기본 사항](basics.md)을 참조하세요.
 
-다음의 경우 [필수 클라이언트측 라이브러리](essentials-voting.md#essentials-for-client-side) 포함됩니다. 이렇게 하면 `Voting` 구성 요소가 표시됩니다.
+[필수 클라이언트측 라이브러리](essentials-voting.md#essentials-for-client-side)가 포함된 경우 `Voting` 구성 요소가 표시되는 방식입니다.
 
 ![투표 구성 요소](assets/voting-component.png)
 
 ## 투표 구성 {#configuring-voting}
 
-배치된 을(를) 선택합니다 `Voting` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 `Voting` 구성 요소를 선택하여 편집 대화 상자를 여는 `Configure` 아이콘에 액세스하고 선택합니다.
 
 ![구성](assets/configure-new.png)
 
-아래 **[!UICONTROL 텍스트 및 레이블]** 탭에서 투표를 기록하는 데 사용되는 속성을 지정합니다.
+**[!UICONTROL 텍스트 및 레이블]** 탭에서 투표를 기록하는 데 사용되는 속성을 지정합니다.
 
-![투표 표시](assets/voting-label.png)
+![투표 레이블](assets/voting-label.png)
 
 * **[!UICONTROL 긍정적인 응답 레이블]**
 
@@ -48,9 +48,9 @@ ht-degree: 1%
 
   (*필수*) 부정적 응답에 대한 내부 속성 이름입니다.
 
-* **[!UICONTROL Tally 이름]**
+* **[!UICONTROL 집계 이름]**
 
-  (*필수*) 투표 구성 요소의 이 인스턴스에 대해 식별할 수 있는 내부 속성 이름입니다.
+  (*필수*) 이 투표 구성 요소 인스턴스에 대한 내부 식별 가능한 속성 이름입니다.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
@@ -64,4 +64,4 @@ ht-degree: 1%
 
 ## 추가 정보 {#additional-information}
 
-자세한 내용은 [투표 기본 사항](essentials-voting.md) 개발자용 페이지입니다.
+자세한 내용은 개발자를 위한 [Voting Essentials](essentials-voting.md) 페이지에서 확인할 수 있습니다.

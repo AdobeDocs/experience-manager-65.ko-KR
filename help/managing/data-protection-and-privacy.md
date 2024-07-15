@@ -91,23 +91,23 @@ AEM의 제품 영역에 대한 규제 설명서는 아래 섹션을 참조하십
 
 ## AEM Foundation {#aem-foundation}
 
-다음을 참조하십시오 [AEM Foundation에 대한 데이터 보호 및 개인 정보 보호 요청 처리](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+[AEM Foundation에 대한 데이터 보호 및 개인 정보 보호 요청 처리](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)를 참조하십시오.
 
 ## AEM이 총 사용량 통계 수집을 옵트인하는 중 {#aem-opting-into-aggregate-usage-statistics-collection}
 
-다음을 참조하십시오 [집계된 사용 통계 수집](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+[집계된 사용 통계 수집](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)을 참조하십시오.
 
 ## AEM Sites {#aem-sites}
 
-다음을 참조하십시오 [AEM Sites - 데이터 보호 및 개인 정보 보호 준비](/help/sites-administering/gdpr-compliance-sites.md)
+[AEM Sites - 데이터 보호 및 개인 정보 보호 준비 완료](/help/sites-administering/gdpr-compliance-sites.md)를 참조하세요.
 
 ## AEM Commerce {#aem-commerce}
 
-다음을 참조하십시오 [AEM Commerce - 데이터 보호 및 개인 정보 보호 준비](/help/sites-administering/gdpr-compliance-commerce.md).
+[AEM Commerce - 데이터 보호 및 개인 정보 보호 준비](/help/sites-administering/gdpr-compliance-commerce.md)를 참조하십시오.
 
 ## AEM Mobile {#aem-mobile}
 
-다음을 참조하십시오 [AEM Mobile - 데이터 보호 및 개인 정보 보호 준비](/help/mobile/aem-mobile-gdpr-compliance.md).
+[AEM Mobile - 데이터 보호 및 개인 정보 보호 준비](/help/mobile/aem-mobile-gdpr-compliance.md)를 참조하십시오.
 
 ## Adobe Target 및 Adobe Analytics과 AEM 통합 {#aem-integration-with-adobe-target-adobe-analytics}
 
@@ -121,7 +121,7 @@ AEM의 제품 영역에 대한 규제 설명서는 아래 섹션을 참조하십
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities은 데이터 주체에 데이터 이동성, 액세스 권한 및 잊혀질 권리 부여합니다. [즉시 사용 가능한 API](/help/communities/user-ugc-management-service.md). 이러한 API를 사용하면 사용자 생성 컨텐츠를 대량으로 삭제 및 내보내고 승인 가능한 ID를 통해 식별된 사용자 계정을 비활성화할 수 있습니다. 그러나 CRXDE Lite에서 사용자 노드를 삭제하면 영구적으로 사용자 계정을 삭제할 수 있으므로 시스템에서 쉽게 옵트아웃할 수 있습니다.
+AEM Communities은 데이터 주체에 데이터 이동성, 액세스 권한 및 [즉시 사용 가능한 API](/help/communities/user-ugc-management-service.md)에 의해 잊혀질 권리를 부여합니다. 이러한 API를 사용하면 사용자 생성 컨텐츠를 대량으로 삭제 및 내보내고 승인 가능한 ID를 통해 식별된 사용자 계정을 비활성화할 수 있습니다. 그러나 CRXDE Lite에서 사용자 노드를 삭제하면 영구적으로 사용자 계정을 삭제할 수 있으므로 시스템에서 쉽게 옵트아웃할 수 있습니다.
 
 또한 AEM Communities은 권한이 있는 구성원이 사용자의 기여도와 세부 정보를 찾고 삭제할 수 있는 벌크 중재 콘솔로 인해 개인 정보를 디자인적으로 제공합니다. 멤버 관리 콘솔을 통해 기여자를 금지하는 지점으로 제한할 수 있습니다. 또한 데이터 주체가 작성한 기여를 삭제할 수 있도록 허용합니다.
 
@@ -133,6 +133,6 @@ AEM Forms에는 비즈니스 프로세스를 조정하고 디지털 트랜잭션
 * [서신 관리](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Adobe Sign과 통합](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [OSGi의 Forms 중심 워크플로](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
-* [Forms JEE 워크플로](/help/forms/using/forms-workflow-jee-handling-user-data.md) (AEM Forms JEE만 해당)
-* [문서 보안](/help/forms/using/document-security-handling-user-data.md) (AEM Forms JEE만 해당)
-* [사용자 관리](/help/forms/using/user-management-handling-user-data.md) (AEM Forms JEE만 해당)
+* [Forms JEE 워크플로](/help/forms/using/forms-workflow-jee-handling-user-data.md)(AEM Forms JEE만 해당)
+* [문서 보안](/help/forms/using/document-security-handling-user-data.md)(AEM Forms JEE만 해당)
+* [사용자 관리](/help/forms/using/user-management-handling-user-data.md)(AEM Forms JEE만 해당)

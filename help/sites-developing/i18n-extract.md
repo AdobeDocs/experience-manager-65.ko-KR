@@ -135,9 +135,9 @@ mvn xgettext:extract
 ### 출력 파일 {#output-files}
 
 * `raw.xliff`: 추출된 문자열
-* `warn.log`: 다음과 같은 경우 경고(있는 경우) `CQ.I18n.getMessage()` API가 잘못 사용되었습니다. 이러한 작업에는 항상 수정 후 다시 실행해야 합니다.
+* `warn.log`: `CQ.I18n.getMessage()` API가 잘못 사용된 경우 경고(있는 경우). 이러한 작업에는 항상 수정 후 다시 실행해야 합니다.
 
 * `parserwarn.log`: 파서 경고(있는 경우)(예: js 파서 문제)
-* `potentials.xliff`: 추출되지 않지만 번역이 필요한 사람이 읽을 수 있는 문자열일 수 있는 &quot;잠재적&quot; 후보(무시할 수 있지만 여전히 엄청난 양의 오탐이 생성됨)
-* `strings.xliff`: 병합된 xliff 파일, ALF로 가져오기
-* `backrefs.txt`: 지정된 문자열에 대한 소스 코드 위치를 빠르게 조회할 수 있습니다
+* `potentials.xliff`: 추출되지 않았지만 사람이 읽을 수 있는 문자열로서 변환이 필요한 &quot;잠재적&quot; 후보입니다(무시할 수 있지만 여전히 엄청난 양의 오탐이 생성됨).
+* `strings.xliff`: 병합된 xliff 파일을 ALF로 가져옵니다.
+* `backrefs.txt`: 지정된 문자열의 소스 코드 위치를 빠르게 조회할 수 있습니다.

@@ -22,7 +22,7 @@ We.Finance 참조 사이트의 홈 모기지 워크플로에 대한 적응형 �
 
 Microsoft® Dynamics 365는 고객 계정, 연락처, 리드, 기회 및 사례를 만들고 관리하기 위한 엔터프라이즈 솔루션을 제공하는 고객 관계 관리(CRM) 및 엔터프라이즈 리소스 계획(ERP) 소프트웨어입니다.
 
-AEM Forms은 Dynamics 365를 통합하는 클라우드 서비스를 제공합니다. [Forms 데이터 통합](/help/forms/using/data-integration.md) 모듈. Microsoft® Dynamics 시나리오와 함께 홈 모기지 애플리케이션 연습을 사용하려면 먼저 We.Finance 참조 사이트와 함께 사용하도록 Microsoft® Dynamics 365를 구성해야 합니다.
+AEM Forms은 Dynamics 365를 [Forms 데이터 통합](/help/forms/using/data-integration.md) 모듈과 통합하는 클라우드 서비스를 제공합니다. Microsoft® Dynamics 시나리오와 함께 홈 모기지 애플리케이션 연습을 사용하려면 먼저 We.Finance 참조 사이트와 함께 사용하도록 Microsoft® Dynamics 365를 구성해야 합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -44,7 +44,7 @@ Dynamics 365의 설정 및 구성을 시작하기 전에 다음을 확인하십�
 
    ![calculatorconfigurepanel](assets/calculatorconfigurepanel.png)
 
-1. AEM Forms 컨테이너 편집 대화 상자에서 에셋 경로를 탐색하고 다음 경로에서 홈 모기지 계산기 를 선택한 다음 를 선택합니다 **확인**:
+1. AEM Forms 컨테이너 편집 대화 상자에서 자산 경로를 탐색하고 다음 경로에서 홈 모기지 계산기를 선택한 다음 **확인**&#x200B;을 선택합니다.
 
    formsanddocuments/We.Finance/MS Dynamics/
 
@@ -63,7 +63,7 @@ Dynamics 365의 설정 및 구성을 시작하기 전에 다음을 확인하십�
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. 솔루션 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다. Microsoft® Dynamics 인스턴스에서 **설정** > **솔루션** 다음을 선택합니다. **가져오기**.
+   1. 솔루션 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다. Microsoft® Dynamics 인스턴스에서 **설정** > **솔루션**(으)로 이동한 다음 **가져오기**&#x200B;를 선택합니다.
 
 1. 참조 사이트에 사용되는 사용자 연락처 세부 사항을 설정하려면 Sarah Rose Contact.CSV 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다.
 
@@ -71,4 +71,4 @@ Dynamics 365의 설정 및 구성을 시작하기 전에 다음을 확인하십�
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다. Microsoft® Dynamics 인스턴스에서 **판매** > **연락처** 다음을 선택합니다. **데이터 가져오기**.
+   1. 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다. Microsoft® Dynamics 인스턴스에서 **판매** > **연락처**(으)로 이동한 다음 **데이터 가져오기**&#x200B;를 선택합니다.

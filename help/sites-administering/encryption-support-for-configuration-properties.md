@@ -32,21 +32,21 @@ ht-degree: 1%
 
 다음 단계는 메일 서비스에 대한 SMTP 암호를 암호화하는 방법을 보여 줍니다. 암호화할 OSGI 속성에 대해 다음 단계를 완료할 수 있습니다.
 
-1. 의 AEM 웹 콘솔로 이동합니다. *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. 왼쪽 상단 모서리에서 **기본 - 암호화 지원**
+1. *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*&#x200B;의 AEM 웹 콘솔로 이동합니다.
+1. 왼쪽 상단 모서리에서 **기본 - 암호화 지원**&#x200B;으로 이동합니다.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. 다음 **Adobe Experience Manager 웹 콘솔 암호화 지원** 페이지가 표시됩니다.
+1. **Adobe Experience Manager 웹 콘솔 암호화 지원** 페이지가 표시됩니다.
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
-1. 다음에서 **일반 텍스트** 필드에서는 보호할 중요 데이터의 텍스트를 입력합니다.
-1. 선택 **Protect**. 보호된 텍스트는 암호화된 텍스트로 표시됩니다.
+1. **일반 텍스트** 필드에 보호할 중요 데이터의 텍스트를 입력합니다.
+1. **Protect**&#x200B;을(를) 선택합니다. 보호된 텍스트는 암호화된 텍스트로 표시됩니다.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. 5단계에서 보호된 텍스트를 복사하여 OSGI 양식 값에 붙여넣습니다. 이 예에서는 다음과 같이 암호화되었습니다. **SMTP 암호** 이(가)에 추가됩니다 *일별 CQ 메일 서비스*.
+1. 5단계에서 보호된 텍스트를 복사하여 OSGI 양식 값에 붙여넣습니다. 이 예제에서는 암호화된 **SMTP 암호**&#x200B;을(를) *일 CQ 메일 서비스*&#x200B;에 추가합니다.
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 

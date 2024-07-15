@@ -21,8 +21,8 @@ ht-degree: 5%
 >
 >CIF Classic은 유지 관리 모드입니다.
 >
->* 새 프로젝트는 다음을 사용해야 함 [AEM CIF](/help/commerce/cif/introduction.md).
->* 기존 CIF Classic은 [AEM CIF으로 마이그레이션](/help/commerce/cif/migration.md).
+>* 새 프로젝트는 [AEM CIF](/help/commerce/cif/introduction.md)을(를) 사용해야 합니다.
+>* 기존 CIF Classic은 [AEM CIF으로 마이그레이션](/help/commerce/cif/migration.md)해야 합니다.
 
 ## 주요 CIF Classic 문서 {#key-articles}
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 다음은 AEM을 사용하여 작성하는 방법에 대한 개요입니다.
 
-* [작성자를 위한 첫 번째 단계](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - 새로운 작성자를 위한 소개
+* [작성자를 위한 첫 번째 단계](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - 새 작성자를 위한 소개
 
 >[!NOTE]
 >
@@ -33,10 +33,10 @@ ht-degree: 0%
 * **드래그 앤 드롭**
 구성 요소(예: 텍스트, 이미지)와 디지털 자산(예: 이미지)을 원하는 위치에 드래그 앤 드롭하여 페이지에 배치할 수 있습니다.
 
-* **편집 중**
+* **편집**
 페이지에 배치되면 구성 요소별 대화 상자를 열어 콘텐츠를 입력하거나 해당 구성 요소의 특성(예: 이미지 크기)을 구성할 수 있습니다.
 
-* **즉석 편집**
+* **바로 편집**
 텍스트 및 이미지 구성 요소는 대화 상자나 명시적 저장 작업을 열지 않고도 웹 페이지에서 바로 편집할 수 있습니다.
 
 * **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**

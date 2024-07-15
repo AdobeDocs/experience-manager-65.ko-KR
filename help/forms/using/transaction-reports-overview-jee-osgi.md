@@ -30,7 +30,7 @@ AEM Forms 기술 스택을 기반으로 트랜잭션을 활성화하는 방법, 
 * [JEE의 AEM Forms에 대한 청구 가능 API 목록](/help/forms/using/transaction-reports-billable-apis-jee.md)
 * [사용자 지정 구성 요소 API에 대한 트랜잭션 기록](/help/forms/using/record-transaction-custom-component-jee.md)
 
-**OSGi의 AEM Forms에 대한 거래 보고**
+**OSGi에서 AEM Forms에 대한 트랜잭션 보고**
 
 * [OSGi의 AEM Forms에 대한 거래 보고서](/help/forms/using/transaction-reports-overview.md)
 * [OSGi에서 AEM Forms에 대한 거래 보고서 보기 및 이해](/help/forms/using/viewing-and-understanding-transaction-reports.md)

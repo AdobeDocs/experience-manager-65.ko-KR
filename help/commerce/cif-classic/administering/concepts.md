@@ -34,13 +34,13 @@ ht-degree: 1%
 >eCommerce 프레임워크는 다음과 함께 사용할 수 있습니다.
 >
 >* [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
->* [SAP COMMERCE CLOUD](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
+>* [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 >
 
 >[!CAUTION]
 >
->다음 [eCommerce 통합 프레임워크](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) 는 AEM 추가 기능입니다.
+>[eCommerce 통합 프레임워크](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html)은(는) AEM 추가 기능입니다.
 >
 >영업 담당자가 해당 엔진에 따라 세부 정보를 제공할 수 있습니다.
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 
       * 데이터베이스의 제품 정보.
       * 제품 변형 관리.
-      * Order Management
+      * Order Management.
       * ERP(전사적 자원 관리).
       * 제품 정보 내에서 검색합니다.
 
@@ -126,9 +126,9 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 >
 >AEM eCommerce는 JCR을 기반으로 한 일반 개발을 사용하여 AEM 내에서 구현됩니다.
 >
->* API 사용을 보여주는 독립 실행형 AEM 네이티브 전자 상거래 예입니다. 기존 데이터 표시 및 마케팅 캠페인으로 제품 데이터, 장바구니 및 체크아웃을 제어하는 데 사용할 수 있습니다. 이 경우 제품 데이터베이스는 AEM(Adobe의 구현) 고유의 저장소에 저장됩니다. [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
+>* API 사용을 보여주는 독립 실행형 AEM 네이티브 전자 상거래 예입니다. 기존 데이터 표시 및 마케팅 캠페인으로 제품 데이터, 장바구니 및 체크아웃을 제어하는 데 사용할 수 있습니다. 이 경우 제품 데이터베이스는 AEM(Adobe의 [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html) 구현) 네이티브 저장소에 저장됩니다.
 >
->  표준 AEM 설치에는 다음과 같은 기본 사항이 포함되어 있습니다. [일반 eCommerce 구현](/help/commerce/cif-classic/administering/generic.md).
+>  표준 AEM 설치에는 [일반 전자 상거래 구현](/help/commerce/cif-classic/administering/generic.md)의 기본 사항이 포함되어 있습니다.
 
 ### Commerce 공급자 {#commerce-providers}
 
@@ -150,14 +150,14 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 >
 >Geometrixx 가져오기는 CSV 파일을 사용합니다. 구현 위의 주석에 허용되는 스키마(허용된 사용자 지정 속성 포함)에 대한 설명이 있습니다.
 
-다음 [제품 서비스 관리자](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) 유지(에서 까지) [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) 의 구현 목록 [제품 가져오기](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) 및 [카탈로그 블루프린트 가져오기](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) 인터페이스. 다음 목록에 나열되어 있습니다 **Importer/Commerce 공급자** importer 마법사의 드롭다운 필드( `commerceProvider` 속성을 이름)으로 사용할 수 있습니다.
+[ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html)은(는) [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)을(를) 통해 [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) 및 [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) 인터페이스의 구현 목록을 유지 관리합니다. 가져오기 마법사의 **Importer/Commerce 공급자** 드롭다운 필드에 나열됩니다(`commerceProvider` 속성 이름 사용).
 
 드롭다운에서 특정 Importer/Commerce 공급자를 사용할 수 있는 경우 다음 중 하나에서 필요한 보조 데이터를 정의해야 합니다(Importer 유형에 따라 다름).
 
 * `/apps/commerce/gui/content/catalogs/importblueprintswizard/importers`
 * `/apps/commerce/gui/content/products/importproductswizard/importers`
 
-해당 폴더 `importers` 폴더는 가져오기 이름과 일치해야 합니다. 예:
+해당 `importers` 폴더 아래의 폴더는 가져오기 이름과 일치해야 합니다. 예:
 
 * `.../importproductswizard/importers/geometrixx/.content.xml`
 
@@ -198,17 +198,17 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 
 #### 구조 및 마케팅 범주 {#structural-versus-marketing-categories}
 
-다음 두 카테고리를 구분할 수 있으면 의미 있는 구조(의 트리)를 가진 명확한 URL을 만들 수 있습니다. `cq:Page` 노드) 및 따라서 클래식 AEM 컨텐츠 관리에 매우 가까움):
+다음 두 범주를 구분할 수 있는 경우 이를 통해 의미 있는 구조(`cq:Page` 노드의 트리)를 가진 URL을 명확하게 할 수 있으므로 클래식 AEM 콘텐츠 관리에 매우 가깝습니다.
 
 * *구조적 *범주
 
-  범주 트리 정의 *제품이란?*; 예:
+  *제품이란*&#x200B;을(를) 정의하는 범주 트리입니다. 예:
 
   `/products/mens/shoes/sneakers`
 
-* *마케팅* 카테고리
+* *마케팅* 범주
 
-  다음 위치에 있는 다른 모든 범주: *제품이 속할 수 있음*; 예:
+  *제품이 속할 수 있는 다른 모든 범주*. 예:
 
   `/special-offers/christmas/shoes`)
 
@@ -221,9 +221,9 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 * AEM(일반)에서 직접 유지 관리됩니다.
 * eCommerce 엔진에서 유지 관리되고 AEM에서 사용할 수 있습니다.
 
-  데이터 유형에 따라 다음과 같습니다. [동기화됨](#catalog-maintenance-data-synchronization) 필요에 따라 또는 직접 액세스합니다. 예를 들어, 제품 가격과 같은 휘발성이 높고 중요한 데이터는 모든 페이지 요청 시 전자 상거래 엔진에서 검색하여 항상 최신 상태로 유지됩니다.
+  데이터 유형에 따라 필요에 따라 [동기화](#catalog-maintenance-data-synchronization)되거나 직접 액세스됩니다. 예를 들어 제품 가격과 같은 휘발성이 큰 중요한 데이터는 모든 페이지 요청 시 전자 상거래 엔진에서 검색되어 항상 최신 상태로 유지됩니다.
 
-두 경우 모두, 제품 데이터를 AEM에 입력/가져온 경우에서 볼 수 있습니다. **제품** 콘솔. 다음은 제품의 카드 및 목록 보기에 다음과 같은 정보가 표시됩니다.
+두 경우 모두 AEM에 제품 데이터를 입력하거나 가져온 경우 **제품** 콘솔에서 볼 수 있습니다. 다음은 제품의 카드 및 목록 보기에 다음과 같은 정보가 표시됩니다.
 
 * 이미지
 * sku 코드
@@ -283,7 +283,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 
   제품 기능에 대한 세부 정보.
 
-### 제품 자산 {#product-assets}
+### 제품 Assets {#product-assets}
 
 개별 제품에 대해 다양한 자산을 보유할 수 있습니다. 일반적으로 여기에는 이미지와 비디오가 포함됩니다.
 
@@ -295,9 +295,9 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 
 #### 여러 언어의 카탈로그 {#catalogs-in-multiple-languages}
 
-AEM은 여러 언어로 제품 콘텐츠를 지원합니다. 데이터를 요청할 때 통합 프레임워크는 현재 트리에서 언어를 검색합니다(예: `en_US` 아래 페이지의 경우 `/content/geometrixx-outdoors/en_US`).
+AEM은 여러 언어로 제품 콘텐츠를 지원합니다. 데이터를 요청할 때 통합 프레임워크는 현재 트리에서 언어를 검색합니다(예: `/content/geometrixx-outdoors/en_US` 아래 페이지의 경우 `en_US`).
 
-다국어 저장소의 경우 각 언어 트리에 대한 카탈로그를 개별적으로 가져오거나 다음을 사용하여 복사할 수 있습니다. [MSM](/help/sites-administering/msm.md)).
+다국어 저장소의 경우 각 언어 트리에 대한 카탈로그를 개별적으로 가져오거나 [MSM](/help/sites-administering/msm.md)을(를) 사용하여 복사할 수 있습니다.
 
 #### 여러 브랜드에 대한 카탈로그 {#catalogs-for-multiple-brands}
 
@@ -318,8 +318,8 @@ AEM은 여러 언어로 제품 콘텐츠를 지원합니다. 데이터를 요청
 
 제품 데이터의 추가 변경은 불가피합니다.
 
-* 일반 구현의 경우 [제품 편집기](/help/commerce/cif-classic/administering/generic.md#editing-product-information)
-* 를 사용할 때 [eCommerce 엔진 변경 사항을 동기화해야 함](#data-synchronization-with-an-ecommerce-engine-ongoing)
+* 제네릭 구현의 경우 [제품 편집기](/help/commerce/cif-classic/administering/generic.md#editing-product-information)를 사용하여 관리할 수 있습니다.
+* [eCommerce 엔진을 사용하는 경우 변경 내용을 동기화해야 합니다](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
 #### eCommerce 엔진을 사용한 데이터 동기화 (진행 중) {#data-synchronization-with-an-ecommerce-engine-ongoing}
 
@@ -329,7 +329,7 @@ eCommerce 엔진을 사용하는 경우 제품 데이터가 유지되므로 AEM�
 
 이는 데이터 유형에 따라 달라질 수 있습니다.
 
-* A [주기적 동기화는 변경 사항의 데이터 피드와 함께 사용됩니다](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
+* [주기적 동기화는 변경 내용 데이터 피드와 함께 사용됩니다](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
 
   이 외에도 빠른 업데이트에 대한 특정 업데이트를 선택할 수 있습니다.
 
@@ -440,7 +440,7 @@ AEM eCommerce 구현에서 성능 테스트를 고려해야 합니다.
 * 기술 스택에서 팩터화된 콘텐츠 액세스 모델 및 서비스를 계획합니다. 이는 일반적인 모범 사례이지만 여기서는 최적화 단계에서 자주 읽는(그리고 번들 캐시를 채우지 않으려는) 데이터에 대한 애플리케이션 캐시를 추가할 수 있으므로 더욱 중요합니다.
 
   예를 들어 속성 관리는 제품 가져오기를 통해 업데이트되는 데이터와 관련이 있으므로 캐싱에 좋은 후보인 경우가 많습니다.
-* 사용 고려 [프록시 페이지](#proxy-pages).
+* [프록시 페이지](#proxy-pages)를 사용해 보십시오.
 
 ### 카탈로그 섹션 페이지 {#catalog-section-pages}
 
@@ -456,7 +456,7 @@ AEM eCommerce 구현에서 성능 테스트를 고려해야 합니다.
 
 제품 페이지는 개별 제품에 대한 포괄적인 정보를 제공합니다. 의 동적 업데이트도 반영됩니다(예: eCommerce 엔진에 등록된 가격 변경).
 
-제품 페이지는 다음을 사용하는 AEM 페이지입니다. **제품** 구성 요소(예: **Commerce 제품** 템플릿:
+제품 페이지는 **Product** 구성 요소를 사용하는 AEM 페이지입니다(예: **Commerce 제품** 템플릿 내).
 
 ![ecommerce_nairobirunnersgreen](/help/sites-administering/assets/ecommerce_nairobirunnersgreen.png)
 
@@ -477,9 +477,9 @@ AEM eCommerce 구현에서 성능 테스트를 고려해야 합니다.
 
 ### 제품 구성 요소 {#product-component}
 
-다음 **제품** 구성 요소는 필요한 메타데이터(즉, 경로)를 제공하는 상위 페이지가 있는 모든 페이지에 추가할 수 있습니다. `cartPage` 및 `cartObject`). 데모 사이트, Geometrixx Outdoors에서 다음에서 제공합니다. `UserInfo.jsp`.
+**Product** 구성 요소는 필요한 메타데이터(즉, `cartPage` 및 `cartObject` 경로)를 제공하는 상위 페이지가 있는 모든 페이지에 추가할 수 있습니다. 데모 사이트, Geometrixx Outdoors에서 `UserInfo.jsp`이(가) 제공합니다.
 
-다음 **제품** 개별 요구 사항에 따라 구성 요소를 사용자 정의할 수도 있습니다.
+**Product** 구성 요소는 개별 요구 사항에 따라 사용자 지정할 수도 있습니다.
 
 ### 프록시 페이지 {#proxy-pages}
 
@@ -487,7 +487,7 @@ AEM eCommerce 구현에서 성능 테스트를 고려해야 합니다.
 
 AEM 내에서 업데이트하고 사용자 정의할 수 있는 각 제품에 대한 개별 구성 요소를 제공하므로 카탈로그를 만들려면 제품당 10개의 노드가 사용됩니다. 카탈로그에 수백 개 또는 수천 개의 제품이 포함된 경우 이러한 많은 수의 노드가 문제가 될 수 있습니다. 문제를 방지하기 위해 프록시 페이지를 사용하여 카탈로그를 만들 수 있습니다.
 
-프록시 페이지는 2노드 구조( `cq:Page` 및 `jcr:content`) 실제 제품 컨텐츠를 포함하지 않습니다. 요청 시 제품 데이터와 템플릿 페이지를 참조하여 콘텐츠가 생성됩니다.
+프록시 페이지는 실제 제품 콘텐츠를 포함하지 않는 두 노드 구조(`cq:Page` 및 `jcr:content`)를 사용합니다. 요청 시 제품 데이터와 템플릿 페이지를 참조하여 콘텐츠가 생성됩니다.
 
 그러나, 상충되는 것이 있다. 표준 템플릿(사이트에 대해 정의됨)이 사용되므로 AEM 내에서 제품 정보를 사용자 정의할 수 없습니다.
 
@@ -514,7 +514,7 @@ AEM 내에서 업데이트하고 사용자 정의할 수 있는 각 제품에 �
 AEM:
 
 * 바우처는 웹 사이트 콘솔로 생성/편집되는 페이지 기반 구성 요소입니다.
-* 다음 **바우처** 구성 요소는 다음을 제공합니다.
+* **Voucher** 구성 요소는 다음을 제공합니다.
 
    * 바우처 관리를 위한 렌더러입니다. 현재 장바구니에 있는 바우처가 표시됩니다.
    * 바우처를 관리(추가/제거)하기 위한 편집 대화 상자(양식).
@@ -524,7 +524,7 @@ AEM:
 
 >[!NOTE]
 >
->AEM에서는 **바우처**, 이는 용어와 동의어입니다 **쿠폰**.
+>AEM에서는 **Voucher**&#x200B;라는 용어를 사용합니다. 이는 **Coupon**&#x200B;이라는 용어와 동의어입니다.
 
 ### 프로모션 {#promotions}
 
@@ -534,7 +534,7 @@ AEM:
 * 장기 고객은 모든 주문에 대해 할인을 받습니다.
 * 잘 정의된 기간 동안 제공되는 판매 가격.
 * 고객은 이전 주문이 특정 금액을 초과하는 경우 바우처를 받습니다.
-* 구입하는 고객 *product-X* 은(는) 다음에 대한 할인을 제공합니다. *product-Y* (제품 쌍).
+* *product-X*&#x200B;을(를) 구매하는 고객은 *product-Y*(제품 쌍)에서 할인을 받을 수 있습니다.
 
 프로모션은 제품 정보 관리자가 아닌 마케팅 관리자가 관리합니다.
 
@@ -552,10 +552,10 @@ AEM:
    * 프로모션 관리용 렌더러 및 대화 상자
    * 프로모션 핸들러와 관련된 구성 매개 변수를 렌더링 및 편집하기 위한 하위 구성 요소
 
-AEM에서 프로모션도 [Campaign Management](/help/sites-authoring/personalization.md):
+AEM에서 프로모션은 [Campaign Management](/help/sites-authoring/personalization.md)에도 통합됩니다.
 
-* a [campaign](/help/sites-authoring/personalization.md) 설정/해제 시간 지정
-* [경험](/help/sites-authoring/personalization.md) *다음 범위 내* 캠페인은 에셋이 해당되는 대상 세그먼트에 따라 에셋(티저 페이지, 프로모션 등)을 그룹화하는 데 사용됩니다
+* [campaign](/help/sites-authoring/personalization.md)은(는) 설정/해제 시간을 지정합니다.
+* [경험](/help/sites-authoring/personalization.md) *내부* 캠페인은 에셋(티저 페이지, 프로모션 등)을 해당되는 대상 세그먼트에 따라 그룹화하는 데 사용됩니다.
 
 프로모션은 경험 또는 캠페인에서 직접 수행할 수 있습니다.
 
@@ -565,7 +565,7 @@ AEM에서 프로모션도 [Campaign Management](/help/sites-authoring/personaliz
 
   `/content/campaigns/geometrixx-outdoors/big-spender/ordervalueover100/free-shipping`
 
-  가 경험에 있으므로 세그먼트( `ordervalueover100`)가 해결됩니다.
+  은(는) 환경에 있으므로 세그먼트(`ordervalueover100`)가 확인될 때마다 자동으로 실행됩니다.
 
 * 프로모션이 경험 내에 표시되지 않는 경우(캠페인에서만) 대상에 자동으로 적용할 수 없습니다. 그러나 구매자가 장바구니에 바우처를 입력하고 해당 바우처가 프로모션을 참조하는 경우 여전히 실행될 수 있습니다.
 
@@ -577,7 +577,7 @@ AEM에서 프로모션도 [Campaign Management](/help/sites-authoring/personaliz
 
 >[!NOTE]
 >
->[hybris 프로모션](https://www.hybris.com/modules/promotion) 및 [hybris 바우처](https://www.hybris.com/en/modules/voucher) 장바구니에 영향을 주고 가격과 관련된 모든 항목을 다룹니다. 프로모션별 마케팅 콘텐츠 (배너 등) 은 hybris 프로모션의 일부가 아닙니다.
+>[hybris 프로모션](https://www.hybris.com/modules/promotion) 및 [hybris 바우처](https://www.hybris.com/en/modules/voucher)는 장바구니에 영향을 주고 가격과 관련된 모든 것을 포함합니다. 프로모션별 마케팅 콘텐츠 (배너 등) 은 hybris 프로모션의 일부가 아닙니다.
 
 ## 개인화 {#personalization}
 
@@ -608,7 +608,7 @@ eCommerce 엔진을 사용하는 경우 AEM은 계정 ID와 암호(선택적으�
 >
 >eCommerce 엔진을 사용하는 경우 AEM 인스턴스에 로그인하는 사용자에 대해 생성된 계정이 해당 엔진과 통신하는 다른 AEM 인스턴스에 (예: 워크플로우를 통해) 복제되도록 해야 합니다.
 >
->그렇지 않으면 이러한 다른 AEM 인스턴스도 엔진에서 동일한 사용자에 대한 계정을 만들려고 합니다. 이 작업은 실패하고 `DuplicateUidException` 엔진에서 오고있어
+>그렇지 않으면 이러한 다른 AEM 인스턴스도 엔진에서 동일한 사용자에 대한 계정을 만들려고 합니다. 엔진에서 `DuplicateUidException`이(가) 발생하여 이 작업이 실패합니다.
 
 ### 고객 등록 {#customer-sign-up}
 
@@ -634,7 +634,7 @@ SSO(Single Sign-On)가 제공되므로 작성자는 두 번 로그인할 필요 
 
 전자 상거래 엔진의 거래 데이터는 쇼핑객에 대한 개인 정보와 결합됩니다. AEM은 이 데이터 중 일부를 프로필 데이터로 사용합니다. AEM의 양식 작업은 eCommerce 엔진에 정보를 다시 기록합니다.
 
-계정 정보를 쉽게 관리할 수 있는 페이지가 있습니다. 다음을 클릭하여 액세스할 수 있습니다. **내 계정** Geometrixx 페이지 맨 위에서 또는 로 이동하여 `/content/geometrixx-outdoors/en/user/account.html`.
+계정 정보를 쉽게 관리할 수 있는 페이지가 있습니다. Geometrixx 페이지 상단에 있는 **내 계정**&#x200B;을 클릭하거나 `/content/geometrixx-outdoors/en/user/account.html`(으)로 이동하여 액세스할 수 있습니다.
 
 ![chlimage_1-13](/help/sites-administering/assets/chlimage_1-13.png)
 
@@ -650,11 +650,11 @@ SSO(Single Sign-On)가 제공되므로 작성자는 두 번 로그인할 필요 
 
 기본으로 원하는 주소를 선택할 수 있습니다.
 
-주소록 구성 요소는 **내 계정** 클릭하여 페이지 만들기 **주소록** 또는 로 이동하여 `/content/geometrixx-outdoors/en/user/account/address-book.html`.
+**주소록**&#x200B;을 클릭하거나 `/content/geometrixx-outdoors/en/user/account/address-book.html`(으)로 이동하여 **내 계정** 페이지에서 주소록 구성 요소에 연결할 수 있습니다.
 
 ![chlimage_1-14](/help/sites-administering/assets/chlimage_1-14.png)
 
-다음을 클릭할 수 있습니다. **새 주소 추가...** 주소록에 주소를 추가합니다. 양식을 열고 을 입력한 다음 **주소 추가**.
+**새 주소 추가...**&#x200B;를 클릭하여 주소록에 주소를 추가할 수 있습니다. 양식을 열어 작성한 다음 **주소 추가**&#x200B;를 클릭합니다.
 
 >[!NOTE]
 >
@@ -664,10 +664,10 @@ SSO(Single Sign-On)가 제공되므로 작성자는 두 번 로그인할 필요 
 
 ![chlimage_1-15](/help/sites-administering/assets/chlimage_1-15.png)
 
-주소는 아래에 유지됩니다. `user_home/profile/addresses`.
+주소는 `user_home/profile/addresses` 미만으로 유지됩니다.
 예를 들어 Alison Parker의 경우 /home/users/geometrixx/aparker@geometrixx.info/profile/addresses 아래에 있습니다.
 
-원하는 주소를 기본값으로 선택할 수 있습니다. 이 정보는 주소가 아닌 구매자 프로필에서 유지됩니다. 프로필 속성 `address.default` 값에 대해 선택한 주소의 경로로 설정됩니다.
+원하는 주소를 기본값으로 선택할 수 있습니다. 이 정보는 주소가 아닌 구매자 프로필에서 유지됩니다. 프로필 속성 `address.default`이(가) 값에 대해 선택한 주소의 경로로 설정되어 있습니다.
 
 ### 고객별 가격 {#customer-specific-pricing}
 
@@ -719,12 +719,12 @@ SSO(Single Sign-On)가 제공되므로 작성자는 두 번 로그인할 필요 
 
 두 경우 모두, 항목이 로그인/로그아웃(동일한 컴퓨터/브라우저에만 있음) 동안 장바구니에 유지되며(및 복원할 수 있음), 예:
 
-* 다음으로 찾아보기 `anonymous` 장바구니에 제품 추가
-* 다음으로 로그인 `Allison Parker` - 앨리슨의 카트가 비어 있음
+* `anonymous`(으)로 탐색하고 장바구니에 제품 추가
+* `Allison Parker`(으)로 로그인 - Allison의 장바구니가 비어 있음
 * 앨리슨의 장바구니에 제품 추가
-* 로그아웃 - 장바구니에 의 제품이 표시됩니다. `anonymous`
+* 로그아웃 - 장바구니에 `anonymous`의 제품이 표시됩니다.
 
-* 다음으로 다시 로그인 `Allison Parker` - 앨리슨의 제품이 복원되었습니다.
+* `Allison Parker`(으)로 다시 로그인 - Allison의 제품이 복원됨
 
 >[!NOTE]
 >
@@ -732,7 +732,7 @@ SSO(Single Sign-On)가 제공되므로 작성자는 두 번 로그인할 필요 
 
 >[!NOTE]
 >
->를 사용하여 장바구니 콘텐츠를 복원하지 않는 것이 좋습니다. `admin` 계정과 충돌할 수 있으므로 `admin` eCommerce 엔진의 계정(예: hybris).
+>장바구니 콘텐츠를 `admin` 계정으로 복원하지 않는 것이 좋습니다. 전자 상거래 엔진의 `admin` 계정(예: hybris)과 충돌할 수 있기 때문입니다.
 
 >[!NOTE]
 >
@@ -762,7 +762,7 @@ eCommerce 엔진 또는 AEM에 보관된 주문에 대한 구현 정보에 따�
 
   주문 통화입니다.
 
-* **컨텐츠 항목**
+* **콘텐츠 항목**
 
   주문한 항목 목록입니다.
 
@@ -778,7 +778,7 @@ eCommerce 엔진 또는 AEM에 보관된 주문에 대한 구현 정보에 따�
 
   배송비.
 
-* **합계**
+* 총 **개**
 
   주문의 총 금액(주문 품목, 세금 및 배송).
 
@@ -852,7 +852,7 @@ PCI(Payment Card Industry) 규정을 준수할 수 있습니다.
 
 ### 주문 확인 {#confirmation-of-order}
 
-주문이 화면에서 확인되며 [주문 추적](#order-tracking).
+순서는 화면에서 확인되며 [순서 추적](#order-tracking)을 사용하여 추적할 수 있습니다.
 
 ## 검색 {#search-features}
 
@@ -863,6 +863,6 @@ AEM은 제품에 표준 페이지를 사용하므로 표준 검색 구성 요소
 보다 철저한 구현이 필요한 경우 다음 중 하나를 수행할 수 있습니다.
 
 * 필요한 기능을 사용하여 기본 검색 구성 요소를 확장합니다.
-* 에서 검색 방법 구현 `CommerceService` 그런 다음 검색 페이지에서 eCommerce 검색 구성 요소를 사용합니다.
+* `CommerceService`에서 검색 방법을 구현한 다음 검색 페이지에서 eCommerce 검색 구성 요소를 사용합니다.
 
 eCommerce 엔진을 사용하는 경우 eCommerce 검색 API가 eCommerce 엔진 솔루션에서 완전히 구현될 수 있으므로 즉시 사용할 수 있도록 제공되는 eCommerce 검색 구성 요소를 사용할 수 있습니다. 면처리 검색을 사용하여 JCR 및/또는 엔진을 검색할 수 있습니다.

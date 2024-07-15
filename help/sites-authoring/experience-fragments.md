@@ -33,7 +33,7 @@ Adobe Experience Manager(AEM)에서 경험 조각은 페이지 내에서 참조�
 
 * 작성자가 페이지의 일부(경험 조각)를 다시 사용하려는 경우 해당 조각을 복사하여 붙여넣어야 합니다. 이러한 복사/붙여넣기 경험을 생성하고 유지 관리하는 데는 시간이 오래 걸리고 사용자 오류가 발생합니다. 경험 조각은 복사/붙여넣기가 필요하지 않습니다.
 * Headless CMS 사용 사례를 지원하기 위해 작성자는 작성에만 AEM을 사용하고 고객에게 게재하는 데에는 사용하지 않습니다. 서드파티 시스템/터치포인트는 이러한 경험을 소모한 다음 최종 사용자에게 게재합니다.
-* 포함 [다중 사이트 관리(MSM)](/help/sites-administering/msm.md): 경험 조각은 페이지의 일부입니다. 개별 조각과 해당 조각이 있는 폴더 모두에 적용됩니다.
+* 경험 조각이 페이지의 일부로 [MSM(다중 사이트 관리)](/help/sites-administering/msm.md)을(를) 사용합니다. 개별 조각과 해당 조각이 있는 폴더 모두에 적용됩니다.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Adobe Experience Manager(AEM)에서 경험 조각은 페이지 내에서 참조�
 
 * Omnichannel Commerce를 사용하는 경우
 
-   * 상거래 관련 콘텐츠 공유 [소셜 미디어](/help/sites-developing/experience-fragments.md#social-variations) 규모에 맞는 채널
+   * [소셜 미디어](/help/sites-developing/experience-fragments.md#social-variations) 채널에서 대규모로 상거래 관련 콘텐츠 공유
    * 터치포인트를 거래와 관련시키기
 
 ## 경험 조각 구성 {#organizing-your-experience-fragments}
@@ -165,7 +165,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    ![xf-01](assets/xf-01.png)
 
-1. 필요한 폴더로 이동한 다음 를 선택합니다. **만들기**.
+1. 필요한 폴더로 이동한 다음 **만들기**&#x200B;를 선택합니다.
 
    ![xf-02](assets/xf-02.png)
 
@@ -177,7 +177,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. **경험 조각**&#x200B;에 대한 **속성**&#x200B;을 입력합니다.
 
-   **제목**&#x200B;은 필수입니다. 다음과 같은 경우 **이름** 이(가) 비어 있으면 **제목**.
+   **제목**&#x200B;은 필수입니다. **Name**&#x200B;이(가) 비어 있으면 **Title**&#x200B;에서 파생됩니다.
 
    ![xf-04](assets/xf-04.png)
 
@@ -205,13 +205,13 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 다음 예제 프로시저는 제품에 대한 티저를 작성하는 방법을 보여 줍니다.
 
-1. 드래그 앤 드롭 **티저** 다음에서 [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)에서 **티저**&#x200B;를 끌어서 놓습니다.
 
    ![xf-05](assets/xf-05.png)
 
-1. 선택 **[구성](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** 구성 요소 도구 모음에서 를 클릭합니다.
+1. 구성 요소 도구 모음에서 **[구성](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**&#x200B;을 선택합니다.
 1. Add the **Asset** and define the **Properties** as required.
-1. 다음을 사용하여 정의 확인 **완료** (확인 표시 아이콘)
+1. **완료**(확인 표시 아이콘)을 사용하여 정의를 확인합니다.
 1. 필요에 따라 구성 요소를 더 추가합니다.
 
 ## 경험 조각 변형 만들기 {#creating-an-experience-fragment-variation}
@@ -226,11 +226,11 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 1. **만들기**&#x200B;를 사용하면 다음을 만들 수 있습니다.
 
    * **변형**
-   * **변형 대상: [live-copy](/help/sites-administering/msm.md#live-copies)**.
+   * **변형을 [live-copy](/help/sites-administering/msm.md#live-copies)**(으)로 만듭니다.
 
      >[!NOTE]
      >
-     >초기 변형을 라이브 카피로 만들면 라이브 카피 소스를 기본 변형으로 사용하여 제목이 상속됩니다.
+     >초기 변형을 Live Copy로 만들면 Live Copy Source을 기본 변형으로 사용하여 제목이 상속됩니다.
 
 1. 필수 속성을 정의합니다.
 
@@ -242,7 +242,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    ![xf-06](assets/xf-06.png)
 
-1. 다음을 사용하여 확인 **완료** (확인 아이콘) 새 변형이 패널에 표시됩니다.
+1. **완료**(확인 표시 아이콘)로 확인하면 새 변형이 패널에 표시됩니다.
 
    ![xf-07](assets/xf-07.png)
 
@@ -264,8 +264,8 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. 다음 중 한 방법으로 실제 경험 조각을 구성 요소 인스턴스에 추가합니다.
 
-   * 에셋 브라우저에서 필요한 조각을 구성 요소에 끌어다 놓기
-   * 선택 **구성** 구성 요소 도구 모음에서 사용할 조각을 지정하고 다음을 사용하여 확인합니다. **완료** (틱)
+   * Assets 브라우저에서 필요한 조각을 구성 요소에 끌어다 놓기
+   * 구성 요소 도구 모음에서 **구성**&#x200B;을(를) 선택하고 사용할 조각을 지정한 다음 **완료**(확인)로 확인
 
    ![xf-09](assets/xf-09.png)
 
@@ -291,11 +291,11 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. **빌딩 블록**&#x200B;의 이름을 입력하고 **변환**&#x200B;으로 확인합니다.
 
-   ![xf-](assets/xf-11.png)
+   ![xf-11](assets/xf-11.png)
 
-1. 다음 **빌딩 블록** 은 탭에 표시되며 단락 시스템에서 선택할 수 있습니다.
+1. **빌딩 블록**&#x200B;이(가) 탭에 표시되며 단락 시스템에서 선택할 수 있습니다.
 
-   ![xf-](assets/xf-12.png)
+   ![xf-12](assets/xf-12.png)
 
 #### 빌딩 블록 관리 {#managing-a-building-block}
 
@@ -305,7 +305,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 * 이름 바꾸기
 * 삭제
 
-![xf-](assets/xf-13.png)
+![xf-13](assets/xf-13.png)
 
 #### 빌딩 블록 사용 {#using-a-building-block}
 
@@ -317,11 +317,11 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. 세부 정보는 **경험 조각** 콘솔의 모든 보기에 표시되며, **목록 보기**&#x200B;에는 [Target으로 내보내기](/help/sites-administering/experience-fragments-target.md)에 대한 세부 정보가 포함됩니다.
 
-   ![ef-](assets/ef-03.png)
+   ![ef-03](assets/ef-03.png)
 
 1. 경험 조각의 **속성**&#x200B;을 연 경우:
 
-   ![ef-](assets/ef-04.png)
+   ![ef-04](assets/ef-04.png)
 
    속성은 여러 탭에서 사용할 수 있습니다.
 
@@ -332,7 +332,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    >
    >경험 조각을 편집할 때 **속성을 열면** 해당 [페이지 속성](/help/sites-authoring/editing-page-properties.md)이 표시됩니다.
 
-   ![ef-](assets/ef-05.png)
+   ![ef-05](assets/ef-05.png)
 
    * **기본**
 
@@ -343,7 +343,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
       * **총 변형 수** - 정보만
 
       * **웹 변형 수** - 정보만
-      * **웹이 아닌 변형 수** - inf **정보만**
+      * **웹이 아닌 변형의 수** - inf **정보만**
 
       * **이 조각을 사용하는 페이지 수** - 정보만
 
@@ -374,4 +374,4 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌
 
 기본적으로 경험 조각은 HTML 형식으로 제공됩니다. 이는 AEM과 서드파티 채널에서 모두 동일하게 사용할 수 있습니다.
 
-Adobe Target으로 내보내기 위해 JSON을 사용할 수도 있습니다. 다음을 참조하십시오 [경험 조각과 Target 통합](/help/sites-administering/experience-fragments-target.md) 전체 정보.
+Adobe Target으로 내보내기 위해 JSON을 사용할 수도 있습니다. 자세한 내용은 [경험 조각과 Target 통합](/help/sites-administering/experience-fragments-target.md)을 참조하십시오.

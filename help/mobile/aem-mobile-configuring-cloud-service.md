@@ -24,15 +24,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 문서는 [Adobe Experience Manager(AEM) Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md) AEM Mobile 참조에 대한 권장 시작점인 안내서입니다.
+>이 문서는 Adobe Experience Manager 참조에 대한 권장 시작점인 [AEM(AEM Mobile) 모바일 시작하기](/help/mobile/getting-started-aem-mobile.md) 안내서의 일부입니다.
 
 콘텐츠 작성자가 모바일 앱에 대한 타겟팅된 콘텐츠를 생성하기 전에 수행해야 하는 몇 가지 단계가 있습니다. 사용자 및 그룹에 적합한 권한 세트를 가져오고, 클라우드 서비스를 만들고, 활동용 애플리케이션을 구성하고, 마지막으로 콘텐츠를 생성합니다.
 
-앞으로의 가정은 [AEM Mobile 하이브리드 참조 애플리케이션](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) 은 AEM Mobile 대시보드를 통해 성공적으로 배포되고 액세스할 수 있습니다.
+앞으로 [AEM Mobile 하이브리드 참조 응용 프로그램](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference)이 AEM Mobile 대시보드를 통해 배포되고 액세스할 수 있다고 가정합니다.
 
 ## 권한 {#permissions}
 
-개인화 콘솔에 액세스해야 하는 사용자는 `target-activity-authors` 그룹입니다. 사용자 및 그룹 설정의 일부로 target-activity-group을 apps-admins 그룹에 추가하는 것이 좋습니다. target-activity-authors 그룹을 추가하면 사용자는 개인화 탐색 메뉴 항목을 볼 수 있습니다.
+개인화 콘솔에 액세스해야 하는 사용자는 `target-activity-authors` 그룹의 일부여야 합니다. 사용자 및 그룹 설정의 일부로 target-activity-group을 apps-admins 그룹에 추가하는 것이 좋습니다. target-activity-authors 그룹을 추가하면 사용자가 Personalization 탐색 메뉴 항목을 볼 수 있습니다.
 
 개인화 Admin Console에 액세스할 수 있는 사용자 또는 그룹을 target-activity-authors 그룹에 추가하지 않으면 사용자가 개인화 콘솔을 볼 수 없습니다.
 
@@ -64,7 +64,7 @@ AMS(Adobe 모바일 서비스) 계정을 응용 프로그램에 연결해야 합
 
 ### 클라이언트 코드 {#client-code}
 
-AMS 서비스에 로그인하려면 다음을 방문하십시오. [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/)을 클릭하고 모바일 애플리케이션을 선택한 다음 설정을 클릭합니다. SDK Target 옵션 필드를 찾아 필드에 클라이언트 코드를 넣은 다음 저장 을 클릭합니다.
+AMS 서비스에 로그인하려면 [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/)을(를) 방문하여 모바일 애플리케이션을 선택하고 설정을 클릭하십시오. SDK Target 옵션 필드를 찾아 필드에 클라이언트 코드를 넣은 다음 저장 을 클릭합니다.
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -80,7 +80,7 @@ Mobile Services Adobe 카드를 선택하고 다음 을 클릭합니다.
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-만들기 또는 선택 마법사 단계에서 Mobile Service 드롭다운을 선택하고 구성 만들기 항목을 선택합니다. 제목, 회사, 사용자 이름, 암호를 입력하고 적절한 데이터 센터를 선택합니다. 이러한 값을 모를 경우 Adobe Mobile Service 관리자에게 문의하여 값을 받으십시오. 모든 필드가 채워지면 **확인**. 확인 프로세스는 AMS로 이동하여 계정에 대한 자격 증명을 확인하고, 유효성 검사에 성공하면 드롭다운에서 연결된 모바일 애플리케이션을 선택할 수 있는 모바일 애플리케이션 목록이 채워집니다. 제출 단추를 클릭하여 마법사를 완료합니다. 프로세스는 구성 데이터 및 애플리케이션과의 임의의 연관된 분석을 획득하는 데 약간의 시간이 걸릴 수 있다. 프로세스가 완료되면 다음을 클릭합니다. **완료** 을 클릭하여 Adobe 모바일 대시보드로 돌아갑니다.
+만들기 또는 선택 마법사 단계에서 Mobile Service 드롭다운을 선택하고 구성 만들기 항목을 선택합니다. 제목, 회사, 사용자 이름, 암호를 입력하고 적절한 데이터 센터를 선택합니다. 이러한 값을 모를 경우 Adobe Mobile Service 관리자에게 문의하여 값을 받으십시오. 모든 필드를 작성한 후 **확인**&#x200B;을 클릭합니다. 확인 프로세스는 AMS로 이동하여 계정에 대한 자격 증명을 확인하고, 유효성 검사에 성공하면 드롭다운에서 연결된 모바일 애플리케이션을 선택할 수 있는 모바일 애플리케이션 목록이 채워집니다. 제출 단추를 클릭하여 마법사를 완료합니다. 프로세스는 구성 데이터 및 애플리케이션과의 임의의 연관된 분석을 획득하는 데 약간의 시간이 걸릴 수 있다. 프로세스가 완료되면 모달에서 **완료**&#x200B;를 클릭하여 Adobe 모바일 대시보드로 돌아갑니다.
 
 모바일 대시보드로 돌아가면 Cloud Service 관리 타일에 AMS 클라우드 서비스가 포함됩니다. 또한 지표 분석 타일은 라이프사이클 보고서로 채워집니다.
 
@@ -88,9 +88,9 @@ Mobile Services Adobe 카드를 선택하고 다음 을 클릭합니다.
 
 ## Target 콘텐츠 동기화 핸들러 {#target-content-sync-handlers}
 
-컨텐츠를 사용자의 장치에 전달하기 위해 컨텐츠는 AEM 컨텐츠 작성자가 만든 오퍼를 렌더링하여 생성됩니다. 대상 오퍼의 렌더링을 처리하기 위해 오퍼를 처리하는 새로운 콘텐츠 동기화 핸들러가 있습니다. 하이브리드 참조 응용 프로그램을 샘플로 사용하는 en(영어) 콘텐츠 패키지에는 [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) 핸들러입니다. 다음 단계는 장치에 오퍼를 렌더링하는 데 중요합니다. mobileappoffers 핸들러에는 애플리케이션에 사용되는 개인화 활동의 경로를 식별하는 경로 속성이 있습니다.
+컨텐츠를 사용자의 장치에 전달하기 위해 컨텐츠는 AEM 컨텐츠 작성자가 만든 오퍼를 렌더링하여 생성됩니다. 대상 오퍼의 렌더링을 처리하기 위해 오퍼를 처리하는 새로운 콘텐츠 동기화 핸들러가 있습니다. 하이브리드 참조 응용 프로그램을 샘플로 사용하는 en(영어) 콘텐츠 패키지에는 [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) 처리기와 함께 ContentSyncConfig가 포함됩니다. 다음 단계는 장치에 오퍼를 렌더링하는 데 중요합니다. mobileappoffers 핸들러에는 애플리케이션에 사용되는 개인화 활동의 경로를 식별하는 경로 속성이 있습니다.
 
-예를 들어 다음 위치에 활동이 있는 경우 */content/campaigns/hybridref*, 이 경로를 복사한 다음 값에 붙여넣습니다. *경로* mobileappoffers 처리기의 속성입니다.
+예를 들어 */content/campaigns/hybridref*&#x200B;에 활동이 있는 경우 이 경로를 복사하여 mobileappoffers 처리기의 *path* 속성에 값으로 붙여 넣으십시오.
 
 하이브리드 참조 애플리케이션의 경우 두 개의 mobileappoffers 핸들러가 있으며 하나는 개발용이고 하나는 제작용입니다.
 
@@ -98,7 +98,7 @@ mobileappoffers 처리기의 path 속성에 활동 경로가 설정되면 처리
 
 ### 렌더링 모드 {#render-mode}
 
-mobileappoffers 처리기는 게시 및 개발 설정에 대해 다르게 구성됩니다. 게시 설정의 경우 라는 속성이 있습니다. *renderMode* (값: *게시* cq:ContentSyncConfig 노드에 설정합니다. mobileappoffers 처리기가 renderMode를 참조하고 게시로 설정된 경우 만들어지는 mbox id를 편집합니다. 기본적으로 AEM에서 만드는 mbox에는 mbox id에 —author 값이 추가됩니다. 이는 활동이 게시되지 않았으며 오퍼 확인에 게시되지 않은 캠페인을 사용해야 함을 나타냅니다.
+mobileappoffers 처리기는 게시 및 개발 설정에 대해 다르게 구성됩니다. 게시 설정의 경우 cq:ContentSyncConfig 노드에 *publish* 값이 설정된 *renderMode* 속성이 있습니다. mobileappoffers 처리기가 renderMode를 참조하고 게시로 설정된 경우 만들어지는 mbox id를 편집합니다. 기본적으로 AEM에서 만드는 mbox에는 mbox id에 —author 값이 추가됩니다. 이는 활동이 게시되지 않았으며 오퍼 확인에 게시되지 않은 캠페인을 사용해야 함을 나타냅니다.
 
 Adobe Mobile Dashboard를 통해 콘텐츠를 스테이징하면 스테이징된 콘텐츠는 프로덕션 준비 콘텐츠로 간주되고 비개발 콘텐츠 동기화 구성을 통해 렌더링됩니다. 이러한 방식으로 렌더링하면 —작성자가 모든 mbox ID에서 제거되고 게시된 활동을 Target 서버에서 사용할 수 있습니다. 스테이징된 콘텐츠를 테스트하기 전에 활동이 게시되었는지 확인하십시오.
 

@@ -23,7 +23,7 @@ ht-degree: 15%
 | AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | 이 문서 |
 
-AEM Forms의 최신 기능 및 향상된 기능에 대한 자세한 내용은 [AEM Forms의 새로운 기능](../../forms/using/whats-new.md).
+AEM Forms의 최신 기능 및 향상된 기능에 대한 자세한 내용은 [AEM Forms의 새로운 기능](../../forms/using/whats-new.md)을 참조하세요.
 
 ## AEM Forms 정보 {#about-aem-forms}
 
@@ -33,13 +33,13 @@ AEM Forms은 양식 작성, 관리 및 게시와 서신 관리 기능, 문서 �
 
 대기업에서는 양식을 한 번 만든 다음 콘텐츠 관리 시스템에 복사하여 재사용하는 경우가 많습니다. 양식의 대규모 데이터베이스를 최신 상태로 유지하고 이를 검색 가능하게 만드는 것은 상당한 도전이 될 수 있습니다. AEM은 고객이 웹 채널과 모바일 채널 모두에서 필요한 양식을 찾고 액세스할 수 있도록 사용자 정의 가능한 Forms 포털을 제공합니다.
 
-AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 에셋도 관리할 수 있는 양식 관리 도구를 제공합니다. 자세한 내용은 [양식 관리 소개](../../forms/using/introduction-managing-forms.md).
+AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 에셋도 관리할 수 있는 양식 관리 도구를 제공합니다. 자세한 내용은 [양식 관리 소개](../../forms/using/introduction-managing-forms.md)를 참조하십시오.
 
 >[!NOTE]
 >
 >[AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
-![AEM forms 기능](do-not-localize/4th-draft-updated.gif)
+![AEM 양식 기능](do-not-localize/4th-draft-updated.gif)
 
 ### 주요 기능 {#key-capabilities}
 
@@ -93,7 +93,7 @@ AEM Forms은 디지털 비즈니스 프로세스를 모바일 장치로 확장�
 
 오프라인으로 데이터를 캡처하고 다음에 온라인으로 전환할 때 동기화하는 것은 특히 현장 직원에게 유용합니다. 생산성을 향상시키고 오류를 줄입니다.
 
-**오프라인 데이터 수집에 Forms Workspace 사용 시 이점**
+**오프라인 데이터 수집에 Forms Workspace을 사용할 때의 이점**
 
 * 작업 할당 및 추적을 위한 사용하기 쉬운 HTML 작업 영역 애플리케이션
 * 워크플로우 디자인 환경 드래그 앤 드롭

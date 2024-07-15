@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 개요 {#overview}
 
-자산 관리 및 서신 만들기 UI에서 텍스트 편집기를 사용자 지정하여 글꼴과 글꼴 크기를 더 추가할 수 있습니다. 이러한 글꼴에는 영어 및 일본어 글꼴과 같은 비영어가 포함됩니다.
+Assets 관리 및 서신 UI 만들기에서 텍스트 편집기를 사용자 지정하여 더 많은 글꼴과 글꼴 크기를 추가할 수 있습니다. 이러한 글꼴에는 영어 및 일본어 글꼴과 같은 비영어가 포함됩니다.
 
 글꼴 설정에서 다음을 변경하도록 사용자 지정할 수 있습니다.
 
@@ -31,17 +31,17 @@ ht-degree: 1%
 
 다음 작업을 수행합니다.
 
-1. [CRX에서 tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 지정합니다](#customizefonts)
+1. [CRX에서 tbxeditor-config.xml 파일을 편집하여 글꼴 사용자 지정](#customizefonts)
 1. [클라이언트 컴퓨터에 사용자 정의 글꼴 추가](#addcustomfonts)
 
-## CRX에서 tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 지정합니다 {#customizefonts}
+## CRX에서 tbxeditor-config.xml 파일을 편집하여 글꼴 사용자 지정 {#customizefonts}
 
 tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 다음을 수행합니다.
 
-1. 다음으로 이동 `https://'[server]:[port]'/[ContextPath]/crx/de` 관리자로 로그인합니다.
+1. `https://'[server]:[port]'/[ContextPath]/crx/de`(으)로 이동하여 관리자로 로그인합니다.
 1. 앱 폴더에서 다음 단계를 사용하여 config 폴더(libs/fd/cm/config)와 유사한 경로/구조로 config 라는 폴더를 만듭니다.
 
-   1. 다음 경로에서 items 폴더를 마우스 오른쪽 단추로 클릭하고 를 선택합니다 **오버레이 노드**:
+   1. 다음 경로에서 항목 폴더를 마우스 오른쪽 단추로 클릭하고 **오버레이 노드**&#x200B;를 선택합니다.
 
       `/libs/fd/cm/config`
 
@@ -57,18 +57,18 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
 
       ![오버레이 노드](assets/2.png)
 
-   1. 클릭 **확인**. 폴더 구조는 앱 폴더에 생성됩니다.
+   1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다.
 
    1. **모두 저장**&#x200B;을 클릭합니다.
 
 1. 새로 생성된 구성 폴더에 다음 단계를 사용하여 tbxeditor-config.xml 파일의 복사본을 만듭니다.
 
-   1. libs/fd/cm/config에서 tbxeditor-config.xml 파일을 마우스 오른쪽 버튼으로 클릭하고 다음을 선택합니다. **복사**.
-   1. 다음 폴더를 마우스 오른쪽 단추로 클릭하고 **붙여넣기:**
+   1. libs/fd/cm/config에서 tbxeditor-config.xml 파일을 마우스 오른쪽 단추로 클릭하고 **복사**&#x200B;를 선택합니다.
+   1. 다음 폴더를 마우스 오른쪽 단추로 클릭하고 **붙여넣기:**&#x200B;를 선택합니다
 
       `apps/fd/cm/config`
 
-   1. 붙여넣은 파일의 이름은 기본적으로 입니다. `copy of tbxeditor-config.xml.` 파일 이름을 로 변경합니다. `tbxeditor-config.xml` 및 클릭 **모두 저장**.
+   1. 붙여넣은 파일의 이름은 기본적으로 `copy of tbxeditor-config.xml.`입니다. 파일 이름을 `tbxeditor-config.xml`(으)로 변경하고 **모두 저장**&#x200B;을 클릭합니다.
 
 1. apps/fd/cm/config에서 tbxeditor-config.xml 파일을 연 다음 필요한 사항을 변경합니다.
 
@@ -166,7 +166,7 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
       * 글꼴 패밀리 및 크기, 높이, 문자 간격 및 날짜 형식의 기본값
       * 글머리 기호 들여쓰기
 
-      예를 들어 Sazanami Mincho Medium이라는 일본어 글꼴을 추가하려면 XML 파일에 다음 항목을 만들어야 합니다. `<font>Sazanami Mincho Medium</font>`. 또한 글꼴 사용자 지정에 액세스하고 작업하는 데 사용되는 클라이언트 시스템에도 이 글꼴이 설치되어 있어야 합니다. 자세한 내용은 [클라이언트 컴퓨터에 사용자 정의 글꼴 추가](#addcustomfonts).
+      예를들어 Sazanami Mincho Medium라는 일본어 글꼴을 추가하려면 XML 파일에 다음 항목을 만들어야 합니다. `<font>Sazanami Mincho Medium</font>`. 또한 글꼴 사용자 지정에 액세스하고 작업하는 데 사용되는 클라이언트 시스템에도 이 글꼴이 설치되어 있어야 합니다. 자세한 내용은 [클라이언트 컴퓨터에 사용자 지정 글꼴 추가](#addcustomfonts)를 참조하십시오.
 
       텍스트의 다양한 측면에 대한 기본값을 변경하고 항목을 제거하여 텍스트 편집기에서 글꼴을 제거할 수도 있습니다.
 
@@ -183,11 +183,11 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
 
 ## 글꼴 사용자 지정 액세스 {#access-font-customizations}
 
-에서 글꼴을 변경한 후 `tbxeditor-config.xml` crx의 파일을 설치하고 AEM Forms에 액세스하는 데 사용된 클라이언트 시스템에 필요한 글꼴을 설치했습니다. 변경 사항이 텍스트 편집기에 나타납니다.
+CRX에서 `tbxeditor-config.xml` 파일의 글꼴을 변경하고 AEM Forms에 액세스하는 데 사용되는 클라이언트 컴퓨터에 필요한 글꼴을 설치한 후 변경 내용이 텍스트 편집기에 나타납니다.
 
-예를 들어 Sazanami Mincho Medium 글꼴은 [CRX에서 tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 지정합니다](#customizefonts) 프로시저는 다음과 같이 텍스트 편집기 UI에 나타납니다.
+예를 들어, [CRX에서 tbxeditor-config.xml 파일을 편집하여 글꼴 사용자 지정](#customizefonts) 절차에 추가된 Sazanami Mincho Medium 글꼴이 텍스트 편집기 UI에 다음과 같이 표시됩니다.
 
-![사자나미민초성문](assets/sazanamiminchointext.png)
+![sazanamiminchointext](assets/sazanamiminchointext.png)
 
 >[!NOTE]
 >

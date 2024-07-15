@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Adobe Analytics과 랜딩 페이지 통합{#integrating-landing-pages-with-adobe-analytics}
 
-AEM은 랜딩 페이지 솔루션을 와 통합했습니다. [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) 다음 CTA(콜 투 액션) 구성 요소를 사용하여
+AEM은(는) 다음 CTA(콜 투 액션) 구성 요소를 사용하여 랜딩 페이지 솔루션을 [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst)과(와) 통합했습니다.
 
 1. 클릭스루 구성 요소
 1. 그래픽 링크 구성 요소
@@ -27,11 +27,11 @@ AEM은 랜딩 페이지 솔루션을 와 통합했습니다. [Adobe Analytics](h
 
 ## 사전 요구 사항 {#prerequisites}
 
-Adobe은 다음을 수행하는 것을 권장합니다. [기존 AEM-Adobe Analytics 통합](/help/sites-administering/adobeanalytics.md) 이 통합이 작동하는 방식을 이해합니다.
+Adobe은 [기존 AEM-Adobe Analytics 통합](/help/sites-administering/adobeanalytics.md)을 통해 이 통합의 작동 방식을 이해할 것을 권장합니다.
 
 ## 매핑에 사용할 수 있는 구성 요소 {#components-available-for-mapping}
 
-AEM에서 **클릭 유도 문안** 구성 요소 - **클릭스루 링크** 및 **GraphicalLink** - 여기 사이드 킥에 표시되며, Adobe Analytics 변수에 매핑할 수 있습니다.
+AEM에서 사이드 킥에 표시되는 **콜 투 액션** 구성 요소(**ClickThroughLink** 및 **GraphicalLink**)를 Adobe Analytics 변수에 매핑할 수 있습니다.
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -88,7 +88,7 @@ AEM에서 **클릭 유도 문안** 구성 요소 - **클릭스루 링크** 및 *
 </table>
 
 1. 노출된 이러한 속성을 컨텐츠 파인더의 모든 Adobe Analytics 변수와 매핑합니다. 이제 프레임워크를 사용할 준비가 되었습니다.
-1. 이제 랜딩 페이지를 만들거나 기존 CTA 구성 요소로 기존 랜딩 페이지를 열고 을(를) 클릭합니다 **Cloud Service** 의 탭 **페이지 속성** 터치에 적합한 UI의 사이드 킥에서 을 선택합니다 **속성 열기** 및 클릭 **Cloud Service**) 랜딩 페이지에서 사용할 프레임워크를 구성합니다. 드롭다운 목록에서 프레임워크를 선택합니다.
+1. 이제 랜딩 페이지를 만들거나 기존 CTA 구성 요소로 기존 랜딩 페이지를 열고 사이드 킥에서 **Cloud Service 속성**&#x200B;의 **페이지** 탭을 클릭하고(터치에 적합한 UI에서 **Cloud Service 열기**&#x200B;를 선택하고 **속성**&#x200B;을 클릭) 랜딩 페이지에서 사용할 프레임워크를 구성할 수 있습니다. 드롭다운 목록에서 프레임워크를 선택합니다.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 서신 관리에서 편지 템플릿에는 일반적인 양식 필드, 머리글 및 바닥글과 같은 레이아웃 기능 및 컨텐츠 배치에 대한 빈 &quot;대상 영역&quot;이 포함되어 있습니다.
 
-서신 관리에서는 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 브랜딩 및 비즈니스 요구 사항에 따라 Designer에서 템플릿을 사용자 정의할 수 있습니다. 패키지에는 다음 템플릿이 포함됩니다.
+서신 관리에서 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)에 편지 템플릿을 제공합니다. 브랜딩 및 비즈니스 요구 사항에 따라 Designer에서 템플릿을 사용자 정의할 수 있습니다. 패키지에는 다음 템플릿이 포함됩니다.
 
 * Classic
 * 클래식 단순
@@ -40,7 +40,7 @@ ht-degree: 0%
 * 텍스트 닫기
 * 서명 텍스트
 
-![나열된 모든 CM 문자 템플릿](assets/templatescorrespondence.png)
+![모든 CM 문자 서식 파일이 나열됨](assets/templatescorrespondence.png)
 
 AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES 패키지를 설치하면 템플릿이 templates-folder에 나열됩니다
 
@@ -48,7 +48,7 @@ AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES 패키지를 설치하면 템플릿이 
 
 맨 위에 로고가 있는 클래식 템플릿은 평범한 전문 용지에 적합합니다.
 
-![classic](assets/classic.png)
+![클래식](assets/classic.png)
 
 클래식 템플릿을 사용하여 만든 편지의 PDF 미리보기
 
@@ -64,7 +64,7 @@ Classic Simple 템플릿을 사용하여 만든 편지의 PDF 미리보기
 
 왼쪽 균형이 조정된 템플릿에는 편지 왼쪽에 로고가 포함됩니다.
 
-![왼쪽 잔고](assets/balancedleft.png)
+![balancedleft](assets/balancedleft.png)
 
 왼쪽 균형이 조정된 템플릿을 사용하여 만든 편지의 PDF 미리보기
 
@@ -72,7 +72,7 @@ Classic Simple 템플릿을 사용하여 만든 편지의 PDF 미리보기
 
 오른쪽 균형 조정 템플릿의 왼쪽에는 회사 로고가 있으며 편지 자체에 수신자 주소를 입력할 수 있는 공간을 제공합니다. 오른쪽 균형 조정 템플릿에는 편지에 여러 페이지가 있을 때 리플로우되는 바닥글도 포함됩니다.
 
-![가금](assets/balancedright.png)
+![balancedright](assets/balancedright.png)
 
 오른쪽 균형 조정 템플릿을 사용하여 만든 편지의 PDF 미리보기
 

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 커뮤니티 그룹 기능은 게시 및 작성자 환경의 승인된 사용자가 커뮤니티 사이트 내에서 하위 커뮤니티를 동적으로 만들 수 있는 기능입니다.
 
-커뮤니티 기준 [기능 팩 1](deploy-communities.md#latestfeaturepack), 그룹은 다른 그룹 내에 중첩될 수 있습니다.
+커뮤니티 [기능 팩 1](deploy-communities.md#latestfeaturepack)부터 그룹을 다른 그룹 내에 중첩할 수 있습니다.
 
 ## 클라이언트측 핵심 사항 {#essentials-for-client-side}
 
@@ -46,7 +46,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>속성</strong></td>
-   <td>다음을 참조하십시오 <a href="creating-groups.md">커뮤니티 그룹</a></td>
+   <td><a href="creating-groups.md">커뮤니티 그룹</a> 보기</td>
   </tr>
  </tbody>
 </table>
@@ -80,21 +80,21 @@ ht-degree: 1%
 
 * [커뮤니티 그룹 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [커뮤니티 그룹 엔드포인트](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [커뮤니티 그룹 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 
 ### 그룹 기능 {#groups-function}
 
-다음을 포함하는 커뮤니티 사이트 구조 [그룹 기능](functions.md#groups-function) 는 새 항목 만들기를 지원합니다. `community groups` 게시 및 작성 환경. 생성된 커뮤니티 그룹에는 다음이 포함됩니다. `community groups member list` 그룹 구성원을 나열하는 구성 요소입니다.
+[Groups 함수](functions.md#groups-function)를 포함하는 커뮤니티 사이트 구조는 게시 및 작성자 환경에서 새 `community groups` 만들기를 지원합니다. 만든 커뮤니티 그룹에 그룹의 구성원을 나열하는 `community groups member list` 구성 요소가 포함되어 있습니다.
 
-하나 이상 [커뮤니티 그룹 템플릿](tools-groups.md)커뮤니티 그룹 페이지의 디자인을 제공하는 는 그룹 기능에 대해 구성할 수 있습니다. 이는 함수가 에에 추가되는 경우에 적용됩니다 [커뮤니티 사이트 템플릿](sites.md) 또는 커뮤니티 그룹 템플릿 내에 중첩됩니다.
+커뮤니티 그룹 페이지의 디자인을 제공하는 [커뮤니티 그룹 템플릿](tools-groups.md)을(를) 그룹 함수에 대해 하나 이상 구성할 수 있습니다. 함수가 [커뮤니티 사이트 템플릿](sites.md)에 추가되거나 커뮤니티 그룹 템플릿 내에 중첩되면 마찬가지입니다.
 
-여러 커뮤니티 그룹 템플릿을 포함하면 선택할 수 있습니다. 즉, 커뮤니티 사이트에 대해 커뮤니티 그룹이 생성될 때 인증된 사용자에게 디자인의 선택 사항이 표시됩니다. 의 섹션을 참조하십시오. [커뮤니티 그룹](creating-groups.md) 작성자용.
+여러 커뮤니티 그룹 템플릿을 포함하면 선택할 수 있습니다. 즉, 커뮤니티 사이트에 대해 커뮤니티 그룹이 생성될 때 인증된 사용자에게 디자인의 선택 사항이 표시됩니다. 작성자는 [커뮤니티 그룹](creating-groups.md)의 섹션을 참조하십시오.
 
 ### 중첩 그룹 {#nested-groups}
 
-커뮤니티 기준 [FP1](deploy-communities.md#latestfeaturepack), 그룹 함수를 그룹 템플릿 내에 포함할 수 있으므로 중첩된 그룹(하위 커뮤니티)을 사용할 수 있습니다.
+커뮤니티 [FP1](deploy-communities.md#latestfeaturepack)부터 Groups 함수를 그룹 템플릿 내에 포함할 수 있으므로 중첩 그룹(하위 커뮤니티)을 허용합니다.
 
 커뮤니티 사이트 또는 그룹 템플릿에 그룹 기능이 포함되어 있는 경우 다음과 같은 작업을 수행할 수 있습니다.
 

@@ -25,7 +25,7 @@ ht-degree: 1%
 
 AEM은 모바일 디바이스용 사이트를 개발하고 콘텐츠를 모바일 애플리케이션에 통합할 수 있는 몇 가지 도구를 제공합니다.
 
-이 페이지는 과 함께 읽어야 합니다. [작성자를 위한 모바일 페이지](/help/sites-authoring/mobile.md).
+이 페이지는 작성자를 위한 [모바일 페이지](/help/sites-authoring/mobile.md)와 함께 읽어야 합니다.
 
 ## 모바일용 웹 사이트 개발 {#developing-web-sites-for-mobile}
 
@@ -38,4 +38,4 @@ AEM은 모바일 디바이스용 사이트를 개발하고 콘텐츠를 모바�
 
 ## 모바일 앱 개발 {#developing-mobile-apps}
 
-AEM 페이지를 애플리케이션 인터페이스로 사용하는 모바일 애플리케이션을 개발합니다. AEM은 AEM 페이지를 사용하여 앱을 쉽게 만들 수 있도록 PhoneGap과 통합됩니다. 콘텐츠 동기화를 사용하면 앱과 번들로 연결할 페이지의 버전 지정 아카이브를 만들 수 있습니다. 콘텐츠 동기화에 대해 자세히 알아보려면 [여기](/help/mobile/phonegap-contentsync.md).
+AEM 페이지를 애플리케이션 인터페이스로 사용하는 모바일 애플리케이션을 개발합니다. AEM은 AEM 페이지를 사용하여 앱을 쉽게 만들 수 있도록 PhoneGap과 통합됩니다. 콘텐츠 동기화를 사용하면 앱과 번들로 연결할 페이지의 버전 지정 아카이브를 만들 수 있습니다. 콘텐츠 동기화에 대해 자세히 알아보려면 [여기](/help/mobile/phonegap-contentsync.md)를 클릭하세요.

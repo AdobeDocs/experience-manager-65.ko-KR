@@ -19,24 +19,24 @@ ht-degree: 11%
 # AEM 6.5 모바일 사용 안내서 {#mobile}
 
 + [모바일 사용 안내서 개요](home.md)
-+ AEM Mobile 소개 {#introduction}
++ AEM Mobile {#introduction} 소개
    + [AEM Mobile 시작하기](getting-started-aem-mobile.md)
    + [AEM Mobile 온디맨드](getting-started-aem-mobile-on-demand.md)
    + [모바일 앱](mobile-apps.md)
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - GDPR 준비 완료](aem-mobile-gdpr-compliance.md)
    + [모바일 앱 개발](develop-mobile-apps.md)
-+ 온디맨드 서비스 앱 작성 {#authoring}
++ On-Demand Services 앱 {#authoring} 작성
    + [모바일 온디맨드](mobile-apps-ondemand.md)
    + [컨텐츠 관리](mobile-apps-ondemand-manage-content-ondemand.md)
-   + [게시 취소 컨텐츠](mobile-on-demand-publishing-unpublishing.md)
+   + [Publish 컨텐츠 게시 취소](mobile-on-demand-publishing-unpublishing.md)
    + [AEM Mobile 애플리케이션 대시보드](mobile-apps-ondemand-application-dashboard.md)
    + [응용 프로그램 만들기 및 구성 작업](mobile-apps-ondemand-application-create-configure-action.md)
    + [문서 관리](mobile-on-demand-managing-articles.md)
    + [공유 리소스 업로드](mobile-on-demand-shared-resources.md)
    + [클라우드 구성](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [배너 관리](mobile-on-demand-managing-banners.md)
-+ 온디맨드 서비스 앱 개발 {#developing}
++ 온디맨드 서비스 앱 {#developing} 개발
    + [AEM Mobile 온디맨드](aem-mobile-on-demand.md)
    + [앱 템플릿 및 구성 요소](app-templates-and-components1.md)
    + [컨텐츠 속성 및 노드](content-properties.md)
@@ -50,7 +50,7 @@ ht-degree: 11%
    + [렌더링 및 게재](rendering-and-delivery.md)
    + [Content Services](developing-content-services.md)
    + [컨텐츠 전달](develop-content-as-a-service.md)
-+ On-Demand Services 앱 관리 {#administering}
++ On-Demand Services 앱 {#administering} 관리
    + [AEM Mobile 온디맨드](aem-mobile.md)
    + [AEM Mobile 설정](aem-mobile-setup.md)
    + [사용자 및 사용자 그룹 구성](aem-mobile-configure-users.md)
@@ -59,7 +59,7 @@ ht-degree: 11%
    + [모델 개요](model-management.md)
    + [공간 및 엔티티](spaces-and-entities.md)
    + [컬렉션 관리](mobile-on-demand-managing-collections.md)
-+ Adobe PhoneGap Enterprise 작성 {#author-phonegap}
++ Adobe PhoneGap Enterprise {#author-phonegap} 작성
    + [PhoneGap](phonegap.md)
    + [앱 메타데이터 편집](phonegap-editmetadata.md)
    + [앱 정의](phonegap-app-definitions.md)
@@ -68,7 +68,7 @@ ht-degree: 11%
    + [모바일 애플리케이션 작성](phonegap-authoring-apps.md)
    + [앱 타일 관리](phonegap-app-details-tile.md)
    + [AEM Mobile 콘텐츠 개인화](phonegap-aem-mobile-content-personalization.md)
-+ Adobe PhoneGap Enterprise 개발 {#developphonegap}
++ Adobe PhoneGap Enterprise {#developphonegap} 개발
    + [PhoneGap](developing-in-phonegap.md)
    + [모바일 애플리케이션 구축](building-app-mobile-phonegap.md)
    + [알림 푸시](phonegap-push-notifications.md)
@@ -88,7 +88,7 @@ ht-degree: 11%
    + [모바일 앱 테스트](develop-mobile-apps-testing.md)
    + [앱 구조](phonegap-structure-an-app.md)
    + [Adobe Mobile Analytics로 앱 성능 추적](phonegap-intro-to-app-analytics.md)
-+ Adobe PhoneGap Enterprise 관리 {#administering-phonegap}
++ Adobe PhoneGap Enterprise {#administering-phonegap} 관리
    + [모바일 빠른 시작](phonegap-mobile-quickstart.md)
    + [AEM을 사용하여 Adobe PhoneGap Enterprise용 컨텐츠 관리](administer-phonegap.md)
    + [Adobe PhoneGap Build Cloud Service 구성](configure-phonegap-build-cloud.md)

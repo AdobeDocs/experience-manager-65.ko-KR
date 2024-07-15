@@ -26,6 +26,6 @@ Adobe Experience Manager(AEM) 모바일 애플리케이션 뷰어가 작성자 �
 
 응용 프로그램 뷰어를 사용하여 개발 및 스테이징 상태에서 응용 프로그램을 검토하지 않으려는 경우 레퍼러 필터의 기본 설정을 변경할 필요가 없습니다.
 
-실행 중인 AEM의 작성자 인스턴스 내에서 다음으로 이동합니다. [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr) &#39;Apache Sling Referrer Filter&#39;를 검색합니다. 레퍼러 필터를 편집하고 &#39;빈 허용&#39; 확인란을 선택합니다(아래 이미지 참조). 그런 다음 저장 버튼을 누르고 브라우저 페이지를 닫습니다.
+실행 중인 AEM 작성자 인스턴스 내에서 [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)(으)로 이동하여 &#39;Apache Sling Referrer Filter&#39;를 검색합니다. 레퍼러 필터를 편집하고 &#39;빈 허용&#39; 확인란을 선택합니다(아래 이미지 참조). 그런 다음 저장 버튼을 누르고 브라우저 페이지를 닫습니다.
 
 ![레퍼러 필터 설정](assets/chlimage_1-106.png)

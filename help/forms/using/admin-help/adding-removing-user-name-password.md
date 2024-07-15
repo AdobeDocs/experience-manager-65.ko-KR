@@ -22,12 +22,12 @@ ht-degree: 0%
 
 ## 사용자 이름 및 암호 자격 증명 추가 {#add-a-user-name-and-password-credential}
 
-1. 관리 콘솔에서 다음을 클릭합니다. **[!UICONTROL 설정 > Trust Store 관리 > 사용자 및 암호 자격 증명]** 그런 다음 을 클릭합니다. **[!UICONTROL 추가]**.
-1. 다음에서 **[!UICONTROL 프로필 이름]** 상자에서 자격 증명의 이름을 입력합니다.
-1. 다음에서 **[!UICONTROL 사용자 이름]** 상자에 고유한 사용자 이름을 입력합니다.
-1. 다음에서 **[!UICONTROL 암호]** 상자에서 사용자의 암호를 입력한 다음 **[!UICONTROL 확인]**.
+1. 관리 콘솔에서 **[!UICONTROL 설정 > Trust Store Management > 사용자 및 암호 자격 증명]**&#x200B;을 클릭한 다음 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 프로필 이름]** 상자에 자격 증명의 이름을 입력하십시오.
+1. **[!UICONTROL 사용자 이름]** 상자에 고유한 사용자 이름을 입력하십시오.
+1. **[!UICONTROL 암호]** 상자에서 사용자의 암호를 입력한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
 ## 사용자 이름 및 암호 자격 증명 삭제 {#delete-a-user-name-and-password-credential}
 
-1. 관리 콘솔에서 다음을 클릭합니다. **[!UICONTROL 설정 > Trust Store 관리 > 사용자 및 암호 자격 증명]**.
-1. 삭제할 자격 증명의 확인란을 선택하고 **[!UICONTROL 삭제]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL 확인]**.
+1. 관리 콘솔에서 **[!UICONTROL 설정 > 보안 저장소 관리 > 사용자 및 암호 자격 증명]**&#x200B;을 클릭합니다.
+1. 삭제할 자격 증명의 확인란을 선택하고 **[!UICONTROL 삭제]**&#x200B;를 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.

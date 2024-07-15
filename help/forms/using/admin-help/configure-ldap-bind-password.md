@@ -22,7 +22,7 @@ ht-degree: 0%
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > 구성 파일 가져오기 및 내보내기 를 클릭합니다.
 1. 현재 구성 설정을 파일로 내보내려면 내보내기(Export)를 클릭하고 구성 파일을 다른 위치에 저장합니다.
-1. 파일에서 `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` 노드. 예를 들면 다음과 같습니다.
+1. 파일에서 `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` 노드를 찾습니다. 예를 들면 다음과 같습니다.
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -35,9 +35,9 @@ ht-degree: 0%
         </map>
    ```
 
-   다음에 대한 값 입력 `bindpassword` 변경 내용을 저장합니다.
+   `bindpassword`의 값을 입력하고 변경 내용을 저장합니다.
 
-1. 파일에서 `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` 노드. 예를 들면 다음과 같습니다.
+1. 파일에서 `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` 노드를 찾습니다. 예를 들면 다음과 같습니다.
 
    ```xml
     <node name="LDAPUserConfig">
@@ -50,7 +50,7 @@ ht-degree: 0%
         </map>
    ```
 
-   다음에 대한 값 입력 `bindpassword` 변경 내용을 저장합니다.
+   `bindpassword`의 값을 입력하고 변경 내용을 저장합니다.
 
 1. 업데이트된 파일을 가져오려면 사용자 관리에서 구성 > 구성 파일 가져오기 및 내보내기 를 클릭합니다.
 1. 찾아보기 를 클릭하여 파일을 찾고 가져오기 를 클릭한 다음 확인 을 클릭합니다.

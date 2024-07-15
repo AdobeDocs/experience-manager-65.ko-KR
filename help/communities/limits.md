@@ -24,7 +24,7 @@ ht-degree: 0%
 
 회원이 제한될 경우 허용된 기여 수를 초과하는 게시물은 한도를 초과했다는 경고를 초래하고 게시물이 거부됩니다. 그런 다음 커뮤니티 메시지 센터로 이동하여 필요한 경우 제한을 제거할 수 있는 커뮤니티 관리자에게 문의할 수 있습니다.
 
-기여도 제한은 [구성원 콘솔](members.md) 사이트 방문자가 새 구성원이 될 때 자동으로 활성화되도록 및/또는 구성됩니다.
+기여도 제한은 [구성원 콘솔](members.md)에서 개별적으로 활성화되거나 사이트 방문자가 새 구성원이 될 때 자동으로 활성화되도록 구성될 수 있습니다.
 
 구성원 콘솔을 사용하면 언제든지 커뮤니티 관리자가 구성원에 대한 기여도 제한을 미리 제거하거나, 구성원이 커뮤니티 관리자에게 그러한 요청을 하는 메시지를 보낼 때 반응적으로 제거할 수 있습니다.
 
@@ -40,18 +40,18 @@ ht-degree: 0%
 
 * 기본 게시자의 경우:
 * 관리자 권한으로 로그인합니다.
-* 액세스 [웹 콘솔](../../help/sites-deploying/configuring-osgi.md).
+* [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)에 액세스합니다.
 
-   * 예를 들어, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * 예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* 찾기 `AEM Communities User Generated Content Contribution Limits Configuration`.
+* `AEM Communities User Generated Content Contribution Limits Configuration` 찾기.
 * 편집 아이콘을 선택합니다.
 
-![제한 구성](assets/configure-limits.png)
+![구성 제한](assets/configure-limits.png)
 
-* **[!UICONTROL UGC 기여도 제한 자동 적용]**
+* **[!UICONTROL UGC 기여도 한도 자동 적용]**
 
-  선택하면 사용자가 커뮤니티 구성원으로 등록할 때 기여도 제한을 자동으로 설정합니다. 커뮤니티 구성원의 프로필에 반영되며 [구성원 콘솔](members.md). 도메인 허용 목록의 새 구성원은 제한되지 않습니다.
+  선택하면 사용자가 커뮤니티 구성원으로 등록할 때 기여도 제한을 자동으로 설정합니다. 커뮤니티 구성원의 프로필에 반영되며 [구성원 콘솔](members.md)에서 활성화/비활성화할 수 있습니다. 도메인 허용 목록의 새 구성원은 제한되지 않습니다.
 
   기본값은 선택 취소되어 있습니다.
 
@@ -71,11 +71,11 @@ ht-degree: 0%
 
   허용 목록에 추가하다 하나 이상의 이메일 도메인 목록 추가 항목을 만들려면 + 아이콘을 선택합니다.
 
-  도메인의 허용 목록에 추가하다에 이메일 주소가 있는 사용자는 UGC 기여도 제한이 자동으로 적용될 때 영향을 받지 않습니다. 예를 들어 도메인인 경우 `mycompany.com` 도메인 목록에 이 추가된 다음 이메일 주소를 가진 구성원이 추가됩니다 `me@mycompany.com` 은(는) 게시에서 제한되지 않습니다.
+  도메인의 허용 목록에 추가하다에 이메일 주소가 있는 사용자는 UGC 기여도 제한이 자동으로 적용될 때 영향을 받지 않습니다. 예를 들어 도메인 `mycompany.com`이(가) 도메인 목록에 추가되면 이메일 주소가 `me@mycompany.com`인 구성원의 게시가 제한되지 않습니다.
 
   허용 목록에 추가하다 기본값은 빈 차원입니다.
 
-* **[!UICONTROL 메시지 수신자]**
+* **[!UICONTROL 메시지 받는 사람]**
 
   구성원의 기여도 제한을 수정할 수 있는 승인 가능한 하나 이상의 구성원 ID 목록입니다. 추가 항목을 만들려면 + 아이콘을 선택합니다.
 

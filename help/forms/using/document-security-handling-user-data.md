@@ -22,7 +22,7 @@ AEM Forms document security를 사용하면 미리 정의된 보안 설정을 �
 
 ## 사용자 데이터 및 데이터 저장소 {#user-data-and-data-stores}
 
-Document Security는 사용자 데이터를 포함하여 보호된 문서와 관련된 정책 및 데이터를 My Sql, Oracle, MS® SQL Server 및 IBM® DB2®와 같은 데이터베이스에 저장합니다. 또한 정책에 있는 인가된 사용자에 대한 데이터는 사용자 관리에 저장됩니다. 사용자 관리에 저장된 데이터에 대한 자세한 내용은 [Forms 사용자 관리: 사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md).
+Document Security는 사용자 데이터를 포함하여 보호된 문서와 관련된 정책 및 데이터를 My Sql, Oracle, MS® SQL Server 및 IBM® DB2®와 같은 데이터베이스에 저장합니다. 또한 정책에 있는 인가된 사용자에 대한 데이터는 사용자 관리에 저장됩니다. 사용자 관리에 저장된 데이터에 대한 자세한 내용은 [Forms 사용자 관리: 사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md)를 참조하십시오.
 
 다음 표에서는 document security가 데이터베이스 테이블에서 데이터를 구성하는 방식을 매핑합니다.
 
@@ -62,7 +62,7 @@ Document Security는 사용자 데이터를 포함하여 보호된 문서와 관
   </tr>
   <tr>
    <td><code>EdcPolicyXmlEntity</code></td>
-   <td>활성 정책을 위해 XML 파일을 저장합니다. 정책 XML<sup> </sup>정책에 연결된 사용자의 주체 ID에 대한 참조가 포함되어 있습니다. 정책 XML은 Blob 개체로 저장됩니다.</td>
+   <td>활성 정책을 위해 XML 파일을 저장합니다. 정책 XML<sup> </sup>에 정책과 연결된 사용자의 사용자 ID에 대한 참조가 있습니다. 정책 XML은 Blob 개체로 저장됩니다.</td>
   </tr>
   <tr>
    <td><code>EdcPolicyArchiveEntity</code></td>
@@ -83,9 +83,9 @@ Document Security는 사용자 데이터를 포함하여 보호된 문서와 관
 
 데이터베이스의 사용자에 대한 문서 보안 데이터에 액세스하고 내보낼 수 있으며, 필요한 경우 영구적으로 삭제할 수 있습니다.
 
-데이터베이스에서 사용자 데이터를 내보내거나 삭제하려면 데이터베이스 클라이언트를 사용하여 데이터베이스에 연결하고 사용자의 일부 개인 식별 정보를 기반으로 주체 ID를 찾아야 합니다. 예를 들어, 로그인 ID를 사용하여 사용자의 주도자 ID를 검색하려면 다음을 실행합니다 `select` 데이터베이스에 있는 명령입니다.
+데이터베이스에서 사용자 데이터를 내보내거나 삭제하려면 데이터베이스 클라이언트를 사용하여 데이터베이스에 연결하고 사용자의 일부 개인 식별 정보를 기반으로 주체 ID를 찾아야 합니다. 예를 들어 로그인 ID를 사용하여 사용자의 보안 주체 ID를 검색하려면 데이터베이스에서 다음 `select` 명령을 실행합니다.
 
-다음에서 `select` 명령, 바꾸기 `<user_login_id>` 에서 검색할 주체 ID를 가진 사용자의 로그인 ID 사용 `EdcPrincipalUserEntity` 데이터베이스 테이블.
+`select` 명령에서 `<user_login_id>`을(를) `EdcPrincipalUserEntity` 데이터베이스 테이블에서 검색할 사용자 ID의 로그인 ID로 바꿉니다.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -95,11 +95,11 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 ### 사용자 데이터 내보내기 {#export-user-data}
 
-데이터베이스 테이블에서 사용자 ID에 대한 사용자 데이터를 내보낼 수 있도록 다음 데이터베이스 명령을 실행합니다. 다음에서 `select` 명령, 바꾸기 `<principal_id>` (데이터를 내보내려는 사용자의 주체 ID 포함)
+데이터베이스 테이블에서 사용자 ID에 대한 사용자 데이터를 내보낼 수 있도록 다음 데이터베이스 명령을 실행합니다. `select` 명령에서 `<principal_id>`을(를) 데이터를 내보내려는 사용자의 보안 주체 ID로 바꾸십시오.
 
 >[!NOTE]
 >
->다음 명령은 My SQL 및 IBM® DB2® 데이터베이스에서 데이터베이스 테이블 이름을 사용합니다. oracle 및 MS® SQL 데이터베이스에서 이러한 명령을 실행할 때 `EdcPolicySetPrincipalEntity` 포함 `EdcPolicySetPrincipalEnt` 를 입력합니다.
+>다음 명령은 My SQL 및 IBM® DB2® 데이터베이스에서 데이터베이스 테이블 이름을 사용합니다. oracle 및 MS® SQL 데이터베이스에서 이러한 명령을 실행할 때 명령에서 `EdcPolicySetPrincipalEntity`을(를) `EdcPolicySetPrincipalEnt`(으)로 바꾸십시오.
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -125,16 +125,16 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->에서 데이터를 내보내려면 `EdcAuditEntity` 표, 사용 [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) 다음을 수행하는 API [이벤트 검색 필터](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) 를 기반으로 감사 데이터를 내보낼 매개 변수로 `principalId`, `policyId`, 또는 `licenseId`.
+>`EdcAuditEntity` 테이블에서 데이터를 내보내려면 [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)를 매개 변수로 사용하는 [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API를 사용하여 `principalId`, `policyId` 또는 `licenseId`을(를) 기준으로 감사 데이터를 내보냅니다.
 
-시스템에서 사용자에 대한 전체 데이터를 가져오려면 사용자 관리 데이터베이스에서 데이터에 액세스하고 데이터를 내보내야 합니다. 자세한 내용은 [Forms 사용자 관리: 사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md).
+시스템에서 사용자에 대한 전체 데이터를 가져오려면 사용자 관리 데이터베이스에서 데이터에 액세스하고 데이터를 내보내야 합니다. 자세한 내용은 [Forms 사용자 관리: 사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md)를 참조하십시오.
 
 ### 사용자 데이터 삭제 {#delete-user-data}
 
 데이터베이스 테이블에서 보안 주체 ID에 대한 문서 보안 데이터를 삭제하려면 다음을 수행합니다.
 
 1. AEM Forms 서버를 종료합니다.
-1. 다음 데이터베이스 명령을 실행하여 문서 보안을 위해 데이터베이스 테이블에서 주도자 ID의 데이터를 삭제할 수 있습니다. 다음에서 `Delete` 명령, 바꾸기 `<principal_id>` (데이터를 삭제하려는 사용자의 보안 주체 ID 포함)
+1. 다음 데이터베이스 명령을 실행하여 문서 보안을 위해 데이터베이스 테이블에서 주도자 ID의 데이터를 삭제할 수 있습니다. `Delete` 명령에서 `<principal_id>`을(를) 삭제하려는 데이터의 사용자 ID로 바꿉니다.
 
    ```sql
    Delete from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -150,17 +150,17 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
    >[!NOTE]
    >
-   >에서 데이터를 삭제하려면 `EdcAuditEntity` 표, 사용 [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) 다음을 수행하는 API [이벤트 검색 필터](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) 를 기반으로 감사 데이터를 삭제할 매개 변수로 사용 `principalId`, `policyId`, 또는 `licenseId`.
+   >`EdcAuditEntity` 테이블에서 데이터를 삭제하려면 [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)를 매개 변수로 사용하는 [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API를 사용하여 `principalId`, `policyId` 또는 `licenseId`을(를) 기준으로 감사 데이터를 삭제합니다.
 
-1. 활성 및 보관된 정책 XML 파일은 `EdcPolicyXmlEntity` 및 `EdcPolicyArchiveEntity` 각각 데이터베이스 테이블. 이러한 테이블에서 사용자에 대한 데이터를 삭제하려면 다음을 수행합니다.
+1. 활성 및 보관된 정책 XML 파일은 각각 `EdcPolicyXmlEntity` 및 `EdcPolicyArchiveEntity` 데이터베이스 테이블에 저장됩니다. 이러한 테이블에서 사용자에 대한 데이터를 삭제하려면 다음을 수행합니다.
 
-   1. 에서 각 행의 XML Blob를 엽니다. `EdcPolicyXMLEntity` 또는 `EdcPolicyArchiveEntity` 테이블을 만들고 XML 파일을 추출합니다. XML 파일은 아래에 표시된 파일과 유사합니다.
+   1. `EdcPolicyXMLEntity` 또는 `EdcPolicyArchiveEntity` 테이블에서 각 행의 XML Blob를 열고 XML 파일을 추출합니다. XML 파일은 아래에 표시된 파일과 유사합니다.
    1. 주체 ID에 대한 Blob를 제거할 수 있도록 XML 파일을 편집합니다.
    1. 다른 파일에 대해 1단계와 2단계를 반복합니다.
 
    >[!NOTE]
    >
-   >내에서 전체 Blob 제거 `Principal` 주체 ID 또는 정책 XML의 태그가 손상되거나 사용할 수 없게 될 수 있습니다.
+   >사용자 ID에 대한 `Principal` 태그 내의 전체 Blob를 제거하거나 정책 XML이 손상되거나 사용할 수 없게 될 수 있습니다.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -189,25 +189,25 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
    <ns2:Permission PermissionName="ns3:com.adobe.aps.pdf.printLow" Access="ALLOW"/>
    ```
 
-   에서 직접 데이터를 삭제하는 것 외에도 `EdcPolicyXmlEntity` 이 작업을 수행하는 방법에는 두 가지가 더 있습니다.
+   `EdcPolicyXmlEntity` 테이블에서 직접 데이터를 삭제하는 것 외에도 다음과 같은 두 가지 방법으로 데이터를 삭제할 수 있습니다.
 
    **관리 콘솔 사용**
 
-   1. 관리자로 Forms JEE 관리 콘솔(https://)에 로그인합니다.[*server*]:[*포트*]/adminui.
-   1. 다음으로 이동 **[!UICONTROL 서비스 > Document Security > 정책 세트]**.
+   1. 관리자로 https://[*server*]:[*port*]/adminui에서 Forms JEE 관리 콘솔에 로그인합니다.
+   1. **[!UICONTROL 서비스 > 문서 보안 > 정책 집합]**(으)로 이동합니다.
    1. 정책 집합을 열고 정책에서 사용자를 삭제합니다.
 
-   **Document Security 웹 페이지 사용**
+   **문서 보안 웹 페이지 사용**
 
    개인 정책을 만들 수 있는 권한이 있는 Document Security 사용자는 정책에서 사용자 데이터를 삭제할 수 있습니다. 방법은 다음과 같습니다.
 
-   1. 개인 정책이 있는 사용자는 https://의 document security 웹 페이지에 로그인합니다&#x200B;[*server*]:[*포트*]/edc.
-   1. 다음으로 이동 **[!UICONTROL 서비스 > Document Security > 내 정책]**.
+   1. 개인 정책이 있는 사용자는 https://[*server*]:[*port*]/edc에서 문서 보안 웹 페이지에 로그인합니다.
+   1. **[!UICONTROL 서비스 > 문서 보안 > 내 정책]**(으)로 이동합니다.
    1. 정책을 열고 정책에서 사용자를 삭제합니다.
 
    >[!NOTE]
    >
-   >관리자는 의 다른 사용자 개인 정책에서 사용자 데이터를 검색, 액세스 및 삭제할 수 있습니다. **[!UICONTROL 서비스 > Document Security > 내 정책]** 관리 콘솔을 사용합니다.
+   >관리자는 관리 콘솔을 사용하여 **[!UICONTROL 서비스 > 문서 보안 > 내 정책]**&#x200B;에서 다른 사용자의 개인 정책에서 사용자 데이터를 검색, 액세스 및 삭제할 수 있습니다.
 
-1. 사용자 관리 데이터베이스에서 주체 ID에 대한 데이터를 삭제합니다. 자세한 단계는 를 참조하십시오. [Forms 사용자 관리 | 사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md).
+1. 사용자 관리 데이터베이스에서 주체 ID에 대한 데이터를 삭제합니다. 자세한 단계는 [Forms 사용자 관리를 참조하십시오. | 사용자 데이터 ](/help/forms/using/user-management-handling-user-data.md)을(를) 처리하고 있습니다.
 1. AEM Forms 서버를 시작합니다.

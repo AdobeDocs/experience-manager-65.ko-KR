@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Adobe Experience Manager 터치 지원 UI의 개념{#concepts-of-the-aem-touch-enabled-ui}
 
-Adobe Experience Manager(AEM)에는 터치 지원 UI와 [반응형 디자인](/help/sites-authoring/responsive-layout.md) 터치 및 데스크탑 디바이스 모두에서 작동하도록 설계된 작성 환경용.
+Adobe Experience Manager(AEM)는 터치 및 데스크톱 장치 모두에서 작동하도록 디자인된 작성 환경용 [반응형 디자인](/help/sites-authoring/responsive-layout.md)이 포함된 터치 지원 UI를 제공합니다.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Adobe Experience Manager(AEM)에는 터치 지원 UI와 [반응형 디자인](/h
    * 현재 사용 중인 콘솔, 해당 콘솔 내 위치 또는 둘 다를 나타냅니다.
    * 왼쪽 레일 선택
    * 이동 경로
-   * 적절한 액세스 권한 **만들기** 작업
+   * 적절한 **만들기** 작업에 액세스
    * 선택 항목 보기
 * 다음과 같은 콘텐츠 영역:
    * 콘텐츠 항목(페이지, 에셋, 포럼 게시물 등)을 나열합니다.
@@ -51,12 +51,12 @@ Adobe Experience Manager(AEM)에는 터치 지원 UI와 [반응형 디자인](/h
 
 >[!NOTE]
 >
->거의 모든 AEM 기능이 터치 지원 UI로 포팅되었습니다. 그러나 일부 제한된 경우 기능은 클래식 UI로 되돌아갑니다. 다음을 참조하십시오 [Touch UI 기능 상태](/help/release-notes/touch-ui-features-status.md) 추가 정보.
+>거의 모든 AEM 기능이 터치 지원 UI로 포팅되었습니다. 그러나 일부 제한된 경우 기능은 클래식 UI로 되돌아갑니다. 자세한 내용은 [Touch UI 기능 상태](/help/release-notes/touch-ui-features-status.md)를 참조하십시오.
 
 터치 지원 UI는 여러 제품에서 Adobe 경험에 일관성을 제공하도록 사용자가 설계되었습니다. 이는 다음을 기반으로 합니다.
 
-* **Coral UI** (CUI) 터치 지원 UI에 대한 Adobe의 시각적 스타일 구현. Coral UI는 제품/프로젝트/웹 애플리케이션이 UI 시각적 스타일을 채택하는 데 필요한 모든 것을 제공합니다.
-* **Granite UI** 구성 요소는 Coral UI로 구축됩니다.
+* **Coral UI**(CUI) 터치 사용 UI에 대한 Adobe의 시각적 스타일 구현. Coral UI는 제품/프로젝트/웹 애플리케이션이 UI 시각적 스타일을 채택하는 데 필요한 모든 것을 제공합니다.
+* **Granite UI** 구성 요소가 Coral UI로 빌드되었습니다.
 
 터치 지원 UI의 기본 원칙은 다음과 같습니다.
 
@@ -68,7 +68,7 @@ Adobe Experience Manager(AEM)에는 터치 지원 UI와 [반응형 디자인](/h
 * 포함된 테스트 포함
 * 이러한 원칙이 모든 요소 및 구성 요소에 적용되도록 하는 상향식 설계
 
-터치 사용 UI 구조에 대한 자세한 개요는 를 참조하십시오. [AEM 터치 지원 UI의 구조](/help/sites-developing/touch-ui-structure.md).
+터치 사용 UI 구조에 대한 자세한 내용은 [AEM 터치 사용 UI 구조](/help/sites-developing/touch-ui-structure.md)를 참조하십시오.
 
 ## AEM 기술 스택 {#aem-technology-stack}
 
@@ -92,7 +92,7 @@ Granite는 Adobe의 Open Web Stack으로, 다음을 포함한 다양한 구성 �
 >
 >Granite는 Adobe 내에서 개방형 개발 프로젝트로 운영됩니다. 코드, 토론 및 문제에 대한 기여는 회사 전체에서 이루어집니다.
 >
->그러나 Granite는 **아님** 오픈 소스 프로젝트입니다. 여러 오픈 소스 프로젝트(특히 Apache Sling, Felix, Jackrabbit 및 Lucene)를 기반으로 하지만, Adobe은 공개 프로젝트와 내부 프로젝트 간에 명확한 선을 그립니다.
+>그러나 Granite는 오픈 소스 프로젝트가 **아님**&#x200B;입니다. 여러 오픈 소스 프로젝트(특히 Apache Sling, Felix, Jackrabbit 및 Lucene)를 기반으로 하지만, Adobe은 공개 프로젝트와 내부 프로젝트 간에 명확한 선을 그립니다.
 
 ## Granite UI {#granite-ui}
 
@@ -139,13 +139,13 @@ Granite UI의 클라이언트 서버 통신은 개체가 아닌 하이퍼텍스�
 
 #### 클라이언트측 {#client-side}
 
-이는 작성자가 대화형 웹 앱을 빌드하려는 의도를 표현할 수 있도록 제공되는 HTML 어휘의 확장을 사용합니다. 이는 과 유사한 접근 방식입니다. [와이아리아](https://www.w3.org/TR/wai-aria/) 및 [마이크로포맷](https://microformats.org/).
+이는 작성자가 대화형 웹 앱을 빌드하려는 의도를 표현할 수 있도록 제공되는 HTML 어휘의 확장을 사용합니다. 이는 [WAI-ARIA](https://www.w3.org/TR/wai-aria/) 및 [microformats](https://microformats.org/)에 대한 유사한 접근 방식입니다.
 
 주로 클라이언트측에서 실행되는 JS 및 CSS 코드로 해석되는 상호 작용 패턴(예: 양식을 비동기적으로 제출)의 컬렉션으로 구성됩니다. 클라이언트측의 역할은 상호 작용을 위한 마크업(서버에서 하이퍼미디어 어포던스로 제공됨)을 향상시키는 것입니다.
 
 클라이언트측은 어떤 서버 기술과도 독립적입니다. 서버가 적절한 마크업을 제공하는 한 클라이언트측은 자신의 역할을 수행할 수 있습니다.
 
-현재 JS 및 CSS 코드는 Granite로 제공됩니다 [clientlibs](/help/sites-developing/clientlibs.md) 카테고리 아래에 있는:
+현재 JS 및 CSS 코드는 범주 아래에 Granite [clientlibs](/help/sites-developing/clientlibs.md)(으)로 전달됩니다.
 
 `granite.ui.foundation and granite.ui.foundation.admin`
 
@@ -155,7 +155,7 @@ Granite UI의 클라이언트 서버 통신은 개체가 아닌 하이퍼텍스�
 
 #### 서버측 {#server-side}
 
-이는 작성자가 다음과 같은 작업을 수행할 수 있도록 하는 슬링 구성 요소 컬렉션으로 구성됩니다 *작성* 웹 앱 빠른. 개발자는 구성 요소를 개발하고 작성자는 구성 요소를 웹 앱으로 어셈블합니다. 서버측의 역할은 하이퍼미디어 어포던스(마크업)를 클라이언트에게 제공하는 것이다.
+이는 작성자가 웹 앱을 빠르게 *작성*&#x200B;할 수 있도록 하는 슬링 구성 요소 컬렉션으로 구성됩니다. 개발자는 구성 요소를 개발하고 작성자는 구성 요소를 웹 앱으로 어셈블합니다. 서버측의 역할은 하이퍼미디어 어포던스(마크업)를 클라이언트에게 제공하는 것이다.
 
 현재 구성 요소는 다음 위치의 Granite 저장소에 있습니다.
 
@@ -200,7 +200,7 @@ Granite UI와 ExtJS(클래식 UI에 사용됨) 간의 차이점도 관심 대상
 
 ### Granite UI Foundation 구성 요소 {#granite-ui-foundation-components}
 
-다음 [Granite UI Foundation 구성 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 모든 UI 구축에 필요한 기본 구성 요소를 제공하십시오. 여기에는 다음과 같은 항목이 포함됩니다.
+[Granite UI 기초 구성 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)는 UI 구축에 필요한 기본 구성 요소를 제공합니다. 여기에는 다음과 같은 항목이 포함됩니다.
 
 * 버튼
 * 하이퍼링크
@@ -257,7 +257,7 @@ Granite UI를 사용하도록 ExtJS 코드를 업그레이드할 때 다음 목�
 
 ### Granite UI 관리 구성 요소 {#granite-ui-administration-components}
 
-다음 [Granite UI 관리 구성 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 모든 관리 애플리케이션에서 구현할 수 있는 일반 구성 요소를 제공하기 위해 foundation 구성 요소를 기반으로 빌드합니다. 여기에는 다음과 같은 것들이 포함됩니다.
+[Granite UI 관리 구성 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)는 모든 관리 응용 프로그램에서 구현할 수 있는 일반 구성 요소를 제공하기 위해 기초 구성 요소를 기반으로 합니다. 여기에는 다음과 같은 것들이 포함됩니다.
 
 * 전역 탐색 막대
 * 레일(스켈레톤)
@@ -314,7 +314,7 @@ HTML 요소는 모든 기본 UI 요소(탐색 막대, 버튼, 메뉴, 레일 등
 
 가장 기본적인 수준에서 HTML 요소는 전용 클래스 이름이 있는 HTML 태그입니다. 보다 복잡한 요소는 여러 태그로 구성될 수 있으며, 특정 방식으로 서로 내부에 중첩될 수 있습니다.
 
-CSS를 사용하여 실제 모양과 느낌을 제공합니다. 모양과 느낌을 쉽게 사용자 지정할 수 있도록 하기 위해(예: 브랜딩의 경우) 실제 스타일 값은 [간단히](https://lesscss.org/) 런타임 중 전처리기입니다.
+CSS를 사용하여 실제 모양과 느낌을 제공합니다. 모양과 느낌을 쉽게 사용자 지정할 수 있도록(예: 브랜딩의 경우) 실제 스타일 값은 런타임 중에 [LESS](https://lesscss.org/) 프리 프로세서에 의해 확장되는 변수로 선언됩니다.
 
 목적:
 
@@ -323,7 +323,7 @@ CSS를 사용하여 실제 모양과 느낌을 제공합니다. 모양과 느낌
 
 구현:
 
-* HTML에서 영감을 얻은 스타일 태그 [Bootstrap](https://twitter.github.com/bootstrap/)
+* [Bootstrap](https://twitter.github.com/bootstrap/)에서 영감을 얻은 스타일의 태그 HTML
 * 클래스는 LESS 파일에 정의됩니다
 * 아이콘은 글꼴 스프라이트로 정의됩니다
 
@@ -360,24 +360,24 @@ CSS를 사용하여 실제 모양과 느낌을 제공합니다. 모양과 느낌
 
 ### 요소 플러그인 {#element-plugins}
 
-대부분의 HTML 요소는 팝업 메뉴 열기 및 닫기와 같은 일종의 동적 동작을 표시해야 합니다. JavaScript를 사용하여 DOM을 조작하여 이러한 작업을 수행하는 요소 플러그인의 역할입니다.
+대부분의 HTML 요소는 팝업 메뉴 열기 및 닫기와 같은 일종의 동적 동작을 표시해야 합니다. JavaScript을 사용하여 DOM을 조작하여 이러한 작업을 수행하는 요소 플러그인의 역할입니다.
 
 플러그인은 다음 중 하나입니다.
 
-* 특정 DOM 요소에서 작동하도록 디자인되었습니다. 예를 들어 대화 상자 플러그인은 다음을 찾을 것으로 예상합니다 `DIV class=dialog`
-* 일반적인 기능. 예를 들어 레이아웃 관리자는 다음 목록에 대한 레이아웃을 제공합니다. `DIV` 또는 `LI` 요소
+* 특정 DOM 요소에서 작동하도록 디자인되었습니다. 예를 들어 대화 상자 플러그인은 `DIV class=dialog`을(를) 찾을 것으로 예상합니다.
+* 일반적인 기능. 예를 들어 레이아웃 관리자는 `DIV` 또는 `LI` 요소의 모든 목록에 대한 레이아웃을 제공합니다
 
 플러그인 동작은 다음 중 하나를 수행하여 매개 변수를 사용하여 사용자 정의할 수 있습니다.
 
 * JavaScript 호출을 사용하여 매개 변수 전달
-* 전용 사용 `data-*` HTML 마크업에 연결된 속성
+* HTML 마크업에 연결된 전용 `data-*` 특성 사용
 
 개발자는 모든 플러그인에 대해 최상의 접근 방식을 선택할 수 있지만 경험상 규칙은 다음과 같습니다.
 
-* `data-*` HTML 레이아웃과 관련된 옵션의 속성입니다. 예를 들어 열의 수를 지정하려면
+* HTML 레이아웃과 관련된 옵션에 대한 `data-*` 특성입니다. 예를 들어 열의 수를 지정하려면
 * 데이터와 관련된 기능에 대한 API 옵션/클래스. 예를 들어 표시할 항목 목록 구성
 
-양식 유효성 검사를 구현하는 데 동일한 개념을 사용합니다. 유효성을 검사하려는 요소의 경우 필수 입력 양식을 사용자 지정으로 지정해야 합니다 `data-*` 특성. 그런 다음 이 속성은 유효성 검사 플러그인에 대한 옵션으로 사용됩니다.
+양식 유효성 검사를 구현하는 데 동일한 개념을 사용합니다. 유효성을 검사하려는 요소의 경우 필수 입력 양식을 사용자 지정 `data-*` 특성으로 지정해야 합니다. 그런 다음 이 속성은 유효성 검사 플러그인에 대한 옵션으로 사용됩니다.
 
 >[!NOTE]
 >
@@ -393,9 +393,9 @@ CSS를 사용하여 실제 모양과 느낌을 제공합니다. 모양과 느낌
 구현:
 
 * 특정 DOM 요소에 연결된 jQuery 플러그인
-* 사용 `data-*` 동작을 사용자 지정할 속성
+* `data-*` 특성을 사용하여 동작 사용자 지정
 
-예제 마크업의 추출(데이터로 지정된 옵션 참고)&#42; 속성):
+예제 마크업의 추출(data-&#42; 특성으로 지정된 옵션 참고):
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
@@ -429,7 +429,7 @@ $('.cards').cardlayout ();
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-다음 `cardLayout` 플러그인은 동봉된 내용을 펼칩니다. `UL` 요소는 각 높이를 기반으로 하고 부모의 너비도 고려합니다.
+`cardLayout` 플러그인은 각각의 높이를 기반으로 둘러싸인 `UL` 요소를 레이아웃하며 부모의 너비도 고려합니다.
 
 ### HTML 요소 위젯 {#html-elements-widgets}
 

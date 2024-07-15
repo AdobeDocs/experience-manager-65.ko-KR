@@ -72,7 +72,7 @@ AEM Forms에서는 양식 제출에 필요한 기본 성공 사례와 오류 핸
 위치:
 
 * `errorCausedBy`에서는 실패 이유에 대해 설명합니다.
-* `errors` 유효성 검사 오류 메시지와 함께 유효성 검사 기준에 실패한 필드의 SOM 식을 언급하십시오.
+* `errors`에서 유효성 검사 기준에 실패한 필드의 SOM 식을 유효성 검사 오류 메시지와 함께 언급합니다.
 * AEM을 통해 추가된 `originCode` 필드는 외부 서비스에서 반환된 http 상태 코드를 포함합니다.
 * AEM을 통해 추가된 `originMessage`필드는 외부 서비스에서 반환된 원시 오류 데이터를 포함합니다.
 
@@ -115,7 +115,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 * `detail (optional)`는 필요한 경우 실패에 대한 추가 세부 정보를 제공합니다.
 * `instance (optional)`는 실패와 연결된 인스턴스 또는 식별자를 나타내고 특정 실패 발생을 추적하거나 식별하는 데 도움을 줍니다.
 * `validationErrors (required)`에는 유효성 검사 오류에 대한 정보가 포함됩니다. 다음 필드가 포함됩니다.
-   * `fieldname` 은 유효성 검사 기준에 실패한 필드의 SOM 식을 언급합니다.
+   * `fieldname`은(는) 유효성 검사 기준에 실패한 필드의 SOM 식을 언급합니다.
    * `dataRef`는 유효성 검사에 실패한 필드의 JSON 경로 또는 XPath를 나타냅니다.
    * `details`에는 잘못된 필드와 함께 유효성 검사 오류 메시지가 포함됩니다.
 * AEM을 통해 추가된 `originCode (optional)` 필드는 외부 서비스에서 반환된 http 상태 코드를 포함합니다.
@@ -145,9 +145,9 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
           ]}
   ```
 
-  필드를 탭하고 을(를) 선택하여 적응형 양식에 있는 모든 필드의 SOM 표현식을 볼 수 있습니다. **[!UICONTROL SOM 표현식 보기]**.
+  필드를 탭하고 **[!UICONTROL SOM 표현식 보기]**&#x200B;를 선택하여 적응형 양식에서 모든 필드의 SOM 표현식을 볼 수 있습니다.
 
-  ![사용자 지정 오류 처리기의 오류 응답을 표시하는 적응형 양식 필드의 일부 표현식](/help/forms/using/assets/custom-error-handler-somexpression.png)
+  ![사용자 지정 오류 처리기에서 오류 응답을 표시하는 적응형 양식 필드의 일부 식](/help/forms/using/assets/custom-error-handler-somexpression.png)
 
 +++
 
@@ -171,7 +171,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
       ]}
   ```
 
-  ![사용자 지정 오류 처리기에서 오류 응답을 표시하는 적응형 양식 필드의 데이터 참조](/help/forms/using/assets/custom-errorhandler-dataref.png)
+  사용자 지정 오류 처리기에서 오류 응답을 표시하는 적응형 양식 필드의 ![데이터 참조](/help/forms/using/assets/custom-errorhandler-dataref.png)
 
 양식 구성 요소의 **[!UICONTROL 속성]** 창에서 dataRef 값을 볼 수 있습니다.
 
@@ -181,8 +181,8 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 적응형 Forms에서 사용자 지정 오류 핸들러를 사용하기 전에
 
-* 에 대한 기본 지식 [사용자 지정 함수 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
-* 의 최신 릴리스 설치 [Apache Maven](https://maven.apache.org/download.cgi).
+* [사용자 지정 함수를 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)에 대한 기본 지식입니다.
+* [Apache Maven](https://maven.apache.org/download.cgi)의 최신 릴리스를 설치하십시오.
 
 
 ## 규칙 편집기를 통해 오류 핸들러 추가 {#add-error-handler-using-rule-editor}
@@ -205,7 +205,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 오류 응답이 표준 스키마나 서버측 유효성 검사 실패에 있는 경우, 기본 오류 핸들러를 지원하여 오류 응답을 필드에 표시합니다.
 [규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 기본 오류 핸들러를 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 기본 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인합니다(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`). 규칙 편집기의 서비스 호출 작업을 통해 기본 오류 핸들러를 추가하려면 다음 단계를 실행합니다.
 
-1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택하고 을 선택합니다 **[!UICONTROL 규칙 편집기]** 규칙 편집기를 엽니다.
+1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택한 다음 **[!UICONTROL 규칙 편집기]**&#x200B;를 선택하여 규칙 편집기를 엽니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 규칙의 **날짜** 섹션에서 조건을 만듭니다. 예: **펫 ID 필드의 날짜[ 이름]**&#x200B;이 변경되었습니다. 선택이 **상태 선택** 드롭다운 목록에서 변경되었습니다.
 1. **Then** 섹션의 **작업 선택** 드롭다운 목록에서 **[!UICONTROL 호출 서비스]**&#x200B;를 선택합니다.
@@ -230,7 +230,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 언급된 작업 외에도, 사용자 정의 오류 핸들러를 사용하여 특정 사용자 요구 사항을 충족하는 사용자 정의 함수를 실행할 수 있습니다.
 
-사용자 정의 오류 핸들러는 외부 서비스에서 반환된 오류에 응답하고, 최종 사용자에게 사용자 정의된 응답을 게재하도록 설계된 함수(클라이언트 라이브러리)입니다. 주석 `@errorHandler`가 포함된 모든 클라이언트 라이브러리는 사용자 정의 오류 핸들러 함수로 간주됩니다. 이 주석은에 지정된 오류 처리기 함수를 식별하는 데 도움이 됩니다. `.js` 파일.
+사용자 정의 오류 핸들러는 외부 서비스에서 반환된 오류에 응답하고, 최종 사용자에게 사용자 정의된 응답을 게재하도록 설계된 함수(클라이언트 라이브러리)입니다. 주석 `@errorHandler`가 포함된 모든 클라이언트 라이브러리는 사용자 정의 오류 핸들러 함수로 간주됩니다. 이 주석은 `.js` 파일에 지정된 오류 처리기 함수를 식별하는 데 도움이 됩니다.
 
 [규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 사용자 정의 오류 핸들러를 만들고 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 사용자 정의 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인하십시오(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`).
 
@@ -243,28 +243,28 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 사용자 정의 오류 함수를 만들려면 다음 단계를 수행합니다.
 
-1. 에 로그인 `http://server:port/crx/de/index.jsp#`.
-1. `/apps` 폴더 아래에 폴더를 만듭니다. 예를 들어 이라는 폴더를 만듭니다. `experience-league`.
+1. `http://server:port/crx/de/index.jsp#`에 로그인합니다.
+1. `/apps` 폴더 아래에 폴더를 만듭니다. 예를 들어 `experience-league`(으)로 이름이 지정된 폴더를 만듭니다.
 1. 변경 사항을 저장합니다.
-1. 생성된 폴더로 이동하고 유형의 노드를 만듭니다. `cq:ClientLibraryFolder` 다음으로: `clientlibs`.
-1. 새로 생성된 로 이동합니다. `clientlibs` 폴더 및 추가 `allowProxy` 및 `categories` 속성:
+1. 만든 폴더로 이동하여 `cq:ClientLibraryFolder` 유형의 노드를 `clientlibs`(으)로 만듭니다.
+1. 새로 만든 `clientlibs` 폴더로 이동하여 `allowProxy` 및 `categories` 속성을 추가하십시오.
 
    ![사용자 지정 라이브러리 노드 속성](/help/forms/using/assets/customlibrary-properties.png)
 
    >[!NOTE]
    >
-   > 대신 모든 이름을 제공할 수 있습니다. `customfunctionsdemo`.
+   > `customfunctionsdemo` 대신 모든 이름을 제공할 수 있습니다.
 
 1. 변경 사항을 저장합니다.
 
-1. 라는 폴더 만들기 `js` 다음 아래에 `clientlibs` 폴더를 삭제합니다.
-1. 라는 JavaScript 파일 만들기 `functions.js` 다음 아래에 `js` 폴더
-1. 라는 파일 만들기 `js.txt` 다음 아래에 `clientlibs` 폴더를 삭제합니다.
+1. `clientlibs` 폴더 아래에 `js` 폴더를 만듭니다.
+1. `js` 폴더 아래에 `functions.js`(이)라는 JavaScript 파일을 만듭니다.
+1. `clientlibs` 폴더 아래에 `js.txt` 파일을 만듭니다.
 1. 변경 사항을 저장합니다.
 생성된 폴더 구조 형태는 다음과 같습니다.
 
    ![클라이언트 라이브러리 폴더 구조가 생성됨](/help/forms/using/assets/customclientlibrary_folderstructure.png)
-1. 를 두 번 클릭합니다. `functions.js` 파일을 입력하여 편집기를 엽니다. 파일은 사용자 정의 오류 핸들러의 코드로 구성됩니다.
+1. `functions.js` 파일을 두 번 클릭하여 편집기를 엽니다. 파일은 사용자 정의 오류 핸들러의 코드로 구성됩니다.
 다음 코드를 JavaScript 파일에 추가하여 REST 서비스 엔드포인트가 수신한 응답과 헤더를 브라우저 콘솔에 표시해 보겠습니다.
 
    ```javascript
@@ -287,8 +287,8 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
    `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
 
 
-1. 저장 `function.js`.
-1. 다음으로 이동 `js.txt` 및 다음 코드를 추가합니다.
+1. `function.js`을(를) 저장합니다.
+1. `js.txt`(으)로 이동하여 다음 코드를 추가합니다.
 
    ```javascript
        #base=js
@@ -305,11 +305,11 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 ![적응형 양식 컨테이너 구성에서 클라이언트 라이브러리의 이름 추가](/help/forms/using/assets/client-library-category-name.png)
 
-이 경우 클라이언트 라이브러리 이름은 다음과 같이 제공됩니다. `customfunctionsdemo` 다음에서 `.content.xml` 파일.
+이 경우 클라이언트 라이브러리 이름은 `.content.xml` 파일에서 `customfunctionsdemo`(으)로 제공됩니다.
 
 **[!UICONTROL 규칙 편집기의 호출 서비스]** 작업을 통해 사용자 정의 오류 핸들러를 사용하려면
 
-1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택하고 을 선택합니다 **[!UICONTROL 규칙 편집기]** 규칙 편집기를 엽니다.
+1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택한 다음 **[!UICONTROL 규칙 편집기]**&#x200B;를 선택하여 규칙 편집기를 엽니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 규칙의 **날짜** 섹션에서 조건을 만듭니다. 예: **[펫 ID 필드 이름]**&#x200B;이 변경되면 **상태 선택** 드롭다운 목록에서 선택이 **변경됩니다**.
 1. **Then** 섹션의 **작업 선택** 드롭다운 목록에서 **[!UICONTROL 호출 서비스]**&#x200B;를 선택합니다.
@@ -318,7 +318,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 1. **[!UICONTROL 오류 핸들러]** 섹션에서 **[!UICONTROL 사용자 정의 오류 핸들러]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
-![오류 응답을 처리하기 위해 양식에 사용자 지정 오류 처리기 추가](/help/forms/using/assets/custom-error-handler.png)
+![오류 응답을 처리할 양식에 사용자 지정 오류 처리기를 추가](/help/forms/using/assets/custom-error-handler.png)
 
 이 규칙의 결과로 얻은 **펫 ID**&#x200B;에 대한 입력 값을 사용하여 REST 엔드포인트에서 호출한 외부 서비스를 통해 **펫 이름**&#x200B;의 유효성 검사를 확인합니다. 데이터 소스 기반의 유효성 검사 기준이 실패할 경우, 오류 메시지가 필드 수준에 표시됩니다.
 

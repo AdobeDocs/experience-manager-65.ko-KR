@@ -29,8 +29,8 @@ ht-degree: 1%
 복합 구성 요소 사용 사례를 지원하기 위한 다음 모델에는 다음과 같은 사전 요구 사항이 필요합니다.
 
 * AEM 개발 인스턴스는 샘플 프로젝트로 포트 4502에서 로컬로 실행됩니다.
-* 작동하는 외부 React 앱이 있습니다. [AEM에서 편집할 수 있도록 설정되었습니다.](spa-edit-external.md)
-* React 앱이 AEM 편집기에 로드됩니다. [RemotePage 구성 요소 사용.](spa-remote-page.md)
+* 작업 중인 외부 React 앱 [이(가) AEM에서 편집할 수 있도록 설정되어 있습니다.](spa-edit-external.md)
+* React 앱이 RemotePage 구성 요소를 사용하여 AEM 편집기 [에 로드되었습니다.](spa-remote-page.md)
 
 ## SPA에 복합 구성 요소 추가 {#adding-composite-components}
 
@@ -47,13 +47,13 @@ AEM 내의 SPA 구현에 따라 복합 구성 요소를 구현하기 위한 세 
 먼저 합성 구성 요소를 구성할 구성 요소, 즉 이미지와 해당 텍스트에 대한 구성 요소를 만듭니다.
 
 1. AEM 프로젝트에서 텍스트 구성 요소를 만듭니다.
-1. 해당 항목 추가 `resourceType` 구성 요소의 프로젝트에서 `editConfig` 노드.
+1. 구성 요소의 `editConfig` 노드에 있는 프로젝트에서 해당 `resourceType`을(를) 추가합니다.
 
    ```text
     resourceType: 'wknd-spa/components/text' 
    ```
 
-1. 사용 `withMappable` 구성 요소에 대한 편집을 활성화하려면 도우미를 사용하십시오.
+1. `withMappable` 도우미를 사용하여 구성 요소에 대한 편집을 사용하도록 설정하십시오.
 
    ```text
    export const AEMText = withMappable(Text, TextEditConfig); 
@@ -88,7 +88,7 @@ export const Text = ({ cqPath, richText, text }) => {
 export const AEMText = withMappable(Text, TextEditConfig);
 ```
 
-유사한 방식으로 이미지 구성 요소를 만든 다음 와 결합할 수 있습니다 `AEMText` 구성 요소를 새 카드 구성 요소로, 이미지 및 텍스트 구성 요소를 하위 구성 요소로 사용합니다.
+유사한 방법으로 이미지 구성 요소를 만든 경우 이미지 및 텍스트 구성 요소를 하위 구성 요소로 사용하여 `AEMText` 구성 요소와 결합하여 새 카드 구성 요소로 만들 수 있습니다.
 
 ```javascript
 import React from 'react';
@@ -121,7 +121,7 @@ function Home() {
 }
 ```
 
-편집기에 텍스트 및 이미지에 대한 빈 자리 표시자가 표시됩니다. 편집기를 사용하여 이러한 요소에 대한 값을 입력할 때 지정된 페이지 경로(즉, `/content/wknd-spa/home`  에 지정된 이름을 가진 루트 수준에서 `itemPath`.
+편집기에 텍스트 및 이미지에 대한 빈 자리 표시자가 표시됩니다. 편집기를 사용하여 이러한 요소에 대한 값을 입력할 때 지정된 페이지 경로, 즉 `itemPath`에 지정된 이름과 함께 루트 수준의 `/content/wknd-spa/home`에 저장됩니다.
 
 ![편집기의 복합 카드 구성 요소](assets/composite-card.png)
 
@@ -129,11 +129,11 @@ function Home() {
 
 이 경우 카드 구성 요소는 제목 및 이미지 노드가 포함된 AEM 프로젝트에 이미 생성되었습니다. 하위 노드(텍스트 및 이미지)에는 해당 리소스 유형이 있습니다.
 
-![카드 구성 요소의 노드 구조](assets/composite-node-structure.png)
+카드 구성 요소의 ![노드 구조](assets/composite-node-structure.png)
 
 그런 다음 SPA에 추가하고 콘텐츠를 검색할 수 있습니다.
 
-1. 이에 대한 해당 구성 요소를 SPA에서 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 동일한 항목을 사용합니다 `AEMText` 및 `AEMImage` 상세화된 구성 요소 [앞의 경우에서 이 항목을 참조하십시오.](#component-does-not-exist)
+1. 이에 대한 해당 구성 요소를 SPA에서 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 앞의 [과(와) 동일한 `AEMText` 및 `AEMImage` 구성 요소를 사용합니다.](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
@@ -149,7 +149,7 @@ function Home() {
    MapTo('wknd-spa/components/image')(Image, ImageEditConfig);
    ```
 
-1. 에 대한 컨텐츠가 없기 때문에 `imagecard` 구성 요소에서 카드를 페이지에 추가합니다. AEM의 기존 컨테이너를 SPA에 포함합니다.
+1. `imagecard` 구성 요소에 대한 콘텐츠가 없으므로 카드를 페이지에 추가하십시오. AEM의 기존 컨테이너를 SPA에 포함합니다.
    * AEM 프로젝트에 이미 컨테이너가 있는 경우 SPA에 이 내용을 대신 포함하고 AEM의 컨테이너에 구성 요소를 대신 추가할 수 있습니다.
    * 카드 구성 요소가 SPA의 해당 리소스 유형에 매핑되어 있는지 확인합니다.
 
@@ -159,9 +159,9 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 생성된 항목 추가 `wknd-spa/components/imagecard` 구성 요소를 컨테이너 구성 요소에 대해 허용된 구성 요소로 변환 [페이지 템플릿에서 참조할 수 있습니다.](/help/sites-authoring/templates.md)
+1. 만든 `wknd-spa/components/imagecard` 구성 요소를 페이지 템플릿의 컨테이너 구성 요소 [에 대해 허용되는 구성 요소에 추가하십시오.](/help/sites-authoring/templates.md)
 
-이제 `imagecard` 구성 요소를 AEM 편집기의 컨테이너에 직접 추가할 수 있습니다.
+이제 `imagecard` 구성 요소를 AEM 편집기의 컨테이너에 바로 추가할 수 있습니다.
 
 ![편집기의 복합 카드](assets/composite-card.gif)
 
@@ -177,4 +177,4 @@ function Home() {
 
 ![노드 구조의 복합 경로](assets/composite-path.png)
 
-다음 `AEMCard` 구성 요소가 정의된 것과 같습니다. [이전 사용 사례에서 살펴보았습니다.](#content-does-not-exist) 여기에서 AEM 프로젝트의 위 위치에 정의된 콘텐츠는 SPA에 포함됩니다.
+`AEMCard` 구성 요소는 이전 사용 사례에서 정의된 [과(와) 동일합니다.](#content-does-not-exist) AEM 프로젝트의 위 위치에 정의된 콘텐츠가 SPA에 포함되어 있습니다.

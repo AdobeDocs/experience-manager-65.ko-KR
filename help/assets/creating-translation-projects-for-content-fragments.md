@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # 콘텐츠 조각에 대한 번역 프로젝트 만들기 {#creating-translation-projects-for-content-fragments}
 
-에셋 외에도 Adobe Experience Manager(AEM) 에셋은 언어 복사 워크플로를 지원합니다. [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) (변형 포함) 콘텐츠 조각에서 언어 복사 워크플로우를 실행하는 데 추가적인 최적화가 필요하지 않습니다. 각 워크플로우에서는 번역을 위해 전체 콘텐츠 조각이 전송됩니다.
+에셋 외에도 Adobe Experience Manager(AEM) Assets은 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)(변형 포함)에 대한 언어 복사 워크플로우를 지원합니다. 콘텐츠 조각에서 언어 복사 워크플로우를 실행하는 데 추가적인 최적화가 필요하지 않습니다. 각 워크플로우에서는 번역을 위해 전체 콘텐츠 조각이 전송됩니다.
 
 콘텐츠 조각에서 실행할 수 있는 워크플로우 유형은 에셋에 대해 실행하는 워크플로우 유형과 정확히 유사합니다. 또한 각 워크플로우 유형에서 사용할 수 있는 옵션은 에셋의 해당 워크플로우 유형에서 사용할 수 있는 옵션과 일치합니다.
 
@@ -36,18 +36,18 @@ ht-degree: 5%
 
 만들기 및 번역 워크플로에는 다음 옵션이 포함되어 있습니다. 각 옵션과 관련된 절차 단계는 자산에 대한 해당 옵션과 관련된 절차 단계와 유사합니다.
 
-* 구조만 생성: 절차 단계는 다음을 참조하십시오. [자산에 대해서만 구조 만들기](translation-projects.md#create-structure-only).
-* 번역 프로젝트 만들기: 절차 단계는 다음을 참조하십시오. [에셋에 대한 번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project).
-* 기존 번역 프로젝트에 추가: 절차 단계는 [에셋의 기존 번역 프로젝트에 추가](translation-projects.md#add-to-existing-translation-project).
+* 구조만 만들기: 절차 단계는 [자산에 대해서만 구조 만들기](translation-projects.md#create-structure-only)를 참조하십시오.
+* 번역 프로젝트 만들기: 절차 단계는 [에셋에 대한 번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project)를 참조하십시오.
+* 기존 번역 프로젝트에 추가: 절차 단계는 [에셋의 기존 번역 프로젝트에 추가](translation-projects.md#add-to-existing-translation-project)를 참조하십시오.
 
 ## 언어 사본 업데이트 워크플로우 {#update-language-copies-workflow}
 
 언어 사본 업데이트 워크플로에는 다음 옵션이 포함됩니다. 각 옵션과 관련된 절차 단계는 자산에 대한 해당 옵션과 관련된 절차 단계와 유사합니다.
 
-* 번역 프로젝트 만들기: 절차 단계는 다음을 참조하십시오. [에셋에 대한 번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project) (워크플로우 업데이트).
-* 기존 번역 프로젝트에 추가: 절차 단계는 [에셋의 기존 번역 프로젝트에 추가](translation-projects.md#add-to-existing-translation-project) (워크플로우 업데이트).
+* 번역 프로젝트 만들기: 절차 단계는 [에셋에 대한 번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project)(워크플로우 업데이트)를 참조하십시오.
+* 기존 번역 프로젝트에 추가: 절차 단계는 [에셋에 대한 기존 번역 프로젝트에 추가](translation-projects.md#add-to-existing-translation-project)(워크플로우 업데이트)를 참조하십시오.
 
-에셋에 대한 임시 사본을 만드는 방법과 유사하게 조각에 대한 임시 언어 사본을 만들 수도 있습니다. 자세한 내용은 [에셋용 임시 언어 사본 만들기](translation-projects.md#creating-temporary-language-copies).
+에셋에 대한 임시 사본을 만드는 방법과 유사하게 조각에 대한 임시 언어 사본을 만들 수도 있습니다. 자세한 내용은 [자산에 대한 임시 언어 사본 만들기](translation-projects.md#creating-temporary-language-copies)를 참조하십시오.
 
 ## 혼합 미디어 조각 번역 {#translating-mixed-media-fragments}
 
@@ -57,20 +57,20 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
 혼합 미디어를 포함하는 콘텐츠 조각을 번역하려면 먼저 기본 번역 프레임워크를 편집하여 콘텐츠 조각과 연결된 인라인 에셋 및 컬렉션의 번역을 활성화하십시오.
 
-1. AEM 로고를 클릭하고 다음으로 이동 **[!UICONTROL 도구 > 배포 > Cloud Service]**.
-1. 찾기 **[!UICONTROL 번역 통합]** 아래에 **[!UICONTROL Adobe Marketing Cloud]**, 및 클릭 **[!UICONTROL 구성 표시]**.
+1. AEM 로고를 클릭하고 **[!UICONTROL 도구 > 배포 > Cloud Service]**(으)로 이동합니다.
+1. **[!UICONTROL Adobe Marketing Cloud]**&#x200B;에서 **[!UICONTROL 번역 통합]**&#x200B;을 찾은 다음 **[!UICONTROL 구성 표시]**&#x200B;를 클릭합니다.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. 사용 가능한 구성 목록에서 **[!UICONTROL 기본 구성(번역 통합 구성)]** 을(를) 열려면 **[!UICONTROL 기본 구성]** 페이지를 가리키도록 업데이트하는 중입니다.
+1. 사용 가능한 구성 목록에서 **[!UICONTROL 기본 구성(번역 통합 구성)]**&#x200B;을 클릭하여 **[!UICONTROL 기본 구성]** 페이지를 엽니다.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
-1. 클릭 **[!UICONTROL 편집]** 을 클릭하여 **[!UICONTROL 번역 구성]** 대화 상자.
+1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 **[!UICONTROL 번역 구성]** 대화 상자를 표시합니다.
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. 다음 위치로 이동 **[!UICONTROL 에셋]** 탭, 선택 **[!UICONTROL 인라인 미디어 자산 및 관련 컬렉션]** 다음에서 **[!UICONTROL 콘텐츠 조각 에셋 번역]** 목록을 표시합니다. 클릭 **[!UICONTROL 확인]** 변경 내용을 저장합니다.
+1. **[!UICONTROL Assets]** 탭으로 이동한 다음 **[!UICONTROL 콘텐츠 조각 번역 Assets]** 목록에서 **[!UICONTROL 인라인 미디어 Assets 및 관련 컬렉션]**&#x200B;을 선택합니다. **[!UICONTROL 확인]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -78,7 +78,7 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. 다음을 클릭합니다. **[!UICONTROL 자산 삽입]** 아이콘.
+1. **[!UICONTROL 자산 삽입]** 아이콘을 클릭합니다.
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -86,11 +86,11 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
    ![콘텐츠 조각에 에셋 삽입](assets/column-view.png)
 
-1. 다음을 클릭합니다. **[!UICONTROL 콘텐츠 연결]** 아이콘.
+1. **[!UICONTROL 콘텐츠 연결]** 아이콘을 클릭합니다.
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. 클릭 **[!UICONTROL 콘텐츠 연결]**.
+1. **[!UICONTROL 콘텐츠 연결]**&#x200B;을 클릭합니다.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
@@ -98,32 +98,32 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
-1. 콘텐츠 조각을 선택하고 **[!UICONTROL 전역 탐색]** 아이콘.
-1. 선택 **[!UICONTROL 참조]** 을 클릭하여 **[!UICONTROL 참조]** 창.
+1. 콘텐츠 조각을 선택하고 **[!UICONTROL 전역 탐색]** 아이콘을 클릭합니다.
+1. 메뉴에서 **[!UICONTROL 참조]**&#x200B;을(를) 선택하여 **[!UICONTROL 참조]** 창을 표시합니다.
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. 클릭 **[!UICONTROL 언어 복사]** 아래에 **[!UICONTROL 사본]** 언어 사본을 표시합니다.
+1. 언어 사본을 표시하려면 **[!UICONTROL 사본]** 아래의 **[!UICONTROL 언어 사본]**&#x200B;을 클릭하세요.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. 클릭 **[!UICONTROL 만들기 및 번역]** 패널 하단에서 을 표시하여 **[!UICONTROL 만들기 및 번역]** 대화 상자.
+1. 패널 하단에서 **[!UICONTROL 만들기 및 번역]**&#x200B;을 클릭하여 **[!UICONTROL 만들기 및 번역]** 대화 상자를 표시합니다.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
-1. 다음에서 대상 언어를 선택합니다. **[!UICONTROL 타겟 언어]** 목록을 표시합니다.
+1. **[!UICONTROL 대상 언어]** 목록에서 대상 언어를 선택하십시오.
 
    ![chlimage_1-457](assets/chlimage_1-457.png)
 
-1. 에서 번역 프로젝트 유형을 선택합니다. **[!UICONTROL 프로젝트]** 목록을 표시합니다.
+1. **[!UICONTROL 프로젝트]** 목록에서 번역 프로젝트 형식을 선택하십시오.
 
    ![chlimage_1-458](assets/chlimage_1-458.png)
 
-1. 에서 프로젝트의 제목을 지정합니다. **[!UICONTROL 프로젝트 제목]** 상자를 클릭한 다음 **만들기**.
+1. **[!UICONTROL 프로젝트 제목]** 상자에서 프로젝트 제목을 지정한 다음 **만들기**&#x200B;를 클릭합니다.
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
-1. 다음 위치로 이동 **[!UICONTROL 프로젝트]** 을 클릭하고, 만든 번역 프로젝트의 프로젝트 폴더를 엽니다.
+1. **[!UICONTROL 프로젝트]** 콘솔로 이동하여 만든 번역 프로젝트의 프로젝트 폴더를 엽니다.
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
@@ -132,7 +132,7 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
 1. 번역 작업 타일에서 번역할 에셋 수를 확인합니다.
-1. 다음에서 **[!UICONTROL 번역 작업]** 타일을 지정하고 번역 작업을 시작합니다.
+1. **[!UICONTROL 번역 작업]** 타일에서 번역 작업을 시작합니다.
 
    ![chlimage_1-462](assets/chlimage_1-462.png)
 

@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## Java 코드에서 Sling 바인딩 방지 {#avoid-sling-bindings-in-java-code}
 
-슬링 바인딩은 90%의 경우 서비스에 액세스할 수 있는 부적절한 방법입니다. 대신 *@Reference* 또는 *@Inject* 주석.
+슬링 바인딩은 90%의 경우 서비스에 액세스할 수 있는 부적절한 방법입니다. 대신 *@Reference* 또는 *@Inject* 주석을 사용해야 합니다.
 
 ## Java 코드에서 Thread.interrupt 방지 {#avoid-thread-interrupt-in-java-code}
 
-*스레드.인터럽트* 는 Lucene 파일 및 영구 캐시 파일을 포함한 파일을 잘못된 시간에 호출할 때 닫을 수 있으므로 위험합니다.
+*Thread.interrupt*&#x200B;은(는) 잘못된 시간에 호출될 때 Lucene 파일 및 영구 캐시 파일을 포함한 파일을 닫을 수 있으므로 위험합니다.
 
 ## Java 동기화와 ReadWriteLocks 혼용 방지 {#avoid-mixing-java-synchronization-with-readwritelocks}
 

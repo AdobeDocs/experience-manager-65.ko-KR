@@ -22,13 +22,13 @@ ht-degree: 1%
 
 의미 체계 변경에 대해 축소된 코드를 생성하려면 다음 단계를 수행합니다.
 
-1. 복사 `client-html/src/main/webapp/js` 파일 시스템의 src-package에서
+1. 파일 시스템의 src-package에서 `client-html/src/main/webapp/js` 복사
 
    >[!NOTE]
    >
-   >다음을 참조하십시오 [AEM Forms 작업 영역 사용자 정의 소개](/help/forms/using/introduction-customizing-html-workspace.md) 패키지를 참조하십시오.
+   >패키지에 대한 자세한 내용은 [AEM Forms 작업 영역 사용자 지정 소개](/help/forms/using/introduction-customizing-html-workspace.md)를 참조하십시오.
 
-1. 에서 경로 업데이트 `main.js` 추가된/업데이트된 모델/보기에 대해 client-html/src/main/webapp/js 아래에 있습니다.
+1. 추가된/업데이트된 모델/보기에 대해 client-html/src/main/webapp/js 아래에 있는 `main.js`의 경로를 업데이트합니다.
 
    예를 들어, 새로운 Sharequeue 모델, 즉 mySharequeue를 추가하면 변경됩니다.
 
@@ -42,7 +42,7 @@ ht-degree: 1%
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. 업데이트 `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` 에 별칭이 변경/추가된 경우 `main.js`.
+1. `main.js`에 별칭이 변경/추가된 경우 `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,`을(를) 업데이트합니다.
 
    예를 들어, 새로운 Sharequeue 모델, 즉 mySharequeue를 추가하면 변경됩니다.
 

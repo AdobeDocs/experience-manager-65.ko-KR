@@ -31,11 +31,11 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe은 이 기능(리드 및 목록 관리)을 더 강화하지 않을 계획입니다.
->권장 사항은 [Adobe Campaign 및 AEM에 통합](/help/sites-administering/campaign.md).
+>권장 사항은 [Adobe Campaign 및 AEM에 통합](/help/sites-administering/campaign.md)을 사용하는 것입니다.
 
 ## 뉴스레터 목록 만들기 {#creating-a-list-for-the-newsletter}
 
-목록 만들기(예: ) **Geometrixx 뉴스레터** MCM에서 사람들이 구독해야 하는 뉴스레터에 대해 설명합니다. 목록 만들기에 대해서는 다음에 설명되어 있습니다 [목록 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
+구독해야 하는 뉴스레터의 목록(예: **Geometrixx 뉴스레터**)을 MCM으로 만드십시오. 목록 만들기는 [목록 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists)에 설명되어 있습니다.
 
 다음은 목록의 예입니다.
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 사용자가 태그를 구독할 수 있는 뉴스레터 등록 양식을 만듭니다. 샘플 Geometrixx 웹 사이트에서는 양식을 만들 수 있는 뉴스레터 페이지를 Geometrixx 도구 모음에 제공합니다.
 
-나만의 뉴스레터 양식을 만들려면 다음에서 양식을 만드는 방법을 참조하십시오. [Forms 설명서](/help/sites-authoring/default-components.md#form). 뉴스레터는 태그 라이브러리의 태그를 사용합니다. 태그를 더 추가하려면 를 참조하십시오. [태그 관리](/help/sites-authoring/tags.md#tagadministration).
+나만의 뉴스레터 양식을 만들려면 [Forms 설명서](/help/sites-authoring/default-components.md#form)에서 양식 만들기에 대한 정보를 참조하세요. 뉴스레터는 태그 라이브러리의 태그를 사용합니다. 태그를 추가하려면 [태그 관리](/help/sites-authoring/tags.md#tagadministration)를 참조하십시오.
 
 다음 예제에서 숨김 필드는 최소한의 정보(이메일)만 제공합니다. 또한 나중에 필드를 추가할 수 있지만 이는 전환율에 영향을 줍니다.
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
    ![mcm_newsletterpage](assets/mcm_newsletterpage.png)
 
-1. 클릭 **편집** 감사 페이지로 이동하도록 양식을 구성하는 양식 구성 요소( 참조) [감사 인사 페이지 만들기](#creating-a-thank-you-page)).
+1. 양식 구성 요소에서 **편집**&#x200B;을 클릭하여 감사 페이지로 이동하도록 양식을 구성합니다([감사 페이지 만들기](#creating-a-thank-you-page) 참조).
 
    ![dc_formstart_thankyou](assets/dc_formstart_thankyou.png)
 
@@ -65,23 +65,23 @@ ht-degree: 0%
 
 ### 감사 인사 페이지 만들기 {#creating-a-thank-you-page}
 
-사용자가 **지금 가입**&#x200B;감사 인사 페이지가 자동으로 열립니다. Geometrixx 뉴스레터 페이지에서 감사 인사 페이지를 만듭니다. 뉴스레터 양식을 작성한 후 양식 구성 요소를 편집하고 감사 페이지에 경로를 추가합니다.
+사용자가 **지금 구독**&#x200B;을 클릭하면 감사 페이지가 자동으로 열립니다. Geometrixx 뉴스레터 페이지에서 감사 인사 페이지를 만듭니다. 뉴스레터 양식을 작성한 후 양식 구성 요소를 편집하고 감사 페이지에 경로를 추가합니다.
 
-요청을 제출하면 사용자가으로 이동합니다. **감사합니다.** 이메일을 받게 되는 페이지입니다. 이 감사 페이지는 /content/geometrixx/en/toolbar/newsletter/thank_you에 만들어졌습니다.
+요청을 제출하면 사용자가 **감사합니다** 페이지로 이동한 후 이메일을 받게 됩니다. 이 감사 페이지는 /content/geometrixx/en/toolbar/newsletter/thank_you에 만들어졌습니다.
 
-![mcm_newsletter_thankyupage](assets/mcm_newsletter_thankyoupage.png)
+![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
 
 ### 티저 추가 {#adding-teasers}
 
-추가 [티저](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) 특정 대상을 타깃팅할 수 있습니다. 예를 들어 감사 인사 페이지 및 뉴스레터 등록 페이지에 티저를 추가할 수 있습니다.
+특정 대상을 타깃팅하려면 [티저](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)를 추가하십시오. 예를 들어 감사 인사 페이지 및 뉴스레터 등록 페이지에 티저를 추가할 수 있습니다.
 
 티저를 추가하여 효과적인 뉴스레터 랜딩 페이지를 만들려면:
 
-1. 등록 선물의 티저 단락을 만듭니다. 선택 **첫 번째** 전략으로 어떤 선물을 받게 될지 알려주는 텍스트를 포함합니다.
+1. 등록 선물의 티저 단락을 만듭니다. 전략으로 **처음**&#x200B;을(를) 선택하고 받을 선물을 알려주는 텍스트를 포함하십시오.
 
    ![dc_teaser_thankyou](assets/dc_teaser_thankyou.png)
 
-1. 감사 인사 페이지의 티저 단락을 만듭니다. 선택 **첫 번째** 를 전략으로 사용하고 선물을 준비 중임을 나타내는 텍스트를 포함합니다.
+1. 감사 인사 페이지의 티저 단락을 만듭니다. 전략으로 **처음**&#x200B;을(를) 선택하고 선물을 보내는 중임을 나타내는 텍스트를 포함하십시오.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
@@ -91,4 +91,4 @@ ht-degree: 0%
 
 MCM의 뉴스레터 기능을 통해 페이지에 대한 변경 사항을 푸시합니다. 그런 다음 업데이트된 콘텐츠를 구독자에게 푸시합니다.
 
-다음을 참조하십시오 [뉴스레터 보내기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters).
+[뉴스레터 보내기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)를 참조하십시오.

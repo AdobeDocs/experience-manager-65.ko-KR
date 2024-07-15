@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Microsoft Windows 7의 Internet Explorer 9에서 필터를 만들 때 발생하는 문제 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-사전 정의된 보고서에 대한 필터를 만드는 경우 **Internet Explorer 9** 대상 **Microsoft Windows 7** 환경:
+미리 정의된 보고서에 대한 필터를 만드는 경우 **Microsoft Windows 7** 환경의 **Internet Explorer 9**&#x200B;에서 다음 문제가 간헐적으로 발생합니다.
 
 * 값 필드의 드롭다운 목록에는 값 대신 고유 식별자가 표시됩니다.
 * 값 필드의 Calendar 컨트롤에는 일본어 문자가 표시됩니다.

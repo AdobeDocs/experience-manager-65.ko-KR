@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Commerce integration framework을 사용한 AEM 및 Adobe Commerce(Magento) 통합 {#aem-commerce-framework}
 
-Experience Manager과 Adobe Commerce은 Commerce integration framework(CIF)를 사용하여 원활하게 통합됩니다. CIF을 사용하면 AEM이 Adobe Commerce을 사용하여 상거래 인스턴스에 직접 액세스하고 통신할 수 있습니다. [GRAPHQL API](https://devdocs.magento.com/guides/v2.4/graphql/).
+Experience Manager과 Adobe Commerce은 Commerce integration framework(CIF)를 사용하여 원활하게 통합됩니다. CIF을 사용하면 AEM이 Adobe Commerce의 [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/)를 사용하여 상거래 인스턴스에 직접 액세스하고 통신할 수 있습니다.
 
 >[!NOTE]
 >
@@ -28,20 +28,20 @@ Experience Manager과 Adobe Commerce은 Commerce integration framework(CIF)를 �
 ![CIF 아키텍처 개요](../assets/AEM_Magento_Architecture.png)
 
 CIF 내에서 서버측 및 클라이언트측 통신 패턴을 지원합니다.
-서버 측 API 호출은 제네릭 빌드 기능을 사용하여 구현됩니다 [GraphQL 클라이언트](https://github.com/adobe/commerce-cif-graphql-client) 과 조합해서 [생성된 데이터 모델 세트](https://github.com/adobe/commerce-cif-magento-graphql) 상거래 GraphQL 스키마용. 또한 GraphQL 쿼리 또는 GQL 포맷 돌연변이를 사용할 수 있습니다.
+서버측 API 호출은 상거래 GraphQL 스키마에 대한 [생성된 데이터 모델 집합](https://github.com/adobe/commerce-cif-magento-graphql)과(와) 함께 빌트인, 일반 [GraphQL 클라이언트](https://github.com/adobe/commerce-cif-graphql-client)를 사용하여 구현됩니다. 또한 GraphQL 쿼리 또는 GQL 포맷 돌연변이를 사용할 수 있습니다.
 
-클라이언트측 구성 요소의 경우 다음을 사용하여 빌드 [반응](https://reactjs.org/), [Apollo 클라이언트](https://www.apollographql.com/docs/react/) 를 사용합니다.
+[React](https://reactjs.org/)을 사용하여 빌드되는 클라이언트측 구성 요소의 경우 [Apollo Client](https://www.apollographql.com/docs/react/)이 사용됩니다.
 
 ## AEM CIF 핵심 구성 요소 아키텍처 {#cif-core-components}
 
 ![AEM CIF 핵심 구성 요소 아키텍처](../assets/cif-component-architecture.jpg)
 
-[AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) 다음과 같이 매우 유사한 디자인 패턴 및 모범 사례를 따르십시오. [AEM WCM 코어 구성 요소](https://github.com/adobe/aem-core-wcm-components).
+[AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components)와(과) 매우 유사한 디자인 패턴 및 모범 사례를 따릅니다.
 
 AEM CIF 핵심 구성 요소를 위한 Adobe Commerce과의 비즈니스 논리 및 백엔드 통신은 Sling 모델에서 구현됩니다. 프로젝트별 요구 사항을 충족하도록 이 논리를 사용자 정의해야 하는 경우 슬링 모델에 대한 위임 패턴 을 사용할 수 있습니다.
 
 >[!TIP]
 >
->다음 [AEM CIF 핵심 구성 요소 맞춤화](../customizing/customize-cif-components.md) 페이지에는 CIF 핵심 구성 요소를 사용자 지정하는 방법에 대한 자세한 예제와 우수 사례가 있습니다.
+>[AEM CIF 핵심 구성 요소 사용자 지정](../customizing/customize-cif-components.md) 페이지에는 CIF 핵심 구성 요소를 사용자 지정하는 방법에 대한 자세한 예제와 모범 사례가 있습니다.
 
 프로젝트 내에서 AEM CIF 핵심 구성 요소 및 사용자 지정 프로젝트 구성 요소는 Sling 컨텍스트 인식 구성을 통해 AEM 페이지와 연결된 Adobe Commerce 저장소에 대해 구성된 클라이언트를 쉽게 검색할 수 있습니다.

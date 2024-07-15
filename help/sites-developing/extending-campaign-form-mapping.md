@@ -29,14 +29,14 @@ Adobe Campaign에서 사용자 지정 테이블을 만들 때 해당 사용자 �
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-다음을 참조하십시오 [AEM과 Adobe Campaign Classic 통합](/help/sites-administering/campaignonpremise.md) 추가 정보.
+자세한 내용은 [AEM과 Adobe Campaign Classic 통합](/help/sites-administering/campaignonpremise.md)을 참조하십시오.
 
 ## 사용자 정의 양식 매핑 만들기 {#creating-custom-form-mappings-2}
 
 사용자 정의 양식 매핑을 생성하려면 다음 섹션에 자세히 설명되어 있는 이러한 높은 수준의 단계를 수행해야 합니다.
 
 1. 사용자 지정 테이블을 만듭니다.
-1. 확장 **시드** 테이블.
+1. **seed** 테이블을 확장합니다.
 1. 사용자 지정 매핑을 만듭니다.
 1. 사용자 지정 매핑을 기반으로 게재를 만듭니다.
 1. 생성된 게재를 사용할 AEM에서 양식을 작성합니다.
@@ -55,15 +55,15 @@ Adobe Campaign에서 사용자 지정 테이블을 만들어 시작합니다. �
 </element>
 ```
 
-이벤트 테이블을 만든 후 **데이터베이스 구조 업데이트 마법사** 를 클릭하여 테이블을 생성합니다.
+이벤트 테이블을 만든 후 **데이터베이스 구조 업데이트 마법사**&#x200B;를 실행하여 테이블을 만듭니다.
 
 ### 시드 테이블 확장 {#extending-the-seed-table}
 
-Adobe Campaign에서 **추가** 의 확장을 만들려면 **시드 주소(nms)** 테이블.
+Adobe Campaign에서 **추가**&#x200B;를 선택하여 **시드 주소(nms)** 테이블의 확장을 만듭니다.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-이제 **이벤트** 표 확장 **시드** 표:
+이제 **event** 테이블의 필드를 사용하여 **seed** 테이블을 확장합니다.
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -74,31 +74,31 @@ Adobe Campaign에서 **추가** 의 확장을 만들려면 **시드 주소(nms)*
  </element>
 ```
 
-이 작업 후 실행 **데이터베이스 업데이트 마법사** 를 눌러 변경 사항을 적용합니다.
+그런 다음 **데이터베이스 업데이트 마법사**&#x200B;를 실행하여 변경 내용을 적용합니다.
 
 ### 사용자 지정 대상 매핑 만들기 {#creating-custom-target-mapping}
 
-위치 **관리/캠페인 관리** t, 다음으로 이동 **대상 매핑** 새 T 추가&#x200B;**매핑 가져오기.**
+**관리/캠페인 관리** t에서 **대상 매핑**(으)로 이동하여 새 T **대상 매핑을 추가하십시오.**
 
 >[!NOTE]
 >
->에 대해 의미 있는 이름을 사용해야 합니다. **내부 이름**.
+>**내부 이름**&#x200B;에 의미 있는 이름을 사용해야 합니다.
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
 ### 사용자 지정 게재 템플릿 만들기 {#creating-a-custom-delivery-template}
 
-이 단계에서는 생성된 를 사용하는 게재 템플릿을 추가합니다 **대상 매핑**.
+이 단계에서는 만들어진 **대상 매핑**&#x200B;을 사용하는 게재 템플릿을 추가합니다.
 
-위치 **리소스/템플릿**&#x200B;에서 게재 템플릿으로 이동하고 기존 AEM 게재를 복제합니다. 다음을 클릭: **종료**, 이벤트 만들기 선택 **대상 매핑**.
+**리소스/템플릿**&#x200B;에서 게재 템플릿으로 이동하여 기존 AEM 게재를 복제합니다. **받는 사람**&#x200B;을(를) 클릭하면 이벤트 만들기 **대상 매핑**&#x200B;을(를) 선택하십시오.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
 ### AEM에서 양식 작성 {#building-the-form-in-aem}
 
-AEM에서에 Cloud Service을 구성했는지 확인합니다. **페이지 속성**.
+AEM에서 **Cloud Service 속성**&#x200B;에 페이지를 구성했는지 확인하십시오.
 
-그런 다음 **Adobe Campaign** 탭에서 만든 게재를 선택합니다. [사용자 지정 게재 템플릿 만들기](#creating-a-custom-delivery-template).
+그런 다음 **Adobe Campaign** 탭에서 [사용자 지정 게재 템플릿 만들기](#creating-a-custom-delivery-template)에서 만든 게재를 선택합니다.
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -106,7 +106,7 @@ AEM에서에 Cloud Service을 구성했는지 확인합니다. **페이지 속�
 
 필드가 구성된 후 매핑을 수동으로 변경해야 합니다.
 
-CRXDE-lite에서 **jcr:content** (페이지의) 노드 및 변경 **acMapping** 값을 의 내부 이름으로 **대상 매핑**.
+CRXDE-lite에서 (페이지의) **jcr:content** 노드로 이동하여 **acMapping** 값을 **Target 매핑**&#x200B;의 내부 이름으로 변경합니다.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -122,8 +122,8 @@ CRXDE-lite에서 **jcr:content** (페이지의) 노드 및 변경 **acMapping** 
 
 ## 문제 해결 {#troubleshooting}
 
-**&quot;요소 &#39;@eventdate&#39;의 값 &#39;02/02/2015&#39; 형식이 잘못되었습니다(&#39;Event(&#39; 형식의 문서).[adb:event])&#39;)&quot;**
+**&quot;요소 &#39;@eventdate&#39;의 값 &#39;02/02/2015&#39;에 대한 형식이 잘못되었습니다(&#39;Event([adb:event])&#39; 형식의 문서)&quot;**
 
-양식을 제출할 때 이 오류는 **error.log** AEM.
+양식을 제출할 때 이 오류는 AEM의 **error.log**&#x200B;에 기록됩니다.
 
-날짜 필드의 형식이 잘못되었기 때문입니다. 해결 방법은 를 제공하는 것입니다. **yyyy-mm-dd** 을 값으로 추가합니다.
+날짜 필드의 형식이 잘못되었기 때문입니다. 해결 방법은 값으로 **yyyy-mm-dd**&#x200B;을(를) 제공하는 것입니다.

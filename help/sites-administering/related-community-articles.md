@@ -23,5 +23,5 @@ Adobe Experience Manager(AEM) 커뮤니티에서는 AEM과의 Experience Cloud �
 다음은 사용 가능한 컨텐츠 목록입니다.
 
 * [Adobe Experience Manager 웹 페이지에서 활성화 규칙 사용](https://helpx.adobe.com/experience-manager/using/dtm.html)
-* [DTM을 사용하여 AEM을 Adobe Analytics 및 Target과 통합](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)
-* [Adobe Experience Manager 및 Adobe Campaign Standard을 통합하여 뉴스레터 만들기](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)
+* [DTM을 사용하여 AEM과 Adobe Analytics 및 Target 통합](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)
+* [Adobe Experience Manager과 Adobe Campaign Standard을 통합하여 뉴스레터 만들기](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)

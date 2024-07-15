@@ -12,7 +12,7 @@ ht-degree: 68%
 
 ---
 
-# OAuth 2.0 클라이언트 자격 증명 플로우를 사용한 Salesforce 통합  {#configure-salesforce-with-ouath-2.0-client-credential}
+# OAuth 2.0 클라이언트 자격 증명 흐름 {#configure-salesforce-with-ouath-2.0-client-credential}을(를) 사용하여 Salesforce 통합
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -21,7 +21,7 @@ ht-degree: 68%
 
 OAuth 2.0 클라이언트 자격 증명을 사용하여 AEM Forms를 Salesforce 애플리케이션과 통합할 수 있습니다. OAuth 2.0 클라이언트 자격 증명은 사용자 개입 없는 직접 통신을 위한 표준 보안 방법입니다.
 
-![AEM Forms과 Salesforce 애플리케이션 간의 통신을 설정하는 동안 발생하는 워크플로우](/help/forms/using/assets/salesforce-workflow.png)
+![AEM Forms과 Salesforce 응용 프로그램 간의 통신을 설정하는 동안 워크플로우](/help/forms/using/assets/salesforce-workflow.png)
 
 AEM Forms은 Salesforce 연결 애플리케이션에 정의된 클라이언트 자격 증명(소비자 키 및 소비자 암호)을 교환하여 액세스 토큰을 얻습니다.
 
@@ -58,7 +58,7 @@ Salesforce 애플리케이션과 AEM 환경 간의 통신을 설정하기 전에
 
 1. **[!UICONTROL 찾아보기]**&#x200B;를 클릭하여 로컬 컴퓨터에서 만든 Swagger 파일을 업로드합니다.
 1. **[!UICONTROL 인증 유형]**&#x200B;을 **[!UICONTROL OAuth 2.0]**&#x200B;으로 선택합니다. 그러면 **[!UICONTROL 인증 설정]** 패널이 나타납니다.
-1. 다음 항목 선택 **[!UICONTROL 권한 유형]** 다음으로: **[!UICONTROL 클라이언트 자격 증명]**.
+1. **[!UICONTROL 부여 유형]**&#x200B;을(를) **[!UICONTROL 클라이언트 자격 증명]**(으)로 선택하십시오.
 1. Salesforce 연결된 앱에서 받은 **[!UICONTROL 클라이언트 ID]** 및 **[!UICONTROL 클라이언트 보안]**&#x200B;을 지정합니다.
 1. **[!UICONTROL 액세스 토큰 URL]**을 다음과 같은 형식으로 지정합니다.
    `https://[MyDomainName].my.salesforce.com/services/oauth2/token`
@@ -70,4 +70,4 @@ Salesforce 애플리케이션과 AEM 환경 간의 통신을 설정하기 전에
 1. **[!UICONTROL 연결 테스트]**&#x200B;를 클릭합니다.
 1. 연결에 성공하면 **[!UICONTROL 만들기]** 버튼을 클릭합니다.
 
-이제 다음을 수행할 수 있습니다. [양식 데이터 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) 를 사용하여 구성된 데이터 소스를 적응형 Forms과 통합합니다.
+이제 [양식 데이터 모델을 만들어](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en)적응형 Forms과 구성된 데이터 원본을 통합할 수 있습니다.

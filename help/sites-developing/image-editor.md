@@ -22,7 +22,7 @@ ht-degree: 9%
 
 >[!CAUTION]
 >
->이 문서에 설명된 이미지 편집기의 기능을 사용하려면 [기능 팩 24267](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) 을(를) 설치해야 합니다.
+>이 문서에 설명된 이미지 편집기의 기능을 사용하려면 [기능 팩 24267](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267)을 설치해야 합니다.
 
 ## 이미지 맵의 상대 단위 {#relative-units-for-image-map}
 
@@ -30,7 +30,7 @@ ht-degree: 9%
 
 ### imageMap 속성 {#imagemap-property}
 
-이미지 맵 좌표는 JCR에 로 유지됩니다. `imageMap` 이미지 편집기의 속성입니다. 형식은 다음과 같습니다.
+이미지 맵 좌표는 이미지 편집기에서 JCR에 `imageMap` 속성으로 유지됩니다. 형식은 다음과 같습니다.
 
 이 속성은 다음과 같이 맵 영역을 저장합니다.
 
@@ -55,13 +55,13 @@ ht-degree: 9%
 
 특정 상황에서 서버측 처리를 지원하지 않기 때문에 특정 MIME 유형에 대해 작성 작업을 제한해야 합니다. 예를 들어 SVG 이미지 편집이 허용되지 않을 수 있습니다.
 
-이미지 편집기의 플러그인은 다음을 설정하여 MIME 유형별로 선택적으로 활성화할 수 있습니다. `supportedMimeTypes` 개별 플러그인의 구성 노드의 속성입니다.
+이미지 편집기의 플러그인은 개별 플러그인의 구성 노드에서 `supportedMimeTypes` 속성을 설정하여 MIME 유형별로 선택적으로 활성화할 수 있습니다.
 
 ### 예 {#example}
 
 예를 들어 자르기 기능은 GIF, JPEG, PNG, WEBP 및 TIFF 이미지에 대해서만 허용되어야 한다고 가정해 보겠습니다.
 
-다음 `supportedMimeTypes` 그런 다음 플러그인의 구성 노드에서 속성을 허용된 MIME 유형의 문자열로 설정해야 합니다. `cq:editConfig` 이미지 구성 요소의 노드
+그런 다음 `supportedMimeTypes` 속성을 이미지 구성 요소의 `cq:editConfig` 노드에 있는 플러그인의 구성 노드에서 허용된 MIME 형식의 문자열로 설정해야 합니다.
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

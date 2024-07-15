@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->출력에 대해 사용자 지정 XCI 파일을 지정한 경우 XCI 파일의 포함 글꼴 옵션이 이러한 설정을 무시합니다. (참조: [출력을 위한 파일 위치 지정](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
+>출력에 대해 사용자 지정 XCI 파일을 지정한 경우 XCI 파일의 포함 글꼴 옵션이 이러한 설정을 무시합니다. [출력의 파일 위치 지정](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)을 참조하십시오.
 
 1. 관리 콘솔에서 서비스 > 출력을 클릭합니다.
 1. 글꼴 포함 설정 아래의 항상 글꼴 포함 상자에서 양식에 포함할 글꼴 이름을 쉼표로 구분하여 입력합니다. 지정한 글꼴은 폼에서 사용되는 경우에만 생성된 폼에 포함됩니다. 서비스로 전달된 XCI 파일에서 글꼴 포함 옵션이 켜진 경우 이 설정은 무시됩니다. 이 경우 PDF에 사용된 모든 글꼴이 항상 포함됩니다.

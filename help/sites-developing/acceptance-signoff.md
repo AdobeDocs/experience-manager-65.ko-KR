@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 수락 및 승인{#acceptance-and-sign-off}
 
-언급된 바와 같이, [승인 테스트](/help/sites-developing/planning.md) 는 다음을 확인하는 데 사용되는 특별한 테스트 범주입니다.
+[수락 테스트](/help/sites-developing/planning.md)는 다음을 확인하는 데 사용되는 특별한 테스트 범주입니다.
 
 * 프로젝트는 고객의 요구 사항을 충족합니다.
 * 고객이 프로젝트를 수락합니다.

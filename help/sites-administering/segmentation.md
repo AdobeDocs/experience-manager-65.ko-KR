@@ -20,22 +20,22 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->이 섹션에서는 ContextHub 사용 시 세그먼테이션을 구성하는 방법에 대해 설명합니다. Client Context 기능을 사용 중이라면 관련 설명서를 참조하십시오. [Client Context에 대한 세그먼테이션 구성](/help/sites-administering/campaign-segmentation.md).
+>이 섹션에서는 ContextHub 사용 시 세그먼테이션을 구성하는 방법에 대해 설명합니다. Client Context 기능을 사용하는 경우 [Client Context에 대한 세그먼테이션 구성](/help/sites-administering/campaign-segmentation.md)에 대한 관련 설명서를 참조하십시오.
 >
 
-세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다. 다음을 참조하십시오 [대상자 관리](/help/sites-authoring/managing-audiences.md) 세그먼테이션의 작동 방식 및 주요 용어에 대한 정보입니다.
+세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다. 세그먼테이션의 작동 방식 및 주요 용어에 대한 자세한 내용은 [대상자 관리](/help/sites-authoring/managing-audiences.md)를 참조하십시오.
 
 사이트 방문자 및 달성하고자 하는 목표에 대해 이미 수집한 정보에 따라 타겟팅된 콘텐츠에 필요한 세그먼트 및 전략을 정의해야 합니다.
 
-그런 다음 이러한 세그먼트를 사용하여 방문자에게 특별히 타겟팅된 콘텐츠를 제공할 수 있습니다. 이 콘텐츠는 다음에서 유지됩니다. [개인화](/help/sites-authoring/personalization.md) 섹션을 참조하십시오. 여기에 정의된 [활동](/help/sites-authoring/activitylib.md)은 모든 페이지에 포함될 수 있으며 특정 콘텐츠가 적용될 수 있는 방문자 세그먼트를 정의할 수 있습니다.
+그런 다음 이러한 세그먼트를 사용하여 방문자에게 특별히 타겟팅된 콘텐츠를 제공할 수 있습니다. 이 콘텐츠는 웹 사이트의 [Personalization](/help/sites-authoring/personalization.md) 섹션에서 유지 관리됩니다. 여기에 정의된 [활동](/help/sites-authoring/activitylib.md)은 모든 페이지에 포함될 수 있으며 특정 콘텐츠가 적용될 수 있는 방문자 세그먼트를 정의할 수 있습니다.
 
 AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니다. 또한 세그먼트 정의의 결과를 확인할 수도 있습니다.
 
 ## 세그먼트 할당 {#accessing-segments}
 
-다음 [대상](/help/sites-authoring/managing-audiences.md) 콘솔을 사용하여 ContextHub 또는 Client Context용 세그먼트와 Adobe Target 계정의 대상을 관리할 수 있습니다. 이 설명서에서는 ContextHub용 세그먼트 관리에 대해 다룹니다. 대상 [Client Context 세그먼트](/help/sites-administering/campaign-segmentation.md) 및 Adobe Target 세그먼트는 관련 설명서를 참조하십시오.
+[대상](/help/sites-authoring/managing-audiences.md) 콘솔을 사용하여 ContextHub 또는 Client Context용 세그먼트와 Adobe Target 계정의 대상을 관리할 수 있습니다. 이 설명서에서는 ContextHub용 세그먼트 관리에 대해 다룹니다. [Client Context 세그먼트](/help/sites-administering/campaign-segmentation.md) 및 Adobe Target 세그먼트의 경우 관련 설명서를 참조하십시오.
 
-세그먼트에 액세스하려면 구성을 선택해야 합니다. 전역 탐색에서 을 선택합니다. **탐색 > 개인화 > 대상자**. 사용 가능한 구성이 표시됩니다.
+세그먼트에 액세스하려면 구성을 선택해야 합니다. 전역 탐색에서 **탐색 > Personalization > 대상**&#x200B;을 선택합니다. 사용 가능한 구성이 표시됩니다.
 
 ![대상 - 구성](assets/segmentation-access-confs.png)
 
@@ -45,13 +45,13 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 
 ## 세그먼트 편집기 {#segment-editor}
 
-**세그먼트 편집기**&#x200B;를 사용하여 손쉽게 세그먼트를 수정할 수 있습니다. 세그먼트를 편집하려면 [세그먼트 목록](/help/sites-administering/segmentation.md#accessing-segments) 을(를) 클릭하고 **편집** 단추를 클릭합니다.
+**세그먼트 편집기**&#x200B;를 사용하여 손쉽게 세그먼트를 수정할 수 있습니다. 세그먼트를 편집하려면 [세그먼트 목록](/help/sites-administering/segmentation.md#accessing-segments)에서 세그먼트를 선택하고 **편집** 단추를 클릭하십시오.
 
-![세그먼트화기](assets/segmenteditor.png)
+![segmenteditor](assets/segmenteditor.png)
 
 구성 요소 브라우저를 사용하여 **AND** 및 **OR** 컨테이너를 추가하여 세그먼트 논리를 정의한 다음, 추가 구성 요소를 추가하여 속성 및 값을 비교하거나 스크립트 및 기타 세그먼트를 참조하여 선택 기준을 정의하고([새 세그먼트 작성](#creating-a-new-segment) 참조), 이를 통해 세그먼트 선택을 위한 정확한 시나리오를 정의할 수 있습니다.
 
-전체 구문이 true로 평가되면 세그먼트가 결정됩니다. 적용 가능한 세그먼트가 여러 개 있는 경우 **증폭** 인자도 사용됩니다. 다음을 참조하십시오 [새 세그먼트 만들기](#creating-a-new-segment) 에 대한 자세한 내용은 [부스트 요소.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+전체 구문이 true로 평가되면 세그먼트가 결정됩니다. 적용 가능한 세그먼트가 여러 개 있는 경우 **Boost** 요소도 사용됩니다. [부스트 요소에 대한 자세한 내용은 [새 세그먼트 만들기](#creating-a-new-segment)를 참조하십시오.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -64,7 +64,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 <table>
  <tbody>
   <tr>
-   <td>컨테이너 AND<br /> </td>
+   <td>컨테이너 및<br /> </td>
    <td>부울 AND 연산자<br /> </td>
   </tr>
   <tr>
@@ -82,7 +82,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
  <tbody>
   <tr>
    <td>Property-Value<br /> </td>
-   <td>저장소 속성을 정의된 값과 비교<br /> </td>
+   <td>저장소 속성을 정의된 값<br />과(와) 비교 </td>
   </tr>
   <tr>
    <td>속성-속성</td>
@@ -90,7 +90,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
   </tr>
   <tr>
    <td>속성-세그먼트 참조</td>
-   <td>저장소 속성을 다른 참조된 세그먼트와 비교<br /> </td>
+   <td>저장소 속성을 다른 참조된 세그먼트 <br />과(와) 비교 </td>
   </tr>
   <tr>
    <td>속성-스크립트 참조</td>
@@ -98,7 +98,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
   </tr>
   <tr>
    <td>세그먼트 참조-스크립트 참조</td>
-   <td>참조된 세그먼트를 스크립트 결과와 비교<br /> </td>
+   <td>참조된 세그먼트를 스크립트 결과 <br />과(와) 비교 </td>
   </tr>
  </tbody>
 </table>
@@ -136,11 +136,11 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 
 1. [세그먼트에 액세스](/help/sites-administering/segmentation.md#accessing-segments)한 후 세그먼트를 만들고자 하는 [폴더로 이동](#organizing-segments)합니다.
 
-1. 만들기 버튼을 클릭하고 다음을 선택합니다. **ContextHub 세그먼트 만들기**.
+1. 만들기 단추를 클릭하고 **ContextHub 세그먼트 만들기**&#x200B;를 선택합니다.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. 다음에서 **새 ContextHub 세그먼트**, 세그먼트 제목 및 필요한 경우 부스트 값 을 입력한 다음 을 클릭합니다. **만들기**.
+1. **새 ContextHub 세그먼트**&#x200B;에서 세그먼트 제목과 필요한 경우 부스트 값을 입력한 다음 **만들기**&#x200B;를 클릭합니다.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -156,7 +156,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 
    비교가 올바르게 평가되도록 가능한 경우 항상 **데이터 유형**&#x200B;을 설정하십시오. 자세한 내용은 [비교](/help/sites-administering/segmentation.md#comparisons)를 참조하십시오.
 
-1. 클릭 **확인** 정의를 저장하려면:
+1. 정의를 저장하려면 **확인**&#x200B;을 클릭하세요.
 1. 필요에 따라 구성 요소를 더 추가합니다. AND 및 OR 비교에 대한 컨테이너 구성 요소를 사용하여 부울 표현식을 만들 수 있습니다(아래 [AND 및 OR 컨테이너 사용](/help/sites-administering/segmentation.md#using-and-and-or-containers) 참조). 세그먼트 편집기를 사용하여 더 이상 필요하지 않은 구성 요소를 삭제하거나 구문 내의 새 위치로 드래그할 수 있습니다.
 
 ### AND 및 OR 컨테이너 사용 {#using-and-and-or-containers}
@@ -236,7 +236,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 ### 새 폴더 만들기 {#create-folder}
 
-1. 다음 이후 [세그먼트 액세스](#accessing-segments)를 클릭하고 **만들기** 단추 및 선택 **폴더**.
+1. [세그먼트에 액세스](#accessing-segments)한 후 **만들기** 단추를 클릭하고 **폴더**&#x200B;를 선택합니다.
 
    ![폴더 추가](assets/contexthub-create-segment.png)
 
@@ -259,13 +259,13 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 ### 기존 폴더 수정 {#modify-folders}
 
-1. 다음 이후 [세그먼트 액세스](#accessing-segments)을 클릭하고 수정할 폴더를 클릭하여 선택합니다.
+1. [세그먼트에 액세스](#accessing-segments)한 후 수정할 폴더를 클릭하여 선택합니다.
 
    ![폴더 선택](assets/contexthub-select-folder.png)
 
-1. 클릭 **이름 바꾸기** 을 클릭하여 폴더의 이름을 변경합니다.
+1. 도구 모음에서 **이름 바꾸기**&#x200B;를 클릭하여 폴더의 이름을 변경합니다.
 
-1. 새 항목 제공 **폴더 제목** 및 클릭 **저장**.
+1. 새 **폴더 제목**&#x200B;을 입력하고 **저장**&#x200B;을 클릭합니다.
 
    ![폴더 이름 바꾸기](assets/contexthub-rename-folder.png)
 
@@ -275,25 +275,25 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 ### 폴더 삭제
 
-1. 다음 이후 [세그먼트 액세스](#accessing-segments)을 클릭하고 수정할 폴더를 클릭하여 선택합니다.
+1. [세그먼트에 액세스](#accessing-segments)한 후 수정할 폴더를 클릭하여 선택합니다.
 
    ![폴더 선택](assets/contexthub-select-folder.png)
 
-1. 클릭 **삭제** 을 클릭하여 폴더를 삭제합니다.
+1. 폴더를 삭제하려면 도구 모음에서 **삭제**&#x200B;를 클릭하십시오.
 
 1. 대화 상자에 삭제하기 위해 선택한 폴더 목록이 표시됩니다.
 
    ![삭제 확인](assets/contexthub-confirm-segment-delete.png)
 
-   * 클릭 **삭제** 확인할 수 있습니다.
-   * 클릭 **취소** 중단합니다.
+   * 확인하려면 **삭제**&#x200B;를 클릭하세요.
+   * 중단하려면 **취소**&#x200B;를 클릭하십시오.
 
 1. 선택한 폴더에 하위 폴더 또는 세그먼트가 포함되어 있는 경우 해당 하위 폴더 또는 세그먼트의 삭제도 별도로 확인해야 합니다.
 
    ![하위 항목 삭제 확인](assets/contexthub-confirm-segment-child-delete.png)
 
-   * 클릭 **강제 삭제** 확인할 수 있습니다.
-   * 클릭 **취소** 중단합니다.
+   * 확인하려면 **강제 삭제**&#x200B;를 클릭하세요.
+   * 중단하려면 **취소**&#x200B;를 클릭하십시오.
 
 >[!NOTE]
 >
@@ -322,7 +322,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 이러한 테스트는 페이지 콘텐츠에서 타겟팅된 콘텐츠 및 관련 **활동** 및 **경험**&#x200B;과 함께 수행할 수도 잇습니다.
 
-위의 프라임 연령 그룹 세그먼트 예제를 사용하여 활동 및 경험을 설정한 경우 활동을 사용하여 세그먼트를 쉽게 테스트할 수 있습니다. 활동 설정에 대한 자세한 내용은 관련 항목을 참조하십시오 [타깃팅된 콘텐츠 작성에 대한 설명서](/help/sites-authoring/content-targeting-touch.md).
+위의 프라임 연령 그룹 세그먼트 예제를 사용하여 활동 및 경험을 설정한 경우 활동을 사용하여 세그먼트를 쉽게 테스트할 수 있습니다. 활동 설정에 대한 자세한 내용은 타깃팅된 콘텐츠 작성에 대한 관련 [설명서](/help/sites-authoring/content-targeting-touch.md)를 참조하십시오.
 
 1. 타겟팅된 콘텐츠를 설정한 페이지의 편집 모드에서 콘텐츠의 화살표 아이콘을 통해 해당 콘텐츠가 타겟팅되었음을 확인할 수 있습니다.
 

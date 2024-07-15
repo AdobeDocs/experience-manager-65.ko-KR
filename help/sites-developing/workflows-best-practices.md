@@ -30,7 +30,7 @@ ht-degree: 1%
 
 ### 임시 워크플로 {#transient-workflows}
 
-높은 수집 로드를 최적화하기 위해 [임시 워크플로우임](/help/sites-developing/workflows.md#transient-workflows).
+높은 수집 로드를 최적화하려면 [워크플로를 임시](/help/sites-developing/workflows.md#transient-workflows)(으)로 정의할 수 있습니다.
 
 워크플로우가 일시적인 경우 중간 작업 단계와 관련된 런타임 데이터가 실행될 때 JCR에서 지속되지 않습니다(출력 렌디션은 지속됨).
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ### DAM 워크플로우 조정 {#tuning-dam-workflows}
 
-DAM 워크플로우에 대한 성능 조정 지침은 [AEM Assets 성능 조정 안내서](/help/assets/performance-tuning-guidelines.md).
+DAM 워크플로우에 대한 성능 조정 지침은 [AEM Assets 성능 조정 가이드](/help/assets/performance-tuning-guidelines.md)를 참조하십시오.
 
 ### 최대 동시 워크플로 수 구성 {#configure-the-maximum-number-of-concurrent-workflows}
 
@@ -55,19 +55,19 @@ AEM을 사용하면 여러 워크플로우 스레드를 동시에 실행할 수 
 
 실행 중인 워크플로우에서 시스템 리소스가 많이 필요한 경우, 이는 AEM이 작성 UI 렌더링과 같은 다른 작업에 사용할 수 있는 시간이 거의 없음을 의미할 수 있습니다. 그 결과, 벌크 이미지 업로드 등의 활동 중에 시스템이 부진할 수 있다.
 
-Adobe 이 문제를 해결하려면 다음 수를 구성하는 것이 좋습니다. **최대 병렬 작업** 시스템에 있는 프로세서 코어 수의 절반~4분의 3 수준입니다. 이렇게 하면 이러한 워크플로우를 처리할 때 시스템이 응답성을 유지할 수 있는 충분한 용량이 허용됩니다.
+Adobe 이 문제를 해결하려면 **최대 병렬 작업**&#x200B;의 수를 시스템의 프로세서 코어 수의 절반에서 4분의 3 사이로 구성하는 것이 좋습니다. 이렇게 하면 이러한 워크플로우를 처리할 때 시스템이 응답성을 유지할 수 있는 충분한 용량이 허용됩니다.
 
-구성하려면 **최대 병렬 작업**, 다음 중 하나를 수행할 수 있습니다.
+**최대 병렬 작업**&#x200B;을 구성하려면 다음 중 하나를 수행할 수 있습니다.
 
-* 구성 **[OSGi 구성](/help/sites-deploying/configuring-osgi.md)** AEM 웹 콘솔에서, **대기열: Granite 워크플로우 대기열** (an **Apache Sling 작업 큐 구성**).
+* AEM 웹 콘솔에서 **[OSGi 구성](/help/sites-deploying/configuring-osgi.md)**&#x200B;을 구성하십시오. **큐: Granite 워크플로 큐**(**Apache Sling 작업 큐 구성**)에 대해 알아보십시오.
 
-* 다음에서 대기열 캔 구성 **Sling 작업** AEM 웹 콘솔 옵션, **작업 큐 구성: Granite 워크플로 큐**, `http://localhost:4502/system/console/slingevent`.
+* AEM 웹 콘솔의 **Sling 작업** 옵션에서 큐를 구성하십시오. **작업 큐 구성: Granite 워크플로 큐**&#x200B;의 경우 `http://localhost:4502/system/console/slingevent`에 있습니다.
 
-또한에 대한 별도의 구성이 있습니다. **Granite Workflow 외부 프로세스 작업 큐**. 다음과 같은 외부 바이너리를 시작하는 워크플로우 프로세스에 사용됩니다. **InDesign Server** 또는 **이미지 매직**.
+또한 **Granite Workflow 외부 프로세스 작업 큐**&#x200B;에 대해 별도의 구성이 있습니다. **InDesign Server** 또는 **이미지 매직**&#x200B;과 같은 외부 바이너리를 시작하는 워크플로 프로세스에 사용됩니다.
 
 ### 개별 작업 큐 구성 {#configure-individual-job-queues}
 
-경우에 따라 개별 작업 단위로 동시 스레드 또는 기타 대기열 옵션을 제어하도록 개별 작업 대기열을 구성하는 것이 유용합니다. 를 통해 웹 콘솔에서 개별 대기열을 추가하고 구성할 수 있습니다. **Apache Sling 작업 큐 구성** 공장. 나열할 적절한 주제를 찾으려면 워크플로우 모델을 실행하고 **Sling 작업** 콘솔(예: at) `http://localhost:4502/system/console/slingevent`.
+경우에 따라 개별 작업 단위로 동시 스레드 또는 기타 대기열 옵션을 제어하도록 개별 작업 대기열을 구성하는 것이 유용합니다. **Apache Sling 작업 큐 구성** 팩터리를 통해 웹 콘솔에서 개별 큐를 추가하고 구성할 수 있습니다. 나열할 적절한 주제를 찾으려면 워크플로우 모델을 실행하고 **Sling 작업** 콘솔에서 찾습니다(예: `http://localhost:4502/system/console/slingevent`).
 
 임시 워크플로우에 대해서도 개별 작업 대기열을 추가할 수 있습니다.
 
@@ -77,9 +77,9 @@ Adobe 이 문제를 해결하려면 다음 수를 구성하는 것이 좋습니�
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
-기본적으로 **주간 유지 관리 창** 다음 포함 **워크플로 삭제** 작업이 실행되기 전에 구성해야 합니다. 워크플로 삭제를 구성하려면 다음을 수행합니다. **Adobe Granite 워크플로우 삭제 구성** 을(를) 웹 콘솔에 추가해야 합니다.
+기본적으로 **주별 유지 관리 기간**&#x200B;에 **워크플로 제거** 작업이 있지만 실행되기 전에 이를 구성해야 합니다. 워크플로 제거를 구성하려면 웹 콘솔에 새 **Adobe Granite 워크플로 제거 구성**&#x200B;을 추가해야 합니다.
 
-AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](/help/sites-administering/operations-dashboard.md).
+AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](/help/sites-administering/operations-dashboard.md)를 참조하세요.
 
 ## 사용자 지정 {#customization}
 
@@ -91,7 +91,7 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
 
 >[!NOTE]
 >
->참조: [AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md).
+>[AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md)도 참조하세요.
 
 #### 위치 - 워크플로 모델 {#locations-workflow-models}
 
@@ -106,7 +106,7 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
   >금지 사항:
   >
   >* 이 폴더에 사용자 지정 워크플로 모델 배치
-  >* 에서 모든 항목 편집 `/libs`
+  >* `/libs`에서 모든 항목 편집
   >
   >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
 
@@ -126,7 +126,7 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
 
   >[!NOTE]
   >
-  >이러한 디자인이 편집되는 경우 *AEM UI 사용*&#x200B;를 클릭하면 세부 정보가 새 위치에 복사됩니다.
+  >이러한 디자인을 *AEM UI를 사용하여*&#x200B;편집하면 세부 정보가 새 위치로 복사됩니다.
 
 #### 위치 - 워크플로우 런처 {#locations-workflow-launchers}
 
@@ -141,7 +141,7 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
   >금지 사항:
   >
   >* 이 폴더에 사용자 지정 워크플로우 런처를 배치합니다.
-  >* 에서 모든 항목 편집 `/libs`
+  >* `/libs`에서 모든 항목 편집
   >
   >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
 
@@ -157,7 +157,7 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
 
   >[!NOTE]
   >
-  >이러한 정의가 편집되는 경우 *AEM UI 사용*&#x200B;를 클릭하면 세부 정보가 새 위치에 복사됩니다.
+  >이러한 정의를 *AEM UI를 사용하여*&#x200B;편집하면 세부 정보가 새 위치로 복사됩니다.
 
 #### 위치 - 워크플로 스크립트 {#locations-workflow-scripts}
 
@@ -172,7 +172,7 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
   >금지 사항:
   >
   >* 이 폴더에 사용자 지정 워크플로 스크립트를 배치합니다.
-  >* 에서 모든 항목 편집 `/libs`
+  >* `/libs`에서 모든 항목 편집
   >
   >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
 
@@ -199,7 +199,7 @@ AEM의 유지 관리 작업에 대한 자세한 내용은 [작업 대시보드](
   >금지 사항:
   >
   >* 이 폴더에 사용자 지정 워크플로 알림 정의를 배치합니다.
-  >* 에서 모든 항목 편집 `/libs`
+  >* `/libs`에서 모든 항목 편집
   >
   >업그레이드 시 또는 핫픽스, 누적 수정 팩 또는 서비스 팩을 설치할 때 변경 사항을 덮어쓸 수 있습니다.
 
@@ -244,10 +244,10 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 세션 저장:
 
-* 워크플로 프로세스 내에서 `WorkflowSession` 은(는) 저장소를 수정하는 데 사용되고 세션을 명시적으로 저장하지 않습니다. 워크플로우는 완료될 때 세션을 저장합니다.
-* `Session.Save` 은(는) 워크플로 단계 내에서 호출하면 안 됩니다.
+* 워크플로 프로세스 내에서 `WorkflowSession`이(가) 저장소를 수정하는 데 사용되는 경우 세션을 명시적으로 저장하지 마십시오. 이 작업이 완료되면 워크플로가 세션을 저장합니다.
+* 워크플로 단계 내에서 `Session.Save`을(를) 호출하면 안 됩니다.
 
-   * 워크플로우 jcr 세션을 조정하는 것이 좋습니다. 그런 다음 `save` 워크플로 실행이 완료되면 워크플로 엔진이 세션을 자동으로 저장하므로 이 필요하지 않습니다.
+   * 워크플로 jcr 세션을 조정하는 것이 좋습니다. 그러면 워크플로 실행이 완료되면 워크플로 엔진이 세션을 자동으로 저장하므로 `save`은(는) 필요하지 않습니다.
    * 프로세스 단계에서 자체 jcr 세션을 만들지 않는 것이 좋습니다.
 
 * 불필요한 저장을 제거함으로써 오버헤드를 줄여 워크플로우의 효율성을 높일 수 있습니다.
@@ -258,7 +258,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 ### 런처 수/범위 최소화 {#minimize-the-number-scope-of-launchers}
 
-모든 작업을 담당하는 청취자가 한 명 있습니다. [워크플로우 런처](/help/sites-administering/workflows-starting.md#workflows-launchers) 등록됨:
+등록된 모든 [워크플로 시작 관리자](/help/sites-administering/workflows-starting.md#workflows-launchers)를 담당하는 리스너가 한 개 있습니다.
 
 * 다른 런처의 글로빙 속성에 지정된 모든 경로에서 변경 사항을 수신하게 됩니다.
 * 이벤트가 발송되면 워크플로우 엔진은 각 런처를 평가하여 실행 여부를 결정합니다.
@@ -271,7 +271,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 ### 런처 구성 개선 사항 {#configuration-enhancements-for-launchers}
 
-사용자 정의 [런처 구성](/help/sites-administering/workflows-starting.md#workflows-launchers) 이(가) 다음을 지원하도록 향상되었습니다.
+사용자 지정 [런처 구성](/help/sites-administering/workflows-starting.md#workflows-launchers)이(가) 다음을 지원하도록 개선되었습니다.
 
 * 여러 조건 &quot;AND&quot;를 함께 사용해야 합니다.
 * 단일 조건 내에 OR 조건이 있습니다.
@@ -282,7 +282,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 워크플로우에서는 메모리에서 만든 객체와 저장소에서 추적한 노드 측면에서 모두 상당한 오버헤드를 처리할 수 있습니다. 따라서 추가 워크플로우를 시작하는 것보다 워크플로우가 자체 내에서 처리되도록 하는 것이 좋습니다.
 
-한 세트의 콘텐츠에서 비즈니스 프로세스를 구현한 다음 해당 콘텐츠를 활성화하는 워크플로우가 이러한 예에 해당합니다. 을(를) 시작하는 것보다 이러한 각 노드를 활성화하는 사용자 지정 워크플로우 프로세스를 만드는 것이 좋습니다. **콘텐츠 활성화** 게시해야 하는 각 콘텐츠 노드에 대한 모델입니다. 이 접근 방식은 추가 개발 작업이 필요하지만 각 활성화에 대해 별도의 워크플로우 인스턴스를 시작하는 것보다 실행할 때 더 효율적입니다.
+한 세트의 콘텐츠에서 비즈니스 프로세스를 구현한 다음 해당 콘텐츠를 활성화하는 워크플로우가 이러한 예에 해당합니다. 게시해야 하는 각 콘텐츠 노드에 대해 **콘텐츠 활성화** 모델을 시작하는 것보다 이러한 각 노드를 활성화하는 사용자 지정 워크플로 프로세스를 만드는 것이 좋습니다. 이 접근 방식은 추가 개발 작업이 필요하지만 각 활성화에 대해 별도의 워크플로우 인스턴스를 시작하는 것보다 실행할 때 더 효율적입니다.
 
 또 다른 예는 여러 노드를 처리하고, 워크플로우 패키지를 만든 다음, 상기 패키지를 활성화하는 워크플로우입니다. 패키지를 만든 다음 패키지를 페이로드로 사용하여 별도의 워크플로우를 시작하는 대신 패키지를 만드는 단계에서 워크플로우의 페이로드를 변경한 다음 단계를 호출하여 동일한 워크플로우 모델 내에서 패키지를 활성화할 수 있습니다.
 
@@ -294,13 +294,13 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 ### 워크플로 단계 {#workflow-stages}
 
-다음을 정의할 수 있습니다. [워크플로 단계](/help/sites-developing/workflows.md#workflow-stages)을 클릭한 다음 작업/단계를 특정 워크플로 단계에 할당합니다.
+[워크플로 단계](/help/sites-developing/workflows.md#workflow-stages)를 정의한 다음 특정 워크플로 단계에 작업/단계를 할당할 수 있습니다.
 
-이 정보는 다음을 클릭할 때 워크플로우의 진행률을 표시하는 데 사용됩니다. [**워크플로 정보** 에서 작업 항목 탭 **받은 편지함**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). 기존 워크플로 모델을 편집하여 단계를 추가할 수 있습니다.
+이 정보는 **받은 편지함**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)&#x200B;에서 작업 항목의 [**워크플로 정보** 탭을 클릭할 때 워크플로의 진행률을 표시하는 데 사용됩니다. 기존 워크플로 모델을 편집하여 단계를 추가할 수 있습니다.
 
 ### 페이지 활성화 프로세스 단계 {#activate-page-process-step}
 
-다음 **페이지 활성화 프로세스** 단계는 페이지를 활성화하지만 참조된 DAM 에셋을 자동으로 찾지 않고 활성화하지도 않습니다.
+**페이지 활성화 프로세스** 단계에서는 페이지를 활성화하지만 참조된 DAM 에셋은 자동으로 찾지 않으며 해당 에셋도 활성화하지 않습니다.
 
 이 단계를 워크플로우 모델의 일부로 사용하려는 경우 이 점을 염두에 두어야 합니다.
 
@@ -309,17 +309,17 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 인스턴스를 업그레이드할 때:
 
 * 인스턴스가 업그레이드되기 전에 모든 사용자 정의 워크플로 모델이 백업되었는지 확인하십시오.
-* 사용자 지정 워크플로가 아래에 저장되지 않았는지 확인합니다. [위치](#locations):
+* 사용자 지정 워크플로가 [위치](#locations)에 저장되지 않았는지 확인합니다.
 
    * `/libs/settings/workflow/models/projects`
 
 >[!NOTE]
 >
->참조: [AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md).
+>[AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md)도 참조하세요.
 
 ## 시스템 도구 {#system-tools}
 
-워크플로우 모니터링, 유지 관리 및 문제 해결에 도움이 되는 다양한 시스템 도구가 있습니다. 아래의 모든 예제 URL 사용 `localhost:4502`, 그러나 모든 작성자 인스턴스에서 사용할 수 있어야 합니다( `<hostname>:<port>`).
+워크플로우 모니터링, 유지 관리 및 문제 해결에 도움이 되는 다양한 시스템 도구가 있습니다. 아래의 모든 예제 URL은 `localhost:4502`을(를) 사용하지만 모든 작성자 인스턴스(`<hostname>:<port>`)에서 사용할 수 있어야 합니다.
 
 ### Sling 작업 처리 콘솔 {#sling-job-handling-console}
 

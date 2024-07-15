@@ -46,7 +46,7 @@ Headless 모델에서 콘텐츠는 AEM 저장소에서 관리되지만 REST와 G
 
 >[!NOTE]
 >
->물론, [AEM SPA 편집기 프레임워크를 사용하여 웹 샵 SPA를 완전히 기능하는 AEM SPA로 다시 구현할 수도 있습니다.](/help/sites-developing/spa-walkthrough.md) 이미 AEM이 있고 웹 샵 또는 다른 SPA을 만들려는 경우 이 방법이 권장되지만 이 문서의 범위를 벗어납니다.
+>물론, [AEM SPA 편집기 프레임워크를 사용하여 웹 샵 SPA를 완전히 기능하는 AEM SPA로 다시 구현할 수도 있습니다.](/help/sites-developing/spa-walkthrough.md) 이미 AEM이 있고 웹 샵 또는 다른 SPA을 만들려는 경우 이 방법을 사용하는 것이 좋습니다. 그러나 이 방법은 이 문서의 범위를 벗어납니다.
 
 ## SPA 통합 수준 {#integration-levels}
 

@@ -22,13 +22,13 @@ HSM(하드웨어 보안 모듈) 및 e토큰은 디지털 키를 안전하게 관
 
 Adobe Experience Manager Forms은 HSM 또는 eToken에 저장된 자격 증명을 사용하여 문서에 eSign을 하거나 서버측 디지털 서명을 적용할 수 있습니다. AEM Forms에서 HSM 또는 etoken 디바이스를 사용하려면 다음을 수행하십시오.
 
-1. [DocAssurance 서비스 활성화](#configuredocassurance).
-1. [AEM 웹 콘솔에서 HSM 또는 etoken 디바이스에 대한 별칭 생성](#configuredeviceinaemconsole).
+1. [DocAssurance 서비스를 사용하도록 설정](#configuredocassurance).
+1. [AEM 웹 콘솔에서 HSM 또는 etoken 장치에 대한 별칭을 만듭니다](#configuredeviceinaemconsole).
 1. [DocAssurance 서비스 API를 사용하여 장치에 저장된 디지털 키로 문서에 서명하거나 인증합니다](#programatically).
 
 ## AEM Forms으로 HSM 또는 eToken 장치를 구성하기 전에 {#configurehsmetoken}
 
-* 설치 [AEM Forms 추가 기능](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 패키지.
+* [AEM Forms 추가 기능](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 패키지를 설치합니다.
 * AEM 서버와 동일한 컴퓨터에 HSM 또는 etoken 클라이언트 소프트웨어를 설치하고 구성합니다. 클라이언트 소프트웨어는 HSM 및 e토큰 장치와 통신하는 데 필요합니다.
 
 ## DocAssurance 서비스 활성화 {#configuredocassurance}
@@ -37,11 +37,11 @@ Adobe Experience Manager Forms은 HSM 또는 eToken에 저장된 자격 증명�
 
 1. AEM Forms 환경의 작성자 인스턴스를 중지합니다.
 
-1. 를 엽니다. [AEM_root]편집할 \crx-quickstart\conf\sling.properties 파일입니다.
+1. 편집할 [AEM_root]\crx-quickstart\conf\sling.properties 파일을 엽니다.
 
    >[!NOTE]
    >
-   >를 사용한 경우 [AEM_root]\crx-quickstart\bin\start.bat 파일을 사용하여 AEM 인스턴스를 시작한 다음 [AEM_root]\crx-quickstart\sling.properties 파일을 편집합니다.
+   >[AEM_root]\crx-quickstart\bin\start.bat 파일을 사용하여 AEM 인스턴스를 시작한 경우 편집할 [AEM_root]\crx-quickstart\sling.properties 파일을 엽니다.
 
 1. sling.properties 파일에 다음 속성을 추가하거나 바꿉니다.
 
@@ -99,20 +99,20 @@ Perform the following steps to setup certificates:
 
 별칭에는 HSM 또는 e토큰에 필요한 모든 매개 변수가 포함되어 있습니다. eSign 또는 디지털 서명에서 사용하는 각 HSM 또는 eToken 자격 증명에 대한 별칭을 생성하려면 아래 나열된 지침을 수행하십시오.
 
-1. AEM 콘솔을 엽니다. AEM 콘솔의 기본 URL은 https://입니다.&lt;host>:&lt;port>/system/console/configMgr
-1. 를 엽니다. **HSM 자격 증명 구성 서비스** 및 다음 필드에 대한 값을 지정합니다.
+1. AEM 콘솔을 엽니다. AEM 콘솔의 기본 URL은 https://&lt;host>:&lt;port>/system/console/configMgr입니다
+1. **HSM 자격 증명 구성 서비스**&#x200B;를 열고 다음 필드에 대한 값을 지정하십시오.
 
    * **자격 증명 별칭**: 별칭을 식별하는 데 사용되는 문자열을 지정합니다. 이 값은 서명 필드 작업과 같은 일부 디지털 서명 작업에 대한 속성으로 사용됩니다.
-   * **DLL 경로**: 서버에 있는 HSM 또는 eTOKEN 클라이언트 라이브러리의 경로를 지정합니다. 예, `C:\Program Files\LunaSA\cryptoki.dll`. 클러스터된 환경에서는 클러스터의 모든 서버가 동일한 경로를 사용해야 합니다.
-   * **HSM 핀**: 장치 키에 액세스하는 데 필요한 암호를 지정합니다.
+   * **DLL 경로**: 서버에 있는 HSM 또는 etoken 클라이언트 라이브러리의 경로를 지정하십시오. 예, `C:\Program Files\LunaSA\cryptoki.dll`. 클러스터된 환경에서는 클러스터의 모든 서버가 동일한 경로를 사용해야 합니다.
+   * **HSM 핀**: 장치 키에 액세스하는 데 필요한 암호를 지정하십시오.
    * **HSM 슬롯 ID**: 정수 유형의 슬롯 식별자를 지정합니다. 슬롯 ID는 클라이언트별로 설정됩니다. 서명/인증을 위한 개인 키가 포함된 HSM의 슬롯을 식별하는 데 사용됩니다.
 
    >[!NOTE]
    >
    >Etoken을 구성하는 동안 HSM 슬롯 ID 필드에 대한 숫자 값을 지정합니다. 서명 작업이 작동하려면 숫자 값이 필요합니다.
 
-   * **인증서 SHA1**: 사용 중인 자격 증명에 대한 공개 키(.cer) 파일의 SHA1 값(지문)을 지정합니다. SHA1 값에 사용된 공백이 없는지 확인합니다.
-   * **HSM 장치 유형**: HSM(Luna 또는 기타) 또는 eToken 장치의 제조업체를 선택합니다.
+   * **인증서 SHA1**: 사용 중인 자격 증명에 대한 공개 키(.cer) 파일의 SHA1 값(지문)을 지정하십시오. SHA1 값에 사용된 공백이 없는지 확인합니다.
+   * **HSM 장치 유형**: HSM(Luna 또는 기타) 또는 eToken 장치의 제조업체를 선택하십시오.
 
    **저장**&#x200B;을 클릭합니다. AEM Forms에 대해 하드웨어 보안 모듈이 구성되어 있습니다. 이제 AEM Forms의 하드웨어 보안 모듈을 사용하여 문서에 서명하거나 인증할 수 있습니다.
 
@@ -415,4 +415,4 @@ AEM 6.0 Form 또는 AEM 6.1 Forms에서 업그레이드하고 이전 버전에�
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-API 및 DocAssurance 서비스의 샘플 코드에 대한 자세한 내용은 [프로그래밍 방식으로 AEM Document Services 사용](/help/forms/using/aem-document-services-programmatically.md).
+API 및 DocAssurance 서비스의 샘플 코드에 대한 자세한 내용은 [프로그래밍 방식으로 AEM Document Services 사용](/help/forms/using/aem-document-services-programmatically.md)을 참조하십시오.

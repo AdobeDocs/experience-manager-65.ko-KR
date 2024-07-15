@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -32,10 +32,10 @@ ht-degree: 2%
 | 에셋 - 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
 | **이미지** - 이미지당 스마트 자르기 수 | 5 | 100 |
-| **모든 세트** - 세트당 중복 에셋 수 | 중복 항목 없음 | 20‡ |
-| **모든 세트** - 세트당 최대 에셋 수 | 세트당 5-10개 이미지 | 1000년 |
-| **회전 집합** - 2D 세트당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000 |
-| **PDF** - 추출 시 고려할 PDF의 최대 페이지 수 |  | 100(모든 PDF) |
+| **모든 집합** - 집합당 중복 에셋 수 | 중복 항목 없음 | 20‡ |
+| **모든 집합** - 집합당 최대 자산 수 | 세트당 5-10개 이미지 | 1000년 |
+| **회전 집합** - 2D 집합당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000 |
+| **PDF** - 추출할 PDF의 최대 페이지 수 |  | 100(모든 PDF) |
 
 ‡ 가장 좋은 방법은 집합에 중복 에셋이 없는 것입니다. 단일 자산에 대한 중복 횟수는 20회로 제한됩니다. 해당 에셋에 대해 다른 중복을 추가하면 해당 세트 내에서 요청에 오류가 발생하거나 중복을 무시합니다.
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
@@ -61,10 +61,10 @@ and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
 2024년 4월 30일부터 Dynamic Media Adobe은 다음 사항에 대한 지원을 종료합니다.
 
-* SSL(Secure Socket Layer) 2.0
+* SSL(보안 소켓 계층) 2.0
 * SSL 3.0
 * TLS(전송 계층 보안) 1.0 및 1.1
-* TLS 1.2의 약한 암호는 다음과 같습니다.
+* TLS 1.2의 다음과 같은 약한 암호:
    * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
    * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
    * `TLS_RSA_WITH_AES_256_GCM_SHA384`

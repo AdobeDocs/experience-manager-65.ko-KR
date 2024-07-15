@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->사용자 지정 native2pdfconfig.xml 파일을 가져와서 PDF Generator에 대한 제한 시간 설정을 변경할 수 없습니다. 해당 파일의 시간 초과 설정은 정보 제공용으로만 사용되며 PDF Generator의 현재 설정을 표시합니다. 시간 초과 설정을 변경하려면 의 &quot;PDF Generator 성능 매개 변수 설정&quot;을 참조하십시오. [AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>사용자 지정 native2pdfconfig.xml 파일을 가져와서 PDF Generator에 대한 제한 시간 설정을 변경할 수 없습니다. 해당 파일의 시간 초과 설정은 정보 제공용으로만 사용되며 PDF Generator의 현재 설정을 표시합니다. 시간 제한 설정을 변경하려면 [AEM 양식 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_63)에서 &quot;PDF Generator 성능 매개 변수 설정&quot;을 참조하십시오.
 
 ## 현재 구성 파일 내보내기 {#export-your-current-configuration-file}
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 1. 관리 콘솔에서 서비스 > PDF Generator > 구성 파일 > 구성 가져오기 를 클릭합니다.
 1. 기존 구성 파일 가져오기를 선택합니다.
-1. 구성 파일 상자에서 파일 위치를 지정하려면 찾아보기를 클릭하여 파일을 찾아 선택한 다음 를 클릭합니다 **가져오기**.
+1. 구성 파일 상자에서 파일 위치를 지정하려면 찾아보기를 클릭하여 파일을 찾아 선택한 다음 **가져오기**&#x200B;를 클릭합니다.
 
 ## AutoCAD 파일 내의 모든 레이어 변환 {#convert-all-layers-within-autocad-files}
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 1. 관리 콘솔에서 서비스 > PDF Generator > 구성 파일 > 구성 내보내기 를 클릭합니다.
 1. 전체 구성 다운로드 를 선택하고 다운로드 를 클릭합니다.
-1. 텍스트 편집기에서 다운로드한 파일을 열고 `AutoCAD` 태그 내 `PDFMaker` 태그, 텍스트 추가 `convertAllPages="true"`.
+1. 텍스트 편집기에서 다운로드한 파일을 열고 `PDFMaker` 태그 내의 `AutoCAD` 태그 아래에서 `convertAllPages="true"` 텍스트를 추가합니다.
 1. 관리 콘솔에서 서비스 > PDF Generator > 구성 파일 > 구성 가져오기 를 클릭합니다.
 1. 기존 구성 파일 가져오기 를 선택하고 업데이트된 파일을 지정한 다음 가져오기 를 클릭합니다.
 

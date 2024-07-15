@@ -26,7 +26,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 ## 키보드 단축키 {#keyboard-shortcuts}
 
-다음 단축키는 사이트, Commerce, 스크린, 자산, 사용자, 그룹, 프로젝트 및 경험 조각 콘솔에 사용할 수 있습니다.
+다음 단축키는 사이트, Commerce, Screens, Assets, 사용자, 그룹, 프로젝트 및 경험 조각 콘솔에 사용할 수 있습니다.
 
 | 위치 | 단축키 | 설명 |
 |---|---|---|
@@ -51,7 +51,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 키 조합은 Windows [보조 키](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys)와 함께 나열됩니다.
 
-데스크탑 사용자는 를 사용할 때 다양한 키보드 단축키를 사용할 수 있습니다. [페이지 편집기](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) 을 클릭하여 페이지를 작성합니다.
+데스크톱 사용자는 [페이지 편집기](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)를 사용하여 페이지를 작성할 때 다양한 키보드 단축키를 사용할 수 있습니다.
 
 ## OS별 보조 키 {#os-specific-modifier-keys}
 

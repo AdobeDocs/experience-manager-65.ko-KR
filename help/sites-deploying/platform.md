@@ -20,15 +20,15 @@ ht-degree: 4%
 
 # AEM 플랫폼 소개{#introduction-to-the-aem-platform}
 
-AEM 6의 AEM 플랫폼은 Apache Jackrabbit Oak를 기반으로 합니다.
+AEM 6의 AEM 플랫폼은 Apache Jackrabbit Oak을 기반으로 합니다.
 
-Apache Jackrabbit Oak는 최신 세계적 수준의 웹 사이트 및 기타 까다로운 콘텐츠 애플리케이션의 기반으로 사용할 수 있도록 확장 가능하고 성능이 뛰어난 계층형 콘텐츠 저장소를 구현하기 위한 노력입니다.
+Apache Jackrabbit Oak은 확장 가능하고 성능이 뛰어난 계층형 콘텐츠 저장소를 구현하여 최신 세계적 수준의 웹 사이트 및 기타 까다로운 콘텐츠 애플리케이션의 기반으로 사용하도록 하기 위한 노력입니다.
 
 Jackrabbit 2의 후속 제품이며 AEM 6에서 컨텐츠 저장소인 CRX에 대한 기본 백엔드로 사용됩니다.
 
 ## 설계 원칙 및 목표 {#design-principles-and-goals}
 
-Oak는 [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) 사양입니다. 주요 설계 목표는 다음과 같습니다.
+Oak은 [JSR-283](https://jcp.org/en/jsr/detail?id=283)(JCR 2.0) 사양을 구현합니다. 주요 설계 목표는 다음과 같습니다.
 
 * 대형 저장소에 대한 지원 향상
 * 고가용성을 위한 여러 분산 클러스터 노드
@@ -49,13 +49,13 @@ Oak는 [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) 사양입니다
 
 ### Oak 코어 {#oak-core}
 
-Oak Core는 스토리지 레이어에 다음과 같은 여러 레이어를 추가합니다.
+Oak 코어는 스토리지 레이어에 다음과 같은 여러 계층을 추가합니다.
 
 * 액세스 수준 제어
 * 검색 및 색인 지정
 * 관찰
 
-### 오크 JCR {#oak-jcr}
+### OAK JS {#oak-jcr}
 
 Oak JCR의 주요 목적은 JCR 의미 체계를 트리 작업으로 변환하는 것입니다. 또한 다음에 대한 책임이 있습니다.
 
@@ -66,9 +66,9 @@ Oak JCR의 주요 목적은 JCR 의미 체계를 트리 작업으로 변환하�
 
 ## 스토리지 개요 {#storage-overview}
 
-Oak 스토리지 계층은 컨텐츠의 실제 저장을 위한 추상화 계층을 제공합니다.
+Oak 스토리지 계층은 콘텐츠의 실제 스토리지에 대한 추상화 계층을 제공합니다.
 
-현재 AEM6에서는 두 가지 스토리지 구현을 사용할 수 있습니다. **Tar 스토리지** 및 **MongoDB 스토리지**.
+현재 AEM6에는 **Tar 저장소** 및 **MongoDB 저장소**&#x200B;와 같은 두 가지 저장소 구현이 있습니다.
 
 ### Tar 스토리지 {#tar-storage}
 
@@ -86,7 +86,7 @@ Tar 저장소는 tar 파일을 사용합니다. 더 큰 세그먼트 내에서 �
 
 노드 및 그 바로 아래 하위 노드와 같은 관련 레코드는 동일한 세그먼트에 저장됩니다. 이렇게 하면 저장소를 빠르게 검색할 수 있으며 세션당 두 개 이상의 관련 노드에 액세스하는 일반적인 클라이언트의 캐시 실패를 대부분 방지할 수 있습니다.
 
-* **콤팩트함**
+* **압축**
 
 레코드의 서식은 크기에 맞게 최적화되어 IO 비용을 줄이고 캐시에 있는 콘텐츠를 최대한 많이 맞출 수 있습니다.
 
@@ -122,17 +122,17 @@ MongoDB 스토리지를 사용하는 일반적인 AEM 클러스터 설정:
 
 ## Jackrabbit 2와 다른 점은 무엇입니까? {#what-is-different-from-jackrabbit}
 
-Oak는 JCR 1.0 표준과 역호환되므로 사용자 수준에서 변경 사항이 거의 없습니다. 그러나 Oak 기반 AEM 설치를 설정할 때 고려해야 할 몇 가지 주목할 만한 차이점이 있습니다.
+Oak은 JCR 1.0 표준과 하위 호환되므로 사용자 수준에서 거의 변경 사항이 없습니다. 그러나 Oak 기반 AEM 설치를 설정할 때 고려해야 하는 몇 가지 주목할 만한 차이점이 있습니다.
 
-* Oak는 색인을 자동으로 생성하지 않습니다. 따라서 필요한 경우 사용자 정의 색인을 만들어야 합니다.
-* 세션이 항상 저장소의 최신 상태를 반영하는 Jackrabbit 2와 달리, Oak에서는 세션이 세션이 획득된 시점부터 저장소의 안정적인 보기를 반영합니다. 그 이유는 Oak가 기반으로 하는 MVCC 모델 때문이다.
-* Oak에서는 SNS(동일 이름 형제)가 지원되지 않습니다.
+* Oak은 색인을 자동으로 만들지 않습니다. 따라서 필요한 경우 사용자 정의 색인을 만들어야 합니다.
+* 세션이 항상 저장소의 최신 상태를 반영하는 Jackrabbit 2와 달리, Oak에서는 세션이 세션이 획득된 시점부터 저장소에 대한 안정적인 보기를 반영합니다. 그 이유는 Oak이 기반으로 하는 마을금고 모델 때문이다.
+* Oak에서는 SNS(동일 이름 동일 수준)가 지원되지 않습니다.
 
 ## 기타 플랫폼 관련 설명서 {#other-platform-related-documentation}
 
 AEM 플랫폼에 대한 자세한 내용은 아래 문서도 참조하십시오.
 
 * [AEM 6에서 노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md)
-* [Oak 쿼리 및 색인 지정](/help/sites-deploying/queries-and-indexing.md)
+* [Oak 쿼리 및 색인화](/help/sites-deploying/queries-and-indexing.md)
 * [AEM 6의 저장소 요소](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [MongoDB와 AEM](/help/sites-deploying/aem-with-mongodb.md)

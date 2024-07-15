@@ -22,18 +22,18 @@ ht-degree: 1%
 
 웹 사이트에 대한 개별 방문자는 로그인할 수 있는 기능을 제공해야 식별할 수 있습니다. 로그인 기능을 제공하려는 이유에는 여러 가지가 있습니다.
 
-* [AEM Communities](/help/communities/overview.md)사이트 방문자가 커뮤니티에 콘텐츠를 게시하려면 로그인해야 합니다.
+* [AEM Communities](/help/communities/overview.md)콘텐츠를 커뮤니티에 게시하려면 사이트 방문자가 로그인해야 합니다.
 * [폐쇄된 사용자 그룹](/help/sites-administering/cug.md)
 
   웹 사이트(또는 웹 사이트 섹션)에 대한 액세스를 특정 방문자로 제한해야 할 수 있습니다.
 
-* [개인화](/help/sites-administering/personalization.md) 방문자가 웹 사이트에 액세스하는 방법의 특정 측면을 구성할 수 있습니다.
+* [Personalization](/help/sites-administering/personalization.md) 방문자가 웹 사이트에 액세스하는 방법의 특정 측면을 구성할 수 있도록 허용합니다.
 
-로그인(및 로그아웃) 기능은 [이(가) 있는 계정 **프로필**](#profiles-and-user-accounts): 등록된 방문자(사용자)에 대한 추가 정보를 보유하고 있습니다. 등록 및 승인에 대한 실제 프로세스는 다를 수 있습니다.
+로그인(및 로그아웃) 기능은 등록된 방문자(사용자)에 대한 추가 정보가 들어 있는 **프로필**](#profiles-and-user-accounts)&#x200B;을 사용하는 [계정에서 제공합니다. 등록 및 승인에 대한 실제 프로세스는 다를 수 있습니다.
 
 * 웹 사이트에서 자가 등록
 
-  A [커뮤니티 사이트](/help/communities/sites-console.md) 방문자가 자신의 Facebook 또는 Twitter 계정으로 자가 등록하거나 로그인할 수 있도록 를 구성할 수 있습니다.
+  방문자가 자신의 Facebook 또는 Twitter 계정으로 직접 등록하거나 로그인할 수 있도록 [커뮤니티 사이트](/help/communities/sites-console.md)를 구성할 수 있습니다.
 
 * 웹 사이트에 등록 요청
 
@@ -52,11 +52,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->프로필에 지정된 정보를 사용하여 다음을 통해 사용자에게 타겟팅된 콘텐츠를 제공할 수도 있습니다. [세그먼트](/help/sites-administering/campaign-segmentation.md) 및 [캠페인](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+>프로필에 지정된 정보는 [세그먼트](/help/sites-administering/campaign-segmentation.md) 및 [캠페인](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)을 통해 사용자에게 타깃팅된 콘텐츠를 제공하는 데 사용할 수도 있습니다.
 
 ## 등록 Forms {#registration-forms}
 
-A [양식](/help/sites-authoring/default-components.md#form-component) 를 사용하여 등록 정보를 수집한 다음 새 계정 및 프로필을 생성할 수 있습니다.
+[form](/help/sites-authoring/default-components.md#form-component)을(를) 사용하여 등록 정보를 수집한 다음 새 계정 및 프로필을 생성할 수 있습니다.
 
 예를 들어 사용자는 Geometrixx 페이지를 사용하여 새 프로필을 요청할 수 있습니다
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
@@ -67,23 +67,23 @@ A [양식](/help/sites-authoring/default-components.md#form-component) 를 사�
 
 ![샘플 프로필 페이지](assets/profilepage.png)
 
-새 계정도 [사용자 콘솔](/help/sites-administering/security.md).
+새 계정은 [사용자 콘솔](/help/sites-administering/security.md)에도 표시됩니다.
 
 ## 로그인 {#login}
 
 로그인 구성 요소를 사용하여 로그인 정보를 수집한 다음 로그인 프로세스를 활성화할 수 있습니다.
 
-이렇게 하면 방문자에게 의 표준 필드가 제공됩니다 **사용자 이름** 및 **암호**, 포함 **로그인** 자격 증명을 입력할 때 로그인 프로세스를 활성화하는 버튼입니다.
+이렇게 하면 방문자에게 자격 증명을 입력할 때 로그인 프로세스를 활성화하기 위한 **로그인** 단추와 함께 표준 필드인 **사용자 이름** 및 **암호**&#x200B;이 제공됩니다.
 
-예를 들어 사용자는 다음을 사용하여 로그인하거나 계정을 만들 수 있습니다. **로그인** 페이지를 사용하는 Geometrixx 도구 모음의 옵션입니다.
+예를 들어, 사용자는 페이지를 사용하는 Geometrixx 도구 모음의 **로그인** 옵션을 사용하여 로그인하거나 계정을 만들 수 있습니다.
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![샘플 로그인 페이지](assets/login.png)
+![페이지에 있는 샘플 로그](assets/login.png)
 
 ## 로그아웃 {#logging-out}
 
-로그인 메커니즘이 있으므로 로그아웃 메커니즘도 필요합니다. 이 기능은 다음과 같이 사용할 수 있습니다. **로그아웃** Geometrixx의 옵션입니다.
+로그인 메커니즘이 있으므로 로그아웃 메커니즘도 필요합니다. Geometrixx에서 **로그아웃** 옵션으로 사용할 수 있습니다.
 
 ## 프로필 보기 및 업데이트 {#viewing-and-updating-a-profile}
 
@@ -93,58 +93,58 @@ A [양식](/help/sites-authoring/default-components.md#form-component) 를 사�
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-프로필의 세부 사항을 보려면 **내 프로필** 페이지의 오른쪽 상단 모서리에서 다음을 수행합니다. 예: `admin` 계정:
+프로필의 세부 정보를 보려면 페이지의 오른쪽 상단 모서리에서 **내 프로필**&#x200B;을 클릭하세요. 예를 들어, `admin` 계정이 있는 경우:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
-다음을 사용하여 다른 프로필을 볼 수 있습니다. [client context](/help/sites-administering/client-context.md) (작성 환경에서 충분한 권한이 있음):
+작성자 환경에서 충분한 권한을 가진 [클라이언트 컨텍스트](/help/sites-administering/client-context.md)를 사용하여 다른 프로필을 볼 수 있습니다.
 
 1. 페이지를 엽니다. 예를 들어 Geometrixx 페이지는 다음과 같습니다.
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. 클릭 **내 프로필** 오른쪽 상단에서 현재 계정의 프로필(예: 관리자)이 표시됩니다.
-1. 누르기 **control-alt-C** 를 클릭하여 클라이언트 컨텍스트를 엽니다.
-1. Client Context의 왼쪽 상단 모서리에서 **프로필 로드** 단추를 클릭합니다.
+1. 오른쪽 상단의 **내 프로필**&#x200B;을 클릭합니다. 현재 계정의 프로필(예: 관리자)이 표시됩니다.
+1. **control-alt-C**&#x200B;을 눌러 클라이언트 컨텍스트를 엽니다.
+1. 클라이언트 컨텍스트의 왼쪽 상단 모서리에서 **프로필 로드** 단추를 클릭합니다.
 
    ![프로필 아이콘 로드](do-not-localize/loadprofile.png)
 
-1. 대화 상자 창의 드롭다운 목록에서 다른 프로필을 선택합니다. 예를 들면 다음과 같습니다. **앨리슨 파커**.
+1. 대화 상자 창의 드롭다운 목록에서 다른 프로필을 선택합니다(예: **Alison Parker**).
 1. **확인**&#x200B;을 클릭합니다.
-1. 다음에 대해 다시 클릭: **내 프로필**. Alison의 세부 사항이 포함된 양식이 업데이트됩니다.
+1. **내 프로필**&#x200B;에서 다시 클릭하세요. Alison의 세부 사항이 포함된 양식이 업데이트됩니다.
 
    ![Alison의 샘플 프로필](assets/profilealison.png)
 
-1. 이제 다음을 사용할 수 있습니다. **프로필 편집** 또는 **암호 변경** 을 클릭하여 세부 정보를 업데이트합니다.
+1. 이제 **프로필 편집** 또는 **암호 변경**&#x200B;을 사용하여 세부 정보를 업데이트할 수 있습니다.
 
 ## 프로필 정의에 필드 추가 {#adding-fields-to-the-profile-definition}
 
 프로필 정의에 필드를 추가할 수 있습니다. 예를 들어 Geometrixx 프로필에 &quot;즐겨 찾는 색상&quot; 필드를 추가하려면 다음을 수행합니다.
 
 1. 웹 사이트 콘솔에서 Geometrixx Outdoors 사이트 > 영어 > 사용자 > 내 프로필로 이동합니다.
-1. 를 두 번 클릭합니다. **내 프로필** 편집할 페이지를 엽니다.
-1. 다음에서 **구성 요소** 사이드 킥의 탭을 확장합니다. **양식** 섹션.
-1. 드래그 **드롭다운 목록** 사이드 킥에서 양식 바로 아래 **내 정보** 필드.
-1. 를 두 번 클릭합니다. **드롭다운 목록** 구성을 위한 대화 상자를 열고 다음을 입력할 구성 요소:
+1. **내 프로필** 페이지를 두 번 클릭하여 편집할 수 있도록 엽니다.
+1. 사이드 킥의 **구성 요소** 탭에서 **Form** 섹션을 확장합니다.
+1. **드롭다운 목록**&#x200B;을(를) 사이드 킥에서 **내 정보** 필드 바로 아래에 있는 양식으로 끌어 놓습니다.
+1. **드롭다운 목록** 구성 요소를 두 번 클릭하여 구성을 위한 대화 상자를 열고 다음을 입력합니다.
 
    * **요소 이름** - `favoriteColor`
    * **제목** - `Favorite Color`
    * **항목** - 여러 색상을 항목으로 추가
 
-   클릭 **확인** 저장.
+   저장하려면 **확인**&#x200B;을 클릭하세요.
 
-1. 페이지를 닫고 **웹 사이트** 을(를) 콘솔에 추가하고 내 프로필 페이지를 활성화합니다.
+1. 페이지를 닫고 **웹 사이트** 콘솔로 돌아간 다음 내 프로필 페이지를 활성화합니다.
 
    다음에 프로필을 볼 때 즐겨찾는 색상을 선택할 수 있습니다.
 
-   ![앨리슨 파커가 좋아하는 색상 샘플 필드](assets/aparkerfavcolour.png)
+   ![Alison Parker가 좋아하는 색상 샘플 필드](assets/aparkerfavcolour.png)
 
-   필드는 아래에 저장됩니다. **프로필** 관련 사용자 계정의 섹션:
+   필드는 관련 사용자 계정의 **프로필** 섹션에 저장됩니다.
 
    ![CRXDE에 있는 앨리슨 파커의 데이터](assets/aparkercrxdelite.png)
 
 ## 프로필 상태 {#profile-states}
 
-사용자(또는 사용자 프로필)가 *특정 상태* 아님 말거나
+사용자(또는 사용자 프로필)가 *특정 상태*&#x200B;인지 여부를 확인해야 하는 사용 사례가 몇 가지 있습니다.
 
 여기에는 다음과 같은 방법으로 사용자 프로필의 적절한 속성 정의가 포함됩니다.
 
@@ -184,17 +184,17 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 ## 프로필 및 사용자 계정 {#profiles-and-user-accounts}
 
-프로필은 의 일부로 콘텐츠 저장소에 저장됩니다.[사용자 계정](/help/sites-administering/user-group-ac-admin.md).
+프로필은 [사용자 계정](/help/sites-administering/user-group-ac-admin.md)의 일부로 콘텐츠 저장소에 저장됩니다.
 
-프로필은 다음에서 찾을 수 있습니다. `/home/users/geometrixx`:
+프로필은 `/home/users/geometrixx`에서 찾을 수 있습니다.
 
 ![CRXDE에 표시되는 프로필](assets/chlimage_1-138.png)
 
-표준 설치(작성자 또는 게시)에서 모든 사용자는 모든 사용자의 전체 프로필 정보에 대한 읽기 액세스 권한을 갖습니다. 모든 사용자가 &quot;*기본 제공 그룹은 자동으로 모든 기존 사용자 및 그룹을 포함합니다. 구성원 목록을 편집할 수 없습니다.*&quot;.
+표준 설치(작성자 또는 게시)에서 모든 사용자는 모든 사용자의 전체 프로필 정보에 대한 읽기 액세스 권한을 갖습니다. 모든 사용자는 기존의 모든 사용자 및 그룹을 자동으로 포함하는 &quot;*기본 제공 그룹입니다. 구성원 목록을*&quot;에서 편집할 수 없습니다.
 
 이러한 액세스 권한은 다음 와일드카드 ACL에 의해 정의됩니다.
 
-/home everyone allow jcr:read rep:glob = &#42;/profile&#42;
+/home everyone은 jcr:read rep:glob = &#42;/profile&#42;을(를) 허용합니다.
 
 이를 통해 다음 작업을 수행할 수 있습니다.
 
@@ -203,7 +203,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 이러한 액세스가 설치에 적합하지 않으면 이러한 기본 설정을 변경할 수 있습니다.
 
-다음을 사용하여 이 작업을 수행할 수 있습니다. **[액세스 제어](/help/sites-administering/user-group-ac-admin.md#access-right-management)** 탭:
+이 작업은 **[액세스 제어](/help/sites-administering/user-group-ac-admin.md#access-right-management)** 탭을 사용하여 수행할 수 있습니다.
 
 ![CRXDE에서 ACL 관리](assets/aclmanager.png)
 
@@ -232,7 +232,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 이 구성 요소를 사용하여 자세한 이름을 입력할 수 있습니다.
 
-![세부 이름 대화 상자](assets/dc_profiles_detailedname.png)
+![자세한 이름 대화 상자](assets/dc_profiles_detailedname.png)
 
 ### 프로필 성별 {#profile-gender}
 

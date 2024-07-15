@@ -49,12 +49,12 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 * 링크 탐색
 
-   * **편집** 모드에 있는 경우 ***링크를 탐색에 사용할 수 없습니다***. 링크를 사용하여 탐색하려면 다음을 수행해야 합니다 [페이지 미리보기](/help/sites-authoring/editing-content.md#previewing-pages) 다음 중 하나를 사용합니다.
+   * **편집** 모드에 있는 경우 ***링크를 탐색에 사용할 수 없습니다***. 링크를 사용하여 탐색하려면 다음 방법 중 하나를 사용하여 [페이지를 미리 보기](/help/sites-authoring/editing-content.md#previewing-pages)해야 합니다.
 
       * [미리보기 모드](/help/sites-authoring/editing-content.md#preview-mode)
       * [게시됨으로 보기](/help/sites-authoring/editing-content.md#view-as-published)
 
-* 버전이 페이지 편집기에서 시작/작성되지 않습니다. 이제 다음 중 하나를 통해 사이트 콘솔에서 수행됩니다. **만들기** 또는 [타임라인](/help/sites-authoring/basic-handling.md#timeline) (선택한 리소스)에 사용할 수 있습니다.
+* 버전이 페이지 편집기에서 시작/만들어지지 않습니다. 이제 선택한 리소스에 대해 **만들기** 또는 [타임라인](/help/sites-authoring/basic-handling.md#timeline)을 통해 사이트 콘솔에서 수행됩니다.
 
 >[!NOTE]
 >
@@ -68,9 +68,9 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 페이지 찾기에 대한 여러 측면이 있습니다. 탐색 및/또는 검색할 수 있습니다.
 
-1. 를 엽니다. **사이트** 콘솔 (사용 **사이트** 의 옵션 [전역 탐색](/help/sites-authoring/basic-handling.md#global-navigation)) - Adobe Experience Manager 링크(왼쪽 상단)를 선택하면 트리거됩니다(드롭다운).
+1. **사이트** 콘솔을 엽니다([전역 탐색](/help/sites-authoring/basic-handling.md#global-navigation)에서 **사이트** 옵션 사용) - Adobe Experience Manager 링크(왼쪽 상단)를 선택하면 트리거됩니다(드롭다운).
 
-1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기에 따라 다릅니다. - [카드, 목록 또는 열](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
+1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기([카드, 목록 또는 열](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources))에 따라 다릅니다.
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
@@ -84,9 +84,9 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ### 새 페이지 만들기 {#creating-a-new-page}
 
-종료 [페이지 만들기](/help/sites-authoring/managing-pages.md#creating-a-new-page):
+[페이지를 만들려면](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [위치로 이동](#finding-your-page) 페이지를 만들 위치입니다.
+1. [페이지를 만들 위치로 이동](#finding-your-page)합니다.
 1. **만들기** 아이콘을 사용한 다음 목록에서 **페이지**&#x200B;를 선택합니다.
 
    ![qgtap-02](assets/qgtap-02.png)
@@ -109,10 +109,10 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. 카드 보기:
 
-   * 다음 기준으로 선택 모드 시작 [필요한 리소스 선택](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) 포함:
+   * 다음을 사용하여 [필요한 리소스를 선택](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources)하여 선택 모드에 들어갑니다.
 
       * 모바일 장치: 길게 선택
-      * 데스크탑: [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions) - 확인 표시 아이콘:
+      * 데스크톱: [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions) - 확인 표시 아이콘:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
@@ -120,7 +120,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    >[!NOTE]
    >
-   >선택 모드로 전환되면 **선택** 아이콘(확인 표시)이 **선택 취소** 아이콘(a 교차).
+   >선택 모드에 있으면 **Select** 아이콘(확인 표시)이 **Deselect** 아이콘(교차)으로 변경됩니다.
 
 ### 빠른 작업(카드 보기/데스크탑 전용) {#quick-actions-card-view-desktop-only}
 
@@ -148,7 +148,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * 다음 작업을 수행하여 [페이지에 새 구성 요소 추가](/help/sites-authoring/editing-content.md#inserting-a-component):
 
       * 사이드 패널 열기
-      * 구성 요소 탭 선택( [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser))
+      * 구성 요소 탭([구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)) 선택
       * 필요한 구성 요소를 페이지로 드래그
 
      다음 아이콘을 사용하여 사이드 패널을 열고 닫을 수 있습니다.
@@ -170,11 +170,11 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * 다음 방법 중 하나로 [구성 요소를 이동](/help/sites-authoring/editing-content.md#moving-a-component)합니다.
 
       * 필요한 구성 요소를 새 위치로 끕니다.
-      * 를 클릭하여 구성 요소 도구 모음을 엽니다. 사용 **잘라내기** 그러면 **붙여넣기** 필요한 아이콘입니다.
+      * 를 클릭하여 구성 요소 도구 모음을 엽니다. 필요한 경우 **잘라내기**&#x200B;를 사용한 다음 **붙여넣기** 아이콘을 사용합니다.
 
    * 구성 요소 [복사(및 붙여넣기):](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
 
-      * 를 클릭하여 구성 요소 도구 모음을 엽니다. 사용 **복사** 그러면 **붙여넣기** 필요에 따라 아이콘을 클릭합니다.
+      * 를 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사**&#x200B;를 사용한 다음 **붙여넣기** 아이콘을 사용합니다.
 
    >[!NOTE]
    >
@@ -182,7 +182,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * 구성 요소 [삭제:](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
 
-      * 를 클릭하여 구성 요소 도구 모음을 열고 다음을 사용합니다. **삭제** 아이콘.
+      * 클릭하여 구성 요소 도구 모음을 열고 **삭제** 아이콘을 사용합니다.
 
    * 페이지에 [주석 추가](/help/sites-authoring/annotations.md#annotations):
 
@@ -198,7 +198,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    >[!NOTE]
    >
-   >콘텐츠에서 링크를 사용하여 탐색하려면 다음을 사용해야 합니다. [미리 보기 모드](/help/sites-authoring/editing-content.md#preview-mode).
+   >콘텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 사용해야 합니다.
 
 ### 페이지 속성 편집 {#editing-the-page-properties}
 
@@ -294,7 +294,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ### 페이지 참조에 액세스 {#accessing-page-references}
 
-[참조에 대한 빠른 액세스](/help/sites-authoring/author-environment-tools.md#references) 참조 레일에서 페이지 또는 페이지 간에 사용할 수 있습니다.
+참조 레일에서 페이지 또는 페이지에 대한 [참조](/help/sites-authoring/author-environment-tools.md#references)에 빠르게 액세스할 수 있습니다.
 
 1. **페이지를 선택**&#x200B;하기 전이나 후에 도구 모음 아이콘을 사용하여 [참조](#selecting-your-page-for-further-action)를 선택합니다.
 
@@ -314,7 +314,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. 타임라인 열 오른쪽 하단에 있는 위쪽 화살표를 클릭하여 다음을 포함한 추가 단추를 표시합니다. **다른 버전으로 저장**.
+1. 타임라인 열 오른쪽 하단에 있는 위쪽 화살표를 클릭하여 **다른 버전으로 저장**&#x200B;을 비롯한 추가 단추를 표시합니다.
 
    ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 

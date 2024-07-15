@@ -35,10 +35,10 @@ ht-degree: 0%
 SOLID는 다음과 같이 준수해야 하는 5가지 건축 원칙을 설명하는 약어입니다.
 
 * **S**&#x200B;단일 책임 원칙 - 각 모듈, 클래스, 메서드 등에는 하나의 책임만 있어야 합니다.
-* **O** pen/Closed Principle - 모듈은 확장을 위해 열고 수정을 위해 닫아야 합니다.
-* **L** iskov 대체 원칙 - 유형은 하위 유형으로 대체 가능합니다.
-* **I**&#x200B;인터페이스 분리 원칙 - 어떤 클라이언트도 사용하지 않는 방법에 의존하도록 강요되어서는 안 됩니다.
-* **D**&#x200B;종속성 반전 원칙 - 높은 수준의 모듈이 낮은 수준의 모듈에 종속되지 않아야 합니다. 두 가지 모두 추상화에 의존해야 합니다. 추상화는 세부 정보에 의존해서는 안 됩니다. 세부 사항은 추상화에 따라 달라야 합니다.
+* **O** pen/Closed Principle - 모듈은 확장을 위해 열리고 수정하기 위해 닫아야 합니다.
+* **L** iskov 대체 원칙 - 형식은 하위 유형별로 대체할 수 있어야 합니다.
+* **I**&#x200B;인터페이스 분리 원칙 - 클라이언트가 사용하지 않는 방법에 의존하도록 강요되어서는 안 됩니다.
+* **D**&#x200B;종속성 반전 원칙 - 높은 수준의 모듈은 낮은 수준의 모듈에 종속되지 않아야 합니다. 두 가지 모두 추상화에 의존해야 합니다. 추상화는 세부 정보에 의존해서는 안 됩니다. 세부 사항은 추상화에 따라 달라야 합니다.
 
 이러한 5가지 원칙의 준수를 위해 노력하는 것은 우려의 분리가 엄격하게 이루어지는 제도로 귀결되어야 한다.
 
@@ -62,4 +62,4 @@ SOLID는 다음과 같이 준수해야 하는 5가지 건축 원칙을 설명하
 
 ### POM 파일에서 게시된 Maven 규칙 준수 {#follow-published-maven-conventions-in-pom-files}
 
-Apache는에 스타일 규칙을 게시했습니다. [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). 새로운 리소스가 빠르게 올라오기 쉬우므로 이러한 규칙을 따르는 것이 가장 좋습니다.
+Apache가 [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html)에 스타일 규칙을 게시했습니다. 새로운 리소스가 빠르게 올라오기 쉬우므로 이러한 규칙을 따르는 것이 가장 좋습니다.

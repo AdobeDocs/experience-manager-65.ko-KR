@@ -43,7 +43,7 @@ Windows Server 2003 또는 2008의 OpenOffice, Microsoft® Word 또는 Microsoft
 Windows 운영 체제에서는 PDF 변환에 사용되는 관리자 사용자 계정(PDFG 사용자)이 프로세스 수준 토큰 권한을 대체해야 합니다. 그룹 정책 편집기를 사용하여 이 권한을 추가할 수 있습니다.
 
 1. Windows 시작 메뉴에서 실행을 클릭한 다음 gpedit.msc를 입력합니다.
-1. [로컬 컴퓨터 정책] > [컴퓨터 구성] > [Windows 설정] > [보안 설정] > [로컬 정책] > [사용자 권한 할당]을 클릭합니다. 편집 *프로세스 수준 토큰 바꾸기* 관리자 그룹을 포함하는 정책입니다.
+1. [로컬 컴퓨터 정책] > [컴퓨터 구성] > [Windows 설정] > [보안 설정] > [로컬 정책] > [사용자 권한 할당]을 클릭합니다. 관리자 그룹을 포함하도록 *프로세스 수준 토큰 바꾸기* 정책을 편집합니다.
 1. 프로세스 수준 토큰 바꾸기 항목에 사용자를 추가합니다.
 
 ### Windows Server 2008의 OpenOffice, Microsoft® Word 및 Microsoft® PowerPoint에 필요한 추가 구성 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
@@ -56,7 +56,7 @@ Windows Server 2008에서 OpenOffice, Microsoft® Word 또는 Microsoft® PowerP
 
 ### Linux® 또는 Solaris™의 OpenOffice에 필요한 추가 구성 {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
-1. 사용자 계정을 추가합니다. (참조: [사용자 계정 추가](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
+1. 사용자 계정을 추가합니다. ([사용자 계정 추가](enabling-multi-threaded-file-conversions.md#add-a-user-account)를 참조하세요.)
 1. 그런 다음 /etc/sudoers 파일을 변경해야 합니다. 이 파일의 기본 사용 권한은 440입니다. 이 파일에 대한 권한을 쓰기 가능으로 변경합니다.
 1. /etc/sudoers 파일에 추가 사용자(Forms 서버를 실행하는 관리자 제외)에 대한 항목을 추가합니다. 예를 들어, lcadm이라는 사용자와 myhost라는 서버로 AEM Forms를 실행하고 있고 user1 및 user2를 가장하려는 경우 /etc/sudoers에 다음 항목을 추가합니다.
 
@@ -69,7 +69,7 @@ Windows Server 2008에서 OpenOffice, Microsoft® Word 또는 Microsoft® PowerP
 
    >[!NOTE]
    >
-   >시스템 사용자 및 PDFG 사용자 역할을 &#39;user1&#39; 및 &#39;user2&#39;에 할당했는지 확인합니다. 사용자에게 PDFG 역할을 할당하려면 [사용자 계정 추가](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >시스템 사용자 및 PDFG 사용자 역할을 &#39;user1&#39; 및 &#39;user2&#39;에 할당했는지 확인합니다. 사용자에게 PDFG 역할을 할당하려면 [사용자 계정 추가](enabling-multi-threaded-file-conversions.md#add-a-user-account)를 참조하십시오.
 
 1. /etc/sudoers 파일에서도 줄 앞에 숫자 기호(#)를 추가하여 이 줄을 찾아 주석 처리합니다.
 
@@ -80,7 +80,7 @@ Windows Server 2008에서 OpenOffice, Microsoft® Word 또는 Microsoft® PowerP
    이렇게 하면 Linux® 사용자를 추가할 수 있습니다.
 
 1. etc/sudoers 파일에 대한 권한을 다시 440으로 변경합니다.
-1. 을 통해 추가한 모든 사용자 허용 [사용자 계정 추가](enabling-multi-threaded-file-conversions.md#add-a-user-account) Forms 서버에 연결합니다. 예를 들어 user1이라는 로컬 사용자에게 Forms 서버에 대한 연결 권한을 허용하려면 다음 명령을 사용합니다
+1. [사용자 계정 추가](enabling-multi-threaded-file-conversions.md#add-a-user-account)를 통해 추가한 모든 사용자가 Forms 서버에 연결할 수 있도록 허용합니다. 예를 들어 user1이라는 로컬 사용자에게 Forms 서버에 대한 연결 권한을 허용하려면 다음 명령을 사용합니다
 
    `xhost +local:user1@`
 

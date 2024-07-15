@@ -32,7 +32,7 @@ ht-degree: 73%
 
 작업 항목이 할당되면(예: **콘텐츠 승인**) 다양한 경고 및/또는 알림이 표시됩니다.
 
-* 사용자 [알림](/help/sites-authoring/inbox.md) 표시기(도구 모음)가 증가합니다.
+* [알림](/help/sites-authoring/inbox.md) 표시기(도구 모음)가 증가합니다.
 
   ![알림 표시기](do-not-localize/wf-57.png)
 
@@ -76,7 +76,7 @@ ht-degree: 73%
 * [받은 편지함](#completing-a-participant-step-inbox)
 * [페이지 편집기](#completing-a-participant-step-page-editor)
 * [타임라인](#completing-a-participant-step-timeline)
-* 조건 [워크플로 항목을 열어 세부 정보 보기](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [워크플로 항목을 열어 세부 정보를 확인](#opening-a-workflow-item-to-view-details-and-take-actions)하는 경우.
 
 #### 참가자 단계 완료 - 받은 편지함 {#completing-a-participant-step-inbox}
 
@@ -85,7 +85,7 @@ ht-degree: 73%
 1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 클릭).
 1. 도구 모음에서 **완료**&#x200B;를 선택합니다.
-1. 다음 **작업 항목 완료** 대화 상자가 열립니다. 다음 항목 선택 **다음 단계** 드롭다운 선택기에서 **댓글** 필요한 경우.
+1. **작업 항목 완료** 대화 상자가 열립니다. 드롭다운 선택기에서 **다음 단계**&#x200B;를 선택하고 필요한 경우 **주석**&#x200B;을 추가합니다.
 1. **확인**&#x200B;을 사용하여 단계를 완료합니다(또는 **취소**&#x200B;를 사용하여 작업 취소).
 
 #### 참가자 단계 완료 - 페이지 편집기 {#completing-a-participant-step-page-editor}
@@ -94,7 +94,7 @@ ht-degree: 73%
 
 1. [편집할 페이지](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing)를 엽니다.
 1. 상단의 상태 표시줄에서 **완료**&#x200B;를 선택합니다.
-1. 다음 **작업 항목 완료** 대화 상자가 열립니다. 다음 항목 선택 **다음 단계** 드롭다운 선택기에서 **댓글** 필요한 경우.
+1. **작업 항목 완료** 대화 상자가 열립니다. 드롭다운 선택기에서 **다음 단계**&#x200B;를 선택하고 필요한 경우 **주석**&#x200B;을 추가합니다.
 1. **확인**&#x200B;을 사용하여 단계를 완료합니다(또는 **취소**&#x200B;를 사용하여 작업 취소).
 
 #### 참가자 단계 완료 - 타임라인 {#completing-a-participant-step-timeline}
@@ -135,7 +135,7 @@ ht-degree: 73%
 * [받은 편지함](#delegating-a-participant-step-inbox)
 * [페이지 편집기](#delegating-a-participant-step-page-editor)
 * [타임라인](#delegating-a-participant-step-timeline)
-* 조건 [워크플로 항목을 열어 세부 정보 보기](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [워크플로 항목을 열어 세부 정보를 확인](#opening-a-workflow-item-to-view-details-and-take-actions)하는 경우.
 
 #### 참가자 단계 위임 - 받은 편지함 {#delegating-a-participant-step-inbox}
 
@@ -144,7 +144,7 @@ ht-degree: 73%
 1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 클릭).
 1. 도구 모음에서 **위임**&#x200B;을 선택합니다.
-1. 대화상자가 열립니다. 다음을 지정합니다. **사용자** 드롭다운 선택기에서(또는 그룹일 수 있음) **댓글** 필요한 경우.
+1. 대화상자가 열립니다. 드롭다운 선택기에서 **User**(또는 그룹)을 지정하고 필요한 경우 **주석**&#x200B;을(를) 추가합니다.
 1. **확인**&#x200B;을 사용하여 단계를 완료합니다(또는 **취소**&#x200B;를 사용하여 작업 취소).
 
 #### 참가자 단계 위임 - 페이지 편집기 {#delegating-a-participant-step-page-editor}
@@ -153,7 +153,7 @@ ht-degree: 73%
 
 1. [편집할 페이지](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing)를 엽니다.
 1. 상단의 상태 표시줄에서 **위임**&#x200B;을 선택합니다.
-1. 대화상자가 열립니다. 다음을 지정합니다. **사용자** 드롭다운 선택기에서(또는 그룹일 수 있음) **댓글** 필요한 경우.
+1. 대화상자가 열립니다. 드롭다운 선택기에서 **User**(또는 그룹)을 지정하고 필요한 경우 **주석**&#x200B;을(를) 추가합니다.
 1. **확인**&#x200B;을 사용하여 단계를 완료합니다(또는 **취소**&#x200B;를 사용하여 작업 취소).
 
 #### 참가자 단계 위임 - 타임라인 {#delegating-a-participant-step-timeline}
@@ -185,7 +185,7 @@ ht-degree: 73%
 * [받은 편지함](#performing-step-back-on-a-participant-step-inbox)
 * [페이지 편집기](#performing-step-back-on-a-participant-step-page-editor)
 * [타임라인](#performing-step-back-on-a-participant-step-timeline)
-* 조건 [워크플로 항목을 열어 세부 정보 보기](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [워크플로 항목을 열어 세부 정보를 확인](#opening-a-workflow-item-to-view-details-and-take-actions)하는 경우.
 
 #### 참가자 단계에서 뒤로 이동 수행 - 받은 편지함 {#performing-step-back-on-a-participant-step-inbox}
 
@@ -195,7 +195,7 @@ ht-degree: 73%
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 클릭).
 1. **뒤로 이동**&#x200B;을 선택하여 대화 상자를 엽니다.
 
-1. 다음을 지정합니다. **이전 단계** 및 추가 **댓글** 필요한 경우.
+1. **이전 단계**&#x200B;를 지정하고 필요한 경우 **주석**&#x200B;을 추가하세요.
 1. **확인**&#x200B;을 사용하여 단계를 완료합니다(또는 **취소**&#x200B;를 사용하여 작업 취소).
 
 #### 참가자 단계에서 뒤로 이동 수행 - 페이지 편집기 {#performing-step-back-on-a-participant-step-page-editor}
@@ -204,7 +204,7 @@ ht-degree: 73%
 
 1. [편집할 페이지](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing)를 엽니다.
 1. 상단의 상태 표시줄에서 **뒤로 이동**&#x200B;을 선택합니다.
-1. 다음을 지정합니다. **이전 단계** 및 추가 **댓글** 필요한 경우.
+1. **이전 단계**&#x200B;를 지정하고 필요한 경우 **주석**&#x200B;을 추가하세요.
 1. **확인**&#x200B;을 사용하여 단계를 완료합니다(또는 **취소**&#x200B;를 사용하여 작업 취소).
 
 #### 참가자 단계에서 뒤로 이동 수행 - 타임라인 {#performing-step-back-on-a-participant-step-timeline}
@@ -236,7 +236,7 @@ ht-degree: 73%
 
   ![wf-73](assets/wf-73.png)
 
-  If [워크플로 단계](/help/sites-developing/workflows.md#workflow-stages) 모델에 대해 구성되었으므로 다음 사항에 따라 진행률을 볼 수 있습니다.
+  모델에 대해 [워크플로 단계](/help/sites-developing/workflows.md#workflow-stages)가 구성된 경우 다음 사항에 따라 진행률을 확인할 수 있습니다.
 
   ![wf-107](assets/wf-107.png)
 
@@ -257,7 +257,7 @@ ht-degree: 73%
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 클릭).
 1. **열기**&#x200B;를 선택하여 정보 탭을 엽니다.
 
-1. 필요한 경우 적절한 작업을 선택하고 세부 정보를 제공한 다음 을(를) 확인합니다. **확인** (또는 **취소**).
+1. 필요한 경우 적절한 작업을 선택하고 세부 정보를 입력한 다음 **확인**(또는 **취소**)을 사용하여 확인하십시오.
 1. **저장** 또는 **취소**&#x200B;를 선택하여 종료합니다.
 
 #### 워크플로 세부 사항 열기 - 페이지 편집기 {#opening-workflow-details-page-editor}
@@ -267,7 +267,7 @@ ht-degree: 73%
 1. [편집할 페이지](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing)를 엽니다.
 1. 작업 표시줄에서 **세부 정보 보기**&#x200B;를 선택하여 정보 탭을 엽니다.
 
-1. 필요한 경우 적절한 작업을 선택하고 세부 정보를 제공한 다음 을(를) 확인합니다. **확인** (또는 **취소**).
+1. 필요한 경우 적절한 작업을 선택하고 세부 정보를 입력한 다음 **확인**(또는 **취소**)을 사용하여 확인하십시오.
 1. **저장** 또는 **취소**&#x200B;를 선택하여 종료합니다.
 
 ### 워크플로 페이로드(여러 리소스) 보기 {#viewing-the-workflow-payload-multiple-resources}

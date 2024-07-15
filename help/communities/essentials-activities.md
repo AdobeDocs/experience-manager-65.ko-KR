@@ -23,17 +23,17 @@ ht-degree: 2%
 
 팔로우 능력은 커뮤니티 회원이 관심 있는 게시물이나 다른 커뮤니티 회원을 팔로우할 때 또 다른 활동 세트를 추가합니다.
 
-모두 [커뮤니티 사이트](/help/communities/overview.md#communitiessites) 같은 방식으로 구성원 활동을 표시할 로그인한 구성원의 사용자 프로필 페이지를 포함합니다.
+모든 [커뮤니티 사이트](/help/communities/overview.md#communitiessites)에 동일한 방식으로 구성원 활동을 표시할 로그인 구성원의 사용자 프로필 페이지가 포함되어 있습니다.
 
 ## 개념 {#concepts}
 
-An *활동 스트림* 는 구성원이 수행한 최근 활동 목록이나 포럼 주제나 블로그와 같은 컨텐츠의 단일 스레드에 대한 최근 활동 목록입니다.
+*활동 스트림*&#x200B;은(는) 구성원이 수행한 최근 활동 목록이거나 포럼 주제나 블로그와 같은 컨텐츠의 단일 스레드에서 최근 활동 목록입니다.
 
 구성원은 다른 개인 또는 콘텐츠를 팔로우하여 활동 스트림을 팔로우할 수 있습니다.
 
-A *뉴스피드* 는 멤버로 뒤따르는 활동 스트림을 단일 스트림으로 병합하는 것입니다.
+*뉴스 피드*&#x200B;는 구성원이 뒤따르는 활동 스트림을 단일 스트림으로 병합하는 것입니다.
 
-A *[소셜 그래프](/help/communities/essentials-socialgraph.md)* 한 구성원과 다른 구성원의 다음 관계를 캡처합니다.
+*[소셜 그래프](/help/communities/essentials-socialgraph.md)*&#x200B;은(는) 구성원 간 다음 관계를 캡처합니다.
 
 ## 클라이언트측 핵심 사항 {#essentials-for-client-side}
 
@@ -44,7 +44,7 @@ A *[소셜 그래프](/help/communities/essentials-socialgraph.md)* 한 구성�
    <td>social/activitystreams/components/hbs/activitystreams</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>포함하기 쉬워</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
    <td>아니요</td>
   </tr>
   <tr>
@@ -61,7 +61,7 @@ A *[소셜 그래프](/help/communities/essentials-socialgraph.md)* 한 구성�
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td>다음을 참조하십시오 <a href="/help/communities/activities.md">활동 스트림 기능</a></td>
+   <td><a href="/help/communities/activities.md">활동 스트림 기능</a>을 참조하세요.</td>
   </tr>
  </tbody>
 </table>
@@ -70,7 +70,7 @@ A *[소셜 그래프](/help/communities/essentials-socialgraph.md)* 한 구성�
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [활동 스트림 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
+* [Activity Streams API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
 * [Activity Streams 수신기 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
 
@@ -78,4 +78,4 @@ A *[소셜 그래프](/help/communities/essentials-socialgraph.md)* 한 구성�
 
 ### 활동 스트림 기능 {#activity-stream-function}
 
-다음을 포함하는 커뮤니티 사이트 구조 [활동 스트림 기능](/help/communities/functions.md#activity-stream-function), 구성된 포함 `activity streams` 구성 요소.
+[활동 스트림 함수](/help/communities/functions.md#activity-stream-function)을(를) 포함하는 커뮤니티 사이트 구조에는 구성된 `activity streams` 구성 요소가 포함되어 있습니다.

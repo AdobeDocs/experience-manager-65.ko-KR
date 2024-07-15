@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # OWASP 상위 10{#owasp-top}
 
-다음 [웹 응용 프로그램 보안 프로젝트 열기](https://owasp.org/) (OWASP)는 다음과 같이 간주되는 항목의 목록을 유지 관리합니다. [10대 웹 응용 프로그램 보안 위험](https://owasp.org/www-project-top-ten/).
+[OWASP(Open Web Application Security Project](https://owasp.org/))에서는 [10대 웹 응용 프로그램 보안 위험](https://owasp.org/www-project-top-ten/)에 대한 목록을 유지 관리합니다.
 
-다음은 CRX가 이러한 자산을 처리하는 방법에 대한 설명과 함께 나와 있습니다.
+다음은 CRX에서 이러한 템플릿을 처리하는 방법에 대한 설명과 함께 나와 있습니다.
 
 ## 1. 주사 {#injection}
 
@@ -30,13 +30,13 @@ ht-degree: 0%
 
 ## 2. XSS(크로스 사이트 스크립팅) {#cross-site-scripting-xss}
 
-일반적인 완화 방법은 를 기반으로 서버측 XSS 보호 라이브러리를 사용하여 사용자 생성 콘텐츠의 모든 출력을 인코딩하는 것입니다. [OWASP 인코더](https://owasp.org/www-project-java-encoder/) 및 [앤티사미](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
+일반적인 완화 방법은 [OWASP 인코더](https://owasp.org/www-project-java-encoder/) 및 [AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project)를 기반으로 하는 서버측 XSS 보호 라이브러리를 사용하여 사용자 생성 콘텐츠의 모든 출력을 인코딩하는 것입니다.
 
 XSS는 테스트 및 개발 기간 동안 최우선 순위가 되며, 발견된 문제는 (일반적으로) 즉시 해결됩니다.
 
 ## 3. 손상된 인증 및 세션 관리 {#broken-authentication-and-session-management}
 
-AEM은 사운드 및 입증된 인증 기술을 사용하여 [아파치 잭래빗](https://jackrabbit.apache.org/jcr/index.html) 및 [Apache Sling](https://sling.apache.org/). 브라우저/HTTP 세션은 AEM에서 사용되지 않습니다.
+AEM은 [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) 및 [Apache Sling](https://sling.apache.org/)을(를) 사용하여 사운드 및 검증된 인증 기술을 사용합니다. 브라우저/HTTP 세션은 AEM에서 사용되지 않습니다.
 
 ## 4. 비보안 직접 개체 참조 {#insecure-direct-object-references}
 
@@ -46,13 +46,13 @@ AEM은 사운드 및 입증된 인증 기술을 사용하여 [아파치 잭래�
 
 CSRF(교차 사이트 요청 위조)는 모든 양식 및 AJAX 요청에 암호화 토큰을 자동으로 삽입하고 모든 POST에 대해 서버에서 이 토큰을 확인하여 완화됩니다.
 
-또한 AEM에는 를 구성할 수 있는 레퍼러 헤더 기반 필터가 제공됩니다. *전용* 목록에 정의된 특정 호스트의 POST 요청을 허용합니다.
+또한 AEM에는 레퍼러 헤더 기반 필터가 함께 제공됩니다. 이 필터는 *only*(목록에 정의된) 특정 호스트의 POST 요청을 허용하도록 구성할 수 있습니다.
 
 ## 6. 보안 구성 오류 {#security-misconfiguration}
 
-모든 소프트웨어가 항상 올바르게 구성되었다고 보장할 수는 없다. 그러나 Adobe은 가능한 많은 지침을 제공하고 가능한 한 간단하게 구성을 만들기 위해 노력하고 있습니다. 또한 AEM은 [통합 보안 상태 점검](/help/sites-administering/operations-dashboard.md) 보안 구성을 한눈에 모니터링할 수 있습니다.
+모든 소프트웨어가 항상 올바르게 구성되었다고 보장할 수는 없다. 그러나 Adobe은 가능한 많은 지침을 제공하고 가능한 한 간단하게 구성을 만들기 위해 노력하고 있습니다. 또한 AEM에는 보안 구성을 한눈에 모니터링할 수 있는 [통합 보안 상태 확인](/help/sites-administering/operations-dashboard.md)이 함께 제공됩니다.
 
-리뷰 [보안 검사 목록](/help/sites-administering/security-checklist.md) 단계별 경화 지침을 제공하는 추가 정보입니다.
+단계별 강화 지침을 제공하는 자세한 내용은 [보안 검사 목록](/help/sites-administering/security-checklist.md)을 검토하십시오.
 
 ## 7. 비보안 암호화 저장소 {#insecure-cryptographic-storage}
 
@@ -62,7 +62,7 @@ CSRF(교차 사이트 요청 위조)는 모든 양식 및 AJAX 요청에 암호�
 
 ## 8. URL 액세스 제한 실패 {#failure-to-restrict-url-access}
 
-저장소를 통해 다음을 설정할 수 있습니다. [세분화된 권한(JCR에 의해 지정됨)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) 액세스 제어 항목을 통해 지정된 경로에 있는 지정된 사용자 또는 그룹에 대해 액세스 제한은 저장소에 의해 적용됩니다.
+저장소를 사용하면 액세스 제어 항목을 통해 지정된 경로에 있는 지정된 사용자 또는 그룹에 대해 [정교하게 부여된 권한(JCR에서 지정)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)을 설정할 수 있습니다. 액세스 제한은 저장소에 의해 적용됩니다.
 
 ## 9. 전송 계층 보호 부족 {#insufficient-transport-layer-protection}
 

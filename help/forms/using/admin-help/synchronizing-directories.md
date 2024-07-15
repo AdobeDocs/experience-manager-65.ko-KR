@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 디렉터리 동기화 {#synchronizing-directories}
 
-도메인을 동기화하려면 수동 동기화 또는 예약 동기화를 수행하도록 선택할 수 있습니다. A *수동 동기화* 선택한 도메인을 동기화합니다. A *예약된 동기화* 모든 도메인을 동기화합니다.
+도메인을 동기화하려면 수동 동기화 또는 예약 동기화를 수행하도록 선택할 수 있습니다. *수동 동기화*&#x200B;는 선택한 모든 도메인을 동기화합니다. *예약된 동기화*&#x200B;가 모든 도메인을 동기화합니다.
 
 디렉토리 동기화는 디렉토리 설정에 지정한 디렉토리 서버의 세부 정보를 사용자 관리 데이터베이스로 가져오는 데 사용됩니다. 나중에 디렉토리 서버에서 변경 또는 업데이트가 발생하는 경우 수동 동기화를 수행할 수도 있습니다. 예를 들어, 사용자 및 그룹이 추가되거나 사용자의 계정에 변경 사항이 적용된 경우 수동으로 동기화할 수 있습니다.
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. 다음을 참조하십시오 [제품 라이프사이클 문서 Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. [제품 수명 주기 문서 Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)을 참조하세요.
 
 ## 델타 디렉토리 동기화 활성화 {#enable-delta-directory-synchronization}
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
 1. 델타 동기화(Delta Synch)에서 확인란을 선택하고 저장(Save)을 클릭합니다.
-1. 델타 디렉토리 동기화 기능을 사용할 각 엔터프라이즈 도메인에 대한 디렉토리 설정을 편집합니다. 사용자 설정 및 그룹 설정 페이지에서 타임스탬프 수정 설정을 찾아 을 입력합니다 `modify TimeStamp` 을 값으로 추가합니다. Enterprise 도메인 편집에 대한 자세한 내용은 [기존 도메인 편집 및 변환](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+1. 델타 디렉토리 동기화 기능을 사용할 각 엔터프라이즈 도메인에 대한 디렉토리 설정을 편집합니다. 사용자 설정 및 그룹 설정 페이지에서 타임스탬프 수정 설정을 찾아 값으로 `modify TimeStamp`을(를) 입력합니다. Enterprise 도메인 편집에 대한 자세한 내용은 [기존 도메인 편집 및 변환](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)을 참조하십시오.
 
 ## 동기화 중 상세 로깅 활성화 또는 비활성화 {#enable-or-disable-detailed-logging-during-synchronization}
 

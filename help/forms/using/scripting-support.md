@@ -1,6 +1,6 @@
 ---
 title: HTML5 양식에 대한 스크립팅 지원
-description: JavaScript, FormCalc 속성 및 HTML 5 Forms에서 지원되는 기타 메서드.
+description: JavaScript, FormCalc 속성 및 HTML 5 Forms에서 지원되는 기타 메서드를 참조하십시오.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -32,10 +32,10 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   <tr>
    <td><code>prevText</code></td>
    <td>사용자의 작업에 따라 필드의 내용이 변경되기 전에 내용을 지정합니다. 이 값은 실행 취소 기능과 유사하게 리콜할 수 있습니다.</td>
-   <td><p>드롭다운 및 목록 상자에서는 작동하지 않습니다. <code>PrevText </code>이 다음 경우에 제대로 작동하지 않습니다.</p>
+   <td><p>드롭다운 및 목록 상자에서는 작동하지 않습니다. <code>PrevText </code>이(가) 다음 경우에 제대로 작동하지 않습니다.</p>
     <ul>
      <li>iPad의 숫자 필드에 일부 특수 문자 키(예: $ 또는 또는 &amp; 또는 @ 이상)를 입력할 때 </li>
-     <li>날짜 필드(달력을 통해 날짜를 입력하는 경우).<br /> </li>
+     <li>날짜 필드(날짜를 달력으로 입력하는 경우)의 경우.<br /> </li>
     </ul> <p>스크립트를 통한 값 설정은 지원되지 않습니다.</p> </td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   <tr>
    <td><code>newtext</code></td>
    <td>사용자 작업에 대한 응답으로 변경된 필드의 내용을 지정합니다.</td>
-   <td><p>다음 <code>newText</code> 다음 경우에 대한 속성이 제대로 작동하지 않습니다.</p>
+   <td><p>다음 경우에 대해 <code>newText</code> 속성이 제대로 작동하지 않습니다.</p>
     <ul>
      <li>텍스트 선택-바꾸기 시</li>
      <li>텍스트 삭제, 복사 및 붙여넣기에 대한 정보.</li>
@@ -95,7 +95,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   <tr>
    <td><code>apptype</code></td>
    <td>호스트의 애플리케이션 유형을 반환합니다. 클라이언트 응용 프로그램에만 사용할 수 있습니다.</td>
-   <td>반환 <code>HTML 5</code>.</td>
+   <td><code>HTML 5</code>을(를) 반환합니다</td>
   </tr>
   <tr>
    <td><code>name</code></td>
@@ -202,17 +202,17 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   <tr>
    <td><code>formattedValue</code></td>
    <td>이 필드의 서식 있는 값을 지정합니다.</td>
-   <td>설정 <code>formattedValue</code> 통과 스크립트는 지원되지 않습니다.</td>
+   <td>스크립트를 통해 <code>formattedValue</code>을(를) 설정할 수 없습니다.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>이 필드의 편집 값을 지정합니다.</td>
-   <td>설정 <code>editValue </code>통과 스크립트는 지원되지 않습니다.</td>
+   <td>스크립트를 통해 <code>editValue </code>을(를) 설정할 수 없습니다.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>이 필드에 대한 형식 유효성 검사 메시지 문자열을 지정합니다.</td>
-   <td>설정 <code>formatMessage </code>통과 스크립트는 지원되지 않습니다.</td>
+   <td>스크립트를 통해 <code>formatMessage </code>을(를) 설정할 수 없습니다.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -479,7 +479,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>instanceManager</td>
-   <td>instanceManager 객체는 양식 모델 객체의 인스턴스 생성, 제거 및 이동을 관리합니다.<br /> </td>
+   <td>instanceManager 개체는 양식 모델 개체의 인스턴스 만들기, 제거 및 이동을 관리합니다.<br /> </td>
    <td>없음</td>
   </tr>
  </tbody>
@@ -634,8 +634,8 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>가장자리</td>
-   <td>Edge 객체는 호, 선 또는 테두리 또는 사각형의 한 면을 설명합니다.<br /> </td>
-   <td>색상, 상한 등과 같은 속성은 지원되지 않습니다.<br /> </td>
+   <td>Edge 개체는 호, 선 또는 테두리 또는 사각형의 한 쪽을 설명합니다.<br /> </td>
+   <td>color, cap 등의 특성은 지원되지 않습니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -714,7 +714,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>ui</td>
-   <td>ui 객체는 양식 객체의 사용자 인터페이스 설명을 포함합니다.<br /> </td>
+   <td>ui 개체는 양식 개체의 사용자 인터페이스 설명을 포함합니다.<br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -773,7 +773,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   <tr>
    <td>테두리</td>
    <td>border 개체는 checkButton 개체 주위의 테두리에 대해 설명합니다. </td>
-   <td>변경 사항은 모델에 반영되며 스크립팅에 사용할 수 있지만 HTML 요소에 동기화되지 않습니다. 따라서 변경 사항이 UI에 반영되지 않습니다.<br /> </td>
+   <td>변경 사항은 모델에 반영되며 스크립팅에 사용할 수 있지만 HTML 요소에 동기화되지 않습니다. 따라서 변경 내용이 UI에 반영되지 않습니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -863,7 +863,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>가장자리</td>
-   <td>Edge 객체는 호, 선 또는 테두리 또는 사각형의 한 면을 설명합니다.<br /> </td>
+   <td>Edge 개체는 호, 선 또는 테두리 또는 사각형의 한 쪽을 설명합니다.<br /> </td>
    <td>색상, 상한 등과 같은 속성은 지원되지 않습니다.</td>
   </tr>
  </tbody>
@@ -880,7 +880,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>테두리</td>
-   <td>border 객체는 객체 주위의 테두리를 설명합니다.<br /> </td>
+   <td>border 개체는 개체 주위의 테두리를 설명합니다.<br /> </td>
    <td>없음</td>
   </tr>
  </tbody>
@@ -992,7 +992,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>계산</td>
-   <td>calculate 객체는 필드 값의 계산을 제어합니다.<br /> </td>
+   <td>계산 개체는 필드 값의 계산을 제어합니다.<br /> </td>
    <td>없음</td>
   </tr>
  </tbody>
@@ -1009,7 +1009,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>가장자리</td>
-   <td>Edge 객체는 호, 선 또는 테두리 또는 사각형의 한 면을 설명합니다.<br /> </td>
+   <td>Edge 개체는 호, 선 또는 테두리 또는 사각형의 한 쪽을 설명합니다.<br /> </td>
    <td>색상, 상한 등과 같은 속성은 지원되지 않습니다. </td>
   </tr>
  </tbody>
@@ -1026,7 +1026,7 @@ HTML 5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 �
   </tr>
   <tr>
    <td>가장자리</td>
-   <td>Edge 객체는 호, 선 또는 테두리 또는 사각형의 한 면을 설명합니다.<br /> </td>
+   <td>Edge 개체는 호, 선 또는 테두리 또는 사각형의 한 쪽을 설명합니다.<br /> </td>
    <td>색상, 상한 등과 같은 속성은 지원되지 않습니다. </td>
   </tr>
  </tbody>
@@ -1156,12 +1156,12 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
   <tr>
    <td>대상</td>
    <td><br type="_moz" /> </td>
-   <td>for i = 100 ~ 1 <br /> do s = s + i endfor</td>
+   <td>(i = 100 ~ 1 <br /> do s = s + i endfor)</td>
   </tr>
   <tr>
    <td>각</td>
    <td><br type="_moz" /> </td>
-   <td>(1, 2, 3)의 각 i에 대해 <br /> do s = s + i endfor</td>
+   <td>(1, 2, 3) <br />의 각 i에 대해 s = s + i endfor</td>
   </tr>
   <tr>
    <td>함수 선언</td>
@@ -1203,7 +1203,7 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
    1. Rad2Deg()
    1. Pi()
 
-1. **재무 기능**
+1. **재무 함수**
 
    1. Apr()
    1. Cterm()
@@ -1271,7 +1271,7 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
   <tr>
    <td>app.execDialog()</td>
    <td>사용자에게 모달 대화 상자를 제공합니다. 모달 대화 상자는 사용자가 닫아야 호스트 응용 프로그램을 다시 사용할 수 있습니다.</td>
-   <td>작업이 수행되지 않습니다.<br /> </td>
+   <td>작업이 수행되지 않았습니다.<br /> </td>
   </tr>
   <tr>
    <td>app.launchURL()</td>
@@ -1280,12 +1280,12 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
   </tr>
   <tr>
    <td>app.setInterval()</td>
-   <td>JavaScript 스크립트와 기간을 지정합니다. 이 스크립트는 기간이 경과할 때마다 실행됩니다. 이 메서드의 반환 값은 JavaScript 변수에 유지되어야 합니다. 그렇지 않으면 interval 개체가 가비지 수집에 해당하므로 시계가 중지됩니다. 주기적 실행을 종료하려면 반환된 간격 객체를 clearInterval에 전달합니다.</td>
+   <td>JavaScript 스크립트 및 기간을 지정합니다. 이 스크립트는 기간이 경과할 때마다 실행됩니다. 이 메서드의 반환 값은 JavaScript 변수에 유지되어야 합니다. 그렇지 않으면 interval 개체가 가비지 수집에 해당하므로 시계가 중지됩니다. 주기적 실행을 종료하려면 반환된 간격 객체를 clearInterval에 전달합니다.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>JavaScript 스크립트와 기간을 지정합니다. 이 기간이 지난 후 스크립트는 한 번만 실행됩니다. 이 메서드의 반환 값은 JavaScript 변수에 유지되어야 합니다. 그렇지 않으면 시간 초과 개체가 가비지 수집에 해당되어 클럭이 중지됩니다. 시간 초과 이벤트를 취소하려면 반환된 시간 초과 개체를 clearTimeOut에 전달합니다.</td>
+   <td>JavaScript 스크립트 및 기간을 지정합니다. 이 기간이 지난 후 스크립트는 한 번만 실행됩니다. 이 메서드의 반환 값은 JavaScript 변수에 유지되어야 합니다. 그렇지 않으면 시간 초과 개체가 가비지 수집에 해당되어 클럭이 중지됩니다. 시간 초과 이벤트를 취소하려면 반환된 시간 초과 개체를 clearTimeOut에 전달합니다.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1296,7 +1296,7 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
   <tr>
    <td>app.clearTimeOut()</td>
    <td>이전에 등록된 시간 초과 간격을 취소합니다. 이러한 간격은 처음에 setTimeOut에 의해 설정됩니다.</td>
-   <td>HTML 5 양식에서는 API가 올바르게 작동하지 않습니다.<br /> </td>
+   <td>HTML 5 폼에서 API가 올바르게 작동하지 않습니다.<br /> </td>
   </tr>
   <tr>
    <td>app.eval()</td>
@@ -1351,4 +1351,4 @@ FormCalc는 전자 양식 중심 논리 및 계산 루트를 만들기 위한 XF
 
 >[!NOTE]
 >
->HTML 5 양식은 클라이언트측(브라우저)에서 렌더링됩니다. 클라이언트측 사용 **유효성 검사** 및 **계산** 서버측 스크립트 대신 스크립트가 표시됩니다.
+>HTML 5 양식은 클라이언트측(브라우저)에서 렌더링됩니다. 서버측 스크립트 대신 클라이언트측 **validate** 및 **calculate** 스크립트를 사용하십시오.

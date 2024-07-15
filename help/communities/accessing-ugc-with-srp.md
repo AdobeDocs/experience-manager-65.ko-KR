@@ -1,6 +1,6 @@
 ---
 title: SRP를 사용하여 UGC에 액세스
-description: 사이트가 ASRP 또는 MSRP를 사용하도록 구성된 경우 실제 UGC는 AEM 노드 저장소(JCR)에 저장되지 않습니다
+description: 사이트가 ASRP 또는 MSRP를 사용하도록 구성된 경우 실제 UGC는 AEM의 노드 저장소(JCR)에 저장되지 않습니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -21,21 +21,21 @@ ht-degree: 0%
 
 ## SRP 정보 {#about-srp}
 
-모든 AEM Communities 구성 요소 및 기능은 [소셜 구성 요소 프레임워크(SCF)](/help/communities/scf.md)모든 사용자 생성 콘텐츠(UGC)에 액세스하기 위해 SocialResourceProvider API를 호출합니다.
+모든 AEM Communities 구성 요소 및 기능은 모든 사용자 생성 콘텐츠(UGC)에 액세스하기 위해 SocialResourceProvider API를 호출하는 [SCF(소셜 구성 요소 프레임워크)](/help/communities/scf.md)을(를) 기반으로 합니다.
 
-커뮤니티 사이트를 만들기 전에 [SRP(저장소 리소스 제공자)](/help/communities/working-with-srp.md) 은(는) 기본 구현과 일치하는 구현을 선택하도록 구성해야 합니다. [토폴로지](/help/communities/topologies.md). SRP 구현은 세 가지 스토리지 옵션을 기반으로 합니다.
+커뮤니티 사이트를 만들기 전에 기본 [토폴로지](/help/communities/topologies.md)와(과) 일치하는 구현을 선택하도록 [SRP(저장소 리소스 공급자)](/help/communities/working-with-srp.md)을(를) 구성해야 합니다. SRP 구현은 세 가지 스토리지 옵션을 기반으로 합니다.
 
-1. [ASRP](/help/communities/asrp.md) - 주문형 Adobe 스토리지
-1. [MSRP](/help/communities/msrp.md) - MongoDb
+1. [ASRP](/help/communities/asrp.md) - 주문형 Adobe 저장소
+1. [MSRP](/help/communities/msrp.md) - Mongodb
 1. [JSRP](/help/communities/jsrp.md) - JCR
 
 ## UGC 저장소 정보 {#about-ugc-storage}
 
-UGC 저장에 대해 알아야 할 중요한 것은 사이트가 ASRP 또는 MSRP를 사용하도록 구성된 경우 실제 UGC가 AEM에 저장되지 않는다는 것입니다 [노드 저장소](/help/sites-deploying/data-store-config.md) (JCR).
+UGC 저장에 대해 알아야 할 중요한 사항은 사이트가 ASRP 또는 MSRP를 사용하도록 구성된 경우 실제 UGC가 AEM의 [노드 저장소](/help/sites-deploying/data-store-config.md)(JCR)에 저장되지 않는다는 것입니다.
 
 유용한 메타데이터를 제공하기 위해 UGC를 섀도우하는 노드가 JCR에 있을 수 있지만, 이러한 노드는 실제 UGC와 혼동되지 않는다.
 
-다음을 참조하십시오 [저장소 리소스 제공자 개요.](/help/communities/srp.md)
+[저장소 리소스 공급자 개요를 참조하십시오.](/help/communities/srp.md)
 
 ## 우수 사례 {#best-practice}
 
@@ -66,14 +66,14 @@ JCR과 관련된 메서드는 피해야 합니다.
 
 ### 검색 컬렉션 사용 {#use-search-collections}
 
-SRP마다 기본 쿼리 언어가 다를 수 있습니다. 에서 메서드 사용 [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) 적절한 쿼리 언어를 실행하는 패키지입니다.
+SRP마다 기본 쿼리 언어가 다를 수 있습니다. [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) 패키지의 메서드를 사용하여 적절한 쿼리 언어를 실행하십시오.
 
-자세한 내용은 [Essentials 검색](/help/communities/search-implementation.md).
+자세한 내용은 [Search Essentials](/help/communities/search-implementation.md)을(를) 참조하십시오.
 
 ## 리소스 {#resources}
 
-* [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) - UGC 공통 저장소에 사용 가능한 SRP 선택 사항에 대해 설명합니다.
+* [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) - UGC 공용 저장소에 사용 가능한 SRP 선택 사항에 대해 설명합니다.
 * [저장소 리소스 공급자 개요](/help/communities/srp.md) - 소개 및 저장소 사용 개요
-* [SRP 및 UGC 필수 패키지](/help/communities/srp-and-ugc.md) - SRP 유틸리티 메서드 및 예제
-* [Essentials 검색](/help/communities/search-implementation.md) - UGC 검색에 필수적인 정보
+* [SRP 및 UGC Essentials](/help/communities/srp-and-ugc.md) - SRP 유틸리티 메서드 및 예제
+* [Search Essentials](/help/communities/search-implementation.md) - UGC 검색에 필요한 필수 정보
 * [SocialUtils 리팩터링](/help/communities/socialutils.md) - 더 이상 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑

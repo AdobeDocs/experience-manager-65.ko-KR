@@ -32,13 +32,13 @@ CIF 추가 기능은 상거래 관련 기능으로 AEM 작성을 확장합니다
 
 ![제품 선택기](/help/commerce/cif/assets/authoring/product-picker-variation.png)
 
-**예제 제품 티저**
+**제품 티저 예제**
 
-![선택 항목이 없는 티저 구성 요소](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
+선택 항목이 없는 ![티저 구성 요소](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
 이 구성 요소의 구성 대화 상자에는 제품이 필요합니다. CIF은 SKU를 제품 식별자로 사용합니다. 작성자가 직접 sku를 입력하거나 폴더 아이콘을 클릭하여 제품 선택기를 열 수 있습니다. 선택기를 선택하고 닫으면 구성 요소 대화 상자에 선택한 제품의 이름이 표시됩니다
 
-![선택 영역이 있는 티저 구성 요소](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
+![선택 항목이 있는 티저 구성 요소](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 
 ### 범주 선택기 {#category-picker}
 
@@ -46,21 +46,21 @@ CIF 추가 기능은 상거래 관련 기능으로 AEM 작성을 확장합니다
 
 ![범주 선택기](/help/commerce/cif/assets/authoring/category-picker.png)
 
-**예제 카테고리 캐러셀**
+**범주 회전 메뉴 예제**
 
-![선택 항목 없이 구성 요소 회전](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
+![선택 없이 슬라이드 구성 요소](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
 이 구성 요소의 구성 대화 상자에는 1 : n 카테고리가 필요합니다. CIF은 UID / ID를 범주 식별자로 사용합니다. 작성자가 직접 UID를 입력하거나 폴더 아이콘을 클릭하여 범주 선택기를 열 수 있습니다. 선택기를 선택하고 닫으면 구성 요소 대화 상자에 선택한 범주의 이름이 표시됩니다.
 
 ![선택 영역이 있는 슬라이드 구성 요소](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 
-## Universal Editor {#universal-editor}
+## 범용 편집기 {#universal-editor}
 
 범용 편집기는 실시간 제품 데이터 및 관련 제품 콘텐츠에 액세스할 수 있는 기능으로 확장되었습니다.
 
 ### 제품 데이터 액세스 {#access-product-data}
 
-편집기 사이드 패널의 &#39;에셋&#39; 탭에서는 &#39;제품&#39; 유형을 선택하여 제품 데이터에 액세스할 수 있습니다. 데이터는 구성된 상거래 끝점에서 실시간으로 가져옵니다. 필터는 특정 제품을 찾기 위한 상거래 끝점의 전체 텍스트 검색입니다.
+편집기 측면 패널의 &#39;Assets&#39; 탭에서는 &#39;제품&#39; 유형을 선택하여 제품 데이터에 액세스할 수 있습니다. 데이터는 구성된 상거래 끝점에서 실시간으로 가져옵니다. 필터는 특정 제품을 찾기 위한 상거래 끝점의 전체 텍스트 검색입니다.
 
 ![제품 데이터 사이드 패널](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
@@ -74,13 +74,13 @@ CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입�
 
     >[!NOTE]
     >
-    >카테고리와 제품을 모두 선택하면 제품이 가져옵니다.
+    >범주와 제품을 모두 선택하면 제품을 사용합니다.
 
 이렇게 하면 페이지가 렌더링될 때 실제 링크로 대체되는 자리 표시자 링크가 만들어집니다.
 
 ### 관련 제품 콘텐츠 액세스 {#associated-content}
 
-범용 편집기가 페이지에서 1:n 제품을 인식하면 사이드 패널에 &quot;연결된 Commerce 컨텐츠&quot; 탭이 자동으로 표시됩니다. 이 탭을 사용하면 작성자가 제품과 함께 태그가 지정된 AEM 콘텐츠에 빠르게 액세스할 수 있습니다(참조) [관련 AEM 콘텐츠를 사용하여 제품 데이터 강화](./enrich-product-associated-content.md) 을 참조하십시오. 이 탭은 페이지에 여러 제품이 있는 경우 콘텐츠 유형 및 특정 제품을 필터링할 수 있는 드롭다운을 제공합니다. 콘텐츠 사용은 &quot;에셋&quot; 탭의 콘텐츠를 사용하는 것과 정확히 동일하게 작동합니다.
+범용 편집기가 페이지에서 1:n 제품을 인식하면 사이드 패널에 &quot;연결된 Commerce 컨텐츠&quot; 탭이 자동으로 표시됩니다. 이 탭에서는 작성자가 제품에 태그가 지정된 AEM 콘텐츠에 빠르게 액세스할 수 있습니다(자세한 내용은 [관련 AEM 콘텐츠로 제품 데이터 보강](./enrich-product-associated-content.md) 참조). 이 탭은 페이지에 여러 제품이 있는 경우 콘텐츠 유형 및 특정 제품을 필터링할 수 있는 드롭다운을 제공합니다. 컨텐츠 사용은 &quot;Assets&quot; 탭의 컨텐츠를 사용하는 것과 정확히 동일하게 작동합니다.
 
 ![제품 데이터 사이드 패널](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 
@@ -92,7 +92,7 @@ CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입�
 
 사용된 날짜가 준비되면 구성 요소에 시각적 표시기가 표시됩니다.
 
-![단계적 지표](/help/commerce/cif/assets/authoring/staged-indicator.png)
+![준비된 표시기](/help/commerce/cif/assets/authoring/staged-indicator.png)
 
 ## Omnisearch {#omnisearch}
 
@@ -102,6 +102,6 @@ Omnisearch를 사용하면 전문가가 전체 텍스트 검색을 사용하여 
 
 결과는 유형별로 그룹화됩니다.
 
-    >[!NOTE]
+Omnisearch의     >[!NOTE]
     >
-    >Omnisearch의 전체 텍스트 검색은 연결된 콘텐츠 조각을 지원하지 않습니다. SKU 또는 UID를 사용하여 관련 콘텐츠 조각을 찾습니다.
+    >전체 텍스트 검색은 연결된 콘텐츠 조각을 지원하지 않습니다. SKU 또는 UID를 사용하여 연결된 콘텐츠 조각을 찾습니다.

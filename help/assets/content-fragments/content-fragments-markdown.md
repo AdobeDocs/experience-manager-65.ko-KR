@@ -14,7 +14,7 @@ ht-degree: 88%
 
 # Markdown {#markdown}
 
-다음과 같은 경우: [작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), 콘텐츠 조각 편집기는 *Markdown* headless 콘텐츠를 쉽게 작성할 수 있는 구문:
+[작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)하는 경우 콘텐츠 조각 편집기에서 *Markdown* 구문을 사용하여 Headless 콘텐츠를 쉽게 작성할 수 있습니다.
 
 ![Markdown 편집기](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

@@ -27,25 +27,25 @@ ht-degree: 2%
 * Adobe Experience Manager
 * Adobe Campaign 6.1
 
-다음을 참조하십시오 [Adobe Campaign 6.1과 AEM 통합](/help/sites-administering/campaignonpremise.md) 추가 정보.
+자세한 내용은 [AEM과 Adobe Campaign 6.1 통합](/help/sites-administering/campaignonpremise.md)을 참조하십시오.
 
 ## 예제 1: AEM에서 Adobe Campaign으로 {#example-aem-to-adobe-campaign}
 
-AEM과 Campaign 간의 표준 통합은 JSON 및 JSSP(JavaScript Server Page)를 기반으로 합니다. 이러한 JSSP 파일은 Campaign 콘솔에서 찾을 수 있으며 모두 다음으로 시작합니다. **aec** (Adobe Experience Cloud).
+AEM과 Campaign 간의 표준 통합은 JSON 및 JSSP(JavaScript 서버 페이지)를 기반으로 합니다. 이러한 JSSP 파일은 Campaign 콘솔에서 찾을 수 있으며 모두 **aec**(Adobe Experience Cloud)로 시작합니다.
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
 >[!NOTE]
 >
->[이 예제는 Geometrixx 를 참조하십시오](/help/sites-developing/we-retail.md): 패키지 공유에서 사용할 수 있습니다.
+>[이 예제에서는 패키지 공유에서 사용할 수 있는 Geometrixx](/help/sites-developing/we-retail.md)을(를) 참조하십시오.
 
 이 예에서는 새로운 사용자 정의 JSSP 파일이 만들어지고 AEM 측에서 해당 파일을 호출하여 결과를 검색합니다. 예를 들어 Adobe Campaign에서 데이터를 검색하거나 Adobe Campaign에 데이터를 저장하는 데 사용할 수 있습니다.
 
-1. Adobe Campaign에서 JSSP 파일을 만들려면 **신규** 아이콘.
+1. Adobe Campaign에서 JSSP 파일을 만들려면 **새로 만들기** 아이콘을 클릭합니다.
 
-   ![왼쪽 상단 모서리 근처에 별표가 있는 페이지에 표시된 새 아이콘.](do-not-localize/chlimage_1-4a.png)
+   ![왼쪽 상단 모서리 근처에 별표가 있는 페이지에 표시된 새 아이콘](do-not-localize/chlimage_1-4a.png)
 
-1. 이 JSSP 파일의 이름을 입력합니다. 이 예에서는 **cus:custom.jssp** 사용됨 (즉, 다음 내에 있음) **cus** namespace).
+1. 이 JSSP 파일의 이름을 입력합니다. 이 예제에서는 **cus:custom.jssp**&#x200B;이 사용됩니다(**cus** 네임스페이스에 있음).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -62,9 +62,9 @@ AEM과 Campaign 간의 표준 통합은 JSON 및 JSSP(JavaScript Server Page)를
 1. 이 JSSP를 호출할 수 있도록 AEM 측에서 간단한 서블릿을 만듭니다. 이 예에서는 다음과 같이 가정할 수 있습니다.
 
    * AEM과 Campaign 간에 연결이 작동합니다.
-   * Campaign 클라우드 서비스가에 구성됨 **/content/geometrixx-outdoors**
+   * Campaign 클라우드 서비스가 **/content/geometrixx-outdoors**&#x200B;에 구성되어 있습니다.
 
-   이 예제에서 가장 중요한 개체는 입니다. **GenericCampaignConnector**- Adobe Campaign 측에서 jssp 파일을 호출(가져오기 및 게시)할 수 있습니다.
+   이 예제에서 가장 중요한 개체는 Adobe Campaign 측에서 jssp 파일을 호출(가져오기 및 게시)할 수 있는 **GenericCampaignConnector**&#x200B;입니다.
 
    다음은 작은 코드 조각입니다.
 
@@ -169,7 +169,7 @@ AEM에서는 siteadmin 탐색기 보기의 어느 위치에서나 사용 가능�
 
 >[!NOTE]
 >
->[이 예제는 Geometrixx 를 참조하십시오](/help/sites-developing/we-retail.md): 패키지 공유에서 사용할 수 있습니다.
+>[이 예제에서는 패키지 공유에서 사용할 수 있는 Geometrixx](/help/sites-developing/we-retail.md)을(를) 참조하십시오.
 
 탐색기의 각 노드에 대해 연결된 API가 있습니다. 예를 들어 노드의 경우:
 
@@ -179,13 +179,13 @@ API:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-URL의 끝 **.1.json** 바꿀 수 있는 사람 **.2.json**, **.3.json**&#x200B;에 관심이 있는 하위 수준 수에 따라 다릅니다. 모두 키워드를 얻으려면, **무한대** 사용 가능:
+URL **.1.json**&#x200B;의 끝은 가져오려는 하위 수준의 수에 따라 **.2.json**, **.3.json**(으)로 바꿀 수 있습니다. 모두 키워드를 얻으려면 **무한**&#x200B;을(를) 사용할 수 있습니다.
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 API를 사용하려면 기본적으로 AEM에서 기본 인증을 사용합니다.
 
-이름이 인 JS 라이브러리 **amcIntegration.js** 는 여러 다른 논리 간에 해당 논리를 구현하는 6.1.1(빌드 8624 이상)에서 사용할 수 있습니다.
+이름이 **amcIntegration.js**&#x200B;인 JS 라이브러리는 여러 다른 라이브러리 간에 해당 논리를 구현하는 6.1.1(빌드 8624 이상)에서 사용할 수 있습니다.
 
 ### AEM API 호출 {#aem-api-call}
 

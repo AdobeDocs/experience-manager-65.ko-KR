@@ -69,7 +69,7 @@ Adobe은 두 가지 스타일을 만들지 않고 모든 화면과 장치에 적
 * **참조**
 * **필터**
 
-기본값은 입니다 **콘텐츠만** (레일 숨김).
+기본값은 **컨텐츠 전용**(레일 숨김)입니다.
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -79,7 +79,7 @@ Adobe은 두 가지 스타일을 만들지 않고 모든 화면과 장치에 적
 
 ### 콘텐츠 프레임 {#content-frame}
 
-페이지 콘텐츠는 콘텐츠 프레임에 렌더링됩니다. 컨텐츠 프레임은 편집기와 독립적입니다. 즉, CSS 또는 JavaScript로 인해 충돌이 발생하지 않도록 합니다.
+페이지 콘텐츠는 콘텐츠 프레임에 렌더링됩니다. 컨텐츠 프레임은 편집기와 독립적입니다. 따라서 CSS 또는 JavaScript으로 인한 충돌이 발생하지 않습니다.
 
 콘텐츠 프레임은 창의 오른쪽 섹션에 있으며 도구 모음 아래에 있습니다.
 
@@ -89,7 +89,7 @@ Adobe은 두 가지 스타일을 만들지 않고 모든 화면과 장치에 적
 
 편집기 프레임은 편집 기능을 실현합니다.
 
-편집기 프레임은 모든 의 컨테이너(추상)입니다. *페이지 작성 요소*. 콘텐츠 프레임의 맨 위에 있으며 다음을 포함합니다.
+편집기 프레임은 모든 *페이지 작성 요소*&#x200B;에 대한 컨테이너(추상)입니다. 콘텐츠 프레임의 맨 위에 있으며 다음을 포함합니다.
 
 * 상단 도구 모음
 * 사이드 패널
@@ -106,9 +106,9 @@ Adobe은 두 가지 스타일을 만들지 않고 모든 화면과 장치에 적
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
-### 사이드 패널 - 에셋 {#side-panel-assets}
+### 사이드 패널 - Assets {#side-panel-assets}
 
-에셋 탭의 에셋 범위에서 선택할 수 있습니다. 특정 용어를 필터링하거나 그룹을 선택할 수도 있습니다.
+Assets 탭에서 에셋 범위에서 선택할 수 있습니다. 특정 용어를 필터링하거나 그룹을 선택할 수도 있습니다.
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -126,7 +126,7 @@ Adobe은 두 가지 스타일을 만들지 않고 모든 화면과 장치에 적
 
 ### 오버레이 {#overlays}
 
-이러한 구성 요소는 콘텐츠 프레임을 오버레이하고 [레이어](#layer) 구성 요소 및 해당 컨텐츠와 (투명하게) 상호 작용하는 방법을 실현하기 위해
+이러한 구성 요소는 콘텐츠 프레임을 오버레이하고 [레이어](#layer)에서 구성 요소 및 해당 콘텐츠와 (투명하게) 상호 작용할 수 있는 방법을 구현하기 위해 사용됩니다.
 
 오버레이는 실제로 컨텐츠 프레임에 적절한 구성 요소를 오버레이하지만 편집기 프레임(다른 모든 페이지 작성 요소와 함께)에 있습니다.
 
@@ -165,6 +165,6 @@ AEM에는 편집, 미리보기, 주석 달기 등 페이지 작성을 위해 이
 
 ## 추가 정보 {#further-information}
 
-터치 지원 UI와 관련된 개념에 대한 자세한 내용은 다음을 참조하십시오. [AEM 터치 지원 UI의 개념](/help/sites-developing/touch-ui-concepts.md).
+터치 사용 UI의 개념에 대한 자세한 내용은 [AEM 터치 사용 UI의 개념](/help/sites-developing/touch-ui-concepts.md)을 참조하십시오.
 
-자세한 기술 정보는 [JS 설명서 세트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) 터치 사용 페이지 편집기용입니다.
+자세한 기술 정보는 터치 사용 페이지 편집기의 [JS 설명서 집합](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)을 참조하십시오.

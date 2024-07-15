@@ -22,7 +22,7 @@ PDF 문서에 사용 권한을 적용하려면 Acrobat Reader DC 확장에 대�
 
 평가 자격 증명을 사용하는 경우 프로덕션 환경으로 이동할 때 프로덕션 자격 증명으로 교체합니다. 만료된 자격 증명 또는 평가 자격 증명을 업데이트하려면 먼저 이전 Acrobat Reader DC 확장 자격 증명을 삭제하십시오.
 
-자격 증명을 얻는 방법에 대한 자세한 내용은 [AEM Forms 설치 준비(단일 서버)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
+자격 증명을 얻는 방법에 대한 자세한 내용은 [AEM 양식(단일 서버) 설치 준비](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf)를 참조하십시오.
 
 Trust Store에 두 개 이상의 Acrobat Reader DC 확장 자격 증명이 포함될 수 있습니다. 이러한 자격 증명 중 하나를 기본 Reader 확장 자격 증명으로 지정합니다. Workbench 사용자가 프로세스 생성 중에 사용할 자격 증명을 결정할 수 없을 때 기본 자격 증명이 사용됩니다. 다음 규칙은 기본 자격 증명에 적용됩니다.
 
@@ -33,7 +33,7 @@ Trust Store에 두 개 이상의 Acrobat Reader DC 확장 자격 증명이 포�
 
 >[!NOTE]
 >
->자격 증명을 프로그래밍 방식으로 가져오고 삭제할 수도 있습니다. (참조: [AEM Forms를 사용한 프로그래밍](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).)
+>자격 증명을 프로그래밍 방식으로 가져오고 삭제할 수도 있습니다. ([AEM 양식을 사용한 프로그래밍](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)을 참조하십시오.)
 
 ## Acrobat Reader DC 확장 자격 증명 가져오기 {#import-a-acrobat-reader-dc-extensions-credential}
 

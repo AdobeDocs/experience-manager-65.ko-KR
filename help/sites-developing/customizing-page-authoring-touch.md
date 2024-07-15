@@ -22,22 +22,22 @@ ht-degree: 39%
 >
 >이 문서는 최신 터치 지원 UI에서 페이지 작성을 사용자 지정하는 방법에 대해 설명하며, 클래식 UI에는 적용되지 않습니다.
 
-Adobe Experience Manager(AEM)는 페이지 작성 기능 및 [콘솔](/help/sites-developing/customizing-consoles-touch.md))을 참조하십시오.
+Adobe Experience Manager(AEM)에서는 작성 인스턴스의 페이지 작성 기능(및 [콘솔](/help/sites-developing/customizing-consoles-touch.md))을 사용자 지정할 수 있는 다양한 메커니즘을 제공합니다.
 
 * Clientlibs
 
   Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구현하는 동시에 표준 함수, 개체 및 메서드를 재사용할 수 있습니다. 사용자 정의할 때 `/apps.` 아래에서 자체적인 clientlib을 만들 수 있습니다. 새 clientlib은 다음을 충족해야 합니다.
 
-   * authoring clientlib에 따라 다름 `cq.authoring.editor.sites.page`
-   * 적절한 것의 일부가 되다 `cq.authoring.editor.sites.page.hook` 범주
+   * 제작 clientlib `cq.authoring.editor.sites.page`에 따라 다릅니다.
+   * 해당 `cq.authoring.editor.sites.page.hook` 범주에 속해야 합니다.
 
 * 오버레이
 
-  오버레이는 노드 정의를 기반으로 하며, 를 사용하여 표준 기능을 오버레이할 수 있습니다. `/libs`)를 사용하십시오(에서). `/apps`). 오버레이를 만들 때 다음과 같이 원본의 1:1 사본이 필요하지 않습니다. [sling 리소스 병합](/help/sites-developing/sling-resource-merger.md) 상속을 허용합니다.
+  오버레이는 노드 정의를 기반으로 하며, 이를 통해 표준 기능(`/libs`의)을 사용자 지정된 기능(`/apps`의)과 오버레이할 수 있습니다. 오버레이를 만들 때 [sling 리소스 병합](/help/sites-developing/sling-resource-merger.md)에서 상속을 허용하므로 원본의 1:1 복사본이 필요하지 않습니다.
 
 >[!NOTE]
 >
->자세한 내용은 [JS 설명서 세트](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+>자세한 내용은 [JS 설명서 집합](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)을 참조하세요.
 
 여러 가지 방법으로 AEM 인스턴스의 페이지 작성 기능을 확장할 수 있습니다. 선택 내용은 아래에 설명되어 있습니다(높은 수준).
 
@@ -45,23 +45,23 @@ Adobe Experience Manager(AEM)는 페이지 작성 기능 및 [콘솔](/help/site
 >
 >자세한 내용은 다음을 참조하십시오.
 >
->* 사용 및 만들기 [clientlibs](/help/sites-developing/clientlibs.md).
->* 사용 및 만들기 [오버레이](/help/sites-developing/overlays.md).
+>* [clientlibs](/help/sites-developing/clientlibs.md)을(를) 사용하고 만드는 중입니다.
+>* [오버레이](/help/sites-developing/overlays.md)를 사용하고 만드는 중입니다.
 >* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
->* [AEM 터치 지원 UI의 구조](/help/sites-developing/touch-ui-structure.md) 페이지 작성에 사용되는 구조적 영역에 대한 세부 정보.
+>* 페이지 작성에 사용되는 구조적 영역에 대한 자세한 내용은 [AEM 터치 사용 UI의 구조](/help/sites-developing/touch-ui-structure.md)를 참조하십시오.
 >
 
 
 >[!CAUTION]
 >
->***금지*** 의 모든 항목 변경 `/libs` 경로.
+>***`/libs` 경로에서 아무 것도 변경하지 마십시오***.
 >
->그 이유는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수 있음).
+>그 이유는 `/libs`의 콘텐츠를 다음에 인스턴스를 업그레이드할 때 덮어쓰기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수도 있음).
 >
 >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
 >
->1. 필요한 항목 다시 만들기(존재하는 그대로) `/libs`) `/apps`
->1. 다음 범위 내에서 변경 `/apps`
+>1. `/apps` 아래에 필요한 항목(즉, `/libs`에 존재하는 항목)을 다시 만듭니다.
+>1. `/apps` 내에서 변경
 
 ## 새 레이어(모드) 추가 {#add-new-layer-mode}
 
@@ -71,7 +71,7 @@ Adobe Experience Manager(AEM)는 페이지 작성 기능 및 [콘솔](/help/site
 
 표준 AEM 인스턴스는 MSM 레이어를 제공합니다. 이는 [다중 사이트 관리](/help/sites-administering/msm.md)와 관련된 데이터에 액세스하며 레이어에서 이러한 데이터를 강조 표시합니다.
 
-작업을 보려면 다음을 편집할 수 있습니다. [We.Retail 언어 사본](/help/sites-developing/we-retail-globalized-site-structure.md) 페이지(또는 다른 라이브 카피 페이지)를 선택하고 **Live Copy 상태** 모드.
+작동 중인 항목을 보려면 [We.Retail 언어 사본](/help/sites-developing/we-retail-globalized-site-structure.md) 페이지(또는 다른 Live Copy 페이지)를 편집하고 **Live Copy 상태** 모드를 선택할 수 있습니다.
 
 다음 위치에서 MSM 레이어 정의(참조용)를 확인할 수 있습니다.
 
@@ -86,7 +86,7 @@ GITHUB의 코드
 GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem 작성-새 레이어 모드 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
-* 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip)
+* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip)(으)로 다운로드
 
 ## 자산 브라우저에 새 선택 카테고리 추가 {#add-new-selection-category-to-asset-browser}
 
@@ -101,24 +101,24 @@ GITHUB의 코드
 GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-authoring-extension-assetfinder-flickr 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
-* 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip)
+* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip)(으)로 다운로드
 
 ## 리소스 필터링 {#filtering-resources}
 
 페이지를 작성할 때 사용자는 종종 리소스(예: 페이지, 구성 요소 및 에셋)에서 선택해야 합니다. 예를 들어 작성자가 항목을 선택해야 하는 목록 형식을 취할 수 있습니다.
 
-목록을 적당한 크기로 유지하고 사용 사례와도 관련되게 하려면 필터를 사용자 정의 조건자 형태로 구현할 수 있습니다. 예를 들어 [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) 구성 요소를 사용하여 사용자가 특정 리소스에 대한 경로를 선택할 수 있습니다. 제공된 경로는 다음과 같은 방식으로 필터링될 수 있습니다.
+목록을 적당한 크기로 유지하고 사용 사례와도 관련되게 하려면 필터를 사용자 정의 조건자 형태로 구현할 수 있습니다. 예를 들어 사용자가 특정 리소스에 대한 경로를 선택할 수 있도록 [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) 구성 요소를 사용하는 경우 표시되는 경로는 다음과 같은 방법으로 필터링될 수 있습니다.
 
 * [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) 상호 작용을 구현하여 사용자 정의 조건자를 구현합니다.
 * 조건자의 이름을 지정하고, `pathbrowser`를 사용할 때 해당 이름을 참조합니다.
 
-사용자 지정 술어 만들기에 대한 자세한 내용은 [이 문서](/help/sites-developing/implementing-custom-predicate-evaluator.md).
+사용자 지정 조건자 만들기에 대한 자세한 내용은 [이 문서](/help/sites-developing/implementing-custom-predicate-evaluator.md)를 참조하십시오.
 
 >[!NOTE]
 >
->를 구현하여 사용자 정의 술어 구현 `com.day.cq.commons.predicate.AbstractNodePredicate` 인터페이스는 클래식 UI에서도 작동합니다.
+>`com.day.cq.commons.predicate.AbstractNodePredicate` 인터페이스를 구현하여 사용자 지정 술어를 구현하는 작업도 클래식 UI에서 작동합니다.
 >
->다음을 참조하십시오 [이 기술 자료 문서](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) 클래식 UI에서 사용자 지정 술어를 구현하는 방법의 예입니다.
+>클래식 UI에서 사용자 지정 조건자를 구현하는 예는 [이 기술 자료 문서](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html)을 참조하십시오.
 
 ## 구성 요소 도구 모음에 새 작업 추가 {#add-new-action-to-a-component-toolbar}
 
@@ -133,7 +133,7 @@ GITHUB의 코드
 GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem 작성-확장 도구 모음-스크린샷 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
-* 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
+* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)(으)로 다운로드
 
 ## 새 바로 편집기 추가 {#add-new-in-place-editor}
 
@@ -158,7 +158,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
            해당 구성 요소에 대해 바로 편집이 트리거될 때 사용되는 인라인 편집기 유형을 정의합니다. 예를 들면 `text`, `textimage`, `image`, `title`과 같습니다.
 
-1. 편집기의 추가 구성 세부 정보는 `config` 구성 및 `plugin` 필요한 플러그인 구성 세부 정보를 포함할 노드입니다.
+1. 구성을 포함하는 `config` 노드와 필요한 플러그인 구성 세부 정보를 포함하는 `plugin` 노드를 사용하여 편집기의 추가 구성 세부 정보를 구성할 수 있습니다.
 
    다음은 이미지 구성 요소의 이미지 자르기 플러그인에 대한 종횡비를 정의하는 예입니다. 제한된 화면 크기의 잠재적 때문에 자르기 종횡비는 전체 화면 편집기로 이동되었으며 해당 편집기에서만 볼 수 있습니다.
 
@@ -215,15 +215,15 @@ GITHUB의 코드
 GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-authoring-extension-inplace-editor 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
-* 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
+* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)(으)로 다운로드
 
 #### 여러 즉석 편집기 구성 {#configuring-multiple-in-place-editors}
 
-구성 요소에 여러 개의 즉석 편집기가 있도록 구성할 수 있습니다. 여러 즉석 편집기가 구성된 경우 적절한 콘텐츠를 선택하고 적절한 편집기를 열 수 있습니다. 다음을 참조하십시오. [여러 즉석 편집기 구성](/help/sites-developing/multiple-inplace-editors.md) 설명서 를 참조하십시오.
+구성 요소에 여러 개의 즉석 편집기가 있도록 구성할 수 있습니다. 여러 즉석 편집기가 구성된 경우 적절한 콘텐츠를 선택하고 적절한 편집기를 열 수 있습니다. 자세한 내용은 [여러 즉석 편집기 구성](/help/sites-developing/multiple-inplace-editors.md) 설명서를 참조하십시오.
 
 ## 새 페이지 작업 추가 {#add-a-new-page-action}
 
-페이지 도구 모음에 새 페이지 작업을 추가하려면(예: ) **사이트로 돌아가기** (콘솔) 작업.
+페이지 도구 모음에 새 페이지 작업을 추가하려면(예: **사이트로 돌아가기**(콘솔) 작업)
 
 ### 코드 샘플 {#code-sample-3}
 
@@ -234,7 +234,7 @@ GITHUB의 코드
 GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-authoring-extension-header-backtosites 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
-* 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
+* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)(으)로 다운로드
 
 ## 활성화 요청 워크플로 사용자 정의 {#customizing-the-request-for-activation-workflow}
 
@@ -246,7 +246,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 이러한 활성화에 대해 사용자 정의 동작을 만들려면 **활성화 요청** 워크플로를 오버레이할 수 있습니다.
 
-1. 위치 `/apps` 오버레이 **사이트** 마법사:
+1. `/apps` 오버레이에서 **사이트** 마법사:
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 
@@ -256,5 +256,5 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
    >
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
-1. 업데이트 [워크플로 모델](/help/sites-developing/workflows-models.md) 필요에 따라 관련 구성/스크립트를 작성합니다.
-1. 에 대한 권한 제거 [`replicate` 작업](/help/sites-administering/security.md#actions) 모든 관련 페이지에 대한 모든 적절한 사용자로부터; 모든 사용자가 페이지를 게시(또는 복제)하려고 할 때 이 워크플로가 기본 작업으로 트리거되도록 하기 위한 것입니다.
+1. 필요에 따라 [워크플로 모델](/help/sites-developing/workflows-models.md) 및 관련 구성/스크립트를 업데이트합니다.
+1. 모든 관련 페이지에 대한 모든 적절한 사용자로부터 [`replicate` 작업](/help/sites-administering/security.md#actions)에 대한 권한을 제거하십시오. 사용자가 페이지를 게시(또는 복제)하려고 할 때 이 워크플로우가 기본 작업으로 트리거되도록 하십시오.

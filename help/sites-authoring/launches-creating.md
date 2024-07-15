@@ -79,14 +79,14 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 
    **다음**&#x200B;을 선택하여 계속 진행합니다.
 
-   ![페이지 포함 여부 지정](assets/chlimage_1-226.png)
+   ![페이지를 포함할지 여부를 지정합니다](assets/chlimage_1-226.png)
 
 1. 마법사의 **속성** 단계에서 다음을 지정할 수 있습니다.
 
    * **론치 제목**: 론치의 이름입니다. 작성자에게 의미가 있는 이름이어야 합니다.
    * **기존 콘텐츠 사용**: 론치를 만드는 데 원래 콘텐츠가 사용됩니다.
    * **새 템플릿을 사용하여 페이지 바꾸기**: 자세한 내용은 [새 템플릿을 사용하여 론치 만들기](#create-launch-with-new-template)를 참조하십시오.
-   * **소스 페이지의 라이브 데이터 상속**: 이 옵션을 선택하면 소스 페이지를 변경할 때 론치 페이지 콘텐츠가 자동으로 업데이트됩니다. 이 옵션은 론치를 다음으로 만들어 이 작업을 수행합니다. [live copy](/help/sites-administering/msm.md).
+   * **소스 페이지의 라이브 데이터 상속**: 이 옵션을 선택하면 소스 페이지를 변경할 때 론치 페이지 콘텐츠가 자동으로 업데이트됩니다. 이 옵션은 론치를 [live copy](/help/sites-administering/msm.md)로 만들어 이 작업을 수행합니다.
 
      기본적으로 이 옵션이 선택되어 있습니다.
 
@@ -98,12 +98,12 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 
    **완료**&#x200B;를 사용하여 콘솔로 돌아가면 다음에서 론치를 보고 액세스할 수 있습니다.
 
-   * 다음 [**론치** 콘솔](/help/sites-authoring/launches.md#the-launches-console)
-   * 다음 [**참조** 다음에서 **사이트** 콘솔](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * [**시작** 콘솔](/help/sites-authoring/launches.md#the-launches-console)
+   * **사이트** 콘솔의 [**참조**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### 새 템플릿을 사용하여 론치 만들기 {#create-launch-with-new-template}
 
-날짜 [론치 만들기](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) 옵션을 사용하여 새 템플릿을 사용할지 여부를 선택할 수 있습니다. **새 템플릿을 사용하여 페이지 바꾸기**
+[론치를 만들](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) 때 다음 옵션을 사용하여 새 템플릿을 사용할지 여부를 선택할 수 있습니다. **새 템플릿을 사용하여 페이지 바꾸기**
 
 >[!CAUTION]
 >
@@ -141,7 +141,7 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 
    ![시작 선택](assets/chlimage_1-230.png)
 
-1. 다음으로 진행 **다음** 다음을 완료합니다. **속성** 다른 론치와 마찬가지로
+1. **다음**&#x200B;을(를) 계속 진행하고 다른 실행 작업과 마찬가지로 **속성**&#x200B;을(를) 완료합니다.
 
    ![속성 지정](assets/chlimage_1-231.png)
 

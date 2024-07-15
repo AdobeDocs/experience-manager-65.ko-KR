@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2011년 8월 5일부터 Adobe은 Content Services ES 고객을 Adobe Digital Enterprise Platform Experience Services로 마이그레이션하고 있습니다. Content Services를 사용하는 고객을 위한 제품 로드맵은 새로운 AEP Experience Services - Core로 이전하는 것입니다. 이 서비스에는 Day Software의 Adobe 획득 과정에서 획득한 최신 모듈식 CRX 아키텍처를 기반으로 구축된 네이티브 콘텐츠 저장소가 포함되어 있습니다.
+>2011년 8월 5일부터 Adobe은 Content Services ES 고객을 Adobe Digital Enterprise Platform Experience Services로 마이그레이션하고 있습니다. Content Services를 사용하는 고객을 위한 제품 로드맵은 새로운 AEP Experience Services - Core로 이전하는 것입니다. 이 서비스에는 Day Software의 Adobe 획득 과정에서 획득한 최신 모듈식 CRX 아키텍처에 구축된 네이티브 콘텐츠 저장소가 포함되어 있습니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 공간 만들기](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -44,11 +44,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍의 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms를 사용한 프로그래밍의 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스 공간 만들기(더 이상 사용되지 않음) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-다음 Java 코드 예제에서는 라는 새 공간을 만듭니다. *테스트 디렉터리* 회사 홈에서. 새 스페이스의 식별 값이 콘솔에 기록됩니다.
+다음 Java 코드 예제에서는 회사 홈에 *테스트 디렉터리*&#x200B;라는 새 공간을 만듭니다. 새 스페이스의 식별 값이 콘솔에 기록됩니다.
 
 ```java
  /*
@@ -244,7 +244,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스에 콘텐츠 추가(더 이상 사용되지 않음) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-다음 Java 코드 예제에서는 라는 PDF 파일을 추가합니다 *MortgageForm.pdf* /Company Home/Test Directory라는 폴더에 작성자 및 설명 속성이 설정됩니다. 새 콘텐츠의 식별 값이 콘솔에 작성됩니다.
+다음 Java 코드 예제에서는 *MortgageForm.pdf*&#x200B;이라는 PDF 파일을 /Company Home/Test Directory라는 폴더에 추가합니다. 작성자 및 설명 속성이 설정됩니다. 새 콘텐츠의 식별 값이 콘솔에 작성됩니다.
 
 ```java
  /*
@@ -367,7 +367,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스에서 콘텐츠 검색(더 이상 사용되지 않음) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-다음 Java 코드 예제에서는 라는 PDF 파일을 검색합니다. *MortgageForm.pdf* /Company 홈에서. PDF 파일이 로컬 파일 시스템에 저장되고 이름이 로 지정됩니다 *UpdatedMortgageForm.pdf*.
+다음 Java 코드 예제에서는 /Company 홈에서 *MortgageForm.pdf*(이)라는 PDF 파일을 검색합니다. PDF 파일이 로컬 파일 시스템에 저장되고 이름이 *UpdatedMortgageForm.pdf*&#x200B;입니다.
 
 ```java
  /*
@@ -473,7 +473,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠 이동(더 이상 사용되지 않음) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-다음 Java 코드 예제에서는 라는 PDF 파일을 이동합니다. *MortgageForm.pdf* /Company Home/Test 디렉토리에서 /Company Home으로 복사합니다. 이동한 콘텐츠의 식별 값이 콘솔에 기록됩니다.
+다음 Java 코드 예제에서는 *MortgageForm.pdf*&#x200B;이라는 PDF 파일을 /Company Home/Test Directory에서 /Company Home으로 이동합니다. 이동한 콘텐츠의 식별 값이 콘솔에 기록됩니다.
 
 ```java
  /*
@@ -797,7 +797,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스 권한 설정(더 이상 사용되지 않음) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
-다음 Java 코드 예제에서는 tony blue라는 사용자에 대한 권한을 설정합니다. 지정된 도메인이 기본 도메인입니다. 소비자 권한이 지정되고 노드는 다음과 같습니다. `/Company Home/Test Directory`.
+다음 Java 코드 예제에서는 tony blue라는 사용자에 대한 권한을 설정합니다. 지정된 도메인이 기본 도메인입니다. 소비자 권한이 지정되었으며 노드는 `/Company Home/Test Directory`입니다.
 
 ```java
  /*

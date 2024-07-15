@@ -24,13 +24,13 @@ ht-degree: 0%
 
 * 데이터는 먼저 가져오고, 구조는 나중에 가져옵니다. 그럴지도.
 * 콘텐츠 계층 구조를 유도합니다. 이러한 상황이 발생하지 않도록 하십시오.
-* 작업 공간은 다음과 같습니다. `clone()`, `merge()`, 및 `update()`.
+* 작업 영역은 `clone()`, `merge()` 및 `update()`입니다.
 * 동일한 이름의 형제 자매를 주의하십시오.
 * 참고문헌은 유해한 것으로 간주된다.
 * 파일은 파일입니다.
 * ID는 사악합니다.
 
-David의 모델은 Jackrabbit wiki에서 찾을 수 있습니다. [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+David의 모델은 Jackrabbit wiki의 [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel)에서 확인할 수 있습니다.
 
 ### 모든 내용이 콘텐츠입니다. {#everything-is-content}
 

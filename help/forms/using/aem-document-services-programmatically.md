@@ -27,11 +27,11 @@ ht-degree: 1%
 
 ## 전제 조건 {#prerequisite}
 
-* DocAssurance 서비스 API를 사용하기 전에 [docAssurance 서비스 구성](/help/forms/using/install-configure-document-services.md).
+* DocAssurance 서비스 API를 사용하기 전에 [DocAssurance 서비스를 구성](/help/forms/using/install-configure-document-services.md)합니다.
 
-* 다운로드 및 구성 [AEM Forms 클라이언트 SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) AEM Maven 프로젝트 포함. AEM Document Services를 사용하여 Maven 프로젝트를 작성하는 데 필요한 클라이언트 클래스는 [AEM Forms 클라이언트 SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
+* AEM Maven 프로젝트로 [AEM Forms 클라이언트 SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)를 다운로드하고 구성합니다. AEM Document Services를 사용하여 Maven 프로젝트를 빌드하는 데 필요한 클라이언트 클래스는 [AEM Forms 클라이언트 SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)에서 사용할 수 있습니다
 
-* 학습 [maven을 사용하여 AEM 프로젝트를 작성하는 방법](/help/sites-developing/ht-projects-maven.md)
+* [Maven을 사용하여 AEM 프로젝트를 빌드하는 방법](/help/sites-developing/ht-projects-maven.md) 알아보기
 
 ## DocAssurance 서비스 {#docassurance-service}
 
@@ -71,7 +71,7 @@ DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니�
 
 >[!NOTE]
 >
->이 모든 서비스는 Javadoc을 URL에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다 [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)
+>이 모든 서비스는 Javadoc을 URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다.
 
 ### 보이지 않는 서명 필드 추가 {#adding-an-invisible-signature-field}
 
@@ -89,19 +89,19 @@ DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니�
   </tr>
   <tr>
    <td><code>inDoc</code></td>
-   <td>PDF이 포함된 문서 객체.<br /> </td>
+   <td>PDF이 포함된 문서 개체.<br /> </td>
   </tr>
   <tr>
    <td><code>signatureFieldName</code><br /> </td>
-   <td>서명 필드의 이름. 이 매개 변수는 필수 항목이며, 값으로 null을 가질 수 없습니다.<br /> </td>
+   <td>서명 필드의 이름. 이 매개 변수는 필수 매개 변수이며 null을 값으로 사용할 수 없습니다.<br /> </td>
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td>A <code>FieldMDPOptionSpec</code> 서명 필드에 서명한 후 잠기는 PDF 문서 필드를 지정하는 개체입니다. 이 매개 변수는 선택 사항이며 null 값을 허용할 수 있습니다.</td>
+   <td>서명 필드에 서명한 후 잠기는 PDF 문서 필드를 지정하는 <code>FieldMDPOptionSpec</code> 개체입니다. 이 매개 변수는 선택 사항이며 null 값을 허용할 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
-   <td>A <code>SeedValueOptions</code> 필드의 다양한 시드 값을 지정하는 개체입니다. T 이 매개 변수는 선택 사항이며 null 값을 허용할 수 있습니다.<span class="acrolinxCursorMarker"></span></td>
+   <td>필드의 다양한 시드 값을 지정하는 <code>SeedValueOptions</code> 개체입니다. T 이 매개 변수는 선택 사항이며 null 값을 허용할 수 있습니다.<span class="acrolinxCursorMarker"></span></td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -237,7 +237,7 @@ public class AddInvisibleSignatureField {
 }
 ```
 
-다음을 사용할 수도 있습니다. [CAdEs](https://en.wikipedia.org/wiki/CAdES_%28computing%29)문서 서명을 위한 사양. 다음 샘플 코드를 사용하여 서명 형식을 다음으로 설정합니다. [카디스](https://en.wikipedia.org/wiki/CAdES_%28computing%29)
+문서에 서명하는 데 [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)사양을 사용할 수도 있습니다. 다음 샘플 코드를 사용하여 서명 형식을 [CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)(으)로 설정합니다.
 
 ```java
 SigningFormat signingFormat = SigningFormat.CAdES;
@@ -278,19 +278,19 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>pageNumber</code></td>
-   <td>서명 필드가 추가되는 페이지 번호입니다. 유효한 값은 문서 내에 포함된 페이지 수에 대한 1입니다. 이 매개 변수는 필수 항목이므로 null 값을 허용할 수 없습니다.<br /> </td>
+   <td>서명 필드가 추가되는 페이지 번호입니다. 유효한 값은 문서 내에 포함된 페이지 수에 대한 1입니다. 이 매개 변수는 필수 매개 변수이며 null 값을 사용할 수 없습니다.<br /> </td>
   </tr>
   <tr>
    <td><code>positionRectangle</code></td>
-   <td>A <code>PositionRectangle object</code> 서명 필드의 위치를 지정합니다. 이 매개 변수는 필수 항목이므로 null 값을 허용할 수 없습니다. 지정된 사각형이 지정된 페이지의 자르기 상자에 적어도 부분적으로 있지 않으면 <code>InvalidArgumentException</code> 이 throw됩니다. 또한 지정된 사각형의 높이 또는 너비는 0 또는 음수일 수 없습니다. 하단 왼쪽 X 또는 하단 왼쪽 Y 좌표는 0 이상일 수 있지만 음수일 수는 없으며 페이지의 자르기 상자를 기준으로 합니다.</td>
+   <td>서명 필드의 위치를 지정하는 <code>PositionRectangle object</code>입니다. 이 매개 변수는 필수 항목이므로 null 값을 허용할 수 없습니다. 지정된 사각형이 지정된 페이지의 자르기 상자에 적어도 부분적으로 있지 않으면 <code>InvalidArgumentException</code>이(가) throw됩니다. 또한 지정된 사각형의 높이 또는 너비는 0 또는 음수일 수 없습니다. 하단 왼쪽 X 또는 하단 왼쪽 Y 좌표는 0 이상일 수 있지만 음수일 수는 없으며 페이지의 자르기 상자를 기준으로 합니다.</td>
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td>A <code>FieldMDPOptionSpec</code> 서명 필드에 서명한 후 잠기는 PDF 문서 필드를 지정하는 개체입니다. 선택적 매개 변수이며 null일 수 있습니다.</td>
+   <td>서명 필드에 서명한 후 잠기는 PDF 문서 필드를 지정하는 <code>FieldMDPOptionSpec</code> 개체입니다. 선택적 매개 변수이며 null일 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
-   <td>A <code>SeedValueOptions</code> 필드의 다양한 시드 값을 지정하는 개체입니다. 선택적 매개 변수이며 null일 수 있습니다.</td>
+   <td>필드의 다양한 시드 값을 지정하는 <code>SeedValueOptions</code> 개체입니다. 선택적 매개 변수이며 null일 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -427,7 +427,7 @@ public class AddSignatureField {
 
 ### 문서 타임스탬프 적용 {#apply-document-timestamp}
 
-다음과 같이 문서에 프로그래밍 방식으로 타임스탬프를 지정할 수 있습니다. [PAdES 4](https://en.wikipedia.org/wiki/PAdES) 사양. 다음을 사용할 수도 있습니다. [CAdEs](https://en.wikipedia.org/wiki/CAdES_%28computing%29) 거래 관련 문서에 대한 사양.
+[PAdES 4](https://en.wikipedia.org/wiki/PAdES) 사양에 따라 문서에 프로그래밍 방식으로 타임스탬프를 지정할 수 있습니다. 트랜잭션 관련 문서에 [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) 사양을 사용할 수도 있습니다.
 
 **구문**: `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
@@ -441,11 +441,11 @@ public class AddSignatureField {
   </tr>
   <tr>
    <td><code>doc</code><br /> </td>
-   <td>PDF이 포함된 문서 객체.<br /> </td>
+   <td>PDF이 포함된 문서 개체.<br /> </td>
   </tr>
   <tr>
    <td><code>VerificationTime</code></td>
-   <td>서명의 유효성을 검사해야 하는 시간<br /> </td>
+   <td>서명을 확인해야 하는 시간<br /> </td>
   </tr>
   <tr>
    <td><code>ValidationPreferences</code> </td>
@@ -462,7 +462,7 @@ public class AddSignatureField {
  </tbody>
 </table>
 
-다음 코드 샘플은 다음과 같이 문서에 타임스탬프를 추가합니다 [PAdES 4](https://en.wikipedia.org/wiki/PAdES).
+다음 코드 샘플은 [PAdES 4](https://en.wikipedia.org/wiki/PAdES)에 따라 문서에 타임스탬프를 추가합니다.
 
 ```java
 package com.adobe.signatures.test;
@@ -634,7 +634,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 
 ### 서명 가져오는 중 {#getting-signature}
 
-서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서의 서명 필드 이름을 잘 모르거나 이름을 확인하려면 이름을 프로그래밍 방식으로 검색하십시오. 서명 서비스는 다음과 같은 서명 필드의 정규화된 이름을 반환합니다. `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서의 서명 필드 이름을 잘 모르거나 이름을 확인하려면 이름을 프로그래밍 방식으로 검색하십시오. Signature 서비스에서 서명 필드의 정규화된 이름(예: `form1[0].grantApplication[0].page1[0].SignatureField1[0]`)을 반환합니다.
 
 **구문**: `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
@@ -648,11 +648,11 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
   </tr>
   <tr>
    <td><code>doc</code><br /> </td>
-   <td>PDF이 포함된 문서 객체.<br /> </td>
+   <td>PDF이 포함된 문서 개체.<br /> </td>
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>서명이 포함된 서명 필드의 이름. 서명 필드의 정규화된 이름을 지정하십시오. XFA 양식을 기반으로 하는 PDF 문서를 사용할 때 서명 필드의 부분 이름을 사용할 수 있습니다. 예를 들어, <code>form1[0].#subform[1].SignatureField3[3]</code> 을(를) 다음으로 지정할 수 있습니다. <code>SignatureField3[3]</code>.</td>
+   <td>서명이 포함된 서명 필드의 이름. 서명 필드의 정규화된 이름을 지정하십시오. XFA 양식을 기반으로 하는 PDF 문서를 사용할 때 서명 필드의 부분 이름을 사용할 수 있습니다. 예를 들어 <code>form1[0].#subform[1].SignatureField3[3]</code>을(를) <code>SignatureField3[3]</code>(으)로 지정할 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
@@ -758,7 +758,7 @@ public class GetSignature {
 
 ### 서명 필드 목록을 가져오는 중  {#getting-signature-field-list-nbsp}
 
-서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서의 서명 필드 이름을 잘 모를 경우 프로그래밍 방식으로 검색하고 확인할 수 있습니다. 서명 서비스는 다음과 같은 서명 필드의 정규화된 이름을 반환합니다. `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서의 서명 필드 이름을 잘 모를 경우 프로그래밍 방식으로 검색하고 확인할 수 있습니다. Signature 서비스에서 서명 필드의 정규화된 이름(예: `form1[0].grantApplication[0].page1[0].SignatureField1[0]`)을 반환합니다.
 
 **구문**: `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
 
@@ -895,11 +895,11 @@ PDF 문서에 있는 서명 필드를 수정할 수 있습니다. 서명 필드�
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>서명 필드의 이름. 이 매개 변수는 필수 항목이므로 null 값을 허용할 수 없습니다.<br /> </td>
+   <td>서명 필드의 이름. 이 매개 변수는 필수 매개 변수이며 null 값을 사용할 수 없습니다.<br /> </td>
   </tr>
   <tr>
    <td><code>pdfSignatureFieldProperties</code></td>
-   <td>다음에 대한 정보를 지정하는 개체 <code>PDFSeedValueOptionSpec</code> 및 <code>FieldMDPOptionSpec</code> 서명 필드의 값.</td>
+   <td>서명 필드의 <code>PDFSeedValueOptionSpec</code> 및 <code>FieldMDPOptionSpec</code> 값에 대한 정보를 지정하는 개체입니다.</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1347,7 +1347,7 @@ public class Certify {
 
 secureDocument를 사용하면 PDF 문서를 개별적으로 또는 특정 순서에 따라 임의 조합으로 암호화, 서명/인증 및 판독기를 확장할 수 있습니다. 이 기능에 액세스하려면 해당 인수를 전달합니다. null이면, 특정 처리가 필요하지 않다고 가정될 것이다.
 
-**암호로 PDF 문서 암호화**
+**암호를 사용하여 PDF 문서 암호화**
 
 암호를 사용하여 PDF 문서를 암호화할 때 사용자는 암호를 지정하여 Adobe Reader 또는 Acrobat에서 PDF 문서를 열어야 합니다. 또한 다른 AEM Forms Document Services 작업에서 문서를 사용하기 전에 암호로 암호화된 PDF 문서의 잠금을 해제해야 합니다.
 
@@ -1378,7 +1378,7 @@ Reader 확장 Java 클라이언트 API 및 웹 서비스를 사용하여 PDF 문
 
 Reader 인증서를 사용하여 PDF 문서를 확장하려면 먼저 인증서를 AEM 키 저장소에 추가해야 합니다.
 
-**PDF 문서에 디지털 서명**
+**PDF 문서에 디지털 서명하는 중**
 
 디지털 서명을 PDF 문서에 적용하여 보안 수준을 제공할 수 있습니다. 디지털 서명은 자필 서명과 마찬가지로 서명자가 자신을 확인하고 문서에 대해 진술할 수 있는 수단을 제공합니다.
 
@@ -1394,7 +1394,7 @@ PDF 문서는 공개 키 기술을 통해 서명됩니다. 서명자는 공개 �
 
 >[!NOTE]
 >
->AEM Forms도 *[CAdEs](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* PDF 문서에 디지털 서명을 하기 위한 사양.
+>AEM Forms은 PDF 문서에 디지털 서명하는 *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* 사양도 지원합니다.
 
 **PDF 문서 인증**
 
@@ -1461,7 +1461,7 @@ secureDocument(Document inDoc,
  </tbody>
 </table>
 
-**샘플 1**: 이 샘플은 암호 암호화를 수행하고, 서명 필드를 인증하고, PDF 문서를 확장하는 Reader을 수행하는 데 사용됩니다.
+**샘플 1**: 이 샘플은 암호 암호화를 수행하는 데 사용되며, 서명 필드 및 PDF 문서 확장 Reader을 인증하는 데 사용됩니다.
 
 ```java
 /*************************************************************************
@@ -2105,7 +2105,7 @@ optionSpec.setJsScriptExecutionTimeoutInterval(100);
 
 ### 자격 증명 사용 권한을 가져오는 중 {#getting-credential-usage-rights}
 
-지정된 자격 증명의 사용 권한 정보를 가져오려면 `credentialAlias`, 내에서 이 API 호출 `SecureDocument` API.
+지정된 `credentialAlias`에 의해 지정된 자격 증명의 사용 권한 정보를 가져오려면 `SecureDocument` API 내에서 이 API를 호출하십시오.
 
 **구문**: `getCredentialUsageRights(String credentialAlias, ResourceResolver resourceResolver)`
 
@@ -2119,11 +2119,11 @@ optionSpec.setJsScriptExecutionTimeoutInterval(100);
   </tr>
   <tr>
    <td><code>credentialAlias</code><br /> </td>
-   <td>다음 <code>credentialAlias</code> 자격 증명을 지정합니다.<br /> </td>
+   <td>자격 증명을 지정하는 <code>credentialAlias</code>입니다.<br /> </td>
   </tr>
   <tr>
    <td><code>credentialPassword</code><br /> </td>
-   <td>자격 증명의 암호입니다. 자격 증명이 암호화된 경우 자격 증명이 암호화되지 않은 경우 null을 사용해야 합니다.<br /> </td>
+   <td>자격 증명이 암호화된 경우 자격 증명의 암호입니다. 자격 증명이 암호화되지 않은 경우 null을 사용해야 합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -2196,7 +2196,7 @@ public void getCredentialUsageRights() {
 
 ### 문서 사용 권한을 가져오는 중 {#getting-document-usage-rights}
 
-주어진 문서에 대한 사용 권한 정보를 가져오려면 내에서 이 API를 호출하십시오. `docAssuranceService`API.
+특정 문서에 대한 사용 권한 정보를 가져오려면 `docAssuranceService`API 내에서 이 API를 호출하십시오.
 
 **구문**: `getDocumentUsageRights(Document inDocument, UnlockOptions unlockOptions)`
 
@@ -2210,7 +2210,7 @@ public void getCredentialUsageRights() {
   </tr>
   <tr>
    <td><code>inDocument</code><br /> </td>
-   <td>에서 사용 권한 정보를 가져오는 문서<br /> </td>
+   <td><br />에서 사용 권한 정보를 가져오는 문서 </td>
   </tr>
  </tbody>
 </table>
@@ -2316,7 +2316,7 @@ public void getDocumentUsageRights() {
 
 ### 사용 권한 제거 {#removing-usage-rights}
 
-를 호출하여 문서에 대한 사용 권한을 제거할 수 있습니다. `removeUsageRights`내 API `docAssuranceService`API.
+`docAssuranceService`API 내에서 `removeUsageRights`API를 호출하여 문서에 대한 사용 권한을 제거할 수 있습니다.
 
 **입력 매개 변수**
 
@@ -2455,12 +2455,12 @@ public void removeDocumentUsageRights() {
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>PDF이 포함된 문서 객체<br /> </td>
+   <td>PDF <br />이(가) 포함된 문서 개체 </td>
   </tr>
   <tr>
    <td><code class="code">signatureField
       Name</code><br /> </td>
-   <td>유효성을 검사할 서명 필드의 이름. 정규화된 이름이나 부분 이름을 지정할 수 있습니다.<br /> </td>
+   <td>유효성을 검사할 서명 필드의 이름. 정규화된 이름 또는 부분 이름을 지정할 수 있습니다.<br /> </td>
   </tr>
   <tr>
    <td><code>revocationCheckStyle</code></td>
@@ -2481,7 +2481,7 @@ public void removeDocumentUsageRights() {
  </tbody>
 </table>
 
-이 샘플 코드에서는 `DocAssuranceService` 암호화된 PDF 문서의 서명 필드를 확인합니다.
+이 샘플 코드는 `DocAssuranceService`을(를) 사용하여 암호화된 PDF 문서의 서명 필드를 확인합니다.
 
 ```java
 /*************************************************************************
@@ -2773,7 +2773,7 @@ AEM을 사용하면 PDF 문서에서 디지털 서명을 확인할 수 있습니
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>PDF이 포함된 문서 객체<br /> </td>
+   <td>PDF <br />이(가) 포함된 문서 개체 </td>
   </tr>
   <tr>
    <td><code>revocationCheckStyle</code></td>
@@ -3071,7 +3071,7 @@ public class VerifyEncryptedPDFDoc {
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>PDF이 포함된 문서 객체<br /> </td>
+   <td>PDF <br />이(가) 포함된 문서 개체 </td>
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
@@ -3178,7 +3178,7 @@ public class ClearSignatureField {
 
 ### 인증 서명 필드를 가져오는 중 {#getting-certifying-signature-field}
 
-서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 잘 모르거나 이름을 확인하려는 경우 프로그래밍 방식으로 검색할 수 있습니다. 서명 서비스는 다음과 같은 서명 필드의 정규화된 이름을 반환합니다. `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 잘 모르거나 이름을 확인하려는 경우 프로그래밍 방식으로 검색할 수 있습니다. Signature 서비스에서 서명 필드의 정규화된 이름(예: `form1[0].grantApplication[0].page1[0].SignatureField1[0]`)을 반환합니다.
 
 **구문**: `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
@@ -3192,7 +3192,7 @@ public class ClearSignatureField {
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>PDF이 포함된 문서 객체.<br /> </td>
+   <td>PDF이 포함된 문서 개체.<br /> </td>
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
@@ -3297,7 +3297,7 @@ public class GetCertifyingSignatureField {
 
 ### PDF 암호화 유형을 가져오는 중 {#getting-pdf-encryption-type}
 
-서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 잘 모르거나 이름을 확인하려는 경우 프로그래밍 방식으로 검색할 수 있습니다. 서명 서비스는 다음과 같은 서명 필드의 정규화된 이름을 반환합니다. `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 잘 모르거나 이름을 확인하려는 경우 프로그래밍 방식으로 검색할 수 있습니다. Signature 서비스에서 서명 필드의 정규화된 이름(예: `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`)을 반환합니다.
 
 **구문**: `void getPDFEncryption(Document inDoc)`
 
@@ -3646,7 +3646,7 @@ public class GetPDFEncryption {
 
 ### generatePDFOutput {#generatepdfoutput}
 
-generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 선택적으로, 는 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 또는 데이터에 대해 generatePDFOutput API를 리터럴 값으로 사용합니다. 양식 디자인과 XML 데이터가 응용 프로그램에 저장되어 있는 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API.
+generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 선택적으로, 는 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 또는 데이터에 대해 generatePDFOutput API를 리터럴 값으로 사용합니다. 양식 디자인과 XML 데이터가 응용 프로그램에 저장되어 있는 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API를 사용하십시오.
 
 **구문:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3753,7 +3753,7 @@ generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문�
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 필요한 경우 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 양식 디자인이나 응용 프로그램에 저장된 데이터에 대해 generatePrintedOutput API를 사용합니다. 양식 디자인과 XML 데이터가 네트워크 위치, 로컬 또는 HTTP 위치에 리터럴 값으로 저장되는 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API.
+generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 필요한 경우 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 양식 디자인이나 응용 프로그램에 저장된 데이터에 대해 generatePrintedOutput API를 사용합니다. 양식 디자인과 XML 데이터가 네트워크 위치, 로컬 또는 HTTP 위치에 리터럴 값으로 저장되어 있는 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API를 사용하십시오.
 
 **구문:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -3877,7 +3877,7 @@ generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문�
   </tr>
   <tr>
    <td>템플릿<br /> </td>
-   <td>키 및 템플릿 파일 이름 맵을 지정합니다.<br /> </td>
+   <td>키 및 템플릿 파일 이름의 맵을 지정합니다.<br /> </td>
   </tr>
   <tr>
    <td>데이터</td>
@@ -3889,7 +3889,7 @@ generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문�
   </tr>
   <tr>
    <td>batchOptions</td>
-   <td>변수의 값을 지정합니다. <code>generateManyFiles</code>. 여러 파일을 생성하려면 generateManyFiles 플래그를 설정하십시오. options 매개 변수는 BatchOptions 유형의 개체를 허용합니다.</td>
+   <td>변수 <code>generateManyFiles</code>의 값을 지정합니다. 여러 파일을 생성하려면 generateManyFiles 플래그를 설정하십시오. options 매개 변수는 BatchOptions 유형의 개체를 허용합니다.</td>
   </tr>
  </tbody>
 </table>
@@ -3994,7 +3994,7 @@ String outputFolder="C:/Output";
   </tr>
   <tr>
    <td>uriOrFileName<br /> </td>
-   <td>입력 파일의 경로와 이름을 지정합니다. filename만 지정하면 옵션에 지정된 contentRoot와 관련하여 파일을 읽습니다. 파일은 유형 PDF 또는 XDP일 수 있습니다.<br /> </td>
+   <td>입력 파일의 경로와 이름을 지정합니다. filename만 지정하면 옵션에 지정된 contentRoot와 관련하여 파일을 읽습니다. 파일은 PDF 또는 XDP 형식일 수 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>데이터</td>
@@ -4002,12 +4002,12 @@ String outputFolder="C:/Output";
   </tr>
   <tr>
    <td>옵션</td>
-   <td>contentRoot, locale, AcrobatVersion, linearizedPDF 및 taggedPDF 변수의 값을 지정합니다. options 매개 변수에는 PrintedOutputOptions 형식의 개체가 허용됩니다.<br /> </td>
+   <td>contentRoot, locale, AcrobatVersion, linearizedPDF 및 taggedPDF 변수의 값을 지정합니다. options 매개 변수는 PrintedOutputOptions 형식의 개체를 허용합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-다음 Java 코드 샘플은 양식 디자인 및 데이터에서 PCL, PostScript 및 ZPL 출력을 생성합니다. 출력 유형은 로 전달된 값에 따라 다릅니다. `printConfig`매개 변수.
+다음 Java 코드 샘플은 양식 디자인 및 데이터에서 PCL, PostScript 및 ZPL 출력을 생성합니다. 출력 형식은 `printConfig`매개 변수에 전달된 값에 따라 다릅니다.
 
 ```java
 @Reference private OutputService outputService;
@@ -4093,12 +4093,12 @@ Document doc=null;
   </tr>
   <tr>
    <td>옵션</td>
-   <td>이 개체는 contentRoot, locale, printConfig, copies 및 paginationOverride의 값을 설정하는 데 사용됩니다. options 매개 변수에는 PrintedOutputOptions 형식의 개체가 허용됩니다.<br /> </td>
+   <td>이 개체는 contentRoot, locale, printConfig, copies 및 paginationOverride의 값을 설정하는 데 사용됩니다. options 매개 변수는 PrintedOutputOptions 형식의 개체를 허용합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-다음 Java 코드 샘플은 양식 디자인 및 데이터에서 PCL, PostScript 및 ZPL 출력을 생성합니다. 출력 유형은 로 전달된 값에 따라 다릅니다. `printConfig`매개 변수.
+다음 Java 코드 샘플은 양식 디자인 및 데이터에서 PCL, PostScript 및 ZPL 출력을 생성합니다. 출력 형식은 `printConfig`매개 변수에 전달된 값에 따라 다릅니다.
 
 ```java
 @Reference private OutputService outputService;
@@ -4174,7 +4174,7 @@ Document doc=null;
   </tr>
   <tr>
    <td>데이터</td>
-   <td>키 및 데이터 문서 맵을 지정합니다. 키가 null이 아닌 경우 데이터 문서는 템플릿 맵에서 해당 키에 대한 템플릿으로 렌더링됩니다.<br /> </td>
+   <td>키 및 데이터 문서 맵을 지정합니다. 키가 null이 아니면 템플릿 맵의 해당 키에 대한 템플릿으로 데이터 문서가 렌더링됩니다.<br /> </td>
   </tr>
   <tr>
    <td>옵션</td>
@@ -4182,12 +4182,12 @@ Document doc=null;
   </tr>
   <tr>
    <td>batchOptions</td>
-   <td>generateManyFiles 변수의 값을 지정합니다. 여러 파일을 생성하려면 generateManyFiles 플래그를 설정하십시오. options 매개 변수는 BatchOptions 유형의 개체를 허용합니다.<br /> </td>
+   <td>generateManyFiles 변수의 값을 지정합니다. 여러 파일을 생성하려면 generateManyFiles 플래그를 설정하십시오. options 매개 변수는 BatchOptions 형식의 개체를 허용합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-다음 Java 코드 샘플은 여러 양식 디자인 템플릿과 데이터 파일에서 PCL, PostScript 및 ZPL 출력을 일괄적으로 생성합니다. 출력 유형은 로 전달된 값에 따라 다릅니다. `printConfig`매개 변수.
+다음 Java 코드 샘플은 여러 양식 디자인 템플릿과 데이터 파일에서 PCL, PostScript 및 ZPL 출력을 일괄적으로 생성합니다. 출력 형식은 `printConfig`매개 변수에 전달된 값에 따라 다릅니다.
 
 ```java
 @Reference private OutputService outputService;
@@ -4318,7 +4318,7 @@ Forms 서비스는 대화형 PDF 양식에서 데이터를 가져오고 내보�
   </tr>
   <tr>
    <td>dataFormat<br /> </td>
-   <td>데이터를 내보내는 형식을 지정했습니다. 열거형 유형의 변수(XDP, XmlData, Auto)를 허용합니다.<br /> </td>
+   <td>데이터를 내보내는 형식을 지정했습니다. 열거형(XDP, XmlData, Auto) 형식의 변수를 허용합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4465,8 +4465,8 @@ PDF Generator 서비스는 기본 파일 형식을 PDF으로 변환하는 API를
 
 GeneratePDFService는 .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf(더 이상 사용되지 않음), .jpg, .bmp, .tif, .png, .html 및 기타 여러 파일 형식과 같은 다양한 파일 형식을 PDF으로 변환하는 API를 제공합니다. 또한 PDF을 다양한 파일 형식으로 내보내고 PDF을 최적화할 수 있는 API를 제공합니다. 이 서비스는 다음 API를 지원합니다.
 
-* **createPDF**: 지원되는 파일 유형을 PDF 문서로 변환합니다. Microsoft Word, Microsoft PowerPoint, Microsoft Excel 및 Microsoft 프로젝트와 같은 파일 형식을 지원합니다. 이러한 애플리케이션 외에도 모든 서드파티 범용 PDF 생성 애플리케이션 유형을 API에 연결할 수도 있습니다.
-* **exportPDF**: PDF 문서를 지원되는 파일 형식으로 변환합니다. 메서드는 PDF을 입력으로 받아들이고 PDF 콘텐츠를 지정된 파일 형식 형식으로 내보냅니다. 캡슐화된 PostScript( eps), HTML 3.2( htm, html), CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel 통합 문서( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), 리치 텍스트 형식( rtf), 텍스트(액세스 가능)( txt), 텍스트(일반) HTML( tif, tiff), XML 1.0( xml), TIFF a로 PDF 문서를 내보낼 수 있습니다 1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF PDF/A-3b(sRGB) 형식 다음을 지정할 수도 있습니다. [사용자 지정 프리플라이트 프로필](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) PDF 출력용.
+* **createPDF**: 지원되는 파일 형식을 PDF 문서로 변환합니다. Microsoft Word, Microsoft PowerPoint, Microsoft Excel 및 Microsoft 프로젝트와 같은 파일 형식을 지원합니다. 이러한 애플리케이션 외에도 모든 서드파티 범용 PDF 생성 애플리케이션 유형을 API에 연결할 수도 있습니다.
+* **exportPDF**: PDF 문서를 지원되는 파일 형식으로 변환합니다. 메서드는 PDF을 입력으로 받아들이고 PDF 콘텐츠를 지정된 파일 형식 형식으로 내보냅니다. 캡슐화된 PostScript( eps), HTML 3.2( htm, html), CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel 통합 문서( xlsx), HTML PowerPoint Presentation( pptx), PNG( png), Microsoft( ps), 리치 텍스트 형식( rtf), 텍스트(Accessible)( txt), 텍스트(Plain) PostScript( tif, tiff), XML 1.0 xml(), TIFF/A-1rgb(s)로 PDF 문서를 내보낼 수 있습니다), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF PDF/A-3b(sRGB) 형식 PDF 출력에 대해 [사용자 지정 Preflight 프로필](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)을 지정할 수도 있습니다.
 
 * **optimizePDF**: PDF 문서를 최적화하고 PDF 문서를 한 유형에서 다른 유형으로 변환합니다. 메서드는 PDF 문서를 입력으로 받아들입니다.
 * **htmlToPdf2**: HTML 페이지를 PDF 문서로 변환합니다. HTML 페이지의 URL을 입력으로 허용합니다.
@@ -4543,7 +4543,7 @@ createPDF 서비스에는 다음 예외가 발생합니다.
    <td>문서 개체를 지정합니다. 문서 객체에는 입력 파일이 들어 있습니다. 입력 문서 위에 com.adobe.aemfd.docmanager.Document 객체를 작성합니다. 필수 매개 변수입니다.</td>
   </tr>
   <tr>
-   <td>입력 파일 이름<br /> </td>
+   <td>inputFileName<br /> </td>
    <td>확장자와 함께 입력 파일의 이름입니다. 필수 매개 변수입니다.<br /> </td>
   </tr>
   <tr>
@@ -4679,12 +4679,12 @@ Map exportPDF(Document inputDoc, String inputFileName, String formatType, Docume
    <td>변환할 문서를 지정합니다. </td>
   </tr>
   <tr>
-   <td>입력 파일 이름<br /> </td>
-   <td>확장자와 함께 파일 이름입니다.<br /> </td>
+   <td>inputFileName<br /> </td>
+   <td>확장명을 포함한 파일 이름.<br /> </td>
   </tr>
   <tr>
    <td>formatType</td>
-   <td>exportPDF API에 대한 출력 파일 형식입니다.<br /> </td>
+   <td>exportPDF API의 출력 파일 형식입니다.<br /> </td>
   </tr>
   <tr>
    <td>settingsDoc </td>
@@ -4772,7 +4772,7 @@ OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Docume
    <td>입력 문서를 지정합니다. 필수 매개 변수입니다.</td>
   </tr>
   <tr>
-   <td>파일 유형 설정<br /> </td>
+   <td>fileTypeSettings<br /> </td>
    <td>선택적 매개 변수입니다.<br /> </td>
   </tr>
   <tr>
@@ -4862,7 +4862,7 @@ HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String 
    <td>입력 문서를 지정합니다. 필수 매개 변수입니다.</td>
   </tr>
   <tr>
-   <td>파일 유형 설정<br /> </td>
+   <td>fileTypeSettings<br /> </td>
    <td>선택적 매개 변수입니다.<br /> </td>
   </tr>
   <tr>
@@ -4924,7 +4924,7 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-Distiller 서비스는 PostScript, Encapsulated PostScript(EPS) 및 프린터 텍스트 파일(PRN)을 PDF 파일로 변환합니다. Distiller 서비스는 대량의 인쇄 문서를 송장 및 명세서 등의 전자 문서로 변환하는 데 자주 사용됩니다. 문서를 PDF으로 변환하면 기업에서 고객에게 종이 버전과 전자 버전의 문서를 보낼 수 있습니다. 지원되는 파일 형식은 .ps, .eps 및 .prn입니다. 이 서비스는 다음 API를 지원합니다.
+Distiller 서비스는 PostScript, 캡슐화된 PostScript(EPS) 및 프린터 텍스트 파일(PRN)을 PDF 파일로 변환합니다. Distiller 서비스는 대량의 인쇄 문서를 송장 및 명세서 등의 전자 문서로 변환하는 데 자주 사용됩니다. 문서를 PDF으로 변환하면 기업에서 고객에게 종이 버전과 전자 버전의 문서를 보낼 수 있습니다. 지원되는 파일 형식은 .ps, .eps 및 .prn입니다. 이 서비스는 다음 API를 지원합니다.
 
 createPDF 서비스는 결과가 포함된 java.util.Map을 반환합니다. 지도의 키는 다음과 같습니다.
 
@@ -4997,7 +4997,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
  </tbody>
 </table>
 
-다음 Java 코드 샘플은 PS(포스트스크립트), EPS(캡슐화된 포스트스크립트) 및 PRN(프린터 텍스트 파일) 유형의 입력 파일을 PDF 파일로 변환합니다.
+다음 Java 코드 샘플은 유형 PostScript(PS), 캡슐화된 PostScript(EPS) 및 프린터 텍스트 파일(PRN)의 입력 파일을 PDF 파일로 변환합니다.
 
 ```java
 @Reference DistillerService distillerService;
@@ -5081,7 +5081,7 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>PDF이 포함된 문서 객체.<br /> </td>
+   <td>PDF이 포함된 문서 개체.<br /> </td>
   </tr>
  </tbody>
 </table>

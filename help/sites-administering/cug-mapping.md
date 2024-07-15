@@ -31,12 +31,12 @@ ht-degree: 1%
   <tr>
    <td><p>속성: cq:cugEnabled</p> <p>노드 유형 선언: N/A, 잔여 속성</p> </td>
    <td><p>인증:</p> <p>노드: rep:CugPolicy 노드 유형의 rep:cugPolicy</p> <p>노드 유형 선언: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> 인증:</p> <p>Mixin 유형: granite:AuthenticationRequired</p> </td>
-   <td><p>읽기 액세스를 제한하기 위해 전용 CUG 정책이 대상 노드에 적용됩니다.</p> <p>참고: 정책은 구성된 지원 경로에만 적용할 수 있습니다.</p> <p>rep:cugPolicy 및 rep:CugPolicy 유형이 있는 노드는 보호되며, 일반 JCR API 호출을 사용하여 작성할 수 없습니다. 대신 JCR 액세스 제어 관리를 사용하십시오.</p> <p>다음을 참조하십시오 <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">이 페이지</a> 추가 정보.</p> <p>노드에 인증 요구 사항을 적용하려면 mixin 유형 granite:AuthenticationRequired를 추가하면 됩니다.</p> <p>참고: 구성된 지원 경로 아래에만 적용됩니다.</p> </td>
+   <td><p>읽기 액세스를 제한하기 위해 전용 CUG 정책이 대상 노드에 적용됩니다.</p> <p>참고: 정책은 구성된 지원 경로에만 적용할 수 있습니다.</p> <p>rep:cugPolicy 및 rep:CugPolicy 유형이 있는 노드는 보호되며, 일반 JCR API 호출을 사용하여 작성할 수 없습니다. 대신 JCR 액세스 제어 관리를 사용하십시오.</p> <p>자세한 내용은 <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">이 페이지</a>를 참조하세요.</p> <p>노드에 인증 요구 사항을 적용하려면 mixin 유형 granite:AuthenticationRequired를 추가하면 됩니다.</p> <p>참고: 구성된 지원 경로 아래에만 적용됩니다.</p> </td>
   </tr>
   <tr>
    <td><p>속성: cq:cugPrincipals</p> <p>노드 유형 선언: NA, 잔여 속성</p> </td>
    <td><p>속성: rep:principalNames</p> <p>노드 유형 선언: rep:CugPolicy</p> </td>
-   <td><p>제한된 CUG 아래의 콘텐츠를 읽을 수 있는 해당 보안 주체의 이름이 포함된 속성은 보호되며 일반 JCR API 호출을 사용하여 작성할 수 없습니다. 대신 JCR 액세스 제어 관리를 사용하십시오.</p> <p>다음을 참조하십시오 <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">이 페이지</a> 구현에 대한 자세한 내용은 를 참조하십시오.</p> </td>
+   <td><p>제한된 CUG 아래의 콘텐츠를 읽을 수 있는 해당 보안 주체의 이름이 포함된 속성은 보호되며 일반 JCR API 호출을 사용하여 작성할 수 없습니다. 대신 JCR 액세스 제어 관리를 사용하십시오.</p> <p>구현에 대한 자세한 내용은 <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">이 페이지</a>를 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td><p>속성: cq:cugLoginPage</p> <p>노드 유형 선언: NA, 잔여 속성</p> </td>
@@ -61,13 +61,13 @@ ht-degree: 1%
 
 **AEM 6.5**
 
-* 라벨 : Apache Jackrabbit Oak CUG 구성
+* 레이블: Apache Jackrabbit Oak CUG 구성
 
   이름: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
 
   ConfigurationPolicy = 필수
 
-* 라벨 : Apache Jackrabbit Oak CUG 제외 목록
+* 레이블: Apache Jackrabbit Oak CUG 제외 목록
 
   이름: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl
 
@@ -87,7 +87,7 @@ CUG 인증의 영향을 받지 않아야 하는 주체의 제외 목록을 구�
 
   >[!NOTE]
   > 
-  >다음과 같은 경우 `CugExcludeImpl` 이(가) 구성되지 않았습니다. `CugConfiguration` 을 기본값으로 되돌립니다.
+  >`CugExcludeImpl`이(가) 구성되지 않으면 `CugConfiguration`이(가) 기본값으로 돌아갑니다.
 
   특별한 필요가 있는 경우 사용자 지정 CugExclude 구현을 플러그인할 수 있습니다.
 

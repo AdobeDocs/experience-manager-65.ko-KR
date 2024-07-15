@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # AEM 6을 사용하여 LDAP 구성 {#configuring-ldap-with-aem}
 
-LDAP( **L**&#x200B;팔다리 **D**&#x200B;디렉터리 **A**&#x200B;액세스 **P** rotocol)은 중앙 디렉토리 서비스에 액세스하는 데 사용됩니다. 여러 애플리케이션에서 액세스할 수 있으므로 사용자 계정을 관리하는 데 필요한 노력을 줄일 수 있습니다. 이러한 LDAP 서버 중 하나는 Active Directory입니다. LDAP는 종종 사용자가 한 번에 로그인한 후 여러 애플리케이션에 액세스할 수 있는 단일 사인온을 달성하는 데 사용됩니다.
+LDAP(**L** 8 **D**&#x200B;디렉터리 **A**&#x200B;액세스 **P** rotocol)가 중앙 디렉터리 서비스에 액세스하는 데 사용됩니다. 여러 애플리케이션에서 액세스할 수 있으므로 사용자 계정을 관리하는 데 필요한 노력을 줄일 수 있습니다. 이러한 LDAP 서버 중 하나는 Active Directory입니다. LDAP는 종종 사용자가 한 번에 로그인한 후 여러 애플리케이션에 액세스할 수 있는 단일 사인온을 달성하는 데 사용됩니다.
 
 사용자 계정은 LDAP 서버와 저장소 간에 동기화할 수 있으며 LDAP 계정 세부 정보는 저장소에 저장됩니다. 이 기능을 사용하면 필요한 권한 및 권한을 할당하기 위해 저장소 그룹에 계정을 할당할 수 있습니다.
 
@@ -41,15 +41,15 @@ LDAP가 AEM에서 작동하도록 하려면 세 개의 OSGi 구성을 생성해�
 
 >[!NOTE]
 >
->시청 [Oak의 외부 로그인 모듈 - LDAP 및 그 이상으로 인증](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) 외부 로그인 모듈을 자세히 살펴보십시오.
+>[Oak의 외부 로그인 모듈 - LDAP 및 Beyond로 인증](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html)을 시청하여 외부 로그인 모듈에 대해 자세히 알아보십시오.
 >
->Apache DS를 사용하여 Experience Manager을 구성하는 예를 보려면 를 참조하십시오. [Apache 디렉터리 서비스를 사용하도록 Adobe Experience Manager 6.5를 구성합니다.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
+>Apache DS를 사용하여 Experience Manager을 구성하는 예를 보려면 [Apache 디렉터리 서비스를 사용하도록 Adobe Experience Manager 6.5 구성](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)을 참조하십시오.
 
 ## LDAP Id 공급자 구성 {#configuring-the-ldap-identity-provider}
 
 LDAP ID 공급자는 LDAP 서버에서 사용자를 검색하는 방법을 정의하는 데 사용됩니다.
 
-관리 콘솔의 **Apache Jackrabbit Oak LDAP ID 공급자** 이름.
+**Apache Jackrabbit Oak LDAP ID 공급자** 이름의 관리 콘솔에서 찾을 수 있습니다.
 
 LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
 
@@ -113,7 +113,7 @@ LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
   </tr>
   <tr>
    <td><strong>사용자 추가 필터</strong></td>
-   <td>사용자를 검색할 때 사용할 추가 LDAP 필터입니다. 최종 필터의 형식은 다음과 같습니다. '(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'(user.extraFilter)</td>
+   <td>사용자를 검색할 때 사용할 추가 LDAP 필터입니다. 최종 필터의 형식은 다음과 같습니다. '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'(user.extraFilter)</td>
   </tr>
   <tr>
    <td><strong>사용자 DN 경로</strong></td>
@@ -133,7 +133,7 @@ LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
   </tr>
   <tr>
    <td><strong>그룹 추가 필터</strong></td>
-   <td>그룹을 검색할 때 사용할 추가 LDAP 필터입니다. 최종 필터의 형식은 다음과 같습니다. '(&amp;(&lt;nameattr&gt;=&lt;groupname&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'</td>
+   <td>그룹을 검색할 때 사용할 추가 LDAP 필터입니다. 최종 필터의 형식은 다음과 같습니다. '(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td>
   </tr>
   <tr>
    <td><strong>그룹 DN 경로</strong></td>
@@ -150,7 +150,7 @@ LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
 
 동기화 처리기는 ID 공급자 사용자 및 그룹이 저장소와 동기화되는 방법을 정의합니다.
 
-아래에 있습니다. **Apache Jackrabbit Oak 기본 동기화 핸들러** management console의 이름입니다.
+관리 콘솔의 **Apache Jackrabbit Oak 기본 동기화 처리기** 이름 아래에 있습니다.
 
 동기화 핸들러에 다음 구성 옵션을 사용할 수 있습니다.
 
@@ -205,22 +205,22 @@ LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
 
 ## 외부 로그인 모듈 {#the-external-login-module}
 
-외부 로그인 모듈은 **Apache Jackrabbit Oak 외부 로그인 모듈** 관리 콘솔에서 게시할 수 있습니다.
+외부 로그인 모듈은 관리 콘솔의 **Apache Jackrabbit Oak 외부 로그인 모듈** 아래에 있습니다.
 
 >[!NOTE]
 >
->Apache Jackrabbit Oak 외부 로그인 모듈은 JAAS(Java™ Authentication and Authorization Servi) 사양을 구현합니다. 다음을 참조하십시오. [공식 Oracle Java™ 보안 참조 안내서](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) 추가 정보.
+>Apache Jackrabbit Oak 외부 로그인 모듈은 JAAS(Java™ Authentication and Authorization Servi) 사양을 구현합니다. 자세한 내용은 [공식 Oracle Java™ 보안 참조 안내서](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html)를 참조하십시오.
 
 이 작업은 사용할 ID 공급자와 동기화 핸들러를 정의하여 두 모듈을 효과적으로 바인딩하는 것입니다.
 
 다음 구성 옵션을 사용할 수 있습니다.
 
-| **JAAS 순위** | 이 로그인 모듈 항목의 순위(즉, 정렬 순서)를 지정합니다. 항목은 내림차순으로 정렬됩니다(즉, 높은 값의 등급 구성이 우선함). |
+| **JAS 순위** | 이 로그인 모듈 항목의 순위(즉, 정렬 순서)를 지정합니다. 항목은 내림차순으로 정렬됩니다(즉, 높은 값의 등급 구성이 우선함). |
 |---|---|
-| **JAAS 제어 플래그** | LoginModule이 REQUIRED, REQUISITE, EXPECT 또는 OPTIONAL인지 지정하는 속성입니다. 이러한 플래그의 의미에 대한 자세한 내용은 JAAS 구성 설명서 를 참조하십시오. |
+| **JAAS 컨트롤 플래그** | LoginModule이 REQUIRED, REQUISITE, EXPECT 또는 OPTIONAL인지 지정하는 속성입니다. 이러한 플래그의 의미에 대한 자세한 내용은 JAAS 구성 설명서 를 참조하십시오. |
 | **JAAS 영역** | LoginModule이 등록된 영역 이름(또는 응용 프로그램 이름)입니다. 영역 이름이 제공되지 않으면 LoginModule이 Felix JAS 구성에 구성된 대로 기본 영역에 등록됩니다. |
 | **ID 공급자 이름** | ID 공급자의 이름입니다. |
-| **동기화 핸들러 이름** | 동기화 처리기의 이름입니다. |
+| **동기화 처리기 이름** | 동기화 처리기의 이름입니다. |
 
 >[!NOTE]
 >
@@ -230,7 +230,7 @@ LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
 
 AEM 6은 아래 절차에 따라 SSL을 통해 LDAP를 인증하도록 구성할 수 있습니다.
 
-1. 다음 확인: **SSL 사용** 또는 **TLS 사용** 구성 시 확인란 [LDAP ID 공급자](#configuring-the-ldap-identity-provider).
+1. [LDAP ID 공급자](#configuring-the-ldap-identity-provider)를 구성할 때 **SSL 사용** 또는 **TLS 사용** 확인란을 선택하십시오.
 1. 설정에 따라 동기화 핸들러 및 외부 로그인 모듈을 구성합니다.
 1. 필요한 경우 Java™ VM에 SSL 인증서를 설치합니다. 이 설치는 keytool을 사용하여 수행할 수 있습니다.
 
@@ -244,7 +244,7 @@ SSL을 통해 LDAP를 인증하도록 AEM을 구성할 때 자체 서명된 인�
 
 1. SSL 라이브러리가 설치되어 있고 작동하는지 확인합니다. 이 절차에서는 OpenSSL을 예로 사용합니다.
 
-1. 사용자 지정된 OpenSSL 구성(cnf) 파일을 만듭니다. 이 구성은 기본 **openssl.cnf **구성 파일을 복사하고 사용자 지정하여 수행할 수 있습니다. UNIX® 시스템에서는 `/usr/lib/ssl/openssl.cnf`
+1. 사용자 지정된 OpenSSL 구성(cnf) 파일을 만듭니다. 이 구성은 기본 **openssl.cnf **구성 파일을 복사하고 사용자 지정하여 수행할 수 있습니다. UNIX® 시스템에서는 `/usr/lib/ssl/openssl.cnf`에 있습니다.
 
 1. 터미널에서 아래 명령을 실행하여 CA 루트 키를 만듭니다.
 
@@ -280,12 +280,12 @@ SSL을 통해 LDAP를 인증하도록 AEM을 구성할 때 자체 서명된 인�
 
 * 로그 수준: 디버그
 * 로그 파일 logs/ldap.log
-* 메시지 패턴: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* 메시지 패턴: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * 로거: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * 로그 수준: 디버그
 * 로그 파일: logs/external.log
-* 메시지 패턴: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* 메시지 패턴: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * 로거: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## 그룹 소속에 대한 단어 {#a-word-on-group-affiliation}
@@ -296,9 +296,9 @@ LDAP를 통해 동기화된 사용자는 AEM의 다른 그룹에 속할 수 있�
 
 사용자가 LDAP 서버의 그룹에서 제거된 경우 변경 사항은 동기화 시 AEM 측에 반영됩니다. 그러나 LDAP에 의해 추가되지 않은 사용자의 다른 모든 그룹 소속은 그대로 유지됩니다.
 
-AEM은 를 사용하여 외부 그룹에서 사용자 제거를 감지하고 처리합니다. `rep:externalId` 속성. 이 속성은 동기화 핸들러에 의해 동기화되는 모든 사용자 또는 그룹에 자동으로 추가되며 원래 ID 공급자에 대한 정보를 포함합니다.
+AEM은 `rep:externalId` 속성을 사용하여 외부 그룹에서 사용자 제거를 감지하고 처리합니다. 이 속성은 동기화 핸들러에 의해 동기화되는 모든 사용자 또는 그룹에 자동으로 추가되며 원래 ID 공급자에 대한 정보를 포함합니다.
 
-에서 Apache Oak 설명서 를 참조하십시오. [사용자 및 그룹 동기화](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
+[사용자 및 그룹 동기화](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html)에 대한 Apache Oak 설명서를 참조하십시오.
 
 ## 알려진 문제 {#known-issues}
 

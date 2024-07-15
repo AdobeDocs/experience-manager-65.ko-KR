@@ -32,4 +32,4 @@ SSL(Secure Sockets Layer) 자격 증명을 생성하고 애플리케이션 서�
 >
 >SSL 보안 인증서 및 자격 증명을 생성할 때 애플리케이션 서버를 실행하는 데 사용한 것과 동일한 사용자 계정 권한을 사용합니다. 응용 프로그램 서버가 다른 사용자 권한을 사용하여 실행되는 경우 ContentRootURI가 https를 가리키면 양식이 PDForm 표현물에 대해 제대로 렌더링되지 않을 수 있습니다.
 
-SSL을 사용할 수 있는 LDAP 서버가 있는 경우 사용할 수 있도록 사용자 관리를 구성합니다. (참조: [SSL 사용 LDAP 서버에 대한 사용자 관리 구성](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+SSL을 사용할 수 있는 LDAP 서버가 있는 경우 사용할 수 있도록 사용자 관리를 구성합니다. ([SSL 사용 LDAP 서버에 대한 사용자 관리 구성](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)을 참조하십시오.)

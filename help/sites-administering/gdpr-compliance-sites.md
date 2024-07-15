@@ -36,7 +36,7 @@ AEM Sites는 GDPR 준수 의무와 관련하여 고객을 지원할 준비가 �
 
 작성자 서버의 사용자 계정 및 UGC 컨텐츠는 [플랫폼 GDPR 설명서](/help/managing/data-protection-and-privacy.md)에서 다룹니다.
 
-## 게시 서버 {#publish-server}
+## Publish 서버 {#publish-server}
 
 사이트에서 방문자를 인증하는 데 사용되는 사용자 계정과 게시 서버의 UGC 컨텐츠는 [플랫폼 GDPR 설명서](/help/managing/data-protection-and-privacy.md)에서 다룹니다.
 
@@ -52,7 +52,7 @@ AEM Sites에는 Adobe Analytics 온디맨드 서비스 내에서 기능을 사�
 
 Adobe Analytics와 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html)을 참조하십시오.
 
-## Target의 Enhanced Personalization {#enhanced-personalization-by-target}
+## Target의 향상된 Personalization {#enhanced-personalization-by-target}
 
 AEM Sites에는 Adobe Target 온디맨드 서비스 내에서 기능을 사용하는 Target의 Enhanced Personalization과의 선택적 통합이 포함되어 있습니다.
 

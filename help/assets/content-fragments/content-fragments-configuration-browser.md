@@ -18,7 +18,7 @@ ht-degree: 49%
 
 ## 인스턴스에 대해 콘텐츠 조각 기능 활성화 {#enable-content-fragment-functionality-instance}
 
-콘텐츠 조각을 사용하기 전에 **구성 브라우저** 다음을 활성화하려면:
+콘텐츠 조각을 사용하기 전에 **구성 브라우저**&#x200B;를 사용하여 다음을 사용하도록 설정하십시오.
 
 * **콘텐츠 조각 모델** - 필수
 * **GraphQL 지속 쿼리** - 선택 사항
@@ -28,7 +28,7 @@ ht-degree: 49%
 >**콘텐츠 조각 모델**&#x200B;을 활성화하지 않는 경우
 >
 >* 모델을 만들 때 **만들기** 옵션을 사용할 수 없습니다.
->* 다음을 수행할 수 없음 [사이트 구성을 선택하여 관련 끝점을 생성합니다.](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
+>* [사이트 구성을 선택하여 관련 끝점을 만들 수 없습니다](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
 콘텐츠 조각 기능을 활성화하려면 다음 작업을 수행해야 합니다.
 
@@ -37,11 +37,11 @@ ht-degree: 49%
 
 ### 구성 브라우저에서 콘텐츠 조각 기능 활성화 {#enable-content-fragment-functionality-in-configuration-browser}
 
-종료 [특정 콘텐츠 조각 기능 사용](#creating-a-content-fragment-model), 본인 **필수** 먼저 다음을 통해 활성화합니다. **구성 브라우저**:
+[특정 콘텐츠 조각 기능을 사용](#creating-a-content-fragment-model)하려면 **먼저**&#x200B;구성 브라우저&#x200B;**를 통해 해당 기능을 사용**&#x200B;해야 합니다.
 
 >[!NOTE]
 >
->자세한 내용은 [구성 브라우저:](/help/sites-administering/configurations.md#using-configuration-browser).
+>자세한 내용은 [구성 브라우저:](/help/sites-administering/configurations.md#using-configuration-browser)를 참조하십시오.
 
 1. **도구**, **일반**&#x200B;으로 이동한 다음 **구성 브라우저**&#x200B;를 엽니다.
 
@@ -60,8 +60,8 @@ ht-degree: 49%
 
 ### 자산 폴더에 구성 적용 {#apply-the-configuration-to-your-assets-folder}
 
-구성 시 **글로벌** 가 콘텐츠 조각 기능에 대해 활성화된 후 모든 에셋 폴더에 적용됩니다.
+**전역** 구성이 콘텐츠 조각 기능에 대해 활성화된 경우 모든 Assets 폴더에 적용됩니다.
 
-비교 가능한 자산 폴더와 함께 다른 구성(전역 제외)을 사용하려면 연결을 정의해야 합니다. This is done by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
+비교 가능한 Assets 폴더와 함께 다른 구성(전역 제외)을 사용하려면 연결을 정의해야 합니다. This is done by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
 
 ![구성 적용](assets/cfm-conf-02.png)

@@ -24,8 +24,8 @@ Forms 서비스를 사용하면 일반적으로 Designer에서 만든 양식을 
 * 를 호환 XHTML 1.0 렌더링을 포함하여 다양한 브라우저 환경에서 HTML으로 사용
 * Adobe Flash Player을 지원하는 다양한 브라우저 환경에서 양식 안내서로 사용됩니다.
 
-Forms 서비스에 대한 자세한 내용은 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+Forms 서비스에 대한 자세한 내용은 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 관리 콘솔의 Forms 페이지를 사용하여 Forms 서비스의 동작을 구성할 수 있습니다. 이러한 설정은 서비스의 모든 호출에 적용됩니다. AEM Forms SDK를 통해 전송된 모든 매개 변수는 관리 콘솔에 설정된 설정을 무시하지만 해당 특정 호출에만 영향을 줍니다.
 
-관리 콘솔에서 Forms 설정을 변경한 후 [저장]을 클릭합니다. 변경 사항을 적용하려면 서버를 다시 시작할 필요가 없습니다. 그러나 캐시 모드 설정을 구성할 때 Forms 서비스를 중지했다가 다시 시작해야 할 수 있습니다. (참조: [서비스 시작 및 중지](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
+관리 콘솔에서 Forms 설정을 변경한 후 [저장]을 클릭합니다. 변경 사항을 적용하려면 서버를 다시 시작할 필요가 없습니다. 그러나 캐시 모드 설정을 구성할 때 Forms 서비스를 중지했다가 다시 시작해야 할 수 있습니다. ([서비스 시작 및 중지](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)를 참조하세요.)

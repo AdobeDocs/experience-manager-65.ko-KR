@@ -28,15 +28,15 @@ ht-degree: 1%
 
 온라인 잡지를 떠올리면 주요 내용에는 기사, 광고, 표지가 포함된다. Mobile On-Demand 콘텐츠의 세 가지 주요 유형은 AEM 내에서 만들 수 있습니다.
 
-* **문서**: 정보를 전달하기 위해 아트와 함께 텍스트를 기반으로 함
-* **배너:** 일반적으로 그래픽 프로모션 링크
-* **컬렉션:** 잘 정의된 *버킷* 표지의 주제에 맞는 기사나 배너 같은 콘텐츠로 채워졌다
+* **기사**: 정보를 전달하기 위해 아트와 함께 텍스트 기반
+* **배너:** 일반적으로 그래픽 홍보 링크
+* **컬렉션:**&#x200B;은(는) 표지 테마에 맞는 기사 또는 배너와 같은 콘텐츠로 채워진 잘 정의된 *버킷*&#x200B;을 나타냅니다.
 
-* **공유 리소스:** 여러 문서에서 공통 부분 재사용 또는 공유 가능
+* **공유 리소스:**&#x200B;을(를) 통해 문서 간에 공통 부분을 다시 사용하거나 공유할 수 있습니다.
 
 >[!NOTE]
 >
->AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 다음을 참조하십시오. [AEM Mobile 앱에 대한 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 온라인 도움말에서 참조할 수 있습니다.
+>AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 온라인 도움말에서 [AEM Mobile 앱의 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)을 참조하십시오.
 
 ## 컨텐츠 만들기 및 관리 {#creating-and-managing-content}
 
@@ -46,11 +46,11 @@ ht-degree: 1%
 * [배너 관리](/help/mobile/mobile-on-demand-managing-banners.md)
 * [컬렉션 관리](/help/mobile/mobile-on-demand-managing-collections.md)
 * [공유 리소스 업로드](/help/mobile/mobile-on-demand-shared-resources.md)
-* [게시 취소 컨텐츠](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish 컨텐츠 게시 취소](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
->일반적으로 컨텐츠를 게시하기 전에 프리플라이트 를 수행해야 합니다. 다음을 참조하십시오 [Preflight로 미리 보기](/help/mobile/aem-mobile-manage-ondemand-services.md) 을 참조하십시오.
+>일반적으로 컨텐츠를 게시하기 전에 프리플라이트 를 수행해야 합니다. 자세한 내용은 [Preflight로 미리 보기](/help/mobile/aem-mobile-manage-ondemand-services.md)를 참조하십시오.
 
 ### 추가 리소스 {#additional-resources}
 

@@ -20,9 +20,9 @@ ht-degree: 1%
 
 ## SocialUtils 패키지 사용 안 함 {#socialutils-package-deprecated}
 
-패키지 `com.adobe.cq.social.ugcbase.SocialUtils` AEM 6.1에서 더 이상 사용되지 않습니다.
+패키지 `com.adobe.cq.social.ugcbase.SocialUtils`은(는) AEM 6.1에서 더 이상 사용되지 않습니다.
 
-다음 표에는 대신 사용할 메서드가 나열되어 있습니다 `SocialUtils` 메서드를 사용합니다.
+다음 표에서는 `SocialUtils` 메서드 대신 사용할 메서드를 나열합니다.
 
 ## SocialResourceUtility 패키지  {#socialresourceutilities-package}
 
@@ -42,13 +42,13 @@ ht-degree: 1%
 | 문자열 UGCoResourcePath(문자열 ugcPath) | 메서드 시그니처가 변경됨 |
 | 문자열 UGCoResourcePath(문자열 ugcPath, ResourceResolver) | 새 항목 |
 
-| 의 메서드 `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
+| `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities의 메서드 |
 |---|
 | SocialResourceProvider getSocialResourceProvider(리소스 리소스 리소스) | 는 SocialResourceProvider getConfiguredProvider(리소스 리소스)를 대체합니다. |
 
 ## SCFUtilities 패키지 {#scfutilities-package}
 
-| 의 메서드 `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
+| `com.adobe.cq.social.`utilities.scf.api.SCFUtilites의 메서드 |
 |---|
 | 문자열 getAvatar(UserProperties userProperties) |
 | 문자열 getAvatar(UserProperties userProperties, int size) |

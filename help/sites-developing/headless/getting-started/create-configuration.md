@@ -8,7 +8,7 @@ role: Admin,Architect,Data Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -30,16 +30,16 @@ AEM에서 Headless 콘텐츠 관리의 맥락에서 구성을 미래 콘텐츠 �
 
 관리자는 구성을 한 번만 만들면 되며, 매우 드물게 콘텐츠 모델을 구성하기 위해 새 작업 영역이 필요한 경우에 만들어야 합니다. 이 시작 안내서에서는 구성을 하나만 만들면 됩니다.
 
-1. AEM에 로그인하고 메인 메뉴에서 를 선택합니다. **도구 > 일반 > 구성 브라우저**.
-1. 다음을 제공합니다. **제목** 을 참조하십시오.
-   * 제목에 따라 이름이 자동으로 생성되고 [AEM 이름 지정 규칙입니다.](/help/sites-developing/naming-conventions.md). 저장소의 노드 이름이 됩니다.
+1. AEM에 로그인하고 메인 메뉴에서 **도구 > 일반 > 구성 브라우저**&#x200B;를 선택합니다.
+1. 구성에 대한 **제목**&#x200B;을 입력하십시오.
+   * 제목을 기반으로 이름이 자동으로 생성되고 [AEM 명명 규칙에 따라 조정됩니다.](/help/sites-developing/naming-conventions.md). 저장소의 노드 이름이 됩니다.
 1. 다음 옵션을 확인하십시오.
    * **콘텐츠 조각 모델**
    * **GraphQL 지속 쿼리**
 
    ![구성 만들기](assets/create-configuration.png)
 
-1. 클릭 **만들기**
+1. **만들기**&#x200B;를 클릭합니다.
 
 필요한 경우 여러 구성을 만들 수 있습니다. 구성은 중첩될 수도 있습니다.
 

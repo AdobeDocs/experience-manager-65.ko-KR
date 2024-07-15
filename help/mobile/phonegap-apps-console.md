@@ -40,7 +40,7 @@ AEM Mobile은 모바일 애플리케이션 생성을 위한 Phonegap 앱 블루�
 
 AEM에서 만드는 모바일 애플리케이션의 루트 페이지가 앱 콘솔에 표시됩니다.
 
-루트 페이지는 응용 프로그램을 만들 때 지정된 응용 프로그램의 대상 경로 속성 아래에 저장됩니다(기본 경로는 /content/phonegap/apps임). 페이지 이름은 응용 프로그램의 Name 속성입니다. 예를 들어 사이트 루트 페이지의 기본 URL은 `myphonegapapp` 은(는) `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+루트 페이지는 응용 프로그램을 만들 때 지정된 응용 프로그램의 대상 경로 속성 아래에 저장됩니다(기본 경로는 /content/phonegap/apps임). 페이지 이름은 응용 프로그램의 Name 속성입니다. 예를 들어 이름이 `myphonegapapp`인 사이트의 루트 페이지의 기본 URL은 `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`입니다.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -67,19 +67,19 @@ AEM에서 만드는 모바일 애플리케이션의 루트 페이지가 앱 콘�
 
 모바일 애플리케이션은 페이지 구조 및 속성을 정의하는 블루프린트를 기반으로 합니다. 다음 애플리케이션 속성을 구성할 수 있습니다.
 
-* **제목:** 애플리케이션 제목입니다.
-* **대상 경로:** 저장소에서 응용 프로그램이 저장되는 위치입니다. 앱 이름을 기반으로 경로를 만들려면 기본값을 둡니다.
+* **제목:** 응용 프로그램 제목입니다.
+* **대상 경로:** 응용 프로그램이 저장되어 있는 저장소의 위치입니다. 앱 이름을 기반으로 경로를 만들려면 기본값을 둡니다.
 
-* **이름:** 기본값은 공백 문자가 제거된 Title 속성 값입니다. 이 이름은 CQ 내에서 응용 프로그램을 참조하는 데 사용됩니다(예: 응용 프로그램을 나타내는 저장소 노드).
-* **설명:** 애플리케이션에 대한 설명.
-* **서버 URL:** OTA(Over-the-Air) 콘텐츠를 애플리케이션에 제공하는 URL입니다. 기본값은 응용 프로그램을 만드는 데 사용되는 인스턴스의 게시 서버 URL입니다(외부화 서비스에서 가져옴). 참고: 이는 인증이 필요한 작성자가 아닌 게시 서버 인스턴스여야 합니다.
+* **이름:** 기본값은 공백 문자가 제거된 Title 속성의 값입니다. 이 이름은 CQ 내에서 응용 프로그램을 참조하는 데 사용됩니다(예: 응용 프로그램을 나타내는 저장소 노드).
+* **설명:** 응용 프로그램에 대한 설명입니다.
+* **서버 URL:** OTA(Over-the-Air) 콘텐츠를 응용 프로그램에 업데이트하는 URL입니다. 기본값은 응용 프로그램을 만드는 데 사용되는 인스턴스의 게시 서버 URL입니다(외부화 서비스에서 가져옴). 참고: 이는 인증이 필요한 작성자가 아닌 게시 서버 인스턴스여야 합니다.
 
 애플리케이션 썸네일로 사용할 이미지 파일을 제공하고, 사용할 PhoneGap Build 구성을 선택하고, 사용할 Mobile App Analytics 구성을 선택할 수도 있습니다. 이 이미지는 Experience Manager의 모바일 앱 콘솔 내에서 모바일 애플리케이션을 나타내는 축소판으로만 사용됩니다.
 
 Adobe 클라우드 서비스를 빌드하고 Mobile Services SDK 플러그인을 앱에 통합하기 위한 추가(및 선택 사항) 탭이 있습니다.
 
 * 빌드: 구성 관리 를 클릭하고 여기에서 build.phonegap.com 빌드 서비스를 설정합니다. 그런 다음 드롭다운에서 새로 만든 PhoneGap Build 클라우드 서비스를 선택할 수 있습니다.
-* Analytics: 구성 관리 를 클릭하고 다음을 설정합니다. [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) 클라우드 서비스. 그런 다음 드롭다운에서 모바일 앱에 통합할 새로 만든 모바일 서비스를 선택할 수 있습니다.
+* Analytics: 구성 관리를 클릭하고 [Mobile Services SDK Adobe](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) 클라우드 서비스를 설정합니다. 그런 다음 드롭다운에서 모바일 앱에 통합할 새로 만든 모바일 서비스를 선택할 수 있습니다.
 
 >[!NOTE]
 >
@@ -113,30 +113,30 @@ Adobe 클라우드 서비스를 빌드하고 Mobile Services SDK 플러그인을
 1. 레일에서 앱 을 클릭합니다.
 1. 구성할 애플리케이션을 선택하고 페이지 속성 보기 아이콘을 클릭합니다.
 
-   ![원 안에 있는 문자 I가 나타내는 페이지 속성 보기 아이콘.](do-not-localize/chlimage_1-8.png)
+   ![원 안에 글자 I가 표시된 페이지 속성 보기 아이콘](do-not-localize/chlimage_1-8.png)
 
 1. 등록 정보 값을 변경하려면 편집 아이콘을 클릭합니다.
 
-   ![연필로 표시된 편집 아이콘.](do-not-localize/chlimage_1-9.png)
+   ![연필로 표시된 편집 아이콘](do-not-localize/chlimage_1-9.png)
 
 1. 기본 및 고급 속성을 구성한 다음 완료 아이콘을 클릭합니다.
 
-   ![확인 표시 기호가 표시된 완료 아이콘.](do-not-localize/chlimage_1-10.png)
+   ![확인 표시 기호가 표시된 완료 아이콘](do-not-localize/chlimage_1-10.png)
 
 #### 응용 프로그램의 언어 변형 구성 {#configure-a-language-variation-of-the-application}
 
 1. 레일에서 앱 을 클릭합니다.
 1. 을 클릭하여 앱 Admin Console 내에서 편집할 모바일 애플리케이션을 자세히 살펴봅니다. 구성할 응용 프로그램의 언어 버전을 선택하고 응용 프로그램 속성 보기 아이콘을 클릭합니다.
 
-   ![원 안에 문자 I가 표시된 응용 프로그램 등록 정보 보기 아이콘.](do-not-localize/chlimage_1-11.png)
+   ![원 안에 I 문자가 표시된 응용 프로그램 속성 보기 아이콘](do-not-localize/chlimage_1-11.png)
 
 1. 등록 정보 값을 변경하려면 편집 아이콘을 클릭합니다.
 
-   ![연필로 표시된 편집 아이콘.](do-not-localize/chlimage_1-12.png)
+   ![연필로 표시된 편집 아이콘](do-not-localize/chlimage_1-12.png)
 
 1. 기본, 고급, 빌드 및 Analytics 탭에서 속성을 구성한 다음 완료 아이콘을 클릭합니다.
 
-   ![확인 표시 기호가 표시된 완료 아이콘.](do-not-localize/chlimage_1-13.png)
+   ![확인 표시 기호가 표시된 완료 아이콘](do-not-localize/chlimage_1-13.png)
 
 ### 모바일 애플리케이션 콘텐츠 작성 {#authoring-the-content-of-a-mobile-application}
 
@@ -166,7 +166,7 @@ AEM 게시 인스턴스의 컨텐츠 동기화 캐시는 모바일 애플리케�
 1. 레일에서 앱 을 클릭한 다음 애플리케이션을 클릭합니다.
 1. 시작 페이지를 선택한 다음 캐시 업데이트 아이콘을 클릭합니다.
 
-   ![캐시 업데이트 아이콘 위에 재활용 기호가 있는 줄무늬 바렐이 표시되었습니다.](do-not-localize/chlimage_1-14.png)
+   ![캐시 업데이트 아이콘에 재활용 기호가 있는 줄무늬 버렐이 표시되었습니다.](do-not-localize/chlimage_1-14.png)
 
 ### 앱 템플릿 사용 {#using-app-templates}
 
@@ -333,7 +333,7 @@ Order By 속성은 고정 목록의 순서에 영향을 주지 않습니다.
 
 **고급 검색**
 
-다음을 사용하여 목록 채우기 [Querybuilder](/help/sites-developing/querybuilder-api.md) 쿼리.
+[Querybuilder](/help/sites-developing/querybuilder-api.md) 쿼리를 사용하여 목록을 채웁니다.
 
 ### 이미지 {#image}
 

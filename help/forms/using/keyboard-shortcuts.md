@@ -23,28 +23,28 @@ ht-degree: 5%
 
 ## 적응형 양식 편집기 {#adaptiveformeditor}
 
-| **작업** | **Windows의 바로 가기** | **macOS의 바로 가기** |
+| **작업** | Windows의 **바로 가기** | macOS의 **바로 가기** |
 |---|---|---|
 | 선택한 적응형 양식 구성 요소에 대한 속성 브라우저를 엽니다 | Alt+Enter | Alt+Return |
 | 선택한 적응형 양식 구성 요소에 대한 속성 브라우저를 닫습니다 | Ctrl+Alt+W | Command+Alt+W |
 | 선택한 적응형 양식 구성 요소에 대한 속성 브라우저에서 변경 사항 저장 | Ctrl+S | Command+S |
 | 선택한 적응형 양식 구성 요소에 대한 규칙 편집 | Ctrl+Alt+Enter | Command+Alt+Return |
-| 미리보기 와 현재 선택한 모드 (예: 편집 및 스캐폴딩) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&amp;Ast; |
-| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&amp;Ast; |
+| 미리보기 와 현재 선택한 모드 (예: 편집 및 스캐폴딩) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
+| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&amp;ast; |
 | 마지막 변경 내용을 재실행합니다. | Ctrl+Y | Ctrl+Y&amp;ast; |
 | 여러 구성 요소 선택 | Shift+클릭 | Shift+클릭 |
 | 선택한 구성 요소 복사 | Ctrl-C | Ctrl-C&amp;ast; |
 | 선택한 구성 요소를 잘라냅니다. 잘라낸 구성 요소는 새 위치에 붙여넣을 때까지 사라지지 않습니다. | Ctrl-X | Ctrl-X&amp;ast; |
 | 구성 요소 붙여넣기 | Ctrl+V | Ctrl+V |
 | 선택한 구성 요소 삭제 | Ctrl+Del | Ctrl+Del&amp;ast; |
-| 선택한 구성 요소 삭제 | Ctrl+백스페이스 | Ctrl+백스페이스(&amp;A); |
+| 선택한 구성 요소 삭제 | Ctrl+백스페이스 | Ctrl+백스페이스&amp;ast; |
 | 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+B | Ctrl+B&amp;ast; |
-| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시합니다 | Ctrl+I | Ctrl+I&amp;Ast; |
-| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+U | Ctrl+U&amp;Ast; |
+| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시합니다 | Ctrl+I | Ctrl+I&amp;ast; |
+| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+U | Ctrl+U&amp;ast; |
 
 >[!NOTE]
 >
->&#39;&amp;ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
+>&#39;&amp;ast;&#39;로 표시된 단축키는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
 
 >[!NOTE]
 >
@@ -56,21 +56,21 @@ ht-degree: 5%
 
 ## 테마 편집기  {#themeeditor}
 
-| **작업** | **Windows의 바로 가기** | **macOS의 바로 가기** |
+| **작업** | Windows의 **바로 가기** | macOS의 **바로 가기** |
 |---|---|---|
 | 테마에서 선택한 구성 요소의 속성 브라우저를 엽니다 | Alt+Enter | Alt+Return |
 | 테마에서 선택한 구성 요소의 속성 브라우저를 닫습니다. | Ctrl+Alt+W | Command+Alt+W |
-| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&amp;Ast; |
+| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&amp;ast; |
 | 마지막 변경 내용을 재실행합니다. | Ctrl+Y | Ctrl+Y&amp;ast; |
 | 선택한 구성 요소의 속성 브라우저에서 변경 내용을 테마에 저장 | Ctrl+S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
-&#39;&amp;ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
+&#39;&amp;ast;&#39;로 표시된 단축키는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
 
 ## 컨텐츠 브라우저  {#contentbrowser}
 
-| **작업** | **Windows의 바로 가기** | **macOS의 바로 가기** |
+| **작업** | Windows의 **바로 가기** | macOS의 **바로 가기** |
 |---|---|---|
 | 포커스가 있을 때 컨텐츠 브라우저의 양식 개체 트리에서 모든 아코디언을 확장합니다. | 모든 아코디언을 선택하려면 Ctrl+A를 누르고 확장하려면 오른쪽 화살표 클릭 | Command+A를 눌러 모든 아코디언을 선택한 다음 오른쪽 화살표를 눌러 확장 |
 | 포커스가 있을 때 컨텐츠 브라우저의 양식 개체 트리에서 모든 아코디언을 축소합니다 | 축소할 왼쪽 화살표 뒤에 모든 아코디언을 선택하려면 Ctrl+A를 클릭 | Command+A를 눌러 모든 아코디언을 선택한 다음 왼쪽 화살표를 눌러 축소합니다. |
@@ -79,15 +79,15 @@ ht-degree: 5%
 | Forms 개체 트리에서 다음 항목 선택 | 아래쪽 화살표 | 아래쪽 화살표 |
 | Forms 개체 트리에서 이전 항목 선택 | 위쪽 화살표 | 위쪽 화살표 |
 
-[1] Windows의 경우 Ctrl + 오른쪽 화살표, macOS의 경우 Command + 오른쪽 화살표 를 대체합니다.\
-[2] Windows의 경우 Ctrl + 왼쪽 화살표, macOS의 경우 Command + 왼쪽 화살표를 대체합니다.
+[1]은(는) Windows의 경우 Ctrl+오른쪽 화살표, macOS의 경우 Command+오른쪽 화살표를 바꿉니다.\
+[2]은(는) Windows의 경우 Ctrl+왼쪽 화살표, macOS의 경우 Command+왼쪽 화살표를 바꿉니다.
 
 ## 서신 관리 {#correspondence-management}
 
 이 섹션에는 서신 관리 텍스트 편집기에서 사용할 수 있는 다양한 키보드와 액세스 가능성 단축키가 나열되어 있습니다. 다음과 같은 상태에서 이러한 단축키를 사용할 수 있습니다.
 
-* 만들기 또는 편집 [텍스트](texts-interactive-communications.md) 자산
-* 관련 편집 아이콘( )을 탭한 후 텍스트 모듈 편집 ![edittextmodule](assets/edittextmodule.png)) [서신 만들기](/help/forms/using/create-correspondence.md).
+* [텍스트](texts-interactive-communications.md) 자산을 만들거나 편집하는 중
+* [서신을 만들](/help/forms/using/create-correspondence.md) 때 관련 편집 아이콘(![edittextmodule](assets/edittextmodule.png))을 탭한 후 텍스트 모듈을 편집합니다.
 
 ### 텍스트 선택 및 커서 이동 {#text-selection-and-moving-the-cursor-around}
 
@@ -96,7 +96,7 @@ ht-degree: 5%
   <tr>
    <th><strong>작업</strong></th> 
    <th><strong>Windows의 바로 가기</strong></th> 
-   <th><strong>macOS의 바로 가기</strong><br /> </th> 
+   <th>macOS의 <strong>바로 가기</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>현재 단어 선택</p> </td> 
@@ -246,7 +246,7 @@ ht-degree: 5%
   <tr>
    <th><strong>작업</strong></th> 
    <th><strong>Windows의 바로 가기 </strong></th> 
-   <th><strong>macOS의 바로 가기</strong><br /> </th> 
+   <th>macOS의 <strong>바로 가기</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>실행 취소 </p> </td> 

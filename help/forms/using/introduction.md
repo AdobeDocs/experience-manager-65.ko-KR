@@ -19,7 +19,7 @@ ht-degree: 0%
 
 HTML5 forms는 Adobe Experience Manager 6.0(AEM 6.0) 소프트웨어의 새로운 기능으로, XFA 양식 템플릿을 HTML5 형식으로 렌더링할 수 있습니다. 이 기능을 사용하면 XFA 기반 PDF이 지원되지 않는 모바일 장치 및 데스크탑 브라우저에서 양식을 렌더링할 수 있습니다. HTML5 양식은 XFA 양식 템플릿의 기존 기능을 지원할 뿐만 아니라 모바일 장치에 대한 스크리블 서명과 같은 새로운 기능을 추가합니다.
 
-HTML5 forms는 표준 HTML5 구문을 기반으로 문서를 생성합니다. HTML5를 지원하는 모든 최신 브라우저에서 HTML5 양식을 볼 수 있습니다. 브라우저에 대한 추가 브라우저 플러그인을 설치할 필요가 없습니다. 지원되는 브라우저에 대한 자세한 내용은 [지원되는 클라이언트 플랫폼](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
+HTML5 forms는 표준 HTML5 구문을 기반으로 문서를 생성합니다. HTML5를 지원하는 모든 최신 브라우저에서 HTML5 양식을 볼 수 있습니다. 브라우저에 대한 추가 브라우저 플러그인을 설치할 필요가 없습니다. 지원되는 브라우저에 대한 자세한 내용은 [지원되는 클라이언트 플랫폼](https://adobe.com/go/learn_aemforms_supportedplatforms_63)을 참조하십시오.
 
 ![HTML5 양식 미리 보기](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
@@ -41,8 +41,8 @@ HTML5 forms는 표준 HTML5 구문을 기반으로 문서를 생성합니다. HT
 
 ## HTML 5 양식 관리 {#manage-html-forms}
 
-또한 AEM에서는 AEM Forms UI를 사용하여 모든 양식 템플릿을 나열하고 관리할 수 있는 통합 보기를 제공합니다. 양식을 활성화, 비활성화, 게시 및 미리 볼 수 있습니다. 자세한 내용은 [양식 관리 소개](../../forms/using/introduction-managing-forms.md).
+또한 AEM에서는 AEM Forms UI를 사용하여 모든 양식 템플릿을 나열하고 관리할 수 있는 통합 보기를 제공합니다. 양식을 활성화, 비활성화, 게시 및 미리 볼 수 있습니다. 자세한 내용은 [양식 관리 소개](../../forms/using/introduction-managing-forms.md)를 참조하십시오.
 
 ### Forms 사용자 지정 {#forms-customization}
 
-HTML5 forms는 표준 HTML5 구문을 사용하여 양식 템플릿을 렌더링합니다. 따라서 주로 CSS와 JavaScript와 같은 웹 기술을 사용하여 양식을 HTML5 형식으로 간편하게 사용자 지정하고 확장할 수 있습니다. 기존 위젯의 모양을 손쉽게 사용자 정의하거나, 사용자 정의 위젯을 직접 만들거나, 양식의 사용자 정의 스타일을 사용할 수 있습니다. 사용자 정의 위젯 만들기 및 기존 위젯 사용자 정의에 대한 자세한 내용은 [HTML5 양식으로 사용자 정의 위젯 연결](../../forms/using/custom-widgets.md).
+HTML5 forms는 표준 HTML5 구문을 사용하여 양식 템플릿을 렌더링합니다. 따라서 주로 CSS와 JavaScript과 같은 웹 기술을 사용하여 양식을 HTML5 형식으로 간편하게 사용자 지정하고 확장할 수 있습니다. 기존 위젯의 모양을 손쉽게 사용자 정의하거나, 사용자 정의 위젯을 직접 만들거나, 양식의 사용자 정의 스타일을 사용할 수 있습니다. 사용자 정의 위젯을 만들고 기존 위젯을 사용자 정의하는 방법에 대한 자세한 내용은 [HTML 5 양식으로 사용자 정의 위젯에 연결](../../forms/using/custom-widgets.md)을 참조하십시오.

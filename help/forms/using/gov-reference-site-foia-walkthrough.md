@@ -26,7 +26,7 @@ We.Gov는 입양한 부모가 아이를 입양한 경우, 아이 양육비를 �
 * 해군
 * 환경 보호국
 
-정보의 자유법에 대한 자세한 내용은 [https://www.foia.gov/](https://www.foia.gov).
+정보의 자유법에 대한 자세한 내용은 [https://www.foia.gov/](https://www.foia.gov)을(를) 참조하십시오.
 
 이 시나리오에는 다음 가상 사용자가 포함됩니다.
 
@@ -42,26 +42,26 @@ We.Gov는 입양한 부모가 아이를 입양한 경우, 아이 양육비를 �
 
 ### 직접 확인 {#see-it-yourself}
 
-브라우저에서 을 엽니다. `https://<hostname>:<PublishPort>/wegov`. We.Gov 사이트에서 Applications > All Applications 를 선택합니다. 모든 응용 프로그램 페이지의 FOIA 요청에 대한 응용 프로그램 아래에서 적용을 선택합니다.
+브라우저에서 `https://<hostname>:<PublishPort>/wegov`을(를) 엽니다. We.Gov 사이트에서 Applications > All Applications 를 선택합니다. 모든 응용 프로그램 페이지의 FOIA 요청에 대한 응용 프로그램 아래에서 적용을 선택합니다.
 
 ## Sarah는 FOIA에서 그녀의 정보 신청을 시작한다 {#sarah-starts-her-application-for-information-under-foia}
 
-Sarah 클릭 수 **적용** 그리고 정보 자유법 요청 양식 페이지에서 Sarah는 다음을 포함한 정보를 입력합니다.
+Sarah가 **적용**&#x200B;을 클릭하고 정보 자유 법안 요청 양식 페이지에서 Sarah가 다음을 포함한 정보를 입력합니다.
 
-* **에이전시:** Sarah는 해당 요청이 법무부 - 정보 정책국 (Office of Information Policy)으로 지정된 기관을 지정합니다.
+* **기관:** Sarah는 법무부 - 정보 정책 담당자로 요청을 처리한 기관을 지정합니다.
 
-* **최대 까지 지불**: Sarah는 인쇄 및 우편 요금에 대해 최대 USD 100을 지불할 준비가 되어 있음을 명시합니다.
-* **요청 세부 사항 설명**: Sarah는 &quot;2013~2016 회계 연도의 아동 및 가족 관리 사례 로그 사본 요청&quot;을 지정합니다.
+* **최대 지불 예정**: Sarah는 인쇄 및 우편 요금에 대해 최대 USD 100을 지불할 준비가 되어 있다고 지정합니다.
+* **요청을 자세히 설명하십시오**: Sarah가 &quot;2013년부터 2016년까지 회계 연도의 하위 항목 및 가족 관리 사례 로그에 대한 복사본 요청&quot;을 지정합니다.
 
-![2013~2016 회계 연도의 아동 및 가족 관리 사례 로그 사본 요청](assets/sarahfiosform.png)
+![2013~2016 회계 연도의 아동 및 가족 관리 사례 로그 복사본 요청](assets/sarahfiosform.png)
 
 2013~2016 회계 연도의 아동 및 가족 관리 사례 로그 사본 요청
 
-Sarah는 언제든지 을(를) 선택할 수 있습니다. **저장** 양식 초안을 저장하고 나중에 다시 돌아와 양식을 작성하고 제출합니다. Sarah가 양식을 제출합니다.
+언제든지 Sarah가 **저장**&#x200B;을 선택하여 양식 초안을 저장하고 나중에 다시 돌아와 양식을 작성하고 제출할 수 있습니다. Sarah가 양식을 제출합니다.
 
 >[!NOTE]
 >
->이메일에서 다시 시작 워크플로우는 로그인한 사용자만 사용할 수 있습니다. 참조 사이트 시나리오에서 사용자 Sarah Rose가 추가되었는지 확인합니다. Sarah의 로그인 자격 증명은 `srose/password`.
+>이메일에서 다시 시작 워크플로우는 로그인한 사용자만 사용할 수 있습니다. 참조 사이트 시나리오에서 사용자 Sarah Rose가 추가되었는지 확인합니다. Sarah의 로그인 자격 증명은 `srose/password`입니다.
 
 ## John Jacobs는 신청서를 접수하고 승인한다 {#john-jacobs-receives-and-approves-the-application}
 
@@ -73,15 +73,15 @@ Sarah가 FOIA 신청서를 작성하여 제출하면, 신청서에 대한 기록
 
 ### 직접 확인 {#see-it-yourself-1}
 
-https://에서 AEM 받은 편지함에 액세스할 수 있습니다.***호스트 이름***>:&lt;***게시 포트***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. John Jacobs의 사용자 이름/암호로 jjacobs/password를 사용하여 AEM Inbox에 로그인하고 FOIA 애플리케이션을 참조하십시오. 양식 중심의 워크플로우 작업에 AEM 받은 편지함을 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리](/help/forms/using/manage-applications-inbox.md).
+https://&lt;***호스트 이름***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html에서 AEM 받은 편지함에 액세스할 수 있습니다. John Jacobs의 사용자 이름/암호로 jjacobs/password를 사용하여 AEM Inbox에 로그인하고 FOIA 애플리케이션을 참조하십시오. 양식 중심의 워크플로 작업에 AEM 받은 편지함을 사용하는 방법에 대한 자세한 내용은 [AEM 받은 편지함에서 Forms 응용 프로그램 및 작업 관리](/help/forms/using/manage-applications-inbox.md)를 참조하십시오.
 
-![존제이콥스](assets/johnjacobs.png)
+![johnjacobs](assets/johnjacobs.png)
 
 John Jacobs는 애플리케이션 대시보드에서 애플리케이션을 보고 승인하거나 거부할 수 있습니다. John Jacobs는 요청 세부 사항을 선택하여 열고 요청을 검토한 후 승인합니다.
 
 ![johnjacobstaskdetail-1](assets/johnjacobstaskdetail-1.png)
 
-### <strong>Sarah가 승인 이메일을 수신함</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
+### <strong>Sarah가 승인 이메일을 받습니다</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
 존 제이콥스가 신청을 승인하면, 사라는 We.Gov 사이트로부터 승인 이메일을 받는다. Sarah는 자신의 신청서 처리에 필요한 비용과 시간에 대해 정보를 받는다. 이메일에는 Sarah가 애플리케이션의 업데이트를 위해 연락할 수 있는 이메일 및 전화 세부 정보도 포함됩니다.
 
@@ -99,11 +99,11 @@ John Jacobs가 FOIA 요청을 승인하면 해당 응용 프로그램의 PDF 또
 
 ### 직접 보기 {#see-for-yourself}
 
-https://에서 AEM 받은 편지함에 액세스할 수 있습니다.***호스트 이름***>:&lt;***게시 포트***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Gloria Rios의 사용자 이름/암호로 grios/password를 사용하여 AEM Inbox에 로그인하고 FOIS 요청을 확인합니다.
+https://&lt;***호스트 이름***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html에서 AEM 받은 편지함에 액세스할 수 있습니다. Gloria Rios의 사용자 이름/암호로 grios/password를 사용하여 AEM Inbox에 로그인하고 FOIS 요청을 확인합니다.
 
 Gloria는 그 요청을 열고 FOIA 요청의 세부사항들을 조사합니다. Gloria는 요청의 세부사항을 검토하고 필요한 문서를 제공할 가능성을 확인한 후 요청을 승인합니다.
 
-![글로리아리오스](assets/gloriariosapproves.png)
+![gloriariosapprovals](assets/gloriariosapproves.png)
 
 ## Sarah가 요청이 승인되었다는 알림을 받습니다. {#sarah-receives-notification-that-her-request-is-approved}
 

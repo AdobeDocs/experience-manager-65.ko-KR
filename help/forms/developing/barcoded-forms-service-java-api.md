@@ -1,5 +1,5 @@
 ---
-title: 바코드 Forms 서비스 Java&trade, API 빠른 시작(SOAP)
+title: 바코드 Forms 서비스 Java&trade; API 빠른 시작(SOAP)
 description: AEM Forms의 Barcoded Forms Service Java&trade; API 빠른 시작(SOAP)을 통해 바코드를 매끄럽게 처리하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -26,11 +26,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍의 빠른 시작은 JBoss® Application Server 및 Microsoft® Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX®와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms을 사용한 프로그래밍의 빠른 시작은 JBoss® Application Server 및 Microsoft® Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX®와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 바코드 형식 데이터 디코딩 {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-다음 Java™ 코드는 Loan.pdf로 저장된 PDF 양식에 있는 양식 데이터를 디코딩합니다. 디코딩된 데이터는 extractedData.xml이라는 XML 파일로 저장됩니다. 이 코드 예제는 `org.w3c.dom.Document` 에 오브젝트 추가 `com.adobe.idp.Document` 개체. (참조: [바코드 형식 데이터 디코딩](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
+다음 Java™ 코드는 Loan.pdf로 저장된 PDF 양식에 있는 양식 데이터를 디코딩합니다. 디코딩된 데이터는 extractedData.xml이라는 XML 파일로 저장됩니다. 이 코드 예제에서는 `org.w3c.dom.Document` 개체를 `com.adobe.idp.Document` 개체로 변환합니다. [바코드된 양식 데이터 디코딩](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data)을 참조하십시오.
 
 ```java
  /*
@@ -219,4 +219,4 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->다음 두 가지를 모두 사용하는 경우 `org.w3c.dom.Document` 오브젝트 및 a `com.adobe.idp.Document` 동일한 응용 프로그램 논리에 있는 객체인 경우 두 객체 모두에 대해 자격을 부여하는 것이 좋습니다.
+>동일한 응용 프로그램 논리에서 `org.w3c.dom.Document` 개체와 `com.adobe.idp.Document` 개체를 모두 사용하는 경우 두 개체를 완전히 정규화하는 것이 좋습니다.

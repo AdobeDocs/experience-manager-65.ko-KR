@@ -24,7 +24,7 @@ ht-degree: 0%
 
 David은 2010년 Adobe이 인수한 글로벌 컨텐츠 관리 및 컨텐츠 인프라 소프트웨어의 선두 공급업체인 Day Software AG의 공동 설립자이자 CTO였습니다. David은 현재 Adobe의 엔터프라이즈 기술 부문 동료 겸 부사장으로서, 컨텐츠 관리 기술 표준인 Java™ JCR(Content Repository) API(Application Programming Interface) 인 JSR-170의 개발도 주도하고 있습니다.
 
-추가 업데이트는에서 확인할 수 있습니다. [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel).
+[https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel)에서도 추가 업데이트를 볼 수 있습니다.
 
 ## David 소개 {#introduction-from-david}
 
@@ -56,7 +56,7 @@ ERD 의미의 선언된 데이터 구조에 대해서는 걱정하지 않는 것
 
 #### 예 {#example-1}
 
-를 사용하는 위의 예 `lastModified` 날짜 속성(예: &quot;블로그 게시물&quot; 노드)은 특수 노드 유형이 필요하다는 것을 의미하지는 않습니다. I wouldn&#39;t sure use `nt:unstructured` 적어도 처음에는 블로그 게시물 노드의 경우입니다. 내 블로그 응용 프로그램에서, 내가 할 일은 어쨌든 lastModified 날짜를 표시 하는 것입니다 (아마도 &quot;order by&quot;) 나는 그것이 날짜인지 전혀 상관 없습니다. 나는 암묵적으로 내 블로그 쓰기 응용 프로그램을 믿고 거기에 &quot;날짜&quot;를 넣기 때문에, 실제로 의 존재를 선언할 필요가 없습니다 `lastModified` 노드 유형 형식의 날짜.
+위의 &quot;블로그 게시물&quot; 노드와 같이 `lastModified` 날짜 속성을 사용하는 예는 특별한 노드 유형이 필요하다는 것을 의미하지는 않습니다. 처음에는 블로그 게시물 노드에 `nt:unstructured`을(를) 사용해야 합니다. 내 블로그 응용 프로그램에서, 내가 할 일은 어쨌든 lastModified 날짜를 표시 하는 것입니다 (아마도 &quot;order by&quot;) 나는 그것이 날짜인지 전혀 상관 없습니다. 블로그 작성 응용 프로그램에 &quot;날짜&quot;를 넣도록 암묵적으로 신뢰하므로 노드 형식의 형식으로 `lastModified` 날짜가 있는지 선언할 필요가 없습니다.
 
 ### 규칙 #2: 콘텐츠 계층 구조를 구동합니다. 이렇게 하지 마십시오. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -74,7 +74,7 @@ ERD 의미의 선언된 데이터 구조에 대해서는 걱정하지 않는 것
 >
 >콘텐츠 저장소의 구성 방식은 성능에도 영향을 줄 수 있습니다. 최상의 성능을 위해 컨텐츠 저장소의 개별 노드에 연결된 하위 노드 수는 1,000개를 초과할 수 없습니다.
 >
->다음을 참조하십시오 [CRX가 처리할 수 있는 데이터의 양은?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
+>[CRX에서 처리할 수 있는 데이터의 양](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)을 참조하세요.
 
 #### 예 {#example-2}
 
@@ -100,7 +100,7 @@ ERD 의미의 선언된 데이터 구조에 대해서는 걱정하지 않는 것
 
 #### 설명 {#explanation-3}
 
-를 사용하지 않는 경우 `clone()`, `merge()` 또는 `update()` 단일 작업 영역을 사용하는 것이 아마도 애플리케이션의 방법입니다.
+응용 프로그램에서 `clone()`, `merge()` 또는 `update()` 메서드를 사용하지 않는 경우 단일 작업 영역을 사용하는 것이 좋습니다.
 
 &quot;해당 노드&quot;는 JCR 사양에 정의된 개념입니다. 기본적으로 동일한 콘텐츠를 나타내는 노드로 전달되며, 이러한 콘텐츠는 서로 다른 작업 공간에 있습니다.
 
@@ -173,13 +173,13 @@ XML을 가져오거나 기존 XML과 상호 작용하기 위해 SNS가 필요하
 
 #### 설명 {#explanation-6}
 
-콘텐츠 모델이 파일이나 폴더와 같은 냄새라도 원격으로 발생하는 것을 노출하면 를 사용(또는 확장)하려고 합니다 `nt:file`, `nt:folder`, 및 `nt:resource`.
+콘텐츠 모델이 파일이나 폴더와 같은 냄새를 원격으로 노출하는 경우 `nt:file`, `nt:folder` 및 `nt:resource`을(를) 사용하거나 확장하려고 합니다.
 
 경험상 많은 일반 애플리케이션은 nt:folder 및 nt:files와의 상호 작용을 묵시적으로 허용하며 추가 메타 정보로 보강된 경우 이러한 이벤트를 처리하고 표시하는 방법을 알고 있습니다. 예를 들어 JCR 위에 있는 CIF 또는 WebDAV와 같은 파일 서버 구현과 직접적인 상호 작용은 암시적이 됩니다.
 
-내 생각엔 다음과 같은 방법을 사용할 수 있을 것 같다: 파일 이름과 mime 유형을 저장해야 한다면 `nt:file`/ `nt:resource` 잘 어울리네요 여러 &quot;파일&quot;이 있을 수 있는 경우 nt:folder를 저장하는 것이 좋습니다.
+파일 이름과 MIME 형식을 저장해야 하는 경우 `nt:file`/ `nt:resource`이(가) 일치하는 것으로 알고 있습니다. 여러 &quot;파일&quot;이 있을 수 있는 경우 nt:folder를 저장하는 것이 좋습니다.
 
-리소스에 대한 메타 정보를 추가해야 하는 경우 &quot;작성자&quot; 또는 &quot;설명&quot; 속성을 예로 들면 을 확장합니다. `nt:resource` 아님 `nt:file`. nt:file은 거의 확장하지 않고 자주 확장합니다. `nt:resource`.
+리소스에 대한 메타 정보를 추가해야 하는 경우 &quot;작성자&quot; 또는 &quot;설명&quot; 속성을 예로 들면 `nt:file`이(가) 아닌 `nt:resource`을(를) 확장합니다. nt:file을 거의 확장하지 않고 `nt:resource`을(를) 자주 확장합니다.
 
 #### 예 {#example-6}
 
@@ -207,13 +207,13 @@ XML을 가져오거나 기존 XML과 상호 작용하기 위해 SNS가 필요하
 
 콘텐츠 모델이 &quot;ID&quot;로 끝나는 속성으로 가득 찬 경우 계층 구조를 제대로 사용하지 않는 것일 수 있습니다.
 
-일부 노드는 라이브 사이클 전체에서 안정적인 식별이 필요한 것이 사실입니다. 하지만 생각보다 적습니다. 그러나 `mix:referenceable` 에는 이러한 메커니즘이 저장소에 내장되어 있으므로 안정적인 방식으로 노드를 식별할 수 있는 추가 수단을 마련할 필요가 없습니다.
+일부 노드는 라이브 사이클 전체에서 안정적인 식별이 필요한 것이 사실입니다. 하지만 생각보다 적습니다. 그러나 `mix:referenceable`은(는) 이러한 메커니즘을 저장소에 내장하고 있으므로 안정적인 방식으로 노드를 식별할 수 있는 추가 수단을 마련할 필요가 없습니다.
 
 항목은 경로로 식별할 수 있습니다. 또한 UNIX® 파일 시스템의 하드 링크보다 대부분의 사용자에게 &quot;심볼릭 링크&quot;가 훨씬 더 유용한 만큼 대부분의 애플리케이션이 타겟 노드를 참조하는 경로도 의미가 있습니다.
 
-더 중요한 것은 **mix**:referenceable : 실제로 참조해야 하는 시점에 노드에 적용할 수 있음을 의미합니다.
+더 중요한 것은 **mix**:referenceable이라는 것입니다. 즉, 실제로 참조해야 하는 시점에 노드에 적용할 수 있습니다.
 
-따라서 &quot;Document&quot; 유형의 노드를 잠재적으로 참조하고자 한다고 해서 &quot;Document&quot; 노드 유형이에서 확장되어야 하는 것은 아닙니다. `mix:referenceable` 정적 방식으로. 이는 &quot;문서&quot;의 모든 인스턴스에 동적으로 추가될 수 있기 때문입니다.
+따라서 &quot;Document&quot; 유형의 노드를 잠재적으로 참조하고자 한다고 해서 &quot;Document&quot; 노드 유형이 정적 방식으로 `mix:referenceable`에서 확장되어야 하는 것은 아닙니다. 이는 &quot;문서&quot;의 모든 인스턴스에 동적으로 추가될 수 있기 때문입니다.
 
 #### 예 {#example-7}
 

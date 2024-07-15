@@ -28,19 +28,19 @@ ht-degree: 5%
 
 1. 정적 템플릿을 사용하는 페이지의 경우 다음 단계를 수행하십시오.
 
-   1. 페이지 헤더에서 을 선택합니다. ![캔버스 드롭다운](assets/canvas-drop-down.png) > **디자인** 디자인 모드에서 페이지를 엽니다.
-   1. 파란색 테두리로 구성 요소를 선택한 다음 를 선택합니다 ![필드 수준](assets/field-level.png) 현재 구성 요소가 포함된 단락 시스템을 선택합니다.
-   1. 단락 시스템에서 을 선택합니다. ![settings_icon](assets/settings_icon.png) 를 클릭하여 단락 시스템의 편집 대화 상자를 엽니다.
-   1. 목록에서 **[!UICONTROL 허용된 구성 요소]**, 확인란 활성화 **[!UICONTROL 문서 서비스]** 및 **[!UICONTROL 문서 서비스 조건자]** 구성 요소. 선택 **[!UICONTROL 확인]**.
+   1. 페이지 헤더에서 ![캔버스-드롭다운](assets/canvas-drop-down.png) > **디자인**&#x200B;을 선택하여 디자인 모드에서 페이지를 엽니다.
+   1. 파란색 테두리가 있는 구성 요소를 선택한 다음 ![필드 수준](assets/field-level.png)을 선택하여 현재 구성 요소가 포함된 단락 시스템을 선택합니다.
+   1. 단락 시스템에서 ![settings_icon](assets/settings_icon.png)을(를) 선택하여 단락 시스템의 편집 대화 상자를 엽니다.
+   1. **[!UICONTROL 허용된 구성 요소]** 목록에서 **[!UICONTROL 문서 서비스]** 및 **[!UICONTROL 문서 서비스 조건자]** 구성 요소에 대한 확인란을 활성화하십시오. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 
 1. 동적 템플릿을 사용하는 페이지의 경우 다음 단계를 수행하십시오.
 
-   1. 페이지 헤더에서 을 선택합니다. ![속성](assets/properties.png) > **템플릿 편집** 을 클릭하여 페이지의 템플릿을 엽니다.
-   1. 선택 **레이아웃 컨테이너** 및 선택 ![FeedManagement](/help/forms/using/assets/feedmanagement.png). 다음에서 **허용된 구성 요소** 탭, 활성화 **문서 서비스 및 문서 서비스 조건자** 옵션 및 선택 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. 페이지 헤더에서 ![속성](assets/properties.png) > **템플릿 편집**&#x200B;을 선택하여 페이지의 템플릿을 엽니다.
+   1. **레이아웃 컨테이너**&#x200B;를 선택하고 ![FeedManagement](/help/forms/using/assets/feedmanagement.png)를 선택합니다. **허용된 구성 요소** 탭에서 **문서 서비스 및 문서 서비스 조건자** 옵션을 사용하도록 설정하고 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)를 선택합니다.
 
 >[!NOTE]
 >
->구성 요소를 선택하여 이러한 범주의 특정 구성 요소를 활성화할 수도 있습니다. 구성 요소 및 그 사용에 대한 자세한 내용은 [양식 포털 페이지 만들기](/help/forms/using/creating-form-portal-page.md) 및 [페이지에 링크 구성 요소 포함](/help/forms/using/embedding-link-component-page.md).
+>구성 요소를 선택하여 이러한 범주의 특정 구성 요소를 활성화할 수도 있습니다. 구성 요소 및 사용 방법에 대한 자세한 내용은 [양식 포털 페이지 만들기](/help/forms/using/creating-form-portal-page.md) 및 [페이지에 링크 구성 요소 포함](/help/forms/using/embedding-link-component-page.md)을 참조하십시오.
 
 이제 구성 요소 브라우저에서 문서 서비스 및 문서 서비스 조건자 구성 요소 범주를 사용할 수 있습니다. 구성 요소는 동일한 템플릿을 사용하는 모든 페이지에 대해 활성화됩니다.
 

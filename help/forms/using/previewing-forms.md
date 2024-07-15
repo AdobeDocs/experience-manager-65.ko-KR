@@ -30,8 +30,8 @@ AEM Forms에서는 저장소에 있는 양식 및 문서를 미리 볼 수 있�
 <table>
  <tbody>
   <tr>
-   <td><strong>에셋 유형</strong><br /> </td>
-   <td><strong>사용 가능한 미리보기 옵션</strong><br /> </td>
+   <td><strong>자산 유형</strong><br /> </td>
+   <td><strong>사용 가능한 미리 보기 옵션</strong><br /> </td>
   </tr>
   <tr>
    <td>문서</td>
@@ -39,7 +39,7 @@ AEM Forms에서는 저장소에 있는 양식 및 문서를 미리 볼 수 있�
   </tr>
   <tr>
    <td>PDF 양식</td>
-   <td>PDF 미리 보기 및 데이터를 사용한 미리 보기<br /> </td>
+   <td>PDF 미리 보기 및 데이터 미리 보기<br /> </td>
   </tr>
   <tr>
    <td>적응형 양식</td>
@@ -54,11 +54,11 @@ AEM Forms에서는 저장소에 있는 양식 및 문서를 미리 볼 수 있�
 
 ## 양식 미리보기 {#previewing-a-form-1}
 
-1. 미리 보려는 에셋을 선택하고 미리 보기 를 클릭합니다 ![aem6forms_preview](assets/aem6forms_preview.png) ( 작업 도구 모음)을 참조하십시오.
+1. 미리 보려는 자산을 선택하고 작업 도구 모음에서 ![aem6forms_preview](assets/aem6forms_preview.png) 미리 보기를 클릭합니다.
 
    >[!NOTE]
    >
-   >에셋을 선택하려면 기본 카드 보기에서 목록 보기로 전환합니다. 클릭 ![aem6forms_viewlist](assets/aem6forms_viewlist.png) 또는 ![aem6forms_viewcard](assets/aem6forms_viewcard.png) 보기를 전환합니다.
+   >에셋을 선택하려면 기본 카드 보기에서 목록 보기로 전환합니다. 보기를 전환하려면 ![aem6forms_viewlist](assets/aem6forms_viewlist.png) 또는 ![aem6forms_viewcard](assets/aem6forms_viewcard.png)을(를) 클릭하십시오.
 
 1. 미리보기 를 클릭하면 선택한 에셋 유형에 적용할 수 있는 미리보기 옵션이 나열됩니다. 선택한 에셋을 새 탭에서 렌더링하려면 원하는 옵션을 클릭합니다.
 
@@ -70,7 +70,7 @@ AEM Forms에서는 저장소에 있는 양식 및 문서를 미리 볼 수 있�
 
 ## 데이터를 포함한 미리 보기 {#preview-with-data}
 
-다음을 선택할 때 **데이터를 사용하여 미리 보기**&#x200B;을 입력하면 입력된 실제 데이터로 양식이 어떻게 보이는지 확인할 수 있습니다. [데이터로 미리 보기] 옵션을 사용하면 샘플 사용자 데이터가 포함된 XML을 업로드할 수 있습니다. 샘플 사용자 데이터는 선택한 형식으로 미리 보기 양식을 채우는 데 사용됩니다.
+**데이터로 미리 보기**&#x200B;를 선택하면 양식에 입력된 실제 데이터가 어떻게 표시되는지 볼 수 있습니다. [데이터로 미리 보기] 옵션을 사용하면 샘플 사용자 데이터가 포함된 XML을 업로드할 수 있습니다. 샘플 사용자 데이터는 선택한 형식으로 미리 보기 양식을 채우는 데 사용됩니다.
 
-1. 에셋을 선택하고 미리보기 를 클릭합니다. ![aem6forms_preview](assets/aem6forms_preview.png), 및 선택 **데이터를 사용하여 미리 보기**.
+1. 자산을 선택하고 미리 보기 ![aem6forms_preview](assets/aem6forms_preview.png)를 클릭한 다음 **데이터로 미리 보기**&#x200B;를 선택합니다.
 1. 양식 미리 보기 대화 상자에서 FormData를 XML 파일로 제공합니다. 미리보기 를 클릭하여 XML에서 병합된 데이터로 양식을 렌더링합니다.

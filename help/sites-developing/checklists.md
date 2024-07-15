@@ -35,4 +35,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->또한 다음을 확인할 수 있습니다. [프로젝트 관리 - 우수 사례 검사 목록](/help/managing/best-practices.md) 전체 프로젝트와 관련된 추가 체크리스트의 경우.
+>전체 프로젝트와 관련된 추가 확인 목록에 대해서는 [프로젝트 관리 - 모범 사례 확인 목록](/help/managing/best-practices.md)을 볼 수도 있습니다.

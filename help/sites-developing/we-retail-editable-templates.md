@@ -29,7 +29,7 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. 모드 선택기에서 더 이상 디자인 모드를 제공하지 않습니다. We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하며 편집 가능한 템플릿의 디자인을 변경하려면 템플릿 편집기에서 편집해야 합니다.
-1. 다음에서 **페이지 정보** 메뉴 선택 **템플릿 편집**.
+1. **페이지 정보** 메뉴에서 **템플릿 편집**&#x200B;을 선택합니다.
 1. 이제 Hero 페이지 템플릿을 편집하고 있습니다.
 
    페이지의 구조 모드에서는 템플릿의 구조를 수정할 수 있습니다. 예를 들어 레이아웃 컨테이너에서 허용되는 구성 요소가 여기에 포함됩니다.
@@ -66,12 +66,12 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. 템플릿 편집기로 돌아가 모드 선택기를 사용하여 다음으로 변경할 수 있습니다. **초기 컨텐츠** 모드에서 페이지에 필요한 콘텐츠를 정의합니다.
+1. 템플릿 편집기로 돌아가서 모드 선택기를 사용하여 **초기 콘텐츠** 모드로 변경하여 페이지에 필요한 콘텐츠를 정의할 수 있습니다.
 
-   **레이아웃** 모드는 일반 페이지에서 그대로 사용하여 템플릿의 레이아웃을 정의할 수 있습니다.
+   **레이아웃** 모드를 일반 페이지에서 그대로 사용하여 템플릿의 레이아웃을 정의할 수 있습니다.
 
 ## 추가 정보 {#more-information}
 
-자세한 내용은 작성 문서를 참조하십시오 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md) 편집 가능한 템플릿에 대한 전체 기술 세부 정보.
+자세한 내용은 작성 문서 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md)에서 편집 가능한 템플릿에 대한 전체 기술 정보를 참조하십시오.
 
-조사를 원할 수도 있습니다. [핵심 구성 요소](/help/sites-developing/we-retail-core-components.md). 작성 문서 참조 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 핵심 구성 요소 및 개발자 문서의 기능에 대한 개요 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 기술 개요를 참조하십시오.
+[핵심 구성 요소](/help/sites-developing/we-retail-core-components.md)를 조사할 수도 있습니다. 핵심 구성 요소의 기능에 대한 개요는 작성 문서 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)를 참조하고, 기술 개요는 개발자 문서 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html)을 참조하십시오.

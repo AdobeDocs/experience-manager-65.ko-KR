@@ -31,7 +31,7 @@ ht-degree: 4%
 * 원하는 데이터 소스에서 가져온 XML 데이터의 URL(cmDataUrl 매개 변수 사용).
 
 예를 들어 사용자 정의 포털은 다음과 같이 URL을 준비합니다.\
-`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`: 포털에 있는 링크의 href일 수 있습니다.
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`(포털의 링크에서 가져온 href일 수 있음)
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 ## 인라인 데이터 기반 호출 {#inline-data-based-invocation}
 
-응답 만들기 애플리케이션을 호출하는 또 다른(및 보다 안전한) 방법은 https://&#39;의 URL을 단순히 히트하는 것입니다.[server]:[포트]&#39;/[contextPath]/aem/forms/createcorrespondence.html 을 사용하여 매개 변수 및 데이터를 전송하여 응답 만들기 애플리케이션을 POST 요청으로 호출합니다(최종 사용자에게 숨기기). 즉, 이전 접근 방법에서는 불가능하거나 이상적이지 않았던 서신 작성 애플리케이션 인라인(cmData 매개 변수를 사용하여 동일한 요청의 일부로)에 대한 XML 데이터를 전달할 수 있습니다.
+응답 만들기 응용 프로그램을 호출하는 다른(및 보다 안전한) 방법은 매개 변수와 데이터를 전송하여 응답 만들기 응용 프로그램을 POST 요청으로(최종 사용자에게 숨기기) 호출하는 동안 https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html에서 URL을 히트하는 것입니다. 즉, 이전 접근 방법에서는 불가능하거나 이상적이지 않았던 서신 작성 애플리케이션 인라인(cmData 매개 변수를 사용하여 동일한 요청의 일부로)에 대한 XML 데이터를 전달할 수 있습니다.
 
 ### 편지 지정을 위한 매개변수 {#parameters-for-specifying-letter}
 
@@ -66,7 +66,7 @@ ht-degree: 4%
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>cq, ftp, http 또는 file과 같은 기본 프로토콜을 사용하는 소스 파일의 XML 데이터입니다.<br /> </td> 
+   <td>cq, ftp, http 또는 file과 같은 기본 프로토콜을 사용하는 원본 파일의 XML 데이터입니다.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
@@ -95,7 +95,7 @@ ht-degree: 4%
   <tr>
    <td>cmPreview<br /> </td> 
    <td>부울</td> 
-   <td>True로 설정하면 편지가 미리 보기 모드로 열립니다<br /> </td> 
+   <td>True로 설정하여 미리 보기 모드<br />에서 편지 열기 </td> 
   </tr>
   <tr>
    <td>임의</td> 

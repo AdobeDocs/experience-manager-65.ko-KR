@@ -28,7 +28,7 @@ ht-degree: 33%
 
    * [다국어 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md)
 
-* 이 두 가지 기능을 결합하여 두 웹 사이트를 모두 지원할 수 있습니다. [다국적 및 다국어](#multinational-and-multilingual-sites).
+* 이 두 가지 기능을 결합하여 [다국적 및 다국어](#multinational-and-multilingual-sites)인 웹 사이트를 지원할 수 있습니다.
 
 ## 다국적 및 다국어 사이트 {#multinational-and-multilingual-sites}
 
@@ -50,7 +50,7 @@ ht-degree: 33%
 >
 >이 시나리오 및 이와 비슷한 시나리오에서 MSM은 이렇게 다양한 언어 버전을 관리하지 않습니다.
 >
->* [MSM](/help/sites-administering/msm.md) 는 언어 경계 내에서 블루프린트(예: 글로벌 마스터)에서 라이브 카피(예: 로컬 사이트)로의 번역된 콘텐츠 배포를 관리합니다.
+>* [MSM](/help/sites-administering/msm.md)은(는) 언어 경계 내에서 블루프린트(예: 글로벌 마스터)에서 라이브 카피(예: 로컬 사이트)로의 번역된 콘텐츠 배포를 관리합니다.
 >* AEM의 [번역](/help/sites-administering/translation.md) 통합 기능과 서드파티 번역 관리 서비스는 다양한 언어 및 콘텐츠 번역을 관리합니다.
 >
 >고급 사용 사례의 경우 여러 언어 마스터에 걸쳐 MSM을 사용할 수도 있습니다.
@@ -61,7 +61,7 @@ ht-degree: 33%
 >
 >* [MSM 모범 사례](/help/sites-administering/msm-best-practices.md); 특히:
 >
->   * [사이트 생성](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [사이트 만들기](/help/sites-administering/msm-best-practices.md#create-site)
 >   * [MSM 및 다국어 웹 사이트](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [번역 모범 사례](/help/sites-administering/tc-bp.md)

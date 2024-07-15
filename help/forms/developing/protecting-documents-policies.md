@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # 정책으로 문서 보호 {#protecting-documents-with-policies}
 
-**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
+**이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
-**Document Security 서비스 정보**
+**문서 보안 서비스 정보**
 
 Document Security 서비스를 통해 사용자는 Adobe PDF 문서에 기밀 유지 설정을 동적으로 적용하고 문서가 광범위하게 배포된 경우에도 문서에 대한 제어 권한을 유지할 수 있습니다.
 
@@ -39,24 +39,24 @@ Document Security 서비스는 Microsoft Word 파일(DOC 파일)과 같은 다�
 
 Document Security 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
-* 정책을 만듭니다. 자세한 내용은 [정책 만들기](protecting-documents-policies.md#creating-policies).
-* 정책을 수정합니다. 자세한 내용은 [정책 수정](protecting-documents-policies.md#modifying-policies).
-* 정책을 삭제합니다. 자세한 내용은 [정책 삭제](protecting-documents-policies.md#deleting-policies).
-* PDF 문서에 정책을 적용합니다. 자세한 내용은 [PDF 문서에 정책 적용](protecting-documents-policies.md#applying-policies-to-pdf-documents).
-* PDF 문서에서 정책을 제거합니다. 자세한 내용은 [PDF 문서에서 정책 제거](protecting-documents-policies.md#removing-policies-from-pdf-documents).
-* Inspect 정책으로 보호된 문서. 자세한 내용은 [정책으로 보호된 PDF 문서 검사](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
-* PDF 문서에 대한 액세스 권한을 취소합니다. 자세한 내용은 [문서에 대한 액세스 취소](protecting-documents-policies.md#revoking-access-to-documents).
-* 해지된 문서에 대한 액세스 권한을 복원합니다. 자세한 내용은 [해지된 문서에 대한 액세스 복원](protecting-documents-policies.md#reinstating-access-to-revoked-documents).
-* 워터마크 만들기 자세한 내용은 [워터마크 만들기](protecting-documents-policies.md#creating-watermarks).
-* 이벤트를 검색합니다. 자세한 내용은 [이벤트 검색](protecting-documents-policies.md#searching-for-events).
+* 정책을 만듭니다. 자세한 내용은 [정책 만들기](protecting-documents-policies.md#creating-policies)를 참조하십시오.
+* 정책을 수정합니다. 자세한 내용은 [정책 수정](protecting-documents-policies.md#modifying-policies)을 참조하십시오.
+* 정책을 삭제합니다. 자세한 내용은 [정책 삭제](protecting-documents-policies.md#deleting-policies)를 참조하십시오.
+* PDF 문서에 정책을 적용합니다. 자세한 내용은 [PDF 문서에 정책 적용](protecting-documents-policies.md#applying-policies-to-pdf-documents)을 참조하십시오.
+* PDF 문서에서 정책을 제거합니다. 자세한 내용은 [PDF 문서에서 정책 제거](protecting-documents-policies.md#removing-policies-from-pdf-documents)를 참조하십시오.
+* Inspect 정책으로 보호된 문서. 자세한 내용은 [정책으로 보호된 PDF 문서 검사](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)를 참조하십시오.
+* PDF 문서에 대한 액세스 권한을 취소합니다. 자세한 내용은 [문서에 대한 액세스 취소](protecting-documents-policies.md#revoking-access-to-documents)를 참조하십시오.
+* 해지된 문서에 대한 액세스 권한을 복원합니다. 자세한 내용은 [해지된 문서에 대한 액세스 복원](protecting-documents-policies.md#reinstating-access-to-revoked-documents)을 참조하십시오.
+* 워터마크 만들기 자세한 내용은 [워터마크 만들기](protecting-documents-policies.md#creating-watermarks)를 참조하십시오.
+* 이벤트를 검색합니다. 자세한 내용은 [이벤트 검색](protecting-documents-policies.md#searching-for-events)을 참조하세요.
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ## 정책 만들기 {#creating-policies}
 
-Document Security Java API 또는 웹 서비스 API를 사용하여 프로그래밍 방식으로 정책을 만들 수 있습니다. A *정책* 는 문서 보안 설정, 인증된 사용자 및 사용 권한을 포함하는 정보의 모음입니다. 다양한 상황과 사용자에 적합한 보안 설정을 사용하여 원하는 수의 정책을 만들고 저장할 수 있습니다.
+Document Security Java API 또는 웹 서비스 API를 사용하여 프로그래밍 방식으로 정책을 만들 수 있습니다. *정책*&#x200B;은(는) 문서 보안 설정, 승인된 사용자 및 사용 권한이 포함된 정보 모음입니다. 다양한 상황과 사용자에 적합한 보안 설정을 사용하여 원하는 수의 정책을 만들고 저장할 수 있습니다.
 
 정책을 사용하면 다음 작업을 수행할 수 있습니다.
 
@@ -133,7 +133,7 @@ Document Security Java API 또는 웹 서비스 API를 사용하여 프로그래
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary-of-steps}
 
@@ -164,13 +164,13 @@ Document Security Java API 또는 웹 서비스 API를 사용하여 프로그래
 * adobe-utilities.jar
 * jbossall-client.jar(AEM Forms이 JBoss에 배포되지 않은 경우 다른 JAR 파일 사용)
 
-이러한 JAR 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 JAR 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
 
 **Document Security 클라이언트 API 개체 만들기**
 
 Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만듭니다.
 
-**정책의 속성 설정**
+**정책의 특성을 설정합니다**
 
 정책을 만들려면 정책 특성을 설정합니다. 필수 속성은 정책 이름입니다. 정책 이름은 각 정책 집합에 대해 고유해야 합니다. 정책 집합은 단순히 정책의 집합입니다. 정책이 별도의 정책 집합에 속하는 경우 동일한 이름의 정책이 두 개 있을 수 있습니다. 그러나 단일 정책 집합 내의 두 정책은 동일한 정책 이름을 가질 수 없습니다.
 
@@ -189,13 +189,13 @@ Document Security 서비스 작업을 프로그래밍 방식으로 수행하려�
 
 * **AES256**: 256비트 키가 있는 AES 암호화 알고리즘을 나타냅니다.
 * **AES128**: 128비트 키가 있는 AES 암호화 알고리즘을 나타냅니다.
-* **암호화 없음:** 암호화 없음을 나타냅니다.
+* **NoEncryption:**&#x200B;은(는) 암호화 없음을 나타냅니다.
 
-을(를) 지정할 때 `NoEncryption` 옵션을 지정하면 다음을 설정할 수 없습니다. `PlaintextMetadata` 옵션 대상 `false`. 그렇게 하려고 하면 예외가 발생합니다.
+`NoEncryption` 옵션을 지정할 때 `PlaintextMetadata` 옵션을 `false`(으)로 설정할 수 없습니다. 그렇게 하려고 하면 예외가 발생합니다.
 
 >[!NOTE]
 >
->설정할 수 있는 다른 속성에 대한 자세한 내용은 `Policy` 인터페이스 설명 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>설정할 수 있는 다른 특성에 대한 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)에서 `Policy` 인터페이스 설명을 참조하십시오.
 
 **정책 항목 만들기**
 
@@ -221,40 +221,40 @@ Java(Document Security API)를 사용하여 정책을 만듭니다.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `DocumentSecurityClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `DocumentSecurityClient` 개체를 만듭니다.
 
 1. 정책의 속성을 설정합니다.
 
-   * 만들기 `Policy` 를 호출하여 개체 `InfomodelObjectFactory` 오브젝트의 정적 `createPolicy` 메서드를 사용합니다. 이 메서드는 `Policy` 개체.
-   * 다음을 호출하여 정책의 이름 속성을 설정합니다. `Policy` 개체 `setName` 메서드 및 정책 이름을 지정하는 문자열 값 전달
-   * 다음을 호출하여 정책 설명 설정 `Policy` 개체 `setDescription` 메서드 및 정책의 설명을 지정하는 문자열 값 전달
-   * 다음을 호출하여 새 정책이 속한 정책 집합을 지정하십시오. `Policy` 개체 `setPolicySetName` 메서드 및 정책 집합 이름을 지정하는 문자열 값 전달 (다음을 지정할 수 있습니다. `null` 정책이 추가되는 이 매개 변수 값에 대한 *내 정책* 정책 설정)
-   * 다음을 호출하여 정책의 유효 기간 만들기 `InfomodelObjectFactory` 오브젝트의 정적 `createValidityPeriod` 메서드를 사용합니다. 이 메서드는 `ValidityPeriod` 개체.
-   * 를 호출하여 정책으로 보호된 문서에 액세스할 수 있는 일 수를 설정합니다. `ValidityPeriod` 개체 `setRelativeExpirationDays` 일수를 지정하는 정수 값 전달 방법
-   * 다음을 호출하여 정책의 유효 기간 설정 `Policy` 개체 `setValidityPeriod` 메서드 및 전달 `ValidityPeriod` 개체.
+   * `InfomodelObjectFactory` 개체의 정적 `createPolicy` 메서드를 호출하여 `Policy` 개체를 만듭니다. 이 메서드는 `Policy` 개체를 반환합니다.
+   * `Policy` 개체의 `setName` 메서드를 호출하고 정책 이름을 지정하는 문자열 값을 전달하여 정책의 이름 특성을 설정합니다.
+   * `Policy` 개체의 `setDescription` 메서드를 호출하고 정책 설명을 지정하는 문자열 값을 전달하여 정책 설명을 설정합니다.
+   * `Policy` 개체의 `setPolicySetName` 메서드를 호출하고 정책 집합 이름을 지정하는 문자열 값을 전달하여 새 정책이 속하는 정책 집합을 지정하십시오. (이 매개 변수 값에 대해 `null`을(를) 지정하면 정책이 *내 정책* 정책 집합에 추가됩니다.)
+   * `InfomodelObjectFactory` 개체의 정적 `createValidityPeriod` 메서드를 호출하여 정책의 유효 기간을 만드십시오. 이 메서드는 `ValidityPeriod` 개체를 반환합니다.
+   * `ValidityPeriod` 개체의 `setRelativeExpirationDays` 메서드를 호출하고 일 수를 지정하는 정수 값을 전달하여 정책으로 보호된 문서에 액세스할 수 있는 일 수를 설정하십시오.
+   * `Policy` 개체의 `setValidityPeriod` 메서드를 호출하고 `ValidityPeriod` 개체를 전달하여 정책의 유효 기간을 설정하십시오.
 
 1. 정책 항목을 만듭니다.
 
-   * 다음을 호출하여 정책 항목 만들기 `InfomodelObjectFactory` 오브젝트의 정적 `createPolicyEntry` 메서드를 사용합니다. 이 메서드는 `PolicyEntry` 개체.
-   * 다음을 호출하여 정책의 권한 지정 `InfomodelObjectFactory` 오브젝트의 정적 `createPermission` 메서드를 사용합니다. 에 속한 정적 데이터 멤버를 전달합니다. `Permission` 권한을 나타내는 인터페이스입니다. 이 메서드는 `Permission` 개체. 예를 들어, 사용자가 정책으로 보호된 PDF 문서에서 데이터를 복사할 수 있도록 하는 권한을 추가하려면 을 전달합니다 `Permission.COPY`. (추가할 각 권한에 대해 이 단계를 반복합니다.)
-   * 다음을 호출하여 정책 항목에 권한을 추가합니다. `PolicyEntry` 개체 `addPermission` 메서드 및 전달 `Permission` 개체. (각각에 대해 이 단계를 반복합니다. `Permission` 을(를) 생성했습니다.
-   * 다음을 호출하여 정책 주도자 만들기 `InfomodelObjectFactory` 오브젝트의 정적 `createSpecialPrincipal` 메서드를 사용합니다. 에 속한 데이터 멤버 전달 `InfomodelObjectFactory` 주체를 나타내는 개체입니다. 이 메서드는 `Principal` 개체. 예를 들어 문서의 게시자를 주도자로 추가하려면 를 전달합니다 `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
-   * 다음을 호출하여 정책 항목에 주도자 추가 `PolicyEntry` 개체 `setPrincipal`메서드 및 전달 `Principal` 개체.
-   * 다음을 호출하여 정책에 정책 항목 추가 `Policy` 개체 `addPolicyEntry` 메서드 및 전달 `PolicyEntry` 개체.
+   * `InfomodelObjectFactory` 개체의 정적 `createPolicyEntry` 메서드를 호출하여 정책 항목을 만듭니다. 이 메서드는 `PolicyEntry` 개체를 반환합니다.
+   * `InfomodelObjectFactory` 개체의 정적 `createPermission` 메서드를 호출하여 정책의 권한을 지정하십시오. 권한을 나타내는 `Permission` 인터페이스에 속하는 정적 데이터 멤버를 전달합니다. 이 메서드는 `Permission` 개체를 반환합니다. 예를 들어 사용자가 정책으로 보호된 PDF 문서에서 데이터를 복사할 수 있는 권한을 추가하려면 `Permission.COPY`을(를) 전달합니다. (추가할 각 권한에 대해 이 단계를 반복합니다.)
+   * `PolicyEntry` 개체의 `addPermission` 메서드를 호출하고 `Permission` 개체를 전달하여 정책 항목에 권한을 추가하십시오. (만든 각 `Permission` 개체에 대해 이 단계를 반복합니다.)
+   * `InfomodelObjectFactory` 개체의 정적 `createSpecialPrincipal` 메서드를 호출하여 정책 주체를 만듭니다. 주체를 나타내는 `InfomodelObjectFactory` 개체에 속하는 데이터 멤버를 전달합니다. 이 메서드는 `Principal` 개체를 반환합니다. 예를들어, 문서의 게시자를 주체로 추가하려면 `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`을(를) 전달합니다.
+   * `PolicyEntry` 개체의 `setPrincipal` 메서드를 호출하고 `Principal` 개체를 전달하여 정책 항목에 주체를 추가합니다.
+   * `Policy` 개체의 `addPolicyEntry` 메서드를 호출하고 `PolicyEntry` 개체를 전달하여 정책에 정책 항목을 추가하십시오.
 
 1. 정책을 등록합니다.
 
-   * 만들기 `PolicyManager` 를 호출하여 개체 `DocumentSecurityClient` 개체 `getPolicyManager` 메서드를 사용합니다.
-   * 다음을 호출하여 정책 등록 `PolicyManager` 개체 `registerPolicy` 메서드 및 다음 값 전달:
+   * `DocumentSecurityClient` 개체의 `getPolicyManager` 메서드를 호출하여 `PolicyManager` 개체를 만듭니다.
+   * `PolicyManager` 개체의 `registerPolicy` 메서드를 호출하고 다음 값을 전달하여 정책을 등록합니다.
 
-      * 다음 `Policy` 등록할 정책을 나타내는 개체입니다.
+      * 등록할 정책을 나타내는 `Policy` 개체입니다.
 
    * 정책이 속한 정책 집합을 나타내는 문자열 값입니다.
 
-   연결 설정 내에서 AEM Forms 관리자 계정을 사용하여 `DocumentSecurityClient` 개체를 클릭한 다음 를 호출할 때 정책 집합 이름을 지정합니다. `registerPolicy` 메서드를 사용합니다. 를 전달한 경우 `null` 정책 세트 값을 지정하면 관리자에서 정책이 생성됩니다 *내 정책* 정책 설정.
+   연결 설정 내에서 AEM Forms 관리자 계정을 사용하여 `DocumentSecurityClient` 개체를 만드는 경우 `registerPolicy` 메서드를 호출할 때 정책 집합 이름을 지정하십시오. 정책 집합에 대한 `null` 값을 전달하면 관리자 *내 정책* 정책 집합에 정책이 만들어집니다.
 
-   연결 설정 내에서 Document Security 사용자를 사용하는 경우 오버로드된 `registerPolicy` 정책만 허용하는 메서드입니다. 즉, 정책 세트 이름을 지정할 필요가 없습니다. 그러나 정책은 이라는 정책 세트에 추가됩니다 *내 정책*. 이 정책 집합에 새 정책을 추가하지 않으려면 다음을 호출할 때 정책 집합 이름을 지정합니다. `registerPolicy` 메서드를 사용합니다.
+   연결 설정 내에서 Document Security 사용자를 사용하는 경우 정책만 허용하는 오버로드된 `registerPolicy` 메서드를 호출할 수 있습니다. 즉, 정책 세트 이름을 지정할 필요가 없습니다. 그러나 정책이 *내 정책* 정책 집합에 추가됩니다. 이 정책 집합에 새 정책을 추가하지 않으려면 `registerPolicy` 메서드를 호출할 때 정책 집합 이름을 지정하십시오.
 
    >[!NOTE]
    >
@@ -270,34 +270,34 @@ Document Security API(웹 서비스)를 사용하여 정책을 만듭니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `DocumentSecurityServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `DocumentSecurityServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `RightsManagementServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `DocumentSecurityServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `DocumentSecurityServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `RightsManagementServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 정책의 속성을 설정합니다.
 
-   * 만들기 `PolicySpec` 개체를 만들 때 사용됩니다.
-   * 문자열 값을 로 할당하여 정책 이름 설정 `PolicySpec` 개체 `name` 데이터 구성원입니다.
-   * 문자열 값을 로 할당하여 정책의 설명을 설정합니다. `PolicySpec` 개체 `description` 데이터 구성원입니다.
-   * 문자열 값을 로 할당하여 정책이 속한 정책 집합을 지정합니다. `PolicySpec` 개체 `policySetName` 데이터 구성원입니다. 기존 정책 집합 이름을 지정하십시오. (다음을 지정할 수 있습니다. `null` 정책이 추가되는 이 매개 변수 값에 대한 *내 정책*.)
-   * 정수 값을 로 할당하여 정책의 오프라인 임대 기간을 설정합니다. `PolicySpec` 개체 `offlineLeasePeriod` 데이터 구성원입니다.
-   * 설정 `PolicySpec` 개체 `policyXml` PDRL XML 데이터를 나타내는 문자열 값이 있는 데이터 멤버입니다. 이 작업을 수행하려면 .NET `StreamReader` 개체를 만들 때 사용됩니다. 정책을 나타내는 PDRL XML 파일의 위치를 `StreamReader` 생성자입니다. 그런 다음 를 호출합니다. `StreamReader` 개체 `ReadLine` 반환 값을 문자열 변수에 할당합니다. 다음을 반복합니다. `StreamReader` 다음 시간까지 개체: `ReadLine` 메서드가 null을 반환합니다. 에 문자열 변수 할당 `PolicySpec` 개체 `policyXml` 데이터 구성원입니다.
+   * 해당 생성자를 사용하여 `PolicySpec` 개체를 만듭니다.
+   * `PolicySpec` 개체의 `name` 데이터 멤버에 문자열 값을 할당하여 정책 이름을 설정합니다.
+   * `PolicySpec` 개체의 `description` 데이터 멤버에 문자열 값을 할당하여 정책의 설명을 설정하십시오.
+   * `PolicySpec` 개체의 `policySetName` 데이터 멤버에 문자열 값을 할당하여 정책이 속하는 정책 집합을 지정하십시오. 기존 정책 집합 이름을 지정하십시오. (이 매개 변수 값에 `null`을(를) 지정하면 정책이 *내 정책*&#x200B;에 추가됩니다.)
+   * 정수 값을 `PolicySpec` 개체의 `offlineLeasePeriod` 데이터 멤버에 할당하여 정책의 오프라인 임대 기간을 설정하십시오.
+   * `PolicySpec` 개체의 `policyXml` 데이터 멤버를 PDL XML 데이터를 나타내는 문자열 값으로 설정합니다. 이 작업을 수행하려면 생성자를 사용하여 .NET `StreamReader` 개체를 만드십시오. 정책을 나타내는 PDRL XML 파일의 위치를 `StreamReader` 생성자에 전달합니다. 그런 다음 `StreamReader` 개체의 `ReadLine` 메서드를 호출하고 반환 값을 문자열 변수에 할당합니다. `ReadLine` 메서드가 null을 반환할 때까지 `StreamReader` 개체를 반복합니다. `PolicySpec` 개체의 `policyXml` 데이터 멤버에 문자열 변수를 할당합니다.
 
 1. 정책 항목을 만듭니다.
 
@@ -305,14 +305,14 @@ Document Security API(웹 서비스)를 사용하여 정책을 만듭니다.
 
 1. 정책을 등록합니다.
 
-   다음을 호출하여 정책 등록 `DocumentSecurityServiceClient` 개체 `registerPolicy` 메서드 및 다음 값 전달:
+   `DocumentSecurityServiceClient` 개체의 `registerPolicy` 메서드를 호출하고 다음 값을 전달하여 정책을 등록합니다.
 
-   * 다음 `PolicySpec` 등록할 정책을 나타내는 개체입니다.
-   * 정책이 속한 정책 집합을 나타내는 문자열 값입니다. 다음을 지정할 수 있습니다. `null` 정책이 추가되는 결과를 나타내는 값 *MyPolises* 정책 설정.
+   * 등록할 정책을 나타내는 `PolicySpec` 개체입니다.
+   * 정책이 속한 정책 집합을 나타내는 문자열 값입니다. *MyPolicies* 정책 집합에 정책이 추가되는 `null` 값을 지정할 수 있습니다.
 
-   연결 설정 내에서 AEM Forms 관리자 계정을 사용하여 `DocumentSecurityClient` 개체를 호출할 때 정책 집합 이름을 지정합니다. `registerPolicy` 메서드를 사용합니다.
+   연결 설정 내에서 AEM Forms 관리자 계정을 사용하여 `DocumentSecurityClient` 개체를 만드는 경우 `registerPolicy` 메서드를 호출할 때 정책 집합 이름을 지정하십시오.
 
-   연결 설정 내에서 Document SecurityDocument Security 사용자를 사용하는 경우 오버로드된 `registerPolicy` 정책만 허용하는 메서드입니다. 즉, 정책 세트 이름을 지정할 필요가 없습니다. 그러나 정책은 이라는 정책 세트에 추가됩니다 *내 정책*. 이 정책 집합에 새 정책을 추가하지 않으려면 다음을 호출할 때 정책 집합 이름을 지정합니다. `registerPolicy` 메서드를 사용합니다.
+   연결 설정 내에서 Document SecurityDocument Security 사용자를 사용하는 경우 정책만 허용하는 오버로드된 `registerPolicy` 메서드를 호출할 수 있습니다. 즉, 정책 세트 이름을 지정할 필요가 없습니다. 그러나 정책이 *내 정책* 정책 집합에 추가됩니다. 이 정책 집합에 새 정책을 추가하지 않으려면 `registerPolicy` 메서드를 호출할 때 정책 집합 이름을 지정하십시오.
 
    >[!NOTE]
    >
@@ -329,11 +329,11 @@ Document Security Java API 또는 웹 서비스 API를 사용하여 기존 정�
 
 비즈니스 요구 사항이 변경되고 정책이 이러한 요구 사항을 더 이상 반영하지 않을 때 정책을 수정할 수 있습니다. 정책을 만드는 대신 기존 정책을 업데이트할 수 있습니다.
 
-웹 서비스를 사용하여 정책 속성을 수정하려면(예: JAX-WS로 만든 Java 프록시 클래스 사용) 정책이 Document Security 서비스에 등록되어 있는지 확인해야 합니다. 그런 다음 를 사용하여 기존 정책을 참조할 수 있습니다. `PolicySpec.getPolicyXml` 메서드 및 해당 메서드를 사용하여 정책 속성을 수정합니다. 예를 들어 를 호출하여 오프라인 임대 기간을 수정할 수 있습니다. `PolicySpec.setOfflineLeasePeriod` 메서드를 사용합니다.
+웹 서비스를 사용하여 정책 속성을 수정하려면(예: JAX-WS로 만든 Java 프록시 클래스 사용) 정책이 Document Security 서비스에 등록되어 있는지 확인해야 합니다. 그런 다음 `PolicySpec.getPolicyXml` 메서드를 사용하여 기존 정책을 참조하고 해당 메서드를 사용하여 정책 특성을 수정할 수 있습니다. 예를 들어 `PolicySpec.setOfflineLeasePeriod` 메서드를 호출하여 오프라인 임대 기간을 수정할 수 있습니다.
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-1}
 
@@ -351,21 +351,21 @@ Document Security Java API 또는 웹 서비스 API를 사용하여 기존 정�
 
 **Document Security 클라이언트 API 개체 만들기**
 
-Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `RightsManagementClient` 개체. Document Security 웹 서비스 API를 사용하는 경우 `RightsManagementServiceService` 개체.
+Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `RightsManagementClient` 개체를 만듭니다. Document Security 웹 서비스 API를 사용하는 경우 `RightsManagementServiceService` 개체를 만듭니다.
 
 **기존 정책 검색**
 
-기존 정책을 검색하여 수정합니다. 정책을 검색하려면 정책 이름과 정책이 속한 정책 집합을 지정합니다. 다음을 지정하는 경우 `null` 정책 세트 이름의 값은에서 검색됩니다. *내 정책* 정책 설정.
+기존 정책을 검색하여 수정합니다. 정책을 검색하려면 정책 이름과 정책이 속한 정책 집합을 지정합니다. 정책 집합 이름에 `null` 값을 지정하면 *내 정책* 정책 집합에서 정책을 검색합니다.
 
-**정책의 속성 설정**
+**정책의 특성을 설정합니다**
 
 정책을 수정하려면 정책 속성의 값을 수정합니다. 변경할 수 없는 유일한 정책 속성은 이름 속성입니다. 예를 들어 정책의 오프라인 임대 기간을 변경하려면 정책의 오프라인 임대 기간 속성 값을 수정할 수 있습니다.
 
-웹 서비스를 사용하여 정책의 오프라인 임대 기간을 수정할 때 `offlineLeasePeriod` 의 필드 `PolicySpec` 인터페이스는 무시됩니다. 오프라인 임대 기간을 업데이트하려면 `OfflineLeasePeriod` 요소를 입력합니다. 그런 다음 를 사용하여 업데이트된 PDRL XML 문서를 참조합니다. `PolicySpec` 인터페이스 `policyXML` 데이터 구성원입니다.
+웹 서비스를 사용하여 정책의 오프라인 임대 기간을 수정할 때 `PolicySpec` 인터페이스의 `offlineLeasePeriod` 필드가 무시됩니다. 오프라인 임대 기간을 업데이트하려면 PDRL XML 문서에서 `OfflineLeasePeriod` 요소를 수정하십시오. 그런 다음 `PolicySpec` 인터페이스의 `policyXML` 데이터 멤버를 사용하여 업데이트된 PDRL XML 문서를 참조합니다.
 
 >[!NOTE]
 >
->설정할 수 있는 다른 속성에 대한 자세한 내용은 `Policy` 인터페이스 설명 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>설정할 수 있는 다른 특성에 대한 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)에서 `Policy` 인터페이스 설명을 참조하십시오.
 
 **정책 업데이트**
 
@@ -381,26 +381,26 @@ Document Security API(Java)를 사용하여 기존 정책을 수정합니다.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `RightsManagementClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `RightsManagementClient` 개체를 만듭니다.
 
 1. 기존 정책을 검색합니다.
 
-   * 만들기 `PolicyManager` 를 호출하여 개체 `RightsManagementClient` 개체 `getPolicyManager` 메서드를 사용합니다.
-   * 만들기 `Policy` 를 호출하여 업데이트할 정책을 나타내는 개체입니다 `PolicyManager` 개체 `getPolicy` 메서드 및 다음 값 전달&quot;
+   * `RightsManagementClient` 개체의 `getPolicyManager` 메서드를 호출하여 `PolicyManager` 개체를 만듭니다.
+   * `PolicyManager` 개체의 `getPolicy` 메서드를 호출하고 다음 값을 전달하여 업데이트할 정책을 나타내는 `Policy` 개체를 만듭니다.&quot;
 
-      * 정책이 속한 정책 집합 이름을 나타내는 문자열 값입니다. 다음을 지정할 수 있습니다. `null` 그 결과 `MyPolicies` 정책 집합을 사용 중입니다.
+      * 정책이 속한 정책 집합 이름을 나타내는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null`을(를) 지정할 수 있습니다.
       * 정책 이름을 나타내는 문자열 값입니다.
 
 1. 정책의 속성을 설정합니다.
 
-   비즈니스 요구 사항을 충족하도록 정책의 속성을 변경합니다. 예를 들어 정책의 오프라인 임대 기간을 변경하려면 `Policy` 개체 `setOfflineLeasePeriod` 메서드를 사용합니다.
+   비즈니스 요구 사항을 충족하도록 정책의 속성을 변경합니다. 예를 들어 정책의 오프라인 임대 기간을 변경하려면 `Policy` 개체의 `setOfflineLeasePeriod` 메서드를 호출하십시오.
 
 1. 정책을 업데이트합니다.
 
-   를 호출하여 정책 업데이트 `PolicyManager` 개체 `updatePolicy` 메서드를 사용합니다. 전달 `Policy` 업데이트할 정책을 나타내는 개체입니다.
+   `PolicyManager` 개체의 `updatePolicy` 메서드를 호출하여 정책을 업데이트합니다. 업데이트할 정책을 나타내는 `Policy` 개체를 전달합니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 빠른 시작(SOAP 모드): Java API를 사용하여 정책 수정 섹션을 참조하십시오.
 
@@ -410,31 +410,31 @@ Document Security API(웹 서비스)를 사용하여 기존 정책을 수정합�
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `RightsManagementServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `RightsManagementServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `RightsManagementServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `RightsManagementServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `RightsManagementServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `RightsManagementServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 기존 정책을 검색합니다.
 
-   만들기 `PolicySpec` 를 호출하여 수정할 정책을 나타내는 개체입니다. `RightsManagementServiceClient` 개체 `getPolicy` 메서드 및 다음 값 전달:
+   `RightsManagementServiceClient` 개체의 `getPolicy` 메서드를 호출하고 다음 값을 전달하여 수정할 정책을 나타내는 `PolicySpec` 개체를 만듭니다.
 
-   * 정책이 속한 정책 집합 이름을 지정하는 문자열 값입니다. 다음을 지정할 수 있습니다. `null` 그 결과 `MyPolicies` 정책 집합을 사용 중입니다.
+   * 정책이 속한 정책 집합 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null`을(를) 지정할 수 있습니다.
    * 정책의 이름을 지정하는 문자열 값입니다.
 
 1. 정책의 속성을 설정합니다.
@@ -443,9 +443,9 @@ Document Security API(웹 서비스)를 사용하여 기존 정책을 수정합�
 
 1. 정책을 업데이트합니다.
 
-   다음을 호출하여 정책 업데이트 `RightsManagementServiceClient` 개체 `updatePolicyFromSDK` 메서드 및 전달 `PolicySpec` 업데이트할 정책을 나타내는 개체입니다.
+   `RightsManagementServiceClient` 개체의 `updatePolicyFromSDK` 메서드를 호출하고 업데이트할 정책을 나타내는 `PolicySpec` 개체를 전달하여 정책을 업데이트합니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -458,7 +458,7 @@ Document Security Java API 또는 웹 서비스 API를 사용하여 기존 정�
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-2}
 
@@ -474,7 +474,7 @@ Document Security Java API 또는 웹 서비스 API를 사용하여 기존 정�
 
 **Document Security 클라이언트 API 개체 만들기**
 
-Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `RightsManagementClient` 개체. Document Security 웹 서비스 API를 사용하는 경우 `RightsManagementServiceService` 개체.
+Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `RightsManagementClient` 개체를 만듭니다. Document Security 웹 서비스 API를 사용하는 경우 `RightsManagementServiceService` 개체를 만듭니다.
 
 **정책 삭제**
 
@@ -490,18 +490,18 @@ Document Security API(Java)를 사용하여 정책을 삭제합니다.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `RightsManagementClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `RightsManagementClient` 개체를 만듭니다.
 
 1. 정책을 삭제합니다.
 
-   * 만들기 `PolicyManager` 를 호출하여 개체 `RightsManagementClient` 개체 `getPolicyManager` 메서드를 사용합니다.
-   * 다음을 호출하여 정책을 삭제합니다. `PolicyManager` 개체 `deletePolicy` 메서드 및 다음 값 전달:
+   * `RightsManagementClient` 개체의 `getPolicyManager` 메서드를 호출하여 `PolicyManager` 개체를 만듭니다.
+   * `PolicyManager` 개체의 `deletePolicy` 메서드를 호출하고 다음 값을 전달하여 정책을 삭제합니다.
 
-      * 정책이 속한 정책 집합 이름을 지정하는 문자열 값입니다. 다음을 지정할 수 있습니다. `null` 그 결과 `MyPolicies` 정책 집합을 사용 중입니다.
+      * 정책이 속한 정책 집합 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null`을(를) 지정할 수 있습니다.
       * 삭제할 정책의 이름을 지정하는 문자열 값입니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -513,34 +513,34 @@ Document Security API(웹 서비스)를 사용하여 정책을 삭제합니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `RightsManagementServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `RightsManagementServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `RightsManagementServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `RightsManagementServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `RightsManagementServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `RightsManagementServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 정책을 삭제합니다.
 
-   다음을 호출하여 정책 삭제 `RightsManagementServiceClient` 개체 `deletePolicy` 메서드 및 다음 값 전달:
+   `RightsManagementServiceClient` 개체의 `deletePolicy` 메서드를 호출하고 다음 값을 전달하여 정책을 삭제합니다.
 
-   * 정책이 속한 정책 집합 이름을 지정하는 문자열 값입니다. 다음을 지정할 수 있습니다. `null` 그 결과 `MyPolicies` 정책 집합을 사용 중입니다.
+   * 정책이 속한 정책 집합 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null`을(를) 지정할 수 있습니다.
    * 삭제할 정책의 이름을 지정하는 문자열 값입니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -557,7 +557,7 @@ PDF 문서에 정책을 적용하여 문서를 보호할 수 있습니다. PDF �
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-3}
 
@@ -573,9 +573,9 @@ PDF 문서에 정책을 적용하려면 다음 단계를 수행합니다.
 
 개발 프로젝트에 필요한 파일을 포함하십시오. Java를 사용하여 클라이언트 응용 프로그램을 생성하는 경우 필요한 JAR 파일을 포함합니다. 웹 서비스를 사용하는 경우 프록시 파일을 포함해야 합니다.
 
-**Document Security 클라이언트 APIobject 만들기**
+**Document Security Client APIobject 만들기**
 
-Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만듭니다. Java API를 사용하는 경우 `DocumentSecurityClient` 개체. Document Security 웹 서비스 API를 사용하는 경우 `DocumentSecurityServiceService` 개체.
+Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만듭니다. Java API를 사용하는 경우 `DocumentSecurityClient` 개체를 만듭니다. Document Security 웹 서비스 API를 사용하는 경우 `DocumentSecurityServiceService` 개체를 만듭니다.
 
 **PDF 문서 검색**
 
@@ -607,36 +607,36 @@ Document Security API(Java)를 사용하여 PDF 문서에 정책 적용:
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `RightsManagementClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `RightsManagementClient` 개체를 만듭니다.
 
 1. PDF 문서를 검색합니다.
 
-   * 만들기 `java.io.FileInputStream` 생성자를 사용하여 PDF 문서를 나타내는 개체입니다. PDF 문서의 위치를 지정하는 문자열 값을 전달합니다.
-   * 만들기 `com.adobe.idp.Document` 개체를 생성자를 사용하고 `java.io.FileInputStream` 개체.
+   * 생성자를 사용하여 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다. PDF 문서의 위치를 지정하는 문자열 값을 전달합니다.
+   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
 
 1. PDF 문서에 기존 정책을 적용합니다.
 
-   * 만들기 `DocumentManager` 를 호출하여 개체 `RightsManagementClient` 개체 `getDocumentManager` 메서드를 사용합니다.
-   * 를 호출하여 PDF 문서에 정책 적용 `DocumentManager` 개체 `protectDocument` 메서드 및 다음 값 전달:
+   * `RightsManagementClient` 개체의 `getDocumentManager` 메서드를 호출하여 `DocumentManager` 개체를 만듭니다.
+   * `DocumentManager` 개체의 `protectDocument` 메서드를 호출하고 다음 값을 전달하여 PDF 문서에 정책을 적용합니다.
 
-      * 다음 `com.adobe.idp.Document` 정책이 적용되는 PDF 문서가 포함된 객체입니다.
+      * 정책이 적용되는 PDF 문서가 포함된 `com.adobe.idp.Document` 개체입니다.
       * 문서의 이름을 지정하는 문자열 값입니다.
-      * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. 다음을 지정할 수 있습니다. `null` 을 반환하는 값 `MyPolicies` 정책 집합을 사용 중입니다.
+      * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null` 값을 지정할 수 있습니다.
       * 정책 이름을 지정하는 문자열 값입니다.
       * 문서의 게시자인 사용자의 사용자 관리자 도메인 이름을 나타내는 문자열 값입니다. 이 매개변수 값은 선택 사항이며 null일 수 있습니다(이 매개변수가 null이면 다음 매개변수 값은 null이어야 함).
-      * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 다음과 같을 수 있습니다. `null` (이 매개 변수가 null이면 이전 매개 변수 값은 다음과 같아야 합니다. `null`).
-      * A `com.adobe.livecycle.rightsmanagement.Locale` MS Office 템플릿 선택에 사용되는 로케일을 나타냅니다. 이 매개 변수 값은 선택 사항이며 PDF 문서에 사용되지 않습니다. PDF 문서의 보안을 설정하려면 다음을 지정합니다. `null`.
+      * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 `null`일 수 있습니다(이 매개 변수가 null이면 이전 매개 변수 값은 `null`이어야 함).
+      * MS Office 템플릿을 선택하는 데 사용되는 로케일을 나타내는 `com.adobe.livecycle.rightsmanagement.Locale`입니다. 이 매개 변수 값은 선택 사항이며 PDF 문서에 사용되지 않습니다. PDF 문서의 보안을 유지하려면 `null`을(를) 지정하십시오.
 
-     다음 `protectDocument` 메서드가 을 반환합니다. `RMSecureDocumentResult` 정책으로 보호된 PDF 문서가 포함된 객체입니다.
+     `protectDocument` 메서드가 정책으로 보호된 PDF 문서를 포함하는 `RMSecureDocumentResult` 개체를 반환합니다.
 
 1. PDF 문서를 저장합니다.
 
-   * 호출 `RMSecureDocumentResult` 개체 `getProtectedDoc` 정책으로 보호된 PDF 문서를 가져오는 방법. 이 메서드는 `com.adobe.idp.Document` 개체.
-   * 만들기 `java.io.File` 개체로 설정하고 파일 확장명이 PDF 상태인지 확인합니다.
-   * 호출 `com.adobe.idp.Document` 개체 `copyToFile` 콘텐츠 복사 방법 `Document` 파일에 대한 개체(를 사용해야 함) `Document` 에서 반환한 개체 `getProtectedDoc` 메서드).
+   * `RMSecureDocumentResult` 개체의 `getProtectedDoc` 메서드를 호출하여 정책으로 보호된 PDF 문서를 가져옵니다. 이 메서드는 `com.adobe.idp.Document` 개체를 반환합니다.
+   * `java.io.File` 개체를 만들고 파일 확장명이 PDF 상태인지 확인하십시오.
+   * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하여 `Document` 개체의 내용을 파일에 복사합니다(`getProtectedDoc` 메서드에서 반환된 `Document` 개체를 사용하는지 확인).
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -655,59 +655,59 @@ Document Security API(웹 서비스)를 사용하여 PDF 문서에 정책 적용
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `RightsManagementServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `RightsManagementServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `RightsManagementServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `RightsManagementServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `RightsManagementServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `RightsManagementServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. PDF 문서를 검색합니다.
 
-   * 만들기 `BLOB` 개체를 만들 때 사용됩니다. 다음 `BLOB` 객체는 정책이 적용되는 PDF 문서를 저장하는 데 사용됩니다.
-   * 만들기 `System.IO.FileStream` PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
-   * 의 콘텐츠를 저장하는 바이트 배열 만들기 `System.IO.FileStream` 개체. 를 가져와서 바이트 배열 크기를 결정합니다. `System.IO.FileStream` 개체 `Length` 속성.
-   * 를 호출하여 바이트 배열을 스트림 데이터로 채우기 `System.IO.FileStream` 개체 `Read` 메서드를 사용합니다. 읽을 바이트 배열, 시작 위치 및 스트림 길이를 전달합니다.
-   * 채우기 `BLOB` 개체 할당 `MTOM` 바이트 배열의 내용이 있는 필드입니다.
+   * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 정책이 적용되는 PDF 문서를 저장하는 데 사용됩니다.
+   * 해당 생성자를 호출하고 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열 크기를 결정합니다.
+   * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하여 바이트 배열을 스트림 데이터로 채웁니다. 읽을 바이트 배열, 시작 위치 및 스트림 길이를 전달합니다.
+   * 해당 `MTOM` 필드를 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
 
 1. PDF 문서에 기존 정책을 적용합니다.
 
-   를 호출하여 PDF 문서에 정책 적용 `RightsManagementServiceClient` 개체 `protectDocument` 메서드 및 다음 값 전달:
+   `RightsManagementServiceClient` 개체의 `protectDocument` 메서드를 호출하고 다음 값을 전달하여 PDF 문서에 정책을 적용합니다.
 
-   * 다음 `BLOB` 정책이 적용되는 PDF 문서가 포함된 객체입니다.
+   * 정책이 적용되는 PDF 문서가 포함된 `BLOB` 개체입니다.
    * 문서의 이름을 지정하는 문자열 값입니다.
-   * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. 다음을 지정할 수 있습니다. `null` 을 반환하는 값 `MyPolicies` 정책 집합을 사용 중입니다.
+   * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null` 값을 지정할 수 있습니다.
    * 정책 이름을 지정하는 문자열 값입니다.
-   * 문서의 게시자인 사용자의 사용자 관리자 도메인 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 null일 수 있습니다(이 매개 변수가 null이면 다음 매개 변수 값은 다음이어야 함). `null`).
-   * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 null일 수 있습니다(이 매개 변수가 null이면 이전 매개 변수 값은 다음이어야 함). `null`).
-   * A `RMLocale` 로케일 값을 지정하는 값(예: `RMLocale.en`).
+   * 문서의 게시자인 사용자의 사용자 관리자 도메인 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 null일 수 있습니다(이 매개 변수가 null이면 다음 매개 변수 값은 `null`이어야 함).
+   * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 null일 수 있습니다(이 매개 변수가 null이면 이전 매개 변수 값은 `null`이어야 함).
+   * 로케일 값을 지정하는 `RMLocale` 값(예: `RMLocale.en`)입니다.
    * 정책 식별자 값을 저장하는 데 사용되는 문자열 출력 매개 변수입니다.
    * 정책으로 보호된 식별자 값을 저장하는 데 사용되는 문자열 출력 매개 변수입니다.
-   * MIME 유형을 저장하는 데 사용되는 문자열 출력 매개 변수(예: `application/pdf`).
+   * MIME 형식을 저장하는 데 사용되는 문자열 출력 매개 변수(예: `application/pdf`)입니다.
 
-   다음 `protectDocument` 메서드가 을 반환합니다. `BLOB` 정책으로 보호된 PDF 문서가 포함된 객체입니다.
+   `protectDocument` 메서드가 정책으로 보호된 PDF 문서를 포함하는 `BLOB` 개체를 반환합니다.
 
 1. PDF 문서를 저장합니다.
 
-   * 만들기 `System.IO.FileStream` 개체를 호출하고 정책으로 보호된 PDF 문서의 파일 위치를 나타내는 문자열 값을 전달합니다.
-   * 의 데이터 콘텐츠를 저장하는 바이트 배열 만들기 `BLOB` 에서 반환한 개체 `protectDocument` 메서드를 사용합니다. 의 값을 가져와서 바이트 배열 채우기 `BLOB` 개체 `MTOM` 데이터 구성원입니다.
-   * 만들기 `System.IO.BinaryWriter` 개체를 호출하고 `System.IO.FileStream` 개체.
-   * 를 호출하여 바이트 배열의 내용을 PDF 파일에 씁니다 `System.IO.BinaryWriter` 개체 `Write` 메서드 및 바이트 배열 전달.
+   * 해당 생성자를 호출하고 정책으로 보호된 PDF 문서의 파일 위치를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * `protectDocument` 메서드에서 반환된 `BLOB` 개체의 데이터 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
+   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
+   * `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일에 씁니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -720,7 +720,7 @@ Document Security 서비스를 사용하는 코드 예에 대해서는 다음 �
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-4}
 
@@ -746,7 +746,7 @@ Document Security 서비스 작업을 프로그래밍 방식으로 수행하려�
 
 **PDF 문서에서 정책 제거**
 
-연결 설정에 관리자가 지정되어 있는 경우 정책으로 보호된 PDF 문서에서 정책을 제거할 수 있습니다. 그렇지 않은 경우 문서 보안에 사용되는 정책에 `SWITCH_POLICY` PDF 문서에서 정책을 제거할 수 있는 권한. 또한 AEM Forms 연결 설정에 지정된 사용자에게도 해당 권한이 있어야 합니다. 그렇지 않으면 예외가 throw됩니다.
+연결 설정에 관리자가 지정되어 있는 경우 정책으로 보호된 PDF 문서에서 정책을 제거할 수 있습니다. 그렇지 않으면 문서 보안에 사용되는 정책에 PDF 문서에서 정책을 제거하려면 `SWITCH_POLICY` 권한이 있어야 합니다. 또한 AEM Forms 연결 설정에 지정된 사용자에게도 해당 권한이 있어야 합니다. 그렇지 않으면 예외가 throw됩니다.
 
 **보안되지 않은 PDF 문서 저장**
 
@@ -770,25 +770,25 @@ Document Security API(Java)를 사용하여 정책으로 보호된 PDF 문서에
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `DocumentSecurityClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `DocumentSecurityClient` 개체를 만듭니다.
 
 1. 정책으로 보호된 PDF 문서를 검색합니다.
 
-   * 만들기 `java.io.FileInputStream` 해당 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 정책으로 보호된 PDF 문서를 나타내는 개체입니다.
-   * 만들기 `com.adobe.idp.Document` 개체를 생성자를 사용하고 `java.io.FileInputStream` 개체.
+   * 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 정책으로 보호된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
+   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
 
 1. PDF 문서에서 정책을 제거합니다.
 
-   * 만들기 `DocumentManager` 를 호출하여 개체 `DocumentSecurityClient` 개체 `getDocumentManager` 메서드를 사용합니다.
-   * 를 호출하여 PDF 문서에서 정책 제거 `DocumentManager` 개체 `removeSecurity` 메서드 및 전달 `com.adobe.idp.Document` 정책으로 보호된 PDF 문서가 포함된 객체입니다. 이 메서드는 `com.adobe.idp.Document` 비보안 PDF 문서가 포함된 개체입니다.
+   * `DocumentSecurityClient` 개체의 `getDocumentManager` 메서드를 호출하여 `DocumentManager` 개체를 만듭니다.
+   * `DocumentManager` 개체의 `removeSecurity` 메서드를 호출하고 정책으로 보호된 PDF 문서가 포함된 `com.adobe.idp.Document` 개체를 전달하여 PDF 문서에서 정책을 제거합니다. 이 메서드는 보안되지 않은 PDF 문서가 포함된 `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. 보안되지 않은 PDF 문서를 저장합니다.
 
-   * 만들기 `java.io.File` 개체로 설정하고 파일 확장명이 PDF 상태인지 확인합니다.
-   * 호출 `Document` 개체 `copyToFile` 콘텐츠 복사 방법 `Document` 파일에 대한 개체(를 사용해야 함) `Document` 에서 반환한 개체 `removeSecurity` 메서드).
+   * `java.io.File` 개체를 만들고 파일 확장명이 PDF 상태인지 확인하십시오.
+   * `Document` 개체의 `copyToFile` 메서드를 호출하여 `Document` 개체의 내용을 파일에 복사합니다(`removeSecurity` 메서드에서 반환된 `Document` 개체를 사용하는지 확인).
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -800,45 +800,45 @@ Document Security API(웹 서비스)를 사용하여 정책으로 보호된 PDF 
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `DocumentSecurityServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `DocumentSecurityServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `DocumentSecurityServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `DocumentSecurityServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `DocumentSecurityServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `DocumentSecurityServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 정책으로 보호된 PDF 문서를 검색합니다.
 
-   * 만들기 `BLOB` 개체를 만들 때 사용됩니다. 다음 `BLOB` 개체는 정책이 제거된 정책으로 보호된 PDF 문서를 저장하는 데 사용됩니다.
-   * 만들기 `System.IO.FileStream` PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
-   * 의 콘텐츠를 저장하는 바이트 배열 만들기 `System.IO.FileStream` 개체. 를 가져와서 바이트 배열의 크기를 결정할 수 있습니다 `System.IO.FileStream` 개체 `Length` 속성.
-   * 를 호출하여 바이트 배열을 스트림 데이터로 채우기 `System.IO.FileStream` 개체 `Read` 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하는 방법.
-   * 채우기 `BLOB` 개체 할당 `MTOM` 바이트 배열의 내용이 있는 필드입니다.
+   * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 정책이 제거된 정책으로 보호된 PDF 문서를 저장하는 데 사용됩니다.
+   * 해당 생성자를 호출하고 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
+   * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
+   * 해당 `MTOM` 필드를 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
 
 1. PDF 문서에서 정책을 제거합니다.
 
-   를 호출하여 PDF 문서에서 정책 제거 `DocumentSecurityServiceClient` 개체 `removePolicySecurity` 메서드 및 전달 `BLOB` 정책으로 보호된 PDF 문서가 포함된 객체입니다. 이 메서드는 `BLOB` 비보안 PDF 문서가 포함된 개체입니다.
+   `DocumentSecurityServiceClient` 개체의 `removePolicySecurity` 메서드를 호출하고 정책으로 보호된 PDF 문서가 포함된 `BLOB` 개체를 전달하여 PDF 문서에서 정책을 제거합니다. 이 메서드는 보안되지 않은 PDF 문서가 포함된 `BLOB` 개체를 반환합니다.
 
 1. 보안되지 않은 PDF 문서를 저장합니다.
 
-   * 만들기 `System.IO.FileStream` 개체를 호출하고 보안되지 않은 PDF 문서의 파일 위치를 나타내는 문자열 값을 전달하여
-   * 의 데이터 콘텐츠를 저장하는 바이트 배열 만들기 `BLOB` 에서 반환한 개체 `removePolicySecurity` 메서드를 사용합니다. 의 값을 가져와서 바이트 배열 채우기 `BLOB` 개체 `MTOM` 필드.
-   * 만들기 `System.IO.BinaryWriter` 개체를 호출하고 `System.IO.FileStream` 개체.
+   * 해당 생성자를 호출하고 보안되지 않은 PDF 문서의 파일 위치를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * `removePolicySecurity` 메서드에서 반환된 `BLOB` 개체의 데이터 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 필드 값을 가져와서 바이트 배열을 채웁니다.
+   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -859,7 +859,7 @@ Document Security 서비스를 사용하는 코드 예에 대해서는 다음 �
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-5}
 
@@ -884,7 +884,7 @@ Document Security 서비스 작업을 프로그래밍 방식으로 수행하려�
 
 정책으로 보호된 문서의 라이선스 식별자 값을 알고 있는 경우 정책으로 보호된 PDF 문서를 검색할 필요는 없습니다. 그러나 대부분의 경우 라이센스 식별자 값을 얻으려면 PDF 문서를 검색해야 합니다.
 
-**정책으로 보호된 문서 취소**
+**정책으로 보호된 문서 해지**
 
 정책으로 보호된 문서를 취소하려면 정책으로 보호된 문서의 라이선스 식별자를 지정합니다. 또한 사용자가 취소된 문서를 열려고 할 때 볼 수 있는 문서의 URL을 지정할 수 있습니다. 즉, 오래된 문서가 취소되었다고 가정합니다. 사용자가 해지된 문서를 열려고 하면 해지된 문서 대신 업데이트된 문서가 표시됩니다.
 
@@ -912,26 +912,26 @@ Document Security API(Java)를 사용하여 정책으로 보호된 PDF 문서에
 
 1. Document Security 클라이언트 API 개체 만들기
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `DocumentSecurityClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `DocumentSecurityClient` 개체를 만듭니다.
 
 1. 정책으로 보호된 PDF 문서 검색
 
-   * 만들기 `java.io.FileInputStream` 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 정책으로 보호된 PDF 문서를 나타내는 개체입니다.
-   * 만들기 `com.adobe.idp.Document` 개체를 생성자를 사용하고 `java.io.FileInputStream` 개체.
+   * 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 정책으로 보호된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
+   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
 
 1. 정책으로 보호된 문서 취소
 
-   * 만들기 `DocumentManager` 를 호출하여 개체 `DocumentSecurityClient` 개체 `getDocumentManager` 메서드를 사용합니다.
-   * 다음을 호출하여 정책으로 보호된 문서의 라이선스 식별자 값 검색 `DocumentManager` 개체 `getLicenseId` 메서드를 사용합니다. 전달 `com.adobe.idp.Document` 정책으로 보호된 문서를 나타내는 개체입니다. 이 메서드는 라이선스 식별자 값을 나타내는 문자열 값을 반환합니다.
-   * 만들기 `LicenseManager` 를 호출하여 개체 `DocumentSecurityClient` 개체 `getLicenseManager` 메서드를 사용합니다.
-   * 다음을 호출하여 정책으로 보호된 문서 해지 `LicenseManager` 개체 `revokeLicense` 메서드 및 다음 값 전달:
+   * `DocumentSecurityClient` 개체의 `getDocumentManager` 메서드를 호출하여 `DocumentManager` 개체를 만듭니다.
+   * `DocumentManager` 개체의 `getLicenseId` 메서드를 호출하여 정책으로 보호된 문서의 라이선스 식별자 값을 검색합니다. 정책으로 보호된 문서를 나타내는 `com.adobe.idp.Document` 개체를 전달합니다. 이 메서드는 라이선스 식별자 값을 나타내는 문자열 값을 반환합니다.
+   * `DocumentSecurityClient` 개체의 `getLicenseManager` 메서드를 호출하여 `LicenseManager` 개체를 만듭니다.
+   * `LicenseManager` 개체의 `revokeLicense` 메서드를 호출하고 다음 값을 전달하여 정책으로 보호된 문서를 취소합니다.
 
-      * 정책으로 보호된 문서의 라이선스 식별자 값을 지정하는 문자열 값(의 반환 값 지정) `DocumentManager` 개체 `getLicenseId` 메서드).
-      * 의 정적 데이터 멤버 `License` 문서를 취소하는 이유를 지정하는 인터페이스입니다. 예를 들어 다음을 지정할 수 있습니다 `License.DOCUMENT_REVISED`.
-      * A `java.net.URL` 수정된 문서가 있는 위치를 지정하는 값입니다. 사용자를 다른 URL로 리디렉션하지 않으려면 다음을 전달할 수 있습니다. `null`.
+      * 정책으로 보호된 문서의 라이선스 식별자 값을 지정하는 문자열 값입니다(`DocumentManager` 개체의 `getLicenseId` 메서드에 대한 반환 값 지정).
+      * 문서를 취소하는 이유를 지정하는 `License` 인터페이스의 정적 데이터 멤버입니다. 예를 들어 `License.DOCUMENT_REVISED`을(를) 지정할 수 있습니다.
+      * 수정된 문서가 있는 위치를 지정하는 `java.net.URL` 값입니다. 사용자를 다른 URL로 리디렉션하지 않으려면 `null`을(를) 전달할 수 있습니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -943,44 +943,44 @@ Document Security API(웹 서비스)를 사용하여 정책으로 보호된 PDF 
 
 1. 프로젝트 파일 포함
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체 만들기
 
-   * 만들기 `DocumentSecurityServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `DocumentSecurityServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `DocumentSecurityServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `DocumentSecurityServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `DocumentSecurityServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `DocumentSecurityServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 정책으로 보호된 PDF 문서 검색
 
-   * 만들기 `BLOB` 개체를 만들 때 사용됩니다. 다음 `BLOB` 해지된 정책으로 보호된 PDF 문서를 저장하는 데 개체가 사용됩니다.
-   * 만들기 `System.IO.FileStream` 을 사용하여 객체를 생성합니다. 생성자를 호출하고 취소할 정책으로 보호된 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
-   * 의 콘텐츠를 저장하는 바이트 배열 만들기 `System.IO.FileStream` 개체. 를 가져와서 바이트 배열의 크기를 결정할 수 있습니다 `System.IO.FileStream` 개체 `Length` 속성.
-   * 를 호출하여 바이트 배열을 스트림 데이터로 채우기 `System.IO.FileStream` 개체 `Read` 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하는 방법.
-   * 채우기 `BLOB` 개체 할당 `MTOM` 바이트 배열의 내용이 있는 필드입니다.
+   * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 해지된 정책으로 보호된 PDF 문서를 저장하는 데 사용됩니다.
+   * 해당 생성자를 호출하고 취소할 정책으로 보호된 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
+   * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
+   * 해당 `MTOM` 필드를 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
 
 1. 정책으로 보호된 문서 취소
 
-   * 다음을 호출하여 정책으로 보호된 문서의 라이선스 식별자 값 검색 `DocumentSecurityServiceClient` 개체 `getLicenseID` 메서드 및 전달 `BLOB` 정책으로 보호된 문서를 나타내는 개체입니다. 이 메서드는 라이선스 식별자를 나타내는 문자열 값을 반환합니다.
-   * 다음을 호출하여 정책으로 보호된 문서 해지 `DocumentSecurityServiceClient` 개체 `revokeLicense` 메서드 및 다음 값 전달:
+   * `DocumentSecurityServiceClient` 개체의 `getLicenseID` 메서드를 호출하고 정책으로 보호된 문서를 나타내는 `BLOB` 개체를 전달하여 정책으로 보호된 문서의 라이선스 식별자 값을 검색합니다. 이 메서드는 라이선스 식별자를 나타내는 문자열 값을 반환합니다.
+   * `DocumentSecurityServiceClient` 개체의 `revokeLicense` 메서드를 호출하고 다음 값을 전달하여 정책으로 보호된 문서를 취소합니다.
 
-      * 정책으로 보호된 문서의 라이선스 식별자 값을 지정하는 문자열 값(의 반환 값 지정) `DocumentSecurityServiceService` 개체 `getLicenseId` 메서드).
-      * 의 정적 데이터 멤버 `Reason` 문서를 취소하는 이유를 지정하는 열거형입니다. 예를 들어 다음을 지정할 수 있습니다 `Reason.DOCUMENT_REVISED`.
-      * A `string` 수정된 문서가 있는 URL 위치를 지정하는 값입니다. 사용자를 다른 URL로 리디렉션하지 않으려면 다음을 전달할 수 있습니다. `null`.
+      * 정책으로 보호된 문서의 라이선스 식별자 값을 지정하는 문자열 값입니다(`DocumentSecurityServiceService` 개체의 `getLicenseId` 메서드에 대한 반환 값 지정).
+      * 문서를 취소하는 이유를 지정하는 `Reason` 열거형의 정적 데이터 멤버입니다. 예를 들어 `Reason.DOCUMENT_REVISED`을(를) 지정할 수 있습니다.
+      * 수정된 문서가 있는 URL 위치를 지정하는 `string` 값입니다. 사용자를 다른 URL로 리디렉션하지 않으려면 `null`을(를) 전달할 수 있습니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -1001,7 +1001,7 @@ Document Security 서비스를 사용하는 코드 예에 대해서는 다음 �
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-6}
 
@@ -1018,13 +1018,13 @@ Document Security 서비스를 사용하는 코드 예에 대해서는 다음 �
 
 **Document Security 클라이언트 API 개체 만들기**
 
-Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `DocumentSecurityClient` 개체. Document Security 웹 서비스 API를 사용하는 경우 `DocumentSecurityServiceService` 개체.
+Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `DocumentSecurityClient` 개체를 만듭니다. Document Security 웹 서비스 API를 사용하는 경우 `DocumentSecurityServiceService` 개체를 만듭니다.
 
-**해지된 PDF 문서의 라이선스 식별자 검색**
+**해지된 PDF 문서의 라이선스 식별자를 검색합니다**
 
 취소된 PDF 문서의 라이선스 식별자를 검색하여 취소된 PDF 문서를 복원합니다. 라이센스 식별자 값을 얻은 후 해지된 문서를 복원할 수 있습니다. 취소되지 않은 문서를 복원하려고 하면 예외가 발생합니다.
 
-**해지된 PDF 문서에 대한 액세스 복원**
+**해지된 PDF 문서에 대한 액세스 권한을 복원합니다**
 
 해지된 PDF 문서에 대한 액세스를 복원하려면 해지된 문서의 라이선스 식별자를 지정해야 합니다. 취소되지 않은 PDF 문서에 대한 액세스를 복원하려고 하면 예외가 발생합니다.
 
@@ -1048,22 +1048,22 @@ Document Security API(Java)를 사용하여 취소된 문서에 대한 액세스
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `DocumentSecurityClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `DocumentSecurityClient` 개체를 만듭니다.
 
 1. 해지된 PDF 문서의 라이선스 식별자를 검색합니다.
 
-   * 만들기 `java.io.FileInputStream` 해당 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 취소된 PDF 문서를 나타내는 개체입니다.
-   * 만들기 `com.adobe.idp.Document` 개체를 생성자를 사용하고 `java.io.FileInputStream` 개체.
-   * 만들기 `DocumentManager` 를 호출하여 개체 `DocumentSecurityClient` 개체 `getDocumentManager` 메서드를 사용합니다.
-   * 를 호출하여 해지된 문서의 라이선스 식별자 값을 검색합니다. `DocumentManager` 개체 `getLicenseId` 메서드 및 전달 `com.adobe.idp.Document` 취소된 문서를 나타내는 개체입니다. 이 메서드는 라이선스 식별자를 나타내는 문자열 값을 반환합니다.
+   * 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 해지된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
+   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * `DocumentSecurityClient` 개체의 `getDocumentManager` 메서드를 호출하여 `DocumentManager` 개체를 만듭니다.
+   * `DocumentManager` 개체의 `getLicenseId` 메서드를 호출하고 해지된 문서를 나타내는 `com.adobe.idp.Document` 개체를 전달하여 해지된 문서의 라이선스 식별자 값을 검색합니다. 이 메서드는 라이선스 식별자를 나타내는 문자열 값을 반환합니다.
 
 1. 해지된 PDF 문서에 대한 액세스 권한을 복원합니다.
 
-   * 만들기 `LicenseManager` 를 호출하여 개체 `DocumentSecurityClient` 개체 `getLicenseManager` 메서드를 사용합니다.
-   * 를 호출하여 해지된 PDF 문서에 대한 액세스 권한 복원 `LicenseManager` 개체 `unrevokeLicense` 해지된 문서의 라이선스 식별자 값 전달 방법 및
+   * `DocumentSecurityClient` 개체의 `getLicenseManager` 메서드를 호출하여 `LicenseManager` 개체를 만듭니다.
+   * `LicenseManager` 개체의 `unrevokeLicense` 메서드를 호출하고 해지된 문서의 라이선스 식별자 값을 전달하여 해지된 PDF 문서에 대한 액세스를 복원하십시오.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -1075,40 +1075,40 @@ Document Security API(웹 서비스)를 사용하여 취소된 문서에 대한 
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `DocumentSecurityServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `DocumentSecurityServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `DocumentSecurityServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `DocumentSecurityServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `DocumentSecurityServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `DocumentSecurityServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 해지된 PDF 문서의 라이선스 식별자를 검색합니다.
 
-   * 만들기 `BLOB` 개체를 만들 때 사용됩니다. 다음 `BLOB` 객체는 액세스 권한이 복구되는 해지된 PDF 문서를 저장하는 데 사용됩니다.
-   * 만들기 `System.IO.FileStream` 이 개체는 생성자를 호출하고 해지된 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
-   * 의 콘텐츠를 저장하는 바이트 배열 만들기 `System.IO.FileStream` 개체. 를 가져와서 바이트 배열의 크기를 결정할 수 있습니다 `System.IO.FileStream` 개체 `Length` 속성.
-   * 를 호출하여 바이트 배열을 스트림 데이터로 채우기 `System.IO.FileStream` 개체 `Read` 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하는 방법.
-   * 채우기 `BLOB` 개체 할당 `MTOM` 바이트 배열의 내용이 있는 필드입니다.
+   * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 액세스가 복원되는 해지된 PDF 문서를 저장하는 데 사용됩니다.
+   * 해당 생성자를 호출하고 해지된 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
+   * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
+   * 해당 `MTOM` 필드를 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
 
 1. 해지된 PDF 문서에 대한 액세스 권한을 복원합니다.
 
-   * 를 호출하여 해지된 문서의 라이선스 식별자 값을 검색합니다. `DocumentSecurityServiceClient` 개체 `getLicenseID` 메서드 및 전달 `BLOB` 취소된 문서를 나타내는 개체입니다. 이 메서드는 라이선스 식별자를 나타내는 문자열 값을 반환합니다.
-   * 를 호출하여 해지된 PDF 문서에 대한 액세스 권한 복원 `DocumentSecurityServiceClient` 개체 `unrevokeLicense` 메서드 및 취소된 PDF 문서의 라이선스 식별자 값을 지정하는 문자열 값 전달(의 반환 값 전달) `DocumentSecurityServiceClient` 개체 `getLicenseId` 메서드).
+   * `DocumentSecurityServiceClient` 개체의 `getLicenseID` 메서드를 호출하고 해지된 문서를 나타내는 `BLOB` 개체를 전달하여 해지된 문서의 라이선스 식별자 값을 검색합니다. 이 메서드는 라이선스 식별자를 나타내는 문자열 값을 반환합니다.
+   * `DocumentSecurityServiceClient` 개체의 `unrevokeLicense` 메서드를 호출하고 해지된 PDF 문서의 라이선스 식별자 값을 지정하는 문자열 값을 전달하여 해지된 PDF 문서에 대한 액세스를 복원합니다(`DocumentSecurityServiceClient` 개체의 `getLicenseId` 메서드의 반환 값 전달).
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -1129,7 +1129,7 @@ LiveCycle 버전이 8.x 또는 이전 버전인 경우 이 작업을 수행할 �
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-7}
 
@@ -1146,7 +1146,7 @@ LiveCycle 버전이 8.x 또는 이전 버전인 경우 이 작업을 수행할 �
 
 **Document Security 클라이언트 API 개체 만들기**
 
-Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만듭니다. Java API를 사용하는 경우 `RightsManagementClient` 개체. Document Security 웹 서비스 API를 사용하는 경우 `RightsManagementServiceService` 개체.
+Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만듭니다. Java API를 사용하는 경우 `RightsManagementClient` 개체를 만듭니다. Document Security 웹 서비스 API를 사용하는 경우 `RightsManagementServiceService` 개체를 만듭니다.
 
 **검사할 정책으로 보호된 문서 검색**
 
@@ -1156,13 +1156,13 @@ Document Security 서비스 작업을 프로그래밍 방식으로 수행하려�
 
 정책으로 보호된 문서를 검색한 후 검사할 수 있습니다.
 
-**정책으로 보호된 문서에 대한 정보 얻기**
+**정책으로 보호된 문서에 대한 정보 가져오기**
 
 정책으로 보호된 PDF 문서를 검사하면 해당 문서에 대한 정보를 얻을 수 있습니다. 예를 들어 문서 보안에 사용되는 정책을 결정할 수 있습니다.
 
-내 정책에 속하는 정책으로 문서를 보호한 다음 `RMInspectResult.getPolicysetName` 또는 `RMInspectResult.getPolicysetId`, null이 반환됩니다.
+내 정책에 속하는 정책으로 문서를 보호한 다음 `RMInspectResult.getPolicysetName` 또는 `RMInspectResult.getPolicysetId`을(를) 호출하면 null이 반환됩니다.
 
-내 정책 이외의 정책 세트에 포함된 정책을 사용하여 문서를 보호하는 경우 `RMInspectResult.getPolicysetName` 및 `RMInspectResult.getPolicysetId` 유효한 문자열을 반환합니다.
+내 정책 이외의 정책 집합에 포함된 정책을 사용하여 문서를 보호하면 `RMInspectResult.getPolicysetName` 및 `RMInspectResult.getPolicysetId`이(가) 올바른 문자열을 반환합니다.
 
 **추가 참조**
 
@@ -1176,28 +1176,28 @@ Inspect은 Document Security Service API(Java)를 사용하여 정책으로 보�
 
 1. 프로젝트 파일을 포함합니다.
 
-   Java 프로젝트의 클래스 경로에 adobe-rightsmanagement-client.jar과 같은 클라이언트 JAR 파일을 포함합니다. 이러한 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   Java 프로젝트의 클래스 경로에 adobe-rightsmanagement-client.jar과 같은 클라이언트 JAR 파일을 포함합니다. 이러한 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다. (참조: [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * 만들기 `RightsManagementClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다. ([연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.)
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `RightsManagementClient` 개체를 만듭니다.
 
 1. 검사할 정책으로 보호된 문서를 검색합니다.
 
-   * 만들기 `java.io.FileInputStream` 생성자를 사용하여 정책으로 보호된 PDF 문서를 나타내는 개체입니다. PDF 문서의 위치를 지정하는 문자열 값을 전달합니다.
-   * 만들기 `com.adobe.idp.Document` 개체를 생성자를 사용하고 `java.io.FileInputStream` 개체.
+   * 생성자를 사용하여 정책으로 보호된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다. PDF 문서의 위치를 지정하는 문자열 값을 전달합니다.
+   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
 
 1. 문서를 Inspect 합니다.
 
-   * 만들기 `DocumentManager` 를 호출하여 개체 `RightsManagementClient` 개체 `getDocumentManager` 메서드를 사용합니다.
-   * Inspect에서 를 호출하여 정책으로 보호된 문서 `LicenseManager` 개체 `inspectDocument` 메서드를 사용합니다. 전달 `com.adobe.idp.Document` 정책으로 보호된 PDF 문서가 포함된 객체입니다. 이 메서드는 `RMInspectResult` 정책으로 보호된 문서에 대한 정보가 포함된 객체입니다.
+   * `RightsManagementClient` 개체의 `getDocumentManager` 메서드를 호출하여 `DocumentManager` 개체를 만듭니다.
+   * `LicenseManager` 개체의 `inspectDocument` 메서드를 호출하여 정책으로 보호된 문서를 Inspect합니다. 정책으로 보호된 PDF 문서가 포함된 `com.adobe.idp.Document` 개체를 전달합니다. 이 메서드는 정책으로 보호된 문서에 대한 정보가 포함된 `RMInspectResult` 개체를 반환합니다.
 
 1. 정책으로 보호된 문서에 대한 정보를 얻습니다.
 
-   정책으로 보호된 문서에 대한 정보를 얻으려면 `RMInspectResult` 개체. 예를 들어 정책 이름을 검색하려면 `RMInspectResult` 개체 `getPolicyName` 메서드를 사용합니다.
+   정책으로 보호된 문서에 대한 정보를 얻으려면 `RMInspectResult` 개체에 속하는 적절한 메서드를 호출하십시오. 예를 들어 정책 이름을 검색하려면 `RMInspectResult` 개체의 `getPolicyName` 메서드를 호출하십시오.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -1209,43 +1209,43 @@ Inspect은 Document Security Service API(웹 서비스)를 사용하여 정책�
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `RightsManagementServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `RightsManagementServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `RightsManagementServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `RightsManagementServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `RightsManagementServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `RightsManagementServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 검사할 정책으로 보호된 문서를 검색합니다.
 
-   * 만들기 `BLOB` 개체를 만들 때 사용됩니다. 다음 `BLOB` 검사할 PDF 문서를 저장하는 데 개체를 사용합니다.
-   * 만들기 `System.IO.FileStream` 해당 생성자를 호출하여 개체를 작성합니다. PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
-   * 의 콘텐츠를 저장하는 바이트 배열 만들기 `System.IO.FileStream` 개체. 를 가져와서 바이트 배열의 크기를 결정할 수 있습니다 `System.IO.FileStream` 개체 `Length` 속성.
-   * 를 호출하여 바이트 배열을 스트림 데이터로 채우기 `System.IO.FileStream` 개체 `Read` 메서드를 사용합니다. 읽을 바이트 배열, 시작 위치 및 스트림 길이를 전달합니다.
-   * 채우기 `BLOB` 개체 할당 `MTOM` 바이트 배열의 내용이 있는 필드입니다.
+   * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 검사할 PDF 문서를 저장하는 데 사용됩니다.
+   * 해당 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
+   * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
+   * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하여 바이트 배열을 스트림 데이터로 채웁니다. 읽을 바이트 배열, 시작 위치 및 스트림 길이를 전달합니다.
+   * 해당 `MTOM` 필드를 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
 
 1. 문서를 Inspect 합니다.
 
-   Inspect에서 를 호출하여 정책으로 보호된 문서 `RightsManagementServiceClient` 개체 `inspectDocument` 메서드를 사용합니다. 전달 `BLOB` 정책으로 보호된 PDF 문서가 포함된 객체입니다. 이 메서드는 `RMInspectResult` 정책으로 보호된 문서에 대한 정보가 포함된 객체입니다.
+   `RightsManagementServiceClient` 개체의 `inspectDocument` 메서드를 호출하여 정책으로 보호된 문서를 Inspect합니다. 정책으로 보호된 PDF 문서가 포함된 `BLOB` 개체를 전달합니다. 이 메서드는 정책으로 보호된 문서에 대한 정보가 포함된 `RMInspectResult` 개체를 반환합니다.
 
 1. 정책으로 보호된 문서에 대한 정보를 얻습니다.
 
-   정책으로 보호된 문서에 대한 정보를 얻으려면 `RMInspectResult` 개체. 예를 들어 정책 이름을 검색하려면 `RMInspectResult` 개체 `policyName` 필드.
+   정책으로 보호된 문서에 대한 정보를 얻으려면 `RMInspectResult` 개체에 속하는 적절한 필드의 값을 가져옵니다. 예를 들어 정책 이름을 검색하려면 `RMInspectResult` 개체의 `policyName` 필드 값을 가져옵니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -1268,7 +1268,7 @@ Document Security 서비스를 사용하는 코드 예에 대해서는 다음 �
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-8}
 
@@ -1285,9 +1285,9 @@ Document Security 서비스를 사용하는 코드 예에 대해서는 다음 �
 
 **Document Security 클라이언트 API 개체 만들기**
 
-Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `RightsManagementClient` 개체. Document Security 웹 서비스 API를 사용하는 경우 `RightsManagementServiceService` 개체.
+Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `RightsManagementClient` 개체를 만듭니다. Document Security 웹 서비스 API를 사용하는 경우 `RightsManagementServiceService` 개체를 만듭니다.
 
-**워터마크 속성 설정**
+**워터마크 특성을 설정합니다**
 
 워터마크를 만들려면 워터마크 속성을 설정해야 합니다. name 특성을 항상 정의해야 합니다. name 속성 외에 다음 속성 중 하나 이상을 설정해야 합니다.
 
@@ -1324,7 +1324,7 @@ Document Security 서비스 작업을 프로그래밍 방식으로 수행하려�
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code></p></td>
-   <td><p>이 값이 true이면 사용자 지정 텍스트의 값을 <code>WaterBackCmd:SRCTEXT</code>.</p></td>
+   <td><p>이 값이 true이면 <code>WaterBackCmd:SRCTEXT</code>을(를) 사용하여 사용자 지정 텍스트의 값을 지정해야 합니다.</p></td>
    <td><p>True 또는 False</p></td>
   </tr>
   <tr>
@@ -1339,7 +1339,7 @@ Document Security 서비스 작업을 프로그래밍 방식으로 수행하려�
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>
-   <td><p>이 값을 지정하면 <code>WaterBackCmd:IS_SIZE_ENABLED</code> 은(는) 존재해야 하며 값은 true여야 합니다. 이 속성을 지정하지 않으면 기본 동작이 페이지에 맞춰집니다.</p></td>
+   <td><p>이 값을 지정하면 <code>WaterBackCmd:IS_SIZE_ENABLED</code>이(가) 있어야 하며 값이 true여야 합니다. 이 속성을 지정하지 않으면 기본 동작이 페이지에 맞춰집니다.</p></td>
    <td><p>0.0보다 크고 1.0보다 작거나 같은 값입니다.</p></td>
   </tr>
   <tr>
@@ -1364,7 +1364,7 @@ Document Security 서비스 작업을 프로그래밍 방식으로 수행하려�
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SRCTEXT</code></p></td>
-   <td><p>워터마크에 대한 사용자 지정 텍스트를 지정합니다. 이 값이 있으면 <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> 도 있어야 하며 true로 설정되어 있어야 합니다.</p></td>
+   <td><p>워터마크에 대한 사용자 지정 텍스트를 지정합니다. 이 값이 있으면 <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code>도 있어야 하며 true로 설정해야 합니다.</p></td>
    <td><p>True 또는 False</p></td>
   </tr>
  </tbody>
@@ -1397,27 +1397,27 @@ Java(Document Security API)를 사용하여 워터마크를 만듭니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   다음과 같은 클라이언트 JAR 파일을 포함합니다. `adobe-rightsmanagement-client.jar`: Java 프로젝트의 클래스 경로에 있습니다.
+   Java 프로젝트의 클래스 경로에 `adobe-rightsmanagement-client.jar`과(와) 같은 클라이언트 JAR 파일을 포함합니다.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `RightsManagementClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `RightsManagementClient` 개체를 만듭니다.
 
 1. 워터마크 속성 설정
 
-   * 만들기 `Watermark` 를 호출하여 개체 `InfomodelObjectFactory` 오브젝트의 정적 `createWatermark` 메서드를 사용합니다. 이 메서드는 `Watermark` 개체.
-   * 를 호출하여 워터마크의 이름 속성을 설정합니다. `Watermark` 개체 `setName` 메서드 및 정책 이름을 지정하는 문자열 값 전달
-   * 를 호출하여 워터마크의 백그라운드 속성을 설정합니다. `Watermark` 개체 `setBackground` 방법 및 전달 `true`. 이 속성을 설정하면 문서 배경에 워터마크가 표시됩니다.
-   * 를 호출하여 워터마크의 사용자 지정 텍스트 속성을 설정합니다. `Watermark` 개체 `setCustomText` 메서드 및 워터마크의 텍스트를 나타내는 문자열 값 전달
-   * 를 호출하여 워터마크의 불투명도 속성을 설정합니다. `Watermark` 개체 `setOpacity` 메서드 및 불투명도 수준을 지정하는 정수 값 전달 값이 100이면 워터마크가 완전히 불투명함을 나타내고 값이 0이면 워터마크가 완전히 투명함을 나타냅니다.
+   * `InfomodelObjectFactory` 개체의 정적 `createWatermark` 메서드를 호출하여 `Watermark` 개체를 만듭니다. 이 메서드는 `Watermark` 개체를 반환합니다.
+   * `Watermark` 개체의 `setName` 메서드를 호출하고 정책 이름을 지정하는 문자열 값을 전달하여 워터마크의 이름 특성을 설정합니다.
+   * `Watermark` 개체의 `setBackground` 메서드를 호출하고 `true`을(를) 전달하여 워터마크의 백그라운드 특성을 설정합니다. 이 속성을 설정하면 문서 배경에 워터마크가 표시됩니다.
+   * `Watermark` 개체의 `setCustomText` 메서드를 호출하고 워터마크의 텍스트를 나타내는 문자열 값을 전달하여 워터마크의 사용자 지정 텍스트 특성을 설정합니다.
+   * `Watermark` 개체의 `setOpacity` 메서드를 호출하고 불투명도 수준을 지정하는 정수 값을 전달하여 워터마크의 불투명도 특성을 설정합니다. 값이 100이면 워터마크가 완전히 불투명함을 나타내고 값이 0이면 워터마크가 완전히 투명함을 나타냅니다.
 
 1. 워터마크를 등록합니다.
 
-   * 만들기 `WatermarkManager` 를 호출하여 개체 `RightsManagementClient` 개체 `getWatermarkManager` 메서드를 사용합니다. 이 메서드는 `WatermarkManager` 개체.
-   * 를 호출하여 워터마크 등록 `WatermarkManager` 개체 `registerWatermark` 메서드 및 전달 `Watermark` 등록할 워터마크를 나타내는 개체입니다. 이 메서드는 워터마크의 식별 값을 나타내는 문자열 값을 반환합니다.
+   * `RightsManagementClient` 개체의 `getWatermarkManager` 메서드를 호출하여 `WatermarkManager` 개체를 만듭니다. 이 메서드는 `WatermarkManager` 개체를 반환합니다.
+   * `WatermarkManager` 개체의 `registerWatermark` 메서드를 호출하고 워터마크를 나타내는 `Watermark` 개체를 등록하도록 전달하여 워터마크를 등록합니다. 이 메서드는 워터마크의 식별 값을 나타내는 문자열 값을 반환합니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -1429,42 +1429,42 @@ Document Security API(웹 서비스)를 사용하여 워터마크를 만듭니�
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `RightsManagementServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `RightsManagementServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `RightsManagementServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `RightsManagementServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `RightsManagementServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `RightsManagementServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 워터마크 속성을 설정합니다.
 
-   * 만들기 `WatermarkSpec` 를 호출하여 개체 `WatermarkSpec` 생성자입니다.
-   * 문자열 값을 로 할당하여 워터마크 이름을 설정합니다. `WatermarkSpec` 개체 `name` 데이터 구성원입니다.
-   * 워터마크 설정 `id` 에 문자열 값을 할당하여 특성 `WatermarkSpec` 개체 `id` 데이터 구성원입니다.
-   * 설정할 각 워터마크 속성에 대해 별도의 를 만듭니다 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체.
-   * 에 값을 할당하여 키 값 설정 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체 `key` 데이터 멤버(예: `WaterBackCmd:OPACITY)`.
-   * 에 값을 할당하여 값 설정 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체 `value` 데이터 멤버(예: `.25`).
-   * 만들기 `MyArrayOf_xsd_anyType` 개체. 각 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체, 호출 `MyArrayOf_xsd_anyType` 개체 `Add` 메서드를 사용합니다. 전달 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체.
-   * 할당 `MyArrayOf_xsd_anyType` 에 대한 오브젝트 `WatermarkSpec` 개체 `values` 데이터 구성원입니다.
+   * `WatermarkSpec` 생성자를 호출하여 `WatermarkSpec` 개체를 만듭니다.
+   * `WatermarkSpec` 개체의 `name` 데이터 멤버에 문자열 값을 할당하여 워터마크의 이름을 설정합니다.
+   * 문자열 값을 `WatermarkSpec` 개체의 `id` 데이터 멤버에 할당하여 워터마크의 `id` 특성을 설정합니다.
+   * 설정할 각 워터마크 속성에 대해 별도의 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체를 만듭니다.
+   * `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체의 `key` 데이터 멤버(예: `WaterBackCmd:OPACITY)`)에 값을 할당하여 키 값을 설정하십시오.
+   * 값을 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체의 `value` 데이터 멤버(예: `.25`)에 할당하여 값을 설정하십시오.
+   * `MyArrayOf_xsd_anyType` 개체를 만듭니다. 각 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체에 대해 `MyArrayOf_xsd_anyType` 개체의 `Add` 메서드를 호출합니다. `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체를 전달합니다.
+   * `MyArrayOf_xsd_anyType` 개체를 `WatermarkSpec` 개체의 `values` 데이터 멤버에 할당합니다.
 
 1. 워터마크를 등록합니다.
 
-   를 호출하여 워터마크 등록 `RightsManagementServiceClient` 개체 `registerWatermark` 메서드 및 전달 `WatermarkSpec` 등록할 워터마크를 나타내는 개체입니다.
+   `RightsManagementServiceClient` 개체의 `registerWatermark` 메서드를 호출하고 워터마크를 나타내는 `WatermarkSpec` 개체를 등록하도록 전달하여 워터마크를 등록합니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -1489,7 +1489,7 @@ Document Security Java API 또는 웹 서비스 API를 사용하여 기존 워�
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-9}
 
@@ -1507,15 +1507,15 @@ Document Security Java API 또는 웹 서비스 API를 사용하여 기존 워�
 
 **Document Security 클라이언트 API 개체 만들기**
 
-Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `DocumentSecurityClient` 개체. Document Security 웹 서비스 API를 사용하는 경우 `DocumentSecurityServiceService` 개체.
+Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `DocumentSecurityClient` 개체를 만듭니다. Document Security 웹 서비스 API를 사용하는 경우 `DocumentSecurityServiceService` 개체를 만듭니다.
 
 **수정할 워터마크를 검색합니다**
 
 워터마크를 수정하려면 기존 워터마크를 검색해야 합니다. 워터마크의 이름을 지정하거나 해당 식별자 값을 지정하여 워터마크를 검색할 수 있습니다.
 
-**워터마크 속성 설정**
+**워터마크 특성을 설정합니다**
 
-기존 워터마크를 수정하려면 하나 이상의 워터마크 속성 값을 변경합니다. 웹 서비스를 사용하여 프로그래밍 방식으로 워터마크를 업데이트할 때에는 값이 변경되지 않더라도 원래 설정된 모든 속성을 설정해야 합니다. 예를 들어 다음 워터마크 속성이 설정되어 있다고 가정합니다. `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY`, 및 `WaterBackCmd:SRCTEXT`. 단, 수정할 속성은 다음과 같습니다. `WaterBackCmd:OPACITY`, 다른 값도 설정해야 합니다.
+기존 워터마크를 수정하려면 하나 이상의 워터마크 속성 값을 변경합니다. 웹 서비스를 사용하여 프로그래밍 방식으로 워터마크를 업데이트할 때에는 값이 변경되지 않더라도 원래 설정된 모든 속성을 설정해야 합니다. 예를 들어 워터마크 특성 `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY` 및 `WaterBackCmd:SRCTEXT`이(가) 설정되어 있다고 가정합니다. 수정할 특성은 `WaterBackCmd:OPACITY`뿐이지만 다른 값도 올바르게 설정해야 합니다.
 
 >[!NOTE]
 >
@@ -1523,7 +1523,7 @@ Document Security 서비스 작업을 프로그래밍 방식으로 수행하려�
 
 >[!NOTE]
 >
->워터마크 속성 이름에 대한 자세한 내용은 [워터마크 만들기](protecting-documents-policies.md#creating-watermarks).
+>워터마크 특성 이름에 대한 자세한 내용은 [워터마크 만들기](protecting-documents-policies.md#creating-watermarks)를 참조하십시오.
 
 **워터마크 업데이트**
 
@@ -1547,16 +1547,16 @@ Java(Document Security API)를 사용하여 워터마크를 수정합니다.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `DocumentSecurityClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `DocumentSecurityClient` 개체를 만듭니다.
 
 1. 수정할 워터마크를 검색합니다.
 
-   만들기 `WatermarkManager` 를 호출하여 개체 `DocumentSecurityClient` 개체 `getWatermarkManager` 메서드 및 워터마크 이름을 지정하는 문자열 값을 전달합니다. 이 메서드는 `Watermark` 수정할 워터마크를 나타내는 개체입니다.
+   `DocumentSecurityClient` 개체의 `getWatermarkManager` 메서드를 호출하여 `WatermarkManager` 개체를 만들고 워터마크 이름을 지정하는 문자열 값을 전달하십시오. 이 메서드는 수정할 워터마크를 나타내는 `Watermark` 개체를 반환합니다.
 
 1. 워터마크 속성을 설정합니다.
 
-   를 호출하여 워터마크의 불투명도 속성을 설정합니다. `Watermark` 개체 `setOpacity` 메서드 및 불투명도 수준을 지정하는 정수 값 전달 값이 100이면 워터마크가 완전히 불투명함을 나타내고 값이 0이면 워터마크가 완전히 투명함을 나타냅니다.
+   `Watermark` 개체의 `setOpacity` 메서드를 호출하고 불투명도 수준을 지정하는 정수 값을 전달하여 워터마크의 불투명도 특성을 설정합니다. 값이 100이면 워터마크가 완전히 불투명함을 나타내고 값이 0이면 워터마크가 완전히 투명함을 나타냅니다.
 
    >[!NOTE]
    >
@@ -1564,9 +1564,9 @@ Java(Document Security API)를 사용하여 워터마크를 수정합니다.
 
 1. 워터마크를 업데이트합니다.
 
-   * 를 호출하여 워터마크 업데이트 `WatermarkManager` 개체 `updateWatermark` 메서드 및 전달 `Watermark` 속성이 수정된 개체입니다.
+   * `WatermarkManager` 개체의 `updateWatermark` 메서드를 호출하여 워터마크를 업데이트하고 특성이 수정된 `Watermark` 개체를 전달합니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 빠른 시작(SOAP 모드): Java API를 사용하여 워터마크 수정 섹션을 참조하십시오.
 
@@ -1576,43 +1576,43 @@ Document Security API(웹 서비스)를 사용하여 워터마크를 수정합�
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `DocumentSecurityServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `RightsManagementServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `DocumentSecurityServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `DocumentSecurityServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `RightsManagementServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `DocumentSecurityServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 수정할 워터마크를 검색합니다.
 
-   를 호출하여 수정할 워터마크를 검색합니다 `DocumentSecurityServiceClient` 개체 `getWatermarkByName` 메서드를 사용합니다. 워터마크 이름을 지정하는 문자열 값을 전달합니다. 이 메서드는 `WatermarkSpec` 수정할 워터마크를 나타내는 개체입니다.
+   `DocumentSecurityServiceClient` 개체의 `getWatermarkByName` 메서드를 호출하여 수정할 워터마크를 검색합니다. 워터마크 이름을 지정하는 문자열 값을 전달합니다. 이 메서드는 수정할 워터마크를 나타내는 `WatermarkSpec` 개체를 반환합니다.
 
 1. 워터마크 속성을 설정합니다.
 
-   * 업데이트할 각 워터마크 속성에 대해 별도의 를 만듭니다 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체.
-   * 에 값을 할당하여 키 값 설정 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체 `key` 데이터 멤버(예: `WaterBackCmd:OPACITY)`.
-   * 에 값을 할당하여 값 설정 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체 `value` 데이터 멤버(예: `.50`).
-   * 만들기 `MyArrayOf_xsd_anyType` 개체. 각 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체, 호출 `MyArrayOf_xsd_anyType` 개체 `Add` 메서드를 사용합니다. 전달 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체.
-   * 할당 `MyArrayOf_xsd_anyType` 에 대한 오브젝트 `WatermarkSpec` 개체 `values` 데이터 구성원입니다.
+   * 업데이트할 각 워터마크 속성에 대해 별도의 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체를 만드십시오.
+   * `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체의 `key` 데이터 멤버(예: `WaterBackCmd:OPACITY)`)에 값을 할당하여 키 값을 설정하십시오.
+   * 값을 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체의 `value` 데이터 멤버(예: `.50`)에 할당하여 값을 설정하십시오.
+   * `MyArrayOf_xsd_anyType` 개체를 만듭니다. 각 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체에 대해 `MyArrayOf_xsd_anyType` 개체의 `Add` 메서드를 호출합니다. `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체를 전달합니다.
+   * `MyArrayOf_xsd_anyType` 개체를 `WatermarkSpec` 개체의 `values` 데이터 멤버에 할당합니다.
 
 1. 워터마크를 업데이트합니다.
 
-   를 호출하여 워터마크 업데이트 `DocumentSecurityServiceClient` 개체 `updateWatermark` 메서드 및 전달 `WatermarkSpec` 수정할 워터마크를 나타내는 개체입니다.
+   `DocumentSecurityServiceClient` 개체의 `updateWatermark` 메서드를 호출하고 수정할 워터마크를 나타내는 `WatermarkSpec` 개체를 전달하여 워터마크를 업데이트합니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -1633,7 +1633,7 @@ Rights Management Java API 또는 웹 서비스 API를 사용하여 특정 이�
 
 >[!NOTE]
 >
->Rights Management 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Rights Management 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-10}
 
@@ -1650,7 +1650,7 @@ Rights Management 이벤트를 검색하려면 다음 단계를 수행하십시�
 
 **Rights Management 클라이언트 API 개체 만들기**
 
-Rights Management 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Rights Management 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `DocumentSecurityClient` 개체. Rights Management 웹 서비스 API를 사용하는 경우 `DocumentSecurityServiceService` 개체.
+Rights Management 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Rights Management 서비스 클라이언트 개체를 만들어야 합니다. Java API를 사용하는 경우 `DocumentSecurityClient` 개체를 만듭니다. Rights Management 웹 서비스 API를 사용하는 경우 `DocumentSecurityServiceService` 개체를 만듭니다.
 
 **검색할 이벤트 지정**
 
@@ -1676,23 +1676,23 @@ Rights Management API(Java)를 사용하여 이벤트를 검색합니다.
 
 1. Rights Management 클라이언트 API 개체 만들기
 
-   만들기 `DocumentSecurityClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `DocumentSecurityClient` 개체를 만듭니다.
 
 1. 검색할 이벤트 지정
 
-   * 만들기 `EventManager` 를 호출하여 개체 `DocumentSecurityClient` 개체 `getEventManager` 메서드를 사용합니다. 이 메서드는 `EventManager` 개체.
-   * 만들기 `EventSearchFilter` 해당 생성자를 호출하여 개체를 작성합니다.
-   * 를 호출하여 검색할 이벤트를 지정합니다. `EventSearchFilter` 개체 `setEventCode` 메서드에 속한 정적 데이터 멤버를 전달하는 방법 및 `EventManager` 검색할 이벤트를 나타내는 클래스입니다. 예를 들어 정책 생성 이벤트를 검색하려면 을 전달합니다 `EventManager.POLICY_CREATE_EVENT`.
+   * `DocumentSecurityClient` 개체의 `getEventManager` 메서드를 호출하여 `EventManager` 개체를 만듭니다. 이 메서드는 `EventManager` 개체를 반환합니다.
+   * 해당 생성자를 호출하여 `EventSearchFilter` 개체를 만듭니다.
+   * `EventSearchFilter` 개체의 `setEventCode` 메서드를 호출하고 검색할 이벤트를 나타내는 `EventManager` 클래스에 속하는 정적 데이터 멤버를 전달하여 검색할 이벤트를 지정합니다. 예를 들어 정책 만들기 이벤트를 검색하려면 `EventManager.POLICY_CREATE_EVENT`을(를) 전달합니다.
 
    >[!NOTE]
    >
-   >을 호출하여 추가 검색 기준을 정의할 수 있습니다 `EventSearchFilter` 개체 메서드입니다. 예를 들어 `setUserName` 이벤트에 연결된 사용자를 지정하는 방법입니다.
+   >`EventSearchFilter` 개체 메서드를 호출하여 추가 검색 조건을 정의할 수 있습니다. 예를 들어 `setUserName` 메서드를 호출하여 이벤트와 연결된 사용자를 지정합니다.
 
 1. 이벤트 검색
 
-   를 호출하여 이벤트를 검색합니다. `EventManager` 개체 `searchForEvents` 메서드 및 전달 `EventSearchFilter` 이벤트 검색 조건을 정의하는 개체입니다. 이 메서드는 배열의 `Event` 개체.
+   `EventManager` 개체의 `searchForEvents` 메서드를 호출하고 이벤트 검색 조건을 정의하는 `EventSearchFilter` 개체를 전달하여 이벤트를 검색합니다. 이 메서드는 `Event` 개체의 배열을 반환합니다.
 
-**코드 예**
+**코드 예제**
 
 Rights Management 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -1704,34 +1704,34 @@ Rights Management API(웹 서비스)를 사용하여 이벤트를 검색합니�
 
 1. 프로젝트 파일 포함
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Rights Management 클라이언트 API 개체 만들기
 
-   * 만들기 `DocumentSecurityServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `DocumentSecurityServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `DocumentSecurityServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `DocumentSecurityServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `DocumentSecurityServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `DocumentSecurityServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 검색할 이벤트 지정
 
-   * 만들기 `EventSpec` 개체를 만들 때 사용됩니다.
-   * 를 설정하여 이벤트가 발생한 기간의 시작을 지정합니다. `EventSpec` 개체 `firstTime.date` 데이터 구성원 `DataTime` 이벤트가 발생한 날짜 범위의 시작을 나타내는 인스턴스입니다.
-   * 값 할당 `true` (으)로 `EventSpec` 개체 `firstTime.dateSpecified` 데이터 구성원입니다.
-   * 을(를) 설정하여 이벤트가 발생한 기간의 끝을 지정합니다. `EventSpec` 개체 `lastTime.date` 데이터 구성원 `DataTime` 이벤트가 발생한 날짜 범위의 끝을 나타내는 인스턴스입니다.
-   * 값 할당 `true` (으)로 `EventSpec` 개체 `lastTime.dateSpecified` 데이터 구성원입니다.
-   * 에 문자열 값을 할당하여 검색할 이벤트를 설정합니다. `EventSpec` 개체 `eventCode` 데이터 구성원입니다. 다음 표에는 이 속성에 지정할 수 있는 숫자 값이 나열되어 있습니다.
+   * 해당 생성자를 사용하여 `EventSpec` 개체를 만듭니다.
+   * 이벤트가 발생한 날짜 범위의 시작을 나타내는 `DataTime` 인스턴스로 `EventSpec` 개체의 `firstTime.date` 데이터 멤버를 설정하여 이벤트가 발생한 기간의 시작을 지정하십시오.
+   * `EventSpec` 개체의 `firstTime.dateSpecified` 데이터 멤버에 값 `true`을(를) 할당합니다.
+   * 이벤트가 발생한 날짜 범위의 끝을 나타내는 `DataTime` 인스턴스로 `EventSpec` 개체의 `lastTime.date` 데이터 멤버를 설정하여 이벤트가 발생한 기간의 끝을 지정하십시오.
+   * `EventSpec` 개체의 `lastTime.dateSpecified` 데이터 멤버에 값 `true`을(를) 할당합니다.
+   * `EventSpec` 개체의 `eventCode` 데이터 멤버에 문자열 값을 할당하여 검색할 이벤트를 설정하십시오. 다음 표에는 이 속성에 지정할 수 있는 숫자 값이 나열되어 있습니다.
 
    <table>
     <thead>
@@ -1934,9 +1934,9 @@ Rights Management API(웹 서비스)를 사용하여 이벤트를 검색합니�
 
 1. 이벤트 검색
 
-   를 호출하여 이벤트를 검색합니다. `DocumentSecurityServiceClient` 개체 `searchForEvents` 메서드 및 전달 `EventSpec` 검색할 이벤트와 최대 결과 수를 나타내는 개체입니다. 이 메서드는 `MyArrayOf_xsd_anyType` 각 요소가 인 컬렉션 `AuditSpec` 인스턴스. 사용 `AuditSpec` 예를 들어 이벤트가 발생한 시간과 같은 이벤트에 대한 정보를 얻을 수 있습니다. 다음 `AuditSpec` 인스턴스가 다음을 포함: `timestamp` 이 정보를 지정하는 데이터 멤버입니다.
+   `DocumentSecurityServiceClient` 개체의 `searchForEvents` 메서드를 호출하고 검색할 이벤트와 최대 결과 수를 나타내는 `EventSpec` 개체를 전달하여 이벤트를 검색합니다. 이 메서드는 각 요소가 `AuditSpec` 인스턴스인 `MyArrayOf_xsd_anyType` 컬렉션을 반환합니다. `AuditSpec` 인스턴스를 사용하면 이벤트가 발생한 시간과 같은 이벤트에 대한 정보를 얻을 수 있습니다. `AuditSpec` 인스턴스에 이 정보를 지정하는 `timestamp` 데이터 멤버가 있습니다.
 
-**코드 예**
+**코드 예제**
 
 Rights Management 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -1957,7 +1957,7 @@ Rights Management 서비스는 PDF 문서 외에도 Microsoft Word 문서(DOC �
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-11}
 
@@ -1973,7 +1973,7 @@ Word 문서에 정책을 적용하려면 다음 단계를 수행합니다.
 
 개발 프로젝트에 필요한 파일을 포함하십시오. Java를 사용하여 클라이언트 응용 프로그램을 생성하는 경우 필요한 JAR 파일을 포함합니다. 웹 서비스를 사용하는 경우 프록시 파일을 포함해야 합니다.
 
-**Document Security 클라이언트 APIobject 만들기**
+**Document Security Client APIobject 만들기**
 
 Document Security 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 Document Security 서비스 클라이언트 개체를 만들어야 합니다.
 
@@ -2007,36 +2007,36 @@ Document Security API(Java)를 사용하여 Word 문서에 정책 적용:
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `DocumentSecurityClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `DocumentSecurityClient` 개체를 만듭니다.
 
 1. Word 문서를 검색합니다.
 
-   * 만들기 `java.io.FileInputStream` Word 문서의 위치를 지정하는 문자열 값을 전달하고 생성자를 사용하여 Word 문서를 나타내는 개체입니다.
-   * 만들기 `com.adobe.idp.Document` 개체를 생성자를 사용하고 `java.io.FileInputStream` 개체.
+   * 생성자를 사용하고 Word 문서의 위치를 지정하는 문자열 값을 전달하여 Word 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
+   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
 
 1. Word 문서에 기존 정책을 적용합니다.
 
-   * 만들기 `DocumentManager` 를 호출하여 개체 `DocumentSecurityClient` 개체 `getDocumentManager` 메서드를 사용합니다.
-   * Word 문서를 호출하여 정책을 적용합니다. `DocumentManager` 개체 `protectDocument` 메서드 및 다음 값 전달:
+   * `DocumentSecurityClient` 개체의 `getDocumentManager` 메서드를 호출하여 `DocumentManager` 개체를 만듭니다.
+   * `DocumentManager` 개체의 `protectDocument` 메서드를 호출하고 다음 값을 전달하여 Word 문서에 정책을 적용합니다.
 
-      * 다음 `com.adobe.idp.Document` 정책이 적용되는 Word 문서가 포함된 개체입니다.
+      * 정책이 적용되는 Word 문서가 포함된 `com.adobe.idp.Document` 개체입니다.
       * 문서의 이름을 지정하는 문자열 값입니다.
-      * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. 다음을 지정할 수 있습니다. `null` 을 반환하는 값 `MyPolicies` 정책 집합을 사용 중입니다.
+      * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null` 값을 지정할 수 있습니다.
       * 정책 이름을 지정하는 문자열 값입니다.
       * 문서의 게시자인 사용자의 사용자 관리자 도메인 이름을 나타내는 문자열 값입니다. 이 매개변수 값은 선택 사항이며 null일 수 있습니다(이 매개변수가 null이면 다음 매개변수 값은 null이어야 함).
-      * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 다음과 같을 수 있습니다. `null` (이 매개 변수가 `null`를 설정하는 경우 이전 매개 변수 값은 다음과 같아야 합니다. `null`).
-      * A `com.adobe.livecycle.rightsmanagement.Locale` MS Office 템플릿 선택에 사용되는 로케일을 나타냅니다. 이 매개 변수 값은 선택 사항이며 다음을 지정할 수 있습니다 `null`.
+      * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 `null`일 수 있습니다(이 매개 변수가 `null`이면 이전 매개 변수 값은 `null`이어야 함).
+      * MS Office 템플릿을 선택하는 데 사용되는 로케일을 나타내는 `com.adobe.livecycle.rightsmanagement.Locale`입니다. 이 매개 변수 값은 선택 사항이며 `null`을(를) 지정할 수 있습니다.
 
-     다음 `protectDocument` 메서드가 을 반환합니다. `RMSecureDocumentResult` 정책으로 보호된 Word 문서가 포함된 개체입니다.
+     `protectDocument` 메서드가 정책으로 보호된 Word 문서를 포함하는 `RMSecureDocumentResult` 개체를 반환합니다.
 
 1. Word 문서를 저장합니다.
 
-   * 호출 `RMSecureDocumentResult` 개체 `getProtectedDoc` 정책으로 보호된 Word 문서를 가져오는 방법입니다. 이 메서드는 `com.adobe.idp.Document` 개체.
-   * 만들기 `java.io.File` 를 반환하고 파일 확장명이 DOC인지 확인합니다.
-   * 호출 `com.adobe.idp.Document` 개체 `copyToFile` 콘텐츠 복사 방법 `Document` 파일에 대한 개체(를 사용해야 함) `Document` 에서 반환한 개체 `getProtectedDoc` 메서드).
+   * `RMSecureDocumentResult` 개체의 `getProtectedDoc` 메서드를 호출하여 정책으로 보호된 Word 문서를 가져옵니다. 이 메서드는 `com.adobe.idp.Document` 개체를 반환합니다.
+   * `java.io.File` 개체를 만들고 파일 확장명이 DOC인지 확인합니다.
+   * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하여 `Document` 개체의 내용을 파일에 복사합니다(`getProtectedDoc` 메서드에서 반환된 `Document` 개체를 사용하는지 확인).
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -2048,59 +2048,59 @@ Document Security API(웹 서비스)를 사용하여 Word 문서에 정책 적�
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/DocumentSecurityService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/DocumentSecurityService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체를 만듭니다.
 
-   * 만들기 `DocumentSecurityServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `DocumentSecurityServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `DocumentSecurityServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `DocumentSecurityServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `DocumentSecurityServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `DocumentSecurityServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. Word 문서를 검색합니다.
 
-   * 만들기 `BLOB` 개체를 만들 때 사용됩니다. 다음 `BLOB` 개체는 정책이 적용되는 Word 문서를 저장하는 데 사용됩니다.
-   * 만들기 `System.IO.FileStream` Word 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
-   * 의 콘텐츠를 저장하는 바이트 배열 만들기 `System.IO.FileStream` 개체. 를 가져와서 바이트 배열 크기를 결정합니다. `System.IO.FileStream` 개체 `Length` 속성.
-   * 를 호출하여 바이트 배열을 스트림 데이터로 채우기 `System.IO.FileStream` 개체 `Read` 메서드를 사용합니다. 읽을 바이트 배열, 시작 위치 및 스트림 길이를 전달합니다.
-   * 채우기 `BLOB` 개체 할당 `MTOM` 바이트 배열의 내용이 있는 필드입니다.
+   * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 정책이 적용되는 Word 문서를 저장하는 데 사용됩니다.
+   * 해당 생성자를 호출하고 Word 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열 크기를 결정합니다.
+   * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하여 바이트 배열을 스트림 데이터로 채웁니다. 읽을 바이트 배열, 시작 위치 및 스트림 길이를 전달합니다.
+   * 해당 `MTOM` 필드를 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
 
 1. Word 문서에 기존 정책을 적용합니다.
 
-   Word 문서를 호출하여 정책을 적용합니다. `DocumentSecurityServiceClient` 개체 `protectDocument` 메서드 및 다음 값 전달:
+   `DocumentSecurityServiceClient` 개체의 `protectDocument` 메서드를 호출하고 다음 값을 전달하여 Word 문서에 정책을 적용합니다.
 
-   * 다음 `BLOB` 정책이 적용되는 Word 문서가 포함된 개체입니다.
+   * 정책이 적용되는 Word 문서가 포함된 `BLOB` 개체입니다.
    * 문서의 이름을 지정하는 문자열 값입니다.
-   * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. 다음을 지정할 수 있습니다. `null` 을 반환하는 값 `MyPolicies` 정책 집합을 사용 중입니다.
+   * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null` 값을 지정할 수 있습니다.
    * 정책 이름을 지정하는 문자열 값입니다.
-   * 문서의 게시자인 사용자의 사용자 관리자 도메인 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 null일 수 있습니다(이 매개 변수가 null이면 다음 매개 변수 값은 다음이어야 함). `null`).
-   * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 null일 수 있습니다(이 매개 변수가 null이면 이전 매개 변수 값은 다음이어야 함). `null`).
-   * A `RMLocale` 로케일 값을 지정하는 값(예: `RMLocale.en`).
+   * 문서의 게시자인 사용자의 사용자 관리자 도메인 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 null일 수 있습니다(이 매개 변수가 null이면 다음 매개 변수 값은 `null`이어야 함).
+   * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 null일 수 있습니다(이 매개 변수가 null이면 이전 매개 변수 값은 `null`이어야 함).
+   * 로케일 값을 지정하는 `RMLocale` 값(예: `RMLocale.en`)입니다.
    * 정책 식별자 값을 저장하는 데 사용되는 문자열 출력 매개 변수입니다.
    * 정책으로 보호된 식별자 값을 저장하는 데 사용되는 문자열 출력 매개 변수입니다.
-   * MIME 유형을 저장하는 데 사용되는 문자열 출력 매개 변수(예: `application/doc`).
+   * MIME 형식을 저장하는 데 사용되는 문자열 출력 매개 변수(예: `application/doc`)입니다.
 
-   다음 `protectDocument` 메서드가 을 반환합니다. `BLOB` 정책으로 보호된 Word 문서가 포함된 개체입니다.
+   `protectDocument` 메서드가 정책으로 보호된 Word 문서를 포함하는 `BLOB` 개체를 반환합니다.
 
 1. Word 문서를 저장합니다.
 
-   * 만들기 `System.IO.FileStream` 이 개체는 생성자를 호출하고 정책으로 보호된 Word 문서의 파일 위치를 나타내는 문자열 값을 전달합니다.
-   * 의 데이터 콘텐츠를 저장하는 바이트 배열 만들기 `BLOB` 에서 반환한 개체 `protectDocument` 메서드를 사용합니다. 의 값을 가져와서 바이트 배열 채우기 `BLOB` 개체 `MTOM` 데이터 구성원입니다.
-   * 만들기 `System.IO.BinaryWriter` 개체를 호출하고 `System.IO.FileStream` 개체.
-   * Word 파일을 호출하여 바이트 배열의 내용을 씁니다. `System.IO.BinaryWriter` 개체 `Write` 메서드 및 바이트 배열 전달.
+   * 해당 생성자를 호출하고 정책으로 보호된 Word 문서의 파일 위치를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * `protectDocument` 메서드에서 반환된 `BLOB` 개체의 데이터 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
+   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
+   * `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 Word 파일에 씁니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -2112,7 +2112,7 @@ Document Security 서비스를 사용하는 코드 예에 대해서는 다음 �
 
 >[!NOTE]
 >
->Document Security 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>Document Security 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-12}
 
@@ -2138,7 +2138,7 @@ Document Security 서비스 작업을 프로그래밍 방식으로 수행하려�
 
 **Word 문서에서 정책 제거**
 
-연결 설정에 관리자가 지정되어 있으면 정책으로 보호된 Word 문서에서 정책을 제거할 수 있습니다. 그렇지 않은 경우 문서 보안에 사용되는 정책에 `SWITCH_POLICY` Word 문서에서 정책을 제거할 수 있는 권한입니다. 또한 AEM Forms 연결 설정에 지정된 사용자에게도 해당 권한이 있어야 합니다. 그렇지 않으면 예외가 throw됩니다.
+연결 설정에 관리자가 지정되어 있으면 정책으로 보호된 Word 문서에서 정책을 제거할 수 있습니다. 그렇지 않으면 문서 보안에 사용되는 정책에 Word 문서에서 정책을 제거하려면 `SWITCH_POLICY` 권한이 있어야 합니다. 또한 AEM Forms 연결 설정에 지정된 사용자에게도 해당 권한이 있어야 합니다. 그렇지 않으면 예외가 throw됩니다.
 
 **보안되지 않은 Word 문서 저장**
 
@@ -2162,25 +2162,25 @@ Document Security API(Java)를 사용하여 정책으로 보호된 Word 문서�
 
 1. Document Security 클라이언트 API 개체 만들기
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `RightsManagementClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `RightsManagementClient` 개체를 만듭니다.
 
 1. 정책으로 보호된 Word 문서 검색
 
-   * 만들기 `java.io.FileInputStream` 생성자를 사용하고 Word 문서의 위치를 지정하는 문자열 값을 전달하여 정책으로 보호된 Word 문서를 나타내는 개체입니다.
-   * 만들기 `com.adobe.idp.Document` 개체를 생성자를 사용하고 `java.io.FileInputStream` 개체.
+   * 생성자를 사용하고 Word 문서의 위치를 지정하는 문자열 값을 전달하여 정책으로 보호된 Word 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
+   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
 
 1. Word 문서에서 정책 제거
 
-   * 만들기 `DocumentManager` 를 호출하여 개체 `RightsManagementClient` 개체 `getDocumentManager` 메서드를 사용합니다.
-   * Word 문서에서 정책을 제거하려면 `DocumentManager` 개체 `removeSecurity` 메서드 및 전달 `com.adobe.idp.Document` 정책으로 보호된 Word 문서가 포함된 개체입니다. 이 메서드는 `com.adobe.idp.Document` 보안되지 않은 Word 문서가 포함된 개체입니다.
+   * `RightsManagementClient` 개체의 `getDocumentManager` 메서드를 호출하여 `DocumentManager` 개체를 만듭니다.
+   * `DocumentManager` 개체의 `removeSecurity` 메서드를 호출하고 정책으로 보호된 Word 문서가 포함된 `com.adobe.idp.Document` 개체를 전달하여 Word 문서에서 정책을 제거합니다. 이 메서드는 보안되지 않은 Word 문서가 포함된 `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. 보안되지 않은 Word 문서 저장
 
-   * 만들기 `java.io.File` 를 반환하고 파일 확장명이 DOC인지 확인합니다.
-   * 호출 `Document` 개체 `copyToFile` 콘텐츠 복사 방법 `Document` 파일에 대한 개체(를 사용해야 함) `Document` 에서 반환한 개체 `removeSecurity` 메서드).
+   * `java.io.File` 개체를 만들고 파일 확장명이 DOC인지 확인합니다.
+   * `Document` 개체의 `copyToFile` 메서드를 호출하여 `Document` 개체의 내용을 파일에 복사합니다(`removeSecurity` 메서드에서 반환된 `Document` 개체를 사용하는지 확인).
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 
@@ -2192,45 +2192,45 @@ Document Security API(웹 서비스)를 사용하여 정책으로 보호된 Word
 
 1. 프로젝트 파일 포함
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. Document Security 클라이언트 API 개체 만들기
 
-   * 만들기 `RightsManagementServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `RightsManagementServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `RightsManagementServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `RightsManagementServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `RightsManagementServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/RightsManagementService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `RightsManagementServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
-   * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 정책으로 보호된 Word 문서 검색
 
-   * 만들기 `BLOB` 개체를 만들 때 사용됩니다. 다음 `BLOB` 개체는 정책이 제거된 정책으로 보호된 Word 문서를 저장하는 데 사용됩니다.
-   * 만들기 `System.IO.FileStream` Word 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
-   * 의 콘텐츠를 저장하는 바이트 배열 만들기 `System.IO.FileStream` 개체. 를 가져와서 바이트 배열의 크기를 결정할 수 있습니다 `System.IO.FileStream` 개체 `Length` 속성.
-   * 를 호출하여 바이트 배열을 스트림 데이터로 채우기 `System.IO.FileStream` 개체 `Read` 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하는 방법.
-   * 채우기 `BLOB` 개체 할당 `MTOM` 바이트 배열의 내용이 있는 필드입니다.
+   * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 정책이 제거된 정책으로 보호된 Word 문서를 저장하는 데 사용됩니다.
+   * 해당 생성자를 호출하고 Word 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
+   * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
+   * 해당 `MTOM` 필드를 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
 
 1. Word 문서에서 정책 제거
 
-   Word 문서에서 정책을 제거하려면 `RightsManagementServiceClient` 개체 `removePolicySecurity` 메서드 및 전달 `BLOB` 정책으로 보호된 Word 문서가 포함된 개체입니다. 이 메서드는 `BLOB` 보안되지 않은 Word 문서가 포함된 개체입니다.
+   `RightsManagementServiceClient` 개체의 `removePolicySecurity` 메서드를 호출하고 정책으로 보호된 Word 문서가 포함된 `BLOB` 개체를 전달하여 Word 문서에서 정책을 제거합니다. 이 메서드는 보안되지 않은 Word 문서가 포함된 `BLOB` 개체를 반환합니다.
 
 1. 보안되지 않은 Word 문서 저장
 
-   * 만들기 `System.IO.FileStream` 개체를 호출하고 보안되지 않은 Word 문서의 파일 위치를 나타내는 문자열 값을 전달합니다.
-   * 의 데이터 콘텐츠를 저장하는 바이트 배열 만들기 `BLOB` 에서 반환한 개체 `removePolicySecurity` 메서드를 사용합니다. 의 값을 가져와서 바이트 배열 채우기 `BLOB` 개체 `MTOM` 필드.
-   * 만들기 `System.IO.BinaryWriter` 개체를 호출하고 `System.IO.FileStream` 개체.
+   * 해당 생성자를 호출하고 보안되지 않은 Word 문서의 파일 위치를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * `removePolicySecurity` 메서드에서 반환된 `BLOB` 개체의 데이터 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 필드 값을 가져와서 바이트 배열을 채웁니다.
+   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
 
-**코드 예**
+**코드 예제**
 
 Document Security 서비스를 사용하는 코드 예에 대해서는 다음 빠른 시작을 참조하십시오.
 

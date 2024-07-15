@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 소개 {#introduction}
 
-Workbench에서 다음을 정의할 때 `AssignTask` 작업을 수행하려면 특정 양식(XDP 또는 PDF 양식)을 지정하십시오. 또한 작업 프로필을 통해 렌더링 및 제출 서비스 세트를 지정합니다.
+Workbench에서 `AssignTask` 작업을 정의할 때 특정 양식(XDP 또는 PDF 양식)을 지정하십시오. 또한 작업 프로필을 통해 렌더링 및 제출 서비스 세트를 지정합니다.
 
 XDP를 PDF 양식 또는 HTML 양식으로 렌더링할 수 있습니다. 새로운 기능에는 다음과 같은 기능이 포함됩니다.
 
@@ -54,11 +54,11 @@ public String generateFormURL(TaskContext taskContext, String profileName);
 public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profileName, Map<String,Object> runtimeMap);
 ```
 
-모바일 양식 프로필에 대한 자세한 내용은 다음에서 확인하십시오. [사용자 지정 프로필 만들기](/help/forms/using/custom-profile.md).
+모바일 양식 프로필에 대한 자세한 내용은 [사용자 지정 프로필 만들기](/help/forms/using/custom-profile.md)에서 확인할 수 있습니다.
 
 ## 새 HTML 양식 렌더링 및 제출 프로세스 {#new-html-form-render-amp-submit-processes}
 
-모든 &#39;AssignTask&#39; 작업에 대해 양식으로 렌더링 및 제출 프로세스를 지정합니다. 이러한 프로세스는 TaskManager에 의해 호출됩니다. `renderForm`및 `submitForm`사용자 지정 처리를 허용하는 API입니다. 새 HTML 양식에 대한 이러한 프로세스의 의미:
+모든 &#39;AssignTask&#39; 작업에 대해 양식으로 렌더링 및 제출 프로세스를 지정합니다. 사용자 지정 처리를 허용하기 위해 TaskManager `renderForm` 및 `submitForm` API에서 이러한 프로세스를 호출합니다. 새 HTML 양식에 대한 이러한 프로세스의 의미:
 
 ### 새 HTML 양식 렌더링 {#render-a-new-html-form}
 
@@ -70,11 +70,11 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 출력 - `outFormDoc`
 
-이 메서드는 의 정확한 동작을 시뮬레이션합니다. `renderHTMLForm` NewHTMLFormsService의 API입니다. 다음을 호출합니다. `generateFormURL` 양식의 HTML 표현물 URL을 가져오기 위한 API입니다. 그런 다음 runtimeMap을 다음 키 또는 값으로 채웁니다.
+이 메서드는 NewHTMLFormsService의 `renderHTMLForm` API의 정확한 동작을 시뮬레이션합니다. 양식의 HTML 표현물에 대한 URL을 가져오기 위해 `generateFormURL` API를 호출합니다. 그런 다음 runtimeMap을 다음 키 또는 값으로 채웁니다.
 
 새 html 양식 = true
 
-newHTMLFormURL = 호출 후 반환된 URL `generateFormURL` API.
+newHTMLFormURL = `generateFormURL` API를 호출한 후 반환된 URL입니다.
 
 ### 새 HTML 양식 제출 {#submit-a-new-html-form}
 
@@ -86,7 +86,7 @@ newHTMLFormURL = 호출 후 반환된 URL `generateFormURL` API.
 
 출력 - `outputDocument`
 
-이 프로세스는 `outputDocument`(으)로 `inputDocument`에서 검색됨 `taskContext`.
+프로세스에서 `outputDocument`을(를) `taskContext`에서 검색된 `inputDocument`(으)로 설정합니다.
 
 ## 기본 렌더링 또는 제출 프로세스 및 작업 프로필 {#default-render-or-submit-processes-and-action-profiles}
 
@@ -94,13 +94,13 @@ newHTMLFormURL = 호출 후 반환된 URL `generateFormURL` API.
 
 ### 기본 렌더링 양식 {#default-render-form}
 
-이 프로세스는 여러 플랫폼에서 XDP 양식을 원활하게 렌더링합니다. 이 프로세스는에서 사용자 에이전트를 검색합니다. `taskContext`, 및 는 데이터를 사용하여 HTML 또는 PDF을 렌더링하는 프로세스를 호출합니다.
+이 프로세스는 여러 플랫폼에서 XDP 양식을 원활하게 렌더링합니다. 이 프로세스는 `taskContext`에서 사용자 에이전트를 검색하고 데이터를 사용하여 프로세스를 호출하여 HTML 또는 PDF을 렌더링합니다.
 
 ![default-render-form](assets/default-render-form.png)
 
 ### 기본 제출 양식 {#default-submit-form}
 
-이 프로세스는 여러 플랫폼에서 XDP 양식을 원활하게 제출합니다. 에서 사용자 에이전트를 검색합니다. `taskContext`및 는 데이터를 사용하여 프로세스를 호출하여 HTML 또는 PDF을 제출합니다.
+이 프로세스는 여러 플랫폼에서 XDP 양식을 원활하게 제출합니다. `taskContext`에서 사용자 에이전트를 검색하고 데이터를 사용하여 프로세스를 호출하여 HTML 또는 PDF을 제출합니다.
 
 ![default-submit-form](assets/default-submit-form.png)
 
@@ -109,16 +109,16 @@ newHTMLFormURL = 호출 후 반환된 URL `generateFormURL` API.
 브라우저에서는 Adobe Acrobat 및 Adobe Acrobat Reader용 플러그인을 포함하여 NPAPI 기반 플러그인에 대한 지원을 점차 중단하고 있습니다. 다음 단계를 사용하여 모바일 양식의 렌더링을 PDF에서 HTML으로 변경할 수 있습니다.
 
 1. Workbench에 유효한 사용자로 로그인합니다.
-1. 선택 **파일** > **애플리케이션 가져오기**.
+1. **파일** > **응용 프로그램 가져오기**&#x200B;를 선택합니다.
 
    응용 프로그램 가져오기 대화 상자가 나타납니다.
 
-1. 모바일 양식 렌더링을 변경할 응용 프로그램을 선택하고 을 클릭합니다 **확인**.
+1. 모바일 양식 렌더링을 변경할 응용 프로그램을 선택하고 **확인**&#x200B;을 클릭합니다.
 1. 렌더링을 변경할 프로세스를 엽니다.
-1. 타깃팅된 시작 지점/작업을 열고 프레젠테이션 및 데이터 섹션으로 이동한 다음 **작업 프로필 관리**.
+1. 타깃팅된 시작 지점/작업을 열고 프레젠테이션 및 데이터 섹션으로 이동한 다음 **작업 프로필 관리**&#x200B;를 클릭합니다.
 
    [작업 프로필 관리] 대화 상자가 나타납니다.
-1. 기본 렌더링 프로필 구성을 PDF에서 HTML으로 변경하고 **확인**.
+1. 기본 렌더링 프로필 구성을 PDF에서 HTML으로 변경하고 **확인**&#x200B;을 클릭합니다.
 1. 프로세스를 확인합니다.
 1. 다른 프로세스에 대한 렌더링을 변경하려면 단계를 반복합니다.
 1. 변경한 프로세스와 관련된 애플리케이션을 배포합니다.
@@ -146,17 +146,17 @@ XDP Forms의 경우:
 
 * 기본값(새로운 &#39;기본 렌더링/제출&#39; 프로세스를 사용하여 렌더링/제출)
 
-![gen_question_b_20](assets/gen_question_b_20.png) **장치의 PDF과 데스크탑의 HTML에서 양식을 렌더링할 수 있도록 프로세스 디자이너가 수행해야 하는 작업은 무엇입니까?**
+![gen_question_b_20](assets/gen_question_b_20.png) **양식을 장치의 HTML 및 데스크톱의 PDF에서 렌더링할 수 있도록 하려면 프로세스 디자이너가 수행해야 하는 작업이 무엇입니까?**
 
 아무것도 아냐 기본 작업 프로필이 자동으로 선택되고 렌더링 모드도 자동으로 처리됩니다.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **데스크탑에서 HTML 시 양식을 렌더링하기 위해 수행해야 하는 작업은 무엇입니까?**
+![gen_question_b_20](assets/gen_question_b_20.png) **데스크톱에서 HTML 시 양식을 렌더링하려면 어떻게 해야 합니까?**
 
 사용자는 기본 프로필에 대한 HTML 라디오 단추를 선택해야 합니다.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **업그레이드가 기본 작업 프로필 동작을 변경하는 데 영향을 줍니까?**
+![gen_question_b_20](assets/gen_question_b_20.png) **기본 작업 프로필 동작 변경에 업그레이드가 영향을 줍니까?**
 
-예. 기본 작업 프로필과 연결된 이전 렌더링 및 제출 서비스가 서로 다르므로 기존 양식의 사용자 지정으로 처리됩니다. 클릭 시 **기본값 복원**, 기본 렌더링 및 제출 서비스가 대신 설정됩니다.
+예. 기본 작업 프로필과 연결된 이전 렌더링 및 제출 서비스가 서로 다르므로 기존 양식의 사용자 지정으로 처리됩니다. **기본값 복원**&#x200B;을 클릭하면 대신 기본 렌더링 및 전송 서비스가 설정됩니다.
 
 기존 렌더링 또는 제출 PDF 양식 서비스를 수정했거나 사용자 정의 서비스(예: custom1)를 만든 경우 이제 HTML 렌디션에 동일한 기능을 사용하려는 경우 새 렌더링 또는 제출 서비스(예: custom2)를 복제하고 유사한 사용자 지정을 적용해야 합니다. 이제 렌더링 또는 제출을 위한 사용자 지정1 대신 사용자 지정2 서비스를 사용하도록 XDP에 대한 작업 프로필을 수정합니다.
 

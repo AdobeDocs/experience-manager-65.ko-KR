@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## 사전 요구 사항 {#prerequisite}
 
-사용자 지정 도구 모음 작업을 만들기 전에 [클라이언트측 라이브러리 사용](/help/sites-developing/clientlibs.md) 및 [CRXDE Lite을 사용한 개발](/help/sites-developing/developing-with-crxde-lite.md).
+사용자 지정 도구 모음 작업을 만들기 전에 [클라이언트측 CRXDE Lite 사용](/help/sites-developing/clientlibs.md) 및 [라이브러리를 사용하여 개발](/help/sites-developing/developing-with-crxde-lite.md)을 숙지하십시오.
 
 ## 동작이란? {#what-is-an-action-br}
 
 적응형 양식은 양식 작성자가 옵션 세트를 구성할 수 있는 도구 모음을 제공합니다. 이러한 옵션은 적응형 양식에 대한 작업으로 정의됩니다. 패널용 도구 모음에서 편집 단추를 클릭하여 적응형 양식에서 지원하는 작업을 설정합니다.
 
-![기본 도구 모음 작업](assets/default_toolbar_actions.png)
+![기본 도구 모음 동작](assets/default_toolbar_actions.png)
 
 기본적으로 제공되는 작업 세트 외에 도구 모음에서 사용자 지정 작업을 만들 수 있습니다. 예를 들어, 양식을 제출하기 전에 사용자가 모든 적응형 양식 필드를 검토할 수 있는 작업을 추가할 수 있습니다.
 
@@ -34,26 +34,26 @@ ht-degree: 0%
 
 다음 단계에서는 사용자 지정 도구 모음 작업을 만드는 방법을 보여 줍니다. 최종 사용자는 채워진 양식을 제출하기 전에 모든 적응형 양식 필드를 검토할 수 있는 단추를 만들 수 있습니다.
 
-1. 적응형 양식에서 지원하는 모든 기본 작업이에 있음 `/libs/fd/af/components/actions` 폴더를 삭제합니다. CRXDE에서 `fileattachmentlisting` 노드: 부터 `/libs/fd/af/components/actions/fileattachmentlisting` 끝 `/apps/customaction`.
+1. 적응형 양식에서 지원하는 모든 기본 작업이 `/libs/fd/af/components/actions` 폴더에 있습니다. CRXDE에서 `fileattachmentlisting` 노드를 `/libs/fd/af/components/actions/fileattachmentlisting`에서 `/apps/customaction`(으)로 복사합니다.
 
-1. 노드를 로 복사한 후 `apps/customaction` 폴더, 노드 이름을 다음으로 변경합니다. `reviewbeforesubmit`. 또한 `jcr:title` 및 `jcr:description` 노드의 속성입니다.
+1. 노드를 `apps/customaction` 폴더에 복사한 후 노드 이름을 `reviewbeforesubmit`(으)로 바꾸십시오. 또한 노드의 `jcr:title` 및 `jcr:description` 속성을 변경합니다.
 
-   다음 `jcr:title` 속성에는 도구 모음 대화 상자에 표시되는 작업의 이름이 포함되어 있습니다. 다음 `jcr:description` 속성에는 사용자가 포인터를 작업 위로 가져가면 표시되는 추가 정보가 포함되어 있습니다.
+   `jcr:title` 속성에는 도구 모음 대화 상자에 표시되는 작업의 이름이 포함되어 있습니다. `jcr:description` 속성에는 사용자가 포인터를 동작 위에 두면 표시되는 추가 정보가 포함되어 있습니다.
 
-   ![도구 모음 사용자 정의를 위한 노드 계층](assets/action3.png)
+   ![도구 모음 사용자 지정을 위한 노드 계층 구조](assets/action3.png)
 
-1. 선택 `cq:template` 의 노드 `reviewbeforesubmit` 노드. 값: `guideNodeClass` 속성은 입니다. `guideButton` 및 변경 `jcr:title` 속성입니다.
-1. 에서 유형 속성 변경 `cq:Template` 노드. 현재 예제에서는 type 속성을 button으로 변경합니다.
+1. `reviewbeforesubmit` 노드에서 `cq:template` 노드를 선택하십시오. `guideNodeClass` 속성의 값이 `guideButton`인지 확인하고 그에 따라 `jcr:title` 속성을 변경합니다.
+1. `cq:Template` 노드의 형식 속성을 변경합니다. 현재 예제에서는 type 속성을 button으로 변경합니다.
 
    유형 값이 생성된 구성 요소 HTML에서 CSS 클래스로 추가됩니다. 사용자는 해당 CSS 클래스를 사용하여 작업의 스타일을 지정할 수 있습니다. 모바일 장치와 데스크탑 장치 모두에 대한 기본 스타일은 버튼, 제출, 재설정 및 저장 유형 값에 제공됩니다.
 
 1. 적응형 양식 편집 도구 모음 대화 상자에서 사용자 지정 작업을 선택합니다. 패널의 도구 모음에 검토 버튼이 표시됩니다.
 
-   ![사용자 지정 작업은 도구 모음에서 사용할 수 있습니다](assets/custom_action_available_in_toolbar.png) ![사용자 지정 생성 도구 모음 작업 표시](assets/action7.png)
+   ![사용자 지정 작업은 도구 모음에서 사용할 수 있습니다](assets/custom_action_available_in_toolbar.png) ![사용자 지정 생성 도구 모음 작업을 표시합니다](assets/action7.png)
 
-1. [검토] 단추에 기능을 제공하려면 init.jsp 파일에 있는 일부 JavaScript 및 CSS 코드와 서버측 코드를 추가합니다. `reviewbeforesubmit` 노드.
+1. [검토] 단추에 기능을 제공하려면 `reviewbeforesubmit` 노드 내에 있는 init.jsp 파일에 일부 JavaScript 및 CSS 코드와 서버측 코드를 추가하십시오.
 
-   에 다음 코드 추가 `init.jsp`.
+   `init.jsp`에 다음 코드를 추가하십시오.
 
    ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -111,7 +111,7 @@ ht-degree: 0%
    </div><!-- /.modal -->
    ```
 
-   에 다음 코드를 추가합니다 `ReviewBeforeSubmit.js` 파일.
+   `ReviewBeforeSubmit.js` 파일에 다음 코드를 추가합니다.
 
    ```javascript
    /*anonymous function to handle show of review before submit view */
@@ -146,7 +146,7 @@ ht-degree: 0%
    });
    ```
 
-   에 다음 코드를 추가합니다 `ReviewBeforeSubmit.css` 파일.
+   `ReviewBeforeSubmit.css` 파일에 다음 코드를 추가합니다.
 
    ```css
    .modal-list .reviewlabel {
@@ -179,9 +179,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >다음 `GuideBridge` 라이브러리가 작성 모드에서 로드되지 않았습니다. 따라서 이 사용자 지정 작업은 작성 모드에서 작동하지 않습니다.
+   >작성 모드에서 `GuideBridge` 라이브러리가 로드되지 않았습니다. 따라서 이 사용자 지정 작업은 작성 모드에서 작동하지 않습니다.
 
-   ![사용자 정의 검토 버튼 작업 데모](assets/action9.png)
+   ![사용자 지정 검토 단추의 동작 데모](assets/action9.png)
 
 ## 샘플 {#samples}
 

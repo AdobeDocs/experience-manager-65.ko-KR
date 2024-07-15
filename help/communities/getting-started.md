@@ -21,7 +21,7 @@ ht-degree: 2%
 
 AEM Communities을 사용하면 사이트 템플릿 라이브러리에서 전용 브랜드 커뮤니티 경험을 만들 수 있습니다. 포럼, 그룹, 블로그, 파일 공유, 캘린더, 활동 피드 및 확장 사용자 프로필을 웹 사이트에 통합하여 전문가, 고객 및 회사 간의 상호 작용을 촉진할 수 있습니다.
 
-다음은 를 빠르게 설정하는 방법에 대한 튜토리얼입니다. [참여 커뮤니티](/help/communities/overview.md#engagement-community) 데모 또는 개발 목적으로.
+다음은 데모 또는 개발 목적으로 [참여 커뮤니티](/help/communities/overview.md#engagement-community)를 빠르게 설정하는 방법에 대한 튜토리얼입니다.
 
 * [초기 설정](/help/communities/setup.md)
 

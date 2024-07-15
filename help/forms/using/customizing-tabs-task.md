@@ -17,14 +17,14 @@ ht-degree: 0%
 
 # 작업에 대한 탭 맞춤화 {#customizing-tabs-for-a-task}
 
-다음에 대한 탭 이름을 사용자 지정할 수 있습니다. `Start Process` 의 구성 요소 `Start Process` Uber 보기 및 `Task Details` 의 구성 요소 `ToDo` Uber 뷰입니다.
+`Start Process` Uber 보기의 `Start Process` 구성 요소와 `ToDo` Uber 보기의 `Task Details` 구성 요소에 대한 탭 이름을 사용자 지정할 수 있습니다.
 
-1. 다음 [AEM Forms 작업 공간 사용자 정의에 대한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. 값 변경 `tabname`다음에서 `translation.json` 파일.
+1. [AEM Forms 작업 영역 사용자 지정에 대한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md)를 따릅니다.
+1. `translation.json` 파일에서 `tabname`의 값을 변경합니다.
 
-   예: 변경 `/apps/ws/locales/en-US/translation.json` (영어) 를 참조하십시오.
+   예를들어 영어에 대한 `/apps/ws/locales/en-US/translation.json`을(를) 다음과 같이 변경합니다.
 
-   * 시작 프로세스에서 시작된 작업의 경우 `"startprocess" : {}` 차단합니다.
+   * 시작 프로세스에서 시작된 작업의 경우 `"startprocess" : {}` 블록에서 다음 코드 조각을 사용하십시오.
 
    ```json
    "tabname" : {
@@ -35,7 +35,7 @@ ht-degree: 0%
            }
    ```
 
-   * 할 일의 작업에 대해 `"todo" : {}` 차단합니다.
+   * 할 일 작업의 경우 `"todo" : {}` 블록의 다음 코드 조각을 사용하십시오.
 
    ```json
    "tabname" : {

@@ -18,11 +18,11 @@ ht-degree: 1%
 
 # 글로벌 문서 스토리지 디렉터리{#global-document-storage-directory}
 
-다음 *GDS(글로벌 문서 저장소)* directory 는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사용되는 디렉토리입니다. 이러한 파일에는 PDF, 정책 및 양식 템플릿이 포함되어 있습니다. 장기 파일은 여러 AEM Forms 배포의 전체 상태에서 중요한 부분입니다. 일부 또는 모든 장기 사용 문서가 손실되거나 손상되면 Forms 서버가 불안정해질 수 있습니다. 비동기 작업 호출에 대한 입력 문서는 GDS 디렉터리에도 저장되므로 요청을 처리할 수 있어야 합니다. GDS 디렉토리를 호스팅하는 파일 시스템의 안정성을 고려하는 것이 중요합니다. 사용자의 서비스 품질 및 수준에 적합한 RAID(Redundant Array of Independent Disks) 또는 기타 기술을 사용합니다.
+*GDS(전역 문서 저장소)* 디렉터리는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사용되는 디렉터리입니다. 이러한 파일에는 PDF, 정책 및 양식 템플릿이 포함되어 있습니다. 장기 파일은 여러 AEM Forms 배포의 전체 상태에서 중요한 부분입니다. 일부 또는 모든 장기 사용 문서가 손실되거나 손상되면 Forms 서버가 불안정해질 수 있습니다. 비동기 작업 호출에 대한 입력 문서는 GDS 디렉터리에도 저장되므로 요청을 처리할 수 있어야 합니다. GDS 디렉토리를 호스팅하는 파일 시스템의 안정성을 고려하는 것이 중요합니다. 사용자의 서비스 품질 및 수준에 적합한 RAID(Redundant Array of Independent Disks) 또는 기타 기술을 사용합니다.
 
 장기 보존 파일에는 중요한 사용자 정보가 포함될 수 있습니다. 이 정보는 AEM Forms API 또는 사용자 인터페이스를 사용하여 액세스할 때 특수 자격 증명이 필요할 수 있습니다. GDS 디렉토리는 운영 체제를 통해 적절하게 보호되는 것이 중요하다. 응용 프로그램 서버를 실행하는 데 사용되는 관리자 계정만 GDS 디렉터리에 대한 읽기/쓰기 액세스 권한을 가져야 합니다.
 
-GDS에 대해 안전하고 가용성이 높은 디렉토리를 선택할 수 있을 뿐만 아니라 데이터베이스에서 문서 저장을 활성화하도록 선택할 수도 있습니다. 문서 저장을 위해 AEM Forms 데이터베이스를 사용하는 경우에도 AEM Forms에는 여전히 GDS 디렉토리가 필요합니다. (참조: [데이터베이스를 문서 저장소로 사용할 때의 백업 옵션](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage).)
+GDS에 대해 안전하고 가용성이 높은 디렉토리를 선택할 수 있을 뿐만 아니라 데이터베이스에서 문서 저장을 활성화하도록 선택할 수도 있습니다. 문서 저장을 위해 AEM Forms 데이터베이스를 사용하는 경우에도 AEM Forms에는 여전히 GDS 디렉토리가 필요합니다. ([데이터베이스를 문서 저장소에 사용할 때 백업 옵션](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)을 참조하십시오.)
 
 AEM forms 응용 프로그램 데이터는 GDS 디렉토리와 AEM forms 데이터베이스에 있습니다. 다음 표에서는 데이터 및 해당 위치에 대해 설명합니다.
 
@@ -97,10 +97,10 @@ AEM forms는 서비스 컨테이너와 Java 2 Platform, Enterprise Edition(J2EE)
 * adobe-core-*[appserver]*.ear
 * adobe-core-*[appserver]*-*[OS]*.ear
 
-AEM Forms 구현에는 어셈블된 EAR 파일과 지원 파일을 AEM Forms 솔루션을 실행하려는 애플리케이션 서버에 배포하는 작업이 포함됩니다. 여러 모듈을 구성하고 조합한 경우 배포 가능한 모듈은 배포 가능한 EAR 파일 내에 패키지화됩니다. 이러한 파일을 배포하려면 *[appserver 홈]*\server\all\deploy 디렉토리입니다.
+AEM Forms 구현에는 어셈블된 EAR 파일과 지원 파일을 AEM Forms 솔루션을 실행하려는 애플리케이션 서버에 배포하는 작업이 포함됩니다. 여러 모듈을 구성하고 조합한 경우 배포 가능한 모듈은 배포 가능한 EAR 파일 내에 패키지화됩니다. 이러한 파일을 배포하려면 *[appserver 홈]*\server\all\deploy 디렉터리에 복사하십시오.
 
 모듈 및 AEM Forms 아카이브 파일은 JAR 파일로 패키지됩니다. J2EE 유형 파일이 아니므로 응용 프로그램 서버에 배포되지 않습니다. 대신 GDS 디렉터리에 복사되고 해당 위치에 대한 참조가 AEM Forms 데이터베이스에 저장됩니다. 따라서 GDS 디렉토리는 클러스터의 모든 노드 간에 공유되어야 합니다. 모든 노드는 DSC의 중앙 스토리지 디렉터리에 액세스할 수 있어야 합니다.
 
 >[!NOTE]
 >
->서비스 컨테이너를 배포하기 전에 GDS 디렉터리를 만들고 구성했는지 확인하십시오. (참조: [GDS 디렉토리 구성](global-document-storage-directory.md#configuring-the-gds-directory))
+>서비스 컨테이너를 배포하기 전에 GDS 디렉터리를 만들고 구성했는지 확인하십시오. ([GDS 디렉터리 구성](global-document-storage-directory.md#configuring-the-gds-directory)을 참조하십시오.)

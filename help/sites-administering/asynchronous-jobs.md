@@ -24,7 +24,7 @@ ht-degree: 84%
 * 원격 Experience Manager 배포에서 임계값을 초과하는 자산 가져오기
 * Live Copy 롤아웃
 
-다음에서 비동기 작업의 상태를 볼 수 있습니다. **[!UICONTROL 비동기 작업 상태]** 다음 위치에 대시보드: **전역 탐색** > **도구** > **작업** > **작업**.
+**전역 탐색** > **도구** > **작업** > **작업**&#x200B;의 **[!UICONTROL 비동기 작업 상태]** 대시보드에서 비동기 작업 상태를 볼 수 있습니다.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ AEM이 비동기 방식으로 작업을 처리할 때마다 [받은 편지함](/
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. 설명 및 로그 등 추가 세부 정보를 보려면 작업을 선택하고 **[!UICONTROL 열기]** 을 클릭합니다.
+1. 설명 및 로그 등 추가 세부 정보를 보려면 작업을 선택하고 도구 모음에서 **[!UICONTROL 열기]**&#x200B;를 클릭합니다.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -132,8 +132,8 @@ AEM에 대한 자산, 페이지 또는 참조의 임계값 수를 구성하여 �
 >[!MORELIKETHIS]
 >
 >* [페이지 생성 및 구성](/help/sites-authoring/managing-pages.md)
->* [라이브 카피 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
->* [Experience Manager에서 이메일 구성](/help/sites-administering/notification.md).
->* [에셋 메타데이터 가져오기](/help/assets/metadata.md#import-metadata).
+>* [라이브 카피 만들기 및 동기화](/help/sites-administering/msm-livecopy.md)
+>* [Experience Manager에서 전자 메일을 구성](/help/sites-administering/notification.md).
+>* [자산 메타데이터 가져오기](/help/assets/metadata.md#import-metadata).
 >* [자산 메타데이터 내보내기](/help/assets/metadata.md#export-metadata).
 >* [연결된 자산을 사용하여 원격 배포에서 DAM 자산을 공유할 수 있습니다](/help/assets/use-assets-across-connected-assets-instances.md).

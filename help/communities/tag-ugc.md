@@ -38,11 +38,11 @@ UGC(사용자 생성 컨텐츠) 태깅은 커뮤니티 구성원이 다른 구�
 
 ## 태그 관리 {#administering-tags}
 
-다음을 참조하십시오 [태그 관리](../../help/sites-administering/tags.md#tagging-console) 태그 네임스페이스 및 분류를 만들고 관리할 수 있습니다.
+태그 네임스페이스 및 분류법을 만들고 관리하려면 [태그 관리](../../help/sites-administering/tags.md#tagging-console)를 참조하십시오.
 
-다음을 참조하십시오 [태그 기본 사항](tag.md) 개발자 정보.
+개발자 정보는 [Tag Essentials](tag.md)을(를) 참조하십시오.
 
-다음을 참조하십시오 [소셜 태그 클라우드 사용](tagcloud.md) 적용된 태그를 사용하여 게시된 UGC를 쉽게 검색할 수 있도록 소셜 태그 클라우드 구성 요소를 페이지에 추가하는 경우
+적용된 태그를 사용하여 게시된 UGC를 쉽게 검색할 수 있도록 페이지에 소셜 태그 클라우드 구성 요소를 추가하려면 [소셜 태그 클라우드 사용](tagcloud.md)을 참조하십시오.
 
 ### 태그 권한 {#tag-permissions}
 
@@ -50,8 +50,8 @@ UGC(사용자 생성 컨텐츠) 태깅은 커뮤니티 구성원이 다른 구�
 
 태그는 게시 환경의 UGC에 적용되므로 커뮤니티 구성원이 적용할 태그를 선택할 수 있으려면 읽기 권한이 활성화되어 있어야 합니다.
 
-다음을 참조하십시오 [태그 권한 설정](../../help/sites-administering/tags.md#setting-tag-permissions).
+[태그 권한 설정](../../help/sites-administering/tags.md#setting-tag-permissions)을 참조하세요.
 
-다음은 관리자가 읽기 권한을에 적용할 때 CRXDE에 표시되는 방식입니다 `/etc/tag/discussions` 그룹용 `Community Engage Members`.
+다음은 관리자가 `Community Engage Members` 그룹의 `/etc/tag/discussions`에 대한 읽기 권한을 적용할 때 CRXDE에 표시되는 방식입니다.
 
-![태그 권한](assets/tag-permissions.png)
+![tag-permissions](assets/tag-permissions.png)

@@ -18,7 +18,7 @@ ht-degree: 9%
 
 # We.Retail에서 응답형 레이아웃 시험 사용{#trying-out-responsive-layout-in-we-retail}
 
-모든 We.Retail 페이지는 레이아웃 컨테이너 구성 요소를 사용하여 응답형 디자인을 구현합니다. 레이아웃 컨테이너는 응답형 그리드 내에 구성 요소를 배치할 수 있도록 해 주는 단락 시스템을 제공합니다. 이 격자를 사용하면 디바이스/창 크기 및 포맷에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 **레이아웃** 페이지 편집기의 모드. 디바이스에 따라 응답형 레이아웃을 만들고 편집할 수 있습니다.
+모든 We.Retail 페이지는 레이아웃 컨테이너 구성 요소를 사용하여 응답형 디자인을 구현합니다. 레이아웃 컨테이너는 응답형 그리드 내에 구성 요소를 배치할 수 있도록 해 주는 단락 시스템을 제공합니다. 이 격자를 사용하면 디바이스/창 크기 및 포맷에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 페이지 편집기의 **레이아웃** 모드와 함께 사용됩니다. 이 모드에서는 장치에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
 
 ## 시험 사용 {#trying-it-out}
 
@@ -26,7 +26,7 @@ ht-degree: 9%
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. 다음으로 전환 **미리 보기** 을 클릭하여 웹 사이트의 방문자에게 렌더링되는 대로 페이지를 볼 수 있습니다. 기사 콘텐츠까지 아래로 스크롤 *노르웨이 북부의 알로하 스피리츠*.
+1. 웹 사이트의 방문자에게 페이지가 렌더링되는 대로 보려면 **미리 보기**(으)로 전환하십시오. 문서 *노르웨이에 있는 알로하 증류주*&#x200B;의 내용으로 아래로 스크롤합니다.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -46,4 +46,4 @@ ht-degree: 9%
 
 ## 추가 정보 {#further-information}
 
-자세한 내용은 작성 문서를 참조하십시오 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) 또는 관리자 문서 [레이아웃 컨테이너 및 레이아웃 모드 구성](/help/sites-administering/configuring-responsive-layout.md) 전체 기술 세부 정보.
+자세한 내용은 작성 문서 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) 또는 관리자 문서 [레이아웃 컨테이너 및 레이아웃 모드 구성](/help/sites-administering/configuring-responsive-layout.md)을 참조하십시오.

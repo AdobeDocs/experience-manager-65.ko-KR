@@ -123,11 +123,11 @@ AEM Headless 여정을 시작해 주셔서 감사합니다! 지금까지 이 문
 * Headless가 필요한 이유와 시점을 이해할 수 있습니다.
 * 높은 수준에서 Headless 개념이 어떻게 사용되는지, 어떻게 상호 연관되는지를 파악할 수 있습니다.
 
-이 지식을 기반으로 다음 문서를 검토하여 AEM Headless 여정을 계속하십시오 [AEM Headless 시작하기](getting-started.md) 여기에서 필요한 도구를 설정하는 방법과 AEM이 headless 콘텐츠 게재 및 그 사전 요구 사항에 접근하는 방법에 대해 고민하는 방법을 알아봅니다.
+이 지식을 기반으로 다음 문서인 [AEM Headless 시작하기](getting-started.md)를 검토하여 AEM Headless 여정을 계속하십시오. 여기에서는 필요한 도구를 설정하는 방법과 AEM이 Headless 콘텐츠 게재 및 그 전제 조건에 접근하는 방법에 대해 생각하는 방법에 대해 알아보게 됩니다.
 
 ## 추가 리소스 {#additional-resources}
 
-문서를 검토하여 Headless 개발 여정의 다음 부분으로 넘어가는 것이 좋습니다 [AEM Headless 시작하기](getting-started.md): 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 headless 여정에서 계속 사용할 필요는 없습니다.
+다음 문서인 [AEM Headless 시작하기](getting-started.md)를 검토하여 Headless 개발 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
 * [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
 * [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

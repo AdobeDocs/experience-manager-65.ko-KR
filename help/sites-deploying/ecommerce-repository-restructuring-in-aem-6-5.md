@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # AEM 6.5의 E-Commerce 저장소 재구성{#e-commerce-repository-restructuring-in-aem}
 
-상위에 설명된 대로 [AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md) AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM E-Commerce 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
+AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restructuring.md) 페이지에 설명된 대로 AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM E-Commerce 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
 
 ## 6.5 업그레이드 포함 {#with-upgrade}
 
@@ -35,7 +35,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>다음을 사용할 수 있습니다. <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">지연 마이그레이션</a> e-Commerce 데이터를 마이그레이션하는 작업입니다.</p> <p>다음 단계를 수행합니다.</p>
+   <td><p><a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">지연 마이그레이션</a> 작업을 사용하여 E-Commerce 데이터를 마이그레이션할 수 있습니다.</p> <p>다음 단계를 수행합니다.</p>
     <ul>
      <li>새 위치를 가리키도록 이전 위치에 대한 참조를 조정합니다.</li>
      <li>콘텐츠를 이전 위치에서 새 위치로 이동</li>
@@ -51,7 +51,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>

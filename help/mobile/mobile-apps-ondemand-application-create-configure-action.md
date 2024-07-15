@@ -32,18 +32,18 @@ ht-degree: 0%
 >
 >대시보드 는 앱의 콘텐츠, 메타데이터 및 AEM Mobile 온디맨드 연결 상태에 대한 개요를 제공하는 유용한 타일 시리즈입니다.
 >
->다음을 참조하십시오 [AEM Mobile 애플리케이션 대시보드](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 을 참조하십시오.
+>자세한 내용은 [AEM Mobile 응용 프로그램 대시보드](/help/mobile/mobile-apps-ondemand-application-dashboard.md)를 참조하세요.
 
 **온디맨드 앱을 만들려면:**
 
-1. 선택 **모바일** 사이드 레일에서.
-1. 선택 **앱** 탐색에서.
-1. 클릭 **만들기** 및 선택 **앱** 드롭다운에서 을 클릭합니다.
-1. 모바일 앱 템플릿을 선택하고 **다음**.
-1. 다음과 같은 앱 속성 입력 **제목**, **이름**, **설명**.
+1. 측면 레일에서 **모바일**&#x200B;을(를) 선택합니다.
+1. 탐색에서 **앱**&#x200B;을 선택합니다.
+1. **만들기**&#x200B;를 클릭하고 드롭다운에서 **앱**&#x200B;을 선택합니다.
+1. 모바일 앱 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다.
+1. **제목**, **이름**, **설명**&#x200B;과 같은 앱 속성을 입력하십시오.
 1. **다음**&#x200B;을 클릭합니다.
-1. 알려진 경우 클라우드 구성 세부 정보를 입력하고 그렇지 않은 경우 을 클릭합니다. **만들기**.
-1. 클릭 **완료** 카탈로그에서 새 AEM Mobile 앱을 봅니다.
+1. 알려진 경우 클라우드 구성 세부 정보를 입력하고 그렇지 않으면 **만들기**&#x200B;를 클릭하십시오.
+1. 카탈로그에서 새 AEM Mobile 앱을 보려면 **완료**&#x200B;를 클릭하세요.
 
 ![chlimage_1](assets/chlimage_1.gif)
 
@@ -64,19 +64,19 @@ ht-degree: 0%
 
 애플리케이션 대시보드에서 온디맨드 앱을 만들면 다음 단계는 앱을 클라우드 구성에 연결하는 것입니다.
 
-다음을 참조하십시오 [앱을 클라우드 구성에 연결](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) 을 참조하십시오.
+자세한 내용은 [클라우드 구성에 앱 연결](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)을 참조하십시오.
 
 ### 시작하기 {#getting-ahead}
 
-온디맨드 애플리케이션을 만들어 해당 앱을 클라우드 구성에 연결하는 방법에 익숙해지면 다음을 참조하십시오. [컨텐츠 관리 작업](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+온디맨드 응용 프로그램을 만들어 해당 앱을 클라우드 구성에 연결하는 방법을 잘 알고 있으면 [콘텐츠 관리 작업](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)을 참조하세요.
 
-**컨텐츠 관리 작업** 에는 다음 컨텐츠 생성 및 관리 작업이 포함됩니다.
+**콘텐츠 관리 작업**&#x200B;에는 다음 콘텐츠를 만들고 관리하는 작업이 포함됩니다.
 
 * [문서 관리](/help/mobile/mobile-on-demand-managing-articles.md)
 * [배너 관리](/help/mobile/mobile-on-demand-managing-banners.md)
 * [컬렉션 관리](/help/mobile/mobile-on-demand-managing-collections.md)
 * [공유 리소스 업로드](/help/mobile/mobile-on-demand-shared-resources.md)
-* [게시 취소 컨텐츠](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish 컨텐츠 게시 취소](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 관리자 및 개발자의 역할과 책임에 대해 알아보려면 아래 리소스를 참조하십시오.
 

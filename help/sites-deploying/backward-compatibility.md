@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->호환성 패키지의 범위에 포함되지 않은 콘텐츠 및 구성 변경 사항 목록은 을 참조하십시오. [AEM의 저장소 재구성](/help/sites-deploying/repository-restructuring.md).
+>호환성 패키지의 범위에 포함되지 않은 콘텐츠 및 구성 변경 사항 목록은 [AEM의 저장소 재구성](/help/sites-deploying/repository-restructuring.md)을 참조하십시오.
 
 Adobe Experience Manager(AEM) 6.5에서는 모든 기능이 이전 버전과의 호환성을 염두에 두고 개발되었습니다.
 
@@ -37,9 +37,9 @@ Adobe Experience Manager(AEM) 6.5에서는 모든 기능이 이전 버전과의 
 >
 >호환성 패키지는 AEM 6.5 호환에 필요한 개발을 지연하기 위한 임시 솔루션일 뿐입니다. Adobe은 업그레이드 직후 개발을 통해 호환성 문제를 해결할 수 없는 경우 마지막 옵션으로만 이 옵션을 권장합니다. Adobe 또한 6.5 기반 사용자 지정 개발을 진행하고 전체 6.5 기능을 사용하려면 기본 모드로 전환하고 호환성 패키지를 제거하는 것이 좋습니다.
 
-![사세](assets/sase.png)
+![사례](assets/sase.png)
 
-호환성 패키지에는 두 가지 모드가 있습니다. **라우팅 활성화됨** 및 **라우팅 사용 안 함**.
+호환성 패키지에 두 가지 모드가 있습니다. **라우팅 사용** 및 **라우팅 사용 안 함**.
 
 이렇게 하면 AEM 6.5를 다음 세 가지 모드로 실행할 수 있습니다.
 
@@ -53,15 +53,15 @@ Adobe Experience Manager(AEM) 6.5에서는 모든 기능이 이전 버전과의 
 
 호환성 모드는 이전 버전과 호환되지 않는 인터페이스의 사용자 지정을 사용하는 고객을 위한 것입니다. 이를 통해 AEM을 호환성 모드에서 실행하고 일부 사용자 지정 코드와 호환되지 않는 새 AEM 기능에 대해 필요한 사용자 지정 개발을 연기할 수 있습니다.
 
-**레거시 모드: 라우팅이 비활성화된 호환 패키지 설치**
+**레거시 모드: 라우팅이 비활성화된 호환성 패키지가 설치됨**
 
 레거시 모드는 호환성 패키지에서 이전된 AEM의 기존 코드 또는 더 이상 사용되지 않는 코드를 기반으로 하는 사용자 지정 인터페이스를 사용하는 고객을 위한 것입니다.
 
-![삽테](assets/sapte.png)
+![sapte](assets/sapte.png)
 
 ## 설정 방법 {#how-to-set-up}
 
-다음 **6.5용 AEM 6.4 호환성 팩** 는 패키지 관리자를 사용하여 패키지로 설치할 수 있습니다. 다음을 다운로드할 수 있습니다. [소프트웨어 배포의 AEM 6.4 호환성 팩 6.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) 사이트.
+패키지 관리자를 사용하여 **6.5**&#x200B;용 AEM 6.4 호환성 팩을 패키지로 설치할 수 있습니다. 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) 사이트에서 [AEM 6.4 Compatibility Pack for 6.5를 다운로드할 수 있습니다.
 
 호환성 패키지가 설치되면 아래와 같이 OSGI 구성에서 스위치를 사용하여 라우팅을 활성화하거나 비활성화할 수 있습니다.
 

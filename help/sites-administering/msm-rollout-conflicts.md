@@ -38,7 +38,7 @@ ht-degree: 20%
 
 ### 예시 상황 {#example-scenario}
 
-다음 섹션에서는 새 페이지의 예를 사용해야 합니다 `b`블루프린트 및 라이브 카피 분기 모두에 수동으로 만들어져서 다양한 충돌 해결 방법을 보여 줍니다.
+다음 섹션에서는 블루프린트 및 라이브 카피 분기 모두에 수동으로 생성된 새 페이지 `b`의 예를 사용하여 다양한 충돌 해결 방법을 설명해야 합니다.
 
 * 블루프린트: `/b`
 
@@ -46,11 +46,11 @@ ht-degree: 20%
 
 * live copy: `/b`
 
-  라이브 카피 분기에 수동으로 생성된 페이지. 한 개의 하위 페이지, `lc-level-1`.
+  Live Copy 분기에 수동으로 생성된 페이지입니다. 하위 페이지 `lc-level-1`이(가) 한 개 있습니다.
 
-   * 게시에서 다음으로 활성화됨 `/b`을 추가합니다.
+   * 게시에서 하위 페이지와 함께 `/b`(으)로 활성화되었습니다.
 
-**롤아웃 이전**
+**롤아웃 전**
 
 <table>
  <tbody>
@@ -67,7 +67,7 @@ ht-degree: 20%
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code> /lc-level-1</code><br /> <br /> (라이브 카피 분기에 수동으로 생성됨)<br /> </td>
-   <td><code> /lc-level-1</code><br /> <br /> (페이지 콘텐츠 포함)<br /> 라이브 카피 분기에 수동으로 생성된 하위 수준 1)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (라이브 카피 분기에 수동으로 생성된 <br /> 하위 수준 1의 페이지 콘텐츠 포함)</td>
   </tr>
  </tbody>
 </table>
@@ -76,15 +76,15 @@ ht-degree: 20%
 
 롤아웃 관리자를 사용하여 충돌 관리를 활성화 또는 비활성화할 수 있습니다.
 
-이 작업은 다음을 사용하여 수행됩니다. [OSGi 구성](/help/sites-deploying/configuring-osgi.md) / **일별 CQ WCM 롤아웃 관리자**:
+이 작업은 **일 CQ WCM 롤아웃 관리자**&#x200B;의 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 사용하여 수행됩니다.
 
-* **수동으로 생성된 페이지와의 충돌 처리**:
+* **수동으로 만든 페이지와의 충돌 처리**:
 
   ( `rolloutmgr.conflicthandling.enabled`)
 
   롤아웃 관리자가 블루프린트에 존재하는 이름으로 라이브 카피에 생성된 페이지의 충돌을 처리해야 하는 경우 true로 설정합니다.
 
-AEM이 [충돌 관리가 비활성화되었을 때 실행되는 사전 정의된 비헤이비어](#behavior-when-conflict-handling-deactivated).
+충돌 관리가 비활성화되었을 때 AEM에 [사전 정의된 동작이 있습니다](#behavior-when-conflict-handling-deactivated).
 
 ## 충돌 핸들러 {#conflict-handlers}
 
@@ -96,31 +96,31 @@ AEM은 다음을 제공합니다.
 
    * `ResourceNameRolloutConflictHandler`
 
-* 구현 가능성 [사용자 지정 처리기](#customized-handlers).
+* [사용자 지정된 처리기](#customized-handlers)를 구현할 수 있습니다.
 * 각 개별 처리기의 우선 순위를 설정할 수 있는 서비스 순위 메커니즘. 순위가 가장 높은 서비스가 사용됩니다.
 
 ### 기본 충돌 핸들러 {#default-conflict-handler}
 
 기본 충돌 처리기는
 
-* 이(가) 호출됨 `ResourceNameRolloutConflictHandler`
+* `ResourceNameRolloutConflictHandler`(으)로 호출됨
 
 * 이 핸들러를 사용하면 블루프린트 페이지가 우선 순위를 갖습니다.
-* 이 처리기의 서비스 순위가 낮게 설정되어 있습니다(즉, 의 기본값 미만). `service.ranking` 속성)을 사용하는 경우 사용자 지정된 처리기에 더 높은 순위가 필요하다고 가정합니다. 그러나 순위는 유연성을 보장하기 위한 절대적인 최소 조건이 아닙니다.
+* 이 처리기의 서비스 순위는 낮게 설정되어 있습니다(즉, `service.ranking` 속성의 기본값보다 낮음). 맞춤화된 처리기에 더 높은 순위가 필요하다고 가정하기 때문입니다. 그러나 순위는 유연성을 보장하기 위한 절대적인 최소 조건이 아닙니다.
 
-이 충돌 핸들러를 사용하면 블루프린트가 우선 순위를 갖습니다. 라이브 카피 페이지 `/b` 라이브 카피 분기 내에서 다음으로 이동 `/b_msm_moved`.
+이 충돌 핸들러를 사용하면 블루프린트가 우선 순위를 갖습니다. Live Copy 페이지 `/b`이(가) Live Copy 분기 내에서 `/b_msm_moved`(으)로 이동되었습니다.
 
 * live copy: `/b`
 
-  (라이브 카피 내에서) 로 이동합니다. `/b_msm_moved`. 이는 백업 역할을 하며 콘텐츠가 손실되지 않도록 합니다.
+  Live Copy 내에서 `/b_msm_moved`(으)로 이동됩니다. 이는 백업 역할을 하며 콘텐츠가 손실되지 않도록 합니다.
 
    * `lc-level-1`은 이동하지 않습니다.
 
 * 블루프린트: `/b`
 
-  라이브 카피 페이지로 롤아웃됨 `/b`.
+  Live Copy 페이지 `/b`(으)로 롤아웃되었습니다.
 
-   * `bp-level-1` 는 라이브 카피로 롤아웃됩니다.
+   * `bp-level-1`이(가) Live Copy로 롤아웃되었습니다.
 
 **롤아웃 이후**
 
@@ -130,8 +130,8 @@ AEM은 다음을 제공합니다.
    <td><strong>롤아웃 이후의 블루프린트</strong></td>
    <td><strong>롤아웃 이후의 라이브 카피</strong><br /> </td>
    <td></td>
-   <td><strong>롤아웃 이후의 라이브 카피</strong><br /> <br /> <br /> </td>
-   <td><strong>롤아웃 이후 게시</strong><br /> <br /> </td>
+   <td><strong>롤아웃 이후의 Live Copy</strong><br /> <br /> <br /> </td>
+   <td><strong>롤아웃 후 게시</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>
@@ -158,23 +158,23 @@ AEM은 다음을 제공합니다.
 
 * 요구 사항에 따라 이름이 지정됩니다.
 * 요구 사항에 따라 개발/구성됩니다. 예를 들어 라이브 카피 페이지가 우선 순위를 갖도록 핸들러를 개발할 수 있습니다.
-* 를 사용하여 구성되도록 설계되었습니다. [OSGi 구성](/help/sites-deploying/configuring-osgi.md); 특히
+* [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 사용하여 구성되도록 설계되었습니다. 특히
 
    * **서비스 순위**:
 
-     다른 충돌 처리기와 관련된 순서를 정의합니다( `service.ranking`).
+     다른 충돌 처리기(`service.ranking`)와 관련된 순서를 정의합니다.
 
      기본값은 0입니다.
 
 ### 충돌 처리가 비활성화되었을 때 실행되는 비헤이비어 {#behavior-when-conflict-handling-deactivated}
 
-수동으로 설정하는 경우 [충돌 처리 비활성화](#rollout-manager-and-conflict-handling)를 선택하면 AEM은 충돌이 발생한 페이지에 어떤 조치도 취하지 않습니다(충돌이 발생하지 않은 페이지는 예상대로 롤아웃됨).
+수동으로 [충돌 처리를 비활성화](#rollout-manager-and-conflict-handling)하면 AEM은 충돌이 발생한 페이지에 어떤 조치도 취하지 않습니다(충돌이 발생하지 않은 페이지는 예상대로 롤아웃됨).
 
 >[!CAUTION]
 >
 >AEM은 이 동작을 명시적으로 구성해야 하므로 충돌이 무시되고 있음을 표시하지 않으므로 필수 동작이라고 가정합니다.
 
-이 경우 라이브 카피가 사실상 우선됩니다. 블루프린트 페이지 `/b` 은 복사되지 않으며 라이브 카피 페이지 `/b` 그대로 두었습니다.
+이 경우 라이브 카피가 사실상 우선됩니다. 블루프린트 페이지 `/b`은(는) 복사되지 않으며 Live Copy 페이지 `/b`은(는) 그대로 유지됩니다.
 
 * 블루프린트: `/b`
 
@@ -191,8 +191,8 @@ AEM은 다음을 제공합니다.
  <tbody>
   <tr>
    <td><strong>롤아웃 이후의 블루프린트</strong></td>
-   <td><strong>롤아웃 이후의 라이브 카피</strong><br /> <br /> <br /> </td>
-   <td><strong>롤아웃 이후 게시</strong><br /> <br /> </td>
+   <td><strong>롤아웃 이후의 Live Copy</strong><br /> <br /> <br /> </td>
+   <td><strong>롤아웃 후 게시</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>

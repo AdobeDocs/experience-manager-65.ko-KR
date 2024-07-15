@@ -24,22 +24,22 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. (참조: [다른 채널을 위한 라이브 카피 만들기](/help/sites-administering/msm-livecopy.md).)
+>기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. [다른 채널용 Live Copy 만들기](/help/sites-administering/msm-livecopy.md)를 참조하세요.
 >
->AEM 개발자는 새 디바이스 그룹을 만들 수 있습니다. (참조: [장치 그룹 필터 만들기](/help/sites-developing/groupfilters.md).)
+>AEM 개발자는 새 디바이스 그룹을 만들 수 있습니다. [장치 그룹 필터 만들기](/help/sites-developing/groupfilters.md)를 참조하세요.
 
 다음 절차를 사용하여 모바일 페이지를 작성하십시오.
 
 1. 전역 탐색에서 **Sites** 콘솔을 엽니다.
-1. 페이지 열기 **We.Retail** > **미국** > **영어**.
+1. **We.Retail** > **미국** > **영어** 페이지를 엽니다.
 
-1. 다음으로 전환 **미리 보기** 모드.
+1. **미리 보기** 모드로 전환합니다.
 1. 페이지 맨 위에서 장치 아이콘을 클릭하여 원하는 에뮬레이터로 전환합니다.
 1. 구성 요소 브라우저에서 페이지로 구성 요소를 드래그하여 놓습니다.
 
 페이지는 다음과 유사합니다.
 
-![mobileipademu](assets/mobileipademu.png)
+![mobileidapdemu](assets/mobileipademu.png)
 
 >[!NOTE]
 >

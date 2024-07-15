@@ -1,5 +1,5 @@
 ---
-title: AEM 개발 - 지침 및 우수 사례
+title: AEM 개발 - 가이드라인 및 모범 사례
 description: AEM에서 개발하기 위한 지침 및 모범 사례
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,11 +12,11 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# AEM 개발 - 지침 및 우수 사례{#aem-development-guidelines-and-best-practices}
+# AEM 개발 - 가이드라인 및 모범 사례{#aem-development-guidelines-and-best-practices}
 
 ## 템플릿 및 구성 요소 사용 지침 {#guidelines-for-using-templates-and-components}
 
@@ -51,11 +51,11 @@ Adobe Experience Manager(AEM) 구성 요소와 템플릿은 강력한 툴킷으�
 
 자체 구성 요소를 만들거나 기존 구성 요소를 사용자 정의할 때 기존 정의를 재사용하는 것이 가장 쉽고 안전한 경우가 많습니다. 오류 처리기와 같은 동일한 원칙이 AEM 내의 다른 요소에도 적용됩니다.
 
-이는 기존의 정의를 복사하고 오버레이하여 수행할 수 있다. 즉, 정의 복사 위치 `/libs` 끝 `/apps/<your-project>`. 에서 이 새로운 정의 `/apps`는 요구 사항에 따라 업데이트할 수 있습니다.
+이는 기존의 정의를 복사하고 오버레이하여 수행할 수 있다. 즉, 정의를 `/libs`에서 `/apps/<your-project>`(으)로 복사하는 것입니다. `/apps`의 이 새 정의는 요구 사항에 따라 업데이트할 수 있습니다.
 
 >[!NOTE]
 >
->다음을 참조하십시오 [오버레이 사용](/help/sites-developing/overlays.md) 을 참조하십시오.
+>자세한 내용은 [오버레이 사용](/help/sites-developing/overlays.md)을 참조하십시오.
 
 예:
 
@@ -63,12 +63,12 @@ Adobe Experience Manager(AEM) 구성 요소와 템플릿은 강력한 툴킷으�
 
   여기에는 구성 요소 정의 오버레이가 포함됩니다.
 
-   * 에서 구성 요소 폴더 만들기 `/apps/<website-name>/components/<MyComponent>` 기존 구성 요소를 복사하여:
+   * 기존 구성 요소를 복사하여 `/apps/<website-name>/components/<MyComponent>`에 구성 요소 폴더를 만듭니다.
 
       * 예를 들어 텍스트 구성 요소 사본을 사용자 정의하려면 다음을 수행합니다.
 
          * 변환 전: `/libs/foundation/components/text`
-         * 끝 `/apps/myProject/components/text`
+         * `/apps/myProject/components/text`에
 
 * [오류 핸들러로 표시된 페이지 사용자 지정](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
@@ -77,18 +77,18 @@ Adobe Experience Manager(AEM) 구성 요소와 템플릿은 강력한 툴킷으�
    * 저장소에서 하나 이상의 기본 스크립트를 복사합니다.
 
       * 변환 전: `/libs/sling/servlet/errorhandler/`
-      * 끝 `/apps/sling/servlet/errorhandler/`
+      * `/apps/sling/servlet/errorhandler/`에
 
 >[!CAUTION]
 >
->**금지** 의 모든 항목 변경 `/libs` 경로.
+>**`/libs` 경로에서 아무 것도 변경하지 마십시오**.
 >
->그 이유는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수도 있음).
+>그 이유는 다음에 인스턴스를 업그레이드할 때 `/libs`의 콘텐츠가 덮어쓰기되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수도 있음).
 >
 >구성 및 기타 변경 사항의 경우:
 >
->1. 항목 복사 위치 `/libs` 끝 `/apps`
->1. 다음 범위 내에서 변경 `/apps`
+>1. `/libs`의 항목을 `/apps`(으)로 복사
+>1. `/apps` 내에서 변경
 
 ## JCR 쿼리를 사용해야 하는 경우와 사용하지 말아야 하는 경우 {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
@@ -109,14 +109,14 @@ JCR 쿼리는 올바르게 사용할 경우 강력한 도구입니다. 적합한
 
 >[!NOTE]
 >
->를 사용하는 경우 [Query Builder](/help/sites-developing/querybuilder-api.md)Query Builder가 후드에서 JCR 쿼리를 생성하므로 JCR 쿼리를 사용합니다.
+>[Query Builder](/help/sites-developing/querybuilder-api.md)를 사용하는 경우 Query Builder가 후드에서 JCR 쿼리를 생성하므로 JCR 쿼리를 사용합니다.
 >
 
 ## 보안 고려 사항 {#security-considerations}
 
 >[!NOTE]
 >
->또한 을(를) 참조하는 것이 좋습니다. [보안 검사 목록](/help/sites-administering/security-checklist.md).
+>[보안 검사 목록](/help/sites-administering/security-checklist.md)을 참조하는 것도 좋습니다.
 
 ### JCR(저장소) 세션 {#jcr-repository-sessions}
 
@@ -132,7 +132,7 @@ XSS(크로스 사이트 스크립팅)를 사용하면 공격자가 다른 사용
 
 AEM은 출력 시 사용자가 제공한 모든 콘텐츠를 필터링하는 원칙을 적용합니다. XSS 예방은 개발 및 테스트 모두에서 가장 높은 우선순위가 부여됩니다.
 
-또한 다음과 같은 웹 애플리케이션 방화벽도 [apache용 mod_security](https://modsecurity.org)를 사용하면 배포 환경의 보안을 안정적으로 중앙에서 제어할 수 있으며 이전에 탐지되지 않은 교차 사이트 스크립팅 공격으로부터 보호할 수 있습니다.
+또한 Apache용 [mod_security](https://modsecurity.org)과(와) 같은 웹 응용 프로그램 방화벽은 배포 환경의 보안에 대한 신뢰할 수 있는 중앙 집중식 제어를 제공하고 이전에 탐지되지 않은 교차 사이트 스크립팅 공격으로부터 보호할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -159,10 +159,10 @@ XSSAPI 치트 시트.
 
 AEM에 대해 오류 페이지를 사용자 지정할 수 있습니다. 인스턴스가 내부 서버 오류에 대한 슬링 추적을 표시하지 않도록 하는 것이 좋습니다.
 
-다음을 참조하십시오 [오류 핸들러로 표시된 오류 페이지 사용자 지정](/help/sites-developing/customizing-errorhandler-pages.md) 전체 세부 정보.
+자세한 내용은 [오류 처리기에 표시된 오류 페이지 사용자 지정](/help/sites-developing/customizing-errorhandler-pages.md)을 참조하십시오.
 
 ### Java™ 프로세스에서 파일 열기 {#open-files-in-the-java-process}
 
-AEM은 많은 파일에 액세스할 수 있으므로 [java™ 프로세스용 파일 열기](/help/sites-deploying/configuring.md#open-files-in-the-java-process) AEM에 대해 명시적으로 구성되어야 합니다.
+AEM은 많은 파일에 액세스할 수 있으므로 AEM에 대해 [열린 Java™ 프로세스에 대한 파일 수](/help/sites-deploying/configuring.md#open-files-in-the-java-process)을 명시적으로 구성하는 것이 좋습니다.
 
 이 문제를 최소화하려면 개발에서 열려 있는 파일이 가능할 때(의미 있게) 올바르게 닫혀 있는지 확인해야 합니다.

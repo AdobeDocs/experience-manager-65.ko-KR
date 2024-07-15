@@ -35,25 +35,25 @@ ht-degree: 2%
 설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
 * 커뮤니티 사이트에 주요 콘텐츠 추가.
-* 에 대한 구성 설정 `Featured Content` 구성 요소.
+* `Featured Content` 구성 요소에 대한 구성 설정입니다.
 
 ## 페이지에 주요 콘텐츠 추가 {#adding-featured-content-to-a-page}
 
-을(를) 추가하려면 `Featured Content` 구성 요소를 페이지에 추가하려면 작성자 모드에서 구성 요소 브라우저를 사용하여
+작성자 모드에서 페이지에 `Featured Content` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 찾습니다
 
 * `Communities / Featured Content`
 
 그리고 추천 컨텐츠가 나타나야 하는 페이지에 드래그하여 놓습니다.
 
-필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](basics.md).
+필요한 정보는 [커뮤니티 구성 요소 기본 사항](basics.md)을 참조하세요.
 
-다음의 경우 [필수 클라이언트측 라이브러리](essentials-featured.md#essentials-for-client-side) 포함됩니다. 이렇게 하면 `Featured Content` 구성 요소가 표시됩니다.
+[필수 클라이언트측 라이브러리](essentials-featured.md#essentials-for-client-side)가 포함된 경우 `Featured Content` 구성 요소는 다음과 같이 표시됩니다.
 
 ![featuredcontent](assets/featuredcontent.png)
 
 ## 주요 콘텐츠 구성 {#configuring-featured-content}
 
-배치된 을(를) 선택합니다 `Featured Content` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 `Featured Content` 구성 요소를 선택하여 편집 대화 상자를 여는 `Configure` 아이콘에 액세스하고 선택합니다.
 
 ![새로 구성](assets/configure-new.png)
 
@@ -61,15 +61,15 @@ ht-degree: 2%
 
 ### 설정 탭 {#settings-tab}
 
-아래 **[!UICONTROL 설정]** 탭에서 기능을 수행할 콘텐츠를 식별합니다.
+**[!UICONTROL 설정]** 탭에서 사용할 콘텐츠를 식별합니다.
 
 * **[!UICONTROL 표시 이름]**
 
-  추천 콘텐츠 목록에 대한 제목입니다. 예를 들어, `Featured Questions` 또는 `Featured Ideas`. 기본값은 입니다 `Featured Content` 비워 두면
+  추천 콘텐츠 목록에 대한 제목입니다. 예: `Featured Questions` 또는 `Featured Ideas`. 비워 두면 기본값은 `Featured Content`입니다.
 
-* **[!UICONTROL 특별 포함된 컨텐츠의 위치]**
+* **[!UICONTROL 추천 콘텐츠의 위치]**
 
-  *(필수)* 추천 가능 콘텐츠가 포함된 페이지로 이동합니다(해당 페이지의 구성 요소는 추천 콘텐츠를 허용하도록 구성되어야 함). 예: `/content/sites/engage/en/forum`
+  *(필수)* 추천 콘텐츠가 포함된 페이지를 찾습니다(해당 페이지의 구성 요소는 추천 콘텐츠를 허용하도록 구성되어야 함). 예: `/content/sites/engage/en/forum`
 
 * **[!UICONTROL 표시 제한]**
 
@@ -79,20 +79,20 @@ ht-degree: 2%
 
 콘텐츠를 추천 콘텐츠로 플래그를 지정하려면 중재자 권한이 필요합니다.
 
-중재자가 게시된 콘텐츠를 볼 때 새로운 콘텐츠가 포함된 컨텍스트 내 중재 플래그에 액세스할 수 있습니다 `Feature` 플래그.
+중재자가 게시된 콘텐츠를 볼 때 새로운 `Feature` 플래그가 포함된 컨텍스트 내 중재 플래그에 액세스할 수 있습니다.
 
-![사이트 방문자 경험](assets/site-visitor-experience.png)
+![site-visitor-experience](assets/site-visitor-experience.png)
 
-기능으로 플래그가 지정되면 관리 플래그가 다음과 같이 됩니다. `Unfeature`.
+기능으로 플래그가 지정되면 중재 플래그는 `Unfeature`이(가) 됩니다.
 
-다음 항목이 포함된 페이지 `Featured Content` 구성 요소에 이제 이 게시물이 포함됩니다.
+`Featured Content` 구성 요소가 포함된 페이지에 이제 이 게시물이 포함됩니다.
 
 ![site-visitor-experience1](assets/site-visitor-experience1.png)
 
-다음 `Read More` 실제 게시물에 대한 링크입니다.
+실제 게시물에 대한 `Read More` 링크입니다.
 
 ## 추가 정보 {#additional-information}
 
-자세한 내용은 [특별 포함된 컨텐츠](essentials-featured.md) 개발자용 페이지입니다.
+자세한 내용은 개발자를 위한 [추천 콘텐츠](essentials-featured.md) 페이지에서 확인할 수 있습니다.
 
-주요 기능으로 콘텐츠에 플래그를 지정하는 방법은 를 참조하십시오. [사용자 생성 컨텐츠 중재](moderate-ugc.md).
+추천 콘텐츠로 플래그 지정에 대해서는 [사용자 생성 콘텐츠 중재](moderate-ugc.md)를 참조하십시오.

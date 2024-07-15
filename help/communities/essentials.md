@@ -18,9 +18,9 @@ ht-degree: 15%
 
 # 구성 요소, 기능 및 기능 핵심 사항  {#component-function-and-feature-essentials}
 
-Adobe Experience Manager(AEM) 커뮤니티 기능을 사용하려면 사이트 방문자가 구성원이 되어 [커뮤니티 사이트](overview.md#communitiessites) 을 클릭하여 콘텐츠를 게시합니다. 따라서 [커뮤니티 사이트 템플릿](sites.md): 커뮤니티 사이트가 포함된 사이트 [생성됨](sites-console.md)는 로그인 기능과 사용자 프로필, 메시지, 검색, 중재 및 번역을 포함하도록 설계되었습니다.
+AEM(Adobe Experience Manager) 커뮤니티 기능을 사용하려면 콘텐츠를 게시하려면 사이트 방문자가 구성원이 되어 [커뮤니티 사이트](overview.md#communitiessites)에 로그인해야 합니다. 따라서 커뮤니티 사이트가 [생성](sites-console.md)되는 [커뮤니티 사이트 템플릿](sites.md)은(는) 로그인 기능과 사용자 프로필, 메시지, 검색, 중재 및 번역을 포함하도록 디자인되었습니다.
 
-커뮤니티 사이트는 다음과 같은 경우에 커뮤니티 그룹을 만드는 구성원을 지원합니다. [커뮤니티 그룹 기능](functions.md#groups-function) 은(는) 선택한 커뮤니티 사이트 템플릿에 포함됩니다.
+[커뮤니티 그룹 기능](functions.md#groups-function)이 선택한 커뮤니티 사이트 템플릿에 포함되어 있으면 커뮤니티 사이트는 커뮤니티 그룹을 만드는 구성원을 지원합니다.
 
 다음은 커뮤니티 구성 요소, 기능 및 기능에 대한 필수 정보에 대한 링크입니다.
 
@@ -38,7 +38,7 @@ Adobe Experience Manager(AEM) 커뮤니티 기능을 사용하려면 사이트 �
 ## 기능이 있는 구성 요소 {#components-with-functions}
 
 * [활동 스트림](essentials-activities.md)
-* [블로그](blog-developer-basics.md) ( `Journal`)
+* [블로그](blog-developer-basics.md)( `Journal`)
 
 * [달력](calendar-basics-for-developers.md)
 * [특별 포함된 컨텐츠](essentials-featured.md)
@@ -66,10 +66,10 @@ Adobe Experience Manager(AEM) 커뮤니티 기능을 사용하려면 사이트 �
 
 ## 자바독스 {#javadocs}
 
-다음 [온라인 javadocs](../../help/sites-developing/reference-materials.md) AEM 6.3 릴리스에서 사용할 수 있는 API를 반영합니다.
-커뮤니티 API 위치: `com.adobe.cq.social.*` 패키지.
+[온라인 javadocs](../../help/sites-developing/reference-materials.md)은(는) AEM 6.3 릴리스에서 사용 가능한 API를 반영합니다.
+커뮤니티 API가 `com.adobe.cq.social.*` 패키지에 있습니다.
 
-각 [기능 팩](deploy-communities.md#latestfeaturepack), javadoc jar 를 사용할 수 있습니다. 자세한 내용은 다음을 참조하십시오. [Maven for Communities 사용](maven.md#javadocs).
+각 [기능 팩](deploy-communities.md#latestfeaturepack)에 대해 javadoc jar를 사용할 수 있습니다. 자세한 내용은 [커뮤니티용 Maven 사용](maven.md#javadocs)을 참조하세요.
 
 ## 추가 정보 {#additional-information}
 

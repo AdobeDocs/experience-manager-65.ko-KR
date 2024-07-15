@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 6.5의 AEM Communities에 대한 저장소 재구성 {#repository-restructuring-for-aem-communities-in}
 
-상위에 설명된 대로 [AEM 6.4에서 저장소 재구성](/help/sites-deploying/repository-restructuring.md) 페이지 AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM Communities 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
+AEM 6.4](/help/sites-deploying/repository-restructuring.md)의 상위 [저장소 재구성 페이지에 설명된 대로 AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM Communities 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
 
 **6.5 업그레이드 포함**
 
@@ -52,11 +52,11 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>아래의 새 경로로 이동하려면 수동 마이그레이션이 필요합니다.<code>/apps/settings</code>". Granite 구성 관리자를 사용하여 마이그레이션을 수행할 수 있습니다.</p> <p>속성을 설정하여 마이그레이션을 수행할 수 있습니다 <code>mergeList</code> 끝 <code>true</code> (")에서<code>/libs/settings/community/subscriptions</code>"노드 및 추가 <code>nt:unstructured</code> 하위 노드.</p> </td>
+   <td><p>"<code>/apps/settings</code>" 아래의 새 경로로 이동하려면 수동 마이그레이션이 필요합니다. Granite 구성 관리자를 사용하여 마이그레이션을 수행할 수 있습니다.</p> <p>"<code>/libs/settings/community/subscriptions</code>" 노드에서 속성 <code>mergeList</code>을(를) <code>true</code>(으)로 설정하고 <code>nt:unstructured</code> 자식 노드를 추가하여 마이그레이션을 수행할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -75,11 +75,11 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>아래의 새 경로로 이동하려면 수동 마이그레이션이 필요합니다.<code>/apps/settings</code>". Granite 구성 관리자를 사용하여 마이그레이션을 수행할 수 있습니다.</p> <p>속성을 설정하여 마이그레이션을 수행할 수 있습니다 <code>mergeList</code> 끝 <code>true</code> (")에서<code>/libs/settings/community/subscriptions</code>"노드 및 추가 <code>nt:unstructured</code> 하위 노드.</p> </td>
+   <td><p>"<code>/apps/settings</code>" 아래의 새 경로로 이동하려면 수동 마이그레이션이 필요합니다. Granite 구성 관리자를 사용하여 마이그레이션을 수행할 수 있습니다.</p> <p>"<code>/libs/settings/community/subscriptions</code>" 노드에서 속성 <code>mergeList</code>을(를) <code>true</code>(으)로 설정하고 <code>nt:unstructured</code> 자식 노드를 추가하여 마이그레이션을 수행할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -98,11 +98,11 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td>지연 마이그레이션 작업은 커뮤니티 구성을 정리하는 데 사용할 수 있습니다.<br /> <p>작업이 Watchwords를 다음으로 이동 <code>/etc/watchwords</code> 끝 <code>/conf/global/settings/community/watchwords</code>.</p> <p>사용자 지정된 Watchwords가 SCM에 저장되는 경우 <code>/apps/settings/...</code> 또한 오버레이가 없는지 확인해야 합니다 <code>/conf/global/settings/...</code> 우선 순위가 높은 구성입니다.</p> <p>마이그레이션 작업 제거 <code>/etc</code> 위치.</p> </td>
+   <td>지연 마이그레이션 작업을 사용하여 커뮤니티 구성을 정리할 수 있습니다.<br /> <p>작업이 watchwords를 <code>/etc/watchwords</code>에서 <code>/conf/global/settings/community/watchwords</code>(으)로 이동합니다.</p> <p>사용자 지정된 Watchwords가 SCM에 저장된 경우 <code>/apps/settings/...</code>에 배포되어야 하며 우선 순위가 높은 오버레이 <code>/conf/global/settings/...</code> 구성이 없는지 확인해야 합니다.</p> <p>마이그레이션 작업이 <code>/etc</code>개의 위치를 제거합니다.</p> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -125,20 +125,20 @@ ht-degree: 1%
    <td><strong>구조 조정 지침</strong></td>
    <td><p>수동 마이그레이션이 필요합니다.</p> <p>인스턴스가 배지/채점 규칙을 사용자 지정한 경우 모든 규칙을 버킷에 배치하는 자동화된 방법이 없습니다. 사이트에 사용할 conf 버킷(전역 또는 사이트별)에 대한 고객 입력이 필요합니다.</p> <p>사이트에 대한 배지 및 점수를 구성하는 데 사용할 수 있는 UI가 없습니다.</p> <p>새 저장소 구조에 맞추려면 다음과 같이 하십시오.</p>
     <ol>
-     <li>를 사용하여 사이트 컨텍스트 버킷 만들기 <strong>구성 브라우저</strong> 아래에 <strong>도구</strong></li>
+     <li><strong>도구</strong>의 <strong>구성 브라우저</strong>를 사용하여 사이트 컨텍스트 버킷을 만듭니다.</li>
      <li>사이트 루트로 이동</li>
-     <li>설정 <code>cq:confproperty</code> 모든 설정을 저장할 버킷 경로로 이동합니다. 사이트를 통해 동일한 값을 설정할 수 있습니다 <strong>편집 마법사 - 클라우드 구성 입력 설정</strong>.</li>
-     <li>관련 배지 규칙 및 채점 규칙 이동 위치 <code>/etc/community/*</code> 이전 단계에서 생성한 사이트 컨텍스트 버킷으로 이동합니다.</li>
+     <li>모든 설정을 저장할 버킷 경로로 <code>cq:confproperty</code>을(를) 설정합니다. 사이트 <strong>편집 마법사 - 클라우드 구성 입력 설정</strong>을 통해 동일한 내용을 설정할 수 있습니다.</li>
+     <li>관련 배지 규칙 및 채점 규칙을 <code>/etc/community/*</code>에서 이전 단계에서 만든 사이트 컨텍스트 버킷으로 이동합니다.</li>
      <li>새 규칙 위치에 대한 상대 참조를 갖도록 사이트 루트의 배지 규칙 및 채점 규칙 속성을 조정합니다.
       <ol>
-       <li>예를 들어 다음 속성을 사용합니다. <code>cq:conf = /conf/we-retail</code>, 그런 다음 <code>badgingRules [] = community/badging/rules</code> 이제 규칙이 이 새 버킷으로 이동되면</li>
+       <li>예를 들어 <code>cq:conf = /conf/we-retail</code>에 대한 속성을 사용하는 경우 이제 규칙이 이 새 버킷으로 이동되면 <code>badgingRules [] = community/badging/rules</code>이(가) 됩니다.</li>
       </ol> </li>
      <li>마찬가지로 상대 경로를 갖도록 배지 규칙 노드에서 채점 규칙에 대한 참조를 조정합니다.</li>
     </ol> <p> </p> <p>마지막으로 리소스를 제거하여 정리합니다. <code>/etc/community/badging</code></p> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -161,7 +161,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -185,16 +185,16 @@ ht-degree: 1%
     <ol>
      <li>이전 위치의 기존 구성을 새 위치로 마이그레이션합니다.
       <ol>
-       <li>AEM 제작 UI를 통해 새 Facebook 소셜 로그인 구성을 수동으로 다시 만들기 <strong>도구 &gt; Cloud Service &gt; Facebook 소셜 로그인 구성</strong>.<br /> 또는 <br /> </li>
-       <li>이전 위치에서 적절한 새 위치로 새 Facebook 클라우드 구성 복사 <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li><strong>도구 &gt; Cloud Service &gt; Facebook 소셜 로그인 구성</strong>에서 AEM 제작 UI를 통해 새 Facebook 소셜 로그인 구성을 수동으로 다시 만듭니다.<br /> 또는 <br /> </li>
+       <li>이전 위치에서 <code>/conf/global or /conf/&lt;tenant&gt;</code> 아래의 적절한 새 위치로 새 Facebook 클라우드 구성을 복사합니다.</li>
       </ol> </li>
-     <li>AEM Communities 사이트 루트를 업데이트하여 새 Facebook 소셜 로그인 구성을 참조합니다. <code>[cq:Page]/jcr:content@cq:conf</code> 속성을 새 위치의 절대 경로로 바꿉니다.</li>
+     <li><code>[cq:Page]/jcr:content@cq:conf</code> 속성을 새 위치의 절대 경로로 설정하여 새 Facebook 소셜 로그인 구성을 참조하도록 AEM Communities 사이트 루트를 업데이트합니다.</li>
      <li>새 위치를 참조하도록 업데이트된 AEM Communities 사이트 루트에서 기존 Facebook Connect Cloud Service의 연결을 해제합니다.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -213,11 +213,11 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -241,16 +241,16 @@ ht-degree: 1%
     <ol>
      <li>이전 위치의 기존 구성을 새 위치로 마이그레이션합니다.
       <ol>
-       <li>AEM 제작 UI를 통해 새 Pinterest 소셜 로그인 구성을 수동으로 다시 만들기 <strong>도구 &gt; Cloud Service &gt; Pinterest 소셜 로그인 구성</strong>.<br /> 또는</li>
-       <li>이전 위치에서 아래의 해당 새 위치로 새 Pinterest 클라우드 구성 복사 <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li><strong>도구 &gt; Cloud Service &gt; Pinterest 소셜 로그인 구성</strong>에서 AEM 제작 UI를 통해 새 Pinterest 소셜 로그인 구성을 수동으로 다시 만듭니다.<br /> 또는</li>
+       <li>이전 위치에서 <code>/conf/global or /conf/&lt;tenant&gt;</code>의 적절한 새 위치로 새 Pinterest 클라우드 구성을 복사합니다.</li>
       </ol> </li>
-     <li>모든 AEM Communities 사이트 루트를 업데이트하여 새 Pinterest 소셜 로그인 구성을 다음 설정으로 참조합니다. <code>[cq:Page]/jcr:content@cq:conf</code> 속성을 새 위치의 절대 경로로 바꿉니다.</li>
+     <li><code>[cq:Page]/jcr:content@cq:conf</code> 속성을 새 위치의 절대 경로로 설정하여 새 Pinterest 소셜 로그인 구성을 참조하도록 AEM Communities 사이트 루트를 업데이트합니다.</li>
      <li>새 위치를 참조하도록 업데이트된 AEM Communities 사이트 루트에서 기존 Pinterest Connect Cloud Service의 연결을 해제합니다.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -269,21 +269,21 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>새 저장소 구조에 맞추기 위해 점수부여 규칙을에 저장할 수 있습니다. <code>/apps/settings/</code> 또는 /<code>conf/.../settings</code></p>
+   <td><p>새 저장소 구조에 맞추기 위해 채점 규칙을 <code>/apps/settings/</code> 또는 /<code>conf/.../settings</code></p>
     <ol>
-     <li>대상 <code>/apps/settings</code>, 이는 SCM에서 관리되는 전역 또는 기본 규칙으로 작동합니다.</li>
-    </ol> <p>에서 컨텍스트 인식 구성 만들기 <code>/conf/</code> crxdelIte를 사용하여:</p>
+     <li><code>/apps/settings</code>의 경우 SCM에서 관리되는 전역 또는 기본 규칙으로 작동합니다.</li>
+    </ol> <p>CRXDELite를 사용하여 <code>/conf/</code>에서 컨텍스트 인식 구성을 만듭니다.</p>
     <ol>
-     <li>원하는 대로 구성을 생성합니다. <code>/conf/.../settings</code> 위치<br /> </li>
-     <li>커뮤니티 사이트에는 <code>cq:conf </code>속성 집합.
+     <li>원하는 <code>/conf/.../settings</code> 위치에 구성을 만듭니다<br /> </li>
+     <li>커뮤니티 사이트에 <code>cq:conf </code> 속성이 설정되어 있어야 합니다.
       <ol>
-       <li>없는 경우 <code>cq:conf</code> 이(가) 설정되어 있으면 속성 '에 대한 지정된 경로에서 직접 채점 규칙을 읽습니다.<code>scoringRules</code>사이트의 루트 노드에서 '(예: ) <code>/content/we-retail/us/en/community/jcr:content</code></li>
+       <li><code>cq:conf</code>이(가) 설정되지 않은 경우 사이트의 루트 노드에 있는 '<code>scoringRules</code>' 속성에 대해 지정된 경로에서 채점 규칙을 직접 읽습니다. 예를 들면 다음과 같습니다. <code>/content/we-retail/us/en/community/jcr:content</code></li>
       </ol> </li>
     </ol> <p>정리: 리소스를 제거합니다. <code>/etc/community/scoring</code></p> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -307,16 +307,16 @@ ht-degree: 1%
     <ol>
      <li>이전 위치의 기존 구성을 새 위치로 마이그레이션합니다.
       <ol>
-       <li>다음 위치에서 AEM 작성 UI를 통해 새 Twitter 소셜 로그인 구성을 수동으로 다시 만들기 <strong>도구 &gt; Cloud Service &gt; 소셜 로그인 구성 Twitter</strong>.<br /> 또는 <br /> </li>
-       <li>이전 위치에서 아래의 해당 새 위치로 새 Twitter 클라우드 구성 복사 <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li><strong>도구 &gt; Cloud Service &gt; 소셜 로그인 구성 Twitter</strong>에서 AEM 작성 UI를 통해 새 Twitter 소셜 로그인 구성을 수동으로 다시 만듭니다.<br /> 또는 <br /> </li>
+       <li>이전 위치에서 <code>/conf/global or /conf/&lt;tenant&gt;</code> 아래의 적절한 새 위치로 새 Twitter 클라우드 구성을 복사합니다.</li>
       </ol> </li>
-     <li>다음을 설정하여 AEM Communities 사이트 루트를 업데이트하여 새 Twitter 소셜 로그인 구성을 참조합니다. <code>[cq:Page]/jcr:content@cq:conf</code> 속성을 새 위치의 절대 경로로 바꿉니다.</li>
+     <li><code>[cq:Page]/jcr:content@cq:conf</code> 속성을 새 위치의 절대 경로로 설정하여 새 Twitter 소셜 로그인 구성을 참조하도록 AEM Communities 사이트 루트를 업데이트합니다.</li>
      <li>새 위치를 참조하도록 업데이트된 AEM Communities 사이트 루트에서 기존 Twitter 연결 Cloud Service의 연결을 해제합니다.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>해당 사항 없음<br /> </td>
+   <td>해당 없음<br /> </td>
   </tr>
  </tbody>
 </table>

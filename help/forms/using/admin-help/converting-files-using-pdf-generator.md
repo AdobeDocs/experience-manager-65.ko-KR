@@ -37,17 +37,17 @@ PDF Generator 웹 페이지를 사용하여 파일을 변환할 수 있습니다
 
    * 설정 파일을 업로드하는 경우 상자에 해당 경로와 이름을 입력하거나 찾아보기를 눌러 파일을 찾아 선택합니다.
 
-1. (선택 사항) XMP 메타데이터 파일에서 XMP 파일의 경로와 이름을 입력하거나 찾아보기를 눌러 파일을 찾아 선택합니다. XMP 파일을 사용하여 표준 메타데이터 정보를 포함할 수 있습니다. (참조: [XMP 파일 정보](converting-files-using-pdf-generator.md#about-xmp-files).)
+1. (선택 사항) XMP 메타데이터 파일에서 XMP 파일의 경로와 이름을 입력하거나 찾아보기를 눌러 파일을 찾아 선택합니다. XMP 파일을 사용하여 표준 메타데이터 정보를 포함할 수 있습니다. ([XMP 파일 정보](converting-files-using-pdf-generator.md#about-xmp-files)를 참조하세요.)
 1. 만들기 를 클릭합니다. 파일이 생성되면 파일에 대한 링크가 나타납니다. 변환 중에 오류가 발생하면 경고가 나타납니다. Postscript 파일을 만드는 경우 경고에 로그 파일에 대한 링크도 포함되어 있습니다.
 1. PDF 파일에 대한 링크를 클릭합니다. 파일이 Acrobat에서 열립니다.
 
 ### XMP 파일 정보 {#about-xmp-files}
 
-PDF Generator이 Acrobat 5.0 이상에서 만드는 PDF 문서에는 XML 형식의 문서 메타데이터가 포함되어 있습니다. *메타데이터* 에는 작성자 이름, 키워드 및 검색 유틸리티에서 사용할 수 있는 저작권 정보 등 문서 및 문서에 대한 정보가 포함되어 있습니다.
+PDF Generator이 Acrobat 5.0 이상에서 만드는 PDF 문서에는 XML 형식의 문서 메타데이터가 포함되어 있습니다. *메타데이터*&#x200B;에는 작성자 이름, 키워드 및 검색 유틸리티에서 사용할 수 있는 저작권 정보 등 문서 및 문서에 대한 정보가 포함되어 있습니다.
 
 문서 메타데이터에는 Acrobat의 문서 속성 대화 상자에 있는 설명 탭에도 나타나는 정보가 포함되어 있지만 이에 국한되지는 않습니다. 설명 탭에서 변경한 내용은 문서 메타데이터에 반영됩니다. 문서 메타데이터는 서드파티 제품을 사용하여 확장 및 수정할 수 있습니다.
 
-XMP(Adobe 확장 가능한 메타데이터 플랫폼)은 Adobe 애플리케이션에서 게시 작업 과정 간의 문서 메타데이터 작성, 처리 및 교환을 표준화하는 공통 XML 프레임워크를 제공합니다. 문서 메타데이터 XML 소스 코드를 XMP 형식으로 저장하고 가져올 수 있으므로 다양한 문서 간에 메타데이터를 쉽게 공유할 수 있습니다. XMP 파일에 대한 자세한 내용은 [확장 가능한 메타데이터 플랫폼(XMP)](https://www.adobe.com/products/xmp/) 및 [Adobe XMP 개발자 센터](https://www.adobe.com/devnet/xmp.html).
+XMP(Adobe 확장 가능한 메타데이터 플랫폼)은 Adobe 애플리케이션에서 게시 작업 과정 간의 문서 메타데이터 작성, 처리 및 교환을 표준화하는 공통 XML 프레임워크를 제공합니다. 문서 메타데이터 XML 소스 코드를 XMP 형식으로 저장하고 가져올 수 있으므로 다양한 문서 간에 메타데이터를 쉽게 공유할 수 있습니다. XMP 파일에 대한 자세한 내용은 [XMP(Extensible Metadata Platform)](https://www.adobe.com/products/xmp/) 및 [XMP 개발자 센터 Adobe](https://www.adobe.com/devnet/xmp.html)을 참조하십시오.
 
 Acrobat에서 XMP 파일을 만들 수 있습니다.
 
@@ -97,13 +97,13 @@ ZIP 파일의 폴더 계층 구조의 가장 낮은 수준에 둘 이상의 HTML
 
    * 기존 설정 파일을 사용하려면 설정 파일 업로드 를 선택하고 찾아보기 를 클릭하여 파일 위치로 이동합니다.
 
-1. XMP 파일을 업로드하려면 찾아보기 를 클릭하고 파일 위치로 이동합니다. XMP 파일을 사용하여 표준 메타데이터 정보를 포함할 수 있습니다. (참조: [XMP 파일 정보](converting-files-using-pdf-generator.md#about-xmp-files).)
+1. XMP 파일을 업로드하려면 찾아보기 를 클릭하고 파일 위치로 이동합니다. XMP 파일을 사용하여 표준 메타데이터 정보를 포함할 수 있습니다. ([XMP 파일 정보](converting-files-using-pdf-generator.md#about-xmp-files)를 참조하세요.)
 1. 만들기 를 클릭합니다. 파일이 생성되면 PDF 파일에 대한 링크가 나타납니다.
 1. Acrobat에서 PDF 문서를 보려면 링크를 클릭하십시오.
 
 ## PDF 파일을 다른 파일 형식으로 내보내기(Windows에만 해당) {#export-a-pdf-file-to-another-file-format-windows-only}
 
-의 PDF 서비스 생성 장에 설명된 대로 PDF 파일을 다양한 파일 형식으로 내보낼 수 있습니다 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+[서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)의 PDF 서비스 생성 장에 설명된 대로 PDF 파일을 다양한 파일 형식으로 내보낼 수 있습니다.
 
 1. 관리 콘솔에서 서비스 > PDF Generator > Export PDF 를 클릭합니다.
 1. 찾아보기 를 클릭하여 내보낼 PDF 파일을 찾습니다.
@@ -112,7 +112,7 @@ ZIP 파일의 폴더 계층 구조의 가장 낮은 수준에 둘 이상의 HTML
 
    파일을 변환할 때 표시되는 변환 시간은 여기에서 지정한 값보다 클 수 있습니다. 변환 시간 에는 스레드 또는 프로세스를 기다리는 시간, 파일을 변환하는 데 걸리는 시간 및 대체 변환기에 걸리는 시간(해당하는 경우)이 포함됩니다. 시간. Specify a Timeout 값은 파일을 변환하는 데 걸리는 시간입니다.
 
-1. (선택 사항) **사용자 지정 Preflight 프로필 지정** 옵션을 선택하고 찾아보기를 클릭한 다음 [사용자 지정 Preflight 프로필](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Preflight 프로필은 문서를 PDF 아카이브(PDF/A) 형식으로 변환하는 동안에만 사용됩니다.
+1. (선택 사항) **사용자 지정 Preflight 프로필 지정** 옵션에서 [찾아보기]를 클릭하고 [사용자 지정 Preflight 프로필](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)을 선택합니다. Preflight 프로필은 문서를 PDF 아카이브(PDF/A) 형식으로 변환하는 동안에만 사용됩니다.
 1. 내보내기를 클릭합니다. 변환이 완료되면 내보낸 파일에 대한 링크가 나타납니다.
 1. 변환된 파일을 보려면 링크를 클릭합니다.
 

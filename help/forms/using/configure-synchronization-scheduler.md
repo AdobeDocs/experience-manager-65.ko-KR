@@ -24,25 +24,25 @@ ht-degree: 0%
 
 동기화 스케줄러의 간격을 변경하려면 다음 단계를 수행하십시오.
 
-1. AEM 구성 관리자에 로그인합니다. 구성 관리자의 URL은 다음과 같습니다. `https://'[server]:[port]'/lc/system/console/configMgr`
+1. AEM 구성 관리자에 로그인합니다. 구성 관리자의 URL은 `https://'[server]:[port]'/lc/system/console/configMgr`입니다.
 
-1. 을(를) 찾아 엽니다. **FormsManager 구성** 번들.
+1. **FormsManagerConfiguration** 번들을 찾아 엽니다.
 
-1. 다음에 대한 새 값 지정 **동기화 스케줄러 빈도** 옵션을 선택합니다.
+1. **동기화 스케줄러 빈도** 옵션에 새 값을 지정하십시오.
 
    빈도의 단위는 분입니다. 예를 들어 60분마다 실행되도록 스케줄러를 구성하려면 60을 지정합니다.
 
 ## 자산 동기화 {#synchronizing-assets}
 
-다음을 사용할 수 있습니다. **저장소에서 자산 동기화** 자산을 수동으로 동기화하는 옵션입니다. 자산을 수동으로 동기화하려면 다음 단계를 수행하십시오.
+**저장소에서 Assets 동기화** 옵션을 사용하여 자산을 수동으로 동기화할 수 있습니다. 자산을 수동으로 동기화하려면 다음 단계를 수행하십시오.
 
-1. AEM Forms에 로그인. 기본 URL은 `https://'[server]:[port]'/lc/aem/forms/`.
+1. AEM Forms에 로그인. 기본 URL은 `https://'[server]:[port]'/lc/aem/forms/`입니다.
 
    ![AEM Forms 사용자 인터페이스](assets/aem_forms_ui.png)
 
    **그림:** *AEM Forms 사용자 인터페이스*
 
-1. 다음을 클릭합니다. ![aem6forms_sync](assets/aem6forms_sync.png) 아이콘을 클릭합니다. 마지막으로 구성된 경로에 에셋이 없는 경우 아래와 같이 대화 상자를 엽니다. 클릭 **시작** 동기화를 시작합니다.
+1. 도구 모음에서 ![aem6forms_sync](assets/aem6forms_sync.png) 아이콘을 클릭합니다. 마지막으로 구성된 경로에 에셋이 없는 경우 아래와 같이 대화 상자를 엽니다. 동기화를 시작하려면 **시작**&#x200B;을 클릭하세요.
 
    ![동기화 대화 상자](assets/migrate-and-syncronize.png)
 
@@ -52,10 +52,10 @@ ht-degree: 0%
 
 워크플로우 디자이너(LiveCycle 워크벤치)에서 새 응용 프로그램을 만들 수 있습니다.
 
-새로 만든 응용 프로그램과 /content/dam/formsanddocuments에 있는 폴더의 이름이 동일한 경우 &quot; 오류가 발생합니다.*이 응용 프로그램과 이름이 같은 자산이 루트 수준에 이미 있습니다.*&quot;로그인되어 있습니다.
+새로 만든 응용 프로그램과 /content/dam/formsanddocuments에 있는 폴더의 이름이 같은 경우 &quot;*이 응용 프로그램과 이름이 같은 자산이 루트 수준에 이미 있습니다.*&quot;이(가) 기록되었습니다.
 
 충돌을 해결하려면 애플리케이션 이름을 바꾸고 자산을 수동으로 동기화합니다.
 
-![자산 동기화 대화 상자에서 충돌 발생](assets/sync-conflict.png)
+![자산 동기화 대화 상자의 충돌](assets/sync-conflict.png)
 
-**그림:** *자산 동기화 대화 상자에서 충돌 발생*
+**그림:** *자산 동기화 대화 상자의 충돌*

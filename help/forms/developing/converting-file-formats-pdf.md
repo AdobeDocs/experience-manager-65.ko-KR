@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # 파일 형식과 PDF 간 변환 {#converting-between-file-formatsand-pdf}
 
-**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
+**이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 **PDF 서비스 생성 정보**
 
 PDF 생성 서비스는 기본 파일 형식을 PDF으로 변환합니다. 또한 PDF을 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다.
 
-PDF 생성 서비스는 기본 응용 프로그램을 사용하여 다음 파일 형식을 PDF으로 변환합니다. 달리 명시되지 않은 경우 이러한 응용 프로그램의 독일어, 프랑스어, 영어 및 일본어 버전만 지원됩니다. *Windows에만 해당* 는 Windows Server® 2003 및 Windows Server 2008에 대한 지원만 나타냅니다.
+PDF 생성 서비스는 기본 응용 프로그램을 사용하여 다음 파일 형식을 PDF으로 변환합니다. 달리 명시되지 않은 경우 이러한 응용 프로그램의 독일어, 프랑스어, 영어 및 일본어 버전만 지원됩니다. *Windows 전용*&#x200B;은(는) Windows Server® 2003 및 Windows Server 2008에 대해서만 지원을 나타냅니다.
 
 * DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS 및 PUB를 변환하는 Microsoft Office 2003 및 2007(Windows에만 해당)
 
@@ -58,7 +58,7 @@ PDF 생성 서비스는 다음 표준 기반 파일 형식을 PDF으로 변환�
 
 PDF 생성 서비스는 PDF을 다음 파일 형식으로 변환합니다(Windows에만 해당).
 
-* 캡슐화된 포스트스크립트(EPS)
+* 캡슐화된 PostScript(EPS)
 * HTML 3.2
 * HTML 4.01(CSS 1.0 포함)
 * DOC (Microsoft Word 형식)
@@ -84,7 +84,7 @@ PDF 생성 서비스를 사용하여 다음 작업을 수행할 수 있습니다
 
 >[!NOTE]
 >
->PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 서비스 생성에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ## Word 문서를 PDF 문서로 변환 {#converting-word-documents-to-pdf-documents}
 
@@ -92,11 +92,11 @@ PDF 생성 서비스를 사용하여 다음 작업을 수행할 수 있습니다
 
 >[!NOTE]
 >
->추가 파일 형식에 대한 자세한 내용은 [추가 기본 파일 형식에 대한 지원 추가](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
+>추가 파일 형식에 대한 자세한 내용은 [추가 기본 파일 형식에 대한 지원 추가](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats)를 참조하십시오.
 
 >[!NOTE]
 >
->PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 서비스 생성에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary-of-steps}
 
@@ -114,7 +114,7 @@ Microsoft Word 문서를 PDF 문서로 변환하려면 다음 작업을 수행�
 
 **PDF 클라이언트 생성**
 
-PDF 생성 작업을 프로그래밍 방식으로 수행하려면 먼저 PDF 서비스 클라이언트 생성을 참조하십시오. Java API를 사용하는 경우 `GeneratePdfServiceClient` 개체. 웹 서비스 API를 사용하는 경우 `GeneratePDFServiceService` 개체.
+PDF 생성 작업을 프로그래밍 방식으로 수행하려면 먼저 PDF 서비스 클라이언트 생성을 참조하십시오. Java API를 사용하는 경우 `GeneratePdfServiceClient` 개체를 만듭니다. 웹 서비스 API를 사용하는 경우 `GeneratePDFServiceService` 개체를 만듭니다.
 
 **파일을 검색하여 PDF 문서로 변환**
 
@@ -122,7 +122,7 @@ Microsoft Word 문서를 검색하여 PDF 문서로 변환합니다.
 
 **파일을 PDF 문서로 변환**
 
-PDF 서비스 클라이언트 생성을 생성한 후 `createPDF2` 메서드를 사용합니다. 이 메서드에는 파일 확장명을 포함하여 변환할 문서에 대한 정보가 필요합니다.
+PDF 서비스 클라이언트 생성을 만든 후 `createPDF2` 메서드를 호출할 수 있습니다. 이 메서드에는 파일 확장명을 포함하여 변환할 문서에 대한 정보가 필요합니다.
 
 **결과 검색**
 
@@ -150,39 +150,39 @@ Java(PDF 생성 API)를 사용하여 Microsoft Word 문서를 PDF 문서로 변�
 
 1. PDF 클라이언트 생성을 참조하십시오.
 
-   * 만들기 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
-   * 만들기 `GeneratePdfServiceClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 개체.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `GeneratePdfServiceClient` 개체를 만듭니다.
 
 1. 파일을 검색하여 PDF 문서로 변환합니다.
 
-   * 만들기 `java.io.FileInputStream` 생성자를 사용하여 변환할 Word 파일을 나타내는 개체입니다. 파일 위치를 지정하는 문자열 값을 전달합니다.
-   * 만들기 `com.adobe.idp.Document` 개체를 생성자를 사용하고 `java.io.FileInputStream` 개체.
+   * 생성자를 사용하여 변환할 Word 파일을 나타내는 `java.io.FileInputStream` 개체를 만듭니다. 파일 위치를 지정하는 문자열 값을 전달합니다.
+   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
 
 1. 파일을 PDF 문서로 변환합니다.
 
-   를 호출하여 파일을 PDF 문서로 변환 `GeneratePdfServiceClient` 개체 `createPDF2` 메서드 및 다음 값 전달:
+   `GeneratePdfServiceClient` 개체의 `createPDF2` 메서드를 호출하고 다음 값을 전달하여 파일을 PDF 문서로 변환합니다.
 
-   * A `com.adobe.idp.Document` 변환할 파일을 나타내는 개체입니다.
-   * A `java.lang.String` 파일 확장명이 포함된 개체입니다.
-   * A `java.lang.String` 변환에 사용할 파일 형식 설정을 포함하는 개체입니다. 파일 형식 설정은 .doc 또는 .xls와 같은 다양한 파일 형식에 대한 변환 설정을 제공합니다.
-   * A `java.lang.String` 사용할 PDF 설정의 이름이 포함된 개체입니다. 예를 들어 다음을 지정할 수 있습니다 `Standard`.
-   * A `java.lang.String` 사용할 보안 설정의 이름이 포함된 개체입니다.
-   * 선택 사항입니다 `com.adobe.idp.Document` PDF 문서를 생성하는 동안 적용할 설정이 포함된 객체입니다.
-   * 선택 사항입니다 `com.adobe.idp.Document` PDF 문서에 적용할 메타데이터 정보가 포함된 객체입니다.
+   * 변환할 파일을 나타내는 `com.adobe.idp.Document` 개체입니다.
+   * 파일 확장명이 포함된 `java.lang.String` 개체입니다.
+   * 변환에 사용할 파일 형식 설정이 포함된 `java.lang.String` 개체입니다. 파일 형식 설정은 .doc 또는 .xls와 같은 다양한 파일 형식에 대한 변환 설정을 제공합니다.
+   * 사용할 PDF 설정의 이름이 포함된 `java.lang.String` 개체입니다. 예를 들어 `Standard`을(를) 지정할 수 있습니다.
+   * 사용할 보안 설정의 이름이 포함된 `java.lang.String` 개체입니다.
+   * PDF 문서를 생성하는 동안 적용할 설정이 포함된 선택적 `com.adobe.idp.Document` 개체입니다.
+   * PDF 문서에 적용할 메타데이터 정보가 포함된 선택적 `com.adobe.idp.Document` 개체입니다.
 
-   다음 `createPDF2` 메서드가 을 반환합니다. `CreatePDFResult` 새 PDF 문서 및 로그 정보가 포함된 개체입니다. 로그 파일에는 일반적으로 전환 요청으로 생성된 오류 또는 경고 메시지가 포함되어 있습니다.
+   `createPDF2` 메서드가 새 PDF 문서와 로그 정보를 포함하는 `CreatePDFResult` 개체를 반환합니다. 로그 파일에는 일반적으로 전환 요청으로 생성된 오류 또는 경고 메시지가 포함되어 있습니다.
 
 1. 결과를 검색합니다.
 
    PDF 문서를 가져오려면 다음 작업을 수행합니다.
 
-   * 호출 `CreatePDFResult` 개체 `getCreatedDocument` 메서드, 반환 `com.adobe.idp.Document` 개체.
-   * 호출 `com.adobe.idp.Document` 개체 `copyToFile` 이전 단계에서 만든 객체에서 PDF 문서를 추출하는 방법입니다.
+   * `com.adobe.idp.Document` 개체를 반환하는 `CreatePDFResult` 개체의 `getCreatedDocument` 메서드를 호출합니다.
+   * 이전 단계에서 만든 개체에서 PDF 문서를 추출하려면 `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하십시오.
 
-   를 사용한 경우 `createPDF2` 로그 문서를 가져오는 메서드(HTML 전환에는 적용되지 않음)에서 다음 작업을 수행합니다.
+   `createPDF2` 메서드를 사용하여 로그 문서를 가져온 경우(HTML 전환에는 적용되지 않음) 다음 작업을 수행하십시오.
 
-   * 호출 `CreatePDFResult` 개체 `getLogDocument` 메서드를 사용합니다. 이 값은 `com.adobe.idp.Document` 개체.
-   * 호출 `com.adobe.idp.Document` 개체 `copyToFile` 로그 문서를 추출하는 메서드입니다.
+   * `CreatePDFResult` 개체의 `getLogDocument` 메서드를 호출합니다. `com.adobe.idp.Document` 개체를 반환합니다.
+   * 로그 문서를 추출하려면 `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하십시오.
 
 **추가 참조**
 
@@ -200,53 +200,53 @@ PDF API 생성(웹 서비스)을 사용하여 Microsoft Word 문서를 PDF 문�
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. PDF 클라이언트 생성을 참조하십시오.
 
-   * 만들기 `GeneratePDFServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `GeneratePDFServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 단, 을 지정합니다. `?blob=mtom`.
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `GeneratePDFServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `GeneratePDFServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `GeneratePDFServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). `lc_version` 특성은 사용할 필요가 없습니다. 그러나 `?blob=mtom`을(를) 지정하십시오.
+   * `GeneratePDFServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+      * `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `GeneratePDFServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 파일을 검색하여 PDF 문서로 변환합니다.
 
-   * 만들기 `BLOB` 개체를 만들 때 사용됩니다. 다음 `BLOB` 개체는 PDF 문서로 변환할 파일을 저장하는 데 사용됩니다.
-   * 만들기 `System.IO.FileStream` 해당 생성자를 호출하여 개체를 작성합니다. 변환할 파일의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
-   * 의 콘텐츠를 저장하는 바이트 배열 만들기 `System.IO.FileStream` 개체. 를 가져와서 바이트 배열의 크기를 결정할 수 있습니다 `System.IO.FileStream` 개체 `Length` 속성.
-   * 를 호출하여 바이트 배열을 스트림 데이터로 채우기 `System.IO.FileStream` 개체 `Read` 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하는 방법.
-   * 채우기 `BLOB` 에 할당하여 오브젝트 `MTOM` 속성을 바이트 배열의 내용으로 지정합니다.
+   * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 PDF 문서로 변환할 파일을 저장하는 데 사용됩니다.
+   * 해당 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. 변환할 파일의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
+   * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
+   * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
+   * 바이트 배열의 내용을 해당 `MTOM` 속성에 할당하여 `BLOB` 개체를 채웁니다.
 
 1. 파일을 PDF 문서로 변환합니다.
 
-   를 호출하여 파일을 PDF 문서로 변환 `GeneratePDFServiceService` 개체 `CreatePDF2` 메서드 및 다음 값 전달:
+   `GeneratePDFServiceService` 개체의 `CreatePDF2` 메서드를 호출하고 다음 값을 전달하여 파일을 PDF 문서로 변환합니다.
 
-   * A `BLOB` 변환할 파일을 나타내는 개체입니다.
+   * 변환할 파일을 나타내는 `BLOB` 개체입니다.
    * 파일 확장명을 포함하는 문자열입니다.
-   * A `java.lang.String` 변환에 사용할 파일 형식 설정을 포함하는 개체입니다. 파일 형식 설정은 .doc 또는 .xls와 같은 다양한 파일 형식에 대한 변환 설정을 제공합니다.
-   * 사용할 PDF 설정을 포함하는 문자열 개체입니다. 다음을 지정할 수 있습니다. `Standard`.
-   * 사용할 보안 설정이 포함된 문자열 개체입니다. 다음을 지정할 수 있습니다. `No Security`.
-   * 선택 사항입니다 `BLOB` PDF 문서를 생성하는 동안 적용할 설정이 포함된 객체입니다.
-   * 선택 사항입니다 `BLOB` PDF 문서에 적용할 메타데이터 정보가 포함된 객체입니다.
-   * 유형의 출력 매개 변수 `BLOB` 이 채우는 사람: `CreatePDF2` 메서드를 사용합니다. 다음 `CreatePDF2` 메서드는 변환된 문서로 이 개체를 채웁니다. (이 매개 변수 값은 웹 서비스 호출에만 필요합니다.)
-   * 유형의 출력 매개 변수 `BLOB` 이 채우는 사람: `CreatePDF2` 메서드를 사용합니다. 다음 `CreatePDF2` 메서드는 이 개체를 로그 문서로 채웁니다. (이 매개 변수 값은 웹 서비스 호출에만 필요합니다.)
+   * 변환에 사용할 파일 형식 설정이 포함된 `java.lang.String` 개체입니다. 파일 형식 설정은 .doc 또는 .xls와 같은 다양한 파일 형식에 대한 변환 설정을 제공합니다.
+   * 사용할 PDF 설정을 포함하는 문자열 개체입니다. `Standard`을(를) 지정할 수 있습니다.
+   * 사용할 보안 설정이 포함된 문자열 개체입니다. `No Security`을(를) 지정할 수 있습니다.
+   * PDF 문서를 생성하는 동안 적용할 설정이 포함된 선택적 `BLOB` 개체입니다.
+   * PDF 문서에 적용할 메타데이터 정보가 포함된 선택적 `BLOB` 개체입니다.
+   * `CreatePDF2` 메서드로 채워진 `BLOB` 형식의 출력 매개 변수입니다. `CreatePDF2` 메서드는 변환된 문서로 이 개체를 채웁니다. (이 매개 변수 값은 웹 서비스 호출에만 필요합니다.)
+   * `CreatePDF2` 메서드로 채워진 `BLOB` 형식의 출력 매개 변수입니다. `CreatePDF2` 메서드가 이 개체를 로그 문서로 채웁니다. (이 매개 변수 값은 웹 서비스 호출에만 필요합니다.)
 
 1. 결과를 검색합니다.
 
-   * 를 할당하여 변환된 PDF 문서 검색 `BLOB` 개체 `MTOM` 필드를 바이트 배열로 바꿉니다. 바이트 배열은 변환된 PDF 문서를 나타냅니다. 다음을 사용하십시오. `BLOB` 의 출력 매개 변수로 사용되는 개체입니다 `createPDF2` 메서드를 사용합니다.
-   * 만들기 `System.IO.FileStream` 개체를 호출하고 변환된 PDF 문서의 파일 위치를 나타내는 문자열 값을 전달합니다.
-   * 만들기 `System.IO.BinaryWriter` 개체를 호출하고 `System.IO.FileStream` 개체.
-   * 를 호출하여 바이트 배열의 내용을 PDF 파일에 씁니다 `System.IO.BinaryWriter` 개체 `Write` 메서드 및 바이트 배열 전달.
+   * `BLOB` 개체의 `MTOM` 필드를 바이트 배열에 할당하여 변환된 PDF 문서를 검색합니다. 바이트 배열은 변환된 PDF 문서를 나타냅니다. `createPDF2` 메서드의 출력 매개 변수로 사용되는 `BLOB` 개체를 사용해야 합니다.
+   * 해당 생성자를 호출하고 변환된 PDF 문서의 파일 위치를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
+   * `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일에 씁니다.
 
 **추가 참조**
 
@@ -262,7 +262,7 @@ PDF API 생성(웹 서비스)을 사용하여 Microsoft Word 문서를 PDF 문�
 
 >[!NOTE]
 >
->PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 서비스 생성에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-1}
 
@@ -280,7 +280,7 @@ HTML 문서를 PDF 문서로 변환하려면 다음 작업을 수행합니다.
 
 **PDF 클라이언트 생성**
 
-PDF 생성 작업을 프로그래밍 방식으로 수행하려면 먼저 PDF 서비스 생성 클라이언트를 만들어야 합니다. Java API를 사용하는 경우 `GeneratePdfServiceClient` 개체. 웹 서비스 API를 사용하는 경우 `GeneratePDFServiceService`.
+PDF 생성 작업을 프로그래밍 방식으로 수행하려면 먼저 PDF 서비스 생성 클라이언트를 만들어야 합니다. Java API를 사용하는 경우 `GeneratePdfServiceClient` 개체를 만듭니다. 웹 서비스 API를 사용하는 경우 `GeneratePDFServiceService`을(를) 만듭니다.
 
 **HTML 콘텐츠를 검색하여 PDF 문서로 변환**
 
@@ -316,7 +316,7 @@ PDF API 생성(Java)을 사용하여 HTML 문서를 PDF 문서로 변환합니�
 
 1. PDF 클라이언트 생성을 참조하십시오.
 
-   만들기 `GeneratePdfServiceClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `GeneratePdfServiceClient` 개체를 만듭니다.
 
 1. HTML 콘텐츠를 검색하여 PDF 문서로 변환합니다.
 
@@ -324,20 +324,20 @@ PDF API 생성(Java)을 사용하여 HTML 문서를 PDF 문서로 변환합니�
 
 1. HTML 콘텐츠를 PDF 문서로 변환합니다.
 
-   호출 `GeneratePdfServiceClient` 개체 `htmlToPDF2` 메서드를 실행하고 다음 값을 전달합니다.
+   `GeneratePdfServiceClient` 개체의 `htmlToPDF2` 메서드를 호출하고 다음 값을 전달하십시오.
 
-   * A `java.lang.String` 변환할 HTML 파일의 URL이 포함된 개체입니다.
-   * A `java.lang.String` 변환에 사용할 파일 형식 설정을 포함하는 개체입니다. 파일 유형 설정에는 스파이더 수준이 포함될 수 있습니다.
-   * A `java.lang.String` 사용할 보안 설정의 이름이 포함된 개체입니다.
-   * 선택 사항입니다 `com.adobe.idp.Document` PDF 문서를 생성하는 동안 적용할 설정이 포함된 객체입니다. 이 정보가 제공되지 않으면 이전 세 매개 변수를 기반으로 설정이 자동으로 선택됩니다.
-   * 선택 사항입니다 `com.adobe.idp.Document` PDF 문서에 적용할 메타데이터 정보가 포함된 객체입니다.
+   * 변환할 HTML 파일의 URL이 포함된 `java.lang.String` 개체입니다.
+   * 변환에 사용할 파일 형식 설정이 포함된 `java.lang.String` 개체입니다. 파일 유형 설정에는 스파이더 수준이 포함될 수 있습니다.
+   * 사용할 보안 설정의 이름이 포함된 `java.lang.String` 개체입니다.
+   * PDF 문서를 생성하는 동안 적용할 설정이 포함된 선택적 `com.adobe.idp.Document` 개체입니다. 이 정보가 제공되지 않으면 이전 세 매개 변수를 기반으로 설정이 자동으로 선택됩니다.
+   * PDF 문서에 적용할 메타데이터 정보가 포함된 선택적 `com.adobe.idp.Document` 개체입니다.
 
 1. 결과를 검색합니다.
 
-   다음 `htmlToPDF2` 메서드가 다음을 반환합니다. `HtmlToPdfResult` 생성된 새 PDF 문서가 포함된 개체입니다. 새로 만든 PDF 문서를 가져오려면 다음 작업을 수행합니다.
+   `htmlToPDF2` 메서드가 생성된 새 PDF 문서를 포함하는 `HtmlToPdfResult` 개체를 반환합니다. 새로 만든 PDF 문서를 가져오려면 다음 작업을 수행합니다.
 
-   * 호출 `HtmlToPdfResult` 개체 `getCreatedDocument` 메서드를 사용합니다. 이 값은 `com.adobe.idp.Document` 개체.
-   * 호출 `com.adobe.idp.Document` 개체 `copyToFile` 이전 단계에서 만든 객체에서 PDF 문서를 추출하는 방법입니다.
+   * `HtmlToPdfResult` 개체의 `getCreatedDocument` 메서드를 호출합니다. `com.adobe.idp.Document` 개체를 반환합니다.
+   * 이전 단계에서 만든 개체에서 PDF 문서를 추출하려면 `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하십시오.
 
 **추가 참조**
 
@@ -357,24 +357,24 @@ PDF API 생성(웹 서비스)을 사용하여 HTML 컨텐츠를 PDF 문서로 �
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. PDF 클라이언트 생성을 참조하십시오.
 
-   * 만들기 `GeneratePDFServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `GeneratePDFServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 단, 을 지정합니다. `?blob=mtom`.
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `GeneratePDFServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `GeneratePDFServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `GeneratePDFServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). `lc_version` 특성은 사용할 필요가 없습니다. 그러나 `?blob=mtom`을(를) 지정하십시오.
+   * `GeneratePDFServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+      * `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `GeneratePDFServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. HTML 콘텐츠를 검색하여 PDF 문서로 변환합니다.
 
@@ -382,21 +382,21 @@ PDF API 생성(웹 서비스)을 사용하여 HTML 컨텐츠를 PDF 문서로 �
 
 1. HTML 콘텐츠를 PDF 문서로 변환합니다.
 
-   를 호출하여 HTML 콘텐츠를 PDF 문서로 변환합니다. `GeneratePDFServiceService` 개체 `HtmlToPDF2` 메서드를 실행하고 다음 값을 전달합니다.
+   `GeneratePDFServiceService` 개체의 `HtmlToPDF2` 메서드를 호출하여 HTML 내용을 PDF 문서로 변환하고 다음 값을 전달하십시오.
 
    * 변환할 HTML 콘텐츠가 포함된 문자열입니다.
-   * A `java.lang.String` 변환에 사용할 파일 형식 설정을 포함하는 개체입니다.
+   * 변환에 사용할 파일 형식 설정이 포함된 `java.lang.String` 개체입니다.
    * 사용할 보안 설정이 포함된 문자열 개체입니다.
-   * 선택 사항입니다 `BLOB` PDF 문서를 생성하는 동안 적용할 설정이 포함된 객체입니다.
-   * 선택 사항입니다 `BLOB` PDF 문서에 적용할 메타데이터 정보가 포함된 객체입니다.
-   * 유형의 출력 매개 변수 `BLOB` 이 채우는 사람: `CreatePDF2` 메서드를 사용합니다. 다음 `CreatePDF2` 메서드는 변환된 문서로 이 개체를 채웁니다. (이 매개 변수 값은 웹 서비스 호출에만 필요합니다.)
+   * PDF 문서를 생성하는 동안 적용할 설정이 포함된 선택적 `BLOB` 개체입니다.
+   * PDF 문서에 적용할 메타데이터 정보가 포함된 선택적 `BLOB` 개체입니다.
+   * `CreatePDF2` 메서드로 채워진 `BLOB` 형식의 출력 매개 변수입니다. `CreatePDF2` 메서드는 변환된 문서로 이 개체를 채웁니다. (이 매개 변수 값은 웹 서비스 호출에만 필요합니다.)
 
 1. 결과를 검색합니다.
 
-   * 를 할당하여 변환된 PDF 문서 검색 `BLOB` 개체 `MTOM` 필드를 바이트 배열로 바꿉니다. 바이트 배열은 변환된 PDF 문서를 나타냅니다. 다음을 사용하십시오. `BLOB` 의 출력 매개 변수로 사용되는 개체입니다 `HtmlToPDF2` 메서드를 사용합니다.
-   * 만들기 `System.IO.FileStream` 개체를 호출하고 변환된 PDF 문서의 파일 위치를 나타내는 문자열 값을 전달합니다.
-   * 만들기 `System.IO.BinaryWriter` 개체를 호출하고 `System.IO.FileStream` 개체.
-   * 를 호출하여 바이트 배열의 내용을 PDF 파일에 씁니다 `System.IO.BinaryWriter` 개체 `Write` 메서드 및 바이트 배열 전달.
+   * `BLOB` 개체의 `MTOM` 필드를 바이트 배열에 할당하여 변환된 PDF 문서를 검색합니다. 바이트 배열은 변환된 PDF 문서를 나타냅니다. `HtmlToPDF2` 메서드의 출력 매개 변수로 사용되는 `BLOB` 개체를 사용해야 합니다.
+   * 해당 생성자를 호출하고 변환된 PDF 문서의 파일 위치를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
+   * `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일에 씁니다.
 
 **추가 참조**
 
@@ -412,7 +412,7 @@ PDF API 생성(웹 서비스)을 사용하여 HTML 컨텐츠를 PDF 문서로 �
 
 >[!NOTE]
 >
->PDF 생성 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 서비스 생성에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-2}
 
@@ -430,7 +430,7 @@ PDF 문서를 지원되는 유형으로 변환하려면 다음 단계를 수행�
 
 **PDF 클라이언트 생성**
 
-PDF 생성 작업을 프로그래밍 방식으로 수행하려면 먼저 PDF 서비스 생성 클라이언트를 만들어야 합니다. Java API를 사용하는 경우 `GeneratePdfServiceClient` 개체. 웹 서비스 API를 사용하는 경우 `GeneratePDFServiceService` 개체.
+PDF 생성 작업을 프로그래밍 방식으로 수행하려면 먼저 PDF 서비스 생성 클라이언트를 만들어야 합니다. Java API를 사용하는 경우 `GeneratePdfServiceClient` 개체를 만듭니다. 웹 서비스 API를 사용하는 경우 `GeneratePDFServiceService` 개체를 만듭니다.
 
 **변환할 PDF 문서 검색**
 
@@ -440,7 +440,7 @@ PDF 문서를 검색하여 이미지가 아닌 형식으로 변환합니다.
 
 서비스 클라이언트를 만든 후 PDF 내보내기 작업을 호출할 수 있습니다. 이 작업에는 대상 문서에 대한 경로를 포함하여 변환할 문서에 대한 정보가 필요합니다.
 
-**변환된 파일을 저장합니다.**
+**변환된 파일을 저장**
 
 변환된 파일을 저장합니다. 예를 들어 PDF 문서를 RTF 파일로 변환하는 경우 변환된 문서를 RTF 파일로 저장합니다.
 
@@ -466,31 +466,31 @@ PDF API 생성(Java)을 사용하여 PDF 문서를 RTF 파일로 변환:
 
 1. PDF 클라이언트 생성을 참조하십시오.
 
-   만들기 `GeneratePdfServiceClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `GeneratePdfServiceClient` 개체를 만듭니다.
 
 1. 변환할 PDF 문서를 검색합니다.
 
-   * 만들기 `java.io.FileInputStream` 생성자를 사용하여 변환할 PDF 문서를 나타내는 개체입니다. PDF 문서의 위치를 지정하는 문자열 값을 전달합니다.
-   * 만들기 `com.adobe.idp.Document` 개체를 생성자를 사용하고 `java.io.FileInputStream` 개체.
+   * 생성자를 사용하여 변환할 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다. PDF 문서의 위치를 지정하는 문자열 값을 전달합니다.
+   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
 
 1. PDF 문서를 변환합니다.
 
-   호출 `GeneratePdfServiceClient` 개체 `exportPDF2` 메서드를 실행하고 다음 값을 전달합니다.
+   `GeneratePdfServiceClient` 개체의 `exportPDF2` 메서드를 호출하고 다음 값을 전달하십시오.
 
-   * A `com.adobe.idp.Document` 변환할 PDF 파일을 나타내는 개체입니다.
-   * A `java.lang.String` 변환할 파일의 이름이 포함된 개체입니다.
-   * A `java.lang.String` Adobe PDF 설정의 이름이 포함된 개체입니다.
-   * A `ConvertPDFFormatType` 변환할 대상 파일 형식을 지정하는 개체입니다.
-   * 선택 사항입니다 `com.adobe.idp.Document` PDF 문서를 생성하는 동안 적용할 설정이 포함된 객체입니다.
+   * 변환할 PDF 파일을 나타내는 `com.adobe.idp.Document` 개체입니다.
+   * 변환할 파일의 이름을 포함하는 `java.lang.String` 개체입니다.
+   * Adobe PDF 설정의 이름을 포함하는 `java.lang.String` 개체입니다.
+   * 변환용 대상 파일 형식을 지정하는 `ConvertPDFFormatType` 개체입니다.
+   * PDF 문서를 생성하는 동안 적용할 설정이 포함된 선택적 `com.adobe.idp.Document` 개체입니다.
 
-   다음 `exportPDF2` 메서드가 다음을 반환합니다. `ExportPDFResult` 변환된 파일을 포함하는 개체입니다.
+   `exportPDF2` 메서드가 변환된 파일을 포함하는 `ExportPDFResult` 개체를 반환합니다.
 
 1. PDF 문서를 변환합니다.
 
    새로 만든 파일을 가져오려면 다음 작업을 수행합니다.
 
-   * 호출 `ExportPDFResult` 개체 `getConvertedDocument` 메서드를 사용합니다. 이 값은 `com.adobe.idp.Document` 개체.
-   * 호출 `com.adobe.idp.Document` 개체 `copyToFile` 메서드를 사용하여 새 문서를 추출할 수 있습니다.
+   * `ExportPDFResult` 개체의 `getConvertedDocument` 메서드를 호출합니다. `com.adobe.idp.Document` 개체를 반환합니다.
+   * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하여 새 문서를 추출하십시오.
 
 **추가 참조**
 
@@ -508,50 +508,50 @@ PDF API 생성(웹 서비스)을 사용하여 PDF 문서를 RTF 파일로 변환
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용하는지 확인합니다. `http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. WSDL 정의 `http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`을(를) 사용하는지 확인하십시오.
 
    >[!NOTE]
    >
-   >바꾸기 `localhost` AEM Forms을 호스팅하는 서버의 IP 주소입니다.
+   >`localhost`을(를) AEM Forms을 호스팅하는 서버의 IP 주소로 바꾸십시오.
 
 1. PDf 클라이언트 생성을 참조하십시오.
 
-   * 만들기 `GeneratePDFServiceClient` 기본 생성자를 사용하여 개체를 작성합니다.
-   * 만들기 `GeneratePDFServiceClient.Endpoint.Address` 을 사용하여 개체 `System.ServiceModel.EndpointAddress` 생성자입니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) 를 사용할 필요가 없습니다. `lc_version` 특성. 단, 을 지정합니다. `?blob=mtom`.
-   * 만들기 `System.ServiceModel.BasicHttpBinding` 의 값을 가져와서 개체 `GeneratePDFServiceClient.Endpoint.Binding` 필드. 반환 값을 다음으로 캐스트 `BasicHttpBinding`.
-   * 설정 `System.ServiceModel.BasicHttpBinding` 개체 `MessageEncoding` 필드 대상 `WSMessageEncoding.Mtom`. 이 값은 MTOM이 사용되도록 합니다.
+   * 기본 생성자를 사용하여 `GeneratePDFServiceClient` 개체를 만듭니다.
+   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `GeneratePDFServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). `lc_version` 특성은 사용할 필요가 없습니다. 그러나 `?blob=mtom`을(를) 지정하십시오.
+   * `GeneratePDFServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * 필드에 AEM Forms 사용자 이름 할당 `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * 해당 암호 값을 필드에 할당합니다. `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * 상수 값 지정 `HttpClientCredentialType.Basic` 필드에 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * 상수 값 지정 `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`.
+      * `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+      * 필드 `GeneratePDFServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 변환할 PDF 문서를 검색합니다.
 
-   * 만들기 `BLOB` 개체를 만들 때 사용됩니다. 다음 `BLOB` 객체는 변환된 PDF 문서를 저장하는 데 사용됩니다.
-   * 만들기 `System.IO.FileStream` PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
-   * 의 콘텐츠를 저장하는 바이트 배열 만들기 `System.IO.FileStream` 개체. 를 가져와서 바이트 배열의 크기를 결정할 수 있습니다 `System.IO.FileStream` 개체 `Length` 속성.
-   * 를 호출하여 바이트 배열을 스트림 데이터로 채우기 `System.IO.FileStream` 개체 `Read` 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하는 방법.
-   * 채우기 `BLOB` 에 할당하여 오브젝트 `MTOM` 속성을 바이트 배열의 내용으로 지정합니다.
+   * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 변환된 PDF 문서를 저장하는 데 사용됩니다.
+   * 해당 생성자를 호출하고 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
+   * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
+   * 바이트 배열의 내용을 해당 `MTOM` 속성에 할당하여 `BLOB` 개체를 채웁니다.
 
 1. PDF 문서를 변환합니다.
 
-   호출 `GeneratePDFServiceServiceWse` 개체 `ExportPDF2` 메서드를 실행하고 다음 값을 전달합니다.
+   `GeneratePDFServiceServiceWse` 개체의 `ExportPDF2` 메서드를 호출하고 다음 값을 전달하십시오.
 
-   * A `BLOB` 변환할 PDF 파일을 나타내는 개체입니다.
+   * 변환할 PDF 파일을 나타내는 `BLOB` 개체입니다.
    * 변환할 파일의 경로 이름이 포함된 문자열입니다.
-   * A `java.lang.String` 파일 위치를 지정하는 개체입니다.
-   * 변환의 대상 파일 유형을 지정하는 문자열 객체입니다. 지정 `RTF`.
-   * 선택 사항입니다 `BLOB` PDF 문서를 생성하는 동안 적용할 설정이 포함된 객체입니다.
-   * 유형의 출력 매개 변수 `BLOB` 이 채우는 사람: `ExportPDF2` 메서드를 사용합니다. 다음 `ExportPDF2` 메서드는 변환된 문서로 이 개체를 채웁니다. (이 매개 변수 값은 웹 서비스 호출에만 필요합니다.)
+   * 파일 위치를 지정하는 `java.lang.String` 개체입니다.
+   * 변환의 대상 파일 유형을 지정하는 문자열 객체입니다. `RTF`을(를) 지정하십시오.
+   * PDF 문서를 생성하는 동안 적용할 설정이 포함된 선택적 `BLOB` 개체입니다.
+   * `ExportPDF2` 메서드로 채워진 `BLOB` 형식의 출력 매개 변수입니다. `ExportPDF2` 메서드는 변환된 문서로 이 개체를 채웁니다. (이 매개 변수 값은 웹 서비스 호출에만 필요합니다.)
 
 1. 변환된 파일을 저장합니다.
 
-   * 를 할당하여 변환된 RTF 문서 검색 `BLOB` 개체 `MTOM` 필드를 바이트 배열로 바꿉니다. 바이트 배열은 변환된 RTF 문서를 나타냅니다. 다음을 사용하십시오. `BLOB` 의 출력 매개 변수로 사용되는 개체입니다 `ExportPDF2` 메서드를 사용합니다.
-   * 만들기 `System.IO.FileStream` 해당 생성자를 호출하여 개체를 작성합니다. RTF 파일의 위치를 나타내는 문자열 값을 전달합니다.
-   * 만들기 `System.IO.BinaryWriter` 개체를 호출하고 `System.IO.FileStream` 개체.
-   * RTF 파일에 바이트 배열의 내용을 `System.IO.BinaryWriter` 개체 `Write` 메서드 및 바이트 배열 전달.
+   * `BLOB` 개체의 `MTOM` 필드를 바이트 배열에 할당하여 변환된 RTF 문서를 검색하십시오. 바이트 배열은 변환된 RTF 문서를 나타냅니다. `ExportPDF2` 메서드의 출력 매개 변수로 사용되는 `BLOB` 개체를 사용해야 합니다.
+   * 해당 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. RTF 파일의 위치를 나타내는 문자열 값을 전달합니다.
+   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
+   * `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 RTF 파일에 씁니다.
 
 **추가 참조**
 
@@ -579,9 +579,9 @@ PDF 생성 서비스는 파일 형식과 연관된 응용 프로그램을 호출
 
 기본 파일 변환을 위한 구성 요소 상호 작용
 
-이 문서에서는 다음 용어를 사용합니다 *기본 애플리케이션* Microsoft Word와 같은 기본 파일 형식을 생성하는 데 사용되는 응용 프로그램을 나타냅니다.
+이 문서에서는 *기본 응용 프로그램*&#x200B;이라는 용어를 사용하여 Microsoft Word와 같은 기본 파일 형식을 생성하는 데 사용되는 응용 프로그램을 나타냅니다.
 
-*AppMon* 는 사용자가 기본 애플리케이션에서 제공하는 대화 상자를 탐색하는 것과 같은 방식으로 기본 애플리케이션과 상호 작용하는 엔터프라이즈 구성 요소입니다. AppMon에서 Microsoft Word와 같은 애플리케이션에 이러한 순차적 작업이 포함된 파일을 열고 인쇄하도록 지시하는 데 사용되는 XML 문법입니다.
+*AppMon*&#x200B;은 사용자가 기본 응용 프로그램에서 제공하는 대화 상자를 탐색하는 것과 같은 방식으로 기본 응용 프로그램과 상호 작용하는 엔터프라이즈 구성 요소입니다. AppMon에서 Microsoft Word와 같은 애플리케이션에 이러한 순차적 작업이 포함된 파일을 열고 인쇄하도록 지시하는 데 사용되는 XML 문법입니다.
 
 1. 파일 > 열기를 선택하여 파일 열기
 1. 열기(Open) 대화상자가 나타나는지 확인하고 나타나지 않으면 오류를 처리합니다.
@@ -594,7 +594,7 @@ AppMon은 표준 Win32 API를 사용하여 서드파티 애플리케이션과 �
 
 이러한 Win32 API의 제한으로 인해 AppMon은 이러한 UI 이벤트를 부동 메뉴 막대(TextPad와 같은 일부 응용 프로그램에 있음) 및 Win32 API를 사용하여 콘텐츠를 검색할 수 없는 특정 종류의 대화 상자와 같은 일부 특정 종류의 창에 발송할 수 없습니다.
 
-부동 메뉴 모음을 시각적으로 쉽게 식별할 수 있지만 시각적 검사만으로 특수 유형의 대화 상자를 식별할 수는 없습니다. Microsoft Spy++(Microsoft Visual C++ 개발 환경의 일부) 또는 이와 동등한 WinID(다음에서 무료로 다운로드할 수 있음)와 같은 타사 애플리케이션이 필요합니다. [https://www.dennisbabkin.com/php/download.php?what=WinID](https://www.dennisbabkin.com/php/download.php?what=WinID)) 대화 상자를 검사하여 AppMon이 표준 Win32 API를 사용하여 상호 작용할 수 있는지 확인합니다.
+부동 메뉴 모음을 시각적으로 쉽게 식별할 수 있지만 시각적 검사만으로 특수 유형의 대화 상자를 식별할 수는 없습니다. AppMon이 표준 Win32 API를 사용하여 Microsoft과 상호 작용할 수 있는지 확인하기 위한 대화 상자를 검사하려면 Microsoft Spy++(Visual C++ 개발 환경의 일부) 또는 이와 동등한 WinID([https://www.dennisbabkin.com/php/download.php?what=WinID](https://www.dennisbabkin.com/php/download.php?what=WinID)에서 무료로 다운로드할 수 있음)와 같은 타사 애플리케이션이 필요합니다.
 
 WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 상자 콘텐츠를 추출할 수 있는 경우 AppMon도 동일한 작업을 수행할 수 있습니다.
 
@@ -612,12 +612,12 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 상자 콘
   <tr>
    <td><p>관리 설정 </p></td>
    <td><p>PDF 설정, 보안 설정 및 파일 유형 설정을 포함합니다. </p><p>파일 형식 설정은 파일 이름 확장자를 해당 기본 응용 프로그램과 연결합니다. 파일 형식 설정은 기본 파일을 인쇄하는 데 사용되는 기본 응용 프로그램 설정도 지정합니다. </p></td>
-   <td><p>이미 지원되는 기본 응용 프로그램의 설정을 변경하려면 시스템 관리자가 관리 콘솔에서 파일 유형 설정을 설정합니다. </p><p>새 기본 파일 형식에 대한 지원을 추가하려면 파일을 수동으로 편집해야 합니다. (참조: <a href="converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format">기본 파일 형식에 대한 지원 추가 또는 수정</a>.) </p></td>
+   <td><p>이미 지원되는 기본 응용 프로그램의 설정을 변경하려면 시스템 관리자가 관리 콘솔에서 파일 유형 설정을 설정합니다. </p><p>새 기본 파일 형식에 대한 지원을 추가하려면 파일을 수동으로 편집해야 합니다. <a href="converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format">기본 파일 형식에 대한 지원 추가 또는 수정</a>을 참조하세요. </p></td>
   </tr>
   <tr>
    <td><p>스크립트 </p></td>
    <td><p>PDF 생성 서비스와 기본 응용 프로그램 간의 상호 작용을 지정합니다. 이러한 상호 작용은 일반적으로 애플리케이션이 Adobe PDF 드라이버에 파일을 인쇄하도록 합니다. </p><p>스크립트에는 기본 응용 프로그램에서 특정 대화 상자를 열고 해당 대화 상자의 필드 및 단추에 특정 응답을 제공하는 지침이 포함되어 있습니다. </p></td>
-   <td><p>PDF 생성 서비스에는 지원되는 모든 기본 응용 프로그램에 대한 스크립트 파일이 포함되어 있습니다. XML 편집 응용 프로그램을 사용하여 이러한 파일을 수정할 수 있습니다.</p><p>새 기본 응용 프로그램에 대한 지원을 추가하려면 스크립트 파일을 만들어야 합니다. (참조: <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 생성 또는 수정</a>.) </p></td>
+   <td><p>PDF 생성 서비스에는 지원되는 모든 기본 응용 프로그램에 대한 스크립트 파일이 포함되어 있습니다. XML 편집 응용 프로그램을 사용하여 이러한 파일을 수정할 수 있습니다.</p><p>새 기본 응용 프로그램에 대한 지원을 추가하려면 스크립트 파일을 만들어야 합니다. <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정</a>을 참조하십시오. </p></td>
   </tr>
   <tr>
    <td><p>일반 대화 상자 지침 </p></td>
@@ -626,13 +626,13 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 상자 콘
   </tr>
   <tr>
    <td><p>애플리케이션별 대화 상자 지침</p></td>
-   <td><p>응용 프로그램별 대화 상자에 응답하는 방법을 지정합니다. </p><p>이 정보가 포함된 파일은 appmon입니다.<i>"[appname]"</i>.dialog.<i>"[locale]"</i>.xml (예: appmon.word.en_US.xml)</p></td>
-   <td><p>이 파일을 수정하지 마십시오. </p><p>새 기본 응용 프로그램에 대한 대화 상자 지침을 추가하려면 <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 생성 또는 수정</a>.</p></td>
+   <td><p>응용 프로그램별 대화 상자에 응답하는 방법을 지정합니다. </p><p>이 정보가 포함된 파일은 appmon입니다.<i>`[appname]`</i>.dialog.<i>`[locale]`</i>.xml(예: appmon.word.en_US.xml).</p></td>
+   <td><p>이 파일을 수정하지 마십시오. </p><p>새 기본 응용 프로그램에 대한 대화 상자 지침을 추가하려면 <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정</a>을 참조하십시오.</p></td>
   </tr>
   <tr>
    <td><p>애플리케이션별 추가 대화 상자 지침 </p></td>
-   <td><p>응용 프로그램별 대화 상자 지침에 대한 재정의 및 추가 사항을 지정합니다. 섹션에는 이러한 정보의 예가 나와 있습니다. </p><p>이 정보가 포함된 파일은 appmon입니다.<i>"[appname]"</i>.addition.<i>"[locale]"</i>.xml. 예로는 appmon.addition.en_US.xml이 있습니다.</p></td>
-   <td><p>이 유형의 파일은 XML 편집 응용 프로그램을 사용하여 만들고 수정할 수 있습니다. (참조: <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 생성 또는 수정</a>.) </p><p><strong>중요 사항</strong>: 서버에서 지원할 각 기본 애플리케이션에 대한 추가 애플리케이션별 대화 상자 지침을 만듭니다. </p></td>
+   <td><p>응용 프로그램별 대화 상자 지침에 대한 재정의 및 추가 사항을 지정합니다. 섹션에는 이러한 정보의 예가 나와 있습니다. </p><p>이 정보가 포함된 파일은 appmon입니다.<i>`[appname]`</i>.추가.<i>`[locale]`</i>.xml. 예로는 appmon.addition.en_US.xml이 있습니다.</p></td>
+   <td><p>이 유형의 파일은 XML 편집 응용 프로그램을 사용하여 만들고 수정할 수 있습니다. <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정</a>을 참조하십시오. </p><p><strong>중요</strong>: 서버에서 지원할 각 기본 응용 프로그램에 대한 응용 프로그램별 대화 상자 지침을 추가로 만듭니다. </p></td>
   </tr>
  </tbody>
 </table>
@@ -647,13 +647,13 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 상자 콘
 
 이 섹션과 다음 섹션에서는 설명하는 관점에 따라 대화 상자와 대화 상자에 포함된 구성 요소에 대해 서로 다른 용어를 사용합니다. 대화 상자 구성 요소는 단추, 필드 및 콤보 상자와 같은 항목입니다.
 
-이 섹션과 다음 섹션에서 사용자의 관점에서 대화상자와 해당 구성 요소를 설명할 때 다음과 같은 용어가 사용됩니다. *대화 상자*, *단추*, *필드*, 및 *콤보 상자* 를 사용합니다.
+이 섹션과 다음 섹션에서 사용자의 관점에서 대화 상자와 구성 요소에 대해 설명하는 경우 *대화 상자*, *단추*, *필드*, *콤보 상자*&#x200B;와 같은 용어가 사용됩니다.
 
-이 섹션과 다음 섹션에서 내부 표현의 관점에서 대화상자와 해당 구성 요소를 설명할 때 *창 요소* 를 사용합니다. 창 요소의 내부 표현은 계층입니다. 여기서 각 창 요소 인스턴스는 레이블로 식별됩니다. window 요소 인스턴스는 해당 실제 특성과 비헤이비어도 설명합니다.
+이 섹션과 다음 섹션에서 내부 표현의 관점에서 대화 상자와 해당 구성 요소를 설명하는 경우 *window 요소*&#x200B;라는 용어가 사용됩니다. 창 요소의 내부 표현은 계층입니다. 여기서 각 창 요소 인스턴스는 레이블로 식별됩니다. window 요소 인스턴스는 해당 실제 특성과 비헤이비어도 설명합니다.
 
 사용자의 관점에서 볼 때 대화 상자와 해당 구성 요소에는 서로 다른 비헤이비어가 표시되며, 일부 대화 상자 요소는 활성화될 때까지 숨겨집니다. 내부 재현의 관점에서 보면, 그러한 행동 문제는 존재하지 않는다. 예를 들어, 대화 상자의 내부 표현은 대화 상자 내에서 컴포넌트가 중첩된다는 점을 제외하면 포함된 컴포넌트의 내부 표현과 유사합니다.
 
-이 섹션에서는 AppMon에 지침을 제공하는 XML 요소에 대해 설명합니다. 이러한 요소에는 다음과 같은 이름이 있습니다 `dialog` 요소 및 `window` 요소를 생성하지 않습니다. 이 문서에서는 XML 요소를 구별하기 위해 고정 폭 글꼴을 사용합니다. 다음 `dialog` 요소는 XML 스크립트 파일이 의도적으로 또는 실수로 표시될 수 있는 대화 상자를 식별합니다. 다음 `window` 요소는 창 요소(대화 상자 또는 대화 상자의 구성 요소)를 식별합니다.
+이 섹션에서는 AppMon에 지침을 제공하는 XML 요소에 대해 설명합니다. 이러한 요소에는 `dialog` 요소 및 `window` 요소 등의 이름이 있습니다. 이 문서에서는 XML 요소를 구별하기 위해 고정 폭 글꼴을 사용합니다. `dialog` 요소는 XML 스크립트 파일이 의도적으로 또는 실수로 표시될 수 있는 대화 상자를 식별합니다. `window` 요소는 창 요소(대화 상자 또는 대화 상자의 구성 요소)를 식별합니다.
 
 #### 계층 {#hierarchy}
 
@@ -665,7 +665,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 상자 콘
 
 #### 스크립트 XML 파일 {#script-xml-files}
 
-A *스크립트 XML 파일* 기본 응용 프로그램이 특정 창 요소로 이동한 다음 해당 요소에 대한 응답을 제공하도록 지정하는 일련의 단계를 지정합니다. 대부분의 응답은 사용자가 해당 대화 상자의 필드, 콤보 상자 또는 단추에 제공하는 입력에 해당하는 텍스트 또는 키 입력입니다.
+*스크립트 XML 파일*&#x200B;은(는) 기본 응용 프로그램에서 특정 창 요소로 이동한 다음 해당 요소에 대한 응답을 제공하도록 지정하는 일련의 단계를 지정합니다. 대부분의 응답은 사용자가 해당 대화 상자의 필드, 콤보 상자 또는 단추에 제공하는 입력에 해당하는 텍스트 또는 키 입력입니다.
 
 PDF 생성 서비스의 스크립트 XML 파일 지원 목적은 기본 응용 프로그램이 기본 파일을 인쇄하도록 하는 것입니다. 그러나 스크립트 XML 파일을 사용하여 사용자가 기본 응용 프로그램의 대화 상자와 상호 작용할 때 수행할 수 있는 모든 작업을 수행할 수 있습니다.
 
@@ -679,15 +679,15 @@ PDF 생성 서비스의 스크립트 XML 파일 지원 목적은 기본 응용 �
 
 기본 응용 프로그램을 실행하면 기본 응용 프로그램이 표시 모드인지 또는 보이지 않는 모드인지에 관계없이 표시되는 서로 다른 대화 상자가 표시됩니다. 대화 상자는 운영 체제 또는 응용 프로그램 자체에서 생성할 수 있습니다. 기본 응용 프로그램이 PDF 생성 서비스의 제어로 실행될 때 시스템 및 기본 응용 프로그램 대화 상자가 보이지 않는 창에 표시됩니다.
 
-A *대화 상자 XML 파일* PDF 서비스 생성이 시스템 또는 기본 응용 프로그램 대화 상자에 응답하는 방식을 지정합니다. 대화 상자 XML 파일을 사용하면 PDF 생성 서비스가 전환 프로세스를 용이하게 하는 방식으로 메시지가 표시되지 않는 대화 상자에 응답할 수 있습니다.
+*대화 상자 XML 파일*&#x200B;은(는) PDF 생성 서비스가 시스템 또는 기본 응용 프로그램 대화 상자에 응답하는 방식을 지정합니다. 대화 상자 XML 파일을 사용하면 PDF 생성 서비스가 전환 프로세스를 용이하게 하는 방식으로 메시지가 표시되지 않는 대화 상자에 응답할 수 있습니다.
 
 시스템 또는 기본 응용 프로그램에 현재 실행 중인 스크립트 XML 파일이 처리하지 않는 대화 상자가 표시되면 PDF 생성 서비스는 대화 상자 XML 파일을 이 순서로 검색하여 일치하는 항목을 찾으면 중지합니다.
 
-* appmon.`[appname]`.additional.`[locale]`.xml
-* appmon.`[appname]``[locale]`.xml (이 파일을 수정하지 마십시오.)
-* appmon.global.`[locale]`.xml (이 파일을 수정하지 마십시오.)
+* appmon.`[appname]`.추가.`[locale]`.xml
+* appmon.`[appname]``[locale]`.xml(이 파일을 수정하지 마십시오.)
+* appmon.global.`[locale]`.xml(이 파일을 수정하지 마십시오.)
 
-PDF 생성 서비스가 대화 상자에 대해 일치하는 항목을 찾으면 대화 상자에 대해 지정된 키 입력이나 기타 작업을 보내어 이를 무시합니다. 대화 상자에 대한 지침이 중단 메시지를 지정하면 PDF 생성 서비스는 현재 실행 중인 작업을 종료하고 오류 메시지를 생성합니다. 이러한 중단 메시지는 다음에서 지정됩니다. `abortMessage` 요소를 스크립트 XML 문법에 포함합니다.
+PDF 생성 서비스가 대화 상자에 대해 일치하는 항목을 찾으면 대화 상자에 대해 지정된 키 입력이나 기타 작업을 보내어 이를 무시합니다. 대화 상자에 대한 지침이 중단 메시지를 지정하면 PDF 생성 서비스는 현재 실행 중인 작업을 종료하고 오류 메시지를 생성합니다. 이러한 중단 메시지는 스크립트 XML 문법의 `abortMessage` 요소에 지정됩니다.
 
 PDF 생성 서비스에 이전에 나열된 파일에서 설명되지 않은 대화 상자가 나타나면 PDF 생성 서비스는 대화 상자의 캡션을 로그 파일 항목에 통합합니다. 현재 실행 중인 작업이 결국 시간 초과됩니다. 그런 다음 로그 파일의 정보를 사용하여 기본 응용 프로그램에 대한 추가 대화 상자 XML 파일에 새 명령을 작성할 수 있습니다.
 
@@ -709,13 +709,13 @@ PDF 생성 서비스에 이전에 나열된 파일에서 설명되지 않은 대
 
 이 세 가지 속성 중 어느 하나 또는 이들의 조합을 이용하여 창을 식별할 수 있다.
 
-속성이 캡션을 식별하지 못하는 경우 대신 상위와 관련된 인덱스를 사용하여 창 요소를 식별할 수 있습니다. An *index* 형제 창 요소를 기준으로 창 요소의 위치를 지정합니다. 색인이 콤보 상자를 식별하는 유일한 방법인 경우가 많습니다.
+속성이 캡션을 식별하지 못하는 경우 대신 상위와 관련된 인덱스를 사용하여 창 요소를 식별할 수 있습니다. *index*&#x200B;은(는) 형제 창 요소를 기준으로 창 요소의 위치를 지정합니다. 색인이 콤보 상자를 식별하는 유일한 방법인 경우가 많습니다.
 
 다음 문제를 숙지하십시오.
 
-* Microsoft Spy++는 앰퍼샌드(&amp;)를 사용하여 캡션의 바로 가기 키를 식별하여 캡션을 표시합니다. 예를 들어 Spy++는 하나의 인쇄 대화 상자에 대한 캡션을 다음과 같이 표시합니다. `Pri&nt`: 핫키가 *n*. 스크립트 및 대화 상자 XML 파일의 캡션 제목에는 앰퍼샌드를 생략해야 합니다.
-* 일부 캡션에는 줄 바꿈이 포함됩니다. PDF 생성 서비스에서 줄 바꿈을 식별할 수 없습니다. 캡션에 줄 바꿈이 포함된 경우 캡션을 충분히 포함시켜 다른 메뉴 항목과 구분한 다음 생략된 부분에 정규 표현식을 사용합니다. 예: ( `^Long caption title$`). (참조: [캡션 속성에서 정규 표현식 사용](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
-* 예약된 XML 문자에 문자 엔티티(이스케이프 시퀀스라고도 함)를 사용합니다. 예를 들어, `&` 앰퍼샌드의 경우 `<` 및 `>` 보다 작음 및 보다 큼 기호에 대해 `&apos;` 아포스트로피 `&quot;` 따옴표의 경우.
+* Microsoft Spy++는 앰퍼샌드(&amp;)를 사용하여 캡션의 바로 가기 키를 식별하여 캡션을 표시합니다. 예를 들어 Spy++는 하나의 인쇄 대화 상자에 대한 캡션을 `Pri&nt`(으)로 표시하며, 이는 핫키가 *n*&#x200B;임을 나타냅니다. 스크립트 및 대화 상자 XML 파일의 캡션 제목에는 앰퍼샌드를 생략해야 합니다.
+* 일부 캡션에는 줄 바꿈이 포함됩니다. PDF 생성 서비스에서 줄 바꿈을 식별할 수 없습니다. 캡션에 줄 바꿈이 포함된 경우 캡션을 충분히 포함시켜 다른 메뉴 항목과 구분한 다음 생략된 부분에 정규 표현식을 사용합니다. 예: ( `^Long caption title$`). 자세한 내용은 [캡션 특성에서 정규식 사용](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes)을 참조하세요.
+* 예약된 XML 문자에 문자 엔티티(이스케이프 시퀀스라고도 함)를 사용합니다. 예를 들어 앰퍼샌드의 경우 `&`, 보다 작거나 보다 큰 기호의 경우 `<` 및 `>`, 아포스트로피의 경우 `&apos;`, 따옴표의 경우 `&quot;`을 사용합니다.
 
 대화 상자 또는 스크립트 XML 파일에서 작업하려는 경우 응용 프로그램 Microsoft Spy++를 설치해야 합니다.
 
@@ -723,24 +723,24 @@ PDF 생성 서비스에 이전에 나열된 파일에서 설명되지 않은 대
 
 대화 상자 및 스크립트 파일은 appmondata.jar 파일에 있습니다. 이러한 파일을 수정하거나 새 스크립트 또는 대화 상자 파일을 추가하기 전에 이 JAR 파일의 패키지를 해제해야 합니다. 예를 들어 EditPlus 응용 프로그램에 대한 지원을 추가하려고 한다고 가정합니다. appmon.editplus.script.en_US.xml 및 appmon.editplus.script.addition.en_US.xml이라는 두 개의 XML 파일을 만듭니다. 이러한 XML 스크립트는 아래에 지정된 대로 두 위치의 adobe-appmondata.jar 파일에 추가해야 합니다.
 
-* adobe-livecycle-native-jboss-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. adobe-livecycle-native-jboss-x86_win32.ear 파일은 의 내보내기 폴더에 있습니다. `[AEM forms install directory]\configurationManager`. (AEM Forms이 다른 J2EE 애플리케이션 서버에 배포된 경우 adobe-livecycle-native-jboss-x86_win32.ear 파일을 J2EE 애플리케이션 서버에 해당하는 EAR 파일로 바꿉니다.)
-* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (adobe-appmondata.jar 파일은 adobe-generatepdf-dsc.jar 파일 내에 있음). adobe-generatepdf-dsc.jar 파일은 `[AEM forms install directory]\deploy` 폴더를 삭제합니다.
+* adobe-livecycle-native-jboss-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. adobe-livecycle-native-jboss-x86_win32.ear 파일이 `[AEM forms install directory]\configurationManager`의 내보내기 폴더에 있습니다. (AEM Forms이 다른 J2EE 애플리케이션 서버에 배포된 경우 adobe-livecycle-native-jboss-x86_win32.ear 파일을 J2EE 애플리케이션 서버에 해당하는 EAR 파일로 바꿉니다.)
+* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (adobe-appmondata.jar 파일은 adobe-generatepdf-dsc.jar 파일 내에 있음). adobe-generatepdf-dsc.jar 파일이 `[AEM forms install directory]\deploy` 폴더에 있습니다.
 
 이러한 XML 파일을 adobe-appmondata.jar 파일에 추가한 후 GeneratePDF 구성 요소를 다시 배포해야 합니다. 대화 상자 및 스크립트 XML 파일을 adobe-appmondata.jar 파일에 추가하려면 다음 작업을 수행합니다.
 
 1. WinZip 또는 WinRAR과 같은 도구를 사용하여 adobe-livecycle-native-jboss-x86_win32.earfile > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar 파일을 엽니다.
-1. 대화 상자 및 스크립트 XML 파일을 appmondata.jar 파일에 추가하거나 이 파일의 기존 XML 파일을 수정합니다. (참조: [기본 응용 프로그램에 대한 스크립트 XML 파일 생성 또는 수정](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)및 [기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 생성 또는 수정](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
+1. 대화 상자 및 스크립트 XML 파일을 appmondata.jar 파일에 추가하거나 이 파일의 기존 XML 파일을 수정합니다. [기본 응용 프로그램에 대한 스크립트 XML 파일 만들기 또는 수정](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)및 [기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application)을 참조하십시오.
 1. WinZip 또는 WinRAR과 같은 도구를 사용하여 adobe-generatepdf-dsc.jar > adobe-appmondata.jar을 엽니다.
-1. 대화 상자 및 스크립트 XML 파일을 appmondata.jar 파일에 추가하거나 이 파일의 기존 XML 파일을 수정합니다. (참조: [기본 응용 프로그램에 대한 스크립트 XML 파일 생성 또는 수정](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)및 [기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 생성 또는 수정](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) XML 파일을 adobe-appmondata.jar 파일에 추가한 후 새 adobe-appmondata.jar 파일을 adobe-generatepdf-dsc.jar 파일에 넣습니다.
-1. 추가 기본 파일 형식에 대한 지원을 추가한 경우 응용 프로그램의 경로를 제공하는 시스템 환경 변수를 만듭니다(참조) [기본 응용 프로그램을 찾기 위한 환경 변수 만들기](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application).)
+1. 대화 상자 및 스크립트 XML 파일을 appmondata.jar 파일에 추가하거나 이 파일의 기존 XML 파일을 수정합니다. [기본 응용 프로그램에 대한 스크립트 XML 파일 만들기 또는 수정](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)및 [기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application)을 참조하십시오. XML 파일을 adobe-appmondata.jar 파일에 추가한 후 새 adobe-appmondata.jar 파일을 adobe-generatepdf-dsc.jar 파일에 넣습니다.
+1. 추가 기본 파일 형식에 대한 지원을 추가한 경우 응용 프로그램의 경로를 제공하는 시스템 환경 변수를 만듭니다([기본 응용 프로그램을 찾기 위한 환경 변수 만들기](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application) 참조).
 
-**GeneratePDF 구성 요소를 재배포하려면**
+**GeneratePDF 구성 요소를 다시 배포하려면**
 
 1. 워크벤치에 로그인합니다.
-1. 선택 **창** > **보기 표시** > **구성 요소**. 이 작업을 수행하면 구성 요소 보기가 Workbench에 추가됩니다.
-1. GeneratePDF 구성 요소를 마우스 오른쪽 단추로 클릭하고 **구성 요소 중지**.
+1. **창** > **보기 표시** > **구성 요소**&#x200B;를 선택합니다. 이 작업을 수행하면 구성 요소 보기가 Workbench에 추가됩니다.
+1. GeneratePDF 구성 요소를 마우스 오른쪽 단추로 클릭한 다음 **구성 요소 중지**&#x200B;를 선택합니다.
 1. 구성 요소가 중지되면 마우스 오른쪽 단추를 클릭하고 구성 요소 제거 를 선택하여 제거합니다.
-1. 마우스 오른쪽 단추 클릭 **구성 요소** 아이콘 및 선택 **구성 요소 설치**.
+1. **구성 요소** 아이콘을 마우스 오른쪽 단추로 클릭하고 **구성 요소 설치**&#x200B;를 선택합니다.
 1. 수정된 adobe-generatepdf-dsc.jar 파일을 찾아 선택한 다음 열기 를 클릭합니다. GeneratePDF 구성 요소 옆에 빨간색 사각형이 표시됩니다.
 1. GeneratePDF 구성 요소를 확장하고 Service Descriptors 를 선택한 다음 GeneratePDFservice 를 마우스 오른쪽 단추로 클릭하고 Activate Service 를 선택합니다.
 1. 표시되는 구성 대화 상자에서 적용 가능한 구성 값을 입력합니다. 이 값을 비워 두면 기본 구성 값이 사용됩니다.
@@ -752,7 +752,7 @@ PDF 생성 서비스에 이전에 나열된 파일에서 설명되지 않은 대
 
 파일을 새 기본 응용 프로그램으로 보내려면 해당 응용 프로그램에 대한 스크립트 XML 파일을 만들어야 합니다. PDF 생성 서비스가 이미 지원되는 기본 응용 프로그램과 상호 작용하는 방법을 수정하려면 해당 응용 프로그램의 스크립트를 수정해야 합니다.
 
-스크립트에는 기본 응용 프로그램의 창 요소를 탐색하고 해당 요소에 특정 응답을 제공하는 지침이 포함되어 있습니다. 이 정보가 포함된 파일은 다음과 같습니다. `appmon.`[appname]&quot; `.script.`[로케일]`.xml`. 예를 들어 appmon.notepad.script.en_US.xml이 있습니다.
+스크립트에는 기본 응용 프로그램의 창 요소를 탐색하고 해당 요소에 특정 응답을 제공하는 지침이 포함되어 있습니다. 이 정보가 포함된 파일은 `appmon.`[appname]&quot;`.script.`[locale]`.xml`입니다. 예를 들어 appmon.notepad.script.en_US.xml이 있습니다.
 
 #### 스크립트가 실행해야 하는 단계 식별 {#identifying-steps-the-script-must-execute}
 
@@ -770,9 +770,9 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
 
 #### 캡션 속성에서 정규 표현식 사용 {#using-regular-expressions-in-caption-attributes}
 
-캡션 사양에 정규 표현식을 사용할 수 있습니다. PDF 생성 서비스에서는 `java.util.regex.Matcher` 클래스에서 정규식을 지원합니다. 해당 유틸리티는에 설명된 정규 표현식을 지원합니다. `java.util.regex.Pattern`.
+캡션 사양에 정규 표현식을 사용할 수 있습니다. PDF 생성 서비스는 `java.util.regex.Matcher` 클래스를 사용하여 정규식을 지원합니다. 해당 유틸리티는 `java.util.regex.Pattern`에 설명된 정규식을 지원합니다.
 
-**메모장 배너에서 메모장 앞에 오는 파일 이름을 포함하는 정규 표현식**
+**메모장 배너에서 메모장 앞에 오는 파일 이름을 포함하는 정규식입니다**
 
 ```xml
  <!-- The regular expression ".*Notepad" means any number of non-terminating characters followed by Notepad. -->
@@ -783,7 +783,7 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
  </step>
 ```
 
-**인쇄와 인쇄 설정을 구분하는 정규 표현식**
+**인쇄와 인쇄 설정을 구분하는 정규식**
 
 ```xml
  <!-- This regular expression differentiates the Print dialog box from the Print Setup dialog box. The "^" specifies the beginning of the line, and the "$" specifies the end of the line. -->
@@ -794,10 +794,10 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
 
 #### window 및 windowList 요소 순서 지정 {#ordering-the-window-and-windowlist-elements}
 
-주문 `window` 및 `windowList` 요소를 다음과 같이 지정합니다.
+다음과 같이 `window` 및 `windowList` 요소를 정렬합니다.
 
-* 여러 개인 경우 `window` 요소는 다음에 하위 요소로 표시됩니다. `windowList` 또는 `dialog` 요소, 순서 지정 `window` 요소(내림차순, 길이 포함) `caption` 순서대로 위치를 나타내는 이름.
-* 여러 개인 경우 `windowList` 요소에 나타나는 문자 `window` 요소, 순서 지정 `windowList` 요소(내림차순, 길이 포함) `caption` 첫 번째 속성 `indexes/`순서에서 위치를 나타내는 요소입니다.
+* 여러 `window` 요소가 `windowList` 또는 `dialog` 요소에 자식 요소로 나타나면 해당 `window` 요소의 순서를 내림차순으로 지정합니다. `caption` 이름의 길이는 순서의 위치를 나타냅니다.
+* 여러 `windowList` 요소가 `window` 요소에 나타나면 해당 `windowList` 요소의 순서를 내림차순으로 지정합니다. 첫 번째 `indexes/` 요소의 `caption` 특성 길이는 순서의 위치를 나타냅니다.
 
 **대화 상자 파일에서 창 요소 순서 지정**
 
@@ -843,26 +843,26 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
 
 ### 기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 생성 또는 수정 {#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application}
 
-이전에 지원되지 않았던 기본 응용 프로그램에 대한 스크립트를 만드는 경우 해당 응용 프로그램에 대한 추가 대화 상자 XML 파일도 만들어야 합니다. AppMon에서 사용하는 모든 기본 응용 프로그램에는 추가 대화 상자 XML 파일이 하나만 있어야 합니다. 요청하지 않은 대화 상자가 없는 경우에도 추가 대화 상자 XML 파일이 필요합니다. 추가 대화 상자에는 하나 이상의 대화 상자가 있어야 합니다. `window` 요소, 있더라도 `window` 요소는 자리 표시자에 불과합니다.
+이전에 지원되지 않았던 기본 응용 프로그램에 대한 스크립트를 만드는 경우 해당 응용 프로그램에 대한 추가 대화 상자 XML 파일도 만들어야 합니다. AppMon에서 사용하는 모든 기본 응용 프로그램에는 추가 대화 상자 XML 파일이 하나만 있어야 합니다. 요청하지 않은 대화 상자가 없는 경우에도 추가 대화 상자 XML 파일이 필요합니다. `window` 요소가 자리 표시자에 불과하더라도 추가 대화 상자에는 하나 이상의 `window` 요소가 있어야 합니다.
 
 >[!NOTE]
 >
->이 맥락에서 &#39;추가&#39;라는 용어는 다음의 내용을 의미한다 `appmon.[applicationname].addition.[locale].xml` 파일. 이러한 파일은 대화 상자 XML 파일에 대한 재정의 및 추가 사항을 지정합니다.
+>이 컨텍스트에서 &quot;추가&quot;라는 용어는 `appmon.[applicationname].addition.[locale].xml` 파일의 내용을 의미합니다. 이러한 파일은 대화 상자 XML 파일에 대한 재정의 및 추가 사항을 지정합니다.
 
 다음과 같은 목적으로 기본 응용 프로그램에 대한 추가 대화 상자 XML 파일을 수정할 수도 있습니다.
 
 * 다른 응답을 사용하는 응용 프로그램의 대화 상자 XML 파일을 재정의하려면
 * 해당 응용 프로그램의 대화 상자 XML 파일에서 언급되지 않은 대화 상자에 응답을 추가하려면
 
-추가 dialogXML 파일을 식별하는 파일 이름은 입니다. `appmon.[appname].addition.[locale].xml`. 예로는 appmon.excel.addition.en_US.xml이 있습니다.
+추가 dialogXML 파일을 식별하는 파일 이름은 `appmon.[appname].addition.[locale].xml`입니다. 예로는 appmon.excel.addition.en_US.xml이 있습니다.
 
-추가 대화 상자 XML 파일의 이름은 형식을 사용해야 합니다 `appmon.[applicationname].addition.[locale].xml`, 여기서 *applicationname* 는 XML 구성 파일 및 스크립트에 사용된 애플리케이션 이름과 정확히 일치해야 합니다.
+추가 대화 상자 XML 파일의 이름은 `appmon.[applicationname].addition.[locale].xml` 형식을 사용해야 합니다. 여기서 *applicationname*&#x200B;은(는) XML 구성 파일 및 스크립트에 사용된 응용 프로그램 이름과 정확히 일치해야 합니다.
 
 >[!NOTE]
 >
->native2pdfconfig.xml 구성 파일에 지정된 일반 응용 프로그램에 기본 대화 상자 XML 파일이 없습니다. 섹션 [기본 파일 형식에 대한 지원 추가 또는 수정](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) 에서는 이러한 세부 항목에 대해 설명합니다.
+>native2pdfconfig.xml 구성 파일에 지정된 일반 응용 프로그램에 기본 대화 상자 XML 파일이 없습니다. [기본 파일 형식에 대한 지원 추가 또는 수정](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) 섹션에서는 이러한 사양에 대해 설명합니다.
 
-주문 `windowList` 에서 하위 요소로 표시되는 요소 `window` 요소를 생성하지 않습니다. (참조: [window 및 windowList 요소 순서 지정](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
+`window` 요소의 하위 요소로 표시되는 `windowList` 요소를 정렬합니다. [window 및 windowList 요소 순서 지정](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements)을 참조하십시오.
 
 ### 일반 대화 상자 XML 파일 수정 {#modifying-the-general-dialog-xml-file}
 
@@ -872,15 +872,15 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
 
 이 절차에서는 파일 유형을 기본 응용 프로그램과 연결하기 위해 PDF 서비스 생성 구성 파일을 업데이트하는 방법을 설명합니다. 이 구성 파일을 업데이트하려면 관리 콘솔을 사용하여 구성 데이터를 파일로 내보내야 합니다. 구성 데이터의 기본 파일 이름은 native2pdfconfig.xml입니다.
 
-**PDF 서비스 생성 구성 파일 업데이트**
+**PDF 서비스 구성 파일 생성**
 
-1. 선택 **홈** > **서비스** > **Adobe PDF Generator** > **구성 파일**&#x200B;을 선택한 다음 을 선택합니다 **구성 내보내기**.
-1. 수정 `filetype-settings` 필요한 경우 native2pdfconfig.xml 파일의 요소입니다.
-1. 선택 **홈** > **서비스** > **Adobe PDF Generator** >**구성 파일**&#x200B;을 선택한 다음 을 선택합니다 **구성 가져오기**. 구성 데이터를 PDF 생성 서비스로 가져와서 이전 설정을 바꿉니다.
+1. **홈** > **서비스** > **Adobe PDF 생성기** > **구성 파일**&#x200B;을 선택한 다음 **구성 내보내기**&#x200B;를 선택합니다.
+1. 필요에 따라 native2pdfconfig.xml 파일의 `filetype-settings` 요소를 수정합니다.
+1. **홈** > **서비스** > **Adobe PDF 생성기** >**구성 파일**&#x200B;을 선택한 다음 **구성 가져오기**&#x200B;를 선택합니다. 구성 데이터를 PDF 생성 서비스로 가져와서 이전 설정을 바꿉니다.
 
 >[!NOTE]
 >
->응용 프로그램의 이름은 `GenericApp` 요소 `name` 특성. 이 값은 해당 응용 프로그램에 대해 개발하는 스크립트에 지정된 해당 이름과 정확히 일치해야 합니다. 마찬가지로 `GenericApp` 요소 `displayName` 속성은 해당 스크립트와 정확히 일치해야 함 `expectedWindow` 창 캡션입니다. 이와 같은 등가성은 다음에 나타나는 정규 표현식을 해결한 후 평가됩니다. `displayName` 또는 `caption` 속성.
+>응용 프로그램 이름이 `GenericApp` 요소의 `name` 특성 값으로 지정되었습니다. 이 값은 해당 응용 프로그램에 대해 개발하는 스크립트에 지정된 해당 이름과 정확히 일치해야 합니다. 마찬가지로 `GenericApp` 요소의 `displayName` 특성은 해당 스크립트의 `expectedWindow` 창 캡션과 정확히 일치해야 합니다. 이와 같은 동등성은 `displayName` 또는 `caption` 특성에 나타나는 정규식을 확인한 후 평가됩니다.
 
 이 예제에서는 PDF 생성 서비스와 함께 제공된 기본 구성 데이터를 수정하여 메모장(Microsoft Word 아님)을 사용하여 확장명이 .txt인 파일을 처리하도록 했습니다. 이 수정 전에 Microsoft Word가 이러한 파일을 처리해야 하는 기본 애플리케이션으로 지정되었습니다.
 
@@ -909,7 +909,7 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
 
 #### 기본 응용 프로그램을 찾기 위한 환경 변수 만들기 {#creating-an-environment-variable-to-locate-the-native-application}
 
-기본 응용 프로그램 실행 파일의 위치를 지정하는 환경 변수를 만듭니다. 변수는 형식을 사용해야 합니다. `[applicationname]_PATH`, 여기서 *applicationname* 은(는) XML 구성 파일 및 스크립트에 사용된 애플리케이션 이름과 정확히 일치해야 하며, 여기서 경로에는 큰따옴표로 된 실행 파일의 경로가 포함됩니다. 이러한 환경 변수의 예는 다음과 같습니다. `Photoshop_PATH`.
+기본 응용 프로그램 실행 파일의 위치를 지정하는 환경 변수를 만듭니다. 변수는 `[applicationname]_PATH` 형식을 사용해야 합니다. 여기서 *applicationname*&#x200B;은(는) XML 구성 파일 및 스크립트에 사용된 응용 프로그램 이름과 정확히 일치해야 하며 경로에 큰따옴표로 된 실행 파일의 경로가 포함되어 있습니다. 이러한 환경 변수의 예는 `Photoshop_PATH`입니다.
 
 새 환경 변수를 만든 후에는 PDF 생성 서비스가 배포된 서버를 다시 시작해야 합니다.
 
@@ -919,12 +919,12 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
 
 **Windows XP 환경에서 시스템 변수 만들기**
 
-1. 선택 **Campaign 컨트롤 패널 > 시스템**.
-1. 시스템 등록 정보 대화 상자에서 **고급** tab을 누른 다음 **환경 변수**.
-1. 환경 변수 대화 상자의 시스템 변수에서 **신규**.
-1. 새 시스템 변수 대화 상자의 **변수 이름** 상자에 형식을 사용하는 이름을 입력합니다 `[applicationname]_PATH`.
-1. 다음에서 **변수 값** 상자에 응용 프로그램 실행 파일의 전체 경로와 파일 이름을 입력한 다음 **확인**. 예를 들어, 다음을 입력합니다. `c:\windows\Notepad.exe`
-1. 환경 변수 대화 상자에서 **확인**.
+1. **Campaign 컨트롤 패널 > 시스템**&#x200B;을 선택합니다.
+1. 시스템 속성 대화 상자에서 **고급** 탭을 클릭한 다음 **환경 변수**&#x200B;를 클릭합니다.
+1. 환경 변수 대화 상자의 시스템 변수에서 **새로 만들기**&#x200B;를 클릭합니다.
+1. 새 시스템 변수 대화 상자의 **변수 이름** 상자에 `[applicationname]_PATH` 형식을 사용하는 이름을 입력합니다.
+1. **변수 값** 상자에 응용 프로그램 실행 파일의 전체 경로와 파일 이름을 입력한 다음 **확인**&#x200B;을 클릭합니다. 예: `c:\windows\Notepad.exe`
+1. 환경 변수 대화 상자에서 **확인**&#x200B;을 클릭합니다.
 
 **명령줄에서 시스템 변수 만들기**
 
@@ -934,7 +934,7 @@ Microsoft Spy++를 사용하여 기본 애플리케이션에서 창 요소 속�
             [applicationname]_PATH=[Full path name]
    ```
 
-   예를 들어, 다음을 입력합니다. `NotePad_PATH=C:\WINDOWS\NOTEPAD.EXE`
+   예: `NotePad_PATH=C:\WINDOWS\NOTEPAD.EXE`
 
 1. 시스템 변수를 적용하려면 새 명령줄 프롬프트를 시작하십시오.
 

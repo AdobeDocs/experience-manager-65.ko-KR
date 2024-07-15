@@ -36,7 +36,7 @@ AEM 6에서 가장 중요한 변경 사항 중 하나는 저장소 수준의 혁
 
 >[!CAUTION]
 >
->세그먼트 노드 저장소의 PID가 org.apache.jackrabbit.oak에서 변경되었습니다.**plugins**&#x200B;이전 버전의 AEM 6에서 AEM 6.3의 org.apache.jackrabbit.oak.segment.SegmentNodeStoreService로 .segment.SegmentNodeStoreService. 변경 사항이 반영되도록 필요한 구성을 조정해야 합니다.
+>세그먼트 노드 저장소의 PID가 org.apache.jackrabbit.oak에서 변경되었습니다.AEM AEM 6.3의 org.apache.jackrabbit.oak.segment.SegmentNodeStoreService에 대한 이전 버전의 **plugins**.segment.SegmentNodeStoreService. 변경 사항이 반영되도록 필요한 구성을 조정해야 합니다.
 
 기본적으로 AEM 6은 기본 구성 옵션을 사용하여 Tar 저장소를 사용하여 노드 및 바이너리를 저장합니다. 다음을 수행하여 저장소 설정을 수동으로 구성할 수 있습니다.
 
@@ -45,14 +45,14 @@ AEM 6에서 가장 중요한 변경 사항 중 하나는 저장소 수준의 혁
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. 다음 이름의 폴더 만들기 `crx-quickstart\install` 를 입력합니다.
+1. 설치 디렉터리에 이름이 `crx-quickstart\install`인 폴더를 만듭니다.
 
-1. 라는 파일 만들기 `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` 을(를) 새로 만든 폴더에 추가합니다.
+1. 새로 만든 폴더에 `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` 파일을 만듭니다.
 
-1. 파일을 편집하고 구성 옵션을 설정합니다. AEM Tar 저장소 구현의 기반이 되는 세그먼트 노드 저장소에 대해 다음 옵션을 사용할 수 있습니다.
+1. 파일을 편집하고 구성 옵션을 설정합니다. AEM의 Tar 스토리지 구현의 기반이 되는 세그먼트 노드 스토어에 다음 옵션을 사용할 수 있습니다.
 
    * `repository.home`: 다양한 저장소 관련 데이터가 저장되는 저장소 홈의 경로입니다. 기본적으로 세그먼트 파일은 crx-quickstart/segmentstore 디렉토리 아래에 저장됩니다.
-   * `tarmk.size`: 세그먼트의 최대 크기(MB) 기본값은 256MB입니다.
+   * `tarmk.size`: 세그먼트의 최대 크기(MB)입니다. 기본값은 256MB입니다.
 
 1. AEM을 시작합니다.
 
@@ -67,21 +67,21 @@ AEM 6은 다음 절차에 따라 MongoDB 스토리지로 실행되도록 구성�
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. MongoDB가 설치되어 있고 의 인스턴스가 `mongod` 이(가) 실행 중입니다. 자세한 내용은 [MongoDB 설치 중](https://docs.mongodb.org/manual/installation/).
-1. 다음 이름의 폴더 만들기 `crx-quickstart\install` 를 입력합니다.
-1. 에서 사용할 구성의 이름으로 구성 파일을 만들어 노드 저장소를 구성합니다. `crx-quickstart\install` 디렉토리.
+1. MongoDB가 설치되어 있고 `mongod`의 인스턴스가 실행 중인지 확인하십시오. 자세한 내용은 [MongoDB 설치](https://docs.mongodb.org/manual/installation/)를 참조하십시오.
+1. 설치 디렉터리에 이름이 `crx-quickstart\install`인 폴더를 만듭니다.
+1. `crx-quickstart\install` 디렉터리에 사용할 구성의 이름으로 구성 파일을 만들어 노드 저장소를 구성합니다.
 
-   AEM MongoDB 스토리지 구현의 기반이 되는 문서 노드 저장소는 `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   AEM의 MongoDB 저장소 구현의 기반이 되는 문서 노드 저장소는 `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg` 파일을 사용합니다
 
 1. 파일을 편집하고 구성 옵션을 설정합니다. 다음 옵션을 사용할 수 있습니다.
 
-   * `mongouri`: [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) mongo 데이터베이스에 연결하는 데 필요합니다. 기본값은 입니다 `mongodb://localhost:27017`
-   * `db`: Mongo 데이터베이스의 이름입니다. 기본적으로 새 AEM 6 설치는 **aem-author** 를 데이터베이스 이름으로 사용하십시오.
-   * `cache`: 캐시 크기(메가바이트) 이 캐시 크기는 DocumentNodeStore에서 사용되는 다양한 캐시에 분산됩니다. 기본값은 256입니다.
-   * `changesSize`: 비교 출력을 캐시하기 위해 Mongo에서 사용되는 캡핑된 컬렉션의 크기(MB)입니다. 기본값은 256입니다.
+   * `mongouri`: Mongo 데이터베이스에 연결하는 데 필요한 [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/)입니다. 기본값은 `mongodb://localhost:27017`입니다.
+   * `db`: Mongo 데이터베이스의 이름입니다. 기본적으로 새 AEM 6 설치에서는 **aem-author**&#x200B;을(를) 데이터베이스 이름으로 사용합니다.
+   * `cache`: 캐시 크기(MB)입니다. 이 캐시 크기는 DocumentNodeStore에서 사용되는 다양한 캐시에 분산됩니다. 기본값은 256입니다.
+   * `changesSize`: 비교 출력을 캐시하기 위해 Mongo에서 사용되는 제한 컬렉션 크기(MB)입니다. 기본값은 256입니다.
    * `customBlobStore`: 사용자 지정 데이터 저장소가 사용됨을 나타내는 부울 값입니다. 기본값은 false입니다.
 
-1. 사용할 데이터 저장소의 PID로 구성 파일을 만들고 해당 파일을 편집하여 구성 옵션을 설정합니다. 자세한 내용은 [노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md).
+1. 사용할 데이터 저장소의 PID로 구성 파일을 만들고 해당 파일을 편집하여 구성 옵션을 설정합니다. 자세한 내용은 [노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md)을 참조하세요.
 
 1. 다음을 실행하여 MongoDB 스토리지 백엔드로 AEM 6 jar를 시작합니다.
 
@@ -89,14 +89,14 @@ AEM 6은 다음 절차에 따라 MongoDB 스토리지로 실행되도록 구성�
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   백엔드 실행 모드가 다음과 같은 경우 **`-r`**, 예제는 MongoDB 지원으로 시작됩니다.
+   백엔드 실행 모드가 **`-r`**&#x200B;인 경우 예제는 MongoDB 지원으로 시작합니다.
 
 #### 투명한 대용량 페이지 비활성화 {#disabling-transparent-huge-pages}
 
 Red Hat® Linux®는 THP(Transparent Huge Pages)라는 메모리 관리 알고리즘을 사용합니다. AEM은 세분화된 읽기 및 쓰기를 수행하지만 THP는 대규모 작업에 최적화되어 있습니다. 따라서 Tar 및 Mongo 스토리지에서 THP를 모두 비활성화하는 것이 좋습니다. 알고리즘을 비활성화하려면 다음 단계를 따르십시오.
 
-1. 를 엽니다. `/etc/grub.conf` 원하는 텍스트 편집기의 파일입니다.
-1. 다음 줄을 추가합니다. **grub.conf** 파일:
+1. 선택한 텍스트 편집기에서 `/etc/grub.conf` 파일을 엽니다.
+1. **grub.conf** 파일에 다음 줄을 추가합니다.
 
    ```
    transparent_hugepage=never
@@ -118,10 +118,10 @@ Red Hat® Linux®는 THP(Transparent Huge Pages)라는 메모리 관리 알고�
 >
 >다음 리소스를 참조하십시오.
 >
->* Red Hat® Linux®의 Transparent Huge Pages에 대한 자세한 내용은 다음을 참조하십시오 [기사](https://access.redhat.com/solutions/46111).
->* Linux® 조정 팁은 다음을 참조하십시오 [기사](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>* Red Hat® Linux®의 투명한 대용량 페이지에 대한 자세한 내용은 이 [문서](https://access.redhat.com/solutions/46111)를 참조하십시오.
+>* Linux® 조정 정보는 이 [article](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)을(를) 참조하십시오.
 >
 
 ## 저장소 유지 관리 {#maintaining-the-repository}
 
-저장소에 대한 각 업데이트는 콘텐츠 개정을 만듭니다. 결과적으로 각 업데이트 시 저장소의 크기가 커집니다. 저장소 증가를 제어하지 않으려면 디스크 리소스를 확보하기 위해 이전 버전을 정리해야 합니다. 이 유지 관리 기능을 개정 정리 라고 합니다. 개정 정리 메커니즘은 저장소에서 오래된 데이터를 제거하여 디스크 공간을 확보합니다. 개정 정리에 대한 자세한 내용은 [개정 정리 페이지](/help/sites-deploying/revision-cleanup.md).
+저장소에 대한 각 업데이트는 콘텐츠 개정을 만듭니다. 결과적으로 각 업데이트 시 저장소의 크기가 커집니다. 저장소 증가를 제어하지 않으려면 디스크 리소스를 확보하기 위해 이전 버전을 정리해야 합니다. 이 유지 관리 기능을 개정 정리 라고 합니다. 개정 정리 메커니즘은 저장소에서 오래된 데이터를 제거하여 디스크 공간을 확보합니다. 수정 버전 정리에 대한 자세한 내용은 [수정 버전 정리 페이지](/help/sites-deploying/revision-cleanup.md)를 참조하십시오.

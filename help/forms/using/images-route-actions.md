@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 경로 작업에 사용된 이미지 사용자 지정 {#customize-images-used-in-route-actions}
 
-경로 작업에 사용되는 이미지를 사용자 정의하려면 다음에 설명된 단계를 수행합니다 [사용자 지정의 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md) 이 문서에 설명된 단계를 따릅니다.
+경로 작업에 사용되는 이미지를 사용자 지정하려면 [일반 사용자 지정 단계](/help/forms/using/generic-steps-html-workspace-customization.md)에 설명된 단계를 수행한 다음 이 문서에 설명된 단계를 수행합니다.
 
 ## 경로 작업에 대한 이미지 {#images-for-route-actions}
 
@@ -25,11 +25,11 @@ ht-degree: 0%
 
    `/apps/ws/css/newStyle.css`
 
-   예: 라는 새 스타일 추가 `myStyle1`아래 그림과 같이 이미지 파일을 업로드합니다 `myStyleIcon1.png` (으)로 `/apps/ws/image`WebDAV 클라이언트를 사용하는 폴더입니다.
+   예: 아래와 같이 `myStyle1`이라는 새 스타일을 추가하고 WebDAV 클라이언트를 사용하여 `myStyleIcon1.png` 이미지 파일을 `/apps/ws/image`의 폴더에 업로드합니다.
 
    >[!NOTE]
    >
-   >자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)를 참조하십시오.
 
    >[!NOTE]
    >
@@ -45,11 +45,11 @@ ht-degree: 0%
 
 ## 작업 목록 작업 작업 팝업 {#task-list-task-action-popup}
 
-1. 작업 목록 작업 팝업을 만듭니다. 다음을 참조하십시오. [AEM Forms 작업 공간 코드 작성](introduction-customizing-html-workspace.md#building-html-workspace-code). 개발 패키지를 사용해야 합니다.
+1. 작업 목록 작업 팝업을 만듭니다. [AEM Forms 작업 영역 코드 작성](introduction-customizing-html-workspace.md#building-html-workspace-code)을 참조하십시오. 개발 패키지를 사용해야 합니다.
 
-1. 복사 `/libs/ws/js/runtime/templates/task.html` 끝 `/apps/ws/js/runtime/templates/task.html`.
+1. `/libs/ws/js/runtime/templates/task.html`을(를) `/apps/ws/js/runtime/templates/task.html`에 복사합니다.
 
-1. CSS 스타일의 이름이 서버에서 들어오는 경로 작업 이름과 같으면 다음 코드를에서 수정합니다 `/apps/ws/js/runtime/templates/task.html`:
+1. CSS 스타일 이름이 서버에서 들어오는 경로 작업 이름과 같으면 `/apps/ws/js/runtime/templates/task.html`에서 다음 코드를 수정합니다.
 
    ```jsp
    <%if(routeList == null){%>
@@ -79,7 +79,7 @@ ht-degree: 0%
                <%}%>
    ```
 
-1. CSS 스타일의 이름이 서버에서 들어오는 경로 작업 이름과 다른 경우 `/apps/ws/js/runtime/templates/task.html`. 이 옵션은 `if-else` 스타일을 경로 작업 이름과 매핑하는 서블릿 조건
+1. CSS 스타일 이름이 서버에서 들어오는 경로 작업 이름과 다른 경우 `/apps/ws/js/runtime/templates/task.html`에서 다음 코드를 수정하십시오. 스타일을 경로 작업 이름과 매핑하기 위해 `if-else` 서블릿 조건 스택을 추가합니다.
 
 ```jsp
 <%if(routeList == null){%>
@@ -117,9 +117,9 @@ To
 
 ## 작업 세부 사항 작업 작업 팝업 {#task-details-task-action-popup}
 
-1. 복사 `/libs/ws/js/runtime/templates/taskdetails.html` 끝 `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. `/libs/ws/js/runtime/templates/taskdetails.html`을(를) `/apps/ws/js/runtime/templates/taskdetails.html`에 복사합니다.
 
-1. CSS 스타일의 이름이 서버에서 들어오는 경로 작업 이름과 같으면 다음 코드를에서 수정합니다 `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. CSS 스타일 이름이 서버에서 들어오는 경로 작업 이름과 같으면 `/apps/ws/js/runtime/templates/taskdetails.html`에서 다음 코드를 수정합니다.
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -139,7 +139,7 @@ To
                        <%}%>
    ```
 
-1. CSS 스타일의 이름이 서버에서 들어오는 경로 작업 이름과 다른 경우 `/apps/ws/js/runtime/templates/taskdetails.html`. 다음을 추가합니다. `if-else` 스타일을 경로 작업 이름과 매핑하는 서블릿 조건
+1. CSS 스타일 이름이 서버에서 들어오는 경로 작업 이름과 다른 경우 `/apps/ws/js/runtime/templates/taskdetails.html`에서 다음 코드를 수정하십시오. 스타일을 경로 작업 이름과 매핑하기 위해 `if-else` 서블릿 조건 스택을 추가합니다.
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -167,7 +167,7 @@ To
                <%}%>
    ```
 
-1. 열기 `/apps/ws/js/registry.js` 를 편집하고 다음 텍스트를 찾습니다.
+1. 편집할 `/apps/ws/js/registry.js`을(를) 열고 다음 텍스트를 찾습니다.
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. 텍스트를 다음과 같이 바꿉니다.

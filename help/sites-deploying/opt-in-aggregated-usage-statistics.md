@@ -29,48 +29,48 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수
 >
 >GDPR 및 CCPA와 같은 다양한 데이터 보호 및 개인 정보 보호 규정이 있습니다. AEM Sites은 데이터 보호 및 개인정보 보호 규정 준수 의무와 관련하여 고객을 지원할 준비가 되어 있습니다. 이 페이지는 고객에게 집계된 사용 통계 수집을 옵트인(또는 옵트아웃)하는 절차를 안내합니다.
 >
->자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html).
+>자세한 내용은 [Adobe의 개인 정보 보호 센터](https://www.adobe.com/kr/privacy.html)도 참조하세요.
 
 >[!NOTE]
 >
->다음을 사용하여 언제든지 옵트아웃할 수 있습니다. [웹 콘솔](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) 또는 AEM 옵트인 화면에서 옵트인 옵션을 선택하지 않습니다.
+>[웹 콘솔](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console)을 사용하거나 AEM 옵트인 화면에서 옵트인 옵션을 선택하지 않으면 언제든지 옵트아웃할 수 있습니다.
 
 ## Touch UI를 사용한 옵트인 {#opt-in-by-using-the-touch-ui}
 
 AEM을 처음 시작하면 다음과 같이 Touch UI를 사용하여 옵트인할 수 있습니다.
 
-1. AEM 탐색 화면에서 **받은 편지함** (벨) 아이콘.
+1. AEM 탐색 화면에서 **받은 편지함**(벨) 아이콘을 클릭합니다.
 
    ![usage_statisticsnavigationscreen](assets/usage_statisticsnavigationscreen.png)
 
-1. 드롭다운 목록에서 &quot;**집계된 사용 통계 수집 활성화**&quot;.
+1. 드롭다운 목록에서 &quot;**집계된 사용 통계 수집 사용**&quot;을 클릭합니다.
 
    ![usage_statisticsnavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
 
-1. 옵트인 화면에서 &quot;**집계된 사용 통계 수집 허용**&quot;.
+1. 옵트인 화면에서 &quot;**집계된 사용 통계 수집 허용**&quot;을 선택합니다.
 
    ![usage_statisticsopt-inscreen](assets/usage_statisticsopt-inscreen.png)
 
-1. 클릭 &quot;**완료**&quot;.
+1. &quot;**완료**&quot;를 클릭합니다.
 
 ## 웹 콘솔을 사용한 옵트인 {#opt-in-by-using-the-web-console}
 
 다음과 같이 웹 콘솔을 사용하여 옵트인(또는 옵트아웃)할 수 있습니다.
 
-1. AEM 탐색 화면에서 **도구** 그런 다음 **작업**.
+1. AEM 탐색 화면에서 **도구**&#x200B;를 클릭한 다음 **작업**&#x200B;을 클릭합니다.
 
    ![usage_statisticsopsdashboard](assets/usage_statisticsopsdashboard.png)
 
-1. 작업 창에서 다음을 클릭합니다. **웹 콘솔**.
+1. 작업 창에서 **웹 콘솔**&#x200B;을 클릭합니다.
 
    ![usage_statisticswebconsole](assets/usage_statisticswebconsole.png)
 
-1. 검색 대상&#x200B;**집계된 사용 통계 수집**&quot;.
-1. 다음을 클릭합니다. **편집** 아이콘.
+1. &quot;**집계된 사용 통계 컬렉션**&quot;을 검색합니다.
+1. **편집** 아이콘을 클릭합니다.
 
    ![usage_statisticscollectionedit](assets/usage_statisticscollectionedit.png)
 
-1. 다음 항목 선택 **활성화됨** 확인란. 또는 사용 통계 수집을 옵트아웃하려는 경우 확인란을 선택 취소할 수 있습니다.
+1. **사용** 확인란을 선택하십시오. 또는 사용 통계 수집을 옵트아웃하려는 경우 확인란을 선택 취소할 수 있습니다.
 
    ![usage_statisticsselect](assets/usage_statisticsselect.png)
 

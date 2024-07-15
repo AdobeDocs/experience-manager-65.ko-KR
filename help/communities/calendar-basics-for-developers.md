@@ -29,7 +29,7 @@ ht-degree: 2%
    <td>social/calendar/components/hbs/calendar</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함하기 쉬워</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
    <td>아니요</td>
   </tr>
   <tr>
@@ -47,7 +47,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td>참조 <a href="calendar.md">달력 사용</a></td>
+   <td><a href="calendar.md">일정 사용</a>을 참조하세요.</td>
   </tr>
  </tbody>
 </table>
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [달력 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [일정 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
 * [달력 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
@@ -64,17 +64,17 @@ ht-degree: 2%
 
 ### 달력 기능 {#calendar-function}
 
-다음을 포함하는 커뮤니티 사이트 구조 [Calendar 함수](functions.md#calendar-function) 다음 포함 `calendar` 구성 요소를 구성했습니다. Calendar 함수는 [권한이 있는 구성원 사용자 그룹](users.md#privileged-members-group).
+[Calendar 함수](functions.md#calendar-function)을(를) 포함하는 커뮤니티 사이트 구조에 `calendar` 구성 요소가 구성되어 있습니다. Calendar 기능은 [권한이 있는 구성원 사용자 그룹](users.md#privileged-members-group)을(를) 식별할 수 있도록 지원합니다.
 
 ### UGC(캘린더 게시물 액세스) {#accessing-calendar-posts-ugc}
 
-AEM 6.1 커뮤니티에서 [공동 저장소](working-with-srp.md) ugc의 경우 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 관계없이 UGC에 프로그래밍 방식으로 액세스하는 기능이 포함됩니다.
+AEM 6.1 커뮤니티에서 UGC에 대한 [일반 저장소](working-with-srp.md)를 사용하면 선택한 저장소 옵션(예: ASRP, MSRP 또는 JSRP)에 관계없이 UGC에 프로그래밍 방식으로 액세스할 수 있습니다.
 
 **저장소에서 UGC의 위치 및 형식은 경고 없이 변경될 수 있습니다**.
 
 다음을 참조하십시오.
 
 * [저장소 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
-* [SRP 및 UGC 필수 패키지](srp-and-ugc.md) - SRP 유틸리티 메서드 및 예제
+* [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 메서드 및 예제
 * [SRP를 사용하여 UGC에 액세스](accessing-ugc-with-srp.md) - 코딩 지침
 * [SocialUtils 리팩터링](socialutils.md) - 더 이상 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑

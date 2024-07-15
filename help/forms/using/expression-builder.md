@@ -22,9 +22,9 @@ ht-degree: 1%
 
 ## 표현식 빌더를 사용하여 표현식 및 원격 함수 만들기 {#creating-expressions-and-remote-functions-with-expression-builder}
 
-표현식 빌더는 내부적으로 JSP EL 라이브러리를 사용하므로 표현식은 JSPEL 구문을 준수합니다. 자세한 내용은 [표현식 예](#exampleexpressions).
+표현식 빌더는 내부적으로 JSP EL 라이브러리를 사용하므로 표현식은 JSPEL 구문을 준수합니다. 자세한 내용은 [예제 표현식](#exampleexpressions)을 참조하십시오.
 
-![표현식 빌더](assets/expressionbuilder.png)
+![식 작성기](assets/expressionbuilder.png)
 
 ### 연산자 {#operators}
 
@@ -35,12 +35,12 @@ ht-degree: 1%
 다음은 서신 관리 솔루션에서 사용할 수 있는 일반적으로 사용되는 JSP EL 예입니다.
 
 * 두 개의 숫자를 추가하려면: ${number1 + number2}
-* 두 문자열을 연결하려면 ${str1} ${str2}
-* 두 숫자를 비교하려면: ${age &lt; 18}
+* 두 문자열(${str1} ${str2})을 연결하려면
+* 두 숫자를 비교하려면 ${age &lt; 18}
 
-다음에서 자세한 정보를 찾을 수 있습니다. [JSP EL 사양](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). 클라이언트측 표현식 관리자는 JSP EL 사양의 특정 변수 및 함수, 특히
+자세한 내용은 [JSP EL 사양](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)을 참조하십시오. 클라이언트측 표현식 관리자는 JSP EL 사양의 특정 변수 및 함수, 특히
 
-* 컬렉션 인덱스 및 맵 키(사용) [] notation)은 클라이언트측에서 평가된 표현식에 대한 변수 이름에서 지원되지 않습니다.
+* 컬렉션 인덱스 및 맵 키([] 표기법 사용)는 클라이언트측에서 평가된 식에 대한 변수 이름에서 지원되지 않습니다.
 * 다음은 표현식에 사용되는 매개 변수 유형 또는 함수 반환 유형입니다.
 
    * java.lang.String
@@ -78,7 +78,7 @@ ht-degree: 1%
 1. Expression Manager에서 사용하기 위해 내보내는 메서드가 포함된 OSGi 서비스에 대한 인터페이스를 정의합니다.
 1. 인터페이스 A에서 메서드를 선언하고 @ServiceMethod 주석(com.adobe.exm.expeval.ServiceMethod)으로 주석을 답니다. Expression Manager에서는 주석이 없는 메서드는 모두 무시합니다. ServiceMethod 주석에는 다음과 같은 선택적 특성이 있으며 이 특성을 지정할 수도 있습니다.
 
-   1. **활성화됨**: 이 메서드가 활성화되어 있는지 여부를 결정합니다. 표현식 관리자는 비활성화된 메서드를 무시합니다.
+   1. **사용**: 이 메서드가 사용되는지 여부를 결정합니다. 표현식 관리자는 비활성화된 메서드를 무시합니다.
    1. **familyId**: 메서드의 제품군(그룹)을 지정합니다. 비어 있는 경우 Expression Manager는 메서드가 기본 패밀리에 속한다고 가정합니다. 함수가 선택된 패밀리(기본 패밀리는 제외)의 레지스트리는 없습니다. Expression Manager는 다양한 번들에서 내보낸 모든 함수에 지정된 모든 패밀리 ID를 결합하여 레지스트리를 동적으로 만듭니다. 여기서 지정하는 ID는 표현식 작성 사용자 인터페이스에도 표시되므로 합리적으로 읽을 수 있는지 확인합니다.
    1. **displayName**: 사람이 인식할 수 있는 함수 이름입니다. 이 이름은 작성 사용자 인터페이스에서 표시 목적으로 사용됩니다. 비어 있는 경우 Expression Manager는 함수의 접두사와 local-name을 사용하여 기본 이름을 구성합니다.
    1. **설명**: 함수에 대한 자세한 설명입니다. 이 설명은 작성 사용자 인터페이스에서 표시 목적으로 사용됩니다. 비어 있는 경우 Expression Manager는 함수의 접두사와 local-name을 사용하여 기본 설명을 구성합니다.
@@ -126,7 +126,7 @@ ht-degree: 1%
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-exm.service=true 항목은 Expression Manager에게 해당 서비스에 표현식에 사용하기에 적합한 원격 함수가 포함되어 있음을 알립니다. 다음 &lt;service_id> 값은 유효한 Java 식별자(영숫자,$, _(다른 특수 문자 없음)여야 합니다. REMOTE_ 키워드 접두사가 있는 이 값은 표현식 내에서 사용되는 접두사를 형성합니다. 예를 들어 서비스 속성에서 서비스 ID foo 및 주석이 달린 인터페이스는 REMOTE_foo:bar()를 사용하여 표현식 내에서 참조할 수 있습니다.
+exm.service=true 항목은 Expression Manager에게 해당 서비스에 표현식에 사용하기에 적합한 원격 함수가 포함되어 있음을 알립니다. &lt;service_id> 값은 유효한 Java 식별자(영숫자,$, _(다른 특수 문자 없음)여야 합니다. REMOTE_ 키워드 접두사가 있는 이 값은 표현식 내에서 사용되는 접두사를 형성합니다. 예를 들어 서비스 속성에서 서비스 ID foo 및 주석이 달린 인터페이스는 REMOTE_foo:bar()를 사용하여 표현식 내에서 참조할 수 있습니다.
 
 ```java
 package mergeandfuse.com;
@@ -154,8 +154,8 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 다음은 사용할 샘플 아카이브입니다.
 
-* **GoodFunctions.jar.zip** 는 샘플 원격 함수 정의가 포함된 번들이 있는 jar 파일입니다. GoodFunctions.jar.zip 파일을 다운로드하고 압축 해제하여 jar 파일을 가져옵니다.
-* **GoodFunctions.zip** 사용자 지정 원격 함수를 정의하고 해당 함수를 위한 번들을 만들기 위한 소스 코드 패키지입니다.
+* **GoodFunctions.jar.zip**&#x200B;은(는) 샘플 원격 함수 정의가 포함된 번들이 있는 jar 파일입니다. GoodFunctions.jar.zip 파일을 다운로드하고 압축 해제하여 jar 파일을 가져옵니다.
+* **GoodFunctions.zip**&#x200B;은(는) 사용자 지정 원격 함수를 정의하고 해당 함수를 위한 번들을 만들기 위한 소스 코드 패키지입니다.
 
 GoodFunctions.jar.zip
 

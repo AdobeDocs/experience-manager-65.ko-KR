@@ -30,7 +30,7 @@ AEM의 타겟팅 모드를 사용하여 [타겟팅된 콘텐츠를 작성](/help
 
 활동은 또한 페이지에서 사용하는 [타겟팅 엔진](/help/sites-authoring/personalization.md#targeting-engine)을 식별합니다.
 
-사용 [활동 콘솔](/help/sites-authoring/activitylib.md) 을 사용하여 브랜드를 위한 활동을 만들고 관리할 수 있습니다. [타겟팅된 콘텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 때 활동을 만들 수도 있습니다.
+[활동 콘솔](/help/sites-authoring/activitylib.md)을 사용하여 브랜드를 위한 활동을 만들고 관리할 수 있습니다. [타겟팅된 콘텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 때 활동을 만들 수도 있습니다.
 
 ## 경험 {#experiences}
 
@@ -48,7 +48,7 @@ AEM의 타겟팅 모드를 사용하여 [타겟팅된 콘텐츠를 작성](/help
 
 예를 들어 We.Retail 샘플 웹 사이트의 여성용 페이지에서 페이지 맨 위에 표시되는 티저 이미지로서 오퍼를 사용할 수 있습니다. 30세 이상 여성 경험과 30세 미만 여성 경험의 티저로는 다른 오퍼가 사용됩니다.
 
-사용 [오퍼 콘솔](/help/sites-authoring/offerlib.md) 을 클릭하여 여러 경험에서 사용할 수 있는 오퍼를 만듭니다. [타겟팅된 콘텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 때 단일 사용 오퍼를 만들거나 오퍼 라이브러리의 오퍼를 추가하십시오.
+여러 경험에서 사용할 수 있는 오퍼를 만들려면 [오퍼 콘솔](/help/sites-authoring/offerlib.md)을 사용하십시오. [타겟팅된 콘텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 때 단일 사용 오퍼를 만들거나 오퍼 라이브러리의 오퍼를 추가하십시오.
 
 ## 타겟팅 엔진 {#targeting-engine}
 

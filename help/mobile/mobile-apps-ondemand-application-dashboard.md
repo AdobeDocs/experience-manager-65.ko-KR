@@ -38,7 +38,7 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 
 ## 앱 관리 타일 {#the-manage-app-tile}
 
-다음 **앱 관리** 타일에는 사용 가능한 애플리케이션 정보가 표시됩니다.
+**앱 관리** 타일은 사용 가능한 응용 프로그램 정보를 표시합니다.
 
 * 제목
 * 설명
@@ -50,7 +50,7 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 
 ## 연결 관리 타일 {#the-manage-connection-tile}
 
-다음 **연결 관리** 타일에는 AEM Mobile On-demand Services 연결 정보가 표시됩니다.
+**연결 관리** 타일은 AEM Mobile On-demand Services 연결 정보를 표시합니다.
 
 * 클라우드 구성 이름
 * 프로젝트 이름 및 ID
@@ -60,7 +60,7 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 >
 >오른쪽 상단에 있는 톱니바퀴를 클릭하여 Mobile On-Demand Cloud 구성을 설정합니다.
 >
->다음을 참조하십시오 [Mobile On-Demand Services 구성](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) 을 참조하십시오.
+>자세한 내용은 [Mobile On-Demand Services 구성](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)을 참조하십시오.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -76,60 +76,60 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 
 ### 배너 관리 타일 {#the-manage-banners-tile}
 
-다음 **배너 관리** 타일을 사용하면 배너의 콘텐츠를 관리할 수 있습니다. 배너에 대해 다음 정보가 표시됩니다.
+**배너 관리** 타일을 사용하면 배너의 콘텐츠를 관리할 수 있습니다. 배너에 대해 다음 정보가 표시됩니다.
 
 * 이미지
-* **제목**: 배너 이름
+* **제목**: 배너의 이름
 * **수정됨**: AEM에서 마지막으로 수정됨
 * **업로드됨**: AEM에서 마지막으로 업로드됨
-* **게시됨**: 마지막으로 게시된 요청 양식 AEM
-* **소스**: 소스(AEM Local 또는 Mobile On Demand의 원격)
+* **게시됨**: AEM에서 마지막으로 게시된 요청
+* **SOURCE**: 원본(Mobile On Demand에서 AEM 로컬 또는 원격)
 
-다음 이미지는 **배너 관리** AEM Mobile 애플리케이션 대시보드의 타일:
+다음 이미지는 AEM Mobile 응용 프로그램 대시보드의 **배너 관리** 타일을 보여 줍니다.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
 >[!NOTE]
 >
->다음을 참조하십시오 **[배너 관리](/help/mobile/mobile-on-demand-managing-banners.md)** 배너 만들기, 삭제 또는 업데이트
+>배너 만들기, 삭제 또는 업데이트는 **[배너 관리](/help/mobile/mobile-on-demand-managing-banners.md)**&#x200B;를 참조하십시오.
 
 ### 문서 관리 타일 {#the-manage-articles-tile}
 
-다음 **문서 관리** 타일을 사용하면 문서에 대한 콘텐츠를 관리할 수 있습니다. 문서에 대해 다음 정보가 표시됩니다.
+**문서 관리** 타일을 사용하여 문서에 대한 콘텐츠를 관리할 수 있습니다. 문서에 대해 다음 정보가 표시됩니다.
 
 * 이미지
 * **제목**: 문서의 이름
 * **수정됨**: AEM에서 마지막으로 수정됨
 * **업로드됨**: AEM에서 마지막으로 업로드됨
-* **게시됨**: 마지막으로 게시된 요청 양식 AEM
-* **소스**: 소스(AEM 로컬 또는 Mobile On-Demand의 원격)
+* **게시됨**: AEM에서 마지막으로 게시된 요청
+* **SOURCE**: 소스(AEM 로컬 또는 Mobile On-Demand의 원격)
 
-다음 이미지는 **문서 관리** AEM Mobile 애플리케이션 대시보드의 타일:
+다음 이미지는 AEM Mobile 응용 프로그램 대시보드의 **문서 관리** 타일을 보여 줍니다.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
->다음을 참조하십시오 [**문서 관리**](/help/mobile/mobile-on-demand-managing-articles.md) 문서를 만들거나, 삭제하거나, 업데이트할 때 사용합니다.
+>문서를 만들거나 삭제하거나 업데이트하려면 [**문서 관리**](/help/mobile/mobile-on-demand-managing-articles.md)&#x200B;를 참조하십시오.
 
 ### 컬렉션 관리 타일 {#the-manage-collections-tile}
 
-다음 **컬렉션 관리** 타일을 사용하면 컬렉션에 대한 콘텐츠를 관리할 수 있습니다. 컬렉션에 대해 다음 정보가 표시됩니다.
+**컬렉션 관리** 타일을 사용하여 컬렉션에 대한 콘텐츠를 관리할 수 있습니다. 컬렉션에 대해 다음 정보가 표시됩니다.
 
 * 이미지
-* **제목**: 컬렉션 이름
+* **제목**: 컬렉션의 이름
 * **수정됨**: AEM에서 마지막으로 수정됨
 * **업로드됨**: AEM에서 마지막으로 업로드됨
-* **게시됨**: 마지막으로 게시된 요청 양식 AEM
-* **소스**: 소스(AEM 로컬 또는 Mobile On-Demand의 원격)
+* **게시됨**: AEM에서 마지막으로 게시된 요청
+* **SOURCE**: 소스(AEM 로컬 또는 Mobile On-Demand의 원격)
 
-다음 이미지는 **컬렉션 관리** AEM Mobile 애플리케이션 대시보드의 타일:
+다음 이미지는 AEM Mobile 응용 프로그램 대시보드의 **컬렉션 관리** 타일을 보여 줍니다.
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >
->다음을 참조하십시오 **[컬렉션 관리](/help/mobile/mobile-on-demand-managing-collections.md)** 컬렉션 생성, 삭제 또는 업데이트
+>컬렉션을 만들거나 삭제하거나 업데이트하려면 **[컬렉션 관리](/help/mobile/mobile-on-demand-managing-collections.md)**&#x200B;를 참조하십시오.
 
 ### 다음 단계 {#the-next-steps}
 

@@ -36,7 +36,7 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 
 >[!NOTE]
 >
->한 폴더에서 다른 폴더로 이동하는 자산은 재처리되지 않습니다. 예를 들어 프로필 A가 할당된 폴더 1과 프로필 B가 할당된 폴더 2가 있다고 가정해 보겠습니다. 폴더 1에서 폴더 2로 에셋을 이동하는 경우 이동된 에셋은 폴더 1에서 원래 처리를 유지합니다.
+>한 폴더에서 다른 폴더로 이동하는 Assets은 재처리되지 않습니다. 예를 들어 프로필 A가 할당된 폴더 1과 프로필 B가 할당된 폴더 2가 있다고 가정해 보겠습니다. 폴더 1에서 폴더 2로 에셋을 이동하는 경우 이동된 에셋은 폴더 1에서 원래 처리를 유지합니다.
 >
 >동일한 프로필이 할당된 두 폴더 간에 에셋을 이동하는 경우에도 마찬가지입니다.
 
@@ -44,17 +44,17 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 
 >[!NOTE]
 >
->적용 대상 *Dynamic Media - Scene7 모드* Experience Manager 6.4.6.0 이상에서만 사용할 수 있습니다.
+>Experience Manager 6.4.6.0 이상에서만 *Dynamic Media - Scene7 모드*&#x200B;에 적용됩니다.
 
 나중에 변경한 기존 처리 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다.
 
-예를 들어 이미지 프로필을 만들어 폴더에 할당했다고 가정합니다. 폴더에 업로드한 모든 이미지 에셋에는 자동으로 이미지 프로필이 에셋에 적용되었습니다. 하지만 나중에 새 스마트 자르기 비율을 프로필에 추가하기로 합니다. 이제 에셋을 선택하고 다시 폴더에 업로드하는 대신 를 실행하기만 하면 됩니다. *Dynamic Media 재처리* <!-- *Scene7: Reprocess Assets* --> 워크플로입니다.
+예를 들어 이미지 프로필을 만들어 폴더에 할당했다고 가정합니다. 폴더에 업로드한 모든 이미지 에셋에는 자동으로 이미지 프로필이 에셋에 적용되었습니다. 하지만 나중에 새 스마트 자르기 비율을 프로필에 추가하기로 합니다. 이제 자산을 선택하고 다시 폴더에 업로드하는 대신 *Dynamic Media 재처리* <!-- *Scene7: Reprocess Assets* --> 워크플로우를 실행하면 됩니다.
 
 처음으로 처리가 실패한 자산에 대해 재처리 워크플로우를 실행할 수 있습니다. 따라서 처리 프로필을 편집하거나 처리 프로필을 적용하지 않았더라도 언제든지 자산 폴더에서 재처리 워크플로우를 실행할 수 있습니다.
 
-기본값 50개에서 최대 1000개의 자산까지 재처리 워크플로우의 배치 크기를 조정할 수 있습니다(선택 사항). 를 실행할 때 _Scene7: 에셋 재처리_ 폴더의 워크플로우에서는 에셋이 일괄로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후, 전체 배치 세트에 있는 각 에셋의 메타데이터는 Experience Manager 시 업데이트됩니다. 배치 크기가 큰 경우 처리가 지연될 수 있습니다. 또는 배치 크기가 너무 작으면 Dynamic Media 서버로 너무 많은 라운드트립이 발생할 수 있습니다.
+기본값 50개에서 최대 1000개의 자산까지 재처리 워크플로우의 배치 크기를 조정할 수 있습니다(선택 사항). 폴더에서 _Scene7: Assets 재처리_ 워크플로우를 실행하면 자산이 일괄로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후, 전체 배치 세트에 있는 각 에셋의 메타데이터는 Experience Manager 시 업데이트됩니다. 배치 크기가 큰 경우 처리가 지연될 수 있습니다. 또는 배치 크기가 너무 작으면 Dynamic Media 서버로 너무 많은 라운드트립이 발생할 수 있습니다.
 
-다음을 참조하십시오 [재처리 워크플로우의 배치 크기 조정](#adjusting-load).
+[재처리 워크플로우의 일괄 처리 크기 조정](#adjusting-load)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -64,9 +64,9 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Dynamic Media Reprocess workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job, and so on, until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
-**폴더에서 에셋을 재처리하려면:**
+**폴더의 자산을 재처리하려면:**
 
-1. Experience Manager의 에셋 페이지에서 처리 프로필이 할당되어 있고 을 적용할 에셋 폴더로 이동합니다. **[!UICONTROL Dynamic Media 재처리]** 워크플로,
+1. Experience Manager의 Assets 페이지에서 처리 프로필이 할당되어 있고 **[!UICONTROL Dynamic Media 재처리]** 워크플로를 적용할 자산 폴더로 이동합니다.
 
    처리 프로필이 이미 할당된 폴더는 카드 보기에서 폴더 이름 바로 아래에 프로필 이름이 표시되어 있습니다.
 
@@ -76,53 +76,53 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
    * 주 선택된 폴더에 자산이 있는 하위 폴더가 하나 이상 있는 경우 워크플로우는 폴더 계층의 모든 자산을 재처리합니다.
    * 가장 좋은 방법은 1000개가 넘는 자산을 가진 폴더 계층에서 이 워크플로우를 실행하는 것을 피하는 것입니다.
 
-1. 페이지의 왼쪽 상단 모서리 근처에 있는 드롭다운 목록에서 을(를) 선택합니다. **[!UICONTROL 타임라인]**.
-1. 페이지의 왼쪽 아래 모서리 근처에서 설명 필드 오른쪽에 있는 캐럿 아이콘( **^** ).
+1. 페이지의 왼쪽 상단 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
+1. 페이지의 왼쪽 아래 모서리 근처에서 설명 필드 오른쪽에 있는 캐럿 아이콘( **^** )을 선택합니다.
 
-   ![에셋 재처리 워크플로 1](/help/assets/assets/reprocess-assets1.png)
+   ![자산 워크플로우 재처리](/help/assets/assets/reprocess-assets1.png)
 
-1. 선택 **[!UICONTROL 워크플로우 시작]**.
-1. 다음에서 **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 선택 **[!UICONTROL Dynamic Media 재처리]**.
-1. (선택 사항) **워크플로우 제목 입력** 텍스트 필드에 워크플로우의 이름을 입력합니다. 필요한 경우 이름을 사용하여 워크플로 인스턴스를 참조할 수 있습니다.
+1. **[!UICONTROL 워크플로 시작]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 워크플로 시작]** 드롭다운 목록에서 **[!UICONTROL Dynamic Media 재처리]**&#x200B;를 선택합니다.
+1. (선택 사항) **워크플로우의 제목을 입력** 텍스트 필드에 워크플로우의 이름을 입력합니다. 필요한 경우 이름을 사용하여 워크플로 인스턴스를 참조할 수 있습니다.
 
    ![자산 재처리 2](/help/assets/assets/reprocess-assets2.png)
 
-1. 선택 **[!UICONTROL 시작]**&#x200B;을 선택한 다음 을 선택합니다. **[!UICONTROL 확인]**.
+1. **[!UICONTROL 시작]**&#x200B;을 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 
-   워크플로우를 모니터링하거나 워크플로우의 진행 상황을 확인하려면 Experience Manager 메인 콘솔 페이지에서 을 선택합니다. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]**. 워크플로 인스턴스 페이지에서 워크플로를 선택합니다. 메뉴 모음에서 를 선택합니다. **[!UICONTROL 내역 열기]**. 동일한 워크플로 인스턴스 페이지에서 선택한 워크플로를 종료, 일시 중단 또는 이름 변경할 수도 있습니다.
+   워크플로를 모니터링하거나 진행률을 확인하려면 Experience Manager 기본 콘솔 페이지에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]**&#x200B;를 선택하십시오. 워크플로 인스턴스 페이지에서 워크플로를 선택합니다. 메뉴 표시줄에서 **[!UICONTROL 내역 열기]**&#x200B;를 선택합니다. 동일한 워크플로 인스턴스 페이지에서 선택한 워크플로를 종료, 일시 중단 또는 이름 변경할 수도 있습니다.
 
 ### 재처리 워크플로우의 배치 크기 조정 {#adjusting-load}
 
 (선택 사항) 재처리 워크플로우의 기본 배치 크기는 작업당 50개의 자산입니다. 이 최적의 배치 크기는 재프로세스가 실행되는 에셋의 평균 크기 및 MIME 유형에 의해 제어됩니다. 값이 높을수록 단일 재처리 작업에 파일이 많다는 의미입니다. 따라서 처리 배너는 더 긴 시간 동안 Experience Manager 자산에 유지됩니다. Adobe 그러나 평균 파일 크기가 1MB 이하로 작은 경우 값을 100을 몇 개, 많게는 1000으로 늘리는 것이 좋습니다. Adobe 평균 파일 크기가 수백 MB와 같이 큰 경우 배치 크기를 최대 10까지 낮추는 것이 좋습니다.
 
-**재처리 워크플로우의 배치 크기를 선택적으로 조정하려면**
+**재처리 워크플로의 일괄 처리 크기를 선택적으로 조정하려면:**
 
-1. Experience Manager에서 **[!UICONTROL Adobe Experience Manager]** 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** (hammer) 아이콘 > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]**.
-1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Dynamic Media 재처리]**.
+1. Experience Manager에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]**(hammer) 아이콘 > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]**&#x200B;을 선택합니다.
+1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Dynamic Media 재처리]**&#x200B;를 선택합니다.
 
-   ![카드 보기에서 Dynamic Media 재처리 워크플로우가 선택된 워크플로우 모델 페이지](/help/assets/assets-dm/reprocess-assets7.png)
+   ![카드 보기에서 Dynamic Media 재처리 워크플로가 선택된 워크플로 모델 페이지](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. 도구 모음에서 를 선택합니다. **[!UICONTROL 편집]**. 새 브라우저 탭에서 Dynamic Media 재처리 워크플로우 모델 페이지가 열립니다.
-1. Dynamic Media 재처리 워크플로 페이지의 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 편집]** 을 클릭하여 워크플로를 &quot;잠금 해제&quot;합니다.
-1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 을 선택합니다. **[!UICONTROL 구성]** 을 클릭합니다.
+1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다. 새 브라우저 탭에서 Dynamic Media 재처리 워크플로우 모델 페이지가 열립니다.
+1. Dynamic Media 재처리 워크플로 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 편집]**&#x200B;을(를) 선택하여 워크플로를 &quot;잠금 해제&quot;합니다.
+1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 연 다음 도구 모음에서 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
 
    ![Scene7 일괄 업로드 구성 요소](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. 다음에서 **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자에서 다음을 설정합니다.
-   * 다음에서 **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]** 텍스트 필드에 원하는 경우 작업에 대한 새 제목과 설명을 입력합니다.
-   * 선택 **[!UICONTROL 핸들러 진행]** 핸들러가 다음 단계로 진행되는 경우.
-   * 다음에서 **[!UICONTROL 시간 제한]** 필드에 외부 프로세스 시간 초과(초)를 입력합니다.
-   * 다음에서 **[!UICONTROL 기간]** 필드에 외부 프로세스 완료를 테스트할 폴링 간격(초)을 입력합니다.
-   * 다음에서 **[!UICONTROL 일괄 처리 필드]** Dynamic Media 서버 일괄 처리 업로드 작업에서 처리할 최대 자산 수(50-1000)를 입력합니다.
-   * 선택 **[!UICONTROL 시간 초과 시 진행]** 시간 초과에 도달했을 때 진행하려는 경우. 시간 제한에 도달했을 때 받은 편지함으로 이동하려는 경우 선택을 취소합니다.
+1. **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자에서 다음을 설정합니다.
+   * **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]** 텍스트 필드에 원하는 경우 작업에 대한 새 제목과 설명을 입력합니다.
+   * 처리기가 다음 단계로 진행하려면 **[!UICONTROL 처리기 진행]**&#x200B;을 선택하십시오.
+   * **[!UICONTROL 시간 초과]** 필드에 외부 프로세스 시간 초과(초)를 입력합니다.
+   * **[!UICONTROL 기간]** 필드에 외부 프로세스 완료를 테스트할 폴링 간격(초)을 입력합니다.
+   * **[!UICONTROL 일괄 처리 필드]**&#x200B;에서 Dynamic Media 서버 일괄 처리 업로드 작업에서 처리할 최대 자산 수(50-1000)를 입력합니다.
+   * 시간이 초과될 때 진행하려면 **[!UICONTROL 시간 초과 시 진행]**&#x200B;을 선택하십시오. 시간 제한에 도달했을 때 받은 편지함으로 이동하려는 경우 선택을 취소합니다.
 
    ![속성 대화 상자](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. 의 오른쪽 위 모서리에서 **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자에서 **[!UICONTROL 완료]**.
+1. **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자의 오른쪽 상단 모서리에서 **[!UICONTROL 완료]**&#x200B;를 선택합니다.
 
-1. Dynamic Media 워크플로우 재처리 모델 페이지의 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 동기화]**. 다음을 참조: **[!UICONTROL 동기화됨]**, 워크플로우 런타임 모델이 정상적으로 동기화되어 폴더에 있는 에셋을 재처리할 준비가 되었습니다.
+1. Dynamic Media 재처리 워크플로 모델 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 동기화]**&#x200B;를 선택합니다. **[!UICONTROL 동기화됨]**&#x200B;이 표시되면 워크플로우 런타임 모델이 정상적으로 동기화되어 폴더에 있는 자산을 재처리할 준비가 된 것입니다.
 
-   ![워크플로우 모델 동기화](/help/assets/assets-dm/reprocess-assets1.png)
+   ![워크플로 모델 동기화](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Dynamic Media 재처리 워크플로 모델을 보여 주는 브라우저 탭을 닫습니다.
 

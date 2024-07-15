@@ -58,7 +58,7 @@ ht-degree: 1%
 >
 >* 고정 세션이 활성화되어 있거나
 >
->* 동기화가 시작될 때 AEM에서 사용자가 이미 생성되었습니다. 즉, 처리기가 있는 경우에는 압축된 토큰이 지원되지 않습니다 **만들기** 동기화 프로세스 중 사용자.
+>* 동기화가 시작될 때 AEM에서 사용자가 이미 생성되었습니다. 즉, 동기화 프로세스 중에 처리기가 사용자를 **만들기**&#x200B;하는 상황에서는 캡슐화된 토큰이 지원되지 않습니다.
 
 캡슐화된 토큰을 구성할 때 고려해야 할 몇 가지 사항이 있습니다.
 
@@ -70,11 +70,11 @@ ht-degree: 1%
 인스턴스 간에 키를 복제하려면 다음을 수행해야 합니다.
 
 1. 복사할 주요 자료가 포함된 AEM 인스턴스(일반적으로 작성자 인스턴스)에 액세스합니다.
-1. 를 찾습니다. `com.adobe.granite.crypto.file` 로컬 파일 시스템에서 번들로 만듭니다. 예를 들어 이 경로에서 다음을 수행합니다.
+1. 로컬 파일 시스템에서 `com.adobe.granite.crypto.file` 번들을 찾습니다. 예를 들어 이 경로에서 다음을 수행합니다.
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 
-   다음 `bundle.info` 각 폴더 내의 파일은 번들 이름을 식별합니다.
+   각 폴더 내의 `bundle.info` 파일은 번들 이름을 식별합니다.
 
 1. 데이터 폴더로 이동합니다. 예:
 
@@ -86,7 +86,7 @@ ht-degree: 1%
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. 이전에 복사한 두 파일을 붙여넣습니다.
-1. [암호화 번들 새로 고침](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) 대상 인스턴스가 이미 실행 중인 경우.
+1. 대상 인스턴스가 이미 실행 중인 경우 [암호화 번들을 새로 고치십시오](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle).
 
 1. 키를 복제할 모든 인스턴스에 대해 위의 단계를 반복합니다.
 
@@ -94,6 +94,6 @@ ht-degree: 1%
 
 HMAC 키가 복제되면 웹 콘솔을 통해 캡슐화된 토큰을 활성화할 수 있습니다.
 
-1. 브라우저를 가리켜서 `https://serveraddress:port/system/console/configMgr`
-1. 다음 항목을 찾습니다. **Adobe Granite 토큰 인증 핸들러** 을(를) 클릭합니다.
-1. 다음 창에서 **캡슐화된 토큰 지원 사용** 상자 및 누르기 **저장**.
+1. 브라우저를 `https://serveraddress:port/system/console/configMgr`(으)로 지정
+1. **Adobe Granite 토큰 인증 처리기**&#x200B;라는 항목을 찾아 클릭합니다.
+1. 다음 창에서 **캡슐화된 토큰 지원을 사용하도록 설정** 상자를 선택하고 **저장**&#x200B;을 누릅니다.

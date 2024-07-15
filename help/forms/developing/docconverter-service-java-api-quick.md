@@ -1,5 +1,5 @@
 ---
-title: DocConverter 서비스 Java&trade, API 빠른 시작(SOAP)
+title: DocConverter 서비스 Java&trade; API 빠른 시작(SOAP)
 description: Java&trade; API 빠른 시작(SOAP)을 사용하여 문서를 PDF/A 문서로 변환하고 준수사항을 관리하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -28,11 +28,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍의 빠른 시작은 JBoss® Application Server 및 Microsoft® Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX®와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms를 사용한 프로그래밍의 빠른 시작은 JBoss® Application Server 및 Microsoft® Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX®와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 문서를 PDF/A 문서로 변환 {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
-다음 Java™ 코드 예제는 PDF 문서 *Loan.pdf* PDF 파일로 저장된 PDF/A 문서 *LoanArchive.pdf*. (참조: [문서를 PDF/A 문서로 변환](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+다음 Java™ 코드 예제에서는 PDF 문서 *Loan.pdf*&#x200B;을(를) PDF 파일 *LoanArchive.pdf*&#x200B;로 저장된 PDF/A 문서로 변환합니다. ([문서를 PDF/A 문서로 변환](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents)을 참조하십시오.)
 
 ```java
  /*
@@ -135,7 +135,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 PDF/A 준수 여부 확인 {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
-다음 Java™ 코드 예제에서는 입력 PDF 문서가 PDF/A를 준수하는지 여부를 확인합니다. DocConverter 서비스에 전달되는 입력 PDF 문서의 이름은 다음과 같습니다 *LoanArchive.pdf*. 유효성 검사 결과는 이름이 인 XML 파일에 기록됩니다. *ValidationResult.xml*. (참조: [프로그래밍 방식으로 PDF/A 준수 여부 확인](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+다음 Java™ 코드 예제에서는 입력 PDF 문서가 PDF/A를 준수하는지 여부를 확인합니다. DocConverter 서비스에 전달되는 입력 PDF 문서의 이름은 *LoanArchive.pdf*&#x200B;입니다. 유효성 검사 결과가 *ValidationResults.xml*(이)라는 XML 파일에 기록됩니다. ([프로그래밍 방식으로 PDF/A 준수 확인](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)을 참조하십시오.)
 
 ```java
  /*

@@ -14,7 +14,7 @@ ht-degree: 53%
 
 # Headless 애플리케이션 실행 방법 {#go-live}
 
-의 이 부분에서 [AEM Headless 개발자 여정](overview.md), headless 애플리케이션을 라이브로 배포하는 방법에 대해 알아봅니다.
+[AEM Headless 개발자 여정](overview.md)의 이 부분에서 Headless 응용 프로그램을 라이브로 배포하는 방법을 알아보세요.
 
 ## 지금까지의 스토리 {#story-so-far}
 
@@ -59,7 +59,7 @@ Git은 소스 제어를 관리하고 Cloud Manager의 변경 사항을 체크인
 
 AEM은 Apache Maven을 사용하여 AEM Maven Project 원형에서 생성된 프로젝트를 빌드합니다. 모든 주요 IDE는 Maven에 대한 통합 지원을 제공합니다.
 
-Node.js는 AEM 프로젝트의 프론트엔드 에셋으로 작업하는 데 사용되는 JavaScript 런타임 환경입니다. `ui.frontend` 하위 프로젝트. Node.js는 JavaScript 종속성을 관리하는 데 사용되는 npm(사실상 Node.js 패키지 관리자)과 함께 배포됩니다.
+Node.js는 AEM 프로젝트 `ui.frontend` 하위 프로젝트의 프론트엔드 에셋으로 작업하는 데 사용되는 JavaScript 런타임 환경입니다. Node.js는 JavaScript 종속성을 관리하는 데 사용되는 실질적인 Node.js 패키지 관리자인 npm과 함께 배포됩니다.
 
 ## AEM 시스템의 구성 요소 개요 {#components-of-an-aem-system-at-a-glance}
 
@@ -69,7 +69,7 @@ Node.js는 AEM 프로젝트의 프론트엔드 에셋으로 작업하는 데 사
 
 * **Author 서비스**&#x200B;는 내부 사용자가 콘텐츠를 만들고 관리하고 미리 보는 곳입니다.
 
-* **Publish 서비스** 는 &quot;라이브&quot; 환경으로 간주되며 일반적으로 최종 사용자는 이 환경을 사용하여 상호 작용합니다. Author 서비스에서 편집 및 승인된 콘텐츠는 Publish 서비스로 배포(복제)됩니다. AEM Headless 애플리케이션의 가장 일반적인 배포 패턴은 애플리케이션의 프로덕션 버전을 AEM Publish 서비스에 연결하는 것입니다.
+* **Publish 서비스**&#x200B;는 &quot;라이브&quot; 환경으로 간주되며 일반적으로 최종 사용자는 이 서비스를 통해 상호 작용합니다. Author 서비스에서 편집 및 승인된 콘텐츠는 Publish 서비스로 배포(복제)됩니다. AEM Headless 애플리케이션의 가장 일반적인 배포 패턴은 애플리케이션의 프로덕션 버전을 AEM Publish 서비스에 연결하는 것입니다.
 
 * **Dispatcher**&#x200B;는 AEM Dispatcher 모듈로 보강된 정적 웹 서버입니다. 게시 인스턴스에서 생성된 웹 페이지를 캐시하여 성능을 개선합니다.
 
@@ -97,7 +97,7 @@ AEM Headless 프로젝트를 시작하도록 준비하려면 프로젝트의 모
 
 로컬 개발 환경이 설정되면 정적 노드 서버를 로컬로 배포하여 React 앱에 제공하는 콘텐츠를 시뮬레이션할 수 있습니다.
 
-로컬 개발 환경 및 콘텐츠 미리 보기에 필요한 모든 종속성 설정에 대해 자세히 알아보려면 를 참조하십시오. [프로덕션 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
+로컬 개발 환경 설정과 콘텐츠 미리 보기에 필요한 모든 종속성에 대해 자세히 알아보려면 [프로덕션 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html)를 참조하세요.
 
 ## Go-Live를 위해 AEM Headless 애플리케이션 준비 {#prepare-your-aem-headless-application-for-golive}
 
@@ -107,7 +107,7 @@ AEM Headless 프로젝트를 시작하도록 준비하려면 프로젝트의 모
 
 ### 실행 전 Headless 애플리케이션 보안 {#secure-and-scale-before-launch}
 
-1. 준비 [인증](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) GraphQL 요청에 대한
+1. GraphQL 요청에 대한 [인증](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) 준비
 
 ### 모델 구조와 GraphQL 출력 비교 {#structure-vs-output}
 
@@ -126,31 +126,31 @@ AEM Headless 프로젝트를 시작하도록 준비하려면 프로젝트의 모
 
 >[!NOTE]
 >
->다음을 참조하십시오 [추가 리소스](#additional-resources) cdn 및 캐싱에 대한 자세한 내용은 을 참조하십시오.
+>CDN 및 캐싱에 대한 자세한 내용은 [추가 리소스](#additional-resources)를 참조하세요.
 
 ### Headless 콘텐츠 다운로드 시간 개선 {#improve-download-time}
 
 * HTTP 클라이언트가 HTTP/2를 사용하는지 확인합니다.
 * HTTP 클라이언트가 gzip에 대한 헤더 요청을 수락하는지 확인하십시오.
 * JSON과 참조된 아티팩트를 호스팅하는 데 사용되는 도메인 수를 최소화합니다.
-* 사용 `Last-modified-since` 리소스를 새로 고칩니다.
+* `Last-modified-since`을(를) 사용하여 리소스를 새로 고치십시오.
 * JSON 파일의 `_reference`출력을 사용하여 전체 JSON 파일을 구문 분석하지 않고도 자산 다운로드를 시작합니다.
 
 <!-- End of CDN Review -->
 
 ## 프로덕션에 배포 {#deploy-to-production}
 
-프로덕션에 배포는 다음을 보유하고 있는지 여부에 따라 달라질 수 있습니다 *기존* Maven을 사용하여 배포하거나 Adobe Managed Services(AMS)에 있으므로 Cloud Manager를 사용하는 AEM 인스턴스.
+프로덕션에 배포하는 방법은 Maven을 사용하여 배포하는 *기존* AEM 인스턴스가 있는지 또는 AMS(Managed Services) Adobe 및 Cloud Manager을 사용하는지에 따라 달라질 수 있습니다.
 
 ## Maven을 사용하여 프로덕션에 배포 {#deploy-to-production-maven}
 
-의 경우 *기존* Maven을 사용한 배포(AMS 이외), [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) 개요를 참조하십시오.
+Maven을 사용하는 *기존* 배포(AMS 제외)에 대한 개요는 [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build)를 참조하십시오.
 
-## Cloud Manager를 사용하여 프로덕션에 배포 {#deploy-to-production-cloud-manager}
+## Cloud Manager을 사용하여 프로덕션에 배포 {#deploy-to-production-cloud-manager}
 
-Cloud Manager를 사용하는 AMS 고객의 경우 모든 것이 테스트되고 제대로 작동하는지 확인한 후 코드 업데이트를 [Cloud Manager의 중앙 집중식 Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
+Cloud Manager을 사용하는 AMS 고객인 경우 모든 것이 테스트되고 제대로 작동하는지 확인한 후 코드 업데이트를 Cloud Manager의 [중앙 집중식 Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html)에 푸시할 수 있습니다.
 
-업데이트가 Cloud Manager에 업로드된 후 다음을 사용하여 AEM에 배포합니다. [Cloud Manager의 CI/CD 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
+업데이트가 Cloud Manager에 업로드되면 [Cloud Manager의 CI/CD 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html)을 사용하여 AEM에 배포합니다.
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -211,23 +211,23 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 ### 단일 페이지 애플리케이션 살펴보기 {#explore-spa}
 
-그러나 AEM에서 헤드리스 매장을 중단할 필요는 없습니다. 다음에서 [여정의 시작 부분](getting-started.md#integration-levels)에서는 AEM이 headless 전달 및 기존 전체 스택 모델을 지원하는 방법뿐만 아니라 두 가지 모두의 장점을 결합한 하이브리드 모델을 지원하는 방법에 대해 논의했습니다.
+그러나 AEM에서 헤드리스 매장을 중단할 필요는 없습니다. [여정의 시작하기](getting-started.md#integration-levels)에서 AEM이 Headless 전달 및 기존 전체 스택 모델을 지원할 뿐만 아니라 두 가지 장점을 모두 결합한 하이브리드 모델을 지원하는 방법에 대해 논의했습니다.
 
-이러한 유연성이 프로젝트에 필요한 사항인 경우 여정의 선택적 추가 부분으로 계속 진행하십시오. [AEM으로 단일 페이지 애플리케이션(SPA)을 만드는 방법](create-spa.md)
+이러한 유연성이 프로젝트에 필요한 것이라면 여정의 선택적 추가 부분인 [AEM을 사용하여 SPA(단일 페이지 애플리케이션)를 만드는 방법](create-spa.md)을 계속 사용하십시오.
 
 ## 추가 리소스 {#additional-resources}
 
-* [AEM 개발 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
+* [AEM 개발 가이드](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
 
 * [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
 
-* [AEM용 Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* AEM용 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
 * CDN 캐시
 
    * [CDN 캐시 제어](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * 구성 [CDN 재작성기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*cdn 재작성기 검색*)
+   * [CDN 재작성기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) 구성(*CDN 재작성기 검색*)
 
 * [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
 * [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

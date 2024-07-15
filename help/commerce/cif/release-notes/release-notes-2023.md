@@ -1,6 +1,6 @@
 ---
-title: AEM Content and Commerce 릴리스 노트 2023
-description: 2023년 Adobe Experience Manager Content and Commerce 릴리스 노트
+title: AEM Content 및 Commerce 릴리스 노트 2023
+description: Adobe Experience Manager Content 및 Commerce 릴리스 노트 2023.
 exl-id: 00349400-6860-4e3c-ba56-fa12afc5db1d
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
@@ -54,4 +54,4 @@ ht-degree: 15%
 
 ### 새로운 기능 {#what-is-new-july}
 
-* 의 제품 필터 후크 `ProductList` 구성 요소
+* `ProductList` 구성 요소의 제품 필터 후크

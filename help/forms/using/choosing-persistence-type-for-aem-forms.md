@@ -57,12 +57,12 @@ ht-degree: 1%
  </tbody>
 </table>
 
-TarMK는 성능을 위해 설계된 반면, MongoMK와 RDBMK는 확장성을 위해 설계되었습니다. Adobe은 섹션에 설명된 사용 사례를 제외하고 Author 및 Publish 인스턴스 모두에 대해 모든 AEM Forms 배포 시나리오에 대한 기본 지속성 기술로 TarMK를 강력히 권장합니다 [TarMK를 통해 Mongo 또는 관계형 데이터베이스 마이크로커널 선택](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
+TarMK는 성능을 위해 설계된 반면, MongoMK와 RDBMK는 확장성을 위해 설계되었습니다. Adobe [TarMK를 통해 Mongo 또는 관계형 데이터베이스 마이크로커널 선택](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p)에 설명된 사용 사례를 제외하고, 작성자 및 Publish 인스턴스 모두에 대해 TarMK를 모든 AEM Forms 배포 시나리오의 기본 지속성 기술로 적극 권장합니다.
 
-지원되는 마이크로커널 목록은 다음을 참조하십시오. [AEM Forms on OSGi 기술 요구 사항](/help/sites-deploying/technical-requirements.md) 또는 [AEM Forms on JEE 지원되는 플랫폼 조합](/help/forms/using/aem-forms-jee-supported-platforms.md) 문서.
+지원되는 마이크로커널 목록은 [OSGi 기술 요구 사항에 대한 AEM Forms](/help/sites-deploying/technical-requirements.md) 또는 [JEE에서 지원되는 플랫폼 조합에 대한 AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md)를 참조하십시오.
 
 ## TarMK를 통해 Mongo 또는 관계형 데이터베이스 마이크로커널 선택 {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
 확장 가능한(클러스터된) AEM Forms 환경은 수평으로 구성된 두 개 이상의 활성 작성자 인스턴스 세트입니다. 모든 동시 작성 활동을 지원하는 단일 서버가 더 이상 지속 가능하지 않은 경우 두 개 이상의 작성자 인스턴스를 실행하도록 선택할 수 있습니다.
 
-JEE 환경의 확장 가능한(클러스터된) AEM Forms에 대해서는 MongoMK 및 RDBMK 지속성 유형만 지원됩니다. 서버 수 또는 확장 가능한 환경 크기는 설치할 때마다 달라집니다. 고려 사항 및 예제 목록은 [권장 배포](/help/sites-deploying/recommended-deploys.md) 및 또는 [AEM Forms의 아키텍처 및 배포 토폴로지](/help/forms/using/aem-forms-architecture-deployment.md) 기사. RDBMK 및 TarMK를 사용한 AEM Forms의 용량 계획에 대한 자세한 내용은 AEM Forms 지원 센터에 문의 할 수도 있습니다.
+JEE 환경의 확장 가능한(클러스터된) AEM Forms에 대해서는 MongoMK 및 RDBMK 지속성 유형만 지원됩니다. 서버 수 또는 확장 가능한 환경 크기는 설치할 때마다 달라집니다. 고려 사항 및 예제 목록은 [권장되는 배포](/help/sites-deploying/recommended-deploys.md) 및/또는 [AEM Forms의 아키텍처 및 배포 토폴로지](/help/forms/using/aem-forms-architecture-deployment.md) 문서를 참조하십시오. RDBMK 및 TarMK를 사용한 AEM Forms의 용량 계획에 대한 자세한 내용은 AEM Forms 지원 센터에 문의 할 수도 있습니다.

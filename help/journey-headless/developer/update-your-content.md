@@ -44,7 +44,7 @@ Headless 여정의 이전 단계에서는 쿼리를 사용하여 콘텐츠를 �
 
 그러면 다른 API가 필요한 이유는 무엇입니까?
 
-Assets HTTP API를 사용하면 다음 작업을 수행할 수 있습니다 **읽기** 콘텐츠를 볼 수 있지만 **만들기**, **업데이트** 및 **삭제** content - GraphQL API로 사용할 수 없는 작업입니다.
+Assets HTTP API를 사용하면 콘텐츠를 **읽기**&#x200B;할 수 있지만, GraphQL API에서는 수행할 수 없는 작업인 콘텐츠를 **만들기**, **업데이트** 및 **삭제**&#x200B;할 수도 있습니다.
 
 Assets REST API는 최신 Adobe Experience Manager 버전의 각 기본 설치에서 사용할 수 있습니다.
 
@@ -57,7 +57,7 @@ Assets HTTP API에는 다음이 포함됩니다.
 
 Assets HTTP API의 현재 구현은 **REST** 아키텍처 스타일을 기반으로 하며 **CRUD** 작업(만들기, 읽기, 업데이트, 삭제)을 통해 콘텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
 
-이러한 작업을 통해 API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Headless CMS(컨텐츠 관리 시스템)를 운영할 수 있습니다. 아니면 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다. 예를 들어 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 정의에는 API를 통해 종종 JSON 형식으로 제공되는 콘텐츠가 필요합니다.
+이러한 작업을 통해 API를 사용하면 JavaScript 프론트엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Headless CMS(컨텐츠 관리 시스템)를 운영할 수 있습니다. 아니면 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다. 예를 들어 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 정의에는 API를 통해 종종 JSON 형식으로 제공되는 콘텐츠가 필요합니다.
 
 <!--
 >[!NOTE]
@@ -253,7 +253,7 @@ API 참조 설명서에 지원되는 요청의 정확한 형식을 정의합니�
 
 >[!CAUTION]
 >
->AEM 인스턴스의 Dispatcher 구성이 다음에 대한 액세스를 차단할 수 있습니다. `/api`.
+>AEM 인스턴스의 Dispatcher 구성이 `/api`에 대한 액세스를 차단할 수 있습니다.
 
 >[!NOTE]
 >
@@ -320,7 +320,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-다음 문서에서는 AEM Headless 여정을 계속 진행해야 합니다 [Headless 애플리케이션 실행 방법](go-live.md) 여기에서 AEM Headless 프로젝트를 실제로 라이브로 볼 수 있습니다!
+다음에 [Headless 애플리케이션으로 라이브하는 방법](go-live.md) 문서를 검토하여 AEM Headless 여정을 계속해야 합니다. 여기에서 AEM Headless 프로젝트를 실제로 라이브로 진행합니다!
 
 ## 추가 리소스 {#additional-resources}
 

@@ -28,4 +28,4 @@ Document Security는 추상 정책도 지원합니다. 추상 정책은 문서 �
 
 추상 정책 생성은 Document Security Java SDK를 통해서만 지원됩니다. 그러나 document security 웹 페이지의 추상 정책에서 생성하는 정책을 관리할 수 있습니다. 이 방법을 사용하여 만든 정책은 문서 보안 웹 페이지에서 만든 정책과 동작이 동일합니다.
 
-다음을 참조하십시오 [AEM Forms를 사용한 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63) 추가 정보.
+자세한 내용은 [AEM 양식을 사용한 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63)을 참조하십시오.

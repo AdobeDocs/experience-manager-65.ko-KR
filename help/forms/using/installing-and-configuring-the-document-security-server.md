@@ -23,15 +23,15 @@ Adobe Experience Manager Forms document security는 인증된 사용자만 문�
 
 정책은 Document Security 서버에 저장됩니다. 사용자는 클라이언트 애플리케이션을 통해 문서에 정책을 적용합니다. 문서에 정책을 적용하면 정책에 지정된 기밀 유지 설정이 문서에 포함된 정보를 보호합니다. 정책으로 보호된 문서를 정책에 의해 승인된 수신자에게 배포할 수 있습니다.
 
-또한 Document Security는 클라이언트, 뷰어 및 인덱서를 제공하여 문서를 보호하고 보호된 문서를 보고 보호된 문서를 인덱싱합니다. 문서 보안에 대한 자세한 내용은 [문서 보안 기본 정보](/help/forms/using/admin-help/document-security.md).
+또한 Document Security는 클라이언트, 뷰어 및 인덱서를 제공하여 문서를 보호하고 보호된 문서를 보고 보호된 문서를 인덱싱합니다. 문서 보안에 대한 자세한 내용은 [문서 보안 정보](/help/forms/using/admin-help/document-security.md)를 참조하십시오.
 
 ## 배포 토폴로지  {#deployment-topology}
 
-문서 보안 기능은 JEE의 AEM Forms에서만 사용할 수 있습니다. JEE에서 단일 AEM Forms 인스턴스가 필요합니다. 필요한 경우 AEM Forms 서버의 클러스터 또는 팜을 만들 수도 있습니다. 다음 토폴로지는 문서 보안 기능을 실행하는 토폴로지를 나타냅니다. 토폴로지에 대한 자세한 내용은 [AEM Forms의 아키텍처 및 배포 토폴로지](aem-forms-architecture-deployment.md).
+문서 보안 기능은 JEE의 AEM Forms에서만 사용할 수 있습니다. JEE에서 단일 AEM Forms 인스턴스가 필요합니다. 필요한 경우 AEM Forms 서버의 클러스터 또는 팜을 만들 수도 있습니다. 다음 토폴로지는 문서 보안 기능을 실행하는 토폴로지를 나타냅니다. 토폴로지에 대한 자세한 내용은 [AEM Forms의 아키텍처 및 배포 토폴로지](aem-forms-architecture-deployment.md)를 참조하십시오.
 
 <!--fix above link-->
 
-![Document Security 서버 토폴로지](do-not-localize/document-security-server_topology.png)
+![문서 보안 서버 토폴로지](do-not-localize/document-security-server_topology.png)
 
 다음 다이어그램은 AEM Forms Document Security에 대한 일반적인 아키텍처를 보여 줍니다.
 
@@ -41,9 +41,9 @@ Adobe Experience Manager Forms document security는 인증된 사용자만 문�
 
 JEE에 AEM Forms을 설치하고 구성하려면 다음 단계를 수행하십시오.
 
-1. 에서 AEM 6.5 Forms on JEE 설치 프로그램을 다운로드합니다. [Adobe 라이선스 웹 사이트(LWS)](https://licensing.adobe.com/). 설치 관리자를 다운로드하려면 유효한 유지 관리 및 지원 계약이 필요합니다.
-1. 읽기 [JEE의 AEM Forms 지원 플랫폼 문서](/help/forms/using/aem-forms-jee-supported-platforms.md) 또한 소프트웨어, 하드웨어, 운영 체제, 애플리케이션 서버, 데이터베이스, JDK 및 기타 인프라가 JEE에 AEM Forms을 설치할 준비가 되어 있는지 확인합니다.
-1. (Non-Turnkey 설치만 해당) [AEM Forms 단일 서버 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) 또는 [AEM Forms 서버 클러스터 설치 준비 중](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) 환경에서 JEE에 AEM Forms을 설치하고 구성할 수 있도록 준비하십시오.
+1. [Adobe 라이선스 웹 사이트(LWS)에서 JEE의 AEM 6.5 Forms 설치 관리자를 다운로드합니다](https://licensing.adobe.com/). 설치 관리자를 다운로드하려면 유효한 유지 관리 및 지원 계약이 필요합니다.
+1. [JEE의 AEM Forms 지원 플랫폼 문서](/help/forms/using/aem-forms-jee-supported-platforms.md)를 읽고 소프트웨어, 하드웨어, 운영 체제, 응용 프로그램 서버, 데이터베이스, JDK 및 기타 인프라가 JEE에 AEM Forms을 설치할 준비가 되어 있는지 확인하십시오.
+1. (Turnkey가 아닌 설치만 해당) [AEM Forms 단일 서버 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) 또는 [AEM Forms 서버 클러스터 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)를 읽고 환경에서 JEE에 AEM Forms을 설치하고 구성할 수 있도록 준비하십시오.
 1. 사용 중인 환경과 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 지침에 따라 설치를 완료합니다
 
    * [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)

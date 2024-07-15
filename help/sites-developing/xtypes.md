@@ -20,9 +20,9 @@ ht-degree: 0%
 
 이 페이지에서는 AEM(Adobe Experience Manager)에서 사용할 수 있는 모든 xtype에 대해 설명합니다.
 
-ExtJS 언어에서 xtype은 클래스에 제공되는 기호 이름입니다. 의 &quot;구성 요소 XTypes&quot; 단락을 읽을 수 있습니다. [ExtJS 2 개요](https://www.sencha.com/learn/overview-of-extjs-2) xtype의 의미와 사용 방법에 대한 자세한 설명.
+ExtJS 언어에서 xtype은 클래스에 제공되는 기호 이름입니다. xtype의 정의와 사용 방법에 대한 자세한 설명은 [ExtJS 2 개요](https://www.sencha.com/learn/overview-of-extjs-2)의 &quot;구성 요소 XTypes&quot; 단락을 읽을 수 있습니다.
 
-AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)를 참조하십시오.
 
 특정 xtype이 AEM에서 사용되는 구성 요소를 확인하려면 &#39;checkbox&#39;를 원하는 xtype으로 바꾸어 CRXDE에서 다음 Xpath 쿼리를 사용할 수 있습니다.
 
@@ -32,7 +32,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 >
 >이 페이지에서는 클래식 UI 내에서 ExtJS xtype 사용에 대해 설명합니다.
 >
->Adobe은 표준, 최신, [터치 지원 UI](/help/sites-developing/touch-ui-concepts.md) 기준 [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) 및 [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+>Adobe은 [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) 및 [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components)를 기반으로 하는 표준, 최신 [터치 사용 UI](/help/sites-developing/touch-ui-concepts.md)을(를) 사용할 것을 권장합니다.
 
 ## xtypes {#xtypes}
 
@@ -50,7 +50,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   이전에 &quot;SimpleStore&quot;라고 했습니다.
 
-  만들기 위한 작은 도우미 클래스 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)스토리지 데이터를 보다 쉽게 가져올 수 있습니다. ArrayStore 는 [CQ.Ext.data.ArrayReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.ArrayReader).
+  Array 데이터에서 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)을(를) 더 쉽게 만들 수 있는 작은 도우미 클래스입니다. ArrayStore는 [CQ.Ext.data.ArrayReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.ArrayReader)(으)로 자동으로 구성됩니다.
 
 * asseteditor
 
@@ -74,13 +74,13 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.wcm.msm.BlueprintStatus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus)
 
-  BlueprintStatus는 블루프린트 및 해당 라이브 카피 관계를 보고 편집할 수 있는 패널을 제공합니다. 탐색은 다음을 통해 수행됩니다. [CQ.wcm.msm.BlueprintStatus.Tree](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus.Tree), 를 통한 에디션 [CQ.wcm.msm.BlueprintConfig](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig) 및 a [CQ.wcm.msm.LiveCopyProperties](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties).
+  BlueprintStatus는 블루프린트 및 해당 라이브 카피 관계를 보고 편집할 수 있는 패널을 제공합니다. 탐색은 [CQ.wcm.msm.BlueprintStatus.Tree](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus.Tree), 버전은 [CQ.wcm.msm.BlueprintConfig](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig) 및 [CQ.wcm.msm.LiveCopyProperties](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties)를 통해 수행됩니다.
 
 * 상자
 
   [CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent)
 
-  임의의 기본 클래스 [구성 요소](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component) 너비와 높이를 사용하여 상자 크기를 지정합니다.
+  너비 및 높이를 사용하여 상자 크기를 조정할 [구성 요소](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component)의 기본 클래스입니다.
 
   BoxComponent는 크기 조정 및 위치 지정을 위한 자동 상자 모델 조정을 제공하며 구성 요소 렌더링 모델 내에서 올바르게 작동합니다.
 
@@ -88,27 +88,27 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.BrowseDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.BrowseDialog)
 
-  찾아보기 대화 상자를 통해 사용자는 저장소를 탐색하여 경로를 선택할 수 있습니다. 일반적으로 다음을 통해 사용됩니다 [찾아보기 필드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.BrowseField).
+  찾아보기 대화 상자를 통해 사용자는 저장소를 탐색하여 경로를 선택할 수 있습니다. 일반적으로 [BrowseField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.BrowseField)을(를) 통해 사용됩니다.
 
 * 브라우저 필드
 
   [CQ.form.BrowseField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.BrowseField)
 
-  **더 이상 사용되지 않는 기능: [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) 대신**
+  **사용하지 않음: 대신 [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)을(를) 사용**
 
 * 벌키터
 
-  [CQ.wcm.Bulk편집기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)
+  [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)
 
   BulkEditor는 검색 결과를 편집할 수 있는 검색 엔진 및 그리드를 제공합니다.
 
-  BulkEditor는 HTML 양식에 삽입해야 합니다(가져오기 기능에 필요). 이 기능은 와 완벽하게 호환됩니다. [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog).
+  BulkEditor는 HTML 양식에 삽입해야 합니다(가져오기 기능에 필요). 이 기능은 [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)에서 완벽하게 작동합니다.
 
 * 벌케디토르폼
 
   [CQ.wcm.BulkEditorForm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditorForm)
 
-  BulkEditorForm은 [CQ.wcm.Bulk편집기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) HTML 양식으로 둘러싸여 있습니다. 독립 실행형 버전의 입니다. [CQ.wcm.Bulk편집기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor), 가져오기 단추에 HTML 양식이 필요합니다.
+  BulkEditorForm은 HTML 양식으로 둘러싸인 [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)를 제공합니다. [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)의 독립 실행형 버전입니다. 가져오기 단추에는 HTML 양식이 필요합니다.
 
 * 단추
 
@@ -126,7 +126,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.chart.Chart](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart)
 
-  CQ.Ext.chart 패키지는 플래시 기반 차트로 데이터를 시각화하는 기능을 제공합니다. 각 차트는 차트의 자동 업데이트를 활성화하는 CQ.Ext.data.Store에 직접 바인딩됩니다. 차트의 모양과 느낌을 변경하려면 [차트 스타일](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) 및 [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) 구성 옵션을 참조하십시오.
+  CQ.Ext.chart 패키지는 플래시 기반 차트로 데이터를 시각화하는 기능을 제공합니다. 각 차트는 차트의 자동 업데이트를 활성화하는 CQ.Ext.data.Store에 직접 바인딩됩니다. 차트의 모양과 느낌을 변경하려면 [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) 및 [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) 구성 옵션을 참조하십시오.
 
 * 확인란
 
@@ -138,7 +138,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.form.CheckboxGroup](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.CheckboxGroup)
 
-  다음에 대한 그룹화 컨테이너 [CQ.Ext.form.Checkbox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Checkbox) 컨트롤.
+  [CQ.Ext.form.Checkbox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Checkbox) 컨트롤에 대한 그룹화 컨테이너입니다.
 
 * clearcombo
 
@@ -150,7 +150,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.form.ColorField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ColorField)
 
-  ColorField를 사용하여 직접 또는 을 사용하여 색상 16진수 값을 입력할 수 있습니다. [CQ.Ext.ColorMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ColorMenu).
+  ColorField를 사용하면 사용자가 직접 또는 [CQ.Ext.ColorMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ColorMenu)를 사용하여 색상 16진수 값을 입력할 수 있습니다.
 
 * 색상 목록
 
@@ -162,7 +162,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.menu.ColorMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.ColorMenu)
 
-  다음 항목이 포함된 메뉴: [CQ.Ext.ColorPalette](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ColorPalette) 구성 요소.
+  [CQ.Ext.ColorPalette](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ColorPalette) 구성 요소가 포함된 메뉴입니다.
 
 * 색상 팔레트
 
@@ -176,13 +176,13 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   자동 완성, 원격 로드, 페이징 및 기타 다양한 기능을 지원하는 combobox 컨트롤입니다.
 
-  ComboBox는 기존 HTML과 유사한 방식으로 작동합니다 &lt;select> 필드. 차이점은 을 제출한다는 것입니다. [valueField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox), 다음을 지정해야 합니다. [hiddenName](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) 을 클릭하여 숨겨진 입력을 만듭니다.
+  ComboBox는 기존 HTML &lt;select> 필드와 유사한 방식으로 작동합니다. [valueField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)을(를) 제출하려면 [hiddenName](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)을(를) 지정하여 숨겨진 입력을 만들어야 한다는 차이점이 있습니다.
 
 * 구성 요소
 
   [CQ.Ext.Component](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component)
 
-  모든 외부 구성 요소에 대한 기본 클래스입니다. Component의 모든 하위 클래스는 에서 제공하는 작성, 렌더링 및 삭제의 자동 외부 구성 요소 라이프사이클에 참여할 수 있습니다. [컨테이너](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) 클래스. 구성 요소는 를 통해 컨테이너에 추가될 수 있습니다. [개 항목](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) 컨테이너를 만들 때 옵션을 구성합니다.
+  모든 외부 구성 요소에 대한 기본 클래스입니다. Component의 모든 하위 클래스는 [Container](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) 클래스에서 제공하는 생성, 렌더링 및 삭제의 자동화된 Ext 구성 요소 수명 주기에 참여할 수 있습니다. 컨테이너를 만들 때 [항목](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) 구성 옵션을 통해 구성 요소를 컨테이너에 추가할 수 있습니다.
 
 * componentextractor
 
@@ -210,27 +210,27 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.Container](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)
 
-  임의의 기본 클래스 [CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent) 다른 구성 요소를 포함할 수 있습니다. 컨테이너는 포함 항목의 기본 동작, 즉 항목 추가, 삽입 및 제거를 처리합니다.
+  다른 구성 요소를 포함할 수 있는 [CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent)의 기본 클래스입니다. 컨테이너는 포함 항목의 기본 동작, 즉 항목 추가, 삽입 및 제거를 처리합니다.
 
-  가장 일반적으로 사용되는 컨테이너 클래스는 다음과 같습니다 [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel), [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window), 및 [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel).
+  가장 일반적으로 사용되는 컨테이너 클래스는 [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel), [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) 및 [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel)입니다.
 
 * 컨텐츠 파인더
 
   [CQ.wcm.ContentFinder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder)
 
-  ContentFinder는 전문화된 2열 구조입니다 [뷰포트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Viewport) 왼쪽에는 실제 콘텐츠 파인더, 오른쪽에는 콘텐츠 프레임이 들어 있습니다.
+  ContentFinder는 특수화된 두 개의 열 [뷰포트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Viewport)로, 왼쪽에는 실제 콘텐츠 파인더가 있고 오른쪽에는 콘텐츠 프레임이 있습니다.
 
 * contentfindertab
 
   [CQ.wcm.ContentFinderTab](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinderTab)
 
-  ContentFinderTab은 의 탭 패널에 사용되는 기능을 제공하는 특수 패널입니다 [CQ.wcm.ContentFinder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder). 일반적으로 검색 폼(쿼리 상자)과 검색을 표시하는 데이터 보기를 포함합니다.
+  ContentFinderTab은 [CQ.wcm.ContentFinder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder)의 탭 패널에서 사용되는 기능을 제공하는 특수 패널입니다. 일반적으로 검색 폼(쿼리 상자)과 검색을 표시하는 데이터 보기를 포함합니다.
 
 * cq.workflow.model.combo
 
   [CQ.wcm.WorkflowModelCombo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.WorkflowModelCombo)
 
-  WorkflowModelCombo는 사용자 지정입니다. [CQ.Ext.form.ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) 사용 가능한 워크플로우 모델 목록을 표시합니다.
+  WorkflowModelCombo는 사용 가능한 워크플로 모델의 목록을 표시하는 사용자 지정된 [CQ.Ext.form.ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)입니다.
 
 * cq.workflow.model.selector
 
@@ -254,43 +254,43 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.CustomContentPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.CustomContentPanel)
 
-  CustomContentPanel은에서 사용할 수 있는 특수 패널입니다. [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): 콘텐츠를 읽어들여 대화 상자의 다른 필드와 다른 URL에 제출합니다.
+  CustomContentPanel은 [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)에서 사용할 특수 패널입니다. 해당 내용은 대화 상자의 다른 필드와 다른 URL에서 검색되어 제출됩니다.
 
 * 주기
 
   [CQ.Ext.CycleButton](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton)
 
-  메뉴가 포함된 특수화된 SplitButton [CQ.Ext.menu.CheckItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.CheckItem) 요소. 이 단추는 클릭 시 각 메뉴 항목을 자동으로 순환하며 [변경](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) 이벤트(또는 버튼 호출) [changeHandler](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) 함수(제공된 경우).
+  [CQ.Ext.menu.CheckItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.CheckItem) 요소의 메뉴가 포함된 특수 SplitButton입니다. 단추는 클릭 시 각 메뉴 항목을 자동으로 순환하여 현재 메뉴 항목에 대한 단추의 [change](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) 이벤트를 발생시키거나 단추의 [changeHandler](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) 함수를 호출하는 경우(제공된 경우).
 
 * 데이터 보기
 
   [CQ.Ext.DataView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DataView)
 
-  사용자 지정 레이아웃 템플릿과 서식을 사용하여 데이터를 표시하는 메커니즘입니다. 데이터 보기에서 다음을 사용 [CQ.Ext.XTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.XTemplate) 를 내부 템플릿 메커니즘으로 사용하고 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) 따라서 저장소의 데이터가 변경될 때 변경 사항을 반영하도록 보기가 자동으로 업데이트됩니다.
+  사용자 지정 레이아웃 템플릿과 서식을 사용하여 데이터를 표시하는 메커니즘입니다. DataView는 [CQ.Ext.XTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.XTemplate)을 내부 템플릿 메커니즘으로 사용하며, [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)에 바인딩되어 있으므로 저장소의 데이터가 변경되면 변경 사항을 반영하도록 보기가 자동으로 업데이트됩니다.
 
 * 일자 필드
 
   [CQ.Ext.form.DateField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField)
 
-  날짜 입력 필드에 [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) 드롭다운 및 자동 날짜 유효성 검사.
+  [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) 드롭다운과 자동 날짜 유효성 검사가 포함된 날짜 입력 필드를 제공합니다.
 
 * 다테메누
 
   [CQ.Ext.menu.DateMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.DateMenu)
 
-  다음 항목이 포함된 메뉴: [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) 구성 요소.
+  [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) 구성 요소가 포함된 메뉴입니다.
 
 * datepicker
 
   [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker)
 
-  팝업 날짜 선택기. 이 클래스는 [DateField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField) 클래스를 사용하여 유효한 날짜를 검색하고 선택할 수 있습니다.
+  팝업 날짜 선택기. [DateField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField) 클래스에서 이 클래스를 사용하여 올바른 날짜를 찾아 선택할 수 있습니다.
 
 * datetime
 
   [CQ.form.DateTime](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.DateTime)
 
-  DateTime을 사용하면 날짜 및 시간을 조합하여 입력할 수 있습니다 [CQ.Ext.form.DateField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField) 및 [CQ.Ext.form.TimeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TimeField).
+  DateTime을 사용하면 [CQ.Ext.form.DateField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField)와 [CQ.Ext.form.TimeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TimeField)을 결합하여 날짜와 시간을 입력할 수 있습니다.
 
 * 대화 상자
 
@@ -302,13 +302,13 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.form.DialogFieldSet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.DialogFieldSet)
 
-  대화 상자 필드 집합은 [필드 집합](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FieldSet) 에서 사용 [대화 상자](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog).
+  DialogFieldSet은 [대화 상자](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)에서 사용할 [FieldSet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FieldSet)입니다.
 
 * directstore
 
   [CQ.Ext.data.DirectStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectStore)
 
-  을(를) 만드는 작은 도우미 클래스 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) (으)로 구성됨 [CQ.Ext.data.DirectProxy](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) 및 [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader) 와 상호 작용하려면 [CQ.Ext.Direct](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Direct) 서버측 [공급자](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.direct.Provider) 더 쉬워
+  [CQ.Ext.Direct](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Direct) 서버측 [공급자](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.direct.Provider)와 보다 쉽게 상호 작용할 수 있도록 [CQ.Ext.data.DirectProxy](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) 및 [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader)로 구성된 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)을(를) 만드는 작은 도우미 클래스입니다.
 
 * displayfield
 
@@ -322,7 +322,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   EditBar를 사용하면 막대의 버튼을 사용하여 컨텐츠를 편집할 수 있습니다.
 
-  EditBar에는 나열되어 있지 않지만 [CQ.wcm.EditBase](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBase).
+  EditBar에는 나열되어 있지 않지만 [CQ.wcm.EditBase](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBase)의 모든 멤버가 있습니다.
 
 * 편집기
 
@@ -332,9 +332,9 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * 편집기 격자
 
-  [CQ.Ext.grid.EditorGridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)
+  [CQ.Ext.Grid.EditorGridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)
 
-  이 클래스는 [GridPanel 클래스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) 선택한 항목에 셀 편집을 제공하려면 [열](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.Column). 편집 가능한 열은 다음을 제공하여 지정합니다. [편집자](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel) 다음에서 [열 구성](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.Column).
+  이 클래스는 [GridPanel 클래스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)을(를) 확장하여 선택한 [열](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.Column)에서 셀 편집을 제공합니다. 편집 가능한 열은 [열 구성](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.Column)에서 [editor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)을(를) 제공하여 지정합니다.
 
 * editrollover
 
@@ -344,7 +344,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * 사료용 어구
 
-  [CQ.wcm.Feedimporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.FeedImporter)
+  [CQ.wcm.FeedImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.FeedImporter)
 
   FeedImporter를 사용하면 사용자가 RSS 또는 Atom 피드를 가져오고 각 피드 항목에 대한 페이지를 만들 수 있습니다.
 
@@ -358,7 +358,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.form.FieldSet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FieldSet)
 
-  내에서 항목을 그룹화하는 데 사용되는 표준 컨테이너 [양식](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel).
+  [form](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel) 내의 항목을 그룹화하는 데 사용되는 표준 컨테이너입니다.
 
 * fileuploaddialogbutton
 
@@ -392,7 +392,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.data.GroupingStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)
 
-  사용 가능한 필드 중 하나별로 레코드를 그룹화하는 기능을 제공하는 전문 스토어 구현입니다. 다음과함께 사용됩니다. [CQ.Ext.grid.GroupingView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GroupingView) 그룹화된 GridPanel에 대한 데이터 모델을 증명합니다.
+  사용 가능한 필드 중 하나별로 레코드를 그룹화하는 기능을 제공하는 전문 스토어 구현입니다. 그룹화된 GridPanel의 데이터 모델을 증명하기 위해 [CQ.Ext.grid.GroupingView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GroupingView)와 함께 사용됩니다.
 
 * heavymovedialog
 
@@ -418,7 +418,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   간단한 HTML 편집기 구성 요소를 제공합니다. 일부 도구 모음 기능은 Safari에서 지원되지 않으며 필요한 경우 자동으로 숨겨집니다. 이러한 사항은 해당되는 경우 구성 옵션에 명시되어 있습니다.
 
-  편집기의 도구 모음 단추는에 정의된 도구 설명이 있습니다. [단추 설명](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor) 속성.
+  편집기의 도구 모음 단추에는 [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor) 속성에 정의된 도구 설명이 있습니다.
 
 * iframedialog
 
@@ -442,7 +442,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.data.JsonStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonStore)
 
-  만들기 위한 작은 도우미 클래스 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)JSON 데이터에서 보다 쉽게 가져온 . JsonStore는 [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader).
+  JSON 데이터에서 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)를 더 쉽게 만들 수 있는 작은 도우미 클래스입니다. JsonStore는 [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader)(으)로 자동으로 구성됩니다.
 
 * 레이블
 
@@ -466,7 +466,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.list.ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView)
 
-  CQ.Ext.list.ListView는 [격자 모양](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) 보기.
+  CQ.Ext.list.ListView는 [Grid와 유사한](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) 보기를 빠르고 가볍게 구현한 것입니다.
 
 * livecopyproperties
 
@@ -478,31 +478,31 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.list.BooleanColumn](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.BooleanColumn)
 
-  부울 데이터 필드를 렌더링하는 열 정의 클래스입니다. 다음을 참조하십시오. [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) 구성 옵션 / [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) 을 참조하십시오.
+  부울 데이터 필드를 렌더링하는 열 정의 클래스입니다. 자세한 내용은 [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column)의 [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) 구성 옵션을 참조하십시오.
 
 * lvcolumn
 
   [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column)
 
-  이 클래스는 의 초기화에서 사용할 열 구성 데이터를 캡슐화합니다. [목록 보기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView).
+  이 클래스는 [ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView)의 초기화에서 사용할 열 구성 데이터를 캡슐화합니다.
 
 * lvdatecolumn
 
   [CQ.Ext.list.DateColumn](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.DateColumn)
 
-  전달된 날짜를 기본 로케일에 따라 렌더링하거나 구성된 열 정의 클래스 [형식](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.DateColumn). 다음을 참조하십시오. [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) 구성 옵션 / [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) 을 참조하십시오.
+  기본 로케일에 따라 전달된 날짜를 렌더링하거나 구성된 [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.DateColumn)을(를) 렌더링하는 열 정의 클래스입니다. 자세한 내용은 [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column)의 [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) 구성 옵션을 참조하십시오.
 
 * lvnumbercolumn
 
   [CQ.Ext.list.NumberColumn](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.NumberColumn)
 
-  에 따라 숫자 데이터 필드를 렌더링하는 열 정의 클래스 [형식](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.NumberColumn) 문자열. 다음을 참조하십시오. [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) 구성 옵션 / [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) 을 참조하십시오.
+  [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.NumberColumn) 문자열에 따라 숫자 데이터 필드를 렌더링하는 열 정의 클래스입니다. 자세한 내용은 [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column)의 [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) 구성 옵션을 참조하십시오.
 
 * mediabrowsedialog
 
   [CQ.MediaBrowseDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.MediaBrowseDialog)
 
-  **더 이상 사용되지 않는 기능: [콘텐츠 파인더](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder) 미디어를 찾아봅니다.**
+  **사용하지 않음: 대신 [콘텐츠 파인더](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder)를 사용하여 미디어를 찾아봅니다.**
 
   MediaBrowseDialog는 미디어 라이브러리를 탐색하기 위한 대화 상자입니다.
 
@@ -510,9 +510,9 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.menu.Menu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Menu)
 
-  메뉴 개체. 메뉴 항목을 추가할 수 있는 컨테이너입니다. 다른 구성 요소를 기반으로 특수 메뉴를 원하는 경우 Menu를 기본 클래스로 사용할 수도 있습니다 [CQ.Ext.menu.DateMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.DateMenu) 예).
+  메뉴 개체. 메뉴 항목을 추가할 수 있는 컨테이너입니다. 다른 구성 요소를 기반으로 특수 메뉴를 원하는 경우 Menu를 기본 클래스로 사용할 수도 있습니다(예: [CQ.Ext.menu.DateMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.DateMenu)).
 
-  메뉴에는 다음 중 하나가 포함될 수 있습니다. [메뉴 항목](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Item)또는 일반 [구성 요소](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component)s.
+  메뉴에는 [메뉴 항목](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Item) 또는 일반 [구성 요소](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component)가 포함될 수 있습니다.
 
 * 메누바세템
 
@@ -530,7 +530,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.menu.Item](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Item)
 
-  메뉴 관련 기능(예: 하위 메뉴)이 필요하며 정적 표시 항목이 아닌 모든 메뉴 항목에 대한 기본 클래스입니다. 항목이 의 기본 기능을 확장합니다. [CQ.Ext.menu.BaseItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.BaseItem) 메뉴별 활성화 추가 및 처리 클릭.
+  메뉴 관련 기능(예: 하위 메뉴)이 필요하며 정적 표시 항목이 아닌 모든 메뉴 항목에 대한 기본 클래스입니다. Item은 메뉴별 활성화 및 클릭 처리를 추가하여 [CQ.Ext.menu.BaseItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.BaseItem)의 기본 기능을 확장합니다.
 
 * 메뉴 분리자
 
@@ -600,7 +600,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   패널은 애플리케이션 중심의 사용자 인터페이스를 위한 완벽한 구성 요소로 만들어주는 특정 기능과 구조적 구성 요소를 갖춘 컨테이너입니다.
 
-  패널은 의 상속을 통해 다음과 같은 특성을 갖습니다. [CQ.Ext.Container](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container).
+  패널은 [CQ.Ext.Container](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)에서 상속되므로
 
 * 단락 참조
 
@@ -612,19 +612,19 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.form.Password](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Password)
 
-  암호는 다음과 같습니다. [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField) 그러나 값을 비공개로 유지하므로 사용자가 중요한 데이터를 입력할 수 있습니다.
+  암호는 [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField)과(와) 같지만 값을 비공개로 유지하여 사용자가 중요한 데이터를 입력할 수 있습니다.
 
 * 경로 완성
 
   [CQ.form.PathCompletion](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathCompletion)
 
-  **더 이상 사용되지 않는 기능: [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) 대신**
+  **사용하지 않음: 대신 [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)을(를) 사용**
 
 * pathfield
 
   [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)
 
-  PathField는 경로 완료가 있는 경로에 대해 설계된 입력 필드이며 [CQ.BrowseDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.BrowseDialog) 서버 저장소 검색. 고급 링크 생성을 위해 페이지 단락을 탐색할 수도 있습니다.
+  PathField는 경로가 완료된 경로에 대해 디자인된 입력 필드이며 서버 리포지토리를 탐색하기 위해 [CQ.BrowseDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.BrowseDialog)을(를) 여는 단추입니다. 고급 링크 생성을 위해 페이지 단락을 탐색할 수도 있습니다.
 
 * 진행 상황
 
@@ -632,13 +632,13 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   업데이트할 수 있는 진행률 표시줄 구성 요소입니다. 진행률 표시줄은 수동 모드와 자동 모드, 이렇게 두 가지 모드를 지원합니다.
 
-  수동 모드에서는 표시, 업데이트(를 통해) 책임이 있습니다. [update진행률](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ProgressBar))를 추가하고 자체 코드에서 필요에 따라 진행률 표시줄을 지웁니다. 이 메서드는 진행률을 표시하려는 경우에 가장 적합합니다.
+  수동 모드에서는 [updateProgress](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ProgressBar)를 통해 표시하고 업데이트하며 필요에 따라 자체 코드에서 진행률 표시줄을 지웁니다. 이 메서드는 진행률을 표시하려는 경우에 가장 적합합니다.
 
 * propertygrid
 
-  [CQ.Ext.grid.PropertyGrid](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyGrid)
+  [CQ.Ext.Grid.PropertyGrid](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyGrid)
 
-  개발 IDE에서 일반적으로 표시되는 기존 속성 격자를 모방하도록 설계된 특수 격자 구현입니다. 그리드의 각 행은 일부 객체의 속성을 나타내며, 데이터는에서 이름/값 쌍 세트로 저장됩니다. [CQ.Ext.grid.PropertyRecord](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord)s.
+  개발 IDE에서 일반적으로 표시되는 기존 속성 격자를 모방하도록 설계된 특수 격자 구현입니다. 그리드의 각 행은 일부 개체의 속성을 나타내며, 데이터는 [CQ.Ext.grid.PropertyRecord](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord)의 이름/값 쌍 집합으로 저장됩니다.
 
 * Propgrid
 
@@ -650,7 +650,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip)
 
-  @xtype 빠른 팁 마크업에 지정할 수 있고 자동으로 글로벌에서 관리할 수 있는 툴팁에 대한 특수 툴팁 클래스입니다 [CQ.Ext.QuickTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTips) 인스턴스. 자세한 사용 방법 및 예제는 QuickTips 클래스 헤더를 참조하십시오.
+  @xtype은 마크업에 지정할 수 있고 전역 [CQ.Ext.QuickTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTips) 인스턴스에서 자동으로 관리할 수 있는 도구 설명에 대한 특수 도구 설명 클래스입니다. 자세한 사용 방법 및 예제는 QuickTips 클래스 헤더를 참조하십시오.
 
 * 라디오
 
@@ -662,7 +662,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.form.RadioGroup](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.RadioGroup)
 
-  다음에 대한 그룹화 컨테이너 [CQ.Ext.form.Radio](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Radio) 컨트롤.
+  [CQ.Ext.form.Radio](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Radio) 컨트롤에 대한 그룹화 컨테이너입니다.
 
 * 참조 대화 상자
 
@@ -694,13 +694,13 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.wcm.msm.RolloutPlan](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutPlan)
 
-  롤아웃 계획은 페이지 롤아웃 진행 상황을 확인하는 대화 상자를 제공합니다. 롤아웃 계획은 다음에 의해 시작됩니다. [CQ.wcm.msm.롤아웃 마법사](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutWizard).
+  롤아웃 계획은 페이지 롤아웃 진행 상황을 확인하는 대화 상자를 제공합니다. RolloutPlan은 [CQ.wcm.msm.RolloutWizard](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutWizard)에 의해 시작되었습니다.
 
 * rolloutwizard
 
-  [CQ.wcm.msm.롤아웃 마법사](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutWizard)
+  [CQ.wcm.msm.RolloutWizard](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutWizard)
 
-  롤아웃 마법사는 페이지를 롤아웃하는 마법사를 제공합니다. 롤아웃 마법사가 다음을 시작합니다. [CQ.wcm.msm.RolloutPlan](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutPlan).
+  롤아웃 마법사는 페이지를 롤아웃하는 마법사를 제공합니다. RolloutWizard가 [CQ.wcm.msm.RolloutPlan](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutPlan)을(를) 시작합니다.
 
 * searchfield
 
@@ -750,7 +750,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   Slideshow는 슬라이드쇼로 볼 수 있는 이미지 및 이미지 제목 집합을 정의하고 편집하는 데 사용할 수 있는 구성 요소를 제공합니다.
 
-  Slideshow 구성 요소는 [CQ.form.SmartImage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SmartImage) 구성 요소.
+  Slideshow 구성 요소는 [CQ.form.SmartImage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SmartImage) 구성 요소를 기반으로 합니다.
 
 * smartfile
 
@@ -802,7 +802,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)
 
-  Store 클래스는 클라이언트 측 캐시를 캡슐화합니다. [기록](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Record) 구성 요소에 대한 입력 데이터를 제공하는 개체 [격자 패널](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel), [콤보 상자](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)또는 [데이터 보기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DataView).
+  Store 클래스는 [GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel), [ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) 또는 [DataView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DataView)과(와) 같은 구성 요소에 입력 데이터를 제공하는 [Record](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Record) 개체의 클라이언트측 캐시를 캡슐화합니다.
 
 * 제안 필드
 
@@ -814,13 +814,13 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Switcher](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Switcher)
 
-  전환기는 콘솔에 웹 사이트, 디지털 자산, 도구, 워크플로우 및 보안 간을 전환하는 헤더 막대의 단추 그룹을 제공합니다.
+  전환기는 웹 사이트, Digital Assets, 도구, 워크플로우 및 보안 간을 전환할 수 있도록 콘솔에 헤더 막대에 단추 그룹을 제공합니다.
 
 * tableedit
 
   [CQ.form.TableEdit](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit)
 
-  **더 이상 사용되지 않는 기능: [CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2) 대신,**
+  **사용하지 않음: 대신 [CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2)을(를) 사용합니다.**
 
 * tableedit2
 
@@ -832,7 +832,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel)
 
-  기본 탭 컨테이너입니다. TabPanels는 표준과 동일하게 사용할 수 있습니다 [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel) 레이아웃 목적으로(하위 구성 요소 포함에 대한 특별 지원 포함)[`items`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)).
+  기본 탭 컨테이너입니다. TabPanel은 레이아웃을 위해 표준 [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel)과 동일하게 사용할 수 있지만 자식 구성 요소([`items`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container))를 포함하는 특별 지원도 제공합니다.
 
 * 태그
 
@@ -854,13 +854,13 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.TextButton](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.TextButton)
 
-  TextButton은 [CQ.Ext.Button](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button).
+  TextButton은 [CQ.Ext.Button](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)의 기능이 있는 텍스트 링크를 제공합니다.
 
 * 텍스트 필드
 
   [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField)
 
-  기본 텍스트 필드. 기존 텍스트 입력을 직접 대체하거나 보다 정교한 입력 컨트롤의 기본 클래스로 사용할 수 있습니다 [CQ.Ext.form.TextArea](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextArea) 및 [CQ.Ext.form.ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)).
+  기본 텍스트 필드. 기존 텍스트 입력을 직접 대체하거나 보다 정교한 입력 컨트롤([CQ.Ext.form.TextArea](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextArea) 및 [CQ.Ext.form.ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox))의 기본 클래스로 사용할 수 있습니다.
 
 * 축소판
 
@@ -876,7 +876,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.Tip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tip)
 
-  @xtype 팁 이것은 의 기본 클래스입니다. [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip) 및 [CQ.Ext.Tooltip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tooltip) 모든 팁 기반 클래스에 필요한 기본 레이아웃과 위치를 제공합니다. 이 클래스는 간단하고 정적으로 배치된 팁에 직접 사용할 수 있습니다.
+  @xtype 팁 모든 팁 기반 클래스에 필요한 기본 레이아웃과 위치를 제공하는 [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip) 및 [CQ.Ext.Tooltip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tooltip)의 기본 클래스입니다. 이 클래스는 간단하고 정적으로 배치된 팁에 직접 사용할 수 있습니다.
 
 * titleseparator
 
@@ -888,7 +888,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.Toolbar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Toolbar)
 
-  기본 도구 모음 클래스입니다. 하지만 [`defaultType`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) 도구 모음 의 경우: [`button`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button), 도구 모음 요소(도구 모음 컨테이너의 하위 항목)는 사실상 모든 유형의 구성 요소일 수 있습니다. 도구 모음 요소는 생성자를 통해 명시적으로 만들 수 있습니다.
+  기본 도구 모음 클래스입니다. Toolbar에 대한 [`defaultType`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)이(가) [`button`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)이지만 Toolbar 요소(Toolbar 컨테이너의 자식 항목)는 사실상 모든 유형의 구성 요소일 수 있습니다. 도구 모음 요소는 생성자를 통해 명시적으로 만들 수 있습니다.
 
 * 툴팁
 
@@ -908,13 +908,13 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   TreePanel은 트리 구조 데이터의 트리 구조 UI 표현을 제공합니다.
 
-  [트리 노드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreeNode)TreePanel에 추가된 에는 애플리케이션에서 사용하는 메타데이터가 각각 포함될 수 있습니다. [속성](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreeNode) 속성.
+  TreePanel에 추가된 [TreeNode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreeNode)의 각 속성에는 응용 프로그램에서 사용하는 메타데이터가 [특성](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreeNode) 속성에 포함될 수 있습니다.
 
 * 트리거
 
   [CQ.Ext.form.TriggerField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField)
 
-  클릭 가능한 트리거 단추를 추가하는 TextFields용 편리한 래퍼를 제공합니다(기본적으로 콤보 상자와 유사). 트리거에는 기본 작업이 없으므로 재정의하여 트리거 클릭 처리기를 구현할 함수를 할당해야 합니다 [onTriggerClick](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField). 콤보 상자와 동일하게 렌더링되므로 TriggerField를 직접 만들 수 있습니다.
+  클릭 가능한 트리거 단추를 추가하는 TextFields용 편리한 래퍼를 제공합니다(기본적으로 콤보 상자와 유사). 트리거에는 기본 작업이 없으므로 [onTriggerClick](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField)을(를) 재정의하여 트리거 클릭 처리기를 구현할 함수를 할당해야 합니다. 콤보 상자와 동일하게 렌더링되므로 TriggerField를 직접 만들 수 있습니다.
 
 * uploadadalog
 
@@ -940,12 +940,12 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)
 
-  응용 프로그램 창으로 사용하기 위한 특수 패널입니다. 창문은 떠있고 [크기 변경 가능](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window), 및 [드래그 가능해](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) 기본적으로. Windows는 [최대화](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) 뷰포트를 채우고 이전 크기로 복원하며 다음 작업을 수행할 수 있습니다. [최소화](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)d.
+  응용 프로그램 창으로 사용하기 위한 특수 패널입니다. Windows는 기본적으로 부동, [크기 조정 가능](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) 및 [드래그 가능](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)됩니다. 뷰포트를 채우기 위해 [최대화](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)하고 이전 크기로 복원하며 [최소화](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)일 수 있습니다.
 
 * xmlstore
 
   [CQ.Ext.data.XmlStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlStore)
 
-  만들기 위한 작은 도우미 클래스 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)XML 데이터에서 보다 쉽게 가져옵니다. XmlStore는 [CQ.Ext.data.XmlReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlReader).
+  XML 데이터에서 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)을(를) 더 쉽게 만들 수 있는 작은 도우미 클래스입니다. [CQ.Ext.data.XmlReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlReader)로 XmlStore가 자동으로 구성됩니다.
 
-  **cqinclude** 저장소에 있는 다른 경로의 위젯 정의를 포함하는 의사 xtype. 이 변수는 페이지 대화 상자에서 가장 일반적으로 사용됩니다. 이 xtype에 대한 실제 JavaScript 위젯 클래스가 없습니다. CQ.Util 클래스의 formatData() 함수에 의해 처리됩니다. 자세한 내용은 이 기술 자료 문서를 참조하십시오.
+  저장소에 있는 다른 경로의 위젯 정의를 포함하는 **cqinclude** 의사 xtype. 이 변수는 페이지 대화 상자에서 가장 일반적으로 사용됩니다. 이 xtype에 대한 실제 JavaScript 위젯 클래스가 없습니다. CQ.Util 클래스의 formatData() 함수에 의해 처리됩니다. 자세한 내용은 이 기술 자료 문서를 참조하십시오.

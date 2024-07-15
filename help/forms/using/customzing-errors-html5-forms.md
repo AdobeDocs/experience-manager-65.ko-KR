@@ -34,10 +34,10 @@ HTML5 양식에서는 기본적으로 오류 메시지 및 경고의 위치와 �
 
 ### 오류 메시지 위치 사용자 정의  {#customizing-the-position-of-error-messages-nbsp}
 
-오류 메시지의 위치를 사용자 지정하려면 &lt;div> 각 오류 및 경고 필드에 태그를 지정하고 &lt;div> 왼쪽 또는 오른쪽에 태그를 지정하고 &lt;div> 태그에 가깝게 배치하십시오. 자세한 단계는 아래 절차를 참조하십시오.
+오류 메시지의 위치를 사용자 지정하려면 각 오류 및 경고 필드에 &lt;div> 태그를 추가하고 왼쪽 또는 오른쪽에 &lt;div> 태그를 배치하고 &lt;div> 태그에 css 스타일을 적용합니다. 자세한 단계는 아래 절차를 참조하십시오.
 
-1. 다음 위치로 이동 `CustomErrorManager-1.0-SNAPSHOT`폴더를 만들고 `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` 폴더를 삭제합니다.
-1. 편집할 `customErrorManager.js` 페이지를 엽니다. 다음 `markError` 파일의 함수는 다음 매개 변수를 허용합니다.
+1. `CustomErrorManager-1.0-SNAPSHOT`폴더로 이동하여 `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` 폴더를 엽니다.
+1. 편집할 `customErrorManager.js` 페이지를 엽니다. 파일의 `markError` 함수는 다음 매개 변수를 허용합니다.
 
    |   |  |
    |---|---|
@@ -75,7 +75,7 @@ HTML5 양식에서는 기본적으로 오류 메시지 및 경고의 위치와 �
    ```
 
 1. 파일을 저장하고 닫습니다.
-1. 다음 위치로 이동 `CustomErrorManager-1.0-SNAPSHOT` 폴더를 만들고 jcr_root 및 META-INF 폴더의 아카이브를 만듭니다. 아카이브 이름을 CustomErrorManager-1.0-SNAPSHOT.zip으로 바꿉니다.
+1. `CustomErrorManager-1.0-SNAPSHOT` 폴더로 이동하고 jcr_root 및 META-INF 폴더의 보관 파일을 만듭니다. 아카이브 이름을 CustomErrorManager-1.0-SNAPSHOT.zip으로 바꿉니다.
 1. 패키지 관리자를 사용하여 패키지를 업로드하고 설치합니다.
 
 ## 여러 필드에 대한 오류 메시지 표시  {#display-error-messages-for-multiple-fields-nbsp}
@@ -120,7 +120,7 @@ HTML5 양식에서는 기본적으로 오류 메시지 및 경고의 위치와 �
 
 기본적으로 html5 양식은 기본 프로필을 사용합니다. `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
-사용자 지정 오류 메시지가 있는 양식을 보려면 오류 프로필이 있는 양식을 렌더링합니다. `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
+사용자 지정 오류 메시지가 있는 양식을 보려면 오류 프로필이 있는 양식을 렌더링하십시오. `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
 >[!NOTE]
 >

@@ -28,11 +28,11 @@ AEM forms는 사용자 관리에 아직 존재하지 않는 사용자의 정시 
 1. 인증 공급자가 자격 증명의 유효성을 검사합니다.
 1. 그런 다음 인증 공급자는 사용자가 사용자 관리 데이터베이스에 있는지 여부를 확인합니다. 다음과 같은 결과가 가능합니다.
 
-   **존재함:** 사용자가 현재 상태이고 잠금 해제된 경우 User Management는 인증 성공을 반환합니다. 그러나 사용자가 현재 상태가 아니거나 잠겨 있으면 User Management에서 인증 실패를 반환합니다.
+   **있음:** 사용자가 현재 사용 중이고 잠금 해제된 경우 사용자 관리에서 인증 성공을 반환합니다. 그러나 사용자가 현재 상태가 아니거나 잠겨 있으면 User Management에서 인증 실패를 반환합니다.
 
-   **존재하지 않음:** User Management가 인증 실패를 반환합니다.
+   **존재하지 않음:** User Management에서 인증 오류를 반환합니다.
 
-   **잘못됨:** User Management가 인증 실패를 반환합니다.
+   **잘못됨:** 사용자 관리에서 인증 오류를 반환합니다.
 
 1. 인증 공급자가 반환한 결과를 평가합니다. 인증 공급자가 인증 성공을 반환한 경우 사용자가 로그인할 수 있습니다. 그렇지 않으면 User Management에서 다음 인증 공급자에게 확인합니다(2-3단계).
 1. 사용 가능한 인증 공급자가 사용자 자격 증명의 유효성을 검사하지 않으면 인증 실패가 반환됩니다.
@@ -82,8 +82,8 @@ public Boolean assign(User user);
 
 ### Just-in-Time 활성화 도메인을 만드는 동안 고려 사항 {#considerations-while-creating-a-just-in-time-enabled-domain}
 
-* 사용자 지정 항목을 만드는 동안 `IdentityCreator` 하이브리드 도메인의 경우 로컬 사용자에 대해 더미 암호가 지정되었는지 확인하십시오. 이 암호 필드를 비워 두지 마십시오.
-* 권장 사항: 사용 `DomainSpecificAuthentication` 특정 도메인에 대한 사용자 자격 증명의 유효성을 검사합니다.
+* 하이브리드 도메인에 대한 사용자 지정 `IdentityCreator`을(를) 만드는 동안 로컬 사용자에 대해 더미 암호가 지정되었는지 확인하십시오. 이 암호 필드를 비워 두지 마십시오.
+* 권장 사항: `DomainSpecificAuthentication`을(를) 사용하여 특정 도메인에 대한 사용자 자격 증명의 유효성을 검사합니다.
 
 ### 적시 활성화 도메인 만들기 {#create-a-just-in-time-enabled-domain}
 
@@ -101,12 +101,12 @@ public Boolean assign(User user);
 
 사용자가 AEM Forms에 로그인하려고 하고 인증 공급자가 사용자 자격 증명을 수락한다고 가정합니다. 사용자가 User Management 데이터베이스에 아직 없는 경우 해당 사용자에 대한 ID 검사가 실패합니다. 이제 AEM forms에서 다음 작업을 수행합니다.
 
-1. 만들기 `UserProvisioningBO` 인증 데이터가 있는 개체를 자격 증명 맵에 놓습니다.
-1. 에서 반환된 도메인 정보 기반 `UserProvisioningBO`, 등록된 을(를) 가져와 호출 `IdentityCreator` 및 `AssignmentProvider` 도메인을 위한 것입니다.
-1. 호출 `IdentityCreator`. 성공적인 결과를 반환하는 경우 `AuthResponse`, 추출 `UserInfo` 자격 증명 맵에서 에 전달 `AssignmentProvider` 사용자를 만든 후 그룹/역할 할당 및 기타 모든 사후 처리용
+1. 인증 데이터를 사용하여 `UserProvisioningBO` 개체를 만들고 자격 증명 맵에 넣습니다.
+1. `UserProvisioningBO`에서 반환된 도메인 정보를 기반으로 도메인에 대해 등록된 `IdentityCreator` 및 `AssignmentProvider`을(를) 가져와 호출하십시오.
+1. `IdentityCreator`을(를) 호출합니다. 성공한 `AuthResponse`을(를) 반환하는 경우 자격 증명 맵에서 `UserInfo`을(를) 추출하십시오. 사용자를 만든 후 그룹/역할 할당 및 기타 사후 처리를 위해 `AssignmentProvider`에 전달합니다.
 1. 사용자가 성공적으로 생성되면 사용자의 로그인 시도를 성공한 것으로 반환합니다.
 1. 하이브리드 도메인의 경우 인증 공급자에게 제공된 인증 데이터에서 사용자 정보를 가져옵니다. 이 정보를 성공적으로 가져오면 즉시 사용자를 만듭니다.
 
 >[!NOTE]
 >
->적시 프로비저닝 기능은 의 기본 구현과 함께 제공됩니다. `IdentityCreator` 를 사용하여 사용자를 동적으로 만들 수 있습니다. 사용자는 도메인의 디렉터리와 관련된 정보로 만들어집니다.
+>Just-in-time 프로비전 기능은 사용자를 동적으로 만드는 데 사용할 수 있는 `IdentityCreator`의 기본 구현과 함께 제공됩니다. 사용자는 도메인의 디렉터리와 관련된 정보로 만들어집니다.

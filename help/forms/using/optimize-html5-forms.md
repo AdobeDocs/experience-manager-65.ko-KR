@@ -34,7 +34,7 @@ HTML5 forms는 HTML5 형식으로 양식을 렌더링합니다. 결과 출력은
 
 Apache는 HTTP 또는 AJP 프로토콜을 사용하여 JBoss와 통신할 수 있습니다.
 
-1. 에서 다음 모듈 구성의 주석 처리를 제거합니다. *APACHE_HOME/conf/httpd.conf* 파일.
+1. *APACHE_HOME/conf/httpd.conf* 파일에서 다음 모듈 구성의 주석 처리를 제거하십시오.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -48,7 +48,7 @@ Apache는 HTTP 또는 AJP 프로토콜을 사용하여 JBoss와 통신할 수 �
 
 1. JBoss의 포트 8080에서 프록시를 구성합니다.
 
-   에 다음 구성 추가 *APACHE_HOME/conf/httpd.conf* 구성 파일입니다.
+   *APACHE_HOME/conf/httpd.conf* 구성 파일에 다음 구성을 추가하십시오.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -65,7 +65,7 @@ Apache는 HTTP 또는 AJP 프로토콜을 사용하여 JBoss와 통신할 수 �
 
 1. 압축을 활성화합니다.
 
-   에 다음 구성 추가 *APACHE_HOME/conf/httpd.conf* 구성 파일입니다.
+   *APACHE_HOME/conf/httpd.conf* 구성 파일에 다음 구성을 추가하십시오.
 
    ```xml
    <Location /content/xfaforms>
@@ -83,4 +83,4 @@ Apache는 HTTP 또는 AJP 프로토콜을 사용하여 JBoss와 통신할 수 �
    </Location>
    ```
 
-1. AEM 서버에 액세스하려면 https:// 를 사용합니다.[Apache_server]:80.
+1. AEM 서버에 액세스하려면 https://[Apache_server]:80을 사용하십시오.

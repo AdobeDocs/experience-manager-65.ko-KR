@@ -35,16 +35,16 @@ Mobile On-Demand Preflight 앱을 사용하면 액세스 권한이 있는 모든
 ## Preflight로 미리 보기 {#previewing-with-preflight-1}
 
 1. 모바일의 카탈로그에서 Mobile On-Demand 앱을 선택합니다.
-1. 에서 줄임표(...)를 클릭합니다. **문서 관리** (또는 배너/컬렉션) 타일.
-1. 선택 **Preflight** 작업 표시줄에서
-1. 클릭 **Preflight 활성화** 대화 상자에서 확인할 수 있습니다.
+1. **문서 관리**(또는 배너/컬렉션) 타일에서 생략 부호(...)를 클릭합니다.
+1. 작업 표시줄에서 **Preflight**&#x200B;을(를) 선택합니다.
+1. 대화 상자에서 **Preflight 활성화**&#x200B;를 클릭합니다.
 1. 이제 Mobile On-Demand Preflight 앱에서 앱을 미리 볼 준비가 되었습니다.
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->AEM Preflight 앱은 콘텐츠를 미리 보고 페이지를 검색하는 데 사용됩니다. Preflight 앱에 대해 자세히 알아보려면 [여기](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>AEM Preflight 앱은 콘텐츠를 미리 보고 페이지를 검색하는 데 사용됩니다. Preflight 앱에 대해 자세히 알아보려면 [여기](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)를 클릭하세요.
 >
 
 ### 시작하기 {#getting-ahead}

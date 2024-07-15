@@ -24,7 +24,7 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 * [저장소](#repository-features)
 * [액세스, API 및 게재](#access-api-and-delivery-features)
 * [관리 및 통합](#admin-and-integration-features)
-* [Analytics 및 개인화](#analytics-and-personalization)
+* [Analytics 및 Personalization](#analytics-and-personalization)
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 | [워크플로우](/help/sites-administering/workflows-starting.md) |
 | 연결(클라우드 서비스) |
 
-## Analytics 및 개인화 {#analytics-and-personalization}
+## Analytics 및 Personalization {#analytics-and-personalization}
 
 |  |
 |---|

@@ -1,5 +1,5 @@
 ---
-title: 작업 관리자 서비스 Java API 빠른 시작(SOAP)
+title: 작업 관리자 서비스 Java API QuickStart(SOAP)
 description: 작업 관리자 서비스를 사용하여 작업 할당, 작업 잠금, 사용자에게 할당된 작업 검색, 작업에서 양식 데이터 검색, 양식 데이터 수정, 첨부 파일 검색 및 작업 정보 검색
 contentOwner: admin
 content-type: reference
@@ -38,11 +38,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->웹 서비스 API를 사용하여 사용자에게 할당된 작업을 검색할 수 없습니다. 그 이유는 를 호출할 수 없기 때문입니다. `taskList` 메서드, 이 작업을 수행하는 데 필요한 메서드 호출입니다.
+>웹 서비스 API를 사용하여 사용자에게 할당된 작업을 검색할 수 없습니다. 이 작업을 수행하는 데 필요한 메서드 호출인 `taskList` 메서드를 호출할 수 없기 때문입니다.
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍의 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms을 사용한 프로그래밍의 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 작업 할당 {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
@@ -268,7 +268,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 사용자에게 할당된 작업 검색 {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 사용자에게 할당된 모든 작업을 검색합니다. *토니 블루*. 이 사용자는 연결 속성에 지정됩니다. 식별자 값 및 설명 등 반환된 작업에 대한 정보가 표시됩니다.
+다음 Java 코드 예제에서는 *tony blue*&#x200B;라는 사용자에게 할당된 모든 작업을 검색합니다. 이 사용자는 연결 속성에 지정됩니다. 식별자 값 및 설명 등 반환된 작업에 대한 정보가 표시됩니다.
 
 ```java
  /*
@@ -394,7 +394,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 작업에서 양식 데이터 검색 {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-다음 Java 코드 예제에서는 식별자 값이 304인 작업에서 양식 데이터를 검색합니다. 양식 데이터는 다음 이름의 XML 파일에 기록됩니다. *FormData.xml* C:\Adobe에 있습니다.
+다음 Java 코드 예제에서는 식별자 값이 304인 작업에서 양식 데이터를 검색합니다. 양식 데이터는 C:\Adobe에 있는 *FormData.xml* XML 파일에 기록됩니다.
 
 ```java
  /*
@@ -500,7 +500,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 양식 데이터 수정 {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-다음 Java 코드 예제에서는 양식에 *FormData.xml* 파일.
+다음 Java 코드 예제에서는 *FormData.xml* 파일에 있는 데이터로 양식을 업데이트합니다.
 
 ```java
  /*
@@ -714,7 +714,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 작업 정보 검색 {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-다음 Java 코드 예제에서는 이라는 프로세스를 기반으로 하는 모든 작업을 검색합니다. *MortgageLoan - 사전 구축*. 반환된 각 작업의 상태를 확인하여 완료된 작업인지 확인합니다. 작업을 완료한 사용자의 이름, 작업이 완료된 날짜 등의 정보를 검색하여 표시한다.
+다음 Java 코드 예제에서는 *MortgageLoan - Prebuilt* 프로세스를 기반으로 하는 모든 작업을 검색합니다. 반환된 각 작업의 상태를 확인하여 완료된 작업인지 확인합니다. 작업을 완료한 사용자의 이름, 작업이 완료된 날짜 등의 정보를 검색하여 표시한다.
 
 ```java
  /*

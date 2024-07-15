@@ -34,11 +34,11 @@ ht-degree: 0%
 
 ## 로그 파일 및 감사 로그 구성 {#configuring-log-files-and-audit-logs}
 
-AEM은 설치 문제를 해결하기 위해 구성할 수 있는 자세한 로그를 기록합니다. 자세한 내용은 [감사 레코드 및 로그 파일 작업](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) 섹션.
+AEM은 설치 문제를 해결하기 위해 구성할 수 있는 자세한 로그를 기록합니다. 자세한 내용은 [감사 레코드 및 로그 파일 작업](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) 섹션을 참조하십시오.
 
 ## 세부 정보 표시 옵션 사용 {#using-the-verbose-option}
 
-AEM WCM을 시작할 때 다음과 같이 -v(verbose) 옵션을 명령줄에 추가할 수 있습니다. java -jar cq-wcm-quickstart-&lt;version>.jar -v
+AEM WCM을 시작할 때 java -jar cq-wcm-quickstart-&lt;version>.jar -v와 같이 -v(verbose) 옵션을 명령줄에 추가할 수 있습니다.
 
 verbose 옵션은 콘솔에 빠른 시작 로그 출력의 일부를 표시하므로 문제 해결에 사용할 수 있습니다.
 
@@ -61,16 +61,16 @@ jar 파일이 유비쿼터스 ZIP 형식을 사용하므로 일부 보관 프로
   이 단계에 성공하고 운영 체제에서 항상 선택한 프로그램을 사용하여 .jar 파일을 실행하는 옵션을 제공하는 경우 선택합니다. 두 번 클릭하는 것은 이제부터 작동합니다.
 
 * 경우에 따라 지원되는 Java™ 버전을 다시 설치하면 올바른 연결을 복원하는 데 도움이 됩니다.
-* 이 문서의 앞부분에서 설명한 대로 항상 명령줄 또는 시작/중지 스크립트를 사용하여 CRX를 실행할 수 있습니다.
+* 이 문서의 앞부분에서 설명한 대로 항상 명령줄 또는 시작/중지 스크립트를 사용하여 CRX을 실행할 수 있습니다.
 
-### CRX에서 실행 중인 내 응용 프로그램에서 메모리 부족 오류가 발생합니다. {#my-application-running-on-crx-throws-out-of-memory-errors}
+### CRX에서 실행되는 응용 프로그램에서 메모리 부족 오류가 발생합니다. {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
->참조: [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
+>[메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)도 참조하세요.
 
 
-CRX 자체의 메모리 풋프린트가 낮습니다. CRX 내에서 실행 중인 응용 프로그램에 더 큰 메모리 요구 사항이 있거나 메모리 사용량이 많은 작업(예: 큰 트랜잭션)을 요청하는 경우, CRX가 실행되는 JVM 인스턴스는 적절한 메모리 설정으로 시작해야 합니다.
+CRX 자체의 메모리 풋프린트가 낮습니다. CRX 내에서 실행 중인 응용 프로그램에 더 큰 메모리 요구 사항이 있거나 메모리 사용량이 많은 작업(예: 큰 트랜잭션)을 요청하는 경우 CRX이 실행되는 JVM 인스턴스는 적절한 메모리 설정으로 시작해야 합니다.
 
 Java™ 명령 옵션을 사용하여 JVM의 메모리 설정을 정의합니다(예: heapsize를 512MB로 설정하려면 java -Xmx512m -jar crx&amp;ast;.jar).
 
@@ -82,14 +82,14 @@ Java™ 명령 옵션을 사용하여 JVM의 메모리 설정을 정의합니다
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-이 메서드는 힙 덤프 파일(**java_...hprof**) 프로세스에 메모리가 부족할 때마다 힙 덤프가 생성된 후에도 프로세스가 계속 실행될 수 있습니다.
+이 메서드는 프로세스에 메모리가 부족할 때마다 힙 덤프 파일(**java_...hprof**)을 생성합니다. 힙 덤프가 생성된 후에도 프로세스가 계속 실행될 수 있습니다.
 
 문제를 분석하려면 종종 일정 기간 동안 수집된 세 개의 힙 덤프 파일이 필요합니다.
 
 * 오류가 발생하기 전
 * 실패 중 1
 * 실패 중 2
-* *이상적으로는 이벤트가 해결된 후 정보를 수집하는 것도 좋을 것이다*
+* *이벤트가 해결된 후 정보를 수집하는 것이 좋습니다*
 
 이를 비교하여 변경 사항과 객체가 메모리를 사용하는 방법을 확인할 수 있습니다.
 
@@ -115,7 +115,7 @@ Java™ 11에서 실행 중인 AEM 6.5에서 웹 사이트가 간헐적으로 �
 
 이 문제가 발생하면 다음 작업을 수행하십시오.
 
-1. 를 엽니다. `sling.properties` 파일 아래 `crx-quickstart/conf/` 폴더
+1. `crx-quickstart/conf/` 폴더에서 `sling.properties` 파일 열기
 1. 다음 줄을 찾습니다.
 
    `org.osgi.framework.bootdelegation=sun.,com.sun.`
@@ -134,13 +134,13 @@ Java™ 11에서 실행 중인 AEM 6.5에서 웹 사이트가 간헐적으로 �
 
 geometrixx-outdoors/en 페이지에 대한 요청이 404(페이지를 찾을 수 없음)를 반환하는 경우 이러한 특정 애플리케이션 서버에 필요한 sling.properties 파일에서 추가 sling 속성을 설정했는지 다시 확인할 수 있습니다.
 
-에서 을 참조하십시오. *AEM 웹 애플리케이션 배포* 세부 정보 단계.
+자세한 내용은 *AEM 웹 응용 프로그램 배포* 단계를 참조하십시오.
 
 ### 응답 헤더 크기는 4KB보다 클 수 있습니다. {#response-header-size-can-be-greater-than-kb}
 
 502 오류는 웹 서버가 AEM HTTP 응답 헤더의 크기를 처리할 수 없음을 나타낼 수 있습니다. AEM은 4KB보다 큰 쿠키를 포함하는 HTTP 응답 헤더를 생성할 수 있습니다. 최대 응답 헤더 크기가 4KB를 초과할 수 있도록 서블릿 컨테이너가 구성되어 있는지 확인합니다.
 
-예를 들어 Tomcat 7.0의 경우 [HTTP 커넥터](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) 헤더 크기에 대한 제한을 제어합니다.
+예를 들어 Tomcat 7.0의 경우 [HTTP 커넥터](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html)의 maxHttpHeaderSize 특성은 헤더 크기에 대한 제한을 제어합니다.
 
 ## Adobe Experience Manager 제거 {#uninstalling-adobe-experience-manager}
 
@@ -150,11 +150,11 @@ AEM은 단일 디렉토리에 설치되므로 제거 유틸리티가 필요하�
 
 >[!NOTE]
 >
->Adobe은 AEM을 삭제하기 전에 저장소를 백업하는 것을 권장합니다. 전체를 삭제하면 &lt;cq-installation-directory>저장소를 삭제합니다. 삭제하기 전에 저장소 데이터를 유지하려면 &lt;cq-installation-directory>/crx-quickstart/repository 다른 폴더를 삭제하기 전에 다른 위치에 저장합니다.
+>Adobe은 AEM을 삭제하기 전에 저장소를 백업하는 것을 권장합니다. 전체 &lt;cq-installation-directory>를 삭제하면 저장소도 삭제됩니다. 삭제하기 전에 저장소 데이터를 유지하려면 다른 폴더를 삭제하기 전에 &lt;cq-installation-directory>/crx-quickstart/repository 폴더를 다른 위치로 이동하거나 복사하십시오.
 
 AEM의 설치에서 외부 스토리지(예: 데이터베이스 서버)를 사용하는 경우 폴더를 제거하면 데이터가 자동으로 제거되지는 않지만 스토리지 구성이 제거되므로 JCR 콘텐츠를 복원하기가 어렵습니다.
 
 ### JSP 파일이 JBoss에서 컴파일되지 않았습니다® {#jsp-files-are-not-compiled-on-jboss}
 
 Experience Manager JBoss®에 JSP 파일을 설치하거나 업데이트하고 해당 서블릿이 컴파일되지 않은 경우 JBoss® JSP 컴파일러가 올바르게 구성되었는지 확인하십시오. 자세한 내용은
-[JBoss®의 JSP 컴파일 문제](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) 기사.
+[JBoss®](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) 문서의 JSP 컴파일 문제

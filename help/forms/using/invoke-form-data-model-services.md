@@ -21,19 +21,19 @@ ht-degree: 10%
 
 ## 개요 {#overview}
 
-AEM Forms을 사용하면 양식 작성자가 적응형 양식 필드 내에서 양식 데이터 모델에 구성된 서비스를 호출하여 양식 채우기 경험을 보다 단순화하고 향상시킬 수 있습니다. 데이터 모델 서비스를 호출하려면 비주얼 편집기에서 규칙을 만들거나 `guidelib.dataIntegrationUtils.executeOperation` 의 코드 편집기에서 API [규칙 편집기](/help/forms/using/rule-editor.md).
+AEM Forms을 사용하면 양식 작성자가 적응형 양식 필드 내에서 양식 데이터 모델에 구성된 서비스를 호출하여 양식 채우기 경험을 보다 단순화하고 향상시킬 수 있습니다. 데이터 모델 서비스를 호출하려면 시각적 편집기에서 규칙을 만들거나 [규칙 편집기](/help/forms/using/rule-editor.md)의 코드 편집기에서 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 JavaScript을 지정할 수 있습니다.
 
-이 문서는 `guidelib.dataIntegrationUtils.executeOperation` 서비스를 호출하는 API입니다.
+이 문서는 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 서비스를 호출하는 JavaScript 작성에 중점을 둡니다.
 
 ## API 사용 {#using-the-api}
 
-다음 `guidelib.dataIntegrationUtils.executeOperation` API는 적응형 양식 필드 내에서 서비스를 호출합니다. API 구문은 다음과 같습니다.
+`guidelib.dataIntegrationUtils.executeOperation` API는 적응형 양식 필드 내에서 서비스를 호출합니다. API 구문은 다음과 같습니다.
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-의 구조 `guidelib.dataIntegrationUtils.executeOperation` API는 서비스 작업에 대한 세부 정보를 지정합니다. 구조의 구문은 다음과 같습니다.
+`guidelib.dataIntegrationUtils.executeOperation` API 구조에서 서비스 작업에 대한 세부 정보를 지정합니다. 구조의 구문은 다음과 같습니다.
 
 ```javascript
 var operationInfo = {
@@ -77,7 +77,7 @@ API 구조는 서비스 작업에 대해 다음 세부 사항을 지정합니다
   </tr>
   <tr>
    <td><code>Outputs</code></td>
-   <td>하나 이상의 양식 개체를 서비스 작업의 출력 값에 매핑하여 양식 필드를 채웁니다<br /> </td>
+   <td>하나 이상의 양식 개체를 서비스 작업의 출력 값에 매핑하여 양식 필드 <br />을(를) 채웁니다. </td>
   </tr>
   <tr>
    <td><code>success</code></td>
@@ -92,9 +92,9 @@ API 구조는 서비스 작업에 대해 다음 세부 사항을 지정합니다
 
 ## 서비스를 호출하는 샘플 스크립트 {#sample-script-to-invoke-a-service}
 
-다음 샘플 스크립트는 `guidelib.dataIntegrationUtils.executeOperation` 를 호출하는 API `getAccountById` 에 구성된 서비스 작업 `employeeAccount` 양식 데이터 모델.
+다음 샘플 스크립트는 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 `employeeAccount` 양식 데이터 모델에 구성된 `getAccountById` 서비스 작업을 호출합니다.
 
-다음 `getAccountById` 작업은 의 값을 가져옵니다. `employeeID` 양식 필드를 다음에 대한 입력으로 `empId` 인수 및 해당 직원의 직원명, 계좌 번호 및 계좌 잔액을 반환합니다. 출력 값은 지정된 양식 필드에 채워집니다. (예: 값: `name` 인수는 `fullName` 양식 요소 및 값 `accountNumber` 의 인수 `account` 양식 요소입니다.
+`getAccountById` 작업은 `employeeID` 양식 필드의 값을 `empId` 인수에 대한 입력으로 취하여 해당 직원의 직원 이름, 계정 번호 및 계정 잔액을 반환합니다. 출력 값은 지정된 양식 필드에 채워집니다. 예를 들어 `name` 인수의 값은 `fullName` 양식 요소에서 채워지고 `account` 양식 요소에서 `accountNumber` 인수의 값이 채워집니다.
 
 ```javascript
 var operationInfo = {
@@ -114,23 +114,23 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 ## 콜백 함수와 함께 API 사용 {#using-the-api-callback}
 
-다음을 사용하여 양식 데이터 모델 서비스를 호출할 수도 있습니다. `guidelib.dataIntegrationUtils.executeOperation` 콜백 함수를 사용하는 API입니다. API 구문은 다음과 같습니다.
+콜백 함수와 함께 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 양식 데이터 모델 서비스를 호출할 수도 있습니다. API 구문은 다음과 같습니다.
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
-콜백 함수에는 `success` 및 `failure` callback 함수.
+콜백 함수에는 `success` 및 `failure` 콜백 함수가 있을 수 있습니다.
 
 ### 성공 및 실패 콜백 함수가 있는 샘플 스크립트 {#callback-function-success-failure}
 
-다음 샘플 스크립트는 `guidelib.dataIntegrationUtils.executeOperation` 를 호출하는 API `GETOrder` 에 구성된 서비스 작업 `employeeOrder` 양식 데이터 모델.
+다음 샘플 스크립트는 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 `employeeOrder` 양식 데이터 모델에 구성된 `GETOrder` 서비스 작업을 호출합니다.
 
-다음 `GETOrder` 작업은 의 값을 가져옵니다. `Order ID` 양식 필드를 다음에 대한 입력으로 `orderId` 인수 및 반환 주문 수량 값 `success` callback 함수.  다음과 같은 경우 `success` callback 함수는 주문 수량인 `failure` callback 함수는 `Error occured` 메시지.
+`GETOrder` 작업은 `Order ID` 양식 필드의 값을 `orderId` 인수에 대한 입력으로 사용하고 `success` 콜백 함수에서 주문 수량 값을 반환합니다.  `success` 콜백 함수가 주문 수량을 반환하지 않으면 `failure` 콜백 함수에서 `Error occured` 메시지를 표시합니다.
 
 >[!NOTE]
 >
->를 사용하는 경우 `success` callback 함수, 출력 값이 지정된 양식 필드에 채워지지 않습니다.
+>`success` 콜백 함수를 사용하는 경우 출력 값이 지정된 양식 필드에 채워지지 않습니다.
 
 ```javascript
 var operationInfo = {

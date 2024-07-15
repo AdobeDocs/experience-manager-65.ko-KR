@@ -21,7 +21,7 @@ ht-degree: 6%
 >
 >Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager(AEM) 콘텐츠는 다음을 통해 쉽게 렌더링할 수 있습니다. [Sling 기본 서블릿](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 렌더링하려면 [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) 및 기타 형식
+Adobe Experience Manager(AEM) 콘텐츠를 [Sling 기본 서블릿](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)을(를) 통해 손쉽게 렌더링하여 [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) 및 기타 형식을 렌더링할 수 있습니다.
 
 이러한 기본 렌더링은 일반적으로 저장소를 이동하고 콘텐츠를 있는 그대로 반환합니다.
 
@@ -35,21 +35,21 @@ Content Services 기본 렌더러는 기본 제공 Sling 기본값과 사용자 
 
 ## JSON 요청 중 {#requesting-json}
 
-사용 **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** JSON을 요청합니다.]
+**&lt;RESOURCE.caas[ 사용&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** to request JSON.
 
 <table>
  <tbody>
   <tr>
    <td>리소스</td>
-   <td>/content/entities 아래의 엔티티 리소스<br /> 또는 <br /> /content 아래의 콘텐츠 리소스</td>
+   <td>/content/entities<br />에 엔티티 리소스 또는 /content에 컨텐츠 리소스 <br />이(가) 있습니다.</td>
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>선택 사항</strong><br /> </p> <p>/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG에 있는 내보내기 구성<br /> <br /> 생략하면 기본 내보내기 구성이 적용됩니다 </p> </td>
+   <td><p><strong>선택 사항</strong><br /> </p> <p>/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br />에서 내보내기 구성을 찾았습니다. 생략하면 기본 내보내기 구성이 적용됩니다. </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong>선택 사항</strong><br /> <br /> Sling 렌더링에 사용된 대로 하위 렌더링에 대한 깊이 재귀</td>
+   <td>Sling 렌더링에 사용된 자식 렌더링에 대한 <strong>선택적</strong><br /> <br /> 깊이 재귀</td>
   </tr>
  </tbody>
 </table>
@@ -58,7 +58,7 @@ Content Services 기본 렌더러는 기본 제공 Sling 기본값과 사용자 
 
 JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 수 있습니다.
 
-구성 노드를 만들 수 있습니다 */apps/mobileapps/caas/exportConfigs.*
+*/apps/mobileapps/caas/exportConfigs.* 아래에 구성 노드를 만들 수 있습니다.
 
 | 노드 이름 | 구성 이름(렌더링 선택기용) |
 |---|---|
@@ -108,7 +108,7 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
    <td>String[]</td>
    <td>모든 항목 포함</td>
    <td>속성 이름</td>
-   <td><p>excludePropertyPrefixes가 설정된 경우<br /> 여기에는 제외되는 접두사와 일치하지만 지정된 속성이 포함됩니다.</p> <p>else(속성 제외 무시됨)에는 다음 속성만 포함됩니다</p> </td>
+   <td><p>excludePropertyPrefixes 집합<br />에 제외되는 접두사와 일치하지만 지정된 속성이 포함된 경우</p> <p>else(속성 제외 무시됨)에는 다음 속성만 포함됩니다</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -119,14 +119,14 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
   </tr>
   <tr>
    <td>excludeChild</td>
-   <td>String[]<br /> <br /> </td>
+   <td>문자열[]<br /> <br /> </td>
    <td>제외 안 함</td>
    <td>하위 이름</td>
    <td>json 내보내기에서 지정된 하위 항목만 포함, 기타 항목 제외</td>
   </tr>
   <tr>
    <td>renameProperties</td>
-   <td>String[]<br /> <br /> </td>
+   <td>문자열[]<br /> <br /> </td>
    <td>이름 바꾸기 없음</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>대체 항목을 사용하여 등록 정보 이름 바꾸기</td>
@@ -136,7 +136,7 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
 
 ### 리소스 유형 내보내기 무시 {#resource-type-export-overrides}
 
-아래에 구성 노드 만들기 */apps/mobileapps/caas/exportConfigs.*
+*/apps/mobileapps/caas/exportConfigs.*&#x200B;에 구성 노드를 만듭니다.
 
 | 이름 | resourceTypeOverrides |
 |---|---|
@@ -158,7 +158,7 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>다음 sling 리소스 유형의 경우 기본 CaaS json 내보내기를 반환하지 마십시오.<br /> 리소스를 (으)로 렌더링하여 고객 json 내보내기를 반환합니다.<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>다음 sling 리소스 유형의 경우 기본 CaaS json 내보내기를 반환하지 마십시오.<br /> 리소스를;<br /> &lt;RESOURCE&gt;(으)로 렌더링하여 고객 json 내보내기를 반환합니다.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -174,7 +174,7 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
 
 요청한 URI에 구성이 지정된 경우 Content Services 기본 내보내기 구성이 적용됩니다.
 
-&lt;resource>.caas[.&lt;depth-int>].json
+&lt;리소스>.caas[.&lt;DEPTH-INT>].json
 
 <table>
  <tbody>
@@ -221,7 +221,7 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
 
 이 구성은 하위 노드 아래에 하위 그룹화를 포함하도록 기본값을 확장합니다.
 
-&lt;site_page>.caas.page[.&lt;depth-int>].json
+&lt;SITE_PAGE>.caas.page[.&lt;DEPTH-INT>].json
 
 ### 추가 리소스 {#additional-resources}
 

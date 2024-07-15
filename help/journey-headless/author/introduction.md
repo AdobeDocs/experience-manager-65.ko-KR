@@ -14,7 +14,7 @@ ht-degree: 87%
 
 # AEM을 통한 Headless 작성 - 소개 {#author-headless-introduction}
 
-의 이 부분에서 [AEM Headless 콘텐츠 작성 여정](overview.md), Adobe Experience Manager(AEM)를 사용하여 headless 콘텐츠 전달을 위한 콘텐츠 작성을 이해하는 데 필요한 (기본) 개념 및 용어를 배울 수 있습니다.
+[AEM Headless 콘텐츠 작성 여정](overview.md)의 이 부분에서는 Adobe Experience Manager(AEM)를 사용한 Headless 콘텐츠 게재를 위한 콘텐츠 작성을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
 
 ## 목표 {#objective}
 

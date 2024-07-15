@@ -19,29 +19,29 @@ ht-degree: 0%
 
 # 랜딩 페이지용 디자인 Importer 확장 및 구성{#extending-and-configuring-the-design-importer-for-landing-pages}
 
-이 섹션에서는 랜딩 페이지의 디자인 임포터를 구성하고 원하는 경우 확장하는 방법을 설명합니다. 가져오기 후 랜딩 페이지 작업은에서 다룹니다 [랜딩 페이지.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+이 섹션에서는 랜딩 페이지의 디자인 임포터를 구성하고 원하는 경우 확장하는 방법을 설명합니다. 가져오기 후 랜딩 페이지 작업은 [랜딩 페이지](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)에서 다룹니다.
 
-**디자인 임포터에서 사용자 지정 구성 요소 추출**
+**디자인 가져오기에서 사용자 지정 구성 요소를 추출하도록 설정**
 
 다음은 디자인 임포터에서 사용자 지정 구성 요소를 인식하도록 하는 논리적 단계입니다
 
 1. TagHandler 만들기
 
-   * 태그 처리기는 특정 종류의 HTML 태그를 처리하는 POJO입니다. TagHandler가 처리할 수 있는 HTML 태그의 &quot;종류&quot;는 TagHandlerFactory의 OSGi 속성 &quot;tagpattern.name&quot;을 통해 정의됩니다. 이 OSGi 속성은 기본적으로 처리하려는 입력 html 태그와 일치해야 하는 정규 표현식입니다. 중첩된 모든 태그는 처리를 위해 태그 처리기에 throw됩니다. 예를 들어 중첩된 가 포함된 div에 등록하는 경우 &lt;p> 태그, &lt;p> 태그는 TagHandler에도 던져지며, 처리 방법은 사용자가 결정합니다.
+   * 태그 처리기는 특정 종류의 HTML 태그를 처리하는 POJO입니다. TagHandler가 처리할 수 있는 HTML 태그의 &quot;종류&quot;는 TagHandlerFactory의 OSGi 속성 &quot;tagpattern.name&quot;을 통해 정의됩니다. 이 OSGi 속성은 기본적으로 처리하려는 입력 html 태그와 일치해야 하는 정규 표현식입니다. 중첩된 모든 태그는 처리를 위해 태그 처리기에 throw됩니다. 예를 들어 중첩된 &lt;p> 태그가 포함된 div에 등록하는 경우 &lt;p> 태그도 TagHandler에 throw되며 처리 방법은 사용자가 결정합니다.
    * 태그 처리기 인터페이스는 SAX 콘텐츠 처리기 인터페이스와 유사합니다. 각 html 태그에 대한 SAX 이벤트를 수신합니다. 태그 처리기 공급자는 디자인 가져오기 프레임워크에서 자동으로 호출되는 특정 라이프사이클 메서드를 구현해야 합니다.
 
 1. 해당 TagHandlerFactory를 만듭니다.
 
    * 태그 처리기 팩토리는 태그 처리기의 인스턴스 생성을 담당하는 OSGi 구성 요소(단일 항목)입니다.
    * 태그 처리기 팩터리에서는 이 값이 입력 html 태그에 대해 일치하는 &quot;tagpattern.name&quot;이라는 OSGi 속성을 노출해야 합니다.
-   * 입력 html 태그와 일치하는 태그 처리기가 여러 개 있는 경우 순위가 더 높은 태그 처리기가 선택됩니다. 순위 자체가 OSGi 속성으로 노출됩니다 **service.ranking**.
+   * 입력 html 태그와 일치하는 태그 처리기가 여러 개 있는 경우 순위가 더 높은 태그 처리기가 선택됩니다. 순위 자체가 OSGi 속성 **service.ranking**(으)로 노출됩니다.
    * TagHandlerFactory는 OSGi 구성 요소입니다. TagHandler에 제공하려는 모든 참조는 이 팩터리를 통해서만 가능합니다.
 
 1. 기본값을 재정의하려면 TagHandlerFactory의 순위가 더 높아야 합니다.
 
 >[!CAUTION]
 >
->랜딩 페이지를 가져오는 데 사용되는 디자인 가져오기 [AEM 6.5에서 더 이상 사용되지 않음](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>랜딩 페이지 [을(를) 가져오는 데 사용되는 디자인 가져오기는 AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features)에서 더 이상 사용되지 않습니다.
 
 ## 가져오기 HTML 준비 {#preparing-the-html-for-import}
 
@@ -66,17 +66,17 @@ zip의 샘플 레이아웃은 다음과 같습니다.
 * /img > 모든 이미지 및 에셋
 * /js > JS clientlib에 추가
 
-레이아웃은 HTML5 Boilerplate 모범 사례 레이아웃을 기반으로 합니다. 자세한 내용: [https://html5boilerplate.com/](https://html5boilerplate.com/)
+레이아웃은 HTML5 Boilerplate 모범 사례 레이아웃을 기반으로 합니다. 자세한 내용은 [https://html5boilerplate.com/](https://html5boilerplate.com/)을 참조하세요.
 
 >[!NOTE]
 >
->최소한, 디자인 패키지 **필수** 다음을 포함: **index.html** 루트 수준에 있는 파일입니다. 가져올 랜딩 페이지에 모바일 버전도 있는 경우, zip에 **mobile.index.html** 과 더불어 **index.html** 루트 수준에서.
+>최소한 디자인 패키지 **must**&#x200B;에는 루트 수준에서 **index.html** 파일이 포함되어 있습니다. 가져올 랜딩 페이지에 모바일 버전도 있는 경우, zip에는 루트 수준에서 **mobile.index.html**&#x200B;과 **index.html**&#x200B;이(가) 포함되어야 합니다.
 
 ### 랜딩 페이지 HTML 준비 {#preparing-the-landing-page-html}
 
 HTML을 가져오려면 캔버스 div를 랜딩 페이지 HTML에 추가해야 합니다.
 
-캔버스 div는 html입니다. **div** 포함 `id="cqcanvas"` HTML 내에 삽입해야 합니다. `<body>` 태그로 지정하며 변환에 사용할 콘텐츠를 래핑해야 합니다.
+캔버스 div는 `id="cqcanvas"`이(가) 있는 html **div**&#x200B;이며, HTML `<body>` 태그 내에 삽입해야 하며 변환을 위한 콘텐츠를 둘러싸야 합니다.
 
 캔버스 div 추가 후 랜딩 페이지 HTML의 샘플 조각은 다음과 같습니다.
 
@@ -102,9 +102,9 @@ HTML을 가져오려면 캔버스 div를 랜딩 페이지 HTML에 추가해야 �
 
 랜딩 페이지를 가져오기 전에 랜딩 페이지의 일부 부분을 편집 가능한 AEM 구성 요소로 변환할 수 있습니다. 이를 통해 랜딩 페이지 디자인을 가져온 후에도 랜딩 페이지의 일부를 빠르게 편집할 수 있습니다.
 
-다음을 추가하여 이 작업을 수행합니다. `data-cq-component` 로 이동하여 HTML 파일의 해당 구성 요소를 가져옵니다.
+가져온 HTML 파일의 적절한 구성 요소에 `data-cq-component`을(를) 추가하면 됩니다.
 
-다음 섹션에서는 랜딩 페이지의 특정 부분을 다른 편집 가능한 AEM 구성 요소로 변환할 수 있도록 HTML 파일을 편집하는 방법을 설명합니다. 구성 요소에 대해서는 다음에서 자세히 설명합니다. [랜딩 페이지 구성 요소](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
+다음 섹션에서는 랜딩 페이지의 특정 부분을 다른 편집 가능한 AEM 구성 요소로 변환할 수 있도록 HTML 파일을 편집하는 방법을 설명합니다. 구성 요소는 [랜딩 페이지 구성 요소](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)에 자세히 설명되어 있습니다.
 
 >[!NOTE]
 >
@@ -114,9 +114,9 @@ HTML을 가져오려면 캔버스 div를 랜딩 페이지 HTML에 추가해야 �
 
 가져오기 전에 다음 제한 사항에 유의하십시오.
 
-### &amp;lt;body> 태그에 적용된 클래스 또는 ID와 같은 속성은 유지되지 않습니다 {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### &amp;lt;body> 태그에 적용된 클래스 또는 ID와 같은 모든 속성은 유지되지 않습니다 {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-예를 들어 ID 또는 클래스와 같은 속성이 본문 태그에 적용되면 `<body id="container">` 가져온 후에는 유지되지 않습니다. 따라서 가져오는 디자인에 다음에 적용되는 속성에 대한 종속성이 없어야 합니다. `<body>` 태그에 가깝게 배치하십시오.
+ID 또는 클래스와 같은 특성이 본문 태그에 적용되면(예: `<body id="container">`) 가져오기 후에는 유지되지 않습니다. 따라서 가져올 디자인에는 `<body>` 태그에 적용된 특성에 대한 종속성이 없어야 합니다.
 
 ### zip 드래그 앤 드롭 {#drag-and-drop-zip}
 
@@ -126,7 +126,7 @@ Internet Explorer 및 Firefox 버전 3.6 이하에서는 드래그/드롭 zip �
 
 ### 현대화는 지원되지 않습니다. {#modernizr-is-not-supported}
 
-`Modernizr.js` 는 브라우저의 기본 기능을 감지하고 html5 요소에 적합한지 여부를 감지하는 JavaScript 기반 도구입니다. 다른 브라우저의 이전 버전에서 지원을 강화하기 위해 Modernizr를 사용하는 디자인은 랜딩 페이지 솔루션에서 가져오기 문제를 일으킬 수 있습니다. `Modernizr.js` 스크립트는 디자인 임포터에서 지원되지 않습니다.
+`Modernizr.js`은(는) 브라우저의 기본 기능을 감지하고 html5 요소에 적합한지 여부를 감지하는 JavaScript 기반 도구입니다. 다른 브라우저의 이전 버전에서 지원을 강화하기 위해 Modernizr를 사용하는 디자인은 랜딩 페이지 솔루션에서 가져오기 문제를 일으킬 수 있습니다. `Modernizr.js` 스크립트는 디자인 임포터에서 지원되지 않습니다.
 
 ### 디자인 패키지를 가져올 때 페이지 속성이 유지되지 않습니다 {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
@@ -138,7 +138,7 @@ Internet Explorer 및 Firefox 버전 3.6 이하에서는 드래그/드롭 zip �
 
 ### 텍스트 {#text}
 
-텍스트 구성 요소 삽입을 위한 HTML 마크업( `foundation/components/text`HTML )를 클릭하여 제품에서 사용할 수 있습니다.
+디자인 패키지 내의 HTML에 텍스트 구성 요소(`foundation/components/text`)를 삽입하는 HTML 마크업:
 
 ```xml
 <div data-cq-component="text"> <p>This is some editable text</p> </div>
@@ -146,10 +146,10 @@ Internet Explorer 및 Firefox 버전 3.6 이하에서는 드래그/드롭 zip �
 
 위의 마크업을 HTML에 포함하면에서 다음을 수행합니다.
 
-* 편집 가능한 AEM 텍스트 구성 요소( `sling:resourceType=foundation/components/text`)을 클릭하여 제품에서 사용할 수 있습니다.
-* 를 설정합니다. `text` 만들어진 텍스트 구성 요소의 속성을 HTML의 `div`.
+* 디자인 패키지를 가져온 후 만든 랜딩 페이지에서 편집 가능한 AEM 텍스트 구성 요소(`sling:resourceType=foundation/components/text`)를 만듭니다.
+* 만든 텍스트 구성 요소의 `text` 속성을 `div` 내에 포함된 HTML으로 설정합니다.
 
-**속기 구성 요소 태그 선언**:
+**축약 구성 요소 태그 선언**:
 
 ```xml
 <p data-cq-component="text">Text component shorthand</p>
@@ -168,7 +168,7 @@ RTE 편집기에서 편집할 수 있습니다.
 <div data-cq-component="text"><p>This is text with a list:</p><ul><li>1st</li><li>2nd</li></ul><p>It can be edited with the RTE editor</p></div>
 ```
 
-**색상이 있는 텍스트**
+**색상 텍스트**
 
 RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추가하려면 다음을 수행합니다.
 
@@ -178,7 +178,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 ### 제목 {#title}
 
-제목 구성 요소 삽입을 위한 HTML 마크업( `wcm/landingpage/components/title`HTML )를 클릭하여 제품에서 사용할 수 있습니다.
+디자인 패키지 내의 HTML에 제목 구성 요소(`wcm/landingpage/components/title`)를 삽입하는 HTML 마크업:
 
 ```xml
 <div data-cq-component="title"> <h1>This is some editable title text</h1> </div>
@@ -186,13 +186,13 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 위의 마크업을 HTML에 포함하면에서 다음을 수행합니다.
 
-* 편집 가능한 AEM 제목 구성 요소( `sling:resourceType=wcm/landingpage/components/title`)을 클릭하여 제품에서 사용할 수 있습니다.
-* 를 설정합니다. `jcr:title` div 내에서 래핑된 제목 태그 내의 텍스트에 대한 작성된 제목 구성 요소의 속성입니다.
-* 를 설정합니다. `type` 제목 태그에 대한 속성(이 경우) `h1`.
+* 디자인 패키지를 가져온 후 만든 랜딩 페이지에서 편집 가능한 AEM 제목 구성 요소(`sling:resourceType=wcm/landingpage/components/title`)를 만듭니다.
+* 만들어진 제목 구성 요소의 `jcr:title` 속성을 div에 래핑된 제목 태그 내의 텍스트로 설정합니다.
+* `type` 속성을 제목 태그(이 경우 `h1`)로 설정합니다.
 
-제목 구성 요소는 7가지 유형 - `h1, h2, h3, h4, h5, h6` 및 `default`.
+제목 구성 요소는 `h1, h2, h3, h4, h5, h6` 및 `default` 형식을 지원합니다.
 
-**속기 구성 요소 태그 선언**:
+**축약 구성 요소 태그 선언**:
 
 ```xml
 <h1 data-cq-component="title">Title component shorthand</h1>
@@ -210,14 +210,14 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 위의 마크업을 HTML에 포함하면에서 다음을 수행합니다.
 
-* 편집 가능한 AEM 이미지 구성 요소를 만듭니다( `sling:resourceType=foundation/components/image`)을 클릭하여 제품에서 사용할 수 있습니다.
-* 를 설정합니다. `fileReference` 작성된 이미지 구성 요소의 속성을 src 속성에 지정된 이미지를 가져오는 경로에 추가합니다.
-* 를 설정합니다. `alt` 속성을 img 태그의 alt 속성 값으로 설정합니다.
-* 를 설정합니다. `title` 속성을 img 태그에 있는 title 속성 값으로 설정합니다.
-* 를 설정합니다. `width` 속성을 img 태그의 width 속성 값으로 설정합니다.
-* 를 설정합니다. `height` 속성을 img 태그의 height 속성 값으로 설정합니다.
+* 디자인 패키지를 가져온 후 만든 랜딩 페이지에서 편집 가능한 AEM 이미지 구성 요소(`sling:resourceType=foundation/components/image`)를 만듭니다.
+* 생성된 이미지 구성 요소의 `fileReference` 속성을 src 특성에 지정된 이미지를 가져오는 경로로 설정합니다.
+* `alt` 속성을 img 태그의 alt 특성 값으로 설정합니다.
+* `title` 속성을 img 태그의 title 특성 값으로 설정합니다.
+* `width` 속성을 img 태그의 width 특성 값으로 설정합니다.
+* `height` 속성을 img 태그의 height 특성 값으로 설정합니다.
 
-**속기 구성 요소 태그 선언:**
+**축약 구성 요소 태그 선언:**
 
 ```xml
 <img data-cq-component="image" src="test.png" alt="Image component shorthand"/>
@@ -225,7 +225,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 #### 절대 URL img src는 이미지 구성 요소 Div 내에서 지원되지 않습니다. {#absolute-url-img-src-not-supported-within-image-component-div}
 
-다음과 같은 경우 `<img>` 적절한 구성 요소 변환을 위해 src가 있는 절대 url이 있는 태그를 시도합니다. **UnsupportedTagContentException** 발생합니다. 예를 들어, 다음은 지원되지 않습니다.
+절대 URL src가 있는 `<img>` 태그가 구성 요소 변환에 시도되면 적절한 **UnsupportedTagContentException**&#x200B;이(가) 발생합니다. 예를 들어, 다음은 지원되지 않습니다.
 
 `<div data-cq-component="image">`
 
@@ -268,7 +268,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 이 구성 요소는 독립 실행형 애플리케이션에서 사용하거나 zip에서 가져올 수 있습니다.
 
-**속기 구성 요소 태그 선언**:
+**축약 구성 요소 태그 선언**:
 
 ```xml
 <a href="/somelink.html" data-cq-component="clickThroughLink">Click Through Link shorthand</a>
@@ -293,7 +293,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 </div>
 ```
 
-**속기 구성 요소 태그 선언**:
+**축약 구성 요소 태그 선언**:
 
 ```xml
 <a href="/somelink.html" data-cq-component="clickThroughGraphicalLink"><img src="linkimage.png" alt="Click Through Graphical Link shorthand"/></a>
@@ -301,7 +301,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 >[!NOTE]
 >
->클릭스루 그래픽 링크를 만들려면 div 내의 앵커 태그와 이미지 태그를 줄바꿈해야 합니다. `data-cq-component="clickthroughgraphicallink"` 특성.
+>클릭스루 그래픽 링크를 만들려면 div 내의 앵커 태그와 이미지 태그를 `data-cq-component="clickthroughgraphicallink"` 특성으로 둘러싸야 합니다.
 >
 >예, `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
@@ -313,7 +313,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 >
 >`</div>`
 >
->와 관련 `css .hasbackground { background-image: pathtoimage }`
+>연결된 `css .hasbackground { background-image: pathtoimage }` 포함
 >
 
 ### 리드 양식 {#lead-form}
@@ -372,7 +372,7 @@ AEM Parsys 구성 요소는 다른 AEM 구성 요소를 포함할 수 있는 컨
 
 단락 시스템은 사용자에게 사이드 킥을 사용하여 구성 요소를 추가할 수 있는 기능을 제공합니다.
 
-Parsys 구성 요소를 삽입하기 위한 HTML 마크업( `foundation/components/parsys`HTML )를 클릭하여 제품에서 사용할 수 있습니다.
+디자인 패키지 내의 HTML에 Parsys 구성 요소(`foundation/components/parsys`)를 삽입하는 HTML 마크업:
 
 ```xml
 <div data-cq-component="parsys">
@@ -441,13 +441,13 @@ HTML 태그에 설정된 Lang 속성은 디자인 임포터에서 &quot;jcr:lang
 
 ### 템플릿 오버레이 {#overlaying-template}
 
-빈 랜딩 페이지 템플릿은에서 하나를 만들어 겹칠 수 있습니다. `/apps/<appName>/designimporter/templates/<templateName>`
+빈 랜딩 페이지 템플릿은 `/apps/<appName>/designimporter/templates/<templateName>`에 만들어 겹칠 수 있습니다.
 
-AEM에서 템플릿을 만드는 단계가 설명되어 있습니다 [여기](/help/sites-developing/templates.md).
+AEM에서 템플릿을 만드는 단계는 [여기](/help/sites-developing/templates.md)에서 설명합니다.
 
 ### 랜딩 페이지에서 구성 요소 참조 {#referring-a-component-from-landing-page}
 
-data-cq-component 속성을 사용하여 HTML에서 참조할 구성 요소가 있어서 디자인 임포터가 여기에 포함된 구성 요소를 렌더링한다고 가정해 보십시오. 예를 들어 테이블 구성 요소( `resourceType = /libs/foundation/components/table`). HTML에 다음을 추가해야 합니다.
+data-cq-component 속성을 사용하여 HTML에서 참조할 구성 요소가 있어서 디자인 임포터가 여기에 포함된 구성 요소를 렌더링한다고 가정해 보십시오. 예를들어, 테이블 구성 요소(`resourceType = /libs/foundation/components/table`)를 참조합니다. HTML에 다음을 추가해야 합니다.
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -460,17 +460,17 @@ data-cq-component의 경로는 구성 요소의 resourceType이어야 합니다.
 | E > F | E 요소의 F 요소 자식 | [자식 조합기](https://www.w3.org/TR/css3-selectors/#child-combinators) |
 |---|---|---|
 | E + F | E 요소 바로 앞에 있는 F 요소 | [인접 형제 결합자](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
-| E ~ F | 앞에 E 요소가 오는 F 요소 | [일반 형제 결합자](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
+| E ~ F | 앞에 E 요소가 오는 F 요소 | [일반 형제 조합자](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
 | E:root | 문서의 루트인 E 요소 | [구조적 의사 클래스](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-child(n) | 상위 요소의 n번째 하위 요소인 E 요소 | [구조적 의사 클래스](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-child(n) | 마지막 요소부터 계산하여 상위의 n번째 하위가 되는 E 요소 | [구조적 의사 클래스](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-of-type(n) | 해당 유형의 n 번째 형제 요소인 E 요소 | [구조적 의사 클래스](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-of-type(n) | E 원소, 즉 해당 유형의 n번째 형제, 마지막 원소로부터 계산 | [구조적 의사 클래스](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
-다음과 같은 추가 html 요소 때문입니다. &lt;div> 태그는 가져오기 후에 생성된 Html에 추가됩니다.
+가져오기 후 생성된 HTML에 &lt;div> 태그와 같은 추가 html 요소가 추가되기 때문입니다.
 
 * 위와 유사한 구조에 의존하는 스크립트도 AEM 구성 요소로 전환되도록 표시된 요소와 함께 사용하지 않는 것이 좋습니다.
-* 다음과 같은 구성 요소 전환을 위해 마크업 태그의 스타일 사용 &lt;div data-cq-component=&quot;&amp;ast;&quot;> 권장되지 않습니다.
+* &lt;div data-cq-component=&quot;&amp;ast;&quot;>와 같은 구성 요소 전환을 위해 마크업 태그에 스타일을 사용하는 것은 권장되지 않습니다.
 * 디자인 레이아웃은 HTML5 Boilerplate의 모범 사례를 따라야 합니다. 자세한 내용: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## OSGI 모듈 구성 {#configuring-osgi-modules}
@@ -494,7 +494,7 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
   <tr>
    <td>랜딩 페이지 디자인 가져오기</td>
    <td>필터 추출</td>
-   <td>추출 시 파일을 필터링하는 데 사용할 정규 표현식 목록입니다. <br /> 지정된 패턴과 일치하는 Zip 항목은 추출에서 제외됩니다.</td>
+   <td>추출 시 파일을 필터링하는 데 사용할 정규 표현식 목록입니다. 지정된 패턴과 일치하는 <br />개의 Zip 항목이 추출에서 제외됨</td>
   </tr>
   <tr>
    <td>랜딩 페이지 빌더</td>
@@ -519,21 +519,21 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
   <tr>
    <td> </td>
    <td>패턴 바꾸기</td>
-   <td>찾은 일치 항목을 대체하는 패턴입니다. $1, $2와 같은 정규 표현식 그룹 참조를 사용할 수 있습니다. 또한 이 패턴은 다음과 같은 키워드를 지원합니다 {designPath} 가져오는 동안 실제 값으로 확인됩니다.</td>
+   <td>찾은 일치 항목을 대체하는 패턴입니다. $1, $2와 같은 정규 표현식 그룹 참조를 사용할 수 있습니다. 또한 이 패턴은 가져오는 동안 실제 값으로 확인되는 {designPath}과(와) 같은 키워드를 지원합니다.</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->**랜딩 페이지 항목 전처리기의 현재 제한 사항:**
+>**랜딩 페이지 항목 전처리기의 현재 제한:**
 >검색 패턴을 변경해야 하는 경우 felix 속성 편집기를 열 때 regex 메타문자를 이스케이프하려면 백슬래시 문자를 수동으로 추가해야 합니다. 백슬래시 문자를 수동으로 추가하지 않으면 정규 표현식은 유효하지 않은 것으로 간주되며 이전 문자를 대체하지 않습니다.
 >
 >예를 들어 기본 구성이
 >
 >>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->다음을 교체해야 합니다. `CQ_DESIGN_PATH` 포함 `VIPURL` 검색 패턴에서 검색 패턴은 다음과 같아야 합니다.
+>검색 패턴에서 `CQ_DESIGN_PATH`을(를) `VIPURL`(으)로 바꾸어야 검색 패턴이 다음과 같습니다.
 >
 >`/\* *VIPURL *\*/ *(['"])`
 
@@ -566,7 +566,7 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-랜딩 페이지가 캠페인 아래에 생성되었다고 가정해 봅시다 `We.Retail` 랜딩 페이지의 이름은 입니다. **myBlank랜딩 페이지** Zip 파일이 저장된 위치는 다음과 같습니다.
+랜딩 페이지가 캠페인 `We.Retail` 아래에 생성되고 랜딩 페이지의 이름이 **myBlankLandingPage**&#x200B;라고 가정하고 Zip 파일이 저장된 위치는 다음과 같습니다.
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 
@@ -583,7 +583,7 @@ height="116" /></div>Some Text </p>
 </div>
 ```
 
-클래스에 적용된 CSS 포함 `box` 다음과 같이:
+`box` 클래스에 다음과 같이 CSS를 적용합니다.
 
 ```xml
 .box
@@ -591,7 +591,7 @@ height="116" /></div>Some Text </p>
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-그러면 `box img` 는 디자인 Importer에서 사용되며 결과 랜딩 페이지의 서식이 유지되지 않은 것으로 표시됩니다. 이 문제를 해결하기 위해 AEM은 CSS에 div 태그를 추가하고 그에 따라 코드를 다시 작성합니다. 그렇지 않으면 일부 CSS 규칙이 올바르지 않습니다.
+`box img`이(가) 디자인 Importer에서 사용되면 결과 랜딩 페이지의 형식이 유지되지 않은 것으로 보입니다. 이 문제를 해결하기 위해 AEM은 CSS에 div 태그를 추가하고 그에 따라 코드를 다시 작성합니다. 그렇지 않으면 일부 CSS 규칙이 올바르지 않습니다.
 
 ```xml
 .box img
@@ -601,4 +601,4 @@ height="116" /></div>Some Text </p>
 
 >[!NOTE]
 >
->디자이너는 **id=cqcanvas** 태그가 가져오기에 의해 인식됩니다. 그렇지 않으면 디자인이 유지되지 않습니다.
+>디자이너는 **id=cqcanvas** 태그 내의 코드만 가져오기에서 인식해야 합니다. 그렇지 않으면 디자인이 유지되지 않습니다.

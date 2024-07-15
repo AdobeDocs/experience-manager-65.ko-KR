@@ -24,9 +24,9 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 >
 >데스크탑 장치에서 다중 선택:
 >
->* Windows: **Ctrl**+**클릭** 필수 구성 요소.
+>* Windows: 필수 구성 요소에 대해 **Ctrl**+**클릭**&#x200B;합니다.
 >
->* Mac: **Cmd**+**클릭** 필수 구성 요소.
+>* Mac: 필수 구성 요소에 대해 **Cmd**+**클릭**&#x200B;합니다.
 >
 
 ## 키보드 단축키 {#keyboard-shortcuts}
@@ -41,9 +41,9 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   <tr>
    <td>콘솔</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (필수 페이지에서)</td>
-   <td>새 창에서 페이지를 엽니다.<br /> <strong>참고:</strong> 다음과 같은 경우 작동 <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">사용자 속성</a> 단일 창으로 설정됩니다. 다중 창인 경우 기본 동작입니다.</td>
+   <td>새 창에서 페이지를 엽니다.<br /> <strong>참고:</strong> <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">사용자 속성</a>이 단일 창으로 설정된 경우 작동합니다. 여러 개의 창을 사용하는 경우 기본 동작입니다.</td>
   </tr>
  </tbody>
 </table>
 
-데스크탑 사용자는 를 사용할 때 다양한 키보드 단축키를 사용할 수 있습니다. [페이지 편집기](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) 을 클릭하여 페이지를 작성합니다.
+데스크톱 사용자는 [페이지 편집기](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)를 사용하여 페이지를 작성할 때 다양한 키보드 단축키를 사용할 수 있습니다.

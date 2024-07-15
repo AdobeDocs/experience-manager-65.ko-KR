@@ -18,14 +18,14 @@ ht-degree: 37%
 
 # ContextHub 데이터를 사용하여 페이지 미리보기{#previewing-pages-using-contexthub-data}
 
-다음 [컨텍스트 허브](/help/sites-developing/contexthub.md) 도구 모음은 ContextHub 저장소의 데이터를 표시하고 저장소 데이터를 변경할 수 있도록 해 줍니다. ContextHub 도구 모음은 ContextHub 저장소의 데이터로 판별되는 콘텐츠를 미리 보는 데 유용합니다.
+[ContextHub](/help/sites-developing/contexthub.md) 도구 모음은 ContextHub 저장소의 데이터를 표시하고 저장소 데이터를 변경할 수 있도록 해 줍니다. ContextHub 도구 모음은 ContextHub 저장소의 데이터로 판별되는 콘텐츠를 미리 보는 데 유용합니다.
 
 도구 모음은 하나 이상의 UI 모듈이 포함된 일련의 UI 모드로 구성됩니다.
 
 * UI 모드는 도구 모음의 왼쪽에 표시되는 아이콘입니다. 아이콘을 클릭하면 도구 모음에 포함된 UI 모듈이 표시됩니다.
 * UI 모듈은 하나 이상의 ContextHub 저장소에서 가져온 데이터를 표시합니다. 일부 UI 모듈을 사용하면 스토어 데이터를 조작할 수도 있습니다.
 
-ContextHub는 여러 UI 모드 및 UI 모듈을 설치합니다. 관리자가 다음을 수행할 수 있습니다. [구성된 ContextHub](/help/sites-developing/ch-configuring.md) 다른 항목을 표시합니다.
+ContextHub는 여러 UI 모드 및 UI 모듈을 설치합니다. 관리자가 [다른 ContextHub를 표시하도록 ](/help/sites-developing/ch-configuring.md)을(를) 구성했을 수 있습니다.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 
@@ -41,7 +41,7 @@ ContextHub 도구 모음은 미리보기 모드에서 사용할 수 있습니다
 
 1. 도구 모음을 표시하려면 ContextHub 아이콘을 클릭합니다.
 
-   ![컨텍스트 허브](do-not-localize/screen_shot_2018-03-23at093621.png)
+   ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
 ## UI 모듈 기능 {#ui-module-features}
 

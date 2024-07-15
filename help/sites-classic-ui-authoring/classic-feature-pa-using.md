@@ -28,4 +28,4 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->콘솔에서 바로 사이트 분석 데이터를 표시하는 것은 터치에 적합한 UI에서만 사용할 수 있습니다. 다음을 참조하십시오 [페이지 분석 데이터 보기](/help/sites-authoring/page-analytics-using.md) 를 참조하십시오.
+>콘솔에서 바로 사이트 분석 데이터를 표시하는 것은 터치에 적합한 UI에서만 사용할 수 있습니다. 자세한 내용은 표준 작성 문서에서 [페이지 분석 데이터 보기](/help/sites-authoring/page-analytics-using.md)를 참조하십시오.

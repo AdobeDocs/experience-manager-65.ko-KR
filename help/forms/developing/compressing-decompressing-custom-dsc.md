@@ -20,7 +20,7 @@ JEE 프로세스 관리, 기본 Java™ 프로그래밍 및 사용자 지정 구
 
 **추가 필수 기타 제품**
 
-다음과 같은 Java™ 편집기 [Eclipse](https://www.eclipse.org/) 또는 [넷빈스](https://netbeans.apache.org/)
+[Eclipse](https://www.eclipse.org/) 또는 [Netbeans IDE](https://netbeans.apache.org/)와 같은 Java™ 편집기
 
 ## 사용자 수준 {#user-level}
 

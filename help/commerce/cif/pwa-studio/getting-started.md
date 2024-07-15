@@ -27,9 +27,9 @@ Adobe Experience Manager 내의 콘텐츠 조각 모델 편집기를 사용하�
 
 ## 설정 PWA Studio {#setup-pwa}
 
-PWA Studio 앱을 설정하려면 Adobe Commerce을 따르십시오 [PWA Studio 설명서](https://developer.adobe.com/commerce/pwa-studio/tutorials/).
+PWA Studio 앱을 설정하려면 Adobe Commerce [PWA Studio 설명서](https://developer.adobe.com/commerce/pwa-studio/tutorials/)를 참조하세요.
 
-AEM의 GraphQL 끝점과 PWA Studio을 연결하려면 [PWA Studio을 위한 AEM 확장](https://github.com/adobe/aem-pwa-studio-extensions).
+AEM의 GraphQL 끝점과 PWA Studio을 연결하려면 [PWA Studio용 AEM 확장](https://github.com/adobe/aem-pwa-studio-extensions)을 사용할 수 있습니다.
 
 1. 저장소 체크 아웃
 
@@ -49,7 +49,7 @@ AEM의 GraphQL 끝점과 PWA Studio을 연결하려면 [PWA Studio을 위한 AEM
    <Adapter apiBase={apiBase} apollo={{ link: linkWrapper(apolloLink) }} store={store}>
    ```
 
-   에서 아폴로 클라이언트 사용자 지정에 대한 자세한 내용을 찾을 수 있습니다. [linkWrapper.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/linkWrapper.js).
+   [linkWrapper.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/linkWrapper.js)에서 아폴로 클라이언트 사용자 지정에 대한 자세한 내용을 확인할 수 있습니다.
 
 1. 블로그 항목으로 탐색 구성 요소를 확장하려면 pwa-root/local-intercept.js에 다음 수정 사항을 추가하십시오.
 
@@ -61,9 +61,10 @@ AEM의 GraphQL 끝점과 PWA Studio을 연결하려면 [PWA Studio을 위한 AEM
    }    
    ```
 
-   탐색 구성 요소 맞춤화에 대한 자세한 내용은에서 확인할 수 있습니다. [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) 및 [확장성 프레임워크](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) PWA Studio 설명서.
+   탐색 구성 요소의 사용자 지정에 대한 자세한 내용은 [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) 및 PWA Studio [확장성 프레임워크](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) 문서에서 확인할 수 있습니다.
 
-1. Apollo 고객은 AEM GraphQL 엔드포인트를 다음 위치에 기대합니다. `<https://pwa-studio/endpoint.js>`. 끝점을 이 위치에 매핑하려면 PWA Studio 응용 프로그램의 UPPER 구성을 사용자 지정합니다(a. To). `pwa-root/.env`를 클릭하고 AEM_CFM_GRAPHQL 변수를 추가한 다음 AEM 콘텐츠 조각 GraphQL 엔드포인트를 가리키도록 조정합니다.
+1. Apollo 클라이언트는 `<https://pwa-studio/endpoint.js>`에 AEM GraphQL 끝점이 필요합니다. 끝점을 이 위치에 매핑하려면 PWA Studio 응용 프로그램의 UPPER 구성을 사용자 지정합니다.
+a. `pwa-root/.env`에 AEM_CFM_GRAPHQL 변수를 추가하고 AEM 콘텐츠 조각 GraphQL 끝점을 가리키도록 조정합니다.
 
    예: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 
@@ -94,9 +95,9 @@ AEM 콘텐츠 조각 설명서에 따라 AEM 프로젝트에 대한 GraphQL 끝�
 
 * Adobe Granite 원본 간 리소스 공유 정책(com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-  설정 `allowedorigin` 속성을 PWA 애플리케이션의 전체 호스트 이름으로 설정합니다.
+  `allowedorigin` 속성을 PWA 응용 프로그램의 전체 호스트 이름으로 설정합니다.
 
-  예:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  예: `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling Referrer Filter (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
@@ -104,7 +105,7 @@ AEM 콘텐츠 조각 설명서에 따라 AEM 프로젝트에 대한 GraphQL 끝�
 
   예: pwa-studio-test-vflyn.local.pwadev
 
-두 구성의 전체 예는 여기에서 찾을 수 있습니다. <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
+두 구성의 전체 예는 <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>에서 확인할 수 있습니다.
 
 GraphQL 엔드포인트를 표시하기 위해 Adobe은 콘텐츠 패키지를 통해 일부 샘플 콘텐츠 조각 모델 및 데이터를 준비했습니다. 이러한 조각은 PWA Studio 확장과 함께 제공된 React Components와 함께 작동합니다.
 
@@ -124,8 +125,8 @@ GraphQL 엔드포인트를 표시하기 위해 Adobe은 콘텐츠 패키지를 �
 
 ### 블로그 {#blog}
 
-일부 콘텐츠 조각 모델을 기반으로 블로그 게시물을 표시합니다. 또한 AEM GraphQL 종단점과 함께 작동하도록 Apollo 클라이언트를 구성하는 방법 및 PWA Studio에서 탐색 구성 요소를 확장하는 방법에 대한 예가 포함되어 있습니다. 다음을 참조하십시오 [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension) 을 참조하십시오.
+일부 콘텐츠 조각 모델을 기반으로 블로그 게시물을 표시합니다. 또한 AEM GraphQL 종단점과 함께 작동하도록 Apollo 클라이언트를 구성하는 방법 및 PWA Studio에서 탐색 구성 요소를 확장하는 방법에 대한 예가 포함되어 있습니다. 자세한 내용은 [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension)를 참조하십시오.
 
 ### PDP 보강 {#pdp-enrichment}
 
-마케터는 콘텐츠 조각으로 관리되는 추가 콘텐츠로 PDP를 쉽게 보강할 수 있습니다. 다음을 참조하십시오 [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension) 을 참조하십시오.
+마케터는 콘텐츠 조각으로 관리되는 추가 콘텐츠로 PDP를 쉽게 보강할 수 있습니다. 자세한 내용은 [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension)를 참조하십시오.

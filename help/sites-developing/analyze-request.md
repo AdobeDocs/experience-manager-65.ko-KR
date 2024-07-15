@@ -20,13 +20,13 @@ ht-degree: 2%
 
 ## 다운로드 {#download}
 
-이 스크립트는 `access.log` 나중에 처리할 수 있도록 읽기 가능한 보고서를 생성하는 파일입니다.
+이 스크립트는 나중에 처리할 수 있는 보고서를 만드는 `access.log` 파일을 쉽게 분석하기 위해 작성되었습니다.
 
 [파일 가져오기](assets/analyse-access.sh)
 
 ## 설명 {#description}
 
-이 스크립트는 `access.log` 나중에 처리할 수 있도록 읽기 가능한 보고서를 생성하는 파일입니다.
+이 스크립트는 나중에 처리할 수 있는 보고서를 만드는 `access.log` 파일을 쉽게 분석하기 위해 작성되었습니다.
 
 전체 요청 수, GET 및 POST, 시간에 따른 요청 분포 등을 생성합니다.
 
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 실행 방법을 알려 주는 파일 내의 주석을 가져옵니다.
 
-CQ 분석 `access.log` 다양한 정보를 외삽하고 의 Markdown 출력을 생성합니다. `stdout`.
+CQ `access.log`을(를) 분석하여 다양한 정보를 외삽하고 `stdout`에서 Markdown 출력을 생성합니다.
 
 ## 사용 {#usage}
 

@@ -20,9 +20,9 @@ ht-degree: 0%
 
 서버 설정 페이지에서는 Forms Workflow의 다양한 설정에 액세스할 수 있습니다.
 
-* **이메일 설정** 보내는 이메일 메시지와 해당 메시지에 사용되는 이메일 서버 설정을 활성화합니다. (참조: [이메일 설정 구성](configuring-server-settings.md#configuring-email-settings).)
-* **작업 알림 설정** 최종 사용자 및 그룹이 작업과 관련하여 이메일 알림으로 받은 메시지를 활성화, 비활성화 또는 수정합니다. (참조: [사용자 및 그룹에 대한 알림 구성](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
-* **관리자 알림 설정** 관리 작업을 위해 이메일 알림으로 전송된 메시지를 활성화, 비활성화 또는 수정합니다. (참조: [관리자용 알림 구성](configuring-server-settings.md#configuring-notifications-for-administrators).)
+* 보내는 전자 메일 메시지와 해당 메시지에 사용되는 전자 메일 서버 설정을 사용하는 **전자 메일 설정**. ([전자 메일 설정 구성](configuring-server-settings.md#configuring-email-settings)을 참조하세요.)
+* 최종 사용자 및 그룹의 작업과 관련하여 전자 메일 알림에서 보내는 메시지를 활성화, 비활성화 또는 수정하는 **작업 알림 설정**. [사용자 및 그룹에 대한 알림 구성](configuring-server-settings.md#configuring-notifications-for-users-and-groups)을 참조하세요.
+* 관리 작업을 위해 전자 메일 알림에서 보낸 메시지를 활성화, 비활성화 또는 수정하는 **관리자 알림 설정**. ([관리자를 위한 알림 구성](configuring-server-settings.md#configuring-notifications-for-administrators)을 참조하십시오.)
 
 ## 이메일 설정 구성 {#configuring-email-settings}
 
@@ -30,7 +30,7 @@ AEM Forms 사용자 및 관리자에게 이메일 메시지를 보내는 Forms �
 
 AEM Forms와 사용자 간에 전자 메일 메시지를 보낼 수 있도록 하려면 전자 메일 설정 페이지에서 발신 전자 메일 설정을 구성합니다. 발신 전자 메일은 SMTP 서버를 사용해야 합니다.
 
-AEM Forms가 사용자로부터 들어오는 이메일 메시지를 수신하고 처리할 수 있도록 하려면 전체 작업 서비스에 대한 이메일 엔드포인트를 만듭니다. (참조: [전체 작업 서비스에 대한 이메일 엔드포인트 만들기](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
+AEM Forms가 사용자로부터 들어오는 이메일 메시지를 수신하고 처리할 수 있도록 하려면 전체 작업 서비스에 대한 이메일 엔드포인트를 만듭니다. (전체 작업 서비스에 대한 [전자 메일 끝점 만들기](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)를 참조하십시오.)
 
 이메일을 필요로 하지 않고 프로세스를 디자인하고 구현하는 경우 이메일 설정 페이지에서 옵션을 구성할 필요가 없습니다.
 
@@ -44,7 +44,7 @@ AEM Forms가 사용자로부터 들어오는 이메일 메시지를 수신하고
 
    >[!NOTE]
    >
-   >Microsoft Exchange Server를 사용 중이고 이메일 주소가 잘못된 경우, Microsoft Exchange Server는 메일 그룹으로 이메일을 보내지 못합니다. 문제를 해결하려면 다음을 선택합니다 **외부 통신 사용** 옵션은 Microsoft Exchange 서버의 모든 배포 목록에 대해 별도로 제공됩니다.
+   >Microsoft Exchange Server를 사용 중이고 이메일 주소가 잘못된 경우, Microsoft Exchange Server는 메일 그룹으로 이메일을 보내지 못합니다. 이 문제를 해결하려면 Microsoft Exchange 서버의 모든 배포 목록에 대해 별도로 **외부 통신 사용** 옵션을 선택하십시오.
 
 1. 저장을 클릭합니다.
 
@@ -52,17 +52,17 @@ AEM Forms가 사용자로부터 들어오는 이메일 메시지를 수신하고
 >
 >잘못된 정보를 입력하면 취소 를 클릭하여 이전에 표시된 페이지로 돌아갈 수 있습니다.
 
-### AEM Forms Workspace를 사용하도록 이메일 템플릿 구성 {#configuring-email-templates-to-use-html-workspace}
+### AEM Forms Workspace을 사용하도록 이메일 템플릿 구성 {#configuring-email-templates-to-use-html-workspace}
 
 >[!NOTE]
 >
->Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
+>Flex Workspace은 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
-기본적으로 AEM Forms에 의해 전송되는 이메일에는 (JEE에서는 AEM Forms가 더 이상 사용되지 않음) Flex Workspace에 대한 링크가 포함되어 있습니다. AEM Forms Workspace에 대한 링크가 있는 이메일을 보내도록 AEM Forms를 구성할 수 있습니다. AEM Forms Workspace의 이점(JEE에서 AEM Forms의 더 이상 사용되지 않음)에 대해 자세히 알아보려면 Flex Workspace를 참조하십시오. [이](/help/forms/using/features-html-workspace-available-flex.md) 기사.
+기본적으로 AEM Forms에 의해 전송되는 이메일에는 (JEE에서는 AEM Forms가 더 이상 사용되지 않음) Flex Workspace에 대한 링크가 포함되어 있습니다. AEM Forms Workspace에 대한 링크가 포함된 이메일을 보내도록 AEM Forms를 구성할 수 있습니다. AEM Forms Workspace over(JEE의 AEM Forms에서 더 이상 사용되지 않음) Flex Workspace의 이점에 대해 자세히 알아보려면 [이](/help/forms/using/features-html-workspace-available-flex.md) 문서를 참조하십시오.
 
 1. 관리 콘솔에서 홈 > 서비스 > 양식 워크플로우 > 서버 설정 > 작업 알림 을 클릭합니다.
 1. 작업 할당 템플릿을 엽니다.
-1. 작업 알림의 템플릿을 다음으로 설정합니다. `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
+1. 작업 알림의 템플릿을 `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`(으)로 설정합니다.
 
    ```java
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
@@ -78,7 +78,7 @@ AEM Forms가 사용자로부터 들어오는 이메일 메시지를 수신하고
 * 작업 할당
 * 기한
 
-그룹에 대한 이메일 알림을 생성하려면 사용자 관리에서 그룹에 대한 이메일 주소를 지정합니다. <!--Fix broken link See Setting up and organizing users -->Forms Workflow가 그룹에 이메일 알림을 보내면 지정된 이메일 주소를 가진 그룹 내의 각 구성원이 이메일 알림을 받습니다. 그룹의 구성원이 이메일 알림을 받고 작업을 요청하려면 이메일 알림에서 요청 링크를 클릭해야 합니다. 그러면 작업 영역에서 작업 세부 정보 페이지가 열립니다. 그곳에서 구성원은 작업 항목에 대해 청구 또는 청구 및 열람할 수 있다.
+그룹에 대한 이메일 알림을 생성하려면 사용자 관리에서 그룹에 대한 이메일 주소를 지정합니다. <!--Fix broken link See Setting up and organizing users -->Forms Workflow에서 그룹에 전자 메일 알림을 보낼 때 전자 메일 주소가 지정된 그룹 내의 각 구성원이 전자 메일 알림을 받습니다. 그룹의 구성원이 이메일 알림을 받고 작업을 요청하려면 이메일 알림에서 요청 링크를 클릭해야 합니다. 그러면 Workspace에서 작업 세부 정보 페이지가 열립니다. 그곳에서 구성원은 작업 항목에 대해 청구 또는 청구 및 열람할 수 있다.
 
 >[!NOTE]
 >
@@ -92,8 +92,8 @@ AEM Forms가 사용자로부터 들어오는 이메일 메시지를 수신하고
 1. 알림 유형에서 미리 알림(사용자용) 또는 그룹 - 미리 알림(그룹용)을 클릭합니다.
 1. 미리 알림 활성화 또는 그룹 - 미리 알림 활성화를 선택합니다.
 1. (사용자 알림만 해당) 미리 알림 이메일 메시지에 양식 및 해당 데이터의 첨부 파일을 포함하려면 양식 데이터 포함을 선택합니다.
-1. 제목 상자에 전자 메일 메시지의 제목 줄에 대한 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. 알림 템플릿 상자에 전자 메일 메시지 본문의 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. 제목 상자에 전자 메일 메시지의 제목 줄에 대한 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)을 참조하십시오.
+1. 알림 템플릿 상자에 전자 메일 메시지 본문의 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)을 참조하십시오.
 1. 메시지 형식 목록에서 이메일 메시지가 전송되는 형식(HTML 또는 텍스트)을 선택합니다. 기본 형식은 HTML 입니다.
 1. 전자 메일 인코딩 목록에서 전자 메일 메시지에 사용할 인코딩 형식을 선택합니다. 기본값은 UTF-8이며, 일본 이외의 대부분의 사용자는 이 옵션을 사용합니다. 일본의 사용자는 ISO2022-JP를 선택할 수 있습니다.
 1. 저장을 클릭합니다.
@@ -106,8 +106,8 @@ AEM Forms가 사용자로부터 들어오는 이메일 메시지를 수신하고
 1. 알림 유형에서 사용자에 대한 작업 할당 또는 그룹에 대한 그룹 - 그룹에 대한 작업 할당을 클릭합니다.
 1. 사용자에 대해 작업 할당 활성화 또는 그룹에 대해 그룹 - 작업 할당 활성화를 선택합니다.
 1. (사용자 알림만 해당) 작업 할당 전자 메일 메시지에 양식 및 해당 데이터의 첨부 파일을 포함하려면 양식 데이터 포함을 선택합니다.
-1. 제목 상자에 전자 메일 메시지의 제목 줄에 대한 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. 알림 템플릿 상자에 전자 메일 메시지 본문의 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. 제목 상자에 전자 메일 메시지의 제목 줄에 대한 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)을 참조하십시오.
+1. 알림 템플릿 상자에 전자 메일 메시지 본문의 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)을 참조하십시오.
 1. 메시지 형식 목록에서 이메일 메시지가 전송되는 형식(HTML 또는 텍스트)을 선택합니다. 기본 형식은 HTML 입니다.
 1. 전자 메일 인코딩 목록에서 전자 메일 메시지에 사용할 인코딩 형식을 선택합니다. 기본값은 UTF-8이며, 일본 이외의 대부분의 사용자는 이 옵션을 사용합니다. 일본의 사용자는 ISO2022-JP를 선택할 수 있습니다.
 1. 저장을 클릭합니다.
@@ -119,8 +119,8 @@ AEM Forms가 사용자로부터 들어오는 이메일 메시지를 수신하고
 1. 관리 콘솔에서 서비스 > Forms 워크플로 > 서버 설정 > 작업 알림 을 클릭합니다.
 1. 알림 유형에서 기한(사용자용) 또는 그룹 - 기한(그룹용)을 클릭합니다.
 1. 기한 활성화 또는 그룹 - 기한 활성화를 선택합니다.
-1. 제목 상자에 전자 메일 메시지의 제목 줄에 대한 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. 알림 템플릿 상자에 전자 메일 메시지 본문의 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. 제목 상자에 전자 메일 메시지의 제목 줄에 대한 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)을 참조하십시오.
+1. 알림 템플릿 상자에 전자 메일 메시지 본문의 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)을 참조하십시오.
 1. 메시지 형식 목록에서 이메일 메시지가 전송되는 형식(HTML 또는 텍스트)을 선택합니다. 기본 형식은 HTML 입니다.
 1. 전자 메일 인코딩 목록에서 전자 메일 메시지에 사용할 인코딩 형식을 선택합니다. 기본값은 UTF-8이며, 일본 이외의 대부분의 사용자는 이 옵션을 사용합니다. 일본의 사용자는 ISO2022-JP를 선택할 수 있습니다.
 1. 저장을 클릭합니다.
@@ -150,8 +150,8 @@ For details, see [How to hide the 'DO-NOT-DELETE' tag with CSS](https://blogs.ad
 1. 알림 유형에서 정지된 분기를 클릭합니다.
 1. 정지된 분기 사용을 선택합니다.
 1. 이메일 주소 상자에 분기가 중단될 때 통지할 사용자 주소를 입력합니다. user@domain.com 형식을 사용하고 각 주소는 쉼표로 구분하십시오. 일반적으로 이 이메일 주소는 관리자 전용입니다.
-1. 제목 상자에 전자 메일 메시지의 제목 줄에 대한 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. 알림 템플릿 상자에 전자 메일 메시지 본문의 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. 제목 상자에 전자 메일 메시지의 제목 줄에 대한 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)을 참조하십시오.
+1. 알림 템플릿 상자에 전자 메일 메시지 본문의 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)을 참조하십시오.
 1. 메시지 형식 목록에서 이메일 메시지가 전송되는 형식(HTML 또는 텍스트)을 선택합니다. 기본 형식은 HTML 입니다.
 1. 전자 메일 인코딩 목록에서 전자 메일 메시지에 사용할 인코딩 형식을 선택합니다. 기본값은 UTF-8로, 일본 이외의 대부분의 사용자가 사용합니다. 일본의 사용자는 ISO2022-JP를 선택할 수 있습니다.
 1. 저장을 클릭합니다.
@@ -164,8 +164,8 @@ For details, see [How to hide the 'DO-NOT-DELETE' tag with CSS](https://blogs.ad
 1. 알림 유형에서 정지된 작업 을 클릭합니다.
 1. 정지된 작업 활성화를 선택합니다.
 1. 이메일 주소 상자에 작업이 중지될 때 통지할 사용자 주소를 입력합니다. user@domain.com 형식을 사용하고 각 주소는 쉼표로 구분하십시오. 일반적으로 이 이메일 주소는 관리자 전용입니다.
-1. 제목 상자에 전자 메일 메시지의 제목 줄에 대한 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)
-1. 알림 템플릿 상자에 전자 메일 메시지 본문의 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. 제목 상자에 전자 메일 메시지의 제목 줄에 대한 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)을 참조하세요.
+1. 알림 템플릿 상자에 전자 메일 메시지 본문의 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)을 참조하십시오.
 1. 저장을 클릭합니다.
 
 ## 알림 콘텐츠 사용자 지정 {#customizing-the-content-of-notifications}
@@ -188,7 +188,7 @@ HTML 템플릿 영역은 이메일 알림 메시지에 대한 알림을 생성�
 
   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
-* ClaimTask는 그룹 - 미리 알림 및 그룹 - 작업 할당 알림 유형에 사용할 수 있습니다. 이 URL은 사용자가 작업 항목을 클레임하거나 클레임 및 열 수 있는 작업 영역의 작업 세부 정보 페이지에 대한 링크를 제공합니다. ClaimTask URL을 Notification Template 상자로 드래그하면 URL의 형식은 다음과 같습니다.
+* ClaimTask는 그룹 - 미리 알림 및 그룹 - 작업 할당 알림 유형에 사용할 수 있습니다. 이 URL은 사용자가 작업 항목을 클레임하거나 클레임 및 열 수 있는 Workspace의 작업 세부 정보 페이지에 대한 링크를 제공합니다. ClaimTask URL을 Notification Template 상자로 드래그하면 URL의 형식은 다음과 같습니다.
 
   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
@@ -196,17 +196,17 @@ HTML 템플릿 영역은 이메일 알림 메시지에 대한 알림을 생성�
 >
 >Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
-솔루션이 클러스터된 환경에 배포된 경우 `@@notification-host@@` 클러스터 주소입니다.
+솔루션이 클러스터된 환경에 배포된 경우 `@@notification-host@@`을(를) 클러스터 주소로 바꾸십시오.
 
-`<`*포트* `>` 는 응용 프로그램 서버에 대한 HTTP 리스너의 포트 번호입니다. 지원되는 애플리케이션 서버에 대한 기본 HTTP 리스너 포트는 다음과 같습니다.
+`<`*PORT* `>`은(는) 응용 프로그램 서버에 대한 HTTP 수신기의 포트 번호입니다. 지원되는 애플리케이션 서버에 대한 기본 HTTP 리스너 포트는 다음과 같습니다.
 
-**JBos:** 8080
+**JBoss:** 8080
 
 **Oracle WebLogic 서버:** 7001
 
-**IBM WebSphere** 9080
+**IBM WebSphere:** 9080
 
-이러한 URL이 올바르게 작동하도록 하려면 `<`*포트* `>` 사용자 환경에 적합한 포트 번호 사용.
+이러한 URL이 올바르게 작동하도록 하려면 `<`*PORT* `>`을(를) 환경에 적합한 포트 번호로 바꾸십시오.
 
 >[!NOTE]
 >
@@ -214,15 +214,15 @@ HTML 템플릿 영역은 이메일 알림 메시지에 대한 알림을 생성�
 
 ### 변수 선택기 {#variable-picker}
 
-변수 선택기 목록에서는 제목 또는 알림 템플릿 상자로 드래그하여 놓을 수 있는 유용한 변수를 제공합니다. 제목 또는 알림 템플릿 상자에 변수를 놓으면 실제 양식 워크플로 변수 이름으로 변경되고 양쪽에 두 개의 @ 기호가 표시됩니다. 예를 들면 다음과 같습니다. `@@taskid@@`.
+변수 선택기 목록에서는 제목 또는 알림 템플릿 상자로 드래그하여 놓을 수 있는 유용한 변수를 제공합니다. 제목 또는 알림 템플릿 상자에 변수를 놓으면 실제 양식 워크플로 변수 이름으로 변경되고 양쪽에 두 개의 @ 기호가 있습니다(예: `@@taskid@@`).
 
 사용자 및 그룹에 대한 미리 알림, 작업 할당 및 기한의 경우 제목 및 알림 템플릿 상자에서 다음 변수를 사용할 수 있습니다.
 
-**설명** Workbench에서 프로세스의 사용자 단계(시작점, 작업 할당 작업 또는 여러 작업 할당 작업)에 정의된 설명 속성의 내용.
+**설명** Workbench에서 프로세스의 사용자 단계(시작 지점, 작업 할당 작업 또는 여러 작업 할당 작업)에 정의된 설명 속성의 내용입니다.
 
-**지침** Workbench에서 프로세스의 사용자 단계에서 정의한 작업 지침 속성의 컨텐츠입니다.
+**지침** Workbench에서 프로세스의 사용자 단계에서 정의한 작업 지침 속성의 콘텐츠입니다.
 
-**notification-host** AEM Forms 애플리케이션 서버 의 호스트 이름입니다.
+**notification-host** AEM Forms 응용 프로그램 서버 의 호스트 이름입니다.
 
 **process-name** 프로세스의 이름입니다.
 
@@ -242,21 +242,21 @@ HTML 템플릿 영역은 이메일 알림 메시지에 대한 알림을 생성�
 
 정지된 분기의 경우 제목 및 알림 템플릿 상자에서 다음 변수를 사용할 수 있습니다.
 
-**branch-id** 분기 식별자.
+**branch-id** 분기 식별자입니다.
 
-**process-id** 프로세스 인스턴스 식별자.
+**process-id** 프로세스 인스턴스 식별자입니다.
 
-**notification-host** AEM Forms 애플리케이션 서버 의 호스트 이름입니다.
+**notification-host** AEM Forms 응용 프로그램 서버 의 호스트 이름입니다.
 
 정지된 작업의 경우 제목 및 알림 템플릿 상자에서 다음 변수를 사용할 수 있습니다.
 
-**action-id** 작업 식별자.
+**action-id** 작업 식별자입니다.
 
-**branch-id** 분기 식별자.
+**branch-id** 분기 식별자입니다.
 
-**process-id** 프로세스 인스턴스 식별자.
+**process-id** 프로세스 인스턴스 식별자입니다.
 
-**notification-host** AEM Forms 애플리케이션 서버 의 호스트 이름입니다.
+**notification-host** AEM Forms 응용 프로그램 서버 의 호스트 이름입니다.
 
 ### 제목 상자에서 변수 사용 {#using-a-variable-in-the-subject-box}
 
@@ -274,7 +274,7 @@ HTML 템플릿 영역은 이메일 알림 메시지에 대한 알림을 생성�
 
 `Branch @@branch-id@@ has stalled! You have received this notification from @@notification-host@@.`
 
-지점 번호가 4868이고 서버 이름이 인 경우 관리자는 다음 콘텐츠가 포함된 이메일 메시지를 수신합니다. `ServerXYZ`:
+지점 번호가 4868이고 서버 이름이 `ServerXYZ`인 경우 관리자는 다음 콘텐츠가 포함된 전자 메일 메시지를 수신합니다.
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 

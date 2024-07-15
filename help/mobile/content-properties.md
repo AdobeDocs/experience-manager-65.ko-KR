@@ -70,7 +70,7 @@ ht-degree: 20%
 
 | **속성 이름** | **유형** | **기본값 또는 예상 값** |
 |---|---|---|
-| dps-tapAction |  | 다음에서 탭 작업 {webLink} |
+| dps-tapAction |  | {webLink}에서 TapAction |
 | dps-tapActinUrl |  |  |
 
 ### 컬렉션 {#collections}

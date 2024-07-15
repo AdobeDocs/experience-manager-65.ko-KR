@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM Forms 설치 사용자가 Content Services의 데이터 캡처 기능을 사용하는 경우(더 이상 사용되지 않음) 이러한 사용자에 대해 읽기 전용 액세스 권한을 가진 역할을 만드는 것이 좋습니다.
 
-***참고&#x200B;**: Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. 다음을 참조하십시오 [제품 라이프사이클 문서 Adobe](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).*
+***참고&#x200B;**: Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치된 콘텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. [Adobe 제품 라이프사이클 문서](https://helpx.adobe.com/kr/support/programs/eol-matrix.html)를 참조하십시오.*
 
 데이터 캡처를 사용하려면 SampleReaderExtensionsCredential에 액세스할 사용자 역할을 할당해야 합니다. 표준 트러스트 관리자 역할을 할당할 수 있습니다. 그러나 이 역할은 PKI 트러스트 설정을 제어하고 PKI 자격 증명을 관리하는 일반 관리자 권한이 없는 사용자에게 부여되므로 프로덕션 환경에서 AEM Forms 설치의 보안이 손상될 수 있습니다. AEM Forms 시스템 관리자는 Trust Store에 대한 읽기 전용 액세스 권한만 부여하는 역할을 만들고 데이터 캡처를 사용하는 관리자가 아닌 사용자에게 이 새 역할을 할당하는 것이 좋습니다.
 

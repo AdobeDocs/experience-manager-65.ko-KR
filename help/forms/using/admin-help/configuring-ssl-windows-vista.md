@@ -28,12 +28,12 @@ Windows Vista™에서 SSL을 구성하려면 인증을 위해 RSA 키가 포함
 
 **SSL 인증서 만들기**
 
-1. 명령 프롬프트에서 다음 위치로 이동합니다. *`[JAVA HOME]`*/bin에 다음 명령을 입력하여 인증서와 키 저장소를 만듭니다.
+1. 명령 프롬프트에서 *`[JAVA HOME]`*/bin으로 이동하고 다음 명령을 입력하여 인증서 및 키 저장소를 만듭니다.
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*호스트 이름* `, OU=`*그룹 이름* `, O=`*회사 이름* `,L=`*도시 이름* `, S=`*시/도* `, C=`*국가 코드* `" -alias`*&quot;LC 인증서&quot;* `-keypass` `key`*_* *암호* `-keystore`*keystorename* `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*호스트 이름* `, OU=`*그룹 이름* `, O=`*회사 이름* `,L=`*도시 이름* `, S=`*상태* `, C=`*국가 코드* `" -alias`*&quot;LC 인증서&quot;* `-keypass` `key`*_* *암호* `-keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
-   >바꾸기 *`[JAVA_HOME]`JDK가 설치된 디렉터리로 바꾸고 텍스트를 사용자 환경에 해당하는 값으로 기울임꼴로 바꿉니다.*
+   >*`[JAVA_HOME]`을(를) JDK가 설치된 디렉터리로 바꾸고 텍스트를 사용자 환경에 해당하는 값으로 기울임꼴로 바꿉니다.*
 
-1. 유형 `changeit` 을 암호로 사용하십시오. 이 암호는 Java 설치의 기본값이며 시스템 관리자가 변경했을 수 있습니다.
+1. 암호로 `changeit`을(를) 입력하십시오. 이 암호는 Java 설치의 기본값이며 시스템 관리자가 변경했을 수 있습니다.

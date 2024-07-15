@@ -25,8 +25,8 @@ ht-degree: 10%
 
    ![목록 보기](do-not-localize/chlimage_1-11.png)
 
-1. 클릭 **새로 만들기...**
-1. 다음을 지정할 수 있습니다. **제목**, **이름** 생성할 경험 유형(이 경우 Test&amp;Target 오퍼)입니다.
+1. **새로 만들기...** 클릭
+1. 만들 **제목**, **이름** 및 경험 유형을 지정할 수 있습니다. 이 경우 Test&amp;Target 오퍼입니다.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -34,8 +34,8 @@ ht-degree: 10%
 
    >[!NOTE]
    >
-   >Test&amp;Target 경험은 현재 MCM에 나열되어 있지 않습니다. 다음에서 액세스할 수 있습니다 **웹 사이트** 콘솔, 캠페인
+   >Test&amp;Target 경험은 현재 MCM에 나열되어 있지 않습니다. **웹 사이트** 콘솔의 [캠페인]에서 액세스할 수 있습니다.
 
 ## Adobe Target과 통합 {#integrating-with-adobe-target}
 
-다음을 참조하십시오 [Adobe과 통합](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) 전체 세부 정보.
+자세한 내용은 [Adobe과 통합](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md)을 참조하십시오.

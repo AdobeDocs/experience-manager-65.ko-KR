@@ -23,24 +23,24 @@ ht-degree: 3%
 >
 >AEM 6.5 이상에서는 hobbes.js UI 테스트 프레임워크가 더 이상 사용되지 않습니다. Adobe은 추가 개선 사항을 계획하지 않으며 고객에게 Selenium 자동화를 사용할 것을 권장합니다.
 >
->다음을 참조하십시오 [사용이 중단되거나 제거된 기능](/help/release-notes/deprecated-removed-features.md).
+>[사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md)을 참조하세요.
 
 AEM은 AEM UI에 대한 테스트를 자동화하기 위한 프레임워크를 제공합니다. 프레임워크를 사용하여 웹 브라우저에서 직접 UI 테스트를 작성하고 실행합니다. 프레임워크는 테스트 생성을 위한 JavaScript API를 제공합니다.
 
-AEM 테스트 프레임워크는 JavaScript로 작성된 테스트 라이브러리인 Hobbes.js를 사용합니다. Hobbes.js 프레임워크는 개발 프로세스의 일부로 AEM을 테스트하기 위해 개발되었습니다. 이제 프레임워크를 AEM 애플리케이션 테스트에 공개적으로 사용할 수 있습니다.
+AEM 테스트 프레임워크는 JavaScript으로 작성된 테스트 라이브러리인 Hobbes.js를 사용합니다. Hobbes.js 프레임워크는 개발 프로세스의 일부로 AEM을 테스트하기 위해 개발되었습니다. 이제 프레임워크를 AEM 애플리케이션 테스트에 공개적으로 사용할 수 있습니다.
 
 >[!NOTE]
 >
->Hobbes.js를 참조하십시오 [설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) API에 대한 전체 세부 정보.
+>API에 대한 자세한 내용은 Hobbes.js [설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)를 참조하십시오.
 
 ## 테스트 구조 {#structure-of-tests}
 
 AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하는 것이 중요합니다.
 
-| 작업 | An **작업** 링크 또는 버튼 클릭과 같은 웹 페이지의 특정 활동입니다. |
+| 작업 | **작업**&#x200B;은(는) 링크 또는 단추를 클릭하는 것과 같은 웹 페이지의 특정 활동입니다. |
 |---|---|
-| 테스트 사례 | A **테스트 사례** 하나 이상으로 구성할 수 있는 특정 상황입니다 **작업**. |
-| 테스트 세트 | A **테스트 세트** 은(는) 관련 그룹입니다. **테스트 사례** 특정 사용 사례를 함께 테스트합니다. |
+| 테스트 사례 | **테스트 사례**&#x200B;은(는) 하나 이상의 **작업**(으)로 구성할 수 있는 특정 상황입니다. |
+| 테스트 세트 | **테스트 도구 모음**&#x200B;은(는) 특정 사용 사례를 함께 테스트하는 관련 **테스트 사례** 그룹입니다. |
 
 ## 테스트 실행 {#executing-tests}
 
@@ -48,7 +48,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 테스트 콘솔을 열어 등록된 테스트 세트를 확인합니다. 테스트 패널에는 테스트 세트와 테스트 사례 목록이 포함되어 있습니다.
 
-를 통해 도구 콘솔로 이동합니다. **전역 탐색 > 도구 > 작업 > 테스트**.
+**전역 탐색 > 도구 > 작업 > 테스트**&#x200B;를 통해 도구 콘솔로 이동합니다.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -66,7 +66,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 &quot;X&quot; 아이콘은 실패한 테스트를 나타냅니다.
 
-![원형 안에 X가 표시된 테스트 실패 아이콘.](do-not-localize/chlimage_1-3.png)
+![원형 안에 X로 표시된 테스트 아이콘이 실패했습니다.](do-not-localize/chlimage_1-3.png)
 
 테스트 세트를 실행하려면:
 
@@ -74,15 +74,15 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. 클릭 **테스트 실행**.
+1. **테스트 실행**&#x200B;을 클릭합니다.
 
-   ![테스트 실행 단추의 이미지로, 원 안에 있는 오른쪽 포인터로 표시됩니다.](do-not-localize/chlimage_1-4.png)
+   ![테스트 실행 단추의 이미지로, 원 안에 있는 오른쪽 포인터가 표시됩니다.](do-not-localize/chlimage_1-4.png)
 
 1. 자리 표시자는 테스트가 실행될 때 페이지 콘텐츠로 대체됩니다.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. 설명을 탭하거나 클릭하여 을(를) 열어 테스트 사례 결과를 검토합니다. **결과** 패널. 에서 테스트 케이스의 이름을 탭하거나 클릭합니다. **결과** 패널에 모든 세부 정보가 표시됩니다.
+1. 설명을 탭하거나 클릭하여 **결과** 패널을 열어 테스트 사례의 결과를 검토하십시오. **결과** 패널에서 테스트 사례 이름을 탭하거나 클릭하면 모든 세부 정보가 표시됩니다.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -92,23 +92,23 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. 테스트 패널에서 다음을 클릭합니다. **모든 테스트 실행** 단추 또는 **테스트 실행** 실행할 테스트 세트의 제목 아래에 있는 단추입니다.
+1. 테스트 패널에서 실행할 테스트 세트의 제목 아래에 있는 **모든 테스트 실행** 단추 또는 **테스트 실행** 단추를 클릭합니다.
 
-   ![원 안에 있는 오른쪽 포인터가 가리키는 모든 테스트 실행 단추와 테스트 실행 단추의 이미지입니다.](do-not-localize/chlimage_1-5.png)
+   ![원 안에 있는 오른쪽 포인터로 표시된 모든 테스트 실행 단추와 테스트 실행 단추의 이미지입니다.](do-not-localize/chlimage_1-5.png)
 
-1. 각 테스트 사례의 결과를 보려면 테스트 사례의 제목을 클릭합니다. 에서 테스트 이름 클릭 **결과** 패널에 모든 세부 정보가 표시됩니다.
+1. 각 테스트 사례의 결과를 보려면 테스트 사례의 제목을 클릭합니다. **결과** 패널에서 테스트 이름을 클릭하면 모든 세부 정보가 표시됩니다.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
 ## 간단한 테스트 세트 만들기 및 사용 {#creating-and-using-a-simple-test-suite}
 
-다음 절차에서는 를 사용하여 테스트 세트를 만들고 실행하는 과정을 단계별로 안내합니다 [We.Retail 콘텐츠](/help/sites-developing/we-retail.md)다른 웹 페이지를 사용하도록 테스트를 쉽게 수정할 수 있습니다.
+다음 절차에서는 [We.Retail 콘텐츠](/help/sites-developing/we-retail.md)를 사용하여 테스트 도구 모음을 만들고 실행하는 과정을 단계별로 안내하지만, 다른 웹 페이지를 사용하도록 테스트를 쉽게 수정할 수 있습니다.
 
-고유한 테스트 세트 만들기에 대한 자세한 내용은 [Hobbes.js API 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+고유한 테스트 세트 만들기에 대한 자세한 내용은 [Hobbes.js API 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)를 참조하십시오.
 
 1. CRXDE Lite 열기. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
-1. 마우스 오른쪽 단추 클릭 `/etc/clientlibs` 폴더 및 클릭 **만들기 > 폴더 만들기**. 유형 `myTests` 을(를) 클릭하고 을(를) 클릭합니다. **확인**.
-1. 마우스 오른쪽 단추 클릭 `/etc/clientlibs/myTests` 폴더 및 클릭 **만들기 > 노드 만들기**. 다음 속성 값을 사용한 다음 **확인**:
+1. `/etc/clientlibs` 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 폴더 만들기**&#x200B;를 클릭합니다. `myTests` 이름을 입력하고 **확인**&#x200B;을 클릭합니다.
+1. `/etc/clientlibs/myTests` 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 노드 만들기**&#x200B;를 클릭합니다. 다음 속성 값을 사용한 다음 **확인**&#x200B;을 클릭합니다.
 
    * 이름: `myFirstTest`
    * 유형: `cq:ClientLibraryFolder`
@@ -128,23 +128,23 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
    >적응형 양식을 테스트하려면 범주 및 종속 항목에 다음 값을 추가하십시오. 예:
    >
    >
-   >**카테고리**: `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
+   >**범주**: `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
    >
    >
    >**종속성**: `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
 
 1. **모두 저장**&#x200B;을 클릭합니다.
-1. 마우스 오른쪽 단추 클릭 `myFirstTest` 노드 및 클릭 **만들기 > 파일 만들기**. 파일 이름을 지정합니다 `js.txt` 및 클릭 **확인**.
-1. 다음에서 `js.txt` 파일에 다음 텍스트를 입력합니다.
+1. `myFirstTest` 노드를 마우스 오른쪽 단추로 클릭하고 **만들기 > 파일 만들기**&#x200B;를 클릭합니다. 파일 이름을 `js.txt`로 지정하고 **확인**&#x200B;을 클릭합니다.
+1. `js.txt` 파일에 다음 텍스트를 입력하십시오.
 
    ```
    #base=.
    myTestSuite.js
    ```
 
-1. 클릭 **모두 저장** 그런 다음 을(를) 닫습니다. `js.txt` 파일.
-1. 마우스 오른쪽 단추 클릭 `myFirstTest` 노드 및 클릭 **만들기 > 파일 만들기**. 파일 이름을 지정합니다 `myTestSuite.js` 및 클릭 **확인**.
-1. 다음 코드를 `myTestSuite.js` 파일을 저장한 다음 다음 파일을 저장합니다.
+1. **모두 저장**&#x200B;을 클릭한 다음 `js.txt` 파일을 닫습니다.
+1. `myFirstTest` 노드를 마우스 오른쪽 단추로 클릭하고 **만들기 > 파일 만들기**&#x200B;를 클릭합니다. 파일 이름을 `myTestSuite.js`로 지정하고 **확인**&#x200B;을 클릭합니다.
+1. 다음 코드를 `myTestSuite.js` 파일에 복사한 다음 파일을 저장합니다.
 
    ```
    new hobs.TestSuite("Experience Content Test Suite", {path:"/etc/clientlibs/myTests/myFirstTest/myTestSuite.js"})
@@ -159,4 +159,4 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
    );
    ```
 
-1. 다음 위치로 이동 **테스트** 콘솔을 사용하여 테스트 제품군을 테스트해 보십시오.
+1. 테스트 도구 모음을 사용하려면 **테스트** 콘솔로 이동하십시오.

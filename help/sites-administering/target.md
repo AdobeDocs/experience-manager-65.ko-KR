@@ -33,14 +33,14 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 
 1. 다음 중 하나를 선택합니다.
 
-   1. [Adobe Target에 옵트인](/help/sites-administering/opt-in.md): 옵트인 마법사는 Target 계정 정보를 가져와 Adobe Target 클라우드 구성 및 Target 프레임워크를 만듭니다. 또한 이 마법사는 사이트를 Target 프레임워크와 연결합니다. 마법사가 대상에 연결할 수 없는 경우 [연결 문제 해결](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) 섹션. 그런 다음 [기본 클라우드 구성 수정](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): 필요한 경우 옵트인 마법사가 만든 클라우드 구성 및 프레임워크를 수정합니다. 예를 들어 추가적인 컨텍스트 데이터를 Target에 보내도록 프레임워크를 수정합니다. Adobe Analytics을 Adobe Target에 대한 보고 소스로 사용하려면 A4T 구성을 가리키도록 클라우드 구성을 수정해야 합니다.
+   1. [Adobe Target에 옵트인](/help/sites-administering/opt-in.md): 옵트인 마법사는 Target 계정 정보를 사용하여 Adobe Target 클라우드 구성과 Target 프레임워크를 만듭니다. 또한 이 마법사는 사이트를 Target 프레임워크와 연결합니다. 마법사가 대상에 연결할 수 없는 경우 [연결 문제 해결](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) 섹션을 참조하십시오. 그런 다음 [기본 클라우드 구성을 수정](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations)할 수 있습니다. 필요한 경우 옵트인 마법사가 만든 클라우드 구성과 프레임워크를 수정하십시오. 예를 들어 추가적인 컨텍스트 데이터를 Target에 보내도록 프레임워크를 수정합니다. Adobe Analytics을 Adobe Target에 대한 보고 소스로 사용하려면 A4T 구성을 가리키도록 클라우드 구성을 수정해야 합니다.
    1. [Adobe Target과 수동으로 통합](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 
 1. [활동 구성](/help/sites-authoring/activitylib.md): 활동을 Target 클라우드 구성과 연결합니다.
 
 >[!NOTE]
 >
->참조: [DTM을 사용하여 AEM과 Adobe Target 및 Adobe Analytics 통합](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>[DTM을 사용하여 AEM과 Adobe Target 및 Adobe Analytics 통합](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)도 참조하세요.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 >
 >자세한 내용은 [Adobe Target과 통합하기 위한 전제 조건](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node)을 참조하십시오.
 
-통합이 완료되면 Adobe Target에 방문자 데이터를 전송하는 [타겟팅된 콘텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 수 있습니다. 콘텐츠 타겟팅을 활성화하려면 페이지 구성 요소에 특정 코드가 필요합니다. (참조: [타깃팅된 컨텐츠를 위한 개발](/help/sites-developing/target.md).)
+통합이 완료되면 Adobe Target에 방문자 데이터를 전송하는 [타겟팅된 콘텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 수 있습니다. 콘텐츠 타겟팅을 활성화하려면 페이지 구성 요소에 특정 코드가 필요합니다. [타깃팅된 콘텐츠용 개발](/help/sites-developing/target.md)을 참조하세요.
 
 >[!NOTE]
 >

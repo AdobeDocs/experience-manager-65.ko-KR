@@ -32,7 +32,7 @@ ht-degree: 49%
 
 ## 세그먼테이션 사용 {#using-segmentation}
 
-세그먼트는에 정의되어 있습니다. [세그먼테이션 구성](/help/sites-administering/campaign-segmentation.md). 특정 타겟 대상자에게 표시되는 실제 콘텐츠를 제어하는 데 사용됩니다.
+세그먼트는 [세그먼테이션 구성](/help/sites-administering/campaign-segmentation.md)에 정의되어 있습니다. 특정 타겟 대상자에게 표시되는 실제 콘텐츠를 제어하는 데 사용됩니다.
 
 ## 세그먼테이션 용어 {#segmentation-terminology}
 
@@ -62,7 +62,7 @@ ht-degree: 49%
 * 성별
 * 위치
 
-**파생 트레이트**
+**파생된 특성**
 
 일부 인구 통계 트레이트는 등록 없이 결정하기 어렵지만, 행동 트레이트와 인구 통계 트레이트를 결합하여 도출해낼 수 있습니다.
 
@@ -80,4 +80,4 @@ ht-degree: 49%
 
 >[!NOTE]
 >
->다음을 참조하십시오 [세분화](/help/sites-administering/campaign-segmentation.md) Adobe Experience Manager의 세그먼트에 대해 자세히 알아보십시오.
+>Adobe Experience Manager의 세그먼트에 대한 자세한 내용은 [세그먼테이션](/help/sites-administering/campaign-segmentation.md)을 참조하십시오.

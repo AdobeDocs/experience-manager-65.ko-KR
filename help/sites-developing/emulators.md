@@ -44,7 +44,7 @@ AEM 에뮬레이터 프레임워크:
 * 해당 모양은 CSS를 통해 조절됩니다.
 * 플러그인을 지원합니다(예: 모바일 디바이스 회전 플러그인).
 * 은(는) 작성자에서만 활성화됩니다.
-* 기본 구성 요소는 다음 위치에 있습니다. `/libs/wcm/emulator/components/base`.
+* 기본 구성 요소는 `/libs/wcm/emulator/components/base`에 있습니다.
 
 ### 에뮬레이터가 콘텐츠를 변환하는 방법 {#how-the-emulator-transforms-the-content}
 
@@ -88,9 +88,9 @@ AEM 에뮬레이터 프레임워크:
 
 두 개의 div 태그가 추가되었습니다.
 
-* id가 있는 div `cq-emulator` 에뮬레이터를 전체로 유지하고
+* 에뮬레이터를 전체적으로 포함하는 ID가 `cq-emulator`인 div 및
 
-* id가 있는 div `cq-emulator-content` 페이지 콘텐츠가 있는 장치의 뷰포트/화면/콘텐츠 영역을 나타냅니다.
+* 페이지 콘텐츠가 있는 장치의 뷰포트/화면/콘텐츠 영역을 나타내는 id `cq-emulator-content`의 div입니다.
 
 새 CSS 클래스도 새 에뮬레이터 div에 할당됩니다. 이 div는 현재 에뮬레이터의 이름을 나타냅니다.
 
@@ -111,15 +111,15 @@ AEM 에뮬레이터 프레임워크:
 
   http://localhost:4502/bin/wcm/mobile/emulators.json
 
-페이지 구성 요소가 모바일 페이지 구성 요소를 사용하는 경우( `/libs/wcm/mobile/components/page`) 에뮬레이터 기능은 다음 메커니즘을 통해 페이지에 자동으로 통합됩니다.
+페이지 구성 요소가 모바일 페이지 구성 요소(`/libs/wcm/mobile/components/page`)를 사용하는 경우 에뮬레이터 기능은 다음 메커니즘을 통해 페이지에 자동으로 통합됩니다.
 
-* 모바일 페이지 구성 요소 `head.jsp` 에는 장치 그룹의 연결된 에뮬레이터 초기화 구성 요소(작성자 모드에서만) 및 장치 그룹의 렌더링 CSS가 포함되어 있습니다.
+* 모바일 페이지 구성 요소 `head.jsp`에는 장치 그룹의 연결된 에뮬레이터 초기화 구성 요소(작성자 모드에서만)와 장치 그룹의 렌더링 CSS가 포함되어 있습니다.
 
   `deviceGroup.drawHead(pageContext);`
 
-* 메서드 `DeviceGroup.drawHead(pageContext)` 에뮬레이터의 init 구성 요소를 포함합니다. `init.html.jsp` 에뮬레이터 구성 요소. 에뮬레이터 구성 요소에 자체 자산이 없는 경우 `init.html.jsp` 모바일 기본 에뮬레이터( `wcm/mobile/components/emulators/base)`, 모바일 기본 에뮬레이터의 init 스크립트가 호출됩니다( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* `DeviceGroup.drawHead(pageContext)` 메서드가 에뮬레이터의 init 구성 요소를 포함합니다. 즉, 에뮬레이터 구성 요소의 `init.html.jsp`을(를) 호출합니다. 에뮬레이터 구성 요소에 자체 `init.html.jsp`이(가) 없고 모바일 기본 에뮬레이터( `wcm/mobile/components/emulators/base)`)에 의존하는 경우 모바일 기본 에뮬레이터의 init 스크립트가 호출됩니다( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
-* 모바일 기본 에뮬레이터의 init 스크립트는 JavaScript를 통해 다음을 정의합니다.
+* 모바일 기본 에뮬레이터의 init 스크립트는 JavaScript을 통해 다음을 정의합니다.
 
    * 페이지에 대해 정의된 모든 에뮬레이터에 대한 구성(emulatorConfigs)
    * 다음을 통해 페이지에서 에뮬레이터의 기능을 통합하는 에뮬레이터 관리자:
@@ -134,19 +134,19 @@ AEM 에뮬레이터 프레임워크:
 
 사용자 지정 모바일 에뮬레이터를 만들려면:
 
-1. 아래 `/apps/myapp/components/emulators` 구성 요소 만들기 `myemulator` (노드 유형: `cq:Component`).
+1. `/apps/myapp/components/emulators` 아래에서 `myemulator` 구성 요소를 만듭니다(노드 형식: `cq:Component`).
 
-1. 설정 `sling:resourceSuperType` 다음으로 속성: `/libs/wcm/mobile/components/emulators/base`
+1. `sling:resourceSuperType` 속성을 `/libs/wcm/mobile/components/emulators/base`(으)로 설정
 
-1. 범주가 있는 CSS 클라이언트 라이브러리 정의 `cq.wcm.mobile.emulator` 에뮬레이터 모양: name = `css`, 노드 유형 = `cq:ClientLibrary`
+1. 에뮬레이터 모양: 이름 = `css`, 노드 유형 = `cq:ClientLibrary`에 대해 `cq.wcm.mobile.emulator` 범주가 있는 CSS 클라이언트 라이브러리를 정의하십시오.
 
-   예를 들어 노드를 참조할 수 있습니다 `/libs/wcm/mobile/components/emulators/iPhone/css`
+   예를 들어 `/libs/wcm/mobile/components/emulators/iPhone/css` 노드를 참조할 수 있습니다.
 
 1. 필요한 경우 JS 클라이언트 라이브러리를 정의하여 특정 플러그인을 정의합니다(예: name = js, node type = cq:ClientLibrary).
 
-   예를 들어 노드를 참조할 수 있습니다 `/libs/wcm/mobile/components/emulators/base/js`
+   예를 들어 `/libs/wcm/mobile/components/emulators/base/js` 노드를 참조할 수 있습니다.
 
-1. 에뮬레이터가 플러그인으로 정의된 특정 기능(예: 터치 스크롤)을 지원하는 경우 에뮬레이터 아래에 구성 노드를 만드십시오. name = `cq:emulatorConfig`, 노드 유형 = `nt:unstructured` 플러그인을 정의하는 속성을 추가합니다.
+1. 에뮬레이터가 플러그인으로 정의된 특정 기능(예: 터치 스크롤)을 지원하는 경우 에뮬레이터 아래에 구성 노드를 만드십시오. 이름 = `cq:emulatorConfig`, 노드 유형 = `nt:unstructured`.
 
    * 이름 = `canRotate`, 유형 = `Boolean`, 값 = `true`: 순환 기능을 포함합니다.
 

@@ -24,33 +24,33 @@ ht-degree: 0%
 
 ## 솔루션 {#solution}
 
-1. jar를 다음으로 다운로드 [java.mail-1.0.jar](/help/forms/using/java.mail-1.0.jar) 다운로드한 jar 파일의 압축을 풀고 매니페스트 파일을 가져옵니다.
+1. jar를 [java.mail-1.0.jar](/help/forms/using/java.mail-1.0.jar)(으)로 다운로드하고 다운로드한 jar 파일의 압축을 해제하여 매니페스트 파일을 가져옵니다.
 
-1. 다음의 매니페스트 파일 사용 `java.mail-1.0.jar` 사용자 지정 jar 파일(예: )을 만들기 위해 1단계에서 검색됨 `java.mail-1.5.jar`.
+1. 1단계에서 검색된 `java.mail-1.0.jar`의 매니페스트 파일을 사용하여 사용자 지정 jar 파일(`java.mail-1.5.jar`)을 만듭니다.
 
-1. 매니페스트 파일을 열고 다음의 모든 항목을 바꿉니다. `1.5.0` 포함 `1.5.6` 및 `Bundle-Version: 1.0` 포함 `Bundle-Version:1.5`
+1. 매니페스트 파일을 열고 `1.5.0`의 모든 항목을 `1.5.6`(으)로, `Bundle-Version: 1.0`의 모든 항목을 `Bundle-Version:1.5`(으)로 바꾸기
 
-1. 사용자 지정 jar 만들기(`java.mail-1.5.jar`)에서 다음 명령을 사용하여 파일을 생성합니다 `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` 폴더 이름:
+1. `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` 폴더에서 다음 명령을 사용하여 사용자 지정 jar(`java.mail-1.5.jar`) 파일을 다음과 같이 만듭니다.
    `jar -cfm java.mail-1.5.jar manifest.mf`
 
-   위의 명령에서, *manifest.mf* 는 매니페스트 파일의 이름이며, *java.mail-1.5.jar* 는 위 명령을 실행한 후 만들 파일의 이름입니다.
+   위의 명령에서 *manifest.mf*&#x200B;은(는) 매니페스트 파일의 이름이고 *java.mail-1.5.jar*&#x200B;은(는) 위 명령을 실행한 후 만들 파일의 이름입니다.
 
-1. 다운로드 [javax.mail-1.5.6.redhat-1.jar](https://mvnrepository.com/artifact/com.sun.mail/javax.mail/1.5.6.redhat-1).
+1. [javax.mail-1.5.6.redhat-1.jar](https://mvnrepository.com/artifact/com.sun.mail/javax.mail/1.5.6.redhat-1)을 다운로드합니다.
 
-1. 다음으로 이동 `http://<server name>:<port>/lc/system/console/bundles`및 이라는 이름의 번들 삭제 `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
+1. `http://<server name>:<port>/lc/system/console/bundles`(으)로 이동하여 이름이 `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`인 번들을 삭제합니다.
 
-1. 설치 `java.mail-1.5.jar` 3단계에서 가져온 것입니다. 이 단계에서는 JEE 배포의 Sling 속성을 다시 시작합니다. 에 설치된 번들 대기 `http://<server name>:<port>/lc/system/console/bundles` 상태를 다음으로 표시 **활성**.
+1. 3단계에서 가져온 `java.mail-1.5.jar` 설치. 이 단계에서는 JEE 배포의 Sling 속성을 다시 시작합니다. `http://<server name>:<port>/lc/system/console/bundles`에 설치된 번들이 **Active**(으)로 상태를 표시할 때까지 기다립니다.
 
-   >상태가 여전히 인 경우 **활성**, 다시 시작   **JBoss®** 다음에서 **서비스 콘솔**.
+   >상태가 여전히 **InActive**&#x200B;인 경우 다시 시작하십시오.   **서비스 콘솔**&#x200B;에서 **JBoss®**.
 
 
-1. 설치 `javax.mail-1.5.6.redhat-1.jar`5단계를 사용하여 파일을 다운로드했습니다.
+1. 5단계를 사용하여 다운로드한 `javax.mail-1.5.6.redhat-1.jar`파일을 설치합니다.
 
-1. 중지 **JBoss®** 다음에서 **서비스 콘솔** 및 다음 속성을 추가할 위치 **Sling.properties** 파일:
+1. **서비스 콘솔**&#x200B;에서 **JBoss®**&#x200B;을(를) 중지하고 **Sling.properties** 파일에 다음 속성을 추가하십시오.
    * `org.osgi.framework.system.packages.extra=javax.activation; version\=1.2.0`
    * `sling.bootdelegation.activation=javax.activation.*`
 
-1. 다시 시작 **JBoss®**.
+1. **JBoss®**&#x200B;을(를) 다시 시작합니다.
 
 >[!NOTE]
 >

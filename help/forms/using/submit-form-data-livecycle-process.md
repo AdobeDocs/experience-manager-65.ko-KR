@@ -24,11 +24,11 @@ ht-degree: 0%
 
 AEM Forms 서버가 JEE 서버의 AEM Forms에 데이터를 제출할 수 있도록 다음 단계를 수행하십시오.
 
-1. https://에서 AEM 웹 구성 콘솔로 이동합니다.[*호스트*]:[*포트*]/system/console/configMgr.
+1. https://[*host*]:[*port*]/system/console/configMgr의 AEM 웹 구성 콘솔로 이동합니다.
 
-1. 을(를) 찾아 클릭합니다 **Adobe LiveCycle 클라이언트 SDK 구성** 구성 요소.
+1. **Adobe LiveCycle 클라이언트 SDK 구성** 구성 요소를 찾아 클릭합니다.
 1. 를 클릭하여 JEE 서버의 AEM Forms에 대한 구성 서버 URL, 사용자 이름 및 암호를 편집합니다.
-1. 설정을 검토하고 다음을 클릭합니다. **저장**.
+1. 설정을 검토하고 **저장**&#x200B;을 클릭하세요.
 
 ![Adobe LiveCycle 클라이언트 SDK 구성](assets/clientsdkconfiguration.jpg)
 
@@ -36,15 +36,15 @@ AEM Forms 서버가 JEE 서버의 AEM Forms에 데이터를 제출할 수 있도
 
 AEM Forms을 구성한 후 제출된 양식의 데이터 XML 및 첨부 파일을 JEE의 AEM Forms 프로세스에 있는 필드에 매핑합니다. 다음 작업을 수행합니다.
 
-1. AEM 웹 구성 콘솔에서 을 클릭하여 **안내 LiveCycle 프로세스 보관처 및 호출기** 구성.
+1. AEM 웹 구성 콘솔에서 을 클릭하여 **안내 LiveCycle 프로세스 로케이터 및 호출기** 구성을 편집합니다.
 1. 다음 매개 변수를 지정합니다.
 
-   * **데이터 xml 매개 변수의 이름** (필수): 제출된 데이터를 처리해야 하는 AEM Forms on JEE 프로세스의 XML 속성 파일을 지정합니다. 기본값은 입니다. **dataxml**.
+   * **데이터 xml 매개 변수의 이름**(필수): 제출된 데이터를 처리해야 하는 JEE의 AEM Forms 프로세스에 대한 XML 속성 파일을 지정합니다. 기본값은 **dataxml**&#x200B;입니다.
 
-   * **첨부 파일 매개 변수 이름** (선택 사항): JEE의 AEM Forms 프로세스에서 처리해야 하는 문서 객체 목록을 지정합니다. 기본값은 입니다. **첨부 파일 목록**.
+   * **첨부 파일 매개 변수의 이름**(선택 사항): JEE의 AEM Forms 프로세스에서 처리해야 하는 문서 개체의 목록을 지정합니다. 기본값은 **fileAttachmentsList**&#x200B;입니다.
 
-1. 설정을 검토하고 다음을 클릭합니다. **저장**.
+1. 설정을 검토하고 **저장**&#x200B;을 클릭하세요.
 
-![안내 LiveCycle 프로세스 보관처 및 호출기](assets/test3.jpg)
+![LiveCycle 프로세스 로케이터 및 호출기 안내](assets/test3.jpg)
 
 구성된 경우 Forms Workflow에 제출 액션은 지정된 데이터 xml 매개 변수를 포함하는 JEE의 AEM Forms 서버 프로세스를 나열합니다.

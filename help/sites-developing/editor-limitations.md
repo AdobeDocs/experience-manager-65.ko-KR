@@ -26,13 +26,13 @@ ht-degree: 6%
 
 ### 링크가 활성화되지 않음 {#links-not-active}
 
-날짜 [페이지 편집](/help/sites-authoring/editing-content.md), 링크가 활성화되지 않았습니다.
+[페이지를 편집](/help/sites-authoring/editing-content.md)할 때 링크가 활성화되지 않습니다.
 
-* [다음으로 전환 **미리 보기** 모드](/help/sites-authoring/editing-content.md#preview-mode) 을 클릭하여 콘텐츠의 링크를 사용하여 탐색할 수 있습니다.
+* 콘텐츠의 링크를 사용하여 탐색하려면 [**미리 보기** 모드로 전환](/help/sites-authoring/editing-content.md#preview-mode)하세요.
 
 ### 구조 페이지 {#structure-pages}
 
-페이지 이름을 지정할 수 없음 `structure`. 이름이 지정된 페이지 `structure` 페이지 편집기에서 편집할 수 없습니다.
+페이지 이름을 `structure`로 지정할 수 없습니다. 이름이 `structure`인 페이지는 페이지 편집기에서 편집할 수 없습니다.
 
 ## CSS 제한 사항 {#css-limitations}
 
@@ -46,13 +46,13 @@ ht-degree: 6%
 
 ### vh 단위 {#vh-units}
 
-`vh` iframe 높이는 AEM(Adobe Experience Manager)에서 자동으로 조정해야 하므로 단위가 지원되지 않습니다.
+iframe 높이는 AEM(Adobe Experience Manager)에서 자동으로 조정해야 하므로 `vh` 단위가 지원되지 않습니다.
 
 ### 고정 배경 이미지 {#fixed-background-images}
 
 고정 배경 이미지는 iframe 내에 포함되어 있으므로 스크롤할 때 고정으로 표시되지 않을 수 있습니다.
 
-* 선택 **페이지를 게시됨으로 보기** 헤더 막대에서 작업이 페이지를 제대로 표시합니다.
+* 헤더 표시줄 작업에서 **게시됨으로 페이지 보기**&#x200B;를 선택하면 페이지가 제대로 표시됩니다.
 
 ### 100% 높이 {#height}
 

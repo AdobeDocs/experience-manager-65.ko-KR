@@ -29,7 +29,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->직원 채용 사용 사례는 We.Finance 및 We.Gov 참조 사이트 모두에서 사용할 수 있습니다. 연습에 사용된 예제, 이미지 및 설명은 We.Finance 참조 사이트를 사용합니다. 그러나 이러한 사용 사례를 실행하고 We.Gov를 사용하여 아티팩트를 검토할 수 있습니다. 이렇게 하려면 **we-finance** 포함 **we-gov** (이)가 추가되었습니다.
+>직원 채용 사용 사례는 We.Finance 및 We.Gov 참조 사이트 모두에서 사용할 수 있습니다. 연습에 사용된 예제, 이미지 및 설명은 We.Finance 참조 사이트를 사용합니다. 그러나 이러한 사용 사례를 실행하고 We.Gov를 사용하여 아티팩트를 검토할 수 있습니다. 이렇게 하려면 언급된 URL에서 **we-finance**&#x200B;을(를) **we-gov**(으)로 바꾸십시오.
 
 ### 관련 워크플로우 모델 {#workflow-models-involved}
 
@@ -48,11 +48,11 @@ ht-degree: 0%
 
 ![we-finance-employee-recruiting-workflow](assets/we-finance-employee-recruiting-workflow.png)
 
-#### 사원 채용 면접 후 워크플로우에 자금을 조달합니다 {#we-finance-employee-recruiting-post-interview-workflow}
+#### We Finance 직원 채용 Post 면접 워크플로우 {#we-finance-employee-recruiting-post-interview-workflow}
 
-다음은 이 문서에서 따르는 We Finance 사원 사후 면접 채용 워크플로우의 모델입니다.
+다음은 이 문서에서 따르는 We Finance 직원 Post 면접 채용 워크플로우의 모델입니다.
 
-![we-finance-직원-채용-사후-면접-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
+![we-finance-employee-recruiting-post-interview-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
 ### 가상 사용자 {#personas}
 
@@ -71,7 +71,7 @@ Sarah Rose는 그 조직에서 일자리 기회를 찾고 있다. 그녀는 그�
 
 We.Finance 홈 페이지
 
-![직업 페이지](assets/career-page.png)
+![경력 페이지](assets/career-page.png)
 
 We.Finance 경력 페이지
 
@@ -81,11 +81,11 @@ Sarah가 구인 공고를 접수하는 것을 클릭합니다. 작업 지원 양
 
 ### 작동 방식 {#how-it-works}
 
-We.Finance 홈 페이지와 커리어 페이지는 AEM Sites 페이지입니다. 경력 페이지에는 적응형 양식이 포함되어 있습니다. 이 페이지는 반복 가능한 패널을 사용하여 서비스를 사용하여 구직을 가져오고 페이지에 나열합니다. 다음 위치에서 적응형 양식을 검토할 수 있습니다. `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
+We.Finance 홈 페이지와 커리어 페이지는 AEM Sites 페이지입니다. 경력 페이지에는 적응형 양식이 포함되어 있습니다. 이 페이지는 반복 가능한 패널을 사용하여 서비스를 사용하여 구직을 가져오고 페이지에 나열합니다. `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`에서 적응형 양식을 검토할 수 있습니다.
 
 ### 직접 확인 {#see-it-yourself}
 
-다음으로 이동 `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` 및 클릭 **[!UICONTROL 경력]**. 클릭 **[!UICONTROL 검색]** 작업 목록을 채운 다음 **[!UICONTROL 적용]** 일 때문에요 양식에 세부사항을 입력하고 신청서를 제출하세요.
+`https://[publishHost]:[publishPort]/content/we-finance/global/en.html`(으)로 이동한 다음 **[!UICONTROL 경력]**&#x200B;을 클릭합니다. 작업 목록을 채우도록 **[!UICONTROL 검색]**&#x200B;을 클릭한 다음 작업에 대해 **[!UICONTROL 적용]**&#x200B;을 클릭합니다. 양식에 세부사항을 입력하고 신청서를 제출하세요.
 
 이 연습을 통한 모든 통신이 지정된 이메일 ID로 전송될 때 애플리케이션에 올바른 이메일 ID를 지정해야 합니다.
 
@@ -97,7 +97,7 @@ We.Finance 홈 페이지와 커리어 페이지는 AEM Sites 페이지입니다.
 
 John의 AEM 받은 편지함
 
-![후보 후보 후보 후보 목록](assets/candidate-shortlist.png)
+![후보 후보 후보 목록](assets/candidate-shortlist.png)
 
 존 제이콥스는 새라 로즈의 고용 매니저 심사 프로필을 후보 명단에 올렸다
 
@@ -107,17 +107,17 @@ Job 지원 화면의 제출 작업은 John Jacob의 받은 편지함에서 지�
 
 ### 직접 확인 {#see-it-yourself-1}
 
-다음으로 이동 `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`및 를 사용하여 John Jacobs에 대한 사용자 이름/암호로 jjacobs/password를 사용하여 로그인합니다. 후보자 프로파일 검토 태스크를 열고 지원자를 목록에 추가합니다.
+`https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`(으)로 이동한 다음 John Jacobs의 사용자 이름/암호로 jjacobs/암호를 사용하여 로그인합니다. 후보자 프로파일 검토 태스크를 열고 지원자를 목록에 추가합니다.
 
 ## 글로리아는 신청서를 검토하고 면접을 위한 지원자를 승인한다 {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
 고용 관리자인 글로리아는 AEM 받은 편지함에서 과제로 후보 명단에 올라 있다. 그녀는 그것을 검토하고 사라 로즈 후보가 인터뷰하는 것을 승인한다.
 
-![글로리안 박스](assets/gloriainbox.png)
+![gloriainbox](assets/gloriainbox.png)
 
 Gloria&#39;s AEM 받은 편지함
 
-![글로리아스케들인터뷰](assets/gloriaschedulesinterview.png)
+![gloriasschedulesextview](assets/gloriaschedulesinterview.png)
 
 글로리아는 사라 로즈가 인터뷰하는 것을 승인한다
 
@@ -127,9 +127,9 @@ Gloria가 면접 후보를 승인하면 워크플로우는 We.Finance의 채용 
 
 ### 직접 확인 {#see-it-yourself-2}
 
-다음으로 이동 `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` 및 를 사용하여 John Jacobs에 대한 사용자 이름/암호로 jjacobs/password를 사용하여 로그인합니다. 후보자 프로파일 검토 태스크를 열고 지원자를 목록에 추가합니다.
+`https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`(으)로 이동한 다음 John Jacobs의 사용자 이름/암호로 jjacobs/암호를 사용하여 로그인합니다. 후보자 프로파일 검토 태스크를 열고 지원자를 목록에 추가합니다.
 
-다음으로 이동 `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` 그리고 Gloria Rios의 사용자 이름/암호로 grios/password를 사용하여 로그인합니다. 후보자 프로파일 검토 태스크를 열고 면접 스케줄을 누릅니다.
+`https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`(으)로 이동한 다음 Gloria Rios의 사용자 이름/암호로 grios/password를 사용하여 로그인합니다. 후보자 프로파일 검토 태스크를 열고 면접 스케줄을 누릅니다.
 
 ## John Doe는 인터뷰를 예약합니다. {#john-doe-schedules-an-interview}
 
@@ -155,11 +155,11 @@ Sarah Rose가 인터뷰 일정을 받습니다
 
 사라 로즈가 면접을 살펴보고 지운 후, 고용 관리자인 글로리아 리오스가 받은 편지함에서 후보자 선택 작업을 열고 선택을 클릭합니다. Gloria Rios의 결정은 추가 처리를 위해 HR 담당자인 John Doe에게 전달됩니다.
 
-![글로리아리오싱박스 오퍼](assets/gloriariosinboxoffer.png)
+![gloriariosinboxoffer](assets/gloriariosinboxoffer.png)
 
 Gloria&#39;s AEM 받은 편지함
 
-![글로리아리오스셀렉타민](assets/gloriariosselectcandidate.png)
+![gloriariosselectcandidate](assets/gloriariosselectcandidate.png)
 
 글로리아 리오스는 인터뷰 후에 사라 로즈를 선택한다
 
@@ -193,11 +193,11 @@ Sarah가 John Doe의 요청에 따라 추가 정보를 입력하고 Submit을 �
 
 John Doe가 후보 검토 요청을 선택하여 엽니다. John Doe는 Sarah가 모든 정보를 필요에 따라 채웠다는 것을 알게 됩니다. 애플리케이션을 검토한 후 John Doe가 Approve를 클릭합니다. John Doe의 승인 시 Sarah Rose에 대한 백그라운드 검사 수행 요청이 John Jacobs에게 전달됩니다.
 
-![johndoeadditionformationinbox](assets/johndoeadditionainformationinbox.png)
+![johndoeadditionformatinbox](assets/johndoeadditionainformationinbox.png)
 
 John Doe의 AEM 받은 편지함
 
-![johndoeadditioninformation-review-copy](assets/johndoeadditionalinformationreview-copy.png)
+![johndoeadditioninformationreview-copy](assets/johndoeadditionalinformationreview-copy.png)
 
 John Doe는 Sarah가 제공한 추가 정보를 검토하고 승인합니다
 

@@ -21,45 +21,45 @@ ht-degree: 2%
 
 ## 소개 {#introduction}
 
-다음 `Leaderboard` 구성 요소를 사용하면 획득한 점수(기본 점수) 또는 전문 지식(고급 점수)에 따라 구성원의 등급을 매겨 커뮤니티 내에서 구성원이 어떻게 상호 작용하는지 파악할 수 있습니다.
+`Leaderboard` 구성 요소를 사용하면 획득한 점수(기본 점수) 또는 전문 지식(고급 점수)에 따라 구성원의 순위를 매겨 커뮤니티 내에서 구성원이 어떻게 상호 작용하는지 파악할 수 있습니다.
 
-페이지에 리더보드 구성 요소를 포함하기 전에 다음을 구성해야 합니다. [커뮤니티 점수 및 배지](/help/communities/implementing-scoring.md).
+페이지에 순위표 구성 요소를 포함하기 전에 [커뮤니티 점수 및 배지](/help/communities/implementing-scoring.md)를 구성해야 합니다.
 
 설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
-* 추가 `Leaderboard` 구성 요소를 a로 [커뮤니티 사이트](/help/communities/overview.md#community-sites).
-* 에 대한 구성 설정 `Leaderboard` 구성 요소.
+* [커뮤니티 사이트](/help/communities/overview.md#community-sites)에 `Leaderboard` 구성 요소를 추가하는 중입니다.
+* `Leaderboard` 구성 요소에 대한 구성 설정입니다.
 
 ### 페이지에 순위표 추가 {#adding-a-leaderboard-to-a-page}
 
-을(를) 추가하려면 `Leaderboard` 구성 요소를 페이지에 추가하려면 작성자 모드에서 구성 요소를 찾습니다.
+작성자 모드에서 페이지에 `Leaderboard` 구성 요소를 추가하려면 구성 요소를 찾습니다
 
 * `Communities / Leaderboard`
 
 그리고 페이지에 있는 제자리에 드래그합니다.
 
-필요한 정보는 다음을 참조하십시오. [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md).
+필요한 정보는 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 참조하세요.
 
 커뮤니티 사이트의 페이지에 처음 배치하면 구성 요소가 다음과 같이 표시됩니다.
 
-![리더보드](assets/leaderboard.png)
+![순위표](assets/leaderboard.png)
 
 ### 리더보드 구성 {#configuring-leaderboard}
 
-배치된 을(를) 선택합니다 `Leaderboard` 에 액세스하고 선택할 수 있는 구성 요소 `Configure` 편집 대화 상자를 여는 아이콘.
+배치된 `Leaderboard` 구성 요소를 선택하여 편집 대화 상자를 여는 `Configure` 아이콘에 액세스하고 선택합니다.
 
 ![새로 구성](assets/configure-new.png)
 
-![순위표 구성](assets/configure-leaderboard.png)
+![configure-leaderboard](assets/configure-leaderboard.png)
 
 #### 설정 탭 {#settings-tab}
 
-아래 **[!UICONTROL 설정]** 탭에서는 멤버와 관련된 정보가 표시될 내용을 지정합니다.
+**[!UICONTROL 설정]** 탭에서 표시되는 구성원 관련 정보를 지정합니다.
 
 * **표시 이름**
 
   배지 및 점수를 표시하기 위해 선택한 규칙을 반영하며 보드에 대해 표시할 수사적 이름입니다.
-기본값은 입니다 `Leaderboard` 아무 것도 입력하지 않은 경우
+아무 것도 입력하지 않은 경우 기본값은 `Leaderboard`입니다.
 
 * **배지**
 
@@ -78,7 +78,7 @@ ht-degree: 2%
 
 #### 규칙 탭 {#rules-tab}
 
-아래 **규칙** 탭, 커뮤니티 사이트, 점수 및 배지 규칙
+**규칙** 탭에서 커뮤니티 사이트와 점수 및 배지 규칙
 
 * **규칙 위치**
 
@@ -118,7 +118,7 @@ ht-degree: 2%
    * 배지 규칙 = `/libs/settings/community/badging/rules//reference-badging`
    * 표시 제한 = `10`
 
-![참가자-리더보드](assets/participants-leaderboard.png)
+![참가자-순위표](assets/participants-leaderboard.png)
 
 ### 예: Experts 순위표 {#example-experts-leaderboard}
 
@@ -141,10 +141,10 @@ ht-degree: 2%
    * 배지 규칙 = `/libs/settings/community/badging/rules/adv-forums-badging`
    * 표시 제한 = `10`
 
-![전문가 리더보드](assets/experts-leaderboard.png)
+![experts-leaderboard](assets/experts-leaderboard.png)
 
 ### 추가 정보 {#additional-information}
 
-자세한 내용은 [리더보드 기본 사항](/help/communities/leaderboard.md) 개발자용 페이지입니다.
+자세한 내용은 개발자를 위한 [순위표 기본 사항](/help/communities/leaderboard.md) 페이지에서 확인할 수 있습니다.
 
-규칙 만들기에 대한 지침은 [커뮤니티 점수 및 배지](/help/communities/implementing-scoring.md) 관리자용 페이지입니다.
+규칙 만들기에 대한 지침은 관리자를 위한 [커뮤니티 점수 및 배지](/help/communities/implementing-scoring.md) 페이지에서 제공됩니다.

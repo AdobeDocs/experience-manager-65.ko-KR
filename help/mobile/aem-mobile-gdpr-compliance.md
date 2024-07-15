@@ -27,7 +27,7 @@ AEM Mobile은 고객이 GDPR 준수 의무를 이행하도록 지원할 준비�
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe의 디지털 게시 제품(AEM Mobile보다 선행함)은 Adobe의 GDPR 준비 이니셔티브를 지원합니다. 다음을 참조하십시오 [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). 다음은 GDPR 요청을 시작하기 위해 Adobe을 사용하는 방법을 포함하여 Digital Publishing Suite 제품에서 GDPR 관련 기능에 대한 지원에 대한 세부 사항을 제공합니다.
+Adobe의 디지털 게시 제품(AEM Mobile보다 선행함)은 Adobe의 GDPR 준비 이니셔티브를 지원합니다. [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html)을(를) 참조하세요. 다음은 GDPR 요청을 시작하기 위해 Adobe을 사용하는 방법을 포함하여 Digital Publishing Suite 제품에서 GDPR 관련 기능에 대한 지원에 대한 세부 사항을 제공합니다.
 
 AEM Mobile을 이전 Digital Publishing Suite 제품과 혼동하지 않도록 다음 위치에서 Digital Publishing Suite 제품에 로그인할 수 있습니다.
 
@@ -45,33 +45,33 @@ Digital Publishing Suite에 대한 GDPR 요청을 시작할 수 있도록 Adobe 
 
 다음 중 하나 이상을 입력하십시오.
 
-* 최종 사용자의 고객이 제공한 OAuth ID(고객의 직접 권한 부여 시스템에서 사용되는 ID): *dpsc-directEntitlementId*
+* 최종 사용자의 고객이 제공한 OAuth ID(고객의 직접 권한 시스템에서 사용되는 ID): *dpsc-directEntitlementId*
 * Windows 앱 사용자의 경우 최종 사용자의 App Store ID: *dpsc-windowsAppStoreId*
 * 최종 사용자가 DPS 앱과 상호 작용하는 데 사용한 이메일 주소: *이메일*
 
 ### 자주 묻는 질문(FAQ) {#frequently-asked-questions-faq}
 
-**DELETE 요청을 시작할 때 Adobe이 내 App Store 구매를 삭제하는 것입니까?**
+**DELETE 요청을 시작할 때 Adobe이 내 App Store 구매를 삭제하고 있습니까?**
 
 Adobe은 보유한 앱스토어 구매 정보(구독 등)를 삭제하지만, 앱스토어에서 구매는 여전히 기록 중입니다. 앱(최종 사용자)이 앱스토어에 로그인된 경우 해당 영수증이 다시 선택되어 Adobe으로 전송됩니다. 나중에 이러한 항목은 새 구매로 간주되며 앱에서 다시 액세스하고 복원됩니다.
 
-**Adobe이 DELETE 요청을 시작할 때 고객이 제공한 권한을 삭제하는 것입니까?**
+**DELETE 요청을 시작할 때 Adobe이 고객이 제공한 권한을 삭제하고 있습니까?**
 
 Adobe은 고객의 추가 직접 권한 부여 관련 정보를 삭제합니다. 앱(최종 사용자)이 고객이 사용한 OAuth 메커니즘에 로그인하는 경우 정보를 Adobe으로 보내고 서비스는 추가 권한을 다시 선택합니다.
 
-**최종 사용자에게 예상되는 기능은 무엇입니까?**
+**최종 사용자에게 필요한 사항은 무엇입니까?**
 
 앱에 권한을 할당하는 키는 뷰어 소프트웨어의 일부로 장치에 있으므로 최종 사용자는 앱을 제거해야 합니다. 최종 사용자는 앱을 다시 설치할 경우 기존 구매(앱스토어 사용자와 연결됨) 및 직접 자격 부여 수당(고객의 OAuth 사용자와 연결됨)이 여전히 복원된다는 사실을 깨달아야 합니다.
 
-**디바이스의 사용자 간에 앱을 공유할 때는 어떻게 됩니까?**
+**장치를 사용하는 사람들 간에 앱을 공유할 때 어떻게 됩니까?**
 
 Adobe은 특정 사용자에게 직접 연결되는 최소한의 정보를 가지고 있습니다. 앱의 데이터에 저장되어 있으며 앱이 시작할 때마다 전달되는 임의로 생성된 UUID를 사용하여 데이터를 연결합니다. 즉, 동일한 장치에서 앱을 공유하는 최종 사용자는 동일한 UUID를 사용하며 모든 데이터는 GDPR 요청을 수행하는 사람이 소유한 것으로 간주됩니다. 액세스 및 삭제 요청 모두에 대해 DPSC는 앱을 공유하는 사람을 한 사람으로 간주합니다.
 
-**Analytics에서 추적하는 개인 데이터는 무엇입니까?**
+**Analytics에서 추적되는 개인 데이터는 무엇입니까?**
 
 없음. 추적 중인 데이터가 있지만 앱 수준(개인적이지 않음)에 있습니다. 여기에는 시작, 충돌, 닫기, 활동, 구매 또는 폴리오 오버레이와 같은 이벤트가 포함됩니다. 지리적 위치, 이름, 장치 ID 또는 IP 주소는 추적되지 않습니다.
 
-**최종 사용자가 정보를 제공했지만 찾을 수 없습니다. 왜 안되는데요?**
+**최종 사용자가 정보를 제공했지만 찾을 수 없습니다. 왜 안 되나요?**
 
 Digital Publishing Suite 제품이 진화하면서 서비스 구현이 변경되고 더 많은 데이터가 난독화되었다. 사용자가 제공한 데이터를 사용하여 데이터를 찾을 수 없는 경우 사용자의 데이터를 해당 사용자에게 다시 추적할 수 없음을 의미합니다.
 

@@ -1,6 +1,6 @@
 ---
 title: AEM Forms 작업 영역에서 사용되는 API
-description: 공용 Java&trade 및 JavaScript API와 AEM Forms 작업 영역 LiveCycle 방법으로, 사용자 정의 및 자동화에 노출됩니다.
+description: 공용 Java&trade; JavaScript API 및 AEM Forms 작업 영역 LiveCycle 방법으로, 사용자 정의 및 자동화에 노출됩니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -235,7 +235,7 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>getAllQueues<br /> </td>
    <td>ProcessManagementQueueService<br /> </td>
    <td>getAllQueues<br /> </td>
-   <td>로그인한 사용자가 액세스할 수 있는 모든 대기열(소유, 공유 및 그룹 대기열)을 가져옵니다.<br /> </td>
+   <td>로그인한 사용자가 액세스할 수 있는 모든 큐(소유, 공유 및 그룹 큐)를 가져옵니다.<br /> </td>
   </tr>
   <tr>
    <td>getOutOfOfficeSettings</td>
@@ -349,25 +349,25 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>getProperty</td>
    <td>WorkspacePropertyService</td>
    <td>getProperty</td>
-   <td>사용자의 작업 영역 속성을 가져옵니다.</td>
+   <td>사용자의 Workspace 속성을 가져옵니다.</td>
   </tr>
   <tr>
    <td>removeProperty</td>
    <td>WorkspacePropertyService</td>
    <td>삭제</td>
-   <td>사용자의 작업 영역 속성을 제거합니다.</td>
+   <td>사용자의 Workspace 속성을 제거합니다.</td>
   </tr>
   <tr>
    <td>getProperties</td>
    <td>WorkspacePropertyService</td>
    <td>getPropertiesAsMap</td>
-   <td>사용자의 모든 작업 영역 속성을 반환합니다.</td>
+   <td>사용자에 대한 모든 Workspace 속성을 반환합니다.</td>
   </tr>
   <tr>
    <td>setProperty</td>
    <td>WorkspacePropertyService</td>
    <td>setProperty</td>
-   <td>사용자의 작업 영역 속성을 설정합니다.</td>
+   <td>사용자의 Workspace 속성을 설정합니다.</td>
   </tr>
   <tr>
    <td>getCurrentUserImageUrl</td>
@@ -388,7 +388,7 @@ AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
    <td>서버에 작업에 대한 메모를 업로드합니다.</td>
   </tr>
   <tr>
-   <td>uploadRMAToServer(html 템플릿에서도 직접 호출됩니다.)<br /> </td>
+   <td>uploadRMAToServer(html 템플릿에서도 직접 호출됨)<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
    <td>서버에 작업에 대한 첨부 파일을 업로드합니다.</td>

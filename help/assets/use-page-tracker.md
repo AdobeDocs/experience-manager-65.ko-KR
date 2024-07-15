@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 웹 페이지에 페이지 추적기 및 포함 코드 사용 {#using-page-tracker-and-embed-code-in-web-pages}
 
-페이지 추적기는 Adobe Analytics에서 사용 데이터를 캡처할 수 있도록 서드파티 웹 사이트의 코드에 포함하는 JavaScript 코드의 일부입니다 [!DNL Adobe Experience Manager Assets] 다음 웹 사이트에서 확인하십시오.
+Page Tracker는 Adobe Analytics에서 이러한 웹 사이트의 [!DNL Adobe Experience Manager Assets] 관련 사용 데이터를 캡처할 수 있도록 타사 웹 사이트의 코드에 포함하는 JavaScript 코드 조각입니다.
 
 에셋과 관련된 클릭 수와 같은 이벤트를 캡처하려면 타사 웹 사이트의 코드에도 포함 코드를 포함합니다.
 

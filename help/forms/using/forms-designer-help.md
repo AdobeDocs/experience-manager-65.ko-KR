@@ -19,7 +19,7 @@ ht-degree: 2%
 
 [Designer 사용](https://www.adobe.com/go/learn_aemforms_designer_65_kr)
 [Designer 빠른 시작 Tutorials](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-[디자이너 샘플](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
+[Designer 샘플](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
 [Designer 스크립팅 기본 사항](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-[디자이너 스크립팅 참조](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-[디자이너 FormCalc 참조](https://www.adobe.com/go/learn_aemforms_formCalc_65)
+[Designer 스크립팅 참조](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+[Designer FormCalc 참조](https://www.adobe.com/go/learn_aemforms_formCalc_65)

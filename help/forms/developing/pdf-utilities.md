@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # PDF 유틸리티 작업 {#working-with-pdf-utilities}
 
-**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
+**이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 **PDF 유틸리티 서비스 정보**
 
@@ -27,13 +27,13 @@ PDF 유틸리티 서비스는 PDF 및 XDP 파일 형식 간에 변환하고 PDF 
 PDF 유틸리티 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
 * PDF 문서를 XDP 문서로 변환합니다.
-* XDP 문서를 PDF 문서로 변환합니다. (참조: [XDP 문서를 PDF 문서로 변환](pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
-* PDF 문서 속성을 검색합니다. (참조: [PDF 문서 속성 검색](pdf-utilities.md#retrieving-pdf-document-properties).)
-* 빠른 웹 보기를 위해 PDF 문서를 저장하고 최적화합니다. (참조: [PDF 문서 저장 모드 설정](pdf-utilities.md#setting-pdf-document-save-modes).)
+* XDP 문서를 PDF 문서로 변환합니다. ([XDP 문서를 PDF 문서로 변환](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)을 참조하십시오.)
+* PDF 문서 속성을 검색합니다. ([PDF 문서 속성 검색](pdf-utilities.md#retrieving-pdf-document-properties)을 참조하십시오.)
+* 빠른 웹 보기를 위해 PDF 문서를 저장하고 최적화합니다. ([PDF 문서 저장 모드 설정](pdf-utilities.md#setting-pdf-document-save-modes)을 참조하십시오.)
 
 >[!NOTE]
 >
->PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ## PDF 문서를 XDP 문서로 변환 {#converting-pdf-documents-into-xdp-documents}
 
@@ -41,7 +41,7 @@ PDF 유틸리티 Java 및 웹 서비스 API를 사용하여 PDF 문서를 프로
 
 >[!NOTE]
 >
->PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary-of-steps}
 
@@ -55,11 +55,11 @@ PDF 문서를 XDP 문서로 변환하려면 다음 단계를 수행하십시오.
 
 개발 프로젝트에 필요한 파일을 포함하십시오. Java를 사용하여 클라이언트 응용 프로그램을 만드는 경우 필요한 JAR 파일을 포함합니다. 웹 서비스를 사용하는 경우 프록시 파일을 포함해야 합니다.
 
-**PDFutilityService 클라이언트 만들기**
+**PDFUutilityService 클라이언트 만들기**
 
-PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 다음을 만들 수 있습니다. `PDFUtilityServiceClient` 개체. 웹 서비스 API를 사용하면 다음을 사용하여 이 작업을 수행할 수 있습니다 `PDFUtilityServiceService` 개체.
+PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `PDFUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
 
-**XDP로 PDF 변환 작업 호출**
+**XDP 변환 작업에 대한 PDF 호출**
 
 서비스 클라이언트를 만든 후 XDP에 대한 PDF 변환 작업을 호출할 수 있습니다.
 
@@ -83,11 +83,11 @@ PDF 유틸리티 API(Java)를 사용하여 PDF 문서를 XDP 문서로 변환:
 
 1. PDFutilityService 클라이언트 만들기
 
-   만들기 `PDFUtilityServiceClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `PDFUtilityServiceClient` 개체를 만듭니다.
 
 1. XDP로 PDF 변환 작업 호출
 
-   변환을 수행하려면 `PDFUtilityServiceClient` 개체 `convertPDFtoXDP` 방법 및 전달 `com.adobe.idp.Document` PDF 파일을 나타내는 개체입니다. 이 메서드는 `com.adobe.idp.Document` 새로 만든 XDP 파일을 나타내는 개체입니다.
+   변환을 수행하려면 `PDFUtilityServiceClient` 개체의 `convertPDFtoXDP` 메서드를 호출하고 PDF 파일을 나타내는 `com.adobe.idp.Document` 개체를 전달하십시오. 메서드는 새로 만든 XDP 파일을 나타내는 `com.adobe.idp.Document` 개체를 반환합니다.
 
 **추가 참조**
 
@@ -108,11 +108,11 @@ PDF 유틸리티 API(웹 서비스)를 사용하여 PDF 문서를 XDP 문서로 
 
 1. PDFutilityService 클라이언트 만들기
 
-   만들기 `PDFUtilityServiceService` 프록시 클래스 생성자를 사용하여 개체를 작성합니다.
+   프록시 클래스 생성자를 사용하여 `PDFUtilityServiceService` 개체를 만듭니다.
 
 1. XDP로 PDF 변환 작업 호출
 
-   호출 `PDFUtilityServiceService` 개체 `convertPDFtoXDP` 방법 및 전달 `BLOB` PDF 파일을 나타내는 개체입니다. 이 메서드는 `BLOB` 새로 만든 XDP 파일을 나타내는 개체입니다.
+   `PDFUtilityServiceService` 개체의 `convertPDFtoXDP` 메서드를 호출하고 PDF 파일을 나타내는 `BLOB` 개체를 전달합니다. 메서드는 새로 만든 XDP 파일을 나타내는 `BLOB` 개체를 반환합니다.
 
 **추가 참조**
 
@@ -128,7 +128,7 @@ PDF 유틸리티 Java 및 웹 서비스 API를 사용하여 XDP 문서를 프로
 
 >[!NOTE]
 >
->PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-1}
 
@@ -142,11 +142,11 @@ XDP 문서를 PDF 문서로 변환하려면 다음 단계를 수행하십시오.
 
 개발 프로젝트에 필요한 파일을 포함하십시오. Java를 사용하여 클라이언트 응용 프로그램을 만드는 경우 필요한 JAR 파일을 포함합니다. 웹 서비스를 사용하는 경우 프록시 파일을 포함해야 합니다.
 
-**PDFutilityService 클라이언트 만들기**
+**PDFUutilityService 클라이언트 만들기**
 
-PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 다음을 만들 수 있습니다. `PDFUtilityServiceClient` 개체. 웹 서비스 API를 사용하면 다음을 사용하여 이 작업을 수행할 수 있습니다 `PDFUtilityServiceService` 개체.
+PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `PDFUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
 
-**XDP에서 PDF으로 변환 작업 호출**
+**XDP를 PDF 변환 작업으로 호출**
 
 서비스 클라이언트를 만든 후 XDP를 호출하여 PDF 변환 작업을 수행할 수 있습니다.
 
@@ -170,11 +170,11 @@ PDF 유틸리티 API(Java)를 사용하여 XDP 문서를 PDF 문서로 변환합
 
 1. PDFutilityService 클라이언트 만들기
 
-   만들기 `PDFUtilityServiceClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `PDFUtilityServiceClient` 개체를 만듭니다.
 
 1. XDP에서 PDF으로 변환 작업 호출
 
-   변환을 수행하려면 `PDFUtilityServiceClient` 개체 `convertXDPtoPDF` 방법 및 전달 `com.adobe.idp.Document` xdp 파일을 나타내는 개체입니다. 이 메서드는 `com.adobe.idp.Document` 새로 만든 PDF 파일을 나타내는 개체입니다.
+   변환을 수행하려면 `PDFUtilityServiceClient` 개체의 `convertXDPtoPDF` 메서드를 호출하고 XDP 파일을 나타내는 `com.adobe.idp.Document` 개체를 전달하십시오. 메서드는 새로 만든 PDF 파일을 나타내는 `com.adobe.idp.Document` 개체를 반환합니다.
 
 **추가 참조**
 
@@ -195,11 +195,11 @@ PDF 유틸리티 API(웹 서비스 API)를 사용하여 XDP 문서를 PDF 문서
 
 1. PDFutilityService 클라이언트 만들기
 
-   만들기 `PDFUtilityServiceService` 프록시 클래스 생성자를 사용하여 개체를 작성합니다.
+   프록시 클래스 생성자를 사용하여 `PDFUtilityServiceService` 개체를 만듭니다.
 
 1. XDP에서 PDF으로 변환 작업 호출
 
-   변환을 수행하려면 `PDFUtilityServiceService` 개체 `convertXDPtoPDF` 방법 및 전달 `BLOB` xdp 파일을 나타내는 개체입니다. 이 메서드는 `BLOB` 새로 만든 PDF 파일을 나타내는 개체입니다.
+   변환을 수행하려면 `PDFUtilityServiceService` 개체의 `convertXDPtoPDF` 메서드를 호출하고 XDP 파일을 나타내는 `BLOB` 개체를 전달하십시오. 메서드는 새로 만든 PDF 파일을 나타내는 `BLOB` 개체를 반환합니다.
 
 **추가 참조**
 
@@ -215,7 +215,7 @@ PDF 유틸리티 Java 및 웹 서비스 API를 사용하여 문서가 입력 가
 
 >[!NOTE]
 >
->PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)
+>PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-2}
 
@@ -229,11 +229,11 @@ PDF 문서 등록 정보를 검색하려면 다음 단계를 수행하십시오.
 
 개발 프로젝트에 필요한 파일을 포함하십시오. Java를 사용하여 클라이언트 응용 프로그램을 만드는 경우 필요한 JAR 파일을 포함합니다. 웹 서비스를 사용하는 경우 프록시 파일을 포함해야 합니다.
 
-**PDFutilityService 클라이언트 만들기**
+**PDFUutilityService 클라이언트 만들기**
 
-PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 다음을 만들 수 있습니다. `PDFUtilityServiceClient` 개체. 웹 서비스 API를 사용하면 다음을 사용하여 작업을 수행할 수 있습니다 `PDFUtilityServiceService` 개체.
+PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `PDFUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
 
-**속성 검색 작업 호출**
+**속성 검색 작업을 호출합니다**
 
 서비스 클라이언트를 만든 후 속성 검색 작업을 호출할 수 있습니다.
 
@@ -257,16 +257,16 @@ PDF 유틸리티 API(Java)를 사용하여 PDF 문서 속성을 검색합니다.
 
 1. PDFutilityService 클라이언트 만들기
 
-   만들기 `PDFUtilityServiceClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `PDFUtilityServiceClient` 개체를 만듭니다.
 
 1. 속성 검색 작업 호출
 
-   변환을 수행하려면 `PDFUtilityServiceClient` 개체 `getPDFProperties` 메서드를 호출하고 다음을 전달합니다.
+   변환을 수행하려면 `PDFUtilityServiceClient` 개체의 `getPDFProperties` 메서드를 호출하고 다음을 전달하십시오.
 
-   * A `com.adobe.idp.Document` PDF 문서를 나타내는 개체입니다.
-   * A `PDFPropertiesOptionSpec` 평가할 속성이 포함된 개체입니다.
+   * PDF 문서를 나타내는 `com.adobe.idp.Document` 개체입니다.
+   * 평가할 속성이 포함된 `PDFPropertiesOptionSpec` 개체입니다.
 
-   이 메서드는 `PDFPropertiesResult` 쿼리 결과를 포함하는 개체입니다.
+   이 메서드는 쿼리 결과를 포함하는 `PDFPropertiesResult` 개체를 반환합니다.
 
 **추가 참조**
 
@@ -287,16 +287,16 @@ PDF 유틸리티 웹 서비스 API를 사용하여 PDF 문서 속성을 검색�
 
 1. PDFutilityService 클라이언트 만들기
 
-   만들기 `PDFUtilityServiceService` 프록시 클래스 생성자를 사용하여 개체를 작성합니다.
+   프록시 클래스 생성자를 사용하여 `PDFUtilityServiceService` 개체를 만듭니다.
 
 1. 속성 검색 작업 호출
 
-   변환을 수행하려면 `PDFUtilityServiceService` 개체 `getPDFProperties` 메서드를 호출하고 다음을 전달합니다.
+   변환을 수행하려면 `PDFUtilityServiceService` 개체의 `getPDFProperties` 메서드를 호출하고 다음을 전달하십시오.
 
-   * A `BLOB` PDF 문서를 나타내는 개체입니다.
-   * A `PDFPropertiesOptionSpec` 평가할 속성이 포함된 개체입니다.
+   * PDF 문서를 나타내는 `BLOB` 개체입니다.
+   * 평가할 속성이 포함된 `PDFPropertiesOptionSpec` 개체입니다.
 
-   이 메서드는 `PDFPropertiesResult` 쿼리 결과를 포함하는 개체입니다.
+   이 메서드는 쿼리 결과를 포함하는 `PDFPropertiesResult` 개체를 반환합니다.
 
 **추가 참조**
 
@@ -312,7 +312,7 @@ PDF 유틸리티 서비스 Java 및 웹 서비스 API를 사용하여 PDF 문서
 
 >[!NOTE]
 >
->PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-3}
 
@@ -328,17 +328,17 @@ PDF 문서에 대해 저장 옵션을 설정하려면 다음 단계를 수행하
 
 개발 프로젝트에 필요한 파일을 포함하십시오. Java를 사용하여 클라이언트 응용 프로그램을 만드는 경우 필요한 JAR 파일을 포함합니다. 웹 서비스를 사용하는 경우 프록시 파일을 포함해야 합니다.
 
-**PDFutilityService 클라이언트 만들기**
+**PDFUutilityService 클라이언트 만들기**
 
-PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 다음을 만들 수 있습니다. `PDFUtilityServiceClient` 개체. 웹 서비스 API를 사용하면 다음을 사용하여 작업을 수행할 수 있습니다 `PDFUtilityServiceService` 개체.
+PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `PDFUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
 
 **저장 모드 설정**
 
 다음 저장 옵션 중 하나를 선택할 수 있습니다.
 
 * `INCREMENTAL`: 저장하는 데 필요한 시간을 줄이기 위해 증분 저장
-* `FAST_WEB_VIEW`: 신속한 웹 보기를 위해 저장
-* `FULL`: 전체 저장을 사용하여 저장(최적화 안 함)
+* `FAST_WEB_VIEW`: 빠른 웹 보기를 위해 저장
+* `FULL`: 전체 저장을 사용하여 저장하려면(최적화 안 함)
 
 **스타일 저장 작업 호출**
 
@@ -346,11 +346,11 @@ PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 P
 
 **다른 AEM Forms 작업에 PDF 문서 전달**
 
-PDF 유틸리티 서비스에서 지정된 저장 모드를 설정한 후 PDF 문서를 다른 AEM Forms 작업에 전달합니다. 해당 작업에서 반환되면 PDF 문서가 지정된 모드로 저장됩니다. 예를 들어 PDF 유틸리티 서비스를 사용하여 `FAST_WEB_VIEW` 을(를) 설정한 다음 PDF 문서를 `encryptUsingPassword` 그러면 반환된 PDF 문서가 암호로 암호화되어 `FAST_WEB_VIEW` 모드.
+PDF 유틸리티 서비스에서 지정된 저장 모드를 설정한 후 PDF 문서를 다른 AEM Forms 작업에 전달합니다. 해당 작업에서 반환되면 PDF 문서가 지정된 모드로 저장됩니다. 예를 들어 PDF 유틸리티 서비스를 사용하여 `FAST_WEB_VIEW` 모드를 설정한 다음 PDF 문서를 암호화 서비스의 `encryptUsingPassword` 작업에 전달하는 경우 반환된 PDF 문서는 암호로 암호화되어 `FAST_WEB_VIEW` 모드로 저장됩니다.
 
 >[!NOTE]
 >
->이 섹션과 연결된 빠른 시작은 `FAST_WEB_VIEW` 을(를) 설정한 다음 PDF 문서를 `encryptUsingPassword` 작업.
+>이 섹션과 연결된 빠른 시작은 `FAST_WEB_VIEW` 모드를 설정한 다음 PDF 문서를 암호화 서비스의 `encryptUsingPassword` 작업에 전달합니다.
 
 **추가 참조**
 
@@ -374,26 +374,26 @@ PDF 유틸리티 API(Java)를 사용하여 PDF 문서 저장 옵션을 설정합
 
 1. PDFutilityService 클라이언트 만들기
 
-   만들기 `PDFUtilityServiceClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `PDFUtilityServiceClient` 개체를 만듭니다.
 
 1. 저장 모드 설정
 
-   * 만들기 `PDFUtilitySaveMode` 개체를 만들 때 사용됩니다.
-   * 를 호출하여 저장 모드 설정 `PDFUtilitySaveMode` 개체 `setSaveStyle` 메서드 및 저장 모드를 지정하는 문자열 값 전달 예를 들어, 빠른 웹 보기를 위해 저장하려면 을 전달합니다 `FAST_WEB_VIEW`.
+   * 해당 생성자를 사용하여 `PDFUtilitySaveMode` 개체를 만듭니다.
+   * `PDFUtilitySaveMode` 개체의 `setSaveStyle` 메서드를 호출하고 저장 모드를 지정하는 문자열 값을 전달하여 저장 모드를 설정하십시오. 예를 들어, 빠른 웹 보기를 위해 저장하려면 `FAST_WEB_VIEW`을(를) 전달합니다.
 
 1. 스타일 저장 작업 호출
 
-   호출 `PDFUtilityServiceClient` 개체 `setSaveMode` 메서드를 실행하고 다음 값을 전달합니다.
+   `PDFUtilityServiceClient` 개체의 `setSaveMode` 메서드를 호출하고 다음 값을 전달하십시오.
 
-   * A `com.adobe.idp.Document` PDF 문서를 나타내는 개체입니다.
-   * A `PDFUtilitySaveMode` 사용할 저장 스타일이 포함된 개체입니다.
+   * PDF 문서를 나타내는 `com.adobe.idp.Document` 개체입니다.
+   * 사용할 저장 스타일이 포함된 `PDFUtilitySaveMode` 개체입니다.
    * 이전 설정을 재정의할지 여부를 결정하는 데 사용되는 부울 값.
 
-   이 메서드는 `com.adobe.idp.Document` 지정된 저장 스타일을 사용하여 형식이 지정된 개체입니다.
+   메서드가 지정된 저장 스타일을 사용하여 형식이 지정된 `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. 다른 AEM Forms 작업에 PDF 문서 전달
 
-   * 반환된 을 전달합니다. `com.adobe.idp.Document` 다른 AEM Forms 작업에 대한 개체입니다.
+   * 반환된 `com.adobe.idp.Document` 개체를 다른 AEM Forms 작업에 전달합니다.
 
 **추가 참조**
 
@@ -414,26 +414,26 @@ PDF 유틸리티 AP(웹 서비스)를 사용하여 PDF 문서 저장 옵션을 �
 
 1. PDFutilityService 클라이언트 만들기
 
-   만들기 `PDFUtilityServiceService` 프록시 클래스 생성자를 사용하여 개체를 작성합니다.
+   프록시 클래스 생성자를 사용하여 `PDFUtilityServiceService` 개체를 만듭니다.
 
 1. 저장 모드 설정
 
-   * 만들기 `PDFUtilitySaveMode` 개체를 만들 때 사용됩니다.
-   * 문자열 값을 로 할당하여 저장 모드 설정 `PDFUtilitySaveMode` 개체 `saveStyle` 저장 모드를 지정하는 메서드. 예를 들어, 빠른 웹 보기를 위해 저장하려면 을 지정합니다 `FAST_WEB_VIEW`.
+   * 해당 생성자를 사용하여 `PDFUtilitySaveMode` 개체를 만듭니다.
+   * 저장 모드를 지정하는 `PDFUtilitySaveMode` 개체의 `saveStyle` 메서드에 문자열 값을 할당하여 저장 모드를 설정하십시오. 예를 들어, 빠른 웹 보기를 위해 저장하려면 `FAST_WEB_VIEW`을(를) 지정합니다.
 
 1. 스타일 저장 작업 호출
 
-   호출 `PDFUtilityServiceService` 개체 `setSaveMode` 메서드를 실행하고 다음 값을 전달합니다.
+   `PDFUtilityServiceService` 개체의 `setSaveMode` 메서드를 호출하고 다음 값을 전달하십시오.
 
-   * A `BLOB` PDF 문서를 나타내는 개체입니다.
-   * A `PDFUtilitySaveMode` 사용할 저장 스타일이 포함된 개체입니다.
+   * PDF 문서를 나타내는 `BLOB` 개체입니다.
+   * 사용할 저장 스타일이 포함된 `PDFUtilitySaveMode` 개체입니다.
    * 이전 설정을 재정의할지 여부를 결정하는 데 사용되는 부울 값.
 
-   이 메서드는 `BLOB` 지정된 저장 스타일을 사용하여 형식이 지정된 개체입니다. 그런 다음 해당 개체를 PDF 문서로 저장할 수 있습니다.
+   메서드가 지정된 저장 스타일을 사용하여 형식이 지정된 `BLOB` 개체를 반환합니다. 그런 다음 해당 개체를 PDF 문서로 저장할 수 있습니다.
 
 1. 다른 Forms 작업에 PDF 문서 전달
 
-   * 반환된 을 전달합니다. `BLOB` 다른 AEM Forms 작업에 대한 개체입니다.
+   * 반환된 `BLOB` 개체를 다른 AEM Forms 작업에 전달합니다.
 
 **추가 참조**
 
@@ -449,7 +449,7 @@ PDF 유틸리티 Java API를 사용하여 PDF 문서를 프로그래밍 방식�
 
 >[!NOTE]
 >
->PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-4}
 
@@ -463,11 +463,11 @@ PDF 문서를 소독하려면 다음 단계를 수행하십시오.
 
 개발 프로젝트에 필요한 파일을 포함하십시오. Java를 사용하여 클라이언트 응용 프로그램을 작성하려면 필요한 JAR 파일을 포함합니다.
 
-**PDFutilityService 클라이언트 만들기**
+**PDFUutilityService 클라이언트 만들기**
 
-정리 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 다음을 만들 수 있습니다. `PDFUtilityServiceClient` 개체.
+정리 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다.
 
-**XDP로 PDF 변환 작업 호출**
+**XDP 변환 작업에 대한 PDF 호출**
 
 서비스 클라이언트를 만든 후 정리 작업을 호출할 수 있습니다.
 
@@ -491,11 +491,11 @@ PDF 유틸리티 API(Java)를 사용하여 문서를 정리합니다.
 
 1. PDFutilityService 클라이언트 만들기
 
-   만들기 `PDFUtilityServiceClient` 개체를 생성자를 사용하고 `ServiceClientFactory` 연결 속성을 포함하는 개체입니다.
+   해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `PDFUtilityServiceClient` 개체를 만듭니다.
 
 1. XDP로 PDF 변환 작업 호출
 
-   변환을 수행하려면 `PDFUtilityServiceClient` 개체 `convertPDFtoXDP` 방법 및 전달 `com.adobe.idp.Document` PDF 파일을 나타내는 개체입니다. 이 메서드는 `com.adobe.idp.Document` 새로 만든 XDP 파일을 나타내는 개체입니다.
+   변환을 수행하려면 `PDFUtilityServiceClient` 개체의 `convertPDFtoXDP` 메서드를 호출하고 PDF 파일을 나타내는 `com.adobe.idp.Document` 개체를 전달하십시오. 메서드는 새로 만든 XDP 파일을 나타내는 `com.adobe.idp.Document` 개체를 반환합니다.
 
 **추가 참조**
 

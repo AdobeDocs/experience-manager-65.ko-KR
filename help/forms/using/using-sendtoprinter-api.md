@@ -21,17 +21,17 @@ ht-degree: 14%
 
 AEM Forms에서 SendToPrinter 서비스를 사용하여 문서를 프린터로 보낼 수 있습니다. SendToPrinter 서비스는 다음과 같은 인쇄 액세스 메커니즘을 지원합니다.
 
-* **직접 접근 가능한 프린터** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
+* **직접 액세스할 수 있는 프린터** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
 
 * **간접 액세스 가능 프린터** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
 
   문서를 프린터로 보낼 때 다음 인쇄 프로토콜 중 하나를 지정합니다.
 
    * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * &quot;**다이렉트 IP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
    * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
-   * **공유 프린터** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIF**: 출력 서비스가 CIF(Common Internet File System) 인쇄 프로토콜을 지원합니다.
+   * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
+   * **CIF**: 출력 서비스에서 CIF(Common Internet File System) 인쇄 프로토콜을 지원합니다.
 
 ## SendToPrinter 서비스 사용 {#using-sendtoprinter-service}
 
@@ -64,8 +64,8 @@ AEM Forms에서 SendToPrinter 서비스를 사용하여 문서를 프린터로 �
 
 인증은 CIF 인쇄에만 지원됩니다. 인증하려면 PrinterSpec에 사용자 이름/암호/도메인을 입력합니다. 다음 단계를 수행하여 AEM Granite CyprtoSupport 서비스를 사용하여 암호를 암호화할 수 있습니다.
 
-1. https://으로 이동&lt;server>:&lt;port>/system/console.
+1. https://&lt;server>:&lt;port>/system/console로 이동합니다.
 
-1. 다음으로 이동 **[!UICONTROL 기본]** > **[!UICONTROL 암호화 지원]**.
+1. **[!UICONTROL 기본]** > **[!UICONTROL 암호화 지원]**(으)로 이동합니다.
 
-1. 일반 텍스트를 입력하고 **[!UICONTROL Protect]**.
+1. 일반 텍스트를 입력하고 **[!UICONTROL Protect]**&#x200B;을(를) 클릭합니다.

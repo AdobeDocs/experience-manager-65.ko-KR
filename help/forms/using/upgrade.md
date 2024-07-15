@@ -24,7 +24,7 @@ ht-degree: 6%
 | AEM 6.5 | 이 문서 |
 
 
-AEM 6.5 Forms에는 양식 및 서신에 대한 생성, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다. AEM 6.5 Forms의 모든 새로운 기능과 향상된 기능에 대해 알아보려면 다음을 참조하십시오. [새로운 기능 요약 문서](../../forms/using/whats-new.md).
+AEM 6.5 Forms에는 양식 및 서신에 대한 생성, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다. AEM 6.5 Forms의 모든 새로운 기능과 향상된 기능에 대해 알아보려면 [새로운 기능 요약 문서](../../forms/using/whats-new.md)를 참조하세요.
 
 기존 LiveCycle 또는 AEM Forms 설치를 업그레이드하여 기존 데이터, 프로세스 및 에셋을 그대로 유지하면서 AEM 6.5 Forms에서 제공하는 새로운 기능과 개선 사항을 얻을 수 있습니다. 업그레이드 시 메타데이터와 프로세스의 상태도 유지됩니다. 업그레이드 경로를 선택하여 업그레이드를 시작할 수 있습니다.
 
@@ -61,17 +61,17 @@ AEM 6.5 Forms에는 양식 및 서신에 대한 생성, 관리 및 사용자 경
 * JEE의 AEM 6.1 Forms
 * JEE의 AEM 6.2 Forms
 
-JEE의 AEM 6.5.18.0 Forms은 두 가지 유형의 설치 관리자를 제공합니다. [전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 및 [패치 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+JEE의 AEM 6.5.18.0 Forms에서는 두 가지 유형의 설치 관리자를 제공합니다. [전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 및 [패치 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-**전체 설치 관리자**: 전체 설치 관리자를 사용하여 새로운 AEM Forms 인스턴스를 설정하거나 AEM 6.5.x.x Forms on JEE에서 AEM 6.5.18.0 Forms으로 업그레이드를 수행할 수 있습니다.
+**전체 설치 관리자**: 전체 설치 관리자를 사용하여 새로운 AEM Forms 인스턴스를 설정하거나 JEE의 AEM 6.5.x.x Forms에서 JEE의 AEM 6.5.18.0 Forms으로 업그레이드할 수 있습니다.
 
-**패치 설치 관리자**: 패치 설치 관리자는 이미 AEM 6.5.x.x 버전을 사용 중인 고객을 위한 것입니다. 패치 설치 관리자를 사용하여 최신 버전의 AEM Forms으로 업그레이드할 수 있습니다.
+**패치 설치 관리자**: 패치 설치 관리자는 이미 AEM 6.5.x.x 버전을 사용 중인 고객용입니다. 패치 설치 관리자를 사용하여 최신 버전의 AEM Forms으로 업그레이드할 수 있습니다.
 
 다음 이미지는 전체 및 패치 설치 관리자를 사용하기 위한 시나리오를 보여 줍니다.
 
 ![전체 설치 관리자 및 패치 설치 관리자](/help/forms/using/assets/full-and-patch-installer.png)
 
-다음을 참조하십시오. [AEM 6.5 Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) jee 환경에 대한 최신 서비스 팩을 설치하는 문서입니다.
+JEE 환경의 최신 서비스 팩을 설치하려면 [AEM 6.5 Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) 문서를 참조하십시오.
 
 <!--
 [Work in Progress]

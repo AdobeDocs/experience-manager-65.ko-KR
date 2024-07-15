@@ -1,5 +1,5 @@
 ---
-title: 작업 영역 개요
+title: Workspace 개요
 description: 작업 영역을 사용하면 비즈니스 프로세스를 시작, 참여 및 추적할 수 있습니다. 작업 영역에 대해 자세히 알아보겠습니다.
 contentOwner: admin
 content-type: reference
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ---
 
-# 작업 영역 개요 {#overview-of-workspace}
+# Workspace 개요 {#overview-of-workspace}
 
-작업 영역을 사용하면 비즈니스 프로세스를 시작, 참여 및 추적할 수 있습니다.
+Workspace을 사용하면 비즈니스 프로세스를 시작, 참여 및 추적할 수 있습니다.
 
-관리 콘솔의 작업 영역 페이지에서 다음 작업을 수행할 수 있습니다.
+관리 콘솔의 Workspace 페이지에서 다음 작업을 수행할 수 있습니다.
 
 * Workspace 사용자 인터페이스의 시작 페이지에 표시할 메시지를 설정합니다
 * Workspace에서 프로세스 및 작업을 검색하는 데 사용할 검색 템플릿 구성

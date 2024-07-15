@@ -31,7 +31,7 @@ Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 
 * [Adobe Campaign 구성 요소](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
 * [Adobe Campaign 타기팅](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
-이전에 다음을 수행해야 합니다. [Adobe Campaign과 통합 AEM](/help/sites-administering/campaign.md).
+이전에 [Adobe Campaign과 통합된 AEM](/help/sites-administering/campaign.md)을(를) 가지고 있어야 합니다.
 
 또한 통합을 사용자 정의하려면 다음 항목을 참조하십시오.
 

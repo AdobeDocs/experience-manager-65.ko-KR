@@ -36,8 +36,8 @@ ht-degree: 40%
 
 블루프린트 구성을 만든 후에는 다음과 같은 속성을 구성하게 됩니다.
 
-* **이름**: 블루프린트 구성의 이름.
-* **소스 경로**: 소스(블루프린트)로 사용 중인 사이트 루트 페이지의 경로.
+* **이름**: 블루프린트 구성의 이름입니다.
+* **Source 경로**: 소스(블루프린트)로 사용 중인 사이트 루트 페이지의 경로입니다.
 * **설명**. (선택 사항)블루프린트 구성에 대한 설명입니다. 이 설명은 사이트를 만들 때 선택할 수 있는 블루프린트 구성 목록에 표시됩니다.
 
 블루프린트 구성을 사용하면 이를 소스/블루프린트의 라이브 카피의 동기화 방법을 결정하는 롤아웃 구성과 연결할 수 있습니다. [사용할 롤아웃 구성 지정](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use)을 참조하십시오.
@@ -86,14 +86,14 @@ ht-degree: 40%
 
 모든 페이지의 라이브 카피를 만들 수 있습니다.
 
-* 에서 참조하는 페이지 [블루프린트 구성](#creating-a-blueprint-configuration).
+* [블루프린트 구성](#creating-a-blueprint-configuration)에서 참조하는 페이지입니다.
 * 및 구성에 연결되어 있지 않은 페이지.
 * AEM에서는 다른 라이브 카피의 페이지 내에 라이브 카피를 만들 수도 있습니다.
 
 유일한 차이점은 소스/블루프린트 페이지의 **롤아웃** 명령의 가용성이 블루프린트에서 소스를 참조하는지 여부에 따라 달라진다는 점입니다.
 
-* 소스 페이지에서 라이브 카피를 만드는 경우 **은(는)** 블루프린트 구성에서 참조되면 소스/블루프린트 페이지에서 롤아웃 명령을 사용할 수 있습니다.
-* 소스 페이지에서 라이브 카피를 만드는 경우 **은(는) 아님** 블루프린트 구성에서 참조한 경우 소스/블루프린트 페이지에서 롤아웃 명령을 사용할 수 없습니다.
+* 블루프린트 구성에서 **is**&#x200B;이(가) 참조한 소스 페이지에서 Live Copy를 만드는 경우 소스/블루프린트 페이지에서 롤아웃 명령을 사용할 수 있습니다.
+* 블루프린트 구성에서 **이(가) 참조하지 않는** 소스 페이지에서 Live Copy를 만드는 경우 소스/블루프린트 페이지에서 롤아웃 명령을 사용할 수 없습니다.
 
 라이브 카피를 만들려면 다음 작업을 수행하십시오.
 
@@ -101,11 +101,11 @@ ht-degree: 40%
 
    ![Live Copy 만들기](assets/chlimage_1-212.png)
 
-1. 소스 페이지를 선택한 다음 **다음**. 예:
+1. 소스 페이지를 선택한 후 **다음**&#x200B;을(를) 클릭합니다. 예:
 
    ![소스 페이지 선택](assets/chlimage_1-213.png)
 
-1. 라이브 카피의 대상 경로를 지정하고(라이브 카피의 상위 폴더/페이지 열기) **다음**.
+1. Live Copy의 대상 경로를 지정하고(Live Copy의 상위 폴더/페이지 열기) **다음**&#x200B;을 클릭합니다.
 
    ![대상 지정](assets/chlimage_1-214.png)
 
@@ -125,14 +125,14 @@ ht-degree: 40%
    * 선택됨: 선택한 페이지의 라이브 카피만 생성(약식 라이브 카피)
    * 선택되지 않음: 선택한 페이지의 모든 하위 항목을 포함하는 라이브 카피 생성(딥 라이브 카피)
 
-1. (선택 사항) 라이브 카피에 사용할 롤아웃 구성을 하나 이상 지정하려면 **롤아웃 구성** 드롭다운 목록에서 선택합니다. 선택한 구성은 드롭다운 선택기 아래에 표시됩니다.
+1. (선택 사항) Livecopy에 사용할 롤아웃 구성을 하나 이상 지정하려면 **롤아웃 구성** 드롭다운 목록을 사용하여 선택하십시오. 선택한 구성은 드롭다운 선택기 아래에 표시됩니다.
 1. **만들기**&#x200B;를 클릭합니다. 표시되는 확인 메시지에서 **열기** 또는 **완료** 중 하나를 선택할 수 있습니다.
 
 ### 블루프린트 구성으로 사이트의 Live Copy 만들기 {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 블루프린트 구성을 사용하여 라이브 카피를 만들어 블루프린트(소스) 콘텐츠를 기반으로 사이트를 만듭니다. 블루프린트 구성으로 라이브 카피를 만들 때 복사할 블루프린트 소스의 언어 분기를 하나 이상 선택한 다음 언어 분기에서 복사할 챕터를 선택합니다. [블루프린트 구성 만들기](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration)를 참조하십시오.
 
-라이브 카피에서 일부 언어 분기 또는 챕터를 생략하면 나중에 추가할 수 있습니다. 를 참조하십시오. [라이브 카피(블루프린트 구성) 내부에 라이브 카피 만들기](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration).
+라이브 카피에서 일부 언어 분기 또는 챕터를 생략하면 나중에 추가할 수 있습니다. [라이브 카피(블루프린트 구성) 내부에 라이브 카피 만들기](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration)를 참조하십시오.
 
 >[!CAUTION]
 >
@@ -140,31 +140,31 @@ ht-degree: 40%
 
 사이트 생성 시 다음과 같은 속성의 값을 입력하십시오.
 
-* **초기 언어**: 라이브 카피에 포함할 블루프린트 소스의 언어 분기.
-* **초기 챕터**: 라이브 카피에 포함할 블루프린트 언어 분기의 하위 페이지
-* **대상 경로**: 라이브 카피 사이트의 루트 페이지 위치
-* **제목**: 라이브 카피 사이트의 루트 페이지 제목
-* **이름**: (선택 사항) 라이브 카피의 루트 페이지를 저장하는 JCR 노드의 이름입니다. 기본값은 제목을 기반으로 합니다.
+* **초기 언어**: Live Copy에 포함할 블루프린트 소스의 언어 분기입니다.
+* **초기 챕터**: Live Copy에 포함할 블루프린트 언어 분기의 하위 페이지입니다.
+* **대상 경로**: Live Copy 사이트의 루트 페이지 위치입니다.
+* **제목**: Live Copy 사이트의 루트 페이지 제목.
+* **이름**: (선택 사항) Live Copy의 루트 페이지를 저장하는 JCR 노드의 이름입니다. 기본값은 제목을 기반으로 합니다.
 * **사이트 소유자**: (선택 사항)
 * **Live Copy**: 소스 사이트와 라이브 관계를 설정하려면 이 옵션을 선택하십시오. 이 옵션을 선택하지 않으면 블루프린트의 사본이 생성되지만 이후 소스와 동기화되지 않습니다.
-* **롤아웃 구성**: (선택 사항) 라이브 카피 동기화에 사용할 롤아웃 구성을 하나 이상 선택합니다. 기본적으로 롤아웃 구성은 블루프린트에서 상속됩니다. 다음을 참조하십시오. [사용할 롤아웃 구성 지정](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) 을 참조하십시오.
+* **롤아웃 구성**: (선택 사항) Live Copy 동기화에 사용할 롤아웃 구성을 하나 이상 선택하십시오. 기본적으로 롤아웃 구성은 블루프린트에서 상속됩니다. 자세한 내용은 [사용할 롤아웃 구성 지정](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use)을 참조하십시오.
 
 블루프린트 구성으로 사이트의 라이브 카피를 만들려면 다음 작업을 수행하십시오.
 
 1. **Sites** 콘솔에서 **만들기**&#x200B;를 선택한 다음, 드롭다운 선택기에서 **사이트**&#x200B;를 선택합니다.
-1. 라이브 카피의 소스로 사용할 블루프린트 구성을 선택하고 **다음**:
+1. Live Copy의 소스로 사용할 블루프린트 구성을 선택하고 **다음**&#x200B;을(를) 진행합니다.
 
-   ![블루프린트 구성을 라이브 카피 소스로 선택](assets/blueprint-configuration-select.png)
+   ![블루프린트 구성을 Live Copy 소스로 선택](assets/blueprint-configuration-select.png)
 
-1. 사용 **초기 언어** 선택기를 사용하여 라이브 카피에 사용할 블루프린트 사이트의 언어를 지정합니다.
+1. **초기 언어** 선택기를 사용하여 Live Copy에 사용할 블루프린트 사이트의 언어를 지정하십시오.
 
-   기본적으로 사용할 수 있는 모든 언어가 선택되어 있습니다. 언어를 제거하려면 **X** 언어 옆에 표시됩니다.
+   기본적으로 사용할 수 있는 모든 언어가 선택되어 있습니다. 언어를 제거하려면 해당 언어 옆에 나타나는 **X**&#x200B;을(를) 클릭합니다.
 
    예:
 
    ![초기 언어 선택](assets/chlimage_1-217.png)
 
-1. 사용 **초기 챕터** 드롭다운을 사용하여 라이브 카피에 포함할 블루프린트의 섹션을 선택합니다. 사용 가능한 모든 챕터는 기본적으로 포함되지만 제거할 수 있습니다.
+1. **초기 챕터** 드롭다운을 사용하여 Live Copy에 포함할 블루프린트의 섹션을 선택합니다. 사용 가능한 모든 챕터는 기본적으로 포함되지만 제거할 수 있습니다.
 1. 나머지 속성의 값을 입력한 다음 **만들기**&#x200B;를 선택합니다. 확인 대화 상자에서 **완료**&#x200B;를 선택하여 **사이트** 콘솔로 돌아가거나 **사이트 열기**&#x200B;를 선택하여 사이트의 루트 페이지를 엽니다.
 
 ### Live Copy(블루프린트 구성) 내부에 Live Copy 만들기 {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
@@ -177,8 +177,8 @@ ht-degree: 40%
 
 라이브 카피 페이지의 속성에는 다음과 같은 라이브 카피에 대한 정보가 표시됩니다.
 
-* **소스**: 라이브 카피 페이지의 소스 페이지입니다.
-* **상태**: 라이브 카피의 동기화 상태입니다. 상태에는 라이브 카피가 소스로 업데이트되었는지 여부, 마지막으로 동기화된 시기 및 동기화를 수행한 사용자가 포함됩니다.
+* **Source**: Live Copy 페이지의 소스 페이지입니다.
+* **상태**: Live Copy의 동기화 상태입니다. 상태에는 라이브 카피가 소스로 업데이트되었는지 여부, 마지막으로 동기화된 시기 및 동기화를 수행한 사용자가 포함됩니다.
 * **구성**:
 
    * 페이지가 여전히 Live Copy 상속 대상인지 여부.
@@ -187,7 +187,7 @@ ht-degree: 40%
 
 속성을 보려면 다음 작업을 수행하십시오.
 
-1. 다음에서 **사이트** 콘솔에서 라이브 카피 페이지를 선택한 다음 속성을 엽니다.
+1. **사이트** 콘솔에서 Live Copy 페이지를 선택한 다음 속성을 엽니다.
 1. **Live Copy** 탭을 선택합니다.
 
    예:
@@ -196,7 +196,7 @@ ht-degree: 40%
 
    >[!NOTE]
    >
-   >자세한 내용은 기술 자료 문서 를 참조하십시오. [라이브 카피 상태 메시지 - 최신/녹색/동기화 중](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >자세한 내용은 기술 자료 문서 [라이브 카피 상태 메시지 - 최신/녹색/동기화 중](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html)을 참조하십시오.
 
 ### 블루프린트 페이지의 Live Copy 보기 {#seeing-the-live-copies-of-a-blueprint-page}
 
@@ -233,7 +233,7 @@ ht-degree: 40%
 
    ![블루프린트 롤아웃](assets/rollout-blueprint.png)
 
-롤아웃은 비동기 작업으로 처리되며 [**비동기 작업 상태** 대시보드](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) 위치: **전역 탐색** > **도구** > **작업** > **작업**
+롤아웃은 비동기 작업으로 처리되며 **전역 탐색** > **도구** > **작업** > **작업**&#x200B;의 [**비동기 작업 상태** 대시보드](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)에서 확인할 수 있습니다
 
 >[!NOTE]
 >
@@ -244,7 +244,7 @@ ht-degree: 40%
 1. **사이트** 콘솔에서 Live Copy의 페이지를 선택한 다음 도구 모음에서 **[참조](/help/sites-authoring/basic-handling.md#references)** 패널을 엽니다.
 1. 목록에서 **블루프린트** 옵션을 선택하여 이 페이지와 연결된 블루프린트를 표시합니다.
 1. 목록에서 필요한 블루프린트를 선택합니다.
-1. 클릭 **롤아웃**.
+1. **롤아웃**&#x200B;을 클릭합니다.
 1. 롤아웃 세부 정보를 확인하라는 메시지가 표시됩니다.
 
    * **롤아웃 범위**:
@@ -259,15 +259,15 @@ ht-degree: 40%
 
 1. 이러한 세부 정보를 확인한 다음에는 **롤아웃**&#x200B;을 선택하여 작업을 수행합니다.
 
-롤아웃은 비동기 작업으로 처리되며 [**비동기 작업 상태** 대시보드](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) 위치: **전역 탐색** > **도구** > **작업** > **작업**
+롤아웃은 비동기 작업으로 처리되며 **전역 탐색** > **도구** > **작업** > **작업**&#x200B;의 [**비동기 작업 상태** 대시보드](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)에서 확인할 수 있습니다
 
 >[!NOTE]
 >
->비동기 롤아웃 처리를 수행하려면 AEM 6.5.3.0 이상이 필요합니다. 이전 버전에서는 **백그라운드 롤아웃** 옵션이 선택되었습니다.
+>비동기 롤아웃 처리를 수행하려면 AEM 6.5.3.0 이상이 필요합니다. 이전 버전에서는 **백그라운드 롤아웃** 옵션을 선택하지 않은 경우 페이지가 즉시 동기적으로 처리되었습니다.
 
 #### Live Copy 개요에서 블루프린트 롤아웃 {#roll-out-a-blueprint-from-the-live-copy-overview}
 
-다음 [롤아웃 작업은 라이브 카피 개요에서도 사용할 수 있습니다](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview): 블루프린트 페이지를 선택한 경우.
+블루프린트 페이지를 선택하면 [롤아웃 작업이 Live Copy 개요](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)에서도 제공됩니다.
 
 1. [Live Copy 개요](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)를 연 다음 블루프린트 페이지를 선택합니다.
 1. 도구 모음에서 **롤아웃**&#x200B;을 선택합니다.
@@ -279,7 +279,7 @@ ht-degree: 40%
 
    ![블루프린트 롤아웃](assets/rollout-blueprint.png)
 
-롤아웃은 비동기 작업으로 처리되며 [**비동기 작업 상태** 대시보드](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) 위치: **전역 탐색** > **도구** > **작업** > **작업**
+롤아웃은 비동기 작업으로 처리되며 **전역 탐색** > **도구** > **작업** > **작업**&#x200B;의 [**비동기 작업 상태** 대시보드](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)에서 확인할 수 있습니다
 
 >[!NOTE]
 >
@@ -297,9 +297,9 @@ ht-degree: 40%
 >
 >동기화는 [롤아웃 시](/help/sites-administering/msm-sync.md#rollout-triggers) 트리거를 사용하는 롤아웃 구성을 실행합니다.
 
-1. 다음에서 **사이트** 콘솔에서 라이브 카피 페이지를 선택한 다음 속성을 엽니다.
+1. **사이트** 콘솔에서 Live Copy 페이지를 선택한 다음 속성을 엽니다.
 1. **Live Copy** 탭을 엽니다.
-1. 클릭 **동기화**.
+1. **동기화**&#x200B;를 클릭합니다.
 
    ![동기화](assets/chlimage_1-224.png)
 
@@ -342,7 +342,7 @@ Live Copy 내용을 변경하려면 다음을 수행할 수 있습니다.
 
 언제든지 라이브 카피 페이지에 구성 요소를 추가할 수 있습니다. 라이브 카피 및 그 단락 시스템의 상속 상태는 구성 요소를 추가하는 기능을 제어하지 않습니다.
 
-라이브 카피 페이지를 소스 페이지와 동기화하면 추가된 구성 요소는 변경되지 않습니다. 참조: [라이브 카피 페이지에서 구성 요소 순서 변경](#changing-the-order-of-components-on-a-live-copy-page).
+라이브 카피 페이지를 소스 페이지와 동기화하면 추가된 구성 요소는 변경되지 않습니다. [Live Copy 페이지에서 구성 요소 순서 변경](#changing-the-order-of-components-on-a-live-copy-page)도 참조하세요.
 
 >[!NOTE]
 >
@@ -356,22 +356,22 @@ Live Copy 내용을 변경하려면 다음을 수행할 수 있습니다.
 
 >[!NOTE]
 >
->다음을 수행할 수도 있습니다. [라이브 카피 분리](#detaching-a-live-copy) 블루프린트에서 모든 연결을 제거합니다. 분리 작업은 영구적이며 취소가 불가능합니다.
+>블루프린트에서 [Live Copy를 분리](#detaching-a-live-copy)하여 모든 연결을 제거할 수도 있습니다. 분리 작업은 영구적이며 취소가 불가능합니다.
 
 >[!NOTE]
 >
->구성 요소가 컨테이너로 표시된 경우 취소 및 일시 중단 작업이 하위 구성 요소에 적용되지 않습니다. 참조: [MSM 모범 사례](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) 추가 정보.
+>구성 요소가 컨테이너로 표시된 경우 취소 및 일시 중단 작업이 하위 구성 요소에 적용되지 않습니다. 자세한 내용은 [MSM 모범 사례](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization)도 참조하세요.
 
 #### 페이지 속성에서 상속 일시 중단 {#suspending-inheritance-from-page-properties}
 
 페이지에서 상속을 일시 중단하려면 다음 작업을 수행하십시오.
 
-1. 를 사용하여 라이브 카피 페이지의 속성을 엽니다. **속성 보기** 명령 **사이트** 콘솔 또는 사용 **페이지 정보** 을 클릭하여 제품에서 사용할 수 있습니다.
-1. 다음을 클릭합니다. **Live Copy** 탭.
+1. **Sites** 콘솔의 **속성 보기** 명령 또는 페이지 도구 모음의 **페이지 정보**&#x200B;를 사용하여 Live Copy 페이지의 속성을 엽니다.
+1. **Live Copy** 탭을 클릭합니다.
 1. 도구 모음에서 **일시 중단**&#x200B;을 선택합니다. 그런 다음 둘 중 하나를 선택할 수 있습니다.
 
    * **일시 중단**: 현재 페이지만
-   * **하위 일시 중단**: 현재 페이지와 하위 페이지
+   * **하위 일시 중단**: 현재 페이지와 하위 페이지 모두
 
 1. 확인 대화 상자에서 **일시 중단**&#x200B;을 선택합니다.
 
@@ -420,7 +420,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 일시 중단 작
 
 Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작업을 사용](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)할 수 있습니다.
 
-1. 를 엽니다. [라이브 카피 개요](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) 일시 중단되었던 라이브 카피 페이지를 선택하면 다음과 같이 표시됩니다. **상속이 취소됨**.
+1. [Live Copy 개요](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)를 연 다음 일시 중단된 Live Copy 페이지를 선택하십시오. **INHERITANCE CANCELLED**(으)로 표시됩니다.
 1. 도구 모음에서 **다시 시작**&#x200B;을 선택합니다.
 1. 상속을 되돌린 후 페이지를 동기화할 것인지 여부를 표시한 다음 **Live Copy 다시 시작** 대화 상자에서 **다시 시작** 작업을 확인합니다.
 
@@ -443,12 +443,12 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
 * 약식 라이브 카피로 전환한 다음 딥으로 다시 전환하면 다음과 같은 결과가 발생합니다.
 
-   * (이전의) 약식 라이브 카피의 모든 하위 항목은 수동으로 생성된 것처럼 처리되므로 을 사용하여 멀리 이동합니다. `[oldname]_msm_moved name`.
+   * (이전의) 약식 Live Copy의 모든 하위 항목은 수동으로 생성된 것처럼 처리되므로 `[oldname]_msm_moved name`을(를) 사용하여 멀리 이동합니다.
 
 깊이를 지정하거나 변경하려면 다음 작업을 수행하십시오.
 
-1. 를 사용하여 라이브 카피 페이지의 속성을 엽니다. **속성 보기** 명령 **사이트** 콘솔 또는 사용 **페이지 정보** 을 클릭하여 제품에서 사용할 수 있습니다.
-1. 다음을 클릭합니다. **Live Copy** 탭.
+1. **Sites** 콘솔의 **속성 보기** 명령 또는 페이지 도구 모음의 **페이지 정보**&#x200B;를 사용하여 Live Copy 페이지의 속성을 엽니다.
+1. **Live Copy** 탭을 클릭합니다.
 1. **구성** 섹션에서 하위 페이지 포함 여부에 따라 **Live Copy 상속** 옵션을 설정하거나 지웁니다.
 
    * 선택함 - 딥 라이브 카피(하위 페이지 포함)
@@ -460,7 +460,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
    >
    >자세한 내용은 [Live Copy - 구성](/help/sites-administering/msm.md#live-copies-composition)을 참조하십시오.
 
-1. 클릭 **저장** 을 클릭하여 업데이트를 유지합니다.
+1. 업데이트를 유지하려면 **저장**&#x200B;을 클릭하세요.
 
 ### 구성 요소 상속 취소 {#cancelling-inheritance-for-a-component}
 
@@ -468,7 +468,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
 >[!NOTE]
 >
->구성 요소가 컨테이너로 표시된 경우 취소 및 일시 중단 작업이 하위 구성 요소에 적용되지 않습니다. 참조: [MSM 모범 사례](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) 추가 정보.
+>구성 요소가 컨테이너로 표시된 경우 취소 및 일시 중단 작업이 하위 구성 요소에 적용되지 않습니다. 자세한 내용은 [MSM 모범 사례](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization)도 참조하세요.
 
 >[!NOTE]
 >
@@ -478,9 +478,9 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
 1. 상속을 취소할 구성 요소를 클릭합니다.
 
-   ![상속 취소 작업을 위한 구성 요소 선택](assets/chlimage_1-230.png)
+   ![상속 작업을 취소할 구성 요소 선택](assets/chlimage_1-230.png)
 
-1. 구성 요소 도구 모음에서 **상속 취소** 아이콘.
+1. 구성 요소 도구 모음에서 **상속 취소** 아이콘을 클릭합니다.
 
    ![상속 취소](do-not-localize/chlimage_1-8.png)
 
@@ -490,9 +490,9 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
 ### 구성 요소 상속 다시 활성화 {#re-enabling-inheritance-for-a-component}
 
-구성 요소의 상속을 활성화하려면 **상속 다시 활성화** 구성 요소 도구 모음의 아이콘
+구성 요소의 상속을 활성화하려면 구성 요소 도구 모음에서 **상속 다시 활성화** 아이콘을 클릭합니다.
 
-![상속 다시 활성화](do-not-localize/chlimage_1-9.png)
+![상속 다시 사용](do-not-localize/chlimage_1-9.png)
 
 ### Live Copy 페이지에서 구성 요소 순서 변경 {#changing-the-order-of-components-on-a-live-copy-page}
 
@@ -530,16 +530,16 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 >
 >상속을 다시 시작해도 Live Copy 페이지 속성은 자동으로 소스 속성과 동기화되지 않습니다. 필요한 경우 수동으로 동기화를 요청할 수 있습니다.
 
-1. 다음 중 하나를 사용하여 라이브 카피 페이지의 속성을 엽니다. **속성 보기** 옵션 **사이트** 콘솔 또는 **페이지 정보** 아이콘을 클릭합니다.
+1. **사이트** 콘솔의 **속성 보기** 옵션 또는 페이지 도구 모음의 **페이지 정보** 아이콘을 사용하여 Live Copy 페이지의 속성을 엽니다.
 1. 속성의 상속을 취소하려면 속성 오른쪽에 나타나는 링크 아이콘을 클릭합니다.
 
    ![속성 상속 취소](do-not-localize/chlimage_1-10.png)
 
-1. 다음에서 **상속 취소** 확인 대화 상자, 클릭 **예**.
+1. **상속 취소** 확인 대화 상자에서 **예**&#x200B;를 클릭합니다.
 
 ### Live Copy 페이지 속성 되돌리기 {#revert-properties-of-a-live-copy-page}
 
-속성의 상속을 활성화하려면 **상속 되돌리기** 속성 옆에 표시되는 아이콘입니다.
+속성의 상속을 활성화하려면 속성 옆에 나타나는 **상속 되돌리기** 아이콘을 클릭합니다.
 
 ![상속 되돌리기](do-not-localize/chlimage_1-11.png)
 
@@ -554,7 +554,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
 #### 페이지 속성에서 Live Copy 페이지 재설정 {#reset-a-live-copy-page-from-the-page-properties}
 
-1. 다음에서 **사이트** 콘솔에서 라이브 카피 페이지를 선택한 다음 를 선택합니다. **속성 보기**.
+1. **사이트** 콘솔에서 Live Copy 페이지를 선택한 다음 **속성 보기**&#x200B;를 선택합니다.
 1. **Live Copy** 탭을 엽니다.
 1. 도구 모음에서 **재설정**&#x200B;을 선택합니다.
 
@@ -564,7 +564,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
 #### Live Copy 개요에서 Live Copy 페이지 재설정 {#reset-a-live-copy-page-from-the-live-copy-overview}
 
-다음 [재설정 작업은 라이브 카피 개요에서도 사용할 수 있습니다](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview): 라이브 카피 페이지를 선택한 경우.
+라이브 카피 페이지를 선택하면 [라이브 카피 개요에서도 재설정 작업을 사용](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)할 수 있습니다.
 
 1. [Live Copy 개요](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)를 연 다음 Live Copy 페이지를 선택합니다.
 1. 도구 모음에서 **재설정**&#x200B;을 선택합니다.
@@ -574,18 +574,18 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
 ## Live Copy 페이지와 블루프린트 페이지 비교 {#comparing-a-live-copy-page-with-a-blueprint-page}
 
-수행한 변경 사항을 추적하기 위해에서 블루프린트 페이지를 볼 수 있습니다. **참조** 라이브 카피 페이지와 비교해 보십시오.
+변경 내용을 추적하기 위해 **참조**&#x200B;에서 블루프린트 페이지를 보고 이를 라이브 카피 페이지와 비교할 수 있습니다.
 
-1. 다음에서 **사이트** 콘솔, [블루프린트 또는 라이브 카피 페이지로 이동하여 선택합니다](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. 를 엽니다. **[참조](/help/sites-authoring/basic-handling.md#references)** 패널 을 선택하고 다음을 선택합니다.
+1. **사이트** 콘솔에서 [블루프린트 또는 Live Copy 페이지로 이동하여 선택하십시오](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. **[참조](/help/sites-authoring/basic-handling.md#references)** 패널을 열고 다음을 선택합니다.
 
-   * **블루프린트** (라이브 카피 페이지를 선택한 경우)
-   * **라이브 카피** (블루프린트 페이지를 선택한 경우)
+   * **블루프린트**(Live Copy 페이지가 선택된 경우)
+   * **라이브 카피**(블루프린트 페이지를 선택한 경우)
 
 1. 특정 라이브 카피를 선택한 후 다음 중 하나를 선택합니다.
 
-   * **블루프린트와 비교** (라이브 카피 페이지를 선택한 경우)
-   * **Live Copy에 비교** (블루프린트 페이지를 선택한 경우)
+   * **블루프린트와 비교**(Live Copy 페이지가 선택된 경우)
+   * **Live Copy와 비교**(블루프린트 페이지를 선택한 경우)
 
    예:
 
@@ -603,24 +603,24 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 >
 >라이브 카피를 분리한 후에는 라이브 관계를 복원할 수 없습니다.
 >
->라이브 관계를 제거하여 나중에 복원할 수 있도록 하려면 다음 작업을 수행하십시오 [live copy 상속 취소](#suspending-inheritance-for-a-page) 을 참조하십시오.
+>라이브 관계를 제거하여 나중에 복원할 수 있도록 하려면 페이지의 [라이브 카피 상속을 취소](#suspending-inheritance-for-a-page)하면 됩니다.
 
 트리 내에서 **분리**&#x200B;를 사용하는 위치에 따른 영향은 다음과 같습니다.
 
-* **라이브 카피의 루트 페이지에서 분리**
+* **LiveCopy의 루트 페이지에서 분리**
 
   이 작업을 라이브 카피의 루트 페이지에서 수행하면 블루프린트의 모든 페이지와 라이브 카피 간의 라이브 관계가 제거됩니다.
 
-  블루프린트의 페이지에 대한 추가 변경 사항(있는 그대로) **다음이 아님** 라이브 카피에 영향을 줍니다(원래대로).
+  블루프린트의 페이지에 대한 추가 변경 내용(있는 그대로) **은(는) Livecopy(있는 그대로)에 영향을 주지 않습니다**.
 
-* **라이브 카피의 하위 페이지에서 분리**
+* **LiveCopy의 하위 페이지에서 분리**
 
   이 작업이 라이브 카피 내의 하위 페이지(또는 분기)에서 수행되는 경우:
 
    * 해당 하위 페이지(또는 분기)에 대한 라이브 관계가 제거됩니다
    * 및 라이브 카피 분기의 (하위) 페이지는 수동으로 생성된 것처럼 처리됩니다.
 
-  *그러나*, 하위 페이지에는 여전히 상위 분기의 라이브 관계가 적용되어 블루프린트 페이지를 추가로 롤아웃하면 다음과 같은 결과가 발생합니다.
+  *그러나* 하위 페이지에는 여전히 상위 분기의 라이브 관계가 적용되어 있으므로 블루프린트 페이지를 추가로 롤아웃하면 다음 결과가 발생합니다.
 
    1. 분리된 페이지의 이름이 변경됩니다.
 
@@ -636,13 +636,13 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
 라이브 카피를 분리하려면 다음 작업을 수행하십시오.
 
-1. 다음에서 **사이트** 콘솔을 누르고 라이브 카피 페이지를 선택한 다음 **속성 보기**.
+1. **사이트** 콘솔에서 Live Copy 페이지를 선택한 다음 **속성 보기**&#x200B;를 클릭합니다.
 1. **Live Copy** 탭을 엽니다.
 1. 도구 모음에서 **분리**&#x200B;를 선택합니다.
 
    ![분리](assets/chlimage_1-236.png)
 
-1. 확인 대화 상자가 표시되면 다음을 선택합니다. **분리** 을 클릭하여 작업을 완료합니다.
+1. 확인 대화 상자가 표시되면 **분리**&#x200B;를 선택하여 작업을 완료하십시오.
 
 ### Live Copy 개요에서 Live Copy 페이지 분리 {#detach-a-live-copy-page-from-the-live-copy-overview}
 

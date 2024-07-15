@@ -1,5 +1,5 @@
 ---
-title: Form Bridge와 HTML 5 Forms용 사용자 정의 포털 통합
+title: Form BridgeHTML 과 Form 5 Forms에 대한 사용자 정의 포털 통합
 description: FormBridge API를 사용하여 HTML 페이지에서 양식 필드의 값을 가져오거나 설정하고 양식을 제출할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 ---
 
-# Form Bridge와 HTML 5 Forms용 사용자 정의 포털 통합{#integrating-form-bridge-with-custom-portal-for-html-forms}
+# Form BridgeHTML 과 Form 5 Forms에 대한 사용자 정의 포털 통합{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge는 양식과 상호 작용할 수 있는 HTML5 Forms Bridge API입니다. FormBridge API 참조에 대해서는 [FormBridge API 참조](/help/forms/using/form-bridge-apis.md).
+FormBridge는 양식과 상호 작용할 수 있는 HTML5 Forms Bridge API입니다. FormBridge API 참조에 대해서는 [FormBridge API 참조](/help/forms/using/form-bridge-apis.md)를 참조하십시오.
 
 FormBridge API를 사용하여 HTML 페이지에서 양식 필드의 값을 가져오거나 설정하고 양식을 제출할 수 있습니다. 예를 들어 API를 사용하여 마법사와 같은 경험을 빌드할 수 있습니다.
 
@@ -28,11 +28,11 @@ FormBridge API를 사용하여 HTML 페이지에서 양식 필드의 값을 가�
 
 1. **프로필 선택 또는 프로필 만들기**
 
-   1. CRX DE 인터페이스에서 다음 위치로 이동합니다. `https://'[server]:[port]'/crx/de`.
+   1. CRX DE 인터페이스에서 `https://'[server]:[port]'/crx/de`(으)로 이동합니다.
    1. 관리자 자격 증명으로 로그인합니다.
    1. 프로파일을 생성하거나 기존 프로파일을 선택합니다.
 
-      프로필을 만드는 방법에 대한 자세한 내용은 [프로필 만들기](/help/forms/using/custom-profile.md).
+      프로필을 만드는 방법에 대한 자세한 내용은 [프로필 만들기](/help/forms/using/custom-profile.md)를 참조하십시오.
 
 1. **HTML 프로필 수정**
 
@@ -74,28 +74,28 @@ FormBridge API를 사용하여 HTML 페이지에서 양식 필드의 값을 가�
 
    >[!NOTE]
    >
-   >다음 **라인 9**&#x200B;에는 페이지를 디자인하기 위한 CSS 스타일 및 JavaScript 파일에 대한 추가 JSP 참조가 포함되어 있습니다.
+   >**줄 9**&#x200B;에는 페이지를 디자인할 CSS 스타일과 JavaScript 파일에 대한 추가 JSP 참조가 포함되어 있습니다.
    >
    >
-   >다음 &lt;div id=&quot;rightdiv&quot;> 태그 켜기 **라인 18** xfa 양식의 HTML 스니펫을 포함합니다.
+   >**행 18**&#x200B;의 &lt;div id=&quot;rightdiv&quot;> 태그에 XFA 형식의 HTML 코드 조각이 포함되어 있습니다.
    >
    >
-   페이지는 두 개의 컨테이너로 스타일링됩니다. **left** 및 **오른쪽**. 오른쪽 컨테이너에는 양식이 있습니다. 왼쪽 컨테이너에는 두 개의 입력 필드와 외부 HTML 페이지의 일부가 있습니다.
+   페이지는 **left** 및 **right** 컨테이너의 두 가지 스타일로 디자인되었습니다. 오른쪽 컨테이너에는 양식이 있습니다. 왼쪽 컨테이너에는 두 개의 입력 필드와 외부 HTML 페이지의 일부가 있습니다.
    >
    >
    다음 스크린샷은 브라우저에 양식이 표시되는 방식을 보여 줍니다.
 
    ![포털](assets/portal.jpg)
 
-   왼쪽은 **HTML 페이지**. 필드가 있는 오른쪽은 **xfa 양식**.
+   왼쪽은 **HTML 페이지**&#x200B;의 일부입니다. 필드가 포함된 오른쪽은 **xfa 양식**&#x200B;입니다.
 
 1. **페이지에서 양식 필드 액세스**
 
    다음은 양식 필드에서 값을 설정하기 위해 추가할 수 있는 샘플 스크립트입니다.
 
-   예를 들어, **직원 이름** 필드의 값 사용 **이름** 및 **성**&#x200B;를 호출합니다. **window.formBridge.setFieldValue** 함수.
+   예를들어 필드 **이름** 및 **성**&#x200B;의 값을 사용하여 **EmployeeName**&#x200B;을(를) 설정하려면 **window.formBridge.setFieldValue** 함수를 호출합니다.
 
-   마찬가지로 를 호출하여 값을 읽을 수 있습니다. **window.formBridge.getFieldValue** API.
+   마찬가지로 **window.formBridge.getFieldValue** API를 호출하여 값을 읽을 수 있습니다.
 
    ```javascript
    $(function() {

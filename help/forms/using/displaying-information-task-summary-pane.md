@@ -22,7 +22,7 @@ AEM Forms 작업 영역에서 작업을 열면 작업 요약 창에 작업 요�
 
 AEM Forms 작업 영역을 사용하면 작업 요약 창에 원하는 웹 페이지를 표시할 수 있습니다. 워크벤치를 사용하여 작업 요약 창을 표시하는 프로세스를 생성할 수 있습니다.
 
-1. 워크벤치에서 태스크 지정 프로세스를 생성합니다. 작업 할당 작업에 대한 자세한 내용은 의 서비스 참조 항목을 참조하십시오. [Workbench 도움말](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
+1. 워크벤치에서 태스크 지정 프로세스를 생성합니다. 작업 할당 작업에 대한 자세한 내용은 [Workbench 도움말](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/)의 서비스 참조 항목을 참조하십시오.
 
    >[!NOTE]
    >
@@ -31,9 +31,9 @@ AEM Forms 작업 영역을 사용하면 작업 요약 창에 원하는 웹 페�
 1. 작업 요약 URL 필드를 구성합니다. 리터럴 값, 템플릿, 변수 또는 XPath 표현식을 지정할 수 있습니다.
 1. 다음은 작업 요약 페이지에 정보를 표시하는 예제입니다.
 
-   * 다음 위치에서 CRXDE Lite 환경에 로그인합니다. `https://'[server]:[port]'/lc/crx/de`.
-   * `Create a node`**샘플 요약** ` under `/content` with type `nt:unstructured`. In the properties of this node, add `sling:resourceType` of type String and value `샘플 요약`. In the Access Control List of this node, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:read` privileges.`
-   * `Create a folder`**샘플 요약** 아래에 `/apps`. 의 액세스 제어 목록 `/apps/SampleSummary`, 다음에 대한 항목 추가 `PERM_WORKSPACE_USER` 허용 `jcr:readprivileges`.
+   * `https://'[server]:[port]'/lc/crx/de`의 CRXDE Lite 환경에 로그인합니다.
+   * `Create a node`**SampleSummary** ` under `/content` with type `nt:unstructured`. In the properties of this node, add `sling:resourceType` of type String and value `SampleSummary`. In the Access Control List of this node, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:read` privileges.`
+   * `/apps`의 `Create a folder`**SampleSummary**. `/apps/SampleSummary`의 액세스 제어 목록에서 `jcr:readprivileges`을(를) 허용하는 `PERM_WORKSPACE_USER`의 항목을 추가하십시오.
    * `Create a file `html.esp` at `/apps/SampleSummary`. For example, add the following lines in `html.esp`.`
 
    ```html
@@ -49,5 +49,5 @@ AEM Forms 작업 영역을 사용하면 작업 요약 창에 원하는 웹 페�
    </html>
    ```
 
-   * 작업 요약 URL의 값을 다음으로 설정 `/lc/content/SampleSummary.html` (작업 할당 단계)를 참조하십시오.
-   * AEM Forms 작업 영역에서 이 작업 할당 단계와 연결된 작업을 열면 `html.esp` 위치: `/apps/SampleSummary` 은 작업 요약 창에서 렌더링됩니다.
+   * 작업 할당 단계에서 작업 요약 URL의 값을 `/lc/content/SampleSummary.html`(으)로 설정합니다.
+   * 이 작업 할당 단계와 연결된 작업이 AEM Forms 작업 영역에서 열리면 `/apps/SampleSummary`의 `html.esp`이(가) 작업 요약 창에 렌더링됩니다.

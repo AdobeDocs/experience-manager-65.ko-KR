@@ -16,7 +16,7 @@ ht-degree: 57%
 
 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색하고 각 구성 요소에 대한 주요 정보를 볼 수 있습니다.
 
-다음에서 액세스할 수 있습니다 **도구 >** **일반 >** **구성 요소**. In the console, card and list view are available. Because there is no tree structure for components, column view is not available.
+**도구 >** **일반 >** **구성 요소**&#x200B;에서 액세스할 수 있습니다. In the console, card and list view are available. Because there is no tree structure for components, column view is not available.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -41,7 +41,7 @@ ht-degree: 57%
   [속성] 탭에서 다음 작업을 수행할 수 있습니다.
 
    * 구성 요소의 일반 속성 확인
-   * 다음 방법 보기 [아이콘 또는 약어가 정의되었습니다.](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) 구성 요소에 사용됩니다.
+   * 구성 요소에 대해 [아이콘 또는 약어를 정의한 방법](/help/sites-developing/components-basics.md#component-icon-in-touch-ui)을 확인하세요.
 
       * 아이콘의 소스를 클릭하면 해당 구성 요소로 이동합니다.
 
@@ -67,6 +67,6 @@ ht-degree: 57%
 
 * **설명서**
 
-  개발자가 다음을 제공한 경우 [구성 요소에 대한 설명서](/help/sites-developing/developing-components.md#documenting-your-component), 다음에 표시됩니다. **설명서** 탭. 사용 가능한 설명서가 없으면 **설명서** 탭이 표시되지 않습니다.
+  개발자가 구성 요소에 대한 [설명서](/help/sites-developing/developing-components.md#documenting-your-component)를 제공한 경우 **설명서** 탭에 표시됩니다. 사용 가능한 설명서가 없으면 **설명서** 탭이 표시되지 않습니다.
 
   ![설명서](assets/chlimage_1-171.png)

@@ -31,12 +31,12 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## 일관성 검사 수행 {#perform-a-consistency-check}
 
-일관성 검사를 수행하려면 JMX Mbean에 대한 관리 페이지로 이동합니다 **com.adobe.granite(저장소)**. AEM 기본 화면에서 다음 위치로 이동합니다.
+일관성 검사를 수행하려면 JMX Mbean **com.adobe.granite(저장소)**&#x200B;에 대한 관리 페이지로 이동합니다. AEM 기본 화면에서 다음 위치로 이동합니다.
 
 **도구 > 웹 콘솔 > 메인(메뉴 모음) > JMX > com.adobe.granite(저장소)**
 
-기본 설치에서는 다음 위치에 있습니다.  **[|표시|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
+기본 설치에서 찾을 수 있는 위치: **[|표시|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
-다음에서 **작업** 페이지의 섹션에서 두 가지 메서드를 찾을 수 있습니다. **`traversalCheck`** 및 **`consistencyCheck`**. 검사를 실행하려면 작업을 클릭하고 원하는 매개 변수를 입력합니다.
+페이지의 **작업** 섹션에서 **`traversalCheck`** 및 **`consistencyCheck`** 메서드를 찾습니다. 검사를 실행하려면 작업을 클릭하고 원하는 매개 변수를 입력합니다.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)

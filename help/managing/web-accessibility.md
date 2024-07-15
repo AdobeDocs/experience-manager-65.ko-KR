@@ -26,7 +26,7 @@ AEM을 사용하여 액세스 가능한 웹 사이트 및 컨텐츠를 만드는
 
 * 템플릿 개발자도 웹 사이트 디자인을 구현할 때 이러한 문제를 알고 있어야 합니다.
 
-Adobe Experience Manager은 [지침](#wcag-accessibility-guidelines) 에서 제공 [World Wide Web Consortium](#world-wide-web-consortium).
+Adobe Experience Manager은 [World Wide Web Consortium](#world-wide-web-consortium)에서 제공하는 [지침](#wcag-accessibility-guidelines)을 사용합니다.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ WCAG 2.1은 [접근성 수준과 이를 준수하는 방법에 대한 지침(관
 
 * [액세스 가능한 콘텐츠 만들기](/help/sites-authoring/creating-accessible-content.md)에서는 AEM과 어떻게 관련되는지를 자세히 설명합니다.
 
-* [액세스 가능한 사이트를 제작하기 위한 리치 텍스트 편집기 구성](/help/sites-administering/rte-accessible-content.md)
+* [액세스 가능한 사이트를 만들기 위한 리치 텍스트 편집기 구성](/help/sites-administering/rte-accessible-content.md)
 관리자가 액세스 가능한 컨텐츠를 생성하도록 AEM을 구성하는 방법에 대한 지침입니다.
 
 * [액세스 가능한 적응형 Forms 만들기](/help/forms/using/creating-accessible-adaptive-forms.md)
@@ -62,4 +62,4 @@ Adobe Experience Manager(AEM)에는 다양한 능력을 가진 사용자를 위�
 
 ## Adobe에서의 접근성 {#accessibility-at-adobe}
 
-자세한 내용은 [Adobe 접근성 리소스 센터](https://www.adobe.com/accessibility/).
+자세한 내용은 [Adobe 접근성 리소스 센터](https://www.adobe.com/accessibility/)를 참조하세요.

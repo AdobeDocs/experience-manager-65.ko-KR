@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 사용자 생성 콘텐츠 번역 {#translating-user-generated-content}
 
-Adobe Experience Manager(AEM) 커뮤니티의 번역 기능은 의 개념을 확장합니다. [페이지 콘텐츠 번역](../../help/sites-administering/translation.md) 을 사용하여 커뮤니티 사이트에 게시된 사용자 생성 콘텐츠(UGC)에 [소셜 구성 요소 프레임워크(SCF) 구성 요소](scf.md).
+Adobe Experience Manager(AEM) 커뮤니티의 번역 기능은 [페이지 콘텐츠 번역](../../help/sites-administering/translation.md) 개념을 [SCF(소셜 구성 요소 프레임워크) 구성 요소](scf.md)를 사용하여 커뮤니티 사이트에 게시된 사용자 생성 콘텐츠(UGC)로 확장합니다.
 
 UGC의 번역을 통해 사이트 방문자와 구성원은 언어 장벽을 제거하여 글로벌 커뮤니티를 경험할 수 있습니다.
 
@@ -32,27 +32,27 @@ UGC의 번역을 통해 사이트 방문자와 구성원은 언어 장벽을 제
 
 ## 개요 {#overview}
 
-이 섹션에서는 특히 UGC에서 번역 서비스가 작동하는 방식에 대해 설명합니다. 또한 AEM을 로 연결하는 방법에 대한 이해가 있다고 가정합니다. [번역 서비스 제공업체](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) 를 구성하여 해당 서비스를 웹 사이트에 통합 [번역 통합 프레임워크](../../help/sites-administering/tc-tic.md).
+이 섹션에서는 특히 UGC에서 번역 서비스가 작동하는 방식에 대해 설명합니다. 또한 사용자가 AEM을 [번역 서비스 공급자](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider)에 연결하고 [번역 통합 프레임워크](../../help/sites-administering/tc-tic.md)를 구성하여 해당 서비스를 웹 사이트에 통합하는 방법을 이해하고 있다고 가정합니다.
 
 번역 서비스 제공업체가 사이트와 연결되면 사이트의 각 언어 사본은 댓글과 같은 SCF 구성 요소를 통해 게시된 UGC의 자체 스레드를 유지합니다.
 
-번역 서비스 공급업체 외에 번역 통합이 구성된 경우 사이트의 각 언어 사본이 UGC의 단일 스레드를 공유할 수 있으므로 언어 사본 전반에 걸쳐 글로벌 커뮤니케이션을 제공합니다. 언어로 분리된 토론 스레드 대신 [글로벌 공유 스토어](#global-translation-of-ugc) 조회 중인 언어 사본에 관계없이 전체 스레드를 표시할 수 있습니다. 또한, 복수의 번역 통합 구성은 영역별과 같은 글로벌 참여자의 논리적 그룹화에 대해 상이한 글로벌 공유 스토어를 지정하도록 구성될 수 있다.
+번역 서비스 공급업체 외에 번역 통합이 구성된 경우 사이트의 각 언어 사본이 UGC의 단일 스레드를 공유할 수 있으므로 언어 사본 전반에 걸쳐 글로벌 커뮤니케이션을 제공합니다. 언어로 분리된 토론 스레드 대신 구성된 [글로벌 공유 저장소](#global-translation-of-ugc)를 사용하면 보고 있는 언어 사본에 관계없이 전체 스레드를 볼 수 있습니다. 또한, 복수의 번역 통합 구성은 영역별과 같은 글로벌 참여자의 논리적 그룹화에 대해 상이한 글로벌 공유 스토어를 지정하도록 구성될 수 있다.
 
 ## 기본 번역 서비스 {#the-default-translation-service}
 
-AEM Communities에는 다음이 포함됩니다. [체험판 라이선스](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) 용 [기본 번역 서비스](../../help/sites-administering/tc-msconf.md) 여러 언어에 사용할 수 있습니다.
+AEM Communities에는 여러 언어에 사용할 수 있는 [기본 번역 서비스](../../help/sites-administering/tc-msconf.md)에 대한 [평가판 라이선스](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license)가 포함되어 있습니다.
 
-날짜 [커뮤니티 사이트 만들기](sites-console.md), 기본 번역 서비스는 다음과 같은 경우에 활성화됩니다. `Allow Machine Translation` 다음에서 확인됨: [번역](sites-console.md#translation) 하위 패널.
+[커뮤니티 사이트를 만들](sites-console.md) 때 [번역](sites-console.md#translation) 하위 패널에서 `Allow Machine Translation`을(를) 선택하면 기본 번역 서비스가 활성화됩니다.
 
 >[!CAUTION]
 >
 >기본 번역 서비스는 데모용입니다.
 >
->프로덕션 시스템의 경우 라이선스가 있는 번역 서비스가 필요합니다. 라이센스가 없는 경우 기본 번역 서비스는 다음과 같아야 합니다. [꺼짐](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
+>프로덕션 시스템의 경우 라이선스가 있는 번역 서비스가 필요합니다. 라이선스를 받지 않은 경우 기본 번역 서비스는 [꺼짐](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors)이어야 합니다.
 
 ## UGC의 글로벌 번역 {#global-translation-of-ugc}
 
-웹 사이트에 여러 개가 있는 경우 [언어 복사](../../help/sites-administering/tc-prep.md), 기본 번역 서비스는 한 사이트에서 입력한 UGC가 다른 사이트에서 입력한 UGC와 관련될 수 있음을 인식하지 못합니다. 이는 UGC가 동일한 구성 요소(구성 요소가 포함된 페이지의 언어 사본)에 의해 생성될 때 마찬가지입니다.
+웹 사이트에 [언어 사본](../../help/sites-administering/tc-prep.md)이 여러 개 있는 경우 기본 번역 서비스는 한 사이트에 입력된 UGC가 다른 사이트에 입력된 UGC와 관련이 있을 수 있음을 인식하지 못합니다. 이는 UGC가 동일한 구성 요소(구성 요소가 포함된 페이지의 언어 사본)에 의해 생성될 때 마찬가지입니다.
 
 그것은 한 주제에 대해 토론하는 사람들의 그룹과 비슷하다. 이들은 한 대화에 참여하는 대규모 집단의 모든 사람에 비해 자신의 글이 아닌 다른 집단에서 이루어지는 댓글에 대해 인지하지 못한다.
 
@@ -64,7 +64,7 @@ AEM Communities에는 다음이 포함됩니다. [체험판 라이선스](../../
 >
 >전역 번역 전에 있었던 모든 UGC는 더 이상 표시되지 않습니다.
 >
->UGC가 아직 [공동 저장소](working-with-srp.md), 전역 번역이 구성된 후 추가된 새 콘텐츠는 전역 공유 스토어 위치에서 검색되는 반면 언어별 UGC 위치 아래에 위치합니다.
+>UGC가 [일반 저장소](working-with-srp.md)에 있는 동안 언어별 UGC 위치 아래에 있으며 전역 번역을 구성한 후 추가된 새 콘텐츠는 전역 공유 저장소 위치에서 검색됩니다.
 >
 >언어별 콘텐츠를 글로벌 공유 스토어로 이동하거나 병합하는 마이그레이션 도구는 없습니다.
 
@@ -73,28 +73,28 @@ AEM Communities에는 다음이 포함됩니다. [체험판 라이선스](../../
 번역 서비스 커넥터를 작성자 인스턴스의 웹 사이트와 통합하는 번역 통합을 만들려면 다음 작업을 수행하십시오.
 
 * 관리자로 로그인
-* 다음에서 [메인 메뉴](http://localhost:4502/)
-* 선택 **[!UICONTROL 도구]**
-* 선택 **[!UICONTROL 작업]**
-* 선택 **[!UICONTROL 클라우드]**
-* 선택 **[!UICONTROL Cloud Service]**
+* [기본 메뉴](http://localhost:4502/)에서
+* **[!UICONTROL 도구]** 선택
+* **[!UICONTROL 작업]** 선택
+* **[!UICONTROL 클라우드]** 선택
+* **[!UICONTROL Cloud Service]** 선택
 * 아래로 스크롤하여 **[!UICONTROL 번역 통합]**
 
   ![번역 통합](assets/translation-integration.png)
 
-* 선택 **[!UICONTROL 구성 표시]**
+* **[!UICONTROL 구성 표시]** 선택
 
   ![show-configuration](assets/translation-integration1.png)
 
-* 선택 `[+]` 아이콘 옆에 있음 **[!UICONTROL 사용 가능한 구성]** 구성을 만들 수 있습니다.
+* 구성을 만들 수 있도록 **[!UICONTROL 사용 가능한 구성]** 옆에 있는 `[+]` 아이콘을 선택하십시오.
 
 #### 구성 만들기 대화 상자 {#create-configuration-dialog}
 
-![create-configuration](assets/translation-integration2.png)
+![구성 만들기](assets/translation-integration2.png)
 
 * **[!UICONTROL 상위 구성]**
 
-  (필수) 일반적으로 기본값으로 둡니다. 기본값은 입니다 `/etc/cloudservices/translation`.
+  (필수) 일반적으로 기본값으로 둡니다. 기본값은 `/etc/cloudservices/translation`입니다.
 
 * **[!UICONTROL 제목]**
 
@@ -104,32 +104,32 @@ AEM Communities에는 다음이 포함됩니다. [체험판 라이선스](../../
 
   (선택 사항) 구성 이름을 입력합니다. 기본값은 제목 을 기반으로 하는 노드 이름입니다.
 
-* 선택 **[!UICONTROL 만들기]**
+* **[!UICONTROL 만들기]** 선택
 
 #### 번역 구성 대화 상자 {#translation-config-dialog}
 
-![구성 대화 상자](assets/translation-integration3.png)
+![구성-대화 상자](assets/translation-integration3.png)
 
-자세한 지침은 [번역 통합 구성 만들기](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration).
+자세한 지침은 [번역 통합 구성 만들기](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)를 참조하십시오.
 
 * **[!UICONTROL 사이트]** 탭: 기본값으로 둘 수 있습니다.
 
 * **[!UICONTROL 커뮤니티]** 탭:
-   * **[!UICONTROL 번역 공급업체]**
-드롭다운 목록에서 번역 공급업체를 선택합니다. 기본값은 입니다 `microsoft`평가판 서비스입니다.
+   * **[!UICONTROL 번역 공급자]**
+드롭다운 목록에서 번역 공급업체를 선택합니다. 기본값은 평가판 서비스인 `microsoft`입니다.
 
-   * **[!UICONTROL 컨텐츠 범주]**
-번역할 콘텐츠를 설명하는 범주를 선택합니다. 기본값은 입니다 `General.`
+   * **[!UICONTROL 콘텐츠 범주]**
+번역할 콘텐츠를 설명하는 범주를 선택합니다. 기본값은 `General.`입니다.
 
-   * **[!UICONTROL 언어 선택...]**
-(선택 사항) UGC를 저장할 로케일을 선택하면 모든 언어 사본의 게시물이 하나의 글로벌 대화에 표시됩니다. 규칙에 따라 로케일을 선택합니다 [기본 언어](sites-console.md#translation) 웹 사이트용. 선택 중 `No Common Store` 전역 번역을 비활성화합니다. 기본적으로 글로벌 번역은 비활성화되어 있습니다.
+   * **[!UICONTROL 로케일 선택...]**
+(선택 사항) UGC를 저장할 로케일을 선택하면 모든 언어 사본의 게시물이 하나의 글로벌 대화에 표시됩니다. 규칙에 따라 웹 사이트의 [기본 언어](sites-console.md#translation)에 대한 로케일을 선택하십시오. `No Common Store`을(를) 선택하면 전역 변환이 비활성화됩니다. 기본적으로 글로벌 번역은 비활성화되어 있습니다.
 
-* **[!UICONTROL 에셋]** 탭: 기본값으로 둘 수 있습니다.
-* 선택 **[!UICONTROL 확인]**
+* **[!UICONTROL Assets]** 탭: 기본값으로 둘 수 있습니다.
+* **[!UICONTROL 확인]** 선택
 
 #### 활성화 {#activation}
 
-새 번역 통합 클라우드 서비스를 게시 환경에서 활성화해야 합니다. 웹 사이트와 연결된 경우 아직 활성화되지 않은 경우 연결된 페이지가 게시되면 활성화 워크플로우는 이 클라우드 서비스 구성을 게시하라는 메시지를 표시합니다.
+새로운 번역 통합 클라우드 서비스를 Publish 환경에서 활성화해야 합니다. 웹 사이트와 연결된 경우 아직 활성화되지 않은 경우 연결된 페이지가 게시되면 활성화 워크플로우는 이 클라우드 서비스 구성을 게시하라는 메시지를 표시합니다.
 
 ## 번역 설정 관리 {#managing-translation-settings}
 

@@ -19,15 +19,15 @@ ht-degree: 11%
 # Adobe Experience Manager 6.5 Communities 안내서 {#communities}
 
 + [Communities 안내서](home.md)
-+ AEM Communities 소개 {#introduction}
++ AEM Communities {#introduction} 소개
    + [커뮤니티 사이트](administer-landing.md)
    + [AEM Communities 개요](overview.md)
-   + [AEM Communities 시작하기](getting-started.md)
+   + [AEM Communities 시작](getting-started.md)
    + [초기 설정](setup.md)
    + [새 커뮤니티 사이트 작성자](create-site.md)
    + [게시된 사이트 경험](published-site.md)
-   + [중첩 그룹 작성](nested-groups.md)
-+ 배포 {#deploy}
+   + [중첩된 그룹 작성](nested-groups.md)
++ {#deploy} 배포 중
    + [커뮤니티 배포](deploy-communities.md)
    + [AEM 6.5 커뮤니티로 업그레이드](upgrade.md)
    + [커뮤니티에 대해 권장되는 토폴로지](topologies.md)
@@ -53,7 +53,7 @@ ht-degree: 11%
    + [사이트 템플릿](sites.md)
    + [그룹 템플릿](tools-groups.md)
    + [커뮤니티 기능](functions.md)
-   + [저장소 구성](srp-config.md)
+   + [스토리지 구성](srp-config.md)
    + [배지 콘솔](badges.md)
    + [보고서 콘솔](reports.md)
    + [커뮤니티에 대한 FFmpeg](ffmpeg.md)
@@ -65,7 +65,7 @@ ht-degree: 11%
    + [DSRP - 관계형 데이터베이스 저장소 리소스 제공자](dsrp.md)
    + [DSRP에 대한 MySQL 구성](dsrp-mysql.md)
    + [JSRP - JCR 저장소 리소스 제공자](jsrp.md)
-   + [SRP에 대한 Solr 구성](solr.md)
+   + SRP에 대한 [Solr 구성](solr.md)
    + [사용자 생성 컨텐츠 태깅](tag-ugc.md)
    + [사용자 생성 콘텐츠 번역](translate-ugc.md)
    + [커뮤니티 사용자 동기화](sync.md)
@@ -83,9 +83,9 @@ ht-degree: 11%
    + [SCF Handlebars 도우미](handlebars-helpers.md)
    + [저장소 리소스 공급자 개요](srp.md)
    + [커뮤니티 사이트 기본 사항](sites-for-developers.md)
-   + [활동 스트림 Essentials](essentials-activities.md)
+   + [Activity Stream Essentials](essentials-activities.md)
    + [블로그 기본 사항](blog-developer-basics.md)
-   + [달력 기본 사항](calendar-basics-for-developers.md)
+   + [일정 기본 사항](calendar-basics-for-developers.md)
    + [커뮤니티 구성 요소에 대한 Clientlibs](clientlibs.md)
    + [댓글 기본 사항](essentials-comments.md)
    + [커뮤니티 구성 요소에 대한 OSGi 이벤트](events.md)
@@ -134,7 +134,7 @@ ht-degree: 11%
    + [커뮤니티 구성 요소 기본 사항](basics.md)
    + [활동 스트림 기능](activities.md)
    + [블로그 기능](blog-feature.md)
-   + [달력 기능](calendar.md)
+   + [일정 기능](calendar.md)
    + [주석 사용](comments.md)
    + [특별 포함된 컨텐츠 기능](featured.md)
    + [파일 라이브러리 기능](file-library.md)

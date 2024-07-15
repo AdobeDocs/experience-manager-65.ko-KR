@@ -20,13 +20,13 @@ ht-degree: 1%
 
 JCR, Apache Sling 또는 Adobe Experience Manager(AEM) 애플리케이션을 개발하기 위해 다음 도구 세트를 사용할 수 있습니다.
 
-* 다음 세트로 구성된 한 세트 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 및 WebDAV입니다. CRXDE Lite은 CRX/AEM에 포함되어 있으며 브라우저에서 표준 개발 작업을 수행할 수 있도록 해줍니다. CRXDE Lite을 사용하면 SVN에 로그인하고 통합하는 동안 파일(.jsp 및 .java 등), 폴더, 템플릿, 구성 요소, 대화 상자, 노드, 속성 및 번들을 만들고 편집할 수 있습니다.
+* [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 및 WebDAV로 구성된 한 집합입니다. CRXDE Lite은 CRX/AEM에 포함되어 있으며 브라우저에서 표준 개발 작업을 수행할 수 있도록 해줍니다. CRXDE Lite을 사용하면 SVN에 로그인하고 통합하는 동안 파일(.jsp 및 .java 등), 폴더, 템플릿, 구성 요소, 대화 상자, 노드, 속성 및 번들을 만들고 편집할 수 있습니다.
 
-  CRXDE Lite은 CRX/AEM 서버에 직접 액세스할 수 없는 경우, 기본 제공 구성 요소 및 Java™ 번들을 확장 또는 수정하여 애플리케이션을 개발하는 경우 또는 전용 디버거, 코드 완성 및 구문 강조 표시가 필요하지 않은 경우 권장됩니다.
+  CRX/AEM 서버에 직접 액세스할 수 없는 경우, 기본 제공 구성 요소 및 Java™ 번들을 확장 또는 수정하여 애플리케이션을 개발하는 경우 또는 전용 디버거, 코드 완성 및 구문 강조 표시가 필요하지 않은 경우 CRXDE Lite을 사용하는 것이 좋습니다.
 
 * 한 세트는 다음과 같이 구성됩니다.
-   * 통합 개발 환경. 예를 들어, [Eclipse](/help/sites-developing/howto-projects-eclipse.md) 또는 [IntelliJ](/help/sites-developing/ht-intellij.md).
-   * 빌드 도구입니다. 예를 들어, [Apache Maven](/help/sites-developing/ht-projects-maven.md).
+   * 통합 개발 환경. 예: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) 또는 [IntelliJ](/help/sites-developing/ht-intellij.md).
+   * 빌드 도구입니다. 예: [Apache Maven](/help/sites-developing/ht-projects-maven.md).
    * FileVault는 Adobe이 저장소를 파일 시스템인 버전 제어 시스템에 매핑하기 위해 개발했습니다. 예: Subversion.
    * 버그 추적기 시스템. 예를 들어, Jira입니다.
    * 중앙 종속성 관리 시스템입니다. 예: Apache Archiva.
@@ -64,4 +64,4 @@ AEM은 개발을 용이하게 하는 기타 도구와 함께 제공됩니다.
 >[!NOTE]
 >
 >다음 튜토리얼은 새 AEM 프로젝트를 시작하는 데 도움이 될 수 있습니다.
->[AEM Sites 1부 시작하기 - 프로젝트 설정](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
+>[AEM Sites 1부 시작 - 프로젝트 설정](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)

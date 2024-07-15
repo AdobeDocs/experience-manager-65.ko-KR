@@ -29,7 +29,7 @@ ht-degree: 3%
    <td>social/ideation/components/hbs/ideation</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함하기 쉬워</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
    <td>아니요</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td>다음을 참조하십시오 <a href="ideation-feature.md">관념화 기능</a></td>
+   <td><a href="ideation-feature.md">관념화 기능</a>을 참조하세요.</td>
   </tr>
  </tbody>
 </table>
@@ -55,4 +55,4 @@ ht-degree: 3%
 
 ### 관념화 기능 {#ideation-function}
 
-다음을 포함하는 커뮤니티 사이트 구조 [관념화 함수](functions.md#ideation-function), 구성된 포함 `ideation` 구성 요소.
+[Ideation 함수](functions.md#ideation-function)이(가) 포함된 커뮤니티 사이트 구조에는 구성된 `ideation` 구성 요소가 포함되어 있습니다.

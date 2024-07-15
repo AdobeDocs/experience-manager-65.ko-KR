@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # EMC Documentum용 커넥터 구성 {#configuring-connector-for-emc-documentum}
 
-EMC Documentum용 커넥터를 사용하면 AEM Forms와 EMC Documentum 간의 통신이 가능합니다. 추가 배경 정보는 의 &quot;ECM용 커넥터&quot;를 참조하십시오. [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+EMC Documentum용 커넥터를 사용하면 AEM Forms와 EMC Documentum 간의 통신이 가능합니다. 추가 배경 정보는 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)의 &quot;ECM용 커넥터&quot;를 참조하십시오.
 
 EMC Documentum용 커넥터 설정에는 서버 접속 및 저장소 자격 증명 구성이 포함됩니다.
 
@@ -60,11 +60,11 @@ EMC Documentum용 커넥터 설정에는 서버 접속 및 저장소 자격 증�
 
 Documentum에서 사용할 저장소 서비스 공급자를 구성할 수 있습니다. 저장소 서비스 호출은 사용자가 구성하는 공급자에게 위임됩니다. 다음 옵션을 사용할 수 있습니다.
 
-**현재 저장소 서비스 공급자 이름:** 현재 저장소 서비스 공급자의 이름입니다.
+**현재 저장소 서비스 공급자 이름:** 현재 저장소 서비스 공급자의 이름입니다
 
-**ECM Documentum Repository Provider:** Documentum 저장소 공급자를 저장소 공급자로 지정합니다. 이 옵션은 더 이상 사용되지 않습니다
+**ECM Documentum 저장소 공급자:** Documentum 저장소 공급자를 저장소의 공급자로 설정합니다. 이 옵션은 더 이상 사용되지 않습니다
 
-**저장소 공급자:** 기본 리포지토리 공급자를 리포지토리 공급자로 만듭니다.
+**저장소 공급자:** 기본 저장소 공급자를 저장소의 공급자로 만듭니다.
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ EMC Documentum Service용 Content Repository Connector 및/또는 EMC Documentum
 
 EMC Documentum Service용 Content Repository Connector 및/또는 EMC Documentum용 Repository Service가 실행 중인 경우 데이터베이스에 저장되기 전에 지정된 저장소에 대해 자격 증명 정보를 확인합니다. 자격 증명이 유효하지 않거나 존재하는 경우 오류 메시지가 표시됩니다.
 
-## 작업 영역 작업 큐 공유 요청 활성화 {#enable-the-request-for-sharing-of-workspace-task-queues}
+## Workspace 작업 큐 공유 요청 활성화 {#enable-the-request-for-sharing-of-workspace-task-queues}
 
 Workspace의 작업 대기열 공유 요청 기능이 Connector for EMC Documentum에서 제대로 작동하도록 하려면 몇 가지 수동 단계가 필요합니다.
 

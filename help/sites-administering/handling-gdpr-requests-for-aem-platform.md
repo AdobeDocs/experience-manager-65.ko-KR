@@ -27,7 +27,7 @@ AEM Foundation 수준에서 저장되는 개인 데이터는 사용자 프로필
 
 ### 설명서 단계 {#manual-steps}
 
-1. 을 찾아 사용자 관리 콘솔을 엽니다. **[!UICONTROL 설정 - 보안 - 사용자]** 또는 을 바로 탐색하여 `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. **[!UICONTROL 설정 - 보안 - 사용자]** 또는 `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`에서 바로 검색하여 사용자 관리 콘솔을 엽니다.
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -58,7 +58,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-*사용자 데이터 검색 중*
+*사용자 데이터 검색*
 
 위 명령에서 반환된 JSON 페이로드의 홈 속성에서 노드 경로 사용:
 
@@ -91,26 +91,26 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### 사용자 프로필 정보 삭제 {#delete-user-profile-information}
 
-1. CRXDE Lite에 로그인한 다음 `[!UICONTROL userId]`:
+1. CRXDE Lite에 로그인한 다음 `[!UICONTROL userId]`을(를) 검색합니다.
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. 아래에 있는 사용자 노드를 엽니다. `[!UICONTROL /home/users]` 기본적으로:
+1. 기본적으로 `[!UICONTROL /home/users]` 아래에 있는 사용자 노드를 엽니다.
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
 1. 프로필 노드 및 모든 하위 항목을 삭제합니다. 프로필 노드에는 AEM 버전에 따라 두 가지 형식이 있습니다.
 
-   1. 아래의 기본 개인 프로필 `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`AEM 6.5를 사용하여 만든 새 프로필의 경우.
+   1. `[!UICONTROL /profile]` 아래의 기본 개인 프로필
+   1. `[!UICONTROL /profiles]`(AEM 6.5를 사용하여 만든 새 프로필의 경우).
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
 ### HTTP API {#http-api-1}
 
-다음 절차는 `curl` 를 사용하여 사용자를 비활성화하는 방법을 보여 주는 명령줄 도구 **[!UICONTROL 은폐]** `userId` 및 프로필 삭제 `cavery` 기본 위치에서 사용할 수 있습니다.
+다음 절차에서는 `curl` 명령줄 도구를 사용하여 **[!UICONTROL cavery]** `userId`을(를) 통해 사용자를 비활성화하고 기본 위치에서 사용할 수 있는 `cavery`의 프로필을 삭제하는 방법에 대해 설명합니다.
 
-* *사용자 홈 탐색*
+* *사용자 홈 찾기*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'

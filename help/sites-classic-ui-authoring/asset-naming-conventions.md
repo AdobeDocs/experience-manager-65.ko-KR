@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 에셋 테스트를 위한 이름 지정 규칙{#naming-conventions-for-assets-testing}
 
-저장소의 노드는 의 이름 지정 규칙에 따라 다릅니다. [Java 콘텐츠 저장소](/help/sites-developing/the-basics.md#java-content-repository). 하지만 Adobe Experience Manager은 에셋 노드의 이름에 대한 추가 규칙을 지정합니다.
+저장소의 노드는 [Java 콘텐츠 저장소](/help/sites-developing/the-basics.md#java-content-repository)의 이름 지정 규칙을 따릅니다. 하지만 Adobe Experience Manager은 에셋 노드의 이름에 대한 추가 규칙을 지정합니다.
 
 ## 클래식 UI {#classic-ui}
 
@@ -35,4 +35,4 @@ ht-degree: 1%
    * &#39;A&#39;에서 &#39;Z&#39;로
    * &#39;0&#39;에서 &#39;9&#39;
    * _(밑줄)
-   * `-` (대시/빼기)
+   * `-`(대시/빼기)

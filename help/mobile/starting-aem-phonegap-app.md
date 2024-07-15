@@ -30,18 +30,18 @@ Starterkit을 사용하면 AEM Mobile 개발의 기본 사항을 안내하여 �
 
 개발자는 이 예제를 PhoneGap을 사용하여 AEM Mobile 애플리케이션을 시도하는 시작점으로 사용할 수 있습니다. Starterkit과 참조 애플리케이션을 통해 실행할 경우 풍부한 모바일 애플리케이션을 만드는 기본 사항을 확실하게 이해할 수 있습니다.
 
-* 사용 [AEM PhoneGap 시작 키트](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) AEM Mobile 카탈로그에 적합한 앱을 만들 수 있습니다.
-* A [참조 앱](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) 기존 앱을 AEM Mobile으로 마이그레이션하거나 새로 시작하는지에 관계없이 AEM Mobile의 많은 새로운 기능을 보여 주는 전체 소스가 생성되었습니다.
-* 모든 샘플은 github에서 찾을 수 있습니다. [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) Maven을 사용하여 프로젝트를 부트스트랩할 수 있습니다.
-* 대부분의 전화 회의 대화는 [주방 싱크 자습서](https://github.com/blefebvre/aem-phonegap-kitchen-sink): GitHub에서도 찾을 수 있으며 Apache Cordova 기본 확장성 사용에 중점을 둡니다.
+* [AEM PhoneGap 시작 키트](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit)를 사용하여 AEM Mobile 카탈로그에 적합한 앱을 만드십시오.
+* 기존 앱을 AEM Mobile으로 마이그레이션하거나 새로 시작하는지에 관계없이 AEM Mobile의 많은 새로운 기능을 보여 주는 전체 원본이 있는 [참조 앱](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference)이 만들어졌습니다.
+* 모든 샘플은 github: [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps)에서 찾을 수 있으며 Maven로 프로젝트 부트스트래핑을 포함합니다.
+* 대부분의 컨퍼런스 토크는 GitHub에서도 찾을 수 있고 Apache Cordova 기본 확장성의 사용에 초점을 맞춘 [Kitchen Sink 튜토리얼](https://github.com/blefebvre/aem-phonegap-kitchen-sink)을 사용합니다.
 
 >[!NOTE]
 >
->스타터킷을 숙지할 기회가 생긴다면 Adobe Experience Manager에 대해 알아보는 것이 중요합니다 *구성 요소 및 템플릿.*
+>Starterkit에 익숙해지면 Adobe Experience Manager *구성 요소 및 템플릿*&#x200B;에 대해 알아보는 것이 중요합니다.
 
 ## 템플릿 및 구성 요소 {#templates-and-components}
 
-AEM *템플릿* 및 *구성 요소* lob(기간 업무) 소유자가 사용자 정의 경험을 만들 수 있도록 합니다. *템플릿 *및 *구성 요소* 는 즉시 사용할 수 있거나 개발자인 사용자가 기존 구성 요소를 확장하거나 그린필드(고급)를 만들어 사용자 정의 개발할 수 있습니다. *템플릿* 및 *구성 요소* AEM 작성자가 끌어다 놓아 매력적인 관련 경험을 만들 수 있는 방법입니다.
+AEM *템플릿* 및 *구성 요소*&#x200B;를 사용하면 사업부 소유자가 사용자 지정 경험을 만들 수 있습니다. *템플릿 *와 *구성 요소*&#x200B;는 모두 즉시 사용할 수 있거나 개발자인 사용자가 기존 구성 요소를 확장하거나 그린필드(고급)를 만들어 사용자 지정 개발할 수 있습니다. *템플릿* 및 *구성 요소*&#x200B;를 통해 AEM 작성자는 끌어다 놓아 매력적인 관련 경험을 만들 수 있습니다.
 
 1. [구성 요소 만들기](/help/sites-developing/components.md)
 1. [템플릿 만들기](/help/sites-developing/templates.md)

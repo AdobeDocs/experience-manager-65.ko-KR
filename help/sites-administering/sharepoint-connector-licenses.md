@@ -40,7 +40,7 @@ ht-degree: 1%
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| 동시 실행 | [동시 실행](#concurrent) (공개 도메인) |
+| 동시 실행 | [동시](#concurrent)(공용 도메인) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -59,12 +59,12 @@ ht-degree: 1%
 | wstx-asl | [Apache](#apache) |
 | 잘란 | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-api | [Apache](#apache) (공용 도메인 및 W3C 소프트웨어 라이선스가 적용되는 부분 포함) |
+| xml-api | [Apache](#apache)(공용 도메인 및 W3C 소프트웨어 라이선스가 적용되는 부분 포함) |
 | XmlSchema | [Apache](#apache) |
 
 ## CRX 타사 라이브러리 개요 {#overview-of-crx-rd-party-libraries}
 
-다음 표에는 CRX에서 사용되는 타사 라이브러리와 함께 이러한 라이브러리가 적용되는 라이센스, 저작권 공지 또는 면책조항이 나열되어 있습니다.
+다음 표에는 CRX 내에서 사용되는 서드파티 라이브러리와 해당 라이브러리가 적용되는 라이선스, 저작권 공지 또는 면책조항이 나열되어 있습니다.
 
 <table>
  <colgroup>

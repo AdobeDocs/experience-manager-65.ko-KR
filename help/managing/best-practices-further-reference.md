@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 검사 목록 - 추가 참조{#the-checklist-further-reference}
 
-이 페이지에서는 다음 내용에 포함된 문서 및 원칙을 자세히 설명하고 보강할 수 있는 자세한 내용을 제공합니다. [프로젝트 관리 - 우수 사례 검사 목록](/help/managing/best-practices.md).
+이 페이지에서는 [프로젝트 관리 - 모범 사례 검사 목록](/help/managing/best-practices.md)에서 다루는 문서 및 원칙을 자세히 설명하고 보강하는 데 필요한 자세한 정보를 제공합니다.
 
 ## AEM - 무엇을 사용하시겠습니까? {#aem-what-will-you-be-using}
 
@@ -28,25 +28,25 @@ ht-degree: 1%
 
 ### AEM의 기능 {#features-within-aem}
 
-AEM을 구현할 때(특히 처음으로) [AEM의 기능 및 워크플로](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html) 원하는 영역과 필요한 영역을 확인해야 합니다.
+AEM을 구현할 때(특히 처음으로) AEM의 [기능 및 워크플로](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)를 검토하여 원하거나 필요한 영역을 확인하십시오.
 
 사용 중인 AEM의 기능과 디자인에 미치는 영향을 고려하십시오. 예를 들면 다음과 같습니다.
 
 * [상거래](/help/commerce/cif-classic/administering/ecommerce.md)
-* [스크린](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [자산](/help/assets/assets.md)
 * [태그](/help/sites-administering/tags.md)
 * [다중 사이트 관리 및 번역](/help/sites-administering/msm-and-translation.md)
 * [Forms](/help/forms/using/introduction-aem-forms.md)
 * [커뮤니티](/help/communities/deploy-communities.md)
 
-또한 다음을 확인하십시오. [릴리스 정보](/help/release-notes/release-notes.md)를 사용하여 다양한 AEM 버전에서 새 기능이 추가된 시기를 확인할 수 있습니다.
+또한 다양한 AEM 버전에 대한 [릴리스 정보](/help/release-notes/release-notes.md)를 확인하여 새로운 기능이 추가된 시기를 확인하십시오.
 
 ### 통합 {#integrations}
 
 AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합할 수 있습니다. 이러한 워크플로우는 원하는 대로 성능과 기능을 향상시킬 수 있습니다.
 
-다음을 참조하십시오 [솔루션 통합](/help/sites-administering/integration.md) 전체 정보.
+자세한 내용은 [솔루션 통합](/help/sites-administering/integration.md)을 참조하십시오.
 
 ## 마이그레이션 또는 업그레이드 {#migrate-or-upgrade}
 
@@ -57,8 +57,8 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
 이전 버전에서 현재 버전으로 이동할 때 두 가지 옵션이 있습니다.
 
-* 사용 [패키지 관리자](/help/sites-administering/package-manager.md) 이전 시스템의 모든 컨텐츠 및 응용 프로그램 코드를 새 시스템으로 내보냅니다.
-* [업그레이드](/help/sites-deploying/upgrade.md) 기존 시스템. 일반적으로 이 방법을 사용하는 것이 좋습니다.
+* [패키지 관리자](/help/sites-administering/package-manager.md)를 사용하여 모든 콘텐츠 및 응용 프로그램 코드를 이전 시스템에서 새 시스템으로 내보냅니다.
+* 기존 시스템을 [업그레이드](/help/sites-deploying/upgrade.md)합니다. 일반적으로 이 방법을 사용하는 것이 좋습니다.
 
 ## 기본 기본 기본 기본 규칙 {#basic-ground-rules}
 
@@ -66,7 +66,7 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
 >[!NOTE]
 >
->이러한 지점은 일반적이고 [우수 사례 검사 목록](/help/managing/best-practices.md) 은 AEM과 관련된 세부 사항을 다룹니다.
+>[모범 사례 검사 목록](/help/managing/best-practices.md)에서는 AEM과 관련된 세부 사항을 다룹니다.
 
 * **역할**
 
@@ -79,9 +79,9 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
    * 각 역할에 대해 프로젝트와 관련된 책임을 명확하게 정의하면 혼동을 방지할 수 있습니다.
 
-* **관여**
+* **참여**
 
-  이해 관계자들을 가능한 한 빨리 참여시킴으로써, 당신은 그들이 될 수 있도록 격려할 수 있습니다 *이해 당사자* 을 클릭합니다. 그렇게 하면 성공에 대한 그들의 헌신이 높아집니다.
+  이해 당사자를 가능한 한 빨리 참여시켜 해당 사용자가 프로젝트에서 *이해 당사자*&#x200B;가 되도록 유도할 수 있습니다. 그렇게 하면 성공에 대한 그들의 헌신이 높아집니다.
 
    * 고객 측면에서는 이 역할에 매일 시스템을 사용하는 작성자가 포함됩니다
    * 자체 프로젝트 팀 내에서 이 참여에는 품질 보증을 담당하는 사람도 포함됩니다. 고객의 요구 사항을 더 잘 이해할수록 테스트를 더 잘 계획할 수 있습니다.
@@ -99,7 +99,7 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
 * **추적 도구**
 
-  버그, 작업 및 프로젝트의 다른 측면에 대한 정보를 추적하는 데 사용할 수 있는 다양한 도구가 있습니다. 다음을 참조하십시오. [잠재적 도구 개요](#overview-of-potential-tools) 을 참조하십시오.
+  버그, 작업 및 프로젝트의 다른 측면에 대한 정보를 추적하는 데 사용할 수 있는 다양한 도구가 있습니다. 자세한 내용은 [잠재적인 도구에 대한 개요](#overview-of-potential-tools)를 참조하세요.
 
    * 여기서 주목할 점은 정보의 사본을 하나만 보관하고 정보를 공유(따라서 사용 중인 도구에 대한 액세스)하는 것입니다. 이 워크플로우에서는 유지 관리가 쉬워지며 불일치를 방지할 수 있습니다.
 
@@ -110,7 +110,7 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
    * 개별 릴리스(반복 릴리스 프로세스를 사용하는 경우 및 고객에게 전달되었는지 내부 테스트 팀에 전달되었는지 여부에 상관없이).
    * AEM 프로젝트.
    * 타사 소프트웨어, 테스트에 미치는 영향, 조직 문제 등 전체 프로젝트.
-   * 특정 측면들에 대해, 무엇이 무엇인지를 서술하는 것도 유용할 수 있다 *아님* 프로젝트의 범위 내에서. 이 아이디어는 필수적인 문제로 제한되어야 하지만 혼란과 잘못된 가정을 방지하는 데 도움이 될 수 있습니다.
+   * 특정 측면에서는 프로젝트 범위 내에 *not*&#x200B;이(가) 무엇인지 설명하는 것도 유용할 수 있습니다. 이 아이디어는 필수적인 문제로 제한되어야 하지만 혼란과 잘못된 가정을 방지하는 데 도움이 될 수 있습니다.
 
 * **보고**
 
@@ -150,22 +150,22 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
 ### Target 지표 {#target-metrics}
 
-지표는 웹 사이트의 품질에 대한 정량적 측정을 정의하는 데 사용됩니다. 기본적으로 달성하고자 하는 성능 목표에 대한 정의이며, 다음을 정의하는 데 사용할 수 있습니다. [KPI(주요 성과 지표)](#key-performance-indicators-and-target-metrics).
+지표는 웹 사이트의 품질에 대한 정량적 측정을 정의하는 데 사용됩니다. 기본적으로 달성하려는 성과 목표의 정의이며 [KPI(주요 성과 지표)](#key-performance-indicators-and-target-metrics)를 정의하는 데 사용할 수 있습니다.
 
-많은 지표를 정의할 수 있지만, 정의하는 지표가 성과 및 동시성 목표를 다루는 경우가 많습니다. 특히, 정량화가 어려울 수 있고 종종 다음과 같은 요인들이 있습니다. *감정* 평가:
+많은 지표를 정의할 수 있지만, 정의하는 지표가 성과 및 동시성 목표를 다루는 경우가 많습니다. 특히, 정량화하기 어려울 수 있고 종종 *감정* 평가를 받기 쉽습니다.
 
-* &quot;웹 사이트는 *너무 느림* today&quot; - 언제 *느림* 선별?
+* &quot;웹 사이트가 오늘 *너무 느림*&quot; - *느림*&#x200B;은(는) 언제 유효합니까?
 
-* &quot;모두&quot; *서서히 멈추다* 내 동료가 로그인할 때&quot; - 시스템이 지원할 수 있는 동시 사용자 수
-* &quot;검색하면 시스템이 *서서히 멈추다* &quot; - 어떤 검색 요청이 시스템에 영향을 줍니까?
-* &quot;시간이 걸린다 *세* 파일을 다운로드하려면&quot; - 정상적인 네트워크 조건에서 허용되는 다운로드 시간은 얼마입니까?
+* &quot;동료가 로그인할 때 *모든 작업이 중지됨*&quot; - 시스템을 지원할 수 있는 동시 사용자 수
+* &quot;검색할 때 시스템 *이(가) 중지됨*&quot; - 어떤 검색 요청이 시스템에 영향을 줍니까?
+* &quot;파일을 다운로드하는 데 *페이지*&#x200B;가 걸립니다.&quot; - 정상적인 네트워크 조건에서 허용되는 다운로드 시간은 얼마입니까?
 
 타겟 지표는 프로젝트 시작 시 다음과 같이 정의됩니다.
 
 * 제공할 수 있는 웹 사이트의 예상 차원을 나타냅니다.
 * 달성하고자 하는 최소 품질을 나타냅니다.
 * 이러한 요인의 측정 방법 정의
-* 의 기반으로 사용 [주요 성과 지표](#key-performance-indicators-and-target-metrics)
+* [주요 성능 지표](#key-performance-indicators-and-target-metrics)의 기반으로 사용됩니다.
 
 대상 지표를 정의할 때 항상 주의해야 하는 것처럼:
 
@@ -189,7 +189,7 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
 측정된 모든 지표는 프로젝트 설계의 영향을 받습니다. 반대로 많은 문제는 설계 변경을 통해 가장 잘 해결됩니다.
 
-따라서 타겟 지표를 정의합니다 *다음 이전* 디자인 결정. 이렇게 하면 이러한 요소를 기반으로 디자인을 최적화할 수 있습니다. 프로젝트가 개발되면 기본 디자인 원칙은 매우 어렵습니다.
+따라서 디자인을 결정하기 전에 *대상 지표를 정의하십시오*. 이렇게 하면 이러한 요소를 기반으로 디자인을 최적화할 수 있습니다. 프로젝트가 개발되면 기본 디자인 원칙은 매우 어렵습니다.
 
 웹 사이트에 대한 구조를 만들 때는 AEM 웹 사이트에 대해 권장되는 구조를 따르십시오. 다음 문제 및/또는 원칙을 이해했는지 확인하십시오.
 
@@ -227,7 +227,7 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
 * 검색 요청에 대한 응답 시간
 
-이 섹션은 다음으로 읽을 수 있습니다. [성능 최적화](/help/sites-deploying/configuring-performance.md) 이렇게 하면 실제로 성능을 측정하는 기술적인 세부 사항이 확장됩니다.
+이 섹션은 실제로 성능을 측정하는 기술적 세부 정보를 확장하는 [성능 최적화](/help/sites-deploying/configuring-performance.md)로 읽을 수 있습니다.
 
 #### 개별 페이지의 응답 시간 {#response-times-for-individual-pages}
 
@@ -246,7 +246,7 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
    * 콘텐츠 페이지 및 해당 페이지의 개별 요소를 업데이트할 때 많은 요청을 생성하는 일부 사용자를 위한 기능입니다
    * 가능한 한 빨리 콘텐츠를 웹 사이트로 가져올 수 있도록 생산성을 극대화하십시오.
 
-* **게시 환경**
+* **Publish 환경**
 
   이 환경에는 사용자가 사용할 수 있는 콘텐츠가 포함되어 있습니다.
 
@@ -284,7 +284,7 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
 * **AEM request.log를 사용하여 응답 시간 모니터링**
 
-  성능 분석의 좋은 시작점은 요청 로그입니다. 여러 정보 중에서 개별 요청의 응답 시간을 볼 수 있습니다. 다음을 참조하십시오 [성능 최적화](/help/sites-deploying/configuring-performance.md) 을 참조하십시오.
+  성능 분석의 좋은 시작점은 요청 로그입니다. 여러 정보 중에서 개별 요청의 응답 시간을 볼 수 있습니다. 자세한 내용은 [성능 최적화](/help/sites-deploying/configuring-performance.md)를 참조하십시오.
 
 * **HTML 댓글로 응답 시간 모니터링**
 
@@ -316,15 +316,15 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
 * **AEM request.log를 사용하여 검색 응답 시간 모니터링**
 
-  다시 request.log를 사용하여 검색 요청에 대한 응답 시간을 모니터링할 수 있습니다. 다음을 참조하십시오. [성능 최적화](/help/sites-deploying/configuring-performance.md) 을 참조하십시오.
+  다시 request.log를 사용하여 검색 요청에 대한 응답 시간을 모니터링할 수 있습니다. 자세한 내용은 [성능 최적화](/help/sites-deploying/configuring-performance.md)를 참조하십시오.
 
-* **검색 응답 시간을 측정하기 위한 프로그래밍 메커니즘**
+* **검색 응답 시간을 측정하기 위해 프로그래밍된 메커니즘**
 
-  검색 요청과 그 성능에 대해 수집하는 정보를 사용자 정의하려면 프로젝트 소스 코드에 정보 수집을 포함하는 것이 좋습니다. 를 참조하십시오. [성능 최적화](/help/sites-deploying/configuring-performance.md) 을 참조하십시오.
+  검색 요청 및 성능에 대해 수집하는 정보를 사용자 지정하려면 프로젝트 소스 코드에 정보 수집을 포함하는 것이 좋습니다. 자세한 내용은 [성능 최적화](/help/sites-deploying/configuring-performance.md)를 참조하십시오.
 
 ### 동시성 {#concurrency}
 
-작성자와 게시 환경 모두에서 일부 사용자와 방문자가 웹 사이트를 사용할 수 있도록 합니다. 이 수치는 종종 테스트 할 때 사용하는 것보다 더 많지만 변동이 심하고 예측하기 어렵습니다. 부정적인 성능에 대한 영향을 알지 못하고 평균 동시 사용자 및 방문자 수에 맞게 웹 사이트를 디자인할 수 있습니다. 다시 한 번 `request.log` 동시성 테스트를 만듭니다. 다음을 참조하십시오 [성능 최적화](/help/sites-deploying/configuring-performance.md) 을 참조하십시오.
+작성자와 게시 환경 모두에서 일부 사용자와 방문자가 웹 사이트를 사용할 수 있도록 합니다. 이 수치는 종종 테스트 할 때 사용하는 것보다 더 많지만 변동이 심하고 예측하기 어렵습니다. 부정적인 성능에 대한 영향을 알지 못하고 평균 동시 사용자 및 방문자 수에 맞게 웹 사이트를 디자인할 수 있습니다. 다시 `request.log`을(를) 사용하여 동시성 테스트를 만듭니다. 자세한 내용은 [성능 최적화](/help/sites-deploying/configuring-performance.md)를 참조하십시오.
 
 동시 사용자 수의 대상은 환경 유형에 따라 다릅니다.
 
@@ -332,7 +332,7 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
    * 일반적으로 동시 사용자의 수를 정확하게 예측할 수 있습니다. 총 몇 명의 작성자가 있는지 알 수 있지만 모두 동시에 활성화되지는 않을 수 있습니다.
 
-* **게시 환경**
+* **Publish 환경**
 
    * 게시 환경은 예측하기 더 어렵기 때문에 타겟 값을 선택해야 합니다. 다시 말하지만, 이는 새 웹 사이트에 대한 현실적인 기대와 함께 현재 웹 사이트의 경험을 기반으로 해야 합니다.
    * 특별 이벤트(예: 새로운 인기 콘텐츠를 게시하는 경우)는 기대치를 초과할 수 있습니다. 또는 기능(특정 이벤트 티켓이 판매될 때 언론에 보도되는 것과 같이)도 초과할 수 있습니다.
@@ -372,9 +372,9 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
 ## 보안 {#security}
 
-보안은 중요하고 계속 증가하는 도전입니다. It ***필수*** 프로젝트의 초기 단계부터 고려 및 계획됩니다.
+보안은 중요하고 계속 증가하는 도전입니다. 프로젝트의 초기 단계에서 ***고려 및 계획되어야***&#x200B;합니다.
 
-다음 [보안 검사 목록](/help/sites-administering/security-checklist.md) 배포 시 AEM 설치가 안전한지 확인하기 위해 수행해야 하는 세부 단계입니다. 다른 보안 측면은에서 다룹니다. [보안(개발 시)](/help/sites-developing/security.md) 및 [사용자 관리 및 보안](/help/sites-administering/security.md).
+[보안 검사 목록](/help/sites-administering/security-checklist.md)은 배포 시 AEM 설치가 안전한지 확인하기 위해 수행해야 하는 세부 단계입니다. 다른 보안 측면은 [보안(개발 시)](/help/sites-developing/security.md) 및 [사용자 관리 및 보안](/help/sites-administering/security.md)에서 다룹니다.
 
 ## 병렬 및 반복 작업 {#parallel-and-iterative-tasks}
 
@@ -382,18 +382,18 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 >
 >다음을 수행합니다.
 >
->* 와 관련된 개요를 제공합니다. *첫 번째* AEM 프로젝트 구현.
->* 이는 추상적인 개요입니다. 다음을 참조하십시오. [프로젝트 체크리스트](/help/managing/best-practices.md) 특정 단계/이정표/작업의 경우.
+>* AEM 프로젝트의 *first* 구현과 관련된 개요를 제공합니다.
+>* 이는 추상 개요입니다. 특정 단계/마일스톤/작업에 대해서는 [프로젝트 검사 목록](/help/managing/best-practices.md)을 참조하세요.
 >* 모든 시간 척도는 이론적입니다.
 >
 
 표준 AEM 프로젝트의 새 구현의 경우 다음과 같은 작업을 고려하십시오.
 
 * 영업 프로세스의 인계.
-* 고객 애플리케이션 구현(**개발**).
-* 고객 사이트에서 인프라(및 관련 프로세스) 설치 및 구성(**인프라**).
-* 콘텐츠 만들기(또는 마이그레이션)(**콘텐츠**).
-* 작업으로의 핸드오버(**유지 관리/지원**).
+* 고객 응용 프로그램 구현(**개발**).
+* 고객 사이트(**인프라**)에 인프라(및 관련 프로세스)를 설치하고 구성합니다.
+* 콘텐츠(**콘텐츠**)를 만들거나 마이그레이션합니다.
+* 작업(**유지 관리/지원**)으로 인계합니다.
 * 후속 릴리스.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
@@ -404,11 +404,11 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
 
 >[!NOTE]
 >
->프로덕션 환경에서 실제 조건에서 조정, 최적화 및 사용자 교육을 허용하려면 프로젝트 출시를 로 분할합니다. **소프트 실행** (가용성 감소, 여러 번 반복) 및 **하드 론치** (전체 가용성 - 라이브).
+>프로덕션 환경에서 사실적인 조건에서 조정, 최적화 및 사용자 교육을 허용하려면 프로젝트 시작을 **소프트 실행**(가용성 감소, 여러 번 반복)과 **하드 실행**(전체 가용성 - 라이브)으로 분할하십시오.
 
 >[!NOTE]
 >
->다음을 참조하십시오. [프로젝트 체크리스트](/help/managing/best-practices.md) 프로젝트의 수명 주기 동안 수행(또는 평가)해야 하는 작업의 예입니다.
+>프로젝트의 수명 주기 동안 수행(또는 평가)해야 하는 작업의 예는 [프로젝트 검사 목록](/help/managing/best-practices.md)을 참조하십시오.
 
 각 범주에 대해 몇 가지 주의할 사항은 다음과 같습니다.
 
@@ -524,10 +524,10 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
    <td><p>AEM은 응용 프로그램을 모니터링, 테스트, 조사 및 디버깅하는 데 도움이 되는 다양한 메커니즘을 제공합니다.</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">개발자 모드</a></li>
-     <li>다음 <a href="/help/sites-developing/hobbes.md">테스트 콘솔</a></li>
+     <li><a href="/help/sites-developing/hobbes.md">테스트 콘솔</a></li>
      <li><a href="/help/sites-administering/operations-dashboard.md">작업 대시보드</a></li>
      <li><a href="/help/sites-authoring/content-insights.md">컨텐츠 인사이트</a></li>
-     <li>다음 <a href="/help/sites-authoring/author-environment-tools.md#content-tree">컨텐츠 트리</a></li>
+     <li><a href="/help/sites-authoring/author-environment-tools.md#content-tree">콘텐츠 트리</a></li>
     </ul> </td>
   </tr>
   <tr>
@@ -536,7 +536,7 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
   </tr>
   <tr>
    <td>Selenium</td>
-   <td><a href="https://www.selenium.dev/">Selenium</a> 는 오픈 소스 테스트 도구입니다. 테스트는 브라우저에서 직접 실행되어 사용자의 작업 방식을 에뮬레이션합니다.</td>
+   <td><a href="https://www.selenium.dev/">Selenium</a>은(는) 개방형 Source 테스트 도구입니다. 테스트는 브라우저에서 직접 실행되어 사용자의 작업 방식을 에뮬레이션합니다.</td>
   </tr>
   <tr>
    <td>Microsoft® 프로젝트</td>
@@ -544,23 +544,23 @@ AEM은 다른 Adobe 제품이나 서드파티 서비스 또는 둘 다와 통합
   </tr>
   <tr>
    <td>지라</td>
-   <td><a href="https://www.atlassian.com/software/jira">지라</a> 는 소프트웨어 버그의 세부 정보를 추적 및 관리하기 위한 오픈 소스 도구입니다. 워크플로우는 필요에 따라 버그 세부 사항에 적용할 수 있습니다.</td>
+   <td><a href="https://www.atlassian.com/software/jira">Jira</a>은(는) 소프트웨어 버그의 세부 정보를 추적 및 관리하는 오픈 Source 도구입니다. 워크플로우는 필요에 따라 버그 세부 사항에 적용할 수 있습니다.</td>
   </tr>
   <tr>
    <td>Git</td>
-   <td><a href="https://git-scm.com/">Git</a> 는 개정 제어 소프트웨어입니다.</td>
+   <td><a href="https://git-scm.com/">Git</a>은(는) 수정 버전 제어 소프트웨어입니다.</td>
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse는 다양한 프로젝트로 구성된 오픈 소스 IDE입니다. 전체 수명주기에 걸쳐 소프트웨어를 구축, 배포 및 관리하기 위한 확장 가능한 프레임워크, 도구 및 런타임으로 구성된 개방형 개발 플랫폼을 구축하는 데 중점을 두고 있습니다.</p> <p>다음을 참조하십시오 <a href="/help/sites-developing/howto-projects-eclipse.md">Eclipse를 사용하여 AEM 프로젝트를 개발하는 방법</a> 추가 정보.</p> </td>
+   <td><p>Eclipse는 다양한 프로젝트로 구성된 개방형 Source IDE입니다. 전체 수명주기에 걸쳐 소프트웨어를 구축, 배포 및 관리하기 위한 확장 가능한 프레임워크, 도구 및 런타임으로 구성된 개방형 개발 플랫폼을 구축하는 데 중점을 두고 있습니다.</p> <p>자세한 내용은 <a href="/help/sites-developing/howto-projects-eclipse.md">Eclipse를 사용하여 AEM 프로젝트를 개발하는 방법</a>을 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>광범위한 기능을 제공하는 전문 IDE(라이센스 비용 부담). </p> <p>다음을 참조하십시오 <a href="/help/sites-developing/ht-intellij.md">IntelliJ IDEA를 사용하여 AEM 프로젝트를 개발하는 방법</a> 추가 정보.</p> </td>
+   <td><p>광범위한 기능을 제공하는 전문 IDE(라이센스 비용 부담). </p> <p>자세한 내용은 <a href="/help/sites-developing/ht-intellij.md">IntelliJ IDEA를 사용하여 AEM 프로젝트를 개발하는 방법</a>을 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
-   <td><a href="https://maven.apache.org/">Maven</a> 는 프로젝트의 빌드 프로세스(소프트웨어 및 설명서)를 관리할 수 있는 소프트웨어 프로젝트 관리 및 이해 도구입니다.</td>
+   <td><a href="https://maven.apache.org/">Maven</a>은(는) 프로젝트의 빌드 프로세스(소프트웨어 및 설명서)를 관리할 수 있는 소프트웨어 프로젝트 관리 및 이해 도구입니다.</td>
   </tr>
  </tbody>
 </table>

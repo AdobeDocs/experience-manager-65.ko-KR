@@ -14,7 +14,7 @@ ht-degree: 63%
 
 # AEM Headless 여정 {#aem-headless-journeys}
 
-AEM의 강력한 Headless 기능을 이해하는 데 사용할 수 있는 가이드 여정에 대한 개요를 보려면 여기를 클릭하십시오.
+여기에서 AEM의 강력한 Headless 기능을 이해할 수 있는 가이드 여정에 대한 개요를 살펴보십시오.
 
 ## 소개 {#introduction}
 
@@ -22,7 +22,7 @@ Headless 구현은 채널에 관계없이 어디서든 경험을 대상자에게
 
 Headless 구현은 전체 스택 솔루션의 기존 방식과 마찬가지로 페이지 및 구성 요소 관리를 생략하고 채널 중립적이고 재사용 가능한 콘텐츠 조각 생성 및 크로스 채널 게재에 중점을 둡니다. 디지털 경험을 구현하기 위한 현대적이고 동적인 개발 패턴입니다.
 
-AEM 및/또는 Headless를 처음 사용하는 경우 AEM Headless 여정은 Headless 방식으로 다양한 비즈니스 문제를 해결하기 위한 이야기를 통해 이론과 기술을 이해하기 시작할 수 있는 좋은 장소입니다.
+AEM 및/또는 Headless를 처음 사용하는 경우 AEM의 Headless 여정은 Headless 방식으로 다양한 비즈니스 문제를 해결하기 위한 이야기를 통해 이론과 기술을 이해하기 시작할 수 있는 좋은 장소입니다.
 
 ## AEM 설명서 여정 {#documentation-journeys}
 

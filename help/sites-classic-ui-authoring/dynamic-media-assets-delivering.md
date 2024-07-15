@@ -23,7 +23,7 @@ Dynamic Media 에셋(비디오와 이미지 모두)을 전달하는 방법은 �
 Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 
 * 웹 사이트가 Adobe Experience Manager에서 호스팅되는 경우 Dynamic Media 에셋을 페이지에 바로 추가하려 합니다.
-* 웹 사이트가 Experience Manager에 없는 경우 [Dynamic Media 자산 제공](/help/assets/delivering-dynamic-media-assets.md) 터치 사용 가능 사용자 인터페이스에서 다음을 수행합니다.
+* 웹 사이트가 Experience Manager 상태가 아니면 터치 사용 가능 사용자 인터페이스에서 [Dynamic Media 에셋 배달](/help/assets/delivering-dynamic-media-assets.md)을 참조하세요.
 
 자세한 내용은 다음 항목을 참조하십시오.
 

@@ -49,7 +49,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td>processInstanceStatus</td>
-   <td>0 = 시작됨<br /> 1 = 실행 중<br /> 2 = 완료<br /> 3 = 완료 중<br /> 4 = 종료됨<br /> 5 = 종료 중<br /> 6 = 일시 중단됨<br /> 7 = 일시 중단<br /> 8 = 일시 중단 해제</td>
+   <td>0 = 시작됨<br /> 1 = 실행 중<br /> 2 = 완료<br /> 3 = 완료 중<br /> 4 = 종료됨<br /> 5 = 종료 중<br /> 6 = 일시 중단됨<br /> 7 = 일시 중단 중<br /> 8 = 일시 중단 해제 중</td>
   </tr>
   <tr>
    <td>processName</td>
@@ -61,16 +61,16 @@ ht-degree: 4%
   </tr>
   <tr>
    <td>프로세스 변수</td>
-   <td>프로세스 변수의 오브젝트 배열. 각 프로세스 변수 개체에는 <strong>이름</strong> (프로세스 변수의 이름), <strong>값</strong> (프로세스 변수 값),<strong> 유형</strong> (프로세스 변수의 유형).</td>
+   <td>프로세스 변수의 오브젝트 배열. 각 프로세스 변수 개체에는 <strong>name</strong>(프로세스 변수의 이름), <strong>value</strong>(프로세스 변수의 값) 및<strong> type</strong>(프로세스 변수의 유형)이 포함됩니다.</td>
   </tr>
  </tbody>
 </table>
 
 **예:**
 
-다음을 표시합니다. `description` 프로세스 인스턴스 카드의 프로세스 인스턴스 속성에서 다음 단계를 수행합니다.
+프로세스 인스턴스 카드에 프로세스 인스턴스의 `description` 속성을 표시하려면 다음 단계를 수행하십시오.
 
-1. 다음 [AEM Forms 작업 공간 사용자 정의에 대한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. [AEM Forms 작업 영역 사용자 지정에 대한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md)를 따릅니다.
 1. 다음 작업을 수행합니다.
 
    1. /libs/ws/js/runtime/templates/processinstance.html 이 없는 경우 /apps/ws/js/runtime/templates/에 복사합니다. **모두 저장**&#x200B;을 클릭합니다.
@@ -83,7 +83,7 @@ ht-degree: 4%
 1. 다음 작업을 수행합니다.
 
    1. 편집하려면 /apps/ws/js/registry.js을 여십시오.
-   1. 검색 및 바꾸기 `text!/lc/libs/ws/js/runtime/templates/processinstance.html`포함 `text!/lc/`**앱**/ws/js/runtime/templates/processinstance.html입니다.
+   1. `text!/lc/libs/ws/js/runtime/templates/processinstance.html`을(를) 검색하여 `text!/lc/`**앱**/ws/js/runtime/templates/processinstance.html으로 바꾸십시오.
 
 1. 위의 변경 사항을 적용하려면 스타일 시트 /apps/ws/css/newStyle.css에 다음과 같은 방식으로 항목을 추가하여 CSS 파일을 업데이트해야 할 수 있습니다.
 

@@ -19,13 +19,13 @@ ht-degree: 0%
 
 AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 포함된 프로세스 인스턴스의 세부 정보를 표시하는 데 사용됩니다. 추적 테이블을 보려면 먼저 왼쪽 창에서 프로세스 이름을 선택하여 중간 창에 인스턴스 목록을 표시합니다. 프로세스 인스턴스를 선택하여 오른쪽 창에서 이 인스턴스에서 생성한 작업 표를 확인합니다. 기본적으로 테이블 열에는 다음 작업 속성이 표시됩니다(작업 모델의 해당 속성은 괄호 안에 표시됨).
 
-* ID ( `taskId`)
-* 이름 ( `stepName`)
-* 지침 ( `instructions`)
-* 선택한 작업( `selectedRoute`)
-* 생성 시간( `createTime`)
-* 완료 시간 ( `completeTime`)
-* 소유자 ( `currentAssignment.queueOwner`)
+* ID( `taskId`)
+* 이름( `stepName`)
+* 지침( `instructions`)
+* 선택한 작업(`selectedRoute`)
+* 생성 시간(`createTime`)
+* 완료 시간(`completeTime`)
+* 소유자(`currentAssignment.queueOwner`)
 
 작업 테이블에 표시할 수 있는 작업 모델의 나머지 속성은 다음과 같습니다.
 
@@ -114,7 +114,7 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 포함된 프
  </tbody>
 </table>
 
-작업 테이블의 다음 사용자 지정의 경우 소스 코드에서 의미 체계를 변경해야 합니다. 다음을 참조하십시오 [AEM Forms 작업 영역 사용자 정의 소개](/help/forms/using/introduction-customizing-html-workspace.md) 작업 영역 SDK를 사용하여 의미 체계를 변경하고 변경된 소스에서 축소된 패키지를 빌드하는 방법에 대해 설명합니다.
+작업 테이블의 다음 사용자 지정의 경우 소스 코드에서 의미 체계를 변경해야 합니다. 작업 영역 SDK를 사용하여 의미 있는 변경 작업을 수행하고 변경된 소스에서 축소된 패키지를 빌드하는 방법에 대해서는 [AEM Forms 작업 영역 사용자 지정 소개](/help/forms/using/introduction-customizing-html-workspace.md)를 참조하십시오.
 
 ## 테이블 열 및 열 순서 변경 {#changing-table-columns-and-their-order}
 
@@ -156,7 +156,7 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 포함된 프
 
 열 머리글을 클릭할 때 작업 목록 테이블을 정렬하려면 다음을 수행합니다.
 
-1. 다음에 대한 클릭 처리기 등록 `.fixedTaskTableHeader th` 파일 내 `js/runtime/views/processinstancehistory.js`.
+1. `js/runtime/views/processinstancehistory.js` 파일에서 `.fixedTaskTableHeader th`의 클릭 처리기를 등록합니다.
 
    ```javascript
    events: {
@@ -166,7 +166,7 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 포함된 프
    }
    ```
 
-   핸들러에서 `onTaskTableHeaderClick` 기능 `js/runtime/util/history.js`.
+   처리기에서 `js/runtime/util/history.js`의 `onTaskTableHeaderClick` 함수를 호출합니다.
 
    ```javascript
    onTaskTableHeaderClick: function (event) {
@@ -174,7 +174,7 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 포함된 프
    }
    ```
 
-1. 다음 노출 `TaskTableHeaderClick` 방법 `js/runtime/util/history.js`.
+1. `js/runtime/util/history.js`에서 `TaskTableHeaderClick` 메서드를 표시합니다.
 
    이 메서드는 클릭 이벤트에서 작업 특성을 찾고, 해당 특성에 대한 작업 목록을 정렬하고, 정렬된 작업 목록과 함께 작업 테이블을 렌더링합니다.
 

@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # API를 사용하여 서비스 작업 수행 {#performing-service-operations-using-apis}
 
-**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
+**이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
-AEM Forms Adobe API를 사용하여 클라이언트 애플리케이션 개발을 시작하기 전에 먼저 서비스를 호출하는 여러 가지 방법을 설명하는 AEM Forms 호출 을 읽는 것이 좋습니다. (참조: [서비스 컨테이너](/help/forms/developing/service-container.md#service-container).)
+AEM Forms Adobe API를 사용하여 클라이언트 애플리케이션 개발을 시작하기 전에 먼저 서비스를 호출하는 여러 가지 방법을 설명하는 AEM Forms 호출 을 읽는 것이 좋습니다. ([서비스 컨테이너](/help/forms/developing/service-container.md#service-container)를 참조하세요.)
 
 다른 호출 메서드에 익숙해지면 각 서비스와 프로그래밍 방식으로 상호 작용하는 방법을 배울 수 있습니다. Adobe Flex® 빌더™, Java™ 개발 환경 또는 Microsoft® Visual Studio .NET과 같은 환경에서 네이티브 SOAP 스택에서 사용되는 데 노출된 WSDL을 사용할 수 있도록 허용하는 클라이언트 응용 프로그램을 개발할 수 있습니다.
 

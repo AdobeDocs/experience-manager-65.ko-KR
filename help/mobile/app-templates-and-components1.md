@@ -26,16 +26,16 @@ ht-degree: 1%
 
 각 템플릿에는 사용할 수 있는 구성 요소 선택 사항이 표시됩니다.
 
-* 템플릿은 다음으로 구성됩니다. [구성 요소](/help/sites-developing/components.md);
+* 템플릿은 [구성 요소](/help/sites-developing/components.md)(으)로 작성되었습니다.
 * 구성 요소는 위젯을 사용하고 이에 대한 액세스를 허용하며, 위젯은 콘텐츠를 렌더링하는 데 사용됩니다.
 
 >[!NOTE]
 >
->CRXDE Lite을 사용하여 Adobe Experience Manager(AEM) 애플리케이션을 개발하는 방법에 대해 알아보려면 다음을 참조하십시오. [CRXDE Lite을 사용한 개발](/help/sites-developing/developing-with-crxde-lite.md).
+>CRXDE Lite을 사용하여 Adobe Experience Manager(AEM) 응용 프로그램을 개발하는 방법에 대해 알아보려면 [CRXDE Lite을 사용하여 개발](/help/sites-developing/developing-with-crxde-lite.md)을 참조하세요.
 
 템플릿은 페이지의 기초입니다.
 
-페이지를 만들려면 템플릿을 복사해야 합니다(노드 트리) **/apps/&lt;myapp>/templates/&lt;mytemplate>**)를 사이트 트리의 해당 위치에 추가합니다. 이렇게 하는 것은 페이지를 **웹 사이트** 탭.
+페이지를 만들려면 템플릿을 사이트 트리의 해당 위치에 복사해야 합니다(노드 트리 **/apps/&lt;myapp>/templates/&lt;mytemplate>**). 이는 **웹 사이트** 탭을 사용하여 페이지를 만드는 경우에 발생합니다.
 
 또한 이 복사 작업은 페이지에 초기 콘텐츠(일반적으로 최상위 수준의 콘텐츠만 해당) 및 속성 sling:resourceType을 제공합니다. sling:resourceType은 페이지를 렌더링하는 데 사용되는 페이지 구성 요소의 경로(하위 노드 jcr:content에 있는 모든 항목)입니다.
 
@@ -46,14 +46,14 @@ ht-degree: 1%
 * 템플릿 자체의 구조
 * 템플릿 사용 시 생성되는 콘텐츠 구조
 
-템플릿은 유형의 노드 아래에 만들어집니다. **cq:Template**.
+**cq:Template** 유형의 노드 아래에 템플릿이 만들어졌습니다.
 
 다양한 속성을 설정할 수 있습니다. 특히
 
-* **jcr:title** - 템플릿 제목이며 페이지를 만들 때 대화 상자에 표시됩니다.
+* **jcr:title** - 템플릿의 제목입니다. 페이지를 만들 때 대화 상자에 표시됩니다.
 * **jcr:description** - 템플릿에 대한 설명. 페이지를 만들 때 대화 상자에 표시됩니다.
 
-이 노드에는 다음 항목이 포함됩니다. *jcr:content (cq:PageContent)* 결과 페이지의 콘텐츠 노드의 기반으로 사용되는 노드입니다. 이 참조는 *sling:resourceType*: 새 페이지의 실제 콘텐츠를 렌더링하는 데 사용할 구성 요소입니다.
+이 노드에는 결과 페이지의 콘텐츠 노드의 기반으로 사용되는 *jcr:content(cq:PageContent)* 노드가 포함되어 있습니다. 이 참조는 새 페이지의 실제 콘텐츠를 렌더링하는 데 사용할 구성 요소인 *sling:resourceType*&#x200B;을(를) 사용합니다.
 
 >[!NOTE]
 >

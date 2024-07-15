@@ -40,9 +40,9 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 
 <table>
  <tbody>
   <tr>
-   <td>로드 중 시스템 안정성과 성능을 개선하기 위한 자산 관련 다양한 영역의 모범 사례</td>
+   <td>로드 중 시스템 안정성과 성능을 개선하기 위한 Assets과 관련된 다양한 영역의 모범 사례입니다</td>
    <td><a href="/help/assets/best-practices-for-assets.md">에셋에 대한 우수 사례</a></td>
-   <td>에셋과 관련된 다양한 영역의 모범 사례 안내서에 대한 링크를 포함합니다. 이를 검토한 후 엔터프라이즈 자산 관리 시스템을 구축하고 관리할 수 있는 지식과 도구를 갖추게 됩니다.</td>
+   <td>Assets과 관련된 다양한 영역의 모범 사례 안내서에 대한 링크를 포함합니다. 이를 검토한 후 엔터프라이즈 자산 관리 시스템을 구축하고 관리할 수 있는 지식과 도구를 갖추게 됩니다.</td>
   </tr>
   <tr>
    <td>콘텐츠 구성 방법(폴더 계층 구조)</td>
@@ -52,12 +52,12 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 
   <tr>
    <td>Scene7 및 AEM 통합</td>
    <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Scene7과 AEM 통합을 위한 모범 사례</a></td>
-   <td><p>Polling Importer를 설정하는 시점, 통합을 테스트하는 방법, 콘텐츠 브라우저를 사용하여 에셋을 직접 업로드하는 경우에 대해 설명합니다.</p> </td>
+   <td><p>폴링 가져오기를 설정하는 시점, 통합을 테스트하는 방법, 콘텐츠 브라우저를 사용하여 Assets에 직접 업로드하는 시점에 대해 설명합니다.</p> </td>
   </tr>
   <tr>
    <td>이미지 사전 설정 옵션</td>
-   <td>이해 <a href="/help/assets/managing-image-presets.md#understanding-image-presets">이미지 사전 설정</a> 및 <a href="/help/assets/managing-image-presets.md#image-preset-options">이미지 사전 설정 우수 사례</a></td>
-   <td>에 대한 설명서의 일부로 <a href="/help/assets/managing-image-presets.md">이미지 사전 설정 관리</a>이 항목에서는 이미지 사전 설정이 무엇인지와 이미지 사전 설정 옵션 선택에 대한 모범 사례에 대해 설명합니다.</td>
+   <td><a href="/help/assets/managing-image-presets.md#understanding-image-presets">이미지 사전 설정</a> 및 <a href="/help/assets/managing-image-presets.md#image-preset-options">이미지 사전 설정 모범 사례</a> 이해</td>
+   <td><a href="/help/assets/managing-image-presets.md">이미지 사전 설정 관리</a>에 대한 설명서의 일부로, 이 항목에서는 이미지 사전 설정이 무엇인지와 이미지 사전 설정 옵션 선택에 대한 모범 사례를 설명합니다.</td>
   </tr>
   <tr>
    <td>Dynamic Media과 Scene7의 직접 통합</td>

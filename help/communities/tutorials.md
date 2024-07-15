@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 튜토리얼 {#tutorials}
 
-다음은 Adobe Experience Manager(AEM) 6.1 커뮤니티를 학습하고 작업하는 데 도움이 되는 예제입니다 [소셜 구성 요소 프레임워크(SCF)](scf.md).
+다음은 AEM(Adobe Experience Manager) 6.1 Communities [SCF(소셜 구성 요소 프레임워크)](scf.md)를 학습하고 작업하는 데 도움이 되는 예입니다.
 
 ## 클라이언트측 사용자 정의 {#client-side-customization}
 
@@ -34,11 +34,11 @@ ht-degree: 1%
 
 ## 서버측 사용자 지정 {#server-side-customization}
 
-참조: [SCF 서버측 사용자 지정](server-customize.md).
+[SCF 서버측 사용자 지정](server-customize.md)도 참조하세요.
 
-샘플 코드는에서 사용할 수 있습니다. [Adobe Experience Cloud Github](https://github.com/Adobe-Marketing-Cloud) 저장소:
+샘플 코드는 [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) 리포지토리에서 사용할 수 있습니다.
 
-* [SCF 구성 요소 샘플 맞춤화](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [SCF 구성 요소 샘플 사용자 지정](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
 * [오버레이 SCF 구성 요소 샘플](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
@@ -60,11 +60,11 @@ ht-degree: 1%
 
 ## 데모 사용자 {#demo-users}
 
-Geometrixx 샘플 패키지에는 데모 사용자가 포함되어 있습니다. 방문자(로그인하지 않음) 또는 구성원(로그인함) 간에 경험에 차이가 있는 경우가 많습니다. 또한 Geometrixx 샘플 패키지가 설치된 상태로 유지되는 한 이러한 사용자를 사용하여 로 탐색할 때 로그인 상태를 시뮬레이션할 수 있습니다. [커뮤니티 구성 요소 안내서](components-guide.md).
+Geometrixx 샘플 패키지에는 데모 사용자가 포함되어 있습니다. 방문자(로그인하지 않음) 또는 구성원(로그인함) 간에 경험에 차이가 있는 경우가 많습니다. 또한 Geometrixx 샘플 패키지가 설치된 채로 있는 한 이러한 사용자를 사용하여 [커뮤니티 구성 요소 안내서](components-guide.md)를 사용하여 탐색할 때 로그인 상태를 시뮬레이션할 수 있습니다.
 
-데모 사용자의 전체 목록이 필요하면 레일을 사용하여 다음 위치로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 보안 > 사용자]**. 또는 클래식 UI 사용 [보안 콘솔](http://localhost:4502/useradmin) 사용자 및 그룹 관리.
+데모 사용자의 전체 목록을 보려면 레일을 사용하여 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 보안 > 사용자]**(으)로 이동합니다. 또는 사용자 및 그룹 관리에 클래식 UI [보안 콘솔](http://localhost:4502/useradmin)을 사용하십시오.
 
-다음과 같은 경우 [커뮤니티 사이트가 생성되었습니다.](getting-started.md), 데모 사용자를 다음에 할당할 수 있습니다. [커뮤니티 사용자 그룹](users.md).
+[커뮤니티 사이트를 만든 경우](getting-started.md), 해당 [커뮤니티 사용자 그룹](users.md)에 데모 사용자를 할당할 수 있습니다.
 
 ***사용자 id* / *암호***:
 

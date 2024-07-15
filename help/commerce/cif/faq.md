@@ -20,7 +20,7 @@ Adobe는 모든 상거래 관련 데이터용 공식 상거래 API로 Adobe Comm
 
 ## 2. Adobe Commerce 관리자를 통해 AEM에서 제품 자산(이미지)을 저장하고 참조할 수 있습니까? Dynamic Media의 자산을 어떻게 사용할 수 있습니까?
 
-공식 AEM Assets - Adobe Commerce 통합을 사용할 수 없습니다. 에서 사용할 수 있는 파트너 커넥터가 있습니다. [마켓플레이스](https://marketplace.magento.com/partner/bounteous_ecomm).
+공식 AEM Assets - Adobe Commerce 통합을 사용할 수 없습니다. [marketplace](https://marketplace.magento.com/partner/bounteous_ecomm)에서 사용할 수 있는 파트너 커넥터가 있습니다.
 
 또는 해결 방법으로 AEM Assets에 제품 에셋(이미지)을 저장할 수 있지만 Adobe Commerce에 에셋 URL을 수동으로 저장해야 합니다. Dynamic Media은 AEM Assets의 일부이며 동일한 방식으로 작동합니다.
 
@@ -50,7 +50,7 @@ PIM 데이터는 GraphQL 요청을 통해 AEM 및 클라이언트에 노출됩�
 
 ## 9. AEM Dispatcher에 대한 캐시 무효화는 AEM 및 상거래에서 어떻게 작동합니까?
 
-Adobe는 Dispatcher에 캐시된 페이지에 대해 TTL 기반의 캐시 무효화를 설정할 것을 권장합니다. Adobe 가격 또는 주식과 같은 동적 정보의 경우 클라이언트측에서 날짜를 렌더링하는 것이 좋습니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 [AEM 디스패처](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)
+Adobe는 Dispatcher에 캐시된 페이지에 대해 TTL 기반의 캐시 무효화를 설정할 것을 권장합니다. Adobe 가격 또는 주식과 같은 동적 정보의 경우 클라이언트측에서 날짜를 렌더링하는 것이 좋습니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)를 참조하십시오.
 
 ## 10. Commerce가 포함된 AEM 콘텐츠 전반의 통합 검색에 대한 권장 사항이 있습니까?
 
@@ -70,7 +70,7 @@ Adobe은 AEM에서 마케팅 관련 데이터 및 콘텐츠를 관리할 것을 
 
 ## 14. 전체 프레젠테이션 레이어에서 AEM을 사용할 때 회사에서 PCI 규정 준수를 어떻게 보장합니까?
 
-Adobe는 추상화된 결제 방법을 사용할 것을 권장합니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe이 카드 소지자 날짜나 상거래 솔루션을 보유하거나 전달하지 않습니다. 이 접근 방식에는 수준 3 PCI 규정 준수만 필요합니다. 단, 직원이 시스템 및 데이터와 상호 작용하는 방식과 같이 PCI를 완전히 준수하기 위해 고려해야 할 추가 사항이 있습니다. Adobe Commerce PCI 규정 준수에 대한 자세한 내용은 [PCI 준수](https://business.adobe.com/products/magento/pci-compliance.html)
+Adobe는 추상화된 결제 방법을 사용할 것을 권장합니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe이 카드 소지자 날짜나 상거래 솔루션을 보유하거나 전달하지 않습니다. 이 접근 방식에는 수준 3 PCI 규정 준수만 필요합니다. 단, 직원이 시스템 및 데이터와 상호 작용하는 방식과 같이 PCI를 완전히 준수하기 위해 고려해야 할 추가 사항이 있습니다. Adobe Commerce PCI 규정 준수에 대한 자세한 내용은 [PCI 규정 준수](https://business.adobe.com/products/magento/pci-compliance.html)를 참조하십시오
 
 ## 15. AEM 및 Adobe Commerce 클라우드 버전을 사용하는 경우, 이 공동 솔루션은 PCI를 준수합니까?
 

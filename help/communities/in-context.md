@@ -20,11 +20,11 @@ ht-degree: 0%
 
 AEM Communities의 경우 커뮤니티 콘텐츠가 게시된 게시된 게시된 페이지에서 관리자 및 신뢰할 수 있는 커뮤니티 구성원이 직접 중재를 수행할 수 있습니다.
 
-사용 시 [관리 콘솔](moderation.md), 콘텐츠에 표시되는 정보에는 컨텍스트에서 중재할 때 사용할 수 있는 추가 중재 작업에 액세스할 수 있도록 게시된 페이지에 대한 링크가 포함되어 있습니다.
+[중재 콘솔](moderation.md)을 사용하는 경우 콘텐츠에 표시되는 정보에는 컨텍스트 내에서 중재할 때 사용할 수 있는 추가 중재 작업에 액세스할 수 있도록 게시된 페이지에 대한 링크가 포함되어 있습니다.
 
 ## 중재 작업 {#moderation-actions}
 
-다음에 대한 설명은 중재 개요 를 참조하십시오. [중재 작업](moderate-ugc.md#moderation-actions).
+[중재 동작](moderate-ugc.md#moderation-actions)에 대한 설명은 중재 개요를 참조하세요.
 
 ## 중재 UI {#moderation-ui}
 
@@ -38,20 +38,20 @@ AEM Communities의 경우 커뮤니티 콘텐츠가 게시된 게시된 게시�
 
 ## 예 {#example}
 
-사용 [Geometrixx 참여](http://localhost:4503/content/sites/engage/en.html) 사이트 생성 시점 [AEM Communities 시작하기](getting-started.md), 포럼에서 게시 환경의 다양한 중재 활동을 경험할 스레드를 설정할 수 있습니다. 아래를 참조하십시오.
+[AEM Communities을 시작](getting-started.md)할 때 만든 [Geometrixx 참여](http://localhost:4503/content/sites/engage/en.html) 사이트를 사용하면 포럼에서 스레드를 설정하여 Publish 환경에서 다양한 중재 활동을 경험할 수 있습니다. 아래를 참조하십시오.
 
-아론 맥도날드 (`aaron.mcdonald@mailinator.com`)이(가) 사이트를 만들 때 community-engage-moderators 그룹에 추가되어 신뢰할 수 있는 커뮤니티 구성원으로 확인되었습니다.
+Aaron McDonald(`aaron.mcdonald@mailinator.com`)가 사이트를 만들 때 커뮤니티 참여 중재자 그룹에 추가되어 신뢰할 수 있는 커뮤니티 구성원으로 확인되었습니다.
 
-레베카 라르센 (`rebekah.larsen@trashymail.com`)을 사용하여 community-engage-members 그룹의 멤버로 추가할 수 있습니다. [구성원 콘솔](members.md).
+Rebekah Larsen(`rebekah.larsen@trashymail.com`)은 [구성원 콘솔](members.md)을 사용하여 커뮤니티 참여 구성원 그룹의 구성원으로 추가할 수 있습니다.
 
-커뮤니티 사용자 그룹에 대한 자세한 내용은 다음을 참조하십시오. [사용자 및 사용자 그룹 관리](users.md).
+커뮤니티 사용자 그룹에 대한 자세한 내용은 [사용자 및 사용자 그룹 관리](users.md)를 참조하십시오.
 
 ### 포럼 게시물 만들기 {#create-the-forum-posts}
 
 * Rebekah Larsen(rebekah.larsen@trashymail.com)으로 로그인
 
    * 포럼 선택
-   * 새 게시물 선택
+   * 새 Post 선택
    * 제목 입력
 
      Humming Bird Feeder에서 꿀을 교체하는 시기
@@ -60,14 +60,14 @@ AEM Communities의 경우 커뮤니티 콘텐츠가 게시된 게시된 게시�
 
      나는 매년 벌새 먹이통을 매달아 놓았을 때 그다지 성공하지 못했다. 하루 이틀 오는 것 같은데 그게 다예요. 1주일에 한 번 바꾸면 너무 긴 건가요? 더 빨리 바꿔야 하나요?
 
-   * 게시물 선택
+   * Post 선택
    * 로그아웃 선택
 
 * Aaron McDonald(aaron.mcdonald@mailinator.com)로 로그인합니다.
 
    * 포럼 선택
    * Hummingbird 주제에 대해 자세히 보기 를 선택합니다.
-   * 답글 게시를 위한 댓글 입력
+   * Post 회신에 대한 댓글 입력
 
      나는 일주일에 한 번 교체하고 5월부터 10월까지 받아.
 
@@ -78,7 +78,7 @@ AEM Communities의 경우 커뮤니티 콘텐츠가 게시된 게시된 게시�
 
    * 포럼 선택
    * Hummingbird 주제에 대해 자세히 보기 를 선택합니다.
-   * 답글 게시를 위한 댓글 입력
+   * Post 회신에 대한 댓글 입력
 
      나는 꿀과 피더를 판매합니다 - https://my.viral.url/ 방문
 
@@ -95,9 +95,9 @@ AEM Communities의 경우 커뮤니티 콘텐츠가 게시된 게시된 게시�
 
 ### 새 구성원(#4) {#new-member}
 
-작성자에서 관리자로 로그인하고 를 사용하여 Boyd Larsen(boyd.larsen@dodgit.com)을 커뮤니티 참여 구성원 그룹의 새 구성원으로 추가합니다. [구성원 콘솔](members.md)를 클릭한 다음 로그아웃합니다.
+작성자의 경우 관리자로 로그인하고 [구성원 콘솔](members.md)을 사용하여 Boyd Larsen(boyd.larsen@dodgit.com)을 커뮤니티 참여 구성원 그룹의 새 구성원으로 추가한 다음 로그아웃합니다.
 
-게시 시 Boyd Larsen으로 로그인하고 를 선택하여 스레드에 액세스합니다. `Forum`, 및 `Read more` 벌새의 초소입니다.
+게시 시 Boyd Larsen으로 로그인하고 `Forum`을(를) 선택한 다음 벌새 게시물에 대해 `Read more`을(를) 선택하여 스레드에 액세스합니다.
 
 알림:
 
@@ -109,7 +109,7 @@ Boid가 Andrew가 게시한 콘텐츠에 플래그를 지정하려면 Flag를 �
 
 로그아웃
 
-![community-forum-member](assets/community-forum-member.png)
+![커뮤니티 포럼 구성원](assets/community-forum-member.png)
 
 ### 관리자(#3) {#administrator}
 
@@ -120,9 +120,9 @@ Boid가 Andrew가 게시한 콘텐츠에 플래그를 지정하려면 Flag를 �
 * 관리자는 플래그 지정, 삭제, 편집, 거부, 잘라내기, 닫기, 고정, 기능을 사용할 수 있습니다.
 * 관리자는 관리 를 선택하여 중재 콘솔에 액세스할 수 있습니다.
 
-![community-admin-포럼](assets/community-admin-forum.png)
+![community-admin-forum](assets/community-admin-forum.png)
 
-에 액세스할 수 있도록 관리 메뉴 항목 선택 [관리 콘솔](moderation.md) 게시 환경.
+Publish 환경에서 [중재 콘솔](moderation.md)에 액세스할 수 있도록 관리 메뉴 항목을 선택하십시오.
 
 관리자의 경우, Geometrixx 참여 커뮤니티 사이트의 콘텐츠뿐만 아니라 중재 가능한 모든 콘텐츠가 표시됩니다.
 
@@ -134,7 +134,7 @@ Boid가 Andrew가 게시한 콘텐츠에 플래그를 지정하려면 Flag를 �
 
 ### 커뮤니티 중재자(#2) {#community-moderator}
 
-Aaron McDonald로 로그인(`aaron.mcdonal@mailinator.com`), 커뮤니티 중재자, 포럼 을 차례로 선택하여 스레드에 액세스한 다음 벌새 게시물에 대해 자세히 읽어보십시오.
+커뮤니티 중재자인 Aaron McDonald(`aaron.mcdonal@mailinator.com`)로 로그인하고 포럼 을 선택하여 스레드에 액세스한 다음 벌새 게시물에 대해 자세히 읽어보십시오.
 
 알림:
 
@@ -143,9 +143,9 @@ Aaron McDonald로 로그인(`aaron.mcdonal@mailinator.com`), 커뮤니티 중재
 * Aaron은 자신이 중재하는 다른 포럼으로 옮기기 위해 포럼 주제를 잘라낼 수 있다.
 * Aaron은 관리 를 선택하여 중재 콘솔에 액세스할 수 있습니다.
 
-![community-forum-moderator](assets/community-forum-moderator.png)
+![커뮤니티 포럼 중재자](assets/community-forum-moderator.png)
 
-에 액세스할 수 있도록 관리 메뉴 항목 선택 [관리 콘솔](moderation.md) 게시 환경.
+Publish 환경에서 [중재 콘솔](moderation.md)에 액세스할 수 있도록 관리 메뉴 항목을 선택하십시오.
 
 커뮤니티 중재자의 경우 Geometrixx 참여 커뮤니티 사이트의 중재 가능한 콘텐츠만 표시됩니다.
 
@@ -157,7 +157,7 @@ Aaron McDonald로 로그인(`aaron.mcdonal@mailinator.com`), 커뮤니티 중재
 
 ### 콘텐츠 작성자(#1) {#content-author}
 
-Rebekah Larsen으로 로그인(`rebekah.larsen@mailinator.com`) 스레드를 시작하고 포럼 을 선택하여 스레드에 액세스한 다음 벌새 게시물에 대해 자세히 읽기 를 선택하는 커뮤니티 멤버입니다.
+스레드를 시작한 커뮤니티 멤버인 Rebekah Larsen(`rebekah.larsen@mailinator.com`)으로 로그인하고 포럼 을 선택하여 스레드에 액세스한 다음 벌새 게시물에 대해 자세히 알아보십시오.
 
 알림:
 
@@ -165,4 +165,4 @@ Rebekah Larsen으로 로그인(`rebekah.larsen@mailinator.com`) 스레드를 시
 * Rebekah는 다른 콘텐츠에 회신하거나 플래그를 지정할 수도 있습니다.
 * 중재 콘솔에 액세스할 수 없습니다.
 
-![community-forum-author](assets/community-forum-author.png)
+![커뮤니티 포럼 작성자](assets/community-forum-author.png)

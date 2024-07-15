@@ -84,7 +84,7 @@ AEM의 Headless 기능은 몇 가지 주요 기능을 기반으로 합니다. �
 * GraphQL API를 사용하여 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 생성할 수 있습니다.
 * Assets REST API를 사용하면 콘텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
-AEM Headless 여정 후반부에서 해당 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 [추가 리소스](#additional-resources) 추가 설명서에 대해서는 아래 섹션 을 참조하십시오.
+AEM Headless 여정 후반부에서 해당 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 추가 설명서는 아래의 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
 ## Headless 통합 수준 {#integration-levels}
 

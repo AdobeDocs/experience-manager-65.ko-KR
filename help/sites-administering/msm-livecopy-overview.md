@@ -18,7 +18,7 @@ ht-degree: 30%
 
 # Live Copy 개요 콘솔{#live-copy-overview-console}
 
-다음 **라이브 카피 개요** 을 통해 다음 작업을 수행할 수 있습니다.
+**Live Copy 개요**&#x200B;를 통해 다음을 수행할 수 있습니다.
 
 * 사이트 간 상속 보기/관리:
 
@@ -40,7 +40,7 @@ ht-degree: 30%
 **사이트** 콘솔의 **참조** 측면 패널에서 **Live Copy 개요**&#x200B;를 열 수 있습니다.
 
 1. **사이트** 콘솔에서 [블루프린트 페이지를 검색한 다음 선택합니다](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. 를 엽니다. **[참조](/help/sites-authoring/basic-handling.md#references)** 패널 및 선택 **라이브 카피**.
+1. **[참조](/help/sites-authoring/basic-handling.md#references)** 패널을 열고 **라이브 카피**&#x200B;를 선택합니다.
 
    ![참조 패널 - 라이브 카피](assets/chlimage_1-359.png)
 
@@ -48,7 +48,7 @@ ht-degree: 30%
    >
    >먼저 참조 를 연 다음 블루프린트를 선택할 수도 있습니다.
 
-1. 선택 **라이브 카피 개요** 을 클릭하여 선택한 블루프린트와 관련된 모든 라이브 카피의 개요를 표시하고 사용합니다.
+1. **라이브 카피 개요**&#x200B;를 선택하여 선택한 블루프린트와 관련된 모든 라이브 카피의 개요를 표시하고 사용합니다.
 1. 종료하고 **사이트** 콘솔로 돌아가려면 **닫기**&#x200B;를 사용합니다.
 
 ### 라이브 카피 개요 열기 - 블루프린트 페이지 속성 {#opening-live-copy-overview-properties-of-a-blueprint-page}
@@ -58,22 +58,22 @@ ht-degree: 30%
 1. 적절한 블루프린트 페이지에 대한 **속성**&#x200B;을 엽니다.
 1. **블루프린트** 탭을 열면 **Live Copy 개요** 옵션이 상단 도구 모음에 표시됩니다.
 
-   ![블루프린트 탭 - 라이브 카피 개요](assets/chlimage_1-360.png)
+   ![블루프린트 탭 - Live Copy 개요](assets/chlimage_1-360.png)
 
-1. 선택 **라이브 카피 개요** 을 클릭하여 현재 블루프린트와 관련된 모든 라이브 카피의 개요를 표시하고 사용합니다.
+1. **라이브 카피 개요**&#x200B;를 선택하여 현재 블루프린트와 관련된 모든 라이브 카피의 개요를 표시하고 사용합니다.
 
    >[!NOTE]
    >
-   >자세한 내용은 기술 자료 문서 를 참조하십시오. [라이브 카피 상태 메시지 - 최신/녹색/동기화 중](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >자세한 내용은 기술 자료 문서 [라이브 카피 상태 메시지 - 최신/녹색/동기화 중](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html)을 참조하십시오.
 
 1. 종료하고 **사이트** 콘솔로 돌아가려면 **닫기**&#x200B;를 사용합니다.
 
 ## Live Copy 개요 사용 {#using-the-live-copy-overview}
 
-다음 **라이브 카피 개요** 는 라이브 카피에서 작업을 수행하는 데 사용할 수도 있습니다.
+**Live Copy 개요**&#x200B;를 사용하여 Live Copy에서 작업을 수행할 수도 있습니다.
 
 1. **Live Copy 개요**&#x200B;를 엽니다.
-1. 필요한 블루프린트 또는 라이브 카피 페이지를 선택합니다. 사용 가능한 작업을 표시하도록 도구 모음이 업데이트됩니다. 다음 [작업](/help/sites-administering/msm.md#terms-used) 사용 가능 여부는 다음 중 하나를 선택했는지 여부에 따라 다릅니다. [블루프린트](#actions-for-a-blueprint-page) 또는 [live copy](#actions-for-a-live-copy-page) 페이지:
+1. 필요한 블루프린트 또는 라이브 카피 페이지를 선택합니다. 사용 가능한 작업을 표시하도록 도구 모음이 업데이트됩니다. 사용 가능한 [작업](/help/sites-administering/msm.md#terms-used)은(는) [블루프린트](#actions-for-a-blueprint-page) 또는 [라이브 카피](#actions-for-a-live-copy-page) 페이지 선택 여부에 따라 다릅니다.
 
 ### 블루프린트 페이지에 대한 작업 {#actions-for-a-blueprint-page}
 
@@ -125,7 +125,7 @@ ht-degree: 30%
 
 ## 관계 상태 {#relationship-status}
 
-다음 **관계 상태** 콘솔에는 다양한 기능을 제공하는 두 가지 탭이 있습니다.
+**관계 상태** 콘솔에는 다양한 기능을 제공하는 두 개의 탭이 있습니다.
 
 * [관계 상태 정보](#relationship-status-information)
 * [Live Copy 정보](#live-copy-information)

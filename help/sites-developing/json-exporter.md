@@ -30,13 +30,13 @@ AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 콘�
 
 >[!NOTE]
 >
->다음의 경우 여기에 설명된 기능을 모든 핵심 구성 요소에 사용할 수 있습니다. [핵심 구성 요소 릴리스 1.1.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR).
+>여기에 설명된 기능은 [핵심 구성 요소 릴리스 1.1.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 이후 모든 핵심 구성 요소에 사용할 수 있습니다.
 
 ## 콘텐츠 조각 핵심 구성 요소가 있는 JSON 내보내기 {#json-exporter-with-content-fragment-core-components}
 
 AEM JSON Exporter를 사용하여 모든 AEM 페이지의 콘텐츠를 JSON 데이터 모델 형식으로 제공할 수 있습니다. 그런 다음 자체 애플리케이션에서 이 메서드를 사용할 수 있습니다.
 
-AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.json` 확장명.
+AEM 내에서 `model` 및 `.json` 확장을 사용하여 배달됩니다.
 
 `.model.json`
 
@@ -52,7 +52,7 @@ AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.
 
 또는 구조화된 컨텐츠 조각의 컨텐츠를 구체적으로 타겟팅하여 전달할 수 있습니다.
 
-조각에 대한 전체 경로 사용(방법: `jcr:content`); 예를 들어, 와 같은 접미사가 붙습니다.
+조각에 대한 전체 경로(`jcr:content`에서 사용)를 사용하십시오(예: 접미사 포함).
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
@@ -70,11 +70,11 @@ AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.
 
   >[!NOTE]
   >
-  >다음을 수행할 수 있습니다. [자체 구성 요소 조정](/help/sites-developing/json-exporter-components.md) 을 클릭하여 이 데이터에 액세스하고 사용하십시오.
+  >이 데이터에 액세스하고 사용하도록 [자체 구성 요소를 조정](/help/sites-developing/json-exporter-components.md)할 수 있습니다.
 
   >[!NOTE]
   >
-  >표준 구현은 아니지만, [여러 선택기가 지원되며,](json-exporter-components.md#multiple-selectors) 그러나 `model` 은(는) 첫 번째 여야 합니다.
+  >표준 구현은 아니지만 [여러 선택기가 지원됩니다.](json-exporter-components.md#multiple-selectors) 그러나 `model`은(는) 첫 번째 선택기여야 합니다.
 
 ### 추가 정보 {#further-information}
 
@@ -86,7 +86,7 @@ AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.
 
 * Sling 모델:
 
-   * [Sling 모델 - 130 이후 모델 클래스를 리소스 유형과 연결](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Sling 모델 - 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130) 이후 모델 클래스를 리소스 유형과 연결
 
 * JSON이 있는 AEM:
 
@@ -96,7 +96,7 @@ AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.
 
 자세한 내용은 다음을 참조하십시오.
 
-* 다음 [에셋 사용 안내서의 콘텐츠 조각 항목](/help/assets/content-fragments/content-fragments.md)
+* Assets 사용 안내서의 [콘텐츠 조각 항목](/help/assets/content-fragments/content-fragments.md)
 
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)

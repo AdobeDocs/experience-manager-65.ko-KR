@@ -14,7 +14,7 @@ ht-degree: 83%
 
 # AEM을 통한 Headless용 콘텐츠 모델링 - 소개 {#architect-headless-introduction}
 
-의 이 부분에서 [AEM Headless 콘텐츠 설계 여정](overview.md), Adobe Experience Manager(AEM)를 사용한 headless 콘텐츠 전달을 위한 콘텐츠 모델링을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
+[AEM Headless 콘텐츠 설계 여정](overview.md)의 이 부분에서는 Adobe Experience Manager(AEM)를 사용한 Headless 콘텐츠 전달을 위한 콘텐츠 모델링을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
 
 이 문서는 Headless 콘텐츠 게재, AEM이 Headless를 지원하는 방법 및 콘텐츠를 Headless용으로 모델링하는 방법을 이해하는 데 도움이 됩니다. 문서를 읽고 나면
 

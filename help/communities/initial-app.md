@@ -20,8 +20,8 @@ ht-degree: 1%
 
 이 섹션에서는 다음을 만듭니다.
 
-* 다음 **[템플릿](#createthepagetemplate)** 예제 웹 사이트에서 컨텐츠 페이지를 만드는 데 사용됩니다.
-* 다음 **[구성 요소 및 스크립트](#create-the-template-s-rendering-component)** 웹 사이트 페이지를 렌더링하는 데 사용됩니다.
+* 예제 웹 사이트에서 콘텐츠 페이지를 만드는 데 사용되는 **[template](#createthepagetemplate)**.
+* 웹 사이트 페이지를 렌더링하는 데 사용되는 **[구성 요소 및 스크립트](#create-the-template-s-rendering-component)**.
 
 ## 콘텐츠 템플릿 만들기 {#create-the-content-template}
 
@@ -31,22 +31,22 @@ ht-degree: 1%
 
 1. CRXDE Lite의 탐색기 창에서 다음을 수행합니다.
 
-   * 선택 `/apps/an-scf-sandbox/templates`
+   * `/apps/an-scf-sandbox/templates` 선택
    * **[!UICONTROL 만들기]** > **[!UICONTROL 템플릿 만들기]**
 
-1. 템플릿 만들기 대화 상자에서 다음 값을 입력한 다음 **[!UICONTROL 다음]**:
+1. 템플릿 만들기 대화 상자에서 다음 값을 입력한 다음 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
    * 레이블: `playpage`
    * 제목: `An SCF Sandbox Play Template`
    * 설명: `An SCF Sandbox template for play pages`
-   * 리소스 유형: `an-scf-sandbox/components/playpage`
-   * 순위: &lt;leave as=&quot;&quot; default=&quot;&quot;>
+   * 리소스 종류: `an-scf-sandbox/components/playpage`
+   * 순위: &lt;기본값으로 유지>
 
    노드 이름에는 레이블 이 사용됩니다.
 
-   리소스 유형이 다음에 나타납니다. `playpage`의 `jcr:content` 노드를 속성으로 `sling:resourceType`. 브라우저가 요청할 때 콘텐츠를 렌더링하는 구성 요소(리소스)를 식별합니다.
+   리소스 유형이 `playpage`의 `jcr:content` 노드에 속성 `sling:resourceType`(으)로 나타납니다. 브라우저가 요청할 때 콘텐츠를 렌더링하는 구성 요소(리소스)를 식별합니다.
 
-   이 경우 모든 페이지는 `playpage` 템플릿은 `an-scf-sandbox/components/playpage` 구성 요소. 규칙에 따라 구성 요소에 대한 경로는 상대적이므로 Sling은에서 먼저 리소스를 검색할 수 있습니다. `/apps` 폴더 및 을(를) 찾을 수 없는 경우 `/libs` 폴더를 삭제합니다.
+   이 경우 `playpage` 템플릿을 사용하여 만든 모든 페이지가 `an-scf-sandbox/components/playpage` 구성 요소에 의해 렌더링됩니다. 규칙에 따라 구성 요소에 대한 경로는 상대적입니다. 따라서 Sling은 `/apps` 폴더에서 먼저 리소스를 검색하고, 찾을 수 없는 경우 `/libs` 폴더에서 리소스를 검색할 수 있습니다.
 
    ![create-content-template](assets/create-content-template-1.png)
 
@@ -54,13 +54,13 @@ ht-degree: 1%
 
    **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. &quot;허용된 경로&quot;는 이 템플릿을 사용하는 페이지의 경로를 나타내므로 다음에 대한 템플릿 목록이 표시됩니다. **[!UICONTROL 새 페이지]** 대화 상자.
+1. &quot;허용된 경로&quot;는 이 템플릿을 사용하는 페이지의 경로를 나타내므로 해당 템플릿은 **[!UICONTROL 새 페이지]** 대화 상자에 나열됩니다.
 
-   경로를 추가하려면 더하기 버튼을 클릭합니다 `+` 및 유형 `/content(/.&ast;)?` 표시되는 텍스트 상자에 입력합니다. 복사/붙여넣기를 사용하는 경우 선행 또는 후행 공백이 없는지 확인합니다.
+   경로를 추가하려면 더하기 단추 `+`을(를) 클릭하고 나타나는 텍스트 상자에 `/content(/.&ast;)?`을(를) 입력하십시오. 복사/붙여넣기를 사용하는 경우 선행 또는 후행 공백이 없는지 확인합니다.
 
-   참고: 허용되는 경로 속성의 값은 입니다. *정규 표현식*. 표현식과 일치하는 경로가 있는 콘텐츠 페이지는 템플릿을 사용할 수 있습니다. 이 경우 정규 표현식은 의 경로와 일치합니다 **/content** 폴더와 모든 하위 페이지.
+   참고: 허용되는 경로 속성의 값은 *정규 표현식*&#x200B;입니다. 표현식과 일치하는 경로가 있는 콘텐츠 페이지는 템플릿을 사용할 수 있습니다. 이 경우 정규식은 **/content** 폴더 및 모든 하위 페이지의 경로와 일치합니다.
 
-   작성자가 아래에 페이지를 만들 때 `/content`, `playpage` 제목이 &quot;SCF 샌드박스 페이지 템플릿&quot;인 템플릿이 사용할 수 있는 템플릿 목록에 나타납니다.
+   작성자가 `/content` 아래에 페이지를 만들면 &quot;SCF 샌드박스 페이지 템플릿&quot;이라는 `playpage` 템플릿이 사용할 수 있는 템플릿 목록에 나타납니다.
 
    템플릿에서 루트 페이지를 만든 후 속성을 편집하여 정규 표현식에 루트 경로를 포함시켜 템플릿에 대한 액세스를 이 웹 사이트로 제한할 수 있습니다.
 
@@ -70,40 +70,40 @@ ht-degree: 1%
 
 1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-   클릭 **[!UICONTROL 다음]** 다음에서 **[!UICONTROL 허용된 상위]** 패널.
+   **[!UICONTROL 허용된 부모]** 패널에서 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-   클릭 **[!UICONTROL 다음]** 다음에서 **[!UICONTROL 허용된 하위]** 패널.
+   **[!UICONTROL 허용된 자식]** 패널에서 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
    **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-1. 확인(OK)을 클릭하고 템플릿 생성을 완료한 후 새 템플릿의 속성(Properties) 탭 값 모서리에 표시되는 빨간색 삼각형을 확인합니다 `playpage` 템플릿. 이러한 빨간색 삼각형은 저장되지 않은 편집 내용을 나타냅니다.
+1. [확인]을 클릭하고 템플릿 만들기를 마치면 새 `playpage` 템플릿에 대한 속성 탭 값의 모서리에 표시되는 빨간색 삼각형이 표시됩니다. 이러한 빨간색 삼각형은 저장되지 않은 편집 내용을 나타냅니다.
 
-   클릭 **[!UICONTROL 모두 저장]** 저장소에 새 템플릿을 저장합니다.
+   저장소에 새 템플릿을 저장하려면 **[!UICONTROL 모두 저장]**&#x200B;을 클릭하십시오.
 
    ![verify-content-template](assets/verify-content-template.png)
 
 ### 템플릿의 렌더링 구성 요소 만들기 {#create-the-template-s-rendering-component}
 
-만들기 *구성 요소* 콘텐츠를 정의하고 를 기반으로 생성된 모든 페이지를 렌더링합니다. [playpage 템플릿](#createthepagetemplate).
+콘텐츠를 정의하고 [playpage 템플릿](#createthepagetemplate)을(를) 기반으로 만들어진 페이지를 렌더링하는 *구성 요소*&#x200B;를 만듭니다.
 
-1. CRXDE Lite에서 마우스 오른쪽 단추 클릭 **`/apps/an-scf-sandbox/components`** 및 클릭 **[!UICONTROL 만들기 > 구성 요소]**.
-1. 노드의 이름(레이블)을 *playpage*: 구성 요소에 대한 경로는 입니다.
+1. CRXDE Lite에서 **`/apps/an-scf-sandbox/components`**&#x200B;을(를) 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 구성 요소]**&#x200B;를 클릭합니다.
+1. 노드의 이름(레이블)을 *playpage*(으)로 설정하면 구성 요소에 대한 경로가 다음과 같습니다.
 
    `/apps/an-scf-sandbox/components/playpage`
 
-   재생 페이지 템플릿의 리소스 유형(선택적으로 초기 항목 제외)에 해당합니다. **`/apps/`** 경로의 일부).
+   플레이페이지 템플릿의 리소스 유형(선택적으로 경로의 초기 **`/apps/`** 부분 제외)에 해당합니다.
 
-   다음에서 **[!UICONTROL 구성 요소 만들기]** 대화 상자에서 다음 속성 값을 입력합니다.
+   **[!UICONTROL 구성 요소 만들기]** 대화 상자에서 다음 속성 값을 입력합니다.
 
    * 레이블: **playpage**
    * 제목: **SCF 샌드박스 재생 구성 요소**
-   * 설명: **SCF 샌드박스 페이지에 대한 콘텐츠를 렌더링하는 구성 요소입니다.**
-   * 상위 유형: *&lt;leave blank=&quot;&quot;>*
-   * 그룹: *&lt;leave blank=&quot;&quot;>*
+   * 설명: **SCF 샌드박스 페이지의 콘텐츠를 렌더링하는 구성 요소입니다.**
+   * 상위 유형: *&lt;비워 둠>*
+   * 그룹: *&lt;비워 둠>*
 
    ![create-template-component](assets/create-template-component.png)
 
-1. 클릭 **[!UICONTROL 다음]** 종료 시간: **[!UICONTROL 허용된 하위]** 대화 상자의 패널이 표시됩니다.
+1. 대화 상자의 **[!UICONTROL 허용된 하위 항목]** 패널이 나타날 때까지 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
    * **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
    * **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
@@ -112,6 +112,6 @@ ht-degree: 1%
 
    >[!CAUTION]
    >
-   >재생 페이지 구성 요소 경로 및 `sling:resourceType` playpage 템플릿의 속성은 웹 사이트의 올바른 기능에 매우 중요합니다.
+   >재생 페이지 구성 요소에 대한 경로와 재생 페이지 템플릿의 `sling:resourceType` 속성 간의 대응은 웹 사이트의 올바른 기능에 중요합니다.
 
    ![verify-template-component](assets/verify-template-component.png)

@@ -37,7 +37,7 @@ Content Insight 페이지에는 Adobe SiteCatalyst, Adobe Target, Adobe Social �
 * 타겟: 페이지에 오퍼가 포함된 캠페인 활동에 대한 보고서입니다.
 * BrightEdge: 검색 엔진에 대한 페이지의 가시성을 개선하는 페이지 기능에 대해 보고하며 구현해야 하는 기능을 권장합니다.
 
-다음을 참조하십시오 [페이지용 Analytics 및 Recommendations 열기](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
+[Analytics 및 Recommendations 열기](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page)를 참조하십시오.
 
 ## 보고 기간
 
@@ -45,15 +45,15 @@ Content Insight 페이지에는 Adobe SiteCatalyst, Adobe Target, Adobe Social �
 
 >[!NOTE]
 >
->콘텐츠 인사이트 대시보드의 타임라인이 다음 위치에 있습니다. `GMT`.
+>Content Insight 대시보드의 타임라인이 `GMT`에 있습니다.
 
 보고된 데이터의 세부 기간(예: 일별, 주별, 월별 또는 연간 데이터)을 지정할 수도 있습니다.
 
-다음을 참조하십시오 [보고 기간 변경](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
+[보고 기간 변경](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period)을 참조하세요.
 
 >[!NOTE]
 >
->컨텐츠 인사이트 보고서를 사용하려면 관리자가 AEM을 SiteCatalyst, Target 및 BrightEdge와 통합해야 합니다. 다음을 참조하십시오 [SightCatalyst와 통합](/help/sites-administering/adobeanalytics.md), [Adobe Target과 통합](/help/sites-administering/target.md), 및 [BrightEdge와 통합](/help/sites-administering/brightedge.md).
+>컨텐츠 인사이트 보고서를 사용하려면 관리자가 AEM을 SiteCatalyst, Target 및 BrightEdge와 통합해야 합니다. [SightCatalyst와 통합](/help/sites-administering/adobeanalytics.md), [Adobe Target과 통합](/help/sites-administering/target.md) 및 [BrightEdge와 통합](/help/sites-administering/brightedge.md)을 참조하십시오.
 
 ## 보기 보고서 {#the-views-report}
 
@@ -90,7 +90,7 @@ Content Insight 페이지에는 Adobe SiteCatalyst, Adobe Target, Adobe Social �
 
 ## 캠페인 활동 보고서 {#the-campaign-activity-report}
 
-페이지가 활성화된 각 캠페인에 대해 이름이 인 보고서가 표시됩니다. *캠페인 이름* 활동. 이 보고서는 오퍼가 제공되는 각 세그먼트에 대한 페이지 노출 횟수 및 전환 횟수를 보여줍니다.
+페이지가 활성화된 각 캠페인에 대해 이름이 *캠페인 이름* 활동인 보고서가 나타납니다. 이 보고서는 오퍼가 제공되는 각 세그먼트에 대한 페이지 노출 횟수 및 전환 횟수를 보여줍니다.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
@@ -98,6 +98,6 @@ Content Insight 페이지에는 Adobe SiteCatalyst, Adobe Target, Adobe Social �
 
 SEO Recommendations 보고서에는 해당 페이지에 대한 BrightEdge 분석 결과가 포함되어 있습니다. 이 보고서는 검색 엔진을 사용하여 찾기 능력을 극대화하기 위해 페이지가 어떤 기능을 수행하는지, 어떤 기능을 포함하지 않는지 나타내는 페이지 기능 체크리스트입니다.
 
-보고서를 사용하면 작업을 만들어 페이지 검색 기능을 향상시킬 수 있습니다. Recommendations은 권장 사항 구현을 위한 작업이 생성되었음을 나타냅니다. 다음을 참조하십시오 [SEO Recommendations에 작업 할당](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
+보고서를 사용하면 작업을 만들어 페이지 검색 기능을 향상시킬 수 있습니다. Recommendations은 권장 사항 구현을 위한 작업이 생성되었음을 나타냅니다. [SEO Recommendations에 대한 작업 할당](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations)을 참조하세요.
 
 ![chlimage_1-317](assets/chlimage_1-317.png)

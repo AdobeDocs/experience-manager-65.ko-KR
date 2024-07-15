@@ -38,7 +38,7 @@ AEM의 SPA 지원을 통해 페이지 편집기에 로드하는 경우 SPA JS �
 AEM의 SPA에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
 * SPA 기술 요구 사항에 대한 [SPA 블루프린트](/help/sites-developing/spa-blueprint.md)
-* [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md) 간단한 SPA 둘러보기
+* 간단한 SPA을 빠르게 살펴보려면 [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)
 
 ## 디자인 {#design}
 
@@ -46,7 +46,7 @@ SPA의 페이지 구성 요소는 JSP 또는 HTL 파일을 통해 하위 구성 
 
 ### 페이지 모델 관리 {#page-model-management}
 
-페이지 모델의 해상도와 관리는 제공되는 `PageModel`라이브러리에 위임됩니다. SPA은 초기화하고 SPA 편집기에서 작성할 페이지 모델 라이브러리를 사용해야 합니다. `aem-react-editable-components` npm을 통해 AEM 페이지 구성 요소에 페이지 모델 라이브러리를 간접적으로 제공합니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지가 작성되면 추가 라이브러리 `cq.authoring.pagemodel.messaging` 페이지 편집기와의 통신을 활성화하려면 을(를) 추가해야 합니다.
+페이지 모델의 해상도와 관리는 제공되는 `PageModel`라이브러리에 위임됩니다. SPA은 초기화하고 SPA 편집기에서 작성할 페이지 모델 라이브러리를 사용해야 합니다. `aem-react-editable-components` npm을 통해 AEM 페이지 구성 요소에 페이지 모델 라이브러리를 간접적으로 제공합니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지를 작성할 때 페이지 편집기와의 통신을 사용하려면 추가 라이브러리 `cq.authoring.pagemodel.messaging`을(를) 추가해야 합니다.
 
 SPA 페이지 구성 요소가 페이지 핵심 구성 요소로부터 상속받는 경우 `cq.authoring.pagemodel.messaging` 클라이언트 라이브러리 범주를 사용할 수 있는 두 가지 옵션이 있습니다.
 
@@ -157,7 +157,7 @@ SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 �
 
 ## 요구 사항 및 제한 사항 {#requirements-limitations}
 
-작성자가 SPA 콘텐츠를 편집할 수 있도록 페이지 편집기를 사용하려면 SPA 애플리케이션을 구현하여 AEM SPA Editor SDK와 상호 작용해야 합니다. 다음을 참조하십시오 [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md) 최소한의 정보만 있으면 실행할 수 있습니다.
+작성자가 SPA 콘텐츠를 편집할 수 있도록 페이지 편집기를 사용하려면 SPA 애플리케이션을 구현하여 AEM SPA Editor SDK와 상호 작용해야 합니다. 실행을 위해 알아야 할 최소한의 정보는 [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)를 참조하십시오.
 
 ### 지원되는 프레임워크 {#supported-frameworks}
 
@@ -170,20 +170,20 @@ SPA Editor SDK는 다음의 최소 버전을 지원합니다.
 
 ### 추가 프레임워크 {#additional-frameworks}
 
-AEM SPA Editor SDK와 구동할 수 있도록 추가 SPA 프레임워크를 구현할 수 있습니다. 다음을 참조하십시오. [SPA 블루프린트](/help/sites-developing/spa-blueprint.md) AEM SPA Editor에서 사용할 모듈, 구성 요소 및 서비스로 구성된 프레임워크별 계층을 만들기 위해 프레임워크가 충족해야 하는 요구 사항에 대해 설명합니다.
+AEM SPA Editor SDK와 구동할 수 있도록 추가 SPA 프레임워크를 구현할 수 있습니다. AEM SPA 편집기에서 사용할 모듈, 구성 요소 및 서비스로 구성된 프레임워크별 계층을 만들기 위해 프레임워크가 충족해야 하는 요구 사항에 대해서는 [SPA 블루프린트](/help/sites-developing/spa-blueprint.md)를 참조하십시오.
 
 ### 여러 선택기 사용 {#multiple-selectors}
 
-추가 사용자 정의 선택기를 AEM SPA SDK용으로 개발된 SPA의 일부로 정의하고 사용할 수 있습니다. 그러나 이 지원을 사용하려면 `model` 선택기는 첫 번째 선택기이며 확장은 다음과 같습니다. `.json` 다음으로: [json 내보내기에 필요합니다.](json-exporter-components.md#multiple-selectors)
+추가 사용자 정의 선택기를 AEM SPA SDK용으로 개발된 SPA의 일부로 정의하고 사용할 수 있습니다. 그러나 이 지원을 사용하려면 `model` 선택기가 첫 번째 선택기가 되고 확장명이 `.json`이(가) JSON Exporter에 필요한 [이(가) 되어야 합니다.](json-exporter-components.md#multiple-selectors)
 
 ### 텍스트 편집기 요구 사항 {#text-editor-requirements}
 
 SPA에 생성된 텍스트 구성 요소의 내부 편집기를 사용하려면 추가 구성이 필요합니다.
 
-1. 텍스트 HTML이 포함된 컨테이너 래퍼 요소의 속성(모든 속성일 수 있음)을 설정합니다. WKND Journal 샘플 콘텐츠가 있는 경우 `<div>` 요소 및 사용된 선택기는 `data-rte-editelement`.
+1. 텍스트 HTML이 포함된 컨테이너 래퍼 요소의 속성(모든 속성일 수 있음)을 설정합니다. WKND Journal 샘플 콘텐츠가 있는 경우 `<div>` 요소이며 사용된 선택기는 `data-rte-editelement`입니다.
 1. 해당 선택기(예: `data-rte-editelement`)를 가리키는 해당 AEM 텍스트 구성 요소의 `cq:InplaceEditingConfig`에서 구성 `editElementQuery`를 설정합니다. 이를 통해 편집기는 HTML 텍스트를 래핑하는 HTML 요소를 인식할 수 있습니다.
 
-이 작업을 수행하는 방법에 대한 예는 다음을 참조하십시오. [WKND 저널 샘플 콘텐츠입니다.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+이 작업의 수행 방법에 대한 예는 [WKND 저널 샘플 콘텐츠](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)를 참조하십시오.
 
 리치 텍스트 편집기의 `editElementQuery` 속성 및 구성에 대한 자세한 내용은 [리치 텍스트 편집기 구성](/help/sites-administering/rich-text-editor.md)을 참조하십시오.
 

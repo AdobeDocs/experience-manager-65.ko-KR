@@ -20,15 +20,15 @@ ht-degree: 0%
 
 사용자 관리를 사용하면 SAML(Security Assertion Markup Language)을 사용하여 AEM Forms 모듈과 Netegrity SiteMinder로 보호된 애플리케이션 간에 SSO(Single Sign-On)를 활성화할 수 있습니다. SSO가 구현되면 AEM Forms 사용자 로그인 페이지가 필요하지 않으며 사용자가 회사 포털을 통해 이미 인증된 경우 표시되지 않습니다.
 
-DB2의 데이터베이스 및 디렉터리 동기화 성능 향상에 대한 자세한 내용은 [IBM DB2 데이터베이스: 정기 유지 관리를 위한 명령 실행](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+DB2의 데이터베이스 및 디렉터리 동기화 성능 향상에 대한 자세한 내용은 [IBM DB2 데이터베이스: 정기적인 유지 관리를 위한 명령 실행](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance)을 참조하십시오.
 
 ## SSL 사용 LDAP 서버에 대한 사용자 관리 구성 {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
-SSL을 사용할 수 있는 LDAP 서버가 있는 경우 사용할 수 있도록 사용자 관리를 구성합니다. (참조: [SSL 사용 LDAP 서버에 대한 사용자 관리 구성](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+SSL을 사용할 수 있는 LDAP 서버가 있는 경우 사용할 수 있도록 사용자 관리를 구성합니다. ([SSL 사용 LDAP 서버에 대한 사용자 관리 구성](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)을 참조하십시오.)
 
 ## Document Security에 사용할 사용자 권한 설정 {#setting-user-privileges-for-use-with-document-security}
 
-사용자 및 그룹을 생성할 수 있는 적절한 권한을 가진 관리자 사용자를 생성합니다. AEM Forms 환경에 Document Security가 포함된 경우 이러한 사용자의 관리자가 될 사용자에게 초대된 사용자 및 로컬 사용자를 관리할 수 있는 권한을 부여합니다. 또한 사용자에게 관리 콘솔에 대한 액세스 권한을 제공하기 위해 관리 콘솔 사용자 역할을 할당합니다. (참조: [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+사용자 및 그룹을 생성할 수 있는 적절한 권한을 가진 관리자 사용자를 생성합니다. AEM Forms 환경에 Document Security가 포함된 경우 이러한 사용자의 관리자가 될 사용자에게 초대된 사용자 및 로컬 사용자를 관리할 수 있는 권한을 부여합니다. 또한 사용자에게 관리 콘솔에 대한 액세스 권한을 제공하기 위해 관리 콘솔 사용자 역할을 할당합니다. [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)을 참조하세요.
 
 정책 사용자 검색 중에 선택한 도메인의 사용자 및 그룹을 보려면 수퍼 관리자 또는 정책 세트 관리자가 사용자 관리에서 만든 도메인을 선택하고 만든 각 정책 세트의 표시되는 사용자 및 그룹 목록에 추가해야 합니다.
 

@@ -36,7 +36,7 @@ AEM forms(및 이전 버전)에서는 JMS 대기열을 사용하여 작업을 �
 1. 작업 관리자는 작업 항목을 데이터베이스 테이블에 저장하고 작업 항목에 고유 식별자를 지정합니다. 데이터베이스 레코드에는 작업 항목을 실행하는 데 필요한 모든 정보가 들어 있습니다.
 1. 스레드가 비어 있으면 Work Manager 스레드가 작업 항목을 가져옵니다. 작업 항목을 가져오기 전에 스레드는 필요한 서비스가 시작되었는지, 다음 작업 항목을 가져올 수 있는 힙 크기가 충분한지, 작업 항목을 처리할 수 있는 CPU 주기가 충분한지 여부를 확인할 수 있습니다. 또한 Work Manager는 작업 항목의 실행을 예약할 때 작업 항목의 속성(예: 우선 순위)을 평가합니다.
 
-AEM forms 관리자는 상태 모니터를 사용하여 대기열의 작업 항목 수 및 상태 등 작업 관리자 통계를 확인할 수 있습니다. 상태 모니터를 사용하여 작업 항목을 일시 중지, 다시 시작, 다시 시도 또는 삭제할 수도 있습니다. (참조: [Work Manager 관련 통계 보기](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+AEM forms 관리자는 상태 모니터를 사용하여 대기열의 작업 항목 수 및 상태 등 작업 관리자 통계를 확인할 수 있습니다. 상태 모니터를 사용하여 작업 항목을 일시 중지, 다시 시작, 다시 시도 또는 삭제할 수도 있습니다. ([작업 관리자 관련 통계 보기](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)를 참조하십시오.)
 
 ## Work Manager 전송률 조절 옵션 구성 {#configuring-work-manager-throttling-options}
 
@@ -52,23 +52,23 @@ AEM forms 관리자는 상태 모니터를 사용하여 대기열의 작업 항�
  <tbody>
   <tr>
    <td><code> adobe.work-manager.queue-refill-interval</code></td>
-   <td><p>Work Manager가 대기열에서 새 항목을 확인할 때 사용하는 시간 간격(밀리초)을 지정합니다.</p><p>이 옵션의 값은 정수입니다. 기본값은 입니다. <code>1000</code> 밀리초(1초). </p><p>비동기 호출의 볼륨이 낮으면 이 값을 높일 수 있습니다. 예를 들어 2000과 5000 사이의 값(2~5초)으로 늘릴 수 있습니다. </p><p>비동기 호출량이 많은 경우 기본값이 충분해야 하지만 필요한 경우 더 낮은 값을 사용할 수 있습니다. 이 값을 너무 많이 낮추면(예: 초당 20회의 폴링 빈도가 발생하는 50 이하) 시스템에 상당한 오버헤드가 발생합니다.</p></td>
+   <td><p>Work Manager가 대기열에서 새 항목을 확인할 때 사용하는 시간 간격(밀리초)을 지정합니다.</p><p>이 옵션의 값은 정수입니다. 기본값은 <code>1000</code>밀리초(1초)입니다. </p><p>비동기 호출의 볼륨이 낮으면 이 값을 높일 수 있습니다. 예를 들어 2000과 5000 사이의 값(2~5초)으로 늘릴 수 있습니다. </p><p>비동기 호출량이 많은 경우 기본값이 충분해야 하지만 필요한 경우 더 낮은 값을 사용할 수 있습니다. 이 값을 너무 많이 낮추면(예: 초당 20회의 폴링 빈도가 발생하는 50 이하) 시스템에 상당한 오버헤드가 발생합니다.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>
-   <td><p>이 옵션을 다음으로 설정 <code>true</code> 디버그 모드를 활성화하려면 false를 사용하고 비활성화하려면 false를 사용합니다. </p><p>디버그 모드에서는 작업 관리자 정책 위반 및 작업 관리자 일시 중지/다시 시작 작업에 대한 메시지가 기록됩니다. 문제 해결 시에만 이 옵션을 true로 설정하십시오.</p></td>
+   <td><p>디버그 모드를 사용하려면 이 옵션을 <code>true</code>(으)로 설정하고 비활성화하려면 false(으)로 설정합니다. </p><p>디버그 모드에서는 작업 관리자 정책 위반 및 작업 관리자 일시 중지/다시 시작 작업에 대한 메시지가 기록됩니다. 문제 해결 시에만 이 옵션을 true로 설정하십시오.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.enabled</code></td>
-   <td><p>이 옵션을 다음으로 설정 <code>true</code> 아래 설명된 메모리 제어 설정에 따라 전송률 조절 기능을 활성화하려면 다음을 수행합니다. <code>false</code> 전송률 조절을 비활성화합니다.</p></td>
+   <td><p>아래 설명된 메모리 제어 설정에 따라 제한을 활성화하려면 이 옵션을 <code>true</code>(으)로 설정하고, 제한을 비활성화하려면 <code>false</code>(으)로 설정하십시오.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.high-limit</code></td>
-   <td><p>Work Manager가 수신 작업을 제한하기 전에 사용할 수 있는 최대 메모리 비율을 지정합니다.</p><p>이 옵션의 기본값은 입니다. <code>95</code>. 이 값은 대부분의 시스템에 적합합니다. 시스템이 최대 용량까지 확장해야 하는 경우에만 확장하십시오. 그러나 이 값을 늘리면 메모리 부족 문제의 위험도 증가합니다.</p><p>클러스터된 환경에서 AEM Forms를 실행하는 경우 클러스터의 여러 노드에서 메모리 제어 제한 설정을 다르게 설정할 수 있습니다. 예를 들어 대화형 작업을 위해 로드 밸런서에 프로그래밍된 노드 A와 B에 대한 상한이 낮아질 수 있습니다. 또한 로드 밸런서에서 사용되지 않고 비동기 작업을 위해 예약된 노드 C 및 D에 높은 제한을 설정할 수 있습니다.</p></td>
+   <td><p>Work Manager가 수신 작업을 제한하기 전에 사용할 수 있는 최대 메모리 비율을 지정합니다.</p><p>이 옵션의 기본값은 <code>95</code>입니다. 이 값은 대부분의 시스템에 적합합니다. 시스템이 최대 용량까지 확장해야 하는 경우에만 확장하십시오. 그러나 이 값을 늘리면 메모리 부족 문제의 위험도 증가합니다.</p><p>클러스터된 환경에서 AEM Forms를 실행하는 경우 클러스터의 여러 노드에서 메모리 제어 제한 설정을 다르게 설정할 수 있습니다. 예를 들어 대화형 작업을 위해 로드 밸런서에 프로그래밍된 노드 A와 B에 대한 상한이 낮아질 수 있습니다. 또한 로드 밸런서에서 사용되지 않고 비동기 작업을 위해 예약된 노드 C 및 D에 높은 제한을 설정할 수 있습니다.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.low-limit</code></td>
-   <td><p>Work Manager가 들어오는 작업의 제한을 중지하기 전에 사용할 수 있는 최대 메모리 비율을 지정합니다.</p><p>이 옵션의 기본값은 입니다. <code>20</code>. 이 값은 대부분의 시스템에 적합합니다.</p></td>
+   <td><p>Work Manager가 들어오는 작업의 제한을 중지하기 전에 사용할 수 있는 최대 메모리 비율을 지정합니다.</p><p>이 옵션의 기본값은 <code>20</code>입니다. 이 값은 대부분의 시스템에 적합합니다.</p></td>
   </tr>
   <tr>
    <td><code>Dadobe.workmanager.allocate.max-batch-size</code></td>
@@ -80,18 +80,18 @@ AEM forms 관리자는 상태 모니터를 사용하여 대기열의 작업 항�
 **JBoss에 Java 옵션 추가**
 
 1. JBoss 애플리케이션 서버를 중지합니다.
-1. 를 엽니다. *[appserver 루트]*&#x200B;편집기에서 /bin/run.bat (Windows) 또는 run.sh (Linux 또는 UNIX) 를 실행하고 필요에 따라 형식으로 Java 옵션을 추가합니다. `-Dproperty=value`.
+1. 편집기에서 *[appserver root]*/bin/run.bat(Windows) 또는 run.sh(Linux 또는 UNIX)를 열고 필요에 따라 `-Dproperty=value` 형식의 Java 옵션을 추가합니다.
 1. 서버를 다시 시작합니다.
 
 **WebLogic에 Java 옵션 추가**
 
-1. 다음을 입력하여 WebLogic 관리 콘솔을 시작합니다. `https://[host name]:[port]/console` 웹 브라우저에서.
+1. 웹 브라우저에 `https://[host name]:[port]/console`을(를) 입력하여 WebLogic 관리 콘솔을 시작합니다.
 1. WebLogic Server 도메인에 대해 생성한 사용자 이름과 암호를 입력하고 Log(로그) 를 클릭합니다. Change Center(변경 센터)에서 Lock &amp; Edit(잠금 및 편집)를 클릭합니다.
 1. 도메인 구조에서 환경 > 서버 를 클릭하고 오른쪽 창에서 관리 대상 서버 이름을 클릭합니다.
 1. 다음 화면에서 구성 탭 > 서버 시작 탭을 클릭합니다.
 1. 인수 상자에서 현재 컨텐츠의 끝에 필요한 인수를 추가합니다. 예를 들어 상태 모니터를 비활성화하려면 다음을 추가합니다.
 
-   `-Dadobe.healthmonitor.enabled=false` 상태 모니터를 사용하지 않도록 설정합니다.
+   `-Dadobe.healthmonitor.enabled=false`이(가) 상태 모니터를 사용하지 않도록 설정합니다.
 
 1. 저장 을 클릭한 다음 변경 내용 활성화 를 클릭합니다.
 1. WebLogic 관리 서버를 다시 시작합니다.

@@ -16,12 +16,12 @@ ht-degree: 46%
 
 # AEM 현대화 도구 {#modernization-tools}
 
-[AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/) 를 사용하여 다음과 같이 쉽게 변환할 수 있습니다.
+[AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 통해 다음과 같이 쉽게 변환할 수 있습니다.
 
-* [정적 템플릿](page-templates-static.md) 끝 [편집 가능한 템플릿](page-templates-editable.md)
-* [디자인 구성](page-templates-static.md) 끝 [정책](page-templates-editable.md)
-* [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) 끝 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [클래식 UI](website.md) 끝 [터치 지원 UI](touch-ui-concepts.md)
+* [정적 템플릿](page-templates-static.md)에서 [편집 가능한 템플릿](page-templates-editable.md)
+* [디자인 구성](page-templates-static.md)에서 [정책](page-templates-editable.md)
+* [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)에서 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)(으)로
+* [클래식 UI](website.md)에서 [터치 사용 UI](touch-ui-concepts.md)(으)로
 
 이 도구 사용에 대한 자세한 내용은 [도구 설명서를 참조하십시오](https://opensource.adobe.com/aem-modernize-tools/).
 

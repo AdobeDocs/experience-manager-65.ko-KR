@@ -46,4 +46,4 @@ AEM 개발이 처음이십니까? 모범 사례에 리프레셔가 필요하십�
 
 ## 다음 단계 {#next-steps}
 
-을(를) 완료하면 [튜토리얼](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), 문서 검토 고려 [AEM 핵심 개념](/help/sites-developing/the-basics.md) AEM의 기본 기술 및 개발 패러다임을 더 잘 이해할 수 있습니다.
+[자습서](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)를 완료한 후에는 [AEM 핵심 개념](/help/sites-developing/the-basics.md) 문서를 검토하여 AEM의 일부 기본 기술 및 개발 패러다임을 더 잘 이해해 보십시오.

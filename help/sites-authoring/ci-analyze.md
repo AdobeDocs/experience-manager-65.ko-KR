@@ -19,18 +19,18 @@ ht-degree: 1%
 
 # 페이지 성능 분석{#analyzing-page-performance}
 
-를 엽니다. [컨텐츠 인사이트](/help/sites-authoring/content-insights.md) 작성 중인 페이지의 성능을 분석하는 페이지입니다. 분석에 초점을 맞추도록 보고 기간을 구성합니다.
+[콘텐츠 인사이트](/help/sites-authoring/content-insights.md) 페이지를 열어 작성 중인 페이지의 성능을 분석합니다. 분석에 초점을 맞추도록 보고 기간을 구성합니다.
 
 ## 페이지용 Analytics 및 Recommendations 열기 {#opening-analytics-and-recommendations-for-a-page}
 
 다음 절차에 따라 페이지에 대한 Analytics 및 Recommendations을 확인하십시오.
 
 1. 분석할 페이지로 이동합니다.
-1. 도구 모음에서 를 클릭합니다 **Analytics 및 Recommendations**.
+1. 도구 모음에서 **Analytics 및 Recommendations**&#x200B;를 클릭합니다.
 
    >[!NOTE]
    >
-   >페이지에 대한 Analytics 및 Recommendations은 AEM을에 구성한 경우에만 나타납니다. [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics-connect.md).
+   >페이지에 대한 Analytics 및 Recommendations은 AEM을 [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics-connect.md)하도록 구성한 경우에만 나타납니다.
 
    ![screen-shot_2019-03-05at115319](assets/screen-shot_2019-03-05at115319.png)
 
@@ -85,7 +85,7 @@ SEO 권장 사항의 상태는 작업이 생성되었지만 아직 완료되지 
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-생성되면 작업이 사용자의 작업 목록에 나타납니다. 작업에 대한 자세한 내용은 [작업](/help/sites-authoring/task-content.md).
+생성되면 작업이 사용자의 작업 목록에 나타납니다. 작업에 대한 자세한 내용은 [작업을 사용하여 작업](/help/sites-authoring/task-content.md)을 참조하세요.
 
 다음 절차를 사용하여 SEO 권장 사항에 대한 작업을 만듭니다.
 
@@ -106,6 +106,6 @@ SEO 권장 사항의 상태는 작업이 생성되었지만 아직 완료되지 
    * 작업 우선 순위: 작업의 우선 순위.
    * 만기 일자: 작업을 완료해야 하는 일자입니다.
 
-   **참고:** 생성된 작업에는 SEO 권장 사항이 적용되는 페이지에 대한 경로도 포함됩니다.
+   **참고:** 만든 작업에는 SEO 권장 사항이 적용되는 페이지의 경로도 포함됩니다.
 
 1. 완료 를 클릭하여 작업 생성 메시지를 닫습니다.

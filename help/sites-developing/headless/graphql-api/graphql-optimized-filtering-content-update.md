@@ -28,25 +28,25 @@ AEM의 릴리스 6.5.17.0 이상이 있는지 확인하십시오.
 
 이 절차를 실행하려면 다음 단계를 사용합니다.
 
-1. [OSGi 설정 구성](/help/sites-deploying/configuring-osgi.md) 대상: **콘텐츠 조각 마이그레이션 작업 구성**:
+1. **콘텐츠 조각 마이그레이션 작업 구성**&#x200B;에 대한 [OSGi 설정을 구성](/help/sites-deploying/configuring-osgi.md)합니다.
 
    ![OSGi 콘텐츠 조각 마이그레이션 작업 구성](assets/cfm-graphql-update-01.png "OSGi 콘텐츠 조각 마이그레이션 작업 구성")
 
 1. 대화 상자에서 다음 두 매개 변수를 다음과 같이 설정합니다.
 
-   * **ContentFragmentMigration:Enabled** : `1`
-   * **ContentFragmentMigration:적용** : `1`
+   * **ContentFragmentMigration:Enabled**: `1`
+   * **ContentFragmentMigration:Enforce** : `1`
 
-1. **저장** 사양 - 업데이트 절차가 시작됩니다.
+1. 세부 항목을 **저장** - 업데이트 절차가 시작됩니다.
 
-1. 절차가 완료될 때까지 기다립니다. 속성은 다음과 같습니다. `cfGlobalVersion` 다음에 표시: `/content/dam` 및 가 로 설정되어 있습니다. `1`.
+1. 절차가 완료될 때까지 기다립니다. 속성 `cfGlobalVersion`이(가) `/content/dam`에 나타나고 `1`(으)로 설정되어 있으면 프로시저가 완료됩니다.
 
 1. 절차를 비활성화하려면 OSGi 구성으로 돌아갑니다.
 
-   대화 상자에서 **콘텐츠 조각 마이그레이션 작업 구성** 이 두 매개 변수를 다음과 같이 설정합니다.
+   **콘텐츠 조각 마이그레이션 작업 구성**&#x200B;에 대한 대화 상자에서 다음 두 매개 변수를 다음과 같이 설정합니다.
 
-   * **ContentFragmentMigration:Enabled** : `0`
-   * **ContentFragmentMigration:적용** : `0`
+   * **ContentFragmentMigration:Enabled**: `0`
+   * **ContentFragmentMigration:Enforce** : `0`
 
 ## 제한 사항 {#limitations}
 

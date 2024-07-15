@@ -32,7 +32,7 @@ ht-degree: 0%
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[port]'/rest/services/SystemInfo.properties'</p></td>
-   <td><p>이 API는 의 래퍼입니다. <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API입니다. 현재 작업 환경의 구성을 검색합니다. </p></td>
+   <td><p>이 API는 <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API의 래퍼입니다. 현재 작업 환경의 구성을 검색합니다. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -105,7 +105,7 @@ ht-degree: 0%
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>이 API는 모든 시스템 정보 서비스 API의 래퍼입니다. 내부적으로 모든 시스템 정보 API를 실행하고 정보를 zip 형식으로 다운로드합니다. </p><p><i><strong>참고</strong>: SystemInfo.info은 활성 스레드의 수 및 스택 추적을 제공하지 않습니다. </i></p></td>
+   <td><p>이 API는 모든 시스템 정보 서비스 API의 래퍼입니다. 내부적으로 모든 시스템 정보 API를 실행하고 정보를 zip 형식으로 다운로드합니다. </p><p><i><strong>참고</strong>: SystemInfo.info에서 활성 스레드의 개수 및 스택 추적을 제공하지 않습니다. </i></p></td>
   </tr>
  </tbody>
 </table>

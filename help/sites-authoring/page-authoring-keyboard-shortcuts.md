@@ -18,7 +18,7 @@ ht-degree: 52%
 
 # 페이지 편집 시 키보드 단축키{#keyboard-shortcuts-when-editing-pages}
 
-AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지 편집 시 적용되고 일부는 [콘솔 사용](/help/sites-authoring/keyboard-shortcuts.md).
+AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지를 편집할 때 적용되고 일부는 [콘솔 사용](/help/sites-authoring/keyboard-shortcuts.md)에 적용됩니다.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 | 위치 | 단축키 | 설명 |
 |---|---|---|
-| 임의 편집 창 모드 | `Ctrl-Shift-m` | 전환 **미리 보기** 및 현재 선택됨 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (예: **편집**, **레이아웃**&#x200B;등) |
+| 임의 편집 창 모드 | `Ctrl-Shift-m` | **미리 보기**&#x200B;와 현재 선택한 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)</a>(예: **편집**, **레이아웃** 등) 간에 전환합니다. |
 | **편집** 모드 | `Ctrl-z` | [마지막 변경 내용을 실행 취소합니다](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [마지막 변경 내용을 재실행합니다](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 여러 단락을 선택합니다 |
@@ -42,7 +42,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 >[!NOTE]
 >
->&amp;ast; 사용자가 미리보기 모드에서 페이지를 조작하면 `Ctrl-Shift-m` 단축키는 더 이상 사용할 수 없습니다. 바로 가기를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
+>&amp;ast; 사용자가 미리 보기 모드에서 페이지를 조작하면 `Ctrl-Shift-m` 단축키를 더 이상 사용할 수 없습니다. 바로 가기를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
 
 데스크탑 사용자는 [콘솔](/help/sites-authoring/keyboard-shortcuts.md)을 사용하여 다양한 키보드 단축키를 사용할 수 있습니다.
 

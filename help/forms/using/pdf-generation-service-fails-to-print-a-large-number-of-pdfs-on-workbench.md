@@ -23,11 +23,11 @@ ht-degree: 0%
 <!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
 Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
 
-인쇄 요청의 최대 페이지 수가 Windows에서 약 1000페이지로 제한되기 때문입니다. 인쇄 출력이 생성될 때 템플릿과 데이터를 메모리에 로드해야 하고 결과 레이아웃이 메모리에 빌드됩니다. 이는 최종 산출물의 크기에 한계가 있다는 것을 의미한다. 인쇄 출력을 생성하는 프로세스는 32비트 작업이므로 Windows에서는 2GB의 RAM으로 제한됩니다 <!--and 4 GB on UNIX-->.
+인쇄 요청의 최대 페이지 수가 Windows에서 약 1000페이지로 제한되기 때문입니다. 인쇄 출력이 생성될 때 템플릿과 데이터를 메모리에 로드해야 하고 결과 레이아웃이 메모리에 빌드됩니다. 이는 최종 산출물의 크기에 한계가 있다는 것을 의미한다. 인쇄 출력을 생성하는 프로세스는 32비트 작업입니다. 즉, Windows <!--and 4 GB on UNIX-->에서 2GB의 RAM으로 제한됩니다.
 
 ## 적용 대상 {#applies-to}
 
-솔루션은 AEM Forms에 적용됩니다 <!--JEE Server and AEM Forms on OSGi Server--> x86_win32 XMLFM용
+솔루션은 x86_win32 XMLFM용 AEM Forms <!--JEE Server and AEM Forms on OSGi Server-->에 적용됩니다.
 
 ## 솔루션 {#solution}
 
@@ -37,9 +37,9 @@ Using the Designer, if we associate the template "BollatoRiservatiLandscape_tabl
 
 **높음**
 
-1. **선택 하위 양식** - 선택 하위 양식 세트는 조건문을 사용하여 세트 내에서 특정 하위 양식의 표시를 사용자 정의할 수 있는 하위 양식 세트 객체의 변형입니다.
-1. **캡션 대신 정적 텍스트 사용** - 거의 모든 필드에서 캡션이 제공되므로 캡션으로 추가 정적 텍스트 대신 해당 텍스트를 사용해야 합니다.
-1. 사용 **리치 텍스트 형식(RTF)** 가능한한.
+1. **선택 하위 양식** - 선택 하위 양식 집합은 조건문을 사용하여 집합 내에서 특정 하위 양식의 표시를 사용자 지정할 수 있는 하위 양식 집합 개체의 변형입니다.
+1. **캡션 대신 정적 텍스트 사용** - 거의 모든 필드에서 캡션이 제공되므로 사용자는 추가 정적 텍스트를 캡션으로 사용하는 대신 해당 텍스트를 사용해야 합니다.
+1. 가능한 경우 **RTF(서식 있는 텍스트 형식)**&#x200B;을(를) 사용하십시오.
 
 **평균**
 
@@ -56,7 +56,7 @@ Using the Designer, if we associate the template "BollatoRiservatiLandscape_tabl
 
 양식에 작은 데이터가 있는 작은 노드가 많으면 큰 데이터가 있는 노드 수가 적은 양식보다 더 많은 메모리를 소비하므로(따라서 메모리 부족 속도가 더 빠름) 프로세스가 메모리를 더 많이 사용합니다.
 
-읽기 [아래 부록](#appendix) 자세한 내용은 테스트 결과가 인쇄 양식(태그가 지정되지 않은 PDF)을 기반으로 하는 경우를 참조하십시오. 태그된 PDF 프로세스 메모리 요구 사항을 사용하면 증가합니다. 또한 양식의 필드 수에 따라 다릅니다. 대략적으로 프로세스 메모리 요구 사항은 태그가 지정되지 않은 PDF의 1.5배를 약간 초과합니다.
+자세한 내용은 아래 [부록](#appendix)을 읽어 보십시오. 여기서 테스트 결과는 인쇄 양식(태그가 지정되지 않은 PDF)을 기반으로 합니다. 태그된 PDF 프로세스 메모리 요구 사항을 사용하면 증가합니다. 또한 양식의 필드 수에 따라 다릅니다. 대략적으로 프로세스 메모리 요구 사항은 태그가 지정되지 않은 PDF의 1.5배를 약간 초과합니다.
 
 ### 대화형 Forms {#interactive-forms}
 
@@ -68,7 +68,7 @@ Adobe은 특정 이미지 형식을 권장하지 않습니다. 하지만 PNG(Por
 
 ### 부록 {#appendix}
 
-**표 예제**
+**테이블 예제**
 
 간단한 테이블과 복잡한 테이블에 대한 페이지 수와 데이터 크기를 보여 주는 테이블의 다른 변형이 아래에 표시되어 있습니다.
 

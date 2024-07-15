@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->이 기능은 Felix 콘솔을 다루지 않으며, 이 콘솔에서 암호를 수동으로 변경해야 합니다. 자세한 내용은 관련 항목 을 참조하십시오. [보안 체크리스트 섹션](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
+>이 기능은 Felix 콘솔을 다루지 않으며, 이 콘솔에서 암호를 수동으로 변경해야 합니다. 자세한 내용은 관련 [보안 검사 목록 섹션](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts)을 참조하세요.
 
 ## 어떻게 사용하나요? {#how-do-i-use-it}
 
@@ -50,7 +50,7 @@ java -jar aem6.3.jar
 
 ## -nointeractive 플래그 사용 {#using-the-nointeractive-flag}
 
-속성 파일에서 암호를 지정하도록 선택할 수도 있습니다. 이 작업은 다음을 사용하여 수행합니다 `-nointeractive` 와 결합된 플래그 `-Dadmin.password.file` 시스템 속성입니다.
+속성 파일에서 암호를 지정하도록 선택할 수도 있습니다. 이 작업은 `-Dadmin.password.file` 시스템 속성과 결합된 `-nointeractive` 플래그를 사용하여 수행됩니다.
 
 아래는 한 예입니다.
 
@@ -58,7 +58,7 @@ java -jar aem6.3.jar
 java -Dadmin.password.file =/path/to/passwordfile.properties -jar aem6.3.jar -nointeractive
 ```
 
-내부에 있는 암호 `passwordfile.properties` 파일의 형식은 다음과 같아야 합니다.
+`passwordfile.properties` 파일 내의 암호는 아래 형식이어야 합니다.
 
 ```xml
 admin.password = 12345678
@@ -66,4 +66,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->를 사용하는 경우 `-nointeractive` 가 없는 매개 변수 `-Dadmin.password.file` 시스템 등록 정보 AEM은 사용자에게 변경을 요청하지 않고 기본 관리자 암호를 사용하며, 기본적으로 이전 버전의 동작을 복제합니다. 이 비대화형 모드는 설치 스크립트에서 명령줄을 사용하여 자동 설치에 사용할 수 있습니다.
+>`-Dadmin.password.file` 시스템 속성 없이 `-nointeractive` 매개 변수만 사용하는 경우 AEM은 사용자에게 변경을 요청하지 않고 기본 관리자 암호를 사용하며, 기본적으로 이전 버전의 동작을 복제합니다. 이 비대화형 모드는 설치 스크립트에서 명령줄을 사용하여 자동 설치에 사용할 수 있습니다.

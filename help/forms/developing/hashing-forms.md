@@ -28,7 +28,7 @@ PDF 양식에서 암호를 숨기고 소스 코드 내부나 PDF 문서의 다�
 
 해시 함수는 임의의 길이의 긴 문자열(또는 메시지)을 입력으로 취하여 고정 길이의 문자열을 출력으로 생성하며, 메시지 다이제스트 또는 디지털 지문이라고도 합니다.
 
-JEE Designer의 AEM Forms을 사용하면 스크립트 개체에 있는 서로 다른 해시 함수를 JavaScript로 구현하고 동적 PDF 문서 내에서 실행할 수 있습니다. 이 문서의 샘플 파일에 포함된 예제 PDF은 다음 해시 함수의 오픈 소스 구현을 사용합니다.
+AEM Forms on JEE Designer을 사용하면 스크립트 개체에 여러 해시 함수를 JavaScript으로 구현하고 동적 PDF 문서 내에서 실행할 수 있습니다. 이 문서의 샘플 파일에 포함된 예제 PDF은 다음 해시 함수의 오픈 소스 구현을 사용합니다.
 
 * MD4 및 MD5 - Ronald Rivest 설계
 
@@ -38,7 +38,7 @@ JEE Designer의 AEM Forms을 사용하면 스크립트 개체에 있는 서로 �
 
 >[!NOTE]
 >
->MD4 또는 MD5에는 몇 가지 잘 알려진 보안 문제(해시 충돌이라고 함)가 있습니다. 그 해시 충돌과 다른 SHA-1 해킹(무지개 테이블 포함) 때문에, 나는 두 번째 샘플에서 SHA-256 해시 함수에 집중하기로 결정했다. 자세한 내용은 [충돌](https://en.wikipedia.org/wiki/Hash_collision) 및 [무지개 테이블](https://en.wikipedia.org/wiki/Rainbow_table) 위키백과의 페이지들.
+>MD4 또는 MD5에는 몇 가지 잘 알려진 보안 문제(해시 충돌이라고 함)가 있습니다. 그 해시 충돌과 다른 SHA-1 해킹(무지개 테이블 포함) 때문에, 나는 두 번째 샘플에서 SHA-256 해시 함수에 집중하기로 결정했다. 자세한 내용은 Wikipedia의 [충돌](https://en.wikipedia.org/wiki/Hash_collision) 및 [무지개 테이블](https://en.wikipedia.org/wiki/Rainbow_table) 페이지를 참조하십시오.
 
 ## 스크립트 오브젝트 검사 {#examining-script-objects}
 
@@ -46,7 +46,7 @@ JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층
 
 ![변수](assets/variables.jpg)
 
-이러한 스크립트 오브젝트 내에 있는 해시 함수의 JavaScript 구현을 보려면 스크립트 오브젝트를 선택하고 스크립트 편집기에서 코드를 탐색하십시오. 다음과 같은 각 해시 함수가 어떻게 구현되었는지 확인할 수 있습니다.
+이러한 스크립트 오브젝트 내에 해시 함수의 JavaScript 구현을 보려면 스크립트 오브젝트를 선택하고 스크립트 편집기에서 코드를 탐색하십시오. 다음과 같은 각 해시 함수가 어떻게 구현되었는지 확인할 수 있습니다.
 
 * soHASHING_MD4.hex_md4()
 * soHASHING_MD4.b64_md4()
@@ -61,7 +61,7 @@ JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층
 * soHASHING_SHA256.b64_sha256()
 * soHASHING_SHA256.str_sha256()
 
-이 목록에서 볼 수 있듯이 해시의 출력 유형마다 사용할 수 있는 함수가 다릅니다. 다음 중 하나를 선택할 수 있습니다. `hex_` 16진수의 경우 `b64_` Base64로 인코딩된 출력의 경우 또는 `str_` 간단한 문자열 인코딩에 사용됩니다.
+이 목록에서 볼 수 있듯이 해시의 출력 유형마다 사용할 수 있는 함수가 다릅니다. 16진수는 `hex_`을(를), Base64로 인코딩된 출력은 `b64_`을(를), 단순 문자열 인코딩은 `str_`을(를) 선택할 수 있습니다.
 
 선택하는 해시 함수에 따라 해시의 길이가 달라집니다.
 
@@ -79,10 +79,10 @@ JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층
 첫 번째 샘플을 시도하려면 아래 단계를 따르십시오.
 
 1. 샘플 파일을 다운로드하여 압축을 푼 후에 JEE Designer에서 AEM Forms으로 hashing_forms_sample1.pdf를 엽니다. 또는 Adobe Reader 또는 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수 있지만 소스 코드는 볼 수 없습니다.
-1. 레이블이 지정된 텍스트 필드에서 [!UICONTROL 텍스트 지우기] 암호나 해시할 다른 메시지를 입력합니다.
+1. 레이블이 [!UICONTROL 텍스트 지우기](으)로 지정된 텍스트 필드에 암호나 해시할 다른 메시지를 입력합니다.
 1. 4개의 버튼 중 하나를 클릭하여 MD4, MD5, SHA-1 또는 SHA-256 해시를 생성합니다. 누른 단추에 따라 16진수 출력을 생성하는 네 개의 해시 함수 중 하나가 호출되고 문자열이나 메시지가 해시됩니다.
 
-해시 작업의 결과가 레이블이 지정된 필드에 표시됩니다 [!UICONTROL 해시]. 해시의 길이는 선택한 해시 함수에 따라 다릅니다.
+해시 작업의 결과가 [!UICONTROL hash](으)로 레이블이 지정된 필드에 표시됩니다. 해시의 길이는 선택한 해시 함수에 따라 다릅니다.
 
 모든 샘플은 16진수를 출력 유형으로 사용합니다. 스크립트 편집기를 사용하여 샘플을 수정하고 출력 유형을 Base64 또는 단순 문자열로 변경할 수 있습니다.
 
@@ -92,11 +92,11 @@ JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층
 
 두 번째 샘플을 시도하려면 아래 단계를 따르십시오.
 
-1. 열기 `hashing_forms_sample2.pdf` jee Designer의 AEM Forms과 함께. 또는 Adobe Reader 또는 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수 있지만 소스 코드는 볼 수 없습니다.
-1. 레이블이 지정된 두 개의 암호 필드 중 하나를 선택합니다. [!UICONTROL 비밀번호 담당자] 또는 [!UICONTROL 비밀번호 여자] 암호를 입력합니다.
-   1. 그 남자의 암호는 `bob`
-   1. 그 여자의 암호는 `alice`
-1. 암호 필드 밖으로 포커스를 옮기거나 Enter 키를 누르면 입력한 암호의 해시가 자동으로 생성되고 백그라운드에서 저장된 정확한 암호의 해시와 비교됩니다. 해시된 올바른 암호는 레이블이 지정된 보이지 않는 텍스트 필드에 저장됩니다 `passwd_man_hashed` 및 `passwd_woman_hashed`. 정확한 비밀번호를 입력하면 텍스트 필드에 다음이 표시됩니다 `Man 1` 및 `Man 2` 에 액세스할 수 있으므로 텍스트를 입력할 수 있습니다. 여성의 밭에도 똑같은 행태가 적용된다.
+1. JEE Designer에서 AEM Forms으로 `hashing_forms_sample2.pdf`을(를) 엽니다. 또는 Adobe Reader 또는 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수 있지만 소스 코드는 볼 수 없습니다.
+1. [!UICONTROL 암호 사용자] 또는 [!UICONTROL 암호 사용자] 레이블이 지정된 두 암호 필드 중 하나를 선택하고 암호를 입력하십시오.
+   1. 남성의 암호는 `bob`입니다.
+   1. 여자의 암호는 `alice`입니다.
+1. 암호 필드 밖으로 포커스를 옮기거나 Enter 키를 누르면 입력한 암호의 해시가 자동으로 생성되고 백그라운드에서 저장된 정확한 암호의 해시와 비교됩니다. 해시된 올바른 암호가 `passwd_man_hashed` 및 `passwd_woman_hashed` 레이블이 지정된 보이지 않는 텍스트 필드에 저장됩니다. 해당 남성의 올바른 암호를 입력하면 레이블이 `Man 1` 및 `Man 2`인 텍스트 필드에 액세스할 수 있으므로 해당 필드에 텍스트를 입력할 수 있습니다. 여성의 밭에도 똑같은 행태가 적용된다.
 1. 선택적으로 &quot;암호 삭제&quot; 단추를 클릭하여 텍스트 필드를 비활성화하고 테두리를 변경할 수 있습니다.
 
 해시된 두 값을 비교하고 텍스트 필드를 활성화하는 코드는 간단합니다.
@@ -118,7 +118,7 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## 속성 {#attributions}
 
-* [로널드 리베스트](https://en.wikipedia.org/wiki/Ron_Rivest)
+* [Ronald Rivest](https://en.wikipedia.org/wiki/Ron_Rivest)
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [해시 충돌](https://en.wikipedia.org/wiki/Hash_collision)
 * [무지개 테이블](https://en.wikipedia.org/wiki/Rainbow_table)

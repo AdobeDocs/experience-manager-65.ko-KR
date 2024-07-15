@@ -22,17 +22,18 @@ ht-degree: 0%
 
 ## 알려진 문제 {#known-issues}
 
-### Dispatcher 다시 가져오기 실패 {#dispatcher-refetch-fails}
+### Dispatcher 재가져오기 실패 {#dispatcher-refetch-fails}
 
 최신 버전의 Jetty와 함께 Dispatcher 4.1.5를 사용하는 경우 요청이 시간 초과될 때까지 기다린 후 다시 가져오기를 수행하면 &quot;원격 서버에서 응답을 받을 수 없음&quot;이 발생할 수 있습니다.
 
 Dispatcher 4.1.6 이상을 사용하면 이 문제가 해결됩니다.
 
-### CQ 5.4에서 업그레이드한 후 포럼 게시물에 액세스할 수 없음 {#cannot-access-forum-post-after-upgrading-from-cq}
+### CQ 5.4에서 업그레이드한 후 포럼 Post에 액세스할 수 없음 {#cannot-access-forum-post-after-upgrading-from-cq}
 
 CQ 5.4에 포럼을 만들고 주제를 게시한 다음 사이트를 AEM 5.6.1 이상으로 업그레이드한 경우 기존 게시물을 보려고 하면 페이지에 오류가 발생할 수 있습니다.
 
-패턴 문자 &#39;a&#39;가 잘못되어 요청을 수행할 수 없습니다. `/content/demoforums/forum-test.html` 이 서버와 로그에는 다음 항목이 포함되어 있습니다.
+패턴 문자 &#39;a&#39;가 잘못되었습니다.
+이 서버의 `/content/demoforums/forum-test.html`에 요청을 제공할 수 없으며 로그에 다음 항목이 포함되어 있습니다.
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -45,12 +46,12 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 따라서 RelativeTimeFormat() API를 사용하는 모든 코드는 변경해야 합니다.
 
-* 출처: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
-* 끝: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
+* 보낸 사람: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
+* 받는 사람: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-실패는 작성자와 게시에서 다릅니다. 작성자의 경우 자동으로 실패하고 포럼 주제가 표시되지 않습니다. 게시 시 페이지에 오류가 발생합니다.
+실패는 작성자와 Publish에서 다릅니다. 작성자의 경우 자동으로 실패하고 포럼 주제가 표시되지 않습니다. Publish에서 페이지에 오류가 발생합니다.
 
-다음을 참조하십시오. [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API를 참조하십시오.
+자세한 내용은 [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API를 참조하십시오.
 
 ## 일반적인 문제 {#common-concerns}
 
@@ -58,9 +59,9 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 시작할 때(처음이 아니라 그 이후마다) 다음 경고가 로그에 표시될 수 있습니다.
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` 이(가) (으)로 대체되었습니다. `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'`이(가) `com.adobe.cq.social.handlebars.I18nHelper@15bac645`(으)로 대체되었습니다.
 
-이 경고는 다음과 같이 안전하게 무시할 수 있습니다. `jknack.handlebars.Handlebars`, 사용 주체 [SCF](scf.md#handlebarsjavascripttemplatinglanguage)는 자체 i18n 도우미 유틸리티와 함께 제공됩니다. 시작 시 AEM 관련 로 대체됩니다. [i18n helper](handlebars-helpers.md#i-n). 이 경고는 기존 도우미의 재정의를 확인하기 위해 서드파티 라이브러리에서 생성됩니다.
+[SCF](scf.md#handlebarsjavascripttemplatinglanguage)에서 사용하는 `jknack.handlebars.Handlebars`에 자체 i18n 도우미 유틸리티가 포함되어 있으므로 이 경고는 무시해도 됩니다. 시작할 때 AEM 관련 [i18n 도우미](handlebars-helpers.md#i-n)(으)로 대체됩니다. 이 경고는 기존 도우미의 재정의를 확인하기 위해 서드파티 라이브러리에서 생성됩니다.
 
 ### 로그의 경고: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 용어 설명{#glossary}
 
-이 용어집에는 모든 제공 서비스 문서의 세부 정보가 알파벳순으로 나열됩니다. [프로젝트 체크리스트](/help/managing/best-practices-checklist.md).
+이 용어집에는 [프로젝트 검사 목록](/help/managing/best-practices-checklist.md)의 모든 결과물 문서의 세부 정보가 사전순으로 나열됩니다.
 
 ## 비즈니스 이해 당사자의 동의 {#acceptance-from-business-stakeholders}
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ### Adobe 보안 검사 목록 {#adobe-security-checklist}
 
-다음 [Adobe 보안 검사 목록](/help/sites-administering/security-checklist.md) 는 설치 시 Adobe Experience Manager(AEM)의 보안을 유지하기 위해 제공되는 공식 체크리스트입니다. 인스턴스의 무결성을 보장하기 위해 수행해야 하는 보안 조치와 확인 단계가 포함되어 있습니다.
+[Adobe 보안 검사 목록](/help/sites-administering/security-checklist.md)은(는) 설치 시 AEM(Adobe Experience Manager)의 보안을 유지하기 위해 제공되는 공식 검사 목록입니다. 인스턴스의 무결성을 보장하기 위해 수행해야 하는 보안 조치와 확인 단계가 포함되어 있습니다.
 
 ### Adobe 지원 포털 프로젝트 설정 {#adobe-support-portal-project-set-up}
 
@@ -56,19 +56,19 @@ Adobe 지원 포털을 통해 구현 파트너와 고객은 지원 포털에서 
 
 ### AEM 관리자 교육 {#aem-administrator-training}
 
-솔루션의 관리 직원을 위한 교육. 다음을 참조하십시오. [Adobe 교육 서비스](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) 추가 정보.
+솔루션의 관리 직원을 위한 교육. 자세한 내용은 [Adobe 교육 서비스](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)를 참조하세요.
 
 ### AEM 작성자 교육 {#aem-author-training}
 
-솔루션에 대한 콘텐츠를 생산(작성)할 직원을 위한 교육. 다음을 참조하십시오. [Adobe 교육 서비스](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) 추가 정보.
+솔루션에 대한 콘텐츠를 생산(작성)할 직원을 위한 교육. 자세한 내용은 [Adobe 교육 서비스](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)를 참조하세요.
 
 ### AEM 인증 시험 {#aem-certification-exam}
 
-적절한 담당자가 관련 정보를 얻기 위해 등록되었는지 확인합니다. [인증 시험](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+관련 [인증 시험](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)을 치를 수 있도록 적절한 성향이 등록되어 있는지 확인하십시오.
 
 ### AEM Certified {#aem-certified}
 
-적절한 담당자가 적절한 담당자를 통과했는지 확인합니다. [인증 시험](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+적절한 담당자는 관련 [인증 시험](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)을 통과했는지 확인하십시오.
 
 ### AEM 기술 교육 {#aem-technical-training}
 
@@ -92,7 +92,7 @@ Adobe 지원 포털을 통해 구현 파트너와 고객은 지원 포털에서 
 
 ### 응용 프로그램 아키텍처 정의 {#application-architecture-definition}
 
-다음 [애플리케이션 아키텍처](/help/managing/best-practices.md#development-preparation) 는 제안된 애플리케이션의 동작을 명확히 정의해야 합니다.
+[응용 프로그램 아키텍처](/help/managing/best-practices.md#development-preparation)은(는) 제안된 응용 프로그램의 동작을 명확하게 정의해야 합니다.
 
 이는 다음 사항에 중점을 둡니다.
 
@@ -109,7 +109,8 @@ Adobe 지원 포털을 통해 구현 파트너와 고객은 지원 포털에서 
 
 * 최소 한 명 이상의 AEM 인증 리드 개발자
 * 최소 한 명 이상의 AEM Certified Architect
-* 개발자의 75% 이상이 AEM 인증을 받았습니다. 이를 통해 인증된 개발자는 후배 개발자의 멘토가 되고 지식 공유와 투명성이 보장됩니다
+* 개발자의 75% 이상이 AEM 인증을 받았습니다.
+이를 통해 인증된 개발자는 주니어 개발자에게 멘토링을 제공하고 지식 공유와 투명성을 보장할 수 있습니다
 
 ### 아키텍처 다이어그램 {#architecture-diagram}
 
@@ -206,7 +207,8 @@ Adobe 지원 포털을 통해 구현 파트너와 고객은 지원 포털에서 
 
 BRD(비즈니스 요구 사항 문서)는 프로젝트에 대한 비즈니스 솔루션을 자세히 설명하므로 고객의 비즈니스 요구 사항과 기대치에 대한 명확한 사양을 제공합니다. BRD는 비즈니스 솔루션과 기술적 솔루션을 구분하기도 한다.
 
-비즈니스 솔루션을 검토할 때 BRD는 &quot;비즈니스가 무엇을 하기를 원하는가?&quot;라는 질문에 답해야 합니다.
+비즈니스 솔루션을 검토할 때 BRD는 다음과 같은 질문에 답해야 합니다.
+&quot;그 기업은 무엇을 하기를 원하는가?&quot;
 
 ### ROI 및 KPI 기대치에 맞게 파악 및 조정된 솔루션 또는 아키텍처에 대한 필수 조정 사항에 대해 비즈니스 승인 {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -502,7 +504,7 @@ AEM과 높은 수준의 솔루션 설계 모두에 대한 타당성 조사 결�
 
 ### 완료된 계약 {#finalized-contract}
 
-프로젝트를 진행하기 전에 확정되고 서명된 계약서가 필요합니다. 다음을 기반으로 합니다. [계약 초안](#contract-draft).
+프로젝트를 진행하기 전에 확정되고 서명된 계약서가 필요합니다. [계약 초안](#contract-draft)을(를) 기반으로 합니다.
 
 ### 이해 당사자가 수락하는 솔루션의 기능 {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -871,7 +873,7 @@ Adobe 지원 포털에 액세스해야 하는 모든 사용자 및 역할 목록
 
 POC(Proof of Concept)는 요구 사항과 비교하여 둘 다 일치하는지 확인합니다.
 
-### 배포 후 검사 목록 {#post-deployment-checklist}
+### Post-배포 검사 목록 {#post-deployment-checklist}
 
 각 배포 후 수행할 일련의 검사 및 작업을 정의하는 체크리스트입니다.
 
@@ -901,7 +903,7 @@ AEM의 표준 설치에 대해 기본 테스트를 실행하는 것이 일반적
 
 ### 프로젝트 노력 - 최종 예상 {#project-efforts-final-estimates}
 
-다음 [초기 예상 값](#project-efforts-initial-estimates) 높은 수준이었으며 구현에 대한 높은 수준의 요구 사항에 따라 만들어졌습니다.
+[초기 예상](#project-efforts-initial-estimates)은(는) 수준이 높았고 구현에 대한 높은 수준의 요구 사항에 따라 수행되었습니다.
 
 이제 이를 검토, 정제 및 확대하여 최종 추정치를 제공한다. 추정치는 프로젝트 관리, 컨설팅, 아키텍처, 테스트 및 개발 등 각 프로젝트 책임자가 제공해야 합니다.
 
@@ -966,7 +968,7 @@ Runbook과 함께 사용하여 설치 전/후 단계 및 검사를 실행합니�
 
 >[!NOTE]
 >
->예를 보려면 [AEM 릴리스 노트](/help/release-notes/release-notes.md).
+>예를 들어 [AEM 릴리스 노트](/help/release-notes/release-notes.md)를 참조하십시오.
 
 ### 프로덕션 환경에서 실행되는 릴리스 {#release-running-on-production-environment}
 
@@ -1285,7 +1287,7 @@ Adobe 지원 포털에 대한 액세스는 구현 중에 발생할 수 있는 �
 
 ### 테스트 계획 {#testing-plans}
 
-이러한 계획은 각 개발 단계에 대한 테스트 실행을 자세히 설명하며 다음을 기반으로 합니다. [테스트 전략](#testing-strategy).
+이러한 계획은 각 개발 단계에 대한 테스트 실행을 자세히 설명하며 [테스트 전략](#testing-strategy)을 기반으로 합니다.
 
 ### 테스트 범위 {#testing-scope}
 

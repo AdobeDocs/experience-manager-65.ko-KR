@@ -17,11 +17,11 @@ ht-degree: 4%
 
 # 오류 대화 상자 사용자 지정 {#customizing-error-dialogs}
 
-AEM Forms 작업 영역을 사용하면 오류 대화 상자를 사용자 지정할 수 있습니다. 다음을 수행합니다. [AEM Forms 작업 공간 사용자 정의에 대한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md) 오류 대화 상자를 사용자 지정하는 아래 단계를 따릅니다.
+AEM Forms 작업 영역을 사용하면 오류 대화 상자를 사용자 지정할 수 있습니다. [AEM Forms 작업 영역 사용자 지정에 대한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md)를 수행한 다음 아래 단계를 수행하여 오류 대화 상자를 사용자 지정합니다.
 
 ## 텍스트 맞춤화 {#customizing-text}
 
-1. 다음에서 `/apps/ws/locales/en-US/translation.json` 파일, 값 변경 `wserror` 을 추가하여 맞춤화된 값을 생성할 수 있습니다. 예:
+1. `/apps/ws/locales/en-US/translation.json` 파일에서 `wserror`의 값을 사용자 지정된 값으로 변경합니다. 예:
 
    ```json
    "wserror" : {
@@ -51,7 +51,7 @@ AEM Forms 작업 영역을 사용하면 오류 대화 상자를 사용자 지정
 
 ## CSS 사용자 지정 {#customizing-css}
 
-1. 에 다음 코드 조각을 추가하여 대화 상자, 헤더, 콘텐츠 영역, 풋 바, 풋 바 단추 및 기타 보충 자료를 업데이트할 수 있습니다. `/apps/ws/css/newStyle.css` 파일:
+1. `/apps/ws/css/newStyle.css` 파일에 다음 코드 조각을 추가하여 대화 상자, 헤더, 콘텐츠 영역, 도구 모음, 도구 모음 단추 및 기타 보충 자료를 업데이트할 수 있습니다.
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -186,7 +186,7 @@ AEM Forms 작업 영역을 사용하면 오류 대화 상자를 사용자 지정
    }
    ```
 
-1. 발 표시줄 단추 범위의 경우 `.error-dialog` 및 `.foot-bar` 단추가 조합 목록에서 확장됩니다. 이렇게 변경하려면 newStyle.css 파일에 다음을 추가합니다.
+1. 각봉 단추 범위의 경우 `.error-dialog` 및 `.foot-bar` 단추 범위를 복합 목록에서 구분하십시오. 이렇게 변경하려면 newStyle.css 파일에 다음을 추가합니다.
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -223,11 +223,11 @@ AEM Forms 작업 영역을 사용하면 오류 대화 상자를 사용자 지정
 
 >[!NOTE]
 >
->추가 이미지를 참조하는 경우 아래에서 원하는 계층에 이미지를 추가하십시오. `/apps/ws/images`.
+>추가 이미지를 참조하는 경우 `/apps/ws/images`에서 원하는 계층 구조에 추가하십시오.
 
 ## 예 {#examples}
 
-* **오류 대화 상자를 사용자 지정하려면 다음을 변경합니다.**
+* **오류 대화 상자를 사용자 지정하려면**&#x200B;을(를) 변경합니다.
 
 ```css
 .error-dialog{
@@ -261,7 +261,7 @@ AEM Forms 작업 영역을 사용하면 오류 대화 상자를 사용자 지정
 }
 ```
 
-* **오류 대화 상자 헤더를 사용자 지정하려면 다음을 변경합니다.**
+* **오류 대화 상자 헤더를 사용자 지정하려면**&#x200B;을(를) 변경합니다.
 
 ```css
 .error-dialog .head-bar{

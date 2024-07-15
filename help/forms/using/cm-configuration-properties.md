@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 서신 관리 구성 속성 {#correspondence-management-configuration-properties}
 
-이러한 속성을 구성하려면 브라우저에서 다음 URL을 엽니다. `https://<server>:<port>/<contextPath>/system/console/configMgr` 및 선택 **서신 관리 구성**.
+이러한 속성을 구성하려면 브라우저에서 URL `https://<server>:<port>/<contextPath>/system/console/configMgr`을(를) 열고 **서신 관리 구성**&#x200B;을 선택합니다.
 
 서신 관리에는 다음과 같은 구성 속성이 있습니다.
 
@@ -162,8 +162,8 @@ ht-degree: 3%
    <td>—<p> </p> </td>
   </tr>
   <tr>
-   <td><p>게시할 때 편지 인스턴스 관리</p> </td>
-   <td><p>편지 관리 기능 활성화/비활성화(게시 서버에만 적용 가능)</p> </td>
+   <td><p>Publish에서 편지 인스턴스 관리</p> </td>
+   <td><p>편지 관리 기능 활성화/비활성화(Publish 서버에만 적용 가능)</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -198,7 +198,7 @@ ht-degree: 3%
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>게시 감사 활성화</p> </td>
+   <td><p>Publish 감사 활성화</p> </td>
    <td><p>자산 게시를 위한 감사 기능 활성화/비활성화</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
@@ -247,13 +247,13 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>Letter 캐시 크기</p> </td>
-   <td><p>캐시에 보관할 최대 문자 수를 지정합니다.</p> <p>이 값을 변경하면 이 삭제됩니다. <code>in-memory</code> 캐시입니다.</p> </td>
+   <td><p>캐시에 보관할 최대 문자 수를 지정합니다.</p> <p>이 값을 변경하면 <code>in-memory</code> 캐시가 정리됩니다.</p> </td>
    <td><p>100</p> </td>
    <td><p>모든 숫자 값</p> </td>
   </tr>
   <tr>
    <td><p>Letter 캐시 활성화</p> </td>
-   <td><p>편지 캐시를 활성화/비활성화합니다.</p> <p>이 값을 변경하면 이 삭제됩니다. <code>in-memory </code> 캐시입니다.</p> </td>
+   <td><p>편지 캐시를 활성화/비활성화합니다.</p> <p>이 값을 변경하면 <code>in-memory </code> 캐시가 정리됩니다.</p> </td>
    <td><p>true</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -289,7 +289,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>디버그 디렉터리 </p> <p> </p> </td>
-   <td>디버깅을 위한 파일 시스템 폴더 위치입니다. 디렉토리가 <code>exists</code>, 디버그 덤프가 생성되지 않습니다.</td>
+   <td>디버깅을 위한 파일 시스템 폴더 위치입니다. 디렉터리에 <code>exists</code>이(가) 없으면 디버그 덤프가 생성되지 않습니다.</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>

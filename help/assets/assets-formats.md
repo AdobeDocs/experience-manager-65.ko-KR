@@ -1,6 +1,6 @@
 ---
 title: 지원되는 파일 형식 및 MIME 유형
-description: 에서 지원하는 파일 형식 및 MIME 유형 [!DNL Assets] 및 [!DNL Dynamic Media] 각 형식에 대해 지원되는 기능을 사용할 수 있습니다.
+description: ' [!DNL Assets]  및 [!DNL Dynamic Media] 에서 지원하는 파일 형식 및 MIME 형식과 각 형식에 대해 지원되는 기능.'
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
@@ -15,9 +15,9 @@ ht-degree: 25%
 
 ---
 
-# 에서 지원되는 형식 [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
+# [!DNL Adobe Experience Manager Assets]에서 지원되는 형식 {#assets-supported-formats}
 
-[!DNL Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형에 대해 다양한 지원을 제공합니다. 통합하려면 [!DNL Assets] 다른 표준 준수 디지털 에셋 관리(DAM) 솔루션 및 데스크탑 소프트웨어와 함께 Adobe [!DNL Extensible Metadata Platform] (XMP).
+[!DNL Experience Manager Assets]은(는) 다양한 파일 형식을 지원하며 각 기능마다 다양한 MIME 형식을 지원합니다. [!DNL Assets]을(를) 다른 표준 준수 DAM(디지털 에셋 관리) 솔루션 및 데스크톱 소프트웨어와 통합하려면 Adobe의 [!DNL Extensible Metadata Platform](XMP)을(를) 사용하십시오.
 
 범례를 사용하여 지원 수준을 이해할 수 있습니다.
 
@@ -27,9 +27,9 @@ ht-degree: 25%
 | &#42; | 추가 기능 지원 |
 | − | 해당되지 않음 |
 
-## 에서 지원되는 래스터 이미지 형식 [!DNL Experience Manager] {#supported-raster-image-formats}
+## [!DNL Experience Manager]에서 지원되는 래스터 이미지 형식 {#supported-raster-image-formats}
 
-에서 지원되는 래스터 이미지 형식 [!DNL Assets] 은(는)
+[!DNL Assets]에서 지원되는 래스터 이미지 형식은 다음과 같습니다.
 
 | 형식 | 스토리지 | 메타데이터 관리 | 메타데이터 추출 | 썸네일 생성 | 편집 | 메타데이터 원본에 쓰기 | Insights |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
@@ -51,17 +51,17 @@ ht-degree: 25%
 
 위의 정보 외에 다음 사항을 고려하십시오.
 
-* EPS 파일에 대한 지원은 래스터 이미지에만 적용됩니다. 예를 들어 EPS 벡터 이미지에 대한 썸네일 생성은 기본적으로 지원되지 않습니다. 지원을 추가하려면 [imageMagick 구성](best-practices-for-imagemagick.md). 타사 도구를 통합하여 추가 기능을 활성화하려면 다음을 참조하십시오 [명령줄 기반 미디어 핸들러](media-handlers.md#command-line-based-media-handler).
+* EPS 파일에 대한 지원은 래스터 이미지에만 적용됩니다. 예를 들어 EPS 벡터 이미지에 대한 썸네일 생성은 기본적으로 지원되지 않습니다. 지원을 추가하려면 [ImageMagick 구성](best-practices-for-imagemagick.md)하세요. 타사 도구를 통합하여 추가 기능을 사용하려면 [명령줄 기반 미디어 처리기](media-handlers.md#command-line-based-media-handler)를 참조하십시오.
 
-* 메타데이터 원본에 쓰기 기능은 PSB 파일 형식이에 추가될 때 작동합니다. `NComm` 핸들러입니다.
+* 메타데이터 원본에 쓰기 작업은 `NComm` 처리기에 추가될 때 PSB 파일 형식에 대해 작동합니다.
 
-* EPS 파일의 경우, 메타데이터 원본에 쓰기 기능은 PostScript Document Structuring Convention(PS-Adobe) 버전 3.0 이상에서 지원됩니다.
+* EPS 파일의 경우, 메타데이터 원본에 쓰기 기능은 PostScript PS-Adobe(Document Structuring Convention) 버전 3.0 이상에서 지원됩니다.
 
 ## 지원되는 3D 형식 {#support-3d-formats}
 
 다음 3D 형식 목록이 지원됩니다.
 
-참조: [Dynamic Media에서 3D 자산 작업](/help/assets/assets-3d.md)
+[Dynamic Media에서 3D 자산 작업](/help/assets/assets-3d.md)도 참조하세요.
 
 | 형식 | 스토리지 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | 썸네일 미리보기 | 3D 미리 보기 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -74,13 +74,13 @@ ht-degree: 25%
 
 ## 지원되는 PDF 래스터라이저 라이브러리 {#supported-pdf-rasterizer-library}
 
-Adobe PDF 래스터라이저 라이브러리는 고품질 썸네일을 생성하고 대용량 및 콘텐츠 집약형 미리 보기를 생성합니다 [!DNL Adobe Illustrator] 및 PDF 파일을 내보낼 수 있습니다. Adobe은 다음에 대해 PDF 래스터라이저 라이브러리를 사용할 것을 권장합니다.
+Adobe PDF 래스터라이저 라이브러리는 컨텐츠가 많은 대용량 [!DNL Adobe Illustrator] 및 PDF 파일에 대한 고품질 썸네일과 미리보기를 생성합니다. Adobe은 다음에 대해 PDF 래스터라이저 라이브러리를 사용할 것을 권장합니다.
 
 * 처리할 리소스가 많은 콘텐츠 중심의 AI/PDF 파일.
 * 기본적으로 썸네일이 생성되지 않는 AI/PDF 파일.
 * PMS(Pantone Matching System) 색상이 있는 AI 파일.
 
-다음을 참조하십시오 [PDF 래스터라이저 사용](aem-pdf-rasterizer.md).
+[PDF 래스터라이저 사용](aem-pdf-rasterizer.md)을 참조하세요.
 
 ## 지원되는 이미지 코드 변환 라이브러리 {#supported-image-transcoding-library}
 
@@ -88,17 +88,17 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 이미징 코드 변환 라이브러리는 JPG/JPEG, PNG(8비트 및 16비트), GIF, BMP, TIFF/압축 TIFF(32비트 TIFF 파일 및 PTIFF 파일 제외), ICO 및 ICN MIME 유형을 지원합니다.
 
-다음을 참조하십시오 [이미징 코드 변환 라이브러리](imaging-transcoding-library.md).
+[이미징 코드 변환 라이브러리](imaging-transcoding-library.md)를 참조하세요.
 
-## Camera Raw 지원 {#supported-camera-raw}
+## Camera Raw 지원되는 함수 {#supported-camera-raw}
 
-다음 [!DNL Adobe Camera Raw] 라이브러리 사용 [!DNL Assets] 원시 이미지를 수집합니다. 다음을 참조하십시오 [Camera Raw 지원](camera-raw.md).
+[!DNL Adobe Camera Raw] 라이브러리를 사용하면 [!DNL Assets]에서 원시 이미지를 수집할 수 있습니다. Camera Raw [지원](camera-raw.md)을 참조하십시오.
 
-## 지원됨 [!DNL Assets] 문서 형식 {#supported-document-formats}
+## 지원되는 [!DNL Assets] 문서 형식 {#supported-document-formats}
 
 자산 관리 기능에 대해 지원되는 문서 형식은 다음과 같습니다.
 
-| 형식 | 스토리지 | [메타데이터 관리](metadata.md) | 전체 텍스트<br> 추출 | [메타데이터 추출](metadata.md) | 축소판<br> 생성 | [하위 자산 추출](managing-linked-subassets.md) | [메타데이터 원본에 쓰기](xmp-writeback.md) | [연결된 자산](use-assets-across-connected-assets-instances.md) |
+| 형식 | 스토리지 | [메타데이터 관리](metadata.md) | 전체 텍스트<br> 추출 | [메타데이터 추출](metadata.md) | 썸네일<br> 생성 | [하위 자산 추출](managing-linked-subassets.md) | [메타데이터 원본에 쓰기](xmp-writeback.md) | [연결된 자산](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
 | DOC | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
@@ -172,18 +172,18 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 ## 지원되는 MIME 유형 {#supported-mime-types}
 
-기본적으로, [!DNL Experience Manager] 는 파일 확장명을 사용하여 파일 유형을 검색합니다. [!DNL Experience Manager] 는 파일의 내용에서 이를 감지할 수 있습니다. 후자의 경우 를 선택합니다. [!UICONTROL 컨텐츠에서 MIME 감지] 의 옵션 [!UICONTROL 일별 CQ DAM Mime 유형 서비스] 다음에서 [!DNL Experience Manager] 웹 콘솔.
+기본적으로 [!DNL Experience Manager]은(는) 파일 확장명을 사용하여 파일 형식을 검색합니다. [!DNL Experience Manager]이(가) 파일의 내용에서 이를 감지할 수 있습니다. 후자의 경우 [!DNL Experience Manager] 웹 콘솔에서 [!UICONTROL 일 CQ DAM MIME 유형 서비스]의 [!UICONTROL 콘텐츠에서 MIME 감지] 옵션을 선택하십시오.
 
-지원되는 MIME 유형 목록은 다음 CRXDE Lite에서 사용할 수 있습니다. `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+`/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`의 CRXDE Lite에서 지원되는 MIME 형식 목록을 사용할 수 있습니다.
 
 | 파일 확장명 | MIME 유형/인터넷 미디어 유형 | 기본 jobParam 값 | 허용된 jobParam 값 |
 |---|---|---|---|
-| 이미지 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 기본 jobParam은 모든 이미지 MIME 유형 자산에 적용됩니다.<ul><li>[녹아웃 배경 옵션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html)</li><li>[manualCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options.html)</li><li>[자동 색상 자르기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options.html)</li><li>[자동 투명 자르기 옵션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html)</li><li>[colorManagementOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options.html)</li><li>[autoSetCreateOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options.html)</li><li>[emailSettings](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings.html)</li><li>[xmpKeywords](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords.html)</li><li>[unsharpMaskOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options.html)</li></ul> |
+| 이미지 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 기본 jobParam은 모든 이미지 MIME 유형 자산에 적용됩니다.<ul><li>[녹아웃 백그라운드 옵션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html)</li><li>[manualCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options.html)</li><li>[autoColorCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options.html)</li><li>[autoTransparentCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html)</li><li>[colorManagementOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options.html)</li><li>[autoSetCreationOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options.html)</li><li>[emailSetting](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings.html)</li><li>[xmpKeywords](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords.html)</li><li>[unsharpMaskOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options.html)</li></ul> |
 | 3G2 | video/3gpp2 | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | 3GP | video/3gpp | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | AAC | audio/x-aac | | |
 | AFM | application/x-font-type1 | | |
-| AI | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScript 옵션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li> [illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
+| AI | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li> [illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
 | AIFF | audio/x-aiff | | |
 | AVI | video/x-msvideo | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | BMP | image/bmp | | |
@@ -210,13 +210,13 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 | MTS | model/vnd.mts | | |
 | OGV | video/ogg | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | OTF | application/x-font-otf | | |
-| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-pdf-options.html) |
+| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdf옵션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-pdf-options.html) |
 | PFB | application/x-font-type1 | | |
 | PFM | application/x-font-type1 | | |
 | PICT | image/x-pict | | |
 | PNG | image/png | | |
 | PPT | application/vnd.ms-powerpoint | | |
-| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScript 옵션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html</li></ul> |
+| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
 | RTF | application/rtf | | |
 | SVG | image/svg+xml | | |
@@ -254,11 +254,11 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 ## Dynamic Media - 지원되는 문서 형식 {#supported-document-formats-dynamic-media}
 
-| 형식 | 업로드<br> (입력 형식) | 만들기<br> 이미지<br> 사전 설정<br> (출력 형식) | 미리 보기<br> 동적<br> 렌디션 | 제공<br> 동적<br> 렌디션 | 다운로드<br> 동적<br> 렌디션 |
+| 형식 | <br> 업로드(입력 형식) | <br> 이미지 만들기<br> 사전 설정<br>(출력 형식) | <br>개의 동적<br> 렌디션 미리 보기 | <br>개의 동적<br> 렌디션 전달 | <br>개의 동적<br> 렌디션 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | − | − | − |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (아래 참고 참조) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)(아래 참고 사항 참조) | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
 >
@@ -266,42 +266,42 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 위의 기능 외에 다음 사항을 고려하십시오.
 
-* Dynamic Media을 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 다음을 참조하십시오. [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media을 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media을 사용하여 AI 파일에 대한 동적 변환을 미리 보고 생성하려면 다음을 참조하십시오. [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media을 사용하여 AI 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media을 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 다음을 참조하십시오. [InDesign(INDD) 파일 형식](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Dynamic Media을 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 [INDD(InDesign) 파일 형식](../assets/managing-image-presets.md#indesign-indd-file-format)을(를) 참조하십시오.
 
 ## Dynamic Media - 지원되는 래스터 이미지 형식 {#supported-raster-image-formats-dynamic-media}
 
 | 형식 | 업로드 (입력 형식) | 이미지 사전 설정 만들기(출력 형식) | 동적 렌디션 미리 보기 | 동적 렌디션 전달 | 동적 렌디션 다운로드 | 이 형식을 지원하는 형식 설정 |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | − | − | − | ✓ | − | − |
-| BMP | ✓ | − | − | − | − | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
+| BMP | ✓ | − | − | − | − | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md) 및 [회전](/help/assets/spin-sets.md) |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | HEIC | − | − | − | ✓ | − | − |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md) 및 [회전](/help/assets/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md) 및 [회전](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md), 및 [회전](/help/assets/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md) 및 [회전](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ 병합된 이미지가 PSD 파일에서 추출됩니다. Adobe Photoshop에서 생성되고 PSD 파일에 포함된 이미지입니다. 설정에 따라 병합된 이미지가 실제 이미지가 될 수도 있고 그렇지 않을 수도 있습니다.
 
-* EPS 파일에 대한 지원은 래스터 이미지에만 적용됩니다. 예를 들어 EPS 벡터 이미지에 대한 썸네일 생성은 기본적으로 지원되지 않습니다. 지원을 추가하려면 [imageMagick 구성](best-practices-for-imagemagick.md). 타사 도구를 통합하여 추가 기능을 활성화하려면 다음을 참조하십시오 [명령줄 기반 미디어 핸들러](media-handlers.md#command-line-based-media-handler).
+* EPS 파일에 대한 지원은 래스터 이미지에만 적용됩니다. 예를 들어 EPS 벡터 이미지에 대한 썸네일 생성은 기본적으로 지원되지 않습니다. 지원을 추가하려면 [ImageMagick 구성](best-practices-for-imagemagick.md)하세요. 타사 도구를 통합하여 추가 기능을 사용하려면 [명령줄 기반 미디어 처리기](media-handlers.md#command-line-based-media-handler)를 참조하십시오.
 
-* 사용 [!DNL Dynamic Media] EPS 파일에 대한 동적 변환을 미리 보고 생성하려면 다음을 참조하십시오. [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* [!DNL Dynamic Media]을(를) 사용하여 EPS 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* EPS 파일의 경우, 메타데이터 원본에 쓰기 기능은 PostScript Document Structuring Convention(PS-Adobe) 버전 3.0 이상에서 지원됩니다.
+* EPS 파일의 경우, 메타데이터 원본에 쓰기 기능은 PostScript PS-Adobe(Document Structuring Convention) 버전 3.0 이상에서 지원됩니다.
 
 ## Dynamic Media - 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
-다음 목록은 다음과 같은 래스터 이미지 파일 형식의 하위 유형을 설명합니다. *아님* Dynamic Media에서 지원됩니다.
+다음 목록은 Dynamic Media에서 지원되는 *지원되지 않는* 래스터 이미지 파일 형식의 하위 유형을 설명합니다.
 
-참조: [Dynamic Media에서 지원되지 않는 파일 형식 감지](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html) 기술 자료 문서입니다.
+[Dynamic Media에서 지원되지 않는 파일 형식 검색](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html) 기술 자료 문서도 참조하십시오.
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일입니다.
 * PSB 파일
@@ -332,16 +332,16 @@ The following table describes the sub-types of raster image formats that are *no
 
 Dynamic Media은 다음과 같은 3D 형식을 지원합니다.
 
-참조: [Dynamic Media에서 3D 자산 작업](/help/assets/assets-3d.md).
+[Dynamic Media에서 3D 자산 작업](/help/assets/assets-3d.md)도 참조하세요.
 
 | 3D 파일 확장명 | 파일 포맷 | MIME 유형 | 메모 |
 |---|---|---|---|
 | GLB | 이진 GL 전송 | model/gltf-binary | 재료 및 텍스처를 단일 자산으로 포함합니다. |
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
 | STL | 스테레오리소그래피 | application/vnd.ms-pki.stl |  |
-| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | *수집 전용 지원으로, 보기 또는 상호 작용을 사용할 수 없습니다.* USDZ는 Safari 및 iOS 디바이스에서 기본적으로 볼 수 있는 독점 3D 포맷입니다. |
+| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | *수집 전용 지원으로, 보거나 상호 작용할 수 없습니다.* USDZ는 Safari 및 iOS 장치에서 기본적으로 볼 수 있는 독점 3D 형식입니다. |
 
 >[!MORELIKETHIS]
 >
->* [MIME 유형 기반 에셋 및 Dynamic Media Classic 업로드 작업 매개 변수 지원 활성화](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
->* [업로드 작업 매개 변수 지원에 대한 MIME 유형 기반 구성](config-dynamic.md).
+>* [MIME 형식 기반 Assets 및 Dynamic Media Classic 업로드 작업 매개 변수 지원을 사용하도록 설정](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+>* [업로드 작업 매개 변수 지원에 대한 MIME 형식을 기반으로 구성합니다](config-dynamic.md).

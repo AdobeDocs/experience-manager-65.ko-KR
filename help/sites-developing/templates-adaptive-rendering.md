@@ -39,21 +39,21 @@ ht-degree: 2%
 
 ## 구성 {#configuration}
 
-적응형 렌더링 선택기는 기존 장치 그룹에 대해 구성하거나 [직접 만든 그룹입니다.](/help/sites-developing/mobile.md#device-groups)
+응용 렌더링 선택기는 기존 장치 그룹에 대해 또는 직접 만든 [그룹에 대해 구성할 수 있습니다.](/help/sites-developing/mobile.md#device-groups)
 
-이 예에서는 기존 장치 그룹을 구성합니다 **스마트폰** 적응형 렌더링 선택기를 의 일부로 사용 **경험 페이지** We.Retail 내의 템플릿입니다.
+이 예제에서는 We.Retail 내의 **경험 페이지** 템플릿의 일부로 적응형 렌더링 선택기를 갖도록 기존 장치 그룹 **스마트폰**&#x200B;을(를) 구성합니다.
 
-1. 에서 적응형 선택기가 필요한 장치 그룹 편집 `http://localhost:4502/miscadmin#/etc/mobile/groups`
+1. `http://localhost:4502/miscadmin#/etc/mobile/groups`에서 적응형 선택기가 필요한 장치 그룹 편집
 
-   옵션 설정 **에뮬레이터 사용 안 함** 저장하십시오.
+   **에뮬레이터 사용 안 함** 옵션을 설정하고 저장합니다.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. 선택기는 다음에 사용할 수 있습니다. **블랙베리®** 및 **IPHONE 4** 장치 그룹 제공 **스마트폰** 가 다음 단계에서 템플릿 및 페이지 구조에 추가됩니다.
+1. 다음 단계에서 장치 그룹 **스마트 폰**&#x200B;이(가) 템플릿 및 페이지 구조에 추가되면 **BlackBerry®** 및 **iPhone 4**&#x200B;에서 선택기를 사용할 수 있습니다.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. CRXDE Lite을 사용하면 장치 그룹을 다중 값 문자열 속성에 추가하여 템플릿에서 사용할 수 있습니다 `cq:deviceGroups` 템플릿의 구조에서 참조할 수 있습니다.
+1. CRXDE Lite을 사용하면 장치 그룹을 템플릿 구조의 다중 값 문자열 속성 `cq:deviceGroups`에 추가하여 템플릿에서 사용할 수 있습니다.
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 
@@ -63,19 +63,19 @@ ht-degree: 2%
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. CRXDE Lite을 사용하여 장치 그룹을 다중 값 문자열 속성에 추가하여 사이트에서 사용할 수 있도록 허용합니다 `cq:deviceGroups` 사이트의 구조에서.
+1. CRXDE Lite을 사용하면 사이트 구조의 다중 값 문자열 속성 `cq:deviceGroups`에 장치 그룹을 추가하여 사이트에서 사용할 수 있도록 허용합니다.
 
    `/content/<your-site>/jcr:content`
 
-   예를 들어 **스마트폰** 장치 그룹:
+   예를 들어 **스마트폰** 장치 그룹을 허용하려는 경우:
 
    `/content/we-retail/jcr:content`
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-이제 을(를) 사용할 때 [에뮬레이터](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) 페이지 편집기 내(예: [레이아웃 수정](/help/sites-authoring/responsive-layout.md)) 구성된 장치 그룹의 장치를 선택하면 페이지가 URL의 일부로 선택기로 렌더링됩니다.
+이제 페이지 편집기에서 [에뮬레이터](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)을(를) 사용하고([레이아웃을 수정](/help/sites-authoring/responsive-layout.md)하는 경우 등) 구성된 장치 그룹의 장치를 선택하면 페이지가 선택기를 사용하여 URL의 일부로 렌더링됩니다.
 
-이 예에서 다음을 기반으로 페이지를 편집할 때 **경험 페이지** 템플릿을 선택하고 에뮬레이터에서 iPhone 4를 선택하면 다음과 같이 선택기가 포함된 페이지가 렌더링됩니다. `arctic-surfing-in-lofoten.smart.html` 대신 `arctic-surfing-in-lofoten.html`
+이 예에서는 **경험 페이지** 템플릿을 기반으로 페이지를 편집하고 에뮬레이터에서 iPhone 4를 선택하면 선택기가 `arctic-surfing-in-lofoten.html` 대신 `arctic-surfing-in-lofoten.smart.html`(으)로 포함된 페이지가 렌더링됩니다
 
 이 선택기를 사용하여 페이지를 직접 호출할 수도 있습니다.
 

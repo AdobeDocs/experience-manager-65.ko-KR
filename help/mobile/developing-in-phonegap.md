@@ -25,7 +25,7 @@ AEM은 AEM 페이지를 사용하여 앱을 쉽게 만들 수 있도록 PhoneGap
 
 >[!NOTE]
 >
->Adobe PhoneGap을 사용하여 AEM Mobile을 시작하기 전에 환경을 설정하고 [AEM Mobile 애플리케이션 대시보드](/help/mobile/phonegap-authoring-apps.md).
+>Adobe PhoneGap을 사용하여 AEM Mobile을 시작하기 전에 환경을 설정하고 [AEM Mobile 응용 프로그램 대시보드](/help/mobile/phonegap-authoring-apps.md)를 시작해야 합니다.
 
 다음 리소스는 Adobe PhoneGap을 사용하여 AEM Mobile을 시작하는 데 도움이 됩니다.
 
@@ -35,13 +35,13 @@ AEM은 AEM 페이지를 사용하여 앱을 쉽게 만들 수 있도록 PhoneGap
 
 * [AEM Mobile Content Services: 개요](/help/mobile/develop-content-as-a-service.md)
 
-   * Content Services 및 데이터 모델을 활성화하려면 [Content Services 관리](/help/mobile/developing-content-services.md)
-   * 모델 만들기에 대한 자세한 내용은 [모델 개발](/help/mobile/administer-mobile-apps.md)
-   * 렌더링 및 전달에 대한 자세한 내용은 [컨텐츠 서비스 렌더링 및 전달](/help/mobile/rendering-and-delivery.md)
+   * Content Services 및 데이터 모델을 사용하려면 [Content Services 관리](/help/mobile/developing-content-services.md)를 참조하십시오
+   * 모델 만들기에 대한 자세한 내용은 [모델 개발](/help/mobile/administer-mobile-apps.md)을 참조하세요.
+   * 렌더링 및 배달에 대한 자세한 내용은 [콘텐츠 서비스의 렌더링 및 배달](/help/mobile/rendering-and-delivery.md)을 참조하세요.
 
 >[!NOTE]
 >
->iOS 또는 Android 모바일 장치에서 AEM 모바일 애플리케이션을 실행하려면 다음을 참조하십시오. [AEM Verify 앱을 사용하는 모바일 빠른 시작](/help/mobile/phonegap-mobile-quickstart.md).
+>iOS 또는 Android 모바일 장치에서 AEM 모바일 응용 프로그램을 실행하려면 [AEM 확인 앱을 사용하여 모바일 빠른 시작](/help/mobile/phonegap-mobile-quickstart.md)을 참조하세요.
 
 ## 시작하기 {#getting-ahead}
 

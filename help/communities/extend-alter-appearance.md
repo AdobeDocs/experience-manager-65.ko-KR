@@ -29,9 +29,9 @@ ht-degree: 0%
 
 ## HBS 스크립트 수정 {#modify-the-hbs-scripts}
 
-사용 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 사용:
 
-* 열기 [/apps/custom/components/comments/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* [/apps/custom/components/comments/comment/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs) 열기
 
    * 댓글 게시물에 대한 아바타가 포함된 태그를 주석 처리합니다(~ 21행).
 
@@ -41,7 +41,7 @@ ht-degree: 0%
         -->
      ```
 
-* 열기 [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs) 열기
 
    * 다음 댓글 항목의 아바타가 포함된 태그를 주석 처리합니다(~ 44행).
 
@@ -51,7 +51,7 @@ ht-degree: 0%
         -->
      ```
 
-* 선택 **모두 저장**
+* **모두 저장** 선택
 
 ### 사용자 지정 앱 복제 {#replicate-custom-app}
 
@@ -61,15 +61,15 @@ ht-degree: 0%
 
 * 메인 메뉴에서
 
-   * 선택 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 복제]**.
-   * 선택 **[!UICONTROL 트리 활성화]**.
-   * 설정 `Start Path` 끝 `/apps/custom`.
-   * 선택 취소 **[!UICONTROL 수정된 항목만]**.
-   * 선택 **[!UICONTROL 활성화]** 단추를 클릭합니다.
+   * **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 복제]**&#x200B;를 선택합니다.
+   * **[!UICONTROL 트리 활성화]**&#x200B;를 선택하십시오.
+   * `Start Path`을(를) `/apps/custom`(으)로 설정합니다.
+   * **[!UICONTROL 수정된 항목만]**&#x200B;을 선택 취소합니다.
+   * **[!UICONTROL 활성화]** 단추를 선택하십시오.
 
 ### 게시된 샘플 페이지에서 수정된 댓글 보기 {#view-modified-comment-on-published-sample-page}
 
-[경험 계속](/help/communities/extend-sample-page.md#publish-sample-page) 동일한 사용자로 로그인한 게시 인스턴스에서 이제 게시 환경에서 페이지를 새로 고쳐 아바타를 제거하는 수정 사항을 볼 수 있습니다.
+[게시 인스턴스에서 계속 ](/help/communities/extend-sample-page.md#publish-sample-page) 환경을 사용하면서 동일한 사용자로 로그인되어 있습니다. 이제 게시 환경에서 페이지를 새로 고쳐 아바타를 제거하는 수정 내용을 볼 수 있습니다.
 
 ![수정된 콘텐츠 보기](assets/view-modified-content.png)
 

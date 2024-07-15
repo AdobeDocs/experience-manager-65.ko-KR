@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # 인증서 및 자격 증명 관리의 기본 사항 {#basics-of-managing-certificates-and-credentials}
 
-A *자격 증명* 문서에 서명하거나 문서를 식별하는 데 필요한 개인 키 정보를 포함합니다. A *인증서* 는 트러스트에 대해 구성하는 공개 키 정보입니다. AEM forms에서는 여러 가지 용도로 인증서 및 자격 증명을 사용합니다.
+*자격 증명*&#x200B;에 문서에 서명하거나 문서를 식별하는 데 필요한 개인 키 정보가 포함되어 있습니다. *인증서*&#x200B;는 트러스트에 대해 구성하는 공개 키 정보입니다. AEM forms에서는 여러 가지 용도로 인증서 및 자격 증명을 사용합니다.
 
-* Acrobat Reader DC 확장은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. (참조: [Acrobat Reader DC 확장에 사용할 자격 증명 구성](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* 신뢰할 수 있는 발급자에서만 Acrobat에서 사용할 자격 증명을 표시하도록 Rights Management을 구성할 수 있습니다. (참조: [Rights Management 표시 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) 인증서에 CN(일반 이름)이 있어야 합니다.
-* 서명 서비스는 인증서 및 자격 증명에 액세스합니다. 서명 서비스에 대한 자세한 내용은 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_65).
+* Acrobat Reader DC 확장은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. ([Acrobat Reader DC 확장에 사용할 자격 증명 구성](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)을 참조하십시오.)
+* 신뢰할 수 있는 발급자에서만 Acrobat에서 사용할 자격 증명을 표시하도록 Rights Management을 구성할 수 있습니다. ([Rights Management 표시 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)을 참조하십시오.) 인증서에 CN(일반 이름)이 있어야 합니다.
+* 서명 서비스는 인증서 및 자격 증명에 액세스합니다. 서명 서비스에 대한 자세한 내용은 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_65)를 참조하십시오.
 
 **쌍 키 생성**
 
@@ -45,7 +45,7 @@ AEM forms는 키 쌍을 생성하는 옵션을 제공하지 않습니다. 그러
 * PKCS#1
 * DSA 서명
 
-**분실 또는 손상된 키 처리**
+**손실되거나 손상된 키 처리**
 
 키가 손실되었거나 손상된 것으로 의심되는 경우 다음 조치를 취하십시오.
 

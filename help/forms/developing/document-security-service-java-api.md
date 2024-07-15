@@ -48,11 +48,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍의 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms을 사용한 프로그래밍의 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 정책 만들기 {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 새 정책을 만듭니다. *복사 허용*. 정책이 추가되는 정책 세트의 이름은 입니다. *전역 정책 설정*. 이 정책 집합은 기본적으로 존재합니다. (참조: [정책 만들기](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
+다음 Java 코드 예제에서는 *복사 허용*&#x200B;이라는 새 정책을 만듭니다. 정책이 추가되는 정책 집합의 이름은 *전역 정책 집합*&#x200B;입니다. 이 정책 집합은 기본적으로 존재합니다. ([정책 만들기](/help/forms/developing/protecting-documents-policies.md#creating-policies)를 참조하십시오.)
 
 ```java
  /*
@@ -181,7 +181,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 정책 수정 {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 정책을 수정합니다. *복사 허용* 오프라인 임대 기간을 40일로 설정합니다. (참조: [정책 수정](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
+다음 Java 코드 예제에서는 오프라인 임대 기간을 40일로 설정하여 *복사 허용*&#x200B;이라는 정책을 수정합니다. ([정책 수정](/help/forms/developing/protecting-documents-policies.md#modifying-policies)을 참조하십시오.)
 
 ```java
  /*
@@ -282,7 +282,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 정책 삭제 {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 정책을 삭제합니다 *복사 허용*. (참조: [정책 삭제](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
+다음 Java 코드 예제에서는 *복사 허용*&#x200B;이라는 정책을 삭제합니다. ([정책 삭제](/help/forms/developing/protecting-documents-policies.md#deleting-policies)를 참조하십시오.)
 
 ```java
  /*
@@ -374,7 +374,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 정책 적용 {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 정책을 적용합니다. *복사 허용* (이)라는 PDF 문서에 *Loan.pdf*. 정책이 추가되는 정책 세트의 이름은 입니다. *전역 정책 설정*. 정책으로 보호된 문서는 *PolicyProtectedLoanDoc.pdf라는 PDF 파일로 저장됩니다. *(참조 [PDF 문서에 정책 적용](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
+다음 Java 코드 예제에서는 *복사 허용* 정책을 *Loan.pdf* PDF 문서에 적용합니다. 정책이 추가되는 정책 집합의 이름은 *전역 정책 집합*&#x200B;입니다. 정책으로 보호된 문서는 *PolicyProtectedLoanDoc.pdf라는 PDF 파일로 저장됩니다. *([PDF 문서에 정책 적용](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)을 참조하십시오.)
 
 ```java
  /*
@@ -480,7 +480,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에서 정책 제거 {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
 
-다음 코드 예제에서는 PDF 문서에서 정책을 제거합니다. *PolicyProtectedLoanDoc.pdf*. 보안되지 않은 PDF 문서는 다음으로 저장됩니다. *unProtectedLoan.pdf*. (참조: [PDF 문서에서 정책 제거](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents).)
+다음 코드 예제에서는 PDF 문서 *PolicyProtectedLoanDoc.pdf*&#x200B;에서 정책을 제거합니다. 보안되지 않은 PDF 문서가 *unProtectedLoan.pdf*(으)로 저장됩니다. ([PDF 문서에서 정책 제거](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)를 참조하십시오.)
 
 ```java
  /*
@@ -587,7 +587,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 문서 취소 {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 정책으로 보호된 문서를 취소합니다 *PolicyProtectedLoanDoc.pdf*. 수정된 PDF 문서는 다음 URL 위치에 있습니다 `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (참조: [문서에 대한 액세스 취소](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
+다음 Java 코드 예제에서는 *PolicyProtectedLoanDoc.pdf*&#x200B;라는 정책으로 보호된 문서를 취소합니다. 수정된 PDF 문서가 다음 URL 위치 `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`에 있습니다. [문서에 대한 액세스 취소](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents)를 참조하세요.
 
 ```java
  /*
@@ -701,7 +701,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 정책으로 보호된 PDF 문서 검사 {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-다음 Java 코드 예제에서는 정책으로 보호된 다음 PDF 문서를 검사합니다 *PolicyProtectedLoanDoc.pd* f. (참조 [정책으로 보호된 PDF 문서 검사](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).)
+다음 Java 코드 예제에서는 *PolicyProtectedLoanDoc.pd* f라는 정책으로 보호된 PDF 문서를 검사합니다. ([정책으로 보호된 PDF 문서 검사](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)를 참조하십시오.)
 
 ```java
  /*
@@ -819,7 +819,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 해지된 문서에 대한 액세스 복원 {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 이름이 인 해지된 PDF 문서에 대한 액세스를 복원합니다. *PolicyProtectedLoanDoc.pdf*. (참조: [해지된 문서에 대한 액세스 복원](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents).)
+다음 Java 코드 예제에서는 취소된 PDF 문서 *PolicyProtectedLoanDoc.pdf*&#x200B;에 대한 액세스를 복원합니다. [해지된 문서에 대한 액세스 복원](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)을 참조하세요.
 
 ```java
  /*
@@ -925,7 +925,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 워터마크 만들기 {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
 
-다음 Java 코드 예제에서는 &#39;샘플 PDF 워터마크&#39;라는 새 PDF 워터마크를 만듭니다. 이 워터마크에는 단일 요소가 포함되어 있습니다(참조 [워터마크 만들기](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
+다음 Java 코드 예제에서는 &#39;샘플 PDF 워터마크&#39;라는 새 PDF 워터마크를 만듭니다. 이 워터마크에는 단일 요소가 포함되어 있습니다([워터마크 만들기](/help/forms/developing/protecting-documents-policies.md#creating-watermarks) 참조).
 
 ```java
 /*
@@ -1058,7 +1058,7 @@ public class PDFWatermarksSOAPMode {
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 텍스트 워터마크 만들기 {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 새 텍스트 워터마크를 만듭니다. *샘플 텍스트 워터마크*. 이 워터마크에는 단일 요소가 포함되어 있습니다.
+다음 Java 코드 예제에서는 *샘플 텍스트 워터마크*&#x200B;라는 새 텍스트 워터마크를 만듭니다. 이 워터마크에는 단일 요소가 포함되어 있습니다.
 
 ```java
 /*
@@ -1319,7 +1319,7 @@ public class ModifyWatermarks {
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 워터마크 수정 {#quick-start-soap-mode-modifying-a-watermark-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 워터마크를 수정합니다. *기밀* 의 값을 수정하여 `opacity` 속성을 80으로 설정합니다.
+다음 Java 코드 예제에서는 `opacity` 특성의 값을 80으로 수정하여 이름이 *Confidential*&#x200B;인 워터마크를 수정합니다.
 
 ```java
  /*
@@ -1530,7 +1530,7 @@ public class ModifyWatermarks {
 
 ## 빠른 시작(SOAP): Java API를 사용하여 Word 문서에 정책 적용 {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 정책을 적용합니다. *복사 허용* Word 문서에 *Loan.doc*. 정책이 추가되는 정책 세트의 이름은 입니다. *전역 정책 설정*. 정책으로 보호된 문서는 *PolicyProtectedLoanDoc.doc라는 DOC 파일로 저장됩니다. *(참조 [PDF 문서에 정책 적용](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
+다음 Java 코드 예제에서는 *Loan.doc*&#x200B;이라는 Word 문서에 *복사 허용*&#x200B;이라는 정책을 적용합니다. 정책이 추가되는 정책 집합의 이름은 *전역 정책 집합*&#x200B;입니다. 정책으로 보호된 문서는 *PolicyProtectedLoanDoc.doc라는 DOC 파일로 저장됩니다. *([PDF 문서에 정책 적용](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)을 참조하십시오.)
 
 ```java
  /*
@@ -1645,7 +1645,7 @@ public class ModifyWatermarks {
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 Word 문서에서 정책 제거 {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
 
-다음 코드 예제에서는 Word 문서에서 정책을 제거합니다. *PolicyProtectedLoanDoc.doc*. 보안되지 않은 Word 문서는 다음으로 저장됩니다. *unProtectedLoan.doc*. (참조: [Word 문서에서 정책 제거](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents).)
+다음 코드 예제에서는 Word 문서 *PolicyProtectedLoanDoc.doc*&#x200B;에서 정책을 제거합니다. 보안되지 않은 Word 문서가 *unProtectedLoan.doc*(으)로 저장됩니다. [Word 문서에서 정책 제거](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)를 참조하십시오.
 
 ```java
  /*

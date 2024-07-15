@@ -40,16 +40,16 @@ SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합
 * [AEM 버전 6.5.4 이상](/help/release-notes/release-notes.md)
    * 시스템에 대한 관리 권한이 있어야 합니다.
 * [GitHub에서 사용 가능한 샘플 WKND SPA Project 앱](https://github.com/adobe/aem-guides-wknd-spa)
-   * 다운로드 [React 앱의 최신 릴리스입니다.](https://github.com/adobe/aem-guides-wknd-spa/releases) 이름은 과(와) 유사하게 지정됩니다. `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
-   * 다운로드 [최신 샘플 이미지](https://github.com/adobe/aem-guides-wknd-spa/releases) 앱용 이름은 과(와) 유사하게 지정됩니다. `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [패키지 관리자 사용](/help/sites-administering/package-manager.md) 를 사용하여 AEM의 다른 패키지와 마찬가지로 패키지를 설치합니다.
+   * React 앱의 [최신 릴리스를 다운로드하십시오.](https://github.com/adobe/aem-guides-wknd-spa/releases) 이름이 `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`과(와) 비슷하게 지정됩니다.
+   * 앱용 [최신 샘플 이미지](https://github.com/adobe/aem-guides-wknd-spa/releases)를 다운로드합니다. `wknd-spa-sample-images-X.Y.Z.zip`과(와) 유사한 이름이 지정됩니다.
+   * [패키지 관리자를 사용하여](/help/sites-administering/package-manager.md) 패키지를 설치하면 AEM의 다른 패키지와 마찬가지로 설치할 수 있습니다.
    * 이 워크스루를 위해 Maven을 사용하여 앱을 설치할 필요는 없습니다.
 
 >[!CAUTION]
 >
->이 문서에서는 [WKND Spa 프로젝트 앱](https://github.com/adobe/aem-guides-wknd-spa) 데모용으로만 사용됩니다. 를 프로젝트 작업에 사용하지 마십시오.
+>이 문서에서는 데모용으로만 [WKND Spa 프로젝트 앱](https://github.com/adobe/aem-guides-wknd-spa)을 사용합니다. 를 프로젝트 작업에 사용하지 마십시오.
 >
->모든 AEM 프로젝트는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 사용합니다.
+>모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용해야 합니다.
 
 ### SPA란 무엇입니까? {#what-is-a-spa}
 
@@ -65,7 +65,7 @@ AEM SPA 편집기를 통해 프론트엔드 개발자가 AEM 사이트에 통합
 
 ![screen_shot_2018-08-20at135550](assets/screen_shot_2018-08-20at135550.png)
 
-**방문자 수**
+**방문자**
 
 * 방문자는 콘텐츠와 상호 작용할 때 네이티브와 같은 경험을 원합니다.
 * 페이지가 빠를수록 전환될 가능성이 더 높아진다는 명확한 데이터가 있습니다.
@@ -94,9 +94,9 @@ SPA의 기본 아이디어는 서버 호출로 인한 지연을 최소화하기 
 
 >[!NOTE]
 >
->AEM에서 SPA이 작동하는 방식에 대한 기술적인 세부 정보는 문서 를 참조하십시오. [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md).
+>AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 문서 [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)를 참조하십시오.
 >
->SPA Editor의 디자인, 아키텍처 및 기술 워크플로우를 자세히 살펴보려면 이 문서 를 참조하십시오. [SPA 편집기 개요](/help/sites-developing/spa-overview.md).
+>SPA 편집기의 디자인, 아키텍처 및 기술 워크플로에 대한 자세한 내용은 문서 [SPA 편집기 개요](/help/sites-developing/spa-overview.md)를 참조하십시오.
 
 ## SPA를 통한 콘텐츠 편집 경험 {#content-editing-experience-with-spa}
 
@@ -118,7 +118,7 @@ AEM SPA 편집기를 사용하도록 SPA을 빌드하면 콘텐츠 작성자는 
 
    >[!NOTE]
    >
-   >다음을 참조하십시오. [SPA 편집기 개요](spa-overview.md#requirements-limitations) 즉석 텍스트 편집기 및 SPA에 대한 자세한 내용을 보려면.
+   >즉석 텍스트 편집기 및 SPA에 대한 자세한 내용은 [SPA 편집기 개요](spa-overview.md#requirements-limitations)를 참조하십시오.
 
 1. 자산 브라우저를 사용하여 새 이미지를 이미지 구성 요소로 드래그 앤 드롭합니다.
 
@@ -164,7 +164,7 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
 따라서 하위 페이지를 탐색할 때 페이지가 다시 로드되지 않으면 어떻게 로드해야 합니까?
 
-다음 섹션, [SPA 애플리케이션 로드,](#loading-an-spa-application) SPA 로드 방식 및 콘텐츠를 동기적으로 및 비동기적으로 로드하는 방법에 대해 자세히 알아봅니다.
+다음 섹션인 [SPA 응용 프로그램 로드](#loading-an-spa-application)에서는 SPA 로드 방식 및 콘텐츠를 동기적 및 비동기적으로 로드하는 방법에 대해 자세히 알아봅니다.
 
 ### SPA 애플리케이션 로드 {#loading-an-spa-application}
 
@@ -184,7 +184,7 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
    ![4단계](assets/spa-walkthrough-step-1-4.png)
 
-1. 다음으로 전환 **네트워크** 개발자 도구의 탭을 탭하고 페이지를 다시 로드합니다.
+1. 개발자 도구의 **네트워크** 탭으로 전환하고 페이지를 다시 로드합니다.
 
    이미지 요청을 무시하는 경우 페이지에 대해 로드되는 기본 리소스는 페이지 자체, CSS, React JavaScript, 해당 종속성 및 페이지에 대한 JSON 데이터입니다.
 
@@ -228,7 +228,7 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
 1. 브라우저의 기본 제공 개발자 도구를 사용하여 페이지 콘텐츠를 검사합니다. 선택 도구를 사용하여 페이지에서 편집 가능한 구성 요소를 선택하고 요소 세부 정보를 조회합니다.
 
-   구성 요소에 새 데이터 속성이 있습니다. `data-cq-data-path`.
+   구성 요소에 새 데이터 특성 `data-cq-data-path`이(가) 있습니다.
 
    ![2단계](assets/spa-walkthrough-step-2-2.png)
 
@@ -244,7 +244,7 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
    >[!NOTE]
    >
-   >AEM에 있는 서버측 렌더링 페이지의 비헤이비어 변경입니다. 여기에는 `cq` 각 편집 가능한 구성 요소에 삽입된 요소입니다.
+   >이는 AEM에서 서버측 렌더링된 페이지의 비헤이비어 변경 내용으로, 각 편집 가능한 구성 요소에 대해 삽입된 `cq` 요소가 있습니다.
    >
    >
    >SPA의 이 접근 방법에서는 추가 데이터 속성에만 의존하여 사용자 지정 요소를 삽입할 필요가 없으므로 프론트엔드 개발자가 마크업을 더 간단하게 만들 수 있습니다.
@@ -253,6 +253,6 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
 이제 AEM의 SPA 편집 환경과 SPA가 SPA 편집기와 관련되는 방식을 이해했으므로 SPA의 빌드 방법에 대해 자세히 알아볼 수 있습니다.
 
-* [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md) AEM에서 SPA 편집기로 작동하도록 기본 SPA을 빌드하는 방법을 보여 줍니다
+* [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)는 AEM에서 SPA 편집기를 사용하도록 기본 SPA을 빌드하는 방법을 보여 줍니다.
 * [SPA 편집기 개요](/help/sites-developing/spa-overview.md)는 AEM과 SPA 간의 커뮤니케이션 모델에 대해 자세히 설명합니다.
 * [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md)에서는 프론트엔드 개발자를 AEM용 SPA 개발에 유도하는 방법 및 SPA가 AEM의 아키텍처와 상호 작용하는 방법에 대해 설명합니다.

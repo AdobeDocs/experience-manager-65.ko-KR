@@ -34,7 +34,7 @@ Adobe Experience Manager(AEM) Communities 설명서의 이 섹션에는 다음 �
 >
 >최신 Communities 릴리스를 최신 상태로 유지합니다.
 >
->다음을 참조하십시오. [최신 릴리스](deploy-communities.md#latest-releases) 가장 최근 버전을 식별할 수 있는 섹션입니다.
+>최신 버전을 식별할 수 있는 [최신 릴리스](deploy-communities.md#latest-releases) 섹션을 참조하십시오.
 
 ## Maven 종속성 예 {#maven-dependency-example}
 
@@ -49,7 +49,7 @@ Adobe Experience Manager(AEM) Communities 설명서의 이 섹션에는 다음 �
 
 >[!NOTE]
 >
->다음을 참조하십시오. [AEM Uber jar 저장소](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) 여기서 최신 Uber jar 아티팩트를 식별할 수 있습니다.
+>최신 Uber jar 아티팩트를 식별할 수 있는 [AEM Uber jar 저장소](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar)를 참조하세요.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

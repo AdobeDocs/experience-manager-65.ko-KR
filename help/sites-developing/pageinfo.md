@@ -20,7 +20,7 @@ ht-degree: 1%
 
 페이지 정보를 얻으려면 PageInfo 서블릿에 요청을 전송하여 JSON 형식으로 페이지 메타데이터를 얻습니다.
 
-PageInfo 서블릿은 저장소의 리소스에 대한 정보를 반환합니다. 서블릿이 URL에 바인딩되어 있습니다. `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` 및 를 사용합니다. `path` 리소스를 식별하는 매개 변수입니다. 다음 예제 URL은 `/content/we-retail/us/en` 노드:
+PageInfo 서블릿은 저장소의 리소스에 대한 정보를 반환합니다. 서블릿은 URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json`에 바인딩되며 `path` 매개 변수를 사용하여 리소스를 식별합니다. 다음 예제 URL은 `/content/we-retail/us/en` 노드에 대한 정보를 반환합니다.
 
 ```shell
 http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retail/us/en
@@ -34,11 +34,11 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >* 기본 모바일 애플리케이션
 >* AEM 외부의 기타 채널 및 터치포인트
 >
->문서 보기 [컨텐츠 서비스용 JSON 익스포터](/help/sites-developing/json-exporter.md).
+>[콘텐츠 서비스용 JSON 내보내기](/help/sites-developing/json-exporter.md) 문서를 참조하십시오.
 
 ## 페이지 정보 공급자 {#page-information-providers}
 
-페이지 구성 요소를 하나 이상과 연결할 수 있습니다. `com.day.cq.wcm.api.PageInfoProvider` 페이지 메타데이터를 생성하는 서비스입니다. PageInfo 서블릿은 각 PageInfoProvider 서비스를 호출하고 메타데이터를 집계합니다.
+페이지 구성 요소를 페이지 메타데이터를 생성하는 하나 이상의 `com.day.cq.wcm.api.PageInfoProvider` 서비스와 연결할 수 있습니다. PageInfo 서블릿은 각 PageInfoProvider 서비스를 호출하고 메타데이터를 집계합니다.
 
 1. HTTP 클라이언트는 페이지의 URL을 포함하는 요청을 PageInfo 서블릿에 보냅니다.
 1. PageInfo 서블릿은 페이지를 렌더링하는 구성 요소를 검색합니다.
@@ -49,21 +49,21 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->PageInfoProviders와 마찬가지로 ListInfoProviders를 사용하여 JSON 형식의 정보 목록을 업데이트합니다. (참조: [웹 사이트 관리 콘솔 사용자 지정](/help/sites-developing/customizing-siteadmin.md).)
+>PageInfoProviders와 마찬가지로 ListInfoProviders를 사용하여 JSON 형식의 정보 목록을 업데이트합니다. [웹 사이트 관리 콘솔 사용자 지정](/help/sites-developing/customizing-siteadmin.md)을 참조하십시오.
 
 ## 기본 페이지 정보 공급자 {#default-page-information-providers}
 
-다음 `/libs/foundation/components/page` 구성 요소는 다음 PageInfoProvider 서비스와 연결됩니다.
+`/libs/foundation/components/page` 구성 요소는 다음 PageInfoProvider 서비스와 연결되어 있습니다.
 
-* **기본 페이지 상태 공급자:** 페이지 상태(예: 잠겨 있는지 여부, 페이지가 활성 워크플로의 페이로드인지 여부, 페이지에 사용할 수 있는 워크플로)에 대한 정보입니다.
-* **라이브 관계 정보 공급자:** 페이지가 블루프린트의 일부인지 여부, 라이브 카피인지 여부 등 다중 사이트 관리(MSM)에 대한 정보입니다.
-* **컨텐츠 언어 서블릿:** 현재 페이지의 언어 및 페이지를 사용할 수 있는 각 언어에 대한 정보입니다.
-* **워크플로 상태 공급자:** 페이지를 페이로드로 사용하는 실행 중인 워크플로우에 대한 상태 정보입니다.
-* **워크플로 패키지 정보 공급자:** 저장소에 저장된 각 워크플로우 패키지에 대한 정보 및 각 패키지에 현재 리소스가 포함되어 있는지 여부를 나타냅니다.
+* **기본 페이지 상태 공급자:** 페이지 상태(예: 잠겨 있는지 여부, 페이지가 활성 워크플로의 페이로드인지 여부, 페이지에서 사용할 수 있는 워크플로)에 대한 정보입니다.
+* **Live 관계 정보 공급자:** 페이지가 블루프린트의 일부인지, Live Copy인지 등 MSM(다중 사이트 관리)에 대한 정보입니다.
+* **컨텐츠 언어 서블릿:** 현재 페이지의 언어와 페이지를 사용할 수 있는 각 언어에 대한 정보입니다.
+* **워크플로 상태 공급자:** 페이로드로 페이지가 있는 실행 중인 워크플로의 상태 정보입니다.
+* **워크플로 패키지 정보 공급자:** 저장소에 저장된 각 워크플로 패키지에 대한 정보 및 각 패키지에 현재 리소스가 포함되어 있는지 여부를 확인합니다.
 * **에뮬레이터 정보 공급자:** 이 리소스에 사용할 수 있는 모바일 장치 에뮬레이터에 대한 정보입니다. 페이지 구성 요소가 모바일 페이지를 렌더링하지 않으면 에뮬레이터를 사용할 수 없습니다.
-* **주석 정보 공급자:** 페이지에 있는 주석에 대한 정보입니다.
+* **주석 정보 공급자:** 페이지에 있는 주석에 대한 정보.
 
-예를 들어 PageInfo 서블릿은 다음에 대한 다음 JSON 응답을 반환합니다 `/content/we-retail/us/en` 노드:
+예를 들어 PageInfo 서블릿은 `/content/we-retail/us/en` 노드에 대해 다음 JSON 응답을 반환합니다.
 
 ```
 {
@@ -477,7 +477,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >Sidekick의 워크플로 탭은 PageInfo 서블릿을 사용하여 워크플로 패키지 목록을 가져옵니다. 목록에서 현재 페이지를 추가할 패키지를 선택할 수 있습니다. 만든 필터는 이 목록에 영향을 줍니다.
 >
 
-서비스의 ID는 입니다. `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. 필터를 만들려면 값을 `workflowpackageinfoprovider.filter` 속성.
+서비스 ID는 `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`입니다. 필터를 만들려면 `workflowpackageinfoprovider.filter` 속성의 값을 지정하십시오.
 
 속성 값 앞에는 + 또는 - 문자 뒤에 패키지 경로가 붙습니다.
 
@@ -494,11 +494,11 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 다음을 참조하십시오 [OSGi 구성](/help/sites-deploying/configuring-osgi.md) 전체 세부 정보.
+>AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용은 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 참조하십시오.
 
 예를 들어 CRXDE Lite을 사용하여 서비스를 구성하려면 다음을 수행합니다.
 
-1. CRXDE Lite 열기 ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. CRXDE Lite([http://localhost:4502/crx/de](http://localhost:4502/crx/de))를 엽니다.
 1. 애플리케이션의 구성 폴더에서 노드를 만듭니다.
 
    * 이름: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
@@ -516,7 +516,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 1. 프로젝트 소스에서 AEM 애플리케이션에 대한 구성 폴더를 찾거나 만듭니다.
 
-   예를 들어 Content Package Maven Plugin의 multimodule 원형을 사용하여 프로젝트를 만든 경우 폴더 경로는 다음과 같습니다. `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
+   예를 들어 Content Package Maven Plugin의 multimodule 원형을 사용하여 프로젝트를 만든 경우 폴더 경로는 `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`입니다.
 1. 구성 폴더에서 com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml이라는 텍스트 파일을 만듭니다
 1. 다음 텍스트를 파일에 복사합니다.
 
@@ -528,7 +528,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
     workflowpackageinfoprovider.filter="[]"/>
    ```
 
-1. 대괄호 안(`[]`)을 참조하십시오 `workflowpackageinfoprovider.filter` 속성을 입력하고 다음 예제와 유사한 쉼표로 구분된 필터 값 목록을 입력합니다.
+1. `workflowpackageinfoprovider.filter` 속성을 둘러싸는 대괄호(`[]`) 안에 다음 예제와 유사한 쉼표로 구분된 필터 값 목록을 입력하십시오.
 
    `workflowpackageinfoprovider.filter="[-/etc/workflow/packages(/.*)?,+/etc/workflow/packages/Editions(/.*)?]"/>`
 
@@ -538,23 +538,23 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 사용자 지정 페이지 정보 공급자 서비스를 만들어 응용 프로그램에서 쉽게 얻을 수 있는 페이지 메타데이터를 추가합니다.
 
-1. 구현 `com.day.cq.wcm.api.PageInfoProvider` 인터페이스.
+1. `com.day.cq.wcm.api.PageInfoProvider` 인터페이스를 구현합니다.
 1. 클래스를 OSGi 서비스로 번들 및 배포합니다.
-1. 애플리케이션에서 페이지 구성 요소를 만듭니다. 사용 `foundation/components/page` 을 값으로 사용 `sling:resourceSuperType` 속성.
+1. 애플리케이션에서 페이지 구성 요소를 만듭니다. `foundation/components/page`을(를) `sling:resourceSuperType` 속성의 값으로 사용합니다.
 
-1. 라는 구성 요소 노드 아래에 노드 추가 `cq:infoProviders`.
-1. 아래 `cq:infoProviders` node를 추가하고 PageInfoProvider 서비스에 대한 노드를 추가합니다. 노드의 이름을 지정할 수 있습니다.
+1. 구성 요소 노드 `cq:infoProviders` 아래에 노드를 추가하십시오.
+1. `cq:infoProviders` 노드 아래에 PageInfoProvider 서비스에 대한 노드를 추가하십시오. 노드의 이름을 지정할 수 있습니다.
 1. PageInfoProvider 노드에 다음 속성을 추가합니다.
 
    * 이름: className
    * 유형: 문자열
    * 값: PageInfoProvider 서비스의 PID.
 
-애플리케이션 페이지 구성 요소를 `sling:resourceType`, PageInfo 서블릿은 기본 PageInfoProvider 메타데이터와 함께 사용자 지정 PageInfoProvider 메타데이터를 반환합니다.
+응용 프로그램 페이지 구성 요소를 `sling:resourceType`(으)로 사용하는 리소스의 경우 PageInfo 서블릿은 기본 PageInfoProvider 메타데이터와 함께 사용자 지정 PageInfoProvider 메타데이터를 반환합니다.
 
 ### PageInfoProvider 구현 예 {#example-pageinfoprovider-implementation}
 
-다음 Java 클래스는 [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) 현재 페이지 리소스의 게시된 URL을 반환합니다.
+다음 Java 클래스는 [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)을(를) 구현하고 현재 페이지 리소스의 게시된 URL을 반환합니다.
 
 ```java
 package com.adobe.example;
@@ -605,7 +605,7 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
-PageUrlInfoProvider 서비스는 다음에 대한 다음 데이터를 반환합니다. `/content/we-retail/us/en` 노드:
+PageUrlInfoProvider 서비스가 `/content/we-retail/us/en` 노드에 대해 다음 데이터를 반환합니다.
 
 ```xml
 "URLs": {

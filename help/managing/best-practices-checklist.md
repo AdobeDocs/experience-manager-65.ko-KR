@@ -35,22 +35,22 @@ AEM 프로젝트 우수 사례 검사 목록 v2
 * **지침**
    * 사용된 메커니즘에 대한 설명과 함께 스프레드시트 사용 방법에 대한 지침을 제공합니다.
 * **[프로젝트 하트비트](/help/managing/best-practices.md#project-heartbeat-dashboard)**
-* **[역할별 상태](/help/managing/best-practices.md#status-by-role)**
-* 에 따른 일련의 체크리스트 [담당자](/help/managing/best-practices.md#persona), [단계 및 이정표](/help/managing/best-practices.md#phases-and-milestones)
+* 역할별 **[상태](/help/managing/best-practices.md#status-by-role)**
+* [사용자](/help/managing/best-practices.md#persona), [단계 및 마일스톤](/help/managing/best-practices.md#phases-and-milestones)에 따른 일련의 검사 목록
 * **용어 설명**
    * 용어집에는 프로젝트 체크리스트의 모든 산출물 문서의 세부내용이 나열됩니다.
-   * 다음 [용어집](/help/managing/best-practices-glossary.md) 는 설명서의 일부로도 사용할 수 있습니다.
+   * [용어집](/help/managing/best-practices-glossary.md)도 설명서의 일부로 사용할 수 있습니다.
 * **[사용자 정의](/help/managing/best-practices.md#persona)**
 
 ## 체크리스트 사용 {#using-the-checklists}
 
 고품질 프로젝트를 성공적으로 게재하려면 체크목록의 모든 항목을 다음 순서로 완료해야 합니다.
 
-1. 체크리스트는 다음에 따라 정의됩니다. **[담당자](/help/managing/best-practices.md#persona)** (역할)이 포함됩니다. 각 사용자는 프로젝트에서 자신의 역할에 적합한 체크리스트를 사용해야 합니다.
-1. 체크리스트에는 다음이 포함됩니다. **[필수 문서](/help/managing/best-practices.md#required-documents)** 및 **[결과물](/help/managing/best-practices.md#deliverables)** 각 이정표에 대해 관련 담당자는 상태 및 품질 필드를 적절하게 설정해야 합니다.
+1. 관련된 **[성향](/help/managing/best-practices.md#persona)**(역할)에 따라 검사 목록이 정의됩니다. 각 사용자는 프로젝트에서 자신의 역할에 적합한 체크리스트를 사용해야 합니다.
+1. 확인 목록은 각 마일스톤의 **[필수 문서](/help/managing/best-practices.md#required-documents)** 및 **[결과물](/help/managing/best-practices.md#deliverables)**&#x200B;을 다룹니다. 관련 담당자는 상태 및 품질 필드를 적절하게 설정해야 합니다.
 
    >[!NOTE]
    >
    >개별 필수 문서와 결과물 간에 직접적인 1:1 관계는 없습니다.
 
-1. 의 상태에 따라 **[필수 문서](/help/managing/best-practices.md#required-documents)** 및 **[결과물](/help/managing/best-practices.md#deliverables)**, 워크시트 **[프로젝트 하트비트](/help/managing/best-practices.md#project-heartbeat-dashboard)** 및 **[역할별 상태](/help/managing/best-practices.md#status-by-role)** 는 프로젝트의 진행 상황과 상태를 최신 상태로 표시하도록 자동으로 업데이트됩니다.
+1. **[필수 문서](/help/managing/best-practices.md#required-documents)** 및 **[결과물](/help/managing/best-practices.md#deliverables)**&#x200B;의 상태에 따라 워크시트 **[프로젝트 하트비트](/help/managing/best-practices.md#project-heartbeat-dashboard)** 및 **[역할별 상태](/help/managing/best-practices.md#status-by-role)**&#x200B;가 자동으로 업데이트되어 프로젝트의 진행 상황과 상태를 최신 상태로 표시합니다.

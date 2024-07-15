@@ -29,14 +29,14 @@ AEM에는 나중에 감사할 수 있도록 권한 변경 사항을 기록하는
 * 사용자를 그룹에 추가 중입니다.
 * 기존 사용자 또는 그룹의 권한 변경
 
-기본적으로 항목은 `error.log` 파일. 모니터링을 더 쉽게 수행하려면 별도의 로그 파일로 리디렉션하는 것이 좋습니다. 아래 단락에서 이 작업을 수행하는 방법에 대한 자세한 정보입니다.
+기본적으로 항목은 `error.log` 파일에 기록됩니다. 모니터링을 더 쉽게 수행하려면 별도의 로그 파일로 리디렉션하는 것이 좋습니다. 아래 단락에서 이 작업을 수행하는 방법에 대한 자세한 정보입니다.
 
 ## 출력을 별도의 로그 파일로 리디렉션합니다. {#redirecting-the-output-to-a-separate-log-file}
 
-로깅 출력을 별도의 로그 파일로 리디렉션하려면 **Apache Sling 로깅 로거** 구성. 사용 `useraudit.log` (아래 예에서 개별 파일의 이름)
+로깅 출력을 별도의 로그 파일로 리디렉션하려면 **Apache Sling Logging Logger** 구성을 만듭니다. 아래 예에서 `useraudit.log`을(를) 별도의 파일 이름으로 사용하겠습니다.
 
-1. 을 찾아 웹 콘솔로 이동 *https://serveraddress:serverport/system/console/configMgr*
-1. 검색 대상 **Apache Sling 로깅 로거 구성**. 그런 다음 항목의 오른쪽에 있는 &quot;+&quot;를 눌러 공장 구성을 만듭니다.
+1. *https://serveraddress:serverport/system/console/configMgr*(으)로 이동하여 웹 콘솔로 이동
+1. **Apache Sling 로깅 로거 구성**&#x200B;을 검색합니다. 그런 다음 항목의 오른쪽에 있는 &quot;+&quot;를 눌러 공장 구성을 만듭니다.
 1. 다음 구성을 만듭니다.
 
    * **로그 수준:** 정보
@@ -44,7 +44,7 @@ AEM에는 나중에 감사할 수 있도록 권한 변경 사항을 기록하는
    * **메시지 패턴:** 수준 기본값
    * **로거:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   두 로거를 모두 **Logger** 필드에서는 첫 번째 로거의 이름을 입력한 다음 &quot;+&quot; 단추를 누르고 두 번째 로거의 이름을 입력하여 다른 필드를 만들어야 합니다.
+   두 로거를 **로거** 필드에 모두 입력하려면 첫 번째 로거의 이름을 입력한 다음 &quot;+&quot; 단추를 누르고 두 번째 로거의 이름을 입력하여 다른 필드를 만들어야 합니다.
 
 ## 출력 예 {#example-output}
 

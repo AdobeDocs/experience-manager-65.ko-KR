@@ -45,11 +45,11 @@ AEM Document Services는 PDF 문서 생성, 어셈블 및 보안을 위한 일�
 
 다음 네 가지 출력 서비스 작업을 사용할 수 있습니다.
 
-* **generatePDFOuput**: 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다
-* **generatePrintedOutput**: 양식 디자인을 양식 데이터와 병합하여 레이저나 라벨 네트워크 프린터로 보낼 문서를 생성합니다
+* **generatePDFOuput**: 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다.
+* **generatePrintedOutput**: 양식 디자인을 양식 데이터와 병합하여 레이저나 레이블 네트워크 프린터로 보낼 문서를 생성합니다
 
-* **generatePDFOutputBatch**: 한 번의 호출로 여러 템플릿을 여러 데이터 레코드와 병합하여 PDF 파일 배치를 생성합니다. 모든 PDF을 결합하여 단일 PDF을 생성하는 옵션도 있습니다
-* **generatePrintedOutputBatch**: 한 번의 호출로 여러 템플릿을 여러 데이터 레코드와 병합하여 여러 인쇄 문서(PS,PCL,ZPL,DPL,IPL,TPCL)를 생성합니다. 단일 인쇄 문서를 생성하는 옵션도 있습니다.
+* **generatePDFOutputBatch**: 단일 호출에서 여러 템플릿을 여러 데이터 레코드와 병합하여 PDF 파일 배치를 생성합니다. 모든 PDF을 결합하여 단일 PDF을 생성하는 옵션도 있습니다
+* **generatePrintedOutputBatch**: 한 번의 호출로 여러 템플릿과 여러 데이터 레코드를 병합하여 인쇄 문서(PS,PCL,ZPL,DPL,IPL,TPCL)를 일괄 생성합니다. 단일 인쇄 문서를 생성하는 옵션도 있습니다.
 
 ## 어셈블러 서비스 {#assembler-service}
 
@@ -83,7 +83,7 @@ DDX를 사용하여 PDF 문서를 문서 어셈블리 또는 디스어셈블리�
 * PDF 패키지 또는 PDF Portfolio의 구조 및 탐색 기능을 제거합니다. 따라서 단일 PDF 파일이 생성됩니다.
 * 페이지 레이블의 번호를 다시 매깁니다. 페이지 레이블은 일반적으로 페이지 번호 매기기에 사용됩니다.
 * 다른 소스 문서에서 메타데이터를 가져옵니다.
-* 첨부 파일, 책갈피, 링크, 주석 및 JavaScript를 추가하거나 제거합니다.
+* 첨부 파일, 책갈피, 링크, 주석 및 JavaScript을 추가하거나 제거합니다.
 * 초기 보기 특성을 설정하고 웹에서 볼 수 있도록 최적화합니다.
 * 암호화된 PDF에 대한 권한을 설정합니다.
 * 페이지를 회전하거나 페이지에서 내용을 회전 및 이동합니다.
@@ -133,7 +133,7 @@ PDF 문서에 적절한 사용 권한이 추가되면 수신자는 Adobe Reader 
 
 이러한 특수 사용자 기능은 권한이 활성화된 PDF 문서가 Adobe Reader 내에서 열릴 때 자동으로 활성화됩니다. 사용자가 권한이 활성화된 문서 작업을 완료하면 Adobe Reader에서 해당 기능이 다시 비활성화됩니다. 사용자가 다른 권한이 활성화된 PDF 문서를 받을 때까지 비활성화됩니다.
 
-기본적으로 DocAssurance 서비스는 사용할 수 없습니다. DocAssurance 서비스를 구성하려면 다음을 참조하십시오 [문서 서비스 설치 및 구성](../../forms/using/install-configure-document-services.md).
+기본적으로 DocAssurance 서비스는 사용할 수 없습니다. DocAssurance 서비스를 구성하려면 [문서 서비스 설치 및 구성](../../forms/using/install-configure-document-services.md)을 참조하십시오.
 
 ## 프린터 서비스로 보내기 {#send-to-printer-service}
 

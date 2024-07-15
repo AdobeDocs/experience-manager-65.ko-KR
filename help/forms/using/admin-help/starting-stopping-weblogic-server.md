@@ -46,11 +46,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Red Hat® Enterprise Linux Advanced Server 4.0에서 WebLogic Server를 실행하는 경우 `LD_ASSUME_KERNEL` 를 사용하여 환경 변수를 2.4.19로 `export LD_ASSUME_KERNEL=2.4.19` 명령입니다. 그런 다음 이 환경 변수를 설정한 것과 동일한 셸에서 WebLogic Server를 실행합니다.
+>Red Hat® Enterprise Linux Advanced Server 4.0에서 WebLogic Server를 실행하는 경우 `export LD_ASSUME_KERNEL=2.4.19` 명령을 사용하여 `LD_ASSUME_KERNEL` 환경 변수를 2.4.19로 설정하십시오. 그런 다음 이 환경 변수를 설정한 것과 동일한 셸에서 WebLogic Server를 실행합니다.
 
 ## WebLogic Server 시작 {#start-weblogic-server}
 
-1. 명령 프롬프트에서 *[appserver 루트]*/user_projects/domains/*[appserverdomain]*.
+1. 명령 프롬프트에서 *[appserver root]*/user_projects/domains/*[appserverdomain]*(으)로 이동합니다.
 1. 다음 명령을 입력합니다.
 
    * (Windows) `startWebLogic.cmd`
@@ -58,7 +58,7 @@ ht-degree: 2%
 
 ## WebLogic Server 중지 {#stop-weblogic-server}
 
-1. 다음을 입력하여 WebLogic Server 관리 콘솔을 시작합니다. `https://[host name]:7001/console` (웹 브라우저의 URL 줄에 있음)
+1. 웹 브라우저의 URL 줄에 `https://[host name]:7001/console`을(를) 입력하여 WebLogic Server 관리 콘솔을 시작합니다.
 1. 이 WebLogic 구성을 만들 때 사용한 사용자 이름과 암호를 입력하여 로그인한 다음 로그인을 클릭합니다.
 1. 변경 센터에서 잠금 및 편집을 클릭합니다.
 1. 도메인 구조에서 환경 > 서버 를 클릭합니다.
@@ -71,18 +71,18 @@ WebLogic Server 관리 콘솔을 더 이상 사용할 수 없으며 start 명령
 
 ## WebLogic 관리 콘솔 시작 {#start-weblogic-administration-console}
 
-1. WebLogic 관리 서버가 아직 실행되고 있지 않으면 명령 프롬프트에서 *[appserver 루트]\user_projects\domains\[domainname]* 디렉토리를 선택하고 다음 명령을 입력합니다.
+1. WebLogic 관리 서버가 아직 실행되고 있지 않은 경우 명령 프롬프트에서 *[appserver root]\user_projects\domains\[domainname]* 디렉터리로 이동한 후 다음 명령을 입력합니다.
 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. 다음을 입력하여 WebLogic Server 관리 콘솔에 액세스 `https://[host name]:[port]/console` 웹 브라우저의 URL 줄에서 *[포트]* 는 비보안 수신 포트입니다. 기본적으로 이 포트 값은 7001입니다.
+1. 웹 브라우저의 URL 줄에 `https://[host name]:[port]/console`을(를) 입력하여 WebLogic Server 관리 콘솔에 액세스합니다. 여기서 *[port]*&#x200B;은(는) 안전하지 않은 수신 포트입니다. 기본적으로 이 포트 값은 7001입니다.
 1. 로그인 화면에서 관리자 사용자 이름과 암호를 입력하고 로그인을 클릭합니다.
 
 ## 노드 관리자 시작 {#start-node-manager}
 
 1. WebLogic Server가 실행 중인지 확인합니다.
-1. 새 명령 프롬프트에서 *[appserver 루트]*/server/bin.
+1. 새 명령 프롬프트에서 *[appserver root]*/server/bin으로 이동합니다.
 1. 다음 명령을 입력합니다.
 
    * (Windows) `startNodeManager.cmd`
@@ -99,7 +99,7 @@ WebLogic Server를 종료한 후 Node Manager를 호출한 명령 프롬프트�
 >이 작업은 WebLogic 도메인과 관리 대상 서버를 만든 후에만 수행할 수 있습니다.
 
 1. WebLogic Server 및 노드 관리자가 실행 중인지 확인합니다.
-1. 다음을 입력하여 WebLogic Server 관리 콘솔을 시작합니다. `https://host name]:[port]/console` (웹 브라우저의 URL 줄에 있음)
+1. 웹 브라우저의 URL 줄에 `https://host name]:[port]/console`을(를) 입력하여 WebLogic Server 관리 콘솔을 시작합니다.
 1. 도메인 구조에서 환경 > 서버 를 클릭합니다.
 1. 오른쪽 창에서 컨트롤 탭을 클릭합니다.
 1. 시작할 관리 서버를 선택합니다.
@@ -107,7 +107,7 @@ WebLogic Server를 종료한 후 Node Manager를 호출한 명령 프롬프트�
 
 ## WebLogic 관리 서버 중지 {#stop-a-weblogic-managed-server}
 
-1. 다음을 입력하여 WebLogic Server 관리 콘솔을 시작합니다. `https://`*[호스트 이름]:[포트&#x200B;]*`/console` (웹 브라우저의 URL 줄에 있음)
+1. 웹 브라우저의 URL 줄에 `https://`*[호스트 이름]:[포트&#x200B;]*`/console`을(를) 입력하여 WebLogic Server 관리 콘솔을 시작합니다.
 1. 도메인 구조에서 환경 > 서버 를 클릭합니다.
 1. 오른쪽 창에서 컨트롤 탭을 클릭합니다.
 1. 중지할 관리 대상 서버를 선택합니다.

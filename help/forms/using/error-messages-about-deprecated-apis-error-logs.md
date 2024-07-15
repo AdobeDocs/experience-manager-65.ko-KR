@@ -3,8 +3,8 @@ title: 오류 로그에서 더 이상 사용되지 않는 API에 대한 오류 �
 description: 오류 로그에서 더 이상 사용되지 않는 API에 대한 오류 메시지
 source-git-commit: b05666883645ca11784292e4bfb5bf9c1e35a43b
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 7%
+source-wordcount: '94'
+ht-degree: 3%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 7%
 ## 문제 {#issue}
 
 * error.log 파일에 다음과 같은 오류 메시지가 나타납니다.
-   ` *WARN* [default task-36] org.apache.jackrabbit.oak.spi.security.principal.AclGroupDeprecation use of deprecated java.acl.Group-related API - this method is going to be removed in future Oak releases - see OAK-7358 for details` (NPR-38282)
+  ` *WARN* [default task-36] org.apache.jackrabbit.oak.spi.security.principal.AclGroupDeprecation use of deprecated java.acl.Group-related API - this method is going to be removed in future Oak releases - see OAK-7358 for details`(NPR-38282)
 
-## 해결 {#workaround}
+## 해결 방법 {#workaround}
 
-1. 설치 [Experience Manager Forms 서비스 팩 13 이상(6.5.13.0 이상)](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
+1. [Experience Manager Forms 서비스 팩 13 이상(6.5.13.0 이상) 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 1. 다음 링크를 사용하여 소프트웨어 배포에서 패키지(.jar 파일, 해상도 포함)를 다운로드합니다.
 
    https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]pack/com.adobe.livecycle.dsc.externalloginmodule-4.0.8.jar

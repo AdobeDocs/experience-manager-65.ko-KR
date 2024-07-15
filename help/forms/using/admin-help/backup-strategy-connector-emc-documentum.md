@@ -23,9 +23,9 @@ Connector for EMC Documentum®을 설치한 경우 이 장의 지침 외에 백�
 ECM 저장소를 사용하고 다음 작업을 수행하여 AEM Forms 환경을 백업합니다.
 
 * 이 문서에 설명된 지침에 따라 AEM 양식을 백업합니다.
-* 의 지침에 따라 ECM Documentum® 시스템을 백업합니다. [EMC Documentum® Content Server 백업](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
+* [EMC Documentum® Content Server 백업](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server)의 지침에 따라 ECM Documentum® 시스템을 백업합니다.
 
 ECM 저장소를 사용하고 다음 작업을 수행하여 AEM Forms 환경을 복원합니다.
 
-* 의 지침에 따라 각 ECM 시스템을 복원합니다. [EMC Documentum® Content Server 복구](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server).
+* [EMC Documentum® Content Server 복원](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server)의 지침에 따라 각 ECM 시스템을 복원합니다.
 * 이 문서에 설명된 지침에 따라 AEM 양식을 복원합니다.

@@ -1,6 +1,6 @@
 ---
 title: Flex 작업 영역의 기능을 AEM Forms 작업 영역에서 사용할 수 없음
-description: AEM Forms 작업 영역은 Flex 기반 작업 영역을 넘어 혁신됩니다. 기능 및 기능의 차이점에 대해 알아보십시오.
+description: AEM Forms workspace는 Flex 기반 Workspace을 넘어 혁신적입니다. 기능 및 기능의 차이점에 대해 알아보십시오.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

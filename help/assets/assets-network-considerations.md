@@ -1,6 +1,6 @@
 ---
 title: 네트워크 고려 사항 및 요구 사항
-description: 다음을 디자인할 때 네트워크 고려 사항에 대해 설명합니다. [!DNL Adobe Experience Manager Assets] 배포.
+description: ' [!DNL Adobe Experience Manager Assets] 배포를 디자인할 때의 네트워크 고려 사항에 대해 설명합니다.'
 contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
@@ -15,16 +15,16 @@ ht-degree: 0%
 
 # [!DNL Assets] 네트워크 고려 사항 {#assets-network-considerations}
 
-네트워크를 이해하는 것은 이해하는 것 못지않게 중요합니다 [!DNL Adobe Experience Manager Assets]. 네트워크는 업로드, 다운로드 및 사용자 경험에 영향을 줄 수 있습니다. 네트워크 토폴로지 다이어그램은 네트워크 성능 및 사용자 경험을 개선하기 위해 수정해야 하는 네트워크 내 초크 지점 및 하위 최적화 영역을 식별하는 데 도움이 됩니다.
+[!DNL Adobe Experience Manager Assets]을(를) 이해하는 것만큼 네트워크를 이해하는 것도 중요합니다. 네트워크는 업로드, 다운로드 및 사용자 경험에 영향을 줄 수 있습니다. 네트워크 토폴로지 다이어그램은 네트워크 성능 및 사용자 경험을 개선하기 위해 수정해야 하는 네트워크 내 초크 지점 및 하위 최적화 영역을 식별하는 데 도움이 됩니다.
 
 네트워크 다이어그램에 다음을 포함해야 합니다.
 
 * 클라이언트 장치(예: 컴퓨터, 모바일 및 태블릿)에서 네트워크에 대한 연결입니다.
 * 회사 네트워크의 토폴로지.
-* 회사 네트워크 및 [!DNL Experience Manager] 환경.
-* 의 토폴로지 [!DNL Experience Manager] 환경.
-* 의 동시 소비자 정의 [!DNL Experience Manager] 네트워크 인터페이스.
-* 의 정의된 워크플로 [!DNL Experience Manager] 배포.
+* 회사 네트워크 및 [!DNL Experience Manager] 환경에서 인터넷에 연결합니다.
+* [!DNL Experience Manager] 환경의 토폴로지.
+* [!DNL Experience Manager] 네트워크 인터페이스의 동시 소비자를 정의합니다.
+* [!DNL Experience Manager] 배포의 워크플로우를 정의했습니다.
 
 ## 클라이언트 장치에서 회사 네트워크에 연결 {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ![chlimage_1-353](assets/chlimage_1-353.png)
 
-클라이언트 장치는 공유 WiFi, 공유 스위치에 대한 이더넷, VPN 등 다양한 방식으로 회사 네트워크에 연결됩니다. 이 네트워크에서 가점을 식별하고 이해하는 것은 [!DNL Assets] 계획 및 네트워크를 수정합니다.
+클라이언트 장치는 공유 WiFi, 공유 스위치에 대한 이더넷, VPN 등 다양한 방식으로 회사 네트워크에 연결됩니다. [!DNL Assets] 계획 및 네트워크 수정에는 이 네트워크에서 가점을 식별하고 이해하는 것이 중요합니다.
 
 다이어그램의 왼쪽 상단에는 48Mbps WiFi 액세스 포인트를 공유하는 3개의 장치가 표시되어 있습니다. 모든 장치가 동시에 업로드되면 WiFi 네트워크 대역폭이 장치 간에 공유됩니다. 전체로서의 시스템과 비교하면, 사용자는 이 분할된 채널을 통해 3개의 클라이언트에 대한 상이한 초크-포인트를 조우할 수 있다.
 
@@ -48,15 +48,15 @@ ht-degree: 0%
 
 이 다이어그램은 일반적으로 사용되는 것보다 기업 네트워크 내에서 더 높은 업링크 속도를 표시합니다. 이러한 파이프는 공유 리소스입니다. 공유 스위치가 50개의 클라이언트를 처리할 것으로 예상되는 경우, 이는 잠재적으로 초크 포인트가 될 수 있다. 초기 다이어그램에서는 두 컴퓨터만 특정 연결을 공유합니다.
 
-## 회사 네트워크에서 인터넷으로 연결 및 [!DNL Experience Manager] 환경 {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## 회사 네트워크 및 [!DNL Experience Manager] 환경에서 인터넷으로 연결 {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 최대 로드 또는 대규모 공급자 중단으로 인해 인터넷 전체의 대역폭이 손상될 수 있으므로 인터넷 및 VPC 연결에 알려지지 않은 요소를 고려하는 것이 중요합니다. 일반적으로, 인터넷 접속은 신뢰할 수 있습니다. 그러나 때때로 가점을 도입할 수 있습니다.
 
-기업 네트워크에서 인터넷으로 업링크에서 대역폭을 사용하는 다른 서비스가 있을 수 있습니다. Assets에 대해 전용 또는 우선 순위를 지정할 수 있는 대역폭의 크기를 이해하는 것이 중요합니다. 예를 들어 1Gbps 링크가 이미 사용률이 80%에 달하는 경우, 다음 작업에 대해 최대 20%의 대역폭만 할당할 수 있습니다. [!DNL Experience Manager Assets].
+기업 네트워크에서 인터넷으로 업링크에서 대역폭을 사용하는 다른 서비스가 있을 수 있습니다. Assets에 대해 전용 또는 우선 순위를 지정할 수 있는 대역폭의 크기를 이해하는 것이 중요합니다. 예를 들어 1Gbps 링크가 이미 사용률이 80%인 경우 [!DNL Experience Manager Assets]에 대해 최대 20%의 대역폭만 할당할 수 있습니다.
 
-엔터프라이즈 방화벽과 프록시는 다양한 방식으로 대역폭을 형성할 수도 있습니다. 이 유형의 장치는 서비스 품질, 사용자당 대역폭 제한 또는 호스트당 비트율 제한을 사용하여 대역폭의 우선 순위를 지정할 수 있습니다. 중요한 영향을 미칠 수 있으므로 검토해야 할 중요한 제한점입니다 [!DNL Assets] 사용자 환경.
+엔터프라이즈 방화벽과 프록시는 다양한 방식으로 대역폭을 형성할 수도 있습니다. 이 유형의 장치는 서비스 품질, 사용자당 대역폭 제한 또는 호스트당 비트율 제한을 사용하여 대역폭의 우선 순위를 지정할 수 있습니다. 이러한 점은 [!DNL Assets] 사용자 경험에 상당한 영향을 줄 수 있으므로 검토해야 할 중요한 제한점입니다.
 
 이 예에서 엔터프라이즈는 10Gbps 업링크를 가집니다. 여러 고객에게는 충분히 커야 합니다. 또한 방화벽은 호스트 속도 제한을 10Mbps로 지정합니다. 이 제한은 인터넷에 대한 업링크가 10Gbps이지만 단일 호스트에 대한 트래픽을 10Mbps로 조정할 수 있습니다.
 
@@ -64,21 +64,21 @@ ht-degree: 0%
 
 샘플 다이어그램에서 6개의 장치가 개념적인 10Mbps 채널을 공유한다고 결론을 내릴 수 있습니다. 사용된 에셋의 크기에 따라 사용자 기대에 부적합할 수 있습니다.
 
-## 의 토폴로지 [!DNL Experience Manager] 환경 {#topology-of-the-aem-environment}
+## [!DNL Experience Manager] 환경의 토폴로지 {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-의 토폴로지 디자인 [!DNL Experience Manager] 환경에서는 시스템 구성과 사용자 환경 내에서 네트워크가 연결되는 방법에 대한 자세한 지식이 필요합니다.
+[!DNL Experience Manager] 환경의 토폴로지를 디자인하려면 시스템 구성과 사용자 환경 내에서 네트워크가 연결되는 방법에 대해 자세히 알고 있어야 합니다.
 
 샘플 시나리오에는 5개의 서버, S3 이진 저장소 및 Dynamic Media이 구성된 게시 팜이 포함됩니다.
 
-Dispatcher는 외부 및 의 두 엔티티와 100Mbps 연결을 공유합니다. [!DNL Experience Manager] 배포. 동시 업로드 및 다운로드 작업의 경우 이 숫자를 2로 나누어야 합니다. 연결된 외부 스토리지는 별도의 연결을 사용합니다.
+Dispatcher는 외부 및 [!DNL Experience Manager] 배포의 두 엔터티와 100Mbps 연결을 공유합니다. 동시 업로드 및 다운로드 작업의 경우 이 숫자를 2로 나누어야 합니다. 연결된 외부 스토리지는 별도의 연결을 사용합니다.
 
-다음 [!DNL Experience Manager] 배포는 여러 서비스와 1Gbps 연결을 공유합니다. 네트워크 토폴로지 관점에서는 하나의 채널을 다른 서비스와 공유하는 것과 같습니다.
+[!DNL Experience Manager] 배포는 1Gbps 연결을 여러 서비스와 공유합니다. 네트워크 토폴로지 관점에서는 하나의 채널을 다른 서비스와 공유하는 것과 같습니다.
 
-클라이언트 장치에서 로 네트워크 검토 [!DNL Experience Manager] 배포에서 가장 작은 초점은 10Mbit 엔터프라이즈 방화벽 스로틀인 것으로 나타납니다. 다음 위치의 크기 조정 계산기에서 이러한 값을 사용할 수 있습니다. [Assets 크기 조정 안내서](assets-sizing-guide.md) 을 클릭하여 사용자 경험을 확인합니다.
+클라이언트 장치에서 [!DNL Experience Manager] 배포까지 네트워크를 검토하면 가장 작은 초크 지점이 10Mbit 엔터프라이즈 방화벽 스로틀인 것 같습니다. [Assets 크기 조정 가이드](assets-sizing-guide.md)의 크기 조정 계산기에서 이러한 값을 사용하여 사용자 경험을 확인할 수 있습니다.
 
-## 의 정의된 워크플로 [!DNL Experience Manager] 배포 {#defined-workflows-of-the-aem-deployment}
+## [!DNL Experience Manager] 배포의 정의된 워크플로 {#defined-workflows-of-the-aem-deployment}
 
 네트워크 성능을 고려할 때 시스템에서 발생할 워크플로와 게시를 고려하는 것이 중요할 수 있습니다. 또한 사용하는 S3 또는 기타 네트워크 연결 스토리지와 I/O 요청은 네트워크 대역폭을 사용합니다. 따라서 완전히 최적화된 네트워크에서도 디스크 I/O에 의해 성능이 제한될 수 있습니다.
 

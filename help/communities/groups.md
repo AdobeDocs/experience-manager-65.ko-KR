@@ -20,19 +20,19 @@ ht-degree: 1%
 
 # 커뮤니티 그룹 콘솔 {#community-groups-console}
 
-그룹 콘솔에서는 커뮤니티 사이트의 [템플릿 구조](/help/communities/sites-console.md#step1) 다음을 포함: [그룹 기능](/help/communities/functions.md#groups-function).
+커뮤니티 사이트의 [템플릿 구조](/help/communities/sites-console.md#step1)에 [그룹 기능](/help/communities/functions.md#groups-function)이 포함된 경우 그룹 콘솔에서 커뮤니티 그룹을 만들 수 있습니다.
 
-* AEM Communities에서는 다른 그룹 내에 그룹의 중첩을 지원합니다. 다음 경우에 그룹 중첩이 가능합니다. [새 그룹의 구조](/help/communities/tools-groups.md) 그룹 함수를 포함합니다.
+* AEM Communities에서는 다른 그룹 내에 그룹의 중첩을 지원합니다. 새 그룹의 [구조](/help/communities/tools-groups.md)에 그룹 함수가 포함되어 있으면 그룹을 중첩시킬 수 있습니다.
 * 작성 환경에만 사이트 생성 마법사와 유사한 그룹 생성 마법사가 있습니다.
 * 커뮤니티 사이트 구조 또는 커뮤니티 그룹 구조에 그룹 기능을 추가할 때 구성원이 게시 환경에 그룹을 만들 수 있는지 여부를 구성할 수 있습니다.
 
-포함된 세 개의 그룹 템플릿 중 `Reference Group` 템플릿에는 해당 구조에 그룹 기능이 포함되어 있습니다.
+포함된 세 개의 그룹 템플릿 중 `Reference Group` 템플릿만 해당 구조에 그룹 함수를 포함합니다.
 
 커뮤니티 그룹의 다른 측면은 다음과 같습니다.
 
-* **생성**: 작성자 및 게시 인스턴스(선택 사항)에서 새 그룹을 만들 수 있습니다.
-* **제어**: 그룹은 공개 또는 비밀일 수 있습니다.
-* **중첩**: 그룹은 0개 이상의 그룹을 포함할 수 있습니다.
+* **만들기**: 작성자 및 게시 인스턴스(선택 사항)에서 새 그룹을 만들 수 있습니다.
+* **컨트롤**: 그룹은 공개 또는 암호일 수 있습니다.
+* **중첩**: 그룹에는 0개 이상의 그룹이 포함될 수 있습니다.
 
 <!-- This is a 404 on helpx. Update or remove.
 >[!NOTE]
@@ -42,9 +42,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->커뮤니티 사이트 콘솔에서만 액세스할 수 있는 이 그룹 콘솔을 구성원과 혼동하면 안 됩니다. [그룹 콘솔](/help/communities/members.md) 구성원 그룹 관리용.
+>커뮤니티 사이트 콘솔에서만 액세스할 수 있는 이 그룹 콘솔은 구성원 그룹 관리를 위한 구성원 [그룹 콘솔](/help/communities/members.md)과 혼동하지 않습니다.
 >
->구성원 그룹은 게시 환경에 등록되고 를 사용하여 작성 환경에서 액세스하는 사용자 그룹입니다. [터널 업무](/help/communities/deploy-communities.md#tunnel-service-on-author).
+>구성원 그룹은 게시 환경에 등록되어 [터널 서비스](/help/communities/deploy-communities.md#tunnel-service-on-author)를 사용하여 작성자 환경에서 액세스하는 사용자 그룹입니다.
 
 ## 그룹 생성 {#group-creation}
 
@@ -56,19 +56,19 @@ ht-degree: 1%
 * 폴더 내에서 커뮤니티 사이트의 인스턴스를 선택합니다.
 
    * 커뮤니티 사이트의 구조에는 그룹 기능이 포함되어야 합니다.
-   * 다음 스크린샷은 다음 시간 이후에 시작 자습서에서 찍은 것입니다. [게시할 때 그룹 만들기](/help/communities/published-site.md).
+   * 스크린샷은 [게시할 때 그룹을 만들기](/help/communities/published-site.md) 후 시작 자습서에서 가져온 것입니다.
 
-  ![create-group](assets/create-group.png)
+  ![그룹 만들기](assets/create-group.png)
 
-* 다음 항목 선택 **그룹 폴더** 그럼 열어보세요
+* **그룹 폴더**&#x200B;를 선택하여 열 수 있습니다.
 
-  열면 작성자 또는 게시에서 만든 기존 그룹이 모두 표시됩니다.
+  열면 작성자 또는 Publish에서 만든 기존 그룹이 모두 표시됩니다.
 
   이 그룹 콘솔에서 새 그룹을 작성할 수 있습니다.
 
   ![새 그룹 만들기](assets/create-new-group.png)
 
-* 다음 항목 선택 **그룹 만들기** 단추를 클릭합니다.
+* **그룹 만들기** 단추를 선택하십시오.
 
 ### 1단계: 커뮤니티 그룹 템플릿 {#step-community-group-template}
 
@@ -88,7 +88,7 @@ ht-degree: 1%
   그룹의 루트 경로입니다.
 기본 루트는 상위 사이트이지만, 루트는 웹 사이트 내의 모든 위치로 이동할 수 있습니다. 변경하지 않는 것이 좋습니다.
 
-* **사용 가능한 추가 커뮤니티 그룹 언어** 메뉴
+* **추가 사용 가능한 커뮤니티 그룹 언어** 메뉴
 
   드롭다운을 사용하여 사용 가능한 커뮤니티 그룹 언어를 선택합니다. 이 메뉴에는 상위 커뮤니티 사이트가 만들어지는 모든 언어가 표시됩니다. 사용자는 이러한 언어 중에서 선택하여 이 단일 단계에서 여러 로케일에 그룹을 만들 수 있습니다. 동일한 그룹이 각 커뮤니티 사이트의 그룹 콘솔에서 지정된 여러 언어로 생성됩니다.
 
@@ -97,13 +97,13 @@ ht-degree: 1%
   URL에 나타나는 그룹 루트 페이지의 이름입니다. 그룹 이름에 밑줄(_) 및 리소스 및 구성과 같은 키워드를 사용하지 마십시오.
 
    * 그룹을 만든 후에는 쉽게 변경되지 않으므로 이름을 다시 확인하십시오.
-   * 기본 URL이 `Community Group Name`.
+   * 기본 URL이 `Community Group Name` 아래에 표시됩니다.
    * 유효한 URL을 보려면 &quot;.html&quot;을 추가하십시오.
-     *예*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+     *예:*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **커뮤니티 그룹 템플릿** 메뉴
 
-  드롭다운을 사용하여 사용 가능한 을 선택합니다. [커뮤니티 그룹 템플릿](/help/communities/tools.md).
+  드롭다운을 사용하여 사용 가능한 [커뮤니티 그룹 템플릿](/help/communities/tools.md)을(를) 선택하십시오.
 
 ### 2단계: 디자인 {#step-design}
 
@@ -111,13 +111,13 @@ ht-degree: 1%
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-프레임워크는 `Twitter Bootstrap` 를 통해 응답형의 유연한 디자인을 사이트에 도입할 수 있습니다. 미리 로드된 여러 Bootstrap 테마 중 하나를 선택하여 선택한 커뮤니티 그룹 템플릿을 스타일링하거나, Bootstrap 테마를 업로드할 수 있습니다.
+프레임워크는 `Twitter Bootstrap`을(를) 사용하여 반응형 및 유연한 디자인을 사이트에 제공합니다. 미리 로드된 여러 Bootstrap 테마 중 하나를 선택하여 선택한 커뮤니티 그룹 템플릿을 스타일링하거나, Bootstrap 테마를 업로드할 수 있습니다.
 
 선택하면 테마가 불투명 파란색 확인 표시로 겹쳐집니다.
 
 상위 사이트의 테마와 다른 테마를 선택할 수 있습니다.
 
-커뮤니티 사이트가 게시된 후 다음을 수행할 수 있습니다. [속성 편집](#modifyinggroupproperties) 다른 테마를 선택하십시오.
+커뮤니티 사이트가 게시되면 [속성을 편집](#modifyinggroupproperties)하고 다른 테마를 선택할 수 있습니다.
 
 ### 커뮤니티 그룹 브랜딩 {#community-group-branding}
 
@@ -160,39 +160,39 @@ ht-degree: 1%
 
 멤버십 설정을 사용하면 세 가지 방법 중 하나를 선택하여 커뮤니티 그룹을 확보할 수 있습니다.
 
-![community-group-membership](assets/community-group-membership.png)
+![커뮤니티 그룹 구성원](assets/community-group-membership.png)
 
-* **선택적 멤버십**
+* **선택적 구성원**
 
   선택한 경우 커뮤니티 그룹은 공개 그룹입니다. 사이트 회원은 명시적으로 가입하지 않고도 그룹에 참여하고 게시할 수 있습니다. 기본값이 선택되어 있습니다.
 
-* **필수 멤버십**
+* **필수 구성원**
 
-  선택한 경우 커뮤니티 그룹은 열린 그룹입니다. 커뮤니티 사이트 회원은 그룹의 콘텐츠를 볼 수 있지만 콘텐츠를 게시하려면 그룹에 가입해야 합니다. 다음을 선택하여 구성원 가입 `Join` 단추를 클릭합니다. 기본값이 선택되어 있지 않습니다.
+  선택한 경우 커뮤니티 그룹은 열린 그룹입니다. 커뮤니티 사이트 회원은 그룹의 콘텐츠를 볼 수 있지만 콘텐츠를 게시하려면 그룹에 가입해야 합니다. 구성원이 게시 환경에서 `Join` 단추를 선택하여 가입합니다. 기본값이 선택되어 있지 않습니다.
 
-* **제한된 멤버십**
+* **제한된 구성원**
 
-  선택한 경우 커뮤니티 그룹은 비밀 그룹입니다. 커뮤니티 회원을 명시적으로 초대해야 합니다. 초대된 멤버가 검색 상자에 입력됩니다. 구성원을 나중에 다음을 사용하여 추가할 수 있습니다. [구성원 및 그룹 콘솔](/help/communities/members.md) 작성 환경입니다. 기본값이 선택되어 있지 않습니다.
+  선택한 경우 커뮤니티 그룹은 비밀 그룹입니다. 커뮤니티 회원을 명시적으로 초대해야 합니다. 초대된 멤버가 검색 상자에 입력됩니다. 나중에 작성자 환경에서 [구성원 및 그룹 콘솔](/help/communities/members.md)을 사용하여 구성원을 추가할 수 있습니다. 기본값이 선택되어 있지 않습니다.
 
-**축소판**
+**썸네일**
 
-![community-group-썸네일](assets/community-group-thumbnail.png)
+![community-group-thumbnail](assets/community-group-thumbnail.png)
 
 썸네일은 작성 및 게시에 그룹에 대해 표시할 이미지입니다.
 
-그룹 이미지의 최적 크기는 지원되는 이미지 형식(예: JPG 또는 PNG)의 170 x 90픽셀입니다.
+그룹 이미지에 대한 최적의 크기는 지원되는 이미지 형식(예: JPG 또는 PNG)에서 170 x 90픽셀입니다.
 
 이미지가 추가되지 않으면 기본 이미지가 표시됩니다.
 
-![썸네일 이미지](assets/thumbnail-image.png)
+![thumbnail-image](assets/thumbnail-image.png)
 
 ### 4단계: 그룹 만들기 {#step-create-group}
 
 ![community-create-group](assets/community-create-group.png)
 
-조정이 필요한 경우 **뒤로** 단추를 클릭하여 만듭니다.
+조정이 필요한 경우 **뒤로** 단추를 사용하여 조정하십시오.
 
-한 번 **만들기** 이(가) 선택되어 시작되면 그룹 만들기 프로세스를 중단할 수 없습니다.
+**만들기**&#x200B;를 선택하고 시작하면 그룹 만들기 프로세스를 중단할 수 없습니다.
 
 프로세스가 완료되면 새 하위 커뮤니티 사이트(그룹)에 대한 카드가 커뮤니티 사이트 그룹 콘솔에 표시됩니다. 여기에서 작성자가 페이지 콘텐츠를 추가하거나 관리자가 사이트 속성을 수정할 수 있습니다.
 
@@ -200,11 +200,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->그룹에 지정된 대로 그룹이 모든 언어로 작성됩니다. [1단계: 커뮤니티 그룹 템플릿](/help/communities/groups.md#step-community-group-template) 사용 가능한 추가 커뮤니티 그룹 언어에서 각 커뮤니티 사이트의 커뮤니티 그룹 콘솔에서 다음을 수행합니다.
+>각 커뮤니티 사이트의 커뮤니티 그룹 콘솔에서 추가 사용 가능한 커뮤니티 그룹 언어의 [단계 1: 커뮤니티 그룹 템플릿](/help/communities/groups.md#step-community-group-template)에 지정된 대로 모든 언어로 그룹이 만들어집니다.
 
 ## 작성자 그룹 컨텐츠 {#author-group-content}
 
-![공개 사이트](assets/open-site.png)
+![사이트 열기](assets/open-site.png)
 
 그룹의 페이지 콘텐츠는 다른 AEM 페이지와 동일한 도구로 작성할 수 있습니다. 작성할 그룹을 열려면 그룹 카드 위로 마우스를 가져갈 때 나타나는 사이트 열기 아이콘을 선택합니다.
 
@@ -214,7 +214,7 @@ ht-degree: 1%
 
 ![사이트 편집](assets/edit-site.png)
 
-다음 속성에 대한 세부 사항은 다음에 제공된 설명과 일치합니다. [그룹 생성](#group-creation) 섹션. 중첩 그룹은 게시 환경 또는 작성자 환경에서 만들든 관계없이 수정할 수 있습니다.
+다음 속성의 세부 정보는 [그룹 만들기](#group-creation) 섹션에 제공된 설명과 일치합니다. 중첩 그룹은 게시 환경 또는 작성자 환경에서 만들든 관계없이 수정할 수 있습니다.
 
 ![community-group-basic](assets/community-group-basic.png)
 
@@ -229,17 +229,17 @@ ht-degree: 1%
 
 템플릿과 사이트 간에 연결이 유지되지 않으므로 다른 커뮤니티 그룹 템플릿을 선택해도 기존 커뮤니티 그룹 사이트에는 영향을 주지 않습니다.
 
-대신, [구조](#modify-structure) 하위 커뮤니티의 을(를) 수정할 수 있습니다.
+대신 하위 커뮤니티의 [STRUCTURE](#modify-structure)을(를) 수정할 수 있습니다.
 
 ### 구조 수정 {#modify-structure}
 
 구조 패널에서는 작성자 또는 게시 환경에서 하위 커뮤니티 사이트를 만들 때 선택한 커뮤니티 그룹 템플릿에서 처음에 만든 구조를 수정할 수 있습니다. 패널에서 다음을 수행할 수 있습니다.
 
-* 추가 드래그 앤 드롭 [커뮤니티 기능](/help/communities/functions.md) 를 사이트 구조에 추가합니다.
+* 추가 [커뮤니티 기능](/help/communities/functions.md)을(를) 사이트 구조로 끌어서 놓습니다.
 * 사이트 구조의 커뮤니티 기능 인스턴스에서 다음을 수행합니다.
 
    * **`Gear icon`**
-표시 제목, URL 및 을 포함한 설정 편집 [권한이 있는 구성원 그룹](/help/communities/users.md#privilegedmembersgroups).
+표시 제목, URL 및 [권한이 있는 구성원 그룹](/help/communities/users.md#privilegedmembersgroups)을 포함한 설정을 편집합니다.
 
    * **`Trashcan icon`**
 사이트 구조에서 기능을 제거(삭제)합니다.
@@ -255,13 +255,13 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->groups 함수는 *아님* 다음이 되어야 합니다. *처음도 아니고* 사이트 구조에서 작동합니다.
+>그룹 함수는 사이트 구조에서 *첫 번째 함수이거나* 함수이거나 *not*&#x200B;이어야 합니다.
 >
->기타 모든 함수(예: ) [페이지 기능](/help/communities/functions.md#page-function)를 포함해야 하며 먼저 나열되어야 합니다.
+>[page 함수](/help/communities/functions.md#page-function)와 같은 다른 함수를 먼저 포함하고 나열해야 합니다.
 
-**예: 하위 커뮤니티(그룹) 구조에 캘린더 기능 추가**
+**예: 하위 커뮤니티(그룹) 구조에 일정 함수 추가**
 
-![community-group-add-캘린더](assets/community-group-add-calendar.png)
+![community-group-add-calendar](assets/community-group-add-calendar.png)
 
 ### 디자인 수정 {#modify-design}
 
@@ -274,21 +274,21 @@ ht-degree: 1%
 
 ### 설정 수정 {#modify-settings}
 
-설정 패널에서는 커뮤니티를 추가할 수 있습니다. [중재자](#moderation).
+설정 패널에서 커뮤니티 [중재자](#moderation)를 추가할 수 있습니다.
 
 ### 멤버십 수정 {#modify-membership}
 
-다음 [멤버십](#membership) 패널은 정보 제공용입니다. 설정된 그룹 멤버십의 유형을 선택, 필수 또는 제한으로 변경할 수 없습니다.
+[MEMBERSHIP](#membership) 패널은 정보 제공용입니다. 설정된 그룹 멤버십의 유형을 선택, 필수 또는 제한으로 변경할 수 없습니다.
 
 ### 썸네일 수정 {#modify-thumbnail}
 
-다음 [축소판](#thumbnail) 패널을 사용하면 게시 환경의 커뮤니티 그룹과 작성 환경의 커뮤니티 사이트 그룹 콘솔에서 커뮤니티 그룹을 사이트 방문자로 나타내는 이미지를 업로드할 수 있습니다.
+[THUMBNAIL](#thumbnail) 패널을 사용하면 Publish 환경 및 작성 환경의 커뮤니티 사이트 그룹 콘솔에서 커뮤니티 그룹을 사이트 방문자에게 나타내는 이미지를 업로드할 수 있습니다.
 
-## 그룹 게시 {#publish-the-group}
+## Publish 더 그룹 {#publish-the-group}
 
 ![publish-site](assets/publish-site.png)
 
-커뮤니티 그룹을 새로 만들거나 수정한 후 다음을 선택하여 그룹을 게시(활성화)할 수 있습니다. `Publish Site` 아이콘.
+커뮤니티 그룹을 새로 만들거나 수정한 후에는 `Publish Site` 아이콘을 선택하여 그룹을 게시(활성화)할 수 있습니다.
 
 그룹이 성공적으로 게시되면 다음 메시지가 나타납니다.
 

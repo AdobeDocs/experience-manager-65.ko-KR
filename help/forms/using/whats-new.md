@@ -25,7 +25,7 @@ ht-degree: 39%
 
 ## Adobe Experience Manager 6.5 Forms 서비스 팩 19에 포함된 제품(6.5.19.0)
 
-Experience Manager 6.5.19.0에는 2019년 4월 6.5의 초기 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. [이 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) Experience Manager 6.5에서.
+Experience Manager 6.5.19.0에는 2019년 4월 6.5의 초기 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. Experience Manager 6.5에서 [이 서비스 팩을 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html)합니다.
 
 ### 새로운 기능
 
@@ -43,15 +43,15 @@ Experience Manager 6.5.19.0에는 2019년 4월 6.5의 초기 출시 이후 릴�
 
 #### 64비트 버전의 AEM Forms Designer
 
-다음 [64비트 버전의 AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) 향상된 성능, 확장성 및 메모리 관리를 제공하여 양식 작성 환경을 향상시킵니다. 64비트 아키텍처를 사용하면 더 크고 복잡한 프로젝트를 간단하게 처리하여 원활한 워크플로 디자인과 최적화된 효율성을 보장할 수 있습니다. 이 혁신적인 릴리스를 통해 양식 디자인 기능을 개선하고 AEM Forms Designer를 진전시킬 수 있습니다.
+[64비트 버전의 AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)은(는) 향상된 성능, 확장성 및 메모리 관리를 제공하여 양식 생성 환경을 향상시킵니다. 64비트 아키텍처를 사용하면 더 크고 복잡한 프로젝트를 간단하게 처리하여 원활한 워크플로 디자인과 최적화된 효율성을 보장할 수 있습니다. 이 혁신적인 릴리스를 통해 양식 디자인 기능을 개선하고 AEM Forms Designer를 진전시킬 수 있습니다.
 
 #### Microsoft® SharePoint 목록과 적응형 Forms 연결
 
-AEM Forms은 다음과 같은 기본 제공 통합을 제공합니다. [양식 데이터를 SharePoint 목록에 직접 제출](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list))을 클릭하여 SharePoint의 목록 기능을 사용할 수 있습니다. Microsoft® SharePoint 목록을 양식 데이터 모델에 대한 데이터 소스로 구성하고 양식 데이터 모델을 사용하여 제출 제출 액션을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
+AEM Forms에서는 SharePoint의 목록 기능을 사용할 수 있도록 [양식 데이터를 SharePoint 목록에 직접 제출](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list))하는 기본 통합을 제공합니다. Microsoft® SharePoint 목록을 양식 데이터 모델에 대한 데이터 소스로 구성하고 양식 데이터 모델을 사용하여 제출 제출 액션을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
 
 #### 적응형 양식 조각에 대한 기록 문서 속성 구성 지원
 
-이제 쉽게 [적응형 양식 편집기에서 적응형 양식 단편 및 해당 필드 사용자 지정](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+이제 [적응형 양식 편집기에서 적응형 양식 단편 및 해당 필드를 사용자 지정](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)할 수 있습니다.
 
 #### 64비트 버전의 XMLFM 포함
 
@@ -61,12 +61,12 @@ XMLFM의 64비트 반복은 향상된 성능, 확장성 및 정교한 메모리 
 
 ## 버그 수정
 
-이 릴리스에는 고객이 보고한 20개 이상의 문제에 대한 수정 사항도 포함되어 있습니다. 서비스 팩에 포함된 수정 사항의 자세한 목록은 을 참조하십시오. [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR#forms-6519)
+이 릴리스에는 고객이 보고한 20개 이상의 문제에 대한 수정 사항도 포함되어 있습니다. 서비스 팩에 포함된 자세한 수정 사항 목록은 [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR#forms-6519)를 참조하십시오.
 
 
 ## 서비스 팩 설치
 
-서비스 팩은 JEE의 AEM Forms과 OSGi의 AEM Forms 모두에 대한 새로운 기능과 버그 수정 사항을 제공합니다. 설치 지침에 이전 서비스 팩과 비교하여 변경된 사항이 있습니다. 설치 지침은 다음을 참조하십시오. [AEM Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
+서비스 팩은 JEE의 AEM Forms과 OSGi의 AEM Forms 모두에 대한 새로운 기능과 버그 수정 사항을 제공합니다. 설치 지침이 이전 서비스 팩과 비교하여 변경되었습니다. 설치 지침은 [AEM Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)을 참조하십시오.
 
 
 

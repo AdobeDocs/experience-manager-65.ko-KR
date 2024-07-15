@@ -20,8 +20,8 @@ ht-degree: 0%
 
 초대됨 및 로컬 사용자 페이지를 사용하여 초대됨 및 로컬 사용자를 관리합니다. 이 페이지는 다음 요구 사항을 충족하는 경우에만 표시됩니다.
 
-* 귀하는 Document Security 초대됨 및 로컬 사용자 관리 역할과 관리 콘솔 사용자 역할이 할당된 관리자입니다. (참조: [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
-* 초대된 사용자 등록이 활성화되었습니다. (참조: [초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+* 귀하는 Document Security 초대됨 및 로컬 사용자 관리 역할과 관리 콘솔 사용자 역할이 할당된 관리자입니다. [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)을 참조하세요.
+* 초대된 사용자 등록이 활성화되었습니다. ([초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)을 참조하십시오.)
 
 초대됨 및 로컬 사용자 페이지에는 초대됨 및 로컬 사용자 계정을 검색, 보기, 편집, 잠금, 잠금 해제 및 삭제하는 데 사용할 수 있는 두 개의 탭이 있습니다.
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 1. 관리 콘솔에서 서비스 > 문서 보안 > 초대된 사용자 및 로컬 사용자를 클릭한 다음 새 사용자 초대를 클릭합니다.
 1. 초대하려는 사용자의 이메일 주소를 입력합니다. 여러 주소를 한 줄에 쉼표로 구분하여 입력하십시오.
 
-   초대된 사용자 등록을 활성화할 때 만든 메시지가 사용자에게 전송됩니다. (참조: [초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+   초대된 사용자 등록을 활성화할 때 만든 메시지가 사용자에게 전송됩니다. ([초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)을 참조하십시오.)
 
 1. 확인을 클릭합니다.
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 문서 보안에 등록했지만 암호를 잊어버린 활성화된 초대된 사용자의 암호를 재설정할 수 있습니다. 암호를 재설정하면 해당 사용자에 대한 새 임시 암호가 포함된 이메일이 생성됩니다.
 
-초대된 사용자 등록 프로세스를 활성화하면 사용자에게 암호를 재설정하라는 메시지를 보내는 이메일 메시지가 생성되었습니다. (참조: [초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+초대된 사용자 등록 프로세스를 활성화하면 사용자에게 암호를 재설정하라는 메시지를 보내는 이메일 메시지가 생성되었습니다. ([초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)을 참조하십시오.)
 
 1. 관리 콘솔에서 서비스 > 문서 보안 > 초대된 및 로컬 사용자 를 클릭하고 로컬 사용자 탭을 클릭합니다.
 1. 사용자 목록에서 적절한 사용자를 선택합니다.

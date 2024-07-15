@@ -1,6 +1,6 @@
 ---
-title: Application Manager 서비스 JavaAPI 빠른 시작(SOAP)
-description: Application Manager 서비스 JavaAPI 빠른 시작(SOAP)
+title: Application Manager Service JavaAPI 빠른 시작(SOAP)
+description: Application Manager Service JavaAPI 빠른 시작(SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -32,11 +32,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍의 SOAP(Java API) 빠른 시작은 Forms을 기반으로 합니다. Unix와 같은 다른 운영 체제를 사용하는 경우 windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. 다음을 참조하십시오 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms를 사용한 프로그래밍의 SOAP(Java API) 빠른 시작은 Forms을 기반으로 합니다. Unix와 같은 다른 운영 체제를 사용하는 경우 windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 배포 {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 기존 LCA 파일을 기반으로 애플리케이션을 가져옵니다. *EncryptDocument.lca*.
+다음 Java 코드 예제에서는 기존 LCA 파일 *EncryptDocument.lca*&#x200B;을(를) 기반으로 애플리케이션을 가져옵니다.
 
 ```java
  /*
@@ -138,7 +138,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 제거 {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-다음 Java 코드 예제에서는 라는 애플리케이션을 제거합니다. *EncryptDocument*.
+다음 Java 코드 예제에서는 이름이 *EncryptDocument*&#x200B;인 응용 프로그램을 제거합니다.
 
 ```java
  /*

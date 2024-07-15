@@ -37,13 +37,13 @@ AEM 관리자가 할당한 대로 액세스할 수 있는 워크플로를 적용
 >
 >추가 참조:
 >
->* [워크플로우를 DAM 에셋에 적용하는 방법](/help/assets/assets-workflow.md).
+>* [워크플로를 DAM 자산에 적용하는 방법](/help/assets/assets-workflow.md).
 >* [프로젝트 워크플로를 사용하여 작업](/help/sites-authoring/projects-with-workflows.md)
 >
 
 >[!NOTE]
 >
->AEM 관리자는 [여러 다른 방법을 사용하여 워크플로우 시작](/help/sites-administering/workflows-starting.md).
+>AEM 관리자는 [다른 여러 방법을 사용하여 워크플로우를 시작](/help/sites-administering/workflows-starting.md)할 수 있습니다.
 
 ## Sites 콘솔에서 워크플로 시작 {#starting-a-workflow-from-the-sites-console}
 
@@ -106,7 +106,7 @@ AEM 관리자가 할당한 대로 액세스할 수 있는 워크플로를 적용
 
    >[!NOTE]
    >
-   >다음 **워크플로우 패키지 유지** 옵션은에 대해 워크플로우를 구성했을 때 사용할 수 있습니다. [다중 리소스 지원](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) 및 여러 리소스를 선택했습니다.
+   >**워크플로 패키지 유지** 옵션은 [다중 리소스 지원](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)에 대해 워크플로를 구성했으며 여러 리소스를 선택한 경우에 사용할 수 있습니다.
 
    완료되면 **다음**&#x200B;을 사용하여 계속 진행하십시오.
 
@@ -114,7 +114,7 @@ AEM 관리자가 할당한 대로 액세스할 수 있는 워크플로를 적용
 
 1. **범위** 단계에서 다음을 선택할 수 있습니다.
 
-   * **콘텐츠 추가** 을(를) 열려면 [경로 브라우저](/help/sites-authoring/author-environment-tools.md#path-browser) 추가 리소스를 선택합니다. 브라우저에서 **선택** 워크플로 인스턴스에 컨텐츠를 추가합니다.
+   * **콘텐츠를 추가**&#x200B;하여 [경로 브라우저](/help/sites-authoring/author-environment-tools.md#path-browser)를 열고 추가 리소스를 선택합니다. 브라우저에서 **선택**&#x200B;을(를) 클릭하여 워크플로 인스턴스에 콘텐츠를 추가합니다.
 
    * 추가 작업을 보기 위한 기존 리소스:
 

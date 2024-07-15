@@ -22,17 +22,17 @@ ht-degree: 0%
 
 ## AEM Forms 작업 공간 패키지를 설치할 수 없음 {#unable-to-install-aem-forms-workspace-package}
 
-패치를 설치한 후 AEM Forms 작업 영역을 엽니다. 리소스를 찾을 수 없음 오류가 발생하면 CRX 패키지 관리자를 열고 를 다시 설치합니다. `adobe-lc-workspace-pkg-<version>.zip` 패키지.
+패치를 설치한 후 AEM Forms 작업 영역을 엽니다. 리소스를 찾을 수 없음 오류가 발생하면 CRX 패키지 관리자를 열고 `adobe-lc-workspace-pkg-<version>.zip` 패키지를 다시 설치합니다.
 
-패키지를 설치하는 동안 오류가 발생하는 경우 `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`를 클릭하고 다음 단계를 수행하십시오.
+패키지를 설치하는 동안 오류 `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`이(가) 발생하면 다음 단계를 수행하십시오.
 
-1. CRXDE Lite에 로그인합니다. 기본 URL은 `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. CRXDE Lite에 로그인합니다. 기본 url은 `https://[localhost]:'port'/lc/crx/de/index.jsp`입니다.
 1. 다음 노드를 삭제합니다.
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. 패키지 관리자로 이동합니다. 기본 URL은 `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
-1. 검색 및 설치 `adobe-lc-workspace-pkg-[version].zip` 패키지.
+1. 패키지 관리자로 이동합니다. 기본 URL은 `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`입니다
+1. `adobe-lc-workspace-pkg-[version].zip` 패키지를 검색하여 설치합니다.
 1. 응용 프로그램 서버를 다시 시작합니다.
 
 >[!NOTE]
@@ -45,9 +45,9 @@ ht-degree: 0%
 
 AEM Forms 작업 공간에서:
 
-* 특정 구성 요소 파일에 대한 로깅 정보를 가져오려면 다음을 추가합니다. `/log/<ComponentFile>/<LogLevel>` 을 누르고 를 누릅니다. `Enter`. 지정된 로그 수준의 구성 요소 파일에 대한 모든 로깅 정보가 콘솔에 인쇄됩니다.
+* 특정 구성 요소 파일에 대한 로깅 정보를 가져오려면 URL에 `/log/<ComponentFile>/<LogLevel>`을(를) 추가하고 `Enter`을(를) 누릅니다. 지정된 로그 수준의 구성 요소 파일에 대한 모든 로깅 정보가 콘솔에 인쇄됩니다.
 
-* 모든 구성 요소 파일의 로깅 정보를 가져오려면 다음을 추가합니다. `/log/all/trace` 을 누르고 를 누릅니다. `Enter`.
+* 모든 구성 요소 파일의 로깅 정보를 가져오려면 URL에 `/log/all/trace`을(를) 추가하고 `Enter`을(를) 누릅니다.
 
 * 로그 형식: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -158,11 +158,11 @@ AEM Forms 작업 공간에서:
 
 스크립트와 스타일은 서로 다른 브라우저에서 디버깅할 수 있습니다.
 
-* **IE의 디버깅**: IE에서 AEM Forms 작업 영역을 디버깅하려면 다음을 참조하십시오. [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
+* **IE에서 디버깅**: IE에서 AEM Forms 작업 영역을 디버깅하려면 [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie)을(를) 참조하십시오.
 
-* **Chrome에서 디버깅**: Chrome에서 디버거를 열려면 Ctrl+Shift+I 단축키를 사용합니다. 자세한 내용은 다음을 참조하십시오. [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
+* **Chrome에서 디버깅**: Chrome에서 디버거를 열려면 Ctrl+Shift+I 바로 가기를 사용합니다. 자세한 내용은 [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/)을(를) 참조하십시오.
 
-* **Firefox에서 디버깅**: Firefox에서 스크립트 및 스타일을 디버깅하는 데 여러 추가 기능을 사용할 수 있습니다. 예를 들어 Firebug는 이러한 디버깅 유틸리티 중 하나입니다([https://getfirebug.com](https://getfirebug.com)).
+* **Firefox에서 디버깅**: Firefox에서 스크립트와 스타일을 디버깅하는 데 여러 추가 기능을 사용할 수 있습니다. 예를 들어 Firebug는 이러한 디버깅 유틸리티([https://getfirebug.com](https://getfirebug.com)) 중 하나입니다.
 
 ## FAQ {#faqs}
 

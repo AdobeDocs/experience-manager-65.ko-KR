@@ -49,7 +49,7 @@ GraphQL 쿼리를 시작하고 쿼리가 AEM 콘텐츠 조각과 함께 작동�
 
 ### 샘플 쿼리 - 사용 가능한 모든 스키마 및 데이터 형식 {#sample-all-schemes-datatypes}
 
-이 샘플 쿼리는 모두 반환합니다 `types` 사용 가능한 모든 스키마.
+이 샘플 쿼리는 사용 가능한 모든 스키마에 대해 모든 `types`을(를) 반환합니다.
 
 **샘플 쿼리**
 
@@ -225,7 +225,7 @@ GraphQL 쿼리를 시작하고 쿼리가 AEM 콘텐츠 조각과 함께 작동�
 
 ### 샘플 쿼리 - 모든 도시의 이름 {#sample-names-all-cities}
 
-이 샘플 쿼리는 다음을 반환하는 간단한 쿼리입니다. `name`의 모든 항목 `city`스키마.
+이 샘플 쿼리는 `city` 스키마에 있는 모든 항목의 `name`을(를) 반환하는 간단한 쿼리입니다.
 
 **샘플 쿼리**
 
@@ -316,7 +316,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시 {#sample-cities-named-variation}
 
-이름이 &quot;Berlin Center&quot;인 변형을 만드는 경우(`berlin_centre`), `city` Berlin에서는 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
+`city` Berlin에 대해 &quot;Berlin Center&quot;(`berlin_centre`)라는 변형을 만드는 경우 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
 
 **샘플 쿼리**
 
@@ -362,7 +362,7 @@ query {
 다음 작업을 수행하는 경우:
 
 * `Tourism`이라는 다양한 태그 생성: `Business`, `City Break`, `Holiday`
-* 및 이러한 태그를 다양한 의 기본 변형에 할당 `City` 인스턴스
+* 및 이러한 태그를 다양한 `City` 인스턴스의 기본 변형에 할당합니다.
 
 그러면 쿼리를 사용하여 `city`스키마에서 City Break로 태그된 모든 항목에 대한 `name` 및 `tags`의 세부 정보를 반환할 수 있습니다.
 
@@ -539,7 +539,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 “Jobs” 또는 “Smith”인 모든 사람 {#sample-all-persons-jobs-smith}
 
-이 샘플 쿼리는 모두 필터링합니다. `persons` 를 나타내는 모든 단어 `Jobs`또는 `Smith`.
+이 샘플 쿼리는 이름이 `Jobs` 또는 `Smith`인 모든 `persons`을(를) 필터링합니다.
 
 **샘플 쿼리**
 
@@ -593,7 +593,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 “Jobs”가 아닌 모든 사람 {#sample-all-persons-not-jobs}
 
-이 샘플 쿼리는 모두 필터링합니다. `persons` 를 나타내는 모든 단어 `Jobs`또는 `Smith`.
+이 샘플 쿼리는 이름이 `Jobs` 또는 `Smith`인 모든 `persons`을(를) 필터링합니다.
 
 **샘플 쿼리**
 
@@ -1333,7 +1333,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리 전달 `fragments` 의 배열로서 `[Article]`.
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리가 `fragments`을(를) `[Article]`의 배열로 전달합니다.
 
 ```graphql
 {
@@ -1516,7 +1516,7 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 특정 경로에서 `article` 유형의 단일 콘텐츠 조각
-   * 해당 경로 내에서 변형과 관련된 데이터는 `variation1`
+   * 해당 경로 내에서 변형과 관련된 데이터: `variation1`
 
 **샘플 쿼리**
 

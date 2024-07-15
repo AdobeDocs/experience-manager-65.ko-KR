@@ -82,7 +82,7 @@ ht-degree: 1%
 
 | 우선 순위 2 체크포인트 | 체크포인트 설명 | 규정 준수를 위한 필수 LiveCycle 모범 사례 | 메모 |
 |------------|------------------------|-------------------------------------------------|-------|
-| [2.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast) | 전경색과 배경색 조합을 사용하여 색상이 부족한 사용자가 보거나 흑백 화면에서 볼 때 충분한 대비를 제공하는지 확인하십시오. [이미지의 우선 순위 2, 텍스트의 우선 순위 3]. | 2.8 색상 사용 책임 | |
+| [2.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast) | 전경색과 배경색 조합을 사용하여 색상이 부족한 사용자가 보거나 흑백 화면에서 볼 때 충분한 대비를 제공하는지 확인하십시오. [이미지 우선 순위 2, 텍스트 우선 순위 3]. | 2.8 색상 사용 책임 | |
 | [3.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-markup) | 적절한 마크업 언어가 있는 경우 정보를 전달하기 위해 이미지가 아닌 마크업을 사용합니다. | <ul><li>2.1 양식을 단순하고 사용하기 쉽게 유지</li><li> 2.1.1 컨텐츠 이동, 깜박임 또는 깜박임 방지</li> <li>2.2 접근성 정보를 생성하도록 양식 속성 구성 텍스트 이미지 대신 항상 실제 텍스트를 사용합니다.</li> | |
 | [3.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-grammar) | 게시된 형식 문법에 대해 유효성을 검사하는 문서를 만듭니다. | | PDF forms을 Adobe Reader에서 렌더링하려면 게시된 PDF 사양과 일치해야 합니다. |
 | [3.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-style-sheets) | 스타일 시트를 사용하여 레이아웃 및 프레젠테이션을 제어합니다. | 해당되지 않음 | |
@@ -98,7 +98,7 @@ ht-degree: 1%
 | [7.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-movement) | 사용자 에이전트가 사용자가 이동하는 콘텐츠를 동결할 수 있을 때까지 페이지에서 이동을 피하십시오. | 2.1 양식을 단순하고 사용하기 쉽게 유지 | |
 | [7.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh) | 사용자 에이전트가 새로 고침을 중지하는 기능을 제공할 때까지 주기적으로 자동 새로 고침 페이지를 만들지 마십시오. | 해당되지 않음 | |
 | [7.5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-auto-forward) | 사용자 에이전트가 자동 리디렉션을 중지하는 기능을 제공할 때까지 태그를 사용하여 페이지를 자동으로 리디렉션하지 마십시오. 대신 리디렉션을 수행하도록 서버를 구성합니다. | 해당되지 않음 | |
-| [8.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-directly-accessible) | 스크립트 및 애플릿과 같은 프로그래밍 요소를 보조 기술과 직접 액세스하거나 호환할 수 있습니다 [기능이 중요하고 다른 곳에 제시되지 않은 경우 우선 순위 1, 그렇지 않은 경우 우선 순위 2.] | 2.11 스크립팅 중단 방지 | |
+| [8.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-directly-accessible) | 스크립트나 애플릿과 같은 프로그래밍 요소에 직접 액세스하거나 보조 기술과 호환되도록 합니다. [기능이 중요하고 다른 곳에 제시되지 않은 경우 우선 순위 1.] | 2.11 스크립팅 중단 방지 | |
 | [9.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable) | 자체 인터페이스가 있는 모든 요소를 장치 독립적인 방식으로 작동할 수 있습니다. | 2.7 양식 컨트롤을 키보드로 액세스할 수 있는지 확인 | |
 | [9.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-device-independent-events) | 스크립트의 경우 장치 종속 이벤트 핸들러가 아닌 논리 이벤트 핸들러를 지정합니다. | 2.7 양식 컨트롤을 키보드로 액세스할 수 있는지 확인 | |
 | [10.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups) | 사용자 에이전트가 사용자가 생성된 창을 끌 때까지 팝업 또는 다른 창이 나타나지 않도록 하고 사용자에게 알리지 않고 현재 창을 변경하지 마십시오. | 2.11 스크립팅 중단 방지 | |
@@ -126,8 +126,8 @@ ht-degree: 1%
 | 1.2.3 [오디오 설명 또는 미디어 대체 요소(사전 녹음된)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html) | 2.12 모든 오디오 및 비디오 콘텐츠에 액세스할 수 있는지 확인합니다. | |
 | 1.2.4 [캡션(라이브)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html) | 2.12 모든 오디오 및 비디오 콘텐츠에 액세스할 수 있는지 확인합니다. | |
 | 1.2.5 [오디오 설명(사전 녹음된)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html) | 2.12 모든 오디오 및 비디오 콘텐츠에 액세스할 수 있는지 확인합니다. | |
-| 1.2.6 [수화(사전 녹음된)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html) | 2.12 모든 오디오 및 비디오 콘텐츠에 액세스할 수 있는지 확인합니다. | |
-| 1.2.7 [확장 오디오 설명(사전 기록됨)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html) | 2.12 모든 오디오 및 비디오 콘텐츠에 액세스할 수 있는지 확인합니다. | |
+| 1.2.6 [사전 녹음된 수화](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html) | 2.12 모든 오디오 및 비디오 콘텐츠에 액세스할 수 있는지 확인합니다. | |
+| 1.2.7 [확장 오디오 설명(사전 녹음된)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html) | 2.12 모든 오디오 및 비디오 콘텐츠에 액세스할 수 있는지 확인합니다. | |
 | 1.2.8 [미디어 대체 요소(사전 녹음된)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html) | 2.12 모든 오디오 및 비디오 콘텐츠에 액세스할 수 있는지 확인합니다. | |
 | 1.2.9 [오디오 전용(라이브)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html) | 2.12 모든 오디오 및 비디오 콘텐츠에 액세스할 수 있는지 확인합니다. | |
 | 1.3 [적응성](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation.html) | | |
@@ -135,7 +135,7 @@ ht-degree: 1%
 | 1.3.2 [의미 있는 시퀀스](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html) | 2.6 읽기 및 탭 순서가 올바른지 확인합니다. | |
 | | 2.10 탐색 가능한 양식 구조 제공 | |
 | 1.3.3 [감각 특성](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html) | 2.8 색상 사용 책임 | |
-| 1.4 [구별 가능하](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html) | | |
+| 1.4 [구별 가능](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html) | | |
 | 1.4.1 [색상 사용](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html) | 2.8 색상 사용 책임 | |
 | 1.4.2 [오디오 제어](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html) | 특정 LiveCycle 기법 없음 | |
 | 1.4.3 [대비(최소)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) | 2.8 색상 사용 책임 | |
@@ -152,13 +152,13 @@ ht-degree: 1%
 | | 2.7 양식 컨트롤을 키보드로 액세스할 수 있는지 확인 | |
 | 2.2 [충분한 시간](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html) | | |
 | 2.2.1 [시간 조정 가능](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html) | 특정 LiveCycle 기법 없음 | |
-| 2.2.2 [일시 중단, 중지, 숨기기](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1 양식을 단순하고 사용하기 쉽게 유지 | |
+| 2.2.2 [일시 중지, 중지, 숨기기](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1 양식을 단순하고 사용하기 쉽게 유지 | |
 | 2.2.3 [시간 없음](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) | 특정 LiveCycle 기법 없음 | |
 | 2.2.4 [중단](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html) | 특정 LiveCycle 기법 없음 | |
-| 2.2.5 [재인증](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | 특정 LiveCycle 기법 없음 | |
+| 2.2.5 [다시 인증](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | 특정 LiveCycle 기법 없음 | |
 | 2.3 [발작] | | |
-| 2.3.1 [3개 Flash 또는 임계값 미만](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1 양식을 단순하고 사용하기 쉽게 유지 | |
-| 2.3.2 [3개의 Flash](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1 양식을 단순하고 사용하기 쉽게 유지 | |
+| 2.3.1 [Flash 3개 또는 임계값 미만](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1 양식을 단순하고 사용하기 쉽게 유지 | |
+| 2.3.2 [세 개의 Flash](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1 양식을 단순하고 사용하기 쉽게 유지 | |
 | 2.4 [탐색 가능](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
 | 2.4.1 [블록 우회](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10 탐색 가능한 양식 구조 제공 | |
 | 2.4.2 [제목이 있는 페이지](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | 특정 LiveCycle 기법 없음 | |
@@ -168,17 +168,17 @@ ht-degree: 1%
 | 2.4.6 [제목 및 레이블](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html) | <ul><li>2.5 양식 컨트롤에 적절한 레이블 제공</li><li>2.10 탐색 가능한 양식 구조 제공</li> | |
 | 2.4.7 [포커스 표시](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html) | 특정 LiveCycle 기법 없음 | LiveCycle 양식의 기본 포커스가 표시됩니다. |
 | 2.4.8 [위치](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html) | 특정 LiveCycle 기법 없음 | 해당 사항 없음: LiveCycle 양식에는 탐색 시스템이 필요하지 않습니다. |
-| 2.4.9 [링크 목적(링크만)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html) | 특정 LiveCycle 기법 없음 | 링크 목적은 작성자가 연결된 요소에 대해 의미 있는 텍스트를 선택하는 데 따라 다릅니다. |
-| 2.4.10 [섹션 제목](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10 탐색 가능한 양식 구조 제공 | |
+| 2.4.9 [링크 목적(링크 전용)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html) | 특정 LiveCycle 기법 없음 | 링크 목적은 작성자가 연결된 요소에 대해 의미 있는 텍스트를 선택하는 데 따라 다릅니다. |
+| 2.4.10 [섹션 머리글](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10 탐색 가능한 양식 구조 제공 | |
 | 3.1 [읽기 가능](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html) | | |
 | 3.1.1 [페이지 언어](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html) | 2.13 자연어 및 언어의 모든 변경 사항 식별 | |
 | 3.1.2 [부분 언어](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html) | 2.13 자연어 및 언어의 모든 변경 사항 식별 | |
-| 3.1.3 [특이한 단어](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html) | 특정 LiveCycle 기법 없음 | |
+| 3.1.3 [비정상적인 단어](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html) | 특정 LiveCycle 기법 없음 | |
 | 3.1.4 [약자](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html) | 특정 LiveCycle 기법 없음 | |
 | 3.1.5 [읽기 수준](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html) | 특정 LiveCycle 기법 없음 | |
 | 3.1.6 [발음](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html) | 특정 LiveCycle 기법 없음 | |
 | 3.2 [예측 가능](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html) | | |
-| 3.2.1 [포커스 맞춤](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html) | 2.11 스크립팅 중단 방지 | |
+| 3.2.1 [포커스](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html) | 2.11 스크립팅 중단 방지 | |
 | 3.2.2 [입력 시](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html) | 2.11 스크립팅 중단 방지 | |
 | 3.2.3 [일관된 탐색](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html) | 2.10 탐색 가능한 양식 구조 제공 | |
 | 3.2.4 [일관된 식별](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html) | <ul><li>2.3 적합한 제어 선택</li><li>2.5 양식 컨트롤에 적절한 레이블 제공</li> | |
@@ -190,7 +190,7 @@ ht-degree: 1%
 | 3.3.4 [오류 방지(법적, 재무, 데이터)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html) | 특정 LiveCycle 기법 없음 | |
 | 3.3.5 [도움말](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html) | 특정 LiveCycle 기법 없음 | |
 | 3.3.6 [오류 방지(모두)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html) | 특정 LiveCycle 기법 없음 | |
-| 4.1 [호환 가능](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html) | | |
+| 4.1 [호환](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html) | | |
 | 4.1.1 [구문 분석](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) | 특정 LiveCycle 기법 없음 | |
 | 4.1.2 [이름, 역할, 값](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3 적합한 제어 선택</li> <li>2.5 양식 컨트롤에 적절한 레이블 제공</li> | |
 

@@ -15,13 +15,13 @@ ht-degree: 1%
 
 # 자산 번역 우수 사례 {#best-practices-for-translating-assets-efficiently}
 
-[!DNL Adobe Experience Manager Assets] 는 디지털 에셋의 바이너리, 메타데이터 및 태그를 여러 로케일로 번역하고 번역된 에셋을 관리하기 위한 다국어 워크플로우를 지원합니다. 자세한 내용은 [다국어 자산](multilingual-assets.md).
+[!DNL Adobe Experience Manager Assets]은(는) 디지털 에셋의 바이너리, 메타데이터 및 태그를 여러 로케일로 번역하고 번역된 에셋을 관리하기 위한 다국어 워크플로우를 지원합니다. 자세한 내용은 [다국어 Assets](multilingual-assets.md)을 참조하세요.
 
-다양한 번역된 버전이 계속 동기화되도록 에셋을 효율적으로 관리하려면 다음을 만듭니다 [언어 복사](preparing-assets-for-translation.md) 번역 워크플로를 실행하기 전의 에셋.
+다양한 번역된 버전이 계속 동기화되도록 에셋을 효율적으로 관리하려면 번역 워크플로를 실행하기 전에 에셋의 [언어 사본](preparing-assets-for-translation.md)을 만드십시오.
 
 에셋 또는 에셋 그룹의 언어 사본은 유사한 콘텐츠 계층 구조를 갖는 언어 형제(또는 동급 언어의 에셋 버전)입니다.
 
-각 언어 사본은 독립 자산입니다. 따라서 자산을 여러 로케일로 변환하면 CRX 저장소의 크기가 크게 늘어날 수 있습니다. 예를 들어, 결합된 크기가 10GB인 에셋을 두 개의 언어로 번역하면 저장소 크기가 약 20GB(각 언어의 경우 10GB)까지 늘어날 수 있습니다.
+각 언어 사본은 독립 자산입니다. 따라서 에셋을 여러 로케일로 변환하면 CRX 저장소의 크기가 크게 늘어날 수 있습니다. 예를 들어, 결합된 크기가 10GB인 에셋을 두 개의 언어로 번역하면 저장소 크기가 약 20GB(각 언어의 경우 10GB)까지 늘어날 수 있습니다.
 
 에셋 바이너리는 메타데이터 및 태그에 비해 훨씬 더 큰 저장 공간을 차지합니다. 따라서 메타데이터와 태그를 번역하는 것이 목적만 제공하는 경우 을 생략하여 바이너리를 번역하십시오. 다른 로케일로 번역된 메타데이터 및 태그와 연결하기 위해 저장소의 바이너리 원본 복사본을 유지할 수 있습니다. 여러 번역된 버전이 아닌 단일 바이너리 사본을 유지 관리하여 저장소 크기에 대한 영향을 최소화합니다.
 
@@ -44,9 +44,9 @@ ht-degree: 1%
    >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
 -->
 
-1. 활성화 [!UICONTROL 마지막 수정 날짜 설정] 워크플로입니다.
+1. [!UICONTROL 마지막으로 수정한 날짜 설정] 워크플로우를 사용하도록 설정합니다.
 
-   다음 [!UICONTROL DAM 메타데이터 원본에 쓰기] 워크플로우는 자산에 대해 마지막으로 수정된 날짜를 구성합니다. 2단계에서 이 워크플로우를 비활성화하므로 [!DNL Assets] 는 더 이상 마지막으로 수정된 에셋 날짜를 최신 상태로 유지할 수 없습니다. 따라서 *마지막 수정 날짜 설정* 자산의 마지막 수정 날짜가 최신 상태인지 확인하는 워크플로우입니다. 오래된 마지막 수정 날짜가 포함된 자산으로 인해 오류가 발생할 수 있습니다.
+   [!UICONTROL DAM 메타데이터 원본에 쓰기] 워크플로는 자산에 대해 마지막으로 수정된 날짜를 구성합니다. 2단계에서 이 워크플로를 사용하지 않도록 설정했으므로 [!DNL Assets]은(는) 마지막으로 수정한 에셋 날짜를 더 이상 최신 상태로 유지할 수 없습니다. 따라서 *마지막으로 수정한 날짜 설정* 워크플로우를 사용하여 마지막으로 수정한 자산이 최신 날짜인지 확인합니다. 오래된 마지막 수정 날짜가 있는 Assets으로 인해 오류가 발생할 수 있습니다.
 
-1. [번역 통합 프레임워크 구성](/help/sites-administering/tc-tic.md) 에셋 바이너리 번역을 중단합니다. 선택 취소 **[!UICONTROL 에셋 번역]** 옵션 아래에 있는 [!UICONTROL 에셋] 자산 바이너리의 번역을 중지하는 탭입니다.
-1. 다음을 사용하여 자산 메타데이터/태그 번역 [다국어 자산 워크플로우](multilingual-assets.md).
+1. 자산 바이너리 번역을 중지하려면 [번역 통합 프레임워크를 구성하십시오](/help/sites-administering/tc-tic.md). 에셋 바이너리 번역을 중지하려면 [!UICONTROL Assets] 탭에서 **[!UICONTROL Assets 번역]** 옵션을 선택 취소하십시오.
+1. [다국어 자산 워크플로우](multilingual-assets.md)를 사용하여 자산 메타데이터/태그를 번역합니다.

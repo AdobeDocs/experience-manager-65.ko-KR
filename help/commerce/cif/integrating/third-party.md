@@ -21,7 +21,7 @@ ht-degree: 0%
 
 전반적인 아키텍처는 다음과 같습니다.
 
-![AEM 비 Magento/타사 아키텍처 개요](../assets//AEM_nonMagento_Architecture.png)
+![AEM Magento/타사 아키텍처 개요](../assets//AEM_nonMagento_Architecture.png)
 
 이 통합 레이어의 목적은 타사 API 및 스키마를 지원되는 Adobe Commerce GraphQL API 및 Experience Manager 외부의 스키마에 매핑하는 것입니다. 이러한 캡슐화 덕분에 Experience Manager 내의 코드를 변경하지 않고도 통합 논리 및 시스템을 업데이트할 수 있습니다.
 
@@ -31,7 +31,7 @@ Experience Manager이 데이터를 온디맨드로 검색하므로 제품 카탈
 
 >[!TIP]
 >
->사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예 [Magento 오픈 소스](https://business.adobe.com/products/magento/open-source.html).
+>사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예제 [Magento 오픈 소스](https://business.adobe.com/products/magento/open-source.html).
 
 원하는 사용 사례를 활성화하기 위해 전체 GraphQL 스키마를 구현할 필요가 없이 스키마 객체만 구현합니다.
 
@@ -49,9 +49,9 @@ CIF은 실시간 제품 카탈로그 액세스 및 제품 경험 관리 도구�
 
 ## 통합 개발 {#develop-integration}
 
-Adobe은 다음을 권장합니다. [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html) 통합 레이어. 타사 CIF 추가 기능에 포함되어 있습니다. 마이크로서비스와 유사한 접근 방식으로 작동하므로 쉽게 여러 솔루션을 통합하는 것이 적합합니다.
+Adobe은 통합 레이어에 [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html)을(를) 사용하는 것을 권장합니다. 타사 CIF 추가 기능에 포함되어 있습니다. 마이크로서비스와 유사한 접근 방식으로 작동하므로 쉽게 여러 솔루션을 통합하는 것이 적합합니다.
 
-다음 [참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference) 는 상거래 솔루션에 대한 통합을 구축하는 훌륭한 시작점입니다. GraphQL을 지원하지만 REST와 같은 다른 유형의 API와도 통합할 수 있습니다.
+[참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference)은(는) 상거래 솔루션에 대한 통합을 빌드하기 위한 좋은 시작점입니다. GraphQL을 지원하지만 REST와 같은 다른 유형의 API와도 통합할 수 있습니다.
 
 타사 계층(예: Mulesoft)을 사용할 수 있거나 통합이 타사 솔루션 위에 구축된 경우에는 이 통합 계층이 필요하지 않습니다.
 
@@ -59,8 +59,8 @@ Adobe은 다음을 권장합니다. [Adobe I/O Runtime](https://developer.adobe.
 
 커넥터는 프로젝트를 잘 시작할 수 있도록 도와줍니다. 상거래 솔루션별 연결 및 기본 API 매핑이 함께 제공됩니다. 이러한 커넥터는 타사에서 빌드하며 Adobe에서 유지 관리하지 않습니다. 자세한 내용은 해당 파트너에게 문의하십시오.
 
-* [SAP COMMERCE](https://github.com/diconium/commerce-cif-graphql-integration-hybris), Diconium 제작
-* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), Diconium 제작
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), Diconium에서 작성
+* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), Diconium에서 작성
 
 >[!TIP]
 >

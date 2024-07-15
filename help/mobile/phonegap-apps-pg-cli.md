@@ -32,15 +32,15 @@ PhoneGap CLI 설정(`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#
 
 iOS의 경우: iPhone 및 iPad용으로 개발하려면 Apple의 Xcode IDE가 필요합니다.
 
-* 무료로 다운로드 [여기](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
-* PhoneGap iOS 플랫폼 안내서 (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
+* [여기](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1)에서 무료로 다운로드하세요.
+* PhoneGap iOS 플랫폼 안내서(`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 Android™의 경우: iPhone 및 iPad용으로 개발하려면 Google의 Android™ Stuido IDE가 필요합니다.
 
-* 무료로 다운로드 [여기](https://developer.android.com/studio).
-* PhoneGap Android™ 플랫폼 안내서 (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
+* [여기](https://developer.android.com/studio)에서 무료로 다운로드하세요.
+* PhoneGap Android™ 플랫폼 안내서(`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
-## 소스 다운로드 {#download-the-source}
+## Source 다운로드 {#download-the-source}
 
 개발 환경을 성공적으로 부트스트랩하면 AEM 앱 빌드 타일에서 소스를 다운로드합니다.
 
@@ -48,8 +48,8 @@ Android™의 경우: iPhone 및 iPad용으로 개발하려면 Google의 Android
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-* 소스 다운로드를 클릭합니다.
-* 소스 다운로드 모달에서 원하는 소스를 선택합니다.
+* Source 다운로드를 클릭합니다.
+* Source 다운로드 모달에서 원하는 소스를 선택합니다.
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -68,7 +68,7 @@ PhoneGap CLI는 단일 명령으로 플랫폼 프로젝트를 만들고, 소스�
 
 >[!NOTE]
 >
->이러한 모든 단계는 별도로 수행할 수 있습니다. PhoneGap CLI 문서(`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
+>이러한 모든 단계를 별도로 수행할 수 있습니다. PhoneGap CLI 문서(`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`)를 참조하십시오.
 
 1. PhoneGap CLI를 설치했는지 확인하십시오. 위의 내용을 참조하십시오.
 1. 콘솔(또는 터미널) 창에서 추출한 소스의 루트 디렉토리로 이동합니다.
@@ -88,16 +88,16 @@ phonegap run ios
 >
 >1. 폴더 만들기(mkdir 테스트)
 >1. 이 새 폴더로 이동(cd 테스트)
->1. 실행 `phonegap create helloWorld`
+>1. `phonegap create helloWorld` 실행
 >1. helloWorld(cd helloWorld)로 이동
->1. 실행 `phonegap run android` (또는 위와 같이 Android™을 iOS으로 바꾸십시오.)
->1. JavaScript Bridge to Native가 작동 중인 경우 에뮬레이터가 &#39;장치 준비&#39;라고 말하며 새로 만든 PhoneGap 앱을 실행하도록 열립니다.
+>1. `phonegap run android`을(를) 실행합니다(또는 위와 같이 Android™을 iOS으로 바꾸기).
+>1. JavaScript Bridge이 기본 모드로 작동 중인 경우 에뮬레이터가 &#39;장치 준비&#39;라고 말하며 새로 만든 PhoneGap 앱을 실행하도록 열립니다.
 >
 >이 문제 해결은 PhoneGap CLI 개발 환경이 올바르게 실행되고 있는지 확인합니다.
 
 ## Safari 및 IOS 디버그로 JavaScript 디버그 {#debug-javascripts-with-safari-and-ios-debug}
 
-웹 애플리케이션과 동일한 방식으로 Safari의 개발자 도구를 사용하여 앱의 JavaScript를 디버깅할 수 있습니다.
+웹 애플리케이션의 경우처럼 Safari의 개발자 도구를 사용하여 앱의 JavaScript을 디버깅할 수 있습니다.
 
 ## Safari 개발자 도구 활성화 {#enable-safari-developer-tools}
 
@@ -150,7 +150,7 @@ phonegap run <platform> --emulator
 
 * 제어 단추를 사용하여 메서드 실행, 스텝 오버, 스텝 인 및 스텝 아웃을 계속합니다.
 
-![5개의 서로 다른 기능 제어 버튼이 가로 행에 정렬됩니다.](do-not-localize/chlimage_1-4.png)
+![5개의 다른 기능 제어 단추가 가로 행에 정렬되어 있습니다.](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >
@@ -158,4 +158,4 @@ phonegap run <platform> --emulator
 
 ## 다음 단계 {#the-next-steps}
 
-PhoneGap CLI를 사용한 앱 개발에 대해 알아본 후에는 다음을 참조하십시오. [장치 기능 액세스](/help/mobile/phonegap-access-device-features.md).
+PhoneGap CLI를 사용한 앱 개발에 대해 알아본 후 [장치 기능 액세스](/help/mobile/phonegap-access-device-features.md)를 참조하십시오.

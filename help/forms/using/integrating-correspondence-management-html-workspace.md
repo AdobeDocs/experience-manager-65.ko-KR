@@ -25,37 +25,37 @@ AEM Forms 작업 영역은 양식 및 문서에 대한 작업 할당 및 완료 
 
 ## 서신 관리 에셋 만들기 {#create-correspondence-management-assets}
 
-먼저 AEM Forms 작업 영역에서 렌더링되는 샘플 서신 관리 템플릿을 만듭니다. 자세한 내용은 [편지 템플릿 만들기](../../forms/using/create-letter.md).
+먼저 AEM Forms 작업 영역에서 렌더링되는 샘플 서신 관리 템플릿을 만듭니다. 자세한 내용은 [편지 템플릿 만들기](../../forms/using/create-letter.md)를 참조하세요.
 
-해당 URL에서 서신 관리 템플릿에 액세스하여 서신 관리 템플릿이 성공적으로 렌더링될 수 있는지 확인합니다. URL의 패턴은 다음과 유사합니다. `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+해당 URL에서 서신 관리 템플릿에 액세스하여 서신 관리 템플릿이 성공적으로 렌더링될 수 있는지 확인합니다. URL의 패턴은 `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`과(와) 유사합니다.
 
-위치 `encodedLetterId` 는 URL로 인코딩된 문자 ID입니다. Workbench에서 작업 영역 작업에 대한 렌더링 프로세스를 정의할 때 동일한 문자 ID를 지정합니다.
+여기서 `encodedLetterId`은(는) URL로 인코딩된 문자 ID입니다. Workbench에서 작업 영역 작업에 대한 렌더링 프로세스를 정의할 때 동일한 문자 ID를 지정합니다.
 
-## AEM Workspace에서 편지를 렌더링하고 제출할 작업 만들기 {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
+## AEM Workspace에서 편지 렌더링 및 제출 작업 만들기 {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 이러한 단계를 실행하기 전에 다음 그룹의 구성원인지 확인하십시오.
 
 * cm-agent-user
-* 작업 공간 사용자
+* Workspace 사용자
 
-자세한 내용은 [사용자 추가 및 구성](/help/forms/using/admin-help/adding-configuring-users.md).
+자세한 내용은 [사용자 추가 및 구성](/help/forms/using/admin-help/adding-configuring-users.md)을 참조하십시오.
 
-다음 단계를 사용하여 AEM Workspace에서 편지를 렌더링하고 제출할 작업을 생성합니다.
+다음 단계를 사용하여 AEM Workspace에서 편지를 렌더링하고 제출하는 작업을 만듭니다.
 
 1. Workbench를 시작합니다. Localhost에 관리자로 로그인합니다.
-1. 파일 > 새로 만들기 > 응용 프로그램을 클릭합니다. 응용 프로그램 이름 필드에 다음을 입력합니다. `CMDemoSample` 마침을 클릭합니다.
-1. 선택 `CMDemoSample/1.0` 마우스 오른쪽 버튼 클릭 `NewProcess`. 이름 필드에 을 입력합니다. `CMRenderer` 마침을 클릭합니다.
+1. 파일 > 새로 만들기 > 응용 프로그램을 클릭합니다. 응용 프로그램 이름 필드에 `CMDemoSample`을(를) 입력한 다음 완료를 클릭합니다.
+1. `CMDemoSample/1.0`을(를) 선택하고 `NewProcess`을(를) 마우스 오른쪽 단추로 클릭합니다. 이름 필드에 `CMRenderer`을(를) 입력한 다음 [마침]을 클릭합니다.
 1. 시작점 활동 선택기를 드래그하여 구성합니다.
 
-   1. 프레젠테이션 데이터에서 CRX 자산 사용을 선택합니다.
+   1. 프레젠테이션 데이터에서 CRX 에셋 사용을 선택합니다.
 
       ![useacrxasset](assets/useacrxasset.png)
 
    1. 에셋을 찾습니다. 양식 에셋 선택 대화 상자에서 편지 탭에 서버의 모든 문자가 나열됩니다.
 
-      ![Letter 탭](assets/letter_tab_new.png)
+      ![편지 탭](assets/letter_tab_new.png)
 
-   1. 적절한 문자를 선택하고 **확인**.
+   1. 적절한 문자를 선택하고 **확인**&#x200B;을 클릭합니다.
 
 1. 작업 프로필 관리를 클릭합니다. 작업 프로필 관리 대화 상자가 나타납니다. [렌더링 프로세스] 및 [제출 프로세스]가 적절히 선택되어 있는지 확인합니다.
 1. 데이터 XML 파일이 있는 편지를 열려면 데이터 준비 프로세스에서 해당 데이터 파일을 찾아 선택합니다.
@@ -101,12 +101,12 @@ AEM Forms 작업 영역은 양식 및 문서에 대한 작업 할당 및 완료 
    ```
 
    [파일 가져오기](assets/dscsample.zip)
-DSC 다운로드: 샘플 DSC는 위에 첨부된 DSCSample.zip 파일에서 사용할 수 있습니다. DSCSample.zip 파일을 다운로드하고 압축 해제합니다. DSC 서비스를 사용하기 전에 먼저 구성해야 합니다. 다음을 참조하십시오 [DSC 서비스 구성](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+DSC 다운로드: 샘플 DSC는 위에 첨부된 DSCSample.zip 파일에서 사용할 수 있습니다. DSCSample.zip 파일을 다운로드하고 압축 해제합니다. DSC 서비스를 사용하기 전에 먼저 구성해야 합니다. [DSC 서비스 구성](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)을 참조하십시오.
 
-   활동 정의 대화 상자에서 getLetterInstanceInfo 와 같은 적절한 활동을 선택하고 을 클릭합니다 **확인**.
+   활동 정의 대화 상자에서 getLetterInstanceInfo와 같은 적절한 활동을 선택하고 **확인**&#x200B;을 클릭합니다.
 
 1. 응용 프로그램을 배포합니다. 메시지가 표시되면 자산을 체크인하고 저장합니다.
-1. https://&#39;에서 AEM forms 작업 영역에 로그인합니다.[server]:[포트]&#39;/lc/content/ws.
+1. https://&#39;[server]:[port]&#39;/lc/content/ws에서 AEM Forms 작업 영역에 로그인합니다.
 1. 추가한 작업, CMRenderer를 엽니다. 서신 관리 편지가 나타납니다.
 
    ![cminworkspace](assets/cminworkspace.png)

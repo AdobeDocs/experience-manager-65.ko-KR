@@ -23,22 +23,22 @@ ht-degree: 1%
 
 AEM은 다음을 제공합니다.
 
-* [구성 요소 UI 테스트를 위한 프레임워크](/help/sites-developing/hobbes.md).
-* [구성 요소를 테스트하고 디버깅하기 위한 메커니즘](/help/sites-developing/developer-mode.md).
+* [구성 요소 UI를 테스트하기 위한 프레임워크](/help/sites-developing/hobbes.md).
+* [구성 요소를 테스트하고 디버깅하는 메커니즘](/help/sites-developing/developer-mode.md).
 
-다음은 두 가지 오픈 소스 테스트 도구입니다.
+다음은 두 개의 오픈 Source 테스트 도구입니다.
 
 **Selenium**
 
 Selenium은 활동당 한 명의 사용자가 있는 브라우저에서 기능 테스트에 사용됩니다. 테스트 단계(클릭 수)를 HTML 테이블 또는 Java™ 클래스로 기록합니다.
 
-자세한 내용은 [https://www.selenium.dev/](https://www.selenium.dev/).
+자세한 내용은 [https://www.selenium.dev/](https://www.selenium.dev/)을(를) 참조하십시오.
 
 **JMeter**
 
 JMeter는 요청을 추적하는 데 사용되며 기능, 성능 및 스트레스 테스트에 사용할 수 있습니다.
 
-자세한 내용은 [https://jmeter.apache.org/](https://jmeter.apache.org/).
+자세한 내용은 [https://jmeter.apache.org/](https://jmeter.apache.org/)을(를) 참조하십시오.
 
 또한 테스트 자동화 및 테스트 계획 관리를 위한 많은 독점 툴이 있습니다.
 
@@ -46,13 +46,13 @@ JMeter는 요청을 추적하는 데 사용되며 기능, 성능 및 스트레�
 
 다음 도구를 쉽게 사용할 수 있습니다. 그러나 모든 경우 핵심 문제는 프로젝트 팀의 모든 구성원(파트너 및 고객)에게 데이터를 제공하는 것입니다.
 
-**부질라**
+**Bugzilla**
 
 자체 요구 사항에 맞게 구성할 수 있는 버그 추적 시스템.
 
 **스프레드시트**
 
-버그 추적 도구는 아니지만 스프레드시트는 다음과 같은 경우가 많습니다 *mis*&#x200B;이해하기 쉽고 대부분의 사용자가 해당 기능에 대한 경험을 가지고 있으므로 이 용도로 사용됩니다.
+특별히 버그 추적 도구는 아니지만, 스프레드시트는 쉽게 이해할 수 있고 대부분의 사용자가 기능을 경험했기 때문에 이러한 목적으로 종종 *mis*&#x200B;사용됩니다.
 
 이러한 스프레드시트가 추적에 사용되는 경우
 

@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # AEM 6.5에서 Forms 저장소 재구성{#forms-repository-restructuring-in-aem}
 
-상위에 설명된 대로 [AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md) 페이지 AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM Forms 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
+AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restructuring.md) 페이지에 설명된 대로 AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM Forms 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
 
 **6.5 업그레이드 포함**
 
@@ -95,7 +95,7 @@ ht-degree: 7%
 | **이전 위치** | `/etc/cloudservices/echosign` |
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **구조 조정 지침** | 다음 [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거할 유틸리티입니다. |
+| **구조 조정 지침** | Forms 마이그레이션 UI에서 트리거할 [지연 콘텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) 유틸리티입니다. |
 | **메모** | 해당 사항 없음 |
 
 ### Recaptcha Cloud Service 구성 {#recaptcha-cloud-service-configurations}
@@ -103,7 +103,7 @@ ht-degree: 7%
 | **이전 위치** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **구조 조정 지침** | 다음 [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거할 유틸리티입니다. |
+| **구조 조정 지침** | Forms 마이그레이션 UI에서 트리거할 [지연 콘텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) 유틸리티입니다. |
 | **메모** | 해당 사항 없음 |
 
 ### Typekit Cloud Service 구성 {#typekit-cloud-service-configurations}
@@ -111,7 +111,7 @@ ht-degree: 7%
 | **이전 위치** | `/etc/cloudservices/typekit` |
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **구조 조정 지침** | 다음 [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거할 유틸리티입니다. |
+| **구조 조정 지침** | Forms 마이그레이션 UI에서 트리거할 [지연 콘텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) 유틸리티입니다. |
 | **메모** | 해당 사항 없음 |
 
 ### 기타 {#misc-1}
@@ -119,11 +119,11 @@ ht-degree: 7%
 | **이전 위치** | `/etc/cloudservices/fdm` |
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **구조 조정 지침** | 다음 [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거할 유틸리티입니다. |
+| **구조 조정 지침** | Forms 마이그레이션 UI에서 트리거할 [지연 콘텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) 유틸리티입니다. |
 | **메모** | 해당 사항 없음 |
 
 | **이전 위치** | `/etc/designs/fd/fp` |
 |---|---|
 | **새 위치** | `/libs/fd/fp` |
-| **구조 조정 지침** | /etc 템플릿에 대한 참조를 업데이트하여 해당 템플릿을 가리킵니다 `/libs` 대응 항목. |
+| **구조 조정 지침** | /etc 템플릿에 대한 참조를 업데이트하여 해당 `/libs` 템플릿을 가리킵니다. |
 | **메모** | 해당 사항 없음 |

@@ -52,7 +52,7 @@ AEM(Adobe Experience Manager) 배포는 일반적으로 서로 다른 수준에�
 * 디자인 실현
 * 필요한 기능을 구현하는 데 필요한 서비스 및 스크립트 개발
 
-의 구성 [개발](/help/sites-developing/best-practices.md) 환경은 다음과 같이 구성되지만 다양한 요인에 따라 달라질 수 있습니다.
+[개발](/help/sites-developing/best-practices.md) 환경의 구성은 다음과 같이 구성된 여러 요인에 따라 달라질 수 있습니다.
 
 * 통합된 코드 베이스를 제공할 수 있게 버전 제어 기능을 갖춘 통합된 개발 시스템. 이 시스템은 각 개발자가 사용하는 개별 개발 환경에서 코드를 병합하고 통합하는 데 사용됩니다.
 * 개발자별 개인 환경. 일반적으로 로컬 시스템에 상주합니다. 적절한 간격으로 코드가 버전 제어 시스템과 동기화됩니다
@@ -61,7 +61,7 @@ AEM(Adobe Experience Manager) 배포는 일반적으로 서로 다른 수준에�
 
 ### 품질 보증 {#quality-assurance}
 
-이 환경은 품질 보증 팀에서 종합적으로 사용하는 것입니다. [테스트](/help/sites-developing/test-plan.md) 새로운 시스템, 디자인과 기능 모두. 적절한 콘텐츠를 사용한 작성자 및 게시 환경이 모두 있어야 하며, 전체 테스트를 활성화하는 데 필요한 모든 서비스를 제공해야 합니다.
+이 환경은 품질 보증 팀에서 새 시스템을 전체적으로 [테스트](/help/sites-developing/test-plan.md)하는 데 사용됩니다. 디자인과 기능 모두. 적절한 콘텐츠를 사용한 작성자 및 게시 환경이 모두 있어야 하며, 전체 테스트를 활성화하는 데 필요한 모든 서비스를 제공해야 합니다.
 
 ### 스테이징 {#staging}
 
@@ -139,6 +139,6 @@ AEM 프로젝트는 종종 코드 배포를 트리거합니다.
 콘텐츠를 다음과 같이 전송할 수 있습니다.
 
 * 다른 환경 간에 패키지를 내보내고 가져옵니다.
-* 다른 인스턴스 간 - 직접 복제 ([AEM 복제](/help/sites-deploying/replication.md)), 콘텐츠(HTTP 또는 HTTPS 연결 사용).
+* 다른 인스턴스 간에 HTTP 또는 HTTPS 연결을 사용하여 컨텐츠를 직접 복제([AEM 복제](/help/sites-deploying/replication.md))합니다.
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

@@ -26,33 +26,33 @@ ht-degree: 1%
 
 AEM Forms 추가 기능 패키지를 제거하려면 다음 단계를 수행하십시오.
 
-1. **AEM Forms 추가 기능 패키지를 제거합니다.**
-   1. 다음 위치로 이동 `http://[host]:[port]/crx/de/index.jsp`.
-   1. 을(를) 찾아 제거합니다. `AEM Forms add-on package`.
+1. **AEM Forms 추가 기능 패키지 제거:**
+   1. `http://[host]:[port]/crx/de/index.jsp`(으)로 이동합니다.
+   1. `AEM Forms add-on package`을(를) 찾아 제거합니다.
 
    ![패키지 제거](/help/forms/using/assets/uninstall-aem-forms-package.png)
 
-1. **CRXDE에서 기본 폴더를 삭제합니다.**
-   1. 다음 위치로 이동 `http://[host]:[port]/crx/de/index.jsp`.
-   1. 다음으로 이동 `/libs/fd/native/install` 및 삭제 `native` crxde의 폴더입니다.
+1. **CRXDE에서 네이티브 폴더를 삭제합니다.**
+   1. `http://[host]:[port]/crx/de/index.jsp`(으)로 이동합니다.
+   1. `/libs/fd/native/install`(으)로 이동하여 CRXDE에서 `native` 폴더를 삭제합니다.
 
       ![CRX/de에서 네이티브 노드 삭제](/help/forms/using/assets/native-install-folder-crxde.png)
    1. 변경 사항을 저장합니다.
 
-1. **AEM Forms SDK를 중지합니다.**
+1. **AEM Forms SDK 중지:**
    1. &#39;Ctrl + C&#39; 명령을 사용하여 AEM Forms SDK 인스턴스를 중지합니다.
 
-1. **Crx-quickstart 폴더에 기반을 확인하고 폴더를 설치합니다.**
-   1. 다음으로 이동 `..author\crx-quickstart` AEM Forms SDK 인스턴스의 폴더
-   1. 다음 이름의 폴더 검색 `bedrock` 및 `install`.
-검색되면 다음 항목에서 삭제되는지 확인합니다. `crx-quickstart` AEM Forms SDK 인스턴스의 폴더
+1. **crx-quickstart 폴더에 기반을 확인하고 폴더를 설치하십시오**
+   1. AEM Forms SDK 인스턴스의 `..author\crx-quickstart` 폴더로 이동합니다.
+   1. `bedrock` 및 `install` 폴더를 검색합니다.
+찾은 경우 AEM Forms SDK 인스턴스의 `crx-quickstart` 폴더에서 삭제되었는지 확인하십시오.
 
    >[!NOTE]
    >
-   > 다음 `bedrock` AEM Forms SDK 인스턴스를 다시 시작하면 폴더가 자동으로 다시 생성됩니다.
+   > AEM Forms SDK 인스턴스를 다시 시작하면 `bedrock` 폴더가 자동으로 다시 만들어집니다.
 
-1. **AEM 인스턴스를 다시 시작합니다.**
-   1. 이전 단계가 모두 완료되면, [AEM Forms SDK 인스턴스 다시 시작](/help/forms/using/restart-aem-sdk.md).
+1. **AEM 인스턴스 다시 시작:**
+   1. 이전 단계가 모두 완료되면 [AEM Forms SDK 인스턴스를 다시 시작](/help/forms/using/restart-aem-sdk.md)합니다.
 
 
 

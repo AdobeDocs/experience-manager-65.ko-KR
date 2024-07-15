@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->이 문서에서는 JSP를 사용하고 클래식 UI를 기반으로 하는 웹 사이트를 만드는 방법을 설명합니다. Adobe은 이 문서에 자세히 설명된 대로 웹 사이트에 최신 Adobe Experience Manager(AEM) 기술을 사용하는 것을 권장합니다 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md).
+>이 문서에서는 JSP를 사용하고 클래식 UI를 기반으로 하는 웹 사이트를 만드는 방법을 설명합니다. Adobe은 문서 [AEM Sites 개발 시작하기](/help/sites-developing/getting-started.md)에 자세히 설명된 대로 웹 사이트에 최신 Adobe Experience Manager(AEM) 기술을 사용하는 것을 권장합니다.
 
 이 자습서를 통해 AEM에서 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다. 웹 사이트는 일반 웹 사이트를 기반으로 하며 주로 웹 개발자를 대상으로 합니다. 모든 개발은 작성자 환경 내에서 수행됩니다.
 
@@ -49,7 +49,7 @@ ht-degree: 3%
 
 **최종 결과 다운로드**
 
-연습을 수행하지 않고 자습서와 함께 따르려면 website-1.0.zip을 다운로드합니다. 이 파일은 이 자습서의 결과를 포함하는 AEM 콘텐츠 패키지입니다. 사용 [패키지 관리자](/help/sites-administering/package-manager.md) 패키지를 작성자 인스턴스에 설치합니다.
+연습을 수행하지 않고 자습서와 함께 따르려면 website-1.0.zip을 다운로드합니다. 이 파일은 이 자습서의 결과를 포함하는 AEM 콘텐츠 패키지입니다. 작성자 인스턴스에 패키지를 설치하려면 [패키지 관리자](/help/sites-administering/package-manager.md)를 사용하십시오.
 
 **참고:** 이 패키지를 설치하면 이 자습서를 사용하여 만든 작성 인스턴스의 모든 리소스를 덮어씁니다.
 
@@ -59,7 +59,7 @@ ht-degree: 3%
 
 ## Adobe Experience Manager 설치 {#installing-adobe-experience-manager}
 
-웹 사이트 개발을 위한 AEM 인스턴스를 설치하려면 [작성자 및 게시 인스턴스가 포함된 배포 환경](/help/sites-deploying/deploy.md#author-and-publish-installs)또는 다음을 수행합니다. [일반 설치](/help/sites-deploying/deploy.md#default-local-install). 일반 설치에는 AEM Quickstart JAR 파일을 다운로드하고, JAR 파일과 동일한 디렉토리에 license.properties 파일을 배치한 다음 JAR 파일을 두 번 클릭하는 작업이 포함됩니다.
+웹 사이트 개발을 위한 AEM 인스턴스를 설치하려면 작성자 및 게시 인스턴스로 [배포 환경을 설정하는 지침](/help/sites-deploying/deploy.md#author-and-publish-installs)을 따르거나 [일반 설치](/help/sites-deploying/deploy.md#default-local-install)를 수행하십시오. 일반 설치에는 AEM Quickstart JAR 파일을 다운로드하고, JAR 파일과 동일한 디렉토리에 license.properties 파일을 배치한 다음 JAR 파일을 두 번 클릭하는 작업이 포함됩니다.
 
 AEM을 설치한 후 시작 페이지에서 CRXDE Lite 링크를 클릭하여 CRXDE Lite 개발 환경에 액세스합니다.
 
@@ -67,15 +67,15 @@ AEM을 설치한 후 시작 페이지에서 CRXDE Lite 링크를 클릭하여 CR
 
 >[!NOTE]
 >
->기본 포트를 사용하여 로컬에 설치된 AEM 작성 인스턴스의 CRXDE Lite URL은 입니다. [https://localhost:4502/crx/de/](https://localhost:4502/crx/de/).
+>기본 포트를 사용하여 로컬에 설치된 AEM 작성 인스턴스의 CRXDE Lite URL은 [https://localhost:4502/crx/de/](https://localhost:4502/crx/de/)입니다.
 
 ### CRXDE Lite에서 프로젝트 구조 설정 {#setting-up-the-project-structure-in-crxde-lite}
 
 CRXDE Lite을 사용하여 저장소에서 mywebsite 애플리케이션 구조를 생성합니다.
 
-1. CRXDE Lite 왼쪽에 있는 트리에서 **`/apps`** 폴더 및 클릭 **만들기** > **만들기** **폴더**. 다음에서 **폴더 만들기** 대화 상자, 유형 `mywebsite` 을 폴더 이름으로 사용하고 **확인**.
-1. 마우스 오른쪽 단추 클릭 **`/apps/mywebsite`** 폴더 및 클릭 **만들기** > **폴더 만들기**. 다음에서 **폴더 만들기** 대화 상자, 유형 `components` 을 폴더 이름으로 사용하고 **확인**.
-1. 마우스 오른쪽 단추 클릭 **`/apps/mywebsite`** 폴더 및 클릭 **만들기** > **폴더 만들기**. 다음에서 **폴더 만들기** 대화 상자, 유형 `templates` 을 폴더 이름으로 사용하고 **확인**.
+1. CRXDE Lite 왼쪽의 트리에서 **`/apps`** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기** > **만들기** **폴더**&#x200B;를 클릭합니다. **폴더 만들기** 대화 상자에서 `mywebsite`을(를) 폴더 이름으로 입력하고 **확인**&#x200B;을 클릭합니다.
+1. **`/apps/mywebsite`** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기** > **폴더 만들기**&#x200B;를 클릭합니다. **폴더 만들기** 대화 상자에서 `components`을(를) 폴더 이름으로 입력하고 **확인**&#x200B;을 클릭합니다.
+1. **`/apps/mywebsite`** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기** > **폴더 만들기**&#x200B;를 클릭합니다. **폴더 만들기** 대화 상자에서 `templates`을(를) 폴더 이름으로 입력하고 **확인**&#x200B;을 클릭합니다.
 
    이제 트리의 구조는 다음과 같이 표시되어야 합니다.
 
@@ -85,7 +85,7 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 ### 디자인 설정 {#setting-up-the-design}
 
-이 단원에서는 디자이너 도구를 사용하여 응용 프로그램의 디자인을 만듭니다. 디자인은 웹 사이트에 대한 CSS 및 이미지 리소스를 제공합니다.
+이 섹션에서는 Designer 도구를 사용하여 애플리케이션에 대한 디자인을 만듭니다. 디자인은 웹 사이트에 대한 CSS 및 이미지 리소스를 제공합니다.
 
 >[!NOTE]
 >
@@ -95,15 +95,15 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 [파일 가져오기](assets/mywebsite.zip)
 
-1. AEM 시작 페이지에서 **도구**. ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))
+1. AEM 시작 페이지에서 **도구**&#x200B;를 클릭합니다. ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
-1. 폴더 트리에서 **디자인** 폴더를 클릭한 다음 **신규** > **새 페이지**. 유형 `mywebsite` 을 제목으로 사용하고 클릭 **만들기**.
+1. 폴더 트리에서 **디자인** 폴더를 선택한 다음 **새로 만들기** > **새 페이지**&#x200B;를 클릭합니다. 제목으로 `mywebsite`을(를) 입력하고 **만들기**&#x200B;를 클릭합니다.
 
 1. mywebsite 항목이 테이블에 표시되지 않으면 트리 또는 테이블을 새로 고칩니다.
 
-1. [WebDAV 사용](/help/sites-administering/webdav-access.md) https://localhost:4502에서 URL에 액세스하여 샘플을 복사합니다. `static.css` 파일 및 `images` 다운로드한 mywebsite.zip 파일의 폴더를 `/etc/designs/mywebsite` 폴더를 삭제합니다.
+1. [WebDAV](/help/sites-administering/webdav-access.md) 액세스를 사용하여 https://localhost:4502의 URL에 액세스한 후 다운로드한 mywebsite.zip 파일에서 샘플 `static.css` 파일과 `images` 폴더를 `/etc/designs/mywebsite` 폴더로 복사하십시오.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -121,9 +121,9 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 템플릿은 새 페이지의 기본 콘텐츠를 정의합니다. 복잡한 웹 사이트에서는 사이트에서 서로 다른 유형의 페이지를 만들기 위해 여러 템플릿을 사용할 수 있습니다. 이 연습에서는 모든 페이지가 하나의 간단한 템플릿을 기반으로 합니다.
 
-1. CRXDE Lite의 폴더 트리에서 마우스 오른쪽 단추를 클릭합니다 `/apps/mywebsite/templates` 및 클릭 **만들기** > **템플릿 만들기**.
+1. CRXDE Lite의 폴더 트리에서 `/apps/mywebsite/templates`을(를) 마우스 오른쪽 단추로 클릭하고 **만들기** > **템플릿 만들기**&#x200B;를 클릭합니다.
 
-1. 템플릿 만들기 대화 상자에서 다음 값을 입력한 다음 **다음**:
+1. 템플릿 만들기 대화 상자에서 다음 값을 입력한 다음 **다음**&#x200B;을 클릭합니다.
 
    * **레이블**: contentpage
    * **제목**: 내 웹 사이트 콘텐츠 페이지 템플릿
@@ -134,26 +134,26 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-   리소스 유형은 페이지를 렌더링하는 구성 요소를 식별합니다. 이 경우 contentpage 템플릿을 사용하여 만든 모든 페이지는 `mywebsite/components/contentpage` 구성 요소.
+   리소스 유형은 페이지를 렌더링하는 구성 요소를 식별합니다. 이 경우 contentpage 템플릿을 사용하여 만든 모든 페이지는 `mywebsite/components/contentpage` 구성 요소에 의해 렌더링됩니다.
 
-1. 이 템플릿을 사용할 수 있는 페이지 경로를 지정하려면 더하기 버튼을 클릭하고 을 입력합니다 `/content(/.*)?` 표시되는 텍스트 상자에 입력합니다. 그런 다음 을 클릭합니다. **다음**.
+1. 이 템플릿을 사용할 수 있는 페이지의 경로를 지정하려면 더하기 단추를 클릭하고 표시되는 텍스트 상자에 `/content(/.*)?`을(를) 입력하십시오. 그런 다음 **다음**&#x200B;을 클릭합니다.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   허용되는 경로 속성의 값은 입니다. *정규 표현식입니다.* 표현식과 일치하는 경로가 있는 페이지는 템플릿을 사용할 수 있습니다. 이 경우 정규 표현식은 의 경로와 일치합니다 **/content** 폴더 및 모든 하위 페이지.
+   허용되는 경로 속성의 값은 *정규 표현식입니다.식에 일치하는 경로가 있는* 페이지에서 템플릿을 사용할 수 있습니다. 이 경우 정규식은 **/content** 폴더 및 모든 하위 페이지의 경로와 일치합니다.
 
-   작성자가 /content 아래에 페이지를 만들 때 **contentpage** 사용할 수 있는 템플릿 목록에 템플릿이 나타납니다.
+   작성자가 /content 아래에 페이지를 만들면 **contentpage** 템플릿이 사용할 수 있는 템플릿 목록에 나타납니다.
 
-1. 클릭 **다음** 다음에서 **허용된 상위** 및 **허용된 하위** 패널 및 클릭 **확인**. CRXDE Lite에서 **모두 저장**.
+1. **허용된 부모** 및 **허용된 자식** 패널에서 **다음**&#x200B;을 클릭하고 **확인**&#x200B;을 클릭합니다. CRXDE Lite에서 **모두 저장**&#x200B;을 클릭합니다.
 
    ![chlimage_1-31](assets/chlimage_1-31.png)
 
 #### Contentpage 구성 요소 만들기 {#creating-the-contentpage-component}
 
-만들기 *구성 요소* 콘텐츠를 정의하고 contentpage 템플릿을 사용하는 페이지를 렌더링합니다. 구성 요소의 위치는 contentpage 템플릿의 리소스 유형 속성 값과 일치해야 합니다.
+콘텐츠를 정의하고 contentpage 템플릿을 사용하는 페이지를 렌더링하는 *구성 요소*&#x200B;를 만듭니다. 구성 요소의 위치는 contentpage 템플릿의 리소스 유형 속성 값과 일치해야 합니다.
 
-1. CRXDE Lite에서 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components` 및 클릭 **만들기** > **구성 요소**.
-1. 다음에서 **구성 요소 만들기** 대화 상자에서 다음 속성 값을 입력합니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components`을(를) 마우스 오른쪽 단추로 클릭하고 **만들기** > **구성 요소**&#x200B;를 클릭합니다.
+1. **구성 요소 만들기** 대화 상자에서 다음 속성 값을 입력합니다.
 
    * **레이블**: contentpage
    * **제목**: 내 웹 사이트 콘텐츠 페이지 구성 요소
@@ -161,11 +161,11 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
-   새 구성 요소의 위치는 입니다. `/apps/mywebsite/components/contentpage`. 이 경로는 contentpage 템플릿의 리소스 유형( 초기 포함)에 해당합니다. **`/apps/`** 경로의 일부).
+   새 구성 요소의 위치는 `/apps/mywebsite/components/contentpage`입니다. 이 경로는 contentpage 템플릿의 리소스 유형(경로의 초기 **`/apps/`** 부분 제외)에 해당합니다.
 
    이 서신은 템플릿을 구성 요소에 연결하고 웹 사이트의 올바른 기능에 중요합니다.
 
-1. 클릭 **다음** 대화 상자의 [허용된 하위] 패널이 나타날 때까지 을 클릭하고 **확인**. CRXDE Lite에서 **모두 저장**.
+1. 대화 상자의 [허용된 자식] 패널이 나타날 때까지 **다음**&#x200B;을 클릭한 다음 **확인**&#x200B;을 클릭합니다. CRXDE Lite에서 **모두 저장**&#x200B;을 클릭합니다.
 
    이제 구조는 다음과 같습니다.
 
@@ -175,7 +175,7 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 정의합니다.
 
-1. CRXDE Lite에서 파일을 엽니다. `contentpage.jsp` 위치: `/apps/mywebsite/components/contentpage`. 파일에는 기본적으로 다음 코드가 포함되어 있습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`의 `contentpage.jsp` 파일을 엽니다. 파일에는 기본적으로 다음 코드가 포함되어 있습니다.
 
    ```java
    <%--
@@ -210,46 +210,46 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
    </html>
    ```
 
-1. 클릭 **모두 저장** 변경 사항을 저장합니다.
+1. 변경 내용을 저장하려면 **모두 저장**&#x200B;을 클릭하세요.
 
 ### 웹 사이트 페이지 및 컨텐츠 페이지 만들기 {#creating-your-website-page-and-content-pages}
 
 이 섹션에서는 내 웹 사이트, 영어, 제품, 서비스 및 고객 페이지에서 컨텐츠 페이지 템플릿을 사용하는 페이지를 만듭니다.
 
-1. AEM 시작 페이지 ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html)) 웹 사이트를 클릭합니다.
+1. AEM 시작 페이지([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))에서 웹 사이트를 클릭합니다.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. 폴더 트리에서 **웹 사이트** 폴더를 클릭한 다음 **신규** > **새 페이지**.
-1. 다음에서 **페이지 만들기** 창에서 다음을 입력합니다.
+1. 폴더 트리에서 **웹 사이트** 폴더를 선택한 다음 **새로 만들기** > **새 페이지**&#x200B;를 클릭합니다.
+1. **페이지 만들기** 창에서 다음을 입력하십시오.
 
    * 제목: `My Website`
    * 이름: `mywebsite`
-   * 다음 항목 선택 `My Website Content Page Template`
+   * `My Website Content Page Template` 선택
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
-1. **만들기**&#x200B;를 클릭합니다. 폴더 트리에서 **/Websites/내 웹 사이트** 페이지 및 클릭 **신규** > **새 페이지**.
+1. **만들기**&#x200B;를 클릭합니다. 폴더 트리에서 **/Websites/My Website** 페이지를 선택하고 **새로 만들기** > **새 페이지**&#x200B;를 클릭합니다.
 1. [페이지 만들기] 대화 상자에서 다음 속성 값을 입력한 다음 [만들기]를 클릭합니다.
 
    * 제목: 영어
    * 이름: en
    * 내 웹 사이트 컨텐츠 페이지 템플릿 선택
 
-1. 폴더 트리에서 **/Websites/내 웹 사이트/영어** 페이지 및 클릭 **신규**> **새 페이지**.
-1. 다음에서 **페이지 만들기** 대화 상자에서 다음 속성 값을 입력한 다음 **만들기**:
+1. 폴더 트리에서 **/Websites/My Website/English** 페이지를 선택하고 **새로 만들기**> **새 페이지**&#x200B;를 클릭합니다.
+1. **페이지 만들기** 대화 상자에서 다음 속성 값을 입력한 다음 **만들기**&#x200B;를 클릭합니다.
 
    * 제목: Products
    * 내 웹 사이트 컨텐츠 페이지 템플릿 선택
 
-1. 폴더 트리에서 **/Websites/내 웹 사이트/영어** 페이지 및 클릭 **신규** > **새 페이지**.
-1. 다음에서 **페이지 만들기** 대화 상자에서 다음 속성 값을 입력한 다음 **만들기**:
+1. 폴더 트리에서 **/Websites/My Website/English** 페이지를 선택하고 **새로 만들기** > **새 페이지**&#x200B;를 클릭합니다.
+1. **페이지 만들기** 대화 상자에서 다음 속성 값을 입력한 다음 **만들기**&#x200B;를 클릭합니다.
 
    * 제목: 서비스
    * 내 웹 사이트 컨텐츠 페이지 템플릿 선택
 
-1. 폴더 트리에서 **/Websites/내 웹 사이트/영어** 페이지 및 클릭 **신규** > **새 페이지**.
-1. 다음에서 **페이지 만들기** 대화 상자에서 다음 속성 값을 입력한 다음 **만들기**:
+1. 폴더 트리에서 **/Websites/My Website/English** 페이지를 선택하고 **새로 만들기** > **새 페이지**&#x200B;를 클릭합니다.
+1. **페이지 만들기** 대화 상자에서 다음 속성 값을 입력한 다음 **만들기**&#x200B;를 클릭합니다.
 
    * 제목: 고객
    * 내 웹 사이트 컨텐츠 페이지 템플릿 선택
@@ -258,7 +258,7 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
-1. 페이지를 mywebsite 디자인에 연결하려면 CRXDE Lite에서 `/content/mywebsite/en/jcr:content` 노드. 속성 탭에서 새 속성에 대해 다음 값을 입력한 다음 추가를 클릭합니다.
+1. 페이지를 mywebsite 디자인에 연결하려면 CRXDE Lite에서 `/content/mywebsite/en/jcr:content` 노드를 선택합니다. 속성 탭에서 새 속성에 대해 다음 값을 입력한 다음 추가를 클릭합니다.
 
    * 이름: cq:designPath
    * 유형: 문자열
@@ -266,7 +266,7 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. 새 웹 브라우저 탭 또는 창에서 을 엽니다. [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) 제품 페이지를 보려면 다음 작업을 수행하십시오.
+1. 새 웹 브라우저 탭 또는 창에서 [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html)을(를) 열어 제품 페이지를 확인합니다.
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -274,7 +274,7 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
 이 섹션에서는 AEM foundation 구성 요소 스크립트를 사용하고 고유한 스크립트를 작성하여 콘텐츠 페이지 스크립트를 향상시키는 방법에 대해 설명합니다.
 
-작업을 마치면 **제품** 페이지는 다음과 같아야 합니다.
+완료되면 **제품** 페이지는 다음과 같이 표시됩니다.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -284,9 +284,9 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
 예를 들어 구성 요소 JSP 코드에서 슈퍼타입 구성 요소가 구성 요소에 포함된 것처럼 제공하는 스크립트를 참조할 수 있습니다.
 
-1. CRXDE Lite에서 속성을 `/apps/mywebsite/components/contentpage` 노드.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 노드에 속성을 추가합니다.
 
-   1. 다음 항목 선택 `/apps/mywebsite/components/contentpage` 노드.
+   1. `/apps/mywebsite/components/contentpage` 노드를 선택하십시오.
    1. 속성 탭 하단에 다음 속성 값을 입력한 다음 추가를 클릭합니다.
 
       * **이름:** sling:resourceSuperType
@@ -295,7 +295,7 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
    1. 모두 저장을 클릭합니다.
 
-1. 를 엽니다. `contentpage.jsp` 파일: `/apps/mywebsite/components/contentpage` 기존 코드를 다음 코드로 바꿉니다.
+1. `/apps/mywebsite/components/contentpage`에서 `contentpage.jsp` 파일을 열고 기존 코드를 다음 코드로 바꿉니다.
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -325,15 +325,15 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
 이 섹션에서는 페이지 본문의 일부를 각각 생성하는 몇 개의 스크립트를 만듭니다. 그런 다음 pageContent 구성 요소에 body.jsp 파일을 생성하여 AEM Page 구성 요소의 body.jsp를 재정의합니다. body.jsp 파일에 페이지 본문의 다른 부분을 생성하는 스크립트를 포함합니다.
 
-**팁:** 구성 요소의 슈퍼타입으로 파일과 이름 및 상대 위치가 같은 파일이 구성 요소에 포함되어 있으면 이 파일을 이라고 합니다 *오버레이*.
+**팁:** 구성 요소에 구성 요소의 슈퍼타입에서 파일과 이름 및 상대 위치가 같은 파일이 포함되어 있으면 *오버레이*&#x200B;라고 합니다.
 
-1. CRXDE Lite에서 파일을 만듭니다. `left.jsp` 아래에 `/apps/mywebsite/components/contentpage`:
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래에 `left.jsp` 파일을 만듭니다.
 
-   1. 노드를 마우스 오른쪽 버튼으로 클릭합니다. `/apps/mywebsite/components/contentpage`그런 다음 **만들기**then을 선택합니다. **파일 만들기**.
+   1. `/apps/mywebsite/components/contentpage` 노드를 마우스 오른쪽 단추로 클릭한 다음 **만들기**다음 **파일 만들기**&#x200B;를 선택합니다.
 
-   1. 창에서 을(를) 입력합니다 `left.jsp` (으)로 **이름** 및 클릭 **확인**.
+   1. 창에서 **이름**(으)로 `left.jsp`을(를) 입력하고 **확인**&#x200B;을(를) 클릭합니다.
 
-1. 파일 편집 `left.jsp` 기존 콘텐츠를 제거하고 다음 코드로 바꾸려면 다음을 수행합니다.
+1. `left.jsp` 파일을 편집하여 기존 콘텐츠를 제거하고 다음 코드로 대체합니다.
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -345,13 +345,13 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
    ```
 
 1. 변경 사항을 저장합니다.
-1. CRXDE Lite에서 파일을 만듭니다. `center.jsp` 아래에 `/apps/mywebsite/components/contentpage`:
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래에 `center.jsp` 파일을 만듭니다.
 
-   1. 노드를 마우스 오른쪽 버튼으로 클릭합니다. `/apps/mywebsite/components/contentpage`, 선택 **만들기**, 그런 다음 **파일 만들기**.
+   1. `/apps/mywebsite/components/contentpage` 노드를 마우스 오른쪽 단추로 클릭하고 **만들기**&#x200B;를 선택한 다음 **파일 만들기**&#x200B;를 선택합니다.
 
-   1. 대화 상자에서 다음을 입력합니다. `center.jsp` 다음으로: **이름** 및 클릭 **확인**.
+   1. 대화 상자에서 `center.jsp`을(를) **이름**(으)로 입력하고 **확인**&#x200B;을 클릭합니다.
 
-1. 파일 편집 `center.jsp` 기존 콘텐츠를 제거하고 다음 코드로 바꾸려면 다음을 수행합니다.
+1. `center.jsp` 파일을 편집하여 기존 콘텐츠를 제거하고 다음 코드로 바꿉니다.
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -363,13 +363,13 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
    ```
 
 1. 변경 사항을 저장합니다.
-1. CRXDE Lite에서 파일을 만듭니다. `right.jsp` 아래에 `/apps/mywebsite/components/contentpage`:
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래에 `right.jsp` 파일을 만듭니다.
 
-   1. 노드를 마우스 오른쪽 버튼으로 클릭합니다. `/apps/mywebsite/components/contentpage`, 선택 **만들기**, 그런 다음 **파일 만들기**.
+   1. `/apps/mywebsite/components/contentpage` 노드를 마우스 오른쪽 단추로 클릭하고 **만들기**&#x200B;를 선택한 다음 **파일 만들기**&#x200B;를 선택합니다.
 
-   1. 대화 상자에서 다음을 입력합니다. `right.jsp` 다음으로: **이름** 및 클릭 **확인**.
+   1. 대화 상자에서 `right.jsp`을(를) **이름**(으)로 입력하고 **확인**&#x200B;을 클릭합니다.
 
-1. 파일 편집 `right.jsp` 기존 콘텐츠를 제거하고 다음 코드로 바꾸려면 다음을 수행합니다.
+1. `right.jsp` 파일을 편집하여 기존 콘텐츠를 제거하고 다음 코드로 대체합니다.
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -379,8 +379,8 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
    ```
 
 1. 변경 사항을 저장합니다.
-1. CRXDE Lite에서 파일을 만듭니다. `body.jsp` 아래에 `/apps/mywebsite/components/contentpage`:
-1. 파일 편집 `body.jsp` 기존 콘텐츠를 제거하고 다음 코드로 바꾸려면 다음을 수행합니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래에 `body.jsp` 파일을 만듭니다.
+1. `body.jsp` 파일을 편집하여 기존 콘텐츠를 제거하고 다음 코드로 대체합니다.
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -416,8 +416,8 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
 #### 상단 탐색 구성 요소 만들기 {#creating-the-top-navigation-component-1}
 
-1. CRXDE Lite에서 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components`, 선택 **만들기**, 그런 다음 **구성 요소 만들기**.
-1. 다음에서 **구성 요소 만들기** 창에서 다음을 입력합니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components`을(를) 마우스 오른쪽 단추로 클릭하고 **만들기**&#x200B;를 선택한 다음 **구성 요소 만들기**&#x200B;를 선택합니다.
+1. **구성 요소 만들기** 창에서 다음을 입력하십시오.
 
    * **레이블**: `topnav`
 
@@ -425,13 +425,13 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
    * **설명**: `This is My Top Navigation Component`
 
-1. 클릭 **다음** 을 클릭하는 마지막 창이 나타날 때까지 **확인**. 변경 사항을 저장합니다.
+1. **확인**&#x200B;을 클릭하는 마지막 창이 나타날 때까지 **다음**&#x200B;을 클릭합니다. 변경 사항을 저장합니다.
 
 #### 텍스트 링크를 사용하여 위쪽 탐색 스크립트 만들기 {#creating-the-top-navigation-script-with-textual-links}
 
 상위 탐색에 렌더링 스크립트를 추가하여 하위 페이지에 대한 텍스트 링크를 생성합니다.
 
-1. CRXDE Lite에서 파일을 엽니다. `topnav.jsp` 아래에 `/apps/mywebsite/components/topnav`.
+1. CRXDE Lite에서 `/apps/mywebsite/components/topnav` 아래의 `topnav.jsp` 파일을 엽니다.
 1. 다음 코드를 복사하여 붙여 넣어 있는 코드를 바꿉니다.
 
    ```xml
@@ -458,7 +458,7 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
 contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다.
 
-1. CRXDE Lite에서 `body.jsp` 아래에 `/apps/mywebsite/components/contentpage`및 바꾸기:
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`의 `body.jsp`을(를) 열고 다음을 바꾸십시오.
 
    ```xml
    <div class="topnav">topnav</div>
@@ -479,11 +479,11 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
 
 페이지 구성 요소는 페이지에 캡션을 제공할 수 있는 속성을 정의합니다. 페이지 콘텐츠에 대한 정보를 제공하는 캡션을 추가합니다.
 
-1. 브라우저에서 **제품** 페이지를 가리키도록 업데이트하는 중입니다.
-1. Sidekick **페이지** 탭을 클릭하고 **페이지 속성**.
-1. 대화 상자의 기본 탭에서 을 확장합니다. **기타 제목 및 설명,** 및 **부제** 속성, 유형 **우리가 하는 일**. **확인**&#x200B;을 클릭합니다.
-1. 자막을 추가하려면 이전 단계를 반복하십시오. **서비스 정보** (으)로 **서비스** 페이지를 가리키도록 업데이트하는 중입니다.
-1. 자막을 추가하려면 이전 단계를 반복하십시오. **우리가 얻는 신뢰** (으)로 **고객** 페이지를 가리키도록 업데이트하는 중입니다.
+1. 브라우저에서 **제품** 페이지를 엽니다.
+1. Sidekick **페이지** 탭에서 **페이지 속성**&#x200B;을 클릭합니다.
+1. 대화 상자의 기본 탭에서 **제목 및 설명 추가,**&#x200B;를 확장하고 **하위 제목** 속성에 대해 **수행할 작업**&#x200B;을 입력합니다. **확인**&#x200B;을 클릭합니다.
+1. **서비스** 페이지에 **서비스 정보**&#x200B;라는 부제를 추가하려면 이전 단계를 반복합니다.
+1. 앞의 단계를 반복하여 **고객** 페이지에 **트러스트 획득**&#x200B;을(를) 추가합니다.
 
    **팁:** CRXDE Lite에서 /content/mywebsite/en/products/jcr:content 노드를 선택하여 자막 속성이 추가되었는지 확인합니다.
 
@@ -491,19 +491,19 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
 
 탐색 컨트롤에 하이퍼텍스트 대신 이미지 링크를 사용하도록 topnav 구성 요소의 렌더링 스크립트를 개선합니다. 이미지에는 링크 대상의 제목과 부제가 포함되어 있습니다.
 
-이 연습에서는 [Sling 요청 처리](/help/sites-developing/the-basics.md#sling-request-processing). 페이지 탐색 링크에 사용할 이미지를 동적으로 생성하는 스크립트를 호출하도록 topnav.jsp 스크립트가 수정되었습니다. 이 연습에서는 Sling이 이미지 소스 파일의 URL을 구문 분석하여 이미지 렌더링에 사용할 스크립트를 결정합니다.
+이 연습에서는 [Sling 요청 처리](/help/sites-developing/the-basics.md#sling-request-processing)를 보여 줍니다. 페이지 탐색 링크에 사용할 이미지를 동적으로 생성하는 스크립트를 호출하도록 topnav.jsp 스크립트가 수정되었습니다. 이 연습에서는 Sling이 이미지 소스 파일의 URL을 구문 분석하여 이미지 렌더링에 사용할 스크립트를 결정합니다.
 
 예를 들어 제품 페이지에 대한 이미지 링크의 소스는 https://localhost:4502/content/mywebsite/en/products.navimage.png일 수 있습니다. Sling은 이 URL을 구문 분석하여 리소스 유형과 리소스 렌더링에 사용할 스크립트를 결정합니다.
 
-1. Sling은 리소스의 경로를 `/content/mwebysite/en/products.png.`
-1. Sling은 이 경로를 `/content/mywebsite/en/products` 노드.
-1. Sling이 다음을 결정합니다. `sling:resourceType` /이 노드의 `mywebsite/components/contentpage`.
+1. Sling은 리소스의 경로를 `/content/mwebysite/en/products.png.`로 결정합니다.
+1. Sling은 이 경로를 `/content/mywebsite/en/products` 노드와 일치시킵니다.
+1. Sling은 이 노드의 `sling:resourceType`을(를) `mywebsite/components/contentpage`(으)로 결정합니다.
 
-1. Sling은 이 구성 요소에서 URL 선택기와 가장 일치하는 스크립트를 찾습니다( `navimage`) 및 파일 이름 확장명( `png`).
+1. Sling은 이 구성 요소에서 URL 선택기(`navimage`) 및 파일 이름 확장명(`png`)과 가장 일치하는 스크립트를 찾습니다.
 
 이 연습에서는 Sling이 이러한 URL을 사용자가 만드는 /apps/mywebsite/components/contentpage/navimage.png.java 스크립트와 일치시킵니다.
 
-1. CRXDE Lite에서 `topnav.jsp` 아래에 `/apps/mywebsite/components/topnav.`앵커 요소의 내용(14행)을 찾습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/topnav.`앵커 요소의 내용 찾기(14행) 아래의 `topnav.jsp`을(를) 엽니다.
 
    ```xml
    <%=child.getTitle() %>
@@ -516,16 +516,16 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
    ```
 
 1. 변경 사항을 저장합니다.
-1. 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components/contentpage` 노드 및 클릭 **만들기** > **파일 만들기**.
-1. 다음에서 **파일 만들기** 창, as **이름**, 유형 `navimage.png.java`.
+1. `/apps/mywebsite/components/contentpage` 노드를 마우스 오른쪽 단추로 클릭하고 **만들기** > **파일 만들기**&#x200B;를 클릭합니다.
+1. **파일 만들기** 창에서 **이름**(으)로 `navimage.png.java`을(를) 입력하십시오.
 
    .java 파일 이름 확장명은 Apache Sling Scripting Java™ 지원을 사용하여 스크립트를 컴파일하고 서블릿을 생성해야 함을 Sling에 나타냅니다.
 
-1. 다음 코드를에 복사합니다 `navimage.png.java.`이 코드는 AbstractImageServlet 클래스를 확장합니다.
+1. 다음 코드를 `navimage.png.java.`에 복사합니다. 이 코드는 AbstractImageServlet 클래스를 확장합니다.
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 현재 리소스의 속성을 저장하는 ImageContext 개체를 만듭니다.
+   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html)은(는) 현재 리소스의 속성을 저장하는 ImageContext 개체를 만듭니다.
    * 리소스의 상위 페이지는 ImageContext 개체에서 추출됩니다. 그런 다음 페이지 제목과 자막을 얻습니다.
-   * [이미지 도우미](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) 사이트 디자인, 페이지 제목 및 페이지 부제의 navimage_bg.jpg 파일에서 이미지를 생성하는 데 사용됩니다.
+   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html)은(는) 사이트 디자인, 페이지 제목 및 페이지 부제의 navimage_bg.jpg 파일에서 이미지를 생성하는 데 사용됩니다.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -672,15 +672,15 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
 
 1. CRXDE Lite에서 제품 1 페이지에 대한 설명 및 날짜를 설정합니다.
 
-   1. 다음 항목 선택 `/content/mywebsite/en/products/product1/jcr:content` 노드.
-   1. 다음에서 **속성** 탭에서 다음 값을 입력합니다.
+   1. `/content/mywebsite/en/products/product1/jcr:content` 노드를 선택하십시오.
+   1. **속성** 탭에서 다음 값을 입력하십시오.
 
       * 이름: `jcr:description`
       * 유형: `String`
       * 값: `This is a description of the Product 1!.`
 
-   1. 클릭 **추가**.
-   1. 다음에서 **속성** 탭에서 다음 값을 사용하여 다른 속성을 만듭니다.
+   1. **추가**&#x200B;를 클릭합니다.
+   1. **속성** 탭에서 다음 값을 사용하여 다른 속성을 만듭니다.
 
       * 이름: 날짜
       * 유형: 문자열
@@ -692,13 +692,13 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
 1. CRXDE Lite에서 제품 2 페이지에 대한 설명 및 날짜를 설정합니다.
 
    1. /content/mywebsite/en/products/product2/jcr:content 노드를 선택합니다.
-   1. 다음에서 **속성** 탭에서 다음 값을 입력합니다.
+   1. **속성** 탭에서 다음 값을 입력하십시오.
 
       * 이름: jcr:description
       * 유형: 문자열
       * 값: 제품 2에 대한 설명입니다.
 
-   1. 클릭 **추가**.
+   1. **추가**&#x200B;를 클릭합니다.
    1. 동일한 텍스트 상자에서 이전 값을 다음 값으로 바꿉니다.
 
       * 이름: 날짜
@@ -712,7 +712,7 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
 
 listchildren 구성 요소를 만들려면 다음을 수행하십시오.
 
-1. CRXDE Lite에서 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components`, 선택 **만들기**, 그런 다음 **구성 요소 만들기**.
+1. CRXDE Lite에서 `/apps/mywebsite/components`을(를) 마우스 오른쪽 단추로 클릭하고 **만들기**&#x200B;를 선택한 다음 **구성 요소 만들기**&#x200B;를 선택합니다.
 1. 대화 상자에서 다음 속성 값을 입력한 후 다음을 클릭합니다.
 
    * 레이블: listchildren
@@ -725,7 +725,7 @@ listchildren 구성 요소를 만들려면 다음을 수행하십시오.
 
 listchildren 구성 요소에 대한 스크립트를 개발합니다.
 
-1. CRXDE Lite에서 파일을 엽니다. `listchildren.jsp` 아래에 `/apps/mywebsite/components/listchildren`.
+1. CRXDE Lite에서 `/apps/mywebsite/components/listchildren` 아래의 `listchildren.jsp` 파일을 엽니다.
 1. 기본 코드를 다음 코드로 바꿉니다.
 
    ```xml
@@ -760,13 +760,13 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
 1. listchildren 구성 요소 아래에 대화 상자 노드를 만듭니다.
 
-   1. CRXDE Lite에서 `/apps/mywebsite/components/listchildren`노드 및 클릭 **만들기** > **대화 상자 만들기**.
+   1. CRXDE Lite에서 `/apps/mywebsite/components/listchildren`노드를 마우스 오른쪽 단추로 클릭하고 **만들기** > **대화 상자 만들기**&#x200B;를 클릭합니다.
 
    1. 대화 상자에서 다음 등록 정보 값을 입력하고 확인을 클릭합니다
 
       * **레이블**: `dialog`
 
-      * **제목**: `Edit Component` 및 클릭 **확인**.
+      * **제목**: `Edit Component`을(를) 클릭하고 **확인**&#x200B;을 클릭합니다.
 
    ![screen_shot_2012-03-07at45818pm](assets/screen_shot_2012-03-07at45818pm.png)
 
@@ -774,8 +774,8 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
    ![screen_shot_2012-03-07at50415pm](assets/screen_shot_2012-03-07at50415pm.png)
 
-1. 다음 항목 선택 `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` 노드.
-1. 속성 탭에서 값을 변경합니다. **제목** 다음으로 속성: `List Children`
+1. `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` 노드를 선택하십시오.
+1. 속성 탭에서 **title** 속성의 값을 `List Children`(으)로 변경합니다.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -807,7 +807,7 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
 listchildren 구성 요소를 contentpage 구성 요소에 포함하려면 다음과 같이 진행합니다.
 
-1. CRXDE Lite에서 파일을 엽니다. `left.jsp` 아래에 `/apps/mywebsite/components/contentpage` 다음 코드(4행)를 찾습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래의 `left.jsp` 파일을 열고 다음 코드(4행)를 찾습니다.
 
    ```xml
    <div>newslist</div>
@@ -834,7 +834,7 @@ listchildren 구성 요소를 contentpage 구성 요소에 포함하려면 다�
 
 1. ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. 목록 루트의 경로로 다음을 입력합니다. `/content/mywebsite/en`. 확인을 클릭합니다. 이제 페이지의 listchildren 구성 요소는 다음과 같습니다.
+1. 목록 루트의 경로로 `/content/mywebsite/en`을(를) 입력하십시오. 확인을 클릭합니다. 이제 페이지의 listchildren 구성 요소는 다음과 같습니다.
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -853,27 +853,27 @@ listchildren 구성 요소를 contentpage 구성 요소에 포함하려면 다�
 
 >[!NOTE]
 >
->Adobe Experience Manager은 더 많은 기능을 갖춘 로고 구성 요소( `/libs/foundation/components/logo`).
+>Adobe Experience Manager은 더 많은 기능을 갖춘 로고 구성 요소(`/libs/foundation/components/logo`)를 제공합니다.
 
 #### 로고 구성 요소 노드 만들기 {#creating-the-logo-component-node}
 
 로고 구성 요소를 만들려면 다음 단계를 수행하십시오.
 
-1. CRXDE Lite에서 /apps/mywebsite/components 를 마우스 오른쪽 버튼으로 클릭하고 다음을 선택합니다. **만들기**, 그런 다음 **구성 요소 만들기**.
+1. CRXDE Lite에서 /apps/mywebsite/components를 마우스 오른쪽 단추로 클릭하고 **만들기**&#x200B;를 선택한 다음 **구성 요소 만들기**&#x200B;를 선택합니다.
 1. 구성 요소 만들기 대화 상자에서 다음 속성 값을 입력하고 다음을 클릭합니다.
 
    * 레이블: `logo`.
    * 제목: `My Logo Component`.
    * 설명: `This is My Logo Component`.
 
-1. 대화 상자의 최종 패널에 도달할 때까지 다음 을 클릭한 다음 을 클릭합니다 **확인**.
+1. 대화 상자의 마지막 패널에 도달할 때까지 [다음]을 클릭한 다음 **확인**&#x200B;을 클릭합니다.
 
 #### 로고 스크립트 만들기 {#creating-the-logo-script}
 
 이 섹션에서는 홈 페이지에 대한 링크가 있는 로고 이미지를 표시하는 스크립트를 만드는 방법을 설명합니다.
 
-1. CRXDE Lite에서 파일을 엽니다. `logo.jsp` 아래에 `/apps/mywebsite/components/logo`.
-1. 다음 코드는 사이트 홈 페이지에 대한 링크를 만들고 로고 이미지에 대한 참조를 추가합니다. 코드 복사 대상 `logo.jsp`:
+1. CRXDE Lite에서 `/apps/mywebsite/components/logo` 아래의 `logo.jsp` 파일을 엽니다.
+1. 다음 코드는 사이트 홈 페이지에 대한 링크를 만들고 로고 이미지에 대한 참조를 추가합니다. `logo.jsp`에 코드 복사:
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -909,11 +909,11 @@ listchildren 구성 요소를 contentpage 구성 요소에 포함하려면 다�
 
 #### 로고 디자인 대화 상자 만들기 {#creating-the-logo-design-dialog}
 
-디자인 모드에서 로고 구성 요소를 구성하는 대화 상자를 만듭니다. 디자인 모드 대화 상자 노드의 이름을 지정해야 합니다. `design_dialog`.
+디자인 모드에서 로고 구성 요소를 구성하는 대화 상자를 만듭니다. 디자인 모드 대화 상자 노드의 이름은 `design_dialog`이어야 합니다.
 
 1. 로고 구성 요소 아래에 대화 상자 노드를 만듭니다.
 
-   1. 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components/logo` 노드 및 클릭 **만들기** > **대화 상자 만들기**.
+   1. `/apps/mywebsite/components/logo` 노드를 마우스 오른쪽 단추로 클릭하고 **만들기** > **대화 상자 만들기**&#x200B;를 클릭합니다.
 
    1. 다음 속성 값을 입력한 다음 [확인]을 클릭합니다.
 
@@ -922,7 +922,7 @@ listchildren 구성 요소를 contentpage 구성 요소에 포함하려면 다�
       * **제목:** `Logo (Design)`
 
 1. design_dialog 분기에서 tab1 노드를 마우스 오른쪽 버튼으로 클릭하고 삭제를 클릭합니다. 모두 저장을 클릭합니다.
-1. 아래 `design_dialog/items/items`노드, 다음 이름의 노드 만들기 `img` 유형 `cq:Widget`. 다음 속성을 추가한 다음 모두 저장을 클릭합니다.
+1. `design_dialog/items/items`노드 아래에서 `cq:Widget` 형식의 `img` 노드를 만듭니다. 다음 속성을 추가한 다음 모두 저장을 클릭합니다.
 
    | 이름 | 유형 | 값 |
    |---|---|---|
@@ -1009,7 +1009,7 @@ public class img_GET extends AbstractImageServlet {
 
 #### Contentpage 구성 요소에 로고 구성 요소 추가 {#adding-the-logo-component-to-the-contentpage-component}
 
-1. CRXDE Lite에서 `left.jsp` 아래에 `/apps/mywebsite/components/contentpage file` 다음 코드 행을 찾습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage file` 아래의 `left.jsp`을(를) 열고 다음 코드 행을 찾습니다.
 
    ```xml
    <div>logo</div>
@@ -1032,7 +1032,7 @@ public class img_GET extends AbstractImageServlet {
 
 1. 브라우저에서 제품 페이지를 연 상태에서 Sidekick 하단의 디자인 단추를 클릭하여 디자인 모드로 전환합니다.
 
-   ![오른쪽 사각형으로 표시된 디자인 단추.](do-not-localize/chlimage_1-1.png)
+   ![오른쪽 사각형으로 표시된 디자인 단추](do-not-localize/chlimage_1-1.png)
 
 1. 로고 표시줄의 디자인에서 편집 을 클릭하여 대화 상자를 통해 로고 구성 요소의 설정을 편집합니다.
 1. 대화 상자에서 이미지 탭의 패널을 클릭하고 mywebsite.zip 파일에서 추출한 logo.png 이미지를 찾은 다음 확인 을 클릭합니다.
@@ -1051,7 +1051,7 @@ public class img_GET extends AbstractImageServlet {
 
 이 섹션에서는 기초 구성 요소 중 하나인 탐색 표시(트레일) 구성 요소를 포함합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `center.jsp`, 및 바꾸기:
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`(으)로 이동하여 `center.jsp` 파일을 열고 다음 항목을 바꿉니다.
 
    ```java
    <div>trail</div>
@@ -1064,7 +1064,7 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. 변경 사항을 저장합니다.
-1. 브라우저에서 **제품 1** 페이지를 가리키도록 업데이트하는 중입니다. 트레일 구성 요소는 다음과 같습니다.
+1. 브라우저에서 **제품 1** 페이지를 다시 로드합니다. 트레일 구성 요소는 다음과 같습니다.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
@@ -1072,7 +1072,7 @@ public class img_GET extends AbstractImageServlet {
 
 이 섹션에서는 기초 구성 요소 중 하나인 제목 구성 요소를 포함합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `center.jsp`, 및 바꾸기:
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`(으)로 이동하여 `center.jsp` 파일을 열고 다음 항목을 바꿉니다.
 
    ```xml
    <div>title</div>
@@ -1089,7 +1089,7 @@ public class img_GET extends AbstractImageServlet {
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
-   **참고**: 편집 모드에서 다른 제목 과 유형/크기를 설정할 수 있습니다.
+   **참고**: 편집 모드에서 다른 제목 및 유형/크기를 설정할 수 있습니다.
 
 ### 단락 시스템 구성 요소 포함 {#including-the-paragraph-system-component}
 
@@ -1097,7 +1097,7 @@ public class img_GET extends AbstractImageServlet {
 
 parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 요소에 추가합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `center.jsp`를 클릭하고 다음 코드 행을 찾습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`(으)로 이동하여 `center.jsp` 파일을 열고 다음 코드 행을 찾습니다.
 
    ```xml
    <div>parsys</div>
@@ -1119,30 +1119,30 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 >[!NOTE]
 >
->Adobe Experience Manager은 보다 모든 기능을 갖춘 이미지 구성 요소( `/libs/foundation/components/image`).
+>Adobe Experience Manager은 더 많은 기능을 갖춘 이미지 구성 요소(`/libs/foundation/components/image`)를 제공합니다.
 
 #### 이미지 구성 요소 만들기 {#creating-the-image-component-1}
 
-1. 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components/logo` 노드를 클릭하고 복사를 클릭합니다.
-1. 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components` 노드를 클릭하고 붙여넣기를 클릭합니다.
-1. 마우스 오른쪽 단추 클릭 `Copy of logo` 노드를 클릭하고 이름 바꾸기를 클릭한 다음 기존 텍스트와 유형을 삭제합니다. `image`.
+1. `/apps/mywebsite/components/logo` 노드를 마우스 오른쪽 단추로 클릭하고 복사를 클릭합니다.
+1. `/apps/mywebsite/components` 노드를 마우스 오른쪽 단추로 클릭하고 붙여넣기를 클릭합니다.
+1. `Copy of logo` 노드를 마우스 오른쪽 단추로 클릭하고 이름 바꾸기를 클릭한 다음 기존 텍스트를 삭제하고 `image`을(를) 입력합니다.
 
-1. 다음 항목 선택 `image` 구성 요소 노드를 클릭하고 다음 속성 값을 변경합니다.
+1. `image` 구성 요소 노드를 선택하고 다음 속성 값을 변경합니다.
 
-   * `jcr:title:` 내 이미지 구성 요소.
+   * `jcr:title:` 내 이미지 구성 요소입니다.
    * `jcr:description`: 내 이미지 구성 요소입니다.
 
-1. 에 속성 추가 `image` 다음 속성 값이 있는 노드:
+1. 다음 속성 값을 사용하여 `image` 노드에 속성을 추가하십시오.
 
    * 이름: componentGroup
    * 유형: 문자열
    * 값: 내 웹 사이트
 
-1. 아래 `image` 노드, 이름 바꾸기 `design_dialog` 노드 대상 `dialog`.
+1. `image` 노드 아래에서 `design_dialog` 노드의 이름을 `dialog`(으)로 바꿉니다.
 
-1. 이름 바꾸기 `logo.jsp` 끝 `image.jsp.`
+1. `logo.jsp` 이름을 `image.jsp.`(으)로 바꾸기
 
-1. GET img.domain.java를 열고 패키지를 다음으로 변경 `apps.mywebsite.components.image`.
+1. img.GET.java를 열고 패키지를 `apps.mywebsite.components.image`(으)로 변경합니다.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -1150,7 +1150,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 이 섹션에서는 이미지 스크립트를 만드는 방법을 설명합니다.
 
-1. 열기 `/apps/mywebsite/components/image/` `image.jsp`
+1. `/apps/mywebsite/components/image/` `image.jsp` 열기
 1. 기존 코드를 다음 코드로 바꾼 다음 변경 사항을 저장합니다.
 
    ```xml
@@ -1174,7 +1174,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 #### 이미지 cq:editConfig 노드 만들기 {#creating-the-image-cq-editconfig-node}
 
-다음 `cq:editConfig` 노드 유형을 사용하면 속성을 편집할 때 구성 요소의 특정 동작을 구성할 수 있습니다.
+`cq:editConfig` 노드 유형을 사용하면 속성을 편집할 때 구성 요소의 특정 동작을 구성할 수 있습니다.
 
 이 섹션에서는 cq:editConfig 노드를 사용하여 콘텐츠 파인더의 자산을 이미지 구성 요소로 끌 수 있습니다.
 
@@ -1207,19 +1207,19 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 이 섹션에서는 Sidekick에 나열될 때 이미지 구성 요소 옆에 표시되는 아이콘을 추가합니다.
 
-1. CRXDE Lite에서 파일을 마우스 오른쪽 단추로 클릭합니다 `/libs/foundation/components/image/icon.png` 및 선택 **알았다.**
-1. 노드를 마우스 오른쪽 버튼으로 클릭합니다. `/apps/mywebsite/components/image` 및 클릭 **붙여넣기**&#x200B;을 클릭한 다음 을 클릭합니다 **모두 저장**.
+1. CRXDE Lite에서 `/libs/foundation/components/image/icon.png` 파일을 마우스 오른쪽 단추로 클릭하고 **복사**&#x200B;를 선택합니다.
+1. `/apps/mywebsite/components/image` 노드를 마우스 오른쪽 단추로 클릭하고 **붙여넣기**&#x200B;를 클릭한 다음 **모두 저장**&#x200B;을 클릭합니다.
 
 #### 이미지 구성 요소 사용 {#using-the-image-component}
 
-이 섹션에서는 **제품** 페이지를 만들고 이미지 구성 요소를 단락 시스템에 추가합니다.
+이 섹션에서는 **제품** 페이지를 보고 이미지 구성 요소를 단락 시스템에 추가합니다.
 
-1. 브라우저에서 **제품** 페이지를 가리키도록 업데이트하는 중입니다.
-1. Sidekick에서 **디자인 모드** 아이콘.
+1. 브라우저에서 **제품** 페이지를 다시 로드합니다.
+1. Sidekick에서 **디자인 모드** 아이콘을 클릭합니다.
 1. 편집(Edit) 단추를 눌러 파트의 설계(Design) 대화상자를 편집합니다.
-1. 대화 상자에서 **허용된 구성 요소** 이 표시됩니다. 다음으로 이동 **내 웹 사이트**&#x200B;를 선택하고 **내 이미지 구성 요소**, 및 클릭 **좋아.**
-1. 다음으로 돌아가기: **편집 모드입니다.**
-1. parsys 프레임을 두 번 클릭합니다(켜기 **여기에 구성 요소 또는 자산을 끌어 놓으십시오.**). 다음 **새 구성 요소 삽입** 및 **Sidekick** 선택기는 다음과 같습니다.
+1. 대화 상자에 **허용된 구성 요소** 목록이 표시됩니다. **내 웹 사이트**&#x200B;로 이동하여 **내 이미지 구성 요소**&#x200B;를 선택하고 **확인**&#x200B;을 클릭합니다.
+1. **편집 모드로 돌아갑니다.**
+1. parsys 프레임을 두 번 클릭합니다(**구성 요소 또는 자산을 여기로 드래그하십시오**). **새 구성 요소 삽입** 및 **Sidekick** 선택기는 다음과 같습니다.
 
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
@@ -1229,7 +1229,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 편집 모드와 디자인 모드에는 몇 가지 옵션이 있습니다.
 
-1. CRXDE Lite에서 다음으로 이동 `/apps/mywebsite/components/contentpage`를 열고 `body.jsp` 파일을 참조하고 다음 코드를 찾습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`(으)로 이동하여 `body.jsp` 파일을 열고 다음 코드를 찾습니다.
 
    ```java
    <div class="toolbar">toolbar</div>
@@ -1265,13 +1265,13 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 이 섹션에서는 웹 사이트에서 컨텐츠를 검색하는 구성 요소를 만듭니다. 이 검색 구성 요소는 모든 페이지의 단락 시스템(예: 특수 검색 결과 페이지)에 배치할 수 있습니다.
 
-완료되면 검색 입력란은 다음과 같이 표시됩니다. **영어** 페이지:
+완료되면 검색 입력란은 **영어** 페이지에서 다음과 같이 표시됩니다.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
 #### 검색 구성 요소 만들기 {#creating-the-search-component-1}
 
-1. CRXDE Lite에서 마우스 오른쪽 단추 클릭 `/apps/mywebsite/components`, 선택 **만들기**, 그런 다음 **구성 요소 만들기**.
+1. CRXDE Lite에서 `/apps/mywebsite/components`을(를) 마우스 오른쪽 단추로 클릭하고 **만들기**&#x200B;를 선택한 다음 **구성 요소 만들기**&#x200B;를 선택합니다.
 1. 대화 상자를 사용하여 구성 요소를 구성합니다.
 
    1. 첫 번째 패널에서 다음 속성 값을 지정합니다.
@@ -1282,14 +1282,14 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
       * 그룹: 내 웹 사이트
 
    1. 다음 을 클릭한 후 다음 을 다시 클릭합니다.
-   1. [허용된 상위] 패널에서 + 단추를 클릭하고 을 입력합니다 `*/parsys`.
+   1. [허용된 부모] 패널에서 + 단추를 클릭하고 `*/parsys`을(를) 입력합니다.
    1. 다음 을 클릭한 다음 확인 을 클릭합니다.
 
 1. 모두 저장을 클릭합니다.
 1. 다음 노드를 복사하여 apps/mywebsite/components/search 노드에 붙여넣습니다.
 
    * `/libs/foundation/components/search/dialog`
-   * &quot; `/libs/foundation/components/search/i18n`
+   * &quot;`/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 
@@ -1299,8 +1299,8 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 이 섹션에서는 검색 스크립트를 만드는 방법을 설명합니다.
 
-1. 를 엽니다. `/apps/mywebsite/components/search/search.jsp` 파일.
-1. 다음 코드를에 복사합니다. `search.jsp`:
+1. `/apps/mywebsite/components/search/search.jsp` 파일을 엽니다.
+1. `search.jsp`에 다음 코드를 복사합니다.
 
    ```java
    <%@ page import="com.day.cq.wcm.foundation.Search,com.day.cq.tagging.TagManager" %>
@@ -1457,13 +1457,13 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 콘텐츠 페이지의 왼쪽 섹션에 검색 입력 상자를 포함하려면 다음과 같이 진행합니다.
 
-1. CRXDE Lite에서 파일을 엽니다. `left.jsp` 아래에 `/apps/mywebsite/components/contentpage` 다음 코드(2행)를 찾습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래의 `left.jsp` 파일을 열고 다음 코드(2행)를 찾습니다.
 
    ```xml
    %><div class="left">
    ```
 
-1. 다음 코드를 삽입합니다 **다음 이전** 해당 줄:
+1. 해당 줄에 **이전** 코드를 삽입합니다.
 
    ```java
    %><%@ page import="com.day.text.Text"%><%
@@ -1501,7 +1501,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 1. 브라우저에서 검색 페이지를 엽니다.
 1. Sidekick에서 디자인 모드 아이콘을 클릭합니다.
 1. 검색 제목 아래의 조각 블록 디자인에서 편집 을 클릭합니다.
-1. 대화 상자에서 아래로 스크롤하여  **내 웹 사이트** 그룹, 선택 **내 검색 구성 요소**, 및 클릭 **확인**.
+1. 대화 상자에서 **내 웹 사이트** 그룹으로 스크롤하고 **내 검색 구성 요소**&#x200B;를 선택한 다음 **확인**&#x200B;을 클릭합니다.
 1. Sidekick 시 삼각형을 클릭하여 편집 모드로 돌아갑니다.
 1. Sidekick에서 내 검색 구성 요소를 parsys 프레임으로 드래그합니다. 이는 다음과 같습니다.
 
@@ -1517,7 +1517,7 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
 
 이 구성 요소의 경우 편집 모드와 디자인 모드 모두에서 여러 매개 변수를 설정할 수 있습니다.
 
-1. CRXDE Lite에서 다음으로 이동 `/apps/mywebsite/components/contentpage`, 파일을 엽니다. `right.jsp`, 및 바꾸기:
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`(으)로 이동하여 `right.jsp` 파일을 열고 다음 항목을 바꿉니다.
 
    ```java
    <div>iparsys</div>

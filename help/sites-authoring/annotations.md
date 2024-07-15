@@ -44,13 +44,13 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->잊지 마 [댓글](/help/sites-authoring/basic-handling.md#timeline) 또한 페이지에 대한 피드백을 제공할 수도 있습니다.
+>[댓글](/help/sites-authoring/basic-handling.md#timeline)도 페이지에 대한 피드백을 제공할 수 있습니다.
 
 >[!NOTE]
 >
 >다양한 리소스에 주석을 달 수 있습니다.
 >
->* [에셋에 주석 달기](/help/assets/manage-assets.md#annotating)
+>* [자산에 주석 달기](/help/assets/manage-assets.md#annotating)
 >* [비디오 자산에 주석 달기](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 

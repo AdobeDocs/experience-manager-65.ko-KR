@@ -33,7 +33,7 @@ ht-degree: 1%
 
 배경에서 스마트 컨텐츠 서비스는 Adobe Sensei AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 콘텐츠 인텔리전스를 사용하여 다른 에셋 세트에 관련 태그를 적용합니다.
 
-스마트 컨텐츠 서비스 는에서 호스팅되는 클라우드 서비스입니다. [!DNL Adobe Developer Console]. 에서 사용 [!DNL Adobe Experience Manager], 시스템 관리자는 [!DNL Experience Manager] 배포 [!DNL Adobe Developer Console].
+스마트 컨텐츠 서비스는 [!DNL Adobe Developer Console]에서 호스팅되는 클라우드 서비스입니다. [!DNL Adobe Experience Manager]에서 사용하려면 시스템 관리자가 [!DNL Experience Manager] 배포를 [!DNL Adobe Developer Console]과(와) 통합해야 합니다.
 
 요약하면 스마트 컨텐츠 서비스를 사용하는 주요 단계는 다음과 같습니다.
 
@@ -46,11 +46,11 @@ ht-degree: 1%
 
 ## 사전 요구 사항 및 지원되는 형식 {#prerequisites}
 
-스마트 컨텐츠 서비스를 사용하기 전에 다음을 확인하여 통합을 만드십시오 [!DNL Adobe Developer Console]:
+스마트 컨텐츠 서비스를 사용하려면 먼저 [!DNL Adobe Developer Console]에 통합을 만들기 위해 다음을 확인하십시오.
 
 * 조직에 대한 관리자 권한이 있는 Adobe ID 계정입니다.
 * 조직에 대해 스마트 컨텐츠 서비스 서비스를 사용하도록 설정합니다.
-* 배포에 Smart Content Services 기본 패키지를 추가하려면 라이선스를 부여합니다. [!DNL Adobe Experience Manager Sites] 기본 패키지 및 [!DNL Assets] 추가 기능.
+* 배포에 Smart Content Services 기본 패키지를 추가하려면 [!DNL Adobe Experience Manager Sites] 기본 패키지 및 [!DNL Assets] 추가 기능에 라이선스를 부여하십시오.
 
 이 서비스는 다음 MIME 유형의 자산에 스마트 태그를 적용합니다.
 
@@ -81,43 +81,43 @@ ht-degree: 1%
 
 ## 온보딩 {#onboarding}
 
-스마트 컨텐츠 서비스 를 의 추가 기능으로 구입할 수 있습니다. [!DNL Experience Manager]. 구입하고 나면 링크를 통해 조직의 관리자에게 이메일이 전송됩니다. [!DNL Adobe I/O].
+스마트 콘텐츠 서비스를 [!DNL Experience Manager]에 대한 추가 기능으로 구입할 수 있습니다. 구입하면 [!DNL Adobe I/O](으)로 연결되는 링크가 포함된 전자 메일이 조직 관리자에게 전송됩니다.
 
-관리자는 링크를 따라 스마트 컨텐츠 서비스를 와 통합할 수 있습니다 [!DNL Experience Manager]. 서비스를 와 통합하려면 [!DNL Experience Manager Assets], 참조 [스마트 태그 구성](config-smart-tagging.md).
+관리자는 링크를 따라 스마트 콘텐츠 서비스를 [!DNL Experience Manager]과(와) 통합할 수 있습니다. 서비스를 [!DNL Experience Manager Assets]과(와) 통합하려면 [스마트 태그 구성](config-smart-tagging.md)을 참조하세요.
 
-관리자가 서비스를 구성하고 사용자를에 추가하면 온보딩 프로세스가 완료됩니다. [!DNL Experience Manager].
+관리자가 서비스를 구성하고 [!DNL Experience Manager]에서 사용자를 추가하면 온보딩 프로세스가 완료됩니다.
 
 ## 에셋 및 태그 검토 {#reviewing-assets-and-tags}
 
 온보딩한 후 가장 먼저 비즈니스 컨텍스트에서 이러한 이미지를 가장 잘 설명하는 태그 세트를 식별해야 합니다.
 
-그런 다음 이미지를 검토하여 특정 비즈니스 요구 사항에 가장 적합한 이미지 세트를 식별합니다. 조정된 세트의 자산이 [스마트 컨텐츠 서비스 교육 지침](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
+그런 다음 이미지를 검토하여 특정 비즈니스 요구 사항에 가장 적합한 이미지 세트를 식별합니다. 조정된 집합의 자산이 [스마트 콘텐츠 서비스 교육 지침](/help/assets/config-smart-tagging.md#training-the-smart-content-service)을 준수하는지 확인하십시오.
 
 에셋을 폴더에 추가하고 속성 페이지에서 각 에셋에 태그를 적용합니다. 그런 다음 이 폴더에서 교육 워크플로우를 실행합니다. 조정된 에셋 세트를 사용하면 Smart Content Service에서 분류 정의 를 사용하여 더 많은 에셋을 효과적으로 교육할 수 있습니다.
 
 >[!NOTE]
 >
 >1. 훈련은 돌이킬 수 없는 과정이다. Adobe은 태그에 대한 스마트 컨텐츠 서비스를 교육하기 전에 조정된 자산 세트의 태그를 검토할 것을 권장합니다.
->1. 태그 교육 전에 다음을 참조하십시오. [스마트 컨텐츠 서비스 교육 지침](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
+>1. 태그를 교육하기 전에 [스마트 콘텐츠 서비스 교육 지침](/help/assets/config-smart-tagging.md#training-the-smart-content-service)을 참조하세요.
 >1. 스마트 컨텐츠 서비스를 처음 교육할 때 Adobe은 두 개 이상의 서로 다른 태그에 대해 교육하는 것을 권장합니다.
 
-## 이해 [!DNL Experience Manager] 스마트 태그를 사용한 검색 결과 {#understandsearch}
+## 스마트 태그를 사용하여 [!DNL Experience Manager]개 검색 결과 이해 {#understandsearch}
 
-기본적으로, [!DNL Experience Manager] 검색어에 검색어를 결합한 다음 `AND` 절. 스마트 태그를 사용해도 이 기본 동작은 변경되지 않습니다. 스마트 태그를 사용하면 추가 기능이 추가됩니다 `OR` 절을 사용하여 스마트 태그와 관련된 검색어를 찾을 수 있습니다. 예를 들어 다음 항목을 검색하는 것이 좋습니다. `woman running`. 자산이 있는 경우 `woman` 또는 `running` 메타데이터의 키워드는 기본적으로 검색 결과에 표시되지 않습니다. 그러나 다음 중 하나로 태그가 지정된 에셋 `woman` 또는 `running` 스마트 태그를 사용하면 이러한 검색 쿼리에 표시됩니다. 그래서 검색 결과는
+기본적으로 [!DNL Experience Manager] 검색에서는 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용해도 이 기본 동작은 변경되지 않습니다. 스마트 태그를 사용하면 추가 `OR` 절이 추가되어 스마트 태그와 관련된 검색어를 찾을 수 있습니다. 예를 들어 `woman running`을(를) 검색해 보십시오. 메타데이터에 `woman` 또는 `running` 키워드만 있는 Assets은 기본적으로 검색 결과에 표시되지 않습니다. 그러나 스마트 태그를 사용하는 `woman` 또는 `running` 중 하나로 태그가 지정된 자산이 이러한 검색 쿼리에 나타납니다. 그래서 검색 결과는
 
-* 자산 포함 `woman` 및 `running` 메타데이터 키워드.
+* 메타데이터에 `woman` 및 `running` 키워드가 있는 Assets.
 
-* 키워드 중 하나로 스마트 태그가 지정된 에셋입니다.
+* Assets이 키워드 중 하나를 사용하여 스마트 태그를 지정했습니다.
 
 메타데이터 필드의 모든 검색어와 일치하는 검색 결과가 먼저 표시되고, 스마트 태그의 검색어와 일치하는 검색 결과가 표시됩니다. 위의 예에서 검색 결과가 표시되는 대략적인 순서는 다음과 같습니다.
 
-1. 의 일치 `woman running` 을 참조하십시오.
-1. 의 일치 `woman running` 스마트 태그에서 사용됩니다.
-1. 의 일치 `woman` 또는 `running` 스마트 태그에서 사용됩니다.
+1. 다양한 메타데이터 필드에 있는 `woman running`과(와) 일치합니다.
+1. 스마트 태그의 `woman running` 일치 항목.
+1. 스마트 태그의 `woman` 또는 `running`과(와) 일치
 
 >[!CAUTION]
 >
->Lucene 색인화가 다음 항목에서 수행되면 [!DNL Adobe Experience Manager], 스마트 태그를 기반으로 한 검색이 예상대로 작동하지 않습니다.
+>Lucene 인덱싱이 [!DNL Adobe Experience Manager]에서 수행되면 스마트 태그를 기반으로 한 검색이 예상대로 작동하지 않습니다.
 
 ## 자산에 자동으로 태그 지정 {#tagging-assets-automatically}
 
@@ -131,7 +131,7 @@ ht-degree: 1%
 
 ### 주기적 태그 지정 {#periodic-tagging}
 
-스마트 컨텐츠 서비스에서 폴더 내의 자산에 정기적으로 태그를 지정할 수 있습니다. 에셋 폴더의 속성 페이지를 열고 을 선택합니다. **[!UICONTROL 스마트 태그 활성화]** 다음 아래에 **[!UICONTROL 세부 사항]** 을 탭하고 변경 내용을 저장합니다.
+스마트 컨텐츠 서비스에서 폴더 내의 자산에 정기적으로 태그를 지정할 수 있습니다. 자산 폴더의 속성 페이지를 열고 **[!UICONTROL 세부 정보]** 탭에서 **[!UICONTROL 스마트 태그 사용]**&#x200B;을 선택한 다음 변경 내용을 저장합니다.
 
 폴더에 대해 이 옵션을 선택하면 Smart Content Service가 자동으로 폴더 내 자산에 태그를 지정합니다. 태깅 워크플로우는 기본적으로 매일 오전 12시에 실행됩니다.
 
@@ -145,13 +145,13 @@ ht-degree: 1%
 
 #### 워크플로우 콘솔에서 자산에 태그 지정 {#tagging-assets-from-the-workflow-console}
 
-1. 위치 [!DNL Experience Manager] 인터페이스, 이동 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]**.
-1. 다음에서 **[!UICONTROL 워크플로 모델]** 페이지에서 **[!UICONTROL DAM 스마트 태그 자산]** 워크플로우를 클릭한 다음 **[!UICONTROL 워크플로우 시작]** 을 클릭합니다.
+1. [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]**(으)로 이동합니다.
+1. **[!UICONTROL 워크플로 모델]** 페이지에서 **[!UICONTROL DAM 스마트 태그 Assets]** 워크플로를 선택한 다음 도구 모음에서 **[!UICONTROL 워크플로 시작]**&#x200B;을 클릭합니다.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. 다음에서 **[!UICONTROL 워크플로우 실행]** 대화 상자에서 태그를 자동으로 적용할 자산이 포함된 페이로드 폴더를 찾습니다.
-1. 워크플로우의 제목과 선택적 설명을 지정합니다. 클릭 **[!UICONTROL 실행]**.
+1. **[!UICONTROL 워크플로 실행]** 대화 상자에서 태그를 자동으로 적용할 자산이 포함된 페이로드 폴더를 찾습니다.
+1. 워크플로우의 제목과 선택적 설명을 지정합니다. **[!UICONTROL 실행]**&#x200B;을 클릭합니다.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
@@ -159,14 +159,14 @@ ht-degree: 1%
 
 #### 타임라인에서 에셋에 태그 지정 {#tagging-assets-from-the-timeline}
 
-1. 다음에서 [!DNL Assets] 사용자 인터페이스에서 스마트 태그를 적용할 에셋 또는 특정 에셋이 포함된 폴더를 선택합니다.
-1. 왼쪽 상단 모서리에서 을(를) 엽니다. **[!UICONTROL 타임라인]**.
-1. 왼쪽 사이드바 아래쪽에서 작업을 열고 를 클릭합니다. **[!UICONTROL 워크플로우 시작]**.
+1. [!DNL Assets] 사용자 인터페이스에서 스마트 태그를 적용할 에셋 또는 특정 에셋이 포함된 폴더를 선택합니다.
+1. 왼쪽 상단 모서리에서 **[!UICONTROL 타임라인]**&#x200B;을 엽니다.
+1. 왼쪽 사이드바 아래에서 작업을 열고 **[!UICONTROL 워크플로 시작]**&#x200B;을 클릭합니다.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. 다음 항목 선택 **[!UICONTROL DAM 스마트 태그 자산]** 워크플로우를 참조하고 워크플로우의 제목을 지정합니다.
-1. 클릭 **[!UICONTROL 시작]**. 워크플로는 에셋에 태그를 적용합니다. 스마트 컨텐츠 서비스에서 자산에 태그를 제대로 지정했는지 확인하려면 자산 폴더로 이동하여 태그를 검토하십시오.
+1. **[!UICONTROL DAM 스마트 태그 Assets]** 워크플로우를 선택하고 워크플로우의 제목을 지정합니다.
+1. **[!UICONTROL 시작]**&#x200B;을 클릭합니다. 워크플로는 에셋에 태그를 적용합니다. 스마트 컨텐츠 서비스에서 자산에 태그를 제대로 지정했는지 확인하려면 자산 폴더로 이동하여 태그를 검토하십시오.
 
 >[!NOTE]
 >
@@ -182,11 +182,11 @@ ht-degree: 1%
 
 1. 검색 상자에서 태그를 키워드로 사용하여 에셋을 검색합니다.
 1. 검색과 관련이 없는 이미지를 식별하려면 검색 결과를 검토하십시오.
-1. 이미지를 선택하고 **[!UICONTROL 태그 관리]** 을 클릭합니다.
-1. 다음에서 **[!UICONTROL 태그 관리]** 페이지, 태그를 검토합니다. 특정 태그를 기준으로 이미지를 검색하지 않으려면 태그를 선택한 다음 를 클릭합니다 **[!UICONTROL 삭제]** 을 클릭합니다. 또는 를 클릭합니다 `x` 태그 옆에 표시되는 기호입니다.
-1. 선택적으로 태그에 더 높은 등급을 지정하려면 태그를 선택하고 을 클릭합니다. **[!UICONTROL 홍보]** 을 클릭합니다. 프로모션한 태그가 로 이동됩니다. **[!UICONTROL 태그]** 섹션.
-1. 클릭 **[!UICONTROL 저장]** 그런 다음 을 클릭합니다. **[!UICONTROL 확인]**
-1. 다음 위치로 이동 **[!UICONTROL 속성]** 이미지를 위한 페이지입니다. 프로모션한 태그에 더 많은 관련성이 할당되고 검색 결과 앞에 표시되는지 확인합니다.
+1. 이미지를 선택하고 도구 모음에서 **[!UICONTROL 태그 관리]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 태그 관리]** 페이지에서 태그를 검토합니다. 특정 태그를 기준으로 이미지를 검색하지 않으려면 태그를 선택한 다음 도구 모음에서 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다. 또는 태그 옆에 나타나는 `x` 기호를 클릭합니다.
+1. 선택적으로 태그에 더 높은 등급을 할당하려면 태그를 선택하고 도구 모음에서 **[!UICONTROL 홍보]**&#x200B;를 클릭합니다. 승격하는 태그가 **[!UICONTROL 태그]** 섹션으로 이동됩니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다
+1. 이미지의 **[!UICONTROL 속성]** 페이지로 이동합니다. 프로모션한 태그에 더 많은 관련성이 할당되고 검색 결과 앞에 표시되는지 확인합니다.
 
 ## 팁 및 제한 사항 {#tips-best-practices-limitations}
 
@@ -198,6 +198,6 @@ ht-degree: 1%
 >[!MORELIKETHIS]
 >
 >* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
->* [스마트 태깅 구성](config-smart-tagging.md)
+>* [스마트 태그 지정 구성](config-smart-tagging.md)
 >* [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)
->* [스마트 태그에 대한 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

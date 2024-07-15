@@ -20,4 +20,4 @@ ht-degree: 0%
 
 **[Clientlibs 추가](add-clientlibs.md)**
 
-이 시점에서 을 사용하여 샌드박스의 커뮤니티 기능을 살펴볼 수 있습니다. [We-Retail 커뮤니티](../../help/sites-developing/we-retail.md), [커뮤니티 구성 요소 안내서](components-guide.md), 및 [기능 기본 사항](essentials.md) 참조하십시오.
+이 시점에서는 [We-Retail 커뮤니티](../../help/sites-developing/we-retail.md), [커뮤니티 구성 요소 안내서](components-guide.md) 및 [기능 기본 사항](essentials.md)을(를) 참조하여 샌드박스의 커뮤니티 기능을 살펴볼 수 있습니다.

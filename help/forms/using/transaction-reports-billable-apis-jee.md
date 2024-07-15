@@ -30,7 +30,7 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
 
 -->
 
-다음은 JEE 청구 가능 API 목록입니다. 목록 찾기 [OSGi의 AEM Forms에 대한 청구 가능 API](/help/forms/using/transaction-reports-billable-apis.md).
+다음은 JEE 청구 가능 API 목록입니다. OSGi에서 AEM Forms에 대한 [청구 가능 API 목록을 찾습니다](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## 청구 가능 문서 서비스 API {#billable-document-services-apis}
 
@@ -59,17 +59,17 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
    <td>전환<br /> </td>
   </tr>
   <tr>
-   <td><a>PDF 내보내기</a></td>
+   <td><a>ExportPDF</a></td>
    <td>PDF을 지원되는 파일 형식으로 내보냅니다. </td>
    <td>전환<br /> </td>
   </tr>
   <tr>
-   <td><a>ExportPDF2</a></td>
+   <td><a>ExportPDF</a></td>
    <td><p>PDF을 지원되는 파일 형식으로 내보냅니다.</p> </td>
    <td>전환<br /> </td>
   </tr>
   <tr>
-   <td><a>ExportPDF3</a></td>
+   <td><a>ExportPDF</a></td>
    <td>PDF을 지원되는 파일 형식으로 내보냅니다.</td>
    <td>전환<br /> </td>
   </tr>
@@ -181,17 +181,17 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
   </tr>
   <tr>
    <td><a>generatePrintedOutput</a></td>
-   <td>XDP 및 PDF 문서를 PS(PostScript), PCL(Printer Command Language) 및 ZPL 파일 형식으로 변환합니다. </td>
+   <td>XDP 및 PDF 문서를 PostScript(PS), 프린터 명령 언어(PCL) 및 ZPL 파일 형식으로 변환합니다. </td>
    <td>렌더링된 문서</td>
   </tr>
   <tr>
    <td><a>generatePrintedOutput2</a></td>
-   <td>XDP 및 PDF 문서를 PS(PostScript), PCL(Printer Command Language) 및 ZPL 파일 형식으로 변환합니다. </td>
+   <td>XDP 및 PDF 문서를 PostScript(PS), 프린터 명령 언어(PCL) 및 ZPL 파일 형식으로 변환합니다. </td>
    <td>렌더링된 문서</td>
   </tr>
   <tr>
    <td><a>pdf 변환</a></td>
-   <td>XDP 및 PDF 문서 집합을 PostScript(PS), 프린터 명령 언어(PCL) 및 ZPL 파일 형식 집합으로 변환합니다. </td>
+   <td>XDP 및 PDF 문서 집합을 PS(PostScript), PCL(프린터 명령 언어) 및 ZPL 파일 형식 집합으로 변환합니다. </td>
    <td>문서 변환</td>
   </tr>
  </tbody>
@@ -312,8 +312,8 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
 
 >[!NOTE]
 >
->* 어셈블러 서비스의 호출 API는 입력에 따라 다른 서비스의 과금 가능한 API를 내부적으로 호출할 수 있습니다. 그래서, `invoke API` 없음, 단일 또는 다중 트랜잭션으로 계상할 수 있습니다. 계산되는 트랜잭션 수는 입력 및 호출된 내부 API에 따라 다릅니다.
->* 다음과 같은 어셈블러 서비스를 사용하여 생성된 단일 PDF 문서 `invoke` 및 `invokeDDX`는 없음, 단일 또는 다중 트랜잭션으로 처리할 수 있습니다. 계산되는 거래 수는 제공된 항목에 따라 다릅니다 <!--DDX--> 코드.
+>* 어셈블러 서비스의 호출 API는 입력에 따라 다른 서비스의 과금 가능한 API를 내부적으로 호출할 수 있습니다. 따라서 `invoke API`은(는) 없음, 단일 또는 여러 트랜잭션으로 간주할 수 있습니다. 계산되는 트랜잭션 수는 입력 및 호출된 내부 API에 따라 다릅니다.
+>* `invoke` 및 `invokeDDX`과(와) 같은 어셈블러 서비스를 사용하여 생성된 단일 PDF 문서는 없음, 단일 또는 여러 트랜잭션으로 처리할 수 있습니다. 계산되는 트랜잭션 수는 제공된 <!--DDX--> 코드에 따라 다릅니다.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}

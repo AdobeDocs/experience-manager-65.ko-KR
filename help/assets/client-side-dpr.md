@@ -24,13 +24,13 @@ ht-degree: 0%
 
 **서버측 렌더링된 앱**
 
-1. 초기 서비스 작업자 로드(`srvinit.js`)를 클릭하여 HTML 페이지의 헤더 섹션에 다음 스크립트를 포함시킵니다.
+1. HTML 페이지의 헤더 섹션에 다음 스크립트를 포함하여 서비스 작업자 init(`srvinit.js`)를 로드합니다.
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobe은 이 스크립트를 로드할 것을 권장합니다 _다음 이전_ 서비스 작업자가 즉시 초기화를 시작하도록 하는 다른 모든 스크립트.
+   Adobe은 서비스 작업자가 즉시 초기화를 시작할 수 있도록 이 스크립트를 _이전_&#x200B;에 로드할 것을 권장합니다.
 
 1. HTML 페이지의 본문 섹션 맨 위에 다음 DPR 이미지 태그 코드를 포함합니다.
 
@@ -43,9 +43,9 @@ ht-degree: 0%
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   이 DPR 이미지 태그 코드를 포함해야 합니다 _다음 이전_ HTML 페이지의 모든 정적 이미지.
+   이 DPR 이미지 태그 코드 _이전_&#x200B;의 모든 정적 이미지를 HTML 페이지에 포함해야 합니다.
 
-**클라이언트측 렌더링 앱**
+**클라이언트측 렌더링된 앱**
 
 1. HTML 페이지의 헤더 섹션에 다음 DPR 스크립트를 포함합니다.
 
@@ -56,8 +56,8 @@ ht-degree: 0%
 
    여러 네트워크 요청을 방지하기 위해 두 DPR 스크립트를 하나로 결합할 수 있습니다.
 
-   Adobe은 다음 스크립트를 로드할 것을 권장합니다 _다음 이전_ HTML 페이지의 다른 모든 스크립트.
-또한 Adobe은 본문 요소보다는 diff HTML 태그에서 앱을 Bootstrap 하는 것을 권장합니다. 이유는 `dprImageInjection.js` HTML 페이지의 본문 섹션 맨 위에 이미지 태그를 동적으로 삽입합니다.
+   Adobe은 이러한 스크립트를 HTML 페이지의 다른 스크립트로 _이전_에 로드할 것을 권장합니다.
+또한 Adobe은 본문 요소보다는 diff HTML 태그에서 앱을 Bootstrap 하는 것을 권장합니다. 그 이유는 `dprImageInjection.js`이(가) HTML 페이지의 본문 섹션 맨 위에 이미지 태그를 동적으로 삽입하기 때문입니다.
 
 ## JavaScript 파일 다운로드 {#client-side-dpr-script}
 

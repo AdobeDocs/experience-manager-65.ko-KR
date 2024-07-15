@@ -26,15 +26,15 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 기본적으로 트랜잭션 녹화는 비활성화되어 있습니다. 트랜잭션 보고를 사용하려면 다음 단계를 수행합니다.
 
-1. 다음 위치로 이동 `/adminui` JEE의 AEM Forms에서 예를 들면 다음과 같습니다. `http://10.14.18.10:8080/adminui`.
-1. 다음으로 로그인 **관리자**.
-1. 다음으로 이동 **설정** > **핵심 시스템 설정** > **구성**.
-1. 다음 확인란을 클릭합니다. **거래 보고 활성화** 및 **저장** 설정.
+1. JEE의 AEM Forms에 있는 `/adminui`(예: `http://10.14.18.10:8080/adminui`)으로 이동합니다.
+1. **관리자**(으)로 로그인합니다.
+1. **설정** > **핵심 시스템 설정** > **구성**(으)로 이동합니다.
+1. 설정을 **트랜잭션 보고 사용** 및 **저장**&#x200B;하려면 확인란을 클릭하십시오.
 
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
 1. 서버를 다시 시작합니다.
-1. 서버의 변경 사항 외에 클라이언트 측에서 를 업데이트해야 합니다. `adobe-livecycle-client.jar` 동일한 파일을 사용하는 경우 프로젝트에 있는 파일입니다.
+1. 서버의 변경 내용 외에 동일한 파일을 사용하는 경우 클라이언트측에서 프로젝트의 `adobe-livecycle-client.jar` 파일을 업데이트해야 합니다.
 
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
@@ -44,23 +44,23 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 ## 트랜잭션 보고서 보기 {#view-transaction-report}
 
-거래 보고를 사용하면 다음을 통해 거래 횟수에 대한 정보에 액세스할 수 있습니다 [대시보드를 통한 거래 보고서](#transaction-report-dashboard) 및 세부 정보 [로그 파일을 통한 트랜잭션 보고서](#transaction-report-logfile). 두 가지 모두 아래에 설명되어 있습니다.
+트랜잭션 보고를 사용하면 대시보드를 통해 [트랜잭션 보고서](#transaction-report-dashboard)와 로그 파일을 통해 자세한 [트랜잭션 보고서](#transaction-report-logfile)를 통해 트랜잭션 수에 대한 정보에 액세스할 수 있습니다. 두 가지 모두 아래에 설명되어 있습니다.
 
 ### 대시보드를 통한 거래 보고서 {#transaction-report-dashboard}
 
 대시보드를 통한 트랜잭션 보고서는 각 트랜잭션 유형에 대한 총 트랜잭션 수를 제공합니다. 예를 들어 이미지에 표시된 대로 렌더링, 변환 및 제출된 총 양식 수에 대한 정보를 얻을 수 있습니다. 거래 보고서를 가져오려면
 
-1. 다음 위치로 이동 `/adminui` JEE의 AEM Forms에서 예를 들면 다음과 같습니다. `http://10.13.15.08:8080/adminui`.
-1. 다음으로 로그인 **관리자**.
+1. JEE의 AEM Forms에서 `/adminui`(으)로 이동합니다(예: `http://10.13.15.08:8080/adminui`).
+1. **관리자**(으)로 로그인합니다.
 1. 상태 모니터를 클릭합니다.
-1. 다음으로 이동 **거래 리포터** 탭을 클릭하고 **총 트랜잭션 계산**, 이제 파이 차트가 제출, 렌더링 또는 변환된 PDF forms의 수를 나타냅니다.
+1. **거래 보고자** 탭으로 이동하고 **총 거래 계산**&#x200B;을 클릭합니다. 이제 파이 차트가 제출되거나 렌더링되거나 변환된 PDF forms의 수를 나타냅니다.
 
 ![sample-transaction-report-jee](assets/transaction-piechart.png)
 
 
 ### 로그 파일을 통한 트랜잭션 보고서 {#transaction-report-logfile}
 
-로그 파일을 통한 트랜잭션 보고서는 각 트랜잭션에 대한 자세한 정보를 제공합니다. 트랜잭션 로그에 액세스하려면 서버 시작과 관련된 컨텍스트 경로를 따르십시오. 트랜잭션은 별도의 로그 파일에 캡처됩니다 `transaction_log.log` 기본적으로. 다음 **파일 경로** 서버 시작 컨텍스트를 기준으로 합니다. 다른 서버의 기본 경로는 아래에 나와 있습니다.
+로그 파일을 통한 트랜잭션 보고서는 각 트랜잭션에 대한 자세한 정보를 제공합니다. 트랜잭션 로그에 액세스하려면 서버 시작과 관련된 컨텍스트 경로를 따르십시오. 기본적으로 트랜잭션은 별도의 로그 파일 `transaction_log.log`에 캡처됩니다. **파일 경로**&#x200B;은(는) 서버 시작 컨텍스트를 기준으로 합니다. 다른 서버의 기본 경로는 아래에 나와 있습니다.
 
 ```
 For Jboss Turnkey:
@@ -97,13 +97,13 @@ TransactionRecord
 }
 ```
 
-* **서비스**: 서비스 이름입니다.
-* **작업**: 작업 이름입니다.
+* **서비스**: 서비스의 이름입니다.
+* **operation**: 작업 이름입니다.
 * **internalService**: 내부 호출이 있는 경우 피호출자의 이름입니다. 그렇지 않으면 서비스 이름과 동일합니다.
-* **internalOperation**: 내부 호출이 있는 경우 호출자의 이름입니다. 그렇지 않으면 작업 이름과 동일합니다.
-* **transactionOperationType**: 거래 유형(제출, 렌더링, 변환)
-* **transactionCount**: 총 거래 수.
-* **elapsedTime**: 호출 시작과 응답을 받은 시간 사이의 시간입니다.
+* **internalOperation**: 내부 호출이 있는 피호출자의 이름입니다. 그렇지 않으면 작업 이름과 동일합니다.
+* **transactionOperationType**: 트랜잭션 유형(Submit, Render, Convert).
+* **transactionCount**: 총 트랜잭션 수입니다.
+* **elapsedTime**: 호출 시작과 수신된 응답 사이의 시간입니다.
 * **transactionDate**: 서비스가 호출된 시기를 나타내는 타임스탬프입니다.
 
 **샘플 트랜잭션 로그**:
@@ -128,9 +128,9 @@ TransactionRecord
 
 트랜잭션 기록 빈도는 제출, 렌더링 또는 변환된 각 폼에 대한 서버의 업데이트 작업에 의해 결정됩니다.
 
-* 위치 **대시보드**, 트랜잭션 수는 정기적으로 업데이트되며, 기본값은 1분으로 설정됩니다. 다음 위치에 시스템 속성을 설정하여 빈도를 업데이트할 수 있습니다. `"com.adobe.idp.dsc.transaction.recordFrequency"`. 예를 들어, JBoss®의 AEM Forms for JEE에서 을 추가합니다. `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` 위치: `JAVA_OPTS` 업데이트 빈도를 5분으로 설정합니다.
+* **대시보드**&#x200B;에서 트랜잭션 수가 정기적으로 업데이트되며 기본값은 1분으로 설정됩니다. `"com.adobe.idp.dsc.transaction.recordFrequency"`에서 시스템 속성을 설정하여 빈도를 업데이트할 수 있습니다. 예를 들어, JBoss®의 JEE용 AEM Forms에서 `JAVA_OPTS`에 `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5`을(를) 추가하여 업데이트 빈도를 5분으로 설정합니다.
 
-* 위치 **트랜잭션 로그**, 각 트랜잭션에 대한 업데이트는 양식이 성공적으로 제출, 렌더링 또는 변환될 때 즉시 발생합니다.
+* **트랜잭션 로그**&#x200B;에서 각 트랜잭션에 대한 업데이트는 양식이 성공적으로 제출, 렌더링 또는 변환될 때 즉시 발생합니다.
 
 <!-- A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 

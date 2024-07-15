@@ -18,7 +18,7 @@ ht-degree: 12%
 
 # 자산 작업{#working-with-assets}
 
-다음 [작성 환경 및 도구](/help/sites-authoring/author-environment-tools.md) 섹션은 사용에 대한 정보를 제공합니다. [!UICONTROL 콘텐츠 파인더] 를 클릭하여 페이지를 편집할 때 에셋을 찾고 사용합니다. AEM Assets에서는 에셋 작업을 위한 다른 방법을 제공합니다.
+[작성 환경 및 도구](/help/sites-authoring/author-environment-tools.md) 섹션에서는 페이지를 편집할 때 [!UICONTROL 콘텐츠 파인더]를 사용하여 에셋을 찾고 사용하는 방법에 대한 정보를 제공합니다. AEM Assets에서는 에셋 작업을 위한 다른 방법을 제공합니다.
 
 * [페이지에 Dynamic Media Classic 기능 추가](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Dynamic Media 작업](/help/sites-classic-ui-authoring/dynamic-media-assets.md)

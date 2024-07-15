@@ -19,11 +19,11 @@ ht-degree: 16%
 
 # 비디오 {#video}
 
-Adobe Experience Manager Assets에서는 Dynamic Media Classic으로의 자동 인코딩을 위해 자산에 직접 비디오를 업로드하고, 페이지 작성을 위해 자산에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
+Adobe Experience Manager Assets에서는 Dynamic Media Classic으로의 자동 인코딩을 위해 Assets으로 직접 비디오를 업로드하고, 페이지 작성을 위해 Assets에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
 
 Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비디오의 범위를 확장합니다(자동 장치 및 대역폭 검색).
 
-* 다음 **[!UICONTROL Scene7 비디오]** 구성 요소는 자동으로 장치 및 대역폭 검색을 수행하여 데스크탑, 태블릿 및 모바일에서 올바른 형식 및 올바른 품질의 비디오를 재생합니다.
+* **[!UICONTROL Scene7 비디오]** 구성 요소는 자동으로 장치 및 대역폭 검색을 수행하여 데스크톱, 태블릿 및 모바일에서 올바른 형식 및 올바른 품질의 비디오를 재생합니다.
 * 자산 - 단일 비디오 자산만이 아닌 응용 비디오 세트를 포함할 수 있습니다. 응용 비디오 세트에는 여러 화면에서 비디오를 원활하게 재생하는 데 필요한 모든 비디오 렌디션이 포함되어 있습니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑, iOS, Android™, BlackBerry® 및 Windows 모바일 장치를 포함한 여러 화면에서 응용 비디오 스트리밍을 수행하려면 S7 비디오 구성 요소와 함께 응용 비디오 세트를 사용합니다.
 <!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
@@ -59,27 +59,27 @@ Scene7 비디오 구성 요소에 대해 지원되는 형식은 다음과 같습
 에셋에 대한 워크플로우나 버전 관리가 필요한 경우 먼저 Adobe DAM에 업로드합니다. 다음은 권장되는 워크플로우입니다.
 
 1. 비디오 에셋을 Adobe DAM에 업로드하고 자동으로 인코딩한 후 Dynamic Media Classic에 게시합니다.
-1. Experience Manager에서 의 WCM에 있는 비디오 자산에 액세스합니다. **[!UICONTROL 동영상]** 콘텐츠 파인더 탭
-1. 작성자 **[!UICONTROL Scene7 비디오]** 또는 **[!UICONTROL 기본 비디오]** 구성 요소.
+1. Experience Manager에서 컨텐츠 파인더의 **[!UICONTROL 동영상]** 탭에서 WCM의 비디오 자산에 액세스합니다.
+1. **[!UICONTROL Scene7 Video]** 또는 **[!UICONTROL Foundation Video]** 구성 요소가 있는 작성자.
 
 ### Dynamic Media Classic에 비디오를 업로드하는 경우 {#if-you-are-uploading-your-video-to-scene}
 
 에셋에 대해 워크플로우나 버전 관리가 필요하지 않은 경우 에셋을 Scene7에 업로드합니다. 다음은 권장되는 워크플로우입니다.
 
-1. Dynamic Media Classic, [Scene7(시스템 자동화)에 예약된 FTP 업로드 및 인코딩 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
-1. Experience Manager에서 의 WCM에 있는 비디오 자산에 액세스합니다. **[!UICONTROL Scene7]** 콘텐츠 파인더 탭
-1. 을 사용하여 작성자 **[!UICONTROL Scene7 비디오]** 구성 요소.
+1. Dynamic Media Classic에서 [Scene7(시스템 자동화)에 예약된 FTP 업로드 및 인코딩을 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp)합니다.
+1. Experience Manager에서 컨텐츠 파인더의 **[!UICONTROL Scene7]** 탭에서 WCM의 비디오 자산에 액세스합니다.
+1. **[!UICONTROL Scene7 비디오]** 구성 요소로 작성합니다.
 
 ## Scene7 비디오와의 통합 구성 {#configuring-integration-with-scene-video}
 
-1. 위치 **[!UICONTROL Cloud Service]**&#x200B;로 이동합니다. **[!UICONTROL Scene7]** 구성 및 선택 **[!UICONTROL 편집]**.
+1. **[!UICONTROL Cloud Service]**&#x200B;에서 **[!UICONTROL Scene7]** 구성으로 이동하여 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 비디오]** 탭을 선택합니다.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
 
    >[!NOTE]
    >
-   >다음 **[!UICONTROL 비디오]** 페이지에 클라우드 구성이 없는 경우 탭이 표시되지 않습니다.
+   >페이지에 클라우드 구성이 없으면 **[!UICONTROL 비디오]** 탭이 표시되지 않습니다.
 
 1. 응용 비디오 인코딩 프로필, 곧바로 사용 가능한 단일 비디오 인코딩 프로필 또는 사용자 지정 비디오 인코딩 프로필을 선택합니다.
 
@@ -93,20 +93,20 @@ Scene7 비디오 구성 요소에 대해 지원되는 형식은 다음과 같습
 
 ## 뷰어 및 인코딩 사전 설정 업데이트 {#updating-viewer-and-encoding-presets}
 
-Scene7에서 사전 설정이 업데이트되었기 때문에 비디오에 대한 뷰어 및 인코딩 사전 설정을 업데이트하려면 클라우드 구성에서 Scene7 구성으로 이동한 다음 를 선택합니다. **[!UICONTROL 뷰어 및 인코딩 사전 설정 업데이트]**.
+Scene7에서 사전 설정이 업데이트되었기 때문에 비디오의 뷰어 및 인코딩 사전 설정을 업데이트하려면 클라우드 구성에서 Scene7 구성으로 이동하여 **[!UICONTROL 뷰어 및 인코딩 사전 설정 업데이트]**&#x200B;를 선택합니다.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
 ## Adobe DAM에서 Scene7으로 기본 소스 비디오 업로드 {#uploading-your-master-video}
 
 1. Scene7 인코딩 프로필을 사용하여 클라우드 구성을 설정한 CQ DAM 대상 폴더로 이동합니다.
-1. 선택 **[!UICONTROL 업로드]** 기본 소스 비디오를 업로드합니다. 다음 작업 후 비디오 업로드 및 인코딩이 완료되었습니다. [!UICONTROL DAM 자산 업데이트] 워크플로가 완료되고 **[!UICONTROL Scene7에 게시]** 에 확인 표시가 있습니다.
+1. 기본 소스 비디오를 업로드하려면 **[!UICONTROL 업로드]**&#x200B;를 선택하십시오. [!UICONTROL DAM 자산 업데이트] 워크플로우가 완료되고 **[!UICONTROL Scene7으로 Publish]**&#x200B;에 확인 표시가 있으면 비디오 업로드 및 인코딩이 완료됩니다.
 
    >[!NOTE]
    >
    >비디오 썸네일을 생성하는 데 시간이 걸립니다.
 
-   DAM 기본 소스 비디오를 비디오 구성 요소 액세스로 드래그 *모두* 전달을 위해 Scene7으로 인코딩된 프록시 표현물입니다.
+   DAM 기본 소스 비디오를 비디오 구성 요소로 드래그하면 전달을 위해 *모두*&#x200B;개의 Scene7 인코딩 프록시 표현물에 액세스할 수 있습니다.
 
 ## 기본 비디오 구성 요소와 Scene7 비디오 구성 요소 {#foundation-video-component-versus-scene-video-component}
 
@@ -148,9 +148,9 @@ S7 클라우드 구성에서 선택한 S7 인코딩 사전 설정에 따라 다�
 >
 >새 비디오 프로필 및 해당 변경 사항을 게시하려면 활성화해야 합니다.
 
-1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 구성 콘솔]**.
-1. 다음에서 **[!UICONTROL 구성 콘솔]**, 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL DAM]** > **[!UICONTROL 비디오 프로필]** 탐색 트리에서.
-1. S7 비디오 프로필을 만듭니다. 다음에서 **[!UICONTROL 신규]**. 메뉴, 선택 **[!UICONTROL 페이지 만들기]** 그런 다음 Scene7 비디오 프로필 템플릿을 선택합니다. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 구성 콘솔]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 구성 콘솔]**&#x200B;에서 탐색 트리의 **[!UICONTROL 도구]** > **[!UICONTROL DAM]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
+1. S7 비디오 프로필을 만듭니다. **[!UICONTROL 새로 만들기]**&#x200B;에서. 메뉴에서 **[!UICONTROL 페이지 만들기]**&#x200B;를 선택한 다음 Scene7 비디오 프로필 템플릿을 선택합니다. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 선택하세요.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -168,23 +168,23 @@ S7 클라우드 구성에서 선택한 S7 인코딩 사전 설정에 따라 다�
 
 #### 디자인 구성 {#configuring-design}
 
-다음 **[!UICONTROL 기본 비디오]** 구성 요소는 비디오 소스 목록을 만드는 데 사용할 비디오 프로필에 대해 알고 있어야 합니다. 비디오 구성 요소 디자인 대화 상자를 열고 새 비디오 프로필을 사용하도록 구성 요소 디자인을 구성합니다.
+**[!UICONTROL 기본 비디오]** 구성 요소는 비디오 소스 목록을 만드는 데 사용할 비디오 프로필에 대해 알고 있어야 합니다. 비디오 구성 요소 디자인 대화 상자를 열고 새 비디오 프로필을 사용하도록 구성 요소 디자인을 구성합니다.
 
 >[!NOTE]
 >
->를 사용하는 경우 **[!UICONTROL 기본 비디오]** 구성 요소를 모바일 페이지에서 사용하려면 모바일 페이지 디자인에서 이 단계를 반복하십시오.
+>모바일 페이지에서 **[!UICONTROL 기본 비디오]** 구성 요소를 사용하는 경우 모바일 페이지 디자인에서 이 단계를 반복합니다.
 
 >[!NOTE]
 >
 >디자인을 변경하려면 디자인을 활성화해야 게시에서 적용됩니다.
 
-1. 를 엽니다. **[!UICONTROL 기본 비디오]** 구성 요소의 디자인 대화 상자 및 **[!UICONTROL 프로필]** 탭. 그런 다음 기본 제공 프로필을 삭제하고 새 S7 비디오 프로필을 추가합니다. 렌더링 시 디자인 대화 상자의 프로필 목록 순서는 비디오 소스 요소의 순서를 정의합니다.
-1. HTML 5를 지원하지 않는 브라우저의 경우 비디오 구성 요소를 사용하여 Flash 폴백을 구성할 수 있습니다. 비디오 구성 요소 디자인 대화 상자를 열고 를 로 변경합니다. **[!UICONTROL Flash]** 탭. Flash 플레이어 설정을 구성하고 Flash 플레이어에 대한 대체 프로필을 할당합니다.
+1. **[!UICONTROL 기초 비디오]** 구성 요소의 디자인 대화 상자를 열고 **[!UICONTROL 프로필]** 탭으로 변경합니다. 그런 다음 기본 제공 프로필을 삭제하고 새 S7 비디오 프로필을 추가합니다. 렌더링 시 디자인 대화 상자의 프로필 목록 순서는 비디오 소스 요소의 순서를 정의합니다.
+1. HTML 5를 지원하지 않는 브라우저의 경우 비디오 구성 요소를 사용하여 Flash 폴백을 구성할 수 있습니다. 비디오 구성 요소 디자인 대화 상자를 열고 **[!UICONTROL Flash]** 탭으로 변경합니다. Flash 플레이어 설정을 구성하고 Flash 플레이어에 대한 대체 프로필을 할당합니다.
 
 #### 체크리스트 {#checklist}
 
 1. S7 클라우드 구성을 만듭니다. 비디오 인코딩 사전 설정이 지정되어 있고 Importer가 실행 중인지 확인합니다.
 1. 클라우드 구성에서 선택한 각 비디오 인코딩 사전 설정에 대해 S7 비디오 프로필을 만듭니다.
 1. 비디오 프로필을 활성화해야 합니다.
-1. 디자인 구성 **[!UICONTROL 기본 비디오]** 구성 요소를 추가합니다.
+1. 페이지에서 **[!UICONTROL 기본 비디오]** 구성 요소의 디자인을 구성합니다.
 1. 디자인 변경이 완료되면 디자인을 활성화합니다.

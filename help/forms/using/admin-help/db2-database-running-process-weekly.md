@@ -24,7 +24,7 @@ AEM Forms DB2® 데이터베이스가 느리게 실행되기 시작하는 경우
 
    (Windows) 시작 > 프로그램 > IBM® DB2® > 일반 관리 도구 > Control Center를 선택합니다.
 
-   (Linux® 및 UNIX®) 명령 프롬프트에서 `db2jcc` 명령입니다.
+   (Linux® 및 UNIX®) 명령 프롬프트에서 `db2jcc` 명령을 입력합니다.
 
 1. DB2® Control Center 객체 트리에서 모든 데이터베이스를 누릅니다.
 1. AEM Forms용으로 만든 데이터베이스를 클릭하고 테이블 폴더를 클릭합니다.

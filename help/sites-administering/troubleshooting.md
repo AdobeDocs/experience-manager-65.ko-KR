@@ -28,7 +28,7 @@ ht-degree: 3%
 >* [AEM의 감사 로그 유지 관리](/help/sites-administering/operations-audit-log.md)
 >* [감사 레코드 및 로그 파일 작업](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
-CRX는 자세한 로그를 기록합니다. 압축을 풀고 빠른 시작을 시작하면 다음 위치에 로그가 있습니다.
+CRX은 자세한 로그를 기록합니다. 압축을 풀고 빠른 시작을 시작하면 다음 위치에 로그가 있습니다.
 
 * crx-quickstart/launchpad/logs
 * crx-quickstart/server/logs
@@ -38,7 +38,7 @@ CRX는 자세한 로그를 기록합니다. 압축을 풀고 빠른 시작을 �
 
 기본 로그 수준은 INFO입니다. 즉, DEBUG 메시지는 기록되지 않습니다.
 
-디버그 로그 수준을 활성화하려면 CRX 탐색기를 사용하여
+DEBUG 로그 수준을 활성화하려면 CRX 탐색기를 사용하여
 
 ```xml
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
@@ -57,12 +57,12 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 | 0 | 치명적인 오류 | 작업이 실패하여 설치 관리자를 진행할 수 없습니다. |
 |---|---|---|
 | 1 | 오류 | 작업이 실패했습니다. 설치가 진행되지만 CRX의 일부가 올바르게 설치되지 않아 작동하지 않습니다. |
-| 2 | 경고 | 작업이 성공했지만 문제가 발생했습니다. CRX가 제대로 작동할 수도 있고 작동하지 않을 수도 있습니다. |
+| 2 | 경고 | 작업이 성공했지만 문제가 발생했습니다. CRX이 제대로 작동할 수도 있고 작동하지 않을 수도 있습니다. |
 | 3 | 정보 | 작업이 성공했습니다. |
 
 ## 문제 해결에 사용되는 상세 정보 옵션 {#verbose-option-used-for-troubleshooting}
 
-CRX를 시작할 때 -v(verbose) 옵션을 다음과 같이 명령줄에 추가할 수 있습니다.
+CRX을 시작할 때 -v(verbose) 옵션을 다음과 같이 명령줄에 추가할 수 있습니다.
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 

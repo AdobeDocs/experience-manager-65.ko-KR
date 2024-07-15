@@ -25,4 +25,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->클래식 UI를 사용하는 기능 패리티의 상태에 대한 자세한 내용은 [Touch UI 기능 패리티](/help/release-notes/touch-ui-features-status.md) 문서.
+>클래식 UI와 기능 패리티의 상태에 대한 자세한 내용은 [Touch UI 기능 패리티](/help/release-notes/touch-ui-features-status.md) 문서를 참조하십시오.

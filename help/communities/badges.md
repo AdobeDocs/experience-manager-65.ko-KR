@@ -43,23 +43,23 @@ ht-degree: 4%
 
 ## 배지 만들기 {#create-badge}
 
-배지는 적절한 작은 이미지(높이 72dpi, 26~32픽셀)를 업로드하고 이름을 제공하여 만들어집니다. 배지 이미지는 다음 위치의 저장소에 저장됩니다. `/libs/settings/community/badging/images` 및 이 게시 환경에 자동으로 복제됩니다.
+배지는 적절한 작은 이미지(높이 72dpi, 26~32픽셀)를 업로드하고 이름을 제공하여 만들어집니다. 배지 이미지는 `/libs/settings/community/badging/images`의 저장소에 저장되고 게시 환경에 자동으로 복제됩니다.
 
-게시 환경이 게시자의 팜인 경우 를 구성해야 합니다. [사용자 동기화](/help/communities/sync.md).
+게시 환경이 게시자의 팜인 경우 [사용자 동기화](/help/communities/sync.md)를 구성해야 합니다.
 
 ![배지 만들기](assets/create-badge.png)
 
 * **이미지 업로드**
 
-  (*필수*) JPEG 또는 PNG 포맷으로 권장 크기가 32 x 32 픽셀(72dpi)인 배지 이미지입니다.
+  (*필수*) JPEG 또는 PNG 형식의 권장 크기가 72dpi에서 32 x 32픽셀인 배지 이미지입니다.
 
 * **이름**
 
-  (*필수*) 배지 이름입니다. 기본값입니다 `Display Name` 및 저장소 노드 이름입니다. 다음과 같은 경우 `Name` 은(는) 유효한 저장소 노드 이름이 아닙니다. 수정되었습니다.
+  (*필수*) 배지 이름입니다. 기본 `Display Name` 및 저장소 노드 이름입니다. `Name`이(가) 올바른 저장소 노드 이름이 아닌 경우 수정됩니다.
 
 * **표시 이름**
 
-  (*선택 사항*) 사용자 인터페이스에 배지에 대해 표시할 이름입니다. 기본값은 다음에 대해 입력된 변경되지 않은 텍스트입니다. `Name`.
+  (*선택 사항*) 사용자 인터페이스에 배지에 대해 표시할 이름입니다. 기본값은 `Name`에 입력된 변경되지 않은 텍스트입니다.
 
 * **설명**
 
@@ -67,6 +67,6 @@ ht-degree: 4%
 
 ## 추가 정보 {#additional-information}
 
-채점 및 배지 규칙 설정에 대한 자세한 내용은 을 참조하십시오. [채점 및 배지](/help/communities/implementing-scoring.md).
+채점 및 배지 규칙 설정에 대한 자세한 내용은 [채점 및 배지](/help/communities/implementing-scoring.md)를 참조하십시오.
 
-멤버의 배지 관리에 대해서는 다음을 참조하십시오. [구성원 콘솔](/help/communities/members.md).
+회원용 배지를 관리하려면 [구성원 콘솔](/help/communities/members.md)을 참조하세요.

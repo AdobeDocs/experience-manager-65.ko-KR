@@ -14,7 +14,7 @@ ht-degree: 42%
 
 # 컨텐츠 조각의 원격 Adobe Experience Manager GraphQL 쿼리 인증 {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-의 기본 사용 사례 [컨텐츠 조각 전달을 위한 Adobe Experience Manager(AEM) GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) 은 타사 응용 프로그램 또는 서비스의 원격 쿼리를 수락하는 것입니다. Headless 콘텐츠 게재를 보호하기 위해 이러한 원격 쿼리에는 인증된 API 액세스가 필요할 수 있습니다.
+콘텐츠 조각 배달을 위한 [Adobe Experience Manager(AEM) GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)의 주요 사용 사례는 서드파티 응용 프로그램 또는 서비스의 원격 쿼리를 수락하는 것입니다. Headless 콘텐츠 게재를 보호하기 위해 이러한 원격 쿼리에는 인증된 API 액세스가 필요할 수 있습니다.
 
 >[!NOTE]
 >

@@ -31,7 +31,7 @@ Adobe Experience Manager(AEM) Mobile은 완전한 AEM 플랫폼을 구성하는 
 
 ## PhoneGap 응용 프로그램 작성 {#authoring-phonegap-applications}
 
-An ***AEM 작성자* (또는 *마케터*)**에서는 기본 제공 템플릿 및 구성 요소를 사용하여 페이지를 추가하고 편집할 수 있습니다. DAM에서 구성 요소를 끌어다 놓고, 이미지, 비디오 및 텍스트 조각(콘텐츠 조각)을 포함한 모든 유형의 미디어를 추가할 수 있습니다.
+***AEM 작성자*(또는 *마케터*)**은(는) 기본 제공 템플릿과 구성 요소를 사용하여 페이지를 추가하고 편집할 수 있습니다. DAM에서 구성 요소를 끌어다 놓고, 이미지, 비디오 및 텍스트 조각(콘텐츠 조각)을 포함한 모든 유형의 미디어를 추가할 수 있습니다.
 
 다음 리소스를 참조하십시오.
 
@@ -43,7 +43,7 @@ An ***AEM 작성자* (또는 *마케터*)**에서는 기본 제공 템플릿 및
 * [만들기 마법사를 사용하여 AEM Mobile 앱 만들기](/help/mobile/phonegap-create-new-app.md)
 * [기존 하이브리드 앱 가져오기](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-다음에 대해 알아보기 **컨텐츠 서비스**, 참조 [Content Services 개요](/help/mobile/develop-content-as-a-service.md) 시작합니다.
+**콘텐츠 서비스**&#x200B;에 대해 알아보려면 [콘텐츠 서비스 개요](/help/mobile/develop-content-as-a-service.md)를 참조하여 시작하십시오.
 
 ## 추가 리소스 {#additional-resources}
 

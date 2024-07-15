@@ -79,7 +79,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
    ![작성자를 위한 스타일 시스템](assets/style-system-author.png)
 
-1. 다음을 클릭합니다. **스타일** 을 클릭합니다. **목록** 구성 요소를 사용하여 스타일 메뉴를 열고 구성 요소의 모양을 변경합니다.
+1. **List** 구성 요소의 도구 모음에서 **스타일** 단추를 클릭하여 스타일 메뉴를 열고 구성 요소의 모양을 변경합니다.
 
    ![스타일 선택](assets/style-system-author2.png)
 
@@ -89,7 +89,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ### 템플릿 작성자 {#as-a-template-author}
 
-1. WKND의 영어 마스터 홈 페이지를 편집하는 동안 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`를 통해 페이지의 템플릿을 편집합니다. **페이지 정보 > 템플릿 편집**.
+1. `http://<host>:<port>/sites.html/content/wknd/language-masters/en`에서 WKND의 영어 마스터 홈 페이지를 편집하는 동안 **페이지 정보 > 템플릿 편집**&#x200B;을 통해 페이지의 템플릿을 편집하십시오.
 
    ![템플릿 편집](assets/style-system-edit-template.png)
 
@@ -110,7 +110,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 >[!CAUTION]
 >
->구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스(및 필요한 JavaScript)는 [클라이언트 라이브러리](/help/sites-developing/clientlibs.md) 일 때문에.
+>구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스(및 필요한 JavaScript)는 [클라이언트 라이브러리](/help/sites-developing/clientlibs.md)(으)로 배포해야 작동합니다.
 
 ## 설정 {#setup}
 
@@ -159,4 +159,4 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 스타일 이름을 정의하는 기능은 레이아웃 컨테이너 또는 콘텐츠 조각 구성 요소와 같은 매우 일반적인 구성 요소에 추가적인 의미를 제공하는 데 유용합니다.
 
-예를 들어 레이아웃 컨테이너에 다음과 같은 의미 체계를 부여할 수 있습니다. `<main>`, `<aside>`, `<nav>`등.
+예를 들어 레이아웃 컨테이너에 `<main>`, `<aside>`, `<nav>` 등의 의미 체계를 부여할 수 있습니다.

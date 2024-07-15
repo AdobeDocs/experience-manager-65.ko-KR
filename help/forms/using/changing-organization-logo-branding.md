@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # 브랜딩에 대한 조직 로고 변경 {#changing-the-organization-logo-for-branding}
 
-AEM Forms 작업 영역의 왼쪽 상단 모서리에 조직 로고가 표시됩니다. 로고를 업데이트하려면 [AEM Forms 작업 공간 사용자 지정의 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) 그런 다음 다음 다음 단계를 수행합니다.
+AEM Forms 작업 영역의 왼쪽 상단 모서리에 조직 로고가 표시됩니다. 로고를 업데이트하려면 [AEM Forms 작업 영역 사용자 지정의 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization)를 수행한 후 다음 단계를 수행합니다.
 
-1. 로고 만들기 및 파일 이름 지정 `NewWorkspace.png`. WebDAV 클라이언트를 사용하여 /apps/ws/images 폴더에 이미지 파일을 넣습니다.
+1. 로고를 만들고 파일 이름을 `NewWorkspace.png`(으)로 지정합니다. WebDAV 클라이언트를 사용하여 /apps/ws/images 폴더에 이미지 파일을 넣습니다.
 
    >[!NOTE]
    >
@@ -28,7 +28,7 @@ AEM Forms 작업 영역의 왼쪽 상단 모서리에 조직 로고가 표시됩
 
    >[!NOTE]
    >
-   >자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)를 참조하십시오.
 
    [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)
 

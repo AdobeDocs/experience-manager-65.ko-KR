@@ -16,17 +16,17 @@ ht-degree: 0%
 
 # 서신 관리 | 사용자 데이터 처리 {#correspondence-management-handling-user-data}
 
-AEM Forms 서신 관리를 사용하면 안전하고 개인화된 고객 서신을 만들고, 관리하고, 간소화할 수 있습니다. 비즈니스 사용자가 사전 승인된 콘텐츠 블록 및 미디어 요소를 사용하여 응답을 만들 수 있는 직관적인 사용자 인터페이스를 제공합니다. 서신 만들기에 대한 자세한 내용은 [서신 만들기](/help/forms/using/create-correspondence.md).
+AEM Forms 서신 관리를 사용하면 안전하고 개인화된 고객 서신을 만들고, 관리하고, 간소화할 수 있습니다. 비즈니스 사용자가 사전 승인된 콘텐츠 블록 및 미디어 요소를 사용하여 응답을 만들 수 있는 직관적인 사용자 인터페이스를 제공합니다. 서신 만들기에 대한 자세한 내용은 [서신 만들기](/help/forms/using/create-correspondence.md)를 참조하십시오.
 
 비즈니스 사용자 또는 에이전트가 서신을 초안으로 저장하거나 제출하면 편지 인스턴스가 AEM 저장소에 저장됩니다. 편지 인스턴스는 서신 데이터 및 메타데이터를 포함한다.
 
 >[!NOTE]
 >
->AEM 6.5 Forms에서는 서신 관리를 즉시 사용할 수 없습니다. 이전 AEM Forms 버전에서 업그레이드하는 경우 호환성 패키지를 설치하고 서신 관리 에셋을 마이그레이션하여 AEM 6.5 Forms에서 계속 사용하십시오. 자세한 내용은 [호환성 패키지](/help/forms/using/compatibility-package.md).
+>AEM 6.5 Forms에서는 서신 관리를 즉시 사용할 수 없습니다. 이전 AEM Forms 버전에서 업그레이드하는 경우 호환성 패키지를 설치하고 서신 관리 에셋을 마이그레이션하여 AEM 6.5 Forms에서 계속 사용하십시오. 자세한 내용은 [호환성 패키지](/help/forms/using/compatibility-package.md)를 참조하십시오.
 
 ## 사용자 데이터 및 데이터 저장소 {#data}
 
-서신 관리는 게시 인스턴스가 편지 인스턴스를 관리하도록 구성된 경우에만 초안 및 제출된 편지에 대한 데이터를 AEM 저장소에 저장합니다. 구성에 대한 자세한 내용은 [서신 관리 구성 속성](/help/forms/using/cm-configuration-properties.md).
+서신 관리는 게시 인스턴스가 편지 인스턴스를 관리하도록 구성된 경우에만 초안 및 제출된 편지에 대한 데이터를 AEM 저장소에 저장합니다. 구성에 대한 자세한 내용은 [서신 관리 구성 속성](/help/forms/using/cm-configuration-properties.md)을 참조하세요.
 
 AEM 배포에 대해 구성된 데이터 저장소 지속성에 따라 초안 및 제출된 서신 데이터가 다음 위치에 저장됩니다.
 
@@ -52,11 +52,11 @@ AEM 배포에 대해 구성된 데이터 저장소 지속성에 따라 초안 �
 
 위에서 지정한 AEM 저장소 위치:
 
-* `[yyyy]/[mm]/[dd]` 는 편지 인스턴스가 생성된 날짜를 기반으로 하는 노드 구조입니다
-* `[node-id]` 는 편지가 포함된 폴더에 할당된 ID입니다
-* `[letter-instance-name]` 편지를 저장하거나 제출할 때 지정한 이름입니다
+* `[yyyy]/[mm]/[dd]`은(는) 편지 인스턴스가 만들어진 날짜를 기반으로 하는 노드 구조입니다.
+* `[node-id]`은(는) 문자가 들어 있는 폴더에 할당된 ID입니다.
+* `[letter-instance-name]`은(는) 편지를 저장하거나 제출할 때 지정된 이름입니다.
 
-아래 [letter-instance-name] 노드에서는 다음 노드 구조가 만들어지고 각 문자 인스턴스의 데이터가 AEM 저장소에 저장됩니다.
+[letter-instance-name] 노드 아래에 다음 노드 구조가 만들어지고 각 편지 인스턴스의 데이터가 AEM 저장소에 저장됩니다.
 
 | 노드 | 설명 |
 |---|---|
@@ -71,9 +71,9 @@ AEM 배포에 대해 구성된 데이터 저장소 지속성에 따라 초안 �
 
 ### 사용자 데이터 액세스 {#access-user-data}
 
-서신 관리는 초안 및 제출된 편지 인스턴스를 찾고 액세스하는 데 사용할 수 있는 API를 제공합니다. API를 사용하면 편지 인스턴스 ID 또는 서신을 저장하거나 제출한 사용자를 사용하여 편지 인스턴스를 찾고 열 수 있습니다. 자세한 내용은 [편지 인스턴스에 액세스하기 위한 API](/help/forms/using/cm-apis-to-access-letter-instances.md).
+서신 관리는 초안 및 제출된 편지 인스턴스를 찾고 액세스하는 데 사용할 수 있는 API를 제공합니다. API를 사용하면 편지 인스턴스 ID 또는 서신을 저장하거나 제출한 사용자를 사용하여 편지 인스턴스를 찾고 열 수 있습니다. 자세한 내용은 편지 인스턴스에 액세스하기 위한 [API](/help/forms/using/cm-apis-to-access-letter-instances.md)를 참조하십시오.
 
-또는 CRXDE Lite을 사용하여 AEM 저장소의 편지 인스턴스로 이동할 수 있습니다. 다음을 참조하십시오 [사용자 데이터 및 데이터 저장소](/help/forms/using/correspondence-management-handling-user-data.md#data) 저장된 데이터 및 저장소 위치에 대한 정보입니다.
+또는 CRXDE Lite을 사용하여 AEM 저장소의 편지 인스턴스로 이동할 수 있습니다. 저장된 데이터 및 저장소 위치에 대한 정보는 [사용자 데이터 및 데이터 저장소](/help/forms/using/correspondence-management-handling-user-data.md#data)를 참조하십시오.
 
 ### 사용자 데이터 삭제 {#delete-user-data}
 

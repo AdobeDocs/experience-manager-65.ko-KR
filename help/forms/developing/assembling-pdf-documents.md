@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # PDF 문서 어셈블 {#assembling-pdf-documents}
 
-**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
+**이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 **어셈블러 서비스 정보**
 
@@ -29,4 +29,4 @@ LiveCycle ES 8.0 이상부터 어셈블러 서비스에서 PDF 패키지에 대�
 
 >[!NOTE]
 >
->어셈블러 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
+>어셈블러 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
