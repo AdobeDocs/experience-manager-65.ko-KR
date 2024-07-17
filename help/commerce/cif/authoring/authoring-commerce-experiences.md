@@ -5,9 +5,9 @@ exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a02724597338ee2451448c6c4188fc349dd47d01
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -72,9 +72,9 @@ CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입�
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    >범주와 제품을 모두 선택하면 제품을 사용합니다.
+>[!NOTE]
+>
+>범주와 제품을 모두 선택하면 제품을 가져옵니다.
 
 이렇게 하면 페이지가 렌더링될 때 실제 링크로 대체되는 자리 표시자 링크가 만들어집니다.
 
@@ -102,8 +102,6 @@ Omnisearch를 사용하면 전문가가 전체 텍스트 검색을 사용하여 
 
 결과는 유형별로 그룹화됩니다.
 
-Omnisearch의
-
 >[!NOTE]
 >
->전체 텍스트 검색은 연결된 콘텐츠 조각을 지원하지 않습니다. SKU 또는 UID를 사용하여 연결된 콘텐츠 조각을 찾습니다.
+>Omnisearch의 전체 텍스트 검색은 연결된 콘텐츠 조각을 지원하지 않습니다. SKU 또는 UID를 사용하여 관련 콘텐츠 조각을 찾습니다.
