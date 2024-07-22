@@ -9,7 +9,7 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2d6caa10e8f1cf3d0811280e31c2f40bceac20ee
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 13%
@@ -24,7 +24,7 @@ ht-degree: 13%
 >
 >성능 문제 해결 및 해결에 대한 자세한 내용은 [성능 트리](/help/sites-deploying/performance-tree.md)를 참조하십시오.
 >
->또한 [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)에 대한 기술 자료 문서를 검토할 수 있습니다.
+>또한 [성능 조정 팁](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)에 대한 기술 자료 문서를 검토할 수 있습니다.
 
 핵심 문제는 웹 사이트가 방문자 요청에 응답하는 데 걸리는 시간입니다. 이 값은 요청마다 다르지만 평균 대상 값을 정의할 수 있습니다. 이 값이 달성 가능하고 유지 가능한 것으로 입증되면 웹 사이트의 성능을 모니터링하고 잠재적인 문제의 발생을 나타내는 데 사용할 수 있습니다.
 
@@ -41,7 +41,7 @@ ht-degree: 13%
 >[!NOTE]
 >
 >* 성능 최적화를 구성한 후 [힘든 날](/help/sites-developing/tough-day.md)의 절차에 따라 부하가 큰 환경을 테스트하십시오.
->* [성능 조정 팁도 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+>* [성능 조정 팁도 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## 성능 최적화 방법론 {#performance-optimization-methodology}
 
