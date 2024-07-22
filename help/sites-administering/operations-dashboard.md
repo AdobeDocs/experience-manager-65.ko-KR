@@ -10,9 +10,9 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: e4c8901ab9484d91a1f5ced285efe60613984aeb
+source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
 workflow-type: tm+mt
-source-wordcount: '5686'
+source-wordcount: '5744'
 ht-degree: 2%
 
 ---
@@ -492,6 +492,8 @@ UI는 화면 왼쪽 위의 검색 상자에 필터 기준을 입력하여 테이
 1. **주별 유지 관리 기간** 메뉴에 있는 **데이터 저장소 가비지 수집** 작업입니다.
 1. **감사 로그 유지 관리** 작업은 **주별 유지 관리 창** 메뉴에 있습니다.
 1. **주별 유지 관리 기간** 메뉴에 있는 **버전 제거 유지 관리** 작업입니다.
+1. **프로젝트 제거** 유지 관리 작업은 **주별 유지 관리 창** 메뉴에 있습니다. **추가** 옵션을 사용합니다.
+1. **주별 유지 관리 창** 메뉴에 있는 **임시 작업 제거** 유지 관리 작업입니다. **추가** 옵션을 사용합니다.
 
 일별 유지 관리 창의 기본 시간은 오전 2시에서 오전 5시입니다. 주별 유지 관리 창에서 실행되도록 구성된 작업은 토요일 오전 1시에서 2시 사이에 실행됩니다.
 
@@ -562,6 +564,26 @@ Lucene 바이너리 정리 작업을 사용하면 Lucene 바이너리를 제거�
 >[!CAUTION]
 >
 >저장소 크기를 최적화하려면 버전 제거 작업을 자주 실행해야 합니다. 제한된 트래픽 양이 있는 업무 시간 외에 작업을 예약해야 합니다.
+
+### 프로젝트 삭제 {#project-purge}
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`. See the Maintenance Window table below for additional configuration details.
+
+Enable the maintenance task by adding another node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. 
+-->
+
+**Adobe 프로젝트 제거 구성**&#x200B;에서 OSGI 속성을 구성합니다(com.adobe.cq.projects.purge.Scheduler).
+
+### 임시 작업 삭제 {#purge-of-ad-hoc-tasks}
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`.
+
+See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above. Name it `granite_TaskPurgeTask`, with attribute `sling:resourceType` set to `granite/operations/components/maintenance/task` and attribute `granite.maintenance.name` set to `TaskPurge`. 
+-->
+
+**임시 작업 제거**(`com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask`)에서 OSGI 속성을 구성합니다.
 
 ## 사용자 정의 유지 관리 작업 {#custom-maintenance-tasks}
 
