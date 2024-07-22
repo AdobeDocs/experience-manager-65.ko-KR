@@ -9,9 +9,9 @@ exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8d7c5b4962ea0dbd80cf78faa31238b2252f4a5c
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,10 @@ Apache Sling Referrer Filter 외에도 Adobe은 이러한 유형의 공격으로
 
 >[!NOTE]
 >
->CSRF 보호 프레임워크를 사용하려면 필요한 [Dispatcher 구성을 변경](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html)해야 합니다.
+>또한 CSRF 보호 프레임워크를 사용하기 위해 필요한 Dispatcher 구성을 변경해야 합니다.
+>
+>* [CSRF 공격을 방지하도록 Adobe Experience Manager Dispatcher 구성](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [Dispatcher 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >
