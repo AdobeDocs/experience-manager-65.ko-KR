@@ -9,10 +9,10 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 5c1eda486e31be01f614a3a7ada71563fd996656
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 92%
+source-wordcount: '837'
+ht-degree: 86%
 
 ---
 
@@ -66,9 +66,9 @@ AEM에서는 [ContextHub](/help/sites-developing/contexthub.md)와 관련하여 
 
 >[!NOTE]
 >
->Adobe CQ 5.6 이전의 Client Context(ContextHub의 이전 버전)는 데이터를 서버에 전송했지만 저장하지는 않았습니다.
+>Adobe AEM(CQ) 5.6 이전에는 ClientContext(이전 버전의 ContextHub)에서 서버로 데이터를 보냈지만 저장하지 않았습니다.
 >
->Adobe CQ 5.5 및 이전 버전은 현재 수명이 종료되었으며 이 설명서에서 다루지 않습니다.
+>Adobe AEM 6.4 및 이전 버전은 이제 단종되었으며 이 설명서에서 다루지 않습니다. [이전 버전의 Adobe Experience Manager, CQ 및 CRX 설명서를 참조하십시오](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### 옵트인/옵트아웃 구현 {#implementing-opt-in-opt-out}
 
@@ -85,19 +85,19 @@ AEM에서는 [ContextHub](/help/sites-developing/contexthub.md)와 관련하여 
 
 * 사이트 방문자가 사이트의 약관에 동의하면 ContextHub 옵트아웃 쿠키가 제거됩니다.
 
-  ```
+  ```java
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   ```
 
 * 사이트 방문자가 사이트의 약관에 동의하지 않으면 ContextHub 옵트아웃 쿠키가 설정됩니다.
 
-  ```
+  ```java
   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
   ```
 
 * ContextHub가 옵트아웃 모드에서 실행되고 있는지 확인하려면 브라우저의 콘솔에서 다음 호출을 수행해야 합니다.
 
-  ```
+  ```java
   var isOptedOut = ContextHub.isOptedOut(true) === true;
   // if isOptedOut is true, ContextHub is running in opt-out mode
   ```
@@ -183,7 +183,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 예를 들어 localStorage에 저장된 데이터를 보려는 경우
 
-```
+```java
 var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.LOCAL });
 console.log(storage.getTree());
 ```
@@ -194,7 +194,7 @@ ContextHub 지속성 지우기:
 
 * 현재 로드된 저장소의 지속성을 지우려면
 
-  ```
+  ```java
   // to be able to fully access persistence layer, Opt-Out must be turned off
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   
@@ -207,7 +207,7 @@ ContextHub 지속성 지우기:
 
 * 특정 지속성 계층을 지우려면(예: sessionStorage):
 
-  ```
+  ```java
   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
   storage.setItem('/store', null);
   storage.setItem('/_', null);
