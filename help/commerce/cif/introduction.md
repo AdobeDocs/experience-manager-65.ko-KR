@@ -1,6 +1,6 @@
 ---
 title: 소개 및 개요
-description: 통합에 대한 유용한 문서와 AEM Storefront를 사용하는 방법을 통해 AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해할 수 있습니다.
+description: 통합에 대한 유용한 문서와 AEM Storefront를 사용하는 방법을 통해 AEM Content 및 Commerce 사용을 시작하고 관리하는 방법을 이해할 수 있습니다.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 solution: Experience Manager,Commerce
