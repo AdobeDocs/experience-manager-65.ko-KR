@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
+source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
 workflow-type: tm+mt
-source-wordcount: '7456'
+source-wordcount: '7445'
 ht-degree: 22%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 22%
    + [사용자 관리 및 보안](/help/sites-administering/security.md)
    + [사용자, 그룹 및 액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md)
    + [보안 검사 목록](/help/sites-administering/security-checklist.md)
-   + [OWASP 상위 10](/help/sites-administering/owasp-top10.md)
+   + [OWASP Top 10](/help/sites-administering/owasp-top10.md)
    + [프로덕션 준비 모드에서 AEM 실행](/help/sites-administering/production-ready.md)
    + [ID 관리](/help/sites-administering/identity-management.md)
    + [AEM Managed Services에 대한 Adobe IMS 인증 및 Admin Console 지원](/help/sites-administering/ims-config-and-admin-console.md)
@@ -809,7 +809,7 @@ ht-degree: 22%
       + [서신 만들기](/help/forms/using/create-correspondence.md)
       + [Expression Builder의 원격 함수](/help/forms/using/expression-builder.md)
       + [에이전트 서명 이미지 관리](/help/forms/using/manage-agent-signature-images.md)
-      + [편지 및 대화형 커뮤니케이션의 Post 처리](/help/forms/using/submit-letter-topostprocess.md)
+      + [편지 및 대화형 커뮤니케이션의 사후 처리](/help/forms/using/submit-letter-topostprocess.md)
       + [자산 목록 보기에 사용자 지정 작업 추가](/help/forms/using/add-custom-action-asset-listing-view.md)
       + [서신 UI 만들기에 사용자 지정 작업/버튼 추가](/help/forms/using/add-action-button-in-create-correspondence-ui.md)
       + [서신 관리 에셋에 사용자 지정 속성 추가](/help/forms/using/add-custom-properties-cm-assets.md)
@@ -1260,9 +1260,6 @@ ht-degree: 22%
          + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
          + [개발(일반)](/help/commerce/cif-classic/developing/generic.md)
          + [SAP Commerce Cloud을 사용하여 개발](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
-+ Edge Delivery Services {#edge-delivery-services}
-   + [Edge Delivery 시작](/help/edge/overview.md)
-   + [Edge Delivery 사용](/help/edge/using.md)
 + Headless {#headless}
    + [AEM Headless 여정](/help/journey-headless/overview.md)
    + AEM Headless 개발자 여정 {#developer}
@@ -1603,7 +1600,7 @@ ht-degree: 22%
          + [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md)
          + [CRX2Oak 마이그레이션 도구 사용](/help/sites-deploying/using-crx2oak.md)
          + [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-         + [Post 업그레이드 확인 및 문제 해결](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+         + [업그레이드 후 확인 및 문제 해결](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [사용자 정의 검색 Forms 업그레이드](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [지속 가능한 업그레이드](/help/sites-deploying/sustainable-upgrades.md)
          + [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)
