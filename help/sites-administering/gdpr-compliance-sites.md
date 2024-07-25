@@ -9,7 +9,7 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 5c1eda486e31be01f614a3a7ada71563fd996656
+source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 86%
@@ -66,7 +66,7 @@ AEM에서는 [ContextHub](/help/sites-developing/contexthub.md)와 관련하여 
 
 >[!NOTE]
 >
->Adobe AEM(CQ) 5.6 이전에는 ClientContext(이전 버전의 ContextHub)에서 서버로 데이터를 보냈지만 저장하지 않았습니다.
+>CQ(Adobe AEM) 5.6 이전에는 ClientContext(이전 버전의 ContextHub)에서 서버로 데이터를 보냈지만 저장하지 않았습니다.
 >
 >Adobe AEM 6.4 및 이전 버전은 이제 단종되었으며 이 설명서에서 다루지 않습니다. [이전 버전의 Adobe Experience Manager, CQ 및 CRX 설명서를 참조하십시오](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
