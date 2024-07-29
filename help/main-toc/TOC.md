@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
+source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
 workflow-type: tm+mt
-source-wordcount: '7445'
+source-wordcount: '7443'
 ht-degree: 22%
 
 ---
@@ -230,6 +230,7 @@ ht-degree: 22%
          + [Adobe Analytics에 대한 비디오 추적 구성](/help/sites-administering/adobeanalytics-video.md)
          + [콘텐츠 FAQ의 HTTP2 게재](/help/sites-administering/scene7-http2faq.md)
          + [Adobe Campaign 통합 문제 해결](/help/sites-administering/troubleshooting-campaignintegration.md)
+         + [SharePoint 커넥터](/help/sites-administering/sharepoint-connector.md)
          + [SharePoint 커넥터 라이선스, 저작권 공지 및 면책조항](/help/sites-administering/sharepoint-connector-licenses.md)
          + [DHTML 뷰어 서비스 종료 FAQ](/help/sites-administering/dhtml-viewer-endoflifefaqs.md)
          + [Adobe Campaign Classic과 통합](/help/sites-administering/campaignonpremise.md)
@@ -268,7 +269,6 @@ ht-degree: 22%
          + [태그 관리](/help/sites-administering/tags.md)
          + [페이지 내보내기](/help/sites-administering/page-exporter.md)
          + [클래식 UI 태깅 콘솔](/help/sites-administering/classic-console.md)
-         + [Screens용 컨텐츠 관리](/help/sites-administering/content-management-screens.md)
          + [WebDAV 액세스](/help/sites-administering/webdav-access.md)
    + 클래식 UI 작성 {#classic-ui}
       + 클래식 UI 작성 소개 {#introduction}
