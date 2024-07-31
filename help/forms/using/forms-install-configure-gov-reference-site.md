@@ -7,7 +7,7 @@ exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '4534'
 ht-degree: 1%
@@ -35,6 +35,7 @@ ht-degree: 1%
 | Adobe Sign | v5 API | **지원됨** |
 | Microsoft® Dynamics 365 | 1710 (9.1.0.3020) | **지원됨** |
 | Adobe Analytics | v1.4 Rest API | **지원됨** |
+
 **패키지 설치 고려 사항:**
 
 * 다른 데모 패키지 또는 이전 데모 패키지 버전을 사용하지 않고 깔끔한 서버에 패키지를 설치합니다.

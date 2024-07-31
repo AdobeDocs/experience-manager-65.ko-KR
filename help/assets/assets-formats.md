@@ -8,7 +8,7 @@ feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 25%
@@ -287,6 +287,7 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/image-sets.md), [혼합 미디어](/help/assets/mixed-media-sets.md) 및 [회전](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
+
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ 병합된 이미지가 PSD 파일에서 추출됩니다. Adobe Photoshop에서 생성되고 PSD 파일에 포함된 이미지입니다. 설정에 따라 병합된 이미지가 실제 이미지가 될 수도 있고 그렇지 않을 수도 있습니다.

@@ -11,7 +11,7 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7e0f1225d5bf4de095c4a8cc042517997898a44c
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11203'
 ht-degree: 2%
@@ -840,6 +840,7 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
    | 각 에셋에 대해 별도의 폴더 만들기 | 다운로드하도록 선택한 각 캡션 파일 또는 오디오 트랙 파일에 대한 폴더를 만듭니다. |
    | 이메일 | 기본 이메일 프로그램을 사용하여 .zip 파일을 지정된 이메일 주소로 전송합니다. |
    | 자산 | 다운로드하는 파일의 수와 선택한 모든 파일의 전체 크기를 지정합니다. 이 옵션을 선택 해제하면 **[!UICONTROL 다운로드]** 버튼이 흐려지고 꺼져서 파일을 다운로드할 수 없습니다. |
+
 1. **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
 1. Publish 비디오입니다. [Publish 자산](publishing-dynamicmedia-assets.md)을 참조하세요.
 
@@ -1265,7 +1266,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
->[!TAB 서블릿에 대한 응답 클래스]
+>서블릿에 대한 [!TAB 응답 클래스]
 
 +++서블릿에 대한 **응답 클래스**
 
