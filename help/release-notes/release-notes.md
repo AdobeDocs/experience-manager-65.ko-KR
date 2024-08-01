@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
+source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
 workflow-type: tm+mt
-source-wordcount: '4332'
+source-wordcount: '4390'
 ht-degree: 3%
 
 ---
@@ -550,6 +550,8 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
    1. CRXDE의 `/libs/fd/aemforms/install/` 디렉터리로 이동합니다.
    1. 이름이 `com.adobe.granite.ui.commons-5.10.26.jar`인 번들을 삭제합니다.
    1. AEM 서버를 다시 시작합니다.
+
+* 사용자가 Forms 추가 기능이 설치된 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트할 때 사용자 자격 증명 기반 인증이 있는 Adobe Analytics용 레거시 클라우드 서비스를 사용하는 구성이 제대로 작동하지 않아 분석 규칙 실행이 실패했습니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (FORMS-15428)
 
 * 사용자가 JEE 서버에서 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트하고 출력 서비스를 사용하여 PDF을 생성하는 경우 PDF이 접근성 문제로 렌더링됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922112)
 * 사용자가 JEE의 출력 서비스를 사용하여 태그가 지정된 PDF을 생성하면 &quot;부적절한 구조 경고&quot;가 표시됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922038)
