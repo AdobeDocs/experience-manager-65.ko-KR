@@ -1266,7 +1266,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
->서블릿에 대한 [!TAB 응답 클래스]
+>[!TAB 서블릿에 대한 응답 클래스]
 
 +++서블릿에 대한 **응답 클래스**
 
