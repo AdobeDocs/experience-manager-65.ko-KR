@@ -5,9 +5,9 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
 workflow-type: tm+mt
-source-wordcount: '3506'
+source-wordcount: '3519'
 ht-degree: 41%
 
 ---
@@ -188,9 +188,13 @@ AEM은 번역 작업이 콘텐츠의 초기 작업을 위해 생성되는지 또
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. 추가할 사전을 선택한 다음 추가 단추를 클릭합니다.
+1. 추가할 **루트 디렉터리**&#x200B;와 사전(필요한 경우)을 선택한 다음 **추가**&#x200B;를 선택합니다.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   ![i18N 사전](assets/tc-manage-i18n-dictionary.png)
+
+1. 필요한 경우 업데이트 특성을 선택합니다.
+
+   ![번역](assets/tc-manage-translate.png)
 
 사전이 이제 번역 작업에 들어갔습니다.
 
