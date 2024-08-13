@@ -6,10 +6,10 @@ feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: b7082aaee83fba88b47447b8553563264eedb713
+source-git-commit: eb4c6ab188cc79eab66647433e60ba97eba6f257
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 41%
+source-wordcount: '1483'
+ht-degree: 40%
 
 ---
 
@@ -29,25 +29,20 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 다음 번역 공급업체는 번역 프로젝트에 대한 새로운 API의 구현을 제공합니다. 통합에 대해 자세히 알아보기 위한 링크:
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
-* [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
-* [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
-* [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
-* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [Memsource](https://exchange.adobe.com/apps/ec/103166/memsource-connector-for-adobe-experience-manager)
+* [XTM Cloud](https://exchange.adobe.com/apps/ec/105037/xtm-connect-for-adobe-experience-manager)
+* [Lingotek](https://exchange.adobe.com/apps/ec/90088/lingotek-collaborative-translation-platform)
 * [RWS](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
-* [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft(Microsoft Translator가 AEM에 사전 설치되어 있음)
 
 >[!NOTE]
 >
 >사람 번역 공급업체 및 기계 번역 공급업체의 최신 목록을 찾으려면 다음 페이지를 살펴보십시오.
 >
->
->* AEM [사람 번역](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM 기계 번역](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* AEM [사람 번역](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=aem+human+translation&amp;sort=RELEVANCE)
+>* [AEM 기계 번역](https://exchange.adobe.com/apps/browse/ec?q=AEM+machine+translation&amp;product=All&amp;partnerLevel=All&amp;sort=RELEVANCE)
 >
 
 커넥터 패키지를 설치하면 커넥터에 대한 클라우드 구성을 만들 수 있습니다. 일반적으로 번역 서비스로 인증하기 위해 자격 증명을 제공해야 합니다. Microsoft Translator 커넥터 클라우드 구성에 대한 자세한 내용은 [Microsoft Translator와 통합](/help/sites-administering/tc-msconf.md)을 참조합시오.
