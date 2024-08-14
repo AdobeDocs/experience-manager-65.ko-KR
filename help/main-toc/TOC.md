@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
+source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
 workflow-type: tm+mt
-source-wordcount: '7443'
+source-wordcount: '7448'
 ht-degree: 22%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 22%
          + [구성 요소 콘솔](/help/sites-authoring/default-components-console.md)
          + [반응형 레이아웃](/help/sites-authoring/responsive-layout.md)
          + [컨텐츠 인사이트](/help/sites-authoring/content-insights.md)
-         + [액세스 가능한 콘텐츠 제작(WCAG 2.1 적합성)](/help/sites-authoring/creating-accessible-content.md)
+         + [액세스 가능한 콘텐츠 제작 (WCAG 2.1 적합성)](/help/sites-authoring/creating-accessible-content.md)
          + [디자인 모드에서 구성 요소 구성](/help/sites-authoring/default-components-designmode.md)
          + [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)
          + [스캐폴딩](/help/sites-authoring/scaffolding.md)
@@ -512,7 +512,7 @@ ht-degree: 22%
       + [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md)
       + [대화형 통신 소개](/help/forms/using/interactive-communications-overview.md)
       + [양식 관리 소개](/help/forms/using/introduction-managing-forms.md)
-      + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko-KR)
+      + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko)
       + 자습서: 첫 번째 적응형 양식 {#create-first-adaptive-form} 만들기
          + [자습서: 첫 번째 적응형 양식 만들기](/help/forms/using/create-your-first-adaptive-form.md)
          + [자습서: 적응형 양식 만들기](/help/forms/using/create-adaptive-form.md)
@@ -1231,6 +1231,7 @@ ht-degree: 22%
          + [SEO에 대한 URL 구성](/help/commerce/cif/configuring/advanced-url-configuration.md)
          + [캐싱 옵션](/help/commerce/cif/configuring/caching.md)
          + [사용자 정의 HTTP 헤더](/help/commerce/cif/configuring/custom-http-headers.md)
+         + [장바구니 및 Dispatcher 설정](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
       + 개발 {#developing}
          + [AEM을 사용하여 개발](/help/commerce/cif/develop.md)
          + [CIF 구성 요소 스타일링](/help/commerce/cif/customizing/style-cif-component.md)
@@ -1346,7 +1347,7 @@ ht-degree: 22%
          + [벌크 편집기 개발](/help/sites-developing/dev-bulk-editor.md)
          + [보고서 개발](/help/sites-developing/dev-reports.md)
       + 구성 요소{#components}
-         + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+         + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
          + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/style-system.html)
          + [구성 요소 개요](/help/sites-developing/components.md)
          + [AEM 구성 요소 - 기본 사항](/help/sites-developing/components-basics.md)
@@ -1480,7 +1481,7 @@ ht-degree: 22%
          + [콘텐츠 조각 맞춤화 및 확장](/help/sites-developing/customizing-content-fragments.md)
          + [렌더링용 구성 요소를 구성하는 콘텐츠 조각](/help/sites-developing/content-fragments-config-components-rendering.md)
          + [경험 조각](/help/sites-developing/experience-fragments.md)
-         + 워크플로우 확장{#extending-workflows}
+         + 워크플로 확장{#extending-workflows}
             + [워크플로 개발 및 확장](/help/sites-developing/workflows.md)
             + [워크플로 모델 만들기](/help/sites-developing/workflows-models.md)
             + [워크플로 기능 확장](/help/sites-developing/workflows-customizing-extending.md)
