@@ -10,7 +10,7 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2959'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[OWASP(Open Web Application Security Project)](https://owasp.org/www-project-top-ten/)에서 게시한 가장 위험한 보안 위협에 대한 추가 정보도 제공합니다.
+>[Open Web Application Security Project(OWASP)](https://owasp.org/www-project-top-ten/)에서 게시한 가장 위험한 보안 위협에 대한 추가 정보도 제공합니다.
 
 >[!NOTE]
 >
@@ -339,7 +339,7 @@ AEM은 `FormChooserServlet`에 대한 기본 제공 인덱스를 제공하지 �
 
 기본 에셋 다운로드 서블릿을 사용하면 인증된 사용자가 임의로 큰 동시 다운로드 요청을 발행하여 에셋의 ZIP 파일을 만들 수 있습니다. 큰 ZIP 아카이브를 만들면 서버와 네트워크가 과부하가 될 수 있습니다. 이 동작으로 인해 발생할 수 있는 서비스 거부(DoS) 위험을 완화하기 위해 [!DNL Experience Manager] 게시 인스턴스에서 `AssetDownloadServlet` OSGi 구성 요소를 기본적으로 사용하지 않도록 설정합니다. 기본적으로 [!DNL Experience Manager] 작성자 인스턴스에서 사용할 수 있습니다.
 
-다운로드 기능이 필요하지 않은 경우 작성자 및 게시 배포에서 서블릿을 비활성화합니다. 자산 다운로드 기능을 사용하도록 설정해야 하는 경우 자세한 내용은 [이 문서](/help/assets/download-assets-from-aem.md)를 참조하세요. 또한 배포에서 지원할 수 있는 최대 다운로드 제한을 정의할 수 있습니다.
+다운로드 기능이 필요하지 않은 경우 작성자 및 게시 배포에서 서블릿을 비활성화합니다. 에셋 다운로드 기능을 사용하도록 설정해야 하는 경우 자세한 내용은 [Adobe 경험 관리에서 에셋 다운로드](/help/assets/download-assets-from-aem.md)를 참조하십시오. 또한 배포에서 지원할 수 있는 최대 다운로드 제한을 정의할 수 있습니다.
 
 ### WebDAV 비활성화 {#disable-webdav}
 
@@ -395,7 +395,7 @@ AEM에서 승인 가능한 ID를 생성하는 기본 방법이므로 이를 활�
 
 모든 저장소 데이터와 마찬가지로 이러한 속성은 Oak 권한 부여 스택에 의해 매개됩니다. 이들에 대한 접근은 최소특권의 원칙에 따라 제한되어야 한다.
 
-이를 지원하기 위해 Adobe은 고객이 빌드할 수 있는 기반으로 권한 강화 패키지를 제공합니다. 저장소 루트에 &quot;거부&quot; 액세스 제어 항목을 설치하여 일반적으로 사용되는 시스템 속성에 대한 익명 액세스를 제한하여 작동합니다. 패키지는 [여기](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip)에서 다운로드할 수 있으며 지원되는 모든 AEM 버전에 설치할 수 있습니다.
+이를 지원하기 위해 Adobe은 고객이 빌드할 수 있는 기반으로 권한 강화 패키지를 제공합니다. 저장소 루트에 &quot;거부&quot; 액세스 제어 항목을 설치하여 일반적으로 사용되는 시스템 속성에 대한 익명 액세스를 제한하여 작동합니다. 패키지는 [다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip)할 수 있으며 지원되는 모든 AEM 버전에 설치할 수 있습니다.
 
 변경 사항을 설명하기 위해 패키지를 설치하기 전에 익명으로 볼 수 있는 노드 속성을 비교할 수 있습니다.
 

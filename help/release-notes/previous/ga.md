@@ -5,10 +5,10 @@ exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '4484'
-ht-degree: 23%
+source-wordcount: '4493'
+ht-degree: 22%
 
 ---
 
@@ -255,7 +255,7 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 
 #### AEM 및 Commerce {#aem-commerce}
 
-Commerce Integation Framework 개선 사항은 AEM 6.4 이후 더욱 빠른 릴리스 주기로 제공됩니다. [여기에서 자세한 내용을 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
+AEM 6.4 이후 Commerce integration framework 개선 사항이 더 빠른 릴리스 주기에 있습니다. [Commerce integration framework을 사용한 AEM 및 Adobe Commerce 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html)에서 자세히 알아보세요.
 
 #### Communities 추가 기능 {#communities-add-on}
 
@@ -324,7 +324,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마
 
 #### [!DNL Adobe Creative Cloud] 및 크리에이티브 워크플로우와 통합 {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
-[!DNL Adobe Experience Manager]는 광고 및 마케팅 또는 비즈니스 팀이 밀접하게 협력하는 워크플로우에서 [!DNL Adobe Creative Cloud]와 통합하고 자산을 공유하는 다양한 방법을 제공합니다. [!DNL Experience Manager] 6.5는 통합 과정에서 지속적으로 개선되고 더 많은 기회를 노출하며 기존 방법을 간소화합니다.
+[!DNL Adobe Experience Manager]는 광고 및 마케팅 또는 비즈니스 팀이 밀접하게 협력하는 워크플로에서 [!DNL Adobe Creative Cloud]와 통합하고 자산을 공유하는 다양한 방법을 제공합니다. [!DNL Experience Manager] 6.5는 통합 과정에서 지속적으로 개선되고 더 많은 기회를 노출하며 기존 방법을 간소화합니다.
 
 콘텐츠 속도 사용 사례를 최상으로 지원하는 데 사용할 수 있는 [!DNL Experience Manager] 6.5의 특정 기능 및 통합에 대해 알아보려면 계속 읽어 보십시오.
 

@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '2937'
 ht-degree: 5%
 
 ---
@@ -429,7 +429,7 @@ TarMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처�
 
 ### TarMK 설정 지침 {#tarmk-settings-guideline}
 
-성능을 향상시키려면 아래 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지를 참조하세요](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+성능을 향상시키려면 아래 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [성능 최적화](/help/sites-deploying/configuring-performance.md)를 참조하십시오.
 
 <table>
  <tbody>
@@ -539,7 +539,7 @@ MongoMK를 사용할 때 양호한 성능을 설정하려면 다음 아키텍처
 
 ### MongoMK 설정 지침 {#mongomk-settings-guidelines}
 
-성능을 향상시키려면 아래 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지를 참조하세요](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+성능을 향상시키려면 아래 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [성능 최적화](/help/sites-deploying/configuring-performance.md)를 참조하십시오.
 
 <table>
  <tbody>

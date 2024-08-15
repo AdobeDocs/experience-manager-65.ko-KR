@@ -10,10 +10,10 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '6650'
-ht-degree: 0%
+source-wordcount: '6662'
+ht-degree: 1%
 
 ---
 
@@ -78,7 +78,7 @@ CUG의 주요 기능은 선택된 주도자를 제외한 모든 사용자에 대
 
 CUG에 대한 전용 액세스 제어 관리 외에도 새로운 인증 모델을 사용하면 정책에 대한 권한 평가를 조건부로 활성화할 수 있습니다. 이렇게 하면 스테이징 환경에서 CUG 정책을 설정할 수 있으며, 프로덕션 환경에 복제되는 경우에만 유효 권한을 평가할 수 있습니다.
 
-CUG 정책 및 기본 또는 추가 인증 모델과의 상호 작용에 대한 권한 평가는 Apache Jackrabbit Oak의 여러 인증 메커니즘에 대해 설계된 패턴을 따릅니다. 즉, 모든 모델이 액세스 권한을 부여하는 경우에만 주어진 권한 세트가 부여됩니다. 자세한 내용은 [이 페이지](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)를 참조하세요.
+CUG 정책 및 기본 또는 추가 인증 모델과의 상호 작용에 대한 권한 평가는 Apache Jackrabbit Oak의 여러 인증 메커니즘에 대해 설계된 패턴을 따릅니다. 즉, 모든 모델이 액세스 권한을 부여하는 경우에만 주어진 권한 세트가 부여됩니다. 자세한 내용은 [Jackrabbit Oak 설명서](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)를 참조하세요.
 
 CUG 정책을 처리하고 평가하기 위해 설계된 권한 모델과 연관된 권한 평가에는 다음과 같은 특성이 적용됩니다.
 
@@ -129,7 +129,7 @@ CUG 기능의 인증 관련 부분을 사용하면 인증이 필요한 트리를
 
 이 유형의 인증 요구 사항은 특정 실행 모드 및 컨텐츠 리포지토리 내의 작은 트리 하위 집합으로 제한될 것으로 예상되므로 요구 사항 mixin 유형 및 로그인 경로 등록 정보의 추적은 조건부입니다. 지원되는 경로를 정의하는 해당 구성에 바인딩됩니다(아래 구성 옵션 참조). 따라서 이러한 지원되는 경로 범위 내의 변경 사항만 OSGi 등록 업데이트를 트리거하고, 다른 곳에서는 mixin 유형과 속성이 모두 무시됩니다.
 
-이제 기본 AEM 설정은 작성자 실행 모드에서 mixin을 설정할 수 있도록 하여 이 구성을 활용하지만 게시 인스턴스에 복제할 때만 영향을 줍니다. Sling이 인증 요구 사항을 적용하는 방법에 대한 자세한 내용은 [이 페이지](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html)를 참조하십시오.
+이제 기본 AEM 설정은 작성자 실행 모드에서 mixin을 설정할 수 있도록 하여 이 구성을 활용하지만 게시 인스턴스에 복제할 때만 영향을 줍니다. Sling이 인증 요구 사항을 적용하는 방법에 대한 자세한 내용은 [Sling 인증 - 프레임워크](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html) 설명서를 참조하십시오.
 
 구성된 지원 경로 내에 `granite:AuthenticationRequired` mixin 유형을 추가하면 담당 처리기의 OSGi 등록이 `sling.auth.requirements` 속성을 사용하는 새로운 추가 항목을 포함하여 업데이트됩니다. 지정된 인증 요구 사항이 선택적 `granite:loginPath` 속성을 지정하는 경우 값이 인증 요구 사항에서 제외할 &#39;-&#39; 접두사가 있는 인증자에 등록되기도 합니다.
 
@@ -187,7 +187,7 @@ Granite의 새로운 인증 요구 사항 지원에 의해 구현된 `LoginPathP
 
 ### 저장소의 CUG 정책 표시 {#cug-policy-representation-in-the-repository}
 
-Oak 설명서는 새로운 CUG 정책이 저장소 콘텐츠에 반영되는 방식을 다룹니다. 자세한 내용은 [이 페이지](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository)를 참조하세요.
+Oak 설명서는 새로운 CUG 정책이 저장소 콘텐츠에 반영되는 방식을 다룹니다. 자세한 내용은 CUG를 사용한 액세스 관리에 대한 [Jackrabbit Oak 설명서](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository)를 참조하세요.
 
 ### 저장소의 인증 요구 사항 {#authentication-requirement-in-the-repository}
 

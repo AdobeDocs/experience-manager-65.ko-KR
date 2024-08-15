@@ -1,5 +1,5 @@
 ---
-title: Post 업그레이드 확인 및 문제 해결
+title: 업그레이드 후 확인 및 문제 해결
 description: 업그레이드 후 발생할 수 있는 문제를 해결하는 방법에 대해 알아봅니다.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
 
-# Post 업그레이드 확인 및 문제 해결{#post-upgrade-checks-and-troubleshooting}
+# 업그레이드 후 확인 및 문제 해결{#post-upgrade-checks-and-troubleshooting}
 
-## Post 업그레이드 확인 {#post-upgrade-checks}
+## 업그레이드 후 확인 {#post-upgrade-checks}
 
 [바로 업그레이드](/help/sites-deploying/in-place-upgrade.md)를 수행한 후 다음 활동을 실행하여 업그레이드를 완료해야 합니다. AEM이 6.5 jar로 시작되었고 업그레이드된 코드 베이스가 배포되었다고 가정됩니다.
 
@@ -103,7 +103,7 @@ AEM의 몇 가지 기능을 사용하려면 업그레이드 이후 추가 단계
 
 #### 데이터 저장소 가비지 수집 활성화 {#enable-data-store-garbage-collection}
 
-파일 데이터 저장소를 사용하는 경우 데이터 저장소 가비지 수집 작업이 활성화되어 있고 주간 유지 관리 목록에 추가되었는지 확인하십시오. 지침은 [여기](/help/sites-administering/data-store-garbage-collection.md)에 요약되어 있습니다.
+파일 데이터 저장소를 사용하는 경우 데이터 저장소 가비지 수집 작업이 활성화되어 있고 주간 유지 관리 목록에 추가되었는지 확인하십시오. 지침은 [수정 정리](/help/sites-administering/data-store-garbage-collection.md)에서 요약되어 있습니다.
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ AEM의 몇 가지 기능을 사용하려면 업그레이드 이후 추가 단계
 
 #### 온라인 개정 정리 사용 {#enable-online-revision-cleanup}
 
-MongoMK 또는 새 TarMK 세그먼트 형식을 사용하는 경우, 개정 정리 작업이 사용으로 설정되어 있고 일별 유지 관리 목록에 추가되어 있는지 확인합니다. [여기](/help/sites-deploying/revision-cleanup.md)에 요약된 지침입니다.
+MongoMK 또는 새 TarMK 세그먼트 형식을 사용하는 경우, 개정 정리 작업이 사용으로 설정되어 있고 일별 유지 관리 목록에 추가되어 있는지 확인합니다. 지침은 [수정 정리](/help/sites-deploying/revision-cleanup.md)에서 요약되어 있습니다.
 
 ### 테스트 계획 실행 {#execute-test-plan}
 

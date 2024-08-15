@@ -10,9 +10,9 @@ exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2114'
 ht-degree: 1%
 
 ---
@@ -219,7 +219,7 @@ CRXDE Lite으로 대화 상자를 만들려면:
 
 이제 속성을 수정하거나 노드를 만들어 대화 상자를 필요에 맞게 조정할 수 있습니다.
 
-대화 상자 편집기를 사용하여 대화 상자를 편집할 수도 있습니다. CRXDE Lite에서 대화 상자 노드를 두 번 클릭하면 편집기가 표시됩니다. 대화 상자 편집기에 대한 자세한 내용은 [여기](/help/sites-developing/dialog-editor.md)를 참조하세요.
+대화 상자 편집기를 사용하여 대화 상자를 편집할 수도 있습니다. CRXDE Lite에서 대화 상자 노드를 두 번 클릭하면 편집기가 표시됩니다. 자세한 내용은 [대화 상자 편집기](/help/sites-developing/dialog-editor.md)를 참조하세요.
 
 ## 노드 만들기 {#creating-a-node}
 

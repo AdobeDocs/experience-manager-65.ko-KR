@@ -11,7 +11,7 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 0%
@@ -178,7 +178,7 @@ ui.apps 아키텍처에 대한 ![ui.frontend](../assets/style-cif-component/ui-f
 
    이러한 클라이언트 라이브러리는 `ui.frontend` 모듈에서 관리되지 않습니다. 대신 이러한 클라이언트 라이브러리에는 Adobe에서 제공하는 CSS 및 JavaScript 종속성이 포함됩니다. 이러한 클라이언트 라이브러리에 대한 정의는 각 폴더 아래의 `.content.xml` 파일에 있습니다.
 
-   **clientlib-base** - [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)에서 필요한 종속성을 임베드하는 빈 클라이언트 라이브러리입니다. 범주는 `venia.base`입니다.
+   **clientlib-base** - [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)에서 필요한 종속성을 임베드하는 빈 클라이언트 라이브러리입니다. 범주는 `venia.base`입니다.
 
    **clientlib-cif** - [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)의 필수 종속성을 임베드하는 빈 클라이언트 라이브러리이기도 합니다. 범주는 `venia.cif`입니다.
 
@@ -435,7 +435,7 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
 
    ![Webpack 개발 서버 티저 변경](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   그러나 변경 사항이 아직 AEM에 배포되지 않았습니다. [솔루션 파일을 여기에서 다운로드](../assets/style-cif-component/_productteaser.scss)할 수 있습니다.
+   그러나 변경 사항이 아직 AEM에 배포되지 않았습니다. [여기에서 솔루션 파일을 다운로드](../assets/style-cif-component/_productteaser.scss)할 수 있습니다.
 
 1. 명령줄 터미널에서 Maven 기술을 사용하여 AEM에 업데이트를 배포합니다.
 

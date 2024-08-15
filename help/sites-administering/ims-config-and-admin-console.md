@@ -9,9 +9,9 @@ exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1602'
 ht-degree: 6%
 
 ---
@@ -70,9 +70,9 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 >[!NOTE]
 >
->IDP 구성을 포함한 Identity Management 기본 Adobe에 대한 자세한 내용은 문서 [이 페이지](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)를 참조하십시오.
+>IDP 구성을 포함한 Identity Management 기본 Adobe에 대한 자세한 내용은 [ID 및 SSO(Single Sign-On) 설정](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)에 대한 문서를 참조하십시오.
 >
->Enterprise 관리 및 [!DNL Admin Console]에 대한 자세한 내용은 문서 [이 페이지](https://helpx.adobe.com/kr/enterprise/managing/user-guide.html)를 참조하십시오.
+>Enterprise 관리 및 [!DNL Admin Console]에 대한 자세한 내용은 [Enterprise 및 Teams 관리 가이드 시작](https://helpx.adobe.com/kr/enterprise/managing/user-guide.html)을 참조하십시오.
 
 ### [!DNL Admin Console]에 사용자 온보딩 {#onboarding-users-to-the-admin-console}
 
@@ -122,15 +122,16 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 >[!NOTE]
 >
->사용자 동기화 도구에 대한 자세한 내용은 [설명서 페이지](https://adobe-apiplatform.github.io/user-sync.py/en/)를 참조하세요.
+>자세한 내용은 다음을 참조하십시오.
 >
+>* [사용자 동기화 도구 - 사용자 동기화 Adobe](https://adobe-apiplatform.github.io/user-sync.py/en/)
 >
->사용자 동기화 도구는 [여기](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)에 설명된 절차를 사용하여 Adobe I/O 클라이언트 UMAPI로 등록해야 합니다.
+>* 사용자 동기화 도구는 [API 액세스에 대한 인증](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)에 설명된 절차를 사용하여 Adobe I/O 클라이언트 UMAPI로 등록해야 합니다.
 >
->Adobe Developer Console 설명서는 [여기](https://developer.adobe.com/developer-console/docs/guides/)에서 찾을 수 있습니다.
+>* [Adobe Developer Console 설명서](https://developer.adobe.com/developer-console/docs/guides/).
 >
+>* [사용자 관리 API 설명서](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 >
->사용자 동기화 도구에서 사용하는 [!DNL User Management] API는 이 [위치](https://adobe-apiplatform.github.io/umapi-documentation/en/)에서 다룹니다.
 
 >[!NOTE]
 >

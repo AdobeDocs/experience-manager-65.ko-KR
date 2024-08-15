@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 82%
+source-wordcount: '762'
+ht-degree: 81%
 
 ---
 
@@ -69,7 +69,7 @@ MSM은 리소스 URL의 선택기를 통해 요청할 수 있는 여러 서블�
 
 MSM 동기화 작업은 구성이 매우 용이합니다. 롤아웃 도중 수정되는 속성 또는 구성 요소는 해당 구성의 속성에 따라 달라집니다.
 
-이 주제에 대한 자세한 내용은 [이 문서](msm-best-practices.md)를 참조하십시오.
+이 항목에 대한 자세한 내용은 [MSM 모범 사례](msm-best-practices.md)를 참조하세요.
 
 ### 작성자 그룹에 대해 롤아웃 권한을 제거하려면 어떻게 해야 합니까? {#remove-rollout-permissions}
 

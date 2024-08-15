@@ -10,9 +10,9 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ AEM 6.5에는 사용자 및 그룹에 대한 권한 관리가 도입되었습니
 
 >[!NOTE]
 >
->권한 및 설명의 전체 목록은 [이 페이지](/help/sites-administering/user-group-ac-admin.md#access-right-management)를 참조하십시오.
+>권한 및 설명의 전체 목록은 [사용자, 그룹 및 액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md#access-right-management)를 참조하십시오.
 
 ![지정한 경로에 대한 검색 권한입니다.](assets/image2019-3-21_0-5-47.png) ![수직 열에서 선택한 경로에 표시된 대로 &#39;dam-users&#39;에 대한 새 항목을 추가합니다.](assets/image2019-3-21_0-6-53.png)
 

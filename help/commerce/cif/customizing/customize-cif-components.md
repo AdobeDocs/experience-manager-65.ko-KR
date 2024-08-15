@@ -5,9 +5,9 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: ddd411a5dde57cf66cbcb458578b0aa32139b649
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2305'
 ht-degree: 1%
 
 ---
@@ -176,7 +176,7 @@ AEM 코드로 이동하기 전에 GraphQL IDE를 사용하여 [Adobe Commerce Gr
 
 >[!TIP]
 >
->[Adobe Commerce GraphQL에 대한 자세한 설명서는 여기](https://devdocs.magento.com/guides/v2.4/graphql/index.html)에서 확인할 수 있습니다.
+>Adobe Commerce GraphQL에 대한 자세한 설명서는 다음 [GraphQL 개요](https://devdocs.magento.com/guides/v2.4/graphql/index.html)를 참조하십시오.
 
 ## 제품 티저의 슬링 모델 업데이트 {#updating-sling-model-product-teaser}
 
@@ -386,7 +386,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    HTL에서 Sling Model 메서드를 호출할 때 메서드의 `get` 및 `is` 부분이 삭제되고 첫 번째 문자는 소문자입니다. 따라서 `isShowBadge()`은(는) `.showBadge`이(가) 되고 `isEcoFriendly`은(는) `.ecoFriendly`이(가) 됩니다. `.isEcoFriendly()`에서 반환된 부울 값에 따라 `<span>Eco Friendly</span>`이(가) 표시되는지 확인합니다.
 
-   `data-sly-test` 및 기타 [HTL 블록 문에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html)에서 확인하십시오.
+   `data-sly-test` 및 기타 HTL 블록 문에 대한 자세한 내용은 [HTL 사양](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html)을 참조하십시오.
 
 1. 명령줄 터미널에서 Maven 기술을 사용하여 변경 사항을 저장하고 업데이트를 AEM에 배포합니다.
 

@@ -5,10 +5,10 @@ exl-id: d541607f-c4c9-4dd5-aadf-64d4cb5f9f2a
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 66%
+source-wordcount: '958'
+ht-degree: 65%
 
 ---
 
@@ -78,4 +78,4 @@ Adobe는 추상화된 결제 방법을 사용할 것을 권장합니다. 이렇�
 
 ## 16. I/O Runtime 체험판 라이선스를 요청하려면 어떻게 해야 합니까?
 
-[여기](https://adobeio.typeform.com/to/obqgRm)에서 I/O Runtime을 사용하기 위한 체험판 라이선스를 요청할 수 있습니다.
+I/O Runtime을 사용하기 위해 체험판 라이선스를 요청하는 자세한 내용은 [액세스 권한 받기](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/)를 참조하십시오.

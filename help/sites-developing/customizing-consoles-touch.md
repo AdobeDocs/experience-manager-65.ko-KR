@@ -10,9 +10,9 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '649'
 ht-degree: 22%
 
 ---
@@ -161,4 +161,4 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 
 콘솔을 사용할 때 일반적인 사용 사례는 사용자가 리소스(예: 페이지, 구성 요소, 에셋 등)에서 선택해야 하는 경우입니다. 예를 들어 작성자가 항목을 선택해야 하는 목록 형식을 취할 수 있습니다.
 
-목록을 적당한 크기로 유지하고 사용 사례와도 관련되게 하려면 필터를 사용자 정의 조건자 형태로 구현할 수 있습니다. 자세한 내용은 [이 문서](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources)를 참조하세요.
+목록을 적당한 크기로 유지하고 사용 사례와도 관련되게 하려면 필터를 사용자 정의 조건자 형태로 구현할 수 있습니다. 자세한 내용은 [페이지 작성 사용자 지정 - 리소스 필터링](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources)을 참조하십시오.

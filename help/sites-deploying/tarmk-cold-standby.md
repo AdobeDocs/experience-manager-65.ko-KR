@@ -10,9 +10,9 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2673'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Tar 마이크로 커널의 콜드 스탠바이 용량을 사용하면 하나 이
 
 데이터 흐름은 연결 및 네트워크 관련 문제를 자동으로 감지하고 처리하도록 설계되었습니다. 모든 패킷은 체크섬과 함께 번들로 제공되며, 연결 문제 또는 손상된 패킷이 발생하면 재시도 메커니즘이 트리거됩니다.
 
-#### 공연 {#performance}
+#### 성능 {#performance}
 
 기본 인스턴스에서 TarMK 콜드 대기를 활성화하는 것은 성능에 거의 영향을 미치지 않습니다. 추가 CPU 소모가 적고 추가 하드 디스크 및 네트워크 IO에서 및 성능 문제가 발생하지 않아야 합니다.
 
@@ -409,7 +409,7 @@ Adobe은 시간에 따른 과도한 저장소 증가를 방지하기 위해 유�
 1. [위의](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance) 섹션에 설명된 대로 콜드 대기 저장소 유지 관리를 실행합니다.
 1. 유지 관리 프로세스가 완료되고 인스턴스가 다시 시작된 후:
 
-   * 기본에서 [이 문서](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console)에 설명된 대로 관련 JMX Bean을 통해 데이터 저장소 가비지 수집을 실행합니다.
+   * [JMX 콘솔을 통해 데이터 저장소 가비지 컬렉션 실행](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console)에 설명된 대로 기본 데이터 저장소에서 관련 JMX Bean을 통해 데이터 저장소 가비지 컬렉션을 실행합니다.
    * 대기 모드에서는 **BlobGarbageCollection** MBean - `startBlobGC()`을 통해서만 데이터 저장소 가비지 컬렉션을 사용할 수 있습니다. **RepositoryManagement** MBean을 대기 모드에서 사용할 수 없습니다.
 
    >[!NOTE]

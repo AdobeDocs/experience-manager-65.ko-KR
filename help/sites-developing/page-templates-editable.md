@@ -10,9 +10,9 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3187'
 ht-degree: 4%
 
 ---
@@ -434,7 +434,7 @@ CRXDE를 통해 또는 구성 브라우저를 사용하여 템플릿 폴더를 �
 
 다른 템플릿의 기반으로 사용할 수 있는 템플릿을 생성한 경우 이 템플릿을 템플릿 유형으로 복사할 수 있습니다.
 
-1. 템플릿 유형의 기반으로 사용할 수 있는 편집 가능한 템플릿 [여기](/help/sites-authoring/templates.md#creating-a-new-template-template-author)에 설명된 대로 템플릿을 만드십시오.
+1. 편집 가능한 템플릿과 마찬가지로 템플릿을 만듭니다. [페이지 템플릿 만들기](/help/sites-authoring/templates.md#creating-a-new-template-template-author)를 참조하십시오. 이 작업은 템플릿 유형의 기반으로 사용할 수 있습니다.
 1. CRXDE Lite을 사용하여 `templates` 노드에서 새로 만든 템플릿을 [템플릿 폴더](/help/sites-developing/page-templates-editable.md#template-folders) 아래의 `template-types` 노드로 복사합니다.
 1. [템플릿 폴더](/help/sites-developing/page-templates-editable.md#template-folders) 아래의 `templates` 노드에서 템플릿을 삭제하십시오.
 1. `template-types` 노드 아래에 있는 템플릿의 복사본에서 모든 `jcr:content` 노드에서 모든 `cq:template` 및 `cq:templateType` 속성을 삭제합니다.

@@ -10,9 +10,9 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '5409'
+source-wordcount: '5412'
 ht-degree: 1%
 
 ---
@@ -610,7 +610,7 @@ AEM은 그룹에서 사용자 또는 그룹을 제거하는 세 가지 방법을
 
 >[!NOTE]
 >
->Adobe은 권한 관리를 위한 새로운 Touch UI 기반 사용자 보기를 도입했습니다. 사용 방법에 대한 자세한 내용은 [이 페이지](/help/sites-administering/touch-ui-principal-view.md)를 참조하세요.
+>Adobe은 권한 관리를 위한 새로운 Touch UI 기반 사용자 보기를 도입했습니다. 사용 방법에 대한 자세한 내용은 [권한 관리에 대한 사용자 보기](/help/sites-administering/touch-ui-principal-view.md)를 참조하십시오.
 
 이 섹션에서는 복제 권한을 포함한 권한을 설정하는 방법에 대해 설명합니다.
 

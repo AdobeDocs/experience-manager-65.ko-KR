@@ -9,10 +9,10 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 39%
+source-wordcount: '1264'
+ht-degree: 38%
 
 ---
 
@@ -112,7 +112,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 * [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) 상호 작용을 구현하여 사용자 정의 조건자를 구현합니다.
 * 조건자의 이름을 지정하고, `pathbrowser`를 사용할 때 해당 이름을 참조합니다.
 
-사용자 지정 조건자 만들기에 대한 자세한 내용은 [이 문서](/help/sites-developing/implementing-custom-predicate-evaluator.md)를 참조하십시오.
+사용자 지정 술어 만들기에 대한 자세한 내용은 [Query Builder의 사용자 지정 술어 평가기 구현](/help/sites-developing/implementing-custom-predicate-evaluator.md)을 참조하십시오.
 
 >[!NOTE]
 >

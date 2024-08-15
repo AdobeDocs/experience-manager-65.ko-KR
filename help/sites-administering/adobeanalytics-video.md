@@ -10,9 +10,9 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -379,7 +379,7 @@ eventdata.events.milestoneXX
 
    ![lseconds](assets/lseconds.png)
 
-   *이 호출은 위의 레거시 마일스톤 호출과 비슷합니다. pev3 **[제공](/help/sites-administering/adobeanalytics.md)**에 대한 정보를 참조하십시오.*
+   *이 호출은 위의 레거시 마일스톤 호출과 비슷합니다. [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics.md)에 제공된 pev3에 대한 정보를 참조하십시오.*
 
 **이 자습서에 사용된 참조:**
 

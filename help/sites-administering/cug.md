@@ -10,9 +10,9 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ CUG를 페이지에 적용하려면 다음을 수행합니다.
    >
    >권한 탭의 CUG는 블루프린트에서 Live Copy로 롤아웃할 수 없습니다. Live Copy를 구성할 때 이를 염두에 두고 계획을 세우십시오.
    >
-   >자세한 내용은 [이 페이지](closed-user-groups.md#aem-livecopy)를 참조하세요.
+   >자세한 내용은 [AEM - Livecopy의 폐쇄된 사용자 그룹](closed-user-groups.md#aem-livecopy)을 참조하십시오.
 
 1. **폐쇄된 사용자 그룹 편집** 대화 상자가 열립니다. 여기에서 CUG를 검색하고 선택한 다음 **저장**&#x200B;을 사용하여 그룹 선택을 확인할 수 있습니다.
 

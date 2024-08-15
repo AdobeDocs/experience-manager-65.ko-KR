@@ -9,9 +9,9 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2642'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Apache Sling의 요청 해결에 대해 이해해야 할 주요 사항은 요청
 
 **작성자 인스턴스** - 일반적으로 보안, 거버넌스 및 기타 이유로 프로덕션 사이트는 AEM 인스턴스를 작성자 인스턴스와 Publish 인스턴스로 나눕니다. 배포 아키텍처(작성자/Publish 인스턴스 포함)에 대한 자세한 내용은 AEM 인스턴스에 대한 설명서를 참조하십시오.
 
-**캐싱, 튀김 및 굽기** - 일반적으로 굽기와 튀김 개념은 서로 다른 웹 콘텐츠 관리 시스템 간의 중요한 차이점입니다. CMS 전문 용어에서 &quot;baking&quot;은 게시 시간에 데이터를 정적 파일로 커밋하는 개념을 의미하고 &quot;frying&quot;은 요청 시간에(즉, 적시에) 최종 프레젠테이션을 위해 데이터를 처리하는 개념을 의미합니다.
+**캐싱, 튀김 및 굽기** - 일반적으로 굽기와 튀김 개념은 서로 다른 웹 콘텐츠 관리 시스템 간의 중요한 차이점입니다. CMS 전문 용어에서 &quot;굽기&quot;는 게시 시간에 정적 파일에 데이터를 커밋하는 개념을 의미하고 &quot;튀기기&quot;는 요청 시간에(즉, 적시에) 최종 프레젠테이션을 위해 데이터를 처리하는 개념을 의미합니다.
 
 **클러스터링 및 로드 밸런싱** - 프로덕션 환경의 가용성을 높이고 성능을 향상시키기 위해 여러 작성자 및/또는 Publish 인스턴스를 다른 사용자 그룹에서 사용하거나 Dispatcher 구성 뒤에서 로드 밸런싱을 수행하여 여러 작성자 및/또는 인스턴스를 클러스터로 결합하는 것이 일반적입니다.
 
@@ -142,7 +142,7 @@ Apache Sling의 요청 해결에 대해 이해해야 할 주요 사항은 요청
 
 JCR에는 사전 정의된 노드 유형 및 속성 유형이 여러 개 있지만 일반적으로 입력 시스템이 유연하며 정형 및 비정형 콘텐츠를 동일한 방식으로 저장/관리할 수 있다는 것이 JCR의 강점 중 하나입니다. 즉, JCR은 고도로 구조화된 데이터를 수용할 수 있지만 스키마 제약 없이 임의의 동적 데이터 구조도 수용할 수 있다.
 
-JCR의 Java™ API용 JavaDoc은 [여기](https://jackrabbit.apache.org/jcr/jcr-api.html)입니다.
+JCR의 Java™ API용 JavaDoc은 [Apache Software Foundation - JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html)에서 사용할 수 있습니다.
 
 JavaDoc 또는 JCR 사양 자체를 읽기 전에 Adobe Experience Services에 의해 구현된 JCR의 [이 고급 설명](/help/sites-developing/the-basics.md#java-content-repository)을 살펴볼 수 있습니다.
 

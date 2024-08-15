@@ -9,7 +9,7 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 1%
@@ -28,7 +28,7 @@ AEM 인스턴스와 대화형 [커뮤니티 구성 요소 안내서](components-
 
 페이지 콘텐츠를 작성할 때 기본 템플릿에서 페이지 디자인을 변경할 수 있는 경우, 사이트 디자인의 일부로서 구성 요소 브라우저에서 아직 사용할 수 없는 구성 요소를 활성화할 수 있습니다.
 
-사용 가능한 Communities 구성 요소가 [여기](author-communities.md#available-communities-components)에 나열됩니다.
+[사용 가능한 커뮤니티 구성 요소](author-communities.md#available-communities-components)의 목록을 참조하십시오.
 
 >[!NOTE]
 >

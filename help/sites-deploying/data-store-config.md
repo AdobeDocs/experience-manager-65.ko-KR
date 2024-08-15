@@ -8,9 +8,9 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3476'
+source-wordcount: '3461'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,9 @@ Adobe Experience Manager(AEM)에서 바이너리 데이터는 컨텐츠 노드�
 
 >[!CAUTION]
 >
->최신 버전의 Oak에서는 OSGi 구성 파일에 대해 새로운 이름 지정 체계 및 형식을 사용합니다. 새 이름 지정 구성표를 사용하려면 구성 파일 이름이 **.config**&#x200B;이고 새 형식을 사용하려면 값을 입력해야 하며 이 형식은 [여기에 설명되어 있습니다](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>최신 버전의 Oak에서는 OSGi 구성 파일에 대해 새로운 이름 지정 체계 및 형식을 사용합니다. 새 이름 지정 체계를 사용하려면 구성 파일 이름이 **.config**&#x200B;이고 새 형식을 사용하려면 값을 입력해야 합니다. 자세한 내용은 [Apache Sling 프로비저닝 모델 및 Apache SlingStart - 기본 구성 형식](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format)을 참조하십시오.
 >
 >이전 버전의 Oak에서 업그레이드하는 경우 먼저 `crx-quickstart/install`폴더를 백업해야 합니다. 업그레이드 후 폴더의 내용을 업그레이드된 설치로 복원하고 구성 파일의 확장자를 **.cfg**&#x200B;에서 **.config**(으)로 수정합니다.
->
->**AEM 5.x** 설치에서 업그레이드를 준비하기 위해 이 문서를 읽고 있는 경우 먼저 [업그레이드](https://experienceleague.adobe.com/docs/) 설명서를 참조하십시오.
 
 ### 세그먼트 노드 저장소 {#segment-node-store}
 
@@ -372,7 +370,7 @@ S3를 사용하여 바이너리 없는 복제를 구성하려면 다음 단계�
 
    * S3을 데이터 저장소로 사용하는 경우 위와 같이 `<aem-install>/crx-quickstart/install` 폴더에 이름이 `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config`인 파일을 만듭니다.
 
-1. 동일한 데이터 저장소를 가리키도록 각 인스턴스의 데이터 저장소 구성 파일을 수정합니다. 자세한 내용은 [이 문서](/help/sites-deploying/data-store-config.md#data-store-configurations)를 참조하세요.
+1. 동일한 데이터 저장소를 가리키도록 각 인스턴스의 데이터 저장소 구성 파일을 수정합니다. 자세한 내용은 [데이터 저장소 구성](/help/sites-deploying/data-store-config.md#data-store-configurations)을 참조하세요.
 1. 인스턴스가 기존 서버에서 복제된 경우 저장소가 오프라인 상태인 동안 최신 oak-run 도구를 사용하여 새 인스턴스의 `clusterId`을(를) 제거해야 합니다. 실행해야 하는 명령은 다음과 같습니다.
 
    ```xml

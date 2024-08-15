@@ -9,10 +9,10 @@ exl-id: d77e9e39-6117-4d09-b34b-a97ab347397e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 5%
+source-wordcount: '147'
+ht-degree: 4%
 
 ---
 
@@ -22,9 +22,9 @@ Adobe Consulting 서비스 팀에서 일련의 Adobe Experience Manager(AEM) 코
 
 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발 등의 기본 주제를 다루는 AEM을 처음 사용하는 개발자를 위해 설계된 멀티 파트 튜토리얼입니다. [AEM Sites 시작하기 - WKND 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
 
-고유한 기능을 개발하기 위한 시작점으로 AEM 프로젝트를 만드는 Maven 템플릿을 [여기](https://github.com/adobe/aem-project-archetype)에서 사용할 수 있습니다.
+고유한 기능을 개발하는 시작점으로 AEM 프로젝트를 만드는 Maven 템플릿을 [GitHub - AEM Project Archetype](https://github.com/adobe/aem-project-archetype)에서 사용할 수 있습니다.
 
-터치 사용이 가능한 표준 UI 코드 샘플은 [여기](/help/sites-developing/developing-components.md)에서 사용할 수 있습니다.
+터치 사용 UI 코드 샘플은 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)에서 사용할 수 있습니다.
 
 >[!NOTE]
 >

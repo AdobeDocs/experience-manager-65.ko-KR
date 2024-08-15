@@ -10,9 +10,9 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '5744'
+source-wordcount: '5743'
 ht-degree: 2%
 
 ---
@@ -507,7 +507,7 @@ UI는 화면 왼쪽 위의 검색 상자에 필터 기준을 입력하여 테이
 
 ### 개정 정리 {#revision-clean-up}
 
-수정 정리 수행에 대한 자세한 내용은 [이 전용 문서를 참조하십시오](/help/sites-deploying/revision-cleanup.md).
+자세한 내용은 [수정 정리](/help/sites-deploying/revision-cleanup.md)를 참조하십시오.
 
 ### Lucene 바이너리 정리 {#lucene-binaries-cleanup}
 
@@ -522,7 +522,7 @@ Lucene 바이너리 정리 작업을 사용하면 Lucene 바이너리를 제거�
 
 ### 데이터 저장소 가비지 컬렉션 {#data-store-garbage-collection}
 
-데이터 저장소 가비지 수집에 대한 자세한 내용은 전용 [설명서 페이지](/help/sites-administering/data-store-garbage-collection.md)를 참조하십시오.
+데이터 저장소 가비지 수집에 대한 자세한 내용은 전용 [데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md) 설명서 페이지를 참조하십시오.
 
 ### 워크플로 삭제 {#workflow-purge}
 
@@ -533,7 +533,7 @@ Lucene 바이너리 정리 작업을 사용하면 Lucene 바이너리를 제거�
 
 >[!NOTE]
 >
->워크플로우 유지 관리에 대한 자세한 내용은 [이 페이지](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)를 참조하십시오.
+>워크플로 유지 관리에 대한 자세한 내용은 [워크플로 인스턴스 관리](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)를 참조하십시오.
 
 ### 감사 로그 유지 관리 {#audit-log-maintenance}
 

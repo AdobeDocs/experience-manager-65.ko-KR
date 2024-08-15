@@ -10,9 +10,9 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '6192'
+source-wordcount: '6216'
 ht-degree: 0%
 
 ---
@@ -488,7 +488,7 @@ Red Hat® Linux®는 THP(Transparent Huge Pages)라는 메모리 관리 알고�
 
 >[!NOTE]
 >
->투명한 대용량 페이지에 대한 자세한 내용은 이 [문서](https://access.redhat.com/solutions/46111)를 참조하세요.
+>투명 대용량 페이지에 대한 자세한 내용은 Red Hat® 고객 포털에서 다음 문서를 참조하십시오. [Red Hat Enterprise Linux 6, 7 및 8에서 투명 Hugepage를 사용, 모니터링 및 비활성화하는 방법](https://access.redhat.com/solutions/46111)
 
 #### NUMA 비활성화 {#disable-numa}
 
@@ -595,7 +595,7 @@ Dispatcher은 상태를 저장하지 않으므로 쉽게 가로로 확장할 수
 
 Dispatcher 없이 AEM을 실행하려면 다른 애플리케이션에서 SSL 종료 및 로드 밸런싱을 수행해야 합니다. 세션이 만들어지는 AEM 인스턴스(고정 연결이라고 함)에 대한 친화성을 가져야 하므로 필요합니다. 그 이유는 콘텐츠에 대한 업데이트가 최소한의 지연을 보이도록 하기 위해서입니다.
 
-구성 방법에 대한 자세한 내용은 [Dispatcher 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher)를 참조하세요.
+구성 방법에 대한 자세한 내용은 [Dispatcher 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/dispatcher)를 참조하세요.
 
 ### 추가 구성 {#additional-configuration}
 
@@ -657,7 +657,7 @@ CSP를 사용하면 정책을 미세 조정할 수 있습니다. 그러나 복�
 
 >[!NOTE]
 >
->이 작동 방식에 대한 자세한 내용은 [콘텐츠 보안 정책의 OWASP 페이지](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)를 참조하십시오.
+>이 작동 방식에 대한 자세한 내용은 [CSP(콘텐츠 보안 정책)의 OWASP 페이지](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)를 참조하십시오.
 
 ### 크기 조정 {#sizing}
 

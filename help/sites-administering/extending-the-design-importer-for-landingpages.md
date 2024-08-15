@@ -10,9 +10,9 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3442'
 ht-degree: 0%
 
 ---
@@ -443,7 +443,7 @@ HTML 태그에 설정된 Lang 속성은 디자인 임포터에서 &quot;jcr:lang
 
 빈 랜딩 페이지 템플릿은 `/apps/<appName>/designimporter/templates/<templateName>`에 만들어 겹칠 수 있습니다.
 
-AEM에서 템플릿을 만드는 단계는 [여기](/help/sites-developing/templates.md)에서 설명합니다.
+AEM에서 템플릿을 만드는 단계는 [템플릿](/help/sites-developing/templates.md)에 설명되어 있습니다.
 
 ### 랜딩 페이지에서 구성 요소 참조 {#referring-a-component-from-landing-page}
 

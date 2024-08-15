@@ -10,9 +10,9 @@ feature: Developing,Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ TagID에 콜론(`:`)이 포함되어 있으면 콜론은 네임스페이스를 �
 
 ### 노드 유형 표기법(CND) {#node-type-notation-cnd}
 
-노드 유형 정의는 저장소에 CND 파일로 존재합니다. CND 표기법은 JCR 설명서 [여기](https://jackrabbit.apache.org/jcr/node-type-notation.html)의 일부로 정의됩니다.
+노드 유형 정의는 저장소에 CND 파일로 존재합니다. CND 표기법은 [Jackrabbit 설명서](https://jackrabbit.apache.org/jcr/node-type-notation.html)의 일부로 정의됩니다.
 
 AEM에 포함된 노드 유형에 대한 필수 정의는 다음과 같습니다.
 

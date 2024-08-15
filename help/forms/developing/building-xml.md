@@ -5,9 +5,9 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ JEE Workbench의 AEM Forms에서 사용할 수 있는 표준 AEM Forms on JEE �
 
 **스크립트 서비스 실행 기술 정보**
 
-Execute Script 서비스의 능력과 한계가 무엇인지 알기 위해서는 서비스의 기술적 토대를 알아야 한다. AEM Forms on JEE는 Apache Xerces DOM(Document Object Model) 파서를 사용하여 프로세스 내에 XML 변수를 만들고 저장합니다. Xerces는 W3C의 Document Object Model 사양의 Java™ 구현입니다. [여기](https://dom.spec.whatwg.org/)에서 정의됩니다. DOM 사양은 1998년부터 있었던 XML을 조작하는 표준 방법입니다. Xerces의 Java™ 구현인 Xerces-J는 DOM 레벨 2 버전 1.0을 지원합니다.
+Execute Script 서비스의 능력과 한계가 무엇인지 알기 위해서는 서비스의 기술적 토대를 알아야 한다. AEM Forms on JEE는 Apache Xerces DOM(Document Object Model) 파서를 사용하여 프로세스 내에 XML 변수를 만들고 저장합니다. Xerces는 W3C의 [문서 개체 모델 사양](https://dom.spec.whatwg.org/)의 Java™ 구현입니다. DOM 사양은 1998년부터 있었던 XML을 조작하는 표준 방법입니다. Xerces의 Java™ 구현인 Xerces-J는 DOM 레벨 2 버전 1.0을 지원합니다.
 
 XML 변수를 저장하는 데 사용되는 Java™ 클래스는 다음과 같습니다.
 
@@ -58,7 +58,7 @@ XML 변수를 저장하는 데 사용되는 Java™ 클래스는 다음과 같�
 
 * org.apache.xerces.dom.DocumentImpl
 
-DocumentImpl은 NodeImpl의 하위 클래스이므로 모든 XML 프로세스 변수가 NodeImpl 파생이라고 가정할 수 있습니다. NodeImpl [여기](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html)에 대한 설명서를 찾을 수 있습니다.
+DocumentImpl은 NodeImpl의 하위 클래스이므로 모든 XML 프로세스 변수가 NodeImpl 파생이라고 가정할 수 있습니다. 자세한 내용은 [NodeImpl](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html) 설명서를 참조하세요.
 
 **스크립트 실행 서비스를 사용한 샘플 XML 만들기**
 

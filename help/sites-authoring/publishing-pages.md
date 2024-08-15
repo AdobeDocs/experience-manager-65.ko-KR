@@ -5,10 +5,10 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 69%
+source-wordcount: '1669'
+ht-degree: 68%
 
 ---
 
@@ -32,16 +32,14 @@ ht-degree: 69%
 >
 >* **복제**
 >  사용자 댓글을 게시하거나 역복제할 때와 같이 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
->
 
->[!NOTE]
->
->특정 페이지 게시에 필요한 권한이 없는 경우:
->
->* 게시할 요청을 적절한 사람에게 알리도록 워크플로가 트리거됩니다.
->* 이 [워크플로는 개발 팀에서 사용자 지정했을 수 있습니다](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6).
->* 워크플로가 트리거되었음을 알리는 메시지가 짧게 표시됩니다.
->
+## 권한 부족 {#insufficient-privileges}
+
+특정 페이지 게시에 필요한 권한이 없는 경우:
+
+* 게시할 요청을 적절한 사람에게 알리도록 워크플로가 트리거됩니다.
+* 이 [워크플로는 개발 팀에서 사용자 지정했을 수 있습니다](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6).
+* 워크플로가 트리거되었음을 알리는 메시지가 짧게 표시됩니다.
 
 ## 페이지 게시 {#publishing-pages-1}
 
@@ -185,7 +183,9 @@ ht-degree: 69%
 
    >[!NOTE]
    >
-   >**워크플로** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 자세한 내용은 게시 권한에 관한 [이 페이지의 이전 메모](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) 및 [워크플로에 대한 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd)을 참조하십시오.
+   >**워크플로** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다.
+   >
+   >자세한 내용은 [권한 부족](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [워크플로에 대한 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) 섹션을 참조하십시오.
 
    참조는 트리거된 워크플로 및 지정된 옵션별로 그룹화되어 다음 작업을 수행할 수 있습니다.
 
