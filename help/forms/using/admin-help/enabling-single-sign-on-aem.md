@@ -9,20 +9,24 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
 
 # AEM Forms에서 SSO(Single Sign-On) 활성화{#enabling-single-sign-on-in-aem-forms}
 
-AEM forms에서는 SSO(Single Sign-On)를 활성화하는 두 가지 방법인 HTTP 헤더와 SPNEGO를 제공합니다.
+AEM forms에서는 SSO(Single Sign-On)를 활성화하는 두 가지 방법, 즉 HTTP 헤더와 SPNEGO를 제공합니다.
 
 SSO가 구현되면 AEM Forms 사용자 로그인 페이지가 필요하지 않으며 사용자가 회사 포털을 통해 이미 인증된 경우 표시되지 않습니다.
 
 AEM Forms에서 이러한 방법 중 하나를 사용하여 사용자를 인증할 수 없는 경우 사용자는 로그인 페이지로 리디렉션됩니다.
+
+* [HTTP 헤더를 사용하여 SSO 활성화](#enable-sso-using-http-headers)
+* [SPNEGO를 사용하여 SSO 활성화](#enable-sso-using-spnego)
+* [사용자 및 그룹에 역할 할당](#assign-roles-to-users-groups)
 
 ## HTTP 헤더를 사용하여 SSO 활성화 {#enable-sso-using-http-headers}
 
@@ -52,6 +56,10 @@ SPNEGO를 사용하여 SSO를 활성화할 수도 있습니다. ([SPNEGO를 사�
 
 허용된 참조를 구성하는 단계는 [허용된 참조 구성](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers)을 참조하십시오.
 
+### 사용자 및 그룹에 역할 할당
+
+[사용자 및 그룹에 역할을 할당](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups)하는 단계를 알아보려면 클릭하세요.
+
 ## SPNEGO를 사용하여 SSO 활성화 {#enable-sso-using-spnego}
 
 Windows 환경에서 Active Directory를 LDAP 서버로 사용할 때 SSO(Single Sign-On)를 사용하도록 설정하려면 단순 및 보호된 GSSAPI 협상 메커니즘(SPNEGO)을 사용할 수 있습니다. SSO가 활성화되면 AEM Forms 사용자 로그인 페이지가 필요하지 않고 나타나지 않습니다.
@@ -60,7 +68,7 @@ HTTP 헤더를 사용하여 SSO를 활성화할 수도 있습니다. ([HTTP 헤�
 
 >[!NOTE]
 >
->JEE의 AEM Forms은 여러 하위 도메인 환경에서 Kerberos/SPNEGO를 사용하여 SSO를 구성하는 것을 지원하지 않습니다.
+>JEE의 AEM Forms은 여러 하위 도메인 환경에서 Kerberos/SPNEGO를 사용한 SSO 구성을 지원하지 않습니다.
 
 1. SSO를 활성화하는 데 사용할 도메인을 결정합니다. AEM Forms 서버 및 사용자는 동일한 Windows 도메인 또는 트러스트된 도메인에 속해야 합니다.
 1. Active Directory에서 AEM Forms 서버를 나타내는 사용자를 만듭니다. ([사용자 계정 만들기](enabling-single-sign-on-aem.md#create-a-user-account)를 참조하세요.) SPNEGO를 사용하도록 두 개 이상의 도메인을 구성하는 경우 이러한 각 사용자의 암호가 서로 다른지 확인하십시오. 암호가 다르지 않으면 SPNEGO SSO가 작동하지 않습니다.
@@ -167,3 +175,21 @@ https://lcserver:8080과 같은 컴퓨터 이름을 사용하여 서버에 액�
    `lcserver.um.lc.com` - 특정 서버에만 SPNEGO를 허용하도록 Firefox를 구성합니다. 이 값은 점(&quot;.&quot;)으로 시작하지 마십시오.
 
 1. 애플리케이션에 액세스하여 구성을 테스트합니다. 대상 응용 프로그램에 대한 시작 페이지가 표시됩니다.
+
+[사용자 및 그룹에 역할을 할당](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups)하는 단계를 알아보려면 클릭하세요.
+
+## 사용자 및 그룹에 역할 할당 {#assign-roles-to-users-groups}
+
+1. JEE 환경에서 AEM Forms에 로그인합니다.
+1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
+1. LDAP와 같은 도메인 구성을 선택하고 클릭합니다. 디렉토리에서 생성된 모든 사용자와 그룹을 찾습니다. 필요한 경우 새 사용자 또는 그룹을 만들 수 있습니다.
+   ![도메인 관리 페이지](/help/forms/using/assets/domain-mgmt-page.png)
+1. 인증을 누릅니다. 새 페이지에서 LDAP와 같은 인증 공급자를 선택합니다.
+1. 도메인 관리 페이지로 이동하여 LDAP를 선택하고 **지금 동기화**를 클릭하여 AEM 액세스를 위해 구성한 인증 체계와 디렉터리를 동기화합니다.
+   ![ldap 동기화](/help/forms/using/assets/sync-ldap.png)
+1. 사용자 관리로 이동하고 사용자 및 그룹을 클릭합니다.
+1. 아래 그림과 같이 사용자 또는 그룹을 이름으로 검색합니다.
+   ![사용자 그룹 검색](/help/forms/using/assets/search-user-group.png)
+1. 필요에 따라 사용자 또는 그룹에 역할을 할당합니다.
+   ![사용자 역할 할당](/help/forms/using/assets/user-role-assign.png)
+
