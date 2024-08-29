@@ -6,9 +6,9 @@ role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9014a7dd3c9279a4da3944c1b095fd60352fdbeb
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Adobe Imaging Transcoding Library는 다음을 포함한 핵심 이미지 처리
 
 ## 지원되는 플랫폼 {#supported-platforms}
 
-이미징 코드 변환 라이브러리는 RHEL 7 및 CentOS 7 배포판에서만 사용할 수 있습니다.
+이미징 코드 변환 라이브러리는 RHEL 8, RHEL 7 및 CentOS 7 배포판에서만 사용할 수 있습니다.
 
 >[!NOTE]
 >
