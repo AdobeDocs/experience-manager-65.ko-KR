@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
+source-git-commit: 1fa3a56d2868cad0e1b54bf3fe1b018061b4b7a8
 workflow-type: tm+mt
-source-wordcount: '4390'
+source-wordcount: '4394'
 ht-degree: 3%
 
 ---
@@ -544,7 +544,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 * AEM Forms 서비스 팩 6.5.21.0으로 업그레이드한 후 `PaperCapture` 서비스가 PDF에서 OCR(광학 문자 인식) 작업을 수행하지 못했습니다. 이 서비스는 PDF 또는 로그 파일의 형태로 출력을 생성하지 않습니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (CQDOC-21680)
 
-* 사용자가 AEM 6.5 Forms 서비스 팩 18(6.5.18.0) 또는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)에서 AEM 6.5 Forms 서비스 팩 20(6.5.20.0) 또는 AEM 6.5 Forms 서비스 팩 21(6.5.21.0)로 업데이트하면 JSP 컴파일 오류가 발생하여 적응형 양식을 열거나 만들 수 없고 페이지 편집기, AEM UI 및 AEM Forms 워크플로우 편집기와 같은 다른 AEM 인터페이스에 오류가 발생합니다. (FORMS-15256)
+* 사용자가 AEM 6.5 Forms 서비스 팩 18(6.5.18.0) 또는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)에서 AEM 6.5 Forms 서비스 팩 20(6.5.20.0) 또는 AEM 6.5 Forms 서비스 팩 21(6.5.21.0)로 업데이트하면 JSP 컴파일 오류가 발생하여 적응형 양식을 열거나 만들 수 없으며 페이지 편집기, AEM UI, AEM Forms Workflow 편집기 및 AEM System Overview UI와 같은 다른 AEM 인터페이스에 오류가 발생합니다. (FORMS-15256)
 
   이러한 문제가 발생하면 다음 단계를 수행하여 해결하십시오.
    1. CRXDE의 `/libs/fd/aemforms/install/` 디렉터리로 이동합니다.
