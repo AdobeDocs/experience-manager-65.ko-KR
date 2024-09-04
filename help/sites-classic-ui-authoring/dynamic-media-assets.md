@@ -9,7 +9,7 @@ exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 53%
@@ -22,7 +22,7 @@ ht-degree: 53%
 
 Dynamic Media은 확대/축소, 360도 회전 및 비디오를 비롯한 대화형 보기 환경을 제공합니다. Dynamic Media은 디지털 캠페인 관리 프로세스를 간소화하고 간소화하기 위해 Adobe Experience Manager 디지털 에셋 관리(Assets) 솔루션의 워크플로를 고유하게 통합합니다.
 
-Dynamic Media 작업은 클래식 UI에서 사용할 수 없습니다. 터치 사용 사용자 인터페이스를 다루는 [Dynamic Media 작업,](/help/assets/dynamic-media.md)을 참조하세요.
+Dynamic Media 작업은 클래식 UI에서 사용할 수 없습니다. 터치 사용 사용자 인터페이스를 다루는 [Dynamic Media 작업](/help/assets/dynamic-media.md)을 참조하세요.
 
 >[!NOTE]
 >

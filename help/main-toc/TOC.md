@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
+source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
 workflow-type: tm+mt
 source-wordcount: '7448'
 ht-degree: 22%
@@ -337,7 +337,7 @@ ht-degree: 22%
          + [페이지에 Dynamic Media Assets 추가](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
          + [Scene7 기능을 페이지에 추가](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
          + [비디오](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
-         + [Dynamic Media 작업](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
+         + [Dynamic Media를 사용하여 작업](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
          + [에셋 테스트를 위한 이름 지정 규칙](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Assets {#assets}
    + [DAM 정보](/help/assets/assets.md)
