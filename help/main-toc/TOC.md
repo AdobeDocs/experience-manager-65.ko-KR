@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
+source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
 workflow-type: tm+mt
 source-wordcount: '7448'
 ht-degree: 22%
@@ -220,7 +220,7 @@ ht-degree: 22%
          + [Adobe Analytics과 랜딩 페이지 통합](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
       + 통합 {#integration}
          + [타사 서비스와 통합](/help/sites-administering/third-party-services.md)
-         + [Salesforce와 통합](/help/sites-administering/salesforce.md)
+         + [Salesforce과 통합](/help/sites-administering/salesforce.md)
          + [Adobe Target과 통합](/help/sites-administering/target.md)
          + [Adobe Learning Manager와 통합](/help/sites-administering/adobe-learningmanager.md)
          + [Adobe Analytics와 통합](/help/sites-administering/adobeanalytics.md)
@@ -536,7 +536,7 @@ ht-degree: 22%
          + [적응형 양식 조각 참조](/help/forms/using/reference-adaptive-form-fragments.md)
          + [참조 테마](/help/forms/using/reference-themes.md)
          + [참조 편지 템플릿](/help/forms/using/reference-cm-layout-templates.md)
-         + [We.Finance 참조 사이트의 홈 모기지 워크플로우에 대한 Microsoft Dynamics 365 구성](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
+         + [We.Finance 참조 사이트의 홈 모기지 워크플로에 대해 Microsoft Dynamics 365를 구성합니다.](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
    + AEM Forms {#install-aem-forms} 설치 및 구성
       + [AEM Forms의 아키텍처 및 배포 토폴로지](/help/forms/using/aem-forms-architecture-deployment.md)
       + [AEM Forms 설치를 위한 지속성 유형 선택](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
@@ -620,7 +620,6 @@ ht-degree: 22%
       + [핵심 구성 요소 기반 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [적응형 양식에서 적응형 Forms 조각 생성 및 사용](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [적응형 Forms 기반의 핵심 구성 요소에 대한 테마 만들기](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
-      + [적응형 양식에서 사용자 정의 함수 만들기 및 사용](/help/forms/using/create-and-use-custom-functions.md)
       + [규칙 편집기](/help/forms/using/rule-editor-core-components.md)
       + [적응형 양식 핵심 구성 요소에서 사용자 정의 기능 만들기 및 사용](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [적응형 Forms 기반의 핵심 구성 요소에 대한 사용자 지정 오류 처리기 만들기 및 사용](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -677,6 +676,7 @@ ht-degree: 22%
       + [Adobe Sign과 AEM Forms 통합](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [양식에서 자산에 대한 검토 만들기 및 관리](/help/forms/using/create-reviews-forms.md)
       + [AEM Sites 단일 페이지 애플리케이션에 적응형 양식 또는 대화형 통신 포함](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+      + [적응형 양식에서 사용자 정의 함수 만들기 및 사용](/help/forms/using/create-and-use-custom-functions.md)
       + [적응형 Forms에 대한 사용자 지정 오류 처리기 만들기 및 사용](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
    + 대화형 통신 {#interactive-communications}
       + [대화형 통신 작성 UI 소개](/help/forms/using/introduction-interactive-communication-authoring.md)
@@ -1019,7 +1019,7 @@ ht-degree: 22%
          + [XCI 구성 옵션 지정](/help/forms/using/admin-help/specify-xci-configuration-options.md)
          + [출력에 대한 캐싱 구성](/help/forms/using/admin-help/configuring-caching-output.md)
          + [출력을 위한 파일 위치 지정](/help/forms/using/admin-help/specify-file-locations-output.md)
-         + [글꼴 사용 가능](/help/forms/using/admin-help/make-fonts-available.md)
+         + [글꼴을 사용 가능하도록 제공](/help/forms/using/admin-help/make-fonts-available.md)
          + [포함할 글꼴 지정](/help/forms/using/admin-help/specify-fonts-embed.md)
          + [보안 설정 지정](/help/forms/using/admin-help/specify-security-settings.md)
          + [문자 집합 변경](/help/forms/using/admin-help/change-character-set.md)
@@ -1231,7 +1231,7 @@ ht-degree: 22%
          + [SEO에 대한 URL 구성](/help/commerce/cif/configuring/advanced-url-configuration.md)
          + [캐싱 옵션](/help/commerce/cif/configuring/caching.md)
          + [사용자 정의 HTTP 헤더](/help/commerce/cif/configuring/custom-http-headers.md)
-         + [장바구니 및 Dispatcher 설정](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
+         + [장바구니 및 디스패처 설정](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
       + 개발 {#developing}
          + [AEM을 사용하여 개발](/help/commerce/cif/develop.md)
          + [CIF 구성 요소 스타일링](/help/commerce/cif/customizing/style-cif-component.md)

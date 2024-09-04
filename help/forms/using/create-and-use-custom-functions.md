@@ -1,26 +1,16 @@
 ---
 title: 적응형 양식에서 사용자 정의 함수 만들기 및 추가
 description: AEM Forms은 사용자가 규칙 편집기 내에서 자체 함수를 만들고 사용할 수 있도록 하는 사용자 지정 함수를 지원합니다.
-keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 사용하고, 사용자 지정 함수를 만들고, 규칙 편집기에서 사용자 지정 함수를 사용합니다.
-contentOwner: Ruchita Srivastav
-content-type: reference
-feature: Adaptive Forms,Core Components
-exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
+feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: f63dcd7edca640cee47c8f615d1675ef5052953c
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 5%
+source-wordcount: '1084'
+ht-degree: 4%
 
 ---
 
-
-# 적응형 Forms(핵심 구성 요소)의 사용자 지정 기능
-
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
-| AEM 6.5 | 이 문서 |
+# 적응형 Forms의 사용자 정의 기능
 
 ## 소개
 
