@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a4c95d604e63c4fd00f17d2fb99a9e46f823ca10
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 5%
+source-wordcount: '3063'
+ht-degree: 4%
 
 ---
 
@@ -63,11 +63,11 @@ ht-degree: 5%
 | --- | --- | --- |
 | 픽셀 자르기 | 차원만 기준으로 이미지를 대량으로 자릅니다. | 이 옵션을 사용하려면 자르기 옵션 드롭다운 목록에서 **[!UICONTROL 픽셀 자르기]**&#x200B;를 선택하십시오.<br><br>이미지의 측면을 자르려면 이미지의 모든 측면 또는 각 측면에서 자를 픽셀 수를 입력합니다. 이미지가 잘리는 정도는 이미지 파일의 ppi(인치당 픽셀) 설정에 따라 달라집니다.<br><br>이미지 프로필 픽셀 자르기는 다음과 같은 방식으로 렌더링됩니다.<br>· 값은 위쪽, 아래쪽, 왼쪽 및 오른쪽입니다.<br>· 왼쪽 상단은 `0,0`(으)로 간주되며 여기서 픽셀 자르기가 계산됩니다.<br>· 자르기 시작점: 왼쪽이 X이고 위쪽이 Y<br>· 수평 계산: 원본 이미지의 수평 픽셀 차원에서 왼쪽을 뺀 다음 오른쪽을 뺀 값입니다.<br>· 세로 계산: 세로 픽셀 높이에서 위쪽을 뺀 다음 아래쪽을 뺀 값입니다.<br><br>예를 들어 4000 x 3000픽셀 이미지가 있다고 가정합니다. Top=250, Bottom=500, Left=300, Right=700 값을 사용합니다.<br><br>왼쪽 위(300,250)에서 (4000-300-700, 3000-250-500 또는 3000,2250)의 채우기 공간을 사용하여 자릅니다. |
 | 스마트 자르기 | 시각적 초점을 기반으로 이미지를 대량 자릅니다. | 스마트 자르기는 Adobe Sensei에서 인공 지능의 힘을 사용하여 일괄 이미지 자르기를 빠르게 자동화합니다. 스마트 자르기는 화면 크기에 관계없이 모든 이미지의 초점을 자동으로 감지하여 자르므로 원하는 관심 영역을 캡처할 수 있습니다.</p> <p>스마트 자르기를 사용하려면 자르기 옵션 드롭다운 목록에서 **[!UICONTROL 스마트 자르기]**&#x200B;를 선택한 다음, 응답형 이미지 자르기 오른쪽에 있는 기능을 활성화(켜기)하십시오.</p> <p>기본 중단점 크기인 Large, Medium 및 Small은 일반적으로 대부분의 이미지가 모바일 및 태블릿 장치, 데스크톱 및 배너에서 사용되는 전체 크기 범위를 포함합니다. 원하는 경우 크게, Medium 및 작음의 기본 이름을 편집할 수 있습니다.</p> <p>중단점을 더 추가하려면 **[!UICONTROL 자르기 추가]**&#x200B;를 선택하여 자르기 항목을 삭제하고 [휴지통] 아이콘을 선택하십시오. |
-| 색상 및 이미지 견본 | 벌크는 각 이미지에 대한 이미지 견본을 생성합니다. | **참고**: 스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.<br><br>색상 또는 질감을 표시하는 제품 이미지에서 고품질 견본을 자동으로 찾아 생성합니다.<br><br>색상 및 이미지 견본을 사용하려면 [자르기 옵션] 드롭다운 목록에서 **[!UICONTROL 스마트 자르기]**&#x200B;를 선택한 다음 [색상 및 이미지 견본] 오른쪽에 있는 기능을 활성화(켜기)하십시오. [폭] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.<br><br>렌디션 레일에서 모든 이미지 자르기를 사용할 수 있지만 견본은 URL 복사 기능을 통해서만 사용됩니다. 자신만의 보기 구성 요소를 사용하여 사이트에서 견본을 렌더링합니다. (이 규칙의 예외는 회전 배너입니다. Dynamic Media은 회전 배너에 사용되는 견본의 보기 구성 요소를 제공합니다.)<br><br>**이미지 견본 사용**<br>&#x200B;이미지 견본의 URL은 간단합니다. <br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>이고 `:Swatch`이(가) 자산 요청에 추가됩니다.<br><br>**색상 견본을 사용하여**<br>&#x200B;색상 견본을 사용하려면 다음과 같이 `req=userdata` 요청을 만듭니다.<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>예를 들어, Dynamic Media Classic의 견본 자산은 다음과 같습니다.<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>다음은 견본 자산의 해당 `req=userdata` URL입니다.<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>`req=userdata` 응답은 다음과 같습니다.<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>다음 각 URL 예제와 같이 XML 또는 JSON 형식으로 `req=userdata` 응답을 요청할 수도 있습니다.<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**참고:** 색상 견본을 요청하려면 고유한 WCM 구성 요소를 만들고 24비트 RGB 16진수 값으로 표현되는 `SmartSwatchColor` 특성을 구문 분석하십시오.<br><br>뷰어 참조 가이드의 [`userdata`도 참조하세요](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html). |
+| 색상 및 이미지 견본 | 벌크는 각 이미지에 대한 이미지 견본을 생성합니다. | **참고**: 스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.<br><br>색상 또는 질감을 표시하는 제품 이미지에서 고품질 견본을 자동으로 찾아 생성합니다.<br><br>색상 및 이미지 견본을 사용하려면 [자르기 옵션] 드롭다운 목록에서 **[!UICONTROL 스마트 자르기]**&#x200B;를 선택한 다음 [색상 및 이미지 견본] 오른쪽에 있는 기능을 활성화(켜기)하십시오. [폭] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.<br><br>렌디션 레일에서 모든 이미지 자르기를 사용할 수 있지만 견본은 URL 복사 기능을 통해서만 사용됩니다. 자신만의 보기 구성 요소를 사용하여 사이트에서 견본을 렌더링합니다. (이 규칙의 예외는 회전 배너입니다. Dynamic Media은 회전 배너에 사용되는 견본의 보기 구성 요소를 제공합니다.)<br><br>**이미지 견본 사용**<br>&#x200B;이미지 견본의 URL은 간단합니다. <br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>이고 `:Swatch`이(가) 자산 요청에 추가됩니다.<br><br>**색상 견본을 사용하여**<br>&#x200B;색상 견본을 사용하려면 다음과 같이 `req=userdata` 요청을 만듭니다.<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>예를 들어, Dynamic Media Classic의 견본 자산은 다음과 같습니다.<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>다음은 견본 자산의 해당 `req=userdata` URL입니다.<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>`req=userdata` 응답은 다음과 같습니다.<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>다음 각 URL 예제와 같이 XML 또는 JSON 형식으로 `req=userdata` 응답을 요청할 수도 있습니다.<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**참고:** 색상 견본을 요청하려면 고유한 WCM 구성 요소를 만들고 24비트 RGB 16진수 값으로 표현되는 `SmartSwatchColor` 특성을 구문 분석하십시오.<br><br>뷰어 참조 가이드의 [`userdata`도 참조하세요](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata). |
 
 ## 언샵 마스크 {#unsharp-mask}
 
-You use **[!UICONTROL Unsharp mask]** to fine-tune a sharpening filter effect on the final downsampled image. 효과의 강도, 효과의 반경(픽셀 단위) 및 무시되는 대비 임계값을 제어할 수 있습니다. 이 효과는 Adobe Photoshop의 *언샵 마스크* 필터와 동일한 옵션을 사용합니다.
+**[!UICONTROL 언샵 마스크]**&#x200B;를 사용하여 다운샘플링된 최종 이미지의 선명하게 하기 필터 효과를 미세 조정합니다. 효과의 강도, 효과의 반경(픽셀 단위) 및 무시되는 대비 임계값을 제어할 수 있습니다. 이 효과는 Adobe Photoshop의 *언샵 마스크* 필터와 동일한 옵션을 사용합니다.
 
 >[!NOTE]
 >
@@ -183,17 +183,20 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 스마트 자르기 를 편집하고 저장하면 특정 이미지에 대해 자르기 를 사용하는 모든 곳에서 변경 사항이 전파됩니다.
 
-필요한 경우 스마트 자르기를 다시 실행하여 추가 자르기를 다시 생성할 수 있습니다.
+필요한 경우 스마트 자르기를 다시 실행하여 추가 자르기를 다시 생성합니다.
 
 [여러 이미지의 스마트 자르기 또는 스마트 색상 견본 편집](#editing-the-smart-crop-or-smart-swatch-of-multiple-images)도 참조하세요.
 
 **단일 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면:**
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL Assets]**(으)로 이동한 다음 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
-
 1. 컨텐츠를 열 수 있도록 폴더를 선택합니다.
 1. 조정할 스마트 자르기 또는 스마트 색상 견본의 이미지를 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 스마트 자르기]**&#x200B;를 선택합니다.
+
+   >[!TIP]
+   >
+   >핫키 `s`을(를) 사용하여 스마트 자르기 또는 스마트 견본을 편집하십시오.
 
 1. 다음 중 하나를 수행합니다.
 
@@ -214,7 +217,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 스마트 자르기 를 편집하고 저장하면 특정 이미지에 대해 자르기 를 사용하는 모든 곳에서 변경 사항이 전파됩니다.
 
-필요한 경우 스마트 자르기를 다시 실행하여 추가 자르기를 다시 생성할 수 있습니다.
+필요한 경우 스마트 자르기를 다시 실행하여 추가 자르기를 다시 생성합니다.
 
 **여러 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면:**
 
