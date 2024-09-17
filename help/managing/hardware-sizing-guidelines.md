@@ -5,9 +5,9 @@ exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 9eeba0532a9eddb668b8488218c0570ca2241439
+source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -89,8 +89,6 @@ ht-degree: 0%
 * 시간에 따른 전반적인 컨텐츠 증가
 
 온라인 및 오프라인, 개정 정리 시 디스크 공간이 계속 모니터링됩니다. 사용 가능한 디스크 공간이 위험 값 미만으로 떨어지면 프로세스가 취소됩니다. 임계값은 저장소의 현재 디스크 풋프린트의 25%이며 구성할 수 없습니다. Adobe은 예상 증가량을 포함하는 저장소 크기보다 최소 2~3배 더 큰 디스크 크기를 조정할 것을 권장합니다.
-
-데이터 중복을 위해 독립 디스크의 중복 어레이(RAID, 예: RAID10)를 설정하는 것이 좋습니다.
 
 ### 가상화 {#virtualization}
 
