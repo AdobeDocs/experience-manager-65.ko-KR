@@ -8,9 +8,9 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 60414285277281d9b1e0c9d93ddf04bc267fd0fb
 workflow-type: tm+mt
-source-wordcount: '6409'
+source-wordcount: '6388'
 ht-degree: 1%
 
 ---
@@ -5069,24 +5069,26 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 ![자동 태그 지정된 PDF 문서](assets/auto-tag-api.png)
 
-**구문**: `tag(Document inDoc)`
+<!--
 
-**입력 매개 변수**
+**Syntax**: `tag(Document inDoc)`
+
+**Input Parameters**
 
 <table>
  <tbody>
   <tr>
-   <th>매개변수</th>
-   <th>설명</th>
+   <th>Parameters</th>
+   <th>Description</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>PDF이 포함된 문서 개체.<br /> </td>
+   <td>Document object containing PDF.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-다음 Java 코드는 목록 및 단락이 있는 PDF 문서에 태그를 지정합니다.
+The following Java code tags the PDF document with lists and paragraphs.
 
 ```java
 /*************************************************************************
@@ -5167,4 +5169,6 @@ StructLib.AutoTagDoc(outDoc);
 }
         return outDoc;
 }
+
 ```
+-->
