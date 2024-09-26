@@ -9,7 +9,7 @@ feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 7bf70ba18603bfd17dec391ddcd623e9085fbd04
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 5%
@@ -30,7 +30,7 @@ ht-degree: 5%
 
 **언어 사본 업데이트**
 
-소스 콘텐츠 조각이 업데이트되거나 수정되면 해당 로케일/언어별 콘텐츠 조각은 재번역이 필요합니다. 언어 복사 업데이트 워크플로우는 추가 콘텐츠 조각 그룹을 번역하여 특정 로케일에 대한 언어 사본에 포함합니다. 이 경우 번역된 콘텐츠 조각은 이전에 번역된 콘텐츠 조각을 이미 포함하고 있는 대상 폴더에 추가됩니다.
+소스 콘텐츠 조각이 업데이트되거나 수정되면 해당 로케일/언어별 콘텐츠 조각은 재번역이 필요합니다. 언어 사본 업데이트 워크플로는 추가 콘텐츠 조각 그룹을 번역하여 특정 로케일의 언어 사본에 포함합니다. 이 경우 번역된 콘텐츠 조각은 이전에 번역된 콘텐츠 조각을 이미 포함하고 있는 대상 폴더에 추가됩니다.
 
 ## 워크플로우 만들기 및 번역 {#create-and-translate-workflow}
 
