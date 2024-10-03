@@ -5,10 +5,10 @@ exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 92%
+source-wordcount: '1744'
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,9 @@ Adobe Experience Manager(AEM)는 웹 컨텐츠 액세스 가능성 지침을 최
 
 >[!NOTE]
 >
->[이 지침의 업데이트된 버전인 WCAG 2.2](https://www.w3.org/TR/WCAG22/)는 현재 개발 중이지만 현 시점에서 고려되지는 않습니다.
+>이 문서는 지침의 [업데이트된 버전에서 작성되었으므로 2023년 10월에 WCAG 2.2](https://www.w3.org/TR/)을 사용할 수 있습니다.
+>
+>[WCAG 2.1과의 비교](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) 및 [WCAG 2.2의 새로운 기능](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2)을 참조하십시오.
 
 WCAG 2.1은 장애가 있는 사용자가 웹 콘텐츠를 액세스하여 사용할 수 있도록 하는 데 도움이 되는 기술 독립적 지침 및 성능 기준으로 구성되어 있습니다. 이 지침에서는 시각 장애, 청력 상실, 학습 장애, 연령 관련 제한 사항 등의 장애 여부와 상관없이 최대한 많은 사람이 웹 콘텐츠 작성자, 디자이너 및 개발자가 만든 리소스에 액세스할 수 있는 방법을 웹 콘텐츠 작성자, 디자이너 및 개발자에게 설명합니다.
 
