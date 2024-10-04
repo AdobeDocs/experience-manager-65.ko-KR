@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 6b32cc8be4b1071099b5a31acbfb580b67d50c78
+source-git-commit: 110636c0208a23e0b088e19fe47c38f28adb9bdd
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1980'
 ht-degree: 18%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 18%
 >* 스마트 컨텐츠 서비스는 이미 이 기능이 활성화되어 있는 기존 [!DNL Experience Manager Assets] Managed Services 고객이 사용할 수 있습니다.
 >* 새로운 Experience Manager Assets Managed Services 고객은 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정할 수 있습니다.
 >* 서비스 팩 20 이상의 경우 SCS가 Oauth 통합을 지원하도록 해결 단계를 수행해야 합니다. [OAuth 자격 증명에 대한 스마트 태그 문제 해결](#config-smart-tagging.md)을 참조하십시오.
->* 서비스 팩 21에서 Oauth 통합을 지원하려면 [핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)를 설치해야 합니다.
+>* 서비스 팩 21에서 Oauth 통합을 지원하려면 [SP 21용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)를 설치해야 합니다.
 >* 기존 SCS 구성의 경우 프로세스는 새 OAuth 통합을 설정하는 것과 같습니다. 모든 이전 구성은 자동으로 정리됩니다.
 
 스마트 컨텐츠 서비스를 사용하기 전에 다음을 확인하십시오.
