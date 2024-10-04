@@ -5,7 +5,7 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 110636c0208a23e0b088e19fe47c38f28adb9bdd
+source-git-commit: fed35f2b90e2b8fd9e7240abf3b25e3650fa31c2
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 18%
@@ -14,7 +14,7 @@ ht-degree: 18%
 
 # 스마트 태그 지정을 위해 [!DNL Assets] 준비 {#configure-asset-tagging-using-the-smart-content-service}
 
-스마트 컨텐츠 서비스를 사용하여 자산에 태그를 지정하려면 [!DNL Experience Manager Assets]을(를) Adobe Developer Console과 통합하여 [!DNL Adobe Sensei]의 스마트 서비스를 사용하십시오. 구성이 완료되면 몇 개의 이미지와 태그를 사용하여 서비스를 교육합니다.
+스마트 컨텐츠 서비스를 사용하여 자산에 태그를 지정하려면 [!DNL Experience Manager Assets]을(를) Adobe Developer Console과 통합하여 [!DNL Adobe Sensei]의 스마트 서비스를 사용하십시오. 구성하고 나면 몇 가지 이미지와 태그를 사용하여 서비스를 교육합니다.
 
 >[!NOTE]
 >
