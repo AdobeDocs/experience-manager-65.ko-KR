@@ -9,9 +9,9 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2141'
 ht-degree: 9%
 
 ---
@@ -299,8 +299,15 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 
 그런 다음 아래 절차에 따라 SMTP OAuth 공급자를 구성합니다.
 
+>[!WARNING]
+>
+>이 구성을 완료한 후 OSGi 구성 **CQ Mailer SMTP OAuth2 제공**&#x200B;에 있는 값의 *any*&#x200B;을(를) 변경한 경우 이 단계에 따라 다시 권한을 부여해야 합니다.
+>
+>이러한 작업이 수행되지 않으면 `/conf/global/settings/mailer/oauth`에 저장된 액세스 토큰이 올바르지 않고 SMTP 서버에 대한 OAuth2 연결이 실패합니다.
+
 1. `http://serveraddress:serverport/system/console/configMgr`(으)로 이동하여 AEM 웹 콘솔 열기
 1. 찾은 다음 **CQ 메일 서버 SMTP OAuth2 공급자**&#x200B;를 클릭합니다
+
 1. 다음과 같이 필요한 정보를 입력합니다.
    * 인증 URL: `https://accounts.google.com/o/oauth2/auth`
    * 토큰 URL: `https://accounts.google.com/o/oauth2/token`
@@ -371,6 +378,12 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 **AEM 측 구성**
 
 다음으로 OAuth2 설정을 AEM과 통합합니다.
+
+>[!WARNING]
+>
+>이 구성을 완료한 후 OSGi 구성 **CQ Mailer SMTP OAuth2 제공**&#x200B;에 있는 값의 *any*&#x200B;을(를) 변경한 경우 이 단계에 따라 다시 권한을 부여해야 합니다.
+>
+>이러한 작업이 수행되지 않으면 `/conf/global/settings/mailer/oauth`에 저장된 액세스 토큰이 올바르지 않고 SMTP 서버에 대한 OAuth2 연결이 실패합니다.
 
 1. `http://serveraddress:serverport/system/console/configMgr`(으)로 이동하여 로컬 인스턴스의 웹 콘솔로 이동
 1. **일별 CQ 메일 서비스**&#x200B;를 찾아 클릭하세요.
