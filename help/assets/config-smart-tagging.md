@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 6729a2dbd8c761eb1bba84d8efba7393ac686190
+source-git-commit: 7cc1722617b463fa5da5b965215cd91cc8ea8fb0
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 18%
+source-wordcount: '2193'
+ht-degree: 16%
 
 ---
 
@@ -31,6 +31,35 @@ ht-degree: 18%
 * [스마트 컨텐츠 서비스를 교육합니다](#training-the-smart-content-service).
 
 * 최신 [[!DNL Experience Manager] 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)을 설치하십시오.
+
+## Managed Services Adobe에 대한 Oauth를 지원하도록 SCS 업그레이드 {#scs-upgrade-oauth-managed-services}
+
+**새 사용자**
+
+서비스 팩 21을 설치합니다. 서비스 팩 21에서 Oauth 통합을 지원하려면 [SP 21용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)를 설치해야 합니다.
+
+이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다.
+
+**기존 사용자**
+
+서비스 팩 21로 업그레이드한 경우 Oauth 통합을 지원하려면 [SP 21용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)를 설치하십시오. 모든 기존 구성이 자동으로 삭제됩니다. 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다.
+
+서비스 팩 20 이상의 경우 SCS가 Oauth 통합을 지원하도록 해결 단계를 수행해야 합니다. [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)을 참조하십시오.
+
+## 온프레미스 사용자를 위한 Oauth를 지원하는 SCS 업그레이드 {#scs-upgrade-oauth-on-premise}
+
+**새 사용자**
+
+새 [!DNL Experience Manager Assets] On-Premise 사용자는 스마트 콘텐츠 서비스를 더 이상 사용할 수 없습니다.
+
+**기존 사용자**
+
+이미 이 기능이 활성화되어 있는 기존 온-프레미스 사용자는 스마트 컨텐츠 서비스를 계속 사용할 수 있습니다.
+
+서비스 팩 21로 업그레이드한 경우 Oauth 통합을 지원하려면 [SP 21용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)를 설치하십시오. 모든 기존 구성이 자동으로 삭제됩니다. 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다.
+
+서비스 팩 20 이상의 경우 SCS가 Oauth 통합을 지원하도록 해결 단계를 수행해야 합니다. [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)을 참조하십시오.
+
 
 ## Adobe Developer Console과 통합 {#integrate-adobe-io}
 
