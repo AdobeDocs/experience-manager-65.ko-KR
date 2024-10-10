@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 09f7cf283c67adcc0a14d6a3a75bfdeafc37d151
+source-git-commit: 5b4153f83d725c307e23ea10c4ea151911d4d390
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2062'
 ht-degree: 17%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 17%
 
 **새 사용자**
 
-서비스 팩 21을 설치합니다. 서비스 팩 21에서 Oauth 통합을 지원하려면 [SP 21용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)를 설치해야 합니다.
+서비스 팩 21을 설치합니다. 서비스 팩 21에서 Oauth 통합을 지원하려면 [서비스 팩 21용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)를 설치해야 합니다.
 
 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다.
 
