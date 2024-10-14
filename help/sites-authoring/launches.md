@@ -10,7 +10,7 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 81%
@@ -107,8 +107,7 @@ ht-degree: 81%
 >
 >페이지가 홍보되면 콘텐츠 변경 사항이 반영되지만 구성 요소 위치는 변경되지 않습니다.
 
-
-### 론치 콘솔 {#the-launches-console}
+## 론치 콘솔 {#the-launches-console}
 
 론치 콘솔은 론치에 대한 개요를 제공하며, 나열된 론치에 대해 작업을 수행할 수 있도록 합니다. 이 콘솔은 다음 방법으로 액세스할 수 있습니다.
 
