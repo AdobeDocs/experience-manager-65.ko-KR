@@ -9,7 +9,7 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 93e9f9318f71a0fd1004c49cc9b1b3d349a4c9ed
+source-git-commit: 2d6b0129d28dba954f9854c641386c4c2ad32765
 workflow-type: tm+mt
 source-wordcount: '3323'
 ht-degree: 0%
@@ -138,7 +138,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 
 ## 자주 묻는 질문 {#fag}
 
-+++스마트 이미징과 관련된 라이선스 비용이 있습니까? {#are-there-any-licensing-costs-associated-with-smart-imaging}
++++스마트 이미징과 관련된 라이선스 비용이 있습니까?
 
 아니요. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager - Dynamic Media(온프레미스, AMS 및 Experience Manager as a Cloud Service)에 적용됩니다.
 
@@ -148,7 +148,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 
 +++
 
-+++스마트 이미징은 어떻게 작동합니까? {#how-does-smart-imaging-work}
++++스마트 이미징은 어떻게 작동합니까?
 
 소비자가 이미지를 요청하면 스마트 이미징이 사용자 특성을 분석해 브라우저에 따라 적합한 포맷으로 전환한다. 이러한 형식 변환은 시각적 충실도를 저하시키지 않는 방식으로 수행된다. 스마트 이미징은 다음과 같은 방식으로 브라우저 기능에 따라 이미지를 다른 형식으로 자동으로 변환합니다.
 
@@ -170,7 +170,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 
 +++
 
-+++지원되는 이미지 형식은 무엇입니까? {#what-image-formats-are-supported}
++++지원되는 이미지 형식은 무엇입니까?
 
 스마트 이미징에 지원되는 이미지 형식은 다음과 같습니다.
 
@@ -183,7 +183,7 @@ PNG와 같이 투명성을 지원하는 이미지 파일 형식의 경우 손실
 
 +++
 
-+++스마트 이미징은 이미 사용 중인 기존 이미지 사전 설정에서 어떻게 작동합니까? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
++++스마트 이미징은 이미 사용 중인 기존 이미지 사전 설정에서 어떻게 작동합니까?
 
 스마트 이미징은 모든 이미지 설정을 기준으로 기존 이미지 사전 설정과 원활하게 통합됩니다.
 
@@ -195,7 +195,7 @@ PNG와 같이 투명성을 지원하는 이미지 파일 형식의 경우 손실
 
 <!--
 
-### Do I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
+### Do I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? 
 
 No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add code to your website to detect a user's browser. All of this functionality is handled automatically.
 
@@ -207,13 +207,13 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 <!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-+++스마트 이미징이 HTTPS에서 작동합니까? HTTP/2는 어떻습니까? {#does-smart-imaging-working-with-https-how-about-http}
++++스마트 이미징이 HTTPS에서 작동합니까? HTTP/2는 어떻습니까?
 
 스마트 이미징은 HTTP 또는 HTTPS를 통해 제공되는 이미지에서 작동합니다. 또한 HTTP/2에서도 작동합니다.
 
 +++
 
-+++스마트 이미징을 사용할 수 있습니까? {#am-i-eligible-to-use-smart-imaging}
++++스마트 이미징을 사용할 수 있습니까?
 
 스마트 이미징은 모든 고객에게 즉시 제공됩니다. 혜택을 누리려면 기존 URL 또는 사전 설정에 `bfc=on`, `dpr=on,dprValue`, `network=on` 또는 세 매개 변수 설정을 모두 추가하기만 하면 됩니다.
 
@@ -221,7 +221,7 @@ Smart Imaging을 사용하려면 Experience Manager 계정의 회사 Dynamic Med
 
 +++
 
-+++계정에 대해 스마트 이미징을 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
++++계정에 대해 스마트 이미징을 활성화하는 프로세스는 무엇입니까?
 
 스마트 이미징을 사용하려면 기존 URL 또는 사전 설정에 `bfc=on`, `dpr=on,dprValue` 또는 `network=on` 또는 세 매개 변수 설정을 모두 추가하십시오. 이러한 변경 작업을 수동으로 수행하지 않으려면 지원 사례를 만들어 기본적으로 스마트 이미징을 활성화할 수 있습니다.
 
@@ -278,7 +278,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++스마트 이미징을 사용하여 계정을 활성화할 수 있는 시기는 언제입니까? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
++++스마트 이미징을 사용하여 계정을 활성화할 수 있는 시기는 언제입니까?
 
 고객 지원 팀은 대기 목록에 따라 요청을 받은 순서대로 요청을 처리합니다.
 
@@ -288,7 +288,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++스마트 이미징을 사용하도록 전환할 때의 위험은 무엇입니까? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
++++스마트 이미징을 사용하도록 전환할 때의 위험은 무엇입니까?
 
 고객 웹 페이지에는 위험이 없습니다. 그러나 스마트 이미징으로 전환하면 CDN 캐시가 지워집니다. 이 작업에는 Experience Manager 시 Dynamic Media Classic 또는 Dynamic Media의 새 구성으로 이동하는 작업이 포함됩니다.
 
@@ -296,7 +296,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++스마트 이미징이 예상대로 작동하는지 확인하려면 어떻게 해야 합니까?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
++++스마트 이미징이 예상대로 작동하는지 확인하려면 어떻게 해야 합니까?
 
 1. 계정이 Smart Imaging으로 구성된 후 브라우저에서 Dynamic Media Classic 또는 Adobe Experience Manager - Dynamic Media 이미지 URL을 로드합니다.
 1. 브라우저에서 **[!UICONTROL 보기]** > **[!UICONTROL 개발자]** > **[!UICONTROL 개발자 도구]**(으)로 이동하여 Chrome 개발자 창을 엽니다. 또는 원하는 브라우저 개발자 도구를 선택합니다.
@@ -317,7 +317,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++성능 향상을 어떻게 알 수 있습니까? 스마트 이미징의 이점을 알 수 있는 방법이 있습니까? {#benefits}
++++성능 향상을 어떻게 알 수 있습니까? 스마트 이미징의 이점을 알 수 있는 방법이 있습니까?
 
 스마트 이미징 헤더는 스마트 이미징의 이점을 결정합니다. 스마트 이미징을 사용하도록 설정하면 이미지를 요청한 후 **[!UICONTROL 응답 헤더]** 제목 아래에 다음 강조 표시된 예와 같이 `-X-Adobe-Smart-Imaging`이(가) 표시됩니다.
 
@@ -342,13 +342,13 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++스마트 이미징에서 AVIF 최적화를 비활성화하려면 어떻게 해야 합니까?{#disable-avif}
++++스마트 이미징에서 AVIF 최적화를 비활성화하려면 어떻게 해야 합니까?
 
 기본적으로 WebP를 제공하는 것으로 다시 전환하려면 동일한 것에 대한 지원 사례를 만듭니다. 평소와 같이 매개 변수 `bfc=off`을(를) 이미지의 URL에 추가하여 스마트 이미징을 끌 수 있습니다. 그러나 스마트 이미징의 URL 수정자에서 WebP 또는 AVIF는 선택할 수 없습니다. 이 기능은 회사 계정 수준에서 유지됩니다.
 
 +++
 
-+++요청에 대해 스마트 이미징을 끌 수 있습니까?{#turning-off-smart-imaging}
++++요청에 대해 스마트 이미징을 끌 수 있습니까?
 
 예. 다음 수정자를 추가하여 스마트 이미징을 끌 수 있습니다.
 
@@ -358,7 +358,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++어떤 &quot;조정&quot;을 사용할 수 있습니까? 정의할 수 있는 설정 또는 동작이 있습니까? {#tuning-settings}
++++어떤 &quot;조정&quot;을 사용할 수 있습니까? 정의할 수 있는 설정 또는 동작이 있습니까?
 
 스마트 이미징에는 활성화 또는 비활성화할 수 있는 세 가지 옵션이 있습니다.
 
@@ -368,7 +368,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++Chrome 웹 브라우저에 fmt=tif가 있는 URL이 있습니다. 하지만 ImageServer 오류로 인해 요청이 실패합니다. 왜요? {#fmt-tif}
++++Chrome 웹 브라우저에 fmt=tif가 있는 URL이 있습니다. 하지만 ImageServer 오류로 인해 요청이 실패합니다. 왜일까요?
 
 계정에 스마트 이미징이 활성화되지 않은 경우에는 이 오류가 발생하지 않습니다. 스마트 이미징은 JPEG 또는 PNG 형식에서만 작동합니다.
 
@@ -380,7 +380,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++이미지의 URL에서 TIFF 이미지를 다운로드하려고 합니다. 어떻게 해야 합니까? {#download-tif}
++++이미지의 URL에서 TIFF 이미지를 다운로드하려고 합니다. 어떻게 해야 합니까?
 
 이미지의 URL 경로에 `fmt=tif` 및 `bfc=off`을(를) 추가합니다.
 
@@ -392,43 +392,43 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++스마트 이미징에서 품질 설정을 관리하는 경우 설정할 수 있는 최소 및 최대 수가 있습니까? 즉, 60보다 작지 않고 80보다 크지 않은 품질입니까? {#quality-setting}
++++스마트 이미징에서 품질 설정을 관리하는 경우 설정할 수 있는 최소 및 최대 수가 있습니까? 즉, 60보다 작지 않고 80보다 크지 않은 품질입니까?
 
 현재 그러한 프로비저닝이 없습니다.
 
 +++
 
-+++스마트 이미징에서 자동으로 품질 백분율 출력 설정을 조정합니까? 또는 수동으로 조정된 설정이며 모든 이미지에 적용됩니까? 어떤 범위내에서? {#percent-quality}
++++스마트 이미징에서 자동으로 품질 백분율 출력 설정을 조정합니까? 또는 수동으로 조정된 설정이며 모든 이미지에 적용됩니까? 어떤 범위내에서?
 
 스마트 이미징은 품질 비율을 자동으로 조정합니다. 이러한 품질은 Adobe이 개발한 머신 러닝 알고리즘을 이용하여 결정된다. 이 비율은 범위에 특정하지 않습니다.
 
 +++
 
-+++스마트 이미징에서 어떤 이미지 제공 명령이 지원되거나 무시됩니까? {#support-ignore}
++++스마트 이미징에서 어떤 이미지 제공 명령이 지원되거나 무시됩니까?
 
 `fmt` 및 `qlt` 명령만 무시됩니다. 나머지 모든 명령은 지원됩니다.
 
 +++
 
-+++JPEG 이미지만 스마트 이미징으로 대체됩니까? WebP, PNG 또는 다른 것을 요청하면 어떻게 됩니까? {#replace-request}
++++JPEG 이미지만 스마트 이미징으로 대체됩니까? WebP, PNG 또는 다른 것을 요청하면 어떻게 됩니까?
 
 이 기능은 JPEG 및 PNG에만 작동합니다.
 
 +++
 
-+++JPEG 이미지가 때때로 WebP 대신 Chrome으로 반환되는 이유는 무엇입니까? {#jpeg-returned}
++++JPEG 이미지가 때때로 WebP 대신 Chrome으로 반환되는 이유는 무엇입니까?
 
 스마트 이미징은 전환이 유익한지 여부를 결정합니다. 이렇게 하면 변환에 대한 유익한 새 이미지만 반환됩니다.
 
 +++
 
-+++장치 픽셀 비율(dpr) 기능이 합성 이미지에서 예상대로 작동하지 않는 이유는 무엇입니까? {#composite-images}
++++장치 픽셀 비율(dpr) 기능이 합성 이미지에서 예상대로 작동하지 않는 이유는 무엇입니까?
 
 합성 이미지에 너무 많은 레이어가 포함된 경우 위치 수정자를 사용하는 동안 dpr 기능에 영향을 줄 수 있습니다. 이 문제는 알려져 있으며 향후 스마트 이미징 릴리스에서 수정해야 합니다. 다른 스마트 이미징 기능이 예상대로 작동하지 않는 경우 지원 사례를 만들어 문제를 보고할 수 있습니다.
 
 +++
 
-+++스마트 이미징 PNG가 무손실 WebP/AVIF로 변환하는 이유는 무엇입니까? {#convert-to-lossless}
++++스마트 이미징 PNG가 무손실 WebP/AVIF로 변환하는 이유는 무엇입니까?
 
 PNG가 무손실 포맷이므로, 이전 WebP 및 AVIF가 전달되지 않았으므로, 크기가 예상보다 큽니다. 스마트 이미징에서 이제 손실 변환을 지원합니다. 이 문제를 해결하기 위해 이미지 요청에서 수정자 `cache=update`(한 번만)을(를) 사용할 수 있습니다. 이 수정자 사용의 예:
 
@@ -438,7 +438,7 @@ PNG가 무손실 포맷이므로, 이전 WebP 및 AVIF가 전달되지 않았으
 
 +++
 
-+++스마트 이미징에서 PNG를 사용하여 무손실 변환을 계속하려면 어떻게 해야 합니까? {#continue-using}
++++스마트 이미징에서 PNG를 사용하여 무손실 변환을 계속하려면 어떻게 해야 합니까?
 
 이제 스마트 이미징에서 품질 수준에 따라 손실 변환을 지원합니다. 회사 설정을 통해 또는 이미지의 URL 경로에 `qlt=100`을(를) 추가하여 품질을 100으로 설정하여 무손실 변환을 계속 사용할 수 있습니다.
 
