@@ -6,7 +6,7 @@ exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
 workflow-type: tm+mt
 source-wordcount: '4391'
 ht-degree: 2%
@@ -244,7 +244,7 @@ Microsoft® Word와 같은 다른 프로그램에서 AEM에 붙여넣을 때 허
 
 >[!NOTE]
 >
->대화 상자(클래식 UI)에서 RTE를 사용할 때 서식 있는 텍스트 편집에 최적화된 스타일 시트를 지정할 수 있습니다. 기술적인 제한으로 인해 CSS 컨텍스트가 편집기에서 손실되므로 이 컨텍스트를 에뮬레이션하여 WYSIWYG 경험을 개선할 수 있습니다.
+>대화 상자(클래식 UI)에서 RTE를 사용할 때 서식 있는 텍스트 편집에 최적화된 스타일 시트를 지정할 수 있습니다. 기술적인 제한 사항으로 인해 CSS 컨텍스트가 편집기에서 손실되므로 이 컨텍스트를 에뮬레이션하여 WYSIWYG 경험을 개선할 수 있습니다.
 >
 >리치 텍스트 편집기에서 ID가 `CQrte`인 컨테이너 DOM 요소를 사용합니다. 이 요소는 보고 편집할 수 있는 다양한 스타일을 제공하는 데 사용할 수 있습니다.
 >
@@ -721,7 +721,7 @@ AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
       * 대상 모드를 지정합니다.
 
          * **이름** `mode`
-         * **유형** `String`)
+         * **유형** `String`
          * **값**
 
             * `auto`: 자동 대상이 선택되었음을 의미합니다
