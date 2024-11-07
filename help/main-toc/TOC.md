@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
+source-git-commit: 717c9ae2d6b0552ca5c6386247ef7504dc9785e9
 workflow-type: tm+mt
-source-wordcount: '7448'
+source-wordcount: '7450'
 ht-degree: 22%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 22%
 + 릴리스 정보 {#release-notes}
    + [릴리스 정보](/help/release-notes/release-notes.md)
    + 이전 릴리스 정보 {#service-pack}
+      + [6.5.21](/help/release-notes/previous/6-5-21.md)
       + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
@@ -141,9 +142,9 @@ ht-degree: 22%
       + 개인 맞춤화 {#personalization}
          + [개인화](/help/sites-authoring/personalization.md)
          + [ContextHub 데이터를 사용하여 페이지 미리보기](/help/sites-authoring/ch-previewing.md)
-         + [타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성](/help/sites-authoring/content-targeting-touch.md)
-         + [다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업](/help/sites-authoring/multisite-support-targeted-content.md)
-         + [타겟팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-authoring/technical-multisite-targeted.md)
+         + [타기팅 모드를 사용하여 타기팅된 콘텐츠 작성](/help/sites-authoring/content-targeting-touch.md)
+         + [다중 사이트에서 타기팅된 콘텐츠를 사용하여 작업](/help/sites-authoring/multisite-support-targeted-content.md)
+         + [타기팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-authoring/technical-multisite-targeted.md)
          + [활동 관리](/help/sites-authoring/activitylib.md)
          + [대상자 관리](/help/sites-authoring/managing-audiences.md)
          + [오퍼 생성 및 관리](/help/sites-authoring/offerlib.md)
@@ -166,7 +167,7 @@ ht-degree: 22%
          + [MSM 롤아웃 충돌](/help/sites-administering/msm-rollout-conflicts.md)
          + [MSM 문제 해결 및 FAQ](/help/sites-administering/troubleshoot-msm.md)
          + [MSM 모범 사례](/help/sites-administering/msm-best-practices.md)
-         + [다국어 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md)
+         + [다국어 Sites를 위한 콘텐츠 번역](/help/sites-administering/translation.md)
          + [번역 프로젝트 관리](/help/sites-administering/tc-manage.md)
          + [번역할 콘텐츠 식별](/help/sites-administering/tc-rules.md)
          + [번역을 위한 콘텐츠 준비](/help/sites-administering/tc-prep.md)
@@ -202,7 +203,7 @@ ht-degree: 22%
          + [AEM에서 cURL 사용](/help/sites-administering/curl.md)
          + [프록시 서버 도구(proxy.jar)](/help/sites-administering/proxy-jar.md)
          + [AEM 앱에 대한 구성](/help/sites-administering/config-apps.md)
-         + [검색 양식 구성](/help/sites-administering/search-forms.md)
+         + [검색 Forms 구성](/help/sites-administering/search-forms.md)
          + [도구 콘솔](/help/sites-administering/tools-consoles.md)
          + [보고](/help/sites-administering/reporting.md)
          + [레이아웃 컨테이너 및 레이아웃 모드 구성](/help/sites-administering/configuring-responsive-layout.md)
@@ -512,7 +513,7 @@ ht-degree: 22%
       + [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md)
       + [대화형 통신 소개](/help/forms/using/interactive-communications-overview.md)
       + [양식 관리 소개](/help/forms/using/introduction-managing-forms.md)
-      + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko)
+      + [자동 Forms 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko)
       + 자습서: 첫 번째 적응형 양식 {#create-first-adaptive-form} 만들기
          + [자습서: 첫 번째 적응형 양식 만들기](/help/forms/using/create-your-first-adaptive-form.md)
          + [자습서: 적응형 양식 만들기](/help/forms/using/create-adaptive-form.md)
@@ -536,7 +537,7 @@ ht-degree: 22%
          + [적응형 양식 조각 참조](/help/forms/using/reference-adaptive-form-fragments.md)
          + [참조 테마](/help/forms/using/reference-themes.md)
          + [참조 편지 템플릿](/help/forms/using/reference-cm-layout-templates.md)
-         + [We.Finance 참조 사이트의 홈 모기지 워크플로에 대해 Microsoft Dynamics 365를 구성합니다.](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
+         + [We.Finance 참조 사이트의 홈 모기지 워크플로우에 대해 Microsoft Dynamics 365 구성](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
    + AEM Forms {#install-aem-forms} 설치 및 구성
       + [AEM Forms의 아키텍처 및 배포 토폴로지](/help/forms/using/aem-forms-architecture-deployment.md)
       + [AEM Forms 설치를 위한 지속성 유형 선택](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
@@ -607,7 +608,7 @@ ht-degree: 22%
          + [JEE의 AEM Forms에 대한 일반 보안 고려 사항](/help/forms/using/general-security-considerations.md)
          + [JEE 환경에서 AEM Forms 강화](/help/forms/using/hardening-aem-forms-jee-environment.md)
          + [JEE에서 AEM Forms에 대한 보안 관리 설정 구성](/help/forms/using/configuring-secure-administration-settings-aem.md)
-   + 양식 데이터 모델 {#form-data-model}
+   + Forms 데이터 모델 {#form-data-model}
       + [AEM Forms 데이터 통합 소개](/help/forms/using/data-integration.md)
       + [데이터 소스 구성](/help/forms/using/configure-data-sources.md)
       + [Microsoft Dynamics Odata 구성](/help/forms/using/ms-dynamics-odata-configuration.md)
@@ -672,7 +673,7 @@ ht-degree: 22%
       + [사용자 그룹을 선택하는 규칙 편집기 액세스 부여](/help/forms/using/rule-editor-access-user-groups.md)
       + [AEM 번역 워크플로를 사용하여 적응형 양식 및 기록 문서 현지화](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
       + [적응형 양식에 대한 스타일 구성](/help/forms/using/styling-constructs-adaptive-forms.md)
-      + [적응형 Forms과 XFA 양식 템플릿 동기화](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
+      + [적응형 양식과 XFA Forms 템플릿 동기화](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
       + [Adobe Sign과 AEM Forms 통합](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [양식에서 자산에 대한 검토 만들기 및 관리](/help/forms/using/create-reviews-forms.md)
       + [AEM Sites 단일 페이지 애플리케이션에 적응형 양식 또는 대화형 통신 포함](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
@@ -835,7 +836,7 @@ ht-degree: 22%
       + [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)
       + [초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
       + [초안 및 제출을 위한 스토리지 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md)
-      + [AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리](/help/forms/using/manage-applications-inbox.md)
+      + [AEM 받은 편지함 Forms 애플리케이션 및 작업 관리](/help/forms/using/manage-applications-inbox.md)
       + [AEM Forms의 감시 폴더](/help/forms/using/watched-folder-in-aem-forms.md)
       + [초안 및 제출 구성 요소](/help/forms/using/draft-submission-component.md)
       + [페이지에 링크 구성 요소 포함](/help/forms/using/embedding-link-component-page.md)
@@ -1219,7 +1220,7 @@ ht-degree: 22%
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [서드파티 상거래 솔루션](/help/commerce/cif/integrating/third-party.md)
    + AEM Storefront {#storefront}
-      + [시작](/help/commerce/cif/getting-started.md)
+      + [시작하기](/help/commerce/cif/getting-started.md)
       + 작성 {#authoring}
          + [상거래 경험](/help/commerce/cif/authoring/authoring-commerce-experiences.md)
          + [제품 관리실](/help/commerce/cif/authoring/product-cockpit.md)
