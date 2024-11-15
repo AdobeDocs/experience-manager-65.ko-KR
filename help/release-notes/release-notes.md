@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 83bebdd7b4813c4b0dea1e237b73a51d68699646
+source-git-commit: 28f8cbca33d8174d937da12d1854783cf75413c1
 workflow-type: tm+mt
-source-wordcount: '4514'
+source-wordcount: '4521'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 3%
 
 ### Sites {#sites}
 
-[범용 편집기](/help/sites-developing/universal-editor/introduction.md)를 이제 AEM 6.5에서 Headless 사용 사례에 사용할 수 있습니다.
+[이제 기능 팩의 응용 프로그램에서 headless 사용 사례에 대해 AEM 6.5에서 유니버설 편집기](/help/sites-developing/universal-editor/introduction.md)를 사용할 수 있습니다.
 
 ### [!DNL Forms]
 
