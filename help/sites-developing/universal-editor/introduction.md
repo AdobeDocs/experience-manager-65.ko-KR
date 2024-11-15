@@ -3,9 +3,10 @@ title: 유니버설 편집기
 description: 범용 편집기의 유연성과 AEM 6.5를 사용하여 Headless 경험을 제공하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 feature: Developing
 role: Developer
-source-git-commit: a088fcb3069fae7e63c7238710534d817a308eff
+exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
+source-git-commit: 6301f0fdba9f7a6fa8fa998759b9ebad6b4fa9a6
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -46,17 +47,17 @@ ht-degree: 1%
 
 ### AEM 업데이트 {#update-aem}
 
-AEM 6.5와 함께 범용 편집기를 사용하려면 AEM용 서비스 팩 21 및 기능 팩이 필요합니다.
+AEM 6.5와 함께 범용 편집기를 사용하려면 서비스 팩 21 또는 22와 AEM용 기능 팩이 필요합니다.
 
 #### 최신 서비스 팩 적용 {#latest}
 
-AEM 6.5용 서비스 팩 21 이상을 실행 중인지 확인하십시오. [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)에서 최신 서비스 팩을 다운로드할 수 있습니다.
+AEM 6.5용 서비스 팩 21 또는 22 이상을 실행 중인지 확인하십시오. [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)에서 최신 서비스 팩을 다운로드할 수 있습니다.
 
 #### 범용 편집기 기능 팩 설치 {#feature-pack}
 
 **AEM 6.5용 유니버설 편집기 기능 팩을 설치하십시오** [소프트웨어 배포에서 사용할 수 있습니다.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
 
-이미 서비스 팩 23 이상을 실행 중인 경우 이 단계는 필요하지 않습니다.
+이미 서비스 팩 23 이상을 실행 중인 경우 기능 팩이 필요하지 않습니다.
 
 ### 서비스 구성 {#configure-services}
 
