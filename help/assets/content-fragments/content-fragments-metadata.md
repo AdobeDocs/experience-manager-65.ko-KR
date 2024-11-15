@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 81%
+source-wordcount: '228'
+ht-degree: 79%
 
 ---
 
 # 메타데이터 - 조각 속성 {#metadata-fragment-properties}
 
-AEM에서 콘텐츠 조각에 대한 메타데이터 속성을 보고 편집하여 Headless 콘텐츠를 조정하는 방법을 참조하십시오.
+콘텐츠 조각 편집기를 사용하여 AEM에서 콘텐츠 조각에 대한 메타데이터 속성을 보고 편집하여 Headless 콘텐츠를 조정하는 방법을 참조하십시오.
 
 ## 속성/메타데이터 편집 {#editing-properties-meta-data}
 

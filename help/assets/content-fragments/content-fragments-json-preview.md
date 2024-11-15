@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User,Developer
 exl-id: c58a3cfd-6348-4a2e-996a-5fdb96415adb
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 100%
+source-wordcount: '117'
+ht-degree: 70%
 
 ---
 
 # 미리보기 - JSON 표현식 {#preview-json-representation}
 
-AEM Headless 구현의 일부로 콘텐츠 조각용 모델을 개발할 때, 모델을 기반으로 콘텐츠 조각에 대한 샘플 JSON 출력을 볼 수 있습니다. 예를 들어 최종 출력이 어떻게 표시될지 확인할 수 있습니다. 이 기능은 데이터 유형별 기본 샘플 콘텐츠와 함께 모델 JSON 구조의 유효성을 검사할 때 유용합니다.
+AEM Headless 구현의 일부로 콘텐츠 조각용 모델을 개발할 때, 콘텐츠 조각 편집기를 사용하여 모델을 기반으로 콘텐츠 조각에 대한 샘플 JSON 출력을 볼 수 있습니다. 예를 들어 최종 출력이 어떻게 표시될지 확인할 수 있습니다. 이 기능은 데이터 유형별 기본 샘플 콘텐츠와 함께 모델 JSON 구조의 유효성을 검사할 때 유용합니다.
 
 **미리보기** 아이콘을 사용하여
 
