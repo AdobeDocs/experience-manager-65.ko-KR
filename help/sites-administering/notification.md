@@ -9,10 +9,10 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
+source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
 workflow-type: tm+mt
-source-wordcount: '2141'
-ht-degree: 9%
+source-wordcount: '2149'
+ht-degree: 8%
 
 ---
 
@@ -119,9 +119,11 @@ This is an automatically generated message. Please do not reply.
 
 페이지 알림용 영어 이메일 템플릿을 사용자 정의하려면 다음 작업을 수행하십시오.
 
-1. CRXDE에서 다음 파일을 엽니다.
+1. [페이지 알림](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)에 대한 오버레이 만들기
 
-   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
+1. 파일을 엽니다.
+
+   `en.txt`
 
 1. 필요에 따라 파일을 수정합니다.
 1. 변경 사항을 저장합니다.
@@ -181,9 +183,11 @@ This is an automatically generated message. Please do not reply.
 
 워크플로우 이벤트 알림을 위한 영어 이메일 템플릿을 사용자 정의하려면 다음 작업을 수행하십시오.
 
-1. CRXDE에서 다음 파일을 엽니다.
+1. [워크플로 알림](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)에 대한 오버레이 만들기
 
-   `/libs/settings/workflow/notification/email/default/en.txt`
+1. 파일을 엽니다.
+
+   `en.txt`
 
 1. 필요에 따라 파일을 수정합니다.
 1. 변경 사항을 저장합니다.
@@ -239,11 +243,12 @@ subject=<text_1>
 
 새 언어에 대한 템플릿을 추가하려면 다음 작업을 수행하십시오.
 
-1. CRXDE에서 아래에 `<language-code>.txt` 파일을 추가하십시오.
+1. 필요에 따라 [오버레이](/help/sites-developing/overlays.md)를 만듭니다.
 
-   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : 페이지 알림용
-   * `/libs/settings/workflow/notification/email/default` : 워크플로 알림용
+   * [페이지 알림](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
+   * [워크플로 알림](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
+1. `<language-code>.txt` 파일을 추가합니다.
 1. 파일을 언어에 맞게 조정합니다.
 1. 변경 사항을 저장합니다.
 
