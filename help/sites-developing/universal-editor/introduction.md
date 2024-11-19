@@ -4,7 +4,7 @@ description: 범용 편집기의 유연성과 AEM 6.5를 사용하여 Headless �
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 6301f0fdba9f7a6fa8fa998759b9ebad6b4fa9a6
+source-git-commit: c3af0befce5534891d45c2507684a2017f9363f8
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 1%
@@ -68,7 +68,7 @@ AEM 6.5용 서비스 팩 21 또는 22 이상을 실행 중인지 확인하십시
 1. 구성 관리자를 엽니다.
    * `http://<host>:<port>/system/console/configMgr`
 1. 목록에서 **Adobe Granite 토큰 인증 처리기**&#x200B;를 찾은 다음 **구성 값 변경**&#x200B;을 클릭합니다.
-1. 대화 상자에서 로그인 토큰 쿠키&#x200B;**(`token.samesite.cookie.attr`)값의** SameSite 특성을 `Partitioned`(으)로 변경합니다.
+1. 대화 상자에서 로그인 토큰 쿠키&#x200B;**(`token.samesite.cookie.attr`) 값의** SameSite 특성을 `Partitioned`(으)로 변경합니다.
 1. **저장**&#x200B;을 클릭합니다.
 
 #### `SAMEORIGIN` 헤더 X-Frame 옵션을 제거합니다. {#sameorigin}
