@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 38271b27134afa2b350c6595cf0bdc335f110be3
+source-git-commit: e3b96392f656b6dcbd583c18a343b56d4371c4ef
 workflow-type: tm+mt
-source-wordcount: '5027'
+source-wordcount: '4733'
 ht-degree: 2%
 
 ---
@@ -50,21 +50,6 @@ ht-degree: 2%
 ### [!DNL Assets]
 
 이제 IPTC 탭에서 [!UICONTROL 대체 텍스트] 및 [!UICONTROL 확장 설명] 텍스트 필드를 지원합니다. (ASSETS-34918)
-
-### [!DNL Forms]
-
-* **OAuth 자격 증명 지원**: 기존 서비스 계정(JWT) 자격 증명을 대체하면서 서버 간 인증에 새롭고 사용하기 쉬운 자격 증명을 사용합니다. (NPR-41994)
-* [AEM Forms의 규칙 편집기 개선 사항](/help/forms/using/rule-editor-core-components.md):
-   * `When-then-else` 기능을 사용하여 중첩된 조건을 구현할 수 있도록 지원합니다.
-   * 필드를 포함한 패널 및 양식의 유효성을 검사하거나 재설정합니다.
-   * 사용자 지정 함수 내에서 let 및 arrow 함수(ES10 지원)와 같은 최신 JavaScript 기능을 지원합니다.
-* [PDF 접근성을 위한 AutoTag API](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services): 이제 OSGi의 AEM Forms에서 태그: 단락 및 목록을 추가하여 접근성 표준에 대한 PDF을 개선하기 위해 새로운 AutoTag API를 지원합니다. 보조 기술을 가진 사용자가 PDF에 보다 쉽게 액세스할 수 있도록 해줍니다.
-* **16비트 PNG 지원**: 이제 PDF Generator의 ImageToPdf 서비스에서 16비트 색상 깊이의 PNG 변환을 지원합니다.
-* **XDP의 개별 텍스트 블록에 아티팩트 적용**: 이제 Forms Designer을 사용하여 사용자가 XDP 파일의 개별 텍스트 블록에 대한 설정을 구성할 수 있습니다. 이 기능을 사용하면 결과 PDF에서 아티팩트로 처리되는 요소를 제어할 수 있습니다. 머리글 및 바닥글과 같은 이러한 요소는 보조 기술에 액세스할 수 있습니다. 주요 기능에는 텍스트 블록을 아티팩트로 표시하고 이러한 설정을 XDP 메타데이터에 포함시키는 작업이 포함됩니다. Forms 출력 서비스는 PDF 생성 중에 이러한 설정을 적용하여 적절한 PDF/UA 태깅을 보장합니다.
-* **AEM Forms Designer이 `GB18030:2022` standard로 인증되었습니다**: 이제 `GB18030:2022` 인증을 통해 Forms Designer에서 편집 가능한 모든 필드와 대화 상자에 중국어 문자를 입력할 수 있는 중국어 유니코드 문자 집합을 지원합니다.
-* 이제 JEE 서버의 PDF Generator 서비스는 기존 WebKit 및 Windows 전용 WebCapture 경로와 함께 HTML을 PDF으로 변환하는 WebToPDF 경로](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings)를 지원합니다. [ WebToPDF 경로는 OSGi에서 이미 사용할 수 있고 JEE로 확장되어 있습니다. 이제 JEE 및 OSGi 플랫폼 모두에서 PDF Generator 서비스는 서로 다른 운영 체제에서 다음 경로를 지원합니다.
-   * **Windows**: WebKit, WebCapture, WebToPDF
-   * **Linux®**: WebKit, WebToPDF
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
