@@ -10,9 +10,9 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4ce52d90f9d3300e543563ce3dc242f28e00912e
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
 >
 >* 64비트 버전의 디자이너는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
 >* 32비트 버전의 디자이너는 [AEM Forms 서비스 팩 21(6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 릴리스 이후 더 이상 사용되지 않습니다.
+> * Forms Designer에 대해 지원되는 플랫폼은 AEM Forms 지원 플랫폼과 일치합니다. Forms Designer에 대해 지원되는 플랫폼에 대해 알아보려면 [여기를 클릭](/help/forms/using/aem-forms-jee-supported-platforms.md)하십시오.
 
 Forms Designer 설치에 대한 자세한 내용은 [자주 묻는 질문](#fandq)을 참조하세요.
 
