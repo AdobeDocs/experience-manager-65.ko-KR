@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
+source-git-commit: 27283286bd514c6f8902297cd9229b5e92a3c60d
 workflow-type: tm+mt
-source-wordcount: '6070'
+source-wordcount: '6089'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 * [PDF/A 규정 준수 개선 사항](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): 이제 PDF은 보관용으로 PDF/A 형식(1a, 2a, 3a)으로 전환하면서 접근성을 보장하고 이러한 표준 준수를 확인할 수 있습니다.
 
-* **정적 PDF 문서의 글꼴 자동 크기 조정 지원**: AEM Forms Designer은 이제 .xdp 파일의 자동 크기 조정 기능을 지원합니다. 이제 사용자는 XDP의 텍스트 필드, 숫자 필드, 암호 필드 및 날짜/시간 필드에 대해 자동 크기 조정을 지정하여 정적 PDF 문서에서 이러한 필드 콘텐츠를 자르지 않고 텍스트 필드 콘텐츠를 렌더링할 수 있습니다.
+* **정적 PDF 문서의 글꼴 자동 크기 조정 지원**: AEM Forms Designer, OutputService 및 FormsService는 이제 정적 PDF의 글꼴 자동 크기 조정을 지원합니다. 텍스트 필드, 숫자 필드, 암호 필드 또는 날짜/시간 필드와 같은 필드의 템플릿에서 글꼴 크기 0을 언급하는 경우 필드 자체의 크기를 변경하지 않고 글꼴 크기가 이러한 필드 내에서 자동으로 조정됩니다. 기능을 사용하려면 사용자가 사용자 지정 xci에 플래그를 전달합니다. `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -223,7 +223,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 -->
 
-#### Forms {#forms-bug-fixes-sp22}
+### Forms {#forms-bug-fixes-sp22}
 
 * AEM Forms에 저장된 초안의 첨부 파일에 대해 생성된 URL이 구성된 Apache Sling Resource Resolver Factory 매핑을 반영하지 않습니다. (FORMS-16949)
 * AEM Forms 서비스 팩 19(6.5.19.0)의 사용자가 문자를 미리 볼 때 공백이 없고 &#39;&#39;x&#39; 문자가 일부 위치에 표시되므로 콘텐츠가 제대로 정렬되지 않습니다. (FORMS-16670)
