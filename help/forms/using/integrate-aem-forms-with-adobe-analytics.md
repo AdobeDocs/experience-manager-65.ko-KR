@@ -6,9 +6,9 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 38e3439b5b9f3b4bc56bb1618d33e570ca0603f5
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1810'
 ht-degree: 0%
 
 ---
@@ -220,6 +220,11 @@ Adobe Launch 구성을 만들려면 다음 단계를 수행하십시오.
 1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 선택합니다.
 
 1. 구성을 Publish에 추가합니다.
+
+>[!NOTE]
+>
+> [AEM Sites 페이지 내에 AEM Forms을 포함](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites)하면 적응형 양식용 iFrame에서 Adobe 실행 구성이 지원되지 않습니다. 이 문제를 해결하려면 사이트 페이지에서 직접 Adobe 실행 규칙을 구성하거나 기존 Adobe 실행 구성을 AEM Forms에서 사이트 페이지로 마이그레이션합니다.
+
 
 ### 적응형 양식에 [!DNL Adobe Analytics] 사용 {#enable-analytics-adaptive-form}
 

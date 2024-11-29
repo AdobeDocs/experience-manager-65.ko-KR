@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: e3b96392f656b6dcbd583c18a343b56d4371c4ef
+source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
 workflow-type: tm+mt
-source-wordcount: '4733'
+source-wordcount: '6070'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,27 @@ ht-degree: 2%
 
 ## 주요 기능 및 개선 사항
 
+### Forms {#forms-sp22}
+
 이번 릴리스의 주요 기능 및 개선 사항은 다음과 같습니다.
+
+* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) 및 [Cloudfare Turnstile Captcha 서비스](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms에서는 다음 Captcha 서비스를 지원합니다.
+   * Captcha는 확인란 위젯으로 사용자에게 도전하여 봇, 스팸 및 자동 남용으로부터 양식을 보호합니다. 인간 사용자만 진행하도록 보장해 온라인 거래에 대한 보안을 강화한다.
+   * Cloudflare Turnstile은 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식을 보호하기 위한 보안 조치를 제공합니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다.
+
+* 적응형 양식 버전 관리:
+   * [적응형 양식의 여러 버전 만들기](/help/forms/using/add-versioning-reviews-comments.md): 이제 사용자가 기존 양식의 변형을 쉽게 관리할 수 있습니다. 이에 따라 간소화된 단일 워크플로 내에서 버전 제어가 단순화되고, 양식 최적화를 위한 비교가 용이해집니다.
+   * [적응형 Forms 비교](/help/forms/using/compare-forms-core-components.md): 이제 사용자는 두 양식을 쉽게 비교하여 차이점을 식별할 수 있습니다. 팀원이 수정본을 비교하고 변경 사항을 효율적으로 논의할 수 있도록 하여 원활한 공동 작업을 촉진합니다.
+
+* [대화형 통신 일괄 처리 API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel)에서 글꼴 임베딩을 사용하도록 설정할 수 있는 지원이 추가되었습니다. 이제 대화형 통신에 일괄 처리 API를 통해 생성된 PDF에 Adobe Ming 및 Adobe Myungjo 글꼴을 포함할 수 있는 지원이 포함됩니다. 이러한 개선된 기능은 글꼴 하위 집합을 사용하는 경우에도 생성된 문서에서 정확한 텍스트 렌더링을 보장하여 PDF 출력에서 다국어 콘텐츠에 대한 향상된 지원을 제공합니다.
+
+* [PDF 접근성을 위한 목차 API](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api): 이제 OSGi의 AEM Forms에서 새로운 TOC Tag API를 지원하여 접근성 표준에 대한 PDF을 향상합니다. 보조 기술을 가진 사용자가 PDF에 보다 쉽게 액세스할 수 있도록 해줍니다.
+
+* [조각 XDP 확인](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository): 이제 OSGi의 AEM Forms이 기본 XDP에서 참조되고 AEM CRX 저장소에 저장된 조각 XDP를 확인합니다.
+
+* [PDF/A 규정 준수 개선 사항](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): 이제 PDF은 보관용으로 PDF/A 형식(1a, 2a, 3a)으로 전환하면서 접근성을 보장하고 이러한 표준 준수를 확인할 수 있습니다.
+
+* **정적 PDF 문서의 글꼴 자동 크기 조정 지원**: AEM Forms Designer은 이제 .xdp 파일의 자동 크기 조정 기능을 지원합니다. 이제 사용자는 XDP의 텍스트 필드, 숫자 필드, 암호 필드 및 날짜/시간 필드에 대해 자동 크기 조정을 지정하여 정적 PDF 문서에서 이러한 필드 콘텐츠를 자르지 않고 텍스트 필드 콘텐츠를 렌더링할 수 있습니다.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -195,10 +215,57 @@ AEM 6.5.18과 6.5.19에서 상위 페이지를 비활성화하면 각 하위 페
 
 프로덕션 문제로 인해 Dynamic Media에 비디오를 업로드하지 못하여 사용자 인터페이스에 프로세스 실패 오류가 표시되면서 마이그레이션 프로세스가 중단되었습니다. (ASSETS-36038)
 
+<!--
 
 ### [!DNL Forms]{#forms-6522}
 
-[!DNL Experience Manager] Forms의 수정 사항은 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 날짜로부터 1주일 후에 별도의 추가 기능 패키지를 통해 전달됩니다. 이 경우 AEM 6.5.22.0 Forms 추가 기능 패키지 릴리스가 2024년 11월 28일 목요일에 예약되었습니다. 릴리스가 게시되는 이 섹션에 Forms 수정 사항 및 개선 사항 목록이 추가됩니다.
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.22.0 Forms add-on package release is scheduled for Thursday, November 28, 2024. A list of Forms fixes and enhancements is added to this section post the release.
+
+-->
+
+#### Forms {#forms-bug-fixes-sp22}
+
+* AEM Forms에 저장된 초안의 첨부 파일에 대해 생성된 URL이 구성된 Apache Sling Resource Resolver Factory 매핑을 반영하지 않습니다. (FORMS-16949)
+* AEM Forms 서비스 팩 19(6.5.19.0)의 사용자가 문자를 미리 볼 때 공백이 없고 &#39;&#39;x&#39; 문자가 일부 위치에 표시되므로 콘텐츠가 제대로 정렬되지 않습니다. (FORMS-16670)
+* AEM Forms 서비스 팩 18(6.5.18.0)의 사용자가 CIF 프로토콜을 사용하여 파일을 인쇄하려고 할 때 실패하고 다음과 같은 오류가 표시됩니다. (FORMS-16629)
+  `ALC-OUT-001-401: Unknown error while printing using CIFS on the Printer: \\\\\\\\NSMVPLUETEST01\\\\TH_Test`
+* 사용자가 AEM Forms 서비스 팩 17(6.5.17.0)에서 AEM Forms 서비스 팩 20(6.5.20.0)으로 업그레이드할 때 규칙 편집기 아이콘이 양식 컨테이너 수준에 표시되지 않습니다. (FORMS-16430)
+* 사용자가 AEM Forms 서비스 팩 17(6.5.17.0)에서 AEM Forms 서비스 팩 21(6.5.21.0)로 업그레이드할 때 수정된 적응형 양식 제출 URL 경로가 작동하지 않습니다. (FORMS15894)
+* AEM Forms 서비스 팩 19(6.5.19.0)에서 `creation date and modification date mismatch with timezone` 오류가 있는 특정 파일에 대해 AEM Forms 6.5 PDF/A 유효성 검사가 실패하고, 준수 검사에 대한 Acrobat Pro PDF/A 유효성 검사에서 원활하게 실행됩니다. (FORMS-15840)
+* 사용자가 OSGi의 AEM Forms 서비스 팩 15(6.5.15.0)에서 사이트 페이지의 &quot;초안 및 제출&quot; 구성 요소를 사용하여 양식 초안을 삭제하면 삭제가 실패합니다. (FORMS-15755)
+* 사용자에게 999개가 넘는 항목이 있는 SharePoint 목록이 있고 양식에 첨부 파일이 포함되어 있으면 양식 제출이 실패합니다. (FORMS-15057)
+* 사용자가 시작 날짜 및 종료 날짜로 레이블이 지정된 두 개의 날짜 선택기 구성 요소를 사용할 때, 종료 날짜가 시작 날짜보다 빠르지 않은지 확인하는 유효성 검사 규칙을 추가하고 사용자 지정 스크립트 유효성 검사 메시지를 설정한 후 종료 날짜가 시작 날짜보다 빠를 경우 유효성 검사가 트리거되지 않습니다. (FORMS-14757)
+* 사용자가 적응형 양식의 테이블에서 표시 및 숨기기 기능을 사용하면 필드 크기가 줄어듭니다. 필드 크기는 행 추가 및 제거 시 자체적으로 수정됩니다. (FORMS-14756)
+* 사용자가 AEM Forms 서비스 팩 19(6.5.19.0)에서 양식을 인쇄할 때 일부 양식이 서버에서 올바르게 렌더링되지 않아 인쇄 프로세스 중에 오류가 발생합니다. (FORMS14734)
+* 사용자가 AEM Forms 서비스 팩 15(6.5.15.0)에서 AEM Forms 서비스 팩 19(6.5.19.0)로 업데이트하고 특정 변수가 숫자로 설정되고 사용자 지정 표시 패턴이 num{$zzz,zz9.99}(으)로 설정된 양식을 사용할 때 미리보기 및 에이전트 UI에서 패턴이 올바르게 렌더링되지 않습니다. (FORMS-14694)
+* 사용자가 저장된 데이터 xml이 있는 대화형 통신에서 문자를 미리 보면 문자가 AEM UI의 &quot;로드 중&quot; 상태에서 멈춥니다. 동일한 XML을 사용하여 편지 미리 보기를 다시 해도 잘 작동합니다. (FORMS-14521)
+* AEM Forms 서비스 팩 20(6.5.20.0)의 사용자가 적응형 양식의 &#39;이메일 보내기&#39; 제출 액션 단추를 사용하여 첨부 파일이 있는 이메일을 보내면 첨부 파일 이름이 인라인이 아닌 다음 줄에 나타납니다. (FORMS-14426)
+* PDF이 AEM Forms에서 글머리 기호 목록이 기본 &quot;디스크&quot; 스타일로 설정된 PDF을 생성하면 Adobe Acrobat의 접근성 도구에서 접근성 검사를 실패합니다. 글머리 기호 및 사각형 스타일이 포함된 목록은 접근성 검사를 통과합니다. (FORMS-13802, LC-3922179)
+* 사용자가 독립형 RHEL8 JBoss 설정에서 AEMForms-6.5.0-0065에서 AEMForms-6.5.0-0087로 업그레이드할 때 LiveCycle 서비스 컨테이너와 연결하지 못합니다. (FORMS-15907) ·
+* JEE의 AEM Forms에서 사용자가 이전에 제출한 양식을 선택하고 새 양식 프로세스를 시작할 때 AEM Workspace에서 미리 채워진 데이터 프로세스가 있는 양식은 이전 양식에 수동으로 입력된 필드를 유지하지 않고 이전에 제출된 모든 데이터를 지우고 미리 채워진 데이터로 대체합니다. (FORMS-15376)
+* AEM Forms 서비스 팩 20(6.5.20.0)에서 사용자가 PDFG 서비스를 사용하여 Tiff 파일을 PDF으로 변환할 때 다음 오류와 함께 실패합니다. (FORMS-14879) 입력 이미지 파일을 PDF으로 변환하는 동안 ALC-PDG-011-028-Error 가 발생했습니다. com/sun/image/codec/jpeg/JPEGCodec
+* AEM Forms on JEE jar 파일의 업그레이드: 이제 다음과 같은 다양한 AEM Forms JEE 작업에서 종속성 확인 및 기능을 개선하기 위해 `commons-collections:commons-collections:jar` 라이브러리가 포함됩니다.
+   * 작업 처리 및 오류 처리를 개선하기 위한 어셈블러 작업 개선 사항.
+   * PDF Generator(PDFG) 작업을 개선하여 문서 생성 및 전환을 위한 작업을 더욱 원활하게 수행할 수 있습니다.
+   * 버전 간의 안정적인 전환을 보장하면서 업그레이드 프로세스를 개선하기 위한 LC-업그레이드 작업 개선.
+   * 문서 처리 및 향상된 권한 관리 기능을 보호하기 위한 Rights Management 작업 개선 사항입니다.
+   * 보다 안정적인 작업 처리 및 시스템 관리를 위한 프로세스 관리 작업 개선.
+
+
+#### XMLFM {#forms-xmlfm-sp22}
+
+* AEM Forms 서비스 팩 21(6.5.21.0)에서 사용자가 XMLFM을 사용하여 PDF에 비표준 태그를 추가하면 문서가 PDF 사양 요구 사항을 준수하지 못합니다. (LC-3922484)
+* 사용자가 AEM Forms 서비스 팩 20의 출력 서비스(6.5.20.0)를 사용하여 PDF을 생성하면 CORBA.COMM_FAILURE로 실패하고 `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"` 오류가 표시됩니다. 접근성 역할 &quot;참조&quot;가 XDP 템플릿의 하위 양식에서 제외되면 서비스가 정상적으로 전달됩니다. 그러나 508 규정 준수를 위해서는 이 역할이 필요합니다. (LC-3922402)
+* 사용자가 XFA 양식을 AcroForm PDF으로 변환할 때 실패합니다. (LC-3922363)
+* AEM Forms 서비스 팩 19(6.5.19.0)에서 사용자가 명명되지 않은 하위 양식으로 XDP를 만들면 명명되지 않은 하위 양식에 대해 FS_DATA_SOM이 비어 있는 것으로 표시됩니다. (LC-3922034)
+
+#### Forms Designer {#forms-designer-sp22}
+
+* 사용자가 AEM Forms Designer 버전 6.5.21.0에서 조각 폴더를 선택하여 조각 라이브러리를 열면 충돌합니다. (LC-3922439)
+* 사용자가 32비트 AEM Forms Designer 버전 6.5.20.0을 제거하고 AEM Forms Designer 버전 6.5.21.0을 설치하면 Forms Designer을 시작할 수 없습니다. 오류 로그에 JRE(Java Runtime Environment)에 대한 메모리 할당이 충분하지 않은 것으로 표시됩니다. (LC-3922404)
+* 사용자가 AEM Forms Designer 버전 6.5.20.0을 설치한 후 매크로 옵션이 메뉴에 나타나지 않고 기본 &#39;접근성 검사&#39; 매크로만 나타나고 실행되지 않습니다. (LC-3922321)
+* 사용자가 AEM Forms Designer 버전 6.5.20.0에서 XDP를 생성하는 새 템플릿 위치를 추가하면 Forms Designer이 충돌합니다. (LC-3922316)
+* 사용자가 AEM Forms 6.5 서비스 팩 15(6.5.15.0) OSGI에서 ExportData 메서드를 사용하여 출력을 생성하면 불완전하고 잘못된 데이터가 생성됩니다. (LC-3922340)
 
 
 <!-- #### [!DNL Adaptive Forms] {#forms-6522}
@@ -547,7 +614,16 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 * 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 통화 기호(예: 달러 기호 $)가 모든 필드 값에 대해 일관되지 않게 표시됩니다. 999까지의 값에 대해 표시되지만 1000 이상의 값에 대해서는 누락됩니다. (FORMS-16557)
 * 대화형 통신에서 중첩된 레이아웃 조각의 XDP에 대한 수정 사항은 IC 편집기에 반영되지 않습니다. (FORMS-16575)
 * 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 일부 계산된 값이 올바르게 표시되지 않습니다. (FORMS-16603)
-* [인쇄 미리 보기]에서 편지를 보면 내용이 변경됩니다. 즉, 공백이 일부 사라지고 특정 문자가 &#39;x&#39;로 대체됩니다(FORMS-15681)
+* [인쇄 미리 보기]에서 편지를 보면 내용이 변경됩니다. 즉, 공백이 일부 사라지고 특정 문자가 &#39;x&#39;로 대체됩니다. (FORMS-15681)
+* 사용자가 WebLogic 14c 인스턴스를 구성할 때 JBoss에서 실행되는 JEE의 AEM Forms 서비스 팩 21(6.5.21.0)에 있는 PDFG 서비스가 SLF4J 라이브러리와 관련된 클래스 로더 충돌로 인해 실패합니다. 오류는 다음과 같이 표시됩니다(CQDOC-22178).
+
+  ```java
+  Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
+  the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
+  @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
+  (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
+  have different Class objects for the type org/slf4j/ILoggerFactory used in the signature
+  ```
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 

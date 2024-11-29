@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: f3dda5271c0d3bdd9d23bc26f3b5abe50fc1b90a
+source-git-commit: bf750ddc14ce083a949c57322e0bc45594e66311
 workflow-type: tm+mt
-source-wordcount: '7454'
+source-wordcount: '7477'
 ht-degree: 22%
 
 ---
@@ -624,6 +624,8 @@ ht-degree: 22%
       + [규칙 편집기](/help/forms/using/rule-editor-core-components.md)
       + [적응형 양식 핵심 구성 요소에서 사용자 정의 기능 만들기 및 사용](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [적응형 Forms 기반의 핵심 구성 요소에 대한 사용자 지정 오류 처리기 만들기 및 사용](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+      + [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/using/add-versioning-reviews-comments.md)
+      + [적응형 양식 비교](/help/forms/using/compare-forms-core-components.md)
    + 적응형 Forms - 기본 작성 {#adaptive-forms-basic-authoring}
       + [적응형 양식 작업 모범 사례](/help/forms/using/adaptive-forms-best-practices.md)
       + [적응형 양식 만들기](/help/forms/using/creating-adaptive-form.md)
@@ -631,6 +633,8 @@ ht-degree: 22%
       + [적응형 양식 단편](/help/forms/using/adaptive-form-fragments.md)
       + [제출 액션 구성](/help/forms/using/configuring-submit-actions.md)
       + [적응형 양식에서 CAPTCHA 사용](/help/forms/using/captcha-adaptive-forms.md)
+      + [적응형 양식에서 hCaptcha 사용](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
+      + [적응형 양식에서 Turnstile Captcha 사용](/help/forms/using/integrate-adaptive-forms-turnstile.md)
       + [적응형 양식 키워드](/help/forms/using/adaptive-forms-keywords.md)
       + [적응형 양식의 표](/help/forms/using/adaptive-forms-tables.md)
       + [적응형 양식의 차트](/help/forms/using/adaptive-form-charts.md)

@@ -9,9 +9,9 @@ feature: Document Services
 exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2159'
 ht-degree: 6%
 
 ---
@@ -204,6 +204,22 @@ fragment="myFragment"/>
 </DDX>
 ```
 
+#### CRX 저장소에서 참조 확인 {#resolve-references-on-crx-repository}
+
+의 crx 경로를 지정하여 해결할 소스 참조를 선택적으로 지정할 수 있습니다.
+xdp 소스의 조각 참조. 아래 예제에서 포함된 조각은 다음과 같습니다
+해결되었습니다.
+
+```xml
+<DDX xmlns="http://ns.adobe.com/DDX/1.0/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://ns.adobe.com/DDX/1.0/ coldfusion_ddx.xsd">
+<XDP result="stitched.xdp">
+<XDP source="crx:///content/dam/formsanddocuments/test-xdp/sample.xdp" />
+</XDP>
+</DDX>
+```
+
 #### 절대 참조 또는 상대 참조를 선택적으로 해결 {#selectively-resolve-absolute-or-relative-references}
 
 아래 예와 같이 소스 문서의 전체 또는 일부에서 절대 참조 또는 상대 참조를 선택적으로 해결할 수 있습니다.
@@ -345,4 +361,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-DDX 및 어셈블러 서비스를 사용하여 다른 LiveC Cycle Services를 호출하면 프로세스 다이어그램을 단순화할 수 있습니다. 워크플로우를 사용자 지정하는 데 드는 노력을 줄일 수도 있습니다. (또한 참조
+DDX 및 어셈블러 서비스를 사용하여 다른 LiveC Cycle Services를 호출하면 프로세스 다이어그램을 단순화할 수 있습니다. 워크플로우를 사용자 지정하는 데 드는 노력을 줄일 수도 있습니다. (또한 참조)
