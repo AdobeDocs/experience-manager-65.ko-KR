@@ -1,5 +1,5 @@
 ---
-title: "콘텐츠 재사용: 다중 사이트 관리자 및 라이브 카피"
+title: '콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy'
 description: 라이브 카피 및 다중 사이트 관리자를 통한 콘텐츠 재사용에 대해 알아봅니다.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 

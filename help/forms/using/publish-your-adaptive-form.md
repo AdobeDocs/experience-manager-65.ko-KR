@@ -1,5 +1,5 @@
 ---
-title: "자습서: 적응형 양식 Publish"
+title: '자습서: 적응형 양식 Publish'
 description: 적응형 양식을 AEM 페이지로 Publish 하거나, AEM Sites 페이지에 양식을 포함하거나, 외부 웹 페이지에 적응형 양식을 포함하십시오
 contentOwner: khsingh
 topic-tags: introduction

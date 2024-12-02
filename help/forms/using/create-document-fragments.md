@@ -1,5 +1,5 @@
 ---
-title: "자습서: 문서 조각 만들기"
+title: '자습서: 문서 조각 만들기'
 description: 대화형 커뮤니케이션용 문서 조각 만들기
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

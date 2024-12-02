@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Assets] HTTP API."
+title: '[!DNL Assets] HTTP API입니다.'
 description: ' [!DNL Adobe Experience Manager Assets]에서 HTTP API를 사용하여 디지털 에셋을 만들고, 읽고, 업데이트하고, 삭제하고, 관리합니다.'
 contentOwner: AG
 role: Developer

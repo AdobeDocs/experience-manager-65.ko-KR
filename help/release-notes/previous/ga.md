@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager] 6.5의 일반 릴리스 노트'
-description: "[!DNL Adobe Experience Manager] 6.5 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 요약한 노트가 있습니다."
+description: 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 요약한 [!DNL Adobe Experience Manager] 6.5 노트입니다.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
@@ -65,7 +65,7 @@ UI를 보다 생산적이고 사용하기 쉽게 만들기 위해 다양한 개�
 
 >[!CAUTION]
 >
->Adobe은 클래식 UI를 추가로 개선할 계획이 없습니다. AEM 6.5에는 클래식 UI가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 클래식 UI는 더 이상 사용되지 않는 동안 완전히 지원됩니다. [자세한 내용](/help/sites-deploying/ui-recommendations.md).
+>Adobe은 클래식 UI를 추가로 개선할 계획이 없습니다. AEM 6.5에는 클래식 UI가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 클래식 UI는 더 이상 사용되지 않는 동안 완전히 지원됩니다. [자세히 보기](/help/sites-deploying/ui-recommendations.md)
 
 #### 검색 및 색인 지정 {#indexing-and-search}
 
@@ -118,7 +118,7 @@ AEM 6.5와 함께 AEM 6.4 SP2로 처음 제공되는 SPA 지원은 다음과 같
 
 #### 헤드리스 콘텐츠 관리 {#headless-content-management}
 
-AEM은 다양한 형식 및 다양한 스택 수준에서 콘텐츠를 제공할 수 있습니다. 일부는 2008년 이후 [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 및 [POST 서블릿](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html)과 함께 사용되었습니다. 컨텐츠 서비스([Sling 모델 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko-KR))는 AEM 6.3에서 도입되었으며, AEM SJ SDK가 단일 페이지 앱을 하이드레이션하는 데 사용하는 메서드입니다. [Assets용 HTTP API](/help/assets/mac-api-assets.md)은(는) AEM 6.5용으로 확장된 CRUD API입니다.
+AEM은 다양한 형식 및 다양한 스택 수준에서 콘텐츠를 제공할 수 있습니다. 일부는 2008년 이후 [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 및 [POST 서블릿](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html)과 함께 사용되었습니다. 컨텐츠 서비스([Sling 모델 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko))는 AEM 6.3에서 도입되었으며, AEM SJ SDK가 단일 페이지 앱을 하이드레이션하는 데 사용하는 메서드입니다. [Assets용 HTTP API](/help/assets/mac-api-assets.md)은(는) AEM 6.5용으로 확장된 CRUD API입니다.
 
 새로운 HTTP API 기능:
 

@@ -1,5 +1,5 @@
 ---
-title: "자습서: AEM Forms에서 양식 데이터 모델 만들기"
+title: '자습서: AEM Forms에서 양식 데이터 모델 만들기'
 description: 대화형 커뮤니케이션용 양식 데이터 모델 만들기
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -41,7 +41,7 @@ AEM Forms 데이터 통합 모듈을 사용하면 AEM 사용자 프로필, RESTf
 
 **A.** 구성된 데이터 원본 **B.** 데이터 원본 스키마 **C.** 사용 가능한 서비스 **D.** 데이터 모델 개체 **E.** 구성된 서비스
 
-## 사전 요구 사항 {#prerequisites}
+## 전제 조건 {#prerequisites}
 
 시작하기 전에 다음을 확인하십시오.
 

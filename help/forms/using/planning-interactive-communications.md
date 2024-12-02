@@ -1,5 +1,5 @@
 ---
-title: "자습서: 대화형 통신 계획"
+title: '자습서: 대화형 통신 계획'
 description: 대화형 커뮤니케이션에 대한 구조 계획
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

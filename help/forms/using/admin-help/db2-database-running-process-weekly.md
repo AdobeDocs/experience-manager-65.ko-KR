@@ -1,5 +1,5 @@
 ---
-title: "DB2&reg; 데이터베이스: 매주 프로세스 실행"
+title: 'DB2&reg; 데이터베이스: 매주 프로세스 실행'
 description: AEM Forms DB2&reg; 데이터베이스의 성능을 개선하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference

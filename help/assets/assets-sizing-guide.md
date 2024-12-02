@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Assets] 크기 조정 가이드"
+title: '[!DNL Assets] 크기 조정 가이드'
 description: ' [!DNL Adobe Experience Manager Assets]을(를) 배포하는 데 필요한 인프라 및 리소스를 예상하는 효율적인 지표를 결정하는 모범 사례입니다.'
 contentOwner: AG
 role: Architect, Admin

@@ -1,5 +1,5 @@
 ---
-title: "자습서: 템플릿 만들기"
+title: '자습서: 템플릿 만들기'
 description: 대화형 통신을 위한 인쇄 및 웹 템플릿 만들기
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

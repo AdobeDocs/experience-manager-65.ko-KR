@@ -1,6 +1,6 @@
 ---
 title: 모바일 앱
-description: "모바일 앱"
+description: 모바일 앱
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE

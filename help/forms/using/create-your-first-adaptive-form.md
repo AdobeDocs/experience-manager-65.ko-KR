@@ -1,5 +1,5 @@
 ---
-title: "자습서: 첫 번째 적응형 양식 만들기"
+title: '자습서: 첫 번째 적응형 양식 만들기'
 description: 비즈니스 클래스, 대화형 및 반응형 양식을 만드는 방법을 알아봅니다.
 topic-tags: introduction
 docset: aem65
@@ -57,7 +57,7 @@ ht-degree: 6%
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-적응형 양식은 새로운 세대의 매력적인 반응형 동적 적응형 양식입니다. 적응형 양식을 사용하여 개인화되고 타겟팅된 경험을 제공할 수 있습니다. AEM [!DNL Forms]에서 끌어서 놓기 WYSIWYG 편집기를 제공하여 적응형 양식을 만듭니다. 적응형 양식에 대한 자세한 내용은 [적응형 양식 작성 소개](../../forms/using/introduction-forms-authoring.md)를 참조하십시오.
+적응형 양식은 새로운 세대의 매력적인 반응형 동적 적응형 양식입니다. 적응형 양식을 사용하여 개인화되고 타겟팅된 경험을 제공할 수 있습니다. AEM [!DNL Forms]에서는 적응형 양식을 만들 수 있는 드래그 앤 드롭 WYSIWYG 편집기를 제공합니다. 적응형 양식에 대한 자세한 내용은 [적응형 양식 작성 소개](../../forms/using/introduction-forms-authoring.md)를 참조하십시오.
 
 목표:
 

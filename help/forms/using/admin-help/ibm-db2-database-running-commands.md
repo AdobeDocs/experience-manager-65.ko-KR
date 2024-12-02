@@ -1,5 +1,5 @@
 ---
-title: "IBM DB2 데이터베이스: 정기 유지 관리를 위한 명령 실행"
+title: 'IBM DB2 데이터베이스: 정기 유지 관리를 위한 명령 실행'
 description: 이 문서에서는 AEM Forms 데이터베이스의 정기적인 유지 관리에 권장되는 IBM DB2 명령을 나열합니다.
 contentOwner: admin
 content-type: reference

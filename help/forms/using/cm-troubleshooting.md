@@ -1,5 +1,5 @@
 ---
-title: "서신 관리: 문제 해결"
+title: '서신 관리: 문제 해결'
 description: AEM Forms 환경에서 편지를 저장하는 프로세스 중에 발생하는 오류를 처리하는 방법에 대해 알아봅니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

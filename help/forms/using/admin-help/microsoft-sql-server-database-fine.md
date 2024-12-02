@@ -1,5 +1,5 @@
 ---
-title: "Microsoft SQL Server 데이터베이스: 구성 미세 조정"
+title: 'Microsoft SQL Server 데이터베이스: 구성 미세 조정'
 description: Microsoft SQL Server 데이터베이스의 구성을 미세 조정하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
