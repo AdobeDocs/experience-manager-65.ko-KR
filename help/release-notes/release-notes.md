@@ -5,9 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 36238364383c380269812641acc66e452e2362ba
+exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
+source-git-commit: 167d897cc5f44a2302a4ba932e238e6ba973635d
 workflow-type: tm+mt
-source-wordcount: '6089'
+source-wordcount: '6030'
 ht-degree: 2%
 
 ---
@@ -42,23 +43,23 @@ ht-degree: 2%
 
 이번 릴리스의 주요 기능 및 개선 사항은 다음과 같습니다.
 
-* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) 및 [Cloudfare Turnstile Captcha 서비스](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms에서는 다음 Captcha 서비스를 지원합니다.
+* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) 및 [Cloudflare Turnstille CAPTCHA 서비스](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms에서는 다음 Captcha 서비스를 지원합니다.
    * Captcha는 확인란 위젯으로 사용자에게 도전하여 봇, 스팸 및 자동 남용으로부터 양식을 보호합니다. 인간 사용자만 진행하도록 보장해 온라인 거래에 대한 보안을 강화한다.
    * Cloudflare Turnstile은 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식을 보호하기 위한 보안 조치를 제공합니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다.
 
 * 적응형 양식 버전 관리:
-   * [적응형 양식의 여러 버전 만들기](/help/forms/using/add-versioning-reviews-comments.md): 이제 사용자가 기존 양식의 변형을 쉽게 관리할 수 있습니다. 이에 따라 간소화된 단일 워크플로 내에서 버전 제어가 단순화되고, 양식 최적화를 위한 비교가 용이해집니다.
+   * [적응형 양식의 여러 버전 만들기](/help/forms/using/add-versioning-reviews-comments.md) - 이제 사용자가 기존 양식의 변형을 쉽게 관리할 수 있습니다. 이 프로세스는 간소화된 단일 워크플로우 내에서 버전 제어를 단순화하고 양식 최적화를 위한 비교를 용이하게 합니다.
    * [적응형 Forms 비교](/help/forms/using/compare-forms-core-components.md): 이제 사용자는 두 양식을 쉽게 비교하여 차이점을 식별할 수 있습니다. 팀원이 수정본을 비교하고 변경 사항을 효율적으로 논의할 수 있도록 하여 원활한 공동 작업을 촉진합니다.
 
 * [대화형 통신 일괄 처리 API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel)에서 글꼴 임베딩을 사용하도록 설정할 수 있는 지원이 추가되었습니다. 이제 대화형 통신에 일괄 처리 API를 통해 생성된 PDF에 Adobe Ming 및 Adobe Myungjo 글꼴을 포함할 수 있는 지원이 포함됩니다. 이러한 개선된 기능은 글꼴 하위 집합을 사용하는 경우에도 생성된 문서에서 정확한 텍스트 렌더링을 보장하여 PDF 출력에서 다국어 콘텐츠에 대한 향상된 지원을 제공합니다.
 
-* [PDF 접근성을 위한 목차 API](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api): 이제 OSGi의 AEM Forms에서 새로운 TOC Tag API를 지원하여 접근성 표준에 대한 PDF을 향상합니다. 보조 기술을 가진 사용자가 PDF에 보다 쉽게 액세스할 수 있도록 해줍니다.
+* [PDF 접근성을 위한 목차 API](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - 이제 OSGi의 AEM Forms에서 새로운 TOC Tag API를 지원하여 접근성 표준에 대한 PDF을 향상합니다. 보조 기술을 가진 사용자가 PDF에 보다 쉽게 액세스할 수 있도록 해줍니다.
 
-* [조각 XDP 확인](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository): 이제 OSGi의 AEM Forms이 기본 XDP에서 참조되고 AEM CRX 저장소에 저장된 조각 XDP를 확인합니다.
+* [조각 XDP 확인](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository) - 이제 OSGi의 AEM Forms이 기본 XDP에서 참조되고 AEM CRX 저장소에 저장된 조각 XDP를 확인합니다.
 
-* [PDF/A 규정 준수 개선 사항](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): 이제 PDF은 보관용으로 PDF/A 형식(1a, 2a, 3a)으로 전환하면서 접근성을 보장하고 이러한 표준 준수를 확인할 수 있습니다.
+* [PDF/A 규정 준수 개선 사항](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) - 이제 PDF은 보관을 위해 PDF/A 형식(1a, 2a, 3a)으로 전환하면서 접근성을 보장하고 이러한 표준 준수를 확인할 수 있습니다.
 
-* **정적 PDF 문서의 글꼴 자동 크기 조정 지원**: AEM Forms Designer, OutputService 및 FormsService는 이제 정적 PDF의 글꼴 자동 크기 조정을 지원합니다. 텍스트 필드, 숫자 필드, 암호 필드 또는 날짜/시간 필드와 같은 필드의 템플릿에서 글꼴 크기 0을 언급하는 경우 필드 자체의 크기를 변경하지 않고 글꼴 크기가 이러한 필드 내에서 자동으로 조정됩니다. 기능을 사용하려면 사용자가 사용자 지정 xci에 플래그를 전달합니다. `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
+* **정적 PDF 문서의 글꼴 자동 크기 조정 지원** - AEM Forms Designer, OutputService 및 FormsService는 이제 정적 PDF의 글꼴 자동 크기 조정을 지원합니다. 텍스트, 숫자, 암호 또는 날짜/시간 필드에 대해 글꼴 크기를 0으로 설정하면 필드의 전체 크기를 변경하지 않고 글꼴 크기가 이러한 필드 내에서 자동으로 조정됩니다. 기능을 사용하려면 사용자가 사용자 지정 XCI에 플래그를 전달합니다. `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -102,7 +103,7 @@ ht-degree: 2%
    * **버전 비교 문제:** &quot;현재 항목에 비교&quot; 기능은 버전 간의 차이점을 강조 표시하지 않고 현재 버전만 표시합니다. (SITES-23988)
 
 * 복사 및 붙여넣기 작업 중에 `plaintext`(으)로 설정된 `defaultPasteMode`을(를) 사용할 때 예기치 않은 `<br>` 태그가 RTE(리치 텍스트 편집기) 필드에 나타납니다. 이 문제로 인해 동일한 콘텐츠에 대해 서로 다른 마크업이 생성되므로 고객의 번역 메모리에서 동일한 텍스트 콘텐츠가 두 번 번역됩니다. (SITES-23606)
-* AEM 6.5.20.0에서 **게시 관리** 기능에 기능 문제가 발생했습니다. 노드를 선택하고 나중에 게시하도록 예약할 때 하위 노드를 포함하려고 할 때 &quot;선택한 항목에 대한 하위 리소스를 검색하지 못했습니다&quot; 오류 메시지가 나타날 수 있습니다. 이 문제로 인해 **하위 항목 포함** 옵션의 사용이 차단되어 의도한 콘텐츠 계층 구조가 완전히 게시되지 않았습니다. (SITES-23000)
+* AEM 6.5.20.0에서 **게시 관리** 기능에 기능 문제가 발생했습니다. 노드를 선택하고 나중에 게시하도록 예약할 때 하위 노드를 포함하려고 할 때 &quot;선택한 항목에 대한 하위 리소스를 검색하지 못했습니다&quot;라는 오류 메시지가 나타날 수 있습니다. 이 문제로 인해 **하위 항목 포함** 옵션의 사용이 차단되어 의도한 콘텐츠 계층 구조가 완전히 게시되지 않았습니다. (SITES-23000)
 * 템플릿이 게시 인스턴스에 성공적으로 복제되었는데도 템플릿의 &quot;게시된&quot; 타임스탬프가 작성자 환경에서 업데이트되지 않았습니다. 작성자 인스턴스의 타임스탬프가 최신 게시를 반영하도록 예상되었지만 이 업데이트가 의도한 대로 발생하지 않았습니다. (SITES-21585)
 * AEM 작성 환경에서 들어오는 링크의 수가 일치하지 않습니다. 왼쪽 레일은 클래식 UI에 비해 링크가 더 적었습니다. 또한 합법적인 일부 수신 링크도 작동하지 않습니다. (SITES-24837)
 * AEM의 타임라인 보기에서 페이지 버전을 볼 때 매우 긴 로드 시간이 보고되었습니다. 버전을 표시하는 데 최대 19분이 소요되었습니다. 이 문제는 AEM 6.4.8에서 6.5.18로 업그레이드한 이후 계속 발생했으며 이로 인해 워크플로우 효율성이 크게 저하되었습니다. (SITES-22468 및 SITES-22467)
@@ -225,29 +226,29 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 ### Forms {#forms-bug-fixes-sp22}
 
 * AEM Forms에 저장된 초안의 첨부 파일에 대해 생성된 URL이 구성된 Apache Sling Resource Resolver Factory 매핑을 반영하지 않습니다. (FORMS-16949)
-* AEM Forms 서비스 팩 19(6.5.19.0)의 사용자가 문자를 미리 볼 때 공백이 없고 &#39;&#39;x&#39; 문자가 일부 위치에 표시되므로 콘텐츠가 제대로 정렬되지 않습니다. (FORMS-16670)
+* AEM Forms 서비스 팩 19(6.5.19.0)의 사용자가 문자를 미리 볼 때 공백이 없고 문자 `x`이(가) 일부 위치에 표시되므로 콘텐츠가 제대로 정렬되지 않습니다. (FORMS-16670)
 * AEM Forms 서비스 팩 18(6.5.18.0)의 사용자가 CIF 프로토콜을 사용하여 파일을 인쇄하려고 할 때 실패하고 다음과 같은 오류가 표시됩니다. (FORMS-16629)
   `ALC-OUT-001-401: Unknown error while printing using CIFS on the Printer: \\\\\\\\NSMVPLUETEST01\\\\TH_Test`
 * 사용자가 AEM Forms 서비스 팩 17(6.5.17.0)에서 AEM Forms 서비스 팩 20(6.5.20.0)으로 업그레이드할 때 규칙 편집기 아이콘이 양식 컨테이너 수준에 표시되지 않습니다. (FORMS-16430)
 * 사용자가 AEM Forms 서비스 팩 17(6.5.17.0)에서 AEM Forms 서비스 팩 21(6.5.21.0)로 업그레이드할 때 수정된 적응형 양식 제출 URL 경로가 작동하지 않습니다. (FORMS15894)
 * AEM Forms 서비스 팩 19(6.5.19.0)에서 `creation date and modification date mismatch with timezone` 오류가 있는 특정 파일에 대해 AEM Forms 6.5 PDF/A 유효성 검사가 실패하고, 준수 검사에 대한 Acrobat Pro PDF/A 유효성 검사에서 원활하게 실행됩니다. (FORMS-15840)
-* 사용자가 OSGi의 AEM Forms 서비스 팩 15(6.5.15.0)에서 사이트 페이지의 &quot;초안 및 제출&quot; 구성 요소를 사용하여 양식 초안을 삭제하면 삭제가 실패합니다. (FORMS-15755)
+* 사용자가 OSGi의 AEM Forms 서비스 팩 15(6.5.15.0)의 사이트 페이지에서 &quot;초안 및 제출&quot; 구성 요소를 사용하여 양식 초안을 삭제하면 삭제가 실패합니다. (FORMS-15755)
 * 사용자에게 999개가 넘는 항목이 있는 SharePoint 목록이 있고 양식에 첨부 파일이 포함되어 있으면 양식 제출이 실패합니다. (FORMS-15057)
-* 사용자가 시작 날짜 및 종료 날짜로 레이블이 지정된 두 개의 날짜 선택기 구성 요소를 사용할 때, 종료 날짜가 시작 날짜보다 빠르지 않은지 확인하는 유효성 검사 규칙을 추가하고 사용자 지정 스크립트 유효성 검사 메시지를 설정한 후 종료 날짜가 시작 날짜보다 빠를 경우 유효성 검사가 트리거되지 않습니다. (FORMS-14757)
-* 사용자가 적응형 양식의 테이블에서 표시 및 숨기기 기능을 사용하면 필드 크기가 줄어듭니다. 필드 크기는 행 추가 및 제거 시 자체적으로 수정됩니다. (FORMS-14756)
+* 유효성 검사 메시지에 대한 사용자 지정 스크립트와 함께 종료 날짜가 시작 날짜보다 빠르지 않도록 유효성 검사 규칙이 추가됩니다. 하지만 종료 날짜가 시작 날짜보다 이전인 경우에는 유효성 검사가 트리거되지 않습니다. (FORMS-14757)
+* 사용자가 적응형 양식의 테이블에서 표시/숨기기 기능을 사용하면 필드 크기가 줄어듭니다. 필드 크기는 행 추가 및 제거 시 자체적으로 수정됩니다. (FORMS-14756)
 * 사용자가 AEM Forms 서비스 팩 19(6.5.19.0)에서 양식을 인쇄할 때 일부 양식이 서버에서 올바르게 렌더링되지 않아 인쇄 프로세스 중에 오류가 발생합니다. (FORMS14734)
-* 사용자가 AEM Forms 서비스 팩 15(6.5.15.0)에서 AEM Forms 서비스 팩 19(6.5.19.0)로 업데이트하고 특정 변수가 숫자로 설정되고 사용자 지정 표시 패턴이 num{$zzz,zz9.99}(으)로 설정된 양식을 사용할 때 미리보기 및 에이전트 UI에서 패턴이 올바르게 렌더링되지 않습니다. (FORMS-14694)
+* 사용자가 AEM Forms 서비스 팩 15(6.5.15.0)에서 서비스 팩 19(6.5.19.0)로 업데이트하면 문제가 발생합니다. `num{$zzz,zz9.99}`(으)로 설정된 사용자 지정 표시 패턴이 미리 보기 및 에이전트 UI에서 올바르게 렌더링되지 않습니다. (FORMS-14694)
 * 사용자가 저장된 데이터 xml이 있는 대화형 통신에서 문자를 미리 보면 문자가 AEM UI의 &quot;로드 중&quot; 상태에서 멈춥니다. 동일한 XML을 사용하여 편지 미리 보기를 다시 해도 잘 작동합니다. (FORMS-14521)
-* AEM Forms 서비스 팩 20(6.5.20.0)의 사용자가 적응형 양식의 &#39;이메일 보내기&#39; 제출 액션 단추를 사용하여 첨부 파일이 있는 이메일을 보내면 첨부 파일 이름이 인라인이 아닌 다음 줄에 나타납니다. (FORMS-14426)
-* PDF이 AEM Forms에서 글머리 기호 목록이 기본 &quot;디스크&quot; 스타일로 설정된 PDF을 생성하면 Adobe Acrobat의 접근성 도구에서 접근성 검사를 실패합니다. 글머리 기호 및 사각형 스타일이 포함된 목록은 접근성 검사를 통과합니다. (FORMS-13802, LC-3922179)
-* 사용자가 독립형 RHEL8 JBoss 설정에서 AEMForms-6.5.0-0065에서 AEMForms-6.5.0-0087로 업그레이드할 때 LiveCycle 서비스 컨테이너와 연결하지 못합니다. (FORMS-15907) ·
-* JEE의 AEM Forms에서 사용자가 이전에 제출한 양식을 선택하고 새 양식 프로세스를 시작할 때 AEM Workspace에서 미리 채워진 데이터 프로세스가 있는 양식은 이전 양식에 수동으로 입력된 필드를 유지하지 않고 이전에 제출된 모든 데이터를 지우고 미리 채워진 데이터로 대체합니다. (FORMS-15376)
+* AEM Forms 서비스 팩 20(6.5.20.0)에서 적응형 양식의 &#39;전자 메일 보내기&#39; 버튼을 사용하여 첨부 파일이 있는 전자 메일을 보내는 사용자에게 문제가 표시됩니다. 첨부 파일 이름이 인라인 대신 다음 줄에 나타납니다. (FORMS-14426)
+* 사용자가 글머리 기호 목록을 기본 &quot;디스크&quot; 스타일로 설정한 상태로 AEM Forms에서 PDF을 생성하면 PDF이 Adobe Acrobat의 접근성 도구에서 접근성 검사를 실패합니다. 글머리 기호 및 사각형 스타일이 포함된 목록은 접근성 검사를 통과합니다. (FORMS-13802, LC-3922179)
+* 사용자가 독립형 RHEL8 JBoss® 설정에서 AEMForms-6.5.0-0065에서 AEMForms-6.5.0-0087로 업그레이드할 때 LiveCycle 서비스 컨테이너와 연결하지 못합니다. (FORMS-15907) *
+* JEE의 AEM Forms AEM Workspace에서 새 양식 프로세스를 시작하기 위해 이전에 제출한 양식을 선택하면 문제가 발생합니다. 미리 채워진 데이터가 있는 Forms은 이전에 제출된 모든 데이터를 덮어쓰며 수동으로 채워진 필드를 제거합니다. (FORMS-15376)
 * AEM Forms 서비스 팩 20(6.5.20.0)에서 사용자가 PDFG 서비스를 사용하여 Tiff 파일을 PDF으로 변환할 때 다음 오류와 함께 실패합니다. (FORMS-14879) 입력 이미지 파일을 PDF으로 변환하는 동안 ALC-PDG-011-028-Error 가 발생했습니다. com/sun/image/codec/jpeg/JPEGCodec
 * AEM Forms on JEE jar 파일의 업그레이드: 이제 다음과 같은 다양한 AEM Forms JEE 작업에서 종속성 확인 및 기능을 개선하기 위해 `commons-collections:commons-collections:jar` 라이브러리가 포함됩니다.
    * 작업 처리 및 오류 처리를 개선하기 위한 어셈블러 작업 개선 사항.
    * PDF Generator(PDFG) 작업을 개선하여 문서 생성 및 전환을 위한 작업을 더욱 원활하게 수행할 수 있습니다.
    * 버전 간의 안정적인 전환을 보장하면서 업그레이드 프로세스를 개선하기 위한 LC-업그레이드 작업 개선.
-   * 문서 처리 및 향상된 권한 관리 기능을 보호하기 위한 Rights Management 작업 개선 사항입니다.
+   * 문서 처리 보안을 위한 Rights Management 작업 개선 및 Rights Management 기능 개선.
    * 보다 안정적인 작업 처리 및 시스템 관리를 위한 프로세스 관리 작업 개선.
 
 
@@ -613,8 +614,8 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 * 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 통화 기호(예: 달러 기호 $)가 모든 필드 값에 대해 일관되지 않게 표시됩니다. 999까지의 값에 대해 표시되지만 1000 이상의 값에 대해서는 누락됩니다. (FORMS-16557)
 * 대화형 통신에서 중첩된 레이아웃 조각의 XDP에 대한 수정 사항은 IC 편집기에 반영되지 않습니다. (FORMS-16575)
 * 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 일부 계산된 값이 올바르게 표시되지 않습니다. (FORMS-16603)
-* [인쇄 미리 보기]에서 편지를 보면 내용이 변경됩니다. 즉, 공백이 일부 사라지고 특정 문자가 &#39;x&#39;로 대체됩니다. (FORMS-15681)
-* 사용자가 WebLogic 14c 인스턴스를 구성할 때 JBoss에서 실행되는 JEE의 AEM Forms 서비스 팩 21(6.5.21.0)에 있는 PDFG 서비스가 SLF4J 라이브러리와 관련된 클래스 로더 충돌로 인해 실패합니다. 오류는 다음과 같이 표시됩니다(CQDOC-22178).
+* [인쇄 미리 보기]에서 편지를 보면 내용이 변경됩니다. 즉, 일부 공백이 사라지고 특정 문자가 `x`(으)로 바뀝니다. (FORMS-15681)
+* 사용자가 WebLogic 14c 인스턴스를 구성할 때 JBoss®에서 실행 중인 JEE의 AEM Forms 서비스 팩 21(6.5.21.0)에 있는 PDFG 서비스가 SLF4J 라이브러리와 관련된 클래스 로더 충돌로 인해 실패합니다. 오류는 다음과 같이 표시됩니다(CQDOC-22178).
 
   ```java
   Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
