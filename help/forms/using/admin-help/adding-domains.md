@@ -9,21 +9,23 @@ exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: eac8a82c78d7f209512d32e7fcd7083bbebf1cb5
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
 
 # 도메인 추가 {#adding-domains}
 
+사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
+
 ## Enterprise 도메인 추가 {#add-an-enterprise-domain}
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
 1. 새 엔터프라이즈 도메인을 클릭합니다.
 1. ID 상자에 도메인의 고유 식별자를 입력하고 이름 상자에 도메인을 설명하는 이름을 입력합니다. [도메인 이름 및 ID에 대한 중요 고려 사항](adding-domains.md#important-considerations-for-domain-names-and-ids)을 참조하세요.
-1. 계정 잠금을 활성화할지 여부를 지정합니다. ([계정 잠금 설정 구성](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)을 참조하세요.) 기본적으로 계정 잠금 활성화가 선택되어 있습니다.
+1. 계정 잠금을 활성화할지 여부를 지정합니다. ([계정 잠금 설정 구성](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)을 참조하십시오.) 기본적으로 [계정 잠금 사용]이 선택됩니다.
 1. 인증 추가를 클릭하고 인증 공급자 목록에서 조직에서 사용하는 인증 메커니즘에 따라 공급자를 선택합니다. 가능한 값은 LDAP, Kerberos, SAML 또는 사용자 지정 인증 공급자입니다.
 
    LDAP를 선택하는 경우 디렉토리 구성에 지정된 LDAP 서버를 사용하거나 인증에 사용할 다른 LDAP 서버를 선택할 수 있습니다. 다른 서버를 선택하는 경우 사용자가 두 LDAP 서버 모두에 있어야 합니다.
@@ -39,7 +41,7 @@ Enterprise 도메인을 생성한 후 User Management에서 사용하기 전에 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
 1. 새 로컬 도메인 을 클릭합니다.
 1. ID 상자에 도메인의 고유 식별자를 입력하고 이름 상자에 도메인을 설명하는 이름을 입력합니다. [도메인 이름 및 ID에 대한 중요 고려 사항](adding-domains.md#important-considerations-for-domain-names-and-ids)을 참조하세요.
-1. 계정 잠금을 사용할지 여부를 지정한 다음 [확인]을 클릭합니다. ([계정 잠금 설정 구성](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)을 참조하세요.) 기본적으로 계정 잠금 활성화가 선택되어 있습니다.
+1. 계정 잠금을 사용할지 여부를 지정한 다음 [확인]을 클릭합니다. ([계정 잠금 설정 구성](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)을 참조하십시오.) 기본적으로 [계정 잠금 사용]이 선택됩니다.
 
 ## 하이브리드 도메인 추가 {#add-a-hybrid-domain}
 
