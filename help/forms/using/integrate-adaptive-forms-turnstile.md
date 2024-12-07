@@ -3,22 +3,19 @@ title: AEM 적응형 양식 6.5에서 턴스타일을 사용하는 방법
 description: 턴스타일 서비스를 통해 손쉽게 양식 보안을 강화할 수 있습니다. 단계별 안내서가 포함되어 있습니다.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+exl-id: bed93ce3-89db-477a-8316-7598275e4bca
+source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 11%
+source-wordcount: '828'
+ht-degree: 12%
 
 ---
 
 # AEM Forms 환경과 턴스타일 연결 {#connect-your-forms-environment-with-turnstile-service}
 
 <!--
-
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
-
-<span class="preview"> 이 기능은 얼리어답터 프로그램 아래에 있습니다. 이 기능에 대한 조기 액세스 프로그램에 참여하려면 공식 주소에서 aem-forms-ea@adobe.com으로 이메일을 보내 </span> 액세스를 요청하십시오.
 
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
@@ -34,6 +31,8 @@ AEM Forms 6.5는 다음 CAPTCHA 솔루션을 지원합니다.
 ## AEM Forms 환경과 Turnstile Captcha 통합
 
 Cloudflare의 Turnstile Captcha는 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식 및 사이트를 보호하는 것을 목표로 하는 보안 조치입니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### AEM Forms 환경을 Turnstile Captcha와 통합하기 위한 사전 요구 사항 {#prerequisite}
 
