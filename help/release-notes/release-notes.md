@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 26c1fe9d032729dd8d1737c922c4b2fab55f2d48
+source-git-commit: 9c58545406bc539dbd0c224b3c88365d3851deb8
 workflow-type: tm+mt
 source-wordcount: '6085'
 ht-degree: 2%
@@ -250,7 +250,13 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
    * 버전 간의 안정적인 전환을 보장하면서 업그레이드 프로세스를 개선하기 위한 LC-업그레이드 작업 개선.
    * 문서 처리 보안을 위한 Rights Management 작업 개선 및 Rights Management 기능 개선.
    * 보다 안정적인 작업 처리 및 시스템 관리를 위한 프로세스 관리 작업 개선.
+* AEM Forms OSGi 6.5.22부터 Forms 서비스의 renderPDFForm 작업은 서버에서 클라이언트 전용 (runAt=client) 스크립트를 실행하지 않으며 아래 표에 설명된 대로 runAt=server 또는 runAt=both로 표시된 스크립트만 실행됩니다. (FORMS-16564)
 
+  | runAt로 표시된 스크립트 | 서버에서 실행됨 |
+  |---------------------|-------------------------|
+  | 서버 | 예 |
+  | 모두 | 예 |
+  | 클라이언트 | 아니오 |
 
 #### XMLFM {#forms-xmlfm-sp22}
 
@@ -615,14 +621,6 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 * 대화형 통신에서 중첩된 레이아웃 조각의 XDP에 대한 수정 사항은 IC 편집기에 반영되지 않습니다. (FORMS-16575)
 * 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 일부 계산된 값이 올바르게 표시되지 않습니다. (FORMS-16603)
 * [인쇄 미리 보기]에서 편지를 보면 내용이 변경됩니다. 즉, 공백이 일부 사라지고 특정 문자가 &#39;x&#39;로 대체됩니다. (FORMS-15681)
-* AEM Forms OSGi 6.5.22부터 Forms 서비스의 renderPDFForm 작업은 서버에서 클라이언트 전용 (runAt=client) 스크립트를 실행하지 않으며 아래 표에 설명된 대로 runAt=server 또는 runAt=both로 표시된 스크립트만 실행됩니다. (FORMS-16564)
-
-  | runAt로 표시된 스크립트 | 서버에서 실행됨 |
-  |---------------------|-------------------------|
-  | 서버 | 예 |
-  | 모두 | 예 |
-  | 클라이언트 | 아니오 |
-
 * 사용자가 WebLogic 14c 인스턴스를 구성할 때 JBoss에서 실행되는 JEE의 AEM Forms 서비스 팩 21(6.5.21.0)에 있는 PDFG 서비스가 SLF4J 라이브러리와 관련된 클래스 로더 충돌로 인해 실패합니다. 오류는 다음과 같이 표시됩니다(CQDOC-22178).
 
   ```java

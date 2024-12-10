@@ -4,9 +4,9 @@ description: 턴스타일 서비스를 통해 손쉽게 양식 보안을 강화�
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
+source-git-commit: 4a0e8def5bafd4d90f50bf4b34a537c51e09ce27
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '842'
 ht-degree: 12%
 
 ---
@@ -77,13 +77,13 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
 1. 적응형 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭하세요. **[!UICONTROL 구성 컨테이너]**&#x200B;에서 Turnstile®에 대한 클라우드 구성을 선택하십시오.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
-   이러한 구성 컨테이너가 없는 경우 섹션 [AEM Forms 환경과 턴스타일 연결](#connect-your-forms-environment-with-turnstile-service)을 참조하여 구성 컨테이너를 만드는 방법을 알아보십시오.
+   CAPTCHA 서비스를 구성할 구성 컨테이너가 없는 경우 구성 컨테이너를 만드는 방법에 대해 알아보려면 섹션 [Configure Turnstile](#configure-turnstile-steps-to-configure-hcaptcha)을 참조하십시오.
 
    ![구성 컨테이너 선택](assets/captcha-properties.png)
 
 1. 적응형 양식을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭하여 편집기에서 적응형 양식을 엽니다.
 1. 구성 요소 브라우저에서 **[!UICONTROL Captcha]** 구성 요소를 적응형 양식으로 드래그 앤 드롭합니다.
-1. **[!UICONTROL 적응형 양식 회전식]** 구성 요소를 선택하고 속성 ![속성 아이콘](assets/configure-icon.svg) 아이콘을 클릭합니다. 속성 대화 상자가 열립니다. 다음 속성을 지정합니다.
+1. **[!UICONTROL Captcha]** 구성 요소를 선택하고 속성 ![속성 아이콘](assets/configure-icon.svg) 아이콘을 클릭합니다. 속성 대화 상자가 열립니다. 다음 속성을 지정합니다.
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
    ![Cloudfare Turnstile v1](assets/turnstile-setting-v1.png)
@@ -95,7 +95,8 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
    * **[!UICONTROL 구성 설정]:** Turnstile®에 대해 구성된 클라우드 구성을 선택하십시오.
      >[!NOTE]
      >유사한 목적으로 환경에 여러 클라우드 구성을 가질 수 있습니다. 그러므로, 서비스를 신중하게 선택하십시오. 서비스가 목록에 없으면 [AEM Forms 환경을 Turnstile과 연결](#connect-your-forms-environment-with-turnstile-service)을 참조하여 AEM Forms 환경을 Turnstile 서비스와 연결하는 Cloud Service을 만드는 방법에 대해 알아보십시오.
-   * **오류 메시지:** Captcha 제출이 실패할 때 사용자에게 표시할 오류 메시지를 제공합니다.
+
+   * **[!UICONTROL 오류 메시지]:** Captcha 제출이 실패할 때 사용자에게 표시할 오류 메시지를 제공합니다.
    * **Captcha 크기:** hCaptcha® 챌린지 대화 상자의 표시 크기를 선택할 수 있습니다. 작은 크기를 표시하려면 **[!UICONTROL Compact]** 옵션을 사용하고, 상대적으로 큰 크기의 hCaptcha® 문제 대화 상자를 표시하려면 **[!UICONTROL Normal]**&#x200B;을 사용하십시오.
 
 1. **[!UICONTROL 완료]**&#x200B;를 선택합니다.

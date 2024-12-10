@@ -3,9 +3,10 @@ title: AEM 6.5 Forms에서 hCaptcha&reg;를 사용하는 방법
 description: hCaptcha&reg; 서비스를 통해 손쉽게 양식 보안을 강화할 수 있습니다. 단계별 안내서가 포함되어 있습니다.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
+exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
+source-git-commit: 96e6705349fc6969ab0c40c8c770c9a0d1967619
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '863'
 ht-degree: 20%
 
 ---
@@ -75,13 +76,13 @@ AEM Forms을 hCaptcha® 서비스와 통합하려면 다음 단계를 수행하�
 1. **[!UICONTROL 구성 컨테이너]**&#x200B;에서 hCaptcha®에 대한 클라우드 구성을 선택하십시오.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
-   이러한 구성 컨테이너가 없는 경우 [AEM Forms 환경을 hCaptcha®와 연결](#connect-your-forms-environment-with-hcaptcha-service) 섹션을 참조하여 구성 컨테이너를 만드는 방법을 알아보십시오.
+   hCaptcha용 구성 컨테이너가 없는 경우 [AEM Forms 환경을 hCaptcha®와 연결](#configure-hcaptcha-steps-to-configure-hcaptcha) 섹션을 참조하여 구성 컨테이너를 만드는 방법을 알아보십시오.
 
    ![구성 컨테이너 선택](/help/forms/using/assets/captcha-properties.png)
 
 1. 적응형 양식을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭하여 편집기에서 양식을 엽니다.
 1. 구성 요소 브라우저에서 **[!UICONTROL Captcha]** 구성 요소를 적응형 양식으로 드래그 앤 드롭합니다.
-1. **[!UICONTROL 적응형 양식 hCaptcha®]** 구성 요소를 선택하고 속성 ![속성 아이콘](assets/configure-icon.svg)을 클릭하여 속성 대화 상자를 엽니다. 다음 속성을 지정합니다.
+1. **[!UICONTROL Captcha]** 구성 요소를 선택하고 속성 ![속성 아이콘](assets/configure-icon.svg)을 클릭하여 속성 대화 상자를 엽니다. 다음 속성을 지정합니다.
 
    ![hCaptcha® v1](assets/config-hcaptcha-v1-img.png)
 
@@ -91,13 +92,14 @@ AEM Forms을 hCaptcha® 서비스와 통합하려면 다음 단계를 수행하�
    * **[!UICONTROL 구성 설정]:** hCaptcha®에 대해 구성된 클라우드 구성을 선택하십시오.
      >[!NOTE]
      >유사한 목적으로 환경에 여러 클라우드 구성을 가질 수 있습니다. 그러므로, 서비스를 신중하게 선택하십시오. 서비스가 목록에 없으면 [AEM Forms 환경과 hCaptcha® 연결](#connect-your-forms-environment-with-hcaptcha-service)을 참조하여 AEM Forms 환경과 hCaptcha® 서비스를 연결하는 Cloud Service을 만드는 방법을 알아보십시오.
-   * **오류 메시지:** Captcha 제출이 실패할 때 사용자에게 표시할 오류 메시지를 제공합니다.
-   * **Captcha 크기:** hCaptcha® 챌린지 대화 상자의 표시 크기를 선택할 수 있습니다. 작은 크기의 확인란을 표시하려면 **[!UICONTROL 작게]** 옵션을 사용하고, 비교적 큰 크기의 hCaptcha® 과제 대화 상자를 표시하려면 **[!UICONTROL 보통]**&#x200B;을 사용하고, 사용자 인터페이스에서 확인란 위젯을 명시적으로 렌더링하지 않고 hCaptcha®의 유효성을 검사하려면 **[!UICONTROL 보이지 않음]**&#x200B;을 사용하십시오.
+
+   * **[!UICONTROL 오류 메시지]:** Captcha 제출이 실패할 때 사용자에게 표시할 오류 메시지를 제공합니다.
+   * **[!UICONTROL Captcha 크기]:** hCaptcha® 챌린지 대화 상자의 표시 크기를 선택할 수 있습니다. 작은 크기의 확인란을 표시하려면 **[!UICONTROL 작게]** 옵션을 사용하고, 비교적 큰 크기의 hCaptcha® 과제 대화 상자를 표시하려면 **[!UICONTROL 보통]**&#x200B;을 사용하고, 사용자 인터페이스에서 확인란 위젯을 명시적으로 렌더링하지 않고 hCaptcha®의 유효성을 검사하려면 **[!UICONTROL 보이지 않음]**&#x200B;을 사용하십시오.
 
 1. **[!UICONTROL 완료]**&#x200B;를 선택합니다.
 
 
-이제 양식 제출에 대해 hCaptcha® 서비스가 제기한 문제를 양식 작성기가 성공적으로 해결한 적법한 양식만 허용됩니다. hCaptcha®
+이제 양식 제출에 대해 hCaptcha® 서비스가 제기한 문제를 양식 작성기가 성공적으로 해결한 적법한 양식만 허용됩니다.
 
 **hCaptcha®는 Intuition Machines, Inc.의 등록 상표입니다.**
 
