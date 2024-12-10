@@ -3,16 +3,18 @@ title: 서로 다른 두 적응형 양식을 비교합니다.
 description: 필드, 콘텐츠 및 양식 구성 요소를 기반으로 두 개의 개별 양식을 비교합니다.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 7%
+source-wordcount: '180'
+ht-degree: 8%
 
 ---
 
 # 적응형 양식 비교 {#compare-two-forms}
 
-<span class="preview"> 이 기능은 얼리어답터 프로그램 아래에 있습니다. 이 기능에 대한 조기 액세스 프로그램에 참여하려면 공식 주소에서 aem-forms-ea@adobe.com으로 이메일을 보내 </span> 액세스를 요청하십시오.
+<!--
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+-->
 
 적응형 Forms 핵심 구성 요소의 비교 기능은 양식 작성자가 필드, 컨텐츠 및 구성 요소를 분석하여 두 양식 간의 차이점을 식별하는 데 도움이 됩니다.
 

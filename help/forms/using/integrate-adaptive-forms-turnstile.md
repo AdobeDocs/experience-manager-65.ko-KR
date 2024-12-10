@@ -4,18 +4,16 @@ description: 턴스타일 서비스를 통해 손쉽게 양식 보안을 강화�
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
+source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '846'
 ht-degree: 12%
 
 ---
 
 # AEM Forms 환경과 턴스타일 연결 {#connect-your-forms-environment-with-turnstile-service}
 
-<!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
--->
+<span class="preview">이 기능은 기능 전환 ID `FT_FORMS-12407`을(를) 기반으로 합니다. 기능을 활성화하려면 [기능 활성화 토글](/help/forms/using/enable-feature-toggle.md) 문서에 지정된 단계를 따르십시오. </span>
 
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
@@ -84,7 +82,7 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
    ![구성 컨테이너 선택](assets/captcha-properties.png)
 
 1. 적응형 양식을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭하여 편집기에서 적응형 양식을 엽니다.
-1. 구성 요소 브라우저에서 **[!UICONTROL 적응형 양식 회전식]** 구성 요소를 적응형 양식에 끌어서 놓거나 추가합니다.
+1. 구성 요소 브라우저에서 **[!UICONTROL Captcha]** 구성 요소를 적응형 양식으로 드래그 앤 드롭합니다.
 1. **[!UICONTROL 적응형 양식 회전식]** 구성 요소를 선택하고 속성 ![속성 아이콘](assets/configure-icon.svg) 아이콘을 클릭합니다. 속성 대화 상자가 열립니다. 다음 속성을 지정합니다.
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
