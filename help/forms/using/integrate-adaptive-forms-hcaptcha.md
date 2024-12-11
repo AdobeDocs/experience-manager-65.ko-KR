@@ -4,17 +4,20 @@ description: hCaptcha&reg; 서비스를 통해 손쉽게 양식 보안을 강화
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
-source-git-commit: 96e6705349fc6969ab0c40c8c770c9a0d1967619
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '872'
 ht-degree: 20%
 
 ---
 
 # AEM Forms 환경을 hCaptcha®와 연결합니다. {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview">이 기능은 기능 전환 ID `FT_FORMS-12407`을(를) 기반으로 합니다. 기능을 활성화하려면 [기능 활성화 토글](/help/forms/using/enable-feature-toggle.md) 문서에 지정된 단계를 따르십시오. </span>
+<!--
+<span class="preview">This feature is based on Feature Toggle id `FT_FORMS-12407`. To enable the feature, follow the steps given in the [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md) article. </span>
+-->
 
+<span class="preview">이 기능은 기본적으로 사용할 수 없습니다. 공식 주소에서 aem-forms-ea@adobe.com에 작성하여 기능에 대한 액세스를 요청할 수 있습니다.</span>
 
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
@@ -68,12 +71,12 @@ AEM Forms을 hCaptcha® 서비스와 통합하려면 다음 단계를 수행하�
 
    hCAPTCHA 서비스가 구성되면 적응형 양식에서 사용할 수 있습니다.
 
-## 적응형 Forms {#using-hCaptcha-in-aem-6.5}에서 hCaptcha® 사용
+## 적응형 양식 {#using-hCaptcha-in-aem-6.5}에서 hCaptcha® 사용
 
 1. AEM Forms 환경을 엽니다.
 1. **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;로 이동합니다.
 1. 적응형 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 구성 컨테이너]**&#x200B;에서 hCaptcha®에 대한 클라우드 구성을 선택하십시오.
+1. **[!UICONTROL 구성 컨테이너]**&#x200B;에서 AEM Forms과 hCaptcha를 연결하는 클라우드 구성이 포함된 구성 컨테이너를 선택합니다.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
    hCaptcha용 구성 컨테이너가 없는 경우 [AEM Forms 환경을 hCaptcha®와 연결](#configure-hcaptcha-steps-to-configure-hcaptcha) 섹션을 참조하여 구성 컨테이너를 만드는 방법을 알아보십시오.

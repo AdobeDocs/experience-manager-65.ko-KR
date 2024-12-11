@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 9c58545406bc539dbd0c224b3c88365d3851deb8
+source-git-commit: 64bc2ecbb2b5ef5847af4449562240a7c1ec45e9
 workflow-type: tm+mt
-source-wordcount: '6085'
+source-wordcount: '6146'
 ht-degree: 2%
 
 ---
@@ -43,13 +43,7 @@ ht-degree: 2%
 
 이번 릴리스의 주요 기능 및 개선 사항은 다음과 같습니다.
 
-* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) 및 [Cloudflare Turnstille CAPTCHA 서비스](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms에서는 다음 Captcha 서비스를 지원합니다.
-   * Captcha는 확인란 위젯으로 사용자에게 도전하여 봇, 스팸 및 자동 남용으로부터 양식을 보호합니다. 인간 사용자만 진행하도록 보장해 온라인 거래에 대한 보안을 강화한다.
-   * Cloudflare Turnstile은 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식을 보호하기 위한 보안 조치를 제공합니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다.
-
-* 적응형 양식 버전 관리:
-   * [적응형 양식의 여러 버전 만들기](/help/forms/using/add-versioning-reviews-comments.md) - 이제 사용자가 기존 양식의 변형을 쉽게 관리할 수 있습니다. 이 프로세스는 간소화된 단일 워크플로우 내에서 버전 제어를 단순화하고 양식 최적화를 위한 비교를 용이하게 합니다.
-   * [적응형 Forms 비교](/help/forms/using/compare-forms-core-components.md): 이제 사용자는 두 양식을 쉽게 비교하여 차이점을 식별할 수 있습니다. 팀원이 수정본을 비교하고 변경 사항을 효율적으로 논의할 수 있도록 하여 원활한 공동 작업을 촉진합니다.
+#### AEM Forms의 새로운 GA 기능 {#ga-aem-forms-sp22}
 
 * [대화형 통신 일괄 처리 API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel)에서 글꼴 임베딩을 사용하도록 설정할 수 있는 지원이 추가되었습니다. 이제 대화형 통신에 일괄 처리 API를 통해 생성된 PDF에 Adobe Ming 및 Adobe Myungjo 글꼴을 포함할 수 있는 지원이 포함됩니다. 이러한 개선된 기능은 글꼴 하위 집합을 사용하는 경우에도 생성된 문서에서 정확한 텍스트 렌더링을 보장하여 PDF 출력에서 다국어 콘텐츠에 대한 향상된 지원을 제공합니다.
 
@@ -60,6 +54,18 @@ ht-degree: 2%
 * [PDF/A 규정 준수 개선 사항](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) - 이제 PDF은 보관을 위해 PDF/A 형식(1a, 2a, 3a)으로 전환하면서 접근성을 보장하고 이러한 표준 준수를 확인할 수 있습니다.
 
 * **정적 PDF 문서의 글꼴 자동 크기 조정 지원** - AEM Forms Designer, OutputService 및 FormsService는 이제 정적 PDF의 글꼴 자동 크기 조정을 지원합니다. 텍스트, 숫자, 암호 또는 날짜/시간 필드에 대해 글꼴 크기를 0으로 설정하면 필드의 전체 크기를 변경하지 않고 글꼴 크기가 이러한 필드 내에서 자동으로 조정됩니다. 기능을 사용하려면 사용자가 사용자 지정 XCI에 플래그를 전달합니다. `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
+
+#### AEM Forms의 새로운 Beta 기능 {#beta-aem-forms-sp22}
+
+Beta 기능은 혁신적인 최신 기술에 독점적으로 액세스하고 개발 환경을 개선할 수 있는 특별한 기회를 제공합니다. 환경에 Beta 기능을 활성화하는 데 관심이 있습니까? 관심 있는 기능 목록과 함께 공식 주소에서 aem-forms-ea@adobe.com으로 이메일을 보내십시오.
+
+* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) 및 [Cloudflare Turnstille CAPTCHA 서비스](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms에서는 다음 Captcha 서비스를 지원합니다.
+   * Captcha는 확인란 위젯으로 사용자에게 도전하여 봇, 스팸 및 자동 남용으로부터 양식을 보호합니다. 인간 사용자만 진행하도록 보장해 온라인 거래에 대한 보안을 강화한다.
+   * Cloudflare Turnstile은 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식을 보호하기 위한 보안 조치를 제공합니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다.
+
+* 적응형 양식 버전 관리:
+   * [적응형 양식의 여러 버전 만들기](/help/forms/using/add-versioning-reviews-comments.md) - 이제 사용자가 기존 양식의 변형을 쉽게 관리할 수 있습니다. 이 프로세스는 간소화된 단일 워크플로우 내에서 버전 제어를 단순화하고 양식 최적화를 위한 비교를 용이하게 합니다.
+   * [적응형 Forms 비교](/help/forms/using/compare-forms-core-components.md): 이제 사용자는 두 양식을 쉽게 비교하여 차이점을 식별할 수 있습니다. 팀원이 수정본을 비교하고 변경 사항을 효율적으로 논의할 수 있도록 하여 원활한 공동 작업을 촉진합니다.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -621,7 +627,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 * 대화형 통신에서 중첩된 레이아웃 조각의 XDP에 대한 수정 사항은 IC 편집기에 반영되지 않습니다. (FORMS-16575)
 * 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 일부 계산된 값이 올바르게 표시되지 않습니다. (FORMS-16603)
 * [인쇄 미리 보기]에서 편지를 보면 내용이 변경됩니다. 즉, 공백이 일부 사라지고 특정 문자가 &#39;x&#39;로 대체됩니다. (FORMS-15681)
-* 사용자가 WebLogic 14c 인스턴스를 구성할 때 JBoss에서 실행되는 JEE의 AEM Forms 서비스 팩 21(6.5.21.0)에 있는 PDFG 서비스가 SLF4J 라이브러리와 관련된 클래스 로더 충돌로 인해 실패합니다. 오류는 다음과 같이 표시됩니다(CQDOC-22178).
+* 사용자가 WebLogic 14c 인스턴스를 구성할 때 JBoss®에서 실행 중인 JEE의 AEM Forms 서비스 팩 21(6.5.21.0)에 있는 PDFG 서비스가 SLF4J 라이브러리와 관련된 클래스 로더 충돌로 인해 실패합니다. 오류는 다음과 같이 표시됩니다(CQDOC-22178).
 
   ```java
   Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"

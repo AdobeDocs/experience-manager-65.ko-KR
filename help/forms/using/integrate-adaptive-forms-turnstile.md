@@ -4,16 +4,20 @@ description: 턴스타일 서비스를 통해 손쉽게 양식 보안을 강화�
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 4a0e8def5bafd4d90f50bf4b34a537c51e09ce27
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 12%
+source-wordcount: '851'
+ht-degree: 11%
 
 ---
 
 # AEM Forms 환경과 턴스타일 연결 {#connect-your-forms-environment-with-turnstile-service}
 
-<span class="preview">이 기능은 기능 전환 ID `FT_FORMS-12407`을(를) 기반으로 합니다. 기능을 활성화하려면 [기능 활성화 토글](/help/forms/using/enable-feature-toggle.md) 문서에 지정된 단계를 따르십시오. </span>
+<!--
+<span class="preview">This feature is based on Feature Toggle id `FT_FORMS-12407`. To enable the feature, follow the steps given in the [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md) article. </span>
+-->
+
+<span class="preview">이 기능은 기본적으로 사용할 수 없습니다. 공식 주소에서 aem-forms-ea@adobe.com에 작성하여 기능에 대한 액세스를 요청할 수 있습니다.</span>
 
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
@@ -74,7 +78,7 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
 
 1. AEM Forms 환경을 엽니다.
 1. **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;로 이동합니다.
-1. 적응형 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭하세요. **[!UICONTROL 구성 컨테이너]**&#x200B;에서 Turnstile®에 대한 클라우드 구성을 선택하십시오.
+1. 적응형 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭하세요. **[!UICONTROL 구성 컨테이너]**&#x200B;에서 AEM Forms과 Turnstile을 연결하는 클라우드 구성이 포함된 구성 컨테이너를 선택합니다.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
    CAPTCHA 서비스를 구성할 구성 컨테이너가 없는 경우 구성 컨테이너를 만드는 방법에 대해 알아보려면 섹션 [Configure Turnstile](#configure-turnstile-steps-to-configure-hcaptcha)을 참조하십시오.

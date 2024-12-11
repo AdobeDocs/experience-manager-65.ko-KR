@@ -3,9 +3,10 @@ title: 버전, 주석 및 주석을 AEM 6.5 적응형 양식에 추가합니다.
 description: AEM 6.5 적응형 양식 핵심 구성 요소를 사용하여 적응형 양식에 주석, 주석 및 버전을 추가할 수 있습니다.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
+exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -13,11 +14,10 @@ ht-degree: 0%
 # 적응형 양식에 버전 관리, 검토 및 주석 달기
 
 <!--
-
 <span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
-
 -->
 
+<span class="preview">이 기능은 기본적으로 사용할 수 없습니다. 공식 주소에서 aem-forms-ea@adobe.com에 작성하여 기능에 대한 액세스를 요청할 수 있습니다.</span>
 
 적응형 양식 핵심 구성 요소를 사용하여 양식 작성자는 양식에 버전 관리, 주석 및 주석을 추가할 수 있습니다. 이러한 기능을 사용하면 여러 버전을 만들고 관리하고, 주석을 통해 공동 작업하고, 특정 양식 섹션에 메모를 추가할 수 있으므로 양식 개발을 간소화할 수 있으므로 양식 작성 경험이 향상됩니다.
 
