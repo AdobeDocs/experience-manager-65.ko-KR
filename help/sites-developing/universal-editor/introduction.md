@@ -1,18 +1,18 @@
 ---
-title: 유니버설 편집기
+title: 범용 편집기
 description: 범용 편집기의 유연성과 AEM 6.5를 사용하여 Headless 경험을 제공하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: c3af0befce5534891d45c2507684a2017f9363f8
+source-git-commit: 773e398af5247a0de12143334ecfa44955ebbbcd
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1178'
 ht-degree: 1%
 
 ---
 
 
-# 유니버설 편집기 {#universal-editor}
+# 범용 편집기 {#universal-editor}
 
 범용 편집기의 유연성과 AEM 6.5를 사용하여 Headless 경험을 제공하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 범용 편집기는 Adobe Experience Manager Sites의 일부인 다목적 비주얼 편집기입니다. 이를 통해 작성자는 Headless 경험에 대한 간단한(WYSIWYG) 편집을 수행할 수 있습니다.
 
 * 작성자는 모든 형태의 AEM Headless 콘텐츠에 대해 동일한 일관된 시각적 편집을 지원하므로 유니버설 편집기의 유연성이 향상됩니다.
-* 개발자는 구현의 진정한 분리를 지원하므로 유니버설 편집기의 다기능성을 활용할 수 있습니다. 이를 통해 개발자는 SDK나 기술 제한 없이 원하는 프레임워크나 아키텍처를 거의 활용할 수 있습니다.
+* 개발자는 구현의 진정한 분리를 지원하므로 유니버설 편집기의 다기능성을 활용할 수 있습니다. 이를 통해 개발자는 SDK 또는 기술의 제약 없이 원하는 프레임워크나 아키텍처를 거의 활용할 수 있습니다.
 
 자세한 내용은 범용 편집기에서 [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)를 참조하세요.
 
@@ -178,3 +178,11 @@ AEM as a Cloud Service이 포함된 범용 편집기에 대한 설명서를 참�
 >[!TIP]
 >
 >범용 편집기를 시작하는 개발자를 위한 포괄적인 안내서는 AEM as a Cloud Service 설명서에서 [AEM 개발자를 위한 범용 편집기 개요](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) 문서를 참조하고, 이 섹션에서 언급한 대로 AEM 6.5 지원에 필요한 변경 사항을 염두에 두십시오.
+
+## AEM 6.5와 AEM as a Cloud Service의 차이점 {#differences}
+
+AEM 6.5의 유니버설 편집기는 UI 및 대부분의 설정을 포함하여 AEM as a Cloud Service과 동일하게 작동합니다. 그러나 주의해야 할 차이점이 있습니다.
+
+* 6.5의 유니버설 편집기는 Headless 사용 사례만 지원합니다.
+* 유니버설 편집기의 설정이 6.5마다 약간 다릅니다([현재 문서의 ](#setup)에 설명된 대로).
+* 6.5의 유니버설 편집기는 AEM as a Cloud Service과 다른 에셋 선택기와 콘텐츠 조각 선택기를 사용합니다.
