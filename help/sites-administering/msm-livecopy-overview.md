@@ -9,10 +9,10 @@ feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 30%
+source-wordcount: '529'
+ht-degree: 31%
 
 ---
 
@@ -62,15 +62,11 @@ ht-degree: 30%
 
 1. **라이브 카피 개요**&#x200B;를 선택하여 현재 블루프린트와 관련된 모든 라이브 카피의 개요를 표시하고 사용합니다.
 
-   >[!NOTE]
-   >
-   >자세한 내용은 기술 자료 문서 [라이브 카피 상태 메시지 - 최신/녹색/동기화 중](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html)을 참조하십시오.
-
 1. 종료하고 **사이트** 콘솔로 돌아가려면 **닫기**&#x200B;를 사용합니다.
 
 ## Live Copy 개요 사용 {#using-the-live-copy-overview}
 
-**Live Copy 개요**&#x200B;를 사용하여 Live Copy에서 작업을 수행할 수도 있습니다.
+**라이브 카피 개요**&#x200B;를 사용하여 라이브 카피에서 작업을 수행할 수도 있습니다.
 
 1. **Live Copy 개요**&#x200B;를 엽니다.
 1. 필요한 블루프린트 또는 라이브 카피 페이지를 선택합니다. 사용 가능한 작업을 표시하도록 도구 모음이 업데이트됩니다. 사용 가능한 [작업](/help/sites-administering/msm.md#terms-used)은(는) [블루프린트](#actions-for-a-blueprint-page) 또는 [라이브 카피](#actions-for-a-live-copy-page) 페이지 선택 여부에 따라 다릅니다.
