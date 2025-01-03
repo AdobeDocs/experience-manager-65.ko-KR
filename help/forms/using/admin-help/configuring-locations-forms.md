@@ -9,14 +9,18 @@ exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '834'
 ht-degree: 1%
 
 ---
 
 # Forms에 대한 위치 구성 {#configuring-locations-for-forms}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 웹 루트, 검색할 양식 위치, PDForm 변환에 사용되는 시드 PDF 파일 및 캐시 위치와 같은 속성의 URL, URI 및 파일 위치를 지정할 수 있습니다.
 
@@ -52,7 +56,7 @@ Forms 웹 응용 프로그램과 클라이언트 응용 프로그램이 동일�
 
 기본값은 빈 문자열입니다.
 
-**웹 루트 URI:** 응용 프로그램의 웹 루트입니다. 이 값은 AEM Forms SDK를 통해 지정된 sTargetURL 매개 변수(sTargetURL이 상대적인 값으로 제공되는 경우)와 결합하여 애플리케이션별 웹 콘텐츠에 액세스할 수 있는 절대 URL을 구성합니다.
+**웹 루트 URI:** 응용 프로그램의 웹 루트입니다. 이 값은 AEM forms SDK을 통해 지정된 sTargetURL 매개 변수(sTargetURL이 상대적인 값으로 제공되는 경우)와 결합하여 애플리케이션별 웹 콘텐츠에 액세스할 수 있는 절대 URL을 구성합니다.
 
 기본값은 빈 문자열입니다.
 

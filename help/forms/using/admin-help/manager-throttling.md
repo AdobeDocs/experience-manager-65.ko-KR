@@ -9,14 +9,18 @@ exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # 작업 관리자 및 제한{#work-manager-and-throttling}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 AEM forms(및 이전 버전)에서는 JMS 대기열을 사용하여 작업을 비동기적으로 실행했습니다. AEM Forms에서 JMS 대기열이 Work Manager로 대체되었습니다. 이 문서에서는 Work Manager에 대한 배경 정보와 Work Manager 전송률 조절 옵션 구성에 대한 지침을 제공합니다.
 
@@ -34,7 +38,7 @@ AEM forms(및 이전 버전)에서는 JMS 대기열을 사용하여 작업을 �
 
 1. Work Manager는 실행할 작업 항목을 수신합니다.
 1. 작업 관리자는 작업 항목을 데이터베이스 테이블에 저장하고 작업 항목에 고유 식별자를 지정합니다. 데이터베이스 레코드에는 작업 항목을 실행하는 데 필요한 모든 정보가 들어 있습니다.
-1. 스레드가 비어 있으면 Work Manager 스레드가 작업 항목을 가져옵니다. 작업 항목을 가져오기 전에 스레드는 필요한 서비스가 시작되었는지, 다음 작업 항목을 가져올 수 있는 힙 크기가 충분한지, 작업 항목을 처리할 수 있는 CPU 주기가 충분한지 여부를 확인할 수 있습니다. 또한 Work Manager는 작업 항목의 실행을 예약할 때 작업 항목의 속성(예: 우선 순위)을 평가합니다.
+1. 스레드가 비어 있으면 Work Manager 스레드가 작업 항목을 가져옵니다. 작업 항목을 가져오기 전에 스레드는 필요한 서비스가 시작되었는지, 다음 작업 항목을 가져오는 데 힙 크기가 충분한지, 작업 항목을 처리하는 데 CPU 주기가 충분한지 여부를 확인할 수 있습니다. 또한 Work Manager는 작업 항목의 실행을 예약할 때 작업 항목의 속성(예: 우선 순위)을 평가합니다.
 
 AEM forms 관리자는 상태 모니터를 사용하여 대기열의 작업 항목 수 및 상태 등 작업 관리자 통계를 확인할 수 있습니다. 상태 모니터를 사용하여 작업 항목을 일시 중지, 다시 시작, 다시 시도 또는 삭제할 수도 있습니다. ([작업 관리자 관련 통계 보기](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)를 참조하십시오.)
 

@@ -9,9 +9,9 @@ exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,10 @@ AEM Forms을 안전 백업(스냅샷) 모드 또는 롤링 백업(연속 적용 
    백업 모드의 명령줄 인터페이스에 대한 자세한 내용은 BackupRestoreCommandline 디렉터리의 추가 정보 파일을 참조하십시오.
 
 ### 백업 모드 종료 {#leaving-backup-modes}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 관리 콘솔 또는 명령줄 옵션을 사용하여 백업 모드를 종료할 수 있습니다.
 

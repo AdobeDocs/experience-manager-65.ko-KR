@@ -9,14 +9,18 @@ exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
 
 # 프로세스 인스턴스 검색{#searching-for-process-instances}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 [프로세스 검색] 페이지에서는 프로세스 인스턴스를 찾기 위한 검색 조건을 입력할 수 있습니다. Forms Workflow 페이지에서 또는 프로세스 인스턴스 페이지에서 검색을 눌러 프로세스 검색 페이지에 액세스할 수 있습니다.
 

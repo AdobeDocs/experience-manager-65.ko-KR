@@ -9,9 +9,9 @@ exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ ht-degree: 0%
 >Flex Workspace은 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
 ### 선택한 사용자 대기열에 대한 액세스 구성 {#configuring-access-to-a-selected-user-queue}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 1. 관리자 계정을 사용하여 관리 콘솔에 로그인합니다.
 1. **서비스** > **Forms Workflow** > **공유 큐**&#x200B;를 선택합니다.

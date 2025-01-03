@@ -9,14 +9,18 @@ exl-id: 5279f6c3-5954-472c-9ea0-18e8a7ec860e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
 
 # 작업 관리자 데이터베이스에서 레코드 제거 {#purge-records-from-the-job-manager-database}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 오래 지속되는 프로세스를 호출할 때 생성되는 프로세스 데이터가 너무 커지면 AEM Forms 성능이 저하되고 불필요한 디스크 공간이 사용될 수 있습니다. 레코드가 더 이상 필요하지 않은 경우 프로세스 데이터를 제거하는 것이 좋습니다.
 

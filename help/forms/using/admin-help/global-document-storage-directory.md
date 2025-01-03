@@ -9,9 +9,9 @@ exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '684'
 ht-degree: 1%
 
 ---
@@ -82,13 +82,15 @@ AEM Forms 설치가 완료된 후 관리 콘솔에서 GDS 위치를 변경할 �
 
 >[!NOTE]
 >
->다음과 같은 방식으로 데이터를 마이그레이션하지 않으면 데이터가 손실됩니다.
+> * 다음과 같은 방식으로 데이터를 마이그레이션하지 않으면 데이터가 손실됩니다.
+> * 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
+
 
 1. 관리 콘솔에 로그인하고 설정 > 핵심 시스템 설정 > 구성 을 클릭합니다.
-1. 글로벌 문서 저장 디렉토리 상자에 새 GDS 디렉토리의 전체 경로를 입력한 다음 확인을 누릅니다.
-1. 응용 프로그램 서버를 즉시 종료합니다.
-1. 모든 파일을 이전 GDS 디렉토리에서 새 위치로 이동하여 내부 디렉토리 구조를 유지합니다.
-1. 응용 프로그램 서버를 다시 시작합니다.
+2. 글로벌 문서 저장 디렉토리 상자에 새 GDS 디렉토리의 전체 경로를 입력한 다음 확인을 누릅니다.
+3. 응용 프로그램 서버를 즉시 종료합니다.
+4. 모든 파일을 이전 GDS 디렉토리에서 새 위치로 이동하여 내부 디렉토리 구조를 유지합니다.
+5. 응용 프로그램 서버를 다시 시작합니다.
 
 ## 배포 파일 정보 {#about-deployment-files}
 

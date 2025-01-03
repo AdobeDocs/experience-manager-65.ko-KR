@@ -9,14 +9,18 @@ exl-id: eb8c748d-51d9-4684-97c5-e982ad84ba9f
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 1%
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
 # 계정 잠금 설정 구성 {#configure-account-locking-settings}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 도메인을 추가할 때 계정 잠금을 활성화할지 여부를 지정합니다. 계정 잠금 활성화 옵션을 선택하면 지정된 수의 연속 인증 실패 후 사용자 계정이 잠깁니다. 지정된 시간이 경과하면 사용자는 다시 인증을 시도할 수 있습니다. 이 기능은 사용자가 시스템에 액세스하기 위해 다양한 자격 증명 조합을 시도하지 못하도록 합니다.
 

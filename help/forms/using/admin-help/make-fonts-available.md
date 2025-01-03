@@ -1,5 +1,5 @@
 ---
-title: 글꼴 사용 가능
+title: 글꼴을 사용 가능하도록 제공
 description: 양식 내에 사용된 글꼴이 AEM 양식을 호스팅하는 J2EE 응용 프로그램 서버에서 사용할 수 있는지 확인합니다.
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,18 @@ exl-id: e9eae896-b1e4-4caa-b466-ac8c9e7416a4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 0%
+source-wordcount: '228'
+ht-degree: 2%
 
 ---
 
-# 글꼴 사용 가능 {#make-fonts-available}
+# 글꼴을 사용 가능하도록 제공 {#make-fonts-available}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 양식 내에 사용된 글꼴이 AEM 양식을 호스팅하는 J2EE 응용 프로그램 서버에서 사용할 수 있는지 확인합니다. 예를 들어 다음 시나리오를 고려하십시오. 양식 디자이너는 Designer이 사용하는 글꼴 디렉터리에 글꼴을 추가하고 별도의 컴퓨터에서 해당 글꼴을 사용하는 양식을 만듭니다. 출력 서비스에서 글꼴을 사용하려면 Customer fonts 디렉토리에 넣습니다. 고객 글꼴 디렉토리가 없는 경우 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버에 디렉토리를 만듭니다.
 

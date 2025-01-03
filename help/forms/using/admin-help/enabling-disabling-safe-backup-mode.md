@@ -9,14 +9,18 @@ exl-id: f0ab712f-ecd9-4be8-a7a5-fd1a7a8c9a0b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '208'
 ht-degree: 0%
 
 ---
 
 # 안전 백업 모드 활성화 및 비활성화 {#enabling-and-disabling-safe-backup-mode}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 [백업 설정] 페이지에서는 데이터베이스 및 GDS(Global Document Storage) 디렉토리를 안정적으로 백업할 수 있도록 AEM Forms를 안전한 백업 모드로 운영할 수 있습니다.
 

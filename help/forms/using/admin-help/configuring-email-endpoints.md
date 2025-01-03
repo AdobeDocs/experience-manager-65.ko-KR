@@ -9,14 +9,18 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3808'
 ht-degree: 0%
 
 ---
 
 # 이메일 엔드포인트 구성 {#configuring-email-endpoints}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 이메일 엔드포인트를 사용하면 지정된 이메일 계정에 하나 이상의 문서를 (이메일 첨부 파일로) 전송하여 서비스를 호출할 수 있습니다. 이메일 받은 편지함은 첨부 파일을 수집하는 역할을 합니다. 이 서비스는 받은 편지함을 모니터링하고 첨부 파일을 처리합니다. 변환 결과는 끝점에 정의된 사용자에게 전달됩니다.
 
@@ -32,7 +36,7 @@ ht-degree: 0%
 
 사용자가 파일 및 변환 경로 이름으로 서유럽 언어 문자를 사용하는 문서를 보내는 경우 필요한 인코딩 유형(Latin1 [ISO-8859-1], 서유럽 [Windows] 또는 UTF-8)을 지원하는 이메일 애플리케이션을 사용해야 합니다. 자세한 내용은 응용 프로그램 서버에 대한 *AEM forms 설치 및 배포* 문서를 참조하십시오.
 
-이메일 엔드포인트를 구성하기 전에 이메일 서비스를 구성하십시오. ([기본 전자 메일 끝점 설정 구성](configuring-email-endpoints.md#configure-default-email-endpoint-settings)을 참조하십시오.) 이메일 서비스의 구성 매개 변수에는 두 가지 목적이 있습니다.
+이메일 엔드포인트를 구성하기 전에 이메일 서비스를 구성하십시오. ([기본 전자 메일 끝점 설정 구성](configuring-email-endpoints.md#configure-default-email-endpoint-settings)을 참조하십시오.) 전자 메일 서비스의 구성 매개 변수에는 두 가지 목적이 있습니다.
 
 * 모든 이메일 엔드포인트에 대해 공통되는 속성을 구성하려면
 * 모든 이메일 엔드포인트에 기본값을 제공하려면

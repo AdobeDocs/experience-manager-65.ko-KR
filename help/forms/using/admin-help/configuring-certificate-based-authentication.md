@@ -9,14 +9,18 @@ exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
 
 # 인증서 기반 인증 구성 {#configuring-certificate-based-authentication}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 User Management는 일반적으로 사용자 이름과 암호를 사용하여 인증을 수행합니다. 또한 사용자 관리는 Acrobat을 통해 사용자를 인증하거나 프로그래밍 방식으로 사용자를 인증하는 데 사용할 수 있는 인증서 기반 인증을 지원합니다. 프로그래밍 방식으로 사용자를 인증하는 방법에 대한 자세한 내용은 [AEM 양식으로 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63)을 참조하십시오.
 
@@ -47,7 +51,7 @@ User Management는 일반적으로 사용자 이름과 암호를 사용하여 �
 1. 새 인증서 매핑 을 클릭하고 발급자용 목록에서 Trust Store Management에 구성된 인증서 별칭을 선택합니다.
 1. 인증서의 속성 중 하나를 사용자의 속성에 매핑합니다. 예를 들어 인증서의 일반 이름을 사용자의 로그인 ID에 매핑할 수 있습니다.
 
-   인증서의 속성 콘텐츠가 사용자 관리 데이터베이스의 사용자 속성에 있는 콘텐츠와 다른 경우 Java 정규 표현식(regex)을 사용하여 두 속성을 일치시킬 수 있습니다. 예를 들어, 인증서의 일반 이름이 *Alex Pink(인증)* 및 *Alex Pink(서명)*&#x200B;이고 사용자 관리 데이터베이스의 일반 이름이 *Alex Pink*&#x200B;인 경우 정규 표현식을 사용하여 인증서 특성의 필요한 부분을 추출합니다(이 예제에서는 *Alex Pink*). 지정하는 정규 표현식은 Java 정규 표현식 사양을 준수해야 합니다.
+   인증서의 속성 콘텐츠가 사용자 관리 데이터베이스의 사용자 속성에 있는 콘텐츠와 다른 경우 Java 정규 표현식(regex)을 사용하여 두 속성을 일치시킬 수 있습니다. 예를 들어, 인증서의 일반 이름이 *Alex Pink(인증)* 및 *Alex Pink(서명)*&#x200B;이고 사용자 관리 데이터베이스의 일반 이름이 *Alex Pink*&#x200B;인 경우 정규 표현식을 사용하여 인증서 특성의 필수 부분을 추출합니다(이 예에서는 *Alex Pink*). 지정하는 정규 표현식은 Java 정규 표현식 사양을 준수해야 합니다.
 
    사용자 지정 순서 상자에서 그룹의 순서를 지정하여 표현식을 변환할 수 있습니다. 사용자 지정 순서는 `java.util.regex.Matcher.replaceAll()` 메서드와 함께 사용됩니다. 표시되는 비헤이비어는 해당 메서드의 비헤이비어에 해당하며, 이에 따라 입력 문자열(사용자 지정 순서)을 지정해야 합니다.
 

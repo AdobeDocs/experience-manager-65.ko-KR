@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '4713'
+source-wordcount: '4725'
 ht-degree: 0%
 
 ---
 
 # 정책 생성 및 관리 {#creating-and-managing-policies}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 *정책*&#x200B;은(는) 정책이 적용되는 문서에 액세스할 수 있는 기밀 유지 설정 집합 및 사용자를 정의합니다. *정책 집합*&#x200B;은(는) 일반적인 비즈니스 목적을 가진 정책 집합을 그룹화하는 데 사용됩니다. 그런 다음 시스템의 사용자 하위 집합에서 이러한 정책 집합을 사용할 수 있습니다. 정책에 대한 자세한 내용은 [정책 및 정책으로 보호된 문서](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents)를 참조하십시오.
 

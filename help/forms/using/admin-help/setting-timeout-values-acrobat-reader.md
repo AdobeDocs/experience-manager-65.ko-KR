@@ -9,14 +9,18 @@ exl-id: 0a55aab3-14a3-41ad-8533-dc2cd116a848
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
 # Acrobat Reader DC 확장에 사용할 시간 초과 값 설정  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 Acrobat Reader DC 확장에서 많은 PDF 파일에서 작업할 때 다음 시간 초과 값이 적절히 설정되어 작업 시간 초과와 실패를 방지하십시오.
 

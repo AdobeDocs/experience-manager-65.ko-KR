@@ -9,9 +9,9 @@ exl-id: e1519477-b5a8-4947-8597-26b945a3b819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 1b76b30d8db59e6ad98af1d29f17443442d5378e
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1774'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+> * 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
+> * SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스를 중지하는 등의 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 안전 백업 모드 사용에 대한 자세한 내용은 [안전 백업 모드 사용 및 사용 안 함](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode)을 참조하십시오.
 
@@ -122,4 +123,4 @@ FIPS 모드는 7.0 이전 버전의 Adobe Acrobat®에서 사용되는 암호화
 
 **Flex 응용 프로그램에서 보안되지 않은 문서 업로드를 허용합니다** *ndash. Adobe Flex® 응용 프로그램에서 AEM Forms로 문서를 업로드하는 데 사용되는 파일 업로드 서블릿은 사용자가 문서를 업로드하기 전에 인증을 받고 권한을 부여받아야 합니다. 사용자에게 문서 업로드 애플리케이션 사용자 역할이나 문서 업로드 권한을 포함하는 다른 역할이 할당되어야 합니다. 이렇게 하면 권한이 없는 사용자가 AEM Forms 서버에 문서를 업로드하지 못하도록 할 수 있습니다. 개발 환경에서 또는 이전 버전의 AEM Forms와의 이전 버전과의 호환성을 위해 이 보안 기능을 비활성화하려면 이 옵션을 선택합니다. 기본적으로 이 옵션은 선택되어 있지 않습니다. 자세한 내용은 AEM Forms를 사용한 프로그래밍에서 &quot;AEM Forms Remoting을 사용하여 AEM Forms 호출&quot;을 참조하십시오.
 
-**Java SDK 응용 프로그램에서 보안되지 않은 문서 업로드를 허용합니다** *ndash. HTTP DocumentManager 업로드는 보안되어야 합니다. 기본적으로 HTTP 업로드는 사용자가 문서를 업로드하기 전에 인증되고 승인되어야 합니다. 사용자에게 서비스 사용자 역할 또는 서비스 호출 권한이 포함된 다른 역할이 할당되어야 합니다. 이렇게 하면 권한이 없는 사용자가 Forms 서버에 문서를 업로드하지 못하도록 할 수 있습니다. 개발 환경에서 이전 버전의 AEM Forms와의 이전 버전과의 호환성을 위해 또는 방화벽 설정을 기반으로 이 보안 기능을 비활성화하려면 이 옵션을 선택합니다. 기본적으로 이 옵션은 선택되어 있지 않습니다. 자세한 내용은 AEM Forms를 사용한 프로그래밍의 &quot;Java API를 사용하여 AEM Forms 호출&quot;을 참조하십시오.
+**Java SDK 애플리케이션에서 보안되지 않은 문서 업로드를 허용합니다** *ndash. HTTP DocumentManager 업로드는 보안되어야 합니다. 기본적으로 HTTP 업로드는 사용자가 문서를 업로드하기 전에 인증되고 승인되어야 합니다. 사용자에게 서비스 사용자 역할 또는 서비스 호출 권한이 포함된 다른 역할이 할당되어야 합니다. 이렇게 하면 권한이 없는 사용자가 Forms 서버에 문서를 업로드하지 못하도록 할 수 있습니다. 개발 환경에서 이전 버전의 AEM Forms와의 이전 버전과의 호환성을 위해 또는 방화벽 설정을 기반으로 이 보안 기능을 비활성화하려면 이 옵션을 선택합니다. 기본적으로 이 옵션은 선택되어 있지 않습니다. 자세한 내용은 AEM Forms를 사용한 프로그래밍의 &quot;Java API를 사용하여 AEM Forms 호출&quot;을 참조하십시오.

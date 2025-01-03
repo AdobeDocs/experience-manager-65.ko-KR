@@ -9,9 +9,9 @@ exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,14 @@ Trust Store에 두 개 이상의 Acrobat Reader DC 확장 자격 증명이 포�
 
 ## Acrobat Reader DC 확장 자격 증명 가져오기 {#import-a-acrobat-reader-dc-extensions-credential}
 
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
+
 1. 관리 콘솔에서 설정 > Trust Store Management > 로컬 자격 증명을 클릭합니다.
 1. 가져오기를 클릭하고 Trust Store Type에서 Acrobat Reader DC Extensions Credential 을 선택합니다.
 1. (선택 사항) 이 자격 증명이 Acrobat Reader DC 확장과 함께 사용할 기본 자격 증명임을 나타내려면 [기본값]을 선택합니다.
-1. 별칭 상자에 자격 증명의 식별자를 입력합니다. 이 식별자는 Acrobat Reader DC 확장에서 자격 증명의 표시 이름으로 사용됩니다. 이 별칭은 AEM forms SDK를 사용하여 프로그래밍 방식으로 자격 증명에 액세스하는 데에도 사용됩니다.
+1. 별칭 상자에 자격 증명의 식별자를 입력합니다. 이 식별자는 Acrobat Reader DC 확장에서 자격 증명의 표시 이름으로 사용됩니다. 이 별칭은 AEM forms SDK을 사용하여 프로그래밍 방식으로 자격 증명에 액세스하는 데에도 사용됩니다.
 
    >[!NOTE]
    >

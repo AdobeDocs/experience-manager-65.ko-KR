@@ -9,14 +9,18 @@ exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
 
 # 전역 설정 가져오기 및 내보내기 {#importing-and-exporting-global-settings}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 Workspace에 대한 검색 템플릿 정의 및 전역 설정을 가져오고 내보낼 수 있습니다.
 

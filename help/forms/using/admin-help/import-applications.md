@@ -9,9 +9,9 @@ exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ Workbench에서 생성된 애플리케이션을 임포트하고 관리하려면 
 * 보안 프로필
 
 ## 응용 프로그램 또는 아카이브 가져오기 {#import-an-application-or-archive}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 애플리케이션 관리 를 클릭합니다.
 1. 가져오기를 클릭합니다.

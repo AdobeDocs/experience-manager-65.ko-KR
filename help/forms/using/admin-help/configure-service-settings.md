@@ -9,14 +9,18 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10824'
+source-wordcount: '10836'
 ht-degree: 0%
 
 ---
 
 # 서비스 설정 구성 {#configure-service-settings}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 [서비스 관리] 페이지에서는 AEM Forms의 일부인 각 서비스에 대한 설정을 구성할 수 있습니다. 사용 가능한 설정은 구성 중인 서비스에 따라 다릅니다.
 
@@ -38,7 +42,7 @@ ht-degree: 0%
 
 ## 감사 워크플로 서비스 설정 {#audit-workflow-service-settings}
 
-Workbench는 프로세스 인스턴스가 런타임 시 실행될 때 이를 기록한 다음 재생하여 프로세스의 동작을 관찰하는 기능을 제공합니다. [Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_63)을 참조하세요. Forms 서버의 파일 시스템에서 공간을 절약하기 위해 저장되는 프로세스 기록 데이터의 양을 제한할 수 있습니다. Audit Workflow Service(`AuditWorkflowService`)의 다음 속성을 구성할 수 있습니다.
+Workbench는 프로세스 인스턴스가 런타임 시 실행될 때 이를 기록한 다음 재생하여 프로세스의 동작을 관찰하는 기능을 제공합니다. [Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_63)을 참조하세요.) Forms 서버의 파일 시스템에 있는 공간을 절약하기 위해 저장되는 프로세스 기록 데이터의 양을 제한할 수 있습니다. Audit Workflow Service(`AuditWorkflowService`)의 다음 속성을 구성할 수 있습니다.
 
 **maxNumberOfRecordingInstances:** 저장되는 최대 녹화 수입니다. 최대 수를 저장하면 새 기록을 만들 때 가장 오래된 기록이 파일 시스템에서 제거됩니다. 이 속성은 많은 녹음/녹화를 만들려고 하며 이전 녹음/녹화를 자동으로 제거하려는 경우에 유용합니다. 기본값은 50입니다.
 
@@ -692,7 +696,7 @@ Adobe 제품:** 이 옵션을 선택하면 Adobe 제품의 시험판 버전을 �
 
 ## 감시 폴더 서비스 설정 {#watched-folder-service-settings}
 
-감시 폴더 서비스(`WatchedFolder`)는 모든 감시 폴더 끝점에 대해 공통적인 특성을 구성합니다. 또한 감시 폴더 엔드포인트에 대한 기본값을 제공합니다. [감시 폴더 끝점 구성](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)을 참조하세요. 외부 클라이언트 애플리케이션에 의해 호출되거나 Workbench에서 생성된 프로세스에 사용되지 않습니다.
+감시 폴더 서비스(`WatchedFolder`)는 모든 감시 폴더 끝점에 대해 공통적인 특성을 구성합니다. 또한 감시 폴더 엔드포인트에 대한 기본값을 제공합니다. [감시 폴더 끝점 구성](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)을 참조하십시오. 외부 클라이언트 응용 프로그램에서 호출하거나 Workbench에서 만든 프로세스에서 사용되지 않습니다.
 
 감시 폴더 서비스에는 다음 설정을 사용할 수 있습니다.
 

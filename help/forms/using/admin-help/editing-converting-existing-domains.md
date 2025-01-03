@@ -9,14 +9,18 @@ exl-id: 34ac5f8b-f209-4f99-ad71-4df6f2c88c1e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
 
 # 기존 도메인 편집 및 변환{#editing-and-converting-existing-domains}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 도메인 관리 페이지에서 기존 도메인의 설정을 변경할 수 있습니다. 기존 엔터프라이즈 도메인을 하이브리드 도메인으로 변환할 수도 있습니다.
 

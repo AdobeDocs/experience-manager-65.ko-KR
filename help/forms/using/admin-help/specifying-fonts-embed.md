@@ -9,14 +9,18 @@ exl-id: b2cbf5f3-ee13-47bf-bf7f-f6a1884cee66
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
 # 포함할 글꼴 지정 {#specifying-fonts-to-embed}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 Forms 서비스에서 생성하는 양식에 항상 포함할 글꼴과 포함하지 않을 글꼴을 지정할 수 있습니다. 글꼴을 포함하면 양식의 파일 크기가 증가합니다. 사용자가 시스템에 거의 가지고 있지 않은 특이한 글꼴을 임베드합니다. 일반적으로 설치된 일반 글꼴은 포함하지 마십시오.
 

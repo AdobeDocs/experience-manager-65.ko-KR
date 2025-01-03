@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10266'
+source-wordcount: '10278'
 ht-degree: 0%
 
 ---
 
 # Document Security 서버 구성 {#configure-the-document-security-server}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 1. 관리 콘솔에서 서비스 > 문서 보안 > 구성 > 서버 구성을 클릭합니다.
 1. 설정을 구성하고 [확인]을 클릭합니다.
@@ -308,9 +312,9 @@ Document Security는 정책으로 보호된 문서, 정책, 관리자 및 서버
 
 **문서의 정책 전환:** 사용자 또는 관리자가 문서에 연결된 정책을 전환합니다.
 
-**Publish 문서 형식:** documentName 및 라이선스가 기존 문서와 동일한 새 문서가 서버에 등록되어 있고 문서에 부모-자식 관계가 없습니다. 이 이벤트는 AEM Forms SDK를 사용하여 트리거할 수 있습니다.
+**Publish 문서 형식:** documentName 및 라이선스가 기존 문서와 동일한 새 문서가 서버에 등록되어 있고 문서에 부모-자식 관계가 없습니다. 이 이벤트는 AEM forms SDK을 사용하여 트리거할 수 있습니다.
 
-**반복 문서:** documentName 및 라이선스가 기존 문서와 동일한 새 문서가 서버에 등록되어 있고 문서에 부모-자식 관계가 있습니다. 이 이벤트는 AEM Forms SDK를 사용하여 트리거할 수 있습니다.
+**반복 문서:** documentName 및 라이선스가 기존 문서와 동일한 새 문서가 서버에 등록되어 있고 문서에 부모-자식 관계가 있습니다. 이 이벤트는 AEM forms SDK을 사용하여 트리거할 수 있습니다.
 
 **정책 이벤트**
 
@@ -555,7 +559,7 @@ Document Security 구성 파일을 수정하여 워터마크 요소 수 및 PDF 
 
 등록 이메일에는 등록 페이지에 대한 링크와 등록 방법에 대한 정보가 포함되어 있습니다. 초대된 사용자가 등록하면 Document Security가 활성화 페이지에 대한 링크가 포함된 활성화 이메일을 발행합니다. 활성화되면 계정을 비활성화하거나 삭제할 때까지 계정이 유효한 상태로 유지됩니다.
 
-기본 제공 등록을 활성화하면 SMTP 서버, 등록 전자 메일 세부 정보, 액세스 기능을 지정하고 암호 전자 메일 정보를 한 번만 재설정합니다. 기본 제공 등록을 활성화하려면 먼저 User Management에서 로컬 도메인을 만든 후 &quot;Document Security Invite User&quot; 역할을 조직의 적절한 사용자 및 그룹에 할당했는지 확인하십시오. ([로컬 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) 및 [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)을 참조하십시오.) 기본 제공 등록을 사용하지 않는 경우 AEM Forms SDK를 사용하여 사용자 등록 시스템을 만들어야 합니다. [AEM Forms를 사용한 프로그래밍](/help/forms/developing/introducing-java-api-soap-quick.md)에서 &quot;AEM Forms용 SPI 개발&quot;에 대한 도움말을 참조하십시오. 기본 제공 등록 옵션을 사용하지 않는 경우 활성화 이메일 및 클라이언트 로그인 화면에서 메시지를 구성하여 사용자에게 새 암호 또는 기타 정보에 대해 관리자에게 문의하는 방법에 대해 알리는 것이 좋습니다.
+기본 제공 등록을 활성화하면 SMTP 서버, 등록 전자 메일 세부 정보, 액세스 기능을 지정하고 암호 전자 메일 정보를 한 번만 재설정합니다. 기본 제공 등록을 활성화하려면 먼저 User Management에서 로컬 도메인을 만든 후 &quot;Document Security Invite User&quot; 역할을 조직의 적절한 사용자 및 그룹에 할당했는지 확인하십시오. ([로컬 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) 및 [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)을 참조하십시오.) 기본 제공 등록을 사용하지 않는 경우 AEM forms SDK을 사용하여 고유한 사용자 등록 시스템을 만들어야 합니다. [AEM Forms를 사용한 프로그래밍](/help/forms/developing/introducing-java-api-soap-quick.md)에서 &quot;AEM Forms용 SPI 개발&quot;에 대한 도움말을 참조하십시오. 기본 제공 등록 옵션을 사용하지 않는 경우 활성화 이메일 및 클라이언트 로그인 화면에서 메시지를 구성하여 사용자에게 새 암호 또는 기타 정보에 대해 관리자에게 문의하는 방법에 대해 알리는 것이 좋습니다.
 
 **초대된 사용자 등록 활성화 및 구성**
 
@@ -785,7 +789,7 @@ Document Security를 사용하면 사용자가 Document Security 서버에 연�
 * Adobe Reader 9.0 이상
 * Microsoft Office 8.2 이상용 Acrobat Reader DC 확장
 
-클라이언트 애플리케이션은 document security C++ Client SDK의 클라이언트 API를 사용하여 document security에서 서비스를 요청합니다. 클라이언트 API 요청에는 플랫폼 및 SDK 버전 정보(클라이언트 API로 미리 컴파일됨) 및 클라이언트 애플리케이션에서 얻은 제품 정보가 포함됩니다.
+클라이언트 애플리케이션은 document security C++ Client SDK의 클라이언트 API를 사용하여 document security에서 서비스를 요청합니다. 클라이언트 API 요청에는 플랫폼 및 SDK 버전 정보(클라이언트 API로 미리 컴파일됨)와 클라이언트 애플리케이션에서 얻은 제품 정보가 포함됩니다.
 
 클라이언트 응용 프로그램 또는 플러그인은 콜백 함수의 구현에 제품 정보를 제공합니다. 애플리케이션이 제공하는 정보는 다음과 같습니다.
 

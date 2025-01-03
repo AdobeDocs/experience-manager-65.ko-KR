@@ -9,14 +9,18 @@ exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1585'
 ht-degree: 0%
 
 ---
 
 # 그룹 만들기 및 구성{#creating-and-configuring-groups}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 사용자 그룹을 만들면 개별 사용자 대신 그룹에 역할을 할당할 수 있습니다.
 

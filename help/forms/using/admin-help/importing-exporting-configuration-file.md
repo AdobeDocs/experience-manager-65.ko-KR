@@ -9,14 +9,18 @@ exl-id: 225dbeb5-a21c-4338-98c7-e10c32973721
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
 # 구성 파일 가져오기 및 내보내기 {#importing-and-exporting-the-configuration-file}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 [수동 구성] 페이지에서는 XML 형식의 구성 설정 사본을 다운로드할 수 있습니다. 이 파일의 설정은 모든 서버 기본 설정을 제어합니다. 그런 다음 파일을 편집하고 다시 서버에 업로드할 수 있습니다. 파일을 사용하여 다른 AEM forms 제품 인스턴스를 구성할 수도 있습니다.
 

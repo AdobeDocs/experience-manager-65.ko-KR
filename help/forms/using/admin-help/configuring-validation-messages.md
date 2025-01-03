@@ -9,14 +9,18 @@ exl-id: 14314383-5228-4904-98c1-586f48a1142c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
 
 # 유효성 검사 메시지 구성 {#configuring-validation-messages}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 HTML으로 렌더링되는 양식의 경우 사용자에게 발생한 양식 유효성 검사 오류가 표시됩니다. 유효성 검사 메시지가 표시되는 방식을 사용자 지정할 수 있습니다. 유효성 검사 메시지가 표시되는 위치에 따라 폼에서 메시지 위치와 프레임 테두리 크기를 제어할 수도 있습니다.
 

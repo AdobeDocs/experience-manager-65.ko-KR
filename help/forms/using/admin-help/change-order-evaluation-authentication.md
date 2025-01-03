@@ -9,14 +9,18 @@ exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
 
 # 인증을 위한 평가 순서 변경 {#change-the-order-of-evaluation-for-authentication}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 여러 인증 공급자를 구성한 경우 AEM Forms에서 인증을 평가하는 순서를 변경할 수 있습니다. config.xml 파일에 나열된 인증 공급자의 순서는 인증을 위한 평가 순서를 결정합니다.
 

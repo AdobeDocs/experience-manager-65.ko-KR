@@ -9,14 +9,18 @@ exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
 
 # 백업 및 복구할 파일 {#files-to-back-up-and-recover}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 백업해야 하는 응용 프로그램 및 데이터 파일은 다음 섹션에서 자세히 설명합니다.
 
@@ -110,7 +114,7 @@ DB2에는 Tivoli Storage Manager에 데이터베이스를 백업하는 기능이
 
 ### Oracle {#oracle}
 
-스냅샷 백업을 사용하거나 아카이브 로그 모드에서 실행되도록 Oracle 데이터베이스를 구성합니다. ([Oracle 백업: 소개](https://www.databasedesign-resource.com/oracle-backup.md)를 참조하십시오.) oracle 데이터베이스 백업 및 복구에 대한 자세한 내용은 다음 사이트를 참조하십시오.
+스냅샷 백업을 사용하거나 아카이브 로그 모드에서 실행되도록 Oracle 데이터베이스를 구성합니다. ([Oracle 백업: 소개](https://www.databasedesign-resource.com/oracle-backup.md)를 참조하십시오.) Oracle 데이터베이스 백업 및 복구에 대한 자세한 내용은 다음 사이트를 참조하십시오.
 
 [Oracle 백업 및 복구:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) 백업 및 복구의 개념과 백업, 복구 및 보고를 위해 RMAN(복구 관리자)을 사용하는 가장 일반적인 기술에 대해 자세히 설명하고 백업 및 복구 전략을 계획하는 방법에 대한 자세한 정보를 제공합니다.
 
@@ -131,7 +135,7 @@ SQL Server는 두 가지 백업 및 복구 도구도 제공합니다.
 
 ### MySQL {#mysql}
 
-MySQLAdmin을 사용하거나 Windows에서 INI 파일을 수정하여 이진 로그 모드에서 실행되도록 MySQL 데이터베이스를 구성합니다. [MySQL 이진 로깅](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)을 참조하십시오. MySQL용 핫 백업 툴은 InnoBase 소프트웨어도 사용할 수 있습니다. ([Innobase 핫 백업](https://www.innodb.com/hot-backup/features.md)을 참조하십시오.)
+MySQLAdmin을 사용하거나 Windows에서 INI 파일을 수정하여 이진 로그 모드에서 실행되도록 MySQL 데이터베이스를 구성합니다. ([MySQL 이진 로깅](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)을 참조하십시오.) MySQL용 핫 백업 도구는 InnoBase 소프트웨어도 사용할 수 있습니다. ([Innobase 핫 백업](https://www.innodb.com/hot-backup/features.md)을 참조하십시오.)
 
 >[!NOTE]
 >

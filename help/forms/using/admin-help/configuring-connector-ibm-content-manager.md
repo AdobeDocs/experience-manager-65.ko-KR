@@ -9,14 +9,18 @@ exl-id: 50f0c963-8007-4e2a-aa73-d99b97d9a1aa
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
 
 # IBM® Content Manager용 커넥터 구성{#configuring-connector-for-ibm-content-manager}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 IBM® Content Manager용 커넥터를 사용하면 AEM Forms와 IBM® Content Manager 간에 통신할 수 있습니다. 추가 배경 정보는 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)의 &quot;ECM용 커넥터&quot;를 참조하십시오.
 

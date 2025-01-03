@@ -9,14 +9,18 @@ feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
 # PDFG 네트워크 프린터 설정(Windows에만 해당) {#setting-up-a-pdfg-network-printer-windows-only}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 PDFG Network Printer를 사용하면 인쇄를 지원하는 모든 응용 프로그램에서 PDF 문서를 생성할 수 있습니다. 사용자가 PDFG 네트워크 프린터를 설치한 후 Windows Campaign 컨트롤 패널의 프린터 섹션에 *PDF 생성기*&#x200B;라는 새 프린터가 나타납니다. 같은 이름의 프린터가 이미 있는 경우 다른 이름을 입력하라는 메시지가 표시됩니다.
 

@@ -9,14 +9,18 @@ exl-id: 734ed463-2441-49fc-bacb-deb40851af42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
 
 # 시스템 정보 서비스 설정 {#set-up-the-system-information-service}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 시스템 정보 서비스는 정보를 검색할 수 있는 REST API를 제공합니다. 시스템 정보 서비스를 사용하려면 관리 콘솔에서 REST 끝점을 사용하도록 설정하십시오. REST 끝점을 활성화하려면 다음 단계를 수행하십시오.
 

@@ -9,9 +9,9 @@ feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '7403'
+source-wordcount: '7415'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,10 @@ PDF Generator은 사전 정의된 사용 PDF 설정을 제공합니다. 이러�
 **표준:** 데스크톱 프린터 또는 디지털 복사기에 인쇄하거나 CD에 게시하거나 클라이언트에 게시 증명으로 보낼 PDF 파일을 만듭니다. 이 옵션 세트는 압축 및 다운샘플링을 사용하여 파일 크기를 줄입니다. 또한 파일에 사용된 모든 글꼴의 하위 집합을 임베드하고 모든 색상을 sRGB로 변환하며 중간 해상도로 인쇄하여 원본 문서의 상당히 정확한 렌디션을 만듭니다. Microsoft Windows 글꼴 하위 집합은 기본적으로 포함되지 않습니다. 이러한 PDF 파일은 Acrobat 5 및 Acrobat Reader 5.0 이상에서 열 수 있습니다.
 
 ## PDF 설정 추가 또는 편집 {#add-or-edit-pdf-settings}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 PDF 설정은 파일이 변환되는 방식과 그 결과 PDF 구조 및 기능을 정확하게 결정합니다. 새 PDF 설정을 정의하거나 이전에 만든 설정을 편집합니다. 미리 정의된 설정은 수정할 수 없지만 설정을 편집하고 새 이름으로 저장하여 기존 설정을 기반으로 설정을 만들 수 있습니다.
 

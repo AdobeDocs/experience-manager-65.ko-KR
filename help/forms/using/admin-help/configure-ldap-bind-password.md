@@ -9,14 +9,18 @@ exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
 # LDAP 바인드 암호 구성{#configure-the-ldap-bind-password}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 보안 위험을 방지하기 위해 내보낸 구성 파일(config.xml)의 바인드 암호 필드가 구성되지 않았습니다. 구성 파일을 다른 시스템으로 가져오기 전에 이 암호를 구성해야 합니다. 이 암호는 데이터베이스에 저장된 기존 암호를 재정의합니다. Null 암호는 Null이 아닌 기존 암호 값을 재정의하지 않습니다.
 

@@ -9,14 +9,18 @@ exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
 
 # 작업 {#working-with-tasks}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 [작업 검색] 페이지에서는 사용자 이름 또는 작업 ID별로 작업을 검색할 수 있습니다. 작업 내역에 액세스할 수 있는 [작업 목록] 페이지에 검색 결과가 표시됩니다. 한 사용자에게 작업이 너무 많거나 사용자가 오류로 작업 할당을 받은 경우 작업을 재할당할 수도 있습니다.
 

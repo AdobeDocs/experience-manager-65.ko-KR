@@ -9,14 +9,18 @@ exl-id: 1e2b82d6-ca1f-4421-9a51-ec97fdc315d3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
 # 사용자 이름 및 암호 자격 증명 추가 및 제거 {#adding-and-removing-user-name-and-password-credentials}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 [Trust Store 관리] 페이지에서 Forms 서비스가 SOAP 수준 보안을 사용한 요청을 받을 때 이 서비스에서 사용하는 사용자 이름 및 암호 자격 증명을 추가하거나 제거할 수 있습니다.
 

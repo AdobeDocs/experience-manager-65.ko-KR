@@ -8,14 +8,18 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '6188'
+source-wordcount: '6200'
 ht-degree: 0%
 
 ---
 
 # 파일 유형 설정 구성 {#configuring-file-type-settings}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 PDF Generator에서 지원되는 파일 형식에 대한 응용 프로그램 설정을 설정할 수 있습니다. Windows에서는 지원되는 각 파일 형식에 대해 응용 프로그램 설정을 설정할 수 있습니다. UNIX 및 Linux에서는 HTML-투-PDF 및 OpenOffice에 대한 응용 프로그램 설정을 설정할 수 있습니다.
 

@@ -9,14 +9,18 @@ exl-id: 0f8e1e46-4fc5-43f6-abb1-19a3f20e1f1d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services,Reader Extensions
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
 
 # 데이터 캡처를 위한 Acrobat Reader DC 확장 구성 {#configuring-acrobat-reader-dc-extensions-for-data-capture}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 AEM Forms 설치 사용자가 Content Services의 데이터 캡처 기능을 사용하는 경우(더 이상 사용되지 않음) 이러한 사용자에 대해 읽기 전용 액세스 권한을 가진 역할을 만드는 것이 좋습니다.
 

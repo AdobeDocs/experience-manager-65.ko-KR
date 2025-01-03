@@ -9,14 +9,18 @@ exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '339'
 ht-degree: 1%
 
 ---
 
 # 출력을 위한 파일 위치 지정 {#specify-file-locations-for-output}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 Output에서 필요한 특정 유형의 파일을 찾는 위치를 지정할 수 있습니다.
 

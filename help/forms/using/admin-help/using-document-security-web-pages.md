@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
 
 # Document Security 웹 페이지 사용 {#using-the-document-security-webpages}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 사용자 및 관리자는 document security 웹 페이지를 사용하여 정책을 생성 및 관리하고, 정책으로 보호된 문서를 관리하며, 정책으로 보호된 문서와 연관된 이벤트를 모니터링합니다. 또한 관리자는 웹 페이지를 사용하여 정책 세트를 만들고 정책 세트 코디네이터를 지정하고, 문서 보안 기본 설정을 구성하고, 초대된 사용자 등록 및 계정을 관리하고, 서버, 정책, 사용자 및 문서 관련 이벤트를 모니터링하고 관리합니다.
 

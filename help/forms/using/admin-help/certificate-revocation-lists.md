@@ -9,14 +9,18 @@ exl-id: 01e966f6-a650-4565-80d1-e2297f25da5c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
 
 # 인증서 해지 목록 관리{#managing-certificate-revocationlists}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 Trust Store Management를 사용하여 CRL(인증서 해지 목록)을 가져오고, 편집하고, 삭제할 수 있습니다. Base64 및 DER로 인코딩된 인증서 해지 목록이 지원됩니다.
 

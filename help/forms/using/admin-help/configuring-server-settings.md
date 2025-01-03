@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2631'
+source-wordcount: '2643'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ AEM Forms가 사용자로부터 들어오는 이메일 메시지를 수신하고
 이메일을 필요로 하지 않고 프로세스를 디자인하고 구현하는 경우 이메일 설정 페이지에서 옵션을 구성할 필요가 없습니다.
 
 ### 발신 이메일 설정 구성 {#configure-outgoing-email-settings}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 1. 관리 콘솔에서 서비스 > 양식 워크플로우 > 서버 설정 > 이메일 설정 을 클릭합니다.
 1. 발신 메시지 사용을 선택합니다.

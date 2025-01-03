@@ -9,19 +9,24 @@ exl-id: a8be58f1-1961-4bf5-aaad-feb4489fb389
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 98cbaaf64c0268be1afe7196a7bbbf5c93f02148
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '214'
 ht-degree: 1%
 
 ---
 
-# Microsoft SharePoint용 커넥터 구성 {#configuring-connector-for-microsoft-sharepoint}
+
+# Microsoft SharePoint용 커넥터 구성
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 Microsoft SharePoint용 커넥터를 사용하면 AEM Forms와 Microsoft SharePoint 간에 통신할 수 있습니다. 추가 배경 정보는 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)의 &quot;ECM용 커넥터&quot;를 참조하십시오.
 
 1. 관리 콘솔에서 서비스 > Microsoft SharePoint용 커넥터 를 클릭합니다.
-1. SharePoint 서버에 대해 다음 설정을 지정합니다.
+2. SharePoint 서버에 대해 다음 설정을 지정합니다.
 
    **SharePoint 서버 호스트 이름:** SharePoint 서버에 있는 웹 응용 프로그램의 호스트 이름 포트 번호(`[hostname]:'port'` 형식)입니다.
 
@@ -31,7 +36,7 @@ Microsoft SharePoint용 커넥터를 사용하면 AEM Forms와 Microsoft SharePo
 
    SharePoint 서버가 있는 **도메인 이름:** 도메인.
 
-1. 저장을 클릭합니다.
+3. 저장을 클릭합니다.
 
 ## Microsoft SharePoint 구성 서비스 {#microsoft-sharepoint-configuration-service}
 

@@ -9,9 +9,9 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2495'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,10 @@ ht-degree: 0%
 >Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
 ## 역할 만들기 {#create-a-role}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 역할 관리를 클릭한 다음 새 역할을 클릭합니다.
 1. 역할 이름 상자에 역할 이름을 입력하고 선택적으로 역할에 대한 설명을 입력한 후 다음을 누릅니다.

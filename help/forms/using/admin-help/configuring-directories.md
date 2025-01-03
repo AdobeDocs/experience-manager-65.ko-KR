@@ -9,12 +9,13 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3241'
 ht-degree: 0%
 
 ---
+
 
 # 디렉터리 구성 {#configuring-directories}
 
@@ -25,6 +26,10 @@ ht-degree: 0%
 구성하는 각 엔터프라이즈 도메인에 대해 인증 공급자가 사용자 정보를 쿼리하는 디렉토리를 지정합니다. 기존 엔터프라이즈 도메인이나 추가하려는 새 엔터프라이즈 도메인에 디렉토리를 추가할 수 있습니다. 한 도메인에 대해 여러 디렉터리를 구성할 수 있습니다. 동기화를 위해 사용자 지정 SPI(서비스 공급자 인터페이스)를 사용하도록 도메인을 구성할 수도 있습니다.
 
 ### 디렉터리 추가 {#add-a-directory}
+
+>[!NOTE]
+>
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
 1. 새 Enterprise 도메인을 누르거나 기존 Enterprise 도메인을 선택합니다.

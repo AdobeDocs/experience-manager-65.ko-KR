@@ -9,14 +9,18 @@ exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
 
 # 검색 템플릿 사용자 정의 {#customizing-search-templates}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 Workspace에서 할 일 및 추적 페이지에서 프로세스 인스턴스를 검색하는 데 사용할 검색 템플릿을 만들 수 있습니다. 기존 검색 템플릿을 편집하거나 삭제할 수도 있습니다.
 

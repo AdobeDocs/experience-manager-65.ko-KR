@@ -9,14 +9,18 @@ exl-id: 6b975aa1-9270-4098-9af5-c5cc67cb7b5d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
 # 배포에 대한 라이선스 유형 업데이트 {#update-the-license-type-for-the-deployment}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 AEM Forms 설치 프로세스의 일부로 Configuration Manager를 사용하여 필요한 AEM Forms 모듈을 구성하고 배포했습니다. 기본적으로 이러한 모듈은 60일 평가 라이선스로 구성됩니다. 관리 콘솔의 [라이센스 변경] 페이지에서 배포에 대한 라이센스 유형을 변경할 수 있습니다. 현재 배포된 모듈이 라이센스 변경 페이지에 표시됩니다.
 

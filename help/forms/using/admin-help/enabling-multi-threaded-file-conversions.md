@@ -9,9 +9,9 @@ feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,10 @@ Windows Server 2008에서 OpenOffice, Microsoft® Word 또는 Microsoft® PowerP
 >OpenOffice는 모든 PDFG 사용자가 액세스할 수 있는 디렉토리 위치에 설치해야 합니다. PDFG 사용자로 로그인한 다음 문제 없이 OpenOffice를 시작할 수 있는지 확인하여 이를 확인할 수 있습니다.
 
 ### 사용자 계정 추가 {#add-a-user-account}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 1. 관리 콘솔에서 서비스 > PDF Generator > 사용자 계정 을 클릭합니다.
 1. 추가 를 클릭하고 Forms 서버에 대한 관리 권한이 있는 사용자의 사용자 이름과 암호를 입력합니다. OpenOffice용 사용자를 구성하는 경우 초기 OpenOffice 활성화 대화 상자를 닫습니다.

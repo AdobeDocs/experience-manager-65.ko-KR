@@ -9,14 +9,18 @@ feature: PDF Generator
 exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # PDF Generator 구성 파일 가져오기 및 내보내기 {#importing-and-exporting-pdf-generator-configuration-files}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 구성 파일에는 PDF, 파일 유형 및 보안 설정을 포함한 PDF Generator 변환 정보가 포함되어 있습니다.
 

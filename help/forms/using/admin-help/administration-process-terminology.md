@@ -9,14 +9,18 @@ exl-id: 8944cbae-865d-4b1c-b3bf-00c3a247d776
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
 # 관리 및 프로세스 용어 정보 {#about-administration-and-process-terminology}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 양식 워크플로우를 효율적으로 관리하려면 다음 용어와 요소의 계층 구조를 이해해야 합니다.
 

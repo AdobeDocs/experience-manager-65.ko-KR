@@ -9,9 +9,9 @@ exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,10 @@ ht-degree: 1%
 1. 저장을 클릭합니다.
 
 ## 양식 제출 전 사용자 지정 스크립트 호출 구성 {#configuring-invocation-of-custom-scripts-before-form-submit}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 기능을 활성화하려면 다음 단계를 수행하십시오.
 

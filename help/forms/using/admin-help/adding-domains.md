@@ -9,7 +9,7 @@ exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: eac8a82c78d7f209512d32e7fcd7083bbebf1cb5
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -18,7 +18,9 @@ ht-degree: 0%
 
 # 도메인 추가 {#adding-domains}
 
-사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 ## Enterprise 도메인 추가 {#add-an-enterprise-domain}
 

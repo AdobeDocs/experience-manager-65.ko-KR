@@ -9,14 +9,18 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
 
 # AEM Forms에서 SSO(Single Sign-On) 활성화{#enabling-single-sign-on-in-aem-forms}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 AEM forms에서는 SSO(Single Sign-On)를 활성화하는 두 가지 방법, 즉 HTTP 헤더와 SPNEGO를 제공합니다.
 
@@ -71,7 +75,7 @@ HTTP 헤더를 사용하여 SSO를 활성화할 수도 있습니다. ([HTTP 헤�
 >JEE의 AEM Forms은 여러 하위 도메인 환경에서 Kerberos/SPNEGO를 사용한 SSO 구성을 지원하지 않습니다.
 
 1. SSO를 활성화하는 데 사용할 도메인을 결정합니다. AEM Forms 서버 및 사용자는 동일한 Windows 도메인 또는 트러스트된 도메인에 속해야 합니다.
-1. Active Directory에서 AEM Forms 서버를 나타내는 사용자를 만듭니다. ([사용자 계정 만들기](enabling-single-sign-on-aem.md#create-a-user-account)를 참조하세요.) SPNEGO를 사용하도록 두 개 이상의 도메인을 구성하는 경우 이러한 각 사용자의 암호가 서로 다른지 확인하십시오. 암호가 다르지 않으면 SPNEGO SSO가 작동하지 않습니다.
+1. Active Directory에서 AEM Forms 서버를 나타내는 사용자를 만듭니다. [사용자 계정 만들기](enabling-single-sign-on-aem.md#create-a-user-account)를 참조하세요. SPNEGO를 사용하도록 두 개 이상의 도메인을 구성하는 경우 이러한 각 사용자의 암호가 서로 다른지 확인하세요. 암호가 다르지 않으면 SPNEGO SSO가 작동하지 않습니다.
 1. 서비스 사용자 이름을 매핑합니다. ([SPN(서비스 사용자 이름) 매핑](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn)을 참조하십시오.)
 1. 도메인 컨트롤러를 구성합니다. ([Kerberos 무결성 검사 실패 방지](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures)를 참조하십시오.)
 1. [도메인 추가](/help/forms/using/admin-help/adding-domains.md#adding-domains) 또는 [기존 도메인 편집 및 변환](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)에 설명된 대로 Enterprise 도메인을 추가하거나 편집합니다. Enterprise 도메인을 생성하거나 편집할 때 다음 작업을 수행합니다.

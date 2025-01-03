@@ -9,9 +9,9 @@ exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 프로세스를 만들 때 Workbench 사용자는 부재 설정으로 인해 작업을 리디렉션할 수 있는지 여부를 지정할 수 있습니다.
 
 ## 사용자의 부재 중 정보 보기 {#view-a-user-s-out-of-office-information}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 1. 관리 콘솔에서 서비스 > 양식 워크플로우 > 부재 를 클릭합니다.
 1. 부재 중 페이지 상단 근처에 있는 상자에서 다음 중 하나를 수행할 수 있습니다.

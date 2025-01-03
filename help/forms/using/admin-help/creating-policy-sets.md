@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1309'
 ht-degree: 0%
 
 ---
 
 # 정책 집합 만들기 및 관리 {#creating-and-managing-policy-sets}
+
+>[!NOTE]
+> 
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
 
 정책 세트는 일반적인 비즈니스 목적을 가진 정책을 그룹화하는 데 사용됩니다. 정책 집합은 시스템의 사용자 하위 집합에 대해 사용 가능하게 할 수 있다.
 
