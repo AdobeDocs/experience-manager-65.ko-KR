@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 5827cf69222962243cfebdc9c41eb73f90ac950a
+source-git-commit: 2fc6225887436685f598baf4ea2c4a01534d8704
 workflow-type: tm+mt
-source-wordcount: '7480'
+source-wordcount: '7475'
 ht-degree: 22%
 
 ---
@@ -115,7 +115,7 @@ ht-degree: 22%
          + [구성 요소 콘솔](/help/sites-authoring/default-components-console.md)
          + [반응형 레이아웃](/help/sites-authoring/responsive-layout.md)
          + [컨텐츠 인사이트](/help/sites-authoring/content-insights.md)
-         + [액세스 가능한 콘텐츠 제작 (WCAG 2.1 적합성)](/help/sites-authoring/creating-accessible-content.md)
+         + [액세스 가능한 콘텐츠 제작 (WCAG 2.1 준수)](/help/sites-authoring/creating-accessible-content.md)
          + [디자인 모드에서 구성 요소 구성](/help/sites-authoring/default-components-designmode.md)
          + [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)
          + [스캐폴딩](/help/sites-authoring/scaffolding.md)
@@ -123,7 +123,7 @@ ht-degree: 22%
       + 프로젝트 {#projects}
          + [프로젝트](/help/sites-authoring/projects.md)
          + [프로젝트 관리](/help/sites-authoring/touch-ui-managing-projects.md)
-         + [작업](/help/sites-authoring/task-content.md)
+         + [작업 처리](/help/sites-authoring/task-content.md)
          + [크리에이티브 프로젝트 및 PIM 통합](/help/sites-authoring/managing-product-information.md)
       + 론치 {#launches}
          + [론치](/help/sites-authoring/launches.md)
@@ -139,7 +139,7 @@ ht-degree: 22%
          + [컨텐츠 인사이트](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
          + [페이지 성능 분석](/help/sites-authoring/ci-analyze.md)
          + [페이지 분석 데이터 보기](/help/sites-authoring/pa-using.md)
-      + 개인 맞춤화 {#personalization}
+      + 개인화 {#personalization}
          + [개인화](/help/sites-authoring/personalization.md)
          + [ContextHub 데이터를 사용하여 페이지 미리보기](/help/sites-authoring/ch-previewing.md)
          + [타기팅 모드를 사용하여 타기팅된 콘텐츠 작성](/help/sites-authoring/content-targeting-touch.md)
@@ -167,7 +167,7 @@ ht-degree: 22%
          + [MSM 롤아웃 충돌](/help/sites-administering/msm-rollout-conflicts.md)
          + [MSM 문제 해결 및 FAQ](/help/sites-administering/troubleshoot-msm.md)
          + [MSM 모범 사례](/help/sites-administering/msm-best-practices.md)
-         + [다국어 Sites를 위한 콘텐츠 번역](/help/sites-administering/translation.md)
+         + [다국어 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md)
          + [번역 프로젝트 관리](/help/sites-administering/tc-manage.md)
          + [번역할 콘텐츠 식별](/help/sites-administering/tc-rules.md)
          + [번역을 위한 콘텐츠 준비](/help/sites-administering/tc-prep.md)
@@ -179,7 +179,7 @@ ht-degree: 22%
          + [번역 모범 사례](/help/sites-administering/tc-bp.md)
          + [구성 및 구성 브라우저](/help/sites-administering/configurations.md)
          + [AEM FAQ](/help/sites-administering/aem-faqs.md)
-      + 작업 {#operations}
+      + 운영 {#operations}
          + [대시보드](/help/sites-administering/dashboards.md)
          + [작업 대시보드](/help/sites-administering/operations-dashboard.md)
          + [백업 및 복원](/help/sites-administering/backup-and-restore.md)
@@ -203,14 +203,14 @@ ht-degree: 22%
          + [AEM에서 cURL 사용](/help/sites-administering/curl.md)
          + [프록시 서버 도구(proxy.jar)](/help/sites-administering/proxy-jar.md)
          + [AEM 앱에 대한 구성](/help/sites-administering/config-apps.md)
-         + [검색 Forms 구성](/help/sites-administering/search-forms.md)
+         + [검색 양식 구성](/help/sites-administering/search-forms.md)
          + [도구 콘솔](/help/sites-administering/tools-consoles.md)
          + [보고](/help/sites-administering/reporting.md)
          + [레이아웃 컨테이너 및 레이아웃 모드 구성](/help/sites-administering/configuring-responsive-layout.md)
          + [편집기](/help/sites-administering/enable-classic-ui-editor.md)
          + [클래식 UI에 대한 액세스 활성화](/help/sites-administering/enable-classic-ui.md)
          + [Admin Console](/help/sites-administering/enable-classic-ui-admin.md)
-      + 개인 맞춤화 {#personalization}
+      + 개인화 {#personalization}
          + [개인화](/help/sites-administering/personalization.md)
          + [ContextHub 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/personlization/ch-configuring.html)
          + [ClientContext](/help/sites-administering/client-context.md)
@@ -313,7 +313,7 @@ ht-degree: 22%
          + [론치 만들기](/help/sites-classic-ui-authoring/classic-launches-creating.md)
          + [론치 편집](/help/sites-classic-ui-authoring/classic-launches-editing.md)
          + [론치 홍보](/help/sites-classic-ui-authoring/classic-launches-promoting.md)
-      + 개인 맞춤화 {#personalization}
+      + 개인화 {#personalization}
          + [세분화 이해](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
          + [Campaign Management](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)
          + [랜딩 페이지](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
@@ -380,7 +380,7 @@ ht-degree: 22%
       + [Dynamic Media 비디오 프로필](/help/assets/video-profiles.md)
       + [Dynamic Media 이미지 프로필](/help/assets/image-profiles.md)
       + [스마트 이미징](/help/assets/imaging-faq.md)
-      + [클라이언트측 디바이스 픽셀 비율을 갖는 스마트 이미징](/help/assets/client-side-dpr.md)
+      + [클라이언트측 디바이스 픽셀 비율을 활용한 스마트 이미징](/help/assets/client-side-dpr.md)
       + [비디오](/help/assets/s7-video.md)
       + [컨텐츠의 HTTP2 전달](/help/assets/http2.md)
       + [Dynamic Media 자산 전송](/help/assets/delivering-dynamic-media-assets.md)
@@ -392,12 +392,12 @@ ht-degree: 22%
       + [혼합 미디어 세트](/help/assets/mixed-media-sets.md)
       + [스핀 세트](/help/assets/spin-sets.md)
       + [Dynamic Media의 비디오](/help/assets/video.md)
-      + [회전 배너](/help/assets/carousel-banners.md)
+      + [슬라이드 배너](/help/assets/carousel-banners.md)
       + [대화형 이미지](/help/assets/interactive-images.md)
       + [대화형 비디오](/help/assets/interactive-videos.md)
       + [360 VR 비디오](/help/assets/360-video.md)
       + [Dynamic Media 뷰어를 Adobe Analytics 및 Adobe Experience Platform 태그와 통합](/help/assets/tags.md)
-      + [빠른 보기를 사용하여 사용자 정의 팝업 제작](/help/assets/custom-pop-ups.md)
+      + [빠른 보기를 사용하여 사용자 정의 팝업 만들기](/help/assets/custom-pop-ups.md)
       + [반응형 사이트에 최적화된 이미지 게재](/help/assets/responsive-site.md)
       + [Dynamic Media 자산 미리보기](/help/assets/previewing-assets.md)
       + [페이지에 Dynamic Media 자산 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)
@@ -471,13 +471,13 @@ ht-degree: 22%
       + [인스턴스에 대해 콘텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
       + [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
-      + [변형 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md)
+      + [베리에이션 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md)
       + [콘텐츠 조각 관련 콘텐츠](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md)
       + [콘텐츠 조각 - 삭제 고려 사항](/help/assets/content-fragments/content-fragments-delete.md)
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
-      + [미리보기 - JSON 표현식](/help/assets/content-fragments/content-fragments-json-preview.md)
+      + [미리보기 - JSON 표현](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [콘텐츠 조각에 대한 번역 프로젝트 만들기](/help/assets/creating-translation-projects-for-content-fragments.md)
    + 자산 관리 {#managing}
       + [디지털 자산 관리](/help/assets/manage-assets.md)
@@ -513,7 +513,7 @@ ht-degree: 22%
       + [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md)
       + [대화형 통신 소개](/help/forms/using/interactive-communications-overview.md)
       + [양식 관리 소개](/help/forms/using/introduction-managing-forms.md)
-      + [자동 Forms 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko)
+      + [자동 Forms 변환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
       + 자습서: 첫 번째 적응형 양식 {#create-first-adaptive-form} 만들기
          + [자습서: 첫 번째 적응형 양식 만들기](/help/forms/using/create-your-first-adaptive-form.md)
          + [자습서: 적응형 양식 만들기](/help/forms/using/create-adaptive-form.md)
@@ -670,7 +670,7 @@ ht-degree: 22%
       + [적응형 양식 템플릿](/help/forms/using/template-editor.md)
       + [적응형 양식 표현식](/help/forms/using/adaptive-form-expressions.md)
       + [적응형 양식을 위한 기록 문서 생성](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-      + [소극적 로드 옵션이 있는 대용량 양식의 성능 향상](/help/forms/using/lazy-loading-adaptive-forms.md)
+      + [지연 로딩으로 대용량 양식의 성능 향상](/help/forms/using/lazy-loading-adaptive-forms.md)
       + [적응형 양식 필드 미리 채우기](/help/forms/using/prepopulate-adaptive-form-fields.md)
       + [적응형 양식에서 SOM 표현식 사용](/help/forms/using/using-som-expressions-adaptive-forms.md)
       + [양식 제출 메타데이터에 사용자 데이터의 정보 추가](/help/forms/using/form-submission-metadata.md)
@@ -841,7 +841,7 @@ ht-degree: 22%
       + [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)
       + [초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
       + [초안 및 제출을 위한 스토리지 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md)
-      + [AEM 받은 편지함 Forms 애플리케이션 및 작업 관리](/help/forms/using/manage-applications-inbox.md)
+      + [AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리](/help/forms/using/manage-applications-inbox.md)
       + [AEM Forms의 감시 폴더](/help/forms/using/watched-folder-in-aem-forms.md)
       + [초안 및 제출 구성 요소](/help/forms/using/draft-submission-component.md)
       + [페이지에 링크 구성 요소 포함](/help/forms/using/embedding-link-component-page.md)
@@ -1209,9 +1209,8 @@ ht-degree: 22%
       + [Experience Manager Forms의 Struts 2 RCE 취약성 완화](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
       + [MySQL용 6.5.12.0으로 업그레이드하는 동안 데이터베이스를 백업하지 못했습니다.](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [PDF 생성이 WorkBench에서 많은 PDF을 인쇄하지 못했습니다.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
-      + [AEM SDK를 올바르게 다시 시작하는 방법](/help/forms/using/restart-aem-sdk.md)
+      + [AEM SDK을 올바르게 다시 시작하는 방법](/help/forms/using/restart-aem-sdk.md)
       + [PaperCapture 서비스가 PDF에서 OCR을 수행하지 못함](/help/forms/using/papercapture-service-resolution.md)
-      + [AEM Forms 추가 기능 패키지 제거](/help/forms/using/uninstall-forms-addon-package.md)
    + 레거시 설명서 {#legacy-documentation}
       + [JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드](/help/forms/developing/building-xml.md)
       + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1277,14 +1276,14 @@ ht-degree: 22%
       + [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](/help/journey-headless/developer/model-your-content.md)
       + [AEM 게재 API를 통해 콘텐츠에 액세스하는 방법](/help/journey-headless/developer/access-your-content.md)
       + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](/help/journey-headless/developer/update-your-content.md)
-      + [결합 방법](/help/journey-headless/developer/put-it-all-together.md)
+      + [모든 것을 통합하는 방법](/help/journey-headless/developer/put-it-all-together.md)
       + [Headless 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
       + [선택 사항 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
    + AEM 헤드리스 콘텐츠 설계 여정 {#architect}
       + [AEM 헤드리스 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
       + [AEM을 통한 Headless용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
       + [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항 알아보기](/help/journey-headless/architect/basics.md)
-      + [AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기](/help/journey-headless/architect/model-structure.md)
+      + [AEM의 콘텐츠 조각 모델 만들기에 대해 알아보기](/help/journey-headless/architect/model-structure.md)
    + AEM Headless 콘텐츠 작성 여정 {#author}
       + [AEM Headless 콘텐츠 작성 여정 - 개요](/help/journey-headless/author/overview.md)
       + [AEM을 통한 Headless 작성 - 소개](/help/journey-headless/author/introduction.md)
@@ -1292,9 +1291,9 @@ ht-degree: 22%
       + [콘텐츠 조각의 참조 사용에 대해 알아보기](/help/journey-headless/author/references.md)
       + [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](/help/journey-headless/author/metadata-tagging.md)
    + AEM Headless 번역 여정 {#translation}
-      + [AEM에서의 Headless 번역 이해](/help/journey-headless/translation/overview.md)
+      + [AEM의 Headless 번역 이해](/help/journey-headless/translation/overview.md)
       + [AEM Headless 번역 시작하기](/help/journey-headless/translation/getting-started.md)
-      + [Headless 콘텐츠 및 AEM에서의 번역 방법에 대해 알아보기](/help/journey-headless/translation/learn-about.md)
+      + [AEM의 Headless 콘텐츠 및 번역 방법에 대해 알아보기](/help/journey-headless/translation/learn-about.md)
       + [번역 커넥터 구성](/help/journey-headless/translation/configure-connector.md)
       + [번역 규칙 구성](/help/journey-headless/translation/translation-rules.md)
       + [콘텐츠 번역](/help/journey-headless/translation/translate-content.md)
@@ -1353,13 +1352,13 @@ ht-degree: 22%
          + [벌크 편집기 개발](/help/sites-developing/dev-bulk-editor.md)
          + [보고서 개발](/help/sites-developing/dev-reports.md)
       + 구성 요소{#components}
-         + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+         + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
          + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/style-system.html)
          + [구성 요소 개요](/help/sites-developing/components.md)
          + [AEM 구성 요소 - 기본 사항](/help/sites-developing/components-basics.md)
          + [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)
          + [AEM 구성 요소 개발 - 코드 샘플](/help/sites-developing/developing-components-samples.md)
-         + [콘텐츠 서비스에 대한 JSON 내보내기](/help/sites-developing/json-exporter.md)
+         + [콘텐츠 서비스를 위한 JSON 내보내기 도구](/help/sites-developing/json-exporter.md)
          + [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
          + [이미지 편집기](/help/sites-developing/image-editor.md)
          + [장식 태그](/help/sites-developing/decoration-tag.md)
@@ -1369,9 +1368,9 @@ ht-degree: 22%
          + [UI 테스트](/help/sites-developing/hobbes.md)
          + [컨텐츠 조각용 구성 요소](/help/sites-developing/components-content-fragments.md)
          + [JSON 형식으로 페이지 정보 가져오기](/help/sites-developing/pageinfo.md)
-         + 다국어화{#internationalization}
-            + [구성 요소 다국어화](/help/sites-developing/i18n.md)
-            + [UI 문자열 다국어화](/help/sites-developing/i18n-dev.md)
+         + 국제화{#internationalization}
+            + [구성 요소 국제화](/help/sites-developing/i18n.md)
+            + [UI 문자열 국제화](/help/sites-developing/i18n-dev.md)
             + [번역기를 사용하여 사전 관리](/help/sites-developing/i18n-translator.md)
             + [번역할 문자열 추출](/help/sites-developing/i18n-extract.md)
          + 클래식 UI 구성 요소{#classic-ui-components}
@@ -1438,7 +1437,7 @@ ht-degree: 22%
          + [React를 사용하여 시작하기](/help/sites-developing/spa-getting-started-react.md)
          + [SPA에 대한 React 구성 요소 구현](/help/sites-developing/spa-implementing-react-component.md)
          + [Angular를 사용하여 시작하기](/help/sites-developing/spa-getting-started-angular.md)
-         + [SPA 깊이 들어가기](/help/sites-developing/spa-deep-dives.md)
+         + [SPA 심층 분석](/help/sites-developing/spa-deep-dives.md)
          + [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md)
          + [SPA 편집기 개요](/help/sites-developing/spa-overview.md)
          + [SPA 블루프린트](/help/sites-developing/spa-blueprint.md)
@@ -1447,10 +1446,10 @@ ht-degree: 22%
          + [SPA 모델 라우팅](/help/sites-developing/spa-routing.md)
          + [RemotePage 구성 요소](/help/sites-developing/spa-remote-page.md)
          + [AEM에서 외부 SPA 편집](/help/sites-developing/spa-edit-external.md)
-         + [SPA의 구성 요소 합성](/help/sites-developing/spa-composite-component.md)
+         + [SPA의 복합 구성 요소](/help/sites-developing/spa-composite-component.md)
          + [SPA 및 서버측 렌더링](/help/sites-developing/spa-ssr.md)
          + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/json-exporter-components.html)
-         + [통합 실행](/help/sites-developing/spa-launch.md)
+         + [실행 통합](/help/sites-developing/spa-launch.md)
          + [SPA 참조 자료](/help/sites-developing/spa-reference-materials.md)
       + 개발 도구 {#devtools}
          + [개발 도구](/help/sites-developing/dev-tools.md)
@@ -1467,7 +1466,7 @@ ht-degree: 22%
          + [AEM Brackets 확장](/help/sites-developing/aem-brackets.md)
          + [Eclipse용 AEM 개발자 도구](/help/sites-developing/aem-eclipse.md)
          + [AEM 저장소 도구](/help/sites-developing/aem-repo-tool.md)
-      + 개인 맞춤화 {#personlization}
+      + 개인화 {#personlization}
          + [ContextHub](/help/sites-developing/contexthub.md)
          + [Context Hub 구성](/help/sites-developing/ch-configuring.md)
          + [페이지에 ContextHub 추가 및 저장소 액세스](/help/sites-developing/ch-adding.md)
