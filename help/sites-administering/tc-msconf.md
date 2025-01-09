@@ -5,20 +5,16 @@ feature: Language Copy
 role: Admin
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3bb516289dbff4fb3b94685b9e25360e7717776e
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 80%
+source-wordcount: '258'
+ht-degree: 63%
 
 ---
 
 # Microsoft Translator에 연결 {#connecting-to-microsoft-translator}
 
-[Microsoft Translator](https://www.microsoft.com/en-us/translator/business/) 클라우드 서비스에 대한 구성을 만들어 Microsoft Translation 계정을 사용하여 AEM 페이지 콘텐츠 또는 자산을 번역할 수 있습니다.
-
->[!NOTE]
->
->AEM은 월간 최대 2,000,000자를 무료로 번역할 수 있는 체험판 Microsoft Translation 계정을 제공합니다. 프로덕션 시스템에 적합한 계정 구독을 얻으려면 [Microsoft Translator 체험판 라이선스 구성 업그레이드](#upgrading-the-microsoft-translator-trial-license-configuration)를 참조하십시오.
+AEM은 [Microsoft Translator](https://www.microsoft.com/en-us/translator/business/)에서 페이지 콘텐츠 또는 에셋을 번역할 수 있는 기본 제공 커넥터를 제공합니다. Microsoft에서 Microsoft Translator 사용 라이선스를 받은 후 이 페이지의 지침에 따라 커넥터를 구성하십시오.
 
 | 속성 | 설명 |
 |---|---|
@@ -26,8 +22,6 @@ ht-degree: 80%
 | 번역 속성 | (선택 사항) 사용자 생성 콘텐츠의 경우, 번역된 텍스트 옆에 표시되는 속성(예: `Translations by Microsoft`) |
 | 작업 영역 ID | (옵션) 사용할 맞춤화된 Microsoft Translator 엔진의 ID |
 | 구독 키 | Microsoft Translator에 대한 Microsoft 구독 키 |
-
-구성을 만든 다음에는 [생성된 구성을 활성화](#activating-the-translator-service-configurations)해야 합니다.
 
 다음 절차를 통해 Microsoft Translator 구성이 생성됩니다.
 
@@ -44,31 +38,11 @@ ht-degree: 80%
 1. **만들기**&#x200B;를 클릭합니다.
 1. **구성 편집** 창에서 이전 표에서 설명된 번역 서비스에 대한 값을 입력합니다.
 
-   ![번역 구성 편집](assets/edit-translation-config.png)
+   ![번역 구성 편집](assets/msft-config-ui.png)
 
 1. 연결을 확인하려면 **연결**&#x200B;을 클릭하세요.
 1. **저장 및 닫기**&#x200B;를 클릭합니다.
 
-## Microsoft Translator 체험판 라이선스 구성 업그레이드 {#upgrading-the-microsoft-translator-trial-license-configuration}
+## Translator 서비스 구성 게시 {#publishing-the-translator-service-configurations}
 
-Microsoft Translation 구성 페이지는 프로덕션 시스템에 적합한 계정 구독을 얻기 위한 Microsoft 웹 사이트로 간편하게 이동할 수 있는 링크를 제공합니다.
-
-1. [탐색 패널에서 ](/help/sites-authoring/basic-handling.md#first-steps)을(를) 클릭합니다. **도구** > **Cloud Service** > **번역 Cloud Service**.
-1. 기존 Microsoft Translator 구성을 클릭합니다.
-1. **편집**&#x200B;을 클릭합니다.
-1. **구성 편집** 창에서 **구독 업그레이드**&#x200B;를 클릭합니다. 서비스에 대한 세부 정보가 포함된 Microsoft 웹 페이지가 열립니다.
-
-## Microsoft Translator 엔진 맞춤화 {#customizing-your-microsoft-translator-engine}
-
-Microsoft Translation 구성 페이지는 Microsoft Translator 엔진을 맞춤화하기 위한 Microsoft 웹 사이트로 간편하게 이동할 수 있는 링크를 제공합니다.
-
-1. [탐색 패널에서 ](/help/sites-authoring/basic-handling.md#first-steps)을(를) 클릭합니다. **도구** > **Cloud Service** > **번역 Cloud Service**.
-1. 기존 Microsoft Translator 구성을 클릭합니다.
-1. **편집**&#x200B;을 클릭합니다.
-1. **구성 편집** 창에서 **Translator 사용자 지정**&#x200B;을 클릭합니다. 화면에 표시되는 Microsoft 웹 페이지를 사용하여 서비스를 맞춤화합니다.
-
-## Translator 서비스 구성 활성화 {#activating-the-translator-service-configurations}
-
-게시 인스턴스에 복제되는 번역된 콘텐츠를 지원하려면 클라우드 서비스 구성을 활성화해야 합니다. [트리 게시](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) 방법을 사용하여 Microsoft Translator 구성을 저장하는 저장소 노드를 활성화하십시오. 해당 노드는 다음과 같은 상위 노드 아래에 위치합니다.
-
-* `/libs/settings/cloudconfigs/translation/msft-translation`
+마지막 단계로 [트리 게시](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) 작업을 사용하여 게시된 번역된 콘텐츠를 지원하도록 Microsoft Translator 구성을 게시하십시오.
