@@ -9,18 +9,16 @@ exl-id: f37f239f-065b-44f8-acb1-93485b713b49
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
 # 앱 구조{#structure-an-app}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM Mobile 프로젝트에는 페이지, JavaScript 및 CSS 클라이언트 라이브러리, 재사용 가능한 AEM 구성 요소, 콘텐츠 동기화 구성 및 PhoneGap 앱 쉘 콘텐츠를 비롯한 다양한 콘텐츠 유형 세트가 포함됩니다. [시작 키트](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit)를 기반으로 새 AEM Mobile 앱을 빌드하는 것은 장기적으로 휴대성과 유지 관리를 용이하게 하기 위해 다양한 유형의 콘텐츠를 모두 권장 구조로 가져오는 좋은 방법입니다.
 

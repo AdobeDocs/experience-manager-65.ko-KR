@@ -8,18 +8,16 @@ exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '955'
 ht-degree: 1%
 
 ---
 
 # 컨텐츠 전달{#content-delivery}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 모바일 앱은 타깃팅된 앱 경험을 전달하는 데 필요한 경우 AEM의 모든 콘텐츠를 사용할 수 있어야 합니다.
 
@@ -95,7 +93,7 @@ AEM Sites 및 Assets 사용자는 AEM Assets을 사용하여 모든 채널에 �
 
 #### 사용 가능한 자산 엔티티 목록 가져오기 {#getting-a-list-of-available-asset-entities}
 
-앱 개발자는 자산 엔티티를 검색하여 사용 가능한 자산 목록을 가져올 수 있습니다. 콘텐츠 서비스 공간 끝점은 웹 서비스 API SDK를 통해 해당 정보를 제공할 수 있습니다.
+앱 개발자는 자산 엔티티를 검색하여 사용 가능한 자산 목록을 가져올 수 있습니다. 콘텐츠 서비스 공간 끝점은 웹 서비스 API SDK을 통해 해당 정보를 제공할 수 있습니다.
 
 그 결과는 &quot;icons&quot; 폴더의 자산 목록을 제공하는 JSON 형식의 개체가 됩니다.
 

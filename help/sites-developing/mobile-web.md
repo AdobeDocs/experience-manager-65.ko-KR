@@ -10,18 +10,16 @@ exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 1%
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
 # 모바일 웹{#mobile-web}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM은 모바일 디바이스용 사이트를 개발하고 콘텐츠를 모바일 애플리케이션에 통합할 수 있는 몇 가지 도구를 제공합니다.
 

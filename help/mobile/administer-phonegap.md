@@ -9,18 +9,16 @@ exl-id: 5a98eb3c-5c12-4a6c-8d76-eed44c7c3df5
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 1%
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
 # AEM을 사용하여 Adobe PhoneGap Enterprise용 컨텐츠 관리 {#administering-content-for-adobe-phonegap-enterprise-with-aem}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 ***AEM 관리자***&#x200B;는 만들기 마법사를 사용하여 앱을 만들거나 기존 응용 프로그램을 가져와서 AEM Mobile 카탈로그에 새 응용 프로그램을 추가할 책임이 있습니다. AEM Mobile의 *만들기 마법사*&#x200B;를 사용하여 앱을 만드는 AEM 관리자는 일반적으로 Adobe의 기본 제공 참조 샘플 또는 *AEM 개발자가 만든 사용자 지정 앱 템플릿에서 원하는 앱 템플릿 중 하나를 선택합니다.*
 

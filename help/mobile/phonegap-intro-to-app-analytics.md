@@ -9,18 +9,16 @@ exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1033'
 ht-degree: 1%
 
 ---
 
 # Adobe Mobile Analytics로 앱 성능 추적{#track-app-performance-with-adobe-mobile-analytics}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 더 높은 고객 전환율과 충성도를 원하게 됩니다.
 
@@ -32,9 +30,9 @@ AEM Mobile 앱이 마케팅 캠페인에 어떤 작업을 수행합니까?
 
 Adobe Mobile Services를 사용하면 모바일 앱에 대한 사용 현황, 앱 충돌, 장치 세부 정보 및 기타 많은 중요 지표를 추적하여 사용자가 모바일 앱을 어떻게 사용하고 있는지 파악할 수 있습니다.
 
-Adobe Experience Manager Mobile에서는 AEM Mobile 애플리케이션 대시보드에서 바로 모바일 분석에 대한 세부 정보를 볼 수 있습니다. 대시보드의 **모바일 지표 타일**&#x200B;은(는) 모바일 애플리케이션용 Real-Time Analytics을 제공하므로 개발자, 작성자 및 관리자가 모바일 앱의 상태를 한 눈에 볼 수 있습니다. 표지에서 분석을 지원하는 것은 [Mobile Analytics Adobe](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK입니다. Adobe Mobile Analytics SDK는 기본적으로 또는 웹 보기용 PhoneGap Bridge 플러그인을 통해 애플리케이션에 연결할 수 있습니다. 지표는 장치가 연결될 때까지 장치에서 수집 및 캐시되며, 이때 보고 및 분석을 위해 데이터가 Adobe Mobile Services 클라우드로 푸시됩니다.
+Adobe Experience Manager Mobile에서는 AEM Mobile 애플리케이션 대시보드에서 바로 모바일 분석에 대한 세부 정보를 볼 수 있습니다. 대시보드의 **모바일 지표 타일**&#x200B;은(는) 모바일 애플리케이션용 Real-Time Analytics을 제공하므로 개발자, 작성자 및 관리자가 모바일 앱의 상태를 한 눈에 볼 수 있습니다. 표지 아래에서 분석을 지원하는 것은 [모바일 분석 Adobe](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK입니다. Adobe Mobile Analytics SDK은 기본적으로 또는 웹 보기용 PhoneGap Bridge 플러그인을 통해 애플리케이션에 연결할 수 있습니다. 지표는 장치가 연결될 때까지 장치에서 수집 및 캐시되며, 이때 보고 및 분석을 위해 데이터가 Adobe Mobile Services 클라우드로 푸시됩니다.
 
-Adobe Mobile Analytics SDK는 다음을 제공합니다.
+Adobe Mobile Analytics SDK은 다음을 제공합니다.
 
 1. **모바일 채널의 데이터 수집** - 모든 주요 운영 체제에서 모바일 웹 사이트 및 앱에 대한 포괄적인 데이터를 수집합니다.
 1. **모바일 참여 분석** - 소비자가 채널을 시작하는 빈도, 채널을 구매하는지 여부 등을 포함하여 모바일 앱, 웹 사이트 또는 비디오 내의 사용자 참여를 이해합니다.

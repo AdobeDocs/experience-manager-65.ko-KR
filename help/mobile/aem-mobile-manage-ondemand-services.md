@@ -9,10 +9,10 @@ exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 2%
+source-wordcount: '247'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,7 @@ ht-degree: 2%
 
 이 페이지에서는 Preflight 앱으로 미리 보기에 대해 설명합니다.
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 다음 작업은 응용 프로그램 전체에서 수행됩니다.
 

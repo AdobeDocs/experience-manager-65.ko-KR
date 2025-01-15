@@ -9,18 +9,16 @@ exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '685'
 ht-degree: 2%
 
 ---
 
 # 앱 컨텐츠 만들기 및 관리{#creating-and-managing-app-content}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 앱 콘텐츠를 관리하려면 [개발자](#developer), 콘텐츠 [작성자](#author) 및 [관리자](#administrator)의 공동 노력이 필요합니다. 작성자는 앱 개발자가 생성한 템플릿과 구성 요소를 기반으로 하는 페이지를 조작합니다.
 

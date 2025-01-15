@@ -9,18 +9,16 @@ exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2550'
 ht-degree: 1%
 
 ---
 
 # AEM Mobile 콘텐츠 개인화{#aem-mobile-content-personalization}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!NOTE]
 >
@@ -82,7 +80,7 @@ AMS(Adobe 모바일 서비스) 계정을 응용 프로그램에 연결해야 합
 
 ### 클라이언트 코드 {#client-code}
 
-AMS 서비스에 로그인하려면 [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/)을(를) 방문하세요. 모바일 응용 프로그램을 선택하고 설정을 클릭하세요. SDK Target 옵션 필드를 찾아 필드에 클라이언트 코드를 넣은 다음 저장 을 클릭합니다.
+AMS 서비스에 로그인하려면 [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/)을(를) 방문하세요. 모바일 응용 프로그램을 선택하고 설정을 클릭하세요. SDK Target Options 필드를 찾아 필드에 클라이언트 코드를 넣고 Save 를 클릭합니다.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
@@ -276,7 +274,7 @@ head.html 및 body.html의 예는 개발자에게 두 스크립트 내에 스크
 
 AEM Mobile에서는 모바일 애플리케이션용으로 콘텐츠를 렌더링할 수 있도록 mobileapps/components/target 구성 요소를 사용합니다. 모바일 타겟 구성 요소는 cq/personalization/components/target 구성 요소를 확장하고 engine_tnt.jsp 스크립트를 무시합니다. engine_tnt.jsp를 재정의하여 AEM Mobile이 모바일 앱 사용 사례에 대해 생성된 HTML을 제어할 수 있도록 합니다. 콘텐츠 작성자가 타겟팅하는 모든 구성 요소에 대해 관련 mbox가 engine_tnt.jsp에 의해 생성됩니다.
 
-각 mbox에 대해 응용 프로그램 개발자가 원하는 대로 사용하고 사용할 사용자 지정 코드를 작성할 수 있도록 **cq-targeting**&#x200B;의 특성이 추가됩니다. [AEM Mobile 하이브리드 참조 앱](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference)에는 cq 타깃팅 특성을 사용하는 Angular 지시문의 예가 있습니다. 콘텐츠 교체의 개념, 시기 및 방법은 모바일 애플리케이션 개발자가 결정합니다. Adobe 타깃팅 서비스를 호출하기 위한 API를 제공하는 AEM /etc/clientlibs/mobileapps/js/mobileapps.js 를 통해 제공되는 Mobile SDK가 있습니다. 응용 프로그램의 디자인에 따라 호출이 언제 수행되어야 하는지 지정하는 것은 응용 프로그램 개발자의 책임입니다.
+각 mbox에 대해 응용 프로그램 개발자가 원하는 대로 사용하고 사용할 사용자 지정 코드를 작성할 수 있도록 **cq-targeting**&#x200B;의 특성이 추가됩니다. [AEM Mobile 하이브리드 참조 앱](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference)에는 cq 타깃팅 특성을 사용하는 Angular 지시문의 예가 있습니다. 콘텐츠 교체의 개념, 시기 및 방법은 모바일 애플리케이션 개발자가 결정합니다. Adobe 타깃팅 서비스를 호출하기 위한 API를 제공하는 AEM /etc/clientlibs/mobileapps/js/mobileapps.js 를 통해 제공되는 모바일 SDK이 있습니다. 응용 프로그램의 디자인에 따라 호출이 언제 수행되어야 하는지 지정하는 것은 응용 프로그램 개발자의 책임입니다.
 
 ## 다음은 무엇입니까? {#what-s-next}
 

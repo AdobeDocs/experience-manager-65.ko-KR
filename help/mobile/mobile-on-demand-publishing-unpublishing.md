@@ -9,18 +9,16 @@ exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '250'
 ht-degree: 2%
 
 ---
 
 # Publish 컨텐츠 게시 취소{#publish-unpublish-content}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 문서, 배너 및 컬렉션에 대한 콘텐츠 관리 작업을 잘 알고 있으면 콘텐츠를 게시할 수 있습니다. 또한 콘텐츠 게시를 취소할 수 있습니다.
 

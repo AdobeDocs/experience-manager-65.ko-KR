@@ -9,18 +9,16 @@ exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '3156'
+source-wordcount: '3135'
 ht-degree: 1%
 
 ---
 
 # 알림 푸시{#push-notifications}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 중요한 알림을 통해 Adobe Experience Manager(AEM) 모바일 앱 사용자에게 즉시 알릴 수 있는 것은 모바일 앱과 해당 마케팅 캠페인의 가치에 매우 중요합니다. 여기에서는 앱이 푸시 알림을 수신할 수 있도록 하기 위해 수행해야 하는 단계에 대해 설명합니다. 또한 AEM Mobile에서 휴대폰에 설치된 앱으로 푸시를 구성하고 전송하는 방법에 대해 알아봅니다. 또한 이 섹션에서는 푸시 알림에 대해 [딥링크](#deeplinking) 기능을 구성하는 방법에 대해 설명합니다.
 

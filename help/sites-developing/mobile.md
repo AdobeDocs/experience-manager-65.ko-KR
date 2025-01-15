@@ -11,18 +11,16 @@ exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '3722'
+source-wordcount: '3701'
 ht-degree: 0%
 
 ---
 
 # 모바일 장치용 사이트 만들기{#creating-sites-for-mobile-devices}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 모바일 사이트를 만드는 것은 템플릿 및 구성 요소를 만드는 작업도 포함하므로 표준 사이트를 만드는 것과 비슷합니다. 템플릿 및 구성 요소 만들기에 대한 자세한 내용은 [템플릿](/help/sites-developing/templates.md), [구성 요소](/help/sites-developing/components.md) 및 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md) 페이지를 참조하십시오. 주요 차이점은 사이트 내에서 Adobe Experience Manager(AEM) 내장 모바일 기능을 활성화하는 것입니다. 모바일 페이지 구성 요소에 의존하는 템플릿을 만들어 이를 수행할 수 있습니다.
 
@@ -160,7 +158,7 @@ AEM 모바일 프레임워크를 사용하여 요청을 실행하는 장치에 �
 
 ### 에뮬레이터 {#emulators}
 
-에뮬레이터 기반 작성은 작성자가 모바일 클라이언트용 콘텐츠 페이지를 만들 수 있는 방법을 제공합니다. 모바일 컨텐츠 작성은 동일한 원본 위치 WYSIWYG 편집 원칙을 따릅니다. 작성자가 모바일 디바이스에서 페이지 모양을 인지할 수 있도록 디바이스 에뮬레이터를 사용하여 모바일 콘텐츠 페이지를 편집합니다.
+에뮬레이터 기반 작성은 작성자가 모바일 클라이언트용 콘텐츠 페이지를 만들 수 있는 방법을 제공합니다. 모바일 컨텐츠 작성은 바로 WYSIWYG 편집과 동일한 원칙을 따릅니다. 작성자가 모바일 디바이스에서 페이지 모양을 인지할 수 있도록 디바이스 에뮬레이터를 사용하여 모바일 콘텐츠 페이지를 편집합니다.
 
 모바일 장치 에뮬레이터는 일반 에뮬레이터 프레임워크를 기반으로 합니다. 자세한 내용은 [에뮬레이터](/help/sites-developing/emulators.md)를 참조하세요.
 

@@ -10,19 +10,16 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '5293'
+source-wordcount: '5272'
 ht-degree: 0%
 
 ---
 
 # 웹 페이지를 위한 응답형 디자인{#responsive-design-for-web-pages}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: _React_)이 필요한 프로젝트에는 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
->
+{{ue-over-mobile}}
 
 >[!NOTE]
 >

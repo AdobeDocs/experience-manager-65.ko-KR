@@ -9,22 +9,20 @@ exl-id: fbeceb70-b199-478b-907b-253ed212ff99
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '637'
 ht-degree: 2%
 
 ---
 
 # PhoneGap CLI를 사용한 앱 개발{#developing-apps-with-phonegap-cli}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 개발 환경을 구성한 경우 개발자는 언제든지 디바이스 또는 에뮬레이터 내에서 앱을 실행할 수 있습니다.
 
-다음 예를 실행하려면 Xcode로 macOS X를 실행하는 시스템이나 Android™ SDK가 설치된 Mac/Win/Linux 시스템이 필요합니다.
+다음 예를 실행하려면 Xcode로 macOS X를 실행하는 시스템이나 Android™ SDK이 설치된 Mac/Win/Linux 시스템이 필요합니다.
 
 ## 개발 환경 Bootstrap {#bootstrap-your-development-environment}
 

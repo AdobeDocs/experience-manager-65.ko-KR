@@ -9,18 +9,16 @@ exl-id: be093025-b19f-4499-a7b5-aae5ab74f966
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '604'
 ht-degree: 2%
 
 ---
 
 # 만들기 마법사를 사용하여 AEM Mobile 앱 만들기{#creating-a-new-aem-mobile-app-using-create-wizard}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM Mobile 앱은 페이지 구조 및 속성을 정의하는 블루프린트를 기반으로 합니다. 다음 애플리케이션 속성을 구성할 수 있습니다.
 
@@ -33,10 +31,10 @@ AEM Mobile 앱은 페이지 구조 및 속성을 정의하는 블루프린트를
 
 애플리케이션 썸네일로 사용할 이미지 파일을 제공하고, 사용할 PhoneGap Build 구성을 선택하고, 사용할 Mobile App Analytics 구성을 선택할 수도 있습니다. 이 이미지는 Experience Manager의 모바일 앱 콘솔 내에서 모바일 애플리케이션을 나타내는 축소판으로만 사용됩니다.
 
-Adobe 클라우드 서비스를 빌드하고 Mobile Services SDK 플러그인을 앱에 통합하기 위한 추가(및 선택 사항) 탭이 있습니다.
+클라우드 서비스를 빌드하고 Mobile Services SDK 플러그인 Adobe을 앱에 통합하기 위한 추가(및 선택 사항) 탭이 있습니다.
 
 * 빌드: 구성 관리 를 클릭하고 여기에서 build.phonegap.com 빌드 서비스를 설정합니다. 그런 다음 드롭다운에서 새로 만든 PhoneGap Build 클라우드 서비스를 선택할 수 있습니다.
-* Analytics: 구성 관리를 클릭하고 [Mobile Services SDK Adobe](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) 클라우드 서비스를 설정합니다. 그런 다음 드롭다운에서 모바일 앱에 통합할 새로 만든 모바일 서비스를 선택할 수 있습니다.
+* Analytics: 구성 관리를 클릭하고 [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) 클라우드 서비스를 설정합니다. 그런 다음 드롭다운에서 모바일 앱에 통합할 새로 만든 모바일 서비스를 선택할 수 있습니다.
 
 ## 앱 템플릿 사용 {#using-app-templates}
 

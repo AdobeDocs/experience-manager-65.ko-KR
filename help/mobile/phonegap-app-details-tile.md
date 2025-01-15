@@ -9,18 +9,16 @@ exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1197'
 ht-degree: 2%
 
 ---
 
 # 앱 타일 관리{#manage-app-tile}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 앱 대시보드의 **`Manage App`** 타일을 사용하여 응용 프로그램에 대한 세부 정보를 편집할 수 있습니다. 세부 정보 페이지를 열려면 **`Manage App`** 타일의 세부 정보 링크를 클릭합니다. **`Manage App`** 페이지에서 PhoneGap 응용 프로그램 구성(config.xml) 설정을 편집하고 응용 프로그램을 여러 응용 프로그램 저장소에 제출하도록 준비할 수 있습니다.
 

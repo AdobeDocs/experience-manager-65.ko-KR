@@ -9,18 +9,16 @@ exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '740'
 ht-degree: 1%
 
 ---
 
 # AEM Mobile 온디맨드{#aem-mobile-on-demand}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!NOTE]
 >

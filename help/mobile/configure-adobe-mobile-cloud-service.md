@@ -10,24 +10,22 @@ exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '428'
 ht-degree: 3%
 
 ---
 
 # Adobe Mobile Services Cloud Service 구성 {#configure-your-adobe-mobile-services-cloud-service}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 명령 센터의 **모바일 지표 타일**&#x200B;은(는) 모바일 응용 프로그램에 대한 실시간 분석을 제공합니다.
 
-[Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK는 PhoneGap 플러그인을 통해 사용할 수 있습니다. 지표는 장치가 연결될 때까지 장치에서 수집되고 캐시되며, 이 때 데이터가 보고 및 분석을 위해 Adobe Mobile Services 클라우드로 푸시됩니다.
+[Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK은 PhoneGap 플러그인을 통해 사용할 수 있습니다. 지표는 장치가 연결될 때까지 장치에서 수집되고 캐시되며, 이 때 데이터가 보고 및 분석을 위해 Adobe Mobile Services 클라우드로 푸시됩니다.
 
-Adobe Mobile Analytics SDK는 다음을 제공합니다.
+Adobe Mobile Analytics SDK은 다음을 제공합니다.
 
 1. **모바일 채널의 데이터 수집** - 모든 주요 운영 체제에서 모바일 웹 사이트 및 앱에 대한 포괄적인 데이터를 수집합니다.
 1. **모바일 참여 분석** - 소비자가 채널을 시작하는 빈도, 채널을 구매하는지 여부 등을 포함하여 모바일 앱, 웹 사이트 또는 비디오 내의 사용자 참여를 이해합니다.

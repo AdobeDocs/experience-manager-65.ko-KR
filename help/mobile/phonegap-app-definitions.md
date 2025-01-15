@@ -9,18 +9,16 @@ exl-id: 4c1c44fd-e685-462c-83a0-3cd2f74ab5c7
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '209'
 ht-degree: 5%
 
 ---
 
 # 앱 정의{#app-definitions}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 앱 정의는 앱에 적합한 공간 및 기타 구성을 식별하는 방법입니다. 앱 정의를 사용하면 앱을 다시 컴파일하지 않고도 공간을 추가할 수 있습니다. 앱 정의가 업데이트되며, 여기에 새 스페이스에 대한 정보가 포함됩니다.
 

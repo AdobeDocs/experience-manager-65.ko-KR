@@ -1,13 +1,13 @@
 ---
 title: 선택 사항 - Adobe Experience Manager으로 단일 페이지 애플리케이션(SPA)을 만드는 방법
-description: Adobe Experience Manager(AEM) Headless 개발자 여정의 이 선택적 계속에서는 AEM이 Headless 전달을 기존의 전체 스택 CMS 기능과 결합하는 방법과 AEM의 SPA 편집기 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법에 대해 알아봅니다.
+description: Adobe Experience Manager(AEM) Headless 개발자 여정의 이 선택적 계속에서는 AEM이 Headless 전달을 기존의 전체 스택 CMS 기능과 결합하는 방법과 AEM의 SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법에 대해 알아봅니다.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1248'
 ht-degree: 76%
 
 ---
@@ -127,7 +127,6 @@ AEM에서 SPA 주제에 대해 자세히 살펴볼 수 있는 [추가 리소스]
 * [SPA 소개 및 워크스루.](/help/sites-developing/spa-walkthrough.md) - AEM의 SPA에 대한 소개
 * [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) - AEM용 SPA를 개발하는 방법에 대한 지침
 * [SPA 편집기 개요](/help/sites-developing/spa-overview.md) - SPA 편집기의 작동 방식에 대한 세부 정보
-* [서버측 렌더링](/help/sites-developing/spa-ssr.md) - AEM SPA용 SSR을 구성하는 방법
 * [SPA 참조 문서](/help/sites-developing/spa-reference-materials.md) - 오픈 소스 AEM SPA GitHub 프로젝트에 대한 JavaScript API 참조 및 링크
 * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) - 콘텐츠 조각을 만드는 방법
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Adobe Experience Manager(AEM) 프로젝트를 웹 사이트 시작 지점으로 만드는 최소한의 모범 사례 기반 Maven 템플릿

@@ -9,18 +9,16 @@ exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
 
 # 모바일 애플리케이션 구축{#building-mobile-applications}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 테스트하거나 앱스토어에 게시하기 위해 장치 또는 시뮬레이터에 설치할 애플리케이션을 빌드합니다. PhoneGap 명령줄 인터페이스를 사용하여 로컬로 애플리케이션을 빌드하거나 PhoneGap Build을 사용하여 클라우드에서 애플리케이션을 빌드할 수 있습니다.
 
@@ -84,10 +82,10 @@ PhoneGap CLI를 사용하여 빌드하려면 Node.js 및 PhoneGap 클라이언�
    └── cordova@3.3.0-0.1.1 (...)
    ```
 
-1. (선택 사항) 타깃팅하는 모바일 플랫폼용 SDK를 얻습니다.
+1. (선택 사항) 타깃팅하는 모바일 플랫폼용 SDK을 얻습니다.
 
    * iOS 플랫폼용 앱을 빌드하려면 최신 버전의 [Xcode](https://developer.apple.com/xcode/)을(를) 설치하십시오.
-   * Android™ 앱을 빌드하려면 [Android™ SDK](https://developer.android.com/)를 설치하십시오.
+   * Android™ 앱을 빌드하려면 [Android™ SDK](https://developer.android.com/)을(를) 설치합니다.
 
 ### 콘텐츠 ZIP 파일 다운로드 {#downloading-the-content-zip-file}
 

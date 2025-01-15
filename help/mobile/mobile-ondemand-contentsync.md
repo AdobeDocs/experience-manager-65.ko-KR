@@ -9,18 +9,16 @@ exl-id: a6e59334-09e2-4bb8-b445-1868035da556
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2971'
+source-wordcount: '2950'
 ht-degree: 0%
 
 ---
 
 # 콘텐츠 동기화가 있는 모바일{#mobile-with-content-sync}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 기본 모바일 애플리케이션에서 사용할 수 있도록 컨텐츠 동기화를 사용하여 컨텐츠를 패키징합니다. Adobe Experience Manager(AEM)에서 작성된 페이지는 장치가 오프라인 상태인 경우에도 앱 콘텐츠로 사용할 수 있습니다. 또한 AEM 페이지는 웹 표준을 기반으로 하므로 플랫폼 간에 작동하므로 기본 래퍼에 포함할 수 있습니다. 이 전략을 사용하면 개발 노력을 줄이고 앱 콘텐츠를 쉽게 업데이트할 수 있습니다.
 

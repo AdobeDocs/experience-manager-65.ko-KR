@@ -9,18 +9,16 @@ exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 5%
+source-wordcount: '356'
+ht-degree: 4%
 
 ---
 
 # 앱 메타데이터 편집 {#editing-app-metadata}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 **앱 관리** 타일과 &quot;앱 관리&quot; 페이지에서는 응용 프로그램 메타데이터를 보고 편집할 수 있는 방법을 제공합니다. 앱 메타데이터는 공급업체 스토어에 애플리케이션을 릴리스하기 위해 필요한 세부 정보입니다. 여기에는 공통 메타데이터, iOS 메타데이터 및 스크린샷이 포함될 수 있습니다. 일반 및 iOS 메타데이터에 대한 자세한 내용은 [앱 타일 관리](/help/mobile/phonegap-app-details-tile.md)를 참조하십시오.
 

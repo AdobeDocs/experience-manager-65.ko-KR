@@ -9,18 +9,16 @@ exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 5%
+source-wordcount: '391'
+ht-degree: 4%
 
 ---
 
 # 클라우드 구성{#cloud-configuration}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 온디맨드 앱을 클라우드 구성에 연결하면 Adobe Experience Manager(AEM)가 양방향 링크를 설정하여 Mobile On-Demand 호스팅 프로젝트와 직접 통신할 수 있습니다. 앱을 Mobile On-Demand 프로젝트에 연결하면 AEM 내에서 문서, 배너 및 컬렉션과 같은 콘텐츠 작성을 수행할 수 있지만 해당 콘텐츠를 Mobile On-Demand에 제공할 수도 있습니다.
 

@@ -9,18 +9,16 @@ exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '582'
 ht-degree: 4%
 
 ---
 
 # AEM Mobile 애플리케이션 대시보드 {#aem-mobile-application-dashboard}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 및 모바일 앱 컨텐츠를 관리할 수 있습니다.
 

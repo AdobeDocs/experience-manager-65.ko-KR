@@ -5,9 +5,9 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 * `path` - 초기화 시 정의된 경로의 모델을 가져와서 `ModelStore`에 저장합니다. 필요한 경우 초기화 시 `rootModel`을(를) 가져오는 데 사용할 수 있습니다.
 * `modelClient` - 모델 가져오기를 담당하는 사용자 지정 클라이언트를 제공할 수 있습니다.
-* `model` - [SSR을 사용할 때 ](spa-ssr.md) 매개 변수로 전달된 `model` 개체
+* `model` - SSR을 사용할 때 일반적으로 채워지는 매개 변수로 전달된 `model` 개체입니다.
 
 ### AEM Authorable Leaf 구성 요소 {#authorable-leaf-components}
 
@@ -370,9 +370,8 @@ RemotePage 구성 요소에서는 구현이 GitHub의 [webpack-manifest-plugin](
 다음 참조 자료가 AEM의 컨텍스트에서 SPA을 이해하는 데 도움이 될 수 있습니다.
 
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko-KR)
+* [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko)
 * [React를 사용하여 AEM에서 SPA 시작하기](spa-getting-started-react.md)
 * [SPA 참조 자료(API 참조)](spa-reference-materials.md)
 * [SPA 블루프린트 및 PageModelManager](spa-blueprint.md#pagemodelmanager)
 * [SPA 모델 라우팅](spa-routing.md)
-* [SPA 및 서버측 렌더링](spa-ssr.md)

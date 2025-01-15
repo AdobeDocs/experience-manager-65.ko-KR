@@ -10,18 +10,16 @@ exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '697'
 ht-degree: 1%
 
 ---
 
 # 하이브리드 앱이 Adobe Experience Manager Mobile에 대해 준비되었습니까?{#is-your-hybrid-app-ready-for-aem-mobile}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 하이브리드 PhoneGap 또는 Cordova 앱을 AEM으로 가져왔습니다. 이제 어떻게 하시겠습니까? 작성 가능한 콘텐츠를 앱에 추가할 수 있습니다. 이 작업을 수행하려면 AEM 앱의 구조에 대한 일반적인 이해가 필요합니다. AEM의 앱은 일반적으로 두 부분으로 나뉩니다. 쉘 및 콘텐츠 &#39;셸&#39;은 PhoneGap 구성 파일, 앱 프레임워크 및 탐색 컨트롤과 같은 앱의 정적 부분으로 구성됩니다. 가져온 아카이브의 콘텐츠는 셸의 일부로 저장됩니다. 이 문서의 컨텍스트에서 셸은 앱 개발자가 빌드한 하이브리드 PhoneGap 앱의 모든 비 AEM 작성 콘텐츠입니다.
 

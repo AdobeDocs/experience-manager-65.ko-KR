@@ -6,7 +6,7 @@ exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%
@@ -18,6 +18,8 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >아래 섹션에서는 GDPR이 예로 사용되지만, 포함된 세부 사항은 GDPR 및 CCPA와 같은 모든 데이터 보호 및 개인 정보 보호 규정에 적용됩니다.
+
+{{ue-over-mobile}}
 
 ## AEM Mobile GDPR 지원 {#aem-mobile-gdpr-support}
 

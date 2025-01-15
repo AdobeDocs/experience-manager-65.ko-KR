@@ -9,18 +9,16 @@ exl-id: d370d772-ef4d-4f38-826c-e90d07735822
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1233'
 ht-degree: 1%
 
 ---
 
 # Adobe Target 구성 Cloud Service {#configuring-adobe-target-cloud-service}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!NOTE]
 >
@@ -64,7 +62,7 @@ AMS(Adobe 모바일 서비스) 계정을 응용 프로그램에 연결해야 합
 
 ### 클라이언트 코드 {#client-code}
 
-AMS 서비스에 로그인하려면 [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/)을(를) 방문하여 모바일 애플리케이션을 선택하고 설정을 클릭하십시오. SDK Target 옵션 필드를 찾아 필드에 클라이언트 코드를 넣은 다음 저장 을 클릭합니다.
+AMS 서비스에 로그인하려면 [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/)을(를) 방문하여 모바일 애플리케이션을 선택하고 설정을 클릭하십시오. SDK Target Options 필드를 찾아 필드에 클라이언트 코드를 넣고 Save 를 클릭합니다.
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 

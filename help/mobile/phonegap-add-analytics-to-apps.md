@@ -9,20 +9,18 @@ exl-id: 8d965e94-c368-481d-b000-6e22456c34db
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
 
 # 모바일 애플리케이션에 Adobe Analytics 추가{#add-adobe-analytics-to-your-mobile-application}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
-모바일 애플리케이션 사용자를 위한 매력적이고 적절한 경험을 구축하시겠습니까? Adobe Mobile Services SDK를 사용하여 애플리케이션 라이프사이클과 사용량을 모니터링하고 측정하지 않는 경우 의사 결정의 기준은 무엇입니까? 가장 단골 고객은 어디입니까? 관련성이 있고 전환을 최적화하고 있다고 어떻게 보증할 수 있습니까?
+모바일 애플리케이션 사용자를 위한 매력적이고 적절한 경험을 구축하시겠습니까? Adobe Mobile Services SDK을 사용하여 애플리케이션 라이프사이클과 사용량을 모니터링하고 측정하지 않는 경우 의사 결정의 기준은 무엇입니까? 가장 단골 고객은 어디입니까? 관련성이 있고 전환을 최적화하고 있다고 어떻게 보증할 수 있습니까?
 
 사용자가 모든 콘텐츠에 액세스하고 있습니까? 앱을 포기하는 것이며, 포기하는 경우 어디에 있습니까? 얼마나 자주 앱에 머무르며 앱을 사용하기 위해 다시 방문합니까? 어떤 변경 사항을 적용한 다음 이를 측정하여 보존을 늘릴 수 있습니까? 충돌 비율은 어떻습니까? 사용자들에게 앱이 충돌하고 있습니까?
 
@@ -50,7 +48,7 @@ Analytics 계정이 설정되면 콘텐츠 동기화 구성을 만들어 콘텐�
 
 자세한 내용은 콘텐츠 동기화 콘텐츠 구성 을 참조하십시오. ADBMobileConfig를 /www 디렉터리에 넣으려면 Content Sync에 지시해야 합니다. 예를 들어 Geometrixx Outdoors 앱에서 컨텐츠 동기화 구성은 */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*&#x200B;에 있습니다. 개발을 위한 구성도 있습니다. 하지만 Geometrixx Outdoors이 있는 경우 비개발 구성과 동일합니다.
 
-모바일 애플리케이션 AEM 앱 대시보드에서 ADBMobileConfig를 다운로드하는 방법에 대한 자세한 내용은 Analytics - Mobile Services - Adobe Mobile Services SDK 구성 파일을 참조하십시오.
+모바일 애플리케이션 AEM 앱 대시보드에서 ADBMobileConfig를 다운로드하는 방법에 대한 자세한 내용은 Analytics - Mobile Services - Mobile Services Adobe SDK 구성 파일을 참조하십시오.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"

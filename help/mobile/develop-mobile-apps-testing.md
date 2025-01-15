@@ -9,18 +9,16 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
 
 # 모바일 앱 테스트{#testing-mobile-apps}
 
->[!NOTE]
->
->Adobe 단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에는 SPA Editor를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 시장에 출시된 다양한 디바이스와 출시되는 디바이스를 고려할 때 앱 테스트가 반드시 필요합니다. 이 영역은 기능 및 사용성이 앱스토어에서 낮은 평가를 받을 수 있지만, 한 번의 오류로 인해 앱이 제거될 수 있는 영역입니다. 테스트 계획 및 품질 보증에 세심한 주의를 기울여야 합니다. 다음 링크에서는 환경 식별, 테스트 사례 정의, 테스트 유형, 가정 및 고객 참여와 같이 일반적으로 해결해야 하는 많은 주제를 다룹니다. 또한 테스트 작업에 도움이 되는 도구에 대해서도 설명합니다. [Hobbes](/help/sites-developing/hobbes.md)와 같은 내부 도구는 웹 기반 UI 테스트에 도움이 될 수 있습니다. [힘든 날](/help/sites-developing/tough-day.md)은(는) 시뮬레이션된 부하로 인스턴스에 스트레스를 줄 수 있습니다. 테스트 환경에서 Selenium과 같은 타사 도구를 이미 사용한 경우 이러한 도구도 사용할 수 있습니다.
 
