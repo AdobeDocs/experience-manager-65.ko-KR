@@ -7,7 +7,7 @@ exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: d28019efcead89cb66edfa672d6b928cbb7bcc25
 workflow-type: tm+mt
 source-wordcount: '1945'
 ht-degree: 64%
@@ -49,7 +49,7 @@ SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합
 >
 >이 문서에서는 데모용으로만 [WKND Spa 프로젝트 앱](https://github.com/adobe/aem-guides-wknd-spa)을 사용합니다. 를 프로젝트 작업에 사용하지 마십시오.
 >
->모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용해야 합니다.
+>모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK을 사용하는 [AEM Project Archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용해야 합니다.
 
 ### SPA란 무엇입니까? {#what-is-a-spa}
 
@@ -256,3 +256,4 @@ SPA이 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 * [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)는 AEM에서 SPA 편집기를 사용하도록 기본 SPA을 빌드하는 방법을 보여 줍니다.
 * [SPA 편집기 개요](/help/sites-developing/spa-overview.md)는 AEM과 SPA 간의 커뮤니케이션 모델에 대해 자세히 설명합니다.
 * [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md)에서는 프론트엔드 개발자를 AEM용 SPA 개발에 유도하는 방법 및 SPA가 AEM의 아키텍처와 상호 작용하는 방법에 대해 설명합니다.
+
