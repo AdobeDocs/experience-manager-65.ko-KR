@@ -10,20 +10,19 @@ exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '707'
 ht-degree: 6%
 
 ---
+
 
 # SPA 페이지 구성 요소{#spa-page-component}
 
 SPA에서 페이지 구성 요소는 하위 구성 요소의 HTML 요소를 제공하지 않고, 대신 SPA 프레임워크에 위임합니다. 이 문서에서는 SPA의 페이지 구성 요소를 고유하게 만드는 방법을 설명합니다.
 
->[!NOTE]
->
->SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
+{{ue-over-spa}}
 
 ## 소개 {#introduction}
 
@@ -92,7 +91,7 @@ SPA 콘텐츠를 설명하는 메타 리소스 속성:
 >
 >이 문서에서는 데모용으로만 We.Retail 저널 앱을 사용합니다. 를 프로젝트 작업에 사용하지 마십시오.
 >
->모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용해야 합니다.AEM의 모든 SPA 프로젝트는 SPA Starter Kit용 Maven Archetype을 기반으로 해야 합니다.
+>모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK을 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용해야 합니다.AEM의 모든 SPA 프로젝트는 SPA Starter Kit용 Maven Archetype을 기반으로 해야 합니다.
 
 ## 페이지 편집기 오버레이 동기화 {#page-editor-overlay-synchronization}
 

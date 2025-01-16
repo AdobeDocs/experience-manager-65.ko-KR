@@ -9,16 +9,19 @@ exl-id: aba1dc0f-eab1-40aa-8ab6-317e2fa7891c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 8a4136de913cb6458e2b932b97fb12a1d203e8f3
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 2%
 
 ---
 
+
 # SPA 심층 분석{#spa-deep-dives}
 
 AEM SPA Editor SDK은 일련의 AEM Gems 세션에 소개되었습니다. [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)은(는) Adobe 전문가가 제공하는 일련의 기술적인 분석입니다. Adobe 엔지니어가 호스팅하는 이 시리즈는 AEM SPA Editor SDK을 낮은 수준에서 더 깊이 있게 이해할 수 있는 좋은 지침이 될 수 있습니다.
+
+{{ue-over-spa}}
 
 ## Gem 세션 {#gem-sessions}
 

@@ -7,10 +7,10 @@ exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: d28019efcead89cb66edfa672d6b928cbb7bcc25
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '1945'
-ht-degree: 64%
+source-wordcount: '1925'
+ht-degree: 65%
 
 ---
 
@@ -21,9 +21,7 @@ SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 적합
 
 SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합니다. 이 문서에서는 작성용 SPA 애플리케이션을 사용하는 과정을 안내하고 기본 AEM SPA 편집기와 관련되는 방식을 보여 줍니다.
 
->[!NOTE]
->
->SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
+{{ue-over-spa}}
 
 ## 소개 {#introduction}
 

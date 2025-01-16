@@ -10,12 +10,13 @@ exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2018'
 ht-degree: 5%
 
 ---
+
 
 # AEM용 SPA 개발{#developing-spas-for-aem}
 
@@ -23,9 +24,7 @@ SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 적합
 
 이 문서에서는 프론트엔드 개발자에게 AEM용 SPA을 개발하도록 요청할 때 고려해야 할 중요한 질문을 제시하고 AEM에서의 AEM 배포에 대한 SPA 아키텍처에 대한 개요를 제공합니다.
 
->[!NOTE]
->
->SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
+{{ue-over-spa}}
 
 ## AEM용 SPA 개발 원칙 {#spa-development-principles-for-aem}
 
@@ -82,7 +81,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
    <th><strong>단점</strong></th>
   </tr>
   <tr>
-   <td>AEM은 <a href="/help/sites-developing/spa-reference-materials.md">SPA Editor SDK 프레임워크를 사용하지 않고 Headless CMS로 사용됩니다.</a></td>
+   <td>AEM은 <a href="/help/sites-developing/spa-reference-materials.md">SPA Editor SDK 프레임워크를 사용하지 않고 headless CMS으로 사용됩니다.</a></td>
    <td>프론트엔드 개발자가 앱을 완벽하게 제어합니다.</td>
    <td><p>콘텐츠 작성자는 AEM의 콘텐츠 작성 경험을 사용할 수 없습니다.</p> <p>정적 참조 또는 라우팅이 포함된 코드는 이식 가능하거나 재사용할 수 없습니다.</p> <p>템플릿 편집기의 사용을 허용하지 않으므로 프론트엔드 개발자는 JCR을 통해 편집 가능한 템플릿을 유지 관리해야 합니다.</p> </td>
   </tr>
@@ -92,7 +91,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
    <td><p>콘텐츠 작성자는 제한된 AEM 콘텐츠 작성 경험 세트로 제한됩니다.</p> <p>이 코드에 정적 참조 또는 라우팅이 포함되어 있으면 코드를 이동할 수 없거나 다시 사용할 수 없습니다.</p> <p>템플릿 편집기의 사용을 허용하지 않으므로 프론트엔드 개발자는 JCR을 통해 편집 가능한 템플릿을 유지 관리해야 합니다.</p> </td>
   </tr>
   <tr>
-   <td>프로젝트는 SPA Editor SDK를 완전히 사용하며 프론트엔드 구성 요소는 라이브러리로 개발되고 앱의 콘텐츠 구조는 AEM에 위임됩니다.</td>
+   <td>프로젝트는 SPA Editor SDK을 완전히 사용하며 프론트엔드 구성 요소는 라이브러리로 개발되고 앱의 콘텐츠 구조가 AEM에 위임됩니다.</td>
    <td><p>이 앱은 재사용이 가능하며 휴대가 가능합니다.</p> <p>콘텐츠 작성자는 AEM의 콘텐츠 작성 환경을 사용하여 앱을 편집할 수 있습니다.<br /> </p> <p>SPA은 템플릿 편집기와 호환됩니다.</p> </td>
    <td><p>개발자가 앱의 구조 및 AEM에 위임된 콘텐츠 부분을 제어할 수 없습니다.</p> <p>개발자는 AEM을 사용하여 작성되지 않은 콘텐츠에 대해 앱 영역을 계속 예약할 수 있습니다.</p> </td>
   </tr>
@@ -112,7 +111,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
 1. **JS 구성 요소를 모듈식으로 만듭니다.**
 
    모든 순서, 위치 및 크기로 렌더링할 수 있도록 합니다.
-1. **Adobe SDK에서 제공하는 컨테이너를 사용하여 구성 요소를 화면에 표시하십시오.**
+1. **Adobe의 SDK에서 제공한 컨테이너를 사용하여 화면에 구성 요소를 배치합니다.**
 
    AEM은 사용할 페이지 및 단락 시스템 구성 요소를 제공합니다.
 1. **각 JS 구성 요소에 대한 AEM 구성 요소를 만듭니다.**

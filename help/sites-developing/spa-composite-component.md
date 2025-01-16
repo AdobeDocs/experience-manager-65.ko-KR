@@ -1,24 +1,27 @@
 ---
-title: SPA의 구성 요소 합성
+title: SPA의 복합 구성 요소
 description: AEM 단일 페이지 애플리케이션(SPA) 편집기와 함께 작동하는 다른 구성 요소로 구성된 구성 요소인 복합 구성 요소를 직접 만드는 방법을 알아봅니다.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 1%
 
 ---
 
-# SPA의 구성 요소 합성 {#composite-components-in-spas}
+
+# SPA의 복합 구성 요소 {#composite-components-in-spas}
 
 복합 구성 요소는 여러 기본 구성 요소를 단일 구성 요소로 결합하여 AEM 구성 요소의 모듈식 특성을 사용합니다. 일반적인 복합 구성 요소 사용 사례는 이미지 및 텍스트 구성 요소의 조합으로 구성된 카드 구성 요소입니다.
 
 복합 구성 요소가 AEM SPA(단일 페이지 애플리케이션) 편집기 프레임워크 내에서 올바르게 구현되면 콘텐츠 작성자는 다른 구성 요소와 마찬가지로 이러한 구성 요소를 드래그하여 놓을 수 있지만, 복합 구성 요소를 구성하는 각 구성 요소를 개별적으로 편집할 수는 있습니다.
 
 이 문서에서는 단일 페이지 애플리케이션에 합성 구성 요소를 추가하여 AEM SPA 편집기와 원활하게 작동하는 방법을 보여 줍니다.
+
+{{ue-over-spa}}
 
 ## 사용 사례 {#use-case}
 

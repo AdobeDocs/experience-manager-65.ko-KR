@@ -10,12 +10,13 @@ exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 84%
+source-wordcount: '1626'
+ht-degree: 85%
 
 ---
+
 
 # SPA 편집기 개요{#spa-editor-overview}
 
@@ -23,9 +24,7 @@ SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 적합
 
 SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합니다. 이 페이지에서는 AEM에서 SPA 지원이 구조화되는 방식, SPA 편집기가 작동하는 방식, SPA 프레임워크와 AEM이 동기화되는 방식에 대한 개요를 제공합니다.
 
->[!NOTE]
->
->SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
+{{ue-over-spa}}
 
 ## 소개 {#introduction}
 
@@ -189,7 +188,7 @@ SPA에 생성된 텍스트 구성 요소의 내부 편집기를 사용하려면 
 
 ### 제한 사항 {#limitations}
 
-AEM SPA Editor SDK는 AEM 6.4 서비스 팩 2와 함께 도입되었습니다. 이는 Adobe에 의해 완전히 지원되며, 지속적으로 향상 및 확장되고 있다. 다음 AEM 기능은 SPA Editor에서 아직 지원하지 않습니다.
+AEM SPA Editor SDK은 AEM 6.4 서비스 팩 2와 함께 도입되었습니다. 이는 Adobe에 의해 완전히 지원되며, 지속적으로 향상 및 확장되고 있다. 다음 AEM 기능은 SPA Editor에서 아직 지원하지 않습니다.
 
 * 타겟 모드
 * ContextHub

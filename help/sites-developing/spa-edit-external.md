@@ -5,16 +5,19 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 0%
 
 ---
 
+
 # Adobe Experience Manager 내에서 외부 SPA 편집 {#editing-external-spa-within-aem}
 
 외부 SPA과 Adobe Experience Manager(AEM) 간에 원하는 통합 수준을 결정할 때 AEM 내에서 SPA을 편집하고 볼 수 있어야 하는 경우가 많습니다.
+
+{{ue-over-spa}}
 
 ## 개요 {#overview}
 

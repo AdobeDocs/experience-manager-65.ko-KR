@@ -9,22 +9,21 @@ exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 0%
+source-wordcount: '92'
+ht-degree: 1%
 
 ---
 
+
 # SPA 참조 자료 {#spa-reference-materials}
+
+{{ue-over-spa}}
 
 ## SPA JavaScript API 참조{#spa-javascript-api-references}
 
 다음은 AEM SPA Editor SDK 프레임워크용 NPM 모듈에서 사용할 수 있는 JavaScript API 참조입니다.
-
->[!NOTE]
->
->SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
 * [구성 요소 매핑](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [페이지 모델 관리자](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)

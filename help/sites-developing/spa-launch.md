@@ -10,24 +10,23 @@ exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '164'
 ht-degree: 1%
 
 ---
+
 
 # SPA과 Adobe Experience Platform Launch 통합{#spa-and-adobe-experience-platform-launch-integration}
 
 Adobe Experience Platform Launch은 단일 페이지 애플리케이션(SPA) 내에서 Analytics, Target 및 Audience Manager을 구현하는 권장 방법입니다.
 
->[!NOTE]
->
->SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
+{{ue-over-spa}}
 
 ## 튜토리얼 {#tutorial}
 
-SPA을 Adobe Experience Platform Launch과 통합하는 방법에 대한 자세한 내용은 Launch 설정을 안내하고 Angular 또는 React를 사용하여 빌드된 Experience Cloud을 구현하는 [이 기술 자료 문서 및 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko-KR)을 참조하세요.
+SPA을 Adobe Experience Platform Launch과 통합하는 방법에 대한 자세한 내용은 Launch 설정을 안내하고 Angular 또는 React를 사용하여 빌드된 Experience Cloud을 구현하는 [이 기술 자료 문서 및 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko)을 참조하세요.
 
 >[!NOTE]
 >

@@ -9,12 +9,13 @@ exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '978'
 ht-degree: 5%
 
 ---
+
 
 # AEM에서 SPA 시작하기 - Angular{#getting-started-with-spas-in-aem-angular}
 
@@ -26,9 +27,7 @@ SPA 작성 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을
 >
 >이 문서는 Angular 프레임워크를 기반으로 합니다. React 프레임워크에 대한 해당 문서는 AEM - React에서 [SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)를 참조하십시오.
 
->[!NOTE]
->
->SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
+{{ue-over-spa}}
 
 ## 소개 {#introduction}
 
