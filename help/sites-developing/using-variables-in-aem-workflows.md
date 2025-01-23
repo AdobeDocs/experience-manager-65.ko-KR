@@ -9,9 +9,9 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8305f77e895ad383a398cf8d4effa2b64cd45677
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1935'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ AEM Forms 워크플로우에서 사용할 수 있는 복잡한 데이터 형식�
    * 양식 데이터 모델 - 양식 데이터 모델 경로를 지정합니다.
    * ArrayList - 컬렉션의 하위 유형을 지정합니다.
 
-1. 변수에 대한 선택적 설명을 지정하고 상자 안에 확인 표시가 있는 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png)하세요. 변수는 왼쪽 창에서 사용할 수 있는 목록에 표시됩니다.
+1. 변수에 대한 선택적 설명을 지정하고 상자 안에 확인 표시가 있는 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 ](assets/Done_Icon.png)하세요. 변수는 왼쪽 창에서 사용할 수 있는 목록에 표시됩니다.
 
 변수를 만들 때 다음 방법을 고려하십시오.
 
@@ -93,10 +93,10 @@ JSON 점 표기법 또는 XPATH 표기법을 사용하여 JSON 또는 XML 유형
 변수 간에 매핑을 추가하려면 다음을 수행합니다.
 
 1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 사용할 수 있는 단계 아이콘을 선택합니다.
-1. **변수 설정** 단계를 워크플로우 편집기로 드래그 앤 드롭하고 단계를 선택한 다음 렌치로 표시되는 ![구성 아이콘을 선택합니다.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png)(구성).
+1. **변수 설정** 단계를 워크플로우 편집기로 드래그 앤 드롭하고 단계를 선택한 다음 렌치로 표시되는 ![구성 아이콘을 선택합니다.](assets/configure_icon.png)(구성).
 1. 변수 설정 대화 상자에서 **[!UICONTROL 매핑]** > **[!UICONTROL 매핑 추가]**&#x200B;를 선택합니다.
 1. **변수 매핑** 섹션에서 데이터를 저장할 변수를 선택하고 매핑 모드를 선택한 다음 변수에 저장할 값을 지정합니다. 매핑 모드는 변수의 유형에 따라 다릅니다.
-1. 의미 있는 표현식을 만들 수 있도록 더 많은 변수를 매핑합니다. 상자 안에 확인 표시가 있는 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png)하세요.
+1. 의미 있는 표현식을 만들 수 있도록 더 많은 변수를 매핑합니다. 상자 안에 확인 표시가 있는 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 ](assets/Done_Icon.png)하세요.
 
 ### 예제 1: XML 변수를 쿼리하여 문자열 변수의 값을 설정합니다. {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -251,8 +251,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## 변수 편집 {#edit-a-variable}
 
 1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 사용할 수 있는 변수 아이콘을 선택합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
-1. 연필 기호로 표시된 ![편집 아이콘을 선택합니다.편집할 변수 이름 옆에 있는 ](https://helpx.adobe.com/content/dam/help/images/en/edit.png)(편집) 아이콘입니다.
-1. 변수 정보를 편집하고 확인 표시가 표시된 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png)하세요. 변수에 대한 **[!UICONTROL Name]** 및 **[!UICONTROL Type]** 필드를 편집할 수 없습니다.
+1. 연필 기호로 표시된 ![편집 아이콘을 선택합니다.편집할 변수 이름 옆에 있는 ](assets/edit.png)(편집) 아이콘입니다.
+1. 변수 정보를 편집하고 확인 표시가 표시된 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 ](assets/Done_Icon.png)하세요. 변수에 대한 **[!UICONTROL Name]** 및 **[!UICONTROL Type]** 필드를 편집할 수 없습니다.
 
 ## 변수 삭제 {#delete-a-variable}
 
@@ -262,4 +262,4 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 사용할 수 있는 변수 아이콘을 선택합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
 1. 삭제하려는 변수 이름 옆에 있는 삭제 아이콘을 선택합니다.
-1. 확인 표시 기호가 표시된 ![완료 아이콘을 선택합니다.변수를 확인하고 삭제하려면 ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png)을(를) 사용하십시오.
+1. 확인 표시 기호가 표시된 ![완료 아이콘을 선택합니다.변수를 확인하고 삭제하려면 ](assets/Done_Icon.png)을(를) 사용하십시오.
