@@ -7,10 +7,10 @@ feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 6%
+source-wordcount: '908'
+ht-degree: 3%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 6%
 * 제출 액션을 만들어 양식 콘텐츠가 포함된 이메일을 보냅니다.
 * 적응형 양식을 미리 보고 제출합니다.
 
-[![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
+[![안내서 보기](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## 2단계: 양식 데이터 모델 만들기 {#step-create-form-data-model}
 
@@ -82,7 +82,7 @@ ht-degree: 6%
 * 양식 데이터 모델에 대한 읽기 및 쓰기 서비스를 구성합니다.
 * 테스트 데이터를 사용하여 양식 데이터 모델 및 구성된 서비스를 테스트합니다.
 
-[![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
+[![안내서 보기](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## 3단계: 적응형 양식 필드에 규칙 적용 {#step-apply-rules-to-adaptive-form-fields}
 
@@ -95,7 +95,7 @@ ht-degree: 6%
 * 적응형 양식 필드에 규칙을 만들어 적용합니다.
 * 규칙을 사용하여 양식 데이터 모델 서비스를 트리거하여 데이터베이스에 데이터를 업데이트합니다.
 
-[![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![안내서 보기](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## 4단계: 적응형 양식 스타일 지정 {#step-style-your-adaptive-form}
 
@@ -109,7 +109,7 @@ ht-degree: 6%
 * 테마 편집기를 사용하여 적응형 양식에 대한 테마를 만듭니다.
 * 사용자 지정 테마에서 Web Fonts을 사용합니다.
 
-[![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![안내서 보기](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## 5단계: 적응형 양식 Publish {#step-publish-your-adaptive-form}
 
@@ -123,4 +123,4 @@ ht-degree: 6%
 * AEM [!DNL Sites] 페이지에 적응형 양식을 포함하십시오.
 * 적응형 양식을 외부 웹 페이지(AEM 외부에 호스트된 비 AEM 웹 페이지)에 임베드합니다.
 
-[![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![안내서 보기](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
