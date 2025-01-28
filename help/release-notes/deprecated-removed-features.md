@@ -5,9 +5,9 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 191c4b02274ca7e3e9d4622b72cd585870581f47
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1747'
 ht-degree: 29%
 
 ---
@@ -68,6 +68,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 | 영역 | 기능 | 대체 | 버전(SP) |
 |--- |--- |--- |--- |
+| 상거래 | AEM CIF Classic이 제거되었습니다. | [AEM CIF](/help/commerce/cif/migration.md)로 마이그레이션해야 합니다. 여전히 CIF Classic이 필요한 경우 호환성 패키지를 만들었습니다. [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/?support-solution=General#support)하십시오. | 6.5.22.0 |
 | [!DNL Experience Cloud]과(와) 통합 | [!DNL Adobe I/O]을(를) 통해 구성을 사용하여 자산을 [!DNL Experience Cloud]과(와) 동기화할 수 있습니다. [!DNL Adobe Experience Cloud]은(는) 이전에 [!DNL Adobe Experience Cloud](으)로 불렸습니다. | 질문이 있는 경우 [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/?support-solution=General#support)하십시오. |  |
 | Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. Adobe Analytics에서 제공한 [ActivityMap 플러그인을 사용하십시오](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |  |
 | 통합 | ExactTarget 통합이 기본 배포(빠른 시작)에서 제거되어 더 이상 사용할 수 없습니다. | 교체 없음. |  |
