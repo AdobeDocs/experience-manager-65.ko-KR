@@ -30,7 +30,7 @@ Adobe Analytics을 사용한 사용자 상호 작용(예: 필드 드롭오프, �
 
 AEM(Adobe Experience Manager)에 패키지로 배포되는 응용 프로그램으로, AEM Sling 프레임워크에서 관리되는 서비스(API 공급자)와 서블릿 또는 JSP가 포함되어 있습니다.
 
-## JEE의 [AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)
+## [JEE의 AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)
 
 JEE(Java Enterprise Edition) 서버를 활용하는 AEM Forms의 배포 옵션으로, 엔터프라이즈급 확장성, 트랜잭션 관리 및 복잡한 엔터프라이즈 워크플로우에 대한 지원을 제공합니다.
 
@@ -38,7 +38,7 @@ JEE(Java Enterprise Edition) 서버를 활용하는 AEM Forms의 배포 옵션�
 
 OSGi 환경의 AEM Forms은 AEM Forms 패키지가 배포된 표준 AEM Author 또는 AEM Publish입니다. 단일 서버 환경, 팜 및 클러스터된 설정에서 OSGi에서 AEM Forms을 실행할 수 있습니다. 클러스터 설정은 AEM 작성자 인스턴스에만 사용할 수 있습니다.
 
-## AEM Forms의 [Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms)
+## [AEM Forms의 Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms)
 
 안전하고 원활한 디지털 서명 워크플로를 위한 RESTful 서비스. OAuth 기반 인증을 사용하여 AEM Forms과 통합되므로 자동화된 서명 수집과 실시간 추적이 가능합니다.
 
