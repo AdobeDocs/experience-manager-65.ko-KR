@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
+source-git-commit: b5a87404435758d660f136d2e236de699ecad541
 workflow-type: tm+mt
-source-wordcount: '7471'
+source-wordcount: '7475'
 ht-degree: 22%
 
 ---
@@ -1217,6 +1217,8 @@ ht-degree: 22%
       + [JEE 서버 클러스터에서 AEM Forms 구성 및 문제 해결](/help/forms/developing/configure-server-cluster.md)
       + [동적 PDF forms에서 해시 생성 및 작업](/help/forms/developing/hashing-forms.md)
       + [WS-Security 헤더를 사용하여 자격 증명 전달](/help/forms/developing/passing-credentials.md)
+   + 용어집 {#aem-forms-glossary}
++[AEM Forms 용어집](/help/forms/using/aem-forms-glossary.md)
 + Content and Commerce {#commerce}
    + [소개 및 개요](/help/commerce/cif/introduction.md)
    + [AEM Content 및 Commerce의 주요 변경 내용](/help/commerce/cif/changes.md)
