@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
-source-git-commit: 3f11bba91cfb699dc216cf312eaf93fd9bbfe121
+source-git-commit: ab9292c491cc9dfcd8f239ba279b1e0ae6d1560f
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 7%
+source-wordcount: '1089'
+ht-degree: 6%
 
 ---
 
@@ -39,12 +39,12 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 * [Developer Console](https://developer.adobe.com/console/user/servicesandapis)에서 새 OAuth 통합을 만듭니다. 아래 단계에서 `ClientID`, `ClientSecret`, `OrgID` 및 기타 속성을 사용하십시오.
 * 이 경로 `/apps/system/config in crx/de`에서 다음 파일을 찾을 수 있습니다.
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
    * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### 기존 AMS 및 On prem 사용자에 대한 OAuth 구성 {#steps-config-oauth-onprem}
 
-시스템 관리자가 아래 단계를 수행할 수 있습니다. AMS 고객은 Adobe 담당자에게 연락하거나 [지원 프로세스](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
+시스템 관리자는 **CRXDE**&#x200B;에서 아래 단계를 수행할 수 있습니다. AMS 고객은 Adobe 담당자에게 연락하거나 [지원 프로세스](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
 
 1. `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`에서 아래 속성을 추가하거나 업데이트하십시오.
 
@@ -56,6 +56,11 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
    * 새 OAuth 구성의 클라이언트 ID로 `auth.token.provider.client.id`을(를) 업데이트합니다.
    * `auth.access.token.request`을(를) `"https://ims-na1.adobelogin.com/ims/token/v3"`(으)로 업데이트
 1. 파일 이름을 `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`(으)로 바꾸십시오.
+
+   >[!IMPORTANT]
+   >
+   >점(.)을 하이픈(-)을 접두사로 사용하여 `<randomnumber>`에 대체합니다.
+
 1. `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`에서 아래 단계를 수행합니다.
    * 새 OAuth 통합에서 클라이언트 암호로 auth.ims.client.secret 속성을 업데이트합니다.
    * 파일 이름을 `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`(으)로 바꾸기
@@ -64,7 +69,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 1. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
 1. Delete the old OSGi configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 -->
-1. `System/console/configMgr`에서 `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl`에 대한 이전 구성과 액세스 토큰 공급자 이름 `adobe-ims-similaritysearch`을(를) 삭제하십시오.
+1. `System/console/configMgr`에서 이전 구성 파일과 새 구성 파일을 모두 볼 수 있습니다. `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` 및 액세스 토큰 공급자 이름 `adobe-ims-similaritysearch`에 대한 이전 구성을 삭제하십시오. 이전 구성이 아니라 업데이트된 구성만 있는지 확인합니다.
 1. 콘솔을 다시 시작합니다.
 
 ## 구성 유효성 검사 {#validate-the-configuration}
@@ -81,13 +86,19 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 유효성 검사 결과는 동일한 대화 상자에 표시됩니다.
 
+>[!NOTE]
+>
+>`unsupported_grant_type` 오류가 발생하면 Granite 핫픽스를 설치해 보십시오. [서비스 계정(JWT)에서 OAuth 서버 간 자격 증명으로 마이그레이션](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660)을 참조하세요.
+
 ## Adobe Developer Console과 통합 {#integrate-adobe-io}
 
 새 사용자는 [!DNL Experience Manager] 서버에서 Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스로 전달하기 전에 Adobe Developer Console 게이트웨이로 서비스 자격 증명을 인증합니다. 통합하려면 조직에 대한 관리자 권한이 있는 Adobe ID 계정과, 조직에 대해 구매 및 활성화된 Smart Content Service 라이선스가 필요합니다.
 
 스마트 컨텐츠 서비스를 구성하려면 다음 최상위 단계를 수행합니다.
 
-1. 공개 키를 생성하려면 [!DNL Experience Manager]에서 [스마트 콘텐츠 서비스를 만들기](#obtain-public-certificate) 구성하십시오. OAuth 통합을 위해 [공개 인증서를 다운로드합니다](#obtain-public-certificate).
+<!--![Experience Manager Smart Content Service dialog to provide content service URL](assets/config-oauth.png)-->
+
+1. 공개 키를 생성하려면 [!DNL Experience Manager]에서 [스마트 콘텐츠 서비스를 만들기](#oauth-config) 구성하십시오. OAuth 통합을 위해 [공개 인증서를 다운로드합니다](#oauth-config).
 
 1. *[기존 사용자인 경우 적용할 수 없음]* [Adobe Developer Console에서 통합 만들기](#create-adobe-i-o-integration).
 
@@ -128,7 +139,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
    >
    >[!UICONTROL 서비스 URL](으)로 제공된 URL은 브라우저를 통해 액세스할 수 없으며 404 오류가 발생합니다. [!UICONTROL 서비스 URL] 매개 변수의 동일한 값으로 구성이 정상적으로 작동합니다. 전체 서비스 상태 및 유지 관리 일정은 [https://status.adobe.com](https://status.adobe.com)을(를) 참조하십시오.
 
-1. **[!UICONTROL OAuth 통합을 위한 공개 인증서 다운로드]**&#x200B;를 클릭하고 공개 인증서 파일 `AEM-SmartTags.crt`을(를) 다운로드합니다. 또한 Adobe 개발자 콘솔에서 이 인증서를 더 이상 업로드할 필요가 없습니다.
+1. **[!UICONTROL OAuth 통합을 위한 공개 인증서 다운로드]**&#x200B;를 클릭하고 공개 인증서 파일 `AEM-SmartTags.crt`을(를) 다운로드합니다. 또한 Adobe Developer 콘솔에서 이 인증서를 더 이상 업로드할 필요가 없습니다.
 
    ![스마트 태그 지정 서비스에 대해 만들어진 설정의 표현](assets/smart-tags-download-public-cert1.png)
 
@@ -148,7 +159,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 1. 필요에 따라 **[!UICONTROL 자격 증명 이름]**&#x200B;을(를) 추가/수정합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. 제품 프로필 **[!UICONTROL 스마트 컨텐츠 서비스]**&#x200B;를 선택하십시오. **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다. OAuth API는 추가 사용을 위해 연결된 자격 증명 아래에 추가됩니다. [!UICONTROL API 키(클라이언트 ID)] 또는 [!UICONTROL 액세스 토큰 생성]을 복사할 수 있습니다.
+1. 제품 프로필 **[!UICONTROL 스마트 컨텐츠 서비스]**&#x200B;를 선택하십시오. **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다. OAuth API는 추가 사용을 위해 연결된 자격 증명에 추가됩니다. [!UICONTROL API 키(클라이언트 ID)] 또는 [!UICONTROL 액세스 토큰 생성]을 복사할 수 있습니다.
 <!--
 1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**.
 
