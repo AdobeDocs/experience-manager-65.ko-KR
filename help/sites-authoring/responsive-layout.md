@@ -1,6 +1,6 @@
 ---
 title: 컨텐츠 페이지에 대한 응답형 레이아웃
-description: Adobe Experience Manager을 사용하면 페이지에 대한 응답형 레이아웃을 구현할 수 있습니다.
+description: Adobe Experience Manager을 사용하면 레이아웃 컨테이너 구성 요소를 사용하여 페이지에 대한 응답형 레이아웃을 구현할 수 있습니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,18 +9,27 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 41da3aef16e650d8dc33e96991d0a997564c9224
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 73%
+source-wordcount: '1853'
+ht-degree: 69%
 
 ---
 
+
 # 반응형 레이아웃{#responsive-layout}
 
-AEM에서는 **레이아웃 컨테이너** 구성 요소를 사용하여 사용자 페이지에 대한 반응형 레이아웃을 보유할 수 있습니다.
+Adobe Experience Manager을 사용하면 **레이아웃 컨테이너** 구성 요소를 사용하여 페이지에 대한 응답형 레이아웃을 구현할 수 있습니다.
 
-이 레이아웃은 응답형 격자 내에 구성 요소를 배치할 수 있도록 해 주는 단락 시스템을 제공합니다. 이 격자를 사용하면 디바이스/창 크기 및 포맷에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 [**레이아웃** 모드](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)와 함께 사용됩니다. 이 모드에서는 디바이스에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
+>[!TIP]
+>
+>이 문서에서는 콘텐츠 작성자가 사용할 수 있는 레이아웃 컨테이너의 기능에 대한 개요를 제공합니다.
+>
+>사이트 관리자 및 개발자의 경우 사이트에 대한 레이아웃 컨테이너를 구성하는 방법에 대한 자세한 내용은 [레이아웃 컨테이너 및 레이아웃 모드 구성](/help/sites-authoring/responsive-layout.md) 문서에 설명되어 있습니다.
+
+## 개요 {#overview}
+
+**레이아웃 컨테이너** 구성 요소는 응답형 그리드 내에 구성 요소를 배치할 수 있도록 해주는 단락 시스템을 제공합니다. 이 격자를 사용하면 디바이스/창 크기 및 포맷에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 [**레이아웃** 모드](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)와 함께 사용됩니다. 이 모드에서는 디바이스에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
 
 레이아웃 컨테이너:
 

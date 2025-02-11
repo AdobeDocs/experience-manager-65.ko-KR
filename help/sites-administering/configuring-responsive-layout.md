@@ -10,20 +10,27 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 4%
+source-wordcount: '1479'
+ht-degree: 3%
 
 ---
 
+
 # 레이아웃 컨테이너 및 레이아웃 모드 구성{#configuring-layout-container-and-layout-mode}
 
-[응답형 레이아웃](/help/sites-authoring/responsive-layout.md)은(는) [응답형 웹 디자인](https://en.wikipedia.org/wiki/Responsive_web_design)을 구현하기 위한 메커니즘입니다. 이렇게 하면 사용자가 사용하는 장치에 따라 레이아웃과 차원이 다른 웹 페이지를 만들 수 있습니다.
+레이아웃 컨테이너 및 레이아웃 모드를 구성하는 방법에 대해 알아봅니다.
 
->[!NOTE]
+>[!TIP]
 >
->적응형 웹 디자인(주로 클래식 UI)을 사용하는 [모바일 웹](/help/sites-developing/mobile-web.md) 메커니즘과 비교할 수 있습니다.
+>이 문서에서는 AEM에서 기능을 구현하는 방법을 설명하는 사이트 관리자 및 개발자를 위한 반응형 디자인 개요를 제공합니다.
+>
+>콘텐츠 작성자의 경우 콘텐츠 페이지에서 응답형 디자인 기능을 사용하는 방법에 대한 자세한 내용은 콘텐츠 페이지의 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) 문서에서 확인할 수 있습니다.
+
+## 개요 {#overview}
+
+[응답형 레이아웃](/help/sites-authoring/responsive-layout.md)은(는) [응답형 웹 디자인](https://en.wikipedia.org/wiki/Responsive_web_design)을 구현하기 위한 메커니즘입니다. 이렇게 하면 사용자가 사용하는 장치에 따라 레이아웃과 차원이 다른 웹 페이지를 만들 수 있습니다.
 
 AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이아웃을 실현합니다.
 
@@ -33,7 +40,7 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 
    * 기본 **레이아웃 컨테이너** 구성 요소는 아래에 정의되어 있습니다.
 
-     /libs/wcm/foundation/components/responsivegrid
+     `/libs/wcm/foundation/components/responsivegrid`
 
    * 레이아웃 컨테이너를 정의할 수 있습니다.
 
@@ -49,10 +56,6 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 * [**에뮬레이터**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 이를 사용하여 구성 요소의 크기를 상호 작용 방식으로 조정하여 디바이스/창 크기에 따라 레이아웃을 재정렬하는 반응형 웹 사이트를 만들고 편집할 수 있습니다. 그러면 사용자는 콘텐츠가 에뮬레이터를 사용하여 어떻게 렌더링되는지 볼 수 있습니다.
 
->[!CAUTION]
->
->**레이아웃 컨테이너** 구성 요소는 클래식 UI에서 사용할 수 있지만, 전체 기능은 터치 사용 UI에서만 사용할 수 있습니다.
-
 이러한 응답형 격자 메커니즘을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
 * 장치 레이아웃을 기반으로 달라지는 콘텐츠 동작을 정의하려면 중단점 (장치 그룹화를 나타냄)을 사용하십시오.
@@ -60,9 +63,17 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 * 수평 격자에 맞춤(구성 요소를 격자에 배치하고, 필요에 따라 크기를 변경하고, 언제 구성 요소가 나란히 또는 위/아래에 있도록 축소되거나 리플로우되어야 하는지 정의합니다.)
 * 열 컨트롤을 구현할 수 있습니다.
 
+>[!TIP]
+>
+>Adobe은 응답형 레이아웃의 [GitHub 설명서](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)를 프런트엔드 개발자에게 참조용으로 제공하여 AEM 외부 AEM 그리드를 사용할 수 있도록 합니다. 예를 들어 나중에 사용하기 위해 AEM 사이트에 대한 정적 HTML mock-up을 생성할 때 이를 사용할 수 있습니다.
+
 >[!NOTE]
 >
 >기본 설치에서 [We.Retail 참조 사이트](/help/sites-developing/we-retail.md)에 대해 응답형 레이아웃이 구성되었습니다. 다른 페이지에 대해 [레이아웃 컨테이너 구성 요소를 활성화](#enable-the-layout-container-component-for-page)합니다.
+
+>[!CAUTION]
+>
+>**레이아웃 컨테이너** 구성 요소는 클래식 UI에서 사용할 수 있지만, 전체 기능은 터치 사용 UI에서만 사용할 수 있습니다.
 
 ## 응답형 에뮬레이터 구성 {#configuring-the-responsive-emulator}
 
@@ -148,7 +159,7 @@ CRXDE Lite 또는 XML을 사용하여 정의할 수 있습니다.
 
 예제 정의:
 
-```xml
+```html
 <cq:responsive jcr:primaryType="nt:unstructured">
   <breakpoints jcr:primaryType="nt:unstructured">
     <phone jcr:primaryType="nt:unstructured" title="{String}Phone" width="{Decimal}768"/>
@@ -186,13 +197,13 @@ CRXDE Lite 또는 XML을 사용하여 정의할 수 있습니다.
 
 * **HTL:**
 
-  ```xml
+  ```html
   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
   ```
 
 * **JSP:**
 
-  ```
+  ```html
   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
   ```
 
@@ -204,7 +215,7 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
 
 또한 추가 구성 및 함수 호출을 제공하려면 [클라이언트 라이브러리](https://experienceleague.adobe.com/docs/)를 만들어야 합니다. 다음 LESS 추출은 프로젝트에 추가해야 하는 최소값의 예입니다.
 
-```java
+```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
 
 /* maximum amount of grid cells to be provided */
@@ -311,3 +322,61 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
    * 현재 구성 요소에 추가할 수 있는 구성 요소:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+
+## 중첩된 응답형 격자 {#nested-responsive-grids}
+
+프로젝트의 요구 사항을 지원하기 위해 응답형 그리드를 중첩해야 하는 경우가 있을 수 있습니다. 그러나 Adobe이 권장하는 모범 사례는 가능한 한 구조를 평평하게 유지하는 것입니다.
+
+중첩된 응답형 격자를 사용하지 않을 수 없는 경우에는 다음을 확인하십시오.
+
+* 모든 컨테이너(컨테이너, 탭, 아코디언 등)에는 `layout = responsiveGrid` 속성이 있습니다.
+* 컨테이너 계층 구조에서 `layout = simple` 속성을 혼합하지 마십시오.
+
+페이지 템플릿의 모든 구조적 컨테이너가 여기에 포함됩니다.
+
+내부 컨테이너의 열 번호는 외부 컨테이너의 열 번호보다 커서는 안 됩니다. 다음 예제는 이 조건을 충족합니다. 기본(데스크탑) 화면의 경우 외부 컨테이너의 열 번호가 8이면 내부 컨테이너의 열 번호는 4입니다.
+
+>[!BEGINTABS]
+
+>[!TAB 노드 구조 예]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB 결과 HTML 예]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+>[!ENDTABS]
