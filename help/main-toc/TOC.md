@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 236dac79430bc974b9cc95299a566283a748476a
+source-git-commit: 0109abf51045224912d130ee29f67d7274cfc4f4
 workflow-type: tm+mt
-source-wordcount: '7474'
-ht-degree: 22%
+source-wordcount: '7471'
+ht-degree: 23%
 
 ---
 
@@ -884,7 +884,7 @@ ht-degree: 22%
       + [Designer FormCalc 참조](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [HTML5 양식에서 스크리블 서명 사용](/help/forms/using/scribble-signature.md)
       + [Designer에서 Page Zero 콘텐츠 변경](/help/forms/using/changing-page-zero-content-designer.md)
-      + [접근성 모범 사례]{#accessibility-best-practices}
+      + 접근성 모범 사례 {#accessibility-best-practices}
          + [소개](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [양식 생성 모범 사례](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [양식 접근성 테스트 기법](/help/forms/using/techniques-for-testing-form-accessibility.md)
@@ -1207,7 +1207,7 @@ ht-degree: 22%
       + [AEM Forms 서버가 완전히 실행되고 있지 않더라도 문서 처리](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [출력 서비스, Forms 서비스 또는 기록 문서(DoR) 서비스를 사용할 수 없음](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Experience Manager Forms의 Struts 2 RCE 취약성 완화](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [MySQL용 6.5.12.0으로 업그레이드하는 동안 데이터베이스를 백업하지 못했습니다.](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
+      + [MySQL용 6.5.12.0(으)로 업그레이드하는 동안 데이터베이스를 백업하지 못했습니다.](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [PDF 생성이 WorkBench에서 많은 수의 PDF를 인쇄하지 못했습니다.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [AEM SDK을 올바르게 다시 시작하는 방법](/help/forms/using/restart-aem-sdk.md)
       + [PaperCapture 서비스가 PDF에서 OCR을 수행하지 못함](/help/forms/using/papercapture-service-resolution.md)
