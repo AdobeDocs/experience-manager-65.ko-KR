@@ -4,9 +4,9 @@ description: 범용 편집기의 유연성과 AEM 6.5를 사용하여 Headless �
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: bf9dc1695be7f7a10cb76160b531c9adbbfc8c34
+source-git-commit: d3dd827e93549c558284be1c1991b4e003c9e0e8
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1252'
 ht-degree: 1%
 
 ---
@@ -34,6 +34,16 @@ ht-degree: 1%
 * Dispatcher과 동일한 호스트에서 실행되는 범용 편집기 서비스는 변경 사항을 AEM 작성자 인스턴스에 다시 기록합니다.
 
 ![유니버설 편집기를 사용한 작성자 흐름](assets/author-flow.png)
+
+## 요구 사항 {#requirements}
+
+유니버설 편집기는 다음에서 지원합니다.
+
+* AEM 6.5(서비스 팩 21 또는 22 + 기능 팩 추가)
+   * 온-프레미스 및 AMS 호스팅이 모두 지원됩니다.
+* [AEM as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)&#x200B;(릴리스 `2023.8.13099` 이상)
+
+이 문서는 범용 편집기의 AEM 6.5 지원에 중점을 둡니다.
 
 ## 설정 {#setup}
 
