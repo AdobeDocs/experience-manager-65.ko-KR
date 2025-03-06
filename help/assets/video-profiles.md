@@ -11,9 +11,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '3750'
+source-wordcount: '3730'
 ht-degree: 8%
 
 ---
@@ -301,7 +301,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
    <td><code>audioBitrateCustom</code></td>
    <td>오디오 코덱에서 지원하는 경우 오디오 스트림에 대한 상수 비트 전송률을 적용하려면 값을 <code>true</code>(으)로 설정하십시오.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>기본값은 <code>false</code>입니다.</p> <p>DASH 또는 HLS에 대한 권장 값은 <code>false</code>입니다. 비디오에 DASH를 사용하려면 먼저 계정에서 활성화해야 합니다. <a href="/help/assets/video.md#enable-dash">계정에서 DASH 사용</a>을 참조하세요.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>기본값은 <code>false</code>입니다.</p> <p>DASH 또는 HLS에 대한 권장 값은 <code>false</code>입니다.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

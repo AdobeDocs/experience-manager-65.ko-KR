@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '10517'
+source-wordcount: '10488'
 ht-degree: 2%
 
 ---
@@ -553,8 +553,6 @@ Dynamic Media의 다중 캡션 및 오디오 트랙 기능을 사용하면 여�
 |  | 설명 오디오 |
 
 Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰어 및 Dynamic Media ](/help/assets/assets-formats.md)에서 지원되는 모든 [비디오 형식이 다중 캡션 및 오디오 트랙과 함께 사용할 수 있도록 지원됩니다.
-
-Adobe 고객 지원 센터에서 활성화(켜기)해야 하는 기능 전환을 통해 Dynamic Media 계정에 여러 캡션 및 오디오 추적 기능을 사용할 수 있습니다.
 
 ### 비디오에 여러 캡션 및 오디오 트랙 추가 {#add-msma}
 
@@ -1389,7 +1387,7 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 | `manifestType` | 선택 사항. 매개 변수는 DASH 또는 HLS일 수 있습니다. 전달되지 않으면 기본값은 DASH입니다. |
 | `onlyIfPublished` | 선택 사항. 전달된 경우 비디오가 게시된 경우에만 `manifestUrl`이(가) 반환됩니다. |
 
-이 예제에서는 다음 설정을 가정합니다.
+이 예에서는 다음 설정을 가정합니다.
 
 * 회사가 `samplecompany`입니다.
 * 작성 인스턴스는 `http://sample-aem-author.com`입니다.
