@@ -1,14 +1,14 @@
 ---
-title: CIF(AEM Commerce integration framework) 추가 기능으로 마이그레이션
+title: AEM Commerce integration framework(CIF) 추가 기능으로 마이그레이션
 description: 이전 버전에서 AEM Commerce integration framework(CIF) 추가 기능으로 마이그레이션하는 방법.
 exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: b4056a4c1483dc8dcedc3c0f8f6b42f8dead0847
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 5%
+source-wordcount: '262'
+ht-degree: 4%
 
 ---
 
@@ -18,19 +18,19 @@ ht-degree: 5%
 
 ## CIF 추가 기능
 
-CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)을 통해 AEM 6.5에서 사용할 수 있습니다. Experience Manager as a Cloud Service 및 CIF용 추가 기능과 동일한 기능을 제공하며 호환됩니다.
+CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=16)을 통해 AEM 6.5에서 사용할 수 있습니다. 호환되며 Experience Manager as a Cloud Service용 CIF 추가 기능과 동일한 기능을 제공합니다.
 
-[AEM Content 및 Commerce 시작하기](getting-started.md)를 참조하십시오.
+[AEM 콘텐츠 및 Commerce 시작하기](getting-started.md)를 참조하세요.
 
 Adobe는 CIF 배포 프로젝트를 지원하기 위해 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 제공합니다.
 
 ## 제품 카탈로그
 
-CIF 추가 기능에서는 제품 카탈로그 데이터 가져오기가 지원되지 않습니다. CIF 추가 기능 주체를 사용하면 외부 상거래 솔루션에 대한 실시간 호출을 통해 제품 및 카탈로그 요청이 온디맨드로 수행됩니다. 상거래 솔루션 통합에 대한 자세한 내용을 보려면 통합 장으로 이동합니다.
+CIF 추가 기능은 제품 카탈로그 데이터 가져오기를 지원하지 않습니다. CIF 추가 기능 주도자를 사용하면 외부 상거래 솔루션에 대한 실시간 호출을 통해 제품 및 카탈로그 요청이 온디맨드로 수행됩니다. 상거래 솔루션 통합에 대한 자세한 내용을 보려면 통합 장으로 이동합니다.
 
 >[!TIP]
 >
->사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예제 [Magento 오픈 소스](https://business.adobe.com/products/magento/open-source.html).
+>사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예 [Magento 오픈 소스](https://business.adobe.com/products/magento/open-source.html).
 
 ## AEM 렌더링을 사용한 제품 카탈로그 경험
 
