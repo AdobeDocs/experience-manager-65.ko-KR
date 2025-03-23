@@ -5,13 +5,13 @@ git-repo: https://github.com/AdobeDocs/experience-manager-65.ko-KR
 solution: Experience Manager, Experience Manager 6.5
 feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites, Experience Manager Forms
 type: Documentation
-version: 6.5
+version: Experience Manager 6.5
 index: y
 recommendations: noDisplay
-source-git-commit: e5013bbba695d2b5258ed515a27bf5b36d098c1d
+source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
 workflow-type: tm+mt
 source-wordcount: '131'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ metadata.md 파일에는 보고서에서 사용 안내서 TOC.md 파일로 전�
 |--- |--- |
 | solution-title | 문서 헤더에 링크로 사용됩니다. |
 | solution-hub-url | [학습 및 지원] 허브 페이지를 엽니다. |
-| solution-icon | 솔루션 제목 옆에 솔루션 아이콘을 표시합니다. 아직 구현되지 않음. |
+| solution-icon | 솔루션 제목 옆에 솔루션 아이콘을 표시합니다. 아직 구현되지 않았습니다. |
 | getting-started-url | 시작 페이지에 대한 링크입니다. |
 | tutorials-url | 비디오 튜토리얼에 대한 링크. |
 | mini-toc-levels | 오른쪽 레일에 나타나는 제목 수준 수를 결정합니다. 기본값은 2입니다. |
