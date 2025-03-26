@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 64bc2ecbb2b5ef5847af4449562240a7c1ec45e9
+source-git-commit: 39ad2f3eedb35e98dc2239c0b81b3792a0ddc73f
 workflow-type: tm+mt
-source-wordcount: '6146'
+source-wordcount: '6158'
 ht-degree: 2%
 
 ---
@@ -45,13 +45,13 @@ ht-degree: 2%
 
 #### AEM Forms의 새로운 GA 기능 {#ga-aem-forms-sp22}
 
-* [대화형 통신 일괄 처리 API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel)에서 글꼴 임베딩을 사용하도록 설정할 수 있는 지원이 추가되었습니다. 이제 대화형 통신에 일괄 처리 API를 통해 생성된 PDF에 Adobe Ming 및 Adobe Myungjo 글꼴을 포함할 수 있는 지원이 포함됩니다. 이러한 개선된 기능은 글꼴 하위 집합을 사용하는 경우에도 생성된 문서에서 정확한 텍스트 렌더링을 보장하여 PDF 출력에서 다국어 콘텐츠에 대한 향상된 지원을 제공합니다.
+* [대화형 통신 일괄 처리 API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel)에서 글꼴 임베딩을 사용할 수 있도록 지원이 추가되었습니다. 이제 대화형 통신에는 일괄 처리 API를 통해 생성된 PDF에 Adobe Ming 및 Adobe Myungjo 글꼴을 포함할 수 있는 지원이 포함됩니다. 이러한 향상된 기능을 통해 글꼴 하위 집합을 사용하는 경우에도 생성된 문서에서 정확한 텍스트 렌더링이 보장되므로 PDF 출력에서 다국어 콘텐츠에 대한 지원이 향상됩니다.
 
-* [PDF 접근성을 위한 목차 API](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - 이제 OSGi의 AEM Forms에서 새로운 TOC Tag API를 지원하여 접근성 표준에 대한 PDF을 향상합니다. 보조 기술을 가진 사용자가 PDF에 보다 쉽게 액세스할 수 있도록 해줍니다.
+* [PDF 접근성을 위한 목차 API](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - 이제 OSGi의 AEM Forms에서 새로운 TOC Tag API를 지원하여 접근성 표준을 위한 PDF을 향상시킵니다. 보조 기술을 사용하는 사용자가 PDF에 보다 쉽게 액세스할 수 있도록 해줍니다.
 
 * [조각 XDP 확인](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository) - 이제 OSGi의 AEM Forms이 기본 XDP에서 참조되고 AEM CRX 저장소에 저장된 조각 XDP를 확인합니다.
 
-* [PDF/A 규정 준수 개선 사항](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) - 이제 PDF은 보관을 위해 PDF/A 형식(1a, 2a, 3a)으로 전환하면서 접근성을 보장하고 이러한 표준 준수를 확인할 수 있습니다.
+* [PDF/A 규정 준수 개선 사항](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) - 이제 사용자는 PDF를 보관용으로 PDF/A 형식(1a, 2a, 3a)으로 변환할 수 있으며 접근성을 보장하고 이러한 표준 준수를 확인할 수 있습니다.
 
 * **정적 PDF 문서의 글꼴 자동 크기 조정 지원** - AEM Forms Designer, OutputService 및 FormsService는 이제 정적 PDF의 글꼴 자동 크기 조정을 지원합니다. 텍스트, 숫자, 암호 또는 날짜/시간 필드에 대해 글꼴 크기를 0으로 설정하면 필드의 전체 크기를 변경하지 않고 글꼴 크기가 이러한 필드 내에서 자동으로 조정됩니다. 기능을 사용하려면 사용자가 사용자 지정 XCI에 플래그를 전달합니다. `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
 
@@ -71,7 +71,7 @@ Beta 기능은 혁신적인 최신 기술에 독점적으로 액세스하고 개
 
 ### Sites {#sites}
 
-[이제 기능 팩의 응용 프로그램에서 headless 사용 사례에 대해 AEM 6.5에서 유니버설 편집기](/help/sites-developing/universal-editor/introduction.md)를 사용할 수 있습니다.
+[이제 기능 팩의 응용 프로그램에서 Headless 사용 사례를 위해 AEM 6.5에서 유니버설 편집기](/help/sites-developing/universal-editor/introduction.md)를 사용할 수 있습니다.
 
 ### [!DNL Assets]
 
@@ -92,12 +92,12 @@ Beta 기능은 혁신적인 최신 기술에 독점적으로 액세스하고 개
 
    * Site
    * Live Copy
-   * 실행
+   * 론치
    * 언어 복사
    * 폴더
    * CSV 보고서(SITES-2874)
 
-* AEM Core Web Content Management를 사용하려면 리치 텍스트 편집기에서 하이퍼링크에 대한 접근성 레이블이 필요합니다. 텍스트 구성 요소에서 하이퍼링크를 사용하는 경우 앵커 태그에는 `aria-label` 특성이 포함되어야 화면 판독기에서 접근성을 위해 링크 텍스트를 정확하게 읽고 전달할 수 있습니다. (SITES-11511)
+* AEM 핵심 웹 컨텐츠 관리를 사용하려면 리치 텍스트 편집기에서 하이퍼링크에 대한 접근성 레이블이 필요합니다. 텍스트 구성 요소에서 하이퍼링크를 사용하는 경우 앵커 태그에는 `aria-label` 특성이 포함되어야 화면 판독기에서 접근성을 위해 링크 텍스트를 정확하게 읽고 전달할 수 있습니다. (SITES-11511)
 * AEM에서 목록 보기의 테이블 헤더에 있는 대화형 요소에는 필수 &quot;버튼&quot; 역할이 없습니다. 따라서 NVDA 화면 판독기는 제목, 이름, 수정됨, 게시됨, 미리보기, 템플릿, 작업, 워크플로우 테이블 헤더에 대한 예상 단추 역할을 알리지 않습니다. NVDA와 같은 보조 기술과의 호환성을 위해서는 테이블 헤더의 각 대화형 요소에 &quot;버튼&quot; 역할을 할당해야 합니다. (SITES-10962)
 
 
@@ -121,7 +121,7 @@ Beta 기능은 혁신적인 최신 기술에 독점적으로 액세스하고 개
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6522}
 
-* 업그레이드된 AEM 6.5.17에서 콘텐츠 조각을 저장하면 다음 오류가 발생했습니다. *오류: 콘텐츠 조각을 저장할 수 없습니다.*(SITES-22993)
+* 업그레이드된 AEM 6.5.17에서 컨텐츠 조각을 저장하면 다음 오류가 발생합니다. *오류: 컨텐츠 조각을 저장할 수 없습니다.*(SITES-22993)
 * AEM의 게시자에서 `ContentFragmentModelOmniSearchHandler`의 닫히지 않은 리소스 확인자로 문제가 확인되었습니다. (SITES-24903)
 
 
@@ -132,7 +132,7 @@ Beta 기능은 혁신적인 최신 기술에 독점적으로 액세스하고 개
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6522}
 
-여러 줄 텍스트 필드 항목과 함께 컨텐츠 조각을 사용하는 경우 GraphQL을 사용하여 쿼리할 때 생성된 마크업이 HTML에 지정된 형식을 유지하지 않았습니다. 예를 들어 목록 뒤에 새 줄이 없습니다. 마지막 단락이 목록의 일부가 된 영향이 있었습니다. (SITES-23233)
+여러 줄 텍스트 필드 항목과 함께 콘텐츠 조각을 사용하는 경우 GraphQL을 사용하여 쿼리할 때 생성된 마크업이 HTML에 지정된 형식을 유지하지 않았습니다. 예를 들어 목록 뒤에 새 줄이 없습니다. 마지막 단락이 목록의 일부가 된 영향이 있었습니다. (SITES-23233)
 
 
 <!-- #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6522}
@@ -146,8 +146,8 @@ Beta 기능은 혁신적인 최신 기술에 독점적으로 액세스하고 개
 
 #### 핵심 백엔드{#sites-core-backend-6522}
 
-* AEM 작성자 인스턴스에 대해 `SegmentNotFoundException`개의 반복 오류가 보고되었습니다. 작성자를 다시 시작하면 문제가 일시적으로 해결되었지만 더 이상 발생하지 않도록 장기간 수정해야 했습니다. (SITES-22573)
-* AEM Sites의 타임라인 기능, 특히 주석에서 누락된 `cq:lastModified` 속성을 처리하는 것과 관련하여 문제가 발생했습니다. AEM 6.5.20을 적용한 후에는 기존 콘텐츠에 누락된 속성에 대한 수정이 필요한지 또는 속성 없이 올바르게 작동하도록 타임라인이 업데이트되었는지 불확실성이 있었습니다. (SITES-21861)
+* AEM 작성자 인스턴스에서 반복되는 `SegmentNotFoundException` 오류가 보고되었습니다. 작성자를 다시 시작하면 문제가 일시적으로 해결되었지만 더 이상 발생하지 않도록 장기간 수정해야 했습니다. (SITES-22573)
+* AEM Sites의 타임라인 기능, 특히 주석에서 누락된 `cq:lastModified` 속성을 처리하는 것과 관련하여 문제가 발생했습니다. AEM 6.5.20을 적용한 후에는 기존 컨텐츠에 누락된 속성에 대한 수정이 필요한지 또는 속성 없이 올바르게 작동하도록 타임라인이 업데이트되었는지 불확실성이 있었습니다. (SITES-21861)
 
 
 #### 핵심 구성 요소{#sites-core-components-6522}
@@ -200,7 +200,7 @@ HTTP 클라이언트가 기본 인증 전에 NTLM을 시도하므로 LinkChecker
 
 #### 복제{#sites-replication-6522}
 
-AEM 6.5.18과 6.5.19에서 상위 페이지를 비활성화하면 각 하위 페이지에 대해 여러 비활성화 요청이 생성되었습니다. 이 문제로 인해 GraphQL 엔드포인트의 벌크 게시 취소도 중단되었습니다. (NPR-42075 및 NPR42010)
+AEM 6.5.18 및 6.5.19에서 상위 페이지를 비활성화하면 각 하위 페이지에 대해 여러 비활성화 요청이 생성되었습니다. 이 문제로 인해 GraphQL 엔드포인트의 벌크 게시 취소도 중단되었습니다. (NPR-42075 및 NPR42010)
 
 
 ### [!DNL Assets]{#assets-6522}
@@ -211,7 +211,7 @@ AEM 6.5.18과 6.5.19에서 상위 페이지를 비활성화하면 각 하위 페
 * Adobe Experience Manager, 서비스 팩 21로 업그레이드한 후 `AssetReferenceResolverImpl` 참조 쿼리에 문제가 있습니다. (ASSETS-40384)
 * AEM 버전 6.5.19에서는 검색 패널 결과에서 한 가지 옵션을 제거하는 동안 사용 가능한 다른 모든 확인란도 선택 취소합니다. (ASSETS-37335)
 * 일괄 메타데이터 내보내기 작업을 수행하는 동안 정크 값이 Excel 출력에 표시됩니다. (ASSETS-37260)
-* AEM 버전 6.5.19에서 SVG 파일을 UTF-8 포맷으로 업로드할 때 출력이 흐리게 표시됩니다. (ASSETS-36616)
+* AEM 버전 6.5.19에서 SVG 파일을 UTF-8 포맷으로 업로드할 때 출력이 흐려집니다. (ASSETS-36616)
 * 연결된 Assets 구성 내에 `Fetch original rendition for Dynamic Media Connected Assets` 옵션이 없습니다. (ASSETS-41726)
 * 필수 필드에 대한 값을 정의하지 않아도 자산 속성이 저장됩니다. (ASSETS-37914)
 * 에셋의 처리 상태가 실패 또는 메타데이터 실패인 경우 캡션 및 오디오 트랙 UI가 제대로 작동하지 않습니다. (ASSETS-37281)
@@ -219,7 +219,7 @@ AEM 6.5.18과 6.5.19에서 상위 페이지를 비활성화하면 각 하위 페
 
 #### [!DNL Dynamic Media]{#assets-dm-6522}
 
-프로덕션 문제로 인해 Dynamic Media에 비디오를 업로드하지 못하여 사용자 인터페이스에 프로세스 실패 오류가 표시되면서 마이그레이션 프로세스가 중단되었습니다. (ASSETS-36038)
+프로덕션 문제로 인해 Dynamic Media에 대한 비디오 업로드가 실패했을 때 마이그레이션 프로세스가 중단되었으며 사용자 인터페이스에 프로세스 실패 오류가 표시됩니다. (ASSETS-36038)
 
 <!--
 
@@ -233,23 +233,23 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 * AEM Forms에 저장된 초안의 첨부 파일에 대해 생성된 URL이 구성된 Apache Sling Resource Resolver Factory 매핑을 반영하지 않습니다. (FORMS-16949)
 * AEM Forms 서비스 팩 19(6.5.19.0)의 사용자가 문자를 미리 볼 때 공백이 없고 문자 `x`이(가) 일부 위치에 표시되므로 콘텐츠가 제대로 정렬되지 않습니다. (FORMS-16670)
-* AEM Forms 서비스 팩 18(6.5.18.0)의 사용자가 CIF 프로토콜을 사용하여 파일을 인쇄하려고 할 때 실패하고 다음과 같은 오류가 표시됩니다. (FORMS-16629)
+* AEM Forms 서비스 팩 18(6.5.18.0)의 사용자가 CIFS 프로토콜을 사용하여 파일을 인쇄하려고 할 때 다음 오류와 함께 실패합니다. (FORMS-16629)
   `ALC-OUT-001-401: Unknown error while printing using CIFS on the Printer: \\\\\\\\NSMVPLUETEST01\\\\TH_Test`
-* 사용자가 AEM Forms 서비스 팩 17(6.5.17.0)에서 AEM Forms 서비스 팩 20(6.5.20.0)으로 업그레이드할 때 규칙 편집기 아이콘이 양식 컨테이너 수준에 표시되지 않습니다. (FORMS-16430)
-* 사용자가 AEM Forms 서비스 팩 17(6.5.17.0)에서 AEM Forms 서비스 팩 21(6.5.21.0)로 업그레이드할 때 수정된 적응형 양식 제출 URL 경로가 작동하지 않습니다. (FORMS15894)
-* AEM Forms 서비스 팩 19(6.5.19.0)에서 `creation date and modification date mismatch with timezone` 오류가 있는 특정 파일에 대해 AEM Forms 6.5 PDF/A 유효성 검사가 실패하고, 준수 검사에 대한 Acrobat Pro PDF/A 유효성 검사에서 원활하게 실행됩니다. (FORMS-15840)
-* 사용자가 OSGi의 AEM Forms 서비스 팩 15(6.5.15.0)의 사이트 페이지에서 &quot;초안 및 제출&quot; 구성 요소를 사용하여 양식 초안을 삭제하면 삭제가 실패합니다. (FORMS-15755)
+* 사용자가 AEM Forms 서비스 팩 17(6.5.17.0)에서 AEM Forms 서비스 팩 20(6.5.20.0)(으)로 업그레이드할 때 규칙 편집기 아이콘이 양식 컨테이너 수준에 표시되지 않습니다. (FORMS-16430)
+* 사용자가 AEM Forms 서비스 팩 17(6.5.17.0)에서 AEM Forms 서비스 팩 21(6.5.21.0)(으)로 업그레이드할 때 수정된 적응형 양식 제출 URL 경로가 작동하지 않습니다. (FORMS15894)
+* AEM Forms 서비스 팩 19(6.5.19.0)에서 AEM Forms 6.5 PDF/A가 특정 파일에 대해 오류 `creation date and modification date mismatch with timezone`과(와) 함께 유효성 검사에 실패하고, Acrobat Pro PDF/A에서 호환성 검사에 대해 원활하게 실행됩니다. (FORMS-15840)
+* 사용자가 OSGi의 AEM Forms 서비스 팩 15(6.5.15.0)에 있는 사이트 페이지에서 &quot;초안 및 제출&quot; 구성 요소를 사용하여 양식 초안을 삭제하면 삭제가 실패합니다. (FORMS-15755)
 * 사용자에게 999개가 넘는 항목이 있는 SharePoint 목록이 있고 양식에 첨부 파일이 포함되어 있으면 양식 제출이 실패합니다. (FORMS-15057)
 * 유효성 검사 메시지에 대한 사용자 지정 스크립트와 함께 종료 날짜가 시작 날짜보다 빠르지 않도록 유효성 검사 규칙이 추가됩니다. 하지만 종료 날짜가 시작 날짜보다 이전인 경우에는 유효성 검사가 트리거되지 않습니다. (FORMS-14757)
 * 사용자가 적응형 양식의 테이블에서 표시/숨기기 기능을 사용하면 필드 크기가 줄어듭니다. 필드 크기는 행 추가 및 제거 시 자체적으로 수정됩니다. (FORMS-14756)
 * 사용자가 AEM Forms 서비스 팩 19(6.5.19.0)에서 양식을 인쇄할 때 일부 양식이 서버에서 올바르게 렌더링되지 않아 인쇄 프로세스 중에 오류가 발생합니다. (FORMS14734)
-* 사용자가 AEM Forms 서비스 팩 15(6.5.15.0)에서 서비스 팩 19(6.5.19.0)로 업데이트하면 문제가 발생합니다. `num{$zzz,zz9.99}`(으)로 설정된 사용자 지정 표시 패턴이 미리 보기 및 에이전트 UI에서 올바르게 렌더링되지 않습니다. (FORMS-14694)
+* 사용자가 AEM Forms 서비스 팩 15(6.5.15.0)에서 서비스 팩 19(6.5.19.0)(으)로 업데이트할 때 문제가 발생합니다. `num{$zzz,zz9.99}`(으)로 설정된 사용자 지정 표시 패턴이 미리 보기 및 에이전트 UI에서 올바르게 렌더링되지 않습니다. (FORMS-14694)
 * 사용자가 저장된 데이터 xml이 있는 대화형 통신에서 문자를 미리 보면 문자가 AEM UI의 &quot;로드 중&quot; 상태에서 멈춥니다. 동일한 XML을 사용하여 편지 미리 보기를 다시 해도 잘 작동합니다. (FORMS-14521)
 * AEM Forms 서비스 팩 20(6.5.20.0)에서 적응형 양식의 &#39;전자 메일 보내기&#39; 버튼을 사용하여 첨부 파일이 있는 전자 메일을 보내는 사용자에게 문제가 표시됩니다. 첨부 파일 이름이 인라인 대신 다음 줄에 나타납니다. (FORMS-14426)
-* 사용자가 글머리 기호 목록을 기본 &quot;디스크&quot; 스타일로 설정한 상태로 AEM Forms에서 PDF을 생성하면 PDF이 Adobe Acrobat의 접근성 도구에서 접근성 검사를 실패합니다. 글머리 기호 및 사각형 스타일이 포함된 목록은 접근성 검사를 통과합니다. (FORMS-13802, LC-3922179)
+* 사용자가 글머리 기호 목록을 기본 &quot;디스크&quot; 스타일로 설정한 AEM Forms에서 PDF을 생성하면 PDFAdobe Acrobat 의 접근성 도구에서 접근성 검사가 실패합니다. 글머리 기호 및 사각형 스타일이 포함된 목록은 접근성 검사를 통과합니다. (FORMS-13802, LC-3922179)
 * 사용자가 독립형 RHEL8 JBoss® 설정에서 AEMForms-6.5.0-0065에서 AEMForms-6.5.0-0087로 업그레이드할 때 LiveCycle 서비스 컨테이너와 연결하지 못합니다. (FORMS-15907) *
 * JEE의 AEM Forms AEM Workspace에서 새 양식 프로세스를 시작하기 위해 이전에 제출한 양식을 선택하면 문제가 발생합니다. 미리 채워진 데이터가 있는 Forms은 이전에 제출된 모든 데이터를 덮어쓰며 수동으로 채워진 필드를 제거합니다. (FORMS-15376)
-* AEM Forms 서비스 팩 20(6.5.20.0)에서 사용자가 PDFG 서비스를 사용하여 Tiff 파일을 PDF으로 변환할 때 다음 오류와 함께 실패합니다. (FORMS-14879) 입력 이미지 파일을 PDF으로 변환하는 동안 ALC-PDG-011-028-Error 가 발생했습니다. com/sun/image/codec/jpeg/JPEGCodec
+* AEM Forms 서비스 팩 20(6.5.20.0)에서 사용자가 PDFG 서비스를 사용하여 Tiff 파일을 PDF으로 변환할 때 다음 오류와 함께 실패합니다. (FORMS-14879) 입력 이미지 파일을 PDF으로 변환하는 동안 ALC-PDG-011-028-Error가 발생했습니다. com/sun/image/codec/jpeg/JPEGCodec
 * AEM Forms on JEE jar 파일의 업그레이드: 이제 다음과 같은 다양한 AEM Forms JEE 작업에서 종속성 확인 및 기능을 개선하기 위해 `commons-collections:commons-collections:jar` 라이브러리가 포함됩니다.
    * 작업 처리 및 오류 처리를 개선하기 위한 어셈블러 작업 개선 사항.
    * PDF Generator(PDFG) 작업을 개선하여 문서 생성 및 전환을 위한 작업을 더욱 원활하게 수행할 수 있습니다.
@@ -267,16 +267,16 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 #### XMLFM {#forms-xmlfm-sp22}
 
 * AEM Forms 서비스 팩 21(6.5.21.0)에서 사용자가 XMLFM을 사용하여 PDF에 비표준 태그를 추가하면 문서가 PDF 사양 요구 사항을 준수하지 못합니다. (LC-3922484)
-* 사용자가 AEM Forms 서비스 팩 20의 출력 서비스(6.5.20.0)를 사용하여 PDF을 생성하면 CORBA.COMM_FAILURE로 실패하고 `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"` 오류가 표시됩니다. 접근성 역할 &quot;참조&quot;가 XDP 템플릿의 하위 양식에서 제외되면 서비스가 정상적으로 전달됩니다. 그러나 508 규정 준수를 위해서는 이 역할이 필요합니다. (LC-3922402)
+* 사용자가 AEM Forms 서비스 팩 20(6.5.20.0)의 출력 서비스를 사용하여 PDF을 생성하면 CORBA.COMM_FAILURE로 실패하고 오류 `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"`이(가) 표시됩니다. 접근성 역할 &quot;참조&quot;가 XDP 템플릿의 하위 양식에서 제외되면 서비스가 정상적으로 전달됩니다. 그러나 508 규정 준수를 위해서는 이 역할이 필요합니다. (LC-3922402)
 * 사용자가 XFA 양식을 AcroForm PDF으로 변환할 때 실패합니다. (LC-3922363)
-* AEM Forms 서비스 팩 19(6.5.19.0)에서 사용자가 명명되지 않은 하위 양식으로 XDP를 만들면 명명되지 않은 하위 양식에 대해 FS_DATA_SOM이 비어 있는 것으로 표시됩니다. (LC-3922034)
+* AEM Forms 서비스 팩 19(6.5.19.0)에서 사용자가 명명되지 않은 하위 폼으로 XDP를 만들 때 명명되지 않은 하위 폼에 대해 FS_DATA_SOM이 비어 있는 것으로 표시됩니다. (LC-3922034)
 
 #### Forms Designer {#forms-designer-sp22}
 
 * 사용자가 AEM Forms Designer 버전 6.5.21.0에서 조각 폴더를 선택하여 조각 라이브러리를 열면 충돌합니다. (LC-3922439)
-* 사용자가 32비트 AEM Forms Designer 버전 6.5.20.0을 제거하고 AEM Forms Designer 버전 6.5.21.0을 설치하면 Forms Designer을 시작할 수 없습니다. 오류 로그에 JRE(Java Runtime Environment)에 대한 메모리 할당이 충분하지 않은 것으로 표시됩니다. (LC-3922404)
-* 사용자가 AEM Forms Designer 버전 6.5.20.0을 설치한 후 매크로 옵션이 메뉴에 나타나지 않고 기본 &#39;접근성 검사&#39; 매크로만 나타나고 실행되지 않습니다. (LC-3922321)
-* 사용자가 AEM Forms Designer 버전 6.5.20.0에서 XDP를 생성하는 새 템플릿 위치를 추가하면 Forms Designer이 충돌합니다. (LC-3922316)
+* 사용자가 32비트 AEM Forms Designer 버전 6.5.20.0을(를) 제거하고 AEM Forms Designer 버전 6.5.21.0을(를) 설치하면 Forms Designer을 시작할 수 없습니다. 오류 로그에 JRE(Java Runtime Environment)에 대한 메모리 할당이 충분하지 않은 것으로 표시됩니다. (LC-3922404)
+* 사용자가 AEM Forms Designer 버전 6.5.20.0을(를) 설치한 후 매크로 옵션이 메뉴에 나타나지 않고 기본 &#39;접근성 검사&#39; 매크로만 나타나고 실행되지 않습니다. (LC-3922321)
+* 사용자가 AEM Forms Designer 버전 6.5.20.0에서 XDP를 만들기 위한 새 템플릿 위치를 추가하면 Forms Designer이 충돌합니다. (LC-3922316)
 * 사용자가 AEM Forms 6.5 서비스 팩 15(6.5.15.0) OSGI에서 ExportData 메서드를 사용하여 출력을 생성하면 불완전하고 잘못된 데이터가 생성됩니다. (LC-3922340)
 
 
@@ -329,13 +329,13 @@ AEM 6.5.19에서 6.5.20으로 업그레이드한 후 `UgcSearch` 호출 후 `Con
 #### Granite{#foundation-granite-6522}
 
 * CURL 명령을 사용하여 AEM에 스냅샷 패키지를 설치하고 있었습니다. 설치하는 동안 JCR 설치 프로그램은 OSGI 설치 관리자를 통해 패키지를 스캔하여 추가 OSGI 번들 또는 구성이 필요하지 않은지 확인합니다. 패키지 버전에 &quot;SNAPSHOT&quot;이 포함된 경우 OSGI 설치 관리자가 VLT를 트리거하여 해당 스냅샷 패키지를 생성했습니다. 그러나 각 AEM 작성자 인스턴스는 자체 OSGI 설치 관리자를 실행하므로 두 인스턴스가 동시에 스냅샷 생성을 시도하여 저장소 내에서 세션 충돌이 발생할 수 있습니다. (NPR-42003)
-* `ScriptDependencyResolver`에 AEM 6.5.21과 잠금 경합이 있습니다. (GRANITE-53181)
-* AEM을 6.5.21로 업그레이드한 후 `data-sly-use`과 같이 상대 경로를 HTL(Sightly) 구문에 사용할 때 문제가 발생했습니다. (GRANITE-53080)
+* AEM 6.5.21과 `ScriptDependencyResolver`에 잠금 경합이 있습니다. (GRANITE-53181)
+* AEM을 6.5.21로 업그레이드한 후 `data-sly-use`과 같이 상대 경로를 Sightly(HTL) 구문에 사용할 때 문제가 발생했습니다. (GRANITE-53080)
 
 
 #### 통합{#foundation-integrations-6522}
 
-* Cloud Service 사용자 인터페이스에 대한 법적 속성 문을 추가했습니다. (FORMS-16373)
+* 클라우드 서비스 사용자 인터페이스에 대한 법적 속성 문을 추가했습니다. (FORMS-16373)
 * **fd-cloudservice** 사용자가 hCaptcha 및 Turnstile 구성에 액세스할 수 있는 읽기 권한을 추가하여 captcha 렌더링 및 유효성 검사에 필요한 클라이언트 ID 및 클라이언트 암호를 검색할 수 있도록 합니다. 또한 이러한 구성에 대한 액세스를 관리하기 위해 액세스 제어 목록 모델을 구현했습니다. (FORMS-16360)
 
 
@@ -355,14 +355,14 @@ AEM 6.5.19에서 6.5.20으로 업그레이드한 후 `UgcSearch` 호출 후 `Con
 * 프로덕션 환경에서 가비지 수집기가 태그를 잘못 처리하는 문제가 발견되었습니다. 특히 태그를 이동하거나 이름을 변경하면 가비지 수집기가 `cq:MovedTo` 속성을 업데이트하지 못해 태그가 페이지에서 사라집니다. (CQ-4358293)
 * AEM 6.5.19의 ContextHub 문제로 인해 컨텍스트 경로가 AEM 인스턴스에 추가될 때 세그먼트가 잘못 해결되었습니다. 이 문제는 특히 페이지 구성 요소에 의해 생성된 JavaScript 오브젝트 내의 URL 필드에 영향을 미쳤습니다. 여기서 필요한 컨텍스트 경로 접두어가 누락되었습니다. 이 생략으로 인해 세그먼트가 예상대로 작동하지 않았습니다. (SITES-21852)
 * `commons-collections-3.2.2-adobe-2` 라이브러리를 사용하도록 AEM 빠른 시작을 업데이트했습니다. 업데이트를 통해 애플리케이션이 계속 원활하게 실행될 수 있습니다. (NPR-42150)
-* AEM 6.5의 SMTP OAuth2 설정은 AEM as a Cloud Service에서 사용되는 설정과 크게 다릅니다. 구성을 간소화하고 일관성을 보장하기 위해 AEM 6.5의 설정은 AEM as a Cloud Service에서 사용되는 표준과 일치해야 했습니다. (GRANITE-53273)
+* AEM 6.5의 SMTP OAuth2 설정은 AEM as a Cloud Service에서 사용되는 설정과 크게 다릅니다. 구성을 간소화하고 일관성을 유지하기 위해 AEM 6.5의 설정은 AEM as a Cloud Service에서 사용되는 표준과 일치해야 했습니다. (GRANITE-53273)
 * ![나침반 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Compass_18_N.svg) > ![프로젝트 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Project_18_N.svg) 프로젝트를 클릭한 후 마우스 포인터를 ![왼쪽 레일 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![아래쪽 화살표 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) 위로 가져가면 도구 설명 텍스트 &quot;콘텐츠만&quot; 앞에 심각한 악센트가 나타납니다. (CQ-4356633)
 
 #### 보안{#foundation-security-6522}
 
 * AEM의 오래된 JSAFE 암호화 라이브러리(버전 6.0.0)에서 문제가 발생했습니다. JSAFE 버전 6.2.5의 패치 번들은 AEM 6.5.22에 포함되어 있습니다. (NPR-42006)
 * XSS 확인 중에 허용된 프로토콜의 유효성을 검사할 때 처리기는 &quot;http&quot; 및 &quot;https&quot;와 비교합니다. 그러나 URL 개체의 `protocol` 속성은 `http:` 및 `https:`과 같은 후행 콜론으로 이러한 값을 반환했습니다. 이 불일치로 인해 유효성 검사 문제가 발생했습니다. 정확한 구문 분석을 위해 콜론을 설명하거나 비교 논리를 적절하게 조정하는 데 프로토콜 검사가 필요합니다.  (NPR-42119)
-* IBM® WebSphere® Liberty Profile 및 Semeru Java 8.0에 AEM 6.5.21(이전 버전은 AEM 6.5.19)을 설치한 후 페이지를 열 수 없었습니다. 오류 로그에 다른 번들이 필요한 서블릿 버전과 관련된 문제가 표시되었습니다. 이 문제를 해결하려면 `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`에 대한 종속성이 문제와 관련되어 있으므로 되돌려야 합니다. (NPR-42116)
+* IBM® WebSphere® Liberty Profile 및 Semeru Java 8.0에 AEM 6.5.21(이전 버전은 AEM 6.5.19임)을 설치한 후 페이지를 열 수 없었습니다. 오류 로그에 다른 번들이 필요한 서블릿 버전과 관련된 문제가 표시되었습니다. 이 문제를 해결하려면 `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`에 대한 종속성이 문제와 관련되어 있으므로 되돌려야 합니다. (NPR-42116)
 * 여러 브라우저에서 쿠키에 대한 사이트 간 액세스를 허용하는 데 사용되는 **SameSite=None** 쿠키에 대한 지원을 단계적으로 중단하고 있습니다. 또는 **분할된 쿠키**&#x200B;를 도입하고 있습니다. 이러한 쿠키는 쿠키가 사용되는 컨텍스트에 따라 스토리지를 격리하므로 사이트 간 추적을 방지하고 포함된 타사 컨텐츠와 같은 특정 파티션 내에서 쿠키가 작동할 수 있도록 하여 개인정보 및 보안을 향상시킵니다. (GRANITE-51953)
 
 
@@ -380,7 +380,7 @@ AEM 6.5.19에서 6.5.20으로 업그레이드한 후 `UgcSearch` 호출 후 `Con
 #### 사용자 인터페이스{#foundation-ui-6522}
 
 * `coralui-component-dialog`이(가) `cq-dialog-actions`의 배치를 변경했습니다. AEM의 대화 상자 내 작업 버튼의 레이아웃이나 동작에 영향을 미칠 수 있습니다. (NPR-42294)
-* AEM의 색상 피커 기능이 제대로 작동하지 않습니다. 액세스하면 빈 모달이 표시되어 색상을 선택할 수 없습니다. 이 문제는 AEM 6.5.20을 스테이지 환경에 설치한 후 시작되었습니다. 업데이트에 대해 색상 선택기가 올바르게 *이전*&#x200B;에 작동했습니다. (NPR-42163)
+* AEM의 색상 피커 기능이 제대로 작동하지 않습니다. 액세스하면 빈 모달이 표시되어 색상을 선택할 수 없습니다. 이 문제는 스테이징 환경에 AEM 6.5.20을 설치한 후 시작되었습니다. 업데이트에 대해 색상 선택기가 올바르게 *이전*&#x200B;에 작동했습니다. (NPR-42163)
 * ![망치 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **도구** > **워크플로** > **모델** > 모델 선택 > **워크플로 시작**&#x200B;에서 찾아보기 아이콘이 **워크플로 실행** 대화 상자의 페이로드 필드에 없습니다. (NPR-42162)
 
 
@@ -398,13 +398,13 @@ AEM 6.5.19에서 6.5.20으로 업그레이드한 후 `UgcSearch` 호출 후 `Con
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.22.0에는 [!DNL Experience Manager] 6.5가 필요합니다. 자세한 지침은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하세요. <!-- UPDATE FOR EACH NEW RELEASE -->
-* 서비스 팩을 Adobe [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip)에서 다운로드할 수 있습니다.
+* [!DNL Experience Manager] 6.5.22.0에는 [!DNL Experience Manager] 6.5가 필요합니다. 자세한 지침은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오. <!-- UPDATE FOR EACH NEW RELEASE -->
+* 서비스 팩은 Adobe [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip)에서 다운로드할 수 있습니다.
 * MongoDB 및 여러 인스턴스가 있는 배포에서 패키지 관리자를 사용하여 작성자 인스턴스 중 하나에 [!DNL Experience Manager] 6.5.22.0을(를) 설치합니다.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe은 [!DNL Experience Manager] 6.5.22.0 패키지를 제거하거나 제거하지 않는 것이 좋습니다. 따라서 팩을 설치하기 전에 `crx-repository`을(를) 롤백해야 하는 경우 백업을 만들어야 합니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe에서는 [!DNL Experience Manager] 6.5.22.0 패키지를 제거하거나 제거하지 않는 것이 좋습니다. 따라서 팩을 설치하기 전에 `crx-repository`을(를) 롤백해야 하는 경우 백업을 만들어야 합니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 <!-- For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
@@ -435,7 +435,7 @@ AEM 6.5.19에서 6.5.20으로 업그레이드한 후 `UgcSearch` 호출 후 `Con
 
 >[!NOTE]
 >
->Experience Manager 6.5.22.0은 Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Experience Manager 6.5.22.0은(는) Bootstrap 설치를 지원하지 않습니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **설치 확인**
 
@@ -455,9 +455,9 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 >
 >[AEM 6.5 QuickStart](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
-### Experience Manager 콘텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
+### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)을(를) 사용하여 [Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 [Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
 
@@ -469,7 +469,7 @@ GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1](https://experi
 
 ### UberJar{#uber-jar}
 
-[!DNL Experience Manager] 6.5.22.0용 UberJar를 [Maven 중앙 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.22/)에서 사용할 수 있습니다. <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.22.0에 대한 UberJar를 [Maven 중앙 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.22/)에서 사용할 수 있습니다. <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/help/sites-developing/ht-projects-maven.md)을 참조하여 프로젝트 POM에 다음 종속성을 포함하십시오. <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -484,7 +484,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 >[!NOTE]
 >
->UberJar 및 기타 관련 아티팩트는 공개 Maven 저장소(`repo.adobe.com`) Adobe 대신 Maven 중앙 저장소에서 사용할 수 있습니다. 기본 UberJar 파일의 이름이 `uber-jar-<version>.jar`(으)로 바뀝니다. 따라서 `dependency` 태그에 대한 값으로 `apis`을(를) 가진 `classifier`이(가) 없습니다.
+>UberJar 및 기타 관련 아티팩트는 Adobe Public Maven 저장소(`repo.adobe.com`) 대신 Maven Central Repository에서 사용할 수 있습니다. 기본 UberJar 파일의 이름이 `uber-jar-<version>.jar`(으)로 바뀝니다. 따라서 `dependency` 태그에 대한 값으로 `apis`을(를) 가진 `classifier`이(가) 없습니다.
 
 
 ## 이제 사용되지 않는 기능과 제거된 기능{#removed-deprecated-features}
@@ -537,7 +537,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
       * `cache`
       * `diff-cache`
 
-   1. 서비스 팩을 설치하거나 Experience Manager as a Cloud Service 를 다시 시작합니다.
+   1. 서비스 팩을 설치하거나 Experience Manager as a Cloud Service을 다시 시작합니다.
 `cache` 및 `diff-cache`의 새 폴더가 자동으로 만들어지고 `error.log`에서 더 이상 `mvstore`과(와) 관련된 예외가 발생하지 않습니다.
 
 * 콘텐츠 모델의 기본 이름을 대신 사용하도록 콘텐츠 모델에 대해 사용자 지정 API 이름을 사용했을 수 있는 GraphQL 쿼리를 업데이트합니다.
@@ -577,7 +577,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 * 사용자는 [!DNL Assets]의 계층 구조에서 폴더의 이름을 바꾸고 중첩된 폴더를 [!DNL Brand Portal]에 게시할 수 있습니다. 그러나 루트 폴더가 다시 게시될 때까지 폴더의 제목이 [!DNL Brand Portal]에서 업데이트되지 않습니다.
 
 * [!DNL Experience Manager] 6.5.x.x를 설치하는 동안 다음 오류 및 경고 메시지가 표시될 수 있습니다.
-   * &quot;Target Standard API(IMS 인증)를 사용하여 [!DNL Experience Manager]에서 Adobe Target 통합이 구성된 경우 경험 조각을 Target으로 내보내면 잘못된 오퍼 유형이 생성됩니다. 경험 조각/소스 &quot;Adobe Experience Manager&quot; 유형 대신 Target은 &quot;HTML&quot;/소스 &quot;Adobe Target Classic&quot; 유형으로 여러 오퍼를 만듭니다.
+   * &quot;Target Standard API(IMS 인증)를 사용하여 [!DNL Experience Manager]에서 Adobe Target 통합이 구성된 경우 경험 조각을 Target으로 내보내면 잘못된 오퍼 유형이 생성됩니다. Target에서는 &quot;경험 조각&quot;/소스 &quot;Adobe Experience Manager&quot; 유형 대신 &quot;HTML&quot;/소스 &quot;Adobe Target Classic&quot; 유형의 여러 오퍼를 만듭니다.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: `granite/operations/maintenance`에 유지 관리 창이 없습니다.
    * SUM, MAX 및 MIN과 같은 집계 함수를 사용하는 경우 적용형 양식 서버측 유효성 검사가 실패합니다(CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` : `granite/operations/maintenance`에 유지 관리 창이 없습니다.
@@ -590,23 +590,29 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 ### AEM Sites의 알려진 문제 {#known-issues-aem-sites-6522}
 
-* 큰 조각 트리에 대한 DoS 보호로 인해 콘텐츠 조각-미리보기가 실패합니다. 기본 GraphQL 쿼리 실행기 구성 옵션에 대한 [KB 문서 보기](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-23945)(SITES-17934)
+* 큰 조각 트리에 대한 DoS 보호로 인해 콘텐츠 조각-미리보기가 실패합니다. 기본 GraphQL 쿼리 실행기 구성 옵션에 대한 [KB 문서 보기](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-23945)&#x200B;(SITES-17934)
 
 
 ### AEM Forms의 알려진 문제 {#known-issues-aem-forms-6522}
 
-* AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `<AEM_Forms_Installation>/lib/caching/lib` 폴더(FORMS-14926) 아래에 Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`의 중복 항목이 있는 경우 다음 단계를 수행하여 문제를 해결하십시오.
+* SLES 15 SP6 Linux® 서버에서 HTML에서 PDF으로 변환하지 못할 경우 다음 오류가 발생합니다. `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`. 문제를 해결하려면 다음 단계를 수행하십시오.
+   1. 컨테이너를 시작하고 다음 명령을 사용하여 `OPENSSL_CONF` 환경 변수를 설정합니다.
+      `export OPENSSL_CONF=/etc/ssl`
+또는 컨테이너를 시작하는 동안 환경 변수를 설정할 수 있습니다.
+      `-e OPENSSL_CONF=/etc/ssl`
+   1. 서버를 다시 시작합니다.
+* AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `<AEM_Forms_Installation>/lib/caching/lib` 폴더(FORMS-14926) 아래에 Geode jar `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`의 중복 항목이 있는 경우 다음 단계를 수행하여 문제를 해결하십시오.
 
    1. 로케이터가 실행 중인 경우 중지합니다.
-   1. AEM 서버를 중지합니다.
-   1. `<AEM_Forms_Installation>/lib/caching/lib`(으)로 이동합니다.
-   1. `geode-*-1.15.1.2.jar`을(를) 제외한 모든 Geode 패치 파일을 제거합니다. `version 1.15.1.2`이(가) 있는 Geode jar만 있는지 확인합니다.
-   1. 관리자 모드에서 명령 프롬프트를 엽니다.
-   1. `geode-*-1.15.1.2.jar` 파일을 사용하여 Geode 패치를 설치합니다.
+   2. AEM 서버를 중지합니다.
+   3. `<AEM_Forms_Installation>/lib/caching/lib`(으)로 이동합니다.
+   4. `geode-*-1.15.1.2.jar`을(를) 제외한 모든 Geode 패치 파일을 제거합니다. `version 1.15.1.2`이(가) 있는 Geode jar만 있는지 확인합니다.
+   5. 관리자 모드에서 명령 프롬프트를 엽니다.
+   6. `geode-*-1.15.1.2.jar` 파일을 사용하여 Geode 패치를 설치합니다.
 
 * 사용자가 저장된 XML 데이터를 사용하여 초안 문자를 미리 보려고 하면 일부 특정 문자에 대해 `Loading` 상태로 중단됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (FORMS-14521)
 
-* AEM Forms 서비스 팩 6.5.21.0으로 업그레이드한 후 `PaperCapture` 서비스가 PDF에서 OCR(광학 문자 인식) 작업을 수행하지 못했습니다. 이 서비스는 PDF 또는 로그 파일의 형태로 출력을 생성하지 않습니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (CQDOC-21680)
+* AEM Forms 서비스 팩 6.5.21.0(으)로 업그레이드한 후 `PaperCapture` 서비스가 PDF에서 OCR(광학 문자 인식) 작업을 수행하지 못했습니다. 이 서비스는 PDF 또는 로그 파일 형태의 출력을 생성하지 않습니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (CQDOC-21680)
 
 * AEM 6.5 Forms 서비스 팩 18 또는 19에서 서비스 팩 20 또는 21로 업그레이드한 사용자에게 JSP 컴파일 오류가 발생했습니다. 이 오류로 인해 적응형 양식을 열거나 만들 수 없습니다. 또한 다른 AEM 인터페이스에 문제가 발생했습니다. 이러한 인터페이스에는 페이지 편집기, AEM Forms UI, 워크플로우 편집기 및 시스템 개요 UI가 포함되었습니다. (FORMS-15256)
 
@@ -617,17 +623,17 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 * Forms 추가 기능을 사용하여 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트한 후 자격 증명 기반 인증을 사용하여 레거시 Adobe Analytics Cloud 서비스에 의존하는 구성이 작동하지 않습니다. 이 문제로 인해 분석 규칙이 올바르게 실행되지 못했습니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (FORMS-15428)
 
-* 사용자가 JEE 서버에서 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트하고 출력 서비스를 사용하여 PDF을 생성하는 경우 PDF이 접근성 문제로 렌더링됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922112)
-* 사용자가 JEE의 출력 서비스를 사용하여 태그가 지정된 PDF을 생성하면 &quot;부적절한 구조 경고&quot;가 표시됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922038)
+* 사용자가 JEE 서버에서 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트하고 출력 서비스를 사용하여 PDF를 생성하는 경우 PDF가 렌더링되어 접근성 문제가 발생합니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922112)
+* 사용자가 JEE의 출력 서비스를 사용하여 태그가 지정된 PDF를 생성하면 &quot;부적절한 구조 경고&quot;가 표시됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922038)
 * AEM Forms JEE에서 양식을 제출하면 반복되는 XML 요소의 인스턴스가 데이터에서 제거됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922017)
-* Linux® 환경의 사용자가 HTML에서 적응형 양식(JEE의)을 렌더링할 때 제대로 렌더링되지 않습니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921957)
+* Linux® 환경의 사용자가 HTML에서 JEE의 적응형 양식을 렌더링할 때 제대로 렌더링되지 않습니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921957)
 * 사용자가 AEM Forms JEE의 출력 서비스를 사용하여 XTG 파일을 PostScript 형식으로 변환할 때 오류가 발생하여 실패합니다. `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921720)
-* JEE 서버에서 AEM Forms 서비스 팩 18(6.5.18.0)으로 업그레이드한 후 사용자가 양식을 제출할 때 HTML5를 렌더링하지 못하거나 PDF forms 및 XMLFM이 충돌합니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921718)
+* JEE 서버에서 AEM Forms 서비스 팩 18(6.5.18.0)으로 업그레이드한 후 사용자가 양식을 제출할 때 HTML5 또는 PDF forms 및 XMLFM 충돌을 렌더링하지 못합니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921718)
 * 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 통화 기호(예: 달러 기호 $)가 모든 필드 값에 대해 일관되지 않게 표시됩니다. 999까지의 값에 대해 표시되지만 1000 이상의 값에 대해서는 누락됩니다. (FORMS-16557)
 * 대화형 통신에서 중첩된 레이아웃 조각의 XDP에 대한 수정 사항은 IC 편집기에 반영되지 않습니다. (FORMS-16575)
 * 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 일부 계산된 값이 올바르게 표시되지 않습니다. (FORMS-16603)
 * [인쇄 미리 보기]에서 편지를 보면 내용이 변경됩니다. 즉, 공백이 일부 사라지고 특정 문자가 &#39;x&#39;로 대체됩니다. (FORMS-15681)
-* 사용자가 WebLogic 14c 인스턴스를 구성할 때 JBoss®에서 실행 중인 JEE의 AEM Forms 서비스 팩 21(6.5.21.0)에 있는 PDFG 서비스가 SLF4J 라이브러리와 관련된 클래스 로더 충돌로 인해 실패합니다. 오류는 다음과 같이 표시됩니다(CQDOC-22178).
+* 사용자가 WebLogic 14c 인스턴스를 구성할 때 JBoss®에서 실행 중인 JEE의 AEM Forms 서비스 팩 21(6.5.21.0)에 있는 PDFG 서비스가 SLF4J 라이브러리와 관련된 클래스로더 충돌로 인해 실패합니다. 오류는 다음과 같이 표시됩니다(CQDOC-22178).
 
   ```java
   Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
@@ -641,8 +647,8 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 다음 텍스트 문서에는 이 [!DNL Experience Manager] 6.5 서비스 팩 릴리스에 포함된 OSGi 번들 및 컨텐츠 패키지 목록이 나와 있습니다.
 
-* [Experience Manager 6.5.22.0에 포함된 OSGi 번들 목록](/help/release-notes/assets/65220-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Experience Manager 6.5.22.0에 포함된 콘텐츠 패키지 목록](/help/release-notes/assets/65220-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager에 포함된 OSGi 번들 목록 6.5.22.0](/help/release-notes/assets/65220-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager에 포함된 콘텐츠 패키지 목록 6.5.22.0](/help/release-notes/assets/65220-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 제한된 웹 사이트{#restricted-sites}
 
