@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 0109abf51045224912d130ee29f67d7274cfc4f4
+source-git-commit: c878a4d21a7f6197261ac86b27fbdc76eefa589f
 workflow-type: tm+mt
 source-wordcount: '7471'
 ht-degree: 23%
@@ -471,7 +471,7 @@ ht-degree: 23%
       + [인스턴스에 대해 콘텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
       + [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
-      + [베리에이션 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md)
+      + [변형 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md)
       + [콘텐츠 조각 관련 콘텐츠](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md)
       + [콘텐츠 조각 - 삭제 고려 사항](/help/assets/content-fragments/content-fragments-delete.md)
@@ -1285,7 +1285,7 @@ ht-degree: 23%
       + [AEM 헤드리스 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
       + [AEM을 통한 Headless용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
       + [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항 알아보기](/help/journey-headless/architect/basics.md)
-      + [AEM의 콘텐츠 조각 모델 만들기에 대해 알아보기](/help/journey-headless/architect/model-structure.md)
+      + [AEM에서 콘텐츠 조각 모델 만들기에 대해 알아보기](/help/journey-headless/architect/model-structure.md)
    + AEM Headless 콘텐츠 작성 여정 {#author}
       + [AEM Headless 콘텐츠 작성 여정 - 개요](/help/journey-headless/author/overview.md)
       + [AEM을 통한 Headless 작성 - 소개](/help/journey-headless/author/introduction.md)
@@ -1439,7 +1439,7 @@ ht-degree: 23%
          + [React를 사용하여 시작하기](/help/sites-developing/spa-getting-started-react.md)
          + [SPA에 대한 React 구성 요소 구현](/help/sites-developing/spa-implementing-react-component.md)
          + [Angular를 사용하여 시작하기](/help/sites-developing/spa-getting-started-angular.md)
-         + [SPA 심층 분석](/help/sites-developing/spa-deep-dives.md)
+         + [SPA 심층 분석](/help/sites-developing/spa-deep-dives-gems.md)
          + [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md)
          + [SPA 편집기 개요](/help/sites-developing/spa-overview.md)
          + [SPA 블루프린트](/help/sites-developing/spa-blueprint.md)
