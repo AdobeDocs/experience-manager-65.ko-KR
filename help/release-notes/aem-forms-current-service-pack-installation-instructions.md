@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
+source-git-commit: 652878504d2225e50ea14885ec96bdd408f77ed0
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1722'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->해결된 문제의 전체 목록은 최신 [AEM 서비스 팩 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)를 참조하세요.
+>해결된 문제의 전체 목록은 최신 [AEM 서비스 팩 릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)를 참조하세요.
 
 ## Experience Manager Forms 6.5에 포함된 제품
 
@@ -36,7 +36,7 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 
 >[!NOTE]
 >
-> * Adobe은 여섯 번째 서비스 팩마다 전체 설치 관리자를 릴리스합니다. AEM 6.5 Forms 서비스 팩 18(6.5.18.0)은 최신 JEE 전체 설치 프로그램입니다. 전체 설치 관리자는 새로운 플랫폼을 지원하며 일반 서비스 팩 설치 관리자에는 새로운 기능, 버그 수정 및 일반 개선 사항이 포함되어 있습니다. 새로 설치하거나 JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 사용할 계획이라면, 2019년 4월 08일에 릴리스된 AEM 6.5 Forms 설치 프로그램이나 2022년 3월 03일에 릴리스된 AEM Forms 6.5.12.0 AEM 설치 프로그램 대신 2023년 8월 31일에 릴리스된 JEE의 Adobe 6.5.18.0 Forms 전체 설치 프로그램을 사용하는 것이 좋습니다. 전체 설치 관리자를 사용한 후 최신 서비스 팩을 설치합니다.
+> * Adobe은 여섯 번째 서비스 팩마다 전체 설치 관리자를 릴리스합니다. AEM 6.5 Forms 서비스 팩 18(6.5.18.0)은 최신 JEE 전체 설치 프로그램입니다. 전체 설치 관리자는 새로운 플랫폼을 지원하며 일반 서비스 팩 설치 관리자에는 새로운 기능, 버그 수정 및 일반 개선 사항이 포함되어 있습니다. 새로 설치하거나 JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 사용할 계획이라면, Adobe은 2019년 4월 08일에 릴리스된 AEM 6.5 Forms 설치 프로그램이나 2022년 3월 03일에 릴리스된 AEM 6.5.12.0 Forms 설치 프로그램 대신 2023년 8월 31일에 릴리스된 AEM 6.5.18.0 JEE의 Forms 전체 설치 프로그램을 사용하는 것이 좋습니다. 전체 설치 관리자를 사용한 후 최신 서비스 팩을 설치합니다.
 > * [AEM 6.5 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)에서 사용할 수 있는 적응형 Forms과 같은 AEM Forms 기능은 탐색 및 평가 목적으로만 사용됩니다. 프로덕션 용도로 사용하려면 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
 <!--
@@ -136,7 +136,8 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 >[!NOTE]
 >
 >* JEE 서비스 팩에 AEM Forms을 설치한 후 appserver를 다시 시작하기 전에 `crx-repository\install` 폴더에서 Forms 추가 기능 패키지를 제거해야 합니다. [소프트웨어 배포 포털](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에서 최신 Forms 추가 기능 패키지를 다운로드합니다.
->* SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+>* SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+>* JEE의 AEM Forms에 대한 스프링 프레임워크 취약점을 완화하기 위한 [핫픽스](/help/release-notes/aem-forms-hotfix.md)의 경우, 클러스터 환경에 배포할 때 로케이터가 JDK 17을 사용하여 시작되었는지 확인해야 합니다.
 
 +++
 
@@ -278,4 +279,4 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 * 설치가 완료되면 모니터 로그(error.log)를 확인합니다. 로그에 활동이 없을 때까지 몇 분 동안 기다립니다. AEM 인스턴스를 다시 시작합니다.
 
-* AEM Forms 6.5.15.0 이상 서비스 팩을 설치한 후 **서비스를 사용할 수 없음 오류**&#x200B;가 발생하는 경우 [서블릿 조각 및 번들을 설치](/help/forms/using/aem-service-pack-installation-solution.md)하여 오류를 해결하십시오.
+* AEM Forms 6.5.15.0 이상 서비스 팩을 설치한 후 **서비스를 사용할 수 없음 오류**&#x200B;가 발생하는 경우 [서블릿 조각 및 번들을 설치](/help/forms/using/aem-service-pack-installation-solution.md)하여 오류를 수정하십시오.
