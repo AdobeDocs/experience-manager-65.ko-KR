@@ -5,9 +5,9 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: ee990092f3174a8c29443eb451d7188c1e27fa7d
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,11 @@ JEE Workbench의 AEM Forms에서 사용할 수 있는 표준 AEM Forms on JEE �
 
 ## 스크립트 실행 서비스를 사용하여 XML 생성 {#create-xml-execute-script-service}
 
-스크립트 실행 서비스가 포함된 프로세스가 만들어지면 이 스크립트를 사용하여 XML을 만들 수 있습니다. 위의 `Execute Script` 서비스를 사용하여 프로세스에 스크립트 추가 섹션에 설명된 텍스트 상자에 아래 설명된 스크립트를 작성합니다.
+스크립트 실행 서비스가 포함된 프로세스가 만들어지면 이 스크립트를 사용하여 XML을 만들 수 있습니다. 위의 `Execute Script` 서비스 섹션을 사용하여 프로세스에 스크립트 추가 섹션에 설명된 텍스트 상자에 아래 설명된 스크립트를 작성합니다.
+
+>[!NOTE]
+>
+> JAVA 스크립트 코드가 10줄을 초과하는 경우 코드를 프로세스에서 직접 작성하지 않고 사용자 지정 DSC(문서 서비스 구성 요소)에 추가하는 것이 좋습니다. 사용자 지정 DSC는 워크플로를 간소화하여 유지 관리, 재사용 가능성 및 성능을 개선합니다. 워크플로우에서 이러한 구성 요소를 참조하면 실행 효율성이 향상되고 워크플로우 내에서 큰 코드 블록을 처리할 때 발생할 수 있는 지연을 방지할 수 있습니다.
 
 **스크립트 서비스 실행 기술 정보**
 
