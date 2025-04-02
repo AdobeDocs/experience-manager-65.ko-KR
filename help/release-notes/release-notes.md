@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 39ad2f3eedb35e98dc2239c0b81b3792a0ddc73f
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '6158'
+source-wordcount: '6161'
 ht-degree: 2%
 
 ---
@@ -595,20 +595,21 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 ### AEM Forms의 알려진 문제 {#known-issues-aem-forms-6522}
 
-* SLES 15 SP6 Linux® 서버에서 HTML에서 PDF으로 변환하지 못할 경우 다음 오류가 발생합니다. `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`. 문제를 해결하려면 다음 단계를 수행하십시오.
-   1. 컨테이너를 시작하고 다음 명령을 사용하여 `OPENSSL_CONF` 환경 변수를 설정합니다.
+* SUSE® Linux®(SLES 15 SP6 이상) 서버에서 HTML에서 PDF으로 변환하지 못할 경우 다음 오류가 발생합니다. `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`.
+문제를 해결하려면 다음 단계를 수행하십시오.
+   1. 서버를 시작하고 다음 명령을 사용하여 `OPENSSL_CONF` 환경 변수를 설정합니다.
       `export OPENSSL_CONF=/etc/ssl`
-또는 컨테이너를 시작하는 동안 환경 변수를 설정할 수 있습니다.
+또는 서버를 시작하는 동안 환경 변수를 설정할 수 있습니다.
       `-e OPENSSL_CONF=/etc/ssl`
    1. 서버를 다시 시작합니다.
 * AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `<AEM_Forms_Installation>/lib/caching/lib` 폴더(FORMS-14926) 아래에 Geode jar `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`의 중복 항목이 있는 경우 다음 단계를 수행하여 문제를 해결하십시오.
 
    1. 로케이터가 실행 중인 경우 중지합니다.
-   2. AEM 서버를 중지합니다.
-   3. `<AEM_Forms_Installation>/lib/caching/lib`(으)로 이동합니다.
-   4. `geode-*-1.15.1.2.jar`을(를) 제외한 모든 Geode 패치 파일을 제거합니다. `version 1.15.1.2`이(가) 있는 Geode jar만 있는지 확인합니다.
-   5. 관리자 모드에서 명령 프롬프트를 엽니다.
-   6. `geode-*-1.15.1.2.jar` 파일을 사용하여 Geode 패치를 설치합니다.
+   1. AEM 서버를 중지합니다.
+   1. `<AEM_Forms_Installation>/lib/caching/lib`(으)로 이동합니다.
+   1. `geode-*-1.15.1.2.jar`을(를) 제외한 모든 Geode 패치 파일을 제거합니다. `version 1.15.1.2`이(가) 있는 Geode jar만 있는지 확인합니다.
+   1. 관리자 모드에서 명령 프롬프트를 엽니다.
+   1. `geode-*-1.15.1.2.jar` 파일을 사용하여 Geode 패치를 설치합니다.
 
 * 사용자가 저장된 XML 데이터를 사용하여 초안 문자를 미리 보려고 하면 일부 특정 문자에 대해 `Loading` 상태로 중단됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (FORMS-14521)
 

@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 61f658fc4390610686a308d02a8d74505252434a
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '3632'
 ht-degree: 1%
 
 ---
@@ -452,9 +452,9 @@ Windows x86의 경우:
 
 ### AEM Forms PDF Generator 요구 사항 {#requirements-for-aem-forms-pdf-generator}
 
-* SUSE® Linux® 서버에서 PDF 전환을 테스트하려면 다음 구성이 있는지 확인하십시오.
+* SUSE® Linux®(SLES 15 SP6 이상) 서버에서 PDF 전환을 테스트하려면 다음 구성이 있는지 확인하십시오.
    * `/etc/profile` 파일로 이동하고 `OpenOffice_PATH` 환경 변수를 `/opt/openoffice4`(으)로 설정하여 전역적으로 구성합니다.
-   * Linux® 운영 체제에 32비트 버전의 OpenOffice 설치
+   * 32비트 버전의 OpenOffice를 설치합니다.
 
 ### PDF Generator 소프트웨어 지원 {#software-support-for-pdf-generator}
 
@@ -517,7 +517,7 @@ Windows x86의 경우:
 >
 >또한,
 >
->* 변환을 수행하려면 PDF Generator에 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 또는 Acrobat 2017 버전 17.011.30078이 필요합니다.
+>* 변환을 수행하려면 PDF Generator에 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)이(가) 필요합니다.
 >* PDF Generator은 변환에 필요한 Microsoft® Office Professional Plus 및 기타 소프트웨어의 32비트 버전만 지원합니다.
 >* Microsoft® Office Professional Plus 설치에서는 소매 또는 MAK/KMS/AD 기반 볼륨 라이선스를 사용할 수 있습니다.
 >* 볼륨 라이선스가 있는 설치가 지정된 기간 내에 KMS 호스트를 찾을 수 없는 것과 같은 이유로 Microsoft® Office 설치가 비활성화되거나 사용이 허가되지 않는 경우, 설치 라이선스를 다시 취득하고 다시 활성화하기 전까지 전환이 실패할 수 있습니다.
