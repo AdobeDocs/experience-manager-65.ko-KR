@@ -9,9 +9,9 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
+source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2154'
 ht-degree: 8%
 
 ---
@@ -35,18 +35,18 @@ AEM은 다음과 같은 사용자에게 이메일 알림을 보냅니다.
 
 >[!NOTE]
 >
->AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 보려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 참조하십시오.
+>AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 확인하려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을(를) 참조하십시오.
 
 ## 메일 서비스 구성 {#configuring-the-mail-service}
 
-AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200B;를 올바르게 구성해야 합니다. 웹 콘솔에서 구성을 볼 수 있습니다. AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 보려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 참조하십시오.
+AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200B;를 올바르게 구성해야 합니다. 웹 콘솔에서 구성을 볼 수 있습니다. AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 확인하려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을(를) 참조하십시오.
 
 다음과 같은 제한이 적용됩니다.
 
 * **SMTP 서버 포트**&#x200B;는 25 이상이어야 합니다.
 
 * **SMTP 서버 호스트 이름**&#x200B;은 비워 둘 수 없습니다.
-* **&quot;보낸 사람&quot; 주소**&#x200B;은(는) 비워 둘 수 없습니다.
+* **&quot;보낸 사람&quot; 주소**&#x200B;은(는) 비워 둘 수 없으며 기본값 &quot;<noreply@day.com>&quot;을(를) 변경해야 합니다.
 
 **일 CQ 메일 서비스**&#x200B;와 관련된 문제를 디버깅하기 위해 서비스 로그를 확인할 수 있습니다.
 
@@ -60,7 +60,7 @@ AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200
 
 페이지 또는 포럼 이벤트 알림을 구독하면 기본적으로 보낸 사람 이메일 주소가 `no-reply@acme.com`(으)로 설정됩니다. 웹 콘솔에서 **알림 전자 메일 채널** 서비스를 구성하여 이 값을 변경할 수 있습니다.
 
-보낸 사람 전자 메일 주소를 구성하려면 `sling:OsgiConfig` 노드를 저장소에 추가하십시오. 다음 절차에 따라 CRXDE Lite을 사용하여 노드를 직접 추가합니다.
+보낸 사람 전자 메일 주소를 구성하려면 `sling:OsgiConfig` 노드를 저장소에 추가하십시오. CRXDE Lite을 사용하여 노드를 직접 추가하려면 다음 절차를 따르십시오.
 
 1. CRXDE Lite에서 응용 프로그램 폴더 아래에 `config` 폴더를 추가합니다.
 1. 구성 폴더에 라는 노드를 추가합니다.
@@ -84,7 +84,7 @@ AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200
 
 ## 워크플로우 이메일 알림 서비스 구성 {#configuring-the-workflow-email-notification-service}
 
-워크플로우 이메일 알림을 받을 때 보낸 사람 이메일 주소와 호스트 URL 접두어가 모두 기본값으로 설정됩니다. 웹 콘솔에서 **일 CQ 워크플로우 전자 메일 알림 서비스**&#x200B;를 구성하여 이러한 값을 변경할 수 있습니다. 이 경우 저장소에서 변경 사항을 유지하는 것이 좋습니다.
+워크플로우 이메일 알림을 받을 때 보낸 사람 이메일 주소와 호스트 URL 접두어가 모두 기본값으로 설정됩니다. 웹 콘솔에서 **일 CQ 워크플로우 전자 메일 알림 서비스**&#x200B;를 구성하여 이러한 값을 변경할 수 있습니다. 이렇게 하면 저장소에서 변경 사항을 유지해야 합니다.
 
 기본 구성은 웹 콘솔에서 다음과 같이 표시됩니다.
 
@@ -254,7 +254,7 @@ subject=<text_1>
 
 >[!NOTE]
 >
->전자 메일 템플릿에 대한 파일 이름으로 사용되는 `<language-code>`은(는) AEM에서 인식하는 두 글자 소문자 언어 코드여야 합니다. 언어 코드의 경우 AEM은 ISO-639-1을 사용합니다.
+>전자 메일 템플릿의 파일 이름으로 사용되는 `<language-code>`은(는) AEM에서 인식하는 두 글자 소문자 언어 코드여야 합니다. 언어 코드의 경우 AEM은 ISO-639-1을 사용합니다.
 
 ## AEM Assets 이메일 알림 구성 {#assetsconfig}
 
@@ -266,13 +266,13 @@ AEM Assets의 컬렉션이 공유되거나 공유되지 않으면 사용자는 A
 
 ## OAuth 설정 {#setting-up-oauth}
 
-AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통합 Mailer 서비스에 대한 OAuth2 지원을 제공합니다.
+AEM은 조직의 이메일 요구 사항 보호 준수를 위해 통합 Mailer 서비스에 대한 OAuth2 지원을 제공합니다.
 
 아래 설명된 대로 여러 이메일 공급자에 대한 OAuth를 구성할 수 있습니다.
 
 >[!NOTE]
 >
->이 절차는 Publish 인스턴스의 예입니다. 작성자 인스턴스에서 이메일 알림을 활성화하려면 작성자에 대해 동일한 단계를 수행해야 합니다.
+>이 절차는 게시 인스턴스의 예제입니다. 작성자 인스턴스에서 이메일 알림을 활성화하려면 작성자에 대해 동일한 단계를 수행해야 합니다.
 
 ### Gmail {#gmail}
 
@@ -340,7 +340,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 
 마지막으로 다음 방법으로 구성을 확인합니다.
 
-1. Publish 인스턴스 주소로 이동하고 관리자로 로그인합니다.
+1. Publish 인스턴스의 주소로 이동하고 관리자로 로그인합니다.
 1. 브라우저에서 새 탭을 열고 `http://serveraddress:serverport/services/mailer/oauth2/authorize`(으)로 이동합니다. SMTP 공급자의 페이지로 리디렉션됩니다(이 경우 Gmail).
 1. 로그인 및 필요한 권한 부여에 대한 동의
 1. 동의를 하면 토큰이 저장소에 저장됩니다. 게시 인스턴스의 URL `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`에 직접 액세스하여 `accessToken`에서 액세스할 수 있습니다.
@@ -382,7 +382,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 
 **AEM 측 구성**
 
-다음으로 OAuth2 설정을 AEM과 통합합니다.
+그런 다음 OAuth2 설정을 AEM과 통합합니다.
 
 >[!WARNING]
 >
@@ -429,7 +429,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 
 마지막으로 다음 방법으로 구성을 확인합니다.
 
-1. Publish 인스턴스 주소로 이동하고 관리자로 로그인합니다.
+1. Publish 인스턴스의 주소로 이동하고 관리자로 로그인합니다.
 1. 브라우저에서 새 탭을 열고 `http://serveraddress:serverport/services/mailer/oauth2/authorize`(으)로 이동합니다. 이렇게 하면 SMTP 공급자의 페이지로 리디렉션됩니다(이 경우 Outlook).
 1. 로그인 및 필요한 권한 부여에 대한 동의
 1. 동의를 하면 토큰이 저장소에 저장됩니다. 게시 인스턴스의 URL `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`에 직접 액세스하여 `accessToken`에서 액세스할 수 있습니다.
