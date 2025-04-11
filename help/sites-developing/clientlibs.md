@@ -10,7 +10,7 @@ exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 1%
@@ -37,7 +37,7 @@ ht-degree: 1%
 ...
 ```
 
-이 접근 방식은 AEM에서 작동하지만 페이지 및 해당 구성 요소가 복잡해질 때 문제가 발생할 수 있습니다. 이러한 경우 동일한 JS 라이브러리의 여러 복사본이 최종 HTML 출력에 포함될 수 있습니다. 이를 방지하고 클라이언트측 라이브러리의 논리적 구성을 허용하려면 AEM은 **클라이언트측 라이브러리 폴더**&#x200B;를 사용합니다.
+이 접근 방식은 AEM에서 작동하지만 페이지와 그 구성 구성 요소가 복잡해질 때 문제를 초래할 수 있습니다. 이러한 경우 동일한 JS 라이브러리의 여러 복사본이 최종 HTML 출력에 포함될 수 있습니다. 이를 방지하고 클라이언트 측 라이브러리의 논리적 구성을 허용하려면 AEM에서 **클라이언트 측 라이브러리 폴더**&#x200B;를 사용합니다.
 
 클라이언트측 라이브러리 폴더는 `cq:ClientLibraryFolder` 유형의 저장소 노드입니다. [CND 표기법](https://jackrabbit.apache.org/node-type-notation.html)의 정의는 다음과 같습니다.
 
@@ -49,7 +49,7 @@ ht-degree: 1%
   - channels (string) multiple
 ```
 
-기본적으로 `cq:ClientLibraryFolder` 노드는 리포지토리의 `/apps`, `/libs` 및 `/etc` 하위 트리 내의 어디에나 배치할 수 있습니다(이러한 기본값과 기타 설정은 [시스템 콘솔](https://localhost:4502/system/console/configMgr)의 **Adobe Granite HTML 라이브러리 관리자** 패널을 통해 제어할 수 있음).
+기본적으로 `cq:ClientLibraryFolder` 노드는 리포지토리의 `/apps`, `/libs` 및 `/etc` 하위 트리 내 어디에나 배치할 수 있습니다(이러한 기본값과 기타 설정은 [시스템 콘솔](https://localhost:4502/system/console/configMgr)의 **Adobe Granite HTML 라이브러리 관리자** 패널을 통해 제어할 수 있음).
 
 각 `cq:ClientLibraryFolder`은(는) 몇 개의 지원 파일과 함께 JS 및/또는 CSS 파일 세트로 채워집니다(아래 참조). `cq:ClientLibraryFolder`의 속성은 다음과 같이 구성됩니다.
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 * `dependencies`: 이 라이브러리 폴더가 종속된 다른 클라이언트 라이브러리 범주의 목록입니다. 예를 들어 두 개의 `cq:ClientLibraryFolder` 노드 `F` 및 `G`이(가) 지정된 경우, `F`의 파일이 제대로 작동하려면 `G`의 다른 파일이 필요한 경우 `G`의 `categories` 중 하나 이상이 `F`의 `dependencies`에 속해야 합니다.
 
-* `embed`: 다른 라이브러리의 코드를 포함하는 데 사용됩니다. 노드 F가 노드 G 및 H를 임베드하면 결과 HTML은 노드 G 및 H로부터의 콘텐츠의 집중이 될 것이다.
+* `embed`: 다른 라이브러리의 코드를 포함하는 데 사용됩니다. 노드 F가 노드 G 및 H를 임베드하면 결과 HTML이 노드 G 및 H의 콘텐츠 집중이 됩니다.
 * `allowProxy`: 클라이언트 라이브러리가 `/apps` 아래에 있는 경우 이 속성을 사용하면 프록시 서블릿을 통해 액세스할 수 있습니다. 아래 [클라이언트 라이브러리 폴더 찾기 및 프록시 클라이언트 라이브러리 서블릿 사용](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)을 참조하십시오.
 
 ## 클라이언트측 라이브러리 참조 {#referencing-client-side-libraries}
@@ -78,7 +78,7 @@ HTL에서 클라이언트 라이브러리는 [`data-sly-use`](https://helpx.adob
 
 ### JSP 사용 {#using-jsp}
 
-`ui:includeClientLib` 태그를 JSP 코드에 추가하여 생성된 HTML 페이지의 클라이언트 라이브러리에 대한 링크를 추가합니다. 라이브러리를 참조하려면 `ui:includeClientLib` 노드의 `categories` 속성 값을 사용합니다.
+JSP 코드에 `ui:includeClientLib` 태그를 추가하여 생성된 HTML 페이지의 클라이언트 라이브러리에 대한 링크를 추가합니다. 라이브러리를 참조하려면 `ui:includeClientLib` 노드의 `categories` 속성 값을 사용합니다.
 
 ```
 <%@taglib prefix="ui" uri="https://www.adobe.com/taglibs/granite/ui/1.0" %>
@@ -139,13 +139,13 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 특성을 포함
 >
 >콘텐츠 및 구성에서 코드를 더 잘 분리하려면 `/apps`에서 클라이언트 라이브러리를 찾아 `allowProxy` 속성을 사용하여 `/etc.clientlibs`을(를) 통해 노출하는 것이 좋습니다.
 
-`/apps` 아래의 클라이언트 라이브러리에 액세스하려면 프록시 서블릿을 사용하십시오. ACL은 여전히 클라이언트 라이브러리 폴더에 적용되지만 `allowProxy` 속성이 `true`(으)로 설정된 경우 서블릿에서 `/etc.clientlibs/`을(를) 통해 콘텐츠를 읽을 수 있습니다.
+`/apps` 아래의 클라이언트 라이브러리에 액세스할 수 있도록 하려면 프록시 서블릿을 사용합니다. ACL은 여전히 클라이언트 라이브러리 폴더에 적용되지만 `allowProxy` 속성이 `true`(으)로 설정된 경우 서블릿에서 `/etc.clientlibs/`을(를) 통해 콘텐츠를 읽을 수 있습니다.
 
 정적 리소스는 클라이언트 라이브러리 폴더 아래의 리소스 아래에 있는 경우 프록시를 통해서만 액세스할 수 있습니다.
 
 예:
 
-* `/apps/myproject/clientlibs/foo`에 clientlib이 있습니다.
+* `/apps/myprojects/clientlibs/foo`에 clientlib이 있습니다.
 * `/apps/myprojects/clientlibs/foo/resources/icon.png`에 정적 이미지가 있습니다.
 
 그런 다음 `foo`의 `allowProxy` 속성을 true로 설정합니다.
@@ -155,15 +155,15 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 특성을 포함
 
 >[!CAUTION]
 >
->프록시화된 클라이언트 라이브러리를 사용할 때 AEM Dispatcher 구성에서는 확장 clientlib이 있는 URI가 허용되도록 업데이트해야 할 수 있습니다.
+>프록시가 활성화된 클라이언트 라이브러리를 사용할 때 확장 clientlib을 사용하는 URI가 허용되도록 AEM Dispatcher 구성을 업데이트해야 할 수 있습니다.
 
 >[!CAUTION]
 >
->Adobe은 `/apps`에서 클라이언트 라이브러리를 찾아 프록시 서블릿을 사용하여 사용할 수 있도록 할 것을 권장합니다. 그러나 모범 사례에서는 공용 사이트에 `/apps` 또는 `/libs` 경로를 통해 직접 제공되는 항목이 포함되어 있지 않아야 합니다.
+>Adobe에서는 `/apps`에서 클라이언트 라이브러리를 찾아 프록시 서블릿을 사용하여 사용할 수 있도록 하는 것이 좋습니다. 그러나 모범 사례에서는 공용 사이트에 `/apps` 또는 `/libs` 경로를 통해 직접 제공되는 항목이 포함되어 있지 않아야 합니다.
 
 ### 클라이언트 라이브러리 폴더 만들기 {#create-a-client-library-folder}
 
-1. 웹 브라우저에서 CRXDE Lite을 엽니다([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. 웹 브라우저([https://localhost:4502/crx/de](https://localhost:4502/crx/de))에서 CRXDE Lite을 엽니다.
 1. 클라이언트 라이브러리 폴더를 찾을 폴더를 선택하고 **만들기 > 노드 만들기**&#x200B;를 클릭합니다.
 1. 라이브러리 파일의 이름을 입력하고 [유형] 목록에서 `cq:ClientLibraryFolder`을(를) 선택합니다. **확인**&#x200B;을 클릭한 다음 **모두 저장**&#x200B;을 클릭합니다.
 1. 라이브러리가 속한 범주를 지정하려면 `cq:ClientLibraryFolder` 노드를 선택하고 다음 속성을 추가한 다음 **모두 저장**&#x200B;을 클릭합니다.
@@ -233,7 +233,7 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 특성을 포함
 
 #### 포함을 사용하여 요청 최소화 {#using-embedding-to-minimize-requests}
 
-경우에 따라 게시 인스턴스가 일반 페이지에 대해 생성한 최종 HTML에 상대적으로 많은 `<script>`개의 요소가 포함되어 있을 수 있습니다. 특히 사이트에서 분석 또는 타깃팅에 클라이언트 컨텍스트 정보를 사용하는 경우에 해당됩니다. 예를 들어 최적화되지 않은 프로젝트에서는 페이지의 HTML에서 다음 일련의 `<script>` 요소를 찾을 수 있습니다.
+경우에 따라 게시 인스턴스가 일반 페이지에 대해 생성한 최종 HTML에 비교적 많은 수의 `<script>` 요소가 포함되어 있을 수 있습니다. 특히 사이트에서 분석 또는 타깃팅에 클라이언트 컨텍스트 정보를 사용하는 경우에 유용합니다. 예를 들어 최적화되지 않은 프로젝트에서는 페이지의 HTML에서 다음 일련의 `<script>` 요소를 찾을 수 있습니다.
 
 ```xml
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery.js"></script>
@@ -322,7 +322,7 @@ body {
 
 ## 전처리기 사용 {#using-preprocessors}
 
-AEM에서는 플러그 가능한 전처리기를 허용하며 CSS 및 JavaScript용 [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) 및 AEM의 기본 전처리기로 설정된 JavaScript용 [Google Closure Compiler(GCC)](https://developers.google.com/closure/compiler/)을(를) 지원합니다.
+AEM에서는 플러그 가능한 전처리가 가능하며 CSS 및 JavaScript용 [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) 및 YUI가 AEM의 기본 전처리기로 설정된 JavaScript용 [Google Closure Compiler(GCC)](https://developers.google.com/closure/compiler/)을(를) 지원합니다.
 
 플러그 가능한 프리프로세서는 다음을 포함하여 유연하게 사용할 수 있습니다.
 
@@ -333,7 +333,7 @@ AEM에서는 플러그 가능한 전처리기를 허용하며 CSS 및 JavaScript
 
 >[!NOTE]
 >
->기본적으로 AEM은 YUI Compressor를 사용합니다. 알려진 문제 목록은 [YUI 압축기 GitHub 설명서](https://github.com/yui/yuicompressor/issues)를 참조하십시오. 특정 클라이언트 라이브러리에 대해 GCC 압축기로 전환하면 YUI 사용 시 관찰되는 몇 가지 문제를 해결할 수 있습니다.
+>기본적으로 AEM에서는 YUI Compressor를 사용합니다. 알려진 문제 목록은 [YUI 압축기 GitHub 설명서](https://github.com/yui/yuicompressor/issues)를 참조하십시오. 특정 클라이언트 라이브러리에 대해 GCC 압축기로 전환하면 YUI 사용 시 관찰되는 몇 가지 문제를 해결할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -351,7 +351,7 @@ clientlib 노드의 전처리기 구성이 OSGI 구성보다 우선합니다.
 
 ### 형식 및 예 {#format-and-examples}
 
-#### 형식 {#format}
+#### 포맷 {#format}
 
 ```xml
 config:= mode ":" processorName options*;
@@ -400,7 +400,7 @@ AEM에서 YUI가 기본 축소기로 설정됩니다. GCC로 변경하려면 다
 
    옵션을 세미콜론으로 구분하면 전달할 수 있습니다(예: `min:gcc;obfuscate=true`).
 
-1. 변경 내용을 저장하려면 **저장**&#x200B;을 클릭하세요.
+1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 ## 디버깅 도구 {#debugging-tools}
 
@@ -422,7 +422,7 @@ AEM은 클라이언트 라이브러리 폴더를 디버깅하고 테스트하기
 @import url("/apps/myapp/clientlib/styles/main.css");
 ```
 
-1. 웹 브라우저의 주소 상자에서 HTML URL에 다음 텍스트를 추가합니다.
+1. 웹 브라우저의 주소 상자에서 HTML의 URL에 다음 텍스트를 추가합니다.
 
    `?debugClientLibs=true`
 1. 페이지가 로드되면 페이지 소스를 봅니다.
