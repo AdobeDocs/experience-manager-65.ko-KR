@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: c0756980d0dc8ada7f6c352f68c4f41ecf15caa4
+source-git-commit: 47dc4ffa98d680970b72d488067c834123ea722b
 workflow-type: tm+mt
-source-wordcount: '7480'
+source-wordcount: '7487'
 ht-degree: 22%
 
 ---
@@ -1212,6 +1212,7 @@ ht-degree: 22%
       + [AEM SDK을 올바르게 다시 시작하는 방법](/help/forms/using/restart-aem-sdk.md)
       + [PaperCapture 서비스가 PDF에서 OCR을 수행하지 못함](/help/forms/using/papercapture-service-resolution.md)
       + [JEE에서 AEM Forms의 스프링 프레임워크 취약점 완화](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
+      + [Experience Manager Forms의 Log4j2 취약성 완화](/help/forms/using/aem-forms-vulnerability-cve.md)
    + 레거시 설명서 {#legacy-documentation}
       + [JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드](/help/forms/developing/building-xml.md)
       + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](/help/forms/developing/compressing-decompressing-custom-dsc.md)
