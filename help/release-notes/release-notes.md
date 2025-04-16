@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
+source-git-commit: 461ec6a48bc41d46338c2c0162869525e49de97f
 workflow-type: tm+mt
-source-wordcount: '6161'
+source-wordcount: '6138'
 ht-degree: 2%
 
 ---
@@ -210,9 +210,9 @@ AEM 6.5.18 및 6.5.19에서 상위 페이지를 비활성화하면 각 하위 �
 * API를 사용하여 자산을 업로드하면 `unclosed resource resolver` 오류 메시지가 표시됩니다. (ASSETS-41049)
 * Adobe Experience Manager, 서비스 팩 21로 업그레이드한 후 `AssetReferenceResolverImpl` 참조 쿼리에 문제가 있습니다. (ASSETS-40384)
 * AEM 버전 6.5.19에서는 검색 패널 결과에서 한 가지 옵션을 제거하는 동안 사용 가능한 다른 모든 확인란도 선택 취소합니다. (ASSETS-37335)
-* 일괄 메타데이터 내보내기 작업을 수행하는 동안 정크 값이 Excel 출력에 표시됩니다. (ASSETS-37260)
-* AEM 버전 6.5.19에서 SVG 파일을 UTF-8 포맷으로 업로드할 때 출력이 흐려집니다. (ASSETS-36616)
-* 연결된 Assets 구성 내에 `Fetch original rendition for Dynamic Media Connected Assets` 옵션이 없습니다. (ASSETS-41726)
+* 정크 값은 벌크 메타데이터 내보내기 작업을 수행하는 동안 Excel 출력에 표시됩니다. (자산-37260)
+* AEM 버전 6.5.19에서 SVG 파일을 UTF-8 포맷 형식으로 업로드하면 출력이 흐리게 표시됩니다. (자산-36616)
+* `Fetch original rendition for Dynamic Media Connected Assets` 연결된 Assets 구성 내에 옵션이 없습니다. (자산-41726)
 * 필수 필드에 대한 값을 정의하지 않아도 자산 속성이 저장됩니다. (ASSETS-37914)
 * 에셋의 처리 상태가 실패 또는 메타데이터 실패인 경우 캡션 및 오디오 트랙 UI가 제대로 작동하지 않습니다. (ASSETS-37281)
 * 에셋 메타데이터를 저장하고 편집하려고 하면 언어 이름이 표시되지 않습니다. (ASSETS-37281)
@@ -267,8 +267,8 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 #### XMLFM {#forms-xmlfm-sp22}
 
 * AEM Forms 서비스 팩 21(6.5.21.0)에서 사용자가 XMLFM을 사용하여 PDF에 비표준 태그를 추가하면 문서가 PDF 사양 요구 사항을 준수하지 못합니다. (LC-3922484)
-* 사용자가 AEM Forms 서비스 팩 20(6.5.20.0)의 출력 서비스를 사용하여 PDF을 생성하면 CORBA.COMM_FAILURE로 실패하고 오류 `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"`이(가) 표시됩니다. 접근성 역할 &quot;참조&quot;가 XDP 템플릿의 하위 양식에서 제외되면 서비스가 정상적으로 전달됩니다. 그러나 508 규정 준수를 위해서는 이 역할이 필요합니다. (LC-3922402)
-* 사용자가 XFA 양식을 AcroForm PDF으로 변환할 때 실패합니다. (LC-3922363)
+* 사용자 가 AEM Forms 서비스 팩 20(6.5.20.0)에서 Output 서비스를 사용하여 PDF를 생성하면 CORBA와 함께 실패합니다. COMM_FAILURE하고 오류를 `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"`표시합니다. 접근성 역할 &quot;참조&quot;가 XDP 템플릿의 하위 양식에서 제외되면 서비스가 성공적으로 전달됩니다. 그러나 이 역할 508 규정 준수에 필요합니다. (LC-3922402)
+* 사용자 XFA 양식을 AcroForm PDF로 변환하면 실패합니다. (LC-3922363호)
 * AEM Forms 서비스 팩 19(6.5.19.0)에서 사용자가 명명되지 않은 하위 폼으로 XDP를 만들 때 명명되지 않은 하위 폼에 대해 FS_DATA_SOM이 비어 있는 것으로 표시됩니다. (LC-3922034)
 
 #### Forms Designer {#forms-designer-sp22}
@@ -362,8 +362,8 @@ AEM 6.5.19에서 6.5.20으로 업그레이드한 후 `UgcSearch` 호출 후 `Con
 
 * AEM의 오래된 JSAFE 암호화 라이브러리(버전 6.0.0)에서 문제가 발생했습니다. JSAFE 버전 6.2.5의 패치 번들은 AEM 6.5.22에 포함되어 있습니다. (NPR-42006)
 * XSS 확인 중에 허용된 프로토콜의 유효성을 검사할 때 처리기는 &quot;http&quot; 및 &quot;https&quot;와 비교합니다. 그러나 URL 개체의 `protocol` 속성은 `http:` 및 `https:`과 같은 후행 콜론으로 이러한 값을 반환했습니다. 이 불일치로 인해 유효성 검사 문제가 발생했습니다. 정확한 구문 분석을 위해 콜론을 설명하거나 비교 논리를 적절하게 조정하는 데 프로토콜 검사가 필요합니다.  (NPR-42119)
-* IBM® WebSphere® Liberty Profile 및 Semeru Java 8.0에 AEM 6.5.21(이전 버전은 AEM 6.5.19임)을 설치한 후 페이지를 열 수 없었습니다. 오류 로그에 다른 번들이 필요한 서블릿 버전과 관련된 문제가 표시되었습니다. 이 문제를 해결하려면 `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`에 대한 종속성이 문제와 관련되어 있으므로 되돌려야 합니다. (NPR-42116)
-* 여러 브라우저에서 쿠키에 대한 사이트 간 액세스를 허용하는 데 사용되는 **SameSite=None** 쿠키에 대한 지원을 단계적으로 중단하고 있습니다. 또는 **분할된 쿠키**&#x200B;를 도입하고 있습니다. 이러한 쿠키는 쿠키가 사용되는 컨텍스트에 따라 스토리지를 격리하므로 사이트 간 추적을 방지하고 포함된 타사 컨텐츠와 같은 특정 파티션 내에서 쿠키가 작동할 수 있도록 하여 개인정보 및 보안을 향상시킵니다. (GRANITE-51953)
+* IBM® WebSphere® Liberty Profile 및 Semeru Java 8.0에 AEM 6.5.21(이전 버전은 AEM 6.5.19)을 설치한 후 페이지를 열 수 없었습니다. 오류 로그는 다른 번들에 필요한 서블릿 버전과 관련된 문제를 표시했습니다. 이 문제를 해결하려면 문제 와 관련이 있기 때문에 종속성 `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar` 을 되돌려야 했습니다. (NPR-42116)
+* 여러 브라우저는 쿠키에 대한 사이트 간 액세스를 허용하는 데 사용되는 SameSite=None **쿠키에 대한**&#x200B;지원을 단계적으로 중단하고 있습니다. 대안 **으로 분할된 쿠키** 가 도입되고 있습니다. 이러한 쿠키는 쿠키가 사용되는 컨텍스트에 따라 스토리지를 격리하므로 사이트 간 추적을 방지하고 포함된 타사 컨텐츠와 같은 특정 파티션 내에서 쿠키가 작동할 수 있도록 하여 개인정보 및 보안을 향상시킵니다. (GRANITE-51953)
 
 
 <!-- #### Sling{#foundation-sling-6522}
@@ -489,7 +489,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 ## 이제 사용되지 않는 기능과 제거된 기능{#removed-deprecated-features}
 
-[사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md/)을 참조하세요.
+더 이상 사용되지 않는 기능 및 제거된 기능을](/help/release-notes/deprecated-removed-features.md/) 참조하십시오[.
 
 ## 알려진 문제{#known-issues}
 
@@ -511,8 +511,8 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
        `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html` -->
 
 
-* **Oak 관련**
-서비스 팩 13 이상부터 지속성 캐시에 영향을 주는 다음 오류 로그가 나타나기 시작했습니다.
+* **Oak** 관련
+서비스 팩 13 이상부터 지속성 캐시에 영향을 미치는 다음 오류 로그가 나타나기 시작했습니다.
 
   ```shell
   org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
@@ -595,13 +595,12 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 ### AEM Forms의 알려진 문제 {#known-issues-aem-forms-6522}
 
-* SUSE® Linux®(SLES 15 SP6 이상) 서버에서 HTML에서 PDF으로 변환하지 못할 경우 다음 오류가 발생합니다. `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`.
-문제를 해결하려면 다음 단계를 수행하십시오.
-   1. 서버를 시작하고 다음 명령을 사용하여 `OPENSSL_CONF` 환경 변수를 설정합니다.
-      `export OPENSSL_CONF=/etc/ssl`
-또는 서버를 시작하는 동안 환경 변수를 설정할 수 있습니다.
-      `-e OPENSSL_CONF=/etc/ssl`
-   1. 서버를 다시 시작합니다.
+* SUSE® Linux®(SLES 15 SP6 이상) 서버에서 HTML에서 PDF으로의 변환이 실패하고 다음 오류가 발생하는 경우:
+
+  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
+그런 다음 다음 다음 환경 변수를 설정하고 서버를 다시 시작합니다.
+  `OPENSSL_CONF=/etc/ssl`
+
 * AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `<AEM_Forms_Installation>/lib/caching/lib` 폴더(FORMS-14926) 아래에 Geode jar `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`의 중복 항목이 있는 경우 다음 단계를 수행하여 문제를 해결하십시오.
 
    1. 로케이터가 실행 중인 경우 중지합니다.
@@ -626,8 +625,8 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 * 사용자가 JEE 서버에서 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트하고 출력 서비스를 사용하여 PDF를 생성하는 경우 PDF가 렌더링되어 접근성 문제가 발생합니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922112)
 * 사용자가 JEE의 출력 서비스를 사용하여 태그가 지정된 PDF를 생성하면 &quot;부적절한 구조 경고&quot;가 표시됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922038)
-* AEM Forms JEE에서 양식을 제출하면 반복되는 XML 요소의 인스턴스가 데이터에서 제거됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922017)
-* Linux® 환경의 사용자가 HTML에서 JEE의 적응형 양식을 렌더링할 때 제대로 렌더링되지 않습니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921957)
+* AEM Forms JEE에서 양식을 제출하면 반복되는 XML 요소의 인스턴스가 데이터에서 제거됩니다. 핫픽스를 다운로드 및 설치하려면 Adobe Experience Manager Forms 핫픽](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)스 문서를 참조하십시오[. (LC-3922017)
+* Linux® 환경의 사용자 가 HTML에서 적응형 양식(JEE에서)을 렌더링하면 제대로 렌더링되지 않습니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921957)
 * 사용자가 AEM Forms JEE의 출력 서비스를 사용하여 XTG 파일을 PostScript 형식으로 변환할 때 오류가 발생하여 실패합니다. `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921720)
 * JEE 서버에서 AEM Forms 서비스 팩 18(6.5.18.0)으로 업그레이드한 후 사용자가 양식을 제출할 때 HTML5 또는 PDF forms 및 XMLFM 충돌을 렌더링하지 못합니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921718)
 * 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 통화 기호(예: 달러 기호 $)가 모든 필드 값에 대해 일관되지 않게 표시됩니다. 999까지의 값에 대해 표시되지만 1000 이상의 값에 대해서는 누락됩니다. (FORMS-16557)
