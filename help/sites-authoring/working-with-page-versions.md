@@ -5,10 +5,10 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 65%
+source-wordcount: '1567'
+ht-degree: 63%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 65%
    * 을 눌러 페이지에 적용한 변경 내용을 실행 취소할 수 있습니다.
 * 페이지의 현재 버전을 이전 버전과 비교:
    * 텍스트 및 이미지의 차이점을 강조 표시합니다.
+
+>[!NOTE]
+>
+>AEM 저장소에서는 콘텐츠만 버전이 관리됩니다. 코드, CSS 및 JavaScript과 같은 동적 리소스의 버전이 관리되지 않습니다.
+>
+>* 버전을 볼 때는 저장소의 현재 코드, CSS 및 JavaScript으로 콘텐츠를 봅니다.
+>* 버전을 복원하면 콘텐츠만 복원되고 저장소의 현재 코드, CSS 및 JavaScript이 적용됩니다.
 
 ## 새 버전 만들기 {#creating-a-new-version}
 
@@ -196,7 +203,7 @@ ht-degree: 65%
 
 >[!TIP]
 >
->AEM 6.5.10.0 이상을 실행할 때 [타임워프를 Launches와 함께 사용하여 향후 상태를 미리 볼 수도 있습니다](/help/sites-authoring/launches.md).
+>AEM 6.5.10.0 이상을 실행할 때 [타임워프를 Launches와 함께 사용하여 향후 상태를 미리 볼 수 있습니다](/help/sites-authoring/launches.md).
 
 콘텐츠 작성은 지속적인 공동 작업 프로세스입니다. 타임워프의 목적은 작성자가 시간이 지남에 따라 게시된 웹 사이트를 추적하여 콘텐츠가 어떻게 변경되었는지 이해할 수 있도록 하는 것입니다. 이 기능은 페이지 버전을 사용하여 게시 환경의 상태를 파악합니다.
 
