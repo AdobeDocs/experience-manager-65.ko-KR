@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 8009e4cf7da17afbcfae7f90009157d32ee261fa
+source-git-commit: 1b551a4f8c05c14e40db1e70147542326cb82b80
 workflow-type: tm+mt
-source-wordcount: '7494'
+source-wordcount: '7520'
 ht-degree: 22%
 
 ---
@@ -1213,6 +1213,9 @@ ht-degree: 22%
       + [PaperCapture 서비스가 PDF에서 OCR을 수행하지 못함](/help/forms/using/papercapture-service-resolution.md)
       + [JEE에서 AEM Forms의 스프링 프레임워크 취약점 완화](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Experience Manager Forms의 Log4j2 취약성 완화](/help/forms/using/aem-forms-vulnerability-cve.md)
+      + [XFA 기반 PDF forms 및 정책으로 보호된 문서에 대한 문제 표시](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
+      + [Firefox 및 Chrome에서 XFA 기반 PDF forms을 여는 방법](/help/forms/using/xfa-forms-firefox-chrome.md)
+      + [BlazeDS의 XML 외부 엔티티(XXE) 취약성](/help/forms/using/xxe-vulnerability-blazeDS.md)
       + [JEE WebLogic Server에서 EAR 배포 실패](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + 레거시 설명서 {#legacy-documentation}
       + [JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드](/help/forms/developing/building-xml.md)
