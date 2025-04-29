@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 64e120ee-5f16-4cd3-9ae9-95b165169e47
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: e030a71a0f52e22a803597122369cb111774f49b
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 2%
 
 ## 문제
 
-AEM Forms 서비스 팩 6.5.21.0으로 업그레이드한 후 `PaperCapture` 서비스가 PDF에서 OCR(광학 문자 인식) 작업을 수행하지 못했습니다. 이 서비스는 PDF 또는 로그 파일의 형태로 출력을 생성하지 않습니다.
+AEM Forms 서비스 팩 6.5.21.0 또는 AEM Forms 서비스 팩 6.5.22.0(으)로 업그레이드한 후 `PaperCapture` 서비스가 PDF에서 OCR(광학 문자 인식) 작업을 수행하지 못했습니다. 이 서비스는 PDF 또는 로그 파일 형태의 출력을 생성하지 않습니다.
 
 ## 적용 대상
 
 이 솔루션은 다음에 적용됩니다.
+
 * 모든 (JBoss, Weblogic, Websphere) JEE 서버의 AEM Forms
 * OSGi 서버의 AEM Forms
 
@@ -40,8 +41,8 @@ AEM Forms 서비스 팩 6.5.21.0으로 업그레이드한 후 `PaperCapture` 서
      `..\quickstart\crx-quickstart\bedrock\svcnative\PaperCaptureSvc`
 1. AEM 애플리케이션 서버를 중지합니다.
 1. `PaperCaptureSvc` 폴더의 기존 콘텐츠를 복사한 콘텐츠로 바꿉니다.
-1. AEM 응용 프로그램 서버를 다시 시작합니다.
+1. AEM 애플리케이션 서버를 다시 시작합니다.
 
    >[!NOTE]
    >
-   > SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+   > SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
