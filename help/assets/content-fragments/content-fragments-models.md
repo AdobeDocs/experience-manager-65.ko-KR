@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c361d62beb93fc546f3ef2e53f52ff50bdcdc530
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 73%
+source-wordcount: '2343'
+ht-degree: 72%
 
 ---
 
@@ -105,6 +105,13 @@ AEM의 콘텐츠 조각 모델은 Headless 콘텐츠의 기반 역할을 하는 
    * 한 줄 텍스트 행의 필드를 하나 이상 추가합니다. 최대 길이를 정의할 수 있습니다.
 * **여러 줄 텍스트**
    * 리치 텍스트, 일반 텍스트 또는 Markdown일 수 있는 텍스트 영역입니다.
+
+     >[!NOTE]
+     >
+     성능상의 이유로 한 모델에 10개 이상의 리치 텍스트 필드를 포함하는 것은 권장되지 않습니다.
+     >
+     필요한 경우 [중첩된 콘텐츠 조각](#fragment-reference-nested-fragments)을 사용하여 로드를 분산하는 것이 좋습니다.
+
 * **숫자**
    * 숫자 필드를 하나 이상 추가합니다.
 * **부울**
@@ -125,7 +132,7 @@ AEM의 콘텐츠 조각 모델은 Headless 콘텐츠의 기반 역할을 하는 
       * 적절한 모델을 기반으로 콘텐츠 조각 만들기
 * **JSON 오브젝트**
    * 콘텐츠 조각 작성자가 조각의 해당 요소에 JSON 구문을 입력하도록 합니다.
-      * 다른 서비스에서 복사 및 붙여넣기한 직접 JSON을 AEM에 저장하도록 합니다.
+      * AEM이 다른 서비스에서 복사 및 붙여넣기한 직접 JSON을 저장하도록 합니다.
       * JSON이 전달되고 GraphQL에서 JSON으로 출력됩니다.
       * 콘텐츠 조각 편집기에 JSON 구문 강조, 자동 완성 및 오류 강조 표시를 포함합니다.
 * **탭 플레이스홀더**
