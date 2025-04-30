@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: c361d62beb93fc546f3ef2e53f52ff50bdcdc530
+source-git-commit: ae9c45982d8c11b88a96d8b4556028fde51d0086
 workflow-type: tm+mt
-source-wordcount: '2343'
-ht-degree: 72%
+source-wordcount: '2310'
+ht-degree: 73%
 
 ---
 
@@ -105,13 +105,6 @@ AEM의 콘텐츠 조각 모델은 Headless 콘텐츠의 기반 역할을 하는 
    * 한 줄 텍스트 행의 필드를 하나 이상 추가합니다. 최대 길이를 정의할 수 있습니다.
 * **여러 줄 텍스트**
    * 리치 텍스트, 일반 텍스트 또는 Markdown일 수 있는 텍스트 영역입니다.
-
-     >[!NOTE]
-     >
-     성능상의 이유로 한 모델에 10개 이상의 리치 텍스트 필드를 포함하는 것은 권장되지 않습니다.
-     >
-     필요한 경우 [중첩된 콘텐츠 조각](#fragment-reference-nested-fragments)을 사용하여 로드를 분산하는 것이 좋습니다.
-
 * **숫자**
    * 숫자 필드를 하나 이상 추가합니다.
 * **부울**
