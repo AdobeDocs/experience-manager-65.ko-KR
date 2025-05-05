@@ -19,19 +19,19 @@ ht-degree: 1%
 
 ## 디지털 자산
 
->[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447316/?quality=12&learn=on&captions=kor)
 
 디지털 에셋은 하나 이상의 제품 SKU와 연결할 수 있습니다. 디지털 자산이 연결되면 SKU를 기반으로 한 주요 단어 검색을 통해 검색할 수 있습니다. 관련 제품이 포함된 페이지를 편집할 때 자산이 관련 콘텐츠로 자동으로 표시되므로 다음 디지털 경험을 더 쉽게 만들 수 있습니다
 
 ## 경험 조각
 
->[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343340/?quality=12&learn=on&captions=kor)
 
 경험 조각은 마케터가 재사용 가능한 **비구조적** 콘텐츠를 만들 수 있는 Adobe Experience Manager의 기능입니다. 경험 조각은 제품 SKU 또는 카탈로그 ID와 연결할 수 있습니다. 연결되면 마케터는 페이지에 표시된 제품을 기반으로 관련 조각을 쉽게 검색할 수 있습니다. 자리 표시자 및 연결을 통해 경험 조각을 제품 카탈로그 페이지에 동적으로 포함할 수도 있습니다.
 
 ## 콘텐츠 조각
 
->[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452164/?quality=12&learn=on&captions=kor)
 
 콘텐츠 조각은 마케터가 재사용 가능한 **구조화된** 콘텐츠를 만들 수 있는 Adobe Experience Manager의 기능입니다. 컨텐츠 조각은 제품 SKU 또는 카탈로그 ID와 연결할 수 있습니다. 연결되면 마케터는 페이지에 표시된 제품을 기반으로 관련 조각을 쉽게 검색할 수 있습니다. 자리 표시자 및 연결을 통해 콘텐츠 조각을 제품 카탈로그 페이지에 동적으로 포함할 수도 있습니다.
 
