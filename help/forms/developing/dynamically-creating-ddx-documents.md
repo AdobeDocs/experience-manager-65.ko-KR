@@ -129,6 +129,7 @@ PDF 문서를 디스어셈블하려면 디스어셈블할 PDF 문서를 나타�
    * `DocumentBuilderFactory` 개체의 `newDocumentBuilder` 메서드를 호출하여 Java `DocumentBuilder` 개체를 만듭니다.
    * `org.w3c.dom.Document` 개체를 인스턴스화하려면 `DocumentBuilder` 개체의 `newDocument` 메서드를 호출하십시오.
    * `org.w3c.dom.Document` 개체의 `createElement` 메서드를 호출하여 DDX 문서의 루트 요소를 만듭니다. 이 메서드는 루트 요소를 나타내는 `Element` 개체를 만듭니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환 값을 `Element`(으)로 캐스팅합니다. 그런 다음 `setAttribute` 메서드를 호출하여 자식 요소의 값을 설정하십시오. 마지막으로, 헤더 요소의 `appendChild` 메서드를 호출하여 요소를 헤더 요소에 추가하고 자식 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
+
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * `Document` 개체의 `createElement` 메서드를 호출하여 `PDFsFromBookmarks` 요소를 만듭니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환 값을 `Element`(으)로 캐스팅합니다. `setAttribute` 메서드를 호출하여 `PDFsFromBookmarks` 요소의 값을 설정하십시오. DDX 요소의 `appendChild` 메서드를 호출하여 `PDFsFromBookmarks` 요소를 `DDX` 요소에 추가하십시오. `PDFsFromBookmarks` 요소 개체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.

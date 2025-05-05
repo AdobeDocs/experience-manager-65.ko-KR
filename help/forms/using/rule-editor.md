@@ -105,7 +105,7 @@ forms-power-users 그룹에 추가된 사용자는 새 스크립트를 만들고
 
 ### http 화이트보드 {#whenruletype}
 
-**When** 규칙 형식은 **condition-action-alternate action** 규칙 구문을 따르거나 경우에 따라 **condition-action** 구문을 따릅니다. 이 규칙 유형에서는 먼저 평가 조건을 지정한 다음 조건이 충족될 경우 트리거할 작업을 지정합니다( `True`). When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 중첩 표현식을](#nestedexpressions) 만들 [수 있습니다.
+**When** 규칙 형식은 **condition-action-alternate action** 규칙 구문을 따르거나 경우에 따라 **condition-action** 구문을 따릅니다. 이 규칙 유형에서는 먼저 평가 조건을 지정한 다음 조건이 충족될 경우 트리거할 작업을 지정합니다( `True`). When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 중첩 표현식을[&#128279;](#nestedexpressions) 만들 수 있습니다.
 
 When 규칙 유형을 사용하면 양식 개체에 대한 조건을 평가하고 하나 이상의 개체에 대해 작업을 수행할 수 있습니다.
 

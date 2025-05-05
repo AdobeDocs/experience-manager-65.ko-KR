@@ -329,7 +329,7 @@ contentpage.jsp 스크립트에 코드를 추가하여 페이지 콘텐츠를 �
 
 1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래에 `left.jsp` 파일을 만듭니다.
 
-   1. `/apps/mywebsite/components/contentpage` 노드를 마우스 오른쪽 단추로 클릭한 다음 **만들기**다음 **파일 만들기**&#x200B;를 선택합니다.
+   1. `/apps/mywebsite/components/contentpage` 노드를 마우스 오른쪽 단추로 클릭한 다음 **만들기**&#x200B;다음 **파일 만들기**&#x200B;를 선택합니다.
 
    1. 창에서 **이름**(으)로 `left.jsp`을(를) 입력하고 **확인**&#x200B;을(를) 클릭합니다.
 
@@ -1530,6 +1530,6 @@ parsys 구성 요소(foundation 구성 요소 중 하나)를 contentpage 구성 
    ```
 
 1. 변경 사항을 저장합니다.
-1. 브라우저에서 ** 제품** 페이지를 다시 로드합니다. 전체 페이지는 다음과 같습니다.
+1. 브라우저에서 **&#x200B; 제품** 페이지를 다시 로드합니다. 전체 페이지는 다음과 같습니다.
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

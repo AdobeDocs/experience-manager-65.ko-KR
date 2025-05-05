@@ -53,7 +53,7 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
 
 워크플로우 모델의 버전이 관리됩니다. 워크플로 인스턴스를 실행할 때는 워크플로가 시작될 때 사용할 수 있는 대로 워크플로의 런타임 모델을 사용하고 유지합니다.
 
-**동기화**&#x200B;가 워크플로 모델 편집기](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)에서 트리거될 때 런타임 모델이 [생성됩니다.
+**동기화**&#x200B;가 워크플로 모델 편집기[&#128279;](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)에서 트리거될 때 런타임 모델이 생성됩니다.
 
 특정 인스턴스가 시작된 후 *후*&#x200B;에 발생하는 워크플로 모델 또는 생성된 런타임 모델에 대한 편집 내용이 해당 인스턴스에 적용되지 않습니다.
 
@@ -202,7 +202,7 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
    | 5단계 | 완료 |
    | 6단계 | 완료 |
 
-1. 워크플로우를 실행하면 단계 이름 대신 단계 이름에 따라 진행 상황을 볼 수 있습니다. [받은 편지함](/help/sites-authoring/inbox.md)에 나열된 워크플로 항목](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)의 작업 세부 정보 창에 있는 [워크플로 정보 탭에 워크플로 진행률이 표시됩니다.
+1. 워크플로우를 실행하면 단계 이름 대신 단계 이름에 따라 진행 상황을 볼 수 있습니다. [받은 편지함](/help/sites-authoring/inbox.md)에 나열된 워크플로 항목[&#128279;](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)의 작업 세부 정보 창에 있는 워크플로 정보 탭에 워크플로 진행률이 표시됩니다.
 
 ### 워크플로우 및 Forms {#workflows-and-forms}
 

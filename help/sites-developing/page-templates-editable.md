@@ -132,7 +132,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
 >[!TIP]
 >
->국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내재화를 위해 핵심 구성 요소 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)의 [현지화 기능을 사용하는 것이 좋습니다.
+>국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내재화를 위해 핵심 구성 요소 [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)의 현지화 기능을 사용하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -581,6 +581,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
    * `jcr:content` 노드에서 상태 속성을 설정하는 중입니다.
 
       * 예를 들어,
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 속성을 정의합니다.
@@ -593,6 +594,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
    * [하위 분기의 해당 페이지 또는 루트 페이지의 **페이지 속성**](/help/sites-authoring/templates.md#allowing-a-template-author)&#x200B;에서 허용된 템플릿 경로를 정의합니다.
    * 속성을 설정합니다.
+
      `cq:allowedTemplates`
 필요한 분기의 `jcr:content` 노드에서.
 

@@ -17,7 +17,7 @@ ht-degree: 25%
 
 # [!DNL Adobe Experience Manager Assets]에서 지원되는 형식 {#assets-supported-formats}
 
-[!DNL Experience Manager Assets]은(는) 다양한 파일 형식을 지원하며 각 기능마다 다양한 MIME 형식을 지원합니다. [!DNL Assets]을(를) 다른 표준 준수 DAM(디지털 에셋 관리) 솔루션 및 데스크톱 소프트웨어와 통합하려면 Adobe의 [!DNL Extensible Metadata Platform](XMP)을(를) 사용하십시오.
+[!DNL Experience Manager Assets]은(는) 다양한 파일 형식을 지원하며 각 기능마다 다양한 MIME 형식을 지원합니다. [!DNL Assets]을(를) 다른 표준 준수 DAM(디지털 에셋 관리) 솔루션 및 데스크톱 소프트웨어와 통합하려면 Adobe의 [!DNL Extensible Metadata Platform] (XMP)을(를) 사용하십시오.
 
 범례를 사용하여 지원 수준을 이해할 수 있습니다.
 
@@ -216,7 +216,7 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 | PICT | image/x-pict | | |
 | PNG | image/png | | |
 | PPT | application/vnd.ms-powerpoint | | |
-| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html</li></ul> |
+| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions] (https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
 | RTF | application/rtf | | |
 | SVG | image/svg+xml | | |

@@ -61,7 +61,7 @@ Adobe Experience Manager(AEM) 6.5에서는 모든 기능이 이전 버전과의 
 
 ## 설정 방법 {#how-to-set-up}
 
-패키지 관리자를 사용하여 **6.5**&#x200B;용 AEM 6.4 호환성 팩을 패키지로 설치할 수 있습니다. 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) 사이트에서 [AEM 6.4 Compatibility Pack for 6.5를 다운로드할 수 있습니다.
+패키지 관리자를 사용하여 **6.5**&#x200B;용 AEM 6.4 호환성 팩을 패키지로 설치할 수 있습니다. 소프트웨어 배포[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) 사이트에서 AEM 6.4 Compatibility Pack for 6.5를 다운로드할 수 있습니다.
 
 호환성 패키지가 설치되면 아래와 같이 OSGI 구성에서 스위치를 사용하여 라우팅을 활성화하거나 비활성화할 수 있습니다.
 

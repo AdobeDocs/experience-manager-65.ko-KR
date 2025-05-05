@@ -205,7 +205,7 @@ AEM 작성자 인스턴스에서 게시 인스턴스로의 복제를 구성하�
 
 >[!NOTE]
 >
-게시 인스턴스는 Adobe Campaign 서버에서 접근 가능해야 합니다. `localhost:4503` 또는 Adobe Campaign에서 연결할 수 없는 다른 서버를 가리키면 AEM의 이미지가 Adobe Campaign 콘솔에 표시되지 않습니다.
+>게시 인스턴스는 Adobe Campaign 서버에서 접근 가능해야 합니다. `localhost:4503` 또는 Adobe Campaign에서 연결할 수 없는 다른 서버를 가리키면 AEM의 이미지가 Adobe Campaign 콘솔에 표시되지 않습니다.
 
 ## AEM에서 캠페인 원격 사용자 구성 {#configure-user}
 

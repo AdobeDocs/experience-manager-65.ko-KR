@@ -41,13 +41,13 @@ AEM 6.5.15.0 서비스 팩을 설치한 후 CRX/번들 및 시작 페이지에 �
 
    >[!NOTE]
    >
-   >`bundle52`의 `bundle.info`에 `org.apache.felix.http.bridge` 번들이 없는 경우 `org.apache.felix.http.bridge` 옆에 대괄호로 묶인 번들 번호를 확인하십시오. 그런 다음 [aem-forms 루트]\crx-repository\launchpad\felix\bundle[x](으)로 이동하여 이 위치에서 다음 단계를 수행하십시오.
+   >`bundle52`의 `bundle.info`에 `org.apache.felix.http.bridge` 번들이 없는 경우 `org.apache.felix.http.bridge` 옆에 대괄호로 묶인 번들 번호를 확인하십시오. 그런 다음 [aem-forms 루트]\crx-repository\launchpad\felix\bundle[x] (으)로 이동하여 이 위치에서 다음 단계를 수행하십시오.
 
 1. URL `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`(으)로 이동합니다.
 1. `bundle.jar`을(를) 검색하고 `bundle.jar`의 이름을 `bundle.jar.bak`(으)로 변경합니다.
 1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar)에서 이 위치에 있는 `Bundle for AEM 6.5 Forms on JEE Service Pack 15`을(를) 복사합니다.
 1. 애플리케이션 서버를 시작하고 로그가 안정될 때까지 기다린 후 번들 상태를 확인합니다.
-1. 모든 번들이 활성 상태가 되면 `system/console/bundles`에서 JEE 서비스 팩 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)의 [Fragment for AEM 6.5 Forms을 설치하고 응용 프로그램 서버가 안정화될 때까지 기다립니다.
+1. 모든 번들이 활성 상태가 되면 `system/console/bundles`에서 JEE 서비스 팩 15[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)의 Fragment for AEM 6.5 Forms을 설치하고 응용 프로그램 서버가 안정화될 때까지 기다립니다.
 1. 응용 프로그램 서버를 중지합니다.
 1. `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1`(으)로 이동하여 `bundle.jar`을(를) 삭제합니다.
 1. `bundle.jar.bak`의 이름을 `bundle.jar`(으)로 바꿉니다.

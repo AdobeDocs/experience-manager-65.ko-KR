@@ -44,7 +44,7 @@ ht-degree: 0%
 
 **기존 사용자**
 
-서비스 팩 21로 업그레이드한 경우 Oauth 통합을 지원하려면 서비스 팩 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)용 [핫픽스를 설치하십시오. 모든 기존 구성이 자동으로 삭제됩니다. 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다. 서비스 팩 22로 업그레이드하는 경우 이 [서비스 팩 22용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)를 설치해야 합니다.
+서비스 팩 21로 업그레이드한 경우 Oauth 통합을 지원하려면 서비스 팩 21[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)용 핫픽스를 설치하십시오. 모든 기존 구성이 자동으로 삭제됩니다. 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다. 서비스 팩 22로 업그레이드하는 경우 이 [서비스 팩 22용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)를 설치해야 합니다.
 
 서비스 팩 20 이상의 경우 SCS가 Oauth 통합을 지원하도록 해결 단계를 수행해야 합니다. [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)을 참조하십시오.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 이미 이 기능이 활성화되어 있는 기존 온-프레미스 사용자는 스마트 컨텐츠 서비스를 계속 사용할 수 있습니다.
 
-서비스 팩 21로 업그레이드한 경우 Oauth 통합을 지원하려면 서비스 팩 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)용 [핫픽스를 설치하십시오. 모든 기존 구성이 자동으로 삭제됩니다. 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다. 서비스 팩 22로 업그레이드하는 경우 이 [서비스 팩 22용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)를 설치해야 합니다.
+서비스 팩 21로 업그레이드한 경우 Oauth 통합을 지원하려면 서비스 팩 21[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)용 핫픽스를 설치하십시오. 모든 기존 구성이 자동으로 삭제됩니다. 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다. 서비스 팩 22로 업그레이드하는 경우 이 [서비스 팩 22용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)를 설치해야 합니다.
 
 서비스 팩 20 이상의 경우 SCS가 Oauth 통합을 지원하도록 해결 단계를 수행해야 합니다. [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)을 참조하십시오.
 
@@ -93,7 +93,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 ### Adobe Developer Console 통합 만들기 {#create-adobe-io-integration}
 
-스마트 컨텐츠 서비스 API를 사용하려면 Adobe Developer Console에서 통합을 만들어 [!DNL Experience Manager]에 클라우드 구성의 [!UICONTROL Assets 스마트 태깅 서비스 설정]에 대한 [!UICONTROL API 키](Adobe Developer Console 통합의 [!UICONTROL 클라이언트 ID] 필드에서 생성됨), [!UICONTROL 조직 ID] 및 [!UICONTROL 클라이언트 암호]를 얻으십시오.
+스마트 컨텐츠 서비스 API를 사용하려면 Adobe Developer Console에서 통합을 만들어 [!DNL Experience Manager]에 클라우드 구성의 [!UICONTROL Assets 스마트 태깅 서비스 설정]에 대한 [!UICONTROL API 키] (Adobe Developer Console 통합의 [!UICONTROL 클라이언트 ID] 필드에서 생성됨), [!UICONTROL 조직 ID] 및 [!UICONTROL 클라이언트 암호]를 얻으십시오.
 
 1. 브라우저에서 [https://developer.adobe.com](https://developer.adobe.com/)에 액세스합니다. 적절한 계정을 선택하고 연결된 조직 역할이 시스템 **관리자**&#x200B;인지 확인하십시오.
 
@@ -101,7 +101,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 1. **[!UICONTROL API 추가]** 페이지에서 **[!UICONTROL Experience Cloud]**&#x200B;를 선택하고 **[!UICONTROL 스마트 컨텐츠]**&#x200B;를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. **[!UICONTROL OAuth 서버 간]**&#x200B;을(를) 선택합니다. **[!UICONTROL 다음]**을 클릭합니다.
+1. **[!UICONTROL OAuth 서버 간]**&#x200B;을(를) 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 이 구성을 수행하는 방법에 대한 자세한 내용은 요구 사항에 따라 Developer Console 설명서를 참조하십시오.
 
    * 개요:

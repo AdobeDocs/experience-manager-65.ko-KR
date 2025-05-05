@@ -88,7 +88,7 @@ window.addEventListener("FormBridgeInitialized",
 
       * **widgetConfig:** 사용자가 사용자 정의 위젯으로 양식의 기본 위젯을 재정의할 수 있습니다. 구성은 다음과 같이 재정의됩니다.
 
-        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&ast;configuration&ast;/})*
 
       * **pagingConfig:** 사용자가 첫 번째 페이지만 렌더링하는 기본 동작을 재정의할 수 있습니다. 구성은 다음과 같이 재정의됩니다.
 

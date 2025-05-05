@@ -452,7 +452,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 색인 관리자의 목적은 색인을 유지하거나 색인 상태를 보는 것과 같은 색인 관리를 용이하게 하는 것입니다.
 
-시작 화면에서 **도구 - 작업 - 진단**으로 이동한 다음 **인덱스 관리자** 단추를 클릭하여 액세스할 수 있습니다.
+시작 화면에서 **도구 - 작업 - 진단**&#x200B;으로 이동한 다음 **인덱스 관리자** 단추를 클릭하여 액세스할 수 있습니다.
 
 다음 URL에서 직접 액세스할 수도 있습니다. `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 

@@ -360,7 +360,7 @@ p.nodedepth=5
 
 자세한 조건자는 [Query Builder 조건자 참조 페이지](/help/sites-developing/querybuilder-predicate-reference.md)를 참조하십시오.
 
-`PredicateEvaluator` 클래스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)에 대한 [Javadoc을 확인할 수도 있습니다. 이러한 클래스에 대한 Javadoc에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
+`PredicateEvaluator` 클래스[&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)에 대한 Javadoc을 확인할 수도 있습니다. 이러한 클래스에 대한 Javadoc에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
 
 클래스 이름의 접두사(예: [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)의 &quot; `similar`&quot;)는 클래스의 *principal 속성*&#x200B;입니다. 이 속성은 쿼리에서 사용할 술어의 이름이기도 합니다(소문자로 표시).
 

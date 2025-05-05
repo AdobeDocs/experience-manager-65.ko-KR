@@ -52,6 +52,7 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
    * 페이지에서 선택기를 사용하는 경우 의미론적 가치를 제공하는 선택기가 선호됩니다.
    * 사람이 읽을 수 없는 URL은 검색 엔진도 읽을 수 없습니다.
    * 예:
+
      `mybrand.com/products/product-detail.product-category.product-name.html`이 `mybrand.com/products/product-detail.1234.html`보다 선호됩니다.
 
 * 검색 엔진이 사이트의 SEO 값을 조각화하여 하위 도메인을 다른 엔티티로 취급하므로 가능하면 하위 도메인을 사용하면 안 됩니다.
@@ -255,6 +256,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
    웹 콘솔(예: localhost:4502/system/console/configMgr)을 사용하여 Sling Resource Resolver를 구성할 수 있습니다.
 
    * **Apache Sling Resource Resolver Factory**
+
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Adobe은 URL을 정규식으로 단축하는 데 필요한 매핑을 빌드한 후 빌드에 포함된 OsgiConfignode `config.publish`에서 이러한 구성을 정의하는 것을 권장합니다.

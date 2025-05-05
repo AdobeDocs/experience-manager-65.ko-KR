@@ -108,9 +108,11 @@ Adobe Experience Manager(AEM) 터치 지원 UI는 이제 표준 UI이며 사이�
 * 페이지 작성 시:
 
    * URL에서 `cf#`을(를) 사용하여 페이지에 액세스할 때는 클래식 편집기를 사용해야 합니다. 예:
+
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * URL에서 `/editor.html`을(를) 사용하거나 터치 장치를 사용할 때 터치 사용 편집기를 강제로 사용합니다. 예:
+
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * 모든 강제 작업은 일시적이며 브라우저 세션에만 유효합니다

@@ -50,7 +50,7 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 자체 등록�
 
 그룹 이름은 [커뮤니티 사이트를 만드는 동안](sites-console.md#step13asitetemplate) 사이트에 지정된 이름에서 생성됩니다. 고유 ID는 동일한 서버의 비슷한 이름의 커뮤니티 사이트 및 커뮤니티 그룹에 대한 이름 충돌을 방지합니다.
 
-예를 들어 사이트 이름이 &quot;{Engage&quot; 사이트에 대해 &quot;*engage*&quot;이면 만들어진 사용자 그룹 중 하나는 다음과 같습니다.
+예를 들어 사이트 이름이 &quot;&lbrace;Engage&quot; 사이트에 대해 &quot;*engage*&quot;이면 만들어진 사용자 그룹 중 하나는 다음과 같습니다.
 
 * 커뮤니티 *참여* 구성원
 
@@ -118,7 +118,7 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 자체 등록�
 
 ### Publish 그룹 역할에 구성원 할당 {#assigning-members-to-publish-group-roles}
 
-작성자 환경에서 [커뮤니티 사이트를 만들거나](sites-console.md)사이트 속성을 수정하는 경우](sites-console.md#modifying-site-properties)명의 구성원에게 중재자, 그룹 관리자, 리소스 연락처 또는 권한이 있는 구성원 등 게시 환경에서 수행되는 다양한 역할이 할당될 수 있습니다.[
+작성자 환경에서 [커뮤니티 사이트를 만들거나](sites-console.md)사이트 속성을 수정하는 경우[&#128279;](sites-console.md#modifying-site-properties)명의 구성원에게 중재자, 그룹 관리자, 리소스 연락처 또는 권한이 있는 구성원 등 게시 환경에서 수행되는 다양한 역할이 할당될 수 있습니다.
 
 [터널 서비스를 사용하도록 설정](sync.md#accessingpublishusersfromauthor)하면 작성자의 사용자 대신 게시의 구성원으로부터 할당 선택 항목이 표시됩니다.
 

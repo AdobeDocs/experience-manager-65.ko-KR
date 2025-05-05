@@ -29,7 +29,7 @@ AEM 사이트와 Adobe Target을 통합함으로써 페이지의 콘텐츠를 �
 
 Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 
-1. [사전 요구 사항 작업 수행](/help/sites-administering/target-requirements.md): Adobe Target으로 등록하여 AEM 작성자 인스턴스의 특정 측면을 구성합니다. Adobe Target 계정에는 최소한 **승인자 **수준 권한이 있어야 합니다. 또한 사용자가 액세스할 수 없도록 게시 노드의 활동 설정을 보호해야 합니다.
+1. [사전 요구 사항 작업 수행](/help/sites-administering/target-requirements.md): Adobe Target으로 등록하여 AEM 작성자 인스턴스의 특정 측면을 구성합니다. Adobe Target 계정에는 최소한 **승인자 &#x200B;** 수준 권한이 있어야 합니다. 또한 사용자가 액세스할 수 없도록 게시 노드의 활동 설정을 보호해야 합니다.
 
 1. 다음 중 하나를 선택합니다.
 

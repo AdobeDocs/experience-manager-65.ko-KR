@@ -16,13 +16,13 @@ ht-degree: 5%
 
 조직에서 이메일 요구 사항을 준수할 수 있도록 AEM Forms은 Microsoft® Office 365 메일 서버 프로토콜과의 통합을 위한 OAuth 2.0 지원을 제공합니다. Azure AD(Azure Active Directory) OAuth 2.0 인증 서비스를 사용하여 IMAP, POP 또는 SMTP 등의 다양한 프로토콜과 연결하고 Office 365 사용자의 전자 메일 데이터에 액세스할 수 있습니다. 다음은 OAuth 2.0 서비스를 통해 인증할 Microsoft® Office 365 메일 서버 프로토콜을 구성하는 단계별 지침입니다.
 
-1. [https://portal.azure.com/](https://portal.azure.com/)에 로그인하고 검색 창에서 **Azure Active Directory**를 검색한 다음 결과를 클릭합니다.
+1. [https://portal.azure.com/](https://portal.azure.com/)에 로그인하고 검색 창에서 **Azure Active Directory**&#x200B;를 검색한 다음 결과를 클릭합니다.
 또는 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)에서 바로 검색할 수 있습니다.
 1. **추가** > **앱 등록** > **새 등록**&#x200B;을 클릭합니다.
 
    ![앱 등록](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
-1. 요구 사항에 따라 정보를 입력한 다음, **등록**을 클릭합니다.
+1. 요구 사항에 따라 정보를 입력한 다음, **등록**&#x200B;을 클릭합니다.
    ![지원되는 계정](/help/forms/using/assets/azure_suuportedaccountype.png)
 위의 경우 **조직 디렉터리(모든 Azure AD 디렉터리 - 다중 테넌트)의 계정 및 개인 Microsoft® 계정(예: Skype, Xbox)** 옵션이 선택됩니다.
 
@@ -54,7 +54,7 @@ ht-degree: 5%
 
    이 경우 `https://login.microsoftonline.com/common/oauth2/nativeclient`은(는) 리디렉션 URI로 사용됩니다.
 
-1. 각 URL을 추가한 후 **구성**을 클릭하고 요구 사항에 따라 설정을 구성합니다.
+1. 각 URL을 추가한 후 **구성**&#x200B;을 클릭하고 요구 사항에 따라 설정을 구성합니다.
    ![리디렉션 URI](/help/forms/using/assets/azure_redirecturi.png)
 
    >[!NOTE]

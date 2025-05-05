@@ -258,7 +258,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
       * 예를 들어 http://localhost:4502/useradmin으로 이동합니다.
 
    * 왼쪽 창에서 [읽기 권한](/help/sites-administering/security.md#permissions)을 부여할 그룹을 선택합니다
-   * 오른쪽 창에서 태그 네임스페이스에 대한 **경로**를 찾습니다
+   * 오른쪽 창에서 태그 네임스페이스에 대한 **경로**&#x200B;를 찾습니다
 
       * 예: `/content/cq:tags/mycommunity`
 
@@ -285,7 +285,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 다음은 **Animals** 태그의 `title`을(를) 영어에서 독어와 프랑스어로 번역하는 방법을 설명합니다.
 
-먼저 **Stock Photography** 네임스페이스 아래에서 태그를 선택하고 **`Edit`**아이콘을 선택합니다([태그 편집](#editing-tags) 섹션 참조).
+먼저 **Stock Photography** 네임스페이스 아래에서 태그를 선택하고 **`Edit`**&#x200B;아이콘을 선택합니다([태그 편집](#editing-tags) 섹션 참조).
 
 [태그 편집] 패널에서는 태그 제목을 현지화할 언어를 선택할 수 있습니다.
 

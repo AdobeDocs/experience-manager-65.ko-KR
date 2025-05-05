@@ -532,7 +532,7 @@ JavaScript 파일에 다음 코드를 추가하여 생년월일(YYYY-MM-DD)을 �
 
 ![사용자 지정 함수 클라이언트 라이브러리를 추가](/help/forms/using//assets/calculateage-customfunction.png)
 
-이제 AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)에서 [규칙 편집기의 호출 서비스를 사용하여 사용자 지정 함수를 구성하고 사용하는 방법에 대해 알아보겠습니다
+이제 AEM Forms 6.5[&#128279;](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)에서 규칙 편집기의 호출 서비스를 사용하여 사용자 지정 함수를 구성하고 사용하는 방법에 대해 알아보겠습니다
 
 ## 적응형 양식에서 사용자 정의 함수 사용 {#use-custom-functions}
 

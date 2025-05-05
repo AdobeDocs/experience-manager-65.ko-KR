@@ -162,7 +162,7 @@ Dynamic Media 및 Dynamic Media Classic을 동시에 사용하려면
 1. (선택 사항, 사용 사례 표 참조) - Assets에서 Dynamic Media Classic으로 자동 업로드를 활성화하도록 선택한 경우 다음을 추가해야 합니다.
 
    1. Dynamic Media Classic에 자동 업로드를 설정합니다.
-   1. ***Dam 자산 업데이트**워크플로( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)의 끝에 모든 Dynamic Media 워크플로 단계*&#x200B;후에 **Dynamic Media Classic 업로드** 단계를 추가합니다.
+   1. ***Dam 자산 업데이트**&#x200B;워크플로( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)의 끝에 모든 Dynamic Media 워크플로 단계*&#x200B;후에 **Dynamic Media Classic 업로드** 단계를 추가합니다.
    1. (선택 사항) [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl)에서 MIME 유형별로 Dynamic Media Classic 자산 업로드를 제한합니다. 이 목록에 없는 에셋 MIME 유형은 Dynamic Media Classic 서버에 업로드되지 않습니다.
    1. (선택 사항) Dynamic Media Classic 구성에서 비디오를 설정합니다. Dynamic Media 및 Dynamic Media Classic 중 하나 또는 모두에 대해 비디오 인코딩을 동시에 활성화할 수 있습니다. 동적 변환은 Experience Manager 인스턴스에서 로컬로 미리 보기 및 재생에 사용되는 반면, Dynamic Media Classic 비디오 변환은 Dynamic Media Classic 서버에서 생성 및 저장됩니다. Dynamic Media과 Dynamic Media Classic 모두에 대한 비디오 인코딩 서비스를 설정할 때 Dynamic Media Classic 자산 폴더에 [비디오 처리 프로필](/help/assets/video-profiles.md)을 적용하십시오.
    1. (선택 사항) [Dynamic Media Classic에서 보안 미리 보기를 구성합니다](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).

@@ -55,7 +55,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 
 다음과 같은 다양한 작업을 수행해야 합니다.
 
-1. IMS를 사용하여 AEM을 Adobe Target과 통합](/help/sites-administering/setting-up-ims-integrations-for-aem.md)해야 합니다.[
+1. IMS를 사용하여 AEM을 Adobe Target과 통합[&#128279;](/help/sites-administering/setting-up-ims-integrations-for-aem.md)해야 합니다.
 
    >[!NOTE]
    >

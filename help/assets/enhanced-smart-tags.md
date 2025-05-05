@@ -81,7 +81,7 @@ ht-degree: 1%
 
 ## 온보딩 {#onboarding}
 
-스마트 콘텐츠 서비스를 [!DNL Experience Manager]에 대한 추가 기능으로 구입할 수 있습니다. 구입하면 [!DNL Adobe I/O](으)로 연결되는 링크가 포함된 전자 메일이 조직 관리자에게 전송됩니다.
+스마트 콘텐츠 서비스를 [!DNL Experience Manager]에 대한 추가 기능으로 구입할 수 있습니다. 구입하면 [!DNL Adobe I/O] (으)로 연결되는 링크가 포함된 전자 메일이 조직 관리자에게 전송됩니다.
 
 관리자는 링크를 따라 스마트 콘텐츠 서비스를 [!DNL Experience Manager]과(와) 통합할 수 있습니다. 서비스를 [!DNL Experience Manager Assets]과(와) 통합하려면 [스마트 태그 구성](config-smart-tagging.md)을 참조하세요.
 

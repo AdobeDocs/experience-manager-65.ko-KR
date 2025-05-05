@@ -391,9 +391,11 @@ prefill-page component.zip
    1. Configuration.af.clientside.datamerge.enabled.name 옵션을 활성화합니다
 * 명령줄에서 을 활성화하거나 비활성화하려면 다음을 수행합니다.
    * 활성화하려면 다음 cURL 명령을 실행합니다.
+
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
    * 비활성화하려면 다음 cURL 명령을 실행합니다.
+
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
   클라이언트에서 데이터 미리 채우기 옵션을 최대한 활용하려면 미리 채우기 서비스를 업데이트하여 [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) 및 [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)을(를) 반환합니다

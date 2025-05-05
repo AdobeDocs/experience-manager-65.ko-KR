@@ -23,7 +23,7 @@ ImageMagick을 사용하여 대용량 파일을 처리하려면 일반적인 메
 
 >[!NOTE]
 >
->[!DNL Adobe Managed Services](AMS)에서 [!DNL Experience Manager]을(를) 사용 중인 경우 고해상도 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. [!DNL Experience Manager]은(는) 30000 x 23000 픽셀보다 큰 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
+>[!DNL Adobe Managed Services] (AMS)에서 [!DNL Experience Manager]을(를) 사용 중인 경우 고해상도 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. [!DNL Experience Manager]은(는) 30000 x 23000 픽셀보다 큰 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
 ## ImageMagick 설치 {#installing-imagemagick}
 

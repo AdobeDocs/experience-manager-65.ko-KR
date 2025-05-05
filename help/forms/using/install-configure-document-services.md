@@ -23,11 +23,11 @@ AEM Forms은 다양한 문서 수준 작업을 수행하기 위한 일련의 OSG
 
 * **Barcoded Forms 서비스:** 바코드의 전자 이미지에서 데이터를 추출할 수 있습니다. 이 서비스는 하나 이상의 바코드가 포함된 TIFF 및 PDF 파일을 입력으로 수락하고 바코드 데이터를 추출합니다. 자세한 내용은 [Barcoded Forms 서비스](/help/forms/using/using-barcoded-forms-service.md)를 참조하십시오.
 
-* **DocAssurance 서비스:** 문서를 암호화 및 암호 해독하고, 추가 사용 권한으로 Adobe Reader의 기능을 확장하고, 문서에 디지털 서명을 추가할 수 있습니다. Doc Assurance 서비스에는 서명, 암호화 및 Reader 확장의 세 가지 서비스가 포함됩니다. 자세한 내용은 DocAssurance Service](/help/forms/using/overview-aem-document-services.md)를 참조하십시오[.
+* **DocAssurance 서비스:** 문서를 암호화 및 암호 해독하고, 추가 사용 권한으로 Adobe Reader의 기능을 확장하고, 문서에 디지털 서명을 추가할 수 있습니다. Doc Assurance 서비스에는 서명, 암호화 및 Reader 확장의 세 가지 서비스가 포함됩니다. 자세한 내용은 DocAssurance Service[&#128279;](/help/forms/using/overview-aem-document-services.md)를 참조하십시오.
 
-* **암호화 서비스:** 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 내용을 읽을 수 없게 됩니다. 권한이 있는 사용자 문서의 암호를 해독하여 해당 내용에 대한 액세스 권한을 얻을 수 있습니다. 자세한 내용은 암호화 서비스를](/help/forms/using/overview-aem-document-services.md#encryption-service) 참조하십시오[.
+* **암호화 서비스:** 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 내용을 읽을 수 없게 됩니다. 권한이 있는 사용자 문서의 암호를 해독하여 해당 내용에 대한 액세스 권한을 얻을 수 있습니다. 자세한 내용은 암호화 서비스를[&#128279;](/help/forms/using/overview-aem-document-services.md#encryption-service) 참조하십시오.
 
-* **Forms 서비스:** 일반적으로 Forms 디자이너에서 만들어지는 양식의 유효성을 검사, 처리, 변환 및 전달하는 대화형 데이터 캡처 클라이언트 응용 프로그램을 만들 수 있습니다. Forms 서비스는 사용자가 개발하는 모든 양식 디자인을 PDF 문서로 렌더링합니다. 자세한 내용은 Forms Service](/help/forms/using/forms-service.md)를 참조하십시오[.
+* **Forms 서비스:** 일반적으로 Forms 디자이너에서 만들어지는 양식의 유효성을 검사, 처리, 변환 및 전달하는 대화형 데이터 캡처 클라이언트 응용 프로그램을 만들 수 있습니다. Forms 서비스는 사용자가 개발하는 모든 양식 디자인을 PDF 문서로 렌더링합니다. 자세한 내용은 Forms Service[&#128279;](/help/forms/using/forms-service.md)를 참조하십시오.
 
 * **출력 서비스:** PDF, 레이저 프린터 형식, 라벨 프린터 형식 등 다양한 형식의 문서를 만들 수 있습니다. 레이저 프린터 형식은 PostScript 및 PCL(Printer Control Language)입니다. 자세한 내용은 [출력 서비스](/help/forms/using/output-service.md)를 참조하세요.
 
@@ -321,7 +321,7 @@ Microsoft® Office 트러스트 센터 설정을 변경하여 PDF Generator 서�
 ### (Windows만 해당) UAC(사용자 계정 컨트롤) 사용 안 함 {#disable-user-account-control-uac}
 
 1. 시스템 구성 유틸리티에 액세스하려면 시작 > Run으로 이동&#x200B;**[!UICONTROL 한 다음 MSCONFIG]**&#x200B;를 입력합니다&#x200B;**[!UICONTROL .]**
-1. **[!UICONTROL 도구]** 탭을 클릭하고 아래로 스크롤한 다음 **[!UICONTROL UAC 설정 변경]**&#x200B;을 선택합니다. Launch(시작)]**를 클릭하여**[!UICONTROL &#x200B;새 창에서 명령을 실행합니다.
+1. **[!UICONTROL 도구]** 탭을 클릭하고 아래로 스크롤한 다음 **[!UICONTROL UAC 설정 변경]**&#x200B;을 선택합니다. Launch(시작)**를 클릭하여**&#x200B;새 창에서 명령을 실행합니다.
 1. 슬라이더를 알림 안 함 레벨로 조정합니다. 완료되면 명령 창을 닫고 시스템 구성 창을 닫습니다.
 1. UAC에 대한 레지스트리 설정이 0으로 설정되어 있는지 확인하십시오. 다음 단계를 수행하여 확인합니다.
 
@@ -424,7 +424,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 
 ### PDF 생성기 서비스를 실행하도록 로컬 사용자 계정 구성  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
-PDF 생성기 서비스를 실행하려면 로컬 사용자 계정 계정이 필요합니다. 로컬 사용자 만드는 단계는 Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account)에서 사용자 계정 만들기 또는 UNIX 기반 플랫폼에서 사용자 계정 만들기를 참조하세요[.
+PDF 생성기 서비스를 실행하려면 로컬 사용자 계정 계정이 필요합니다. 로컬 사용자 만드는 단계는 Windows[&#128279;](https://support.microsoft.com/en-us/help/13951/windows-create-user-account)에서 사용자 계정 만들기 또는 UNIX 기반 플랫폼에서 사용자 계정 만들기를 참조하세요.
 
 1. [AEM Forms PDF Generator 구성](http://localhost:4502/libs/fd/pdfg/config/ui.html) 페이지를 엽니다.
 
@@ -471,7 +471,7 @@ PDF 생성기 서비스를 실행하려면 로컬 사용자 계정 계정이 필
 
 Microsoft® Windows에서 PDF 생성기 서비스는 Adobe Systems Acrobat을 사용하여 지원되는 파일 형식을 PDF 문서로 전환합니다. PDF 생성기 서비스에 대해 Adobe Systems Acrobat을 구성하려면 다음 단계를 수행하십시오.
 
-1. Acrobat 열고 편집> 환경 설정> Updater ]**를 선택합니다**[!UICONTROL . ******** 업데이트 확인에서 자동으로 업데이트 설치를 선택 **[!UICONTROL 취소하고 확인]** 을 클릭합니다&#x200B;**[!UICONTROL .]** 닫기 Acrobat.
+1. Acrobat 열고 편집> 환경 설정> Updater **를 선택합니다**. **&#x200B;**&#x200B;**&#x200B;** 업데이트 확인에서 자동으로 업데이트 설치를 선택 **[!UICONTROL 취소하고 확인]** 을 클릭합니다&#x200B;**[!UICONTROL .]** 닫기 Acrobat.
 1. 시스템에서 PDF 문서를 두 번 클릭합니다. Acrobat이 처음 시작되면 로그인, 시작 화면 및 EULA에 대한 대화 상자가 나타납니다. PDF Generator을 사용하도록 구성된 모든 사용자에 대해 이 대화 상자를 닫습니다.
 1. PDF Generator 유틸리티 배치 파일을 실행하여 PDF Generator 서비스에 대해 Acrobat을 구성합니다.
 
@@ -503,7 +503,7 @@ Trust Store Management를 사용하면 디지털 서명 및 인증서 인증의 
 
 1. 관리자로 AEM Forms 인스턴스에 로그인합니다.
 1. **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL Trust Store]**(으)로 이동합니다.
-1. **[!UICONTROL TrustStore 만들기]**&#x200B;를 클릭합니다. 암호를 설정하고 저장&#x200B;]**을 선택합니다**[!UICONTROL .
+1. **[!UICONTROL TrustStore 만들기]**&#x200B;를 클릭합니다. 암호를 설정하고 저장&#x200B;**을 선택합니다**.
 
 ### Reader 확장 및 암호화 서비스에 대한 인증서 설정 {#set-up-certificates-for-reader-extension-and-encryption-service}
 
@@ -686,8 +686,8 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 * OpenOffice의 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)을 설치하십시오. AEM Forms은 32비트 및 64비트 버전을 모두 지원합니다. 설치 후 모든 OpenOffice 응용 프로그램을 열고 대화 상자 창을 모두 취소한 다음 응용 프로그램을 닫습니다. 응용 프로그램을 다시 열고 OpenOffice 응용 프로그램을 열 때 대화 상자가 표시되지 않도록 합니다.
 
-* 환경 변수 `OpenOffice_PATH` 만들기 및 OpenOffice 설치를 가리키도록 설정 콘솔](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) 또는 dt (Device Tree) 프로파일에서 [설정됩니다.
-* OpenOffice 설치에 문제가 있는 경우 OpenOffice 설치에 필요한 32비트 라이브러리를](#extrarequirements) 사용할 수 있는지 [확인하십시오.
+* 환경 변수 `OpenOffice_PATH` 만들기 및 OpenOffice 설치를 가리키도록 설정 콘솔[&#128279;](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) 또는 dt (Device Tree) 프로파일에서 설정됩니다.
+* OpenOffice 설치에 문제가 있는 경우 OpenOffice 설치에 필요한 32비트 라이브러리를[&#128279;](#extrarequirements) 사용할 수 있는지 확인하십시오.
 
 +++
 

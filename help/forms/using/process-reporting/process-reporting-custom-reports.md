@@ -64,7 +64,7 @@ Query Builder API를 사용하여 서비스를 만들기 위한 필수 조건은
     predicateGroup.setAllRequired(true);
    ```
 
-1. 새로 생성된 predicateGroup에 술어를 추가합니다. 몇 가지 유용한 조건자 구문은 [5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 JcrBoolPropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [JcrPropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [RangePropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [DateRangePredicateEvaluator 및 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [TypePredicateEvaluator입니다.
+1. 새로 생성된 predicateGroup에 술어를 추가합니다. 몇 가지 유용한 조건자 구문은 [5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 JcrBoolPropertyPredicateEvaluator, 5.3[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [JcrPropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [RangePropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [DateRangePredicateEvaluator 및 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 TypePredicateEvaluator입니다.
 
    정적 보고서의 경우 술어를 하드코딩하지만 동적 보고서의 경우 요청에서 술어를 가져옵니다.
 
@@ -642,7 +642,7 @@ response.setCharacterEncoding("utf-8");
    * **설명**- 보고서에 대한 한 줄 설명을 지정합니다. 설명 필드를 비워 둘 수 있습니다.
    * **icon**- 보고서를 그림으로 나타낼 이미지를 지정합니다. 아이콘 필드를 비워 둘 수 있습니다.
 
-   ](assets/node_properties_new.png) 노드의 ![속성
+   ![&#128279;](assets/node_properties_new.png) 노드의 속성
 
    노드 속성
 

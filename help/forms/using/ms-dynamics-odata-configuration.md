@@ -103,6 +103,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 
    * `Client-ID`은(는) GUID 생성기를 사용하여 생성할 수 있는 클라이언트 ID입니다.
    * `redirect-uri`은(는) AEM Forms의 Microsoft Dynamics OData 클라우드 서비스에 대한 URL입니다. AEM Forms 패키지와 함께 설치된 기본 클라우드 서비스는 다음 URL에 배포됩니다.
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 다음 명령을 실행하여 AD FS 컴퓨터에 대한 액세스 권한을 부여합니다.

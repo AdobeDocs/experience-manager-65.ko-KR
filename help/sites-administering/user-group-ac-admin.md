@@ -60,7 +60,7 @@ CRX을 사용하면 사용자 및 그룹 계정 모두에 대한 액세스 권�
 
 >[!NOTE]
 >
->CRX은 JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)에서 정의한 [액세스 제어를 구현합니다.
+>CRX은 JSR-283[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)에서 정의한 액세스 제어를 구현합니다.
 >
 >CRX 저장소의 표준 설치는 리소스 기반 액세스 제어 목록을 사용하도록 구성됩니다. 이는 JSR-283 액세스 제어의 한 가지 가능한 구현과 Jackrabbit과 함께 제공되는 구현 중 하나입니다.
 

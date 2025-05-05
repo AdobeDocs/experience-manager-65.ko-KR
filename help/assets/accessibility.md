@@ -225,7 +225,7 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)의 [접근성 기능.
+>*  [!DNL Dynamic Media][&#128279;](/help/assets/accessibility-dm.md)의 접근성 기능.
 >* [각 서비스 팩 릴리스에서 수행된 개선 사항의 릴리스 노트](/help/release-notes/release-notes.md).
 >* [[!DNL Adobe Experience Manager] 접근성 지침](/help/managing/web-accessibility.md).
 >* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/accessibility/compliance.html).

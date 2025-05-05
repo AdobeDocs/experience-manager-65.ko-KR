@@ -22,7 +22,7 @@ ht-degree: 15%
 * 캡처된 데이터에 대해 복잡한 계산 수행
 * 미리 정의된 일정에 따라 적응형 양식 데이터를 스토리지 시스템에 저장
 
-적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 액션을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [AEM Forms 작성자 인스턴스를 Microsoft® Power Automate에 연결](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)합니다
+적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 액션을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [AEM Forms 작성자 인스턴스를 Microsoft® Power Automate에 연결] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)합니다
 
 ## 사전 요구 사항
 

@@ -74,11 +74,11 @@ Workbench는 프로세스 인스턴스가 런타임 시 실행될 때 이를 기
 
 중앙 마이그레이션 Bridge 서비스(`CentralMigrationBridge`)는 JFMERGE, JFTRANS 및 XMLIMPORT 명령을 포함하는 Adobe Central Pro Output Server(중앙) 기능의 하위 집합을 호출합니다. 중앙 마이그레이션 Bridge 서비스 작업을 통해 AEM Forms에서 다음 중앙 에셋을 재사용할 수 있습니다.
 
-* 템플릿 디자인(&amp;ast;.ifd)
-* 출력 템플릿(&amp;ast;.mdf)
-* 데이터 파일(&amp;ast;.dat 파일)
-* 프리앰블 파일(&amp;ast;.pre 파일)
-* 데이터 정의 파일(&amp;ast;.tdf)
+* 템플릿 디자인(&ast;.ifd)
+* 출력 템플릿(&ast;.mdf)
+* 데이터 파일(&ast;.dat 파일)
+* 프리앰블 파일(&ast;.pre 파일)
+* 데이터 정의 파일(&ast;.tdf)
 
 다음 설정은 중앙 마이그레이션 Bridge 서비스에 사용할 수 있습니다.
 

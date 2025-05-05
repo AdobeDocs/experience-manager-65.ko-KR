@@ -86,7 +86,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
 >
->이제 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 [ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
 
 ## Activity Map 구성 {#configuring-for-the-activity-map}
 
@@ -94,7 +94,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
 >
->이제 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 [ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
 
 ## Adobe Analytics 프레임워크 만들기 {#creating-a-adobe-analytics-framework}
 
@@ -174,7 +174,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 1. **사이트** 콘솔에서 추적을 설정할 페이지를 선택합니다.
 1. 콘솔 또는 페이지 편집기에서 직접 **[페이지 속성](/help/sites-authoring/editing-page-properties.md)**&#x200B;을 엽니다.
-1. ** Cloud Service** 탭을 엽니다.
+1. **&#x200B; Cloud Service** 탭을 엽니다.
 
 1. **구성 추가** 드롭다운을 사용하여 사용 가능한 옵션에서 **Adobe Analytics**&#x200B;을(를) 선택합니다. 상속이 있는 경우 선택기를 사용하려면 먼저 상속을 비활성화하십시오.
 

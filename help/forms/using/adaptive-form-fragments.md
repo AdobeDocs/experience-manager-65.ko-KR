@@ -31,7 +31,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> [구성] 대화 상자와 [양식 조각] 구성 요소의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html) [디자인] 대화 상자를 사용하여 [사용자를 위한 조각 경험 경험을 쉽게 사용자 지정할 수 있습니다.
+> [구성] 대화 상자와 [양식 조각] 구성 요소의[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html) [디자인] 대화 상자를 사용하여 사용자를 위한 조각 경험 경험을 쉽게 사용자 지정할 수 있습니다.
 
 ## 조각 만들기 {#create-a-fragment}
 
@@ -91,6 +91,7 @@ ht-degree: 3%
 1. 조각 생성 대화 상자에서 다음 정보를 지정합니다.
 
    * **이름**: 조각의 이름입니다. 기본값은 패널의 요소 이름입니다. 필수 필드입니다.
+
      >[!NOTE]
      >
      >조각에 고유한 이름을 지정해야 합니다. 같은 이름의 다른 조각이 있는 경우 조각을 만들 수 없습니다.
@@ -134,7 +135,7 @@ ht-degree: 3%
 
 1. https:[*호스트*]:[*포트/system/console/configMgr에서 AEM 웹 콘솔 구성 페이지*]&#x200B;로 이동합니다.
 
-1. Search(검색)을 검색하고 적응형 양식 및 인터랙티브한 통신 웹 채널 구성을&#x200B;]**선택하여**[!UICONTROL &#x200B;편집 모드에서 엽니다.
+1. Search(검색)을 검색하고 적응형 양식 및 인터랙티브한 통신 웹 채널 구성을&#x200B;**선택하여**&#x200B;편집 모드에서 엽니다.
 1. **[!UICONTROL 조각 대신 자리 표시자 활성화]** 확인란을 비활성화하면 자리 표시자 이미지가 아닌 전체 조각을 표시할 수 있습니다.
 
 ### 적응형 양식에 조각 삽입 {#insert-a-fragment-in-an-adaptive-form}

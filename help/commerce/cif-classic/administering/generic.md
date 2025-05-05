@@ -417,7 +417,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
    ![더하기 기호](/help/sites-administering/do-not-localize/chlimage_1-22.png)
 
 1. [미리 보기](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) 모드로 전환합니다.
-1. + 핫스팟을 클릭합니다. **경로**&#x200B;에서 입력한 제품의 크기와 수량을 선택할 수 있는 대화 상자가 열립니다.
+1. &#x200B;+ 핫스팟을 클릭합니다. **경로**&#x200B;에서 입력한 제품의 크기와 수량을 선택할 수 있는 대화 상자가 열립니다.
 
    ![제품 예: poncho](/help/sites-administering/assets/chlimage_1-95.png)
 

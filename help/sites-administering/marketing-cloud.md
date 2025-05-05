@@ -29,7 +29,7 @@ Adobe Experience Manager(AEM)를 사용하면 Adobe Experience Cloud의 다음 �
 <!-- Search&Promote is end of life as of September 1, 2022 * Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites. -->
 * Adobe Campaign을 사용하면 Adobe Experience Manager에서 직접 이메일 게재 콘텐츠를 관리할 수 있습니다.
 
-또한 [Creative Cloud 및 [타사 서비스와 AEM을 통합](/help/assets/aem-cc-integration-best-practices.md)할 수 있습니다](/help/sites-administering/third-party-services.md).
+또한 [&#128279;](/help/sites-administering/third-party-services.md)Creative Cloud 및 [타사 서비스와 AEM을 통합](/help/assets/aem-cc-integration-best-practices.md)할 수 있습니다.
 
 ## Adobe Analytics와 통합 {#integrating-with-adobe-analytics}
 

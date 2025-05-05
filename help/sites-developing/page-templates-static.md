@@ -303,17 +303,17 @@ AEM 페이지 템플릿은 페이지를 만드는 데 사용되는 모델일 뿐
    >**/apps/&lt;웹 사이트>/templates/&lt;template-name>** 노드에 대한 변경 내용은 선택 목록에서와 같이 템플릿 인스턴스에 영향을 줍니다.
    >
    >
-   **/apps/&lt;웹 사이트>/components/&lt;구성 요소 이름>** 노드에 대한 변경 사항은 템플릿 사용 시 생성된 콘텐츠 페이지에 영향을 줍니다.
+   >**/apps/&lt;웹 사이트>/components/&lt;구성 요소 이름>** 노드에 대한 변경 사항은 템플릿 사용 시 생성된 콘텐츠 페이지에 영향을 줍니다.
 
    이제 새 템플릿을 사용하여 웹 사이트 내에서 페이지를 만들 수 있습니다.
 
 >[!NOTE]
 >
-편집기 클라이언트 라이브러리는 컨텐츠 페이지에 `cq.shared` 네임스페이스가 있다고 가정하며, 이 네임스페이스가 없으면 JavaScript 오류 `Uncaught TypeError: Cannot read property 'shared' of undefined`이(가) 발생합니다.
+>편집기 클라이언트 라이브러리는 컨텐츠 페이지에 `cq.shared` 네임스페이스가 있다고 가정하며, 이 네임스페이스가 없으면 JavaScript 오류 `Uncaught TypeError: Cannot read property 'shared' of undefined`이(가) 발생합니다.
 >
-모든 샘플 콘텐츠 페이지에는 `cq.shared`이(가) 포함되어 있으므로 이를 기반으로 하는 모든 콘텐츠에는 자동으로 `cq.shared`이(가) 포함됩니다. 그러나 샘플 콘텐츠를 기반으로 하지 않고 처음부터 고유한 콘텐츠 페이지를 만들려는 경우에는 `cq.shared` 네임스페이스를 포함해야 합니다.
+>모든 샘플 콘텐츠 페이지에는 `cq.shared`이(가) 포함되어 있으므로 이를 기반으로 하는 모든 콘텐츠에는 자동으로 `cq.shared`이(가) 포함됩니다. 그러나 샘플 콘텐츠를 기반으로 하지 않고 처음부터 고유한 콘텐츠 페이지를 만들려는 경우에는 `cq.shared` 네임스페이스를 포함해야 합니다.
 >
-자세한 내용은 [클라이언트측 라이브러리 사용](/help/sites-developing/clientlibs.md)을 참조하십시오.
+>자세한 내용은 [클라이언트측 라이브러리 사용](/help/sites-developing/clientlibs.md)을 참조하십시오.
 
 ## 기존 템플릿 사용 가능 {#making-an-existing-template-available}
 

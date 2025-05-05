@@ -31,7 +31,7 @@ ht-degree: 0%
 
 콘텐츠에 태그를 지정하고 AEM 태그 지정 인프라를 사용하려면 다음을 수행하십시오.
 
-* 태그는 [분류 루트 노드 아래에 `[cq:Tag](#tags-cq-tag-node-type)` 유형의 노드로 있어야 합니다.](#taxonomy-root-node)
+* 태그는 [&#128279;](#taxonomy-root-node)분류 루트 노드 아래에 `[cq:Tag](#tags-cq-tag-node-type)` 유형의 노드로 있어야 합니다.
 
 * 태그가 지정된 콘텐츠 노드 `NodeType`에 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin이 포함되어야 합니다.
 * [`TagID`](#tagid)이(가) 콘텐츠 노드의 [`cq:tags`](#tagged-content-cq-tags-property) 속성에 추가되고 ` [cq:Tag](#tags-cq-tag-node-type)` 유형의 노드로 확인됩니다.

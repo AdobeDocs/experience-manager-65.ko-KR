@@ -99,6 +99,7 @@ ht-degree: 1%
    * 그룹을 만든 후에는 쉽게 변경되지 않으므로 이름을 다시 확인하십시오.
    * 기본 URL이 `Community Group Name` 아래에 표시됩니다.
    * 유효한 URL을 보려면 &quot;.html&quot;을 추가하십시오.
+
      *예:*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **커뮤니티 그룹 템플릿** 메뉴

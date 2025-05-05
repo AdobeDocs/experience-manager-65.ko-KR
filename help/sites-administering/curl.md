@@ -28,7 +28,7 @@ cURL은 URL 조작을 수행하는 데 사용되는 오픈 소스 명령줄 도�
 
 cURL은 URL 구문을 사용하여 데이터를 가져오거나 보내는 데 널리 사용되는 도구로서 1997년에 처음 출시되었습니다. cURL이라는 이름은 원래 &quot;URL 참조&quot;를 의미했습니다.
 
-AEM이 빌드된 Sling 프레임워크의 RESTful 특성으로 인해 대부분의 작업을 cURL로 실행할 수 있는 URL 호출로 줄일 수 있습니다. [페이지 활성화, 워크플로 시작과 같은 콘텐츠 조작 작업](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) 과 [패키지 관리 및 사용자 관리와 같은 운영 작업은](/help/sites-administering/curl.md#common-operational-aem-curl-commands) cURL을 사용하여 자동화할 수 있습니다. 또한 AEM에서 대부분의 작업에 대해 고유한 cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) 명령을 만들 수 있습니다[.
+AEM이 빌드된 Sling 프레임워크의 RESTful 특성으로 인해 대부분의 작업을 cURL로 실행할 수 있는 URL 호출로 줄일 수 있습니다. [페이지 활성화, 워크플로 시작과 같은 콘텐츠 조작 작업](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) 과 [패키지 관리 및 사용자 관리와 같은 운영 작업은](/help/sites-administering/curl.md#common-operational-aem-curl-commands) cURL을 사용하여 자동화할 수 있습니다. 또한 AEM에서 대부분의 작업에 대해 고유한 cURL[&#128279;](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) 명령을 만들 수 있습니다.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ cURL 명령은 워크플로우 트리거, OSGi 구성 확인, JMX 명령 트리�
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
 1. 실제로 작업 과정 만들려면 만들기 페이지 마법사에서 **[만들기**]를 클릭합니다&#x200B;**.**
-1. 결과 POST 작업을 마우스 오른쪽 단추로 클릭하고 복사 > cURL **로 복사를 선택합니다**. ****
+1. 결과 POST 작업을 마우스 오른쪽 단추로 클릭하고 복사 > cURL **로 복사를 선택합니다**. **&#x200B;**
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
@@ -221,7 +221,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 ### 백업 {#backup}
 
-자세한 내용은 백업 및 복원](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup)을 참조하십시오[.
+자세한 내용은 백업 및 복원[&#128279;](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup)을 참조하십시오.
 
 ### OSGi {#osgi}
 
@@ -288,33 +288,33 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 #### 배지 할당 및 취소 {#assign-and-revoke-badges}
 
-자세한 내용은 Communities 점수 및 배지를](/help/communities/implementing-scoring.md#assign-and-revoke-badges) 참조하십시오[.
+자세한 내용은 Communities 점수 및 배지를[&#128279;](/help/communities/implementing-scoring.md#assign-and-revoke-badges) 참조하십시오.
 
-자세한 내용은 점수 및 배지 필수 사항을](/help/communities/configure-scoring.md#example-setup) 참조하십시오[.
+자세한 내용은 점수 및 배지 필수 사항을[&#128279;](/help/communities/configure-scoring.md#example-setup) 참조하십시오.
 
 #### MSRP 재인덱싱 {#msrp-reindexing}
 
-자세한 내용은 MSRP - MongoDB 저장소 리소스 공급자](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command)를 참조하세요[.
+자세한 내용은 MSRP - MongoDB 저장소 리소스 공급자[&#128279;](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command)를 참조하세요.
 
 ### 보안 {#security}
 
 #### CRX DE Lite 활성화 및 비활성화 {#enabling-and-disabling-crx-de-lite}
 
-자세한 내용은 AEM](/help/sites-administering/enabling-crxde-lite.md)에서 CRXDE Lite 활성화를 참조하십시오[.
+자세한 내용은 AEM[&#128279;](/help/sites-administering/enabling-crxde-lite.md)에서 CRXDE Lite 활성화를 참조하십시오.
 
 ### 데이터 저장소 가비지 컬렉션 {#data-store-garbage-collection}
 
-자세한 내용은 데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection)을 참조하십시오[.
+자세한 내용은 데이터 저장소 가비지 수집[&#128279;](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection)을 참조하십시오.
 
 ### Analytics 및 Target 통합 {#analytics-and-target-integration}
 
-자세한 내용은 Adobe Analytics 및 Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) 선택을 참조하십시오[.
+자세한 내용은 Adobe Analytics 및 Adobe Target[&#128279;](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) 선택을 참조하십시오.
 
 ### 단일 사인온 {#single-sign-on}
 
 #### 테스트 헤더 전송 {#send-test-header}
 
-자세한 내용은 단일 사인온](/help/sites-deploying/single-sign-on.md)을 참조하십시오[.
+자세한 내용은 단일 사인온[&#128279;](/help/sites-deploying/single-sign-on.md)을 참조하십시오.
 
 ## 일반적인 컨텐츠 조작 AEM cURL 명령 {#common-content-manipulation-aem-curl-commands}
 

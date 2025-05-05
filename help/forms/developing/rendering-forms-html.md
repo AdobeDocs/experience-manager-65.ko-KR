@@ -93,7 +93,7 @@ form:ready 이벤트에 있는 양식 스크립트는 양식의 초기 렌더링
 
 >[!NOTE]
 >
-다중 페이지 양식에서는 다른 페이지로 이동할 경우 페이지에 대한 JavaScript의 변경 사항이 유지되지 않습니다.
+>다중 페이지 양식에서는 다른 페이지로 이동할 경우 페이지에 대한 JavaScript의 변경 사항이 유지되지 않습니다.
 
 양식을 제출하기 전에 사용자 지정 스크립트를 호출할 수 있습니다. 이 기능은 사용 가능한 모든 브라우저에서 작동합니다. 그러나 사용자가 `Output Type` 속성이 `Form Body`(으)로 설정된 HTML 양식을 렌더링하는 경우에만 사용할 수 있습니다. `Output Type`이(가) `Full HTML`인 경우 작동하지 않습니다. 이 기능을 구성하는 단계는 관리 도움말의 양식 구성 을 참조하십시오.
 
@@ -167,7 +167,7 @@ HTML 페이지(패널) 간에 이동할 때 데이터의 상태만 유지됩니�
 
 >[!NOTE]
 >
-테이블 셀 내에 중첩된 정적 개체는 렌더링된 HTML 양식에 표시되지 않습니다. 예를 들어 표 셀 내부에 중첩된 원과 사각형은 렌더링 HTML 양식 내에 표시되지 않습니다. 그러나 표 외부에 있는 경우에는 동일한 정적 개체가 올바르게 표시됩니다.
+>테이블 셀 내에 중첩된 정적 개체는 렌더링된 HTML 양식에 표시되지 않습니다. 예를 들어 표 셀 내부에 중첩된 원과 사각형은 렌더링 HTML 양식 내에 표시되지 않습니다. 그러나 표 외부에 있는 경우에는 동일한 정적 개체가 올바르게 표시됩니다.
 
 ## 디지털 서명 HTML 양식 {#digitally-signing-html-forms}
 
@@ -190,7 +190,7 @@ HTML 페이지(패널) 간에 이동할 때 데이터의 상태만 유지됩니�
 
 >[!NOTE]
 >
-Forms 서비스에 대한 자세한 내용은 AEM Forms용 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
+>Forms 서비스에 대한 자세한 내용은 AEM Forms용 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ## 단계 요약 {#summary-of-steps}
 
@@ -226,11 +226,11 @@ HTML 양식에 HTML 도구 모음이 표시되면 사용자는 양식 데이터�
 
 >[!NOTE]
 >
-도구 모음을 사용하여 HTML 양식을 렌더링하는 것은 선택 사항입니다.
+>도구 모음을 사용하여 HTML 양식을 렌더링하는 것은 선택 사항입니다.
 
 >[!NOTE]
 >
-AHTML 양식을 렌더링하는 경우 양식에 도구 모음을 추가하지 않는 것이 좋습니다.
+>AHTML 양식을 렌더링하는 경우 양식에 도구 모음을 추가하지 않는 것이 좋습니다.
 
 **HTML 양식 렌더링**
 
@@ -282,7 +282,7 @@ Forms API(Java)를 사용하여 HTML 양식 렌더링:
 
    >[!NOTE]
    >
-   `StandAlone` 옵션이 `true`이고 `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 참조하는 경우 Forms이 HTML에서 렌더링되지 않았습니다(`ApplicationWebRoot` 값은 `FormsServiceClient` 개체의 `(Deprecated) renderHTMLForm` 메서드에 전달된 `URLSpec` 개체를 사용하여 지정됨). `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 서버의 다른 서버인 경우 관리 콘솔의 웹 루트 URI 값을 양식의 웹 응용 프로그램 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > Forms 를 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer 로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.
+   >`StandAlone` 옵션이 `true`이고 `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 참조하는 경우 Forms이 HTML에서 렌더링되지 않았습니다(`ApplicationWebRoot` 값은 `FormsServiceClient` 개체의 `(Deprecated) renderHTMLForm` 메서드에 전달된 `URLSpec` 개체를 사용하여 지정됨). `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 서버의 다른 서버인 경우 관리 콘솔의 웹 루트 URI 값을 양식의 웹 응용 프로그램 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > Forms 를 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer 로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.
 
 1. HTML 양식 렌더링
 
@@ -340,7 +340,7 @@ Forms API(웹 서비스)를 사용하여 HTML 양식 렌더링:
 
    >[!NOTE]
    >
-   `StandAlone` 옵션이 `true`이고 `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 참조하는 경우 Forms이 HTML에서 렌더링되지 않았습니다(`ApplicationWebRoot` 값은 `FormsServiceClient` 개체의 `(Deprecated) renderHTMLForm` 메서드에 전달된 `URLSpec` 개체를 사용하여 지정됨). `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 서버의 다른 서버인 경우 관리 콘솔의 웹 루트 URI 값을 양식의 웹 응용 프로그램 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > Forms 를 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer 로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.
+   >`StandAlone` 옵션이 `true`이고 `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 참조하는 경우 Forms이 HTML에서 렌더링되지 않았습니다(`ApplicationWebRoot` 값은 `FormsServiceClient` 개체의 `(Deprecated) renderHTMLForm` 메서드에 전달된 `URLSpec` 개체를 사용하여 지정됨). `ApplicationWebRoot`이(가) AEM Forms을 호스팅하는 서버의 다른 서버인 경우 관리 콘솔의 웹 루트 URI 값을 양식의 웹 응용 프로그램 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > Forms 를 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer 로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.
 
 1. HTML 양식 렌더링
 

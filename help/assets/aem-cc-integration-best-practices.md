@@ -118,8 +118,8 @@ Experience Manager에 대한 ![Creative Cloud 연결, 사용할 기능 결정](a
 * Adobe 스톡의 자산이 [!DNL Experience Manager]에 저장되면 [!DNL Experience Manager] 저장소에 저장된 바이너리를 사용하는 일반 [!DNL Assets]이(가) 됩니다. [!DNL Adobe Stock]과(와) 관련된 일부 메타데이터가 [!DNL Experience Manager]의 에셋에 대해 저장되었습니다. 그렇지 않으면 수집 프로세스는 다른 파일과 동일하게 표시됩니다. 예를 들어 스마트 태그가 활성화되어 있으면 저장할 때 태그가 이러한 에셋에 추가됩니다.
 * [!DNL Experience Manager]에 저장된 자산은 복사본이 아니며 [!DNL Adobe Stock]에 다시 연결되는 링크가 아닙니다.
 
-**자산을 [!DNL Adobe Stock]에서[!DNL Creative Cloud]**&#x200B;의 [!DNL Experience Manager](으)로 저장한 상태로 작업. 이 통합은 [!DNL Adobe Asset Link]과(와) 독립적이지만 [!DNL Adobe Asset Link]은(는) 이러한 방식으로 [!DNL Stock]에서 저장된 이러한 자산을 인식하고 [!DNL Photoshop], [!DNL Illustrator] 또는 [!DNL InDesign]의 [!DNL Adobe Asset Link] 확장 UI에서 이러한 자산에 추가 메타데이터 및 [!DNL Adobe Stock] 로고를 표시합니다. 파일은 [!DNL Experience Manager]에 저장될 때 일반 자산이므로 탐색, 열기 등에 사용할 수 있습니다.
-[!DNL Creative Cloud] 앱에서 [!DNL Adobe Asset Link] 확장을 사용하여 작업하는 크리에이티브 사용자는 [!DNL Adobe Stock]에서 [!DNL Experience Manager](으)로 이미 라이선스가 부여된 자산에 액세스할 수 있을 뿐만 아니라 [!DNL Creative Cloud] 라이브러리 패널을 사용하여 [!DNL Adobe Stock] 자산을 검색, 미리 보기 및 라이선스할 수도 있습니다.
+**자산을 [!DNL Adobe Stock]에서[!DNL Creative Cloud]**&#x200B;의 [!DNL Experience Manager] (으)로 저장한 상태로 작업. 이 통합은 [!DNL Adobe Asset Link]과(와) 독립적이지만 [!DNL Adobe Asset Link]은(는) 이러한 방식으로 [!DNL Stock]에서 저장된 이러한 자산을 인식하고 [!DNL Photoshop], [!DNL Illustrator] 또는 [!DNL InDesign]의 [!DNL Adobe Asset Link] 확장 UI에서 이러한 자산에 추가 메타데이터 및 [!DNL Adobe Stock] 로고를 표시합니다. 파일은 [!DNL Experience Manager]에 저장될 때 일반 자산이므로 탐색, 열기 등에 사용할 수 있습니다.
+[!DNL Creative Cloud] 앱에서 [!DNL Adobe Asset Link] 확장을 사용하여 작업하는 크리에이티브 사용자는 [!DNL Adobe Stock]에서 [!DNL Experience Manager] (으)로 이미 라이선스가 부여된 자산에 액세스할 수 있을 뿐만 아니라 [!DNL Creative Cloud] 라이브러리 패널을 사용하여 [!DNL Adobe Stock] 자산을 검색, 미리 보기 및 라이선스할 수도 있습니다.
 [!DNL Adobe Stock]의 [!DNL Assets] 라이선스가 부여되고 [!DNL Experience Manager]에 저장된 값은 [!DNL Experience Manager Assets] 배포에 액세스하는 더 광범위한 팀에서 사용할 수 있게 되지만 [!DNL Adobe Stock]에서 [!DNL Creative Cloud] 라이브러리 패널을 통해 자산을 라이선스하는 크리에이티브 팀은 기본적으로 [!DNL Creative Cloud] 계정에서만 사용할 수 있도록 합니다.
 
 <!-- 

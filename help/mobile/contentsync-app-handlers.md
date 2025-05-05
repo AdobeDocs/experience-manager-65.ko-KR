@@ -63,8 +63,8 @@ Content Sync Handler 개발에 대한 다음 지침을 참조하십시오.
 
 * ***type - 문자열 - mobilecontentlisting***
 * ***경로*** - 문자열 - 빈 상태로 유지해야 올바른 처리기로 표시되지만 경로가 현재 ContentSync 캐시로 유추됩니다. 이 값은 무시됩니다.
-* ***targetRootDirectory* -**문자열 - 이 처리기의 콘텐츠 업데이트에 대한 대상 루트로 경로에 추가할 접두사입니다.
-* ContentSync에서 이 처리기를 실행하려면 ***순서 - Long* -**순서를 지정합니다. 이 숫자는 100과 같은 다른 모든 처리기보다 높게 설정해야 합니다. 기존 콘텐츠 핸들러 다음에 실행해야 합니다.
+* ***targetRootDirectory* -**&#x200B;문자열 - 이 처리기의 콘텐츠 업데이트에 대한 대상 루트로 경로에 추가할 접두사입니다.
+* ContentSync에서 이 처리기를 실행하려면 ***순서 - Long* -**&#x200B;순서를 지정합니다. 이 숫자는 100과 같은 다른 모든 처리기보다 높게 설정해야 합니다. 기존 콘텐츠 핸들러 다음에 실행해야 합니다.
 
 ```xml
 {
@@ -91,7 +91,7 @@ Content Sync Handler 개발에 대한 다음 지침을 참조하십시오.
 * ***type - 문자열 - mobilecontentpackagelistening***
 * ***경로&#x200B;**-**문자열*** - 앱 셸의 경로(페이지 유형=app-instance인 노드).
 * ***targetRootDirectory - 문자열*** - 이 처리기의 콘텐츠 업데이트에 대한 대상 루트로 경로에 추가할 접두사입니다.
-* ***순서 - Long* -**ContentSync에서 이 처리기를 실행하는 순서. 이 숫자는 100과 같은 다른 모든 처리기보다 높게 설정해야 합니다. 기존 콘텐츠 핸들러 다음에 실행해야 합니다.
+* ***순서 - Long* -**&#x200B;ContentSync에서 이 처리기를 실행하는 순서. 이 숫자는 100과 같은 다른 모든 처리기보다 높게 설정해야 합니다. 기존 콘텐츠 핸들러 다음에 실행해야 합니다.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Content Sync Handler 개발에 대한 다음 지침을 참조하십시오.
 
 이 처리기는 AEM 앱 셸 ContentSync 구성(페이지 유형=[앱 인스턴스]인 노드)에서 사용해야 합니다.
 
-* ***type - String* - **widgetconfig
+* ***type - String* - &#x200B;** widgetconfig
 * ***경로&#x200B;**-**문자열*** - 모든 앱 셸 하위 노드의 경로(pge-type=[app-instance]인 노드).
 * ***targetRootDirectory - 문자열*** - 이 처리기의 콘텐츠 업데이트에 대한 대상 루트로 경로에 추가할 접두사입니다.
 * ***targetIconDirectory - 문자열*** - 앱의 아이콘을 배치할 디렉터리입니다.

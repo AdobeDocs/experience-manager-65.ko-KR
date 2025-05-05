@@ -37,7 +37,7 @@ Firefox 및 Chrome에서 XFA 기반 PDF forms을 사용하려면 다음 단계�
 
 1. 애플리케이션 탭의 검색 필드에 PDF을 입력합니다.
 
-1. 검색 결과의 Portable Document Format(PDF) 컨텐츠 유형에 대해 작업 드롭다운 목록에서 **Adobe Acrobat 사용(Firefox에서)**을 선택합니다.
+1. 검색 결과의 Portable Document Format(PDF) 컨텐츠 유형에 대해 작업 드롭다운 목록에서 **Adobe Acrobat 사용(Firefox에서)**&#x200B;을 선택합니다.
    ![use-adobe-acrobat](/help/forms/using/assets/use-adobe-acrobat.png)
 1. 확인을 클릭합니다.
 

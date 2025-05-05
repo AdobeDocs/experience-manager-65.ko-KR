@@ -19,7 +19,7 @@ ht-degree: 11%
 # Adobe Experience Manager 6.5 Communities 안내서 {#communities}
 
 + [Communities 안내서](home.md)
-+ AEM Communities {#introduction} 소개
++ AEM Communities 소개 {#introduction}
    + [커뮤니티 사이트](administer-landing.md)
    + [AEM Communities 개요](overview.md)
    + [AEM Communities 시작](getting-started.md)
@@ -27,7 +27,7 @@ ht-degree: 11%
    + [새 커뮤니티 사이트 작성자](create-site.md)
    + [게시된 사이트 경험](published-site.md)
    + [중첩된 그룹 작성](nested-groups.md)
-+ {#deploy} 배포 중
++ 배포 중{#deploy}
    + [커뮤니티 배포](deploy-communities.md)
    + [AEM 6.5 커뮤니티로 업그레이드](upgrade.md)
    + [커뮤니티에 대해 권장되는 토폴로지](topologies.md)
@@ -65,7 +65,7 @@ ht-degree: 11%
    + [DSRP - 관계형 데이터베이스 저장소 리소스 제공자](dsrp.md)
    + [DSRP에 대한 MySQL 구성](dsrp-mysql.md)
    + [JSRP - JCR 저장소 리소스 제공자](jsrp.md)
-   + SRP에 대한 [Solr 구성](solr.md)
+   + [SRP에 대한 Solr 구성](solr.md)
    + [사용자 생성 컨텐츠 태깅](tag-ugc.md)
    + [사용자 생성 콘텐츠 번역](translate-ugc.md)
    + [커뮤니티 사용자 동기화](sync.md)

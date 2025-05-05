@@ -38,7 +38,7 @@ ht-degree: 10%
 
 * 먼저 에셋을 만드는 기본 애플리케이션이 일부 메타데이터를 에셋에 추가합니다. 예를 들어 [Acrobat은 일부 메타데이터를 PDF 파일에 추가하거나](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) 카메라는 일부 기본 메타데이터를 사진에 추가합니다. 에셋을 생성할 때 기본 애플리케이션 자체에 메타데이터를 추가할 수 있습니다. 예를 들어 [Adobe Lightroom에 IPTC 메타데이터를 추가](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html)할 수 있습니다.
 
-* 에셋을 [!DNL Experience Manager]에 업로드하기 전에 에셋을 만드는 데 사용되는 기본 응용 프로그램이나 다른 메타데이터 편집 응용 프로그램을 사용하여 메타데이터를 편집하고 수정할 수 있습니다. 에셋을 Experience Manager에 업로드하면 메타데이터가 처리됩니다. 예를 들어, [을(를)  [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)에서 메타데이터로 작업하고 [!DNL Adobe Exchange]에서  [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)에 대한 [태그 패널을 보는 방법을 참조하십시오.
+* 에셋을 [!DNL Experience Manager]에 업로드하기 전에 에셋을 만드는 데 사용되는 기본 응용 프로그램이나 다른 메타데이터 편집 응용 프로그램을 사용하여 메타데이터를 편집하고 수정할 수 있습니다. 에셋을 Experience Manager에 업로드하면 메타데이터가 처리됩니다. 예를 들어, [을(를)  [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)에서 메타데이터로 작업하고 [!DNL Adobe Exchange]에서  [!DNL Adobe Bridge][&#128279;](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)에 대한 태그 패널을 보는 방법을 참조하십시오.
 
 * [!DNL Experience Manager Assets]에서 [!UICONTROL 속성] 페이지에서 자산의 메타데이터를 수동으로 추가하거나 편집할 수 있습니다.
 

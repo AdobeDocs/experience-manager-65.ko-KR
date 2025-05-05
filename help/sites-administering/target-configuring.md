@@ -88,9 +88,9 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭합니다.
    >AEM으로 A4T를 구성할 때 구성 참조 누락 항목이 표시될 수 있습니다. Analytics 프레임워크를 선택하려면 다음을 수행하십시오.
    >
    >1. **도구** > **일반** > **CRXDE Lite**(으)로 이동합니다.
-   1. [A4T Analytics 구성 대화 상자](#a4t-analytics-config-dialog)(아래 참조)로 이동합니다.
-   1. **disable** 속성을 **false**(으)로 설정하십시오.
-   1. **모두 저장**&#x200B;을 클릭합니다.
+   >1. [A4T Analytics 구성 대화 상자](#a4t-analytics-config-dialog)(아래 참조)로 이동합니다.
+   >1. **disable** 속성을 **false**(으)로 설정하십시오.
+   >1. **모두 저장**&#x200B;을 클릭합니다.
 
 #### A4T 분석 구성 대화 상자 {#a4t-analytics-config-dialog}
 
@@ -108,16 +108,16 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭합니다.
 
 >[!NOTE]
 >
-Target 라이브러리 파일 [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/)은(는) 일반적인 웹 구현과 단일 페이지 애플리케이션 둘 다에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다. mbox.js 대신 AT.js를 클라이언트 라이브러리로 사용하는 것이 좋습니다.
+>Target 라이브러리 파일 [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/)은(는) 일반적인 웹 구현과 단일 페이지 애플리케이션 둘 다에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다. mbox.js 대신 AT.js를 클라이언트 라이브러리로 사용하는 것이 좋습니다.
 >
-AT.js는 mbox.js 라이브러리에 비해 몇 가지 개선점을 제공합니다.
+>AT.js는 mbox.js 라이브러리에 비해 몇 가지 개선점을 제공합니다.
 >
-* 웹 구현에 대한 페이지 로드 시간 개선
-* 보안 개선
-* 단일 페이지 애플리케이션에 대한 구현 옵션 개선
-* AT.js에는 target.js에 포함된 구성 요소도 포함되어 있으므로 더 이상 target.js를 호출할 필요가 없습니다.
+>* 웹 구현에 대한 페이지 로드 시간 개선
+>* 보안 개선
+>* 단일 페이지 애플리케이션에 대한 구현 옵션 개선
+>* AT.js에는 target.js에 포함된 구성 요소도 포함되어 있으므로 더 이상 target.js를 호출할 필요가 없습니다.
 >
-**클라이언트 라이브러리** 드롭다운 메뉴에서 AT.js 또는 mbox.js를 선택할 수 있습니다.
+>**클라이언트 라이브러리** 드롭다운 메뉴에서 AT.js 또는 mbox.js를 선택할 수 있습니다.
 
 <!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
@@ -151,12 +151,12 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
    >[!NOTE]
    >
-   AEM으로 A4T를 구성할 때 구성 참조 누락 항목이 표시될 수 있습니다. Analytics 프레임워크를 선택하려면 다음을 수행하십시오.
+   >AEM으로 A4T를 구성할 때 구성 참조 누락 항목이 표시될 수 있습니다. Analytics 프레임워크를 선택하려면 다음을 수행하십시오.
    >
-   1. **도구** > **일반** > **CRXDE Lite**(으)로 이동합니다.
-   1. **/libs/cq/analytics/components/testandtargetpage/dialog/items/tab/items/tab1_general/items/a4tAnalyticsConfig**(으)로 이동합니다.
-   1. **disable** 속성을 **false**(으)로 설정하십시오.
-   1. **모두 저장**&#x200B;을 클릭합니다.
+   >1. **도구** > **일반** > **CRXDE Lite**(으)로 이동합니다.
+   >1. **/libs/cq/analytics/components/testandtargetpage/dialog/items/tab/items/tab1_general/items/a4tAnalyticsConfig**(으)로 이동합니다.
+   >1. **disable** 속성을 **false**(으)로 설정하십시오.
+   >1. **모두 저장**&#x200B;을 클릭합니다.
 
 1. 대화 상자에서 이러한 속성의 값을 입력합니다.
 
@@ -175,13 +175,13 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
    >[!NOTE]
    >
-   Adobe Target 구성 마법사에 옵트인하면 정확한 타겟팅은 기본적으로 활성화되어 있습니다.
+   >Adobe Target 구성 마법사에 옵트인하면 정확한 타겟팅은 기본적으로 활성화되어 있습니다.
    >
-   정확한 타겟팅은 클라우드 서비스 구성이 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기함을 의미합니다. 결과적으로 성능 측면에서 정확한 타겟팅을 사용하면 콘텐츠를 로드하기 전에 몇 밀리초의 지연이 발생할 수 있습니다.
+   >정확한 타겟팅은 클라우드 서비스 구성이 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기함을 의미합니다. 결과적으로 성능 측면에서 정확한 타겟팅을 사용하면 콘텐츠를 로드하기 전에 몇 밀리초의 지연이 발생할 수 있습니다.
    >
-   작성자 인스턴스에서는 정확한 타겟팅이 항상 활성화되어 있습니다. 그러나 게시 인스턴스에서는 클라우드 서비스 구성에서 정확한 타겟팅 옆에 있는 확인 표시를 지움으로써 정확한 타겟팅을 전역적으로 끌 수도 있습니다(**http://localhost:4502/etc/cloudservices.html**). 또한 클라우드 서비스 구성의 설정에 관계없이 개별 구성 요소에 대해 정확한 타겟팅을 켜거나 끌 수 있습니다.
+   >작성자 인스턴스에서는 정확한 타겟팅이 항상 활성화되어 있습니다. 그러나 게시 인스턴스에서는 클라우드 서비스 구성에서 정확한 타겟팅 옆에 있는 확인 표시를 지움으로써 정확한 타겟팅을 전역적으로 끌 수도 있습니다(**http://localhost:4502/etc/cloudservices.html**). 또한 클라우드 서비스 구성의 설정에 관계없이 개별 구성 요소에 대해 정확한 타겟팅을 켜거나 끌 수 있습니다.
    >
-   타겟팅된 구성 요소를 ***이미*** 만든 다음 이 설정을 변경하는 경우, 해당 변경 내용은 이들 구성 요소에 영향을 미치지 않습니다. 이러한 구성 요소를 직접 변경합니다.
+   >타겟팅된 구성 요소를 ***이미*** 만든 다음 이 설정을 변경하는 경우, 해당 변경 내용은 이들 구성 요소에 영향을 미치지 않습니다. 이러한 구성 요소를 직접 변경합니다.
 
 1. Target에 연결하려면 **Target에 연결**&#x200B;을 클릭하십시오. 정상적으로 연결되면 **연결 성공**&#x200B;이라는 메시지가 표시됩니다. 메시지에서 **확인**&#x200B;을 클릭한 다음 대화 상자에서 **확인**&#x200B;을 클릭합니다.
 
@@ -206,7 +206,7 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 
    >[!NOTE]
    >
-   매핑하면 매개변수는 간단한 문자열을 통해 mbox에 전달됩니다. ContextHub에서는 배열을 매핑할 수 없습니다.
+   >매핑하면 매개변수는 간단한 문자열을 통해 mbox에 전달됩니다. ContextHub에서는 배열을 매핑할 수 없습니다.
 
    예를 들어 사이트 방문자에 대한 **프로필 데이터**&#x200B;를 사용하여 Target 캠페인을 관리하려면 **프로필 데이터** 구성 요소를 페이지에 드래그하십시오. Target 매개변수에 매핑할 수 있는 프로필 데이터 변수가 표시됩니다.
 
@@ -218,7 +218,7 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 
    >[!NOTE]
    >
-   매개변수 동기화는 AEM에서 Adobe Target으로만 할 수 있습니다.
+   >매개변수 동기화는 AEM에서 Adobe Target으로만 할 수 있습니다.
 
 프레임워크가 생성됩니다. 게시 인스턴스로 프레임워크를 복제하려면 sidekick에서 **프레임워크 활성화** 옵션을 사용하십시오.
 
@@ -228,14 +228,14 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 
 >[!NOTE]
 >
-사용 가능한 활동 유형은 다음 방법으로 결정됩니다.
+>사용 가능한 활동 유형은 다음 방법으로 결정됩니다.
 >
 >
-* AEM 측에서 Adobe Target에 연결하는 데 사용되는 Adobe Target 테넌트(클라이언트 코드)에서 **xt_only** 옵션이 활성화되어 있는 경우 AEM에서 **only** XT 활동을 만들 수 있습니다.
+>* AEM 측에서 Adobe Target에 연결하는 데 사용되는 Adobe Target 테넌트(클라이언트 코드)에서 **xt_only** 옵션이 활성화되어 있는 경우 AEM에서 **only** XT 활동을 만들 수 있습니다.
 >
-* Adobe Target 테넌트(clientcode)에서 **xt_only** 옵션이 **not**&#x200B;활성화되어 있으면 AEM에서 **XT 및 A/B 활동을 모두**&#x200B;만들 수 있습니다.
+>* Adobe Target 테넌트(clientcode)에서 **xt_only** 옵션이 **not**&#x200B;활성화되어 있으면 AEM에서 **XT 및 A/B 활동을 모두**&#x200B;만들 수 있습니다.
 >
-**추가 참고:** **xt_only** 옵션은 특정 Target 테넌트(clientcode)에 적용되는 설정이며 Adobe Target에서만 직접 수정할 수 있습니다. AEM에서 이 옵션을 사용하거나 사용하지 않도록 설정할 수 없습니다.
+>**추가 참고:** **xt_only** 옵션은 특정 Target 테넌트(clientcode)에 적용되는 설정이며 Adobe Target에서만 직접 수정할 수 있습니다. AEM에서 이 옵션을 사용하거나 사용하지 않도록 설정할 수 없습니다.
 
 ### Target 프레임워크와 사이트 연결 {#associating-the-target-framework-with-your-site}
 
@@ -255,14 +255,14 @@ AEM에서 Target 프레임워크를 만든 후 웹 페이지를 프레임워크�
 
    >[!NOTE]
    >
-   만든 특정 **프레임워크**&#x200B;을(를) 선택하고 해당 프레임워크를 만든 Target 클라우드 구성은 선택하지 마십시오.
+   >만든 특정 **프레임워크**&#x200B;을(를) 선택하고 해당 프레임워크를 만든 Target 클라우드 구성은 선택하지 마십시오.
 
 1. **완료**&#x200B;를 클릭합니다.
 1. 웹 사이트의 루트 페이지를 활성화하여 게시 서버에 복제합니다. ([Publish 페이지 방법](/help/sites-authoring/publishing-pages.md)을 참조하세요.)
 
    >[!NOTE]
    >
-   페이지에 첨부한 프레임워크가 아직 활성화되지 않은 경우 게시할 수 있는 마법사가 열립니다.
+   >페이지에 첨부한 프레임워크가 아직 활성화되지 않은 경우 게시할 수 있는 마법사가 열립니다.
 
 ## Target 연결 문제 해결 {#troubleshooting-target-connection-problems}
 

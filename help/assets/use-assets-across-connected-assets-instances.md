@@ -42,12 +42,12 @@ ht-degree: 15%
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자는 각 배포에서 적절한 사용자 그룹에 속합니다.
-* [!DNL Adobe Experience Manager] 배포 형식의 경우 지원되는 기준 중 하나가 충족됩니다. as a Cloud Service [!DNL Experience Manager] 6.5 [!DNL Assets]은(는) [!DNL Experience Manager]에서 작동합니다. 이 기능이 [!DNL Experience Manager]에서 [!DNL Cloud Service](으)로 작동하는 방법에 대한 자세한 내용은 [Experience Manageras a Cloud Service 의 연결된 Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html)을 참조하십시오.
+* [!DNL Adobe Experience Manager] 배포 형식의 경우 지원되는 기준 중 하나가 충족됩니다. as a Cloud Service [!DNL Experience Manager] 6.5 [!DNL Assets]은(는) [!DNL Experience Manager]에서 작동합니다. 이 기능이 [!DNL Experience Manager]에서 [!DNL Cloud Service] (으)로 작동하는 방법에 대한 자세한 내용은 [Experience Manageras a Cloud Service 의 연결된 Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html)을 참조하십시오.
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | AMS의 [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
   |---|---|---|---|
   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
-  | AMS **의**[!DNL Experience Manager] 6.5 [!DNL Assets] | 지원됨 | 지원됨 | 지원됨 |
+  | AMS **의**&#x200B;[!DNL Experience Manager] 6.5 [!DNL Assets] | 지원됨 | 지원됨 | 지원됨 |
   | **[!DNL Experience Manager]6.5 [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
 ### 지원되는 파일 형식 {#mimetypes}
@@ -93,6 +93,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 1. 기존 [!DNL Sites] 배포에 액세스하거나 다음 명령을 사용하여 배포를 만드십시오.
 
    1. JAR 파일의 폴더에서 터미널에서 다음 명령을 실행하여 각 [!DNL Experience Manager] 서버를 만듭니다.
+
       `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
    1. 몇 분 후에 [!DNL Experience Manager] 서버가 성공적으로 시작됩니다. 이 [!DNL Sites] 배포를 웹 페이지 작성을 위한 로컬 시스템으로 간주합니다(예: `https://[local_sites]:4502`).
@@ -339,7 +340,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 ### 사용 {#usage}
 
 * 작성할 때 원격 자산을 검색하고 로컬 페이지에서 드래그할 수 있습니다. 다른 기능은 지원되지 않습니다.
-* 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. 작성자가 [!UICONTROL 콘텐츠 파인더]에서 [!UICONTROL 페이지 편집기](으)로 원격 자산을 끌어 다시 시도할 수 있습니다.
+* 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. 작성자가 [!UICONTROL 콘텐츠 파인더]에서 [!UICONTROL 페이지 편집기] (으)로 원격 자산을 끌어 다시 시도할 수 있습니다.
 * `Image` 구성 요소를 통해 지원되는 편집과 원본에 영향을 주지 않는 간단한 편집은 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
 * 자산을 다시 가져오는 유일한 방법은 페이지에서 자산을 드래그하는 것입니다. API 지원 또는 업데이트할 에셋을 다시 가져오는 다른 방법은 없습니다.
 * 자산이 DAM에서 서비스 해제된 경우 [!DNL Sites]페이지에서 계속 사용됩니다.

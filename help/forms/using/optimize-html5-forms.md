@@ -60,8 +60,8 @@ Apache는 HTTP 또는 AJP 프로토콜을 사용하여 JBoss와 통신할 수 �
    >프록시를 사용하는 경우 다음 구성 변경이 필요합니다.
    >
    >* 액세스: *https://&lt;server>:&lt;port>/system/console/configMgr*
-   * Apache Sling Referrer Filter 구성 편집
-   * 호스트 허용에서 프록시 서버에 대한 항목을 추가합니다
+   >* Apache Sling Referrer Filter 구성 편집
+   >* 호스트 허용에서 프록시 서버에 대한 항목을 추가합니다
 
 1. 압축을 활성화합니다.
 

@@ -53,5 +53,5 @@ Dynamic Media 회사 별칭 계정을 구성할 때에는 다음 사항에 유�
    ![Dynamic Media 회사 별칭 텍스트 필드](/help/assets/assets-dm/dm-company-alias.png)
 
 1. **[!UICONTROL Dynamic Media 구성 편집]** 페이지의 **[!UICONTROL 회사 별칭]** 텍스트 필드에 이전에 지원 사례에서 지정한 Dynamic Media 별칭 계정 이름을 입력합니다.
-1. 페이지의 오른쪽 상단에서 **[!UICONTROL 저장]**을 선택합니다.
+1. 페이지의 오른쪽 상단에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 이제 Dynamic Media 회사 별칭 계정이 저장되고 활성화됩니다. 기존 및 새 에셋에 대한 모든 URL 및 뷰어 포함 코드는 이제 새 회사 별칭 이름을 반영합니다.

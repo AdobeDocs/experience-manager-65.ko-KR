@@ -51,7 +51,7 @@ Quickstart는 Eclipse Jetty 9.4.15를 서블릿 엔진으로 사용합니다.
 
 #### Java™ 개발 {#java-development}
 
-* 이제 Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)의 [두 버전, 사용 중지로 표시되지 않은 공용 인터페이스가 포함된 권장 버전 및 사용 중지로 표시된 인터페이스가 포함된 버전이 있습니다.
+* 이제 Uberjar[&#128279;](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)의 두 버전, 사용 중지로 표시되지 않은 공용 인터페이스가 포함된 권장 버전 및 사용 중지로 표시된 인터페이스가 포함된 버전이 있습니다.
 
 #### 사용자 인터페이스 {#user-interface}
 
@@ -157,9 +157,11 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
      ```
 
    * data-sly-set을 사용한 변수 선언:
+
      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * 목록 및 반복 제어 매개 변수: begin, step, end:
+
      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * data-sly-unwrap용 식별자:

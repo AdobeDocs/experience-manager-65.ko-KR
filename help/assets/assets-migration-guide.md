@@ -1,6 +1,6 @@
 ---
 title: 일괄 에셋 마이그레이션
-description: 자산을  [!DNL Adobe Experience Manager](으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
+description: 자산을  [!DNL Adobe Experience Manager] (으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # 자산을 일괄적으로 마이그레이션하는 방법 {#assets-migration-guide}
 
-자산을 [!DNL Adobe Experience Manager](으)로 마이그레이션할 때 고려해야 할 단계가 몇 가지 있습니다. 자산 및 메타데이터를 현재 홈에서 추출하는 방법은 구현마다 크게 다르므로 이 문서의 범위를 벗어납니다. 그러나 이 문서에서는 이러한 자산을 [!DNL Experience Manager](으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
+자산을 [!DNL Adobe Experience Manager] (으)로 마이그레이션할 때 고려해야 할 단계가 몇 가지 있습니다. 자산 및 메타데이터를 현재 홈에서 추출하는 방법은 구현마다 크게 다르므로 이 문서의 범위를 벗어납니다. 그러나 이 문서에서는 이러한 자산을 [!DNL Experience Manager] (으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -33,9 +33,9 @@ ht-degree: 6%
 >
 >This software are open source and covered by the [Apache v2 License](https://adobe-consulting-services.github.io/pages/license.html). To ask a question or report an issue, visit the respective [GitHub Issues for ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) and [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## [!DNL Experience Manager](으)로 마이그레이션 {#migrating-to-aem}
+## [!DNL Experience Manager] (으)로 마이그레이션 {#migrating-to-aem}
 
-자산을 [!DNL Experience Manager](으)로 마이그레이션하려면 몇 가지 단계가 필요하며, 이를 단계별 프로세스로 간주해야 합니다. 마이그레이션 단계는 다음과 같습니다.
+자산을 [!DNL Experience Manager] (으)로 마이그레이션하려면 몇 가지 단계가 필요하며, 이를 단계별 프로세스로 간주해야 합니다. 마이그레이션 단계는 다음과 같습니다.
 
 1. 워크플로우를 비활성화합니다.
 1. 태그를 로드합니다.
@@ -131,7 +131,7 @@ Other options for getting assets to the publish farm include using [vlt-rcp](htt
    * **자격 증명 모음 원격 복사본** 또는 vlt rcp를 사용하면 네트워크에서 vlt를 사용할 수 있습니다. 소스 및 대상 디렉토리를 지정할 수 있으며 vlt는 한 인스턴스에서 모든 저장소 데이터를 다운로드하고 다른 인스턴스로 로드합니다. Vlt rcp는 [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)에 설명되어 있습니다.
    * **Grabbit**&#x200B;은(는) Time Warner Cable에서 [!DNL Experience Manager] 구현을 위해 개발한 오픈 소스 콘텐츠 동기화 도구입니다. 지속적인 데이터 스트림을 사용하므로 vlt rcp에 비해 지연 시간이 짧고 vlt rcp보다 2~10배 빠른 속도 개선을 주장합니다. Grabbit은 또한 델타 컨텐츠 동기화만 지원하므로 초기 마이그레이션 과정이 완료된 후 변경 사항을 동기화할 수 있습니다.
 
-1. 에셋 활성화: [!DNL Experience Manager](으)로의 초기 마이그레이션에 대해 문서화된 [에셋 활성화](#activating-assets)에 대한 지침을 따르십시오.
+1. 에셋 활성화: [!DNL Experience Manager] (으)로의 초기 마이그레이션에 대해 문서화된 [에셋 활성화](#activating-assets)에 대한 지침을 따르십시오.
 
 1. 복제 게시: 새로운 마이그레이션과 마찬가지로 단일 게시 인스턴스를 로드하고 복제하는 것이 두 노드에서 콘텐츠를 활성화하는 것보다 효율적입니다. [Publish 복제](#cloning-publish)를 참조하십시오.
 

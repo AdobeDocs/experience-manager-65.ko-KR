@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ### 보안 핫픽스 설치 {#install-security-hotfixes}
 
-Adobe](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)에서 제공한 최신 [보안 핫픽스를 설치했는지 확인하십시오.
+Adobe[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)에서 제공한 최신 보안 핫픽스를 설치했는지 확인하십시오.
 
 ### AEM 및 OSGi 콘솔 관리자 계정에 대한 기본 암호 변경 {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -324,7 +324,7 @@ DoS 오용을 방지하기 위해 다음을 수행할 수 있습니다.
 >
 >이 완화 는 Forms을 사용하지 않는 AEM 환경에서만 수행해야 합니다.
 
-AEM은 `FormChooserServlet`에 대한 기본 제공 인덱스를 제공하지 않으므로 쿼리에서 양식 선택기를 사용하면 비용이 많이 드는 저장소 순회를 트리거할 수 있으며 일반적으로 AEM 인스턴스를 중지합니다. **&amp;ast;.form이 있으면 양식 선택기를 감지할 수 있습니다.쿼리의 &amp;ast;** 문자열.
+AEM은 `FormChooserServlet`에 대한 기본 제공 인덱스를 제공하지 않으므로 쿼리에서 양식 선택기를 사용하면 비용이 많이 드는 저장소 순회를 트리거할 수 있으며 일반적으로 AEM 인스턴스를 중지합니다. **&ast;.form이 있으면 양식 선택기를 감지할 수 있습니다.쿼리의 &ast;** 문자열.
 
 이 문제를 완화하기 위해 다음 단계를 수행할 수 있습니다.
 
@@ -377,7 +377,7 @@ AEM에서 승인 가능한 ID를 생성하는 기본 방법이므로 이를 활�
 
 권장되지는 않지만 기존 애플리케이션과의 이전 버전과의 호환성을 위해 이전 구현이 필요한 경우 비활성화할 수 있습니다. 이렇게 하려면 다음을 수행해야 합니다.
 
-1. 웹 콘솔로 이동하여 **Apache Jackrabbit Oak SecurityProvider**&#x200B;의 **requiredServicePids** 속성에서 ** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** 항목을 제거합니다.
+1. 웹 콘솔로 이동하여 **Apache Jackrabbit Oak SecurityProvider**&#x200B;의 **requiredServicePids** 속성에서 **&#x200B; org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** 항목을 제거합니다.
 
    OSGi 구성에서 **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** PID를 찾아 Oak 보안 공급자를 찾을 수도 있습니다.
 

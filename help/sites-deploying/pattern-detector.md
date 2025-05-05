@@ -53,7 +53,7 @@ ht-degree: 1%
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **반응형 텍스트 기반 또는 일반 JSON 인터페이스를 통해**
-* **각 행에 별도의 JSON 문서를 생성하는 **반응성 JSON 라인 인터페이스를 통해).
+* **각 행에 별도의 JSON 문서를 생성하는 &#x200B;** 반응성 JSON 라인 인터페이스를 통해).
 
 이 두 방법은 아래에 자세히 설명되어 있습니다.
 

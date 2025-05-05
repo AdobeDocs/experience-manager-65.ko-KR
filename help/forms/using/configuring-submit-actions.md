@@ -77,7 +77,7 @@ Rest 끝점 제출 작업 구성
 
 >[!NOTE]
 >
-REST URL에서 필드를 매개변수로 전달하려면 필드가 다른 패널에 배치되는 경우에도 모든 필드의 요소 이름이 서로 달라야 합니다.
+>REST URL에서 필드를 매개변수로 전달하려면 필드가 다른 패널에 배치되는 경우에도 모든 필드의 요소 이름이 서로 달라야 합니다.
 
 ### Post이 리소스 또는 외부 나머지 끝점에 데이터를 제출했습니다.  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
@@ -108,7 +108,7 @@ REST URL에서 필드를 매개변수로 전달하려면 필드가 다른 패널
 
 >[!NOTE]
 >
-이메일에 양식 데이터를 포함하기 위해서는 모든 양식 필드에 서로 다른 패널에 배치된 경우에도 서로 다른 요소 이름이 있어야 합니다.
+>이메일에 양식 데이터를 포함하기 위해서는 모든 양식 필드에 서로 다른 패널에 배치된 경우에도 서로 다른 요소 이름이 있어야 합니다.
 
 ## 이메일을 통해 PDF 보내기 {#send-pdf-via-email}
 
@@ -116,7 +116,7 @@ REST URL에서 필드를 매개변수로 전달하려면 필드가 다른 패널
 
 >[!NOTE]
 >
-이 제출 액션은 기록 문서 템플릿이 있는 XFA 기반 적응형 양식 및 XSD 기반 적응형 양식에 사용할 수 있습니다.
+>이 제출 액션은 기록 문서 템플릿이 있는 XFA 기반 적응형 양식 및 XSD 기반 적응형 양식에 사용할 수 있습니다.
 
 ## Forms Workflow 호출 {#invoke-a-forms-workflow}
 
@@ -150,7 +150,7 @@ Forms 포털 및 제출 액션에 대한 자세한 내용은 [초안 및 제출 
 
 >[!NOTE]
 >
-워크플로 모델이 외부 데이터 스토리지에 대해 표시되는지 여부에 관계없이 변수를 사용할 수 있습니다.
+>워크플로 모델이 외부 데이터 스토리지에 대해 표시되는지 여부에 관계없이 변수를 사용할 수 있습니다.
 
 * **첨부 파일**: **[!UICONTROL 첨부 파일 경로]** 옵션을 사용하여 폴더 이름을 지정하면 적응형 양식에 업로드된 첨부 파일을 저장할 수 있습니다. 페이로드를 기준으로 폴더를 생성합니다. 워크플로가 외부 데이터 스토리지로 표시되면 변수 옵션을 사용하고 워크플로 모델에 제공되는 변수 목록에서 변수를 선택합니다.
 
@@ -173,7 +173,7 @@ Forms 포털 및 제출 액션에 대한 자세한 내용은 [초안 및 제출 
 
 >[!NOTE]
 >
-Microsoft® SharePoint 목록으로 제출 기능은 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
+>Microsoft® SharePoint 목록으로 제출 기능은 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
 
 **[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint 저장소와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® Sharepoint Storage에 제출할 수 있습니다.
 
@@ -199,7 +199,7 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
      >[!NOTE]
      >
-     **클라이언트 보안** 필드는 Azure Active Directory 애플리케이션 구성에 따라 필수 또는 선택 사항입니다. 애플리케이션을 구성하여 클라이언트 보안을 사용하는 경우 클라이언트 보안을 제공해야 합니다.
+     >**클라이언트 보안** 필드는 Azure Active Directory 애플리케이션 구성에 따라 필수 또는 선택 사항입니다. 애플리케이션을 구성하여 클라이언트 보안을 사용하는 경우 클라이언트 보안을 제공해야 합니다.
 
 1. **[!UICONTROL 연결]**&#x200B;을 클릭합니다. 연결이 완료되면 `Connection Successful` 메시지가 나타납니다.
 1. 드롭다운 목록에서 **[!UICONTROL SharePoint 사이트]** 및 **[!UICONTROL SharePoint 목록]**&#x200B;을 선택합니다.
@@ -218,16 +218,16 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
 >[!NOTE]
 >
-Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습니다.
-* 이미지 열
-* 메타데이터 열
-* 개인 열
-* 외부 데이터 열
+>Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습니다.
+>* 이미지 열
+>* 메타데이터 열
+>* 개인 열
+>* 외부 데이터 열
 
 
 >[!NOTE]
 >
-구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
+>구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
 
 ## 적응형 양식에서 서버측 유효성 재검사 {#server-side-revalidation-in-adaptive-form}
 
@@ -255,7 +255,7 @@ Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습�
 
 >[!NOTE]
 >
-서버측 유효성 검사는 양식 모델의 유효성을 검사합니다. 유효성 검사를 위해 별도의 클라이언트 라이브러리를 만들고 동일한 클라이언트 라이브러리에서 HTML 스타일링 및 DOM 조작과 같은 다른 항목과 혼합하지 않는 것이 좋습니다.
+>서버측 유효성 검사는 양식 모델의 유효성을 검사합니다. 유효성 검사를 위해 별도의 클라이언트 라이브러리를 만들고 동일한 클라이언트 라이브러리에서 HTML 스타일링 및 DOM 조작과 같은 다른 항목과 혼합하지 않는 것이 좋습니다.
 
 ### 유효성 검사 표현식에서 사용자 정의 함수 지원 {#supporting-custom-functions-in-validation-expressions-br}
 

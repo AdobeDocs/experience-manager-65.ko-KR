@@ -140,7 +140,7 @@ ht-degree: 8%
 다음 단계를 수행하여 자산 브라우저를 사용하여 적응형 양식을 하위 양식으로 추가합니다.
 
 1. 편집 모드에서 상위 양식을 엽니다.
-1. 사이드바에서 **Assets** ![에셋-브라우저](assets/assets-browser.png)을 클릭합니다. Assets 아래의 드롭다운에서 **적응형 양식**을(를) 선택합니다.
+1. 사이드바에서 **Assets** ![에셋-브라우저](assets/assets-browser.png)을 클릭합니다. Assets 아래의 드롭다운에서 **적응형 양식**&#x200B;을(를) 선택합니다.
    [![Assets에서 적응형 양식 선택](assets/asset.png)](assets/asset-1.png)
 
 1. 하위 양식으로 추가할 적응형 양식을 드래그 앤 드롭합니다.

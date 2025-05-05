@@ -121,8 +121,8 @@ nosamplecontent 실행 모드는 프로덕션 설치용으로 설계되었습니
 여러 실행 모드에 대한 구성을 정의한 경우 시작 시 사용할 구성을 정의해야 합니다. 사용할 실행 모드를 지정하는 방법에는 몇 가지가 있습니다. 해결 순서는 다음과 같습니다.
 
 1. [시스템 속성(](#using-a-system-property-in-the-start-script)
-1. [](#using-the-sling-properties-file)
-1. [](#using-the-r-option)
+1. [&#128279;](#using-the-sling-properties-file)
+1. [&#128279;](#using-the-r-option)
 1. [파일 이름 감지](#filename-detection-renaming-the-jar-file)
 
 응용 프로그램 서버를 사용하는 경우 [web.xml에서 실행 모드를 정의](#defining-the-run-mode-in-web-xml-with-application-server)할 수도 있습니다.

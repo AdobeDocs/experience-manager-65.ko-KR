@@ -100,7 +100,7 @@ Adobe Experience Manager은 다음 버전의 Java™ 가상 시스템과 함께 
 | Azul Zulu OpenJDK 11 - 64비트 | A: 지원되는 `[3]` | |
 | Azul Zulu OpenJDK 8 - 64비트 | A: 지원됨 `[3]` | |
 
-1. Oracle은 Oracle Java™ SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java™ 9, Java™ 10 및 Java™ 12는 Oracle의 비 LTS 릴리스입니다(Oracle Java™ SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html) 참조[). 프로덕션 환경에서 AEM을 배포하기 위해 Adobe Systems에서는 Java™의 LTS 릴리스에 대해서만 지원을 제공합니다. Adobe Systems는 Oracle Java SE 기술을 사용하는 모든 AEM 고객을 위해 LTS 릴리스의 모든 유지보수 업데이트를 포함하여 Oracle Java™™ SE JDK의 지원 및 배포를 직접 지원합니다. [Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)에 대한 Java™ 지원 정책을 참조하십시오.
+1. Oracle은 Oracle Java™ SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java™ 9, Java™ 10 및 Java™ 12는 Oracle의 비 LTS 릴리스입니다(Oracle Java™ SE 지원 로드맵[&#128279;](https://www.oracle.com/technetwork/java/eol-135779.html) 참조). 프로덕션 환경에서 AEM을 배포하기 위해 Adobe Systems에서는 Java™의 LTS 릴리스에 대해서만 지원을 제공합니다. Adobe Systems는 Oracle Java SE 기술을 사용하는 모든 AEM 고객을 위해 LTS 릴리스의 모든 유지보수 업데이트를 포함하여 Oracle Java™™ SE JDK의 지원 및 배포를 직접 지원합니다. [Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)에 대한 Java™ 지원 정책을 참조하십시오.
    **중요사항: Oracle Java™ 11은 최소 2026년 9월까지 지원됩니다. Oracle Java™ 17에 대한 지원을 준비 중입니다.**
 
 1. IBM® JRE는 WebSphere® Application Server와만 지원됩니다.
@@ -148,7 +148,7 @@ Adobe Experience Manager 저장소를 배포하기 위한 다양한 옵션이 �
 
 >[!NOTE]
 >
->MongoDB는 타사 소프트웨어 프로그램이며 AEM 라이선스 패키지에 포함되어 있지 않습니다. 자세한 내용은 MongoDB 라이선스 정책 정책](https://www.mongodb.com/licensing/server-side-public-license/faq) 페이지 페이지를 참조하세요[.
+>MongoDB는 타사 소프트웨어 프로그램이며 AEM 라이선스 패키지에 포함되어 있지 않습니다. 자세한 내용은 MongoDB 라이선스 정책 정책[&#128279;](https://www.mongodb.com/licensing/server-side-public-license/faq) 페이지 페이지를 참조하세요.
 >
 >MongoDB로 AEM 배포 최대한 활용하려면 MongoDB Enterprise 버전 라이선스를 취득하여 전문적인 지원을 받을 Adobe Systems 있습니다. 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk)를 참조하십시오.
 >
@@ -521,7 +521,7 @@ Windows x86의 경우:
 >* PDF 생성 프로그램은 Microsoft® Office 365를 지원하지 않습니다.
 >* OpenOffice용 PDF 생성기 변환은 Windows 및 Linux®에서만 지원됩니다.
 >* OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
->* PDF 생성기 기능을 사용할 수 있도록 Acrobat 버전이 AEM Forms 함께 번들로 제공됩니다. AEM Forms PDF 생성기와 함께 사용하기 위해 AEM Forms 라이센스 기간 동안 AEM Forms가 포함된 번들 버전에만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포(On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))에 따른[ AEM Forms 제품 설명을 참조하십시오.
+>* PDF 생성기 기능을 사용할 수 있도록 Acrobat 버전이 AEM Forms 함께 번들로 제공됩니다. AEM Forms PDF 생성기와 함께 사용하기 위해 AEM Forms 라이센스 기간 동안 AEM Forms가 포함된 번들 버전에만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포(On-Premise[&#128279;](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))에 따른 AEM Forms 제품 설명을 참조하십시오.
 >* PDF 생성기 서비스는 Microsoft® Windows 10을 지원하지 않습니다.
 >* PDF 생성 프로그램이 Microsoft® Visio 2019를 사용하여 파일을 전환 하지 못합니다.
 >* PDF 생성기가 Microsoft® Project 2019를 사용하여 파일을 전환 하지 못합니다.

@@ -205,4 +205,4 @@ Experience Manager의 워크플로 편집기에서 [!UICONTROL Workfront - 사�
 
 [!DNL Workfront] 문서 사용자 정의 양식의 변경 내용을 구독하려면 **[!UICONTROL 고급]** 탭에서 관련 옵션을 선택하십시오. 이 업데이트를 구독하면 [!DNL Workfront] 문서 사용자 지정 양식의 해당 필드가 변경될 때 매핑된 [!DNL Experience Manager] 메타데이터 필드가 업데이트됩니다.
 
-[!DNL Experience Manager]](/help/assets/assets/wf-custom-form-update.png)의 ![Workfront 문서 사용자 지정 양식 업데이트 구성
+[!DNL Experience Manager]![&#128279;](/help/assets/assets/wf-custom-form-update.png)의 Workfront 문서 사용자 지정 양식 업데이트 구성

@@ -44,7 +44,7 @@ Java™ JCR(Content Repository) 표준 [JSR 283](https://developer.adobe.com/exp
 
 사양 리드는 Adobe 리서치(스위스) AG가 담당합니다.
 
-[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지, javax.jcr.&amp;ast;는 저장소 콘텐츠에 직접 액세스하고 조작하는 데 사용됩니다.
+[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지, javax.jcr.&ast;는 저장소 콘텐츠에 직접 액세스하고 조작하는 데 사용됩니다.
 
 ## Experience Server(CRX) 및 Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -285,7 +285,7 @@ Sling에서 스크립트는 REST 서버의 엄격한 개념을 손상시킬 수 
 
 ### Sling API {#sling-api}
 
-Sling API 패키지 org.apache.sling을 사용합니다.&amp;ast; 및 태그 라이브러리
+Sling API 패키지 org.apache.sling을 사용합니다.&ast; 및 태그 라이브러리
 
 ### sling:include를 사용하여 기존 요소 참조 {#referencing-existing-elements-using-sling-include}
 

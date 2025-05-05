@@ -298,6 +298,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
    * **[!UICONTROL 하이퍼링크]**&#x200B;를 선택하십시오.
 
       * Experience Manager Sites 고객의 경우 사이트 선택기 아이콘(폴더)을 선택하여 URL로 이동합니다.
+
         >[!NOTE]
         >
         >대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
@@ -310,7 +311,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
    * **[!UICONTROL 경험 조각]**&#x200B;을 선택합니다.
 
-      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**을 선택합니다.
+      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
 [경험 조각](/help/sites-authoring/experience-fragments.md)을 참조하세요.
 
       * 배너에 표시되는 경험 조각의 너비와 높이를 지정합니다.

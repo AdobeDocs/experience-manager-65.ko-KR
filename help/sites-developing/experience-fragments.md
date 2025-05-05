@@ -99,7 +99,7 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
 >[!CAUTION]
 >
->경험 조각에는 ****** [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)만 지원됩니다.
+>경험 조각에는 **&#x200B;**&#x200B;** [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)만 지원됩니다.
 >
 >경험 조각은 편집 가능한 템플릿을 기반으로 하는 페이지에서만 사용할 수 있습니다.
 
@@ -110,9 +110,11 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 1. 두 가지 모두:
 
    1. 템플릿의 리소스 유형(초기 노드)은 다음 항목에서 상속해야 합니다.
+
       `cq/experience-fragments/components/xfpage`
 
    1. 그리고 템플릿 이름은 다음으로 시작해야 합니다.
+
       `experience-fragments`
 이렇게 하면 이 폴더의 `cq:allowedTemplates` 속성에 `experience-fragment`(으)로 시작하는 이름을 가진 모든 템플릿이 포함되므로 사용자가 /content/experience-fragments에서 경험 조각을 만들 수 있습니다. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
 
@@ -149,7 +151,7 @@ AEM에서는 경험 조각을 만들 수 있습니다. 경험 조각:
 * 구성 요소를 추가합니다.
 * 그런 다음 HTML 형식 또는 JSON 형식으로 Adobe Target 오퍼로 내보냅니다.
 
-AEM 이 기능은 ](/help/sites-administering/experience-fragments-target.md#Prerequisites)의 작성자 인스턴스에서 [사용할 수 있습니다. 유효한 Adobe Target 구성 및 링크 외부화에 대한 구성이 필요합니다.
+AEM 이 기능은 [&#128279;](/help/sites-administering/experience-fragments-target.md#Prerequisites)의 작성자 인스턴스에서 사용할 수 있습니다. 유효한 Adobe Target 구성 및 링크 외부화에 대한 구성이 필요합니다.
 
 링크 외부화는 Target 오퍼의 HTML 버전을 생성할 때 필요한 올바른 URL을 결정하고 이를 Adobe Target으로 전송하는 데 사용됩니다. 이는 Adobe Target에서 Target HTML 오퍼 내의 모든 링크에 공개적으로 액세스할 수 있어야 하므로 필요합니다. 즉, 링크가 참조하는 모든 리소스 및 경험 조각을 사용하려면 먼저 게시해야 합니다.
 

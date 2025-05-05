@@ -55,7 +55,7 @@ Dynamic Media Publish 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
    * [색상 관리 특성](#color-management-attributes-tab) 탭
 
    ![Dynamic Media Publish 설치 페이지](/help/assets/assets-dm/dm-publish-setup.png)
-   *Dynamic Media Publish 설치 페이지(**[!UICONTROL 요청 특성]**탭 선택)*<br><br>
+   *Dynamic Media Publish 설치 페이지(**[!UICONTROL 요청 특성]**&#x200B;탭 선택)*<br><br>
 
 1. 완료되면 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 

@@ -268,6 +268,7 @@ Experience Manager에서 **[!UICONTROL 타임라인]**&#x200B;을(를) **[!UICON
 **[!UICONTROL 목록 보기]**&#x200B;를 사용하는 경우 **[!UICONTROL Dynamic Media]** 게시 상태에 대한 추가 열이 나타납니다.
    * Dynamic Media에 동기화하도록 구성된 폴더는 기본적으로 **[!UICONTROL Dynamic Media]** 열을 표시합니다.
    * Dynamic Media에 동기화하도록 구성된 *not* 폴더에는 Dynamic Media 열이 표시되지 않습니다.
+
      ![목록 보기 및 타임라인](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## 선택적 Publish 문제 해결 {#selective-publish-troubleshoot}

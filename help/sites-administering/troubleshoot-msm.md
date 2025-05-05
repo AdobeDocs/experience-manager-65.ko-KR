@@ -28,12 +28,14 @@ MSM은 리소스 URL의 선택기를 통해 요청할 수 있는 여러 서블�
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * 블루프린트 페이지에서 이를 사용하여 연결된 모든 Live Copy 목록을 추가 Live Copy 상태 정보와 함께 가져올 수 있습니다.
    * 예:
+
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Live Copy 페이지에서 이를 사용하여 블루프린트 페이지와의 연결에 대한 고급 정보를 가져올 수 있습니다. 페이지가 Live Copy가 아닌 경우 아무것도 반환되지 않습니다.
    * 예:
+
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 이들 서블릿은 `com.day.cq.wcm.msm` 로거를 통해 유용하게 사용할 수 있는 디버그 로그 메시지를 생성합니다.

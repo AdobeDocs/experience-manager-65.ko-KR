@@ -81,7 +81,7 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 * [Apache Maven의 최신 릴리스를 설치하십시오.](https://maven.apache.org/download.cgi) Apache Maven은 일반적으로 Java™ 프로젝트에 사용되는 빌드 자동화 도구입니다. 최신 릴리스를 설치하면 테마 맞춤화에 필요한 종속성이 확보됩니다.
 
-* Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)에서 [클라이언트 라이브러리를 만드는 방법을 알아봅니다. AEM은 클라이언트측 코드를 저장소에 저장하고, 범주로 구성하고, 각 코드 범주가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트 라이브러리를 제공합니다.
+* Adobe Experience Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)에서 클라이언트 라이브러리를 만드는 방법을 알아봅니다. AEM은 클라이언트측 코드를 저장소에 저장하고, 범주로 구성하고, 각 코드 범주가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트 라이브러리를 제공합니다.
 
 * 일반 텍스트 편집기를 설치합니다. 예를 들어 Microsoft® Visual Studio Code입니다. Microsoft® 같은 일반 텍스트 편집기를 사용하면 Visual Studio Code에서 테마 파일을 편집하고 수정할 수 있는 사용자 친화적인 환경을 제공합니다.
 

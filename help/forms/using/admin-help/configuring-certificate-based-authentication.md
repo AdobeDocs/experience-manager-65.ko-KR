@@ -60,7 +60,7 @@ User Management는 일반적으로 사용자 이름과 암호를 사용하여 �
    정규 표현식에서 다음 문자를 사용할 수 있습니다.
 
    * . (모든 문자)
-   * &amp;ast;(0회 이상)
+   * &ast;(0회 이상)
    * ()(대괄호로 그룹 지정)
    * \ (정규 표현식 문자를 일반 문자로 이스케이프하는 데 사용됨)
    * $n (n번째 그룹을 참조하는 데 사용됨)
@@ -69,21 +69,21 @@ User Management는 일반적으로 사용자 이름과 암호를 사용하여 �
 
    * &quot;Alex Pink&quot;(인증)에서 &quot;Alex Pink&quot;를 추출하려면
 
-     **정규식:**(.&amp;ast;) \(Authentication\)
+     **정규식:**(.&ast;) \(Authentication\)
 
    * Alex (Authentication) Pink에서 &quot;Alex Pink&quot;를 추출하려면
 
-     **정규식:**(.&amp;ast;)\(Authentication\)(.&amp;ast;)
+     **정규식:**(.&ast;)\(Authentication\)(.&ast;)
 
    * Alex (Authentication) Pink에서 &quot;Pink Alex&quot;를 추출하려면
 
-     **정규식:**(.&amp;ast;)\(Authentication\)(.&amp;ast;)
+     **정규식:**(.&ast;)\(Authentication\)(.&ast;)
 
      사용자 정의 주문: $2 $1(첫 번째 그룹에 연결된 두 번째 그룹을 반환하고 공백 문자로 캡처됨)
 
    * &quot;smtp:apink@sampleorg.com&quot;에서 &quot;apink@sampleorg.com&quot;을 추출하려면
 
-     **정규 표현식:** smtp:(.&amp;ast;)
+     **정규 표현식:** smtp:(.&ast;)
 
    정규 표현식 사용에 대한 자세한 내용은 정규 표현식에 대한 [Java 튜토리얼](https://java.sun.com/docs/books/tutorial/essential/regex/)을 참조하십시오.
 

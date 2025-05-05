@@ -362,7 +362,7 @@ N:charting
 
          * `totals`( `Boolean`)
 
-           **합계**를 표시하는 추가 줄이 표시되어야 하는 경우 True입니다.
+           **합계**&#x200B;를 표시하는 추가 줄이 표시되어야 하는 경우 True입니다.
 기본값: `false`
 
          * `series`( `Long`)
@@ -523,7 +523,7 @@ N:definitions
 
   실제 셀 값을 계산하는 데 사용할 속성을 정의합니다.
 
-  속성이 String[](으)로 정의된 경우 실제 값을 찾기 위해 여러 속성을 차례로 검사합니다.
+  속성이 String[] (으)로 정의된 경우 실제 값을 찾기 위해 여러 속성을 차례로 검사합니다.
 
   예를 들어 다음과 같은 경우:
 
@@ -669,11 +669,11 @@ N:definitions
 
    * `apply`
 
-     초기 전처리 단계(](#processing-queue) 처리 큐 표시의 [단계 3).
+     초기 전처리 단계([&#128279;](#processing-queue) 처리 큐 표시의 단계 3).
 
    * `applyAfter`
 
-     전처리 후 적용합니다(](#processing-queue) 처리 큐 표시의 [9단계).
+     전처리 후 적용합니다([&#128279;](#processing-queue) 처리 큐 표시의 9단계).
 
 #### 해결자 {#resolvers}
 

@@ -52,6 +52,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * 새 OAuth 구성의 클라이언트 ID로 `auth.token.provider.client.id`을(를) 업데이트합니다.
    * `auth.access.token.request`을(를) `"https://ims-na1.adobelogin.com/ims/token/v3"`(으)로 업데이트
@@ -137,7 +138,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
    >[!NOTE]
    >
-   >[!UICONTROL 서비스 URL](으)로 제공된 URL은 브라우저를 통해 액세스할 수 없으며 404 오류가 발생합니다. [!UICONTROL 서비스 URL] 매개 변수의 동일한 값으로 구성이 정상적으로 작동합니다. 전체 서비스 상태 및 유지 관리 일정은 [https://status.adobe.com](https://status.adobe.com)을(를) 참조하십시오.
+   >[!UICONTROL 서비스 URL] (으)로 제공된 URL은 브라우저를 통해 액세스할 수 없으며 404 오류가 발생합니다. [!UICONTROL 서비스 URL] 매개 변수의 동일한 값으로 구성이 정상적으로 작동합니다. 전체 서비스 상태 및 유지 관리 일정은 [https://status.adobe.com](https://status.adobe.com)을(를) 참조하십시오.
 
 1. **[!UICONTROL OAuth 통합을 위한 공개 인증서 다운로드]**&#x200B;를 클릭하고 공개 인증서 파일 `AEM-SmartTags.crt`을(를) 다운로드합니다. 또한 Adobe Developer 콘솔에서 이 인증서를 더 이상 업로드할 필요가 없습니다.
 
@@ -147,7 +148,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 ## Adobe Developer Console 통합 만들기 {#create-adobe-i-o-integration}
 
-스마트 컨텐츠 서비스 API를 사용하려면 Adobe Developer Console에서 통합을 만들어 [!DNL Experience Manager]의 클라우드 구성 [!UICONTROL Assets 스마트 태깅 서비스 설정]에 대한 [!UICONTROL API 키](Adobe Developer Console 통합의 [!UICONTROL 클라이언트 ID] 필드에서 생성됨), [!UICONTROL 기술 계정 ID], [!UICONTROL 조직 ID] 및 [!UICONTROL 클라이언트 암호]를 얻으십시오.
+스마트 컨텐츠 서비스 API를 사용하려면 Adobe Developer Console에서 통합을 만들어 [!DNL Experience Manager]의 클라우드 구성 [!UICONTROL Assets 스마트 태깅 서비스 설정]에 대한 [!UICONTROL API 키] (Adobe Developer Console 통합의 [!UICONTROL 클라이언트 ID] 필드에서 생성됨), [!UICONTROL 기술 계정 ID], [!UICONTROL 조직 ID] 및 [!UICONTROL 클라이언트 암호]를 얻으십시오.
 
 1. 브라우저에서 [https://developer.adobe.com/console/](https://developer.adobe.com/console/)에 액세스합니다. 적절한 계정을 선택하고 관련 조직 역할이 시스템 관리자인지 확인합니다.
 

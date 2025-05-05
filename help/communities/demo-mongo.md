@@ -130,7 +130,7 @@ Solr 실행 방법은 버전 및 설치 방식에 따라 다를 수 있습니다
 >
 >Solr 콘솔을 사용할 수 없는 경우 &lt;solrinstall>/example/logs 아래의 로그를 확인하십시오. SOLR이 해결할 수 없는 특정 호스트 이름에 바인딩하려고 하는지 확인합니다(예: &quot;user-macbook-pro&quot;).
 >
-이 경우 `etc/hosts` 파일을 이 호스트 이름에 대한 새 항목(예: 127.0.0.1 user-macbook-pro)으로 업데이트하여 Solr을 올바르게 시작합니다.
+>이 경우 `etc/hosts` 파일을 이 호스트 이름에 대한 새 항목(예: 127.0.0.1 user-macbook-pro)으로 업데이트하여 Solr을 올바르게 시작합니다.
 
 ### SolrCloud {#solrcloud}
 

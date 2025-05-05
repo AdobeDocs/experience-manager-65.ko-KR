@@ -70,4 +70,4 @@ Dynamic Media의 [비디오 - 비디오에 폐쇄 캡션 추가](/help/assets/vi
 >[!MORELIKETHIS]
 >
 >* [Adobe 솔루션에 대한 접근성](https://www.adobe.com/accessibility.html)
->*  [!DNL Experience Manager Assets]](/help/assets/accessibility.md)의 [접근성
+>*  [!DNL Experience Manager Assets][&#128279;](/help/assets/accessibility.md)의 접근성

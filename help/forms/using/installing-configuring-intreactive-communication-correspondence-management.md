@@ -89,17 +89,17 @@ AEM Forms의 대화형 통신 및 서신 관리 기능을 설치하고 구성하
 AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 대화형 통신, 서신 관리 및 기타 기능이 포함되어 있습니다. 추가 기능 패키지를 설치하려면 다음 단계를 수행하십시오.
 
 1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID가 필요합니다.
-1. 헤더 메뉴에서 사용할 수 있는 Adobe Experience Manager ]**를 선택합니다**[!UICONTROL .
+1. 헤더 메뉴에서 사용할 수 있는 Adobe Experience Manager **를 선택합니다**.
 1. **[!UICONTROL 필터]** 섹션에서 다음을 수행합니다.
-   1. 솔루션&#x200B;]**드롭다운 목록에서**[!UICONTROL  Forms ]**를 선택합니다**[!UICONTROL .
+   1. 솔루션&#x200B;**드롭다운 목록에서**&#x200B;[!UICONTROL &#x200B; Forms &#x200B;]&#x200B;**를 선택합니다**.
    2. 패키지의 버전 및 유형을 선택합니다. 다운로드 Search 옵션을 사용하여 **[!UICONTROL 결과를 필터링할 수도 있습니다]** .
 1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**&#x200B;를 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
-1. 패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) 열고 [패키지&#x200B;]**업로드를 클릭하여**[!UICONTROL &#x200B;패키지를 업로드.
+1. 패키지 관리자(https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) 열고 [패키지&#x200B;]&#x200B;**업로드를 클릭하여**&#x200B;패키지를 업로드.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) 문서에 나열된 [직접 링크 를 통해 패키지를 다운로드 할 수도 있습니다.
+   AEM Forms 릴리스[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) 문서에 나열된 직접 링크 를 통해 패키지를 다운로드 할 수도 있습니다.
 
-1. 패키지가 설치되면 AEM 인스턴스 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms Server를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 AEM-Installation-Directory]/crx-quickstart/logs/error.로그 파일에 [표시되지 않고 로그가 안정적일 때까지 기다립니다.
+1. 패키지가 설치되면 AEM 인스턴스 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms Server를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 AEM-Installation-Directory&rbrack;/crx-quickstart/logs/error.로그 파일에 &lbrack;표시되지 않고 로그가 안정적일 때까지 기다립니다.
 
    >[!NOTE]
    >

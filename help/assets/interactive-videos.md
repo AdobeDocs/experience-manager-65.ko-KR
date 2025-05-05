@@ -660,27 +660,27 @@ Experience Manager에서 반환한 포함 코드에 이미 사용할 준비가 �
   <tbody>
   <tr>
     <td><p>쿼리 문자열에 있는 단일 SKU</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td>URL 경로에 있는 단일 SKU</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td><p>쿼리 문자열의 SKU 및 카테고리 ID</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   </tbody>
 </table>

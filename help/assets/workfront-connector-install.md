@@ -49,6 +49,7 @@ ht-degree: 3%
 1. [!DNL Experience Manager] 사용자 그룹에 `wf-workfront-users`을(를) 만들고 `/content/dam`에 `jcr:all` 권한을 할당합니다.
 1. **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**&#x200B;에 대한 기본 제공 인덱스 정의에 사용자 지정 속성을 추가하십시오. 아래 단계를 실행합니다.
    * **`wfReferenceNumber`**(이)라는 **`nt:unstructured`** 속성을 다음 위치에 추가:
+
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`
    * `true`(으)로 리인덱싱 플래그를 전환하여 `index /oak:index/ntFolderDamLucene`을(를) 리인덱싱합니다.
 

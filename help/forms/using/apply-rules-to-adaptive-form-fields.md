@@ -89,7 +89,7 @@ ht-degree: 0%
 
    ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-1. [!UICONTROL 양식 개체] 탭의 **[!UICONTROL 배달 주소, 상태 및 우편번호]** 필드를 **[!UICONTROL 개체 삭제의 해당 tablename .property(예: customerdetails .shippingAddress)로 끌어서 놓거나**[!UICONTROL  INPUT ]**상자에서]** 필드를 선택하십시오. tablename 접두사가 붙은 모든 필드(예: 이 사용 사례의 경우 customerdetails)는 업데이트 서비스의 입력 데이터 역할을 합니다. 이 필드에 제공된 모든 콘텐츠는 데이터 소스에서 업데이트됩니다.
+1. [!UICONTROL 양식 개체] 탭의 **[!UICONTROL 배달 주소, 상태 및 우편번호]** 필드를 **[!UICONTROL 개체 삭제의 해당 tablename .property(예: customerdetails .shippingAddress)로 끌어서 놓거나**&#x200B;[!UICONTROL &#x200B; INPUT &#x200B;]&#x200B;**상자에서]** 필드를 선택하십시오. tablename 접두사가 붙은 모든 필드(예: 이 사용 사례의 경우 customerdetails)는 업데이트 서비스의 입력 데이터 역할을 합니다. 이 필드에 제공된 모든 콘텐츠는 데이터 소스에서 업데이트됩니다.
 
    >[!NOTE]
    >

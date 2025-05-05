@@ -584,9 +584,9 @@ Document Security 구성 파일을 수정하여 워터마크 요소 수 및 PDF 
 
 다음 설정은 초대됨 사용자 등록 페이지의 이메일 제한 필터 영역에 있습니다.
 
-**제외:** 제외할 사용자 또는 그룹의 전자 메일 주소를 입력합니다. 여러 사용자 또는 그룹을 제외하려면 새 줄에 각 이메일 주소를 입력합니다. 특정 도메인에 속한 모든 사용자를 제외하려면 와일드카드와 도메인 이름을 입력합니다. 예를 들어 example.com 도메인의 모든 사용자를 제외하려면 &amp;ast;.example.com 를 입력합니다.
+**제외:** 제외할 사용자 또는 그룹의 전자 메일 주소를 입력합니다. 여러 사용자 또는 그룹을 제외하려면 새 줄에 각 이메일 주소를 입력합니다. 특정 도메인에 속한 모든 사용자를 제외하려면 와일드카드와 도메인 이름을 입력합니다. 예를 들어 example.com 도메인의 모든 사용자를 제외하려면 &ast;.example.com 를 입력합니다.
 
-**포함:** 포함할 사용자 또는 그룹의 전자 메일 주소를 입력합니다. 여러 사용자 또는 그룹을 포함하려면 새 줄에 각 이메일 주소를 입력합니다. 특정 도메인에 속한 모든 사용자를 포함하려면 와일드카드와 도메인 이름을 입력합니다. 예를 들어 example.com 도메인의 모든 사용자를 포함하려면 &amp;ast;.example.com 를 입력합니다.
+**포함:** 포함할 사용자 또는 그룹의 전자 메일 주소를 입력합니다. 여러 사용자 또는 그룹을 포함하려면 새 줄에 각 이메일 주소를 입력합니다. 특정 도메인에 속한 모든 사용자를 포함하려면 와일드카드와 도메인 이름을 입력합니다. 예를 들어 example.com 도메인의 모든 사용자를 포함하려면 &ast;.example.com 를 입력합니다.
 
 ### 서버 및 등록 계정 매개 변수 {#server-and-registration-account-parameters}
 
@@ -626,7 +626,7 @@ SMTP 호스트에 필요한 경우 SMTP 서버 계정 이름 및 SMTP 서버 계
    >**SMTP 호스트:** smtp.office365.com
    >**포트:** 587
 
-1. 다음으로 config.xml을 업데이트해야 합니다. TLS(전송 계층 보안)에 대해 SMTP를 사용하도록 설정하는 구성](configuring-client-server-options.md#configuration-to-enable-smtp-for-transport-layer-security-tls)을 참조하십시오.[
+1. 다음으로 config.xml을 업데이트해야 합니다. TLS(전송 계층 보안)에 대해 SMTP를 사용하도록 설정하는 구성[&#128279;](configuring-client-server-options.md#configuration-to-enable-smtp-for-transport-layer-security-tls)을 참조하십시오.
 
 >[!NOTE]
 >

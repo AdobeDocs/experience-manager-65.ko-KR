@@ -27,7 +27,7 @@ HTML 5 양식으로 첨부 파일을 업로드하고, 미리 보고, 제출할 �
    | 다중 선택 | true 또는 false(기본적으로 true) |
    | fileSizeLimit | MB 단위(기본적으로 2MB). 예를 들어, 5입니다. |
    | buttonText | 팝업 창의 단추 텍스트(기본적으로 &quot;첨부&quot;) |
-   | 동의 | 수락할 파일 유형을 쉼표로 구분한 목록(&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot;) |
+   | 동의 | 수락할 파일 유형을 쉼표로 구분한 목록(&quot;audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf&quot;) |
 
    예:
 

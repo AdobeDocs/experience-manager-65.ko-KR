@@ -26,7 +26,7 @@ ht-degree: 0%
 * 모든 게시 인스턴스에서 역방향 복제 활성화
 * 거래 보고서 활성화
 * 거래 보고서를 볼 수 있는 권한 제공
-* (선택 사항) 트랜잭션 플러시 기간 및 보낼 편지함 [](/help/forms/using/installing-configuring-aem-forms-osgi.md) 구성
+* (선택 사항) 트랜잭션 플러시 기간 및 보낼 편지함 [&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md) 구성
 
 >[!NOTE]
 >

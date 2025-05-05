@@ -25,7 +25,7 @@ ht-degree: 7%
 
 번역 워크플로를 자동화하려면 번역 서비스 공급업체를 [!DNL Experience Manager]과(와) 통합하고 에셋을 다국어로 번역하는 프로젝트를 만듭니다. [!DNL Experience Manager]은(는) 사람 번역 및 기계 번역 워크플로를 지원합니다.
 
-사람 번역: 번역된 자산을 반환하여 [!DNL Experience Manager](으)로 가져옵니다. 번역 공급업체를 [!DNL Experience Manager]과(와) 통합하면 에셋이 [!DNL Experience Manager]과(와) 번역 공급업체 간에 자동으로 전송됩니다.
+사람 번역: 번역된 자산을 반환하여 [!DNL Experience Manager] (으)로 가져옵니다. 번역 공급업체를 [!DNL Experience Manager]과(와) 통합하면 에셋이 [!DNL Experience Manager]과(와) 번역 공급업체 간에 자동으로 전송됩니다.
 
 기계 번역: 기계 번역 서비스는 에셋의 메타데이터와 태그를 즉시 번역합니다.
 

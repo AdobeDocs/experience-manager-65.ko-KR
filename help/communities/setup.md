@@ -97,7 +97,7 @@ Adobe Analytics과의 통합은 선택 사항입니다.
    * **[!UICONTROL ID]**: sirius
    * **[!UICONTROL 전자 메일 주소]**: sirius.nilson@mailinator.com
    * **[!UICONTROL 암호]**: 암호
-   * **[!UICONTROL 암호 확인&amp;ast;]**: 암호
+   * **[!UICONTROL 암호 확인&ast;]**: 암호
    * **[!UICONTROL 이름]**: Sirius
    * **[!UICONTROL 성]**: 닐슨
 

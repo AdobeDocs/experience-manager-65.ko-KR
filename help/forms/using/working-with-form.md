@@ -33,7 +33,7 @@ AFA(AEM Form Application) Android 앱이 동기화되지 않을 경우 다음 �
 
 1. **https://[server]:[port]/system/console/configMgr**(으)로 이동합니다.
 1. **[!UICONTROL Adobe Granite 토큰 인증 처리기]**&#x200B;를 검색하고 **[!UICONTROL 편집]**&#x200B;을(를) 클릭합니다.
-1. 로그인 토큰 쿠키&#x200B;]**특성에 대한**[!UICONTROL  SameSite 특성에 대한 드롭다운 메뉴에서 **[!UICONTROL 없음]** 옵션을 선택합니다.
+1. 로그인 토큰 쿠키&#x200B;**특성에 대한** SameSite 특성에 대한 드롭다운 메뉴에서 **[!UICONTROL 없음]** 옵션을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ![AFA Android 앱과 이미지 동기화](/help/forms/using/assets/afaandroid.png)

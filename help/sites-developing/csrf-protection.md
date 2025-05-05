@@ -45,6 +45,6 @@ Apache Sling Referrer Filter 외에도 Adobe은 이러한 유형의 공격으로
 
 >[!NOTE]
 >
->웹 응용 프로그램에서 매니페스트 캐시를 사용하는 경우 토큰이 CSRF 토큰 생성 호출을 오프라인으로 전환하지 않도록 매니페스트에 &quot;**&amp;ast;**&quot;을(를) 추가해야 합니다. 자세한 내용은 이 [링크](https://www.w3.org/TR/offline-webapps/)를 참조하세요.
+>웹 응용 프로그램에서 매니페스트 캐시를 사용하는 경우 토큰이 CSRF 토큰 생성 호출을 오프라인으로 전환하지 않도록 매니페스트에 &quot;**&ast;**&quot;을(를) 추가해야 합니다. 자세한 내용은 이 [링크](https://www.w3.org/TR/offline-webapps/)를 참조하세요.
 >
-CSRF 공격 및 이를 완화하는 방법에 대한 자세한 내용은 [크로스 사이트 요청 위조 OWASP 페이지](https://owasp.org/www-community/attacks/csrf)를 참조하십시오.
+>CSRF 공격 및 이를 완화하는 방법에 대한 자세한 내용은 [크로스 사이트 요청 위조 OWASP 페이지](https://owasp.org/www-community/attacks/csrf)를 참조하십시오.

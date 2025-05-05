@@ -48,7 +48,7 @@ AEM 6.3에서는 기본적으로 100,000개 순회에 도달하면 쿼리가 실
 
 #### 개발 중 {#during-development}
 
-**모든** 쿼리를 설명하고 쿼리 계획에 **/&amp;ast; traverse** 설명이 포함되어 있지 않은지 확인하십시오. 쿼리 계획 트래버스 예제:
+**모든** 쿼리를 설명하고 쿼리 계획에 **/&ast; traverse** 설명이 포함되어 있지 않은지 확인하십시오. 쿼리 계획 트래버스 예제:
 
 * **계획:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 

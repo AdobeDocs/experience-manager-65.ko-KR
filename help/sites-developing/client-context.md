@@ -323,9 +323,9 @@ genericstore 구성 요소를 사용하여 저장소 데이터를 렌더링하�
 
 세션 저장소에는 구성 요소를 렌더링해야 할 때마다 호출되는 &quot;renderer&quot; 메서드가 필요합니다. renderer 함수는 두 개의 매개 변수를 사용하여 호출됩니다.
 
-* @param0}개 저장소 사용
+* @param0&rbrace;개 저장소 사용
 렌더링할 스토어{String}
-* @param0} divId 사용
+* @param0&rbrace; divId 사용
 스토어를 렌더링해야 하는 div의 ID입니다.{String}
 
 ## 세션 저장소와 상호 작용 {#interacting-with-session-stores}

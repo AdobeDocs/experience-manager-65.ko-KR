@@ -455,9 +455,9 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. 완료 및 취소 단추 {#done-and-cancel-buttons}
 
-**[!UICONTROL 완료]** 단추를 사용하여 규칙을 저장합니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 불완전한 것은 잘못된 것이며 실행되지 않습니다. 양식 개체에 저장된 규칙은 다음에 동일한 양식 개체에서 규칙 편집기 실행 때 나열됩니다. 해당 보기에서 기존 규칙을 관리 할 수 있습니다. 자세한 내용은 규칙](rule-editor.md#p-manage-rules-p) 관리를 참조하세요[.
+**[!UICONTROL 완료]** 단추를 사용하여 규칙을 저장합니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 불완전한 것은 잘못된 것이며 실행되지 않습니다. 양식 개체에 저장된 규칙은 다음에 동일한 양식 개체에서 규칙 편집기 실행 때 나열됩니다. 해당 보기에서 기존 규칙을 관리 할 수 있습니다. 자세한 내용은 규칙[&#128279;](rule-editor.md#p-manage-rules-p) 관리를 참조하세요.
 
-취소&#x200B;]**버튼는**[!UICONTROL &#x200B;규칙에 대한 모든 변경 사항을 무시하고 규칙 편집기 닫습니다.
+취소&#x200B;**버튼는**&#x200B;규칙에 대한 모든 변경 사항을 무시하고 규칙 편집기 닫습니다.
 
 ## 규칙 작성 {#write-rules}
 
@@ -515,7 +515,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![when-else](assets/when-else.png)
 
-1. Else 문의 **[!UICONTROL 작업 선택]** 드롭다운에서 **[!UICONTROL 숨기기]**를 선택합니다.
+1. Else 문의 **[!UICONTROL 작업 선택]** 드롭다운에서 **[!UICONTROL 숨기기]**&#x200B;를 선택합니다.
    ![when-else](assets/when-else-1.png)
 
 1. **[!UICONTROL 개체 놓기 또는 여기를 선택]** 필드의 양식 개체 탭에서 **[!UICONTROL 배우자 급여]** 필드를 드래그 앤 드롭하십시오. 또는 **[!UICONTROL 드롭 개체 또는 여기를 선택]** 필드를 선택하고 양식의 모든 양식 개체가 나열된 팝업 메뉴에서 **[!UICONTROL 배우자 급여]** 필드를 선택합니다.
@@ -554,7 +554,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 표현식 필드에서:
 
-   * Forms 개체 탭에서 첫 번째 **[!UICONTROL 놓기 개체에 있는**[!UICONTROL &#x200B;급여&#x200B;]**필드를 선택하거나 끌어서 놓거나 여기]** 필드를 선택합니다.
+   * Forms 개체 탭에서 첫 번째 **[!UICONTROL 놓기 개체에 있는**&#x200B;[!UICONTROL &#x200B;급여&#x200B;]&#x200B;**필드를 선택하거나 끌어서 놓거나 여기]** 필드를 선택합니다.
 
    * **[!UICONTROL 연산자 선택]** 필드에서 **[!UICONTROL 더하기]**&#x200B;을(를) 선택합니다.
 
@@ -576,7 +576,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    다음, True를 반환할 때 표현식이 실행되는 조건을 만듭니다.
 
-1. 조건&#x200B;]**추가를 선택하여**[!UICONTROL  When 문을 추가합니다.
+1. 조건&#x200B;**추가를 선택하여** When 문을 추가합니다.
 
    ![write-rules-visual-편집기-15](assets/write-rules-visual-editor-15-cc.png)
 

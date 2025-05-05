@@ -53,7 +53,7 @@ Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
 
-로컬 폴더 또는 네트워크 드라이브에서 [!DNL Experience Manager Assets](으)로 다양한 유형의 에셋(이미지, PDF 파일, 원시 파일 등)을 업로드할 수 있습니다.
+로컬 폴더 또는 네트워크 드라이브에서 [!DNL Experience Manager Assets] (으)로 다양한 유형의 에셋(이미지, PDF 파일, 원시 파일 등)을 업로드할 수 있습니다.
 
 >[!NOTE]
 >

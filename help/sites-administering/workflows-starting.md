@@ -41,7 +41,7 @@ ht-degree: 3%
 
 ## 워크플로우 모델 {#workflow-models}
 
-워크플로 모델 콘솔에 나열된 모델 ](/help/sites-administering/workflows.md#workflow-models-and-instances) 중 하나를 기반으로 [워크플로를 시작할 수 있습니다. 페이로드만 필수 정보이며 제목 및/또는 댓글도 추가할 수 있습니다.
+워크플로 모델 콘솔에 나열된 모델 [&#128279;](/help/sites-administering/workflows.md#workflow-models-and-instances) 중 하나를 기반으로 워크플로를 시작할 수 있습니다. 페이로드만 필수 정보이며 제목 및/또는 댓글도 추가할 수 있습니다.
 
 ## 워크플로우 런처 {#workflows-launchers}
 

@@ -52,7 +52,7 @@ ht-degree: 9%
 |----|----|----|-----|-----|
 | 배포 메서드 | 제공 항목 [!DNL Assets]에 적합합니다. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
 | **일반** |
-| [!DNL Workfront]에서 [!DNL Assets](으)로 디지털 파일 보내기 | WF 문서의 최신 버전은 문서의 새 버전으로 연결된 AEM Assets에 업로드할 수 있습니다. | ✓ | ✓ | ✓ |
+| [!DNL Workfront]에서 [!DNL Assets] (으)로 디지털 파일 보내기 | WF 문서의 최신 버전은 문서의 새 버전으로 연결된 AEM Assets에 업로드할 수 있습니다. | ✓ | ✓ | ✓ |
 | 수동으로 AEM 폴더에 Workfront 개체 연결 | 기존 AEM 폴더는 Workfront 폴더로 연결되고 하위 자산은 새 Workfront 문서로 연결됩니다. | ✓ | ✓ | ✓ |
 | Workfront 개체에 [!DNL Assets] 연결 | AEM의 기존 에셋을 새 Workfront 문서에 연결하거나 기존 문서의 새 버전으로 연결할 수 있습니다. | ✓ | ✓ | ✓ |
 | 연결된 폴더에 추가된 Assets은 자동으로 AEM으로 전송됩니다 | 연결된 폴더에 문서가 추가되면 연결된 에셋이 자동으로 새 에셋으로 AEM Assets에 업로드됩니다. | ✓ | ✓ | ✓ |
@@ -67,7 +67,7 @@ ht-degree: 9%
 | Workfront에서 연결된 AEM 폴더 자동 생성 | 프로젝트 상태를 사용하여 Workfront에서 연결된 AEM 폴더를 자동으로 만듭니다. Workfront Portfolio, 프로그램 및 프로젝트를 기반으로 AEM 폴더를 자동으로 구성합니다. | 아니요 | ✓ | 아니요 |
 | Workfront에서 AEM 저장소로 직접 이동합니다. | 사용자가 Workfront 내에 구성된 사용 가능한 AEM 저장소로 이동할 수 있도록 허용합니다. | ✓ | 아니요 | ✓ |
 | Workfront에서 연결된 AEM 폴더 만들기 | 문서 탭에서 사용할 수 있는 옵션을 사용하여 Workfront에서 연결된 AEM 폴더를 수동으로 만듭니다. | ✓ | 아니요 | ✓ |
-| 댓글 동기화 중 | 자산에 대한 댓글을 [!DNL Workfront]에서 [!DNL Assets](으)로 자동 동기화 | 아니요 | ✓ | 아니요 |
+| 댓글 동기화 중 | 자산에 대한 댓글을 [!DNL Workfront]에서 [!DNL Assets] (으)로 자동 동기화 | 아니요 | ✓ | 아니요 |
 | 단일 AEM 환경에 연결하는 여러 Workfront 환경 지원 | 여러 Workfront 환경의 사용자는 단일 AEM 환경에 연결할 수 있습니다. | ✓ | 아니요 | ✓ |
 | 단일 Workfront 환경에 연결하는 여러 AEM 환경 지원 | 단일 Workfront 환경 내의 사용자는 여러 AEM 환경 간에 에셋을 전송하거나 연결할 수 있습니다. | ✓ | ✓ | ✓ |
 | **메타데이터** |

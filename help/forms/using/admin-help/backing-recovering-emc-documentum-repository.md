@@ -197,15 +197,15 @@ EMC Documentum Content Server에서 필요한 백업 작업을 수행하려면 E
 
    * 전체 데이터베이스 백업(nsrnmdbf.bat):
 
-     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P`*[암호&#x200B;]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U` `[username]` `-P`*[암호&#x200B;]*`-l full`*&lt;database_name>*
 
    * 증분 데이터베이스 백업(nsrnmdbi.bat):
 
-     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U` `[username]` `-P` `[password]` `-l 1 -R`*&lt;database_name>*
 
    * 데이터베이스 로그 백업(nsrnmddbl.bat):
 
-     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s` `<NetWorker_Server_Name>` `-U` `[username]` `-P` `[password]` `-l incr -R`*&lt;database_name>*
 
      위치:
 

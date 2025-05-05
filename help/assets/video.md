@@ -75,6 +75,7 @@ ht-degree: 2%
    * 비디오 자산 미리 보기 및 게시
 
       * 소스 비디오와 비디오의 인코딩된 렌디션을 관련 썸네일과 함께 봅니다.
+
         [비디오 미리 보기](managing-video-assets.md#upload-and-preview-video-assets) 또는 [에셋 미리 보기](previewing-assets.md)
         [비디오 표현물 보기](video-renditions.md)
         [비디오 표현물 관리](manage-assets.md#managing-renditions)
@@ -85,9 +86,11 @@ ht-degree: 2%
    * 비디오 메타데이터 작업
 
       * 프레임 속도, 오디오 및 비디오 비트율, 코덱 등 인코딩된 비디오 렌디션의 속성을 확인합니다.
+
         [비디오 렌디션 속성 보기](video-renditions.md)
 
       * 제목, 설명, 태그 및 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
+
         [비디오 속성 편집](manage-assets.md#editing-properties)
 
       * [디지털 에셋용 메타데이터 관리](metadata.md)
@@ -112,9 +115,11 @@ ht-degree: 2%
    * 타사 웹 컨텐츠 관리 시스템을 사용하는 경우 웹 페이지에 비디오를 연결하거나 포함할 수 있습니다.
 
       * URL을 사용하여 비디오 통합:
+
         [웹 응용 프로그램에 URL 연결](linking-urls-to-yourwebapplication.md).
 
       * 웹 페이지에서 포함 코드를 사용하여 비디오 통합:
+
         [웹 페이지에 비디오 뷰어를 포함합니다](embed-code.md).
 
    * [비디오 보고서 생성](#viewing-video-reports).
@@ -552,7 +557,7 @@ Dynamic Media의 다중 캡션 및 오디오 트랙 기능을 사용하면 여�
 |  | 주석 트랙 |
 |  | 설명 오디오 |
 
-Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰어 및 Dynamic Media ](/help/assets/assets-formats.md)에서 지원되는 모든 [비디오 형식이 다중 캡션 및 오디오 트랙과 함께 사용할 수 있도록 지원됩니다.
+Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰어 및 Dynamic Media [&#128279;](/help/assets/assets-formats.md)에서 지원되는 모든 비디오 형식이 다중 캡션 및 오디오 트랙과 함께 사용할 수 있도록 지원됩니다.
 
 ### 비디오에 여러 캡션 및 오디오 트랙 추가 {#add-msma}
 
@@ -694,7 +699,7 @@ Dynamic Media는 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
 1. 속성 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다.
 1. **오디오 트랙** 제목 아래에서 비디오의 기본값으로 설정할 오디오 트랙 파일을 선택합니다.
-1. **[!UICONTROL 기본값으로 설정]**을 선택합니다.
+1. **[!UICONTROL 기본값으로 설정]**&#x200B;을 선택합니다.
 **기본값으로 설정** 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 선택합니다.
 
    ![선택한 오디오 트랙 파일 이름이 있고 &quot;기본값으로 설정&quot; 단추가 강조 표시된 오디오 트랙 머리글입니다.](assets-dm/msma-defaultaudiotrack2.png)*비디오에 대한 기본 오디오 트랙을 설정하는 중입니다.*
@@ -1216,7 +1221,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
->서블릿에 대한 [!TAB 응답 클래스]
+>[!TAB 서블릿에 대한  응답 클래스]
 
 +++서블릿에 대한 **응답 클래스**
 

@@ -22,7 +22,7 @@ ht-degree: 4%
 
 Adobe Experience Manager에는 이미지 및 렌더링 결과를 조정 및 최적화하기 위한 100개 이상의 Dynamic Media 이미지 게재 명령이 포함되어 있습니다. 다음 지침은 몇 가지 필수 명령과 모범 사례를 사용하여 프로세스를 간소화하고 좋은 결과를 빠르게 얻을 수 있도록 도와줍니다.
 
-## 이미지 형식(`&fmt=`) {#best-practices-for-image-format-fmt}에 대한 모범 사례
+## 이미지 형식(`&fmt=`)에 대한 모범 사례 {#best-practices-for-image-format-fmt}
 
 * JPG 또는 PNG는 최상의 품질과 관리 가능한 크기 및 무게로 이미지를 전달하는 데 가장 적합한 옵션입니다.
 * URL에 format 명령이 제공되지 않으면 Dynamic Media 이미지 게재의 기본값은 게재용 JPG입니다.
@@ -88,7 +88,7 @@ Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이�
 
 모노크롬 매개 변수 설정을 0으로 둡니다.
 
-### JPEG 압축(`&qlt=`) {#best-practices-for-jpeg-compression-qlt}에 대한 모범 사례
+### JPEG 압축(`&qlt=`)에 대한 모범 사례 {#best-practices-for-jpeg-compression-qlt}
 
 * 이 매개 변수는 JPG 인코딩 품질을 제어합니다. 값이 높을수록 이미지 품질은 높지만 파일 크기는 커집니다. 또는 값이 낮을수록 이미지 품질은 낮지만 파일 크기는 작아집니다. 이 매개 변수의 범위는 0~100입니다.
 * 품질을 최적화하려면 매개 변수 값을 100으로 설정하지 마십시오. 90 또는 95 및 100 설정의 차이는 거의 감지할 수 없지만 100이 있으면 이미지 파일의 크기가 불필요하게 증가합니다. 따라서 품질을 최적화하지만 이미지 파일이 너무 커지지 않도록 하려면 `qlt= value`을(를) 90 또는 95로 설정하십시오.
@@ -101,7 +101,7 @@ Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이�
 
 JPG 압축에 대한 우수 사례로 `&qlt=85,0`을(를) 사용하십시오.
 
-## JPEG 크기 조정(`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}에 대한 모범 사례
+## JPEG 크기 조정(`&jpegSize=`)에 대한 모범 사례 {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize는 메모리가 제한된 장치에 이미지가 전달될 때 특정 크기를 초과하지 않도록 하려는 경우 유용한 매개 변수입니다.
 

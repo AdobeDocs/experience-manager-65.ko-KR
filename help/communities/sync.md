@@ -392,5 +392,5 @@ Sling 배포가 실패하면 다음 디버깅 단계를 시도해 보십시오.
 1. 사용자 생성 시 생성된 [로그 순서](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities)를 확인하십시오.
 1. **/var/sling/distribution/packages/socialpubsync-vlt/data**&#x200B;에 **vlt** 패키지가 만들어졌는지 확인하십시오.
 1. 이제 AEM 작성자 인스턴스에서 사용자 동기화를 활성화합니다.
-1. 게시자의 경우 **Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리**에서 내보내기 또는 가져오기 끝점을 변경합니다.
+1. 게시자의 경우 **Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리**&#x200B;에서 내보내기 또는 가져오기 끝점을 변경합니다.
 패키지 데이터를 다운로드하고 추출하여 다른 게시자에게 푸시된 모든 속성과 손실된 데이터를 확인할 수 있습니다.

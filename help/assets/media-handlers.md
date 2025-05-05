@@ -123,7 +123,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 다음은 예제 템플릿입니다.
 
-package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the related parts }
+package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the related parts }
 
 인터페이스 및 클래스는 다음과 같습니다.
 

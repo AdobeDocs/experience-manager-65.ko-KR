@@ -297,7 +297,7 @@ Experience Manager Assets과 함께 제공되는 `Shoppable_Banner`(이)라는 �
 
    * **[!UICONTROL 경험 조각]**&#x200B;을 선택합니다.
 
-      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**을 선택합니다.
+      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
 [경험 조각](/help/sites-authoring/experience-fragments.md)을 참조하세요.
 
       * 배너에 표시할 경험 조각의 너비와 높이를 지정합니다.
@@ -445,27 +445,27 @@ Quickview URL을 구성하는 프로세스는 이전에 설명한 핫스팟 변�
  <tbody>
   <tr>
    <td><p>쿼리 문자열에 있는 단일 SKU</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>URL 경로에 있는 단일 SKU</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>쿼리 문자열의 SKU 및 카테고리 ID</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
  </tbody>
 </table>

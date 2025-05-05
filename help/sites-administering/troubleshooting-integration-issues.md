@@ -101,10 +101,10 @@ AEM에서 사용자 지정 데이터 가져오기 서비스를 만드는 방법�
 * `/etc/cloudservices`에서 ACL을 확인합니다. ACL은 다음과 같아야 합니다.
 
    * allow; jcr:read; webservice-support-servicelibfinder
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults`
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public/`&amp;ast;
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public`
+   * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults/`&ast;
+   * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults`
+   * allow; jcr:read; everyone; `rep:glob:`&ast;`/public/`&ast;
+   * allow; jcr:read; everyone; `rep:glob:`&ast;`/public`
 
 ACL 관리에 대한 자세한 내용은 [사용자 관리 및 보안](/help/sites-administering/security.md#permissions-in-aem) 페이지를 참조하십시오.
 

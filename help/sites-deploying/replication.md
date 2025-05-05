@@ -433,6 +433,7 @@ Publish 환경은 일반적으로 DMZ에 있으므로 콘텐츠를 다시 작성
    * **전송** 탭에서:
 
       * 새 Publish 인스턴스에 필요한 URI를 입력합니다. 예:
+
         `https://localhost:4504/bin/receive`
 
       * 복제에 사용되는 사이트별 사용자 계정을 입력합니다.
@@ -476,6 +477,7 @@ Publish 환경은 일반적으로 DMZ에 있으므로 콘텐츠를 다시 작성
    * **전송** 탭에서:
 
       * 새 Publish 인스턴스에 필요한 URI를 입력합니다. 예:
+
         `https://localhost:80/dispatcher/invalidate.cache`
 
       * 복제에 사용되는 사이트별 사용자 계정을 입력합니다.

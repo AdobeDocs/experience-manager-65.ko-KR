@@ -190,7 +190,7 @@ ht-degree: 2%
 
 1. **[!UICONTROL 도구 > 일반 > 태그 지정]**&#x200B;을 통해 이동합니다. **[!UICONTROL 워크플로]**&#x200B;를 선택하십시오.
 
-1. **[!UICONTROL 만들기 > 태그 만들기]**&#x200B;를 선택합니다. **[!UICONTROL Title]**&#x200B;을(를) `DAM`(으)로 설정하고 **[!UICONTROL Name]**&#x200B;을(를) `dam`(으)로 설정합니다. **[!UICONTROL 제출]**을 선택합니다.
+1. **[!UICONTROL 만들기 > 태그 만들기]**&#x200B;를 선택합니다. **[!UICONTROL Title]**&#x200B;을(를) `DAM`(으)로 설정하고 **[!UICONTROL Name]**&#x200B;을(를) `dam`(으)로 설정합니다. **[!UICONTROL 제출]**&#x200B;을 선택합니다.
    ![워크플로 모델에서 태그를 만듭니다](assets/workflow_create_tag.png)
 
 1. **[!UICONTROL 도구 > 워크플로 > 모델]**(으)로 이동합니다. **[!UICONTROL 활성화 요청]**&#x200B;을 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
@@ -199,7 +199,7 @@ ht-degree: 2%
 
 1. **[!UICONTROL 태그]** 필드에 `Workflow : DAM`을(를) 추가합니다. 확인(확인 표시)을 사용하여 선택 내용을 확인합니다.
 
-1. **[!UICONTROL 저장 및 닫기]**를 사용하여 태그의 추가를 확인합니다.
+1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 사용하여 태그의 추가를 확인합니다.
    ![모델의 페이지 속성 편집](assets/workflow_model_edit_activation1.png)
 
 1. **[!UICONTROL 동기화]**&#x200B;를 사용하여 프로세스를 완료합니다. 이제 터치 지원 UI에서 워크플로를 사용할 수 있습니다.
@@ -415,6 +415,7 @@ OR 규칙을 정의하려면 다음과 같이 진행합니다.
    * **값**&#x200B;을(를) `true`(으)로 설정하여 **기본 경로**(으)로 정의합니다.
 
    * **규칙**(으)로 경로를 스크립트로 설정합니다. 예:
+
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -424,6 +425,7 @@ OR 규칙을 정의하려면 다음과 같이 진행합니다.
 1. **OR 분할**&#x200B;의 **분기 2**&#x200B;의 속성을 편집합니다.
 
    * **규칙**(으)로 경로를 다른 스크립트로 설정합니다. 예:
+
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. 각 분기의 개별 단계 속성을 설정합니다. **사용자/그룹**&#x200B;이(가) 설정되어 있는지 확인하십시오.

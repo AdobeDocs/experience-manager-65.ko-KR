@@ -227,7 +227,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*다음 값이 포함된 Adobe Analytics에 대한&#x200B;**첫 번째 호출**입니다.*
+*다음 값이 포함된 Adobe Analytics에 대한&#x200B;**첫 번째 호출**&#x200B;입니다.*
 
 * eventdata.a.media.name용 *prop1 및 eVar1,*
 * *prop2-4, contentType(비디오) 및 세그먼트(1:O:1-4)가 포함된 eVar2 및 eVar3 포함*
@@ -235,7 +235,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Adobe Analytics에 대한&#x200B;**세 번째 호출**입니다.*
+*Adobe Analytics에 대한&#x200B;**세 번째 호출**&#x200B;입니다.*
 
 * *prop1 및 eVar1에 a.media.name;*&#x200B;이(가) 포함되어 있습니다.
 * 세그먼트를 보았으므로 *event1*
@@ -322,7 +322,7 @@ eventdata.events.milestoneXX
 
    ![lmilestones1](assets/lmilestones1.png)
 
-   *호출에서 보낸&#x200B;**pev3**변수에 다음 정보가 포함되어 있습니다.*
+   *호출에서 보낸&#x200B;**pev3**&#x200B;변수에 다음 정보가 포함되어 있습니다.*
 
    * *이름* - 비디오 파일 이름(*film.avi*)
 
@@ -338,7 +338,7 @@ eventdata.events.milestoneXX
 
 ## 이전(초) {#legacy-seconds}
 
-** 레거시 초** 메서드를 사용하는 경우 Adobe Analytics 호출은 N초마다 트리거되며, 여기서 N은 추적 오프셋 필드에 지정됩니다.
+**&#x200B; 레거시 초** 메서드를 사용하는 경우 Adobe Analytics 호출은 N초마다 트리거되며, 여기서 N은 추적 오프셋 필드에 지정됩니다.
 
 1. 트랙 오프셋을 초 단위로 설정합니다.
 

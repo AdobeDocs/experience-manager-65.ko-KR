@@ -130,9 +130,9 @@ Maven Archetype은 사용자 정의 모양을 만드는 시작점입니다. 사�
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>HTML 이벤트를 XFA 이벤트로 변환하는 맵을 반환합니다. <br /> <code class="code">{
+   <td>HTML 이벤트를 XFA 이벤트로 변환하는 맵을 반환합니다. <br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      }</code><br /> 이 예제는 <code>blur</code>이(가) HTML 이벤트이고 <code>XFA_EXIT_EVENT</code>이(가) 해당 XFA 이벤트임을 보여 줍니다. </td>
+      &rbrace;</code><br /> 이 예제는 <code>blur</code>이(가) HTML 이벤트이고 <code>XFA_EXIT_EVENT</code>이(가) 해당 XFA 이벤트임을 보여 줍니다. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

@@ -225,7 +225,7 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 >
 >1. `size`
 >
->1. + 개 더
+>1. &#x200B;+ 개 더
 >
 >이 추가 변형은 제품 참조의 `variationAxis` 속성을 통해 선택됩니다(일반적으로 Geometrixx Outdoors의 경우 `color`).
 

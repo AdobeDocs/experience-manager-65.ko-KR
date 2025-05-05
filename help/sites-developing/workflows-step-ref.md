@@ -285,6 +285,7 @@ function check(){
 * **페이로드로 데이터 저장**
 
    * 위젯 데이터를 워크플로 페이로드의 속성으로 저장하려면 위젯 노드의 이름 속성 값에 다음 형식을 사용합니다.
+
      `./jcr:content/nodename`
 
    * 데이터는 페이로드 노드의 `nodename` 속성에 저장됩니다. 노드에 해당 속성이 없으면 속성이 만들어집니다.
@@ -293,6 +294,7 @@ function check(){
 * **작업 항목으로 데이터 저장**
 
    * 위젯 데이터를 작업 항목 메타데이터의 속성으로 저장하려면 이름 속성 값에 다음 형식을 사용합니다.
+
      `nodename`
 
    * 데이터가 작업 항목 `metadata`의 `nodename` 속성에 저장됩니다. 대화 상자가 나중에 동일한 페이로드와 함께 사용되는 경우 데이터가 유지됩니다.
@@ -504,7 +506,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
 >[!CAUTION]
 >
->이 섹션에서는 페이지 작성을 위한 기초 구성 요소 ](/help/sites-authoring/default-components-foundation.md#form)의 [Forms 섹션에 대해 설명합니다.
+>이 섹션에서는 페이지 작성을 위한 기초 구성 요소 [&#128279;](/help/sites-authoring/default-components-foundation.md#form)의 Forms 섹션에 대해 설명합니다.
 
 #### 양식 참가자 단계 - 구성 {#form-participant-step-configuration}
 

@@ -30,7 +30,7 @@ AEM [!DNL Forms]은(는) 양식, 문서, 테마, 편지, 문서 단편, 데이�
 
 ## AEM Forms 구성 요소 액세스 {#access-aem-forms-components}
 
-양식, 문서 및 관련 에셋을 만들 수 있는 옵션과 함께 AEM은 사이트, 에셋을 만들고 AEM 인스턴스를 관리하는 옵션 등을 제공합니다. ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Experience Manager 로고를 클릭하여 사용 가능한 모든 도구로 이동할 수 있습니다. 다른 구성 요소의 콘솔에 대한 링크와 함께 AEM [!DNL Forms]에 대한 링크도 포함됩니다. AEM [!DNL Forms](으)로 이동하려면 Experience Manager 로고 ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > 탐색 ![나침반](assets/compass.png) > **[!UICONTROL Forms]**&#x200B;을 클릭합니다. 다음 콘솔의 링크가 표시됩니다.
+양식, 문서 및 관련 에셋을 만들 수 있는 옵션과 함께 AEM은 사이트, 에셋을 만들고 AEM 인스턴스를 관리하는 옵션 등을 제공합니다. ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Experience Manager 로고를 클릭하여 사용 가능한 모든 도구로 이동할 수 있습니다. 다른 구성 요소의 콘솔에 대한 링크와 함께 AEM [!DNL Forms]에 대한 링크도 포함됩니다. AEM [!DNL Forms] (으)로 이동하려면 Experience Manager 로고 ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > 탐색 ![나침반](assets/compass.png) > **[!UICONTROL Forms]**&#x200B;을 클릭합니다. 다음 콘솔의 링크가 표시됩니다.
 
 * 양식 및 문서
 * 테마

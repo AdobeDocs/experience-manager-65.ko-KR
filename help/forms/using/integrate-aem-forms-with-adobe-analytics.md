@@ -76,7 +76,7 @@ AEM Forms 및 [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 ### 데이터 요소 구성 {#configure-data-elements}
 
-이벤트에 대해 만들어진 규칙에서 구성된 데이터 요소를 선택할 수 있습니다. 적응형 양식에서 이벤트가 발생하면 AEM Forms에서 이러한 데이터 요소를 [!DNL Adobe Analytics](으)로 보냅니다.
+이벤트에 대해 만들어진 규칙에서 구성된 데이터 요소를 선택할 수 있습니다. 적응형 양식에서 이벤트가 발생하면 AEM Forms에서 이러한 데이터 요소를 [!DNL Adobe Analytics] (으)로 보냅니다.
 
 **[!UICONTROL Adobe Experience Manager Forms]** 확장을 설치한 후 다음 데이터 요소를 만들 수 있습니다.
 
@@ -140,9 +140,9 @@ AEM Forms 및 [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 1. **[!UICONTROL 변수 설정]**&#x200B;을(를) 작업 유형으로 선택합니다. 드롭다운 목록에서 사용할 수 있는 옵션은 다음과 같습니다.
 
-   * **[!UICONTROL 변수 설정]**: 이 작업 형식을 사용하여 선택한 데이터 요소를 AEM Forms에서 [!DNL Adobe Analytics](으)로 보내는 이벤트 형식을 정의합니다.
+   * **[!UICONTROL 변수 설정]**: 이 작업 형식을 사용하여 선택한 데이터 요소를 AEM Forms에서 [!DNL Adobe Analytics] (으)로 보내는 이벤트 형식을 정의합니다.
 
-   * **[!UICONTROL 비콘 보내기]**: 이 작업 형식을 사용하여 AEM Forms에서 [!DNL Adobe Analytics](으)로 데이터를 보냅니다.
+   * **[!UICONTROL 비콘 보내기]**: 이 작업 형식을 사용하여 AEM Forms에서 [!DNL Adobe Analytics] (으)로 데이터를 보냅니다.
 
    * **[!UICONTROL 변수 지우기]**: 이벤트가 [!DNL Adobe Analytics]에 한 번만 등록되도록 데이터 추적을 지우려면 이 작업 유형을 사용하십시오.
 
@@ -150,7 +150,7 @@ AEM Forms 및 [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 1. **[!UICONTROL Props]** 섹션에서 드롭다운 목록에서 사용할 수 있는 보고서 세트 옵션을 [데이터 요소 구성](#configure-data-elements)을 사용하여 정의된 데이터 요소와 매핑합니다.
 
-   예를 들어 양식을 제출할 때 **양식 제목** 데이터 요소를 AEM Forms에서 [!DNL Adobe Analytics](으)로 보내려면 다음을 수행하십시오.
+   예를 들어 양식을 제출할 때 **양식 제목** 데이터 요소를 AEM Forms에서 [!DNL Adobe Analytics] (으)로 보내려면 다음을 수행하십시오.
    1. **[!UICONTROL Prop]** 섹션에서 보고서 세트에서 사용할 수 있는 양식 제목에 대한 prop을 선택한 다음 ![데이터베이스 아이콘](/help/forms/using/assets/database-icon.svg)을 선택하여 [데이터 요소 구성](#configure-data-elements)에서 만든 양식 제목에 매핑합니다.
 
       ![define-props](/help/forms/using/assets/define-props.png)
@@ -244,7 +244,7 @@ Adobe Launch 구성을 만들려면 다음 단계를 수행하십시오.
 
 ### 사용자 지정 이벤트 캡처를 위한 규칙 만들기(선택 사항) {#capture-custom-events}
 
-규칙 편집기를 사용하여 적응형 양식의 특정 필드에 대한 규칙을 만들어 적응형 양식에서 [!DNL Adobe Analytics](으)로 Analytics 데이터를 보냅니다.
+규칙 편집기를 사용하여 적응형 양식의 특정 필드에 대한 규칙을 만들어 적응형 양식에서 [!DNL Adobe Analytics] (으)로 Analytics 데이터를 보냅니다.
 
 2단계 프로세스에서는 적응형 양식의 필드에 규칙을 정의합니다. 규칙이 이벤트를 전달합니다. 이벤트 이름은 Adobe Launch의 사용자 지정 캡처 이벤트에 매핑됩니다.
 

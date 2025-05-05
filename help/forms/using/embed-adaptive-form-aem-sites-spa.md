@@ -23,7 +23,7 @@ ht-degree: 4%
 
 AEM Forms을 사용하면 양식 개발자가 적응형 양식 및 대화형 커뮤니케이션을 AEM Sites SPA(단일 페이지 애플리케이션)에 원활하게 포함할 수 있습니다. 임베드된 적응형 양식 및 대화형 커뮤니케이션은 완전히 기능하며 사용자는 페이지를 종료하지 않고 양식을 작성하고 제출할 수 있습니다. 사용자가 웹 페이지의 다른 요소 컨텍스트에 남아 있으면서 적응형 양식 또는 대화형 통신과 동시에 상호 작용하는 데 도움이 됩니다.
 
-AEM Sites 단일 페이지 응용 프로그램에서 [AEM Forms SPA 컨테이너 구성 요소](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[를 사용하여 적응형 양식 또는 대화형 통신을 추가할 수 있습니다.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Sites 페이지에 추가할 수 있는 AEM Sites SPA용 AEM Forms 구성 요소입니다.
+AEM Sites 단일 페이지 응용 프로그램에서 [AEM Forms SPA 컨테이너 구성 요소](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [를 사용하여 적응형 양식 또는 대화형 통신을 추가할 수 있습니다.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Sites 페이지에 추가할 수 있는 AEM Sites SPA용 AEM Forms 구성 요소입니다.
 
 비 SPA AEM Sites에 적응형 양식을 포함하는 방법에 대한 자세한 내용은 [AEM Sites 페이지에 적응형 양식 또는 대화형 통신 포함](/help/forms/using/embed-adaptive-form-aem-sites.md)을 참조하십시오.
 

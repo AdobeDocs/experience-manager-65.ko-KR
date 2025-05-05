@@ -66,7 +66,7 @@ Cloud Service에서 ExactTarget 구성을 만들려면 다음 작업을 수행�
 
 1. 시작 페이지에서 **도구**&#x200B;를 클릭합니다. 또는 `https://<hostname>:<port>/misadmin#/etc`(으)로 이동하여 바로 탐색하십시오.
 1. **도구**, **Cloud Service 구성,**, **ExactTarget**&#x200B;을 선택하십시오.
-1. **새로 만들기**&#x200B;를 클릭하여 **페이지 만들기**창을 엽니다.
+1. **새로 만들기**&#x200B;를 클릭하여 **페이지 만들기**&#x200B;창을 엽니다.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 

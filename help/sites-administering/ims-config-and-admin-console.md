@@ -36,7 +36,7 @@ AEM 6.4.3.0에서는 **AEM Managed Services** 고객을 위해 AEM 인스턴스 
 * [!DNL Admin Console]의 제품 프로필이 사용자가 액세스할 수 있는 인스턴스를 결정합니다.
 * 고객의 자체 SAML 2 호환 ID 공급자를 사용하는 페더레이션 인증이 지원됩니다
 * Enterprise ID 또는 Federated ID(고객 Single Sign-On의 경우)만 지원되며 개인 Adobe ID는 지원되지 않습니다.
-* [!DNL User Management](Adobe [!DNL Admin Console]에서)은(는) 고객 관리자가 계속 소유합니다.
+* [!DNL User Management] (Adobe [!DNL Admin Console]에서)은(는) 고객 관리자가 계속 소유합니다.
 
 ## 아키텍처 {#architecture}
 

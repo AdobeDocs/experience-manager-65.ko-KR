@@ -52,7 +52,7 @@ Dynamic Media Publish 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
    * [Illustrator](#illustrator-tab) 탭
 
    ![Dynamic Media 일반 설정 페이지](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamic Media 일반 설정 페이지(**[!UICONTROL 이미지 편집]**탭 선택)*<br><br>
+   *Dynamic Media 일반 설정 페이지(**[!UICONTROL 이미지 편집]**&#x200B;탭 선택)*<br><br>
 
 1. 완료되면 페이지의 오른쪽 상단 근처에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 

@@ -972,7 +972,7 @@ AEM Forms 서비스 작업은 Java 클라이언트 라이브러리로 알려진 
 
 Java 클라이언트 라이브러리를 사용하고 다음 단계를 수행하여 저장소 서비스를 호출할 수 있습니다.
 
-1. adobe-저장소-client.jar과 같은 클라이언트 JAR 파일을 Java 프로젝트의 클래스 경로에 포함합니다. 이러한 파일의 위치에 대한 자세한 내용은 AEM Forms Java 라이브러리 파일](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) 포함을 참조하십시오[.
+1. adobe-저장소-client.jar과 같은 클라이언트 JAR 파일을 Java 프로젝트의 클래스 경로에 포함합니다. 이러한 파일의 위치에 대한 자세한 내용은 AEM Forms Java 라이브러리 파일[&#128279;](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) 포함을 참조하십시오.
 1. 서비스를 호출하는 데 필요한 연결 속성을 설정합니다.
 1. `ServiceClientFactory` 개체의 정적 `createInstance` 메서드를 호출하고 연결 속성이 포함된 `java.util.Properties` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 1. 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `ResourceRepositoryClient` 개체를 만듭니다. `ResourceRepositoryClient` 개체를 사용하여 저장소 서비스 작업을 호출합니다.

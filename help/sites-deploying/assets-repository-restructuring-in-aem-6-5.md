@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # AEM 6.5에서 Assets 저장소 재구성 {#assets-repository-restructuring-in-aem}
 
-AEM 6.5](/help/sites-deploying/repository-restructuring.md)의 상위 [저장소 재구성 페이지에 설명된 대로 Adobe Experience Manager(AEM) 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM Assets 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
+AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 저장소 재구성 페이지에 설명된 대로 Adobe Experience Manager(AEM) 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM Assets 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
 
 **6.5 업그레이드 포함**
 

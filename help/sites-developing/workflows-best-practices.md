@@ -296,7 +296,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 [워크플로 단계](/help/sites-developing/workflows.md#workflow-stages)를 정의한 다음 특정 워크플로 단계에 작업/단계를 할당할 수 있습니다.
 
-이 정보는 **받은 편지함**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)&#x200B;에서 작업 항목의 [**워크플로 정보** 탭을 클릭할 때 워크플로의 진행률을 표시하는 데 사용됩니다. 기존 워크플로 모델을 편집하여 단계를 추가할 수 있습니다.
+이 정보는 **받은 편지함**&#x200B;[&#128279;](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)&#x200B;에서 작업 항목의 **워크플로 정보** 탭을 클릭할 때 워크플로의 진행률을 표시하는 데 사용됩니다. 기존 워크플로 모델을 편집하여 단계를 추가할 수 있습니다.
 
 ### 페이지 활성화 프로세스 단계 {#activate-page-process-step}
 

@@ -77,7 +77,7 @@ serialize할 메서드를 정의하려면 모델 인터페이스에 적절한 �
 
 ## 예 {#example}
 
-핵심 구성 요소는 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 [1.1.0 이후 JSON 내보내기를 지원했으며 참조로 사용할 수 있습니다.
+핵심 구성 요소는 핵심 구성 요소[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 1.1.0 이후 JSON 내보내기를 지원했으며 참조로 사용할 수 있습니다.
 
 예를 들어 이미지 핵심 구성 요소의 슬링 모델 구현 및 주석이 달린 인터페이스를 참조하십시오.
 

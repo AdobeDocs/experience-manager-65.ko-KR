@@ -474,17 +474,17 @@ facebook 또는 Twitter 앱에 대해 생성된 인스턴스를 찾으려면 다
 1. ntBaseLucene-oauth 노드의 속성을 수정합니다.
 
    * **[!UICONTROL indexPath]**: `/oak:index/ntBaseLucene-oauth`
-   * **[!UICONTROL 이름]**: `oauthid-123****`
+   * **[!UICONTROL 이름]**: `oauthid-123&#x200B;**&#x200B;**`
    * **[!UICONTROL 다시 인덱싱]**: `true`
    * **[!UICONTROL reindexCount]**: `1`
 
 1. /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties 노드:
 
    * cqTags를 제외한 모든 하위 노드를 삭제합니다.
-   * cqTags 이름을 `oauthid-123****`(으)로 바꾸기
-   * `oauthid-123****` 노드의 속성을 수정합니다.
+   * cqTags 이름을 `oauthid-123**&#x200B;**`(으)로 바꾸기
+   * `oauthid-123**&#x200B;**` 노드의 속성을 수정합니다.
 
-      * **[!UICONTROL 이름]**: `oauthid-123****`
+      * **[!UICONTROL 이름]**: `oauthid-123&#x200B;**&#x200B;**`
 
    * **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 

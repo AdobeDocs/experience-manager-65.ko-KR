@@ -276,7 +276,7 @@ ht-degree: 3%
 
 1. AEM 작성자 인스턴스에서 **Forms > Forms 및 문서**&#x200B;를 클릭합니다.
 1. 양식을 선택하고 **속성 보기**&#x200B;를 클릭합니다.
-1. 속성 창에서 **양식 모델**을(를) 선택합니다.
+1. 속성 창에서 **양식 모델**&#x200B;을(를) 선택합니다.
 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 
    >[!NOTE]
@@ -421,6 +421,7 @@ ht-degree: 3%
 
 * **[!UICONTROL 기본]**
    * **템플릿:** 템플릿 기본값 또는 사용자 지정을 선택할 수 있습니다.
+
      ![대체 텍스트](image.png)
    * **강조 색:** [!UICONTROL 기록 문서]의 서식 파일 색을 미리 정의할 수 있습니다.
    * **글꼴 모음:** [!UICONTROL 기록 문서] 텍스트에 대한 글꼴 유형을 선택합니다.
@@ -433,6 +434,7 @@ ht-degree: 3%
       * 세로
       * 가로
       * 적응형 양식과 동일
+
      >[!NOTE]
      > 세로 및 가로 정렬은 에만 적용할 수 있습니다.     라디오 단추 및 확인란
 * **[!UICONTROL 기본 페이지 속성]** [기본 페이지 속성](#master-page-properties-master-page-properties)에 대한 자세한 내용을 보려면 클릭하세요.
@@ -465,7 +467,7 @@ ht-degree: 3%
 
 1. 두 번째 마스터 페이지를 적용할 패널을 선택하고 ![구성](assets/cmppr.png)을(를) 선택하십시오.
 1. **[!UICONTROL 페이지 매김]** 섹션의 **[!UICONTROL 배치]** 필드에서 ![폴더](/help/forms/using/assets/folder-icon.png)을(를) 선택합니다.
-1. **[!UICONTROL 페이지에서]**&#x200B;를 선택하고 두 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**을 선택합니다.
+1. **[!UICONTROL 페이지에서]**&#x200B;를 선택하고 두 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
 AEM Forms은 두 번째 마스터 페이지를 패널과 적응형 양식의 모든 후속 패널에 적용합니다.
 1. **[!UICONTROL 페이지 매김]** 섹션의 **[!UICONTROL 이후]** 필드에서 ![폴더](/help/forms/using/assets/folder-icon.png)을(를) 선택합니다.
 1. **[!UICONTROL 페이지로 이동]**&#x200B;을 선택하고 세 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
@@ -533,6 +535,6 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 ### 로컬 Forms 개발 환경에서 사용자 지정 XCI 파일 사용
 
 1. XCI 파일을 로컬 개발 환경에 업로드합니다.
-1. <!--Cloud Service SDK--> 구성 관리자를 엽니다. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. &#x200B;<!--Cloud Service SDK--> 구성 관리자를 엽니다. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
 1. **[!UICONTROL 적응형 Forms 및 대화형 통신 웹 채널]** 구성을 찾아 엽니다.
 1. XCI 파일의 경로를 지정하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.

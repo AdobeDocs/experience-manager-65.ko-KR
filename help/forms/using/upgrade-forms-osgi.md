@@ -62,7 +62,7 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
 
    >[!NOTE]
    >
-   SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+   >SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 1. 설치 후 작업을 수행합니다.
 
@@ -111,4 +111,4 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
 
    >[!NOTE]
    >
-   AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 [AEM의 Forms 저장소 재구성](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)을 참조하십시오.
+   >AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 [AEM의 Forms 저장소 재구성](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)을 참조하십시오.

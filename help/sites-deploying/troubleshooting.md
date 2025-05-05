@@ -72,7 +72,7 @@ jar 파일이 유비쿼터스 ZIP 형식을 사용하므로 일부 보관 프로
 
 CRX 자체의 메모리 풋프린트가 낮습니다. CRX 내에서 실행 중인 응용 프로그램에 더 큰 메모리 요구 사항이 있거나 메모리 사용량이 많은 작업(예: 큰 트랜잭션)을 요청하는 경우 CRX이 실행되는 JVM 인스턴스는 적절한 메모리 설정으로 시작해야 합니다.
 
-Java™ 명령 옵션을 사용하여 JVM의 메모리 설정을 정의합니다(예: heapsize를 512MB로 설정하려면 java -Xmx512m -jar crx&amp;ast;.jar).
+Java™ 명령 옵션을 사용하여 JVM의 메모리 설정을 정의합니다(예: heapsize를 512MB로 설정하려면 java -Xmx512m -jar crx&ast;.jar).
 
 명령줄에서 AEM WCM을 시작하는 동안 메모리 설정 옵션을 지정합니다. AEM WCM 시작/중지 스크립트 또는 AEM WCM 시작 관리를 위한 사용자 지정 스크립트를 수정하여 필요한 메모리 설정을 정의할 수도 있습니다.
 
@@ -80,7 +80,7 @@ Java™ 명령 옵션을 사용하여 JVM의 메모리 설정을 정의합니다
 
 메모리가 부족할 때 힙 덤프를 자동으로 만들려면 다음 명령을 사용합니다.
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
 이 메서드는 프로세스에 메모리가 부족할 때마다 힙 덤프 파일(**java_...hprof**)을 생성합니다. 힙 덤프가 생성된 후에도 프로세스가 계속 실행될 수 있습니다.
 

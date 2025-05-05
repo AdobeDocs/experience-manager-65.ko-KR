@@ -457,7 +457,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 [Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
 
@@ -489,7 +489,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 ## 이제 사용되지 않는 기능과 제거된 기능{#removed-deprecated-features}
 
-더 이상 사용되지 않는 기능 및 제거된 기능을](/help/release-notes/deprecated-removed-features.md/) 참조하십시오[.
+더 이상 사용되지 않는 기능 및 제거된 기능을[&#128279;](/help/release-notes/deprecated-removed-features.md/) 참조하십시오.
 
 ## 알려진 문제{#known-issues}
 
@@ -625,7 +625,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 * 사용자가 JEE 서버에서 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트하고 출력 서비스를 사용하여 PDF를 생성하는 경우 PDF가 렌더링되어 접근성 문제가 발생합니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922112)
 * 사용자가 JEE의 출력 서비스를 사용하여 태그가 지정된 PDF를 생성하면 &quot;부적절한 구조 경고&quot;가 표시됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3922038)
-* AEM Forms JEE에서 양식을 제출하면 반복되는 XML 요소의 인스턴스가 데이터에서 제거됩니다. 핫픽스를 다운로드 및 설치하려면 Adobe Experience Manager Forms 핫픽](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)스 문서를 참조하십시오[. (LC-3922017)
+* AEM Forms JEE에서 양식을 제출하면 반복되는 XML 요소의 인스턴스가 데이터에서 제거됩니다. 핫픽스를 다운로드 및 설치하려면 Adobe Experience Manager Forms 핫픽[&#128279;](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)스 문서를 참조하십시오. (LC-3922017)
 * Linux® 환경의 사용자 가 HTML에서 적응형 양식(JEE에서)을 렌더링하면 제대로 렌더링되지 않습니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921957)
 * 사용자가 AEM Forms JEE의 출력 서비스를 사용하여 XTG 파일을 PostScript 형식으로 변환할 때 오류가 발생하여 실패합니다. `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921720)
 * JEE 서버에서 AEM Forms 서비스 팩 18(6.5.18.0)으로 업그레이드한 후 사용자가 양식을 제출할 때 HTML5 또는 PDF forms 및 XMLFM 충돌을 렌더링하지 못합니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (LC-3921718)

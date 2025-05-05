@@ -208,12 +208,15 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 이 노드에 다음 속성을 추가합니다.
    * **이름**: `jcr:title`
+
      **유형**: `String`
      **값**: UI에 표시되는 식별 제목입니다.
    * **이름**: `jcr:description`
+
      **유형**: `String`
      **값**: 선택적 설명입니다.
    * **이름**: `cq:trigger`
+
      **유형**: `String`
      **값**: 사용할 [롤아웃 트리거](/help/sites-administering/msm-sync.md#rollout-triggers). 다음 중에서 선택:
       * `rollout`
@@ -686,6 +689,7 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
       * **유형**: `String`
 
       * **값**: 고려 중인 속성의 이름을 사용하며 속성 `name`의 값과 비슷합니다. 예를 들어 다음을 참조하십시오.
+
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 `cq-msm-lockable`이 정의된 경우 체인을 끊거나 닫으면 다음과 같은 방식으로 MSM과 상호 작용합니다.

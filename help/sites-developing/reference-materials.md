@@ -42,7 +42,7 @@ AEM 게재 및 콘텐츠 관리 API:
 
    * [JSON 내보내기](/help/sites-developing/json-exporter.md)
    * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
-   * 자세한 내용은 개발 사용 안내서](/help/sites-developing/getting-started.md)의 [구성 요소 섹션을 참조하십시오
+   * 자세한 내용은 개발 사용 안내서[&#128279;](/help/sites-developing/getting-started.md)의 구성 요소 섹션을 참조하십시오
 
 * **Assets**: Assets HTTP API를 사용하면 이진, 메타데이터, 렌디션 및 주석을 포함하여 Assets에서 CRUD(create-read-update-delete) 작업을 수행할 수 있습니다. [AEM Assets HTTP API](/help/assets/mac-api-assets.md) 참조
 

@@ -255,7 +255,7 @@ CRXDE Lite에서 다음을 수행합니다.
 1. 목록에서 뷰어 패키지를 검색합니다. `cq-dam-scene7-viewers-content`(으)로 시작합니다.
 1. **다시 설치**&#x200B;를 선택합니다.
 1. Cloud Service에서 Dynamic Media 구성 페이지로 이동한 다음, Dynamic Media - S7 구성에 대한 구성 대화 상자를 엽니다.
-1. 변경하지 말고 **저장**을 선택하세요.
+1. 변경하지 말고 **저장**&#x200B;을 선택하세요.
 이 저장 작업은 샘플 에셋, 뷰어 사전 설정 CSS 및 아트워크를 만들고 동기화하기 위한 논리를 다시 트리거합니다.
 
 ### 문제: 뷰어 사전 설정 작성에서 이미지 미리 보기를 로드할 수 없음 {#image-preview-not-loading}
@@ -275,4 +275,4 @@ CRXDE Lite에서 다음을 수행합니다.
 1. `viewer` 폴더를 삭제합니다.
 1. CRXDE Lite 페이지의 왼쪽 상단 모서리 근처에서 **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 1. CRXDE Lite 페이지의 왼쪽 상단 모서리에서 **홈으로 돌아가기** 아이콘을 선택합니다.
-1. Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)에서 [Dynamic Media 구성을 다시 만드십시오.
+1. Cloud Service[&#128279;](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)에서 Dynamic Media 구성을 다시 만드십시오.

@@ -479,7 +479,7 @@ ht-degree: 8%
 9. 새로 만든 `clientlibs` 폴더로 이동하여 `allowProxy` 및 `categories` 속성을 추가하십시오.
 10. `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`(으)로 이동하여 css 폴더를 만듭니다.
 11. 생성된 CSS 폴더로 이동하여 파일을 만듭니다. 예를 들어 파일을 `fonts.css`(으)로 만들고 포함 코드를 URL과 함께 붙여 넣습니다.
-   ![폴더 구조](/help/forms/using/assets/fonts-add-in-crxde.png)
+    ![폴더 구조](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. 변경 사항을 저장합니다.
 
 >[!NOTE]

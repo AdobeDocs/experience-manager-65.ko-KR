@@ -244,7 +244,7 @@ SSL을 통해 LDAP를 인증하도록 AEM을 구성할 때 자체 서명된 인�
 
 1. SSL 라이브러리가 설치되어 있고 작동하는지 확인합니다. 이 절차에서는 OpenSSL을 예로 사용합니다.
 
-1. 사용자 지정된 OpenSSL 구성(cnf) 파일을 만듭니다. 이 구성은 기본 **openssl.cnf **구성 파일을 복사하고 사용자 지정하여 수행할 수 있습니다. UNIX® 시스템에서는 `/usr/lib/ssl/openssl.cnf`에 있습니다.
+1. 사용자 지정된 OpenSSL 구성(cnf) 파일을 만듭니다. 이 구성은 기본 **openssl.cnf &#x200B;** 구성 파일을 복사하고 사용자 지정하여 수행할 수 있습니다. UNIX® 시스템에서는 `/usr/lib/ssl/openssl.cnf`에 있습니다.
 
 1. 터미널에서 아래 명령을 실행하여 CA 루트 키를 만듭니다.
 
@@ -280,12 +280,12 @@ SSL을 통해 LDAP를 인증하도록 AEM을 구성할 때 자체 서명된 인�
 
 * 로그 수준: 디버그
 * 로그 파일 logs/ldap.log
-* 메시지 패턴: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
+* 메시지 패턴: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
 * 로거: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * 로그 수준: 디버그
 * 로그 파일: logs/external.log
-* 메시지 패턴: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
+* 메시지 패턴: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
 * 로거: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## 그룹 소속에 대한 단어 {#a-word-on-group-affiliation}

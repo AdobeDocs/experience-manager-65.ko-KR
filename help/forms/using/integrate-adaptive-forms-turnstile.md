@@ -58,9 +58,11 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
          1. 구성을 저장하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭하십시오.
 
 1. Cloud Service 구성:
-   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**(으)로 이동한 다음 **[!UICONTROL 회전식]**을 클릭합니다.
+   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**(으)로 이동한 다음 **[!UICONTROL 회전식]**&#x200B;을 클릭합니다.
+
       ![Cloud Service의 회전식 문](assets/turnstile-in-ui.png)
-   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**를 클릭합니다.
+   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+
       ![구성 Turnstile](assets/config-hcaptcha.png)
    1. **[!UICONTROL 위젯 유형]**&#x200B;을(를) 관리, 비대화형 또는 보이지 않는 것으로 지정하십시오.
    1. **[!UICONTROL 제목]**, **[!UICONTROL 이름]**&#x200B;과 같은 기타 세부 정보를 제공합니다.
@@ -74,7 +76,7 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
 
    Turnstile Captcha 서비스가 구성되면 적응형 양식에서 사용할 수 있습니다.
 
-## 적응형 양식 {#using-turnstile-aem-6.5}에서 Turnstile 사용
+## 적응형 양식에서 Turnstile 사용 {#using-turnstile-aem-6.5}
 
 1. AEM Forms 환경을 엽니다.
 1. **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;로 이동합니다.
@@ -97,6 +99,7 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
    * **[!UICONTROL 유효성 검사 메시지]:** 양식 제출 또는 사용자 작업에서 Captcha의 유효성을 검사하기 위한 유효성 검사 메시지를 제공합니다.
    * **[!UICONTROL CAPTCHA 서비스]:** 양식 제출을 위한 CAPTCHA 서비스를 선택합니다. 여기서 Turnstile®을 선택합니다.
    * **[!UICONTROL 구성 설정]:** Turnstile®에 대해 구성된 클라우드 구성을 선택하십시오.
+
      >[!NOTE]
      >유사한 목적으로 환경에 여러 클라우드 구성을 가질 수 있습니다. 그러므로, 서비스를 신중하게 선택하십시오. 서비스가 목록에 없으면 [AEM Forms 환경을 Turnstile과 연결](#connect-your-forms-environment-with-turnstile-service)을 참조하여 AEM Forms 환경을 Turnstile 서비스와 연결하는 Cloud Service을 만드는 방법에 대해 알아보십시오.
 

@@ -182,9 +182,9 @@ AEM Communities은 다음에 대해 이메일을 사용합니다.
 
 * **[!UICONTROL URL]**
 
-  *(필수)* 아웃바운드 메일 서버입니다. 예: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
+  *(필수)* 아웃바운드 메일 서버입니다. 예: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=**&#x200B;**`
 
-* **[!UICONTROL 경로로 가져오기]**&amp;ast;
+* **[!UICONTROL 경로로 가져오기]**&ast;
 
   *(필수)*&#x200B;이(가) `/content/usergenerated/mailFolder/postEmails`(으)로 설정됨
 `postEmails`폴더를 찾아 **확인**&#x200B;을 선택합니다.

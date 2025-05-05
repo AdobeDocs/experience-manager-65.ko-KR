@@ -65,7 +65,7 @@ AEM [!DNL Forms] 데이터 통합 모듈을 사용하면 AEM 사용자 프로필
 
 1. 데이터베이스를 데이터 소스로 구성 [!DNL MySQL] :
 
-   1. https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 에서 AEM 웹 콘솔로 [이동합니다.
+   1. https://localhost:4502/system/console/configMgr[&#128279;](https://localhost:4502/system/console/configMgr) 에서 AEM 웹 콘솔로 이동합니다.
    1. Apache Sling 연결 풀링된 데이터 소스&#x200B;**구성을 찾습니다**. 편집 모드에서 구성을 열려면 선택합니다.
    1. 구성 대화 상자에서 다음 세부 사항을 지정합니다.
 
@@ -83,10 +83,10 @@ AEM [!DNL Forms] 데이터 통합 모듈을 사용하면 AEM 사용자 프로필
 
       >[!NOTE]
       >
-      >AEM Forms은 [!DNL MySQL]에 대한 NT 인증을 지원하지 않습니다. https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 에서 [AEM 웹 콘솔로 이동하여 &quot;Apache Sling 연결 풀링된 데이터 소스&quot;를 검색. &quot;JDBC 연결 URI&quot; 속성의 경우 &quot;integratedSecurity&quot;의 값을 False로 설정하고 생성된 사용자 이름과 암호 사용하여 데이터베이스와 [!DNL MySQL] 연결합니다.
+      >AEM Forms은 [!DNL MySQL]에 대한 NT 인증을 지원하지 않습니다. https://localhost:4502/system/console/configMgr[&#128279;](https://localhost:4502/system/console/configMgr) 에서 AEM 웹 콘솔로 이동하여 &quot;Apache Sling 연결 풀링된 데이터 소스&quot;를 검색. &quot;JDBC 연결 URI&quot; 속성의 경우 &quot;integratedSecurity&quot;의 값을 False로 설정하고 생성된 사용자 이름과 암호 사용하여 데이터베이스와 [!DNL MySQL] 연결합니다.
 
-      * **Test on Borrow:** Test on Borrow ]**옵션을 활성화**[!UICONTROL &#x200B;합니다.
-      * **Test on Return(반환 시 테스트):** Test on Return ]**옵션을 활성화**[!UICONTROL &#x200B;합니다.
+      * **Test on Borrow:** Test on Borrow **옵션을 활성화**&#x200B;합니다.
+      * **Test on Return(반환 시 테스트):** Test on Return **옵션을 활성화**&#x200B;합니다.
       * **유효성 검사 쿼리:** SQL SELECT 쿼리를 지정하여 풀에서의 연결을 검증하십시오. 쿼리는 하나 이상의 행을 반환해야 합니다. 예를 들어 **customerdetails에서 &#42;을(를) 선택**&#x200B;합니다.
       * **트랜잭션 격리**: 값을 **READ_COMMITTED**(으)로 설정합니다.
 
@@ -166,7 +166,7 @@ AEM [!DNL Forms]은(는) 구성된 데이터 원본에서 [양식 데이터 모�
 
       ![id-인수](assets/id-arg.png)
 
-   1. 완료&#x200B;]**를 선택하여**[!UICONTROL &#x200B;데이터 모델 개체 속성을 저장합니다. 그런 다음 저장&#x200B;]**을 선택하여**[!UICONTROL &#x200B;양식 데이터 모델을 저장합니다.
+   1. 완료&#x200B;**를 선택하여**&#x200B;[!UICONTROL &#x200B;데이터 모델 개체 속성을 저장합니다. 그런 다음 저장&#x200B;]&#x200B;**을 선택하여**&#x200B;양식 데이터 모델을 저장합니다.
 
       **[!UICONTROL get]** 및 **[!UICONTROL update]** 서비스가 데이터 모델 개체에 대한 기본 서비스로 추가되었습니다.
 
